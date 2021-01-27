@@ -7,8 +7,8 @@ module.exports = {
   url: 'https://docs.yellowmessenger.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
-  organizationName: 'Jeffail',
-  projectName: 'ymdocs',
+  organizationName: 'yellowmessenger',
+  projectName: 'documentation',
   customFields: {
     components: {
       inputs: components("inputs"),
