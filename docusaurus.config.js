@@ -1,5 +1,5 @@
 const path = require('path');
-const {components} = require('./src/plugins/components');
+// const {components} = require('./src/plugins/components');
 
 module.exports = {
   title: 'Yellow Messenger',
@@ -9,19 +9,19 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'yellowmessenger',
   projectName: 'documentation',
-  customFields: {
-    components: {
-      inputs: components("inputs"),
-      processors: components("processors"),
-      conditions: components("conditions"),
-      outputs: components("outputs"),
-      caches: components("caches"),
-      rate_limits: components("rate_limits"),
-      buffers: components("buffers"),
-      metrics: components("metrics"),
-      tracers: components("tracers"),
-    },
-  },
+  // customFields: {
+  //   components: {
+  //     inputs: components("inputs"),
+  //     processors: components("processors"),
+  //     conditions: components("conditions"),
+  //     outputs: components("outputs"),
+  //     caches: components("caches"),
+  //     rate_limits: components("rate_limits"),
+  //     buffers: components("buffers"),
+  //     metrics: components("metrics"),
+  //     tracers: components("tracers"),
+  //   },
+  // },
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/github'),
@@ -40,24 +40,14 @@ module.exports = {
         src: 'img/logo.png',
       },
       items: [
-        {to: 'docs/about', label: 'Docs', position: 'left'},
-        {to: 'cookbooks', label: 'Cookbooks', position: 'left'},
-        {to: 'blog', label: 'Blog', position: 'left'},
+        {to: 'cookbooks', label: 'Guides', position: 'left'},
+        {to: 'docs/documentation/overview', label: 'Documentation', position: 'left'},
+        {to: 'docs/developer/overview', label: 'Developer Guide', position: 'left'},
+        {to: 'docs/canary/introduction', label: 'Canary', position: 'left'},
+        {to: 'docs/bumblebee/introduction', label: 'Bumblebee', position: 'left'},
         {to: 'videos', label: 'Videos', position: 'left'},
-        {to: 'community', label: 'Community', position: 'right'},
-        {to: 'https://lab.benthos.dev', label: 'Lab', position: 'right'},
-        {
-          href: 'https://github.com/Jeffail/benthos/releases/latest',
-          position: 'right',
-          className: 'header-download-link header-icon-link',
-          'aria-label': 'Download',
-        },
-        {
-          href: 'https://github.com/Jeffail/benthos',
-          position: 'right',
-          className: 'header-github-link header-icon-link',
-          'aria-label': 'GitHub repository',
-        },
+        {to: 'https://community.yellowmessenger.com', label: 'Community', position: 'right'},
+        {to: 'https://cloud.yellowmessenger.com', label: 'Get started for free', position: 'right'},
       ],
     },
     footer: {
