@@ -32,7 +32,7 @@ function CookbookPage(props) {
                 <section className="markdown">
                   <MDXProvider components={MDXComponents}><CookbookContents /></MDXProvider>
                 </section>
-                <Link to="/cookbooks" className="button button--outline button--primary margin-vert--lg">Find more guides</Link>
+                <Link to="/cookbooks" className="button button--outline button--primary margin-vert--lg">Find more cookbooks</Link>
               </div>
             </article>
           </div>

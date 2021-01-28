@@ -40,7 +40,7 @@ module.exports = {
         src: 'img/logo.png',
       },
       items: [
-        {to: 'cookbooks', label: 'Guides', position: 'left'},
+        {to: 'cookbooks', label: 'Cookbooks', position: 'left'},
         {to: 'docs/documentation/overview', label: 'Documentation', position: 'left'},
         {to: 'docs/developer/overview', label: 'Developer Guide', position: 'left'},
         {to: 'docs/canary/introduction', label: 'Canary', position: 'left'},

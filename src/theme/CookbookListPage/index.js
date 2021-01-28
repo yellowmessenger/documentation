@@ -68,7 +68,7 @@ function CookbookListPage(props) {
             <div className="col col--5 col--offset-1">
               <img className={styles.headerImgMobile} src="/img/Blobchef.svg" />
               <div>
-                <h1>Guides</h1>
+                <h1>Cookbooks</h1>
                 <p>A collection of guides to walk you through the features of yellow messenger cloud.</p>
               </div>
               <div className="search">

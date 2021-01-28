@@ -12,7 +12,17 @@
 module.exports = {
   bumblebee: ['bumblebee/introduction'],
   canary: ['canary/introduction'],
-  developer: ['developer/overview'],
+  developer: [
+    'developer/overview',
+    {
+      type: 'category',
+      label: 'Function reference',
+      collapsed: false,
+      items: [
+        'developer/app/overview',
+      ],
+    },
+  ],
   documentation: [
     'documentation/overview',
     {
