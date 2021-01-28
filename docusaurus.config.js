@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   title: 'Yellow Messenger',
-  tagline: 'The stream processor for mundane tasks',
+  tagline: 'Conversational AI cloud for all',
   url: 'https://docs.yellowmessenger.com',
   baseUrl: '/',
   favicon: 'img/favicon.ico',
@@ -53,45 +53,7 @@ module.exports = {
     footer: {
       style: 'dark',
       links: [
-        {
-          title: 'Docs',
-          items: [
-            {
-              label: 'Getting started',
-              to: 'docs/guides/getting_started',
-            },
-            {
-              label: 'Videos',
-              to: 'videos',
-            },
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Join the chat',
-              to: 'community',
-            },
-            {
-              label: 'GitHub',
-              href: 'https://github.com/Jeffail/benthos',
-            },
-          ],
-        },
-        {
-          title: 'Social',
-          items: [
-            {
-              label: 'Get in touch',
-              to: 'community',
-            },
-            {
-              label: 'Mascot',
-              to: 'blobfish',
-            },
-          ],
-        },
+
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Yellow Messenger`,
     },
@@ -105,8 +67,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl:
-            'https://github.com/Jeffail/benthos/edit/master/website/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
