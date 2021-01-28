@@ -6,7 +6,7 @@ module.exports = {
   tagline: 'Conversational AI cloud for all',
   url: 'https://docs.yellowmessenger.com',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.png',
   organizationName: 'yellowmessenger',
   projectName: 'documentation',
   // customFields: {
