@@ -1,5 +1,5 @@
 ---
 id: getting-started
 title: Getting started
-description: Building your first bot
+description: Building your first bot (Lead Collection & FAQ)
 ---

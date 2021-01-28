@@ -1,5 +1,5 @@
 ---
-id: joining-streams
-title: Joining Streams
-description: How to hydrate documents by joining multiple streams.
+id: transfer-chat
+title: Agent augmentation
+description: Transfer a chat to an agent
 ---
