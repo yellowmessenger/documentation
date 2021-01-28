@@ -1,4 +1,4 @@
-// const {listPaths,listDeprecatedPaths} = require('./src/plugins/components');
+const {listPaths,} = require('./src/plugins/components');
 //
 // let inputs_docs = listPaths("inputs");
 // let processors_docs = listPaths("processors");
@@ -8,6 +8,8 @@
 // let buffers_docs = listPaths("buffers");
 // let metrics_docs = listPaths("metrics");
 // let tracers_docs = listPaths("tracers");
+
+let components = listPaths();
 
 module.exports = {
   bumblebee: ['bumblebee/introduction'],
@@ -20,6 +22,7 @@ module.exports = {
       collapsed: false,
       items: [
         'developer/app/overview',
+        ...components
       ],
     },
   ],

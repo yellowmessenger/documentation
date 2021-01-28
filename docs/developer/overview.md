@@ -1,5 +1,5 @@
 ---
-title: Unlock the full potential of developer platform 
+title: Developer platform guide 
 sidebar_label: Overview
 ---
 

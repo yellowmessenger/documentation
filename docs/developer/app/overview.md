@@ -1,6 +1,6 @@
 ---
-title: Function reference for "app" object
-sidebar_label: About "app"
+title: Reference for the root object "app" 
+sidebar_label: Root object (app)
 ---
 
 App reference
