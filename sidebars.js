@@ -13,5 +13,15 @@ module.exports = {
   bumblebee: ['bumblebee/introduction'],
   canary: ['canary/introduction'],
   developer: ['developer/overview'],
-  documentation: ['documentation/overview'],
+  documentation: [
+    'documentation/overview',
+    {
+      type: 'category',
+      label: 'Concepts',
+      collapsed: false,
+      items: [
+        'documentation/concepts/bots',
+      ],
+    },
+  ],
 };
