@@ -12,4 +12,6 @@
 module.exports = {
   bumblebee: ['bumblebee/introduction'],
   canary: ['canary/introduction'],
+  developer: ['developer/overview'],
+  documentation: ['documentation/overview'],
 };

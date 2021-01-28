@@ -68,8 +68,8 @@ function CookbookListPage(props) {
             <div className="col col--5 col--offset-1">
               <img className={styles.headerImgMobile} src="/img/Blobchef.svg" />
               <div>
-                <h1>Benthos Cookbooks</h1>
-                <p>A collection of guides to walk you through more advanced Benthos applications.</p>
+                <h1>Guides</h1>
+                <p>A collection of guides to walk you through the features of yellow messenger cloud.</p>
               </div>
               <div className="search">
                 <input
