@@ -1,5 +1,5 @@
 ---
-title: Introduction
-sidebarTile: Introduction
+title: Introduction to bumblebee
+sidebar_label: Introduction
 ---
 Bumblebee here
