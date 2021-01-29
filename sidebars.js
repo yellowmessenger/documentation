@@ -33,7 +33,36 @@ module.exports = {
       label: 'Concepts',
       collapsed: false,
       items: [
-        'documentation/concepts/bots',
+        'documentation/concepts/overview',
+        'documentation/concepts/journeys',
+        'documentation/concepts/steps',
+        'documentation/concepts/response-types',
+        'documentation/concepts/knowledge-base',
+        'documentation/concepts/training',
+        'documentation/concepts/multilingual'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Channel Configuration',
+      collapsed: false,
+      items: [
+        'documentation/channel-configuration/overview',
+        'documentation/channel-configuration/web',
+        'documentation/channel-configuration/android',
+        'documentation/channel-configuration/ios',
+        'documentation/channel-configuration/whatsapp',
+        'documentation/channel-configuration/fb-messenger',
+        'documentation/channel-configuration/slack',
+        'documentation/channel-configuration/teams',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Compliances',
+      collapsed: false,
+      items: [
+        'documentation/compliances/certifications',
       ],
     },
   ],
