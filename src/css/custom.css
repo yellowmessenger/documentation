@@ -169,3 +169,10 @@ html[data-theme='dark'] .DocSearch {
 .markdown > table td {
   min-width: 160px;
 }
+
+
+.cta-btn {
+  border-radius: 2em;
+  margin-right: 1em;
+  min-width: 240px;
+}

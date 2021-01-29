@@ -1,5 +1,5 @@
 import React from 'react';
-import clsx from 'clsx';
+import classnames from 'classnames';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
@@ -8,77 +8,95 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Getting Started</>,
+    imageUrl: 'img/getting-started.svg',
     description: (
       <>
-        Yellow Messenger is the best Conversational AI Platform that can bring
-        businesses near to the customers.
+        A step-by-step guide to setup Axioms according to your authentication and access-control requirements.
       </>
     ),
+    pageUrl: "docs/getting-started/index"
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>SDKs & Samples</>,
+    imageUrl: 'img/sdks-samples.svg',
     description: (
       <>
-        The API Documentation helps Studio Dev team to build the bots at a 10x
-        efficiency. Other docs coming up!
+        Use our languages and framework specific SDKs and samples to integrate Axioms with your apps and services.
       </>
     ),
+    pageUrl: "docs/sdks-samples/index"
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>OpenID & OAuth 2</>,
+    imageUrl: 'img/standard-compliance.svg',
     description: (
       <>
-        The API Documentation helps Studio Dev team to build the bots at a 10x
-        efficiency. Other docs coming up!
+        Deep-dive into all OpenID Connect (OIDC) and OAuth 2 compliant platform features using our advanced guides.
       </>
     ),
+    pageUrl: "docs/openid-connect/index"
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({imageUrl, title, description, pageUrl}) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
-    <div className={clsx('col col--4', styles.feature)}>
+    <div className={classnames('col col--4', styles.feature)}>
       {imgUrl && (
         <div className="text--center">
           <img className={styles.featureImage} src={imgUrl} alt={title} />
         </div>
       )}
-      <h3 className="text--center">{title}</h3>
-      <p className="text--center">{description}</p>
+      <h2>{title}</h2>
+      <p>{description}</p>
+      <p className="learn-more"><a href={pageUrl}>Learn more →</a></p>
     </div>
+
   );
 }
+
+const iframe = '<iframe src="https://d3metalab.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>'
+
+function Iframe(props) {
+  return (<div dangerouslySetInnerHTML={ {__html:  props.iframe?props.iframe:""}} />);
+}
+
+
 
 function Home() {
   const context = useDocusaurusContext();
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Documentation - Yellow Messenger`}
-      description="Yellow Messenger Documentation">
-      <header className={clsx('hero ', styles.heroBanner)}>
+      title="Home"
+      description="Add strong authentication, fine-grained authorization in your apps, devices, and APIs.">
+      <header className={classnames('hero hero--secondary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
           <p className="hero__subtitle">{siteConfig.tagline}</p>
           <div className={styles.buttons}>
             <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
+              className={classnames(
+                'button cta-btn button--outline button--primary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/')}>
-              Get Started
+              to={'https://cloud.yellowmessenger.com'}>
+              <i className="feather icon-arrow-right"></i> Get started for free
+            </Link>
+            <Link
+              className={classnames(
+                'button cta-btn button--outline button--success button--lg',
+                styles.getStarted,
+              )}
+              to={useBaseUrl('docs/cookbooks')}>
+              <i className="feather icon-github"></i> Explore Cookbooks
             </Link>
           </div>
         </div>
       </header>
       <main>
-        {features && features.length > 0 && (
+        {features && features.length && (
           <section className={styles.features}>
             <div className="container">
               <div className="row">

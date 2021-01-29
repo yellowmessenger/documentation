@@ -1,3 +1,6 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
@@ -22,6 +25,16 @@
   justify-content: center;
 }
 
+@media (max-width: 480px) {
+  .buttons {
+    display: block;
+    border-radius: .5em;
+    margin: 0 0 1rem;
+    min-width: auto;
+    width: 100%;
+  }
+}
+
 .features {
   display: flex;
   align-items: center;
@@ -30,58 +43,6 @@
 }
 
 .featureImage {
-  height: 150px;
-  width: 250px;
-}
-
-.heroImg {
   height: 200px;
-  margin: 10px 0;
-}
-
-.configSnippet {
-  font-size: 10pt !important;
-}
-
-.configSnippets {
-  margin: 10px 0;
-}
-
-.pitch {
-  margin: 40px 0;
-}
-
-.loveSection {
-  padding: 40px 0;
-  background-color: #602541;
-
-  --ifm-heading-color: #ffffff;
-}
-
-.loveSectionPlea {
-  text-align: center;
-}
-
-.loveImg {
-  height: 200px;
-}
-
-.sponsorLink {
-  display: inline-block;
-  margin: 10px;
-}
-
-.meltwaterImg {
-  max-height: 30px;
-  padding: 10px;
-}
-
-.whiteopsImg {
-  max-height: 50px;
-  padding: 0 10px;
-}
-
-.infosumImg {
-  max-height: 40px;
-  padding: 10px;
+  width: 200px;
 }

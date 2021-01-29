@@ -1,7 +1,7 @@
 const {docuHash} = require('@docusaurus/utils');
 
 const redirects = [
-  ["/docs/", "/docs/documentation", false],
+  ["/docs/", "/docs/developer", false],
 ];
 
 module.exports = function() {
