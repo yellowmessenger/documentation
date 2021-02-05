@@ -19,10 +19,32 @@ module.exports = {
     {
       type: 'category',
       label: 'Function reference',
-      collapsed: false,
+      collapsed: true,
       items: [
         'developer/app/overview',
-        ...components
+        ...components      
+      ],
+    },
+    {
+      type: 'category',
+      label: 'API reference',
+      collapsed: true,
+      items: [
+        'developer/app/apis/audience-api',
+        'developer/app/apis/data-api',
+        'developer/app/apis/platform-api',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Events reference',
+      collapsed: false,
+      items: [
+        'developer/app/events/agent-events',
+        'developer/app/events/analytics-events',
+        'developer/app/events/bot-events',
+        'developer/app/events/user-events',
+        'developer/app/events/voice-events',      
       ],
     },
   ],
@@ -55,6 +77,25 @@ module.exports = {
         'documentation/channel-configuration/fb-messenger',
         'documentation/channel-configuration/slack',
         'documentation/channel-configuration/teams',
+        'documentation/channel-configuration/alexa',
+        'documentation/channel-configuration/google-assistant',
+        'documentation/channel-configuration/hangouts',
+        'documentation/channel-configuration/ivr-bots',
+        'documentation/channel-configuration/generic-webhook',
+        'documentation/channel-configuration/fb-workplace',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'App Configuration',
+      collapsed: false,
+      items: [
+        'documentation/app-configuration/freshdesk',
+        'documentation/app-configuration/power-bi',
+        'documentation/app-configuration/razorpay',
+        'documentation/app-configuration/salesforce',
+        'documentation/app-configuration/zalo',
+        'documentation/app-configuration/zendesk',
       ],
     },
     {
