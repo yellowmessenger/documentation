@@ -48,3 +48,5 @@ app.agentsAvailable().then((agents) => {
 		     "currentHandlingTicketsCount": 13
 		 }
 ```
+
+> Note : if maximumAssignedCount is set in bot mapping, it will be used as maximum concurrent tickets for agents.
