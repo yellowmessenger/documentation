@@ -11,7 +11,7 @@ SIP number has more functionality comes with noise cancellation and can be used 
 ## Connect BOT to an IVR number
 
 1. Navigate to old platform using link
-[botplatform.io](botplatform.io)
+[botplatform.io](https://app.yellowmessenger.com)
 2. Use cookie chrome extensions like EditThisCookie or other to login
 3. Copy and paste ym_xid cookie value  and refresh the bot it will login
 4. Go to IVR setup and add phone number by prefixing +91 country code

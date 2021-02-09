@@ -6,9 +6,9 @@ sidebar_label: iOS Chat SDK
 
 Clone the [repository](https://github.com/yellowmessenger/webview-sdk-ios) then add the following files in your xcode project by going to **File>Add Files to < Project-Name >** 
 
-**1. [YmSDK.swift](YmSDK.swift)**  
-**2. [YmEvents.swift](YmEvents.swift)**  
-**3. [YmBotPlugin.swift](YmBotPlugin.swift)**  
+**1. YmSDK.swift**  
+**2. YmEvents.swift**  
+**3. YmBotPlugin.swift**  
 
 Also add the the icons for mic button and close button in assets.
 
