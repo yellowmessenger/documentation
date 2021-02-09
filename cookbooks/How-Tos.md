@@ -18,8 +18,9 @@ Get answers to all your questions and learn some great tricks.
 `Step 2` : The bot will be visible under the ‘Invites’ section, please accept the bot invite and then it will be visible either under Sandbox/ Staging/ Production.
 ![how to accept an invite](../img/howtos/invite.gif)
 
+---------------------------------------
 
-### Share Bot Access
+### Share Bot Access?
 
 **Keywords** : bot access, invite
 
@@ -29,8 +30,14 @@ Get answers to all your questions and learn some great tricks.
 
 `Step 2` : The bot will be visible under the ‘Invites’ section, please accept the bot invite and then it will be visible either under Sandbox/ Staging/ Production.
 
+---------------------------------------
+
+
 ### Create a bot? 
 Please contact sales@yellowmessenger.com or go to https://app.yellowmessenger.com/ and register yourself. 
+
+---------------------------------------
+
 
 ### Publish a bot?
 
@@ -43,6 +50,9 @@ Please contact sales@yellowmessenger.com or go to https://app.yellowmessenger.co
 3. Test the bot and especially the changes made recently. 
 
 `Step 2` : The bot will be visible under the ‘Invites’ section, please accept the bot invite and then it will be visible either under Sandbox/ Staging/ Production.
+
+---------------------------------------
+
 
 ### Compare code? 
 
@@ -64,7 +74,7 @@ Note :
 
 ![how to accept an invite](../img/howtos/compare.png)
 
-
+**---------------------------------------**
 
 <!-- SECTION 2 -->
 ## Learn - Create / New
@@ -73,6 +83,7 @@ Note :
 - create , edit, save, add to a step, note on adding multiple functions 
 refer to concepts or add a link here
 
+---------------------------------------
 
 
 ### Create a new database and make changes to it? 
@@ -100,6 +111,7 @@ Click on ‘Add Record’ and you can add one record at a time.
 ![how to make changes](../img/howtos/database/edit.gif)
 
 
+---------------------------------------
 
 
 ### Validate(city, name, phone, etc)? 
@@ -109,22 +121,34 @@ Select the validate button
 
 Validation using regex with code
 
+---------------------------------------
+
+
 ### How to add a messages to localisation/ rendermsg? 
 
 **Keywords** : localisation
 
 ![how to make changes](../img/howtos/database/localisation.gif)
 
+---------------------------------------
 
 ### How to setup suggestions? 
+
+---------------------------------------
 
 ### How to setup did you mean? 
 https://yellowmessenger.atlassian.net/wiki/spaces/docs/pages/418578433/didYouMean
 
+---------------------------------------
+
+
 ### How to receive an event from an external third party? 
+
+---------------------------------------
 
 ### How to do elastic search for database
 
+---------------------------------------
 
 ### How to add messages to localisation? 
 - rendermsg
@@ -140,6 +164,7 @@ https://yellowmessenger.atlassian.net/wiki/spaces/docs/pages/418578433/didYouMea
 
 You can also upload a new bot icon here. 
 
+---------------------------------------
 
 ### Change the color schema and design of the bot? 
 
@@ -164,40 +189,57 @@ Creativity is intelligence having fun. Better color combinations and effective a
 
 Just one more thing, don’t forget to 'Save your Settings' and your beautiful bot is good to go! 🙂 
 
+---------------------------------------
+
 
 ### How to change the name, color, UI of the bot? 
 - chat widget
 
+---------------------------------------
+
+
 ### How to bulk insert journeys? 
+
+---------------------------------------
 
 ### How to change the font of a bot? 
 - chat widget https://docs.google.com/document/d/1NX5VPLW7iT1enRJSboDG5eHJm_cX-D9tq70jyaT2V5g/edit
 
+---------------------------------------
+
 ### How to setup multiple languages? 
 - code and adding prompts in localisation
+
+---------------------------------------
 
 ### How to add analytics to the custom dashboard? 
 - code and adding prompts in localisation
 
+---------------------------------------
+
 ### How to add a scheduler? 
 - code and adding prompts in localisation
 
+---------------------------------------
 
 <!-- SECTION 4 -->
 ## Change - Enable / Disable
+---------------------------------------
 
 ### How to add/ enable small talks? 
 
-
+---------------------------------------
 
 <!-- SECTION 5 -->
 ## Tricks - All interesting stuff here. 
 
+---------------------------------------
 
 ### How does Self Learning work? 
 
 https://docs.google.com/document/d/1vEcJEKNguvWfuTxb1z4W6lds2P5JfgETG4J6QZWl8ko/edit
 
+---------------------------------------
 
 ### How to train a bot? 
 Adding utterances
@@ -210,12 +252,32 @@ Word2vec
 Sentence Encoder 
 Multilingual - ? 
 
+---------------------------------------
+
 ### How to add constants? 
+
+---------------------------------------
+
 ### How to create and use entities effectively? 
+
+---------------------------------------
+
 ### How to create synonyms?
+
+---------------------------------------
+
 ### How to add contextual intents or New Secondary Intent? 
+
+---------------------------------------
+
 ### How to see/download/export user-bot interactions? 
+
+---------------------------------------
+
 ### How to push user response into the database? 
+
+---------------------------------------
+
 
 
 
