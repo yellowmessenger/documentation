@@ -78,4 +78,5 @@ module.exports = {
     path.resolve(__dirname, './src/plugins/cookbooks'),
     path.resolve(__dirname, './src/plugins/redirects'),
   ],
+  onBrokenLinks: 'log'
 };
