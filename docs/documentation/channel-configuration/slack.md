@@ -2,20 +2,6 @@
 title: Slack
 sidebar_label: Slack
 ---
-## Index
-1. Introduction
-2. Creating new App on slack
-3. Configuration of single workspace / multi-workspace
-4. Adding Slack app to Direct message / Channel
-5. Slack Apis integration
-6. Slack Interactive Features
-    1. Block Kit
-    2. Modals
-    3. Slash Commands / Shortcuts
-    4. Ephemeral Message ( only visible to you )
-    5. Initiate Direct Message
-    6. App Home Tab
-7. References
 
 ## Introduction
 
@@ -29,15 +15,15 @@ Video Recording of how to get started - https://www.loom.com/share/ca1c315947204
 
 Slack provides threaded messaging so It is important to understand how yellow messenger platform handles the context in channel, threads and in DM.
 
-**Channel:** 
+**Channel:**
 
 1. Bot will always reply in respective thread
 2. Each thread conserve independent context, if multiple threads are activated by same/different person → bot will maintain individual context/journey for each thread. Parallelly same journey can be run in different threads.
 3. Each thread has its own local memory (app.memory), So local memory cannot be accessible cross threads, cross channels, groups. Use global memory for cross memory requirements.
 4. User profile is preserved cross channels/threads/DMs therefore oauth/integrations/tokens is accessible for user irrespective of channels.
-> app.sender = T01XXXJA9T8_G01XXXF2P7S_1605XXX144.000200  (i.e WorkspaceID_ChannelD_ThreadID) 
+> app.sender = T01XXXJA9T8_G01XXXF2P7S_1605XXX144.000200  (i.e WorkspaceID_ChannelD_ThreadID)
 
-    
+
 ![](https://cdn.yellowmessenger.com/DL6bokDi0ycB1612443392644.png)
 
 
@@ -52,13 +38,15 @@ Slack provides threaded messaging so It is important to understand how yellow me
 ## Creating new App on Slack
 
 **Step 1:** Goto [https://api.slack.com/apps](https://api.slack.com/apps) and click on **Create a new app**.
+
 **Step 2:** Fill up the app name and select your app development workspace.
+
 **Step 3:** After creating the app, goto the event subscription on the left panel. Enable the event subscription and add request URL to [*https://app.yellowmessenger.com/integrations/slack/receive/*](https://app.yellowmessenger.com/integrations/slack/receive/)*botID*
 
 ![](https://lh5.googleusercontent.com/EE7lHurT8gLSuBoIDm7KyQCa-jsfPSgk5t2P3xBP2qyIvCJAVEO1mkTcWEn071rdLyWyEpcQPNGVExe7J-iijKoDcQjE678ImmLrpQ-WgZgQzEYqrd4ST-Fs-zuJjg08HDdk1OYu)
 
 
-**Step 4:** Now scroll down on the event subscription section and expand **Subscribe to bot events** and add the events scope according to your bot requirement. 
+**Step 4:** Now scroll down on the event subscription section and expand **Subscribe to bot events** and add the events scope according to your bot requirement.
 
 **Some of the common events:**  [**references**](https://api.slack.com/events)
 
@@ -101,7 +89,7 @@ and **Bot Token Scope** according to your requirement, [Reference](https://api.s
 - [**users:read**](https://api.slack.com/scopes/users:read)
     View people in a workspace
 
- 
+
 
 ![](https://lh3.googleusercontent.com/TWad9j0sixFAxPPQfXavsuRp8MFSkLMZyt_tZpXw5IFm42aTzcmMYUtE-YbMHGp9i-ZKWeWrFUsMUu5Bk4Vwsz8C_70pWxwOM5vNiR152XRDFTS32reRT-G7KMgAPrL22BKqT23j)
 
@@ -117,7 +105,7 @@ Slack App can be built for both single workspace use cases like building for a p
 
 ### Single Workspace:
 
-Slack app uses bot access token (xoxb) to communicate with workspace users, **Bot access token** is obtained when the slack workspace admin add the app to their workspace. 
+Slack app uses bot access token (xoxb) to communicate with workspace users, **Bot access token** is obtained when the slack workspace admin add the app to their workspace.
 
 **Steps to configure single workspace:**
 **Step 1:** Goto OAuth & Permissions, Click on the Install App to Workspace
@@ -125,12 +113,12 @@ Slack app uses bot access token (xoxb) to communicate with workspace users, **Bo
 ![](https://lh4.googleusercontent.com/S5shb-6GRvLCvG3opxTTG63ACIz376s-ZpqJEX9-wzkjlrs0uD7T1_O8nplucvCLCZIwYEG0tw_7PdMF6gWLfBm5FN_zY6SAT4JdnOV9cAYdBPiHzPxHPY-wE92ssXII493mh2h7)
 
 
-**Step 2:** Select a channel (communicate the workspace that a new app has been added to the workspace)
+**Step 2:** Select a channel, incase you have enabled external incoming webhooks (https://api.slack.com/apps/[APPID]/incoming-webhooks)
 
 ![](https://lh3.googleusercontent.com/KUbz_iS-iAoOOhmVcPAc-eO0JSJIIiyMp6NCh9ez5BLkWCtW2Z-tlwGCCvs1TO_QoGtW59lJSb9OOkYsoe5toOiF5u49h1gPCEfFaTZ6BaXQxDPSApUpxof5eXq2gMH4VUJkMFgQ)
 
 
-**Step 3:** After installing the app to workspace, go back to the **OAuth & Permission** copy the Bot Access token (xoxb- ) and paste at the Yellow messenger > Channels > Slack > Add the Slack access token > Save. 
+**Step 3:** After installing the app to workspace, go back to the **OAuth & Permission** copy the Bot Access token (xoxb- ) and paste at the Yellow messenger > Channels > Slack > Add the Slack access token > Save.
 
 ![](https://lh5.googleusercontent.com/Ibx2cKKWZaAxk-HMR3ZUsL2fNUhwmqeXlm32m1MrHPbWkqFuPq8MU4GH1AE_Rspw3XxzlQ1W4i9ZsmHUXpN6JX1EWTSFpbnmn9v8dwUqBv_3pKVMDDOgZbJM5iKcTyF9TMhorXI4)
 
@@ -152,7 +140,7 @@ Slack multi-workspace can be handled using the OAuth token, YM bot will map the 
 
 
 
-**Step 3:** For manual / development purposes you can use the **Connect** button to connect / add the slack app to the workspace. For marketplace share following url to connect / add the app to their workspaces. [https://app.yellowmessenger.com/integrations/slack/install/](https://app.yellowmessenger.com/integrations/slack/install/)*botId*
+**Step 3:** For manual / development purposes you can use the **Connect** button to connect the slack app to the workspace. For marketplace share following install url to connect the app to their workspaces with YM platform. [https://app.yellowmessenger.com/integrations/slack/install/](https://app.yellowmessenger.com/integrations/slack/install/)*botId*
 
 ![](https://cdn.yellowmessenger.com/RzDD6tuFd2n91612443533385.png)
 
@@ -164,37 +152,43 @@ In case of multi workspace bot access token can be obtained using:
 ## Adding Slack app to Direct message / Channel
 
 After adding the Slack app to the workspace, you are required to add the app to a group or DM for testing or interacting with the bot.
-**Adding slack app to DM:** Use the **+** button near **Apps** and **Select the app** > Add > **Messages**
-**Adding slack app to Group / Channel:** Goto Channel details > More > View App in channels
+
+**Adding slack app to DM:**
+Use the **+** button near **Apps** and **Select the app** > Add > **Messages**
+, or search the App using the top workspace search.
+
+**Adding slack app to Group / Channel:**
+Goto Channel details > More > View App in channels
 Now you can add / remove the app to the channel.
 
 ![](https://lh3.googleusercontent.com/Oy--Eew-8ydNDFHA8-FfoPzChCSWu9PghnzFw-160OWHj7r4fjmf72tc_boLY-8lC16cM0U5-xn-OFDCpNWrcujHdYxwLGtmVaGATx4qEVeCYZwibVGSQVU1kNf9pUEWBD8PTjkD)
 
 
-    
+
 
 ![](https://lh5.googleusercontent.com/dCtPbKRTu3pXmGbTmz7uk77lefcTz7cNRikc1jk-Y7b-sEInGXZUBfP-hPmaidO_33af_Ko0YUjAeNeDVUhBldykkZhYbz_7G6HylsPXReNhhvg-J6FPVMsMsB1oBXM5UEo1EkFF)
 
 
 **Message event format at YM**
-Test your bot using **app.sendTextMessage(“Hi”)**
+Test your bot using **app.sendTextMessage("Hi")**
 
     app.log(app.data)
 
 **DM:** Bot will reply in 1-1 conversation fashion (no threads will be formed)
-
+```js
     {
             "message": "Hi",
             "slackChannel": "D01BXXXV4TD",   //D stand for DM channel
             "userId": "U01B4XXX9A7",         // slack userID of sender
-            "threadTs": "",                  // threadID (not present in DM) 
+            "threadTs": "",                  // threadID (not present in DM)
             "channelType": "im",             //im => DM
             "eventType": "message"        //event can be from message/button/slash etc
     }
+```
 
 **Group / Channel :** Bot will reply in the threads and context will be mentioned within the respective threads only, app.memory will be accessible within the particular thread only.
-Group : private channel
-Channel: public channel
+Group : private,
+Channel: public.
 ```js
     {
             "message": "Hi",
@@ -206,10 +200,11 @@ Channel: public channel
     }
 ```
 
-## Slack Apis integration
+## Slack APIs integration
 
 The Slack Web API is an interface for querying information from and enacting change in a Slack workspace.
 Reference: [https://api.slack.com/methods](https://api.slack.com/methods)
+
 **Api to fetch user info in a workspace.**
 ```js
     {
@@ -229,17 +224,17 @@ Reference: [https://api.slack.com/methods](https://api.slack.com/methods)
             ]
     }
 ```
-**Bot accessToken**: 
+**Bot accessToken**:
 
-1. For single workspace configuration: 
+1. For single workspace configuration:
    > let slackTAuth = app.oauth.mapping.slackAuthToken
-2. For multi-workspace configuration: 
+2. For multi-workspace configuration:
    > app.getAccessToken().then(slackTAuth => { app.log(slackTAuth) })
 
 ## Slack Interactive Features
 ### Block Kit:
 
-Slack has its own way to present messages in interactive fashion using message blocks, **app.sendCards()** will not work on slack while **app.sendTextMessage()** and **Quick Replies** will work with Slack too.
+Slack has its own way to present messages in interactive fashion using message blocks, **app.sendTextMessage()** and **Quick Replies** will work on Slack but **app.sendCards()** will not work.
 
 Slack Block Kit gives you a way to create rich, interactive UI for your app. Each block displays or handles information in a different way, and multiple blocks can stack to form:
 
@@ -257,31 +252,31 @@ Slack has its own designer to design blocks.
 Message block allows you to send message as section and actions type
 ```js
     app.sendActions({
-            "blocks": [
+        "blocks": [
+            {
+                "type": "section",
+                "text": {
+                    "type": "plain_text",
+                    "text": "Click below to continue",
+                    "emoji": true
+                }
+            },
+            {
+                "type": "actions",
+                "elements": [
                     {
-                            "type": "section",
-                            "text": {
-                                    "type": "plain_text",
-                                    "text": "Click below to continue",
-                                    "emoji": true
-                            }
-                    },
-                    {
-                            "type": "actions",
-                            "elements": [
-                                    {
-                                            "type": "button",
-                                            "text": {
-                                                    "type": "plain_text",
-                                                    "text": "Continue",
-                                                    "emoji": true
-                                            },
-                                            "value": "value123",
-                                            "action_id": "action123"
-                                    }
-                            ]
+                          "type": "button",
+                          "text": {
+                                "type": "plain_text",
+                                "text": "Continue",
+                                "emoji": true
+                          },
+                          "value": "value123",
+                          "action_id": "action123"
                     }
-            ]
+                ]
+            }
+        ]
     })
 ```
 **Event receive on button click**
@@ -305,7 +300,7 @@ Message block allows you to send message as section and actions type
 ```
 Button click event will be the same as the message block case.
 
-### Modals: 
+### Modals:
 
 Modals provide focused spaces ideal for requesting and collecting data from users, or temporarily displaying dynamic and interactive information.
 
@@ -389,9 +384,10 @@ Modals can be designed using [block-kit-builder](https://app.slack.com/block-kit
 **Slash Commands**
 It allows users to invoke your app by typing a string into the message composer box. Slash commands are not sent as a message but as a command to the bot.
 > E.g:  /channel invite @bob to #tech
-Reference: [https://api.slack.com/interactivity/slash-commands](https://api.slack.com/interactivity/slash-commands) 
+Reference: [https://api.slack.com/interactivity/slash-commands](https://api.slack.com/interactivity/slash-commands)
 
 **Steps to add slash command**
+
 **Step 1:** Goto [https://api.slack.com/apps/](https://api.slack.com/apps/) > Select you App > Select the Slash Commands in left panel > Create New Command
 
 ![](https://lh5.googleusercontent.com/gi8aCuibqASoTUbFB1dd7PC8bCG2CBoLJH6MFrbR5l5qsiGIhoua0Y6Wie-_cKslKX9i-Py22thk29gAwfkTPqeJXZLjrdRsLayEnQNSMtpyzl7Ynmutn8-e_R618-nBFpfjpXmU)
@@ -422,24 +418,24 @@ Request URL: [https://app.yellowmessenger.com/integrations/slack/shortcuts/](htt
 
 **Shortcuts**:
 Similar to Slash command to send command to the bot. Shortcut can be initiated from the shortcuts button in the message composer, or from within search.
-Reference: [https://api.slack.com/interactivity/shortcuts/using](https://api.slack.com/interactivity/shortcuts/using) 
+Reference: [https://api.slack.com/interactivity/shortcuts/using](https://api.slack.com/interactivity/shortcuts/using)
 
 ![](https://lh6.googleusercontent.com/SgELjOml-tWwUISj_4l2BBGa5BFcQX7jL4K9tUWKhjNvkvoMbxUjdXo8PNUuGcMojKWg22DMGXi-e78CiQbHQzAuk06DNrErjeD9AyFGOX2va2w8EbVMII_VurHPSQ2joJwZezZJ)
 
 
-  
+
 
 ![](https://lh5.googleusercontent.com/EPN8qw2bpO0fUxEeCU4jnYMAYBnOvosOhI2AEx8AWECYJJq26hBRCx06iJI2XYfM9Y7IFEoeR-IZ7OWjEHTPVeCTTT5X7KWpboHXcFvqEFuOoVHr0BJwZJ1JBQZ63JIsyssPusYY)
 
 
 **Steps to add shortcuts:**
-> Goto api.slack.com > Interactivity & Shortcuts  > Create new Shortcut 
+> Goto api.slack.com > Interactivity & Shortcuts  > Create new Shortcut
 
 ![](https://lh4.googleusercontent.com/6TM9JIHMdGtnkqB6V15GefpEWD1QYGYWs4eI-TXfjlxPZav7Jeo0qkx3jE3ilVqvlfROczHYPDOOum_gdDvmWgO2u3JL0PlLbNh2UlTy_kdoZHcex6GU2ga30zxHJOS5khkUs8uP)
 
 
 
-### Ephemeral Message ( only visible to you ): 
+### Ephemeral Message ( only visible to you )
 
 This method posts an ephemeral message, which is visible only to the assigned user in a specific public channel, private channel, or private conversation.
 Reference: [https://api.slack.com/methods/chat.postEphemeral](https://api.slack.com/methods/chat.postEphemeral)
@@ -455,36 +451,43 @@ app.sendTextMessage(msg, { ephemeral: true })
 app.sendQuickReplies(payload, { ephemeral: true })
 ```
 
-## Initiate Direct Message: 
+## Initiate Direct Message:
 
 This method can be used by bot to initiate a DM with the user.
-Example: 
+Example:
 
 ![](https://lh3.googleusercontent.com/QV-fgScM-v0D7ykJlG0J2HxnUl1MNH5bvUbRT6RS2UtIFhxF6Q5SNSpFBcBTUxUfgZy8kyo8mHKkdTLetmxX5kgtotp-UCd9oR0zs0WWtLMjHVZUj9gh9JDhj-pBHEduvlnKyWog)
 
 
 
-**Sending DM to user** 
+**Sending DM to user**
 ```js
+//For same user
+app.switchToPrivateChannel().then(() => { app.sendTextMessage(payload) }
+
+//For any user using userChannelID
 app.sendActions(payload, { senderId: userChannelID })
 app.sendTextMessage(payload, { senderId: userChannelID })
 app.sendQuickReplies(payload, { senderId: userChannelID })
 ```
 
-### App Home Tab: 
+### App Home Tab
 ![](https://lh5.googleusercontent.com/jyt3kT4xuVoebZkYh9KAOFl42p0fbAf1xNcxJ9i1QghQ95FcHeq6hZzl1QsUt29G_K8xWoxN0b2uMkN7py5bApOtcqDqJNx329_YV6m3plpiqEgWMtnwooFSAt5nQSfqSaAr6OTD)
 
 App home tab content is also generated using the block kit payload.
 
 **Step to add home tab:**
+
 **Step 1:** Goto [https://api.slack.com/apps/](https://api.slack.com/apps/) > Select your App > App Home in left panel > Enable Home tab
 
 ![](https://lh6.googleusercontent.com/2JoaZhv0alUAnpwW2WzbMzoMSl1Bnnw89QmnJKw40JneRUnmdVKI056rpAnIo_ElKSE1J0srbdo8-A6pded5dMUQwIjFNbHmOz6--5nx266qqa7PQ3YX1CCOQ04VCEeyy4ZvDBlm)
 
 
 **Step 2:** add [app_home_opened](https://api.slack.com/events/app_home_opened) event in the **Event subscription** (Follow Create new app > Step 4)
+
 **Step 3:** Click on the Home tab of your app, event received will be:
-app.data.eventType : "app_home_opened”
+app.data.eventType : "app_home_opened"
+
 **Step 4:** After receiving the app_home_opened event you can respond using the following api:
 [https://api.slack.com/methods/views.publish](https://api.slack.com/methods/views.publish) with view type : “home”.
 
@@ -493,10 +496,11 @@ app.data.eventType : "app_home_opened”
 1. [Getting start with Slack app](https://api.slack.com/start)
 2. [Slack Apis](https://api.slack.com/methods/)
 3. Interaction:
-    - Guidelines: https://api.slack.com/start/planning/guidelines
-[](https://api.slack.com/methods/)    - [Interactive components](https://api.slack.com/surfaces/)
+    - [Guidelines](https://api.slack.com/start/planning/guidelines)
+    - [Methods](https://api.slack.com/methods/)
+    - [Interactive components](https://api.slack.com/surfaces/)
 4. Designing:
-    - Guidlines: https://api.slack.com/start/designing/guidelines
+    - [Guidlines](https://api.slack.com/start/designing/guidelines)
     - [Block Kit Builder](https://app.slack.com/block-kit-builder/)
 
 Explore different apps on slack to better understand flow and interacting components usage.
