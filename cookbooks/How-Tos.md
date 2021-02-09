@@ -8,49 +8,113 @@ featured: true
 Get answers to all your questions and learn some great tricks.
 
 <!-- SECTION 1 -->
-## Basics - Create/Share
+## Basics - Setup
 
-### How to sign up and accept bot invite? 
+### Sign up and accept bot invite? 
 **Keywords** : invite
 
 `Step 1` : Go to https://app.yellowmessenger.com/ and sign up with your email. Share the email with the YM team to send you the bot invite. 
 
 `Step 2` : The bot will be visible under the ‘Invites’ section, please accept the bot invite and then it will be visible either under Sandbox/ Staging/ Production.
-![how to accept an invite](../img/invite.gif)
+![how to accept an invite](../img/howtos/invite.gif)
 
 
-### How to share bot access with someone? 
+### Share Bot Access
 
 **Keywords** : bot access, invite
 
 `Step 1` : Go to configurations page inside the bot, open Access control - https://app.yellowmessenger.com/a/Your BOT ID here/config/access
 
-![how to accept an invite](../img/access.png)
+![how to accept an invite](../img/howtos/access.png)
 
 `Step 2` : The bot will be visible under the ‘Invites’ section, please accept the bot invite and then it will be visible either under Sandbox/ Staging/ Production.
 
-### How to create a bot? 
+### Create a bot? 
 Please contact sales@yellowmessenger.com or go to https://app.yellowmessenger.com/ and register yourself. 
 
-### How to publish a bot?
+### Publish a bot?
+
+**Keywords** : bot publish, live
+
+`Step 1` : Check the following before pushing the bot either from sandbox to staging or staging to production. 
+
+1. Bot Should be trained. 
+2. Compare the code in the developer section
+3. Test the bot and especially the changes made recently. 
+
+`Step 2` : The bot will be visible under the ‘Invites’ section, please accept the bot invite and then it will be visible either under Sandbox/ Staging/ Production.
+
+### Compare code? 
+
+**Keywords** : compare
+
+Note : 
+1. This activity can be done only when the bot has been pushed and staging/ production bots exist. 
+2. Compare changes will appear only if there are changes. 
+3. The following combinations can be compare. Sandbox > Staging and Staging >  Production. 
+
+
+`Step 1` : Go to the developer section.
+
+`Step 2` : Under cloud functions, on the top left you will see the COMPARE button. 
+
+`Step 3` : Click on the compare button to see new files created (C with green)/ deleted files (D with red) and modified files (M with blue) as compared to the next environment
+
+
+
+![how to accept an invite](../img/howtos/compare.png)
+
 
 
 <!-- SECTION 2 -->
-## Learn - New/ Setup
+## Learn - Create / New
 
 ### How to create a new function? 
 - create , edit, save, add to a step, note on adding multiple functions 
 refer to concepts or add a link here
 
-### How to create a new DB and make changes to it? 
-- create , edit, upload, modify, delete, index, note on indexing issue and red symbol
 
-### How to validate<city, name, phone, etc>? 
+
+### Create a new database and make changes to it? 
+
+**Keywords** :  create , edit, upload, modify, delete, index, note on indexing issue and red symbol
+
+`Step 1 ` : Adding a new table : You can add a new table by simply clicking on the ‘create table’ button. You can add fields here along with custom mapping of the fields if required. 
+
+![how to add a new table](../img/howtos/database/create.gif)
+
+`Step 2 ` : Download the table and add/edit/remove any data from this table. Truncate the same table and reupload the new table. As shown in the following steps. 
+Edit the table as you want and save it in CSV format. Please make sure that the headers of the table are not changed. 
+
+![how to download a table](../img/howtos/database/download.gif)
+
+`Step 3` : Truncate the table in the database and upload the new updated table. Please make sure you don’t Drop the table. Dropping the table will delete the table entirely. 
+
+![how to download a table](../img/howtos/database/truncate.gif)
+
+Once changes are made, can upload the table in CSV format back on the same page using 'Upload' button. 
+
+
+**Note** : When willing to add single record without downloadig and uploading, basically without making a fuss.  
+Click on ‘Add Record’ and you can add one record at a time.
+![how to make changes](../img/howtos/database/edit.gif)
+
+
+
+
+### Validate(city, name, phone, etc)? 
 Create a journey
 Add steps
 Select the validate button
 
 Validation using regex with code
+
+### How to add a messages to localisation/ rendermsg? 
+
+**Keywords** : localisation
+
+![how to make changes](../img/howtos/database/localisation.gif)
+
 
 ### How to setup suggestions? 
 
@@ -67,6 +131,38 @@ https://yellowmessenger.atlassian.net/wiki/spaces/docs/pages/418578433/didYouMea
 
 <!-- SECTION 3 -->
 ## Design - Related To BOT UI 
+
+### Change the name,title, sub-title, description of the bot? 
+
+🤓 Trick : If you want to see live preview of the changes you’re making then go to your bot journeys, click on ‘Test your bot' on top right. And click on Bot Direct Link as shown here -
+
+![how to make changes in UI](../img/howtos/configurations.gif)
+
+You can also upload a new bot icon here. 
+
+
+### Change the color schema and design of the bot? 
+
+Creativity is intelligence having fun. Better color combinations and effective aesthetics can be a cherry on the cake, so we should make sure that these features, the color, font, etc can be matched with the clients websites and a standard template can be followed for all chatbots.  
+
+`Step 1` : Access Chat Widget here - Go to app.yellowmessenger.com -> Login with YM credentials -> Open a bot -> Go to configurations tab on the left -> Go to Channels at the top -> Click on the first tile there i.e. Chat Widget as show here.
+
+`Step 2` : Under Chat-Widget, you will see the following sections inAppearances and Settings. 
+
+1. Basic 
+
+2. Advance
+
+3. General 
+
+4. Publish your bot : Use the code snippet provided there, add it to the bottom of the ‘body’ tag. This should be shared with the client and can be added to their index.html page. 
+
+![how to make changes in UI](../img/howtos/appearance.png)
+
+`Step 3` : As highlighted here in the below image. We have default theme selected now, we can change the settings in the four tabs and save it as a theme.   
+![how to make changes in UI](../img/howtos/theme.png)
+
+Just one more thing, don’t forget to 'Save your Settings' and your beautiful bot is good to go! 🙂 
 
 
 ### How to change the name, color, UI of the bot? 
@@ -92,8 +188,11 @@ https://yellowmessenger.atlassian.net/wiki/spaces/docs/pages/418578433/didYouMea
 
 ### How to add/ enable small talks? 
 
+
+
 <!-- SECTION 5 -->
 ## Tricks - All interesting stuff here. 
+
 
 ### How does Self Learning work? 
 
