@@ -1,4 +1,4 @@
 ---
 title: Enabling Languages 🇮🇳 🇸🇩 🇬🇷 🇺🇸
-sidebar_label: Multi Lingual 🇮🇳 
+sidebar_label: Languages 🇮🇳 🇺🇸
 ---
