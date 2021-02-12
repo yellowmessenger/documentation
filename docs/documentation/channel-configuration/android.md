@@ -7,8 +7,8 @@ sidebar_label: Android Chat SDK
 
 ### Configuration
 
-App level gradle file 
 
+App level gradle file
 ```js
 allprojects {
     repositories {
@@ -18,19 +18,21 @@ allprojects {
         maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
     }
 }
+
 ...
 ...
 ...
+
 dependencies {
     ...
     ...
-	   implementation 'com.github.yellowmessenger:webviewsdk:0.3.4'
+       implementation 'com.github.yellowmessenger:webviewsdk:0.3.5'
 
 
 }
 ```
 
-Android Application class Example
+#### Android Application class Example
 
 ```js
 import com.example.ymwebview.BotEventListener;
@@ -111,6 +113,14 @@ The SDK takes in the botId as a input configuration when the plugin is initialis
 pluginYM.setBotId("<NEW-BOT-ID>");
 ```
 
+## Important
+If facing problem in release build, add the following configuration in the app's proguard-rules.pro file.
+```js
+-keep public class com.example.ymwebview.** {
+   *;
+}
+```
+
 ## Note
 
 If facing problem in release build, add the following configuration in the app's proguard-rules.pro file.
@@ -128,3 +138,7 @@ If facing problem in release build, add the following configuration in the app's
 ## GitHub Repo 
 
 > https://github.com/yellowmessenger/webviewsdk
+
+## Flutter Integration Library
+
+> https://pub.dev/packages/ym_flutter_integration
