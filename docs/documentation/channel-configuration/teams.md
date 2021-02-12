@@ -32,7 +32,7 @@ Steps to create a bot service :
 ![Bot Services > Create](https://lh5.googleusercontent.com/fo6oL845viHLoJhkbcUk5bqJ9Q9fRdKSFP9uqyC4jWJS9Ibsx4sQtak-iC1HsjvUvkfZ7vYeZJaQtgcbDhXN6Q2JqmE_AZZNAD_PqB8YRfcmBSuHzfVEh5onZTJwa0ilvCjv2irb)
 
 
-**Step 3**: Fill the form according to the below image. 
+**Step 3**: Fill the form according to the below image.
 
 
 > Bot Handle: Set a unique bot identifier
@@ -61,6 +61,15 @@ Save the Application/Client ID and tenant ID for future use and go to Certificat
 ![](https://lh4.googleusercontent.com/9dbq3EdLvcCRSdbnml_Dbd3_mhmBCvG10VC85FSpvmGaPds3B9X8CaiTPdCnxV2S0itOcf-J-2Z1Hi2QcNbzugxiY-jtxT4F4dNJPs2r2nca6AewQZMk-vpXXVDYNRzGAWrJJ0IQ)
 
 
+**Adding Redirect URL**
+Goto Authentication > Add a platform > Web > Add the redirect url > Save
+Redirect-Url: https://app.yellowmessenger.com/integrations/azureauth/
+
+
+**Add / Remove permission and Grant Admin consent for the App**
+Goto API Permissions > Add the required permissions
+
+
 **Step 6**: Now go back to Bot Services and select your Bot service from the list and click on the Channels option.
 
 ![](https://lh6.googleusercontent.com/KyiXHuok0hwEyaSbaoIWhBzog9IsfC6a0GNLqARUrOQUK5Gyn6OvB4r3bUWhZRHjudK7r9bzxUZWybxAhKDwGbwvi4znTZBR4wEqzBbbpdQByUU5l1uIhsGqVR60zrtQZCAwslg9)
@@ -69,7 +78,7 @@ Save the Application/Client ID and tenant ID for future use and go to Certificat
 
 ![](https://lh5.googleusercontent.com/3gQiHcaPS6cIcR-Ze4GMAo6Of2qcXaE5rUCpdNQLxHjg-sMo5e10xoGBY03kiPtdgtR4ALvxEniyl6FuDnHYR_VZ5q7LXRraVgkTBZNJCMLsUV7dxe6lCWJvMnBzmfN2bUxvdztK)
 
-Add the MS Team channel using Add a featured channel, then click on the Microsoft Teams (with Running health) and open it using Web or Window App. 
+Add the MS Team channel using Add a featured channel, then click on the Microsoft Teams (with Running health) and open it using Web or Window App.
 
 You will find your bot added in the MS Team chat and can start interacting after the next step.
 
@@ -77,13 +86,13 @@ You will find your bot added in the MS Team chat and can start interacting after
 
 ## Connect your Teams app with YM bot
 
-Go to yellow messenger MS Team channel and fill those Client ID and Client Secret  and now you are ready to use MS team with Yellow Messenger bot. Test by sending an app.sendTextMessage() from main.
+Go to yellow messenger MS Team channel and fill those Client ID and Client Secret, now you are ready to use MS team with Yellow Messenger bot. Test by sending a message using app.sendTextMessage() .
 
 
 ![](https://lh3.googleusercontent.com/2jujF7XExhGEP22XK_5yJxjK9GWgh71Bg_VCzE1sznz3mTid006WnHFSzJGucZTr6_-5eP_FVBmgvm_KWyBDSr1vCyVYGSsmOPxRZ155fwPS46bLBsublaOaWlDF_GKlgJTz2c3-)
 
 
-##Create your app manifest using your Azure bot service (App Studio)
+## Create your app manifest using your Azure bot service with Teams App Studio
 
 Add App Studio from App Store which allows you to create bot manifest, Command Suggestions, Message Extensions, publishing your app etc.
 
@@ -93,7 +102,7 @@ Add App Studio from App Store which allows you to create bot manifest, Command S
 
 
 >For creating a new App in App Studio:
->Click on the Create a new App and fill the app details and use the generate button for App ID.
+>Click on the Create a new App and fill the app details, enter client ID in App ID field.
 >Connect your app studio bot with azure bot services by configuring Client ID in the Bots Section, For Testing: Install bot using Test & Distribute Section.
 
 
@@ -106,14 +115,15 @@ How to set dynamic scopes in Login url:
 ```js
     let consent = "&prompt=consent"
     let scopeMp = "People.Read User.ReadBasic.All Presence.Read"
-     
+
     {
        "type": "Action.OpenUrl",
        "title": "Login",
-       "url": app.azure.auth() + encodeURIComponent(scopeMp) + consent                     }
+       "url": app.azure.auth() + encodeURIComponent(scopeMp) + consent                    
+    }
 ```
 
-**Add / Remove permission and Grant Admin consent for the App**, 
+**Add / Remove permission and Grant Admin consent for the App**,
 Goto Azure Portal > App Registration > API Permissions
 
 ![](https://lh6.googleusercontent.com/z37T-8_2hO-v88FOY15bYZs3ZhNy7HK2hX3mR_uKF6Qh1L77cnBuHBc2IPXZX_Qm-glHTF5mBPkQnWNVa2eo3t6MmkDGhQWrpg-jDZdVWr3So_JH7QKeS9milnNcDW7YWTDj1dhP)
@@ -153,7 +163,7 @@ Designer functionality: https://adaptivecards.io/explorer/AdaptiveCard.html
         "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
         "version": "1.0"
     }
-     
+
     let card = {
            "contentType": "application/vnd.microsoft.card.adaptive",
            "content": CARD_PAYLOAD_FROM_DESIGNER
@@ -162,14 +172,14 @@ Designer functionality: https://adaptivecards.io/explorer/AdaptiveCard.html
            resolve();
     })
 
- 
+
 
     Sending a Carousel Card:
     let card = {
-           "contentType": "application/vnd.microsoft.card.adaptive",
+           "type": "adaptive",
            "content": CARD_PAYLOAD_FROM_DESIGNER
     }
-     
+
     let cardCarousal = [card,card,card]   //array of cards
     app.sendCards(cardCarousal).then(() => {
            resolve();
@@ -183,7 +193,7 @@ Designer functionality: https://adaptivecards.io/explorer/AdaptiveCard.html
 ```js
     //Received app.data
     app.log(app.data);
-    
+
     ---In Log---
     {
      "message":"form-data",
@@ -192,7 +202,7 @@ Designer functionality: https://adaptivecards.io/explorer/AdaptiveCard.html
           "namearea":"Adam"
       }
     }
-    
+
 ```
 
 ## Advanced features
@@ -242,9 +252,9 @@ Query Type: Allows you to run a query in the search field itself. (e.g: Wikipedi
 
 ![](https://lh3.googleusercontent.com/_KsG4Vgw53hdWjE9Hf1y82w6A2THRZA8G4PlXHajX8i5NWQsW1q2un8PDYGpwUNy3ytJoeY4OiNoDZavHjToxNRXmnPmUw-PeobGKTexMlxCjssqhslvnPUadGhpHC0eyzjOUNrM)
 
-Receiving responses in yellow messenger: 
+Receiving responses in yellow messenger:
 ```js
-Query Type: 
+Query Type:
 
     app.log(app.data)
     //In logs----------
@@ -262,11 +272,10 @@ Query Type:
        }
 ```
  >Note:
+ >  For initial run or empty query
+ >    , app.data.value.parameters[0].name = "initialRun"
 
- >  //For initial run or Empty query
- >  app.data.value.parameters[0].name = "initialRun"
 
- 
 
 Action Type Submission:
 
@@ -354,11 +363,11 @@ Create TM using Deeplink:
         "contentType": "application/vnd.microsoft.card.adaptive",
         "content": ADAPTIVE_CARD_PAYLOAD
     }
-    
+
     let cardLoad = encodeURIComponent(JSON.stringify(adaptiveCard))
-    
+
     let deeplink= `https://teams.microsoft.com/l/task/<App ID from App Studio>?card=${cardLoad}&height=300&width=600&title=Some Title&completionBotId=<Client ID>`;
-    
+
     app.sendQuickReplies({
         title: 'Task Module Check',
         options: [{
