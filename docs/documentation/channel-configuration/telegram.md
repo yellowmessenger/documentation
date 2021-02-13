@@ -13,4 +13,4 @@ sidebar_label : Telegram
 5. Then after it will send a congratulation message along with the access token, Copy that access token and put it in the bot’s telegram channel integration page and connect.
 6. That’s it your bot is now connected to the telegram bot and you can search for bot name and start the conversations with it.
 
-> Reference : [](https://cdn.yellowmessenger.com/TBYUqiqEtYhs1613188729295.jpg)
+> Reference : ![](https://cdn.yellowmessenger.com/TBYUqiqEtYhs1613188729295.jpg)
