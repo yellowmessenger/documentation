@@ -59,7 +59,8 @@ module.exports = {
         'documentation/concepts/journeys',
         'documentation/concepts/steps',
         'documentation/concepts/response-types',
-        'documentation/concepts/knowledge-base',
+        'documentation/concepts/template-journeys',
+        'documentation/concepts/bot-knowledge',
         'documentation/concepts/training',
         'documentation/concepts/multilingual'
       ],
