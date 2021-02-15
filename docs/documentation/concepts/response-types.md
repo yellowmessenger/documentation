@@ -1,4 +1,14 @@
 ---
-title: What type of messages can you send to user?
+title: Response types - Message, Action, Logic
 sidebar_label: Response Type
+---
+
+## Message Types
+
+--- 
+## Action Nodes
+
+---
+## Logic
+
 ---
