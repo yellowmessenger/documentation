@@ -4,13 +4,22 @@ title: How Tos
 description: Get answers to all your questions and learn some great tricks. 
 featured: true
 ---
-
-Get answers to all your questions and learn some great tricks.
+This page is for all the learners who LOVE to LEARN on the GO 🏃🏻‍♂️ Time is precious and not everyone likes to take the long trail of step by step learning but get quick answers to tricky questions. This page is for the same kind of learners.   
 
 <!-- SECTION 1 -->
 ## Basics - Setup
 
-### Sign up and accept bot invite? 
+### How to create a bot? 
+
+Please register yourself on https://app.yellowmessenger.com/ and you can get a free bot access for 30Days. It won't take 30 Days to learn the art of bot creation but we understand 30 Days trial should be sufficient to explore all the amazing features of the platform and create awesome AI based conversations. 
+
+Please contact sales@yellowmessenger.com for more information. 
+
+---
+
+### How to sign up and accept bot invite? 
+
+This answer will help understand how a new user can register herself/himself and accept the bot invite. 
 **Keywords** : invite
 
 `Step 1` : Go to https://app.yellowmessenger.com/ and sign up with your email. Share the email with the YM team to send you the bot invite. 
@@ -20,7 +29,7 @@ Get answers to all your questions and learn some great tricks.
 
 ---------------------------------------
 
-### Share Bot Access?
+### How to share Bot Access?
 
 **Keywords** : bot access, invite
 
@@ -33,13 +42,7 @@ Get answers to all your questions and learn some great tricks.
 ---------------------------------------
 
 
-### Create a bot? 
-Please contact sales@yellowmessenger.com or go to https://app.yellowmessenger.com/ and register yourself. 
-
----------------------------------------
-
-
-### Publish a bot?
+### How to publish a bot?
 
 **Keywords** : bot publish, live
 
@@ -54,7 +57,7 @@ Please contact sales@yellowmessenger.com or go to https://app.yellowmessenger.co
 ---------------------------------------
 
 
-### Compare code? 
+### How to compare code? 
 
 **Keywords** : compare
 
@@ -74,19 +77,22 @@ Note :
 
 ![how to accept an invite](../img/howtos/compare.png)
 
-**---------------------------------------**
+---------------------------------------
+---
 
 <!-- SECTION 2 -->
 ## Learn - Create / New
 
 ### How to create a new function? 
-- create , edit, save, add to a step, note on adding multiple functions 
-refer to concepts or add a link here
+Cloud Functions compose of all the user defined functions that defines and controls the flow of the bot. The whole structure of writing the code is modularised. Main is the default function which is executed for every message. In the builder section, we can link the cloud functions directly in validators or steps or init functions by selecting the corresponding cloud function created in Developer section.
+
+![how to add a new function](../img/howtos/function.png)
+
 
 ---------------------------------------
 
 
-### Create a new database and make changes to it? 
+### How to create a new database and make changes to it? 
 
 **Keywords** :  create , edit, upload, modify, delete, index, note on indexing issue and red symbol
 
@@ -106,7 +112,7 @@ Edit the table as you want and save it in CSV format. Please make sure that the 
 Once changes are made, can upload the table in CSV format back on the same page using 'Upload' button. 
 
 
-**Note** : When willing to add single record without downloadig and uploading, basically without making a fuss.  
+**Note** : When willing to add single record without downloading and uploading, basically without making a fuss.  
 Click on ‘Add Record’ and you can add one record at a time.
 ![how to make changes](../img/howtos/database/edit.gif)
 
@@ -114,12 +120,11 @@ Click on ‘Add Record’ and you can add one record at a time.
 ---------------------------------------
 
 
-### Validate(city, name, phone, etc)? 
-Create a journey
-Add steps
-Select the validate button
+### How to Validate the response of a user? 
 
-Validation using regex with code
+Validating any step is as simple as you can think, especially when the expected response from the user if name, email, mobile, location, quick replies or regex. Please regex can be defined here. 
+
+[image to be added for]
 
 ---------------------------------------
 
@@ -128,30 +133,165 @@ Validation using regex with code
 
 **Keywords** : localisation
 
+`Step 1` : To Get Started, Click on Localization Tab
+
+`Step 2` :Now add a unique code for this message, and type in a message English(default) .Then Click on “Add Message” and then Click on “Save Settings”
+
+`Step 3` :Now, on the top right corner, select the language for which you want to configure the message in, an Example has been given below.
+
+`Step 4` :Lastly, corresponding to the code , add the message in the configured language field,then click the “Save Settings” button to save changes.
+
+
+#### SYNTAX:-
+Here is the syntax illustrated below:-
+app.renderMessage(`code-goes-here`,{input parameters as object(Only if data is passes),”fallback-message”(optional, necessary if i18n:false}) 
+USAGE:-
+Here is an example illustrated for you:-
+```
+app.sendTextMessage(app.renderMessage(“new-code”,{},”fall_back_message(if any)”)
+app.sendTextMessage(app.renderMessage(“new-code”))
+app.sendTexMessage(app.renderMessage("ca-number"),{ca : ca_number},"Here are the details for your CA Number: {{ca_number}}")
+```
+
 ![how to make changes](../img/howtos/database/localisation.gif)
 
----------------------------------------
-
-### How to setup suggestions? 
 
 ---------------------------------------
 
 ### How to setup did you mean? 
-https://yellowmessenger.atlassian.net/wiki/spaces/docs/pages/418578433/didYouMean
+
+**Keywords** : didyoumean, suggestions
+
+By default, when the bot is not able to understand any message, it displays a default message.
+To combat this, we can generally provide custom text or quick replies.
+
+But there is a catch, these responses are static in nature and at times is not what the user is looking for.
+It is more intuitive to show some suggestions if they are very close to what the user requested or resemble something in the training of the bot.
+
+For this, a default *didYouMean* function is being made available wherein, just by passing in the *app.prediction.intents*, it can provide you the alternative list of journeys that the bot thinks can be triggered.
+
+>The overriding design goal for didYouMean is to make it as simple as possible to get meaningful suggestions.
+The idea is that the developer shouldn’t need to re-invent the wheel and should be able to directly utilise this functionality so as to improve the user experience.
+
+#### Where to call
+The *didYouMean** function is being made available as the 2nd function in the list of functions in the Developer section of the platform.
+
+So as not to conflict with existing functionality, it is not added as the Default Action for unidentified utterance. For this, *the developer has to go to Default Journey and add it as the response/action*.
+
+#### Function syntax
+```
+app.getAlternateJourneyOptions(app.prediction.intents, 0.4, [], []).then((options) => {
+    
+})
+// no catch required 
+```
+
+The didYouMean uses a util/helper function app.getAlternateJourneyOptions which provides the options back to the developer for further processing.
+
+The function accepts 4 params as of now:
+
+* app.prediction.intents -> Mandatory. To get all the intents from the prediction.
+
+* confidence -> Optional. Confidence threshold below which the journeys are filtered out from the result. By default, 0.0 to allow all journeys to pass through. The good value will be >=0.4
+
+* journeySlugs -> Optional. An array of journey slug names not to be included in the results.
+
+*categoryNames -> Optional. An array of categories whose journeys will not be included in the results.
+
+The function returns an array of objects called options that can be directly passed to app.sendQuickReplies as options.
+If no journeys are present (or filtered out), then an empty array is returned.
+
+The provision for handling both of these functions is present in the UI function.
+
+#### The customization that can be done
+In the UI, the following options can be customized:
+
+* scripts -> The text related to didYouMean can be customized according to the requirements and personality of the bot in question.
+
+* Agent Transfer -> If Agent Transfer is present in the bot, you can include the journey explicitly. The provision is shown in the UI under the comments itself.
+* Caution - Please include the Agent Transfer journey where you pass journeySlugs so as to not show it as the option in between and most importantly to detect when didYouMean is failing.
+
+#### FAQs
+*What if I already have a didYouMean function implemented in my code?*
+The didYouMean has been added in such a way that if you already have a function called didYouMean, then the function won’t be overwritten. Though we do advise to give our function a shot as additional features will be tied into the functionality.
+
+*What if I want to add more functionality to the function?*
+You are always free to customize the UI function according to your needs.
+If in some cases, you feel that some features should be made available by default from the Platform side, you can always drop a message to the below-given details.
+
+
 
 ---------------------------------------
 
 
 ### How to receive an event from an external third party? 
 
+**Keywords** : receive events
+
+In order to receive events from outside of Yellow Messenger on the YM Platform on any bot we can use the following API : 
+[API to added here]
+
 ---------------------------------------
 
 ### How to do elastic search for database
 
----------------------------------------
+#### DataStore
+The datastore is the local database that is available with each bot instance. It is stored inside MongoDB and is indexed with ElasticSearch.
 
-### How to add messages to localisation? 
-- rendermsg
+Each bot’s table gets it’s own index, by default. If needed, you can specify your own elasticsearch mapping to map the database as per your need.
+
+#### Architecture
+Each table in the bot gets its own space in MongoDB and gets indexed into elasticsearch.
+
+You can use the UI to create the table, but in order to query through your code, you will need to know how to write elasticsearch queries
+
+A good place to start would be: https://www.elastic.co/guide/en/elasticsearch/reference/6.7/getting-started.html
+
+#### Datastore UI
+The datastore in the UI can be accessed through Developer -> Database, herewith referred to as database section in this document
+
+Datastore API
+The datastore is available inside the app library and can be accessed with app.dataStore
+
+#### Datastore methods
+* search
+* insert
+* update
+* delete
+* find
+* aggregate
+* updateMany
+* get
+* getForm
+* search
+The datastore search can be used to search for the record in the table
+```
+app.datastore.search({
+    table: tableName,
+    body: esQuery
+})
+```
+*tableName*: The table name that is present in the database section
+
+*esQuery*: The elastic search query that is to be used to search for the records
+
+This function is promisified and hence can be chained for success and reject cases. The chain would go into the reject block in-case of any errors. It is vital to handle this part.
+
+#### insert
+The datastore insert function can be used to add records to your table
+```
+app.datastore.insert({
+        table: tableName,
+        record: recordObject
+    })
+
+```   
+*tableName*: The table name that is present in the database section
+
+*recordObject*: The Object containing the key-value pairs of the record. The keys are the column names and the values are the values for the columns. The keys have to match the exact column name present in the table
+
+---------------------------------------
+---
 
 <!-- SECTION 3 -->
 ## Design - Related To BOT UI 
@@ -192,91 +332,140 @@ Just one more thing, don’t forget to 'Save your Settings' and your beautiful b
 ---------------------------------------
 
 
-### How to change the name, color, UI of the bot? 
-- chat widget
-
----------------------------------------
-
-
 ### How to bulk insert journeys? 
 
 ---------------------------------------
 
 ### How to change the font of a bot? 
-- chat widget https://docs.google.com/document/d/1NX5VPLW7iT1enRJSboDG5eHJm_cX-D9tq70jyaT2V5g/edit
+Good fonts means 5 more marks for good handwriting! Haha! Let's see how we can change the font of the bot. 
+This document will help in changing font for PWA/ Website Bots. 
 
----------------------------------------
+**Keywords** : #fonts, #chatWidget #botUI 
+**References** : https://fonts.google.com/
 
-### How to setup multiple languages? 
-- code and adding prompts in localisation
+`Step 1` : Browse through the [Google fonts ](https://fonts.google.com/)link and choose your favorite style.   
 
----------------------------------------
+![select](../img/howtos/font.png)
 
-### How to add analytics to the custom dashboard? 
-- code and adding prompts in localisation
 
----------------------------------------
+`Step 2` : Select a style, get the URL. URL would look something like this - https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap   
 
-### How to add a scheduler? 
-- code and adding prompts in localisation
+`Step 3` : Open this link in a different tab and get the *.woff2* link from there. 
+![select](../img/howtos/font-woff2.png)
 
----------------------------------------
+`Step 4` : Now add this link to the Channels > Web > Font > Advanced > Custom Font URL 
+![select](../img/howtos/font-add.png)
 
-<!-- SECTION 4 -->
-## Change - Enable / Disable
----------------------------------------
-
-### How to add/ enable small talks? 
-
----------------------------------------
 
 <!-- SECTION 5 -->
 ## Tricks - All interesting stuff here. 
 
 ---------------------------------------
 
-### How does Self Learning work? 
+### How to add Contextual Responses? 
 
-https://docs.google.com/document/d/1vEcJEKNguvWfuTxb1z4W6lds2P5JfgETG4J6QZWl8ko/edit
+**Keywords** : contextual, why, what, how
 
----------------------------------------
+Setting up contextual responses means adding more context to the response to a particular step. To simplify it further lets take an example  
+**Bot** : Can you share your email with me?  
+~~**User** : Sure, gooduser@email.com~~   
+**Bot** : Why do you need my email?  
 
-### How to train a bot? 
-Adding utterances
-Train a bot
-Evaluating the training
-Testing utterances under tools
-Meaning of the Test journey prediction model thing
-Kinds of training
-Word2vec 
-Sentence Encoder 
-Multilingual - ? 
+What if instead of giving their email address during a conversation, customer asked *What is an email* Or *Why do you need my email*. 
+These type of contextual intents can be handled in the following ways :
 
----------------------------------------
+#### First Way of Adding Contextual Responses : Adding Global Contextual Responses
+Setting up standard contextual responses for all steps in all journeys in the bot. Basically if the users ask Why/What/How/ etc at any step, the response will be the same. If you want the same, please follow the following steps : 
 
-### How to add constants? 
+`Step 1` : On the Yellow Messenger Platform, under Studio > Learn > Context Management as shown below. 
+![contextual](../img/howtos/contextual.png)
 
----------------------------------------
+`Step 2` : You can change or add the responses for the various predefined contextual intents like What/Why/How/When/Where/etc. 
+![contextual](../img/howtos/contextual-edit.png)
 
-### How to create and use entities effectively? 
+`Step 3` : You can Bulk Upload and Export these intents and responses as well. 
+![contextual](../img/howtos/contextual-bulk.png)
 
----------------------------------------
+`Step 4` : In order to add new intents click on * '+ Add Contextual Responses'* 
+![contextual](../img/howtos/contextual-new.png)
 
-### How to create synonyms?
+`Step 5` : Add as many training utterances as possible, prompts that the user can type for a particular context. 
 
----------------------------------------
 
-### How to add contextual intents or New Secondary Intent? 
+Now when the user will ask for these questions [Why/What/How/etc] at any step during the conversation. The bot will be able to send these contexual responses to the user. 
 
----------------------------------------
+Please note that the user is not moving ahead while user is asking contextual responses. The user will remain at the same step untill the correct response if given. 
 
-### How to see/download/export user-bot interactions? 
+![contextual](../img/howtos/contextual-example.png)
 
----------------------------------------
 
-### How to push user response into the database? 
+#### Second Way of Adding Contextual Responses : Adding Step Contextual Responses
+In case you want a different contextual response at every step in the bot, please follow the given steps : 
 
----------------------------------------
+`Step 1` : Could not find this in the new platform UI. 
+
+`Step 2` : 
+
+
+### How to setup context at any step? 
+
+>We humans are always aware of context. Even chatbots also store the context to maintain the state of conversation.
+Conversations always happen on a particular topic (like intent), and it is a chain of texts (steps) exchanged between the user and the bot. So, this context keeps the conversation flowing.
+
+This context is stored as a JSON which is constantly updated at each and every step of a conversation. It stores all the info required to identify the state of a conversation, like the *step information* (visited steps), *intent name* (current intent) any many more.
+It is available at app.context
+
+```
+app.context object
+{
+   "complete": true,
+   "steps": {
+        "mobile_num": "9999999999",
+       "customer_id": "-",
+        "otp": "-"
+    },
+    "intent": "login"
+}
+```
+At any point, you can access this object to do things like
+* getting data of the steps
+* knowing the current status of the conversation ( Intent name & the number of steps visited )
+* changing a step value
+
+#### Getting data of the steps
+* app.context.steps is an object which contains key-value pairs of steps and the step values (user inputs) in the format step_name: step_value
+* A new step is added into app.context.steps only after the validation of that step.
+* When it hits an intent, this steps object is initially empty
+* 
+#### Getting Intent name
+* app.context.intent contains the current intent name
+
+#### Other data
+(Very limited use cases though)
+
+* app.context.complete contains a boolean value. If it’s true then the intent is done with visiting all the steps
+* app.dataHistory contains an array of most recent incoming messages to the bot 
+In action function, you can make use of this app.context object to get all the required information to process the answer.
+
+A typical action function below
+```
+return new Promise(resolve => {
+
+    // Getting the data from the steps
+    let otp = app.context.steps.otp
+    let mobile = app.context.steps['mobile_number'] // another way of accessing data
+
+    // API CALL which requires the above data
+    // api logic here
+    
+    app.sendTextMessage('You have been successfully logged in')
+
+    resolve();
+});
+
+```
+
+This object is always updated for every intent. When it hits another intent all the steps data will erased and the intent name will be changed.
 
 
 
