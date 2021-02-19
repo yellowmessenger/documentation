@@ -4,6 +4,8 @@ title: How Tos
 description: Get answers to all your questions and learn some great tricks. 
 featured: true
 ---
+Get answers to all your questions and learn some great tricks. 
+=======
 This page is for all the learners who LOVE to LEARN on the GO 🏃🏻‍♂️ Time is precious and not everyone likes to take the long trail of step by step learning but get quick answers to tricky questions. This page is for the same kind of learners.   
 
 <!-- SECTION 1 -->
@@ -128,6 +130,25 @@ Validating any step is as simple as you can think, especially when the expected 
 
 ---------------------------------------
 
+
+### How to add a new API?
+
+
+1. Click on Studio, go to API tab. On the API tab, click on `+ Create new API` button.
+
+![Create new API](../img/howtos/invoke_api_1.jpg)
+
+2. Enter an API name. API names are alpha-numeric names in Camel Case and we can not have multiple APIs with the same name. The [joke API](https://official-joke-api.appspot.com/random_joke) used below returns a joke with a punchline in the GET request.
+
+![Add joke API](../img/howtos/invoke_api_2.jpg)
+
+3. Once added, you can test the API by hitting `Send` button. If the API is correctly added and the endpoint works, you should be able to see a sample response as below. 
+
+![API Response](../img/howtos/invoke_api_3.jpg)
+
+4. Don't forget to click on save button on the bottom left corner, otherwise you won't get a joke. Now you may laugh! :laughing:
+
+---------------------------------------
 
 ### How to add a messages to localisation/ rendermsg? 
 
