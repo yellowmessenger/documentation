@@ -18,6 +18,8 @@ Design your conversations
 
 ![](https://i.imgur.com/IL3OVdA.png)
 
+![](https://i.imgur.com/hDsFzWh.png)
+
 
 There can be multiple use cases for which you started building a bot - in most cases to automate some service/business function, with a conversational layer on top of it.
 
