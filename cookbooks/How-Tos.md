@@ -223,16 +223,6 @@ If in some cases, you feel that some features should be made available by defaul
 
 ---------------------------------------
 
-
-### How to receive an event from an external third party? 
-
-**Keywords** : receive events
-
-In order to receive events from outside of Yellow Messenger on the YM Platform on any bot we can use the following API : 
-[API to added here]
-
----------------------------------------
-
 ### How to do elastic search for database
 
 #### DataStore
@@ -337,7 +327,11 @@ Just one more thing, don’t forget to 'Save your Settings' and your beautiful b
 
 `Step 1` : Move bot from sandbox from staging environment. Click on the publish button at the top right of the . 
 
-*Note* : The first push can only be done by the super admin of the bot. 
+*Note* : 
+1. The first push can only be done by the super admin of the bot.
+2. Check the following before pushing the bot :
+   1. Bot is trained
+   2. Bot is tested to be moved to the further environment.  
 
 
 ---------------------------------------
@@ -354,9 +348,10 @@ Just one more thing, don’t forget to 'Save your Settings' and your beautiful b
 
 The final code would look something like - 
 
-`<script type="text/javascript">
-        window.ymConfig = { bot: 'YOUR BOT ID',alignLeft: true };  (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/main.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
-    </script>`
+```<script type="text/javascript">
+window.ymConfig = { bot: 'YOUR BOT ID',alignLeft: true };  (function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://app.yellowmessenger.com/widget/main.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+    </script>
+```
 
 ---------------------------------------
 
