@@ -24,6 +24,7 @@ What is a Journey? -- A journey starts when the user queries for a certain answe
 
 <p>--------------- End Of Order Status Journey---------------</p>
 
+
 Now lets create our own journey to generate leads. 
 
 
