@@ -22,7 +22,7 @@ module.exports = {
       collapsed: true,
       items: [
         'developer/app/overview',
-        ...components      
+        ...components
       ],
     },
     {
@@ -44,7 +44,7 @@ module.exports = {
         'developer/app/events/analytics-events',
         'developer/app/events/bot-events',
         'developer/app/events/user-events',
-        'developer/app/events/voice-events',      
+        'developer/app/events/voice-events',
       ],
     },
   ],
@@ -93,10 +93,12 @@ module.exports = {
       label: 'App Configuration',
       collapsed: false,
       items: [
+        'documentation/app-configuration/azure-ad',
         'documentation/app-configuration/freshdesk',
         'documentation/app-configuration/power-bi',
         'documentation/app-configuration/razorpay',
         'documentation/app-configuration/salesforce',
+        'documentation/app-configuration/successfactors',
         'documentation/app-configuration/zalo',
         'documentation/app-configuration/zendesk',
       ],
