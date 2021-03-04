@@ -2,6 +2,7 @@
 id: lead-gen-bot
 title: Building your first Bot
 description: Building a bot which can generate leads for you.
+rank: 6
 ---
 ## Create Lead Generation Bot
 

@@ -67,6 +67,7 @@ async function generateCookbookPosts(
       date = date || (await fs.stat(source)).birthtime;
       frontMatter.title = frontMatter.title || linkName;
 
+
       guidePosts.push({
         id: frontMatter.id || frontMatter.title,
         metadata: {
@@ -81,13 +82,19 @@ async function generateCookbookPosts(
           featured: frontMatter.featured || false,
           keywords: frontMatter.keywords,
           title: frontMatter.title,
+          rank: frontMatter.rank,
         },
       });
     }),
   );
 
+  console.log(guidePosts)
+
   guidePosts.sort(
-    (a, b) => b.metadata.date.getTime() - a.metadata.date.getTime(),
+    (a, b) => b.metadata.rank - a.metadata.rank, 
+    // (a, b) => b.metadata.date.getTime() - a.metadata.date.getTime(), 
+    // console.log("A Metadata: "+ a.metadata.date.getTime()), console.log("B Metadata: "+ b.metadata.date.getTime())
+
   );
 
   return guidePosts;

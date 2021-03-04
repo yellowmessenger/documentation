@@ -3,6 +3,7 @@ id: how-tos
 title: How Tos
 description: Get answers to all your questions and learn some great tricks. 
 featured: true
+rank: 3
 ---
 Get answers to all your questions and learn some great tricks. 
 =======
