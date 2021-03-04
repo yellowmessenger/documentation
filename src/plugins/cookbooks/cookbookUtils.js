@@ -91,9 +91,7 @@ async function generateCookbookPosts(
   console.log(guidePosts)
 
   guidePosts.sort(
-    (a, b) => b.metadata.rank - a.metadata.rank, 
-    // (a, b) => b.metadata.date.getTime() - a.metadata.date.getTime(), 
-    // console.log("A Metadata: "+ a.metadata.date.getTime()), console.log("B Metadata: "+ b.metadata.date.getTime())
+    (a, b) => b.metadata.rank - a.metadata.rank,
 
   );
 
