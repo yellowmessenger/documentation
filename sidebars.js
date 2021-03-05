@@ -75,6 +75,7 @@ module.exports = {
         'documentation/channel-configuration/web',
         'documentation/channel-configuration/android',
         'documentation/channel-configuration/ios',
+        'documentation/channel-configuration/react-native',
         'documentation/channel-configuration/whatsapp',
         'documentation/channel-configuration/fb-messenger',
         'documentation/channel-configuration/slack',
