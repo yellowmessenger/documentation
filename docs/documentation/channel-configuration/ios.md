@@ -1,6 +1,6 @@
 ---
-title: iOS Chat SDK
-sidebar_label: iOS Chat SDK
+title: iOS Chatbot SDK
+sidebar_label: iOS Chatbot SDK
 ---
 ## Setup
 
