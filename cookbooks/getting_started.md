@@ -4,6 +4,7 @@ title: Getting Started with "Hello World!"
 description: Get onboarded on Yellow Messenger!.
 sidebar_label : Getting Started with "Hello World!"
 featured: true
+rank: 1
 ---
 
 Building chatbot is fun. This article will guide you in creating your first chatbot. You start with a basic bot which is as simple as greeting Hello World!. 
