@@ -88,8 +88,6 @@ async function generateCookbookPosts(
     }),
   );
 
-  console.log(guidePosts)
-
   guidePosts.sort(
     (a, b) => b.metadata.rank - a.metadata.rank,
 
