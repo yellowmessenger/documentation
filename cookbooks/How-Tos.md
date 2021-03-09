@@ -28,7 +28,7 @@ This answer will help understand how a new user can register herself/himself and
 `Step 1` : Go to https://app.yellowmessenger.com/ and sign up with your email. Share the email with the YM team to send you the bot invite. 
 
 `Step 2` : The bot will be visible under the ‘Invites’ section, please accept the bot invite and then it will be visible either under Sandbox/ Staging/ Production.
-![how to accept an invite](../img/howtos/invite.gif)
+![how to accept an invite](../img/howtos/share_access.gif)
 
 ---------------------------------------
 
@@ -91,6 +91,10 @@ Cloud Functions compose of all the user defined functions that defines and contr
 
 ![how to add a new function](../img/howtos/function.png)
 
+Another way of adding a new function is directly going to the Studio -> Code section and Add New Function as shown. 
+
+![how to add a new function](../img/howtos/new_function.png
+
 
 ---------------------------------------
 
@@ -101,23 +105,17 @@ Cloud Functions compose of all the user defined functions that defines and contr
 
 `Step 1 ` : Adding a new table : You can add a new table by simply clicking on the ‘create table’ button. You can add fields here along with custom mapping of the fields if required. 
 
-![how to add a new table](../img/howtos/database/create.gif)
+![how to add a new table](../img/howtos/new_database.png)
 
 `Step 2 ` : Download the table and add/edit/remove any data from this table. Truncate the same table and reupload the new table. As shown in the following steps. 
 Edit the table as you want and save it in CSV format. Please make sure that the headers of the table are not changed. 
 
-![how to download a table](../img/howtos/database/download.gif)
 
 `Step 3` : Truncate the table in the database and upload the new updated table. Please make sure you don’t Drop the table. Dropping the table will delete the table entirely. 
 
-![how to download a table](../img/howtos/database/truncate.gif)
+![how to download a table](../img/howtos/table_truncate.png)
 
 Once changes are made, can upload the table in CSV format back on the same page using 'Upload' button. 
-
-
-**Note** : When willing to add single record without downloading and uploading, basically without making a fuss.  
-Click on ‘Add Record’ and you can add one record at a time.
-![how to make changes](../img/howtos/database/edit.gif)
 
 
 ---------------------------------------
@@ -147,7 +145,7 @@ Validating any step is as simple as you can think, especially when the expected 
 
 ![API Response](../img/howtos/invoke_api_3.jpg)
 
-4. Don't forget to click on save button on the bottom left corner, otherwise you won't get a joke. Now you may laugh! :laughing:
+4. Don't forget to click on save button on the bottom left corner, otherwise you won't get the joke. Now you may laugh! :laughing:
 
 ---------------------------------------
 
@@ -169,13 +167,13 @@ Here is the syntax illustrated below:-
 app.renderMessage(`code-goes-here`,{input parameters as object(Only if data is passes),”fallback-message”(optional, necessary if i18n:false}) 
 USAGE:-
 Here is an example illustrated for you:-
-```
+`
 app.sendTextMessage(app.renderMessage(“new-code”,{},”fall_back_message(if any)”)
 app.sendTextMessage(app.renderMessage(“new-code”))
 app.sendTexMessage(app.renderMessage("ca-number"),{ca : ca_number},"Here are the details for your CA Number: {{ca_number}}")
-```
+`
 
-![how to make changes](../img/howtos/database/localisation.gif)
+![how to make changes](../img/howtos/localisation.gif)
 
 
 ---------------------------------------
@@ -201,12 +199,12 @@ The *didYouMean** function is being made available as the 2nd function in the li
 So as not to conflict with existing functionality, it is not added as the Default Action for unidentified utterance. For this, *the developer has to go to Default Journey and add it as the response/action*.
 
 #### Function syntax
-```
+`
 app.getAlternateJourneyOptions(app.prediction.intents, 0.4, [], []).then((options) => {
     
 })
 // no catch required 
-```
+`
 
 The didYouMean uses a util/helper function app.getAlternateJourneyOptions which provides the options back to the developer for further processing.
 
@@ -312,7 +310,7 @@ app.datastore.insert({
 
 🤓 Trick : If you want to see live preview of the changes you’re making then go to your bot journeys, click on ‘Test your bot' on top right. And click on Bot Direct Link as shown here -
 
-![how to make changes in UI](../img/howtos/configurations.gif)
+![how to make changes in UI](../img/howtos/name_desc.png)
 
 You can also upload a new bot icon here. 
 
@@ -322,22 +320,27 @@ You can also upload a new bot icon here.
 
 Creativity is intelligence having fun. Better color combinations and effective aesthetics can be a cherry on the cake, so we should make sure that these features, the color, font, etc can be matched with the clients websites and a standard template can be followed for all chatbots.  
 
-`Step 1` : Access Chat Widget here - Go to app.yellowmessenger.com -> Login with YM credentials -> Open a bot -> Go to configurations tab on the left -> Go to Channels at the top -> Click on the first tile there i.e. Chat Widget as show here.
+`Step 1` : Access Chat Widget here - Login on the platform -> Open a bot -> Go to the Channels tab on the left botton-> Choose web here.
 
-`Step 2` : Under Chat-Widget, you will see the following sections inAppearances and Settings. 
+`Step 2` : Under Web here, you will see the following sections in Appearances and Settings. 
 
-1. Basic 
+1. Bot Icon and Animations
 
-2. Advance
+2. Background
 
-3. General 
+3. Buttons
 
-4. Publish your bot : Use the code snippet provided there, add it to the bottom of the ‘body’ tag. This should be shared with the client and can be added to their index.html page. 
+4. Chat
+    
+5. Font
+   
+6. Header
 
-![how to make changes in UI](../img/howtos/appearance.png)
+7. Publish your bot : Use the code snippet provided there, add it to the bottom of the ‘body’ tag. This should be shared with the client and can be added to their index.html page. 
 
-`Step 3` : As highlighted here in the below image. We have default theme selected now, we can change the settings in the four tabs and save it as a theme.   
-![how to make changes in UI](../img/howtos/theme.png)
+![how to make changes in UI](../img/howtos/bot_ui.png)
+
+`Step 3` : Default theme is chosen at the start, so you can create new themes and switch between the same. 
 
 Just one more thing, don’t forget to 'Save your Settings' and your beautiful bot is good to go! 🙂 
 
