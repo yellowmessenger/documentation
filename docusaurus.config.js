@@ -41,11 +41,9 @@ module.exports = {
       },
       items: [
         {to: 'cookbooks', label: 'Cookbooks', position: 'left'},
+        {to: 'docs/howtos/basics/create-a-bot', label: 'How-Tos', position: 'left', activeBasePath: "docs/howtos"},
         {to: 'docs/documentation/overview', label: 'Documentation', position: 'left', activeBasePath: "docs/documentation"},
         {to: 'docs/developer/overview', label: 'Developer Guide', position: 'left', activeBasePath: "docs/developer"},
-        {to: 'docs/canary/introduction', label: 'Canary', position: 'left', activeBasePath: "docs/canary"},
-        {to: 'docs/bumblebee/introduction', label: 'Bumblebee', position: 'left', activeBasePath: "docs/bumblebee"},
-        {to: 'videos', label: 'Videos', position: 'left'},
         {to: 'https://community.yellowmessenger.com', label: 'Community', position: 'right'},
         {to: 'https://cloud.yellowmessenger.com', label: 'Get started for free', position: 'right'},
       ],
