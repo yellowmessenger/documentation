@@ -2,7 +2,8 @@
 id: data-layer
 title: Understanding Data Base Actions
 description: How to add records in Data Base
-rank: 4
+featured: true
+rank: 5
 ---
 
 ### Create a Data Base Table

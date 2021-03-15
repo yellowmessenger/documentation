@@ -2,7 +2,8 @@
 id: document-cognition
 title: Document Cognition
 description: Answering queries from Documents.
-rank: 5
+featured: true
+rank: 4
 ---
 
 ## When to use document cognition?
