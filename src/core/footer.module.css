@@ -1,0 +1,41 @@
+.footer {
+  background-color: var(--ifm-footer-bg-color);
+  padding: 100px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.footer .container {
+  color: var(--ifm-color-white);
+  display: flex;
+  gap: 50px;
+  letter-spacing: 0.15px;
+}
+
+.container .logo_container {
+  margin-right: 30px;
+}
+.container .logo_container .description {
+  font-size: 0.875rem;
+}
+.container .list_container {
+  margin-right: 50px;
+}
+
+.container .list_container .title {
+  color: var(--ifm-orange-color);
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.container .list_container .list_items {
+  padding: 0;
+}
+
+.container .list_container .list_items .item {
+  list-style-type: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  margin-bottom: 10px;
+}

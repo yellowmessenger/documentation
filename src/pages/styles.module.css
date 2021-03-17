@@ -1,16 +1,32 @@
 /* stylelint-disable docusaurus/copyright-header */
 
-
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+.main_wrapper {
+  height: calc(100vh - 460px);
+  overflow-y: auto;
+}
 
 .heroBanner {
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+.heroBanner .hero_title {
+  font-size: 2rem;
+  color: var(--ifm-primary-grey-color);
+  font-weight: 600;
+}
+.heroBanner .hero_sub_title {
+  font-size: 1.25rem;
+  color: var(--ifm-grey-color-1);
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 966px) {
@@ -28,7 +44,7 @@
 @media (max-width: 480px) {
   .buttons {
     display: block;
-    border-radius: .5em;
+    border-radius: 0.5em;
     margin: 0 0 1rem;
     min-width: auto;
     width: 100%;
