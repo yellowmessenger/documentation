@@ -10,7 +10,7 @@ const StillNotFind = () => {
           No problem! If you need any further help, the support team is always
           here to help you out.
         </p>
-        <button>Contact support</button>
+        <button type="secondary">Contact support</button>
       </div>
     </section>
   );

@@ -5,28 +5,66 @@
  * and scoped locally.
  */
 .main_wrapper {
-  height: calc(100vh - 460px);
   overflow-y: auto;
 }
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.main_wrapper .section_container {
+  width: 80%;
+  margin: 30px auto;
 }
-
-.heroBanner .hero_title {
-  font-size: 2rem;
+.section_container .title {
   color: var(--ifm-primary-grey-color);
+  font-size: 2rem;
   font-weight: 600;
 }
-.heroBanner .hero_sub_title {
-  font-size: 1.25rem;
+
+.section_container .description {
   color: var(--ifm-grey-color-1);
-  text-align: center;
-  max-width: 50%;
-  margin: 0 auto;
+  font-size: 0.875rem;
+}
+
+.main_wrapper .section_container .contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.main_wrapper .section_container .contents .topics_details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.main_wrapper .section_container .contents .right_sidebar {
+  flex: 0 1 25%;
+}
+
+.main_wrapper .section_container .contents .right_sidebar .quick_reads {
+  margin-bottom: 50px;
+}
+
+.main_wrapper .section_container .contents .right_sidebar .quick_reads h2 {
+  color: #505862;
+  font-size: 1.625rem;
+}
+
+.main_wrapper .section_container .contents .right_sidebar .quick_reads .reads {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #007ed4;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+.main_wrapper
+  .section_container
+  .contents
+  .right_sidebar
+  .quick_reads
+  .reads
+  .read {
+  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 966px) {

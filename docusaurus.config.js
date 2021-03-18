@@ -99,5 +99,8 @@ module.exports = {
     path.resolve(__dirname, "./src/plugins/cookbooks"),
     path.resolve(__dirname, "./src/plugins/redirects"),
   ],
+  stylesheets: [
+    "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css",
+  ],
   onBrokenLinks: "log",
 };

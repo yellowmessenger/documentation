@@ -1,10 +1,6 @@
 .footer {
   background-color: var(--ifm-footer-bg-color);
   padding: 100px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
 }
 .footer .container {
   color: var(--ifm-color-white);

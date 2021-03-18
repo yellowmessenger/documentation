@@ -7,6 +7,10 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import Footer from "../core/Footer";
 import styles from "./styles.module.css";
 import StillNotFind from "../components/StillNotFind";
+import Header from "../components/Header";
+import Navbar from "../components/Navbar";
+import Topics from "../components/Topics";
+import Community from "../components/Community";
 
 const features = [
   {
@@ -76,22 +80,41 @@ function Iframe(props) {
 function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
+
+  const topics = [
+    {
+      title: "Documentation",
+      description:
+        "Learn the platform basics, review channel intergration and security compilance documents.",
+      icon: "ri-booklet-line",
+    },
+    {
+      title: "Developer",
+      description:
+        "Customize the bot further with functions, api integrations and event references.",
+      icon: "ri-code-s-slash-line",
+    },
+    {
+      title: "How to’s",
+      description:
+        "complete step-by-step guide to build a bot, from idea to execution.",
+      icon: "ri-question-line",
+    },
+    {
+      title: "Cookbooks",
+      description:
+        "Zero to one of building bots for simple usecases at lightening speed.",
+      icon: "ri-lightbulb-flash-line",
+    },
+  ];
   return (
     <Layout
       title="Home"
       description="Add strong authentication, fine-grained authorization in your apps, devices, and APIs."
     >
+      <Navbar />
       <main className={styles.main_wrapper}>
-        <header
-          className={classnames("hero hero--secondary", styles.heroBanner)}
-        >
-          <div className="container">
-            <h1 className={styles.hero_title}>Hi, how can we help you?</h1>
-            <p className={styles.hero_sub_title}>
-              Refer documentation to build and deploy bots on channels where
-              your customers are!
-            </p>
-            {/* <div className={styles.buttons}>
+        {/* <div className={styles.buttons}>
             <Link
               className={classnames(
                 "button cta-btn button--outline button--primary button--lg",
@@ -111,19 +134,47 @@ function Home() {
               <i className="feather icon-github"></i> Explore Cookbooks
             </Link>
           </div> */}
-          </div>
-        </header>
-        {/* {features && features.length && (
-          <section className={styles.features}>
-            <div className="container">
-              <div className="row">
-                {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
-                ))}
-              </div>
+        <Header
+          title="Hi, how can we help you?"
+          description=" Refer documentation to build and deploy bots on channels where your
+          customers are!"
+        />
+        <section className={styles.section_container}>
+          <h2 className={styles.title}>Browse topics</h2>
+          <p className={styles.description}>
+            Set up simple bots within minutes or learn about how to develop a
+            complex bot that caters to your usecase
+          </p>
+          <div className={styles.contents}>
+            <div className={styles.topics_details}>
+              {topics.map((topic, index) => (
+                <Topics
+                  key={index}
+                  title={topic.title}
+                  description={topic.description}
+                  icon={topic.icon}
+                />
+              ))}
             </div>
-          </section>
-        )} */}
+            <div className={styles.right_sidebar}>
+              <div className={styles.quick_reads}>
+                <h2>Quick reads</h2>
+                <p className={styles.description}>
+                  We gathered some handy resources so that you can get quickly
+                  started.
+                </p>
+                <ul className={styles.reads}>
+                  <li className={styles.read}>How to build your first bot ?</li>
+                  <li className={styles.read}>Create a database table ?</li>
+                  <li className={styles.read}>How to setup a web widget ?</li>
+                  <li className={styles.read}>How to create new function ?</li>
+                  <li className={styles.read}>How to share bot access ?</li>
+                </ul>
+              </div>
+              <Community />
+            </div>
+          </div>
+        </section>
         <StillNotFind />
       </main>
       <Footer />

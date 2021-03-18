@@ -70,11 +70,6 @@
   display: none;
 }
 
-.main-wrapper {
-  height: calc(100vh - 460px) !important;
-  overflow-y: auto;
-}
-
 html[data-theme="dark"] {
   --ifm-color-primary: #3bd1ff;
   --ifm-color-primary-dark: #1ccaff;
@@ -131,26 +126,7 @@ html[data-theme="dark"] .admonition h5 {
   opacity: 0.6;
 }
 .navbar {
-  background-color: #bfe7ff;
-  box-shadow: none;
-}
-.navbar__item {
-  color: var(--ifm-primary-grey-color);
-  font-size: 0.875rem;
-  letter-spacing: 0.15px;
-}
-
-.navbar__items--right a:last-child {
-  background-color: var(--ifm-primary-button-color);
-  color: var(--ifm-background-color);
-  border: 1px solid #c9540d;
-  box-shadow: 0px 1px 0px rgba(61, 47, 38, 0.15);
-  border-radius: 4px;
-  padding: 5px 10px;
-}
-
-.hero {
-  background: linear-gradient(178.49deg, #bfe7ff 16.22%, #eaf5fb 98.8%);
+  display: none;
 }
 
 .header-download-link:before {
