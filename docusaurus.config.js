@@ -44,15 +44,16 @@ module.exports = {
       items: [
         {
           to: "documentation",
-          activeBasePath: "docs/documentation",
+          // activeBasePath: "docs/documentation",
           label: "Documentation",
           position: "left",
         },
         {
-          to: "docs/howtos/basics/create-a-bot",
+          // to: "docs/howtos/basics/create-a-bot",
+          to: "developer",
           label: "Developer",
           position: "left",
-          activeBasePath: "docs/howtos",
+          // activeBasePath: "docs/howtos",
         },
         {
           to: "cookbooks",
@@ -60,10 +61,11 @@ module.exports = {
           position: "left",
         },
         {
-          to: "docs/developer/overview",
+          to: "docs/howtos/basics/create-a-bot",
+          // to: "docs/developer/overview",
           label: "How to's",
           position: "left",
-          activeBasePath: "docs/developer",
+          // activeBasePath: "docs/developer",
         },
         {
           to: "https://community.yellowmessenger.com",

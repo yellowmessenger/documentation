@@ -1,7 +1,8 @@
 import React from "react";
+import Link from "@docusaurus/Link";
 import styles from "./topics.module.css";
 
-const Topics = ({ title, description, icon }) => {
+const Topics = ({ title, description, icon, url }) => {
   return (
     <div className={styles.topic_container}>
       <div className={styles.header}>
@@ -11,10 +12,10 @@ const Topics = ({ title, description, icon }) => {
         <h2 className={styles.title}>{title}</h2>
         <p className={styles.description}>{description}</p>
       </div>
-      <div className={styles.footer}>
+      <Link className={styles.footer} to={url}>
         <span>Read resource</span>
         <i className="ri-arrow-right-line" />
-      </div>
+      </Link>
     </div>
   );
 };

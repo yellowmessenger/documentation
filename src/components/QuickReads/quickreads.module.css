@@ -1,0 +1,23 @@
+.quick_reads {
+  margin-bottom: 50px;
+}
+
+.quick_reads h2 {
+  color: #505862;
+  font-size: 1.625rem;
+}
+
+.quick_reads .reads {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  color: #007ed4;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.15px;
+}
+
+.quick_reads .reads .read {
+  margin-bottom: 10px;
+  cursor: pointer;
+}

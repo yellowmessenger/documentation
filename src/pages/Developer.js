@@ -1,33 +1,26 @@
 import React from "react";
 import Layout from "@theme/Layout";
-import styles from "./styles.module.css";
-import Footer from "../core/Footer";
-import StillNotFind from "../components/StillNotFind";
 import Header from "../components/Header";
 import Overview from "../components/Overview";
 import QuickReads from "../components/QuickReads";
 import Community from "../components/Community";
+import StillNotFind from "../components/StillNotFind";
+import Footer from "../core/Footer";
+import styles from "./styles.module.css";
 
-const Documentation = () => {
+const Developer = () => {
   const overviews = [
     {
-      title: "Concepts",
-      description: "Learn the building blocks of the platform.",
+      title: "Function reference",
+      description: "Get the latest updates on features etc ( Need more copy)",
     },
     {
-      title: "Channel configuration",
-      description:
-        "Learn the steps to configure different channels where your customers are likely to be found.",
+      title: "API reference",
+      description: "Get the latest updates on features etc ( Need more copy)",
     },
     {
-      title: "Compliances",
-      description:
-        "List of compliance certificates to ensure security of platform.",
-    },
-    {
-      title: "App configuration",
-      description:
-        "Resources to have additional plugins, webhooks and API guides",
+      title: "Events reference",
+      description: "Get the latest updates on features etc ( Need more copy)",
     },
   ];
 
@@ -38,9 +31,8 @@ const Documentation = () => {
     >
       <main className={styles.main_wrapper}>
         <Header
-          title="Documentation"
-          description=" Learn the basics of the platform, review channel integrations and
-              security compliance documents."
+          title="Developer guide"
+          description="Learn the basics of the platform, review channel integrations and security compliance documents."
           placeholder="Search documentation"
         />
         <section className={styles.section_container}>
@@ -58,11 +50,11 @@ const Documentation = () => {
             <div className={styles.right_sidebar}>
               <QuickReads
                 list={[
-                  "What are journeys ?",
-                  "Template journeys",
-                  "Bot knowledge",
-                  "Android Chatbot SDK",
-                  "Generic channel integration",
+                  "Campaigns using audience API",
+                  "Platform API",
+                  "Bot events",
+                  "User events",
+                  "Analytics events",
                 ]}
               />
               <Community />
@@ -75,4 +67,5 @@ const Documentation = () => {
     </Layout>
   );
 };
-export default Documentation;
+
+export default Developer;

@@ -1,9 +1,9 @@
 .footer {
   background-color: var(--ifm-footer-bg-color);
-  padding: 100px;
+  padding: 50px;
+  color: var(--ifm-color-white);
 }
 .footer .container {
-  color: var(--ifm-color-white);
   display: flex;
   gap: 50px;
   letter-spacing: 0.15px;
@@ -34,4 +34,23 @@
   font-size: 0.875rem;
   cursor: pointer;
   margin-bottom: 10px;
+}
+
+.footer .company_info {
+  border-top: 2px solid #ffd3a7;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+.footer .company_info .info {
+  display: flex;
+  gap: 80px;
+  font-size: 0.75rem;
+  letter-spacing: 0.15px;
+}
+
+.footer .company_info .social_links i {
+  margin-right: 20px;
 }

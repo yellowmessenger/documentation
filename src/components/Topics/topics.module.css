@@ -49,6 +49,7 @@
   display: flex;
   align-items: center;
   height: 50px;
+  text-decoration: none;
 }
 .topic_container .footer span {
   font-size: 0.875rem;

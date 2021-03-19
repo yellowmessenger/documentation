@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./header.module.css";
 
-const Header = ({ title, description }) => {
+const Header = ({ title, description, placeholder }) => {
   return (
     <header className={`${styles.hero}  ${styles.heroBanner}`}>
       <div className="container">
@@ -12,7 +12,7 @@ const Header = ({ title, description }) => {
           <input
             type="text"
             className={styles.search_input}
-            placeholder="Search by keyword ( Eg. How to build a bot, Journeys, steps)"
+            placeholder={placeholder}
           />
         </div>
       </div>

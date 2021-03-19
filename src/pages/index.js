@@ -1,16 +1,15 @@
 import React from "react";
 import classnames from "classnames";
 import Layout from "@theme/Layout";
-import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import Footer from "../core/Footer";
 import styles from "./styles.module.css";
 import StillNotFind from "../components/StillNotFind";
 import Header from "../components/Header";
-import Navbar from "../components/Navbar";
 import Topics from "../components/Topics";
 import Community from "../components/Community";
+import QuickReads from "../components/QuickReads";
 
 const features = [
   {
@@ -87,24 +86,28 @@ function Home() {
       description:
         "Learn the platform basics, review channel intergration and security compilance documents.",
       icon: "ri-booklet-line",
+      url: "/documentation",
     },
     {
       title: "Developer",
       description:
         "Customize the bot further with functions, api integrations and event references.",
       icon: "ri-code-s-slash-line",
+      url: "/developer",
     },
     {
       title: "How to’s",
       description:
         "complete step-by-step guide to build a bot, from idea to execution.",
       icon: "ri-question-line",
+      url: "/docs/howtos/basics/create-a-bot",
     },
     {
       title: "Cookbooks",
       description:
         "Zero to one of building bots for simple usecases at lightening speed.",
       icon: "ri-lightbulb-flash-line",
+      url: "/cookbooks",
     },
   ];
   return (
@@ -112,7 +115,6 @@ function Home() {
       title="Home"
       description="Add strong authentication, fine-grained authorization in your apps, devices, and APIs."
     >
-      <Navbar />
       <main className={styles.main_wrapper}>
         {/* <div className={styles.buttons}>
             <Link
@@ -138,6 +140,7 @@ function Home() {
           title="Hi, how can we help you?"
           description=" Refer documentation to build and deploy bots on channels where your
           customers are!"
+          placeholder="Search by keyword ( Eg. How to build a bot, Journeys, steps)"
         />
         <section className={styles.section_container}>
           <h2 className={styles.title}>Browse topics</h2>
@@ -146,31 +149,28 @@ function Home() {
             complex bot that caters to your usecase
           </p>
           <div className={styles.contents}>
-            <div className={styles.topics_details}>
+            <div className={styles.details}>
               {topics.map((topic, index) => (
                 <Topics
                   key={index}
                   title={topic.title}
                   description={topic.description}
                   icon={topic.icon}
+                  url={topic.url}
                 />
               ))}
             </div>
             <div className={styles.right_sidebar}>
-              <div className={styles.quick_reads}>
-                <h2>Quick reads</h2>
-                <p className={styles.description}>
-                  We gathered some handy resources so that you can get quickly
-                  started.
-                </p>
-                <ul className={styles.reads}>
-                  <li className={styles.read}>How to build your first bot ?</li>
-                  <li className={styles.read}>Create a database table ?</li>
-                  <li className={styles.read}>How to setup a web widget ?</li>
-                  <li className={styles.read}>How to create new function ?</li>
-                  <li className={styles.read}>How to share bot access ?</li>
-                </ul>
-              </div>
+              <QuickReads
+                description="We gathered some handy resources so that you can get quickly started."
+                list={[
+                  "How to build your first bot ?",
+                  "Create a database table ?",
+                  "How to setup a web widget ?",
+                  "How to create new function ?",
+                  "How to share bot access ?",
+                ]}
+              />
               <Community />
             </div>
           </div>
