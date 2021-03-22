@@ -57,19 +57,47 @@ module.exports = {
     {
       type: "category",
       label: "Function reference",
-      collapsed: true,
+      collapsed: false,
       items: ["developer/app/overview", ...components],
     },
+    // {
+    //   type: "category",
+    //   label: "API reference",
+    //   collapsed: true,
+    //   items: [
+    //     "developer/app/apis/audience-api",
+    //     "developer/app/apis/data-api",
+    //     "developer/app/apis/platform-api",
+    //   ],
+    // },
+    // {
+    //   type: "category",
+    //   label: "Events reference",
+    //   collapsed: false,
+    //   items: [
+    //     "developer/app/events/agent-events",
+    //     "developer/app/events/analytics-events",
+    //     "developer/app/events/bot-events",
+    //     "developer/app/events/user-events",
+    //     "developer/app/events/voice-events",
+    //   ],
+    // },
+  ],
+  apis: [
+    "developer/app/apis/overview",
     {
       type: "category",
       label: "API reference",
-      collapsed: true,
+      collapsed: false,
       items: [
         "developer/app/apis/audience-api",
         "developer/app/apis/data-api",
         "developer/app/apis/platform-api",
       ],
     },
+  ],
+  events: [
+    "developer/app/events/overview",
     {
       type: "category",
       label: "Events reference",

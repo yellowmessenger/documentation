@@ -5,6 +5,11 @@
   max-width: 330px;
   padding: 16px 20px;
   height: 128px;
+  cursor: pointer;
+}
+
+.overview_container:hover {
+  text-decoration: none;
 }
 
 .overview_container .title {

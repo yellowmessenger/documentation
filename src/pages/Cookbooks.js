@@ -8,7 +8,7 @@ import StillNotFind from "../components/StillNotFind";
 import Footer from "../core/Footer";
 import styles from "./styles.module.css";
 
-const Developer = () => {
+const Cookbooks = () => {
   const overviews = [
     {
       title: "Function reference",
@@ -29,12 +29,12 @@ const Developer = () => {
 
   return (
     <Layout
-      title="Documentation"
+      title="Cookbooks"
       description="Add strong authentication, fine-grained authorization in your apps, devices, and APIs."
     >
       <main className={styles.main_wrapper}>
         <Header
-          title="Developer guide"
+          title="Cookbooks"
           description="Learn the basics of the platform, review channel integrations and security compliance documents."
           placeholder="Search documentation"
         />
@@ -72,4 +72,4 @@ const Developer = () => {
   );
 };
 
-export default Developer;
+export default Cookbooks;
