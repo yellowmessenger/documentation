@@ -49,6 +49,15 @@
   .heroBanner {
     padding: 2rem;
   }
+  .main_wrapper .section_container .contents {
+    flex-direction: column;
+  }
+  .main_wrapper .section_container .contents .details {
+    grid-template-columns: 1fr;
+  }
+  .main_wrapper .section_container {
+    width: 90%;
+  }
 }
 
 .buttons {

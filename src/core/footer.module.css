@@ -54,3 +54,16 @@
 .footer .company_info .social_links i {
   margin-right: 20px;
 }
+
+@media screen and (max-width: 966px) {
+  .footer .container {
+    flex-direction: column;
+  }
+  .footer .company_info {
+    flex-direction: column;
+  }
+  .footer .company_info .info {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
