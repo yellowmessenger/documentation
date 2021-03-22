@@ -1,12 +1,13 @@
 import React from "react";
+import Link from "@docusaurus/Link";
 import styles from "./overview.module.css";
 
-const Overview = ({ title, description }) => {
+const Overview = ({ title, description, path }) => {
   return (
-    <div className={styles.overview_container}>
+    <Link to={path} className={styles.overview_container}>
       <h2 className={styles.title}>{title}</h2>
       <p className={styles.description}>{description}</p>
-    </div>
+    </Link>
   );
 };
 

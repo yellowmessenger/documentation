@@ -13,21 +13,25 @@ const Documentation = () => {
     {
       title: "Concepts",
       description: "Learn the building blocks of the platform.",
+      to: "/docs/concepts/overview",
     },
     {
       title: "Channel configuration",
       description:
         "Learn the steps to configure different channels where your customers are likely to be found.",
+      to: "/docs/channelConfiguration/overview",
     },
     {
       title: "Compliances",
       description:
         "List of compliance certificates to ensure security of platform.",
+      to: "/docs/compliances/overview",
     },
     {
       title: "App configuration",
       description:
         "Resources to have additional plugins, webhooks and API guides",
+      to: "/docs/appConfiguration/overview",
     },
   ];
 
@@ -52,6 +56,7 @@ const Documentation = () => {
                   key={index}
                   title={overview.title}
                   description={overview.description}
+                  path={overview.to}
                 />
               ))}
             </div>
