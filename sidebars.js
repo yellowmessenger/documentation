@@ -21,7 +21,6 @@ module.exports = {
       items: [
         'howtos/basics/create-a-bot',
         'howtos/basics/signup-post-bot-invite',
-        'howtos/basics/publish-bot',
         'howtos/basics/access-management',
         'howtos/basics/add-faqs',
         'howtos/basics/compare-code',

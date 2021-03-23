@@ -3,29 +3,43 @@ title: Database Management
 sidebar_label : Database
 ---
 
-### How to create a new database and make changes to it? 
-
 **Keywords** :  create , edit, upload, modify, delete, index, note on indexing issue and red symbol
 
-`Step 1 ` : Adding a new table : You can add a new table by simply clicking on the ‘create table’ button. You can add fields here along with custom mapping of the fields if required. 
 
-![how to add a new table](https://cdn.yellowmessenger.com/bzSJ6BtPnFQQ1615523779900.gif)
+### How to access the Database on the Yellow Messenger platform?
 
-`Step 2 ` : Download the table and add/edit/remove any data from this table. Truncate the same table and reupload the new table. As shown in the following steps. 
+Headover to the `Data` tab from the left sidebar to access the database.
+
+![how to access the database](https://cdn.yellowmessenger.com/OoM6M6mK2bAI1615891898315.png)
+
+### How to create a new database and make changes to it? 
+
+1. Adding a new table : You can add a new table by simply clicking on the ‘create table’ button. You can add fields here along with custom mapping of the fields if required. 
+
+![how to add a new table 1](https://cdn.yellowmessenger.com/2fKv3p5foiAm1615891942921.png)
+
+![how to add a new table 2](https://cdn.yellowmessenger.com/gG2nOWmdLsv81615892026783.png)
+
+2. Download the table and add/edit/remove any data from this table. 
+
+![Download the table](https://cdn.yellowmessenger.com/geXLTc7saBDC1615892768708.png)
+
+
 Edit the table as you want and save it in CSV format. Please make sure that the headers of the table are not changed. 
 
-![how to download a table](https://cdn.yellowmessenger.com/mQW2jB05yQNU1615523803757.gif)
+3. Truncate the table in the database and upload the new updated table. Please make sure you don’t Drop the table. Dropping the table will delete the table entirely. 
 
-`Step 3` : Truncate the table in the database and upload the new updated table. Please make sure you don’t Drop the table. Dropping the table will delete the table entirely. 
-
-![how to truncate a table](https://cdn.yellowmessenger.com/skJYr0V5Aefd1615524449438.gif)
+![Truncate table](https://cdn.yellowmessenger.com/8sGWAKv3FORp1615892832779.png)
 
 Once changes are made, can upload the table in CSV format back on the same page using 'Upload' button. 
+
+![Upload CSV](https://cdn.yellowmessenger.com/NGuXuTaP3lOE1615893169294.png)
 
 
 **Note** : When willing to add single record without downloading and uploading, basically without making a fuss.  
 Click on ‘Add Record’ and you can add one record at a time.
-![how to make changes](https://cdn.yellowmessenger.com/bvqBEKNp5Wpz1615524478859.gif)
+
+![Add record](https://cdn.yellowmessenger.com/ISbs9PfBEf121615893406287.png)
 
 ### How to do elastic search for database
 

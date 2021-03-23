@@ -7,8 +7,12 @@ sidebar_label : Access Management
 
 **Keywords** : bot access, invite
 
-`Step 1` : Go to configurations page inside the bot, open Access control - https://app.yellowmessenger.com/a/Your BOT ID here/config/access
+1. Go to `Configure` section from the left side bar, open `Access controls`.
 
-![how to accept an invite](https://cdn.yellowmessenger.com/05ap4EBkgSM11615523518819.gif)
+![Invite a user](https://cdn.yellowmessenger.com/p3rRw8AVjzHJ1615873798240.png)
 
-`Step 2` : The bot will be visible under the ‘Invites’ section, please accept the bot invite and then it will be visible either under Sandbox/ Staging/ Production.
+2. Click on `Add User` and add an email of the user you want to invite as well as the role under `Access control` field. Under the dropdown menu of `Access control`, you can see which role provides which privileges. Click on save.
+
+![Access Control](https://cdn.yellowmessenger.com/WNHDz8vddUQm1615873897626.png)
+
+3. The user you've invited will received an email from Yellow Messenger to accept the bot invite. Follow to this [guide](https://docs.yellowmessenger.com/docs/howtos/basics/signup-post-bot-invite) to learn how to accept a bot invite.
