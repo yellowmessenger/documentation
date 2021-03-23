@@ -61,7 +61,8 @@ module.exports = {
           position: "left",
         },
         {
-          to: "docs/howtos/basics/create-a-bot",
+          to: "howtos",
+          // to: "docs/howtos/basics/create-a-bot",
           // to: "docs/developer/overview",
           label: "How to's",
           position: "left",
@@ -98,7 +99,7 @@ module.exports = {
     ],
   ],
   plugins: [
-    path.resolve(__dirname, "./src/plugins/cookbooks"),
+    // path.resolve(__dirname, "./src/plugins/cookbooks"),
     path.resolve(__dirname, "./src/plugins/redirects"),
   ],
   stylesheets: [

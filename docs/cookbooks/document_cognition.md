@@ -1,5 +1,5 @@
 ---
-id: document-cognition
+id: document_cognition
 title: Document Cognition
 description: Answering queries from Documents.
 featured: true
@@ -10,20 +10,19 @@ rank: 4
 
 Document Cognition is a way to process unstructured textual data. When you have a lot of documents (20 or more) containing mostly (~70%) text, it is humanly not possible to convert this data into a structured format so that you can feed it to a chatbot. In such cases, we can still leverage this knowledge by feeding it to the NLP model, so that the model can directly search for the most relevant responses from within these documents. In such cases, we can expect the model to take us to the right page/paragraph with ~75-85% accuracy (depending on the type and size of documents).
 
-
 ## When to not use document cognition?
 
 Please note that document cognition is not a replacement for intent classification (journeys). Since it takes unstructured data as input, accuracy will always be lower than the intent classification model, and wherever possible, it is recommended to prefer intent classification (journeys) over document cognition.
 
 Following are some examples when intent classification is the right tool to use as opposed to document cognition -
 
-* Most of the data is already in a structured format (tabular data, excel files, etc.) - the right way to handle this is by uploading to the bot database.
+- Most of the data is already in a structured format (tabular data, excel files, etc.) - the right way to handle this is by uploading to the bot database.
 
-* We already have data in a FAQ-like structure instead of a lot of paragraphs - the right way to handle this is by creating intents.
+- We already have data in a FAQ-like structure instead of a lot of paragraphs - the right way to handle this is by creating intents.
 
-* No. of documents are fewer and can be converted into structured data.
+- No. of documents are fewer and can be converted into structured data.
 
-* Documents are not clean and have a lot of images, scanned pages, complex charts, tables, and diagrams, etc.
+- Documents are not clean and have a lot of images, scanned pages, complex charts, tables, and diagrams, etc.
 
 ## Supported Formats
 
@@ -33,15 +32,15 @@ Currently, we support PDF, PPT, and .Docx formats. We do not support web scrapin
 
 We have recently launched a new version of document cognition which supports -
 
-Option to perform a semantic-based search (the bot will look at the sentence structure and keywords, look at the sentence, and try to map it to the most relevant sections in the documents).  It's recommended to use a keyword search if the total no. of words in the input query is>3. 
+Option to perform a semantic-based search (the bot will look at the sentence structure and keywords, look at the sentence, and try to map it to the most relevant sections in the documents). It's recommended to use a keyword search if the total no. of words in the input query is>3.
 
 ```
 app.searchDocumentsNew({text:'query'}).then((resp)=> {
-    //Your logic goes here 
+    //Your logic goes here
  });
- ```
+```
 
- Automatic creation of questions and answers with the ability to add them to journeys -
+Automatic creation of questions and answers with the ability to add them to journeys -
 
 ![](https://cdn.yellowmessenger.com/HBXDGNGi4W2V1613543255114.png)
 
@@ -54,6 +53,7 @@ app.searchDocumentsNew(
                 keyWordQuery: true
             })
 ```
+
 Option to search for files based on metadata tags. Think of it as a Google Drive search where you can search for all files with a specific name. Note that this does not search inside documents -
 
 ```
@@ -106,13 +106,13 @@ The following are some of the characteristics of a document that’ll be process
 
 5. Always prefer the Word (.doc, .docx) version of the document if available, as some properties might get lost when converting it into PDF.
 
-6. Tables will be skipped. if possible, try to upload documents with less tabular data or remove pages with tables altogether from the document. 
+6. Tables will be skipped. if possible, try to upload documents with less tabular data or remove pages with tables altogether from the document.
 
 #### Why am I not getting the right result in the first suggestion?
 
 Because document cognition is a probabilistic model that is “predicting” the relevance of a specific paragraph or page by looking at the input string. There is no guarantee that the first result will be the most relevant result.
 
-#### Why am I  getting the other documents in suggestions which actually don't have the answer?
+#### Why am I getting the other documents in suggestions which actually don't have the answer?
 
 Same answer as above. The model has no way of “knowing” which document is correct, it can, however, assign a score to all the results based on its assessment of the documents.
 
@@ -130,6 +130,6 @@ Currently, we have restricted the life of each SAS link to an hour for security 
 
 ![](https://cdn.yellowmessenger.com/RL35X3mCozP81613544469236.png)
 
-#### How do I ensure that the bot shows only relevant documents? 
+#### How do I ensure that the bot shows only relevant documents?
 
 There is no specific logic added to detect irrelevance right now. However, we do provide a relevance score with each search result that the bot developer can use. The model returns all documents which contain even a few keywords in the query in decreasing order of relevance. The bot developer can choose to show only Top N (e.g. Top 5) or Top 25% of the results based on relevance score.

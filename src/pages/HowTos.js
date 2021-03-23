@@ -8,50 +8,40 @@ import StillNotFind from "../components/StillNotFind";
 import Footer from "../core/Footer";
 import styles from "./styles.module.css";
 
-const Cookbooks = () => {
+const Howtos = () => {
   const overviews = [
     {
-      title: "Yellow messenger academy",
-      description: "Companion guides for yellowmessenger academy participants.",
-      to: "/docs/cookbooks/Academy",
+      title: "Basic",
+      description: "Get the latest updates on features etc ( Need more copy)",
+      to: "/docs/howtos/basics/create-a-bot",
     },
     {
-      title: "Getting started with “Hello world",
-      description: "Get onboarded on yellow messenger!",
-      to: "/docs/cookbooks/getting_started",
+      title: "Create",
+      description: "Get the latest updates on features etc ( Need more copy)",
+      to: "/docs/howtos/basics/create-a-bot",
     },
     {
-      title: "Understanding database actions",
-      description: "How to add records in database.",
-      to: "/docs/cookbooks/data-layer",
+      title: "Context management",
+      description: "Get the latest updates on features etc ( Need more copy)",
+      to: "/docs/howtos/basics/create-a-bot",
     },
     {
-      title: "Document cognition",
-      description: "Answering queries from documents.",
-      to: "/docs/cookbooks/document_cognition",
-    },
-    {
-      title: "Building your first bot",
-      description: "Building a bot which can generate leads for you.",
-      to: "/docs/cookbooks/lead-gen-bot",
-    },
-    {
-      title: "Agent augmentation",
-      description: "Transfer a chat to an agent.",
-      to: "/docs/cookbooks/transfer_chat",
+      title: "Web - widget",
+      description: "Get the latest updates on features etc ( Need more copy)",
+      to: "/docs/howtos/basics/create-a-bot",
     },
   ];
 
   return (
     <Layout
-      title="Cookbooks"
-      description="zero to one of building bots for simple usecases at lightening speed."
+      title="How - to’s"
+      description="Learn the basics of the platform, review channel integrations and security compliance documents."
     >
       <main className={styles.main_wrapper}>
         <Header
-          title="Cookbooks"
-          description="zero to one of building bots for simple usecases at lightening speed."
-          placeholder="Search Cookbooks"
+          title="How - to’s"
+          description="Learn the basics of the platform, review channel integrations and security compliance documents."
+          placeholder="Search how-to’s"
         />
         <section className={styles.section_container}>
           <h2 className={styles.overview_title}>Overview</h2>
@@ -87,4 +77,4 @@ const Cookbooks = () => {
   );
 };
 
-export default Cookbooks;
+export default Howtos;
