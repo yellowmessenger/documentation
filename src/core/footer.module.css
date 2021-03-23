@@ -51,8 +51,10 @@
   letter-spacing: 0.15px;
 }
 
-.footer .company_info .social_links i {
+.footer .company_info .social_links a {
   margin-right: 20px;
+  text-decoration: none;
+  color: var(--ifm-color-white);
 }
 
 @media screen and (max-width: 966px) {

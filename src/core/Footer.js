@@ -88,11 +88,28 @@ const Footer = () => {
           </span>
         </div>
         <div className={styles.social_links}>
-          <i className="ri-facebook-fill" />
-          <i className="ri-twitter-fill" />
-          <i className="ri-instagram-fill" />
-          <i className="ri-linkedin-fill" />
-          <i className="ri-youtube-fill" />
+          <a href="https://www.facebook.com/YellowDotAI/" target="_blank">
+            <i className="ri-facebook-fill" />
+          </a>
+          <a href="https://twitter.com/yellowdotai" target="_blank">
+            <i className="ri-twitter-fill" />
+          </a>
+          <a href="https://www.instagram.com/yellowdotai/" target="_blank">
+            <i className="ri-instagram-fill" />
+          </a>
+
+          <a
+            href="https://www.linkedin.com/company/yellowdotai"
+            target="_blank"
+          >
+            <i className="ri-linkedin-fill" />
+          </a>
+          <a
+            href="https://www.youtube.com/channel/UC-tUtoApHArcrfhRH4ufsHA"
+            target="_blank"
+          >
+            <i className="ri-youtube-fill" />
+          </a>
         </div>
       </div>
     </footer>
