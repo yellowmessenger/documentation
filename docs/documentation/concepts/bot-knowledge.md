@@ -105,10 +105,11 @@ You can even do a mix of both, upload from sheet, and then add from platform.*
 
 
 ## Knowledge from files - Document Cognition
-# Document Cognition
+In above section we saw how to deal with structured FAQs. 
+What if you have some documents instead? Our doc cognition model helps you search for FAQs from your unstructured documents. 
 
 ###### tags: `structured data` `auto-indexing` `FAQ`
-
+<!--
 - [Document Cognition](#document-cognition)
   * [What is Document Cognition ?](#what-is-document-cognition--)
   * [How does Document Cognition work ?](#how-does-document-cognition-work--)
@@ -123,12 +124,12 @@ You can even do a mix of both, upload from sheet, and then add from platform.*
   * [Dont's w.r.t Document Cognition](#dont-s-wrt-document-cognition)
   * [Watch Document Cognition in Action](#watch-document-cognition-in-action)
   * [Appendix and FAQ](#appendix-and-faq)
-    
-## What is Document Cognition ?
+-->   
+### What is Document Cognition ?
 
 Document Cognition is a way to process **==unstructured textual data==**. When you have multiple documents (20 or more) containing mostly (~70%) text, it is humanly impossible to convert this large pile of data into a structured format so that you can feed it to a chatbot. In such cases, we can leverage this knowledge by feeding it to the DocCog engine which utilizes its NLP model and directly searches for the most relevant response from within these documents.
 In such cases, we can expect the model to answer queries and take us to the right page/paragraph content with ~75-85% accuracy depending on the type and size of documents.
-## How does Document Cognition work ?
+### How does Document Cognition work ?
 Document Cognition Model parses the entire document, tokenizes into headings and paragraphs, and maps each paragraph to a page number. It skips tables, images, and scanned pages wherever it finds them. It then indexes the textual data into our proprietary model, where it tries to predict the kind of questions that someone might ask by looking at a specific document. 
 It primarily relies on :
 
@@ -138,15 +139,15 @@ It primarily relies on :
 
 When a new query is made, the model searches through the embeddings created during the above indexing process and suggests the most relevant paragraphs along with a score for each for ranking purposes.
 
-## :memo: Getting Started
-### Step 1: Navigating to your Knowledge Base
+### :memo: Getting Started
+#### Step 1: Navigating to your Knowledge Base
 1. Enter your YM chatbot builder console and click on **Data** found on the left tool bar.
 2. On clicking Data, the **Database** and **Knowledge Base** console will be shown as seen on the image. 
 3. Selecting **Knowledge Base** will take you to the Document uploader portal.
 
 ![](https://i.imgur.com/jPvq6lO.gif)
 
-### Step 2: Uploading your documents
+#### Step 2: Uploading your documents
 Now click on the **Upload** option to upload the document to be auto-indexed and consumed by chatbot.
 ![](https://i.imgur.com/5crH7eH.gif)
 You will find options like:
@@ -158,8 +159,8 @@ Make sure to check the **Convert into Q&A** check box to enable auotmated Q&A sy
 Also add appropirate **tags** for better search result outcomes
 :::
 
-## Types of "Search"
-### Semantic-based Search
+### Types of "Search"
+#### Semantic-based Search
 Option to perform a **semantic-based search** (the bot will look at the sentence structure and keywords, look at the sentence, and try to map it to the most relevant sections in the documents). 
 > It's recommended to use a keyword search if the total no. of words in the input query is>3.
 ```
@@ -167,7 +168,7 @@ app.searchDocumentsNew({text:'query'}).then((resp)=> {
   // Your logic goes here 
  });
 ```
-### Keyword Search
+#### Keyword Search
 Option to perform an only **keyword search** (the bot will simply do an ES match query in all the documents for that keyword). 
 > It's recommended to use keyword search if the total no. of words in input query is <=3.
 
@@ -178,7 +179,7 @@ app.searchDocumentsNew(
                 keyWordQuery: true
             })
 ```
-### MetaData Search
+#### MetaData Search
 Option to search for files based on **metadata tags**. Think of it as a Google Drive search where you can search for all files with a specific name. 
 >Note that this does not search inside documents
 ```
@@ -204,7 +205,7 @@ app.searchDocumentsNew(
 :memo: When using embedded searches **do not** filter **stop words** as the query loses context and becomes a basic  keyword search. This leads to inaccurate/failed search results.
 
 :::
-## Supported Formats
+### Supported Formats
 Currently, we support PDF, PPT, and .Docx formats. We do not support web scraping and HTML. However, you can export webpages as PDFs and feed them to the engine.
 :::info
 :pushpin: **Important:** 
@@ -212,7 +213,7 @@ Currently, we support PDF, PPT, and .Docx formats. We do not support web scrapin
 * Do not change file extensions by **rename** Changing a .txt file to  .pdf file by rename just corrupts the file. Use proper Word and PDF Native convertors availablew with MS Word or PDF viewers for this task.
 * Do not upload internaal documents to online convertors as it is a violation of policy and compliance issue. 
 :::
-## Dont's w.r.t Document Cognition
+### Dont's w.r.t Document Cognition
 :::info
 :pushpin: Please note that document cognition is not a replacement for intent classification (journeys)
 :::
@@ -232,7 +233,7 @@ Following are some examples when intent classification is the right tool to use 
 :::info
 :pushpin: Want to learn more? ➜ [Check out our Developers Guide](https://yellowmessenger.atlassian.net/wiki/spaces/docs/pages/1293451266/Document+Cognition+v2) 
 :::
-## Appendix and FAQ
+### Appendix and FAQ
 
 :::info
 A list of frequently asked questions on Document Cognition:
@@ -285,3 +286,4 @@ There is no specific logic added to detect irrelevance right now. However, we do
 
 
 ### Document Cognition Action Node (To be updated)
+Use Doc Search without writing code!
