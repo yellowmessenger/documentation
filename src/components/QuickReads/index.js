@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "@docusaurus/Link";
 import styles from "./quickreads.module.css";
 
 const QuickReads = ({ description, list }) => {
@@ -9,7 +10,7 @@ const QuickReads = ({ description, list }) => {
       <ul className={styles.reads}>
         {list.map((item, index) => (
           <li className={styles.read} key={index}>
-            {item}
+            <Link to={item.to}>{item.value}</Link>
           </li>
         ))}
       </ul>

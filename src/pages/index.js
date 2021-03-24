@@ -86,14 +86,14 @@ function Home() {
       description:
         "Learn the platform basics, review channel intergration and security compilance documents.",
       icon: "ri-booklet-line",
-      url: "/documentation",
+      url: "/docs/documentation/concepts/overview",
     },
     {
       title: "Developer",
       description:
         "Customize the bot further with functions, api integrations and event references.",
       icon: "ri-code-s-slash-line",
-      url: "/developer",
+      url: "/docs/developer/overview",
     },
     {
       title: "How to’s",
@@ -107,7 +107,7 @@ function Home() {
       description:
         "Zero to one of building bots for simple usecases at lightening speed.",
       icon: "ri-lightbulb-flash-line",
-      url: "/cookbooks",
+      url: "/docs/cookbooks/Academy",
     },
   ];
   return (
@@ -164,11 +164,26 @@ function Home() {
               <QuickReads
                 description="We gathered some handy resources so that you can get quickly started."
                 list={[
-                  "How to build your first bot ?",
-                  "Create a database table ?",
-                  "How to setup a web widget ?",
-                  "How to create new function ?",
-                  "How to share bot access ?",
+                  {
+                    value: "How to build your first bot ?",
+                    to: "/docs/howtos/basics/create-a-bot",
+                  },
+                  {
+                    value: "Create a database table ?",
+                    to: "/docs/howtos/create/database-management",
+                  },
+                  {
+                    value: "How to setup a web widget ?",
+                    to: "/docs/howtos/design/setup-web-widget",
+                  },
+                  {
+                    value: "How to create new function ?",
+                    to: "/docs/howtos/create/cloud-function/",
+                  },
+                  {
+                    value: "How to share bot access ?",
+                    to: "/docs/howtos/basics/signup-post-bot-invite",
+                  },
                 ]}
               />
               <Community />

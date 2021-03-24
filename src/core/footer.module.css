@@ -35,6 +35,10 @@
   cursor: pointer;
   margin-bottom: 10px;
 }
+.container .list_container .list_items .item a {
+  text-decoration: none;
+  color: var(--ifm-color-white);
+}
 
 .footer .company_info {
   border-top: 2px solid #ffd3a7;
@@ -49,6 +53,10 @@
   gap: 80px;
   font-size: 0.75rem;
   letter-spacing: 0.15px;
+}
+.footer .company_info .info a {
+  color: var(--ifm-color-white);
+  text-decoration: none;
 }
 
 .footer .company_info .social_links a {

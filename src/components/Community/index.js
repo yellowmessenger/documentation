@@ -9,7 +9,9 @@ const Community = () => {
         We always love to hear about projects being built on our platform. There
         is usually someone available to answer questions
       </p>
-      <button>Ask the community</button>
+      <a href="https://community.yellowmessenger.com/" target="_blank">
+        Ask the community
+      </a>
     </div>
   );
 };
