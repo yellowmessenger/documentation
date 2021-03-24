@@ -12,8 +12,49 @@ const {listPaths,} = require('./src/plugins/components');
 let components = listPaths();
 
 module.exports = {
-  bumblebee: ['bumblebee/introduction'],
-  canary: ['canary/introduction'],
+  howtos:[
+    'howtos/overview',
+    {
+      type: 'category',
+      label: 'Basic',
+      collapsed: false,
+      items: [
+        'howtos/basics/create-a-bot',
+        'howtos/basics/signup-post-bot-invite',
+        'howtos/basics/access-management',
+        'howtos/basics/add-faqs',
+        'howtos/basics/compare-code',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Create',
+      collapsed: false,
+      items: [
+        'howtos/create/cloud-function',
+        'howtos/create/database-management',
+        'howtos/create/api-management',
+        'howtos/create/localisation',
+        'howtos/create/setup-did-you-mean',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Context Management',
+      collapsed: false,
+      items: [
+        'howtos/context/add-contextual-response',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Web-Widget',
+      collapsed: false,
+      items: [
+        'howtos/design/setup-web-widget',
+      ],
+    },
+  ],
   developer: [
     'developer/overview',
     {
@@ -22,7 +63,7 @@ module.exports = {
       collapsed: true,
       items: [
         'developer/app/overview',
-        ...components      
+        ...components
       ],
     },
     {
@@ -44,7 +85,7 @@ module.exports = {
         'developer/app/events/analytics-events',
         'developer/app/events/bot-events',
         'developer/app/events/user-events',
-        'developer/app/events/voice-events',      
+        'developer/app/events/voice-events',
       ],
     },
   ],
@@ -75,6 +116,7 @@ module.exports = {
         'documentation/channel-configuration/web',
         'documentation/channel-configuration/android',
         'documentation/channel-configuration/ios',
+        'documentation/channel-configuration/react-native',
         'documentation/channel-configuration/whatsapp',
         'documentation/channel-configuration/fb-messenger',
         'documentation/channel-configuration/slack',
@@ -93,10 +135,12 @@ module.exports = {
       label: 'App Configuration',
       collapsed: false,
       items: [
+        'documentation/app-configuration/azure-ad',
         'documentation/app-configuration/freshdesk',
         'documentation/app-configuration/power-bi',
         'documentation/app-configuration/razorpay',
         'documentation/app-configuration/salesforce',
+        'documentation/app-configuration/successfactors',
         'documentation/app-configuration/zalo',
         'documentation/app-configuration/zendesk',
       ],

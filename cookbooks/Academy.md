@@ -3,6 +3,7 @@ id: ym-academy
 title: Yellow Messenger Academy
 description: Companion guides for Yellow Messenger Academy participants.
 featured: true
+rank: 2
 ---
 
 

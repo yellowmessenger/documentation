@@ -37,7 +37,7 @@ function CookbookPage(props) {
             </article>
           </div>
           {CookbookContents.toc && (
-            <div className="col col--2">
+            <div className="col col--3">
               <TOC toc={CookbookContents.toc} />
             </div>
           )}

@@ -1,5 +1,5 @@
 ---
-title: 🏔 Master the Yellow Messenger Platform
+title: Getting started with the Yellow Messenger Platform
 sidebar_label: Overview 🏔 
 ---
 

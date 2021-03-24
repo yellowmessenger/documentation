@@ -2,6 +2,8 @@
 id: lead-gen-bot
 title: Building your first Bot
 description: Building a bot which can generate leads for you.
+featured: true
+rank: 6
 ---
 ## Create Lead Generation Bot
 
@@ -23,6 +25,7 @@ What is a Journey? -- A journey starts when the user queries for a certain answe
 **Bot**: *Your order status is: Shipped on 12th Jan 2021 and will reach on or before 15th Jan 2021.*
 
 <p>--------------- End Of Order Status Journey---------------</p>
+
 
 Now lets create our own journey to generate leads. 
 
@@ -102,3 +105,41 @@ Ater the training is completed you can go to Try Your Bot and verify your create
 You are ready with your first Bot! 🎉
 
 Next we will discuss on how we can save those user information in a Data Base and do an import of the records as in when required. You can check the next cookbook on Data Base creation [here](https://docs.yellowmessenger.com/cookbooks/data-layer)
+
+## Create Lead Generation Bot using Form Journey
+
+In the cookbook above, we saw how to create a Lead Generation bot on Yellow Messenger. However, there's one more way to create it quickly. Introducing [`Form Journey`](https://docs.yellowmessenger.com/docs/documentation/concepts/template-journeys#forms-journey) which is nothing but template journey which you can use for various purposed. In this cookbook, we will use `Form Journey` to get user data.
+
+1. Create a new Form journey
+In Studio, click on `Create Journey` button on the bottom left corner.
+In the popup, in the `Template` field select `Forms`. Also, add rest of the details. 
+[SS1]
+
+In the `Select steps for forms journey` add all fields as per requirement.
+Click on `Create Journey` now.
+
+2. Connect it with `Welcome Prompt`.
+
+We want users to engage with this journey when they first interact with the bot. Best way to do this including it in the `Welcome Promt`. Go to `Studio` and select `Welcome Prompt`. You should see a `Text Message` response already there.
+
+Let's add a [Quick Reply](https://docs.yellowmessenger.com/docs/documentation/concepts/response-types-message#quick-replies) message by clicking on `Click here to add new response`. Enter a text message here.
+
+SS
+
+Now we need to add 2 buttons, one for to enter the contact information and one to decline it. For that, click on the button below the `Quick Reply`. Enter button name as `Provide Contact Information` and click on toggle button beside `Advanced Settings`. 
+
+SS
+
+Here go to the `Go to journey` field and select lead generation journey we've created eariler. Now click on `Update` button. Follow the same for `Go Back` button but now `Go to journey` will be `Default`.
+
+3. Create DB and add an `Action` Node
+
+First go through the [Understanding Database Actions](https://docs.yellowmessenger.com/cookbooks/data-layer/) cookbook and follow step 1 and 2 to create and insert data into datbase.
+
+SS of bot flow and action node
+
+4. Try your bot
+
+Now you can interact with your bot. If everything works just fine, after completing the `LeadGen` journey, you should see the user data in the database.
+
+SS of DB
