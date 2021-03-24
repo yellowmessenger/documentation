@@ -12,8 +12,22 @@ const { listPaths } = require("./src/plugins/components");
 let components = listPaths();
 
 module.exports = {
+  cookbooks: [
+    {
+      type: "category",
+      label: "Basic",
+      items: [
+        "cookbooks/Academy",
+        "cookbooks/data-layer",
+        "cookbooks/document_cognition",
+        "cookbooks/getting_started",
+        "cookbooks/lead-gen-bot",
+        "cookbooks/transfer_chat",
+      ],
+    },
+  ],
+
   howtos: [
-    "howtos/overview",
     {
       type: "category",
       label: "Basic",
