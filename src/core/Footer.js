@@ -24,10 +24,10 @@ const Footer = () => {
   ];
 
   const cookbooks = [
-    "Building your first bot",
-    "Document cognition",
-    "Agent augmentation",
-    "Yellow messenger academy",
+    { title: "Building your first bot", to: "/docs/cookbooks/lead-gen-bot" },
+    { title: "Document cognition", to: "/docs/cookbooks/document_cognition" },
+    { title: "Agent augmentation", to: "/docs/cookbooks/transfer_chat" },
+    { title: "Yellow messenger academy", to: "/docs/cookbooks/Academy" },
   ];
 
   const developer = [
@@ -77,7 +77,7 @@ const Footer = () => {
           <ul className={styles.list_items}>
             {cookbooks.map((item, index) => (
               <li className={styles.item} key={index}>
-                {item}
+                <Link to={item.to}>{item.title}</Link>
               </li>
             ))}
           </ul>
