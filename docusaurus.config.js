@@ -94,7 +94,7 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/custom.module.css"),
         },
       },
     ],
@@ -105,6 +105,7 @@ module.exports = {
   ],
   stylesheets: [
     "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css",
+    "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700",
   ],
   onBrokenLinks: "log",
 };
