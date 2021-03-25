@@ -34,12 +34,14 @@
   color: var(--ifm-primary-grey-color);
   font-weight: 400;
   margin-bottom: 10px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .topic_container .header .description {
   color: var(--ifm-grey-color-1);
   font-size: 0.875rem;
   margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 .topic_container .footer {
@@ -53,7 +55,8 @@
 }
 .topic_container .footer span {
   font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
 }
 
 .topic_container .footer i {

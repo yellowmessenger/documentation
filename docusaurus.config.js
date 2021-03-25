@@ -103,7 +103,7 @@ module.exports = {
   ],
   stylesheets: [
     "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css",
-    "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700",
+    "https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap",
   ],
   onBrokenLinks: "log",
 };

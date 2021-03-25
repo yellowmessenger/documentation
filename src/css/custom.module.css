@@ -81,8 +81,13 @@
   --ifm-h2-font-size: 1.625rem;
 }
 
+[class^="markdown"] > p {
+  font-family: "Roboto", sans-serif;
+}
+
 [class^="docTitle"] {
   font-size: var(--ifm-h1-font-size) !important;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 [class^="pagination-nav__link"] {
@@ -100,6 +105,10 @@
 
 [class^="markdown"] > h1 {
   --ifm-h1-font-size: 2rem;
+}
+
+[class^="menu__list-item"] {
+  font-family: "Roboto", sans-serif;
 }
 
 /* ends */
@@ -176,6 +185,7 @@ html[data-theme="dark"] .admonition h5 {
   font-size: 0.875rem;
   letter-spacing: 0.15px;
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
 }
 
 [class^="navbar__items navbar__items--right"] a:last-child {
@@ -185,6 +195,7 @@ html[data-theme="dark"] .admonition h5 {
   border-radius: 4px;
   padding: 5px 10px;
   color: var(--ifm-background-color);
+  font-weight: 600;
 }
 
 [class^="navbar__items navbar__items--right"] a:last-child:hover {

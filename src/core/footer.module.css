@@ -24,6 +24,7 @@
   font-size: 1.25rem;
   font-weight: 400;
   margin-bottom: 10px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 .container .list_container .list_items {
   padding: 0;
@@ -38,6 +39,7 @@
 .container .list_container .list_items .item a {
   text-decoration: none;
   color: var(--ifm-color-white);
+  font-family: "Roboto", sans-serif;
 }
 
 .footer .company_info {
