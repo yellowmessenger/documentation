@@ -1,21 +1,62 @@
 /* stylelint-disable docusaurus/copyright-header */
 
-
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
  * and scoped locally.
  */
+.main_wrapper {
+  overflow-y: auto;
+}
+.main_wrapper .section_container {
+  width: 80%;
+  margin: 30px auto;
+}
+.section_container .title {
+  color: var(--ifm-primary-grey-color);
+  font-size: 2rem;
+  font-weight: 600;
+}
 
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.section_container .overview_title {
+  color: var(--ifm-primary-grey-color);
+  font-size: 1.625rem;
+  font-weight: 400;
+}
+
+.section_container .description {
+  color: var(--ifm-grey-color-1);
+  font-size: 0.875rem;
+}
+
+.main_wrapper .section_container .contents {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.main_wrapper .section_container .contents .details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-self: start;
+}
+
+.main_wrapper .section_container .contents .right_sidebar {
+  flex: 0 1 25%;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
+  }
+  .main_wrapper .section_container .contents {
+    flex-direction: column;
+  }
+  .main_wrapper .section_container .contents .details {
+    grid-template-columns: 1fr;
+  }
+  .main_wrapper .section_container {
+    width: 90%;
   }
 }
 
@@ -28,7 +69,7 @@
 @media (max-width: 480px) {
   .buttons {
     display: block;
-    border-radius: .5em;
+    border-radius: 0.5em;
     margin: 0 0 1rem;
     min-width: auto;
     width: 100%;

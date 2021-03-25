@@ -40,24 +40,32 @@ module.exports = {
         src: "img/logo.png",
       },
       items: [
-        { to: "cookbooks", label: "Cookbooks", position: "left" },
         {
-          to: "docs/howtos/basics/create-a-bot",
-          label: "How-Tos",
-          position: "left",
-          activeBasePath: "docs/howtos",
-        },
-        {
-          to: "docs/documentation/overview",
+          to: "docs/documentation/concepts/overview",
+          activeBasePath: "docs/documentation",
           label: "Documentation",
           position: "left",
-          activeBasePath: "docs/documentation",
         },
         {
+          // to: "docs/howtos/basics/create-a-bot",
           to: "docs/developer/overview",
-          label: "Developer Guide",
+          label: "Developer",
           position: "left",
           activeBasePath: "docs/developer",
+        },
+        {
+          to: "/docs/cookbooks/Academy",
+          label: "Cookbooks",
+          position: "left",
+          activeBasePath: "/docs/cookbooks",
+        },
+        {
+          // to: "howtos",
+          to: "docs/howtos/basics/create-a-bot",
+          // to: "docs/developer/overview",
+          label: "How to's",
+          position: "left",
+          activeBasePath: "docs/howtos",
         },
         {
           to: "https://community.yellowmessenger.com",
@@ -66,16 +74,12 @@ module.exports = {
         },
         {
           to: "https://cloud.yellowmessenger.com",
-          label: "Get started for free",
+          label: "Sign up for free",
           position: "right",
         },
       ],
     },
-    footer: {
-      style: "dark",
-      links: [],
-      copyright: `Copyright © ${new Date().getFullYear()} Yellow Messenger`,
-    },
+    footer: { links: [] },
     googleAnalytics: {
       trackingID: "UA-135959729-1",
     },
@@ -88,14 +92,18 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
         },
         theme: {
-          customCss: require.resolve("./src/css/custom.css"),
+          customCss: require.resolve("./src/css/custom.module.css"),
         },
       },
     ],
   ],
   plugins: [
-    path.resolve(__dirname, "./src/plugins/cookbooks"),
+    // path.resolve(__dirname, "./src/plugins/cookbooks"),
     path.resolve(__dirname, "./src/plugins/redirects"),
+  ],
+  stylesheets: [
+    "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css",
+    "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700",
   ],
   onBrokenLinks: "log",
 };

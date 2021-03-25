@@ -1,5 +1,5 @@
 ---
-title: Documentation platform guide
+title: Developer platform guide
 sidebar_label: Overview
 ---
 
