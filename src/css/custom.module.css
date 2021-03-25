@@ -114,7 +114,7 @@
 /* ends */
 
 /*  removed default footer */
-.footer {
+[class^="footer"] {
   display: none;
 }
 
@@ -176,6 +176,11 @@ html[data-theme="dark"] .admonition h5 {
 
 /* navbar custom styling  */
 
+[class^="navbar__inner"] {
+  max-width: 1264px;
+  margin: 0 auto;
+}
+
 [class^="navbar__item navbar__link"] {
   position: relative;
   padding: 0;
@@ -218,6 +223,13 @@ html[data-theme="dark"] .admonition h5 {
 }
 
 /* navbar style ends */
+
+/* main wrapper */
+
+[class^="main-wrapper"] {
+  max-width: 1260px;
+  margin: 0 auto;
+}
 
 .header-download-link:before {
   content: "";

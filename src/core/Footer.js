@@ -53,7 +53,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className={styles.footer}>
+    <footer className={styles.custom_footer}>
       <div className={styles.container}>
         <div className={styles.logo_container}>
           <img src={logo} alt="yellow messenger logo" />

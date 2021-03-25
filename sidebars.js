@@ -13,18 +13,24 @@ let components = listPaths();
 
 module.exports = {
   cookbooks: [
-    {
-      type: "category",
-      label: "Basic",
-      items: [
-        "cookbooks/Academy",
-        "cookbooks/data-layer",
-        "cookbooks/document_cognition",
-        "cookbooks/getting_started",
-        "cookbooks/lead-gen-bot",
-        "cookbooks/transfer_chat",
-      ],
-    },
+    "cookbooks/Academy",
+    "cookbooks/data-layer",
+    "cookbooks/document_cognition",
+    "cookbooks/getting_started",
+    "cookbooks/lead-gen-bot",
+    "cookbooks/transfer_chat",
+    // {
+    //   type: "category",
+    //   label: "Basic",
+    //   items: [
+    //     "cookbooks/Academy",
+    //     "cookbooks/data-layer",
+    //     "cookbooks/document_cognition",
+    //     "cookbooks/getting_started",
+    //     "cookbooks/lead-gen-bot",
+    //     "cookbooks/transfer_chat",
+    //   ],
+    // },
   ],
 
   howtos: [
@@ -67,7 +73,6 @@ module.exports = {
     },
   ],
   developer: [
-    "developer/overview",
     {
       type: "category",
       label: "Function reference",
@@ -99,7 +104,6 @@ module.exports = {
   ],
 
   documentation: [
-    "documentation/overview",
     {
       type: "category",
       label: "Concepts",
