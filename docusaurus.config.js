@@ -48,7 +48,7 @@ module.exports = {
         },
         {
           // to: "docs/howtos/basics/create-a-bot",
-          to: "docs/developer/app/components/agents-available",
+          to: "/docs/developer/app/overview",
           label: "Developer",
           position: "left",
           activeBasePath: "docs/developer",
