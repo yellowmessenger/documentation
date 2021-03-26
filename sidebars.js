@@ -25,6 +25,7 @@ module.exports = {
         'howtos/basics/add-faqs',
         'howtos/basics/compare-code',
         'howtos/basics/validate-input',
+        'howtos/basics/manage-support-agent',
 
       ],
     },
