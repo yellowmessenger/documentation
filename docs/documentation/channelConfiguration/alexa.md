@@ -4,19 +4,16 @@ sidebar_label : Alexa
 ---
 
 There are two parts to an Alexa skill. The first part is the [Voice User Interface (VUI)](https://developer.amazon.com/en-US/docs/alexa/custom-skills/define-the-interaction-model-in-json-and-text.html). This is where we define how we will handle a user's voice input. The second part is the actual code logic for our skill. Setting up of the VUI will take place completely in the [Amazon Developer Portal](https://www.amazon.com/ap/signin?openid.pape.preferred_auth_policies=Singlefactor&clientContext=133-4657237-7550651&openid.pape.max_auth_age=7200000&openid.return_to=https%3A%2F%2Fdeveloper.amazon.com%2Falexa%2Fconsole%2Fask&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_dante_us&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&#/skills), while
-the actual code logic will be written in the [BotPlatform](https://app.yellowmessenger.com).
+the actual code logic will be written in the [Platform](https://app.yellowmessenger.com).
 
 ## Setting up Your Alexa Skill in the Developer Portal
 
 
 1. Go to the Amazon Developer Portal. In the top-right corner of the screen, click the "Sign In" button.
 
-Your sign in credentials are as follows -
+Use your sign in credentials are as follows -
 
 ![](https://cdn.yellowmessenger.com/NMxpVIamboBs1612447788006.png)
-
-> username - rashid@yellowmessenger.com
-> password - Orange
 
 2. Once you have signed in, click the Alexa button at the top of the screen.
 
