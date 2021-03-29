@@ -228,7 +228,7 @@ html[data-theme="dark"] .admonition h5 {
 
 /* main wrapper */
 
-[class^="main-wrapper"] {
+[class^="docPage"] {
   max-width: 1260px;
   margin: 0 auto;
   width: 100%;

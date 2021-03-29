@@ -2,12 +2,10 @@
   background-color: var(--ifm-footer-bg-color);
   padding: 40px;
   color: var(--ifm-color-white);
-  max-width: 1264px;
-  margin: 0 auto;
 }
 .custom_footer .container {
   display: flex;
-  gap: 40px;
+  gap: 90px;
   letter-spacing: 0.15px;
 }
 

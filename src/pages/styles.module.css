@@ -6,11 +6,11 @@
  */
 .main_wrapper {
   overflow-y: auto;
-  max-width: 1264px;
-  margin: 0 auto;
 }
 .main_wrapper .section_container {
   padding: 3.5rem 1rem;
+  max-width: 1264px;
+  margin: 0 auto;
 }
 .section_container .title {
   color: var(--ifm-primary-grey-color);
