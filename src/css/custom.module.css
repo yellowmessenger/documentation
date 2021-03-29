@@ -74,6 +74,8 @@
   --ifm-menu-color-background-active: #eaf5fb;
   --ifm-menu-color-active: #384248;
   --ifm-menu-link-sublist-icon-filter: #505862;
+
+  --ifm-spacing-horizontal: 40px;
 }
 
 /*  docs styling starts*/
