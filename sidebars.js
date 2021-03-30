@@ -56,7 +56,7 @@ module.exports = {
         "howtos/create/database-management",
         "howtos/create/api-management",
         "howtos/create/localisation",
-        "howtos/create/setup-did-you-mean",
+       // "howtos/create/setup-did-you-mean",
       ],
     },
     {
