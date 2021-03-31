@@ -7,13 +7,13 @@ As you can see in the screenshot below, we have a userdata table where we're sto
 
 ![User Data DB](https://cdn.yellowmessenger.com/IayOU3SuI8Q01616761692169.png)
 
-1. Search using search bar:
+#### **1. Search using search bar:**
 
 In the search bar you can enter your search string and results will be showed below. You can also select in which column you want to search from the `All fields` dropdown menu.
 
 ![Search DB](https://cdn.yellowmessenger.com/yloJuXwtyJz21616761857240.png)
 
-2. Search using query:
+#### **2. Search using query:**
 
 Go to Data > Developer tools and select table. In the `Query` section, you can enter your query and Output will be shown on the right.
 
