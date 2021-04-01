@@ -60,6 +60,10 @@ The purpose of this is simply to bring in your function at the exact point in fl
 API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) and then store API response in a variable for further use. 
 ![](https://i.imgur.com/5zvKnCW.jpg)
 
+:::info
+Learn how to directly use this variable in your steps to access different fields in API response [**here**](https://docs.yellowmessenger.com/docs/howtos/basics/variables-in-UI)
+:::
+
 :::warning
 :pushpin: **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node.
 

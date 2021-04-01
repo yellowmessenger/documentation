@@ -45,6 +45,7 @@ module.exports = {
         "howtos/basics/access-management",
         "howtos/basics/add-faqs",
         "howtos/basics/compare-code",
+        "howtos/basics/variables-in-UI"
       ],
     },
     {
