@@ -60,6 +60,7 @@ module.exports = {
         "howtos/create/api-management",
         "howtos/create/localisation",
        // "howtos/create/setup-did-you-mean",
+        "howtos/create/whatsapp-notification-template",
       ],
     },
     {
