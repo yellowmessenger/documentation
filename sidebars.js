@@ -44,10 +44,10 @@ module.exports = {
         'howtos/basics/access-management',
         'howtos/basics/add-faqs',
         'howtos/basics/compare-code',
+        "howtos/basics/variables-in-UI",
         'howtos/basics/validate-input',
         'howtos/basics/manage-support-agent',
         'howtos/basics/database-search',
-
       ],
     },
     {
