@@ -179,7 +179,7 @@ html[data-theme="dark"] .admonition h5 {
 /* navbar custom styling  */
 
 [class^="navbar__inner"] {
-  max-width: 1264px;
+  max-width: 1404px;
   margin: 0 auto;
 }
 
@@ -229,7 +229,7 @@ html[data-theme="dark"] .admonition h5 {
 /* main wrapper */
 
 [class^="docPage"] {
-  max-width: 1260px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
 }
