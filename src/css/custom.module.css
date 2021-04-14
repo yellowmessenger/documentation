@@ -71,8 +71,10 @@
   --ifm-link-color: #007ed4;
 
   --ifm-menu-color: #505862;
-  --ifm-menu-color-background-active: #eaf5fb;
-  --ifm-menu-color-active: #384248;
+  --ifm-menu-color-background-active: #fff;
+  --ifm-menu-color-background-hover: #fff;
+  --ifm-menu-color-active: #007ed4;
+
   --ifm-menu-link-sublist-icon-filter: #505862;
 
   --ifm-spacing-horizontal: 40px;
@@ -298,10 +300,21 @@ html[data-theme="dark"] .DocSearch {
 
 [class^="menu__link"]
 {
-  font-size: 15px !important;
-  line-height: 15px !important;
+  font-size: 14px !important;
+  line-height: 14px !important;
 }
 
-[class^="markdown"] > p {
-  color: var(--ifm-menu-color);
+[class^="menu__link"]:hover, [class^="menu__link menu__link--active active"]
+{
+  color: #007ed4;
+  font-weight: 500;
+}
+
+[class^="menu__link menu__link--sublist menu__link--active"] {
+  font-weight: 500;
+  color: #505862;
+}
+
+[class^="menu__link menu__link--sublist"]::after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.4rem 1.4rem;
 }
