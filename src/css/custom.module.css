@@ -58,8 +58,8 @@
   --ifm-background-surface-color-secondary: #f3f3f3;
   --ifm-background-color: #ffffff;
 
-  --ifm-heading-color: #384248;
-  --ifm-hero-text-color: #384248;
+  --ifm-heading-color: #373737;
+  --ifm-hero-text-color: #373737;
   --ifm-blockquote-color: #3c3c3c;
 
   --ifm-code-font-size: 95%;
@@ -294,4 +294,14 @@ html[data-theme="dark"] .DocSearch {
   border-radius: 2em;
   margin-right: 1em;
   min-width: 240px;
+}
+
+[class^="menu__link"]
+{
+  font-size: 15px !important;
+  line-height: 15px !important;
+}
+
+[class^="markdown"] > p {
+  color: var(--ifm-menu-color);
 }
