@@ -65,6 +65,7 @@ module.exports = {
         "howtos/create/whatsapp-bot",
         "howtos/create/whatsapp-notification-template",
         "howtos/create/whatsapp-notification-ym",
+        "howtos/create/multilingual-bot",
       ],
     },
     {
