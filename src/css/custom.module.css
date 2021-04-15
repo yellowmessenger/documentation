@@ -58,8 +58,8 @@
   --ifm-background-surface-color-secondary: #f3f3f3;
   --ifm-background-color: #ffffff;
 
-  --ifm-heading-color: #384248;
-  --ifm-hero-text-color: #384248;
+  --ifm-heading-color: #373737;
+  --ifm-hero-text-color: #373737;
   --ifm-blockquote-color: #3c3c3c;
 
   --ifm-code-font-size: 95%;
@@ -71,8 +71,10 @@
   --ifm-link-color: #007ed4;
 
   --ifm-menu-color: #505862;
-  --ifm-menu-color-background-active: #eaf5fb;
-  --ifm-menu-color-active: #384248;
+  --ifm-menu-color-background-active: #fff;
+  --ifm-menu-color-background-hover: #fff;
+  --ifm-menu-color-active: #007ed4;
+
   --ifm-menu-link-sublist-icon-filter: #505862;
 
   --ifm-spacing-horizontal: 40px;
@@ -179,7 +181,7 @@ html[data-theme="dark"] .admonition h5 {
 /* navbar custom styling  */
 
 [class^="navbar__inner"] {
-  max-width: 1264px;
+  max-width: 1404px;
   margin: 0 auto;
 }
 
@@ -229,7 +231,7 @@ html[data-theme="dark"] .admonition h5 {
 /* main wrapper */
 
 [class^="docPage"] {
-  max-width: 1260px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
 }
@@ -294,4 +296,25 @@ html[data-theme="dark"] .DocSearch {
   border-radius: 2em;
   margin-right: 1em;
   min-width: 240px;
+}
+
+[class^="menu__link"]
+{
+  font-size: 14px !important;
+  line-height: 14px !important;
+}
+
+[class^="menu__link"]:hover, [class^="menu__link menu__link--active active"]
+{
+  color: #007ed4;
+  font-weight: 500;
+}
+
+[class^="menu__link menu__link--sublist menu__link--active"] {
+  font-weight: 500;
+  color: #505862;
+}
+
+[class^="menu__link menu__link--sublist"]::after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.4rem 1.4rem;
 }
