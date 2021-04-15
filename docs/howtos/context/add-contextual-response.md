@@ -18,19 +18,23 @@ These type of contextual intents can be handled in the following ways :
 #### First Way of Adding Contextual Responses : Adding Global Contextual Responses
 Setting up standard contextual responses for all steps in all journeys in the bot. Basically if the users ask Why/What/How/ etc at any step, the response will be the same. If you want the same, please follow the following steps : 
 
-`Step 1` : On the Yellow Messenger Platform, under Studio > Learn > Context Management as shown below. 
+1. On the Yellow Messenger Platform, under Studio > Learn > Context Management as shown below.
+
 ![contextual](https://cdn.yellowmessenger.com/VcWZIGBahtyb1615525545331.png)
 
-`Step 2` : You can change or add the responses for the various predefined contextual intents like What/Why/How/When/Where/etc. 
+2. You can change or add the responses for the various predefined contextual intents like What/Why/How/When/Where/etc. 
+
 ![contextual](https://cdn.yellowmessenger.com/lDKUvR0i95JI1615525572272.png)
 
-`Step 3` : You can Bulk Upload and Export these intents and responses as well. 
+3. You can Bulk Upload and Export these intents and responses as well. 
+
 ![contextual](https://cdn.yellowmessenger.com/Cvhplh0fIFoc1615525606462.png)
 
-`Step 4` : In order to add new intents click on * '+ Add Contextual Responses'* 
+4. In order to add new intents click on * '+ Add Contextual Responses'* 
+
 ![contextual](https://cdn.yellowmessenger.com/grzVMIxid0Tr1615525631900.png)
 
-`Step 5` : Add as many training utterances as possible, prompts that the user can type for a particular context. 
+5. Add as many training utterances as possible, prompts that the user can type for a particular context. 
 
 
 Now when the user will ask for these questions [Why/What/How/etc] at any step during the conversation. The bot will be able to send these contexual responses to the user. 
@@ -38,14 +42,6 @@ Now when the user will ask for these questions [Why/What/How/etc] at any step du
 Please note that the user is not moving ahead while user is asking contextual responses. The user will remain at the same step untill the correct response if given. 
 
 ![contextual](https://cdn.yellowmessenger.com/fZN8lIisIfxw1615525657154.png)
-
-
-#### Second Way of Adding Contextual Responses : Adding Step Contextual Responses
-In case you want a different contextual response at every step in the bot, please follow the given steps : 
-
-`Step 1` : Could not find this in the new platform UI. 
-
-`Step 2` : 
 
 
 ### How to setup context at any step? 
@@ -77,7 +73,7 @@ At any point, you can access this object to do things like
 * app.context.steps is an object which contains key-value pairs of steps and the step values (user inputs) in the format step_name: step_value
 * A new step is added into app.context.steps only after the validation of that step.
 * When it hits an intent, this steps object is initially empty
-* 
+
 #### Getting Intent name
 * app.context.intent contains the current intent name
 
