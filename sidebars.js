@@ -49,6 +49,7 @@ module.exports = {
         'howtos/basics/validate-input',
         'howtos/basics/manage-support-agent',
         'howtos/basics/database-search',
+        "howtos/basics/sensitive-info",
       ],
     },
     {
