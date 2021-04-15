@@ -45,7 +45,7 @@ module.exports = {
         "howtos/basics/access-management",
         "howtos/basics/add-faqs",
         "howtos/basics/compare-code",
-        "howtos/basics/variables-in-UI"
+        "howtos/basics/variables-in-UI",
       ],
     },
     {
@@ -57,7 +57,7 @@ module.exports = {
         "howtos/create/database-management",
         "howtos/create/api-management",
         "howtos/create/localisation",
-       // "howtos/create/setup-did-you-mean",
+        // "howtos/create/setup-did-you-mean",
       ],
     },
     {
@@ -142,6 +142,7 @@ module.exports = {
         "documentation/channelConfiguration/generic-webhook",
         "documentation/channelConfiguration/fb-workplace",
         "documentation/channelConfiguration/telegram",
+        "documentation/channelConfiguration/fb-lead-ads",
       ],
     },
     {
