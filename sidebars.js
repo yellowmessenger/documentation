@@ -39,15 +39,16 @@ module.exports = {
       label: "Basic",
       collapsed: false,
       items: [
-        'howtos/basics/create-a-bot',
-        'howtos/basics/signup-post-bot-invite',
-        'howtos/basics/access-management',
-        'howtos/basics/add-faqs',
-        'howtos/basics/compare-code',
+        "howtos/basics/create-a-bot",
+        "howtos/basics/signup-post-bot-invite",
+        // "howtos/basics/publish-bot",
+        "howtos/basics/access-management",
+        "howtos/basics/add-faqs",
+        "howtos/basics/compare-code",
+        "howtos/basics/variables-in-UI",
         'howtos/basics/validate-input',
         'howtos/basics/manage-support-agent',
-        'howtos/basics/database-search',
-
+        'howtos/basics/database-search'
       ],
     },
     {
@@ -59,8 +60,8 @@ module.exports = {
         "howtos/create/database-management",
         "howtos/create/api-management",
         "howtos/create/localisation",
-        "howtos/create/whatsapp-bot",
         // "howtos/create/setup-did-you-mean",
+        "howtos/create/whatsapp-bot",
       ],
     },
     {
@@ -145,6 +146,7 @@ module.exports = {
         "documentation/channelConfiguration/generic-webhook",
         "documentation/channelConfiguration/fb-workplace",
         "documentation/channelConfiguration/telegram",
+        "documentation/channelConfiguration/fb-lead-ads",
       ],
     },
     {

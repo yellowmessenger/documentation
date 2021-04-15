@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./header.module.css";
+import SearchBar from "../../theme/SearchBar";
 
 const Header = ({ title, description, placeholder }) => {
   return (

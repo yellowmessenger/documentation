@@ -23,6 +23,18 @@ module.exports = {
   //   },
   // },
   themeConfig: {
+    algolia: {
+      apiKey: '1893e11171bb8b2b019ada3bb475d5c6',
+      indexName: 'yellowmessenger',
+
+      // Optional: see doc section below
+      contextualSearch: false,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
       darkTheme: require("./src/plugins/prism_themes/monokai"),
