@@ -49,6 +49,7 @@ module.exports = {
         'howtos/basics/validate-input',
         'howtos/basics/manage-support-agent',
         'howtos/basics/database-search',
+        "howtos/basics/sensitive-info",
       ],
     },
     {
@@ -64,6 +65,7 @@ module.exports = {
         "howtos/create/whatsapp-bot",
         "howtos/create/whatsapp-notification-template",
         "howtos/create/whatsapp-notification-ym",
+        "howtos/create/quickreply",
       ],
     },
     {
