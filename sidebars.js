@@ -46,6 +46,10 @@ module.exports = {
         "howtos/basics/add-faqs",
         "howtos/basics/compare-code",
         "howtos/basics/variables-in-UI",
+        'howtos/basics/validate-input',
+        'howtos/basics/manage-support-agent',
+        'howtos/basics/database-search',
+        "howtos/basics/sensitive-info",
       ],
     },
     {
@@ -58,6 +62,10 @@ module.exports = {
         "howtos/create/api-management",
         "howtos/create/localisation",
         // "howtos/create/setup-did-you-mean",
+        "howtos/create/whatsapp-bot",
+        "howtos/create/whatsapp-notification-template",
+        "howtos/create/whatsapp-notification-ym",
+        "howtos/create/quickreply",
       ],
     },
     {
