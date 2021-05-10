@@ -140,7 +140,7 @@ module.exports = {
         "documentation/channelConfiguration/ios",
         "documentation/channelConfiguration/react-native",
         "documentation/channelConfiguration/whatsapp",
-        "documentation/channelConfiguration/fb-messenger",
+        "documentation/channelConfiguration/facebook-messenger",
         "documentation/channelConfiguration/slack",
         "documentation/channelConfiguration/teams",
         "documentation/channelConfiguration/alexa",
@@ -151,6 +151,7 @@ module.exports = {
         "documentation/channelConfiguration/fb-workplace",
         "documentation/channelConfiguration/telegram",
         "documentation/channelConfiguration/fb-lead-ads",
+        "documentation/channelConfiguration/whatsapp-configuration",
       ],
     },
     {

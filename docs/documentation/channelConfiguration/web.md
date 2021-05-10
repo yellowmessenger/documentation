@@ -3,7 +3,6 @@ title: Web Client
 sidebar_label: Web Client
 ---
 
-
 # Authenticate the Users in the Web Widget from the Parent Interface via Session Tokens
 
 

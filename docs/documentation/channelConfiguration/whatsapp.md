@@ -1,18 +1,19 @@
 ---
-title: WhatsApp
-sidebar_label: WhatsApp
+title: WhatsApp notifications
+sidebar_label: WhatsApp notifications
 ---
+
 In order to use the APIs, please follow the instructions given.
 
 1. All APIs are of the form URL/Path. The same URL is used for all APIs present in this document, only the path is different for the different services.
-  
-  a. URL : [WhatsApp Integration](https://app.yellowmessenger.com/integrations/whatsapp/send?bot={{botid}})
-  
-  b. All API requests will contain two fields that contain data specific for the client businesses. These are generated specifically for the clients and can be shared after the relevant bots are created.
-  
-  c. BotId : //to be provided by the YM team
-  
-  d. x-auth-token : //This is available as on logging into the platform -
+
+a. URL : [WhatsApp Integration](https://app.yellowmessenger.com/integrations/whatsapp/send?bot={{botid}})
+
+b. All API requests will contain two fields that contain data specific for the client businesses. These are generated specifically for the clients and can be shared after the relevant bots are created.
+
+c. BotId : //to be provided by the YM team
+
+d. x-auth-token : //This is available as on logging into the platform -
 
 > app.yellowmessenger.com > Account settings > API Key
 
@@ -22,24 +23,25 @@ In order to use the APIs, please follow the instructions given.
 
 **Supported Content-type**
 
-Media | Content Type
------- | ---------
-audio(Upto 16MB) | audio/aac, audio/mp4, audio/amr, audio/mpeg, audio/ogg; codecs=opus. Note: The base audio/ogg type is not supported.
-document(Upto 100MB) | Any valid MIME-type
-image(Upto 5MB) | image/jpeg, image/png
-video(Upto 16MB) | video/mp4, video/3gpp
+| Media                | Content Type                                                                                                         |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------- |
+| audio(Upto 16MB)     | audio/aac, audio/mp4, audio/amr, audio/mpeg, audio/ogg; codecs=opus. Note: The base audio/ogg type is not supported. |
+| document(Upto 100MB) | Any valid MIME-type                                                                                                  |
+| image(Upto 5MB)      | image/jpeg, image/png                                                                                                |
+| video(Upto 16MB)     | video/mp4, video/3gpp                                                                                                |
 
 ## POST URL:
+
 > [https://app.yellowmessenger.com/integrations/whatsapp/send?bot=x1234567890](https://app.yellowmessenger.com/integrations/whatsapp/send?bot=x1234567890)
 > Bot ID will be shared by YM
 > Headers:
 > Content-Type : application/json
 > x-auth-token : To be fetched from the YM Account Settings
 
-
 ## Text Template:
 
 ### Sample Request Body
+
 ```js
 {
   "body": {
@@ -110,6 +112,7 @@ video(Upto 16MB) | video/mp4, video/3gpp
 ```
 
 ### Doc/PDF Template Body
+
 ```js
 {
   "type": "media-notification",
@@ -130,7 +133,7 @@ video(Upto 16MB) | video/mp4, video/3gpp
             {
               "type": "header",
               "parameters": [
-                {     
+                {
                   "type": "document",
                   "document": {
                       "filename": "Doc_name.pdf" //File Name of the the PDF
@@ -144,11 +147,11 @@ video(Upto 16MB) | video/mp4, video/3gpp
                 {
                   "type": "text", // Variable Values.
                   "text": "1"
-                } 
-              ] 
-            } 
-          ] 
-      } 
+                }
+              ]
+            }
+          ]
+      }
   }
 }
 ```
@@ -164,6 +167,7 @@ video(Upto 16MB) | video/mp4, video/3gpp
     },
 ]
 ```
+
 ### Image Template Body:
 
 ```js
@@ -198,13 +202,14 @@ video(Upto 16MB) | video/mp4, video/3gpp
               "type": ​"text"​,
               "text": ​"1"
             }
-          ] 
-        } 
-        ] 
+          ]
+        }
+        ]
     }
-  } 
-}  
+  }
+}
 ```
+
 > “type” : body params not required if there are no variables in the template
 
 ### Video Template
@@ -243,12 +248,12 @@ video(Upto 16MB) | video/mp4, video/3gpp
           {
             ​"type"​: ​"text"​,
             ​"text"​: ​"1"
-          } 
-        ] 
-        } 
-      ] 
-    } 
-  } 
+          }
+        ]
+        }
+      ]
+    }
+  }
 }
 ```
 
@@ -287,7 +292,6 @@ video(Upto 16MB) | video/mp4, video/3gpp
 
 ### Call to Action(Phone Number)
 
-
 ```js
 {
   ​"body"​: {
@@ -308,17 +312,16 @@ video(Upto 16MB) | video/mp4, video/3gpp
               {
                 ​"type"​ : ​"text"​,
                 ​"text"​ : ​"Wasim"
-              } 
-            ] 
-          } 
-        ] 
-      } 
-  } 
+              }
+            ]
+          }
+        ]
+      }
+  }
 }
 ```
 
 ### Button Template
-
 
 ```js
 {
@@ -352,12 +355,12 @@ video(Upto 16MB) | video/mp4, video/3gpp
           {
             ​"type"​: ​"payload"​,
             ​"payload"​: ​"Hi"
-          } 
-        ] 
-      } 
-      ] 
-    } 
-  } 
+          }
+        ]
+      }
+      ]
+    }
+  }
 }
 ```
 
