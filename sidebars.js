@@ -174,5 +174,17 @@ module.exports = {
       collapsed: true,
       items: ["documentation/compliances/certifications"],
     },
-  ],
+    {
+      type: "category",
+      label: "Omnichannel Notifications API",
+      collapsed: true,
+      items: ["documentation/omniChannelNotifications/gettingStarted"]
+    },
+    {
+      type: "category",
+      label: "Send Notifications",
+      collapsed: true,
+      items: ["documentation/omniChannelNotifications/sendMessage"],
+    }
+  ]
 };
