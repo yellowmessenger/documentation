@@ -1,7 +1,9 @@
 ---
-title: Getting started with Omnichannel Notifications Engine
+title: Omnichannel Notifications Engine
 sidebar_label: Omnichannel Notifications API
 ---
+
+
 
 # Getting Started
 
