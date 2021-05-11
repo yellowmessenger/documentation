@@ -58,13 +58,13 @@ module.exports = {
           label: "Documentation",
           position: "left",
         },
-        {
-          // to: "docs/howtos/basics/create-a-bot",
-          to: "/docs/developer/app/overview",
-          label: "Developer",
-          position: "left",
-          activeBasePath: "docs/developer",
-        },
+//         {
+//           // to: "docs/howtos/basics/create-a-bot",
+//           to: "/docs/developer/app/overview",
+//           label: "Developer",
+//           position: "left",
+//           activeBasePath: "docs/developer",
+//         },
         {
           to: "/docs/cookbooks/Academy",
           label: "Cookbooks",
