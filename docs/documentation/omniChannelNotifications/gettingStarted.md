@@ -32,4 +32,60 @@ The API is very simple. It has 5 little segments:
    4. Schedule - when to send it
    5. Metadata - if there is anything else you want us to know
 
-Time to get hands dirty. Lets now look into how to use the API.
+**userDetails:**
+
+   Type:  `Object`
+
+   Mandatory:  `Yes`
+
+   What: `Details of the user to be notified.`
+
+User details may contain all relevant information about the user. It needs to have atleast one contactable information and any number of additional parameters. For example, in case of voice notification, it needs to have a ‘number’ field mandatory and any number of extra parameters.
+
+**content:**
+
+   Type:  `Object`
+
+   Mandatory:  `No`
+
+   What: `Content of the notification. Contains message and additional parameters to be rendered`
+
+Content contains the message that needs to be sent as a notification. Either it can contain the plain message directly or contain parameters to be rendered for a template on a particular channel.
+
+**channels:**
+
+   Type:  `List`
+
+   Mandatory:  `Yes`
+
+   What: `List of Channels to send the notification`
+
+Content contains the message that needs to be sent as a notification. Either it can contain the plain message directly or contain parameters to be rendered for a template on a particular channel.
+
+Sender parameter should be the caller id in case of voice notification and sender email id in case of email notification and so on. This field will be validated before sending the notification.
+
+Supported channels are
+
+- sms
+- whatsapp
+- email
+- voice
+- facebook (Facebook messenger)
+- Currently user will be notified on only the first channel configured.
+
+**metadata**
+
+   Type:  `Object`
+
+   Mandatory:  `Yes`
+
+   What: `Content of the notification. Contains message and additional parameters to be rendered`
+
+Metadata contains meta information fields about the notification itself
+
+Currently metadata supports the following:
+
+      `scheduleAt` : ISO formatted date time string at which the notification must be sent.
+
+      `customPayload` : JSON object which will flow back to the postback url if configured and also reflect in the reports. Can be used to associate identifying information for a particular notification.
+

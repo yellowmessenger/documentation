@@ -13,24 +13,30 @@ let components = listPaths();
 
 module.exports = {
   cookbooks: [
-    "cookbooks/Academy",
-    "cookbooks/data-layer",
-    "cookbooks/document_cognition",
-    "cookbooks/getting_started",
-    "cookbooks/lead-gen-bot",
-    "cookbooks/transfer_chat",
-    // {
-    //   type: "category",
-    //   label: "Basic",
-    //   items: [
-    //     "cookbooks/Academy",
-    //     "cookbooks/data-layer",
-    //     "cookbooks/document_cognition",
-    //     "cookbooks/getting_started",
-    //     "cookbooks/lead-gen-bot",
-    //     "cookbooks/transfer_chat",
-    //   ],
-    // },
+    // "cookbooks/Academy",
+    // "cookbooks/data-layer",
+    // "cookbooks/document_cognition",
+    // "cookbooks/getting_started",
+    // "cookbooks/lead-gen-bot",
+    // "cookbooks/transfer_chat",
+    {
+      type: "category",
+      label: "Basic",
+      items: [
+        "cookbooks/Academy",
+        "cookbooks/data-layer",
+        "cookbooks/document_cognition",
+        "cookbooks/getting_started",
+        "cookbooks/lead-gen-bot",
+        "cookbooks/transfer_chat",
+      ],
+    },
+    {
+      type: "category",
+      label: "Channels 101",
+      collapsed: true,
+      items: ["cookbooks/channels-101/whatsapp-basics"]
+    }
   ],
 
   howtos: [
@@ -123,6 +129,7 @@ module.exports = {
         "documentation/concepts/steps",
         "documentation/concepts/response-types-message",
         "documentation/concepts/response-types-action-logic",
+        "documentation/concepts/response-types-cards",
         "documentation/concepts/template-journeys",
         "documentation/concepts/bot-knowledge",
         "documentation/concepts/training",
@@ -179,13 +186,8 @@ module.exports = {
       type: "category",
       label: "Omnichannel Notifications API",
       collapsed: true,
-      items: ["documentation/omniChannelNotifications/gettingStarted"]
-    },
-    {
-      type: "category",
-      label: "Send Notifications",
-      collapsed: true,
-      items: ["documentation/omniChannelNotifications/sendMessage"],
+      items: ["documentation/omniChannelNotifications/gettingStarted",
+        "documentation/omniChannelNotifications/sendMessage"]
     }
   ]
 };

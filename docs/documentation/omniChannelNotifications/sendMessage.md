@@ -6,17 +6,11 @@ sidebar_label: Send Message
 
 API to send notifications to the user
 
-- **URL**
+- **URL** [https://app.yellowmessenger.com/api/engagements/notifications/v1/push](https://app.yellowmessenger.com/api/engagements/notifications/v1/push)
 
-   [https://app.yellowmessenger.com/api/engagements/notifications/v1/push](https://app.yellowmessenger.com/api/engagements/notifications/v1/push)
+- **Method:** `POST`
 
-- **Method:**
-
-`POST`
-
-- **URL Params**
-
-   None
+- **URL Params** None
 
 - **Authentication(Header)**
 
@@ -25,61 +19,37 @@ API to send notifications to the user
 - **Data Params**
 
    ```[
-    "userDetails" : {"number" : "919876543210", //Number is a mandatory parameter in case of sms, whatsapp, voice push, "email" : "`[`abc@xyz.com`](mailto:abc@xyz.com)`"`
+    "userDetails" : {
+        "number" : "919876543210", //Number is a mandatory parameter in case of sms, whatsapp, voice push, 
+        "email" : " ['abc@xyz.com']
     },
-   "channels":[{
-   "type" : "sms",
-   "templateId" : "12345678",
-   "sender" : "9876543210"
+   "channels":[
+       {
+        "type" : "sms",
+        "templateId" : "12345678",
+        "sender" : "9876543210"
    }],
-   "metadata":{
-   "scheduleAt": "1970-01-01T00:00:00.000Z", // Date time at which the notification should be sent.
-   "customPayload" : {} // Payload that will flow back to the postback webhook and reports.
+   "metadata":
+        {
+        "scheduleAt": "1970-01-01T00:00:00.000Z", // Date time at which the notification should be sent.
+        "customPayload" : {} // Payload that will flow back to the postback webhook and reports.
    }
    ]```
 
 - **Success Response:**
 
-**Code:** 202
+**Code:** 202 `Message queued successfully. You will receive a msgId for acknowledgement and tracking.`
 
-   Message queued successfully. You will receive a msgId for acknowledgement and tracking.
+**Code:** 400 `Bad request. Request structure is not formed correctly. Please check the ‘message’ field for more information.`
 
-**Code:** 400
+**Code:** 401 `Unauthorised. Please check your auth token.`
 
-- **Error Response:**
+**Code:** 422 `Invalid inputs. The request structure is evaluated to be correct but the parameter values are not within expected range.`
 
-   Bad request. Request structure is not formed correctly. Please check the ‘message’ field for more information.
+**Code:** 429 `Message queued successfully. You will receive a msgId for acknowledgement and tracking.`
 
-**Code:** 401
+**Code:** 500 `Message queued successfully. You will receive a msgId for acknowledgement and tracking.`
 
-- **Error Response:**
-
-   Unauthorised. Please check your auth token.
-
-**Code:** 422
-
-- **Error Response:**
-
-   Invalid inputs. The request structure is evaluated to be correct but the parameter values are not within expected range.
-
-**Code:** 429
-
-- **Error Response:**
-
-   Message queued successfully. You will receive a msgId for acknowledgement and tracking.
-
-**Code:** 500
-
-- **Error Response:**
-
-   Message queued successfully. You will receive a msgId for acknowledgement and tracking.
-
-
-
-
-- **Sample Call:**
-
-   <*Just a sample call to your endpoint in a runnable format ($.ajax call or a curl request) - this makes life easier and more predictable.*>
 
 - **Notes:**
 
