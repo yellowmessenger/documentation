@@ -7,12 +7,11 @@ This section will make you familiar with yellow messenger platform concepts. We'
 
 :::info
 
-- If you're getting started or looking for more practical end-to-end guides, checkout [Cookbooks](../cookbooks).
-- If you're looking for developer guide, visit [here](../docs/developer/overview)
+- If you're getting started or looking for more practical end-to-end guides, checkout [Cookbooks](../../cookbooks/Academy).
 
 :::
 
-> :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of setting up your bot project. If you haven't, follow instructions [here](../cookbooks/how-tos#basics---setup) to do so.
+> :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of setting up your bot project. If you haven't, follow instructions [here](../../howtos/basics/create-a-bot) to do so.
 
 ---
 
