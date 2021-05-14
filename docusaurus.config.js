@@ -1,14 +1,14 @@
-const path = require('path');
+const path = require("path");
 // const {components} = require('./src/plugins/components');
 
 module.exports = {
-  title: 'Yellow Messenger',
-  tagline: 'Conversational AI cloud for all',
-  url: 'https://docs.yellowmessenger.com',
-  baseUrl: '/',
-  favicon: 'img/favicon.png',
-  organizationName: 'yellowmessenger',
-  projectName: 'documentation',
+  title: "Yellow Messenger",
+  tagline: "Conversational AI cloud for all",
+  url: "https://docs.yellowmessenger.com",
+  baseUrl: "/",
+  favicon: "img/favicon.png",
+  organizationName: "yellowmessenger",
+  projectName: "documentation",
   // customFields: {
   //   components: {
   //     inputs: components("inputs"),
@@ -23,60 +23,99 @@ module.exports = {
   //   },
   // },
   themeConfig: {
+    algolia: {
+      apiKey: '1893e11171bb8b2b019ada3bb475d5c6',
+      indexName: 'yellowmessenger',
+
+      // Optional: see doc section below
+      contextualSearch: false,
+
+      // Optional: Algolia search parameters
+      searchParameters: {},
+
+      //... other Algolia params
+    },
     prism: {
-      theme: require('prism-react-renderer/themes/github'),
-      darkTheme: require('./src/plugins/prism_themes/monokai'),
+      theme: require("prism-react-renderer/themes/github"),
+      darkTheme: require("./src/plugins/prism_themes/monokai"),
     },
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: "light",
       disableSwitch: true,
     },
-    image: 'img/og_img.png',
-    metadatas: [{name: 'twitter:card', content: 'summary'}],
+    image: "img/og_img.png",
+    metadatas: [{ name: "twitter:card", content: "summary" }],
     navbar: {
-      title: '',
+      title: "",
       logo: {
-        alt: 'Yellow Messenger',
-        src: 'img/logo.png',
+        alt: "Yellow Messenger",
+        src: "img/logo.png",
       },
       items: [
-        {to: 'cookbooks', label: 'Cookbooks', position: 'left'},
-        {to: 'docs/documentation/overview', label: 'Documentation', position: 'left', activeBasePath: "docs/documentation"},
-        {to: 'docs/developer/overview', label: 'Developer Guide', position: 'left', activeBasePath: "docs/developer"},
-        {to: 'docs/canary/introduction', label: 'Canary', position: 'left', activeBasePath: "docs/canary"},
-        {to: 'docs/bumblebee/introduction', label: 'Bumblebee', position: 'left', activeBasePath: "docs/bumblebee"},
-        {to: 'videos', label: 'Videos', position: 'left'},
-        {to: 'https://community.yellowmessenger.com', label: 'Community', position: 'right'},
-        {to: 'https://cloud.yellowmessenger.com', label: 'Get started for free', position: 'right'},
+        {
+          to: "docs/documentation/concepts/overview",
+          activeBasePath: "docs/documentation",
+          label: "Documentation",
+          position: "left",
+        },
+//         {
+//           // to: "docs/howtos/basics/create-a-bot",
+//           to: "/docs/developer/app/overview",
+//           label: "Developer",
+//           position: "left",
+//           activeBasePath: "docs/developer",
+//         },
+        {
+          to: "/docs/cookbooks/Academy",
+          label: "Cookbooks",
+          position: "left",
+          activeBasePath: "/docs/cookbooks",
+        },
+        {
+          // to: "howtos",
+          to: "docs/howtos/basics/create-a-bot",
+          // to: "docs/developer/overview",
+          label: "How to's",
+          position: "left",
+          activeBasePath: "docs/howtos",
+        },
+        {
+          to: "https://community.yellowmessenger.com",
+          label: "Community",
+          position: "right",
+        },
+        {
+          to: "https://cloud.yellowmessenger.com",
+          label: "Sign up for free",
+          position: "right",
+        },
       ],
     },
-    footer: {
-      style: 'dark',
-      links: [
-
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} Yellow Messenger`,
-    },
+    footer: { links: [] },
     googleAnalytics: {
-      trackingID: 'UA-135959729-1',
+      trackingID: "UA-135959729-1",
     },
   },
   presets: [
     [
-      '@docusaurus/preset-classic',
+      "@docusaurus/preset-classic",
       {
         docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
+          sidebarPath: require.resolve("./sidebars.js"),
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve("./src/css/custom.module.css"),
         },
       },
     ],
   ],
   plugins: [
-    path.resolve(__dirname, './src/plugins/cookbooks'),
-    path.resolve(__dirname, './src/plugins/redirects'),
+    // path.resolve(__dirname, "./src/plugins/cookbooks"),
+    path.resolve(__dirname, "./src/plugins/redirects"),
   ],
-  onBrokenLinks: 'log'
+  stylesheets: [
+    "https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css",
+    "https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap",
+  ],
+  onBrokenLinks: "log",
 };

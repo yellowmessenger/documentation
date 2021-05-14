@@ -10,13 +10,13 @@ Call the following API for adding an audience:
 curl --location --request POST' 
 https://app.yellowmessenger.com/api/scheduler/audience/record/india_mock_test?bot=x1588761516561 
 --header 'Content-Type: application/json' 
---header 'x-auth-token: ' 
+--header 'x-auth-token: X_AUTH_TOKEN' 
 --data-raw 
 '
 {"number": "918723062265",
 "name": "Wasim",
 "tags": ["UG","india","Test"],
-"audienceId": "5ed751f8f1bc92b924955f21"
+"audienceId": " "
 }'
 ```
 
@@ -42,7 +42,7 @@ Key.
         "india",
         "Test"],
 
-        "audienceId": "5ed751f8f1bc92b924955f21"
+        "audienceId": " "
 }'
 ``` 
 
