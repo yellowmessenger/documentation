@@ -19,8 +19,8 @@ In order to test it, please import the following cURL request into Postman/termi
 curl --location --request POST 'https://app.yellowmessenger.com/integrations/yellowmessenger/message' \
 --header 'Content-Type: application/json' \
 --data-raw '{
-    "sender": "319334277206543397813972131",
-    "botId": "x1560161983543",
+    "sender": "X_AUTH_TOKEN",
+    "botId": "botID",
     "data": "{\"message\":\"raise issues\"}",
     "source": "syncApi"
 }'
@@ -46,7 +46,7 @@ In order to test it, please import the following cURL request into Postman/termi
 
 ```js
 curl --location --request GET 'https://app.yellowmessenger.com/api/ml/prediction?bot=x1557296852218&text=asd&language=en' \
---header 'x-auth-token: 37e735d870e917cf8497616e7bf0b9a71cd5fcd3370ba96aa8e9d4b34f2b78e2'
+--header 'x-auth-token: X_AUTH_TOKEN'
 ```
 Here, x-auth-token is the unique token of each user to identify permissions for this user on the platform. You can access your auth token by going to Home → Account Settings → Access Keys.
 

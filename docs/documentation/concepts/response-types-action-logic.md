@@ -16,7 +16,8 @@ These nodes often help us manage actions in a flow which are configured in some 
 
 Database actions taken in a flow can be of three types: 
 * Insert 
-* Fetch/Search
+* Search
+* Update
 
 #### DB Insert
 Suppose you are taking user input in some step. You want to enter this user input in a database table after it. This is where the `DB Insert` node comes in. 
@@ -32,8 +33,20 @@ Like in below example, we are taking `book_name` field from `bookName` step and 
 
 > :pushpin: You can select multiple fields in a table for DB insert. But for different tables, you need to have different DB insert nodes. 
 
-#### DB Fetch
-> to be updated
+#### DB Search
+
+You can also perform simple database searches on YM platform without writing code using Database action Node, 'Search Action'.
+
+* Similar to Insert node, you need to select which table you want to search in here. 
+* You can add filters to this search as well , as shown in following GIF. You can filter using 5 conditions : *Contains*, *Does not contain*, *Is*, *Is Not* and *Range*. 
+* Value to compare against column can be taken from a variable or a custom text can be used. 
+* You can again sort the results, put limit on no. of results (columns) and store it then in a variable for further use. 
+![](https://i.imgur.com/ifwcspW.gif)
+
+
+
+#### DB Update
+to be updated
 
 ---
 
@@ -44,8 +57,32 @@ The purpose of this is simply to bring in your function at the exact point in fl
 
 
 ### API 
+API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) and then store API response in a variable for further use. 
+![](https://i.imgur.com/5zvKnCW.jpg)
+
+:::info
+Learn how to directly use this variable in your steps to access different fields in API response [**here**](https://docs.yellowmessenger.com/docs/howtos/basics/variables-in-UI)
+:::
+
+:::warning
+:pushpin: **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node.
+
+[Click here to learn how to add APIs](https://docs.yellowmessenger.com/docs/howtos/create/api-management)
+
+
+![](https://i.imgur.com/ENGKa8e.jpg)
+
+:::
+
+
 
 ### Memory 
+Memory node helps you store something temporarily. For example, if you get some input from user that you want to use in some upcoming step or same session, but do not want stored permanently, you can use this node. 
+Memory node has 3 options - Set, Fetch & delete for you to do this. 
+![](https://i.imgur.com/Lg9IY4T.gif)
+
+> :pushpin: **Note** : Memory variables are available globally. For any other use case or limiting to a journey, it's recommended use simple variables. 
+
 
 ### Analytics
 With Analytics node, you can push an event to analytics with some value
