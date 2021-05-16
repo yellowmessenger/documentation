@@ -4,7 +4,7 @@ const path = require("path");
 module.exports = {
   title: "Yellow Messenger",
   tagline: "Conversational AI cloud for all",
-  url: "https://docs.yellowmessenger.com",
+  url: "https://docs.yellow.ai",
   baseUrl: "/",
   favicon: "img/favicon.png",
   organizationName: "yellowmessenger",
