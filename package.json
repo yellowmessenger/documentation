@@ -17,7 +17,8 @@
     "react-dom": "^16.8.4",
     "react-player": "^2.7.2",
     "reading-time": "^1.2.0",
-    "remixicon": "^2.5.0"
+    "remixicon": "^2.5.0",
+    "yarn": "^1.22.10"
   },
   "browserslist": {
     "production": [

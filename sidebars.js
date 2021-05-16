@@ -13,24 +13,30 @@ let components = listPaths();
 
 module.exports = {
   cookbooks: [
-    "cookbooks/Academy",
-    "cookbooks/data-layer",
-    "cookbooks/document_cognition",
-    "cookbooks/getting_started",
-    "cookbooks/lead-gen-bot",
-    "cookbooks/transfer_chat",
-    // {
-    //   type: "category",
-    //   label: "Basic",
-    //   items: [
-    //     "cookbooks/Academy",
-    //     "cookbooks/data-layer",
-    //     "cookbooks/document_cognition",
-    //     "cookbooks/getting_started",
-    //     "cookbooks/lead-gen-bot",
-    //     "cookbooks/transfer_chat",
-    //   ],
-    // },
+    // "cookbooks/Academy",
+    // "cookbooks/data-layer",
+    // "cookbooks/document_cognition",
+    // "cookbooks/getting_started",
+    // "cookbooks/lead-gen-bot",
+    // "cookbooks/transfer_chat",
+    {
+      type: "category",
+      label: "Basic",
+      items: [
+        "cookbooks/Academy",
+        "cookbooks/data-layer",
+        "cookbooks/document_cognition",
+        "cookbooks/getting_started",
+        "cookbooks/lead-gen-bot",
+        "cookbooks/transfer_chat",
+      ],
+    },
+    {
+      type: "category",
+      label: "Channels 101",
+      collapsed: true,
+      items: ["cookbooks/channels-101/whatsapp-basics"]
+    }
   ],
 
   howtos: [
@@ -44,11 +50,12 @@ module.exports = {
         // "howtos/basics/publish-bot",
         "howtos/basics/access-management",
         "howtos/basics/add-faqs",
-        "howtos/basics/compare-code",
+       // "howtos/basics/compare-code",
         "howtos/basics/variables-in-UI",
         'howtos/basics/validate-input',
         'howtos/basics/manage-support-agent',
         'howtos/basics/database-search',
+        "howtos/basics/sensitive-info",
       ],
     },
     {
@@ -64,6 +71,7 @@ module.exports = {
         "howtos/create/whatsapp-bot",
         "howtos/create/whatsapp-notification-template",
         "howtos/create/whatsapp-notification-ym",
+        "howtos/create/quickreply",
       ],
     },
     {
@@ -121,6 +129,7 @@ module.exports = {
         "documentation/concepts/steps",
         "documentation/concepts/response-types-message",
         "documentation/concepts/response-types-action-logic",
+        "documentation/concepts/response-types-cards",
         "documentation/concepts/template-journeys",
         "documentation/concepts/bot-knowledge",
         "documentation/concepts/training",
@@ -138,7 +147,7 @@ module.exports = {
         "documentation/channelConfiguration/ios",
         "documentation/channelConfiguration/react-native",
         "documentation/channelConfiguration/whatsapp",
-        "documentation/channelConfiguration/fb-messenger",
+        "documentation/channelConfiguration/facebook-messenger",
         "documentation/channelConfiguration/slack",
         "documentation/channelConfiguration/teams",
         "documentation/channelConfiguration/alexa",
@@ -149,6 +158,7 @@ module.exports = {
         "documentation/channelConfiguration/fb-workplace",
         "documentation/channelConfiguration/telegram",
         "documentation/channelConfiguration/fb-lead-ads",
+        "documentation/channelConfiguration/whatsapp-configuration",
       ],
     },
     {
@@ -172,5 +182,12 @@ module.exports = {
       collapsed: true,
       items: ["documentation/compliances/certifications"],
     },
-  ],
+    {
+      type: "category",
+      label: "Omnichannel Notifications API",
+      collapsed: true,
+      items: ["documentation/omniChannelNotifications/gettingStarted",
+        "documentation/omniChannelNotifications/sendMessage"]
+    }
+  ]
 };
