@@ -2,9 +2,9 @@ const path = require("path");
 // const {components} = require('./src/plugins/components');
 
 module.exports = {
-  title: "Yellow Messenger",
+  title: "yellow.ai",
   tagline: "Conversational AI cloud for all",
-  url: "https://docs.yellowmessenger.com",
+  url: "https://docs.yellow.ai",
   baseUrl: "/",
   favicon: "img/favicon.png",
   organizationName: "yellowmessenger",
@@ -48,8 +48,8 @@ module.exports = {
     navbar: {
       title: "",
       logo: {
-        alt: "Yellow Messenger",
-        src: "img/logo.png",
+        alt: "yellow.ai",
+        src: "img/yellowMessenger.svg",
       },
       items: [
         {
@@ -58,13 +58,13 @@ module.exports = {
           label: "Documentation",
           position: "left",
         },
-        {
-          // to: "docs/howtos/basics/create-a-bot",
-          to: "/docs/developer/app/overview",
-          label: "Developer",
-          position: "left",
-          activeBasePath: "docs/developer",
-        },
+//         {
+//           // to: "docs/howtos/basics/create-a-bot",
+//           to: "/docs/developer/app/overview",
+//           label: "Developer",
+//           position: "left",
+//           activeBasePath: "docs/developer",
+//         },
         {
           to: "/docs/cookbooks/Academy",
           label: "Cookbooks",
@@ -85,7 +85,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "https://cloud.yellowmessenger.com",
+          to: "https://cloud.yellow.ai",
           label: "Sign up for free",
           position: "right",
         },

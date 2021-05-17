@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "@docusaurus/Link";
-import logo from "../../static/img/ymLogo_white.png";
+import logo from "../../static/img/yellowMessenger.svg";
 import styles from "./footer.module.css";
 
 const Footer = () => {
