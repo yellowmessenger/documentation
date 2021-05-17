@@ -115,6 +115,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+[class^="navbar__brand"] {
+  height: 24px;
+}
+
 /* ends */
 
 /*  removed default footer */
@@ -298,14 +302,13 @@ html[data-theme="dark"] .DocSearch {
   min-width: 240px;
 }
 
-[class^="menu__link"]
-{
+[class^="menu__link"] {
   font-size: 14px !important;
   line-height: 14px !important;
 }
 
-[class^="menu__link"]:hover, [class^="menu__link menu__link--active active"]
-{
+[class^="menu__link"]:hover,
+[class^="menu__link menu__link--active active"] {
   color: #007ed4;
   font-weight: 500;
 }
