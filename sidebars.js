@@ -167,5 +167,15 @@ module.exports = {
       collapsed: true,
       items: ["documentation/compliances/certifications"],
     },
+    {
+      type: "category",
+      label: "Understanding Channels 101",
+      collapsed: true,
+      items: [
+        "documentation/Understanding Channels 101/whatsapp-chatbot-101",
+        "documentation/Understanding Channels 101/fbm-chatbot-101",
+        "documentation/Understanding Channels 101/gbm-chatbot-101",
+      ],
+    },
   ],
 };
