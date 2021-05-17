@@ -49,7 +49,7 @@ module.exports = {
       title: "",
       logo: {
         alt: "Yellow Messenger",
-        src: "img/logo.png",
+        src: "img/yellowMessenger.svg",
       },
       items: [
         {
