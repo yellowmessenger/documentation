@@ -2,7 +2,7 @@ const path = require("path");
 // const {components} = require('./src/plugins/components');
 
 module.exports = {
-  title: "Yellow Messenger",
+  title: "yellow.ai",
   tagline: "Conversational AI cloud for all",
   url: "https://docs.yellow.ai",
   baseUrl: "/",
@@ -48,7 +48,7 @@ module.exports = {
     navbar: {
       title: "",
       logo: {
-        alt: "Yellow Messenger",
+        alt: "yellow.ai",
         src: "img/yellowMessenger.svg",
       },
       items: [
