@@ -85,7 +85,7 @@ module.exports = {
           position: "right",
         },
         {
-          to: "https://cloud.yellowmessenger.com",
+          to: "https://cloud.yellow.ai",
           label: "Sign up for free",
           position: "right",
         },
