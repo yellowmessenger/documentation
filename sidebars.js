@@ -36,6 +36,15 @@ module.exports = {
       label: "Channels 101",
       collapsed: true,
       items: ["cookbooks/channels-101/whatsapp-basics"]
+    },
+    {
+      type: "category",
+      label: "Model Bot",
+      collapsed: true,
+      items: [
+        "cookbooks/model-bot/getting-started",
+        "cookbooks/model-bot/exercises",
+      ]
     }
   ],
 
