@@ -33,9 +33,13 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Channels 101",
+      label: "Understanding channels 101",
       collapsed: true,
-      items: ["cookbooks/channels-101/whatsapp-basics"],
+      items: [
+        "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
+        "cookbooks/Understanding channels 101/fbm-chatbot-101",
+        "cookbooks/Understanding channels 101/gbm-chatbot-101",
+      ],
     },
   ],
 
@@ -189,18 +193,6 @@ module.exports = {
       items: [
         "documentation/omniChannelNotifications/gettingStarted",
         "documentation/omniChannelNotifications/sendMessage",
-      ],
-    },
-
-    {
-      type: "category",
-
-      label: "Understanding Channels 101",
-      collapsed: true,
-      items: [
-        "documentation/Understanding Channels 101/whatsapp-chatbot-101",
-        "documentation/Understanding Channels 101/fbm-chatbot-101",
-        "documentation/Understanding Channels 101/gbm-chatbot-101",
       ],
     },
   ],
