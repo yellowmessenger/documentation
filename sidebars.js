@@ -33,9 +33,13 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Channels 101",
+      label: "Understanding channels 101",
       collapsed: true,
-      items: ["cookbooks/channels-101/whatsapp-basics"]
+      items: [
+        "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
+        "cookbooks/Understanding channels 101/fbm-chatbot-101",
+        "cookbooks/Understanding channels 101/gbm-chatbot-101",
+      ]
     },
     {
       type: "category",
@@ -59,11 +63,11 @@ module.exports = {
         // "howtos/basics/publish-bot",
         "howtos/basics/access-management",
         "howtos/basics/add-faqs",
-       // "howtos/basics/compare-code",
+        // "howtos/basics/compare-code",
         "howtos/basics/variables-in-UI",
-        'howtos/basics/validate-input',
-        'howtos/basics/manage-support-agent',
-        'howtos/basics/database-search',
+        "howtos/basics/validate-input",
+        "howtos/basics/manage-support-agent",
+        "howtos/basics/database-search",
         "howtos/basics/sensitive-info",
       ],
     },
@@ -195,8 +199,10 @@ module.exports = {
       type: "category",
       label: "Omnichannel Notifications API",
       collapsed: true,
-      items: ["documentation/omniChannelNotifications/gettingStarted",
-        "documentation/omniChannelNotifications/sendMessage"]
-    }
-  ]
+      items: [
+        "documentation/omniChannelNotifications/gettingStarted",
+        "documentation/omniChannelNotifications/sendMessage",
+      ],
+    },
+  ],
 };
