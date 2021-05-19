@@ -177,4 +177,4 @@ Note: Your WhatsApp chatbot will function on the number that you got approved pr
 
 ![](https://cdn.yellowmessenger.com/KMPmiULy5ARX1621420053934.png)
 
-Awesome! Congratulations on successfully connecting and testing your WhatsApp chatbot. You can now explore other options such as adding different options (such as products showcase, order status) and test theççm the same way!
+Awesome! Congratulations on successfully connecting and testing your WhatsApp chatbot. You can now explore other options such as adding different options (such as products showcase, order status) and test them the same way!

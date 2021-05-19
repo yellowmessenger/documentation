@@ -48,3 +48,49 @@ If you haven't created your chatbot yet, [create one](https://docs.yellowmesseng
 ![](https://cdn.yellowmessenger.com/9O5VAEYvHMNU1620268976925.png)
 
 Hurray! You've now successfully connected your FB Messenger with our platform.
+
+## Let's experience Facebook Messenger chatbot
+
+Great! Once the account is successfully approved, we can start configuring the chatbot with any journey you want. For example, let's try adding few FAQs and see how it gets refelcted in the FBM chatbot.
+
+1. Go to **Studio -> FAQs**.
+
+2. FAQs can have multiple categories such as Delivery policy, Refund policy, Product quality. To create a new category, **Click on '+' with the FAQs screen**.
+
+![](https://cdn.yellowmessenger.com/9Fs4AGsK4eE61621348717008.png)
+
+3. Create a **new category**.
+
+![](https://cdn.yellowmessenger.com/c9BkdVzPuU4X1621348684735.png)
+
+Similarly, you can add as many relevant categories as required.
+
+4. Now, **pick a 'Category'** to add questions within.
+
+![](https://cdn.yellowmessenger.com/NuDtN4RpAkac1621348670878.png)
+
+5. After choosing a category, you can **Add New Questions**.
+
+![](https://cdn.yellowmessenger.com/ps4qScjaoGqI1621348740566.png)
+
+![](https://cdn.yellowmessenger.com/RqBpexxNa6iS1621348659762.png)
+
+Similarly, you can add as many relevant questions you want under each FAQ category.
+
+6. You can see the the Q & A that you added as below.
+
+![](https://cdn.yellowmessenger.com/ZLQ2ToYpxGDI1621348650914.png)
+
+7. As a particular question can be asked in multiple ways, you can **add the possible 'Variants'** of the same question.
+
+![](https://cdn.yellowmessenger.com/57fxwswxtysU1621348636393.png)
+
+We recommend to add relevant variants for each question.
+
+8. Great, now before testing your FBM chatbot, you should **Train** the chatbot. You will find the button on the FAQs screen itself.
+
+9. Wuhoo! Excited to test your FBM chatbot? Start asking any of the added questions in your brand page's messenger channel.
+
+![](https://cdn.yellowmessenger.com/CCO0iJOmjeXW1621429968650.png)
+
+Awesome! Congratulations on successfully connecting and testing your FBM chatbot. You can now explore other options such as adding different options (such as products showcase, order status) and test them the same way!
