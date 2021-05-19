@@ -39,8 +39,17 @@ module.exports = {
         "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
         "cookbooks/Understanding channels 101/fbm-chatbot-101",
         "cookbooks/Understanding channels 101/gbm-chatbot-101",
-      ],
+      ]
     },
+    {
+      type: "category",
+      label: "Model Bot",
+      collapsed: true,
+      items: [
+        "cookbooks/model-bot/getting-started",
+        "cookbooks/model-bot/exercises",
+      ]
+    }
   ],
 
   howtos: [
