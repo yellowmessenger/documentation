@@ -1,6 +1,6 @@
 ---
-title: Enabling Languages 🇮🇳 🇸🇩 🇬🇷 🇺🇸
-sidebar_label: Languages 🇮🇳 🇺🇸
+title: Languages Supported
+sidebar_label: Languages
 ---
 
 Below are the list of languages supported by Bots. 
