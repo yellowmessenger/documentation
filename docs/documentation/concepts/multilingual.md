@@ -7,7 +7,7 @@ Below are the list of languages supported by Bots.
 > Full Support it means all the messages can be translated, and Rest languages use are supported by Google Translate. Knowledge Mining , Semantic Analytics and Small Talk Support highlight the language agnostic sentence embeddings that are formed in ML models.
 
 
-| Langauge                      | Full Support (Text) | Using Translation (Text) | Speech-to-text | Text-to-speech | Knowledge Mining | Sentiment Analytics | Small Talk Support |
+| Language                      | Full Support (Text) | Using Translation (Text) | Speech-to-text | Text-to-speech | Knowledge Mining | Sentiment Analytics | Small Talk Support |
 |-------------------------------|---------------------|--------------------------|----------------|----------------|------------------|---------------------|--------------------|
 | English - US                  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | English - Great Britain       | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
@@ -63,25 +63,25 @@ Below are the list of languages supported by Bots.
 | Hungarian                     | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Icelandic                     | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Ido                           |                     |                          |                |                | Yes              | Yes                 | Yes                |
-| Igbo                          | Yes                 |                          |                |                |                  |                     |                    |
+| Igbo                          | Yes                 |                          |                |                | Yes              |                     |                    |
 | Indonesian                    | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Irish                         | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Italian                       | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Japanese                      | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
-| Javanese                      | Yes                 |                          | Yes            |                |                  |                     |                    |
+| Javanese                      | Yes                 |                          | Yes            |                | Yes              |                     |                    |
 | Kannada                       | Yes                 |                          | Yes            | Yes            | Yes              |                     |                    |
 | Kazakh                        | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | Khmer (Central Khmer)         | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | Kinyarwanda                   |                     | Yes                      |                |                | Yes              |                     |                    |
-| Kirghiz (Kyrgyz)              | Yes                 |                          |                |                |                  |                     |                    |
+| Kirghiz (Kyrgyz)              | Yes                 |                          |                |                | Yes              |                     |                    |
 | Korean                        | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Kurdish (Kurmanji)            | Yes                 |                          |                |                | Yes              | Yes                 | Yes                |
-| Kyrgyz                        | Yes                 |                          |                |                |                  |                     |                    |
+| Kyrgyz                        | Yes                 |                          |                |                | Yes              |                     |                    |
 | Lao                           | Yes                 |                          | Yes            |                | Yes              |                     |                    |
 | Latin                         | Yes                 |                          |                |                | Yes              | Yes                 | Yes                |
 | Latvian                       | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Lithuanian                    | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
-| Luxembourgish (Letzeburgesch) | Yes                 |                          |                |                |                  |                     |                    |
+| Luxembourgish (Letzeburgesch) | Yes                 |                          |                |                | Yes              |                     |                    |
 | Macedonian                    | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | Malagasy                      | Yes                 |                          |                |                | Yes              | Yes                 | Yes                |
 | Malay                         | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
@@ -94,8 +94,8 @@ Below are the list of languages supported by Bots.
 | Norwegian (Nynorsk)           | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Nyanja (Chewa/Chichewa)       | Yes                 |                          |                |                | Yes              |                     |                    |
 | Occitan                       | Yes                 |                          |                |                | Yes              | Yes                 | Yes                |
-| Odia (Oriya)                  | Yes                 |                          |                |                |                  |                     |                    |
-| Pashto                        | Yes                 |                          |                |                |                  |                     |                    |
+| Odia (Oriya)                  | Yes                 |                          |                |                | Yes              |                     |                    |
+| Pashto                        | Yes                 |                          |                |                | Yes              |                     |                    |
 | Persian                       | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | Polish                        | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Portuguese (Brazil)           | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
@@ -106,12 +106,13 @@ Below are the list of languages supported by Bots.
 | Samoan                        |                     | Yes                      |                |                | Yes              |                     |                    |
 | Scottish Gaelic               |                     | Yes                      |                |                | Yes              |                     |                    |
 | Serbian                       | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
-| Shona                         | Yes                 |                          |                |                |                  |                     |                    |
+| Shona                         | Yes                 |                          |                |                | Yes              |                     |                    |
 | Sindhi                        | Yes                 |                          |                |                | Yes              | Yes                 | Yes                |
 | Sinhala (Sinhalese)           | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | Slovak                        | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Slovenian                     | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Somali                        | Yes                 |                          |                |                | Yes              | Yes                 | Yes                |
+| Spanish (Latin America)       | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Spanish (Castillian Spain)    | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Spanish (Catalan Spain)       | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Sundanese                     | Yes                 |                          | Yes            |                | Yes              |                     |                    |
