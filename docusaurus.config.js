@@ -53,9 +53,9 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/documentation/concepts/overview",
-          activeBasePath: "docs/documentation",
-          label: "Documentation",
+          to: "docs/platform_concepts/studio/overview",
+          activeBasePath: "docs/platform_concepts",
+          label: "Platform Concepts",
           position: "left",
         },
 //         {
