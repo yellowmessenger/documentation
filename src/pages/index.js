@@ -82,11 +82,11 @@ function Home() {
 
   const topics = [
     {
-      title: "Documentation",
+      title: "Platform Concepts",
       description:
         "Learn the platform basics, review channel intergration and security compilance documents.",
       icon: "ri-booklet-line",
-      url: "/docs/documentation/concepts/overview",
+      url: "/docs/platform_concepts/concepts/overview",
     },
     {
       title: "Developer",
@@ -138,7 +138,7 @@ function Home() {
           </div> */}
         <Header
           title="Hi, how can we help you?"
-          description=" Refer documentation to build and deploy bots on channels where your
+          description=" Refer Platform Concepts to build and deploy bots on channels where your
           customers are!"
           placeholder="Search by keyword ( Eg. How to build a bot, Journeys, steps)"
         />
