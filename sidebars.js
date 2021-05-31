@@ -52,7 +52,7 @@ module.exports = {
     }
   ],
 
-  howtos: 
+  howtos: [
     {
       type: "category",
       label: "Basic",
