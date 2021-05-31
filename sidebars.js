@@ -104,36 +104,36 @@ module.exports = {
       items: ["howtos/design/setup-web-widget"],
     },
   ],
-  developer: [
-    {
-      type: "category",
-      label: "Function reference",
-      collapsed: true,
-      items: ["developer/app/overview", ...components],
-    },
-    {
-      type: "category",
-      label: "API reference",
-      collapsed: true,
-      items: [
-        "developer/app/apis/audience-api",
-        "developer/app/apis/data-api",
-        "developer/app/apis/platform-api",
-      ],
-    },
-    {
-      type: "category",
-      label: "Events reference",
-      collapsed: true,
-      items: [
-        "developer/app/events/agent-events",
-        "developer/app/events/analytics-events",
-        "developer/app/events/bot-events",
-        "developer/app/events/user-events",
-        "developer/app/events/voice-events",
-      ],
-    },
-  ],
+  // developer: [
+  //   {
+  //     type: "category",
+  //     label: "Function reference",
+  //     collapsed: true,
+  //     items: ["developer/app/overview", ...components],
+  //   },
+  //   {
+  //     type: "category",
+  //     label: "API reference",
+  //     collapsed: true,
+  //     items: [
+  //       "developer/app/apis/audience-api",
+  //       "developer/app/apis/data-api",
+  //       "developer/app/apis/platform-api",
+  //     ],
+  //   },
+  //   {
+  //     type: "category",
+  //     label: "Events reference",
+  //     collapsed: true,
+  //     items: [
+  //       "developer/app/events/agent-events",
+  //       "developer/app/events/analytics-events",
+  //       "developer/app/events/bot-events",
+  //       "developer/app/events/user-events",
+  //       "developer/app/events/voice-events",
+  //     ],
+  //   },
+  // ],
 
   platform_concepts: [
     {
@@ -151,7 +151,7 @@ module.exports = {
         "platform_concepts/studio/faqs",
         "platform_concepts/studio/document_cognition",
         "platform_concepts/studio/training",
-        "platform_concepts/studio/multilingual",
+        "platform_concepts/studio/languages-supported",
       ],
     },
     {
@@ -176,6 +176,15 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/inbox/inbox",
+      ],
+    },
+    {
+      type: "category",
+      label: "Document Cognition",
+      collapsed: true,
+      items: [
+        "platform_concepts/documentCognition/AWS",
+        "platform_concepts/documentCognition/Sharepoint",
       ],
     },
     {

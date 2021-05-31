@@ -3,7 +3,10 @@ title: Languages Supported
 sidebar_label: Languages
 ---
 
-Below are the list of languages supported by Bots. 
+Hi, Hola, Konnichiwa, Bonjour! 
+One platform, 100+ languages. Because there are many languages your customers want to engage with you in! 
+Check out the list of Native Language Support offered on our platform, across text and voice.
+
 > Full Support it means all the messages can be translated, and Rest languages use are supported by Google Translate. Knowledge Mining , Semantic Analytics and Small Talk Support highlight the language agnostic sentence embeddings that are formed in ML models.
 
 

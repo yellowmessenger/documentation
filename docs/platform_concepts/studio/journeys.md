@@ -56,9 +56,7 @@ Once we provide some possible user utterances and 'train' the bot, it can learn 
 
 ### :pushpin: Trigger Journey Response
 
-We can also set up manually when to trigger another journey from inside a journey. **`Trigger journey`** response will be discussed when we learn about [Steps](../docs/documentation/concepts/steps) and [Response types](../docs/documentation/concepts/response-types) in future sections. 
-
-This can also be done through code. Refer [developer guide](../docs/developer/app/components/trigger-journey) to know more. 
+We can also set up manually when to trigger another journey from inside a journey. **`Trigger journey`** response will be discussed when we learn about [Steps](../docs/platform_concepts/studio/steps) and [Response types](../docs/platform_concepts/response-types-action-logic) in future sections. 
 
 ### :pushpin: Events
 
