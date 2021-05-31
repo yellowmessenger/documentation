@@ -2,7 +2,7 @@
 title : Razorpay
 sidebar_label : Razorpay
 ---
-In this document, we will learn about how to integrate the razor payment gateway into a [YM]("https://yellowmessenger.com/) ChatBot.
+In this document, we will learn about how to integrate the razor payment gateway into a [YM](https://cloud.yellowmessenger.com) ChatBot.
 
 **Step 1:** Go to Razor Payment Website and create an Account [https://razorpay.com/](https://razorpay.com/).
 
