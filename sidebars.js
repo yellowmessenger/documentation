@@ -22,7 +22,6 @@ module.exports = {
       type: "category",
       label: "Basic",
       items: [
-        "cookbooks/Academy",
         "cookbooks/getting_started",
         "cookbooks/lead-gen-bot",
         "cookbooks/transfer_chat",
