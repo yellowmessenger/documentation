@@ -50,7 +50,7 @@ module.exports = {
       label: "Template Bots",
       collapsed: true,
       items: [
-        "cookbooks/template-bots/lead-gen-bot",
+        "cookbooks/template-bots/lead-generation-bot",
         "cookbooks/template-bots/customer-support-bot",
       ]
     }
