@@ -24,7 +24,6 @@ module.exports = {
       items: [
         "cookbooks/getting_started",
         "cookbooks/lead-gen-bot",
-        "cookbooks/transfer_chat",
       ],
     },
     {
@@ -44,6 +43,15 @@ module.exports = {
       items: [
         "cookbooks/model-bot/getting-started",
         "cookbooks/model-bot/exercises",
+      ]
+    },
+    {
+      type: "category",
+      label: "Template Bots",
+      collapsed: true,
+      items: [
+        "cookbooks/template-bots/lead-gen-bot",
+        "cookbooks/template-bots/customer-support-bot",
       ]
     }
   ],
