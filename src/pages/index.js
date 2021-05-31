@@ -86,7 +86,7 @@ function Home() {
       description:
         "Learn the platform basics, review channel intergration and security compilance documents.",
       icon: "ri-booklet-line",
-      url: "/docs/platform_concepts/concepts/overview",
+      url: "/docs/platform_concepts/studio/overview",
     },
     {
       title: "Developer",
