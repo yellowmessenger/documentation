@@ -1,6 +1,6 @@
 ---
 title: Learn to handle FAQs & Knowledge from files
-sidebar_label: Bot Knowledge
+sidebar_label: FAQs - Questions/Answers
 ---
 
 We have covered a lot of things!
@@ -112,20 +112,30 @@ What if you have some documents instead? Our doc cognition model helps you searc
 ###### tags: `structured data` `auto-indexing` `FAQ`
 
 <!--
-- [Document Cognition](#document-cognition)
-  * [What is Document Cognition ?](#what-is-document-cognition--)
-  * [How does Document Cognition work ?](#how-does-document-cognition-work--)
-  * [:memo: Getting Started](#-memo--getting-started)
-    + [Step 1: Navigating to your Knowledge Base](#step-1--navigating-to-your-knowledge-base)
-    + [Step 2: Uploading your documents](#step-2--uploading-your-documents)
-  * [Types of "Search"](#types-of--search-)
-    + [Semantic-based Search](#semantic-based-search)
-    + [Keyword Search](#keyword-search)
-    + [MetaData Search](#metadata-search)
-  * [Supported Formats](#supported-formats)
-  * [Dont's w.r.t Document Cognition](#dont-s-wrt-document-cognition)
-  * [Watch Document Cognition in Action](#watch-document-cognition-in-action)
-  * [Appendix and FAQ](#appendix-and-faq)
+- [Simple FAQs - FAQ List Section](#simple-faqs---faq-list-section)
+  - [Navigating to FAQs List](#navigating-to-faqs-list)
+  - [Adding Question and Answers](#adding-question-and-answers)
+  - [Adding Categories](#adding-categories)
+  - [Question variations & Training](#question-variations--training)
+  - [Adding language specific responses](#adding-language-specific-responses)
+  - [Bulk Manage](#bulk-manage)
+- [Knowledge from files - Document Cognition](#knowledge-from-files---document-cognition)
+        - [tags: `structured data` `auto-indexing` `FAQ`](#tags-structured-data-auto-indexing-faq)
+  - [What is Document Cognition ?](#what-is-document-cognition-)
+  - [How does Document Cognition work ?](#how-does-document-cognition-work-)
+  - [:memo: Getting Started](#memo-getting-started)
+    - [Step 1: Navigating to your Knowledge Base](#step-1-navigating-to-your-knowledge-base)
+    - [Step 2: Uploading your documents](#step-2-uploading-your-documents)
+  - [Types of "Search"](#types-of-search)
+    - [Semantic-based Search](#semantic-based-search)
+    - [Keyword Search](#keyword-search)
+    - [MetaData Search](#metadata-search)
+  - [Supported Formats](#supported-formats)
+  - [Dont's w.r.t Document Cognition](#donts-wrt-document-cognition)
+    - [Watch Document Cognition in Action](#watch-document-cognition-in-action)
+  - [Appendix and FAQ](#appendix-and-faq)
+        - [tags: `Templates` `Documentation`](#tags-templates-documentation)
+  - [Document Cognition Action Node (To be updated)](#document-cognition-action-node-to-be-updated)
 -->
 
 ### What is Document Cognition ?
