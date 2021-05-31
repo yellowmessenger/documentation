@@ -58,7 +58,7 @@ module.exports = {
         "howtos/basics/signup-post-bot-invite",
         // "howtos/basics/publish-bot",
         "howtos/basics/access-management",
-        "howtos/basics/add-faqs",
+        // "howtos/basics/add-faqs", moved to studio
         // "howtos/basics/compare-code",
         "howtos/basics/variables-in-UI",
         "howtos/basics/validate-input",
