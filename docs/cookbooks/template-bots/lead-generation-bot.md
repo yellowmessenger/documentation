@@ -1,5 +1,5 @@
 ---
-id: transfer_chat
+id: lead-generation-bot
 title: Lead Generation Bot
 description: Learn to build a Lead Generation Bot
 featured: true

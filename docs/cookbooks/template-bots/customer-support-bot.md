@@ -1,5 +1,5 @@
 ---
-id: transfer_chat
+id: customer-support-bot
 title: Customer Support Bot
 description: Learn to build an FAQs Bot
 featured: true
