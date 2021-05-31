@@ -14,7 +14,6 @@ let components = listPaths();
 module.exports = {
   cookbooks: [
     // "cookbooks/Academy",
-    // "cookbooks/data-layer",
     // "cookbooks/document_cognition",
     // "cookbooks/getting_started",
     // "cookbooks/lead-gen-bot",
@@ -24,7 +23,6 @@ module.exports = {
       label: "Basic",
       items: [
         "cookbooks/Academy",
-        "cookbooks/data-layer",
         "cookbooks/document_cognition",
         "cookbooks/getting_started",
         "cookbooks/lead-gen-bot",
@@ -147,6 +145,38 @@ module.exports = {
         "platform_concepts/studio/bot-knowledge",
         "platform_concepts/studio/training",
         "platform_concepts/studio/multilingual",
+      ],
+    },
+    {
+      type: "category",
+      label: "Data",
+      collapsed: true,
+      items: [
+        "platform_concepts/data/data-layer",
+      ],
+    },
+    {
+      type: "category",
+      label: "Growth",
+      collapsed: true,
+      items: [
+        "platform_concepts/growth/growth",
+      ],
+    },
+    {
+      type: "category",
+      label: "Inbox",
+      collapsed: true,
+      items: [
+        "platform_concepts/inbox/inbox",
+      ],
+    },
+    {
+      type: "category",
+      label: "Engagement",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/engage",
       ],
     },
     {
