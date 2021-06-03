@@ -107,7 +107,7 @@ function Home() {
       description:
         "Zero to one of building bots for simple usecases at lightening speed.",
       icon: "ri-lightbulb-flash-line",
-      url: "/docs/cookbooks/getting_started",
+      url: "/docs/cookbooks/Academy",
     },
   ];
   return (

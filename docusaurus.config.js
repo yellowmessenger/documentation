@@ -66,7 +66,7 @@ module.exports = {
 //           activeBasePath: "docs/developer",
 //         },
         {
-          to: "/docs/cookbooks/getting_started",
+          to: "/docs/cookbooks/Academy",
           label: "Cookbooks",
           position: "left",
           activeBasePath: "/docs/cookbooks",
