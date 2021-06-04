@@ -144,12 +144,27 @@ module.exports = {
         "platform_concepts/studio/overview",
         "platform_concepts/studio/journeys",
         "platform_concepts/studio/steps",
-        "platform_concepts/studio/response-types-message",
-        "platform_concepts/studio/response-types-action-logic",
-        "platform_concepts/studio/response-types-cards",
+        {
+          type: "category",
+          label: "Response Types",
+          collapsed: true,
+          items:[
+            "platform_concepts/studio/response-types-message",
+            "platform_concepts/studio/response-types-action-logic",
+          ],
+        },
+        //"platform_concepts/studio/response-types-cards",
         "platform_concepts/studio/template-journeys",
         "platform_concepts/studio/faqs",
-        "platform_concepts/studio/document_cognition",
+        {
+          type: "category",
+          label: "Document Cognition",
+          collapsed: true,
+          items:[
+            "platform_concepts/documentCognition/AWS",
+            "platform_concepts/documentCognition/Sharepoint",
+          ],
+        },
         "platform_concepts/studio/training",
         "platform_concepts/studio/languages-supported",
       ],
@@ -176,15 +191,6 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/inbox/inbox",
-      ],
-    },
-    {
-      type: "category",
-      label: "Document Cognition",
-      collapsed: true,
-      items: [
-        "platform_concepts/documentCognition/AWS",
-        "platform_concepts/documentCognition/Sharepoint",
       ],
     },
     {
@@ -233,6 +239,7 @@ module.exports = {
         "platform_concepts/integrations/successfactors",
         "platform_concepts/integrations/zalo",
         "platform_concepts/integrations/zendesk",
+        "platform_concepts/integrations/google-translate-api-inbox",
       ],
     },
     {
