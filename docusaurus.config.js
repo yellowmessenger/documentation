@@ -53,7 +53,7 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/platform_concepts/studio/overview",
+          to: "docs/platform_concepts/getting-started",
           activeBasePath: "docs/platform_concepts",
           label: "Platform Concepts",
           position: "left",
@@ -66,7 +66,7 @@ module.exports = {
 //           activeBasePath: "docs/developer",
 //         },
         {
-          to: "/docs/cookbooks/getting_started",
+          to: "/docs/cookbooks/Academy",
           label: "Cookbooks",
           position: "left",
           activeBasePath: "/docs/cookbooks",

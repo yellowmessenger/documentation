@@ -22,8 +22,11 @@ module.exports = {
       type: "category",
       label: "Basic",
       items: [
+        "cookbooks/Academy",
+        "cookbooks/document_cognition",
         "cookbooks/getting_started",
         "cookbooks/lead-gen-bot",
+        "cookbooks/transfer_chat",
       ],
     },
     {
@@ -44,15 +47,6 @@ module.exports = {
         "cookbooks/model-bot/getting-started",
         "cookbooks/model-bot/exercises",
       ]
-    },
-    {
-      type: "category",
-      label: "Template Bots",
-      collapsed: true,
-      items: [
-        "cookbooks/template-bots/lead-generation-bot",
-        "cookbooks/template-bots/customer-support-bot",
-      ]
     }
   ],
 
@@ -66,9 +60,9 @@ module.exports = {
         "howtos/basics/signup-post-bot-invite",
         // "howtos/basics/publish-bot",
         "howtos/basics/access-management",
-        // "howtos/basics/add-faqs", moved to studio
+        "howtos/basics/add-faqs",
         // "howtos/basics/compare-code",
-        "howtos/basics/variables-in-UI",
+        //"howtos/basics/variables-in-UI",
         "howtos/basics/validate-input",
         "howtos/basics/manage-support-agent",
         "howtos/basics/database-search",
@@ -135,11 +129,12 @@ module.exports = {
   //   },
   // ],
 
-  platform_concepts: [
+  platform_concepts: [   
+    "platform_concepts/getting-started",
     {
       type: "category",
       label: "Studio",
-      collapsed: false,
+      collapsed: true,
       items: [
         "platform_concepts/studio/overview",
         "platform_concepts/studio/journeys",
@@ -167,6 +162,8 @@ module.exports = {
         },
         "platform_concepts/studio/training",
         "platform_concepts/studio/languages-supported",
+        "platform_concepts/studio/tools",
+        "platform_concepts/studio/bot-variables",
       ],
     },
     {
@@ -182,7 +179,11 @@ module.exports = {
       label: "Growth",
       collapsed: true,
       items: [
-        "platform_concepts/growth/growth",
+        "platform_concepts/growth/growth",    
+        "platform_concepts/growth/overview",
+        "platform_concepts/growth/metrics",
+        "platform_concepts/growth/funnels",
+        "platform_concepts/growth/api-usage",
       ],
     },
     {
@@ -203,43 +204,42 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Channels",
+      label: "Channel Configuration",
       collapsed: true,
       items: [
-        "platform_concepts/channels/overview",
-        "platform_concepts/channels/web",
-        "platform_concepts/channels/android",
-        "platform_concepts/channels/ios",
-        "platform_concepts/channels/react-native",
-        "platform_concepts/channels/whatsapp",
-        "platform_concepts/channels/facebook-messenger",
-        "platform_concepts/channels/slack",
-        "platform_concepts/channels/teams",
-        "platform_concepts/channels/alexa",
-        "platform_concepts/channels/google-assistant",
-        "platform_concepts/channels/hangouts",
-        "platform_concepts/channels/ivr-bots",
-        "platform_concepts/channels/generic-webhook",
-        "platform_concepts/channels/fb-workplace",
-        "platform_concepts/channels/telegram",
-        "platform_concepts/channels/fb-lead-ads",
-        "platform_concepts/channels/whatsapp-configuration",
+        "platform_concepts/channelConfiguration/overview",
+        "platform_concepts/channelConfiguration/web",
+        "platform_concepts/channelConfiguration/android",
+        "platform_concepts/channelConfiguration/ios",
+        "platform_concepts/channelConfiguration/react-native",
+        "platform_concepts/channelConfiguration/whatsapp",
+        "platform_concepts/channelConfiguration/facebook-messenger",
+        "platform_concepts/channelConfiguration/slack",
+        "platform_concepts/channelConfiguration/teams",
+        "platform_concepts/channelConfiguration/alexa",
+        "platform_concepts/channelConfiguration/google-assistant",
+        "platform_concepts/channelConfiguration/hangouts",
+        "platform_concepts/channelConfiguration/ivr-bots",
+        "platform_concepts/channelConfiguration/generic-webhook",
+        "platform_concepts/channelConfiguration/fb-workplace",
+        "platform_concepts/channelConfiguration/telegram",
+        "platform_concepts/channelConfiguration/fb-lead-ads",
+        "platform_concepts/channelConfiguration/whatsapp-configuration",
       ],
     },
     {
       type: "category",
-      label: "Integrations",
+      label: "App Configuration",
       collapsed: true,
       items: [
-        "platform_concepts/integrations/azure-ad",
-        "platform_concepts/integrations/freshdesk",
-        "platform_concepts/integrations/power-bi",
-        "platform_concepts/integrations/razorpay",
-        "platform_concepts/integrations/salesforce",
-        "platform_concepts/integrations/successfactors",
-        "platform_concepts/integrations/zalo",
-        "platform_concepts/integrations/zendesk",
-        "platform_concepts/integrations/google-translate-api-inbox",
+        "platform_concepts/appConfiguration/azure-ad",
+        "platform_concepts/appConfiguration/freshdesk",
+        "platform_concepts/appConfiguration/power-bi",
+        "platform_concepts/appConfiguration/razorpay",
+        "platform_concepts/appConfiguration/salesforce",
+        "platform_concepts/appConfiguration/successfactors",
+        "platform_concepts/appConfiguration/zalo",
+        "platform_concepts/appConfiguration/zendesk",
       ],
     },
     {

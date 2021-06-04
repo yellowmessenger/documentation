@@ -86,7 +86,7 @@ function Home() {
       description:
         "Learn the platform basics, review channel intergration and security compilance documents.",
       icon: "ri-booklet-line",
-      url: "/docs/platform_concepts/studio/overview",
+      url: "/docs/platform_concepts/getting-started",
     },
     {
       title: "Developer",
@@ -107,7 +107,7 @@ function Home() {
       description:
         "Zero to one of building bots for simple usecases at lightening speed.",
       icon: "ri-lightbulb-flash-line",
-      url: "/docs/cookbooks/getting_started",
+      url: "/docs/cookbooks/Academy",
     },
   ];
   return (
