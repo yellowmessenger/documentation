@@ -129,11 +129,12 @@ module.exports = {
   //   },
   // ],
 
-  platform_concepts: [
+  platform_concepts: [   
+    "platform_concepts/getting-started",
     {
       type: "category",
       label: "Studio",
-      collapsed: false,
+      collapsed: true,
       items: [
         "platform_concepts/studio/overview",
         "platform_concepts/studio/journeys",
