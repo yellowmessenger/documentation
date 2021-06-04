@@ -23,10 +23,10 @@ module.exports = {
       label: "Basic",
       items: [
         "cookbooks/Academy",
-        "cookbooks/document_cognition",
-        "cookbooks/getting_started",
+       // "cookbooks/document_cognition",
+       // "cookbooks/getting_started",
         "cookbooks/lead-gen-bot",
-        "cookbooks/transfer_chat",
+        //"cookbooks/transfer_chat",
       ],
     },
     {
@@ -150,12 +150,13 @@ module.exports = {
         },
         //"platform_concepts/studio/response-types-cards",
         "platform_concepts/studio/template-journeys",
-        "platform_concepts/studio/faqs",
+        //"platform_concepts/studio/faqs",
         {
           type: "category",
           label: "Document Cognition",
           collapsed: true,
           items:[
+            "platform_concepts/documentCognition/what-is-document-cognition",
             "platform_concepts/documentCognition/AWS",
             "platform_concepts/documentCognition/Sharepoint",
           ],
