@@ -193,6 +193,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/inbox/inbox",
+        "platform_concepts/inbox/google-translate-api-inbox",
       ],
     },
     {
