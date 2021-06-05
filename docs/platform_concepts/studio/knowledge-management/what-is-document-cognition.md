@@ -1,5 +1,5 @@
 ---
-sidebar_label : Document Cognition 101
+sidebar_label : Document Cognition
 title : What is Document Cognition
 ---
 

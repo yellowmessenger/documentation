@@ -1,10 +1,13 @@
 ---
-id: data-layer
-title: Understanding Data Base Actions
-description: How to add records in Data Base
-featured: true
-rank: 5
+id: create-tables
+title: Creating Tables and Inserting Data
 ---
+
+### How to access the Database on the Yellow Messenger platform?
+
+Headover to the `Data` tab from the left sidebar to access the database.
+
+![how to access the database](https://cdn.yellowmessenger.com/OoM6M6mK2bAI1615891898315.png)
 
 ### Create a Data Base Table
 
@@ -56,3 +59,28 @@ Other available actions are as follows:
 `Truncate`: To clear all the records in the DB.
 
 `Drop`: To Delete the entire table.
+
+### Downloading Table Offline
+
+Download the table and add/edit/remove any data from this table. 
+
+![Download the table](https://cdn.yellowmessenger.com/geXLTc7saBDC1615892768708.png)
+
+
+Edit the table as you want and save it in CSV format. Please make sure that the headers of the table are not changed. 
+
+### Truncating Tables
+
+Truncate the table in the database and upload the new updated table. Please make sure you don’t Drop the table. Dropping the table will delete the table entirely. 
+
+![Truncate table](https://cdn.yellowmessenger.com/8sGWAKv3FORp1615892832779.png)
+
+Once changes are made, can upload the table in CSV format back on the same page using 'Upload' button. 
+
+![Upload CSV](https://cdn.yellowmessenger.com/NGuXuTaP3lOE1615893169294.png)
+
+
+**Note** : When willing to add single record without downloading and uploading, basically without making a fuss.  
+Click on ‘Add Record’ and you can add one record at a time.
+
+![Add record](https://cdn.yellowmessenger.com/ISbs9PfBEf121615893406287.png)

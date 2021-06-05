@@ -1,6 +1,6 @@
 ---
 title: Setup Web Widget
-sidebar_label : Setup Web Widget
+sidebar_label : Web Widget
 ---
 
 ### Change the name,icon, description of the bot? 

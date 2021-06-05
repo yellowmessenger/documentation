@@ -1,6 +1,6 @@
 ---
 title: API Management
-sidebar_label : API
+sidebar_label : Adding an API
 ---
 
 ### How to add a new API?

@@ -1,9 +1,6 @@
 ---
-id: lead-gen-bot
-title: Building your first Bot
-description: Building a bot which can generate leads for you.
-featured: true
-rank: 6
+sidebar_label : Lead Generation
+title : Lead Generation Bot
 ---
 ## Create Lead Generation Bot
 

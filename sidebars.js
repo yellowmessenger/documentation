@@ -13,20 +13,11 @@ let components = listPaths();
 
 module.exports = {
   cookbooks: [
-    // "cookbooks/Academy",
-    // "cookbooks/document_cognition",
-    // "cookbooks/getting_started",
-    // "cookbooks/lead-gen-bot",
-    // "cookbooks/transfer_chat",
     {
       type: "category",
       label: "Basic",
       items: [
         "cookbooks/Academy",
-       // "cookbooks/document_cognition",
-       // "cookbooks/getting_started",
-        "cookbooks/lead-gen-bot",
-        //"cookbooks/transfer_chat",
       ],
     },
     {
@@ -41,11 +32,13 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Model Bot",
+      label: "Template/Example Bots",
       collapsed: true,
       items: [
-        "cookbooks/model-bot/getting-started",
-        "cookbooks/model-bot/exercises",
+        "cookbooks/template-bots/model-bot",
+        "cookbooks/template-bots/customer-support",
+        "cookbooks/template-bots/faq",
+        "cookbooks/template-bots/lead-generation",
       ]
     }
   ],
@@ -58,14 +51,8 @@ module.exports = {
       items: [
         "howtos/basics/create-a-bot",
         "howtos/basics/signup-post-bot-invite",
-        // "howtos/basics/publish-bot",
         "howtos/basics/access-management",
-        "howtos/basics/add-faqs",
-        // "howtos/basics/compare-code",
-        //"howtos/basics/variables-in-UI",
         "howtos/basics/validate-input",
-        "howtos/basics/manage-support-agent",
-        "howtos/basics/database-search",
         "howtos/basics/sensitive-info",
       ],
     },
@@ -74,60 +61,14 @@ module.exports = {
       label: "Create",
       collapsed: true,
       items: [
-        "howtos/create/cloud-function",
-        "howtos/create/database-management",
-        "howtos/create/api-management",
         "howtos/create/localisation",
-        // "howtos/create/setup-did-you-mean",
         "howtos/create/whatsapp-bot",
         "howtos/create/whatsapp-notification-template",
         "howtos/create/whatsapp-notification-ym",
         "howtos/create/quickreply",
       ],
     },
-    {
-      type: "category",
-      label: "Context Management",
-      collapsed: true,
-      items: ["howtos/context/add-contextual-response"],
-    },
-    {
-      type: "category",
-      label: "Web-Widget",
-      collapsed: true,
-      items: ["howtos/design/setup-web-widget"],
-    },
   ],
-  // developer: [
-  //   {
-  //     type: "category",
-  //     label: "Function reference",
-  //     collapsed: true,
-  //     items: ["developer/app/overview", ...components],
-  //   },
-  //   {
-  //     type: "category",
-  //     label: "API reference",
-  //     collapsed: true,
-  //     items: [
-  //       "developer/app/apis/audience-api",
-  //       "developer/app/apis/data-api",
-  //       "developer/app/apis/platform-api",
-  //     ],
-  //   },
-  //   {
-  //     type: "category",
-  //     label: "Events reference",
-  //     collapsed: true,
-  //     items: [
-  //       "developer/app/events/agent-events",
-  //       "developer/app/events/analytics-events",
-  //       "developer/app/events/bot-events",
-  //       "developer/app/events/user-events",
-  //       "developer/app/events/voice-events",
-  //     ],
-  //   },
-  // ],
 
   platform_concepts: [   
     "platform_concepts/getting-started",
@@ -148,23 +89,47 @@ module.exports = {
             "platform_concepts/studio/response-types-action-logic",
           ],
         },
-        //"platform_concepts/studio/response-types-cards",
-        "platform_concepts/studio/template-journeys",
-        //"platform_concepts/studio/faqs",
         {
           type: "category",
-          label: "Document Cognition",
+          label: "Knowledge Management",
           collapsed: true,
           items:[
-            "platform_concepts/documentCognition/what-is-document-cognition",
-            "platform_concepts/documentCognition/AWS",
-            "platform_concepts/documentCognition/Sharepoint",
+            "platform_concepts/studio/knowledge-management/add-faqs",
+            "platform_concepts/studio/knowledge-management/what-is-document-cognition",
+            "platform_concepts/studio/knowledge-management/AWS",
+            "platform_concepts/studio/knowledge-management/Sharepoint",
           ],
         },
-        "platform_concepts/studio/training",
+        {
+          type: "category",
+          label: "API Management",
+          collapsed: true,
+          items:[
+            "platform_concepts/studio/api-management/add-api",
+          ],
+        },
+        {
+          type: "category",
+          label: "Context Management",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/context-management/add-contextual-response"
+          ],
+        },
+        {
+          type: "category",
+          label: "Natural Language Understanding",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/natural-language-understanding/training",
+            "platform_concepts/studio/natural-language-understanding/intents",
+            "platform_concepts/studio/natural-language-understanding/entities",
+          ],
+        },
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
         "platform_concepts/studio/bot-variables",
+        "platform_concepts/studio/cloud-function",
       ],
     },
     {
@@ -172,7 +137,8 @@ module.exports = {
       label: "Data",
       collapsed: true,
       items: [
-        "platform_concepts/data/data-layer",
+        "platform_concepts/data/create-tables",
+        "platform_concepts/data/database-search",
       ],
     },
     {
@@ -193,6 +159,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/inbox/inbox",
+        "platform_concepts/inbox/manage-support-agent",
         "platform_concepts/inbox/google-translate-api-inbox",
       ],
     },
@@ -227,6 +194,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/telegram",
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
+        "platform_concepts/channelConfiguration/web-widget",
       ],
     },
     {
