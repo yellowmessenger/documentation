@@ -1,6 +1,6 @@
 ---
-title: Getting started with the Yellow Messenger Platform
-sidebar_label: Overview 🏔
+title: Getting started with Conversational Studio
+sidebar_label: Overview
 ---
 
 This section will make you familiar with yellow messenger platform concepts. We'll deep dive into every component one by one that yellow messenger provides you with.

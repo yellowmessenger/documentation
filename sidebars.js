@@ -23,10 +23,10 @@ module.exports = {
       label: "Basic",
       items: [
         "cookbooks/Academy",
-        "cookbooks/document_cognition",
-        "cookbooks/getting_started",
+       // "cookbooks/document_cognition",
+       // "cookbooks/getting_started",
         "cookbooks/lead-gen-bot",
-        "cookbooks/transfer_chat",
+        //"cookbooks/transfer_chat",
       ],
     },
     {
@@ -62,7 +62,7 @@ module.exports = {
         "howtos/basics/access-management",
         "howtos/basics/add-faqs",
         // "howtos/basics/compare-code",
-        "howtos/basics/variables-in-UI",
+        //"howtos/basics/variables-in-UI",
         "howtos/basics/validate-input",
         "howtos/basics/manage-support-agent",
         "howtos/basics/database-search",
@@ -129,22 +129,42 @@ module.exports = {
   //   },
   // ],
 
-  platform_concepts: [
+  platform_concepts: [   
+    "platform_concepts/getting-started",
     {
       type: "category",
       label: "Studio",
-      collapsed: false,
+      collapsed: true,
       items: [
         "platform_concepts/studio/overview",
         "platform_concepts/studio/journeys",
         "platform_concepts/studio/steps",
-        "platform_concepts/studio/response-types-message",
-        "platform_concepts/studio/response-types-action-logic",
-        "platform_concepts/studio/response-types-cards",
+        {
+          type: "category",
+          label: "Response Types",
+          collapsed: true,
+          items:[
+            "platform_concepts/studio/response-types-message",
+            "platform_concepts/studio/response-types-action-logic",
+          ],
+        },
+        //"platform_concepts/studio/response-types-cards",
         "platform_concepts/studio/template-journeys",
-        "platform_concepts/studio/bot-knowledge",
+        //"platform_concepts/studio/faqs",
+        {
+          type: "category",
+          label: "Document Cognition",
+          collapsed: true,
+          items:[
+            "platform_concepts/documentCognition/what-is-document-cognition",
+            "platform_concepts/documentCognition/AWS",
+            "platform_concepts/documentCognition/Sharepoint",
+          ],
+        },
         "platform_concepts/studio/training",
         "platform_concepts/studio/languages-supported",
+        "platform_concepts/studio/tools",
+        "platform_concepts/studio/bot-variables",
       ],
     },
     {
@@ -160,7 +180,11 @@ module.exports = {
       label: "Growth",
       collapsed: true,
       items: [
-        "platform_concepts/growth/growth",
+        "platform_concepts/growth/growth",    
+        "platform_concepts/growth/overview",
+        "platform_concepts/growth/metrics",
+        "platform_concepts/growth/funnels",
+        "platform_concepts/growth/api-usage",
       ],
     },
     {
@@ -169,15 +193,6 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/inbox/inbox",
-      ],
-    },
-    {
-      type: "category",
-      label: "Document Cognition",
-      collapsed: true,
-      items: [
-        "platform_concepts/documentCognition/AWS",
-        "platform_concepts/documentCognition/Sharepoint",
       ],
     },
     {
