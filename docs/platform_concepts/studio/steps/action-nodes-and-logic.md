@@ -5,19 +5,32 @@ sidebar_label: Action and Logic
 
 
 ## Action
-Action nodes or Action response types are basically used whenever we need to take some action - not send something to user, not receive something from user - but take a backend action. 
-Action nodes include - API, Analytics, Database operations, and Memory nodes. 
-These nodes often help us manage actions in a flow which are configured in some other section. Let's understand each of these better.
+Action nodes or Action step types are basically used whenever we need to take some action behind the scenes example database insert, API execution or document search etc. 
 > To use an action node, simply add it to the flow where you want the action to be done.
 
+### API
+### Analytics
+### Variables
 ### Database
+### Functions
+### Document Search
+### Send Email
+### Modifier
+### Raise Ticket
+### Set language
+### Trigger Journey
+### Send OTP
+### Verify OTP
+
+## Logic
+### If condition
+
+-- UPDATE CONTENT FROM HERE --
+
+
+#### Database
 > Assumption: You have a database set up in `database` section.
 
-
-Database actions taken in a flow can be of three types: 
-* Insert 
-* Search
-* Update
 
 #### DB Insert
 Suppose you are taking user input in some step. You want to enter this user input in a database table after it. This is where the `DB Insert` node comes in. 
@@ -33,30 +46,9 @@ Like in below example, we are taking `book_name` field from `bookName` step and 
 
 > :pushpin: You can select multiple fields in a table for DB insert. But for different tables, you need to have different DB insert nodes. 
 
-#### DB Search
-
-You can also perform simple database searches on YM platform without writing code using Database action Node, 'Search Action'.
-
-* Similar to Insert node, you need to select which table you want to search in here. 
-* You can add filters to this search as well , as shown in following GIF. You can filter using 5 conditions : *Contains*, *Does not contain*, *Is*, *Is Not* and *Range*. 
-* Value to compare against column can be taken from a variable or a custom text can be used. 
-* You can again sort the results, put limit on no. of results (columns) and store it then in a variable for further use. 
-![](https://i.imgur.com/ifwcspW.gif)
 
 
-
-#### DB Update
-to be updated
-
----
-
-### Function 
-Function action node allows you to use a function from code in your flow and pass any function arguments needed. 
-The purpose of this is simply to bring in your function at the exact point in flow you need it. To write/view the function, you'll need to visit code section.
-![](https://i.imgur.com/tTMV0AJ.jpg)
-
-
-### API 
+#### API 
 API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) and then store API response in a variable for further use. 
 ![](https://i.imgur.com/5zvKnCW.jpg)
 
@@ -76,25 +68,9 @@ Learn how to directly use this variable in your steps to access different fields
 
 
 
-### Memory 
-Memory node helps you store something temporarily. For example, if you get some input from user that you want to use in some upcoming step or same session, but do not want stored permanently, you can use this node. 
-Memory node has 3 options - Set, Fetch & delete for you to do this. 
-![](https://i.imgur.com/Lg9IY4T.gif)
-
-> :pushpin: **Note** : Memory variables are available globally. For any other use case or limiting to a journey, it's recommended use simple variables. 
 
 
-### Analytics
-With Analytics node, you can push an event to analytics with some value
-![](https://i.imgur.com/HJNKw6c.jpg)
-
-## Logic 
-Logic is another response time which contains IF condition action node. 
-This can help you branch your flow based on conditions. 
 
 
-![](https://i.imgur.com/fJ3oqcv.gif)
 
-A simple example is shown below,
-![](https://i.imgur.com/vNrajS7.jpg)
 ---
