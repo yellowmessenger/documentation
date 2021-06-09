@@ -3,35 +3,37 @@ title: Let's start with Journeys
 sidebar_label: Journeys
 ---
 
-**Journeys are how we visualise & design conversational flow** on Yellow Messenger Platform inside Studio. This section will help you get familiar with journeys.
+**Journeys are how we visualise & design conversational flow**. This section will help you get familiar with journeys. 
+Journeys can be found under `Design section`
 
 ---
 ## Understanding 'Journeys'
 To understand what journeys are, let's think about how we will start designing conversational flow for example given in previous section. 
-You already have scope of your bot ready, depending on what purpose user has for chatting with your bot, your bot will respond accordingly. Suppose user is here to book flight tickets, *you will take them through all the steps needed to do just that.*
+You already have scope of your bot ready, depending on what purpose user has for chatting with your bot, your bot will respond accordingly. Suppose user is here to book/cancel or reschedule flight tickets, *you will take them through all the steps needed to do just that.*
 
 > **We call these flows, or series of steps `Journeys` on our platform.**
 
-Rephrasing sentence above, *If user is here to book tickets, you will take them through Journey 'Book flight tickets'.*
-Similarly, you can create Journeys for each major path your user can take based on their **`intent`** to user this bot. 
+Rephrasing sentence above, *If user is here to book tickets, you will take them through Journey 'Flight tickets'.*
+Similarly, you can create Journeys for each major same path your user can take. You can also use journeys to modularise and re-use. 
+
+:::info
+**Journeys are where you logically design your conversational flows.** 
+:::
 
 > You can also categorize your journeys using `Categories`!
 
 
 ![](https://i.imgur.com/SIfo2pR.png)
 
-:::info
- :bulb: *How many journeys you create, what classifies as distinct enough purpose to create a seperate journey etc really depends on how you see it. Important conclusion here is Journeys seem to be some building blocks/components that make up your bot's overall conversational flow.*
-:::
----
+
 
 
 ## What else journeys can be used for?
 
-We already talked about how based on user's broad intent, we can take them on respective journeys. 
+We already talked about how based on purpose or clubbing similar flow, we can take them on respective journeys. 
 
 But Journeys are much more than that!
-> :bulb: ***Journeys are also ways for you as bot designer/developer to visualise or implement your bot logic apart from designing around broad user intents/scope.***
+> :bulb: ***Journeys are also ways for you as bot designer/developer to visualise or implement your bot logic apart from designing around broad user scope.***
 
 * **Design repetitively needed logic/flow :** 
 Imagine that for multiple journeys, for example Book Hotels and Book flights, you need to take user details - Name, email and phone number. This means that you need this same 'user input' logic multiple journeys. Instead of repeating this, you can save your labor by designing a new journey 'User Input' and triggering it whenever you need.  
@@ -39,28 +41,36 @@ Imagine that for multiple journeys, for example Book Hotels and Book flights, yo
 As a bot developer, there can be multiple user cases where you need to design some flow - and trigger it whenever you configure it to be triggered, and not randomly because of a clear user intent. We will learn more about how journeys can be triggered in next section. 
 
 ---
-## How are Journeys triggered?
+## How are Journeys triggered? 
+
+![](https://i.imgur.com/gPqIjG3.gif)
+
 
 ### :pushpin: User Intent
 We've already discussed how based on what is user's intent, a journey can be triggered. 
-For this **`Intent`**, we can define a set of **`User Utterances`**, ie, possible things our user can say for which bot should start this journey. For example, for our 'Book flight ticket' Journey, user intents include 
+You can attach one or multiple intents to a single journey
 a) Booking New Ticket
 b) Modifying existing booking
-User Utterances we provide should cover both these intents.
+For example these two intents may be added as start trigger to same journey.
+We will learn how to add and train [Intents](./natural-language-understanding/intents) in latter sections.
 
-![](https://i.imgur.com/i9dfoMq.png)
+### :pushpin: Entities
+Journeys can also be triggered using Entities. We will learn more about [Entities](./natural-language-understanding/entities) later.
 
-This can be defined inside **`Start Trigger`** of a journey.
+### :pushpin: Event Triggers
+Events like bot opened, bot closed, or custom events can be also be added as start triggers for a Journey.
 
-Once we provide some possible user utterances and 'train' the bot, it can learn to recognize other possible user utterances on it's own. We will learn more about training in future sections. 
-
-### :pushpin: Trigger Journey Response
-
-We can also set up manually when to trigger another journey from inside a journey. **`Trigger journey`** response will be discussed when we learn about [Steps](../docs/platform_concepts/studio/steps) and [Response types](../docs/platform_concepts/response-types-action-logic) in future sections. 
+### :pushpin: Page URL
+You can also decide user loading a certain page URL as a journey trigger. For example, On help page if you want to trigger agent journey directly? 
 
 ### :pushpin: Events
 
 Another way to start a journey is through 'Events'. We will discuss events in detail in future sections. 
+
+
+### :pushpin: Trigger Journey Action node
+
+Apart from start trigger can also set up manually when to trigger another journey from  or inside a journey using **`Trigger journey`** action node.
 
 
 ---
