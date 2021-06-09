@@ -1,6 +1,6 @@
 ---
-title: Response types - Action, Logic
-sidebar_label: Response types - Action, Logic
+title: Operational/Logical steps - Action and Logic
+sidebar_label: Action and Logic
 ---
 
 

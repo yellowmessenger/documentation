@@ -1,6 +1,6 @@
 ---
-title: Response types - Message 
-sidebar_label: Response Types - Message
+title: Interaction steps - Prompts and Messages
+sidebar_label: Prompts and Message
 ---
 Now that we understand Steps & Journeys, let's talk about different kinds of responses we can add in a Step. Responses simply mean any way we are responding/communicating with user. It will become more clear as we move on, In this section we will limit our discussion to Message Response type & talk about validators.  
 

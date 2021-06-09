@@ -79,14 +79,14 @@ module.exports = {
       items: [
         "platform_concepts/studio/overview",
         "platform_concepts/studio/journeys",
-        "platform_concepts/studio/steps",
         {
           type: "category",
-          label: "Response Types",
+          label: "Steps",
           collapsed: true,
           items:[
-            "platform_concepts/studio/response-types-message",
-            "platform_concepts/studio/response-types-action-logic",
+            "platform_concepts/studio/steps/steps",
+            "platform_concepts/studio/steps/prompts-and-messages",
+            "platform_concepts/studio/steps/action-nodes-and-logic",
           ],
         },
         {
