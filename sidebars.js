@@ -19,6 +19,7 @@ module.exports = {
   ],
 
   cookbooks: [
+    "cookbooks/conversation-design",
     {
       type: "category",
       label: "Basic",
