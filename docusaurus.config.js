@@ -71,14 +71,14 @@ module.exports = {
           position: "left",
           activeBasePath: "/docs/cookbooks",
         },
-        {
+        //{
           // to: "howtos",
-          to: "docs/howtos/basics/create-a-bot",
+          //to: "docs/howtos/basics/create-a-bot",
           // to: "docs/developer/overview",
-          label: "How to's",
-          position: "left",
-          activeBasePath: "docs/howtos",
-        },
+          //label: "How to's",
+          //position: "left",
+          //activeBasePath: "docs/howtos",
+        //},
         {
           to: "https://community.yellowmessenger.com",
           label: "Community",

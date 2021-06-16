@@ -54,19 +54,6 @@ module.exports = {
 
   ],
 
-  howtos: [
-    {
-      type: "category",
-      label: "Basic",
-      collapsed: false,
-      items: [
-        "howtos/basics/create-a-bot",
-        "howtos/basics/signup-post-bot-invite",
-        "howtos/basics/access-management",
-      ],
-    },
-  ],
-
   platform_concepts: [   
     "platform_concepts/getting-started",
     {
@@ -209,6 +196,15 @@ module.exports = {
         "platform_concepts/appConfiguration/successfactors",
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk",
+      ],
+    },
+    {
+      type: "category",
+      label: "Configurations",
+      collapsed: false,
+      items: [
+        "platform_concepts/configurations/signup-post-bot-invite",
+        "platform_concepts/configurations/access-management",
       ],
     },
     {
