@@ -63,7 +63,6 @@ module.exports = {
         "howtos/basics/create-a-bot",
         "howtos/basics/signup-post-bot-invite",
         "howtos/basics/access-management",
-        "howtos/basics/validate-input",
         "howtos/basics/sensitive-info",
       ],
     },
@@ -95,6 +94,7 @@ module.exports = {
           items:[
             "platform_concepts/studio/response-types-message",
             "platform_concepts/studio/response-types-action-logic",
+            "platform_concepts/studio/validate-input",
           ],
         },
         {
