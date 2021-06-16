@@ -58,3 +58,28 @@ All the FAQs you've added, you can see on the left side. To check if a question 
 
 ![Try FAQs in your bot](https://cdn.yellowmessenger.com/GYNYBPbWXGFe1615887293471.png)
 
+### FAQs in Multilingual bots
+
+Please make sure that 'Autodetect in enabled under tools section as shown'
+![tools](https://cdn.yellowmessenger.com/fywFORjNhR2d1622871881317.png)
+
+Also all languages that you would like are enabled/selected under configurations section. 
+![tools](https://cdn.yellowmessenger.com/TCvB6C5Xi0C01622871930384.png)
+
+Consider for an example a french FAQs bot. English answer is not mandatory for the French only bots, for those questions, you can add answer under language_fr column and leave the langauge_en column empty.
+
+![Language](https://cdn.yellowmessenger.com/ZslPb3oSw0O81622871511166.png)
+Each alternate question should be a row in the sheet. e.g. If the question is "What is the return policy?", and you have two alternatives - "Return policy" and "Can I return the item?", here is how you will add them -
+
+This will add 1 question "What is the return policy?" trained on two alternatives "Return policy" and "Can I return the item?". So if the user query is similar to any of these 3 sentences, we will be able to map it to this question.
+
+![Language](https://cdn.yellowmessenger.com/FAlCHDzmmhYC1622871600260.png)
+You can also categorize your questions, please make sure to create the category before you upload the csv. You can add the category in the first column "category", you can also use the most relevant tag as the category if that makes sense for your KB -
+https://cdn.yellowmessenger.com/4xHV1ZBD36Zr1622871672346.png
+
+![Language](https://cdn.yellowmessenger.com/4xHV1ZBD36Zr1622871672346.png)
+
+Similarly, if you want to add Italian responses, you can add another column with header language_it (langauge_isocode, here iso code = it for Italian). If you want to test the bot after uploading, pls make sure to add the relevant languages in the "Configure" section.
+
+Please find below an example of the template for a french only bot
+![Language](https://cdn.yellowmessenger.com/U9UTQfHbZqAT1622871674822.png)

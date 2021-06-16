@@ -1,11 +1,10 @@
 ---
-title: Context Management
-sidebar_label : Adding Contextual Responses
+title : Adding Contextual Responses
+sidebar_label : Contextual Responses
 ---
 
 ### How to add Contextual Responses? 
 
-**Keywords** : contextual, why, what, how
 
 Setting up contextual responses means adding more context to the response to a particular step. To simplify it further lets take an example  
 **Bot** : Can you share your email with me?  

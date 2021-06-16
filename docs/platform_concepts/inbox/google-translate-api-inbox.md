@@ -1,6 +1,6 @@
 ---
 title: How to get your own Google Translate API key
-sidebar_label : Google Translate API
+sidebar_label : Auto Translate for Agents
 ---
 
 To enable Auto translate for Inbox, you need to generate and connect your Google Translate API key to your account.

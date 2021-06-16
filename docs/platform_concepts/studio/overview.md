@@ -1,5 +1,5 @@
 ---
-title: Getting started with Conversational Studio
+title: Understanding Conversational Studio
 sidebar_label: Overview
 ---
 
