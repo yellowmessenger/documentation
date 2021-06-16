@@ -99,6 +99,8 @@ module.exports = {
           collapsed: true,
           items:[
             "platform_concepts/studio/api-management/add-api",
+            "platform_concepts/studio/api-management/send-data",
+            "platform_concepts/studio/api-management/receive-data",
           ],
         },
         {
