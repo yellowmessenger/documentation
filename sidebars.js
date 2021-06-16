@@ -33,14 +33,25 @@ module.exports = {
     {
       type: "category",
       label: "Template/Example Bots",
-      collapsed: true,
+      collapsed: false,
       items: [
         "cookbooks/template-bots/model-bot",
         "cookbooks/template-bots/customer-support",
         "cookbooks/template-bots/faq",
         "cookbooks/template-bots/lead-generation",
       ]
+    },
+    {
+      type: "category",
+      label: "All About Whatsapp Bots",
+      collapsed: true,
+      items: [
+        "cookbooks/whatsapp cookbook/whatsapp-bot",
+        "cookbooks/whatsapp cookbook/whatsapp-notification-template",
+        "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
+      ]
     }
+
   ],
 
   howtos: [
@@ -62,9 +73,6 @@ module.exports = {
       collapsed: true,
       items: [
         "howtos/create/localisation",
-        "howtos/create/whatsapp-bot",
-        "howtos/create/whatsapp-notification-template",
-        "howtos/create/whatsapp-notification-ym",
         "howtos/create/quickreply",
       ],
     },
