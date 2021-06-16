@@ -1,6 +1,6 @@
 ---
-title: WhatsApp Bot? 
-sidebar_label : WhatApp Bot
+title: WhatsApp Channel Setup
+sidebar_label : WhatsApp Channel Setup
 ---
 
 **Keywords** :  whatsapp bot, whatsapp, whatsapp chatbot

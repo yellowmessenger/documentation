@@ -65,15 +65,6 @@ module.exports = {
         "howtos/basics/access-management",
       ],
     },
-    {
-      type: "category",
-      label: "Create",
-      collapsed: true,
-      items: [
-        "howtos/create/localisation",
-        "howtos/create/quickreply",
-      ],
-    },
   ],
 
   platform_concepts: [   
@@ -95,6 +86,7 @@ module.exports = {
             "platform_concepts/studio/response-types-action-logic",
             "platform_concepts/studio/validate-input",
             "platform_concepts/studio/sensitive-info",
+            "platform_concepts/studio/quickreply",
           ],
         },
         {
