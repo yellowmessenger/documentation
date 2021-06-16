@@ -189,7 +189,6 @@ module.exports = {
         "platform_concepts/channelConfiguration/android",
         "platform_concepts/channelConfiguration/ios",
         "platform_concepts/channelConfiguration/react-native",
-        "platform_concepts/channelConfiguration/whatsapp",
         "platform_concepts/channelConfiguration/facebook-messenger",
         "platform_concepts/channelConfiguration/slack",
         "platform_concepts/channelConfiguration/teams",
