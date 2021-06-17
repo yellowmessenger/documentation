@@ -73,7 +73,7 @@ module.exports = {
         },
         {
           to: "docs/tutorials/basics",
-          label: "Tutorials",
+          label: "Two-torials",
           position: "left",
           activeBasePath: "docs/tutorials",
         },
