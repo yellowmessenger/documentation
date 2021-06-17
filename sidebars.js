@@ -12,7 +12,14 @@ const { listPaths } = require("./src/plugins/components");
 let components = listPaths();
 
 module.exports = {
+
+  tutorials: [   
+    "tutorials/basics",
+    "tutorials/doc-cog",
+  ],
+
   cookbooks: [
+    "cookbooks/conversation-design",
     {
       type: "category",
       label: "Basic",
@@ -33,41 +40,25 @@ module.exports = {
     {
       type: "category",
       label: "Template/Example Bots",
-      collapsed: true,
+      collapsed: false,
       items: [
         "cookbooks/template-bots/model-bot",
         "cookbooks/template-bots/customer-support",
         "cookbooks/template-bots/faq",
         "cookbooks/template-bots/lead-generation",
       ]
-    }
-  ],
-
-  howtos: [
-    {
-      type: "category",
-      label: "Basic",
-      collapsed: false,
-      items: [
-        "howtos/basics/create-a-bot",
-        "howtos/basics/signup-post-bot-invite",
-        "howtos/basics/access-management",
-        "howtos/basics/validate-input",
-        "howtos/basics/sensitive-info",
-      ],
     },
     {
       type: "category",
-      label: "Create",
+      label: "All About Whatsapp Bots",
       collapsed: true,
       items: [
-        "howtos/create/localisation",
-        "howtos/create/whatsapp-bot",
-        "howtos/create/whatsapp-notification-template",
-        "howtos/create/whatsapp-notification-ym",
-        "howtos/create/quickreply",
-      ],
-    },
+        "cookbooks/whatsapp cookbook/whatsapp-bot",
+        "cookbooks/whatsapp cookbook/whatsapp-notification-template",
+        "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
+      ]
+    }
+
   ],
 
   platform_concepts: [   
@@ -87,6 +78,9 @@ module.exports = {
           items:[
             "platform_concepts/studio/response-types-message",
             "platform_concepts/studio/response-types-action-logic",
+            "platform_concepts/studio/validate-input",
+            "platform_concepts/studio/sensitive-info",
+            "platform_concepts/studio/quickreply",
           ],
         },
         {
@@ -106,6 +100,8 @@ module.exports = {
           collapsed: true,
           items:[
             "platform_concepts/studio/api-management/add-api",
+            "platform_concepts/studio/api-management/send-data",
+            "platform_concepts/studio/api-management/receive-data",
           ],
         },
         {
@@ -181,7 +177,6 @@ module.exports = {
         "platform_concepts/channelConfiguration/android",
         "platform_concepts/channelConfiguration/ios",
         "platform_concepts/channelConfiguration/react-native",
-        "platform_concepts/channelConfiguration/whatsapp",
         "platform_concepts/channelConfiguration/facebook-messenger",
         "platform_concepts/channelConfiguration/slack",
         "platform_concepts/channelConfiguration/teams",
@@ -210,6 +205,15 @@ module.exports = {
         "platform_concepts/appConfiguration/successfactors",
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk",
+      ],
+    },
+    {
+      type: "category",
+      label: "Configurations",
+      collapsed: false,
+      items: [
+        "platform_concepts/configurations/signup-post-bot-invite",
+        "platform_concepts/configurations/access-management",
       ],
     },
     {
