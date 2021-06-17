@@ -7,12 +7,15 @@ sidebar_label : Receiving data from an API
 
 To retrieve the API response and to display it to the user, please follow the below steps.
 
-1. Add a Prompt/Message node after the actions node.
 
+1. Add a Prompt/Message node after the actions node.
 
 2. Select the Variable where you stored API Response.
 
 3. Using the dot notation, access the value of API response.
+
+
+![API Response](https://cdn.yellowmessenger.com/pM8aYXXUTfPf1623906957904.gif)
 
 Finally, when a user messages the bot, the id would be displayed to the user.
 
@@ -29,7 +32,6 @@ Transformation Function can be used when you wish to modify/manipulate the API r
 2. In the transformation function, you could access the API response in ymLib.args.
 You could write your own logic in javascript to fetch only the fields you wish to have in the response of API.
 
-![API Response](https://cdn.yellowmessenger.com/1jAZ4PqdscPu1623865593856.png)
 
 
 3. After your logic, please return the value so that would be saved in a variable. You could use the variable in Prompt or Message node to send that to user.
