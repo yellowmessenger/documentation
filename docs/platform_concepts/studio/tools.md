@@ -17,14 +17,14 @@ You can find tools button on top in Design and NLU sections inside Studio.
 
 Tools section is divided into 3 parts -
 
-#### 1. Test your bot
+### 1. Test your bot
 
 Test your bot section helps your test for any 'User utterance' which intent will be triggered with what confidence. (according to your bot training). 
 You can also enable verbose to see more details like sentiment confidence, synonyms detected or not etc.
 
 ![](https://i.imgur.com/1Sb3ay3.gif)
 
-#### 2. Conversation Settings
+### 2. Conversation Settings
 These settings more or less control conversation flow, messages display etc. Let's go through them one by one. 
 
 - **Target language** - Target language is default language before auto suggestion or change language journey occurs. 
@@ -35,8 +35,8 @@ These settings more or less control conversation flow, messages display etc. Let
     > :warning: **Note** : Go back keywords inside a journey take user to previous step. If used outside journey (As first step of a journey or after a journey is completed) - Go back goes to Welcome prompt. 
 - **Go back aliases** and **Go home aliases** - These help you configure hot keywords of your choice for triggering Go back or Go home respectively. 
 
-- **Step validation settings**
-    - **Whatsapp indexing settings**
+#### **Step validation settings**
+- **Whatsapp indexing settings**
 When you configure quick replies , they appear on whatsapp as a list 
 Default is like following:-
 
@@ -46,15 +46,15 @@ Default is like following:-
         3. Go back to Main Menu
         
 **To give more customisation over how it can look, we have two settings:**
-    - **Whatsapp Quick reply index** - You can select from three options numbers(default), alphabets or emojis (numerical emojis) to as your index in cases like above.
-    - **Structure Prefix** You can also your overall prefix with bold & italic support. 
-    Default  preset entry in this box is `{{index}}` which looks like example above (when type is numbers).
+* **Whatsapp Quick reply index** - You can select from three options numbers(default), alphabets or emojis (numerical emojis) to as your index in cases like above.
+* **Structure Prefix** You can also your overall prefix with bold & italic support. 
+efault  preset entry in this box is `{{index}}` which looks like example above (when type is numbers).
     Let's see one more example -
     `_Type_ *{{index}}** for` will give you prefix  - 
-    > "*Type* **1** for ", "*Type* **2** for " and so on. 
+> "*Type* **1** for ", "*Type* **2** for " and so on. 
 
 Your quick reply can look like : 
-    > "*Type* **1** for Check order status"
+> *Type* **1** for `Check order status`
 
 
 - **Show prompt again** - Enabling this will show original prompt again after validation failure message (which we learnt in earlier sections)
