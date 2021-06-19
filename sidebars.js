@@ -70,17 +70,15 @@ module.exports = {
       items: [
         "platform_concepts/studio/overview",
         "platform_concepts/studio/journeys",
-        "platform_concepts/studio/steps",
         {
           type: "category",
-          label: "Response Types",
+          label: "Steps",
           collapsed: true,
           items:[
-            "platform_concepts/studio/response-types-message",
-            "platform_concepts/studio/response-types-action-logic",
-            "platform_concepts/studio/validate-input",
-            "platform_concepts/studio/sensitive-info",
-            "platform_concepts/studio/quickreply",
+            "platform_concepts/studio/steps/steps",
+            "platform_concepts/studio/steps/prompts-and-messages",
+            "platform_concepts/studio/steps/action-nodes-and-logic",
+
           ],
         },
         {
@@ -120,6 +118,15 @@ module.exports = {
             "platform_concepts/studio/natural-language-understanding/training",
             "platform_concepts/studio/natural-language-understanding/intents",
             "platform_concepts/studio/natural-language-understanding/entities",
+          ],
+        },
+        {
+          type: "category",
+          label: "Self learning",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/self-learning/learn",
+            "platform_concepts/studio/self-learning/conversation-logs",
           ],
         },
         "platform_concepts/studio/languages-supported",
