@@ -215,6 +215,18 @@ There is also some additional options in prompt settings that you can use.
 ![](https://i.imgur.com/Zylyvin.png)
 
 - You can choose **`entity type/variable`** to autoskip a prompt step if value of that entity or variable is available. (You will learn more about entities and variables later)
-- You can also mask this info from appearing in conversation logs. 
+- You can also mask this info from appearing in conversation logs by using **`Mask sensitive info`** button. 
+
+:::info
+You can also mask sensitive info channel wise :- 
+
+
+1. ![](https://i.imgur.com/oJZhZvT.png)
+
+
+2. ![](https://i.imgur.com/Sruf07q.png)
+
+:::
 
 ---
+
