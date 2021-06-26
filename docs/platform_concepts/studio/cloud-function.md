@@ -1,110 +1,37 @@
 ---
 title: Cloud Function
-sidebar_label : Functions
+sidebar_label : Cloud Functions
 ---
 ### How to create a new function? 
-Cloud Functions compose of all the user defined functions that defines and controls the flow of the bot. The whole structure of writing the code is modularised. Main is the default function which is executed for every message. In the builder section, we can link the cloud functions directly in validators or steps or init functions by selecting the corresponding cloud function created in Developer section.
+You can add a new function to write your custom logic in code in the **`code`** section of the studio. 
+To execute these functions in a flow, you can attach **[function action node](../steps/action-nodes-and-logic#5-functions)**.
 
-![how to add a new function](https://cdn.yellowmessenger.com/GqzX0iZ60ZCO1615523745204.png)
-
-
-### What are stateless functions? 
-Stateless means that the previous state is not remembered by the bot. The following stateless functions can be used to implement logics without using any app objects. 
-
-#### Example stateless functions - > 
-
-The arguments passed in cloud functions: (console, data, prediction, context, ymLib)
-```
-interface data {
-	variables: {[key: string]: value: any}; // botVariables ma
- channel: string; // channel name - eg. yellowmessenger, facebook, whatsapp
- profile: object; // user profile - name, contact, etc.
- sender: string; // user ID
- bot: string; // bot ID
-}
-```
-
-```
-interface ymLib {
- args?: {
-   apiResponse?: any; // passed in transformation functions tagged in API node
- },
- logger: object; // used for logging
-}
-interface context {
- history: object[]; // history of nodes visited by user.
-}
-prediction {
- intents: any; // to get NLU intents predicted from user message
-}
-```
-
-#### Another Example here
-
-```
-return new Promise( resolve => {
- // To get any bot variable value e.g. score
- const value = data.variables['score'];
- // For transfromation function tagged in API Node, To fetch api response
- const response = ymLib.args.apiResponse;
- //
-   // For functions used in Function Action node or Transformation Functions:
-   // Any value returned (or promisified value) - this is actually stored in bot Variable
-   return resolve(345); 
- });        
-```
-#### Another Exmaple here - 
+**Format of cloud functions**
 ```
 return new Promise(resolve => {
-   const variables = data.variables;
-   // Do your logic here
-     const qr = {
-         title: 'Select an option from here',
-         options: [
-             {title: 'Btn1', text: 'btn1'},
-             {title: 'Btn2', text: 'btn2'}
-         ]
-     };
-     // return Quick Reply object to store in bot variable
-     resolve(qr);
- }); 
+      // Your logic goes here
+      resolve();
+  }); 
 ```
-#### Another example
-```
-    const cards = [
-                   {
-                       "title" : "Title1",
-                       "description" : "Description",
-                       "actions" : [
-                           {
-                               "title" : "Button #1",
-                               "buttonDefault" : "text",
-                               "text" : "btn1"
-                           },
-                           {
-                               "title" : "Btn2",
-                               "buttonDefault" : "text",
-                               "text" : "Btn2"
-                           }
-                       ],
-                       "image" : "https://cdn.yellowmessenger.com/P1EbYON6d3GK1623249355856.png",
-                       "video" : "",
-                       "text" : "Desc1"
-                   },
-                   {
-                       "title" : "Title2",
-                       "description" : "Description",
-                       "actions" : [
-                           {
-                               "title" : "Btn2.1",
-                               "buttonDefault" : "text",
-                               "text" : "btn2.1"
-                           }
-                       ],
-                       "image" : "",
-                       "video" : "",
-                       "text" : "Desc2"
-                   }
-               ]
 
-```
+---
+
+### Useful args you can access in code
+
+
+| arg | data type | Use |
+| -------- | -------- | -------- |
+| data.variables.<variable_name>   | Key : String, Value: any |To access any bot variable in code. |
+| data.channel | String | To access channel names like whatsapp, yellowmessenger, facebook etc|
+|data.profile| Object| Contains user profile values like name, number, email, city , country, language |
+| data.sender | String | User ID |
+|data.bot | String| Bot ID|
+|data.message | String | To access Last/latest user message in the conversation|
+|data.event.<event_name>|Object|To access events in code|
+|ymLib.args.apiResponse | any | To access API response in [API transformation function](../steps/action-nodes-and-logic#1-api) |
+| ymLib.args.logger | Object | Can be used to add logs |
+| context.history | Object | Contains history of nodes visited by user|
+| prediction.intents |  | To get Intents predicted from user message |
+| prediction.entities || To get entities predicted from user message |
+
+---

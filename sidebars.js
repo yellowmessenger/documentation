@@ -120,15 +120,8 @@ module.exports = {
             "platform_concepts/studio/natural-language-understanding/entities",
           ],
         },
-        {
-          type: "category",
-          label: "Self learning",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/self-learning/learn",
-            "platform_concepts/studio/self-learning/conversation-logs",
-          ],
-        },
+        
+
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
         "platform_concepts/studio/bot-variables",

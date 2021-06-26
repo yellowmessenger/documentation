@@ -5,72 +5,191 @@ sidebar_label: Action and Logic
 
 
 ## Action
-Action nodes or Action step types are basically used whenever we need to take some action behind the scenes example database insert, API execution or document search etc. 
+Action nodes or Action step types are used whenever we need to take some action behind the scenes example database insert, API execution or document search etc. 
 > To use an action node, simply add it to the flow where you want the action to be done.
 
-### API
-### Analytics
-### Variables
-### Database
-### Functions
-### Document Search
-### Send Email
-### Modifier
-### Raise Ticket
-### Set language
-### Trigger Journey
-### Send OTP
-### Verify OTP
+![](https://i.imgur.com/aBB6iDw.png)
 
-## Logic
-### If condition
+---
+### 1. API
 
--- UPDATE CONTENT FROM HERE --
+API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) from user inputs and then store API response in a variable for further use. 
 
+![](https://i.imgur.com/gh4hTyr.png)
 
-#### Database
-> Assumption: You have a database set up in `database` section.
+In above node, we selected an API (explore_car) to hit, we provided value to parameter using variable. 
+Then we store the whole response we will get from that API in a variable.
+>:information_source: Learn how to directly use this variable, if JSON response in your steps to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
 
+:computer:  **`Optional field`** : **`Transformation function`**
+ Sometimes, an API response can be too big , or not in a proper format for us to be able to parse from easily. (Note that a function is not needed just to access a simple field of a JSON API response). 
+In those cases, we can write a function to parse and transform API response according to our needs and return desirable response. 
 
-#### DB Insert
-Suppose you are taking user input in some step. You want to enter this user input in a database table after it. This is where the `DB Insert` node comes in. 
+**Snippet for Transformation function**
+```
+return new Promise
+  (resolve => {
 
-You can simply,
-- Add the node in flow
-- Select the table you want Database insertion for
-- Select the field (column) and value from value dropdown.
-    - Values dropdown includes input taking steps in the journey, business profile details, or sender/channel info.
+    // For transfromation function tagged in API Node, To fetch api response
+    const response = ymLib.args.apiResponse;
 
-Like in below example, we are taking `book_name` field from `bookName` step and inserting it into books table. 
-![](https://i.imgur.com/stGRNm6.gif)
+    // Your logic here 
 
-> :pushpin: You can select multiple fields in a table for DB insert. But for different tables, you need to have different DB insert nodes. 
+    // Any value returned (or promisified value) - is stored in bot Variable storing API response
+    
+    return resolve(<parsed response>);
+  });         
+       
 
+```
 
-
-#### API 
-API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) and then store API response in a variable for further use. 
-![](https://i.imgur.com/5zvKnCW.jpg)
-
-:::info
-Learn how to directly use this variable in your steps to access different fields in API response [**here**](https://docs.yellowmessenger.com/docs/howtos/basics/variables-in-UI)
-:::
 
 :::warning
 :pushpin: **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node.
 
-[Click here to learn how to add APIs](https://docs.yellowmessenger.com/docs/howtos/create/api-management)
+[Click here to learn how to add APIs](../api-management/add-api)
 
 
 ![](https://i.imgur.com/ENGKa8e.jpg)
 
 :::
 
+---
+
+### 2. Analytics
+Analytics node can be used to sent analytics events at any point in the execution of journey. You type the event name to push and select value. 
+![](https://i.imgur.com/ZrlJRWi.png)
+
+---
+
+### 3. Variables
+Variables node can be used to set value of one or more variables at any point in the node. ([Learn how to create a variable](../bot-variables))
+> :information_source: If you leave value blank, it will set to empty string
+
+![](https://i.imgur.com/f0mF278.png)
+
+---
+
+### 4. Database
+Database action node helps you in perform simple insert and search operations on your [database tables](../../data/create-tables). 
+
+*  **Insert**
+You select insert operation to insert details against each column into any database table you select. 
+![](https://i.imgur.com/Bs3DcfA.png)
+
+*  **Bulk Insert**
+You can also do bulk insert in database instead of just one row at a time. All you need on this node is to select a variable containing data you want to insert. 
+[To be updated]
+
+![](https://i.imgur.com/8rnAtQ9.png)
+
+*  **Search**
+You can also perform search operation in database node. 
+
+![](https://i.imgur.com/9yCz0DD.png)
+
+
+1. For searching, you can **select a table** you want to perform search on. 
+2. **Add filter**: You can also add filters to your search (optional). 
+
+Following filter conditons are available,
+let's understand with examples of what all will match with '**`Model car`**' string - 
+
+**a**. **Is/Is not** : for exactly matching/exactly not matching with value given. 
+Eg: 'Model car' will be matched 
+
+**b**. **contains/does not contain** : will be matched/omitted if it contains the given value
+Eg: 'Model car', 'this is a Model car', 'Model car 101' all will be matched/omitted
+
+**c**. **contains any/does not contain any**: this is like above, but here each word will be matched/omitted as contains instead of whole phrase. 
+Eg: 'Model car', 'Model', 'car', 'this is a Model', 'car 242' etc all will be matched
+
+**d**. **range**: In range you can enter a `from` and `to` value as a filter. 
+Eg: prince `from`:'1000' `to`:5000
+
+3. **Output** : You can sort the output based on a string type column (optional), modify the size of output (maximum no. of records to fetch) and store this result in a variable.
+ 
 
 
 
 
+---
 
+### 5. Functions
+You can use function node to excute code at any point in the flow. 
+In this node you can select the function you wish to execute and variable to store the return value of function in (optional).
+> :information_source: Learn [here](../cloud-function) about different methods/args you can use in functions. 
+
+![](https://i.imgur.com/hCnAPvz.png)
+
+---
+
+
+### 6. Document Search
+Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the [knowledge base](../../knowledge-management/what-is-document-cognition).  (This node shows results from document cognition)
+
+![](https://i.imgur.com/0V43oWI.png)
+
+- You can select a variable containing search query
+- You can also choose too add metadata filters (optional) to your query (the filters you tagged your documents with will show in dropdown). 
+- You can branch flow from here based on whether any results were found in the documents (success) or not (failure).
+- There is no store output here, as the results are directly shown in carousals. 
+- In node settings, you can configure total no. of results shown, total number of results per document and messages shown while showing results/reporting failure. 
+
+![](https://i.imgur.com/cu1uk7M.png)
+
+---
+
+### 7. Send Email
+> To be updated
+
+---
+
+### 8. Modifier
+
+Modifier node is used to perform a series of simple operations like lower case, capitilise, remove from end, replace with etc on input variable and store the 'modified' output. This node can be quick used when you want to say, modify some user input before entering to DB or pass to API node, or fetch from API and show to user etc.
+
+> :information_source:  You can also test your series of modifiers by entering different input strings to check whether you are getting desired output in test window shown below. 
+
+![](https://i.imgur.com/ENukZvc.png)
+
+---
+
+### 9. Raise Ticket
+
+---
+
+### 10. Set language
+You can use Set language action node to set or change the bot language at any given point in the flow. Set language action node takes only one input - variable containing ISO code of language you wish to change to. 
+
+![](https://i.imgur.com/kNWdMP4.png)
+
+> :warning: Language can only be changed to only if that language is configured in bot settings, otherwise the node will fail. 
+
+
+### 11. Trigger Journey
+Trigger Journey action node can be used to trigger another journey at any point in the flow. 
+> :information_source: If you add more steps after trigger journey, the bot will return to the remaining flow in the journey after triggered journey ins completed. 
+
+![](https://i.imgur.com/60xWXCn.png)
+
+---
+
+### 12.Send OTP and verify OTP
+Send OTP and Verify OTP are simple nodes that can be used for sending and verifying OTPs. 
+In verify otp node, you can also branch the flow based on verification success and failure. 
+
+ ![](https://i.imgur.com/PedjC6o.png)
+ 
+![](https://i.imgur.com/aRvqus8.png)
+
+---
+
+## Logic
+### If condition
+Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
+
+![](https://i.imgur.com/sSq1fSG.png)
 
 
 ---
