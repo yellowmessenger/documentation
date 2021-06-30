@@ -12,20 +12,14 @@ const { listPaths } = require("./src/plugins/components");
 let components = listPaths();
 
 module.exports = {
-
-  tutorials: [   
-    "tutorials/basics",
-    "tutorials/doc-cog",
-  ],
+  tutorials: ["tutorials/basics", "tutorials/doc-cog"],
 
   cookbooks: [
     "cookbooks/conversation-design",
     {
       type: "category",
       label: "Basic",
-      items: [
-        "cookbooks/Academy",
-      ],
+      items: ["cookbooks/Academy"],
     },
     {
       type: "category",
@@ -35,7 +29,7 @@ module.exports = {
         "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
         "cookbooks/Understanding channels 101/fbm-chatbot-101",
         "cookbooks/Understanding channels 101/gbm-chatbot-101",
-      ]
+      ],
     },
     {
       type: "category",
@@ -46,7 +40,7 @@ module.exports = {
         "cookbooks/template-bots/customer-support",
         "cookbooks/template-bots/faq",
         "cookbooks/template-bots/lead-generation",
-      ]
+      ],
     },
     {
       type: "category",
@@ -56,12 +50,11 @@ module.exports = {
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
-      ]
-    }
-
+      ],
+    },
   ],
 
-  platform_concepts: [   
+  platform_concepts: [
     "platform_concepts/getting-started",
     {
       type: "category",
@@ -74,18 +67,17 @@ module.exports = {
           type: "category",
           label: "Steps",
           collapsed: true,
-          items:[
+          items: [
             "platform_concepts/studio/steps/steps",
             "platform_concepts/studio/steps/prompts-and-messages",
             "platform_concepts/studio/steps/action-nodes-and-logic",
-
           ],
         },
         {
           type: "category",
           label: "Knowledge Management",
           collapsed: true,
-          items:[
+          items: [
             "platform_concepts/studio/knowledge-management/add-faqs",
             "platform_concepts/studio/knowledge-management/what-is-document-cognition",
             "platform_concepts/studio/knowledge-management/AWS",
@@ -96,7 +88,7 @@ module.exports = {
           type: "category",
           label: "API Management",
           collapsed: true,
-          items:[
+          items: [
             "platform_concepts/studio/api-management/add-api",
             "platform_concepts/studio/api-management/send-data",
             "platform_concepts/studio/api-management/receive-data",
@@ -107,7 +99,7 @@ module.exports = {
           label: "Context Management",
           collapsed: true,
           items: [
-            "platform_concepts/studio/context-management/add-contextual-response"
+            "platform_concepts/studio/context-management/add-contextual-response",
           ],
         },
         {
@@ -120,7 +112,6 @@ module.exports = {
             "platform_concepts/studio/natural-language-understanding/entities",
           ],
         },
-        
 
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
@@ -142,7 +133,7 @@ module.exports = {
       label: "Growth",
       collapsed: true,
       items: [
-        "platform_concepts/growth/growth",    
+        "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
         "platform_concepts/growth/funnels",
@@ -163,9 +154,7 @@ module.exports = {
       type: "category",
       label: "Engagement",
       collapsed: true,
-      items: [
-        "platform_concepts/engagement/engage",
-      ],
+      items: ["platform_concepts/engagement/engage"],
     },
     {
       type: "category",
