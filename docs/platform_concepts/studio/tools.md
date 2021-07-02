@@ -31,11 +31,11 @@ These settings more or less control conversation flow, messages display etc. Let
 - **Translate quick reply responses** - You can enable this if you also want Quick reply buttons to auto-translate. 
 - **Enable Hinglish** - This will allow bot to understand `Hinglish` user utterances. 
 - **Auto Detect Language** - Enabling this, bot can auto-detect the language user typed in and change own language to that in response (if configured). This remains in place till 2 days or until bot language is changed by user selection through `set language` action node. 
-- **Enable Go back/Go Home** - This enables hot keywords for `Go home` -> Triggering welcome prompt *and* `Go back` -> Going to previous step in a journey
-    > :warning: **Note** : Go back keywords inside a journey take user to previous step. If used outside journey (As first step of a journey or after a journey is completed) - Go back goes to Welcome prompt. 
+- **Enable Go back/Go Home** - This enables hot keywords for `Go home` -> Triggering welcome prompt *and* `Go back` -> Going to previous prompt in a journey
+    > :warning: **Note** : Go back keywords inside a journey take user to previous prompt. If used outside journey (As first prompt of a journey or after a journey is completed) - Go back goes to Welcome prompt. 
 - **Go back aliases** and **Go home aliases** - These help you configure hot keywords of your choice for triggering Go back or Go home respectively. 
 
-#### **Step validation settings**
+#### **Prompt validation settings**
 - **Whatsapp indexing settings**
 When you configure quick replies , they appear on whatsapp as a list 
 Default is like following:-
