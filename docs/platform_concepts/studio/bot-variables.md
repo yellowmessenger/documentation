@@ -16,7 +16,7 @@ Additionally, you can also use variables action node for this purpose.
 
 ### How to access a bot variable
 
-You can access a bor variable inside any step using this notation `{{variables.variable_name}}` or clicking on variables icon. 
+You can access a bor variable inside any node using this notation `{{variables.variable_name}}` or clicking on variables icon. 
 So for the variable you just created above, you can access using {{variables.category}}
 
 ### Advanced example - accessing variable fields and index in JSON object, array type stored in a variable
