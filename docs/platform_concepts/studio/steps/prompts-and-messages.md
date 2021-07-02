@@ -55,7 +55,7 @@ Prompts are nodes that take some user input. All prompts have a "**store respons
 :::info
 :question: **What happens when user constantly keeps entering the wrong input?** 
 
-:spiral_note_pad: **Enable Limit for Retries** in [Prompt-validation settings](./tools#prompt-validation-settings)
+:spiral_note_pad: **Enable Limit for Retries** in [Prompt-validation settings](../tools#prompt-validation-settings)
  
 :::
 
@@ -78,7 +78,7 @@ If you click on a quick reply button - you can find a few additional options (ad
 - Link and Postback : You can also have a quick reply redirecting to a particular URL. 
 - Text Color and Background color can also be configured. 
 
-> :information_source: [How Quick replies look on Whatsapp?](./tools#prompt-validation-settings)
+> :information_source: [How Quick replies look on Whatsapp?](../tools#prompt-validation-settings)
 
 #### Dynamic Quick replies
 
