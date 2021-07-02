@@ -2,14 +2,14 @@
 title: Prompts and Messages
 sidebar_label: Prompts and Message
 ---
-In this section we will talk about Interactive steps, viz, 
+In this section we will talk about Interactive nodes, viz, 
 - Messages
 - Prompts
 
 ![](https://i.imgur.com/N5367FZ.png)
 
 
-**Messages** are one-way communication steps. Message steps do not wait for any user input. 
+**Messages** are one-way communication nodes. Message nodes do not wait for any user input. 
 **Prompts** on the other hands are questions bot asks user. Prompts expected a response from users. 
 
 :::info
@@ -33,7 +33,7 @@ For example, an Acknowledgement message.
 Apart from Text, you can also send above three by simply attaching the respective file you need to send. 
 
 ## Prompts
-Prompts are steps that take some user input. All prompts have a "**store response in**" option to store input user gives in a [bot variable.](./tools)
+Prompts are nodes that take some user input. All prompts have a "**store response in**" option to store input user gives in a [bot variable.](./tools)
 
 
 ### Use case based 
@@ -55,7 +55,7 @@ Prompts are steps that take some user input. All prompts have a "**store respons
 :::info
 :question: **What happens when user constantly keeps entering the wrong input?** 
 
-:spiral_note_pad: **Enable Limit for Retries** in [step-validation settings](./tools#step-validation-settings)
+:spiral_note_pad: **Enable Limit for Retries** in [Prompt-validation settings](./tools#prompt-validation-settings)
  
 :::
 
@@ -78,7 +78,7 @@ If you click on a quick reply button - you can find a few additional options (ad
 - Link and Postback : You can also have a quick reply redirecting to a particular URL. 
 - Text Color and Background color can also be configured. 
 
-> :information_source: [How Quick replies look on Whatsapp?](./tools#step-validation-settings)
+> :information_source: [How Quick replies look on Whatsapp?](./tools#prompt-validation-settings)
 
 #### Dynamic Quick replies
 
@@ -214,7 +214,7 @@ There is also some additional options in prompt settings that you can use.
 
 ![](https://i.imgur.com/Zylyvin.png)
 
-- You can choose **`entity type/variable`** to autoskip a prompt step if value of that entity or variable is available. (You will learn more about entities and variables later)
+- You can choose **`entity type/variable`** to autoskip a prompt node if value of that entity or variable is available. (You will learn more about entities and variables later)
 - You can also mask this info from appearing in conversation logs by using **`Mask sensitive info`** button. 
 
 :::info

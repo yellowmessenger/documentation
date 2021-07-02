@@ -1,11 +1,11 @@
 ---
-title: Operational/Logical steps - Action and Logic
+title: Operational/Logical Nodes - Action and Logic
 sidebar_label: Action and Logic
 ---
 
 
 ## Action
-Action nodes or Action step types are used whenever we need to take some action behind the scenes example database insert, API execution or document search etc. 
+Action nodes are used whenever we need to take some action behind the scenes example database insert, API execution or document search etc. 
 > To use an action node, simply add it to the flow where you want the action to be done.
 
 ![](https://i.imgur.com/aBB6iDw.png)
@@ -19,7 +19,7 @@ API action node allows you to hit an API at that point of the flow, assign dynam
 
 In above node, we selected an API (explore_car) to hit, we provided value to parameter using variable. 
 Then we store the whole response we will get from that API in a variable.
->:information_source: Learn how to directly use this variable, if JSON response in your steps to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
+>:information_source: Learn how to directly use this variable, if JSON response in your nodes to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
 
 :computer:  **`Optional field`** : **`Transformation function`**
  Sometimes, an API response can be too big , or not in a proper format for us to be able to parse from easily. (Note that a function is not needed just to access a simple field of a JSON API response). 
@@ -169,7 +169,7 @@ You can use Set language action node to set or change the bot language at any gi
 
 ### 11. Trigger Journey
 Trigger Journey action node can be used to trigger another journey at any point in the flow. 
-> :information_source: If you add more steps after trigger journey, the bot will return to the remaining flow in the journey after triggered journey ins completed. 
+> :information_source: If you add more nodes after trigger journey, the bot will return to the remaining flow in the journey after triggered journey ins completed. 
 
 ![](https://i.imgur.com/60xWXCn.png)
 

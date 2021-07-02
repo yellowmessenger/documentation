@@ -9,9 +9,9 @@ Journeys can be found under `Design section`
 ---
 ## Understanding 'Journeys'
 To understand what journeys are, let's think about how we will start designing conversational flow for example given in previous section. 
-You already have scope of your bot ready, depending on what purpose user has for chatting with your bot, your bot will respond accordingly. Suppose user is here to book/cancel or reschedule flight tickets, *you will take them through all the steps needed to do just that.*
+You already have scope of your bot ready, depending on what purpose user has for chatting with your bot, your bot will respond accordingly. Suppose user is here to book/cancel or reschedule flight tickets, *you will take them through all the steps(Nodes) needed to do just that.*
 
-> **We call these flows, or series of steps `Journeys` on our platform.**
+> **We call these flows, or series of nodes `Journeys` on our platform.**
 
 Rephrasing sentence above, *If user is here to book tickets, you will take them through Journey 'Flight tickets'.*
 Similarly, you can create Journeys for each major same path your user can take. You can also use journeys to modularise and re-use. 
@@ -75,4 +75,4 @@ Apart from start trigger can also set up manually when to trigger another journe
 
 ---
 
-**Hope this section gave you a fair idea of what journeys are, and how they function. Going ahead, a journey usually consists of a series of steps. In next section, we will get a little deeper inside a journey and talk about these building blocks - `Steps`**.
+**Hope this section gave you a fair idea of what journeys are, and how they function. Going ahead, a journey usually consists of a series of nodes. In next section, we will get a little deeper inside a journey and talk about these building blocks - `Nodes`**.
