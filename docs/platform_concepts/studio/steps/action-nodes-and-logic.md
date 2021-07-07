@@ -158,13 +158,14 @@ Modifier node is used to perform a series of simple operations like lower case, 
 ### 9. Raise Ticket
 
 Raise ticket is used in order to connect user to the human agent. Raise Ticket Node can be found in Actions List - 
+
 ![](https://cdn.yellowmessenger.com/06DOgJSptFtI1625671454725.png)
 
 This simple UI node can be used to setup basic & advanced scenarios such as Working Hours, Agent Availibiity, voice/video calling, etc required to create a ticket.
 
 **Raise Ticket Outputs** - 
 **1. Ticket Closed** - This essentially is bot behaviour after the Agent closes a ticket (i.e. s/he has resolved user query).
-**2. Error** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured.
+**2. Error** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured. 
 
 
 ![](https://cdn.yellowmessenger.com/rppNdLtUR4MN1625671670507.png)
@@ -193,28 +194,28 @@ As configured in Inbox Settings, Tags and Custom Fields will be visible in a mul
 
 Output of Raise Ticket Node dictates general behaviour for any error in creating a ticket. In most real life scenarios, it is preferred to show appropriate reason to user as to why they cannot to an agent. 
 
-> **Note** : Once any specific event is active and configured, the corresponding flow will be given preference.
+> **Note** : Once any specific event is active and configured, the corresponding flow will be given preference. Bot is never paused unless ticket is in ASSIGNED state (i.e. Agent is interating with the user).
 
 
 Follow two steps to handle custom scenarios -
-1. In Event Hub, activate the custom inbox event.
-> Scenarios that can be handled - 
-  All Available Agents Busy
-  All Available Agents Away
-  All Available Agents Offline
-  All Available Agents Limit Reached
-  Queue Not Enabled
-  Group Queue Not Enabled
-  Group Queue Limit Reached
-  Offline Ticketing Not Enabled
-  Offline Ticketing Not Enabled for Groups
-  Offline Ticket Queue Limit Reached
+1. In Event Hub, activate the custom inbox event.Scenarios that can be handled - 
+
+  - All Available Agents Busy
+  - All Available Agents Away
+  - All Available Agents Offline
+  - All Available Agents Limit Reached
+  - Queue Not Enabled
+  - Group Queue Not Enabled
+  - Group Queue Limit Reached
+  - Offline Ticketing Not Enabled
+  - Offline Ticketing Not Enabled for Groups
+  - Offline Ticket Queue Limit Reached
 
 2. Build a Flow with relevant event added in the Start Trigger.
 
 **Working Hours**
 
-If bot is suppose to respond with a different message outside of agent working hours, Working Hours in **Logc Node** can be used. 
+If bot is suppose to respond with a different message outside of agent working hours, **Logc Node** can be used. 
 
 ![](https://cdn.yellowmessenger.com/ciDa5Gn2ZzbK1625675537775.png)
 
