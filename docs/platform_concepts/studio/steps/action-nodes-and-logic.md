@@ -141,7 +141,15 @@ Document Search action node is used to answer user query at any point in the flo
 ---
 
 ### 7. Send Email
-> To be updated
+You can use `Send Email` node to Send Emails to user.
+Following fields can be configured:-
+- `From`  is a default email. (Currently custom emails are not supported)
+- `To` can be selected from bot variables. 
+-  `Subject`- You can write plain text and use variables here. 
+- `Body` - You can write plain text, basic HTML markdown, or can also use [bot variables](../bot-variables). 
+
+![](https://i.imgur.com/BlpcD8e.png)
+
 
 ---
 
