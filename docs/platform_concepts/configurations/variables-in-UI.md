@@ -10,7 +10,7 @@ You can create journey variables using below option from UI. Variables are nothi
 
 ### How to access a journey variable
 
-You can access a journey variable inside any step using this notation `{{variables.variable_name}}`
+You can access a journey variable inside any node using this notation `{{variables.variable_name}}`
 So for the variable you just created above, you can access using {{variables.category}}
 
 ### Advanced example - accessing variable fields and index

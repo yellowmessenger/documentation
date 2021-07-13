@@ -19,7 +19,7 @@ It is entirely your choice!
 ---
 ## Step 1: Start conversing
 
-Now that you have given an identity for your bot, you can start teaching it how to talk to people. Configure the 'Welcome Prompt' step to decide how your bot should start a conversation.
+Now that you have given an identity for your bot, you can start teaching it how to talk to people. Configure the 'Welcome Prompt' node to decide how your bot should start a conversation.
 
 
 ![](https://cdn.yellowmessenger.com/WggzQMhsdGrE1622775051655.gif)
@@ -31,9 +31,9 @@ Either your bot understands what the user is saying or it does not. We have prec
 ![](https://cdn.yellowmessenger.com/SCuQkvpM3uED1622776948618.png)
 
 
-## Step 3: Create Journeys and add steps
+## Step 3: Create Journeys and add nodes
 
-Now you can create journeys to trigger the most appropriate conversation based on what the user says. In the journeys, you can tell your bot what to do at every step.
+Now you can create journeys to trigger the most appropriate conversation based on what the user says. In the journeys, you can tell your bot what to do at every node.
 
 
 ![](https://cdn.yellowmessenger.com/HcqmeMMpgUH61622775056612.gif)
@@ -44,7 +44,7 @@ How can your bot understand what the user says? This can be achieved by training
 
 ![](https://cdn.yellowmessenger.com/LJhFPn8514u21622783162564.gif)
 
-## Step 5: It is okay for your bot to not undetstand everything
+## Step 5: It is okay for your bot to not understand everything
 
 None of us like a non responsive bot if it does not understand what we say. Add fallback options, suggestions and even document searching capabilities to your bot to give a response at all times. 
 
