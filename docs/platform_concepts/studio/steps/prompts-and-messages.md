@@ -50,7 +50,8 @@ Name, Email, Phone prompts are used for asking for respective details. They alre
 :::
 
 #### Location Prompt : 
-Location prompt can be used to ask for and validate locations.
+Location prompt can be used to ask for and validate location inputs.
+
 
 > Image to be added
 
@@ -97,9 +98,10 @@ Widget will be sent only if the channel is web/PWA.
 :::
 
 **Validation**
-If the user input contains a date or a time validation will get passed. Else the specified validation fail message will be sent
+If the user input contains a date or a time, it will pass the validator. Else the specified validation fail message will be sent
 
-:::warning Time inputs will also pass validation 
+:::warning 
+Time inputs will also pass validation 
 
 Validation will pass as long as the user query contains a valid date, even if there are other words in it.
 :::
@@ -108,6 +110,7 @@ Validation will pass as long as the user query contains a valid date, even if th
 Post validation, the user entered date will be stored in the specified variable as an object. The structure of the object is as follows:
 
 For a single value
+
     {
         "value": {
             "iso": "2021-09-08T00:00:00.000Z",
@@ -161,6 +164,10 @@ For a range
     }
 
 Values can be accessed using moustache expressions. 
+
+
+
+
 
 ---
 

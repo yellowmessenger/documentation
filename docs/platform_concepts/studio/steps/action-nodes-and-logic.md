@@ -255,6 +255,18 @@ In verify otp node, you can also branch the flow based on verification success a
  
 ![](https://i.imgur.com/aRvqus8.png)
 
+### 12.Generate PDF
+This node is used to generate PDFs that contain dynamic data.
+
+![](https://cdn.yellowmessenger.com/4yIdNmUwh3Q51626268800011.png)
+
+Steps to generate dynamic documents:
+1. **Upload a template document**. This document should be in .docx format and have placeholder values wherever the dynamic data is to be inserted. The placeholder should be enclosed in single brackets, ie. `{placeholdername}`.
+eg: The company name is {company name}
+2. **Map placeholder names to variables**. Enter the placeholder name without the brackets in the left column and select variable value in the right column. 
+3. **Save to a variable**
+
+This can now be sent through the **Send file** node. Simply choose the relevant variable from the *fetch from variable* dropdown, this will send the dynamically generated file as a PDF to the user.
 ---
 
 ## Logic
