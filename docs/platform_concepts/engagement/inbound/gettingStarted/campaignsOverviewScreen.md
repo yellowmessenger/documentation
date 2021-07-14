@@ -55,4 +55,4 @@ Click on the “priority number” of any campaign and change it to a new priori
 
 ## Up Next
 
-Types of Inbound Widgets!
+[**Types of Inbound Widgets!**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets)

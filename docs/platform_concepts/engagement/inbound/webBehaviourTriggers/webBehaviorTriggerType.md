@@ -35,3 +35,7 @@ When to use "**AND**” or "**OR**”:
 By default, every “condition” within a “condition set” will have an **AND** between them. Every “condition set” will have an **OR** between them. When all conditions in any of the condition sets are met, the campaign will get triggered.
 
 ![](https://cdn.yellowmessenger.com/xRDoOqdVPvPI1626110808224.gif)
+
+## Up next
+
+We will talk about [Web Behavior triggers to identify in e-commerce.](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorsInEcomm)

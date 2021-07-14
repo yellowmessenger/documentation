@@ -5,17 +5,17 @@ sidebar_label: Launching Your First Inbound Campaign
 
 ## In this guide
 
-1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the [**Types of Inbound Widgets**](/../../inboundWidgets/typesOfWidgets)
+1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the [**Types of Inbound Widgets**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets)
 2. As you use the campaign builder, you’ll notice a **question mark icon** next to many features. Hovering above that question mark will show you more information around that feature.
 3. To be able to create and test the campaign, you’ll need the following
    - Create a Journey **“Homepage Help”** with text → ”Hey, how can I help you”
-   - Embed the widget in your website by referring 'How to Embed the Widgets on Your Website' doc.
+   - Embed the widget in your website by referring [**How to Embed the Widgets on Your Website**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnWebsite)
 
 To create a new Campaign, follow the steps below:
 
 ## Basic Information
 
-1. Tapping on the **Engagement** section in the left panel takes you to the **Campaign Overview Screen**
+1. Tapping on the **Engagement** section in the left panel takes you to the [**Campaign Overview Screen**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen)
 2. Select the **INBOUND** tab and then click on **+ Create Campaign**
 
 ![](https://cdn.yellowmessenger.com/WvXywYFcMQMp1626107670054.gif)
@@ -27,7 +27,7 @@ To create a new Campaign, follow the steps below:
 
 ## Widget Type
 
-5. On the next screen, select **Slide in** widget. You can check out the **Types of Inbound Widgets** doc to know more
+5. On the next screen, select **Slide in** widget. You can check out the [**Types of Inbound Widgets**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets)
 6. At any point in the campaign builder, you can choose to click on any of the following buttons:
    - **Previous** → Takes you back to the previous step in the campaign builder
    - **Cancel** → Exits the campaign builder without saving the campaign
@@ -41,7 +41,7 @@ To create a new Campaign, follow the steps below:
 
 7.  This step in campaign creation consists of 2 sub-steps, namely **DESIGN** and **DEFINE**
 8.  In the Design step, use various options to design the theme of your widget
-9.  In the Define step, choose what the button does. Select the Button Type as **Journey Trigger.** Clicking this button will trigger a journey in the Web Bot. (You can read more about other **Types of Widget Buttons**)
+9.  In the Define step, choose what the button does. Select the Button Type as **Journey Trigger.** Clicking this button will trigger a journey in the Web Bot. You can read more about other [**Types of Widget Buttons**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetButtons)
 10. Then select the **Journey to Trigger** (**NOTE:** For this, you’ll need existing Journeys to select from. You can use **Studio** to create them)
 11. Click Next to move the the next step
 
@@ -61,7 +61,7 @@ To create a new Campaign, follow the steps below:
     - **Seconds on page →** used to specify the time spent on the same page, in seconds
     - **Seconds of inactivity →** used to specify for how long the visitor has been inactive
 
-    You can check out all **Types of Web Behaviour Triggers**.
+    You can check out all [**Types of Web Behaviour Triggers**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType).
 
 13. Refer to the image below to **Create Segment** and then create 3 **Condition Sets**. A campaign is triggered if **ALL** _Conditions_ within **ANY** of the *Condition Set*s are met.
 
@@ -75,4 +75,4 @@ To create a new Campaign, follow the steps below:
 
 # Up Next
 
-**Managing your Campaigns using the Overview Screen.**
+We will learn how to [**Manage your Campaigns using the Overview Screen**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen)
