@@ -117,6 +117,7 @@ module.exports = {
         "platform_concepts/studio/tools",
         "platform_concepts/studio/bot-variables",
         "platform_concepts/studio/cloud-function",
+        "platform_concepts/studio/modes"
       ],
     },
     {
