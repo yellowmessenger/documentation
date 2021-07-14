@@ -56,6 +56,7 @@ Location prompt can be used to ask for and validate locations.
 
 #### Feedback Prompt: 
 
+
 Feedback Prompt can be used to take user feedback. Like any other prompt you can attach it any journey in the flow. You can ask for bot feedback, to Question feedback etc. 
 
 ![](https://i.imgur.com/pv2tlzm.png)
@@ -64,7 +65,8 @@ On feedback prompt you can configure what your questions should be when you ask 
 
 ![](https://i.imgur.com/Zu99Ssq.png)
 
-
+:::warning  **Feedback widget is only available on chat-widget 2.0** :warning:
+:::
 
 :::warning
  :information_source: All of the feedback data can be found in Growth section > Data Explorer. 
