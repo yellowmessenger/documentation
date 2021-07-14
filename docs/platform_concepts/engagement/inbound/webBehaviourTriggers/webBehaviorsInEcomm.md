@@ -1,6 +1,6 @@
 ---
 title: Web Behavior Triggers to identify in E-commerce
-sidebar_label: Web Triggers in E-comm
+sidebar_label: Web Behavior Triggers to identify in E-commerce
 ---
 
 ## Coming soon!

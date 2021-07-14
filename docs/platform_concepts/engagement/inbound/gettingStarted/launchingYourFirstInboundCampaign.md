@@ -1,11 +1,11 @@
 ---
 title: Launching Your First Inbound Campaign
-sidebar_label: First Inbound Campaign
+sidebar_label: Launching Your First Inbound Campaign
 ---
 
 ## In this guide
 
-1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the 'Types of Inbound Widgets' doc.
+1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the [**Types of Inbound Widgets**](/../../inboundWidgets/typesOfWidgets)
 2. As you use the campaign builder, you’ll notice a **question mark icon** next to many features. Hovering above that question mark will show you more information around that feature.
 3. To be able to create and test the campaign, you’ll need the following
    - Create a Journey **“Homepage Help”** with text → ”Hey, how can I help you”
@@ -63,7 +63,7 @@ To create a new Campaign, follow the steps below:
 
     You can check out all **Types of Web Behaviour Triggers**.
 
-13. Refer to the image below to **Create Segment** and then create 3 C**ondition Sets**. A campaign is triggered if **ALL** _Conditions_ within **ANY** of the *Condition Set*s are met.
+13. Refer to the image below to **Create Segment** and then create 3 **Condition Sets**. A campaign is triggered if **ALL** _Conditions_ within **ANY** of the *Condition Set*s are met.
 
 **NOTE:** for URL, you can put the URL of any page of the website where your widget is embedded.
 

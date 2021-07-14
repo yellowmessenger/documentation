@@ -1,6 +1,6 @@
 ---
 title: Types of Widget Buttons
-sidebar_label: Widget buttons types
+sidebar_label: Types of Widget Buttons
 ---
 
 ## Coming soon!

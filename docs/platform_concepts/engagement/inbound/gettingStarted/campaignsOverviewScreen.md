@@ -1,6 +1,6 @@
 ---
 title: Managing your Campaigns using the Overview Screen
-sidebar_label: Campaigns management overview screen
+sidebar_label: Managing your Campaigns using the Overview Screen
 ---
 
 ## In this guide

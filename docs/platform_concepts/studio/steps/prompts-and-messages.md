@@ -36,28 +36,54 @@ Apart from Text, you can also send above three by simply attaching the respectiv
 Prompts are nodes that take some user input. All prompts have a "**store response in**" option to store input user gives in a [bot variable.](./tools)
 
 
-### Use case based 
-- **`Name`**, **`Email`** , **`Phone`** : Name, Email, Phone prompts are used for asking for respective details. They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
+### Use case specific
+#### Name, Email , Phone : 
+Name, Email, Phone prompts are used for asking for respective details. They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
 
-    ![](https://i.imgur.com/oQ1IV5r.png)
+![](https://i.imgur.com/oQ1IV5r.png)
 
-
-
-- **`Location Prompt`** : Location prompt can be used to ask for and validate locations.
-
-> Image to be added
-
-- **`Feedback Prompt`**: 
-
-> To be added
-
----
 :::info
 :question: **What happens when user constantly keeps entering the wrong input?** 
 
 :spiral_note_pad: **Enable Limit for Retries** in [Prompt-validation settings](../tools#prompt-validation-settings)
  
 :::
+
+#### Location Prompt : 
+Location prompt can be used to ask for and validate locations.
+
+> Image to be added
+
+#### Feedback Prompt: 
+
+
+Feedback Prompt can be used to take user feedback. Like any other prompt you can attach it any journey in the flow. You can ask for bot feedback, to Question feedback etc. 
+
+![](https://i.imgur.com/pv2tlzm.png)
+
+On feedback prompt you can configure what your questions should be when you ask for feedback. Feedback prompt will ask for rating on a scale of 5, and additional comments prompt will take additional comments from user in a text field (not compulsory)
+
+![](https://i.imgur.com/Zu99Ssq.png)
+
+:::warning  **Feedback widget is only available on chat-widget 2.0** :warning:
+:::
+
+:::warning
+ :information_source: All of the feedback data can be found in Growth section > Data Explorer. 
+ 
+:warning: **You do not need to store it seperately.**
+
+
+Still, You can access this data if needed by using `{{variables.var_name.rating}}` and `{{variables.var_name.comment}}`
+
+:::
+
+
+
+
+
+---
+
 
 ### General - Question
 Apart from these use case based questions, you can directly ask any custom question using **`Question`** prompt and store response in variable if needed ahead.

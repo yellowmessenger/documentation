@@ -141,7 +141,15 @@ Document Search action node is used to answer user query at any point in the flo
 ---
 
 ### 7. Send Email
-> To be updated
+You can use `Send Email` node to Send Emails to user.
+Following fields can be configured:-
+- `From`  is a default email. (Currently custom emails are not supported)
+- `To` can be selected from bot variables. 
+-  `Subject`- You can write plain text and use variables here. 
+- `Body` - You can write plain text, basic HTML markdown, or can also use [bot variables](../bot-variables). 
+
+![](https://i.imgur.com/BlpcD8e.png)
+
 
 ---
 
@@ -156,6 +164,70 @@ Modifier node is used to perform a series of simple operations like lower case, 
 ---
 
 ### 9. Raise Ticket
+
+Raise ticket is used in order to connect user to the human agent. Raise Ticket Node can be found in Actions List - 
+
+![](https://cdn.yellowmessenger.com/06DOgJSptFtI1625671454725.png)
+
+This simple UI node can be used to setup basic & advanced scenarios such as Working Hours, Agent Availibiity, voice/video calling, etc required to create a ticket.
+
+**Raise Ticket Outputs** - 
+**1. Ticket Closed** - This essentially is bot behaviour after the Agent closes a ticket (i.e. s/he has resolved user query).
+**2. Error** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured. 
+
+
+![](https://cdn.yellowmessenger.com/rppNdLtUR4MN1625671670507.png)
+
+While raising a ticket, you can pass certain optional fields such as **Name** , **Contact** (Email/Phone Number), and **Query**. Message after Ticket Assignment will be seen by user on getting connected to the agent.
+
+**Advanced Options** - to provide additional information to the ticket.
+
+![](https://cdn.yellowmessenger.com/4RHn4Fh3AzoS1625672881317.png)
+
+As configured in Inbox Settings, Tags and Custom Fields will be visible in a multi-select dropdown(i.e. more than one options can be added to ticket)
+
+- **Tags** - Selected Tags from dropdown will be added to the extra details of the ticket (useful for agents to get a quick overview of the issue).
+
+- **Department** - Similar tickets can be assigned to relevant departments.
+
+- **Priority** - Denotes the priority of ticket from high, medium or low. (default priority is MEDIUM)
+
+- **Voice Call Options** - Voice Call, SIP Call and Auto Start Call can be enabled.
+
+- **Custom Fields** - Based on the use case additonal information collected by bot can be added to ticket. for example, in ecommerce Order ID, Payment Mode, Delivery date etc can be asked before connecting to the agent. Just like key value pairs, once a custom field is selected, additional prompt will be seen.
+
+![](https://cdn.yellowmessenger.com/iE4ppldmrE7k1625673583277.png)
+
+**Error Handling**
+
+Output of Raise Ticket Node dictates general behaviour for any error in creating a ticket. In most real life scenarios, it is preferred to show appropriate reason to user as to why they cannot to an agent. 
+
+> **Note** : Once any specific event is active and configured, the corresponding flow will be given preference. Bot is never paused unless ticket is in ASSIGNED state (i.e. Agent is interating with the user).
+
+
+Follow two steps to handle custom scenarios -
+1. In Event Hub, activate the custom inbox event.Scenarios that can be handled - 
+
+  - All Available Agents Busy
+  - All Available Agents Away
+  - All Available Agents Offline
+  - All Available Agents Limit Reached
+  - Queue Not Enabled
+  - Group Queue Not Enabled
+  - Group Queue Limit Reached
+  - Offline Ticketing Not Enabled
+  - Offline Ticketing Not Enabled for Groups
+  - Offline Ticket Queue Limit Reached
+
+2. Build a Flow with relevant event added in the Start Trigger.
+
+**Working Hours**
+
+If bot is suppose to respond with a different message outside of agent working hours, **Logc Node** can be used. 
+
+![](https://cdn.yellowmessenger.com/ciDa5Gn2ZzbK1625675537775.png)
+
+> Note : The bot default timezone considered while evalutaing whether a user is outside working hours.
 
 ---
 
