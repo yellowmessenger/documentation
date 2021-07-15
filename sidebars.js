@@ -163,7 +163,50 @@ module.exports = {
           collapsed: true,
           items: ["platform_concepts/engagement/outbound/whatsappCampaign"],
         },
-
+        {
+          type: "category",
+          label: "Inbound Engagement",
+          collapsed: true,
+          items: [
+            {
+              type: "category",
+              label: "Getting Started",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign",
+                "platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen",
+              ],
+            },
+            {
+              type: "category",
+              label: "Inbound Widgets",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets",
+                "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnWebsite",
+                "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnShopify",
+                "platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetButtons",
+              ],
+            },
+            {
+              type: "category",
+              label: "Web Behaviour Triggers (When)",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType",
+                "platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorsInEcomm",
+              ],
+            },
+            {
+              type: "category",
+              label: "Audience Targeting (Who)",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/inbound/audienceTargetting/audienceTargetingRules",
+              ],
+            },
+          ],
+        },
         //"platform_concepts/engagement/whatsappCampaign",
       ],
     },
