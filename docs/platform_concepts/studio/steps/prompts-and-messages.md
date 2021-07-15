@@ -50,7 +50,8 @@ Name, Email, Phone prompts are used for asking for respective details. They alre
 :::
 
 #### Location Prompt : 
-Location prompt can be used to ask for and validate locations.
+Location prompt can be used to ask for and validate location inputs.
+
 
 > Image to be added
 
@@ -77,6 +78,96 @@ On feedback prompt you can configure what your questions should be when you ask 
 Still, You can access this data if needed by using `{{variables.var_name.rating}}` and `{{variables.var_name.comment}}`
 
 :::
+
+
+#### Date prompt
+
+You can use the date prompt to ask for and validate date inputs. 
+
+![](https://cdn.yellowmessenger.com/EnNVBl4TeM1m1626264357943.png)
+
+
+
+**Widgets**
+You can send a calendar widget along with your prompt message. There are 3 widget types you can choose from - single date picker, date range picker, and month picker.
+
+Widgets are optional. Chat will not be disabled when a widget is sent, users can choose to type in their response. If you want to disable chat for this step please do so in channel options.
+
+:::info
+Widget will be sent only if the channel is web/PWA.
+:::
+
+**Validation**
+If the user input contains a date or a time, it will pass the validator. Else the specified validation fail message will be sent
+
+:::warning 
+Time inputs will also pass validation 
+
+Validation will pass as long as the user query contains a valid date, even if there are other words in it.
+:::
+
+**Storing date variables**
+Post validation, the user entered date will be stored in the specified variable as an object. The structure of the object is as follows:
+
+For a single value
+
+    {
+        "value": {
+            "timestamp": "2021-09-08T00:00:00.000Z",
+            "year": 2021,
+            "month": 8,
+            "date": 8,
+            "day": "Sunday",
+            "hour": 0,
+            "minute": 0
+        },
+        "range": {
+            "exists": false
+        }
+    }
+
+For a range
+
+    {
+        "value": {
+                    "timestamp": "2021-09-08T00:00:00.000Z",
+                    "year": 2021,
+                    "month": 8,
+                    "date": 8,
+                    "day": "Sunday",
+                    "hour": 0,
+                    "minute": 0
+                },
+        "range": {
+            "exists": true,
+            start:
+                {
+                    "timestamp": "2021-09-08T00:00:00.000Z",
+                    "year": 2021,
+                    "month": 8,
+                    "date": 8,
+                    "day": "Sunday",
+                    "hour": 0,
+                    "minute": 0
+                },
+            end:
+                {
+                    "timestamp": "2021-09-08T00:00:00.000Z",
+                    "year": 2021,
+                    "month": 8,
+                    "date": 9,
+                    "day": "Monday",
+                    "hour": 0,
+                    "minute": 0
+                }
+        }
+    }
+
+:::info
+In the case of range, value key will be the same as start date
+:::
+
+Values can be accessed using moustache expressions. 
 
 
 
