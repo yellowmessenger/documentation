@@ -276,7 +276,7 @@ eg: The company name is {company name}
 ![](https://i.imgur.com/sSq1fSG.png)
 
 ### 14. Whatsapp Reply Buttons
-Latest version of Whatsapp API allows for businesses to send reply buttons alongwith media(within 24 hours window). To use Whatsapp Reply Buttons in Whatsapp, follow the steps mentioned below -
+Latest version of Whatsapp API allows for businesses to send reply buttons alongwith media(within 24 hours window). To use Whatsapp Reply Buttons, follow the steps mentioned below -
 
 1. In any node, drag the arrow and select Carousells under Prompt/Message Type.
 
@@ -286,7 +286,7 @@ Latest version of Whatsapp API allows for businesses to send reply buttons along
 
 ![](https://cdn.yellowmessenger.com/uurhPH2Y6xze1626345610351.png)
 
-3. Edit Body Message, Footer, add relevant files (image/video/pdf) and edit response buttons as shown below. 
+3. Edit Body Message, Footer, add relevant files (image/video/pdf) and response buttons as shown below. 
 
 > Each button name & text message should be unique.
 
