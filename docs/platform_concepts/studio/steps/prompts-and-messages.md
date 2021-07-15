@@ -91,7 +91,7 @@ You can use the date prompt to ask for and validate date inputs.
 **Widgets**
 You can send a calendar widget along with your prompt message. There are 3 widget types you can choose from - single date picker, date range picker, and month picker.
 
-Widgets are optional. Chat will not be disabled when a widget is sent, users can choose to type in their response. If you want to disable chat for this step please do so 
+Widgets are optional. Chat will not be disabled when a widget is sent, users can choose to type in their response. If you want to disable chat for this step please do so in channel options.
 
 :::info
 Widget will be sent only if the channel is web/PWA.
@@ -113,7 +113,7 @@ For a single value
 
     {
         "value": {
-            "iso": "2021-09-08T00:00:00.000Z",
+            "timestamp": "2021-09-08T00:00:00.000Z",
             "year": 2021,
             "month": 8,
             "date": 8,
@@ -130,7 +130,7 @@ For a range
 
     {
         "value": {
-                    "iso": "2021-09-08T00:00:00.000Z",
+                    "timestamp": "2021-09-08T00:00:00.000Z",
                     "year": 2021,
                     "month": 8,
                     "date": 8,
@@ -142,7 +142,7 @@ For a range
             "exists": true,
             start:
                 {
-                    "iso": "2021-09-08T00:00:00.000Z",
+                    "timestamp": "2021-09-08T00:00:00.000Z",
                     "year": 2021,
                     "month": 8,
                     "date": 8,
@@ -152,7 +152,7 @@ For a range
                 },
             end:
                 {
-                    "iso": "2021-09-08T00:00:00.000Z",
+                    "timestamp": "2021-09-08T00:00:00.000Z",
                     "year": 2021,
                     "month": 8,
                     "date": 9,
@@ -162,6 +162,10 @@ For a range
                 }
         }
     }
+
+:::info
+In the case of range, value key will be the same as start date
+:::
 
 Values can be accessed using moustache expressions. 
 
