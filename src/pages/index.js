@@ -82,32 +82,25 @@ function Home() {
 
   const topics = [
     {
-      title: "Documentation",
+      title: "Get started with Concepts",
       description:
         "Learn the platform basics, review channel intergration and security compilance documents.",
       icon: "ri-booklet-line",
-      url: "/docs/documentation/concepts/overview",
+      url: "/docs/platform_concepts/getting-started",
     },
     {
-      title: "Developer",
-      description:
-        "Customize the bot further with functions, api integrations and event references.",
-      icon: "ri-code-s-slash-line",
-      url: "/docs/developer/overview",
-    },
-    {
-      title: "How to’s",
-      description:
-        "complete step-by-step guide to build a bot, from idea to execution.",
-      icon: "ri-question-line",
-      url: "/docs/howtos/basics/create-a-bot",
-    },
-    {
-      title: "Cookbooks",
+      title: "Template Bots",
       description:
         "Zero to one of building bots for simple usecases at lightening speed.",
       icon: "ri-lightbulb-flash-line",
-      url: "/docs/cookbooks/Academy",
+      url: "/docs/cookbooks/template-bots/model-bot",
+    },
+    {
+      title: "Video Tutorials",
+      description:
+        "Video based tutorials for one shot learning of major sections of the platform",
+      icon: "ri-question-line",
+      url: "/docs/tutorials/basics",
     },
   ];
   return (
@@ -138,7 +131,7 @@ function Home() {
           </div> */}
         <Header
           title="Hi, how can we help you?"
-          description=" Refer documentation to build and deploy bots on channels where your
+          description=" Refer Platform Concepts to build and deploy bots on channels where your
           customers are!"
           placeholder="Search by keyword ( Eg. How to build a bot, Journeys, steps)"
         />
@@ -165,24 +158,24 @@ function Home() {
                 description="We gathered some handy resources so that you can get quickly started."
                 list={[
                   {
-                    value: "How to build your first bot ?",
-                    to: "/docs/howtos/basics/create-a-bot",
+                    value: "How to build your lead gen bot ?",
+                    to: "/docs/cookbooks/template-bots/lead-generation",
                   },
                   {
                     value: "Create a database table ?",
-                    to: "/docs/howtos/create/database-management",
+                    to: "/docs/platform_concepts/data/create-tables",
                   },
                   {
-                    value: "How to setup a web widget ?",
-                    to: "/docs/howtos/design/setup-web-widget",
+                    value: "How to setup a WhatsApp Bot ?",
+                    to: "/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot",
                   },
                   {
-                    value: "How to create new function ?",
-                    to: "/docs/howtos/create/cloud-function/",
+                    value: "How to add FAQs ?",
+                    to: "/docs/platform_concepts/studio/knowledge-management/add-faqs",
                   },
                   {
                     value: "How to share bot access ?",
-                    to: "/docs/howtos/basics/signup-post-bot-invite",
+                    to: "/docs/platform_concepts/configurations/signup-post-bot-invite",
                   },
                 ]}
               />

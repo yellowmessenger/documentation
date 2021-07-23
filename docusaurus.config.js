@@ -53,9 +53,9 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/documentation/concepts/overview",
-          activeBasePath: "docs/documentation",
-          label: "Documentation",
+          to: "docs/platform_concepts/getting-started",
+          activeBasePath: "docs/platform_concepts",
+          label: "Platform Concepts",
           position: "left",
         },
 //         {
@@ -66,18 +66,16 @@ module.exports = {
 //           activeBasePath: "docs/developer",
 //         },
         {
-          to: "/docs/cookbooks/Academy",
+          to: "/docs/cookbooks/template-bots/model-bot",
           label: "Cookbooks",
           position: "left",
           activeBasePath: "/docs/cookbooks",
         },
         {
-          // to: "howtos",
-          to: "docs/howtos/basics/create-a-bot",
-          // to: "docs/developer/overview",
-          label: "How to's",
+          to: "docs/tutorials/basics",
+          label: "Two-torials",
           position: "left",
-          activeBasePath: "docs/howtos",
+          activeBasePath: "docs/tutorials",
         },
         {
           to: "https://community.yellowmessenger.com",
