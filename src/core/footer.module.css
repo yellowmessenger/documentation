@@ -12,6 +12,9 @@
 .container .logo_container {
   margin-right: 30px;
 }
+.container .logo_container {
+fill: red;
+}
 .container .logo_container .description {
   font-size: 0.875rem;
 }

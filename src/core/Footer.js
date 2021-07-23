@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "@docusaurus/Link";
-import logo from "../../static/img/yellowMessenger.svg";
 import styles from "./footer.module.css";
 
 const Footer = () => {
@@ -56,10 +55,10 @@ const Footer = () => {
     <footer className={styles.custom_footer}>
       <div className={styles.container}>
         <div className={styles.logo_container}>
-          <img src={logo} alt="yellow messenger logo" />
+          <a href="https://cloud.yellowmessenger.com/" target="_blank"><img src="img/yellowAi_white.svg" alt="logo" /></a>
           <p className={styles.description}>
-            “Globalization is simply opening the free marketplace to encompass
-            the entire world.”
+            “The World’s Leading
+            CX Automation Platform.”
           </p>
         </div>
         <div className={styles.list_container}>
@@ -111,7 +110,7 @@ const Footer = () => {
           <span>Sitemaps</span>
           <span>FAQs</span>
           <span>
-            @2020 Yellow Messenger, a trading division of Biotonic Labs Ltd. All
+            @2020 Yellow.ai, a trading division of Biotonic Labs Ltd. All
             rights reserved worldwide.
           </span>
         </div>
