@@ -37,7 +37,7 @@ do {
 YMConfig can be used to set the bot id and other bot related settings. It is recommended to set all appropriate config **before** starting the bot
 
 #### Initialize
-YMConfig requires botID to initialize. All other settings are optional and they can be changed after initialisation
+YMConfig requires botID to initialize. All other settings are optional and they can be changed after initialisation of YMConfig
 ```swift
 let config = YMConfig(botId: "x1234567890")
 ```
@@ -57,7 +57,7 @@ If you are adding Speech recognization, add following snippet to Info.plist of t
 ```
 
 #### Payload
-Information can be passed from app to bot using payload.
+Additional information can be passed from app to bot using payload.
 
 
 ```swift
@@ -70,9 +70,10 @@ The payload dictionary should be JSON compatible else an error will be thrown
 :::
 
 #### History
-Chat history can be enabled by setting the `enableHistory` flag present in YMConfig. Default value is `false`
+Chat history can be enabled by setting the `enableHistory` flag present in YMConfig and setting `UserId` in the payload. Default value is `false`
 ```swift
 config.enableHistory = true
+config.payload = ["UserId": "unique-user-id"]
 ```
 
 ### Start chatbot
