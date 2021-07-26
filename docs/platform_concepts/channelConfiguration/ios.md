@@ -10,32 +10,40 @@ To integrate YMChatbot into your Xcode project using CocoaPods, specify it in yo
 ```ruby
 pod 'YMChat'
 ```
-  
+
+:::info Supported iOS versions:
+iOS 12, 13 and 14
+:::
+
 ## Usage
-### Basic
+#### Basic
 Import the YMChat framework in Swift file
 ```swift
 import YMChat
 ```
 
-After the framework is imported the basic bot can be presented with few lines as below 
+After the framework is imported the bot can be presented with few lines as below 
 ```swift
-let config = YMConfig(botId: "x1234567890")
-YMChat.shared.config = config
-YMChat.shared.presentView(on: self)
+do {
+    let config = YMConfig(botId: "x1234567890")
+    YMChat.shared.config = config
+    try YMChat.shared.startChatbot(on: self)
+} catch {
+    print("Error occured while loading chatbot \(error)")
+}
 ```
 
-### YMConfig
-YMConfig configures chatbot before it presented on the screen. It is recommended to set appropriate config before presenting the bot
+## YMConfig
+YMConfig can be used to set the bot id and other bot related settings. It is recommended to set all appropriate config **before** starting the bot
 
 #### Initialize
-YMConfig requires botID to initialize. All other settings can be changed after config has been initialised
+YMConfig requires botID to initialize. All other settings are optional and they can be changed after initialisation of YMConfig
 ```swift
 let config = YMConfig(botId: "x1234567890")
 ```
 
 #### Speech to Text
-Speech to text can be enabled by setting the enableSpeech flag present in config. Default value is `false`
+Speech to text can be enabled by setting the enableSpeech flag. Default value is `false`
 ```swift
 config.enableSpeech = true
 ```
@@ -49,29 +57,54 @@ If you are adding Speech recognization, add following snippet to Info.plist of t
 ```
 
 #### Payload
-Additional payload can be added in the form of key value pair, which is then appended to the bot
+Additional information can be passed in the form of key value pair from app to bot using payload.
+
+
 ```swift
 config.payload = ["name": "ym.bot.name", "device-type": "mobile"]
 ```
+Payload can be used to pass information from host app to bot. For passing data from bot to app refer bot [Bot Events](#bot-events)
+
+:::warning
+The payload dictionary should be JSON compatible else an error will be thrown
+:::
 
 #### History
-Chat history can be enabled by setting the `enableHistory` flag present in YMConfig. Default value is `false`
+Chat history can be enabled by setting the `enableHistory` flag present in YMConfig and setting `UserId` in the payload. Default value is `false`
 ```swift
 config.enableHistory = true
+config.payload = ["UserId": "unique-user-id"]
 ```
 
-### Present chatbot
-Chat bot can be presented by calling `startChatbot()` and passing your view controller as an argument
+### Start chatbot
+Chat bot can be presented by calling `startChatbot()` method and passing your view controller as an argument
 ```swift
-YMChat.shared.startChatbot(on: self) // self is the current view controller
-YMChat.shared.startChatbot()
+do {
+    try YMChat.shared.startChatbot(on: self)
+} catch {
+    print("Error occured while loading chatbot \(error)")
+}
 ```
 
-Chat view can also be presented without parameter
+### Bot Events
+Bot events are used to pass information from bot to app. For passing events from app to bot refer [Payload](#payload)
+
+Events from bot can be handled using delegate pattern.
+
 ```swift
-YMChat.shared.startChatbot()
+YMChat.shared.delegate = self
 ```
-Note: When presentView is invoked with no parameter then the view controller is fetched using `UIApplication.shared.windows.last?.rootViewController`
+
+Once the delegate is assigned define the `eventResponse(_:)` function. The handler class should conform to `YMChatDelegate`
+
+```swift
+func onEventFromBot(_ response: YMBotEventResponse) {
+    print("Event received \(response)")
+    if response.code == "code-from-bot" {
+        print("Even from a bot has been received", response.data)
+    }
+}
+```
 
 ### Close bot
 Bot can be programatically closed using `closeBot()` function
@@ -79,26 +112,48 @@ Bot can be programatically closed using `closeBot()` function
 YMChat.shared.closeBot()
 ```
 
-### Event from bot
-Events from bot can be handled using delegate pattern.
+### Bot close event
 
+Bot close event is separetly sent and it can be handled in following way. The handler class should conform to `YMChatDelegate`
 ```swift
-YMChat.shared.delegate = self
-```
-
-Once the delegate is assigned define the `eventResponse(_:)` function
-
-```swift
-func eventResponse(_ response: YMBotEventResponse) {
-    print("Event received \(response)")
-    if response.code == "example-code" {
-        // Your logic
-    }
+func onBotClose() {
+    print("Bot closed")
 }
 ```
 
+## Custom Base URL
+For on-prem deployments a different URL can be set to `customBaseUrl`
+
+```swift
+config.customBaseUrl = "https://yourcustomurl.com"
+```
+
+## Push Notifications
+YMChat supports firebase notifications. Push notifications needs `authentication token` and `device token`
+
+#### Authentication Token
+A unique identifier like email or UUID can be assigneed to `ymAuthenticationToken` to uniquely identify a user.
+```swift
+config.ymAuthenticationToken = "your-token"
+```
+
+#### Device Token
+Assign your `FCM token` to device token
+```swift
+config.deviceToken = "your-firebase-device-token"
+```
+:::info
+It is recommended to set authentication token and device token before calling startChatbot()
+:::
+
+Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
+
 ### Logging
-Logging can be enabled to understand the code flow and to fix bugs. It can be enabled from config
+Logging can be enabled to understand the code flow and to fix bugs.
 ```swift
 YMChat.shared.enableLogging = true
 ```
+
+## Demo App
+A demo has been created to better understand the integration of SDK in iOS app
+[https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp](https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp)

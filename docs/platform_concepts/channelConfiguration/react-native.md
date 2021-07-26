@@ -5,15 +5,15 @@ sidebar_label: react-native Chatbot SDK
 
 ## Installation
 ### npm
-```
+```sh
 $ npm install ymchat-react-native --save
 
 $ react-native link ymchat-react-native
 ```
 
 ### yarn
-```
-yarn add ymchat-react-native --save
+```sh
+yarn add ymchat-react-native
 ```
 
 ### Manual installation
@@ -39,12 +39,18 @@ yarn add ymchat-react-native --save
   	```
       compile project(':ymchat-react-native')
   	```
+4. Add following key in your `strings.xml` file, this will override default file provider used by SDK.
+   Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with `.fileprovider`
+   Example - applicationId : `com.abc.xyz` then  application_id_for_provider = `com.abc.xyz.fileprovider`
+   ```xml
+    <string name="application_id_for_provider">your.application.id.fileprovider</string>
+   ```
 
 
 ## Usage
 Import YMChat in App.js
 ```javascript
-import YMChat from 'ymchat-react-native';
+import { YMChat } from 'ymchat-react-native';
 ```
 
 ### Set botId
@@ -56,13 +62,7 @@ YMChat.setBotId("x1234567890");
 ## Present chatbot
 Chat bot can be presented by calling `startChatbot()`. This method will display full screen chat view
 ```javascript
-MChat.startChatbot();
-```
-
-## Close bot
-Bot canbe closed by tapping on cross button at top, and they can be progrmatically closed using `closeBot()` function
-```javascript
-YMChat.shared.closeBot();
+YMChat.startChatbot();
 ```
 
 ## Other configurations
@@ -71,6 +71,15 @@ YMChat.shared.closeBot();
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
 ```javascript
 YMChat.setEnableSpeech(true);
+```
+
+### Payload
+Information can be passed from app to bot using payload.
+
+The payload dictionary should be JSON compatible else an error will be thrown
+
+```javascript
+YMChat.setPayload({ "name": "Purush", "age": 21 });
 ```
 
 If you are supporting Speech recognization, add following snippet to Info.plist of the host app
@@ -88,19 +97,34 @@ YMChat.setEnableHistory(true)
 ```
 
 ### Event from bot
-Bot can send events to the host app. The events can be handled in `onEventFromBot` handler
+Bot can send events to the host app. Import `YMChatEvents` from `ymchat-react-native`
 ```javascript
-YMChat.onEventFromBot((code, data) => {
-  console.log("Bot event:  " + code);
-})
+import { YMChat, YMChatEvents } from 'ymchat-react-native';
+..
+..
+YMChatEvents.addListener('YMChatEvent', (event) => {
+   console.log(event.code, event.data); // you get access to all incoming bot events.
+});
 ```
 
-### Payload
-Additional payload can be added in the form of key value pair, which is then appended to the bot
+## Close bot
+Bot canbe closed by tapping on cross button at top, and they can be progrmatically closed using `closeBot()` function
 ```javascript
-YMChat.setPayload({ "name": "Purush", "age": "21" });
+YMChat.shared.closeBot();
 ```
-  
+ 
+ ## Close bot event
+Bot close event is separetly sent and it can be handled in following way.
+```javascript
+import { YMChat, YMChatEvents } from 'ymchat-react-native';
+..
+..
+YMChatEvents.addListener('YMBotCloseEvent', () => {
+   console.log("Bot closed");
+});
+
+```
+
 ## Push Notifications
 ymchat-react-native supports firebase notifications. Push notifications needs `authentication token` and `device token`
 
@@ -118,3 +142,13 @@ YMChat.setDeviceToken("token");
 It is recommended to set authentication token and device token before `startChatbot()`
 
 Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
+
+## On-Prem Deployments
+ymchat-react-native supports bots with on-prem deployments. For the bot to work, pass the on-prem URL to `setCustomURL()` method.
+```javascript
+YMChat.setCustomURL('https://your-on-prem-url.com');
+```
+
+## Demo App
+A demo app can be used as a reference to better understand how this SDK can be integrated in the app
+[https://github.com/yellowmessenger/ymchat-react-native-demo](https://github.com/yellowmessenger/ymchat-react-native-demo)
