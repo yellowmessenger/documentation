@@ -57,7 +57,7 @@ If you are adding Speech recognization, add following snippet to Info.plist of t
 ```
 
 #### Payload
-Additional information can be passed from app to bot using payload.
+Additional information can be passed in the form of key value pair from app to bot using payload.
 
 
 ```swift
