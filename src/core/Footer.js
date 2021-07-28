@@ -38,10 +38,6 @@ const Footer = () => {
   const howtos = [
     { title: "How to create a bot?", to: "/docs/howtos/basics/create-a-bot" },
     {
-      title: "How to publish a bot",
-      to: "",
-    },
-    {
       title: "How to create a new function?",
       to: "/docs/howtos/create/cloud-function",
     },
@@ -55,7 +51,7 @@ const Footer = () => {
     <footer className={styles.custom_footer}>
       <div className={styles.container}>
         <div className={styles.logo_container}>
-          <a href="https://cloud.yellowmessenger.com/" target="_blank"><img src="img/yellowAi_white.svg" alt="logo" /></a>
+          <a href="https://yellow.ai/" target="_blank"><img src="img/Documentation.jpg" alt="logo" /></a>
           <p className={styles.description}>
             “The World’s Leading
             CX Automation Platform.”

@@ -11,6 +11,8 @@
 
 .container .logo_container {
   margin-right: 30px;
+  width: 20%;
+  height: 20%;
 }
 .container .logo_container {
 fill: red;
