@@ -3,7 +3,7 @@ title: Understand different settings and options in Tools
 sidebar_label: Tools 
 ---
 This section is dedicated to
--  `Tools` section in Studio
+-  **`Tools`** section in Studio
     -  Test your bot
     -  Conversation Settings
     -  NLU settings
@@ -24,6 +24,8 @@ You can also enable verbose to see more details like sentiment confidence, synon
 
 ![](https://i.imgur.com/1Sb3ay3.gif)
 
+---
+
 ### 2. Conversation Settings
 These settings more or less control conversation flow, messages display etc. Let's go through them one by one. 
 
@@ -34,10 +36,10 @@ These settings more or less control conversation flow, messages display etc. Let
 - **Enable Go back/Go Home** - This enables hot keywords for `Go home` -> Triggering welcome prompt *and* `Go back` -> Going to previous prompt in a journey
     > :warning: **Note** : Go back keywords inside a journey take user to previous prompt. If used outside journey (As first prompt of a journey or after a journey is completed) - Go back goes to Welcome prompt. 
 - **Go back aliases** and **Go home aliases** - These help you configure hot keywords of your choice for triggering Go back or Go home respectively. 
-
-#### **Prompt validation settings**
-- **Whatsapp indexing settings**
-When you configure quick replies , they appear on whatsapp as a list 
+---
+#### Prompt validation settings
+##### Whatsapp indexing settings
+When you configure platform quick replies , they appear on whatsapp as a list of items in text. (We are not talking about native whatsapp quick replies here.)
 Default is like following:-
 
 > What do you want to do next?
@@ -63,9 +65,12 @@ Your quick reply can look like :
     > Phone number entered is not correct [validation failure message]
     > Can you please share your phone number? [original prompt]
         
-- **Enable Limit on Retries** - Enabling this will set limit of 3 over total times validation failure can be allowed. If validation fails it shows **Error message** which can be cofigured (next setting)
-    
-- **Intelligent Switching**
+##### **Enable Limit on Retries** 
+ Enabling this will set limit of 3 over total times validation failure can be allowed. If validation fails it shows **Error message** which can be cofigured (next setting)
+
+ ----   
+
+#### **Intelligent Switching**
 :::info
 It is highly recommended this feature is turned on! 
 :::
@@ -93,16 +98,32 @@ Working example below -
 
 ![](https://i.imgur.com/Nouk1jD.gif)
 
+---
 
+#### Autoskipping Settings
+As seen in [prompt settings](./steps/prompts-and-messages/#prompt-settings), we can skip a prompt using entitity or variables, if value is already present (thus avoiding asking user the same thing again and again). 
+This depicts the memory of your chatbot. 
 
+##### Acknowledgement 
+This is highly recommended that your enable acknowledgement for autoskipping. 
+By enabling acknowledgement, instead of directly skipping something (which might lead to confusing the user), bot will show acknowledgement prompt like below:-
+> BOT: "I already have`Account type : Savings`, do you wish to continue?"
 
-- **Voice Settings**
+>  [ Yes ] [ Modify Account type]
+
+On yes, bot will skip the step, else on modify user will be asked to select again instead of autoskipping. 
+
+📌 **`Note`** : **This acknowledgement prompt is also editable**
+
+---
+
+#### **Voice Settings**
 
 To be updated
 
 ---
 
-#### NLU settings
+### 3. NLU settings
 
 NLU settings include settings related to Natural language Understanding as name suggests, and include the following
 
