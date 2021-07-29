@@ -1,8 +1,15 @@
 ---
 title: Create and access bot variables in UI
-sidebar_label : Bot variables
+sidebar_label : Variables
 ---
 
+Three types of variables can be used in our flow: 
+1. Bot variables (customisable)
+2. System variables (exposed on platform)
+3. Profile variables (Partially customisable)
+
+
+## Bot variables
 
 ### How to create a bot variable
 
@@ -80,3 +87,23 @@ For example: to access temp in above, {{variables.API_var.main.temp}} can be use
 To access weather description in above, you can see it's inside an array [ ] and is the first [0th index] value of array. 
 {{variables.API_var.weather.0.description}} will be used. 
 
+---
+
+## System variables 
+
+Following system variables have been exposed on the platform for quick use: -
+
+`{{{var_name}}}` notation is used to access system variables. 
+
+
+| Variable | Use |  
+| -------- | -------- | 
+|{{{source}}}|Returns channel source like yellowmessenger , whatsapp   | 
+| {{{sender}}} | Returns sender ID|
+| {{{pageUrl}}} | Returns current page URL|
+| {{{sessionMessageLogUrl}}} | Returns current chat's transcript URL |
+| {{{profile}}} | Returns business profile object , to access individual fields , use like {{{profile.name}}}|
+| {{{date}}} | Returns date object with **current** date and time in detected timezone. Following can be detected - {{{date.day}}}, {{{date.month}}}, {{{date.year}}} , {{{date.date}}} , {{{date.timestamp}}}, {{{date.hour}}}, {{{date.minute}}}. 
+
+
+---
