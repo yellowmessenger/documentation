@@ -269,11 +269,7 @@ eg: The company name is {company name}
 
   This can now be sent through the **Send file** node. Simply choose the relevant variable from the *fetch from variable* dropdown, this will send the dynamically generated file as a PDF to the user.
 
-  #### Logic
-     If condition
-      Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
 
-![](https://i.imgur.com/sSq1fSG.png)
 
 ### 14. Whatsapp Reply Buttons
 Latest version of Whatsapp API allows for businesses to send reply buttons alongwith media(within 24 hours window). To use Whatsapp Reply Buttons, follow the steps mentioned below -
@@ -298,3 +294,9 @@ Latest version of Whatsapp API allows for businesses to send reply buttons along
   - Character limit of Footer is 60.
   - Character limit of Button Text and Response is 20.
   - Maximum sizes : Image (5 MB), Video(16 MB) and Document(100 MB)
+
+## Logic
+     If condition
+      Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
+
+![](https://i.imgur.com/sSq1fSG.png)
