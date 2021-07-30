@@ -52,8 +52,33 @@ Name, Email, Phone prompts are used for asking for respective details. They alre
 #### Location Prompt : 
 Location prompt can be used to ask for and validate location inputs.
 
+![](https://cdn.yellowmessenger.com/jwxiYsJ6GauO1627622859207.png)
 
-> Image to be added
+Validation is passed only once we are able extract all the fields specified in "Required fields". This does not mean user needs to provide all these fields, we use whatever info the user has provided to extract the other fields.
+
+It is then stored in the specified varialble with the folowwing format:
+    {
+        userMessage: '',
+        coordinates: {
+        lat: "",
+        lng: "",
+        },
+        fullAddress: '',
+        city: '',
+        state: '',
+        country: '',
+        postalCode: '',
+    }
+
+:::info
+All fields specified in required fields will definitely be present in the variable but fields that were not specified may also be present
+
+
+You can also send a "Share location" button to allow users to share their current location. You can customize the text in this button by clicking on it. 
+:::info
+The "share location" button will be sent only in Web/PWA channels.
+
+
 
 #### Feedback Prompt: 
 
