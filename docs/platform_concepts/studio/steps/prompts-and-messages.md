@@ -49,7 +49,7 @@ Name, Email, Phone prompts are used for asking for respective details. They alre
  
 :::
 
-#### Location Prompt : 
+### Location Prompt 
 Location prompt can be used to ask for and validate location inputs.
 
 ![](https://cdn.yellowmessenger.com/jwxiYsJ6GauO1627622859207.png)
@@ -80,7 +80,7 @@ The "share location" button will be sent only in Web/PWA channels.
 
 
 
-#### Feedback Prompt: 
+### Feedback Prompt
 
 
 Feedback Prompt can be used to take user feedback. Like any other prompt you can attach it any journey in the flow. You can ask for bot feedback, to Question feedback etc. 
@@ -105,13 +105,60 @@ Still, You can access this data if needed by using `{{variables.var_name.rating}
 :::
 
 
-#### Date prompt
+### Date prompt
 
 You can use the date prompt to ask for and validate date inputs. 
 
 ![](https://cdn.yellowmessenger.com/EnNVBl4TeM1m1626264357943.png)
 
+### Whatsapp Reply Buttons
 
+Latest version of Whatsapp API allows for businesses to send reply buttons alongwith media(within 24 hours window). To use Whatsapp Reply Buttons, follow the steps mentioned below -
+
+1. In any node, drag the arrow and select Carousells under Prompt/Message Type.
+
+![](https://cdn.yellowmessenger.com/m87RvFIu6XgX1626345563047.png)
+
+2. Click on Carousell in UI and in channel filters, select WhatsApp.
+
+![](https://cdn.yellowmessenger.com/uurhPH2Y6xze1626345610351.png)
+
+3. Edit Body Message, Footer, add relevant files (image/video/pdf) and response buttons as shown below. 
+
+> Each button name & text message should be unique.
+
+![](https://cdn.yellowmessenger.com/KOzvRiBN5xa11626345936353.png)
+
+> Limitations of Reply Button Node(in file size and character)
+  - Maximum of 3 Buttons can be added.Multiple buttons cannot be selected in one go and are not supported in notifications.
+  - Character limit of Body is 1024.
+  - Character limit of Footer is 60.
+  - Character limit of Button Text and Response is 20.
+  - Maximum sizes : Image (5 MB), Video(16 MB) and Document(100 MB)
+
+
+
+### WhatsApp List prompt
+
+Latest version of Whatsapp API provides a better UI for businesses to send List items(within 24 hours window). To create Whatsapp List, follow the steps mentioned below -
+
+1. In any node, drag the arrow and select Whatsapp List under Prompt Nodes.
+
+![](https://cdn.yellowmessenger.com/hSulcVu7Aq2O1627961100292.png)
+
+2. Edit Body Message, Footer, Section Title and Button Title/Name and list as shown below. 
+
+> Combination of each button title & name should be unique.
+
+![](https://cdn.yellowmessenger.com/Le4ABBmWj8SY1627961158582.png)
+
+> Limitations of Reply Button Node(in file size and character)
+
+  - Maximum of 10 Buttons can be added. Multiple buttons cannot be selected in one go and are not supported in notifications.
+  - Character limit of Body is 1024.
+  - Character limit of Footer is 60.
+  - Character limit of Button Text and Response is 24.
+  - Section Title and List Headers are optional.
 
 **Widgets**
 You can send a calendar widget along with your prompt message. There are 3 widget types you can choose from - single date picker, date range picker, and month picker.

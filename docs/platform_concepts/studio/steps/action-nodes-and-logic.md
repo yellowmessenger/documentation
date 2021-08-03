@@ -269,32 +269,6 @@ eg: The company name is {company name}
 
   This can now be sent through the **Send file** node. Simply choose the relevant variable from the *fetch from variable* dropdown, this will send the dynamically generated file as a PDF to the user.
 
-
-
-### 14. Whatsapp Reply Buttons
-Latest version of Whatsapp API allows for businesses to send reply buttons alongwith media(within 24 hours window). To use Whatsapp Reply Buttons, follow the steps mentioned below -
-
-1. In any node, drag the arrow and select Carousells under Prompt/Message Type.
-
-![](https://cdn.yellowmessenger.com/m87RvFIu6XgX1626345563047.png)
-
-2. Click on Carousell in UI and in channel filters, select WhatsApp.
-
-![](https://cdn.yellowmessenger.com/uurhPH2Y6xze1626345610351.png)
-
-3. Edit Body Message, Footer, add relevant files (image/video/pdf) and response buttons as shown below. 
-
-> Each button name & text message should be unique.
-
-![](https://cdn.yellowmessenger.com/KOzvRiBN5xa11626345936353.png)
-
-> Limitations of Reply Button Node(in file size and character)
-  - Maximum of 3 Buttons can be added.Multiple buttons cannot be selected in one go and are not supported in notifications.
-  - Character limit of Body is 1024.
-  - Character limit of Footer is 60.
-  - Character limit of Button Text and Response is 20.
-  - Maximum sizes : Image (5 MB), Video(16 MB) and Document(100 MB)
-
 ## Logic
      If condition
       Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
