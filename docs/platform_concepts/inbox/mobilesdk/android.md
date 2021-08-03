@@ -3,18 +3,17 @@ title: Agent SDK for Android
 sidebar_label : Android
 ---
 
-## Download SDK
+## SDK integration
 1. You can download the sdk [here](https://firebasestorage.googleapis.com/v0/b/ym-mobile-app.appspot.com/o/android-agent-sdk%2FYellowInbox.aar?alt=media&token=62c6693d-18c5-4ae5-bcd8-0983f7d45c91)
 2. Add the SDK to your project
 
 ## Initialization  
-To initialize the SDK, API_KEY, USER_ID and BOT_ID are three mandatory parameters.
-Users can call the following method for initialization.
+The SDK can be initialised by passing API_KEY, USER_ID and BOT_ID to the init method.
 
 ```java
 YellowInbox.init(applicationContext : Context, 
     apiKey : String, 
-    userId:String,
+    userId: String,
     botId : String
 ) : LiveData<Resource<Void>>
 ```
@@ -24,14 +23,14 @@ Application context is used to initialise the service which runs XMPP.
 
 #### apiKey
 API_KEY will be provided by yellow.ai, It is clients responsibility to keep the API_KEY safe. 
-This is a mandatory parameter for initialization calls.
+This is a mandatory parameter.
 
 #### userId
-UserId will be the id registered/provided to yellow.ai by the client to authenticate their employee. This is a mandatory parameter for initialization calls.
+UserId will be the id registered/provided to yellow.ai by the client to authenticate their employee. This is a mandatory parameter.
 
 #### botId
 BOT_ID will be provided by yellow.ai. 
-This is a mandatory parameter for initialization calls.
+This is a mandatory parameter.
 
 #### Example
 ```java
@@ -52,18 +51,17 @@ class TestApplication : Application() {
         .addObserver(YmAppProcessLifeCycleListener())
 
     // Initialise the SDK
-    YellowInbox.init(applicationContext, "API_KEY","USER_ID" ,"BOT_ID")
+    YellowInbox.init(applicationContext, "API_KEY", "USER_ID", "BOT_ID")
            .observe(lifecycleOwner, Observer {
               when(it.status) {
-              SUCCESS-> Log.d(TAG,"SDK initialised successfully")
-              ERROR -> Log.d(TAG,"Error while initialising the SDK")
+              SUCCESS-> Log.d(TAG, "SDK initialised successfully")
+              ERROR -> Log.d(TAG, "Error while initialising the SDK")
               else-> null
          }
       })
     }
 }
 ```
-
 
 ## Overview
 Overview view is provided as a fragment and activity
@@ -97,7 +95,6 @@ If clients want to use MyChat Fragment in their application, they can call the f
 val fragment =YellowInbox.getMyChatsFragment()
 ```
 Clients can embed this fragment in their activity and begin the transaction as they do for any other fragment.
-
 
 ## Notifications
 ### Background Notification	

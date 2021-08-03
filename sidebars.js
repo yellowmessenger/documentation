@@ -155,6 +155,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/inbox/mobilesdk/android",
+            "platform_concepts/inbox/mobilesdk/cordova",
           ],
         }
       ],
