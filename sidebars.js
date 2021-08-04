@@ -149,6 +149,15 @@ module.exports = {
         "platform_concepts/inbox/inbox",
         "platform_concepts/inbox/manage-support-agent",
         "platform_concepts/inbox/google-translate-api-inbox",
+        {
+          type: "category",
+          label: "Mobile SDK",
+          collapsed: true,
+          items: [
+            "platform_concepts/inbox/mobilesdk/android",
+            "platform_concepts/inbox/mobilesdk/cordova",
+          ],
+        }
       ],
     },
     {
