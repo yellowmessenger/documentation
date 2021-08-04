@@ -114,13 +114,6 @@ Clients need not to listen to these notifications when the app is running, SDK w
 Clients need to call following method if they want to take user to appropriate view once user clicks on notification delivered in system tray and sent by yellow.ai
 
 ```java
-val data: Map<String, Any?> = getDataFromIntent()
-
-YellowInbox.handleBackgroundNotification(
-   context = applicationContext,
-   data = data
-)
-
 fun getDataFromIntent(): MutableMap<String, Any?> {
    val data = mutableMapOf<String, Any?>()
    if (intent.extras != null) {
@@ -131,6 +124,15 @@ fun getDataFromIntent(): MutableMap<String, Any?> {
      this.intent.putExtras(Bundle.EMPTY)
    }
    return data
+}
+
+val data: Map<String, Any?> = getDataFromIntent()
+
+if (data.containsKey("ym")) {
+  YellowInbox.handleBackgroundNotification(
+    context = applicationContext,
+    data = data
+  )
 }
 ```
 
