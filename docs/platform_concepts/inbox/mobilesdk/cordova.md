@@ -2,6 +2,7 @@
 title: Agent SDK for Cordova
 sidebar_label: Cordova
 ---
+
 ## Installation
 Run this command in terminal form project root folder
 ```shell
@@ -211,7 +212,7 @@ cordova.plugins.YellowInbox.setAgentStatus(
   }
 );
 ```
-1. status: `String`
+- status: `String`
    - cordova.plugins.YellowInbox.AgentStatus.AVAILABLE
    - cordova.plugins.YellowInbox.AgentStatus.AWAY
    - cordova.plugins.YellowInbox.AgentStatus.BUSY
@@ -266,7 +267,9 @@ Navigate to project/platforms/android/app/src/main/res/values and in values/colo
 Note : if colors.xml is not present create it
 
 ### Dimens.xml
-By overriding the client can control size texts and progress bar.
+Navigate to project/platforms/android/app/src/main/res/values and in values/dimens.xml add the following
+
+By overriding the client can control text size and progress bar.
 ```xml
 <dimen  name="ym_title_size">16sp</dimen>
 <dimen  name="ym_subtitle_size">14sp</dimen>
@@ -331,7 +334,5 @@ YellowInbox SDK usage following permissions.
 ```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
 ```
-:::note
-These permissions are automatically added if not add them
-:::
