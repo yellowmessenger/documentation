@@ -63,7 +63,7 @@ cordova.plugins.ymchat.setPayload({ "Company-name": "Yellow.ai" });
 
 ### History
 
-Chat history can be enabled and disabled by calling `setEnableHistory()` and setting "UserID" in the payload
+Chat history can be enabled by calling `setEnableHistory()` and setting "UserID" in the payload
 Default value is `false`
 
 ```javascript
