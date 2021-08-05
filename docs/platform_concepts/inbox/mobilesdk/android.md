@@ -4,7 +4,7 @@ sidebar_label : Android
 ---
 
 ## SDK integration
-1. You can download the sdk [here](https://firebasestorage.googleapis.com/v0/b/ym-mobile-app.appspot.com/o/android-agent-sdk%2FYellowInbox.aar?alt=media&token=62c6693d-18c5-4ae5-bcd8-0983f7d45c91)
+1. You can download the sdk [here](https://firebasestorage.googleapis.com/v0/b/ym-mobile-app.appspot.com/o/android-agent-sdk%2FYellowInbox.aar?alt=media&token=797be9b0-2c0c-407f-aca2-ad83e2057564)
 2. Add the SDK to your project
 
 ## Initialization  
