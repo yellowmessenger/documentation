@@ -91,8 +91,10 @@ If you are supporting Speech recognization, add following snippet to Info.plist 
 ```
 
 ### History
-Chat history can be enabled and disabled by calling setEnableHistory(). Default value is `false`
+Chat history can be enabled by calling `setEnableHistory()` and setting "UserID" in the payload
+Default value is `false`
 ```javascript
+YMChat.setPayload({ "UserId": "unique-id"}); //set unique id like email or UUID
 YMChat.setEnableHistory(true)
 ```
 
