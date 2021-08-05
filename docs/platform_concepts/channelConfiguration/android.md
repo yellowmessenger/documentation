@@ -155,9 +155,11 @@ Assign your `FCM token` to device token
 ```java
 ymChat.config.deviceToken = "your-firebase-device-token"
 ```
-:::info
-It is recommended to set authentication token and device token before calling startChatbot()
-:::
+#### Note:
+- Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
+
+- It is recommended to set authentication token and device token before calling startChatbot()
+
 
 ## Dependencies
 Following dependencies are used in chat bot SDK
