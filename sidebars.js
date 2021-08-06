@@ -107,7 +107,6 @@ module.exports = {
           label: "Natural Language Understanding",
           collapsed: true,
           items: [
-            "platform_concepts/studio/natural-language-understanding/training",
             "platform_concepts/studio/natural-language-understanding/intents",
             "platform_concepts/studio/natural-language-understanding/entities",
           ],

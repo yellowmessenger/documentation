@@ -4,7 +4,7 @@ sidebar_label : Cloud Functions
 ---
 ### How to create a new function? 
 You can add a new function to write your custom logic in code in the **`code`** section of the studio. 
-To execute these functions in a flow, you can attach **[function action node](../steps/action-nodes-and-logic#5-functions)**.
+To execute these functions in a flow, you can attach function action node.
 
 **Format of cloud functions**
 ```
@@ -28,7 +28,7 @@ return new Promise(resolve => {
 |data.bot | String| Bot ID|
 |data.message | String | To access Last/latest user message in the conversation|
 |data.event.<event_name>|Object|To access events in code|
-|ymLib.args.apiResponse | any | To access API response in [API transformation function](../steps/action-nodes-and-logic#1-api) |
+|ymLib.args.apiResponse | any | To access API response in API transformation function|
 | ymLib.args.logger | Object | Can be used to add logs |
 | context.history | Object | Contains history of nodes visited by user|
 | prediction.intents |  | To get Intents predicted from user message |
