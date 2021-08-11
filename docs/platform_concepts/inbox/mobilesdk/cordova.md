@@ -1,5 +1,5 @@
 ---
-title: Agent SDK for Cordova
+title: Inbox SDK for Cordova
 sidebar_label: Cordova
 ---
 
