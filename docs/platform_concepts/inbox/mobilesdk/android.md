@@ -1,11 +1,14 @@
 ---
-title: Agent SDK for Android
+title: Inbox SDK for Android
 sidebar_label : Android
 ---
 
 ## SDK integration
 1. You can download the sdk [here](https://firebasestorage.googleapis.com/v0/b/ym-mobile-app.appspot.com/o/android-agent-sdk%2FYellowInbox_v1.0.0.aar?alt=media&token=055feb63-3599-4b75-9abd-e46d72ddb35e)
 2. Add the SDK to your project
+
+#### Demo App
+A demo app has been created to understand the integration and usage of the SDK. It can be found here [https://github.com/yellowmessenger/Inbox-SDK-Demo-App-Android](https://github.com/yellowmessenger/Inbox-SDK-Demo-App-Android)
 
 ## Initialization  
 The SDK can be initialised by passing API_KEY, USER_ID and BOT_ID to the init method.
