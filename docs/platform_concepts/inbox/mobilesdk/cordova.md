@@ -9,6 +9,10 @@ Run this command in terminal form project root folder
 ionic cordova plugin add cordova-plugin-yellowinbox
 ```
 
+#### Demo App
+A demo app has been created to understand the integration and usage of the SDK. It can be found here [https://github.com/yellowmessenger/yellowinbox-ionic-demo](https://github.com/yellowmessenger/yellowinbox-ionic-demo)
+
+
 ## Initialization
 To initialize the SDK, API_KEY, USER_ID and BOT_ID are three mandatory parameters.
 Users can call the following method for initialization.
