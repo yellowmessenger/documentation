@@ -21,7 +21,11 @@ repositories {
 dependencies {
     ...
     ...
-	   implementation 'com.github.yellowmessenger:YMChatbot-Android:v1.4.1
+       // By puting + at the end you need not to worry about updating and releaseing the app for every patch we are making
+       // Still, if you want to use exact and latest version please visit the github repository mentioned
+       // [https://github.com/yellowmessenger/YMChatbot-Android/releases](https://github.com/yellowmessenger/YMChatbot-Android/releases)
+
+	   implementation 'com.github.yellowmessenger:YMChatbot-Android:v1.4.+
 }
 ```
 
