@@ -21,13 +21,12 @@ repositories {
 dependencies {
     ...
     ...
-       // By puting + at the end you need not to worry about updating and releaseing the app for every patch we are making
-       // Still, if you want to use exact and latest version please visit the github repository mentioned
-       // [https://github.com/yellowmessenger/YMChatbot-Android/releases](https://github.com/yellowmessenger/YMChatbot-Android/releases)
-
 	   implementation 'com.github.yellowmessenger:YMChatbot-Android:v1.4.+
 }
 ```
+By puting + at the end, you need not to worry about updating and releaseing your app for every patch we are making in SDK.
+Still, if you want to use exact and latest version please visit the github repository mentioned
+[https://github.com/yellowmessenger/YMChatbot-Android/releases](https://github.com/yellowmessenger/YMChatbot-Android/releases)
 
 ### strings.xml (Only for version v1.4.0 & above)
 Add following key in your strings.xml file, this will override default file provider used by SDK.
