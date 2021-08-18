@@ -95,7 +95,6 @@ For on-prem deployments a different URL can be set to `customBaseUrl`
 config.customBaseUrl = "https://yourcustomurl.com"
 ```
 
-
 ## Start chatbot
 Chat bot can be presented by calling `startChatbot()` method and passing your view controller as an argument
 ```swift
