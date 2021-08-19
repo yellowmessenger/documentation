@@ -17,11 +17,13 @@ iOS 12, 13 and 14
 
 ## Basic Usage
 Import the `YMChat` framework in the Swift file
+
 ```swift
 import YMChat
 ```
 
 After the framework is imported the bot can be presented with few lines as below 
+
 ```swift
 do {
     let config = YMConfig(botId: "x1234567890")
@@ -37,6 +39,7 @@ YMConfig can be used to set the bot id and other bot related settings. It is rec
 
 ### Initialize YMConfig
 YMConfig requires `botID` to initialize. All other settings are optional.
+
 ```swift
 let config = YMConfig(botId: "<bot-id>")
 ```
@@ -49,10 +52,12 @@ Whenever chatbot is launched with ymAuthenticationToken it will load the previou
 ```swift
 config.ymAuthenticationToken = "your-token"
 ```
+
 Note: History will load only when `Show history` flag is enabled in the channel settings
 
 ### Push Notifications
 YMChat supports firebase notifications. Assign your `FCM token` to deviceToken
+
 ```swift
 config.deviceToken = "your-firebase-device-token"
 ```
@@ -97,6 +102,7 @@ If you are adding Speech recognization, add following snippet to Info.plist of t
 
 ## Start chatbot
 Once the config is set, chat bot can be presented by calling `startChatbot()` method and passing your view controller as an argument
+
 ```swift
 do {
     try YMChat.shared.startChatbot(on: self)
@@ -128,6 +134,7 @@ func onEventFromBot(_ response: YMBotEventResponse) {
 #### Bot close event
 
 Bot close event is separetly sent and it can be handled in following way. The handler class should conform to `YMChatDelegate`
+
 ```swift
 func onBotClose() {
     print("Bot closed")
@@ -136,12 +143,14 @@ func onBotClose() {
 
 ## Close bot
 Bot can be programatically closed using `closeBot()` function
+
 ```swift
 YMChat.shared.closeBot()
 ```
 
 ## Logging
 Logging can be enabled to understand the code flow and to fix bugs.
+
 ```swift
 YMChat.shared.enableLogging = true
 ```

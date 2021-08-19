@@ -6,6 +6,7 @@ sidebar_label: Android Chatbot SDK
 ## Installation
 ### Gradle
 To integrate YMChat into your Android project using gradle, specify the following configurations in App level `build.gradle` file
+
 ```gradle
 repositories {
     jcenter()
@@ -32,12 +33,14 @@ Add following key in your `strings.xml` file, this will override default file pr
 
 Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
 Example - applicationId : "com.abc.xyz" then  application_id_for_provider = com.abc.xyz.fileprovider
+
 ```xml
-    <string name="application_id_for_provider">your.application.id.fileprovider</string>
+<string name="application_id_for_provider">your.application.id.fileprovider</string>
 ```
 
 ## Basic Usage
 Import the YMChat library in your Activity.
+
 ```java
 import com.yellowmessenger.ymchat.YMChat;
 import com.yellowmessenger.ymchat.YMConfig;
@@ -46,6 +49,7 @@ import com.yellowmessenger.ymchat.YMConfig;
 After the library is imported the basic bot can be presented with few lines as below 
 
 Example `onCreate` method of the Activity:
+
 ```java
 
 @Override
@@ -69,7 +73,6 @@ protected void onCreate(Bundle savedInstanceState) {
           }
 	});
 }
-
 ```
 
 ## YMConfig
@@ -77,6 +80,7 @@ YMConfig can be used to set the bot id and other bot related settings. It is rec
 
 ### Initialize YMConfig
 YMConfig requires `botID` to initialize. All other settings are optional.
+
 ```java
 ymChat.config = new YMConfig("<BOT-ID>");
 ```
@@ -86,14 +90,16 @@ ymAuthenticationToken is used to associate an identity of the user with the chat
 
 Whenever chatbot is launched with ymAuthenticationToken it will load the previous chats associated with this user since **inception**.
 
-```swift
+```java
 ymChat.config.ymAuthenticationToken = "your-token"
 ```
+
 Note: History will load only when `Show history` flag is enabled in the channel settings
 
 ### Push Notifications
 YMChat supports firebase notifications. Assign your `FCM token` to deviceToken
-```swift
+
+```java
 ymChat.config.deviceToken = "your-firebase-device-token"
 ```
 
@@ -126,12 +132,14 @@ ymChat.config.customBaseUrl = "https://yourcustomurl.com";
 
 ### Speech to Text
 Speech to text can be enabled by setting the enableSpeech flag present in config. Default value is `false`
+
 ```java
 ymChat.config.enableSpeech = true
 ```
 
 ## Starting the bot
 Once the config is set, chat bot can be presented by calling `startChatbot()` and passing your Activity context as an argument
+
 ```java
 ymChat.startChatbot(this);
 ```
@@ -158,12 +166,14 @@ ymChat.onBotClose(() -> {
 
 ## Close bot
 Bot can be programatically closed using `closeBot()` function
+
 ```java
 ymChat.closeBot();
 ```
 
 ## Dependencies
 Following dependencies are used in chat bot SDK
+
 ```java
     implementation 'androidx.appcompat:appcompat:1.3.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -179,24 +189,30 @@ Following dependencies are used in chat bot SDK
 
 ## Permissions
 We are declaring and asking for following permission in our manifest file
+
 ```java
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
 ```
+
 All permissions will be asked at run time except INTERNET.
 For attachment (picking  file/images from phone storage)
+
 ```java
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 ```
+
 For voice input
+
 ```java
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
 ```
 
 ## Important
 If facing problem in release build, add the following configuration in the app's proguard-rules.pro file.
+
 ```java
 -keep public class com.yellowmessenger.ymchat.** {
    *;
@@ -206,4 +222,3 @@ If facing problem in release build, add the following configuration in the app's
 ## Demo App
 A demo has been created to better understand the integration of SDK in Android app
 [https://github.com/yellowmessenger/YmChatBot-Android-DemoApp](https://github.com/yellowmessenger/YmChatBot-Android-DemoApp)
-

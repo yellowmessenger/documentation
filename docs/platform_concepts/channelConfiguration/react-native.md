@@ -49,12 +49,14 @@ yarn add ymchat-react-native
 
 ## Usage
 Import YMChat in App.js
+
 ```javascript
 import { YMChat } from 'ymchat-react-native';
 ```
 
 ### Set botId
 This is the first and **compulsary** step.
+
 ```javascript
 YMChat.setBotId("x1234567890");
 ```
@@ -67,6 +69,7 @@ Whenever chatbot is launched with ymAuthenticationToken it will load the previou
 ```javascript
 YMChat.setAuthenticationToken("token");
 ```
+
 Note: History will load only when `Show history` flag is enabled in the channel settings
 
 ### Push Notifications
@@ -77,7 +80,6 @@ YMChat.setDeviceToken("token");
 ```
 
 Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
-
 
 ### Payload
 Additional information can be passed in the form of key value pair from app to bot using payload.
@@ -96,18 +98,21 @@ Payload is securely passed in HTTPS post request to protect the information pass
 
 ### On-Prem Deployments
 ymchat-react-native supports bots with on-prem deployments. For the bot to work, pass the on-prem URL to `setCustomURL()` method.
+
 ```javascript
 YMChat.setCustomURL('https://your-on-prem-url.com');
 ```
 
 ### Speech to Text
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
+
 ```javascript
 YMChat.setEnableSpeech(true);
 ```
 #### iOS
 If you are supporting Speech recognization, add following snippet to Info.plist of the host app
-```
+
+```xml
 <key>NSMicrophoneUsageDescription</key>  
 <string>Your microphone will be used to record your speech when you use the Voice feature.</string>
 <key>NSSpeechRecognitionUsageDescription</key>  
@@ -116,6 +121,7 @@ If you are supporting Speech recognization, add following snippet to Info.plist 
 
 ## Present chatbot
 Chat bot can be presented by calling `startChatbot()`. This method will display full screen chat view
+
 ```javascript
 YMChat.startChatbot();
 ```
@@ -136,6 +142,7 @@ YMChatEvents.addListener('YMChatEvent', (event) => {
 
 #### Bot close event
 Bot close event is separetly sent and it can be handled in following way.
+
 ```javascript
 import { YMChat, YMChatEvents } from 'ymchat-react-native';
 ..
