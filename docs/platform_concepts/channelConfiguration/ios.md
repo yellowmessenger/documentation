@@ -35,20 +35,21 @@ do {
 ## YMConfig
 YMConfig can be used to set the bot id and other bot related settings. It is recommended to set all appropriate config **before** starting the bot
 
-### Initialize Config
+### Initialize YMConfig
 YMConfig requires `botID` to initialize. All other settings are optional.
 ```swift
-let config = YMConfig(botId: "x1234567890")
+let config = YMConfig(botId: "<bot-id>")
 ```
 
 ### YM AuthenticationToken
 ymAuthenticationToken is used to associate an identity of the user with the chat bot.
 
-Whenever chatbot is launched with `ymAuthenticationToken` it will load the previous chats associated with this user since inception.
+Whenever chatbot is launched with ymAuthenticationToken it will load the previous chats associated with this user since **inception**.
 
 ```swift
 config.ymAuthenticationToken = "your-token"
 ```
+Note: History will load only when `Show history` flag is enabled in the channel settings
 
 ### Push Notifications
 YMChat supports firebase notifications. Assign your `FCM token` to deviceToken
@@ -88,15 +89,15 @@ For passing data from bot to app refer bot [Bot Events](#bot-events)
 Payload is securely passed in HTTPS post request to protect the information passed in it
 :::
 
-### On Prem URL
-For on-prem deployments a different URL can be set to `customBaseUrl`
+### On Premise deployments
+Your on-prem deployment URL can be set to `customBaseUrl`
 
 ```swift
 config.customBaseUrl = "https://yourcustomurl.com"
 ```
 
 ## Start chatbot
-Chat bot can be presented by calling `startChatbot()` method and passing your view controller as an argument
+Once the config is set, chat bot can be presented by calling `startChatbot()` method and passing your view controller as an argument
 ```swift
 do {
     try YMChat.shared.startChatbot(on: self)
