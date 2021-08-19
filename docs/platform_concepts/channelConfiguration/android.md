@@ -99,13 +99,6 @@ ymChat.config.deviceToken = "your-firebase-device-token"
 
 Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
 
-
-### Speech to Text
-Speech to text can be enabled by setting the enableSpeech flag present in config. Default value is `false`
-```java
-ymChat.config.enableSpeech = true
-```
-
 ### Payload
 Additional information can be passed in the form of key value pair from app to bot using payload.
 
@@ -131,6 +124,12 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 ymChat.config.customBaseUrl = "https://yourcustomurl.com";
 ```
 
+### Speech to Text
+Speech to text can be enabled by setting the enableSpeech flag present in config. Default value is `false`
+```java
+ymChat.config.enableSpeech = true
+```
+
 ## Starting the bot
 Once the config is set, chat bot can be presented by calling `startChatbot()` and passing your Activity context as an argument
 ```java
@@ -148,7 +147,7 @@ ymChat.onEventFromBot(botEvent -> {
 });
 ```
 
-### Bot close event
+#### Bot close event
 Bot close event is separately sent and it can be handled by listening to onBotClose event as mentioned below. To programatically close bot use `ymChat.closeBot()` method
 
 ```java

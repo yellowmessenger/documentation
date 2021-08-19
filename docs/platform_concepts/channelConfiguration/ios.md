@@ -59,21 +59,6 @@ config.deviceToken = "your-firebase-device-token"
 
 Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
 
-
-### Speech to Text
-Speech to text can be enabled by setting the enableSpeech flag. Default value is `false`
-```swift
-config.enableSpeech = true
-```
-
-If you are adding Speech recognization, add following snippet to Info.plist of the host app
-```xml
-<key>NSMicrophoneUsageDescription</key>  
-<string>Your microphone will be used to record your speech when you use the Voice feature.</string>
-<key>NSSpeechRecognitionUsageDescription</key>  
-<string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
-```
-
 ### Payload
 Additional information can be passed in the form of key value pair from app to bot using payload.
 
@@ -94,6 +79,20 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 
 ```swift
 config.customBaseUrl = "https://yourcustomurl.com"
+```
+
+### Speech to Text
+Speech to text can be enabled by setting the enableSpeech flag. Default value is `false`
+```swift
+config.enableSpeech = true
+```
+
+If you are adding Speech recognization, add following snippet to Info.plist of the host app
+```xml
+<key>NSMicrophoneUsageDescription</key>  
+<string>Your microphone will be used to record your speech when you use the Voice feature.</string>
+<key>NSSpeechRecognitionUsageDescription</key>  
+<string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
 ```
 
 ## Start chatbot
