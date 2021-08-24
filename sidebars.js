@@ -116,7 +116,7 @@ module.exports = {
         "platform_concepts/studio/tools",
         "platform_concepts/studio/bot-variables",
         "platform_concepts/studio/cloud-function",
-        "platform_concepts/studio/modes"
+        "platform_concepts/studio/modes",
       ],
     },
     {
@@ -156,7 +156,7 @@ module.exports = {
             "platform_concepts/inbox/mobilesdk/android",
             "platform_concepts/inbox/mobilesdk/cordova",
           ],
-        }
+        },
       ],
     },
     {
@@ -183,6 +183,7 @@ module.exports = {
               items: [
                 "platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign",
                 "platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen",
+                "platform_concepts/engagement/inbound/gettingStarted/testingInboundCampaign",
               ],
             },
             {
