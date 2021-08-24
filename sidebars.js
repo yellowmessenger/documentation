@@ -204,6 +204,7 @@ module.exports = {
               items: [
                 "platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType",
                 "platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorsInEcomm",
+                "platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorsInContentMarketing",
               ],
             },
             {
