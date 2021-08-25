@@ -17,13 +17,39 @@ This document describes the Model Bot, a bot build for the following purposes :
 ## Getting Started
 
 ### What are virtual assistants? 
+Virtual Assistants, Chatbots, AI bots are an Artificial Intelligence based software/program which can simulate human-like conversations. Can understand, respond and predict the queries of an individual and support them. 
+There can be different types of bots on the basis of features/use-cases/industries. 
+
+Two different types based on technology can be - 
+AI Based Intelligent bots : The bots trained on some expected questions and answers and with RPA based features. 
+Programmed bots for automated responses, repetitive tasks. 
+
+If you would like to dig-deeper, feel free to explore our Beginners Guide to Chatbots, Virtual Assistants and their differences. 
 
 
-### Some Examples ? 
+### Some Examples / References : 
+
+Here are some example case studies for you to explore - 
+1. [Reimagine Banking with Conversational AI](https://blog.yellowmessenger.com/resources/case-studies/reimagine-banking-with-conversational-ai/)
+2. [Enhanced Agent Assist & Customer Experience for Sayurbox](https://blog.yellowmessenger.com/resources/case-studies/enhanced-agent-assist-customer-experience-for-sayurbox-case-study/)
+3. [Conversational AI atop Social Commerce – Next Big Thing After E-Commerce](https://blog.yellowmessenger.com/resources/case-studies/conversational-ai-atop-social-commerce-next-big-thing-after-e-commerce/)
+4. [Elevated Customer Engagement with Virtual Real Estate Agent](https://blog.yellowmessenger.com/resources/case-studies/elevated-customer-experience-with-virtual-real-estate-agent/)
+
 
 ### What is NLP ? (Natural Language Processing)
+The capability of machines to understand and process the data, documents, and conversations is called natural language processing. 
+Based on this processing, for any forthcoming data, a confidence can be defined for better segregation and taking an action on the top of it. 
+
 
 ### What is intent? 
+An aim driven by a query or requirement. Something you are determined to do. 
+In reference to chatbots, intents can be defined as questions that you may ask the bot. We are going to use a lot of intent based utterances and training moving forward. 
+
+For example - 
+I need to make a purchase. 
+Can you help check my application status? 
+Sign me up for the next event. 
+
 
 ### What is the composition of a virtual assistant ? 
 The magic potion contains the following : 
@@ -70,7 +96,7 @@ Sign up on https://https://cloud.yellow.ai and after email confirmation login ag
 ** *Add screenshot here* **
 
 #### Step 1 - Create a Bot
-Create a bot for yourself, every account gets a bot subscription for free with some limited features. Click here for reference - [How to create a bot? ](https://docs.yellow.ai/docs/howtos/basics/create-a-bot)
+Create a bot for yourself, every account gets a bot subscription for free with some limited features. Click here for reference - [How to create a bot? ](https://www.youtube.com/watch?v=DWdrstYFlG0)
 
 #### Step 2 - Add a Welcome Message
 
@@ -122,13 +148,13 @@ You can also customize the look and feel of your bot. For more information, chec
 ## Exercise 3:  Learn Bot Basics
 #### Step 1 - Bot Basics
 Let’s get started with bot basics first. 
-- Journey[https://docs.yellow.ai/docs/documentation/concepts/journeys]: Journey is the Conversational flow between user and the bot.
+- [Journey](https://docs.yellow.ai/docs/platform_concepts/studio/journeys): Journey is the Conversational flow between user and the bot.
 
-- Utterance [https://docs.yellow.ai/docs/documentation/concepts/journeys#-user-intent] : Utterances(User Expressions) are the conversations that the user might have with the bot. It can be a sentence, a phrase or a single word.
+- [Utterance](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents): Utterances(User Expressions) are the conversations that the user might have with the bot. It can be a sentence, a phrase or a single word.
 
-- Training [https://docs.yellow.ai/docs/documentation/concepts/training]: Model training is required to help the NLP engine understand which Journey the utterance belongs to and trigger the exact Journey.
+- Training : Model training is required to help the NLP engine understand which Journey the utterance belongs to and trigger the exact Journey.
 
-- Steps [https://docs.yellow.ai/docs/documentation/concepts/steps]: Steps can be seen as building blocks of a Journey.
+- [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/steps/steps): Steps can be seen as building blocks of a Journey.
 
 ## Exercise 4:  Create Contact Us Journey
 
@@ -141,7 +167,7 @@ Let’s add intent and utterances first in the NLU tab. We will use this intent 
 
 ** *Screenshot for adding intent popup* **
 
-- Add intent name and utterances. To learn what’s the best practise to add add utterances, checkout this [guide](https://docs.yellow.ai/docs/documentation/concepts/training/#utterance--journey-best-practices)
+- Add intent name and utterances. To learn what’s the best practise to add add utterances, checkout this [guide](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents)
 
 ** *Screenshot for contact us intent & utterances* **
 
@@ -153,7 +179,7 @@ Let’s add intent and utterances first in the NLU tab. We will use this intent 
 
 ** *Screenshot for start trigger prompt* **
 
-- Add a [Quick Reply](https://docs.yellow.ai/docs/documentation/concepts/response-types-message#quick-replies)  response. Rename it to ‘Contact Options’.
+- Add a [Quick Reply](https://docs.yellow.ai/docs/platform_concepts/studio/steps/prompts-and-messages#quick-replies)  response. Rename it to ‘Contact Options’.
 
 - Add these three buttons:
 
@@ -163,11 +189,11 @@ Let’s add intent and utterances first in the NLU tab. We will use this intent 
 
     - Keep me informed: Subscribe to receive notifications and updates
 
-    - In the `Chat with an Agent` button you need to invoke a journey from Quick reply advance settings. More on that [here](https://docs.yellow.ai/docs/howtos/create/quickreply).
+    - In the `Chat with an Agent` button you need to invoke a journey from Quick reply advance settings. 
 
 ** *Screenshot for quick reply advance settings* **
 
-Add a [logic node](https://docs.yellow.ai/docs/documentation/concepts/response-types-action-logic#logic) . Add If else conditions like this in the screenshot below.
+Add a [logic node](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic#logic) . Add If else conditions like this in the screenshot below.
 
 ** *Screenshot for logic node* **
 
@@ -176,11 +202,11 @@ Moreover, if a user selects the `Keep me informed` option, their data will be st
 
 #### Step 3 - Create Leave a Comment Journey
 
-- Add a prompt to get the user's name. Also, in order to verify the input name, you can use the [name validator](https://docs.yellow.ai/docs/howtos/basics/validate-input/#how-to-validate-location-name-phone-email-or-qr).
+- Add a prompt to get the user's name. Also, in order to verify the input name, you can use the [name validator](https://docs.yellow.ai/docs/platform_concepts/studio/steps/prompts-and-messages#use-case-specific).
 
 ** *Screenshot for logic node* **
 
-- Ask for user’s email address using a Question prompt. Here, you can use an email validator [https://docs.yellow.ai/docs/howtos/basics/validate-input/#how-to-validate-location-name-phone-email-or-qr].
+- Ask for user’s email address using a Question prompt. Here, you can use an email validator, [Email Validator](https://docs.yellow.ai/docs/platform_concepts/studio/steps/prompts-and-messages#use-case-specific).
 
 - Now, add a Quick Reply response to give user an option to select which type of comment they would like to share: Feedback, Complaint or Enquiry 
 
@@ -287,7 +313,7 @@ ISO code of english is ‘en’ and for Hindi is ‘hi’. Checkout ISO code for
 
 #### Step 1: Create a Database
 - Go to the Data tab and create a database as shown in the screenshot below. Alternatively, you can upload the ** *CSV file(add URL to CSV file)* ** to create the database and populate with the same data.
-- To learn more about how to create a database and perform action, checkout this [guide](https://docs.yellow.ai/docs/howtos/create/database-management)
+- To learn more about how to create a database and perform action, checkout this [guide](https://docs.yellow.ai/docs/platform_concepts/data/create-tables)
 
 ** *Screenshot of db* **
 
@@ -304,13 +330,13 @@ ISO code of english is ‘en’ and for Hindi is ‘hi’. Checkout ISO code for
 
 #### Step 3: Using Database Action Node
 
-- Add a Database Action Node. Here we want more information about the selected model. Earlier, we’ve already added the data about all car models in the database. Here, the Database action node will come into picture.  More on that [here](https://docs.yellow.ai/docs/documentation/concepts/response-types-action-logic#database).
+- Add a Database Action Node. Here we want more information about the selected model. Earlier, we’ve already added the data about all car models in the database. Here, the Database action node will come into picture.  More on that [here](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic#4-database).
 
 - Using the response given by the user, we can search in the database and provide necessary information to the user. In the database node, select the option to ‘Search’ from the dropdown. Earlier, we added the data in the ‘Product’ table, so select the table name ‘Product’ from the dropdown.
 
 - In the ‘product’ table car model name is stored in the product name field. While, the user selected option is saved in the choose_car step. Hence, set the condition as ‘WHERE product_name is VARIABLE choose_car’. 
 
-Again, for more information, check out this guide to learn [how database node works](https://docs.yellow.ai/docs/documentation/concepts/response-types-action-logic#database)
+Again, for more information, check out this guide to learn [how database node works](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic#4-database)
 
 
 ** * Screenshot of database node * **
