@@ -233,6 +233,10 @@ If bot is suppose to respond with a different message outside of agent working h
 
 ### 10. Set language
 You can use Set language action node to set or change the bot language at any given point in the flow. Set language action node takes only one input - variable containing ISO code of language you wish to change to. 
+(Note : You can google the ISO codes for various languages)
+
+![Here is the list of languages that we support](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported)
+
 
 ![](https://i.imgur.com/kNWdMP4.png)
 
