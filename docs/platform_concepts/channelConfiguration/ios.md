@@ -100,6 +100,20 @@ If you are adding Speech recognization, add following snippet to Info.plist of t
 <string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
 ```
 
+### Colors
+#### Status bar
+Status bar color can be set on `statusBarColor` color variable
+
+```swift
+config.statusBarColor = UIColor.red
+```
+
+#### Close button
+Close button color can be set on `closeButtonColor`
+```swift
+config.closeButtonColor = UIColor.blue
+```
+
 ## Start chatbot
 Once the config is set, chat bot can be presented by calling `startChatbot()` method and passing your view controller as an argument
 
