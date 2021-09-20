@@ -141,6 +141,20 @@ Speech to text can be enabled by setting the enableSpeech flag present in config
 ymChat.config.enableSpeech = true
 ```
 
+### Colors
+#### Status bar
+Status bar color can be set on `statusBarColor` color variable
+
+```java
+ymChat.config.statusBarColor = R.color.red
+```
+
+#### Close button
+Close button color can be set on `closeButtonColor`
+```java
+ymChat.config.closeButtonColor = R.color.white
+```
+
 ## Starting the bot
 Once the config is set, chat bot can be presented by calling `startChatbot()` and passing your Activity context as an argument
 
