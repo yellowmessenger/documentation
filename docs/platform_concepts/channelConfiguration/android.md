@@ -189,6 +189,31 @@ Bot can be programatically closed using `closeBot()` function
 ymChat.closeBot();
 ```
 
+## Unlink Device Token
+If you have configured for Fireabase push notification, and do not want to receive the notification when user logs out. Add the following code
+
+```java
+
+try {
+        YMChat ymChat = YMChat.getInstance();
+        ymChat.unlinkDeviceToken(botId, apiKey, deviceToken, new YellowCallback() {
+            @Override
+            public void success() {
+                Toast.makeText(MainActivity.this, "Token unlinked", Toast.LENGTH_SHORT).show();
+            }
+
+             @Override
+            public void failure(String message) {
+                 Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+            }
+        });
+    } catch (Exception e) { 
+        //Catch and handle the exception
+        e.printStackTrace();
+    }
+
+```
+
 ## Dependencies
 Following dependencies are used in chat bot SDK
 
