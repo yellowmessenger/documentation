@@ -173,7 +173,7 @@ YMChat.shared.unlinkDeviceToken(botId: <#bot-id#>, apiKey: <#api-key#>, deviceTo
     print("ERROR: \(errorString)")
 }
 ```
-Note: API key can be found in account settings under Access keys section after you login into https://app.yellow.ai
+Note: API key can be found in account settings under Access keys section after you login.
 
 ## Logging
 Logging can be enabled to understand the code flow and to fix bugs.

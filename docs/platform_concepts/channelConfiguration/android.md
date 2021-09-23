@@ -212,7 +212,7 @@ try {
     e.printStackTrace();
 }
 ```
-Note: API key can be found in account settings under Access keys section after you login into https://app.yellow.ai
+Note: API key can be found in account settings under Access keys section after you login.
 
 ## Dependencies
 Following dependencies are used in chat bot SDK
