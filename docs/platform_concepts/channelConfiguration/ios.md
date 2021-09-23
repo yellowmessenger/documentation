@@ -162,6 +162,19 @@ Bot can be programatically closed using `closeBot()` function
 YMChat.shared.closeBot()
 ```
 
+## Unlink Device Token
+If you want to stop receiving push notifications you can unlink the device token.
+Device token typically is unlinked when the user logs out of the app.
+
+```swift
+YMChat.shared.unlinkDeviceToken(botId: <#bot-id#>, apiKey: <#api-key#>, deviceToken: <#firebase-device-token#>) {
+    print("Token removed successfully")
+} failure: { errorString in
+    print("ERROR: \(errorString)")
+}
+```
+Note: API key can be found in account settings under Access keys section after you login.
+
 ## Logging
 Logging can be enabled to understand the code flow and to fix bugs.
 
