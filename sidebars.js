@@ -16,6 +16,7 @@ module.exports = {
   "tutorials/doc-cog",
   "tutorials/growth",
   "tutorials/inbox",
+  "tutorials/studio",
 ],
 
   cookbooks: [
