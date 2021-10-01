@@ -22,15 +22,6 @@ Note : Remember to verify your email in your inbox after sign up.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/R8hgThspNrY" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" alllow="fullscreen"></iframe>
 
-
-### Engagement
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HWcOSroSusk" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" alllow="fullscreen"></iframe>
-
-### Database
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/I7nhpKd8O9Q" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" alllow="fullscreen"></iframe>
-
 ### Testing APIs
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ul9b3pwNIC4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" alllow="fullscreen"></iframe>
