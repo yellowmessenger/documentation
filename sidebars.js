@@ -13,12 +13,11 @@ let components = listPaths();
 
 module.exports = {
   tutorials: ["tutorials/basics", 
-  "tutorials/doc-cog",
+  "tutorials/studio",
+  "tutorials/data",
   "tutorials/growth",
   "tutorials/inbox",
-  "tutorials/studio",
   "tutorials/engage",
-  "tutorials/data",
 ],
 
   cookbooks: [
