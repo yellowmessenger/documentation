@@ -12,7 +12,13 @@ const { listPaths } = require("./src/plugins/components");
 let components = listPaths();
 
 module.exports = {
-  tutorials: ["tutorials/basics", "tutorials/doc-cog"],
+  tutorials: ["tutorials/basics", 
+  "tutorials/studio",
+  "tutorials/data",
+  "tutorials/growth",
+  "tutorials/inbox",
+  "tutorials/engage",
+],
 
   cookbooks: [
     "cookbooks/conversation-design",
