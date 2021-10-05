@@ -175,6 +175,24 @@ Bot can be closed by tapping on cross button at top, and they can be programmati
 ymChatInterface.closeBot();
 ```
 
+## Unlink Device Token
+
+If you want to stop receiving push notifications you can unlink the device token.
+Device token typically is unlinked when the user logs out of the app.
+
+```c#
+  ymChatInterface.unLinkDeviceToken(
+    botId,
+    apiKey,
+    deviceToken,
+    (isDeviceTokenUnlinked) {
+      Console.WriteLine("Device token unlinked");
+      },
+    (failureMessage) {
+      Console.WriteLine(failureMessage);
+      });
+```
+
 ## Demo App
 
 A demo app can be used as a reference to better understand how this SDK can be integrated in the app

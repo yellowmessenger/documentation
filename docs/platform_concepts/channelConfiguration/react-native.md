@@ -177,6 +177,28 @@ Bot can be programatically closed using `closeBot()` function
 YMChat.closeBot();
 ```
 
+## Unlink Device Token
+
+If you want to stop receiving push notifications you can unlink the device token.
+Device token typically is unlinked when the user logs out of the app.
+
+```javascript
+YMChat.unlinkDeviceToken(
+  botId,
+  apiKey,
+  deviceToken,
+  (unLinkDeviceTokenResult) => {
+    if (unLinkDeviceTokenResult == true) {
+      console.log("Device token unlinked");
+    } else {
+      console.log(unLinkDeviceTokenResult);
+    }
+  }
+);
+```
+
+Note: API key can be found in account settings under Access keys section after you login.
+
 ## Demo App
 
 A demo app can be used as a reference to better understand how this SDK can be integrated in the app
