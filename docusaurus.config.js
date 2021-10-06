@@ -78,6 +78,12 @@ module.exports = {
           activeBasePath: "docs/tutorials",
         },
         {
+          to: "docs/updates/builder",
+          label: "What's New",
+          position: "left",
+          activeBasePath: "docs/whats_new",
+        },
+        {
           to: "https://community.yellowmessenger.com",
           label: "Community",
           position: "right",

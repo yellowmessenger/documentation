@@ -137,6 +137,25 @@ Bot can be closed by tapping on cross button at top, and they can be programmati
 cordova.plugins.ymchat.closeBot();
 ```
 
+## Unlink Device Token
+
+If you want to stop receiving push notifications you can unlink the device token.
+Device token typically is unlinked when the user logs out of the app.
+
+```javascript
+cordova.plugins.ymchat.unlinkDeviceToken(
+  botId,
+  apiKey,
+  deviceToken,
+  () => {
+    console.log("Device token unlinked");
+  },
+  (error) => {
+    console.log(`error ${error.message}`);
+  }
+);
+```
+
 ## Demo App
 
 A demo app can be used as a reference to better understand how this SDK can be integrated in the app

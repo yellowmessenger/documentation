@@ -145,6 +145,24 @@ Bot can be programmatically closed using `closeBot()` function
 YmChat.closeBot();
 ```
 
+## Unlink Device Token
+
+If you want to stop receiving push notifications you can unlink the device token.
+Device token typically is unlinked when the user logs out of the app.
+
+```dart
+  YmChat.unLinkDeviceToken(
+    botId,
+    apiKey,
+    deviceToken,
+    () {
+      log("Device token unlinked");
+      },
+    (failureMessage) {
+      log(failureMessage);
+      });
+```
+
 ## Demo App
 
 A demo app can be used as a reference to better understand how this SDK can be integrated in the app

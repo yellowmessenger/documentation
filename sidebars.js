@@ -12,7 +12,13 @@ const { listPaths } = require("./src/plugins/components");
 let components = listPaths();
 
 module.exports = {
-  tutorials: ["tutorials/basics", "tutorials/doc-cog"],
+  tutorials: ["tutorials/basics", 
+  "tutorials/studio",
+  "tutorials/data",
+  "tutorials/growth",
+  "tutorials/inbox",
+  "tutorials/engage",
+],
 
   cookbooks: [
     "cookbooks/conversation-design",
@@ -287,5 +293,15 @@ module.exports = {
         "platform_concepts/omniChannelNotifications/sendMessage",
       ],
     },
+  ],
+  tutorials: [
+    "updates/builder",
+    "updates/analytics",
+    "updates/doc-cog",
+    "updates/inbox",
+    "updates/Integrations",
+    "updates/marketplace",
+    "updates/mobileApps",
+    "updates/UI",
   ],
 };
