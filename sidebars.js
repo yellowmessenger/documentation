@@ -294,4 +294,14 @@ module.exports = {
       ],
     },
   ],
+  tutorials: [
+    "updates/builder",
+    "updates/analytics",
+    "updates/doc-cog",
+    "updates/inbox",
+    "updates/Integrations",
+    "updates/marketplace",
+    "updates/mobileApps",
+    "updates/UI",
+  ],
 };
