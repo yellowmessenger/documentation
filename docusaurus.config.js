@@ -84,7 +84,7 @@ module.exports = {
           activeBasePath: "docs/whats_new",
         },
         {
-          to: "https://community.yellowmessenger.com",
+          to: "https://community.yellow.ai",
           label: "Community",
           position: "right",
         },

@@ -294,7 +294,7 @@ module.exports = {
       ],
     },
   ],
-  tutorials: [
+  updates: [
     "updates/builder",
     "updates/analytics",
     "updates/doc-cog",
