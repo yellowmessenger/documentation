@@ -97,7 +97,8 @@ module.exports = {
     },
     footer: { links: [] },
     googleAnalytics: {
-      trackingID: "UA-135959729-1",
+      // trackingID: "UA-135959729-1",
+      trackingID: "UA-159942894-1",
     },
   },
   presets: [
