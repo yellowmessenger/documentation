@@ -134,6 +134,13 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 ymChat.config.customBaseUrl = "https://yourcustomurl.com";
 ```
 
+### V2 bot
+You can enable V2 bot by setting the version in config. Default value is 1
+
+```java
+ymChat.config.version = 2;
+```
+
 ### Speech to Text
 Speech to text can be enabled by setting the enableSpeech flag present in config. Default value is `false`
 

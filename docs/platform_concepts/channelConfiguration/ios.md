@@ -86,6 +86,13 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 config.customBaseUrl = "https://yourcustomurl.com"
 ```
 
+### V2 bot
+You can enable V2 bot by setting the version in config. Default value is 1
+
+```swift
+config.version = 2
+```
+
 ### Speech to Text
 Speech to text can be enabled by setting the enableSpeech flag. Default value is `false`
 ```swift
