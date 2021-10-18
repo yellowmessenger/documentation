@@ -22,7 +22,7 @@ repositories {
 dependencies {
     ...
     ...
-	   implementation 'com.github.yellowmessenger:YMChatbot-Android:1.5.+
+	   implementation 'com.github.yellowmessenger:YMChatbot-Android:1.6.+
 }
 ```
 
@@ -132,6 +132,13 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 
 ```java
 ymChat.config.customBaseUrl = "https://yourcustomurl.com";
+```
+
+### V2 bot
+You can enable V2 bot by setting the version in config. Default value is 1
+
+```java
+ymChat.config.version = 2;
 ```
 
 ### Speech to Text
