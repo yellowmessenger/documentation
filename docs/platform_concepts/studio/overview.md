@@ -3,7 +3,11 @@ title: Understanding Conversational Studio
 sidebar_label: Overview
 ---
 
-This section will make you familiar with the first section you see on top on the platform - Studio. Studio is the section where you design and train your chatbot. 
+<!-- This section will make you familiar with the first section you see on top on the platform - Studio. Studio is the section where you design and train your chatbot. 
+ -->
+
+You don't have to be a coder to build a bot! At least not on our platform. Our easy to use , no-code platform can help you build a bot in just a few clicks with excellent speed.
+
 
 :::info
 
@@ -18,8 +22,20 @@ This section will make you familiar with the first section you see on top on the
 ## What you can do in studio?
 
 ![](https://i.imgur.com/49IDEd8.png)
+<!-- update screenshot here -->
 
-Let's see a brief overview of what you can do in studio before proceeding with dedicated documentation for each sub- section.
+Studio consists of following moduels:
+- Build
+    - Flows: Here conversatinal flow can be designed using [journeys](../studio/journeys), [prompts](../studio/steps/prompts-and-messages/) and [nodes](../studio/steps/steps/). 
+    - NLU: NLU is like a brain of a bot. Here bot can be trained using [intents](../studio/natural-language-understanding/intents) and [entities](../studio/natural-language-understanding/entities).
+    - Code
+    - API
+- Learn
+- FAQ
+- Document Cognition
+- Event hub
+- Chat logs
+
 
 ### 1. Design your conversations 
 
