@@ -43,7 +43,8 @@ module.exports = {
       collapsed: false,
       items: [
         "cookbooks/template-bots/model-bot",
-        "cookbooks/template-bots/customer-support",
+        // "cookbooks/template-bots/customer-support-bot",
+        "cookbooks/template-bots/customer-support-bot",
         "cookbooks/template-bots/faq",
         "cookbooks/template-bots/lead-generation",
       ],
