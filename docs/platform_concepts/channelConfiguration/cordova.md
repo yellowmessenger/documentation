@@ -69,6 +69,14 @@ cordova-plugin-ymchat supports bots with on-prem deployments. For the bot to wor
 cordova.plugins.ymchat.setCustomURL("https://your-on-prem-url.com");
 ```
 
+### V2 bot
+
+You can enable V2 bot by setting the version by calling `setVersion()` method. Default value is 1
+
+```javascript
+cordova.plugins.ymchat.setVersion(2);
+```
+
 ### Speech to Text
 
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
