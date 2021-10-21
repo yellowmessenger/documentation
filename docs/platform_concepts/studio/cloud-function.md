@@ -1,6 +1,6 @@
 ---
-title: Cloud Function
-sidebar_label : Cloud Functions
+title: Code
+sidebar_label : Code
 ---
 ### How to create a new function? 
 You can add a new function to write your custom logic in code in the **`code`** section of the studio. 

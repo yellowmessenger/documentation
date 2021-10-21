@@ -8,13 +8,14 @@ It is entirely your choice!
 
 :::info
 
-- If you are looking to go through detailed tutorials, checkout [Platform Concepts](../platform_concepts/overview).
+- If you are looking to go through detailed bot building tutorials, checkout [Cookbooks](../cookbooks/getting_started).
 
 :::
 
 > :heavy_check_mark: Before building a bot, you will have to set up your bot project. To do it, click [here](../../howtos/basics/create-a-bot)
 
-![](https://cdn.yellowmessenger.com/g0rI2u7IDLmm1622783156107.gif)
+<!-- ![](https://cdn.yellowmessenger.com/g0rI2u7IDLmm1622783156107.gif) -->
+<!-- update video here -->
 
 ---
 ## Step 1: Start conversing
@@ -23,13 +24,14 @@ Now that you have given an identity for your bot, you can start teaching it how 
 
 
 ![](https://cdn.yellowmessenger.com/WggzQMhsdGrE1622775051655.gif)
+<!-- update GIF here -->
 
 ## Step 2: A conversation can go 2 ways
 
 Either your bot understands what the user is saying or it does not. We have preconfigured the 2-way flow for you
 
 ![](https://cdn.yellowmessenger.com/SCuQkvpM3uED1622776948618.png)
-
+<!-- update annotated bot flow here -->
 
 ## Step 3: Create Journeys and add nodes
 
@@ -58,7 +60,7 @@ In case you are wondering what to do after building your bot, there is a lot mor
 
 ## Studio
 
-The Yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click [here](../../platform_concepts/studio/overview).
+The Yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click [here](../../docs/platform_concepts/studio/overview).
 
 ## Data
 
