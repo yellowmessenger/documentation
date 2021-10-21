@@ -6,7 +6,7 @@ sidebar_labels : FAQ Management
 ### How to add multiple FAQs?
 
 
-Many time what happens is you want to add multiple FAQs in the bot. While the Yellow Messenger provides a way to do that the easy way too, but repeating the same process for multiple FAQs is a tedious process. (believe us, we've been there!)
+Many time what happens is you want to add multiple FAQs in the bot. While the yellow.ai provides a way to do that the easy way too, but repeating the same process for multiple FAQs is a tedious process. (believe us, we've been there!)
 
 Worry not, because we already have a feature specifically for that. Using this feature, you can add multiple FAQs at once through a CSV file.
 
@@ -57,6 +57,8 @@ All the FAQs you've added, you can see on the left side. To check if a question 
 8. Now you can go back to `Try Your Bot` under `Overview` tab and try one of FAQ you've added eariler. Voila! Congratulations on building your first FAQ bot! 🎉
 
 ![Try FAQs in your bot](https://cdn.yellowmessenger.com/GYNYBPbWXGFe1615887293471.png)
+
+---
 
 ### FAQs in Multilingual bots
 

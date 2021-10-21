@@ -235,8 +235,7 @@ Adding utterances here will unnecessarily increase the complexity of the NLP Mod
 - [ ] Mininum 2 intents are required to train a bot
 :::
 
-:::info
-### Training reports :spiral_note_pad: 
+:::info Training reports :spiral_note_pad: 
 Now you can also run **Training reports** on your bot to evaluate how well your bot utterances are designed. 
 :::
 
