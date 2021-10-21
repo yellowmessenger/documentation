@@ -232,6 +232,7 @@ Adding utterances here will unnecessarily increase the complexity of the NLP Mod
 - [ ] Journeys are distinct and conflicting journeys have been merged
 - [ ] Model does not overfit (False Positives have been handled)
 - [ ] didYouMean (Suggestions) feature is enabled
+- [ ] Mininum 2 intents are required to train a bot
 :::
 
 :::info

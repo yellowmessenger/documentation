@@ -2,15 +2,13 @@
 title: Prompts and Messages
 sidebar_label: Prompts and Message
 ---
+
 In this section we will talk about Interactive nodes, viz, 
-- Messages
-- Prompts
+- **Messages** are one-way communication nodes. Message nodes do not wait for any user input. 
+- **Prompts** on the other hands are questions bot asks user. Prompts expected a response from users. 
 
 ![](https://i.imgur.com/N5367FZ.png)
 
-
-**Messages** are one-way communication nodes. Message nodes do not wait for any user input. 
-**Prompts** on the other hands are questions bot asks user. Prompts expected a response from users. 
 
 :::info
 :pushpin: **Note**:  You can personalise prompts and messages based on language and channels:grey_exclamation: 

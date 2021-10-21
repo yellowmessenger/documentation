@@ -3,8 +3,14 @@ title: Let's start with Journeys
 sidebar_label: Journeys
 ---
 
-**Journeys are how we visualise & design conversational flow**. This section will help you get familiar with journeys. 
-Journeys can be found under `Design section`
+** Journey is the Conversational flow between user and the bot. **
+    - User: “Show me the menu”
+    - Bot: “Please select your Cuisine: South Indian, North Indian”
+    - User: “South Indian”
+    - Bot: “Please select the Item: Dosa, Pongal . . .”
+
+<!-- Update a screenshot of a journey-->
+
 
 ---
 ## Understanding 'Journeys'
@@ -44,6 +50,8 @@ As a bot developer, there can be multiple user cases where you need to design so
 ## How are Journeys triggered? 
 
 ![](https://i.imgur.com/gPqIjG3.gif)
+
+<!-- update a screenshot of journey triggers -->
 
 
 ### :pushpin: User Intent

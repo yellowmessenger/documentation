@@ -80,6 +80,16 @@ module.exports = {
             "platform_concepts/studio/steps/action-nodes-and-logic",
           ],
         },
+
+        {
+          type: "category",
+          label: "Natural Language Understanding",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/natural-language-understanding/intents",
+            "platform_concepts/studio/natural-language-understanding/entities",
+          ],
+        },
         {
           type: "category",
           label: "Knowledge Management",
@@ -109,15 +119,7 @@ module.exports = {
             "platform_concepts/studio/context-management/add-contextual-response",
           ],
         },
-        {
-          type: "category",
-          label: "Natural Language Understanding",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/natural-language-understanding/intents",
-            "platform_concepts/studio/natural-language-understanding/entities",
-          ],
-        },
+  
 
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",

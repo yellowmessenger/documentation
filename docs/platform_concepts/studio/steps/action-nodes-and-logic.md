@@ -11,7 +11,7 @@ Action nodes are used whenever we need to take some action behind the scenes exa
 ![](https://i.imgur.com/aBB6iDw.png)
 
 ---
-### 1. API
+### API
 
 API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) from user inputs and then store API response in a variable for further use. 
 
@@ -56,13 +56,13 @@ return new Promise
 
 ---
 
-### 2. Analytics
+### Analytics
 Analytics node can be used to sent analytics events at any point in the execution of journey. You type the event name to push and select value. 
 ![](https://i.imgur.com/ZrlJRWi.png)
 
 ---
 
-### 3. Variables
+### Variables
 Variables node can be used to set value of one or more variables at any point in the node. ([Learn how to create a variable](../bot-variables))
 > :information_source: If you leave value blank, it will set to empty string
 
@@ -70,20 +70,20 @@ Variables node can be used to set value of one or more variables at any point in
 
 ---
 
-### 4. Database
+### Database
 Database action node helps you in perform simple insert and search operations on your [database tables](../../data/create-tables). 
 
-*  **Insert**
+#### **Insert**
 You select insert operation to insert details against each column into any database table you select. 
 ![](https://i.imgur.com/Bs3DcfA.png)
 
-*  **Bulk Insert**
+#### **Bulk Insert**
 You can also do bulk insert in database instead of just one row at a time. All you need on this node is to select a variable containing data you want to insert. 
 [To be updated]
 
 ![](https://i.imgur.com/8rnAtQ9.png)
 
-*  **Search**
+#### **Search**
 You can also perform search operation in database node. 
 
 ![](https://i.imgur.com/9yCz0DD.png)
@@ -92,41 +92,55 @@ You can also perform search operation in database node.
 1. For searching, you can **select a table** you want to perform search on. 
 2. **Add filter**: You can also add filters to your search (optional). 
 
-Following filter conditons are available,
-let's understand with examples of what all will match with '**`Model car`**' string - 
+  Following filter conditons are available,
+  let's understand with examples of what all will match with '**`Model car`**' string - 
 
-**a**. **Is/Is not** : for exactly matching/exactly not matching with value given. 
-Eg: 'Model car' will be matched 
+  **a**. **Is/Is not** : for exactly matching/exactly not matching with value given. 
+  Eg: 'Model car' will be matched 
 
-**b**. **contains/does not contain** : will be matched/omitted if it contains the given value
-Eg: 'Model car', 'this is a Model car', 'Model car 101' all will be matched/omitted
+  **b**. **contains/does not contain** : will be matched/omitted if it contains the given value
+  Eg: 'Model car', 'this is a Model car', 'Model car 101' all will be matched/omitted
 
-**c**. **contains any/does not contain any**: this is like above, but here each word will be matched/omitted as contains instead of whole phrase. 
-Eg: 'Model car', 'Model', 'car', 'this is a Model', 'car 242' etc all will be matched
+  **c**. **contains any/does not contain any**: this is like above, but here each word will be matched/omitted as contains instead of whole phrase. 
+  Eg: 'Model car', 'Model', 'car', 'this is a Model', 'car 242' etc all will be matched
 
-**d**. **range**: In range you can enter a `from` and `to` value as a filter. 
-Eg: prince `from`:'1000' `to`:5000
+  **d**. **range**: In range you can enter a `from` and `to` value as a filter. 
+  Eg: prince `from`:'1000' `to`:5000
 
 3. **Output** : You can sort the output based on a string type column (optional), modify the size of output (maximum no. of records to fetch) and store this result in a variable.
- 
 
 
+#### Update
 
+![](https://i.imgur.com/o7lvCdC.png)
+
+Update option in the database node can be used to update values stored in the tables.
+To do so:
+1. Select update option in database node
+2. Select the name of the table 
+3. You can add a where condition that acts as condition that has to be met in order to update the value
+4. In Update with 
+
+  - In Fields add the name of column    
+  - In with value add the variable storing the value that you want to update current
 
 ---
 
-### 5. Functions
+### Functions
 You can use function node to excute code at any point in the flow. 
-In this node you can select the function you wish to execute and variable to store the return value of function in (optional).
-> :information_source: Learn [here](../cloud-function) about different methods/args you can use in functions. 
+In this node you can select the [code function](../cloud-function) you wish to execute and [variable](../bot-variables) to store the return value of function in (optional).
 
 ![](https://i.imgur.com/hCnAPvz.png)
 
----
+:::info
+
+Learn [here](../cloud-function) about different methods/args you can use in functions. 
+
+:::
 
 
-### 6. Document Search
-Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the [knowledge base](../../knowledge-management/what-is-document-cognition).  (This node shows results from document cognition)
+### Document Search
+Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base.  (This node shows results from document cognition)
 
 ![](https://i.imgur.com/0V43oWI.png)
 
@@ -140,45 +154,51 @@ Document Search action node is used to answer user query at any point in the flo
 
 ---
 
-### 7. Send Email
+### Send Email
 You can use `Send Email` node to Send Emails to user.
-Following fields can be configured:-
+
+Following fields can be configured:
 - `From`  is a default email. (Currently custom emails are not supported)
 - `To` can be selected from bot variables. 
--  `Subject`- You can write plain text and use variables here. 
-- `Body` - You can write plain text, basic HTML markdown, or can also use [bot variables](../bot-variables). 
+- `Subject`- You can write plain text and use variables here. 
+- `Body` - You can write plain text, basic HTML markdown, or can also use [variables](../bot-variables). 
 
 ![](https://i.imgur.com/BlpcD8e.png)
 
 
 ---
 
-### 8. Modifier
+### Modifier
 
 Modifier node is used to perform a series of simple operations like lower case, capitilise, remove from end, replace with etc on input variable and store the 'modified' output. This node can be quick used when you want to say, modify some user input before entering to DB or pass to API node, or fetch from API and show to user etc.
 
-> :information_source:  You can also test your series of modifiers by entering different input strings to check whether you are getting desired output in test window shown below. 
+:::info
+
+  You can also test your series of modifiers by entering different input strings to check whether you are getting desired output in test window shown below. 
+:::
 
 ![](https://i.imgur.com/ENukZvc.png)
 
 ---
 
-### 9. Raise Ticket
+### Raise Ticket
 
 Raise ticket is used in order to connect user to the human agent. Raise Ticket Node can be found in Actions List - 
 
 ![](https://cdn.yellowmessenger.com/06DOgJSptFtI1625671454725.png)
+<!-- update screenshot -->
 
 This simple UI node can be used to setup basic & advanced scenarios such as Working Hours, Agent Availibiity, voice/video calling, etc required to create a ticket.
 
 **Raise Ticket Outputs** - 
-**1. Ticket Closed** - This essentially is bot behaviour after the Agent closes a ticket (i.e. s/he has resolved user query).
-**2. Error** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured. 
+
+1. ** Ticket Closed ** - This essentially is bot behaviour after the Agent closes a ticket (i.e. s/he has resolved user query).
+2. ** Error ** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured. 
 
 
-![](https://cdn.yellowmessenger.com/rppNdLtUR4MN1625671670507.png)
+![](https://i.imgur.com/Str2q6a.png)
 
-While raising a ticket, you can pass certain optional fields such as **Name** , **Contact** (Email/Phone Number), and **Query**. Message after Ticket Assignment will be seen by user on getting connected to the agent.
+While raising a ticket, you can pass fields such as **Name** , **Contact** (Email/Phone Number), and **Query**. Message after ticket assignment will be seen by user on getting connected to the agent.
 
 **Advanced Options** - to provide additional information to the ticket.
 
@@ -231,27 +251,32 @@ If bot is suppose to respond with a different message outside of agent working h
 
 ---
 
-### 10. Set language
+### Set language
 You can use Set language action node to set or change the bot language at any given point in the flow. Set language action node takes only one input - variable containing ISO code of language you wish to change to. 
 (Note : You can google the ISO codes for various languages)
 
-![Here is the list of languages that we support](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported)
+[Here is the list of languages that we support](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported)
 
 
 ![](https://i.imgur.com/kNWdMP4.png)
 
-> :warning: Language can only be changed to only if that language is configured in bot settings, otherwise the node will fail. 
+:::warning
+Language can only be changed to only if that language is configured in bot settings, otherwise the node will fail. 
+:::
 
 
-### 11. Trigger Journey
+### Trigger Journey
 Trigger Journey action node can be used to trigger another journey at any point in the flow. 
-> :information_source: If you add more nodes after trigger journey, the bot will return to the remaining flow in the journey after triggered journey ins completed. 
+
+:::info
+If you add more nodes after trigger journey, the bot will return to the remaining flow in the journey after triggered journey ins completed.
+::: 
 
 ![](https://i.imgur.com/60xWXCn.png)
 
 ---
 
-### 12. Send OTP and verify OTP
+### Send OTP and Verify OTP
 Send OTP and Verify OTP are simple nodes that can be used for sending and verifying OTPs.  
 
  ![](https://i.imgur.com/PedjC6o.png)
@@ -260,7 +285,7 @@ Send OTP and Verify OTP are simple nodes that can be used for sending and verify
  
 ![](https://i.imgur.com/aRvqus8.png)
 
-### 13. Generate PDF
+### Generate PDF
 This node is used to generate PDFs that contain dynamic data.
 
 ![](https://cdn.yellowmessenger.com/4yIdNmUwh3Q51626268800011.png)
@@ -274,7 +299,10 @@ eg: The company name is {company name}
   This can now be sent through the **Send file** node. Simply choose the relevant variable from the *fetch from variable* dropdown, this will send the dynamically generated file as a PDF to the user.
 
 ## Logic
-     If condition
-      Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
+
+### If condition
+Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
 
 ![](https://i.imgur.com/sSq1fSG.png)
+
+<!-- update branch flow chart -->
