@@ -145,7 +145,7 @@ If you are supporting Speech recognization, add following snippet to Info.plist 
 Chat bot can be presented by calling `startChatbot()`. This method will display full screen chat view
 
 ```javascript
-YMChat.startChatbot(2);
+YMChat.startChatbot();
 ```
 
 ## Bot Events
