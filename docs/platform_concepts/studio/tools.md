@@ -50,9 +50,9 @@ Default is like following:-
 **To give more customisation over how it can look, we have two settings:**
 * **Whatsapp Quick reply index** - You can select from three options numbers(default), alphabets or emojis (numerical emojis) to as your index in cases like above.
 * **Structure Prefix** You can also your overall prefix with bold & italic support. 
-efault  preset entry in this box is `{{index}}` which looks like example above (when type is numbers).
-    Let's see one more example -
-    `_Type_ *{{index}}** for` will give you prefix  - 
+Default  preset entry in this box is `{{index}}` which looks like example above (when type is numbers).
+    
+Let's see one more example: `_Type_ *{{index}}** for` will give you prefix  - 
 > "*Type* **1** for ", "*Type* **2** for " and so on. 
 
 Your quick reply can look like : 
@@ -90,8 +90,7 @@ But after this , previous journey is lost and user will have to trigger and star
 
 **Other settings**
 - **Follow-up message** : Follow-up message is the message in above example "Do you want to continue where you left off?" -> This message is editable. 
-- **Sticky Journeys**
-If you have some journeys more complicated, where user interruption is not ideal , you can mark them as sticky journeys. 
+- **Sticky Journeys**: If you have some journeys more complicated, where user interruption is not ideal, you can mark them as sticky journeys. 
 For these journeys, if an interruption is received, **Sticky journey prompt**(editable) will nudge users to stick to this journey. If selected `Yes` current journey will continue and other will be suggested later in followup message. 
 
 Working example below - 
@@ -127,14 +126,21 @@ To be updated
 
 NLU settings include settings related to Natural language Understanding as name suggests, and include the following
 
+#### Prediction
 - **Primary Model confidence**
 You can modify primary model confidence . Confidence basically is a minimum below which intent will not be triggered. 
     > ML model matches user utterances to an intent with certain confidence which lies between 0 to 1. 
 - **Secondary Model confidence** 
 Similary you can also select secondary model confidence. Secondary model is basically your Global contextual model. 
+
+#### Document Search Settings
 - **Document Search Threshold** 
 Document Search thershold is minimum confidence needed to show documents in document search node. 
-- **Multi-Intent settings**
+
+- **Boost document rank by**
+Coming soon
+
+#### Multi-Intent settings
 Enabling Multi-Intent will help model detecting two - intents in one user utterances. 
 Basically, if this is enabled and user says
 " Book a flight and reserve a hotel" (assuming appropriate training)
