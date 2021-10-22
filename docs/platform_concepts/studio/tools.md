@@ -138,7 +138,7 @@ Similary you can also select secondary model confidence. Secondary model is basi
 Document Search thershold is minimum confidence needed to show documents in document search node. 
 
 - **Boost document rank by**
-Coming soon
+If you want to give preference to documents, where the document headers match a user query, this parameter can be used to boost the doc ranks. For example, you've a doc in which there is a header : user data and rest of content below it. When this option is enabled, this doc will show up higher in ranks because the query user data matches the header in the doc.
 
 #### Multi-Intent settings
 Enabling Multi-Intent will help model detecting two - intents in one user utterances. 
