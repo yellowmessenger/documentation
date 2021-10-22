@@ -24,29 +24,26 @@ Finally, when a user messages the bot, the id would be displayed to the user.
 
 Transformation Function can be used when you wish to modify/manipulate the API response in order to present the API response in a more meaningful format to the user.
 
+1. Add the a function in the `Code` module and add the code snippet below.
 
+![](https://i.imgur.com/b4AJP3Y.png)
 
-1. Add the a function in the transformation function
+In the transformation function, you could access the API response in ymLib.args. You could write your own logic in javascript to fetch only the fields you wish to have in the response of API.
 
+**Code Snippet**: transformationFN
+```js
+let { apiResponse } = ymLib.args; // retrieve API response
+let weather_condition, actions = [],result=[]; 
+let response = JSON.parse(apiResponse.body); 
 
-2. In the transformation function, you could access the API response in ymLib.args.
-You could write your own logic in javascript to fetch only the fields you wish to have in the response of API.
-
-
-
-3. After your logic, please return the value so that would be saved in a variable. You could use the variable in Prompt or Message node to send that to user.
-![API Response](https://cdn.yellowmessenger.com/AcpS8JuDUAbu1623865522897.png)
-
-
-
-A sample transformation function to modify the information which we get from shopify API.
-
-Another example transformation function here. 
-```
-return new Promise(resolve => {
-    // userdetals api => {name:"Ravi", age:34}
-    ymLib.logger.log((ymLib.args.apiResponse, "response"));
-    return resolve(ymLib.args.apiResponse.name);
+response = response.weather; // fetch weather data from API response
+response.forEach((element, index) => {
+      actions = [];
+      weather_condition = `<strong>${element.main}</strong>`;
 });
-
+console.log(weather_condition);
+return weather_condition; 
 ```
+2. Once the transformation function is in place, return the value (here `name`) so that would be saved in a variable (here `response`). You could use the variable in Prompt or Message node to send that to user. 
+
+![](https://i.imgur.com/ADPdxJ7.png)
