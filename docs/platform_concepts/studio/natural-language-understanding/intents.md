@@ -248,7 +248,7 @@ Adding utterances here will unnecessarily increase the complexity of the NLP Mod
 ### Generate Utterance Reports :spiral_note_pad: 
 Now you can also run **Generate utterance reports** on your bot to evaluate how well your bot utterances are designed. The report will tell you how 'similar' your utterances within an intent and if there are any intents common in between journeys' 
 
-![](hhttps://i.imgur.com/FOl18v1.png)
+![](https://i.imgur.com/FOl18v1.png)
 
 ***Request folks to generate utterance report after initial NLU setup and regularly at least once a month.***
 :::
