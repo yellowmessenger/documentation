@@ -298,6 +298,15 @@ eg: The company name is {company name}
 
   This can now be sent through the **Send file** node. Simply choose the relevant variable from the *fetch from variable* dropdown, this will send the dynamically generated file as a PDF to the user.
 
+### Delay
+Using this action node, we can delay the next steps of our conversational flow in a journey. We can set the delay in terms of minutes or hours.
+
+![](https://i.imgur.com/SOvGGjq.png)
+
+Now if we see in this example the phone prompt is followed by a 1 min delay node. So the next name prompt will appear 1 min after phone prompt.
+
+
+
 ## Logic
 
 ### If condition

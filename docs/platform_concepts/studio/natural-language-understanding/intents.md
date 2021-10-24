@@ -235,7 +235,6 @@ Adding utterances here will unnecessarily increase the complexity of the NLP Mod
 - [ ] Mininum 2 intents are required to train a bot
 :::
 
-
 ### Understanding Confidence and Utterance Report
 
 ***Confidence score*** (0 to 1) is a rating generated for every utterance to show how accurate is that utterance in pointing towards the given intent. 
