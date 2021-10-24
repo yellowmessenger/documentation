@@ -9,7 +9,7 @@ sidebar_label : Contextual Responses
 Setting up contextual responses means adding more context to the response to a particular prompt. To simplify it further lets take an example  
 **Bot** : Can you share your email with me?  
 ~~**User** : Sure, gooduser@email.com~~   
-**Bot** : Why do you need my email?  
+**User** : Why do you need my email?  
 
 What if instead of giving their email address during a conversation, customer asked *What is an email* Or *Why do you need my email*. 
 These type of contextual intents can be handled in the following ways :

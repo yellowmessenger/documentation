@@ -4,7 +4,7 @@ Title : Sharepoint Integration
 ---
 ## SharePoint Integration
 
-Yellow Messenger's document cognition feature now supports integration with SharePoint. The document cognition system is hence capable of fetching entire documents from a SharePoint site (along with all sub-sites) which includes documents uploaded to document libraries, documents created online and list attachments, convert them into Q/A format and sync at a regular interval. All documents with extension '.docx' and '.pdf' are considered.
+yellow.ai's document cognition feature now supports integration with SharePoint. The document cognition system is hence capable of fetching entire documents from a SharePoint site (along with all sub-sites) which includes documents uploaded to document libraries, documents created online and list attachments, convert them into Q/A format and sync at a regular interval. All documents with extension '.docx' and '.pdf' are considered.
 
 ### Getting Started
 
