@@ -1,3 +1,8 @@
+---
+title: Chat Custom fields
+sidebar_label : Chat Custom fields
+---
+
 # Chat Custom fields
 
 

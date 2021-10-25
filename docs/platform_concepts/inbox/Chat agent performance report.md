@@ -1,3 +1,8 @@
+---
+title: Chat Agent performance report explained
+sidebar_label : Chat Agent performance report
+---
+
 # Inbox chat reports 101
 
 ## Agent performance report

@@ -1,6 +1,11 @@
+---
+title: Chat Archives report explained
+sidebar_label : Chat Archives report 
+---
+
 # Inbox chat reports 101
 
-## Chat archive  report
+## Chat archives  report
 
 Only an admin can download reports
 > Go to Inbox -> Chats -> Reports -> Chat Archives -> Generate

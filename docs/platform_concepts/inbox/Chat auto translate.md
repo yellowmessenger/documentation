@@ -1,3 +1,8 @@
+---
+title: Chat Auto translate
+sidebar_label : Chat Auto translate
+---
+
 # Chat Auto translate
 
 ## How to use Inbox's Auto translate

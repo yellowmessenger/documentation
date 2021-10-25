@@ -1,3 +1,9 @@
+---
+title: Chat Working hours
+sidebar_label : Chats Working hours
+---
+
+
 # Chat working hours
 
 ### Working hours

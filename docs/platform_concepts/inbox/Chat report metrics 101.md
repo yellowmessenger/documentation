@@ -1,3 +1,8 @@
+---
+title: Chat report metrics 101
+sidebar_label : Chat report metrics 101
+---
+
 # Inbox Chat report metrics
 
 ## Average Response Time [ Archive Report]
