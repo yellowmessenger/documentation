@@ -3,7 +3,7 @@ id: create-tables
 title: Creating Tables and Inserting Data
 ---
 
-### How to access the Database on the Yellow Messenger platform?
+### How to access the Database on the yellow.ai platform?
 
 Headover to the `Data` tab from the left sidebar to access the database.
 
@@ -44,7 +44,7 @@ Here `Field` means the Column Names that you have given in the DB Table and the 
 
 ![](https://cdn.yellowmessenger.com/8LR0MiBywueB1613559300319.png)
 
-Once this is done you can test your flow to confirm if the records are getting inserted to your table. Make sure you have selected the right Data Types for each value else you can keep it as `String` for all columns.
+Once this is done you can test your flow to confirm if the records are getting inserted to your table. Make sure you have selected the right Data Types for each value.
 
 #### `Step 3:` Export DB Records in CSV File
 
