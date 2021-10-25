@@ -1,4 +1,4 @@
-# Inbox Reports and Metrics
+# Inbox Chat report metrics
 
 ## Average Response Time [ Archive Report]
 It is the average time taken by the agent to respond to each message of the customer in a chat conversation. This metric is present in the Archives report. Response time is calculated for every agent response in a conversation. It is calculated by the following logic;
