@@ -64,8 +64,6 @@ The Yellow.ai Studio is the place to build those intelligent bots to power your 
 
 ## Data
 
-Content coming up soon!
-
 ## Growth
 
 Content coming up soon!

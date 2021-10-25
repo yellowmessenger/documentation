@@ -1,6 +1,7 @@
 ---
 id: model-bot
-title: Getting Started with Model Bot
+title: Model Bot
+sidebar_label: Model Bot
 featured: true
 ---
 
@@ -8,9 +9,9 @@ This document describes the Model Bot, a bot build for the following purposes :
 1. Learn how to build a bot by using no/less code 
 2. Follow standard bot building processes/steps as used in this bot. 
 
-## About Yellow.AI
+## About yellow.ai
 
-**Yellow.AI** (Product completely owned by Bitonic Technology Labs Pvt Ltd) is an Artificial intelligence powered leading Chatbot platform for enterprises and brands to create, deploy and manage  Intelligent Chatbots across various platforms to engage with their Customers. Yellow.AI closely works with Enterprises to evangelize their requirements, work with them to create customized chatbots for their specific needs using the Yellow.AI chatbot platform. 
+**yellow.ai** (Product completely owned by Bitonic Technology Labs Pvt Ltd) is an Artificial intelligence powered leading Chatbot platform for enterprises and brands to create, deploy and manage  Intelligent Chatbots across various platforms to engage with their Customers. Yellow.AI closely works with Enterprises to evangelize their requirements, work with them to create customized chatbots for their specific needs using the Yellow.AI chatbot platform. 
 
 **Yellow.AI** is backed by Microsoft Accelerator and a Microsoft Partner for Intelligent Chatbots.
 
