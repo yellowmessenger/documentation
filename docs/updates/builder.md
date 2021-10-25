@@ -1,6 +1,6 @@
 ---
-title: Builder Updates
-sidebar_label: Builder
+title: Studio Updates
+sidebar_label: Studio
 featured: true
 ---
 

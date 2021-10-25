@@ -301,7 +301,6 @@ module.exports = {
   updates: [
     "updates/builder",
     "updates/analytics",
-    "updates/doc-cog",
     "updates/inbox",
     "updates/Integrations",
     "updates/marketplace",
