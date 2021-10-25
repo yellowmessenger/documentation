@@ -268,6 +268,7 @@ module.exports = {
         "platform_concepts/appConfiguration/razorpay",
         "platform_concepts/appConfiguration/salesforce",
         "platform_concepts/appConfiguration/successfactors",
+        "platform_concepts/appConfiguration/shopify",
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk",
       ],
