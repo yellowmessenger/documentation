@@ -72,9 +72,8 @@ Different prompts return a response in different formats and datatype. You can r
 | Question      | string            |
 | Feedback      | object            |
 | Whatsapp List | string            |
-| Multi Select  | string            |
+| Multiselect   | string            |
 | Image/file    | string            |
-
 
 ### Actions
 Action nodes provides response in various datatype. You can refer to the table below to understand which variable datatype should be used with which action node.
@@ -88,6 +87,12 @@ Action nodes provides response in various datatype. You can refer to the table b
 | Notification Status   | object, array, number, string |
 | Raise ticket          | object, array, number, string |
 | Modifier              | object, array, number, string |
+| Document Search       | object, array, number, string |
+| Set Language          | object, array, number, string |
+| Send OTP              | object, array, number, string |
+| Verify OTP            | object, array, number, string |
+| Payment               | object, array, number, string |
+| Generate PDF          | object, array, number, string |
 
 
 ## Storing in a variable
