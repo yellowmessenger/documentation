@@ -1,5 +1,5 @@
 ---
-title: Getting Started with Customer Support Bot
+title: Customer Support Bot
 description: Customer Support Bot
 featured: true
 ---

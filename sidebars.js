@@ -25,7 +25,7 @@ module.exports = {
     {
       type: "category",
       label: "Basic",
-      items: ["cookbooks/Academy"],
+      items: ["cookbooks/multilingual"],
     },
     {
       type: "category",
