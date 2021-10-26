@@ -56,24 +56,24 @@ Coming soon
 
 ## Use Variables in a Node
 
-### Prompt
+### [Prompt](../studio/steps/prompts-and-messages)
 
 Different prompts return a response in different formats and datatype. You can refer to the table below to understand which variable datatype should be used with which prompt.
 
-| Prompt        | Variable Datatype |
-|---------------|-------------------|
-| Name          | string            |
-| Email         | string            |
-| Phone         | string            |
-| Location      | object            |
-| Carousel      | string            |
-| Quick Replies | string            |
-| Date          | object            |
-| Question      | string            |
-| Feedback      | object            |
-| Whatsapp List | string            |
-| Multiselect   | string            |
-| Image/file    | string            |
+| Prompt                                                                     | Variable Datatype |
+|----------------------------------------------------------------------------|-------------------|
+| [Name](../studio/steps/prompts-and-messages#use-case-specific)             | string            |
+| [Email](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
+| [Phone](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
+| [Location](../studio/steps/prompts-and-messages#location-prompt)           | object            |
+| [Carousel](../studio/steps/prompts-and-messages#carousal)                  | string            |
+| [Quick Replies](..studio/steps/prompts-and-messages#quick-replies)         | string            |
+| [Date](..studio/steps/prompts-and-messages#date-prompt)                    | object            |
+| [Question](..studio/steps/prompts-and-messages#general---question)         | string            |
+| [Feedback](..studio/steps/prompts-and-messages#feedback-prompt)            | object            |
+| [Whatsapp List](../studio/steps/prompts-and-messages#whatsapp-list-prompt) | string            |
+| Multiselect                                                                | string            |
+| [Image/file](studio/steps/prompts-and-messages#files-images-videos)        | string            |
 
 ### Actions
 Action nodes provides response in various datatype. You can refer to the table below to understand which variable datatype should be used with which action node.
