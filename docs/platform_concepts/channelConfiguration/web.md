@@ -15,7 +15,7 @@ Process:
 
 1. Place the following script at the end of your `</body>` tag
 
-```
+```html
 <script type="text/javascript">
 window.ymConfig = { bot:’botId’, ymAuthenticationToken: { id:"userPin",lang: "lang_code"} };  (function () {var w=window,ic=w.YellowMessenger;
 if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function()
@@ -31,7 +31,7 @@ Don't forget to update the Bot ID and User PIN and Language Code in the given co
 2. Event name 'authenticate' will be received in the bot.
 
 On receiving the event, we need to send back the senderId using the below code:
-```
+```js
 app.sendEvent({
                code: "verifiedUser",
                data: senderId
@@ -40,7 +40,7 @@ app.sendEvent({
 
 Sample Code for reference:
 
-```
+```js
 if (app.data.event && app.data.event.code === 'authenticate') {
    /**check db for userpin => map the app.sender to the userpin
     *next time when this event is received, check the userpin already has a sender in db,

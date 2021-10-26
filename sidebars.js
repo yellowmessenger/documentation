@@ -234,7 +234,6 @@ module.exports = {
       label: "Channel Configuration",
       collapsed: true,
       items: [
-        "platform_concepts/channelConfiguration/overview",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/android",
         "platform_concepts/channelConfiguration/ios",
