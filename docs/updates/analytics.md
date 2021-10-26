@@ -1,6 +1,6 @@
 ---
-title: Analytics Updates
-sidebar_label: Analytics
+title: Growth Updates
+sidebar_label: Growth
 featured: true
 ---
 

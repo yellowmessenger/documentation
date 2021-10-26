@@ -1,5 +1,5 @@
 ---
-sidebar_label : Lead Generation
+sidebar_label : Lead Generation Bot
 title : Lead Generation Bot
 ---
 ## Create Lead Generation Bot

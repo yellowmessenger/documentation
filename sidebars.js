@@ -234,7 +234,6 @@ module.exports = {
       label: "Channel Configuration",
       collapsed: true,
       items: [
-        "platform_concepts/channelConfiguration/overview",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/android",
         "platform_concepts/channelConfiguration/ios",
@@ -268,6 +267,7 @@ module.exports = {
         "platform_concepts/appConfiguration/razorpay",
         "platform_concepts/appConfiguration/salesforce",
         "platform_concepts/appConfiguration/successfactors",
+        "platform_concepts/appConfiguration/shopify",
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk",
       ],
@@ -300,7 +300,6 @@ module.exports = {
   updates: [
     "updates/builder",
     "updates/analytics",
-    "updates/doc-cog",
     "updates/inbox",
     "updates/Integrations",
     "updates/marketplace",
