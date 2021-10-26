@@ -75,24 +75,24 @@ Different prompts return a response in different formats and datatype. You can r
 | Multiselect                                                                | string            |
 | [Image/file](studio/steps/prompts-and-messages#files-images-videos)        | string            |
 
-### Actions
+### [Actions](../studio/steps/action-nodes-and-logic)
 Action nodes provides response in various datatype. You can refer to the table below to understand which variable datatype should be used with which action node.
 
-| Action Node           | Variable Datatype             |
-|-----------------------|-------------------------------|
-| API                   | object, array, number, string |
-| Database (search)     | array                         |
-| Function              | object, array, number, string |
-| Outbound Notification | object, array, number, string |
-| Notification Status   | object, array, number, string |
-| Raise ticket          | object, array, number, string |
-| Modifier              | object, array, number, string |
-| Document Search       | object, array, number, string |
-| Set Language          | object, array, number, string |
-| Send OTP              | object, array, number, string |
-| Verify OTP            | object, array, number, string |
-| Payment               | object, array, number, string |
-| Generate PDF          | object, array, number, string |
+| Action Node                                                                 | Variable Datatype             |
+|-----------------------------------------------------------------------------|-------------------------------|
+| [API](../studio/steps/action-nodes-and-logic#api)                           | object, array, number, string |
+| [Database (search)](../studio/steps/action-nodes-and-logic#search)          | array                         |
+| [Function](..studio/steps/action-nodes-and-logic#functions)                 | object, array, number, string |
+| Outbound Notification                                                       | object, array, number, string |
+| Notification Status                                                         | object, array, number, string |
+| [Raise ticket](../studio/steps/action-nodes-and-logic#raise-ticket)         | object, array, number, string |
+| [Modifier](../studio/steps/action-nodes-and-logic#modifier)                 | object, array, number, string |
+| [Document Search](../studio/steps/action-nodes-and-logic#document-search)   | object, array, number, string |
+| [Set Language](../studio/steps/action-nodes-and-logic#set-language)         | object, array, number, string |
+| [Send OTP](..studio/steps/action-nodes-and-logic#send-otp-and-verify-otp)   | object, array, number, string |
+| [Verify OTP](..studio/steps/action-nodes-and-logic#send-otp-and-verify-otp) | object, array, number, string |
+| Payment                                                                     | object, array, number, string |
+| [Generate PDF](../studio/steps/action-nodes-and-logic#generate-pdf)         | object, array, number, string |
 
 
 ## Storing in a variable
