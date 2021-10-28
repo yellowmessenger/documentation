@@ -16,8 +16,8 @@ This video will take you through the steps of signing up on https://cloud.yellow
 
 Note : Remember to verify your email in your inbox after sign up. 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/pT5PpSKTeb8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pT5PpSKTeb8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
 ### Platform Overview
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/R8hgThspNrY" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gyB697FRLDQ" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>

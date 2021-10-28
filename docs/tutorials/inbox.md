@@ -4,17 +4,18 @@ sidebar_label: Inbox
 featured: true
 ---
 
-### Inbox - Overview
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-K6-Yj9ICGw" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+### Overview
 
-### Inbox - Features
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UXM2-18QLds" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/AD4SAa_z6EU" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+### Features
 
-### Inbox - Settings
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mgu2MW8iJ80" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/38OLOs4Pjq4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+### Settings
 
-### Inbox - Email Ticketing
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Rozj3CxsAJs" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9DXJ1yNHQNc" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>\
+### Email Ticketing
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vGwb8DTUdEs" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
