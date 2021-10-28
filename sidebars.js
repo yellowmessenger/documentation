@@ -18,6 +18,7 @@ module.exports = {
   "tutorials/growth",
   "tutorials/inbox",
   "tutorials/engage",
+  "tutorials/webinars"
 ],
 
   cookbooks: [
