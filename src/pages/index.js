@@ -134,7 +134,7 @@ function Home() {
           description=" Refer Platform Concepts to build and deploy bots on channels where your
           customers are!"
           placeholder="Search by keyword ( Eg. How to build a bot, Journeys, steps)"
-        />
+        />        
         <section className={styles.section_container}>
           <h2 className={styles.title}>Browse topics</h2>
           <p className={styles.description}>

@@ -123,4 +123,7 @@ module.exports = {
     "https://fonts.googleapis.com/css2?family=Roboto&family=Source+Sans+Pro&display=swap",
   ],
   onBrokenLinks: "log",
+  scripts: [
+    "./bot.js", // connect support bot 
+  ]
 };
