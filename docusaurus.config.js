@@ -124,6 +124,6 @@ module.exports = {
   ],
   onBrokenLinks: "log",
   scripts: [
-    "src/theme/SearchBar/bot.js",
+    "./bot.js",
   ]
 };
