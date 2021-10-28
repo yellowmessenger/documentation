@@ -156,7 +156,6 @@ module.exports = {
       items: [
         "platform_concepts/inbox/inbox",
         "platform_concepts/inbox/manage-support-agent",
-        "platform_concepts/inbox/google-translate-api-inbox",
         {
           type: "category",
           label: "Mobile SDK",
@@ -166,6 +165,21 @@ module.exports = {
             "platform_concepts/inbox/mobilesdk/cordova",
           ],
         },
+        {
+          type: "category",
+          label: "Chats",
+          collapsed: true,
+          items: [
+            "platform_concepts/inbox/Chat agent activity report",
+            "platform_concepts/inbox/Chat agent performance report",
+            "platform_concepts/inbox/Chat archives report",
+            "platform_concepts/inbox/Chat auto translate",
+            "platform_concepts/inbox/google-translate-api-inbox",
+            "platform_concepts/inbox/Chat custom fields",
+            "platform_concepts/inbox/Chat report metrics 101",
+            "platform_concepts/inbox/Chat working hours"
+          ],
+        }
       ],
     },
     {
