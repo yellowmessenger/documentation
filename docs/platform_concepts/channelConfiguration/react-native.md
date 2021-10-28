@@ -113,6 +113,14 @@ ymchat-react-native supports bots with on-prem deployments. For the bot to work,
 YMChat.setCustomURL("https://your-on-prem-url.com");
 ```
 
+### V2 bot
+
+You can enable V2 bot by calling `setVersion()` method. Default value is 1
+
+```javascript
+YMChat.setVersion(2);
+```
+
 ### Speech to Text
 
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`

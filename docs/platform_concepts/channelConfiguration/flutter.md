@@ -20,7 +20,7 @@ dependencies:
 
 ## Usage
 
-Import import 'package:ymchat_flutter/ymchat_flutter.dart'; in dart file
+import 'package:ymchat_flutter/ymchat_flutter.dart'; in dart file
 
 ```dart
 import 'package:ymchat_flutter/ymchat_flutter.dart';
@@ -78,6 +78,14 @@ ymchat_flutter supports bots with on-prem deployments. For the bot to work, pass
 
 ```dart
 YmChat.setCustomURL("https://your-on-prem-url.com");
+```
+
+### V2 bot
+
+You can enable V2 bot by calling `setVersion()` method. Default value is 1
+
+```dart
+YmChat.setVersion(2);
 ```
 
 ### Speech to Text
