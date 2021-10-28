@@ -124,6 +124,6 @@ module.exports = {
   ],
   onBrokenLinks: "log",
   scripts: [
-    "./bot.js",
+    "./bot.js", // connect support bot 
   ]
 };
