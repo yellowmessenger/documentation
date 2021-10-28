@@ -1,41 +1,49 @@
 ---
 title: Inbox SDK for Android
-sidebar_label : Android
+sidebar_label: Android
 ---
 
 ## SDK integration
-1. You can download the sdk [here](https://firebasestorage.googleapis.com/v0/b/ym-mobile-app.appspot.com/o/android-agent-sdk%2FYellowInbox_v1.0.2.aar?alt=media&token=df0512e0-0846-4661-a3b0-ece8ae7c23f4)
+
+1. You can download the sdk [here](https://firebasestorage.googleapis.com/v0/b/ym-mobile-app.appspot.com/o/android-agent-sdk%2FYellowInbox_v1.1.0.aar?alt=media&token=d8c4cfa8-dbce-486e-809a-3c635c6a2395)
 2. Add the SDK to your project
 
 #### Demo App
+
 A demo app has been created to understand the integration and usage of the SDK. It can be found here [https://github.com/yellowmessenger/Inbox-SDK-Demo-App-Android](https://github.com/yellowmessenger/Inbox-SDK-Demo-App-Android)
 
-## Initialization  
+## Initialization
+
 The SDK can be initialised by passing API_KEY, USER_ID and BOT_ID to the init method.
 
 ```java
-YellowInbox.init(applicationContext : Context, 
-    apiKey : String, 
+YellowInbox.init(applicationContext : Context,
+    apiKey : String,
     userId: String,
     botId : String
 ) : LiveData<Resource<Void>>
 ```
 
 #### applicationContext
+
 Application context is used to initialise the service which runs XMPP.
 
 #### apiKey
-API_KEY will be provided by yellow.ai, It is clients responsibility to keep the API_KEY safe. 
+
+API_KEY will be provided by yellow.ai, It is clients responsibility to keep the API_KEY safe.
 This is a mandatory parameter.
 
 #### userId
+
 UserId will be the id registered/provided to yellow.ai by the client to authenticate their employee. This is a mandatory parameter.
 
 #### botId
-BOT_ID will be provided by yellow.ai. 
+
+BOT_ID will be provided by yellow.ai.
 This is a mandatory parameter.
 
 #### Example
+
 ```java
 import android.app.Application
 import androidx.lifecycle.ProcessLifecycleOwner
@@ -48,7 +56,7 @@ class TestApplication : Application() {
     super.onCreate()
 
     //Set Process lifecycle listener
-    // This is required to listen to application state 
+    // This is required to listen to application state
     ProcessLifecycleOwner.get()
         .lifecycle
         .addObserver(YmAppProcessLifeCycleListener())
@@ -67,45 +75,59 @@ class TestApplication : Application() {
 ```
 
 ## Overview
+
 Overview view is provided as a fragment and activity
 
 ### Overview Activity
+
 If clients want to use Overview Activity in their application, they can call the following method to get the Activity.
+
 ```java
 YellowInbox.startOverviewActivity(context:Context)
 ```
 
 ### Overview Fragment
+
 If clients want to use Overview Fragment in their application, they can call the following method to get the fragment
 
 ```java
 val fragment =YellowInbox.getOverviewFragment()
 ```
+
 Clients can embed this fragment in their activity and begin the transaction as they do for any other fragment.
 
 ## My Chat
+
 Chats view is provided as a fragment and activity
 
 ### My Chat Activity
+
 If clients want to use MyChat Activity in their application, they can call the following method to get the Activity.
+
 ```java
 YellowInbox.startMyChatActivity(context:Context)
 ```
 
 ### My Chat Fragment
+
 If clients want to use MyChat Fragment in their application, they can call the following method to get the fragment
+
 ```java
 val fragment =YellowInbox.getMyChatsFragment()
 ```
+
 Clients can embed this fragment in their activity and begin the transaction as they do for any other fragment.
 
 ## Notifications
-### Background Notification	
+
+### Background Notification
 
 To receive firebase notification clients need to send Firebase device token to SDK. To do so the following method can be used.
+
 ```java
 YellowInbox.setFirebaseDeviceToken("FIRE_BASE_DEVICE_TOKEN")
 ```
+
 :::note
 Make sure to call this function when the device token is changed.
 :::
@@ -142,6 +164,7 @@ if (data.containsKey("ym")) {
 Notification data will get delivered as intent extra in launcher Activity. Clients can use the above mentioned method to fetch data from Intent and create a map.
 
 ### Local Notification
+
 Clients will receive local notification that will be triggered by the SDK based on the events received over XMPP.
 In case a client wants to override the normal behaviour of notification or want to update title/body, they can do so by overriding the YmMessageReceiver class.
 
@@ -180,15 +203,16 @@ class TestMessageReceiver : YmMessageReceiver() {
 Clients will receive events for Ticket Create and Ticket Update (new message, agent added as collaborator).
 We recommend not to modify model data as it may result in not showing notification at all. Model is exposed so the client can make use of data present in it to create the required title and body.
 
-
 ### Video call Notification
-If a client is receiving a video call notification while the app is in background, there is no special handling required for it. Simply tapping on notification will take the user to the appropriate view and show a dialog to answer/decline the  call.
+
+If a client is receiving a video call notification while the app is in background, there is no special handling required for it. Simply tapping on notification will take the user to the appropriate view and show a dialog to answer/decline the call.
 
 In case the app is running and in the foreground, the client needs to listen to Firebase notification and call the following function.
 
 Assuming client has already have a service which overrides FirebaseMessagingService
 
 1. Client need to set the Firebase token in case device token changes by calling
+
 ```java
 YellowInbox.setFirebaseDeviceToken(token)
 ```
@@ -224,19 +248,22 @@ class YmSupportFirebaseMessagingService : FirebaseMessagingService() {
     }
 }
 ```
+
 A call declined from notification can be joined from the Chat view by tapping on the call icon
 
 ## Agent Status
+
 ### Get Agent Status
 
 To get availability status of logged in User against the bot id (Used for initialising the SDK), client can call the following method and observe on it.
 
 ```java
-YellowInbox.getAgentStatus(): LiveData<Resource<YmAgentStatus>> 
+YellowInbox.getAgentStatus(): LiveData<Resource<YmAgentStatus>>
 ```
 
 Example
-```java	
+
+```java
 YellowInbox.getAgentStatus().observe(lifecycleOwner, Observer {
   when(it.status) {
     Resource.SUCCESS -> {
@@ -251,16 +278,18 @@ YellowInbox.getAgentStatus().observe(lifecycleOwner, Observer {
   }
 })
 ```
-	
+
 ### Set Agent Status
 
 To set the status of logged in user against the bot id (Used for initialising the SDK), the client can call the following method and observe on it.
+
 ```java
-YellowInbox.setAgentStatus(status: YmAgentStatus): LiveData<Resource<Void>> 
+YellowInbox.setAgentStatus(status: YmAgentStatus): LiveData<Resource<Void>>
 ```
 
 Example
-```java	
+
+```java
 YellowInbox.setAgentStatus(YmAgentStatus.BUSY)
   .observe(lifecycleOwner,Observer{
      when(it.status){
@@ -278,13 +307,17 @@ YellowInbox.setAgentStatus(YmAgentStatus.BUSY)
 ```
 
 ## Logout
+
 By calling logout, all the services and notifications will be terminated. You can call this function when user logs out of the app
+
 ```java
 YellowInbox.logout()
 ```
 
 ## Mandatory overrides
-Please add the following key in your strings.xml  file and change the value.
+
+Please add the following key in your strings.xml file and change the value.
+
 ```xml
 <string name="application_id_for_provider">your.app.id.fileprovider</string>
 ```
@@ -292,8 +325,11 @@ Please add the following key in your strings.xml  file and change the value.
 By doing this all the images/files will be sandboxed for your app.
 
 ## Optional overrides
+
 ### colors.xml
+
 You can update your colors.xml. By overriding these value you can the color as per your app design
+
 ```xml
 <color name="ym_app_bar_color">@color/primaryColor</color>
 <color name="ym_status_bar_color">@color/primaryDarkColor</color>
@@ -310,7 +346,9 @@ You can update your colors.xml. By overriding these value you can the color as p
 ```
 
 ### Dimens.xml
+
 By overriding the client can control size texts and progress bar.
+
 ```xml
 <dimen  name="ym_title_size">16sp</dimen>
 <dimen  name="ym_subtitle_size">14sp</dimen>
@@ -323,13 +361,16 @@ By overriding the client can control size texts and progress bar.
 ## Informational
 
 ### Versions
+
 YellowInbox SDK usage following minimumSdkVersion targetSdkVersion.
 
 minSdkVersion 21
 targetSdkVersion 30
 
 ### Dependencies
+
 YellowInbox SDK usage following dependencies.
+
 ```java
 dependencies {
 
@@ -373,6 +414,7 @@ dependencies {
 ### Permissions
 
 YellowInbox SDK usage following permissions.
+
 ```xml
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
