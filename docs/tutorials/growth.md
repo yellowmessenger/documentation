@@ -4,26 +4,31 @@ sidebar_label: Growth
 featured: true
 ---
 
-### Growth - Overview
+### Overview
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sIy3WZXfMqA" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/m2fSpps8mhw" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
-### Growth - Metrics
+### Metrics
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YZYoJvgiN_w" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t6NxWT5A9Js" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
-### Growth - Funnels
+### Funnels
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dTOBUClI06g" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y2mj_uYdTpE" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
-### Growth - API Usage
+### API Usage
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/hG6SVH2Sclg" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/O9oOsm2CrQE" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
-### Growth - Document Cognition
+### Document Cognition
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B7aytvCfvwc" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gBbqR97Vs9U" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
-### Growth - Data Explorer and Dashboards
+### Data Explorer and Dashboards
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/v0fMapU4_3M" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oHac-CDZ1ik" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
+
+
+
+
