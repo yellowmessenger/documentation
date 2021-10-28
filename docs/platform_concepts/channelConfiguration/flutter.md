@@ -20,7 +20,7 @@ dependencies:
 
 ## Usage
 
-Import the YMChat library in your in dart file.
+Import the YMChat library in your dart file.
 
 ```dart
 import 'package:ymchat_flutter/ymchat_flutter.dart';
