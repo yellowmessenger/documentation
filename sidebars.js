@@ -18,9 +18,18 @@ module.exports = {
   "tutorials/growth",
   "tutorials/inbox",
   "tutorials/engage",
-  "tutorials/webinars"
-],
-
+  "tutorials/webinars",
+  {
+    type: "category",
+    label: "Academy",
+    collapsed: true,
+    items: [
+      "tutorials/academy/day1",
+      "tutorials/academy/day2",
+      "tutorials/academy/day3",
+    ],
+  },
+  ],
   cookbooks: [
     "cookbooks/conversation-design",
     {
