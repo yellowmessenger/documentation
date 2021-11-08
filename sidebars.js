@@ -337,5 +337,23 @@ module.exports = {
         "updates/aug_21/UI"
       ],
     },
+    {
+      type: "category",
+      label: "September 2021",
+      collapsed: true,
+      items: [
+        "updates/sep_21/engage",
+        "updates/sep_21/inbox"
+      ],
+    },
+    {
+      type: "category",
+      label: "October 2021",
+      collapsed: true,
+      items: [
+        "updates/oct_21/engage",
+        "updates/oct_21/inbox"
+      ],
+    },
   ]
 };
