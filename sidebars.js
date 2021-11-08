@@ -322,12 +322,20 @@ module.exports = {
     },
   ],
   updates: [
-    "updates/builder",
-    "updates/analytics",
-    "updates/inbox",
-    "updates/Integrations",
-    "updates/marketplace",
-    "updates/mobileApps",
-    "updates/UI",
-  ],
+    "updates/overview",
+    {
+      type: "category",
+      label: "August 2021",
+      collapsed: true,
+      items: [
+        "updates/aug_21/analytics",
+        "updates/aug_21/builder",
+        "updates/aug_21/inbox",
+        "updates/aug_21/Integrations",
+        "updates/aug_21/marketplace",
+        "updates/aug_21/mobileApps",
+        "updates/aug_21/UI"
+      ],
+    },
+  ]
 };
