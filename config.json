@@ -1,8 +1,10 @@
 {
     "index_name": "yellow.ai docs",
-
+    "start_urls": [
+        "https://docs.yellow.ai"
+      ],
     "sitemap_urls": [
-      "http://localhost:3000/sitemap.xml"
+        "https://docs.yellow.ai/sitemap.xml"
     ],
     "sitemap_alternate_links": true,
     "stop_urls": [

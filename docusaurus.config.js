@@ -24,7 +24,7 @@ module.exports = {
   // },
   themeConfig: {
     algolia: {
-      apiKey: 'aec27d187af8e72ea8fb29d498b92cd9',
+      apiKey: 'b91fb91a4d3a5067f2f5165bb92c9fa8',
       indexName: 'yellow.ai docs',
       appId: 'LWOORM11IH',
 
