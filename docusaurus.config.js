@@ -24,8 +24,9 @@ module.exports = {
   // },
   themeConfig: {
     algolia: {
-      apiKey: '1893e11171bb8b2b019ada3bb475d5c6',
-      indexName: 'yellowmessenger',
+      apiKey: 'aec27d187af8e72ea8fb29d498b92cd9',
+      indexName: 'yellow.ai docs',
+      appId: 'LWOORM11IH',
 
       // Optional: see doc section below
       contextualSearch: false,
@@ -34,6 +35,7 @@ module.exports = {
       searchParameters: {},
 
       //... other Algolia params
+      placeholder: 'Search by Pratik'
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
