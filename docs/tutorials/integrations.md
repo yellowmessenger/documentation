@@ -1,3 +1,9 @@
+---
+title: Integrations
+sidebar_label: Integrations
+featured: true
+---
+
 ### Backend Systems Integrations
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yFVjpmu16go" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>

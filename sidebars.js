@@ -19,7 +19,7 @@ module.exports = {
   "tutorials/growth",
   "tutorials/inbox",
   "tutorials/engage",
-  "tutorials/integrations"
+  "tutorials/integrations",
   "tutorials/webinars",
   {
     type: "category",
