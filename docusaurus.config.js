@@ -80,7 +80,7 @@ module.exports = {
           activeBasePath: "docs/tutorials",
         },
         {
-          to: "docs/updates/builder",
+          to: "docs/updates/overview",
           label: "What's New",
           position: "left",
           activeBasePath: "docs/whats_new",
