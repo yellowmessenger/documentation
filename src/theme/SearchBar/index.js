@@ -149,15 +149,16 @@ function DocSearch({contextualSearch, ...props}) {
           crossOrigin="anonymous"
         />
       </Head>
-
-      <DocSearchButton
-        onTouchStart={importDocSearchModalIfNeeded}
-        onFocus={importDocSearchModalIfNeeded}
-        onMouseOver={importDocSearchModalIfNeeded}
-        onClick={onOpen}
-        ref={searchButtonRef}
-      />
-
+      
+      <div className={props.displayAsInputBox ? "search-input":""}>
+        <DocSearchButton
+          onTouchStart={importDocSearchModalIfNeeded}
+          onFocus={importDocSearchModalIfNeeded}
+          onMouseOver={importDocSearchModalIfNeeded}
+          onClick={onOpen}
+          ref={searchButtonRef}
+        />
+      </div>
       {isOpen &&
         createPortal(
           <DocSearchModal
@@ -178,9 +179,9 @@ function DocSearch({contextualSearch, ...props}) {
   );
 }
 
-function SearchBar() {
+function SearchBar({displayAsInputBox=false}) {
   const {siteConfig} = useDocusaurusContext();
-  return <DocSearch {...siteConfig.themeConfig.algolia} />;
+  return <DocSearch {...siteConfig.themeConfig.algolia} displayAsInputBox={displayAsInputBox}/>;
 }
 
 export default SearchBar;
