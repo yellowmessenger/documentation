@@ -284,7 +284,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "App Configuration",
+      label: "Integrations",
       collapsed: true,
       items: [
         "platform_concepts/appConfiguration/azure-ad",
