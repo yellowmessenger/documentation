@@ -35,7 +35,7 @@ module.exports = {
       searchParameters: {},
 
       //... other Algolia params
-      placeholder: 'Search by Pratik'
+      placeholder: 'Search docs'
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
