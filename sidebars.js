@@ -131,7 +131,7 @@ module.exports = {
             "platform_concepts/studio/context-management/add-contextual-response",
           ],
         },
-  
+
 
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
@@ -296,6 +296,7 @@ module.exports = {
         "platform_concepts/appConfiguration/shopify",
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk",
+        "platform_concepts/appConfiguration/zoho-crm"
       ],
     },
     {
