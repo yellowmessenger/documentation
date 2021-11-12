@@ -35,3 +35,4 @@ Whenever another platform user shares bot access with you to collaborate,  you h
 2. Against their subscription, click on the Switch button.
 
 ![](https://i.imgur.com/kODvWi4.png)
+
