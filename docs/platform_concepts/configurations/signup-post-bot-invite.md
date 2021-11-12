@@ -21,3 +21,17 @@ This answer will help understand how a new user can register herself/himself and
 4. Now to `Projects` from the left sidebar. Under the `STAGING`  you should see all the bot you've access to.
 
 ![Bot Project](https://cdn.yellowmessenger.com/U3zPg0Q4k8mv1615873409480.png)
+
+
+
+### Managing Subscription:
+
+Each user who signs up on cloud.yellow.ai has their own subscription provided to them.
+So the bot that they build, falls under the default subscription provided to them.
+Whenever another platform user shares bot access with you to collaborate,  you have to first accept the invite and then switch to their subscription to access their bot.
+1. To switch your subscription, Go to your profile and click on Billing.
+![](https://i.imgur.com/bnKSsOA.png)
+
+2. Against their subscription, click on the Switch button.
+
+![](https://i.imgur.com/kODvWi4.png)
