@@ -15,10 +15,7 @@ How does an MS Teams app integrate with YM?
 ## Getting Started
 ### Creating a new Teams App
 
-For Integrating Yellow Messenger MS Team channel, you will need to create a new azure bot service for which you will receive Client ID, Client Secret.
-
-
-> Note:  You can not perform these  actions if you don't have access to YM  azure portal. Please reach out to Syed Parvez or Rashid Khan to create a bot service for you. You can also do it using a trial azure account with your email ID  if you’re just trying things out.
+For Integrating Yellow Messenger MS Team channel, you will need to create a new azure app and azure bot service for which you will receive Client ID, Client Secret.
 
 Steps to create a bot service :
 

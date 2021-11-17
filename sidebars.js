@@ -305,6 +305,7 @@ module.exports = {
       items: [
         "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/access-management",
+        "platform_concepts/configurations/subscription",
       ],
     },
     {
