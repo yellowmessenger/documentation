@@ -12,12 +12,14 @@ const { listPaths } = require("./src/plugins/components");
 let components = listPaths();
 
 module.exports = {
-  tutorials: ["tutorials/basics", 
+  tutorials: [
+  "tutorials/basics",
   "tutorials/studio",
   "tutorials/data",
   "tutorials/growth",
   "tutorials/inbox",
   "tutorials/engage",
+  "tutorials/integrations",
   "tutorials/webinars",
   {
     type: "category",
@@ -282,7 +284,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "App Configuration",
+      label: "Integrations",
       collapsed: true,
       items: [
         "platform_concepts/appConfiguration/azure-ad",
