@@ -113,7 +113,7 @@ Contact customer support
 
 - **Step 3:** Add Prompts to collect user Information or else reuse the journey you might have created as a part of Exercise 4.
 
-- **Step 4:** Use a Raise A ticket Action node to raise the ticket to connect to live agent
+- **Step 4:** Use a [**Raise A ticket Action node**](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic#raise-ticket) to raise the ticket to connect to live agent
 
 - **Step 5:** If you want to collect feedback about the whole Conversation, use a Feedback prompt to do so.
 ![](https://cdn.yellowmessenger.com/Q148to2133YI1633527994108.JPG)
