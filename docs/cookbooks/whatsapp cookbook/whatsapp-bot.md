@@ -1,5 +1,5 @@
 ---
-title: WhatsApp Channel Setupe
+title: WhatsApp Channel Setup
 sidebar_label : WhatsApp Channel Setup
 ---
 
