@@ -17,3 +17,6 @@ Here is a list below which shows all the tiers and features available.
 |  Engagement |      ✅      |          ✅         |          ✅         |
 |   Channels  |      ✅      |          ✅         |          ✅         |
 | Enviroments | Development | Live / Development | Live / Development |
+
+
+Checkout how to manage your subscription [here](./signup-post-bot-invite#managing-subscription)
