@@ -83,7 +83,14 @@ For the welcome prompt let’s create a journey and trigger it from the welcome 
 
 ![](https://cdn.yellowmessenger.com/KbzJKmwOg7Ns1634525363463.JPG)
 
+Alternatively if you have the set of questions ready you can also use the FAQ section of the platform to add these questions as FAQs.
+
+Follow [**these steps**](https://docs.yellow.ai/docs/platform_concepts/studio/knowledge-management/add-faqs) to add FAQs for your bot as well.
+
+
 ## Exercise 6: Creating Journey to Transfer the Chat to the Agent
+
+Now if there is any custom question that you want your agents to address you can transfer the conversation from bot to the agent using this live agent journey. Let’s build the journey.
 
 - **Step 1:** Create A journey 
 - **Step 2:** Add an Intent and utterances relevant to the the intent

@@ -113,7 +113,16 @@ Contact customer support
 
 - **Step 3:** Add Prompts to collect user Information or else reuse the journey you might have created as a part of Exercise 4.
 
-- **Step 4:** Use a Raise A ticket Action node to raise the ticket to connect to live agent
+- **Step 4:** Use a [**Raise A ticket Action node**](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic#raise-ticket) to raise the ticket to connect to live agent
 
 - **Step 5:** If you want to collect feedback about the whole Conversation, use a Feedback prompt to do so.
 ![](https://cdn.yellowmessenger.com/Q148to2133YI1633527994108.JPG)
+
+**Note:** Now if you want to trigger the journey directly without asking the user for name, number, email and query, you can create variables to store each of the values and assign any dummy value to it. 
+
+For example,
+
+![](https://i.imgur.com/XDY49nY.png)
+![](https://i.imgur.com/7rBE4gG.png)
+
+Here we have created dummy variables to store each of the values and have assigned them to the variables and used the same variable in Raise Ticket action node
