@@ -204,8 +204,8 @@ module.exports = {
           type: "category",
           label: "Outbound Engagement",
           collapsed: true,
-          items: ["platform_concepts/engagement/outbound/whatsappCampaign"],
-          items: ["platform_concepts/engagement/outbound/templateManager/overview"],
+          items: ["platform_concepts/engagement/outbound/whatsappCampaign",
+          "platform_concepts/engagement/outbound/templateManager/overview"],
         },
         {
           type: "category",
