@@ -34,3 +34,9 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 
 
 https://github.com/Jeffail/benthos/tree/master/website
+
+### Build Algolia Index
+
+```
+docker run -it --env-file=.env -e "CONFIG=$(cat .config.json | jq -r tostring)" algolia/docsearch-scraper
+```
