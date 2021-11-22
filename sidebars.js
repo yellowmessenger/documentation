@@ -9,7 +9,7 @@ const { listPaths } = require("./src/plugins/components");
 // let metrics_docs = listPaths("metrics");
 // let tracers_docs = listPaths("tracers");
 
-let components = listPaths();
+// let components = listPaths();
 
 module.exports = {
   tutorials: [
@@ -21,16 +21,6 @@ module.exports = {
   "tutorials/engage",
   "tutorials/integrations",
   "tutorials/webinars",
-  {
-    type: "category",
-    label: "Academy",
-    collapsed: true,
-    items: [
-      "tutorials/academy/day1",
-      "tutorials/academy/day2",
-      "tutorials/academy/day3",
-    ],
-  },
   ],
   cookbooks: [
     "cookbooks/conversation-design",
