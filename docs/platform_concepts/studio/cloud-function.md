@@ -2,12 +2,12 @@
 title: Code
 sidebar_label : Code
 ---
-### How to create a new function? 
+## How to create a new function? 
 You can add a new function to write your custom logic in code in the **`code`** section of the studio. 
 To execute these functions in a flow, you can attach function action node.
 
 **Format of cloud functions**
-```
+```js
 return new Promise(resolve => {
       // Your logic goes here
       resolve();
@@ -16,7 +16,7 @@ return new Promise(resolve => {
 
 ---
 
-### Useful args you can access in code
+## Useful args you can access in code
 
 
 | arg | data type | Use |
@@ -35,3 +35,21 @@ return new Promise(resolve => {
 | prediction.entities || To get entities predicted from user message |
 
 ---
+
+## Useful Code Snippets
+
+### Autocomplete
+```js
+return new Promise(resolve => {
+    console.log("inside autoSuggestion");
+    let result = data.variables.autoComponents;
+    const { term } = data;
+    let suggestions = [];
+    result.forEach((hit) => {
+        if (hit.component.toLowerCase().includes(term.toLowerCase())) {
+            suggestions.push([hit.component, hit.component]);
+        }
+    });
+    resolve(suggestions);
+});
+```

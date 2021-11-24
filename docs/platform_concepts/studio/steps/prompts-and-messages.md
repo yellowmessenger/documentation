@@ -490,15 +490,13 @@ There is also some additional options in prompt settings that you can use.
 - You can choose **`entity type/variable`** to autoskip a prompt node if value of that entity or variable is available. (You will learn more about entities and variables later)
 - You can also mask this info from appearing in conversation logs by using **`Mask sensitive info`** button. 
 
-:::info
-You can also mask sensitive info channel wise :- 
+- You can enable **`Autocomplete`** by adding this [code snippet](/docs/platform_concepts/studio/cloud-function#autocomplete) in the cloud function.
 
+:::info
+You can also mask sensitive info channel wise.
+:::
 
 1. ![](https://i.imgur.com/oJZhZvT.png)
 
-
 2. ![](https://i.imgur.com/Sruf07q.png)
-
-:::
-
 ---
