@@ -291,7 +291,6 @@ module.exports = {
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/power-bi",
         "platform_concepts/appConfiguration/razorpay",
-        "platform_concepts/appConfiguration/salesforce",
         "platform_concepts/appConfiguration/successfactors",
         "platform_concepts/appConfiguration/shopify",
         "platform_concepts/appConfiguration/zalo",
