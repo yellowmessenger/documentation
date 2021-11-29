@@ -74,7 +74,7 @@ module.exports = {
         "platform_concepts/studio/journeys",
         {
           type: "category",
-          label: "Building Blocks",
+          label: "Nodes",
           collapsed: true,
           items: [
             "platform_concepts/studio/steps/steps",

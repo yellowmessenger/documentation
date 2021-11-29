@@ -1,6 +1,6 @@
 ---
 title: Nodes
-sidebar_label: Nodes
+sidebar_label: Overviews
 ---
 
 **Nodes can be seen as building blocks of a Journeys**. 
@@ -18,3 +18,4 @@ A journey is usually built up using series of smaller nodes. Each Journey should
 ---
 
 ***In upcoming sections, we will explore various types of nodes - message, prompts, actions, and logic.***
+
