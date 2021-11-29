@@ -1,5 +1,5 @@
 ---
-title : Freshdesk
+title : Freshdesk / Freshchat
 sidebar_label : Freshdesk
 ---
 
