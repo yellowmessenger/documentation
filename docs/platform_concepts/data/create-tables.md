@@ -5,7 +5,7 @@ title: Creating Tables and Inserting Data
 
 In this doc, following topics will be covered:
 - How to save details in the database
-- Where can save details collected from user
+- Where to save details collected from user
 
 ### How to access the Database on the yellow.ai platform?
 
