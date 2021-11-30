@@ -66,7 +66,7 @@ Different prompts return a response in different formats and datatype. You can r
 | [Email](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
 | [Phone](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
 | [Location](../studio/steps/prompts-and-messages#location-prompt)           | object            |
-| [Carousel](../studio/steps/prompts-and-messages#carousal)                  | string            |
+| [Carousel](../studio/steps/prompts-and-messages#carousel)                  | string            |
 | [Quick Replies](..studio/steps/prompts-and-messages#quick-replies)         | string            |
 | [Date](..studio/steps/prompts-and-messages#date-prompt)                    | object            |
 | [Question](..studio/steps/prompts-and-messages#general---question)         | string            |
