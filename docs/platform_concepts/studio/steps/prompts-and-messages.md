@@ -3,6 +3,13 @@ title: Prompts and Messages
 sidebar_label: Prompts and Message
 ---
 
+In this doc, following topics will be covered:
+- How to get information like name, email, phone number from the user?
+- How to show text message to the user?
+- How to fetch user's location?
+- Collect user feedback
+- How to ask user a question?
+
 In this section we will talk about Interactive nodes, viz, 
 - **Messages** are one-way communication nodes. Message nodes do not wait for any user input. 
 - **Prompts** on the other hands are questions bot asks user. Prompts expected a response from users. 
@@ -36,7 +43,7 @@ Prompts are nodes that take some user input. All prompts have a "**store respons
 
 ### Use case specific
 #### Name, Email , Phone : 
-Name, Email, Phone prompts are used for asking for respective details. They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
+Name, Email, Phone prompts are used for asking for respective details . They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
 
 ![](https://i.imgur.com/oQ1IV5r.png)
 

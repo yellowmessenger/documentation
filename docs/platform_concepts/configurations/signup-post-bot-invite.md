@@ -7,6 +7,7 @@ In this doc, following topics will be covered:
 - Where can I see my bot? 
 - I can't find my bot
 - How to change subscription?
+- How to accept a bot invite?
 
 ### How to sign up and accept bot invite? 
 
