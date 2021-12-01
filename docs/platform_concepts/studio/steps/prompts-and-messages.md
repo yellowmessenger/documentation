@@ -3,6 +3,13 @@ title: Prompts and Messages
 sidebar_label: Prompts and Message
 ---
 
+In this doc, following topics will be covered:
+- How to get information like name, email, phone number from the user?
+- How to show text message to the user?
+- How to fetch user's location?
+- Collect user feedback
+- How to ask user a question?
+
 In this section we will talk about Interactive nodes, viz, 
 - **Messages** are one-way communication nodes. Message nodes do not wait for any user input. 
 - **Prompts** on the other hands are questions bot asks user. Prompts expected a response from users. 
@@ -36,7 +43,7 @@ Prompts are nodes that take some user input. All prompts have a "**store respons
 
 ### Use case specific
 #### Name, Email , Phone : 
-Name, Email, Phone prompts are used for asking for respective details. They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
+Name, Email, Phone prompts are used for asking for respective details . They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
 
 ![](https://i.imgur.com/oQ1IV5r.png)
 
@@ -375,22 +382,22 @@ Here, instead of adding quick replies manually, you can select a variable contai
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intented variable. For example, you can apply for loop around options to dynamically add to them while parsing through some API response etc. 
 You will learn more about function nodes in next section. 
 
-### Carousal
-You can also add a Carousals to your bot. Carousal can be used in places like displaying a list of products.
+### Carousel
+You can also add a Carousels to your bot. Carousel can be used in places like displaying a list of products.
 
-* Carousal response contains option to add image, title and description. 
-* You can also add multiple buttons in carousal and control what these buttons do. 
+* Carousel response contains option to add image, title and description. 
+* You can also add multiple buttons in carousel and control what these buttons do. 
 
 
-> :pushpin: Note: Carousals without buttons will act as `Messages` instead of `Prompts`.
+> :pushpin: Note: Carousels without buttons will act as `Messages` instead of `Prompts`.
 
 
 ![](https://i.imgur.com/qAea1te.png)
 
 
-#### Dynamic Carousals
-Similar to quick replies, Carousals can also be dynamically created using **`Fetch from`** option. Carousal object is an array of each card (JSoN objects). 
-**`Sample Carousal object`** 
+#### Dynamic Carousels
+Similar to quick replies, Carousels can also be dynamically created using **`Fetch from`** option. Carousel object is an array of each card (JSoN objects). 
+**`Sample Carousel object`** 
 
 ```
 [ 
@@ -431,7 +438,7 @@ Similar to quick replies, Carousals can also be dynamically created using **`Fet
 
 ```
 
-**Actions** above describe the card button, you can add multiple actions to a single card in carousal. 
+**Actions** above describe the card button, you can add multiple actions to a single card in carousel. 
 
 To add a URL type action, for example, format becomes
 ```
@@ -443,7 +450,7 @@ To add a URL type action, for example, format becomes
                     
 ```
 
-Since we looked at objects, let's also look at one sample function to add carousals to understand this. You can call this function from function node we will learn about and store the returning value in a variable.
+Since we looked at objects, let's also look at one sample function to add carousels to understand this. You can call this function from function node we will learn about and store the returning value in a variable.
 
 **`Sample code`**
 

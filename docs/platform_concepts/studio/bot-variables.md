@@ -66,7 +66,7 @@ Different prompts return a response in different formats and datatype. You can r
 | [Email](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
 | [Phone](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
 | [Location](../studio/steps/prompts-and-messages#location-prompt)           | object            |
-| [Carousel](../studio/steps/prompts-and-messages#carousal)                  | string            |
+| [Carousel](../studio/steps/prompts-and-messages#carousel)                  | string            |
 | [Quick Replies](..studio/steps/prompts-and-messages#quick-replies)         | string            |
 | [Date](..studio/steps/prompts-and-messages#date-prompt)                    | object            |
 | [Question](..studio/steps/prompts-and-messages#general---question)         | string            |
@@ -103,6 +103,10 @@ Additionally, you can also use variables action node for this purpose.
 
 You can access a bor variable inside any node using this notation `{{variables.variable_name}}` or clicking on variables icon. 
 So for the variable you just created above, you can access using {{variables.category}}
+
+:::info
+Journey and Global variables get expired after 48 hours of inactivity.
+:::
 
 ## Advanced example
 **Accessing variable fields and index in JSON object, array type stored in a variable.**

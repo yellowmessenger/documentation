@@ -147,7 +147,7 @@ Document Search action node is used to answer user query at any point in the flo
 - You can select a variable containing search query
 - You can also choose too add metadata filters (optional) to your query (the filters you tagged your documents with will show in dropdown). 
 - You can branch flow from here based on whether any results were found in the documents (success) or not (failure).
-- There is no store output here, as the results are directly shown in carousals. 
+- There is no store output here, as the results are directly shown in carousels. 
 - In node settings, you can configure total no. of results shown, total number of results per document and messages shown while showing results/reporting failure. 
 
 ![](https://i.imgur.com/cu1uk7M.png)

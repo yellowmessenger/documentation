@@ -177,8 +177,8 @@ Designer functionality: https://adaptivecards.io/explorer/AdaptiveCard.html
            "content": CARD_PAYLOAD_FROM_DESIGNER
     }
 
-    let cardCarousal = [card,card,card]   //array of cards
-    app.sendCards(cardCarousal).then(() => {
+    let cardCarousel = [card,card,card]   //array of cards
+    app.sendCards(cardCarousel).then(() => {
            resolve();
     })
 ```
