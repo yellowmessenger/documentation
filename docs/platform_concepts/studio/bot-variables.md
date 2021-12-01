@@ -104,6 +104,10 @@ Additionally, you can also use variables action node for this purpose.
 You can access a bor variable inside any node using this notation `{{variables.variable_name}}` or clicking on variables icon. 
 So for the variable you just created above, you can access using {{variables.category}}
 
+:::info
+Journey and Global variables get expired after 48 hours of inactivity.
+:::
+
 ## Advanced example
 **Accessing variable fields and index in JSON object, array type stored in a variable.**
 
