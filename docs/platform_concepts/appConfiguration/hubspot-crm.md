@@ -1,10 +1,7 @@
 ---
 title : Hubspot-CRM
-sidebar_label : Hubspot-crm
+sidebar_label : Hubspot-CRM
 ---
-
-
-
 
 ## Scope of Integration
 
@@ -15,11 +12,10 @@ Yellow.ai Integration with Hubspot CRM allows you to seamlessly connect your Hub
 
 Following are the use-cases which are currently accommodated in the Integration:
 
-### 1. Simple integration with Oauth
+### 1. Simple integration with OAuth
 
-Yellow.ai does not store the client’s credentials and leverages oAuth 2.0 approach for integrating with client’s Hubspot account.
+Yellow.ai does not store the client’s credentials and leverages OAuth 2.0 approach for integrating with client’s Hubspot account.
 While integrating, yellow.ai navigates the user to the login page of Hubspot, user has to login into his hubspot CRM account and has to provide his consent.
-
 
 
 ### 2. Do actions with hubspot action nodes
@@ -44,7 +40,6 @@ custom flow according to your use case.
 <img src="https://i.imgur.com/r6s3N14.png" alt="drawing" width="60%"/>
 
 <img src="https://i.imgur.com/vPqTZBC.png" alt="drawing" width="60%"/>
-
 
 
 
