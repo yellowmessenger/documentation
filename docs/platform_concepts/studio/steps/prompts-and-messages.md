@@ -28,7 +28,21 @@ For example, an Acknowledgement message.
 
 
 ### Files, Images, Videos
-Apart from Text, you can also send above three by simply attaching the respective file you need to send. 
+You can send files, images and videos either by uploading them in the node or by fetching the link to it from a variable
+
+Variable format:
+
+  [
+   {
+    "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRqBmDVlOF8jpQbmAcAglnp7Bxggt1JzZEw&usqp=CAU",
+    "options":
+     {
+     "caption":"kohli"
+     }
+   }
+  ]
+  
+Please not that the variable datatype needs to be array
 
 ## Prompts
 Prompts are nodes that take some user input. All prompts have a "**store response in**" option to store input user gives in a [bot variable.](./tools)
