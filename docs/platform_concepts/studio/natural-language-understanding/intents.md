@@ -5,6 +5,11 @@ sidebar_label: Intents
 
 NLU deals with training machines to read and converse in any human language. Making AI Models understand nuances of language is very complex problem. Thankfully, using Linguistic Semantics i.e. by creating a structured format of sentences, models are able to percieve natural language with good accuracy.
 
+In this doc, following topics will be covered:
+- What is evaluate confidence?
+- Sample utterances
+- How many utterance to add?
+
 > Note - 
  - **Linguistic** : study of language
  - **Semantics** : study of the meaning of words, phrases or sentences i.e. how arranging group of words in particular fashion to derive meaning.
