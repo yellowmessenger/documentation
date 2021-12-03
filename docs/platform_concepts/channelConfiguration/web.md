@@ -99,7 +99,7 @@ As you can see we've user email and user name present on the webpage. Aim here i
 
 1. In the webpage, identify elements which contains user data. Here, `username` and `useremail` elements contains the user data.
 ```html
- <p id = "username">Pratik</p>
+ <p id = "username">yellow.ai Community</p>
  <p id="useremail" name="useremail">community@yellow.ai</p>
 ```
 
@@ -137,7 +137,7 @@ window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenge
 </head>
 <body>
   
- <p id = "username">Pratik</p>
+ <p id = "username">yellow.ai Community</p>
  <p id="useremail" name="useremail">community@yellow.ai</p>
 
 <script type="text/javascript">
@@ -145,9 +145,17 @@ window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenge
     let email =  document.getElementById("useremail").innerText;
 
     console.log("Test data: ", name, email); // pass variables using payload object to window.ymConfig
-    window.ymConfig = {"bot":"x1620711877631","host":"https://cloud.yellowmessenger.com","payload":{"name": name,"email": email},"partiallyOpen":false,"alignRight":"right"};(function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+    window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenger.com","payload":{"name": name,"email": email},"partiallyOpen":false,"alignRight":"right"};(function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
 </script>
 
 </body>
 </html>
 ```
+
+6. Now in your bot your bot you can access this payload data just like variables, using this syntax: `{{profile.payload.data}}`
+![](https://i.imgur.com/qfRMBbq.png)
+
+7. End result should look like this on your bot! :tada:
+
+![](https://i.imgur.com/gw0rOxM.png)
+
