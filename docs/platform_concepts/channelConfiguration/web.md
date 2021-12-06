@@ -90,3 +90,72 @@ if (app.data.event && app.data.event.code === 'authenticate') {
                // senderId = new Date().getTime();
                senderId = app.USER_PIN;
 ```
+
+## Share user data from parent interface to bot using data payload
+
+Data payload feature comes handy when data is already present in the parent interface and you want to access it in the bot.
+
+As you can see we've user email and user name present on the webpage. Aim here is to parse it from the web page and use it as variables. 
+
+1. In the webpage, identify elements which contains user data. Here, `username` and `useremail` elements contains the user data.
+```html
+ <p id = "username">yellow.ai Community</p>
+ <p id="useremail" name="useremail">community@yellow.ai</p>
+```
+
+
+
+2. Go to Channels > Chat widget > Deploy and copy the Chatbot code using the copy button.
+
+![](https://i.imgur.com/igpYi18.png)
+
+Chat bot code should look like this:
+```js
+<script type="text/javascript">
+window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenger.com","partiallyOpen":false,"alignLeft":"right"};(function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+</script>
+```
+
+3. Under the script, parse elements using `getElementById("element_name")`.
+```js
+let name = document.getElementById("username").innerText;
+let email =  document.getElementById("useremail").innerText;
+```
+
+4. Finally, pass the name and email variables using payload to the window.ymConfig.
+
+```js
+window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenger.com","payload":{"name": name,"email": email}
+```
+
+5. Let's review all the changes needs to be made in the webpage.
+
+```html
+<html>
+<head>
+
+</head>
+<body>
+  
+ <p id = "username">yellow.ai Community</p>
+ <p id="useremail" name="useremail">community@yellow.ai</p>
+
+<script type="text/javascript">
+    let name = document.getElementById("username").innerText; // parse elements
+    let email =  document.getElementById("useremail").innerText;
+
+    console.log("Test data: ", name, email); // pass variables using payload object to window.ymConfig
+    window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenger.com","payload":{"name": name,"email": email},"partiallyOpen":false,"alignRight":"right"};(function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+</script>
+
+</body>
+</html>
+```
+
+6. Now in your bot your bot you can access this payload data just like variables, using this syntax: `{{profile.payload.data}}`
+![](https://i.imgur.com/qfRMBbq.png)
+
+7. End result should look like this on your bot! :tada:
+
+![](https://i.imgur.com/gw0rOxM.png)
+
