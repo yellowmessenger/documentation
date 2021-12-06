@@ -287,7 +287,8 @@ module.exports = {
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/salesforce-service-cloud",
-        "platform_concepts/appConfiguration/hubspot-crm"
+        "platform_concepts/appConfiguration/hubspot-crm",
+        "platform_concepts/appConfiguration/zoho-crm"
       ],
     },
     {
