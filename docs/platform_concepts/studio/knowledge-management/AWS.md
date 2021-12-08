@@ -156,12 +156,12 @@ Congratulations u have created a new user with access to only a single bucket. T
 ```js
    import boto3
    s3 = boto3.resource(‘s3’)
-   objects = s3.Bucket(name=‘testbucketpritam’).objects.all()
+   objects = s3.Bucket(name='<YOUR AWS S3 BUCKET NAME>’).objects.all()
    for o in objects:
    print(o)
     
-    s3.ObjectSummary(bucket_name=‘testbucketpritam’, key=‘Algorithms to Live By_ The Computer Science of Human Decisions ( PDFDrive ).pdf’),
-    s3.ObjectSummary(bucket_name=‘testbucketpritam’, key=‘All the fundamental React.js concepts, jammed into this single Medium article (updated August 2019) _ by Samer Buna _ EdgeCoders _ Medium.pdf’)
+    s3.ObjectSummary(bucket_name='<YOUR AWS S3 BUCKET NAME>’, key=‘Algorithms to Live By_ The Computer Science of Human Decisions ( PDFDrive ).pdf’),
+    s3.ObjectSummary(bucket_name='<YOUR AWS S3 BUCKET NAME>’, key=‘All the fundamental React.js concepts, jammed into this single Medium article (updated August 2019) _ by Samer Buna _ EdgeCoders _ Medium.pdf’)
 ```
     
 ##### Code to upload a file: 
@@ -169,7 +169,7 @@ Congratulations u have created a new user with access to only a single bucket. T
 ```js
     import boto3
     s3_client = boto3.client(‘s3’)
-    s3_client.upload_file(‘hello.txt’, ‘testbucketpritam’, ‘hello.txt’)
+    s3_client.upload_file(‘hello.txt’, '<YOUR AWS S3 BUCKET NAME>’, ‘hello.txt’)
     upload_file(<name of the file in local>, <bucket name>, <name of the file in s3>)
 ```
     
@@ -178,7 +178,7 @@ Congratulations u have created a new user with access to only a single bucket. T
  ```js
     import boto3
     s3_client = boto3.client(‘s3’)
-    s3_client.download_file(‘testbucketpritam’, ‘hello.txt’, ‘hello2.txt’)
+    s3_client.download_file('<YOUR AWS S3 BUCKET NAME>’, ‘hello.txt’, ‘hello2.txt’)
     download_file(<Bucket Name>, <FileName in S3>,<file name that u want in local)
 ```
     
@@ -190,7 +190,7 @@ Congratulations u have created a new user with access to only a single bucket. T
     s3_client = boto3.client(‘s3’)
     open(‘hello.txt’,‘a+’).write(‘Hello, world!’)
     `13`
-    s3_client.upload_file(‘hello.txt’, ‘testbucketpritam’, ‘hello.txt’)
+    s3_client.upload_file(‘hello.txt’, '<YOUR AWS S3 BUCKET NAME>’, ‘hello.txt’)
 ```
     
 ##### Code to get all file metadata
@@ -199,12 +199,12 @@ Congratulations u have created a new user with access to only a single bucket. T
 import boto3
 s3client = boto3.client(‘s3’)
 paginator = s3client.get_paginator(‘list_objects_v2’)
-page_iterator = paginator.paginate(Bucket=‘testbucketpritam’)
+page_iterator = paginator.paginate(Bucket='<YOUR AWS S3 BUCKET NAME>’)
 for bucket in page_iterator:
  for file in bucket[‘Contents’]:
  print(file[‘Key’])
  try:
- metadata = s3client.head_object(Bucket=‘testbucketpritam’, Key=file[‘Key’])print(metadata)
+ metadata = s3client.head_object(Bucket='<YOUR AWS S3 BUCKET NAME>’, Key=file[‘Key’])print(metadata)
  except:
  print(“Failed {}”.format(file[‘Key’]))
 ```
@@ -235,9 +235,9 @@ hello1.txt
 ```js
 import boto3
 from boto3.s3.transfer 
-import S3Transfer<br> ACCESS_KEY = ‘AKIA3MTVLOSP4KOI47XK’
-SECRET_KEY = ‘8JF1rCqPjR+Uno16z4/ulnqpqCxxNNSf/knyJxSf’
-BUCKET_NAME = ‘testbucketpritam’
+import S3Transfer<br> ACCESS_KEY = ‘<YOUR AWS ACCOUNT ACCESS KEY>’
+SECRET_KEY = ‘<YOUR AWS ACCOUNT SECRET ACCESS KEY>’
+BUCKET_NAME = '<YOUR AWS S3 BUCKET NAME>’
 key = ‘hello1.txt’
 client = boto3.client(
     ‘s3’,
