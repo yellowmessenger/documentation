@@ -329,10 +329,6 @@ module.exports = {
         "updates/aug_21/analytics",
         "updates/aug_21/builder",
         "updates/aug_21/inbox",
-        "updates/aug_21/Integrations",
-        "updates/aug_21/marketplace",
-        "updates/aug_21/mobileApps",
-        "updates/aug_21/UI"
       ],
     },
     {
