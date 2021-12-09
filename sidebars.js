@@ -23,11 +23,13 @@ module.exports = {
   "tutorials/webinars",
   ],
   cookbooks: [
+    "cookbooks/getting_started",
     "cookbooks/conversation-design",
     {
       type: "category",
       label: "Basic",
-      items: ["cookbooks/multilingual"],
+      items: ["cookbooks/multilingual",
+    ],
     },
     {
       type: "category",

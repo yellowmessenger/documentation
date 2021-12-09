@@ -1,46 +1,66 @@
 ---
 id: getting_started
-title: Getting Started with "Hello World!"
-description: Get onboarded on Yellow Messenger!.
-sidebar_label: Getting Started with "Hello World!"
+title: Create your First Bot
+description: Create your First Bot
+sidebar_label: Create your First Bot
 featured: true
 rank: 1
 ---
 
-Building chatbot is fun. This article will guide you in creating your first chatbot. You start with a basic bot which is as simple as greeting Hello World!.
+yellow.ai provides it's users who sign up with a business email a bot to explore the platform on a free trial period basis*., with no strings attached! Interested? Follow this guide to create your first bot on the yellow.ai platform. *(* conditions applied )*
 
-Then you move on to building a complex bot which can converse with users, answer FAQs and generate Lead for you.
+Building chatbot is fun. You start with a basic bot which is as simple as greeting Hello World! Then you move on to building a complex bot which can converse with users, answer FAQs and generate Lead for you.
 
-## Create Your First Bot
+1. Register yourself on [https://cloud.yellow.ai/](https://cloud.yellow.ai/) using your email ID or signup using Google/GitHub/Microsoft
 
-Goto [Yellow Messenger Platform](https://cloud.yellowmessenger.com/) and signup.
+![Signup on yellow.ai](https://cdn.yellowmessenger.com/MJ0Yf1TM0ULY1615871791935.png)
 
-![](https://cdn.yellowmessenger.com/X8VR73bzLIqo1612936995575.png)
+2. If you signup using email ID, once signup is done you should receive an email from yellow.ai. In that email, click on `Get Started` to verify your email ID.
 
-Once the signup procedure is done, now its the time to cook the recipe. Lets get started!
+![Email Verification](https://cdn.yellowmessenger.com/IrlOfhnG4q0T1615871862150.png)
 
-### `Step 1`: Basic Info
+3. Post Signup, go to left sidebar and go to `Projects`. Now click on `Create new project`. You should see a popup now, click on `Next`.
 
-The first step would be giving your bot an identity, a description and select the industry.
+![Create New Project](https://cdn.yellowmessenger.com/5s1I16EvajAu1615871892518.png)
 
-![](https://cdn.yellowmessenger.com/4h3gHHKUEPJt1612939251605.png)
+4. Fill bot related details such as `Name of your bot`, industry, bot description. If you don't have it with you right now, worry not! You can always change it later.
 
-### `Step 2`: Selecting Channel
+![Bot Information](https://cdn.yellowmessenger.com/hikSW5o26P2O1615871943327.png)
 
-Once you are done with basic info of the bot you need to select the Channel on which the bot will be deployed. You can also select mutiple channels and add more channels later as well.
+5. Select the channel where you want publish your bot. For now, let's just select `Website. 
 
-![](https://cdn.yellowmessenger.com/SLWVGW6xYPAd1612940417819.png)
+![Bot Channels](https://cdn.yellowmessenger.com/RGhqDRMNsijr1615871987933.png)
 
-### `Step 3`: Configure
+6. On the configure page, submit `How do you greet your customer?`. This is the very first message (welcome message) your customers will see when they land on the bot, so try to comeup with something interesting ;) 
 
-Configuring your bot is as simple as adding salt to your dish. You know the right amount and the right question to be added. You can also configure the greeting message that will pop up once the users toggle the bot.
+Below that add `Top questions your customers ask you?`. Post bot creation, you can find these questions under FAQs section. 
 
-![](https://cdn.yellowmessenger.com/PsXP9z38uWQx1612941832721.png)
+![Welcome message and FAQs](https://cdn.yellowmessenger.com/8VBINI9eUrZb1615872033880.png)
 
-### `Step 4`: Get Started!
+7. Now your first bot on yellow.ai platform is ready! Click on `Go to dashboard`, now under `Try your bot` section click on `Start` button.
 
-Hurray, your first dish, sorry I mean bot is ready to be tasted/tested😉. Just some garnishing and its ready to serve🍲.
+![Bot Created](https://cdn.yellowmessenger.com/K8x4bYNocdTo1615872082754.png)
 
-![](https://cdn.yellowmessenger.com/EOMLLtPlTJMA1612942628884.png)
+![Dashboard](https://cdn.yellowmessenger.com/Iyl5S3lw9S1Q1615872138341.png)
 
-Thats all for this episode. For more awesome recipes you can [click here](https://docs.yellowmessenger.com/cookbooks/lead-gen-bot)
+8. Here, you will receive a welcome message from the bot! Congratulation on starting your bot building journey on the yellow.ai platform.
+
+![Try your bot](https://cdn.yellowmessenger.com/Izh8OXnIkAdm1615872173369.png)
+
+Incase you get stuck or have any question, don't hesitate to ask your queries at https://community.yellow.ai.
+
+### Not able to create a bot?
+
+If you're facing issues in creating a new bot on our platform; there can be several reasons for the same.
+
+![](https://i.imgur.com/OR9vYtF.png)
+
+1. You already have a bot, since all new accounts are allowed only one bot you will not be able to create another bot until upgraded your account. Reach out to contact@yellow.ai in this case.
+
+2. You are in the wrong subscription, if you had an account with us earlier then you need to create a new subscription and can create a bot in that subscription.
+
+3. There is a technical glitch and we request you to setup a call with us to resolve the same.
+
+Please feel free to schedule Call with experts using this link: https://calendly.com/pratik-yellow-ai/15min
+
+Just schedule a call as per your availability and we'd be happy to answer any of your bot building related questions.
