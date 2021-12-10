@@ -59,6 +59,9 @@ Prompts are nodes that take some user input. All prompts have a "**store respons
 #### Name, Email , Phone : 
 Name, Email, Phone prompts are used for asking for respective details . They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
 
+:::info
+Currently, Name Validator is only available for the English language. If you're building a [multilingual bot](././cookbooks/multilingual.md/), it's recommended to use a [Question Prompt](./prompts-and-messages#general---question) instead.
+:::
 ![](https://i.imgur.com/oQ1IV5r.png)
 
 :::info
