@@ -69,9 +69,17 @@ To create a new Campaign, follow the steps below:
 
 ![](https://cdn.yellowmessenger.com/tuccUSYKo5hu1626172455444.gif)
 
+## Frequency
+
+14. Here you define how frequently the same visitor will see this campaign
+15. As can be seen below, the frequency of campaign display depends on the visitors **last interaction** with the campaign
+16. If the visitor just sees the campaign and **doesn’t interact** then the **1st frequency** is referred to the **next time the campaign is to be displayed**. If they **click the button/engage** with the campaign then **2nd frequency** is referred to, and if they **dismiss the campaign** then the **3rd frequency** is referred to.
+
+![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/068BB776-1320-44EE-951A-D501BCFBC578/D854ED45-12BE-452E-A190-B8BA6E865494_2/Image.png)
+
 ## Congrats!!
 
-14. Your campaigns has been successfully launched
+17. Your campaigns has been successfully launched
 
 # Up Next
 
