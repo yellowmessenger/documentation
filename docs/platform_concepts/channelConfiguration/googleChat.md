@@ -94,3 +94,15 @@ This document will help you understand features and limitations of Google Chat c
 
 ![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/F68A2ECF-346C-48C7-966A-C0775CAAFC46_2/Image.png)
 
+> ## Supported Features
+
+- Following variables are passed to the profile object and can be accessed using {{{profile.**Variable**}}}:
+   - spaceId → This refers to the Google Chat space in which the user has messaged
+   - displayName → This refers to the name of the Google Chat user
+   - email → This refers to the email of the Google Chat user
+   - thread → This refers to the thread in which the User has messaged
+- [**Events**](https://developers.google.com/chat/api/guides/message-formats/events)**:** Upon successful configuration, the following events are auto-added to the Event Hub in yellow.ai platform:
+   - `google_chat_added_to_space` → Received when your Bot is added to a Space.
+   - `google_chat_removed_from_space` → Received when your Bot is removed from a Space.
+- **Text Messages:** Synchronous messages supported only.
+- **Card Messages:** This is **not supported** right now.
