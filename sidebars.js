@@ -114,6 +114,7 @@ module.exports = {
             "platform_concepts/studio/api-management/send-data",
             "platform_concepts/studio/api-management/receive-data",
             "platform_concepts/studio/api-management/enviroment-variables",
+            "platform_concepts/studio/api-management/bearer-token",
           ],
         },
         {
