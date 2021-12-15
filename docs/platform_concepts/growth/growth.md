@@ -1,6 +1,6 @@
 ---
 id: growth
-title: Understanding The Growth Module
+title: Understanding The Insights Module
 description: How to add analytics, graphs and create better understading of conversations.
 featured: true
 rank: 5

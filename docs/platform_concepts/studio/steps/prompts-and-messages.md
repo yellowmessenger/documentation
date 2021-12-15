@@ -117,7 +117,7 @@ On feedback prompt you can configure what your questions should be when you ask 
 :::
 
 :::warning
- :information_source: All of the feedback data can be found in Growth section > Data Explorer. 
+ :information_source: All of the feedback data can be found in Insights section > Data Explorer. 
  
 :warning: **You do not need to store it seperately.**
 

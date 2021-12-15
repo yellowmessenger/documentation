@@ -15,7 +15,7 @@ For simple & hassle-free management of bots across development environments, pub
 
 ### Live Mode 
 
-- This is the equivalent of production environment where all the end users are interacting with the bot. This is a READ ONLY mode for Studio Module, so, no changes can be made. However, analytics of live users can be seen in Growth Module; campaigns can be run via Engagement Module and Agent can utilise Inbox to attend to customer queries. 
+- This is the equivalent of production environment where all the end users are interacting with the bot. This is a READ ONLY mode for Studio Module, so, no changes can be made. However, analytics of live users can be seen in Insights Module; campaigns can be run via Engagement Module and Agent can utilise Inbox to attend to customer queries. 
 
 ### Publish Request Condition Checklist
 

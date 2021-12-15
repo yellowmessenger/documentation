@@ -144,7 +144,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Growth",
+      label: "Insights",
       collapsed: true,
       items: [
         "platform_concepts/growth/growth",

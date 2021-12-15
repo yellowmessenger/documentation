@@ -64,7 +64,7 @@ The Yellow.ai Studio is the place to build those intelligent bots to power your 
 
 ## [Data](../platform_concepts/data/create-tables)
 
-## [Growth](../platform_concepts/growth/growth)
+## [Insights](../platform_concepts/growth/growth)
 
 ## [Inbox](../platform_concepts/inbox/inbox)
 
