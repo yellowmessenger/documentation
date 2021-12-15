@@ -12,7 +12,7 @@ Here is a list below which shows all the tiers and features available.
 |     Data    |             |          ✅         |          ✅         |
 |     API     |      ✅      |          ✅         |          ✅         |
 |     Code    |             |                    |          ✅         |
-|    Growth   |      ✅      |          ✅         |          ✅         |
+|   Insights  |      ✅      |          ✅         |          ✅         |
 |    Inbox    |      ✅      |          ✅         |          ✅         |
 |  Engagement |      ✅      |          ✅         |          ✅         |
 |   Channels  |      ✅      |          ✅         |          ✅         |

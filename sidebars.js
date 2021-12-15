@@ -23,11 +23,13 @@ module.exports = {
   "tutorials/webinars",
   ],
   cookbooks: [
+    "cookbooks/getting_started",
     "cookbooks/conversation-design",
     {
       type: "category",
       label: "Basic",
-      items: ["cookbooks/multilingual"],
+      items: ["cookbooks/multilingual",
+    ],
     },
     {
       type: "category",
@@ -111,6 +113,7 @@ module.exports = {
             "platform_concepts/studio/api-management/add-api",
             "platform_concepts/studio/api-management/send-data",
             "platform_concepts/studio/api-management/receive-data",
+            "platform_concepts/studio/api-management/enviroment-variables",
           ],
         },
         {
@@ -141,7 +144,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Growth",
+      label: "Insights",
       collapsed: true,
       items: [
         "platform_concepts/growth/growth",
@@ -328,10 +331,6 @@ module.exports = {
         "updates/aug_21/analytics",
         "updates/aug_21/builder",
         "updates/aug_21/inbox",
-        "updates/aug_21/Integrations",
-        "updates/aug_21/marketplace",
-        "updates/aug_21/mobileApps",
-        "updates/aug_21/UI"
       ],
     },
     {

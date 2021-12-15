@@ -249,6 +249,11 @@ If bot is suppose to respond with a different message outside of agent working h
 
 > Note : The bot default timezone considered while evalutaing whether a user is outside working hours.
 
+:::info
+Inbox support auto translate feature out of the box so agents don't need to know the customers langauge in order to help them. Just enable `Translate User Message` in the raise ticket node configuration to use this feature.
+
+<img src="https://i.imgur.com/frCvffs.png" alt="drawing" width="60%"/>
+:::
 ---
 
 ### Set language

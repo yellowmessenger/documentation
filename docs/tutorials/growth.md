@@ -1,6 +1,6 @@
 ---
-title: Growth 
-sidebar_label: Growth
+title: Insights 
+sidebar_label: Insights
 featured: true
 ---
 

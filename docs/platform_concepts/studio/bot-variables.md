@@ -26,8 +26,7 @@ Let’s dive deeper into these variables.
 ## System Variables
 This is a fixed set of variables. The variable names can not be altered and new variables can not be added to this category.
 Following system variables have been exposed on the platform for quick use: -
-{{{variables.var_name}}} notation is used to access system variables.
-
+{{{system_variable_name}}} notation is used to access system variables.
 
 
 | Variable             | Data type | Use                                                                      |
