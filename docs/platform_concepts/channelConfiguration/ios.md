@@ -108,11 +108,20 @@ If you are adding Speech recognization, add following snippet to Info.plist of t
 ```
 
 ### Colors
-#### Status bar
-Status bar color can be set on `statusBarColor` color variable
+#### Status bar background
+Status bar background color can be set using `statusBarColor` variable present in YMConfig
 
 ```swift
 config.statusBarColor = UIColor.red
+```
+
+#### Status bar style
+Status bar style can be set on `statusBarStyle` variable present in YMConfig.
+
+Values can be either `default`, `lightContent` or `darkContent`. Default type is `default`
+
+```swift
+config.statusBarStyle = UIStatusBarStyle.darkContent
 ```
 
 #### Close button
