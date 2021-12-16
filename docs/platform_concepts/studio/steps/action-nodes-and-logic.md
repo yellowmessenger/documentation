@@ -195,7 +195,64 @@ This simple UI node can be used to setup basic & advanced scenarios such as Work
 1. ** Ticket Closed ** - This essentially is bot behaviour after the Agent closes a ticket (i.e. s/he has resolved user query).
 2. ** Error ** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured. 
 
+**Raise Ticket Response**
 
+Raise Ticket action node returns an object response as shown below. You can parse important information from this response to store it in a database or use it an another journey.
+
+```json
+{
+  "tags": [],
+  "responded": false,
+  "ticketType": "livechat",
+  "ticketCsatScore": null,
+  "agentCsatScore": null,
+  "assignedByAdmin": false,
+  "manualAssignment": false,
+  "lastAgentMessageTime": null,
+  "lastUserMessageTime": null,
+  "lastBotMessageTime": null,
+  "userActiveStatus": null,
+  "agentActiveStatus": null,
+  "replyCount": 0,
+  "voiceCall": false,
+  "sipCall": false,
+  "agentCurrentHandlingTicketsCount": 0,
+  "autoStartCall": false,
+  "autoTranslate": false,
+  "autoDetectLanguage": false,
+  "_id": "6156df377b7bb14e16bae116",
+  "botId": "YOUR_BOT_ID_HERE",
+  "uid": "106265078787462873391306131746",
+  "source": "yellowmessenger",
+  "issue": "ISSUE_TITLE_HERE",
+  "priority": "MEDIUM",
+  "severity": "MEDIUM",
+  "contact": {
+    "phone": "1234567890",
+    "name": "CUSTOMER_NAME",
+    "email": "[community@yellow.ai](mailto:community@yellow.ai)"
+  },
+  "assignedTo": "community_yello_ai",
+  "sessionId": "5b8a665e69dbc5c451d88bf0",
+  "userLanguage": "en",
+  "ticketId": "100001",
+  "logs": [],
+  "timestamp": "2021-10-01T10:13:11.657Z",
+  "reassignmentLog": [],
+  "collaborators": [
+    {
+      "_id": "6156df377b7bb15d9fbae11a",
+      "username": "community_yello_ai",
+      "xmppUsername": "user_1624003758958",
+      "name": "yellow.ai Community"
+    }
+  ],
+  "agentLanguage": "en",
+  "status": "ASSIGNED",
+  "assignedTime": "2021-10-01T10:13:11.695Z",
+  "xmpp": "user_1624003758958"
+}
+```
 ![](https://i.imgur.com/Str2q6a.png)
 
 While raising a ticket, you can pass fields such as **Name** , **Contact** (Email/Phone Number), and **Query**. Message after ticket assignment will be seen by user on getting connected to the agent.
@@ -255,6 +312,7 @@ Inbox support auto translate feature out of the box so agents don't need to know
 <img src="https://i.imgur.com/frCvffs.png" alt="drawing" width="60%"/>
 :::
 ---
+
 
 ### Set language
 You can use Set language action node to set or change the bot language at any given point in the flow. Set language action node takes only one input - variable containing ISO code of language you wish to change to. 
