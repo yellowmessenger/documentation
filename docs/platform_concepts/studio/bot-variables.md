@@ -39,6 +39,19 @@ Following system variables have been exposed on the platform for quick use: -
 | sessionMessageLogUrl | string    | Returns a URL to the chat’s transcript                                   |
 | date                 | object    | Returns the current date and time                                        |
 
+:::info
+You can access user profile using this synax: `{{{profile.field_name}}}`.
+
+- city
+- country
+- country_code
+- firstTime (if user is visiting the bot for the first time)
+- ip
+- latitude
+- longitude
+- name (generated user name)
+- region
+:::
 ## Custom Variables
 
 These are variables defined by bot builders. Custom variables are further subdivided into journey and global variables.
