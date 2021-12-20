@@ -368,6 +368,17 @@ Quick replies can be used to give end-user 'quick' options. **Users can  either 
 You can drag and extend each quick reply to attach with further flow you want ahead of it. 
 There is also an option to configure *fallback* which will work when none of the quick replies are validated from user input (Nor any other intent detected)
 
+:::info
+You can disable the user input for any prompt node from the `Channel Options`.
+
+1. Open a prompt for which you want to disable the user input.
+<img src="https://i.imgur.com/ryyK5Ft.png" alt="drawing" width="80%"/>
+
+2. Under website channel, enable the `Hide Input` field.
+<img src="https://i.imgur.com/JpfyA2U.png" alt="drawing" width="60%"/>
+:::
+
+
 #### Quick reply settings
 If you click on a quick reply button - you can find a few additional options (advanced settings) to configure. 
 - Button value  : If configured, this is the actual value of this button - that will go to any Database insert or be stored in variable. 
