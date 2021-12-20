@@ -42,6 +42,7 @@ Following system variables have been exposed on the platform for quick use: -
 :::info
 You can access user profile using this synax: `{{{profile.field_name}}}`.
 
+Following fields in the user profile object:
 - city
 - country
 - country_code
