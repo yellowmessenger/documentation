@@ -275,6 +275,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
         "platform_concepts/channelConfiguration/web-widget",
+        "platform_concepts/channelConfiguration/instagram"
       ],
     },
     {
