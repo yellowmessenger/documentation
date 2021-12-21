@@ -61,6 +61,7 @@ module.exports = {
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
+        "cookbooks/whatsapp cookbook/fb-business-verification",
       ],
     },
   ],
@@ -114,6 +115,8 @@ module.exports = {
             "platform_concepts/studio/api-management/send-data",
             "platform_concepts/studio/api-management/receive-data",
             "platform_concepts/studio/api-management/enviroment-variables",
+            "platform_concepts/studio/api-management/bearer-token",
+            "platform_concepts/studio/api-management/transformation-function",
           ],
         },
         {

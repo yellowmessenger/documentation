@@ -15,11 +15,15 @@ Action nodes are used whenever we need to take some action behind the scenes exa
 
 API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) from user inputs and then store API response in a variable for further use. 
 
-![](https://i.imgur.com/gh4hTyr.png)
+<img src="https://i.imgur.com/gh4hTyr.png" alt="drawing" width="60%"/>
 
 In above node, we selected an API (explore_car) to hit, we provided value to parameter using variable. 
 Then we store the whole response we will get from that API in a variable.
->:information_source: Learn how to directly use this variable, if JSON response in your nodes to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
+
+:::info
+
+Learn how to directly use this variable, if JSON response in your nodes to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
+:::
 
 :computer:  **`Optional field`** : **`Transformation function`**
  Sometimes, an API response can be too big , or not in a proper format for us to be able to parse from easily. (Note that a function is not needed just to access a simple field of a JSON API response). 
@@ -43,12 +47,10 @@ return new Promise
 
 ```
 
-
 :::warning
 :pushpin: **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node.
 
 [Click here to learn how to add APIs](../api-management/add-api)
-
 
 ![](https://i.imgur.com/ENGKa8e.jpg)
 
@@ -58,7 +60,10 @@ return new Promise
 
 ### Analytics
 Analytics node can be used to sent analytics events at any point in the execution of journey. You type the event name to push and select value. 
-![](https://i.imgur.com/ZrlJRWi.png)
+
+<img src="https://i.imgur.com/ZrlJRWi.png" alt="drawing" width="60%"/>
+
+
 
 ---
 
@@ -66,7 +71,7 @@ Analytics node can be used to sent analytics events at any point in the executio
 Variables node can be used to set value of one or more variables at any point in the node. ([Learn how to create a variable](../bot-variables))
 > :information_source: If you leave value blank, it will set to empty string
 
-![](https://i.imgur.com/f0mF278.png)
+<img src="https://i.imgur.com/f0mF278.png" alt="drawing" width="60%"/>
 
 ---
 
@@ -75,19 +80,19 @@ Database action node helps you in perform simple insert and search operations on
 
 #### **Insert**
 You select insert operation to insert details against each column into any database table you select. 
-![](https://i.imgur.com/Bs3DcfA.png)
+
+<img src="https://i.imgur.com/Bs3DcfA.png" alt="drawing" width="60%"/>
 
 #### **Bulk Insert**
 You can also do bulk insert in database instead of just one row at a time. All you need on this node is to select a variable containing data you want to insert. 
 [To be updated]
 
-![](https://i.imgur.com/8rnAtQ9.png)
+<img src="https://i.imgur.com/8rnAtQ9.png" alt="drawing" width="60%"/>
 
 #### **Search**
 You can also perform search operation in database node. 
 
-![](https://i.imgur.com/9yCz0DD.png)
-
+<img src="https://i.imgur.com/9yCz0DD.png" alt="drawing" width="60%"/>
 
 1. For searching, you can **select a table** you want to perform search on. 
 2. **Add filter**: You can also add filters to your search (optional). 
@@ -112,7 +117,8 @@ You can also perform search operation in database node.
 
 #### Update
 
-![](https://i.imgur.com/o7lvCdC.png)
+<img src="https://i.imgur.com/o7lvCdC.png" alt="drawing" width="50%"/>
+
 
 Update option in the database node can be used to update values stored in the tables.
 To do so:
@@ -130,7 +136,7 @@ To do so:
 You can use function node to excute code at any point in the flow. 
 In this node you can select the [code function](../cloud-function) you wish to execute and [variable](../bot-variables) to store the return value of function in (optional).
 
-![](https://i.imgur.com/hCnAPvz.png)
+<img src="https://i.imgur.com/hCnAPvz.png" alt="drawing" width="50%"/>
 
 :::info
 
@@ -142,7 +148,7 @@ Learn [here](../cloud-function) about different methods/args you can use in func
 ### Document Search
 Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base.  (This node shows results from document cognition)
 
-![](https://i.imgur.com/0V43oWI.png)
+<img src="https://i.imgur.com/0V43oWI.png" alt="drawing" width="70%"/>
 
 - You can select a variable containing search query
 - You can also choose too add metadata filters (optional) to your query (the filters you tagged your documents with will show in dropdown). 
@@ -150,7 +156,8 @@ Document Search action node is used to answer user query at any point in the flo
 - There is no store output here, as the results are directly shown in carousels. 
 - In node settings, you can configure total no. of results shown, total number of results per document and messages shown while showing results/reporting failure. 
 
-![](https://i.imgur.com/cu1uk7M.png)
+<img src="https://i.imgur.com/cu1uk7M.png" alt="drawing" width="50%"/>
+
 
 ---
 
@@ -163,7 +170,8 @@ Following fields can be configured:
 - `Subject`- You can write plain text and use variables here. 
 - `Body` - You can write plain text, basic HTML markdown, or can also use [variables](../bot-variables). 
 
-![](https://i.imgur.com/BlpcD8e.png)
+<img src="https://i.imgur.com/BlpcD8e.png" alt="drawing" width="50%"/>
+
 
 
 ---
@@ -177,7 +185,7 @@ Modifier node is used to perform a series of simple operations like lower case, 
   You can also test your series of modifiers by entering different input strings to check whether you are getting desired output in test window shown below. 
 :::
 
-![](https://i.imgur.com/ENukZvc.png)
+<img src="https://i.imgur.com/ENukZvc.png" alt="drawing" width="65%"/>
 
 ---
 
@@ -185,7 +193,8 @@ Modifier node is used to perform a series of simple operations like lower case, 
 
 Raise ticket is used in order to connect user to the human agent. Raise Ticket Node can be found in Actions List - 
 
-![](https://cdn.yellowmessenger.com/06DOgJSptFtI1625671454725.png)
+<img src="https://cdn.yellowmessenger.com/06DOgJSptFtI1625671454725.png" alt="drawing" width="40%"/>
+
 <!-- update screenshot -->
 
 This simple UI node can be used to setup basic & advanced scenarios such as Working Hours, Agent Availibiity, voice/video calling, etc required to create a ticket.
@@ -195,14 +204,71 @@ This simple UI node can be used to setup basic & advanced scenarios such as Work
 1. ** Ticket Closed ** - This essentially is bot behaviour after the Agent closes a ticket (i.e. s/he has resolved user query).
 2. ** Error ** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured. 
 
+**Raise Ticket Response**
 
+Raise Ticket action node returns an object response as shown below. You can parse important information from this response to store it in a database or use it an another journey.
+
+```json
+{
+  "tags": [],
+  "responded": false,
+  "ticketType": "livechat",
+  "ticketCsatScore": null,
+  "agentCsatScore": null,
+  "assignedByAdmin": false,
+  "manualAssignment": false,
+  "lastAgentMessageTime": null,
+  "lastUserMessageTime": null,
+  "lastBotMessageTime": null,
+  "userActiveStatus": null,
+  "agentActiveStatus": null,
+  "replyCount": 0,
+  "voiceCall": false,
+  "sipCall": false,
+  "agentCurrentHandlingTicketsCount": 0,
+  "autoStartCall": false,
+  "autoTranslate": false,
+  "autoDetectLanguage": false,
+  "_id": "6156df377b7bb14e16bae116",
+  "botId": "YOUR_BOT_ID_HERE",
+  "uid": "106265078787462873391306131746",
+  "source": "yellowmessenger",
+  "issue": "ISSUE_TITLE_HERE",
+  "priority": "MEDIUM",
+  "severity": "MEDIUM",
+  "contact": {
+    "phone": "1234567890",
+    "name": "CUSTOMER_NAME",
+    "email": "[community@yellow.ai](mailto:community@yellow.ai)"
+  },
+  "assignedTo": "community_yello_ai",
+  "sessionId": "5b8a665e69dbc5c451d88bf0",
+  "userLanguage": "en",
+  "ticketId": "100001",
+  "logs": [],
+  "timestamp": "2021-10-01T10:13:11.657Z",
+  "reassignmentLog": [],
+  "collaborators": [
+    {
+      "_id": "6156df377b7bb15d9fbae11a",
+      "username": "community_yello_ai",
+      "xmppUsername": "user_1624003758958",
+      "name": "yellow.ai Community"
+    }
+  ],
+  "agentLanguage": "en",
+  "status": "ASSIGNED",
+  "assignedTime": "2021-10-01T10:13:11.695Z",
+  "xmpp": "user_1624003758958"
+}
+```
 ![](https://i.imgur.com/Str2q6a.png)
 
 While raising a ticket, you can pass fields such as **Name** , **Contact** (Email/Phone Number), and **Query**. Message after ticket assignment will be seen by user on getting connected to the agent.
 
 **Advanced Options** - to provide additional information to the ticket.
 
-![](https://cdn.yellowmessenger.com/4RHn4Fh3AzoS1625672881317.png)
+<img src="https://cdn.yellowmessenger.com/4RHn4Fh3AzoS1625672881317.png" alt="drawing" width="65%"/>
 
 As configured in Inbox Settings, Tags and Custom Fields will be visible in a multi-select dropdown(i.e. more than one options can be added to ticket)
 
@@ -216,7 +282,7 @@ As configured in Inbox Settings, Tags and Custom Fields will be visible in a mul
 
 - **Custom Fields** - Based on the use case additonal information collected by bot can be added to ticket. for example, in ecommerce Order ID, Payment Mode, Delivery date etc can be asked before connecting to the agent. Just like key value pairs, once a custom field is selected, additional prompt will be seen.
 
-![](https://cdn.yellowmessenger.com/iE4ppldmrE7k1625673583277.png)
+<img src="https://cdn.yellowmessenger.com/iE4ppldmrE7k1625673583277.png" alt="drawing" width="65%"/>
 
 **Error Handling**
 
@@ -243,18 +309,19 @@ Follow two steps to handle custom scenarios -
 
 **Working Hours**
 
-If bot is suppose to respond with a different message outside of agent working hours, **Logc Node** can be used. 
+If bot is suppose to respond with a different message outside of agent working hours, **[Logic Node](./action-nodes-and-logic#logic)** can be used. 
 
-![](https://cdn.yellowmessenger.com/ciDa5Gn2ZzbK1625675537775.png)
+<img src="https://cdn.yellowmessenger.com/ciDa5Gn2ZzbK1625675537775.png" alt="drawing" width="60%"/>
 
 > Note : The bot default timezone considered while evalutaing whether a user is outside working hours.
 
 :::info
 Inbox support auto translate feature out of the box so agents don't need to know the customers langauge in order to help them. Just enable `Translate User Message` in the raise ticket node configuration to use this feature.
 
-<img src="https://i.imgur.com/frCvffs.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/frCvffs.png" alt="drawing" width="40%"/>
 :::
 ---
+
 
 ### Set language
 You can use Set language action node to set or change the bot language at any given point in the flow. Set language action node takes only one input - variable containing ISO code of language you wish to change to. 
@@ -262,8 +329,7 @@ You can use Set language action node to set or change the bot language at any gi
 
 [Here is the list of languages that we support](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported)
 
-
-![](https://i.imgur.com/kNWdMP4.png)
+<img src="https://i.imgur.com/kNWdMP4.png" alt="drawing" width="60%"/>
 
 :::warning
 Language can only be changed to only if that language is configured in bot settings, otherwise the node will fail. 
@@ -277,23 +343,25 @@ Trigger Journey action node can be used to trigger another journey at any point 
 If you add more nodes after trigger journey, the bot will return to the remaining flow in the journey after triggered journey ins completed.
 ::: 
 
-![](https://i.imgur.com/60xWXCn.png)
+<img src="https://i.imgur.com/60xWXCn.png" alt="drawing" width="60%"/>
 
 ---
 
 ### Send OTP and Verify OTP
 Send OTP and Verify OTP are simple nodes that can be used for sending and verifying OTPs.  
 
- ![](https://i.imgur.com/PedjC6o.png)
+<img src="https://i.imgur.com/PedjC6o.png" alt="drawing" width="60%"/>
 
- In verify otp node, you can also branch the flow based on verification success and failure.
- 
-![](https://i.imgur.com/aRvqus8.png)
+
+In verify otp node, you can also branch the flow based on verification success and failure.
+
+<img src="https://i.imgur.com/aRvqus8.png" alt="drawing" width="60%"/>
+
 
 ### Generate PDF
 This node is used to generate PDFs that contain dynamic data.
 
-![](https://cdn.yellowmessenger.com/4yIdNmUwh3Q51626268800011.png)
+<img src="https://cdn.yellowmessenger.com/4yIdNmUwh3Q51626268800011.png" alt="drawing" width="60%"/>
 
 Steps to generate dynamic documents:
 1. **Upload a template document**. This document should be in .docx format and have placeholder values wherever the dynamic data is to be inserted. The placeholder should be enclosed in single brackets, ie. `{placeholdername}`.
@@ -306,7 +374,7 @@ eg: The company name is {company name}
 ### Delay
 Using this action node, we can delay the next steps of our conversational flow in a journey. We can set the delay in terms of minutes or hours.
 
-![](https://i.imgur.com/SOvGGjq.png)
+<img src="https://i.imgur.com/SOvGGjq.png" alt="drawing" width="80%"/>
 
 Now if we see in this example the phone prompt is followed by a 1 min delay node. So the next name prompt will appear 1 min after phone prompt.
 
@@ -317,6 +385,6 @@ Now if we see in this example the phone prompt is followed by a 1 min delay node
 ### If condition
 Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
 
-![](https://i.imgur.com/sSq1fSG.png)
+<img src="https://i.imgur.com/sSq1fSG.png" alt="drawing" width="60%"/>
 
 <!-- update branch flow chart -->
