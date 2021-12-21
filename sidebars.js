@@ -61,6 +61,7 @@ module.exports = {
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
+        "cookbooks/whatsapp cookbook/fb-business-verification",
       ],
     },
   ],
