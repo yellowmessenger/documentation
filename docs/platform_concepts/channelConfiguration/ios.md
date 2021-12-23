@@ -86,6 +86,13 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 config.customBaseUrl = "https://yourcustomurl.com"
 ```
 
+### Custom loader
+You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
+
+```swift
+config.customLoaderUrl = "https://example.com/your/custom/image.gif"
+```
+
 ### V2 bot
 You can enable V2 bot by setting the version in config. Default value is 1
 
