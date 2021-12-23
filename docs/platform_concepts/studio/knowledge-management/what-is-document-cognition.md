@@ -20,6 +20,10 @@ Following are some examples when intent classification is the right tool to use 
 
 - Documents are not clean and have a lot of images, scanned pages, complex charts, tables, and diagrams, etc.
 
+:::info
+Document Cognition is currently available in english langauge only.
+:::
+
 ## Supported Formats
 
 Currently, we support PDF, PPT, and .Docx formats. We do not support web scraping and HTML. However, you can export webpages as PDFs and feed them to the engine.
