@@ -399,12 +399,22 @@ In this case, you need to dynamically generate quick replies.
 Here, instead of adding quick replies manually, you can select a variable containing a quick reply object. 
 **`Format of quick reply object`**
 ```
- {
-    title: "My QR Title",
-    options: [
-            {title: "Project0", text: "Project0"},
-            {title: "Project1", text: "Project1"}
-            ]
+{
+  "title": "Select one of the option",
+  "options": [
+    {
+      "title": "Docs",
+      "url": "https://docs.yellow.ai"
+    },
+    {
+      "title": "Community",
+      "url": "https://community.yellow.ai"
+    },
+    {
+      "title": "yellow.ai",
+      "text": "yellowdotai"
+    }
+  ]
 }
 ```
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intented variable. For example, you can apply for loop around options to dynamically add to them while parsing through some API response etc. 
