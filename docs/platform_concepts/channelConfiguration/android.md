@@ -22,7 +22,7 @@ repositories {
 dependencies {
     ...
     ...
-	   implementation 'com.github.yellowmessenger:YMChatbot-Android:1.6.+
+	   implementation 'com.github.yellowmessenger:YMChatbot-Android:1.7.+
 }
 ```
 
@@ -132,6 +132,13 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 
 ```java
 ymChat.config.customBaseUrl = "https://yourcustomurl.com";
+```
+
+### Custom loader
+You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
+
+```java
+ymChat.config.customLoaderUrl = "https://example.com/your/custom/image.gif"
 ```
 
 ### V2 bot
