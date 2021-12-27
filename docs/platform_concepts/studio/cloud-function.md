@@ -53,3 +53,28 @@ return new Promise(resolve => {
     resolve(suggestions);
 });
 ```
+
+### Decode BASE64
+
+**The Base64 Alphabet contains 64 basic ASCII characters.**
+
+It Use to Encode Files
+
+```js
+    let call_api = await app.executeApi('api_name', { argument: _value});
+    let api_data = JSON.parse(call_api.body);
+    app.log(api_data, "#####API DATA");
+
+    let buffer = new Buffer.from(api_data.obj_name, "base64"); // Decode the file
+    let file_url = await app.uploadFile(buffer, 'File.pdf');  // Upload file in YM server
+    // await app.sendDocument(file_url, { caption:"FILE", filename: 'File.pdf', mime: 'application/pdf' });
+    await app.sendCards([
+        {
+            title: "Kindly download the same as PDF",
+            actions: [{
+                title: "DOWNLOAD",
+                url: file_url
+            }]
+        }
+    ]);
+```
