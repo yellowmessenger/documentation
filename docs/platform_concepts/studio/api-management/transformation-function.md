@@ -1,6 +1,6 @@
 ---
-title: Transfromation Function
-sidebar_label : Transfromation Function
+title: Transformation Function
+sidebar_label : Transformation Function
 ---
 
 API section can be used to invoke APIs but to parse and manipulate the API response, transformation function come in handy. Let's see how to add a new transformation function and use it to parse the API response.
