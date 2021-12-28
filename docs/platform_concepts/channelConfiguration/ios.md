@@ -86,6 +86,13 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 config.customBaseUrl = "https://yourcustomurl.com"
 ```
 
+### Custom loader
+You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
+
+```swift
+config.customLoaderUrl = "https://example.com/your/custom/image.gif"
+```
+
 ### V2 bot
 You can enable V2 bot by setting the version in config. Default value is 1
 
@@ -108,11 +115,20 @@ If you are adding Speech recognization, add following snippet to Info.plist of t
 ```
 
 ### Colors
-#### Status bar
-Status bar color can be set on `statusBarColor` color variable
+#### Status bar background
+Status bar background color can be set using `statusBarColor` variable present in YMConfig
 
 ```swift
 config.statusBarColor = UIColor.red
+```
+
+#### Status bar style
+Status bar style can be set on `statusBarStyle` variable present in YMConfig.
+
+Values can be either `default`, `lightContent` or `darkContent`. Default type is `default`
+
+```swift
+config.statusBarStyle = UIStatusBarStyle.darkContent
 ```
 
 #### Close button
