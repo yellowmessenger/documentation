@@ -13,6 +13,20 @@ Run this command in terminal form project root folder
 ionic cordova plugin add cordova-plugin-ymchat
 ```
 
+### Android
+
+#### File provider
+Note: Only for version v1.4.0 & above
+
+Add following key in your `strings.xml` file, this will override default file provider used by SDK.
+
+Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
+Example - applicationId : "com.abc.xyz" then  application_id_for_provider = com.abc.xyz.fileprovider
+
+```xml
+<string name="application_id_for_provider">your.application.id.fileprovider</string>
+```
+
 ## Usage
 
 ### Set botId
@@ -67,6 +81,13 @@ cordova-plugin-ymchat supports bots with on-prem deployments. For the bot to wor
 
 ```javascript
 cordova.plugins.ymchat.setCustomURL("https://your-on-prem-url.com");
+```
+
+### Custom loader
+You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
+
+```javascript
+cordova.plugins.ymchat.setCustomLoaderURL("https://example.com/your/custom/image.gif");
 ```
 
 ### V2 bot
