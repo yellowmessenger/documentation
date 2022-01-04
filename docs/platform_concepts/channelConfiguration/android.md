@@ -4,13 +4,15 @@ sidebar_label: Android Chatbot SDK
 ---
 
 ## Installation
+
 ### Gradle
+
 To integrate YMChat into your Android project using gradle, specify the following configurations in App level `build.gradle` file
 
 ```gradle
 repositories {
     jcenter()
-    // Add these two lines 
+    // Add these two lines
     maven { url "https://jitpack.io" }
     maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
 }
@@ -31,18 +33,18 @@ Still, if you want to use exact and latest version please visit the github repos
 [https://github.com/yellowmessenger/YMChatbot-Android/releases](https://github.com/yellowmessenger/YMChatbot-Android/releases)
 
 ### File provider
-Note: Only for version v1.4.0 & above
 
 Add following key in your `strings.xml` file, this will override default file provider used by SDK.
 
 Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
-Example - applicationId : "com.abc.xyz" then  application_id_for_provider = com.abc.xyz.fileprovider
+Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.abc.xyz.fileprovider
 
 ```xml
 <string name="application_id_for_provider">your.application.id.fileprovider</string>
 ```
 
 ## Basic Usage
+
 Import the YMChat library in your Activity.
 
 ```java
@@ -50,7 +52,7 @@ import com.yellowmessenger.ymchat.YMChat;
 import com.yellowmessenger.ymchat.YMConfig;
 ```
 
-After the library is imported the basic bot can be presented with few lines as below 
+After the library is imported the basic bot can be presented with few lines as below
 
 Example `onCreate` method of the Activity:
 
@@ -61,7 +63,7 @@ protected void onCreate(Bundle savedInstanceState) {
 	super.onCreate(savedInstanceState);
     // Dummy bot id. (Purrs a lot)
     String botID = "x1587041004122";
-	
+
     //Get YMChat instance
 	YMChat ymChat = YMChat.getInstance();
 	ymChat.config = new YMConfig(botId);
@@ -80,9 +82,11 @@ protected void onCreate(Bundle savedInstanceState) {
 ```
 
 ## YMConfig
+
 YMConfig can be used to set the bot id and other bot related settings. It is recommended to set all appropriate config **before** starting the bot
 
 ### Initialize YMConfig
+
 YMConfig requires `botID` to initialize. All other settings are optional.
 
 ```java
@@ -90,6 +94,7 @@ ymChat.config = new YMConfig("<BOT-ID>");
 ```
 
 ### YM AuthenticationToken
+
 ymAuthenticationToken is used to associate an identity of the user with the chat bot.
 
 Whenever chatbot is launched with ymAuthenticationToken it will load the previous chats associated with this user since **inception**.
@@ -101,6 +106,7 @@ ymChat.config.ymAuthenticationToken = "your-token"
 Note: History will load only when `Show history` flag is enabled in the channel settings
 
 ### Push Notifications
+
 YMChat supports firebase notifications. Assign your `FCM token` to deviceToken
 
 ```java
@@ -110,6 +116,7 @@ ymChat.config.deviceToken = "your-firebase-device-token"
 Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
 
 ### Payload
+
 Additional information can be passed in the form of key value pair from app to bot using payload.
 
 ```java
@@ -128,6 +135,7 @@ Payload is securely passed in HTTPS post request to protect the information pass
 :::
 
 ### On Premise deployments
+
 Your on-prem deployment URL can be set to `customBaseUrl`
 
 ```java
@@ -135,6 +143,7 @@ ymChat.config.customBaseUrl = "https://yourcustomurl.com";
 ```
 
 ### Custom loader
+
 You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
 
 ```java
@@ -142,6 +151,7 @@ ymChat.config.customLoaderUrl = "https://example.com/your/custom/image.gif"
 ```
 
 ### V2 bot
+
 You can enable V2 bot by setting the version in config. Default value is 1
 
 ```java
@@ -149,6 +159,7 @@ ymChat.config.version = 2;
 ```
 
 ### Speech to Text
+
 Speech to text can be enabled by setting the enableSpeech flag present in config. Default value is `false`
 
 ```java
@@ -156,7 +167,9 @@ ymChat.config.enableSpeech = true
 ```
 
 ### Colors
+
 #### Status bar
+
 Status bar color can be set on `statusBarColor` color variable
 
 ```java
@@ -164,12 +177,15 @@ ymChat.config.statusBarColor = R.color.red
 ```
 
 #### Close button
+
 Close button color can be set on `closeButtonColor`
+
 ```java
 ymChat.config.closeButtonColor = R.color.white
 ```
 
 ## Starting the bot
+
 Once the config is set, chat bot can be presented by calling `startChatbot()` and passing your Activity context as an argument
 
 ```java
@@ -177,7 +193,8 @@ ymChat.startChatbot(this);
 ```
 
 ## Bot Events
-Bot events are used to pass information from bot to app. Events from bot can be handled using event Listeners.  Simply define the `onSuccess` method of `onEventFromBot` listener.
+
+Bot events are used to pass information from bot to app. Events from bot can be handled using event Listeners. Simply define the `onSuccess` method of `onEventFromBot` listener.
 
 ```java
 ymChat.onEventFromBot(botEvent -> {
@@ -188,6 +205,7 @@ ymChat.onEventFromBot(botEvent -> {
 ```
 
 #### Bot close event
+
 Bot close event is separately sent and it can be handled by listening to onBotClose event as mentioned below. To programatically close bot use `ymChat.closeBot()` method
 
 ```java
@@ -197,6 +215,7 @@ ymChat.onBotClose(() -> {
 ```
 
 ## Close bot
+
 Bot can be programatically closed using `closeBot()` function
 
 ```java
@@ -204,6 +223,7 @@ ymChat.closeBot();
 ```
 
 ## Unlink Device Token
+
 If you want to stop receiving push notifications you can unlink the device token.
 Device token typically is unlinked when the user logs out of the app.
 
@@ -221,14 +241,16 @@ try {
             Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
         }
     });
-} catch (Exception e) { 
+} catch (Exception e) {
     //Catch and handle the exception
     e.printStackTrace();
 }
 ```
+
 Note: API key can be found in account settings under Access keys section after you login.
 
 ## Dependencies
+
 Following dependencies are used in chat bot SDK
 
 ```java
@@ -245,6 +267,7 @@ Following dependencies are used in chat bot SDK
 ```
 
 ## Permissions
+
 We are declaring and asking for following permission in our manifest file
 
 ```java
@@ -255,7 +278,7 @@ We are declaring and asking for following permission in our manifest file
 ```
 
 All permissions will be asked at run time except INTERNET.
-For attachment (picking  file/images from phone storage)
+For attachment (picking file/images from phone storage)
 
 ```java
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
@@ -268,6 +291,7 @@ For voice input
 ```
 
 ## Important
+
 If facing problem in release build, add the following configuration in the app's proguard-rules.pro file.
 
 ```java
@@ -277,5 +301,6 @@ If facing problem in release build, add the following configuration in the app's
 ```
 
 ## Demo App
+
 A demo has been created to better understand the integration of SDK in Android app
 [https://github.com/yellowmessenger/YmChatBot-Android-DemoApp](https://github.com/yellowmessenger/YmChatBot-Android-DemoApp)

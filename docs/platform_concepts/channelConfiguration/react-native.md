@@ -18,16 +18,15 @@ $ react-native link ymchat-react-native
 ```sh
 yarn add ymchat-react-native
 ```
+
 ### Android
 
 #### File provider
 
-Note: Only for version v1.4.0 & above
-
-Add following key in your `strings.xml` file, this will override default file provider used by SDK.
+Add following key in your `strings.xml` file found at `yourproject/android/app/src/main/res/values/strings.xml`, this will override default file provider used by SDK.
 
 Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
-Example - applicationId : "com.abc.xyz" then  application_id_for_provider = com.abc.xyz.fileprovider
+Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.abc.xyz.fileprovider
 
 ```xml
 <string name="application_id_for_provider">your.application.id.fileprovider</string>
@@ -122,6 +121,7 @@ YMChat.setCustomURL("https://your-on-prem-url.com");
 ```
 
 ### Custom loader
+
 You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
 
 ```javascript

@@ -60,6 +60,17 @@ Open NuGet package manager
   LoadApplication(new App(ymchat));
   ```
 
+#### File provider
+
+Add following key in your `strings.xml` file found at `yourproject.Android/Resources/values/strings.xml`, this will override default file provider used by SDK.
+
+Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
+Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.abc.xyz.fileprovider
+
+```xml
+<string name="application_id_for_provider">your.application.id.fileprovider</string>
+```
+
 ## Usage
 
 ### Set botId
