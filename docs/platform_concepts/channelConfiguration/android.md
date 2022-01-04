@@ -34,6 +34,8 @@ Still, if you want to use exact and latest version please visit the github repos
 
 ### File provider
 
+Note: Only for version v1.4.0 & above
+
 Add following key in your `strings.xml` file, this will override default file provider used by SDK.
 
 Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
