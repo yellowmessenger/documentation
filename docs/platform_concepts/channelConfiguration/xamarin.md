@@ -128,6 +128,16 @@ YmChat supports bots with on-prem deployments. For the bot to work, pass the on-
 ymChatInterface.setCustomURL("https://your-on-prem-url.com");
 ```
 
+### Custom loader
+
+You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
+
+```c#
+ymChatInterface.setCustomLoaderURL(
+  "https://example.com/your/custom/image.gif"
+);
+```
+
 ### V2 bot
 
 You can enable V2 bot by calling `setVersion()` method. Default value is 1
