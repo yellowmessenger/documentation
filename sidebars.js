@@ -61,7 +61,9 @@ module.exports = {
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
+        "cookbooks/whatsapp cookbook/whatsapp-guidelines",
         "cookbooks/whatsapp cookbook/fb-business-verification",
+        "cookbooks/whatsapp cookbook/wa-migration",
       ],
     },
   ],
@@ -196,6 +198,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
+        "platform_concepts/engagement/notification-engine",
         {
           type: "category",
           label: "Outbound Engagement",
