@@ -19,6 +19,19 @@ $ react-native link ymchat-react-native
 yarn add ymchat-react-native
 ```
 
+### Android
+
+#### File provider
+
+Add following key in your `strings.xml` file found at `yourproject/android/app/src/main/res/values/strings.xml`, this will override default file provider used by SDK.
+
+Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
+Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.abc.xyz.fileprovider
+
+```xml
+<string name="application_id_for_provider">your.application.id.fileprovider</string>
+```
+
 ### Manual installation
 
 #### iOS
@@ -43,12 +56,6 @@ yarn add ymchat-react-native
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
    ```
      compile project(':ymchat-react-native')
-   ```
-4. Add following key in your `strings.xml` file, this will override default file provider used by SDK.
-   Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with `.fileprovider`
-   Example - applicationId : `com.abc.xyz` then application_id_for_provider = `com.abc.xyz.fileprovider`
-   ```xml
-    <string name="application_id_for_provider">your.application.id.fileprovider</string>
    ```
 
 ## Usage
@@ -111,6 +118,14 @@ ymchat-react-native supports bots with on-prem deployments. For the bot to work,
 
 ```javascript
 YMChat.setCustomURL("https://your-on-prem-url.com");
+```
+
+### Custom loader
+
+You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
+
+```javascript
+YMChat.setCustomLoaderUrl("https://example.com/your/custom/image.gif");
 ```
 
 ### V2 bot
