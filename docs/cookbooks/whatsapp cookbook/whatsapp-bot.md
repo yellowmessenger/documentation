@@ -96,7 +96,7 @@ Note: The number you give should not be connected to any WhatsApp account. If co
 
 Complete the verification over text or voice call.
 
-13. Wuhoo! Congrats. You have successfully requested for WhatsApp Business Account. You can come back after 24 hours to check the status of apporval.
+13. Wuhoo! Congrats. You have successfully requested for WhatsApp Business Account. You can come back after 24 hours to check the status of approval.
 
 Once approved, you can scan the QR and test the WhastaApp chatbot.
 
