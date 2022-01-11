@@ -20,8 +20,7 @@ Key capabilities include:
 **Endpoint:**
 
 ```
-https://app.yellowmessenger.com/api/engagements/notifications/v1/push?bot=botID
-
+https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=botID
 ```
 
 **Method : **POST
