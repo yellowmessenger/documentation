@@ -1,0 +1,17 @@
+.popularsearches_container {
+  margin-top: 24px;
+}
+
+.popularsearches_container__title {
+  color: var(--ifm-grey-color-1);
+  margin: 0 0 16px 8px;
+  text-align: start;
+}
+
+.popularsearches_container__content_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}

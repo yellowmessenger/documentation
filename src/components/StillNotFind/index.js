@@ -7,10 +7,12 @@ const StillNotFind = () => {
       <div className={styles.wrapper}>
         <p className={styles.title}>Still not finding what you need?</p>
         <p className={styles.desc}>
-          No problem! If you need any further help, the support team is always
-          here to help you out.
+          No problem! If you need any further help, you can check the YM
+          Community.
         </p>
-        <button type="secondary">Contact support</button>
+        <a href="https://community.yellowmessenger.com/" target="_blank">
+          Ask the community
+        </a>
       </div>
     </section>
   );
