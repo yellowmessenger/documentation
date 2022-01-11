@@ -44,6 +44,7 @@ response.forEach((element, index) => {
 console.log(weather_condition);
 return weather_condition; 
 ```
+
 2. Once the transformation function is in place, return the value (here `name`) so that would be saved in a variable (here `response`). You could use the variable in Prompt or Message node to send that to user. 
 
-![](https://i.imgur.com/ADPdxJ7.png)
+<img src="https://i.imgur.com/ADPdxJ7.png" alt="drawing" width="60%"/>

@@ -14,7 +14,7 @@ The following guide will help developers to send Whatsapp Notifications using Ye
 
 
 ### 1. Create Campaign
-Select the “Create campaign” option in “Campaigns'' tab which is part of the Growth menu, select the channel as WhatsApp and provide the name of the campaign with a brief description about the campaign.
+Select the “Create campaign” option in “Campaigns'' tab which is part of the Insights menu, select the channel as WhatsApp and provide the name of the campaign with a brief description about the campaign.
 
 ![](https://cdn.yellowmessenger.com/rL2a00BxLhuK1617625966132.png)
 

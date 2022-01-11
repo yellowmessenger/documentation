@@ -3,6 +3,13 @@ title: Prompts and Messages
 sidebar_label: Prompts and Message
 ---
 
+In this doc, following topics will be covered:
+- How to get information like name, email, phone number from the user?
+- How to show text message to the user?
+- How to fetch user's location?
+- Collect user feedback
+- How to ask user a question?
+
 In this section we will talk about Interactive nodes, viz, 
 - **Messages** are one-way communication nodes. Message nodes do not wait for any user input. 
 - **Prompts** on the other hands are questions bot asks user. Prompts expected a response from users. 
@@ -28,7 +35,21 @@ For example, an Acknowledgement message.
 
 
 ### Files, Images, Videos
-Apart from Text, you can also send above three by simply attaching the respective file you need to send. 
+You can send files, images and videos either by uploading them in the node or by fetching the link to it from a variable
+
+Variable format:
+
+  [
+   {
+    "url":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVRqBmDVlOF8jpQbmAcAglnp7Bxggt1JzZEw&usqp=CAU",
+    "options":
+     {
+     "caption":"kohli"
+     }
+   }
+  ]
+  
+Please note that the variable datatype needs to be array
 
 ## Prompts
 Prompts are nodes that take some user input. All prompts have a "**store response in**" option to store input user gives in a [bot variable.](./tools)
@@ -36,8 +57,11 @@ Prompts are nodes that take some user input. All prompts have a "**store respons
 
 ### Use case specific
 #### Name, Email , Phone : 
-Name, Email, Phone prompts are used for asking for respective details. They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
+Name, Email, Phone prompts are used for asking for respective details . They already have a Name/Email/Phone validator attached to them for validating user input and a 'validation failure message' shown when user input is not validated. 
 
+:::info
+Currently, Name Validator is only available for the English language. If you're building a [multilingual bot](././cookbooks/multilingual.md/), it's recommended to use a [Question Prompt](./prompts-and-messages#general---question) instead.
+:::
 ![](https://i.imgur.com/oQ1IV5r.png)
 
 :::info
@@ -93,7 +117,7 @@ On feedback prompt you can configure what your questions should be when you ask 
 :::
 
 :::warning
- :information_source: All of the feedback data can be found in Growth section > Data Explorer. 
+ :information_source: All of the feedback data can be found in Insights section > Data Explorer. 
  
 :warning: **You do not need to store it seperately.**
 
@@ -344,6 +368,17 @@ Quick replies can be used to give end-user 'quick' options. **Users can  either 
 You can drag and extend each quick reply to attach with further flow you want ahead of it. 
 There is also an option to configure *fallback* which will work when none of the quick replies are validated from user input (Nor any other intent detected)
 
+:::info
+You can disable the user input for any prompt node from the `Channel Options`.
+
+1. Open a prompt for which you want to disable the user input.
+<img src="https://i.imgur.com/ryyK5Ft.png" alt="drawing" width="80%"/>
+
+2. Under website channel, enable the `Hide Input` field.
+<img src="https://i.imgur.com/JpfyA2U.png" alt="drawing" width="60%"/>
+:::
+
+
 #### Quick reply settings
 If you click on a quick reply button - you can find a few additional options (advanced settings) to configure. 
 - Button value  : If configured, this is the actual value of this button - that will go to any Database insert or be stored in variable. 
@@ -364,33 +399,43 @@ In this case, you need to dynamically generate quick replies.
 Here, instead of adding quick replies manually, you can select a variable containing a quick reply object. 
 **`Format of quick reply object`**
 ```
- {
-    title: "My QR Title",
-    options: [
-            {title: "Project0", text: "Project0"},
-            {title: "Project1", text: "Project1"}
-            ]
+{
+  "title": "Select one of the option",
+  "options": [
+    {
+      "title": "Docs",
+      "url": "https://docs.yellow.ai"
+    },
+    {
+      "title": "Community",
+      "url": "https://community.yellow.ai"
+    },
+    {
+      "title": "yellow.ai",
+      "text": "yellowdotai"
+    }
+  ]
 }
 ```
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intented variable. For example, you can apply for loop around options to dynamically add to them while parsing through some API response etc. 
 You will learn more about function nodes in next section. 
 
-### Carousal
-You can also add a Carousals to your bot. Carousal can be used in places like displaying a list of products.
+### Carousel
+You can also add a Carousels to your bot. Carousel can be used in places like displaying a list of products.
 
-* Carousal response contains option to add image, title and description. 
-* You can also add multiple buttons in carousal and control what these buttons do. 
+* Carousel response contains option to add image, title and description. 
+* You can also add multiple buttons in carousel and control what these buttons do. 
 
 
-> :pushpin: Note: Carousals without buttons will act as `Messages` instead of `Prompts`.
+> :pushpin: Note: Carousels without buttons will act as `Messages` instead of `Prompts`.
 
 
 ![](https://i.imgur.com/qAea1te.png)
 
 
-#### Dynamic Carousals
-Similar to quick replies, Carousals can also be dynamically created using **`Fetch from`** option. Carousal object is an array of each card (JSoN objects). 
-**`Sample Carousal object`** 
+#### Dynamic Carousels
+Similar to quick replies, Carousels can also be dynamically created using **`Fetch from`** option. Carousel object is an array of each card (JSoN objects). 
+**`Sample Carousel object`** 
 
 ```
 [ 
@@ -431,7 +476,7 @@ Similar to quick replies, Carousals can also be dynamically created using **`Fet
 
 ```
 
-**Actions** above describe the card button, you can add multiple actions to a single card in carousal. 
+**Actions** above describe the card button, you can add multiple actions to a single card in carousel. 
 
 To add a URL type action, for example, format becomes
 ```
@@ -443,7 +488,7 @@ To add a URL type action, for example, format becomes
                     
 ```
 
-Since we looked at objects, let's also look at one sample function to add carousals to understand this. You can call this function from function node we will learn about and store the returning value in a variable.
+Since we looked at objects, let's also look at one sample function to add carousels to understand this. You can call this function from function node we will learn about and store the returning value in a variable.
 
 **`Sample code`**
 
@@ -490,15 +535,13 @@ There is also some additional options in prompt settings that you can use.
 - You can choose **`entity type/variable`** to autoskip a prompt node if value of that entity or variable is available. (You will learn more about entities and variables later)
 - You can also mask this info from appearing in conversation logs by using **`Mask sensitive info`** button. 
 
-:::info
-You can also mask sensitive info channel wise :- 
+- You can enable **`Autocomplete`** by adding this [code snippet](/docs/platform_concepts/studio/cloud-function#autocomplete) in the cloud function.
 
+:::info
+You can also mask sensitive info channel wise.
+:::
 
 1. ![](https://i.imgur.com/oJZhZvT.png)
 
-
 2. ![](https://i.imgur.com/Sruf07q.png)
-
-:::
-
 ---

@@ -1,6 +1,6 @@
 ---
-title: Growth 
-sidebar_label: Growth
+title: Insights 
+sidebar_label: Insights
 featured: true
 ---
 
@@ -28,7 +28,10 @@ featured: true
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/oHac-CDZ1ik" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
+### Analytics & testing
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lqzwdVky8tI" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
+Take advantage of yellow.ai's robust reporting capabilities to identify & drill down to the metrics that matter to you.
 
-
+Create custom reports & dashboards with data explorer for easy review and take control of your #data for actionable insights.

@@ -70,6 +70,16 @@ You can select Name Validator in this case to validate the user input. Adding a 
 
 Once the validator is added you can add the message to be shown for invalid inputs. The bot will not allow the users to proceed if the user doesn't enter a valid response. You can also add number of retries for a valid response which will be discussed later.
 
+You also use settings of each of these nodes to set `Autoskip prompt using` and `Use this as Unique ID`
+
+When you check the unique Id setting, then through out the journeys of the bot it won't again ask for same prompt question. For example, if you mark the name prompt as unique Id then throught out the bot journeys it won't ask for the name again.
+
+![](https://i.imgur.com/BNLifiq.png)
+
+Similarily if you have used the Autoskip prompt then if the variable contains the value then it will skip the prompt and continue with the rest of the journey
+
+![](https://i.imgur.com/a6OYf4K.png)
+
 ---
 ### `Step 4:` Contextual Question/Response
 
@@ -82,10 +92,8 @@ You can add Contextual Question responses as well for each questions wherever re
 
 To make the bot more user friendly you can add quick replies as an input option. You can also configure the quick reply button colour, design etc. from Advanced Settings. 
 
-> _Quick Tip💡: You can trigger a different journey from any Quick Reply using **Go to journey** _
 
 ![](https://cdn.yellowmessenger.com/vhYmC2EvFu601613110323588.png)
-![](https://cdn.yellowmessenger.com/zZq1r4KEbTpK1613110386008.png)
 
 ---
 ### `Step 6:` Train and Try your Bot
@@ -110,33 +118,28 @@ In the cookbook above, we saw how to create a Lead Generation bot on Yellow Mess
 1. Create a new Form journey
 In Studio, click on `Create Journey` button on the bottom left corner.
 In the popup, in the `Template` field select `Forms`. Also, add rest of the details. 
-[SS1]
+![](https://i.imgur.com/Ko2A98A.png)
 
 In the `Select steps for forms journey` add all fields as per requirement.
 Click on `Create Journey` now.
 
 2. Connect it with `Welcome Prompt`.
 
-We want users to engage with this journey when they first interact with the bot. Best way to do this including it in the `Welcome Promt`. Go to `Studio` and select `Welcome Prompt`. You should see a `Text Message` response already there.
+We want users to engage with this journey when they first interact with the bot. Best way to do this including it in the `Welcome Promt`. Go to `Studio` click on the home and select `Welcome Prompt`. You should see a `Text Message` response already there.
 
-Let's add a [Quick Reply](https://docs.yellowmessenger.com/docs/documentation/concepts/response-types-message#quick-replies) message by clicking on `Click here to add new response`. Enter a text message here.
+Let's add a [Quick Reply](https://docs.yellowmessenger.com/docs/documentation/concepts/response-types-message#quick-replies) message by clicking on `Click here to add new response`. Enter a text message here and buttons you want to show users as options
 
-SS
+![](https://i.imgur.com/DByc6iN.png)
 
-Now we need to add 2 buttons, one for to enter the contact information and one to decline it. For that, click on the button below the `Quick Reply`. Enter button name as `Provide Contact Information` and click on toggle button beside `Advanced Settings`. 
+3. Store information in the database
 
-SS
+First go through the [**data module**](https://docs.yellow.ai/docs/platform_concepts/data/create-tables) to understand how a database is created and values are added to the respective columns of the database.
 
-Here go to the `Go to journey` field and select lead generation journey we've created eariler. Now click on `Update` button. Follow the same for `Go Back` button but now `Go to journey` will be `Default`.
+Then use a [**database action node**](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic#database) to insert the user information in the database table that you have create in the data module.
 
-3. Create DB and add an `Action` Node
-
-First go through the [Understanding Database Actions](https://docs.yellowmessenger.com/cookbooks/data-layer/) cookbook and follow step 1 and 2 to create and insert data into datbase.
-
-SS of bot flow and action node
+![](https://i.imgur.com/ReJ0gxz.png) ![](https://i.imgur.com/ftgzRjM.png)
 
 4. Try your bot
 
-Now you can interact with your bot. If everything works just fine, after completing the `LeadGen` journey, you should see the user data in the database.
+Now you can interact with your bot. If everything works just fine, after completing the journeys, you should see the user data in the database.
 
-SS of DB

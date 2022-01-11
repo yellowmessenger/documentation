@@ -9,33 +9,27 @@ const { listPaths } = require("./src/plugins/components");
 // let metrics_docs = listPaths("metrics");
 // let tracers_docs = listPaths("tracers");
 
-let components = listPaths();
+// let components = listPaths();
 
 module.exports = {
-  tutorials: ["tutorials/basics", 
+  tutorials: [
+  "tutorials/basics",
   "tutorials/studio",
   "tutorials/data",
   "tutorials/growth",
   "tutorials/inbox",
   "tutorials/engage",
+  "tutorials/integrations",
   "tutorials/webinars",
-  {
-    type: "category",
-    label: "Academy",
-    collapsed: true,
-    items: [
-      "tutorials/academy/day1",
-      "tutorials/academy/day2",
-      "tutorials/academy/day3",
-    ],
-  },
   ],
   cookbooks: [
+    "cookbooks/getting_started",
     "cookbooks/conversation-design",
     {
       type: "category",
       label: "Basic",
-      items: ["cookbooks/multilingual"],
+      items: ["cookbooks/multilingual",
+    ],
     },
     {
       type: "category",
@@ -67,6 +61,9 @@ module.exports = {
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
+        "cookbooks/whatsapp cookbook/whatsapp-guidelines",
+        "cookbooks/whatsapp cookbook/fb-business-verification",
+        "cookbooks/whatsapp cookbook/wa-migration",
       ],
     },
   ],
@@ -82,7 +79,7 @@ module.exports = {
         "platform_concepts/studio/journeys",
         {
           type: "category",
-          label: "Building Blocks",
+          label: "Nodes",
           collapsed: true,
           items: [
             "platform_concepts/studio/steps/steps",
@@ -119,6 +116,9 @@ module.exports = {
             "platform_concepts/studio/api-management/add-api",
             "platform_concepts/studio/api-management/send-data",
             "platform_concepts/studio/api-management/receive-data",
+            "platform_concepts/studio/api-management/enviroment-variables",
+            "platform_concepts/studio/api-management/bearer-token",
+            "platform_concepts/studio/api-management/transformation-function",
           ],
         },
         {
@@ -129,7 +129,7 @@ module.exports = {
             "platform_concepts/studio/context-management/add-contextual-response",
           ],
         },
-  
+
 
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
@@ -149,7 +149,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Growth",
+      label: "Insights",
       collapsed: true,
       items: [
         "platform_concepts/growth/growth",
@@ -198,11 +198,13 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
+        "platform_concepts/engagement/notification-engine",
         {
           type: "category",
           label: "Outbound Engagement",
           collapsed: true,
-          items: ["platform_concepts/engagement/outbound/whatsappCampaign"],
+          items: ["platform_concepts/engagement/outbound/whatsappCampaign",
+          "platform_concepts/engagement/outbound/templateManager/overview"],
         },
         {
           type: "category",
@@ -270,6 +272,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/teams",
         "platform_concepts/channelConfiguration/alexa",
         "platform_concepts/channelConfiguration/google-assistant",
+        "platform_concepts/channelConfiguration/googleChat",
         "platform_concepts/channelConfiguration/hangouts",
         "platform_concepts/channelConfiguration/ivr-bots",
         "platform_concepts/channelConfiguration/generic-webhook",
@@ -278,22 +281,25 @@ module.exports = {
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
         "platform_concepts/channelConfiguration/web-widget",
+        "platform_concepts/channelConfiguration/instagram"
       ],
     },
     {
       type: "category",
-      label: "App Configuration",
+      label: "Integrations",
       collapsed: true,
       items: [
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/power-bi",
         "platform_concepts/appConfiguration/razorpay",
-        "platform_concepts/appConfiguration/salesforce",
         "platform_concepts/appConfiguration/successfactors",
         "platform_concepts/appConfiguration/shopify",
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk",
+        "platform_concepts/appConfiguration/salesforce-service-cloud",
+        "platform_concepts/appConfiguration/hubspot-crm",
+        "platform_concepts/appConfiguration/zoho-crm"
       ],
     },
     {
@@ -303,6 +309,7 @@ module.exports = {
       items: [
         "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/access-management",
+        "platform_concepts/configurations/subscription",
       ],
     },
     {
@@ -310,16 +317,7 @@ module.exports = {
       label: "Compliances",
       collapsed: true,
       items: ["platform_concepts/compliances/certifications"],
-    },
-    {
-      type: "category",
-      label: "Omnichannel Notifications API",
-      collapsed: true,
-      items: [
-        "platform_concepts/omniChannelNotifications/gettingStarted",
-        "platform_concepts/omniChannelNotifications/sendMessage",
-      ],
-    },
+    }
   ],
   updates: [
     "updates/overview",
@@ -331,10 +329,6 @@ module.exports = {
         "updates/aug_21/analytics",
         "updates/aug_21/builder",
         "updates/aug_21/inbox",
-        "updates/aug_21/Integrations",
-        "updates/aug_21/marketplace",
-        "updates/aug_21/mobileApps",
-        "updates/aug_21/UI"
       ],
     },
     {

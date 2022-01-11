@@ -62,38 +62,20 @@ In case you are wondering what to do after building your bot, there is a lot mor
 
 The Yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click [here](../../docs/platform_concepts/studio/overview).
 
-## Data
+## [Data](../platform_concepts/data/create-tables)
 
-## Growth
+## [Insights](../platform_concepts/growth/growth)
 
-Content coming up soon!
+## [Inbox](../platform_concepts/inbox/inbox)
 
-## Inbox
+## [Engagement](../platform_concepts/engagement/engage)
 
-Content coming up soon!
-
-## Document Cognition
-
-Content coming up soon!
-
-## Engagement
-
-Content coming up soon!
-
-## Channels
+## [Channels](../platform_concepts/channelConfiguration/alexa)
 
 Your bots can converse with your clients through dozens of popular channels. To know more, click [here](../../platform_concepts/channelConfiguration/overview).
 
-## App Comfiguration
+## [App Configuration](../platform_concepts/appConfiguration/azure-ad)
 
-Content coming up soon!
-
-## Compliance
-
-Content coming up soon!
-
-## Omnichannel Notifications API
-
-Content coming up soon!
+## [Omnichannel Notifications API](../platform_concepts/omniChannelNotifications/gettingStarted)
 
 ---

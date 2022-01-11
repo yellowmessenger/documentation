@@ -60,6 +60,17 @@ Open NuGet package manager
   LoadApplication(new App(ymchat));
   ```
 
+#### File provider
+
+Add following key in your `strings.xml` file found at `yourproject.Android/Resources/values/strings.xml`, this will override default file provider used by SDK.
+
+Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
+Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.abc.xyz.fileprovider
+
+```xml
+<string name="application_id_for_provider">your.application.id.fileprovider</string>
+```
+
 ## Usage
 
 ### Set botId
@@ -115,6 +126,16 @@ YmChat supports bots with on-prem deployments. For the bot to work, pass the on-
 
 ```c#
 ymChatInterface.setCustomURL("https://your-on-prem-url.com");
+```
+
+### Custom loader
+
+You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
+
+```c#
+ymChatInterface.setCustomLoaderURL(
+  "https://example.com/your/custom/image.gif"
+);
 ```
 
 ### V2 bot

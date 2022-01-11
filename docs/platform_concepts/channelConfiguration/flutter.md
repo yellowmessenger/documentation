@@ -18,6 +18,19 @@ dependencies:
   ymchat_flutter: <version>
 ```
 
+### Android
+
+#### File provider
+
+Add following key in your `strings.xml` file found at `yourproject/platforms/android/app/src/main/res/values/strings.xml`, this will override default file provider used by SDK.
+
+Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
+Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.abc.xyz.fileprovider
+
+```xml
+<string name="application_id_for_provider">your.application.id.fileprovider</string>
+```
+
 ## Usage
 
 Import the YMChat library in your dart file.
@@ -78,6 +91,14 @@ ymchat_flutter supports bots with on-prem deployments. For the bot to work, pass
 
 ```dart
 YmChat.setCustomURL("https://your-on-prem-url.com");
+```
+
+### Custom loader
+
+You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
+
+```dart
+YMChat.setCustomLoaderUrl("https://example.com/your/custom/image.gif");
 ```
 
 ### V2 bot

@@ -26,8 +26,7 @@ Let’s dive deeper into these variables.
 ## System Variables
 This is a fixed set of variables. The variable names can not be altered and new variables can not be added to this category.
 Following system variables have been exposed on the platform for quick use: -
-{{{variables.var_name}}} notation is used to access system variables.
-
+{{{system_variable_name}}} notation is used to access system variables.
 
 
 | Variable             | Data type | Use                                                                      |
@@ -40,6 +39,20 @@ Following system variables have been exposed on the platform for quick use: -
 | sessionMessageLogUrl | string    | Returns a URL to the chat’s transcript                                   |
 | date                 | object    | Returns the current date and time                                        |
 
+:::info
+You can access user profile using this synax: `{{{profile.field_name}}}`.
+
+Following fields are available in the user profile object:
+- city
+- country
+- country_code
+- firstTime (if user is visiting the bot for the first time)
+- ip
+- latitude
+- longitude
+- name (generated user name)
+- region
+:::
 ## Custom Variables
 
 These are variables defined by bot builders. Custom variables are further subdivided into journey and global variables.
@@ -66,7 +79,7 @@ Different prompts return a response in different formats and datatype. You can r
 | [Email](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
 | [Phone](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
 | [Location](../studio/steps/prompts-and-messages#location-prompt)           | object            |
-| [Carousel](../studio/steps/prompts-and-messages#carousal)                  | string            |
+| [Carousel](../studio/steps/prompts-and-messages#carousel)                  | string            |
 | [Quick Replies](..studio/steps/prompts-and-messages#quick-replies)         | string            |
 | [Date](..studio/steps/prompts-and-messages#date-prompt)                    | object            |
 | [Question](..studio/steps/prompts-and-messages#general---question)         | string            |
@@ -103,6 +116,10 @@ Additionally, you can also use variables action node for this purpose.
 
 You can access a bor variable inside any node using this notation `{{variables.variable_name}}` or clicking on variables icon. 
 So for the variable you just created above, you can access using {{variables.category}}
+
+:::info
+Journey and Global variables get expired after 48 hours of inactivity.
+:::
 
 ## Advanced example
 **Accessing variable fields and index in JSON object, array type stored in a variable.**
