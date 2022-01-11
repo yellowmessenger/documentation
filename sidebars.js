@@ -317,16 +317,7 @@ module.exports = {
       label: "Compliances",
       collapsed: true,
       items: ["platform_concepts/compliances/certifications"],
-    },
-    {
-      type: "category",
-      label: "Omnichannel Notifications API",
-      collapsed: true,
-      items: [
-        "platform_concepts/omniChannelNotifications/gettingStarted",
-        "platform_concepts/omniChannelNotifications/sendMessage",
-      ],
-    },
+    }
   ],
   updates: [
     "updates/overview",
