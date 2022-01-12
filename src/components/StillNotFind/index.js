@@ -10,7 +10,7 @@ const StillNotFind = () => {
           No problem! If you need any further help, you can check the YM
           Community.
         </p>
-        <a href="https://community.yellowmessenger.com/" target="_blank">
+        <a href="https://community.yellow.ai/" target="_blank">
           Ask the community
         </a>
       </div>
