@@ -156,6 +156,94 @@ Webhooks will be called with the above request body.
 ### Support
 While raising any support issues, please add the msgId or the traceId in the support request.
 
+## Examples
+### Normal Text  Notification
+#### CURL request
+
+```json
+curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=BOT_ID_HERE' \
+--header 'x-auth-token: TOKEN' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: ym_xid=TOKEN' \
+--data-raw '{
+   "userDetails": {
+       "number": "USER_PHONE_NUMBER"
+   },
+   "notification": {
+       "type": "whatsapp",
+       "sender": "SENDER_PHONE_NUMBER",
+       "templateId": "TEMPLATE_ID",
+       "params": {
+           "1": "var1",
+           "2": "www.yellow.ai"
+       }
+   }
+}'
+```
+
+#### Sample
+<img src="https://i.imgur.com/YwkQ7Xr.png" alt="drawing" width="70%"/>
+
+
+### Image Notification
+#### CURL request
+```json
+curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=BOT_ID_HERE' \
+--header 'x-auth-token: TOKEN' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: ym_xid=TOKEN' \
+--data-raw '{
+   "userDetails": {
+       "number": "USER_PHONE_NUMBER"
+   },
+   "notification": {
+       "type": "whatsapp",
+       "sender": "SENDER_PHONE_NUMBER",
+       "templateId": "TEMPLATE_ID",
+       "params": {
+       "media": {
+           "mediaLink": "MEDIA_URL"
+           },
+           "1": "var1",
+           "2": "www.yellow.ai",
+           "3": "test"
+}
+ 
+   }
+}'
+```
+
+### File Notification
+#### CURL request
+```json
+curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=BOT_ID_HERE' \
+--header 'x-auth-token: TOKEN' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: ym_xid=TOKEN' \
+--data-raw '{
+   "userDetails": {
+       "number": "USER_PHONE_NUMBERs"
+   },
+   "notification": {
+       "type": "whatsapp",
+       "sender": "SENDER_PHONE_NUMBER",
+       "templateId": "TEMPLATE_ID",
+       "params": {
+       "media": {
+           "mediaLink": "MEDIA_URL"
+           },
+           "1": "var1",
+           "2": "www.yellow.ai",
+           "3": "test"
+}
+ 
+   }
+}'
+```
+
+#### Sample
+![](https://i.imgur.com/YLbGCo7.png)
+
 **Notes:**
 
 * These are our outbound IPs. These need to be whitelisted for the reports callback to flow into your system.
