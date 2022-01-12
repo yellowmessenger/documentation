@@ -41,28 +41,28 @@ export const topics = [
     title: "Inbox",
     description:
       "An AI powered, automation first unified inbox for agents to provide enhanced customer support across chat, email, and voice.",
-    icon: "ri-lightbulb-flash-line",
+    icon: "ri-inbox-line",
     url: "/docs/platform_concepts/inbox/inbox",
   },
   {
     title: "WhatsApp Bot",
     description:
       "Deliver a truly multi-channel experience to your customers on the largest messaging app in the world.",
-    icon: "ri-question-line",
+    icon: "ri-whatsapp-line",
     url: "/docs/cookbooks/whatsapp cookbook/",
   },
   {
     title: "Tutorials",
     description:
       "Tutorials for one shot learning of major sections of the platform",
-    icon: "ri-question-line",
+    icon: "ri-git-repository-line",
     url: "/docs/cookbooks/getting_started",
   },
   {
     title: "Ask",
     description:
       "Can't find what you're looking for? Ask our community of bot-building experts!",
-    icon: "ri-lightbulb-flash-line",
+    icon: "ri-question-line",
     url: "https://community.yellow.ai",
   },
 ];
