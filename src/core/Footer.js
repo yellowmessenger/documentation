@@ -41,18 +41,22 @@ const Footer = () => {
     },
   ];
 
-  const howtos = [
+  const videos = [
     { 
-      title: "How to create a bot?", 
-      to: "./docs/cookbooks/getting_started" 
+      title: "Getting Started", 
+      to: "https://www.youtube.com/watch?v=gyB697FRLDQ" 
     },
     {
-      title: "How to create a new function?",
-      to: "/docs/howtos/create/cloud-function",
+      title: "Signup and Create a bot",
+      to: "https://www.youtube.com/watch?v=pT5PpSKTeb8",
     },
     {
-      title: "How to setup context at any point?",
-      to: "/docs/howtos/context/add-contextual-response",
+      title: "Create a Journey",
+      to: "https://www.youtube.com/watch?v=03iTV7bbrYw",
+    },
+    {
+      title: "Using an Action Node",
+      to: "https://www.youtube.com/watch?v=HVn8DAOsq3M",
     },
   ];
 
@@ -87,9 +91,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.list_container}>
-          <h2 className={styles.title}>How to’s</h2>
+          <h2 className={styles.title}>Videos</h2>
           <ul className={styles.list_items}>
-            {howtos.map((item, index) => (
+            {videos.map((item, index) => (
               <li className={styles.item} key={index}>
                 <Link to={item.to}>{item.title}</Link>
               </li>
