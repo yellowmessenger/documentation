@@ -1,80 +1,68 @@
 export const popularSearchItems = [
   {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "Accept Bot Invite",
+    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/whatsappCampaign/",
+    title: "Create and launch WhatsApp notification campaigns",
   },
   {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "Adding Contextual Responses",
+    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/whatsappCampaign/#what-is-a-whatsapp-notification-campaign",
+    title: "What is a WhatsApp notification campaign?",
   },
   {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "What is Document Cognition",
+    url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-ym/",
+    title: "Send WhatsApp Notifications",
   },
   {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "Languages Supported",
+    url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-ym/",
+    title: "Access data from an API response",
   },
   {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "Publish your Bot",
+    url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-template/",
+    title: "Apply for WhatsApp Notification Templates",
   },
   {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "How to add FAQs",
+    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/",
+    title: "Setup a WhatsApp chatbot",
   },
   {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "Create a database table",
-  },
-  {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "How to build your lead gen bot",
-  },
-  {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "How to share bot access",
-  },
-  {
-    url: "/docs/platform_concepts/configurations/signup-post-bot-invite/",
-    title: "How to setup a WhatsApp Bot",
+    url: "https://docs.yellow.ai/docs/platform_concepts/studio/api-management/send-data/#how-to-send-data-to-an-api",
+    title: "Send data to an API",
   },
 ];
 
 export const topics = [
   {
-    title: "Get started with Concepts",
+    title: "Get started 🚀",
     description:
-      "Learn the platform basics, review channel intergration and security compilance documents.",
+      "Learn to build a bot on yellow.ai's no-code platform in just a few clicks with excellent speed!",
     icon: "ri-booklet-line",
-    url: "/docs/platform_concepts/getting-started",
+    url: "/docs/platform_concepts/studio/overview",
   },
   {
-    title: "Template Bots",
+    title: "Inbox",
     description:
-      "Zero to one of building bots for simple usecases at lightening speed.",
+      "An AI powered, automation first unified inbox for agents to provide enhanced customer support across chat, email, and voice.",
     icon: "ri-lightbulb-flash-line",
-    url: "/docs/cookbooks/template-bots/model-bot",
+    url: "/docs/platform_concepts/inbox/inbox",
   },
   {
-    title: "Video Tutorials",
+    title: "WhatsApp Bot",
     description:
-      "Video based tutorials for one shot learning of major sections of the platform",
+      "Deliver a truly multi-channel experience to your customers on the largest messaging app in the world.",
     icon: "ri-question-line",
-    url: "/docs/tutorials/basics",
+    url: "/docs/cookbooks/whatsapp cookbook/",
   },
   {
-    title: "Template Bots",
+    title: "Tutorials",
     description:
-      "Zero to one of building bots for simple usecases at lightening speed.",
+      "Tutorials for one shot learning of major sections of the platform",
+    icon: "ri-question-line",
+    url: "/docs/cookbooks/getting_started",
+  },
+  {
+    title: "Ask",
+    description:
+      "Can't find what you're looking for? Ask our community of bot-building experts!",
     icon: "ri-lightbulb-flash-line",
-    url: "/docs/cookbooks/template-bots/model-bot",
-  },
-  {
-    title: "Video Tutorials",
-    description:
-      "Video based tutorials for one shot learning of major sections of the platform",
-    icon: "ri-question-line",
-    url: "/docs/tutorials/basics",
+    url: "https://community.yellow.ai",
   },
 ];
