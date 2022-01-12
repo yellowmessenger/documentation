@@ -3,40 +3,49 @@ import Link from "@docusaurus/Link";
 import styles from "./footer.module.css";
 
 const Footer = () => {
-  const documents = [
+  const learn = [
     {
-      title: "Concepts",
-      to: "/docs/documentation/concepts/overview",
+      title: "Journey",
+      to: "./docs/platform_concepts/studio/journeys",
     },
     {
-      title: "Compliances",
-      to: "/docs/documentation/compliances/certifications",
+      title: "Nodes",
+      to: "./docs/platform_concepts/studio/steps/steps",
     },
     {
-      title: "App configuration",
-      to: "/docs/documentation/appConfiguration/azure-ad",
+      title: "Intent",
+      to: "./docs/platform_concepts/studio/natural-language-understanding/intents",
     },
     {
-      title: "Channel configuration",
-      to: "/docs/documentation/channelConfiguration/overview",
+      title: "Variables",
+      to: "./docs/platform_concepts/studio/bot-variables",
     },
   ];
 
-  const cookbooks = [
-    { title: "Building your first bot", to: "/docs/cookbooks/lead-gen-bot" },
-    { title: "Document cognition", to: "/docs/cookbooks/document_cognition" },
-    { title: "Agent augmentation", to: "/docs/cookbooks/transfer_chat" },
-    { title: "Yellow messenger academy", to: "/docs/cookbooks/Academy" },
-  ];
-
-  const developer = [
-    { title: "Function reference", to: "/docs/developer/app/overview" },
-    { title: "API reference", to: "/docs/developer/app/apis/audience-api" },
-    { title: "Event reference", to: "/docs/developer/app/events/agent-events" },
+  const build = [
+    { 
+      title: "Building your first bot", 
+      to: "./docs/cookbooks/getting_started" 
+    },
+    { 
+      title: "Invoke an API in the bot", 
+      to: "./docs/platform_concepts/studio/api-management/add-api" 
+    },
+    { 
+      title: "Setup Inbox", 
+      to: "./docs/platform_concepts/inbox/inbox.md" 
+    },
+    { 
+      title: "Use DocCog", 
+      to: "./docs/platform_concepts/studio/knowledge-management/what-is-document-cognition#usage" 
+    },
   ];
 
   const howtos = [
-    { title: "How to create a bot?", to: "/docs/howtos/basics/create-a-bot" },
+    { 
+      title: "How to create a bot?", 
+      to: "./docs/cookbooks/getting_started" 
+    },
     {
       title: "How to create a new function?",
       to: "/docs/howtos/create/cloud-function",
@@ -58,9 +67,9 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.list_container}>
-          <h2 className={styles.title}>Documentation</h2>
+          <h2 className={styles.title}>Learn</h2>
           <ul className={styles.list_items}>
-            {documents.map((item, index) => (
+            {learn.map((item, index) => (
               <li className={styles.item} key={index}>
                 <Link to={item.to}>{item.title}</Link>
               </li>
@@ -68,19 +77,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.list_container}>
-          <h2 className={styles.title}>Cookbooks</h2>
+          <h2 className={styles.title}>Build</h2>
           <ul className={styles.list_items}>
-            {cookbooks.map((item, index) => (
-              <li className={styles.item} key={index}>
-                <Link to={item.to}>{item.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.list_container}>
-          <h2 className={styles.title}>Developer</h2>
-          <ul className={styles.list_items}>
-            {developer.map((item, index) => (
+            {build.map((item, index) => (
               <li className={styles.item} key={index}>
                 <Link to={item.to}>{item.title}</Link>
               </li>
