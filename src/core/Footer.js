@@ -100,13 +100,13 @@ const Footer = () => {
       </div>
       <div className={styles.company_info}>
         <div className={styles.info}>
-          <a href="https://yellowmessenger.com/privacy-policy/" target="_blank">
+          <a href="https://yellow.ai/privacy-policy" target="_blank">
             Privacy Policy
           </a>
           <span>Sitemaps</span>
           <span>FAQs</span>
           <span>
-            @2020 Yellow.ai, a trading division of Biotonic Labs Ltd. All
+            @2022 yellow.ai, a trading division of Biotonic Labs Ltd. All
             rights reserved worldwide.
           </span>
         </div>
