@@ -5,9 +5,10 @@
   max-width: 330px;
   height: 306px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 .topic_container .header {
-  padding: 30px;
+  padding: 24px;
   height: calc(100% - 50px);
 }
 
@@ -51,7 +52,6 @@
   display: flex;
   align-items: center;
   height: 50px;
-  text-decoration: none;
 }
 .topic_container .footer span {
   font-size: 0.875rem;
@@ -62,4 +62,15 @@
 .topic_container .footer i {
   font-size: 1.5rem;
   margin-left: 10px;
+}
+
+.topic_container:hover .footer {
+  background-color: var(--docsearch-highlight-color);
+  color: var(--docsearch-hit-active-color);
+  border-radius: 0 0 4px 4px;
+}
+
+.topic_link,
+.topic_link:hover {
+  text-decoration: none;
 }

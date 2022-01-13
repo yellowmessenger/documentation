@@ -3,47 +3,60 @@ import Link from "@docusaurus/Link";
 import styles from "./footer.module.css";
 
 const Footer = () => {
-  const documents = [
+  const learn = [
     {
-      title: "Concepts",
-      to: "/docs/documentation/concepts/overview",
+      title: "Journey",
+      to: "./docs/platform_concepts/studio/journeys",
     },
     {
-      title: "Compliances",
-      to: "/docs/documentation/compliances/certifications",
+      title: "Nodes",
+      to: "./docs/platform_concepts/studio/steps/steps",
     },
     {
-      title: "App configuration",
-      to: "/docs/documentation/appConfiguration/azure-ad",
+      title: "Intent",
+      to: "./docs/platform_concepts/studio/natural-language-understanding/intents",
     },
     {
-      title: "Channel configuration",
-      to: "/docs/documentation/channelConfiguration/overview",
+      title: "Variables",
+      to: "./docs/platform_concepts/studio/bot-variables",
     },
   ];
 
-  const cookbooks = [
-    { title: "Building your first bot", to: "/docs/cookbooks/lead-gen-bot" },
-    { title: "Document cognition", to: "/docs/cookbooks/document_cognition" },
-    { title: "Agent augmentation", to: "/docs/cookbooks/transfer_chat" },
-    { title: "Yellow messenger academy", to: "/docs/cookbooks/Academy" },
+  const build = [
+    { 
+      title: "Building your first bot", 
+      to: "./docs/cookbooks/getting_started" 
+    },
+    { 
+      title: "Invoke an API in the bot", 
+      to: "./docs/platform_concepts/studio/api-management/add-api" 
+    },
+    { 
+      title: "Setup Inbox", 
+      to: "./docs/platform_concepts/inbox/inbox.md" 
+    },
+    { 
+      title: "Use DocCog", 
+      to: "./docs/platform_concepts/studio/knowledge-management/what-is-document-cognition#usage" 
+    },
   ];
 
-  const developer = [
-    { title: "Function reference", to: "/docs/developer/app/overview" },
-    { title: "API reference", to: "/docs/developer/app/apis/audience-api" },
-    { title: "Event reference", to: "/docs/developer/app/events/agent-events" },
-  ];
-
-  const howtos = [
-    { title: "How to create a bot?", to: "/docs/howtos/basics/create-a-bot" },
-    {
-      title: "How to create a new function?",
-      to: "/docs/howtos/create/cloud-function",
+  const videos = [
+    { 
+      title: "Getting Started", 
+      to: "https://www.youtube.com/watch?v=gyB697FRLDQ" 
     },
     {
-      title: "How to setup context at any point?",
-      to: "/docs/howtos/context/add-contextual-response",
+      title: "Signup and Create a bot",
+      to: "https://www.youtube.com/watch?v=pT5PpSKTeb8",
+    },
+    {
+      title: "Create a Journey",
+      to: "https://www.youtube.com/watch?v=03iTV7bbrYw",
+    },
+    {
+      title: "Using an Action Node",
+      to: "https://www.youtube.com/watch?v=HVn8DAOsq3M",
     },
   ];
 
@@ -58,9 +71,9 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.list_container}>
-          <h2 className={styles.title}>Documentation</h2>
+          <h2 className={styles.title}>Learn</h2>
           <ul className={styles.list_items}>
-            {documents.map((item, index) => (
+            {learn.map((item, index) => (
               <li className={styles.item} key={index}>
                 <Link to={item.to}>{item.title}</Link>
               </li>
@@ -68,9 +81,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.list_container}>
-          <h2 className={styles.title}>Cookbooks</h2>
+          <h2 className={styles.title}>Build</h2>
           <ul className={styles.list_items}>
-            {cookbooks.map((item, index) => (
+            {build.map((item, index) => (
               <li className={styles.item} key={index}>
                 <Link to={item.to}>{item.title}</Link>
               </li>
@@ -78,19 +91,9 @@ const Footer = () => {
           </ul>
         </div>
         <div className={styles.list_container}>
-          <h2 className={styles.title}>Developer</h2>
+          <h2 className={styles.title}>Videos</h2>
           <ul className={styles.list_items}>
-            {developer.map((item, index) => (
-              <li className={styles.item} key={index}>
-                <Link to={item.to}>{item.title}</Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className={styles.list_container}>
-          <h2 className={styles.title}>How to’s</h2>
-          <ul className={styles.list_items}>
-            {howtos.map((item, index) => (
+            {videos.map((item, index) => (
               <li className={styles.item} key={index}>
                 <Link to={item.to}>{item.title}</Link>
               </li>
@@ -100,13 +103,13 @@ const Footer = () => {
       </div>
       <div className={styles.company_info}>
         <div className={styles.info}>
-          <a href="https://yellowmessenger.com/privacy-policy/" target="_blank">
+          <a href="https://yellow.ai/privacy-policy" target="_blank">
             Privacy Policy
           </a>
           <span>Sitemaps</span>
           <span>FAQs</span>
           <span>
-            @2020 Yellow.ai, a trading division of Biotonic Labs Ltd. All
+            @2022 yellow.ai, a trading division of Biotonic Labs Ltd. All
             rights reserved worldwide.
           </span>
         </div>

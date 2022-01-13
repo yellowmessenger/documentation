@@ -30,32 +30,16 @@
   font-size: 0.875rem;
 }
 
-.main_wrapper .section_container .contents {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
-
 .main_wrapper .section_container .contents .details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 30px;
-  align-self: start;
-}
-
-.main_wrapper .section_container .contents .right_sidebar {
-  flex: 0 1 25%;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
-  }
-  .main_wrapper .section_container .contents {
-    flex-direction: column;
-  }
-  .main_wrapper .section_container .contents .details {
-    grid-template-columns: 1fr;
   }
   .main_wrapper .section_container {
     width: 90%;
@@ -92,6 +76,5 @@
 
 .navbar__logo {
   height: 75%;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
-

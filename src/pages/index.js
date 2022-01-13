@@ -7,9 +7,10 @@ import Footer from "../core/Footer";
 import styles from "./styles.module.css";
 import StillNotFind from "../components/StillNotFind";
 import Header from "../components/Header";
-import Topics from "../components/Topics";
+import TopicCard from "../components/TopicCard";
 import Community from "../components/Community";
 import QuickReads from "../components/QuickReads";
+import { topics } from "../constants";
 
 const features = [
   {
@@ -80,29 +81,6 @@ function Home() {
   const context = useDocusaurusContext();
   const { siteConfig = {} } = context;
 
-  const topics = [
-    {
-      title: "Get started with Concepts",
-      description:
-        "Learn the platform basics, review channel intergration and security compilance documents.",
-      icon: "ri-booklet-line",
-      url: "/docs/platform_concepts/getting-started",
-    },
-    {
-      title: "Template Bots",
-      description:
-        "Zero to one of building bots for simple usecases at lightening speed.",
-      icon: "ri-lightbulb-flash-line",
-      url: "/docs/cookbooks/template-bots/model-bot",
-    },
-    {
-      title: "Video Tutorials",
-      description:
-        "Video based tutorials for one shot learning of major sections of the platform",
-      icon: "ri-question-line",
-      url: "/docs/tutorials/basics",
-    },
-  ];
   return (
     <Layout
       title="Home"
@@ -129,22 +107,12 @@ function Home() {
               <i className="feather icon-github"></i> Explore Cookbooks
             </Link>
           </div> */}
-        <Header
-          title="Hi, how can we help you?"
-          description=" Refer Platform Concepts to build and deploy bots on channels where your
-          customers are!"
-          placeholder="Search by keyword ( Eg. How to build a bot, Journeys, steps)"
-        />        
+        <Header />
         <section className={styles.section_container}>
-          <h2 className={styles.title}>Browse topics</h2>
-          <p className={styles.description}>
-            Set up simple bots within minutes or learn about how to develop a
-            complex bot that caters to your usecase
-          </p>
           <div className={styles.contents}>
             <div className={styles.details}>
               {topics.map((topic, index) => (
-                <Topics
+                <TopicCard
                   key={index}
                   title={topic.title}
                   description={topic.description}
@@ -152,34 +120,6 @@ function Home() {
                   url={topic.url}
                 />
               ))}
-            </div>
-            <div className={styles.right_sidebar}>
-              <QuickReads
-                description="We gathered some handy resources so that you can get quickly started."
-                list={[
-                  {
-                    value: "How to build your lead gen bot ?",
-                    to: "/docs/cookbooks/template-bots/lead-generation",
-                  },
-                  {
-                    value: "Create a database table ?",
-                    to: "/docs/platform_concepts/data/create-tables",
-                  },
-                  {
-                    value: "How to setup a WhatsApp Bot ?",
-                    to: "/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot",
-                  },
-                  {
-                    value: "How to add FAQs ?",
-                    to: "/docs/platform_concepts/studio/knowledge-management/add-faqs",
-                  },
-                  {
-                    value: "How to share bot access ?",
-                    to: "/docs/platform_concepts/configurations/signup-post-bot-invite",
-                  },
-                ]}
-              />
-              <Community />
             </div>
           </div>
         </section>
