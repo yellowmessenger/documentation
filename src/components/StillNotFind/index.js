@@ -7,11 +7,11 @@ const StillNotFind = () => {
       <div className={styles.wrapper}>
         <p className={styles.title}>Still not finding what you need?</p>
         <p className={styles.desc}>
-          No problem! If you need any further help, you can check the YM
+          No problem! If you need any further help, you can check the yellow.ai
           Community.
         </p>
         <a href="https://community.yellow.ai/" target="_blank">
-          Ask the community
+          Ask the Community
         </a>
       </div>
     </section>

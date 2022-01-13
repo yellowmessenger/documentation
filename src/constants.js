@@ -49,7 +49,7 @@ export const topics = [
     description:
       "Deliver a truly multi-channel experience to your customers on the largest messaging app in the world.",
     icon: "ri-whatsapp-line",
-    url: "/docs/cookbooks/whatsapp cookbook/",
+    url: "/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot",
   },
   {
     title: "Tutorials",

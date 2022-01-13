@@ -197,14 +197,15 @@ module.exports = {
       label: "Engagement",
       collapsed: true,
       items: [
-        "platform_concepts/engagement/engage",
-        "platform_concepts/engagement/notification-engine",
+        "platform_concepts/engagement/engage",      
         {
           type: "category",
           label: "Outbound Engagement",
           collapsed: true,
           items: ["platform_concepts/engagement/outbound/whatsappCampaign",
-          "platform_concepts/engagement/outbound/templateManager/overview"],
+          "platform_concepts/engagement/outbound/templateManager/overview",
+          "platform_concepts/engagement/outbound/notification-engine",
+        ],
         },
         {
           type: "category",
