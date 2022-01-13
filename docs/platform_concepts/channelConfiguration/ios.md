@@ -12,7 +12,7 @@ pod 'YMChat'
 ```
 
 :::info Supported iOS versions:
-iOS 12, 13 and 14
+iOS 12 and above
 :::
 
 ## Basic Usage
