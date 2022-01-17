@@ -43,8 +43,8 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Template/Example Bots",
-      collapsed: false,
+      label: "Template Bots",
+      collapsed: true,
       items: [
         "cookbooks/template-bots/model-bot",
         // "cookbooks/template-bots/customer-support-bot",
