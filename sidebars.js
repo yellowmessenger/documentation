@@ -217,10 +217,9 @@ module.exports = {
               label: "Inbound Widgets",
               collapsed: true,
               items: [
-                "platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets",
+                "platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations",
                 "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnWebsite",
                 "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnShopify",
-                "platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetButtons",
               ],
             },
             {
