@@ -306,7 +306,7 @@ module.exports = {
     {
       type: "category",
       label: "Configurations",
-      collapsed: false,
+      collapsed: true,
       items: [
         "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/access-management",
