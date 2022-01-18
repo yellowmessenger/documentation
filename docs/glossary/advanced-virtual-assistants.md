@@ -6,9 +6,7 @@ sidebar_label: Advanced Virtual Assistants
 featured: true
 rank: 1
 ---
-## Ex
-### ex1
-Ansuman
+ 
 yellow.ai provides it's users who sign up with a business email a bot to explore the platform on a free trial period basis*., with no strings attached! Interested? Follow this guide to create your first bot on the yellow.ai platform. *(* conditions applied )*
 
 Building chatbot is fun. You start with a basic bot which is as simple as greeting Hello World! Then you move on to building a complex bot which can converse with users, answer FAQs and generate Lead for you.
