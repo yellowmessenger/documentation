@@ -351,6 +351,28 @@ module.exports = {
     },
   ],
   glossary: [
-    "glossary/advanced-virtual-assistants",
-  ]
+    // "glossary/advanced-virtual-assistants",
+    // "glossary/agent-assist",
+
+    {
+      type: "category",
+      label: "CAIP",
+      collapsed: false,
+      items: [
+        "glossary/advanced-virtual-assistants",
+        "glossary/chatbot",
+        "glossary/conversational-ai",
+      ],
+    },
+    {
+      type: "category",
+      label: "Product",
+      collapsed: true,
+      items: [
+        "glossary/agent-assist",
+        
+      ],
+    },
+  ],
+  
 };
