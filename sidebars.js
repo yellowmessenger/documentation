@@ -349,5 +349,8 @@ module.exports = {
         "updates/oct_21/inbox"
       ],
     },
+  ],
+  glossary: [
+    "glossary/advanced-virtual-assistants",
   ]
 };

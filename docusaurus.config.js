@@ -86,6 +86,12 @@ module.exports = {
           activeBasePath: "docs/whats_new",
         },
         {
+          to: "docs/glossary/advanced-virtual-assistants",
+          label: "Glossary",
+          position: "left",
+          activeBasePath: "docs/glossary",
+        },
+        {
           to: "https://community.yellow.ai",
           label: "Community",
           position: "right",
