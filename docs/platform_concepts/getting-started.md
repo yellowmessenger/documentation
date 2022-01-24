@@ -8,14 +8,13 @@ It is entirely your choice!
 
 :::info
 
-- If you are looking to go through detailed bot building tutorials, checkout [Cookbooks](../cookbooks/getting_started).
+- If you are looking to go through detailed bot building tutorials, checkout [Guides](../cookbooks/getting_started).
 
 :::
 
-> :heavy_check_mark: Before building a bot, you will have to set up your bot project. To do it, click [here](../../howtos/basics/create-a-bot)
+> :heavy_check_mark: Before building a bot, you will have to set up your bot project. To do it, check out this [guide](../cookbooks/getting_started) or follow the video tutorial given below.
 
-<!-- ![](https://cdn.yellowmessenger.com/g0rI2u7IDLmm1622783156107.gif) -->
-<!-- update video here -->
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/pT5PpSKTeb8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
 
 ---
 ## Step 1: Start conversing

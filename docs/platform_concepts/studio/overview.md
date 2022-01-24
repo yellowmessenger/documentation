@@ -15,7 +15,7 @@ You don't have to be a coder to build a bot! At least not on our platform. Our e
 
 :::
 
-> :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of setting up your bot project. 
+> :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of [setting up your bot project](http://localhost:3000/docs/cookbooks/getting_started). 
 
 ---
 
@@ -76,7 +76,7 @@ Above points describe the scope of your bot, ie, what can your bot help your cus
 
 ### 2. Train your bot
 Another thing, the heart and soul of bot building "**Natural language Understanding**" capabilities can be added to bot in this section. 
-You can train your bot here to [**respond to various user utterances**](./natural-language-understanding/intents),  [**detect entities**](./natural-language-understanding/entities) etc. 
+You can [train your bot](./bot-training) here to [respond to various user utterances](./natural-language-understanding/intents), [detect entities](./natural-language-understanding/entities) etc. 
 
 ### 3. Supporting sections - Code, API and Events.
 These sections are often used / needed in bot building journey.
