@@ -8,11 +8,11 @@ It is entirely your choice!
 
 :::info
 
-- If you are looking to go through detailed bot building tutorials, checkout [Cookbooks](../cookbooks/getting_started).
+- If you are looking to go through detailed bot building tutorials, checkout [Guides](../cookbooks/getting_started).
 
 :::
 
-> :heavy_check_mark: Before building a bot, you will have to set up your bot project. To do it, click [here](../../howtos/basics/create-a-bot)
+> :heavy_check_mark: Before building a bot, you will have to set up your bot project. To do it, click [here](../../docs/cookbooks/getting_started)
 
 <!-- ![](https://cdn.yellowmessenger.com/g0rI2u7IDLmm1622783156107.gif) -->
 <!-- update video here -->
@@ -58,9 +58,9 @@ None of us like a non responsive bot if it does not understand what we say. Add 
 
 In case you are wondering what to do after building your bot, there is a lot more. Database management, providing/managing live agent support and effective customer engagement are some of the other offerings from us. You might also want to get familiar with all the industry specific chatbot terminologies. Keep scrolling to explore all the platform concepts in detail.
 
-## Studio
+## [Studio](../../docs/platform_concepts/studio/overview)
 
-The Yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click [here](../../docs/platform_concepts/studio/overview).
+The yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click [here](../../docs/platform_concepts/studio/overview).
 
 ## [Data](../platform_concepts/data/create-tables)
 
@@ -72,10 +72,10 @@ The Yellow.ai Studio is the place to build those intelligent bots to power your 
 
 ## [Channels](../platform_concepts/channelConfiguration/alexa)
 
-Your bots can converse with your clients through dozens of popular channels. To know more, click [here](../../platform_concepts/channelConfiguration/overview).
-
 ## [App Configuration](../platform_concepts/appConfiguration/azure-ad)
 
-## [Omnichannel Notifications API](../platform_concepts/omniChannelNotifications/gettingStarted)
+## [Omni-Channel Notification Engine](../platform_concepts/engagement/outbound/notification-engine)
+
+
 
 ---
