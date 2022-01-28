@@ -80,13 +80,13 @@ Different prompts return a response in different formats and datatype. You can r
 | [Phone](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
 | [Location](../studio/steps/prompts-and-messages#location-prompt)           | object            |
 | [Carousel](../studio/steps/prompts-and-messages#carousel)                  | string            |
-| [Quick Replies](..studio/steps/prompts-and-messages#quick-replies)         | string            |
+| [Quick Replies](../studio/steps/prompts-and-messages#quick-replies)         | string            |
 | [Date](..studio/steps/prompts-and-messages#date-prompt)                    | object            |
 | [Question](..studio/steps/prompts-and-messages#general---question)         | string            |
 | [Feedback](..studio/steps/prompts-and-messages#feedback-prompt)            | object            |
 | [Whatsapp List](../studio/steps/prompts-and-messages#whatsapp-list-prompt) | string            |
 | Multiselect                                                                | string            |
-| [Image/file](studio/steps/prompts-and-messages#files-images-videos)        | string            |
+| [Image/file](../studio/steps/prompts-and-messages#files-images-videos)        | string            |
 
 ### [Actions](../studio/steps/action-nodes-and-logic)
 Action nodes provides response in various datatype. You can refer to the table below to understand which variable datatype should be used with which action node.
@@ -95,7 +95,7 @@ Action nodes provides response in various datatype. You can refer to the table b
 |-----------------------------------------------------------------------------|-------------------------------|
 | [API](../studio/steps/action-nodes-and-logic#api)                           | object, array, number, string |
 | [Database (search)](../studio/steps/action-nodes-and-logic#search)          | array                         |
-| [Function](..studio/steps/action-nodes-and-logic#functions)                 | object, array, number, string |
+| [Function](../studio/steps/action-nodes-and-logic#functions)                 | object, array, number, string |
 | Outbound Notification                                                       | object, array, number, string |
 | Notification Status                                                         | object, array, number, string |
 | [Raise ticket](../studio/steps/action-nodes-and-logic#raise-ticket)         | object, array, number, string |
