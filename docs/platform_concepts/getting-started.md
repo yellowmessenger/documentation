@@ -75,7 +75,4 @@ The yellow.ai Studio is the place to build those intelligent bots to power your 
 ## [App Configuration](../platform_concepts/appConfiguration/azure-ad)
 
 ## [Omni-Channel Notification Engine](../platform_concepts/engagement/outbound/notification-engine)
-
-
-
 ---
