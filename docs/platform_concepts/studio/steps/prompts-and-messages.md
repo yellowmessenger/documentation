@@ -54,7 +54,7 @@ Please note that the variable datatype needs to be array
 :::
 
 ## Prompts
-Prompts are nodes that take some user input. All prompts have a "**store response in**" option to store input user gives in a [bot variable.](./tools)
+Prompts are nodes that take some user input. All prompts have a "**store response in**" option to store input user gives in a [Variable](../bot-variables).
 
 
 ### Use case specific
