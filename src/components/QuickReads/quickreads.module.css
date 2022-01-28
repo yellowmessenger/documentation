@@ -5,10 +5,10 @@
 .quick_reads h2 {
   color: #505862;
   font-size: 1.625rem;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 .quick_reads > p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
   color: #505862;
 }
 
@@ -25,5 +25,5 @@
 .quick_reads .reads .read {
   margin-bottom: 10px;
   cursor: pointer;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
 }

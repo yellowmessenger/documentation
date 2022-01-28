@@ -11,7 +11,7 @@
   font-size: 2rem;
   color: var(--ifm-primary-grey-color);
   font-weight: 600;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 .heroBanner .hero_sub_title {
   font-size: 1.25rem;
@@ -19,7 +19,7 @@
   text-align: center;
   max-width: 50%;
   margin: 0 auto;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 .heroBanner .search_wrapper {
