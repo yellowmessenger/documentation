@@ -43,8 +43,8 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Template/Example Bots",
-      collapsed: false,
+      label: "Template Bots",
+      collapsed: true,
       items: [
         "cookbooks/template-bots/model-bot",
         // "cookbooks/template-bots/customer-support-bot",
@@ -134,6 +134,7 @@ module.exports = {
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
         "platform_concepts/studio/bot-variables",
+        "platform_concepts/studio/bot-training",
         "platform_concepts/studio/cloud-function",
         "platform_concepts/studio/modes",
       ],
@@ -305,7 +306,7 @@ module.exports = {
     {
       type: "category",
       label: "Configurations",
-      collapsed: false,
+      collapsed: true,
       items: [
         "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/access-management",

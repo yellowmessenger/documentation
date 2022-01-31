@@ -33,7 +33,7 @@ const Footer = () => {
     },
     { 
       title: "Setup Inbox", 
-      to: "./docs/platform_concepts/inbox/inbox.md" 
+      to: "./docs/platform_concepts/inbox/inbox" 
     },
     { 
       title: "Use DocCog", 

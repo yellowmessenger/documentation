@@ -261,7 +261,7 @@ Now you can also run **Generate utterance reports** on your bot to evaluate how 
 
 ### Testing Utterances
 
-There is an option in the Studio/ Flows section called Tools, also available in the NLU section. 
+There is an option in the Studio/ Flows section called [Tools](../tools), also available in the NLU section. 
 
 Under tools, you'll see the 'Test your bot' box where you can test your utterances and see the score and intent they are triggering and many more details. 
 

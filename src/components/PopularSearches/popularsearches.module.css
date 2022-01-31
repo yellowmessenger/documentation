@@ -5,7 +5,7 @@
 .popularsearches_container__title {
   color: var(--ifm-grey-color-1);
   margin: 0 0 16px 8px;
-  text-align: start;
+  text-align: center;
 }
 
 .popularsearches_container__content_wrapper {

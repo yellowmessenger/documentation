@@ -73,4 +73,4 @@ For example, in above 1st example, if date entity is selected for autoskipping i
 ![](https://i.imgur.com/ipn5mLW.gif)
 
 :::info
-You can test Entities detected in a phrase/utterance using [Test your bot](./tools#1-test-your-bot) option in tools !
+You can test Entities detected in a phrase/utterance using [Test your bot](../tools#1-test-your-bot) option in tools !

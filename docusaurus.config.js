@@ -29,7 +29,7 @@ module.exports = {
       appId: 'LWOORM11IH',
 
       // Optional: see doc section below
-      contextualSearch: false,
+      contextualSearch: true,
 
       // Optional: Algolia search parameters
       searchParameters: {},
@@ -60,15 +60,8 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-//         {
-//           // to: "docs/howtos/basics/create-a-bot",
-//           to: "/docs/developer/app/overview",
-//           label: "Developer",
-//           position: "left",
-//           activeBasePath: "docs/developer",
-//         },
         {
-          to: "/docs/cookbooks/template-bots/model-bot",
+          to: "/docs/cookbooks/getting_started",
           label: "Guides",
           position: "left",
           activeBasePath: "/docs/cookbooks",

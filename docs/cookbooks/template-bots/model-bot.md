@@ -144,7 +144,7 @@ Description : This will be shown under the bot header. It’s recommended to kee
 
 #### Step 2 - Look and Feel of your bot.
 
-You can also customize the look and feel of your bot. For more information, check out this [guide](https://docs.yellow.ai/docs/howtos/design/setup-web-widget/#change-the-color-schema-and-design-of-the-bot). 
+You can also customize the look and feel of your bot. For more information, check out this [guide](../../platform_concepts/channelConfiguration/web-widget#change-the-color-schema-of-the-bot). 
 
 ## Exercise 3:  Learn Bot Basics
 #### Step 1 - Bot Basics
@@ -238,7 +238,7 @@ When a new bot is created on the Yellow Messenger platform, ‘Transfer Chat to 
 ## Exercise 6: Create Service Now Journey
 
 #### Step 1: Add Utterances
-Just like we saw in [step 1 of exercise 4](https://docs.yellow.ai/docs/cookbooks/model-bot/exercises#step-1--add-utterances), add intent and utterance for service now in the NLU tab.
+Just like we saw in [step 1 of exercise 4](./model-bot#step-1--add-utterances), add intent and utterance for service now in the NLU tab.
 
 ** * Screenshot for adding intent * **
 
