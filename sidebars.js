@@ -349,14 +349,6 @@ module.exports = {
         "updates/oct_21/inbox"
       ],
     },
-    {
-      type: "category",
-      label: "December 2021",
-      collapsed: true,
-      items: [
-        "updates/dec_21/Test",
-      ],
-    },
   ],
   glossary: [
     // "glossary/advanced-virtual-assistants",
