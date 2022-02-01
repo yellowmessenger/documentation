@@ -53,3 +53,31 @@ return new Promise(resolve => {
     resolve(suggestions);
 });
 ```
+
+### Decode BASE64
+
+**The Base64 Alphabet contains 64 basic ASCII characters.**
+
+If we receive an encrypted string through API, then we need to decrypt it first then only we can get the actual object. Then upload to YM Server, at last we can share the URL.
+
+```js
+    let call_api = await app.executeApi('api_name', { argument: _value});
+    let api_data = JSON.parse(call_api.body);
+    app.log(api_data, "#####API DATA");
+
+    let buffer = new Buffer.from(api_data.obj_name, "base64"); // Decode the file
+    let file_url = await app.uploadFile(buffer, 'File.pdf');  // Upload the file to YM server
+    // await app.sendDocument(file_url, { caption:"FILE", filename: 'File.pdf', mime: 'application/pdf' });
+    // Share the File URL
+    await app.sendCards([
+        {
+            title: "Kindly download the same as PDF",
+            actions: [{
+                title: "DOWNLOAD",
+                url: file_url
+            }]
+        }
+    ]);
+```
+
+For more information : [Click Here](https://developer.mozilla.org/en-US/docs/Glossary/Base64)

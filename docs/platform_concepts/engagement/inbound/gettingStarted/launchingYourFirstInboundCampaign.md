@@ -5,7 +5,7 @@ sidebar_label: Launching Your First Inbound Campaign
 
 ## In this guide
 
-1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the [**Types of Inbound Widgets**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets)
+1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the [**Types of Inbound Widgets**](../../inboundWidgets/typesOfWidgets)
 2. As you use the campaign builder, you’ll notice a **question mark icon** next to many features. Hovering above that question mark will show you more information around that feature.
 3. To be able to create and test the campaign, you’ll need the following
    - Create a Journey **“Homepage Help”** with text → ”Hey, how can I help you”
@@ -41,7 +41,7 @@ To create a new Campaign, follow the steps below:
 
 7.  This step in campaign creation consists of 2 sub-steps, namely **DESIGN** and **DEFINE**
 8.  In the Design step, use various options to design the theme of your widget
-9.  In the Define step, choose what the button does. Select the Button Type as **Journey Trigger.** Clicking this button will trigger a journey in the Web Bot. You can read more about other [**Types of Widget Buttons**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetButtons)
+9.  In the Define step, choose what the button does. Select the Button Type as **Journey Trigger.** Clicking this button will trigger a journey in the Web Bot. You can read more about other [**Types of Widget Buttons**](../../inboundWidgets/typesOfWidgetButtons)
 10. Then select the **Journey to Trigger** (**NOTE:** For this, you’ll need existing Journeys to select from. You can use **Studio** to create them)
 11. Click Next to move the the next step
 

@@ -13,23 +13,24 @@ the actual code logic will be written in the [Platform](https://app.yellowmessen
 
 Use your sign in credentials are as follows -
 
-![](https://cdn.yellowmessenger.com/NMxpVIamboBs1612447788006.png)
+![](https://i.imgur.com/b7OXjkh.png)
 
-2. Once you have signed in, click the Alexa button at the top of the screen.
+2. Once you have signed in, go to "Developer Console". click the Alexa button at the top of the screen.
 
-![](https://cdn.yellowmessenger.com/5NSxCha7z5XO1612448000862.png)
+![](https://i.imgur.com/N0jmyTl.png)
 
-3. On the Alexa page, choose the "Get Started" button for the Alexa Skills Kit.
 
-![](https://cdn.yellowmessenger.com/ayi92TkWea4D1612447818324.png)
+3. Select "Alexa Skills Kit" Option
 
-4. Select "Add A New Skill." This will get you to the first page of your new Alexa skill.
+4. Select "Create Skill" This will get you to the first page of your new Alexa skill.
 
-![](https://cdn.yellowmessenger.com/eFAXpZUB2sUv1612447879382.png)
+![](https://i.imgur.com/op9tu8H.png)
+
 
 5. Fill out the Skill Information screen. Make sure to review the tips provided below the screenshot.
 
-![](https://cdn.yellowmessenger.com/RYHScqH7oiC11612448056922.png)
+![](https://i.imgur.com/tKYVUoT.png)
+
 
 ### Skill Information Tips
 
@@ -39,19 +40,22 @@ Use your sign in credentials are as follows -
 **Invocation Name** - This is the name that your users will need to say to start your skill. We have provided some common issues
 developers encounter in the list below, but you should also review the entire Invocation Name Requirements.
 
-6. Click the Next button to move to the Interaction Model.
+6. Click the "Continue with template" to move to the Interaction Model.
 
-![](https://cdn.yellowmessenger.com/JkkIunPE3nCd1612448076747.png)
+![](https://i.imgur.com/n3BRd6Z.png)
 
-7. Click on the Launch Skill Builder (Beta) button. This will launch the new Skill Builder Dashboard.
 
-![](https://cdn.yellowmessenger.com/uY8MMXxuzpaQ1612448097113.png)
+7. Selct each options from skills builder checklist and fill the details for each
 
-8. You will arrive at a page that looks like below.
+![](https://i.imgur.com/xPAc74n.png)
 
-![](https://cdn.yellowmessenger.com/jHSBzzj0sOdx1612448124227.png)
 
-9. Click on ADD+ to add a new slot type.
+8. On slecting " Intents, Samples, and Slots" you will arrive at a page that looks like below.
+
+![](https://i.imgur.com/mRVu5Un.png)
+
+
+9. Go to "Slot Types (0)" option from menu. Then Click on ADD+ to add a new slot type.
 
 ![](https://cdn.yellowmessenger.com/AemONmPx62621612448145110.png)
 
@@ -87,15 +91,15 @@ developers encounter in the list below, but you should also review the entire In
 
 18. Now that your model has been built, it’s time to configure it with the backend. In the top menu, click “Configuration”.
 
-19. Choose HTTPS as Service Endpoint Type and enter the following URL in Default - https://app.yellowmessenger.com/integrations/alexa/getResponse
+19. Go to "endpoint" option from menu. Choose HTTPS as Service Endpoint Type and enter the following URL in Default - https://cloud.yellowmessenger.com/integrations/alexa/getResponse
 
-![](https://cdn.yellowmessenger.com/DRUitoj4WGDV1612448364564.png)
+![](https://i.imgur.com/VHhWC15.png)
+
+
 
 20. The same page also contains permissions below. If your skill requires the address of the device, check out the following resource - https://developer.amazon.com/docs/custom-skills/device-address-api.html
 
-21. After configuration, you need to set up the SSL Certificate settings. Choose the second option. Click Next.
-
-![](https://cdn.yellowmessenger.com/eCl3vgaNojRX1612448390221.png)
+21. you need to set up the SSL Certificate settings. Choose the second option. As shown in image at point 19
 
 22. Your VUI is ready. Now it’s time to link it to the backend chatbot. On the left menu, navigate to “Skill Information. Copy the Application Id. (It may look like this - amzn1.ask.skill.111ffc3d-229f-46f7-b537-0c19bf89aca2) Open BotPlatform and navigate to the admin of the desired chatbot that you want to link. In the left menu, click on Channels. Choose Amazon Alexa Skill and paste the Alexa Skill ID that you had copied earlier.
 

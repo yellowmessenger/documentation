@@ -29,7 +29,7 @@ Studio consists of following modules:
 - **Build**
     - **Flows**: Here conversatinal flow can be designed using [journeys](../studio/journeys) and [nodes](../studio/steps/steps/). 
     - **NLU**: The heart and soul of a bot "**Natural language Understanding**" capabilities can be added to bot in this section. You can train your bot here to [respond to various user utterances](./natural-language-understanding/intents),  [detect entities](./natural-language-understanding/entities) etc. 
-    - **API**: To [integrate APIs](..studio/api-management/add-api#!) in a bot this module can be used.
+    - **API**: To [integrate APIs](./api-management/add-api) in a bot this module can be used.
     - **Code**: Bot builders can write your code functions here if needed and attach them using function node to workflow. 
 
 :::info
@@ -39,8 +39,8 @@ Studio consists of following modules:
 :::
 
 - **Learn**: This module improves your bot training over-time by self-learning.
-- **FAQ**: This module can be used to [add FAQs]((./knowledge-management/add-faqs)) in a bot.
-- **Document Cognition**: Using [**document cognition**](./knowledge-management/what-is-document-cognition) capabilities, bot can answer user queries through unstructured documents.
+- **FAQ**: This module can be used to [add FAQs](./knowledge-management/add-faqs) in a bot.
+- **Document Cognition**: Using [document cognition](./knowledge-management/what-is-document-cognition) capabilities, bot can answer user queries through unstructured documents.
 
 - **Event hub**: This module helps you add and handle various events.
 - **Chat logs**: This module detects patterns in selected conversations and tags them with actionables that can directly help you improve your bot flows. 

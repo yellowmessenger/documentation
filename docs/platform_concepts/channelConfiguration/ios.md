@@ -11,6 +11,15 @@ To integrate YMChatbot into your Xcode project using CocoaPods, specify it in yo
 pod 'YMChat'
 ```
 
+### Swift Package Manager Install
+To integrate YMChatbot into your Xcode project using SPM, specify it in your `Package.swift`:
+
+```ruby
+dependencies: [
+    .package(url: "https://github.com/yellowmessenger/YMChatbot-iOS.git", .upToNextMajor(from: "1.7.3"))
+]
+```
+
 :::info Supported iOS versions:
 iOS 12 and above
 :::
