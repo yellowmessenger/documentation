@@ -274,7 +274,6 @@ module.exports = {
         "platform_concepts/channelConfiguration/alexa",
         "platform_concepts/channelConfiguration/google-assistant",
         "platform_concepts/channelConfiguration/googleChat",
-        "platform_concepts/channelConfiguration/hangouts",
         "platform_concepts/channelConfiguration/ivr-bots",
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/fb-workplace",
