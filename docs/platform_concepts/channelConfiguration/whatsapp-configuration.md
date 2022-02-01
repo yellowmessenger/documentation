@@ -15,7 +15,7 @@ This help doc will guide you through creating a WhatsApp account and setting up 
 
 ## Step: 1 - Create a WhatsApp Business Account
 
-1. [Sign-up](http://cloud.yellowmessenger.com/) with Yellow Messenger's platfrom. If you signed-up already, just sign-in.
+1. [Sign-up](http://cloud.yellow.ai/) with Yellow Messenger's platfrom. If you signed-up already, just sign-in.
 
 ![](https://cdn.yellowmessenger.com/cBtHl9QjdEtK1619535411755.png)
 
@@ -23,7 +23,7 @@ This help doc will guide you through creating a WhatsApp account and setting up 
 
 ![](https://cdn.yellowmessenger.com/98Uohu6oWwTw1619536105368.png)
 
-If you haven't created your chatbot yet, [create one](https://docs.yellowmessenger.com/docs/howtos/basics/create-a-bot) right away. Happy creating!
+If you haven't created your chatbot yet, [create one](/docs/cookbooks/getting_started) right away. Happy creating!
 
 3. To start with WhatsApp account creation, Go to **Channels > Communication > Select WhatsApp**.
 

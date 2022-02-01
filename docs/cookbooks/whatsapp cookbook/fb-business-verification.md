@@ -107,7 +107,7 @@ the website. For example, at the footer, enter "Company ABC powered by company D
 
 **Website**
 - Website **should be accessible, no geo filters** should be there as that may prevent FB teams from viewing website
-- The website shall be a **secure one https://**
+- The website shall be a secure one **https://**
 - **Website must contain the legal business name**, preferably on home page e.g. in footer of website.
 - **Website domain and email domain (for OTP verification) must be the same.** If not, upload DNS records to prove the legal business entity owns both domains. Other option for this is domain verification.
 - It is helpful to have **the ownership of the provided domain**

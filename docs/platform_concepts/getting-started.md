@@ -15,6 +15,7 @@ It is entirely your choice! If you don't know where to start, checkout this walk
 
 > :heavy_check_mark: Before building a bot, you will have to set up your bot project. To do it, check out this [guide](../cookbooks/getting_started) or follow the video tutorial given below.
 
+
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/pT5PpSKTeb8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
 
 ---
@@ -58,9 +59,9 @@ None of us like a non responsive bot if it does not understand what we say. Add 
 
 In case you are wondering what to do after building your bot, there is a lot more. Database management, providing/managing live agent support and effective customer engagement are some of the other offerings from us. You might also want to get familiar with all the industry specific chatbot terminologies. Keep scrolling to explore all the platform concepts in detail.
 
-## Studio
+## [Studio](../../docs/platform_concepts/studio/overview)
 
-The Yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click [here](../../docs/platform_concepts/studio/overview).
+The yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click [here](../../docs/platform_concepts/studio/overview).
 
 ## [Data](../platform_concepts/data/create-tables)
 
@@ -72,10 +73,7 @@ The Yellow.ai Studio is the place to build those intelligent bots to power your 
 
 ## [Channels](../platform_concepts/channelConfiguration/alexa)
 
-Your bots can converse with your clients through dozens of popular channels. To know more, click [here](../../platform_concepts/channelConfiguration/overview).
-
 ## [App Configuration](../platform_concepts/appConfiguration/azure-ad)
 
-## [Omnichannel Notifications API](../platform_concepts/omniChannelNotifications/gettingStarted)
-
+## [Omni-Channel Notification Engine](../platform_concepts/engagement/outbound/notification-engine)
 ---

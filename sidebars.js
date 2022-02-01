@@ -228,10 +228,9 @@ module.exports = {
               label: "Inbound Widgets",
               collapsed: true,
               items: [
-                "platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets",
+                "platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations",
                 "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnWebsite",
                 "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnShopify",
-                "platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetButtons",
               ],
             },
             {
@@ -351,5 +350,38 @@ module.exports = {
         "updates/oct_21/inbox"
       ],
     },
-  ]
+    {
+      type: "category",
+      label: "December 2021",
+      collapsed: true,
+      items: [
+        "updates/dec_21/Test",
+      ],
+    },
+  ],
+  glossary: [
+    // "glossary/advanced-virtual-assistants",
+    // "glossary/agent-assist",
+
+    {
+      type: "category",
+      label: "CAIP",
+      collapsed: false,
+      items: [
+        "glossary/advanced-virtual-assistants",
+        "glossary/chatbot",
+        "glossary/conversational-ai",
+      ],
+    },
+    {
+      type: "category",
+      label: "Product",
+      collapsed: true,
+      items: [
+        "glossary/agent-assist",
+        
+      ],
+    },
+  ],
+  
 };

@@ -15,7 +15,7 @@ sidebar_label : Access Management
 
 ![Access Control](https://cdn.yellowmessenger.com/WNHDz8vddUQm1615873897626.png)
 
-3. The user you've invited will received an email from Yellow Messenger to accept the bot invite. Follow to this [guide](https://docs.yellowmessenger.com/docs/howtos/basics/signup-post-bot-invite) to learn how to accept a bot invite.
+3. The user you've invited will received an email from Yellow Messenger to accept the bot invite. Follow to this [guide](signup-post-bot-invite) to learn how to accept a bot invite.
 
 
 ### Managing Roles and Privileges

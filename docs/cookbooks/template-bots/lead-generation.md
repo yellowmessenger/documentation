@@ -109,11 +109,11 @@ Ater the training is completed you can go to Try Your Bot and verify your create
 
 You are ready with your first Bot! 🎉
 
-Next we will discuss on how we can save those user information in a Data Base and do an import of the records as in when required. You can check the next cookbook on Data Base creation [here](https://docs.yellowmessenger.com/cookbooks/data-layer)
+Next we will discuss on how we can save those user information in a Database and do an import of the records as in when required. You can check the next guide on Database creation [here](../../platform_concepts/data/create-tables)
 
 ## Create Lead Generation Bot using Form Journey
 
-In the cookbook above, we saw how to create a Lead Generation bot on Yellow Messenger. However, there's one more way to create it quickly. Introducing [`Form Journey`](https://docs.yellowmessenger.com/docs/documentation/concepts/template-journeys#forms-journey) which is nothing but template journey which you can use for various purposed. In this cookbook, we will use `Form Journey` to get user data.
+In the cookbook above, we saw how to create a Lead Generation bot on Yellow Messenger. However, there's one more way to create it quickly. Introducing Form Journey which is nothing but template journey which you can use for various purposed. In this cookbook, we will use `Form Journey` to get user data.
 
 1. Create a new Form journey
 In Studio, click on `Create Journey` button on the bottom left corner.
@@ -127,7 +127,7 @@ Click on `Create Journey` now.
 
 We want users to engage with this journey when they first interact with the bot. Best way to do this including it in the `Welcome Promt`. Go to `Studio` click on the home and select `Welcome Prompt`. You should see a `Text Message` response already there.
 
-Let's add a [Quick Reply](https://docs.yellowmessenger.com/docs/documentation/concepts/response-types-message#quick-replies) message by clicking on `Click here to add new response`. Enter a text message here and buttons you want to show users as options
+Let's add a [Quick Reply](../../platform_concepts/studio/steps/prompts-and-messages#quick-replies) message by clicking on `Click here to add new response`. Enter a text message here and buttons you want to show users as options
 
 ![](https://i.imgur.com/DByc6iN.png)
 
