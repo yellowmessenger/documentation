@@ -93,7 +93,7 @@ We recommend to add relevant variants for each question.
 
 ![](https://cdn.yellowmessenger.com/CCO0iJOmjeXW1621429968650.png)
 
-::: info
+:::info
 `Get Started` in Facebook messengeer only works when get_started is added as the start trigger.
 :::
 
