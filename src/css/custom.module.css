@@ -86,12 +86,12 @@
 }
 
 [class^="markdown"] > p {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 [class^="docTitle"] {
   font-size: var(--ifm-h1-font-size) !important;
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 [class^="pagination-nav__link"] {
@@ -112,7 +112,7 @@
 }
 
 [class^="menu__list-item"] {
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 [class^="navbar__brand"] {
@@ -198,7 +198,7 @@ html[data-theme="dark"] .admonition h5 {
   font-size: 0.875rem;
   letter-spacing: 0.15px;
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
+  font-family: "Nunito", sans-serif;
 }
 
 [class^="navbar__items navbar__items--right"] a:last-child {
