@@ -167,6 +167,15 @@ module.exports = {
       items: [
         "platform_concepts/inbox/inbox",
         "platform_concepts/inbox/manage-support-agent",
+
+        {
+          type: "category",
+          label: "Inbox Settings",
+          collapsed: true,
+          items: [
+            "platform_concepts/inbox/inbox-settings/productivity-tools",
+          ],
+        },
         {
           type: "category",
           label: "Mobile SDK",
