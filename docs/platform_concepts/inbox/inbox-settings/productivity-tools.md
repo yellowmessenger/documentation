@@ -1,6 +1,6 @@
 ---
-title: Productivity Tools for Agents
-sidebar_label : Productivity Tools for Agents
+title: Productivity Tools 
+sidebar_label : Productivity Tools
 ---
 
 Productivity Tools can be found at the Inbox > Chats > Settings > Productivity Tools. As it's name suggests, it provides tools to increase productivity of agents.

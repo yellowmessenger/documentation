@@ -173,7 +173,33 @@ module.exports = {
           label: "Inbox Settings",
           collapsed: true,
           items: [
+            {
+              type: "category",
+              label: "Chat Configuration",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/inbox-settings/chats-configuration/tags",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-timeout",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/custom-fields",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/csat",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-queue",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/email-transcript",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-autotranslate",
+              ]
+            },
+            {
+              type: "category",
+              label: "Agent Configuration",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/inbox-settings/agent-configuration/agent-settings",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/working-hours",
+              ]
+            },
             "platform_concepts/inbox/inbox-settings/productivity-tools",
+            "platform_concepts/inbox/inbox-settings/security",
+            "platform_concepts/inbox/inbox-settings/groups",
           ],
         },
         {
