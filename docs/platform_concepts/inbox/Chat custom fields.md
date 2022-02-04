@@ -27,19 +27,19 @@ Following are the steps to add a new field :
 3. Add placeholder - this is the placeholder text that appears on the input bar in the ticket details page
 
 Following are the types and their examples :
-|Custom field |Application                          |
-|-------------|-------------------------------------|
-|Short Text   |Short text like credit card number or order id   |
-|Long Text    |Address, Detailed reason for complain, etc|
-|Keyword      |A single word|
-|Tags         |Predefined tags like product category|
-|Checkbox     |e.g. is this a VIP customer, or was this a sale item?|
-|Radio buttons|It acts like a drop-down list e.g. location, store name, etc|
-|Email        |Any email ID|
-|Number       |Any numerical value like an amount|
-|Phone        |Contact number, e.g. customer’s emergency contact|
-|Date         |Any date value e.g. date of return of the item|
 
+|  Custom field |                          Application                         |
+|:-------------:|:------------------------------------------------------------:|
+| Short Text    | Short text like credit card number or order id               |
+| Long Text     | Address, Detailed reason for complain, etc                   |
+| Keyword       | A single word                                                |
+| Tags          | Predefined tags like product category                        |
+| Checkbox      | e.g. is this a VIP customer, or was this a sale item?        |
+| Radio buttons | It acts like a drop-down list e.g. location, store name, etc |
+| Email         | Any email ID                                                 |
+| Number        | Any numerical value like an amount                           |
+| Phone         | Contact number, e.g. customer’s emergency contact            |
+| Date          | Any date value e.g. date of return of the item               |
   
 Once added, the field will be listed on the ticket/chat details section on the right sidebar as shown below :
 ![Example](https://cdn.yellowmessenger.com/k5VEorRDldSg1635072109945.png)

@@ -4,28 +4,28 @@ export const popularSearchItems = [
     title: "Create and launch WhatsApp notification campaigns",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/whatsappCampaign/#what-is-a-whatsapp-notification-campaign",
-    title: "What is a WhatsApp notification campaign?",
-  },
-  {
     url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-ym/",
     title: "Send WhatsApp Notifications",
-  },
-  {
-    url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-ym/",
-    title: "Access data from an API response",
   },
   {
     url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-template/",
     title: "Apply for WhatsApp Notification Templates",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/",
-    title: "Setup a WhatsApp chatbot",
+    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/whatsappCampaign/#what-is-a-whatsapp-notification-campaign",
+    title: "What is a WhatsApp notification campaign?",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/studio/api-management/send-data/#how-to-send-data-to-an-api",
-    title: "Send data to an API",
+    url: "https://docs.yellow.ai/docs/platform_concepts/inbox/google-translate-api-inbox/",
+    title: "Get Google Translate API key",
+  },
+  {
+    url: "https://docs.yellow.ai/docs/platform_concepts/studio/api-management/receive-data/#how-to-access-data-from-an-apiresponse",
+    title: "Access data from an API response",
+  },
+  {
+    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/",
+    title: "Setup a WhatsApp chatbot",
   },
 ];
 

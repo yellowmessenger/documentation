@@ -93,4 +93,8 @@ We recommend to add relevant variants for each question.
 
 ![](https://cdn.yellowmessenger.com/CCO0iJOmjeXW1621429968650.png)
 
+:::info
+`Get Started` in Facebook messengeer only works when get_started is added as the start trigger.
+:::
+
 Awesome! Congratulations on successfully connecting and testing your FBM chatbot. You can now explore other options such as adding different options (such as products showcase, order status) and test them the same way!

@@ -32,3 +32,7 @@ For example, to search which Superheros lives in the Gotham city you can write a
 ```
 ![Query DB](https://cdn.yellowmessenger.com/KqGlwDEAuqhj1616761866852.png)
 
+
+#### **3. Search using database search action node:**
+
+In the Builder, Database search action node can be used to search the database. For more, checkout [Database Action node documentation](../studio/steps/action-nodes-and-logic#search).
