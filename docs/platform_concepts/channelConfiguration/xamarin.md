@@ -165,6 +165,22 @@ If you are supporting Speech recognition, add following snippet to Info.plist of
 <string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
 ```
 
+#### Status bar
+
+Status bar color can be set on `statusBarColor` color variable
+
+```c#
+ymChatInterface.setStatusBarColour = "#FFFFFF"
+```
+
+#### Close button
+
+Close button color can be set on `closeButtonColor`
+
+```c#
+ymChatInterface.setCloseButtonColour = "#000000"
+```
+
 ### Present chatbot
 
 Chat bot can be presented by calling `startChatbot()`. This method will display full screen chat view

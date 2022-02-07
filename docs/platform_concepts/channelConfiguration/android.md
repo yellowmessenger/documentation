@@ -178,6 +178,14 @@ Status bar color can be set on `statusBarColor` color variable
 ymChat.config.statusBarColor = R.color.red
 ```
 
+or
+
+```java
+ymChat.config.statusBarColorFromHex = "#FF0000"
+```
+
+Note: if both `statusBarColor` and `statusBarColorFromHex` is used then `statusBarColorFromHex` will take priority
+
 #### Close button
 
 Close button color can be set on `closeButtonColor`
@@ -185,6 +193,14 @@ Close button color can be set on `closeButtonColor`
 ```java
 ymChat.config.closeButtonColor = R.color.white
 ```
+
+or
+
+```java
+ymChat.config.closeButtonColorFromHex = "#FFFFFF"
+```
+
+Note: if both `closeButtonColor` and `closeButtonColorFromHex` is used then `closeButtonColorFromHex` will take priority
 
 ## Starting the bot
 
