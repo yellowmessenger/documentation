@@ -167,6 +167,7 @@ module.exports = {
       items: [
         "platform_concepts/inbox/inbox",
         "platform_concepts/inbox/manage-support-agent",
+        "platform_concepts/inbox/inbox-settings/custom-usecases",
 
         {
           type: "category",
@@ -216,6 +217,7 @@ module.exports = {
           label: "Chats",
           collapsed: true,
           items: [
+            "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
             "platform_concepts/inbox/Chat agent activity report",
             "platform_concepts/inbox/Chat agent performance report",
             "platform_concepts/inbox/Chat archives report",
