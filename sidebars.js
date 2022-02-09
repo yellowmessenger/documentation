@@ -219,13 +219,14 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
+            "platform_concepts/inbox/whatsapp-24hr-window-policy",
             "platform_concepts/inbox/Chat agent activity report",
             "platform_concepts/inbox/Chat agent performance report",
             "platform_concepts/inbox/Chat archives report",
+            "platform_concepts/inbox/Chat report metrics 101",
             "platform_concepts/inbox/Chat auto translate",
             "platform_concepts/inbox/google-translate-api-inbox",
             "platform_concepts/inbox/Chat custom fields",
-            "platform_concepts/inbox/Chat report metrics 101",
             "platform_concepts/inbox/Chat working hours"
           ],
         }
