@@ -33,12 +33,37 @@ There are two kinds of roles to access the inbox module:
 
 ### Testing the live agent module:
 
-**Step 1** Be available as a user having Inbox Agent access control and open the bot in another tab 
-Be available as a user having Inbox Agent access control and open the bot in another tab
+To test the live agent transfer you need to have access as an Inbox agent.
 
-**Step 2** Raise a ticket from the bot opened in the other tab.
+If you have admin access to the bot follow [these steps](https://docs.yellow.ai/docs/platform_concepts/inbox/manage-support-agent) to give yourself the inbox agent access.
 
-**Step 3** Go to Inbox -> Chats -> Overview, active ticket count should be increased by 1 and ticket will appear under Inbox -> Chats -> My chats
+>Note: if you are an admin you don't have to add user again, in users just edit your row to add inbox agent access as well.
+
+Once you have created the live agent journey, follow these steps to test it out:
+1. Duplicate the tab or open the bot in another window. So now you will have two tabs opened.
+2. So in one of the tab go to **Inbox**
+3. Inside inbox, go to chats and then into **My chats**
+
+![](https://i.imgur.com/9mYj74d.png)
+
+4. Make sure you are available. To check that click on the profile icon on the right corner and you will see a status drop down. 
+
+![](https://i.imgur.com/1CM2JqU.png)
+
+5. Go to the previous tab or window where the bot was opened and raise a ticket. After ticket being raised it will show the name of the agent connected
+
+![](https://i.imgur.com/O895hbq.png)
+
+6. In the tab in which the inbox was opened, you will see a ticket raised.
+
+![](https://i.imgur.com/y7ctMHT.png)
+
+7. You can reply from here and see the chat happening real-time on the bot.
+
+![](https://i.imgur.com/yoDC3VT.png)
+![](https://i.imgur.com/eUjdbs2.png)
+
+8. Then you can close the chat and also test the message that should come on the ticket close.
 
 
 
