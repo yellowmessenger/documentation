@@ -20,6 +20,9 @@ dependencies: [
 ]
 ```
 
+### Add Package directly to your Swift Project
+![](https://cdn.yellowmessenger.com/3NnDTb2GSSDG1644486017511.png)
+
 :::info Supported iOS versions:
 iOS 12 and above
 :::
