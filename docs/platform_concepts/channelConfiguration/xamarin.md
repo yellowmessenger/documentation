@@ -154,6 +154,24 @@ Speech to text can be enabled and disabled by calling setEnableSpeech(). Default
 ymChatInterface.setEnableSpeech(true);
 ```
 
+### Colors
+
+#### Status bar
+
+Status bar color can be set by calling `setStatusBarColour` method
+
+```c#
+ymChatInterface.setStatusBarColour("#FFFFFF")
+```
+
+#### Close button
+
+Close button color can be set by calling `setCloseButtonColour` method
+
+```c#
+ymChatInterface.setCloseButtonColour("#000000")
+```
+
 #### iOS
 
 If you are supporting Speech recognition, add following snippet to Info.plist of the host app
@@ -163,22 +181,6 @@ If you are supporting Speech recognition, add following snippet to Info.plist of
 <string>Your microphone will be used to record your speech when you use the Voice feature.</string>
 <key>NSSpeechRecognitionUsageDescription</key>
 <string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
-```
-
-#### Status bar
-
-Status bar color can be set on `statusBarColor` color variable
-
-```c#
-ymChatInterface.setStatusBarColour = "#FFFFFF"
-```
-
-#### Close button
-
-Close button color can be set on `closeButtonColor`
-
-```c#
-ymChatInterface.setCloseButtonColour = "#000000"
 ```
 
 ### Present chatbot
