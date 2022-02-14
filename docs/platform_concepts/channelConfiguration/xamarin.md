@@ -158,18 +158,18 @@ ymChatInterface.setEnableSpeech(true);
 
 #### Status bar
 
-Status bar color can be set by calling `setStatusBarColour` method
+Status bar color can be set by calling `setStatusBarColor` method
 
 ```c#
-ymChatInterface.setStatusBarColour("#FFFFFF")
+ymChatInterface.setStatusBarColor("#FFFFFF")
 ```
 
 #### Close button
 
-Close button color can be set by calling `setCloseButtonColour` method
+Close button color can be set by calling `setCloseButtonColor` method
 
 ```c#
-ymChatInterface.setCloseButtonColour("#000000")
+ymChatInterface.setCloseButtonColor("#000000")
 ```
 
 #### iOS

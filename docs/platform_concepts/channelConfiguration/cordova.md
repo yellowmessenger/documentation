@@ -112,18 +112,18 @@ cordova.plugins.ymchat.setEnableSpeech(true);
 
 #### Status bar
 
-Status bar color can be set by calling `setStatusBarColour` method
+Status bar color can be set by calling `setStatusBarColor` method
 
 ```javascript
-cordova.plugins.ymchat.setStatusBarColour("#FFFFFF");
+cordova.plugins.ymchat.setStatusBarColor("#FFFFFF");
 ```
 
 #### Close button
 
-Close button color can be set by calling `setCloseButtonColour` method
+Close button color can be set by calling `setCloseButtonColor` method
 
 ```javascript
-cordova.plugins.ymchat.setCloseButtonColour("#000000");
+cordova.plugins.ymchat.setCloseButtonColor("#000000");
 ```
 
 #### iOS

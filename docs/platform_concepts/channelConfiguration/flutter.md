@@ -124,15 +124,15 @@ YmChat.setEnableSpeech(true);
 Status bar color can be set by calling `setStatusBarColor` method
 
 ```dart
-YMChat.setStatusBarColour("#FFFFFF");
+YMChat.setStatusBarColor("#FFFFFF");
 ```
 
 #### Close button
 
-Close button color can be set by calling `setCloseButtonColour` method
+Close button color can be set by calling `setCloseButtonColor` method
 
 ```dart
-YMChat.setCloseButtonColour("#000000");
+YMChat.setCloseButtonColor("#000000");
 ```
 
 #### iOS
