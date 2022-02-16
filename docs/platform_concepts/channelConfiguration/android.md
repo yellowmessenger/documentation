@@ -197,7 +197,7 @@ ymChat.config.closeButtonColor = R.color.white
 or
 
 ```java
-ymChat.config.closeButtonColorFromHex = "#FFFFFF"
+ymChat.config.closeButtonColorHex = "#FFFFFF"
 ```
 
 Note: if both `closeButtonColor` and `closeButtonColorFromHex` is used then `closeButtonColorFromHex` will take priority

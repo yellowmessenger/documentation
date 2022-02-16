@@ -117,6 +117,24 @@ Speech to text can be enabled and disabled by calling setEnableSpeech(). Default
 YmChat.setEnableSpeech(true);
 ```
 
+### Colors
+
+#### Status bar
+
+Status bar color can be set by calling `setStatusBarColor` method
+
+```dart
+YMChat.setStatusBarColor("#FFFFFF");
+```
+
+#### Close button
+
+Close button color can be set by calling `setCloseButtonColor` method
+
+```dart
+YMChat.setCloseButtonColor("#000000");
+```
+
 #### iOS
 
 If you are supporting Speech recognition, add following snippet to Info.plist of the host app
