@@ -133,6 +133,7 @@ module.exports = {
 
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
+        "platform_concepts/studio/event-hub",
         "platform_concepts/studio/bot-variables",
         "platform_concepts/studio/bot-training",
         "platform_concepts/studio/cloud-function",

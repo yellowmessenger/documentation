@@ -54,7 +54,7 @@ As a bot developer, there can be multiple user cases where you need to design so
 <!-- update a screenshot of journey triggers -->
 
 
-### :pushpin: User Intent
+### :pushpin: [Intent](./natural-language-understanding/intents)
 We've already discussed how based on what is user's intent, a journey can be triggered. 
 You can attach one or multiple intents to a single journey
 a) Booking New Ticket
@@ -62,19 +62,14 @@ b) Modifying existing booking
 For example these two intents may be added as start trigger to same journey.
 We will learn how to add and train [Intents](./natural-language-understanding/intents) in latter sections.
 
-### :pushpin: Entities
+### :pushpin: [Entities](./natural-language-understanding/entities)
 Journeys can also be triggered using Entities. We will learn more about [Entities](./natural-language-understanding/entities) later.
 
-### :pushpin: Event Triggers
-Events like bot opened, bot closed, or custom events can be also be added as start triggers for a Journey.
+### :pushpin: [Event](./event-hub)
+Events like bot opened, bot closed, or custom events can be also be added as start triggers for a Journey. Learn more about events in the [Events Hub](./event-hub).
 
 ### :pushpin: Page URL
-You can also decide user loading a certain page URL as a journey trigger. For example, On help page if you want to trigger agent journey directly? 
-
-### :pushpin: Events
-
-Another way to start a journey is through 'Events'. We will discuss events in detail in future sections. 
-
+You can also decide user loading a certain page URL as a journey trigger. For example, on help page if you want to trigger agent journey directly.
 
 ### :pushpin: Trigger Journey Action node
 
