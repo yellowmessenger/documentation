@@ -36,7 +36,7 @@ Upon successful configuration, the platform can send emails from the associated 
 
 → Email and Username will be the sening Email ID. For ex, support@abc.com
 → Example of Server /Host: smtp.gmail.com, smtp.office365.com etc
-→ Password will be the mail password
+→ Password will be the mail password. Some mail servers like Gmail offers [safer alteratives](https://support.google.com/mail/answer/185833?hl=en) to expose the password. That can be genrated and given for SMTP configuration.
 → Add port and security type
 
 The IT team of your business will be able to help you in fetching the exact SMTP details.
