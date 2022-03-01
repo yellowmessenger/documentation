@@ -322,6 +322,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/whatsapp-configuration",
         "platform_concepts/channelConfiguration/web-widget",
         "platform_concepts/channelConfiguration/instagram",
+        "platform_concepts/channelConfiguration/email-outbound",
       ],
     },
     {
