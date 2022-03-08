@@ -168,6 +168,7 @@ module.exports = {
       items: [
         "platform_concepts/inbox/inbox",
         "platform_concepts/inbox/manage-support-agent",
+        "platform_concepts/inbox/tickets-assignment-logic",
         "platform_concepts/inbox/default-agent-statuses",
         "platform_concepts/inbox/inbox-settings/custom-usecases",
 
