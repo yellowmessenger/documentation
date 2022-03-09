@@ -1,6 +1,6 @@
 ---
-title: How to create and launch outbound WhatsApp notification campaigns?
-sidebar_label: Creating WhatsApp Campaigns
+sidebar_label : WhatsApp Campaign
+title : How to create and launch outbound WhatsApp notification campaigns?
 ---
 
 ## What is a WhatsApp notification campaign?

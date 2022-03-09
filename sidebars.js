@@ -167,6 +167,7 @@ module.exports = {
       items: [
         "platform_concepts/inbox/inbox",
         "platform_concepts/inbox/manage-support-agent",
+        "platform_concepts/inbox/tickets-assignment-logic",
         "platform_concepts/inbox/default-agent-statuses",
         "platform_concepts/inbox/inbox-settings/custom-usecases",
 
@@ -243,10 +244,31 @@ module.exports = {
           label: "Outbound Engagement",
           collapsed: true,
           items: [
-            "platform_concepts/engagement/outbound/whatsappCampaign",
-            "platform_concepts/engagement/outbound/templateManager/overview",
-            "platform_concepts/engagement/outbound/notification-engine",
-          ],
+          {
+            type: "category",
+            label: "Templates",
+            collapsed: true,
+            items: [
+            "platform_concepts/engagement/outbound/templates/overview",
+            "platform_concepts/engagement/outbound/templates/sms-template",
+            "platform_concepts/engagement/outbound/templates/email-template",
+            "platform_concepts/engagement/outbound/templates/whatsapp-template",
+          ]
+        },
+        {
+          type: "category",
+          label: "Campaigns",
+          collapsed: true,
+          items: [
+          "platform_concepts/engagement/outbound/outbound-campaigns/email-campaign",
+          "platform_concepts/engagement/outbound/outbound-campaigns/sms-campaign",
+          "platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign",
+          "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",        
+        ],
+        },
+        "platform_concepts/engagement/outbound/filter",
+        "platform_concepts/engagement/outbound/notification-engine",
+        ],
         },
         {
           type: "category",
@@ -293,7 +315,6 @@ module.exports = {
             },
           ],
         },
-        //"platform_concepts/engagement/whatsappCampaign",
       ],
     },
     {
