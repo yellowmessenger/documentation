@@ -78,7 +78,10 @@ Note: Firebase service account key is required to send notifications. You can sh
 Additional information can be passed in the form of key value pair from app to bot using payload.
 
 ```javascript
-cordova.plugins.ymchat.setPayload({ name: "yellow" });
+cordova.plugins.ymchat.setPayload({
+  name: "Integration",
+  type: "cordova",
+});
 ```
 
 Payload can be used to pass information from host app to bot. The payload dictionary should be JSON compatible else an error will be thrown
@@ -88,6 +91,14 @@ For passing data from bot to app refer bot [Bot Events](#bot-events)
 :::note payload security
 Payload is securely passed in HTTPS post request to protect the information passed in it
 :::
+
+#### Trigger journey
+
+A specific journey can be triggered on launch, by passing the slug in the payload.
+
+```js
+cordova.plugins.ymchat.setPayload({ JourneySlug: "my-journey-slug" });
+```
 
 ### On-Prem Deployments
 

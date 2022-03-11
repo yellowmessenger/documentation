@@ -123,7 +123,7 @@ Note: Firebase service account key is required to send notifications. You can sh
 Additional information can be passed in the form of key value pair from app to bot using payload.
 
 ```c#
-var Payload = new Dictionary<string, object> { { "Name ", "Ym" } };
+var Payload = new Dictionary<string, object> { { "name": "Integration", "type": "Xamarin" } };
 ymChatInterface.setPayLoad(Payload);
 ```
 
@@ -134,6 +134,14 @@ For passing data from bot to app refer bot [Bot Events](#bot-events)
 :::note payload security
 Payload is securely passed in HTTPS post request to protect the information passed in it
 :::
+
+#### Trigger journey
+
+A specific journey can be triggered on launch, by passing the slug in the payload.
+
+```dart
+ymChatInterface.setPayload({ "JourneySlug" : "my-journey-slug" });
+```
 
 ### On-Prem Deployments
 

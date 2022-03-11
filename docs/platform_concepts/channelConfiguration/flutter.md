@@ -86,10 +86,10 @@ Note: Firebase service account key is required to send notifications. You can sh
 
 ### Payload
 
-Additional information can be passed in the form of key value pair from app to bot using payload.
+A specific journey can be triggered on launch, by passing the slug in the payload.
 
 ```dart
-YmChat.setPayload({ name: "Integration", type: "Flutter" });
+YmChat.setPayload({ "name": "Integration", "type": "Flutter" });
 ```
 
 Payload can be used to pass information from host app to bot. The payload dictionary should be JSON compatible else an error will be thrown
@@ -99,6 +99,14 @@ For passing data from bot to app refer bot [Bot Events](#bot-events)
 :::note payload security
 Payload is securely passed in HTTPS post request to protect the information passed in it
 :::
+
+#### Trigger journey
+
+A specific journey can be triggered on launch, by passing the slug in the payload.
+
+```dart
+YmChat.setPayload({ "JourneySlug" : "my-journey-slug" });
+```
 
 ### On-Prem Deployments
 
