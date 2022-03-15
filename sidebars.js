@@ -13,14 +13,14 @@ const { listPaths } = require("./src/plugins/components");
 
 module.exports = {
   tutorials: [
-  "tutorials/basics",
-  "tutorials/studio",
-  "tutorials/data",
-  "tutorials/growth",
-  "tutorials/inbox",
-  "tutorials/engage",
-  "tutorials/integrations",
-  "tutorials/webinars",
+    "tutorials/basics",
+    "tutorials/studio",
+    "tutorials/data",
+    "tutorials/growth",
+    "tutorials/inbox",
+    "tutorials/engage",
+    "tutorials/integrations",
+    "tutorials/webinars",
   ],
   cookbooks: [
     "cookbooks/getting_started",
@@ -28,8 +28,7 @@ module.exports = {
     {
       type: "category",
       label: "Basic",
-      items: ["cookbooks/multilingual",
-    ],
+      items: ["cookbooks/multilingual"],
     },
     {
       type: "category",
@@ -39,6 +38,7 @@ module.exports = {
         "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
         "cookbooks/Understanding channels 101/fbm-chatbot-101",
         "cookbooks/Understanding channels 101/gbm-chatbot-101",
+        "cookbooks/Understanding channels 101/email-outbound-101",
       ],
     },
     {
@@ -130,7 +130,6 @@ module.exports = {
           ],
         },
 
-
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
         "platform_concepts/studio/event-hub",
@@ -190,7 +189,7 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/email-transcript",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/chat-autotranslate",
-              ]
+              ],
             },
             {
               type: "category",
@@ -199,7 +198,7 @@ module.exports = {
               items: [
                 "platform_concepts/inbox/inbox-settings/agent-configuration/agent-settings",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/working-hours",
-              ]
+              ],
             },
             "platform_concepts/inbox/inbox-settings/productivity-tools",
             "platform_concepts/inbox/inbox-settings/security",
@@ -229,9 +228,9 @@ module.exports = {
             "platform_concepts/inbox/Chat auto translate",
             "platform_concepts/inbox/google-translate-api-inbox",
             "platform_concepts/inbox/Chat custom fields",
-            "platform_concepts/inbox/Chat working hours"
+            "platform_concepts/inbox/Chat working hours",
           ],
-        }
+        },
       ],
     },
     {
@@ -239,7 +238,7 @@ module.exports = {
       label: "Engagement",
       collapsed: true,
       items: [
-        "platform_concepts/engagement/engage",      
+        "platform_concepts/engagement/engage",
         {
           type: "category",
           label: "Outbound Engagement",
@@ -343,7 +342,8 @@ module.exports = {
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
         "platform_concepts/channelConfiguration/web-widget",
-        "platform_concepts/channelConfiguration/instagram"
+        "platform_concepts/channelConfiguration/instagram",
+        "platform_concepts/channelConfiguration/email-outbound",
       ],
     },
     {
@@ -361,7 +361,7 @@ module.exports = {
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/salesforce-service-cloud",
         "platform_concepts/appConfiguration/hubspot-crm",
-        "platform_concepts/appConfiguration/zoho-crm"
+        "platform_concepts/appConfiguration/zoho-crm",
       ],
     },
     {
@@ -379,7 +379,7 @@ module.exports = {
       label: "Compliances",
       collapsed: true,
       items: ["platform_concepts/compliances/certifications"],
-    }
+    },
   ],
   updates: [
     "updates/overview",
@@ -397,19 +397,13 @@ module.exports = {
       type: "category",
       label: "September 2021",
       collapsed: true,
-      items: [
-        "updates/sep_21/engage",
-        "updates/sep_21/inbox"
-      ],
+      items: ["updates/sep_21/engage", "updates/sep_21/inbox"],
     },
     {
       type: "category",
       label: "October 2021",
       collapsed: true,
-      items: [
-        "updates/oct_21/engage",
-        "updates/oct_21/inbox"
-      ],
+      items: ["updates/oct_21/engage", "updates/oct_21/inbox"],
     },
   ],
   glossary: [
@@ -433,7 +427,6 @@ module.exports = {
         "glossary/total-experience-automation",
         "glossary/virtual-assistant",
         "glossary/voice-only",
-              
       ],
     },
     {
@@ -454,32 +447,29 @@ module.exports = {
         "glossary/human-to-bot-handover",
         "glossary/intent-marketplace",
         "glossary/intermediary-dialogue",
-        "glossary/language-support",   
-        "glossary/language-variant",  
-        "glossary/multimodal-rendering",    
-        "glossary/omnichannel",   
-        "glossary/orchestration",  
-        "glossary/parked-intents",  
-        "glossary/personalization", 
+        "glossary/language-support",
+        "glossary/language-variant",
+        "glossary/multimodal-rendering",
+        "glossary/omnichannel",
+        "glossary/orchestration",
+        "glossary/parked-intents",
+        "glossary/personalization",
         "glossary/pinpoint-improvements",
         "glossary/pretrained-intents",
         "glossary/proactive-conversations",
         "glossary/propose-improvements",
         "glossary/quality-assurance",
-        "glossary/reinforcement-learning",  
-        "glossary/self-service-routing",  
-        "glossary/small-talk-handling",  
-        "glossary/text-to-speech",  
+        "glossary/reinforcement-learning",
+        "glossary/self-service-routing",
+        "glossary/small-talk-handling",
+        "glossary/text-to-speech",
       ],
     },
     {
       type: "category",
       label: "Channel",
       collapsed: true,
-      items: [
-        "glossary/chat",
-        "glossary/rich-communication-service", 
-      ],
+      items: ["glossary/chat", "glossary/rich-communication-service"],
     },
     {
       type: "category",
@@ -523,5 +513,4 @@ module.exports = {
       ],
     },
   ],
-  
 };
