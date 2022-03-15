@@ -106,7 +106,7 @@ Payload is securely passed in HTTPS post request to protect the information pass
 A specific journey can be triggered on launch, by passing the slug in the payload.
 
 ```swift
-config.payload = ["JourneySlug" : "my-journey-slug"]
+config.payload = ["JourneySlug" : "checkout-cart"]
 ```
 
 ### On Premise deployments

@@ -140,7 +140,7 @@ Payload is securely passed in HTTPS post request to protect the information pass
 A specific journey can be triggered on launch, by passing the slug in the payload.
 
 ```dart
-ymChatInterface.setPayload({ "JourneySlug" : "my-journey-slug" });
+ymChatInterface.setPayload({ "JourneySlug" : "checkout-cart" });
 ```
 
 ### On-Prem Deployments

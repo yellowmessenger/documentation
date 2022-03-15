@@ -97,7 +97,7 @@ Payload is securely passed in HTTPS post request to protect the information pass
 A specific journey can be triggered on launch, by passing the slug in the payload.
 
 ```js
-cordova.plugins.ymchat.setPayload({ JourneySlug: "my-journey-slug" });
+cordova.plugins.ymchat.setPayload({ JourneySlug: "checkout-cart" });
 ```
 
 ### On-Prem Deployments

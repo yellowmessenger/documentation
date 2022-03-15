@@ -158,7 +158,7 @@ A specific journey can be triggered on launch, by passing the slug in the payloa
 ```java
 HashMap<String, Object> payloadData = new HashMap<>();
 //Setting Payload Data
-payloadData.put("JourneySlug", "my-journey-slug");
+payloadData.put("JourneySlug", "checkout-cart");
 ymChat.config.payload = payloadData;
 ```
 
