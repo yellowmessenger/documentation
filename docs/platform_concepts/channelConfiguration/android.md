@@ -3,7 +3,8 @@ title: Android Chatbot SDK
 sidebar_label: Android Chatbot SDK
 ---
 
-# Migration Guide 
+# Migration Guide
+
 Version 1.x had an issue where a corrupted ymAuthentication token was passed in some cases from SDK to the server. The conversation history was thus mapped to the corrupted ymAuthenticationToken
 
 Version 2.x has fix for this issue and thus a correct ymAuthenticationToken is always passed.
@@ -11,11 +12,11 @@ However, as the correct ymAuthentication is different from the corrupted token, 
 The user will have a fresh start after updating the app.
 
 Note:
+
 1. ymAuthentication was corrupted only when it contained `=` character in 1.x versions
 2. This issue was happening only on Android platform.
 
 For more info feel free to email us at mobile@yellow.ai
-
 
 ## Installation
 
@@ -149,6 +150,17 @@ For passing data from bot to app refer bot [Bot Events](#bot-events)
 :::note payload security
 Payload is securely passed in HTTPS post request to protect the information passed in it
 :::
+
+#### Trigger journey
+
+A specific journey can be triggered on launch, by passing the slug in the payload.
+
+```java
+HashMap<String, Object> payloadData = new HashMap<>();
+//Setting Payload Data
+payloadData.put("JourneySlug", "checkout-cart");
+ymChat.config.payload = payloadData;
+```
 
 ### On Premise deployments
 

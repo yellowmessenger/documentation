@@ -3,6 +3,21 @@ title: Chatbot SDK for xamarin
 sidebar_label: xamarin Chatbot SDK
 ---
 
+# Migration Guide for Android
+
+Version 1.x had an issue where a corrupted ymAuthentication token was passed in some cases from SDK to the server. The conversation history was thus mapped to the corrupted ymAuthenticationToken
+
+Version 2.x has fix for this issue and thus a correct ymAuthenticationToken is always passed.
+However, as the correct ymAuthentication is different from the corrupted token, our server treats this user as a new user which leads to a complete loss of history of user conversations.
+The user will have a fresh start after updating the app.
+
+Note:
+
+1. ymAuthentication was corrupted only when it contained `=` character in 1.x versions
+2. This issue was happening only on Android platform.
+
+For more info feel free to email us at mobile@yellow.ai
+
 ## Installation
 
 ### Xamarin
@@ -108,7 +123,7 @@ Note: Firebase service account key is required to send notifications. You can sh
 Additional information can be passed in the form of key value pair from app to bot using payload.
 
 ```c#
-var Payload = new Dictionary<string, object> { { "Name ", "Ym" } };
+var Payload = new Dictionary<string, object> { { "name": "Integration", "type": "Xamarin" } };
 ymChatInterface.setPayLoad(Payload);
 ```
 
@@ -119,6 +134,14 @@ For passing data from bot to app refer bot [Bot Events](#bot-events)
 :::note payload security
 Payload is securely passed in HTTPS post request to protect the information passed in it
 :::
+
+#### Trigger journey
+
+A specific journey can be triggered on launch, by passing the slug in the payload.
+
+```dart
+ymChatInterface.setPayload({ "JourneySlug" : "checkout-cart" });
+```
 
 ### On-Prem Deployments
 
