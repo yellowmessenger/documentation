@@ -64,6 +64,7 @@ module.exports = {
         "cookbooks/whatsapp cookbook/whatsapp-guidelines",
         "cookbooks/whatsapp cookbook/fb-business-verification",
         "cookbooks/whatsapp cookbook/wa-migration",
+        "cookbooks/whatsapp cookbook/wa-capturing-qr-event",
       ],
     },
   ],
