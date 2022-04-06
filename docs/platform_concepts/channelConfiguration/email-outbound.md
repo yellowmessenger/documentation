@@ -3,7 +3,7 @@ title: Email channel configuration
 sidebar_label: Email
 ---
 
-xThere are two types of Email sender types for pushing outbound email notifications.
+There are two types of Email sender types for pushing outbound email notifications.
 
 1. Via the Local Email SMTP
 2. Via HTTP-based Email API
