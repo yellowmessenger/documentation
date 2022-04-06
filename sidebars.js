@@ -39,6 +39,7 @@ module.exports = {
         "cookbooks/Understanding channels 101/fbm-chatbot-101",
         "cookbooks/Understanding channels 101/gbm-chatbot-101",
         "cookbooks/Understanding channels 101/email-outbound-101",
+        "cookbooks/Understanding channels 101/sms-india-101",
       ],
     },
     {
@@ -245,31 +246,31 @@ module.exports = {
           label: "Outbound Engagement",
           collapsed: true,
           items: [
-          {
-            type: "category",
-            label: "Templates",
-            collapsed: true,
-            items: [
-            "platform_concepts/engagement/outbound/templates/overview",
-            "platform_concepts/engagement/outbound/templates/sms-template",
-            "platform_concepts/engagement/outbound/templates/email-template",
-            "platform_concepts/engagement/outbound/templates/whatsapp-template",
-          ]
-        },
-        {
-          type: "category",
-          label: "Campaigns",
-          collapsed: true,
-          items: [
-          "platform_concepts/engagement/outbound/outbound-campaigns/email-campaign",
-          "platform_concepts/engagement/outbound/outbound-campaigns/sms-campaign",
-          "platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign",
-          "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",        
-        ],
-        },
-        "platform_concepts/engagement/outbound/filter",
-        "platform_concepts/engagement/outbound/notification-engine",
-        ],
+            {
+              type: "category",
+              label: "Templates",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/outbound/templates/overview",
+                "platform_concepts/engagement/outbound/templates/sms-template",
+                "platform_concepts/engagement/outbound/templates/email-template",
+                "platform_concepts/engagement/outbound/templates/whatsapp-template",
+              ],
+            },
+            {
+              type: "category",
+              label: "Campaigns",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/outbound/outbound-campaigns/email-campaign",
+                "platform_concepts/engagement/outbound/outbound-campaigns/sms-campaign",
+                "platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign",
+                "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
+              ],
+            },
+            "platform_concepts/engagement/outbound/filter",
+            "platform_concepts/engagement/outbound/notification-engine",
+          ],
         },
         {
           type: "category",
@@ -345,6 +346,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/web-widget",
         "platform_concepts/channelConfiguration/instagram",
         "platform_concepts/channelConfiguration/email-outbound",
+        "platform_concepts/channelConfiguration/sms-outbound-india",
       ],
     },
     {
