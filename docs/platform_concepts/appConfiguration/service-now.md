@@ -36,7 +36,7 @@ Before going to oauth you have to create an application in your servicenow insta
 
 Inside your project, navigate to the Integrations tab and from the left sidebar select **ITSM**. You will find serviceNow.
 
-<img src="https://cdn.yellowmessenger.com/RXvuoVKWrsYq1649092705906.png" alt="drawing" width="60%"/>
+<img src="https://cdn.yellowmessenger.com/RXvuoVKWrsYq1649092705906.png" alt="drawing" width="80%"/>
 
 ### Connect your servicenow account
 
