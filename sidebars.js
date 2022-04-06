@@ -354,6 +354,7 @@ module.exports = {
       items: [
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/freshdesk",
+        "platform_concepts/appConfiguration/microsoft-graph",
         "platform_concepts/appConfiguration/power-bi",
         "platform_concepts/appConfiguration/razorpay",
         "platform_concepts/appConfiguration/successfactors",
