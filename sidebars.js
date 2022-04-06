@@ -363,6 +363,10 @@ module.exports = {
         "platform_concepts/appConfiguration/salesforce-service-cloud",
         "platform_concepts/appConfiguration/hubspot-crm",
         "platform_concepts/appConfiguration/zoho-crm",
+        "platform_concepts/appConfiguration/google-calendar",
+        "platform_concepts/appConfiguration/service-now",
+        "platform_concepts/appConfiguration/intercom-livechat",
+        "platform_concepts/appConfiguration/microsoft-dynamics",
       ],
     },
     {
