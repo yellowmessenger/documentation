@@ -18,7 +18,7 @@ Navigate to your project and go to 'Engage' module.
 
 ![Screenshot 2022-03-01 at 9.59.04 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/8177068B-D1F7-4ACE-A528-7E3A8EDB1488/164FC8D2-8B78-4111-AB79-D5DF40C8C61D_2/Screenshot%202022-03-01%20at%209.59.04%20PM.png)
 
-Step 2:
+**Step 2:**
 
 Click on **‘Outbound’** from the left panel and select **Create campaign**
 
@@ -38,7 +38,8 @@ Click on the radio button against the template that you want to use for the camp
 
 Select the **recipient type** ( in this case email / emailID), **Sender Email ID** (from the list of configured sender Email IDs, **map the variales** with the values (the values will be that of **‘Users’** panel fields).
 
-![Screenshot 2022-03-02 at 3.45.19 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/CE7A7AE5-F9E4-479C-84B0-51B499470E5F/D4A3E203-AFED-4C98-B421-13AA5D103342_2/Screenshot%202022-03-02%20at%203.45.19%20PM.png)
+<img src="https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/CE7A7AE5-F9E4-479C-84B0-51B499470E5F/D4A3E203-AFED-4C98-B421-13AA5D103342_2/Screenshot%202022-03-02%20at%203.45.19%20PM.png" alt="drawing" width="60%"/>
+
 
 Navigate to the next step.
 
