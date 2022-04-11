@@ -126,7 +126,11 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 429              | Rate limited. Occurs when there are too many requests. Please retry later.                                               |
 | 500              | Internal server error. TraceId will be sent back for tracking.                                                           |
 
-### Postback webhook
+### Postback Webhook / URL
+Enable Postback URL at Engage > Preference > Enable Postback URL. You can also refer to the screenshot below:
+
+![](https://i.imgur.com/CVmHwol.png)
+
 As soon as we receive callback from the downstream services, we will post that data to the configured webhook if available.
 
 ```
@@ -153,8 +157,12 @@ Webhooks will be called with the above request body.
     - acknowledged/read
     - failed
 
-### Support
-While raising any support issues, please add the msgId or the traceId in the support request.
+**Notes:**
+
+* These are our outbound IPs. These need to be whitelisted for the reports callback to flow into your system.
+    * 13.71.52.164
+    * 13.71.49.46
+* The messages will be acknowledged first and delivered at the scheduled time. Can be tracked by the msgId we send back.
 
 ## Examples
 ### Normal Text  Notification
@@ -244,9 +252,5 @@ curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/
 #### Sample
 ![](https://i.imgur.com/YLbGCo7.png)
 
-**Notes:**
-
-* These are our outbound IPs. These need to be whitelisted for the reports callback to flow into your system.
-    * 13.71.52.164
-    * 13.71.49.46
-* The messages will be acknowledged first and delivered at the scheduled time. Can be tracked by the msgId we send back.
+## Support
+While raising any support issues, please add the msgId or the traceId in the support request.
