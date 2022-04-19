@@ -3,7 +3,11 @@ title: WhatsApp Channel Setup
 sidebar_label : WhatsApp Channel Setup
 ---
 
-**Keywords** :  whatsapp bot, whatsapp, whatsapp chatbot
+In this doc, following topics will be covered:
+- Set up Whatsapp channel account
+- Set up Facebook Business account
+- Steps to create FB Business account & activate it
+- Configuring Whatsapp bot
 
 As of March 2020, WhatsApp had **two billion** monthly active users, up from over 1 billion MAU in February 2016. And as we are getting more and more users on this new and chatty channel, businesses are also driving themselves to WhatsApp. 
 
