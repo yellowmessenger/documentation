@@ -9,9 +9,8 @@ As of March 2020, WhatsApp had **two billion** monthly active users, up from ove
 
 We at Yellow Messenger, have partnered with WhatsApp to create a WhatsApp account and setup your own WhatsApp bot, this document will guide you through doing the same. 
 
-References to a few WhatsApp bots - 
+References to WhatsApp bot - 
 - Manyavar WA Bot- https://wa.me/message/F44APOWGJ5CFH1
-- BALIC WhatsApp - https://www.youtube.com/watch?v=3gVsSitcpYA
 
 
 ### **Requirements/Prerequisites for creating a WhatsApp Bot on the yellow.ai platform:**

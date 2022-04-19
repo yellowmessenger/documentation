@@ -27,8 +27,8 @@ Fill the details in that page as per the following table and click "Create".
 Client Id - Click on Generate
 Client Secret - Click on Generate 
 Title - Any value
-App Domain - localhost
-Redirect URI - [](https://localhost)
+App Domain - `localhost`
+Redirect URI - `[](https://localhost)`
 Note : Copy the generated Client Id and Client Secret into some editor as these will be required later.
 ![](https://cdn.yellowmessenger.com/h7lhE1xoZov31622456892916.png)
 In next screen, Click on OK
