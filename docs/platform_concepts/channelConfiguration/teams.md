@@ -105,7 +105,7 @@ Add App Studio from App Store which allows you to create bot manifest, Command S
 
 ## Authentication : Active Directory & Graph APIs
 
-App Registration on Azure AD: Click [here](https://yellowmessenger.atlassian.net/wiki/spaces/docs/pages/432799757/Active+Directory+LDAP).
+
 Connecting YM bot to MS Teams : Please follow Section 'Getting Started' from above for Team Integration.
 
 How to set dynamic scopes in Login url:
