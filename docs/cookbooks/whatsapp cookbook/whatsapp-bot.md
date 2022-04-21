@@ -22,9 +22,6 @@ References to WhatsApp bot -
 4. Display Name(Will be visible to users on their WhatsApp)
 
 
-
-
-
 ## Three steps in setting up a WhatsApp chatbot:
 
 1. Create a **WhatsApp Business Account** on the Yellow Messenger platform
@@ -41,7 +38,7 @@ References to WhatsApp bot -
 
 ![](https://cdn.yellowmessenger.com/98Uohu6oWwTw1619536105368.png)
 
-If you haven't created your chatbot yet, [create one](https://docs.yellowmessenger.com/docs/howtos/basics/create-a-bot) right away. Happy creating!
+If you haven't created your chatbot yet, [create one](../getting_started) right away. Happy creating!
 
 3. To start with WhatsApp account creation, Go to **Channels > Communication > Select WhatsApp**.
 
