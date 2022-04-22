@@ -3,19 +3,14 @@ title: WhatsApp Channel Setup
 sidebar_label : WhatsApp Channel Setup
 ---
 
-In this doc, following topics will be covered:
-- Set up Whatsapp channel account
-- Set up Facebook Business account
-- Steps to create FB Business account & activate it
-- Configuring Whatsapp bot
+**Keywords** :  whatsapp bot, whatsapp, whatsapp chatbot
 
 As of March 2020, WhatsApp had **two billion** monthly active users, up from over 1 billion MAU in February 2016. And as we are getting more and more users on this new and chatty channel, businesses are also driving themselves to WhatsApp. 
 
 We at Yellow Messenger, have partnered with WhatsApp to create a WhatsApp account and setup your own WhatsApp bot, this document will guide you through doing the same. 
 
-References to a few WhatsApp bots - 
+References to WhatsApp bot - 
 - Manyavar WA Bot- https://wa.me/message/F44APOWGJ5CFH1
-- BALIC WhatsApp - https://www.youtube.com/watch?v=3gVsSitcpYA
 
 
 ### **Requirements/Prerequisites for creating a WhatsApp Bot on the yellow.ai platform:**
@@ -25,9 +20,6 @@ References to a few WhatsApp bots -
 2. Verified Business Manager Account
 3. Business description, address, email, etc
 4. Display Name(Will be visible to users on their WhatsApp)
-
-
-
 
 
 ## Three steps in setting up a WhatsApp chatbot:
@@ -46,7 +38,7 @@ References to a few WhatsApp bots -
 
 ![](https://cdn.yellowmessenger.com/98Uohu6oWwTw1619536105368.png)
 
-If you haven't created your chatbot yet, [create one](https://docs.yellowmessenger.com/docs/howtos/basics/create-a-bot) right away. Happy creating!
+If you haven't created your chatbot yet, [create one](../getting_started) right away. Happy creating!
 
 3. To start with WhatsApp account creation, Go to **Channels > Communication > Select WhatsApp**.
 

@@ -81,7 +81,7 @@ Different prompts return a response in different formats and datatype. You can r
 | [Location](../studio/steps/prompts-and-messages#location-prompt)           | object            |
 | [Carousel](../studio/steps/prompts-and-messages#carousel)                  | string            |
 | [Quick Replies](../studio/steps/prompts-and-messages#quick-replies)         | string            |
-| [Date](..studio/steps/prompts-and-messages#date-prompt)                    | object            |
+| [Date](../studio/steps/prompts-and-messages#date-prompt)                    | object            |
 | [Question](..studio/steps/prompts-and-messages#general---question)         | string            |
 | [Feedback](..studio/steps/prompts-and-messages#feedback-prompt)            | object            |
 | [Whatsapp List](../studio/steps/prompts-and-messages#whatsapp-list-prompt) | string            |
@@ -102,8 +102,8 @@ Action nodes provides response in various datatype. You can refer to the table b
 | [Modifier](../studio/steps/action-nodes-and-logic#modifier)                 | object, array, number, string |
 | [Document Search](../studio/steps/action-nodes-and-logic#document-search)   | object, array, number, string |
 | [Set Language](../studio/steps/action-nodes-and-logic#set-language)         | object, array, number, string |
-| [Send OTP](..studio/steps/action-nodes-and-logic#send-otp-and-verify-otp)   | object, array, number, string |
-| [Verify OTP](..studio/steps/action-nodes-and-logic#send-otp-and-verify-otp) | object, array, number, string |
+| [Send OTP](../studio/steps/action-nodes-and-logic#send-otp-and-verify-otp)   | object, array, number, string |
+| [Verify OTP](../studio/steps/action-nodes-and-logic#send-otp-and-verify-otp) | object, array, number, string |
 | Payment                                                                     | object, array, number, string |
 | [Generate PDF](../studio/steps/action-nodes-and-logic#generate-pdf)         | object, array, number, string |
 
