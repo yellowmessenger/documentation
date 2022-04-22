@@ -79,7 +79,6 @@ module.exports = {
       items: [
         "platform_concepts/studio/overview",
         "platform_concepts/studio/journeys",
-        "platform_concepts/studio/testdoc",
         {
           type: "category",
           label: "Nodes",
