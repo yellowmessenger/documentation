@@ -370,6 +370,10 @@ module.exports = {
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
+        "platform_concepts/appConfiguration/camspay",
+        "platform_concepts/appConfiguration/sftp",
+        "platform_concepts/appConfiguration/stripe",
+        "platform_concepts/appConfiguration/payuBiz"
       ],
     },
     {
