@@ -4,25 +4,23 @@ sidebar_label : SFTP
 ---
 
 
-# Scope of Integration
+## Scope of Integration
 
 Yellow.ai Integration with SFTP allows you to seamlessly connect your remote server with the yellow.ai platform. Using this integration, one can get remote files, make a directory, delete directory, upload files to remote server, check if file exists or not.
 
 
-# Use-cases 
+## Use-cases 
 
 Following are the use-cases which are currently accommodated in the Integration:
 
 
 
 1. **SFTP File Transfer**:- 
-
-      From this method you can easily upload files to a remote server.
-
-
-_             Node Input Params:-_                        
+From this method you can easily upload files to a remote server.
 
 
+- Node Input Params:
+```html
 <table>
   <tr>
    <td>Field Name
@@ -65,15 +63,16 @@ _             Node Input Params:-_
    </td>
   </tr>
 </table>
+```
 
 
 
+2. **SFTP Get File**:
+Retrieve a file from a remote SFTP server
 
-2. **SFTP Get File**:- \
-Retrieve a file from a remote SFTP server \
- \
-_ Node Input Params:-_                        
+- Node Input Params:                 
 
+```html
 <table>
   <tr>
    <td>
@@ -101,17 +100,17 @@ Field Name
    </td>
   </tr>
 </table>
+```
 
 
 
+3. **SFTP Make Directory**:
 
-3. **SFTP Make Directory**:- \
- \
 Create a new directory. If the recursive flag is set to true, the method will create any directories in the path which do not already exist. Recursive flag defaults to false.
 
-     _ Node Input Params:-_                        
+- Node Input Params:                   
 
-
+```html
 <table>
   <tr>
    <td>
@@ -139,16 +138,17 @@ Field Name
    </td>
   </tr>
 </table>
+```
 
 
 
+4. **SFTP Delete Directory**:
 
-4. **SFTP Delete Directory**:- \
- \
-Remove a directory. If removing a directory and recursive flag is set to `true`, the specified directory and all sub-directories and files will be deleted. If set to false and the directory has sub-directories or files, the action will fail. \
- \
-_ Node Input Params:-_                        
+Remove a directory. If removing a directory and recursive flag is set to `true`, the specified directory and all sub-directories and files will be deleted. If set to false and the directory has sub-directories or files, the action will fail.
 
+- Node Input Params:
+
+```html
 <table>
   <tr>
    <td>
@@ -176,14 +176,17 @@ Field Name
    </td>
   </tr>
 </table>
+```
 
 
 
+5. **SFTP Delete Files**:
 
-5. **SFTP Delete Files**:- \
 Delete a file on the remote server. \
- _ Node Input Params:-_                        
 
+- Node Input Params:                       
+
+```html
 <table>
   <tr>
    <td>
@@ -211,15 +214,16 @@ Field Name
    </td>
   </tr>
 </table>
+```
 
 
 
-
-6. **SFTP Data Append**:- \
+6. **SFTP Data Append**:
 Append the `input` data to an existing remote file. There is no integrity checking performed apart from normal writeStream checks. This function simply opens a writeStream on the remote file in append mode and writes the data passed in to the file. \
- \
-_ Node Input Params:-_                        
 
+- Node Input Params:
+
+```html
 <table>
   <tr>
    <td>
@@ -247,15 +251,15 @@ Field Name
    </td>
   </tr>
 </table>
+```
 
 
 
+7. **SFTP List**:
+Retrieves a directory listing
 
-7. **SFTP List**:- \
-Retrieves a directory listing \
- \
- _ Node Input Params:-_                        
-
+- Node Input Params:
+```html
 <table>
   <tr>
    <td>
@@ -283,16 +287,15 @@ Field Name
    </td>
   </tr>
 </table>
+```
 
 
 
-
-8. **SFTP Exists**:- 
+8. **SFTP Exists**:
 
 Tests to see if a remote file or directory exists. Returns type of remote object if it exists or false if it does not
 
-
-9. **SFTP Chmod:-** \
+9. **SFTP Chmod**:
 Change the mode (read, write or execute permissions) of a remote file or directory.
 
 * remotePath: string. Path to the remote file or directory
@@ -302,19 +305,15 @@ Change the mode (read, write or execute permissions) of a remote file or directo
 
 # Configuration
 
-Configuring the integration with SFTP is straightforward. Follow the steps defined below to start integrating:     \
- \
+Configuring the integration with SFTP is straightforward. Follow the steps defined below to start integrating:
+
 **To integrate SFTP with your bot on the platform:**
-
-
 
 1. Go to Integration section
 2. In Integration click on the connect for the SFTP.
 3. Enter Host, Port, username, Password.
 
-
-
-![alt_text](https://i.imgur.com/xepX9Ka.png "image_tooltip")
+![](https://i.imgur.com/xepX9Ka.png)
 
 4. Click on Save
 5. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
@@ -327,14 +326,12 @@ Configuring the integration with SFTP is straightforward. Follow the steps defin
 Following the above steps will connect your SFTP remote server  with the yellow.ai platform.
 
 
-# **References:-**
-
-
+# **References:**
 
 1. [https://www.npmjs.com/package/ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client)
 2. [https://www.filestash.app/sftp-browser.html](https://www.filestash.app/sftp-browser.html)
 
 
-# Sample Experience
+## Sample Experience
 
-Below is a video that depicts how this integration works
+Below is a video that depicts how this integration works.
