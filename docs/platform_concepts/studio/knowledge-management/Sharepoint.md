@@ -19,18 +19,18 @@ To register an app in SharePoint, navigate to the "New App Registration" page by
 'addanapp.aspx' with 'appregnew.aspx'  
 ![](https://cdn.yellowmessenger.com/wCJrbVzhXlJA1622456478470.png)
 
-```js
-The URL of that page will be similar to: [](https://{{tenantname}}.sharepoint.com/_layouts/15/appregnew.aspx) 
-```
+The URL of that page will be similar to: **[https://{{tenantname}}.sharepoint.com/_layouts/15/appregnew.aspx](https://{{tenantname}}.sharepoint.com/_layouts/15/appregnew.aspx)**
 
 Fill the details in that page as per the following table and click "Create".
-Client Id - Click on Generate
-Client Secret - Click on Generate 
-Title - Any value
-App Domain - localhost
-Redirect URI - [](https://localhost)
+- Client Id - Click on Generate
+- Client Secret - Click on Generate 
+- Title - Any value
+- App Domain - `localhost`
+- Redirect URI - `https://localhost`
+
 Note : Copy the generated Client Id and Client Secret into some editor as these will be required later.
 ![](https://cdn.yellowmessenger.com/h7lhE1xoZov31622456892916.png)
+
 In next screen, Click on OK
 ![](https://cdn.yellowmessenger.com/NUFkf2K2M8QU1622456936834.png)
 

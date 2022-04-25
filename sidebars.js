@@ -373,7 +373,8 @@ module.exports = {
         "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/sftp",
         "platform_concepts/appConfiguration/stripe",
-        "platform_concepts/appConfiguration/payuBiz"
+        "platform_concepts/appConfiguration/payuBiz",
+        "platform_concepts/appConfiguration/zendesk-sunshine",
       ],
     },
     {

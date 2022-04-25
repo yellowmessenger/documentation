@@ -15,7 +15,7 @@ You don't have to be a coder to build a bot! At least not on our platform. Our e
 
 :::
 
-> :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of [setting up your bot project](http://localhost:3000/docs/cookbooks/getting_started). 
+> :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of [setting up your bot project](../../cookbooks/getting_started). 
 
 ---
 

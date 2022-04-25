@@ -17,9 +17,11 @@ You will have various Web Behaviour Triggers to choose from:
 - **URL** – When the visitor is on the URL defined, display the campaign. There are a few ways to target by URL, some of which are “is/is not”, and "includes / does not include."
    - **Wildcard (*) →** ***(an asterisk)** is a wildcard symbol that stands for any amount of letters or characters in your URL.
 
-      • URLs like [**yellow.ai/search/**](http://yellow.ai/search/)* (will work for anything after [**yellow.ai/search/**](http://yellow.ai/search/)**)**
+Test [http://yellow.ai/search/](http://yellow.ai/search/)
 
-      • URLs like [**yellow.ai/*/blog**](http://yellow.ai/*/blog) will also work
+      • URLs like [**http://yellow.ai/search/**](http://yellow.ai/search/) (will work for anything after 
+
+      • URLs like [**http://yellow.ai/*/blog**](http://yellow.ai/*/blog) will also work
 
 ![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/068BB776-1320-44EE-951A-D501BCFBC578/528AEFE5-87E8-49DD-84EE-8F8D545741CC_2/Image.png)
 

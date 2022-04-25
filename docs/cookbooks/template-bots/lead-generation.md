@@ -137,7 +137,9 @@ First go through the [**data module**](https://docs.yellow.ai/docs/platform_conc
 
 Then use a [**database action node**](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic#database) to insert the user information in the database table that you have create in the data module.
 
-![](https://i.imgur.com/ReJ0gxz.png) ![](https://i.imgur.com/ftgzRjM.png)
+![](https://i.imgur.com/ReJ0gxz.png)
+
+![](https://i.imgur.com/ftgzRjM.png)
 
 4. Try your bot
 

@@ -43,8 +43,7 @@ Slack provides threaded messaging so It is important to understand how yellow me
 
 **Step 3:** After creating the app, goto the event subscription on the left panel. Enable the event subscription and add request URL to [*https://app.yellowmessenger.com/integrations/slack/receive/*](https://app.yellowmessenger.com/integrations/slack/receive/)*botID*
 
-![](https://lh5.googleusercontent.com/EE7lHurT8gLSuBoIDm7KyQCa-jsfPSgk5t2P3xBP2qyIvCJAVEO1mkTcWEn071rdLyWyEpcQPNGVExe7J-iijKoDcQjE678ImmLrpQ-WgZgQzEYqrd4ST-Fs-zuJjg08HDdk1OYu)
-
+![](https://i.imgur.com/CodBUrX.png)
 
 **Step 4:** Now scroll down on the event subscription section and expand **Subscribe to bot events** and add the events scope according to your bot requirement.
 
@@ -89,15 +88,12 @@ and **Bot Token Scope** according to your requirement, [Reference](https://api.s
 - [**users:read**](https://api.slack.com/scopes/users:read)
     View people in a workspace
 
-
-
-![](https://lh3.googleusercontent.com/TWad9j0sixFAxPPQfXavsuRp8MFSkLMZyt_tZpXw5IFm42aTzcmMYUtE-YbMHGp9i-ZKWeWrFUsMUu5Bk4Vwsz8C_70pWxwOM5vNiR152XRDFTS32reRT-G7KMgAPrL22BKqT23j)
-
+![](https://i.imgur.com/58VZkQR.png)
 
 **Step 6:** Now goto Interactivity & Shortcuts, enable it and add request URL to:
 [https://app.yellowmessenger.com/integrations/slack/interaction/](https://app.yellowmessenger.com/integrations/slack/interaction/)*botID*
 
-![](https://lh5.googleusercontent.com/lTcMQByoJJNlQ4F-dpQk751BoqZinWddKIJ2gvRV3mOdzOxlRX1RojEqDQ4PeAdwdCDk4X0XnJ9mnDnil0vf_1-D6rsXbtHEvNL68yWnX6Ut7_SlZGRxGcqiCvWIxdmWHOHrsXAu)
+![](https://i.imgur.com/5kUTZg4.png)
 
 ## Configuration of single / multi-workspace
 
@@ -110,8 +106,7 @@ Slack app uses bot access token (xoxb) to communicate with workspace users, **Bo
 **Steps to configure single workspace:**
 **Step 1:** Goto OAuth & Permissions, Click on the Install App to Workspace
 
-![](https://lh4.googleusercontent.com/S5shb-6GRvLCvG3opxTTG63ACIz376s-ZpqJEX9-wzkjlrs0uD7T1_O8nplucvCLCZIwYEG0tw_7PdMF6gWLfBm5FN_zY6SAT4JdnOV9cAYdBPiHzPxHPY-wE92ssXII493mh2h7)
-
+![](https://i.imgur.com/FSROL5t.png)
 
 **Step 2:** Select a channel, incase you have enabled external incoming webhooks (https://api.slack.com/apps/[APPID]/incoming-webhooks)
 
@@ -120,9 +115,7 @@ Slack app uses bot access token (xoxb) to communicate with workspace users, **Bo
 
 **Step 3:** After installing the app to workspace, go back to the **OAuth & Permission** copy the Bot Access token (xoxb- ) and paste at the Yellow messenger > Channels > Slack > Add the Slack access token > Save.
 
-![](https://lh5.googleusercontent.com/Ibx2cKKWZaAxk-HMR3ZUsL2fNUhwmqeXlm32m1MrHPbWkqFuPq8MU4GH1AE_Rspw3XxzlQ1W4i9ZsmHUXpN6JX1EWTSFpbnmn9v8dwUqBv_3pKVMDDOgZbJM5iKcTyF9TMhorXI4)
-
-
+![](https://i.imgur.com/H5bSjrK.png)
 
 ### Multiple Workspace:
 
@@ -161,13 +154,9 @@ Use the **+** button near **Apps** and **Select the app** > Add > **Messages**
 Goto Channel details > More > View App in channels
 Now you can add / remove the app to the channel.
 
-![](https://lh3.googleusercontent.com/Oy--Eew-8ydNDFHA8-FfoPzChCSWu9PghnzFw-160OWHj7r4fjmf72tc_boLY-8lC16cM0U5-xn-OFDCpNWrcujHdYxwLGtmVaGATx4qEVeCYZwibVGSQVU1kNf9pUEWBD8PTjkD)
+<img src="https://i.imgur.com/T6eaztI.png" alt="drawing" width="60%"/>
 
-
-
-
-![](https://lh5.googleusercontent.com/dCtPbKRTu3pXmGbTmz7uk77lefcTz7cNRikc1jk-Y7b-sEInGXZUBfP-hPmaidO_33af_Ko0YUjAeNeDVUhBldykkZhYbz_7G6HylsPXReNhhvg-J6FPVMsMsB1oBXM5UEo1EkFF)
-
+<img src="https://i.imgur.com/1ZrtMo6.png" alt="drawing" width="80%"/>
 
 **Message event format at YM**
 Test your bot using **app.sendTextMessage("Hi")**
@@ -224,7 +213,7 @@ Reference: [https://api.slack.com/methods](https://api.slack.com/methods)
             ]
     }
 ```
-**Bot accessToken**:
+**Bot access token**:
 
 1. For single workspace configuration:
    > let slackTAuth = app.oauth.mapping.slackAuthToken

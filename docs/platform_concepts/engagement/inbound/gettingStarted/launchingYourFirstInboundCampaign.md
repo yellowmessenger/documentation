@@ -5,7 +5,8 @@ sidebar_label: Launching Your First Inbound Campaign
 
 ## In this guide
 
-1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the [**Types of Inbound Widgets**](../../inboundWidgets/typesOfWidgets)
+1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the [**Types of Inbound Widgets**](../../inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations)
+
 2. As you use the campaign builder, you’ll notice a **question mark icon** next to many features. Hovering above that question mark will show you more information around that feature.
 3. To be able to create and test the campaign, you’ll need the following
    - Create a Journey **“Homepage Help”** with text → ”Hey, how can I help you”
@@ -27,7 +28,8 @@ To create a new Campaign, follow the steps below:
 
 ## Widget Type
 
-5. On the next screen, select **Slide in** widget. You can check out the [**Types of Inbound Widgets**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets)
+5. On the next screen, select **Slide in** widget. You can check out the [**Types of Inbound Widgets**](../../inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations#widget-customisation--button-types)
+
 6. At any point in the campaign builder, you can choose to click on any of the following buttons:
    - **Previous** → Takes you back to the previous step in the campaign builder
    - **Cancel** → Exits the campaign builder without saving the campaign
