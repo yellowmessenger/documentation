@@ -1,6 +1,7 @@
-
-# **Yellow.ai**
-# Integration with **Stripe-Payment-Gateway**
+---
+title : Stripe Payment
+sidebar_label : Stripe Payment
+---
 
 
 # Scope of Integration

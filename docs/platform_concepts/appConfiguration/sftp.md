@@ -1,7 +1,7 @@
-
-# Yellow.ai
-
-# Integration with SFTP
+---
+title : SFTP
+sidebar_label : SFTP
+---
 
 
 # Scope of Integration

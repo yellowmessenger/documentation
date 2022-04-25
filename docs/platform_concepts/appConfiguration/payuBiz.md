@@ -1,7 +1,7 @@
-# **Yellow.ai**
-
-
-# Integration with  **PayU-Biz-Payment-Gateway**
+---
+title : Payu Bussiness
+sidebar_label : payu Bussiness
+---
 
 
 # Scope of Integration
