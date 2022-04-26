@@ -358,6 +358,7 @@ module.exports = {
         "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/google-calendar",
+        "platform_concepts/appConfiguration/google-sheets",
         "platform_concepts/appConfiguration/hubspot-crm",
         "platform_concepts/appConfiguration/intercom-livechat",
         "platform_concepts/appConfiguration/microsoft-dynamics",
