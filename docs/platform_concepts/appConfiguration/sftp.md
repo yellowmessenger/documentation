@@ -18,9 +18,10 @@ Following are the use-cases which are currently accommodated in the Integration:
 
 _ Node Input Params:-_                        
 
-||||
-|--- |--- |--- |
+
+
 |Field Name|Sample Input|Remarks|
+|--- |--- |--- |
 |fileCdnUrl*|https://cdn.pixabay.com/photo/2017/01/03/02/07/vine-1948358__340.png|Data source for data to copy to the remote server.|
 |remoteFilePath*|/uploads/directoryPath/demo.png|Path to the remote file to be created on the server with file name.|
 |appendTimeInfilePath*|True or false|If true then It will append timestamp in file name otherwise same name from remote file path.|
@@ -33,9 +34,9 @@ Retrieve a file from a remote SFTP server
 
 _ Node Input Params:-_                        
 
-||||
-|--- |--- |--- |
+
 |Field Name|Sample Input|Remarks|
+|--- |--- |--- |
 |remoteFilePath*|/Directory/filename.ext|Path to the remote file to download|
 |secureupload|true/false|If true then It will give minio directory path otherwise it will give CDN url of files|
 
@@ -47,9 +48,9 @@ Create a new directory. If the recursive flag is set to true, the method will cr
 _ Node Input Params:-_                        
 
 
-||||
-|--- |--- |--- |
+
 |Field Name|Sample Input|Remarks|
+|--- |--- |--- |
 |remoteDirPath*|/DirectoryPath|Path to directory with new dir name|
 |recursive|true/false|If true then the method will create any directories in the path which do not already exist|
 
@@ -62,9 +63,9 @@ Remove a directory. If removing a directory and recursive flag is set to `true`,
 
 _ Node Input Params:-_                        
 
-||||
-|--- |--- |--- |
+
 |Field Name|Sample Input|Remarks|
+|--- |--- |--- |
 |remoteDirPath*|/DirectoryPath|Path to directory|
 |recursive|true/false|recursive flag is set to true, the specified directory and all sub-directories and files will be deleted.|
 
@@ -75,9 +76,9 @@ Delete a file on the remote server.
 
 _ Node Input Params:-_                        
 
-||||
-|--- |--- |--- |
+
 |Field Name|Sample Input|Remarks|
+|--- |--- |--- |
 |remotefilePath*|/DirectoryPath/filename.txt|string. Path to remote file to be deleted.|
 |noErrorOk*|true/false|boolean. If true, no error is raised when you try to delete a non-existent file. Default is false.|
 
@@ -88,9 +89,9 @@ Append the `input` data to an existing remote file. There is no integrity checki
 
 _ Node Input Params:-_                        
 
-||||
-|--- |--- |--- |
+
 |Field Name|Sample Input|Remarks|
+|--- |--- |--- |
 |fileCdnUrl*|https://www.w3.org/TR/PNG/iso_8859-1.txt|CDN url for Data to append to remote file|
 |remoteFilePath*|/DirectoryPath/filename.txt|Path to remote file if files do not exist then It will auto create.|
 
@@ -103,9 +104,9 @@ _ Node Input Params:-_
 
 _Node Input Params:-_                        
 
-||||
-|--- |--- |--- |
+
 |Field Name|Sample Input|Remarks|
+|--- |--- |--- |
 |remoteDir*|/DirectoryPath|remote directory path|
 |pattern|*|{string|RegExp} A pattern used to filter the items included in the returned array. Pattern can be a simple glob-style string or a regular expression. Defaults to *|
 
