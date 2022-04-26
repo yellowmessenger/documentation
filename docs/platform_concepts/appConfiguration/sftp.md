@@ -4,7 +4,7 @@ sidebar_label : SFTP
 ---
 
 
-# Scope of Integration
+## Scope of Integration
 
 Yellow.ai Integration with SFTP allows you to seamlessly connect your remote server with the yellow.ai platform. Using this integration, one can get remote files, make a directory, delete directory, upload files to remote server, check if file exists or not.
 
@@ -150,6 +150,6 @@ Following the above steps will connect your SFTP remote server  with the yellow.
 2. [https://www.filestash.app/sftp-browser.html](https://www.filestash.app/sftp-browser.html)
 
 
-# Sample Experience
+## Sample Experience
 
-Below is a video that depicts how this integration works
+Below is a video that depicts how this integration works.
