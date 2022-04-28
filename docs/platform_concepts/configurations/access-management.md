@@ -28,7 +28,7 @@ Here is a list of roles and privileges you can assign to the users.
 | Developer          | Developer has all the access to all the modules                                       |
 | Database Viewer    | Database viewer has only view access to the database                                  |
 | Approver           | Approver can publish bot from staging to production and need to have developer access |
-| Inbox (Admin)      | Inbox Admin can see all tickets, agents and modify them                               |
+| Inbox (Admin)      | Inbox Admin can see all tickets, agents and modifty them                              |
 | Inbox(Agent)       | Agent can only respond to chat received from the user                                 |
 | Insights           | The user can see all the analytics pertaining to the bot                              |
 | Engagement (Admin) | Engagement (Admin) can see campaigns and configure audiences                          |
