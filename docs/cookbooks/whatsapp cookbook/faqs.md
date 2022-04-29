@@ -12,7 +12,7 @@ FB Business verification is no more a mandate for creating your WA business API 
 
 Though there are some limitations of the same, as mentioned : 
 
-After completing Embedded Signup or the “on behalf of” (OBO) onboarding processes, businesses will immediately be able to:
+After completing embedded sign up or the “on behalf of”(OBO) onboarding processes, businesses will immediately be able to:
 
 1. Respond to unlimited customer-initiated conversations (24-hour messaging windows)
 2. Send business-initiated conversations to 50 unique customers in a rolling 24-hour period
