@@ -66,6 +66,7 @@ module.exports = {
         "cookbooks/whatsapp cookbook/fb-business-verification",
         "cookbooks/whatsapp cookbook/wa-migration",
         "cookbooks/whatsapp cookbook/wa-capturing-qr-event",
+        "cookbooks/whatsapp cookbook/faqs",
       ],
     },
   ],
@@ -386,6 +387,7 @@ module.exports = {
         "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/access-management",
         "platform_concepts/configurations/subscription",
+        "platform_concepts/configurations/api-keys",
       ],
     },
     {
