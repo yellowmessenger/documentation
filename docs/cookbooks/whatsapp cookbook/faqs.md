@@ -3,41 +3,328 @@ title: Frequently Asked Questions
 sidebar_label : FAQs
 ---
 
-# Top FAQs
+### Pre Whatsapp Business account Set up FAQs
 
-<details><summary> <h3> Is FB Business verification mandatory </h3> </summary>
+<details><summary><b> How to verify your business account with Facebook? </b></summary>
 <p>
 
-FB Business verification is no more a mandate for creating your WA business API account and creating your Whatsapp bot. 
+- Document verification:
 
-Though there are some limitations of the same, as mentioned : 
+1. Go to https://business.facebook.com/overview
+2. Click on More Tools > Business Settings > Select your Business.
+3. Select Security Centre.
 
-After completing embedded sign up or the “on behalf of”(OBO) onboarding processes, businesses will immediately be able to:
-
-1. Respond to unlimited customer-initiated conversations (24-hour messaging windows)
-2. Send business-initiated conversations to 50 unique customers in a rolling 24-hour period
-3. Register up to two (2) phone numbers
+You will be able to initiate verification here.
+Click [here](https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot/#step-3---verfiy-your-business-account-with-facebook) for more details.
 
 </p>
 </details>
 
-<details><summary> <h3> Where can I change things like profile picture, description etc in the bot? </h3> </summary>
+
+<details><summary><b> Is FB Business account verification mandatory? </b></summary>
+<p>
+
+Account verification is no more mandate for creating your WA business API account and the Whatsapp bot. 
+Though there are some limitations of the same as mentioned, after completing embedded sign up or the “on behalf of”(OBO) onboarding processes, businesses will be able to:
+
+1. Respond to unlimited customer-initiated conversations(24-hour messaging windows.)
+2. Send business-initiated conversations to 50 unique customers in a rolling 24-hour period.
+3. Register up to two(2) phone numbers.
+
+</p>
+</details>
+
+<details><summary> <b> Do I need a phone number to create a bot on your platform? </b> </summary>
+<p>
+
+Yes, you can create a bot on the platform without adding a number and can even test your Whatsapp bot on our test number.
+
+Go to the Whatsapp channel page to find the option to test your bot with the test number. 
+
+</p>
+</details>
+
+
+<details><summary> <b> Will I lose my whatsapp data once I use it as a WABA Business API number?  </b> </summary>
+<p>
+
+Yes. Before initiating a WA business API setup on any number, you will have to delete your existing WA account during which you will lose all existing contacts and conversations. 
+
+</p>
+</details>
+
+<details><summary> <b> Where can I initiate Whatsapp channel setup on the platform? </b> </summary>
+<p>
+
+You can initiate WA channel setup on the Channels page under WA logo. 
+
+Visit this URL after logging in on the platform - https://cloud.yellow.ai/bot/yourbotID/channels/whatsapp
+
+Here is the URL to the doc - https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot
+
+</p>
+</details>
+
+<details><summary> <b> About Whatsapp Channel Set up </b> </summary>
+<p>
+
+- Requirements & Steps
+
+You will just need a phone number and admin access to the FB business manager account to initiate the Whatsapp channel integration. 
+
+Here is the URL to the doc - https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot
+
+</p>
+</details>
+
+<details><summary> <b> Can the phone number be used for other purposes like Whatsapp, Calling etc? </b></summary>
+<p>
+
+Yes. The same number can be used for calling but can't be used for personal WA usage as the number would be connected to the platform. 
+
+</p>
+</details>
+
+<details><summary><b> Can we use the platform and Mobile Whatsapp application to reply to users? </b></summary>
+<p>
+
+No. We cannot use the WA application or the phone number once the Whatsapp Business API integration is completed.
+
+</p>
+</details>
+
+
+<details><summary><b> Limitations of Whatsapp? </b></summary>
+<p>
+
+Pre-Onboarding:
+
+If onboarded with WhatsApp Business API solution provider(like WATI):
+- the previous chats cannot be seen.
+- the number cannot be used on any other WhatsApp apps - including the WhatsApp & WhatsApp Business mobile app.
+
+Post Onboarding:
+
+Businesses can send messages to customers only after a customer initiates a message. These messages are called session messages and can be sent by businesses to customers until 24 hours of the customer sending a message. After 24 hours, the session expires and businesses can only send 'template messages' to their users.
+Template messages must be pre-approved by WhatsApp and can be done from the WATI dashboard. All template messages must adhere to WhatsApp Commerce Policies.
+- WhatsApp Group Feature is not supported.
+- WhatsApp Voice or Video Calls are not supported. Voice notes are supported.
+- WhatsApp Message Forwarding Feature is not supported.
+- WhatsApp apps cannot be used with the same number if using WhatsApp Business APIs.
+- WhatsApp Messages cannot be replied to in a thread.
+
+</p>
+</details>
+
+<details><summary><b> What is the duration taken for migration? </b></summary>
+<p>
+
+It generally takes 24hrs to migrate a number as infra setup has to be done at our end.
+
+</p>
+</details>
+
+<details><summary><b> Can you still use their notification engine if 2 FA is disabled? </b></summary>
+<p>
+
+Yes.
+
+</p>
+</details>
+
+<details><summary><b> Will the approved template be moved and be used after migration? </b></summary>
+<p>
+
+Yes. Once migrated, templates will be moved and used from the same day.
+
+</p>
+</details>
+
+<details><summary><b> What is the difference between WA business application and WA business API? </b></summary>
+<p>
+
+Answer to be drafted.
+
+</p>
+</details>
+
+
+
+### During Whatsapp Business account Set Up FAQs
+
+
+<details><summary><b> What is the character limitation for WhatsApp display Name? </b></summary>
+<p>
+
+The display name must contain a minimum of 3 characters. There is no such upper cap at this moment 
+
+</p>
+</details>
+
+
+<details><summary><b> About WhatsApp Account display name approval? </b></summary>
+<p>
+
+WhatsApp has some guidelines to be followed for display name.
+The guideline is once display name is changed, it cannot be changed for 30 days.
+
+</p>
+</details>
+
+<details><summary><b> About Display name rejection </b></summary>
+<p>
+
+Facebook has some guidelines to be followed for display name to be approved. A display name must have consistent branding with external sources(e.g., a company's website or marketing).
+If they don't feel the display name is abiding all these rules, then they will approve the display name.
+
+- For instance: Facebook account of the client is in the name of Tolaram Grp and display name "Colgate" is rejected by Facebook saying there is no link between the two names. So client has to apply for new account under the name of "Colgate Nigeria."
+
+</p>
+</details>
+
+<details><summary><b> How long will it take for the infra setup? </b></summary>
+<p>
+
+After you have completed three steps, Whatsapp has to approve your display name which takes 24hrs to be approved. Post that infra setup process begins at our end which takes a maximum 24hrs to complete.
+
+</p>
+</details>
+
+<details><summary><b> About getting stuck at OTP verification </b></summary>
+<p>
+
+User is getting stuck at OTP verification probably for two reasons:
+1. You already have a Whatsapp business API account with another BSP.
+2. If the Whatsapp business account is active, please delete the same and retry OTP verification after 5 minutes.
+
+</p>
+</details>
+
+<details><summary><b> My bot is connected but not responding on WA </b></summary>
+<p>
+
+Answer yet to be drafted.
+
+</p>
+</details>
+
+
+
+### Post Whatsapp Business Account Set Up FAQs
+
+
+<details><summary><b> How to get the green tick? </b></summary>
+<p>
+
+For getting green tick, we have to raise a support ticket to whatsapp. In this case, please reach out to your POC and share your website and facebook link with them.
+
+</p>
+</details>
+
+<details><summary><b> Can we have multiple numbers added to the WABA account? </b></summary>
+<p>
+
+Yes. Multiple numbers can be added to the same WABA account.
+
+</p>
+</details>
+
+
+<details><summary><b> Will the services be affected </b></summary>
+<p>
+
+For 24hrs the service will remain broken during migration.
+
+</p>
+</details>
+
+
+<details><summary><b> Can the display name be changed? </b></summary>
+<p>
+
+Yes. Display name can be changed after 30 days. 
+To change, go to BM and apply for a display name change and then inform your POC about the same.
+
+</p>
+</details>
+
+<details><summary><b> Can we use our WhatsApp bot number with another app like lSuperLemon to send abandoned cart notifications? Please confirm? </b></summary>
+<p>
+
+No. Once connecting a WhatsApp number with the bot you cannot use it with other apps at the same time.
+
+</p>
+</details>
+
+
+<details><summary><b> About migrating whatsapp account setup from cloudym to app </b></summary>
+<p>
+
+Once infra is created, you can connect the same to any bot on the platform.
+
+</p>
+</details>
+
+
+<details><summary><b> Where can I add/edit my profile in the bot? </b> </summary>
 <p>
 
 To edit the profile picture and description:
 1. Go to channel
 2. Click on WhatsApp where it is connected
 3. Click on Edit
-4. You can edit all the informations on that page
+
+You can edit all the informations on this page.
 
 </p>
 </details>
 
-<details><summary> <h3> How long will it take for the infra setup? 
-I'm done with the channel setup three steps mentioned, how long will it take to connect my number? </h3> </summary>
+
+<details><summary><b> Can I connect one of my prod numbers to dev to just test the bot? </b></summary>
 <p>
 
-After you have completed three steps, Whatsapp has to approve your display name which take 24 hrs to be approved. Post that infra setup process begins at our end which takes maximum 24 hrs to complete.
+Need doc on testing in dev mode feature.
+
+</p>
+</details>
+
+
+<details><summary><b> About unable to send notifications to multiple users </b></summary>
+<p>
+
+A business starts with 1,000 business-initiated conversations per phone number when it completes business verification.
+
+</p>
+</details>
+
+<details><summary><b> How to upgrade my Whatsapp messaging Tier? </b></summary>
+<p>
+
+To upgrade your Whatsapp tier and messaging limit, pleaase visit [this link](https://developers.facebook.com/docs/whatsapp/api/rate-limits#quality-rating-and-messaging-limits).
+
+</p>
+</details>
+
+<details><summary><b> Can we create multiple chatbots on Whatsapp? </b></summary>
+<p>
+
+Yes. Mulitple chatbots can be created with the same WABA account.
+
+</p>
+</details>
+
+<details><summary><b> How to get the customers to opt-in for sending notifications? </b></summary>
+<p>
+
+There are several ways to get optin from from the user.
+
+The following are examples of supported opt-in methods:
+
+- SMS.
+- Webpage.
+- WhatsApp thread.
+- By phone(using an interactive voice response(IVR) flow)
+- In person or on paper(customers can sign a physical document to opt in)
 
 </p>
 </details>
