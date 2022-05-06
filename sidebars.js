@@ -367,6 +367,8 @@ module.exports = {
         "platform_concepts/appConfiguration/service-now",
         "platform_concepts/appConfiguration/intercom-livechat",
         "platform_concepts/appConfiguration/microsoft-dynamics",
+        "platform_concepts/appConfiguration/genesys-cloud-livechat",
+        "platform_concepts/appConfiguration/leadSquared-wa-connector",
       ],
     },
     {

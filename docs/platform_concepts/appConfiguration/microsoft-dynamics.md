@@ -17,7 +17,7 @@ Yellow.ai leverages OAuth 2.0 approach for integrating with the client's dynamic
 
 While integrating, the user has to provide some client credentials and then yellow.ai navigates the user to the login page of microsoft, the user has to login and provide his consent.
 
-### Do actions with Microsoft Dynaomics action nodes
+### Do actions with Microsoft Dynamics action nodes
 
 You can store a new Lead and save it in your dynamics 365 account. You can also update, read, delete the lead too with the leadId.
 
