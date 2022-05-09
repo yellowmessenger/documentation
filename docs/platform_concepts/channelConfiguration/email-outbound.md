@@ -3,7 +3,7 @@ title: Email channel configuration
 sidebar_label: Email
 ---
 
-xThere are two types of Email sender types for pushing outbound email notifications.
+There are two types of Email sender types for pushing outbound email notifications.
 
 1. Via the Local Email SMTP
 2. Via HTTP-based Email API
@@ -28,7 +28,9 @@ Upon successful configuration, the platform can send emails from the associated 
 
 - Go to Channels → and look for ‘Email’
 
-![Screenshot 2022-03-01 at 5.36.14 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/81C11B9E-EA67-4CE1-8B45-B1E37ACC722C/344F2251-7419-4B68-91C2-729A05AF4B0F_2/Screenshot%202022-03-01%20at%205.36.14%20PM.png)
+<center>
+<img src="https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/81C11B9E-EA67-4CE1-8B45-B1E37ACC722C/344F2251-7419-4B68-91C2-729A05AF4B0F_2/Screenshot%202022-03-01%20at%205.36.14%20PM.png" alt="drawing" width="60%"/>
+</center>
 
 - Start editing your SMTP
 - Select ‘Basic’ type
@@ -51,7 +53,7 @@ The IT team of your business will be able to help you in fetching the exact SMTP
 
 ## How to configure and get started with web-based Email API in the yellow.ai platform?
 
-Reach out to the yellow.ai team for setting up an email account. The process will cover domain/subdomain authentication , dedicated IP address procurement among others.
+Reach out to the [yellow.ai team](mailto:vishnu@yellow.ai) for setting up an email account. The process will cover domain/subdomain authentication , dedicated IP address procurement among others.
 
 ## When to choose: SMTP vs Email API?
 
