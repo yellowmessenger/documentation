@@ -23,9 +23,6 @@ Using the action nodes, you can generate payment links according to your use cas
 
 <img src="https://i.imgur.com/wZHyTdt.png" alt="drawing" width="60%"/>
 
-![](https://i.imgur.com/wZHyTdt.png)
-
-
 ![](https://i.imgur.com/yhnsDTc.png)
 
 ## Configuration
@@ -39,8 +36,6 @@ Before going to oauth you have to create an account in Camspay dashboard, Get th
 
 ### 2. Configure webhook url
 Copy the webhook url from the camspay integration card and paste in the redirectUrl field variable in the action node.
-
-3. Receiving event in yellow.ai Bot.
 
 ### 3. Receiving event in yellow.ai Bot.
 Go to yellow.ai dashboard->studio->Event hub->Custom->Activate camspay-payment-gateway.

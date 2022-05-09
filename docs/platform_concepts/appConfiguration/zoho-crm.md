@@ -1,6 +1,6 @@
 ---
-title : Zoho-CRM
-sidebar_label : Zoho-crm
+title : Zoho CRM
+sidebar_label : Zoho CRM
 ---
 
 
