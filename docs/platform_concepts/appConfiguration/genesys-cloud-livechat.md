@@ -1,6 +1,6 @@
 ---
-title : Genesys-cloud Live Chat
-sidebar_label : Genesys-cloud Live Chat
+title : Genesys Cloud Live Chat
+sidebar_label : Genesys Cloud Live Chat
 ---
 
 ## Configuration
