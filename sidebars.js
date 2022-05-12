@@ -59,6 +59,7 @@ module.exports = {
       label: "All About Whatsapp Bots",
       collapsed: true,
       items: [
+        "cookbooks/whatsapp cookbook/whatsapp-channel",
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
@@ -85,6 +86,7 @@ module.exports = {
           label: "Nodes",
           collapsed: true,
           items: [
+            //"platform_concepts/studio/cloud-function",
             "platform_concepts/studio/steps/steps",
             "platform_concepts/studio/steps/prompts-and-messages",
             "platform_concepts/studio/steps/action-nodes-and-logic",

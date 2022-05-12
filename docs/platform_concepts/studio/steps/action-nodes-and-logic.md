@@ -133,14 +133,14 @@ To do so:
 ---
 
 ### Functions
-You can use function node to excute code at any point in the flow. 
+You can use function node to execute code at any point in the flow. 
 In this node you can select the [code function](../cloud-function) you wish to execute and [variable](../bot-variables) to store the return value of function in (optional).
 
 <img src="https://i.imgur.com/hCnAPvz.png" alt="drawing" width="50%"/>
 
 :::info
 
-Learn [here](../cloud-function) about different methods/args you can use in functions. 
+Learn [here](../cloud-function) about different methods/arguments you can use in functions. 
 
 :::
 
