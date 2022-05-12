@@ -85,6 +85,7 @@ module.exports = {
           label: "Nodes",
           collapsed: true,
           items: [
+            //"platform_concepts/studio/cloud-function",
             "platform_concepts/studio/steps/steps",
             "platform_concepts/studio/steps/prompts-and-messages",
             "platform_concepts/studio/steps/action-nodes-and-logic",
@@ -347,6 +348,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/web-widget",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
+        "platform_concepts/channelConfiguration/whatsapp-channel",
         "platform_concepts/channelConfiguration/xamarin",
       ],
     },
