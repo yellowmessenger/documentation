@@ -140,7 +140,7 @@ In this node you can select the [code function](../cloud-function) you wish to e
 
 :::info
 
-Learn [here](../cloud-function) about different methods/args you can use in functions. 
+Learn [here](../cloud-function) about different methods/arguments you can use in functions. 
 
 :::
 
