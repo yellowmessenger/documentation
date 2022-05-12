@@ -59,6 +59,7 @@ module.exports = {
       label: "All About Whatsapp Bots",
       collapsed: true,
       items: [
+        "cookbooks/whatsapp cookbook/whatsapp-channel",
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
@@ -348,7 +349,6 @@ module.exports = {
         "platform_concepts/channelConfiguration/web-widget",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
-        "platform_concepts/channelConfiguration/whatsapp-channel",
         "platform_concepts/channelConfiguration/xamarin",
       ],
     },
