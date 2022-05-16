@@ -59,7 +59,6 @@ module.exports = {
       label: "All About Whatsapp Bots",
       collapsed: true,
       items: [
-        "cookbooks/whatsapp cookbook/whatsapp-channel",
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
@@ -70,6 +69,31 @@ module.exports = {
         "cookbooks/whatsapp cookbook/faqs",
       ],
     },
+    {
+      type: "category",
+      label: "WhatsApp As A Channel",
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "Introduction",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/whatsapp-channel",
+            "cookbooks/whatsapp-channel/bot-basics",
+          ],
+        },
+        {
+          type: "category",
+          label: "Channel Guide",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
+            "cookbooks/whatsapp-channel/setup-steps",
+          ],
+        },
+      ]
+    }
   ],
 
   platform_concepts: [
