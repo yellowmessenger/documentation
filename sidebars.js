@@ -59,7 +59,6 @@ module.exports = {
       label: "All About Whatsapp Bots",
       collapsed: true,
       items: [
-        "cookbooks/whatsapp cookbook/whatsapp-channel",
         "cookbooks/whatsapp cookbook/whatsapp-bot",
         "cookbooks/whatsapp cookbook/whatsapp-notification-template",
         "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
@@ -70,6 +69,31 @@ module.exports = {
         "cookbooks/whatsapp cookbook/faqs",
       ],
     },
+    {
+      type: "category",
+      label: "WhatsApp As A Channel",
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "Introduction",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/whatsapp-channel",
+            "cookbooks/whatsapp-channel/bot-basics",
+          ],
+        },
+        {
+          type: "category",
+          label: "Channel Guide",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
+            "cookbooks/whatsapp-channel/setup-steps",
+          ],
+        },
+      ]
+    }
   ],
 
   platform_concepts: [
@@ -161,6 +185,19 @@ module.exports = {
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
+        {
+          type: "category",
+          label: "User Journey",
+          collapsed: true,
+          items: [
+            "platform_concepts/growth/table-of-contents",
+            "platform_concepts/growth/intro",
+            "platform_concepts/growth/access",
+            "platform_concepts/growth/terminology",
+            "platform_concepts/growth/points",
+            "platform_concepts/growth/faqs-user",
+          ],
+        },
         "platform_concepts/growth/funnels",
         "platform_concepts/growth/api-usage",
       ],
