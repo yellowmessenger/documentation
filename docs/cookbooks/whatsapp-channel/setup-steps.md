@@ -28,7 +28,7 @@ If you have an account, just ***sign-in***.
 
 ![](https://cdn.yellowmessenger.com/98Uohu6oWwTw1619536105368.png)
 
-If you haven't created your chatbot yet, [*create one*](https://docs.yellow.ai/docs/cookbooks/getting_started) right away.
+If you haven't created your chatbot yet, [***create one***](https://docs.yellow.ai/docs/cookbooks/getting_started) right away.
 Happy creating!
 
 
