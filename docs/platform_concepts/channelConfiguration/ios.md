@@ -109,13 +109,20 @@ A specific journey can be triggered on launch, by passing the slug in the payloa
 config.payload = ["JourneySlug" : "checkout-cart"]
 ```
 
-### On Premise deployments
+### On Premise / Region Specific deployments
 
 Your on-prem deployment URL can be set to `customBaseUrl`
 
 ```swift
 config.customBaseUrl = "https://yourcustomurl.com"
 ```
+
+If the bot is deployed in a specific region(e.g. r1,r2,r3..rn)) on yellow.ai cloud, set the `customBaseUrl` as follows
+
+```swift
+config.customBaseUrl = "https://rx.cloud.yellow.ai"
+```
+Here rx = r1,r2,r3,r4,r5 etc
 
 ### Custom loader
 
@@ -185,6 +192,19 @@ Once the config is set, chat bot can be presented by calling `startChatbot()` me
 ```swift
 do {
     try YMChat.shared.startChatbot(on: self)
+} catch {
+    print("Error occured while loading chatbot \(error)")
+}
+```
+
+## Initialise View
+
+`initialiseView()` creates an instance of UIViewController which can be used to show the chat view. This view controller can be presented over an existing view controller or can be pushed in navigation controller.
+
+```swift
+do {
+   let chatViewController = try YMChat.shared.initialiseView()
+   self.navigationController?.pushViewController(chatViewController, animated: true)
 } catch {
     print("Error occured while loading chatbot \(error)")
 }
