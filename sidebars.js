@@ -66,7 +66,6 @@ module.exports = {
         "cookbooks/whatsapp cookbook/fb-business-verification",
         "cookbooks/whatsapp cookbook/wa-migration",
         "cookbooks/whatsapp cookbook/wa-capturing-qr-event",
-        "cookbooks/whatsapp cookbook/faqs",
       ],
     },
     {
@@ -92,6 +91,17 @@ module.exports = {
             "cookbooks/whatsapp-channel/setup-steps",
           ],
         },
+        {
+          type: "category",
+          label: "Things To Know",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/things-to-know",
+            "cookbooks/whatsapp-channel/sending-notifications",
+            "cookbooks/whatsapp-channel/approval",
+          ],
+        },
+        "cookbooks/whatsapp-channel/faqs",
       ]
     }
   ],
