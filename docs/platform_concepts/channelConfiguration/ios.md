@@ -109,13 +109,20 @@ A specific journey can be triggered on launch, by passing the slug in the payloa
 config.payload = ["JourneySlug" : "checkout-cart"]
 ```
 
-### On Premise deployments
+### On Premise / Region Specific deployments
 
 Your on-prem deployment URL can be set to `customBaseUrl`
 
 ```swift
 config.customBaseUrl = "https://yourcustomurl.com"
 ```
+
+If the bot is deployed in a specific region(e.g. r1,r2,r3..rn)) on yellow.ai cloud, set the `customBaseUrl` as follows
+
+```swift
+config.customBaseUrl = "https://rx.cloud.yellow.ai"
+```
+Here rx = r1,r2,r3,r4,r5 etc
 
 ### Custom loader
 
