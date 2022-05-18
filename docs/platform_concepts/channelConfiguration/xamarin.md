@@ -143,13 +143,20 @@ A specific journey can be triggered on launch, by passing the slug in the payloa
 ymChatInterface.setPayload({ "JourneySlug" : "checkout-cart" });
 ```
 
-### On-Prem Deployments
+### On-Premise / Region Specific deployments
 
 YmChat supports bots with on-prem deployments. For the bot to work, pass the on-prem URL to `setCustomURL()` method.
 
 ```c#
 ymChatInterface.setCustomURL("https://your-on-prem-url.com");
 ```
+
+If the bot is deployed in a specific region(e.g. r1,r2,r3..rn)) on yellow.ai cloud, set the `customBaseUrl` as follows
+
+```c#
+ymChatInterface.setCustomURL("https://rx.cloud.yellow.ai");
+```
+Here rx = r1,r2,r3,r4,r5 etc
 
 ### Custom loader
 
