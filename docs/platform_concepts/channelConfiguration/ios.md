@@ -190,6 +190,19 @@ do {
 }
 ```
 
+## Initialise View
+
+`initialiseView()` creates an instance of UIViewController which can be used to show the chat view. This view controller can be presented over an existing view controller or can be pushed in navigation controller.
+
+```swift
+do {
+   let chatViewController = try YMChat.shared.initialiseView()
+   self.navigationController?.pushViewController(chatViewController, animated: true)
+} catch {
+    print("Error occured while loading chatbot \(error)")
+}
+```
+
 ## Bot Events
 
 Bot events are used to pass information from bot to app. For passing events from app to bot refer [Payload](#payload)
