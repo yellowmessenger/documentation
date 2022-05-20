@@ -158,7 +158,7 @@ module.exports = {
             "platform_concepts/studio/context-management/add-contextual-response",
           ],
         },
-
+        "platform_concepts/studio/test",
         "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/tools",
         "platform_concepts/studio/event-hub",
