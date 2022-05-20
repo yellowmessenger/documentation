@@ -66,7 +66,6 @@ module.exports = {
         "cookbooks/whatsapp cookbook/fb-business-verification",
         "cookbooks/whatsapp cookbook/wa-migration",
         "cookbooks/whatsapp cookbook/wa-capturing-qr-event",
-        "cookbooks/whatsapp cookbook/faqs",
       ],
     },
     {
@@ -92,6 +91,18 @@ module.exports = {
             "cookbooks/whatsapp-channel/setup-steps",
           ],
         },
+        {
+          type: "category",
+          label: "Things To Know",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/things-to-know",
+            "cookbooks/whatsapp-channel/sending-notifications",
+            "cookbooks/whatsapp-channel/approval",
+          ],
+        },
+        "cookbooks/whatsapp-channel/building-flows",
+        "cookbooks/whatsapp-channel/faqs",
       ]
     }
   ],
@@ -185,19 +196,7 @@ module.exports = {
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
-        {
-          type: "category",
-          label: "User Journey",
-          collapsed: true,
-          items: [
-            "platform_concepts/growth/table-of-contents",
-            "platform_concepts/growth/intro",
-            "platform_concepts/growth/access",
-            "platform_concepts/growth/terminology",
-            "platform_concepts/growth/points",
-            "platform_concepts/growth/faqs-user",
-          ],
-        },
+        "platform_concepts/growth/user-journey",
         "platform_concepts/growth/funnels",
         "platform_concepts/growth/api-usage",
       ],
