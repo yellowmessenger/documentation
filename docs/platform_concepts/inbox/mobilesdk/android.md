@@ -253,6 +253,15 @@ A call declined from notification can be joined from the Chat view by tapping on
 
 ## Agent Status
 
+### Get All Agent Statuses
+
+To get all possible statuses of logged in User against the bot id (Used for initialising the SDK), client can call the following method.
+This can be used to show all the possible status when Agent want to change the status.
+
+```java
+YellowInbox.getAllAgentStatus(): List<YmAgentStatus>
+```
+
 ### Get Agent Status
 
 To get availability status of logged in User against the bot id (Used for initialising the SDK), client can call the following method and observe on it.
@@ -282,6 +291,7 @@ YellowInbox.getAgentStatus().observe(lifecycleOwner, Observer {
 ### Set Agent Status
 
 To set the status of logged in user against the bot id (Used for initialising the SDK), the client can call the following method and observe on it. 
+Client need to pass the YmAgentStatus object received from making `YellowInbox.getAllAgentStatus()` call.
 
 ```java
 YellowInbox.setAgentStatus(status: YmAgentStatus): LiveData<Resource<Void>>
@@ -290,7 +300,7 @@ YellowInbox.setAgentStatus(status: YmAgentStatus): LiveData<Resource<Void>>
 Example
 
 ```java
-YellowInbox.setAgentStatus(YmAgentStatus.BUSY)
+YellowInbox.setAgentStatus(status)
   .observe(lifecycleOwner,Observer{
      when(it.status){
        Resource.SUCCESS -> {
