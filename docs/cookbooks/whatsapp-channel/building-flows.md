@@ -12,7 +12,8 @@ You can design your conversation flows freely in studio like in case of other ch
 
 We have a few system variables like:
 - ***Sender***: This shows the WhatsApp number of the user
-- ***Profile***: Gives user details like name,country of the user to access the name for example use {{{profile.name}}}
+- ***Profile***: Gives user details like name,country of the user to access the name.
+                 For example: use {{{profile.name}}}
 
 **2.  Using Channel Filter:**
 

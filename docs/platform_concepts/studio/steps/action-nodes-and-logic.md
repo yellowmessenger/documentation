@@ -59,8 +59,8 @@ return new Promise
 ---
 
 ### Analytics
-Analytics node can be used to sent analytics events at any point in the execution of journey. You type the event name to push and select value.
 
+Analytics node can be used to sent analytics events at any point in the execution of journey. You type the event name to push and select value.
 
 The analytics node can be used to capture custom events at any point in the execution of a journey. The data passed via the node will flow into the analytics table of Data Explorer inside the Insights section.
 
@@ -73,8 +73,17 @@ The analytics node can be used to capture custom events at any point in the exec
 ***Pro-tip***: Using custom events, you can analyse user flow from one journey/step to another, filter by specific custom events, summarise by different user responses, visualise drop offs and conversion funnels, etc.
 
 
-
 <img src="https://i.imgur.com/ZrlJRWi.png" alt="drawing" width="60%"/>
+
+
+![](https://i.imgur.com/weJ8CdN.png)
+
+
+![](https://i.imgur.com/XPNewKi.png)
+
+
+![](https://i.imgur.com/e08Hosu.png)
+
 
 
 
