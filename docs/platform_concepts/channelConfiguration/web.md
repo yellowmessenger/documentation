@@ -133,7 +133,7 @@ window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenge
 ```html
 <html>
 <head>
-
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 </head>
 <body>
   
