@@ -4,16 +4,6 @@ sidebar_label: User Journey
 ---
 
 
-1. Introduction
-2. How to access
-3. Understanding the terminologies
-   - User Journey Visualisation
-   - ‘Steps inside the journey’ model
-   - Visualisation Insights
-4. Important points to note
-5. FAQs
-
-
 ## Introduction
 
 User Journey Visualisation enables you to view how your users are moving across different journeys when conversing with the bot. Some high level insights you can derive from here are - 
@@ -21,12 +11,6 @@ Various paths taken by the users
 Identify major points where users are dropping off or changing paths
 Help our customers build hypothesis for adding/making any changes in the bot journeys
 Improve engagement & journey completion rate
-
-
-
-## How To Access
-
-***Insights -> User Journeys -> User journey visualisation***
 
 
 
@@ -46,21 +30,25 @@ Improve engagement & journey completion rate
 5. ***Journey switched rate***: %age of time users switched paths between two journeys
 6. ***43.28 %(***96310): This means, out of 100% of the sessions which got triggered on the chat, 43.28 % (~ 96310) times people went to the wallet journey directly after starting the session.
 
+    * This does not mean 96310 users went through this flow. 
+    * This also does not mean that only 96310 times the wallet journey was triggered. 
+    * The journey was triggered 96310 times directly after starting the session. This does not include the numbers for cases     where this journey was triggered in a later stage.
+
 
 ![](https://i.imgur.com/PXydTOx.png)
 
 
+    
 
-    - This does not mean 96310 users went through this flow. 
-    - This also does not mean that only 96310 times the wallet journey was triggered. 
-    - The journey was triggered 96310 times directly after starting the session. This does not include the numbers for cases     where this journey was triggered in a later stage.
     
-    
-### ***‘Steps inside the journey’*** model
+### ***'Steps inside the flow' modal***
+
 
 
 1. ***Journey Switched***: This means the user switched from journey A to journey B.
+
 2. ***Journey Completed***: This denotes completion of the journey. It might take longer for certain users to complete the journey based on the steps in the journey and their response to it.
+
 3. ***User Dropped***: This means the user got dropped off the chat window or did not respond for a very long time.
 
 

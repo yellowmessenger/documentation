@@ -73,19 +73,13 @@ The analytics node can be used to capture custom events at any point in the exec
 ***Pro-tip***: Using custom events, you can analyse user flow from one journey/step to another, filter by specific custom events, summarise by different user responses, visualise drop offs and conversion funnels, etc.
 
 
-<img src="https://i.imgur.com/ZrlJRWi.png" alt="drawing" width="60%"/>
+![](https://i.imgur.com/xM3FZy5.png)
 
 
-![](https://i.imgur.com/weJ8CdN.png)
+![](https://i.imgur.com/BvNwdWt.jpg)
 
 
-![](https://i.imgur.com/XPNewKi.png)
-
-
-![](https://i.imgur.com/e08Hosu.png)
-
-
-
+![](https://i.imgur.com/fwUfCMz.png)
 
 ---
 
