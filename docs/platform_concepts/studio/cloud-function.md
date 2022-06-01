@@ -2,7 +2,9 @@
 title: Code
 sidebar_label : Code
 ---
+
 ## How to create a new function? 
+
 You can add a new function to write your custom logic in code in the **`code`** section of the studio. 
 To execute these functions in a flow, you can attach function action node.
 
@@ -81,3 +83,63 @@ If we receive an encrypted string through API, then we need to decrypt it first 
 ```
 
 For more information : [Click Here](https://developer.mozilla.org/en-US/docs/Glossary/Base64)
+
+
+
+## Steps to Display Multiple Variables using Transformation Function:
+        
+
+Transformation Function can be used to parse data through an API. We can also use this function to manipulate API responses.
+
+In this document, we are going to use the Transformation Function to parse Weather Data API and to show the different parameters in a carousel format. 
+
+***Step 1***: Go to Studio –> Code –> click on Add new function 
+For example:  transformationFunction (as shown below).
+
+        
+![](https://i.imgur.com/VhtUaHr.png)
+
+        
+***Step 2***: The API response is given in JSON object (as shown below) for the temperature details.
+        
+        
+![](https://i.imgur.com/xiQ3wUM.png)
+
+        
+***Step 3***: The next step would be to fetch and parse the API response as JSON object. 
+        
+        
+![](https://i.imgur.com/ZE7whNf.png)
+
+In the above code, we are parsing the Weather Data and storing the response body in a variable “main”.
+        
+ 
+***Step 4***: The API data is now ready to be used in your bot journey. 
+
+You can store the entire JSON body data in a variable and parse through them for each parameter of weather data that you want to display in the bot.
+
+
+![](https://i.imgur.com/mWH4Vy6.png)
+
+
+***Step 5***: Once the global variable is added, go to the respective API node and store the response in that global variable as shown below:
+        
+        
+![](https://i.imgur.com/SI6adHZ.png)
+
+        
+***Step 6***: You can now use any prompt to display this data. 
+
+In our example, a carousel is used to display the Temperature and Wind details. You can also add an image of your choice (optional).
+
+        
+![](https://i.imgur.com/5ZynLHG.png)
+
+        
+You can use the variable symbol and access the various parameters of the JSON object as shown in the above example.
+        
+
+![](https://i.imgur.com/gBjO3vm.png)
+
+        
+***Voila***, your Weather Bot is ready to use!!!!
