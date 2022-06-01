@@ -19,7 +19,7 @@ Improve engagement & journey completion rate
 ### ***User Journey Visualisation***
 
 
-![](https://i.imgur.com/vnzNQ5F.png)
+![](https://i.imgur.com/RZRdMXB.png)
 
 
 
@@ -35,7 +35,7 @@ Improve engagement & journey completion rate
     * The journey was triggered 96310 times directly after starting the session. This does not include the numbers for cases     where this journey was triggered in a later stage.
 
 
-![](https://i.imgur.com/PXydTOx.png)
+![](https://i.imgur.com/WBENaSa.png)
 
 
     
@@ -52,7 +52,7 @@ Improve engagement & journey completion rate
 3. ***User Dropped***: This means the user got dropped off the chat window or did not respond for a very long time.
 
 
-![](https://i.imgur.com/QSFTs3g.png)
+![](https://i.imgur.com/tX2G1vz.png)
 
 
 
@@ -66,8 +66,7 @@ Improve engagement & journey completion rate
 - journeyVizOther(~3.12%) is the amount of hits where paths did not follow any pattern.
 
 
-![](https://i.imgur.com/inRAxec.png)
-
+![](https://i.imgur.com/RBM5nLL.png)
 
 
 
