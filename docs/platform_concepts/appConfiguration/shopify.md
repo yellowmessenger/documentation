@@ -182,7 +182,7 @@ Get orders by customer id helps users with retrieving a list of all the availabl
 Configuring the integration with Shopify is straightforward.
 
 Follow the steps defined below to start integrating:
-### To get shopify password and shared secret
+### To get shopify Admin API Access Token and API Secret Key
 
 
 
@@ -202,8 +202,8 @@ Follow the steps defined below to start integrating:
 ### To integrate shopify with your bot on the platform:
 1. Go to the integration section by selecting integrations from the switcher.
 2. In Integration page search for the shopify .
-   ![Yellow.ai Shopify Integration](https://cdn.yellowmessenger.com/T86lhYnKrppN1650973822340.png)
-4. Enter the store name, password and shared secret.
+   ![Yellow.ai Shopify Integration](https://cdn.yellowmessenger.com/GOIeBSXPTJdH1653913528873.png)
+4. Enter the store name, Admin API Access Token and Api Secret Key.
 5. Click on Connect.
 6. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
    ![Shopify Integration Node](https://cdn.yellowmessenger.com/O1CsKkYAtet01650972874113.png)
