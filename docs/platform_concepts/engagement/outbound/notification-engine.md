@@ -135,13 +135,15 @@ As soon as we receive callback from the downstream services, we will post that d
 
 ```
 {
-   "msgId" : "AsdihS21_",
-   "userId" : "9876543210",        //This will be the contactable user info we notified on.
-   "customPayload" : {},
-   "event" : {
-       "status" : "delivered",
-       //Other channel specific parameters will be present
-   }
+    "event": {
+        "status": "sent"
+    },
+    "userId": "9750689760",
+    "source": "whatsapp",
+    "campaign": "apiNotifications",
+    "templateId": "vac_feedback_info",
+    "msgId": "k9JLQArozzN8-Ar2WiMVY",
+    "workflowId": null
 }
 ```
 
