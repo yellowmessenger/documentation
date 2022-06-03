@@ -53,21 +53,7 @@ module.exports = {
         "cookbooks/template-bots/faq",
         "cookbooks/template-bots/lead-generation",
       ],
-    },
-    {
-      type: "category",
-      label: "All About Whatsapp Bots",
-      collapsed: true,
-      items: [
-        "cookbooks/whatsapp cookbook/whatsapp-bot",
-        "cookbooks/whatsapp cookbook/whatsapp-notification-template",
-        "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
-        "cookbooks/whatsapp cookbook/whatsapp-guidelines",
-        "cookbooks/whatsapp cookbook/fb-business-verification",
-        "cookbooks/whatsapp cookbook/wa-migration",
-        "cookbooks/whatsapp cookbook/wa-capturing-qr-event",
-      ],
-    },
+    },   
     {
       type: "category",
       label: "WhatsApp As A Channel",
@@ -177,6 +163,7 @@ module.exports = {
         "platform_concepts/studio/bot-training",
         "platform_concepts/studio/cloud-function",
         "platform_concepts/studio/modes",
+        "platform_concepts/studio/chat-logs",
       ],
     },
     {
