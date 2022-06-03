@@ -9,10 +9,11 @@ This guide shows you how to make use of “[**yellow.ai Web Widget Launcher**](h
 
 ### Steps to test your Inbound Campaigns
 
-1. Install the Chrome extension using the following [link](https://chrome.google.com/webstore/detail/yellowai-web-widget-launc/hlajdopahpkoakfedombhdpomlpmafbb)
+1. Install the Chrome extension using this [link](https://chrome.google.com/webstore/detail/yellowai-web-widget-launc/hlajdopahpkoakfedombhdpomlpmafbb)
+
 2. Copy the chat widget script⬇️
 
-![1.png](https://cdn.yellowmessenger.com/qed3SSVerWBe1629800997218.png)
+![1.png](https://i.imgur.com/GHsVOsw.jpg)
 
 3. Open the extension in your Chrome browser⬇️
 
