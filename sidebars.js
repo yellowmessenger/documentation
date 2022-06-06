@@ -75,6 +75,7 @@ module.exports = {
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
             "cookbooks/whatsapp-channel/setup-steps",
+            "cookbooks/whatsapp-channel/wa-migration"
           ],
         },
         {
@@ -85,6 +86,7 @@ module.exports = {
             "cookbooks/whatsapp-channel/things-to-know",
             "cookbooks/whatsapp-channel/sending-notifications",
             "cookbooks/whatsapp-channel/approval",
+            "cookbooks/whatsapp-channel/wa-capturing-qr"
           ],
         },
         "cookbooks/whatsapp-channel/building-flows",
