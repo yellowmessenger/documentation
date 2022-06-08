@@ -75,6 +75,7 @@ module.exports = {
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
             "cookbooks/whatsapp-channel/setup-steps",
+            "cookbooks/whatsapp-channel/wa-migration"
           ],
         },
         {
@@ -85,6 +86,7 @@ module.exports = {
             "cookbooks/whatsapp-channel/things-to-know",
             "cookbooks/whatsapp-channel/sending-notifications",
             "cookbooks/whatsapp-channel/approval",
+            "cookbooks/whatsapp-channel/wa-capturing-qr"
           ],
         },
         "cookbooks/whatsapp-channel/building-flows",
@@ -183,8 +185,17 @@ module.exports = {
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
-        "platform_concepts/growth/user-journey",
-        "platform_concepts/growth/funnels",
+
+        {
+          type: "category",
+          label: "User Journey",
+          collpased: true,
+          items: [
+            "platform_concepts/growth/user-journey",
+            "platform_concepts/growth/funnels",
+          ],
+        },
+
         "platform_concepts/growth/api-usage",
       ],
     },
