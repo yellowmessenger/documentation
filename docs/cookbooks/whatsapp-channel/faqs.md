@@ -100,8 +100,8 @@ No. We cannot use the WA application or the phone number once the Whatsapp Busin
 Pre-Onboarding:
 
 If onboarded with WhatsApp Business API solution provider(like WATI):
-- the previous chats cannot be seen.
-- the number cannot be used on any other WhatsApp apps - including the WhatsApp & WhatsApp Business mobile app.
+- The previous chats cannot be seen.
+- The number cannot be used on any other WhatsApp apps - including the WhatsApp & WhatsApp Business mobile app.
 
 Post Onboarding:
 
@@ -216,7 +216,7 @@ Answer yet to be drafted.
 <details><summary><b> How to get the green tick? </b></summary>
 <p>
 
-For getting green tick, we have to raise a support ticket to whatsapp. In this case, please reach out to your POC and share your website and facebook link with them.
+For getting green tick, we have to raise a support ticket to Whatsapp. In this case, please reach out to your POC and share your website and facebook link with them.
 
 </p>
 </details>
@@ -316,7 +316,7 @@ Yes. Mulitple chatbots can be created with the same WABA account.
 <details><summary><b> How to get the customers to opt-in for sending notifications? </b></summary>
 <p>
 
-There are several ways to get optin from from the user.
+There are several ways to get opt-in from from the user.
 
 The following are examples of supported opt-in methods:
 

@@ -138,7 +138,7 @@ As soon as we receive callback from the downstream services, we will post that d
     "event": {
         "status": "sent"
     },
-    "userId": "9750689760",
+    "userId": "91xxxxxxxx",
     "source": "whatsapp",
     "campaign": "apiNotifications",
     "templateId": "vac_feedback_info",

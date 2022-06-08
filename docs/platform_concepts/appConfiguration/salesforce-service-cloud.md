@@ -65,6 +65,10 @@ Inside your project, navigate to the Configuration** **tab and then click on the
 
 ![](https://i.imgur.com/E9LZ68M.png)
 
+
+For more information, please refer [this](https://www.youtube.com/watch?v=_Sp4bzTpjMI).
+
+
 ### Connect your Salesforce account
 
 Click on Connect to see an option of click to connect with Salesforce. After you click that, you will notice that you will be prompted to login to your Salesforce account.

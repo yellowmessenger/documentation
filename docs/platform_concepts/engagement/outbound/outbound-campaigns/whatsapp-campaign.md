@@ -5,7 +5,7 @@ title : How to create and launch outbound WhatsApp notification campaigns?
 
 ## What is a WhatsApp notification campaign?
 
-WhatsApp is known for its stellar nessage notification open rates. Brands can plan their customer outrech and communication around WhatsApp.
+WhatsApp is known for its stellar message notification open rates. Brands can plan their customer outreach and communication around WhatsApp.
 
 ## Let's get started
 
