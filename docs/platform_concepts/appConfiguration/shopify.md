@@ -194,7 +194,7 @@ Follow the steps defined below to start integrating:
    ![Shopify Develop Apps](https://cdn.yellowmessenger.com/V7791fauviuE1650972835358.png)
 5. Enter the name of the App and Emergency developer email id. click on Create app.
    ![Shopify Create App](https://cdn.yellowmessenger.com/IskNDOxC2G4x1650972595971.png)
-6. Configure the necessary Admin Api Scopes and Storefront Api Scopes.
+6. Configure the necessary Admin API Scopes and Storefront API Scopes.
 7. Then copy the Admin Access Token and API Secret
    ![Shopify Creds](https://cdn.yellowmessenger.com/qnS1UjQEQa6Q1650972607979.png)
 
@@ -203,7 +203,7 @@ Follow the steps defined below to start integrating:
 1. Go to the integration section by selecting integrations from the switcher.
 2. In Integration page search for the shopify .
    ![Yellow.ai Shopify Integration](https://cdn.yellowmessenger.com/GOIeBSXPTJdH1653913528873.png)
-4. Enter the store name, Admin API Access Token and Api Secret Key.
+4. Enter the store name, Admin API Access Token and API Secret Key.
 5. Click on Connect.
 6. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
    ![Shopify Integration Node](https://cdn.yellowmessenger.com/O1CsKkYAtet01650972874113.png)
