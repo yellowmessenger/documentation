@@ -194,8 +194,8 @@ Follow the steps defined below to start integrating:
    ![Shopify Develop Apps](https://cdn.yellowmessenger.com/V7791fauviuE1650972835358.png)
 5. Enter the name of the App and Emergency developer email id. click on Create app.
    ![Shopify Create App](https://cdn.yellowmessenger.com/IskNDOxC2G4x1650972595971.png)
-6. Configure the necessary Admin API Scopes and Storefront API Scopes.
-7. Then copy the Admin Access Token and API Secret
+6. 6. Configure the necessary Admin API read and write scope for Analytics, Assigned Fullfillment orders, customers, Discounts, Draft orders,  Fullfillment services, inventory,Merchant-managed-fullfillment orders, orders, product listing, Products and Storefront Api Scopes. Permission can be easily modified by the customer according to their need in private app.
+7. Then copy the Admin Access Token and API Secret Key.
    ![Shopify Creds](https://cdn.yellowmessenger.com/qnS1UjQEQa6Q1650972607979.png)
 
 
