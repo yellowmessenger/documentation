@@ -203,7 +203,7 @@ Follow the steps defined below to start integrating:
 1. Go to the integration section by selecting integrations from the switcher.
 2. In Integration page search for the shopify .
    ![Yellow.ai Shopify Integration](https://cdn.yellowmessenger.com/GOIeBSXPTJdH1653913528873.png)
-4. Enter the store name, Admin API Access Token and Api Secret Key.
+4. Enter the store name, Admin API Access Token and API Secret Key.
 5. Click on Connect.
 6. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
    ![Shopify Integration Node](https://cdn.yellowmessenger.com/O1CsKkYAtet01650972874113.png)

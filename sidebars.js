@@ -189,7 +189,7 @@ module.exports = {
         {
           type: "category",
           label: "User Journey",
-          collpased: true,
+          collapsed: true,
           items: [
             "platform_concepts/growth/user-journey",
             "platform_concepts/growth/funnels",
