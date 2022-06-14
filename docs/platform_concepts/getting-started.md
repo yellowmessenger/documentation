@@ -16,7 +16,7 @@ It is entirely your choice! If you don't know where to start, checkout this walk
 > :heavy_check_mark: Before building a bot, you will have to set up your bot project. To do it, check out this [guide](../cookbooks/getting_started) or follow the video tutorial given below.
 
 
-<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/pT5PpSKTeb8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/LaeNb_IV-UE" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
 
 ---
 ## Step 1: Start conversing
