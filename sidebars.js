@@ -228,6 +228,7 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/email-transcript",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/chat-autotranslate",
+                "platform_concepts/inbox/chats-configuration",
               ],
             },
             {
