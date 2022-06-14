@@ -6,7 +6,9 @@ sidebar_label: Overview
 <!-- This section will make you familiar with the first section you see on top on the platform - Studio. Studio is the section where you design and train your chatbot. 
  -->
 
-You don't have to be a coder to build a bot! At least not on our platform. Our easy to use , no-code platform can help you build a bot in just a few clicks with great customer experience.
+You don't have to be a coder to build a bot! At least not on our platform. Our easy to use, no-code platform can help you build a bot in just a few clicks with great customer experience.
+
+Please sign up and login to this link [Ascend](https://ascend.yellow.ai/) which provides you learning resources for bot building courses, virtual classroom sessions, video/audio content and much more.
 
 
 :::info
