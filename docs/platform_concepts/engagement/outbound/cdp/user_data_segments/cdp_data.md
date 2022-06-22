@@ -60,10 +60,10 @@ Custom properties store additional information specific to your users. For examp
 
 These properties are ideal for helping you answer questions like:
 
-- How many/how much? e.g. which users are paying you over $10 per month?
-- What’s the name? e.g. show me a list of all the users whose job title is ‘Marketer’
-- Is it true or false? e.g. which users have visited my pricing page? (pricingPageVisit = true) and which users haven’t?  (pricingPageVisit = false)
-- What date? e.g. which users’ subscriptions are due to end on September 1st?
+- **How many/how much?** e.g. which users are paying you over $10 per month?
+- **What’s the name?** e.g. show me a list of all the users whose job title is ‘Marketer’
+- **Is it true or false?** e.g. which users have visited my pricing page? (pricingPageVisit = true) and which users haven’t?  (pricingPageVisit = false)
+- **What date?** e.g. which users’ subscriptions are due to end on September 1st?
 
 Custom User Properties can be [created from UI, in Users Module](./manage_user_data#manage-user-properties).
 
@@ -75,7 +75,7 @@ Currently, a custom property can not be archived or edited.
 
 ## User Events
 
-You can send events to yellow.ai, to record whenever users take specific actions or capture an important conversion event. Events record the first and last time a user does something and the total amount of times they do something. For example, you can see the first time users clicked on a particular page, or when they most recently purchased an item.
+You can [send events](../enriching_user_profiles/user_events) to yellow.ai, to record whenever users take specific actions or capture an important conversion event. Events record the first and last time a user does something and the total amount of times they do something. For example, you can see the first time users clicked on a particular page, or when they most recently purchased an item.
 
 Events will show in your user list, and you can filter them to answer questions like:
 
@@ -88,4 +88,4 @@ User Events is currently in beta! Write to sarthak@yellow.ai to get it enabled f
 :::
 
 ### Export your User Data
-You can quickly and easily [export your user data](./manage_user_data#viewing--exporting-your-user-data) out of yellow.ai.
+You can quickly and easily export your user data out of yellow.ai. [Here's how to do that](./manage_user_data#viewing--exporting-your-user-data).

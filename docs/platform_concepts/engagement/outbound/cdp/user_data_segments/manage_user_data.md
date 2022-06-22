@@ -29,7 +29,7 @@ If you want to edit the above user, you can click on **user options → edit use
 
 ![](https://i.imgur.com/TTb77hi.png)
 
-If you want to add/edit multiple users at once, we'd recommend using [REST APIs](../enriching_user_profiles/send_user_data_event_rest_api) or [CSV Import](./create_audience_group_csv).
+If you want to add/edit multiple users at once, we'd recommend using [REST APIs](../enriching_user_profiles/send_user_data_event_rest_api) or [CSV Import](../enriching_user_profiles/create_audience_group_csv).
 
 ## Creating and managing segments
 
@@ -80,11 +80,6 @@ User logs is a space for your to audit your user data. There are 3 types of logs
 
 - **Bulk User Download →** This log appears whenever you [export your user data](./manage_user_data#viewing--exporting-your-user-data). The associated “Download log” can be used to download the exported user data in CSV format.
 
-- **Bulk User Delete →** This log appears whenever you *delete your user data*.
+- **Bulk User Delete →** This log appears whenever you [delete your user data](../user_data_segments/manage_user_data#deleting-your-user-data).
 
 ![](https://i.imgur.com/s86psKQ.png)
-
-
-
-
-

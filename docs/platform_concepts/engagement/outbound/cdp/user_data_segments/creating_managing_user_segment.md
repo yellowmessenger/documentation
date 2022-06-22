@@ -8,6 +8,7 @@ title: Creating and managing user segments
 A segment is a group of your users defined by conditions that you set. Users are automatically added to the segment every time the user updates to match those conditions.
 
 We recommend creating a segment for every key group of users you'd like to send a message to - for example, users interested in a particular use case, users who have visited your pricing page, users in a particular department, users whose renewal data is nearing, etc.
+
 yellow.ai lets you filter and segment important groups of users, so you can send them targeted messages. For example, you could create a segment of trial users and send them onboarding messages.
 
 ### Useful segments to create

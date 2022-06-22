@@ -12,7 +12,7 @@ You can use the [template manager](../../templates/overview/) to create the cont
 
 ![](https://i.imgur.com/QxXgHqa.png)
 
-During your [outbound campaign]((../../outbound-campaigns/whatsapp-campaign)) creation, the above variables can be mapped to user properties while selecting the message template
+During your [outbound campaign](../../outbound-campaigns/whatsapp-campaign) creation, the above variables can be mapped to user properties while selecting the message template
 
 ![](https://i.imgur.com/uMaeBsY.png)
 
