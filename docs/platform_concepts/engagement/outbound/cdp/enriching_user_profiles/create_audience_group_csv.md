@@ -14,12 +14,12 @@ To begin the CSV import, you may click on **+ Add user → Import users.**
 
 You can upload the CSV you want to import users from. An optional step is to add **tags.** The tags that you add at this step will get added for every user in the CSV. This can be a great way to differentiate between users uploaded from multiple CSV files and to maintain multiple audiences.
 
-You can then *create a segment* using those tags to refer to the various set of audiences you have imported.
+You can then [create a segment](../user_data_segments/creating_managing_user_segment) using those tags to refer to the various set of audiences you have imported.
 
 ![](https://i.imgur.com/Asg1896.jpg)
 
 :::info
-If the userId is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user that is imported.
+If the [userId](../enriching_user_profiles/user_id) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user that is imported.
 :::
 
 ## Pre-checks before uploading the CSV
@@ -49,7 +49,7 @@ If any of these column headers do not match with any user property, the entire C
 
 ## Using the userId column to identify users
 
-You can pass the userId for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. You may read more about userId and it’s importance *here*.
+You can pass the userId for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. You may read more about userId and it’s importance [here](../enriching_user_profiles/user_id).
 
 When the CSV includes a user record with a userId that already exists in the users table, a conflict arises between the old record and the new record. The new record is **merged** into the old record in the following manner:
 
@@ -84,11 +84,11 @@ Sometimes you might notice that the exact number of records you imported through
 ## Figuring out what went wrong with your CSV Import
 
 Sometimes you might notice that the number of users you tried importing from the CSV didn’t show up in the users table. Here is might what have gone wrong:
-- *Wrong column headers*
-- *Data type mismatch*
-- Some users being imported must’ve merged into existing user records
+- [Wrong column headers](../enriching_user_profiles/create_audience_group_csv#pre-checks-before-uploading-the-csv)
+- [Data type mismatch](../enriching_user_profiles/create_audience_group_csv#pre-checks-before-uploading-the-csv)
+- Some users being imported must’ve [merged](../enriching_user_profiles/create_audience_group_csv#using-the-userid-column-to-identify-users) into existing user records
 
-You can figure out which of the above happened by heading to User Logs. Click on User Logs →  relevant **CSV Import activity → Download log**
+You can figure out which of the above happened by heading to [User Logs](../user_data_segments/manage_user_data#user-logs). Click on User Logs →  relevant **CSV Import activity → Download log**
 
 
 ![](https://i.imgur.com/5jj2BgM.jpg)
