@@ -212,6 +212,20 @@ module.exports = {
 
         {
           type: "category",
+          label: "New doc",
+          collapsed: true,
+          items: [
+            
+              "platform_concepts/inbox/new",
+              
+             "platform_concepts/inbox/inbox-settings/chats-configuration/tags",
+            
+          ]
+          },
+
+
+        {
+          type: "category",
           label: "Inbox Settings",
           collapsed: true,
           items: [
