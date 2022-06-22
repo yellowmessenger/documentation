@@ -15,11 +15,11 @@ In this document, we will cover:
 1. [How to store data in user properties?](./builder_capture_data#how-to-store-data-in-user-properties)
 2. [What are Identified Users?](./builder_capture_data#what-are-identified-users)
 3. [Using builder to create & update user records in users table](./builder_capture_data#using-builder-to-create--update-user-records-in-users-table)
-4. [What happens when a new user conflicts with an existing user?](./builder_capture_data##what-happens-when-a-new-user-conflicts-with-an-existing-user)
+4. [What happens when a new user conflicts with an existing user?](./builder_capture_data#what-happens-when-a-new-user-conflicts-with-an-existing-user)
 
 ### How to store data in user properties?
 
-User properties are available in all nodes of the builder under **“User properties”**.
+User properties are available in all nodes of the builder under **"User properties"**.
 
 Many times, you’ll directly ask the users for information like name, email, phone number. The response to these questions can be stored in the relevant user property, to enrich the user profile. This is where [Prompt Nodes](../../../../studio/steps/prompts-and-messages/) come in handy.
 
@@ -36,6 +36,7 @@ This is where a [Variables Node](../../../../studio/steps/action-nodes-and-logic
 ### What are Identified Users?
 
 When userId has been set for a user, that user becomes identified. To know what a userId is and it's importance, you can [read this document](./user_id).
+
 As soon as a user is identified, it starts showing up as a record in the users table. All updates made to this user, in builder, also show up in the users table. 
 
 Therefore, while making relevant updates to a user, make sure it is already identified.
@@ -48,7 +49,7 @@ Therefore, while making relevant updates to a user, make sure it is already iden
 
 As mentioned above, to create a user record in the users table through builder, you need to identify that user. To do that, you need to set it’s **userId**, which is available as a property under **User Properties**, in every builder node.
 
-#### What if a user’s response such as email id, needs to be passed to both, the userId property and email property?
+**What if a user’s response such as email id, needs to be passed to both, the userId property and email property?**
 
 You can achieve this by storing the response in email property and then by clicking on **⚙️ icon** →  select **Use this as Unique ID for User**. This will store the response in both email and userId properties.
 
@@ -57,7 +58,7 @@ You can achieve this by storing the response in email property and then by click
 ![](https://i.imgur.com/ty7LQKU.png)
 
 
-### What happens when a new user conflicts with an existing user?
+**What happens when a new user conflicts with an existing user?**
 
 A conflict happens when you identify a user with a userId that already exists in the users table.
 
