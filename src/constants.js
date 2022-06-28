@@ -35,7 +35,7 @@ export const topics = [
     description:
       "Learn to build a bot on yellow.ai's no-code platform in just a few clicks with excellent speed!",
     icon: "ri-booklet-line",
-    url: "/docs/platform_concepts/studio/overview",
+    url: "/docs/platform_concepts/getting-started",
   },
   {
     title: "Inbox",

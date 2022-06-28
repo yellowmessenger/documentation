@@ -285,6 +285,57 @@ module.exports = {
           items: [
             {
               type: "category",
+              label: "CDP",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/outbound/cdp/overview",
+                {
+                  type: "category",
+                  label: "Managing User data and Creating Segments",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/outbound/cdp/user_data_segments/cdp_data",
+                    "platform_concepts/engagement/outbound/cdp/user_data_segments/manage_user_data",
+                    "platform_concepts/engagement/outbound/cdp/user_data_segments/creating_managing_user_segment",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Enriching User Profiles",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_id",
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/create_audience_group_csv",
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/builder_capture_data",
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_events",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Getting The Most From Your User Data",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/outbound/cdp/user_data/targeted_segments",
+                    "platform_concepts/engagement/outbound/cdp/user_data/conv_in_builder",
+                    "platform_concepts/engagement/outbound/cdp/user_data/campaign_in_engage",
+
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "FAQs",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/outbound/cdp/faq/exclude_user_campaign",
+                    "platform_concepts/engagement/outbound/cdp/faq/date_based_campaign",
+                    "platform_concepts/engagement/outbound/cdp/faq/maintain_context_across_channel",
+                  ],
+                },
+              ],
+            },
+            {
+              type: "category",
               label: "Templates",
               collapsed: true,
               items: [
