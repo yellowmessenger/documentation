@@ -8,11 +8,9 @@ featured: true
 
 This section is for all the learners who LOVE to LEARN on the GO 🏃🏻‍♂️ Time is precious and not everyone likes to take the long trail of step by step learning but get quick answers to tricky questions. This section is for the same kind of learners.
 
-
-For more information about yellow.ai and learning, please visit this link - [Ascend](https://ascend.yellow.ai/) and sign up here to access all the resources necessary to build a bot.
-
-
-Please sign up and login to this link [Ascend](https://ascend.yellow.ai/) which provides you learning resources for bot building courses, virtual classroom sessions, video/audio content and much more.
+:::info
+For more information about yellow.ai and learning, please visit this link - [Ascend](https://ascend.yellow.ai/) and sign up here to access all the resources bot building courses, virtual classroom sessions, video/audio content and much more.
+:::
 
 
 ### How to Sign up and Create a bot? 

@@ -8,13 +8,12 @@ sidebar_label: Overview
 
 You don't have to be a coder to build a bot! At least not on our platform. Our easy to use, no-code platform can help you build a bot in just a few clicks with great customer experience.
 
-Please sign up and login to this link [Ascend](https://ascend.yellow.ai/) which provides you learning resources for bot building courses, virtual classroom sessions, video/audio content and much more.
-
 
 :::info
+You can sign up on [Ascend](https://ascend.yellow.ai/) which provides you learning resources for bot building courses, virtual classroom sessions, video/audio content and much more.
 
-- If you're getting started or looking for more practical end-to-end guides, checkout [Cookbooks](../../cookbooks/template-bots/customer-support-bot.md), which provides end to end bot building guide.
 
+If you're getting started or looking for more practical end-to-end guides, checkout [Cookbooks](../../cookbooks/template-bots/customer-support-bot.md), which provides end to end bot building guide.
 :::
 
 > :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of [setting up your bot project](../../cookbooks/getting_started). 
