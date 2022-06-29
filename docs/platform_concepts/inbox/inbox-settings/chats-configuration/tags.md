@@ -12,7 +12,7 @@ Tagging your chats helps you search or filter your chat menu and makes it easier
 ![](https://i.imgur.com/39vPpD6.png)
 
 
-#### Learn how to use tags
+### Learn how to use tags
 
 Tags are great for both admins and agents. Admins can obtain an overview of chat conversation topics by viewing the 10 most popular tags in a week. Agents can easily tag chats either automatically using Shortcuts, or manually by selecting tags from a predefined list.
 
