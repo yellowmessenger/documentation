@@ -321,7 +321,26 @@ YellowInbox.setAgentStatus(status)
 By calling logout, all the services and notifications will be terminated. You can call this function when user logs out of the app
 
 ```java
+YellowInbox.logout(): MutableLiveData<Resource<Void>>
+```
+
+Example
+
+```java
 YellowInbox.logout()
+  .observe(lifecycleOwner,Observer{
+     when(it.status){
+       Resource.SUCCESS -> {
+         showToast("Logout Success!")
+       }
+       Resource.ERROR -> {
+         val msg:String = it.message
+       }
+       else -> {
+
+       }
+   }
+})
 ```
 
 ## Mandatory overrides

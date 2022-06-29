@@ -4,6 +4,10 @@ sidebar_label: Studio
 featured: true
 ---
 
+### Studio UI Updates
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LXLW7-eeTV4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
 ### Learn about Intents, Journeys and Utterances
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/SKkZCFXDy30" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
