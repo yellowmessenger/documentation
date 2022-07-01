@@ -1,4 +1,4 @@
-# Whatsapp Templates
+3# Whatsapp Templates
 
 A whatsapp message template can be used to send out campaign messages over and over again. You can create your own whatsapp template on our platform and get it approved from Meta. Once the approval process is done, you can use these templates to send out campaigns to your customers. 
 
