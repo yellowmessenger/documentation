@@ -8,9 +8,7 @@ featured: true
 
 This section is for all the learners who LOVE to LEARN on the GO 🏃🏻‍♂️ Time is precious and not everyone likes to take the long trail of step by step learning but get quick answers to tricky questions. This section is for the same kind of learners.
 
-:::info
-For more information about yellow.ai and learning, please visit this link - [Ascend](https://ascend.yellow.ai/) and sign up here to access all the resources bot building courses, virtual classroom sessions, video/audio content and much more.
-:::
+You can watch videos from this module and learn more about conversational AI. On the left sidebar, videos are provided by the modules of yellow.ai platform. Select any of those module to start your learning!
 
 
 ### How to Sign up and Create a bot? 

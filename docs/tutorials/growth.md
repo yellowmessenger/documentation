@@ -35,5 +35,3 @@ featured: true
 Take advantage of yellow.ai's robust reporting capabilities to identify & drill down to the metrics that matter to you.
 
 Create custom reports & dashboards with data explorer for easy review and take control of your #data for actionable insights.
-
-

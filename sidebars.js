@@ -185,20 +185,18 @@ module.exports = {
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
-        "platform_concepts/growth/api-usage",
 
         {
           type: "category",
-          label: "User Journeys",
+          label: "User Journey",
           collapsed: true,
           items: [
-            "platform_concepts/growth/user-journeys",
+            "platform_concepts/growth/user-journey",
             "platform_concepts/growth/funnels",
           ],
         },
 
-        "platform_concepts/growth/data-explorer",
-        "platform_concepts/growth/dashboards",
+        "platform_concepts/growth/api-usage",
       ],
     },
     {
