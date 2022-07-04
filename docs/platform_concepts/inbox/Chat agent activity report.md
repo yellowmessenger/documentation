@@ -2,6 +2,7 @@
 title: Chat Agent activity report explained
 sidebar_label : Chat Agent activity report
 ---
+
 # Inbox chat reports 101
 
 ## Agent activity report

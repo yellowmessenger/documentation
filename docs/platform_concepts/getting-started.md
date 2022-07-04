@@ -8,9 +8,11 @@ It is entirely your choice! If you don't know where to start, checkout this walk
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/w80U82cU0l0" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
 
 :::info
+To know more about yellow.ai platform, please visit this link - [Ascend](https://ascend.yellow.ai/).
 
-- If you are looking to go through detailed bot building tutorials, checkout [Guides](../cookbooks/getting_started).
+This link takes you to the yellow.ai academy where you can learn, create, build a bot and know more about us.
 
+If you are looking to go through detailed bot building tutorials, checkout [Guides](../cookbooks/getting_started)
 :::
 
 > :heavy_check_mark: Before building a bot, you will have to set up your bot project. To do it, check out this [guide](../cookbooks/getting_started) or follow the video tutorial given below.

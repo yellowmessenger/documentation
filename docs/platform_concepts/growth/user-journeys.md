@@ -1,6 +1,6 @@
 ---
 title: User Journey Visualisation
-sidebar_label: User Journey
+sidebar_label: User Journeys
 ---
 
 

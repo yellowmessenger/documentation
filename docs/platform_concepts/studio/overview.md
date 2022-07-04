@@ -6,13 +6,14 @@ sidebar_label: Overview
 <!-- This section will make you familiar with the first section you see on top on the platform - Studio. Studio is the section where you design and train your chatbot. 
  -->
 
-You don't have to be a coder to build a bot! At least not on our platform. Our easy to use , no-code platform can help you build a bot in just a few clicks with great customer experience.
+You don't have to be a coder to build a bot! At least not on our platform. Our easy to use, no-code platform can help you build a bot in just a few clicks with great customer experience.
 
 
 :::info
+You can sign up on [Ascend](https://ascend.yellow.ai/) which provides you learning resources for bot building courses, virtual classroom sessions, video/audio content and much more.
 
-- If you're getting started or looking for more practical end-to-end guides, checkout [Cookbooks](../../cookbooks/template-bots/customer-support-bot.md), which provides end to end bot building guide.
 
+If you're getting started or looking for more practical end-to-end guides, checkout [Cookbooks](../../cookbooks/template-bots/customer-support-bot.md), which provides end to end bot building guide.
 :::
 
 > :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of [setting up your bot project](../../cookbooks/getting_started). 
@@ -27,8 +28,8 @@ You don't have to be a coder to build a bot! At least not on our platform. Our e
 Studio consists of following modules:
 
 - **Build**
-    - **Flows**: Here conversatinal flow can be designed using [journeys](../studio/journeys) and [nodes](../studio/steps/steps/). 
-    - **NLU**: The heart and soul of a bot "**Natural language Understanding**" capabilities can be added to bot in this section. You can train your bot here to [respond to various user utterances](./natural-language-understanding/intents),  [detect entities](./natural-language-understanding/entities) etc. 
+    - **Flows**: Here conversational flow can be designed using [journeys](../studio/journeys) and [nodes](../studio/steps/steps/). 
+    - **NLU**: The heart and soul of a bot "**Natural Language Understanding**" capabilities can be added to bot in this section. You can train your bot here to [respond to various user utterances](./natural-language-understanding/intents),  [detect entities](./natural-language-understanding/entities) etc. 
     - **API**: To [integrate APIs](./api-management/add-api) in a bot this module can be used.
     - **Code**: Bot builders can write your code functions here if needed and attach them using function node to workflow. 
 
