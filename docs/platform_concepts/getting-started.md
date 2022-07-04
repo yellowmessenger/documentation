@@ -2,6 +2,7 @@
 title: Build Your First Bot
 sidebar_label: Getting Started
 ---
+
 See the power of Conversational AI for yourself. You can read all about it in our Studio section or you can stay on this page and build a bot immediately.
 It is entirely your choice! If you don't know where to start, checkout this walkthrough video of yellow.ai Platform overview.
 
@@ -182,6 +183,7 @@ More on agents and our Inbox module **[here](https://docs.yellow.ai/docs/platfor
 Let's use the chat with an agent template for our use-case. This pre-populates all the necessary intents and flows needed for you to plug and play with.
 
 ![](https://i.imgur.com/5udk4We.png)
+
 
 
 ## Using Channels like Emails and SMS

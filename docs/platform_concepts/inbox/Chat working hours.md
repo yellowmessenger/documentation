@@ -3,10 +3,8 @@ title: Chat Working hours
 sidebar_label : Chats Working hours
 ---
 
-
-# Chat working hours
-
 ### Working hours
+
 Working  hours refer to the actual working hours of your customer support team. It refers to the time duration your agents would be available to take live chats and solve customer queries.
 
 When you have set working hours for your team say 9 AM - 5 PM and when a customer reaches out at 6 PM, they’ll not be able to connect to an agent because a ticket would not be created. Now you can display an automated message to the customer which explains the situation why they are not able to connect to the live agents, for a better user experience.
