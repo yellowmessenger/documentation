@@ -217,9 +217,7 @@ module.exports = {
           items: [
             
               "platform_concepts/inbox/new",
-              
-             "platform_concepts/inbox/inbox-settings/chats-configuration/tags",
-            
+                
           ]
           },
 
