@@ -1,14 +1,13 @@
 ---
-title: Chat Agent performance report explained
-sidebar_label : Chat Agent performance report
+title: Chat Agent Performance Report
+sidebar_label : Agent Performance
 ---
 
-# Inbox chat reports 101
+To download Chat Agent Performance Report Go to *Inbox -> Chats -> Reports -> All reports -> Agent Performance -> Generate*
 
-## Agent performance report
-
+:::info
 Only an admin can download reports
-> Go to Inbox -> Chats -> Reports -> Agent Performance -> Generate
+:::
 
 |Sno|Field        |Description                  |Comments |
 |---|------------ |-----------------------------|---------|

@@ -1,14 +1,13 @@
 ---
-title: Chat Agent activity report explained
-sidebar_label : Chat Agent activity report
+title: Chat Agent Activity Report
+sidebar_label : Agent Activity Report
 ---
 
-# Inbox chat reports 101
+To generate Chat Agent Activity report go to *Inbox -> Chats -> Reports -> All reports -> Agent Activity -> Generate*
 
-## Agent activity report
-
+:::info
 Only an admin can download reports
-> Go to Inbox -> Chats -> Reports -> Agent activity -> Generate
+:::
 
 |Sno|Field        |Description                  |Comments |
 |---|------------ |-----------------------------|---------|
