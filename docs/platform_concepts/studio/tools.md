@@ -517,11 +517,6 @@ When the multiple intents are detected, you can display an acknowledge message t
 
 Following up to the previous question, another question can be posed to the user. For example (editable): Would you like to proceed.
 
-<!--- :::success
-
-![](https://i.imgur.com/UlnE2o1.png)
-:::
--->
 
 ## 2.4 Constants 
  
