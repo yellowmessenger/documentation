@@ -177,7 +177,6 @@ Document Search action node is used to answer user query at any point in the flo
 
 ---
 
-
 ### Modifier
 
 Modifier node is used to perform a series of simple operations like lower case, capitilise, remove from end, replace with etc on input variable and store the 'modified' output. This node can be quick used when you want to say, modify some user input before entering to DB or pass to API node, or fetch from API and show to user etc.
