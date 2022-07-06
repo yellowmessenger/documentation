@@ -3,7 +3,6 @@ title: Operational/Logical Nodes - Action and Logic
 sidebar_label: Action and Logic
 ---
 
-
 ## Action
 Action nodes are used whenever we need to take some action behind the scenes example database insert, API execution or document search etc. 
 > To use an action node, simply add it to the flow where you want the action to be done.
