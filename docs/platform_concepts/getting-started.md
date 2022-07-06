@@ -1,3 +1,8 @@
+---
+title: Getting started with yellow.ai
+sidebar_label: step by step guide to build a bot 
+---
+
 # Build a Bot with Yellow.ai 
 
 

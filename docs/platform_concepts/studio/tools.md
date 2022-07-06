@@ -1,3 +1,8 @@
+---
+title: Tools
+sidebar_label: Tools and settings 
+---
+
 # Studio- Settings and Options in Tools
 
 
