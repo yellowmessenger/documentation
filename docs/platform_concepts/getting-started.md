@@ -247,7 +247,6 @@ Explore **Marketplace** by clicking on the Marketplace icon on the top-right cor
 
 ---
 
-
 ### 3.3 Live Customer Support Agents
 By using the **Chat with Agent template** you can direct your users to your agents.
 
@@ -262,12 +261,10 @@ Interactions here can be monitored on the **Inbox** module. Learn more about Age
 
 ![](https://i.imgur.com/tb68Mze.jpg)
 
-
-
-
+#### **Studio**:
+The yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click **[here](https://docs.yellow.ai/docs/platform_concepts/studio/overview)**.
 
 ---
-
 
 ### 3.4 Channels 
 
@@ -279,8 +276,58 @@ Our bots can be setup across 20+ channels to give you the exact same experience 
 
 A detailed description on how to configure your channel can be found **[here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound)**.
 
+## Building the bot
+### Step 1: Configuring the welcome message
+As we build out the flow, it's important to keep the **[conversational design](https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-design-your-conversations)** aspect in our mind right from the opening message. This can be configured by 
 
----
+- Clicking on the Welcome button 
+- Changing the text/ Adding buttons / Triggering a flow
+
+![](https://i.imgur.com/hceA8s2.png)
+
+
+
+### Step 2: Setting up a flow/journey
+We use Flows and Journeys interchangeably throughout our documentation and it stands for the actual customer journey/path we'd like our end users to go through. A more elaborate explaination can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/journeys/)**.
+
+To create a flow, you can click on the dropdown **FLOWS** in the middle of the screen and click on **CREATE A FLOW**.
+
+![](https://i.imgur.com/bjIlt6H.png)
+
+
+### Step 3: What are nodes
+Now that a flow has been created, you have this open canvas to add nodes (the little box called start is a node). You can add nodes in two ways:-
+- Click on the black dot in the center of a node
+
+![](https://i.imgur.com/9Nc8ztc.png)
+
+
+- Click on any 4 of the icons on the left which represent each category of nodes
+
+![](https://i.imgur.com/uGOUyyI.png)
+
+
+You can find more information on the nodes **[here](https://docs.yellow.ai/docs/platform_concepts/studio/steps/prompts-and-messages)**.
+
+For our use-case, I've built out a flow using the Quick-Repy, Email, DB and Text nodes.
+
+![](https://i.imgur.com/sjFlMBv.png)
+
+
+
+### Step 4: How to create and store values in Variables
+Let's say you want to ask the user a question during this flow and save their response, you can make use of Variables. We have different types of variables some of which are pre-made for every bot and custom variables that can be created by you. All the information you need on variables can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/)**.
+
+Here, I've created a custom variable to store the user's query
+
+![](https://i.imgur.com/n7wpkek.png)
+
+![](https://i.imgur.com/vqMbUEj.png)
+
+
+### Step 5: How do I handle the user responses
+Often times, instead of going with the flow that we want to take the user through, the user could type in queries that don't really resonate with the rest of the flow. 
+In such cases, we have a robust **Natural Language Understanding(NLU**) engine which can be used to train the bot with commonly asked phrases based on which flows can be triggered.
 
 ### 3.5 Whatsapp as a Channel
 We have an elaborate guide on the best practices to be followed while setting up the **Whatsapp channel**. To learn more, click **[here](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel)**.
@@ -293,10 +340,3 @@ We have an elaborate guide on the best practices to be followed while setting up
 
 Jump into Studio and automate your conversations like never before.
 Happy Bot building!!
-
-
-
-
-
-
-

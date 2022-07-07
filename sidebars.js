@@ -185,18 +185,20 @@ module.exports = {
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
+        "platform_concepts/growth/api-usage",
 
         {
           type: "category",
-          label: "User Journey",
+          label: "User Journeys",
           collapsed: true,
           items: [
-            "platform_concepts/growth/user-journey",
+            "platform_concepts/growth/user-journeys",
             "platform_concepts/growth/funnels",
           ],
         },
 
-        "platform_concepts/growth/api-usage",
+        "platform_concepts/growth/data-explorer",
+        "platform_concepts/growth/dashboards",
       ],
     },
     {
@@ -258,16 +260,25 @@ module.exports = {
           label: "Chats",
           collapsed: true,
           items: [
-            "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
+            // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
+            "platform_concepts/inbox/chats/types-of-chat",
             "platform_concepts/inbox/whatsapp-24hr-window-policy",
-            "platform_concepts/inbox/Chat agent activity report",
-            "platform_concepts/inbox/Chat agent performance report",
-            "platform_concepts/inbox/Chat archives report",
-            "platform_concepts/inbox/Chat report metrics 101",
             "platform_concepts/inbox/Chat auto translate",
             "platform_concepts/inbox/google-translate-api-inbox",
             "platform_concepts/inbox/Chat custom fields",
             "platform_concepts/inbox/Chat working hours",
+            {
+              type: "category",
+              label: "Reports",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/chats/reports/reports",
+                "platform_concepts/inbox/chats/reports/chat-report-metrics",
+                "platform_concepts/inbox/chats/reports/chat-agent-activity-report",
+                "platform_concepts/inbox/chats/reports/chat-agent-performance-report",
+                "platform_concepts/inbox/chats/reports/chat-archives-report",
+              ],           
+            },
           ],
         },
       ],
@@ -283,6 +294,57 @@ module.exports = {
           label: "Outbound Engagement",
           collapsed: true,
           items: [
+            {
+              type: "category",
+              label: "CDP",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/outbound/cdp/overview",
+                {
+                  type: "category",
+                  label: "Managing User data and Creating Segments",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/outbound/cdp/user_data_segments/cdp_data",
+                    "platform_concepts/engagement/outbound/cdp/user_data_segments/manage_user_data",
+                    "platform_concepts/engagement/outbound/cdp/user_data_segments/creating_managing_user_segment",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Enriching User Profiles",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_id",
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/create_audience_group_csv",
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/builder_capture_data",
+                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_events",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Getting The Most From Your User Data",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/outbound/cdp/user_data/targeted_segments",
+                    "platform_concepts/engagement/outbound/cdp/user_data/conv_in_builder",
+                    "platform_concepts/engagement/outbound/cdp/user_data/campaign_in_engage",
+
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "FAQs",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/outbound/cdp/faq/exclude_user_campaign",
+                    "platform_concepts/engagement/outbound/cdp/faq/date_based_campaign",
+                    "platform_concepts/engagement/outbound/cdp/faq/maintain_context_across_channel",
+                  ],
+                },
+              ],
+            },
             {
               type: "category",
               label: "Templates",
