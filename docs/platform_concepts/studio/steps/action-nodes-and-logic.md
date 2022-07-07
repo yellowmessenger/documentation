@@ -3,7 +3,6 @@ title: Operational/Logical Nodes - Action and Logic
 sidebar_label: Action and Logic
 ---
 
-
 ## Action
 Action nodes are used whenever we need to take some action behind the scenes example database insert, API execution or document search etc. 
 > To use an action node, simply add it to the flow where you want the action to be done.
@@ -173,21 +172,6 @@ Document Search action node is used to answer user query at any point in the flo
 - In node settings, you can configure total no. of results shown, total number of results per document and messages shown while showing results/reporting failure. 
 
 <img src="https://i.imgur.com/cu1uk7M.png" alt="drawing" width="50%"/>
-
-
----
-
-### Send Email
-You can use `Send Email` node to Send Emails to user.
-
-Following fields can be configured:
-- `From`  is a default email. (Currently custom emails are not supported)
-- `To` can be selected from bot variables. 
-- `Subject`- You can write plain text and use variables here. 
-- `Body` - You can write plain text, basic HTML markdown, or can also use [variables](../bot-variables). 
-
-<img src="https://i.imgur.com/BlpcD8e.png" alt="drawing" width="50%"/>
-
 
 
 ---
