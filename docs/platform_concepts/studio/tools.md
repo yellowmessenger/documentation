@@ -1,153 +1,538 @@
 ---
-title: Understand different settings and options in Tools
-sidebar_label: Tools 
----
-This section is dedicated to
--  **`Tools`** section in Studio
-    -  Test your bot
-    -  Conversation Settings
-    -  NLU settings
-
-This will help you understand purpose and usability of each setting.
-
+title: Tools
+sidebar_label: Tools and settings 
 ---
 
-## Tools 
-You can find tools button on top in Design and NLU sections inside Studio. 
-
-Tools section is divided into 3 parts -
-
-### 1. Test your bot
-
-Test your bot section helps your test for any 'User utterance' which intent will be triggered with what confidence. (according to your bot training). 
-You can also enable verbose to see more details like sentiment confidence, synonyms detected or not etc.
-
-![](https://i.imgur.com/1Sb3ay3.gif)
-
----
-
-### 2. Conversation Settings
-These settings more or less control conversation flow, messages display etc. Let's go through them one by one. 
-
-- **Target language** - Target language is default language before auto suggestion or change language journey occurs. 
-- **Translate quick reply responses** - You can enable this if you also want Quick reply buttons to auto-translate. 
-- **Enable Hinglish** - This will allow bot to understand `Hinglish` user utterances. 
-- **Auto Detect Language** - Enabling this, bot can auto-detect the language user typed in and change own language to that in response (if configured). This remains in place till 2 days or until bot language is changed by user selection through `set language` action node. 
-- **Enable Go back/Go Home** - This enables hot keywords for `Go home` -> Triggering welcome prompt *and* `Go back` -> Going to previous prompt in a journey
-    > :warning: **Note** : Go back keywords inside a journey take user to previous prompt. If used outside journey (As first prompt of a journey or after a journey is completed) - Go back goes to Welcome prompt. 
-- **Go back aliases** and **Go home aliases** - These help you configure hot keywords of your choice for triggering Go back or Go home respectively. 
----
-#### Prompt validation settings
-##### Whatsapp indexing settings
-When you configure platform quick replies , they appear on whatsapp as a list of items in text. (We are not talking about native whatsapp quick replies here.)
-Default is like following:-
-
-> What do you want to do next?
-        1. Check order status
-        2. Receive notification
-        3. Go back to Main Menu
-        
-**To give more customisation over how it can look, we have two settings:**
-* **Whatsapp Quick reply index** - You can select from three options numbers(default), alphabets or emojis (numerical emojis) to as your index in cases like above.
-* **Structure Prefix** You can also your overall prefix with bold & italic support. 
-Default  preset entry in this box is `{{index}}` which looks like example above (when type is numbers).
-    
-Let's see one more example: `_Type_ *{{index}}** for` will give you prefix  - 
-> "*Type* **1** for ", "*Type* **2** for " and so on. 
-
-Your quick reply can look like : 
-> *Type* **1** for `Check order status`
+# Studio- Settings and Options in Tools
 
 
-- **Show prompt again** - Enabling this will show original prompt again after validation failure message (which we learnt in earlier sections)
+**Tools** section is used to make advance settings to the bot, you can also test it as you build it. Different settings dedicated to Conversation, NLU, etc. can be configured in this section. 
 
-    For example, for phone prompt
-    > Phone number entered is not correct [validation failure message]
-    > Can you please share your phone number? [original prompt]
-        
-##### **Enable Limit on Retries** 
- Enabling this will set limit of 3 over total times validation failure can be allowed. If validation fails it shows **Error message** which can be cofigured (next setting)
+This document consists details about tools  (of **Studio** module). Following topics are discussed in detail: 
 
- ----   
+1. Navigation to Tools 
+2. Bot Testing 
+3. Conversation Settings 
+4. NLU Settings 
 
-#### **Intelligent Switching**
-:::info
-It is highly recommended this feature is turned on! 
+
+# 1. Where to find Tools? 
+
+Follow the steps below to find **Tools** section on the platform: 
+
+1. Sign in to https://cloud.yellow.ai/auth/login
+
+:::warning
+
+![](https://i.imgur.com/OLxJjsP.png)
+
 :::
-Before going into exact settings, let us understand this more conceptually. 
-Suppose your user is in middle of a journey , say , `Bank account opening journey` and halfway through giving details, question comes about asking type of account. 
-Confused, user asks a question "What is the difference between two types of accounts" 
 
-Assume you already have a FAQ configured for this -> 
-What does in back is, since a new intent is detected -> it switches to that intent and answer user query (Fair enough!)
+2. Open **Studio** from the Overview page. 
+3. Open any of the custom **flows** or **FAQ** tab. 
+4. Cick the **Tools** icon on the **flow** page.
 
-But after this , previous journey is lost and user will have to trigger and start that journey again. 
+:::warning
 
-**After enabling Intelligent switching** , this scenario will look like below- 
-![](https://i.imgur.com/6JStpcm.gif)
+![](https://i.imgur.com/wP0Tc47.jpg)
+
+:::
+
+5. Or, on the **FAQ** page, click the **Tools** button. 
+
+:::warning
+
+![](https://i.imgur.com/9grZUR0.png)
+
+:::
+
+ 
+
+6. Testing and settings interface will popup on the right. 
+
+:::warning
+
+![](https://i.imgur.com/Cb9ylep.png)
+:::
+
+# 2. Explore Tools 
+
+Under the tools section you will find the following: 
+1. **Test your bot**- Any sentence typed as an input by the user can be analysed here. 
+2. **Conversation**- Conversation can be customized. 
+        Behaviour
+        Intelligent switching 
+        Step validation settings 
+        Auto skipping settings 
+    
+4. **NLU**- Technical details based on the training can be modified. 
+    Prediction 
+    Document Search Setting 
+    Multi Intent Settings 
+    
+6. **Constants**- There are a few values that will remain constant throughout the conversation. It can be a persons name, a file name or any value that will not be modified as the conversation progresses. In this tab, you can add those constants and also store those values in the database. 
+
+
+8. **Voice**- These settings are related to the voice module. It is an upcoming feature on our platform. 
 
 
 
-**Other settings**
-- **Follow-up message** : Follow-up message is the message in above example "Do you want to continue where you left off?" -> This message is editable. 
-- **Sticky Journeys**: If you have some journeys more complicated, where user interruption is not ideal, you can mark them as sticky journeys. 
-For these journeys, if an interruption is received, **Sticky journey prompt**(editable) will nudge users to stick to this journey. If selected `Yes` current journey will continue and other will be suggested later in followup message. 
+## 2.1. Test Your Bot 
 
-Working example below - 
+On this tab, users can test the response to see if the corresponding intent will get triggered or not.
+That is, any sentence (user utterance) can be typed in **What user says?** field, the Intent of that sentence and the journey that it belongs to will be displayed along with its confidence.
 
-![](https://i.imgur.com/Nouk1jD.gif)
+:::warning
 
----
+![](https://i.imgur.com/aokPbNA.jpg)
+:::
 
-#### Autoskipping Settings
-As seen in [prompt settings](./steps/prompts-and-messages/#prompt-settings), we can skip a prompt using entitity or variables, if value is already present (thus avoiding asking user the same thing again and again). 
-This depicts the memory of your chatbot. 
+The results displayed here are based on the data used to train your **intents** and **entities**. 
 
-##### Acknowledgement 
-This is highly recommended that your enable acknowledgement for autoskipping. 
-By enabling acknowledgement, instead of directly skipping something (which might lead to confusing the user), bot will show acknowledgement prompt like below:-
-> BOT: "I already have`Account type : Savings`, do you wish to continue?"
+Results obtained here is analysed for: 
 
->  [ Yes ] [ Modify Account type]
+1. **Intent**: The flow/journey of the sentence entered. That is, the bots prediction about the intention behind the entered text. 
 
-On yes, bot will skip the step, else on modify user will be asked to select again instead of autoskipping. 
 
-📌 **`Note`** : **This acknowledgement prompt is also editable**
+2. **Confidence**: Confidence is the % value based on the accuracy of the predicted **Intent**. Confidence score lies between 0 and 1. 1 if the bot is 100% confident about the prediction made for the intent of the input.
 
----
+> When the confidence value is greater 0.8, the accuracy of the prediction is considered to be good. 
 
-#### **Voice Settings**
+3. **Default Response**: This is the default response that bot will display to the user based on the text entered. 
 
-To be updated
+4. **Entity**: Words or phrases that represent a noun is called an entity. 
 
----
+>In a sentence "I would like to buy a phone", **Buy** is the **Intent** and **Phone** is the **Entity**. 
 
-### 3. NLU settings
+5. **Global Entity**: These are entities not specifically trained by the users but by our platform itself for frequently typed phrases. 
 
-NLU settings include settings related to Natural language Understanding as name suggests, and include the following
+>The phrase - Good Morning, is not trained by the user. The system automatically identifies it as Greeting because it is a global entity. Such training is essential for **Small talk**. Small talk is a general conversation between the user and bot, mostly pleasantries. 
+ 
+:::warning
 
-#### Prediction
-- **Primary Model confidence**
-You can modify primary model confidence . Confidence basically is a minimum below which intent will not be triggered. 
-    > ML model matches user utterances to an intent with certain confidence which lies between 0 to 1. 
-- **Secondary Model confidence** 
-Similary you can also select secondary model confidence. Secondary model is basically your Global contextual model. 
+![](https://i.imgur.com/HMtIjQf.jpg)
+:::
 
-#### Document Search Settings
-- **Document Search Threshold** 
-Document Search thershold is minimum confidence needed to show documents in document search node. 
+***Verbose*** 
 
-- **Boost document rank by**
-If you want to give preference to documents, where the document headers match a user query, this parameter can be used to boost the doc ranks. For example, you've a doc in which there is a header : user data and rest of content below it. When this option is enabled, this doc will show up higher in ranks because the query user data matches the header in the doc.
+**Verbose** can be enabled on the top right corner above the text to view more details related to the **sentiment** and **synonyms**. This can be used to identify the emotion(sentiment) behind the text. 
 
-#### Multi-Intent settings
-Enabling Multi-Intent will help model detecting two - intents in one user utterances. 
-Basically, if this is enabled and user says
-" Book a flight and reserve a hotel" (assuming appropriate training)
-Model will detect two intents "Book a flight" and "Reserve a hotel"
+:::warning
 
-Responding to this, model will acknowledge this (**Acknowledgement message**) ask user what they would like to do first, with these two options as quick replies. 
-Remaining option and `Go home` will be suggested as quick replies with **followup message** like in Intelligent switching. 
+![](https://i.imgur.com/NiSigKX.jpg)
+:::
 
----
+***Multiple Languages***
 
+You can test your bot in multiple languages, by simply selecting the language of your choice from the dropdown. 
+:::warning
+
+![](https://i.imgur.com/5pwiSUQ.png)
+:::
+:::info 
+To enable multiple languages:
+Go to Overview > Configure > Edit Basic Details > Add languages. 
+
+![](https://i.imgur.com/mJLXV1W.png)
+
+:::
+
+## 2.2. Conversation 
+
+All the parameters found on conversation settings are used to control the conversation flow, message display and the conversation related aspects. Changes can be controlled from the following categories: 
+
+* Behaviour        
+* Intelligent switching 
+* Step validation settings 
+* Auto skipping settings 
+
+
+### 2.2.1 Behaviour 
+
+:::warning
+
+![](https://i.imgur.com/H9Eu9QP.jpg)
+:::
+
+Control the behaviour of the conversation by modifying the fields below: 
+
+**1. Target language**
+
+Target language is the default language in which the bot will converse in before auto suggestion or change language journey occurs. 
+For example, if **EN** (english) is entered as a target language, then the bot will initially converse in English with the user (it can be changed later).
+
+**2. Translate quick reply responses**
+
+(Coming soon... Currently not in use)
+
+Yes or No can be selected from the dropdown list. If you  want the Quick reply buttons to auto-translate the entered sentence, select **Yes**.
+
+
+**3. Enable Hinglish**
+
+Yes or No can be selected from the dropdown list. This allows the bot to understand Hinglish (Hindi + English) user utterances. Custom-made for the Indian users. 
+
+:::success
+
+For example, when the user types 'Agent se baat karao' the bot understands that it must - connect the user to an agent. 
+
+![](https://i.imgur.com/i2zAjhy.png)
+
+:::
+
+**4. Auto Detect Language**
+
+Yes or No can be selected from the dropdown list. If you select **Yes**, bot can auto-detect the language that the user has typed in and change it to their own language to respond to that (this is available only if configured). 
+
+* This remains in place till 2 days or until bot language is changed by user selection through set language action node.
+
+:::success
+![](https://i.imgur.com/PcSTG5u.png)
+
+:::
+
+**5. Enable Go Back/Go Home**
+
+This feature is a shortcut that a user can use to move to the previous step in the conversation or to go back home. 
+Yes or No can be selected from the dropdown list. Selecting **Yes** will enable hot keywords for 
+* **Go home**-> Welcome prompt is triggered on the bot.  
+* **Go back** -> Chat goes back to the previous prompt in a journey.
+
+
+Note : Go back keywords inside a journey take user to previous prompt. If used outside journey (As first prompt of a journey or after a journey is completed) - Go back goes to Welcome prompt.
+
+**6. Go back Aliases**
+
+Type in and configure the hot keywords of your choice to trigger the **Go back** action. 
+
+:::success
+
+For example, if the **Go Back Aliases** is entered as **0** or '**go back**' in the settings and the user enters those words in the chat, the conversation will go back to the previous step. 
+
+![](https://i.imgur.com/mPuaLab.jpg)
+:::
+
+**7. Go home Aliases**
+
+Type in and configure the hot keywords of your choice to trigger the **Go home** action. 
+
+:::success
+
+For example, if the **Go Home Aliases** is entered as **x** or '**go home**' in the settings and the user enters those words in the chat, the conversation will go back to the first step.
+
+![](https://i.imgur.com/55EjJk0.png)
+
+:::
+
+**8. Negation Journey**
+
+Negation Journey dropdown will consist of all the flows/journey associated with your bot. When the user inputs a sentence which urges the bot to **not** perform an action, the bot takes the negation journey. 
+
+:::warning
+
+![](https://i.imgur.com/mgb7cbt.jpg)
+:::
+
+For example, when the user inputs "I want to talk to the manager" the bot takes the *Transfer to Agent* flow.  
+If the user inputs " I dont want to talk to the manager", the bot takes the selected negation journey.
+:::success
+
+
+
+![](https://i.imgur.com/soMyHu8.jpg)
+:::
+
+
+### 2.2.2 Intelligent Switching  
+
+Intelligent Switching - like the name suggests is used to switch the conversation based on the users input. 
+
+For example, instead of selecting one of the options (Savings account or Fixed deposit) for the bot question "Select a type of account." the user replies "What is the difference between "Savings account and Fixed deposit" the bot will be able to reply to the user query and switch back to the previous flow and ask the user to "Select a type of account." This is intelligent switching. 
+
+:::warning
+
+![](https://i.imgur.com/31i60zu.jpg)
+:::
+
+
+
+
+Enter the following fields to configure this section:  
+
+**1. Enable**
+
+Yes or No can be selected from the dropdown list. Select Yes to enable  Intelligent switching. 
+
+**2. Sticky Journeys**
+
+If you have journeys that are complicated and user interruption/intrusion from the expected flow is not ideal, you can mark them as sticky journeys. 
+For these journeys, if an interruption is received, Sticky journey prompt(editable) will nudge users to stick to this journey. 
+If this is selected, current journey will continue. Otherwise, the other flow will be suggested later in followup message.
+
+**3. Prompt for Sticky Journeys**
+
+When a Sticky Journey is selected, this message will be displayed, this will nudge the user to complete the journey that the bot is currently on. 
+The message can be (editable):  Hi, would you like to complete this first? I will not be able to save your progress.
+
+:::success
+
+![](https://i.imgur.com/s4zM19K.png)
+
+:::
+
+**4. Followup Message**
+
+Follow-up message is used to switch back the conversation to the required flow. 
+This message can be (editable): "Do you want to continue where you left off?" or "What would you like to do next?"
+
+:::success
+
+![](https://i.imgur.com/UlnE2o1.png)
+:::
+
+
+### 2.2.3 Step Validation Settings
+
+These parameters are used to validate the steps involved in the bot conversation, more specifiaclly- it is configured to validate the prompts. 
+
+:::warning
+
+![](https://i.imgur.com/lqHA99M.jpg)
+
+:::
+
+Note: When platform quick replies are configured, they appear on whatsapp as a list of items in text. For example, 
+
+What do you want to do next?
+
+    1. Check order status
+    2. Receive notification
+    3. Go back to Main Menu
+
+This can be customized by filling in the **Whatsapp Quick reply index and Structure prefix** fields. 
+
+**1. Whatsapp Quick reply index** 
+
+Select from three options **Numbers**(default), **Alphabets** or **Emojis** (numerical emojis) as per your index.
+
+**2. Structure prefix**
+
+You can display your overall prefix with bold & italic support. Default preset entry in this box is {{index}} which looks like the example above (when type is numbers).
+
+For example: "_Type_ *{{index}}** for" will display  prefix -
+
+"Type 1 for Gate Mechanical ", "Type 2 for AE & JE Mechanical" and so on.
+
+:::success
+
+When 1 is typed, Gate Mechanical is selected, without having to type out the entire phrase.
+
+![](https://i.imgur.com/yQtdhUD.png)
+
+
+:::
+
+**3. Show prompt again**
+
+Yes or No can be selected from the dropdown list. Enabling this will show the original prompt again after the validation failure message.
+
+:::success
+
+For example, for **phone prompt**
+
+> Phone number entered is not correct [validation failure message] Can you please share your phone number? [original prompt]
+    
+:::
+
+**4. Enable Limit on Retries**
+
+Yes or No can be selected from the dropdown list. By default validation failure is allowed 3 times. If this option is enabled, it will change the limit. 
+
+
+**5. Error message**
+
+If the validation fails, the Error message to be displayed can be configured here. The message can be (editabe): Hey, you have reached maximum limit of retries.
+
+:::success
+For example, in the chat below, user has attempted to select an option 3 times and the bot has timed out. 
+
+![](https://i.imgur.com/8l46UFv.png)
+
+
+
+:::
+
+**6. Unknown message**
+
+If the validation for the entered message is unknown, this reply can be displayed (editable) "It seems I do not have a response to your input, can you try rephrasing it".
+
+
+### 2.2.4 Autoskipping Settings
+
+We can skip a prompt using entitity or variables, if the value is already exists (thus avoiding asking users the same question multiple times). This depicts the memory of your chatbot. When Autoskipping Settings is **Enabled**,   the bot informs the user that it already has the information that is being provided. 
+
+:::warning
+
+![](https://i.imgur.com/ss1V7UQ.jpg)
+:::
+
+**1. Acknowledgement**
+
+Yes or No can be selected from the dropdown list. Although, it is highly recommended that you enable this acknowledgement for autoskipping. By enabling acknowledgement, instead of directly skipping something (that might confuse the user), the bot will show an acknowledgement prompt like shown below:
+
+
+> BOT: "I already haveAccount type : Savings, do you wish to continue?"
+> 
+> [ Yes ][ Modify Account type]
+
+On clicking **yes**, the bot will skip the step. If **Modify** is clicked, the user will be asked to select again instead of autoskipping.
+
+
+
+
+**2. Acknowledgement Prompt**
+
+The message to be displayed as an acknowledgement can be entered here. 
+For example,  
+
+> I already have {{{stepName}}}:{{{value}}}. Do you wish to continue with this?
+:::success
+
+![](https://i.imgur.com/uJODA57.png)
+
+:::
+
+## 2.3 NLU Setting ## 
+
+
+NLU settings include settings related to Natural language Understanding which is based on the intent training. The following can be customized for your bot: 
+
+1. Prediction
+2. Document Search Settings
+3. Multi Intent Settings
+
+### 2.3.1 Prediction
+
+Our Machine Learning model matches the user utterances (input sentences) to an intent with certain confidence which lies between 0 to 1. 
+Under the **prediction** tab, **Confidence** can be modified. 
+
+:::warning
+
+
+![](https://i.imgur.com/PcYb9KM.jpg)
+:::
+
+**1. Min confidence**
+
+Min Confidence is a minimum value calculated (as per the accuracy of intent predicted) below which intent will not be triggered.
+
+
+For example, if the Min Confidence is set to 0.85, which means, when the bot is more than 85% confident that the intent predicted for the input text is correct, bot will respond to the user as expected. 
+
+:::success
+
+
+In our use case, when a user wants to talk to someone from the support team and they ask the bot "Talk to your agent" or "Talk to tech support", bot must understand the intent and direct to "Transfer Agent" flow. 
+
+![](https://i.imgur.com/aahlFgb.png)
+
+:::
+:::warning
+
+Min Confidence is set to 0.85 and the user types "Talk to your agent", bot replies appropriately as the intent predicted is "Transfer Agent" and confidence is 1. 
+
+![](https://i.imgur.com/U4vjhut.jpg)
+:::
+:::warning
+
+Min Confidence is set to 0.85 and the user types "Talk to tech support", bot will not be able to reply as confidence for the intent predicted is unknown. 
+
+![](https://i.imgur.com/aok3dur.png)
+
+
+:::
+
+**2. Context confidence**
+
+Context Confidence is a minimum value calculated for the context accuracy below which the intent will not be triggered. 
+
+
+**3. Secondary model confidence**
+
+Secondary model is a Global contextual model value, if the predected value is below the entered value, intent will not be triggered.
+
+### 2.3.2 Document Search Settings
+
+:::warning
+
+![](https://i.imgur.com/48zbQOf.jpg)
+:::
+
+**1. Document Search Threshold**
+
+Document Search thershold is minimum confidence needed to show documents in document search node.
+
+**2. Boost document rank by**
+
+Boost document rank by is used to give preference to documents where the document-headers/paragraph matches a user query. This parameter can be used to boost the document ranks. 
+
+::: success
+
+
+For example, if a document has a header with the user data and rest of content below it and Boost document rank by is enabled, this document will show up higher in ranks as the query users data matches the header in the document.
+
+![](https://i.imgur.com/hLQTC4N.png)
+
+
+:::
+
+### 2.3.3 Multi Intent Settings
+
+(Coming soon... Currently not in use)
+
+Enabling Multi-Intent will help the model to detect two - intents in one user utterances. Basically, if this option is enabled and the user types " Book a flight and reserve a hotel" (assuming appropriate training) Model will detect two intents "Book a flight" and "Reserve a hotel". 
+
+Responding to the multi intent, model will acknowledge this (Acknowledgement message) and ask the user what  would they like to do first, with these two options as quick replies. 
+
+Remaining option and Go home will be suggested as quick replies with followup message (this is similar to **Intelligent switching**).
+
+:::warning
+
+![](https://i.imgur.com/U0C7Dwl.png)
+
+:::
+
+**1. Enable**
+
+Yes or No can be selected from the dropdown list. If **Yes** is selected, Multi Intent is enabled. 
+
+**2. Acknowledgement question**
+
+When the multiple intents are detected, you can display an acknowledge message to the user. For example (editable): I understand, What would you like to do first?
+
+<!---
+:::success
+
+![](https://i.imgur.com/s4zM19K.png)
+
+:::
+-->
+
+**3. Followup Question**
+
+Following up to the previous question, another question can be posed to the user. For example (editable): Would you like to proceed.
+
+
+## 2.4 Constants 
+ 
+Values that will remain constant throughout the conversation can be added under this section. It can be a persons name, a file name or any value that will not be modified as the conversation progresses. In this tab, you can add those constants by simply clicking the **+Add Constants button** and also store those values in the database.
+ 
+ :::warning
+
+ ![](https://i.imgur.com/dernhZp.jpg)
+
+ :::
+ 
+## 2.5 Voice 
+
+(Coming soon... Currently not in use)
