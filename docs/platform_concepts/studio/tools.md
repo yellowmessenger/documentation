@@ -1,6 +1,6 @@
 ---
 title: Tools
-sidebar_label: Tools and settings 
+sidebar_label: Tools and Settings 
 ---
 
 # Studio- Settings and Options in Tools
@@ -16,46 +16,30 @@ This document consists details about tools  (of **Studio** module). Following to
 4. NLU Settings 
 
 
-# 1. Where to find Tools? 
+## 1. Where to find Tools? 
 
 Follow the steps below to find **Tools** section on the platform: 
 
 1. Sign in to https://cloud.yellow.ai/auth/login
 
-:::warning
-
 ![](https://i.imgur.com/OLxJjsP.png)
 
-:::
 
 2. Open **Studio** from the Overview page. 
 3. Open any of the custom **flows** or **FAQ** tab. 
 4. Cick the **Tools** icon on the **flow** page.
 
-:::warning
-
 ![](https://i.imgur.com/wP0Tc47.jpg)
-
-:::
 
 5. Or, on the **FAQ** page, click the **Tools** button. 
 
-:::warning
-
 ![](https://i.imgur.com/9grZUR0.png)
-
-:::
-
- 
 
 6. Testing and settings interface will popup on the right. 
 
-:::warning
-
 ![](https://i.imgur.com/Cb9ylep.png)
-:::
 
-# 2. Explore Tools 
+## 2. Explore Tools 
 
 Under the tools section you will find the following: 
 1. **Test your bot**- Any sentence typed as an input by the user can be analysed here. 
@@ -65,27 +49,24 @@ Under the tools section you will find the following:
         Step validation settings 
         Auto skipping settings 
     
-4. **NLU**- Technical details based on the training can be modified. 
+3. **NLU**- Technical details based on the training can be modified. 
     Prediction 
     Document Search Setting 
     Multi Intent Settings 
     
-6. **Constants**- There are a few values that will remain constant throughout the conversation. It can be a persons name, a file name or any value that will not be modified as the conversation progresses. In this tab, you can add those constants and also store those values in the database. 
+4. **Constants**- There are a few values that will remain constant throughout the conversation. It can be a persons name, a file name or any value that will not be modified as the conversation progresses. In this tab, you can add those constants and also store those values in the database. 
 
 
-8. **Voice**- These settings are related to the voice module. It is an upcoming feature on our platform. 
+5. **Voice**- These settings are related to the voice module. It is an upcoming feature on our platform. 
 
 
 
-## 2.1. Test Your Bot 
+### 2.1. Test Your Bot 
 
 On this tab, users can test the response to see if the corresponding intent will get triggered or not.
 That is, any sentence (user utterance) can be typed in **What user says?** field, the Intent of that sentence and the journey that it belongs to will be displayed along with its confidence.
 
-:::warning
-
 ![](https://i.imgur.com/aokPbNA.jpg)
-:::
 
 The results displayed here are based on the data used to train your **intents** and **entities**. 
 
@@ -108,36 +89,29 @@ Results obtained here is analysed for:
 
 >The phrase - Good Morning, is not trained by the user. The system automatically identifies it as Greeting because it is a global entity. Such training is essential for **Small talk**. Small talk is a general conversation between the user and bot, mostly pleasantries. 
  
-:::warning
-
 ![](https://i.imgur.com/HMtIjQf.jpg)
-:::
+
 
 ***Verbose*** 
 
 **Verbose** can be enabled on the top right corner above the text to view more details related to the **sentiment** and **synonyms**. This can be used to identify the emotion(sentiment) behind the text. 
 
-:::warning
-
 ![](https://i.imgur.com/NiSigKX.jpg)
-:::
 
 ***Multiple Languages***
 
 You can test your bot in multiple languages, by simply selecting the language of your choice from the dropdown. 
-:::warning
 
 ![](https://i.imgur.com/5pwiSUQ.png)
-:::
+
 :::info 
 To enable multiple languages:
-Go to Overview > Configure > Edit Basic Details > Add languages. 
+Go to `Overview > Configure > Edit Basic Details > Add language`
 
 ![](https://i.imgur.com/mJLXV1W.png)
-
 :::
 
-## 2.2. Conversation 
+### 2.2 Conversation 
 
 All the parameters found on conversation settings are used to control the conversation flow, message display and the conversation related aspects. Changes can be controlled from the following categories: 
 
@@ -147,12 +121,10 @@ All the parameters found on conversation settings are used to control the conver
 * Auto skipping settings 
 
 
-### 2.2.1 Behaviour 
+#### 2.2.1 Behaviour 
 
-:::warning
 
 ![](https://i.imgur.com/H9Eu9QP.jpg)
-:::
 
 Control the behaviour of the conversation by modifying the fields below: 
 
@@ -163,7 +135,7 @@ For example, if **EN** (english) is entered as a target language, then the bot w
 
 **2. Translate quick reply responses**
 
-(Coming soon... Currently not in use)
+*Coming soon... Currently not in use*
 
 Yes or No can be selected from the dropdown list. If you  want the Quick reply buttons to auto-translate the entered sentence, select **Yes**.
 
@@ -172,21 +144,21 @@ Yes or No can be selected from the dropdown list. If you  want the Quick reply b
 
 Yes or No can be selected from the dropdown list. This allows the bot to understand Hinglish (Hindi + English) user utterances. Custom-made for the Indian users. 
 
-:::success
+:::tip
 
 For example, when the user types 'Agent se baat karao' the bot understands that it must - connect the user to an agent. 
 
 ![](https://i.imgur.com/i2zAjhy.png)
-
 :::
 
 **4. Auto Detect Language**
 
 Yes or No can be selected from the dropdown list. If you select **Yes**, bot can auto-detect the language that the user has typed in and change it to their own language to respond to that (this is available only if configured). 
 
+:::info
+
 * This remains in place till 2 days or until bot language is changed by user selection through set language action node.
 
-:::success
 ![](https://i.imgur.com/PcSTG5u.png)
 
 :::
@@ -205,7 +177,7 @@ Note : Go back keywords inside a journey take user to previous prompt. If used o
 
 Type in and configure the hot keywords of your choice to trigger the **Go back** action. 
 
-:::success
+:::tip
 
 For example, if the **Go Back Aliases** is entered as **0** or '**go back**' in the settings and the user enters those words in the chat, the conversation will go back to the previous step. 
 
@@ -216,7 +188,7 @@ For example, if the **Go Back Aliases** is entered as **0** or '**go back**' in 
 
 Type in and configure the hot keywords of your choice to trigger the **Go home** action. 
 
-:::success
+:::tip
 
 For example, if the **Go Home Aliases** is entered as **x** or '**go home**' in the settings and the user enters those words in the chat, the conversation will go back to the first step.
 
@@ -228,33 +200,23 @@ For example, if the **Go Home Aliases** is entered as **x** or '**go home**' in 
 
 Negation Journey dropdown will consist of all the flows/journey associated with your bot. When the user inputs a sentence which urges the bot to **not** perform an action, the bot takes the negation journey. 
 
-:::warning
-
 ![](https://i.imgur.com/mgb7cbt.jpg)
-:::
+
 
 For example, when the user inputs "I want to talk to the manager" the bot takes the *Transfer to Agent* flow.  
 If the user inputs " I dont want to talk to the manager", the bot takes the selected negation journey.
-:::success
-
-
 
 ![](https://i.imgur.com/soMyHu8.jpg)
-:::
 
 
-### 2.2.2 Intelligent Switching  
+
+#### 2.2.2 Intelligent Switching  
 
 Intelligent Switching - like the name suggests is used to switch the conversation based on the users input. 
 
 For example, instead of selecting one of the options (Savings account or Fixed deposit) for the bot question "Select a type of account." the user replies "What is the difference between "Savings account and Fixed deposit" the bot will be able to reply to the user query and switch back to the previous flow and ask the user to "Select a type of account." This is intelligent switching. 
 
-:::warning
-
 ![](https://i.imgur.com/31i60zu.jpg)
-:::
-
-
 
 
 Enter the following fields to configure this section:  
@@ -274,32 +236,20 @@ If this is selected, current journey will continue. Otherwise, the other flow wi
 When a Sticky Journey is selected, this message will be displayed, this will nudge the user to complete the journey that the bot is currently on. 
 The message can be (editable):  Hi, would you like to complete this first? I will not be able to save your progress.
 
-:::success
-
 ![](https://i.imgur.com/s4zM19K.png)
-
-:::
 
 **4. Followup Message**
 
 Follow-up message is used to switch back the conversation to the required flow. 
 This message can be (editable): "Do you want to continue where you left off?" or "What would you like to do next?"
 
-:::success
-
 ![](https://i.imgur.com/UlnE2o1.png)
-:::
 
-
-### 2.2.3 Step Validation Settings
+#### 2.2.3 Step Validation Settings
 
 These parameters are used to validate the steps involved in the bot conversation, more specifiaclly- it is configured to validate the prompts. 
 
-:::warning
-
 ![](https://i.imgur.com/lqHA99M.jpg)
-
-:::
 
 Note: When platform quick replies are configured, they appear on whatsapp as a list of items in text. For example, 
 
@@ -319,29 +269,25 @@ Select from three options **Numbers**(default), **Alphabets** or **Emojis** (num
 
 You can display your overall prefix with bold & italic support. Default preset entry in this box is {{index}} which looks like the example above (when type is numbers).
 
+:::tip WhatsApp Only
 For example: "_Type_ *{{index}}** for" will display  prefix -
 
 "Type 1 for Gate Mechanical ", "Type 2 for AE & JE Mechanical" and so on.
 
-:::success
-
 When 1 is typed, Gate Mechanical is selected, without having to type out the entire phrase.
 
 ![](https://i.imgur.com/yQtdhUD.png)
-
-
 :::
 
 **3. Show prompt again**
 
 Yes or No can be selected from the dropdown list. Enabling this will show the original prompt again after the validation failure message.
 
-:::success
+:::info
+For example, for **Phone prompt**
 
-For example, for **phone prompt**
-
-> Phone number entered is not correct [validation failure message] Can you please share your phone number? [original prompt]
-    
+- Phone number entered is not correct [validation failure message] 
+- Can you please share your phone number? [original prompt]
 :::
 
 **4. Enable Limit on Retries**
@@ -353,28 +299,21 @@ Yes or No can be selected from the dropdown list. By default validation failure 
 
 If the validation fails, the Error message to be displayed can be configured here. The message can be (editabe): Hey, you have reached maximum limit of retries.
 
-:::success
 For example, in the chat below, user has attempted to select an option 3 times and the bot has timed out. 
 
 ![](https://i.imgur.com/8l46UFv.png)
 
-
-
-:::
 
 **6. Unknown message**
 
 If the validation for the entered message is unknown, this reply can be displayed (editable) "It seems I do not have a response to your input, can you try rephrasing it".
 
 
-### 2.2.4 Autoskipping Settings
+#### 2.2.4 Autoskipping Settings
 
 We can skip a prompt using entitity or variables, if the value is already exists (thus avoiding asking users the same question multiple times). This depicts the memory of your chatbot. When Autoskipping Settings is **Enabled**,   the bot informs the user that it already has the information that is being provided. 
 
-:::warning
-
 ![](https://i.imgur.com/ss1V7UQ.jpg)
-:::
 
 **1. Acknowledgement**
 
@@ -388,22 +327,16 @@ Yes or No can be selected from the dropdown list. Although, it is highly recomme
 On clicking **yes**, the bot will skip the step. If **Modify** is clicked, the user will be asked to select again instead of autoskipping.
 
 
-
-
 **2. Acknowledgement Prompt**
 
 The message to be displayed as an acknowledgement can be entered here. 
-For example,  
 
+For example,  
 > I already have {{{stepName}}}:{{{value}}}. Do you wish to continue with this?
-:::success
 
 ![](https://i.imgur.com/uJODA57.png)
 
-:::
-
-## 2.3 NLU Setting ## 
-
+### 2.3 NLU Setting
 
 NLU settings include settings related to Natural language Understanding which is based on the intent training. The following can be customized for your bot: 
 
@@ -411,16 +344,13 @@ NLU settings include settings related to Natural language Understanding which is
 2. Document Search Settings
 3. Multi Intent Settings
 
-### 2.3.1 Prediction
+#### 2.3.1 Prediction
 
 Our Machine Learning model matches the user utterances (input sentences) to an intent with certain confidence which lies between 0 to 1. 
+
 Under the **prediction** tab, **Confidence** can be modified. 
 
-:::warning
-
-
 ![](https://i.imgur.com/PcYb9KM.jpg)
-:::
 
 **1. Min confidence**
 
@@ -429,27 +359,18 @@ Min Confidence is a minimum value calculated (as per the accuracy of intent pred
 
 For example, if the Min Confidence is set to 0.85, which means, when the bot is more than 85% confident that the intent predicted for the input text is correct, bot will respond to the user as expected. 
 
-:::success
-
-
 In our use case, when a user wants to talk to someone from the support team and they ask the bot "Talk to your agent" or "Talk to tech support", bot must understand the intent and direct to "Transfer Agent" flow. 
 
 ![](https://i.imgur.com/aahlFgb.png)
 
-:::
-:::warning
-
-Min Confidence is set to 0.85 and the user types "Talk to your agent", bot replies appropriately as the intent predicted is "Transfer Agent" and confidence is 1. 
+:::info
+- Min Confidence is set to 0.85 and the user types "Talk to your agent", bot replies appropriately as the intent predicted is "Transfer Agent" and confidence is 1. 
 
 ![](https://i.imgur.com/U4vjhut.jpg)
-:::
-:::warning
 
-Min Confidence is set to 0.85 and the user types "Talk to tech support", bot will not be able to reply as confidence for the intent predicted is unknown. 
+- Min Confidence is set to 0.85 and the user types "Talk to tech support", bot will not be able to reply as confidence for the intent predicted is unknown. 
 
 ![](https://i.imgur.com/aok3dur.png)
-
-
 :::
 
 **2. Context confidence**
@@ -461,12 +382,10 @@ Context Confidence is a minimum value calculated for the context accuracy below 
 
 Secondary model is a Global contextual model value, if the predected value is below the entered value, intent will not be triggered.
 
-### 2.3.2 Document Search Settings
-
-:::warning
+#### 2.3.2 Document Search Settings
 
 ![](https://i.imgur.com/48zbQOf.jpg)
-:::
+
 
 **1. Document Search Threshold**
 
@@ -476,19 +395,12 @@ Document Search thershold is minimum confidence needed to show documents in docu
 
 Boost document rank by is used to give preference to documents where the document-headers/paragraph matches a user query. This parameter can be used to boost the document ranks. 
 
-::: success
-
-
 For example, if a document has a header with the user data and rest of content below it and Boost document rank by is enabled, this document will show up higher in ranks as the query users data matches the header in the document.
 
 ![](https://i.imgur.com/hLQTC4N.png)
 
-
-:::
-
-### 2.3.3 Multi Intent Settings
-
-(Coming soon... Currently not in use)
+#### 2.3.3 Multi Intent Settings 
+*Coming soon... Currently not in use*
 
 Enabling Multi-Intent will help the model to detect two - intents in one user utterances. Basically, if this option is enabled and the user types " Book a flight and reserve a hotel" (assuming appropriate training) Model will detect two intents "Book a flight" and "Reserve a hotel". 
 
@@ -496,11 +408,7 @@ Responding to the multi intent, model will acknowledge this (Acknowledgement mes
 
 Remaining option and Go home will be suggested as quick replies with followup message (this is similar to **Intelligent switching**).
 
-:::warning
-
 ![](https://i.imgur.com/U0C7Dwl.png)
-
-:::
 
 **1. Enable**
 
@@ -508,31 +416,26 @@ Yes or No can be selected from the dropdown list. If **Yes** is selected, Multi 
 
 **2. Acknowledgement question**
 
-When the multiple intents are detected, you can display an acknowledge message to the user. For example (editable): I understand, What would you like to do first?
+When the multiple intents are detected, you can display an acknowledge message to the user. 
 
-<!---
-:::success
+For example (editable): I understand, What would you like to do first?
 
 ![](https://i.imgur.com/s4zM19K.png)
 
-:::
--->
 
 **3. Followup Question**
 
-Following up to the previous question, another question can be posed to the user. For example (editable): Would you like to proceed.
+Following up to the previous question, another question can be posed to the user. 
+
+For example (editable): Would you like to proceed.
 
 
-## 2.4 Constants 
+### 2.4 Constants 
  
 Values that will remain constant throughout the conversation can be added under this section. It can be a persons name, a file name or any value that will not be modified as the conversation progresses. In this tab, you can add those constants by simply clicking the **+Add Constants button** and also store those values in the database.
  
- :::warning
-
- ![](https://i.imgur.com/dernhZp.jpg)
-
- :::
+![](https://i.imgur.com/dernhZp.jpg)
  
-## 2.5 Voice 
+### 2.5 Voice 
 
-(Coming soon... Currently not in use)
+*Coming soon... Currently not in use*

@@ -276,6 +276,11 @@ Our bots can be setup across 20+ channels to give you the exact same experience 
 
 A detailed description on how to configure your channel can be found **[here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound)**.
 
+### 3.5 Whatsapp as a Channel
+We have an elaborate guide on the best practices to be followed while setting up the **Whatsapp channel**. To learn more, click **[here](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel)**.
+
+
+
 ## Building the bot
 ### Step 1: Configuring the welcome message
 As we build out the flow, it's important to keep the **[conversational design](https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-design-your-conversations)** aspect in our mind right from the opening message. This can be configured by 
@@ -328,11 +333,6 @@ Here, I've created a custom variable to store the user's query
 ### Step 5: How do I handle the user responses
 Often times, instead of going with the flow that we want to take the user through, the user could type in queries that don't really resonate with the rest of the flow. 
 In such cases, we have a robust **Natural Language Understanding(NLU**) engine which can be used to train the bot with commonly asked phrases based on which flows can be triggered.
-
-### 3.5 Whatsapp as a Channel
-We have an elaborate guide on the best practices to be followed while setting up the **Whatsapp channel**. To learn more, click **[here](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel)**.
-
-
 
 ---
 
