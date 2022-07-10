@@ -233,6 +233,7 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/chats-configuration/custom-status",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/canned-responses",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
 
               ],
             },
