@@ -2,18 +2,12 @@
 title: Build a Bot with Yellow.ai
 sidebar_label: Step by Step Guide to Build a Bot 
 ---
-
 This is a step by step guide to help you understand yellow.ai platform and build your very own bot.
 As we proceed, to learn more, you can gets your hands on our detailed [Guides](https://docs.yellow.ai/docs/cookbooks/getting_started).
-
 
 Here is a walkthrough of our platform.
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/w80U82cU0l0" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
-
-
-
-
 
 To get started, visit our official website (https://cloud.yellow.ai/ ) and **sign up or sign in** with your Email.
 
@@ -21,15 +15,12 @@ To get started, visit our official website (https://cloud.yellow.ai/ ) and **si
 
 Watch how to create a bot project.
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/LaeNb_IV-UE" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
-
     
 :::info
 Get live sessions on how to create your own bot using yellow.ai by signing up to our free academy training: https://academy.ascend.yellow.ai/
 :::
 
-
 ## 1. Prerequisites 
-
 
 ### 1.1 Understand Your Use Case 
 
@@ -41,17 +32,11 @@ Our platform yellow.ai assists you to build virtual assistants(bots) for variou
 * HR automation and many more!
 
 Having a well defined use-case will make your bot building journey simpler and fun. For this, we recommend you to establish a flow that matches your primary use-case.
-
-
-
 ---
 
 Attached below is a simple flowchart (for ordering a phone) that we will use as a reference to walk you through the bot building process. 
 
-
 ![](https://i.imgur.com/axuVMs9.png)
-
-
 ---
 
 ### 1.2 Get Familiar With the Bot Terms 
@@ -63,9 +48,7 @@ Click the dropdown icon next to the **Overview** label on the top left corner of
 
 ![](https://i.imgur.com/eKsXp8v.jpg)
 
-
 Functionalities of the modules are listed below: 
-
 
 
 | Name     | Description                                                                                                                                                                                                                  |
@@ -81,11 +64,10 @@ Functionalities of the modules are listed below:
 
 Let us get started...
 
- On the **Overview** page, click **Studio**. 
+On the **Overview** page, click **Studio**. 
 You will be directed to the **Studio** page where you can play around with our cool features!
 
 ![](https://i.imgur.com/R3t2nXx.png)
-
 
 ---
 
@@ -212,9 +194,6 @@ Attached below is the screenshot of the data collected by the bot for the fields
 
 ![](https://i.imgur.com/n7L3hig.jpg)
 
-
-
-
 ## 3. Add Ons
 
 ### 3.1 Integrations
@@ -232,8 +211,6 @@ You can search for the integration you are looking for  at docs.yellow.ai.
 
 ![](https://i.imgur.com/ZooBWqK.png)
 
-
-
 ### 3.2 Marketplace
 
 **Marketplace** has pre designed templates of the most commonly used bots. 
@@ -242,8 +219,6 @@ For most use-cases and integrations, templates of user-journeys are available on
 Explore **Marketplace** by clicking on the Marketplace icon on the top-right corner of the **Overview** page. 
 
 ![](https://i.imgur.com/uQjekjD.png)
-
-
 
 ---
 
@@ -262,10 +237,6 @@ Interactions here can be monitored on the **Inbox** module. Learn more about Age
 
 ![](https://i.imgur.com/tb68Mze.jpg)
 
-
-
-
-
 ---
 
 
@@ -276,18 +247,11 @@ Our bots can be setup across 20+ channels to give you the exact same experience 
 
 ![](https://i.imgur.com/2r0259F.jpg)
 
-
 A detailed description on how to configure your channel can be found **[here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound)**.
 
 
----
-
 #### Whatsapp as a Channel
 We have an elaborate guide on the best practices to be followed while setting up the **Whatsapp channel**. To learn more, click **[here](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel)**.
-
-
-
----
 
 **What's Next?**
 
