@@ -1,6 +1,6 @@
 ---
 title: Nodes Overview
-sidebar_label: Overview of the nodes page
+sidebar_label: Overview
 ---
 
 Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/journeys).  
@@ -17,11 +17,11 @@ Nodes are classified into the following types:
 4. **Logic**: Logic nodes can be used when the flow must be branched based on the given conditions. Click here to learn more. 
 
 After clicking +Create flow, you will be directed to a canvas with a start node from where you will have the flexibility to design a flow.
-:::warning
+
 
 
 ![](https://i.imgur.com/uKrEbNH.jpg)
-:::
+
 
 ## 2. Add Nodes
 
@@ -29,17 +29,17 @@ Nodes can be added to this start node in two different ways:
 
 1. Click on the black dot in the center of a node.
 
-:::warning
+
 
 ![](https://i.imgur.com/04ar7yF.jpg)
-:::
+
 
 2. Click on any 4 of the icons on the left which represent each category of nodes.
-:::warning
+
 
 ![](https://i.imgur.com/vFdHzKo.png)
 
-:::
+
 ### 2.1 Build a Flow 
 
 A flow is usually built using a series of smaller nodes. Each flow must have a minimum of two nodes configured.
