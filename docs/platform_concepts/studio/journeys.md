@@ -21,49 +21,44 @@ In this document, we discuss:
 This is a general (**Home**) flow that the bot follows irrespective of the training given to it. First, there is always a welcome message displayed to the user, then, bot responds to the queries it understands and does not understand. 
 Such a flow is configured on the Home -flow. It is further customized as per the usecase.
 
-:::warning
 
 ![](https://i.imgur.com/yGwYdRl.png)
-:::
+
 
 ## 2. Flow 
 
-> The words **Flows** and **Journeys** are used synonymously. 
+** Flow is the logical design of your conversational flow, which will be the actual path that the end users will go through.**
+    - User: “Show me the menu”
+    - Bot: “Please select your Cuisine: South Indian, North Indian”
+    - User: “South Indian”
+    - Bot: “Please select the Item: Dosa, Pongal . . .”
 
-* Flow/Journey is the logical design of your conversational flow, which will be the actual path that the end users will go through.
+> The words **Flows** and **Journeys** are used synonymously. 
 
 Once you have the scope of your bot ready, depending on the purpose user has for chatting with your bot, the bot must be built to respond accordingly. This is done by dividing the scope into multiple flows. 
 
-:::warning
-
 ![](https://i.imgur.com/1SsOIAA.jpg)
-:::
 
 Suppose the bot is used as an office portal to apply for leaves or check salary, bot must converse with the user and fetch the information from all the steps(Nodes) to do just that. 
 
-
-:::warning
-
 ![](https://i.imgur.com/ckLhNXJ.png)
+
+:::info
+Flows can be further categoriesed using Categories.
 :::
-Journeys can be further categoriesed using Categories.
-
-
 
 ## 3. Workflow 
 
 Workflows are background processes that run along with the conversational flow. Workflow option can be selected while creating a flow. 
-:::warning
 
 ![](https://i.imgur.com/eMMSl5H.jpg)
-:::
+
 
 Workflow is the same as any other flow page, it will have a start node. Nodes connecting the start node can only be **Action** or **Logic** nodes (Message and Prompt nodes are not available to build a workflow).
 
-:::warning
 
 ![](https://i.imgur.com/U3akD5c.jpg)
-:::
+
 
 
 
@@ -81,29 +76,20 @@ Follow the steps below to create a flow:
 1. Log in to your studio account. On the Overview page, select your bot.
 2. Select Overview > Studio.
 
-:::success
-
 ![](https://i.imgur.com/jGuxkYh.png)
-:::
 
 3. Select Flows > Create flow.
 
-:::success
-
 ![](https://i.imgur.com/JlpH4nD.jpg)
 
-:::
 4. If you want to select from the available template, click a suitable template. 
-:::success
 
 ![](https://i.imgur.com/cSzWyao.jpg)
-:::
 
 5. Otherwise, Click **Start from scratch** in the top menu bar.
-:::success
 
 ![](https://i.imgur.com/CmT5YpH.jpg)
-:::
+
 
 6. Enter the following details:
 
@@ -121,10 +107,8 @@ example, this flows lead customers to flight booking workflow.
 
 * **Create as a workflow**: Click on the right of the toggle to convert the flow to a workflow. Workflows run in the back-end along with the conversational flow.
 
-:::success
 
 ![](https://i.imgur.com/gsXNfvM.png)
-:::
 
 7. Click Save.
 
@@ -137,25 +121,20 @@ Follow the steps below to configure a start trigger:
 2. Click Design bot flows > Flows tab. Click Flows node of the bot. Expand a category and click a flow.
 
 
-:::success
 
 ![](https://i.imgur.com/xOt35dU.png)
-:::
+
 
 3. Click anywhere on the Start node.
 
-:::success
 
 ![](https://i.imgur.com/2bBwPfh.png)
-:::
+
 
 4. In the Start trigger pop-up, select a type of trigger from the drop-down. In the Select field, select the value of the type of trigger.
 
-:::success
-
-
 ![](https://i.imgur.com/aKBVekp.png)
-:::
+
 
 
 Start trigger enables you to configure the initiation of a bot communication flow. When a customer types a query, the bot starts the conversation based on the logic of the trigger.
@@ -163,37 +142,33 @@ Start trigger enables you to configure the initiation of a bot communication flo
 Flow is triggered using one of the following:
 
 * **Intent**: Start the flow with an action statement, how to book a test drive, connect to a service center, find the status of an order, and find the best product on a website. For example, if a customer types How to book a test ride, the bot triggers the configured flow of the *#test ride* intent. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents/)to learn more about intents. 
-:::success
 
 ![](https://i.imgur.com/nGgAQVN.png)
 
-:::
+
 
 * **Entities**: Start the flow with the primary object(s) of a query, such as the cheapest flight, customer service number, sedan cars, rooms in a hotel, and best beauty products. For example, if a customer types studio, the bot triggers the configured flow associated with the studio model. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/entities/#entity-types)to learn more about entities. 
 
-:::success
 
 ![](https://i.imgur.com/pMCcjPJ.png)
-:::
+
 
 * **Event**: Start the flow with an event, such as a bot pops up when a customer visits the Contact us page or the Home page of the website or app. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/event-hub/)to learn more about configuration of events.
 
 * **Page Url**: Start a flow with a page Url. For example, triggering the help center url on contact us page.
 
-:::success
 
 ![](https://i.imgur.com/wt8EyFh.png)
-:::
+
 
 * **Execute Flow**: Apart from start trigger, users can also set up when to trigger another journey manually from or inside a journey using Execute Flow action node.
 You can add an action node- **Execute Flow** and select the flow you want to execute next. 
 
 For example, track your application, know your ID and view FAQ's are three user responses linked to different flows (which are configured as separate flows). When one of the response is sent, respective flows are executed. 
-:::success
 
 ![](https://i.imgur.com/aSBbMJX.png)
 
-:::
+
 
 
 > Click **Add new trigger** to add additional triggers for the flow. You can train the bot with more than one start trigger to accomodate maximum use cases. Every trigger type has a logic for triggering the start of the communication. At least one logic must meet, when a customer is interacting with the website or application, to trigger the communication flow.
