@@ -1,6 +1,6 @@
 ---
-title: Build a Bot with Yellow.ai
-sidebar_label: Step by Step Guide to Build a Bot 
+title: Getting started with yellow.ai
+sidebar_label: Get started
 ---
 This is a step by step guide to help you understand yellow.ai platform and build your very own bot.
 As we proceed, to learn more, you can gets your hands on our detailed [Guides](https://docs.yellow.ai/docs/cookbooks/getting_started).
