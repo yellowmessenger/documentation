@@ -115,6 +115,7 @@ module.exports = {
             "platform_concepts/studio/steps/steps",
             "platform_concepts/studio/steps/prompts-and-messages",
             "platform_concepts/studio/steps/action-nodes-and-logic",
+            "platform_concepts/studio/steps/logic-nodes",
           ],
         },
 
