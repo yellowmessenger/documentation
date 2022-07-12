@@ -66,6 +66,7 @@ module.exports = {
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel",
             "cookbooks/whatsapp-channel/bot-basics",
+            
           ],
         },
         {
@@ -91,6 +92,7 @@ module.exports = {
         },
         "cookbooks/whatsapp-channel/building-flows",
         "cookbooks/whatsapp-channel/faqs",
+        "cookbooks/whatsapp-channel/testing"
       ]
     }
   ],
@@ -265,16 +267,25 @@ module.exports = {
           label: "Chats",
           collapsed: true,
           items: [
-            "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
+            // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
+            "platform_concepts/inbox/chats/types-of-chat",
             "platform_concepts/inbox/whatsapp-24hr-window-policy",
-            "platform_concepts/inbox/Chat agent activity report",
-            "platform_concepts/inbox/Chat agent performance report",
-            "platform_concepts/inbox/Chat archives report",
-            "platform_concepts/inbox/Chat report metrics 101",
             "platform_concepts/inbox/Chat auto translate",
             "platform_concepts/inbox/google-translate-api-inbox",
             "platform_concepts/inbox/Chat custom fields",
             "platform_concepts/inbox/Chat working hours",
+            {
+              type: "category",
+              label: "Reports",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/chats/reports/reports",
+                "platform_concepts/inbox/chats/reports/chat-report-metrics",
+                "platform_concepts/inbox/chats/reports/chat-agent-activity-report",
+                "platform_concepts/inbox/chats/reports/chat-agent-performance-report",
+                "platform_concepts/inbox/chats/reports/chat-archives-report",
+              ],           
+            },
           ],
         },
       ],
