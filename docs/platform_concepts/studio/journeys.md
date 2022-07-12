@@ -1,9 +1,7 @@
 ---
-title: Let's start with Journeys
+title: Getting Started With Flows/ Journey
 sidebar_label: Journeys
 ---
-
-# Flows and Journey (Studio)
 
 In this document, we discuss: 
 
