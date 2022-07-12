@@ -66,6 +66,7 @@ module.exports = {
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel",
             "cookbooks/whatsapp-channel/bot-basics",
+            
           ],
         },
         {
@@ -91,6 +92,7 @@ module.exports = {
         },
         "cookbooks/whatsapp-channel/building-flows",
         "cookbooks/whatsapp-channel/faqs",
+        "cookbooks/whatsapp-channel/testing"
       ]
     }
   ],
