@@ -47,5 +47,5 @@ docker pull algolia/docsearch-scraper
 
 4. Run the docsearch scraper
 ```
-docker run -it --env-file=.env -e "CONFIG=$(cat .config.json | jq -r tostring)" algolia/docsearch-scraper
+docker run -it --env-file=.env -e "CONFIG=$(cat config.json | jq -r tostring)" algolia/docsearch-scraper
 ```
