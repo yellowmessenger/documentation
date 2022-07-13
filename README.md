@@ -36,7 +36,16 @@ If you are using GitHub pages for hosting, this command is a convenient way to b
 https://github.com/Jeffail/benthos/tree/master/website
 
 ### Build Algolia Index
+1. Install Docker from this URL: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 
+2. Pull Docker Image of Algolia DocSearch Scraper
+```
+docker pull algolia/docsearch-scraper
+```
+
+3. Make sure `.env` and `.config` files are located at the root of the directory. `.env` contains application ID and API key of Algolia. It shouldn't be commited on the main github repository at any point of time due to security reasons. 
+
+4. Run the docsearch scraper
 ```
 docker run -it --env-file=.env -e "CONFIG=$(cat .config.json | jq -r tostring)" algolia/docsearch-scraper
 ```
