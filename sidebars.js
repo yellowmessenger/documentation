@@ -232,6 +232,11 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/email-transcript",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/chat-autotranslate",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/custom-status",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/canned-responses",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
+
               ],
             },
             {
@@ -355,7 +360,6 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/overview",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
-                "platform_concepts/engagement/outbound/templates/whatsapp-template",
               ],
             },
             {
