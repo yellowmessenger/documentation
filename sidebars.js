@@ -113,8 +113,10 @@ module.exports = {
           items: [
             //"platform_concepts/studio/cloud-function",
             "platform_concepts/studio/steps/steps",
-            "platform_concepts/studio/steps/prompts-and-messages",
-            "platform_concepts/studio/steps/action-nodes-and-logic",
+            "platform_concepts/studio/steps/message-nodes",
+            "platform_concepts/studio/steps/prompt-nodes",
+            "platform_concepts/studio/steps/action-nodes",
+            "platform_concepts/studio/steps/logic-nodes"
           ],
         },
 
@@ -125,6 +127,7 @@ module.exports = {
           items: [
             "platform_concepts/studio/natural-language-understanding/intents",
             "platform_concepts/studio/natural-language-understanding/entities",
+            "platform_concepts/studio/natural-language-understanding/utterance-report"
           ],
         },
         {

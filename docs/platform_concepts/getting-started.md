@@ -1,6 +1,6 @@
 ---
-title: Build a Bot with Yellow.ai
-sidebar_label: Step by Step Guide to Build a Bot 
+title: Build a Bot with yellow.ai
+sidebar_label: Steps to Build a Bot 
 ---
 
 See the power of Conversational AI for yourself. You can read all about it in our Studio section or you can stay on this page and build a bot immediately.
@@ -36,7 +36,10 @@ Our platform yellow.ai assists you to build virtual assistants(bots) for variou
 * Accommodating a complete e-commerce experience
 * HR automation and many more!
 
+
 Having a well defined use-case will make your bot building journey simpler and fun. For this, we recommend you to establish a flow that matches your primary use-case.
+
+
 ---
 
 Attached below is a simple flowchart (for ordering a phone) that we will use as a reference to walk you through the bot building process. 
