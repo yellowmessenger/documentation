@@ -3,12 +3,9 @@ title: Logic Nodes
 sidebar_label: Logic 
 ---
 
-
 Logic nodes can be used when the flow must be branched based on the given conditions. 
 
-## Logic
-
-### Condition
+## Condition
 
 Branch the flow based on if-else logic with this node.
 
@@ -27,7 +24,7 @@ To add an Else-if conditon, click _**+Add another condition**_.
 
 
 
-### Channel Filter 
+## Channel Filter 
 
 Similar to condition node, branch the flow based on the available active channels with this node. 
 
