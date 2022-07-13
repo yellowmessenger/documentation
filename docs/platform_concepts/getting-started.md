@@ -5,8 +5,11 @@ sidebar_label: Get started
 
 
 See the power of Conversational AI for yourself. You can read all about it in our Studio section or you can stay on this page and build a bot immediately.
+
 It is entirely your choice! If you don't know where to start, checkout this walkthrough video of yellow.ai Platform overview.
-=======
+
+---
+
 This is a step by step guide to help you understand yellow.ai platform and build your very own bot.
 As we proceed, to learn more, you can gets your hands on our detailed [Guides](https://docs.yellow.ai/docs/cookbooks/getting_started).
 
@@ -247,7 +250,7 @@ Interactions here can be monitored on the **Inbox** module. Learn more about Age
 
 ## Using Channels like Emails and SMS
 Our bots can be setup across 20+ channels to give you the exact same experience of a web based chatbot — whether it's Whatsapp, SMS, Instagram, Slack and many more!!
-=======
+
 ![](https://i.imgur.com/tb68Mze.jpg)
 
 ---
