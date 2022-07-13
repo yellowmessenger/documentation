@@ -39,7 +39,7 @@ repositories {
 dependencies {
     ...
     ...
-	   implementation 'com.github.yellowmessenger:YMChatbot-Android:2.0.+
+	   implementation 'com.github.yellowmessenger:YMChatbot-Android:2.1.+
 }
 ```
 
@@ -201,6 +201,10 @@ Speech to text can be enabled by setting the enableSpeech flag present in config
 ymChat.config.enableSpeech = true
 ```
 
+:::note Imporant
+To enable Speech to text Please add record audio permission  (`<uses-permission android:name="android.permission.RECORD_AUDIO" />`) in manifest file.
+:::
+
 ### Colors
 
 #### Status bar
@@ -298,7 +302,12 @@ try {
 }
 ```
 
-Note: API key can be found in account settings under Access keys section after you login.
+:::note API Key
+API key can be generated/found by visiting `https://cloud.yellow.ai` -> Overview -> Configure -> API Key section
+
+Existing client can upgrade their dependency to `v2.1.+` and replace exisitng key with new API Key.
+Client using SDK version below `v2.1.0` will have no impact.
+:::
 
 ## Dependencies
 
@@ -323,9 +332,7 @@ We are declaring and asking for following permission in our manifest file
 
 ```java
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
-
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
 ```
 
 All permissions will be asked at run time except INTERNET.
@@ -335,10 +342,22 @@ For attachment (picking file/images from phone storage)
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 ```
 
-For voice input
+### Conditional Permission
+
+#### Record Audio
+
+If you want to use Speech to text feature please add following permission in your manifest
 
 ```java
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+```
+
+#### Location
+
+If your bot requires Location permission please add following permission in your manifest
+
+```java
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 ```
 
 ## Important
