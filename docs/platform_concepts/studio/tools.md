@@ -104,12 +104,11 @@ You can test your bot in multiple languages, by simply selecting the language of
 
 ![](https://i.imgur.com/5pwiSUQ.png)
 
-:::info 
 To enable multiple languages:
 Go to `Overview > Configure > Edit Basic Details > Add language`
 
 ![](https://i.imgur.com/mJLXV1W.png)
-:::
+
 
 ### 2.2 Conversation 
 
@@ -144,24 +143,19 @@ Yes or No can be selected from the dropdown list. If you  want the Quick reply b
 
 Yes or No can be selected from the dropdown list. This allows the bot to understand Hinglish (Hindi + English) user utterances. Custom-made for the Indian users. 
 
-:::tip
 
 For example, when the user types 'Agent se baat karao' the bot understands that it must - connect the user to an agent. 
 
 ![](https://i.imgur.com/i2zAjhy.png)
-:::
 
 **4. Auto Detect Language**
 
 Yes or No can be selected from the dropdown list. If you select **Yes**, bot can auto-detect the language that the user has typed in and change it to their own language to respond to that (this is available only if configured). 
 
-:::info
 
 * This remains in place till 2 days or until bot language is changed by user selection through set language action node.
 
 ![](https://i.imgur.com/PcSTG5u.png)
-
-:::
 
 **5. Enable Go Back/Go Home**
 
@@ -177,24 +171,21 @@ Note : Go back keywords inside a journey take user to previous prompt. If used o
 
 Type in and configure the hot keywords of your choice to trigger the **Go back** action. 
 
-:::tip
 
 For example, if the **Go Back Aliases** is entered as **0** or '**go back**' in the settings and the user enters those words in the chat, the conversation will go back to the previous step. 
 
 ![](https://i.imgur.com/mPuaLab.jpg)
-:::
 
 **7. Go home Aliases**
 
 Type in and configure the hot keywords of your choice to trigger the **Go home** action. 
 
-:::tip
 
 For example, if the **Go Home Aliases** is entered as **x** or '**go home**' in the settings and the user enters those words in the chat, the conversation will go back to the first step.
 
 ![](https://i.imgur.com/55EjJk0.png)
 
-:::
+
 
 **8. Negation Journey**
 
@@ -269,7 +260,8 @@ Select from three options **Numbers**(default), **Alphabets** or **Emojis** (num
 
 You can display your overall prefix with bold & italic support. Default preset entry in this box is {{index}} which looks like the example above (when type is numbers).
 
-:::tip WhatsApp Only
+
+WhatsApp Only
 For example: "_Type_ *{{index}}** for" will display  prefix -
 
 "Type 1 for Gate Mechanical ", "Type 2 for AE & JE Mechanical" and so on.
@@ -277,18 +269,16 @@ For example: "_Type_ *{{index}}** for" will display  prefix -
 When 1 is typed, Gate Mechanical is selected, without having to type out the entire phrase.
 
 ![](https://i.imgur.com/yQtdhUD.png)
-:::
+
 
 **3. Show prompt again**
 
 Yes or No can be selected from the dropdown list. Enabling this will show the original prompt again after the validation failure message.
 
-:::info
 For example, for **Phone prompt**
 
 - Phone number entered is not correct [validation failure message] 
 - Can you please share your phone number? [original prompt]
-:::
 
 **4. Enable Limit on Retries**
 
@@ -363,7 +353,6 @@ In our use case, when a user wants to talk to someone from the support team and 
 
 ![](https://i.imgur.com/aahlFgb.png)
 
-:::info
 - Min Confidence is set to 0.85 and the user types "Talk to your agent", bot replies appropriately as the intent predicted is "Transfer Agent" and confidence is 1. 
 
 ![](https://i.imgur.com/U4vjhut.jpg)
@@ -371,7 +360,7 @@ In our use case, when a user wants to talk to someone from the support team and 
 - Min Confidence is set to 0.85 and the user types "Talk to tech support", bot will not be able to reply as confidence for the intent predicted is unknown. 
 
 ![](https://i.imgur.com/aok3dur.png)
-:::
+
 
 **2. Context confidence**
 
