@@ -1,11 +1,12 @@
 ---
 title: Logic Nodes
-sidebar_label: Logic
+sidebar_label: Logic 
 ---
 
 
 Logic nodes can be used when the flow must be branched based on the given conditions. 
 
+## Logic
 
 ### Condition
 

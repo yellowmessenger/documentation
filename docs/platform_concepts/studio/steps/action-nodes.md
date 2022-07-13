@@ -1,6 +1,6 @@
 ---
-title: Operational/Logical Nodes - Action and Logic
-sidebar_label: Action and Logic
+title: Action Nodes
+sidebar_label: Actions
 ---
 
 ## Action
@@ -380,11 +380,3 @@ Now if we see in this example the phone prompt is followed by a 1 min delay node
 
 
 
-## Logic
-
-### If condition
-Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
-
-<img src="https://i.imgur.com/sSq1fSG.png" alt="drawing" width="60%"/>
-
-<!-- update branch flow chart -->
