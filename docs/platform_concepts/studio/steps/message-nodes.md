@@ -16,9 +16,7 @@ You can set a delay in displaying each of these nodes.
 ![](https://i.imgur.com/0eoZrke.png)
 
 
-## Messages 
-
-### Text
+## Text
 
 Display a simple text with this node.  
 
@@ -26,7 +24,7 @@ Display a simple text with this node.
 ![](https://i.imgur.com/KwvAAwd.jpg)
 
 
-### Image 
+## Image 
 
 Display any image (less than 10MB) with this node.
 
@@ -34,7 +32,7 @@ Display any image (less than 10MB) with this node.
 ![](https://i.imgur.com/NuHZKEb.jpg)
 
 
-### Carousel 
+## Carousel 
 
 Display information using a carousel card with this node.
 
@@ -42,7 +40,7 @@ Display information using a carousel card with this node.
 ![](https://i.imgur.com/2iS11MA.png)
 
 
-### Video 
+## Video 
 
 Display any MP4 video file with this node.
 * Click the tools(channel option) symbol available below the node name.  
@@ -51,11 +49,11 @@ Display any MP4 video file with this node.
 ![](https://i.imgur.com/zAjKAVU.png)
 
 
-### File 
+## File 
 
 Display a file of the most common extension (JPG, JPEG, MP3, MP4, CSV, PDF, Doc, Docx, Txt, HTML, PPT, PPTX, etc.) with this node. 
 
-### Quick Replies
+## Quick Replies
 
 Display a question along with quick reply buttons with this node.
 Unlike the Quick Replies Prompt node, fallback message need not be configured to this nor this node is expected to follow another node.
@@ -79,7 +77,7 @@ Variable format:
   ]
 ```
 
-### WhatsApp List
+## WhatsApp List
 
 
 
