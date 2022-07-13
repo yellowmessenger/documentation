@@ -66,6 +66,7 @@ module.exports = {
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel",
             "cookbooks/whatsapp-channel/bot-basics",
+            
           ],
         },
         {
@@ -91,6 +92,7 @@ module.exports = {
         },
         "cookbooks/whatsapp-channel/building-flows",
         "cookbooks/whatsapp-channel/faqs",
+        "cookbooks/whatsapp-channel/testing"
       ]
     }
   ],
@@ -111,8 +113,10 @@ module.exports = {
           items: [
             //"platform_concepts/studio/cloud-function",
             "platform_concepts/studio/steps/steps",
-            "platform_concepts/studio/steps/prompts-and-messages",
-            "platform_concepts/studio/steps/action-nodes-and-logic",
+            "platform_concepts/studio/steps/message-nodes",
+            "platform_concepts/studio/steps/prompt-nodes",
+            "platform_concepts/studio/steps/action-nodes",
+            "platform_concepts/studio/steps/logic-nodes"
           ],
         },
 
@@ -123,6 +127,7 @@ module.exports = {
           items: [
             "platform_concepts/studio/natural-language-understanding/intents",
             "platform_concepts/studio/natural-language-understanding/entities",
+            "platform_concepts/studio/natural-language-understanding/utterance-report"
           ],
         },
         {
@@ -230,6 +235,11 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/email-transcript",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/chat-autotranslate",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/custom-status",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/canned-responses",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
+
               ],
             },
             {
@@ -353,7 +363,6 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/overview",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
-                "platform_concepts/engagement/outbound/templates/whatsapp-template",
               ],
             },
             {

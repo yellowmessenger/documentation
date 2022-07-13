@@ -1,16 +1,18 @@
 ---
-title: Operational/Logical Nodes - Action and Logic
-sidebar_label: Action and Logic
+title: Action Nodes
+sidebar_label: Actions
 ---
 
-## Action
 Action nodes are used whenever we need to take some action behind the scenes example database insert, API execution or document search etc. 
-> To use an action node, simply add it to the flow where you want the action to be done.
+
+:::info
+To use an action node, simply add it to the flow where you want the action to be done.
+:::
 
 ![](https://i.imgur.com/aBB6iDw.png)
 
 ---
-### API
+## API
 
 API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) from user inputs and then store API response in a variable for further use. 
 
@@ -47,7 +49,7 @@ return new Promise
 ```
 
 :::warning
-:pushpin: **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node.
+:pushpin: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node.
 
 [Click here to learn how to add APIs](../api-management/add-api)
 
@@ -57,7 +59,7 @@ return new Promise
 
 ---
 
-### Analytics
+## Analytics
 
 Analytics node can be used to sent analytics events at any point in the execution of journey. You type the event name to push and select value.
 
@@ -82,7 +84,7 @@ The analytics node can be used to capture custom events at any point in the exec
 
 ---
 
-### Variables
+## Variables
 Variables node can be used to set value of one or more variables at any point in the node. ([Learn how to create a variable](../bot-variables))
 > :information_source: If you leave value blank, it will set to empty string
 
@@ -90,21 +92,21 @@ Variables node can be used to set value of one or more variables at any point in
 
 ---
 
-### Database
+## Database
 Database action node helps you in perform simple insert and search operations on your [database tables](../../data/create-tables). 
 
-#### **Insert**
+### Insert
 You select insert operation to insert details against each column into any database table you select. 
 
 <img src="https://i.imgur.com/Bs3DcfA.png" alt="drawing" width="60%"/>
 
-#### **Bulk Insert**
+### Bulk Insert
 You can also do bulk insert in database instead of just one row at a time. All you need on this node is to select a variable containing data you want to insert. 
 [To be updated]
 
 <img src="https://i.imgur.com/8rnAtQ9.png" alt="drawing" width="60%"/>
 
-#### **Search**
+### Search
 You can also perform search operation in database node. 
 
 <img src="https://i.imgur.com/9yCz0DD.png" alt="drawing" width="60%"/>
@@ -130,7 +132,7 @@ You can also perform search operation in database node.
 3. **Output** : You can sort the output based on a string type column (optional), modify the size of output (maximum no. of records to fetch) and store this result in a variable.
 
 
-#### Update
+### Update
 
 <img src="https://i.imgur.com/o7lvCdC.png" alt="drawing" width="50%"/>
 
@@ -147,7 +149,7 @@ To do so:
 
 ---
 
-### Functions
+## Functions
 You can use function node to execute code at any point in the flow. 
 In this node you can select the [code function](../cloud-function) you wish to execute and [variable](../bot-variables) to store the return value of function in (optional).
 
@@ -160,7 +162,7 @@ Learn [here](../cloud-function) about different methods/arguments you can use in
 :::
 
 
-### Document Search
+## Document Search
 Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base.  (This node shows results from document cognition)
 
 <img src="https://i.imgur.com/0V43oWI.png" alt="drawing" width="70%"/>
@@ -176,7 +178,7 @@ Document Search action node is used to answer user query at any point in the flo
 
 ---
 
-### Modifier
+## Modifier
 
 Modifier node is used to perform a series of simple operations like lower case, capitilise, remove from end, replace with etc on input variable and store the 'modified' output. This node can be quick used when you want to say, modify some user input before entering to DB or pass to API node, or fetch from API and show to user etc.
 
@@ -189,7 +191,7 @@ Modifier node is used to perform a series of simple operations like lower case, 
 
 ---
 
-### Raise Ticket
+## Raise Ticket
 
 Raise ticket is used in order to connect user to the human agent. Raise Ticket Node can be found in Actions List - 
 
@@ -323,7 +325,7 @@ Inbox support auto translate feature out of the box so agents don't need to know
 ---
 
 
-### Set language
+## Set language
 You can use Set language action node to set or change the bot language at any given point in the flow. Set language action node takes only one input - variable containing ISO code of language you wish to change to. 
 (Note : You can google the ISO codes for various languages)
 
@@ -336,7 +338,7 @@ Language can only be changed to only if that language is configured in bot setti
 :::
 
 
-### Trigger Journey
+## Trigger Journey
 Trigger Journey action node can be used to trigger another journey at any point in the flow. 
 
 :::info
@@ -358,7 +360,7 @@ In verify otp node, you can also branch the flow based on verification success a
 <img src="https://i.imgur.com/aRvqus8.png" alt="drawing" width="60%"/>
 
 
-### Generate PDF
+## Generate PDF
 This node is used to generate PDFs that contain dynamic data.
 
 <img src="https://cdn.yellowmessenger.com/4yIdNmUwh3Q51626268800011.png" alt="drawing" width="60%"/>
@@ -371,7 +373,7 @@ eg: The company name is {company name}
 
   This can now be sent through the **Send file** node. Simply choose the relevant variable from the *fetch from variable* dropdown, this will send the dynamically generated file as a PDF to the user.
 
-### Delay
+## Delay
 Using this action node, we can delay the next steps of our conversational flow in a journey. We can set the delay in terms of minutes or hours.
 
 <img src="https://i.imgur.com/SOvGGjq.png" alt="drawing" width="80%"/>
@@ -380,11 +382,3 @@ Now if we see in this example the phone prompt is followed by a 1 min delay node
 
 
 
-## Logic
-
-### If condition
-Using this condition node, you can branch flow based on multiple conditions. There are a variety of conditions available , as well as multiple things you can compare with.  
-
-<img src="https://i.imgur.com/sSq1fSG.png" alt="drawing" width="60%"/>
-
-<!-- update branch flow chart -->
