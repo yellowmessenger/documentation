@@ -28,15 +28,6 @@ Any sentence can be broken down into smaller components -
 
 **Context** - In a day-to-day conversation, this generally refers to the underlying meaning of previous few exchanges. For Example - if a person is asking repeated questions about a product and says "Buy IT" , the IT here refers to the product.
 
-## Train your Intents
-
-Intents are used to train your bot to understand the language we humans speak. 
-
-For example, I want to order coffee.
-
-Sounds simple right? It’s even simpler to train your first intent.
-
-
 ## 1. Usecase 
 
 In this guide, we will be building an intent for Jimmy's cafe. You can consider the following scenario for your bot.
@@ -49,14 +40,14 @@ Follow the given steps to train your intents:
 
 ### Set up a flow/journey 
 
-Before you train your first intent and create your first [flow](https://docs.yellow.ai/docs/platform_concepts/studio/journeys/) in the studio module of the platform. 
+Before you train your first intent, create your first [flow](https://docs.yellow.ai/docs/platform_concepts/studio/journeys/) in the studio module of the platform. 
 
 To know more about setting up your first bot [click here](https://docs.yellow.ai/docs/platform_concepts/getting-started#step-by-step-guide-on-how-to-get-started-with-yellowai)
 
 
 ### Open Intents Page
 
-After creating the required flows, can click on **Intents** on the **NLU** dropdown.
+After creating the required flows, click on **Intents** in the **NLU** dropdown.
 
 ![](https://i.imgur.com/Eh21nPG.png)
 
@@ -70,13 +61,13 @@ There are several ways in which a customer would like to  place an order for a c
 
 You can group all these statements in an intent called **order**. 
 
-To add a new intent, click on **+ Add an Intent** button and manually add the first Utterance.
+To add a new intent, click on **+ Add new Intent** button and manually add the first Utterance.
 
 ![](https://i.imgur.com/AnO2L8s.png)
 
 ### Add Utterance
 
-Once you have created an intent, add utterances to the intent. Utterances are statements or queries that users may type in for the bot hoping that the bot would understand. 
+Once you have created an intent, add utterances to the intent. Utterances are phrases or queries that users may type in the bot hoping that the bot would understand. 
 
 There are two ways to add Utterances to an intent:
 
@@ -92,7 +83,7 @@ Type in your utterance and click on add to add the utterance to an intent.
 
 Yellow.ai has data collected from over 100+ bots. This data is used to curate the suggested utterance section. In this section, you can see phrases similar to the first utterance you added. 
 
-At a time you may be able to view only 7 suggested utterances. However, the refresh button will allow you to access a fresh batch of utterances every time you click on it. You may add a few utterances by clicking the **'+'** sign next to them or add all of them by selecting the check box next to 'Suggested utterances'.
+The refresh button will allow you to access a fresh batch of utterances every time you click on it. You may add a few utterances by clicking the **'+'** sign next to them or add all of them by selecting the check box next to 'Suggested utterances'.
 
 ![](https://i.imgur.com/YQ9p7HK.png)
 
@@ -102,12 +93,12 @@ This would save you the effort of thinking of phrases and help you create intent
 
 Finally, all you need to do is click on **Train Intents**.
 
-You can train the intent after adding only 2 utterances, but it's recommended to train your intent after adding at least 15 utterances. 
+You can train the intent after adding 2 utterances, but it's recommended to train your intent after adding at least 15 utterances. 
 
 ![](https://i.imgur.com/Rh5BkD1.png)
 
 :::info
-To know more about the best practices [**click here**](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents/#utterance--journey-best-practices).
+To know more about best practices [**click here**](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents/#utterance--journey-best-practices).
 :::
 #### Change the Number of Epochs
 
@@ -120,15 +111,13 @@ You can increase the number of epochs for training your intent. The number of ep
 
 ### Connect to Bot
 
-Now that you have trained your intent,  it is time to connect it to your bot. You have to connect the flow you built for the intent '**Order**'.
+Now that you have trained your intent,  it is time to connect it to your bot. You have to connect the flow you built to the intent '**Order**'.
 
-To do this click **Start Trigger** and configure the intent to the node. 
-
-![](https://i.imgur.com/v2uqf9O.png)
+To do this click on the **Start Trigger** and configure the intent to the node. 
 
 Click the drop-down and select ‘#order’ intent.
 
-![](https://i.imgur.com/YEQ45mZ.png)
+![](https://i.imgur.com/arEPFgW.gif)
 
 
 Every time a user asks a query similar to the utterances within 'order' the flow you created would get triggered.
@@ -156,7 +145,7 @@ To test your bot you can follow these steps:
 
 #### 2. Test Your Intent
  
-To see what response is generated by the model when a user types a query. Click [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools) and the section 'Test your bot'.
+To see what response is generated by the model when a user types a query. Click on [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools) and the section 'Test your bot'.
 
 ![](https://i.imgur.com/I8iUEwt.gif)
 
@@ -184,7 +173,7 @@ For a better understanding of your intent, you can generate an utterance report 
 
 The report will give you insights into the following:
 
-#### 1. Conflicts within Intents and FAQ's
+#### 1. Conflicts within Intents and FAQs
 Let's say that you have an intent to Welcome a customer. You add two utterances:
 1. Hi
 2. Hiii
