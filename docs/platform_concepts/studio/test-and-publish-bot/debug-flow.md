@@ -10,7 +10,7 @@ It could be:
 * A logical error with in the flow
 * A syntax/datatype mismatch
 * Missing/null values being passed in mandatory fields
-* There's no such thing as perfection and sometimes we fall into the same pit with our platform🥲. Please reach out to us if this is the case.
+* There's no such thing as perfection and sometimes we fall into the same pit with our platform. Please reach out to us at support@yellow.ai if this is the case.
 
 Let's go through some of the commonly observed errors and how to go about resolving them
 
