@@ -12,6 +12,12 @@ It is a three step process from creating a template to finally using it in a cam
 3. Scheduling the campaign to a user segment at a desired time.
 
 
+## Pre-requisites:
+
+-   _Whatsapp channel to be configured under "channels"_(# How to configure Whatsapp channel).
+-   _Account should be active and status to be "connected"_
+
+
 First we will learn how to create a whatsapp template.
 
 ### 1. Creating a whatsapp template & sending for approval
@@ -28,12 +34,14 @@ First we will learn how to create a whatsapp template.
 
 ![](https://i.imgur.com/rhprRtz.png)
 
+
 4. The whatsapp template screen will pop up.
 ![](https://i.imgur.com/cbxvaHy.png)
 
 
 #### Template name
 This would only be used for your reference and won’t be seen by the client.
+
 
 #### Category
 Whatsapp allows us to choose from 3 categories- 
@@ -48,7 +56,8 @@ Whatsapp allows users to create templates in multiple languages, according to th
 If you want to include media or documents in your template messages, then Header Section will be of high importance. Whatsapp has certain guidelines for that too.
 ![](https://i.imgur.com/PvvseSj.png)
 
-The Header is completely optional and can include the following-
+The Header is completely optional and can include the following:
+
 * Image 
 * Video
 * Document
@@ -109,6 +118,22 @@ You can add a maximum of 3 quick reply buttons, The button text can have a maxim
 ![](https://i.imgur.com/mRFh4b7.png)
 
 
+### Approval duration taken by Whatsapp:
+
+WhatsApp reviews and approves each message template, typically 48 hours or less, to maintain high-quality content and avoid spam.
+_**WhatsApp is committed to responding to template submissions within 48 hours, excluding weekends and holidays.**_
+If you are experiencing delays more than 48 hours, please create a support ticket to support@yellow.ai with the details of the template that you created.
+
+### Approval Status
+
+    There are 3 statuses for the whatsapp templates approval you can see from overview page. They are defines as below:
+
+
+<span style="color:blue"> Approved </span> : Approved from whatsapp and ready to use for campaigns
+Pending : Approval pending with whatsapp and it is supposed to be updated in 48 business hours.
+Rejected : Whatsapp has rejected the template because of any one the below reason.
+
+
 
 ### 2.  Avoiding template rejections
 
@@ -124,7 +149,7 @@ Your template can either be approved, rejected or pending.
 
 #### Reasons for rejections
 
-You can refer to this [Link](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/) for detailed reasons for rejections. I will be posting some major reasons here - 
+You can refer to this [link](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/) for detailed reasons for rejections. I will be posting some major reasons here - 
 * Spelling or grammatical errors.
 * Variable parameters are missing or have mismatched curly braces. The correct format is {{1}}.
 * Variable parameters are not defined.
@@ -145,4 +170,4 @@ You can refer to this [Link](https://developers.facebook.com/docs/whatsapp/messa
 
 ### 3.  Scheduling the campaign to a user segment at the desired time.
 
-You can refer to this [Doc](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign) for the same.
+You can refer to this [doc](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign) for the same.

@@ -171,6 +171,12 @@ As you can see my model understands that the phrase is a part of the intent 'ord
 
 For a better understanding of your intent, you can generate an utterance report after the intital NLU is set up on a monthly basis.
 
+
+***Understanding Confidence score*** (0 to 1) is a rating generated for every utterance to show how accurate is that utterance in pointing towards the given intent. 
+- Once you have trained your bot. Every utterance under the NLU section will generate this confidence. A value between 0 to 1 (1 being good and 0 being bad) will be assigned to every utterance. 
+- Any utterance with lower value (lower confidence) will mean that the utterance is bad or does not go with the utterances added in that particular intent. 
+
+
 The report will give you insights into the following:
 
 #### 1. Conflicts within Intents and FAQs
@@ -196,7 +202,7 @@ This would result in a 100% similarity between both the intents and would confus
 
 This conflict can be resolved by either deleting the intent or by deleting a similar utterance. 
 
-To learn more about generating an utterance report [click here](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents/#understanding-confidence-and-utterance-report)
+To learn more about generating an utterance report [click here](https://docs.yellow.ai/docs/platform_concepts/studio/train/utterance-report)
 
 
 
@@ -408,29 +414,3 @@ Adding utterances here will unnecessarily increase the complexity of the NLP Mod
 - [ ] Mininum 2 intents are required to train a bot
 :::
 
-### Understanding Confidence and Utterance Report
-
-***Confidence score*** (0 to 1) is a rating generated for every utterance to show how accurate is that utterance in pointing towards the given intent. 
-- Once you have trained your bot. Every utterance under the NLU section will generate this confidence. A value between 0 to 1 (1 being good and 0 being bad) will be assigned to every utterance. 
-- Any utterance with lower value (lower confidence) will mean that the utterance is bad or does not go with the utterances added in that particular intent. 
-
-![](https://i.imgur.com/Qf1fVKK.png)
-
-
-:::info
-### Generate Utterance Reports :spiral_note_pad: 
-Now you can also run **Generate utterance reports** on your bot to evaluate how well your bot utterances are designed. The report will tell you how 'similar' your utterances within an intent and if there are any intents common in between journeys' 
-
-![](https://i.imgur.com/FOl18v1.png)
-
-***Request folks to generate utterance report after initial NLU setup and regularly at least once a month.***
-:::
-
-
-### Testing Utterances
-
-There is an option in the Studio/ Flows section called [Tools](../tools), also available in the NLU section. 
-
-Under tools, you'll see the 'Test your bot' box where you can test your utterances and see the score and intent they are triggering and many more details. 
-
-![](https://i.imgur.com/iZyoZrj.png)
