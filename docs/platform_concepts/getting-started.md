@@ -247,12 +247,6 @@ For example, when the **Chat With an Agent** template is selected, the bot is pr
 
 Interactions here can be monitored on the **Inbox** module. Learn more about Agents and Inbox module **[here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox)**.
 
-
-## Using Channels like Emails and SMS
-Our bots can be setup across 20+ channels to give you the exact same experience of a web based chatbot — whether it's Whatsapp, SMS, Instagram, Slack and many more!!
-
-![](https://i.imgur.com/tb68Mze.jpg)
-
 ---
 
 
