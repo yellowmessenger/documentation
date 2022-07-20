@@ -6,19 +6,19 @@ const Footer = () => {
   const learn = [
     {
       title: "Journey",
-      to: "./docs/platform_concepts/studio/journeys",
+      to: "./docs/platform_concepts/studio/build/journeys",
     },
     {
       title: "Nodes",
-      to: "./docs/platform_concepts/studio/steps/steps",
+      to: "./docs/platform_concepts/studio/build/nodes/nodes",
     },
     {
       title: "Intent",
-      to: "./docs/platform_concepts/studio/natural-language-understanding/intents",
+      to: "./docs/platform_concepts/studio/train/intents",
     },
     {
       title: "Variables",
-      to: "./docs/platform_concepts/studio/bot-variables",
+      to: "./docs/platform_concepts/studio/build/bot-variables",
     },
   ];
 
@@ -29,7 +29,7 @@ const Footer = () => {
     },
     { 
       title: "Invoke an API in the bot", 
-      to: "./docs/platform_concepts/studio/api-management/add-api" 
+      to: "./docs/platform_concepts/studio/api/add-api" 
     },
     { 
       title: "Setup Inbox", 
@@ -37,7 +37,7 @@ const Footer = () => {
     },
     { 
       title: "Use DocCog", 
-      to: "./docs/platform_concepts/studio/knowledge-management/what-is-document-cognition#usage" 
+      to: "./docs/platform_concepts/studio/train/what-is-document-cognition" 
     },
   ];
 

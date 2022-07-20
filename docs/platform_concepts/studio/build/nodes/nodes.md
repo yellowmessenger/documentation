@@ -3,7 +3,7 @@ title: Nodes Overview
 sidebar_label: Overview
 ---
 
-Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/journeys).  
+Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys).  
 
 ## 1. Types 
 
@@ -41,7 +41,7 @@ Nodes can be added to this start node in two different ways:
 
 A flow is usually built using a series of smaller nodes. Each flow must have a minimum of two nodes configured.
 
-* **Start Trigger**: First node must always be a trigger (click [here](https://docs.yellow.ai/docs/platform_concepts/studio/journeys) to learn more). You can configure how to trigger this flow. That is, by means of Intents, Entities, URL Events, or other flows.
+* **Start Trigger**: First node must always be a trigger (click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) to learn more). You can configure how to trigger this flow. That is, by means of Intents, Entities, URL Events, or other flows.
 * Add any of the following nodes one by one to continue this flow with a logic. 
     * **Prompts**: These nodes expect user inputs- when the input is invalid, fallback messages are displayed. They are interactive/conversational nodes.
     * **Messages**: Use these nodes to display messages, files, images etc. 

@@ -24,7 +24,7 @@ Ask and validate the user name with this node. When the user enters a sentence i
 ![](https://i.imgur.com/Rr81uih.png)
 
 
-Create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the user name in it. 
+Create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and store the user name in it. 
 
 
 ![](https://i.imgur.com/t8UFyzS.png)
@@ -40,7 +40,7 @@ When the user enters a number of length greater than 10, validation fails and th
 
 > One phone node can only support validation of one country code. 
 
-Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the number in it. 
+Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and store the number in it. 
 
 ### Date 
 
@@ -333,7 +333,7 @@ To use buttons (Quick reply like action) use one Carousel card without adding an
 
 ![](https://i.imgur.com/nmWXMaR.png)
 
-You will be permitted to add only 3 buttons on the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the selected response in it. 
+You will be permitted to add only 3 buttons on the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and store the selected response in it. 
 
 Given below is the whatsapp chat screen for the above flow.
 
@@ -368,7 +368,7 @@ Ask, validate and store JPG/ PNG files with this node.
 
 It will validate if the uploaded file is in JPG/PNG format and its size is less than 5MB.
 
-Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the file in it. 
+Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and store the file in it. 
 
 
 ## 3. Social Media 
