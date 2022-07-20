@@ -69,43 +69,43 @@ Coming soon
 
 ## Use Variables in a Node
 
-### [Prompt](../studio/steps/prompts-and-messages)
+### [Prompt](../studio/build/nodes/prompt-nodes)
 
 Different prompts return a response in different formats and datatype. You can refer to the table below to understand which variable datatype should be used with which prompt.
 
 | Prompt                                                                     | Variable Datatype |
 |----------------------------------------------------------------------------|-------------------|
-| [Name](../studio/steps/prompts-and-messages#use-case-specific)             | string            |
-| [Email](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
-| [Phone](../studio/steps/prompts-and-messages#use-case-specific)            | string            |
-| [Location](../studio/steps/prompts-and-messages#location-prompt)           | object            |
-| [Carousel](../studio/steps/prompts-and-messages#carousel)                  | string            |
-| [Quick Replies](../studio/steps/prompts-and-messages#quick-replies)         | string            |
-| [Date](../studio/steps/prompts-and-messages#date-prompt)                    | object            |
-| [Question](..studio/steps/prompts-and-messages#general---question)         | string            |
-| [Feedback](..studio/steps/prompts-and-messages#feedback-prompt)            | object            |
-| [Whatsapp List](../studio/steps/prompts-and-messages#whatsapp-list-prompt) | string            |
+| [Name](../build/nodes/prompt-nodes#name)             | string            |
+| [Email](../build/nodes/prompt-nodes#email)            | string            |
+| [Phone](../build/nodes/prompt-nodes#phone)            | string            |
+| [Location](../build/nodes/prompt-nodes#location)           | object            |
+| [Carousel](../build/nodes/prompt-nodes#carousel)                  | string            |
+| [Quick Replies](../build/nodes/prompt-nodes#quick-replies)         | string            |
+| [Date](../build/nodes/prompt-nodes#date)                    | object            |
+| [Question](../build/nodes/prompt-nodes#question)         | string            |
+| [Feedback](../build/nodes/prompt-nodes#feedback)            | object            |
+| [Whatsapp List](../build/nodes/prompt-nodes#whatsapp-list) | string            |
 | Multiselect                                                                | string            |
-| [Image/file](../studio/steps/prompts-and-messages#files-images-videos)        | string            |
+| [Image/file](../studio/build/nodes/prompt-nodes#images)        | string            |
 
-### [Actions](../studio/steps/action-nodes-and-logic)
+### [Actions](../build/nodes/action-nodes)
 Action nodes provides response in various datatype. You can refer to the table below to understand which variable datatype should be used with which action node.
 
 | Action Node                                                                 | Variable Datatype             |
 |-----------------------------------------------------------------------------|-------------------------------|
-| [API](../studio/steps/action-nodes-and-logic#api)                           | object, array, number, string |
-| [Database (search)](../studio/steps/action-nodes-and-logic#search)          | array                         |
-| [Function](../studio/steps/action-nodes-and-logic#functions)                 | object, array, number, string |
+| [API](../build/nodes/action-nodes#api)                           | object, array, number, string |
+| [Database (search)](../build/nodes/action-nodes#search)          | array                         |
+| [Function](../build/nodes/action-nodes#function)                 | object, array, number, string |
 | Outbound Notification                                                       | object, array, number, string |
 | Notification Status                                                         | object, array, number, string |
-| [Raise ticket](../studio/steps/action-nodes-and-logic#raise-ticket)         | object, array, number, string |
-| [Modifier](../studio/steps/action-nodes-and-logic#modifier)                 | object, array, number, string |
-| [Document Search](../studio/steps/action-nodes-and-logic#document-search)   | object, array, number, string |
-| [Set Language](../studio/steps/action-nodes-and-logic#set-language)         | object, array, number, string |
-| [Send OTP](../studio/steps/action-nodes-and-logic#send-otp-and-verify-otp)   | object, array, number, string |
-| [Verify OTP](../studio/steps/action-nodes-and-logic#send-otp-and-verify-otp) | object, array, number, string |
+| [Raise ticket](../build/nodes/action-nodes#raise-ticket)         | object, array, number, string |
+| [Modifier](../build/nodes/action-nodes#modifier)                 | object, array, number, string |
+| [Document Search](../build/nodes/action-nodes#document-search)   | object, array, number, string |
+| [Set Language](../build/nodes/action-nodes#set-language)         | object, array, number, string |
+| [Send OTP](../build/nodes/action-nodes#send-otp)   | object, array, number, string |
+| [Verify OTP](../build/nodes/action-nodes#verify-otp) | object, array, number, string |
 | Payment                                                                     | object, array, number, string |
-| [Generate PDF](../studio/steps/action-nodes-and-logic#generate-pdf)         | object, array, number, string |
+| [Generate PDF](../build/nodes/action-nodes#generate-pdf-image)         | object, array, number, string |
 
 
 ## Storing in a variable
@@ -124,7 +124,7 @@ Journey and Global variables get expired after 48 hours of inactivity.
 ## Advanced example
 **Accessing variable fields and index in JSON object, array type stored in a variable.**
 
-Above was very simple, but often, in this example in [API action node](../studio/steps/action-nodes-and-logic#api), the response you store is not a simple string or value.
+Above was very simple, but often, in this example in [API action node](../build/nodes/action-nodes#api), the response you store is not a simple string or value.
 
 Consider following response from a weather API
 

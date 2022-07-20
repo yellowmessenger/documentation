@@ -139,19 +139,19 @@ Start trigger enables you to configure the initiation of a bot communication flo
 
 Flow is triggered using one of the following:
 
-* **Intent**: Start the flow with an action statement, how to book a test drive, connect to a service center, find the status of an order, and find the best product on a website. For example, if a customer types How to book a test ride, the bot triggers the configured flow of the *#test ride* intent. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents/)to learn more about intents. 
+* **Intent**: Start the flow with an action statement, how to book a test drive, connect to a service center, find the status of an order, and find the best product on a website. For example, if a customer types How to book a test ride, the bot triggers the configured flow of the *#test ride* intent. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents/)to learn more about intents. 
 
 ![](https://i.imgur.com/nGgAQVN.png)
 
 
 
-* **Entities**: Start the flow with the primary object(s) of a query, such as the cheapest flight, customer service number, sedan cars, rooms in a hotel, and best beauty products. For example, if a customer types studio, the bot triggers the configured flow associated with the studio model. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/entities/#entity-types)to learn more about entities. 
+* **Entities**: Start the flow with the primary object(s) of a query, such as the cheapest flight, customer service number, sedan cars, rooms in a hotel, and best beauty products. For example, if a customer types studio, the bot triggers the configured flow associated with the studio model. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities/#entity-types)to learn more about entities. 
 
 
 ![](https://i.imgur.com/pMCcjPJ.png)
 
 
-* **Event**: Start the flow with an event, such as a bot pops up when a customer visits the Contact us page or the Home page of the website or app. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/event-hub/)to learn more about configuration of events.
+* **Event**: Start the flow with an event, such as a bot pops up when a customer visits the Contact us page or the Home page of the website or app. [Click here ](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/)to learn more about configuration of events.
 
 * **Page Url**: Start a flow with a page Url. For example, triggering the help center url on contact us page.
 
@@ -177,5 +177,5 @@ For example, track your application, know your ID and view FAQ's are three user 
 **What Next?**
 
 Series of **nodes** are used to create a flow. There are multiple nodes available on our platform.
-* Learn about different **nodes** [here](https://docs.yellow.ai/docs/platform_concepts/studio/steps/steps) and create a complete flow.
+* Learn about different **nodes** [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/) and create a complete flow.
 * Test the flow.

@@ -9,15 +9,15 @@ sidebar_label : Using Bearer Token in an API
 
 ![](https://i.imgur.com/zZCcghI.png)
 
-2. Add another API where the bearer token API will be used. Here we will be adding a search lead API from Salesforce. One thing to note here is that we need to pass a bearer token in the headers and email as a [parameter to this API](./send-data). So we will fetch values from [variables](../bot-variables) and pass it to the API using this syntax `{{{variable_name}}}`; as shown in the screenshots below. 
+2. Add another API where the bearer token API will be used. Here we will be adding a search lead API from Salesforce. One thing to note here is that we need to pass a bearer token in the headers and email as a [parameter to this API](./send-data). So we will fetch values from [variables](../build/bot-variables) and pass it to the API using this syntax `{{{variable_name}}}`; as shown in the screenshots below. 
 
 <img src="https://i.imgur.com/HJUtzk7.png" alt="drawing" width="60%"/>
 
 <img src="https://i.imgur.com/Xu6yn3O.png" alt="drawing" width="60%"/>
 
-3. Go back to Studio > Build > Flows and create a journey named `salesforceAuth` to invoke auth API using [API action node](../steps/action-nodes-and-logic#api) and store response in `sf_auth_response` variable. 
+3. Go back to Studio > Build > Flows and create a journey named `salesforceAuth` to invoke auth API using [API action node](../build/nodes/action-nodes#api) and store response in `sf_auth_response` variable. 
 
-Problem with this API is that most API which requires bearer token authentication requires the token to be in this format `Bearer TOKEN_HERE`. Auth API only returns a token without `Bearer` prefix. Hence, we can use a [variable action node](../steps/action-nodes-and-logic#variables) to add a `Bearer` prefix to the token. Create another variable `auth_token` and use this syntax to add a prefix `Bearer {{{variables.sf_auth_response}}}`.
+Problem with this API is that most API which requires bearer token authentication requires the token to be in this format `Bearer TOKEN_HERE`. Auth API only returns a token without `Bearer` prefix. Hence, we can use a [variable action node](../build/nodes/action-nodes#variables) to add a `Bearer` prefix to the token. Create another variable `auth_token` and use this syntax to add a prefix `Bearer {{{variables.sf_auth_response}}}`.
 
 On the other hand, incase API node goes to fallback You can add a text message node and trigger a welcome journey.
 
@@ -25,7 +25,7 @@ On the other hand, incase API node goes to fallback You can add a text message n
 
 4. Create / open journey where you’re planning to use Salesforce Search API. During the course of this tutorial we will call it `salesforceSearchLead` journey. Here what we want is to trigger the `salesforceauth` API first and store the bearer token in the `auth_token` variable which will be used here.
 
-Hence, in this journey, you need to add a [Trigger journey node](../steps/action-nodes-and-logic#trigger-journey) and trigger `salesforceauth` journey. Once the `salesforceauth` journey is executed, the current journey `salesforceSearchLead` will be executed. Now in the API action node, select the `get_lead` API and under parameters select `auth_token` and `email` variables.
+Hence, in this journey, you need to add a [Trigger journey node](../build/nodes/action-nodes#trigger-journey) and trigger `salesforceauth` journey. Once the `salesforceauth` journey is executed, the current journey `salesforceSearchLead` will be executed. Now in the API action node, select the `get_lead` API and under parameters select `auth_token` and `email` variables.
 
 Finally, store the response of this API in `sf_search_lead_response`.
 

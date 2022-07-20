@@ -100,7 +100,7 @@ It can be as simple as “Hey! How can I help you today” or “Welcome to the 
 
 The words Flows and Journeys are used interchangeably throughout this documentation, it stands for the actual customer journey/ path we’d like our end users to go through. 
 
-A more elaborate description can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/journeys/)**..
+A more elaborate description can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys)**..
 * To create a flow, click the dropdown **FLOWS** in the middle of the screen and select **+ CREATE FLOW**.
 
 ![](https://i.imgur.com/bjIlt6H.png)
@@ -127,7 +127,7 @@ Nodes can be added using two different methods, listed below:
 
 ![](https://i.imgur.com/uGOUyyI.png)
 
-For example, from **Prompts**, if you select **Name**- your bot will ask the user for their Name after getting started. Similarly, from **Actions**, if you select **Send OTP**, generated OTP will be sent to the email ID or the Phone Number. You can find more information on the nodes **[here](https://docs.yellow.ai/docs/platform_concepts/studio/steps/prompts-and-messages)**.
+For example, from **Prompts**, if you select **Name**- your bot will ask the user for their Name after getting started. Similarly, from **Actions**, if you select **Send OTP**, generated OTP will be sent to the email ID or the Phone Number. You can find more information on the nodes **[here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes)**.
 
 Flow of the below use-case consists of Quick-Repy, Email, DB and Text nodes.
 
@@ -140,7 +140,7 @@ Flow of the below use-case consists of Quick-Repy, Email, DB and Text nodes.
 **Variables** are used when you want to save the user response to any of the questions asked during the flow. 
 
 There are different types of variables, some are pre-made for every bot and others are customizable. 
-Custom variables can be added by you based on your needs. All the information you need on variables can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/)**.
+Custom variables can be added by you based on your needs. All the information you need on variables can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)**.
 
 Attached below is an example of custom variable that is used to store the user's query.
 
@@ -167,7 +167,7 @@ In such cases, we have a robust **Natural Language Understanding(NLU**) engine w
 > Note: You must always have a minimum of 2 trained intents.
 
 
-Our documentation does a deep dive on **how to setup intents, utterances and entities** along with best practices. You can find them **[here](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents)**.
+Our documentation does a deep dive on **how to setup intents, utterances and entities** along with best practices. You can find them **[here](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)**.
 
 Attached below is an intent to identify and initilise a flow when a user wants **to place an order**.
 
@@ -180,7 +180,7 @@ It is considered as a good practice to build smaller flows and direct the users 
 
 There are two methods to trigger a flow: 
 
-1. Using the [Trigger Journey node](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic/#trigger-journey). For example, in the below flowchart, PlaceOrder flow has been triggered.
+1. Using the [Trigger Journey node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#trigger-journey). For example, in the below flowchart, PlaceOrder flow has been triggered.
 
 ![](https://i.imgur.com/eK9A2xw.png)
 
@@ -193,7 +193,7 @@ There are two methods to trigger a flow:
 
 All the details and interactions with the bot can be stored in the database that can be designed to fetch the required details. 
 
-* Start by creating **Tables** on the **Database** page. Learn more **[here](https://docs.yellow.ai/docs/platform_concepts/data/create-tables)**.
+* Start by creating **Tables** on the **Database** page. Learn more **[here](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables)**.
 
 ![](https://i.imgur.com/ZEXZO5P.png)
 
