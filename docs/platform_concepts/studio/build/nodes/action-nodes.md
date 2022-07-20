@@ -12,7 +12,7 @@ Actions are non-interactive nodes that can be used to perform a specific task (b
 ### Send Event 
 
 Send an event with this node. Events are used to record a specific actions or capture an important conversion, click [here](
-https://docs.yellow.ai/docs/platform_concepts/studio/event-hub/#type-of-events) to learn more.
+https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#type-of-events) to learn more.
 
 ![](https://i.imgur.com/6obnCs8.png)
 
@@ -48,7 +48,7 @@ Answer user query referring to the available documents from your knowledge base 
 
 
 
-Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base.  (This node shows results from [Document Cognition](https://docs.yellow.ai/docs/platform_concepts/studio/knowledge-management/what-is-document-cognition/#when-to-not-use-document-cognition))
+Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base.  (This node shows results from [Document Cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition/#when-to-not-use-document-cognition))
 
 ![](https://i.imgur.com/plCzZin.png)
 
@@ -312,7 +312,7 @@ return new Promise
 
 ```
 
-> **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node. [Click here](../api-management/add-api) to learn how to add APIs.
+> **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node. [Click here](../api/add-api) to learn how to add APIs.
 
 ![](https://i.imgur.com/dklBqQZ.jpg)
 
@@ -327,7 +327,7 @@ Set the value of one or more variables with this node. Learn how to create a var
 
 ### Database 
 
-Database action node helps you in perform simple insert, update and search operations on your [database tables](../../data/create-tables). 
+Database action node helps you in perform simple insert, update and search operations on your [database tables](../../table/create-tables). 
 
 #### Insert
 You select insert operation to insert details against each column into any database table you select. 
@@ -384,7 +384,7 @@ Update option in the database node can be used to update values stored in the ta
 
 ### Function 
 
-Execute custom code written for a function with this node. In this node you can select the function you wish to execute and [variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables) to store the return value of function (optional).
+Execute custom code written for a function with this node. In this node you can select the function you wish to execute and [variable](https://docs.yellow.ai/docs/platform_concepts/studio/train/bot-variables) to store the return value of function (optional).
 
 
 ![](https://i.imgur.com/v4HNlCq.png)

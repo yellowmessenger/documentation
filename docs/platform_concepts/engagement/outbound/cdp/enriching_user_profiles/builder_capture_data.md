@@ -21,7 +21,7 @@ In this document, we will cover:
 
 User properties are available in all nodes of the builder under **"User properties"**.
 
-Many times, you’ll directly ask the users for information like name, email, phone number. The response to these questions can be stored in the relevant user property, to enrich the user profile. This is where [Prompt Nodes](../../../../studio/steps/prompts-and-messages/) come in handy.
+Many times, you’ll directly ask the users for information like name, email, phone number. The response to these questions can be stored in the relevant user property, to enrich the user profile. This is where [Prompt Nodes](../../../../studio/build/nodes/prompt-nodes) come in handy.
 
 To store a user’s response, click on the drop down next to **Store Response in**: → pick any user property under **“User properties”**
 
@@ -29,7 +29,7 @@ To store a user’s response, click on the drop down next to **Store Response in
 
 A lot of times, the data can not be gathered by directly asking users questions. For example, you might want to fetch certain data from the event payload and pass it to a user property.
 
-This is where a [Variables Node](../../../../studio/steps/action-nodes-and-logic/#variables) comes in handy. From the drop down, select any User Property you want to pass the data to.
+This is where a [Variables Node](../../../../studio/build/nodes/action-nodes/#variables) comes in handy. From the drop down, select any User Property you want to pass the data to.
 
 <img src="https://i.imgur.com/NWnn7uW.png" alt="drawing" width="60%"/>
 

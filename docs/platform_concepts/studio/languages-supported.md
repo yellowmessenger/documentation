@@ -3,6 +3,9 @@ title: Languages Supported
 sidebar_label: Languages
 ---
 
+# Language
+
+
 Hi, Hola, Konnichiwa, Bonjour! 
 **One platform, 100+ languages.** Because there are many languages your customers want to engage with you in! 
 Check out the list of Native Language Support offered on our platform, across text and voice.

@@ -28,9 +28,9 @@ If you're getting started or looking for more practical end-to-end guides, check
 Studio consists of following modules:
 
 - **Build**
-    - **Flows**: Here conversational flow can be designed using [journeys](../studio/journeys) and [nodes](../studio/steps/steps/). 
-    - **NLU**: The heart and soul of a bot "**Natural Language Understanding**" capabilities can be added to bot in this section. You can train your bot here to [respond to various user utterances](./natural-language-understanding/intents),  [detect entities](./natural-language-understanding/entities) etc. 
-    - **API**: To [integrate APIs](./api-management/add-api) in a bot this module can be used.
+    - **Flows**: Here conversational flow can be designed using [journeys](../studio/build/journeys) and [nodes](../studio/build/nodes/nodes). 
+    - **NLU**: The heart and soul of a bot "**Natural Language Understanding**" capabilities can be added to bot in this section. You can train your bot here to [respond to various user utterances](./train/intents),  [detect entities](./train/entities) etc. 
+    - **API**: To [integrate APIs](./api/add-api) in a bot this module can be used.
     - **Code**: Bot builders can write your code functions here if needed and attach them using function node to workflow. 
 
 :::info
@@ -40,8 +40,8 @@ Studio consists of following modules:
 :::
 
 - **Learn**: This module improves your bot training over-time by self-learning.
-- **FAQ**: This module can be used to [add FAQs](./knowledge-management/add-faqs) in a bot.
-- **Document Cognition**: Using [document cognition](./knowledge-management/what-is-document-cognition) capabilities, bot can answer user queries through unstructured documents.
+- **FAQ**: This module can be used to [add FAQs](./train/add-faqs) in a bot.
+- **Document Cognition**: Using [document cognition](./train/what-is-document-cognition) capabilities, bot can answer user queries through unstructured documents.
 
 - **Event hub**: This module helps you add and handle various events.
 - **Chat logs**: This module detects patterns in selected conversations and tags them with actionables that can directly help you improve your bot flows. 
@@ -64,28 +64,28 @@ There can be multiple use cases for which you started building a bot - in most c
 Above points describe the scope of your bot, ie, what can your bot help your customers with. Once you're clear with what you want to do, first thing you will start with is designing the flow of conversation, right from where the conversation starts.
 
 1. **First step** of this flow design is configuring the **Welcome prompt** you see above. Welcome prompt helps you configure the first message your bot shows to user. 
-2. Now that your welcome message is set, next you can plan is designing the flows we discussed above. We do this with the help of **Journeys.** You will learn more about [**Journeys**](./journeys) in next section.
-3. In above flow you also wanted to **answer customer FAQs**, these FAQs can be added in the [**FAQ**](./knowledge-management/add-faqs) section.
-4. Moreover you can also handle [**contextual questions**](./context-management/add-contextual-response). 
+2. Now that your welcome message is set, next you can plan is designing the flows we discussed above. We do this with the help of **Journeys.** You will learn more about [**Journeys**](./build/journeys) in next section.
+3. In above flow you also wanted to **answer customer FAQs**, these FAQs can be added in the [**FAQ**](./train/add-faqs) section.
+4. Moreover you can also handle [**contextual questions**](./train/add-contextual-response). 
 5. Lastly as in above screen, you can **configure your fallback options**. When user says something that bot doesn't understand, or is not in scope of the bot, bot goes through fallback flow. 
     Fallback consists of three parts:
     - **Suggestions** : When bot doesn't understand user input, it will help by trying to suggest journeys close to what user might want (if available). ***You should enable suggestions for a good user experience!***
-    - **Document Search** : Another fallback bot can resort to if no journey comes up in suggestions as well, is searching and answering from the documents added in [**knowledge base**](./knowledge-management/what-is-document-cognition).
+    - **Document Search** : Another fallback bot can resort to if no journey comes up in suggestions as well, is searching and answering from the documents added in [**knowledge base**](./train/what-is-document-cognition).
     - Finally if none of the above works, bot will go to **fallback prompt**. In fallback prompt you can set a Fallback message, Trigger a agent journey etc. 
 
 ---
 
 ### 2. Train your bot
 Another thing, the heart and soul of bot building "**Natural language Understanding**" capabilities can be added to bot in this section. 
-You can [train your bot](./bot-training) here to [respond to various user utterances](./natural-language-understanding/intents), [detect entities](./natural-language-understanding/entities) etc. 
+You can [train your bot](.test-and-publish-bot/bot-training) here to [respond to various user utterances](./train/intents), [detect entities](./train/entities) etc. 
 
 ### 3. Supporting sections - Code, API and Events.
 These sections are often used / needed in bot building journey.
 - **Code**: You can write your code functions here if needed and attach them using function node to workflow. 
 - **Events** : Events section helps you add and handle various events .
-- [**API**](./api-management/add-api) : You can add and manage your APIs in API section. 
+- [**API**](./api/add-api) : You can add and manage your APIs in API section. 
 ### 4. Document Cognition
-Using [**document cognition**](./knowledge-management/what-is-document-cognition) capabilities, bot can answer user queries through unstructured documents.
+Using [**document cognition**](./train/what-is-document-cognition) capabilities, bot can answer user queries through unstructured documents.
 
 ### 5. Self - learning and improving the bot continously
 It's hard to predict everything upfront for a project and create perfect project in one go. Continous improvements in any project are part of building great things, and chatbots are no exception.
