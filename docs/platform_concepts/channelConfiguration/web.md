@@ -1,161 +1,131 @@
 ---
-title: Web Client
-sidebar_label: Web Client
+title: Widget Functions and Events
+sidebar_label: Widget Functions and Events
 ---
 
-# Authenticate the Users in the Web Widget from the Parent Interface via Session Tokens
+## Bot script
 
+All of our bots on follow the same web widget script. To know more on how to configure the colors and font of your bot, you can check out our docs on web [web widget styling](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget)
 
-Process:
+> Paste your script at the end of the `</body>` tag
 
-1. In the script of publish your bot, developer can configure to add session tokens.
-2. Based on the session tokens we will receive, we will do a parent interface auth API call.
-3. Based on the response from API, we can start the session with the same UID for user.
+**Sample script**
 
-
-1. Place the following script at the end of your `</body>` tag
-
-```html
+```
 <script type="text/javascript">
-window.ymConfig = { bot:’botId’, ymAuthenticationToken: { id:"userPin",lang: "lang_code"} };  (function () {var w=window,ic=w.YellowMessenger;
-if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function()
-{i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,
-e.src="https://app.yellowmessenger.com/widget/main.js";var t=d.getElementsByTagName("script")[0];
-t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,
-w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+  window.ymConfig = {
+   "bot":"Your botID",
+  "host":"https://cloud.yellow.ai"};
+  (function () {var w=window,ic=w.YellowMessenger;
+  if("function"===typeof ic)
+     ic("reattach_activator"),ic("update",ymConfig);
+  else {
+     var d=document,i=function(){i.c(arguments)
+  };
+
+  function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+</script>
+
+```
+
+Here, Host depends on the region in which your bot is deployed in
+
+<!-- | Region Code | Region | Host |
+| --- | --- | --- |
+| R1 |  | https://r1.cloud.yellow.ai |
+| R2 |  | https://r2.cloud.yellow.ai |
+| R3 |  | https://r3.cloud.yellow.ai |
+| R4 |  | https://r4.cloud.yellow.ai |
+| R5 |  | https://r5.cloud.yellow.ai |
+|Global| Global| https://cloud.yellow.ai | -->
+
+## How to pass values from the web client to the bot
+
+To pass values from your parent interface to the bot, you can make use of our **payload data** which needs to be configured in the bot script itself.
+
+```
+<script type="text/javascript">
+    window.ymConfig =
+    {
+      "bot":"ENTER_YOUR_BOT_ID_HERE",
+      "host":"https://cloud.yellowmessenger.com",
+
+      "payload":
+      {
+          "name": name,             // Add payload data here
+          "email": email           // The values can be dynamic
+      },
+
+      "partiallyOpen":false,"alignLeft":"right"
+    };
+    .
+    .
+    .        //Rest of the chatbot script
+    .
 </script>
 ```
 
-Don't forget to update the Bot ID and User PIN and Language Code in the given code.
+Our bot undergoes initialization on page load. Once the boat loads in, we can assign these values to variables using our [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/#use-variables-in-a-node).
 
-2. Event name 'authenticate' will be received in the bot.
+> Variable format is {{profile.payload.Your_Field_Name}}
 
-On receiving the event, we need to send back the senderId using the below code:
-```js
-app.sendEvent({
-               code: "verifiedUser",
-               data: senderId
-           });
+![](https://i.imgur.com/3Np2ozp.png)
+
+<!--
+## Authenticating users
+We make use of session tokens to authenticate all our users and maintain their chat history
+
+```
+Sample code block that's formatted well
+``` -->
+
+## Custom Function
+
+You can make use of these out of the box functions to play around with our bot based on your specific use-case.
+
+| Function                                  | Functionality                                                                                                       |
+| ----------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| window.YellowMessengerPlugin.hide()       | Hides bot icon                                                                                                      |
+| window.YellowMessengerPlugin.show()       | Unhides/Shows bot icon                                                                                              |
+| window.YellowMessengerPlugin.openBot()    | Opens chat widget                                                                                                   |
+| window.YellowMessengerPlugin.closeBot()   | Closes chat widget                                                                                                  |
+| window.YellowMessengerPlugin.toggleChat() | Toggles chat widget to opposite state i.e., Open chat widget if already closed. Closes chat widget if already open. |
+
+## Events
+
+**To send events to the bot**
+
+```
+window.YellowMessengerPlugin.sendEvent(eventName, true)
+const eventName = {
+	code: "Event name",
+	data: Event Data
+}
 ```
 
-Sample Code for reference:
+**To listen to events thrown by the bot**
 
-```js
-if (app.data.event && app.data.event.code === 'authenticate') {
-   /**check db for userpin => map the app.sender to the userpin
-    *next time when this event is received, check the userpin already has a sender in db,
-    *if yes => fetch the sender id and send it in the event
-    *else => send app.sender in the event */
-   const authenticate = async () => {
-       try {
-           let payloadData = app.data.event.payload
-     /**payload contains the details that were sent in the script using ymAuthenticationToken */
-           try {
-               payloadData = (typeof payloadData === "string") ? JSON.parse(payloadData) : payloadData;
-           } catch (e) { }
-           app.log(payloadData, "payloadData")
- 
-           app.USER_PIN = (payloadData.id) ? payloadData.id : false;
-           // let default_language = payloadData.lang;
-           let pattern = /\b(en|id)\b/gi;
-           let default_language = (payloadData.lang && (payloadData.lang.match(pattern))) ? payloadData.lang.match(pattern)[0] : (payloadData.lang == "id_code") ? "id" : "en"
-           let query = {
-               "table": "user_pin_sender_id_mapping",
-               "body": {
-                   "query": {
-                       "match": {
-                           "user_pin": app.USER_PIN
-                       }
-                   }
-               }
-           }
-           const dbResult = await app.dataStore.search(query);
-           const dbRecords = app._.get(dbResult, 'hits.hits', []);
-           let senderId;
-           if (dbRecords.length > 0) {
-               senderId = dbRecords[0]._source['sender_id'];
-               let id = dbRecords[0]._id;
-               app.dataStore.update({
-                   table: 'user_pin_sender_id_mapping',
-                   record: {
-                       _id: id,
-                       default_language
-                   }
-               }).then(() => {
-                   app.log("UPDATED");
-               }).catch(() => {
-                   app.log("NOT UPDATED");
-               })
-           } else {
-               // senderId = new Date().getTime();
-               senderId = app.USER_PIN;
 ```
-
-## Share user data from parent interface to bot using data payload
-
-Data payload feature comes handy when data is already present in the parent interface and you want to access it in the bot.
-
-As you can see we've user email and user name present on the webpage. Aim here is to parse it from the web page and use it as variables. 
-
-1. In the webpage, identify elements which contains user data. Here, `username` and `useremail` elements contains the user data.
-```html
- <p id = "username">yellow.ai Community</p>
- <p id="useremail" name="useremail">community@yellow.ai</p>
-```
-
-
-
-2. Go to Channels > Chat widget > Deploy and copy the Chatbot code using the copy button.
-
-![](https://i.imgur.com/igpYi18.png)
-
-Chat bot code should look like this:
-```js
 <script type="text/javascript">
-window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenger.com","partiallyOpen":false,"alignLeft":"right"};(function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+         window.addEventListener('message', function(eventData) {
+            console.log(eventData,"eventDataeventData");
+         })
 </script>
 ```
 
-3. Under the script, parse elements using `getElementById("element_name")`.
-```js
-let name = document.getElementById("username").innerText;
-let email =  document.getElementById("useremail").innerText;
-```
+**List of events we track**
 
-4. Finally, pass the name and email variables using payload to the window.ymConfig.
+| Event                        | Functionality                                                                              |
+| ---------------------------- | ------------------------------------------------------------------------------------------ |
+| ym-bot-opened                | Bot opened                                                                                 |
+| ym-bot-closed                | Bot closed                                                                                 |
+| ym_event_quick_reply         | Quick Reply clicked                                                                        |
+| ym_event_image_clicked       | Image opened in preview                                                                    |
+| ym_event_card_action         | Card action button clicked                                                                 |
+| ym-bot-loaded-on-page-reload | When the refresh context is false, the bot will receive events as soon as the page reloads |
+| ym_home                      | Home button clicked                                                                        |
+| page-url-based-trigger       | Whenever a notification is sent in the bot (for electron apps)                             |
 
-```js
-window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenger.com","payload":{"name": name,"email": email}
-```
+If you've integrated the bot with Android, refer the docs [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android/).
 
-5. Let's review all the changes needs to be made in the webpage.
-
-```html
-<html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-</head>
-<body>
-  
- <p id = "username">yellow.ai Community</p>
- <p id="useremail" name="useremail">community@yellow.ai</p>
-
-<script type="text/javascript">
-    let name = document.getElementById("username").innerText; // parse elements
-    let email =  document.getElementById("useremail").innerText;
-
-    console.log("Test data: ", name, email); // pass variables using payload object to window.ymConfig
-    window.ymConfig = {"bot":"YOUR_BOT_ID_HERE","host":"https://cloud.yellowmessenger.com","payload":{"name": name,"email": email},"partiallyOpen":false,"alignRight":"right"};(function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
-</script>
-
-</body>
-</html>
-```
-
-6. Now in your bot your bot you can access this payload data just like variables, using this syntax: `{{profile.payload.data}}`
-![](https://i.imgur.com/qfRMBbq.png)
-
-7. End result should look like this on your bot! :tada:
-
-![](https://i.imgur.com/gw0rOxM.png)
-
+If you've integrated the bot with iOS, refer the docs [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/ios/).
