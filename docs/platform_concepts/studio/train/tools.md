@@ -427,4 +427,128 @@ Values that will remain constant throughout the conversation can be added under 
  
 ### 2.5 Voice 
 
-*Coming soon... Currently not in use*
+
+> These settings are configurable when IVR is connected.
+> (From Channel > Voice > IVR)
+
+![](https://i.imgur.com/9hiy6Pg.jpg)
+
+
+You can configure these global settings for voice and these settings will be a default choice for all the nodes/journeys. 
+
+![](https://i.imgur.com/xH3cBso.jpg)
+
+There are 2 types of fields, to configure bot- user conversation and STT/TTS settings that will run in background. 
+
+
+
+
+| Conversation | STT/TTS |
+| ------------ | ------- |
+|         Bot language     |        STT engine |
+|         Call disconnect message     |    STT mode     |
+|            Record max duration  |      TTS engine   |
+|          Record silence duration    |    Text type     |
+|            Repeat message  |   Pitch      |
+|          Repeat limit    |     Speed    |
+|           Boost Phrases   |      Voice ID   |
+|             Play beep after recording |         |
+
+
+
+
+List of options available are explained below: 
+
+1. **Language**
+
+Bot Language can be selected from the dropdown. Default- English.
+
+2. **Text Type** 
+
+Text/SSML as a selection (depending upon the STT/TTS engine selected). STT is Speech to Text option available on the platform, while TTS is Text to Speech. 
+
+
+> Bot listens to the user utterance and converts it to text using STT. yellow.ai platform takes user query in the converted text format and responds back in the text format using NLP. Again, the output text (response from the platform) is converted to speech using TTS.
+
+
+Text option is used when Google TTS Engine is selected (along with this **Pitch** and **Speed** are entered in the Tools > Voice section).
+**SSML** (Speech Synthesis Markup Language) is selected when Microsoft TTS engine is used. Here, since the SSML contains information of rate, pitch, voice, speed etc, you need not enter it on Tools > Voice section (if any values are entered, they will be ignored). 
+
+
+
+Example of SSML:
+
+```
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US"><voice name="en-US-JennyNeural"><prosody rate="0%" pitch="0%">Hello welcome to the bot please say yes or no</prosody></voice></speak>
+```
+
+3. **Pitch**
+
+Pitch is the frequency at which a voice is heard. Higher the pitch, more is the frequency and lower the pitch, less is the frequency. Pitch is selected only when the TTS/STT fields use Google as an option. Pitch value can be -20 to 20 depending on the base of voice required, 0 is ideal. 
+
+4. **Voice ID** 
+
+Voice ID is added only when Google is used as a TTS option.
+
+
+5. **Speed**
+
+This is a value that defines how fast the bot must converse. Speed is configured only when Google is used as a TTS option. This value can be 0.9 - 1.5 for the bot to soundly humanly. 
+
+
+6. **Recording Max Duration**
+
+This value is the Max duration for which the bot will wait after asking a question (in any step) while the user is speaking. For example, after asking "Which city are you from" and Recording  Duration value is 5- the bot records 5 seconds of a response. 
+
+> This option is necessary to avoid consuming unwanted information and to stay with the flow while the bot is conversing. If the user replies long paragraphs when a question is asked or voice is shadowed with background noises, the bot must process those long inputs which is not ideal. Hence, with this, bot only takes the necessary response and quicly process the user query. 
+
+7. **Recording Silence Duration**
+
+This value is the Max duration for which the bot will wait after asking a question (in any step) for the user to respond.
+For example, if Recording Silence Duration is 5 seconds,  bot waits for 5 seconds for the response if the user is silent.
+If the user does not respond anything within 6 seconds **Repeat Message** will be played.
+
+8. **STT Engine**
+
+Select the STT (Speech to Text) engine to be used.
+Google translates accurately. 
+
+9. **TTS Engine**
+
+Select the TTS(Text to Speech) engine to be used.
+Microsoft provides a natural human voice
+
+> Combination of STT and TTS engines can be selected as per the user preference. 
+
+10. **STT Mode**
+
+Static vs Streaming. 
+Static mode waits for the user to complete speaking and then translates voice to text. 
+Streaming mode translates the user response as the conversation is proceeding. 
+
+
+11. **Boost Phrases**
+
+Some user responses can be confusing for the bot to understand. Region specific words, new genz lingos, internet terminologies, trending phrases, abbreviations
+ are trained specially so that the bot understands the exact intention. 
+For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise it gets translated to kovind/ go we/ co-wid etc. 
+
+
+12. **Play beep after recording**
+
+By default = TRUE. With this, there is a beep sound played after every bot utterance. 
+It acts like a signal to let the user know when to start speaking and bot is ready to capture. This can be disabled by selecting FALSE.
+
+13. **Repeat Message**
+
+Message to be played in case user provides no response (/blank response) at any step. 
+
+14. **Disconnect Message**
+
+This is the message played before disconnecting the call. For example, "Have a nice day. Bye!"
+
+15. **Repeat Limit**
+
+This is the number of time a repeat message can be played. For example, if the value is 3, the bot askes the user to respond 3 times and disconnets.
+
+
