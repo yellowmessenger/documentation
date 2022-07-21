@@ -309,6 +309,8 @@ module.exports = {
                 "platform_concepts/inbox/chats/reports/chat-agent-activity-report",
                 "platform_concepts/inbox/chats/reports/chat-agent-performance-report",
                 "platform_concepts/inbox/chats/reports/chat-archives-report",
+                "platform_concepts/inbox/chats/reports/ticket-agent-performance-report",
+                "platform_concepts/inbox/chats/reports/ticket-archive-report",
               ],           
             },
           ],
