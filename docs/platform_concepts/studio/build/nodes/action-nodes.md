@@ -3,6 +3,9 @@ title: Action Nodes
 sidebar_label: Actions
 ---
 
+# Nodes- Actions 
+
+
 Actions are non-interactive nodes that can be used to perform a specific task (background action). 
 
 
@@ -11,8 +14,7 @@ Actions are non-interactive nodes that can be used to perform a specific task (b
 
 ### Send Event 
 
-Send an event with this node. Events are used to record a specific actions or capture an important conversion, click [here](
-https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#type-of-events) to learn more.
+Send an event with this node. Events are used to record a specific actions or capture an important conversion, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) to learn more.
 
 ![](https://i.imgur.com/6obnCs8.png)
 
@@ -48,7 +50,7 @@ Answer user query referring to the available documents from your knowledge base 
 
 
 
-Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base.  (This node shows results from [Document Cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition/#when-to-not-use-document-cognition))
+Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base.  (This node shows results from [Document Cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition))
 
 ![](https://i.imgur.com/plCzZin.png)
 
@@ -202,7 +204,7 @@ Follow two steps to handle custom scenarios -
 
 #### Working Hours
 
-If bot is suppose to respond with a different message outside of agent working hours, **[Logic Node](https://docs.yellow.ai/docs/platform_concepts/studio/steps/logic-nodes/)** can be used. 
+If bot is suppose to respond with a different message outside of agent working hours, **[Logic Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes)** can be used. 
 
 <img src="https://cdn.yellowmessenger.com/ciDa5Gn2ZzbK1625675537775.png" alt="drawing" width="60%"/>
 
@@ -287,7 +289,9 @@ API action node allows you to hit an API at that point of the flow, assign dynam
 In above node, we selected an API (explore_car) to hit, we provided value to parameter using variable. 
 Then we store the whole response we will get from that API in a variable.
 
+<!--- 
 > Learn how to directly use this variable, if JSON response in your nodes to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
+--->
 
 #### Transformation function (optional field)
 
@@ -312,14 +316,14 @@ return new Promise
 
 ```
 
-> **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node. [Click here](../api/add-api) to learn how to add APIs.
+> **Note**: To be able to invoke an API at certain point, it should already be added/configured at API management section of platform. All APIs added there are available in dropdown of the action node. [Click here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to learn how to add APIs.
 
 ![](https://i.imgur.com/dklBqQZ.jpg)
 
 
 ### Variables 
 
-Set the value of one or more variables with this node. Learn how to create a variable [here](../bot-variables).
+Set the value of one or more variables with this node. Learn how to create a variable [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
 > If the value is blank, it will be set to empty string.
 
 ![](https://i.imgur.com/FTDanHl.png)
@@ -327,7 +331,7 @@ Set the value of one or more variables with this node. Learn how to create a var
 
 ### Database 
 
-Database action node helps you in perform simple insert, update and search operations on your [database tables](../../table/create-tables). 
+Database action node helps you in perform simple insert, update and search operations on your [database tables](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables). 
 
 #### Insert
 You select insert operation to insert details against each column into any database table you select. 
@@ -384,7 +388,7 @@ Update option in the database node can be used to update values stored in the ta
 
 ### Function 
 
-Execute custom code written for a function with this node. In this node you can select the function you wish to execute and [variable](https://docs.yellow.ai/docs/platform_concepts/studio/train/bot-variables) to store the return value of function (optional).
+Execute custom code written for a function with this node. In this node you can select the function you wish to execute and [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) to store the return value of function (optional).
 
 
 ![](https://i.imgur.com/v4HNlCq.png)
