@@ -3,7 +3,6 @@ title: Localization
 sidebar_label: Localization
 ---
 
- 
 
 Localization is used to provide multilingual support by manual translation for the bots when the user decides to switch the bot-language. 
 
@@ -19,6 +18,7 @@ This document discusses the following topics:
 
 1. How to configure multilingual messages
     * Using Bulk Manage
+    * Using Code
 3. How to configure nodes to provide multilingual support 
 
 
@@ -62,6 +62,17 @@ Follow the steps below:
 4. Click **Upload File**. Select the CSV file from your local system to import the keys. Click **Import**. 
 
 ![](https://i.imgur.com/LzuohyH.png)
+
+
+### 1.2 Using Code
+
+Localization can also be configured via code (from the [code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) tab).
+Use the following code in your function to get text message from code **app.renderMessage('code-goes-here', {}, 'default message')**
+
+* Click +Add Code. Add the above line in code along with the default message in the required language.
+
+![](https://i.imgur.com/ccojeyK.jpg)
+
 
 ## 2. Configure Nodes
 
