@@ -6,7 +6,13 @@ sidebar_label: Overview
 <!-- This section will make you familiar with the first section you see on top on the platform - Studio. Studio is the section where you design and train your chatbot. 
  -->
 
-You don't have to be a coder to build a bot! At least not on our platform. Our easy to use, no-code platform can help you build a bot in just a few clicks with great customer experience.
+You don't need to be a developer to build a bot . Atleast not here at Yellow.ai. Bot building is as simple as dragging and dropping a few nodes. 
+
+Still can't believe it ? Head over to the studio page and watch the magic happen.
+
+![](https://i.imgur.com/QRWCXwr.gif)
+
+Studio allows you to give your usecase an overall structure in the way you like. You can train your bot to perform a variety of functions ranging from raising a ticket to branching your flow.
 
 
 :::info
@@ -27,24 +33,49 @@ If you're getting started or looking for more practical end-to-end guides, check
 
 Studio consists of following modules:
 
-- **Build**
-    - **Flows**: Here conversational flow can be designed using [journeys](../studio/build/journeys) and [nodes](../studio/build/nodes/nodes). 
-    - **NLU**: The heart and soul of a bot "**Natural Language Understanding**" capabilities can be added to bot in this section. You can train your bot here to [respond to various user utterances](./train/intents),  [detect entities](./train/entities) etc. 
-    - **API**: To [integrate APIs](./api/add-api) in a bot this module can be used.
-    - **Code**: Bot builders can write your code functions here if needed and attach them using function node to workflow. 
+- ### Build
 
-:::info
+##### [Flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys): 
+A conversational flow is a set of events that are carried out one after the other depending on conditions set by you for your bot.
 
-- Code module should be used as a last resort only. Please note that this is a premium feature and access is provided on a application basis. To get code access for you bot please reach out to us at support@yellow.ai
+There are 2 ways for you to build a flow:
+###### 1. Marketplace
+Choose a template from market place and access one of the predesigned bots. 
+![](https://i.imgur.com/jitbjTo.gif)
 
-:::
+###### 2. Create from scratch
+Click on the flow dropdown and click on **+ Create Flow**.
 
-- **Learn**: This module improves your bot training over-time by self-learning.
-- **FAQ**: This module can be used to [add FAQs](./train/add-faqs) in a bot.
-- **Document Cognition**: Using [document cognition](./train/what-is-document-cognition) capabilities, bot can answer user queries through unstructured documents.
+##### [NLU](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents):
+Natural Language Understanding makes up the heart and soul of understanding user utterances. Train your intents to understand common user utterances and trigger flows using the start trigger.
 
-- **Event hub**: This module helps you add and handle various events.
-- **Chat logs**: This module detects patterns in selected conversations and tags them with actionables that can directly help you improve your bot flows. 
+##### [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code):
+Bot builders can write  code functions here if needed and attach them using function node to workflow.
+
+##### Localization:
+Localization can be used to configure multilingual messages and nodes to provide multillingual support.
+##### [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs):
+Train your bot to understand commonly asked questions by the users.This way your bot can give automated responses to various user queries.
+
+### [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api)
+Connect third party APIs to your Bot by using this module. Use API to send and recieve data from any platform. This information can be accessed using APIs.
+
+### [Database](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables)
+Add and store user data in a strucutred manner with database.You can select fields that you want searchability in and acces these fields later in the bot with database node.
+
+### Learn
+This module improves your bot training over-time by self-learning. You can also enable small talk for your bot to carry out short conversations with your user.
+
+### [Document Cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition)
+Using document cognition capabilities, bot can answer user queries through unstructured documents.
+
+### [Event hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub)
+Manage how your bot responds to events. Choose from an existing event or handle a new event from your code.
+
+### [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs)
+This module detects patterns in selected conversations and tags them with actionables that can help you improve your flow. Acces and filter all your conversations here.
+
+
 
 ---
 
