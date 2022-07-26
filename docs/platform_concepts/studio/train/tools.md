@@ -1,9 +1,8 @@
 ---
-title: Tools
+title: Studio- Settings and Options in Tools
 sidebar_label: Tools and Settings 
 ---
 
-# Studio- Settings and Options in Tools
 
 
 **Tools** section is used to make advance settings to the bot, you can also test it as you build it. Different settings dedicated to Conversation, NLU, etc. can be configured in this section. 
@@ -304,6 +303,9 @@ If the validation for the entered message is unknown, this reply can be displaye
 We can skip a prompt using entitity or variables, if the value is already exists (thus avoiding asking users the same question multiple times). This depicts the memory of your chatbot. When Autoskipping Settings is **Enabled**,   the bot informs the user that it already has the information that is being provided. 
 
 ![](https://i.imgur.com/ss1V7UQ.jpg)
+
+
+To configure autoskip globally (at node level), click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#autoskip). 
 
 **1. Acknowledgement**
 

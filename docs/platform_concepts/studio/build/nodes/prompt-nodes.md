@@ -4,14 +4,22 @@ sidebar_label: Prompts
 ---
 
 Prompts are Interactive/conversational nodes which expect  user input.
-When user provides an invalid input to the prompt, fallback message will be displayed. There are 3 different types of prompt nodes: 
+When user provides an invalid input to the prompt, fallback message will be displayed. There are different types of prompt nodes: 
 1. **User Details**- Used to collect user details.
 2. **Feature**- Used for creative display of information and collection of response.
 3. **Social Media**- Nodes to collect social media related details.
+4. **Voice**
 
 > All these prompts must be followed by another node as a response to this node.
 
 You can also make your **prompts smarter**. It will be discussed at the end of this document. 
+
+
+> **Note**
+> The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple text for randomizing**. Enter variations of text that you want your users to see. This feature will display different message to the user in a random order (instead of the same message every time) making the conversation more humanly. 
+>  
+> ![](https://i.imgur.com/KucDPVJ.png)
+
 
 ## 1. User Details
 
@@ -24,7 +32,7 @@ Ask and validate the user name with this node. When the user enters a sentence i
 ![](https://i.imgur.com/Rr81uih.png)
 
 
-Create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and store the user name in it. 
+Create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the user name in it. 
 
 
 ![](https://i.imgur.com/t8UFyzS.png)
@@ -40,7 +48,7 @@ When the user enters a number of length greater than 10, validation fails and th
 
 > One phone node can only support validation of one country code. 
 
-Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and store the number in it. 
+Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the number in it. 
 
 ### Date 
 
@@ -149,7 +157,7 @@ Display interactive carousel cards with buttons with this node. Carousel can be 
 ![](https://i.imgur.com/plQBWHs.png)
 
 
-Carousel response contains option to add image, title and description.
+Carousel response contains option to add image (less than 10MB), title and description.
 You can also add multiple buttons in carousel. Clicking on the button can display a text, another flow, URL entered or will be sent to phone number. Configure this in the Carousel settings.
 
 >On Whatsapp, carousel cards do not support hyper linking and allows for upto 3 clickable buttons
@@ -325,7 +333,6 @@ To do this, we have a **Fetch from** option in quick reply prompt. Here, instead
 
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intented variable. For example, you can apply for loop around options to dynamically add to them while parsing through some API response etc.
 
-
 #### Workaround for WhatsApp
 
 Quick Replies are currently not supported on WhatsApp. That is, buttons wont be visible on the WhatsApp chat. 
@@ -333,12 +340,11 @@ To use buttons (Quick reply like action) use one Carousel card without adding an
 
 ![](https://i.imgur.com/nmWXMaR.png)
 
-You will be permitted to add only 3 buttons on the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and store the selected response in it. 
+You will be permitted to add only 3 buttons on the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the selected response in it. 
 
 Given below is the whatsapp chat screen for the above flow.
 
 ![](https://i.imgur.com/xw1ksvM.jpg)
-
 
 
 
@@ -368,7 +374,7 @@ Ask, validate and store JPG/ PNG files with this node.
 
 It will validate if the uploaded file is in JPG/PNG format and its size is less than 5MB.
 
-Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and store the file in it. 
+Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the file in it. 
 
 
 ## 3. Social Media 
@@ -407,9 +413,26 @@ bot checks if the entered email is in username@company.domain format.
 
 Create a email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the email ID in it. 
 
-## 4. Make Prompt Smarter
+## 4. Voice
+
+### Speak
+
+This node is used to set a voice message from the bot.
+
+You can enter what a bot must ask the user in SSML format. This can be tested by clicking **Test Audio** and playing the produced audio. When this node is reached in the flow, the user will be sent a voice message (when bot is configured for it).
+
+
+
+![](https://i.imgur.com/A1komJk.png)
+
+
+
+## 5. Make Prompt Smarter
 
 Make Prompt Smarter option is available on all the prompt nodes. 
+
+![](https://i.imgur.com/QoIUylO.png)
+
 
 ### Auto Complete
 
@@ -446,12 +469,25 @@ In the below example, the user wont be asked for the name, phone number and emai
 
 ![](https://i.imgur.com/jIgnQRZ.png)
 
+Configure Autoskip at a global level (from tools section), click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/tools/#224-autoskipping-settings). 
 
 ### Additional 
 
-1. **Use this as Unique ID for User**: This info will be unique for an user.
+1. **Use this as Unique ID for User**: Info entered at this node will be unique for an user. 
+For example, instead of setting a new user ID, you can use the phone number as an unique ID to recognize this user. Other nodes that can be used as Unique IDs are Car Number, Aadhar Card, SSN, etc. that are unique to an individual. 
+
 2. **Mark user message as sensitive info**: Mask this user info from appearing in conversation logs.
 3. **Mark bot message as sensitive info**: Mask this bot info from appearing in conversation logs.
 
 
 ![](https://i.imgur.com/0W4y8pO.png)
+
+#### Use-case
+
+* Where there are 2 nodes in this flow, one asking for password (**marked user message as sensitive info**) and the other providing a new password (**marked bot message as sensitive info**). 
+
+![](https://i.imgur.com/ycX3lFa.png)
+
+* Text entered at these nodes will be displayed as "sensitive information" on the chat log. 
+
+![](https://i.imgur.com/qW4MoKt.png)
