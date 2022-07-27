@@ -126,6 +126,7 @@ module.exports = {
             },
             "platform_concepts/studio/build/code",
             "platform_concepts/studio/build/bot-variables",
+            "platform_concepts/studio/build/localization",
            
           ],       
         },
@@ -388,7 +389,6 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/overview",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
-              
               ],
             },
             {
