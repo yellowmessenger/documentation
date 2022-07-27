@@ -175,6 +175,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/studio/events/event-hub",
+            "platform_concepts/studio/events/user-inactive",
           ],
         },
 
