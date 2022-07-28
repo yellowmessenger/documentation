@@ -3,6 +3,9 @@ title: Prompt Nodes
 sidebar_label: Prompts
 ---
 
+# Nodes- Prompts
+
+
 Prompts are Interactive/conversational nodes which expect  user input.
 When user provides an invalid input to the prompt, fallback message will be displayed. There are different types of prompt nodes: 
 1. **User Details**- Used to collect user details.
@@ -417,7 +420,7 @@ Create a email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/b
 
 ### Speak
 
-This node is used to set a voice message from the bot.
+Users can input the SSML text and can play the configured/generated audio on the go.
 
 You can enter what a bot must ask the user in SSML format. This can be tested by clicking **Test Audio** and playing the produced audio. When this node is reached in the flow, the user will be sent a voice message (when bot is configured for it).
 
@@ -425,6 +428,11 @@ You can enter what a bot must ask the user in SSML format. This can be tested by
 
 ![](https://i.imgur.com/A1komJk.png)
 
+Sample SSML code: 
+
+```
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US"><voice name="en-US-JennyNeural"><prosody rate="0%" pitch="0%"> What is your  query</prosody></voice></speak>
+```
 
 
 ## 5. Make Prompt Smarter
@@ -433,11 +441,36 @@ Make Prompt Smarter option is available on all the prompt nodes.
 
 ![](https://i.imgur.com/QoIUylO.png)
 
+----
 
 ### Auto Complete
 
-* Configure auto complete by using the **Function** option (add the following code)
+Autocomplete is set so that the bot can start predicting rest of the word or sentence for users as they start typing. This feature can be used for: 
+* Discoverability: End user can easily discover what a bot or a point does
+* When there are multiple options available and a limit is set on the display, autocomplete is a good singular or assisiting alternative to show options.
+* Faster typing, and improved user experience.
 
+> Autocomplete shows results after 3 characters are typed and it keeps filtering the results as customer continous typing / or selects an option.
+
+![](https://i.imgur.com/anyDc8z.png)
+
+Auto complete is available at a [global level](https://docs.yellow.ai/docs/platform_concepts/studio/train/tools#22-conversation) and prompt level (that is triggered inside a prompt).
+
+![](https://i.imgur.com/i0u48Ru.gif)
+
+
+Following options can be set to auto-complete: 
+
+1. **Database column** - Select a database table > column directly to populate autocomplete using that. 
+2. **List entity** - Select a list entity , items of which will be used to populate autocomplete. 
+
+>Only List Item names are considered, the is no search based on all synonyms. 
+
+3. **User properties** -  Select a user property(string type ) from Users table to autocomplete. (Note: Only distinct results will be shown) and add upto one filter on any column. 
+4. **FAQs** - Multiselect categories of FAQs which you want to include in Autocomplete. FAQ descriptions are populated in autocomplete (which are by default same as question itself) 
+5. **Function** - If the use case turns is complicated complicated and none of the above steps work, select a function where you can write your custom logic to ultimately return an array of string items which will populate your autocomplete.
+
+Sample code snippet for function: 
 ```
 return new Promise(resolve => {
     console.log("inside autoSuggestion");
@@ -452,12 +485,9 @@ return new Promise(resolve => {
     resolve(suggestions);
 });
 ```
-* Use **User Properties**.
-You can filter by the selected variables for the global variable. 
 
 
-![](https://i.imgur.com/7ct8QZs.png)
-
+--------
 
 ### Autoskip
 
