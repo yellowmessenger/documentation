@@ -1,19 +1,22 @@
 ---
-title: Build a Bot with Yellow.ai
-sidebar_label: Step by Step Guide to Build a Bot 
+title: Getting started with yellow.ai
+sidebar_label: Get started
+---
+
+
+See the power of Conversational AI for yourself. You can read all about it in our Studio section or you can stay on this page and build a bot immediately.
+
+It is entirely your choice! If you don't know where to start, checkout this walkthrough video of yellow.ai Platform overview.
+
 ---
 
 This is a step by step guide to help you understand yellow.ai platform and build your very own bot.
 As we proceed, to learn more, you can gets your hands on our detailed [Guides](https://docs.yellow.ai/docs/cookbooks/getting_started).
 
-:::info
 Here is a walkthrough of our platform.
 
+
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/w80U82cU0l0" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
-:::
-
-
-
 
 To get started, visit our official website (https://cloud.yellow.ai/ ) and **sign up or sign in** with your Email.
 
@@ -21,15 +24,12 @@ To get started, visit our official website (https://cloud.yellow.ai/ ) and **si
 
 Watch how to create a bot project.
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/LaeNb_IV-UE" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
-
     
 :::info
 Get live sessions on how to create your own bot using yellow.ai by signing up to our free academy training: https://academy.ascend.yellow.ai/
 :::
 
-
 ## 1. Prerequisites 
-
 
 ### 1.1 Understand Your Use Case 
 
@@ -40,18 +40,15 @@ Our platform yellow.ai assists you to build virtual assistants(bots) for variou
 * Accommodating a complete e-commerce experience
 * HR automation and many more!
 
-Having a well defined use-case will make your bot building journey simpler and fun. For this, we recommend you to establish a flow that matches your primary use-case.
 
+Having a well defined use-case will make your bot building journey simpler and fun. For this, we recommend you to establish a flow that matches your primary use-case.
 
 
 ---
 
 Attached below is a simple flowchart (for ordering a phone) that we will use as a reference to walk you through the bot building process. 
 
-
 ![](https://i.imgur.com/axuVMs9.png)
-
-
 ---
 
 ### 1.2 Get Familiar With the Bot Terms 
@@ -63,9 +60,7 @@ Click the dropdown icon next to the **Overview** label on the top left corner of
 
 ![](https://i.imgur.com/eKsXp8v.jpg)
 
-
 Functionalities of the modules are listed below: 
-
 
 
 | Name     | Description                                                                                                                                                                                                                  |
@@ -86,7 +81,6 @@ You will be directed to the **Studio** page where you can play around with our c
 
 ![](https://i.imgur.com/R3t2nXx.png)
 
-
 ---
 
 Follow the steps below to create your own bot: 
@@ -106,7 +100,7 @@ It can be as simple as “Hey! How can I help you today” or “Welcome to the 
 
 The words Flows and Journeys are used interchangeably throughout this documentation, it stands for the actual customer journey/ path we’d like our end users to go through. 
 
-A more elaborate description can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/journeys/)**..
+A more elaborate description can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys)**..
 * To create a flow, click the dropdown **FLOWS** in the middle of the screen and select **+ CREATE FLOW**.
 
 ![](https://i.imgur.com/bjIlt6H.png)
@@ -133,7 +127,7 @@ Nodes can be added using two different methods, listed below:
 
 ![](https://i.imgur.com/uGOUyyI.png)
 
-For example, from **Prompts**, if you select **Name**- your bot will ask the user for their Name after getting started. Similarly, from **Actions**, if you select **Send OTP**, generated OTP will be sent to the email ID or the Phone Number. You can find more information on the nodes **[here](https://docs.yellow.ai/docs/platform_concepts/studio/steps/prompts-and-messages)**.
+For example, from **Prompts**, if you select **Name**- your bot will ask the user for their Name after getting started. Similarly, from **Actions**, if you select **Send OTP**, generated OTP will be sent to the email ID or the Phone Number. You can find more information on the nodes **[here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes)**.
 
 Flow of the below use-case consists of Quick-Repy, Email, DB and Text nodes.
 
@@ -146,7 +140,7 @@ Flow of the below use-case consists of Quick-Repy, Email, DB and Text nodes.
 **Variables** are used when you want to save the user response to any of the questions asked during the flow. 
 
 There are different types of variables, some are pre-made for every bot and others are customizable. 
-Custom variables can be added by you based on your needs. All the information you need on variables can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/)**.
+Custom variables can be added by you based on your needs. All the information you need on variables can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)**.
 
 Attached below is an example of custom variable that is used to store the user's query.
 
@@ -173,7 +167,7 @@ In such cases, we have a robust **Natural Language Understanding(NLU**) engine w
 > Note: You must always have a minimum of 2 trained intents.
 
 
-Our documentation does a deep dive on **how to setup intents, utterances and entities** along with best practices. You can find them **[here](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents)**.
+Our documentation does a deep dive on **how to setup intents, utterances and entities** along with best practices. You can find them **[here](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)**.
 
 Attached below is an intent to identify and initilise a flow when a user wants **to place an order**.
 
@@ -186,7 +180,7 @@ It is considered as a good practice to build smaller flows and direct the users 
 
 There are two methods to trigger a flow: 
 
-1. Using the [Trigger Journey node](https://docs.yellow.ai/docs/platform_concepts/studio/steps/action-nodes-and-logic/#trigger-journey). For example, in the below flowchart, PlaceOrder flow has been triggered.
+1. Using the [Trigger Journey node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#trigger-journey). For example, in the below flowchart, PlaceOrder flow has been triggered.
 
 ![](https://i.imgur.com/eK9A2xw.png)
 
@@ -199,7 +193,7 @@ There are two methods to trigger a flow:
 
 All the details and interactions with the bot can be stored in the database that can be designed to fetch the required details. 
 
-* Start by creating **Tables** on the **Database** page. Learn more **[here](https://docs.yellow.ai/docs/platform_concepts/data/create-tables)**.
+* Start by creating **Tables** on the **Database** page. Learn more **[here](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables)**.
 
 ![](https://i.imgur.com/ZEXZO5P.png)
 
@@ -211,9 +205,6 @@ All the details and interactions with the bot can be stored in the database that
 Attached below is the screenshot of the data collected by the bot for the fields assigned to it. 
 
 ![](https://i.imgur.com/n7L3hig.jpg)
-
-
-
 
 ## 3. Add Ons
 
@@ -232,8 +223,6 @@ You can search for the integration you are looking for  at docs.yellow.ai.
 
 ![](https://i.imgur.com/ZooBWqK.png)
 
-
-
 ### 3.2 Marketplace
 
 **Marketplace** has pre designed templates of the most commonly used bots. 
@@ -243,11 +232,10 @@ Explore **Marketplace** by clicking on the Marketplace icon on the top-right cor
 
 ![](https://i.imgur.com/uQjekjD.png)
 
-
-
 ---
 
-### 3.3 Live Customer Support Agents
+
+#### Live Customer Support Agents
 By using the **Chat with Agent template** you can direct your users to your agents.
 
 ![](https://i.imgur.com/MdTCVFM.jpg)
@@ -259,84 +247,29 @@ For example, when the **Chat With an Agent** template is selected, the bot is pr
 
 Interactions here can be monitored on the **Inbox** module. Learn more about Agents and Inbox module **[here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox)**.
 
-![](https://i.imgur.com/tb68Mze.jpg)
-
-#### **Studio**:
-The yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click **[here](https://docs.yellow.ai/docs/platform_concepts/studio/overview)**.
-
 ---
 
-### 3.4 Channels 
+
+### 3.3 Channels 
 
 **Channels** module enables you to engage your customer on external channels like Emails or SMS.
 Our bots can be setup across 20+ channels to give you the exact same experience of a web based chatbot — whether it's on Whatsapp, SMS, Instagram, or Slack.
 
 ![](https://i.imgur.com/2r0259F.jpg)
 
-
 A detailed description on how to configure your channel can be found **[here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound)**.
 
-### 3.5 Whatsapp as a Channel
+
+#### Whatsapp as a Channel
 We have an elaborate guide on the best practices to be followed while setting up the **Whatsapp channel**. To learn more, click **[here](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel)**.
-
-
-
-## Building the bot
-### Step 1: Configuring the welcome message
-As we build out the flow, it's important to keep the **[conversational design](https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-design-your-conversations)** aspect in our mind right from the opening message. This can be configured by 
-
-- Clicking on the Welcome button 
-- Changing the text/ Adding buttons / Triggering a flow
-
-![](https://i.imgur.com/hceA8s2.png)
-
-
-
-### Step 2: Setting up a flow/journey
-We use Flows and Journeys interchangeably throughout our documentation and it stands for the actual customer journey/path we'd like our end users to go through. A more elaborate explaination can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/journeys/)**.
-
-To create a flow, you can click on the dropdown **FLOWS** in the middle of the screen and click on **CREATE A FLOW**.
-
-![](https://i.imgur.com/bjIlt6H.png)
-
-
-### Step 3: What are nodes
-Now that a flow has been created, you have this open canvas to add nodes (the little box called start is a node). You can add nodes in two ways:-
-- Click on the black dot in the center of a node
-
-![](https://i.imgur.com/9Nc8ztc.png)
-
-
-- Click on any 4 of the icons on the left which represent each category of nodes
-
-![](https://i.imgur.com/uGOUyyI.png)
-
-
-You can find more information on the nodes **[here](https://docs.yellow.ai/docs/platform_concepts/studio/steps/prompts-and-messages)**.
-
-For our use-case, I've built out a flow using the Quick-Repy, Email, DB and Text nodes.
-
-![](https://i.imgur.com/sjFlMBv.png)
-
-
-
-### Step 4: How to create and store values in Variables
-Let's say you want to ask the user a question during this flow and save their response, you can make use of Variables. We have different types of variables some of which are pre-made for every bot and custom variables that can be created by you. All the information you need on variables can be found **[here](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/)**.
-
-Here, I've created a custom variable to store the user's query
-
-![](https://i.imgur.com/n7wpkek.png)
-
-![](https://i.imgur.com/vqMbUEj.png)
-
-
-### Step 5: How do I handle the user responses
-Often times, instead of going with the flow that we want to take the user through, the user could type in queries that don't really resonate with the rest of the flow. 
-In such cases, we have a robust **Natural Language Understanding(NLU**) engine which can be used to train the bot with commonly asked phrases based on which flows can be triggered.
-
----
 
 **What's Next?**
 
 Jump into Studio and automate your conversations like never before.
 Happy Bot building!!
+
+
+
+
+
+
