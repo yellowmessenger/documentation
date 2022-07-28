@@ -104,12 +104,11 @@ You can test your bot in multiple languages, by simply selecting the language of
 
 ![](https://i.imgur.com/5pwiSUQ.png)
 
-:::info 
 To enable multiple languages:
 Go to `Overview > Configure > Edit Basic Details > Add language`
 
 ![](https://i.imgur.com/mJLXV1W.png)
-:::
+
 
 ### 2.2 Conversation 
 
@@ -144,24 +143,19 @@ Yes or No can be selected from the dropdown list. If you  want the Quick reply b
 
 Yes or No can be selected from the dropdown list. This allows the bot to understand Hinglish (Hindi + English) user utterances. Custom-made for the Indian users. 
 
-:::tip
 
 For example, when the user types 'Agent se baat karao' the bot understands that it must - connect the user to an agent. 
 
 ![](https://i.imgur.com/i2zAjhy.png)
-:::
 
 **4. Auto Detect Language**
 
 Yes or No can be selected from the dropdown list. If you select **Yes**, bot can auto-detect the language that the user has typed in and change it to their own language to respond to that (this is available only if configured). 
 
-:::info
 
 * This remains in place till 2 days or until bot language is changed by user selection through set language action node.
 
 ![](https://i.imgur.com/PcSTG5u.png)
-
-:::
 
 **5. Enable Go Back/Go Home**
 
@@ -177,24 +171,21 @@ Note : Go back keywords inside a journey take user to previous prompt. If used o
 
 Type in and configure the hot keywords of your choice to trigger the **Go back** action. 
 
-:::tip
 
 For example, if the **Go Back Aliases** is entered as **0** or '**go back**' in the settings and the user enters those words in the chat, the conversation will go back to the previous step. 
 
 ![](https://i.imgur.com/mPuaLab.jpg)
-:::
 
 **7. Go home Aliases**
 
 Type in and configure the hot keywords of your choice to trigger the **Go home** action. 
 
-:::tip
 
 For example, if the **Go Home Aliases** is entered as **x** or '**go home**' in the settings and the user enters those words in the chat, the conversation will go back to the first step.
 
 ![](https://i.imgur.com/55EjJk0.png)
 
-:::
+
 
 **8. Negation Journey**
 
@@ -269,7 +260,8 @@ Select from three options **Numbers**(default), **Alphabets** or **Emojis** (num
 
 You can display your overall prefix with bold & italic support. Default preset entry in this box is {{index}} which looks like the example above (when type is numbers).
 
-:::tip WhatsApp Only
+
+WhatsApp Only
 For example: "_Type_ *{{index}}** for" will display  prefix -
 
 "Type 1 for Gate Mechanical ", "Type 2 for AE & JE Mechanical" and so on.
@@ -277,18 +269,16 @@ For example: "_Type_ *{{index}}** for" will display  prefix -
 When 1 is typed, Gate Mechanical is selected, without having to type out the entire phrase.
 
 ![](https://i.imgur.com/yQtdhUD.png)
-:::
+
 
 **3. Show prompt again**
 
 Yes or No can be selected from the dropdown list. Enabling this will show the original prompt again after the validation failure message.
 
-:::info
 For example, for **Phone prompt**
 
 - Phone number entered is not correct [validation failure message] 
 - Can you please share your phone number? [original prompt]
-:::
 
 **4. Enable Limit on Retries**
 
@@ -363,7 +353,6 @@ In our use case, when a user wants to talk to someone from the support team and 
 
 ![](https://i.imgur.com/aahlFgb.png)
 
-:::info
 - Min Confidence is set to 0.85 and the user types "Talk to your agent", bot replies appropriately as the intent predicted is "Transfer Agent" and confidence is 1. 
 
 ![](https://i.imgur.com/U4vjhut.jpg)
@@ -371,7 +360,7 @@ In our use case, when a user wants to talk to someone from the support team and 
 - Min Confidence is set to 0.85 and the user types "Talk to tech support", bot will not be able to reply as confidence for the intent predicted is unknown. 
 
 ![](https://i.imgur.com/aok3dur.png)
-:::
+
 
 **2. Context confidence**
 
@@ -438,4 +427,128 @@ Values that will remain constant throughout the conversation can be added under 
  
 ### 2.5 Voice 
 
-*Coming soon... Currently not in use*
+
+> These settings are configurable when IVR is connected.
+> (From Channel > Voice > IVR)
+
+![](https://i.imgur.com/9hiy6Pg.jpg)
+
+
+You can configure these global settings for voice and these settings will be a default choice for all the nodes/journeys. 
+
+![](https://i.imgur.com/xH3cBso.jpg)
+
+There are 2 types of fields, to configure bot- user conversation and STT/TTS settings that will run in background. 
+
+
+
+
+| Conversation | STT/TTS |
+| ------------ | ------- |
+|         Bot language     |        STT engine |
+|         Call disconnect message     |    STT mode     |
+|            Record max duration  |      TTS engine   |
+|          Record silence duration    |    Text type     |
+|            Repeat message  |   Pitch      |
+|          Repeat limit    |     Speed    |
+|           Boost Phrases   |      Voice ID   |
+|             Play beep after recording |         |
+
+
+
+
+List of options available are explained below: 
+
+1. **Language**
+
+Bot Language can be selected from the dropdown. Default- English.
+
+2. **Text Type** 
+
+Text/SSML as a selection (depending upon the STT/TTS engine selected). STT is Speech to Text option available on the platform, while TTS is Text to Speech. 
+
+
+> Bot listens to the user utterance and converts it to text using STT. yellow.ai platform takes user query in the converted text format and responds back in the text format using NLP. Again, the output text (response from the platform) is converted to speech using TTS.
+
+
+Text option is used when Google TTS Engine is selected (along with this **Pitch** and **Speed** are entered in the Tools > Voice section).
+**SSML** (Speech Synthesis Markup Language) is selected when Microsoft TTS engine is used. Here, since the SSML contains information of rate, pitch, voice, speed etc, you need not enter it on Tools > Voice section (if any values are entered, they will be ignored). 
+
+
+
+Example of SSML:
+
+```
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US"><voice name="en-US-JennyNeural"><prosody rate="0%" pitch="0%">Hello welcome to the bot please say yes or no</prosody></voice></speak>
+```
+
+3. **Pitch**
+
+Pitch is the frequency at which a voice is heard. Higher the pitch, more is the frequency and lower the pitch, less is the frequency. Pitch is selected only when the TTS/STT fields use Google as an option. Pitch value can be -20 to 20 depending on the base of voice required, 0 is ideal. 
+
+4. **Voice ID** 
+
+Voice ID is added only when Google is used as a TTS option.
+
+
+5. **Speed**
+
+This is a value that defines how fast the bot must converse. Speed is configured only when Google is used as a TTS option. This value can be 0.9 - 1.5 for the bot to soundly humanly. 
+
+
+6. **Recording Max Duration**
+
+This value is the Max duration for which the bot will wait after asking a question (in any step) while the user is speaking. For example, after asking "Which city are you from" and Recording  Duration value is 5- the bot records 5 seconds of a response. 
+
+> This option is necessary to avoid consuming unwanted information and to stay with the flow while the bot is conversing. If the user replies long paragraphs when a question is asked or voice is shadowed with background noises, the bot must process those long inputs which is not ideal. Hence, with this, bot only takes the necessary response and quicly process the user query. 
+
+7. **Recording Silence Duration**
+
+This value is the Max duration for which the bot will wait after asking a question (in any step) for the user to respond.
+For example, if Recording Silence Duration is 5 seconds,  bot waits for 5 seconds for the response if the user is silent.
+If the user does not respond anything within 6 seconds **Repeat Message** will be played.
+
+8. **STT Engine**
+
+Select the STT (Speech to Text) engine to be used.
+Google translates accurately. 
+
+9. **TTS Engine**
+
+Select the TTS(Text to Speech) engine to be used.
+Microsoft provides a natural human voice
+
+> Combination of STT and TTS engines can be selected as per the user preference. 
+
+10. **STT Mode**
+
+Static vs Streaming. 
+Static mode waits for the user to complete speaking and then translates voice to text. 
+Streaming mode translates the user response as the conversation is proceeding. 
+
+
+11. **Boost Phrases**
+
+Some user responses can be confusing for the bot to understand. Region specific words, new genz lingos, internet terminologies, trending phrases, abbreviations
+ are trained specially so that the bot understands the exact intention. 
+For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise it gets translated to kovind/ go we/ co-wid etc. 
+
+
+12. **Play beep after recording**
+
+By default = TRUE. With this, there is a beep sound played after every bot utterance. 
+It acts like a signal to let the user know when to start speaking and bot is ready to capture. This can be disabled by selecting FALSE.
+
+13. **Repeat Message**
+
+Message to be played in case user provides no response (/blank response) at any step. 
+
+14. **Disconnect Message**
+
+This is the message played before disconnecting the call. For example, "Have a nice day. Bye!"
+
+15. **Repeat Limit**
+
+This is the number of time a repeat message can be played. For example, if the value is 3, the bot askes the user to respond 3 times and disconnets.
+
+

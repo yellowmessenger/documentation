@@ -156,6 +156,7 @@ If the bot is deployed in a specific region(e.g. r1,r2,r3..rn)) on yellow.ai clo
 ```c#
 ymChatInterface.setCustomURL("https://rx.cloud.yellow.ai");
 ```
+
 Here rx = r1,r2,r3,r4,r5 etc
 
 ### Custom loader
@@ -269,6 +270,13 @@ Device token typically is unlinked when the user logs out of the app.
       Console.WriteLine(failureMessage);
       });
 ```
+
+:::note API Key
+API key can be generated/found by visiting `https://cloud.yellow.ai` -> Overview -> Configure -> API Key section
+
+Existing client can upgrade their dependency to `v2.1.+` and replace exisitng key with new API Key.
+Client using SDK version below `v2.1.0` will have no impact.
+:::
 
 ## Demo App
 
