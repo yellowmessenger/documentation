@@ -389,7 +389,6 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/overview",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
-              
               ],
             },
             {
