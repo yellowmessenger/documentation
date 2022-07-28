@@ -32,7 +32,7 @@ Follow the given steps:
 
 ![](https://i.imgur.com/WTzQQDm.png)
 
-3. Enter **Key**, which will be used as a keyword which will simply switching the language. 
+3. Enter **Key**, which will be used as a keyword for switching the language. 
 4. **Description** is optional. 
 5. Add the translated lines in the required languages.
  
