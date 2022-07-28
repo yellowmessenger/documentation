@@ -324,6 +324,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
+        "platform_concepts/engagement/effectivelyuseengage",
         {
           type: "category",
           label: "Outbound Engagement",
