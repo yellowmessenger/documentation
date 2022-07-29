@@ -331,7 +331,7 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "CDP",
+              label: "User360",
               collapsed: true,
               items: [
                 "platform_concepts/engagement/outbound/cdp/overview",
