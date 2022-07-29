@@ -324,6 +324,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
+        "platform_concepts/engagement/effectivelyuseengage",
         {
           type: "category",
           label: "Outbound Engagement",
@@ -335,6 +336,7 @@ module.exports = {
               collapsed: true,
               items: [
                 "platform_concepts/engagement/outbound/cdp/overview",
+                "platform_concepts/engagement/outbound/cdp/user360forbotsbefore01-06022",
                 {
                   type: "category",
                   label: "Managing User data and Creating Segments",
