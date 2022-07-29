@@ -29,7 +29,7 @@ To store a user’s response, click on the drop down next to **Store Response in
 
 A lot of times, the data can not be gathered by directly asking users questions. For example, you might want to fetch certain data from the event payload and pass it to a user property.
 
-This is where a [Variables Node](../../../../studio/build/nodes/action-nodes/#variables) comes in handy. From the drop down, select any User Property you want to pass the data to.
+This is where a [Variables Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#variables) comes in handy. From the drop down, select any User Property you want to pass the data to.
 
 <img src="https://i.imgur.com/NWnn7uW.png" alt="drawing" width="60%"/>
 
