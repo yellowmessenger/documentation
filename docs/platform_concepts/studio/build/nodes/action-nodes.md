@@ -3,14 +3,9 @@ title: Action Nodes
 sidebar_label: Actions
 ---
 
-# Nodes- Actions 
-
-
 Actions are non-interactive nodes that can be used to perform a specific task (background action). 
 
-
 ## 1. General
-
 
 ### Send Event 
 
@@ -18,6 +13,7 @@ Send an event with this node. Events are used to record a specific actions or ca
 
 ![](https://i.imgur.com/6obnCs8.png)
 
+----
 
 ### Send OTP 
 
@@ -32,6 +28,7 @@ Following text message will be sent to the respective number.
 
 ![](https://i.imgur.com/mDlVuCn.jpg)
 
+----
 
 ### Verify OTP
 
@@ -41,14 +38,13 @@ Store the entered OTP as a variable and verify it with this node.
 
 **Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.
 
+----
+
 ### Document Search
 
 Answer user query referring to the available documents from your knowledge base using this node. 
 
 <img src="https://i.imgur.com/cu1uk7M.png" alt="drawing" width="50%"/>
-
-
-
 
 Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base.  (This node shows results from [Document Cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition))
 
@@ -62,9 +58,7 @@ Document Search action node is used to answer user query at any point in the flo
 
 ![](https://i.imgur.com/7qtaA9G.png)
 
-
-
-
+-----
 
 ### Execute Flow 
 
@@ -73,8 +67,7 @@ For example, in the below flow, based on the entered user reply the conversation
 
 ![](https://i.imgur.com/se58HZm.png)
 
-
-
+-----
 
 ### Delay
 
@@ -83,14 +76,13 @@ Select the number of minutes/hours you want the bot to wait for before moving on
 
 ![](https://i.imgur.com/Bh3ly48.png)
 
-
 Alternative method is to set the dealy on each of the node: 
 
 ![](https://i.imgur.com/t8cBzXn.png)
 
+-----
 
 ### Raise Ticket 
-
 
 Raise ticket is used in order to connect user to the human agent. 
 Connect the user to an agent after collecting info and query with this node.  
@@ -210,11 +202,11 @@ If bot is suppose to respond with a different message outside of agent working h
 
 > The bot default timezone considered while evalutaing whether a user is outside working hours.
 
-
 Inbox support auto translate feature out of the box so agents don't need to know the customers langauge in order to help them. Just enable `Translate User Message` in the raise ticket node configuration to use this feature.
 
 <img src="https://i.imgur.com/frCvffs.png" alt="drawing" width="40%"/>
 
+-----
 
 ### Analytics 
 
@@ -232,14 +224,13 @@ The analytics node can be used to capture custom events at any point in the exec
 
 **Pro-tip**: Using custom events, you can analyse user flow from one journey/step to another, filter by specific custom events, summarise by different user responses, visualise drop offs and conversion funnels, etc.
 
-
 ![](https://i.imgur.com/GlLrwaa.png)
 
 Open the Analytics page by clicking Analytics Table link.  
 
 ![](https://i.imgur.com/BvNwdWt.jpg)
 
-
+-----
 
 ### Generate PDF/ Image 
 
@@ -255,6 +246,8 @@ Steps to generate dynamic documents:
 2. **Map placeholder names to variables**: Enter the placeholder name without the brackets in the left column and select variable value in the right column. 
 3. **Save to a variable**: This can now be sent through the **Send file** node. Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user.
 
+-----
+
 ### Data Formatter 
 
 Convert data from CSV to JSON with this node.
@@ -262,6 +255,7 @@ you can ask and store the CSV data in any variable and change it to JSON using d
 
 ![](https://i.imgur.com/X20qA35.png)
 
+-----
 
 ### Payment
 
@@ -269,14 +263,11 @@ you can ask and store the CSV data in any variable and change it to JSON using d
 
 Generate a payment link with this node. 
 
-
-
 ### Switch Flow 
 
 (Currently unavailable.)
 
 Quit the current flow and launch another flow with this node. Here, flow switches to another flow from that point (one cannot have any nodes post this).
-
 
 ## 2. Code Based 
 
@@ -320,6 +311,7 @@ return new Promise
 
 ![](https://i.imgur.com/dklBqQZ.jpg)
 
+-----
 
 ### Variables 
 
@@ -328,47 +320,72 @@ Set the value of one or more variables with this node. Learn how to create a var
 
 ![](https://i.imgur.com/FTDanHl.png)
 
+-----
 
 ### Database 
 
 Database action node helps you in perform simple insert, update and search operations on your [database tables](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables). 
 
 #### Insert
-You select insert operation to insert details against each column into any database table you select. 
+You select insert operation to insert details in each column into any existing database table you select. 
 
 ![](https://i.imgur.com/Tb0EHym.png)
 
+You can collect the entered information and store it in the new record (by adding a new record to the existing database table).
 
 
+<!---
 
 #### Bulk Insert
 
-You can also do bulk insert in database instead of just one row at a time. All you need on this node is to select a variable containing data you want to insert. 
+You can perform a bulk insert into database instead adding details of just one row at a time. 
+Select a variable containing data you want to insert. 
 
 ![](https://i.imgur.com/eLowVBI.png)
 
+-->
+
 #### Search
-You can also perform search operation in database node. 
+You can perform search operation for database node. 
 
 
-1. For searching, you can **select a table** you want to perform search on. 
-2. **Add filter**: You can also add filters to your search (optional). 
+1. **Select Table**: For searching, you can **select a table** you want to perform search on. 
+2. **Add filter**: You can also add filters to your search. 
+3. **Sort Response**: Sort the entered information. 
 
 ![](https://i.imgur.com/Y92xIGt.png)
 
+##### Filter 
 
- Each of the following filter conditions are explained with examples of what all will match with '**`Model car`**' string - 
+Each of the following filter conditions are explained for the use-case when the user enters a date : 15/aug/2022
 
+* **Is** : searches for the exact match. Eg: To search how many times 15/aug/2022 is entered. 
 
-* **Is/Is not** : for exactly matching/exactly not matching with value given. Eg: 'Model car' will be matched 
-*  **contains/does not contain** : will be matched/omitted if it contains the given value. Eg: 'Model car', 'this is a Model car', 'Model car 101' all will be matched/omitted
-*  **contains any/does not contain any**: this is like above, but here each word will be matched/omitted as contains instead of whole phrase. Eg: 'Model car', 'Model', 'car', 'this is a Model', 'car 242' etc all will be matched. 
-*  **Range**: In range you can enter a `from` and `to` value as a filter. Eg: prince `from`:'1000' `to`:5000.
+*  **Contains** : This will be matched if it contains the given value. Eg: contains 08 (august), any date with 08 will be searched 10/aug/2022, 25/aug/2005, so on.
 
+*  **Does not contain**: This will be matched if it does not contain the given value. Eg: Does not contain aug/2022, all the available dates that are not from August 2022 will be searched.
 
+*  **Range**: In range you can enter a `from` and `to` value as a filter. Eg: date `from`:'10' `to`: '20'.
+
+##### And / Or Filter 
+
+* You can add another filter which compares both the filter with and/or condition. 
+* **And**: Search will display results only when both the filters are true. 
+* **Or**: Search will display results if either of the filters holds true. 
+![](https://i.imgur.com/tXuaCDA.png)
 
 3. **Output** : You can sort the output based on a string type column (optional), modify the size of output (maximum no. of records to fetch) and store this result in a variable.
 
+##### Sort Response 
+
+* Select the column name you want to sort and click ASC/DEC (this will sort the info in the table in ascending/decending order based on that column).
+
+![](https://i.imgur.com/3amoEp0.png)
+
+##### More Options 
+
+* **Filter distinct** : Select a column on which distinct must be performed (this removes all the duplicate records when retrieving the records from a table).
+* **Pagination** :Page number and Size limit can be set here.
 
 #### Update
 
@@ -383,8 +400,7 @@ Update option in the database node can be used to update values stored in the ta
   - In Fields add the name of column.
   - In with value add the variable storing the value that you want to update current.
 
-
-
+--------
 
 ### Function 
 
@@ -393,8 +409,7 @@ Execute custom code written for a function with this node. In this node you can 
 
 ![](https://i.imgur.com/v4HNlCq.png)
  
-
-
+-----
 
 ### Modifier 
 
@@ -404,9 +419,9 @@ This node can be used when you want to modify some user input before entering th
 
 You can also test your series of modifiers by entering different input strings to check whether you are getting the desired output in test window shown below. 
 
-
 ![](https://i.imgur.com/EbhyWqD.png)
 
+-----
 
 ### Connect TransXT 
 
@@ -428,13 +443,9 @@ Set language action node takes only one input - variable containing ISO code of 
 * Connect the Set Language node to the node that takes ISO input. Select the variable in which the previous reply is stored. 
 This language will be permanently set (currently set 2 days of expiry), unless it is being changed by same action node only.
 
-
-
 ![](https://i.imgur.com/1jPB6iz.png)
 
 >Language can only be changed to only if that language is configured in bot settings, otherwise the node will fail. 
-
-
 
 ## 4. Notification 
 
@@ -444,15 +455,10 @@ This language will be permanently set (currently set 2 days of expiry), unless i
 
 Send outbound SMS, email, whatsapp, voice notification with this node. 
 
-
-
 ### Notification Status 
 
 Check outbound notification status with this node. 
 
-
-
 ### Voice Call 
 
-Make voice calls with this node. 
-
+Make voice calls with this node.
