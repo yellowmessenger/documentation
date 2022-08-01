@@ -121,13 +121,13 @@ module.exports = {
                 "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/prompt-nodes",
                 "platform_concepts/studio/build/nodes/action-nodes",
-                "platform_concepts/studio/build/nodes/logic-nodes"
+                "platform_concepts/studio/build/nodes/logic-nodes",
               ],
             },
             "platform_concepts/studio/build/code",
+            "platform_concepts/studio/build/math-ops",
             "platform_concepts/studio/build/bot-variables",
             "platform_concepts/studio/build/localization",
-           
           ],       
         },
       
