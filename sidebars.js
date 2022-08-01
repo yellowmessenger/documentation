@@ -121,13 +121,13 @@ module.exports = {
                 "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/prompt-nodes",
                 "platform_concepts/studio/build/nodes/action-nodes",
-                "platform_concepts/studio/build/nodes/logic-nodes"
+                "platform_concepts/studio/build/nodes/logic-nodes",
               ],
             },
             "platform_concepts/studio/build/code",
+            "platform_concepts/studio/build/math-ops",
             "platform_concepts/studio/build/bot-variables",
             "platform_concepts/studio/build/localization",
-           
           ],       
         },
       
@@ -175,6 +175,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/studio/events/event-hub",
+            "platform_concepts/studio/events/user-inactive",
           ],
         },
 
@@ -318,7 +319,7 @@ module.exports = {
         "platform_concepts/engagement/effectivelyuseengage",
         {
               type: "category",
-              label: "CDP",
+              label: "User360",
               collapsed: true,
               items: [
                 "platform_concepts/engagement/cdp/overview",
@@ -509,6 +510,7 @@ module.exports = {
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
+        "platform_concepts/appConfiguration/jira",
       ],
     },
     {
