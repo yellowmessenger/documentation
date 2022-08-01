@@ -5,6 +5,11 @@ sidebar_label: Messages
 
 Message nodes are one-way communication nodes which can be used when the bot has to display information to the user without expecting or taking any response.
 
+
+> The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple text for randomizing**. Enter variations of text that you want your users to see. This feature will display different message to the user in a random order (instead of the same message every time) making the conversation more humanly. 
+>  
+> ![](https://i.imgur.com/k4kQYfg.png)
+
 Given below is a flow created using message nodes to brief the users about their company.
 
 ![](https://i.imgur.com/B9apLcz.jpg)

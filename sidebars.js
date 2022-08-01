@@ -325,6 +325,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
+        "platform_concepts/engagement/effectivelyuseengage",
         {
           type: "category",
           label: "Outbound Engagement",
@@ -332,10 +333,11 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "CDP",
+              label: "User360",
               collapsed: true,
               items: [
                 "platform_concepts/engagement/outbound/cdp/overview",
+                "platform_concepts/engagement/outbound/cdp/user360forbotsbefore01-06022",
                 {
                   type: "category",
                   label: "Managing User data and Creating Segments",
@@ -514,6 +516,7 @@ module.exports = {
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
+        "platform_concepts/appConfiguration/jira",
       ],
     },
     {
