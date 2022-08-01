@@ -143,7 +143,6 @@ module.exports = {
             "platform_concepts/studio/train/add-contextual-response",
             "platform_concepts/studio/train/what-is-document-cognition",
             "platform_concepts/studio/train/utterance-report",
-            "platform_concepts/studio/train/tools",
           ],
         },
         
@@ -200,6 +199,7 @@ module.exports = {
           ],
         },
         
+        "platform_concepts/studio/tools",
         "platform_concepts/studio/languages-supported",
     
       ],
@@ -236,9 +236,8 @@ module.exports = {
       items: [
         "platform_concepts/inbox/inbox",
         "platform_concepts/inbox/manage-support-agent",
+        "platform_concepts/inbox/types-of-chat",
         "platform_concepts/inbox/tickets-assignment-logic",
-        "platform_concepts/inbox/default-agent-statuses",
-        "platform_concepts/inbox/inbox-settings/custom-usecases",
 
         {
           type: "category",
@@ -247,36 +246,32 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "Chat Configuration",
+              label: "Agent Settings",
               collapsed: true,
               items: [
-                "platform_concepts/inbox/inbox-settings/chats-configuration/tags",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-timeout",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/custom-fields",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/csat",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-queue",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/email-transcript",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-autotranslate",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/custom-status",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/canned-responses",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/chat_working_hours",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/custom-status",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/csat",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/canned-responses",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
-
               ],
             },
             {
               type: "category",
-              label: "Agent Configuration",
+              label: "Chat & Email Settings",
               collapsed: true,
               items: [
-                "platform_concepts/inbox/inbox-settings/agent-configuration/agent-settings",
-                "platform_concepts/inbox/inbox-settings/agent-configuration/working-hours",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/chat_custom_fields",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/tags",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/chat_auto_translate",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/chat-queue",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/chat-timeout",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
               ],
             },
-            "platform_concepts/inbox/inbox-settings/productivity-tools",
-            "platform_concepts/inbox/inbox-settings/security",
-            "platform_concepts/inbox/inbox-settings/groups",
+          
+          
           ],
         },
         {
@@ -288,36 +283,32 @@ module.exports = {
             "platform_concepts/inbox/mobilesdk/cordova",
           ],
         },
-        {
-          type: "category",
-          label: "Chats",
-          collapsed: true,
-          items: [
+        
+         
             // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
-            "platform_concepts/inbox/chats/types-of-chat",
-            "platform_concepts/inbox/whatsapp-24hr-window-policy",
-            "platform_concepts/inbox/Chat auto translate",
-            "platform_concepts/inbox/google-translate-api-inbox",
-            "platform_concepts/inbox/Chat custom fields",
-            "platform_concepts/inbox/Chat working hours",
-            {
+       
+        {
               type: "category",
               label: "Reports",
               collapsed: true,
               items: [
-                "platform_concepts/inbox/chats/reports/reports",
-                "platform_concepts/inbox/chats/reports/chat-report-metrics",
-                "platform_concepts/inbox/chats/reports/chat-agent-activity-report",
-                "platform_concepts/inbox/chats/reports/chat-agent-performance-report",
-                "platform_concepts/inbox/chats/reports/chat-archives-report",
-                "platform_concepts/inbox/chats/reports/ticket-agent-performance-report",
-                "platform_concepts/inbox/chats/reports/ticket-archive-report",
+               
+                
+                "platform_concepts/inbox/reports/chat-report-metrics",
+                "platform_concepts/inbox/reports/chat-agent-activity-report",
+                "platform_concepts/inbox/reports/chat-agent-performance-report",
+                "platform_concepts/inbox/reports/chat-archives-report",
+                "platform_concepts/inbox/reports/ticket-agent-performance-report",
+                "platform_concepts/inbox/reports/ticket-archive-report",
               ],           
-            },
-          ],
         },
+            "platform_concepts/inbox/whatsapp-24hr-window-policy",
+            "platform_concepts/inbox/custom-usecases",
+          
+        
       ],
     },
+    
     {
       type: "category",
       label: "Engagement",
@@ -326,25 +317,20 @@ module.exports = {
         "platform_concepts/engagement/engage",
         "platform_concepts/engagement/effectivelyuseengage",
         {
-          type: "category",
-          label: "Outbound Engagement",
-          collapsed: true,
-          items: [
-            {
               type: "category",
               label: "CDP",
               collapsed: true,
               items: [
-                "platform_concepts/engagement/outbound/cdp/overview",
-                "platform_concepts/engagement/outbound/cdp/user360forbotsbefore01-06022",
+                "platform_concepts/engagement/cdp/overview",
+                "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
                 {
                   type: "category",
                   label: "Managing User data and Creating Segments",
                   collapsed: true,
                   items: [
-                    "platform_concepts/engagement/outbound/cdp/user_data_segments/cdp_data",
-                    "platform_concepts/engagement/outbound/cdp/user_data_segments/manage_user_data",
-                    "platform_concepts/engagement/outbound/cdp/user_data_segments/creating_managing_user_segment",
+                    "platform_concepts/engagement/cdp/user_data_segments/cdp_data",
+                    "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
+                    "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
                   ],
                 },
                 {
@@ -352,11 +338,11 @@ module.exports = {
                   label: "Enriching User Profiles",
                   collapsed: true,
                   items: [
-                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_id",
-                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/create_audience_group_csv",
-                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/send_user_data_event_rest_api",
-                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/builder_capture_data",
-                    "platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_events",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/user_id",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
                   ],
                 },
                 {
@@ -364,9 +350,9 @@ module.exports = {
                   label: "Getting The Most From Your User Data",
                   collapsed: true,
                   items: [
-                    "platform_concepts/engagement/outbound/cdp/user_data/targeted_segments",
-                    "platform_concepts/engagement/outbound/cdp/user_data/conv_in_builder",
-                    "platform_concepts/engagement/outbound/cdp/user_data/campaign_in_engage",
+                    "platform_concepts/engagement/cdp/user_data/targeted_segments",
+                    "platform_concepts/engagement/cdp/user_data/conv_in_builder",
+                    "platform_concepts/engagement/cdp/user_data/campaign_in_engage",
 
                   ],
                 },
@@ -375,13 +361,20 @@ module.exports = {
                   label: "FAQs",
                   collapsed: true,
                   items: [
-                    "platform_concepts/engagement/outbound/cdp/faq/exclude_user_campaign",
-                    "platform_concepts/engagement/outbound/cdp/faq/date_based_campaign",
-                    "platform_concepts/engagement/outbound/cdp/faq/maintain_context_across_channel",
+                    "platform_concepts/engagement/cdp/faq/exclude_user_campaign",
+                    "platform_concepts/engagement/cdp/faq/date_based_campaign",
+                    "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
                   ],
                 },
               ],
             },
+            
+        {
+          type: "category",
+          label: "Outbound Engagement",
+          collapsed: true,
+          items: [
+                
             {
               type: "category",
               label: "Templates",
@@ -407,6 +400,7 @@ module.exports = {
             "platform_concepts/engagement/outbound/notification-engine",
           ],
         },
+
         {
           type: "category",
           label: "Inbound Engagement",
@@ -539,25 +533,48 @@ module.exports = {
     "updates/overview",
     {
       type: "category",
-      label: "August 2021",
+      label: "Studio",
       collapsed: true,
       items: [
-        "updates/aug_21/analytics",
-        "updates/aug_21/builder",
-        "updates/aug_21/inbox",
+       
       ],
     },
     {
       type: "category",
-      label: "September 2021",
+      label: "Insights",
       collapsed: true,
-      items: ["updates/sep_21/engage", "updates/sep_21/inbox"],
+      items: [],
     },
     {
       type: "category",
-      label: "October 2021",
+      label: "Inbox",
       collapsed: true,
-      items: ["updates/oct_21/engage", "updates/oct_21/inbox"],
+      items: [],
+    },
+    {
+      type: "category",
+      label: "Engage",
+      collapsed: true,
+      items: [
+      ],
+    },
+    {
+      type: "category",
+      label: "Channel Configuration",
+      collapsed: true,
+      items: [],
+    },
+    {
+      type: "category",
+      label: "Integrations",
+      collapsed: true,
+      items: [],
+    },
+    {
+      type: "category",
+      label: "Configurations",
+      collapsed: true,
+      items: [],
     },
   ],
   glossary: [
