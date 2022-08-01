@@ -275,16 +275,7 @@ module.exports = {
           
           ],
         },
-        {
-          type: "category",
-          label: "Mobile SDK",
-          collapsed: true,
-          items: [
-            "platform_concepts/inbox/mobilesdk/android",
-            "platform_concepts/inbox/mobilesdk/cordova",
-          ],
-        },
-        
+      
          
             // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
        
@@ -309,6 +300,36 @@ module.exports = {
         
       ],
     },
+    {
+      type: "category",
+      label: "Mobile SDK",
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "Inbox",
+          collapsed: true,
+          items: [
+          "platform_concepts/mobile/inbox/android",
+          "platform_concepts/mobile/inbox/cordova",
+          ],
+        },
+        {
+          type: "category",
+          label: "ChatBot",
+          collapsed: true,
+          items: [
+          "platform_concepts/mobile/chatbot/android",
+          "platform_concepts/mobile/chatbot/cordova",
+          "platform_concepts/mobile/chatbot/flutter",
+          "platform_concepts/mobile/chatbot/ios",
+          "platform_concepts/mobile/chatbot/react-native",
+          "platform_concepts/mobile/chatbot/xamarin",
+          ],
+        },
+      ],
+    },
+    
     
     {
       type: "category",
@@ -455,20 +476,15 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/channelConfiguration/alexa",
-        "platform_concepts/channelConfiguration/android",
-        "platform_concepts/channelConfiguration/cordova",
         "platform_concepts/channelConfiguration/email-outbound",
         "platform_concepts/channelConfiguration/facebook-messenger",
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/fb-workplace",
-        "platform_concepts/channelConfiguration/flutter",
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/google-assistant",
         "platform_concepts/channelConfiguration/googleChat",
         "platform_concepts/channelConfiguration/instagram",
-        "platform_concepts/channelConfiguration/ios",
         "platform_concepts/channelConfiguration/ivr-bots",
-        "platform_concepts/channelConfiguration/react-native",
         "platform_concepts/channelConfiguration/slack",
         "platform_concepts/channelConfiguration/sms-outbound-india",
         "platform_concepts/channelConfiguration/teams",
@@ -476,7 +492,6 @@ module.exports = {
         "platform_concepts/channelConfiguration/web-widget",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
-        "platform_concepts/channelConfiguration/xamarin",
       ],
     },
     {

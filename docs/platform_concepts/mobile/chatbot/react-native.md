@@ -1,6 +1,6 @@
 ---
 title: react-native Chatbot SDK
-sidebar_label: react-native Chatbot SDK
+sidebar_label: React Native 
 ---
 
 # Migration Guide for Android

@@ -1,6 +1,6 @@
 ---
-title: Flutter Chatbot SDK
-sidebar_label: Flutter Chatbot SDK
+title: Chatbot SDK for cordova
+sidebar_label: Cordova 
 ---
 
 # Migration Guide for Android
@@ -20,17 +20,12 @@ For more info feel free to email us at mobile@yellow.ai
 
 ## Installation
 
-### Pub.dev
+### cordova
 
-```sh
-$ flutter pub add ymchat_flutter
+Run this command in terminal form project root folder
+
 ```
-
-or manually add dependency to the pubspec.yaml
-
-```yaml
-dependencies:
-  ymchat_flutter: <version>
+ionic cordova plugin add cordova-plugin-ymchat
 ```
 
 ### Android
@@ -48,18 +43,12 @@ Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.a
 
 ## Usage
 
-Import the YMChat library in your dart file.
-
-```dart
-import 'package:ymchat_flutter/ymchat_flutter.dart';
-```
-
 ### Set botId
 
-This is the first and **compulsary** step.
+This is the first and compulsory step.
 
-```dart
-YmChat.setBotId("x1234567890");
+```javascript
+cordova.plugins.ymchat.setBotId("botId");
 ```
 
 ### YM AuthenticationToken
@@ -68,28 +57,31 @@ ymAuthenticationToken is used to associate an identity of the user with the chat
 
 Whenever chatbot is launched with ymAuthenticationToken it will load the previous chats associated with this user since **inception**.
 
-```dart
-YmChat.setAuthenticationToken("token");
+```javascript
+cordova.plugins.ymchat.setAuthenticationToken("token");
 ```
 
 Note: History will load only when `Show history` flag is enabled in the channel settings
 
 ### Push Notifications
 
-ymchat_flutter supports firebase notifications. Pass your `FCM token` in setDeviceToken method.
+YMChat supports firebase notifications. Pass your `FCM token` in setDeviceToken method.
 
-```dart
-YmChat.setDeviceToken("token");
+```javascript
+cordova.plugins.ymchat.setDeviceToken("token");
 ```
 
 Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
 
 ### Payload
 
-A specific journey can be triggered on launch, by passing the slug in the payload.
+Additional information can be passed in the form of key value pair from app to bot using payload.
 
-```dart
-YmChat.setPayload({ "name": "Integration", "type": "Flutter" });
+```javascript
+cordova.plugins.ymchat.setPayload({
+  name: "Integration",
+  type: "cordova",
+});
 ```
 
 Payload can be used to pass information from host app to bot. The payload dictionary should be JSON compatible else an error will be thrown
@@ -104,48 +96,50 @@ Payload is securely passed in HTTPS post request to protect the information pass
 
 A specific journey can be triggered on launch, by passing the slug in the payload.
 
-```dart
-YmChat.setPayload({ "JourneySlug" : "checkout-cart" });
+```js
+cordova.plugins.ymchat.setPayload({ JourneySlug: "checkout-cart" });
 ```
 
 ### On-Premise / Region Specific deployments
 
-ymchat_flutter supports bots with on-prem deployments. For the bot to work, pass the on-prem URL to `setCustomURL()` method.
+cordova-plugin-ymchat supports bots with on-prem deployments. For the bot to work, pass the on-prem URL to `setCustomURL()` method.
 
-```dart
-YmChat.setCustomURL("https://your-on-prem-url.com");
+```javascript
+cordova.plugins.ymchat.setCustomURL("https://your-on-prem-url.com");
 ```
 
 If the bot is deployed in a specific region(e.g. r1,r2,r3..rn)) on yellow.ai cloud, set the `customBaseUrl` as follows
 
-```dart
-YmChat.setCustomURL("https://rx.cloud.yellow.ai");
+```javascript
+cordova.plugins.ymchat.setCustomURL("https://rx.cloud.yellow.ai");
 ```
 
-Here rx = r1,r2,r3,r4,r5 etc
+Here rx = r1,r2,r3,r4,r5 etc.
 
 ### Custom loader
 
 You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
 
-```dart
-YMChat.setCustomLoaderUrl("https://example.com/your/custom/image.gif");
+```javascript
+cordova.plugins.ymchat.setCustomLoaderURL(
+  "https://example.com/your/custom/image.gif"
+);
 ```
 
 ### V2 bot
 
 You can enable V2 bot by calling `setVersion()` method. Default value is 1
 
-```dart
-YmChat.setVersion(2);
+```javascript
+cordova.plugins.ymchat.setVersion(2);
 ```
 
 ### Speech to Text
 
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
 
-```dart
-YmChat.setEnableSpeech(true);
+```javascript
+cordova.plugins.ymchat.setEnableSpeech(true);
 ```
 
 ### Colors
@@ -154,73 +148,76 @@ YmChat.setEnableSpeech(true);
 
 Status bar color can be set by calling `setStatusBarColor` method
 
-```dart
-YMChat.setStatusBarColor("#FFFFFF");
+```javascript
+cordova.plugins.ymchat.setStatusBarColor("#FFFFFF");
 ```
 
 #### Close button
 
 Close button color can be set by calling `setCloseButtonColor` method
 
-```dart
-YMChat.setCloseButtonColor("#000000");
+```javascript
+cordova.plugins.ymchat.setCloseButtonColor("#000000");
 ```
 
 #### iOS
 
-If you are supporting Speech recognition, add following snippet to Info.plist of the host app
+If you are supporting Speech recognization, add following snippet to Info.plist of the host app
 
-```xml
+```
 <key>NSMicrophoneUsageDescription</key>
 <string>Your microphone will be used to record your speech when you use the Voice feature.</string>
 <key>NSSpeechRecognitionUsageDescription</key>
 <string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
 ```
 
-Info.plist is found at path
-
-```
-<YourProjectRootDir>/ios/Runner/info.plist
-```
-
-## Present chatbot
+### Present chatbot
 
 Chat bot can be presented by calling `startChatbot()`. This method will display full screen chat view
 
-```dart
-YmChat.startChatbot();
+```javascript
+cordova.plugins.ymchat.startChatbot(
+  (successResponse) => {
+    console.log(successResponse); //prints "OK"
+  },
+  (failureJSON) => {
+    console.log(JSON.stringify(failureJSON));
+    /* Console.log prints
+    {
+      "success": false,
+      "error": "This is the error occurred"
+    } */
+  }
+);
 ```
 
 ## Bot Events
 
 Bot events are used to pass information from bot to app. For passing events from app to bot refer [Payload](#payload)
 
-```dart
-  EventChannel _ymEventChannel = const EventChannel("YMChatEvent");
-    _ymEventChannel.receiveBroadcastStream().listen((event) {
-      Map ymEvent = event;
-      log("${ymEvent['code']} : ${ymEvent['data']}");
-    });
+```javascript
+cordova.plugins.ymchat.onEventFromBot((result) => {
+  console.log("Code : " + result.code); // Prints the event sent to the chat bot
+  console.log("Data : " + JSON.stringify(result.data)); // Prints the event sent to the chat bot
+});
 ```
 
 #### Bot close event
 
-Bot close event is separetly sent and it can be handled in following way.
+Bot close event is separately sent and it can be handled in following way.
 
-```dart
-  EventChannel _ymCloseEventChannel = const EventChannel("YMBotCloseEvent");
-    _ymCloseEventChannel.receiveBroadcastStream().listen((event) {
-      bool ymCloseEvent = event;
-      log(event.toString());
-    });
+```javascript
+cordova.plugins.ymchat.onBotClose(() => {
+  console.log("Bot Closed"); // Prints Bot Closed
+});
 ```
 
 ## Close bot
 
-Bot can be programmatically closed using `closeBot()` function
+Bot can be closed by tapping on cross button at top, and they can be programmatically closed using `closeBot()` function
 
-```dart
-YmChat.closeBot();
+```javascript
+cordova.plugins.ymchat.closeBot();
 ```
 
 ## Unlink Device Token
@@ -228,17 +225,18 @@ YmChat.closeBot();
 If you want to stop receiving push notifications you can unlink the device token.
 Device token typically is unlinked when the user logs out of the app.
 
-```dart
-  YmChat.unLinkDeviceToken(
-    botId,
-    apiKey,
-    deviceToken,
-    () {
-      log("Device token unlinked");
-      },
-    (failureMessage) {
-      log(failureMessage);
-      });
+```javascript
+cordova.plugins.ymchat.unlinkDeviceToken(
+  botId,
+  apiKey,
+  deviceToken,
+  () => {
+    console.log("Device token unlinked");
+  },
+  (error) => {
+    console.log(`error ${error.message}`);
+  }
+);
 ```
 
 :::note API Key
@@ -251,4 +249,4 @@ Client using SDK version below `v2.1.0` will have no impact.
 ## Demo App
 
 A demo app can be used as a reference to better understand how this SDK can be integrated in the app
-[https://github.com/yellowmessenger/ymchat-flutter-demo](https://github.com/yellowmessenger/ymchat-flutter-demo)
+[https://github.com/yellowmessenger/YMChatIonicDemo](https://github.com/yellowmessenger/YMChatIonicDemo)

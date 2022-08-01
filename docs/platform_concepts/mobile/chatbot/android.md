@@ -1,6 +1,6 @@
 ---
 title: Android Chatbot SDK
-sidebar_label: Android Chatbot SDK
+sidebar_label: Android
 ---
 
 # Migration Guide
