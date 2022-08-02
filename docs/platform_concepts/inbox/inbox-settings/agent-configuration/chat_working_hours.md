@@ -1,6 +1,6 @@
 ---
 title: Chat Working hours
-sidebar_label : Chat Working hours
+sidebar_label : Working hours
 ---
 
 ### Working hours

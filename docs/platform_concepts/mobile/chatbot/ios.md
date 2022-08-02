@@ -1,6 +1,6 @@
 ---
 title: iOS Chatbot SDK
-sidebar_label: iOS Chatbot SDK
+sidebar_label: iOS 
 ---
 
 ## Installation
