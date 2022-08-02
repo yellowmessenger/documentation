@@ -67,6 +67,7 @@ module.exports = {
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel",
             "cookbooks/whatsapp-channel/bot-basics",
+            
           ],
         },
         {
@@ -92,6 +93,7 @@ module.exports = {
         },
         "cookbooks/whatsapp-channel/building-flows",
         "cookbooks/whatsapp-channel/faqs",
+        "cookbooks/whatsapp-channel/testing"
       ]
     }
   ],
@@ -104,80 +106,106 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/studio/overview",
-        "platform_concepts/studio/journeys",
         {
           type: "category",
-          label: "Nodes",
+          label: "Build",
           collapsed: true,
           items: [
-            //"platform_concepts/studio/cloud-function",
-            "platform_concepts/studio/steps/steps",
-            "platform_concepts/studio/steps/prompts-and-messages",
-            "platform_concepts/studio/steps/action-nodes-and-logic",
+            "platform_concepts/studio/build/journeys",
+            {
+              type: "category",
+              label: "Nodes",
+              collapsed: true,
+              items: [
+                //"platform_concepts/studio/cloud-function",
+                "platform_concepts/studio/build/nodes/nodes",
+                "platform_concepts/studio/build/nodes/message-nodes",
+                "platform_concepts/studio/build/nodes/prompt-nodes",
+                "platform_concepts/studio/build/nodes/action-nodes",
+                "platform_concepts/studio/build/nodes/logic-nodes"
+              ],
+            },
+            "platform_concepts/studio/build/code",
+            "platform_concepts/studio/build/bot-variables",
+            "platform_concepts/studio/build/localization",
+           
+          ],       
+        },
+      
+
+        {
+          type: "category",
+          label: "Train",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/train/intents",
+            "platform_concepts/studio/train/entities",
+            "platform_concepts/studio/train/add-faqs",
+            "platform_concepts/studio/train/add-contextual-response",
+            "platform_concepts/studio/train/what-is-document-cognition",
+            "platform_concepts/studio/train/utterance-report",
+            "platform_concepts/studio/train/tools",
+          ],
+        },
+        
+        {
+          type: "category",
+          label: "API",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/api/add-api",
+            "platform_concepts/studio/api/send-data",
+            "platform_concepts/studio/api/receive-data",
+            "platform_concepts/studio/api/enviroment-variables",
+            "platform_concepts/studio/api/bearer-token",
+            "platform_concepts/studio/api/transformation-function",
           ],
         },
 
         {
           type: "category",
-          label: "Natural Language Understanding",
+          label: "Table",
           collapsed: true,
           items: [
-            "platform_concepts/studio/natural-language-understanding/intents",
-            "platform_concepts/studio/natural-language-understanding/entities",
+            "platform_concepts/studio/table/create-tables",
+            "platform_concepts/studio/table/database-search",
           ],
         },
         {
           type: "category",
-          label: "Knowledge Management",
+          label: "Events",
           collapsed: true,
           items: [
-            "platform_concepts/studio/knowledge-management/add-faqs",
-            "platform_concepts/studio/knowledge-management/what-is-document-cognition",
-            "platform_concepts/studio/knowledge-management/AWS",
-            "platform_concepts/studio/knowledge-management/Sharepoint",
-          ],
-        },
-        {
-          type: "category",
-          label: "API Management",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/api-management/add-api",
-            "platform_concepts/studio/api-management/send-data",
-            "platform_concepts/studio/api-management/receive-data",
-            "platform_concepts/studio/api-management/enviroment-variables",
-            "platform_concepts/studio/api-management/bearer-token",
-            "platform_concepts/studio/api-management/transformation-function",
-          ],
-        },
-        {
-          type: "category",
-          label: "Context Management",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/context-management/add-contextual-response",
+            "platform_concepts/studio/events/event-hub",
           ],
         },
 
+        {
+          type: "category",
+          label: "Analyze",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/analyze/chat-logs",
+          ],
+        },
+
+        {
+          type: "category",
+          label: "Test and Publish bots",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/test-and-publish-bot/bot-training",
+            "platform_concepts/studio/test-and-publish-bot/debug-flow",
+            "platform_concepts/studio/test-and-publish-bot/modes",
+          
+          ],
+        },
+        
         "platform_concepts/studio/languages-supported",
-        "platform_concepts/studio/tools",
-        "platform_concepts/studio/event-hub",
-        "platform_concepts/studio/bot-variables",
-        "platform_concepts/studio/bot-training",
-        "platform_concepts/studio/cloud-function",
-        "platform_concepts/studio/modes",
-        "platform_concepts/studio/chat-logs",
+    
       ],
     },
-    {
-      type: "category",
-      label: "Data",
-      collapsed: true,
-      items: [
-        "platform_concepts/data/create-tables",
-        "platform_concepts/data/database-search",
-      ],
-    },
+  
     {
       type: "category",
       label: "Insights",
@@ -186,18 +214,20 @@ module.exports = {
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
+        "platform_concepts/growth/api-usage",
 
         {
           type: "category",
-          label: "User Journey",
+          label: "User Journeys",
           collapsed: true,
           items: [
-            "platform_concepts/growth/user-journey",
+            "platform_concepts/growth/user-journeys",
             "platform_concepts/growth/funnels",
           ],
         },
 
-        "platform_concepts/growth/api-usage",
+        "platform_concepts/growth/data-explorer",
+        "platform_concepts/growth/dashboards",
       ],
     },
     {
@@ -229,6 +259,11 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/email-transcript",
                 "platform_concepts/inbox/inbox-settings/chats-configuration/chat-autotranslate",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/custom-status",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/canned-responses",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
+                "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
+
               ],
             },
             {
@@ -259,16 +294,27 @@ module.exports = {
           label: "Chats",
           collapsed: true,
           items: [
-            "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
+            // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
+            "platform_concepts/inbox/chats/types-of-chat",
             "platform_concepts/inbox/whatsapp-24hr-window-policy",
-            "platform_concepts/inbox/Chat agent activity report",
-            "platform_concepts/inbox/Chat agent performance report",
-            "platform_concepts/inbox/Chat archives report",
-            "platform_concepts/inbox/Chat report metrics 101",
             "platform_concepts/inbox/Chat auto translate",
             "platform_concepts/inbox/google-translate-api-inbox",
             "platform_concepts/inbox/Chat custom fields",
             "platform_concepts/inbox/Chat working hours",
+            {
+              type: "category",
+              label: "Reports",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/chats/reports/reports",
+                "platform_concepts/inbox/chats/reports/chat-report-metrics",
+                "platform_concepts/inbox/chats/reports/chat-agent-activity-report",
+                "platform_concepts/inbox/chats/reports/chat-agent-performance-report",
+                "platform_concepts/inbox/chats/reports/chat-archives-report",
+                "platform_concepts/inbox/chats/reports/ticket-agent-performance-report",
+                "platform_concepts/inbox/chats/reports/ticket-archive-report",
+              ],           
+            },
           ],
         },
       ],
@@ -279,6 +325,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
+        "platform_concepts/engagement/effectivelyuseengage",
         {
           type: "category",
           label: "Outbound Engagement",
@@ -343,7 +390,6 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/overview",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
-                "platform_concepts/engagement/outbound/templates/whatsapp-template",
               ],
             },
             {

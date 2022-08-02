@@ -1,6 +1,6 @@
 ---
 id: inbox
-title: Understanding the Inbox module
+title: Inbox module
 description: How to add agents
 featured: true
 rank: 5

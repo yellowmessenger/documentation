@@ -8,7 +8,7 @@ If you’ve built a campaigns on yellow.ai, you can use the [Outbound Engage](..
 To improve engagement rates of your campaigns, it’s extremely important to target the right set of users, with the right content.
 
 ### Creating the right content
-You can use the [template manager](../../templates/overview/) to create the content you want to target your users with. It is possible to add variables in a template by using **{{variableName}}**
+You can use the [template manager](../../templates/overview) to create the content you want to target your users with. It is possible to add variables in a template by using **{{variableName}}**
 
 ![](https://i.imgur.com/QxXgHqa.png)
 

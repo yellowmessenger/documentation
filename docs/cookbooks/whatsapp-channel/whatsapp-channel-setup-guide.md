@@ -14,6 +14,13 @@ References to WhatsApp bot -
 
 Manyavar WA Bot- https://wa.me/message/F44APOWGJ5CFH1.
 
+:::info
+To know more about yellow.ai platform, sign up at - [Ascend](https://ascend.yellow.ai/).
+
+Then visit this [link](https://ascend.yellow.ai/learner/courseinfo/id:311) for the WhatsApp course.
+:::
+
+
 ## Prerequisites for creating a WhatsApp Channel
 
 Yellow Messenger Account - http://cloud.yellowmessenger.com/
