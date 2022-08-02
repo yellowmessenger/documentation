@@ -210,6 +210,17 @@ Follow the steps defined below to start integrating:
 
 Following the above steps will connect your Shopify Store account with yellow.ai platform.
 
+## Steps to perform if webhook deletion fails while disconnecting the integration:
+
+1. Check if you can access the webhook page on the client dashboard
+2. If you can access it, please try to delete it manually from the dashboard itself.
+3. If you can't access it, please address the reason why you are not able to access it. (for example, the plan needs to be upgraded or the free trial expired).
+
+- Navigate to Settings -> Notifications -> Webhooks.
+- If you can see the existing webhooks like below, please try to delete them manually.
+
+<img src="https://cdn.yellowmessenger.com/CW3EzE87AdRg1659352098947.png" alt="drawing" width="100%"/>
+
 
 ## References:-
 1. [Shopify Custom Apps](https://help.shopify.com/en/manual/apps/custom-apps)
