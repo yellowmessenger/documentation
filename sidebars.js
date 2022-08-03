@@ -409,7 +409,7 @@ module.exports = {
             },
             {
               type: "category",
-              label: "Campaigns",
+              label: "Pain",
               collapsed: true,
               items: [
                 "platform_concepts/engagement/outbound/outbound-campaigns/email-campaign",
