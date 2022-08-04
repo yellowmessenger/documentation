@@ -1,6 +1,6 @@
 ---
 title: Custom Usecases
-sidebar_label : Custom Usecases
+sidebar_label : Usecases
 ---
 
 ## Agent transfer without asking any information from the user
