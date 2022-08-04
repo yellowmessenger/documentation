@@ -157,7 +157,7 @@ module.exports = {
             "platform_concepts/studio/api/receive-data",
             "platform_concepts/studio/api/enviroment-variables",
             "platform_concepts/studio/api/bearer-token",
-            "platform_concepts/studio/api/transformation-function",
+           // "platform_concepts/studio/api/transformation-function",
             "platform_concepts/studio/api/api-settings",
           ],
         },
