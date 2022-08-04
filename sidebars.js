@@ -25,7 +25,6 @@ module.exports = {
   cookbooks: [
     "cookbooks/getting_started",
     "cookbooks/conversation-design",
-    "cookbooks/Upgrade_new_engage_app",
     {
       type: "category",
       label: "Basic",
@@ -146,6 +145,7 @@ module.exports = {
             "platform_concepts/studio/train/utterance-report",
           ],
         },
+       
         
         {
           type: "category",
