@@ -33,9 +33,9 @@ If you're getting started or looking for more practical end-to-end guides, check
 
 Studio consists of following modules:
 
-- ### Build
+### Build
 
-##### [Flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys): 
+#### [Flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys): 
 A conversational flow is a set of events that are carried out one after the other depending on conditions set by you for your bot.
 
 There are 2 ways for you to build a flow:
@@ -46,15 +46,15 @@ Choose a template from market place and access one of the predesigned bots.
 ###### 2. Create from scratch
 Click on the flow dropdown and click on **+ Create Flow**.
 
-##### [NLU](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents):
+#### [NLU](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents):
 Natural Language Understanding makes up the heart and soul of understanding user utterances. Train your intents to understand common user utterances and trigger flows using the start trigger.
 
-##### [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code):
+#### [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code):
 Bot builders can write  code functions here if needed and attach them using function node to workflow.
 
-##### Localization:
+#### Localization:
 Localization can be used to configure multilingual messages and nodes to provide multillingual support.
-##### [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs):
+#### [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs):
 Train your bot to understand commonly asked questions by the users.This way your bot can give automated responses to various user queries.
 
 ### [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api)
@@ -108,7 +108,7 @@ Above points describe the scope of your bot, ie, what can your bot help your cus
 
 ### 2. Train your bot
 Another thing, the heart and soul of bot building "**Natural language Understanding**" capabilities can be added to bot in this section. 
-You can [train your bot](.test-and-publish-bot/bot-training) here to [respond to various user utterances](./train/intents), [detect entities](./train/entities) etc. 
+You can [train your bot](./test-and-publish-bot/bot-training) here to [respond to various user utterances](./train/intents), [detect entities](./train/entities) etc. 
 
 ### 3. Supporting sections - Code, API and Events.
 These sections are often used / needed in bot building journey.

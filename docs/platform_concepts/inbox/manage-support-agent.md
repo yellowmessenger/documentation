@@ -1,6 +1,6 @@
 ---
 title: Manage Support Agents
-sidebar_label : Manage Support Agents
+sidebar_label : Adding agents
 ---
 
 ### How to add a support agent on the platform? 

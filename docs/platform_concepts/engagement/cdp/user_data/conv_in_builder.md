@@ -3,7 +3,7 @@ sidebar_label: Hyper-personalised Conversations
 title: Creating Hyper-personalised Conversations in Builder
 ---
 
-If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](../../../../studio/overview) to create hyper-personalised conversations based on user properties.
+If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to create hyper-personalised conversations based on user properties.
 
 While these user properties are accessible in all the nodes of Studio, we’ll cover some of them with-in this document, to show you how you can create the right conversion for the right set of users.
 
@@ -25,6 +25,6 @@ While in the above section we covered how to create personalised messages, it’
 
 For example, when talking about the pricing plan, you might want to share different plans with different set of users. For example, this set of users could be defined on the basis of their country.
 
-This is where the [Condition Node](../../../../studio/build/nodes/action-nodes#if-condition) comes in handy.
+This is where the [Condition Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-if--condition) comes in handy.
 
 ![](https://i.imgur.com/h75l167.png)
