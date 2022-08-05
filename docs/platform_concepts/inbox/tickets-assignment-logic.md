@@ -1,6 +1,6 @@
 ---
 title: How are different tickets assigned to agents in Inbox?
-sidebar_label : Chat ticket assignment 
+sidebar_label : Chat assignment 
 ---
 
 ### Chat tickets

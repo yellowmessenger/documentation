@@ -5,7 +5,7 @@ sidebar_label: User360 for Bots Created Before 01/06/22
 
 
 
-The old Users Module is being replaced with the all new [User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/overview/).
+The old Users Module is being replaced with the all new [User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/).
 
 User 360 had been enabled by default for all bots created after 01/06/2022. This document is for older bots and it mentions steps to successfully migrate data from the older Users Module to the new User 360.
 
@@ -25,14 +25,14 @@ User 360 had been enabled by default for all bots created after 01/06/2022. This
 
 * Before the migration process, you can take a backup of your data by clicking **Download data**. Once the data is downloaded, click **Migrate data**.
 * Data migration screen will be displayed where Old user properties can be mapped to the **New user properties**.
-* Under New user property,  [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_id/) and pre-defined [System properties](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/user_data_segments/cdp_data/#system-user-properties) are displayed. 
-* You can also create a [Custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/user_data_segments/cdp_data/#custom-user-properties) by clicking **+ Add new user property**.
+* Under New user property,  [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id/) and pre-defined [System properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#system-user-properties) are displayed. 
+* You can also create a [Custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#custom-user-properties) by clicking **+ Add new user property**.
 
 
 ![](https://i.imgur.com/MiVymww.png)
 
 
-* Read this [document](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/user_data_segments/cdp_data/#user-property-data-types) to know the data types supported in User 360. The following mappings are not recommended, as it might throw data incompatibility errors and prevent successful migration of data.
+* Read this [document](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) to know the data types supported in User 360. The following mappings are not recommended, as it might throw data incompatibility errors and prevent successful migration of data.
 
 
 
@@ -56,7 +56,7 @@ User 360 had been enabled by default for all bots created after 01/06/2022. This
 
 
 * After mappings, click on **Migrate**. You will be redirected to User 360. 
-* To view the status of your migration activity,  click  [User logs](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/user_data_segments/manage_user_data/#user-logs). Here you can refer to the activity “Migrate Data”. If the status is “In Progress”, the migration is still going on. The status will change to “Completed” once the migration is done.
+* To view the status of your migration activity,  click  [User logs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data/#user-logs). Here you can refer to the activity “Migrate Data”. If the status is “In Progress”, the migration is still going on. The status will change to “Completed” once the migration is done.
 
 ![](https://i.imgur.com/1yobIJF.png)
 

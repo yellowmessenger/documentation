@@ -1,6 +1,6 @@
 ---
 title: WhatsApp 24hr Window Policy
-sidebar_label : WhatsApp 24hr Window Policy 
+sidebar_label : WhatsApp Policy 
 ---
 
 

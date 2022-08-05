@@ -1,6 +1,6 @@
 ---
 id: inbox
-title: Inbox Overview
+title: Overview
 description: How to add agents
 featured: true
 rank: 5

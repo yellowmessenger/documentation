@@ -3,9 +3,8 @@ title: Types of Web Behavior Triggers
 sidebar_label: Types of Web behavior triggers
 ---
 
-- # Types of Web Behaviour Triggers
 
-# In this guide
+## In this guide
 
 1. This guide introduces you to the various types of Web Behaviour Triggers and what each of them mean. A Web Behaviour Trigger is used to define **When** the campaign will be executed
 2. This guide also gives a quick walkthrough of how to set up multiple conditions and condition sets, and how they can be used to create **AND**, or **OR** Conditions
@@ -69,4 +68,4 @@ By default, every “condition” within a “condition set” will have an **AN
 
 ## Up next
 
-We will talk about [Web Behavior triggers to identify in e-commerce.](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorsInEcomm)
+We will talk about [Web Behavior triggers to identify in e-commerce.](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorsInEcomm)
