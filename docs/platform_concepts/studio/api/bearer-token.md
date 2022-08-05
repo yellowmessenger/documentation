@@ -1,9 +1,11 @@
 ---
-title: How to send bearer token from one API result to another APIs header?
-sidebar_label : Using Bearer Token in an API
+title: Send bearer token from one API result to another APIs header
+sidebar_label : Bearer Token 
 ---
 
-## How to send bearer token from one api result to another APIs header without using Code function
+## 1.  Without using Code function
+
+Follow the steps below to send bearer token from one api result to another APIs header without using Code function:
 
 1. Navigate to Studio > Build > API and [add a new API](./add-api) to fetch bearer token. Here we’ve added a salesforce API to create a bearer token. During the course of this tutorial, we’ll call it auth API. This API returns a bearer token which we will use later in another API.
 
@@ -31,7 +33,9 @@ Finally, store the response of this API in `sf_search_lead_response`.
 
 ![](https://i.imgur.com/4mC1FvJ.png)
 
-## How to send bearer token from one API result to another APIs header? (Using Code)
+## 2.  Using Code function
+
+Follow the steps below to send bearer token from one api result to another APIs header  using Code function:
 
 1. Open any journey where you've added API Action Node which invokes auth API.
 

@@ -1,11 +1,11 @@
 ---
-title: API Management
+title: Receive Data from API and Parse Response
 sidebar_label : Receiving data from an API
 ---
 
-### How to access data from an API/Response?
+## 1. Access data from an API/Response
 
-To retrieve the API response and to display it to the user, please follow the below steps.
+To retrieve the API response and display it to the user, follow the below steps:
 
 
 1. Add a Prompt/Message node after the actions node.
@@ -15,22 +15,26 @@ To retrieve the API response and to display it to the user, please follow the be
 3. Using the dot notation, access the value of API response.
 
 
-![API Response](https://cdn.yellowmessenger.com/pM8aYXXUTfPf1623906957904.gif)
+![](https://i.imgur.com/03jY5iw.png)
 
-Finally, when a user messages the bot, the id would be displayed to the user.
+When a user messages the bot, the ID would be displayed to the user.
+
+> Learn more about the API node 
+[here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#api)
 
 
-### How to access transformation Function in API actions node
+## 2. Access transformation Function in API actions node - API Parse Response
 
-Transformation Function can be used when you wish to modify/manipulate the API response in order to present the API response in a more meaningful format to the user.
+Transformation Function can be used to modify/manipulate the API response in order to present the API response in a more meaningful format to the user. 
+API section can be used to invoke APIs but to parse and manipulate the API response, transformation function come in handy. 
+Follow the given steps to access transform function:
 
-1. Add the a function in the `Code` module and add the code snippet below.
 
-![](https://i.imgur.com/b4AJP3Y.png)
+1. Open **Studio > Build > Code**. Click **+Add new function**.
 
-In the transformation function, you could access the API response in ymLib.args. You could write your own logic in javascript to fetch only the fields you wish to have in the response of API.
+![](https://i.imgur.com/tAgKjlN.png)
 
-**Code Snippet**: transformationFN
+**Code Snippet**: Example- transformationFN
 ```js
 let { apiResponse } = ymLib.args; // retrieve API response
 let weather_condition, actions = [],result=[]; 
@@ -45,6 +49,52 @@ console.log(weather_condition);
 return weather_condition; 
 ```
 
-2. Once the transformation function is in place, return the value (here `name`) so that would be saved in a variable (here `response`). You could use the variable in Prompt or Message node to send that to user. 
+2. On the right side of the below screenshot, API response is given which is in JSON format. Fetch and parse the API response as JSON using following code snippet.
 
-<img src="https://i.imgur.com/ADPdxJ7.png" alt="drawing" width="60%"/>
+![](https://i.imgur.com/ttqljrF.png)
+
+```js
+let apiResponse = ymLib.args.apiResponse; // fetch API response
+let body;
+
+if(apiResponse && apiResponse.body)
+{
+    body = JSON.parse(apiResponse.body) // parse API response and store it in body variable
+}
+```
+
+3. In the API response, it starts with an array followed by JSON objects. To access response from the array and store it in the `postOffice` variable, add following lines of code in the transformation function.
+```js
+let postOffice = body[0].PostOffice; // Access and store PostOffice field from the API response
+console.log(postOffice);
+    
+let postofficeName = [];
+```
+
+> In the transformation function, you can access the API response in ymLib.args. You can write your own logic in javascript to fetch only the fields you wish to have in the response of API.
+
+4. After getting access to JSON object, use a for loop to iterate over all objects and parse `Name` key from the objects, which will be pushed to the `postofficeName` array.
+
+```js
+for(let i=0;i< postOffice.length; i++) 
+    {
+        postofficeName.push(postOffice[i].Name) // fetch PostOffice Name and store in postOfficeName array
+    }
+
+return resolve(postofficeName);s
+```
+
+5. In the API node, select transformation function that was created from the **Parse API response** dropdown.
+
+![](https://i.imgur.com/058ZmtW.png)
+
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,7 @@ sidebar_label: Logic
 Logic nodes can be used when the flow must be branched based on the given conditions. 
 
 
-## Condition
+## 1. Condition
 
 Branch the flow based on if-else logic with this node.
 
@@ -17,7 +17,7 @@ Else (if any other value is entered other than Yes), the text will be displayed 
 
 
 Condition node must have:
-### 1. If- Condition
+### 1.1 If- Condition
 
 ![](https://i.imgur.com/EncYoay.png)
  
@@ -40,11 +40,11 @@ Select a value (only one value can be selected) from the dropdown based on your 
     
 > These dropdown values are derived from the [data available](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/user_data_segments/cdp_data/#user-property-data-types) in the system. **Journey variables** are created by the user for that flow, **Global variables** are asked and extracted from the other nodes, **User properties** are extracted from variables and few are automatically fetched by the system like IP, Country, Timezone, Created at, etc. 
 
-### 2. Condition
+### 1.2 Condition
 
 ![](https://i.imgur.com/3dmobD9.png)
 
-### 3. Conditional Value
+### 1.3 Conditional Value
 
 **Multiple** values can be selected based on the usecase. 
 
@@ -59,7 +59,7 @@ This dropdown will consist of:
 
 >When If-condition is **Others** or **System** these values are updated automatically.
 
-### 4. Else Condition
+### 1.4 Else Condition
  
 To add an Else-if conditon, click _**+Add another condition**_.
 
@@ -68,7 +68,7 @@ To add an Else-if conditon, click _**+Add another condition**_.
 
 
 
-## Channel Filter 
+## 2. Channel Filter 
 
 Similar to condition node, branch the flow based on the available active channels with this node. 
 
@@ -84,3 +84,5 @@ For example, for the above flow, following conditions are checked:
 >3. **Else**, if none of the mentioned channels are configured, question will be posed to a user to share their social media handle (text node). 
 
 Since none of the channels mentioned in If and Else-if were configured, the bot displayed text message("Please enter your social media handle where we can reach you")
+
+
