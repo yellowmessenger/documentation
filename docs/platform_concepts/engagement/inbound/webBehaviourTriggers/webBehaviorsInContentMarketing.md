@@ -3,7 +3,7 @@ title: Web Behaviours to Identify in Content Marketing (Lead Generation)
 sidebar_label: Web Behaviours to Identify in Content Marketing
 ---
 
-# In this guide
+## In this guide
 
 In this guide, we walk you through the various [behavioural automation rules](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType), that can be used to improve the navigation for a SaaS website visitor.
 

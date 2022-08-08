@@ -53,21 +53,48 @@ module.exports = {
         "cookbooks/template-bots/faq",
         "cookbooks/template-bots/lead-generation",
       ],
-    },
+    },   
     {
       type: "category",
-      label: "All About Whatsapp Bots",
+      label: "WhatsApp As A Channel",
       collapsed: true,
       items: [
-        "cookbooks/whatsapp cookbook/whatsapp-bot",
-        "cookbooks/whatsapp cookbook/whatsapp-notification-template",
-        "cookbooks/whatsapp cookbook/whatsapp-notification-ym",
-        "cookbooks/whatsapp cookbook/whatsapp-guidelines",
-        "cookbooks/whatsapp cookbook/fb-business-verification",
-        "cookbooks/whatsapp cookbook/wa-migration",
-        "cookbooks/whatsapp cookbook/wa-capturing-qr-event",
-      ],
-    },
+        {
+          type: "category",
+          label: "Introduction",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/whatsapp-channel",
+            "cookbooks/whatsapp-channel/bot-basics",
+            
+          ],
+        },
+        {
+          type: "category",
+          label: "Channel Guide",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
+            "cookbooks/whatsapp-channel/setup-steps",
+            "cookbooks/whatsapp-channel/wa-migration"
+          ],
+        },
+        {
+          type: "category",
+          label: "Things To Know",
+          collapsed: true,
+          items: [
+            "cookbooks/whatsapp-channel/things-to-know",
+            "cookbooks/whatsapp-channel/sending-notifications",
+            "cookbooks/whatsapp-channel/approval",
+            "cookbooks/whatsapp-channel/wa-capturing-qr"
+          ],
+        },
+        "cookbooks/whatsapp-channel/building-flows",
+        "cookbooks/whatsapp-channel/faqs",
+        "cookbooks/whatsapp-channel/testing"
+      ]
+    }
   ],
 
   platform_concepts: [
@@ -78,78 +105,109 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/studio/overview",
-        "platform_concepts/studio/journeys",
         {
           type: "category",
-          label: "Nodes",
+          label: "Build",
           collapsed: true,
           items: [
-            "platform_concepts/studio/steps/steps",
-            "platform_concepts/studio/steps/prompts-and-messages",
-            "platform_concepts/studio/steps/action-nodes-and-logic",
+            "platform_concepts/studio/build/journeys",
+            {
+              type: "category",
+              label: "Nodes",
+              collapsed: true,
+              items: [
+                //"platform_concepts/studio/cloud-function",
+                "platform_concepts/studio/build/nodes/nodes",
+                "platform_concepts/studio/build/nodes/message-nodes",
+                "platform_concepts/studio/build/nodes/prompt-nodes",
+                "platform_concepts/studio/build/nodes/action-nodes",
+                "platform_concepts/studio/build/nodes/logic-nodes",
+              ],
+            },
+            "platform_concepts/studio/build/code",
+            "platform_concepts/studio/build/math-ops",
+            "platform_concepts/studio/build/bot-variables",
+            "platform_concepts/studio/build/localization",
+          ],       
+        },
+      
+
+        {
+          type: "category",
+          label: "Train",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/train/intents",
+            "platform_concepts/studio/train/entities",
+            "platform_concepts/studio/train/add-faqs",
+            "platform_concepts/studio/train/add-contextual-response",
+            "platform_concepts/studio/train/what-is-document-cognition",
+            "platform_concepts/studio/train/utterance-report",
+          ],
+        },
+       
+        
+        {
+          type: "category",
+          label: "API",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/api/add-api",
+            "platform_concepts/studio/api/send-data",
+            "platform_concepts/studio/api/receive-data",
+            "platform_concepts/studio/api/enviroment-variables",
+            "platform_concepts/studio/api/bearer-token",
+           // "platform_concepts/studio/api/transformation-function",
+            "platform_concepts/studio/api/api-settings",
           ],
         },
 
         {
           type: "category",
-          label: "Natural Language Understanding",
+          label: "Table",
           collapsed: true,
           items: [
-            "platform_concepts/studio/natural-language-understanding/intents",
-            "platform_concepts/studio/natural-language-understanding/entities",
+            "platform_concepts/studio/table/create-tables",
+            "platform_concepts/studio/table/database-search",
           ],
         },
         {
           type: "category",
-          label: "Knowledge Management",
+          label: "Events",
           collapsed: true,
           items: [
-            "platform_concepts/studio/knowledge-management/add-faqs",
-            "platform_concepts/studio/knowledge-management/what-is-document-cognition",
-            "platform_concepts/studio/knowledge-management/AWS",
-            "platform_concepts/studio/knowledge-management/Sharepoint",
-          ],
-        },
-        {
-          type: "category",
-          label: "API Management",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/api-management/add-api",
-            "platform_concepts/studio/api-management/send-data",
-            "platform_concepts/studio/api-management/receive-data",
-            "platform_concepts/studio/api-management/enviroment-variables",
-            "platform_concepts/studio/api-management/bearer-token",
-            "platform_concepts/studio/api-management/transformation-function",
-          ],
-        },
-        {
-          type: "category",
-          label: "Context Management",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/context-management/add-contextual-response",
+            "platform_concepts/studio/events/event-hub",
+            "platform_concepts/studio/events/user-inactive",
           ],
         },
 
-        "platform_concepts/studio/languages-supported",
+        {
+          type: "category",
+          label: "Analyze",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/analyze/chat-logs",
+          ],
+        },
+
+        {
+          type: "category",
+          label: "Test and Publish bots",
+          collapsed: true,
+          items: [
+            "platform_concepts/studio/test-and-publish-bot/bot-training",
+            "platform_concepts/studio/test-and-publish-bot/debug-flow",
+            "platform_concepts/studio/test-and-publish-bot/modes",
+          
+          ],
+        },
+        
         "platform_concepts/studio/tools",
-        "platform_concepts/studio/event-hub",
-        "platform_concepts/studio/bot-variables",
-        "platform_concepts/studio/bot-training",
-        "platform_concepts/studio/cloud-function",
-        "platform_concepts/studio/modes",
+        "platform_concepts/studio/languages-supported",
+    
       ],
     },
-    {
-      type: "category",
-      label: "Data",
-      collapsed: true,
-      items: [
-        "platform_concepts/data/create-tables",
-        "platform_concepts/data/database-search",
-      ],
-    },
+  
     {
       type: "category",
       label: "Insights",
@@ -158,8 +216,20 @@ module.exports = {
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
-        "platform_concepts/growth/funnels",
         "platform_concepts/growth/api-usage",
+
+        {
+          type: "category",
+          label: "User Journeys",
+          collapsed: true,
+          items: [
+            "platform_concepts/growth/user-journeys",
+            "platform_concepts/growth/funnels",
+          ],
+        },
+
+        "platform_concepts/growth/data-explorer",
+        "platform_concepts/growth/dashboards",
       ],
     },
     {
@@ -169,9 +239,27 @@ module.exports = {
       items: [
         "platform_concepts/inbox/inbox",
         "platform_concepts/inbox/manage-support-agent",
+        "platform_concepts/inbox/types-of-chat",
         "platform_concepts/inbox/tickets-assignment-logic",
-        "platform_concepts/inbox/default-agent-statuses",
-        "platform_concepts/inbox/inbox-settings/custom-usecases",
+        "platform_concepts/inbox/custom-usecases",
+        "platform_concepts/inbox/whatsapp-24hr-window-policy",
+        {
+          type: "category",
+          label: "Reports",
+          collapsed: true,
+          items: [
+           
+            
+            "platform_concepts/inbox/reports/chat-report-metrics",
+            "platform_concepts/inbox/reports/chat-agent-activity-report",
+            "platform_concepts/inbox/reports/chat-agent-performance-report",
+            "platform_concepts/inbox/reports/chat-archives-report",
+            "platform_concepts/inbox/reports/ticket-agent-performance-report",
+            "platform_concepts/inbox/reports/ticket-archive-report",
+          ],           
+    },
+
+
 
         {
           type: "category",
@@ -180,72 +268,137 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "Chat Configuration",
+              label: "Agent Settings",
               collapsed: true,
               items: [
-                "platform_concepts/inbox/inbox-settings/chats-configuration/tags",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-timeout",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/custom-fields",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/csat",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-queue",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/email-transcript",
-                "platform_concepts/inbox/inbox-settings/chats-configuration/chat-autotranslate",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/chat_working_hours",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/custom-status",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/csat",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/canned-responses",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
               ],
             },
             {
               type: "category",
-              label: "Agent Configuration",
+              label: "Chat & Email Settings",
               collapsed: true,
               items: [
-                "platform_concepts/inbox/inbox-settings/agent-configuration/agent-settings",
-                "platform_concepts/inbox/inbox-settings/agent-configuration/working-hours",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/chat_custom_fields",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/tags",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/chat_auto_translate",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/chat-queue",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/chat-timeout",
+               "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
               ],
             },
-            "platform_concepts/inbox/inbox-settings/productivity-tools",
-            "platform_concepts/inbox/inbox-settings/security",
-            "platform_concepts/inbox/inbox-settings/groups",
+          
+          
+          ],
+        },
+      
+         
+            // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",   
+        
+      ],
+    },
+    {
+      type: "category",
+      label: "Mobile SDK",
+      collapsed: true,
+      items: [
+        {
+          type: "category",
+          label: "Inbox",
+          collapsed: true,
+          items: [
+          "platform_concepts/mobile/inbox/android",
+          "platform_concepts/mobile/inbox/cordova",
           ],
         },
         {
           type: "category",
-          label: "Mobile SDK",
+          label: "ChatBot",
           collapsed: true,
           items: [
-            "platform_concepts/inbox/mobilesdk/android",
-            "platform_concepts/inbox/mobilesdk/cordova",
-          ],
-        },
-        {
-          type: "category",
-          label: "Chats",
-          collapsed: true,
-          items: [
-            "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",
-            "platform_concepts/inbox/whatsapp-24hr-window-policy",
-            "platform_concepts/inbox/Chat agent activity report",
-            "platform_concepts/inbox/Chat agent performance report",
-            "platform_concepts/inbox/Chat archives report",
-            "platform_concepts/inbox/Chat report metrics 101",
-            "platform_concepts/inbox/Chat auto translate",
-            "platform_concepts/inbox/google-translate-api-inbox",
-            "platform_concepts/inbox/Chat custom fields",
-            "platform_concepts/inbox/Chat working hours",
+          "platform_concepts/mobile/chatbot/android",
+          "platform_concepts/mobile/chatbot/cordova",
+          "platform_concepts/mobile/chatbot/flutter",
+          "platform_concepts/mobile/chatbot/ios",
+          "platform_concepts/mobile/chatbot/react-native",
+          "platform_concepts/mobile/chatbot/xamarin",
           ],
         },
       ],
     },
+    
+    
     {
       type: "category",
       label: "Engagement",
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
+        "platform_concepts/engagement/effectivelyuseengage",
+        {
+              type: "category",
+              label: "User360",
+              collapsed: true,
+              items: [
+                "platform_concepts/engagement/cdp/overview",
+                "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
+                {
+                  type: "category",
+                  label: "Managing User data and Creating Segments",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/cdp/user_data_segments/cdp_data",
+                    "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
+                    "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Enriching User Profiles",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/user_id",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
+                    "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "Getting The Most From Your User Data",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/cdp/user_data/targeted_segments",
+                    "platform_concepts/engagement/cdp/user_data/conv_in_builder",
+                    "platform_concepts/engagement/cdp/user_data/campaign_in_engage",
+
+                  ],
+                },
+                {
+                  type: "category",
+                  label: "FAQs",
+                  collapsed: true,
+                  items: [
+                    "platform_concepts/engagement/cdp/faq/exclude_user_campaign",
+                    "platform_concepts/engagement/cdp/faq/date_based_campaign",
+                    "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
+                  ],
+                },
+              ],
+            },
+            
         {
           type: "category",
           label: "Outbound Engagement",
           collapsed: true,
           items: [
+                
             {
               type: "category",
               label: "Templates",
@@ -254,12 +407,11 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/overview",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
-                "platform_concepts/engagement/outbound/templates/whatsapp-template",
               ],
             },
             {
               type: "category",
-              label: "Campaigns",
+              label: "Campaign",
               collapsed: true,
               items: [
                 "platform_concepts/engagement/outbound/outbound-campaigns/email-campaign",
@@ -272,6 +424,7 @@ module.exports = {
             "platform_concepts/engagement/outbound/notification-engine",
           ],
         },
+
         {
           type: "category",
           label: "Inbound Engagement",
@@ -325,20 +478,15 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/channelConfiguration/alexa",
-        "platform_concepts/channelConfiguration/android",
-        "platform_concepts/channelConfiguration/cordova",
         "platform_concepts/channelConfiguration/email-outbound",
         "platform_concepts/channelConfiguration/facebook-messenger",
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/fb-workplace",
-        "platform_concepts/channelConfiguration/flutter",
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/google-assistant",
         "platform_concepts/channelConfiguration/googleChat",
         "platform_concepts/channelConfiguration/instagram",
-        "platform_concepts/channelConfiguration/ios",
         "platform_concepts/channelConfiguration/ivr-bots",
-        "platform_concepts/channelConfiguration/react-native",
         "platform_concepts/channelConfiguration/slack",
         "platform_concepts/channelConfiguration/sms-outbound-india",
         "platform_concepts/channelConfiguration/teams",
@@ -346,7 +494,6 @@ module.exports = {
         "platform_concepts/channelConfiguration/web-widget",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
-        "platform_concepts/channelConfiguration/xamarin",
       ],
     },
     {
@@ -355,22 +502,32 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/appConfiguration/azure-ad",
+        "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/freshdesk",
+        "platform_concepts/appConfiguration/genesys-cloud-livechat",
         "platform_concepts/appConfiguration/google-calendar",
+        "platform_concepts/appConfiguration/google-sheets",
         "platform_concepts/appConfiguration/hubspot-crm",
         "platform_concepts/appConfiguration/intercom-livechat",
+        "platform_concepts/appConfiguration/leadSquared-wa-connector",
         "platform_concepts/appConfiguration/microsoft-dynamics",
         "platform_concepts/appConfiguration/microsoft-graph",
+        "platform_concepts/appConfiguration/payuBiz",
         "platform_concepts/appConfiguration/power-bi",
         "platform_concepts/appConfiguration/razorpay",
         "platform_concepts/appConfiguration/salesforce-service-cloud",
         "platform_concepts/appConfiguration/service-now",
+        "platform_concepts/appConfiguration/sftp",
         "platform_concepts/appConfiguration/shopify",
+        "platform_concepts/appConfiguration/stripe",
+        "platform_concepts/appConfiguration/twilio-verify",
         "platform_concepts/appConfiguration/successfactors",
         "platform_concepts/appConfiguration/zalo",
+        "platform_concepts/appConfiguration/zendesk-sunshine",
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
-        "platform_concepts/appConfiguration/zendesk-sunshine",
+        "platform_concepts/appConfiguration/zoho-live-chat",
+        "platform_concepts/appConfiguration/jira",
       ],
     },
     {
@@ -381,6 +538,7 @@ module.exports = {
         "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/access-management",
         "platform_concepts/configurations/subscription",
+        "platform_concepts/configurations/api-keys",
       ],
     },
     {
@@ -394,25 +552,48 @@ module.exports = {
     "updates/overview",
     {
       type: "category",
-      label: "August 2021",
+      label: "Studio",
       collapsed: true,
       items: [
-        "updates/aug_21/analytics",
-        "updates/aug_21/builder",
-        "updates/aug_21/inbox",
+       
       ],
     },
     {
       type: "category",
-      label: "September 2021",
+      label: "Insights",
       collapsed: true,
-      items: ["updates/sep_21/engage", "updates/sep_21/inbox"],
+      items: [],
     },
     {
       type: "category",
-      label: "October 2021",
+      label: "Inbox",
       collapsed: true,
-      items: ["updates/oct_21/engage", "updates/oct_21/inbox"],
+      items: [],
+    },
+    {
+      type: "category",
+      label: "Engage",
+      collapsed: true,
+      items: [
+      ],
+    },
+    {
+      type: "category",
+      label: "Channel Configuration",
+      collapsed: true,
+      items: [],
+    },
+    {
+      type: "category",
+      label: "Integrations",
+      collapsed: true,
+      items: [],
+    },
+    {
+      type: "category",
+      label: "Configurations",
+      collapsed: true,
+      items: [],
     },
   ],
   glossary: [

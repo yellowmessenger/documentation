@@ -1,6 +1,6 @@
 ---
-title : Hubspot-CRM
-sidebar_label : Hubspot-CRM
+title : Hubspot CRM
+sidebar_label : Hubspot CRM
 ---
 
 ## Scope of Integration
