@@ -24,12 +24,13 @@ While integrating, yellow.ai navigates the user has to login into his Zoho CRM a
 
 ### Do actions with Zoho action nodes
 
-   You can store a new **Lead** and save it in your zoho CRM. You can also update and read the lead. Also you can search the leads in your crm with email and phone number.
+   You can create, update and search all kinds of custom and standard records supported by ZOHO CRM.
 
 <img src="https://i.imgur.com/BgTi0n8.png" alt="drawing" width="60%"/>
+<img src="https://cdn.yellowmessenger.com/kGsixlbw4kIL1659438563623.png" alt="drawing" width="60%"/>
+<img src="https://cdn.yellowmessenger.com/BOHFMLICdTOb1659438675434.png" alt="drawing" width="60%"/>
+<img src="https://cdn.yellowmessenger.com/1WPWGiMu2pAK1659438744032.png" alt="drawing" width="60%"/>
 
-
-<img src="https://i.imgur.com/mmgR6Xy.png" alt="drawing" width="60%"/>
 
 
 ## Configuration

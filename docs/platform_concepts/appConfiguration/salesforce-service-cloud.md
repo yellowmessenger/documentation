@@ -22,11 +22,16 @@ While integrating, yellow.ai navigates the user to the login page of Salesforce,
 
 ### Take actions with Salesforce Nodes
 
-You can store a new**Lead(Object)** or store data in any of your custom objects. The actions are not limited to the system defined Salesforce Objects, you can even use your Custom Objects here. The actions are not just limited to creating a new record in the object, you can read, update and delete relevant records too from the objects.
+You can store a new record or store data in any of your custom objects. The actions are not limited to the system defined Salesforce Objects, you can even use your Custom Objects here. The functionalities to update and search for records using a particular parameter is also available.
 
-![](https://i.imgur.com/fnLI1gD.png)
+![](https://cdn.yellowmessenger.com/BeijaEmjIOPY1659940145073.png)
+
 
 On-click of the Salesforce CRM node, you can customize the object and action type along with the attributes that you wish to pass.
+![](https://cdn.yellowmessenger.com/H7KDA72IA3iB1659940427212.png)
+![](https://cdn.yellowmessenger.com/pBD9bJOeipap1659940497555.png)
+![](https://cdn.yellowmessenger.com/rrvyShcKtbKe1659940554939.png)
+
 
 ### Receive Events from Salesforce
 
