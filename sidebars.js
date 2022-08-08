@@ -245,6 +245,7 @@ module.exports = {
         "platform_concepts/inbox/tickets-assignment-logic",
         "platform_concepts/inbox/custom-usecases",
         "platform_concepts/inbox/whatsapp-24hr-window-policy",
+        "platform_concepts/inbox/email-ticketing",
         {
           type: "category",
           label: "Reports",
