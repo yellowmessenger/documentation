@@ -14,7 +14,7 @@ Passing the userId for your users will allow you to identify them on multiple to
 
 userId can be set through the following:
 
-- [Data collection](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/enriching_user_profiles/builder_capture_data/#using-builder-to-create--update-user-records-in-users-table) nodes in builder
+- [Data collection](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#3-using-builder-to-create--update-user-records-in-users-table) nodes in builder
 - While [adding or editing](../user_data_segments/manage_user_data#add--edit-users) a single user through UI
 - [userId column](./create_audience_group_csv#using-the-userid-column-to-identify-users), while importing users from a CSV
 - Create and Edit User [REST APIs](./send_user_data_event_rest_api)

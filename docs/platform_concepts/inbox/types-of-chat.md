@@ -1,6 +1,6 @@
 ---
 title: Understanding Different Chat Types
-sidebar_label :  Understanding Different Chat Types
+sidebar_label :  Chat Types
 ---
 
 Presently there are 7 chat types in Chats that come to your inbox.

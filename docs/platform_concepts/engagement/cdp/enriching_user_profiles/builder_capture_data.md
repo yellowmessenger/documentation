@@ -9,7 +9,7 @@ If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](ht
 This data can also be used within the Conversational Studio to deliver personalised conversations.
 
 :::info
-All data captured for [Identified Users](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/enriching_user_profiles/builder_capture_data/#what-are-identified-users) only, is automatically updated in the Users Table.
+All data captured for [Identified Users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#what-are-identified-users) only, is automatically updated in the Users Table.
 :::
 
 In this document, we will cover:
@@ -30,13 +30,13 @@ To store a user’s response, click on the drop down next to **Store Response in
 
 A lot of times, the data can not be gathered by directly asking users questions. For example, you might want to fetch certain data from the event payload and pass it to a user property.
 
-This is where a [Variables Node](../../../../studio/build/nodes/action-nodes/#variables) comes in handy. From the drop down, select any User Property you want to pass the data to.
+This is where a [Variables Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#variables) comes in handy. From the drop down, select any User Property you want to pass the data to.
 
 <img src="https://i.imgur.com/NWnn7uW.png" alt="drawing" width="60%"/>
 
 ## <a name="id-2"></a> 2. What are Identified Users?
 
-When userId has been set for a user, that user becomes identified. To know what a userId is and it's importance, you can [read this document](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_id/).
+When userId has been set for a user, that user becomes identified. To know what a userId is and it's importance, you can [read this document](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id/).
 
 As soon as a user is identified, it starts showing up as a record in the users table. All updates made to this user, in builder, also show up in the users table. 
 

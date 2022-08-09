@@ -76,7 +76,7 @@ You may also delete user data using [REST APIs](../enriching_user_profiles/send_
 
 User logs is a space for your to audit your user data. There are 3 types of logs we capture at the moment:
 
-- **CSV Import →** This log appears whenever you import users using a CSV. The associated “Download log” link contains details around the import process, that is, which records were IMPORTED, FAILED or MERGED. You can read more about that [here](../enriching_user_profiles/create_audience_group_csv#figuring-out-what-went-wrong-with-your-csv-import).
+- **CSV Import →** This log appears whenever you import users using a CSV. The associated “Download log” link contains details around the import process, that is, which records were IMPORTED, FAILED or MERGED. You can read more about that [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv#figuring-out-what-went-wrong-with-your-csv-import).
 
 - **Bulk User Download →** This log appears whenever you [export your user data](./manage_user_data#viewing--exporting-your-user-data). The associated “Download log” can be used to download the exported user data in CSV format.
 

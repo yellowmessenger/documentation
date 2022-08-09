@@ -3,9 +3,8 @@ title: Managing your Campaigns using the Overview Screen
 sidebar_label: Managing your Campaigns using the Overview Screen
 ---
 
-- # Managing your Campaigns using the Overview Screen
 
-# In this guide
+## In this guide
 
 This guide shows you how to **manage** your campaigns, **duplicate** them, **prioritise** them and monitor their **performance metrics**.
 
@@ -63,4 +62,4 @@ Click on the “priority number” of any campaign and change it to a new priori
 
 ## Up Next
 
-[**Types of Inbound Widgets!**](http://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgets)
+[**Types of Inbound Widgets!**](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations)
