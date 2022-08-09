@@ -1,13 +1,10 @@
 ---
 title: Using Enviroment Variables in the API
-sidebar_label : Enviroment Variables for API
+sidebar_label : Enviroment Variables
 ---
 
-## Use different API endpoint for different deployment environment
 
-In many cases you might have different API endpoints for different deployment environments such as staging, production and sandbox.
-
-Let’s see how to configure the same on the yellow.ai in this doc:
+In many cases you might have different API endpoints for different deployment environments such as staging, production and sandbox. This document discusses how to configure the same on the yellow.ai:
 
 1. Checkout Studio > Builder > API and open an API tab or create a new API. 
 In the API URL, replace the environment/slug with {{{env.placeholder}}} and keep the rest of the URL the same.

@@ -139,10 +139,12 @@ module.exports = {
           items: [
             "platform_concepts/studio/train/intents",
             "platform_concepts/studio/train/entities",
+            "platform_concepts/studio/train/synonyms",
             "platform_concepts/studio/train/add-faqs",
             "platform_concepts/studio/train/add-contextual-response",
             "platform_concepts/studio/train/what-is-document-cognition",
             "platform_concepts/studio/train/utterance-report",
+            
           ],
         },
        
@@ -157,7 +159,8 @@ module.exports = {
             "platform_concepts/studio/api/receive-data",
             "platform_concepts/studio/api/enviroment-variables",
             "platform_concepts/studio/api/bearer-token",
-            "platform_concepts/studio/api/transformation-function",
+           // "platform_concepts/studio/api/transformation-function",
+            "platform_concepts/studio/api/api-settings",
           ],
         },
 
@@ -242,6 +245,7 @@ module.exports = {
         "platform_concepts/inbox/tickets-assignment-logic",
         "platform_concepts/inbox/custom-usecases",
         "platform_concepts/inbox/whatsapp-24hr-window-policy",
+        "platform_concepts/inbox/email-ticketing",
         {
           type: "category",
           label: "Reports",
