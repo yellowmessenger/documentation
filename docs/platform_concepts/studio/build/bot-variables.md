@@ -3,17 +3,18 @@ title: Variables
 sidebar_label : Variables
 ---
 
+
 This document covers: 
 1. [What is a variable?](#hed-1)
-2. [How to create a variable?](#hed-2)
-3. [What are the different types of variables?](#hed-3)
-4. [How to store and access variables via nodes?](#hed-4)
+2. [What are the different types of variables?](#hed-3)
+3. [How to create a variable?](#hed-2)
+4. [How to store and access variables via node?](#hed-4)
 5. [How to access array/object Variables](#hed-5)
 
 
 ## <a name="hed-1"></a> 1. Variables
 
-Variables are data which do not have a fixed value (values that can vary with the flow). In our platform variables are used to store data that may vary/change. 
+Variables are data that do not have a fixed value (values that can vary with the flow). In our platform variables are used to store data that may change. 
 
 When variables are defined on the platform, they must be assigned a data type. The datatypes are:
 
@@ -21,11 +22,11 @@ When variables are defined on the platform, they must be assigned a data type. T
 
 > 10, 3.14, 7009398700, -15, etc. 
 
-- **String**: To store alphanumeric texts.
+- **String**: To store alphanumeric characters.
 
 > 'Harry', 'PAN9856', '990*', 'Richa_0', '123starbucks', etc.
 
-- **Object**: Key-Value pairs, to store database, API responses, results from date prompt, etc.
+- **Object**: To store batch data, that comes through API response. Example, to store database, API responses, results from date prompt, etc.
 
 > {"Name": "Ron", "Phone": 9980808080, "Age": 40, "ID": "Rono555"}
 
@@ -37,42 +38,20 @@ When variables are defined on the platform, they must be assigned a data type. T
 
 ### Use-case
 
-Let us consider a simple use case to understand how and where variables can be used. 
-To update/modify the dates on a travel website, user must enter name and verify phone number. For this flow (as shown below) there is a node collecting the user name and storing it in the **name** variable. This variable is used to address the user ("Thanks, 'shelly'"). Next, the OTP is entered by the user and it is stored in the **OTP** variable. This is used verify the OTP. If the match is successful a different flow is executed, otherwise the user is asked to enter the OTP again. 
+Let us consider a simple use case to understand how and where variables can be used - 
+
+To update the dates on a travel website, you want to know the name of the user and and verify phone number. 
+Here, variables play a key role as explained below - 
+Ask for the name of the user and store it in the name variable. Use the variable to address the user . Say "Thanks,  Shelly". 
+User enters OTP when prompted. Store it in the OTP variable and use it to verify the user. 
+If the OTP matchs,  execute the next flow. Otherwise, ask the user to enter OTP again. 
+
 
 ![](https://i.imgur.com/YveDip0.png)
 
-## <a name="hed-2"></a> 2. Create a Variable
+## <a name="hed-3"></a> 2. Variable Types
 
-> Custom and Config variables can be created as per the use-case. 
-
-### Where to find the variables tab? 
-
-* Open **Studio**. On the right, click the **Variable** icon. 
-
-![](https://i.imgur.com/IUw47tq.png)
-
-* Click **+Add Variable** (on Custom/Config Variable tab). 
-
-* Add any **Variable Name**. Select the required **Data Type** of which this variable values will be stored. 
-
-![](https://i.imgur.com/ynzcS2x.png)
-
-* Sample **Value** will be displayed automatically. Custom values for that data type to be stored in the variable can also be added. 
-* Click **Add**. 
-
-> Two types of customer variables can be created - Journey and Global. 
-> **Journey** variables are created to be used for that specific flow. **Global** variables can be used anywhere on the platform. Select the required variable option before adding a custom variable. 
-> 
->   ![](https://i.imgur.com/uUrTvqq.png)
- 
- 
- 
-
-
-## <a name="hed-3"></a> 3. Variable Types
-
-Following variables can be used in the bot flow: 
+You can use the following variables in a bot flow:
 - Custom variables
     - Journey 
     - Global 
@@ -81,7 +60,7 @@ Following variables can be used in the bot flow:
 - User properties 
 
 
-### 3.1 Custom Variables
+### 2.1 Custom Variables
 
 These are variables defined by bot builders. Custom variables are further subdivided into journey and global variables.
 - **Journey Variable**: It is accessible only within the journey it was created.
@@ -89,20 +68,22 @@ These are variables defined by bot builders. Custom variables are further subdiv
 
 ![](https://i.imgur.com/5gHptlc.jpg)
 
+
 > These variables store value only within a session.
+
 
 In the following example, **Email** is stored as a Global variable (because it will remain unchanged through out the flow). **State_ride** variable (that stores the departure location) is a Journey variable, because a user gets directed to a different flow where this information is no longer needed. 
 
  ![](https://i.imgur.com/yKNO6v6.png)
 
 
-### 3.2 System Variables
+### 2.2 System Variables
 
 These are fixed set of variables.  
 > The variable names can not be altered and new variables can not be added to this category.
 
 
-Following system variables have been exposed on the platform for quick use: 
+The following are the system variables available on the platform:
 
 | Variable             | Data type | Use                                                                      |
 | -------------------- | --------- | ------------------------------------------------------------------------ |
@@ -135,31 +116,60 @@ Following fields are available in the user profile object:
 
 Learn more [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#system-user-properties). 
 
-### 3.3 Config Variables 
+### 2.3 Config Variables 
 
 A configuration variables are used for the calculating specific values. They will retain their value for the bot irrespective of the users. 
 Config variables can change their value (but not specifically for each session / each user) and they are mainly used for bot settings, authentication tokens, configuration related use cases, etc. 
 
 
-### 3.4 User Properties
+### 2.4 User Properties
 
 There are 22 user properties that are tracked by the bot. These values will be different for each instance (specific to each user). Click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data) to learn more. 
 
 > User properterties cannot be modified. New variables cannot be added. 
 
-## <a name="hed-4"></a> 4. Storing and Accessing Variables on Nodes
 
-Action nodes and Prompt nodes can be used to store variables (and display them via other node data). 
+## <a name="hed-2"></a> 3. Create a Variable
 
-### 4.1 Storing Variables 
+> Custom and Config variables can be added. 
+
+
+1. Open **Studio**. On the right, click the **Variable** icon. 
+
+![](https://i.imgur.com/IUw47tq.png)
+
+2. Click **+Add Variable** (on Custom/Config Variable tab). 
+3. Enter your preferred **Variable name**.
+4. Select the respective **Data type** of the variable. 
+
+![](https://i.imgur.com/ynzcS2x.png)
+
+5. Sample **Value** will be displayed automatically. Custom values for that data type to be stored in the variable can also be added. 
+6. Click **+Add**. 
+
+> Two types of customer variables can be created - Journey and Global. 
+> **Journey** variables are created to be used for that specific flow. **Global** variables can be used anywhere on the platform. Select the required variable option before adding a custom variable. 
+> 
+>   ![](https://i.imgur.com/uUrTvqq.png)
+ 
+ 
+ 
+
+
+
+## <a name="hed-4"></a> 4. Store and Access Variables via Nodes
+
+Action nodes and Prompt nodes are used to store variables (and display them via other node data). 
+
+### 4.1 Store Variables 
 
 Two different methods to store node data to a variable:
 
 #### 4.1.1 Store response in 
 
-- There is an option available at the bottom of each of the action/prompt node - **Store Response In**.
-- When this option is clicked, list of variables are displayed. 
-- Select the variable you want to store the user response for what the bot has asked through the node. For example, when the bot asked the user to enter the name- response can be stored in the global variable - name. Similarly, if phone number is asked it can be stored in the variable- phone. 
+1. There is an option available at the bottom of each of the action/prompt node- **Store Response In**.
+2. When this option is clicked, list of variables are displayed. 
+3. Select the variable you want to store the user response for what the bot has asked through the node. For example, when the bot asked the user to enter the name- response can be stored in the global variable - name. Similarly, if phone number is asked it can be stored in the variable- phone. 
 
 ![](https://i.imgur.com/OewhdE2.png)
 
@@ -175,7 +185,7 @@ Variables can also be stored with help of Variable node in the flow.
  
  
  
- ### 4.2 Accessing Variables
+ ### 4.2 Access Variables
 
 Bot variable can be acessed inside any node using the notation `{{{variables.variable_name}}` or clicking on variables icon. 
 
@@ -183,9 +193,9 @@ Bot variable can be acessed inside any node using the notation `{{{variables.var
 
 Variables created above can be acessed using {{{variables.category}}}.
 
-
-> Journey and Global variables get expired after 48 hours of inactivity.
-
+:::info
+Journey and Global variables get expired after 48 hours of inactivity.
+:::
 
 
  ### 4.3 Variable Datatypes
