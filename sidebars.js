@@ -164,15 +164,17 @@ module.exports = {
           ],
         },
 
-        {
-          type: "category",
-          label: "Table",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/table/create-tables",
-            "platform_concepts/studio/table/database-search",
-          ],
-        },
+        "platform_concepts/studio/database",
+
+        // {
+        //   type: "category",
+        //   label: "Table",
+        //   collapsed: true,
+        //   items: [
+        //     "platform_concepts/studio/table/create-tables",
+        //     "platform_concepts/studio/table/database-search",
+        //   ],
+        // },
         {
           type: "category",
           label: "Events",

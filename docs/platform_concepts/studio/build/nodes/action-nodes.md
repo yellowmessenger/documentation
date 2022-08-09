@@ -324,7 +324,7 @@ Set the value of one or more variables with this node. Learn how to create a var
 
 ### Database 
 
-Database action node helps you in perform simple insert, update and search operations on your [database tables](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables). 
+Database action node helps you in perform simple insert, update and search operations on your [database tables](https://docs.yellow.ai/docs/platform_concepts/studio/database). 
 
 #### Insert
 You select insert operation to insert details in each column into any existing database table you select. 
