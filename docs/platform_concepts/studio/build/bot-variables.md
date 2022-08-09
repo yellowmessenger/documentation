@@ -26,7 +26,7 @@ When variables are defined on the platform, they must be assigned a data type. T
 
 > 'Harry', 'PAN9856', '990*', 'Richa_0', '123starbucks', etc.
 
-- **Object**: To store batch data, that comes through API response. Example, to store database, API responses, results from date prompt, etc.
+- **Object**: To store batch data. Example, to store database, API responses, results from date prompt, etc.
 
 > {"Name": "Ron", "Phone": 9980808080, "Age": 40, "ID": "Rono555"}
 
