@@ -275,6 +275,8 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/agent-configuration/csat",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/canned-responses",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/default-agent-statuses",
+
               ],
             },
             {
