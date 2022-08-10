@@ -25,6 +25,8 @@ module.exports = {
   cookbooks: [
     "cookbooks/getting_started",
     "cookbooks/conversation-design",
+    "cookbooks/Upgrade_new_engage_app",
+    
     {
       type: "category",
       label: "Basic",
