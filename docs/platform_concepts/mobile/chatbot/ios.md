@@ -157,6 +157,14 @@ If you are adding Speech recognization, add following snippet to Info.plist of t
 <string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
 ```
 
+### Hide Input Bar
+
+You can hide the input bar while bot is loading by setting the disableActionsOnLoad flag present in config. Default value is `false`
+
+```swift
+config.disableActionsOnLoad = true
+```
+
 ### Colors
 
 #### Status bar background
