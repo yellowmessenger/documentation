@@ -37,7 +37,7 @@ While User Properties store data about who your users are, events tell you when 
 
 You might want to have some user data to begin with, in order to create personalised engagements. You can import users directly [from a CSV](./enriching_user_profiles/create_audience_group_csv) or by using [REST APIs](./enriching_user_profiles/send_user_data_event_rest_api).
 
-If you don’t have any data to being with, do not worry, our platform can help you create and [enrich conversation based user data](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/enriching_user_profiles/builder_capture_data).
+If you don’t have any data to being with, do not worry, our platform can help you create and [enrich conversation based user data](./enriching_user_profiles/builder_capture_data).
 
 ### Step 3: Create segments to power personalisation
 
