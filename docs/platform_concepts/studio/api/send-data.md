@@ -1,27 +1,52 @@
 ---
-title: API Management
+title: Sending data to an API
 sidebar_label : Sending data to an API
 ---
 
-### How to send data to an API? 
+## 1. How to Send Data to an API? 
 
 1. To send a dynamic data from an journey, rename the parameters with {{{parametername}}} in the API.
 
 ![Create new API](https://cdn.yellowmessenger.com/UOsO4KlWdRZf1623865589545.png)
 
-2. Don't forget to click on save button on the bottom left corner, otherwise your changes won’t be reflected.
+2. Click the **Save** button on the bottom left corner for the changes to be reflected. 
+3. Open the respective journey/flow you wish to send data from users input.
+4. Add the API actions node in the journey.
 
-3. Go to the journey where you wish to send data from users input.
+![](https://i.imgur.com/AfLDOBK.png)
 
-4. Add the API actions node in the journey
 
-![Create new API](https://cdn.yellowmessenger.com/PM0CSWo8oQQA1623865507336.png)
+5. Select the API you wish to add. 
 
-5. Click on the API you wish to add, after adding the API, you would find the dynamic parameters field in the API actions node.
-   
+![](https://i.imgur.com/iSBQmEu.png)
 
-6. Select the variable you wish to send to the API from the dropdown list.
+6. Add the dynamic parameter fields (authentication, email, token, name etc. as per the API). 
 
-![Create new API](https://cdn.yellowmessenger.com/V3wGviFk0AH71623865584177.gif)
+7. Select a value ([transformation function](https://docs.yellow.ai/docs/platform_concepts/studio/api/transformation-function)) in **Parse API response** to extract a part of API response before storing.
 
-7. Finally, save the Response in a variable to access it.
+
+8. Test the API if required.
+
+![](https://i.imgur.com/Qu6rfqB.png)
+
+
+9. **Store Response in** a variable to access it.
+
+
+
+## 2. File conversion from URL to base64 
+
+Use the following code inside a Body/ Params-  
+
+* To pass a URL: $$tobase64{url}
+* To pass a Variable containing URL: $$tobase64{{{{url}}}
+
+![](https://i.imgur.com/SRHt8OM.png)
+
+
+## 3. Pass JSON as Array/Object Variable
+
+The JSON file or the details to be entered can be passed as an array/object. 
+For example, in the below screenshot Details_1 can also be written as Details_2 by storing array details on array_details variable. 
+
+![](https://i.imgur.com/3aY0MXY.png)

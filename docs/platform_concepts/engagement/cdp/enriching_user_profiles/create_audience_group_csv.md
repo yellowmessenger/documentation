@@ -49,7 +49,7 @@ If any of these column headers do not match with any user property, the entire C
 
 ## Using the userId column to identify users
 
-You can pass the userId for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. You may read more about userId and it’s importance [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/enriching_user_profiles/user_id).
+You can pass the userId for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. You may read more about userId and it’s importance [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id).
 
 When the CSV includes a user record with a userId that already exists in the users table, a conflict arises between the old record and the new record. The new record is **merged** into the old record in the following manner:
 

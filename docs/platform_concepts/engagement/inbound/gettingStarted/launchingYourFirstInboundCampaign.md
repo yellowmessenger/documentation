@@ -28,7 +28,7 @@ To create a new Campaign, follow the steps below:
 
 ## Widget Type
 
-5. On the next screen, select **Slide in** widget. You can check out the [**Types of Inbound Widgets**](../../inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations#widget-customisation--button-types)
+5. On the next screen, select **Slide in** widget. You can check out the [**Types of Inbound Widgets**](https://docs.yellow.ai/docs/platform_concepts/engagement/inboundWidgets/typesOfWidgetButtons)
 
 6. At any point in the campaign builder, you can choose to click on any of the following buttons:
    - **Previous** → Takes you back to the previous step in the campaign builder
