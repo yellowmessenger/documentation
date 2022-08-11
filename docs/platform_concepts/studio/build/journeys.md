@@ -174,6 +174,80 @@ For example, track your application, know your ID and view FAQ's are three user 
   
 
 ---
+
+
+## 6. Trigger journeys from bot flow
+
+When you are configuring a bot, there could be several complex flows in the bot. You need to always ensure whether the outcome of a flow is as desired before moving on to the next flow and it’s tedious to run the entire bot everytime you make some change in a flow.
+
+You just need to add a parameter to the URL or widget code to preview changes made in a particular flow of your bot. You no longer have to run through the entire bot flow everytime you make some changes to a flow.
+
+### 6.1 Preview a specific bot flow via. URL
+1. Open the bot and navigate to Studio > Flows.
+2. Click the Flows drop-down and select the flow that you want to preview
+3. Copy the path of the flow that you see in the URL (after `flow/`)
+
+4. Click on Preview bot. You will see the entire bot journey in a new tab.
+5. In the address bar, append `?ym.triggerJourney={flow path}`.
+
+   Example: 
+   
+```
+https://cloud.yellow.ai/liveBot/x1635319612954?ym.triggerJourney=docs-feedback
+```
+
+
+
+
+
+Ensure that you clear the browser cache before you preview the bot. It is recommended to use Incognito mode or Private window to preview flows.
+
+
+> Note:
+> * Use `?` to append right after the base URL of the bot. Example: https://cloud.yellow.ai/liveBot/x1635319612954?ym.triggerJourney=feedback
+> * Use & if you want to append it after a variable. Example: https://cloud.yellow.ai/liveBot/x1635319612954?region=&ym.triggerJourney=feedback
+
+### 6.2 Preview a specific bot flow via. code
+You can also preview a specific flow of a bot via code that you embed on your website.
+
+1. Get the path of the flow as explained in the previous section.
+2. In `window.ymConfig`, pass the parameter `triggerJourney` and specify the path of the journey you copied.
+
+```
+<script type = "text/javascript" >
+    window.ymConfig = {
+        "bot": "x1625119673009",
+        "host": "https://cloud.yellow.ai",
+        triggerJourney: "malaga_vftkqv"
+    };
+(function() {
+    var w = window,
+        ic = w.YellowMessenger;
+    if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+    else {
+        var d = document,
+            i = function() {
+                i.c(arguments)
+            };
+
+        function l() {
+            var e = d.createElement("script");
+            e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+            var t = d.getElementsByTagName("script")[0];
+            t.parentNode.insertBefore(e, t)
+        }
+        i.q = [], i.c = function(e) {
+            i.q.push(e)
+        }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)
+    }
+})(); 
+</script>
+```
+ 
+3. Paste the code in the Header or body of your website as per your need to preview the flow.
+
+
+
 **What Next?**
 
 Series of **nodes** are used to create a flow. There are multiple nodes available on our platform.
