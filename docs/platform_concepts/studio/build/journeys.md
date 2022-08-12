@@ -186,15 +186,19 @@ You just need to add a parameter to the URL or widget code to preview changes ma
 1. Open the bot and navigate to Studio > Flows.
 2. Click the Flows drop-down and select the flow that you want to preview
 3. Copy the path of the flow that you see in the URL (after `flow/`)
+   ![](https://i.imgur.com/eXcmAlN.png)
 
 4. Click on Preview bot. You will see the entire bot journey in a new tab.
 5. In the address bar, append `?ym.triggerJourney={flow path}`.
 
-   Example: 
-   
-```
-https://cloud.yellow.ai/liveBot/x1635319612954?ym.triggerJourney=docs-feedback
-```
+    Example: 
+   `https://cloud.yellow.ai/liveBot/x1635319612954?ym.triggerJourney=docs-feedback`
+
+
+
+   ![](https://i.imgur.com/CLmlHyp.png)
+
+
 
 
 
