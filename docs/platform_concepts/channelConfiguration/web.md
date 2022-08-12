@@ -38,7 +38,7 @@ All of our bots on follow the same web widget script. To know more on how to con
 
 Here, Host depends on the region in which your bot is deployed in
 
-#### Bot Regions
+<!-- #### Bot Regions
 
 
 
@@ -49,7 +49,7 @@ Here, Host depends on the region in which your bot is deployed in
 | R3 |  | https://r3.cloud.yellow.ai |
 | R4 |  | https://r4.cloud.yellow.ai |
 | R5 |  | https://r5.cloud.yellow.ai |
-|Global| Global| https://cloud.yellow.ai |
+|Global| Global| https://cloud.yellow.ai | -->
 
 
 

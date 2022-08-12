@@ -5,14 +5,9 @@ sidebar_label: Intents
 
 NLU deals with training machines to read and converse in any human language. Making AI Models understand nuances of language is very complex problem. Thankfully, using Linguistic Semantics i.e. by creating a structured format of sentences, models are able to percieve natural language with good accuracy.
 
-In this doc, following topics will be covered:
-- What is evaluate confidence?
-- Sample utterances
-- How many utterance to add?
 
-> Note - 
- - **Linguistic** : study of language
- - **Semantics** : study of the meaning of words, phrases or sentences i.e. how arranging group of words in particular fashion to derive meaning.
+> - **Linguistic** : study of language
+> - **Semantics** : study of the meaning of words, phrases or sentences i.e. how arranging group of words in particular fashion to derive meaning.
 
 Question is - how does knowledge of word meanings or sentence formation help in better training AI Models?
 
@@ -22,37 +17,45 @@ Any sentence can be broken down into smaller components -
 
 ![](https://cdn.yellowmessenger.com/7M9C8YcyuCJk1626109495211.png)
 
-**Intents** - These are the literal meanings or core objective of any sentence like in the above example it is booking a flight.
+**Intents** - These are the literal meanings or core objective of any sentence like in the above example it is **booking a flight**.
 
 **Entities** - These are facts or additional information that adds meaning to sentence, for example Delhi, New York and 11th August.
 
 **Context** - In a day-to-day conversation, this generally refers to the underlying meaning of previous few exchanges. For Example - if a person is asking repeated questions about a product and says "Buy IT" , the IT here refers to the product.
 
-## 1. Usecase 
 
-In this guide, we will be building an intent for Jimmy's cafe. You can consider the following scenario for your bot.
+In this doc, following topics will be covered:
 
-> *You are the owner of Jimmy's cafe and are setting up a bot for your website. Your customers would like to enjoy the simplicity of ordering a coffee through your bot. For this to happen, you want your bot to understand the different ways a customer may ask to place an order so that the [flow](https://docs.yellow.ai/docs/platform_concepts/studio/journeys) you built gets triggered.*
+1. [How to add intents and utterances?](#add) 
+2. [How to train Intents?](#train)
+3. [How to test bots prediction-accuracy?](#test)
+4. [Best practices to create intents and utterances](#bp)
 
-## 2. Intent Training 
+### Usecase 
 
-Follow the given steps to train your intents: 
+In this guide, we use the following scenario for building an intent for Jimmy's cafe.
 
-### Set up a flow/journey 
+> *You are the owner of Jimmy's cafe and are setting up a bot for your website. Your customers would like to enjoy the simplicity of ordering a coffee through your bot. For this to happen, you want your bot to understand the different ways a customer may ask to place an order so that the [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) you built gets triggered.*
 
-Before you train your first intent, create your first [flow](https://docs.yellow.ai/docs/platform_concepts/studio/journeys/) in the studio module of the platform. 
+## <a name="add"></a> 1. Add Intents and Utterances  
+
+Follow the given steps to add intents and utterances: 
+
+### 1.1 Set up a flow/journey 
+
+Before you train your first intent, create your first [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) in the studio module of the platform. 
 
 To know more about setting up your first bot [click here](https://docs.yellow.ai/docs/platform_concepts/getting-started#step-by-step-guide-on-how-to-get-started-with-yellowai)
 
 
-### Open Intents Page
+### 1.2 Open Intents Page
 
 After creating the required flows, click on **Intents** in the **NLU** dropdown.
 
 ![](https://i.imgur.com/Eh21nPG.png)
 
 
-### Add Intent
+### 1.3 Add Intent
 
 There are several ways in which a customer would like to  place an order for a cup of coffee:
 * Place an order
@@ -65,13 +68,15 @@ To add a new intent, click on **+ Add new Intent** button and manually add the f
 
 ![](https://i.imgur.com/AnO2L8s.png)
 
-### Add Utterance
+> With “Yellow.ai DynamicNLP”, NLP based on Zero-shot learning we eliminate the need for training the NLP model. To take advantage of this, follow the guidelines in Best Practices > [4.1 Intent Naming](#Intn) .
+
+### 1.4 Add Utterance
 
 Once you have created an intent, add utterances to the intent. Utterances are phrases or queries that users may type in the bot hoping that the bot would understand. 
 
 There are two ways to add Utterances to an intent:
 
-#### 1. Add Utterance Manually
+#### 1.4.1 Add Utterance Manually
 
 While adding utterances manually to your intent, you do not need to pay attention to the case of the utterance, the bot will consider all such scenarios.
 
@@ -79,7 +84,7 @@ Type in your utterance and click on add to add the utterance to an intent.
 
 ![](https://i.imgur.com/N7S5mO5.png)
 
-#### 2. Use Suggested Utterance
+#### 1.4.2 Use Suggested Utterance
 
 Yellow.ai has data collected from over 100+ bots. This data is used to curate the suggested utterance section. In this section, you can see phrases similar to the first utterance you added. 
 
@@ -89,31 +94,26 @@ The refresh button will allow you to access a fresh batch of utterances every ti
 
 This would save you the effort of thinking of phrases and help you create intents in minutes.
 
-### Train Intents
+## <a name="train"></a> 2. Train Intents
 
-Finally, all you need to do is click on **Train Intents**.
+Finally, click **Train Intents**.
 
 You can train the intent after adding 2 utterances, but it's recommended to train your intent after adding at least 15 utterances. 
 
 ![](https://i.imgur.com/Rh5BkD1.png)
 
-:::info
-To know more about best practices [**click here**](https://docs.yellow.ai/docs/platform_concepts/studio/natural-language-understanding/intents/#utterance--journey-best-practices).
-:::
-#### Change the Number of Epochs
+
+### 2.1 Change the Number of Epochs (optional)
 
 You can increase the number of epochs for training your intent. The number of epochs is set to 20 by default. However, they could be a deciding factor when it comes to underfitting or overfitting the model.
 
 ![](https://i.imgur.com/EzsE4ZB.png)
 
-
-
-
-### Connect to Bot
+### 2.2 Connect to Bot
 
 Now that you have trained your intent,  it is time to connect it to your bot. You have to connect the flow you built to the intent '**Order**'.
 
-To do this click on the **Start Trigger** and configure the intent to the node. 
+To do this click on the [Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#5-configure-start-trigger) and configure the intent to the node. 
 
 Click the drop-down and select ‘#order’ intent.
 
@@ -127,11 +127,13 @@ Congratulations! You trained and connected your first intent!:tada::tada::tada:
 :::
 
 
-### Testing
 
-Once you have trained your intent you can test it for the results. There are two ways to test your intent. 
+## <a name="test"></a> 3. Test Intents
 
-#### 1. Test the Bot
+Once you have trained your intent you can test it for the results and retrain it (if required) based on the utterance report. 
+There are two methods to test your intent. 
+
+### 3.1  Test the Bot
 
 To test your bot you can follow these steps:
 
@@ -143,9 +145,9 @@ To test your bot you can follow these steps:
 
 
 
-#### 2. Test Your Intent
+### 3.2 Test Your Intent
  
-To see what response is generated by the model when a user types a query. Click on [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/train/tools) and the section 'Test your bot'.
+To see what response is generated by the model when a user types a query. Click on [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools) and the section 'Test your bot'.
 
 ![](https://i.imgur.com/I8iUEwt.gif)
 
@@ -167,7 +169,7 @@ You can test how confident your bot is about a phrase and whether it can identif
  
 As you can see my model understands that the phrase is a part of the intent 'order' and is completely confident about it. 
 
-### Generate Utterance Report 
+### 3.3 Generate Utterance Report 
 
 For a better understanding of your intent, you can generate an utterance report after the intital NLU is set up on a monthly basis.
 
@@ -179,7 +181,7 @@ For a better understanding of your intent, you can generate an utterance report 
 
 The report will give you insights into the following:
 
-#### 1. Conflicts within Intents and FAQs
+#### 3.3.1 Conflicts within Intents and FAQs
 Let's say that you have an intent to Welcome a customer. You add two utterances:
 1. Hi
 2. Hiii
@@ -191,7 +193,7 @@ To dismiss this conflict you can delete one of the utterances.
 
 
 
-#### 2. Conflicts across Intents and FAQ's
+#### 3.3.2 Conflicts across Intents and FAQ's
 Let's say that you have 2 intents in Jimmy's cafe and you want to trigger 2 different flows for 2 different varieties of coffee you serve at the cafe.
 1. Coffee 1
 2. Coffee 2
@@ -205,9 +207,55 @@ This conflict can be resolved by either deleting the intent or by deleting a sim
 To learn more about generating an utterance report [click here](https://docs.yellow.ai/docs/platform_concepts/studio/train/utterance-report)
 
 
+## <a name="bp"></a> 4. Best Practices
 
+This section is divided as:
+1. Best practices to follow while naming intents.
+2. Best practices to follow while adding utterances to the intents.
 
-### Utterance & Journey Best Practices:
+----
+
+### <a name="Intn"></a> 4.1 Intent Naming
+
+There are guidelines for new bots and for the bots in productions. Follow the respective guidelines for your intents to work best globally:
+
+#### 4.1.1 New bots
+
+1. Intent names will need to be at least 3 words long with unique words and no special characters. 
+    - Be mindful of intent names, make sure they are as descriptive as possible.
+    - Don't create intent names like, intent test one, faq number one etc.
+    - Bad intent names will result in bad NLP performance (False positives) and unnecessary issues in the bot.
+    - For Cloud : It is possible to rename intent names.
+2. The more descriptive the intent name, the better (add names with more than 3 words).
+3. Avoid uncommon and business specific abbreviations: Example: PO (purchase order ), GMV, etc - use the full forms and add synonyms if necessary. Few common abbreviations like UPI, EMI, HR are acceptable.
+4. Phrase the intent name as a verb followed by a noun. Example: get premium receipt, pay renewal amount, fetch order status.
+5. Keywords and sentences less than 3 words will fallback to the existing bot model and will work as-is. These type of utterances will not go to the new model.
+6. This model is applicable and works well for [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) as well (since FAQs are descriptive and longer sentences) 
+7. Suggestions are enabled by default for all new bots - as this is critical for model improvement and to provide the full performance benefit.
+
+#### 4.1.2 Existing bots
+
+Following are a few important pointers for Bots already in production: 
+
+##### Cloud
+
+1. Enable suggestions for bots where it may not be enabled. This ensures that the model is used to the fullest. 
+2. Suggestions only show up for intents that are connected to the flows. Verify that unwanted flows are removed (or disconnected from intents).
+3. If the intent name is camelCase (eg: chatWithAgent)  or has underscore/hyphens (eg: chat_with_agent, chat-with-agent), use the edit option to rename these following the guidelines mentioned in the above setion(for new bots). 
+4. Ensure that there is no Small Talk in FAQs / Flows. If these are present, delete them - platform small talk is enabled for all cloud bots. 
+
+##### App
+
+1. Enable suggestions for bots. 
+    - To do this: In app.ym ensure that **enableDidYouMean** is set to true in app options within code as well as in Tools → App Options → Prediction → Enable Suggestions.
+    - If there’s any existing **DidYouMean** function in default:response, remove it.
+2. Verify that journey DESCRIPTION is in line with guidelines mentioned above. 
+    - If these are not in line and are in camelCase or have special characters, change these by going to journey settings for that journey (you need not change the journey name, only the description can to be changed).
+3. Ensure that there is no Small Talk in FAQs / Flows. If these are present, delete them and enable platform small talk in **Context Management** and enable **Small Talk**.
+
+------
+
+### 4.2 Utterance & Journey
 
 
 | DONTs ❌ | DOs ✅ | 
@@ -413,4 +461,6 @@ Adding utterances here will unnecessarily increase the complexity of the NLP Mod
 - [ ] didYouMean (Suggestions) feature is enabled
 - [ ] Mininum 2 intents are required to train a bot
 :::
+
+
 
