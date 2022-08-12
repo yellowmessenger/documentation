@@ -166,15 +166,17 @@ module.exports = {
           ],
         },
 
-        {
-          type: "category",
-          label: "Table",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/table/create-tables",
-            "platform_concepts/studio/table/database-search",
-          ],
-        },
+        "platform_concepts/studio/database",
+
+        // {
+        //   type: "category",
+        //   label: "Table",
+        //   collapsed: true,
+        //   items: [
+        //     "platform_concepts/studio/table/create-tables",
+        //     "platform_concepts/studio/table/database-search",
+        //   ],
+        // },
         {
           type: "category",
           label: "Events",
@@ -281,6 +283,8 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/agent-configuration/csat",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/canned-responses",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/default-agent-statuses",
+
               ],
             },
             {

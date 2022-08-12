@@ -193,7 +193,7 @@ There are two methods to trigger a flow:
 
 All the details and interactions with the bot can be stored in the database that can be designed to fetch the required details. 
 
-* Start by creating **Tables** on the **Database** page. Learn more **[here](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables)**.
+* Start by creating **Tables** on the **Database** page. Learn more **[here](https://docs.yellow.ai/docs/platform_concepts/studio/database)**.
 
 ![](https://i.imgur.com/ZEXZO5P.png)
 

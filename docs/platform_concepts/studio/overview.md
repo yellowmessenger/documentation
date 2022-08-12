@@ -60,7 +60,7 @@ Train your bot to understand commonly asked questions by the users.This way your
 ### [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api)
 Connect third party APIs to your Bot by using this module. Use API to send and recieve data from any platform. This information can be accessed using APIs.
 
-### [Database](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables)
+### [Database](https://docs.yellow.ai/docs/platform_concepts/studio/database)
 Add and store user data in a strucutred manner with database.You can select fields that you want searchability in and acces these fields later in the bot with database node.
 
 ### Learn
