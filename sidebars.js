@@ -512,12 +512,14 @@ module.exports = {
       items: [
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/camspay",
+        "platform_concepts/appConfiguration/clevertap",
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/genesys-cloud-livechat",
         "platform_concepts/appConfiguration/google-calendar",
         "platform_concepts/appConfiguration/google-sheets",
         "platform_concepts/appConfiguration/hubspot-crm",
         "platform_concepts/appConfiguration/intercom-livechat",
+        "platform_concepts/appConfiguration/jira",
         "platform_concepts/appConfiguration/leadSquared-wa-connector",
         "platform_concepts/appConfiguration/microsoft-dynamics",
         "platform_concepts/appConfiguration/microsoft-graph",
@@ -536,7 +538,6 @@ module.exports = {
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
-        "platform_concepts/appConfiguration/jira",
       ],
     },
     {
@@ -564,7 +565,14 @@ module.exports = {
       label: "Studio",
       collapsed: true,
       items: [
-       
+       //"updates/studio/build",
+       //"updates/studio/trainandtest",
+       // "updates/studio/analyse",
+       // "updates/studio/api",
+       // "updates/studio/table",
+      // "updates/studio/events",
+       // "updates/studio/tools",
+       // "updates/studio/language",
       ],
     },
     {
