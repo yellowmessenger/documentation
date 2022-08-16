@@ -45,7 +45,7 @@ To filter the conversations:
 
 | Filter | Description |
 | :-------- | :-------: |
-| Date | View conversations of a specific date range. Choose the desired date range using the calendar boxes |
+| Date | View conversations of a specific date range. Choose the desired date range using calendar boxes |
 | Source | View conversations of a specific channel. For example, Yellow Messenger, Skype, WhatsApp, Facebook etc. Choose the desired source from the drop-down list |
 | Tags | View specific tagged conversations. There are some predefined tags associated with the conversations automatically according to the configured rules. Select your preferred tags from the list |
 | Flagged Conversation | View either flagged or unflagged conversations |

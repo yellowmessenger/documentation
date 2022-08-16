@@ -3,9 +3,16 @@ title: Action Nodes
 sidebar_label: Actions
 ---
 
-Actions are non-interactive nodes that can be used to perform a specific task (background action). 
 
-## 1. General
+Actions are non-interactive nodes that can be used to perform a specific task (background action). Following are the different types of action nodes: 
+
+1. [General](#gen)
+2. [Code Based](#cb)
+3. [Language](#lan)
+4. [Notification](#not)
+5. [Nodes available only for Workflow](#wf)
+
+## <a name="gen"></a> 1. General
 
 ### Send Event 
 
@@ -269,7 +276,7 @@ Generate a payment link with this node.
 
 Quit the current flow and launch another flow with this node. Here, flow switches to another flow from that point (one cannot have any nodes post this).
 
-## 2. Code Based 
+## <a name="cb"></a> 2. Code Based 
 
 ### API 
 
@@ -326,7 +333,7 @@ Set the value of one or more variables with this node. Learn how to create a var
 
 Database action node helps you in perform simple insert, update and search operations on your [database tables](https://docs.yellow.ai/docs/platform_concepts/studio/database). 
 
-#### Insert
+#### 1. Insert
 You select insert operation to insert details in each column into any existing database table you select. 
 
 ![](https://i.imgur.com/Tb0EHym.png)
@@ -345,7 +352,7 @@ Select a variable containing data you want to insert.
 
 -->
 
-#### Search
+#### 2. Search
 You can perform search operation for database node. 
 
 
@@ -387,9 +394,8 @@ Each of the following filter conditions are explained for the use-case when the 
 * **Filter distinct** : Select a column on which distinct must be performed (this removes all the duplicate records when retrieving the records from a table).
 * **Pagination** :Page number and Size limit can be set here.
 
-#### Update
+#### 3. Update
 
-<img src="https://i.imgur.com/o7lvCdC.png" alt="drawing" width="50%"/>
 
 
 Update option in the database node can be used to update values stored in the tables following the given steps:
@@ -399,6 +405,8 @@ Update option in the database node can be used to update values stored in the ta
 4. In Update with :
   - In Fields add the name of column.
   - In with value add the variable storing the value that you want to update current.
+
+<img src="https://i.imgur.com/o7lvCdC.png" alt="drawing" width="50%"/>
 
 --------
 
@@ -431,7 +439,7 @@ You can also test your series of modifiers by entering different input strings t
 Connect TransXT function with this node.  
 
 
-## 3. Language 
+## <a name="lan"></a>  3. Language 
 
 ### Set Language 
 
@@ -447,7 +455,7 @@ This language will be permanently set (currently set 2 days of expiry), unless i
 
 >Language can only be changed to only if that language is configured in bot settings, otherwise the node will fail. 
 
-## 4. Notification 
+## <a name="not"></a> 4. Notification 
 
 (Notification Nodes are currently not in use. Coming soon!)
 
@@ -462,3 +470,68 @@ Check outbound notification status with this node.
 ### Voice Call 
 
 Make voice calls with this node.
+
+## <a name="wf"></a> 5. Workflow nodes
+
+### Sync Database
+
+> This node is only available when a flow is created as a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#3-workflow). 
+
+This node enables bulk operations like "Import, Insert, Update" on tables (of bigger databases) from external data sources through APIs instead of updating it manually. You can also schedule database updates.
+
+#### Usage
+
+Follow the steps below: 
+
+1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#sch-1) (if there is a requirement to schedule the database updates).
+
+![](https://i.imgur.com/QjIIo2d.png)
+
+2. Create an [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api). Create a table in the required format (template without any rows).
+
+![](https://i.imgur.com/3Ziy9YS.jpg)
+
+3. Create/open a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#3-workflow). On the start node, select the scheduled event as the start trigger. 
+
+![](https://i.imgur.com/BpOb6o5.png)
+
+4. Connect the start node to the Sync Database node. 
+5. Select the API, Table and appropriate action.
+    - **Insert**: Adds rows from API call to the end of the table.
+    - **Update**: Compares rows from API call to the existing table and checks if there is a match in Unique ID and updates those rows.
+    - **Import**: Truncates existing table completely and replaces it with data from API call.
+
+![](https://i.imgur.com/SsJcSCp.png)
+
+6. When this is triggered, the node pulls all the data through API. 
+
+> Data is supported only in CSV format.
+> There is not restriction on the file size. 
+> All the rows will be imported, processed and sent to the selected table to perform the selected action.
+
+**(Optional)**
+
+7. Configure a parser function where individual row attributes could be accessed with a custom code: 
+
+```
+return new Promise(resolve => {
+  let record = ymLib.args.record;
+  /*
+    record is an object, representing a row. all values will be of type string, keys will be fetched from the csv-header.
+  */
+  resolve({
+    identifier: record.identifier,
+    category: record.category
+  });
+});
+```
+
+8. On the scheduled time, status of the sync can be viewed in "status" object.
+
+```
+{
+success: true,
+error : 'if any, we show it',
+recordsProcessed: 1230,
+}
+```
