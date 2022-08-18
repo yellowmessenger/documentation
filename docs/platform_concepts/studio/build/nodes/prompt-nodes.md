@@ -336,6 +336,15 @@ To do this, we have a **Fetch from** option in quick reply prompt. Here, instead
 
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intented variable. For example, you can apply for loop around options to dynamically add to them while parsing through some API response etc.
 
+#### Quick reply node for WhatsApp
+
+Quick replies node can switch between buttons and numbered list.WhatsApp buttons can have upto maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
+
+![](https://i.imgur.com/Kc9r8xe.png)
+
+> Real time example: 
+> ![](https://i.imgur.com/7pp1yaf.jpg)
+
 #### Workaround for WhatsApp
 
 Quick Replies are currently not supported on WhatsApp. That is, buttons wont be visible on the WhatsApp chat. 
