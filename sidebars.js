@@ -496,7 +496,8 @@ module.exports = {
         "platform_concepts/channelConfiguration/googleChat",
         "platform_concepts/channelConfiguration/instagram",
         "platform_concepts/channelConfiguration/ivr-bots",
-        "platform_concepts/channelConfiguration/slack",
+        //"platform_concepts/channelConfiguration/slack",
+        "platform_concepts/channelConfiguration/slack2",
         "platform_concepts/channelConfiguration/sms-outbound-india",
         "platform_concepts/channelConfiguration/teams",
         "platform_concepts/channelConfiguration/telegram",
@@ -565,6 +566,7 @@ module.exports = {
       label: "Studio",
       collapsed: true,
       items: [
+        "updates/studio/studioupdates",
        //"updates/studio/build",
        //"updates/studio/trainandtest",
        // "updates/studio/analyse",
