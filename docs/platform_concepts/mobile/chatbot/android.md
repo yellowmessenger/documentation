@@ -205,6 +205,14 @@ ymChat.config.enableSpeech = true
 To enable Speech to text Please add record audio permission  (`<uses-permission android:name="android.permission.RECORD_AUDIO" />`) in manifest file.
 :::
 
+### Hide Input Bar
+
+You can hide the input bar while bot is loading by setting the disableActionsOnLoad flag present in config. Default value is `false`
+
+```java
+ymChat.config.disableActionsOnLoad = true
+```
+
 ### Colors
 
 #### Status bar

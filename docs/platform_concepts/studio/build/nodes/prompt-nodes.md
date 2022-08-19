@@ -336,6 +336,15 @@ To do this, we have a **Fetch from** option in quick reply prompt. Here, instead
 
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intented variable. For example, you can apply for loop around options to dynamically add to them while parsing through some API response etc.
 
+#### Quick reply node for WhatsApp
+
+Quick replies node can switch between buttons and numbered list.WhatsApp buttons can have upto maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
+
+![](https://i.imgur.com/Kc9r8xe.png)
+
+> Real time example: 
+> ![](https://i.imgur.com/7pp1yaf.jpg)
+
 #### Workaround for WhatsApp
 
 Quick Replies are currently not supported on WhatsApp. That is, buttons wont be visible on the WhatsApp chat. 
@@ -422,8 +431,14 @@ Create a email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/b
 
 Users can input the SSML text and can play the configured/generated audio on the go.
 
+This node can be used for two purposes: 
+1. When voice bot developers can test the SSML inputs directly from this node (with the help of the **Test Audio** button).
+2. This node can be used as an alternative for the **Question** node but as a voice message. 
+
+
 You can enter what a bot must ask the user in SSML format. This can be tested by clicking **Test Audio** and playing the produced audio. When this node is reached in the flow, the user will be sent a voice message (when bot is configured for it).
 
+The response message (user utterance) obtained for this node can be stored as a variable (similar to the question node)
 
 
 ![](https://i.imgur.com/A1komJk.png)

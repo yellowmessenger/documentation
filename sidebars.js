@@ -25,6 +25,8 @@ module.exports = {
   cookbooks: [
     "cookbooks/getting_started",
     "cookbooks/conversation-design",
+    "cookbooks/Upgrade_new_engage_app",
+    
     {
       type: "category",
       label: "Basic",
@@ -139,10 +141,12 @@ module.exports = {
           items: [
             "platform_concepts/studio/train/intents",
             "platform_concepts/studio/train/entities",
+            "platform_concepts/studio/train/synonyms",
             "platform_concepts/studio/train/add-faqs",
             "platform_concepts/studio/train/add-contextual-response",
             "platform_concepts/studio/train/what-is-document-cognition",
             "platform_concepts/studio/train/utterance-report",
+            
           ],
         },
        
@@ -162,15 +166,17 @@ module.exports = {
           ],
         },
 
-        {
-          type: "category",
-          label: "Table",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/table/create-tables",
-            "platform_concepts/studio/table/database-search",
-          ],
-        },
+        "platform_concepts/studio/database",
+
+        // {
+        //   type: "category",
+        //   label: "Table",
+        //   collapsed: true,
+        //   items: [
+        //     "platform_concepts/studio/table/create-tables",
+        //     "platform_concepts/studio/table/database-search",
+        //   ],
+        // },
         {
           type: "category",
           label: "Events",
@@ -277,6 +283,8 @@ module.exports = {
                 "platform_concepts/inbox/inbox-settings/agent-configuration/csat",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/canned-responses",
                 "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
+                "platform_concepts/inbox/inbox-settings/agent-configuration/default-agent-statuses",
+
               ],
             },
             {
@@ -489,7 +497,8 @@ module.exports = {
         "platform_concepts/channelConfiguration/googleChat",
         "platform_concepts/channelConfiguration/instagram",
         "platform_concepts/channelConfiguration/ivr-bots",
-        "platform_concepts/channelConfiguration/slack",
+        //"platform_concepts/channelConfiguration/slack",
+        "platform_concepts/channelConfiguration/slack2",
         "platform_concepts/channelConfiguration/sms-outbound-india",
         "platform_concepts/channelConfiguration/teams",
         "platform_concepts/channelConfiguration/telegram",
@@ -505,12 +514,14 @@ module.exports = {
       items: [
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/camspay",
+        "platform_concepts/appConfiguration/clevertap",
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/genesys-cloud-livechat",
         "platform_concepts/appConfiguration/google-calendar",
         "platform_concepts/appConfiguration/google-sheets",
         "platform_concepts/appConfiguration/hubspot-crm",
         "platform_concepts/appConfiguration/intercom-livechat",
+        "platform_concepts/appConfiguration/jira",
         "platform_concepts/appConfiguration/leadSquared-wa-connector",
         "platform_concepts/appConfiguration/microsoft-dynamics",
         "platform_concepts/appConfiguration/microsoft-graph",
@@ -529,7 +540,6 @@ module.exports = {
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
-        "platform_concepts/appConfiguration/jira",
       ],
     },
     {
@@ -557,7 +567,15 @@ module.exports = {
       label: "Studio",
       collapsed: true,
       items: [
-       
+        "updates/studio/studioupdates",
+       //"updates/studio/build",
+       //"updates/studio/trainandtest",
+       // "updates/studio/analyse",
+       // "updates/studio/api",
+       // "updates/studio/table",
+      // "updates/studio/events",
+       // "updates/studio/tools",
+       // "updates/studio/language",
       ],
     },
     {

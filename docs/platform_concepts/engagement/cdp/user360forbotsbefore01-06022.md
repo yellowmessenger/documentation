@@ -1,22 +1,24 @@
 ---
-title: Deprecation of Users Module for bots created before 01/06/2022
+title: User Data Migration from old module to User360
 sidebar_label: User360 for Bots Created Before 01/06/22
 ---
 
 
 
-The old Users Module is being replaced with the all new [User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/).
+The old Users Module is being replaced with the new [User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/).
 
-User 360 had been enabled by default for all bots created after 01/06/2022. This document is for older bots and it mentions steps to successfully migrate data from the older Users Module to the new User 360.
+> **User 360 had been enabled by default for all bots created after 01/06/2022.** 
+
+This document can be referred to **migrate data from the older Users Module to User 360**.
 
 * Old bots that had 0 records in their users module, will automatically see the new User 360 module and will require no data migration.
 * Old bots that have records in their users module, will see a Data Migration window.
 
->Data migration window will be open till 31/07/2022. After this, the old data will be lost.
+>Data migration window will be open till **30/10/2022**. After this, the old data will be lost.
 
 ## Data Migration
 
-**You may ignore these steps if you do not wish to migrate the old data.**
+> **You may ignore these steps if you do not wish to migrate the old data.**
 
 * Bots that had records in the old Users Module will see a data migration window.
 
