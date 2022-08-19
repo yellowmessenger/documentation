@@ -62,7 +62,7 @@ Yellow.ai Integration with Shopify allows you to seamlessly connect your Shopify
    
 ## 3. Use Shopify functions in your bot flow
 1. Open the bot Studio and navigate to the conversation flow where you want to use the Shopify node.
-2. You first need to collect information from the user. Use the Question node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the variable.
+2. You first need to collect information from the user. Use the Question node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/).
 
    ![](https://i.imgur.com/3Nr7T6u.png)
 3. Add a new integration node - **Node** > **Integration** > **Shopify Shop**.
@@ -73,7 +73,7 @@ Yellow.ai Integration with Shopify allows you to seamlessly connect your Shopify
    * Static value: {variable_name}
    ![](https://i.imgur.com/X9e1rwL.png)
 5. Use Show sample response to see all the details that the function can retrieve in the JSON format.
-6. Store the response in a variable. 
+6. Store the response in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/). 
    ![](https://i.imgur.com/fMgSeaw.png)
 
 7. Now, you can decide what information you want to show for the user. Use the Function node to customise the information that you want to display in the Code tab.
@@ -96,11 +96,11 @@ Event | Description
 ----- | -----------
 shopifyNewOrder | A new order created in the Shopify store.
 shopifyNewProduct | A new product has been added to the Shopify store.
-shopifyOrderCancelled | An order canceled
+shopifyOrderCancelled | An order is canceled.
 shopifyOrderFulfilled | An order was fulfilled or completed.
 shopifyOrderPaid | Payment made for an order. 
 shopifyRefundCreated | Refund created for an order.
-shopifyNewCustomer | A new customer is registered
+shopifyNewCustomer | A new customer is registered.
 shopifyCustomerUpdate | A customer’s profile details have been updated.
 
 ### Activate events to use in your bot
