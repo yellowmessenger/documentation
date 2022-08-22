@@ -486,6 +486,7 @@ module.exports = {
       label: "Channel Configuration",
       collapsed: true,
       items: [
+        "platform_concepts/channelConfiguration/overview",
         "platform_concepts/channelConfiguration/alexa",
         "platform_concepts/channelConfiguration/email-outbound",
         "platform_concepts/channelConfiguration/facebook-messenger",
