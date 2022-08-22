@@ -1,9 +1,12 @@
 ---
 title: What's New 
-sidebar_label: What's New Overview
+sidebar_label: Overview
 featured: true
 ---
 
-This section will basically highlight all the important features that are released in a month. So stay tuned and check this page for new feature updates that will help you make your bot more awesome.
+To make it accessible for users to discover the latest features and changes introduced on our yellow.ai platform, we have created a '**What's New**' section! 
 
-![](https://i.imgur.com/9dSD5gE.jpg)
+Stay you up-to date with our platform changes to build your Dynamic AI Agents with our wonderful features. 
+
+
+

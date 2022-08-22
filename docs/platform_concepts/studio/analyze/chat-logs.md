@@ -4,17 +4,30 @@ sidebar_label : Chat Logs
 ---
 
 
-Online chat has become an important part of business communication in recent years. To help improve the customer experience and continually monitor their interaction, a system is in place called ‘Conversation Logs’. As the name suggests, it provides a log of conversations of all the customers. Following are some of the features provided by our in house tool - Conversation Logs. Conversation logs enhance online chat with a persistent record of information exchanged and decisions reached.
+Online chat has become an important part of business communication in recent years. Conversation Logs help improve the customer experience and continually monitor their interaction, a system is in place called ‘Conversation Logs’. As the name suggests, it provides a log of conversations of all the customers. Following are some of the features provided by our in this tool. It enhances online chat with a persistent record of information exchanged and decisions reached.
 
-Conversation Logs contain interactions of the user with your bot and responses the user received from the bot.  It monitors your bot conversations and automatically tags problematic conversations.  It helps you better analyze drop-offs, understand user perceptions, and optimize your flows accordingly. For example, you can review conversations to understand if your users are interacting with your bot as intended.
+Conversation Logs contain interactions of the user with your bot and responses the user received from the bot.  It monitors your bot conversations and automatically tags problematic conversations.  
 
-It can be found in this [link](https://cloud.yellow.ai/bot/<Bot_Id>/studio/chat-logs)
+It helps you better analyze drop-offs, understand user perceptions, and optimize your flows accordingly. For example, you can review conversations to understand if your users are interacting with your bot as intended. It also enhances online chat with a persistent record of information exchanged and decisions reached.
+
+
+
+## 1. Session
+
+We count each conversation with a user as a session
+
+App | Each Session Duration
+--- | ----------------
+Web app | 30 minutes
+Whatsapp | 24 hours
+
+Each user has a unique ID called a UID. For each UID, a conversation log is created for all sessions to analyse with complete context. Some logs hold data of upto 5 days of conversations and sometimes there are 3 logs for the conversation with one user.
 
 
 ![](https://i.imgur.com/NbgQwm4.png)
 
 
-The conversation logs are updated everyday at 21:00 LT.
+> The conversation logs are updated everyday at 21:00 LT.
 
 
 The following are some key features of the Yellow AI’s Conversation Logs:
@@ -32,7 +45,7 @@ The following are some key features of the Yellow AI’s Conversation Logs:
 
 
 
-### Filters Conversations
+### 1.1 Filters Conversations
 
 As time passes, the conversation log keeps increasing. Filtering your conversations helps you get more specific conversations you would need.
 
@@ -42,10 +55,12 @@ To filter the conversations:
 2. Navigate to the filter that you want to apply and select the required option(s). Refer to the following table to know how to use each filter.
 3. Click Apply filter.
 
+![](https://i.imgur.com/dy2tnZs.png)
+
 
 | Filter | Description |
 | :-------- | :-------: |
-| Date | View conversations of a specific date range. Choose the desired date range using calendar boxes |
+| Date | View conversations of a specific date range. Choose the desired date range using the calendar boxes |
 | Source | View conversations of a specific channel. For example, Yellow Messenger, Skype, WhatsApp, Facebook etc. Choose the desired source from the drop-down list |
 | Tags | View specific tagged conversations. There are some predefined tags associated with the conversations automatically according to the configured rules. Select your preferred tags from the list |
 | Flagged Conversation | View either flagged or unflagged conversations |
@@ -55,7 +70,7 @@ To filter the conversations:
 | Drop-off | View all dropped (incomplete) conversations across all journeys. Select All and apply the filter |
 
 
-### Label conversations
+### 1.2 Label conversations
 
 Over time, there could be a range of conversations logging in the system - from complaints, product queries, or feedback. To keep a track of different conversations, you can label them appropriately. Eventually, you will get better insights on the intentions of a specific set of users. You can work on optimizing your bot better.
 
@@ -65,7 +80,7 @@ To label a conversation -
 2. Click on the Label box to see the list of available labels. Either select your preferred label from the existing list or type a new name in the box and press Enter.
 
 
-### Flag conversations
+### 1.3 Flag conversations
 
 You can flag conversations that you want to revisit later. To see only your flagged conversations, use Filters > Flagged Conversation.
 
@@ -82,8 +97,7 @@ To flag a conversation -
 :::
 
 
-
-### Troubleshoot your bot flow
+### 1.4 Troubleshoot bot flow
 
 Now that there are many conversations logged in the system, it becomes easy for you to choose specific conversation(s) using the filters and flags available.
 
@@ -93,4 +107,6 @@ To fix a problem or optimize your bot -
 2. Go to Studio, open the flow and make the necessary changes to it.
 3. Test the bot to see if your changes are reflecting.
 
-For example, consider the following example where the system has identified a Long wait time to respond when the user clicked on Nodes. Go back to your flow, identify the issue, and make the necessary changes. Test the bot to see if your intended changes are reflecting.
+![](https://i.imgur.com/OEdx1kj.png)
+
+For example, consider the following example where the system has identified a *Long wait time to respond* when the user clicked on Nodes. Go back to your flow, identify the issue, and make the necessary changes. Test the bot to see if your intended changes are reflecting.
