@@ -513,6 +513,7 @@ module.exports = {
       label: "Integrations",
       collapsed: true,
       items: [
+        "platform_concepts/appConfiguration/overview",
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/clevertap",
