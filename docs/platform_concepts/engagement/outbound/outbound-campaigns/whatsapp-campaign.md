@@ -4,8 +4,8 @@ title : WhatsApp Campaigns
 ---
  
 ## 1. Prerequisites for setting up WhatsApp campaigns
-1. You need to have Whatsapp channel configured with a business number.
-2. Ensure you add whitelisted templates (approved templates) in the templates module. 
+1. You need to have [Whatsapp channel](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel/) configured with a business number.
+2. Ensure you add whitelisted templates (approved templates) in the [templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview) module. 
 
 > **Note**: You can also create a new template from the Message template screen in the campaign creation flow.
 
@@ -13,31 +13,37 @@ title : WhatsApp Campaigns
 ## 2. Create WhatsApp campaign
 
 1. Navigate to your project and go to **Engage** module.
-
-
    ![](https://i.imgur.com/T0xqzoI.png)
 
 
-1. On the top-right of the overview screen, click **+ Create Campaign**.
+2. On the top-right of the overview screen, click **+ Create Campaign**.
 
    ![](https://i.imgur.com/uG8mDMY.png)
 
 
-3. Provide **Basic information** 
+3. Provide **Basic information**.
+   
    i. Enter a suitable **Campaign name** that resonates well with the purpose of the campaign.
+   
    ii. Select **Whatsapp** in active channels.
+   
    iii. Click **Next**.
 
    ![](https://i.imgur.com/wrrBEkl.gif)
 
-4. Select your **Message template**.
+4. Select your **Message template**. For more details, see [Templates overview] (https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview).
+   
    i. Select the message template that you want to send using the radio button.
    To view the message content, click on the template name as shown in the following.
 
    ![](https://i.imgur.com/C2IrHHc.gif)
+
    ii. Choose your preferred **Sender ID** using the drop-down. 
+
    iii. Choose the field that contains users contact or number where they can receive the campaign.
+
    iv. In **Map Variables**, use **Click to map** to associate variables to the dynamic tags used in the message. 
+
    v. Use **Media** to configure personalized media for the campaign.
    * **Static**: Select to send a common media file to all the recipients. Use **Browse** to upload the media file.
    * **Dynamic**: Select to send a personalized media to each user. Map the column from the db where you have included these details.
@@ -57,14 +63,14 @@ The user contact details/ recipient column and other others can be selected from
    * You can either choose audience from the list of  segments that you already created [OR] 
    * Create a new segment using **+ Add new segment**. For more details, see [Users module and segment creation](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/overview).
 
-6. **Schedule** your Campaign: Define when to send the campaign (Timezone: Asia/Kolkata). 
+6. **Schedule** your Campaign: Define when to send the campaign (Timezone: Asia/Kolkata). For detailed procedure, see [Schedule message](#21-schedule-message).
 * Select **Once** to  run the campaign for one accurance.
    * Select **Now** to run after 10 min once you schedule the campaign. 
     - Select **Later** to send out the campaign message on a specific date and time. Use the Calendar box to set your preferred date and time.
 * Select **Run multiple times** to configure a recurring campaign. 
    ![](https://i.imgur.com/ffRXb4m.png)
    
-7. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients.
+7. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients. For a detailed procedure on how to test campaigns, see [Test campaign]s(#3-test-campaigns-recommended).
 8. **Review and Launch** the campaign.
 
    Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
@@ -143,7 +149,6 @@ Segment is grouping of users based on certain condition sets. Segmentation can b
    * Once the segment is created, you can see the number of users under the segment.
 
    ![](https://i.imgur.com/mV0dGW4.png)
-
    ![](https://i.imgur.com/HCNM7HD.png)
 
 
@@ -177,17 +182,13 @@ Although this is an optional step, we highly recommend you to test your campaign
 
 2. Create campaigns and proceed till "review and launch" step. Click on "Test campaign" button
 
-**`Note: Test campaign is supported for all channel campaigns`**
-
-![](https://i.imgur.com/SAjth2N.png)
+   ![](https://i.imgur.com/SAjth2N.png)
 
 
-3. Search test users
+3. Search test users.
 * A wizard will be opened to add test user details.
-* You can search users by name, email, phone number or userID.
-`For example, type any name and available users will be suggested in dropdown.`
-
-![](https://i.imgur.com/UqXJZ3h.gif)
+* You can search users by name, email, phone number or userID. You will see auto-suggestions in the drop-down as you type.
+   ![](https://i.imgur.com/UqXJZ3h.gif)
 
 
 4. Add test users
@@ -196,16 +197,15 @@ Although this is an optional step, we highly recommend you to test your campaign
 * You can check whether all the parameters are mapped correctly to the desired user columns.
 * Here you can ensure that all the values are available for the user. If not, then you can search an alternate user to personalise the message.
 
-![](https://i.imgur.com/qD091UD.png)
+   ![](https://i.imgur.com/qD091UD.png)
 
 * You can add up to 5 test users at a time. Click on "+Add Users" to search and add multiple users.
-
-![](https://i.imgur.com/OFDwZvH.gif)
+   ![](https://i.imgur.com/OFDwZvH.gif)
 
 5. Send Test Messages
 * Once all the data is cross verified, you can click on "send test campaign" to trigger notifications to recipient IDs added.
 
-![](https://i.imgur.com/Z3NC91L.png)
+   ![](https://i.imgur.com/Z3NC91L.png)
 
 * This screen will be frozen for 15 seconds to update the sent status of messages. 
 * In case of any data mismatch you can save the campaign by clicking "save as draft", navigate to templates step, correct your mappings.
@@ -221,7 +221,7 @@ If the Test Message has Failed to deliver, then you will be able to see the reas
 * Click on **Test Campaign** will give you sent status of last test users and you can click on "Send new test campaign" to add new test users.
 * Once the notification is good to go, you can launch the campaign anytime.
 
-![](https://i.imgur.com/oVgpJRm.png)
+   ![](https://i.imgur.com/oVgpJRm.png)
 
 
 
