@@ -566,10 +566,12 @@ module.exports = {
     "updates/overview",
     {
       type: "category",
-      label: "Studio",
+      label: "2022",
       collapsed: true,
       items: [
-        "updates/studio/studioupdates",
+        "updates/2022/july",
+        "updates/2022/aug",
+
        //"updates/studio/build",
        //"updates/studio/trainandtest",
        // "updates/studio/analyse",
