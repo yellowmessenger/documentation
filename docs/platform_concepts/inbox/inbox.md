@@ -31,7 +31,7 @@ There are two kinds of roles to access the inbox module:
 
 ![](https://i.imgur.com/tkz07ty.png)
 
-### Testing the live agent module:
+### Testing the live agent module
 
 To test the live agent transfer you need to have access as an Inbox agent.
 
@@ -65,6 +65,19 @@ Once you have created the live agent journey, follow these steps to test it out:
 
 8. Then you can close the chat and also test the message that should come on the ticket close.
 
+### Inbox on Android & iOS
 
+Yellow.ai brings **YellowAI Partner** for agents to reduce query resolution time by responding and addressing queries in a matter of seconds on [Android](https://play.google.com/store/apps/details?id=ai.yellow.supportagent&hl=en&gl=US) and [iOS](https://apps.apple.com/tr/app/yellowai-partner/id1612610646).
 
+Our innovative automated live chat technology seamlessly bridges the gap between traditional and modern communication channels, while driving agent productivity, automating L1 queries, and providing better interactions through voice and video calling features.
 
+Agents can use YellowAI Partner to:
+
+* Communicate with customers and serve them round the clock.
+* Handle L1 L2 queries like a boss.
+* Collaborate with teammates to address queries.
+* Provide better interactions through voice and video calling features.
+* Get empowered with access to the information.
+* Get instant feedback from customers.
+* AI Agent Workflows to automate agent actions.
+* Push Notifications for when you are on a break, so you don't miss any tickets.
