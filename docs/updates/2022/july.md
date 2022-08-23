@@ -1,15 +1,15 @@
 ---
-title: Studio Updates
-sidebar_label: Studio Updates
+title: July Updates
+sidebar_label: July Updates
 ---
 
 
-## 1. General
+
+## 1. General 
 
 ### Studio IA 
 
 UI is redesigned to have a brand new IA helping in intuitive navigation through studio.
-
 
 
 ### Autocomplete  

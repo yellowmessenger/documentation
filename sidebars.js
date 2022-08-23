@@ -414,6 +414,7 @@ module.exports = {
               collapsed: true,
               items: [
                 "platform_concepts/engagement/outbound/templates/overview",
+                "platform_concepts/engagement/outbound/templates/whatsapptemplate",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
               ],
@@ -512,6 +513,7 @@ module.exports = {
       label: "Integrations",
       collapsed: true,
       items: [
+        "platform_concepts/appConfiguration/overview",
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/clevertap",
@@ -564,10 +566,12 @@ module.exports = {
     "updates/overview",
     {
       type: "category",
-      label: "Studio",
+      label: "2022",
       collapsed: true,
       items: [
-        "updates/studio/studioupdates",
+        "updates/2022/july",
+        "updates/2022/aug",
+
        //"updates/studio/build",
        //"updates/studio/trainandtest",
        // "updates/studio/analyse",
