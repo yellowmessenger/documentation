@@ -1,173 +1,190 @@
 ---
-sidebar_label : YM Notification Engine
-title : YM Notification Engine (v1.0.2)
+sidebar_label : Message Notifications
+title : Message Notifications
 ---
 
-## Description
+## 1. Introduction
 
-Notification Engine API offers capability to push dynamic content notification across to users on various channels.
+Yellow.ai's Notification API lets you send business-initiated messages from the various supported channels directly from your CRM or internal Systems.
 
+The API supports different channels (SMS, email, and WhatsApp) and makes it more easy for developers to integrate it anywhere in less time.
 
-Key capabilities include:
-1. On demand notification delivery.
-2. Support for scheduling notifications.
-3. Support for postbacks on delivery updates.
-4. Reporting is available.
+### 1.1 Features of the Notification API
 
+*   Single endpoint for multiple channels
+*   Enable range of API services with one-click
+*   Real-time reports on YM Platform with the basic features of the BI tool to visualise your data
+*   Callback Webhook Configuration support to receive delivery updates directly on your system
 
-## API Details
+### 1.2 IPs Whitelisting
 
-**Endpoint:**
+Additionally, our outbound IPs given below must be whitelisted for the reports callback to flow into your system.
 
-```
-https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=botID
-```
+*   13.71.52.164
+*   13.71.49.46
+    
 
-**Method : **POST
+## 2. Notification API
 
-### Authentication
+### 2.1 Enable API Access
 
-All requests to notification engine should be accompanied with this header.
-```
-{
-   "x-auth-token" : "token"
-}
-```
+In order to use the Notification API you have to enable it on the platform as explained here
 
-\* Token will be shared separately by the yellow.ai Team.
+1.  Go to the **Engage** module,
+2.  Navigate to **Preferences** and
+3.  Click **Enable API Access**.
+    
 
-### Request body
+> **Note**: If Engage is not enabled, you will get a `400` error (API access is not enabled).
 
-### Parameters
+### 2.2 Request Information
 
-| Parameter Name | Type   | Required | Description                                                                                       |
-|----------------|--------|----------|---------------------------------------------------------------------------------------------------|
-| userDetails    | Object | Yes      | Details of the user to be notified, Variables                                                     |
-| notification   | Object | Yes      | Template and Channel details.                                                                     |
-| config         | Object | Yes      | Metadata about the notification. Parameters like postBackUrl, customPayload etc can be specified. |
+**Base URL**
 
+`https://cloud.yellow.ai/api/engagements/notifications/v2/push?bot={botId}`
 
-### userDetails
+**Headers**
 
-User details may contain all relevant information about the user. It needs to have atleast one contactable information and any number of additional parameters. For example, in case of voice notification, it needs to have a ‘number’ field mandatory and any number of extra parameters. It also contains the template parameters that needs to be rendered in the content.
+| **Header** | **Description/Value** |
+| --- | --- |
+| `Content-Type` | application/json |
+| `x-api-key` | * **For** **`app.yellow.ai`** **platform**: Get the API key from the path **Configuration** > **Access Control** > **Bot API Key**.   **For** **`cloud.yellow.ai`** **platform**: Click the Yellow logo on top left corner > Select your bot from the dropdown > On the top-right corner, click **Configure** > On the left sidebar, click **API Keys** (you can see keys only if you are the super admin). |
 
+> **Note**: Only users with Super Admin role can create a Bot API key.
 
-```
-   "userDetails": {
-       "number": "919876543210", //mandatory for sms, wa, voice     //country code to be added without space if not added default 91
-       "email": "abc@xyz.com", //mandatory for email
-       "fbId": "987543212", //mandatory for fbm
+#### Request Query Parameter
+
+| **Parameter** | **Datatype** | **Description** |
+| --- | --- | --- |
+| botId* | String | Unique ID of the bot. Login to the Platform and navigate to the bot . You can find the bot ID in the URL Eg: x16387123456 |
+
+#### Request Body Parameters
+
+| **Parameter** | **Type** | **Required** | **Description** |
+| --- | --- | --- | --- |
+| `userDetails` | Object | Yes | Details of the user to be notified. Eg. Phone Number for WhatsApp. |
+| `notification`  (fields: `params`) | Object | Yes | Template details |
+| `media` | Object | Optional | Template Media URL, Quick Reply Payload can be passed here |
+| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API `customPayload` - Custom info. Will be sent back with delivery updates.  `postbackUrl` - To receive delivery updates on clients webhook. Configurable from platform for now. Please go to **Engage** > **Preferences** for setting up the `postbackUrl.` |
+
+##### `userDetails` Object
+
+This object contains all relevant information about the user. It needs to have at least one contactable information and any number of additional parameters. For a WhatsApp notification, the `number` field is mandatory.
+
+``` json
+  "userDetails": {
+       "number": "919090909090", //mandatory for SMS, WhatsApp, Voice     //country code to be added without space // if not added default 91
+       "email": "abc@xyz.com", //mandatory for email channel
+       "cc": "cc@xyz.com", //applicable only for email // array of string or string
+       "bcc": "bcc@xyz.com", //applicable only for email // array of string or string
    }
+
 ```
 
+##### `notification` Object
 
-### notification
+This contains the message template details that needs to be sent as a notification. `templateId` is mandatory.
 
-Notification contains the message template that needs to be sent as a notification. templateId is mandatory. templateId can be fetched Either it can contain the plain message directly or contain parameters to be rendered for a template on a particular channel. 
+``` json
+"notification": {
+    "templateId": "template_name", // name of the template from template manager// mandatory for WhatsApp, SMS(wherever applicable)
+    "params": { //renderable parameters defined in the template.
+           "emiValue": "15000", // variable parameter names as shown on template manager. Dynamic values can be passed.
+           "balance": "79999",
+           "media": [{ //applicable for whatsapp // 
+                       "title": "title", //optional for document media types
+                       "mediaLink": "https://URL.com.jpeg",
+                       "quickReplies": [
+                                {
+                                    "type": "quick_reply",
+                                    "value": "payload 1"
+                                },
+                                {
+                                    "type": "quick_reply",
+                                    "value": "payload 2"
+                                }
+                            ]
+                     }],
+           "quickReplies": {
+                "ctaUrlParam": "pricing-ai-chatbot" // over here, "pricing-ai-chatbot" represents the extension of the URL after the domain (as configured in the template)
+           }
 
-
-```json
-{
-    "notification": {
-        "templateId": "emi-reminder-template01", // name of the template in YM portal. if template is created in waba, name of the template given there. mandatory for wa, sms(wherever applicable)
-        "params": { //renderable parameters defined in the template.
-            "EMI Value": "15000",
-            "First Name": "Wasim",
-            "media": {
-                "mediaLink": "mediaPublicUrl",
-                "title": "titleOfDoc"
-            } //applicable only for whatsapp 
-        },
-        "freeTextContent": "Your content goes here", //if template is not renderable, notification engine will try to send this, subject to channel restrictions
-        "profileId": "kaleyra-sms", //set during channel-configuration. optional if only one profile
-        "type": "whatsapp", // channel type - whatsapp,sms,email,voice,fbmessenger
-        "sender": "919876543210",
-        "language": "en", // applicable for whatsapp
-        "namespace": "1bhjasd67123jjka", // applicable for whatsapp
-    }
-}
 ```
 
+##### `config` Object
 
-### config
+This contains the list of available pre-configuration that will be validated before sending the messages to the user.
 
-Channels is a list of channels the user needs to be notified on. Each element is in turn an object containing configuration about the channel.
-
-```json
+``` json
 "config": {
-       "checkOptIn": "true", //  true/false. default value is false.
-       "scheduleAt": "1970-01-01T00:00:00.000Z", // Date time at which the notification should be sent. Default value is immediate. Max limit - 24 hours
-       "customPayload": { // Payload that will flow back to the postback webhook and reports.
-           "BUID": "asdasd", //Can add upto 3 custom reference parameters
-           "userID": "asdasd",
-           "departmentID": "67576q"
-       },
-       "checkOfficeHours":"true" //default value is true. working hours can be configured in portal
+        "customPayload": {
+            "firstName": "Wasim",
+            "phone": "91999999999",
+            "UID" : "Got the details"
+        },
+       "postbackUrl": "https://webhook.url"
    }
-```
-
-Currently metadata supports
-
-- **scheduleAt :** ISO formatted date time string at which the notification must be sent.
-- **customPayload :** JSON object which will flow back to the postback URL if configured and also reflect in the reports. Can be used to associate identifying information for a particular notification.
-- **postBackURL :** URL to send delivery post back.
-	
-
-### Response status codes:
-
-On successful queueing of the notification, you will receive a 202 status code with the msgId.
-
-| HTTP Status code | Description                                                                                                              |
-|------------------|--------------------------------------------------------------------------------------------------------------------------|
-| 202              | Message queued successfully. You will receive a msgId for acknowledgement and tracking.                                  |
-| 400              | Bad request. Request structure is not formed correctly. Please check the ‘message’ field for more information.           |
-| 401              | Unauthorised. Please check your auth token.                                                                              |
-| 422              | Invalid inputs. The request structure is evaluated to be correct but the parameter values are not within expected range. |
-| 429              | Rate limited. Occurs when there are too many requests. Please retry later.                                               |
-| 500              | Internal server error. TraceId will be sent back for tracking.                                                           |
-
-### Postback Webhook / URL
-Enable Postback URL at Engage > Preference > Enable Postback URL. You can also refer to the screenshot below:
-
-![](https://i.imgur.com/CVmHwol.png)
-
-As soon as we receive callback from the downstream services, we will post that data to the configured webhook if available.
 
 ```
+
+### 2.3 Sample Webhook Payload
+
+As soon as we receive a callback from the downstream services, we will post that data to the configured Webhook if available. Webhooks will be called with the request body.
+
+``` json
 {
-    "event": {
-        "status": "sent"
-    },
-    "userId": "91xxxxxxxx",
-    "source": "whatsapp",
-    "campaign": "apiNotifications",
-    "templateId": "vac_feedback_info",
-    "msgId": "k9JLQArozzN8-Ar2WiMVY",
-    "workflowId": null
+  "event": {
+    "status": "delivered"
+  },
+  "userId": "919999999999",
+  "source": "whatsapp",
+  "campaign": "apiNotifications",
+  "templateId": "video_button1",
+  "msgId": "3Yp8jdIUj8jNeoFOP1ZLT",
+  "workflowId": null,
+  "firstName": "Wasim",
+  "phone": "91999999999",
+  "UID": "Got the details"
 }
+
 ```
 
-Webhooks will be called with the above request body.
+### 2.4 Response status codes
 
-- **customPayload: **This is the payload passed when queueing the notification.
-- **event: ** event will always have the status field and additional fields depending on the channel and the status.
+On successful queueing of the notification, you will receive a 202 status code with the relevant `msgId`. This confirms that the message details has been received by us and will be queued for sending on the relevant channel. The downstream service will pick the queue and will start sending it and updating the delivery status on the webhook and on the reports under Data Explorer on the platform.
 
-    Status can be one of the following.
-    - queued/triggered
-    - sent
-    - delivered
-    - acknowledged/read
-    - failed
+| **HTTP Status Code** | **Description** |
+| --- | --- |
+| 202 | Message queued successfully. You will receive a msgId for acknowledgement and tracking. |
+| 400 | Bad request. Request structure is not formed correctly. Please check the `message` field for more information. |
+| 401 | Unauthorised. Please check your auth token. Only Super Admin Auth tokens are accepted for using API. |
+| 422 | Invalid inputs. The request structure is evaluated to be correct but the parameter values are not within expected range. Channel not configured. |
+| 429 | Rate limited. Occurs when there are too many requests sent to the API within a short time. Once a rate limit error is captured the rate of the API call should be decreased to honour the limits.  *Default Rate Limit is 2000 requests/min per Bot.* |
+| 500 | Internal server error. TraceId will be sent back for tracking. |
 
-**Notes:**
 
-* These are our outbound IPs. These need to be whitelisted for the reports callback to flow into your system.
-    * 13.71.52.164
-    * 13.71.49.46
-* The messages will be acknowledged first and delivered at the scheduled time. Can be tracked by the msgId we send back.
 
-## Examples
-### Normal Text  Notification
+## 3. Reports
+
+You can view data regarding the campaigns you execute through the **Insights** module.
+
+1.  Within **Insights**, select the **Data Explorer** tab on the left.
+2.  In the **Data Explorer** section, select **Notification Reports** under **Default Datasets.**
+3.  To begin experimenting with **Campaign Reports**, you can select **Filters**, and use filters such as **BOTID**, **CAMPAIGNID**, and **TEMPLATEID** individually, or in different combinations to pull data.
+4.  Once you have generated a data set that you find useful, click on **Summarise**. With this, you can group and summarise this data set in different ways.
+
+
+For complete details on how to use Notification API for each channel, see the following.
+
+1. [WhatsApp](https://documenter.getpostman.com/view/9982063/UzBvGPGB#5961e189-e9cb-40ad-8ba6-7bada77acc06)
+2. [SMS](https://documenter.getpostman.com/view/9982063/UzBvGPGB#c5013846-87a9-4062-9c1a-055eb7806f38)
+3. [Email](https://documenter.getpostman.com/view/9982063/UzBvGPGB#5fea5e39-8168-4c9e-977c-fc667dfba0e2)
+4. [Bulk messaging API](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8)
+
+> **Note**: Whem you raise any support ticket, include `msgId` or `traceId` in the request.
+
+## 4. Examples
+### 4.1 Normal Text  Notification
 #### CURL request
 
 ```json
@@ -195,7 +212,7 @@ curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/
 <img src="https://i.imgur.com/YwkQ7Xr.png" alt="drawing" width="70%"/>
 
 
-### Image Notification
+### 4.2 Image Notification
 #### CURL request
 ```json
 curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=BOT_ID_HERE' \
@@ -223,7 +240,7 @@ curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/
 }'
 ```
 
-### File Notification
+### 4.3 File Notification
 #### CURL request
 ```json
 curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=BOT_ID_HERE' \
@@ -254,5 +271,3 @@ curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/
 #### Sample
 ![](https://i.imgur.com/YLbGCo7.png)
 
-## Support
-While raising any support issues, please add the msgId or the traceId in the support request.
