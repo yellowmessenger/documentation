@@ -180,9 +180,9 @@ It is considered as a good practice to build smaller flows and direct the users 
 
 There are two methods to trigger a flow: 
 
-1. Using the [Trigger Journey node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#trigger-journey). For example, in the below flowchart, PlaceOrder flow has been triggered.
+1. Using the [Execute Flow node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#execute-flow). For example, in the below flowchart, PlaceOrder flow has been triggered.
 
-![](https://i.imgur.com/eK9A2xw.png)
+![](https://i.imgur.com/se58HZm.png)
 
 2. Another way to trigger a flow is based on the intent.
 
