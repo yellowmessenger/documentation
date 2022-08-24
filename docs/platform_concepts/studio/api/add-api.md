@@ -1,6 +1,6 @@
 ---
 title: Adding API - Importing CURL
-sidebar_label : Adding/Importing an API
+sidebar_label : Adding APIs
 ---
 ## 1. How to add a new API?
 
@@ -16,12 +16,12 @@ In a nutshell, this API requires City name as well API key in order to run.
 
 2. Once API is added, go to `PARAMS` and update it by clicking on 3 dots button. 
 
-Change `q` to {{{cityName}}}, this will fetch city name from cityName variable. In the bot flow, user response can be stored in the cityName variable which can be used here.
+For the key- `q`, add a value- {{{cityName}}}. This will fetch city name from cityName variable. In the bot flow, user response can be stored in the cityName variable which can be used here.
 Also update `appid` which API key you retrieved from [OpenWeather API](https://openweathermap.org) 
 
 ![Update Parameters](https://i.imgur.com/jbCB6X7.png)
 
-3. Once added, you can test the API by hitting `Send` button. Since `cityName` variable is empty right now, you'll be asked for a city name. Provide the city name and hit `OK`. If the API is correctly added and the endpoint works, you should be able to see a sample response as below. 
+3. Once added, you can test the API by hitting `Send` button. Since `cityName` variable is empty right now, you'll be asked for a city name. Provide the city name and hit `SEND`. If the API is correctly added and the endpoint works, you should be able to see a sample response as below. 
 
 ![API Response](https://i.imgur.com/cU30hAy.png)
 
