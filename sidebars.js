@@ -119,9 +119,10 @@ module.exports = {
               collapsed: true,
               items: [
                 //"platform_concepts/studio/cloud-function",
+                
                 "platform_concepts/studio/build/nodes/nodes",
-                "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/prompt-nodes",
+                "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/action-nodes",
                 "platform_concepts/studio/build/nodes/logic-nodes",
               ],

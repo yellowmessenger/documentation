@@ -55,7 +55,7 @@ To filter the conversations:
 2. Navigate to the filter that you want to apply and select the required option(s). Refer to the following table to know how to use each filter.
 3. Click Apply filter.
 
-![](https://i.imgur.com/dy2tnZs.png)
+![](https://i.imgur.com/ISn2Loy.png)
 
 
 | Filter | Description |
@@ -76,8 +76,10 @@ Over time, there could be a range of conversations logging in the system - from 
 
 To label a conversation -
 
-1. Open the conversation for which you want to add Label
-2. Click on the Label box to see the list of available labels. Either select your preferred label from the existing list or type a new name in the box and press Enter.
+1. Open the conversation for which you want to add Label.
+2. Click on the Label box to see the list of available labels. Either select your preferred label from the existing list or type a new name in the box and press **Enter**.
+
+![](https://i.imgur.com/Y7HVeEX.png)
 
 
 ### 1.3 Flag conversations
@@ -86,15 +88,15 @@ You can flag conversations that you want to revisit later. To see only your flag
 
 To flag a conversation - 
 
-1. On the Studio page, click More > Conv. logs.
+1. On the Studio page, click **More** > Conv. logs.
 2. Navigate to the desired conversation and click on it. You will see the conversation details widget.
 3. Click on the flag icon to turn red.
 4. Close the widget once done.
 
 
-:::info
-:information_source: You can unflag a conversation by clicking on the flag again.
-:::
+> You can unflag a conversation by clicking on the flag again.
+
+![](https://i.imgur.com/JZPQJMn.png)
 
 
 ### 1.4 Troubleshoot bot flow

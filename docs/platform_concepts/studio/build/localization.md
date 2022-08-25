@@ -3,7 +3,6 @@ title: Localization
 sidebar_label: Localization
 ---
 
-# Localization 
 
 Localization is used to provide multilingual support by manual translation for the bots when the user decides to switch the bot-language. 
 

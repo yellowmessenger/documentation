@@ -3,7 +3,6 @@ title: Prompt Nodes
 sidebar_label: Prompts
 ---
 
-# Nodes- Prompts
 
 
 Prompts are Interactive/conversational nodes which expect  user input.
@@ -536,3 +535,24 @@ For example, instead of setting a new user ID, you can use the phone number as a
 * Text entered at these nodes will be displayed as "sensitive information" on the chat log. 
 
 ![](https://i.imgur.com/qW4MoKt.png)
+
+
+> Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
+
+--- 
+## **CSS Changes**
+
+To beautify the text you enter in the field -**bot says** you can add the following. 
+
+```
+1. Web (use HTML tags)
+
+  - Bold: <strong> baggage </strong> 
+  - Italics: <i> italics </i> 
+  - Hyperlink: <a href="google.com"> Google </a> 
+
+2. Whatsapp 
+
+  - Bold: Message *- 
+  - Italics: _ Mesage _ 
+```
