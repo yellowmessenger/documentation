@@ -11,6 +11,14 @@ sidebar_label: July Updates
 
 UI is redesigned to have a brand new IA helping in intuitive navigation through studio.
 
+**Sample screenshots**- 
+
+Studio: 
+![](https://i.imgur.com/02x4CVF.png)
+
+Train: 
+![](https://i.imgur.com/hgkY4sq.png)
+
 
 ### Autocomplete  
 
