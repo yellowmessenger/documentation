@@ -1,6 +1,6 @@
 ---
 title: Sending data to an API
-sidebar_label : Sending data to an API
+sidebar_label : Sending dynamic data
 ---
 
 ## 1. How to Send Data to an API? 

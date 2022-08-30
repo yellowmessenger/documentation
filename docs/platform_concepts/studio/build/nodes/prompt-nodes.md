@@ -3,7 +3,6 @@ title: Prompt Nodes
 sidebar_label: Prompts
 ---
 
-# Nodes- Prompts
 
 
 Prompts are Interactive/conversational nodes which expect  user input.
@@ -336,6 +335,15 @@ To do this, we have a **Fetch from** option in quick reply prompt. Here, instead
 
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intented variable. For example, you can apply for loop around options to dynamically add to them while parsing through some API response etc.
 
+#### Quick reply node for WhatsApp
+
+Quick replies node can switch between buttons and numbered list.WhatsApp buttons can have upto maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
+
+![](https://i.imgur.com/Kc9r8xe.png)
+
+> Real time example: 
+> ![](https://i.imgur.com/7pp1yaf.jpg)
+
 #### Workaround for WhatsApp
 
 Quick Replies are currently not supported on WhatsApp. That is, buttons wont be visible on the WhatsApp chat. 
@@ -527,3 +535,24 @@ For example, instead of setting a new user ID, you can use the phone number as a
 * Text entered at these nodes will be displayed as "sensitive information" on the chat log. 
 
 ![](https://i.imgur.com/qW4MoKt.png)
+
+
+> Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
+
+--- 
+## **CSS Changes**
+
+To beautify the text you enter in the field -**bot says** you can add the following. 
+
+```
+1. Web (use HTML tags)
+
+  - Bold: <strong> baggage </strong> 
+  - Italics: <i> italics </i> 
+  - Hyperlink: <a href="google.com"> Google </a> 
+
+2. Whatsapp 
+
+  - Bold: Message *- 
+  - Italics: _ Mesage _ 
+```

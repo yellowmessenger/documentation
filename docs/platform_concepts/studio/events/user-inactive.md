@@ -59,7 +59,7 @@ There are three different ways to set up the bot response when a user is inactiv
 4. Activate for specific steps in a specific flow
 If we're observing consistent dropoff at a specfic step, you can set up a unique event exclusively for that step.
 
-Eg: I want to handle a handle inactivity for email in a flow called moreinfo
+Eg: I want to handle a handle inactivity for email in a flow called 'moreinfo'.
 
 ![](https://i.imgur.com/leWMbX3.png)
 This will trigger the event exclusively for the email step and won't be applicable globally.

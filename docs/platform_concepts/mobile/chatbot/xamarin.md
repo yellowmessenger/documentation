@@ -1,6 +1,6 @@
 ---
 title: Chatbot SDK for xamarin
-sidebar_label: Xamarin 
+sidebar_label: Xamarin
 ---
 
 # Migration Guide for Android
@@ -183,6 +183,14 @@ Speech to text can be enabled and disabled by calling setEnableSpeech(). Default
 
 ```c#
 ymChatInterface.setEnableSpeech(true);
+```
+
+### Hide Input Bar
+
+You can hide the input bar while bot is loading by calling the `setDisableActionsOnLoad` API . Default value is `false`
+
+```c#
+ymChatInterface.setDisableActionsOnLoad(true);
 ```
 
 ### Colors

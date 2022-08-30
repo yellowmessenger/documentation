@@ -1,6 +1,6 @@
 ---
 title: Send bearer token from one API result to another APIs header
-sidebar_label : Bearer Token 
+sidebar_label : Setting up a Bearer Token 
 ---
 
 ## 1.  Without using Code function

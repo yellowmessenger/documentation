@@ -19,8 +19,8 @@ This document discusses the following topics:
 1. How to configure multilingual messages
     * Using Bulk Manage
     * Using Code
-3. How to configure nodes to provide multilingual support 
-
+2. How to configure nodes to provide multilingual support 
+3. Advance options in localization 
 
 ## 1. Localization 
 
@@ -32,13 +32,13 @@ Follow the given steps:
 
 ![](https://i.imgur.com/WTzQQDm.png)
 
-3. Enter **Key**, which will be used as a keyword for switching the language. 
+3. Enter **Key**, which will be used as a keyword which will switch the language. 
 4. **Description** is optional. 
 5. Add the translated lines in the required languages.
  
 ![](https://i.imgur.com/1VMLDCm.png)
 
-6. Scroll down, click **Update**. Manual configuration is done. 
+6. Scroll down, click **Update**. Manual configuration is completed. 
 
 ![](https://i.imgur.com/nXctsoC.jpg)
 
@@ -46,8 +46,8 @@ Follow the given steps:
 
 ### 1.1 Bulk Manage 
 
-In the previous step we manually added the keys one by one. Manual translations would take an immense amount of effort to add translations for each node.
-Using Bulk Manage, we can upload all the keys at a time.
+In the previous section, keys were added manually one by one. Manual translations takes an immense amount of effort to add translations for each node.
+Using Bulk Manage, you can upload all the keys at a time.
 
 Follow the steps below: 
 
@@ -69,7 +69,7 @@ Follow the steps below:
 Localization can also be configured via code (from the [code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) tab).
 Use the following code in your function to get text message from code **app.renderMessage('code-goes-here', {}, 'default message')**
 
-* Click +Add Code. Add the above line in code along with the default message in the required language.
+* Click **+Add Code**. Add the above line in code along with the default message in the required language.
 
 ![](https://i.imgur.com/ccojeyK.jpg)
 
@@ -83,11 +83,11 @@ Follow the steps below:
 
 ![](https://i.imgur.com/Bzlt66X.png)
 
-2. Select the Key configured for that text translation (or, add new translations as you create each node). 
+2. Select the **Key** configured for that text translation (or, add new translations as you create each node). 
 
 ![](https://i.imgur.com/wmSwZYu.png)
 
-### Example
+### 2.1 Example
 
 > Bot is configured to switch the languages automatically using ISO codes (en- English, hi- Hindi). 
 > Text node is set to 'Welcome' localization key. Irrespective of what the text gets translated to, the bot displayes the phrases that are configured manually. 
@@ -95,3 +95,51 @@ Follow the steps below:
 
 
 ![](https://i.imgur.com/jBv9ih6.png)
+
+
+## 3. Advance options 
+
+### 3.1 Variable in localisation message
+
+With this feature, variables can be a part of the localization messages with the help of 'Fetch from' field available in the nodes. 
+
+Consider a use-case **without** **localization**: Variables are accessed directly on the **Boy says** field using {{{variables.name}}}.
+
+![](https://i.imgur.com/yLteeOz.png)
+
+**With localization**, this node can be configured by following the given steps:
+
+1. Select the localisation key on the node. 
+2. Select the variable in the **Fetch from** field which must be displayed with the localization text. 
+
+![](https://i.imgur.com/IjmOSrM.png)
+
+
+> Only variables of the datatype string can be used in the localization text. To learn about the variable datatypes stored in each node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/).
+
+3. Add params in the message (Studio > Build > Localisation). 
+Example- {{{variable.<var_name>}}}.
+
+![](https://i.imgur.com/oNNxxCL.png)
+
+
+
+> Variable values will not change. Suppose a name is entered in English, it will not get translated to any other language through-out the flow.
+
+4. This can also be accessed through code. 
+
+- **+Add new function** in code. 
+- Enter the required code. 
+
+![](https://i.imgur.com/hEtlR0u.jpg)
+
+- In the flow, add a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#function) action node. 
+
+![](https://i.imgur.com/D6fiGHo.png)
+
+- Select a function name from the dropdown. **Store response in** a variable. 
+- In the further node, select the variable name at **Fetch from** (for which the variable> function is configured via code). 
+
+![](https://i.imgur.com/LQUae5f.png)
+
+

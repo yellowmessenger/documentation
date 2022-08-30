@@ -4,24 +4,34 @@ sidebar_label: Messages
 ---
 
 Message nodes are one-way communication nodes which can be used when the bot has to display information to the user without expecting or taking any response.
+You can randomize the node text and add a delay to each of the node. 
+
+---
+
+**Randomization**
 
 
-> The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple text for randomizing**. Enter variations of text that you want your users to see. This feature will display different message to the user in a random order (instead of the same message every time) making the conversation more humanly. 
+The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple text for randomizing**. Enter variations of text that you want your users to see. This feature will display different message to the user in a random order (instead of the same message every time) making the conversation more humanly. 
 >  
 > ![](https://i.imgur.com/k4kQYfg.png)
 
-Given below is a flow created using message nodes to brief the users about their company.
 
-![](https://i.imgur.com/B9apLcz.jpg)
-
+**Delay**
 
 You can set a delay in displaying each of these nodes. 
 
 
 ![](https://i.imgur.com/0eoZrke.png)
 
+---
 
-## Text
+Given below is a flow created using message nodes to brief the users about their company.
+
+![](https://i.imgur.com/B9apLcz.jpg)
+
+
+
+## 1. Text
 
 Display a simple text with this node.  
 
@@ -29,7 +39,7 @@ Display a simple text with this node.
 ![](https://i.imgur.com/KwvAAwd.jpg)
 
 
-## Image 
+## 2. Image 
 
 Display any image (less than 10MB) with this node.
 
@@ -37,7 +47,7 @@ Display any image (less than 10MB) with this node.
 ![](https://i.imgur.com/NuHZKEb.jpg)
 
 
-## Carousel 
+## 3. Carousel 
 
 Display information using a carousel card with this node.
 
@@ -45,7 +55,7 @@ Display information using a carousel card with this node.
 ![](https://i.imgur.com/2iS11MA.png)
 
 
-## Video 
+## 4. Video 
 
 Display any MP4 video file with this node.
 * Click the tools(channel option) symbol available below the node name.  
@@ -54,11 +64,11 @@ Display any MP4 video file with this node.
 ![](https://i.imgur.com/zAjKAVU.png)
 
 
-## File 
+## 5. File 
 
 Display a file of the most common extension (JPG, JPEG, MP3, MP4, CSV, PDF, Doc, Docx, Txt, HTML, PPT, PPTX, etc.) with this node. 
 
-## Quick Replies
+## 6. Quick Replies
 
 Display a question along with quick reply buttons with this node.
 Unlike the Quick Replies Prompt node, fallback message need not be configured to this nor this node is expected to follow another node.
@@ -82,7 +92,7 @@ Variable format:
   ]
 ```
 
-## WhatsApp List
+## 7. WhatsApp List
 
 
 
@@ -107,3 +117,25 @@ To create a Whatsapp List:
 * Character limit of Button Text and Response is 24.
 * Section Title and List Headers are optional.
 
+
+
+> Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
+
+---
+
+## **CSS Changes**
+
+To beautify the text you enter in the field -**bot says** you can add the following. 
+
+```
+1. Web (use HTML tags)
+
+  - Bold: <strong> baggage </strong> 
+  - Italics: <i> italics </i> 
+  - Hyperlink: <a href="google.com"> Google </a> 
+
+2. Whatsapp 
+
+  - Bold: Message *- 
+  - Italics: _ Mesage _ 
+```

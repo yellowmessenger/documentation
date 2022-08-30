@@ -1,14 +1,17 @@
 ---
-title: Getting Started With Flows/ Journey
-sidebar_label: Journeys
+title: Getting Started With Flows
+sidebar_label: Flow
 ---
+
+> The words **Flows** and **Journeys** are used synonymously. 
+
 
 In this document, we discuss: 
 
 1. Home 
-2. Flow 
-3. Workflow
-4. How to create a flow?
+2. Workflow 
+3. Flow
+     * How to create a flow?
 5. How to trigger a flow?
      * Types of start trigger 
 
@@ -16,36 +19,13 @@ In this document, we discuss:
 
 ## 1. Home
 
-This is a general (**Home**) flow that the bot follows irrespective of the training given to it. First, there is always a welcome message displayed to the user, then, bot responds to the queries it understands and does not understand. 
+This is a general (**Home**) flow that the bot follows irrespective of the training given to it. First, there is always a welcome message [configured](https://docs.yellow.ai/docs/platform_concepts/getting-started/#21-configure-the-welcome-message) and displayed to the user, then, bot responds to the queries it understands and does not understand. 
 Such a flow is configured on the Home -flow. It is further customized as per the usecase.
 
 
 ![](https://i.imgur.com/yGwYdRl.png)
 
-
-## 2. Flow 
-
-** Flow is the logical design of your conversational flow, which will be the actual path that the end users will go through.**
-    - User: “Show me the menu”
-    - Bot: “Please select your Cuisine: South Indian, North Indian”
-    - User: “South Indian”
-    - Bot: “Please select the Item: Dosa, Pongal . . .”
-
-> The words **Flows** and **Journeys** are used synonymously. 
-
-Once you have the scope of your bot ready, depending on the purpose user has for chatting with your bot, the bot must be built to respond accordingly. This is done by dividing the scope into multiple flows. 
-
-![](https://i.imgur.com/1SsOIAA.jpg)
-
-Suppose the bot is used as an office portal to apply for leaves or check salary, bot must converse with the user and fetch the information from all the steps(Nodes) to do just that. 
-
-![](https://i.imgur.com/ckLhNXJ.png)
-
-:::info
-Flows can be further categoriesed using Categories.
-:::
-
-## 3. Workflow 
+## 2. Workflow 
 
 Workflows are background processes that run along with the conversational flow. Workflow option can be selected while creating a flow. 
 
@@ -59,11 +39,29 @@ Workflow is the same as any other flow page, it will have a start node. Nodes co
 
 
 
+## 3. Flow 
+
+** Flow is the logical design of your conversational flow, which will be the actual path that the end users will go through.**
+    - User: “Show me the menu”
+    - Bot: “Please select your Cuisine: South Indian, North Indian”
+    - User: “South Indian”
+    - Bot: “Please select the Item: Dosa, Pongal . . .”
+
+
+Once you have the scope of your bot ready, depending on the purpose user has for chatting with your bot, the bot must be built to respond accordingly. This is done by dividing the scope into multiple flows. 
+
+![](https://i.imgur.com/1SsOIAA.jpg)
+
+Suppose the bot is used as an office portal to apply for leaves or check salary, bot must converse with the user and fetch the information from all the steps(Nodes) to do just that. 
+
+![](https://i.imgur.com/ckLhNXJ.png)
+
+> Flows can be further categoriesed using Categories.
+
 
    
 
-
-## 4. Create a Flow 
+### 3.1 Create a Flow 
 
 
 
@@ -72,11 +70,11 @@ You must create a flow before you create a start trigger for the flow. You can c
 Follow the steps below to create a flow:
 
 1. Log in to your studio account. On the Overview page, select your bot.
-2. Select Overview > Studio.
+2. Select **Overview** > **Studio**.
 
 ![](https://i.imgur.com/jGuxkYh.png)
 
-3. Select Flows > Create flow.
+3. Select **Flows** > Create flow.
 
 ![](https://i.imgur.com/JlpH4nD.jpg)
 
@@ -110,7 +108,7 @@ example, this flows lead customers to flight booking workflow.
 
 7. Click Save.
 
-## 5. Configure Start trigger 
+## 4. Configure Start trigger 
 
 
 Follow the steps below to configure a start trigger:
@@ -159,7 +157,7 @@ Flow is triggered using one of the following:
 ![](https://i.imgur.com/wt8EyFh.png)
 
 
-* **Execute Flow**: Apart from start trigger, users can also set up when to trigger another journey manually from or inside a journey using Execute Flow action node.
+* **Execute Flow**: Apart from start trigger, users can also set up when to trigger another flow manually from or inside a flow using Execute Flow action node.
 You can add an action node- **Execute Flow** and select the flow you want to execute next. 
 
 For example, track your application, know your ID and view FAQ's are three user responses linked to different flows (which are configured as separate flows). When one of the response is sent, respective flows are executed. 
@@ -176,19 +174,28 @@ For example, track your application, know your ID and view FAQ's are three user 
 ---
 
 
-## 6. Trigger journeys from bot flow
+## 5. Trigger the flow
 
 When you are configuring a bot, there could be several complex flows in the bot. You need to always ensure whether the outcome of a flow is as desired before moving on to the next flow and it’s tedious to run the entire bot everytime you make some change in a flow.
 
 You just need to add a parameter to the URL or widget code to preview changes made in a particular flow of your bot. You no longer have to run through the entire bot flow everytime you make some changes to a flow.
 
-### 6.1 Preview a specific bot flow via. URL
-1. Open the bot and navigate to Studio > Flows.
+To preview a specific bot flow there are two methods, discussed in the further sections: 
+
+1. Via URL
+2. Via Code
+
+### 5.1 URL
+
+Follow the given steps to preview a bot via URL: 
+
+1. Open the bot and navigate to **Studio** > **Flows**.
 2. Click the Flows drop-down and select the flow that you want to preview
 3. Copy the path of the flow that you see in the URL (after `flow/`)
+
    ![](https://i.imgur.com/eXcmAlN.png)
 
-4. Click on Preview bot. You will see the entire bot journey in a new tab.
+4. Click Preview bot. You will see the entire bot flow in a new tab.
 5. In the address bar, append `?ym.triggerJourney={flow path}`.
 
     Example: 
@@ -200,10 +207,6 @@ You just need to add a parameter to the URL or widget code to preview changes ma
 
 
 
-
-
-
-
 Ensure that you clear the browser cache before you preview the bot. It is recommended to use Incognito mode or Private window to preview flows.
 
 
@@ -211,11 +214,12 @@ Ensure that you clear the browser cache before you preview the bot. It is recomm
 > * Use `?` to append right after the base URL of the bot. Example: https://cloud.yellow.ai/liveBot/x1635319612954?ym.triggerJourney=feedback
 > * Use & if you want to append it after a variable. Example: https://cloud.yellow.ai/liveBot/x1635319612954?region=&ym.triggerJourney=feedback
 
-### 6.2 Preview a specific bot flow via. code
-You can also preview a specific flow of a bot via code that you embed on your website.
+### 5.2 Code
+
+Follow the steps below to preview a bot via code (embedded on your website).
 
 1. Get the path of the flow as explained in the previous section.
-2. In `window.ymConfig`, pass the parameter `triggerJourney` and specify the path of the journey you copied.
+2. In `window.ymConfig`, pass the parameter `triggerJourney` and specify the path of the flow you copied.
 
 ```
 <script type = "text/javascript" >
@@ -250,10 +254,11 @@ You can also preview a specific flow of a bot via code that you embed on your we
  
 3. Paste the code in the Header or body of your website as per your need to preview the flow.
 
+--- 
 
 
 **What Next?**
 
 Series of **nodes** are used to create a flow. There are multiple nodes available on our platform.
 * Learn about different **nodes** [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/) and create a complete flow.
-* Test the flow.
+* [Test](http://localhost:3000/docs/platform_concepts/studio/tools#21-test-your-bot) the flow.

@@ -119,9 +119,10 @@ module.exports = {
               collapsed: true,
               items: [
                 //"platform_concepts/studio/cloud-function",
+                
                 "platform_concepts/studio/build/nodes/nodes",
-                "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/prompt-nodes",
+                "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/action-nodes",
                 "platform_concepts/studio/build/nodes/logic-nodes",
               ],
@@ -414,6 +415,7 @@ module.exports = {
               collapsed: true,
               items: [
                 "platform_concepts/engagement/outbound/templates/overview",
+                "platform_concepts/engagement/outbound/templates/whatsapptemplate",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
               ],
@@ -486,6 +488,7 @@ module.exports = {
       label: "Channel Configuration",
       collapsed: true,
       items: [
+        "platform_concepts/channelConfiguration/overview",
         "platform_concepts/channelConfiguration/alexa",
         "platform_concepts/channelConfiguration/email-outbound",
         "platform_concepts/channelConfiguration/facebook-messenger",
@@ -496,7 +499,8 @@ module.exports = {
         "platform_concepts/channelConfiguration/googleChat",
         "platform_concepts/channelConfiguration/instagram",
         "platform_concepts/channelConfiguration/ivr-bots",
-        "platform_concepts/channelConfiguration/slack",
+        //"platform_concepts/channelConfiguration/slack",
+        "platform_concepts/channelConfiguration/slack2",
         "platform_concepts/channelConfiguration/sms-outbound-india",
         "platform_concepts/channelConfiguration/teams",
         "platform_concepts/channelConfiguration/telegram",
@@ -510,14 +514,17 @@ module.exports = {
       label: "Integrations",
       collapsed: true,
       items: [
+        "platform_concepts/appConfiguration/overview",
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/camspay",
+        "platform_concepts/appConfiguration/clevertap",
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/genesys-cloud-livechat",
         "platform_concepts/appConfiguration/google-calendar",
         "platform_concepts/appConfiguration/google-sheets",
         "platform_concepts/appConfiguration/hubspot-crm",
         "platform_concepts/appConfiguration/intercom-livechat",
+        "platform_concepts/appConfiguration/jira",
         "platform_concepts/appConfiguration/leadSquared-wa-connector",
         "platform_concepts/appConfiguration/microsoft-dynamics",
         "platform_concepts/appConfiguration/microsoft-graph",
@@ -536,7 +543,6 @@ module.exports = {
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
-        "platform_concepts/appConfiguration/jira",
       ],
     },
     {
@@ -561,10 +567,20 @@ module.exports = {
     "updates/overview",
     {
       type: "category",
-      label: "Studio",
+      label: "2022",
       collapsed: true,
       items: [
-       
+        "updates/2022/july",
+        "updates/2022/aug",
+
+       //"updates/studio/build",
+       //"updates/studio/trainandtest",
+       // "updates/studio/analyse",
+       // "updates/studio/api",
+       // "updates/studio/table",
+      // "updates/studio/events",
+       // "updates/studio/tools",
+       // "updates/studio/language",
       ],
     },
     {

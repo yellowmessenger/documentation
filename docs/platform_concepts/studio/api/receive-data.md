@@ -1,6 +1,6 @@
 ---
 title: Receive Data from API and Parse Response
-sidebar_label : Receiving data from an API
+sidebar_label : Fetching data from an API
 ---
 
 ## 1. Access data from an API/Response
@@ -81,7 +81,7 @@ for(let i=0;i< postOffice.length; i++)
         postofficeName.push(postOffice[i].Name) // fetch PostOffice Name and store in postOfficeName array
     }
 
-return resolve(postofficeName);s
+return resolve(postofficeName);
 ```
 
 5. In the API node, select transformation function that was created from the **Parse API response** dropdown.
