@@ -291,12 +291,12 @@ Then we store the whole response we will get from that API in a variable.
 > Learn how to directly use this variable, if JSON response in your nodes to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
 --->
 
-#### Transformation function (optional field)
+#### Function (optional field)
 
  Sometimes, an API response can be too big, or not in a proper format for us to be able to parse from easily. (A function is not needed just to access a simple field of a JSON API response). 
-In those cases, we can write a function to parse and transform API response according to our needs and return desirable response. 
+In those cases, we can write a [function](http://localhost:3000/docs/platform_concepts/studio/build/code#3-functions-in-flow) to parse and transform API response according to our needs and return desirable response. 
 
-#### Snippet for Transformation function
+#### Snippet for function
 ```
 return new Promise
   (resolve => {

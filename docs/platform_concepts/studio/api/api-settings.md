@@ -75,4 +75,3 @@ The timestamp(log) consists API details such as BotID, API name, etc. It is used
     
 ```
 
-
