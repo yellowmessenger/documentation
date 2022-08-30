@@ -1,6 +1,6 @@
 ---
-sidebar_label : Message Notifications
-title : Message Notifications
+sidebar_label : Notification API
+title : Notification API
 ---
 
 ## 1. Introduction
@@ -8,6 +8,10 @@ title : Message Notifications
 Yellow.ai's Notification API lets you send business-initiated messages from the various supported channels directly from your CRM or internal Systems.
 
 The API supports different channels (SMS, email, and WhatsApp) and makes it more easy for developers to integrate it anywhere in less time.
+
+**To jump to Notification API collections for each channel**, see
+
+[![](https://i.imgur.com/adPhuBf.png)](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8).
 
 ### 1.1 Features of the Notification API
 
@@ -22,11 +26,9 @@ Additionally, our outbound IPs given below must be whitelisted for the reports c
 
 *   13.71.52.164
 *   13.71.49.46
-    
 
-## 2. Notification API
 
-### 2.1 Enable API Access
+### 1.3 Enable API Access
 
 In order to use the Notification API you have to enable it on the platform as explained here
 
@@ -37,7 +39,10 @@ In order to use the Notification API you have to enable it on the platform as ex
 
 > **Note**: If Engage is not enabled, you will get a `400` error (API access is not enabled).
 
-### 2.2 Request Information
+## 2. Notification API Details
+
+
+### 2.1 Request Information
 
 **Base URL**
 
@@ -127,7 +132,7 @@ This contains the list of available pre-configuration that will be validated bef
 
 ```
 
-### 2.3 Sample Webhook Payload
+### 2.2 Sample Webhook Payload
 
 As soon as we receive a callback from the downstream services, we will post that data to the configured Webhook if available. Webhooks will be called with the request body.
 
@@ -149,7 +154,7 @@ As soon as we receive a callback from the downstream services, we will post that
 
 ```
 
-### 2.4 Response status codes
+### 2.3 Response status codes
 
 On successful queueing of the notification, you will receive a 202 status code with the relevant `msgId`. This confirms that the message details has been received by us and will be queued for sending on the relevant channel. The downstream service will pick the queue and will start sending it and updating the delivery status on the webhook and on the reports under Data Explorer on the platform.
 
@@ -162,9 +167,22 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 429 | Rate limited. Occurs when there are too many requests sent to the API within a short time. Once a rate limit error is captured the rate of the API call should be decreased to honour the limits.  *Default Rate Limit is 2000 requests/min per Bot.* |
 | 500 | Internal server error. TraceId will be sent back for tracking. |
 
+### 2.4 Postman Collections
 
+To access the entire Postman documentation and run collections, click the following button.
 
-## 3. Reports
+[![](https://i.imgur.com/adPhuBf.png)](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8)
+
+For API details of a specific channel, click the respetive channel.
+
+1. [WhatsApp](https://documenter.getpostman.com/view/9982063/UzBvGPGB#5961e189-e9cb-40ad-8ba6-7bada77acc06)
+2. [SMS](https://documenter.getpostman.com/view/9982063/UzBvGPGB#c5013846-87a9-4062-9c1a-055eb7806f38)
+3. [Email](https://documenter.getpostman.com/view/9982063/UzBvGPGB#5fea5e39-8168-4c9e-977c-fc667dfba0e2)
+4. [Bulk messaging API](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8)
+
+> **Note**: Whem you raise any support ticket, include `msgId` or `traceId` in the request.
+
+## 4. Reports
 
 You can view data regarding the campaigns you execute through the **Insights** module.
 
@@ -174,14 +192,7 @@ You can view data regarding the campaigns you execute through the **Insights** m
 4.  Once you have generated a data set that you find useful, click on **Summarise**. With this, you can group and summarise this data set in different ways.
 
 
-For complete details on how to use Notification API for each channel, see the following.
 
-1. [WhatsApp](https://documenter.getpostman.com/view/9982063/UzBvGPGB#5961e189-e9cb-40ad-8ba6-7bada77acc06)
-2. [SMS](https://documenter.getpostman.com/view/9982063/UzBvGPGB#c5013846-87a9-4062-9c1a-055eb7806f38)
-3. [Email](https://documenter.getpostman.com/view/9982063/UzBvGPGB#5fea5e39-8168-4c9e-977c-fc667dfba0e2)
-4. [Bulk messaging API](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8)
-
-> **Note**: Whem you raise any support ticket, include `msgId` or `traceId` in the request.
 
 ## 4. Examples
 ### 4.1 Normal Text  Notification
