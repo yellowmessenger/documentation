@@ -99,6 +99,6 @@ The downloaded log will include the following columns:
 1. **BOT_ID** → Bot Id for which the CSV was uploaded.
 2. **REQUEST_PAYLOAD** → The user record for which an import was attempted but FAILED
 3. **ERROR_PAYLOAD** → The error details due to which above user import FAILED:
-    - `invalidDataType`: Properties for which the wrong data type was passed
+    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) was passed
     - `invalidProperty`: Properties that do not exist in the user table
 4. **LINE_NUMBER** → The row number of the user record for which import FAILED
