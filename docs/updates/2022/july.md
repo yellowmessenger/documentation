@@ -4,89 +4,120 @@ sidebar_label: July Updates
 ---
 
 
+## 1. Studio
 
-## 1. General 
+### Restructured Studio navigation as per the usage flow
 
-### Studio IA 
+  
 
-UI is redesigned to have a brand new IA helping in intuitive navigation through studio.
+All options in the Studio navigation are reordered according to the usage flow. This makes more convenient for you to navigate between the options sequentially when configuring a bot.
 
-**Sample screenshots**- 
+  
 
-Studio: 
+  
+
+New structure of the options in Studio's left navigation bar -
+
+  
+
 ![](https://i.imgur.com/02x4CVF.png)
 
-Train: 
+  
+
+Once you enter a particular screen (say Train), here is how the sub-options are rearranged-
+
+  
+
 ![](https://i.imgur.com/hgkY4sq.png)
 
+  
+  
 
-### Autocomplete  
+### Autocomplete suggestions for bot users
 
-Autocomplete feature can be configured for the bot to start predicting rest of the word or sentence as the user start typing a word/sentence. 
+  
 
-Scope of autocomplete:
+You can now make your bot users' life easy through our autocomplete suggestions. With this feature, the bot can predict the rest of the word when users types in the bot.
 
-1. **Prompt level**- Triggered inside a prompt (after you ask a question and wait). Configured for **Database Column**, **List entity**, and **User properties**.    
-2. **Global level** - Triggered outside of a Journey(to improve discoverability).
+  
 
-> Release: 01/08/2022   
-> Related links: [Node-Auto complete](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#auto-complete)
+Scope of the Autocomplete feature -
+
+  
+
+1.  **Prompt level**- This works inside a prompt (after you ask a question and wait). You can configure this for **Database Column**, **List entity**, and **User properties**.
+
+2.  **Global level** - This works outside of a Journey improving discoverability.
+
+> [Know more](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#auto-complete)
+
+  
+  
+  
+
+### Zero Shot Model to replace manual training of intents
+
+Now our system can automatically identify intents based on the intent naming. It works on Zero Shot Learning where you do not need to manually train each utterance. Just name intents properly to make it work best globally. For complete guidelines, see [Naming intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents/#4-best-practices).
+
+  
+  
+  
+
+## Make Localisation more effective in Nodes
+
+  
+
+We do have auto-translation support that can translate your text to your preferred language. However, there are several cases where your tranlation quality is compromised. With this release, you can get your text translated properly and add translated content for each node manually.
+
+> [Know more](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)
+
+  
+
+## Real-time Conversation Logs
+
+You can now monitor all the conversations real-time. The auto-tagging of problems identified in the conversation are also made real-time.
+
+  
+
+> [Know about Conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs)
+
+  
+  
+
+### Add API to Sync data to the database
+
+  
+
+The **Sync database** node is available in Workflow - actions. You can now insert, update or import databases to external sources using APIs. You can update database tables in a scheduled manner using APIs.
+
+* **Export file format**:  CSV
+
+  
+
+> [Know more](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#sync-database)
+
+  
+
+### Quick Reply buttons in WhatsApp
+
+Earlier, WhatsApp bots used to support only lists for Quick replies. With this release, Quick replies node can also have buttons. You can switch between buttons and numbered list according to your preference.
+
+It supports upto three buttons and each button can have up to 20 characters. If you try to add more than 3 buttons, it defaults to the numbered list.
+
+  
+  
+
+> [Know more](http://localhost:3000/docs/platform_concepts/studio/build/nodes/prompt-nodes#quick-reply-node-for-whatsapp)
+
+  
+
+## New languages support in Document Cognition
+
+  
+
+Document Cognition now supports five more European languages. You can input content in Czech, Romanian, Polish, Croatian, Slovakia) German, Spanish, and French.
+
+  
 
 
-## 2. Train-NLU 
-
-### Zero Shot Model  
-(Zero Shot learning)
-
-Zero shot learning is now available for cloud bots. 
-The bot training is solely based on intent naming, without training any utterances. This is used for identifying user’s intent / improving suggestions directly.
-
-
-> Release: 01/08/2022   
-> Related links: [Intent naming](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents/#4-best-practices) 
-
-
-## 3. Localisation 
-
-Multilingual bots with manual translations to user
-now have Localisation key coverage for all nodes.
-
-> Release: 01/08/2022   
-> Related links: [Localisation](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)
-
-## 4. Conversation Logs 
-
-Conversation logs & tagging will be updated- real time. 
-It can be used for looking at conversations, RCA purposes etc. On request, it is available for app.ym bots(filters).
-
-> Release: 01/08/2022   
-> Related links: [Chat logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs)
-
-## 5. Nodes
-
-### Sync Database
-
-“Sync Database” Node is available in Workflow-actions and is used to sync (Insert, Update or import) databases to external sources through APIs.Tables can be updated using APIs in a scheduled manner via workflows. 
-**Functions supported** - Update, Insert, Import
-**API Data supported** - CSV format
-
-> Release: 01/08/2022   
-> Related links: [Sync node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#sync-database)
-
-### Quick Reply 
-(WhatsApp Reply Buttons)
-
-Quick replies node can switch between buttons and numbered list.
-Previously, WhatsApp bots could use lists to select quick replies. Now, WhatsApp buttons can have upto maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
-
-
-> Release: 01/08/2022   
-> Related links: [Quick reply node](http://localhost:3000/docs/platform_concepts/studio/build/nodes/prompt-nodes#quick-reply-node-for-whatsapp)
-
-## 6. Doc Cog
-
-Doc cog is enabled in 5 European languages (Czech, Romanian, Polish, Croatian, Slovakia) German, Spanish, and French. 
-
-> Release: 01/08/2022   
-> Related links: [Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition)
-
+>  [Know about Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition)

@@ -567,7 +567,7 @@ module.exports = {
     "updates/overview",
     {
       type: "category",
-      label: "2022",
+      label: "2022 Updates",
       collapsed: true,
       items: [
         "updates/2022/july",
