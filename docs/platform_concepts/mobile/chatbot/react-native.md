@@ -1,6 +1,6 @@
 ---
 title: react-native Chatbot SDK
-sidebar_label: React Native 
+sidebar_label: React Native
 ---
 
 # Migration Guide for Android
@@ -173,6 +173,14 @@ Speech to text can be enabled and disabled by calling setEnableSpeech(). Default
 
 ```javascript
 YMChat.setEnableSpeech(true);
+```
+
+### Hide Input Bar
+
+You can hide the input bar while bot is loading by calling the `setDisableActionsOnLoad` API . Default value is `false`
+
+```javascript
+YmChat.setDisableActionsOnLoad(true);
 ```
 
 ### Colors

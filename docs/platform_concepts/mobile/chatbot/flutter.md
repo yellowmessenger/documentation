@@ -148,6 +148,14 @@ Speech to text can be enabled and disabled by calling setEnableSpeech(). Default
 YmChat.setEnableSpeech(true);
 ```
 
+### Hide Input Bar
+
+You can hide the input bar while bot is loading by calling the `setDisableActionsOnLoad` API . Default value is `false`
+
+```dart
+YmChat.setDisableActionsOnLoad(true);
+```
+
 ### Colors
 
 #### Status bar
