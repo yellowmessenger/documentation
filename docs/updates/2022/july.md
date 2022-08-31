@@ -4,18 +4,15 @@ sidebar_label: July Updates
 ---
 
 
-## 1. Studio
+## Studio
 
-### Restructured Studio navigation as per the usage flow
+### 1. Restructured Studio navigation as per the usage flow
 
   
 
 All options in the Studio navigation are reordered according to the usage flow. This makes more convenient for you to navigate between the options sequentially when configuring a bot.
 
   
-
-  
-
 New structure of the options in Studio's left navigation bar -
 
   
@@ -33,7 +30,7 @@ Once you enter a particular screen (say Train), here is how the sub-options are 
   
   
 
-### Autocomplete suggestions for bot users
+### 2. Autocomplete suggestions for bot users
 
   
 
@@ -55,7 +52,7 @@ Scope of the Autocomplete feature -
   
   
 
-### Zero Shot Model to replace manual training of intents
+### 3. Zero Shot Model to replace manual training of intents
 
 Now our system can automatically identify intents based on the intent naming. It works on Zero Shot Learning where you do not need to manually train each utterance. Just name intents properly to make it work best globally. For complete guidelines, see [Naming intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents/#4-best-practices).
 
@@ -63,7 +60,7 @@ Now our system can automatically identify intents based on the intent naming. It
   
   
 
-## Make Localisation more effective in Nodes
+### 4. Make Localisation more effective in Nodes
 
   
 
@@ -73,7 +70,7 @@ We do have auto-translation support that can translate your text to your preferr
 
   
 
-## Real-time Conversation Logs
+### 5. Real-time Conversation Logs
 
 You can now monitor all the conversations real-time. The auto-tagging of problems identified in the conversation are also made real-time.
 
@@ -84,7 +81,7 @@ You can now monitor all the conversations real-time. The auto-tagging of problem
   
   
 
-### Add API to Sync data to the database
+### 6. Add API to Sync data to the database
 
   
 
@@ -98,7 +95,7 @@ The **Sync database** node is available in Workflow - actions. You can now inser
 
   
 
-### Quick Reply buttons in WhatsApp
+### 7. Quick Reply buttons in WhatsApp
 
 Earlier, WhatsApp bots used to support only lists for Quick replies. With this release, Quick replies node can also have buttons. You can switch between buttons and numbered list according to your preference.
 
@@ -111,7 +108,7 @@ It supports upto three buttons and each button can have up to 20 characters. If 
 
   
 
-## New languages support in Document Cognition
+### 8. New languages support in Document Cognition
 
   
 
