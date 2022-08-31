@@ -118,3 +118,61 @@ Document Cognition now supports five more European languages. You can input cont
 
 
 >  [Know about Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition)
+
+## Inbox 
+
+### 1. The search functionality of Chat is revamped 
+
+Agents can find information like details & messages from all their chat tickets easily.
+
+![](https://i.imgur.com/Kn0ajbu.png)
+
+
+### 2. Data Explorer Integration was added to Inbox
+
+Inbox data is exposed to Data explorer which allows businesses to build, and monitors custom reports & dashboards of choice.
+
+**![](https://lh6.googleusercontent.com/YHOhZs9sJtFTkeRp_Fmtu7gOTMMUB7HJiTHmhY2AUoQWB844DUZlEe7sBFRjZCQTy0r2LPofIxSWeThywXJiw4c-9NdJR7ekKUKY_gi7x6Gh25xz7hgrnvdqfnMMeid7jSd6vEIKd_bct4v16N2WVOdDNg)**
+
+### 3. The video calling option is enhanced
+
+Customers can set custom virtual backgrounds for their agents and also redirect end-users to their own websites after the video call -to provide a consistent support experience. 
+
+> [Know more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings)
+
+### 4. Email ticketing now works without any code
+
+No-code email ticketing is added to support the use case in cloud bots. 
+
+> Know [more](https://docs.yellow.ai/docs/platform_concepts/inbox/email-ticketing).
+
+
+
+
+#### 4.1 Detailed Agent performance reports can be downloaded for email tickets
+
+A detailed dump of all metrics related to agents resolving tickets, to better understand the efficiency & performance of the team. 
+
+> Know [more](https://docs.yellow.ai/docs/platform_concepts/inbox/reports/ticket-agent-performance-report). 
+
+
+#### 4.2 Analytics are displayed for Email ticketing 
+
+Agents & Admins can get a quick insight into the status of incoming tickets, and performance metrics like AHT, FRT etc., to make decisions to optimize them.
+
+![](https://i.imgur.com/e896xIT.png)
+
+
+#### 4.3 Email ticketing transcripts can be copied and downloaded
+
+Transcripts for each email ticket are used for legal, quality assurance or for auditing purposes. They can now be copied and downloaded. 
+
+**![](https://lh4.googleusercontent.com/8vaNdIlLcn4GwIRHGQ2UPXXZGevq6fwVi9G_WLjCvwzoREH1ZSHi_O14ut-p9OZi27dKwAqLSkGnDs0e-1pTV7leB5CfIFlSu6hv0RrmvBXPhNQGxajZ_Md-_aGdg7mf2kE1Qaf1Ghz6O0G5n8pMXSryfQ)**
+
+### 5. Email IDs can be categorised based on groups 
+
+You can now map email IDs to certain groups to categorize & respond back easily.
+
+**![](https://lh6.googleusercontent.com/e8UgQ44qFMHGmsk9nSZ6b1gZIbcgtsSrh9eeTBJ7pLhLkydsaKmmGwoG3QsT5io_MhemYrTodCTMXbic0G_RJZtSv5HNqpqYc2h3DW3xERMbbEXofQnBsVtYnKzpxyJtQHnSuSQ9ScUoHpxyjpTSbjj0EA)**
+
+
