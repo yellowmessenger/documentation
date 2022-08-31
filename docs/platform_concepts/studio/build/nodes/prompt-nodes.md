@@ -135,7 +135,7 @@ You can also send a "**Share location**" button to allow users to share their cu
 ### Store Comment
 
 Ask and store user messages and other comments with this node. 
-
+> Use this node only to store text comments from user - these replies will not trigger NLP.
 
 ![](https://i.imgur.com/ARH5lVv.png)
 
@@ -150,6 +150,13 @@ Ask a simple question with this node.
 
 ![](https://i.imgur.com/MU4Awmg.png)
 
+Click **Fetch from** to see the dynamic value, you can edit the value of the question by entering the code. 
+```
+{
+  "type": "text",
+  "value": "What is your query?"
+}
+```
 
 ### Carousel 
 
@@ -178,8 +185,8 @@ Similar to quick replies, Carousels can also be dynamically created using Fetch 
 ```
 [
   {
-    "title": "Shirts",
-    "description": "Do you really need a shirt?",
+    "title": "Item1",
+    "description": "Description",
     "actions": [
       {
         "title": "Button #1",
@@ -196,11 +203,17 @@ Similar to quick replies, Carousels can also be dynamically created using Fetch 
         "title": "Button #3",
         "buttonDefault": "url",
         "analytics": "analytics",
-        "url": "https://www.yellow.ai",
+        "url": "https://www.sample-site.com",
         "postback": "post-back"
+      },
+      {
+        "title": "Button #4",
+        "buttonDefault": "phoneNumber",
+        "analytics": "test-analytics",
+        "phoneNumber": "9876543210"
       }
     ],
-    "image": "https://cdn.yellowmessenger.com/oCYK22c0vdoI1654657000460.jpg",
+    "image": "https://cdn.abc.com/sample-img.jpeg",
     "text": "Description for item1"
   },
   {
@@ -216,7 +229,7 @@ Similar to quick replies, Carousels can also be dynamically created using Fetch 
     ],
     "image": "",
     "video": "",
-    "text": "This is button 2"
+    "text": ""
   }
 ]
 
@@ -315,19 +328,40 @@ To do this, we have a **Fetch from** option in quick reply prompt. Here, instead
 
 ```
 {
-  "title": "Select one of the option",
+  "title": [
+    "Select an option",
+    "Pick an option"
+  ],
   "options": [
     {
-      "title": "Docs",
-      "url": "https://docs.yellow.ai"
+      "text": "cold drink",
+      "title": "Cold Drink",
+      "advancedSettings": true,
+      "aliases": [
+        "coke",
+        "soft drink"
+      ],
+      "url": "https://www.tasty-food.com",
+      "postback": "post-back",
+      "image": "https://cdn.abc.com/coke-img.jpeg",
+      "textColor": "#4384f5",
+      "backgroundColor": "#FFFF",
+      "id": "quick_01d78e38b44e1915",
+      "analytics": {
+        "aevent": "test-analytics"
+      }
     },
     {
-      "title": "Community",
-      "url": "https://community.yellow.ai"
+      "text": "",
+      "title": "Btn #2",
+      "advancedSettings": false,
+      "id": "quick_d9eda393404266d4"
     },
     {
-      "title": "yellow.ai",
-      "text": "yellowdotai"
+      "text": "",
+      "title": "Btn #3",
+      "advancedSettings": false,
+      "id": "quick_39563a54f6889f4d"
     }
   ]
 }
