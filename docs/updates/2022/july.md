@@ -4,9 +4,9 @@ sidebar_label: July Updates
 ---
 
 
-## Studio
+## 1. Studio
 
-### 1. Restructured Studio navigation as per the usage flow
+#### Restructured Studio navigation as per the usage flow
 
   
 
@@ -30,7 +30,7 @@ Once you enter a particular screen (say Train), here is how the sub-options are 
   
   
 
-### 2. Autocomplete suggestions for bot users
+#### Autocomplete suggestions for bot users
 
   
 
@@ -52,7 +52,7 @@ Scope of the Autocomplete feature -
   
   
 
-### 3. Zero Shot Model to replace manual training of intents
+#### Zero Shot Model to replace manual training of intents
 
 Now our system can automatically identify intents based on the intent naming. It works on Zero Shot Learning where you do not need to manually train each utterance. Just name intents properly to make it work best globally. For complete guidelines, see [Naming intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents/#4-best-practices).
 
@@ -60,7 +60,7 @@ Now our system can automatically identify intents based on the intent naming. It
   
   
 
-### 4. Make Localisation more effective in Nodes
+#### Make Localisation more effective in Nodes
 
   
 
@@ -70,7 +70,7 @@ We do have auto-translation support that can translate your text to your preferr
 
   
 
-### 5. Real-time Conversation Logs
+#### Real-time Conversation Logs
 
 You can now monitor all the conversations real-time. The auto-tagging of problems identified in the conversation are also made real-time.
 
@@ -81,7 +81,7 @@ You can now monitor all the conversations real-time. The auto-tagging of problem
   
   
 
-### 6. Add API to Sync data to the database
+#### Add API to Sync data to the database
 
   
 
@@ -95,7 +95,7 @@ The **Sync database** node is available in Workflow - actions. You can now inser
 
   
 
-### 7. Quick Reply buttons in WhatsApp
+#### Quick Reply buttons in WhatsApp
 
 Earlier, WhatsApp bots used to support only lists for Quick replies. With this release, Quick replies node can also have buttons. You can switch between buttons and numbered list according to your preference.
 
@@ -108,7 +108,7 @@ It supports upto three buttons and each button can have up to 20 characters. If 
 
   
 
-### 8. New languages support in Document Cognition
+#### New languages support in Document Cognition
 
   
 
@@ -119,28 +119,28 @@ Document Cognition now supports five more European languages. You can input cont
 
 >  [Know about Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition)
 
-## Inbox 
+## 2. Inbox 
 
-### 1. The search functionality of Chat is revamped 
+#### The search functionality of Chat is revamped 
 
 Agents can find information like details & messages from all their chat tickets easily.
 
 ![](https://i.imgur.com/Kn0ajbu.png)
 
 
-### 2. Data Explorer Integration was added to Inbox
+#### Data Explorer Integration was added to Inbox
 
 Inbox data is exposed to Data explorer which allows businesses to build, and monitors custom reports & dashboards of choice.
 
 **![](https://lh6.googleusercontent.com/YHOhZs9sJtFTkeRp_Fmtu7gOTMMUB7HJiTHmhY2AUoQWB844DUZlEe7sBFRjZCQTy0r2LPofIxSWeThywXJiw4c-9NdJR7ekKUKY_gi7x6Gh25xz7hgrnvdqfnMMeid7jSd6vEIKd_bct4v16N2WVOdDNg)**
 
-### 3. The video calling option is enhanced
+#### The video calling option is enhanced
 
 Customers can set custom virtual backgrounds for their agents and also redirect end-users to their own websites after the video call -to provide a consistent support experience. 
 
 > [Know more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings)
 
-### 4. Email ticketing now works without any code
+#### Email ticketing now works without any code
 
 No-code email ticketing is added to support the use case in cloud bots. 
 
@@ -149,27 +149,27 @@ No-code email ticketing is added to support the use case in cloud bots.
 
 
 
-#### 4.1 Detailed Agent performance reports can be downloaded for email tickets
+##### Detailed Agent performance reports can be downloaded for email tickets
 
 A detailed dump of all metrics related to agents resolving tickets, to better understand the efficiency & performance of the team. 
 
 > Know [more](https://docs.yellow.ai/docs/platform_concepts/inbox/reports/ticket-agent-performance-report). 
 
 
-#### 4.2 Analytics are displayed for Email ticketing 
+##### Analytics are displayed for Email ticketing 
 
 Agents & Admins can get a quick insight into the status of incoming tickets, and performance metrics like AHT, FRT etc., to make decisions to optimize them.
 
 ![](https://i.imgur.com/e896xIT.png)
 
 
-#### 4.3 Email ticketing transcripts can be copied and downloaded
+##### Email ticketing transcripts can be copied and downloaded
 
 Transcripts for each email ticket are used for legal, quality assurance or for auditing purposes. They can now be copied and downloaded. 
 
 **![](https://lh4.googleusercontent.com/8vaNdIlLcn4GwIRHGQ2UPXXZGevq6fwVi9G_WLjCvwzoREH1ZSHi_O14ut-p9OZi27dKwAqLSkGnDs0e-1pTV7leB5CfIFlSu6hv0RrmvBXPhNQGxajZ_Md-_aGdg7mf2kE1Qaf1Ghz6O0G5n8pMXSryfQ)**
 
-### 5. Email IDs can be categorised based on groups 
+#### Email IDs can be categorised based on groups 
 
 You can now map email IDs to certain groups to categorize & respond back easily.
 
