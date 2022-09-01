@@ -570,8 +570,9 @@ module.exports = {
       label: "2022 Updates",
       collapsed: true,
       items: [
-        "updates/2022/july",
         "updates/2022/aug",
+        "updates/2022/july",
+        
 
        //"updates/studio/build",
        //"updates/studio/trainandtest",

@@ -28,6 +28,11 @@ Also update `appid` which API key you retrieved from [OpenWeather API](https://o
 4. Don't forget to click on save button on the bottom left corner. We're having a cloudy weather but we hope you're having a wonderful weather at your place! :sunglasses: 
 
 
+> **Character limit/size of an API response should be less than 250KB**. Otherwise an error will be displayed. 
+> ![](https://i.imgur.com/8fTglp1.png)
+
+
+
 ## 2. How to import CURL?
 
 Follow the steps below to import a new API: 

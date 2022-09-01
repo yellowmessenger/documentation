@@ -91,6 +91,48 @@ Variable format:
    }
   ]
 ```
+Click **Fetch from** and add a dynamic value - if required:
+
+```
+{
+  "title": [
+    "Select an option",
+    "Pick an option"
+  ],
+  "options": [
+    {
+      "text": "cold drink",
+      "title": "Cold Drink",
+      "advancedSettings": true,
+      "aliases": [
+        "coke",
+        "soft drink"
+      ],
+      "url": "https://www.tasty-food.com",
+      "postback": "post-back",
+      "image": "https://cdn.abc.com/coke-img.jpeg",
+      "textColor": "#4384f5",
+      "backgroundColor": "#FFFF",
+      "id": "quick_01d78e38b44e1915",
+      "analytics": {
+        "aevent": "test-analytics"
+      }
+    },
+    {
+      "text": "",
+      "title": "Btn #2",
+      "advancedSettings": false,
+      "id": "quick_d9eda393404266d4"
+    },
+    {
+      "text": "",
+      "title": "Btn #3",
+      "advancedSettings": false,
+      "id": "quick_39563a54f6889f4d"
+    }
+  ]
+}
+```
 
 ## 7. WhatsApp List
 
@@ -107,6 +149,78 @@ To create a Whatsapp List:
 
 
 ![](https://i.imgur.com/vmDdimd.png)
+
+Click **Fetch from** and add a dynamic value - if required: 
+
+```
+{
+  "title": "Please select your preferred slot for Appointment",
+  "optionText": "Appointment Slots",
+  "options": [
+    {
+      "section": "June 5, 2021",
+      "options": [
+        {
+          "title": "9am-11am",
+          "text": "5.9-5",
+          "description": "General Medicine"
+        },
+        {
+          "title": "12pm-2pm",
+          "text": "5.12-2",
+          "description": "Orthopedic"
+        },
+        {
+          "title": "2pm-4pm",
+          "text": "5.2-4",
+          "description": "Physiotherapy"
+        }
+      ]
+    },
+    {
+      "section": "June 6, 2021",
+      "options": [
+        {
+          "title": "9am-11am",
+          "text": "6.9-5",
+          "description": "General Medicine"
+        },
+        {
+          "title": "12pm-2pm",
+          "text": "6.12-2",
+          "description": "Orthopedic"
+        },
+        {
+          "title": "2pm-4pm",
+          "text": "6.2-4",
+          "description": "Physiotherapy"
+        }
+      ]
+    },
+    {
+      "section": "June 7, 2021",
+      "options": [
+        {
+          "title": "9am-11am",
+          "text": "7.9-5",
+          "description": "General Medicine"
+        },
+        {
+          "title": "12pm-2pm",
+          "text": "7.12-2",
+          "description": "Orthopedic"
+        },
+        {
+          "title": "2pm-4pm",
+          "text": "7.2-4",
+          "description": "Physiotherapy"
+        }
+      ]
+    }
+  ],
+  "footer": "Please follow Covid Guideline while consulting."
+}
+```
 
 
 **Limitations**

@@ -6,7 +6,8 @@ sidebar_label : Video Call Settings
 
 This document helps to configure all settings for when agents are in video calls with your customers.
 
-![](https://i.imgur.com/PAVUrWk.png)
+
+**![](https://lh5.googleusercontent.com/Wou5ivzUvJ-QGnQH_gDJ12KPKmo8KXKTkj7BSjAAo_ze1Ke4rff9JxeRH5sE0w5BCd-Qi-Ywy-lx8eVOg9WzrgSWZU2r1Xsv2ShA-L02ighLShZDkLrMvg3lmLj3axkVSfxyUDHpOrkl-FAwsYQ1Bczhdw)**
 
 ### Manage Video Call Settings
 
