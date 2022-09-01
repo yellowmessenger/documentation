@@ -6,9 +6,7 @@ sidebar_label: Overview
 <!-- This section will make you familiar with the first section you see on top on the platform - Studio. Studio is the section where you design and train your chatbot. 
  -->
 
----
-title: Get Started with Studio
-sidebar_label: Get Started
+
 ---
 
 <!-- This section will make you familiar with the first section you see on top on the platform - Studio. Studio is the section where you design and train your chatbot. 
