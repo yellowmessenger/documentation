@@ -11,7 +11,7 @@ This is enabled only for https://cloud.yellow.ai
 
 ## Manage User Properties
 
-Click on **User Properties**. In the left panel, you can see the user schema, which includes all the [system](./cdp_data#system-user-properties) as well as [custom properties](./cdp_data#custom-user-properties) along with their data types. Selecting/unselecting any of these properties decides which ones show up in the users table. Properties selected, show up in the right panel where you can arrange the order in which you want to see them on the users table
+Click on **User Properties**. In the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#system-user-properties) as well as [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#custom-user-properties) along with their data types. Selecting/unselecting any of these properties decides which ones show up in the users table. Properties selected, show up in the right panel where you can arrange the order in which you want to see them on the users table
 
 ![](https://i.imgur.com/KpYqmFo.jpg)
 
@@ -29,11 +29,11 @@ If you want to edit the above user, you can click on **user options → edit use
 
 ![](https://i.imgur.com/TTb77hi.png)
 
-If you want to add/edit multiple users at once, we'd recommend using [REST APIs](../enriching_user_profiles/send_user_data_event_rest_api) or [CSV Import](../enriching_user_profiles/create_audience_group_csv).
+If you want to add/edit multiple users at once, we'd recommend using [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api/) or [CSV Import](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv/).
 
 ## Creating and managing segments
 
-A segment is a group of your users defined by conditions that you set. To learn more about creating and managing segments, [refer to this document](./creating_managing_user_segment).
+A segment is a group of your users defined by conditions that you set. To learn more about creating and managing segments, [refer to this document](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment/).
 
 
 :::info
@@ -56,7 +56,7 @@ Your exported data will be in the form of CSV and will be available in **User Lo
 
 ## Deleting your User Data
 
-Deleting user data is possible too, however you may want to [export them](./manage_user_data#viewing--exporting-your-user-data) as a backup first.
+Deleting user data is possible too, however you may want to [export them](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#viewing--exporting-your-user-data) as a backup first.
 
 To delete All User’s data, you can select **All Users → Actions → Delete all user data**. To delete the data for users that are in a particular segment, select **Segment → Actions → Delete segment user data**.
 
@@ -66,7 +66,7 @@ You can also select multiple records and then choose to delete them.
 
 ![](https://i.imgur.com/X3ASFOg.png)
 
-You may also delete user data using [REST APIs](../enriching_user_profiles/send_user_data_event_rest_api).
+You may also delete user data using [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
 
 :::warning
 “Archive segment” is not the same as “Delete segment user data”. The former has no impact on the user data and only archives/disables that segment from being viewed and used. The later however deletes the actual user data associated with that segment. You can read more about “Archive segment” [here](manage_user_data#viewing--exporting-your-user-data).
@@ -78,8 +78,8 @@ User logs is a space for your to audit your user data. There are 3 types of logs
 
 - **CSV Import →** This log appears whenever you import users using a CSV. The associated “Download log” link contains details around the import process, that is, which records were IMPORTED, FAILED or MERGED. You can read more about that [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv#figuring-out-what-went-wrong-with-your-csv-import).
 
-- **Bulk User Download →** This log appears whenever you [export your user data](./manage_user_data#viewing--exporting-your-user-data). The associated “Download log” can be used to download the exported user data in CSV format.
+- **Bulk User Download →** This log appears whenever you [export your user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#viewing--exporting-your-user-data). The associated “Download log” can be used to download the exported user data in CSV format.
 
-- **Bulk User Delete →** This log appears whenever you [delete your user data](../user_data_segments/manage_user_data#deleting-your-user-data).
+- **Bulk User Delete →** This log appears whenever you [delete your user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#deleting-your-user-data).
 
 ![](https://i.imgur.com/s86psKQ.png)
