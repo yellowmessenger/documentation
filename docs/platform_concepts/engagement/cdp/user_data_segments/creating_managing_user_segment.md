@@ -30,7 +30,7 @@ To create a segment click on **+ Add segment**, add segment name and define the 
 
 ![](https://i.imgur.com/t6QVPTr.png)
 
-To create more sophisticated segments you can [combine ‘and’ with ‘or’ conditions](../user_data/targeted_segments). This makes segments more powerful and flexible.
+To create more sophisticated segments you can [combine ‘and’ with ‘or’ conditions](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/targeted_segments). This makes segments more powerful and flexible.
 
 ### View/export users in a segment
 
@@ -79,7 +79,7 @@ To unarchive a segment, select any archived segment and click on **Unarchive** s
 
 ### Deleting users in a particular segment
 
-Deleting user data is possible too, however you may want to [export them](./manage_user_data#viewing--exporting-your-user-data) as a backup first.
+Deleting user data is possible too, however you may want to [export them](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data/#viewing--exporting-your-user-data) as a backup first.
 
 To delete the data for users that are in a particular segment, select **Segment → Actions → Delete segment user data**.
 
