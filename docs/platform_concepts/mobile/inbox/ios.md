@@ -41,14 +41,12 @@ This is a mandatory parameter.
 #### Example
 
 ```swift
-import UIKit 
 import YellowInbox
  
 class ViewController: UIViewController {
  
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view.
  
     YellowInbox.initialize(with: <#"bot id"#>, 
         apiKey: <#"API key"#>, 
