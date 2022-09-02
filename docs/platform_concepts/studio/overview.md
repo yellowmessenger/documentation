@@ -39,8 +39,7 @@ Before designing your bot, you need to have the bot set up as mentioned in [Sett
    ![](https://i.imgur.com/QRWCXwr.gif)
 
 ### Understand UI elements
-   ![](https://i.imgur.com/v6CF49S.png)
-
+   ![](https://i.imgur.com/WNVEpEO.png)
 
 
 Option | Description
@@ -51,7 +50,9 @@ Help | Click to directly access our Knowledge base.
 Marketplace | Save time and increase productivity with our preconfigured templates to your bot. A template contains journeys, validators, integrators and more.
 Access control | Share your bot access to your team members or superiors who would be contributing to the bot building.
 Notifications | Get notified on the invites sent by others. You will see the notification alert when there is someone shares bot access with you.
-Add channels | Add channels that you want the bot to run on.
+![](https://i.imgur.com/g8ZnFxE.png) | Check if each step of the flow is working as expected as building your bot. It shows what is happening in each step such as values stored, action triggered, condition, and prompt. To see the actual preview, click on the icon next to Preview bot. 
+![](https://i.imgur.com/4u8ra3O.png) | Access conversation logs directly from the preview pane.  
+![](https://i.imgur.com/mcvEPae.png) | Preview your bot in different channels. 
 
 ---
 
