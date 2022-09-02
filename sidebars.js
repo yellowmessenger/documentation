@@ -104,7 +104,6 @@ module.exports = {
     {
       type: "category",
       label: "Studio",
-      link: {type: 'doc', id: 'overview'},
       collapsed: true,
       items: [
         "platform_concepts/studio/overview",
