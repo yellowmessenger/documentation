@@ -1,5 +1,5 @@
 ---
-title: Understanding Conversational Studio
+title: Studio overview
 sidebar_label: Overview
 ---
 
