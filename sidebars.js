@@ -323,6 +323,7 @@ module.exports = {
           collapsed: true,
           items: [
           "platform_concepts/mobile/inbox/android",
+          "platform_concepts/mobile/inbox/ios",
           "platform_concepts/mobile/inbox/cordova",
           ],
         },
