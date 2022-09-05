@@ -17,14 +17,7 @@ These names are **case sensitive** and the column header **should not include sp
 3. Click on **Add user** > **Import users**.
    ![](https://i.imgur.com/KkDLtC2.png)
 
-4. Upload the CSV file that you have created. 
-5. In **Tags**, add custom tags for the group. These tags are added to every user in the CSV. This helps you differentiate between users uploaded from multiple CSV files and to maintain multiple audiences.
-   ![](https://i.imgur.com/Asg1896.jpg)
 
-6. [Create a segment](../user_data_segments/creating_managing_user_segment) using those tags to refer to the various set of audiences you have imported.
-
-:::note
-If the [userId](../enriching_user_profiles/user_id) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
 :::
 
 ## Pre-checks before uploading the CSV
@@ -32,9 +25,8 @@ If the [userId](../enriching_user_profiles/user_id) is not passed in the CSV, ye
 To ensure that your users are imported successfully, ensure the following:
 - Correct column headers → Make sure that the column headers match the name of the user property that you want to map with. These names are case sensitive and the column header should not include spaces before/after. 
 
-:::warning
-If any of these column headers do not match with any user property, the entire CSV import will fail.
-:::
+> If any of these column headers do not match with any user property, the entire CSV import will fail.
+
 
 - Use correct data type → Data type validation is run before importing each user record. User records where this validation fails, will be skipped. Each data type accepts the following values:
 
@@ -90,13 +82,7 @@ Sometimes you might notice that the exact number of records you imported through
 
 Once you import a CSV file, you can check what happend with the records. You can see the count of new entries added, entries merged, and failed entries. 
 
-The following are the possible reasons for new users not added:
-- [Wrong column headers](../enriching_user_profiles/create_audience_group_csv#pre-checks-before-uploading-the-csv)
-- [Data type mismatch](../enriching_user_profiles/create_audience_group_csv#pre-checks-before-uploading-the-csv)
-- Some users being imported must’ve [merged](../enriching_user_profiles/create_audience_group_csv#using-the-userid-column-to-identify-users) into existing user records
 
-To identify errors in the import, see [User Logs](../user_data_segments/manage_user_data#user-logs). 
-Click on **User Logs** > Navigate to the relevant **CSV Import activity** > Click **Download log**.
 
 
 ![](https://i.imgur.com/5jj2BgM.jpg)
