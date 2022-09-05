@@ -19,7 +19,7 @@ Studio provides a no-code bot building platform that helps anyone create a bot f
 
 
 
-This article briefs you how to create a bot using studio with all the reference links for detailed help documents. 
+This article briefs you understand various components of Studio and helps you to get started with creating a bot. 
 
 :::info
 If you're new to creating bots or looking for more practical end-to-end guides on bot building, see [Cookbooks](../../cookbooks/template-bots/customer-support-bot.md).
