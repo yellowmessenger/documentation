@@ -346,7 +346,7 @@ module.exports = {
     
     {
       type: "category",
-      label: "Engagement",
+      label: "Engage",
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
