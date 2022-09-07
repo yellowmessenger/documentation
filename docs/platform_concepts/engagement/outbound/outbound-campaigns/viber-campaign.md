@@ -4,7 +4,7 @@ title : Viber Business Campaigns
 ---
 
 
-Yellow.ai now supports sending campaigns on [Viber Business](https://www.forbusiness.viber.com/en/viber-for-business/). These campaigns can be sent out using customised [templates] < TBA LINK TO VIBER Business TEMPLATE >.  
+Yellow.ai now supports sending campaigns on [Viber Business](https://www.forbusiness.viber.com/en/viber-for-business/). These campaigns can be sent out using customised [templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/viber-template).  
 Using this feature, brands can engage with the customers for various **use-cases**.
 Follow the steps below to create a Viber Business campaign: 
 
