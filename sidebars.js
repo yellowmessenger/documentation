@@ -419,6 +419,7 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/whatsapptemplate",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
+                "platform_concepts/engagement/outbound/templates/viber-template",
               ],
             },
             {
@@ -429,6 +430,7 @@ module.exports = {
                 "platform_concepts/engagement/outbound/outbound-campaigns/email-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/sms-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign",
+                "platform_concepts/engagement/outbound/outbound-campaigns/viber-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
               ],
             },
