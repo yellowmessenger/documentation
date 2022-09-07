@@ -10,9 +10,7 @@ In this document, we discuss:
 1. [Home](#home)
 2. [Workflow](#workflow)
 3. [Flow](#createflow)
-    * How to create a flow?
-5. [How to trigger a flow?](#triggerflow)
-    * Types of start trigger
+4. [How to trigger a flow?](#triggerflow)
 
 
 ## <a name="home"></a> 1. Home
