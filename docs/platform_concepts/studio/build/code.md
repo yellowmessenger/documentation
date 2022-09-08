@@ -18,6 +18,9 @@ Following topics are discussed in this document:
 4. [Sample code](#sc)
 5. [Math operations](#math)
 
+
+> To work around this section, you will require minimal coding skills. 
+
 ## <a name="1"></a> 1. Function Creation 
 
 You can add a new function to write custom logic in the **`code`** section by clicking **+Add new function**.
@@ -91,7 +94,7 @@ Flows functionality is to quickly support copy and visit a flow with the use of 
 
 Function can be used to parse data through an API. Function is also used to manipulate API responses.
 
-Follow the below steps to create a flow with a function node: 
+ To create a flow with a function node, follow the below steps: 
 
 > **Use-case**: Function to parse Weather Data API and to show the different parameters in a carousel format. 
 
@@ -115,7 +118,7 @@ For example: transformationFunction (as shown below).
 
 In the above code, Weather Data is parsed and stored in the response body in a variable “main”.
         
-4. The API data is now ready to be used in your bot journey. 
+4. The API data is now ready to be used in your bot flow. 
 5. After the global variable is added, open the respective API node and store the response in that global variable.
         
         

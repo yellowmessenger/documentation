@@ -34,7 +34,7 @@ Ask and validate the user name with this node. When the user enters a sentence i
 ![](https://i.imgur.com/Rr81uih.png)
 
 
-Create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the user name in it. 
+Create a Name [Variable]https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the user name in it. 
 
 
 ![](https://i.imgur.com/t8UFyzS.png)
@@ -51,7 +51,7 @@ When the user enters a number of length greater or less than the expected number
 
 > One phone node can only support validation of one country code. 
 
-Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the number in it. 
+Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the number in it. 
 
 ---
 
@@ -394,7 +394,7 @@ To use buttons (Quick reply like action) use one Carousel card without adding an
 
 ![](https://i.imgur.com/nmWXMaR.png)
 
-You will be permitted to add only 3 buttons to the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the selected response in it. 
+You will be permitted to add only 3 buttons to the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the selected response in it. 
 
 Given below is the WhatsApp chat screen for the above flow.
 
@@ -428,7 +428,7 @@ It will validate if the uploaded file is in JPG/PNG/MP4/MOV/HEVC format and if i
 
 ![](https://i.imgur.com/UvhKJn1.png)
 
-Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the file in it. 
+Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the file in it. 
 
 ---
 
@@ -466,7 +466,7 @@ Ask, validate and store the user email with this node.
 **Validation**
 bot checks if the entered email is in username@company.domain format.
 
-Create an email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bot-variables/) and store the email ID in it. 
+Create an email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the email ID in it. 
 
 ---
 
@@ -506,7 +506,8 @@ Make Prompt Smarter option is available on all the prompt nodes.
 
 ### 5.1 Auto Complete
 
-Autocomplete is set so that the bot can start predicting the rest of the word or sentence for users as they start typing. This feature can be used for: 
+Autocomplete is set so that the bot can start predicting the rest of the word or sentence for users as they start typing. For example, if you want to find your location and you start typing Jai, you will get the city names starting with Jai - Jaipur. Similarly, if you type Ban, you will get suggestions such as Bangalore, Bangla, Banswara, etc.
+This feature can be used for: 
 * Discoverability: The end user can easily discover what a bot or a point does
 * When there are multiple options available and a limit is set on the display, autocomplete is a good singular or assisting alternative to show options.
 * Faster typing, and improved user experience.
@@ -515,7 +516,7 @@ Autocomplete is set so that the bot can start predicting the rest of the word or
 
 ![](https://i.imgur.com/anyDc8z.png)
 
-Auto complete is available at a [global level](https://docs.yellow.ai/docs/platform_concepts/studio/train/tools#22-conversation) and prompt level (that is triggered inside a prompt).
+Auto complete is available at a [global level](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#22-conversation) and prompt level (that is triggered inside a prompt).
 
 ![](https://i.imgur.com/i0u48Ru.gif)
 
@@ -560,7 +561,7 @@ In the below example, the user wont be asked for the name, phone number and emai
 
 ![](https://i.imgur.com/jIgnQRZ.png)
 
-Configure Auto-skip at a global level (from tools section), click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/tools/#224-autoskipping-settings). 
+Configure Auto-skip at a global level (from tools section), click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#224-autoskipping-settings). 
 
 ### 5.3 Additional 
 
@@ -603,6 +604,6 @@ To beautify the text you enter in the field -**bot says** you can add the follow
 2. Whatsapp 
 
   - Bold: Message *- 
-  - Italics: _ Mesage _ 
+  - Italics: _ Message _ 
 ```
 

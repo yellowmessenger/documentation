@@ -24,7 +24,7 @@ You can set a delay in displaying each of these nodes.
 
 ![](https://i.imgur.com/t7Z5eb7.jpg)
 
-> Alternative to this is to use a [delay node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#delay).
+> Alternative to this is to use a [delay node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#16-delay).
 
 ---
 
@@ -264,5 +264,5 @@ To beautify the text you enter in the field -**bot says** you can add the follow
 2. Whatsapp 
 
   - Bold: Message *- 
-  - Italics: _ Mesage _ 
+  - Italics: _ Message _ 
 ```

@@ -40,7 +40,7 @@ Option | Description
 **Menu/Switcher** | Access all the Yellow.ai modules here.
 **Search box** | Search for specific information from our [Knowledge base](https://docs.yellow.ai)
 **Help** | Click to directly access our Knowledge base.
-**Marketplace** | Save time and increase productivity with our preconfigured templates for your bot. A template contains journeys, validators, integrators and more.
+**Marketplace** | Save time and increase productivity with our preconfigured templates for your bot. A template contains flows, validators, integrators and more.
 **Access control** | Share your bot access with your team members or superiors who would be contributing to the bot building.
 **Notifications** | Get notified of the invites sent by others. You will see the notification alert when there is someone shares bot access with you.
 ![](https://i.imgur.com/g8ZnFxE.png) | Check if each step of the flow is working as expected as building your bot. It shows what is happening in each step such as values stored, action triggered, condition, and prompt. To see the actual preview, click on the icon next to the Preview bot.
@@ -66,7 +66,7 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
 ![](https://i.imgur.com/2x15F1q.png)
 
 
-2. **Welcome message**
+2. **Add Welcome message**
 
     You first need to configure the welcome message to prompt when the user opens the bot. Click on the **Start** node to set the welcome message.
 
@@ -77,7 +77,7 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
 ![](https://i.imgur.com/ZXnEbaY.png)
 
 
-3. **Studio functionalities**
+3. **Define Studio functionalities**
 
     Define your bot using various Studio functionalities.
 
@@ -85,15 +85,15 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
 
 | Functionality                                                                                                                                                    | Description                                                                                                                                                                                                                                                                          |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Add a Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/).                                                                              | A conversational flow is a set of events that are carried out in sequential order according to the conditions set. Create multiple flows and [trigger each flow](https://docs.yellow.ai/docs/platform_concepts/getting-started/#26-trigger-a-flow) logically as per the requirement. |
-| Organise your conversational logic.                                                                                                                              | Each node is a point of flow. Use [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) to ask questions, store values, show information, perform math functions, trigger condition-based actions, and make API calls.                                     |
+| [Add a Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/)                                                                              | A conversational flow is a set of events that are carried out in sequential order according to the conditions set. Create multiple flows and [trigger each flow](https://docs.yellow.ai/docs/platform_concepts/getting-started/#26-trigger-a-flow) logically as per the requirement. |
+| Organise your conversational logic                                                                                                                              | Each node is a point of flow. Use [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) to ask questions, store values, show information, perform math functions, trigger condition-based actions, and make API calls.                                     |
 | Use [Database](https://docs.yellow.ai/docs/platform_concepts/studio/database)                                                                                    | To store information (such as location, address, and user information) in the Yellow.ai Platform and retrieve the details wherever required in the flow.                                                                                                                             |
 | Use [Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition/)                                                 | To enable bot to answer user queries from the documents that you have.                                                                                                                                                                                                               |
-| Make your bot smart by triggering actions or flows based on user activities or [Events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub).  | For example, send a predefined text when no agent is online, or when assigned to an agent; when a user closes a promotion shown in the bot; trigger journeys when a user opens a specific URL.                                                                                       |
-| Make your bot handle unintended replies wisely through [Context management](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-contextual-response). | For example, what if a customer types a new question when the bot asks for the mobile number?                                                                                                                                                                                        |
-| Use [Localization](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported/)                                                                    | To serve users worldwide by making the bot interact in the user's native language. Yellow supports over 100 languages.                                                                                                                                                               |
+| Make your bot smart by triggering actions or flows based on user activities or [Events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub)  | For example, send a predefined text when no agent is online, or when assigned to an agent; when a user closes a promotion shown in the bot; trigger flows when a user opens a specific URL.                                                                                       |
+| Make your bot handle unintended replies wisely through [Context management](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-contextual-response) | For example, what if a customer types a new question when the bot asks for the mobile number?                                                                                                                                                                                        |
+| Use [Localization](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)                                                                    | To serve users worldwide by making the bot interact in the user's native language. Yellow supports over 100 [languages]((https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported/)).                                                                                                                                                               |
 | Code                                                                                                                                                             | If you are a developer, use [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code/) to define custom functionalities.                                                                                                                                               |
-| Connect third-party systems through [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to retrieve data directly from that system.         | For example, you can show user details that are available in your database which is the need of importing the entire data to Yellow Platform.                                                                                                                                        |
+| Connect third-party systems through [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to retrieve data directly from that system         | For example, you can show user details that are available in your database which is the need of importing the entire data to Yellow Platform.                                                                                                                                        |
 | Fallback                                                                                                                                                         | There could be instances where your bot does not understand how to respond to your user intent. Use Fallback to provide suggestions, answer from documents, connect to an agent, or show a message.  |
 |     Testing the bot  | [Test each flow](https://docs.yellow.ai/docs/platform_concepts/getting-started/#26-trigger-a-flow) as and when you create it to ensure it is working as desired. |
 
@@ -101,14 +101,14 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
 
   
 
-4. **Train**
+4. **Train the bot**
 
     [Train your bot](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/bot-training/) to understand common user utterances through NLU (Natural Language Understanding), identify [Entities](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) and more.
 
 ![](https://i.imgur.com/A7GqpLw.jpg)
 
 
-5. **Test**
+5. **Test the bot**
 
     [Test your bot](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) to ensure it's functioning as expected.
 
