@@ -1,5 +1,5 @@
 ---
-title: Set Error Alerts and View Error Log
+title: API Error Alerts and Error Log
 sidebar_label : API Errors & Alerts 
 ---
 
@@ -8,17 +8,14 @@ Once everything is setup and data is flowing through APIs, there could be chance
 * See error log to identify the reason for failure and troubleshoot the API.
 There are 4 options available on the platform to test and Configure and configure API:
 
-1.  **Tools and settings** - This is a global testing and setting tab. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#2-explore-tools) to learn more.
-2.  **Configure environment** - Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/enviroment-variables) to learn how to configure an environment. This can be configured when the bot is in development stage.
-3.  **Setup alerts** - Configure the mail list of users to whom the alerts must be sent/not sent.
-4.  **API failure logs** - View logs of APIs that have failed with details.
+:::note
+**Tools and settings**: One of the options that you see on the right of API configuration page. This is a global testing and setting tab. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#2-explore-tools) to learn more.
 
 ![](https://i.imgur.com/p2kJpgw.png)
+:::
 
 
-
-**Setup alerts** and **API failure logs** are discussed in detail in this document.
-
+---
   
 ## 1. Send alerts in case of API failures
 You can email alerts to be sent to specific recipients (email) when there is some issue with an API and call got failed.  Recipients will get error alerts for all the APIs added in the API section and is not specific to one API.   
@@ -43,7 +40,7 @@ The following is a sample screenshot of the error alert email.
   
   
 
-## 2. View API failure log
+## 2. View API error log
 
 To see the failure log of the API, click on the API failure log icon.
 ![](https://i.imgur.com/OwHi4yQ.png)
@@ -60,7 +57,7 @@ If there are many errors, you can further filter the summary by error code using
 
 There are response codes tagged to each error to help you identify why the error has occurred. The following section provides the list of status codes and its description to help help you troubleshoot an error.
 
-### Status Codes
+### 2.1 Status Codes
 
 The following table contains the list of common HTTP Status codes - 
 

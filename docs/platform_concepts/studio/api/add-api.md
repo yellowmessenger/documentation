@@ -61,7 +61,8 @@ You can pass the access key or auth token in the way that the API is designed. Y
 In some cases you might have different API endpoints for different deployment environments such as staging, production, sandbox or cluster. You can add all the variables and use the appropriate variable when making an API call. 
 
 :::note
-This is not applicable for API with single end point.
+* This is not applicable for API with single end point.
+* This is a global setting and applicable to all APIs of your current bot and not a specific to an API.
 :::
 
 To add environment variable, follow these steps - 
