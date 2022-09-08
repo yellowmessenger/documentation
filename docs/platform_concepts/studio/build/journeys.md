@@ -66,7 +66,7 @@ Suppose the bot is used as an official portal to apply for leaves or check salar
 
 You must first create a flow and then trigger a flow. You can create a flow using a template or from scratch. When you create a flow from scratch, you create a placeholder for the flow first.
 
-Follow the steps below to create a flow:
+Tto create a flow, follow the steps below:
 
 1. Log in to your studio account. On the Overview page, select your bot. 
 2. Select **Overview** > **Studio**.
@@ -94,9 +94,9 @@ Follow the steps below to create a flow:
 
 *  **Category**: One flow can have multiple categories. The created flow will fall into default categories if no category is mentioned. You can either select an existing category from the drop-down or, add a new category:
 
-    * Click **+Create category**.
-    * Enter the **Name** of the category.
-    * Click **Create Category** to save it.
+    1. Click **+Create category**.
+    2. Enter the **Name** of the category.
+    3. Click **Create Category** to save it.
 *  **Create as a workflow**: Click on the right of the toggle if you want to convert the flow to a workflow. Workflows run in the back-end along with the conversational flow.
 
 ![](https://i.imgur.com/GS5ENuC.png)
@@ -105,7 +105,7 @@ Follow the steps below to create a flow:
 
 ## <a name="triggerflow"></a> 4. Configure Start Trigger
 
-Follow the steps below to configure a start trigger:
+To configure a start trigger, follow the steps below:
 
 1. Open the bot **Studio** page.
 2. Click Design bot flows > Flows tab. Click the Flows node of the bot. Expand a category and click a flow.
@@ -168,9 +168,9 @@ To preview a specific bot flow there are two methods, discussed in the further s
 1. Via URL
 2. Via Code
 
-### 5.1 URL
+### 5.1 Trigger via. URL
 
-Follow the given steps to preview a bot via URL:
+To preview a bot via URL, follow the given steps:
 
 1. Open the bot and navigate to **Studio** > **Flows**.
 2. Click the Flows drop-down and select the flow that you want to preview.
@@ -195,9 +195,9 @@ Ensure that you clear the browser cache before you preview the bot. It is recomm
 
   
 
-### 5.2 Code
+### 5.2 Trigger via. Code
 
-Follow the steps below to preview a bot via code (embedded on your website).
+To preview a bot via code (embedded on your website), follow the steps below:
 
 1. Get the path of the flow as explained in the previous section.
 2. In `window.ymConfig`, pass the parameter `triggerJourney` and specify the path of the flow you copied.

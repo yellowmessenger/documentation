@@ -33,14 +33,14 @@ Select a value (only one value can be selected) from the dropdown based on your 
     * **Entity**: Used to compare and branch when an [Entity](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) is detected.
     * **Entity Value**: Used to compare and branch when a Entity value is detected. 
     * **Mustache**: You can write complex variable object and compare it to other variables (example variables.var_name.key_name)
-    * **Inside agent working hours**: This can be used to branch conversation based on agent working hours configured at [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/default-agent-statuses).
+    * **Inside agent working hours**: This can be used to branch conversation based on agent working hours configured at [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/agent-configuration/default-agent-statuses/).
     * **Sentiment**: This is used to branch based on the Sentiment detected on the last user message (Sentiment can be Positive/ Negative/ Neutral). For example, if questioned about the user experience in the flow, and user replies with something negative, Conditional node can be used to → connect the user directly to an agent. If the reply is of positive or neutral sentiment, you can add them to reply back later with logic etc. 
 
 
 * **System** - Page URL. This will branch conversation flow based on the page URL detected. 
 
     
-> These dropdown values are derived from the [data available](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/user_data_segments/cdp_data/#user-property-data-types) in the system. **Journey variables** are created by the user for that flow, **Global variables** are asked and extracted from the other nodes, **User properties** are extracted from variables and few are automatically fetched by the system like IP, Country, Timezone, Created at, etc. 
+> These dropdown values are derived from the [data available](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) in the system. **Journey variables** are created by the user for that flow, **Global variables** are asked and extracted from the other nodes, **User properties** are extracted from variables and few are automatically fetched by the system like IP, Country, Timezone, Created at, etc. 
 
 ### 1.2 Condition
 

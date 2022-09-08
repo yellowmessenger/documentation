@@ -209,37 +209,37 @@ Different prompts/action nodes return responses in different formats and datatyp
 
 | Prompt    Nodes                                                                 | Variable Datatype |
 |----------------------------------------------------------------------------|-------------------|
-| [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#name)             | string            |
-| [Email](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#email)            | string            |
-| [Phone](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#phone)            | string            |
-| [Location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#location)           | object            |
-| [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#carousel)                  | string            |
-| [Quick Replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#quick-replies)         | string            |
-| [Date](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#date)                    | object            |
-| [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#question)         | string            |
-| [Feedback](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#feedback)            | object            |
-| [Whatsapp List](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#whatsapp-list) | string            |
-| Multiselect                                                                | string            |
-| [Image/file](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#image)        | string            |
+| [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-name)             | string            |
+| [Email](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#32-email)            | string            |
+| [Phone](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#12-phone)            | string            |
+| [Location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-location)           | object            |
+| [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#22-carousel)                  | string            |
+| [Quick Replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-quick-replies)         | string            |
+| [Date](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-date)                    | object            |
+| [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#21-question)         | string            |
+| [Feedback](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#23-feedback)            | object            |
+| [Whatsapp List](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#31-whatsapp-list) | string            |
+| [Multiselect](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-multi-select)                                                                | string            |
+| [Image/file](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#26-file-prompt)        | string            |
 
 #### [Actions](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes)
 
 
 | Action Nodes                                                                 | Variable Datatype             |
 |-----------------------------------------------------------------------------|-------------------------------|
-| [API](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#api)                           | object, array, number, string |
-| [Database (search)](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#database)          | array                         |
-| [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#function)                 | object, array, number, string |
-| Outbound Notification                                                       | object, array, number, string |
-| Notification Status                                                         | object, array, number, string |
-| [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#raise-ticket)         | object, array, number, string |
-| [Modifier](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#modifier)                 | object, array, number, string |
-| [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#document-search)   | object, array, number, string |
-| [Set Language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#set-language)         | object, array, number, string |
-| [Send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#send-otp)   | object, array, number, string |
-| [Verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#verify-otp) | object, array, number, string |
+| [API](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api)                           | object, array, number, string |
+| [Database (search)](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database)          | array                         |
+| [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function)                 | object, array, number, string |
+| [Outbound Notification](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#32-outbound-notification)                                                       | object, array, number, string |
+| [Notification Status](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#33-notification-status)                                                         | object, array, number, string |
+| [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket)         | object, array, number, string |
+| [Modifier](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#25-modifier)                 | object, array, number, string |
+| [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search)   | object, array, number, string |
+| [Set Language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language)         | object, array, number, string |
+| [Send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#12-send-otp)   | object, array, number, string |
+| [Verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#13-verify-otp) | object, array, number, string |
 | Payment                                                                     | object, array, number, string |
-| [Generate PDF](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#generate-pdf-image)         | object, array, number, string |
+| [Generate PDF](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#19-generate-pdf-image)         | object, array, number, string |
 
 ---
 
@@ -247,7 +247,7 @@ Different prompts/action nodes return responses in different formats and datatyp
 
 ## <a name="hed-5"></a> 5. Access Array/Object Variables
 
-Accessing string/number is simple, it is slightly different for array/object datatype. In this example  [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#api), the response stored is not a simple string or number value.
+Accessing string/number is simple, it is slightly different for array/object datatype. In this example  [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#21-api), the response stored is not a simple string or number value.
 
 
 Consider the following responses from a weather API - this consists of an object and array with different indexing.
@@ -298,7 +298,7 @@ Consider the following responses from a weather API - this consists of an object
   "cod": 200
 }
 ```
-Follow the steps below to access variable fields and index in JSON object, array type stored in a variable.
+To access variable fields and index in JSON object, array type stored in a variable, follow the steps below:
 
 * To access any fields of this you can simply type {{variables.variable_name.field_name}}. This can go upto fields of fields.
 
@@ -308,3 +308,9 @@ Follow the steps below to access variable fields and index in JSON object, array
 To access the weather description above, you can see it's inside an array [ ] and is the first [0th index] value of the array. 
 
 > Use {{variables.API_var.weather.0.description}} 
+
+---
+**What Next?**
+
+* Try building a flow with [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) that store and display variables. 
+* Use variables in [code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) and [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).

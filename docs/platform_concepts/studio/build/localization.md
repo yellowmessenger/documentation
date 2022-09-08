@@ -28,7 +28,7 @@ This document discusses the following topics:
 ## <a name="1"></a>  1. Translation 
 
 On this page, you can configure your messages in multiple languages. 
-Follow the given steps: 
+To add translatins, follow the given steps: 
 
 1. Open **Studio** > **Translation**. 
 2. Click **+Add Key**.
@@ -49,7 +49,7 @@ Follow the given steps:
 In the previous section, keys were added manually one by one. Manual translations take an immense amount of effort to add translations for each node.
 Using Bulk Manage, you can upload all the keys at a time.
 
-Follow the steps below: 
+To import/export translations in bulk, follow the steps below: 
 
 1. Click **Bulk Manage** > **Import**.
 
@@ -78,7 +78,7 @@ Use the following code in your function to get text message from code **app.rend
 ## <a name="2"></a> 2. Configure Nodes
 
 Nodes must be configured in order to switch to the required language when required. 
-Follow the steps below: 
+To configure translations in nodes, follow the steps below: 
 
 1. On each of the nodes there is a Translation icon available (in the text field). Click on the icon. 
 
@@ -117,7 +117,7 @@ Consider a use-case **without** **Translation**: Variables are accessed directly
 ![](https://i.imgur.com/IjmOSrM.png)
 
 
-> Only variables of the datatype string can be used in the Translation text. To learn about the variable datatypes stored in each node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/).
+> Only variables of the datatype string can be used in the Translation text. To learn about the variable datatypes stored in each node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
 
 3. Add params in the message (**Studio** > **Build** > **Translation**). 
 Example- {{{variable.<var_name>}}}.
@@ -145,3 +145,8 @@ Example- {{{variable.<var_name>}}}.
 ![](https://i.imgur.com/LQUae5f.png)
 
 
+----
+
+**What Next?**
+
+* Add translations to the [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) and see how it impacts the bot conversation. 

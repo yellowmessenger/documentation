@@ -108,7 +108,7 @@ This simple UI node can be used to set up basic & advanced scenarios such as Wor
 
 #### Raise Ticket Response
 
-Raise Ticket action node returns an object response as shown below. You can parse important information from this response to store it in a database or use it on another journey.
+Raise Ticket action node returns an object response as shown below. You can parse important information from this response to store it in a database or use it on another flow.
 
 ```json
 {
@@ -174,7 +174,7 @@ To provide additional information to the ticket.
 
 ![](https://i.imgur.com/hWTC8FI.png)
 
-As configured in Inbox Settings, [Tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/chats-configuration/tags) and [Custom Fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/chats-configuration/custom-fields) will be visible in a multi-select dropdown(i.e. more than one options can be added to ticket)
+As configured in Inbox Settings, [Tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/chats-configuration/tags) and [Custom Fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/chats-configuration/chat_custom_fields) will be visible in a multi-select dropdown(i.e. more than one options can be added to ticket)
 
 - **Tags** - Selected Tags from dropdown will be added to the extra details of the ticket (useful for agents to get a quick overview of the issue).
 - **Department** - Similar tickets can be assigned to relevant departments.
@@ -191,7 +191,7 @@ Output of Raise Ticket Node dictates general behaviour for any error in creating
 > Once any specific event is active and configured, the corresponding flow will be given preference. Bot is never paused unless a ticket is in ASSIGNED state (i.e. Agent is interacting with the user).
 
 
-Follow two steps to handle custom scenarios -
+Two steps to handle custom scenarios are as follows:
 1. In Event Hub, activate the custom inbox event. Scenarios that can be handled:
   - All Available Agents Busy
   - All Available Agents Away
@@ -224,9 +224,9 @@ Inbox support auto translate feature out of the box so agents don't need to know
 
 Capture analytics with this node. 
 
-Analytics node can be used to send analytics events at any point in the execution of journey. You type the event name to push and select a value.
 
-The analytics node can be used to capture custom events at any point in the execution of a journey. The data passed via the node will flow into the analytics table of Data Explorer inside the Insights section.
+The analytics node can be used to  send analytics events and capture custom events at any point in the execution of a flow.  You can type the event name to push and select a value.
+ The data passed via the node will flow into the analytics table of Data Explorer inside the Insights section.
 
 **Event** - This can be a static name or a variable which will be captured under the Events column on the analytics table.
 
@@ -234,7 +234,7 @@ The analytics node can be used to capture custom events at any point in the exec
 
 **Keys** - This is an optional field to capture metadata and will be created as a new column. Multiple columns can be created using keys.
 
-**Pro-tip**: Using custom events, you can analyse user flow from one journey/step to another, filter by specific custom events, summarise by different user responses, visualise drop offs and conversion funnels, etc.
+**Pro-tip**: Using custom events, you can analyse user flow from one flow/step to another, filter by specific custom events, summarise by different user responses, visualise drop offs and conversion funnels, etc.
 
 ![](https://i.imgur.com/GlLrwaa.png)
 
@@ -304,7 +304,7 @@ Then we store the whole response we will get from that API in a variable.
 #### Function (optional field)
 
  Sometimes, an API response can be too big, or not in a proper format for us to be able to parse easily. (A function is not needed just to access a simple field of a JSON API response). 
-In those cases, we can write a [function](http://localhost:3000/docs/platform_concepts/studio/build/code#3-functions-in-flow) to parse and transform API response according to our needs and return desirable response. 
+In those cases, we can write a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#3-functions-in-flow) to parse and transform API response according to our needs and return desirable response. 
 
 #### Snippet for function
 ```
@@ -502,7 +502,7 @@ This node enables bulk operations like "Import, Insert, Update" on tables (of bi
 
 #### Usage
 
-Follow the steps below: 
+To setup a sync database node, follow the steps below: 
 
 1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#sch-1) (if there is a requirement to schedule the database updates).
 
