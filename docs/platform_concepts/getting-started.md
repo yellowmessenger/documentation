@@ -29,6 +29,8 @@ Watch how to create a bot project.
 Get live sessions on how to create your own bot using yellow.ai by signing up to our free academy training: https://academy.ascend.yellow.ai/
 :::
 
+
+
 ## 1. Prerequisites 
 
 ### 1.1 Understand Your Use Case 
@@ -71,6 +73,37 @@ Functionalities of the modules are listed below:
 | Engage   | Make use of our world class automation to run marketing campaigns across 20+ channels.**[here](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)**.                                                           |
 | Channels | The bots you build can be plugged across various applications. A list on all the channels available can be found **[here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration)**.      |
 |      Integrations    |                                                                                                                   The yellow.ai Studio is the place to build those intelligent bots to power your business using conversational AI. To know more, click **[here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/razorpay)**.                                                                                                           |
+### 1.3 Keyboard shortcuts
+
+We have introduced keyboard shortcuts to make to easy for you to access key options and increase the productivity of repetetive tasks.
+
+:::note
+The scope in the table says from where you can you use the key to access that particular option.
+* Global: You can use these keyboard shortcuts from any screen of https://cloud.yellow.ai
+* Studio: You can use these keyboard shortcuts only in the Studio module.
+:::
+
+The following table lists the keyboard shortcuts for Studio module -
+
+Action | Shortcut Key | Accessibility
+------ | -------- | -----------
+Open new node selector | n | Studio
+Go to Intents page | i | Studio
+Go to Entities page | e | Studio
+Opens select flow/journey dropdown | s + f | Studio
+Go back (wherever you are) | b | Global
+Opens select bot dropdown | s + b| Global
+Go to Studio module | g + s| Global
+Go to Overview page | g + o| Global
+Go to Inbox module | g + i| Global
+Go to Channels module | g + c| Global
+Go to Engage module | g + e| Global
+Go to Insights module | g + r| Global
+Go to Integrations module | g + t| Global
+Switch to Development environment | m + d| Global
+Switch to Production environment | m + p| Global
+Switch to Sandbox environment | m + x| Global
+
 
 ## 2. Bot Building
 

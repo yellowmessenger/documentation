@@ -12,6 +12,9 @@ In this document, the following topics will be covered:
 5. [How to resolve clashes in intents and utterance?](#clash)
 6. [Best practices to create intents and utterances](#bp)
 
+:::tip
+You can access Intents using the keyboard shortcut `i`.
+:::
 
 :::info
 The words **Flows** and **Journeys** are used synonymously.
@@ -67,7 +70,7 @@ Creating intents for Jimmy's cafe:
 
 
 
----
+After creating the required flows, click on **Intents** in the **NLU** dropdown. Use the `i` key to access Intents directly from any Studio page. 
 
 ## <a name="add"></a> 2. Add Intents and Utterances  
 

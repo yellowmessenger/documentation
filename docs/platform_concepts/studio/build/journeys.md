@@ -66,16 +66,14 @@ Suppose the bot is used as an official portal to apply for leaves or check salar
 
 You must first create a flow and then trigger a flow. You can create a flow using a template or from scratch. When you create a flow from scratch, you create a placeholder for the flow first.
 
-Tto create a flow, follow the steps below:
+To create a flow, follow these steps:
 
 1. Log in to your studio account. On the Overview page, select your bot. 
-2. Select **Overview** > **Studio**.
+2. Select **Overview** > **Studio** (keyboard shortcut: g+s).
 
-:::info
-Learn more about [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview#access-studio). 
-:::
-
-3. Select **Flows** > Create flow.
+> Learn more about [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview#access-studio). 
+    
+3. Select **Flows** (keyboard shortcut: s+f)> Create flow.
 
 ![](https://i.imgur.com/YZXi95w.jpg)
 
