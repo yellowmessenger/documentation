@@ -263,6 +263,13 @@ A detailed description on how to configure your channel can be found **[here](ht
 #### Whatsapp as a Channel
 We have an elaborate guide on the best practices to be followed while setting up the **Whatsapp channel**. To learn more, click **[here](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel)**.
 
+## 4. Bot Troubleshooting 
+
+Configured bots might not work as expected due a few errors like code based error, flow based error, data type based errors, etc. 
+These can be resolved by understanding and debugging the error. To learn more, click **[here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow)**.
+
+----
+
 **What's Next?**
 
 Jump into Studio and automate your conversations like never before.
