@@ -102,4 +102,4 @@ Here we need to pass the bearer token under headers, so click on `Add Headers` a
 
 > What next?
 > * [Know how to send data to the API](send-data.md)
-> *[Monitor errors in APIs](api-settings.md)
+> * [Monitor errors in APIs](api-settings.md)
