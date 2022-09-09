@@ -21,7 +21,7 @@ This document covers the following topics:
 > Buy the latest **SUV** for your brand.
     - Entity 'Type of car'= SUV 
 
-## <a name="na"></a> 2. Navigation
+## <a name="na"></a> 2. Access Entities Use the keyboard shortcut: `e` from any of the Studio pages to land on to entities.
 
 * Open **Studio** > **NLU**. Click **Entities** from the dropdown. 
 

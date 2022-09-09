@@ -25,7 +25,7 @@ This article briefs you on understanding various components of Studio and helps 
 > Before designing your bot, you need to have the bot set up as mentioned in [Setting up your bot project](https://docs.yellow.ai/docs/cookbooks/getting_started).
 
 1. Log in to https://cloud.yellow.ai.
-2. On the switcher, click **Studio**.
+2. On the switcher, click **Studio**. You can also use the shortcut keys `g`+`s`.
 
 ![](https://i.imgur.com/QRWCXwr.gif)
 
@@ -124,6 +124,30 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
     
     
 ---
+
+## 4. Keyboard Shortcuts
+
+We have introduced shortcut keys to make it easy for you to access key options and increase the productivity of repetetive tasks.
+
+:::note
+You can directly use the keys to access the function from the screen where that particular option is available.
+:::
+
+The following table lists the keyboard shortcuts for Studio module -
+
+Action | Shortcut | Access from
+------ | -------- | -----------
+Open new node selector | n | Studio
+Go to Intents page | i | Studio
+Go to Entities page | e | Studio
+Opens select flow/journey dropdown | s + f | Studio
+Go back (wherever you are) | b | Global
+Opens select bot dropdown | s + b| Global
+Go to Studio module | g + s| Global
+Go to Overview page | g + o| Global
+
+
+
 
 **What Next?**
 
