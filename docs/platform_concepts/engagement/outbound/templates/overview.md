@@ -87,7 +87,6 @@ We support **delete** option for rejected templates only.
 
 ![](https://i.imgur.com/JYFFgAz.gif)
 
-
 ### Edit Message Templates
 
 You can always view your already approved and pending Message Templates via Template overview. 
