@@ -7,13 +7,24 @@ For simple & hassle-free management of bots across development environments, pub
 
 ![](https://cdn.yellowmessenger.com/dk2qgZwPfPA71626253412459.png)
 
+:::tip
+Use keyboard shortcuts to directly access diffferent environments-
+* Development enviroment: m + d
+* Live or production environment: m + p
+* Sandbox environment: m + x
+:::
+
 ### Development Mode 
+
+> Keyboard shortcut: m+d
 
 - This is meant for all the on going developments(new journeys/functions, etc) and testing them. Once all changes are working as expected, a request to Publish can be created. Publish request is approved by bot admins. Following video highlights how to create a publish request. 
 
 ![](https://i.imgur.com/NcNBztP.gif)
 
 ### Live Mode 
+
+> Keyboard shortcut: m+p
 
 - This is the equivalent of production environment where all the end users are interacting with the bot. This is a READ ONLY mode for Studio Module, so, no changes can be made. However, analytics of live users can be seen in Insights Module; campaigns can be run via Engagement Module and Agent can utilise Inbox to attend to customer queries. 
 

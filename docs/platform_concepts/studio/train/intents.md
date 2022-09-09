@@ -5,6 +5,9 @@ sidebar_label: Intents
 
 NLU deals with training machines to read and converse in any human language. Making AI Models understand nuances of language is very complex problem. Thankfully, using Linguistic Semantics i.e. by creating a structured format of sentences, models are able to percieve natural language with good accuracy.
 
+:::tip
+You can access Intents using the keyboard shortcut `i`.
+:::
 
 > - **Linguistic** : study of language
 > - **Semantics** : study of the meaning of words, phrases or sentences i.e. how arranging group of words in particular fashion to derive meaning.
@@ -50,7 +53,7 @@ To know more about setting up your first bot [click here](https://docs.yellow.ai
 
 ### 1.2 Open Intents Page
 
-After creating the required flows, click on **Intents** in the **NLU** dropdown.
+After creating the required flows, click on **Intents** in the **NLU** dropdown. Use the `i` key to access Intents directly from any Studio page. 
 
 ![](https://i.imgur.com/Eh21nPG.png)
 
