@@ -7,13 +7,16 @@ The studio provides a no-code bot-building platform that helps anyone create a b
 
 This article briefs you on understanding various components of Studio and helps you to get started with creating a bot.
 
-> If you're new to creating bots or looking for more practical end-to-end guides on bot building, see [Cookbooks](https://docs.yellow.ai/docs/cookbooks/template-bots/customer-support-bot).
 
- This document highlights:
+ In this article, you will learn:
  1. [Where to find Studio on the yellow platform](#as)
  2. [What are the UI elements available on Studio](#ui)
  3. [How to build a bot](#sb)
 
+
+:::note
+If you're new to creating bots or looking for more practical end-to-end guides on bot building, see [Cookbooks](https://docs.yellow.ai/docs/cookbooks/template-bots/customer-support-bot).
+:::
 ---
 
   
@@ -22,7 +25,9 @@ This article briefs you on understanding various components of Studio and helps 
 
 
 
-> Before designing your bot, you need to have the bot set up as mentioned in [Setting up your bot project](https://docs.yellow.ai/docs/cookbooks/getting_started).
+:::info
+Before designing your bot, you need to have the bot set up as mentioned in [Setting up your bot project](https://docs.yellow.ai/docs/cookbooks/getting_started).
+:::
 
 1. Log in to https://cloud.yellow.ai.
 2. On the switcher, click **Studio**. You can also use the shortcut keys `g`+`s`.
@@ -97,8 +102,9 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
 | Fallback                                                                                                                                                         | There could be instances where your bot does not understand how to respond to your user intent. Use Fallback to provide suggestions, answer from documents, connect to an agent, or show a message.  |
 |     Testing the bot  | [Test each flow](https://docs.yellow.ai/docs/platform_concepts/getting-started/#26-trigger-a-flow) as and when you create it to ensure it is working as desired. |
 
-> Create all the flows required for your use case and ensure these flows are properly connected. Test each flow to improvise it.
-
+:::note
+Create all the flows required for your use case and ensure these flows are properly connected. Test each flow to improvise it.
+:::
   
 
 4. **Train the bot**

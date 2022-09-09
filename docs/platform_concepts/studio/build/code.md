@@ -7,7 +7,7 @@ The code section is used to add function code. It is available in **Studio** -> 
 
 ![](https://i.imgur.com/vFb21QP.png)
 
-Following topics are discussed in this document: 
+In this article, you will learn: 
 
 1. [How to add a new function?](#1) 
     - [Function format](#11)
@@ -19,13 +19,17 @@ Following topics are discussed in this document:
 5. [Math operations](#math)
 
 
-> To work around this section, you will require minimal coding skills. 
+:::note
+To work around this section, you will require minimal coding skills.
+:::
 
 ## <a name="1"></a> 1. Function Creation 
 
 You can add a new function to write custom logic in the **`code`** section by clicking **+Add new function**.
 
-> To execute these functions in a flow, attach a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#function)- action node.
+:::note
+ To execute these functions in a flow, attach a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#function)- action node.
+:::
 
 ### <a name="11"></a>1.1 Format of cloud functions
 ```js

@@ -3,10 +3,10 @@ title: Prompt Nodes
 sidebar_label: Prompts
 ---
 
-
-
 Prompts are Interactive/conversational nodes which expect user input.
-When a user provides an invalid input to the prompt, a fallback message will be displayed. There are different types of prompt nodes: 
+When a user provides an invalid input to the prompt, a fallback message will be displayed. 
+
+In this article, you will learn about the different types of prompt nodes: 
 1. [User Details](#ud)- Used to collect user details.
 2. [Feature](#feature)- Used for creative display of information and collection of responses.
 3. [Media](#media)- Nodes to collect social media related details.
@@ -16,20 +16,21 @@ When a user provides an invalid input to the prompt, a fallback message will be 
 
 You can also make your **prompts smarter**. It will be discussed at the end of this document. 
 
-
-> **Note**
-> The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple texts for randomizing**. Enter variations of text that you want your users to see. This feature will display different message to the user in a random order (instead of the same message every time) making the conversation more humanly. 
+---
+The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple texts for randomizing**. Enter variations of text that you want your users to see. This feature will display different message to the user in a random order (instead of the same message every time) making the conversation more humanly. 
 >  
 > ![](https://i.imgur.com/KucDPVJ.png)
 
-
+---
 ## <a name="ud"></a>  1. User Details
 
 ### 1.1 Name
 
 Ask and validate the user name with this node. When the user enters a sentence instead of first + last name, validation fails and the bot replies- 'Can you please repeat this, looks like an Invalid name'.
 
-> If you are building a multilingual bot, it's recommended to use a Question node instead of a Name node.
+:::note
+ If you are building a multilingual bot, it's recommended to use a Question node instead of a Name node.
+:::
 
 ![](https://i.imgur.com/Rr81uih.png)
 
@@ -49,7 +50,9 @@ When the user enters a number of length greater or less than the expected number
 
 ![](https://i.imgur.com/OE9W6fH.png)
 
-> One phone node can only support validation of one country code. 
+:::info
+ One phone node can only support validation of one country code. 
+:::
 
 Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the number in it. 
 
@@ -63,8 +66,9 @@ Widgets are optional. Chat will not be disabled when a widget is sent, users can
 
 ![](https://i.imgur.com/XZ2Im2N.png)
 
-> This node is supported only on Web and Mobile apps.
-
+:::info
+ This node is supported only on Web and Mobile apps.
+:::
 
 Different types of date pickers are available to be displayed to the users. 
 Example of a Single Date Picker. 
@@ -140,7 +144,10 @@ You can also send a "**Share location**" button to allow users to share their cu
 ### 1.5 Input
 
 Ask and store user input and other comments with this node. 
-> Use this node only to store text comments from users - these replies will not trigger NLP.
+
+:::note
+ Use this node only to store text comments from users - these replies will not trigger NLP.
+:::
 
 Coming soon!
 
@@ -176,7 +183,9 @@ Display interactive carousel cards with buttons with this node. Carousel can be 
 Carousel response contains an option to add an image (less than 10MB), title and description.
 You can also add multiple buttons to a carousel. Clicking on the button can display a text, another flow, a URL entered or will be sent to the phone number. Configure this in the Carousel settings.
 
-> On WhatsApp, carousel cards do not support hyper linking and allow for up to 3 clickable buttons.
+:::info
+ On WhatsApp, carousel cards do not support hyper linking and allow for up to 3 clickable buttons.
+:::
 
 ![](https://i.imgur.com/seysnzN.png)
 
@@ -291,8 +300,10 @@ return new Promise(resolve => {
 
 ### 2.3 Feedback 
 
-> Supported for all the mobile SDKs (Flutter, Android, iOS) and web.
-> Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
+:::info
+- Supported for all the mobile SDKs (Flutter, Android, iOS) and web.
+- Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
+:::
 
 Display a feedback widget and receive ratings and feedback with this node. 
 On this prompt, you can configure what your questions should be when you ask for feedback. Feedback prompt will ask for a rating on a scale of 5, and the additional comments prompt will take additional comments from the user in a text field if entered.
@@ -300,10 +311,10 @@ On this prompt, you can configure what your questions should be when you ask for
 
 ![](https://i.imgur.com/v61glfs.png)
 
-
-> Feedback data can be found in the Insights section > Data Explorer. You do not need to store it separately.
-> You can access this data if needed by using {{variables.var_name.rating}} and {{variables.var_name.comment}}
-
+:::info
+- Feedback data can be found in the Insights section > Data Explorer. You do not need to store it separately.
+- You can access this data if needed by using {{variables.var_name.rating}} and {{variables.var_name.comment}}
+:::
 
 ---
 
@@ -406,9 +417,10 @@ Given below is the WhatsApp chat screen for the above flow.
 
 ### 2.5 Multi Select 
 
-> Supported for all the mobile SDKs (Flutter, Android , iOS) and web.
-> Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
-
+:::info
+- Supported for all the mobile SDKs (Flutter, Android , iOS) and web.
+- Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
+:::
 
 Similar to the Quick Replies node, display a question along with quick reply buttons where the user can select multiple responses with this node. 
 
@@ -512,7 +524,9 @@ This feature can be used for:
 * When there are multiple options available and a limit is set on the display, autocomplete is a good singular or assisting alternative to show options.
 * Faster typing, and improved user experience.
 
-> Autocomplete shows results after 3 characters are typed and it keeps filtering the results as the customer continues typing / or selects an option.
+:::note
+ Autocomplete shows results after 3 characters are typed and it keeps filtering the results as the customer continues typing / or selects an option.
+:::
 
 ![](https://i.imgur.com/anyDc8z.png)
 
@@ -586,8 +600,9 @@ For example, instead of setting a new user ID, you can use the phone number as a
 ![](https://i.imgur.com/UCfr8gn.png)
 
 
-> Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
-
+:::note
+ Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
+:::
 --- 
 
 ## **CSS Changes**

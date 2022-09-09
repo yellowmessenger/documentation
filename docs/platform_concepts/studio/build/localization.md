@@ -15,7 +15,7 @@ If the user prefers to converse in Hindi, the word **Hello** can be translated w
 Similarly, for Tamil, the word **Hello** can be translated to - **Wanakam**. 
 Few translations that could provide a human touch can be configured using the Translation feature. 
 
-This document discusses the following topics: 
+In this article, we will learn: 
 
 1. [How to configure multilingual messages](#1)
     * [Using Bulk Manage](#11)
@@ -117,7 +117,9 @@ Consider a use-case **without** **Translation**: Variables are accessed directly
 ![](https://i.imgur.com/IjmOSrM.png)
 
 
-> Only variables of the datatype string can be used in the Translation text. To learn about the variable datatypes stored in each node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
+:::note
+ Only variables of the datatype string can be used in the Translation text. To learn about the variable datatypes stored in each node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
+:::
 
 3. Add params in the message (**Studio** > **Build** > **Translation**). 
 Example- {{{variable.<var_name>}}}.
@@ -126,7 +128,9 @@ Example- {{{variable.<var_name>}}}.
 
 
 
-> Variable values will not change. Suppose a name is entered in English, it will not get translated to any other language through-out the flow.
+:::note
+Variable values will not change. Suppose a name is entered in English, it will not get translated to any other language through-out the flow.
+:::
 
 4. This can also be accessed through code. 
 

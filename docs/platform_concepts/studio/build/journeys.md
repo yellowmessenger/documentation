@@ -5,7 +5,7 @@ sidebar_label: Flow
 
 > The words **Flows** and **Journeys** are used synonymously.
 
-In this document, we discuss:
+In this article, you will learn: 
 
 1. [Home](#home)
 2. [Workflow](#workflow)
@@ -120,8 +120,9 @@ To configure a start trigger, follow the steps below:
 
 ![](https://i.imgur.com/uRV6zAC.png)
 
-> Start trigger enables you to configure the initiation of a bot communication flow. When a customer types a query, the bot starts the conversation based on the logic of the trigger.
-
+:::info
+ Start trigger enables you to configure the initiation of a bot communication flow. When a customer types a query, the bot starts the conversation based on the logic of the trigger.
+:::
 
 Flow is triggered using one of the following:
 
@@ -150,11 +151,13 @@ Flow is triggered using one of the following:
 
 ![](https://i.imgur.com/zr7bkqW.jpg)
 
-> Click **Add new trigger** to add additional triggers for the flow. You can train the bot with more than one start trigger to accommodate maximum use cases. Every trigger type has a logic for triggering the start of the communication. At least one logic must meet, when a customer is interacting with the website or application, to trigger the communication flow.
->
-> ![](https://i.imgur.com/fF9TrGB.png)
->
-> For example, a start trigger can have two events, three intents, and five entities. If you meet any conditions configured for the types of a trigger, the bot triggers the flow.
+:::info
+- Click **Add new trigger** to add additional triggers for the flow. You can train the bot with more than one start trigger to accommodate maximum use cases. Every trigger type has a logic for triggering the start of the communication. At least one logic must meet, when a customer is interacting with the website or application, to trigger the communication flow.
+
+ ![](https://i.imgur.com/fF9TrGB.png)
+
+- For example, a start trigger can have two events, three intents, and five entities. If you meet any conditions configured for the types of a trigger, the bot triggers the flow.
+:::
 
 ---
 
@@ -189,10 +192,10 @@ Example:
 
 Ensure that you clear the browser cache before you preview the bot. It is recommended to use Incognito mode or Private window to preview flows.
 
-
->  * Use `?` to append right after the base URL of the bot. Example: https://cloud.yellow.ai/liveBot/x1635319612954?ym.triggerJourney=feedback
->  * Use & if you want to append it after a variable. Example: https://cloud.yellow.ai/liveBot/x1635319612954?region=&ym.triggerJourney=feedback
-
+:::note
+  * Use `?` to append right after the base URL of the bot. Example: https://cloud.yellow.ai/liveBot/x1635319612954?ym.triggerJourney=feedback
+  * Use & if you want to append it after a variable. Example: https://cloud.yellow.ai/liveBot/x1635319612954?region=&ym.triggerJourney=feedback
+:::
   
 
 ### 5.2 Trigger via. Code

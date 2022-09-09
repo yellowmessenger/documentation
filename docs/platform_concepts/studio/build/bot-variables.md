@@ -4,7 +4,7 @@ sidebar_label : Variables
 ---
 
 
-This document covers: 
+In this article, you will learn: 
 1. [What is a variable?](#hed-1)
 2. [What are the different types of variables?](#hed-3)
 3. [How to create a variable?](#hed-2)
@@ -83,8 +83,10 @@ In the following example, **Email** is stored as a Global variable (because it w
 ### 2.2 System Variables
 
 These are fixed sets of variables.  
-> The variable names can not be altered and new variables can not be added to this category.
 
+:::note
+ The variable names can not be altered and new variables can not be added to this category.
+:::
 
 The following are the system variables available on the platform:
 
@@ -129,14 +131,16 @@ Config variables can change their value (but not specifically for each session /
 
 There are 22 user properties that are tracked by the bot. These values will be different for each instance (specific to each user). Click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data) to learn more. 
 
-> User properties cannot be modified. New variables cannot be added. 
-
+:::note
+ User properties cannot be modified. New variables cannot be added. 
+:::
 ----
 
 ## <a name="hed-2"></a> 3. Create a Variable
 
-> Custom and Config variables can be added. 
-
+:::note
+ Custom and Config variables can be added. 
+:::
 
 1. Open **Studio**. On the right, click the **Variable** icon. 
 
@@ -151,11 +155,12 @@ There are 22 user properties that are tracked by the bot. These values will be d
 5. Sample **Value** will be displayed automatically. Custom values for that data type to be stored in the variable can also be added. 
 6. Click **+Add**. 
 
-> Two types of custom variables can be created - Journey and Global. 
-> **Journey** variables are created to be used for that specific flow. **Global** variables can be used anywhere on the platform. Select the required variable option before adding a custom variable. 
-> 
->   ![](https://i.imgur.com/b3213L7.png)
-
+:::info
+- Two types of custom variables can be created - Journey and Global. 
+- **Journey** variables are created to be used for that specific flow. **Global** variables can be used anywhere on the platform. Select the required variable option before adding a custom variable. 
+ 
+![](https://i.imgur.com/b3213L7.png)
+:::
 
 ---
 
@@ -175,8 +180,9 @@ Two different methods to store node data to a variable:
 
 ![](https://i.imgur.com/OewhdE2.png)
 
-> Only names of the existing variable are displayed on the **store response in** dropdown. Create a new variable if you want to add more variables to the dropdown.
-
+:::note
+ Only names of the existing variable are displayed on the **store response in** dropdown. Create a new variable if you want to add more variables to the dropdown.
+:::
 
  #### 4.1.2 Variables -action node
  
@@ -195,8 +201,9 @@ Bot variable can be accessed inside any node using the notation `{{{variables.va
 
 Variables created above can be accessed using {{{variables.category}}}.
 
->  Journey and Global variables get **expired after 48 hours** of inactivity.
-
+:::note
+  Journey and Global variables get **expired after 48 hours** of inactivity.
+:::
 
  ### 4.3 Variable Datatypes
 
