@@ -146,7 +146,7 @@ module.exports = {
             "platform_concepts/studio/train/add-faqs",
             "platform_concepts/studio/train/add-contextual-response",
             "platform_concepts/studio/train/what-is-document-cognition",
-            "platform_concepts/studio/train/utterance-report",
+           // "platform_concepts/studio/train/utterance-report",
             
           ],
         },

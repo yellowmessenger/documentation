@@ -5,7 +5,7 @@ sidebar_label: Overview
 
 Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys).  
 
-In this section you will learn:
+In this article, you will learn:
 1. [Types of nodes](#types)
 2. [How to add nodes](#addnode)
 3. [What are the configurations available for nodes](#config)

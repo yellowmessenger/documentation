@@ -5,7 +5,8 @@ sidebar_label: Actions
 
 
 Actions are non-interactive nodes that can be used to perform a specific task (background action). These nodes will not display any messages to the user while having a conversation but they run the said tasks in the background. 
-Following are the different types of action nodes: 
+
+Different types of action nodes that will be discussed in this article are: 
 
 1. [General](#gen)
 2. [Code Based](#cb)
@@ -89,9 +90,10 @@ Select the number of minutes/hours you want the bot to wait for before executing
 
 ![](https://i.imgur.com/Bh3ly48.png)
 
-> Alternative method is to set the delay on each of the nodes: 
-> ![](https://i.imgur.com/t8cBzXn.png)
-
+:::info
+ Alternative method is to set the delay on each of the nodes: 
+![](https://i.imgur.com/t8cBzXn.png)
+:::
 -----
 
 ### 1.7 Raise Ticket 
@@ -188,8 +190,9 @@ As configured in Inbox Settings, [Tags](https://docs.yellow.ai/docs/platform_con
 
 Output of Raise Ticket Node dictates general behaviour for any error in creating a ticket. In most real life scenarios, it is preferred to show appropriate reasons to users as to why they cannot to an agent. 
 
-> Once any specific event is active and configured, the corresponding flow will be given preference. Bot is never paused unless a ticket is in ASSIGNED state (i.e. Agent is interacting with the user).
-
+:::note
+Once any specific event is active and configured, the corresponding flow will be given preference. Bot is never paused unless a ticket is in ASSIGNED state (i.e. Agent is interacting with the user).
+:::
 
 Two steps to handle custom scenarios are as follows:
 1. In Event Hub, activate the custom inbox event. Scenarios that can be handled:
@@ -212,7 +215,9 @@ If the bot is supposed to respond with a different message outside of agent work
 
 <img src="https://cdn.yellowmessenger.com/ciDa5Gn2ZzbK1625675537775.png" alt="drawing" width="60%"/>
 
-> The bot default timezone is considered while evaluating whether a user is outside working hours.
+:::note
+The bot default timezone is considered while evaluating whether a user is outside working hours.
+:::
 
 Inbox support auto translate feature out of the box so agents don't need to know the customer's language in order to help them. Just enable `Translate User Message` in the raise ticket node configuration to use this feature.
 
@@ -324,7 +329,9 @@ return new Promise
 
 ```
 
-> **Note**: To be able to invoke an API at a certain point, it should already be added/configured at the API management section of the platform. All APIs added there are available in dropdown of the action node. [Click here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to learn how to add APIs.
+:::note 
+To be able to invoke an API at a certain point, it should already be added/configured at the API management section of the platform. All APIs added there are available in dropdown of the action node. [Click here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to learn how to add APIs.
+:::
 
 ![](https://i.imgur.com/dklBqQZ.jpg)
 
@@ -333,6 +340,7 @@ return new Promise
 ### 2.2 Variables 
 
 Set the value of one or more variables with this node. Learn how to create a variable [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
+
 > If the value is blank, it will be set to an empty string.
 
 ![](https://i.imgur.com/FTDanHl.png)
@@ -466,7 +474,9 @@ This language will be permanently set (currently set 2 days of expiry), unless i
 
 ![](https://i.imgur.com/1jPB6iz.png)
 
-> Language can only be changed to only if that language is configured in bot settings, otherwise, the node will fail. 
+:::note
+Language can only be changed to only if that language is configured in bot settings, otherwise, the node will fail. 
+:::
 
 ---
 
@@ -493,8 +503,9 @@ Make voice calls with this node.
 
 ## <a name="wf"></a> 4. Workflow nodes
 
-> These nodes are only available when a flow is created as a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#3-workflow). 
-
+:::info
+These nodes are only available when a flow is created as a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#3-workflow). 
+:::
 
 ### 4.1 Sync Database
 
@@ -526,9 +537,11 @@ To setup a sync database node, follow the steps below:
 
 6. When this is triggered, the node pulls all the data through API. 
 
-> Data is supported only in CSV format.
-> There is no restriction on the file size. 
-> All the rows will be imported, processed and sent to the selected table to perform the selected action.
+:::note
+- Data is supported only in CSV format.
+- There is no restriction on the file size. 
+- All the rows will be imported, processed and sent to the selected table to perform the selected action.
+:::
 
 **(Optional)**
 

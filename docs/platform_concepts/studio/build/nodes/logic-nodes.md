@@ -40,7 +40,9 @@ Select a value (only one value can be selected) from the dropdown based on your 
 * **System** - Page URL. This will branch conversation flow based on the page URL detected. 
 
     
-> These dropdown values are derived from the [data available](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) in the system. **Journey variables** are created by the user for that flow, **Global variables** are asked and extracted from the other nodes, **User properties** are extracted from variables and few are automatically fetched by the system like IP, Country, Timezone, Created at, etc. 
+:::note
+ These dropdown values are derived from the [data available](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) in the system. **Journey variables** are created by the user for that flow, **Global variables** are asked and extracted from the other nodes, **User properties** are extracted from variables and few are automatically fetched by the system like IP, Country, Timezone, Created at, etc. 
+:::
 
 ### 1.2 Condition
 
@@ -59,7 +61,7 @@ This dropdown will consist of:
 3. System Variables
 4. User Properties
 
->When If-condition is **Others** or **System** these values are updated automatically.
+> When If-condition is **Others** or **System** these values are updated automatically.
 
 ### 1.4 Else Condition
  

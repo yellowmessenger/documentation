@@ -1,11 +1,11 @@
 ---
-title: Use access token dirctly from API response
+title: Use access token directly from API response
 sidebar_label : Use dynamic access token
 ---
 
 We support different authentication types to ensure you can configure any type of API irrespective of the authentication method. You can use Basic Auth, OAuth, Barer token and more.
 
-In thos article, you will learn - 
+In this article, you will learn - 
 1. Hoe to pass access token variables in the API header
 2. How to use access token variable in the code function
 

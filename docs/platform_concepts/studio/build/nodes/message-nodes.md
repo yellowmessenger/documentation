@@ -24,8 +24,9 @@ You can set a delay in displaying each of these nodes.
 
 ![](https://i.imgur.com/t7Z5eb7.jpg)
 
-> Alternative to this is to use a [delay node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#16-delay).
-
+:::info
+ Alternative to this is to use a [delay node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#16-delay).
+:::
 ---
 
 Given below is a flow created using message nodes to brief the users **about a coffee company**.
@@ -153,7 +154,9 @@ Click **Fetch from** and add a dynamic value - if required:
 
 Configure lists displayed on the WhatsApp channel with this node. 
 
-> This node does not expect any user reply, hence the fallback message need not be configured nor this node is expected to follow another node. It simply displays the list values. This node is used for the interactive purposes only. 
+:::note
+ This node does not expect any user reply, hence the fallback message need not be configured nor this node is expected to follow another node. It simply displays the list values. This node is used for the interactive purposes only. 
+:::
 
 Whatsapp API provides a better UI for businesses to send List items (within 24 hours window). 
 To create a Whatsapp List:
@@ -246,7 +249,9 @@ Click **Fetch from** and add a dynamic value - if required:
 
 
 
-> Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
+:::note
+ Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
+:::
 
 ---
 
