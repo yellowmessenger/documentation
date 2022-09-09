@@ -128,7 +128,7 @@ module.exports = {
               ],
             },
             "platform_concepts/studio/build/code",
-            "platform_concepts/studio/build/math-ops",
+           // "platform_concepts/studio/build/math-ops",
             "platform_concepts/studio/build/bot-variables",
             "platform_concepts/studio/build/localization",
           ],       

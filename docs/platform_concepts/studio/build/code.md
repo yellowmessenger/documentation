@@ -3,9 +3,9 @@ title: Code
 sidebar_label : Code
 ---
 
-Code section is used to add function code. It is available in **Studio** -> **Build** -> **Code**.
+The code section is used to add function code. It is available in **Studio** -> **Build** -> **Code**.
 
-![](https://i.imgur.com/jNHxOtw.png)
+![](https://i.imgur.com/vFb21QP.png)
 
 Following topics are discussed in this document: 
 
@@ -16,10 +16,14 @@ Following topics are discussed in this document:
 2. [Tools and settings](#ts) 
 3. [Using function in a flow](#uf)
 4. [Sample code](#sc)
+5. [Math operations](#math)
+
+
+> To work around this section, you will require minimal coding skills. 
 
 ## <a name="1"></a> 1. Function Creation 
 
-You can add a new function to write a custom logic in the **`code`** section.
+You can add a new function to write custom logic in the **`code`** section by clicking **+Add new function**.
 
 > To execute these functions in a flow, attach a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#function)- action node.
 
@@ -56,7 +60,9 @@ Useful args to access in code:
 
 Click the warnings link at the bottom left of the screen and correct the displayed warnings/errors.
 
-![](https://i.imgur.com/PIhDXVB.jpg)
+![](https://i.imgur.com/712jhMk.jpg)
+
+---
 
 ## <a name="ts"></a> 2. Tools and Settings 
 
@@ -64,31 +70,31 @@ Click the warnings link at the bottom left of the screen and correct the display
 * **Logs** - Helps in identifying events that occur during preview testing, and debugging.
 * **Compare** - Compares the Production and Staging functions. 
 * **Flows** - Used to copy and paste the flow and step names from this page. 
-* **Localization** - Localization can be used to set up a bot response or messages in different languages by adding messages and it can be configured according to preferred language. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#31-variable-in-localisation-message) to learn more.
+* **Localization** - Localization can be used to set up a bot response or messages in different languages by adding messages and it can be configured according to the preferred language. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#31-variable-in-localisation-message) to learn more.
 
-![](https://i.imgur.com/oqLieOr.png)
+![](https://i.imgur.com/0jxDdIS.png)
 
 
 ### 2.1 Flows
 
-Flows functionality is to quickly support copy and visit a flow with use of their names.
+Flows functionality is to quickly support copy and visit a flow with the use of their names.
 
 - Select a flow-category.
 - Select a flow.
     - You will have an option to copy the flow name. 
     - By clicking the flow link, you will be redirected to the respective flow. You can check how the function works for that flow. 
-    - You can view the nodes used in each of the flow. 
+    - You can view the nodes used in each of the flows. 
 
 
-![](https://i.imgur.com/Erv0gxk.jpg)
+![](https://i.imgur.com/pmnxMAB.png)
 
-
+---
 
 ## <a name="uf"></a> 3. Functions in Flow
 
 Function can be used to parse data through an API. Function is also used to manipulate API responses.
 
-Follow the below steps to create a flow with a function node: 
+ To create a flow with a function node, follow the below steps: 
 
 > **Use-case**: Function to parse Weather Data API and to show the different parameters in a carousel format. 
 
@@ -105,22 +111,14 @@ For example: transformationFunction (as shown below).
 ![](https://i.imgur.com/xiQ3wUM.png)
 
         
-3. Fetch and parse the API response as JSON object. 
+3. Fetch and parse the API response as a JSON object. 
         
         
 ![](https://i.imgur.com/ZE7whNf.png)
 
 In the above code, Weather Data is parsed and stored in the response body in a variable “main”.
         
- 
-4. The API data is now ready to be used in your bot journey. 
-
-You can store the entire JSON body data in a variable and parse through them for each parameter of weather data that you want to display in the bot.
-
-
-![](https://i.imgur.com/mWH4Vy6.png)
-
-
+4. The API data is now ready to be used in your bot flow. 
 5. After the global variable is added, open the respective API node and store the response in that global variable.
         
         
@@ -140,6 +138,7 @@ You can use the variable symbol and access the various parameters of the JSON ob
 
 ![](https://i.imgur.com/gBjO3vm.png)
 
+----
 
 ## <a name="sc"></a> 4. Sample code
 
@@ -163,7 +162,7 @@ return new Promise(resolve => {
 ### 4.2 Decode BASE64
 
 The Base64 Alphabet contains 64 basic ASCII characters.
-If we receive an encrypted string through API, then we need to decrypt it first then only we can get the actual object. Then upload to YM Server, at last we can share the URL.
+If we receive an encrypted string through API, then we need to decrypt it first then only we can get the actual object. Then upload to YM Server, at last, we can share the URL.
 
 ```js
     let call_api = await app.executeApi('api_name', { argument: _value});
@@ -188,3 +187,115 @@ If we receive an encrypted string through API, then we need to decrypt it first 
 For more information, [click here](https://developer.mozilla.org/en-US/docs/Glossary/Base64).
 
 
+---
+
+## <a name="math"></a> 5. Math operations
+
+Our code section enables us to perform various types of mathematical operations in each session (that is, the conversation between the end user and the bot). 
+
+**Use-cases**
+
+To understand the math operations, consider the following use-cases: 
+
+1. [Converting user input from minutes to seconds.](#m2s)
+2. [Calculating the date 45 days before the current date.](#dyh)
+
+### <a name="m2s"></a> 5.1 Minutes to seconds
+
+1. Create a flow to take **Number of minutes** as an input and store it in a variable. 
+
+
+![](https://i.imgur.com/6m4eA3L.png)
+
+2. Take the input from the user for the number of minutes (stored in pizzaMin)
+
+
+![](https://i.imgur.com/uqfI60v.png)
+
+3. Call the variable in the function using the format shared below
+> let minutesTaken = data.variables.pizzaMin {{**data.variables.variableName**}}
+
+```
+return new Promise(resolve => {
+    let minutesTaken = data.variables.pizzaMin;
+    let secondsTaken = minutesTaken * 60;
+    let stringSeconds = secondsTaken.toString();
+    resolve(stringSeconds);
+  });                          
+```
+
+4. Convert the string into an integer using parseInt().
+5. Perform a regular mathematical operation.
+6. number of seconds = number of minutes x 60.
+7. Convert it back into a string using toString().
+
+![](https://i.imgur.com/Y68T3s3.png)
+
+8. resolve() the value and assign a variable in the function node.
+
+
+
+
+
+### <a name="dyh"></a> 5.2 To calculate 45 days before the present date
+
+1. Create a flow that uses the `{{date}}` object in the variables section which shares the present date, month, year and other details, using the Variables node.
+```
+{
+    //Date object
+    
+    "timestamp": "Wed, 28 Jul 2022 05:04:18 GMT",
+    "year": 2022,
+    "month": 7,
+    "date": 28,
+    "day": "Thursday",
+    "hour": 5,
+    "minute": 4
+}
+
+```
+![](https://i.imgur.com/o4DSX2B.png)
+
+3. Assign the timestamp as shown below and run a function to calculate 45 days before the present date.
+![](https://i.imgur.com/UUkUjEU.png)
+
+4. Use the variable `bookingDate` inside our scheduleBooking() function.
+
+```
+return new Promise(resolve => {
+    let bookingDate = data.variables.bookingDate;
+    let dt = new Date(bookingDate);
+
+    dt.setDate(dt.getDate() - 45);
+    console.log("Final Timestamp ---> ", dt.toLocaleString());
+
+    let pdate = dt.toLocaleString()
+    console.log(pdate,"PDATE IS --->");
+    const myArraydate = pdate.split(",");
+    const myArray = myArraydate[0].split("/");
+    let newDate = myArray[1] + "/" + myArray[0] + "/" + myArray[2]
+    data.variables.bookingDate = newDate;
+
+    resolve(newDate);
+});    
+```
+
+5. resolve() the data back into the bookingDate variable in the function.
+
+![](https://i.imgur.com/KwMGBFu.png)
+
+
+### 5.3 Output
+
+The text node first prints the current timestamp and the second message is exactly 45 days from the present date.
+
+![](https://i.imgur.com/iPAqfeC.png)
+
+ 
+
+---
+
+**What Next?**
+
+* Create your own function and use it by adding an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#api) in the flow.
+* You can visit our [community](https://community.yellow.ai/) and share your ideas with other fellow bot builders!!

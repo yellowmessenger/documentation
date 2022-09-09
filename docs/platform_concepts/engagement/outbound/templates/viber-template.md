@@ -3,7 +3,7 @@ title: Viber Business Template
 sidebar_label: Viber Template
 ---
 
-Yellow.ai now supports sending campaigns on [Viber Business](https://www.viber.com/en/). These campaigns < TBA LINK TO VIBER CAMPAIGN > can be sent out using customised [templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview).  
+Yellow.ai now supports sending campaigns on [Viber Business](https://www.viber.com/en/). These [campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/viber-campaign) can be sent out using customised [templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview).  
 Using this feature brands can engage with the customers for various **use-cases** like: 
 
 1. **Transactional Updates**: OTP, Order status, Payment remainders, feedback prompts, cart recovery
