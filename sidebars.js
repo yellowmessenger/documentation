@@ -100,7 +100,13 @@ module.exports = {
   ],
 
   platform_concepts: [
+    {
+      type: "category",
+      label: "Get Started",
+      collapsed: true,
+      items: [
     "platform_concepts/getting-started",
+      ]},
     {
       type: "category",
       label: "Studio",
