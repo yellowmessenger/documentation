@@ -89,6 +89,9 @@ After creating the required flows, click **Studio** > **Train** > **Intents**.
 
 ![](https://i.imgur.com/5EJzAUi.jpg)
 
+:::tip
+You can access Intents using the keyboard shortcut `i`.
+:::
 
 ### 2.3 Add Intent
 
