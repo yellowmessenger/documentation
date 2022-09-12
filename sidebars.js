@@ -106,7 +106,9 @@ module.exports = {
       collapsed: true,
       items: [
     "platform_concepts/getting-started",
-      ]},
+    "platform_concepts/Getting Started/keyboard-shortcuts",
+      ]
+    },
     {
       type: "category",
       label: "Studio",
