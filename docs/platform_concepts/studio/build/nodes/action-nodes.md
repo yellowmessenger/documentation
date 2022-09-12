@@ -339,11 +339,32 @@ To be able to invoke an API at a certain point, it should already be added/confi
 
 ### 2.2 Variables 
 
-Set the value of one or more variables with this node. Learn how to create a variable [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
+**Store response in** option available in most of the nodes are used to store variable values, **Variable node** is used for specific logical usecases when you want to manipulate just a variable value or skip particular steps but not do any further actions. 
+Set the value of one or more variables with this node. 
 
-> If the value is blank, it will be set to an empty string.
+Select the following:
 
-![](https://i.imgur.com/FTDanHl.png)
+- **Name**: Logic driven variable whose value you would like to change in this flow. 
+- **Value**: Existing variable that hold some value (if the value is blank, it will be set to an empty string).
+
+:::info
+Learn how to create a variable [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
+:::
+
+
+![](https://i.imgur.com/aZzdF0J.png)
+
+
+**Use case**
+
+1. **Variable node to store InitialCounterValue**: In a flow that records if a bot user is answering all the questions and reaching the end of the flow, at the start of the flow, InitialCounterValue is set to 0 (False) and when the user completes the flow the InitialCounterValue will change to 1 (True). If the flow is not completed (InitialCounterValue=0), a notification can be sent to user asking them to complete the flow. 
+2. **Variable node can be used to store values that are not recorded by other nodes**: To obtain bot users phone number on a a web bot, you must use a Phone node/question node to pose a question and obtain the phone number, but while using the same on WhatsApp bot, the number can be fetched from the user profile. In this case, Phone Variable can be set to Phone- User Properties variable (which gets fetched automatically in WhatsApp bots).
+
+
+
+
+
+
 
 -----
 

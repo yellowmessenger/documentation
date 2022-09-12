@@ -3,17 +3,25 @@ title : Entities
 sidebar_label : Entities
 ---
 
-Entities are background or any additional information that is valuable to the message. At times, users tend to provide all the information(entities) upfront in an utterance. Using entities appropriately in bot model training leads to a better conversational experience.
 
-This document covers the following topics: 
+In this article, you will learn: 
 
-1. [Examples of entities](#ex)
+1. [Introduction](#ex)
 2. [Where to find entities](#na)
 3. [How to add and train entities](#ate)
 4. [Types of entities](#et)
 5. [Autoskipping prompts using entities](#ape)
 
-## <a name="ex"></a> 1. Examples 
+:::tip
+You can access Entities using the keyboard shortcut `e`.
+:::
+
+---
+## <a name="ex"></a> 1. Introduction 
+
+
+
+Entities are background or any additional information that is valuable to the message. At times, users tend to provide all the information(entities) upfront in an utterance. Using entities appropriately in bot model training leads to a better conversational experience.
 
 > I want to book an appointment with the **Dentist** on **27th May**.
     - Entity 'Type of Doctor' = Dentist, 'Date' = 27th May
@@ -21,40 +29,46 @@ This document covers the following topics:
 > Buy the latest **SUV** for your brand.
     - Entity 'Type of car'= SUV 
 
-## <a name="na"></a> 2. Access Entities Use the keyboard shortcut: `e` from any of the Studio pages to land on to entities.
 
-* Open **Studio** > **NLU**. Click **Entities** from the dropdown. 
+---
 
-![](https://i.imgur.com/V8vaG07.png)
+## <a name="na"></a> 2. Navigation
+
+* Open **Studio** > **Train**. Click **Entities** (keyboard shortcut `e`).
+
+![](https://i.imgur.com/jq1QXyS.png)
 
 ## <a name="ate"></a> 3. Add and Train Entities 
 
-* For the bot to recognize entites they must be added and trained. 
+* For the bot to recognize entities they must be added and trained. 
 
-**Add Entities** 
+### 3.1 Add Entities
 
 * Click **+Add new entity**.
 * Add **Name**. Select a [Type](#et) from the dropdown.
 
-> Entity name should be alphanumeric, lower case and must not contain spaces.
+:::note
+Entity name should be alphanumeric, lower case and must not contain spaces.
+:::
 
-![](https://i.imgur.com/CE2V23U.png)
+![](https://i.imgur.com/lrVhau8.png)
 
-* If **Enable similar entities** is selected, bot detects an entity even if there is a partial match. For example: "How much does **mahindra scorp** cost?" will look for the entity- **Mahindra Scorpio** as it is a partial match. 
+* If **Enable similar entities** is selected, the bot detects an entity even if there is a partial match. For example: "How much does **mahindra scorp** cost?" will look for the entity- **Mahindra Scorpio** as it is a partial match. 
 
 
 
-**Train entities**
+### 3.2 Train entities
 
 * Click **Train entities**. 
 * Select **Model Type** (it can be trained for english/multiple-languages).
 
-![](https://i.imgur.com/SxmQacm.png)
+![](https://i.imgur.com/9rCHT2f.png)
 
 
-* When **Fuzzy search** is selected, bot searches for text that matches a term closely instead of exactly even when the terms are misspelled. For example, fuzzy search for "rode" will find terms similar in spelling, such as “ride” or “node”. 
+* When **Fuzzy search** is selected, the bot searches for text that matches a term closely instead of exactly even when the terms are misspelt. For example, a fuzzy search for "rode" will find terms similar in spelling, such as “ride” or “node”. 
 
 
+----
 
 ## <a name="et"></a> 4. Entity Types
 In the [yellow.ai](https://cloud.yellow.ai/) platform, following entities can be defined:
@@ -64,20 +78,24 @@ In the [yellow.ai](https://cloud.yellow.ai/) platform, following entities can be
 3. **Text Type**
 4. **System Entities**
 
+---
 
 ### 4.1 List 
 
-* These consist of around 60-70% usecases such as product catalogues, type of leaves, mode of payments, etc. Ideally when all possible distinct values of the entity are known, list type of entity can be used. For example:
+* These consist of around 60-70% usecases such as product catalogues, type of leaves, mode of payments, etc. Ideally, when all possible distinct values of the entity are known, list type of entity can be used. For example:
     * **Type of loan** : Home, Personal, Car, Bike. 
     * **Type of Leave** : Sick, Casual, Privilege, Maternity, Paternity.
 * Select **List** type, and **List items**.
 * In the list, add **Names** of the items. 
 * For each item, **Name** and **Synonyms** can be added.
 
-> **Synonyms** are multiple variations - *Car* can be regarded as *4 wheeler* and *Bike* as *2 wheeler*. Synonyms can be other meanings of the entity in other languages.
+:::info
+**Synonyms** are multiple variations - *Car* can be regarded as *4 wheeler* and *Bike* as *2 wheeler*. Synonyms can be other meanings of the entity in other languages.
+:::
 
-![](https://i.imgur.com/ZrZaS93.png)
+![](https://i.imgur.com/UEQWA4v.png)
 
+---
 
 ### 4.2 Regex
 
@@ -88,23 +106,27 @@ Cases when the pattern of the information is known but there is no way to list a
 
 Defining these entities is very simple, by entering the regular expression (general format of input) Example, Regex for PAN card- "[A-Z]{5}[0-9]{4}[A-Z]{1}".
 
-
+---
 ### 4.3 Text
 
 Text Type entities can be used when the use-case doesn't require list/regex type (when there is no specific list/format of entity items). 
 
 * Add **Entity name** and **Type**.
 
-![](https://i.imgur.com/i5RGVng.png)
+![](https://i.imgur.com/m8WfLmL.png)
 
-* Open **Studio** > **NLU** > **Intents** and [add intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intent).  
+* Open **Studio** > **Train** > **Intents** and [add intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intent).  
 * In each Intent- user utterance, select a word that hold the meaning of an entity and right click. Select the required entity.
 
-![](https://i.imgur.com/P6WYblV.jpg)
+![](https://i.imgur.com/yg1p3Z6.jpg)
 
 
-> It is highly recommended not to use text entity unless required as it is not very definate. 
- 
+:::note
+It is highly recommended not to use text entity unless required as it is not very definite. 
+:::
+
+---
+
 ### 4.4 System Entities
 
 Apart from the List and Pattern type entities, a set of entities are recognized by the model out-of-the-box without any specific training. These include - 
@@ -123,13 +145,15 @@ Apart from the List and Pattern type entities, a set of entities are recognized 
 
 ## <a name="ape"></a> 5. Autoskipping prompts using entities
 
-To detect entity and skip prompts, open **Make prompts smarter** of that respective prompt and select the entity value. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#4-make-prompt-smarter) to learn more on Make prompts smarter option. 
+To detect entity and skip prompts, open **Make prompts smarter** of that respective prompt and select the entity value. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#5-make-prompt-smarter) to learn more on Make prompts smarter option. 
 If the entity value is detected/ present in the memory, that prompt will be skipped from the flow. 
 
 
-For example, if date entity is selected for autoskipping in date prompt, value of date will be automatically assigned to given date and user will not be shown that prompt. 
+> For example, if date entity is selected for autoskipping in date prompt, value of date will be automatically assigned to given date and user will not be shown that prompt. 
 
-![](https://i.imgur.com/3FJBAdK.png)
+![](https://i.imgur.com/e8gUqST.png)
 
 
-> Test Entities detected in a phrase/utterance using [Test your bot](https://docs.yellow.ai/docs/platform_concepts/studio/train/tools#21-test-your-bot) option in tools.
+:::note
+You can test Entities detected in a phrase/utterance using [Test your bot](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) option in tools.
+:::
