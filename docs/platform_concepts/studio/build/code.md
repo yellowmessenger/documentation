@@ -3,10 +3,6 @@ title: Code
 sidebar_label : Code
 ---
 
-The code section is used to add function code. It is available in **Studio** -> **Build** -> **Code**.
-
-![](https://i.imgur.com/vFb21QP.png)
-
 In this article, you will learn: 
 
 1. [How to add a new function?](#1) 
@@ -18,10 +14,17 @@ In this article, you will learn:
 4. [Sample code](#sc)
 5. [Math operations](#math)
 
-
 :::note
 To work around this section, you will require minimal coding skills.
 :::
+
+The code section is used to add function code. It is available in **Studio** -> **Build** -> **Code**.
+
+![](https://i.imgur.com/vFb21QP.png)
+
+
+
+
 
 ## <a name="1"></a> 1. Function Creation 
 

@@ -32,13 +32,13 @@ Before designing your bot, you need to have the bot set up as mentioned in [Sett
 1. Log in to https://cloud.yellow.ai.
 2. On the switcher, click **Studio**. You can also use the shortcut keys `g`+`s`.
 
-![](https://i.imgur.com/QRWCXwr.gif)
+![](https://i.imgur.com/gPU08xO.png)
 
 ---
 
 ## <a name="ui"></a> 2. Understand UI elements
 
-![](https://i.imgur.com/WNVEpEO.png)
+![](https://i.imgur.com/yCTY5Dz.png)
 
 Option | Description
 ------ | -----------
