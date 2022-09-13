@@ -459,6 +459,80 @@ To create a WhatsApp List:
 ![](https://i.imgur.com/vmDdimd.png)
 
 
+**Dynamic WA List**
+
+Enable **Advanced options** and `i` option next to **fetch from** to see the dynamic data.
+
+```
+{
+  "title": "Please select your preferred slot for Appointment",
+  "optionText": "Appointment Slots",
+  "options": [
+    {
+      "section": "June 5, 2021",
+      "options": [
+        {
+          "title": "9am-11am",
+          "text": "5.9-5",
+          "description": "General Medicine"
+        },
+        {
+          "title": "12pm-2pm",
+          "text": "5.12-2",
+          "description": "Orthopedic"
+        },
+        {
+          "title": "2pm-4pm",
+          "text": "5.2-4",
+          "description": "Physiotherapy"
+        }
+      ]
+    },
+    {
+      "section": "June 6, 2021",
+      "options": [
+        {
+          "title": "9am-11am",
+          "text": "6.9-5",
+          "description": "General Medicine"
+        },
+        {
+          "title": "12pm-2pm",
+          "text": "6.12-2",
+          "description": "Orthopedic"
+        },
+        {
+          "title": "2pm-4pm",
+          "text": "6.2-4",
+          "description": "Physiotherapy"
+        }
+      ]
+    },
+    {
+      "section": "June 7, 2021",
+      "options": [
+        {
+          "title": "9am-11am",
+          "text": "7.9-5",
+          "description": "General Medicine"
+        },
+        {
+          "title": "12pm-2pm",
+          "text": "7.12-2",
+          "description": "Orthopedic"
+        },
+        {
+          "title": "2pm-4pm",
+          "text": "7.2-4",
+          "description": "Physiotherapy"
+        }
+      ]
+    }
+  ],
+  "footer": "Please follow Covid Guideline while consulting."
+}
+```
+
 **Limitations**
 
 * Maximum of 10 Buttons can be added. Multiple buttons cannot be selected in one go and are not supported in notifications.

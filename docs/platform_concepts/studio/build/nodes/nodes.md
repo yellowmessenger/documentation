@@ -9,6 +9,7 @@ In this article, you will learn:
 1. [Types of nodes](#types)
 2. [How to add nodes](#addnode)
 3. [What are the configurations available for nodes](#config)
+4. [How to view Dynamic data](#dynamic)
 
 
 ## <a name="types"></a> 1. Types 
@@ -106,6 +107,16 @@ Coming soon!
 
 -----
 
+## <a name="dynamic"></a> 4. View Dynamic Data 
+
+Instead of adding information to these nodes manually, you can add objects to the Dynamic data. This option is available on most of the Prompt and Message nodes. 
+You can click on the `i` next to **Fetch from** and find the variable data. 
+
+![](https://i.imgur.com/DonapjB.png)
+
+
+
+---
 **What Next?**
 
 * Build a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) and [test](https://docs.yellow.ai/docs/platform_concepts/studio/tools) it. 
