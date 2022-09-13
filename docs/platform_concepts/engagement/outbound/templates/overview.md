@@ -85,7 +85,7 @@ We support **delete** option for rejected templates only.
 2. It will filter all rejected templates and auto selected.
 3. You can also select specific templates only and delete to manage your template manager.
 
-![](https://i.imgur.com/JYFFgAz.gif)
+![](https://i.imgur.com/fKoTP1I.gif)
 
 ### Edit Message Templates
 
