@@ -6,7 +6,7 @@ sidebar_label : Use dynamic access token
 We support different authentication types to ensure you can configure any type of API irrespective of the authentication method. You can use Basic Auth, OAuth, Barer token and more.
 
 In this article, you will learn - 
-1. Hoe to pass access token variables in the API header
+1. How to pass access token variables in the API header
 2. How to use access token variable in the code function
 
 This article explains different ways of using access token generated directly from the generate auth token API.
@@ -99,7 +99,8 @@ Here we need to pass the bearer token under headers, so click on `Add Headers` a
 
 4. To try this workflow, try invoking the journey where you're using the auth API. :rocket:
 
+---
 
-> What next?
+#### What next?
 > * [Know how to send data to the API](send-data.md)
 > * [Monitor errors in APIs](api-settings.md)

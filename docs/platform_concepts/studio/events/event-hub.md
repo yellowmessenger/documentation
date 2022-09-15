@@ -5,7 +5,7 @@ sidebar_label: Events Hub
 
 
 
-Event is general programming term which is used to describe an occurance recognised by the bot (mostly asynchronous). When your bot is operational, it generates various events which can be used to trigger a journey or automation workflow. Event hub is for handling those occurances to do something.
+Event is general programming term which is used to describe an occurance recognised by the bot (mostly asynchronous). When your bot is operational, it generates various events which can be used to trigger a journey or automation workflow. Event hub helps you handle those occurances and perform some tasks.
 For example, popup closed is an event, you can handle it by maybe sending another message in the journey.
 
 Types of events are listed below: 
