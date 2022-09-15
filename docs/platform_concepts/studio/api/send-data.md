@@ -53,5 +53,7 @@ You need to pass the JSON file or the details to be entered as an array/object.
 For example, in the below screenshot Details_1 can also be written as Details_2 by storing array details in array_details variable.
 ![](https://i.imgur.com/3aY0MXY.png)
 
-> What next?
+--- 
+
+#### What next?
 > * [Know how to receive data from API response](receive-data.md)
