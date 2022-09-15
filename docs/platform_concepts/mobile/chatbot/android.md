@@ -39,7 +39,7 @@ repositories {
 dependencies {
     ...
     ...
-	   implementation 'com.github.yellowmessenger:YMChatbot-Android:2.1.+
+	   implementation 'com.github.yellowmessenger:YMChatbot-Android:2.2.+
 }
 ```
 
@@ -129,8 +129,9 @@ YMChat supports firebase notifications. Assign your `FCM token` to deviceToken
 ```java
 ymChat.config.deviceToken = "your-firebase-device-token"
 ```
-
-Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
+:::note Mapping Firebase service key against Bot Id
+Firebase service account Json file is required to send notifications. You need to map service account json file against your bot ID. Request your contact person from `yellow.ai` to share api for same. For more information about Firebase service account json file and how to get it check link [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
+:::
 
 ### Payload
 
@@ -212,6 +213,13 @@ You can hide the input bar while bot is loading by setting the disableActionsOnL
 ```java
 ymChat.config.disableActionsOnLoad = true
 ```
+### Use Lite version 
+
+You can use lite version of the bot by setting the useLiteVersion flag present in config. Default value is `false`
+
+```java
+ymChat.config.useLiteVersion = true
+```
 
 ### Colors
 
@@ -254,6 +262,16 @@ Once the config is set, chat bot can be presented by calling `startChatbot()` an
 ```java
 ymChat.startChatbot(this);
 ```
+
+## Get Chatbot Fragment
+
+If clients want to use Chatbot Fragment in thier application, they can call the following method to get the fragment
+
+```java
+Fragment chatbotView = ymChat.getChatBotView(this);
+```
+
+Clients can embed this fragment in their activity and begin the transaction as they do for any other fragment.
 
 ## Bot Events
 
