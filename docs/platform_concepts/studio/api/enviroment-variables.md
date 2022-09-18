@@ -8,21 +8,25 @@ In many cases you might have different API endpoints for different deployment en
 
   
 
-1. Go to **Studio** > **Build** > **API** and 
+1. Go to **Studio** > **Build** > **API**.
 2. Navigate to the API tab for which you wanted to add environment variables. You can also do it while adding a new API.
-3. In the API URL, replace the environment/slug with {{{env.placeholder}}} and keep the rest of the URL as is.
-4. On the right sidebar, click on **Configure Environment**.
+3. In the API URL, replace the host URL with a variable. 
+4. Add a placeholder for the API endpoint. 
+> In the example, we have used host as the API placeholder.
+  ![](https://i.imgur.com/qHQFY4u.png)
+5. On the right sidebar, click on **Configure Environment**.
 
-![](https://i.imgur.com/reuB4e4.png)
+   ![](https://i.imgur.com/bybT0Eh.png)
+6. Enter API endpoints for each environment.
 
-  5. Add a placeholder for the API endpoint. For the course of this guide, we'll be using URL as the API placeholder.
-  6. Below that add API endpoints for all three deployment environments.
+   <img  src="https://i.imgur.com/xIldDOM.png"  alt="drawing"  width="80%"/>
 
-<img  src="https://i.imgur.com/8ieZhgh.png"  alt="drawing"  width="60%"/>
 
-7. Lastly, before making an API call, select an environment from the dropdown. Based on the environment variables you’ve configured earlier, it’ll replace {{{env.variables}}} placeholder with the value; here is it sandbox_infra.
+7. Lastly, before making an API call, select an environment from the dropdown. Based on the environment variables you’ve configured earlier, it’ll replace {{{env.variables}}} placeholder with the value.
 
-Hence final URL end point would be https://sandbox_infra.testapi.com for sandbox infra.
+```
+https://{{{env.url}}}/data/2.5/weather?q={city name}&appid={API key}
+```
 
 ![](https://i.imgur.com/fP0xs3R.png)
 

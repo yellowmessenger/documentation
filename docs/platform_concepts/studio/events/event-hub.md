@@ -8,21 +8,49 @@ sidebar_label: Event
 Event is general programming term which is used to describe an occurrence recognised by the bot (mostly asynchronous). When your bot is operational, it generates various events which can be used to trigger a journey or automation workflow. Event helps you handle those occurrences and perform some tasks.
 For example, popup closed is an event, you can handle it by sending another message in the journey.
 
-The following are the different types of events -  
+In this article, you will learn -
+1. [How to activate or deactivate an event](#activatedeactivate-an-event)
+2. [About different types of events](#type-of-events) 
 
-1. [Widget](#wid-1)
-2. [Inbox](#inb-1)
-3. [Engagement](#eng-1) 
-4. [Integrations](#int-1) 
-5. [User inactivity events](#uie-1) 
-6. [Schedule events](#sch-1) 
-7. [Custom events](#cust-1) 
+   a. [Widget related events](#wid-1)
 
-Description of each event is as follows: 
+   b. [Inbox related events](#inb-1)
 
-# Type of Events
+   c. [Engage related events](#eng-1) 
 
-## <a name="wid-1"></a> 1. Widget related events
+   d. [Integration events](#int-1) 
+
+   e. [User inactivity events](#uie-1) 
+
+   f. [Schedule events](#sch-1) 
+
+   g. [Custom events](#cust-1) 
+
+
+## Activate/deactivate event
+
+1. On the **Event** page, navigate to the category in which you want to activate or deactivate an event. 
+2. Click on the inactive event that you want to activate.
+3. Click the more options icon, <img src="https://i.imgur.com/VTnjRYM.png" width="10"/> > **Activate**.
+   ![](https://i.imgur.com/eMEfIG1.png)
+
+
+4. To use an active event in a Flow, in the **Start trigger**** configuration, select *Event** from the drop-down box. In the **Select** field, find the event that you've enabled before and select it.
+
+   ![](https://i.imgur.com/qriFqBi.png)
+
+:::note
+
+Similarly, you can deactivate an active event.
+![](https://i.imgur.com/tPm5oKy.png)
+:::
+
+
+
+
+## Type of Events
+
+### <a name="wid-1"></a> 1. Widget related events
 
 | Event | Description |
 |--------|---------------|
@@ -222,20 +250,3 @@ Once a custom event is created, you can activate, deactivate, edit or delete a c
 
 
 
-## Activate/deactivate an event
-
-1. On the **Event** page, navigate to the category in which you want to activate or deactivate an event. 
-2. Click on the inactive event that you want to activate.
-3. Click the more options icon, <img src="https://i.imgur.com/VTnjRYM.png" width="10"/> > **Activate**.
-   ![](https://i.imgur.com/eMEfIG1.png)
-
-
-4. To use an active event in a Flow, in the **Start trigger**** configuration, select *Event** from the drop-down box. In the **Select** field, find the event that you've enabled before and select it.
-
-   ![](https://i.imgur.com/qriFqBi.png)
-
-:::note
-
-Similarly, you can deactivate an active event.
-![](https://i.imgur.com/tPm5oKy.png)
-:::

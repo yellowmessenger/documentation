@@ -12,7 +12,8 @@ In this article, you will learn -
 Once you configure an API as mentioned in [add a new API](./add-api), you can pass all the input parameter values in the bot flow where you want to consume it. These are usually dynamic values that you can capture directly from the user conversation. 
 1. To send a dynamic data from a flow, rename the parameters with {{{parameterName}}} for the API in **Studio** > **API** and save it.
 
-![Create new API](https://cdn.yellowmessenger.com/UOsO4KlWdRZf1623865589545.png)
+![](https://i.imgur.com/a6xTjqL.png)
+
 
 3. Open the flow where you wish to send data using the user's input.
 4. Add the API actions node in the flow.
@@ -51,7 +52,9 @@ Through variable | $$tobase64{{{{url}}}
 You need to pass the JSON file or the details to be entered as an array/object.
 
 For example, in the below screenshot Details_1 can also be written as Details_2 by storing array details in array_details variable.
-![](https://i.imgur.com/3aY0MXY.png)
+
+![](https://i.imgur.com/41MaV4r.png)
+
 
 --- 
 
