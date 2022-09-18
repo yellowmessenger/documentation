@@ -1,40 +1,40 @@
 ---
-title: Code
-sidebar_label : Code
+title: Function
+sidebar_label : Function
 ---
 
 In this article, you will learn: 
 
 1. [How to add a new function?](#1) 
-    - [Function format](#11)
+    - [Function format (syntax)](#11)
     - [Args to access code](#12)
     - [How to check for warnings and errors?](#13)
 2. [Tools and settings](#ts) 
 3. [Using function in a flow](#uf)
-4. [Sample code](#sc)
+4. [Sample codes](#sc)
 5. [Math operations](#math)
 
 :::note
 To work around this section, you will require minimal coding skills.
 :::
 
-The code section is used to add function code. It is available in **Studio** -> **Build** -> **Code**.
+The Function section is used to add function code. It is available in **Studio** -> **Build** -> **Function**.
 
-![](https://i.imgur.com/vFb21QP.png)
-
-
+![](https://i.imgur.com/kVZ7bQ9.png)
 
 
 
-## <a name="1"></a> 1. Function Creation 
 
-You can add a new function to write custom logic in the **`code`** section by clicking **+Add new function**.
+
+## <a name="1"></a> 1. Function creation 
+
+You can add a new function to write custom logic in the Function section by clicking **+Add new function**.
 
 :::note
- To execute these functions in a flow, attach a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#function)- action node.
+ To execute these functions in a flow, attach a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#24-function)- action node.
 :::
 
-### <a name="11"></a>1.1 Format of cloud functions
+### <a name="11"></a> 1.1 Format of cloud functions
 ```js
 return new Promise(resolve => {
       // Your logic goes here
@@ -42,19 +42,19 @@ return new Promise(resolve => {
   }); 
 ```
 
-### <a name="12"></a>1.2 Arguments- Args 
+### <a name="12"></a> 1.2 Arguments- Args 
 
 Useful args to access in code:
 
 | arg | Data type | Use |
 | -------- | -------- | -------- |
-| data.variables.<variable_name>   | Key : String, Value: any |To access any bot variable in code. |
+| data.variables.<variable_name>   | Key : String, Value: any |To access any bot variable in function. |
 | data.channel | String | To access channel names like whatsapp, yellowmessenger, facebook etc|
 |data.profile| Object| Contains user profile values like name, number, email, city , country, language |
 | data.sender | String | User ID |
 |data.bot | String| Bot ID|
 |data.message | String | To access Last/latest user message in the conversation|
-|data.event.<event_name>|Object|To access events in code|
+|data.event.<event_name>|Object|To access events in function|
 |ymLib.args.apiResponse | any | To access API response in API transformation function|
 | ymLib.args.logger | Object | Can be used to add logs |
 | context.history | Object | Contains history of nodes visited by user|
@@ -63,7 +63,7 @@ Useful args to access in code:
 
 ---
 
-### <a name="13"></a>1.3 Check Warnings
+### <a name="13"></a> 1.3 Check Warnings
 
 Click the warnings link at the bottom left of the screen and correct the displayed warnings/errors.
 
@@ -105,7 +105,7 @@ Function can be used to parse data through an API. Function is also used to mani
 
 > **Use-case**: Function to parse Weather Data API and to show the different parameters in a carousel format. 
 
-1. Open **Studio** –> **Code**. Click **Add new function**.
+1. Open **Studio** –> **Function**. Click **Add new function**.
 For example: transformationFunction (as shown below).
 
         
@@ -198,7 +198,7 @@ For more information, [click here](https://developer.mozilla.org/en-US/docs/Glos
 
 ## <a name="math"></a> 5. Math operations
 
-Our code section enables us to perform various types of mathematical operations in each session (that is, the conversation between the end user and the bot). 
+Our function section enables us to perform various types of mathematical operations in each session (that is, the conversation between the end user and the bot). 
 
 **Use-cases**
 

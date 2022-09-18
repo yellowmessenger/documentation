@@ -4,6 +4,18 @@ sidebar_label: Translation
 ---
 
 
+In this article, you will learn: 
+
+1. [How to configure multilingual messages](#1)
+    * [Using Bulk Manage](#11)
+    * [Using Code](#12)
+2. [How to configure nodes to provide multilingual support](#2)  
+3. [Advance options in Translation](#3) 
+
+---
+
+## <a name="1"></a>  1. Translation 
+
 Translation is used to provide multilingual support by manual translation for the bots when the user decides to switch the bot-language. 
 
 This also allows easy shifting of the bot to include more languages without much effort imposed on a bot developer. Businesses can simply go to Translation screen and add (import) translations / auto translate after adding languages themselves. This feature is created to enable easy visibility & decision making in multilingual bots.
@@ -15,17 +27,7 @@ If the user prefers to converse in Hindi, the word **Hello** can be translated w
 Similarly, for Tamil, the word **Hello** can be translated to - **Wanakam**. 
 Few translations that could provide a human touch can be configured using the Translation feature. 
 
-In this article, we will learn: 
-
-1. [How to configure multilingual messages](#1)
-    * [Using Bulk Manage](#11)
-    * [Using Code](#12)
-2. [How to configure nodes to provide multilingual support](#2)  
-3. [Advance options in Translation](#3) 
-
 ---
-
-## <a name="1"></a>  1. Translation 
 
 On this page, you can configure your messages in multiple languages. 
 To add translatins, follow the given steps: 
@@ -66,7 +68,7 @@ To import/export translations in bulk, follow the steps below:
 
 ### <a name="12"></a> 1.2 Using Code
 
-Translation can also be configured via code (from the [code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) tab).
+Translation can also be configured via code (from the [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) tab).
 Use the following code in your function to get text message from code **app.renderMessage('code-goes-here', {}, 'default message')**
 
 * Click **+Add Code**. Add the above line in the code along with the default message in the required language.

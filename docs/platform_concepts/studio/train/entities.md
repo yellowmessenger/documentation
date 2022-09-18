@@ -17,7 +17,7 @@ You can access Entities using the keyboard shortcut `e`.
 :::
 
 ---
-## <a name="ex"></a> 1. Introduction 
+## <a name="ex"></a> 1. Entities overview 
 
 
 
@@ -34,15 +34,15 @@ Entities are background or any additional information that is valuable to the me
 
 ## <a name="na"></a> 2. Navigation
 
-* Open **Studio** > **Train**. Click **Entities** (keyboard shortcut `e`).
+* Open **Studio** > **Train**. Click **Entities**.
 
 ![](https://i.imgur.com/jq1QXyS.png)
 
-## <a name="ate"></a> 3. Add and Train Entities 
+## <a name="ate"></a> 3. Add and train entities 
 
 * For the bot to recognize entities they must be added and trained. 
 
-### 3.1 Add Entities
+### 3.1 Add entities
 
 * Click **+Add new entity**.
 * Add **Name**. Select a [Type](#et) from the dropdown.
@@ -70,7 +70,7 @@ Entity name should be alphanumeric, lower case and must not contain spaces.
 
 ----
 
-## <a name="et"></a> 4. Entity Types
+## <a name="et"></a> 4. Types of entities
 In the [yellow.ai](https://cloud.yellow.ai/) platform, following entities can be defined:
 
 1. **List Type**
@@ -127,9 +127,9 @@ It is highly recommended not to use text entity unless required as it is not ver
 
 ---
 
-### 4.4 System Entities
+### 4.4 System entities
 
-Apart from the List and Pattern type entities, a set of entities are recognized by the model out-of-the-box without any specific training. These include - 
+Apart from the List and Pattern type entities, a set of entities are recognized by the model out-of-the-box without any specific training. These include:
 
   - Name
   - Date

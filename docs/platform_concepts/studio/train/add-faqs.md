@@ -1,6 +1,6 @@
 ---
 title: FAQ Management
-sidebar_labels : FAQs
+sidebar_label : FAQs
 ---
 
 FAQs (Frequently asked questions) are a list of questions and answers on a subject for giving basic information to users of a website. These help your business respond to the needs of bot audience more quickly and appropriately.
@@ -24,7 +24,7 @@ In this article, you will learn:
 
 ---
 
-## <a name="add"></a> 1. How to add FAQs?
+## <a name="add"></a> 1. Add FAQs
 
 To add FAQs one by one, follow the given steps:
 
@@ -54,7 +54,7 @@ To add FAQs one by one, follow the given steps:
 
 ---
 
-## <a name="bulk"></a> 2. How to add multiple FAQs?
+## <a name="bulk"></a> 2. Add FAQs in bulk
 
 To avoid the tedious task of adding questions one by one, you can use the bulk import option to upload all the questions at once. 
 
@@ -62,7 +62,9 @@ To avoid the tedious task of adding questions one by one, you can use the bulk i
 
 ![](https://i.imgur.com/H8nHsmC.png)
 
-<a name="step2"></a> 2. Download the CSV template in which you must enter the FAQs. By clicking **Download format here to get started** link.
+<a name="step2"></a> 
+2. Download the CSV template in which you must enter the FAQs. By clicking **Download format here to get started** link.
+
 
 ![](https://i.imgur.com/hteoHYF.png)
 
@@ -108,7 +110,7 @@ You can add quotes manually and save the changes.
 
 
 
-### <a name="ml"></a> 2.2 How to add FAQs for Multilingual bots?
+### <a name="ml"></a> 2.2 Add FAQs for Multilingual bots
 
 To add FAQs for multi-lingual bots, follow the given steps:
 
@@ -134,7 +136,7 @@ To add FAQs for multi-lingual bots, follow the given steps:
 
 ----
 
-## <a name="train"></a> 3. Train and Test FAQs
+## <a name="train"></a> 3. Train and test FAQs
 
 **Train**
 

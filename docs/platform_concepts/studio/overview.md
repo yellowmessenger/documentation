@@ -1,5 +1,5 @@
 ---
-title: Studio Overview
+title: Studio overview
 sidebar_label: Overview
 ---
 
@@ -21,7 +21,7 @@ If you're new to creating bots or looking for more practical end-to-end guides o
 
   
 
-## <a name="as"></a>  1. Access Studio
+## <a name="as"></a>  1. Access studio
 
 
 
@@ -30,10 +30,13 @@ Before designing your bot, you need to have the bot set up as mentioned in [Sett
 :::
 
 1. Log in to https://cloud.yellow.ai.
-2. On the switcher, click **Studio**. You can also use the shortcut keys `g`+`s`.
+2. On the switcher, click **Studio**.
 
 ![](https://i.imgur.com/gPU08xO.png)
 
+:::tip
+You can access Studio using the keyboard shortcut `g` + `s`.
+:::
 ---
 
 ## <a name="ui"></a> 2. Understand UI elements
@@ -97,7 +100,7 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
 | Make your bot smart by triggering actions or flows based on user activities or [Events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub)  | For example, send a predefined text when no agent is online, or when assigned to an agent; when a user closes a promotion shown in the bot; trigger flows when a user opens a specific URL.                                                                                       |
 | Make your bot handle unintended replies wisely through [Context management](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-contextual-response) | For example, what if a customer types a new question when the bot asks for the mobile number?                                                                                                                                                                                        |
 | Use [Localization](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)                                                                    | To serve users worldwide by making the bot interact in the user's native language. Yellow supports over 100 [languages]((https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported/)).                                                                                                                                                               |
-| Code                                                                                                                                                             | If you are a developer, use [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code/) to define custom functionalities.                                                                                                                                               |
+| Function                                                                                                                                                             | If you are a developer, use [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code/) to define custom functionalities.                                                                                                                                               |
 | Connect third-party systems through [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to retrieve data directly from that system         | For example, you can show user details that are available in your database which is the need of importing the entire data to Yellow Platform.                                                                                                                                        |
 | Fallback                                                                                                                                                         | There could be instances where your bot does not understand how to respond to your user intent. Use Fallback to provide suggestions, answer from documents, connect to an agent, or show a message.  |
 |     Testing the bot  | [Test each flow](https://docs.yellow.ai/docs/platform_concepts/getting-started/#26-trigger-a-flow) as and when you create it to ensure it is working as desired. |
@@ -131,7 +134,7 @@ Create all the flows required for your use case and ensure these flows are prope
     
 ---
 
-## 4. Keyboard Shortcuts
+## 4. Keyboard shortcuts
 
 We have introduced shortcut keys to make it easy for you to access key options and increase the productivity of repetetive tasks.
 
@@ -153,6 +156,7 @@ Go to Studio module | g + s| Global
 Go to Overview page | g + o| Global
 
 
+----
 
 
 **What Next?**

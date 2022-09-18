@@ -38,6 +38,9 @@ Following are the different types of message nodes:
 
 ## 1. Text
 
+> This node is available for voice bots. 
+
+
 Display a simple text with this node.  
 > This node can be used to follow up with most of the [prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) nodes. 
 
@@ -255,7 +258,7 @@ Click **Fetch from** and add a dynamic value - if required:
 
 ---
 
-## **CSS Changes**
+## **Configure text displayed on the bot**
 
 To beautify the text you enter in the field -**bot says** you can add the following. 
 

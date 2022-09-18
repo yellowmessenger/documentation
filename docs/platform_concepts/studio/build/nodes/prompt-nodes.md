@@ -7,10 +7,10 @@ Prompts are Interactive/conversational nodes which expect user input.
 When a user provides an invalid input to the prompt, a fallback message will be displayed. 
 
 In this article, you will learn about the different types of prompt nodes: 
-1. [User Details](#ud)- Used to collect user details.
-2. [Feature](#feature)- Used for creative display of information and collection of responses.
-3. [Media](#media)- Nodes to collect social media related details.
-4. [Voice](#voice)- Local voice-related node.
+1. [User details](#ud): Used to collect user details.
+2. [Feature](#feature): Used for creative display of information and collection of responses.
+3. [Media](#media): Nodes to collect social media related details.
+4. [Voice](#voice): Local voice-related node.
 
 > All these prompts must be followed by another node as a response to this node.
 
@@ -22,9 +22,12 @@ The nodes which have an option to ask the users a question/ display a text are e
 > ![](https://i.imgur.com/KucDPVJ.png)
 
 ---
-## <a name="ud"></a>  1. User Details
+## <a name="ud"></a>  1. Collect user details
 
 ### 1.1 Name
+
+> This node is available for voice bots. 
+
 
 Ask and validate the user name with this node. When the user enters a sentence instead of first + last name, validation fails and the bot replies- 'Can you please repeat this, looks like an Invalid name'.
 
@@ -35,7 +38,7 @@ Ask and validate the user name with this node. When the user enters a sentence i
 ![](https://i.imgur.com/Rr81uih.png)
 
 
-Create a Name [Variable]https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the user name in it. 
+Create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the user name in it. 
 
 
 ![](https://i.imgur.com/t8UFyzS.png)
@@ -43,6 +46,8 @@ Create a Name [Variable]https://docs.yellow.ai/docs/platform_concepts/studio/bui
 ---
 
 ### 1.2 Phone
+
+> This node is available for voice bots. 
 
 Ask and validate the phone number with this node. **Default ISD** value can be selected if the bot is customized for a region.
 When the user enters a number of length greater or less than the expected number (10 for India +91), validation fails and the bot replies- 'Enter a valid phone number'.
@@ -80,9 +85,11 @@ Example of a Single Date Picker.
 ![](https://i.imgur.com/QAIhG8M.png)
 
 
-**Storing date variables**: Post validation, the entered date by the users will be stored in the specified variable as an object. The structure of the object is as follows:
+**Storing date variables**: Post validation, the entered date by the users will be stored in the specified variable as an object. 
 
-For a single value
+The structure of the object is as follows:
+
+**Store date for a single value**
 
 ```
 {
@@ -100,7 +107,7 @@ For a single value
     }
 }
 ```
-For a range
+**Store date for a date range**
 
 ```
 {
@@ -125,10 +132,12 @@ For a range
 
 Ask, validate and store user location with this node. 
 
-Validation is passed after extracting all the fields specified in "**Required fields**". This does not mean users needs to provide all these fields, any info provided by the user is extracted.
+Validation is passed after extracting all the fields specified in **Required fields**. This does not mean users needs to provide all these fields, any info provided by the user is extracted.
 
-It is then stored in the specified variable with the following format: { userMessage: '', coordinates: { lat: "", lng: "", }, fullAddress: '', city: '', state: '', country: '', postalCode: '', }
-
+It is then stored in the specified variable with the following format:
+```
+ { userMessage: '', coordinates: { lat: "", lng: "", }, fullAddress: '', city: '', state: '', country: '', postalCode: '', }
+```
 
 
 ![](https://i.imgur.com/ukkmvnZ.png)
@@ -157,6 +166,8 @@ Coming soon!
 ## <a name="feature"></a> 2. Feature 
 
 ### 2.1 Question
+
+> This node is available for voice bots. 
 
 Ask a simple question with this node. 
 
@@ -190,7 +201,9 @@ You can also add multiple buttons to a carousel. Clicking on the button can disp
 ![](https://i.imgur.com/seysnzN.png)
 
 
-> 📌 Carousels without buttons will act as Messages instead of Prompts.
+:::note
+Carousels without buttons will act as Messages instead of Prompts.
+:::
 
 **Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.  
 
@@ -444,7 +457,7 @@ Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bu
 
 ---
 
-## <a name="media"></a> 3. Media Related
+## <a name="media"></a> 3. Media related nodes
 
 ### 3.1 WhatsApp List
 
@@ -556,9 +569,12 @@ Create an email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/
 
 ---
 
-## <a name="voice"></a>  4. Voice
+## <a name="voice"></a>  4. Voice nodes
 
 ### 4.1 Speak
+
+> This node is available for voice bots. 
+
 
 Users can input the SSML text and can play the configured/generated audio on the go.
 
@@ -582,19 +598,20 @@ Sample SSML code:
 
 ---
 
-## 5. Make Prompt Smarter
+## 5. Make prompt smarter
 
-Make Prompt Smarter option is available on all the prompt nodes. 
+Make Prompt Smarter option is available on all the prompt nodes. 3 options available broadly are auto complete, autoskip and other related options. 
 
 ![](https://i.imgur.com/QoIUylO.png)
 
 ----
 
-### 5.1 Auto Complete
+### 5.1 Auto complete
 
 Autocomplete is set so that the bot can start predicting the rest of the word or sentence for users as they start typing. For example, if you want to find your location and you start typing Jai, you will get the city names starting with Jai - Jaipur. Similarly, if you type Ban, you will get suggestions such as Bangalore, Bangla, Banswara, etc.
-This feature can be used for: 
-* Discoverability: The end user can easily discover what a bot or a point does
+
+This feature can be used: 
+* When the end user wants to easily discover what a bot or a point does.
 * When there are multiple options available and a limit is set on the display, autocomplete is a good singular or assisting alternative to show options.
 * Faster typing, and improved user experience.
 
@@ -606,7 +623,7 @@ This feature can be used for:
 
 Auto complete is available at a [global level](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#22-conversation) and prompt level (that is triggered inside a prompt).
 
-![](https://i.imgur.com/i0u48Ru.gif)
+![](https://i.imgur.com/Tpm7Qkb.png)
 
 
 The following options can be set to auto-complete: 
@@ -651,6 +668,8 @@ In the below example, the user wont be asked for the name, phone number and emai
 
 Configure Auto-skip at a global level (from tools section), click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#224-autoskipping-settings). 
 
+---
+
 ### 5.3 Additional 
 
 1. **Use this as Unique ID for User**: Info entered at this node will be unique for a user. 
@@ -664,7 +683,7 @@ For example, instead of setting a new user ID, you can use the phone number as a
 
 #### Use-case
 
-* Where there are 2 nodes in this flow, one asking for a password (**marked user message as sensitive info**) and the other providing a new password (**marked bot message as sensitive info**). 
+* Where there are 2 nodes in this flow, one asking for a password (marked user message as sensitive info) and the other providing a new password (marked bot message as sensitive info). 
 
 ![](https://i.imgur.com/FKZSynh.jpg)
 
@@ -677,9 +696,10 @@ For example, instead of setting a new user ID, you can use the phone number as a
 :::note
  Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
 :::
+
 --- 
 
-## **CSS Changes**
+## **Configure text displayed on the bot**
 
 To beautify the text you enter in the field -**bot says** you can add the following. 
 

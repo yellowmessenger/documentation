@@ -15,9 +15,9 @@ Different types of action nodes that will be discussed in this article are:
 
 ---
 
-## <a name="gen"></a> 1. General
+## <a name="gen"></a> 1. General action nodes
 
-### 1.1 Send Event 
+### 1.1 Send event 
 
 Record an event with this node. 
 Events are used to record specific actions or capture an important conversion, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) to learn more.
@@ -52,7 +52,7 @@ That is, node connected to success will be executed if the OTP is matched, other
 
 ----
 
-### 1.4 Document Search
+### 1.4 Document search
 
 Answer user queries referring to the available documents from your knowledge base using this node. 
 
@@ -74,7 +74,10 @@ Document Search action node is used to answer user query at any point in the flo
 
 -----
 
-### 1.5 Execute Flow 
+### 1.5 Execute flow 
+
+> This node is available for voice bots. 
+
 
 Enter another flow with this node. 
 For example, in the below flow, based on the entered user reply the conversation gets directed to other flows. Once that flow is executed, control comes back to the current flow. 
@@ -96,19 +99,19 @@ Select the number of minutes/hours you want the bot to wait for before executing
 :::
 -----
 
-### 1.7 Raise Ticket 
+### 1.7 Raise ticket 
 
 Raise ticket is used in order to connect bot user to the human agent. 
 Connect the user to an agent after collecting info and query with this node.  
 
 This simple UI node can be used to set up basic & advanced scenarios such as Working Hours, Agent Availability, voice/video calling, etc required to create a ticket.
 
-#### Raise Ticket Outputs 
+#### Raise ticket outputs 
 
 1. **Ticket Closed** - This essentially is bot behaviour after the Agent closes a ticket (i.e. s/he has resolved user query).
 2. **Error** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured. 
 
-#### Raise Ticket Response
+#### Raise ticket response
 
 Raise Ticket action node returns an object response as shown below. You can parse important information from this response to store it in a database or use it on another flow.
 
@@ -170,7 +173,7 @@ Raise Ticket action node returns an object response as shown below. You can pars
 
 While raising a ticket, you can pass fields such as **Name** , **Contact** (Email/Phone Number), and **Query**. Message after ticket assignment will be seen by the user on getting connected to the agent.
 
-#### Advanced Options
+#### Advanced options
 
 To provide additional information to the ticket.
 
@@ -186,7 +189,7 @@ As configured in Inbox Settings, [Tags](https://docs.yellow.ai/docs/platform_con
 
 <img src="https://cdn.yellowmessenger.com/iE4ppldmrE7k1625673583277.png" alt="drawing" width="65%"/>
 
-#### Error Handling
+#### Error handling
 
 Output of Raise Ticket Node dictates general behaviour for any error in creating a ticket. In most real life scenarios, it is preferred to show appropriate reasons to users as to why they cannot to an agent. 
 
@@ -195,7 +198,7 @@ Once any specific event is active and configured, the corresponding flow will be
 :::
 
 Two steps to handle custom scenarios are as follows:
-1. In Event Hub, activate the custom inbox event. Scenarios that can be handled:
+1. In [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub), activate the custom inbox event. Scenarios that can be handled:
   - All Available Agents Busy
   - All Available Agents Away
   - All Available Agents Offline
@@ -209,9 +212,9 @@ Two steps to handle custom scenarios are as follows:
 
 2. Build a Flow with relevant events added in the Start Trigger.
 
-#### Working Hours
+#### Working hours
 
-If the bot is supposed to respond with a different message outside of agent working hours, **[Logic Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes)** can be used. 
+If the bot is supposed to respond with a different message outside of agent working hours, [Logic Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) can be used. 
 
 <img src="https://cdn.yellowmessenger.com/ciDa5Gn2ZzbK1625675537775.png" alt="drawing" width="60%"/>
 
@@ -249,7 +252,7 @@ Open the Analytics page by clicking the Analytics Table link.
 
 -----
 
-### 1.9 Generate PDF/ Image 
+### 1.9 Generate PDF/Image 
 
 Generate PDF/JPG/JPEG/PNG files having dynamic details with this node. 
 
@@ -265,7 +268,7 @@ Steps to generate dynamic documents:
 
 -----
 
-### 1.10 Data Formatter 
+### 1.10 Data formatter 
 
 Convert data from CSV to JSON with this node.
 you can ask and store the CSV data in any variable and change it to JSON using the data formatter node. The formatted value can be stored in a variable of type array or object and be displayed using another node. 
@@ -282,7 +285,7 @@ Generate a payment link with this node.
 
 ---
 
-### 1.12 Switch Flow 
+### 1.12 Switch flow 
 
 (Currently unavailable.)
 
@@ -290,10 +293,12 @@ Quit the current flow and launch another flow with this node. Here, flow switche
 
 ---
 
-## <a name="cb"></a> 2. Code Based 
+## <a name="cb"></a> 2. Code based nodes
 
 
 ### 2.1 API 
+
+> This node is available for voice bots. 
 
 API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) from user inputs and then store API response in a variable for further use. 
 
@@ -306,7 +311,9 @@ Then we store the whole response we will get from that API in a variable.
 > Learn how to directly use this variable, if JSON response in your nodes to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
 --->
 
-#### Function (optional field)
+#### Function 
+
+(Optional field)
 
  Sometimes, an API response can be too big, or not in a proper format for us to be able to parse easily. (A function is not needed just to access a simple field of a JSON API response). 
 In those cases, we can write a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#3-functions-in-flow) to parse and transform API response according to our needs and return desirable response. 
@@ -339,6 +346,8 @@ To be able to invoke an API at a certain point, it should already be added/confi
 
 ### 2.2 Variables 
 
+> This node is available for voice bots. 
+
 **Store response in** option available in most of the nodes are used to store variable values, **Variable node** is used for specific logical usecases when you want to manipulate just a variable value or skip particular steps but not do any further actions. 
 Set the value of one or more variables with this node. 
 
@@ -369,6 +378,8 @@ Learn how to create a variable [here](https://docs.yellow.ai/docs/platform_conce
 -----
 
 ### 2.3 Database 
+
+> This node is available for voice bots. 
 
 Database action node helps you in performing simple insert, update and search operations on your [database tables](https://docs.yellow.ai/docs/platform_concepts/studio/database). 
 
@@ -413,7 +424,7 @@ Each of the following filter conditions are explained for the use-case when the 
 
 *  **Range**: In range you can enter a `from` and `to` value as a filter. Eg: date `from`:'10' `to`: '20'.
 
-##### And / Or Filter 
+##### And/Or filter 
 
 * You can add another filter which compares both the filter with and/or condition. 
 * **And**: Search will display results only when both the filters are true. 
@@ -424,14 +435,14 @@ Each of the following filter conditions are explained for the use-case when the 
 
 3. **Output** : You can sort the output based on a string type column (optional), modify the size of output (maximum no. of records to fetch) and store this result in a variable.
 
-##### Sort Response 
+##### Sort response 
 
 * Select the column name you want to sort and click ASC/DEC (this will sort the info in the table in ascending/descending order based on that column).
 
 ![](https://i.imgur.com/GUMXUfd.png)
 
 
-##### More Options 
+##### More options 
 
 * **Filter distinct** : Select a column on which distinct must be performed (this removes all the duplicate records when retrieving the records from a table).
 * **Pagination** :Page number and Size limit can be set here.
@@ -451,6 +462,8 @@ Update option in the database node can be used to update values stored in the ta
 --------
 
 ### 2.4 Function 
+
+> This node is available for voice bots. 
 
 Execute custom code written for a function with this node. In this node, you can select the function you wish to execute and [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) to store the return value of a function (optional).
 
@@ -480,9 +493,9 @@ Connect TransXT function with this node.
 
 ---
 
-## <a name="lang"></a>  3. Language & Notification
+## <a name="lang"></a>  3. Nodes for language & notification
 
-### 3.1 Set Language 
+### 3.1 Set language 
 
 Change the bot language to any of the configured languages using this node. 
 
@@ -504,19 +517,19 @@ Language can only be changed to only if that language is configured in bot setti
 Notification Nodes (Outbound Notification, Notification Status and Voice Call) are currently not in use. 
 Coming soon!
 
-### 3.2 Outbound Notification 
+### 3.2 Outbound notification 
 
 Send outbound SMS, email, WhatsApp, and voice notification with this node. 
 
 ---
 
-### 3.3 Notification Status 
+### 3.3 Notification status 
 
 Check outbound notification status with this node. 
 
 ---
 
-### 3.4 Voice Call 
+### 3.4 Voice call 
 
 Make voice calls with this node.
 
@@ -528,7 +541,7 @@ Make voice calls with this node.
 These nodes are only available when a flow is created as a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#3-workflow). 
 :::
 
-### 4.1 Sync Database
+### 4.1 Sync database
 
 This node enables bulk operations like "Import, Insert, Update" on tables (of bigger databases) from external data sources through APIs instead of updating them manually. You can also schedule database updates.
 

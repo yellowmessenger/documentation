@@ -1,5 +1,5 @@
 ---
-title: Getting Started With Flows
+title: Getting started with flows
 sidebar_label: Flow
 ---
 
@@ -7,37 +7,102 @@ sidebar_label: Flow
 
 In this article, you will learn: 
 
-1. [Home](#home)
-2. [Workflow](#workflow)
-3. [Flow](#createflow)
+1. [Home flow- how a bot works](#home)
+2. [How to create a flow](#createflow)
+3. [Workflow- a variation of flow](#workflow)
 4. [How to trigger a flow?](#triggerflow)
 
 
-## <a name="home"></a> 1. Home
+## <a name="home"></a> 1. Home - Bot flow 
 
 This is a general (**Home**) flow that the bot follows irrespective of the training given to it. 
-- There is always a welcome message [configured](https://docs.yellow.ai/docs/platform_concepts/getting-started/#21-configure-the-welcome-message) and displayed to the user.
+- There is always a [welcome message configured](https://docs.yellow.ai/docs/platform_concepts/getting-started/#21-configure-the-welcome-message) and displayed to the user.
 - The bot responds to the queries it **understands** and **do not understand**.
 
 Such a flow is configured on the Home -flow. It is further customized as per the use case.
 
 ![](https://i.imgur.com/Va9Vw6F.png)
 
-## <a name="workflow"></a> 2. Workflow
 
-Workflows are background processes that run along with the conversational flow. **Workflow** option can be selected while creating a flow.
+> This flow is a basic architecture of the bot. 
 
-![](https://i.imgur.com/yMThz0H.png)
 
-Workflow is the same as any other flow page, it will have a start node. Nodes connecting the start node can only be [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes (Message and Prompt nodes are not available to build a workflow).
+In-depth about each of the nodes involved in this flow: 
+1. **Welcome message**: This is the first message sent by the bot. 
+You can click **Click here to add responses** and select the type of message that you wish to display to the user.
 
-![](https://i.imgur.com/7Wfp9Yz.png)
+![](https://i.imgur.com/8BgBZ03.png)
 
-  
-  
-  
+:::info
+Text can be entered in **Bot says** field. 
+**Images**, **Carousel**, **Videos**, **Files** and **Quick replies** can also be added. 
+When **Execute Flow** is selected, the start of the flow will be directed to the selected flow. 
 
-## <a name="createflow"></a> 3. Flow
+![](https://i.imgur.com/6z77Gkt.jpg)
+
+:::
+
+
+
+2. **Callout**: These banners on top of the chat can be used to promote a brand and/or to get visitors from the host website to go to the advertiser's website.
+
+![](https://i.imgur.com/f4LbObf.png)
+
+
+:::info
+You can add 4 callouts with 2 buttons each. 
+Buttons can be further customised by clicking **Advanced Settings**.
+
+![](https://i.imgur.com/BIyVT7R.jpg)
+
+:::
+
+
+
+
+> User responds to the bot question (that is mentioned along with the welcome message).
+
+
+
+When bot understands a user response, it will try and fetch answers from: 
+
+3. **Flows**: These are all the [flows (/categories)](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#31-create-a-flow) which will get triggered based on the user response. 
+
+4. **FAQs**: Bot check for replies in [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs). 
+
+![](https://i.imgur.com/8w80z8Q.png)
+
+
+When the bot does not understand a user response, it will display the text mentioned in either of the below options:
+
+5. **Suggestion**: Enable suggestions to display suggestions to this user. This can be used when you want to redirect a user in some way when the requested answer is not found. 
+
+![](https://i.imgur.com/oMiE3Y6.jpg)
+
+For example: 
+
+> User: I want a triple berry sparkler. 
+> Bot: I am sorry, would you like to look at our menu? 
+
+
+6. **Document Search**: The bot responds to the user based on the data from the [uploaded document](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition). 
+7. **Fallback**: Fallback occurs when the solution for what the user has asked was not found anywhere.
+
+:::info
+Text can be entered in **Bot says** field. 
+**Images**, **Carousel**, **Videos**, **Files** and **Quick replies** can also be added. 
+When **Execute Flow** is selected, the flow will be directed to the selected flow. 
+:::
+
+![](https://i.imgur.com/mFNMSbl.png)
+
+
+
+
+----
+
+
+## <a name="createflow"></a> 2. Introdution to flow
 
 Flow is the logical design of your conversational flow, which will be the actual path that the end users will go through.
     
@@ -62,20 +127,53 @@ Suppose the bot is used as an official portal to apply for leaves or check salar
 
 > Flows can be further categorised using Categories.
 
-### 3.1 Create a Flow
+----
+
+:::note
+The icons available on the side are shortcuts to access the following: 
+
+![](https://i.imgur.com/3rEtjur.jpg)
+
+
+
+| Icon                                                                                                                                         | Functionality                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| Node navigator                                                                                                                               | Used to navigate to a specific node. You can also use it to filter and segregate nodes in your flow. |
+| [Prompts](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes)                                                     | Shortcut to drag and drop prompt nodes.                                                              |
+| [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes)                                                    | Shortcut to drag and drop message nodes.                                                             |
+| [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes)                                                      | Shortcut to drag and drop action nodes.                                                              |
+| [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes)                                                        | Shortcut to drag and drop logic nodes.                                                               |
+| [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)                                                        | Variables are used throught this module for multiple purposes.                                       |
+| [Language](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported#2-add-languages)                                         | Select a language your bot is accessable in.                                                         |
+| [Channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) - Use to configure how bot functions in each channel. | ![](https://i.imgur.com/Jzrwr57.png)                                                                 |
+| [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools) |   Used to open the global tools tab.                                                                                                   |
+:::
+
+
+
+
+
+
+
+
+### 2.1 Create a flow
 
 You must first create a flow and then trigger a flow. You can create a flow using a template or from scratch. When you create a flow from scratch, you create a placeholder for the flow first.
 
 To create a flow, follow these steps:
 
 1. Log in to your studio account. On the Overview page, select your bot. 
-2. Select **Overview** > **Studio** (keyboard shortcut: g+s).
+2. Select **Overview** > **Studio**.
 
 > Learn more about [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview#access-studio). 
     
-3. Select **Flows** (keyboard shortcut: s+f)> Create flow.
+3. Select **Flows** > Create flow.
 
 ![](https://i.imgur.com/YZXi95w.jpg)
+
+:::tip
+Keyboard shortcut to open flows `s` + `f`.
+:::
 
 4. If you want to select from the available template, click a suitable template.
 
@@ -102,13 +200,30 @@ To create a flow, follow these steps:
 ![](https://i.imgur.com/GS5ENuC.png)
 
 7. Click **Save**.
+8. Add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) and build a flow as per your use-case. 
+--- 
 
-## <a name="triggerflow"></a> 4. Configure Start Trigger
+## <a name="workflow"></a> 3. Workflow - a variant of flow
+
+Workflows are background processes that run along with the conversational flow. **Workflow** option can be selected while creating a flow.
+
+![](https://i.imgur.com/yMThz0H.png)
+
+Workflow is the same as any other flow page, it will have a start node. Nodes connecting the start node can only be [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes (Message and Prompt nodes are not available to build a workflow).
+
+![](https://i.imgur.com/7Wfp9Yz.png)
+
+  
+  
+  
+---
+
+## <a name="triggerflow"></a> 4. Configure start trigger
 
 To configure a start trigger, follow the steps below:
 
 1. Open the bot **Studio** page.
-2. Click Design bot flows > Flows tab. Click the Flows node of the bot. Expand a category and click a flow.
+2. Design bot flows > Flows tab. Click the Flows node of the bot. Expand a category and click a flow.
 
 ![](https://i.imgur.com/d1V0J56.png)
 
@@ -198,7 +313,7 @@ Ensure that you clear the browser cache before you preview the bot. It is recomm
 :::
   
 
-### 5.2 Trigger via. Code
+### 5.2 Trigger via. code
 
 To preview a bot via code (embedded on your website), follow the steps below:
 

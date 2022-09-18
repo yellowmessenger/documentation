@@ -8,6 +8,9 @@ Logic nodes can be used when the flow must be branched based on the given condit
 
 ## 1. Condition
 
+> This node is available for voice bots. 
+
+
 Branch the flow based on if-else logic with this node.
 
 ![](https://i.imgur.com/0XiTCxA.jpg)
@@ -19,7 +22,7 @@ Else (if any other value is entered other than Yes), the text will be displayed 
 
 Condition node must have:
 
-### 1.1 If- Condition
+1. **If condition**
 
 ![](https://i.imgur.com/EncYoay.png)
  
@@ -44,11 +47,11 @@ Select a value (only one value can be selected) from the dropdown based on your 
  These dropdown values are derived from the [data available](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) in the system. **Journey variables** are created by the user for that flow, **Global variables** are asked and extracted from the other nodes, **User properties** are extracted from variables and few are automatically fetched by the system like IP, Country, Timezone, Created at, etc. 
 :::
 
-### 1.2 Condition
+2. **Condition**
 
 ![](https://i.imgur.com/3dmobD9.png)
 
-### 1.3 Conditional Value
+3. **Conditional Value**
 
 **Multiple** values can be selected based on the use-case. 
 
@@ -63,7 +66,7 @@ This dropdown will consist of:
 
 > When If-condition is **Others** or **System** these values are updated automatically.
 
-### 1.4 Else Condition
+4. **Else Condition**
  
 To add an Else-if condition, click _**+Add another condition**_.
 
@@ -72,7 +75,7 @@ To add an Else-if condition, click _**+Add another condition**_.
 
 ---
 
-## 2. Channel Filter 
+## 2. Channel filter 
 
 Similar to the condition node, branch the flow based on the available active channels with this node. 
 
