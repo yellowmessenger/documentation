@@ -147,8 +147,9 @@ If you have a one or more APIs, save your collection in a JSON file and import i
 <img  src="https://i.imgur.com/7Jsu5KE.png" alt="drawing"  width="75%"/>
 3. Click **Import**.
 
+---
 
-> What next?
+#### What next?
 > * [Know how to dynamically pass access tokens in a API](bearer-token.md)
 > * [Know how to send data to the API](send-data.md)
 > * [Monitor errors in APIs](api-settings.md)

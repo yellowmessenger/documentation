@@ -8,12 +8,12 @@ During bot conversation, you might need to store a specific information from the
 
 ![](https://i.imgur.com/pwcKB9z.png)
 
-> Sample Use cases
+> Sample use cases
 > * Create a table with different columns - city, pin code, and address columns. Show store address to the user based on the selected city or pin code.
 > * Store feedback of user in a database table.
 > * Store products in a table and show product details to the bot user based on the SKU or name selected.
 
-In this doc, you will learn how to -
+In this article, you will learn how to -
 * [Create a table](#create)
 * [Fetch table data](#a-namefetcha-2-fetch-table-data)
 * [Edit table and add associate relations if required](#edit)
@@ -28,6 +28,7 @@ In this doc, you will learn how to -
 1. Open the bot and switch to Development or Staging environment.
 2. Navigate to **Studio** > **Database**.
 3. Click **Create new table**.
+
    ![](https://i.imgur.com/9yNPeR1.jpg)
 
 * In **Table name**, name the table in lowercase without spacing.
@@ -107,7 +108,7 @@ You cannot modify the datatype or searchability of a column once created.
 
 ---
 
-## <a name="insert"></a> 5. Insert/Update field values from bot flow
+## <a name="insert"></a> 5. Insert/update field values from bot flow
 
 ### 5.1 Insert field values from bot flow
 
