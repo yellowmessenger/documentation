@@ -50,7 +50,7 @@ Problem with this API is that most API which requires bearer token authenticatio
 
 If the API node goes to fallback,  you can add a text message node and trigger a welcome journey.
 
-![](https://i.imgur.com/3w31otL.png)
+<img src="https://i.imgur.com/3M3NWMe.png" width="400"/>
 
   
 
@@ -58,8 +58,7 @@ If the API node goes to fallback,  you can add a text message node and trigger a
 > * Create or open a journey where you want to use Salesforce Search API, say `salesforceSearchLead` journey. Here, what we want is to first trigger is the `salesforceauth` API and store the bearer token in the `auth_token` variable which will be used here.
 > * Hence, in this flow,  add a [Trigger journey node](../build/nodes/action-nodes#trigger-journey) and trigger `salesforceauth` flow. Once the `salesforceauth` flow is executed, the current `salesforceSearchLead` will be executed. Now, in the API action node, select the `get_lead` API and under parameters, select `auth_token` and `email` variables.
 > * Finally, store the response of this API in `sf_search_lead_response`.
-
-![](https://i.imgur.com/4mC1FvJ.png)
+> <img src="https://i.imgur.com/ijhgh60.png" width="400"/>
 
   
 
@@ -72,14 +71,15 @@ To do so -
 
 1. Open any journey where you've added API Action Node which invokes auth API.
 
-![](https://i.imgur.com/bqTKe0s.png)
+<img src="https://i.imgur.com/sQsTVL9.png" width="90%"/>
+
 
   
-2. Add a new transformation function to parse bearer token from the API response. Store the response in a variable, here we'll be storing the response in `auth` variable.
+2. Add a new function to parse bearer token from the API response. Store the response in a variable, here we'll be storing the response in `auth` variable.
 
   
 
-**Transformation Function: getAuthToken**
+**Function: getAuthToken**
 
   
 ```js
@@ -95,7 +95,7 @@ return  token.token_type + " " + token.access_token;
 
 Here we need to pass the bearer token under headers, so click on `Add Headers` and enter this text: `{{{auth_token}}}`.
  
-<img  src="https://i.imgur.com/wadPMWR.png"  alt="drawing"  width="60%"/>
+<img  src="https://i.imgur.com/wadPMWR.png"  alt="drawing"  width="50%"/>
 
 4. To try this workflow, try invoking the journey where you're using the auth API. :rocket:
 

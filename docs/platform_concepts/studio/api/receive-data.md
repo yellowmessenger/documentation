@@ -19,7 +19,7 @@ To retrieve the API response and display it to the user, follow these steps -
 2. Select the variable where you have stored the API response.
 3. Using the dot notation, access the value of API response.
 
-![](https://i.imgur.com/03jY5iw.png)
+![](https://i.imgur.com/zGICqxJ.png)
 
   
 
@@ -30,19 +30,20 @@ Learn more about the API node [here](https://docs.yellow.ai/docs/platform_concep
 
   
 
-## 2. Display response information using Transformation Function
+## 2. Display response information using Function
 
-With the preceding procedure, you get the response object. You can use *Transformation function* to alter the structure and format of the raw data and show it in a more meaningful format.  
+With the preceding procedure, you get the response object. You can use *Function* to alter the structure and format of the raw data and show it in a more meaningful format.  
 
-API section can be used to invoke APIs but to parse and manipulate the API response, transformation function come in handy.
+Use the *API* section to invoke APIs. However, to parse and manipulate the API response, you need to use the **Functions** tab.
 
   
 
 To parse and alter the response data, follow these steps -
 
-1. Open **Studio > Build > Code**. Click **+Add new function**.  
+1. Open **Studio** > **Build** > **Functions**. 
+2. Click **+Add new function**.  
 
-![](https://i.imgur.com/tAgKjlN.png)
+![](https://i.imgur.com/jY6FbVp.png)
 
   
 

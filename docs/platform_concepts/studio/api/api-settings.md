@@ -26,7 +26,7 @@ To add recipients to whom you want to notify about the API failures -
 3. In **Email**, enter each email address of the recipient you want to notify and click **Include**.
 4. Click **Save**.
 
-![](https://i.imgur.com/Cx2lIw8.png)
+<img src="https://i.imgur.com/Cx2lIw8.png" width="80%"/>
 
 :::note
 * To remove a recipient from the included list, click **Exclude**.
