@@ -12,16 +12,13 @@ In this document, the following topics will be covered:
 5. [How to resolve clashes in intents and utterance?](#clash)
 6. [Best practices to create intents and utterances](#bp)
 
-:::tip
-You can access Intents using the keyboard shortcut `i`.
-:::
 
 :::info
 The words **Flows** and **Journeys** are used synonymously.
 :::
 ---
 
-## <a name="intent"></a> 1. Intents Overview
+## <a name="intent"></a> 1. Intents overview
 
 NLU deals with training machines to read and converse in any human language. Making AI Models understand  the nuances  of language is a very complex problem. Using Linguistic Semantics i.e. by creating a structured format of sentences, models are able to perceive natural language with good accuracy.
 
@@ -33,6 +30,7 @@ NLU deals with training machines to read and converse in any human language. Mak
 Knowledge of word meanings or sentence formation help in training the AI Models better with a few key concepts such as **Intents**, **Entities** and **Context**.
 
 For example, any sentence can be broken down into smaller components - 
+
 
 ![](https://cdn.yellowmessenger.com/7M9C8YcyuCJk1626109495211.png)
 
@@ -70,9 +68,9 @@ Creating intents for Jimmy's cafe:
 
 
 
-After creating the required flows, click on **Intents** in the **NLU** dropdown. Use the `i` key to access Intents directly from any Studio page. 
+After creating the required flows, click on **Intents** in the **Train** dropdown. Use the `i` key to access Intents directly from any Studio page. 
 
-## <a name="add"></a> 2. Add Intents and Utterances  
+## <a name="add"></a> 2. Add intents and utterances  
 
 To add intents and utterances, follow the given steps: 
 
@@ -83,7 +81,7 @@ A prerequisite to training your bot with the required intents is to have a basic
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/getting-started#step-by-step-guide-on-how-to-get-started-with-yellowai) to learn more. 
 
 
-### 2.2 Open Intents Page
+### 2.2 Open intents page
 
 After creating the required flows, click **Studio** > **Train** > **Intents**. 
 
@@ -93,7 +91,7 @@ After creating the required flows, click **Studio** > **Train** > **Intents**.
 You can access Intents using the keyboard shortcut `i`.
 :::
 
-### 2.3 Add Intent
+### 2.3 Add intent
 
 There are several ways in which a customer would like to  place an order for a cup of coffee:
 * Place an order
@@ -107,16 +105,16 @@ To add a new intent, click on **+Add new Intent** button and manually add the fi
 ![](https://i.imgur.com/aXfco3M.png)
 
 :::info
-With “Yellow.ai DynamicNLP”, NLP based on Zero-shot learning we eliminate the need for training the NLP model with utterances. To take advantage of this, follow the guidelines in Best Practices > [4.1 Intent Naming](#Intn) .
+With “Yellow.ai DynamicNLP”, NLP based on Zero-shot learning we eliminate the need for training the NLP model with utterances. To take advantage of this, follow the guidelines in Best Practices > [6.1 Intent Naming](#Intn) .
 :::
 
-### 2.4 Add Utterance
+### 2.4 Add utterance
 
 Add utterances to the intent. Utterances are phrases or queries that users may type in the bot conversation with an expectation of a response to that exact query. 
 
 There are two ways to add Utterances to an intent:
 
-#### 2.4.1 Add Utterance Manually
+#### 2.4.1 Add utterance manually
 
 While adding utterances manually to your intent, you do not need to pay attention to the case of the utterance, the bot will consider all such scenarios.
 
@@ -124,7 +122,7 @@ Type in your utterance and click  **+Add** to add the utterance to an intent.
 
 ![](https://i.imgur.com/N7S5mO5.png)
 
-#### 2.4.2 Use Suggested Utterance
+#### 2.4.2 Use suggested utterance
 
 Yellow.ai has data collected from over 100+ bots. This data is used to curate the suggested utterance section. In this section, you can see phrases similar to the first utterance you added. 
 
@@ -136,7 +134,7 @@ This would save you the effort of thinking of phrases and help you create intent
 
 ---
 
-## <a name="train"></a> 3. Train Intents
+## <a name="train"></a> 3. Train intents
 
 Click **Train Intents**.
 
@@ -145,13 +143,15 @@ You can train the intent after adding 2 utterances, but it's recommended to trai
 ![](https://i.imgur.com/DCbNCkp.png)
 
 
-### 3.1 Change Epochs (optional)
+### 3.1 Change epochs 
+
+(Optional)
 
 You can increase the number of epochs for training your intent. The number of epochs is set to 20 by default. However, they could be a deciding factor when it comes to underfitting or over-fitting the model.
 
 ![](https://i.imgur.com/pGySd37.png)
 
-### 3.2 Connect to Bot
+### 3.2 Connect to bot
 
 After training intents you can connect it to your bot. You have to connect the flow you built to the intent '**Order**'. To do this click the [Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/#4-configure-start-trigger) and configure the intent to the node. 
 
@@ -165,12 +165,12 @@ Congratulations! You trained and connected your first intent! :tada::tada::tada:
 :::
 ---
 
-## <a name="test"></a> 4. Test Intents
+## <a name="test"></a> 4. Test intents
 
 Once you have trained your intent you can test it for the results and retrain it (if required) based on the utterance report. 
 There are two methods to test your intent. 
 
-### 4.1  Test Bot
+### 4.1  Test bot
 
 To test your bot you can follow these steps:
 
@@ -182,7 +182,7 @@ To test your bot you can follow these steps:
 
 
 
-### 4.2 Test Intent
+### 4.2 Test intent
  
 To see what response is generated by the model when a user types a query. Click on [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools) and the section 'Test your bot'.
 
@@ -210,13 +210,14 @@ As you can see in the above code, the model understands that the phrase is a par
 ## <a name="clash"></a> 5. Resolve clashes in intents and utterances
 
 
-A bot is trained with multiple custom intents and entities to get the best result. There might be situations that will confuse the bot if the utterances are not classified correctly while training. These clashes that have resulted due to unclear utterance classification can be resolved by studying the utterance report. Follow the given steps to learn: 
+A bot is trained with multiple custom intents and entities to get the best result. There might be situations that will confuse the bot if the utterances are not classified correctly while training. These clashes that have resulted due to unclear utterance classification can be resolved by studying the utterance report. 
 
+Follow the given steps to learn: 
 1. How to download an utterance report 
 2. How to resolve clashes among utterances 
 
 
-### 5.1 Download Utterance Report
+### 5.1 Download utterance report
 
 1. Open **Studio** > **Train** > **Intents** , click **Generate utterance report**.
 
@@ -238,15 +239,15 @@ A bot is trained with multiple custom intents and entities to get the best resul
 - Report for **utterances across intents/faqs** highlights similar utterances across the flows, it will recommend you to change any one utterance of the similar pair including clashes due to entity featurisation.
 :::
 
-### 5.2 Resolve Clashes Among Utterances 
+### 5.2 Resolve clashes among utterances 
 
 Utterance reports sent to your mail ID are used to evaluate how well your bot utterances are designed. You can learn how 'similar' your utterances are within an intent and if there are any intents common in between the flows.
 
 :::note
-It is recommended to generate an utterance report after initial NLU setup and regularly at least once a month.
+It is recommended to generate an utterance report after initial Train setup and regularly at least once a month.
 :::
 
-#### 5.2.1 Conflicts Within Intents and FAQ's
+#### 5.2.1 Conflicts within intents and FAQ's
 
 This report will point to the relationship between the two utterances as a conflict if they have a high similarity.
 It is a comparison between utterances of the same intents.
@@ -258,7 +259,7 @@ If the similarity is more than 50%, you must go to the respective Intents page a
 If the similarity is less than 50%, it can be ignored. 
 
 
-#### 5.2.2 Conflicts Across Intents and FAQ's
+#### 5.2.2 Conflicts across intents and FAQ's
 
 This is a comparison between utterances of different intents.
 
@@ -269,25 +270,24 @@ If the similarity is more than 50%, you must go to any of the Intents page and d
 ----
 
 
-## <a name="bp"></a> 6. Best Practices
+## <a name="bp"></a> 6. Best practices
 
-This section is divided as:
+This section is divided into:
 1. Best practices to follow while naming intents.
 2. Best practices to follow while adding utterances to the intents.
 
-----
 
-### <a name="Intn"></a> 6.1 Intent Naming
+### <a name="Intn"></a> 6.1 Intent naming
 
 There are guidelines for new bots and for the bots in productions. For your intent to work best globally, follow the respective guidelines:
 
 #### 6.1.1 New bots
 
-1. Intent names will need to be at least 3 words long with unique words and no special characters. 
+1. Intent names must be at least 3 words long with unique words and no special characters. 
     - Be mindful of intent names, make sure they are as descriptive as possible.
     - Don't create intent names like intent test one, FAQ number one etc.
     - Bad intent names will result in bad NLP performance (False positives) and unnecessary issues in the bot.
-    - For Cloud: It is possible to rename intent names.
+    - For Cloud, it is possible to rename intent names.
 2. The more descriptive the intent name, the better (add names with more than 3 words).
 3. Avoid uncommonly and business-specific abbreviations: Example: PO (purchase order ), GMV, etc - use the full forms and add synonyms if necessary. Few common abbreviations like UPI, EMI, and HR are acceptable.
 4. Phrase the intent name as a verb followed by a noun. Example: get a premium receipt, pay renewal amount, fetch order status.
@@ -297,7 +297,7 @@ There are guidelines for new bots and for the bots in productions. For your inte
 
 #### 6.1.2 Existing bots
 
-Following are a few important pointers for Bots already in production: 
+Following are a few important pointers for bots that are already in production: 
 
 ##### Cloud
 
@@ -309,15 +309,15 @@ Following are a few important pointers for Bots already in production:
 ##### App
 
 1. Enable suggestions for bots. 
-    - To do this: In app.ym ensure that **enableDidYouMean** is set to true in app options within code as well as in Tools → App Options → Prediction → Enable Suggestions.
-    - If there’s any existing **DidYouMean** function in default:response, remove it.
+    - To do this, in app.ym ensure that **enableDidYouMean** is set to true in app options in Function and in Tools → App Options → Prediction → Enable Suggestions.
+    - If there’s an existing **DidYouMean** function in default:response, remove it.
 2. Verify that the flow/journey DESCRIPTION is in line with the guidelines mentioned above. 
     - If these are not in line and are in camelCase or have special characters, change these by going to flow settings for that flow (you need not change the journey name, only the description can be changed).
-3. Ensure that there is no Small Talk in FAQs / Flows. If these are present, delete them and enable platform small talk in **Context Management** and enable **Small Talk**.
+3. Ensure that there is no Small Talk in FAQs/Flows. If these are present, delete them and enable platform small talk in **Context Management** and enable **Small Talk**.
 
 ------
 
-### 6.2 Utterance & Flows
+### 6.2 Utterance & flows
 
 
 | DONTs ❌ | DOs ✅ | 
@@ -330,7 +330,7 @@ Following are a few important pointers for Bots already in production:
 ||Do add abbreviations/short forms in the “synonyms” section | 
 |Do not add single words as utterances|Add complete sentences|
 
-- #### Do not add utterances in which the only variation is Upper Case/Lower Case
+- #### Do not add utterances in which the only variation is upper case/lower case
 
 **Wrong** ❌  
 ```
@@ -495,7 +495,7 @@ Eg: Feedback Flow
 For these flows do **NOT** add any user expressions/utterances 
 Adding utterances here will unnecessarily increase the complexity of the NLP Model.
 
-- #### Do minimize False Positives 
+- #### Do minimize false positives 
     * When an incorrect flow is triggered with high confidence it is considered a False Positive.
     * False Positives occur because of overfitting and spoil the customer/user experience
     * These are minimized by following the best practices laid out in this document.
