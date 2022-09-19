@@ -20,7 +20,7 @@ Slack is a workplace communication tool, “a single place for messaging, tools 
 
 ### 1.1 Slack Context Management 
 
-Slack provides threaded messaging. It is important to understand how yellow messenger platform handles the context in channel, threads and in DM.
+Slack provides threaded messaging. It is important to understand how Yellow.ai platform handles the context in channel, threads and in DM.
 
 #### Channel
 

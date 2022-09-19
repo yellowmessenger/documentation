@@ -7,7 +7,7 @@ Azure AD enables features like SSO and for personalizing the app experiences usi
 
 Simplify single sign-on. Azure AD supports more than 2,800 pre-integrated software as a service (SaaS) applications.
 
-Yellow Messenger comes pre-built with the ADFS (Active Directory Federation Services) integration and generic OAuth implementation.
+Yellow.ai comes pre-built with the ADFS (Active Directory Federation Services) integration and generic OAuth implementation.
 
 If ADFS is enabled for authentication, the bot will redirect the user to the AD (Active Directory) login page, wherein the user will need to provide their credentials and once AD authenticates the user, a callback is triggered by ADFS to YM indicating the success or failure of the authentication. When the authentication is successful, ADFS provides the authentication token along with a refresh token and time to live for the token.
 

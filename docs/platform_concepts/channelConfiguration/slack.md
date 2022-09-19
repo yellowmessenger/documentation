@@ -13,7 +13,7 @@ Video Recording of how to get started - https://www.loom.com/share/ca1c315947204
 
 ### Slack context management using YM
 
-Slack provides threaded messaging so It is important to understand how yellow messenger platform handles the context in channel, threads and in DM.
+Slack provides threaded messaging so It is important to understand how Yellow.ai platform handles the context in channel, threads and in DM.
 
 **Channel:**
 
@@ -113,7 +113,7 @@ Slack app uses bot access token (xoxb) to communicate with workspace users, **Bo
 ![](https://lh3.googleusercontent.com/KUbz_iS-iAoOOhmVcPAc-eO0JSJIIiyMp6NCh9ez5BLkWCtW2Z-tlwGCCvs1TO_QoGtW59lJSb9OOkYsoe5toOiF5u49h1gPCEfFaTZ6BaXQxDPSApUpxof5eXq2gMH4VUJkMFgQ)
 
 
-**Step 3:** After installing the app to workspace, go back to the **OAuth & Permission** copy the Bot Access token (xoxb- ) and paste at the Yellow messenger > Channels > Slack > Add the Slack access token > Save.
+**Step 3:** After installing the app to workspace, go back to the **OAuth & Permission** copy the Bot Access token (xoxb- ) and paste at the Yellow.ai > Channels > Slack > Add the Slack access token > Save.
 
 ![](https://i.imgur.com/H5bSjrK.png)
 
@@ -127,7 +127,7 @@ Slack multi-workspace can be handled using the OAuth token, YM bot will map the 
 ![](https://lh3.googleusercontent.com/mUMeIHSjnvZG45kYDtSs6I-eFySQnKmsaljmKAJTGiO3nJ_OR88cHHATazCGg11q2ZKaneGkNW-gFmxPvsidPQj_eYvMB7368Jxq8JZ5c7h149-f3Aam1hA0EafAOg8kzLZupEwy)
 
 
-**Step 2:** Paste the client ID, Client Secret and scopes (comma separated) in the yellow messenger Slack channel OAuth Tokens
+**Step 2:** Paste the client ID, Client Secret and scopes (comma separated) in the Yellow.ai Slack channel OAuth Tokens
 
 ![](https://lh6.googleusercontent.com/UAsBEeONP3wbUE224ruAto5mYvq13bgc0KJmsCNjJY3-SqmozPvoeD1BeKt-l-8bklw42L4bg0GJUl8l3AeXS-9DtJK9Y5e9vFeY_QEkpxDT1FNVnr7oCx8EmWxZ6FnK2v-ncQCy)
 

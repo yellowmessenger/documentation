@@ -20,13 +20,13 @@ sidebar_label : Adding agents
 
 ![](https://cdn.yellowmessenger.com/PWZllixoy6L01616745941564.png)
 
-### How to accept an invite to join the Yellow Messenger as a support agent?
+### How to accept an invite to join the Yellow.ai as a support agent?
 
-1. If you don't have an account on [Yellow Messenger Platform](https://cloud.yellowmessenger.com) you will recieve an email from Yellow Messenger to Sign Up on the platform and accept an invite to join the platform as a support agent.
+1. If you don't have an account on [Yellow.ai Platform](https://cloud.yellow.ai) you will recieve an email from Yellow.ai to Sign Up on the platform and accept an invite to join the platform as a support agent.
 
 ![](https://cdn.yellowmessenger.com/FkR5tCQOhE5z1616745921561.png)
 
-2. If you already have an account on the Yellow Messenger platform, just go to `Projects` and check the notification icon. Click on right green button to accept the invite.
+2. If you already have an account on the Yellow.ai platform, just go to `Projects` and check the notification icon. Click on right green button to accept the invite.
 
 ![](https://cdn.yellowmessenger.com/5aGKH93hAL9P1616745911690.png)
 

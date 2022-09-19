@@ -100,7 +100,7 @@ To disconnect your Facebook Page and Instagram account:
 
 ---
 
-1) [Sign-up](http://cloud.yellowmessenger.com/) on Yellow AI platfrom: app.yellow.ai. If you have already signed-up, just sign-in.
+1) [Sign-up](https://cloud.yellow.ai/auth/signup) on Yellow AI platfrom: app.yellow.ai. If you have already signed-up, just sign-in.
 
 2) Navigate to your chatbot: **Projects → Select your chatbot**.
 

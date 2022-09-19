@@ -12,7 +12,7 @@ This section covers all the north star metrics for bot performance. Some statist
 - User related data (New users, old users, total users etc)
 - Session related data (Number of sessions, Avg session duration etc)
 - User demographics (Country, region, device, source, etc)
-- Channel level data ( Yellow Messenger, WhatsApp, Facebook etc)
+- Channel level data ( Yellow.ai, WhatsApp, Facebook etc)
 - Bounce rate deepdive
 ![](https://cdn.yellowmessenger.com/DkPqLqYbjocI1622795393658.jpg)
 ---
@@ -41,7 +41,7 @@ You can click on this graph to get a detailed overview. It is calculated for all
 ## Average Session per User
 
 This widget shows the average number of session per user. It is simply calculated using
-the total number of session and total number of users. It is calculated for the Yellow Messenger (Web) channel.
+the total number of session and total number of users. It is calculated for the Yellow.ai (Web) channel.
 ![](https://cdn.yellowmessenger.com/hRgufK0Ktujr1622795416284.png)
 ## Average Session Duration
 
@@ -82,6 +82,6 @@ The total count and percentage of users is shown for the specified date range ba
 the chosen parameter from the left menu.
 
 Note: Some of these metrics are captured for all the sources and some for limited
-sources like- UTM based users are for Yellow Messenger (Web) only.
+sources like- UTM based users are for Yellow.ai (Web) only.
 ![](https://cdn.yellowmessenger.com/IiXYViyP0m6m1622795481960.png)
 ---

@@ -20,7 +20,7 @@ This potentially increases the form completion rate.
 ### The process has two parts
 
 1. Requirements and form creation
-2. Lead data storage in the Yellow Messenger’s backend
+2. Lead data storage in the Yellow.ai’s backend
 
 ### Requirements and form creation
 
@@ -39,9 +39,9 @@ This potentially increases the form completion rate.
 
 ![](https://cdn.yellowmessenger.com/hSO2YxYbOn8w1617813819307.png)
 
-## Lead data storage in the Yellow Messenger’s backend
+## Lead data storage in the Yellow.ai’s backend
 
-1. Inside the Yellow Messenger platform, navigate to Configuration → Channels
+1. Inside the Yellow.ai platform, navigate to Configuration → Channels
 2. Under Channels, select the ‘Facebook Lead Ads’ option
 
 ![](https://cdn.yellowmessenger.com/otHQcaj1K7Qe1617814320929.png)
@@ -51,7 +51,7 @@ This potentially increases the form completion rate.
 ![](https://cdn.yellowmessenger.com/Lmdi7Kryb5CF1617814542734.png)
 
 4. After successfully logging in, our platform gets connected with the FB account.
-5. Now, select the Facebook page associated with your brand that you want to integrate with Yellow Messenger platform.
+5. Now, select the Facebook page associated with your brand that you want to integrate with the Yellow.ai platform.
 6. The page ID and access token gets auto-filled
 7. Select the Unique ID (UID) based on the form you created and click on ‘Connect’.
 
@@ -65,6 +65,6 @@ This potentially increases the form completion rate.
 
 ![](https://cdn.yellowmessenger.com/g3qhlH0LZOGb1617814588764.png)
 
-10. The leads captured live get stored onto the Yellow Messenger’s backend which can be used by the brand for customer engagement.
+10. The leads captured live get stored onto the Yellow.ai’s backend which can be used by the brand for customer engagement.
 
-Congrats! With this, you have understood how to configure 'Facebook Lead Ads' to the Yellow Messenger platform.
+Congrats! With this, you have understood how to configure 'Facebook Lead Ads' to the Yellow.ai platform.
