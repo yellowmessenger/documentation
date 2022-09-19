@@ -64,7 +64,7 @@ To pass values from your parent interface to the bot, you can make use of our **
     window.ymConfig = 
     {
       "bot":"ENTER_YOUR_BOT_ID_HERE",
-      "host":"https://cloud.yellowmessenger.com",
+      "host":"https://cloud.yellow.ai",
       
       "payload":
       {

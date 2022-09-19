@@ -69,7 +69,7 @@ This document will help you understand features and limitations of Google Chat c
 - Fill in all the details to configure your Google Chat Bot:
    - Please check both the options for **Functionality**
    - For **Connection setting** select “Bot URL” and add the following:
-      - For `cloud.yellow.ai` → `https://cloud.yellowmessenger.com/integrations/googleChat/receive/[BOT ID]`
+      - For `cloud.yellow.ai` → `https://cloud.yellow.ai/integrations/googleChat/receive/[BOT ID]`
       - For `app.yellowmessenger.com` → `https://app.yellowmessenger.com/integrations/googleChat/receive/[BOT ID]`
 
 ![Screenshot 2021-12-09 at 4.43.47 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/E4909823-7968-4FE2-9F76-06CE93A50BB2_2/Screenshot%202021-12-09%20at%204.43.47%20PM.png)

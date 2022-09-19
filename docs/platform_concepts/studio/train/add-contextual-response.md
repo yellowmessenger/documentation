@@ -17,7 +17,7 @@ These type of contextual intents can be handled in the following ways :
 ####  Adding Global Contextual Responses
 Setting up standard contextual responses for all prompts in all journeys in the bot. Basically if the users ask Why/What/How/ etc at any prompt, the response will be the same. If you want the same, please follow the following steps : 
 
-1. On the Yellow Messenger Platform, under Studio > Learn > Context Management as shown below.
+1. On the Yellow.ai Platform, under Studio > Learn > Context Management as shown below.
 
 ![contextual](https://cdn.yellowmessenger.com/VcWZIGBahtyb1615525545331.png)
 

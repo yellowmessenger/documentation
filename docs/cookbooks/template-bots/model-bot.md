@@ -233,7 +233,7 @@ Finally, also add a text response thanking the user for sharing their feedback a
 
 ## Exercise 5: Create Transfer Chat to Agent Journey
 
-When a new bot is created on the Yellow Messenger platform, ‘Transfer Chat to Agent’ journey is created automatically. You can modify it according to your preferences. If you wish, you can also configure your own support system here.
+When a new bot is created on the Yellow.ai platform, ‘Transfer Chat to Agent’ journey is created automatically. You can modify it according to your preferences. If you wish, you can also configure your own support system here.
 
 ## Exercise 6: Create Service Now Journey
 

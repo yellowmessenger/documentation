@@ -5,7 +5,7 @@ sidebar_label: Steps
 
 ## Three steps in setting up a WhatsApp chatbot:
 
-Step One: Create a WhatsApp Business Account on the Yellow Messenger platform
+Step One: Create a WhatsApp Business Account on the Yellow.ai platform
 
 Step Two: Open a Facebook Business Manager(FBM) account
 
@@ -17,7 +17,7 @@ Step Three: Verfiy your business with Facebook.
 
 User require an account before creating a Chatbot.
 
-1. To create an account, ***sign up*** here: **[Yellow Messenger](https://cloud.yellowmessenger.com/auth/login)**
+1. To create an account, ***sign up*** here: **[Yellow.ai](https://cloud.yellow.ai/auth/signup)**
 
 ![](https://cdn.yellowmessenger.com/cBtHl9QjdEtK1619535411755.png)
 

@@ -7,7 +7,7 @@ sidebar_label: Microsoft Teams
 
 Microsoft Teams is a communication and collaboration platform that combines workplace chat, video meetings, file storage, and application integration.
 
-This integration will let you connect your yellow messenger bot with Microsoft Team Channel. Using Azure bot service you can create bot and connect with different channels including MS Team. The message that users send can be received at YM configured endpoint and YM bot would be able to reply to the conversation on both Personal chat or channels on MS Team.
+This integration will let you connect your Yellow.ai bot with Microsoft Team Channel. Using Azure bot service you can create bot and connect with different channels including MS Team. The message that users send can be received at YM configured endpoint and YM bot would be able to reply to the conversation on both Personal chat or channels on MS Team.
 
 How does an MS Teams app integrate with YM?
 ![](https://lh4.googleusercontent.com/TysvA6st4vsK9LOkPrVJTzon6rjovsUoX3oOulcvG_6H77Tm0tUNmOpR4E286GMnSW-vhOzUba_QvGUiYuhWJh6QVahH57ncdNYG8oMHtrpSZSsi2AOENSQ4LsphXnMwab1VH3vN)
@@ -15,7 +15,7 @@ How does an MS Teams app integrate with YM?
 ## Getting Started
 ### Creating a new Teams App
 
-For Integrating Yellow Messenger MS Team channel, you will need to create a new azure app and azure bot service for which you will receive Client ID, Client Secret.
+For Integrating Yellow.ai MS Team channel, you will need to create a new azure app and azure bot service for which you will receive Client ID, Client Secret.
 
 Steps to create a bot service :
 
@@ -83,7 +83,7 @@ You will find your bot added in the MS Team chat and can start interacting after
 
 ## Connect your Teams app with YM bot
 
-Go to yellow messenger MS Team channel and fill those Client ID and Client Secret, now you are ready to use MS team with Yellow Messenger bot. Test by sending a message using app.sendTextMessage() .
+Go to Yellow.ai MS Team channel and fill those Client ID and Client Secret, now you are ready to use MS team with Yellow.ai bot. Test by sending a message using app.sendTextMessage() .
 
 
 ![](https://lh3.googleusercontent.com/2jujF7XExhGEP22XK_5yJxjK9GWgh71Bg_VCzE1sznz3mTid006WnHFSzJGucZTr6_-5eP_FVBmgvm_KWyBDSr1vCyVYGSsmOPxRZ155fwPS46bLBsublaOaWlDF_GKlgJTz2c3-)
@@ -126,7 +126,7 @@ Goto Azure Portal > App Registration > API Permissions
 ![](https://lh6.googleusercontent.com/z37T-8_2hO-v88FOY15bYZs3ZhNy7HK2hX3mR_uKF6Qh1L77cnBuHBc2IPXZX_Qm-glHTF5mBPkQnWNVa2eo3t6MmkDGhQWrpg-jDZdVWr3So_JH7QKeS9milnNcDW7YWTDj1dhP)
 
 
-For enabling multi tenant: Enable multi tenant in the Azure AD integration in Yellow messenger and enable multi tenant on the App registration > Authentication
+For enabling multi tenant: Enable multi tenant in the Azure AD integration in Yellow.ai and enable multi tenant on the App registration > Authentication
 
 **Graph APIs**:
 Documentation: https://docs.microsoft.com/en-US/graph/api/overview?view=graph-rest-1.0
@@ -146,7 +146,7 @@ Documentation: https://docs.microsoft.com/en-us/adaptive-cards/
 
 Designer functionality: https://adaptivecards.io/explorer/AdaptiveCard.html
 
-**Sending Adaptive Card using yellow messenger**:
+**Sending Adaptive Card using Yellow.ai**:
 
 ```js
     let CARD_PAYLOAD_FROM_DESIGNER = {
@@ -230,7 +230,7 @@ Messaging extensions allow users to interact with your web service through butto
 Documentation: https://docs.microsoft.com/en-us/microsoftteams/platform/messaging-extensions/what-are-messaging-extensions
 
 
-Steps to integrate ME with Yellow Messenger:
+Steps to integrate ME with Yellow.ai:
 
 **Step 1**: Goto App Studio > Select your App > Messaging extensions > Set up
 
@@ -249,7 +249,7 @@ Query Type: Allows you to run a query in the search field itself. (e.g: Wikipedi
 
 ![](https://lh3.googleusercontent.com/_KsG4Vgw53hdWjE9Hf1y82w6A2THRZA8G4PlXHajX8i5NWQsW1q2un8PDYGpwUNy3ytJoeY4OiNoDZavHjToxNRXmnPmUw-PeobGKTexMlxCjssqhslvnPUadGhpHC0eyzjOUNrM)
 
-Receiving responses in yellow messenger:
+Receiving responses in Yellow.ai:
 ```js
 Query Type:
 

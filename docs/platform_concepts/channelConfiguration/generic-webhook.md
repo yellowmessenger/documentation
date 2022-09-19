@@ -3,7 +3,7 @@ title : Generic Webhook
 sidebar_label : Generic Channel Integration
 ---
 
-Below are the steps for integrating any Channel with Yellow Messenger Bots via Webhook.
+Below are the steps for integrating any Channel with Yellow.ai Bots via Webhook.
 
 ## Instructions
 ### Steps for Integrations : 
@@ -32,4 +32,4 @@ Below are the steps for integrating any Channel with Yellow Messenger Bots via W
 >4. Audio Message
 >5. Cards(Carousel) Message 
 >6. Quick Replies
->7. WebView (Only supported in Yellow Messenger)
+>7. WebView (Only supported in Yellow.ai)
