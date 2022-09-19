@@ -3,7 +3,6 @@ title: Debug your bot flows
 sidebar_label : Debug bot flows
 ---
 
-# Debugging flows
 
 When automating conversations, there can be cases of errors in flows.
 
@@ -65,7 +64,7 @@ We love our no-code/low-code solutions, but sometimes you need to run your own f
 
 ### 3.1 View code logs
 We have a code logs section on our platform as well. Go to the **Code** section and click on **Logs**.
-![](https://i.imgur.com/f1qkzes.png)
+![](https://i.imgur.com/G3KmhjT.jpg)
 
 
 

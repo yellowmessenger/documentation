@@ -3,10 +3,10 @@ title: Keyboard shortcuts
 sidebar_label: Keyboard shortcuts
 ---
 
-We have introduced keyboard shortcuts to make to easy for you to access key options and increase the productivity of repetetive tasks.
+We have introduced keyboard shortcuts to make it easy for you to access key options and increase the productivity of repetitive tasks.
 
 :::note
-The scope in the table says from where you can you use the key to access that particular option.
+The scope in the table says from where can you use that particular shortcut key.
 * Global: You can use these keyboard shortcuts from any screen of https://cloud.yellow.ai
 * Studio: You can use these keyboard shortcuts only in the Studio module.
 :::
