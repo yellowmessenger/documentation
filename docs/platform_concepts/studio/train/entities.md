@@ -7,10 +7,9 @@ sidebar_label : Entities
 In this article, you will learn: 
 
 1. [Introduction](#ex)
-2. [Where to find entities](#na)
-3. [How to add and train entities](#ate)
-4. [Types of entities](#et)
-5. [Autoskipping prompts using entities](#ape)
+2. [How to add and train entities](#ate)
+3. [Types of entities](#et)
+4. [Autoskipping prompts using entities](#ape)
 
 :::tip
 You can access Entities using the keyboard shortcut `e`.
@@ -32,17 +31,19 @@ Entities are background or any additional information that is valuable to the me
 
 ---
 
-## <a name="na"></a> 2. Navigation
+
+
+
+## <a name="ate"></a> 2. Add and train entities 
 
 * Open **Studio** > **Train**. Click **Entities**.
 
 ![](https://i.imgur.com/jq1QXyS.png)
 
-## <a name="ate"></a> 3. Add and train entities 
 
 * For the bot to recognize entities they must be added and trained. 
 
-### 3.1 Add entities
+### 2.1 Add entities
 
 * Click **+Add new entity**.
 * Add **Name**. Select a [Type](#et) from the dropdown.
@@ -57,7 +58,7 @@ Entity name should be alphanumeric, lower case and must not contain spaces.
 
 
 
-### 3.2 Train entities
+### 2.2 Train entities
 
 * Click **Train entities**. 
 * Select **Model Type** (it can be trained for english/multiple-languages).
@@ -70,7 +71,7 @@ Entity name should be alphanumeric, lower case and must not contain spaces.
 
 ----
 
-## <a name="et"></a> 4. Types of entities
+## <a name="et"></a> 3. Types of entities
 In the [yellow.ai](https://cloud.yellow.ai/) platform, following entities can be defined:
 
 1. **List Type**
@@ -80,7 +81,7 @@ In the [yellow.ai](https://cloud.yellow.ai/) platform, following entities can be
 
 ---
 
-### 4.1 List 
+### 3.1 List 
 
 * These consist of around 60-70% usecases such as product catalogues, type of leaves, mode of payments, etc. Ideally, when all possible distinct values of the entity are known, list type of entity can be used. For example:
     * **Type of loan** : Home, Personal, Car, Bike. 
@@ -97,7 +98,7 @@ In the [yellow.ai](https://cloud.yellow.ai/) platform, following entities can be
 
 ---
 
-### 4.2 Regex
+### 3.2 Regex
 
 Cases when the pattern of the information is known but there is no way to list all the possible exact values of the same entity. This includes entities like Flight Number, ID cards, etc.
 
@@ -107,7 +108,7 @@ Cases when the pattern of the information is known but there is no way to list a
 Defining these entities is very simple, by entering the regular expression (general format of input) Example, Regex for PAN card- "[A-Z]{5}[0-9]{4}[A-Z]{1}".
 
 ---
-### 4.3 Text
+### 3.3 Text
 
 Text Type entities can be used when the use-case doesn't require list/regex type (when there is no specific list/format of entity items). 
 
@@ -127,7 +128,7 @@ It is highly recommended not to use text entity unless required as it is not ver
 
 ---
 
-### 4.4 System entities
+### 3.4 System entities
 
 Apart from the List and Pattern type entities, a set of entities are recognized by the model out-of-the-box without any specific training. These include:
 
@@ -143,7 +144,7 @@ Apart from the List and Pattern type entities, a set of entities are recognized 
 
 ---
 
-## <a name="ape"></a> 5. Autoskipping prompts using entities
+## <a name="ape"></a> 4. Autoskipping prompts using entities
 
 To detect entity and skip prompts, open **Make prompts smarter** of that respective prompt and select the entity value. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#5-make-prompt-smarter) to learn more on Make prompts smarter option. 
 If the entity value is detected/ present in the memory, that prompt will be skipped from the flow. 
