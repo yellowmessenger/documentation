@@ -9,6 +9,8 @@ Conversation Logs contain interactions of the user with your bot and responses t
 
 It helps you better analyze drop-offs, understand user perceptions, and optimise your flows accordingly. For example, you can review conversations to understand if your users are interacting with your bot as intended. It also enhances online chat with a persistent record of information exchanged and decisions reached.
 
+![](https://i.imgur.com/muGI3Km.png)
+
 
 
 ### 1.1 Session
@@ -24,9 +26,6 @@ Whatsapp | 24 hours
 
 
 
-![](https://i.imgur.com/NbgQwm4.png)
-
-
 :::note
 The conversation logs are updated everyday at 21:00 LT.
 :::
@@ -38,7 +37,7 @@ The following are some key features of the Yellow AI’s Conversation Logs:
 * ***Auto-tagging of conversations***:
     There are several predefined tags created based on certain rules. The system tries to identify if there is any problem in a conversation and associates a relevant tag. For example, Long response time, Missing bot response time, Abuse, Unused quick replies, Fallback time exceeded, Human takeover, and unidentified. A conversation can have more than one tag.
 
-![](https://i.imgur.com/zgNdX1L.png)
+![](https://i.imgur.com/uH5lt1i.png)
 
 * ***Quick labeling***:
     You can make use of quick labeling to easily categorize conversations and provide better context to it.

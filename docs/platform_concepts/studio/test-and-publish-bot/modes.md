@@ -27,9 +27,6 @@ Use the Development mode for all the ongoing developments such as adding/updatin
 * If all changes are working as expected, you can create a request to Publish. 
 * The bot admins will Publish the bot. 
 
-The following video explains how to create a publish request. 
-
-![](https://i.imgur.com/NcNBztP.gif)
 
 
 ### 1.2 Live mode 
