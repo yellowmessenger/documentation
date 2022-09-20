@@ -1,6 +1,6 @@
 ---
-title: API Error Alerts and Error Log
-sidebar_label : API Errors & Alerts 
+title: API error alerts and error Log
+sidebar_label : API errors & alerts 
 ---
 
 Once everything is setup and data is flowing through APIs, there could be chances of getting errors for any reason. 

@@ -1,71 +1,57 @@
 ---
-title: Understanding the Engage module
-sidebar_label: Engage Module
+title: Overview
+sidebar_label: Engage overview
 ---
 
+Engage is a customer engagement module that enables marketers to craft multi-channel campaigns intuitively.  Engage helps marketers to deliver total lifecycle CX from acquisition, through Transaction, to Retention and Growth.
 
-## What is Engage by Yellow.ai ?
-Engage is a customer engagement product for marketers to craft multi-channel campaigns intuitively. The marketers can deliver **total lifecycle CX from Acquisition, through Transaction, to Retention and Growth.**
+Yellow has dedicated features to help you manage the business campaigns efficiently.
+
+
 ![](https://i.imgur.com/InpWUnu.png)
 
-## Why Engage ?
-Effective campaign management is necessary for a successful business workflows. Usually, the task requires lot of efforts and time, still they are susceptible to errors and campaign failures.
+Effective campaign management is necessary for a successful business workflow. However, creating an effective campaign requires a lot of effort and time, still there are chances of proning to errors and campaign failures.
 
-Hence, it is important to manage and overview the campaigns efficiently. **Yellow has dedicated features to help you manage the business campaigns efficiently**.
+With the Engage module, admins can build and execute marketing campaigns by targeting a set of customers with relevant marketing content across variety of channels.
 
-Through the Engage module, admins can build and execute marketing campaigns by targeting a set of customers with relevant marketing content across variety of channels.
+## 1. Types of engagement
+The following are the different types of campaigns Yellow.ai supports.
 
-## How do I access Engage module ?
-There are **two ways** you can access the engage module.
-1. Login to the yellow.ai platform -> Select your bot ->Click on ‘Engage’ from quick links
-![](https://i.imgur.com/wLrkwHb.jpg)
+### 1.1 Outbound engagement
 
+Outbound engagement are campaigns that help brands reach out to their customers proactively. For example, to send transactional messages, personalized birthday or anniversary wishes; or to promote new products, services, offers, or sale.
 
+You can run outbound campaign in multiple channels such as Email, SMS, WhatsApp, FB Messenger, Viber, and Slack.
 
-2. You can also access the same from overview-> Engage.
-![](https://i.imgur.com/lvyHEKu.png)
+:::note
+The campaigns on messaging channels such as *FB Messenger* will be in the form of notifications.
+:::  
 
-## Outbound Vs Inbound Engagement
-### Outbound Engagement
-Outbound engagement are the campaigns **where brands reach out to the customer segments**. The context of the outreach could range from simple transactional updates through seasonal wishes to new product/service launch announcements.
+### 1.2 Inbound Engagement
 
-The 'Engage' product covers end-to-end outbound processes, you can configure the same by going into **Engage-> Outbound**:
-* Selecting Channel
-* creating/choosing message templates
-* Target Audience
-* Scheduling Campaign
-* Review & Launch
-* Checking performance
+Inbound engagement is carried out when customers visit the brand's website to explore the product or service offerings. The Inbound engagement helps in converting casual visitors into prospective leads or buyers.
 
-![](https://i.imgur.com/Hc7TfqK.jpg)
+  
 
 
-The outbound campaign can be run in multiple channels - **Email, SMS, WhatsApp, FB Messenger,Viber and Slack.**
+## 2. Access Engage module
+There are two user roles for Engage module. 
+* **Engagement admin**:  Authorised to send campaigns and create audience groups.
+* **Engagement user**: Can only schedule campaigns.
 
-Note: The campaigns on messaging channels such as **FB Messenger** will be in the form of **notifications**.
+To access Engage, follow these steps -
+1. Login to the https://cloud.yellow.ai  and go to your bot.  
+2. Use any of the following ways -
+   * Click on **Engage for campaigns** under  *Quick links*.
+   * Click on the main menu to expand and select **Engage**.
 
-### Inbound Engagement
-Inbound engagement is carried out **when customers visit the brand's website for exploring the offerings**. The intent of inbound engagement is to nurture and turn the casual visitors into prospective leads/serious buyers.
+![](https://i.imgur.com/2XkSNd2.jpg)
 
-The 'Engage' product automates engagement with incoming website visitors, you can configure the same by going into **Engage-> Inbound**:
-* Selecting the type of widget .
-* Configuring the type selected.
-* Setting web behaviour/ conditions under which campaign will be triggered.
-* Set frequency for the same visitor.
-* Checking performance.
-
-
-![](https://i.imgur.com/0ok3ru7.png)
-
-
-## FAQs
-1. **I am not able to access ENGAGE module, how do I get access?**
-Check your role with bot admin and request for the required roles from below:
-Engagement Admin - The user can send campaigns and configure audiences
-Engagement User - The user can only schedule campaigns
-2. **What are the type of access available for engage module?**
-Engagement Admin - The user can send campaigns and configure audiences
-Engagement User - The user can only schedule campaigns
+:::note
+If you are unable to access the Engage module, check your role with the bot's Super admin and request for the required role - 
+* *Engagement admin* to send campaigns and create audience groups.
+* *Engagement user* to just schedule campaigns.
+:::
 
 
 
