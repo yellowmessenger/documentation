@@ -32,12 +32,13 @@ In this article, you will learn -
 1. On the **Event** page, navigate to the category in which you want to activate or deactivate an event. 
 2. Click on the inactive event that you want to activate.
 3. Click the more options icon, <img src="https://i.imgur.com/VTnjRYM.png" width="10"/> > **Activate**.
+
    ![](https://i.imgur.com/eMEfIG1.png)
 
 
-4. To use an active event in a Flow, in the **Start trigger**** configuration, select *Event** from the drop-down box. In the **Select** field, find the event that you've enabled before and select it.
+4. To use an active event in a flow, in the **Start** node, select *Event* from the first drop-down and select the event that you have enabled.
 
-   ![](https://i.imgur.com/qriFqBi.png)
+![](https://i.imgur.com/JwRfFpM.png)
 
 :::note
 
