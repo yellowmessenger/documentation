@@ -321,3 +321,37 @@ html[data-theme="dark"] .DocSearch {
 [class^="menu__link menu__link--sublist"]::after {
   background: var(--ifm-menu-link-sublist-icon) 50% / 1.4rem 1.4rem;
 }
+
+
+/* TIP */
+
+[class^="admonition admonition-tip alert alert--success"] {
+  background: #F7F0FF;
+  color: #384248;
+  border-radius: 6px;
+  border: 1px solid #985EE5;
+}
+
+[class^="admonition admonition-tip alert alert--success admonition-heading"] {
+  color: #985EE5;
+}
+
+
+
+/* NOTE */
+
+[class^="admonition admonition-note alert alert--secondary"] {
+  background: #EAF5FB;
+  color: #384248;
+  border-radius: 6px;
+  border: 1px solid #3398DD;
+}
+
+
+
+/* Image */
+
+
+p img {
+  border: 1px solid #C4C4C4;
+}
