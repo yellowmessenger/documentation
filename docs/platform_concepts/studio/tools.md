@@ -427,117 +427,165 @@ Values that will remain constant throughout the conversation can be added under 
  
 ![](https://i.imgur.com/dernhZp.jpg)
  
-### 2.5 Voice 
+### 2.5 Voice
 
+  
+  
 
 > These settings are configurable when IVR is connected.
+
 > (From Channel > Voice > IVR)
+
+  
 
 ![](https://i.imgur.com/9hiy6Pg.jpg)
 
-
-
+  
+  
+  
+  
 
 The global options are configured to be applicable for all the nodes in general. Node level options are configured for each node specifically. For example:
-* **Global level**: You can select a STT/TTS engine globally so that you dont have to configure it for each of the node. 
-* **Node level**: You can confugure recording for each node, example for address node the recording duration is longer than the phone number node. 
 
+*  **Global level**: You can select an STT/TTS engine globally so that you don't have to configure it for each node.
 
-Voice bot provides multiple settings for different uses, they are classified into: 
-1. **Telephony**: For settings on telephony platform like call forwarding, calling line identity, etc. 
-2. **Recording**: Recording options such as beep sound after a question is asked, duration of call recording.  
-3. **Speech to text**: You can customise a speech recognition software that enables the recognition and translation of spoken language into text.
-4. **Text to speech**: Customise the Text-to-Speech (TTS) capabilities to play back text in a spoken voice. 
-5. **Conversation**: Yellow cloud related options to support telephony platform. 
-6. **Others**
+*  **Node level**: You can configure recording for each node, for example for the address node the recording duration is longer than the phone number node.
 
+  
+  
+
+Voice bot provides multiple settings for different uses, they are classified into:
+
+1.  **Telephony**: For settings on the telephony platform like call forwarding, calling line identity, etc.
+
+2.  **Recording**: Recording options such as beep sound after a question is asked, and duration of call recording.
+
+3.  **Speech to text**: You can customise a speech recognition software that enables the recognition and translation of spoken language into text.
+
+4.  **Text to speech**: Customise the Text-to-Speech (TTS) capabilities to play back text in a spoken voice.
+
+5.  **Conversation**: Yellow cloud related options to support telephony platform.
+
+6.  **Others**
+
+  
+  
 
 ![](https://i.imgur.com/sByzV1b.png)
 
+  
+
 :::note
+
 Most of the options can be configured globally.
-If they are configured at the [node level](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes#32-voice), node level customisation takes priority over the global level settings. 
+
+If they are configured at the [node level](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes#32-voice), node level customisation takes priority over the global level settings.
+
 :::
 
+  
+  
+  
 
+**Telephony related options**
 
-**Telephony related options** 
+  
+  
 
-
-| Fields                   | Description                                                                                                                                                                  |
+| Fields | Description |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Custom SIP header**    | This is the extra info to be passed to agent with SIP call transfer. Enter a key-value pair in JSON format.                                                                  |
+| **Custom SIP header** | This is the extra info to be passed to an agent with SIP call transfer. Enter a key-value pair in JSON format. |
 
-
-
-
-
-
-
+  
+  
+  
+  
+  
+  
+  
+  
 
 **Recording related options**
 
+  
+  
+  
 
-
-| Fields                                                     | Description                                                                                                                                                                       |
+| Fields | Description |
 | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Recording after call forward**                                       | When this option is enabled the call will get recorded even after it has been forwarded to another receiver. This can be disabled for usecases which are recording sensitive information. |
-| **Enable recording beep**                                  | When this is enabled, a beep sound is played before recording the user response.|
-| **Recording Action**                       | Select a value from the dropdown to take an action like Pause, Resume, Stop (Default - Recording is ON). This can be used for usecases which are recording sensitive information. |
+| **Recording after call forward** | When this option is enabled the call will get recorded even after it has been forwarded to another receiver. This can be disabled for use cases which are recording sensitive information. |
+| **Enable recording beep** | When this is enabled, a beep sound is played before recording the user's response.|
+| **Recording Action** | Select a value from the dropdown to take an action like Pause, Resume, Stop (Default - Recording is ON). This can be used for use cases which are recording sensitive information. |
 
-
-
-
-
+  
+  
+  
+  
+  
+  
 
 **STT related options**
 
+  
+  
+  
+  
 
-
-
-| Fields                     | Description |
+| Fields | Description |
 | -------------------------- | ----------- |
-| **STT engine**             | Select an engine from the dropdown-  Google/Microsoft.        |
-| **STT mode**               |  Select mode from the dropdown. Microsoft: "Static" "Streaming" or "Streaming Advanced". Google: "Static". |
-| **STT language**           |  Bot Language(ISO code) can be selected from the dropdown. Default- English. Click [Microsoft](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts) or [Google](https://cloud.google.com/speech-to-text/docs/languages) for more information on the languages)|
-| **Recording max duration**     |   This value is the Max duration for which the bot will wait after asking a question (in any step) while the user is speaking. For example, after asking "Which city are you from" and recording duration value is 0.5- the bot records 5 seconds of a response. This option is necessary to avoid consuming unwanted information and to stay with the flow while the bot is conversing. If the user replies long paragraphs when a question is asked or voice is shadowed with background noises, the bot must process those long inputs which is not ideal. Hence, with this, bot only takes the necessary response and quicly process the user query.    |
-| **Recording silence duration** |  This value is the Max duration for which the bot will wait after asking a question (in any step) for the user to respond. For example, if recording silence duration is 5 seconds, bot waits for 5 seconds for the response if the user is silent. If the user does not respond anything within 6 seconds, bot Message will be played.             |
-| **Initial silence duration**   |  Enter a decimal number which will be the acceptable silence duration before a bot user starts speaking.            |
-| **Final silence duration**                           |   Enter a decimal number which will be the acceptable silence duration after a bot user starts speaking and the bot will have to process the response.              |
+| **STT engine** | Select an engine from the dropdown- Google/Microsoft. |
+| **STT mode** | Select mode from the dropdown. Microsoft: "Static" "Streaming" or "Streaming Advanced". Google: "Static". |
+| **STT language** | Bot Language(ISO code) can be selected from the dropdown. Default- English. Click [Microsoft](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts) or [Google](https://cloud.google.com/speech-to-text/docs/languages) for more information on the languages)|
+| **Recording max duration** | This value is the Max duration for which the bot will wait after asking a question (in any step) while the user is speaking. For example, after asking "Which city are you from" and the recording duration value is 0.5- the bot records 5 seconds of a response. This option is necessary to avoid consuming unwanted information and to stay with the flow while the bot is conversing. If the user replies in long paragraphs when a question is asked or the voice is shadowed with background noises, the bot must process those long inputs which are not ideal. Hence, with this, the bot only takes the necessary response and quickly processes the user query. |
+| **Recording silence duration** | This value is the Max duration for which the bot will wait after asking a question (in any step) for the user to respond. For example, if the recording silence duration is 5 seconds, bot waits for 5 seconds for the response if the user is silent. If the user does not respond to anything within 6 seconds, a bot Message will be played. |
+| **Initial silence duration** | Enter a decimal number which will be the acceptable silence duration before a bot user starts speaking. |
+| **Final silence duration** | Enter a decimal number which will be the acceptable silence duration after a bot user starts speaking and the bot will have to process the response. |
 
-
-
+  
+  
+  
+  
 
 **TTS related options**
 
+  
+  
+  
 
-
-| Fields       | Description |
+| Fields | Description |
 | ------------ | ----------- |
-| **TTS engine**   | Select the engines from the dropdown- Microsoft Azure, Google Wavenet, Amazon Polly.        |
-| **Text type**    |    Select Text/SSML from the dropdown.         |
-| **TTS language** |  Bot Language(ISO code) can be selected from the dropdown.|
-| **Pitch**        |  Pitch value can be any decimal value depending on the base of voice required, 0 is ideal.     You can add this for Microsoft if text_type = "text" and for Google for text_type = "text" and "SSML".      |
-| **Voice ID**     |   Type the characters of voice ID. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
-| **TTS Speed**             |  This value defines how fast the bot must converse. This value can be 0.9 - 1.5 for the bot to soundly humanly.   You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML".        |
+| **TTS engine** | Select the engines from the dropdown- Microsoft Azure, Google Wavenet, Amazon Polly. |
+| **Text type** | Select Text/SSML from the dropdown. |
+| **TTS language** | Bot Language(ISO code) can be selected from the dropdown.|
+| **Pitch** | Pitch value can be any decimal value depending on the base of voice required, 0 is ideal. You can add this for Microsoft if text_type = "text" and for Google for text_type = "text" and "SSML". |
+| **Voice ID** | Type the characters of voice ID. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
+| **TTS Speed** | This value defines how fast the bot must converse. This value can be 0.9 - 1.5 for the bot to soundly humanly. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
 
-
-
+  
+  
+  
+  
 
 **Conversation related options**
 
+  
+  
+  
 
-
-| Fields                         | Description |
+| Fields | Description |
 | ------------------------------ | ----------- |
-| **Enable acknowledgement message** | When this is enabled, an acknowledgement message can be played when the user is done speaking.      |
-| **Acknowledgement message**        | Enter a text message. Ex: "Do you want to confirm?"          |
-| **Boost phrases**                               |Some user responses can be confusing for the bot to understand. Region specific words, new genz lingos, internet terminologies, trending phrases, abbreviations are trained specially so that the bot understands the exact intention. For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise it gets translated to kovind/ go we/ co-wid etc.             |
+| **Enable acknowledgement message** | When this is enabled, an acknowledgement message can be played when the user is done speaking. |
+| **Acknowledgement message** | Enter a text message. Ex: "Do you want to confirm?" |
+| **Boost phrases** |Some user responses can be confusing for the bot to understand. Region-specific words, new Genz lingos, internet terminologies, trending phrases, and abbreviations are trained especially so that the bot understands the exact intention. For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise, it gets translated to kovind/ go we/ co-wid etc. |
+
+  
 
 **Other options**
 
-| Fields                    | Description                                                                                                                                          |
+  
+
+| Fields | Description |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Repeat limit**         | This is the number of time a repeat message can be played. For example, if the value is 3, the bot askes the user to respond 3 times and disconnets. |
-| **Repeat fallback flow** |   Select the flow that must be followed when there is a fallback.  | 
-|    **Disconnect message**                      | This is the message played before disconnecting the call. For example, "Have a nice day. Bye!"   |
+| **Repeat limit** | This is the number of times a repeat message can be played. For example, if the value is 3, the bot asks the user to respond 3 times and disconnects. |
+| **Repeat fallback flow** | Select the flow that must be followed when there is a fallback. |
+| **Disconnect message** | This is the message played before disconnecting the call. For example, "Have a nice day. Bye!" |
