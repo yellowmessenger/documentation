@@ -506,7 +506,7 @@ In this tab, you can add constants by clicking the **+Add Constants button** and
 
 
  
-### 2.5 Voice 
+## 2.5 Voice 
 
 :::note
 You can configure these settings only when IVR is connected from **Channel** > **Voice** > **IVR**.
@@ -518,13 +518,12 @@ You can configure these settings only when IVR is connected from **Channel** > *
 
 
 
-The global options applicable for all the nodes in general. Node level options are configured for each node specifically. For example:
+The global options applicable for all the nodes in general. Node level options are configured for each node specifically. For example -
 
 * **Global level**: You can select a STT/TTS engine globally so that you don't have to configure it for each of the node. 
 * **Node level**: You can confugure recording for each node, example for address node the recording duration is longer than the phone number node. 
 
-
-Voice bot provides multiple settings for different uses, they are classified into: 
+Voice bot provides multiple settings for different uses, they are classified into - 
 1. **Telephony**: For settings on telephony platform like call forwarding, calling line identity, etc. 
 2. **Recording**: Recording options such as beep sound after a question is asked, duration of call recording.  
 3. **Speech to text**: You can customise a speech recognition software that enables the recognition and translation of spoken language into text.
@@ -541,31 +540,28 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 :::
 
 
+### 2.5.1 Telephony related options
 
-#### Telephony related options
-
-| Fields | Description
-| ------ | ------------- |
-| **Custom SIP header**    | This is an extra info to be passed to an agent with SIP call transfer. Enter a key-value pair in JSON format.                                                                  |
-
+Fields | Description
+------ | -------------
+**Custom SIP header**   | This is an extra info to be passed to an agent with SIP call transfer. Enter a key-value pair in JSON format.
 
 
+### 2.5.2 Recording related options
 
-**Recording related options**
 
-
-| Fields | Description                                                                                                                                                                       |
-| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Recording after call forward**                                       | When this option is enabled the call will get recorded even after it has been forwarded to another receiver. This can be disabled for usecases which are recording sensitive information. |
-| **Enable recording beep**                                  | When this is enabled, a beep sound is played before recording the user response.|
-| **Recording Action**                       | Select a value from the dropdown to take an action like Pause, Resume, Stop (Default - Recording is ON). This can be used for usecases which are recording sensitive information. |
+Fields | Description
+------- | -----------
+**Recording after call forward** | When this option is enabled the call will get recorded even after it has been forwarded to another receiver. This can be disabled for use cases which are recording sensitive information.
+**Enable recording beep** | When this is enabled, a beep sound is played before recording the user response.
+**Recording Action** | Select a value from the dropdown to take an action like Pause, Resume, Stop (Default - Recording is ON). This can be used for usecases which are recording sensitive information.
 
 
 
 
 
 
-#### STT related options
+### 2.5.3 STT related options
 
 
 | Fields                     | Description |
@@ -581,7 +577,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 
 
 
-#### TS related options
+### 2.5.4 TS related options
 
 
 
@@ -597,7 +593,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 
 
 
-#### Conversation related options
+### 2.5.5 Conversation related options
 
 
 
@@ -607,7 +603,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 | **Acknowledgement message**        | Enter a text message. Ex: "Do you want to confirm?"          |
 | **Boost phrases**                               |Some user responses can be confusing for the bot to understand. Region specific words, new genz lingos, internet terminologies, trending phrases, abbreviations are trained specially so that the bot understands the exact intention. For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise it gets translated to kovind/ go we/ co-wid etc.             |
 
-#### Other options
+### 2.5.6 Other options
 
 | Fields                    | Description                                                                                                                                          |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
