@@ -17,6 +17,9 @@ In this article, you will learn about the different types of prompt nodes:
 You can also make your **prompts smarter**. It will be discussed at the end of this document. 
 
 ---
+
+**Randomization**
+
 The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple texts for randomizing**. Enter variations of text that you want your users to see. This feature will display different message to the user in a random order (instead of the same message every time) making the conversation more humanly. 
 >  
 > ![](https://i.imgur.com/KucDPVJ.png)
