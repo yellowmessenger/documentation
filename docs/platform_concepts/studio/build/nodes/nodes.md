@@ -92,175 +92,142 @@ Enable these options to improve the video viewing experience.
 
 ### 3.2 Configure node for a voice bot
 
-  
+Node-level voice options can be configured for each node specifically. The global voice options that are configured will be applicable for all the nodes and flows for the bot. Whenever a global option and also node level option are defined, for that specific node, the node level option will be given more priority. For example,  
 
-This is configured for voice bots. You can modify voice-related features like speed, delay, forward chat etc.
+-   **Global level**: You can select an STT/TTS engine globally so that you don’t have to configure it for each node.
+-   **Node level**: You can configure different “recording max duration” for different nodes i.e. 10 seconds for address and 5 seconds for name node.
 
-  
-  
 
-Node-level options are configured for each node specifically, while the global options are configured to be applicable for all the nodes in general. For example:
+Voice bot node options/settings are classified depending upon different uses as below:  
 
-*  **Global level**: You can select an STT/TTS engine globally so that you don't have to configure it for each of the nodes.
+1.  **Telephony**: For settings related to telephony like call forwarding, calling line identity, etc.
+2.  **Recording**: Recording options such as beep sound after a question is asked.
+3.  **Speech to Text**: You can customise a speech recognition software that enables the recognition and translation of spoken language into text.
+4. **Text-to-Speech**: You can customise the Text-to-Speech (TTS) capabilities to play back text in a spoken voice.
+5. **DTMF**: Dual-tone multi-frequency (DTMF) is used for touch tones, it is the sound made when pressing a number key. For cases, where we expect background noise and difficulty in correctly identifying the user utterance for numeric inputs, we can use this feature to record user responses.
+6.  **Conversation**: Yellow cloud provides additional conversational options to further customize and elevate the experience on the IVR channel.
 
-*  **Node level**: You can configure recording for each node, for example for the address node the recording duration is longer than the phone number node.
 
-  
-  
 
-Voice bot provides multiple settings for different uses, they are classified into:
-
-1.  **Telephony**: For settings on the telephony platform like call forwarding, calling line identity, etc.
-
-2.  **Recording**: Recording options such as beep sound after a question is asked, and duration of call recording.
-
-3.  **Speech to text**: You can customise a speech recognition software that enables the recognition and translation of spoken language into text.
-
-4.  **Text to speech**: Customise the Text-to-Speech (TTS) capabilities to play back text in a spoken voice.
-
-5.  **DTMF**: Dual-tone multi-frequency (DTMF) is used for touch tones, it is the sound made when pressing a number key. DTMF controls automated equipment and signals user intent, for example, the number they wish to dial.
-
-6.  **Conversation**: Yellow cloud-related options to support the telephony platform.
-
-  
 
 ![](https://i.imgur.com/wjhRgA8.png)
 
-  
-
 :::note
-Most of these options can be configured globally from [tools and settings](https://docs.yellow.ai/docs/platform_concepts/studio/tools#25-voice).
-
-If they are configured at the node level, node level customisation takes priority over the global level settings.
+Most of these options can be configured globally from  [tools and settings](https://docs.yellow.ai/docs/platform_concepts/studio/tools#25-voice).
+If they are configured at the node level, node level customisation takes priority over the global level settings. 
 :::
 
-  
-  
-  
 
-**Telephony related options**
 
-  
-  
+**Telephony related options** 
 
-| Fields | Description |
+
+| Fields                   | Description                                                                                                                                                                  |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Disconnect** | When this option is enabled, the call gets disconnected as this node is reached. |
-| **Call forward** | When this is enabled you can enter a number to forward or the SIP. It is used to forward the calls from one receiver to the other. |
-| **Number to forward** | This text box accepts the number of the call to be forwarded to ex: Number (+919XXXXXXXXX). |
-| **SIP extension** | Extension to initiate Session Initiation Protocol. |
-| **Caller line identity** | Inbound calls made to a business or individual can be identified by their number of origin. This field accepts **custom caller ID** which is sent while forwarding the call. |
-| **Custom SIP header** | This is the extra info to be passed to an agent with SIP call transfer. Enter a key-value pair in JSON format. |
+| **Disconnect**           | When this option is enabled, the call gets disconnected post execution of this node.                                                                                                 |
+| **Call forward**         | When this is enabled you can enter a number to forward or the SIP. It is used to enable call forwarding to an agent in any specific step.  You can either forward the call to an agent's number or forward it to some SIP extension.                                          |
+| **Number to forward**    | This textbox accepts the number fot the call to be forwarded to ex: Number (+919XXXXXXXXX).                                                                                   |
+| **SIP extension**        | Extension to initiate SIP (Session Initiation Protocol) transfer.                                                                                                                            |
+| **Caller line identity** | This field accepts **custom caller ID** which is sent while forwarding the call to an agent. Note, that this functionality is not supported by all the carriers.|
+| **Custom SIP header**    | This can be used as an additional parameter that can be passed to an agent while transferring the call to an Agent to pass along bot collected information. You can pass a key-value pair in JSON format which will get passed in the SIP header.  |
 
-  
-  
-  
-  
-  
-  
-  
-  
+> An example of Custom SIP header:  
+
+
+```[{“key”:“User-to-User”,  “value”:“name=david&product=heater&query=not turning off&priority=high&number=12345”}]```
+
+
+
+
+
 
 **Recording related options**
 
-  
-  
-  
 
-| Fields | Description |
+
+| Fields                                     | Description                                                                                                                                                                       |
 | ------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Enable recording beep** | When this is enabled, a beep sound is played before recording the user's response. |
-| **Recording Action** | Select a value from the dropdown to take an action like Pause, Resume, Stop (Default - Recording is ON). This can be used for use cases which are recording sensitive information. |
+| **Enable recording beep**                  |  When this is enabled, a beep sound will be played after the bot asks a question giving an auditory response to the end-user to respond.                                    |
+| **Recording Action**                       | With the recording management options, you can select to pause/resume/stop recording depending upon different use-cases and conversations. By default, the recording is ON only. Also, in a call, once you STOP the recording (for recording sensitive dialogues), it can’t be resumed back. |
 
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
 
 **STT related options**
 
-  
-  
-  
-  
 
-| Fields | Description |
+
+
+| Fields                     | Description |
 | -------------------------- | ----------- |
-| **STT engine** | Select an engine from the dropdown- Google/Microsoft. |
-| **STT mode** | Select mode from the dropdown. Microsoft: "Static" "Streaming" or "Streaming Advanced". Google: "Static". |
-| **STT language** | Bot Language(ISO code) can be selected from the dropdown. Default- English. Click [Microsoft](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts) or [Google](https://cloud.google.com/speech-to-text/docs/languages) for more information on the languages)|
-| **STT engine endpoint** | Endpoint id of the engine selected |
-| **Recording max duration** | This value is the Max duration for which the bot will wait after asking a question (in any step) while the user is speaking. For example, after asking "Which city are you from" and the recording duration value is 0.5- the bot records 5 seconds of a response. This option is necessary to avoid consuming unwanted information and to stay with the flow while the bot is conversing. If the user replies in long paragraphs when a question is asked or the voice is shadowed with background noises, the bot must process those long inputs which are not ideal. Hence, with this, the bot only takes the necessary response and quickly processes the user query. |
-| **Recording silence duration** | This value is the Max duration for which the bot will wait after asking a question (in any step) for the user to respond. For example, if the recording silence duration is 5 seconds, bot waits for 5 seconds for the response if the user is silent. If the user does not respond to anything within 6 seconds, a bot Message will be played. |
-| **Initial silence duration** | Enter a decimal number which will be the acceptable silence duration before a bot user starts speaking. |
-| **Final silence duration** | Enter a decimal number which will be the acceptable silence duration after a bot user starts speaking and the bot will have to process the response. |
+| **STT engine**             | Select an engine from the dropdown-  Google/Microsoft.        |
+| **STT mode**               |  Select mode from the dropdown. Microsoft provides "Static", "Streaming" or "Streaming Advanced". Google provides "Static". |
+| **STT language**           |  Bot Language(ISO code) can be selected from the dropdown. Default- English. Click [Microsoft](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts) or [Google](https://cloud.google.com/speech-to-text/docs/languages) for more information on the languages)|
+| **STT engine endpoint**    | Endpoint id of the engine selected            |
+| **Recording max duration**     | This value is the Max duration for which the bot will wait after asking a question (in any step) even while the user is speaking. For example, after asking “Which city are you from?” and the recording duration value is “5" - the bot records only 5 seconds of user response. This option is necessary to avoid consuming unwanted information and to stay with the conversational flow. If the user mistakenly replies with long paragraphs when a question is asked or if the user's response is getting shadowed with constant background noises, the bot must not process those long inputs. Hence, with this configuration, the bot only takes the necessary response and can quickly process the user response.   |
+| **Recording silence duration** |  This value is the Max duration for which the bot will wait after asking a question (in any step) for the user to respond. For example, if recording silence duration is 5 seconds, bot waits for 5 seconds for the response if the user is silent. If the user does not respond anything within 6 seconds, bot Message will be played.             |
+| **Initial silence duration**   |  To provide more customization on the silence duration parameter, “streaming” and “streaming-advanced” STT modes (of Microsoft STT engine) allow to specifically configure the maximum acceptable silence duration before the user starts speaking.  For example, the acceptable initial silence duration for the application number question could be higher (~3/4 seconds) but in the case of a quick conversational binary question, it could be configured to 1 second. |
+| **Final silence duration**                           | Similar to the initial silence duration, the final silence duration is indicative of the maximum duration of pause that the bot will wait for once the user has started speaking. For example, for binary/one-word questions like yes/no we could set the final silence duration to ~0.5/1.0 seconds and for address-like fields where taking a pause is intrinsic in conversation, we can set the final silence duration to ~1.5/2.5 seconds.              |
 
-  
-  
-  
-  
-  
-  
+
+
+
+
 
 **TTS related options**
 
-  
-  
-  
 
-| Fields | Description |
+
+| Fields       | Description |
 | ------------ | ----------- |
-| **TTS engine** | Select the engines from the dropdown- Microsoft Azure, Google Wavenet, Amazon Polly. |
-| **Text type** | Select Text/SSML from the dropdown. |
-| **TTS language** | Bot Language(ISO code) can be selected from the dropdown.|
-| **Pitch** | Pitch value can be any decimal value depending on the base of voice required, 0 is ideal. You can add this for Microsoft if text_type = "text" and for Google for text_type = "text" and "SSML". |
-| **Voice ID** | Type the characters of voice ID. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
-| **TTS Speed** | This value defines how fast the bot must converse. This value can be 0.9 - 1.5 for the bot to soundly humanly. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
+| **TTS engine**   | Select the engines from the dropdown- Microsoft Azure, Google Wavenet, Amazon Polly.        |
+| **Text type**    |    Select Text/SSML from the dropdown.         |
+| **TTS language** |  Bot Language(ISO code) can be selected from the dropdown.|
+| **Pitch**        |  Pitch value can be any decimal value depending on the base of voice required, 0 is ideal.     You can add this for Microsoft if text_type = "text" and for Google for text_type = "text" and "SSML".      |
+| **Voice ID**     |   Type the characters of voice ID. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
+| **TTS Speed**             |  This value defines how fast the bot must converse. This value can be 0.9 - 1.5 for the bot to soundly humanly.   You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML".        |
 
-  
-  
-  
-  
+
+
 
 **DTMF related options**
 
-  
-  
 
-| Fields | Description |
+| Fields                        | Description |
 | ----------------------------- | ----------- |
-| **Capture DTMF** | If this option is enabled, DTMF will function in your bot. |
-| **Capture voice with DTMF input** | When this is enabled, even the voice will be captured along with the keyboard input. |
-| **DTMF digital length** | Enter the length of characters to be captured. Ex: For an Indian phone number, it is 10. For *, it is 1. |
-| **DTMF finish character** | Character which defines when the bot must stop capturing. |
-
-  
+| **Capture DTMF**                  | Enable this option if the DTMF is to be collected on the specific node.     |
+| **Capture voice with DTMF input** |  With this enabled, the bot will be able to capture both voice and DTMF for the same question. Example - What is your mobile number? Note - Bot will only capture the one which comes first from the user be it speech response or DTMF response.    |
+| **DTMF digital length**           | Enter the length of characters to be captured. Ex: For an indian phone number, it is 10.          |
+| **DTMF finish character**                              |  Character which defines when the bot must stop capturing. Supported finish characters - "*" and "#" |
 
 :::info
-Either DTMF digital length or DTMF finish character can be selected.
+> Either DTMF digital length or DTMF finish character can be configured.
 
-DTMF digit length and DTMF timeout are 3 ways in which the bot understand when to stop capturing:
-1. Digit Length is useful when you are capturing fixed-length data. Ex: Phone number.
-2. Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model id, application number. A user can define either "*" or "#" to inform that all Digits are added.
-3. DTMF timeout is a default selection (not open for configuration) and it is set to 10 seconds by default. It overrides both the above mention way. Ex: If the length is 11 and the user has only entered 6 characters in 10 seconds, it will only capture those and move ahead.
+DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which bot understand when to stop capturing:
+
+1) Digit Length is useful when you are capturing fixed length data. Ex: Phone number.
+
+2) Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model id, application number. A user can define either "*" or "#" to inform that all Digits are added.
+
+3) DTMF timeout is a default selection (not open for configuration) and it is set to 10 seconds by default. It overrides both the above mention way. Ex: If length is 11 and user has only enter 6 characters in 10 seconds, it will only capture those and move ahead.
 :::
-
-  
 
 **Conversation related options**
 
-  
-  
-  
 
-| Fields | Description |
+
+| Fields                         | Description |
 | ------------------------------ | ----------- |
-| **Enable acknowledgement message** | When this is enabled, an acknowledgement message can be played when the user is done speaking. |
-| **Acknowledgement message** | Enter a text message. Ex: "Do you want to confirm?" |
-| **Boost phrases** |Some user responses can be confusing for the bot to understand. Region-specific words, new Genz lingos, internet terminologies, trending phrases, and abbreviations are trained especially so that the bot understands the exact intention. For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise, it gets translated to kovind/ go we/ co-wid etc. |
+| **Enable acknowledgement message** | When this is enabled, an acknowledgement kind message (“hmmm” OR “okay”) could be spoken in the conversation immediately. This is a small custom feature built to bring more human touch to the conversation.    |
+| **Acknowledgement message**        | Enter a text/SSML message depending upon the configuration under the Text Type field. Note - Keep it short for a better user experience.  Ex: "Do you want to confirm?"          |
+| **Boost phrases**                               |Some user responses can be confusing for the bot to understand. Region specific words, new genz lingos, internet terminologies, trending phrases, abbreviations are trained specially so that the bot understands the exact intention. For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise it gets translated to kovind/ go we/ co-wid etc.  Ex - you should add the phrases that you expect from the user response like, < I want to take covid vaccine >            |
+
+
+
+
 
 
 ---

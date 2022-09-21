@@ -153,7 +153,7 @@ module.exports = {
             "platform_concepts/studio/train/add-faqs",
             "platform_concepts/studio/train/what-is-document-cognition",
             "platform_concepts/studio/train/synonyms",
-            "platform_concepts/studio/train/smalltalk",
+            // "platform_concepts/studio/train/smalltalk",
             "platform_concepts/studio/train/add-contextual-response",
            // "platform_concepts/studio/train/utterance-report",
             
@@ -550,6 +550,7 @@ module.exports = {
         "platform_concepts/appConfiguration/stripe",
         "platform_concepts/appConfiguration/twilio-verify",
         "platform_concepts/appConfiguration/successfactors",
+        "platform_concepts/appConfiguration/webengage",
         "platform_concepts/appConfiguration/zalo",
         "platform_concepts/appConfiguration/zendesk-sunshine",
         "platform_concepts/appConfiguration/zendesk",
