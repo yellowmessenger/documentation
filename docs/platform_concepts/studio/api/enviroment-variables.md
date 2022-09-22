@@ -19,7 +19,7 @@ In many cases you might have different API endpoints for different deployment en
    ![](https://i.imgur.com/bybT0Eh.png)
 6. Enter API endpoints for each environment.
 
-   <img  src="https://i.imgur.com/xIldDOM.png"  alt="drawing"  width="80%"/>
+   <p><img  src="https://i.imgur.com/xIldDOM.png"  alt="drawing"  width="80%"/></p>
 
 
 7. Lastly, before making an API call, select an environment from the dropdown. Based on the environment variables you’ve configured earlier, it’ll replace {{{env.variables}}} placeholder with the value.
