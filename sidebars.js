@@ -533,6 +533,8 @@ module.exports = {
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
         "platform_concepts/appConfiguration/jira",
+        "platform_concepts/appConfiguration/aws-s3",
+        "platform_concepts/appConfiguration/exposing-integration-to-app.md"
       ],
     },
     {
