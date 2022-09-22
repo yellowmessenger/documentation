@@ -14,7 +14,7 @@ In this doc, following topics will be covered:
 This answer will help understand how a new user can register herself/himself and accept the bot invite. 
 **Keywords** : invite
 
-1. Go to https://cloud.yellowmessenger.com/ and sign up with your email or SSO.  If you need more help, you can also follow this [guide](https://docs.yellowmessenger.com/docs/howtos/basics/create-a-bot) to signup on Yellow Messenger platform.
+1. Go to https://cloud.yellow.ai/ and sign up with your email or SSO.  If you need more help, you can also follow this [guide](https://docs.yellowmessenger.com/docs/howtos/basics/create-a-bot) to signup on Yellow.ai platform.
 
 2. Post signup, you'll be redicted to `Home`. If you've received a bot invite at your email ID, you should be able to see a notification. Click on that bell icon.
 

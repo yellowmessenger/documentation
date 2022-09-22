@@ -1,87 +1,153 @@
 ---
 title: FAQ Management
-sidebar_labels : FAQ Management
+sidebar_label : FAQs
 ---
 
-### How to add multiple FAQs?
+FAQs (Frequently asked questions) are a list of questions and answers on a subject for giving basic information to users of a website. These help your business respond to the needs of bot audience more quickly and appropriately.
+On the yellow platform, you can add these FAQs and train the bot so that the bot fetches answers quickly from here when the FAQs are asked. 
+
+In this article, you will learn:
+
+1. [How to add FAQs?](#add)
+2. [How to add multiple FAQs?](#bulk)
+   - [FAQs for Multilingual bots?](#ml)
+3. [How to train the bot with FAQs?](#train)
+ 
+
+----
+**Where to find the FAQs tab?**
+
+- Open **Studio** > **Train** > **FAQs**. 
 
 
-Many time what happens is you want to add multiple FAQs in the bot. While the yellow.ai provides a way to do that the easy way too, but repeating the same process for multiple FAQs is a tedious process. (believe us, we've been there!)
+![](https://i.imgur.com/oTTrw8K.png)
 
-Worry not, because we already have a feature specifically for that. Using this feature, you can add multiple FAQs at once through a CSV file.
+---
 
-1. Open the `Studio` and click on `FAQs` button.
+## <a name="add"></a> 1. Add FAQs
 
-![Bot Studio](https://cdn.yellowmessenger.com/Www48QD5VxMa1615886801763.png)
+To add FAQs one by one, follow the given steps:
 
-2. Here you should see 3 windows: Questions, Question variations and Answers. On the top left bar, click on `Bulk manage` and then `Import`.
+1. You can add a **Default Category** to categorise the FAQs. 
+    - Click **+**. 
+    - Add a **Category name**.
+    - Click **Create category**. 
 
-![Import FAQs](https://cdn.yellowmessenger.com/hH264EEWm40S1615886848493.png)
+![](https://i.imgur.com/dIckuva.png)
 
-3. It will open up a pop-up. We will need a CSV file to upload the FAQs. That CSV file should include "category", "question", "variations", "answer_en" in the column headers. You can also download the format from the link given in the pop-up. Download that file.
+2. Select the category name (or the default category) and add FAQs under them.
+    - Click **Add new question**.
+    - Add a Question and a Default response. 
+    - Click **Add**. 
 
-![FAQs Format](https://cdn.yellowmessenger.com/0wYjyfW1fdXH1615886896548.png)
+![](https://i.imgur.com/OSPqF7t.png)
 
-4. If you open the downloaded file in Excel or any other spreadsheet editor, it'll look like this.
+3. You can add more than one response by clicking **Add multiple text for randomizing**. Only one of these responses will be displayed during the conversation. 
+
+![](https://i.imgur.com/kLF1VuW.png)
+
+4. More than just a textual response can be added as a response to this question. Text, Images, Videos, Files or even a flow can be used as a response. 
+
+![](https://i.imgur.com/ob1EKl1.jpg)
+
+5. Multiple FAQs can be added one by one in the same manner. 
+
+---
+
+## <a name="bulk"></a> 2. Add FAQs in bulk
+
+To avoid the tedious task of adding questions one by one, you can use the bulk import option to upload all the questions at once. 
+
+1. Open **Studio** > **Train** > **FAQs**. Click **Import** on the **Bulk manage** dropdown. 
+
+![](https://i.imgur.com/H8nHsmC.png)
+
+<a name="step2"></a> 
+2. Download the CSV template in which you must enter the FAQs. By clicking **Download format here to get started** link.
+
+
+![](https://i.imgur.com/hteoHYF.png)
+
+3. Open the downloaded file in Excel or other spreadsheet editor.
 
 ![FAQs Structure](https://cdn.yellowmessenger.com/7rPR31TWzQCY1615886956450.png)
 
-5. You can also use Google Sheets to edit this file. Now, let's add FAQs.
-    - category: Here type in which category you want to add these FAQs. Please make sure that the categories you've entered here exists on the platform.
-    - question: What users will ask?
-    - variation: Here you can add multiple variations of the question. One thing you need to keep in mind is, first question and variation will remain the same even if you add multiple variations.
-    - answer_en: Finally, answer of the respective question. Here 'en' in `answer_en` stands for english. You can add answer in different languages too. For i.e. to add an answer in Hindi you can add column header as `answer_hi`. 
 
-![Add FAQs](https://cdn.yellowmessenger.com/VsFafdtTBunI1615887034296.png)
+:::note
+The column headers must be as follows: "category", "question", "variations", "answer_en", "answer_hi" and so on. For any configured language, header format is "answer_LanguageIsoCode". 
+:::
 
-6. Download / save the file as CSV file. Before you upload the file on the platform, we need to ensure if column headers are correct. For that open the CSV file in any text editor like VS Code, Sublime, vim (if you dare) and check if column headers are included in quotes. As you can see in the image below, on line 1 column headers are not wrapped in quotes. 
+4. Add FAQs in the respective columns: 
+
+    - **Category**: Type which category you want to add these FAQs. Make sure that the categories you've entered here exist on the platform.
+    - **Question**: What users will ask?
+    - **Variation**: Add multiple variations of the question. The first question and variation will remain the same even if you add multiple variations.
+    - **Answer_en**: Answer of the respective question. Here 'en' in `answer_en` stands for English. You can add answers in different languages too. For example, to add an answer in Hindi you can add a column header as `answer_hi`. 
+
+![](https://i.imgur.com/8szvhAn.jpg)
+
+
+5. **Download** / **Save** the file as CSV file. 
+
+:::tip
+Before you upload the file on the platform, ensure that the column headers are correct. Open the CSV file in any text editor like VS Code, Sublime, or vim and check if column headers are included in quotes.
+Example: In the image below, on line 1, column headers are not wrapped in quotes. 
 
 ![Modify CSV file headers](https://cdn.yellowmessenger.com/rGQEGn9NZbml1615887097398.png)
 
-In that case, you can add quotes manually. Like this in the image given below, checkout line 1. Don't forget to save the changes! 😉
+You can add quotes manually and save the changes. 
 
 ![Modify CSV file headers in an editor](https://cdn.yellowmessenger.com/2d5K8sdYcT0B1615887133256.png)
+:::
 
-7. Now let's continue from where we left on step 3. In that pop-up, upload the CSV file. Now click on `Upload` button.
+6. Continuing from step 2, Click **+Upload file** and select the file from your local system. 
 
-![CSV File Upload](https://cdn.yellowmessenger.com/A387i9C8jqka1615887185315.png)
+![](https://i.imgur.com/bA3q9an.png)
 
-Once the upload it complete, `Done` message will appear. Click on `Return Back`. 
+7. After the file is uploaded, click **Upload**.
 
-![Upload Success](https://cdn.yellowmessenger.com/yy2lfatldxhM1615887211191.png)
+![](https://i.imgur.com/3GyWyQe.jpg)
 
-All the FAQs you've added, you can see on the left side. To check if a question has different variations click on any question and you should see multiple question variations (if any) under `Question Variation` tab. Finally on the right most tab, you can see `Answers`. If you want, you add multiple answers also for randomizing.
 
-![FAQs Uploaded Successfully](https://cdn.yellowmessenger.com/ZlFb8A4gmtMj1615887267635.png)
 
-8. Now you can go back to `Try Your Bot` under `Overview` tab and try one of FAQ you've added eariler. Voila! Congratulations on building your first FAQ bot! 🎉
+### <a name="ml"></a> 2.2 Add FAQs for Multilingual bots
 
-![Try FAQs in your bot](https://cdn.yellowmessenger.com/GYNYBPbWXGFe1615887293471.png)
+To add FAQs for multi-lingual bots, follow the given steps:
 
----
+:::info
+**Prerequisites**
+- Enable **Tools** > **Auto Detect** (click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#221-behaviour) to know how). 
+- [Configure the languages](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported#2-add-languages) that are used in the FAQs. 
+:::
 
-### FAQs in Multilingual bots
+1. When you download the CSV template file (as mentioned in the [previous section](#step2)), language columns will be available. 
 
-Please make sure that 'Autodetect in enabled under tools section as shown'
-![tools](https://cdn.yellowmessenger.com/fywFORjNhR2d1622871881317.png)
 
-Also all languages that you would like are enabled/selected under configurations section. 
-![tools](https://cdn.yellowmessenger.com/TCvB6C5Xi0C01622871930384.png)
+ ![](https://i.imgur.com/hteoHYF.png)
 
-Consider for an example a french FAQs bot. English answer is not mandatory for the French only bots, for those questions, you can add answer under language_fr column and leave the langauge_en column empty.
+2. Add responses in the required columns (column names are suffixed with the [ISO code of each language](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported/#1-languages-supported)). 
 
-![Language](https://cdn.yellowmessenger.com/ZslPb3oSw0O81622871511166.png)
-Each alternate question should be a row in the sheet. e.g. If the question is "What is the return policy?", and you have two alternatives - "Return policy" and "Can I return the item?", here is how you will add them -
+**Example**
 
-This will add 1 question "What is the return policy?" trained on two alternatives "Return policy" and "Can I return the item?". So if the user query is similar to any of these 3 sentences, we will be able to map it to this question.
+- For french FAQs bot, English answers are not mandatory. For those questions, you can add an answer under **answer_fr** column and leave the **answer_en** column empty.
 
-![Language](https://cdn.yellowmessenger.com/FAlCHDzmmhYC1622871600260.png)
-You can also categorize your questions, please make sure to create the category before you upload the csv. You can add the category in the first column "category", you can also use the most relevant tag as the category if that makes sense for your KB -
-https://cdn.yellowmessenger.com/4xHV1ZBD36Zr1622871672346.png
 
-![Language](https://cdn.yellowmessenger.com/4xHV1ZBD36Zr1622871672346.png)
 
-Similarly, if you want to add Italian responses, you can add another column with header language_it (langauge_isocode, here iso code = it for Italian). If you want to test the bot after uploading, pls make sure to add the relevant languages in the "Configure" section.
 
-Please find below an example of the template for a french only bot
-![Language](https://cdn.yellowmessenger.com/U9UTQfHbZqAT1622871674822.png)
+----
+
+## <a name="train"></a> 3. Train and test FAQs
+
+**Train**
+
+After adding all the FAQs you can train the bot to understand these FAQs bu clicking [Train Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#3-train-intents). 
+
+![](https://i.imgur.com/ssuEbrW.png)
+
+**Test**
+
+You can test the results on the preview bot. 
+
+![](https://i.imgur.com/VdXRpl4.png)
+
+----

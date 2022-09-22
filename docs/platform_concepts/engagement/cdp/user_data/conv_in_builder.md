@@ -7,7 +7,7 @@ If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](ht
 
 While these user properties are accessible in all the nodes of Studio, we’ll cover some of them with-in this document, to show you how you can create the right conversion for the right set of users.
 
-First you might want to read [Using Builder to capture user data through conversations](../enriching_user_profiles/builder_capture_data).
+First you might want to read [Using Builder to capture user data through conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data).
 
 :::info
 All user properties are accessible in nodes under “User properties”.

@@ -1,21 +1,24 @@
 ---
-title: How to setup a WhatsApp chatbot on Yellow Messenger?
+title: How to setup a WhatsApp chatbot on Yellow.ai?
 sidebar_label: WA Chatbot setup
 ---
 
-## Introduction
 
-This help doc will guide you through creating a WhatsApp account and setting up your own WhatsApp chatbot. _Roll up your sleeves!_
+This document will guide you for creating a WhatsApp account and setting up your own WhatsApp chatbot. 
 
-## Three steps in setting up a WhatsApp chatbot:
+> For detailed guide on whatsapp as a channel, click [here](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel/).
 
-1. Create a **WhatsApp Business Account** on the Yellow Messenger platform
+## 1. WhatsApp chatbot
+
+Following steps must be followed to create a WhatsApp chatbot: 
+
+1. Create a **WhatsApp Business Account** on the Yellow.ai platform
 2. Open a **Facebook Business Manager** (FBM) account
 3. Verfiy your business with Facebook
 
-## Step: 1 - Create a WhatsApp Business Account
+### Create WhatsApp Business Account
 
-1. [Sign-up](http://cloud.yellow.ai/) with Yellow Messenger's platfrom. If you signed-up already, just sign-in.
+1. [Sign-up](http://cloud.yellow.ai/) with Yellow.ai's platfrom. If you signed-up already, just sign-in.
 
 ![](https://cdn.yellowmessenger.com/cBtHl9QjdEtK1619535411755.png)
 
@@ -23,7 +26,7 @@ This help doc will guide you through creating a WhatsApp account and setting up 
 
 ![](https://cdn.yellowmessenger.com/98Uohu6oWwTw1619536105368.png)
 
-If you haven't created your chatbot yet, [create one](/docs/cookbooks/getting_started) right away. Happy creating!
+> If you haven't created your chatbot yet, create one by following these [steps](/docs/cookbooks/getting_started).
 
 3. To start with WhatsApp account creation, Go to **Channels > Communication > Select WhatsApp**.
 
@@ -37,13 +40,13 @@ If you haven't created your chatbot yet, [create one](/docs/cookbooks/getting_st
 
 ![](https://cdn.yellowmessenger.com/xluqZo9ktZSa1619783923015.png)
 
-If you don't have an FB Business manager account, [create one](https://business.facebook.com/) now.
+> If you don't have an FB Business manager account, create one by following these [steps](https://business.facebook.com/).
 
-6. Furnish your business details as mentioned in any legal business document that you have.
+6. Furnish your business details as mentioned in any legal business document that you have. Business name, Phone number, Business e-mail ID and Business website should be appropriate.
 
 ![](https://cdn.yellowmessenger.com/YpiFVbVRDBT21619784836090.png)
 
-The Business name, Phone number, Business e-mail ID and Business website should be appropriate.
+
 
 7. Continue adding relevant business details as asked.
 
@@ -57,7 +60,7 @@ The Business name, Phone number, Business e-mail ID and Business website should 
 
 ![](https://cdn.yellowmessenger.com/SQtCesZ8EI8a1619792169449.png)
 
-To give an appropriate name, read through the [naming guidelines](https://developers.facebook.com/docs/whatsapp/guides/display-name/).
+> To give an appropriate name, read through the [naming guidelines](https://developers.facebook.com/docs/whatsapp/guides/display-name/).
 
 If the display name you give is different from the legal business name, tick the checkbox as highlighted in the image above.
 
@@ -71,7 +74,7 @@ Example description: _"XYZ is an organic food brand that offers fresh and exotic
 
 ![](https://cdn.yellowmessenger.com/G1yAjNffVoEr1619802704253.png)
 
-Note: The number you give should not be connected to any WhatsApp account. If connected, ensure you disconnect the number from WhatsApp account.
+> Note: The number you give should not be connected to any WhatsApp account. If connected, ensure you disconnect the number from WhatsApp account.
 
 Complete the verification over text or voice call.
 
@@ -79,7 +82,7 @@ Complete the verification over text or voice call.
 
 Once approved, you can scan the QR and test the WhastaApp chatbot.
 
-## Step: 2 - Open a Facebook Business Manager (FBM) account
+### Create Facebook Business Manager (FBM) account
 
 1. If you already created the account, just login. If not, follows the steps to create an FBM account.
 
@@ -91,7 +94,7 @@ Once approved, you can scan the QR and test the WhastaApp chatbot.
 
 5. Hurray! You have now created the FBM.
 
-## Step: 3 - Verfiy your business account with Facebook
+### Verfiy Business account with Facebook
 
 1. Now, let's get to verification. In the FBM, go to **More Tools > Business Settings > Select your Business**.
 
@@ -131,9 +134,9 @@ For some reason, if you wish to cancel the verification request, go to **Securit
 
 ![](https://cdn.yellowmessenger.com/e1sHK0iR65w91620229510980.png)
 
-## Let's experience WhatsApp
+## 2. Platform Experience
 
-Great! Once the account is successfully approved, we can start configuring the chatbot with any journey you want. For example, let's try adding few FAQs and see how it gets refelcted in the WhatsApp chatbot.
+Once the account is successfully approved, configure the chatbot with a journey you want. For example, let's try adding few FAQs and see how it gets refelcted in the WhatsApp chatbot.
 
 1. Go to **Studio -> FAQs**.
 

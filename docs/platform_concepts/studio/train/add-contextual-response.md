@@ -1,46 +1,108 @@
 ---
-title : Adding Contextual Responses
+title : Context Management
 sidebar_label : Contextual Responses
 ---
 
-### How to add Contextual Responses? 
 
+Setting up contextual responses means adding more context as a response to a particular prompt. 
 
-Setting up contextual responses means adding more context to the response to a particular prompt. To simplify it further lets take an example  
+**Use case**
+
+To simplify contextual response further, take an example:
 **Bot** : Can you share your email with me?  
-~~**User** : Sure, gooduser@email.com~~   
-**User** : Why do you need my email?  
+~~**User** : Sure, gooduser@email.com~~ (Expected response)  
+**User** : Why do you need my email?  (Received response)
 
-What if instead of giving their email address during a conversation, customer asked *What is an email* Or *Why do you need my email*. 
-These type of contextual intents can be handled in the following ways :
+What if instead of giving their email address during a conversation, a customer asked *What is an email* Or *Why do you need my email*. 
+These types of contextual intents can be handled by adding contextual responses. 
 
-####  Adding Global Contextual Responses
-Setting up standard contextual responses for all prompts in all journeys in the bot. Basically if the users ask Why/What/How/ etc at any prompt, the response will be the same. If you want the same, please follow the following steps : 
+## 1. Add Global Contextual Responses
 
-1. On the Yellow Messenger Platform, under Studio > Learn > Context Management as shown below.
+Setting up standard contextual responses for all prompts in all journeys in the bot will give a response to the users when the bot has been asked questions with Why/What/How/ etc at any prompt. 
+To explore the options available, follow the given steps: 
 
-![contextual](https://cdn.yellowmessenger.com/VcWZIGBahtyb1615525545331.png)
+1. **Open Context management tab**
 
-2. You can change or add the responses for the various predefined contextual intents like What/Why/How/When/Where/etc. 
+    - On the Yellow.ai Platform, go to **Studio** > **Train** > **Context Management**.
 
-![contextual](https://cdn.yellowmessenger.com/lDKUvR0i95JI1615525572272.png)
+![](https://i.imgur.com/XuwMeQP.png)
 
-3. You can Bulk Upload and Export these intents and responses as well. 
+2. **Add contextual responses** 
 
-![contextual](https://cdn.yellowmessenger.com/Cvhplh0fIFoc1615525606462.png)
+    - To add new intents click **+Add Contextual Responses**. 
+    - Add an Intent name and supporting Utterances.
+    - Click **Submit**. 
 
-4. In order to add new intents click on * '+ Add Contextual Responses'* 
-
-![contextual](https://cdn.yellowmessenger.com/grzVMIxid0Tr1615525631900.png)
-
-5. Add as many training utterances as possible, prompts that the user can type for a particular context. 
+![](https://i.imgur.com/QzpYCLY.png)
 
 
-Now when the user will ask for these questions [Why/What/How/etc] at any prompt during the conversation. The bot will be able to send these contexual responses to the user. 
+3. **Modify existing contexts**
 
-Please note that the user is not moving ahead while user is asking contextual responses. The user will remain at the same prompt until the correct response if given. 
+    - **Utterances** for the various predefined contextual intents like What/Why/How/When/Where/etc. can be modified by clicking the **Edit** option.
 
-![contextual](https://cdn.yellowmessenger.com/fZN8lIisIfxw1615525657154.png)
+    ![](https://i.imgur.com/nLiggZ6.png)  
+  
+  
+    - Modify the default response of the existing contexts by clicking **Set default response > Click here to add more response** and adding a new response. 
+
+    ![](https://i.imgur.com/4sGxnOE.png)
+
+
+4. **Bulk upload**
+
+    - You can add multiple contexts at once. Click **Bulk manage > Import**. 
+    - Click **Upload file**.
+    - Upload a CSV file from your local system which has 2 columns (intent and utterance).
+    - Click **Upload**. 
+
+
+![](https://i.imgur.com/eBrK6HN.png)
+
+:::note
+Add as many training utterances as possible for a particular context. 
+:::
+
+
+:::info
+
+**Enable small-talk**
+
+(This is available only for the **older bots**. New bots can configure small talk separately)
+
+    - If the small talk is enabled, when the user talking about generic topics, the bot will be able to answer the user with an appropriate answer. 
+
+> **Bot**: Please enter your desired location.   
+> **User**: Which location are you from?  
+> **Bot**: I'm digital, so I'm always just... here.
+
+![](https://i.imgur.com/vtWxpz2.png)
+:::
+
+
+
+
+
+## 2. Train responses 
+
+Click **Train response** to train the contexts. 
+
+![](https://i.imgur.com/xfgFirr.png)
+
+Now, when the user will ask these questions [Why/What/How/etc] at any prompt during the conversation. The bot will be able to send these contextual responses to the user. 
+
+:::note
+The user is not moving ahead while the user is asking for contextual responses. They will remain at the same prompt until the correct response is given.
+:::
+
+
+
+<img src="https://cdn.yellowmessenger.com/fZN8lIisIfxw1615525657154.png" alt="drawing" width="60%"/>
+
+
+
+
+
+
 
 <!---
 ### How to setup context at any prompt? 

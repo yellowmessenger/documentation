@@ -33,7 +33,7 @@ App bots are now provided with an option to upgrade the Engage module by migrati
 
 ## Step by Step guide for migration process
 #### Step 1: Login
-Login to app.yellowmessenger.com and open your bot
+Login to https://app.yellowmessenger.com and open your bot
 #### Step 2: Open Engagement
 Navigate to Engagement module and click on "upgrade to new platform" from top right corner.
 

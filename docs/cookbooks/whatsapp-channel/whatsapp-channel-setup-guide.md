@@ -6,7 +6,7 @@ sidebar_label: Prerequisites
 
 As of March 2020, WhatsApp had two billion the month of February 2016. And as we are getting more and more users on this new and chatty channel, businesses are also driving themselves to WhatsApp.
 
-We at Yellow Messenger, have partnered with WhatsApp to create a WhatsApp account and setup your own WhatsApp bot. 
+We at Yellow.ai, have partnered with WhatsApp to create a WhatsApp account and setup your own WhatsApp bot. 
 
 This document will guide you through the process.
 
@@ -23,7 +23,7 @@ Then visit this [link](https://ascend.yellow.ai/learner/courseinfo/id:311) for t
 
 ## Prerequisites for creating a WhatsApp Channel
 
-Yellow Messenger Account - http://cloud.yellowmessenger.com/
+Yellow.ai Account - https://cloud.yellow.ai/
 
 1. A personal Facebook account and Business Manager account.
 2. Verified Business Manager Account.

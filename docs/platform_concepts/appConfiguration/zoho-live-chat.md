@@ -57,7 +57,7 @@ After you click accept, a webhook will automatically be created on your SalesIQ 
 3. If you can't access it, please address the reason why you are not able to access it. (for example, the plan needs to be upgraded or the free trial expired).
 
 - Navigate to Settings -> Webhooks.
-<img src="https://cdn.yellowmessenger.com/BYpyYutCB4G21659344783118.png" alt="drawing" width="100%"/>
+<img src="https://cdn.yellowmessenger.com/FsqfGcmOoKqk1663581470836.png" alt="drawing" width="100%"/>
 - If your free trial has expired for Zoho SalesIQ, you will see the above error.
 - Please upgrade the plan if you need to register/ deregister webhooks for live chat use cases.
 - If you can view the webhook, then please try to delete it manually.

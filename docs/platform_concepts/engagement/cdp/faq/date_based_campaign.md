@@ -3,7 +3,7 @@ sidebar_label: Date based Campaigns
 title: How to create Drip campaigns, birthday greetings and other date based campaigns?
 ---
 
-You might often want to reach out to users on a particular date, or after they have completed a certain number of days from that particular date. Below we will show you how you can create date based [segment](../user_data/targeted_segments) to achieve such use cases.
+You might often want to reach out to users on a particular date, or after they have completed a certain number of days from that particular date. Below we will show you how you can create date based [segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/targeted_segments/) to achieve such use cases.
 
 ### Drip Campaign
 
@@ -15,7 +15,7 @@ Such segments target users who fall with-in a certain range from a particular da
 
 ![](https://i.imgur.com/rK1T5sd.png)
 
-This sort of a segment can be created using [properties](../user_data_segments/cdp_data) that are of Date or DateTime data type.
+This sort of a segment can be created using [properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/) that are of Date or DateTime data type.
 The operator that can be selected are:
 - is was exactly
 - will be exactly

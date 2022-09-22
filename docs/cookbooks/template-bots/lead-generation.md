@@ -113,7 +113,7 @@ Next we will discuss on how we can save those user information in a Database and
 
 ## Create Lead Generation Bot using Form Journey
 
-In the cookbook above, we saw how to create a Lead Generation bot on Yellow Messenger. However, there's one more way to create it quickly. Introducing Form Journey which is nothing but template journey which you can use for various purposed. In this cookbook, we will use `Form Journey` to get user data.
+In the cookbook above, we saw how to create a Lead Generation bot on Yellow.ai. However, there's one more way to create it quickly. Introducing Form Journey which is nothing but template journey which you can use for various purposed. In this cookbook, we will use `Form Journey` to get user data.
 
 1. Create a new Form journey
 In Studio, click on `Create Journey` button on the bottom left corner.
