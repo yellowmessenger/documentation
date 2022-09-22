@@ -58,7 +58,16 @@ To explore the options available, follow the given steps:
 
 ![](https://i.imgur.com/eBrK6HN.png)
 
-5. **Enable small-talk**
+:::note
+Add as many training utterances as possible for a particular context. 
+:::
+
+
+:::info
+
+**Enable small-talk**
+
+(This is available only for the **older bots**. New bots can configure small talk separately)
 
     - If the small talk is enabled, when the user talking about generic topics, the bot will be able to answer the user with an appropriate answer. 
 
@@ -67,12 +76,11 @@ To explore the options available, follow the given steps:
 > **Bot**: I'm digital, so I'm always just... here.
 
 ![](https://i.imgur.com/vtWxpz2.png)
-
-
-
-:::note
-Add as many training utterances as possible for a particular context. 
 :::
+
+
+
+
 
 ## 2. Train responses 
 
