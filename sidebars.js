@@ -531,6 +531,7 @@ module.exports = {
         "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/clevertap",
         "platform_concepts/appConfiguration/freshdesk",
+        "platform_concepts/appConfiguration/freshteam",
         "platform_concepts/appConfiguration/genesys-cloud-livechat",
         "platform_concepts/appConfiguration/google-calendar",
         "platform_concepts/appConfiguration/google-sheets",
