@@ -549,6 +549,7 @@ module.exports = {
         "platform_concepts/appConfiguration/sftp",
         "platform_concepts/appConfiguration/shopify",
         "platform_concepts/appConfiguration/stripe",
+        "platform_concepts/appConfiguration/talisma",
         "platform_concepts/appConfiguration/twilio-verify",
         "platform_concepts/appConfiguration/successfactors",
         "platform_concepts/appConfiguration/webengage",

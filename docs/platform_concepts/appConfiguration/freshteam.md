@@ -3,7 +3,7 @@ title : Freshteam
 sidebar_label : Freshteam
 ---
 
-Yellow.ai Integration with Freshteam enables you to seamlessly access Freshteam services. Any customer who has an account in Freshteam will be able to connect it with yellow.ai. Using this integration one can fetch employee info, create and manage time off requests, retrieve job posting information from Freshteam.
+Yellow.ai Integration with Freshteam enables you to seamlessly access Freshteam services. Any customer who has an account in Freshteam will be able to connect it with yellow.ai. Using this integration one can fetch employee info, create and manage time off requests, and retrieve  job posting information from Freshteam.
 
 ## 1. Use cases 
 Following are the use-cases which are currently accommodated in the Integration:
@@ -24,7 +24,7 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 |   SortType       |  String        |   asc/desc       |
 
 **Return Value**
-List all employees integration node returns value of array type, use array variable as an output variable.
+List all employee's integration node returns the value of array type, use array variable as an output variable.
 
 ### 1.2 Retrieve employee information
 
@@ -43,10 +43,10 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 
 
 **Return Value**
-Retrieve employee information integration node returns value of object type, use object variable as an output variable.
+Retrieve employee information integration node returns the value of object type, use object variable as an output variable.
 
 
-### 1.3 List all time off types
+### 1.3 List all time-off types
 
 List all time off types integration node helps in retrieving all the time off types available in the freshteam.
 
@@ -55,7 +55,7 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 :::
 
 **Return Value**
-List all time off types integration node returns value of array type, use array variable as an output variable.
+List all time off types integration node returns the value of array type, use array variable as an output variable.
 
 ### 1.4 List all time off requests
 
@@ -74,7 +74,7 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 
 **Return Value**
 
-List all time off requests integration node returns value of array type, use array variable as an output variable.
+List all time off requests integration node returns the value of array type, use array variable as an output variable.
 
 ### 1.5 Create a time off request
 
@@ -94,7 +94,7 @@ Create a time off request integration node helps in applying for leave(time off)
 |   AutoDeclineEvents       |  Boolean        |True|
 
 **Return Value**
-Create a time off request integration node returns value of object type, use object variable as an output variable.
+Create a time off request integration node returns the value of object type, use object variable as an output variable.
 
 ### 1.6 Approve a time off request
 
@@ -111,7 +111,7 @@ Only users in HR Partner, Admin, Reporting Manager, and Account Admin roles can 
 |   TimeoffID       |  Number        |5000402776      |
 
 **Return Value**
-Approve a time off request integration node returns value of object type, use object variable as an output variable.
+Approve a time off request integration node returns the value of object type, use object variable as an output variable.
 
 ### 1.7 Cancel a time off request
 Cancel a time off request integration node helps in rejecting a leave based on the time off id provided.
@@ -123,7 +123,7 @@ Cancel a time off request integration node helps in rejecting a leave based on t
 |   TimeoffID       |  Number        |5000402776      |
 
 **Return Value**
-Cancel a time off request integration node returns value of object type, use object variable as an output variable.
+Cancel a time off request integration node returns the value of object type, use object variable as an output variable.
 
 
 ### 1.8 List all Job Postings
@@ -137,7 +137,7 @@ List all job postings integration node helps in retrieving all the available ope
 |   Title       |  String        |Sample Job Posting      |
 
 **Return Value**
-List all time off requests integration node returns value of array type, use array variable as an output variable.
+List all time off requests integration node returns the value of array type, use array variable as an output variable.
 
 ### 1.9 Retrieve Job Posting information
 
@@ -151,7 +151,7 @@ Retrieve Job posting information integration node helps in retrieving available 
 
 
 **Return Value**
-Retrieve Job posting information integration node returns value of object type, use object variable as an output variable.
+Retrieve Job posting information integration node returns the value of object type, use object variable as an output variable.
 
 ## 2. Configuration
 
