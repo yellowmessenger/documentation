@@ -104,7 +104,7 @@ It supports upto three buttons and each button can have up to 20 characters. If 
   
   
 
-> [Know more](http://localhost:3000/docs/platform_concepts/studio/build/nodes/prompt-nodes#quick-reply-node-for-whatsapp)
+> [Know more](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#quick-reply-node-for-whatsapp)
 
   
 
