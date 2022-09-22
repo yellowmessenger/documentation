@@ -24,6 +24,7 @@ Here is a list of roles and privileges you can assign to the users.
 
 | Role               | Privilege                                                                             |
 |--------------------|---------------------------------------------------------------------------------------|
+| Super Admin        | The owner of the bot who has access to everything. <br/>Can provide *Approver* access to someone else. <br/>Can mask certain DB column on UI.   <br/>View data in the bot tables and can [mask columns of a table](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.     |
 | Admin              | Admin has all the access to all the modules                                           |
 | Developer          | Developer has all the access to all the modules                                       |
 | Database Viewer    | Database viewer has only view access to the database                                  |
