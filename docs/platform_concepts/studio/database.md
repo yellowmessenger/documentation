@@ -153,3 +153,27 @@ On the Database screen, select the table to edit and click **Table actions** and
   
 
 > Let us know if you have any clever use cases through our [community](https://community.yellow.ai/).
+
+
+## 7. Mask database columns
+
+The Super Admin of the bot can mask certain database columns. For example, passwords or any PII data stored in plain text. The data of the masked column will be visible as `*****` instead of real values.
+
+:::note
+The masking of data happens at the application level in the backend. You cannot access it in any other way.
+:::
+
+To mask columns, follow these steps -
+
+1. Go to **Table actions** and choose **Mask columns**.
+
+   ![](https://i.imgur.com/zGiPOCs.png)
+
+2. Choose columns that store sensitive information.
+
+   <img src="https://i.imgur.com/jZHDSza.png" width="500"/>
+
+
+> Example: You can see the column named ‘test’ with `****` instead of real values.
+>
+> ![](https://i.imgur.com/ceC7f7Z.png)
