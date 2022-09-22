@@ -57,7 +57,7 @@ Here, ‘Tags’ is the field in the ‘Users’ table. For example, assume you 
 
 **Step 7:**
 
-After choosing the segment, schedule the campaign now immediately or typically for a later date and time.
+After choosing the segment, schedule the campaign immediately or typically for a later date and time.
 
 ![Screenshot 2022-03-02 at 3.48.12 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/CE7A7AE5-F9E4-479C-84B0-51B499470E5F/04D411C3-85DA-46CC-B36A-5349A5255A19_2/Screenshot%202022-03-02%20at%203.48.12%20PM.png)
 

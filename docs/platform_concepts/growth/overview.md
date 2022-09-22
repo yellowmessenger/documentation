@@ -77,7 +77,7 @@ The frequency of unique users messaging the bot is segregated by the device they
 from, aggregated in day-wise buckets for the selected date range.
 The count may be significantly lesser compared to the number of users since other
 channels like WhatsApp, Facebook etc do not share this data device data. Hence, the
-graph shows only the users on yellow messenger bot.
+graph shows only the users on Yellow.ai bot.
 ![](https://cdn.yellowmessenger.com/SJJtCQdkdjj01622804956449.png)
 
 ## User By Country
@@ -87,8 +87,8 @@ countries. The top 5 countries and their percentage contributions are shown.
 How does the calculation work ?
 The captured IP address of the user is translated to a standard location using the
 standard ip2location database. The count may be significantly lesser compared to the
-total number of users since it shows users only from the source yellow messenger.
-This is calculated for the Yellow Messenger channel as the IP address can be captured only on this channel
+total number of users since it shows users only from the source Yellow.ai.
+This is calculated for the Yellow.ai channel as the IP address can be captured only on this channel
 ![](https://cdn.yellowmessenger.com/lMlEOvdxe25Q1622804959921.png)
 
 ## User Devices
@@ -97,9 +97,9 @@ This widget shows the different kind of user devices from which the bot was acce
 How does the calculation work?
 The frequency of unique users messaging the bot is segregated by the device they come
 from, aggregated for the selected date range. Also, device datails in available only for
-yellow messenger source. Other channels like WhatsApp, Facebook etc don’t share this
+Yellow.ai source. Other channels like WhatsApp, Facebook etc don’t share this
 data.
-This is calculated for the Yellow Messenger channel.
+This is calculated for the Yellow.ai channel.
 ![](https://cdn.yellowmessenger.com/rTpP5F7ma2O91622804963113.png)
 
 ## Bot Accuracy

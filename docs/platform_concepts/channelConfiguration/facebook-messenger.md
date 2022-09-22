@@ -9,7 +9,7 @@ This help doc will guide you through setting up your own Facebook Messenger chat
 
 ## Let's get started!
 
-1. [Sign-up](http://cloud.yellowmessenger.com/) with Yellow Messenger's platfrom. If you signed-up already, just sign-in.
+1. [Sign-up](https://cloud.yellow.ai/auth/signup) with Yellow.ai's platfrom. If you signed-up already, just sign-in.
 
 ![](https://cdn.yellowmessenger.com/cBtHl9QjdEtK1619535411755.png)
 

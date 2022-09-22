@@ -1,9 +1,9 @@
 ---
-title: How to Send WhatsApp Notifications via Yellow Messenger?
-sidebar_label : WhatsApp Notifications via Yellow Messenger
+title: How to Send WhatsApp Notifications via Yellow.ai?
+sidebar_label : WhatsApp Notifications via Yellow.ai
 ---
 
-The following guide will help developers to send Whatsapp Notifications using Yellow Messenger Platform. 
+The following guide will help developers to send Whatsapp Notifications using Yellow.ai Platform. 
 
 
 # Guide to Create a Campaign 
@@ -40,7 +40,7 @@ Select the “Audience” and “Segment” in the campaign configuration.
 
 ### 3. Add Template
 
-Add a “template”, the information should be the same as the information in the template that is approved by WhatsApp in business.facebook.com, this information can be provided by the Yellow Messenger team.
+Add a “template”, the information should be the same as the information in the template that is approved by WhatsApp in business.facebook.com, this information can be provided by the Yellow.ai team.
 
 ![](https://cdn.yellowmessenger.com/0Z68L6Pnd9rV1617626092866.png)
 

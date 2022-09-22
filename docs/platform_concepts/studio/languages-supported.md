@@ -3,14 +3,18 @@ title: Languages Supported
 sidebar_label: Languages
 ---
 
-# Language
+Hi, Hola, Konnichiwa, Bonjour!
 
+**One platform, 100+ languages.** Your customers might not be from a single region, they might be from different regions or countries. You can engage with them better if interacted in their native language.
 
-Hi, Hola, Konnichiwa, Bonjour! 
-**One platform, 100+ languages.** Because there are many languages your customers want to engage with you in! 
 Check out the list of Native Language Support offered on our platform, across text and voice.
 
-> Full Support- All the messages can be translated by our platform (other languages are supported by Google Translate). Knowledge Mining, Semantic Analytics and Small Talk Support highlight the language agnostic sentence embeddings that are formed in ML models.
+:::note
+Full Support - All the messages can be translated by our platform (other languages are supported by Google Translate). Knowledge Mining, Semantic Analytics, and Small Talk Support highlight the language agnostic sentence embeddings that are formed in ML models
+:::
+
+
+## 1. Languages Supported
 
 
 | Language                      | ISO 639-1 code    | Full Support (Text) | Using Translation (Text) | Speech-to-text | Text-to-speech | Knowledge Mining | Sentiment Analytics | Small Talk Support |
@@ -142,3 +146,21 @@ Check out the list of Native Language Support offered on our platform, across te
 | Yiddish                       |  yi  | Yes                 |                          |                |                | Yes              |                     |                    |
 | Yoruba                        |  yo  | Yes                 |                          |                |                | Yes              |                     |                    |
 | Zulu                          |   zu | Yes                 |                          | Yes            |                | Yes              |                     |                    |
+
+
+
+## 2. Add Languages
+
+To add a new language to your bot, follow these steps -
+
+1. Open Studio (or pres `g`+`s`). Click Language icon.
+
+![](https://i.imgur.com/lZw9YyZ.jpg)
+
+2. Click **Add language**.
+
+![](https://i.imgur.com/FoqWX3f.png)
+
+3. Add required languages and click **Save**. 
+
+![](https://i.imgur.com/AL5YsQg.png)

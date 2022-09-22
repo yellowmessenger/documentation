@@ -1,5 +1,5 @@
 ---
-title: Studio- Settings and Options in Tools
+title: Settings and Options in Tools
 sidebar_label: Tools and Settings 
 ---
 
@@ -427,130 +427,157 @@ Values that will remain constant throughout the conversation can be added under 
  
 ![](https://i.imgur.com/dernhZp.jpg)
  
-### 2.5 Voice 
+### 2.5 Voice
+
+  
 
 
-> These settings are configurable when IVR is connected.
-> (From Channel > Voice > IVR)
+  
+:::note
+You can configure these settings only when IVR is connected from **Channel** > **Voice** > **IVR**.
 
 ![](https://i.imgur.com/9hiy6Pg.jpg)
+:::
+  
+  
+  
 
+The voice global options that are configured will be applicable for all the nodes and journeys for the bot. Node-level options can be configured for each node specifically. Whenever a global option and also node level option are defined, for that specific node, the node level option will be given more priority. For example,  
 
-You can configure these global settings for voice and these settings will be a default choice for all the nodes/journeys. 
-
-![](https://i.imgur.com/xH3cBso.jpg)
-
-There are 2 types of fields, to configure bot- user conversation and STT/TTS settings that will run in background. 
-
-
-
-
-| Conversation | STT/TTS |
-| ------------ | ------- |
-|         Bot language     |        STT engine |
-|         Call disconnect message     |    STT mode     |
-|            Record max duration  |      TTS engine   |
-|          Record silence duration    |    Text type     |
-|            Repeat message  |   Pitch      |
-|          Repeat limit    |     Speed    |
-|           Boost Phrases   |      Voice ID   |
-|             Play beep after recording |         |
+-   **Global level**: You can select an STT/TTS engine globally so that you don’t have to configure it for each node.
+-   **Node level**: You can configure different “recording max duration” for different nodes i.e. 10 seconds for address and 5 seconds for name node.
 
 
 
+  
+  
 
-List of options available are explained below: 
+Voice bot global options/settings are classified depending upon different uses as below:  
 
-1. **Language**
-
-Bot Language can be selected from the dropdown. Default- English.
-
-2. **Text Type** 
-
-Text/SSML as a selection (depending upon the STT/TTS engine selected). STT is Speech to Text option available on the platform, while TTS is Text to Speech. 
-
-
-> Bot listens to the user utterance and converts it to text using STT. yellow.ai platform takes user query in the converted text format and responds back in the text format using NLP. Again, the output text (response from the platform) is converted to speech using TTS.
+1.  **Telephony**: For settings related to telephony like call forwarding, calling line identity, etc.
+2.  **Recording**: Recording options such as beep sound after a question is asked.
+3.  **Speech to Text**: You can customise a speech recognition software that enables the recognition and translation of spoken language into text.
+4. **Text-to-Speech**: You can customise the Text-to-Speech (TTS) capabilities to play back text in a spoken voice.
+5.  **Conversation**: Yellow cloud provides additional conversational options to further customize and elevate the experience on the IVR channel.
+6.  **Others**: Miscellaneous settings to handle invalid and blank user responses and fallbacks.
 
 
-Text option is used when Google TTS Engine is selected (along with this **Pitch** and **Speed** are entered in the Tools > Voice section).
-**SSML** (Speech Synthesis Markup Language) is selected when Microsoft TTS engine is used. Here, since the SSML contains information of rate, pitch, voice, speed etc, you need not enter it on Tools > Voice section (if any values are entered, they will be ignored). 
+  
+  
+
+  
+
+:::note
+
+Most of the options can be configured globally.
+
+If they are configured at the [node level](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes#32-voice), node level customisation takes priority over the global level settings.
+
+:::
+
+  
+  
+  
+
+#### **Telephony related options**
+
+  
+  
+
+| Fields | Description |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Custom SIP header** | This can be used as an additional parameter that can be passed to an agent while transferring the call to an Agent to pass along bot collected information. You can pass a key-value pair in JSON format which will get passed in the SIP header. |
+
+> An example of the Custom SIP header:  
+
+```[{“key”:“User-to-User”,  “value”:“name=david&product=heater&query=not turning off&priority=high&number=12345”}] ``` 
 
 
+  
+  
+  
+  
+  
+  
+  
 
-Example of SSML:
+#### **Recording related options**
 
-```
-<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US"><voice name="en-US-JennyNeural"><prosody rate="0%" pitch="0%">Hello welcome to the bot please say yes or no</prosody></voice></speak>
-```
+  
+  
+  
 
-3. **Pitch**
-
-Pitch is the frequency at which a voice is heard. Higher the pitch, more is the frequency and lower the pitch, less is the frequency. Pitch is selected only when the TTS/STT fields use Google as an option. Pitch value can be -20 to 20 depending on the base of voice required, 0 is ideal. 
-
-4. **Voice ID** 
-
-Voice ID is added only when Google is used as a TTS option.
-
-
-5. **Speed**
-
-This is a value that defines how fast the bot must converse. Speed is configured only when Google is used as a TTS option. This value can be 0.9 - 1.5 for the bot to soundly humanly. 
-
-
-6. **Recording Max Duration**
-
-This value is the Max duration for which the bot will wait after asking a question (in any step) while the user is speaking. For example, after asking "Which city are you from" and Recording  Duration value is 5- the bot records 5 seconds of a response. 
-
-> This option is necessary to avoid consuming unwanted information and to stay with the flow while the bot is conversing. If the user replies long paragraphs when a question is asked or voice is shadowed with background noises, the bot must process those long inputs which is not ideal. Hence, with this, bot only takes the necessary response and quicly process the user query. 
-
-7. **Recording Silence Duration**
-
-This value is the Max duration for which the bot will wait after asking a question (in any step) for the user to respond.
-For example, if Recording Silence Duration is 5 seconds,  bot waits for 5 seconds for the response if the user is silent.
-If the user does not respond anything within 6 seconds **Repeat Message** will be played.
-
-8. **STT Engine**
-
-Select the STT (Speech to Text) engine to be used.
-Google translates accurately. 
-
-9. **TTS Engine**
-
-Select the TTS(Text to Speech) engine to be used.
-Microsoft provides a natural human voice
-
-> Combination of STT and TTS engines can be selected as per the user preference. 
-
-10. **STT Mode**
-
-Static vs Streaming. 
-Static mode waits for the user to complete speaking and then translates voice to text. 
-Streaming mode translates the user response as the conversation is proceeding. 
+| Fields | Description |
+| ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Recording after call forward** | When this option is enabled the call will get recorded even after it has been transferred to an agent. This can be disabled for use cases with recording sensitive information. |
+| **Enable recording beep** | When this is enabled, a beep sound will be played after the bot asks a question giving an auditory response to the end-user to respond.|
+| **Recording Action** | With the recording management options, you can select to pause/resume/stop recording depending upon different use-cases and conversations. By default, the recording is ON only. Also, in a call, once you STOP the recording (for recording sensitive dialogues), it can’t be resumed back. |
 
 
-11. **Boost Phrases**
+  
 
-Some user responses can be confusing for the bot to understand. Region specific words, new genz lingos, internet terminologies, trending phrases, abbreviations
- are trained specially so that the bot understands the exact intention. 
-For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise it gets translated to kovind/ go we/ co-wid etc. 
+#### **STT related options**
 
+  
+  
+  
+  
 
-12. **Play beep after recording**
+| Fields | Description |
+| -------------------------- | ----------- |
+| **STT engine** | Select an engine from the dropdown- Google/Microsoft. |
+| **STT mode** | Select mode from the dropdown. Microsoft provides "Static", "Streaming" or "Streaming Advanced". Google provides "Static". |
+| **STT language** | Bot Language(ISO code) can be selected from the dropdown. Default- English. Click [Microsoft](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts) or [Google](https://cloud.google.com/speech-to-text/docs/languages) for more information on the languages)|
+| **Recording max duration** | This value is the Max duration for which the bot will wait after asking a question (in any step) even while the user is speaking. For example, after asking “Which city are you from?” and the recording duration value is “5" - the bot records only 5 seconds of user response. This option is necessary to avoid consuming unwanted information and to stay with the conversational flow. If the user mistakenly replies with long paragraphs when a question is asked or if the user's response is getting shadowed with constant background noises, the bot must not process those long inputs. Hence, with this configuration, the bot only takes the necessary response and can quickly process the user response.  |
+| **Recording silence duration** | Apart from recording max duration which caps the maximum time of user response, to further make the conversation lively and realistic, another parameter is configuring the expected silence duration. Recording silence duration is the max SILENCE duration for which the bot will wait after asking a question (in any step) for the user to respond. While setting the silence duration, please note that it is applicable to the whole duration of user response, meaning, the silence at any point of user response be it at - (a) initial thinking/processing time OR (b) in between pauses of user response shouldn’t be greater than configured silence duration.  Applicable with Microsoft and Google with STT mode set as STATIC.   |
+| **Initial silence duration** | To provide more customization on the silence duration parameter, “streaming” and “streaming-advanced” STT modes (of Microsoft STT engine) allow to specifically configure the maximum acceptable silence duration before the user starts speaking.  For example, the acceptable initial silence duration for the application number question could be higher (~3/4 seconds) but in the case of a quick conversational binary question, it could be configured to 1 second. |
+| **Final silence duration** | Similar to the initial silence duration, the final silence duration is indicative of the maximum duration of pause that the bot will wait for once the user has started speaking. For example, for binary/one-word questions like yes/no we could set the final silence duration to ~0.5/1.0 seconds and for address-like fields where taking a pause is intrinsic in conversation, we can set the final silence duration to ~1.5/2.5 seconds.|
 
-By default = TRUE. With this, there is a beep sound played after every bot utterance. 
-It acts like a signal to let the user know when to start speaking and bot is ready to capture. This can be disabled by selecting FALSE.
+  
+  
+  
+  
 
-13. **Repeat Message**
+#### **TTS related options**
 
-Message to be played in case user provides no response (/blank response) at any step. 
+  
+  
+  
 
-14. **Disconnect Message**
+| Fields | Description |
+| ------------ | ----------- |
+| **TTS engine** | Select the engines from the dropdown- Microsoft Azure, Google Wavenet, Amazon Polly. |
+| **Text type** | Select Text/SSML from the dropdown. |
+| **TTS language** | Bot Language(ISO code) can be selected from the dropdown.|
+| **Pitch** | Pitch value can be any decimal value depending on the base of voice required, 0 is ideal. You can add this for Microsoft if text_type = "text" and for Google for text_type = "text" and "SSML". |
+| **Voice ID** | Type the characters of voice ID. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
+| **TTS Speed** | This value defines how fast the bot must converse. This value can be 0.9 - 1.5 for the bot to soundly humanly. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
 
-This is the message played before disconnecting the call. For example, "Have a nice day. Bye!"
+  
+  
+  
+  
 
-15. **Repeat Limit**
+#### **Conversation related options**
 
-This is the number of time a repeat message can be played. For example, if the value is 3, the bot askes the user to respond 3 times and disconnets.
+  
+  
+  
 
+| Fields | Description |
+| ------------------------------ | ----------- |
+| **Enable acknowledgement message** | When this is enabled, an acknowledgement kind message (“hmmm” OR “okay”) could be spoken in the conversation immediately. This is a small custom feature built to bring more human touch to the conversation.  |
+| **Acknowledgement message** | Enter a text/SSML message depending upon the configuration under the Text Type field. Keep it short for a better user experience.  . Ex: "Do you want to confirm?" |
+| **Boost phrases** |Some user responses can be confusing for the bot to understand. Region-specific words, new Genz lingos, internet terminologies, trending phrases, and abbreviations are trained especially so that the bot understands the exact intention. For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise, it gets translated to kovind/ go we/ co-wid etc. Ex: you should add the phrases that you expect from the user response like, < I want to take covid vaccine > |
 
+  
+
+#### **Other options**
+
+  
+
+| Fields | Description |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Repeat limit** | In cases of a blank user response to the question, this is the number of times a repeat message should be played. For example, if the value is 3, the bot asks the user to respond 3 times before following the fallback Configuration. |
+| **Repeat fallback flow** | Select the conversation fallback to be configured in cases of blank user response even after repeated tries. Currently only support - **disconnect** and **agent transfer** as the fallback options. |
+| **Disconnect message** | Message to be played before disconnecting the call as a part of fallback. For example, "Have a nice day. Bye!" |

@@ -1,132 +1,164 @@
 ---
-title: Understanding Conversational Studio
+title: Studio overview
 sidebar_label: Overview
 ---
 
-<!-- This section will make you familiar with the first section you see on top on the platform - Studio. Studio is the section where you design and train your chatbot. 
- -->
+The studio provides a no-code bot-building platform that helps anyone create a bot for their business needs easily. With Studio, you can collect information from your customers, update their information, launch actions, show them the necessary information, have a live chat with an agent and do a lot more.
 
-You don't need to be a developer to build a bot . Atleast not here at Yellow.ai. Bot building is as simple as dragging and dropping a few nodes. 
+This article briefs you on understanding various components of Studio and helps you to get started with creating a bot.
 
-Still can't believe it ? Head over to the studio page and watch the magic happen.
 
-![](https://i.imgur.com/QRWCXwr.gif)
+ In this article, you will learn:
+ 1. [Where to find Studio on the yellow platform](#as)
+ 2. [What are the UI elements available on Studio](#ui)
+ 3. [How to build a bot](#sb)
 
-Studio allows you to give your usecase an overall structure in the way you like. You can train your bot to perform a variety of functions ranging from raising a ticket to branching your flow.
+
+:::note
+If you're new to creating bots or looking for more practical end-to-end guides on bot building, see [Cookbooks](https://docs.yellow.ai/docs/cookbooks/template-bots/customer-support-bot).
+:::
+---
+
+  
+
+## <a name="as"></a>  1. Access studio
+
 
 
 :::info
-You can sign up on [Ascend](https://ascend.yellow.ai/) which provides you learning resources for bot building courses, virtual classroom sessions, video/audio content and much more.
-
-
-If you're getting started or looking for more practical end-to-end guides, checkout [Cookbooks](../../cookbooks/template-bots/customer-support-bot.md), which provides end to end bot building guide.
+Before designing your bot, you need to have the bot set up as mentioned in [Setting up your bot project](https://docs.yellow.ai/docs/cookbooks/getting_started).
 :::
 
-> :heavy_check_mark: Before moving forward, we're assuming you've already completed the process of [setting up your bot project](../../cookbooks/getting_started). 
+1. Log in to https://cloud.yellow.ai.
+2. On the switcher, click **Studio**.
+
+![](https://i.imgur.com/gPU08xO.png)
+
+:::tip
+You can access Studio using the keyboard shortcut `g` + `s`.
+:::
+---
+
+## <a name="ui"></a> 2. Understand UI elements
+
+![](https://i.imgur.com/yCTY5Dz.png)
+
+Option | Description
+------ | -----------
+**Menu/Switcher** | Access all the Yellow.ai modules here.
+**Search box** | Search for specific information from our [Knowledge base](https://docs.yellow.ai)
+**Help** | Click to directly access our Knowledge base.
+**Marketplace** | Save time and increase productivity with our preconfigured templates for your bot. A template contains flows, validators, integrators and more.
+**Access control** | Share your bot access with your team members or superiors who would be contributing to the bot building.
+**Notifications** | Get notified of the invites sent by others. You will see the notification alert when there is someone shares bot access with you.
+![](https://i.imgur.com/g8ZnFxE.png) | Check if each step of the flow is working as expected as building your bot. It shows what is happening in each step such as values stored, action triggered, condition, and prompt. To see the actual preview, click on the icon next to the Preview bot.
+![](https://i.imgur.com/4u8ra3O.png) | Access conversation logs directly from the preview pane.
+![](https://i.imgur.com/mcvEPae.png) | Preview your bot in different channels.
+
+  
 
 ---
 
-## Studio: Kickstart Your Bot Building Journey Here
+  
 
-![](https://i.imgur.com/49IDEd8.png)
-<!-- update screenshot here-->
+## <a name="sb"></a> 3. Steps to build a bot
 
-Studio consists of following modules:
+A bot consists of one or more conversation flows. A flow is a set of events carried out in sequential order according to the conditions set.
 
-### Build
+1. **Create a bot**
+ 
+    You can **create a bot from scratch** or by using the preexisting templates on **Marketplace**. 
 
-#### [Flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys): 
-A conversational flow is a set of events that are carried out one after the other depending on conditions set by you for your bot.
+    **Marketplace**: Use ready-to-use templates to quickly create your bots easily. There are several templates available to cater to different business scenarios. You can then modify the template flow as per your requirement.
 
-There are 2 ways for you to build a flow:
-###### 1. Marketplace
-Choose a template from market place and access one of the predesigned bots. 
-![](https://i.imgur.com/jitbjTo.gif)
+![](https://i.imgur.com/2x15F1q.png)
 
-###### 2. Create from scratch
-Click on the flow dropdown and click on **+ Create Flow**.
 
-#### [NLU](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents):
-Natural Language Understanding makes up the heart and soul of understanding user utterances. Train your intents to understand common user utterances and trigger flows using the start trigger.
+2. **Add Welcome message**
 
-#### [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code):
-Bot builders can write  code functions here if needed and attach them using function node to workflow.
+    You first need to configure the welcome message to prompt when the user opens the bot. Click on the **Start** node to set the welcome message.
 
-#### Localization:
-Localization can be used to configure multilingual messages and nodes to provide multillingual support.
-#### [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs):
-Train your bot to understand commonly asked questions by the users.This way your bot can give automated responses to various user queries.
+> Examples:
+> - Hey! How can I help you today?
+> - Welcome to the XYZ company, I am Boty! How can I assist you?
 
-### [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api)
-Connect third party APIs to your Bot by using this module. Use API to send and recieve data from any platform. This information can be accessed using APIs.
+![](https://i.imgur.com/ZXnEbaY.png)
 
-### [Database](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables)
-Add and store user data in a strucutred manner with database.You can select fields that you want searchability in and acces these fields later in the bot with database node.
 
-### Learn
-This module improves your bot training over-time by self-learning. You can also enable small talk for your bot to carry out short conversations with your user.
+3. **Define Studio functionalities**
 
-### [Document Cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition)
-Using document cognition capabilities, bot can answer user queries through unstructured documents.
-
-### [Event hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub)
-Manage how your bot responds to events. Choose from an existing event or handle a new event from your code.
-
-### [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs)
-This module detects patterns in selected conversations and tags them with actionables that can help you improve your flow. Acces and filter all your conversations here.
+    Define your bot using various Studio functionalities.
 
 
 
+| Functionality                                                                                                                                                    | Description                                                                                                                                                                                                                                                                          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [Add a Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/)                                                                              | A conversational flow is a set of events that are carried out in sequential order according to the conditions set. Create multiple flows and [trigger each flow](https://docs.yellow.ai/docs/platform_concepts/getting-started/#26-trigger-a-flow) logically as per the requirement. |
+| Organise your conversational logic                                                                                                                              | Each node is a point of flow. Use [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) to ask questions, store values, show information, perform math functions, trigger condition-based actions, and make API calls.                                     |
+| Use [Database](https://docs.yellow.ai/docs/platform_concepts/studio/database)                                                                                    | To store information (such as location, address, and user information) in the Yellow.ai Platform and retrieve the details wherever required in the flow.                                                                                                                             |
+| Use [Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition/)                                                 | To enable bot to answer user queries from the documents that you have.                                                                                                                                                                                                               |
+| Make your bot smart by triggering actions or flows based on user activities or [Events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub)  | For example, send a predefined text when no agent is online, or when assigned to an agent; when a user closes a promotion shown in the bot; trigger flows when a user opens a specific URL.                                                                                       |
+| Make your bot handle unintended replies wisely through [Context management](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-contextual-response) | For example, what if a customer types a new question when the bot asks for the mobile number?                                                                                                                                                                                        |
+| Use [Localization](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)                                                                    | To serve users worldwide by making the bot interact in the user's native language. Yellow supports over 100 [languages]((https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported/)).                                                                                                                                                               |
+| Function                                                                                                                                                             | If you are a developer, use [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code/) to define custom functionalities.                                                                                                                                               |
+| Connect third-party systems through [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to retrieve data directly from that system         | For example, you can show user details that are available in your database which is the need of importing the entire data to Yellow Platform.                                                                                                                                        |
+| Fallback                                                                                                                                                         | There could be instances where your bot does not understand how to respond to your user intent. Use Fallback to provide suggestions, answer from documents, connect to an agent, or show a message.  |
+|     Testing the bot  | [Test each flow](https://docs.yellow.ai/docs/platform_concepts/getting-started/#26-trigger-a-flow) as and when you create it to ensure it is working as desired. |
+
+:::note
+Create all the flows required for your use case and ensure these flows are properly connected. Test each flow to improvise it.
+:::
+  
+
+4. **Train the bot**
+
+    [Train your bot](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/bot-training/) to understand common user utterances through NLU (Natural Language Understanding), identify [Entities](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) and more.
+
+![](https://i.imgur.com/A7GqpLw.jpg)
+
+
+5. **Test the bot**
+
+    [Test your bot](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) to ensure it's functioning as expected.
+
+
+
+6. **Debug**
+
+    [Debug](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) if there are any issues and [Publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) the bot.
+
+7. **Conversation log**
+
+    Keep your bot effective over time through Self-learning and analysing [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs/).
+    
+    
 ---
 
-### 1. Design your conversations 
+## 4. Keyboard shortcuts
 
-You can design and test all your conversations in the design section of bot - mainly using Journeys & FAQs. But let's not rush ahead. 
+We have introduced shortcut keys to make it easy for you to access key options and increase the productivity of repetetive tasks.
 
-There can be multiple use cases for which you started building a bot - in most cases to automate some service/business function, with a conversational layer on top of it.
+:::note
+You can directly use the keys to access the function from the screen where that particular option is available.
+:::
 
-:information_source:  To take an example, suppose you wish to build a travel assistant bot, and these are the things you wish to handle-
+The following table lists the keyboard shortcuts for Studio module -
 
-- Flight tickets booking, cancellation and rescheduling
-- Hotel bookings, cancellation and rescheduling
-- Flight status
-- Customer support with live human
+Action | Shortcut | Access from
+------ | -------- | -----------
+Open new node selector | n | Studio
+Go to Intents page | i | Studio
+Go to Entities page | e | Studio
+Opens select flow/journey dropdown | s + f | Studio
+Go back (wherever you are) | b | Global
+Opens select bot dropdown | s + b| Global
+Go to Studio module | g + s| Global
+Go to Overview page | g + o| Global
 
-Above points describe the scope of your bot, ie, what can your bot help your customers with. Once you're clear with what you want to do, first thing you will start with is designing the flow of conversation, right from where the conversation starts.
 
-1. **First step** of this flow design is configuring the **Welcome prompt** you see above. Welcome prompt helps you configure the first message your bot shows to user. 
-2. Now that your welcome message is set, next you can plan is designing the flows we discussed above. We do this with the help of **Journeys.** You will learn more about [**Journeys**](./build/journeys) in next section.
-3. In above flow you also wanted to **answer customer FAQs**, these FAQs can be added in the [**FAQ**](./train/add-faqs) section.
-4. Moreover you can also handle [**contextual questions**](./train/add-contextual-response). 
-5. Lastly as in above screen, you can **configure your fallback options**. When user says something that bot doesn't understand, or is not in scope of the bot, bot goes through fallback flow. 
-    Fallback consists of three parts:
-    - **Suggestions** : When bot doesn't understand user input, it will help by trying to suggest journeys close to what user might want (if available). ***You should enable suggestions for a good user experience!***
-    - **Document Search** : Another fallback bot can resort to if no journey comes up in suggestions as well, is searching and answering from the documents added in [**knowledge base**](./train/what-is-document-cognition).
-    - Finally if none of the above works, bot will go to **fallback prompt**. In fallback prompt you can set a Fallback message, Trigger a agent journey etc. 
+----
 
----
 
-### 2. Train your bot
-Another thing, the heart and soul of bot building "**Natural language Understanding**" capabilities can be added to bot in this section. 
-You can [train your bot](./test-and-publish-bot/bot-training) here to [respond to various user utterances](./train/intents), [detect entities](./train/entities) etc. 
+**What Next?**
 
-### 3. Supporting sections - Code, API and Events.
-These sections are often used / needed in bot building journey.
-- **Code**: You can write your code functions here if needed and attach them using function node to workflow. 
-- **Events** : Events section helps you add and handle various events .
-- [**API**](./api/add-api) : You can add and manage your APIs in API section. 
-### 4. Document Cognition
-Using [**document cognition**](./train/what-is-document-cognition) capabilities, bot can answer user queries through unstructured documents.
-
-### 5. Self - learning and improving the bot continously
-It's hard to predict everything upfront for a project and create perfect project in one go. Continous improvements in any project are part of building great things, and chatbots are no exception.
-
-Our last sections in studio , ie, 
-
-- **Learn** section helps your improve your bot training over-time by self-learning.
--  **Conversation logs** section detects patterns in selected conversations and tags them with actionables that can directly help you improve your bot flows. 
-
-This is so you improve both conversational flows + Training overtime. 
-
----
-We will dive deeper into above points in upcoming sections. 
+Understand the different types of flows and create a  bot flow for your use case, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) to learn more. 

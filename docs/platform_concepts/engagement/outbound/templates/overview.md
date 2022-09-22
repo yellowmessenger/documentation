@@ -51,6 +51,47 @@ All the available channels will be showed in dropdown.
 
 ![](https://i.imgur.com/aa7t85z.jpg)
 
+### 'Duplicate & Edit' existing templates
+
+From yellow's template manager you can duplicate the existing templates, make changes and save as new template.
+
+Sample Usecase:
+User wants to use the same content of a whatsapp template "image_cta" but with minor content change and added button.
+
+1. Click on kebab menu icon against any template.
+2. Select "Duplicate" option and it will open the existing template.
+3. You can edit the content on each fields and save it as new template.
+
+**Note** : You cannot use the existing template name, try giving different name preferbaly meaningful for better searchability.
+
+Here we are adding a new CTA button and minor text change in existing templates and save it under new template name "image_cta_with_phone".
+
+![](https://i.imgur.com/GVYprGv.gif)
+
+
+### 'Delete' rejected templates
+
+We support **delete** option for rejected templates only.
+**Note** : Approved templates cannot be deleted or edited.
+
+1. Click on kebab menu icon against any rejected template.
+2. Select "Delete" as shown below
+
+![](https://i.imgur.com/24ycziU.gif)
+
+### Bulk Delete or Clean up
+
+1. Click on "Clean up" option from top.
+2. It will filter all rejected templates and auto selected.
+3. You can also select specific templates only and delete to manage your template manager.
+
+![](https://i.imgur.com/fKoTP1I.gif)
+
+### Edit Message Templates
+
+You can always view your already approved and pending Message Templates via Template overview. 
+Note that once submitted Message Templates **cannot be edited**, as they go through an approval process by WhatsApp. If you want to change an already approved or rejected Message Templates, the only way is to create a new Message Template.
+
 ### FAQs
 
 **1. What are the channels supported?**

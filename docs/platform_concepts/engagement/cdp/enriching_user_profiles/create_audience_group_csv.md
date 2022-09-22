@@ -1,37 +1,42 @@
 ---
-sidebar_label: Creating groups of audience using CSV Import and Tags
-title: Creating groups of audience using CSV Import and Tags
+sidebar_label: Creating audience groups using CSV Import and Tags
+title: Creating audience groups using CSV Import and Tags
 ---
 
 ## Importing users from a CSV and grouping them using Tags
-The first step to start importing users is to have the CSV. Make sure that the column headers match the name of the user property that you want to map that column with. These names are **case sensitive** and the column header **should not include spaces** before/after.
 
-![](https://i.imgur.com/gEcRb2s.jpg)
+1. Create a CSV file with user details. Make sure that the column headers match the name of the user property that you want to map with. 
 
-To begin the CSV import, you may click on **+ Add user → Import users.**
+:::note
+These names are **case sensitive** and the column header **should not include spaces** before/after.
+:::
 
-![](https://i.imgur.com/ntdUjuO.jpg)
+   ![](https://i.imgur.com/gEcRb2s.jpg)
 
-You can upload the CSV you want to import users from. An optional step is to add **tags.** The tags that you add at this step will get added for every user in the CSV. This can be a great way to differentiate between users uploaded from multiple CSV files and to maintain multiple audiences.
+2. Navigate to **Engage** > **User 360**.
+3. Click on **Add user** > **Import users**.
+   ![](https://i.imgur.com/KkDLtC2.png)
 
-You can then [create a segment](../user_data_segments/creating_managing_user_segment) using those tags to refer to the various set of audiences you have imported.
+4. Upload the CSV file that you have created. 
+5. In **Tags**, add custom tags for the group. These tags are added to every user in the CSV. This helps you differentiate between users uploaded from multiple CSV files and to maintain multiple audiences.
+   ![](https://i.imgur.com/Asg1896.jpg)
 
-![](https://i.imgur.com/Asg1896.jpg)
+6. [Create a segment](../user_data_segments/creating_managing_user_segment) using those tags to refer to the various set of audiences you have imported.
 
-:::info
-If the [userId](../enriching_user_profiles/user_id) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user that is imported.
+:::note
+If the [userId](../enriching_user_profiles/user_id) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
 :::
 
 ## Pre-checks before uploading the CSV
 
-To ensure that your users are imported successfully, you can ensure the following:
-- Correct column headers → Make sure that the column headers match the name of the user property that you want to map that column with. These names are case sensitive and the column header should not include spaces before/after. 
+To ensure that your users are imported successfully, ensure the following:
+- Correct column headers → Make sure that the column headers match the name of the user property that you want to map with. These names are case sensitive and the column header should not include spaces before/after. 
 
 :::warning
 If any of these column headers do not match with any user property, the entire CSV import will fail.
 :::
 
-- Correct data type → Data type validation is run before importing each user record. User records where this validation fails, will be skipped. Each data type accepts the following values:
+- Use correct data type → Data type validation is run before importing each user record. User records where this validation fails, will be skipped. Each data type accepts the following values:
 
 | Data Type | Accepted Value                                   |
 |-----------|--------------------------------------------------|
@@ -49,29 +54,29 @@ If any of these column headers do not match with any user property, the entire C
 
 ## Using the userId column to identify users
 
-You can pass the userId for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. You may read more about userId and it’s importance [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id).
+You can pass the userId for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. Know more about userId and it’s importance [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id).
 
-When the CSV includes a user record with a userId that already exists in the users table, a conflict arises between the old record and the new record. The new record is **merged** into the old record in the following manner:
+When the CSV file includes a user record with a userId that already exists in the users table, a conflict arises between the old record and the new record. The new record is merged into the old record in the following manner:
 
-- Properties provided for the new record, will be over-written on the older record.
+- Existing values of the user will be updated with the new record values.
 - Properties not provided for the new record, will be retained for the older record.
 
 **For example:**
 
 
-Old record:
+**Old record**:
 
 | userId | firstName | email             | phone        | tags      |
 |--------|-----------|-------------------|--------------|-----------|
-|    123 | Sarthak   | sarthak@yellow.ai | 919999999999 | tag1,tag2 |
+|    123 | Sarthak   | sarthak@example.ai | 919999999999 | tag1,tag2 |
 
-New record:
+**New record**:
 
 | userId | firstName | email | phone        | tags      |
 |--------|-----------|-------|--------------|-----------|
 |    123 |           |       | 918888888888 | tag3,tag4 |
 
-Merged Record:
+**Merged Record**:
 
 | userId | firstName | email             | phone        | tags      |
 |--------|-----------|-------------------|--------------|-----------|
@@ -81,24 +86,32 @@ Merged Record:
 Sometimes you might notice that the exact number of records you imported through CSV won't show up in the users table. This could be because some of the records being imported were merged with existing records.
 :::
 
-## Figuring out what went wrong with your CSV Import
+## Identifying errors in the CSV post import
 
-Sometimes you might notice that the number of users you tried importing from the CSV didn’t show up in the users table. Here is might what have gone wrong:
+Once you import a CSV file, you can check what happend with the records. You can see the count of new entries added, entries merged, and failed entries. 
+
+New users might not be created with all entries you upload. The following are the possible reasons:
 - [Wrong column headers](../enriching_user_profiles/create_audience_group_csv#pre-checks-before-uploading-the-csv)
 - [Data type mismatch](../enriching_user_profiles/create_audience_group_csv#pre-checks-before-uploading-the-csv)
 - Some users being imported must’ve [merged](../enriching_user_profiles/create_audience_group_csv#using-the-userid-column-to-identify-users) into existing user records
 
-You can figure out which of the above happened by heading to [User Logs](../user_data_segments/manage_user_data#user-logs). Click on User Logs →  relevant **CSV Import activity → Download log**
+To identify errors in the import, see [User Logs](../user_data_segments/manage_user_data#user-logs). 
+Click on **User Logs** > Navigate to the relevant **CSV Import activity** > Click **Download log**.
 
 
 ![](https://i.imgur.com/5jj2BgM.jpg)
 
-![](https://i.imgur.com/55QuPiA.jpg)
 
-The downloaded log will include the following columns:
-1. **BOT_ID** → Bot Id for which the CSV was uploaded.
-2. **REQUEST_PAYLOAD** → The user record for which an import was attempted but FAILED
-3. **ERROR_PAYLOAD** → The error details due to which above user import FAILED:
-    - `invalidDataType`: Properties for which the wrong data type was passed
+The downloaded log contains the following information:
+![](https://i.imgur.com/PVDp28M.png)
+
+* **Summary**: Shows the count of user records that were newly added, failed to add, and were merged into the existing user details.  
+   - Records that were imported as new users
+   - Records for which import failed (included below)
+   - Records that were merged into existing users
+* **BOT_ID**: Bot Id for which the CSV was uploaded.
+* **REQUEST_PAYLOAD**: The user record for which an import was attempted but FAILED
+* **ERROR_PAYLOAD**: The error details due to which above user import FAILED:
+    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) was passed
     - `invalidProperty`: Properties that do not exist in the user table
-4. **LINE_NUMBER** → The row number of the user record for which import FAILED
+* **LINE_NUMBER**: The row number of the user record for which import FAILED

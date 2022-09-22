@@ -1,6 +1,6 @@
 ---
 title: Chatbot SDK for cordova
-sidebar_label: Cordova 
+sidebar_label: Cordova
 ---
 
 # Migration Guide for Android
@@ -140,6 +140,14 @@ Speech to text can be enabled and disabled by calling setEnableSpeech(). Default
 
 ```javascript
 cordova.plugins.ymchat.setEnableSpeech(true);
+```
+
+### Hide Input Bar
+
+You can hide the input bar while bot is loading by calling the `setDisableActionsOnLoad` API . Default value is `false`
+
+```javascript
+cordova.plugins.ymchat.setDisableActionsOnLoad(true);
 ```
 
 ### Colors
