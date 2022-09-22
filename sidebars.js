@@ -528,6 +528,7 @@ module.exports = {
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
         "platform_concepts/appConfiguration/jira",
+        "platform_concepts/appConfiguration/sap-io"
       ],
     },
     {
