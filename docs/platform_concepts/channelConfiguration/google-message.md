@@ -9,7 +9,7 @@ Google Business Messages (GBM) is a mobile conversational channel that combines 
  
 With GBM, you give your customers the opportunity to interact with your organization when they search for the organization on their mobile browser (Android phone) or in Google Maps.
 
-Depending how bot users start conversations with GBM agent, you have two different [entry points](#11-understand-entry-point). 
+Depending on how bot users start conversations with the GBM agent, you have two different [entry points](#11-understand-entry-point). 
 
 
 ### 1.1 Understand entry point
@@ -33,21 +33,39 @@ Local entry points can be used for organisations which have a physical location.
 
 The Non-local entry point group contains entry points that do not rely on locations. If the brand does not have a physical location, or does not want to share its physical location on Google, you can use Google Business Messages with Non-local entry points.
 
-To enable non-local entry points,
+Here are some examples of non-local entry points -
+1. Sitelinks 2. Snippets and 3. Phone.
 
-1. Update your agent's non-local information.
-2. Verify your agent.
-3. Business Messages approves your agent for various entry points based on the non-local information you specify.
+![](https://i.imgur.com/BrKhx0l.png)
 
-:::note 
-You need to specify all non-local data before you verify your agent. You cannot edit it later.
-Launch your agent.
-:::
+
+### Supported message types
+
+With Business Messages, you can receive messages from users and send response messages.
+
+Yellow.ai supports the following Business Messages.
+
+* Plain text
+* Images
+* Suggested action replies
+* Authentication requests
+
+Likewise, the agent may send the following types of information to the user:
+
+* Plain text
+* Rich text with limited Markdown formatting support
+* Suggested replies
+* Suggested actions
+* Suggestions to request a live agent
+* Rich cards containing multiple pieces of information, usually at least media and a title
+* Rich card carousels that string together multiple rich cards
+
 
 
 
 ## 2. Limitations
-The following are the limitations of the GBM channel in different bot functionalitie.
+
+The following are the limitations of the GBM channel in different bot functionalities.
 
 #### Welcome message limitations
 
@@ -82,7 +100,7 @@ Image sharing | Use only publicly reachable URL of the file. The platform determ
 Max file size | 5 MB.
 Supported formats | image/jpeg, image/jpg, image/png, image/webp
 
-[See more details](https://developers.google.com/business-communications/business-messages/reference/rest/v1/conversations.messages#ContentInfo)
+> [See more details](https://developers.google.com/business-communications/business-messages/reference/rest/v1/conversations.messages#ContentInfo)
 
 #### Carousel card
 
@@ -126,7 +144,7 @@ Max. buttons in card | 4
 
 
 :::note
-The brand name will not be visible when the bot goes live on GBM. It is only used for verification purposes.
+The brand name will be visible when the bot goes live on GBM. The name of the brand's POC won't be viisible, it is used only for verification purposes.
 :::
 
 ### 3.  Enter bot details
@@ -139,7 +157,7 @@ Enter the bot details based on the descriptions provided for each field in the f
    **Bot details** | -
    Bot name |  The name of the bot to appear to the end-users. It is recommended to choose a bot name that corresponds with the brand instead of a personal or random name. Do not use words such as personal, test, or demo in bot names.
    Bot logo | 1024x1024 px. In conversations, logos appear in 1024px diameter circles. Make sure that your logo appears well in the circle.
-   [Entry points](#11-understand-entry-point) | Select where users can start conversations with the bot. **Local** if the organisation has a physical location, select **Non-Local** otherwise.
+   [Entry points](#11-understand-entry-point) | Select where users can start conversations with the bot. **Local** if the organisation has a physical location, select **Non-Local** otherwise. You can also select both the options.
    Domain |  The org's domain URL. Use **Add domain** to add multiple domain addresses.
    Regions | Countries and localities in which the bot is allowed to launch the non-local entry points.
    Customer care number | The customer care contact number to display in Google results.
@@ -149,7 +167,7 @@ Enter the bot details based on the descriptions provided for each field in the f
    Language | Languages that the bot supports. This will be pre-filled based on the configuration setting saved in the builder. You can also set the default language using the check box next to this.
    Privacy policy | Provide the link where the privacy policy details of your organisation are available.
    Welcome message | The first message in a conversation between a bot and a user. The welcome message automatically appears when a user starts a new conversation.
-   Offline message | Message to show to the bot user during non-operating hours - when the is offline.
+   Offline message | Message to show to the bot user during non-operating hours - when the human-agent is offline.
    Quick replies | Conversation starters appear as vertically stacked suggested replies and directly follow the welcome message. When the end-user taps a conversation starter, the bot receives predefined content. You can add up to five quick replies . Quick replies are not visible (when the live agent is not available) if an offline message is set.
    **Interactions** | -
    Primary interaction | The primary mode of interaction with the bot users. It is mandatory to have a live agent configuration for GBM. If human messaging is not available 24*7, uncheck **Always available** and specify the available days, time, and timezone.
@@ -164,12 +182,13 @@ Enter the bot details based on the descriptions provided for each field in the f
 ### 4.  Enter your business location
 Add location IDs as per the operating mode of business. If you have selected *Local entry* point in the previous step, you need to add at least one business location.
 
-   a. **Place ID**: Enter the unique ID the location (in Google places) that you want to add to the GBM configuration. To search for a place ID, click **Find place ID**.
+   a. **Place ID**: Enter the unique ID the location (in Google places) that you want to add to the GBM configuration. To search for a place ID, click **[Find place ID](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder)**.
+
    ![](https://i.imgur.com/vBLSZYJ.png)
 
-   ![](https://secure-res.craft.do/v2/3vGZHauMSsJPgPcxywtP2vSoKhZwxU3gyVNFVaQRTbfbN9Yuc1V633ymNtGMJnbwcdYxaFAcW6Kvek5MRMRG3ZTttenNNuefhqqrUsemqxmbAEqyXTGB6dVzmnZaCEKBBAsRFLY1qZuKzSsqZQ9yWYsTr7wTQxUF9EovWrqykDGtfwagd1ZbKWtxsDPTBFMfrbrL7E7zBaZd6ZrF4dtM7fdyVnT/Screen_Recording_2022-08-06_at_4_29_10_PM_AdobeExpress.jpg)
-   
+   ![](https://i.imgur.com/3am8xDQ.gif)
 
+   
    b. Click **Add location** to add another location.
 
 :::note
@@ -189,7 +208,7 @@ For the *Live* environment, you need to complete the verification and launch pro
 In Development environment, you do not need to complete the verification and launch process. Copy the Test URLs for Android or iOS and open it in the respective devices to test the bot on GBM.
 :::
 
-The bot needs to be verified along with its associated locations before going live. The process includes bot verification, location verification, bot launch status verification, and location launch status verification.
+The bot needs to be verified along with its associated locations before going live. The process includes bot and location verification, bot and location launch.
 
 
 ![](https://i.imgur.com/k8efR78.jpg)
@@ -210,8 +229,13 @@ Google sends two separate emails asking for permission to send messages.
 
 * The second email will have the security key.
 
-To verify the bot, the contact person needs to reply to the first email with the following information:
+To verify the bot, the contact person needs to reply to the first email with the following information: 
 
+* The recipient's name	
+* Title of the employee	
+* Google-provided security key from separate email
+
+> **Standard format**
 > I, [name of brand employee] and [title of employee], grant yellow.ai the right to send Business Messages using the information specified in this email. Security key: [Google-provided security key from separate email]
 
 Next, Google will verify this email and mark the bot as verified if all the information is as per the Google's guidelines.
@@ -225,6 +249,9 @@ After you verify a bot, verify locations associated with that bot. Once a locati
 ### 7. Launch bot
 
 When you launch a bot, Business Messages performs checks for necessary approvals before beginng the launch process. Once the launch process begins, the agent is available to users within a few hours.
+
+### 8. Launch locations	
+When you launch a verified location, the location is available to users within a few hours. 
 
 ## 4. Monitor your bot performance
 
