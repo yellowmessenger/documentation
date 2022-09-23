@@ -267,20 +267,73 @@ Bot can be programatically closed using `closeBot()` function
 YMChat.shared.closeBot()
 ```
 
+## Register Device
+
+If you want to receiving push notifications without or before launching the bot, you can register your device.
+To use this api `apiKey`, `botId`, `deviceToken` and `ymAuthenticationToken` are mandatory parameters.
+
+```swift
+    let config = YMConfig(botId: "your bot id")
+    config.deviceToken = "your FCM Token"
+    config.ymAuthenticationToken = "your ymAuthentication token"
+
+    // Set custom base url in case your bot does not belong to india region and yellow cloud
+    // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai
+    // config.customBaseUrl = "https://r5.cloud.yellow.ai"
+
+    YMChat.shared.registerDevice(apiKey: apiKey, ymConfig: config) {
+        print("Success")
+    } failure: { error in
+        print(error)
+    }
+```
+
 ## Unlink Device Token
 
-If you want to stop receiving push notifications you can unlink the device token.
+If you want to stop receiving push notifications you can unlink the device.
+To use this api `apiKey`, `botId` and `deviceToken` are mandatory parameters.
 Device token typically is unlinked when the user logs out of the app.
 
 ```swift
-YMChat.shared.unlinkDeviceToken(botId: <#bot-id#>, apiKey: <#api-key#>, deviceToken: <#firebase-device-token#>) {
-    print("Token removed successfully")
-} failure: { errorString in
-    print("ERROR: \(errorString)")
-}
+    let config = YMConfig(botId: "your bot id")
+    // Set the FCM token as device token, this is required so that it can be removed and customer stop receiving the notification
+    config.deviceToken = "your FCM Token"
+    // Set custom base url in case your bot does not belong to india region and yellow cloud
+    // Example- If your bot is in `r5` or EURO region custom base url would be `https://r5.cloud.yellow.ai
+    // config.customBaseUrl = "https://r5.cloud.yellow.ai";
+
+    YMChat.shared.unlinkDeviceToken(apiKey: apiKey, ymConfig: config) {
+        print("Token removed successfully")
+    } failure: { errorString in
+        print("ERROR: \(errorString)")
+    }
 ```
 
-Note: API key can be found in account settings under Access keys section after you login.
+:::note API Key
+API key can be generated/found by visiting `https://cloud.yellow.ai` -> Overview -> Configure -> API Key section
+:::
+
+## Unread Message Count
+
+If you want to show an indicator in your app if there is any unread messages, you can achieve that by calling the given api when bot is in closed state.
+Pre condition to use this api is that customer must have opened the bot at least once with `ymAuthenticationToken` otherwise you will receive an error message.
+To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
+
+```swift
+    let config = YMConfig(botId: "your bot id")
+    // `ymAuthenticationToken` is required to identify the right
+    config.ymAuthenticationToken = "your ymAuthentication token"
+    // Set custom base url in case your bot does not belong to india region and yellow cloud
+    // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai
+    // config.customBaseUrl = "https://r5.cloud.yellow.ai";
+
+    YMChat.shared.getUnreadMessagesCount(ymConfig: config) { count in
+        print("Unread message count:" + count)
+    } failure: { error in
+        print(error)
+    }
+```
+
 
 ## Logging
 
