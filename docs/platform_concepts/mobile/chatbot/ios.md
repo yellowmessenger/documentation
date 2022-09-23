@@ -311,6 +311,7 @@ Device token typically is unlinked when the user logs out of the app.
 
 :::note API Key
 API key can be generated/found by visiting `https://cloud.yellow.ai` -> Overview -> Configure -> API Key section
+:::
 
 ## Unread Message Count
 
