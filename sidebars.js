@@ -187,19 +187,20 @@ module.exports = {
         //     "platform_concepts/studio/table/database-search",
         //   ],
         // },
-        {
-          type: "category",
-          label: "Events",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/events/event-hub",
-            "platform_concepts/studio/events/user-inactive",
-          ],
-        },
+        "platform_concepts/studio/events/event-hub",
+        // {
+        //  type: "category",
+        //  label: "Events",
+        //  collapsed: true,
+        //  items: [
+        //    "platform_concepts/studio/events/event-hub",
+           // "platform_concepts/studio/events/user-inactive",
+        //  ],
+       // },
 
         {
           type: "category",
-          label: "Analyze",
+          label: "Analysis",
           collapsed: true,
           items: [
             "platform_concepts/studio/analyze/chat-logs",
@@ -208,10 +209,10 @@ module.exports = {
 
         {
           type: "category",
-          label: "Test and Publish bots",
+          label: "Test and publish bot",
           collapsed: true,
           items: [
-            "platform_concepts/studio/test-and-publish-bot/bot-training",
+           // "platform_concepts/studio/test-and-publish-bot/bot-training",
             "platform_concepts/studio/test-and-publish-bot/debug-flow",
             "platform_concepts/studio/test-and-publish-bot/modes",
           
@@ -509,6 +510,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/google-assistant",
         "platform_concepts/channelConfiguration/googleChat",
+        "platform_concepts/channelConfiguration/google-message",
         "platform_concepts/channelConfiguration/instagram",
         "platform_concepts/channelConfiguration/ivr-bots",
         //"platform_concepts/channelConfiguration/slack",

@@ -31,7 +31,21 @@ The campaigns on messaging channels such as *FB Messenger* will be in the form o
 
 Inbound engagement is carried out when customers visit the brand's website to explore the product or service offerings. The Inbound engagement helps in converting casual visitors into prospective leads or buyers.
 
-  
+
+### 1.3 Workflow campaign
+
+The Workflow campaign lets you automate your marketing or collection campaigns by providing you the leverage to reach out to your customers on multiple channels. You can also configure fallback channels and check the delivery status of messages inside the workflow.
+
+:::note
+
+**Workflow vs. outbound campaigns**:
+
+Outbound campaigns can only be used with a single channel and all the users will receive the same template. You cannot configure Fallbacks in case of failed notifications. 
+
+With Workflow campaigns,  you can configure multiple channels and add fallbacks to each priority channel. 
+
+:::
+
 
 
 ## 2. Access Engage module
