@@ -303,29 +303,68 @@ Bot can be programatically closed using `closeBot()` function
 ymChat.closeBot();
 ```
 
+## Register Device
+
+If you want to receiving push notifications without or before launching the bot, you can register your device.
+To use this api `apiKey`, `botId`, `deviceToken` and `ymAuthenticationToken` are mandatory parameters.
+
+```java
+    try {
+            YMChat ymChat = YMChat.getInstance();
+            //Mandatory config  `botId`, `deviceToken` and `ymAuthenticationToken`
+            YMConfig ymConfig = new YMConfig("your bot id");
+            ymConfig.deviceToken = "your FCM Token";
+            ymConfig.ymAuthenticationToken = "your ymAuthentiction token";
+            // Set custom base url in case your bot does not belong to india region and yellow cloud
+            // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai
+            // ymConfig.customBaseUrl = "https://r5.cloud.yellow.ai";
+            ymChat.registerDevice(apiKey, ymConfig, new YellowCallback() {
+                @Override
+                public void success() {
+                    Toast.makeText(MainActivity.this, "Device Registered", Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void failure(String message) {
+                    Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                }
+            });
+        } catch (Exception e) {
+            //Catch and handle the exception
+            e.printStackTrace();
+        }
+```
+
 ## Unlink Device Token
 
-If you want to stop receiving push notifications you can unlink the device token.
+If you want to stop receiving push notifications you can unlink the device.
+To use this api `apiKey`, `botId` and `deviceToken` are mandatory parameters.
 Device token typically is unlinked when the user logs out of the app.
 
 ```java
-try {
-    YMChat ymChat = YMChat.getInstance();
-    ymChat.unlinkDeviceToken(botId, apiKey, deviceToken, new YellowCallback() {
-        @Override
-        public void success() {
-            Toast.makeText(MainActivity.this, "Token unlinked", Toast.LENGTH_SHORT).show();
-        }
+    try {
+            YMChat ymChat = YMChat.getInstance();
+            YMConfig ymConfig = new YMConfig("your bot id");
+            // Set the FCM token as device token, this is required so that it can be removed and customer stop receiving the notification
+            ymConfig.deviceToken = "your FCM Token";
+            // Set custom base url in case your bot does not belong to india region and yellow cloud
+            // Example- If your bot is in `r5` or EURO region custom base url would be `https://r5.cloud.yellow.ai
+            // ymConfig.customBaseUrl = "https://r5.cloud.yellow.ai";
+            ymChat.unlinkDeviceToken(apiKey, ymConfig, new YellowCallback() {
+                @Override
+                public void success() {
+                    Toast.makeText(MainActivity.this, "Token unlinked", Toast.LENGTH_SHORT).show();
+                }
 
-        @Override
-        public void failure(String message) {
-            Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                @Override
+                public void failure(String message) {
+                    Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                }
+            });
+        } catch (Exception e) {
+            //Catch and handle the exception
+            e.printStackTrace();
         }
-    });
-} catch (Exception e) {
-    //Catch and handle the exception
-    e.printStackTrace();
-}
 ```
 
 :::note API Key
@@ -334,6 +373,40 @@ API key can be generated/found by visiting `https://cloud.yellow.ai` -> Overview
 Existing client can upgrade their dependency to `v2.1.+` and replace exisitng key with new API Key.
 Client using SDK version below `v2.1.0` will have no impact.
 :::
+
+## Unread Message Count
+
+If you want to show an indicator in your app if there is any unread messages, you can achieve that by calling the given api when bot is in closed state.
+Pre condition to use this api is that customer must have opened the bot at least once with `ymAuthenticationToken` otherwise you will receive an error message.
+To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
+
+```java
+        try {
+            YMChat ymChat = YMChat.getInstance();
+            YMConfig ymConfig = new YMConfig("your bot id");
+            // `ymAuthenticationToken` is required to identify the right
+            ymConfig.ymAuthenticationToken = "your ymAuthentiction token";
+            // Set custom base url in case your bot does not belong to india region and yellow cloud
+            // Example- If your bot is in `r5` region custom base url would be `https://r5.cloud.yellow.ai
+            // ymConfig.customBaseUrl = "https://r5.cloud.yellow.ai";
+            ymChat.getUnreadMessagesCount(ymConfig, new YellowDataCallback() {
+                @Override
+                public <T> void success(T data) {
+                    YellowUnreadMessageResponse response = (YellowUnreadMessageResponse) data;
+                    Toast.makeText(MainActivity.this, "Unread messages - " + response.getUnreadCount(), Toast.LENGTH_SHORT).show();
+                }
+
+                @Override
+                public void failure(String message) {
+                    Toast.makeText(MainActivity.this, message, Toast.LENGTH_SHORT).show();
+                }
+            });
+        } catch (Exception e) {
+            //Catch and handle the exception
+            e.printStackTrace();
+        }
+```
+
 
 ## Dependencies
 
