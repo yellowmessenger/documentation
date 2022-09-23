@@ -61,6 +61,7 @@ Likewise, the agent may send the following types of information to the user:
 * Rich card carousels that string together multiple rich cards
 
 
+***
 
 
 ## 2. Limitations
@@ -112,6 +113,7 @@ Max. buttons in card | 4
 > [See more details](https://developers.google.com/business-communications/business-messages/reference/rest/v1/conversations.messages#carouselcard)
 
 
+***
 
 
 ## 3. Steps to connect a bot to GBM
@@ -252,6 +254,8 @@ When you launch a bot, Business Messages performs checks for necessary approvals
 
 ### 8. Launch locations	
 When you launch a verified location, the location is available to users within a few hours. 
+
+***
 
 ## 4. Monitor your bot performance
 
