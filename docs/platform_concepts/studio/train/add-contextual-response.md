@@ -8,7 +8,7 @@ Setting up contextual responses means adding more context as a response to a par
 
 **Use case**
 
-To simplify contextual response further, take an example:
+To simplify contextual response further, take an example:  
 **Bot** : Can you share your email with me?  
 ~~**User** : Sure, gooduser@email.com~~ (Expected response)  
 **User** : Why do you need my email?  (Received response)
@@ -18,7 +18,7 @@ These types of contextual intents can be handled by adding contextual responses.
 
 ## 1. Add Global Contextual Responses
 
-Setting up standard contextual responses for all prompts in all journeys in the bot will give a response to the users when the bot has been asked questions with Why/What/How/ etc at any prompt. 
+Setting up standard contextual responses for all prompts in all journeys in the bot will give a response to the users when the bot has been asked questions with Why/What/How/ etc at any prompt.    
 To explore the options available, follow the given steps: 
 
 1. **Open Context management tab**
@@ -67,9 +67,9 @@ Add as many training utterances as possible for a particular context.
 
 **Enable small-talk**
 
-(This is available only for the **older bots**. New bots can configure small talk separately)
+(This is available only for the **older bots**. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/smalltalk/) to configure small talk for new bots.)
 
-    - If the small talk is enabled, when the user talking about generic topics, the bot will be able to answer the user with an appropriate answer. 
+If the small talk is enabled, when the user talking about generic topics, the bot will be able to answer the user with an appropriate answer. 
 
 > **Bot**: Please enter your desired location.   
 > **User**: Which location are you from?  
