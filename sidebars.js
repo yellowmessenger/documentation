@@ -480,6 +480,7 @@ module.exports = {
             "platform_concepts/engagement/outbound/notification-engine",
           ],
         },
+        "platform_concepts/engagement/workflowCampaign",
 
         {
           type: "category",
