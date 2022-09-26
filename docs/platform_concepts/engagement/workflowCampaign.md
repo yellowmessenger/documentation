@@ -12,12 +12,12 @@ The Workflow campaign lets you automate your marketing or collection campaigns b
 ![](https://i.imgur.com/aJ1Espm.png)
 
 :::note
-Workflow campaign is not an alternate to Scheduler of app.ym platform.
+The Workflow campaign is not an alternate to Scheduler of app.ym platform.
 :::
 
 ### 1.1 Workflow vs. outbound campaigns
 
-Outbound campaigns can only be used with a single channel and all the users will receive the same template. You cannot configure Fallbacks in case of failed notifications. 
+You can use Outbound campaigns only with a single channel and all the users will receive the same template. You cannot configure Fallbacks in case of failed notifications. 
 
 With Workflow campaigns,  you can configure multiple channels and add fallbacks to each priority channel. 
 
@@ -50,7 +50,9 @@ The following are some key benefits of Workflow campaigns -
 
 The above workflow shows how the campaign channels can be arranged by preference of low to high cost consumption channels to keep the overall campaign ROI high for the similar impression rate. 
 
-However, one drawback of such type of campaigns is that the read rate for the lower cost incurring channels are also low compared to channels like WhatsApp.
+:::note
+One drawback of such type of campaigns is that the read rate for the lower cost incurring channels are also low compared to channels like WhatsApp.
+:::
 
 ***
 
@@ -71,11 +73,11 @@ To create a Workflow campaign, follow these steps -
 ![](https://i.imgur.com/Eo7aEiZ.png)
 
 3. Map **To** to a CDP attribute of the notification type (for example, phone for WhatsApp, email for Email).
-4. As per your business requirement use various *Action* nodes in between flows to fetch notification status; use the Delay node to add timeout.
+4. Use various *Action* nodes in between flows to fetch notification status; use the Delay node to add timeout.
 
 ![](https://i.imgur.com/gL830m9.png)
 
-5. Map Template params to be mapped properly with a CDP Attribute or Bot variable so that the Template can be sent to the user.
+5. Map Template params properly with CDP Attribute or Bot variable so that the Template can be sent to the user.
 
 :::note
 * There should be at least 1-2 minutes delay between an Outbound Node and Notification Status Node.
@@ -103,10 +105,11 @@ Invalid or incomplete (if *To* field not mapped) will throw as error message.
 
 8. Select your preferred target audience (segment). Make sure to add your users' CDP records to use it for any type of Campaigns.  Know more about [User 360](/docs/platform_concepts/engagement/cdp/overview).
 
-![](https://i.imgur.com/9PD6caJ.png)
+   ![](https://i.imgur.com/9PD6caJ.png)
 
 9. Schedule the campaign as per your preference. 
-![](https://i.imgur.com/e8iigtP.png)
+
+   ![](https://i.imgur.com/e8iigtP.png)
  
  10. Click **Launch campaign**.
 
