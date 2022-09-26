@@ -56,6 +56,24 @@ module.exports = {
         "cookbooks/template-bots/lead-generation",
       ],
     },   
+
+    {
+      type: "category",
+      label: "Voice as a channel",
+      collapsed: true,
+      items: [
+        "cookbooks/voice-as-channel/overview",
+        "cookbooks/voice-as-channel/gettingstarted",
+        "cookbooks/voice-as-channel/understandingdelays",
+        "cookbooks/voice-as-channel/callforwarding",
+        "cookbooks/voice-as-channel/callforwarding",
+        "cookbooks/voice-as-channel/callrecording",
+        "cookbooks/voice-as-channel/dtmf",
+
+      ],
+    },   
+
+
     {
       type: "category",
       label: "WhatsApp As A Channel",
@@ -98,6 +116,9 @@ module.exports = {
       ]
     }
   ],
+
+
+
 
   platform_concepts: [
     {
@@ -277,7 +298,19 @@ module.exports = {
           ],           
     },
 
+    {
+      type: "category",
+      label: "Knowledgebase",
+      collapsed: true,
+      items: [
+       
+        
+        "platform_concepts/inbox/knowledge-base/edit-publish-articles",
+        "platform_concepts/inbox/knowledge-base/connecttosubdomain",
+        "platform_concepts/inbox/knowledge-base/managingcategories",
 
+      ],           
+},
 
         {
           type: "category",
