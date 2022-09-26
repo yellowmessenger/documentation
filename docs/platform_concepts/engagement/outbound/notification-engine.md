@@ -70,7 +70,7 @@ In order to use the Notification API you have to enable it on the platform as ex
 | `userDetails` | Object | Yes | Details of the user to be notified. Eg. Phone Number for WhatsApp. |
 | `notification`  (fields: `params`) | Object | Yes | Template details |
 | `media` | Object | Optional | Template Media URL, Quick Reply Payload can be passed here |
-| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API `customPayload` - Custom info. Will be sent back with delivery updates.  `postbackUrl` - To receive delivery updates on clients webhook. Configurable from platform for now. Please go to **Engage** > **Preferences** for setting up the `postbackUrl.` |
+| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - To receive delivery updates on clients webhook. Configurable from platform for now. <br/><br/>Please go to **Engage** > **Preferences** for setting up the `postbackUrl.` <br/><img src="https://i.imgur.com/8Y2NOvO.png" width="500"/>|
 
 ##### `userDetails` Object
 
