@@ -277,7 +277,19 @@ module.exports = {
           ],           
     },
 
+    {
+      type: "category",
+      label: "Knowledgebase",
+      collapsed: true,
+      items: [
+       
+        
+        "platform_concepts/inbox/knowledge-base/edit-publish-articles",
+        "platform_concepts/inbox/knowledge-base/connecttosubdomain",
+        "platform_concepts/inbox/knowledge-base/managingcategories",
 
+      ],           
+},
 
         {
           type: "category",
