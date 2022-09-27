@@ -1,6 +1,6 @@
 ---
 title: Voice overview
-sidebar_label : Voice overview
+sidebar_label : Overview
 ---
 
 :::info
