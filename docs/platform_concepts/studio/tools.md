@@ -523,7 +523,10 @@ The voice global options that are configured will be applicable for all the node
 -   **Node level**: You can configure different “recording max duration” for different nodes i.e. 10 seconds for address and 5 seconds for name node.
 
 
-
+:::info
+Voice features (and supporting documentation) are constantly getting improved and updated, there may be some issues/feature mis-match. 
+Please get in touch with the team incase of any queries.
+:::
   
   
 
