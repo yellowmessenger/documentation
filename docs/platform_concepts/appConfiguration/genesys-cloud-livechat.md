@@ -1,6 +1,6 @@
 ---
-title : Genesys Cloud Live Chat
-sidebar_label : Genesys Cloud Live Chat
+title : Genesys PureCloud Live Chat
+sidebar_label : Genesys PureCloud Live Chat
 ---
 
 ## Configuration
@@ -38,6 +38,13 @@ And finally we need the **hostUrl** of your account, **clientId**, **clientSecre
 In this integration you can use raise ticket node to create a conversation with genesys Cloud agent and once conversation initiates the user can talk to the genesys agent.
 
 <img src="https://cdn.yellowmessenger.com/vPfrT6YtytSl1649093680793.png" alt="drawing" width="60%"/>
+
+### Events
+Following are the events which are currently accommodated in the Integration:
+
+Event | Description
+----- | -----------
+genesys_cloud_agent_reply | This event reaches to bot when genesys agent sends a reply to the user.
 
 ### Limitations
 

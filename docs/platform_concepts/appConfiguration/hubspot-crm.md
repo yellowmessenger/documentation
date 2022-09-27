@@ -31,11 +31,12 @@ with email and phone number.
 
 
 
-### 3. Receive events from hubspot
+### 3. Events
+Following are the events which are currently accommodated in the Integration:
 
-You will receive an event to the bot when a new lead(contact) got created in your
-hubspot CRM. Based on that event you can confirm the user or you can design your
-custom flow according to your use case.
+Event | Description
+----- | -----------
+hubspot-contact-created | You will receive this event to the bot when a new lead(contact) got created in yourhubspot CRM. Based on that event you can confirm the user or you can design your custom flow according to your use case.
 
 <img src="https://i.imgur.com/r6s3N14.png" alt="drawing" width="60%"/>
 

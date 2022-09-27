@@ -46,7 +46,13 @@ Copy the webhook url from stripe integration card and Go to stripe Dashboard->De
 
 
 ### 3. Receiving event in yellow.ai Bot.
+Following are the events which are currently accommodated in the Integration:
+
 Go to yellow.ai dashboard->studio->Event hub->Custom->Activate stripe-payment-gateway.
+
+Event | Description
+----- | -----------
+Stripe Payment Status | In case of payments/refunds the status can be checked with these details.
  
 
 ![alt_text](https://i.imgur.com/X8d0WQR.png "image_tooltip")

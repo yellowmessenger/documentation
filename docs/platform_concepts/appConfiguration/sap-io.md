@@ -27,7 +27,7 @@ Various actions on the ticketing functionalities supported by SAP can be perform
 
 ## 3. Configuration
 
-Configuring the integration with SAP Cloud for customers is straightforward. Follow the steps defined below to integrate Zoho:
+Configuring the integration with SAP Cloud for customers is straightforward. Follow the steps defined below to integrate SAP Cloud:
 
 ### 3.1 Navigate to integration tab
 - Inside your project, navigate to the Configuration tab.
@@ -35,11 +35,10 @@ Configuring the integration with SAP Cloud for customers is straightforward. Fol
 - Search for **SAP Cloud For Customers**.  
 <img src="https://cdn.yellowmessenger.com/qOQKmIphucgi1663849229800.png" alt="drawing" width="60%"/>
 
-### 3.2 Connect to your Zoho account
+### 3.2 Connect to your SAP cloud account
 
-- Click **Connect**. 
-- You are now connected with your SAP cloud account..
-- Following the above steps will connect your Zoho CRM account with the yellow.ai platform.
+- Refer to the instructions provided in the page and then click **Connect**. 
+- You are now connected with your SAP cloud account.
 
 
 > Click [here](https://help.sap.com/doc/d0f9ba822c08405da7d88174b304df84/CLOUD/en-US/index.html) to learn about the action nodes used for this integration.
