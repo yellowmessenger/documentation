@@ -21,6 +21,15 @@ In this integration you can use raise ticket node to create a conversation with 
 
 <img src="https://cdn.yellowmessenger.com/vPfrT6YtytSl1649093680793.png" alt="drawing" width="60%"/>
 
+### Events
+Following are the events which are currently accommodated in the Integration:
+
+Event | Description
+----- | -----------
+intercom_message_reply | This event reaches to bot when intercom agent sends a reply to the user.
+intercom_agent_assigned | This event reaches to bot when any of the intercom agent accepts your ticket.
+ticket-closed | This event reaches to bot when intercom agent closes the user ticket.
+
 ## Support
 
 - The text and attachments (image, file, video) are being supported from both user and agent side.

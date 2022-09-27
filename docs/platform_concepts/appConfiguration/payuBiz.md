@@ -25,6 +25,12 @@ Using the action nodes, you can generate payment links according to your use cas
 
 ![alt_text](https://i.imgur.com/3No6pkK.png "image_tooltip")
 
+### 3. Events
+Following are the events which are currently accommodated in the Integration:
+
+Event | Description
+----- | -----------
+Payu Biz Payment Status | In case of payments/refunds the status can be checked with these details.
 
 # Configuration
 
