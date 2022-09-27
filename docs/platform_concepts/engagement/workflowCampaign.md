@@ -113,10 +113,13 @@ Invalid or incomplete (if *To* field not mapped) will throw as error message.
  
  10. Click **Launch campaign**.
 
-The workflow campaign will be executed on the selected segment as per the configuration.
+The workflow campaign will be executed on the selected segment as per the configuration. By default, the status will be in pending and then moves to completed post execution. 
+
+  ![](https://i.imgur.com/sUVITBo.jpg)
+
 
 :::note
-* Workflow Campaign might take some time complete due to the multi channel usage and other actions performed inside a user flow.
+* Workflow Campaign might take some time to process due to the multi channel usage and other actions performed inside a user flow.
 * You can download the report once the campaign is executed. The campaign status changes to *Completed*.
 :::
 
@@ -139,16 +142,56 @@ Ends | |
 
 ***
  
- ## 3. Workflow analytics
+ ## 3. Campaign reports
 
 Workflow Campaign provides a snapshot of your Ongoing and Completed campaigns. There are multiple places where the analytics is showcased with respect to different information on each.
 
 ![](https://i.imgur.com/r7QVs9M.png)
 
-Overview page, node level, and channel level.
 
-You can also download reports in a CSV format.
-Post completion of Workflow Campaigns users can also download the reports in a CSV format to view the individual notification status of the users on a the segment. Below is a sample screenshot of a report and the table describing the headers of the CSV file.
+### 3.1 View summary report
+
+On the **Engage** > **Outbound** > **Journeys** page, click on the campaign for which you want to see the report. Choose your preferred duration using the date range boxes on the top-right.
+
+   ![](https://i.imgur.com/SdZ6XOf.png)
+
+
+
+### 3.2 View channel-wise report
+
+To view channel-wise report, click View channel wise statistics.
+
+   ![](https://i.imgur.com/mRmVyYC.png)
+
+
+   ![](https://i.imgur.com/pOtMNMV.png)
+
+* Total notifications sent - Channel wise: This shows the pie chart view of the total notifications and the contribution of each channel in percentages.
+* User count: It shows the detailed break-up of message statuses (Sent, Delivered, Read, and Failed) for each channel.
+
+### 3.3 Downoad report
+
+To download a campaign report -  
+
+Post completion of Workflow Campaigns, you can also download the report in a CSV file.
+
+1. On the Journeys home page, navigate to the campaign and click the More options icon > **Request report**.
+
+   ![](https://i.imgur.com/hLVOJxs.png)
+
+2. An option to download the report is sent to your Slack. Click on the link.
+
+   ![](https://i.imgur.com/rahrp4A.png)
+
+3. Click **Download**.
+   
+   <img src="https://i.imgur.com/MCWoQpR.png" width="50%"/>
+
+
+Here is an example of a sample CSV file - 
+
+![](https://i.imgur.com/8NWIxEh.png)
+
 
 
 Metric | Description
