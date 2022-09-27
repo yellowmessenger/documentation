@@ -97,10 +97,6 @@ Node-level voice options can be configured for each node specifically. The globa
 -   **Global level**: You can select an STT/TTS engine globally so that you don’t have to configure it for each node.
 -   **Node level**: You can configure different “recording max duration” for different nodes i.e. 10 seconds for address and 5 seconds for name node.
 
-:::info
-Voice features (and supporting documentation) are constantly getting improved and updated, there may be some issues/feature mis-match. 
-Please get in touch with the team incase of any queries.
-:::
 
 Voice bot node options/settings are classified depending upon different uses as below:  
 
@@ -208,13 +204,15 @@ If they are configured at the node level, node level customisation takes priorit
 | **DTMF finish character**                              |  Character which defines when the bot must stop capturing. Supported finish characters - "*" and "#" |
 
 :::info
-
 > Either DTMF digital length or DTMF finish character can be configured.
-DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which the bot understands when to stop capturing:
-1) Digit Length is useful when you are capturing fixed-length data. Ex: Phone number.
-2) Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model id, application number. A user can define either "*" or "#" to inform that all Digits are added.
-3) DTMF timeout is a default selection (not open for configuration) and it is set to 10 seconds by default. It overrides both the above mention way. Ex: If the length is 11 and the user has only entered 6 characters in 10 seconds, it will only capture those and move ahead.
 
+DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which bot understand when to stop capturing:
+
+1) Digit Length is useful when you are capturing fixed length data. Ex: Phone number.
+
+2) Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model id, application number. A user can define either "*" or "#" to inform that all Digits are added.
+
+3) DTMF timeout is a default selection (not open for configuration) and it is set to 10 seconds by default. It overrides both the above mention way. Ex: If length is 11 and user has only enter 6 characters in 10 seconds, it will only capture those and move ahead.
 :::
 
 **Conversation related options**

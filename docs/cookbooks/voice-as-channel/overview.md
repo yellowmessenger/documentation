@@ -3,10 +3,6 @@ title: Voice overview
 sidebar_label : Voice overview
 ---
 
-:::info
-Voice features (and supporting documentation) are constantly getting improved and updated, there may be some issues/feature mis-match. 
-Please get in touch with the team incase of any queries.
-:::
 
 In the yellow cloud platform, voice can be configured with quick settings and reusable nodes to ensure that the bot development is much faster and error-free. 
 

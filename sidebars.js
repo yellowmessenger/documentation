@@ -269,41 +269,48 @@ module.exports = {
         "platform_concepts/growth/dashboards",
       ],
     },
-
-
-
     {
       type: "category",
       label: "Inbox",
       collapsed: true,
       items: [
-
-        //overview 
         "platform_concepts/inbox/inbox",
-        // monitor doc - create new 
-
-        // chats doc - create new 
-
-        // tickets doc - create new 
-
-        // analytics doc - create new 
-
-        // knowledgebase 
+        "platform_concepts/inbox/manage-support-agent",
+        "platform_concepts/inbox/types-of-chat",
+        "platform_concepts/inbox/tickets-assignment-logic",
+        "platform_concepts/inbox/custom-usecases",
+        "platform_concepts/inbox/whatsapp-24hr-window-policy",
+        "platform_concepts/inbox/email-ticketing",
         {
           type: "category",
-          label: "Knowledgebase",
+          label: "Reports",
           collapsed: true,
           items: [
-            "platform_concepts/inbox/knowledge-base/edit-publish-articles",
-            "platform_concepts/inbox/knowledge-base/connecttosubdomain",
-            "platform_concepts/inbox/knowledge-base/managingcategories",
+           
+            
+            "platform_concepts/inbox/reports/chat-report-metrics",
+            "platform_concepts/inbox/reports/chat-agent-activity-report",
+            "platform_concepts/inbox/reports/chat-agent-performance-report",
+            "platform_concepts/inbox/reports/chat-archives-report",
+            "platform_concepts/inbox/reports/ticket-agent-performance-report",
+            "platform_concepts/inbox/reports/ticket-archive-report",
           ],           
     },
-        // contacts doc - create new 
 
-
-        // settings 
+    {
+      type: "category",
+      label: "Knowledgebase",
+      collapsed: true,
+      items: [
+       
         
+        "platform_concepts/inbox/knowledge-base/edit-publish-articles",
+        "platform_concepts/inbox/knowledge-base/connecttosubdomain",
+        "platform_concepts/inbox/knowledge-base/managingcategories",
+
+      ],           
+},
+
         {
           type: "category",
           label: "Inbox Settings",
@@ -337,42 +344,16 @@ module.exports = {
                "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
               ],
             },
+          
+          
           ],
         },
-
-
-        // restructure 
-
-        "platform_concepts/inbox/manage-support-agent",
-        "platform_concepts/inbox/types-of-chat",
-        "platform_concepts/inbox/tickets-assignment-logic",
-        "platform_concepts/inbox/custom-usecases",
-        "platform_concepts/inbox/whatsapp-24hr-window-policy",
-        "platform_concepts/inbox/email-ticketing",
-
-        {
-          type: "category",
-          label: "Reports",
-          collapsed: true,
-          items: [
-           
-            
-            "platform_concepts/inbox/reports/chat-report-metrics",
-            "platform_concepts/inbox/reports/chat-agent-activity-report",
-            "platform_concepts/inbox/reports/chat-agent-performance-report",
-            "platform_concepts/inbox/reports/chat-archives-report",
-            "platform_concepts/inbox/reports/ticket-agent-performance-report",
-            "platform_concepts/inbox/reports/ticket-archive-report",
-          ],           
-    },
- // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",   
+      
+         
+            // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",   
         
       ],
     },
-
-
-    //next section
-
     {
       type: "category",
       label: "Mobile SDK",
