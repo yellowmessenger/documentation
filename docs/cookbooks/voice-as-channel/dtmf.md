@@ -25,11 +25,12 @@ To configure DTMF, you can use the below-mentioned node level options:
 
 :::info
 
-> Either DTMF digital length or DTMF finish character can be configured.
-DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which the bot understands when to stop capturing:
-1) Digit Length is useful when you are capturing fixed-length data. Ex: Phone number.
-2) Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model id, application number. A user can define either "*" or "#" to inform that all Digits are added.
-3) DTMF timeout is a default selection (not open for configuration) and it is set to 10 seconds by default. It overrides both the above mention way. Ex: If the length is 11 and the user has only entered 6 characters in 10 seconds, it will only capture those and move ahead.
+> Either DTMF digital length or DTMF finish character can be configured.   
+
+DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which the bot understands when to stop capturing:   
+1. Digit Length is useful when you are capturing fixed-length data. Ex: Phone number.  
+2. Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model id, application number. A user can define either "*" or "#" to inform that all Digits are added.  
+3. DTMF timeout is a default selection (not open for configuration) and it is set to 10 seconds by default. It overrides both the above mention way. Ex: If the length is 11 and the user has only entered 6 characters in 10 seconds, it will only capture those and move ahead.
 
 :::
     
@@ -40,7 +41,8 @@ DTMF can be used in following ways while building a voice bot:
 
 1. Business requirements specifically know when and where to collect DTMF input as part of the conversation - via. number capture.
  The components which can be used to build such a flow are Question/Text node and DTMF Node Level Options.
-Example: Question/Text node + Call forward
+Example: Question/Text node + Call forward.  
+
 > If the bot wants to collect numeric input for a mobile number or application number. As a part of bot logic bot can also collect this information via DTMF (saying “Please input your 7-digit application number to proceed ahead.”) along with a voice response from the user.
 
 2.  As a fallback mechanism bot allow the user to enter numeric response using DTMF. Also, if the bot is not able to correctly understand due to background noise, the input can be DTMF oriented.

@@ -66,9 +66,8 @@ module.exports = {
         "cookbooks/voice-as-channel/gettingstarted",
         "cookbooks/voice-as-channel/understandingdelays",
         "cookbooks/voice-as-channel/callforwarding",
-        "cookbooks/voice-as-channel/dtmf",
-
         "cookbooks/voice-as-channel/callrecording",
+        "cookbooks/voice-as-channel/dtmf",
 
       ],
     },   
