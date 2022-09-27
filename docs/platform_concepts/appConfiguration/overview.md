@@ -80,13 +80,14 @@ Live Chat consists of integrations with tools used for managing agent connectivi
 2. Avaya Live Chat - Now users can connect to the live agents for their queries using Avaya.
 3. Custom Live Agent - Build a conversation bot that helps to connect to human support using Custom Live Agent.
 4. [Freshchat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/freshdesk/) - Build a conversational bot to connect with live agents via freshchat.
-5. [Genesys Cloud Live Agent](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys-cloud-livechat/) - Build a conversational bot to connect with live agents via Genesys cloud. Create a custom bot for your own team to speed up teamwork.
+5. [Genesys PureCloud Live Agent](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys-cloud-livechat/) - Build a conversational bot to connect with live agents via Genesys PureCloud. Create a custom bot for your own team to speed up teamwork.
 6. [Intercom Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/intercom-livechat/) - Integrate with Intercom account for seamless live agent transfer.
 7. Kapture CRM Live Chat - Integrate with Intercom account for seamless live agent transfer.
 8. Locobuzz Live Chat - Integrate using Locobuzz to connect with live agents for their queries though conversational bot.
 9. [Salesforce Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforce-service-cloud/) - Build a conversation bot that helps to connect to LiveAgent via Salesforce Live Chat.
 10. Talisma Live Chat - Build a conversational bot to connect with live agents via Talisma.
 11. [Zoho Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zoho-live-chat) - Integrate with Zoho Live Chat for seamless transfer of conversations.
+12. [Genesys Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys/) - Build a conversational bot to connect with live agents via Genesys. Create a custom bot for your own team to speed up teamwork.
 
 ---
 ## 7. Payment

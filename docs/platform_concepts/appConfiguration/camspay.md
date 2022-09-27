@@ -38,4 +38,11 @@ Before going to oauth you have to create an account in Camspay dashboard, Get th
 Copy the webhook url from the camspay integration card and paste in the redirectUrl field variable in the action node.
 
 ### 3. Receiving event in yellow.ai Bot.
+Following are the events which are currently accommodated in the Integration:
+
 Go to yellow.ai dashboard->studio->Event hub->Custom->Activate camspay-payment-gateway.
+
+
+Event | Description
+----- | -----------
+Camspay Payment Status | In case of payments/refunds the status can be checked with these details.

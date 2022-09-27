@@ -45,6 +45,14 @@ After you click accept, a webhook will automatically be created on your SalesIQ 
 
 <img src="https://cdn.yellowmessenger.com/BYpyYutCB4G21659344783118.png" alt="drawing" width="100%"/>
 
+### Events
+Following are the events which are currently accommodated in the Integration:
+
+Event | Description
+----- | -----------
+zoho_operator_replied | This event reaches to bot when a salesIQ agent replies to the user.
+ticket-closed | This event reaches to bot when salesIQ agent closes the user ticket.
+
 ## Limitations
 
 - Images, audio or video attachments are being supported only from the user side currently. Attachments from agents are not supported.

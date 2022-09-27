@@ -535,6 +535,7 @@ module.exports = {
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/freshteam",
         "platform_concepts/appConfiguration/genesys-cloud-livechat",
+        "platform_concepts/appConfiguration/genesys",
         "platform_concepts/appConfiguration/google-calendar",
         "platform_concepts/appConfiguration/google-sheets",
         "platform_concepts/appConfiguration/hubspot-crm",
