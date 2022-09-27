@@ -65,9 +65,25 @@ module.exports = {
         "cookbooks/voice-as-channel/overview",
         "cookbooks/voice-as-channel/gettingstarted",
         "cookbooks/voice-as-channel/understandingdelays",
-        "cookbooks/voice-as-channel/callforwarding",
-        "cookbooks/voice-as-channel/callrecording",
-        "cookbooks/voice-as-channel/dtmf",
+
+        {
+          type: "category",
+          label: "Use-cases",
+          collapsed: true,
+          items: [
+            "cookbooks/voice-as-channel/callforwarding",
+            "cookbooks/voice-as-channel/callrecording",
+            "cookbooks/voice-as-channel/dtmf",
+            "cookbooks/voice-as-channel/stt",
+            "cookbooks/voice-as-channel/tts",
+            "cookbooks/voice-as-channel/boostphrases",
+            "cookbooks/voice-as-channel/localisation",
+            "cookbooks/voice-as-channel/intentdetection",
+            "cookbooks/voice-as-channel/excuteandswitchflow",
+            "cookbooks/voice-as-channel/Miscellaneous",
+          ],
+        },
+
 
       ],
     },   
