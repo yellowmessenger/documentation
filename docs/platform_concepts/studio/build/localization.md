@@ -1,6 +1,6 @@
 ---
 title: Translation
-sidebar_label: Translation
+sidebar_label: Language localisation
 ---
 
 

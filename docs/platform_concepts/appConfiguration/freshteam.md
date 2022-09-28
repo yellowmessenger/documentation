@@ -23,7 +23,8 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 |   Sort       |  String        |first_name/last_name/employee_id      |
 |   SortType       |  String        |   asc/desc       |
 
-**Return Value**
+**Return Value**  
+
 List all employee's integration node returns the value of array type, use array variable as an output variable.
 
 ### 1.2 Retrieve employee information
@@ -42,7 +43,8 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 
 
 
-**Return Value**
+**Return Value**  
+
 Retrieve employee information integration node returns the value of object type, use object variable as an output variable.
 
 
@@ -54,7 +56,8 @@ List all time off types integration node helps in retrieving all the time off ty
 Only users in HR Partner, Admin, and Account Admin roles can access this API.
 :::
 
-**Return Value**
+**Return Value**  
+
 List all time off types integration node returns the value of array type, use array variable as an output variable.
 
 ### 1.4 List all time off requests
@@ -72,7 +75,7 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 |   EmployeeID       |  Number        |5000402776      |
 
 
-**Return Value**
+**Return Value**  
 
 List all time off requests integration node returns the value of array type, use array variable as an output variable.
 
@@ -93,7 +96,7 @@ Create a time off request integration node helps in applying for leave(time off)
 |   AddToCalendar       |  Boolean        |True|
 |   AutoDeclineEvents       |  Boolean        |True|
 
-**Return Value**
+**Return Value**  
 Create a time off request integration node returns the value of object type, use object variable as an output variable.
 
 ### 1.6 Approve a time off request
@@ -110,7 +113,8 @@ Only users in HR Partner, Admin, Reporting Manager, and Account Admin roles can 
 | -------- | -------- | -------- |
 |   TimeoffID       |  Number        |5000402776      |
 
-**Return Value**
+**Return Value**    
+
 Approve a time off request integration node returns the value of object type, use object variable as an output variable.
 
 ### 1.7 Cancel a time off request
@@ -122,7 +126,8 @@ Cancel a time off request integration node helps in rejecting a leave based on t
 | -------- | -------- | -------- |
 |   TimeoffID       |  Number        |5000402776      |
 
-**Return Value**
+**Return Value**  
+
 Cancel a time off request integration node returns the value of object type, use object variable as an output variable.
 
 
@@ -136,7 +141,8 @@ List all job postings integration node helps in retrieving all the available ope
 | -------- | -------- | -------- |
 |   Title       |  String        |Sample Job Posting      |
 
-**Return Value**
+**Return Value**  
+
 List all time off requests integration node returns the value of array type, use array variable as an output variable.
 
 ### 1.9 Retrieve Job Posting information
@@ -150,10 +156,11 @@ Retrieve Job posting information integration node helps in retrieving available 
 |   JobID       |  Number        |5000402776      |
 
 
-**Return Value**
+**Return Value**  
+
 Retrieve Job posting information integration node returns the value of object type, use object variable as an output variable.
 
-## 2. Configuration
+## 2. Configure freshteam
 
 Configuring the integration with Freshteam is straightforward. Follow the steps below to integrate Freshteam:
 

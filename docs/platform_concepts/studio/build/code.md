@@ -1,6 +1,6 @@
 ---
 title: Function
-sidebar_label : Function
+sidebar_label : Function (code)
 ---
 
 In this article, you will learn: 
