@@ -50,7 +50,7 @@ Chat tickets raised in this manner will be assigned to their preferred agents. T
 
 ### 2.1 Duplicate and delete options in template manager
 
-* ****: You can now reuse an existing template by just duplicating or cloning it. This helps reduce your efforts in a new template from scratch that has similar content of an existing template.
+* **Duplicate template**: You can now reuse an existing template by just duplicating or cloning it. This helps reduce your efforts in a new template from scratch that has similar content of an existing template.
 
 * **Delete rejected templates**: To avoid seeing redundant and irrelevant templates on the Overview page, you can now use this option to delete specific templates or clean up all rejected templates at once.
 
