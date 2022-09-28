@@ -1,16 +1,7 @@
 ---
-title: September updates
-sidebar_label: What's New 
-featured: true
+title: Sep updates
+sidebar_label: Overview
 ---
-
-
-Here, at Yellow.ai, our Product and Developement team work hard to consistently improve the product to help you solve numerous use cases and provide a better user experience.
-
-Stay tuned to know what's going on with Yellow.ai products.
-
-***
-
 
 ## 1. Inbox updates
 
