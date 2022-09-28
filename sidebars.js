@@ -153,7 +153,7 @@ module.exports = {
         "platform_concepts/studio/overview",
         {
           type: "category",
-          label: "Build",
+          label: "Build your bot",
           collapsed: true,
           items: [
             "platform_concepts/studio/build/journeys",
@@ -181,7 +181,7 @@ module.exports = {
 
         {
           type: "category",
-          label: "Train",
+          label: "Training bot data ",
           collapsed: true,
           items: [
             "platform_concepts/studio/train/intents",

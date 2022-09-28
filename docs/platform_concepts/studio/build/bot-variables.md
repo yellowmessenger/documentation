@@ -1,6 +1,6 @@
 ---
 title: Variables
-sidebar_label : Variables
+sidebar_label : Bot Variables
 ---
 
 
