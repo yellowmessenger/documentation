@@ -287,6 +287,7 @@ module.exports = {
     },
 
 
+// Inbox 
 
     {
       type: "category",
@@ -296,27 +297,78 @@ module.exports = {
 
         //overview 
         "platform_concepts/inbox/inbox",
-        // monitor doc - create new 
+        // monitor doc 
+"platform_concepts/inbox/monitor",
 
-        // chats doc - create new 
+        // chats doc 
+        {
+          type: "category",
+          label: "Chat",
+          collapsed: true,
+          items: [
+"platform_concepts/inbox/chats/types-of-chat",
+"platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
+          ],
+    },
 
-        // tickets doc - create new 
+        // tickets doc 
+        {
+          type: "category",
+          label: "Tickets",
+          collapsed: true,
+          items: [
+"platform_concepts/inbox/tickets/email-ticketing",
+          ],
+    },
 
-        // analytics doc - create new 
+        // analytics - reports  doc  
+        {
+          type: "category",
+          label: "Analytics and Reports",
+          collapsed: true,
+          items: [
+            {
+              type: "category",
+              label: "Analytics",
+              collapsed: true,
+              items: [
+// to be added 
+                
+              ],
+            },
+
+            {
+              type: "category",
+              label: "Reports",
+              collapsed: true,
+              items: [
+"platform_concepts/inbox/analytics-reports/reports/reports",
+"platform_concepts/inbox/analytics-reports/reports/chat-agent-activity-report",
+"platform_concepts/inbox/analytics-reports/reports/chat-agent-performance-report",
+"platform_concepts/inbox/analytics-reports/reports/chat-archives-report",
+"platform_concepts/inbox/analytics-reports/reports/chat-report-metrics",
+"platform_concepts/inbox/analytics-reports/reports/ticket-agent-performance-report",
+"platform_concepts/inbox/analytics-reports/reports/ticket-archive-report",
+              ],
+            },
+          ],
+        },
 
         // knowledgebase 
+
         {
           type: "category",
           label: "Knowledgebase",
           collapsed: true,
           items: [
             "platform_concepts/inbox/knowledge-base/edit-publish-articles",
-            "platform_concepts/inbox/knowledge-base/connecttosubdomain",
+           // "platform_concepts/inbox/knowledge-base/connecttosubdomain",
             "platform_concepts/inbox/knowledge-base/managingcategories",
           ],           
-    },
-        // contacts doc - create new 
+       },
 
+        // contacts doc - create new 
+"platform_concepts/inbox/contacts",
 
         // settings 
         
@@ -325,64 +377,69 @@ module.exports = {
           label: "Inbox Settings",
           collapsed: true,
           items: [
+            //productivity tools
             {
               type: "category",
-              label: "Agent Settings",
+              label: "Productivity tools Settings",
               collapsed: true,
               items: [
-                "platform_concepts/inbox/inbox-settings/agent-configuration/chat_working_hours",
-                "platform_concepts/inbox/inbox-settings/agent-configuration/custom-status",
-                "platform_concepts/inbox/inbox-settings/agent-configuration/csat",
-                "platform_concepts/inbox/inbox-settings/agent-configuration/canned-responses",
-                "platform_concepts/inbox/inbox-settings/agent-configuration/agent-actions",
-                "platform_concepts/inbox/inbox-settings/agent-configuration/default-agent-statuses",
+//add realtive paths here
+              ],
+            },
+
+            //teams
+            {
+              type: "category",
+              label: "Teams settings",
+              collapsed: true,
+              items: [
+//add realtive paths here
+
 
               ],
             },
+
+            //workflows
             {
               type: "category",
-              label: "Chat & Email Settings",
+              label: "Workflow Settings",
               collapsed: true,
               items: [
-               "platform_concepts/inbox/inbox-settings/chats-configuration/chat_custom_fields",
-               "platform_concepts/inbox/inbox-settings/chats-configuration/offline-chat",
-               "platform_concepts/inbox/inbox-settings/chats-configuration/tags",
-               "platform_concepts/inbox/inbox-settings/chats-configuration/chat_auto_translate",
-               "platform_concepts/inbox/inbox-settings/chats-configuration/chat-queue",
-               "platform_concepts/inbox/inbox-settings/chats-configuration/chat-timeout",
-               "platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings",
+//add realtive paths here
+
+"platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields",
+"platform_concepts/inbox/inbox-settings/workflows/chat-queue",
+"platform_concepts/inbox/inbox-settings/workflows/csat",
+"platform_concepts/inbox/inbox-settings/workflows/custom-status",
+"platform_concepts/inbox/inbox-settings/workflows/default-agent-statuses",
+"platform_concepts/inbox/inbox-settings/workflows/default-agent-statuses",
+"platform_concepts/inbox/inbox-settings/workflows/offline-chat",
+"platform_concepts/inbox/inbox-settings/workflows/tags",
+"platform_concepts/inbox/inbox-settings/workflows/video-call-settings",
+
               ],
             },
+
+            //automation
+            {
+              type: "category",
+              label: "Automation Settings",
+              collapsed: true,
+              items: [
+//add realtive paths here
+              ],
+            },
+
+ //add realtive paths here for security
+"platform_concepts/inbox/inbox-settings/security",
           ],
         },
 
+// add other files
+"platform_concepts/inbox/manage-support-agent",
+"platform_concepts/inbox/chat-timeout",
+"platform_concepts/inbox/custom-usecases",
 
-        // restructure 
-
-        "platform_concepts/inbox/manage-support-agent",
-        "platform_concepts/inbox/types-of-chat",
-        "platform_concepts/inbox/tickets-assignment-logic",
-        "platform_concepts/inbox/custom-usecases",
-        "platform_concepts/inbox/whatsapp-24hr-window-policy",
-        "platform_concepts/inbox/email-ticketing",
-
-        {
-          type: "category",
-          label: "Reports",
-          collapsed: true,
-          items: [
-           
-            
-            "platform_concepts/inbox/reports/chat-report-metrics",
-            "platform_concepts/inbox/reports/chat-agent-activity-report",
-            "platform_concepts/inbox/reports/chat-agent-performance-report",
-            "platform_concepts/inbox/reports/chat-archives-report",
-            "platform_concepts/inbox/reports/ticket-agent-performance-report",
-            "platform_concepts/inbox/reports/ticket-archive-report",
-          ],           
-    },
- // "platform_concepts/inbox/inbox-settings/chats-configuration/types-of-chat",   
-        
       ],
     },
 
