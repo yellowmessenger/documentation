@@ -654,6 +654,7 @@ module.exports = {
   ],
   updates: [
     "updates/overview",
+    "updates/2022/sep_updates",
     {
       type: "category",
       label: "2022 Updates",
