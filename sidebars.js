@@ -686,6 +686,7 @@ module.exports = {
         "platform_concepts/appConfiguration/power-bi",
         "platform_concepts/appConfiguration/razorpay",
         "platform_concepts/appConfiguration/sap-io",
+        "platform_concepts/appConfiguration/salesforcelivechat",
         "platform_concepts/appConfiguration/salesforce-service-cloud",
         "platform_concepts/appConfiguration/service-now",
         "platform_concepts/appConfiguration/sftp",

@@ -44,3 +44,6 @@ Follow the steps below to customize small talk:
 
 ![](https://i.imgur.com/wrpbXNQ.png)
 
+**Result**  
+
+<img src="https://i.imgur.com/2fKoHUa.png" alt="drawing" width="60%"/>
