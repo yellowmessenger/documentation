@@ -563,6 +563,7 @@ module.exports = {
       items: [
         "platform_concepts/appConfiguration/overview",
         "platform_concepts/appConfiguration/azure-ad",
+        "platform_concepts/appConfiguration/aws-s3",
         "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/clevertap",
         "platform_concepts/appConfiguration/freshdesk",
@@ -582,6 +583,7 @@ module.exports = {
         "platform_concepts/appConfiguration/razorpay",
         "platform_concepts/appConfiguration/sap-io",
         "platform_concepts/appConfiguration/salesforce-service-cloud",
+        "platform_concepts/appConfiguration/saleforce-live-chat.md",
         "platform_concepts/appConfiguration/service-now",
         "platform_concepts/appConfiguration/sftp",
         "platform_concepts/appConfiguration/shopify",
@@ -595,7 +597,6 @@ module.exports = {
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
-        "platform_concepts/appConfiguration/aws-s3",
         "platform_concepts/appConfiguration/exposing-integration-to-app",
       ],
     },
