@@ -1,6 +1,6 @@
 ---
 title: Getting started with flows
-sidebar_label: Flow
+sidebar_label: Understand flows
 ---
 
 > The words **Flows** and **Journeys** are used synonymously.

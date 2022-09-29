@@ -1,16 +1,7 @@
 ---
-title: September updates
-sidebar_label: What's New 
-featured: true
+title: Sep updates
+sidebar_label: Overview
 ---
-
-
-Here, at Yellow.ai, our Product and Developement team work hard to consistently improve the product to help you solve numerous use cases and provide a better user experience.
-
-Stay tuned to know what's going on with Yellow.ai products.
-
-***
-
 
 ## 1. Inbox updates
 
@@ -59,7 +50,7 @@ Chat tickets raised in this manner will be assigned to their preferred agents. T
 
 ### 2.1 Duplicate and delete options in template manager
 
-* ****: You can now reuse an existing template by just duplicating or cloning it. This helps reduce your efforts in a new template from scratch that has similar content of an existing template.
+* **Duplicate template**: You can now reuse an existing template by just duplicating or cloning it. This helps reduce your efforts in a new template from scratch that has similar content of an existing template.
 
 * **Delete rejected templates**: To avoid seeing redundant and irrelevant templates on the Overview page, you can now use this option to delete specific templates or clean up all rejected templates at once.
 
