@@ -287,7 +287,7 @@ module.exports = {
     },
 
 
-// Inbox 
+// Inbox Section 
 
     {
       type: "category",
@@ -295,33 +295,38 @@ module.exports = {
       collapsed: true,
       items: [
 
-        //overview 
+        //1. Overview 
         "platform_concepts/inbox/inbox",
-        // monitor doc 
-"platform_concepts/inbox/monitor",
-
-        // chats doc 
+        //2. monitor doc 
+        "platform_concepts/inbox/monitor",
+        //3. chats doc 
         {
           type: "category",
           label: "Chat",
           collapsed: true,
           items: [
-"platform_concepts/inbox/chats/types-of-chat",
-"platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
-          ],
-    },
-
-        // tickets doc 
+            "platform_concepts/inbox/chats/getstartedwithlivechat",
+            "platform_concepts/inbox/chats/types-of-chat",
+            "platform_concepts/inbox/chats/chatsearch",
+            "platform_concepts/inbox/tickets/bulkaction",
+            "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
+            "platform_concepts/inbox/chats/instagrampolicy",
+                 ],
+         },
+        //4. tickets doc 
         {
           type: "category",
           label: "Tickets",
           collapsed: true,
           items: [
-"platform_concepts/inbox/tickets/email-ticketing",
-          ],
-    },
-
-        // analytics - reports  doc  
+            "platform_concepts/inbox/tickets/setupandconfig",
+            "platform_concepts/inbox/tickets/email-ticketing",
+            "platform_concepts/inbox/tickets/manualticket",
+            "platform_concepts/inbox/tickets/searchandfilter",
+            "platform_concepts/inbox/tickets/bulkaction",
+                  ],
+        },
+        //5. analytics - reports  
         {
           type: "category",
           label: "Analytics and Reports",
@@ -332,119 +337,127 @@ module.exports = {
               label: "Analytics",
               collapsed: true,
               items: [
-// to be added 
-                
-              ],
+            "platform_concepts/inbox/analytics-reports/analytics/agents",
+            "platform_concepts/inbox/analytics-reports/analytics/chats",
+            "platform_concepts/inbox/analytics-reports/analytics/tickets",
+                    ],
             },
-
             {
               type: "category",
               label: "Reports",
               collapsed: true,
               items: [
-"platform_concepts/inbox/analytics-reports/reports/reports",
-"platform_concepts/inbox/analytics-reports/reports/chat-agent-activity-report",
-"platform_concepts/inbox/analytics-reports/reports/chat-agent-performance-report",
-"platform_concepts/inbox/analytics-reports/reports/chat-archives-report",
-"platform_concepts/inbox/analytics-reports/reports/chat-report-metrics",
-"platform_concepts/inbox/analytics-reports/reports/ticket-agent-performance-report",
-"platform_concepts/inbox/analytics-reports/reports/ticket-archive-report",
+            "platform_concepts/inbox/analytics-reports/reports/reports",
+            {
+              type: "category",
+              label: "Chats",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-activity-report",
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-performance-report",
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
               ],
             },
+            {
+              type: "category",
+              label: "Tickets",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/analytics-reports/reports/tickets/ticket-agent-performance-report",
+                "platform_concepts/inbox/analytics-reports/reports/tickets/ticket-archive-report",    
+              ],
+            },
+              ],
+             },
           ],
         },
-
-        // knowledgebase 
-
+        //6. knowledgebase 
         {
           type: "category",
           label: "Knowledgebase",
           collapsed: true,
           items: [
             "platform_concepts/inbox/knowledge-base/edit-publish-articles",
-           // "platform_concepts/inbox/knowledge-base/connecttosubdomain",
             "platform_concepts/inbox/knowledge-base/managingcategories",
-          ],           
+                 ],           
        },
 
-        // contacts doc - create new 
-"platform_concepts/inbox/contacts",
-
-        // settings 
-        
+        //7. contacts doc
+        "platform_concepts/inbox/contacts",
+        //8. settings 
         {
           type: "category",
           label: "Inbox Settings",
           collapsed: true,
           items: [
+          //teams
+          {
+            type: "category",
+            label: "Teams settings",
+            collapsed: true,
+            items: [
+            //add realtive paths here
+            "platform_concepts/inbox/inbox-settings/team/agents",
+            "platform_concepts/inbox/inbox-settings/team/groups",
+            "platform_concepts/inbox/inbox-settings/team/chat_working_hours",
+                    ],
+          },
             //productivity tools
-            {
-              type: "category",
-              label: "Productivity tools Settings",
-              collapsed: true,
-              items: [
-//add realtive paths here
-              ],
+          {
+            type: "category",
+            label: "Productivity tools settings",
+            collapsed: true,
+            items: [
+            //add realtive paths here
+            "platform_concepts/inbox/inbox-settings/productivitytools/productivity-tools",
+            "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
+            "platform_concepts/inbox/inbox-settings/productivitytools/knowledgebase",
+            "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
+                   ],
+          },
+          //workflows
+          {
+            type: "category",
+            label: "Workflow settings",
+            collapsed: true,
+            items: [
+            "platform_concepts/inbox/inbox-settings/workflows/custom-status",
+            "platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields",
+            "platform_concepts/inbox/inbox-settings/workflows/sla",
+            "platform_concepts/inbox/inbox-settings/workflows/chat-queue",
+            "platform_concepts/inbox/inbox-settings/workflows/offline-chat",
+            "platform_concepts/inbox/inbox-settings/workflows/chattranscript",
+            "platform_concepts/inbox/inbox-settings/workflows/tags",
+            "platform_concepts/inbox/inbox-settings/workflows/csat",
+            "platform_concepts/inbox/inbox-settings/workflows/video-call-settings",
+            "platform_concepts/inbox/inbox-settings/workflows/emailticketing",
+                    ],
             },
-
-            //teams
-            {
-              type: "category",
-              label: "Teams settings",
-              collapsed: true,
-              items: [
-//add realtive paths here
-
-
-              ],
-            },
-
-            //workflows
-            {
-              type: "category",
-              label: "Workflow Settings",
-              collapsed: true,
-              items: [
-//add realtive paths here
-
-"platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields",
-"platform_concepts/inbox/inbox-settings/workflows/chat-queue",
-"platform_concepts/inbox/inbox-settings/workflows/csat",
-"platform_concepts/inbox/inbox-settings/workflows/custom-status",
-"platform_concepts/inbox/inbox-settings/workflows/default-agent-statuses",
-"platform_concepts/inbox/inbox-settings/workflows/default-agent-statuses",
-"platform_concepts/inbox/inbox-settings/workflows/offline-chat",
-"platform_concepts/inbox/inbox-settings/workflows/tags",
-"platform_concepts/inbox/inbox-settings/workflows/video-call-settings",
-
-              ],
-            },
-
             //automation
-            {
-              type: "category",
-              label: "Automation Settings",
-              collapsed: true,
-              items: [
-//add realtive paths here
-              ],
-            },
-
- //add realtive paths here for security
-"platform_concepts/inbox/inbox-settings/security",
+          {
+            type: "category",
+            label: "Automation settings",
+            collapsed: true,
+            items: [
+            "platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic",
+            "platform_concepts/inbox/inbox-settings/automation/chat_auto_translate",
+            "platform_concepts/inbox/inbox-settings/automation/google-translate-api-inbox",
+            "platform_concepts/inbox/inbox-settings/automation/agent-actions",
+            "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
+                   ],
+          },
+          //security
+            "platform_concepts/inbox/inbox-settings/security",
           ],
         },
-
-// add other files
-"platform_concepts/inbox/manage-support-agent",
-"platform_concepts/inbox/chat-timeout",
-"platform_concepts/inbox/custom-usecases",
-
+    //other files
+    "platform_concepts/inbox/custom-usecases",
       ],
     },
 
 
-    //next section
+    //next section - Mobile SDK
 
     {
       type: "category",

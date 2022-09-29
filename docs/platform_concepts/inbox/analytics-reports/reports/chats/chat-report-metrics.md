@@ -1,6 +1,6 @@
 ---
-title: Chat Report Metrics 101
-sidebar_label : Chat Report Metrics
+title: Chat Report Metrics explained
+sidebar_label : Chat report metrics
 ---
 
 ### Average Response Time [ Archive Report]

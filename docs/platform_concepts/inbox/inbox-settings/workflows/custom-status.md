@@ -1,6 +1,6 @@
 ---
 title: Custom Status
-sidebar_label : Custom Status
+sidebar_label : Custom status
 ---
 
 Custom status is a way of creating or adding new status for an agent during the chat's schedule he has with the user when they are routed to an agent to talk to or assist in resolving queries. With the help of this, an agent can set his status depending on this availability from available to busy or other options.

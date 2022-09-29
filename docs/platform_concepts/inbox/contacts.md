@@ -1,6 +1,6 @@
 ---
-title: Contacts
-sidebar_label : Contacts
+title: Contacts (Proactive notifications)
+sidebar_label : Contacts 
 ---
 
 

@@ -1,10 +1,10 @@
 ---
 title: Managing categories, folders and articles
-sidebar_label : Managing categories, folders and articles
+sidebar_label : Manage categories, folders & articles
 ---
 
 The knowledge base is another medium to automate the incoming support queries by making it easier for the customers to find information about their issues which in turn reduces the number of tickets raised for the support agent
-Knowledge bases are designed in a way to make customers find information easily without needing help. Hence the knowledge base has to be structured in a well defined & intuitive manner
+Knowledge bases are designed in a way to make customers find information easily without needing help. Hence the knowledge base has to be structured in a well defined & intuitive manner.
 
 Inbox's knowledge base hierarchy is as follows;
 
