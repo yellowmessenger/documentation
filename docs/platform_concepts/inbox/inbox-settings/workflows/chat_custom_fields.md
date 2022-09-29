@@ -1,6 +1,6 @@
 ---
 title: Chat Custom fields
-sidebar_label : Chat Custom fields
+sidebar_label : Chat custom fields
 ---
 
 

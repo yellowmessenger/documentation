@@ -1,6 +1,6 @@
 ---
-title: Email Ticketing
-sidebar_label : Email Ticketing
+title: Getting started with email ticketing 
+sidebar_label : Email ticketing introduction
 ---
 
 This is an Omni channel Customer support suite. All  the queries raised by customer through the email channel can now be complied and listed in a unified user interface. Agents can then select an email that needs attention and reply to it. A way to make sure all your tickets get the attention they require, on time.

@@ -1,6 +1,6 @@
 ---
 title: Canned Responses
-sidebar_label : Canned Responses
+sidebar_label : Canned responses
 ---
 
 
