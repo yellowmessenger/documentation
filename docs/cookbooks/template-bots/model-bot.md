@@ -2,7 +2,7 @@
 id: model-bot
 title: Model Bot
 sidebar_label: Model Bot
-featured: true
+featured: false
 ---
 
 This document describes the Model Bot, a bot build for the following purposes : 

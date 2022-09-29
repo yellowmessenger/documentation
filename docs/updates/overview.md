@@ -59,7 +59,7 @@ Chat tickets raised in this manner will be assigned to their preferred agents. T
 
 ### 2.1 Duplicate and delete options in template manager
 
-* ****: You can now reuse an existing template by just duplicating or cloning it. This helps reduce your efforts in a new template from scratch that has similar content of an existing template.
+* **Duplicate template**: You can now reuse an existing template by just duplicating or cloning it. This helps reduce your efforts in a new template from scratch that has similar content of an existing template.
 
 * **Delete rejected templates**: To avoid seeing redundant and irrelevant templates on the Overview page, you can now use this option to delete specific templates or clean up all rejected templates at once.
 
@@ -90,3 +90,25 @@ Cover both System & Custom Properties
 Response time needs to be fast enough to enable auto-complete feature in builder
  
 UI to filter users using queries similar to that of segments
+
+
+## 4. Integration updates
+
+### 4.1. SAP IO Integration 
+Clients can now use SAP.IO Integration in the cloud to create, update or get the service request that is raised by users.  
+
+### 4.2 AWS S3 Integration
+Yellow.ai Integration with AWS-S3 allows you to seamlessly connect your remote bucket with our platform. Clients can now use this integration in cloud to upload or delete files, get signed URLs, and create buckets.
+
+### 4.3. Improvised logging in Integrations backend
+Going forward there will be improved logging in general for our service which helps to deep dive further and analyze the root cause of issues.
+
+### 4.4. Salesforce Live Chat enhancement 
+Inside Salesforce integration the Agent timeout value can now be configured in the UI itself. Additionally, tickets that get auto-closed due to agent inactivity will now be reflected in the Agent Portal.
+
+### 4.5. Freshchat enhancement
+	
+We now have implemented multiple bot support using a single Freshchat account which wasn’t supported earlier. This implementation now allows users to configure multiple bots with one Freshchat account. Additionally, now we support multiple media file formats and users will now be able to receive multiple messages/attachments sent together.
+
+### 4.6 Genesys On-Prem Live chat integration 
+From now, clients who are having their solution in Genesys On-prem can also integrate with Yellow.ai using this integration for agent user conversations. [Reference link](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys).
