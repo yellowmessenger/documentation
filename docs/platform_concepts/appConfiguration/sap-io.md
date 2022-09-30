@@ -1,42 +1,48 @@
 ---
-title : SAP Cloud For Customers
-sidebar_label : SAP Cloud For Customers
+title : SAP Cloud For Customers (SAP IO)
+sidebar_label : SAP IO
 ---
 
+Yellow.ai Integration with SAP.io allows you to seamlessly connect your SAP cloud instance with the yellow.ai platform. 
+Any customer with a SAP account can seamlessly connect their SAP instance with yellow.ai by providing the user name, password and the instance base URL. This connector will enable users to receive events for SAP objects. Furthermore, this connector will enable you to take actions, such as create, update, get and delete the tickets.
 
-## 1. Scope of Integration
-Yellow.ai Integration with SAP.io allows you to seamlessly connect your SAP cloud instance with yellow.ai platform. Any customer who has a SAP account will be able to seamlessly connect their Salesforce instance with yellow.ai by providing the user name, password and the instance base URL. This connector will enable users to receive events for SAP objects. Furthermore, this connector will enable you to take actions, such as create, update ,get and delete the tickets.
+:::note
+This integration will support the latest version releases.
+For more information, click [here](https://help.sap.com/doc/d0f9ba822c08405da7d88174b304df84/CLOUD/en-US/index.html).
+:::
 
-> **Supported Version**
-This integration will support the latest version 'v1' releases.
+## 1. Use cases 
 
-## 2. Use-cases
-Following are the use-cases which are currently accommodated in the Integration:
-### 2.1 Simple integration
+Following are the use-cases which are currently accommodated in the integration:
 
-Yellow.ai connects with SAP using the SAP cloud for customer account credentials. While integrating,the user has to provide the basic credentials such as user name and password. 
+1. **Simple Integration**   
 
-### 2.2 SAP action nodes
+Yellow.ai connects with SAP using the SAP cloud for customer account credentials.    
+While integrating, the user has to provide basic credentials such as user name and password.
 
-Various actions on the ticketing functionalities supported by SAP can be performed. The actions are not just limited to creating a new record, you can read, update and delete relevant records too. On-click of the SAP cloud for customers node, you can customize the object and action type along with the attributes that you wish to pass.
+2. **SAP Action Nodes**   
 
-<img src="https://cdn.yellowmessenger.com/vNKEHsyLmJK71663849056362.png" alt="drawing" width="60%"/>
+Various actions on the ticketing functionalities supported by SAP can be performed. The actions are not just limited to creating a new record, you can read, update and delete relevant records.
 
-<img src="https://cdn.yellowmessenger.com/mHFvJGaG82L21663849110370.png" alt="drawing" width="60%"/>
+![](https://lh5.googleusercontent.com/oM4KcoVXcdf7bHxrbdCK__bU1OR7Jb28Rw4MojtuJYx7bPmEZMTa8sBeDEGi0-BUOhoIdggylh0puULw2bOCQarOxAO6qh7dM2F45cbYu2Wc2CwACrI9GAHhhc0gozXFPKkvl_rYDJlb37t9WPO9rqBS7oVoPi8-AmRKk6P232gucjjbVMbZGaixVg)
+
+On-click the SAP cloud for customers node, and you can customize the object and action type along with the attributes you wish to pass.
+
+![](https://lh3.googleusercontent.com/QsYR9GCrCCk5mg-lnB-r1GDDBrpTHAyNX0m7tSGnnKGZKH3QX0uBC0ejzm6SrVINz5QNCGwlLMyn_xW0ylcpeWZVOsrv2wlFV_vTbD8r5ZS3cJX9Od5VTROuWaGB_Wym5F-r_Mbkn-mBLVz6u4VhLvVXs0XHThSbxjnYnqNLkwKyQYGlExzpabs9XQ)
 
 
-## 3. Configuration
+## 2. Configuration
 
 Configuring the integration with SAP Cloud for customers is straightforward. Follow the steps defined below to integrate SAP Cloud:
 
-### 3.1 Navigate to integration tab
+1. **Navigate to integration tab**
 - Inside your project, navigate to the Configuration tab.
 - Click the **Integrations** tab. 
 - Search for **SAP Cloud For Customers**.  
-<img src="https://cdn.yellowmessenger.com/qOQKmIphucgi1663849229800.png" alt="drawing" width="60%"/>
 
-### 3.2 Connect to your SAP cloud account
+![](https://lh6.googleusercontent.com/M3JrZojaUujFy3pkfka2Dr_iinH-p7bYhimcvdmgr6EofyaMiGbg0qbBqfeH41gay4ObbAAfedYgYosmooyYN8XEdPMDF8oCgk4qYrv4E4NBDtZTNnaSU7qmCkC8JcSnDPoIzeoXsfYNXfpjFPV9lcxvjngOcQUPARNcuUjlqc6WiLPAE6iS2cU5QA)
 
+2. **Connect to your SAP cloud account**
 - Refer to the instructions provided in the page and then click **Connect**. 
 - You are now connected with your SAP cloud account.
 
