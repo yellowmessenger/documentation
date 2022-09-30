@@ -214,25 +214,7 @@ module.exports = {
 
         "platform_concepts/studio/database",
 
-        // {
-        //   type: "category",
-        //   label: "Table",
-        //   collapsed: true,
-        //   items: [
-        //     "platform_concepts/studio/table/create-tables",
-        //     "platform_concepts/studio/table/database-search",
-        //   ],
-        // },
         "platform_concepts/studio/events/event-hub",
-        // {
-        //  type: "category",
-        //  label: "Events",
-        //  collapsed: true,
-        //  items: [
-        //    "platform_concepts/studio/events/event-hub",
-           // "platform_concepts/studio/events/user-inactive",
-        //  ],
-       // },
 
         {
           type: "category",
