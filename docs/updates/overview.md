@@ -81,8 +81,13 @@ Choose the desired option in Change All.
 -   If you select Active, search will filter out only Active Segmens.
 -   If you select Archived, search will filter out only Archived Segments.
 
+<img src="https://i.imgur.com/v8dF5Qf.png" width="50%"/>
+
 
 ### 3.2 Enable user_delete system event whenever a user is deleted
+
+![](https://i.imgur.com/aEdCgaD.png)
+
 
 ### 3.3 User Search Public APIs
 Support similar queries for User Search, User Search now supports the queries that are supported for Create User Segment.
@@ -90,6 +95,8 @@ Cover both System & Custom Properties
 Response time needs to be fast enough to enable auto-complete feature in builder
  
 UI to filter users using queries similar to that of segments
+
+![](https://i.imgur.com/3L8NtbN.png)
 
 
 ## 4. Integration updates
@@ -112,3 +119,72 @@ We now have implemented multiple bot support using a single Freshchat account wh
 
 ### 4.6 Genesys On-Prem Live chat integration 
 From now, clients who are having their solution in Genesys On-prem can also integrate with Yellow.ai using this integration for agent user conversations. [Reference link](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys).
+
+
+
+## 5. Marketplace updates
+
+### 5.1 Marketplace templates
+
+* **WhatsApp Template Manager**: Allows you to track quick-reply clicks and direct users through a personalized flow at scale depending on template name and button clicked.
+* Employee Engagement surveys
+   * Employee Engagement Initiatives
+   * Onboarding: 1 week
+   * Onboarding: 30 days
+   * Onboarding: 90 days
+   * Onboarding: 365 days
+   * Survey: Covid Break
+   * Survey: ESOPs
+   * Survey: New policy change
+    * Feedback after performance review meeting
+
+* **Dashboards**: Visualize survey metric to understand the overall employee experience.
+* **Healthcare**: Book a doctor consultation - book a video/ physical consultation with a doctor from your nearest branch/clinic.
+
+
+### 5.2 Marketplace infrastructure
+
+* New Marketplace landing page
+   * UI design revamp with different card themes for templates
+   * Collections with predefined filters to retrieve a specific set of templates
+   * Improved search and discoverability
+      * Auto-suggestion feature implemented for search
+     * Enhanced search capability using ElasticSearch (Fuzzy searches and filters added based on various component attributes).
+* Micro discovery pop up with marketplace templates, while creating new projects and flows.
+* Notification on newly added templates.
+
+
+
+## 6. Insights updates
+
+### 6.1 Voice overview dashboard
+
+An all-new analytics dashboard in Insights specifically for voice bots called - Voice Overview. Voice bots are built on the IVR channel and hence, there are telephony metrics that are very critical while understanding overall voice bot performance like call statuses, average call duration, user traffic, etc. ( along with the bot engagement metrics that are already available on Insights).
+
+  
+
+Additionally, all the data can be filtered based on dates and call direction (outbound or inbound). Call statuses data can be filtered by phone numbers. The dashboard has all current and historical data. Moreover, users can access the raw data for each report using the Export functionality.
+
+![](https://i.imgur.com/QbUD9Yl.jpg)
+
+
+### 6.2 Low FCR reasons
+
+In the Flows Summary section (User Journeys > Funnels), you can now see the list of reasons why a certain flow completion rates might be low and nudges to what immediate steps you can take to improve them. This helps you create hypotheses around poor performing flows, make improvements in them, and ultimately boost completion rates of bot flows.
+
+<img src="https://i.imgur.com/21iu3Xu.png" width="50%"/>
+
+  
+
+### 6.3 Channel filter on User Journey Visualisation
+
+On the User journey visuvalisation page, we have added a filtering option based on channels (like Yellow Messenger, WhatsApp, etc.) in addition to the time filter.  This helps you analyse flow paths taken by end-users in a much better detail and depth.
+
+
+
+## 7. Channels
+
+### 7.1 Slack channel support in cloud
+Slack is a workplace communication tool - a single place for messaging, tools and files.
+
+Slack is an instant messaging system with lots of add-ons for other workplace tools. Besides an intuitive UI, you can leverage  group and person-to-person messaging. These are more than 1500 apps and allows creating custom apps which has evolved Slack to become a one-stop-shop for a lot of users.

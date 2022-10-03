@@ -3,7 +3,7 @@ title: Email template
 sidebar_label: Email template
 ---
 
-## 1. Create email template
+## Create email template
 
 In this document, we shall see how to create an new email template.
 
@@ -25,7 +25,7 @@ In this document, we shall see how to create an new email template.
    b. Provide an appropriate **Subject** line for the email.
 
    c. Design the email **Body** using HTML code or the Plain text mode. Use dynamic variables wherever required in the template.
-   
+
    ![](https://i.imgur.com/uUX74CU.png)
 
 
