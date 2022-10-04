@@ -80,7 +80,6 @@ module.exports = {
             "cookbooks/voice-as-channel/localisation",
             "cookbooks/voice-as-channel/intentdetection",
             "cookbooks/voice-as-channel/excuteandswitchflow",
-            "cookbooks/voice-as-channel/Miscellaneous",
           ],
         },
 
@@ -633,6 +632,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/google-message",
         "platform_concepts/channelConfiguration/instagram",
         "platform_concepts/channelConfiguration/ivr-bots",
+        "platform_concepts/channelConfiguration/Ivr",
         //"platform_concepts/channelConfiguration/slack",
         "platform_concepts/channelConfiguration/slack2",
         "platform_concepts/channelConfiguration/sms-outbound-india",
