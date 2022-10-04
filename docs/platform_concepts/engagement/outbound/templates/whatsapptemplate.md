@@ -1,167 +1,186 @@
 ---
-title: WhatsApp Templates
-sidebar_label: WhatsApp Templates
+title: WhatsApp template
+sidebar_label: WhatsApp template
 ---
 
 
-A WhatsApp message template can be used to send  campaign messages over and over again. You can create your own WhatsApp template on our platform and get it approved by Meta. Once the approval process is done, you can use these templates to send out campaigns to your customers. 
+A WhatsApp message template can be used to send campaign messages over and over again. You can create your own WhatsApp template on our platform and get it approved by Meta. Once the template is approved, you can use it in the campaign that you want to send out.
 
 It is a three step process from creating a template to finally using it in a campaign. We will deep dive into these 3 steps below.
 
+
 1. Creating a WhatsApp template & sending for approval.
+
 2. Avoiding template rejections.
+
 3. Scheduling the campaign to a user segment at a desired time.
 
-**Pre-requisites**
+  
 
-* WhatsApp channel to be configured under ["channels"](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration). 
-* Account should be active and status to be "connected". 
+**Prerequisites**
 
+The following are the prerequisites for creating a WhatsApp template -
 
-## 1. Create WhatsApp Template 
+* You need to have the WhatsApp channel configured under ["channels"](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
 
-Follow the steps below to create a a WhatsApp template & sending for approval: 
-
-
-1. From [yellow.ai](https://cloud.yellow.ai/bot/Bot_ID/overview), select **Engage**.
-
-![](https://i.imgur.com/lEMyqEq.png)
+* Account should be active and status to be *Connected*.
 
 
-2. Click ‘**Templates**’ from the left panel and select Create new template.
+## 1. Create WhatsApp template
 
-![](https://i.imgur.com/wNTLvZc.png)
+ 
+To create a WhatsApp template and send for approval - 
+
+1. Navigate to your project and go to **Engage** > **Templates**.
+
+![](https://i.imgur.com/Hvh6o2m.jpg)
+
+  
+
+2. Click **Create new template** > **Whatsapp**.
+
+![](https://i.imgur.com/GNCxave.png)
 
 
-3. Choose WhatsApp as a channel.
-
-![](https://i.imgur.com/rhprRtz.png)
-
-4. The WhatsApp template screen will pop up.
+4. Configure the template using the available options and click **Save**.
 
 ![](https://i.imgur.com/cbxvaHy.png)
 
+  
+  
+Option | Description
+--------- | --------
+Template name | Enter a name for the template. This is used only for your reference and the client cannot see it.
+Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*.
+Select language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
+Header | Enter the message title If you want to include media or documents (Image, Video, Document, or Text) in your template messages, then Header Section will be of high importance. WhatsApp has certain guidelines for Header. WhatsApp Text supports upto 60 characters with only one variable.
+Body | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can use upto 1024 characters, which can include text and variables.
+Footer | Use this to mention something at the end of your message. You can use up to 60 words.
+Button type | Choose the button type - None, Call to action (CTA) or Quick reply.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone.
+Quick reply | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
 
-### Template name
-This would only be used for your reference and won’t be seen by the client.
+5. To add another CTA, click **Add new button**.
+6. Preview the message on the right pane and click **Send for approval**. 
 
-### Category
+![](https://i.imgur.com/wJnIgW4.png)
 
-WhatsApp allows you to choose from 3 categories: 
-*  Transactional
-*  Marketing
-*  One-time passwords
+The template will be sent for reviewing. You can use can use it in your campaign once Facebook approves it.
 
-### Select language
-
-WhatsApp allows users to create templates in multiple languages, according to their own requirements.
-
-### Header
-
-If you want to include media or documents in your template messages, then Header Section will be of high importance. WhatsApp has certain guidelines for that too.
-![](https://i.imgur.com/PvvseSj.png)
-
-The Header is completely optional and can include the following-
-* Image 
-* Video
-* Document
-* Text
-
-All of these types can be included, However WhatsApp only permits 1 type per template.
-If you are choosing text, then the limit is 60 words with 1 variable allowed.
-
-### Body
-
-Body is the most critical part of your template and is thoroughly checked by the WhatsApp team.
-
-![](https://i.imgur.com/7Jt09JA.png)
-
-Here you add the main content of your template and also the variables (if required).
-The upper limit is 1024 words, which can include text & variables.
-
-#### Variables 
-Variables allow you to personalize your template content for the user. 
-Variables can be placed anywhere but they follow a certain way for writing it.
-
-You can write variables/placeholders by adding two curly brackets before and after the name.
-![](https://i.imgur.com/2DX9Uiu.png)
-
-By doing so you define a variable user, which can contain unique names of the user you want to send out campaigns to.
-
-You can see in the preview tab below, the variable user we just created is highlighted in blue for your own convenience.
-![](https://i.imgur.com/jRhm0jE.png)
-
-### Footer
-
-The footer section is the last section of your WhatsApp message template content and can have a maximum capacity of 60 words.
+![](https://i.imgur.com/FmTmtzY.png)
 
 
-![](https://i.imgur.com/0d6Ejs4.png)
+:::note
+You can either add up to two CTAs or three Quick replies. 
+:::
 
 
-It can be used to mention something at the end of your message.
 
-### Buttons section
+### 1.1 Add CTAs/Quick replies
 
-WhatsApp provides the service of adding a call to action or quick reply button to your template. You can add them in this section.
-
-* Call to action button
-* Quick reply button
+You will see these options in Buttons under Button Type.
 
 #### Call to Action
 
-There can be a maximum of two buttons while choosing call to action. You can either choose between Visit Website or Call Phone.
+In Type of action, You can either choose between Visit Website or Call Phone. Currently it supports up to two CTAs in a template.
 
 ![](https://i.imgur.com/OpV6j9P.png)
+ 
+For the action, Visit website -
+1. In **Button** text, enter the label name (character limit 20) for the CTA.
+2. In the drop-down box, choose the type of URL - *Static* or *Dynamic*.
+3. In URL, enter the URL that you want recipients to redirect upon clicking the button.
+  
+For the action, Phone number -
+1. In **Button** text, enter the label name (character limit 20) for the CTA.
+2. In the drop-down box, choose the country of the phone number.
+3. In **Phone number**, enter the phone number that you want your recipients to call to.
 
-When choosing either of these, the button text can have a maximum of 20 words. You can choose it to be static or dynamic.
+  
 
-#### Quick Reply
+#### Quick reply
 
-You can add a maximum of 3 quick reply buttons, the button text can have a maximum of 20 words.
+  
+You can add a maximum of three quick reply buttons and the button text can have up to 20 characters.
 
+ 
 ![](https://i.imgur.com/lKAIipS.png)
 
-5. Once done with the above fields, take a final preview. Click **Save** and use template.
+  
+Enter label names for each reply. Use the Delete icon to remove any button. 
 
-![](https://i.imgur.com/mRFh4b7.png)
-
-
-
-## 2.  Avoid Template Rejections
-
-Once you have created your template you need to get it approved by facebook before you can use them in a campaign.
-
-You can see the status of your template by going to **Engage** -> **Templates**
+ ![](https://i.imgur.com/wJnIgW4.png)
+ 
 
 
+ 
+### 1.2 Add variables
+Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
 
-![](https://i.imgur.com/I2eSkb7.png)
+You can add variables by adding two curly brackets before and after the variable name.
 
-Your template can either be approved, rejected or pending.
+![](https://i.imgur.com/2DX9Uiu.png)
 
-### Reasons for rejections
+  
 
-You can refer to this [Link](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/) for detailed reasons for rejections. Some major reasons are:
+By doing so you define a variable user, which can contain unique names of the user you want to send out campaigns to.
+
+  
+
+You can see in the preview tab below, the variable user we just created is highlighted in blue for your own convenience.
+
+![](https://i.imgur.com/jRhm0jE.png)
+
+  
+
+  
+  
+
+## 2. Best practices to avoid template rejections
+
+  
+
+Once you send a template for approval, Facebook might approve it if everything's as per the guidelines or will reject it if it is not as per their standards.
+
+You can see the template status on the Templates home page.
+
+![](https://i.imgur.com/FmTmtzY.png)
+
+
+Here are some basic guidelines that you can follow to get your templates approved -    
+
+:::note
+For a complete list of rejection reasons, see [here](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/).
+:::
+  
 
 * Spelling or grammatical errors.
-* Variable parameters are missing or have mismatched curly braces. The correct format is {{1}}.
-* Variable parameters are not defined.
-* Variable parameters are not sequential. For example, {{1}}, {{2}}, {{4}}, {{5}} are defined but {{3}} does not exist.
-* Language defined does not match content. For example, Spanish was select but the content is English or the content is a mixture of languages containing both Spanish and English.
+* Missing variable parameters or incorrect curly braces. The correct format is {{1}}.
+* Undefined variable parameters.
+* Non-sequential variable parameters. For example, {{1}}, {{2}}, {{4}}, {{5}} are defined but {{3}} does not exist.
+* Mismatch in the defined language and the template content. For example, Spanish was select but the content is English or the content is a mixture of languages containing both Spanish and English.
 * The URL domain in your links does not belong to your business.
 
-### Examples of approved & rejected templates
+  
+
+### 2.1 Examples of approved & rejected templates
+
+  
 
 1. The template on the **left** got rejected because it placed a link inside the body instead of using call to action. The one on the **right** got approved after removing the link.
 
+
 ![](https://i.imgur.com/mBJxZ7t.png)
 
-
+  
 2. The template on the **left** got rejected because user didn't pass any parameter inside curly braces. The one on the **right** got approved after passing a parameter inside the bracket.
+
 ![](https://i.imgur.com/OpceI9g.png)
 
+  
+  
 
-## 3.  Schedule a Campaign
+## 3. Schedule a campaign
+
+  
 
 To learn to schedule a campaign to a user segment at the desired time, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign).
