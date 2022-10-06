@@ -1,8 +1,8 @@
 ---
 
-title: September updates
+title: Product updates
 
-sidebar_label: What's New
+sidebar_label: Product updates
 
 featured: true
 
@@ -55,7 +55,7 @@ Chat tickets raised in this manner will be assigned to their preferred agents. T
 
   
   
-----
+***
 
 ## 2. **Engage**
 
@@ -75,7 +75,7 @@ Chat tickets raised in this manner will be assigned to their preferred agents. T
   
   
   
-----
+***
 
 ## 3. **User 360**
 
@@ -122,7 +122,7 @@ User Search now supports the queries that are supported for Create User Segment:
 
   
   
-----
+***
 
 ## 4. **Integration**
 
@@ -179,7 +179,7 @@ Clients who are having their solution in Genesys On-prem can also integrate with
 
   
   
------  
+***
 
 ## 5. **Marketplace**
 
@@ -225,7 +225,7 @@ Clients who are having their solution in Genesys On-prem can also integrate with
 
   
   
-------  
+***
 
 ## 6. **Insights**
 
@@ -270,8 +270,7 @@ On the User journey visualisation page, we have added a filtering option based o
 This helps you analyse flow paths taken by end-users in much better detail and depth.
 
   
------ 
-  
+***
 
 ## 7. **Channels**
 
@@ -286,7 +285,7 @@ Slack is an instant messaging system with lots of add-ons for other workplace to
 
 [Know more.](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/slack2/).
 
------
+***
 
 ## 8. **Studio** 
 
@@ -348,7 +347,8 @@ For example:
 
 
 
-----
+***
+
 ## 9. **Voice**
 
 ### 9.1 User Response Acknowledgement/Filler Words 
