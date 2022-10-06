@@ -258,9 +258,29 @@ Click **Fetch from** and add a dynamic value - if required:
 
 ---
 
-## 8. Catalog Journey
+**Configure text displayed on the bot**
+
+To beautify the text you enter in the field -**bot says** you can add the following. 
+
+```
+1. Web (use HTML tags)
+
+  - Bold: <strong> baggage </strong> 
+  - Italics: <i> italics </i> 
+  - Hyperlink: <a href="google.com"> Google </a> 
+
+2. Whatsapp 
+
+  - Bold: Message *- 
+  - Italics: _ Message _ 
+```
+
+## 8. WhatsApp product message
 
 This section helps you create a WhatsApp product messaging journey with a sample use case.
+
+![](https://i.imgur.com/cIVo56o.jpg)
+
 
 
 **Prerequisites** - 
@@ -303,7 +323,7 @@ Here is a sample journey configuration screenshots -
 
 3. In the above step we have seen how a product can be fetch based on deifferent condition and can be used as an SPM. Now we will go through the step of how we can handle the Cart events which comes to the bot once the user decides to purchase the product.
 
-**Purchase Journey(User Side)**:
+**Purchase flow of an end-user**:
 
 1. User receives the SPM on WhatsApp
 2. User views the products and decides to purchase it
@@ -344,7 +364,7 @@ This event will contain the below Data in the backend which can be used for furt
 }
 ```
 
-You can handle this event using a journey to carry out the next steps of the buiying journey for the user as shown below.
+You can handle this event using a journey to carry out the next steps of the buying journey for the user as shown below.
 
 ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfmMZnxd9TZ5Uy82euZXsv5KEXjambLofoHEkEdFhStUQzSWirJaXLdDZ3xKuHX8cBDhN2aECxLzPrrLxVX1PoBNpBnLutzYt5vYXGsXdbaUJN37sdWjiqpbHcdbvtpjgXvG1vYPVyrhZCaDDoUDwdJPFLHh/Image.jpg)
 
@@ -399,19 +419,3 @@ This completes the Bot Flow for the SPM/MPM Feature to be handled for a basic Co
 
 These flows can be also created with other complex use cases with live agent support for better user experince when the buyer wants to get consulatation or get more info on the product before purchasing.
 
-**Configure text displayed on the bot**
-
-To beautify the text you enter in the field -**bot says** you can add the following. 
-
-```
-1. Web (use HTML tags)
-
-  - Bold: <strong> baggage </strong> 
-  - Italics: <i> italics </i> 
-  - Hyperlink: <a href="google.com"> Google </a> 
-
-2. Whatsapp 
-
-  - Bold: Message *- 
-  - Italics: _ Message _ 
-```
