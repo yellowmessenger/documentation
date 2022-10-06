@@ -142,6 +142,9 @@ module.exports = {
       items: [
     "platform_concepts/getting-started",
     "platform_concepts/Getting Started/keyboard-shortcuts",
+    "platform_concepts/configurations/access-management",
+
+
       ]
     },
     {
@@ -692,8 +695,7 @@ module.exports = {
       label: "Configurations",
       collapsed: true,
       items: [
-        "platform_concepts/configurations/signup-post-bot-invite",
-        "platform_concepts/configurations/access-management",
+      //  "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/subscription",
         "platform_concepts/configurations/api-keys",
       ],
