@@ -307,7 +307,11 @@ module.exports = {
             "platform_concepts/inbox/tickets/bulkaction",
                   ],
         },
-        //5. analytics - reports  
+
+        //5. contacts doc
+        "platform_concepts/inbox/contacts",
+
+        //6. analytics - reports  
         {
           type: "category",
           label: "Analytics and Reports",
@@ -353,7 +357,7 @@ module.exports = {
              },
           ],
         },
-        //6. knowledgebase 
+        //7. knowledgebase 
         {
           type: "category",
           label: "Knowledgebase",
@@ -364,8 +368,7 @@ module.exports = {
                  ],           
        },
 
-        //7. contacts doc
-        "platform_concepts/inbox/contacts",
+
         //8. settings 
         {
           type: "category",

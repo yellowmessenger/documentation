@@ -93,3 +93,29 @@ For example, for the above flow, the following conditions are checked:
 Since none of the channels mentioned in If and Else-if was configured, the bot displayed a text message ("Please enter your social media handle where we can reach you")
 
 
+---
+
+## 3. Context Handler
+
+:::note
+This node can only be attached to an [Input node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#15-input).
+:::
+
+In the condition node, questions around why, what, No, repeat, etc can be answered locally. Which handles multiple paths except for just validation failure or success.
+
+A context handler is used to branch the flow based on the identified context. Follow the steps mentioned below as per your use case: 
+
+* Store the user query/ user input in a global variable. 
+* Select the variable on the **Context handler** nodes **If condition**.
+
+ ![](https://i.imgur.com/qsiynIb.png)
+
+* Select the context from the drop-down. Branch each of these conditions to other nodes. 
+
+
+![](https://i.imgur.com/abxlkuP.png)
+
+
+For example, if the user enters  "Why is this process getting delayed?" and it is stored in a variable -> approvalReminder, the Context handler identifies the context as "why" and diverts the flow to the attached node (Execute flow-> followup and reply "We are processing your application, please stay with us.")
+
+![](https://i.imgur.com/Q9gSP2j.png)
