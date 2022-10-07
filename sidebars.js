@@ -655,6 +655,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/appConfiguration/overview",
+        "platform_concepts/appConfiguration/aws-s3",
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/clevertap",
@@ -689,7 +690,6 @@ module.exports = {
         "platform_concepts/appConfiguration/zendesk",
         "platform_concepts/appConfiguration/zoho-crm",
         "platform_concepts/appConfiguration/zoho-live-chat",
-        "platform_concepts/appConfiguration/aws-s3",
         "platform_concepts/appConfiguration/exposing-integration-to-app",
       ],
     },
