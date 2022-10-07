@@ -126,7 +126,8 @@ module.exports = {
         },
         "cookbooks/whatsapp-channel/building-flows",
         "cookbooks/whatsapp-channel/faqs",
-        "cookbooks/whatsapp-channel/testing"
+        "cookbooks/whatsapp-channel/testing",
+        "cookbooks/whatsapp-channel/updates",
       ]
     }
   ],
