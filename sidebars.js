@@ -652,6 +652,7 @@ module.exports = {
     {
       type: "category",
       label: "Integrations",
+      
       collapsed: true,
       items: [
         "platform_concepts/appConfiguration/overview",

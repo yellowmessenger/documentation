@@ -1,6 +1,6 @@
 ---
-title: July Updates
-sidebar_label: July Updates
+title: July updates
+sidebar_label: July updates
 ---
 
 

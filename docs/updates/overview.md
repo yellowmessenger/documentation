@@ -15,7 +15,7 @@ Stay tuned to know what's going on with Yellow.ai products.
 ***
 
 
-**Here are the product updates of the previous month** -
+**Here are the product updates of the previous month (September)** -
 
 ## 1. **Inbox**
 
