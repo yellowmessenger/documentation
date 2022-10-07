@@ -9,7 +9,7 @@ featured: true
 ---
 
 
-Here, at Yellow.ai, our Product & Development team works hard to consistently improve the product to help you solve numerous use cases and provide a better user experience. 
+At Yellow.ai, our Product & Development team works hard to consistently improve the product to help you solve numerous use cases and provide a better user experience. 
 Stay tuned to know what's going on with Yellow.ai products.
 
 ***
