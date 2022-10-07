@@ -189,13 +189,12 @@ Prerequisites
 
 The following are the prerequisites to use WhatsApp Product Node - 
 
-1. [Product Listed on Catalog](https://www.craft.do/s/0loidngTNNAzkK#D6600EA7-B625-470D-8E23-3AF59B5DF507/The_Facebook_Commerce_manager_is_the)
+1. [Product Listed on Catalog](#21-commerce-manager-catalog)
 
-2. [Updated Business and Compliance Info](https://www.craft.do/s/0loidngTNNAzkK#F506CD20-2437-4DB8-B96C-7F20EB7B1055/Business_and_Compliance_Info(Mandato)
+2. [Updated Business and Compliance Info](#23-business-and-compliance-info-mandatory-for-indian-number-waba)
 
-3. [Additional Fields added incase of Indian Businesses](https://www.craft.do/s/0loidngTNNAzkK#F10EC0BD-AB0D-4A1E-B482-9259561D3F22/For_Businesses_in_India_its_mandator)
-
-4. [Catalog Linked with the WABA](https://www.craft.do/s/0loidngTNNAzkK/b/2AF9F5B2-431A-4361-801B-535519A98047/Catalog_Linked_with_the_WABA)
+3. Additional Fields added incase of Indian Businesses
+4. [Catalog Linked with the WABA](#22-link-catalog-to-a-waba)
 
 
 
@@ -252,7 +251,7 @@ You can add products to the Catalog either manually or by using a [Data Feed](ht
 
 
 
-It is important to note the few points in Catalog before using the Products.
+It is important to note the following points in Catalog before using its products.
 
 1. ContentID can be given from the Business side or will get generated automatically from FB side. This id needs to be unique and will be used as Product ID in the WhatsApp product msg node.
 2. While syncing the catalogs using a data feed it takes some amount of time to get updated during which the products might not be available to be sent on the WhatsApp.
@@ -295,7 +294,7 @@ Follow these steps to understand how to share the Catalog access with the BSP an
 
 ![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhmeJsSnm2AS7T3qrYJF8Lo8jfpBs3aknSVSBdcHsaR7ujNzvE2HZ7vdLpGHuz1w3VCyf36SfdufEgQ4Ae3NtYGzxAnYKJ4bfLRpmjbRvhSbhTBqw2SjkEvkkwDdBsp6LYaYe1iCg2FpTNikrbFhKC3hJ2GKnZZMWw5CQ76P8io5fA7LveBNdoFgCuWkFWXjTBp7zaS/Image.jpg)
 
-Business and Compliance Info (Mandatory for Indian Number WABA)
+### 2.3 Business and Compliance Info (Mandatory for Indian Number WABA)
 
 It is mandatory for Indian Businesses to have the Business and Compliance info filled to use the SPM/MPM feature on their WABA Accounts. 
 Log on to the [Cloud Platform](https://cloud.yellow.ai/) and go to **Channels** > **WhatsApp**, and fill in the details.
