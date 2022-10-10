@@ -5,16 +5,17 @@ sidebar_label: Engage best practices
 
 In this article, you will learn how to - 
 
-* Identify the right audience
-* Set up goals and objectives
-* Identify the message to be conveyed
-* Monitor and analyse the campaign.
+* [Identify the right audience](#1identify-the-right-audience)
+* [Set up goals and objectives](#2-setup-goals-and-objectives)
+* [Identify the message to be conveyed](#3-identify-the-message-to-be-conveyed)
+* [Monitor and analyse the campaign](#4-analyse-campaign-performance)
+* [Best practices to drive customer engagement](#5-best-practices-to-engage-customers)
 
 ## 1.Identify the right audience
 
 When you create a campaign, it is important to identify the right set of audience. Sending messages to uninterested audience might lead to a low quality rating. For example, if a customer keeps receiving irrelevant messages from your WhatsApp business number, he might block your number.
 
-> To know how to create an audience group, see here. 
+> To know how to create an audience group, see [here](./cdp/user_data_segments/creating_managing_user_segment.md). 
 
 #### Important points
 * Add a right country code, otherwise WhatsApp will append the country code of your business phone number and sends the message to a user.
@@ -36,15 +37,15 @@ It is difficult to achieve your overall business objective without setting up cl
 On the other hand, if your goal is to convert more followers, then don't focus on getting more likes and comments. Instead, try to drive more social media traffic to your website and encourage the traffic down the marketing funnel.
 
 Examples of goals - 
-* Generate more quality leads.
-* Improve conversion rate.
-* Increase sales.
-* Increase traffic.
-* Increase engagement.
-* Educate customer on product offerings.
+* Generate more quality leads
+* Improve conversion rate
+* Increase sales
+* Increase traffic
+* Increase engagement
+* Educate customer on product offerings
   
 Hence, setting objectives works best through SMART goals as they cover every aspect of the campaign goal.
-*  **Specific**- Be very specific about your goal and make sure it has a clear objective.
+*  **Specific**: Be very specific about your goal and make sure it has a clear objective.
 *  **Measurable**: What KPIs will help you determine whether you have reached your goal or not.
 *  **Achievable**: It is good to aim high but at the same time be prudent enough to set achievable goals.
 *  **Relevant**: Ensure your goals are relevant to the overall business goal.
@@ -55,10 +56,9 @@ Hence, setting objectives works best through SMART goals as they cover every asp
 
 ## 3. Identify the message to be conveyed
 
-Starting with **What, Who & Why ?**
 
   
-Identify the what message you need to send and wh
+Identify the what message you need to send, who are the tatget audience, and why you need to send.
 * **What?** 
     You should revisit the organization's goal and objectives outlined in the previous section to confirm the outcomes messaging is designed to achieve.
 * **Who?** 
@@ -94,15 +94,15 @@ There are three ways in which you can analyse the campaign performance -
 
 1. Go to the outbound/inbound page and you will get a brief summary of the campaigns that you have triggered/scheduled.
 
-![](https://i.imgur.com/k036ajM.png)
+   ![](https://i.imgur.com/k036ajM.png)
 
 2. You can also download the detailed report by clicking on 3 dots next to a campaign. You can then perform the analysis at your end according to your requirement.
 
-![](https://i.imgur.com/aSetoY4.png)
+   ![](https://i.imgur.com/aSetoY4.png)
 
 3. Go to Insights-> notification report.
 
-![](https://i.imgur.com/asksBwn.png)
+   ![](https://i.imgur.com/asksBwn.png)
 
   
 
@@ -110,7 +110,7 @@ You can now apply filters, summarize and visualize the data according to your re
 
   
 
-![](https://i.imgur.com/ZjxmB2i.jpg)
+   ![](https://i.imgur.com/ZjxmB2i.jpg)
 
   
 
@@ -118,7 +118,7 @@ The final visualisation will look something like this
 
   
 
-![](https://i.imgur.com/rD288Qd.jpg)
+   ![](https://i.imgur.com/rD288Qd.jpg)
 
   
   
@@ -127,7 +127,7 @@ It is important to note here that you should have clarity on what results you ne
 
   
 
-## 5. Best practices to engage customers
+## 5. Drive customer engagement (Best practices)
 
 ### 5.1 Welcome message for new customers
 
