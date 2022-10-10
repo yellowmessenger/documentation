@@ -6,6 +6,11 @@ featured: true
 rank: 5
 ---
 
+:::tip
+You can access Inbox using the keyboard shortcut `g` + `i`.
+:::
+
+
 In this article, you will understand:
 1. [Inbox and it's functionalities](#inbox)
 2. [How to add and accept support agents?](#supportagents)
