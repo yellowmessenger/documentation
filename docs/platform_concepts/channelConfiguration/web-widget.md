@@ -16,13 +16,13 @@ The Chat widget screen appears as shown below.
 
 ![](https://i.imgur.com/fDaMztT.png)
  
-## 2. Customise Chat widget
+## 2. Customize Chat widget
 
-### 2.1 Customise bot look & feel (Design)
+### 2.1 Customize bot look & feel (Design)
 
-The Design screen helps you customise the look and feel of the chat widget.
+The Design screen helps you customize the look and feel of the chat widget.
 
-To customise the design, make the required changes as per the descriptions provided in the following table and click **Save changes**.
+To customize the design, make the required changes as per the descriptions provided in the following table and click **Save changes**.
 
 Option | Description
 -------- | ---------
@@ -133,11 +133,11 @@ To display the bot in full screen mode, you can use the following link: https://
 
 ***
 
-## 3. Customise bot using functions
+## 3. Customize Chat bot using functions
 
-Yellow.ai offers a wide range of options to customise features for its web widget. However, sometimes our clients might need even more flexibility in crafting the widget’s design, and functionality unique to their use cases. There are certain tricks that you can use to customise your web widget to suit your business needs. 
+Yellow.ai offers a wide range of options to customize features for its web widget. However, sometimes our clients might need even more flexibility in crafting the widget’s design, and functionality unique to their use cases. There are certain tricks that you can use to customize your web widget to suit your business needs. 
 
-This section guides you with different ways to customise your chat widget’s look & feel,  functionality, and capture bot events.
+This section guides you with different ways to customize your chat widget’s look & feel,  functionality, and capture bot events.
 
 
 ### 3.1 Customize bot display
@@ -245,3 +245,52 @@ If you have integrated Yellow AI’s chat widget on Android/iOS app, see -
 * [Android chatbot SDK](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android)
 * [iOS chatbot SDK](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios/)
 
+
+## 4. Chat widget events
+
+Yellow.ai offers a wide range of options to customize features for its web widget. However, sometimes, our clients need even more flexibility in crafting the widget’s design, and functionality as per their use cases. 
+
+You can use certain trics to customize your web widget to suit your needs. This section helps you with different ways to customize your chat widget’s look and feel,  functionality, and capture bot events.
+
+When your bot is operational, it generates various events. You can use them to capture those occurrences and trigger a journey or automation workflow.
+
+### 4.1 Send event to bot
+
+```js
+// find the yellow.ai widget iframe
+const ymIframe = document.getElementById('ymIframe');
+// event_name should be a valid name supported by the widget.
+const message = JSON.stringify({code: 'event_name', data: {...}});
+// send a cross-site message using 
+// window.postMessage(message, targetOrigin, transfer) API.
+ymIframe.contentWindow?.postMessage(message, window.location.origin);
+```
+
+### 4.2 Listen to a bot event
+
+```js
+<script type="text/javascript">
+         window.addEventListener('message', function(eventData) {
+							// make sure to verify origin to prevent XSS attacks.
+							// https://blog.yeswehack.com/yeswerhackers/introduction-postmessage-vulnerabilities/
+							// if (event.origin !== <your_origin>) throw new Error('Message not allowed");
+            console.log(eventData,"eventData");
+         })
+</script>
+```
+
+### 4.3 Available events
+
+
+| Event | Functionality |
+| --- | --- |
+| ym-bot-opened | Bot opened |
+| ym-bot-closed | Bot closed |
+| ym_event_quick_reply | Quick Reply clicked |
+| ym_event_image_clicked | Image opened in preview |
+| ym_event_card_action | Card action button clicked |
+| ym-bot-loaded-on-page-reload | When the refresh context is false, the bot will receive events as soon as the page reloads |
+| ym_home | Home button clicked |
+| message-received | New message received by user i.e., sent by the bot |
+| page-url-based-trigger | Whenever a notification is sent in the bot 
+(for electron apps) |
