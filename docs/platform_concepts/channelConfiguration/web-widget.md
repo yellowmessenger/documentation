@@ -55,7 +55,7 @@ Font size | Set the font size of the widget on the website - Small, Medium or La
 
 You can enable or disable the following features on the bot. By default, these options are disabled.
 
-Option | Descrption
+Option | Description
 -------- | ---------
 Auto-complete | Enable auto-complete to allow auto-predict words as the bot user types. 
 Message feedback | Enable to allow capturing feedback for every bot message in a conversation.
@@ -250,7 +250,7 @@ If you have integrated Yellow AI’s chat widget on Android/iOS app, see -
 
 Yellow.ai offers a wide range of options to customize features for its web widget. However, sometimes, our clients need even more flexibility in crafting the widget’s design, and functionality as per their use cases. 
 
-You can use certain trics to customize your web widget to suit your needs. This section helps you with different ways to customize your chat widget’s look and feel,  functionality, and capture bot events.
+You can use certain tricks to customize your web widget to suit your needs. This section helps you with different ways to customize your chat widget’s look and feel,  functionality, and capture bot events.
 
 When your bot is operational, it generates various events. You can use them to capture those occurrences and trigger a journey or automation workflow.
 
@@ -292,5 +292,4 @@ ymIframe.contentWindow?.postMessage(message, window.location.origin);
 | ym-bot-loaded-on-page-reload | When the refresh context is false, the bot will receive events as soon as the page reloads |
 | ym_home | Home button clicked |
 | message-received | New message received by user i.e., sent by the bot |
-| page-url-based-trigger | Whenever a notification is sent in the bot 
-(for electron apps) |
+| page-url-based-trigger | Whenever a notification is sent in the bot (for electron apps) |
