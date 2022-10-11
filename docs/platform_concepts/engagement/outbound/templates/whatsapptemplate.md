@@ -4,26 +4,22 @@ sidebar_label: WhatsApp template
 ---
 
 
-A WhatsApp message template can be used to send campaign messages over and over again. You can create your own WhatsApp template on our platform and get it approved by Meta. Once the template is approved, you can use it in the campaign that you want to send out.
+Unlike other channel templates that are approved by default, you need to send each WhatsApp template for approval as soon as you create it. Facebook might take upto 48 hours to review the template. A template gets approved if it is as per the Facebook's guidelines, else it will be rejected.
 
-It is a three step process from creating a template to finally using it in a campaign. We will deep dive into these 3 steps below.
+The following are the different steps involved in a WhatsApp template - 
 
-
-1. Creating a WhatsApp template & sending for approval.
-
-2. Avoiding template rejections.
-
-3. Scheduling the campaign to a user segment at a desired time.
-
+1. Create a WhatsApp and send for approval.
+2. Facebook verifies the WhatsApp template and updates the status within 48 hours.
+3. Use the approved template in your campaign.
   
 
 **Prerequisites**
 
 The following are the prerequisites for creating a WhatsApp template -
 
-* You need to have the WhatsApp channel configured under ["channels"](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
+* You need to have the WhatsApp channel configured under [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
 
-* Account should be active and status to be *Connected*.
+* Account should be active with its status as *Connected*.
 
 
 ## 1. Create WhatsApp template
@@ -33,18 +29,18 @@ To create a WhatsApp template and send for approval -
 
 1. Navigate to your project and go to **Engage** > **Templates**.
 
-![](https://i.imgur.com/Hvh6o2m.jpg)
+   ![](https://i.imgur.com/Hvh6o2m.jpg)
 
   
 
 2. Click **Create new template** > **Whatsapp**.
 
-![](https://i.imgur.com/GNCxave.png)
+   ![](https://i.imgur.com/GNCxave.png)
 
 
 4. Configure the template using the available options and click **Save**.
 
-![](https://i.imgur.com/cbxvaHy.png)
+   ![](https://i.imgur.com/cbxvaHy.png)
 
   
   
@@ -62,11 +58,11 @@ Quick reply | You can add a maximum of 3 quick reply buttons, each button text c
 5. To add another CTA, click **Add new button**.
 6. Preview the message on the right pane and click **Send for approval**. 
 
-![](https://i.imgur.com/wJnIgW4.png)
+   ![](https://i.imgur.com/wJnIgW4.png)
 
 The template will be sent for reviewing. You can use can use it in your campaign once Facebook approves it.
 
-![](https://i.imgur.com/FmTmtzY.png)
+   ![](https://i.imgur.com/FmTmtzY.png)
 
 
 :::note
@@ -103,7 +99,7 @@ For the action, Phone number -
 You can add a maximum of three quick reply buttons and the button text can have up to 20 characters.
 
  
-![](https://i.imgur.com/lKAIipS.png)
+  ![](https://i.imgur.com/lKAIipS.png)
 
   
 Enter label names for each reply. Use the Delete icon to remove any button. 
@@ -135,7 +131,7 @@ You can see in the preview tab below, the variable user we just created is highl
   
   
 
-## 2. Best practices to avoid template rejections
+## 2. Best practices to avoid rejections
 
   
 
