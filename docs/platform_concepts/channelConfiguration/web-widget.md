@@ -3,6 +3,11 @@ title: Chat widget
 sidebar_label : Chat widget
 ---
 
+Chat widget is a window that you can embed on a website to interact with your website users real-time.
+
+
+
+
 ## 1. Access Chat widget
 
 To access Web widget, follow these steps - 
@@ -37,7 +42,7 @@ Secondary color | Set the color of other components of the bot such as chat. See
 
 ***
 
-### 2.2 Set bot position (Setting)
+### 2.2 Set bot position (Settings)
 
 
 This tab lets you configure the position of the bot in different devices and enable or disable several bot features.
@@ -61,9 +66,9 @@ Auto-complete | Enable auto-complete to allow auto-predict words as the bot user
 Message feedback | Enable to allow capturing feedback for every bot message in a conversation.
 Show history of the conversation | Disable this to refresh the bot's chat history when the page is reloaded. Enable to show the chat history even after the page is refreshed.
 Attachment | Enable this option to allow adding attachments via. the chat widget.
-Always scroll chat window to bottom | 
-Create fresh session for every new tab | 
-Slow Messages | 
+Always scroll chat window to bottom | Enable this option to navigate to the last message when there are multiple messages in a single step as each message loads one by one.
+Create fresh session for every new tab | Enable this option to refresh (not retain) the chat history when the bot is opened in a new tab/window.
+Slow messages | Enable this option to add a small delay to bot messages, a typing indicator is displayed to make it look more natural. It is recommended to use this for all bot messages for a better experience. 
 
 
 
