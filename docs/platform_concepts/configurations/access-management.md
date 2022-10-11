@@ -40,6 +40,7 @@ Inbox (Agent) | Agent can only respond to chats received from the user.
 Insights  (Hop) | Can view all the analytics pertaining to the bot.
 Engagement (Admin) | Can send campaigns and configure audience.
 Engagement (User) | Can only schedule campaigns.
+
    c. Click **Save**.
    
 The user receives an email to accept the invite. 
