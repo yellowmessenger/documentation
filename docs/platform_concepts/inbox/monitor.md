@@ -21,7 +21,7 @@ There are 3 tabs to monitor the progress:
 
 **Filter**
 
-- Filter chat details for particular tags using the filter option. You can select a tag from the dropdown (tags are assigned while creating a ticket).
+- Filter chat details for particular tags using the filter option. You can select a tag from the dropdown (tags are assigned in chat/while creating a ticket).
 
 **Channel**
 
