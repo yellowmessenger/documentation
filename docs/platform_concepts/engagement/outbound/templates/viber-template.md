@@ -17,11 +17,10 @@ The following are the different use cases that you an solve with the template -
 
   
 
-To create a Viber business template, follow these steps - 
 
   
 
-## Prerequisites
+## 1. Prerequisites
 
 Viber Business channel must be enabled for this to work. To enable Viber, go to **Channel** > **Viber Business** and Enable Viber Business. 
 
@@ -30,7 +29,10 @@ To create a new Viber Business account, reach out to the Yellow.ai support.
 :::
   
 
-## Create Viber template
+## 2. Create Viber template
+
+To create a Viber business template, follow these steps - 
+
 
 1. Navigate to your project and go to **Engage** > **Templates**.  
 
@@ -46,7 +48,7 @@ To create a new Viber Business account, reach out to the Yellow.ai support.
 
 4. Select your preferred **message format** (Text only, Media message or Actionable message) and click **Create template**.
 
-### Text only
+### 2.1 Text only message
 
 Select this to create a pure text message. You can use You can bold or italicise words and add variables wherever required in the message.
 
@@ -58,9 +60,15 @@ Select this to create a pure text message. You can use You can bold or italicise
   
   
 
-### Media message
+### 2.2 Media message
 
- Choose this to create a template with an *image*(jpg, png), *video* (.3gp, .m4v, .mov, .mp4 for video; .jpg, .jpeg, .png for thumbnail) or *file*. <br/>Document: .doc, .docx, .rtf, .dot, .dotx, .odt, .odf, .fodt, .txt, .info <br/>PDF: .pdf, .xps, .pdax, .eps <br/>Spreadsheets: .xlx, .xlsx, .ods, .fods, .csv, .xlsm, .xltx.
+ Use this to create a template with any of the following formats
+ 
+ * *image*: jpg, png
+ * *video*: .3gp, .m4v, .mov, .mp4 for video; .jpg, .jpeg, .png for thumbnail) or *file*. <br/>
+ * *Document*: .doc, .docx, .rtf, .dot, .dotx, .odt, .odf, .fodt, .txt, .info <br/>
+ * *PDF*: .pdf, .xps, .pdax, .eps <br/>
+ * *Spreadsheets*: .xlx, .xlsx, .ods, .fods, .csv, .xlsm, .xltx
 
   
 
@@ -70,7 +78,7 @@ Select this to create a pure text message. You can use You can bold or italicise
 
 
 
-### Actionable message
+### 2.3 Actionable message
 Choose this to create templates with clickable options.        
 
 For example, If the media is an image, a separate redirection URL can be configured. This way, upon clicking the button, the users will be redirected to the specified URL.
