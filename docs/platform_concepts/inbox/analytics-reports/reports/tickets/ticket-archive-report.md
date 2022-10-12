@@ -1,13 +1,14 @@
 ---
 title: Ticket Archive Report
-sidebar_label : Ticket Archive Report
+sidebar_label : Ticket archive 
 ---
 
 
-To generate Ticket archive follow the step below: 
-* Open Inbox -> Tickets -> Reports -> All reports -> Ticket Archives.
-* Click Generate.
+> To learn how to generate Ticket Archive Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
 
+:::info
+Only an admin can download reports.
+:::
 
 | Sno | Field  | Description | Comments
 |--|--|--|--|
