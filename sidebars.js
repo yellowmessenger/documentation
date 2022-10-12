@@ -350,7 +350,7 @@ module.exports = {
             },
             {
               type: "category",
-              label: "Tickets",
+              label: "Email",
               collapsed: true,
               items: [
                 "platform_concepts/inbox/analytics-reports/reports/tickets/ticket-agent-performance-report",

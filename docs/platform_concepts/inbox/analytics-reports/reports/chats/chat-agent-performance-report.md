@@ -1,12 +1,12 @@
 ---
 title: Chat Agent Performance Report
-sidebar_label : Agent Performance
+sidebar_label : Agent performance
 ---
 
-To download Chat Agent Performance Report Go to *Inbox -> Chats -> Reports -> All reports -> Agent Performance -> Generate*
+> To learn how to generate Chat Agent Performance Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
 
 :::info
-Only an admin can download reports
+Only an admin can download reports.
 :::
 
 |Sno|Field        |Description                  |Comments |
