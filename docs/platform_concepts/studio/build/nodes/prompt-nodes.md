@@ -415,6 +415,7 @@ To do this, we have a **Fetch from** option in the quick reply prompt. Here, ins
 
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intended variable. For example, you can apply for a loop around options to dynamically add to them while parsing through some API response etc.
 
+<!---
 #### Quick reply node for WhatsApp
 
 Quick replies node can switch between buttons and numbered lists. WhatsApp buttons can have up to maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
@@ -423,8 +424,13 @@ Quick replies node can switch between buttons and numbered lists. WhatsApp butto
 
 > Real time example: 
 > ![](https://i.imgur.com/7pp1yaf.jpg)
+-->
 
-#### Workaround for WhatsApp
+#### Quick reply buttons for WhatsApp bots
+
+:::note
+This is a **workaround** to enable clickable quick reply buttons for Whatsapp bots. In app feature is under development.
+:::
 
 Quick Replies are currently not supported on WhatsApp. That is, buttons wont be visible on the WhatsApp chat. 
 To use buttons (Quick reply like action) use one Carousel card without adding any images.  
