@@ -113,7 +113,8 @@ When any raise ticket action fails due to inbox settings that can be controlled 
 
 ### 1.7 Bot Messages
 
-All the conversations that happen on the bot will be seen here. This is an entire conversation, irrespective of the ticket raised. 
+All the conversations that happen on the bot will be visible here (for admins and agents). This is an entire conversation, irrespective of the ticket raised. 
+The purpose of this section is to monitor the bot responses. If the conversation is not going as expected, agents can take the control over from the bot and converse with the user. 
 
 
 :::note
