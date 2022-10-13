@@ -99,3 +99,10 @@ To add media, scroll down and select **Attach media** > In **Media type**, choos
 The media file can be **uploaded from the local** system or the relevant **media URL can be pasted** in the applicable field.
 
    ![](https://i.imgur.com/QSbNEq3.jpg)
+
+
+***
+
+**What next?**
+
+After creating a Viber template, create a Viber campaign using the template as explained [here](/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md).

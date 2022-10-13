@@ -557,7 +557,7 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/viber-template",
               ],
             },
-            {
+           /* {
               type: "category",
               label: "Campaign",
               collapsed: true,
@@ -568,7 +568,8 @@ module.exports = {
                 "platform_concepts/engagement/outbound/outbound-campaigns/viber-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
               ],
-            },
+            }, */
+            "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
             "platform_concepts/engagement/outbound/filter",
             "platform_concepts/engagement/outbound/notification-engine",
           ],
