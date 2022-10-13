@@ -1,7 +1,6 @@
 ---
 title: Conversation Design Guidelines
-sidebar_label : Conversation Design
-
+sidebar_label : Conversation design
 ---
 Some advice from our conversation design experts. 
 ### Conversation Design | More Human Less Bot

@@ -1,6 +1,6 @@
 ---
 title: Upgrade to New Engage Module (for app bots)
-sidebar_label : Upgrade Engage (App to Cloud)
+sidebar_label : Upgrade engage (App to Cloud)
 ---
 
 App bots are now provided with an option to upgrade the Engage module by migrating all the campaign and audience data to the new engage module. 

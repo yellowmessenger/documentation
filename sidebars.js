@@ -22,40 +22,53 @@ module.exports = {
     "tutorials/integrations",
     "tutorials/webinars",
   ],
+
+  //cookbook- user guides 
+
+
   cookbooks: [
+
     "cookbooks/getting_started",
     "cookbooks/conversation-design",
-    "cookbooks/Upgrade_new_engage_app",
+  
+    {
+      type: "category",
+      label: "Configurations in studio-builder",
+      collapsed: true,
+      items: [
+          "cookbooks/newcard",
+      ],
+    }, 
     
     {
       type: "category",
-      label: "Basic",
-      items: ["cookbooks/multilingual"],
-    },
-    {
-      type: "category",
-      label: "Understanding channels 101",
+      label: "Understand engage module",
       collapsed: true,
       items: [
-        "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
-        "cookbooks/Understanding channels 101/fbm-chatbot-101",
-        "cookbooks/Understanding channels 101/gbm-chatbot-101",
+        "cookbooks/Upgrade_new_engage_app",
         "cookbooks/Understanding channels 101/email-outbound-101",
         "cookbooks/Understanding channels 101/sms-india-101",
+
       ],
-    },
+    }, 
+
     {
       type: "category",
-      label: "Template Bots",
+      label: "Configure bots for specific channel",
       collapsed: true,
       items: [
-        "cookbooks/template-bots/model-bot",
-        // "cookbooks/template-bots/customer-support-bot",
-        "cookbooks/template-bots/customer-support-bot",
-        "cookbooks/template-bots/faq",
-        "cookbooks/template-bots/lead-generation",
-      ],
-    },   
+
+        {
+          type: "category",
+          label: "Understanding channels 101",
+          collapsed: true,
+          items: [
+            "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
+            "cookbooks/Understanding channels 101/fbm-chatbot-101",
+            "cookbooks/Understanding channels 101/gbm-chatbot-101",
+
+          ],
+        },
 
     {
       type: "category",
@@ -82,15 +95,13 @@ module.exports = {
             "cookbooks/voice-as-channel/excuteandswitchflow",
           ],
         },
-
-
       ],
     },   
 
 
     {
       type: "category",
-      label: "WhatsApp As A Channel",
+      label: "WhatsApp as a channel",
       collapsed: true,
       items: [
         {
@@ -105,7 +116,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Channel Guide",
+          label: "Channel guide",
           collapsed: true,
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
@@ -115,7 +126,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Things To Know",
+          label: "Things to know",
           collapsed: true,
           items: [
             "cookbooks/whatsapp-channel/things-to-know",
@@ -130,6 +141,26 @@ module.exports = {
         "cookbooks/whatsapp-channel/updates",
       ]
     }
+  ],
+},   
+/*
+{
+  type: "category",
+  label: "Template bots",
+  collapsed: true,
+  items: [
+    "cookbooks/template-bots/model-bot",
+    // "cookbooks/template-bots/customer-support-bot",
+    "cookbooks/template-bots/customer-support-bot",
+    "cookbooks/template-bots/faq",
+    "cookbooks/template-bots/lead-generation",
+  ],
+}, 
+
+*/
+
+
+
   ],
 
 
@@ -291,7 +322,6 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/inbox/chats/getstartedwithlivechat",
-            "platform_concepts/inbox/chats/types-of-chat",
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/tickets/bulkaction",
             "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",

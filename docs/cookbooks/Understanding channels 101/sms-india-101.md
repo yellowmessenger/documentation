@@ -1,6 +1,6 @@
 ---
 title: Understanding SMS outbound for India 101
-sidebar_label: SMS Outbound
+sidebar_label: SMS outbound
 ---
 
 ### Common FAQs related to SMS communication in India
