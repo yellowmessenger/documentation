@@ -40,3 +40,10 @@ In this document, we shall see how to create an new email template.
    ![](https://i.imgur.com/mT2KuPj.jpg)
 
 5. Click **Save** to save the template.
+
+
+***
+
+**What next?**
+
+After creating an email template, create an email campaign as explained [here](/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md).
