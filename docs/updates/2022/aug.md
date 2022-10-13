@@ -31,6 +31,7 @@ One can configure email ticketing channel and raise tickets in Inbox cloud witho
 
 Queued chats would now be visible to Inbox Supervisor role. They also have more control over queued chats wherein admins & aupervisors can now assign or push chats from queue to agents in case of need.
 
+***
 
 ## 2. Insights
 
@@ -54,9 +55,7 @@ Introduced a new column, *ERRORMESSAGE*, in the Notifications report of Data Exp
 
 There are filters to drill down data that helps understand different reasons for notifications failing, retargeting of those users, plan how to avoid such failures in the future, etc.
 
-  
-
-![](https://lh5.googleusercontent.com/lGf1nGh4N7_pFLJf5o3pDSLHO-BvIdeHNsjTPpdwCF9axi2odI5lnZaaVld_Ms2siNHIZ4G1ceLNqo43x-08xnADnPFH7KGtgfn-C3JkcjdjA5Y5QRRZWGVPJMj-vYOGQ7r6tXLO6wPeWoxTAaqYieGm9sHW4O4MVAw_LOcBcRc78Sk3lcflYz82Nw)
+  ![](https://i.imgur.com/R2rvE4a.png)
 
   
 
@@ -78,7 +77,7 @@ From a billing point of view, irrespective of the number of messages sent in the
   
 ### 3.1 CleverTap integration  
 
-The CleverTap integration allows you to create Whatsapp templates on Yellow.ai and run campaigns for your user base directly on CleverTap. [Know more details](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/clevertap)(https://docs.yellow.ai/docs/platform_concepts/appConfiguration/clevertap).
+The CleverTap integration allows you to create Whatsapp templates on Yellow.ai and run campaigns for your user base directly on CleverTap. [Know more details](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/clevertap).
   
 ### 3.2 Media File support with caption for custom live agent integrations  
 
@@ -104,8 +103,8 @@ Clients using webhook-based live chat integrations will receive the agent reply 
 
 With this integration, you can now generate Cashfree tokens that can be passed on to WhatsApp pay to process payments. Post transactions you can also receive notifications on payment statuses.  
 
-----------
 
+***
 
 ## 4. Marketplace
 
@@ -118,7 +117,7 @@ With this integration, you can now generate Cashfree tokens that can be passed o
 *   Energy and Utility
    * Use cases like billing enquiries, payments, meter readings; change of personal information, address, and also provides information around new connections, transfer of connections, and latest customer benefit schemes.
 
-
+***
 
 ## 5. Engage
 
@@ -133,7 +132,7 @@ There is no need to create separate campaigns to check the end-user experience.
 Available only from Cloud Engage.
 :::
 
-Doc link : [https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign/#3-test-campaigns-recommended](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign/#3-test-campaigns-recommended)
+[Documentation link](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign/#3-test-campaigns-recommended)
 
  
 How does it help the customers?
@@ -172,12 +171,3 @@ Limitation:The migration to the new platform is not allowed for app bots that ha
 :::
   
 
-[CDP-104](https://yellowmessenger.atlassian.net/browse/CDP-104) In CSV Import Logs, include records that are skipped due to duplicacy
-
-[CDP-54](https://yellowmessenger.atlassian.net/browse/CDP-54) System User Events
-
-[CDP-50](https://yellowmessenger.atlassian.net/browse/CDP-50) Push Custom User Events API to push events for a userId
-
-[CDP-40](https://yellowmessenger.atlassian.net/browse/CDP-40) [UI] CDP Data Migration for Old Bots
-
-[CDP-37](https://yellowmessenger.atlassian.net/browse/CDP-37) User Auto-Suggest APIs
