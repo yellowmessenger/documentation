@@ -105,4 +105,4 @@ The media file can be **uploaded from the local** system or the relevant **media
 
 **What next?**
 
-After creating a Viber template, create a Viber campaign using the template as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md).
+After creating a Viber template, create a Viber campaign using the template as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
