@@ -1,8 +1,8 @@
 ---
 id: getting_started
-title: Create your First Bot
-description: Create your First Bot
-sidebar_label: Create your First Bot
+title: Create your first bot
+description: Create your first bot
+sidebar_label: Create your first bot
 featured: true
 rank: 1
 ---

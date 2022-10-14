@@ -1,6 +1,6 @@
 ---
 title: Understanding how chat search works 
-sidebar_label :  Chat search
+sidebar_label :  Chat search and filters
 ---
 
 
@@ -189,7 +189,7 @@ If a user has applied some filters already and then searches for another keyword
 |When user performs message search on chat tickets|chat-ticket-search|type - message, maxRole - Inbox Agent, Inbox Admin, Admin, botId, botName, moduleName|
 
 
-## 3. Tradeoffs made
+## 3. Tradeoffs
 
 When a message search result is clicked, instead of loading -100 & +100 messages from the matching part of the conversation, we'll load the entire conversation messages since we currently can't paginate the recent (bottom) messages.
 
