@@ -35,7 +35,7 @@ This article provides how to create campaigns for any channel. The process for c
 
   
 
-4. Select your preferred **Message template** ([WhatsApp](/platform_concepts/engagement/outbound/templates/whatsapptemplate.md), [Email](/platform_concepts/engagement/outbound/templates/email-template.md), [SMS](/platform_concepts/engagement/outbound/templates/sms-template.md), [Viber](/platform_concepts/engagement/outbound/templates/viber-template.md)) using the radio button. For more details, see [Templates overview](/platform_concepts/engagement/outbound/templates/overview.md).
+4. Select your preferred **Message template** ([WhatsApp](/platform_concepts/engagement/outbound/templates/whatsapptemplate), [Email](/platform_concepts/engagement/outbound/templates/email-template), [SMS](/platform_concepts/engagement/outbound/templates/sms-template), [Viber](/platform_concepts/engagement/outbound/templates/viber-template)) using the radio button. For more details, see [Templates overview](/platform_concepts/engagement/outbound/templates/overview).
 
 
 :::note
