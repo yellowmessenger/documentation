@@ -28,19 +28,21 @@ Following steps must be followed to create a WhatsApp chatbot:
 
 > If you haven't created your chatbot yet, create one by following these [steps](/docs/cookbooks/getting_started).
 
-3. To start with WhatsApp account creation, Go to **Channels > Communication > Select WhatsApp**.
+3. To start with WhatsApp account creation, go to **Channels > Communication > Select WhatsApp**.
 
 ![](https://cdn.yellowmessenger.com/sXl9Utb0eLlO1619540912699.png)
 
-4. Tap on **'Connect your WhatsApp'**.
+4. Tap on **Connect your WhatsApp**.
 
 ![](https://cdn.yellowmessenger.com/MXFhj6YWe2Jv1619542073374.png)
 
-5. Now, login to your Facebook account that is linked with your FB Business Manager account.
+5. Than, login to your Facebook account that is linked with your FB Business Manager account.
 
 ![](https://cdn.yellowmessenger.com/xluqZo9ktZSa1619783923015.png)
 
-> If you don't have an FB Business manager account, create one by following these [steps](https://business.facebook.com/).
+:::note
+If you don't have an FB Business manager account, create one by following these [steps](https://business.facebook.com/).
+:::
 
 6. Furnish your business details as mentioned in any legal business document that you have. Business name, Phone number, Business e-mail ID and Business website should be appropriate.
 
@@ -198,29 +200,34 @@ The following are the prerequisites to use WhatsApp Product Node -
 
 
 
-**Preview of WhatsApp SPM/MPM**
+#### Sample flow of WhatsApp single/multi product message (SPM/MPM)
 
-Currently WhatsApp supports either a single product or a vertical Carousel of up tp 30 Products in a single two way message.
+* Currently, WhatsApp supports either a single product or a vertical carousel of up tp 30 products in a single two way message.
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBi6bLeDxTXZYLfSLmXQRZRnj9fF2tLB2EhwmYDkGQJjmeZm9NUB9LAb7Mccg1wxZ2WSuuedEM7XUvGn8kWjbSPWPUr5AvE5z82SSCAjXjapahFU7ESTc6ZpfdTeow8ufN8vvKEQHNmHZ3yCjayKCCquz5w/Image.jpg)
+   <img src="https://i.imgur.com/0Fc5Asl.png" width="350px"/>
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBih1GthHmVycrsDsPPGRLCsvck4m9y7W1S7eaaj8MLqjNkVfSep1ZXTGQ6b4JC7EZEdw25etQAkAW5paVKEi7VvnZMsWeQ94nxkdVL6dBec1gvAQg9R16iT9xRDs1BHyUCpj5cF2jjSMeACqCBxDwRXJGU/Image.jpg)
+   <img src="https://i.imgur.com/Nlw4IDw.png" width="350px"/>
 
-Once the customer receives the product, they can click on the View button to expand the Product details or the vertical carousel of products as shown here.
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBZU6zphWjYMofeAr4JMv3DpRTuPyFtfdi7EYvtbRZ6EhzTpTJNcMMFJ7CLpY851hEhpSAN6WsjxoFTwMxBVJZkBRvzavvnR3EaLc9ti4VnHUmZGKCS2MYpHo77CggYSTizveA8zjRRj9uokkDdXAoGh7LF/Image.jpg)
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBBh2a7RMYZMFeEi4D5kqWj8jAodS5mmoCTmBz6aFkydM7RXPVnuhfzi24FLT28qmy22HTL2h5wwh6xE7igijaUxGmLcQHUVwV3F9RRSRrQhcC6RmasMS5JAKVmgbjAU9qwSc4DW5gNtPbUfaU3GaxWw3vz/Image.jpg)
+* The recipient can click just on the view option to expand the Product details or the vertical carousel of products as shown here.
 
-The recipient can go through the items and add the products to the cart by selecting the Add To Cart button across each item. After the products are added to the cart the user can send the cart to the business to proceed to the next steps.
+   <img src="https://i.imgur.com/GnDzjeE.png" width="350px"/>
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBpWtcdLBWwYoH7aPqqbXVpt8VJUexPA1BNmYncX9Zxk7cxk5V5UdvFEK9htnkrXTrqmPUNzxzYHA4enVtAckYdYzpGusnTTngvgKtseKSKyJrByexAy4xF32Mxg8yqxCF2xnsFpzWd9wNspZvFQg6Yvaum/Image.jpg)
+   <img src="https://i.imgur.com/CgEn4CB.png" width="350px"/>
+
+
+
+* The recipient can add preferred products to the cart using the Add To Cart option or the + option across each item. Once the products are added to the cart, the recipient can send the cart to the business to proceed to the next steps.
+
+   <img src="https://i.imgur.com/ClYimi7.png" width="350px"/>
+
 
 
 
 ### 2.1 Commerce manager (Catalog)
 
-The Facebook Commerce manager helps in listing the products to be used for SPM/MPM. It is not possible to send any product on WhatsApp without listing the products on FB Commerce Manager.
+The Facebook Commerce manager helps in listing the products to be used for SPM/MPM. It is not possible to send any product on WhatsApp without listing the products on the FB's Commerce Manager.
 
 
 :::note
@@ -230,82 +237,105 @@ To use catalog, it's mandatory for the Businesses to have a Business Manager Acc
 
 To create a Catalog in FB Commerce Manager for your Business - 
 
-1. Log on to [Facebook Business Manager](https://business.facebook.com/settings) and go to Business Settings. Use the client's BM to create Production Catalogs.
+1. Log on to [Facebook Business Manager](https://business.facebook.com/settings) and go to **Business Settings**. Use the client's BM to create Production Catalogs.
 2. Navigate to **Data Sources** and click on **Catalog**.
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBuDZiwwumLXySBD16uXo8YoTsbqbmzy3TTqUWXSPuYMCc5X4XgN1BS7ZFmPNC1tFxHB8rNdLjKdizs8ihpis5Uce65yQ9rMcY7MSfZo5pH27v8QDZyUYnuqJuNFpr9XAEtMsXrGePqizi2KNAGqzPkFb69/Image.jpg)
+   ![](https://i.imgur.com/kBNq6tm.png)
 
 
-3. Select **Create a New Catalog** and proceed.
+3. Select **Add** > **Create a New Catalog**.
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBBBaTMqZHeVYcSejnbpYdfQaFVLP4JjxipNVdR42njQKQ6JQuP9RGddTjNNBinvXVRoim7cKmv5kbKPLUtxsdeAXHxuvZ3ZdcQFn6JkHuKDYVukWH4QqnHssoMaHRFBVQZ3XYLz6YYwB2PVsKSq8qt3aWw/Image.jpg)
+   * If this will be your first catalogue, click Get Started. Select Create a catalogue and then click Get Started.
+   * If you already have at least one catalogue, you'll see all of your catalogues listed. Select + Add Catalogue to create a new one.
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBTy1qh81pXxw1St8NXU9ZiCfaw29VfbfkiWo9vFZyGem8Evjc3CSBKnpgnaX2Yw1PqPq9UYVxQ6azZQvjfN6sg21tCgDLt2b1rr5N7WVz5V7vRJtawHHqbPh3H6Cvpcd6d56iRgRLURKGxB5TGGQY67ncV/Image.jpg)
-
-After the Catalog is created you can go to the Commerce Manager available on the top right and manage your Catalog from the Commerce Manager Dashboard.
-
-You can add products to the Catalog either manually or by using a [Data Feed](https://www.facebook.com/business/help/1898524300466211?id=725943027795860). Data Feed is the ideal way to manage your products as it allows adding products with complete information through a CSV file and sync it with the Commerce Manager (CM). The sync can be automated on required cadence such as Hourly, Daily etc. You can find the CSV Headers and supported values on the Data Feed [here](https://www.facebook.com/business/help/120325381656392?id=725943027795860).
+   ![](https://i.imgur.com/EebkHmM.png)
 
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBuyu4D7azv7G1dxEowZ9xkhDt2v8U6rLPHiU1UdfJNMdykSfDimCXqZQbiDwKzDUSo4LHrBrq75pRv3jJViQrTF2SVxwLsSbbRPPsziakcfqCJ7tHguZWkJ6fntfTBcGDC5ssh6oiF5J5PkLEBz9sSgLoC/Image.jpg)
+4. Select the type of inventory you advertise or sell, then click **Next**.
+5. Choose how you want to add items to your catalogue - Upload product info, or Connect a partner platform
+6. Select the Business Manager account that your catalogue belongs to. This unlocks more ways to use your catalogue than selecting a personal account and enables you to assign other people permission to work on the catalogue. To select a Business Manager account, you must be a [business admin](https://en-gb.facebook.com/micro_site/url/?click_from_context_menu=true&country=IN&destination=https%3A%2F%2Fen-gb.facebook.com%2Fbusiness%2Fhelp%2F442345745885606&event_type=click&last_nav_impression_id=2bDTYoj64VaSUC2PQ&max_percent_page_viewed=52&max_viewport_height_px=711&max_viewport_width_px=1437&orig_http_referrer=https%3A%2F%2Fwww.google.com%2F&orig_request_uri=https%3A%2F%2Fen-gb.facebook.com%2Fbusiness%2Fhelp%2F1275400645914358&primary_cmsid=1275400645914358&primary_content_locale=en_GB&region=apac&scrolled=true&session_id=1QKGQufmtkRFBOVm3&site=fb4b&extra_data[view_type]=v3_initial_view&extra_data[site_section]=help&extra_data[placement]=%2Fbusiness%2Fhelp%2F1275400645914358).
+7. Enter a name for your catalogue and click **Create**.
 
+   ![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBTy1qh81pXxw1St8NXU9ZiCfaw29VfbfkiWo9vFZyGem8Evjc3CSBKnpgnaX2Yw1PqPq9UYVxQ6azZQvjfN6sg21tCgDLt2b1rr5N7WVz5V7vRJtawHHqbPh3H6Cvpcd6d56iRgRLURKGxB5TGGQY67ncV/Image.jpg)
+
+:::note
+For detailed instructions, see [Facebook's documentation](https://en-gb.facebook.com/business/help/1275400645914358?id=725943027795860)
+:::
+
+Once the Catalog is created, you can go to the Commerce Manager available on the top right and manage your Catalog from the Commerce Manager Dashboard.
+
+You can add products to the Catalog either manually or through [Data Feed](https://www.facebook.com/business/help/1898524300466211?id=725943027795860). 
+
+An ideal way to manage your products is through Data Feed as it allows adding products with complete information using a CSV file, and sync the data through the Commerce Manager (CM). 
+
+You can automate the sync on your preferred cadence such as Hourly, Daily etc. To find the CSV headers and supported values on the Data Feed, see [here](https://www.facebook.com/business/help/120325381656392?id=725943027795860).
+
+
+![](https://i.imgur.com/fL3D0n7.png)
 
 
 It is important to note the following points in Catalog before using its products.
 
 1. ContentID can be given from the Business side or will get generated automatically from FB side. This id needs to be unique and will be used as Product ID in the WhatsApp product msg node.
-2. While syncing the catalogs using a data feed it takes some amount of time to get updated during which the products might not be available to be sent on the WhatsApp.
-3. For Businesses in India its mandatory to have these field filled as per field specification for each product to be used as SPM/MPM. origin_country, importer_name, importer_address
-4. The above fields can be filled up in the CSV or can also be added a Data Rule to be filled by default from the Data Feed settings page.
+2. It takes some time to update products when syncing the catalogs using the data feed. You cannot send products on WhatsApp until this process is completed.
+3. For Businesses in India, it is mandatory to have these fields (origin_country, importer_name, and importer_address) filled in as per field specification bfor each product to be used as SPM/MPM. 
+4. You can add the field values (origin_country, importer_name, and importer_address) in the CSV file or use Data Rule to fill the values by default from the Data Feed settings page.
 
+   ![](https://i.imgur.com/1oEGBny.png)
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBkvFGsxxdFn7M8dDE3tUicF3JiqujQPiYfX6EgBAom9j7oypLAib25HxgqEZ8v9jULcPQQnD7s3KJbG6UtxmX4VZw2vdvGiqMF3Y1VUj62cNJw14xDdK93grTcbFeTbwgkpDzmyeYoARF36JJABSFKwrTR/Image.jpg)
 
 
 ### 2.2 Link Catalog to a WABA
 
-After setting up the Catalog, the Business has to share the Catalog Access with the BSP (Yellow.ai) for using the Items from the Catalog with their WABA Accounts created by Yellow. 
+Once the Catalog is set up, the Business has to share the Catalog cccess with the BSP (Yellow.ai) to use items from the Catalog in WABA accounts created by Yellow. 
 
-Follow these steps to understand how to share the Catalog access with the BSP and connect it to WABA - 
+To share Catalog access with the BSP and connect it to WABA - 
 
 1. On the Client's BM, go to **Catalog**  and select **Assign Partner**.
 
+   ![](https://i.imgur.com/BCh7ZBZ.png)
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhmeJsSnm2AS7T3qrYJF8Lo8jfpBs3aknSVSBdcHsaR7ujj5VKBnP9CaKPS679GtJkUw9HZH4bYGnsWpivVyr9i5W3WDjDYv4Xju9NyEcs542BjmQ2Em5ze2HFqWGAaBsas6aqBw9ZUVwpt3fW4wpLSAZN8tXXSaFXLDiH3kQgReUQ3YbeWWjoDzpwyUMab2NzNytT7/Image.jpg)
 
 2. Enter the BSP's (yellow.ai’s) BM ID to link to the Catalog of the business.
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhmeJsSnm2AS7T3qrYJF8Lo8jfpBs3aknSVSBdcHsaR7ujMtmcXMoUdE4JNDPawRsjkG91UnaP4RnPshzcoyBJJESgdtU9tHjkMYgzEs8zqPoaWFQDMYHJHzshzr4iryZPGfg1dNhRRwyWjGCqhVJFr7oRbfSLBDNBJ2ie2r3ow4Ljr1vwAhcAeyAfH9FxdHzxUT364/Image.jpg)
+   <img src="https://i.imgur.com/kzQnZTG.png" width="70%"/>
+
 
 3. The Businesses Catalog should show the BSPs name as partner for the Catalog. Provide Manage Catalog Permission.
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhmeJsSnm2AS7T3qrYJF8Lo8jfpBs3aknSVSBdcHsaR7ujVezW8k2tz55MJvG2n73CkcFwNexDsYRbW3Fd5KDgYFGjZj25NB26Yh2jU5TykvnBNaoSUgQgqLoaxy31X1vBDAg6xTR2KKBS8wAqnzuEWnvpgXZnMdbu4ndWV9aoBudd31exb9j8zt7Ey7ZuzPbeJHUVR/Image.jpg)
+   ![](https://i.imgur.com/23bYVrY.png)
+
 
 4. Once the access is shared, the BSP will get the Catalog listed at their end as shown below.
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhmeJsSnm2AS7T3qrYJF8Lo8jfpBs3aknSVSBdcHsaR7ujJZzRLNJqMJQkatSSZzLwrmWjhQ56Cu5dehJtCARRdt64KAC6cXvKKXU651Tz8Ro6CNLT2ZuyTeg3i2gB4EEuHduhStnq4M9LknqPBfr2na9GZeU8f91WSiujGMpu4TffxZWUH8MDSHaR1X7i9G36QxvuH/Image.jpg)
-
-5. After getting the access the BSP have to link the Catalog to the WABA for the final step of linking the WABA and the Catalog. For this the BSP has to go to the Phone Number Page on the WABA Account on BM. Click on the Cart Icon on the left pane and choose the Catalog which needs to be linked.
-
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhmeJsSnm2AS7T3qrYJF8Lo8jfpBs3aknSVSBdcHsaR7uj8sLArmjk1K9YebfCNdV4ZUU2SuZipr5abEx17fppYxg6RmWboLCy86nCSwaNF3LbAtUqpDTUD8AM3DYfkGCu3e5UrSpjzfexFrczDeVXDLQFTntbebmm8AYPkCr3W11NWJydDh8Y6PYTjqBp8m1mBGJCf/Image.jpg)
-
-6. This step will confirm that the Catalog is now ready to be used on the WABA and the Phone number attached to this WABA.
+   ![](https://i.imgur.com/XEcYZTy.png)
 
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhmeJsSnm2AS7T3qrYJF8Lo8jfpBs3aknSVSBdcHsaR7ujNzvE2HZ7vdLpGHuz1w3VCyf36SfdufEgQ4Ae3NtYGzxAnYKJ4bfLRpmjbRvhSbhTBqw2SjkEvkkwDdBsp6LYaYe1iCg2FpTNikrbFhKC3hJ2GKnZZMWw5CQ76P8io5fA7LveBNdoFgCuWkFWXjTBp7zaS/Image.jpg)
+5. After getting the access, the BSP have to link the Catalog to the WABA. To do this, the BSP has to go to the **Phone Number** page on the WABA Account on BM and click on the **Cart** icon on the left pane, and > Choose the Catalog which needs to be linked.
 
-### 2.3 Business and Compliance Info (Mandatory for Indian Number WABA)
+   <img src="https://i.imgur.com/5oJrzpP.png" width="70%"/>
 
-It is mandatory for Indian Businesses to have the Business and Compliance info filled to use the SPM/MPM feature on their WABA Accounts. 
+
+6. Your Catalog should appear in the Connected catalog list. This confirms that the Catalog is ready to be used on the WABA and the Phone number attached to this WABA.
+ 
+ <img src="https://i.imgur.com/6NAB8Uy.png" width="70%"/>
+
+
+
+### 2.3 Business & compliance info. (Mandatory for Indian number WABA)
+
+It is mandatory for Indian Businesses to provide the Business and Compliance info to use the SPM/MPM feature on their WABA accounts. 
+
 Log on to the [Cloud Platform](https://cloud.yellow.ai/) and go to **Channels** > **WhatsApp**, and fill in the details.
 
+<img src="https://i.imgur.com/g7gw6v9.png" width="65%"/>
 
-![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBVXyM2xz6h9eDx6b182VpB6NCa3RXLKPbrk6esDSxn6f5eJb59St4tLcJDwwN7pLpDoZYr1jqorLDSggkkRpVwWxY6D35na4iis2XPkbPGYhd7GvrkSuw7gTho5auU2U1G8kkrrA7HEgo7qtbbsYRJRHuQ/Image.jpg)
+
 
 [](https://www.craft.do/s/0loidngTNNAzkK/b/8CA0C2DD-ECD2-437F-BBFB-C1303B7E0966/How_to_Create_an_End_to_End_Catalog_)
 
 :::note
-To create a new Catalog Journey on Cloud Platform, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message).
+To create a new Catalog Journey on the Yellow.ai Platform, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message).
 :::
 
 
