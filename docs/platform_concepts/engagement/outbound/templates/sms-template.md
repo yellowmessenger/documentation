@@ -43,4 +43,4 @@ Body text | Enter the message body. To add variables such as verification code, 
 
 **What next?**
 
-After creating an SMS template, create an SMS campaign as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
+After creating an SMS template, create an SMS campaign as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md)
