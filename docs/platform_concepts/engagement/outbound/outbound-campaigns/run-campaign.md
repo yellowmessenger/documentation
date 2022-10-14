@@ -1,5 +1,5 @@
 ---
-sidebar_label : Create campaign
+sidebar_label : Outbound campaign
 title : Create outbound campaign
 ---
 
@@ -35,7 +35,7 @@ This article provides how to create campaigns for any channel. The process for c
 
   
 
-4. Select your preferred **Message template** ([WhatsApp](/platform_concepts/engagement/outbound/templates/whatsapptemplate.md), [Email](/platform_concepts/engagement/outbound/templates/email-template.md), [SMS](/platform_concepts/engagement/outbound/templates/sms-template.md), [Viber](/platform_concepts/engagement/outbound/templates/viber-template.md)) using the radio button. For more details, see [Templates overview](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview).
+4. Select your preferred **Message template** ([WhatsApp](/platform_concepts/engagement/outbound/templates/whatsapptemplate.md), [Email](/platform_concepts/engagement/outbound/templates/email-template.md), [SMS](/platform_concepts/engagement/outbound/templates/sms-template.md), [Viber](/platform_concepts/engagement/outbound/templates/viber-template.md)) using the radio button. For more details, see [Templates overview](/platform_concepts/engagement/outbound/templates/overview.md).
 
 
 :::note

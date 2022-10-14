@@ -344,12 +344,16 @@ html[data-theme="dark"] .DocSearch {
   color: #384248;
   border-radius: 6px;
   border: 1px solid #aef5a4;
+  border-left: 6px solid #aef5a4;
+
 }
 
 [class^="admonition-icon"] svg {
   fill: #180202;
 }
 
+
+  
 
 
 /* NOTE */
@@ -359,6 +363,13 @@ html[data-theme="dark"] .DocSearch {
   color: #384248;
   border-radius: 6px;
   border: 1px solid #3398DD;
+  border-left: 6px solid #3398DD;
+
+}
+
+[class^="admonition admonition-note alert alert--secondary"] [class^="admonition-icon"] svg {
+
+fill: #007ed4;
 }
 
 
@@ -403,4 +414,8 @@ h1, h2, h3, h4, h5, h6, p {
 [class^=docTitle] {
   font-family: 'Source Sans Pro';
   font-style: normal;
+}
+
+[class^="admonition-content"] a {
+  color: #5469d4;
 }
