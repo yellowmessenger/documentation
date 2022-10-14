@@ -9,9 +9,10 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 ## 1. Add a new card to the flow
 
 1.  Create a Function and store the variables in the function node as an Array  
-    Regarding the  code to use in the  function, refer to table Code and Card Mapping for the new card below :
+
+> Regarding the code to use in the  function, refer to table Code and Card Mapping for the new card in the next section.
     
-**![](https://lh4.googleusercontent.com/4cO111Ofd-H8E3OEtckrIB3_5GO1TTTa8Xo1-ZDGBBsFGisP1MgL7YQapLXlwmcOyZHvDv4QeZP2pyl1P44vyRyX27gruCdV9w0qy47NGb61vcPQbivhw5rL-deocHjRDoLCgj_yqBYVZ4jpIo21YVTHD4PQUbSxMKrH8v_6R60p0oVif0r2y9pFM9ID8ps3FC-mqg)**
+<img src="https://i.imgur.com/Wyoinwg.png" alt="drawing"/>
 
 
 <img src="https://lh4.googleusercontent.com/XiWHgdyJ2ehSRK0AIbbScfomr_ILze1UpkMAAiTd2_rqT6t2K6FgVwI51MyuthDCjTRsajNGKkFmagtbOpRHY07ifWEKuTia839WPWaoUx7ymMcp1p22mVZ-hQGlFErr_AsmeQO1WCujhCTMdveGpTt-oeumlLKnUmGjmvXumfvoAq6rf9dMJoy-DaEC7d4rKqTO-A" alt="drawing" width="80%"/>
@@ -20,14 +21,15 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 2.  Add another node in the carousel.
     - Delete the default carousel.
     - Select fetch from the variables that have been set in step 1.   
-    
-    ![](https://lh4.googleusercontent.com/olxhTgkdiH_u58_uPXc0sH26XKMLnWmodvPVRwyY4E1EAz3fV9nfH7f4MkXW1aCTx3pDzk8GVfipnPOjmRxXUoq8bM6fYMqmu9Kz2axKa-CJBEyuYZDyNjzpo-JRGLUloX0n8ghhtGO9N9zNoHkVP1T8TRWmOLt9KOKkd-V9_lq1WQspxVmbQkWFwwwlXB3P-IyNoQ)
-  
+    ![](https://i.imgur.com/YEX71jL.png)
     - Edit the carousel setting based on the new card type. To edit the card type to use, you can hover the cursor to the right side and then click it.  
-    Regarding the Card type to use, refer to Code and Card Mapping for the new card below.  
+
+    ![](https://i.imgur.com/NcUvtFR.png)  
     
-    ![](https://i.imgur.com/zmDlKF1.png)
-    ![](https://i.imgur.com/FGl6uxe.png)
+    ![](https://i.imgur.com/RApulNU.png)
+
+> Regarding the Card type to use, refer to Code and Card Mapping for the new card below.  
+
 
 ## 2. Code and Card Mapping for New Card
 
