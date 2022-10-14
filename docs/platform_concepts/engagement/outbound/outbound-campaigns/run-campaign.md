@@ -229,7 +229,7 @@ You can set business hours for each day of a week so that your campaign message 
 
 3. Click on each day of the week and configure business hours for that particular day. Enable **Business hours same every day** to set a common timeframe for all days.
 
-![](https://i.imgur.com/SLqHfLu.png)
+<img src="https://i.imgur.com/SLqHfLu.png" width="50%"/>
 
   
   

@@ -386,7 +386,9 @@ p img {
   fill: #f00 !important;
 } */
 
-
+img {
+  border: 0.5px solid #C4C4C4;
+}
 
 
 
