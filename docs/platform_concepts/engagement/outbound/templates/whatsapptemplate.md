@@ -179,10 +179,10 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 
   
 
-To learn to schedule a campaign to a user segment at the desired time, click [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md#3-schedule-message).
+To learn to schedule a campaign to a user segment at the desired time, click [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#3-schedule-message).
 
 ***
 
 **What next?**
 
-After creating a WhatsApp template, create a WhatsApp campaign using the template as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md).
+After creating a WhatsApp template, create a WhatsApp campaign using the template as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
