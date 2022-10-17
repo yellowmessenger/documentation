@@ -7,6 +7,7 @@ sidebar_label : Download report
 
 This section displays the reports of all the chats handled by the agents, their activity, and their performance during their interaction with the users.
 
+Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#3-default-agent-status) to know why are reports necessary and what are the parameters tracked in the report. 
   
 
 ![](https://i.imgur.com/ghVIVmj.png)

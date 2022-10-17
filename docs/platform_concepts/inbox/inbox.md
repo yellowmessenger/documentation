@@ -67,6 +67,7 @@ Support agents will have access to the chats/tickets/analytics/performance to he
 
 > You must have Admin access to perform these steps.
 
+To add inbox admin / inbox agent, follow the below steps: 
 
 1. Open **Access Control** from the overview page. 
 
@@ -77,13 +78,21 @@ Support agents will have access to the chats/tickets/analytics/performance to he
 
 ![](https://i.imgur.com/n5E7zhY.png)
 
+5. Supervisor role can be added for agents.
+    - You can make your agents as supervisors to a group where they can monitor & supervise the group's incoming chats as well as the agents.
+    - While you share inbox agent access, you will get an additional option to make them supervisior for a group.
+    - From the dropdown, select the group that you want to them supervisor for.  
+    - Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) to configure a group.
+    
+    ![](https://i.imgur.com/RNsGTzx.png)
 
-5. You can open the Invites tab and resend/revoke the invite. 
+
+6. You can open the Invites tab and resend/revoke the invite. 
 
 ![](https://i.imgur.com/Qd85Tlw.png)
 
-6. Once the agent accepts the request, their information will be listed in the users tab. 
-7. You can edit or delete the users (if required).
+7. Once the agent accepts the request, their information will be listed in the users tab. 
+8. You can edit or delete the users (if required).
 
 :::note
 If you have only admin access, you can give yourself the Inbox (agent/Admin) access to explore the Inbox functionalities. In Users tab, edit your row to add **inbox agent** access along with admin access.
@@ -137,7 +146,9 @@ The default statuses are as follows:
 
 On paper, **Busy** and **Away** are both identical in function but when you log out after changing your status to **Away**, your status will not be **Offline** it will remain as **Away**. This is to avoid missing out on the chats raised by the end users when all your agents have logged off within the working hours(example, for a lunch break).
 
-> Consider a scenario wherein, all your agents break for lunch from 1 PM - 2 PM. If they are considered **Offline** during that time, the chats raised during the time will be completely missed unless Offline chats are enabled.  Even if they are enabled, those chats will be only be captured in Open status and will not be assigned to agents immediately.
+**Example**
+
+Consider a scenario wherein, all your agents break for lunch from 1 PM - 2 PM. If they are considered **Offline** during that time, the chats raised during the time will be completely missed unless Offline chats are enabled.  Even if they are enabled, those chats will be only be captured in Open status and will not be assigned to agents immediately.
 Now if they are considered as **Away**, those chats will not be missed irrespective of Offline chats being enabled or not and the chats will be queued, then automatically assigned to agents after 2PM.
 :::
   
