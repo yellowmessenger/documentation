@@ -17,44 +17,55 @@ In this article, you will learn:
 You can chat with the bot user on this screen. This screen has the following functionalities to enable easy conversations:
 
 1. **Write a reply**
-    Simply type in any text and hit send button (or enable enter to send if you want the messages to be sent when you press the enter key).
-    ![](https://i.imgur.com/oGJnkHz.png)
+
+Simply type in any text and hit send button (or enable enter to send if you want the messages to be sent when you press the enter key).  
+
+<img src="https://i.imgur.com/oGJnkHz.png" alt="drawing" width="70%"/>    
 
     
 2. **Actions/Canned response**
-    You can add agent actions / [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown. This can be used for frequent replies so that the agent can simply select a canned response instead of typing the whole message multiple times.   
-    ![](https://i.imgur.com/IATnPlM.png)
+
+You can add agent actions / [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown. This can be used for frequent replies so that the agent can simply select a canned response instead of typing the whole message multiple times.    
+
+<img src="https://i.imgur.com/IATnPlM.png" alt="drawing" width="50%"/>    
+
 
 
 3. **Upload image/files/emojis**
 
-    Upload images/files to your message and add emojis to your text to make the conversation more interactive. 
+Upload images/files to your message and add emojis to your text to make the conversation more interactive. 
     
-    ![](https://i.imgur.com/54e5PWh.jpg)
+![](https://i.imgur.com/54e5PWh.jpg)
 
 4. **Internal notes**
-    This can be used to take notes/jot down the pain points/summarise the chat sent by the user. It is mostly used before transferring the chat to another agent. 
-    The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin).
-    ![](https://i.imgur.com/cae3RVU.png)
+
+This can be used to take notes/jot down the pain points/summarise the chat sent by the user. It is mostly used before transferring the chat to another agent. 
+The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin).  
+
+![](https://i.imgur.com/cae3RVU.png)
     
-    ![](https://i.imgur.com/NkEPDVb.png)
+<img src="https://i.imgur.com/NkEPDVb.png" alt="drawing" width="50%"/>    
 
-5. **Translate**
+5. **Translate**  
 
-    When [auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is configured, the messages sent by the users in regional languages are automatically translated to English to the agents on the chat. 
-    The reply- text typed in one language can be translated to the other by enabling the auto-translate toggle and selecting the respective language to which the reply must be translated.   
+When [auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is configured, the messages sent by the users in regional languages are automatically translated to English to the agents on the chat. 
+The reply- text typed in one language can be translated to the other by enabling the auto-translate toggle and selecting the respective language to which the reply must be translated.  
+
+
 ![](https://i.imgur.com/N6emsoU.png)
 
-![](https://i.imgur.com/QK8T02e.png)
+<img src="https://i.imgur.com/QK8T02e.png" alt="drawing" width="50%"/>    
+
 
 6. **Save or share chats**
 
-    Chats can be saved in CSV and PDF format to the local system. 
-    Chats can be shared with anyone by clicking the **chat copy URL** icon and sharing the link with the respective person. 
-    > Chats in this link will not be visible after 6 months. 
+Chats can be saved in CSV and PDF format to the local system. 
+Chats can be shared with anyone by clicking the **chat copy URL** icon and sharing the link with the respective person.   
+
+> Chats in this link will not be visible after 6 months. 
 
 
-    ![](https://i.imgur.com/bpmVToO.png)
+![](https://i.imgur.com/bpmVToO.png)
 
 
 ---
@@ -89,8 +100,9 @@ The following user details are available on this screen to provide agents with m
 :::info
 Custom fields can be marked for required to transfer /close tickets while creating them. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) to create custom fields.   
 
-<img src="https://i.imgur.com/fxaF4bz.png" alt="drawing" width="50%"/>  
+<img src="https://i.imgur.com/fxaF4bz.png" alt="drawing" width="40%"/>    
    
+
 > Only the Inbox (admins) can control this section.
 :::
 
@@ -98,14 +110,16 @@ Custom fields can be marked for required to transfer /close tickets while creati
 
 <img src="https://i.imgur.com/QLMOAPw.png" alt="drawing" width="50%"/>   
 
+
 - When the required field is entered, **Transfer** and **Resolve** buttons are clickable. You can select the next action.
 
 <img src="https://i.imgur.com/2VlG6GP.png" alt="drawing" width="55%"/>     
 
 
-- You can **Transfer** a ticket to a particular configured [Group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) if the query is of a particular topic and anyone from that group will be able to answer it. The ticket can be transferred to an [Agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) if you know that this query can be resolved only by the selected agent. The ticket is transferred to an agent even if they are offline. 
 
-<img src="https://i.imgur.com/pI10HoR.png" alt="drawing" width="90%"/>   
+- You can **Transfer** a ticket to a particular configured [Group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) if the query is of a particular topic and anyone from that group will be able to answer it. The ticket can be transferred to an [Agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) if you know that this query can be resolved only by the selected agent. The ticket is transferred to an agent even if they are offline.   
+
+<img src="https://i.imgur.com/pI10HoR.png" alt="drawing" width="70%"/>   
 
 
 
@@ -138,18 +152,21 @@ To Transfer/Resolve/Reopen multiple chats, follow the steps below:
 
 <img src="https://i.imgur.com/7b4DlPw.png" alt="drawing" width="60%"/>   
 
-- **Resolve**  
+- **Resolve**   
+
 Enter the required custom field and click **Resolve**.   
 
 ![](https://i.imgur.com/TL55Szx.png)
 
 
-- **Transfer**
+- **Transfer**  
+
 Select the Group/Agent name and confirm the transfer.
 
 ![](https://i.imgur.com/nivfDTH.png)
 
-- **Reopen**
+- **Reopen**  
+
 Mark **priority** as Low/Medium/High (Default=high), Select the **group/agent** (Default=automatic), Add **tags** if required and add a **description** (mandatory). Click **Reopen**.
 
 ![](https://i.imgur.com/OVNAirZ.png)
