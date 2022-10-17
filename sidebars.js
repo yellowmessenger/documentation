@@ -660,6 +660,8 @@ module.exports = {
       items: [
         "platform_concepts/channelConfiguration/overview",
         "platform_concepts/channelConfiguration/alexa",
+        "platform_concepts/channelConfiguration/web-widget",
+
         "platform_concepts/channelConfiguration/email-outbound",
         "platform_concepts/channelConfiguration/facebook-messenger",
         "platform_concepts/channelConfiguration/fb-lead-ads",
@@ -676,7 +678,6 @@ module.exports = {
         "platform_concepts/channelConfiguration/sms-outbound-india",
         "platform_concepts/channelConfiguration/teams",
         "platform_concepts/channelConfiguration/telegram",
-        "platform_concepts/channelConfiguration/web-widget",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
       ],
