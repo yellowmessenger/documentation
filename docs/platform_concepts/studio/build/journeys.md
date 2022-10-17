@@ -11,8 +11,8 @@ In this article, you will learn:
 2. [How to create a flow](#createflow)
 3. [Workflow- a variation of flow](#workflow)
 4. [How to configure a start trigger](#starttrigger)
-4. [How to trigger a flow?](#triggerflow)
-5. [How to export flow from one bot to another](#exportflow)
+5. [How to trigger a flow?](#triggerflow)
+6. [How to export flow from one bot to another](#exportflow)
 
 
 ## <a name="home"></a> 1. Home - Bot flow 
