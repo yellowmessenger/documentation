@@ -3,6 +3,11 @@ title: Launching Your First Inbound Campaign
 sidebar_label: Launching Your First Inbound Campaign
 ---
 
+
+Inbound engagement is carried out when customers visit the brand's website to explore the product or service offerings. The Inbound engagement helps in converting casual visitors into prospective leads or buyers.
+
+
+
 ## In this guide
 
 1. This guide shows you how to create a campaign with **Slide-in** widget. For more widgets, checkout the [**Types of Inbound Widgets**](../../inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations)

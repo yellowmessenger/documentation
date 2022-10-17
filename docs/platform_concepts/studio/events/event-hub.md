@@ -29,6 +29,8 @@ In this article, you will learn -
 
 ## Activate/deactivate event
 
+
+
 1. On the **Event** page, navigate to the category in which you want to activate or deactivate an event. 
 2. Click on the inactive event that you want to activate.
 3. Click the more options icon, <img src="https://i.imgur.com/VTnjRYM.png" width="10"/> > **Activate**.
@@ -41,8 +43,7 @@ In this article, you will learn -
 ![](https://i.imgur.com/JwRfFpM.png)
 
 :::note
-
-Similarly, you can deactivate an active event.
+Similarly, you can deactivate an active event. The flow will not trigger When you deactivate a [custom event] or system event.
 ![](https://i.imgur.com/tPm5oKy.png)
 :::
 
@@ -99,6 +100,17 @@ Similarly, you can deactivate an active event.
 | campaign-notification-updates | Receive Notification API delivery updates to the bot     |
 | whatsapp-referral             | Receive Click to WhatsApp(CTWA) referral property events |
 | fb-ad-referral                | Receive facebook ad referral property events             |
+
+
+
+
+### 4. System events
+
+Event | Description
+------ | ----------
+USER_CREATE | When a user record is created in (CDP) DB through any of the following operations:<br/>- Single User Creation in UI<br/> - User Creation through Builder<br/> - User Creation through API<br/> - User Creation through CSV Import
+USER_UPDATE | When a user record is updated in (CDP) DB through the following operations:<br/> - Single User Updation in UI<br/> - User Updation through Builder <br/> - User Updation through API<br/> - User Updation through CSV Import
+USER_DELETE | When a user record is updated in (CDP) DB through any of the following operations: <br/> - Single User Updation in UI<br/> - Bulk User Deletion from UI<br/> - User Deletion during MERGE<br/> - User Deletion through API
 
 ### <a name="int-1"></a> 4. Integration related events
 
@@ -233,7 +245,12 @@ By default, a scheduled event is in activate state. You can deactivate, edit, or
 ![](https://i.imgur.com/gAjgQEw.png)
 :::
 
-### <a name="cust-1"></a> 7. Custom Event
+
+
+
+
+
+### <a name="cust-1"></a> 8. Custom Event
 
 Besides the standard events that we have, you can also create custom events to capture your preferred activity.
 
