@@ -322,8 +322,8 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/inbox/chats/getstartedwithlivechat",
+            "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/chatsearch",
-            "platform_concepts/inbox/tickets/bulkaction",
             "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
             "platform_concepts/inbox/chats/instagrampolicy",
                  ],
