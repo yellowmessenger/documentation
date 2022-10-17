@@ -1,6 +1,6 @@
 ---
-title: CSAT
-sidebar_label : CSAT
+title: Customer satisfaction (CSAT)
+sidebar_label : Customer satisfaction 
 ---
 
 

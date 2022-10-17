@@ -1,7 +1,12 @@
 ---
-title : IVR Bots
-sidebar_label : IVR Bots
+title : IVR bots(for app platform)
+sidebar_label : IVR (for app)
 ---
+
+:::note
+All the bots created after JULY 2022 operate on cloud. Refer to [this](/docs/platform_concepts/channelConfiguration/Ivr) article for the latest update.
+:::
+
 
 ## PRI and SIP numbers
 

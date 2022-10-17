@@ -1,117 +1,146 @@
 ---
-title: Template Overview
-sidebar_label: Template Overview
+title: Template overview
+sidebar_label: Template overview
 ---
 
-Templates overview should be your go-to section for creating and managing all the channel-wise templates which will be used to create campaigns. 
-It has been created to give you overall view of all the templates created, its approval status and source of template creation and the messaging channel.
+A template is a message format that helps businesses to communicate with their customers. You can reuse common templates that you send to your customers. You can create templates for all the changes that Yellow.ai supports and the procedure for creating changes depending on the channel type. 
 
-## How to access template manager ? 
 
-Step 1. 
-Login to the yellow.ai platform → Select your bot → Click on ‘Engage’ from quick links
-![](https://i.imgur.com/WTdyVg4.jpg)
+## 1. Access Template manager
 
-You can also navigate to top left dropdown and switch to Engage module.
+To access Template manager, follow these steps -
 
-![](https://i.imgur.com/v7ejLMF.jpg)
+1. Log on to the yellow.ai platform and select your bot 
+2. Click on **Engage for campaigns**. [OR] From the menu, click **Engage**.
 
-Step 2. 
-Inside Engage module, select ‘Templates’ from left panel.
+   ![](https://i.imgur.com/WTdyVg4.jpg)
+   ![](https://i.imgur.com/v7ejLMF.jpg)
 
-![](https://i.imgur.com/ituSi4n.jpg)
+  
 
-Let's look at various functionalities in this page- 
+2. Inside Engage module, select ‘Templates’ from left panel.
 
-| Field | Description | 
+   ![](https://i.imgur.com/koMjQf0.jpg)
+
+
+
+| Field | Description |
 | -------- | -------- |
-| **Template Name**   | Name of the templates you create along with channel logo  | 
-|**Status**|Channel specific approval status.  Approved, Rejected, Pending.<br/> Only approved templates can be used to create templates.|
+| **Template Name** | Name of the templates with the respective channel logos.  |
+|**Status**| Current approval status of the template (Channel specific) - Approved, Rejected, or Pending.<br/> You can only use  approved templates in your campaigns.|
 |**Language**| Language of the message template|
-|**Created on**| Date of template creation.|
-|**Created by**| Admin's ID who created the template will be shown here. In case of whatsapp templates, if it is created from FB business manager we can find it from here. |
+|**Created on**| Date on which the template is created.|
+|**Created by**| Unique ID of the admin who created the template. For WhatsApp templates, if the template is created from FB business manager, you can see it here. |
 
-### Sync templates
-This option is used to sync the latest instance of the templates created in the channel’s native manager and the latest template approval status. 
 
-Whenever there is a change in the status or addition of templates from the channel's native manager side, that can be updated by clicking this option.
+## 2. Search & filter templates
 
-![](https://i.imgur.com/n9akrIp.png)
+Use the search box to fetch templates by its name. You can further filter templates by channels to easily find the template that you needed.
 
-### Search Templates 
-Type key words in search bar to easily find the templates. 
+![](https://i.imgur.com/J6a9jY7.png)
 
-You can also filter the templates based on channels and then search precisely.
+To see templates of a specific channel - 
+* Click on **All templates** and choose your preferred channel.
 
-### How to filter templates channel-wise ?
+## 3. Sync templates
 
-Click on "All templates" and filter it to specific channel from dropdown.
+You can get the latest instance of the templates created in the channel’s native manager and the latest template approval status. 
 
-All the available channels will be showed in dropdown.
+Click **Sync Templates**  to get the updated templates whenever there is a change in the status or addition of templates from the channel's native manager side.
 
-![](https://i.imgur.com/aa7t85z.jpg)
+![](https://i.imgur.com/STliaGv.png)
 
-### 'Duplicate & Edit' existing templates
+  
 
-From yellow's template manager you can duplicate the existing templates, make changes and save as new template.
 
-Sample Usecase:
-User wants to use the same content of a whatsapp template "image_cta" but with minor content change and added button.
+
+  
+
+
+
+## 4. Duplicate an existing template
+
+Templates also help in duplicating existing templates where you want to make slight changes in a template and use it instead of creating from scratch.
+
+
+Sample Use case:
+
+A brand x wants to use the same content of a whatsapp template "image_cta" but with minor content changes and added button.
+
+  
 
 1. Click on kebab menu icon against any template.
-2. Select "Duplicate" option and it will open the existing template.
-3. You can edit the content on each fields and save it as new template.
+2. Select **Duplicate**. It opens the current template.
+3. Edit the content wherever required, and save it as new template.
 
-**Note** : You cannot use the existing template name, try giving different name preferbaly meaningful for better searchability.
+  
+:::note
+You cannot use the existing template name. Specify a unique name, preferably meaningful can be searched easily.
+:::
+  
 
-Here we are adding a new CTA button and minor text change in existing templates and save it under new template name "image_cta_with_phone".
+> In the example screenshot, a template is duplicated with the following changes 
+> *  A new CTA button is added with 
+> * Minor text changes are made 
+>  * Saved with a new name *image_cta_with_phone*
+> ![](https://i.imgur.com/GVYprGv.gif)
 
-![](https://i.imgur.com/GVYprGv.gif)
+  
+  
+
+## 5. Delete rejected template(s)
+
+  
+You can delete only rejected templates. 
+
+**To delete a rejected template** - 
+
+On the Templates home page, navigate to the template that you want to delete.
+Click the More options icon > **Delete**.
+
+   ![](https://i.imgur.com/24ycziU.gif)
+
+:::note
+You cannot edit or delete an approved template.
+:::  
+
+**To remove all the rejected templates at once** - 
+
+1. On the Templates home page, click on the **Clean up** option.
+
+   You will see all the rejected templates. These are selected by default.
+   
+3. If you do not want to delete a specific template, uncheck it to deselect. 
+4. Click **Delete**.
 
 
-### 'Delete' rejected templates
+   ![](https://i.imgur.com/fKoTP1I.gif)
 
-We support **delete** option for rejected templates only.
-**Note** : Approved templates cannot be deleted or edited.
+  
 
-1. Click on kebab menu icon against any rejected template.
-2. Select "Delete" as shown below
 
-![](https://i.imgur.com/24ycziU.gif)
+## 6. FAQs
 
-### Bulk Delete or Clean up
+1. **What are the channels that Yellow.ai supports?**
 
-1. Click on "Clean up" option from top.
-2. It will filter all rejected templates and auto selected.
-3. You can also select specific templates only and delete to manage your template manager.
+   Currently, we support WhatsApp, SMS, Email, and Viber business. However, we also add Facebook messenger soon.
 
-![](https://i.imgur.com/fKoTP1I.gif)
+  
 
-### Edit Message Templates
+2. **What does the approval status Pending mean for whatsapp channels?**
 
-You can always view your already approved and pending Message Templates via Template overview. 
-Note that once submitted Message Templates **cannot be edited**, as they go through an approval process by WhatsApp. If you want to change an already approved or rejected Message Templates, the only way is to create a new Message Template.
+   WhatsApp reviews and approves each WhatsApp template.  Pending means that the template is pending for approval. WhatsApp is committed to responding to template submissions within 48 hours, excluding weekends and holidays.
 
-### FAQs
+  
 
-**1. What are the channels supported?**
+3. **How do I delete templates?**
 
-* Whatsapp
-* SMS
-* Email
-* Viber business
-* Facebook messenger (coming soon)
+   Currently we do not support deleting the templates from template manager considering the stability of recurring campaigns. However, you can delete rejected templates (applicable for WhatsApp).
 
-**2. What does the approval status "pending" means for whatsapp channels?**
-WhatsApp reviews and approves each message template, typically 48 hours or less, to maintain high-quality content and avoid spam.
+   You can raise a ticket to support@yellow.ai if you want to delete any templates.
 
-**WhatsApp is committed to responding to template submissions within 48 hours, excluding weekends and holidays.
+  
 
-**3. How do I delete templates?**
-Currently we do not support deleting the templates from template manager considering the stability of recurring campaigns. 
+4. **Can I change the language of templates?**
 
-You can raise a ticket to support@yellow.ai in case you want to delete any templates.
-
-**4. Can I change the language of templates?**
-
-Once approved, you cannot changed the language of the templates. Instead, you can create new templates.
+   Once approved, you cannot change the language of a template. You need to create new templates with your preferred language.

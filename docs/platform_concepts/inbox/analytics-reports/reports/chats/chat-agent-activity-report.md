@@ -1,12 +1,12 @@
 ---
 title: Chat Agent Activity Report
-sidebar_label : Agent Activity Report
+sidebar_label : Agent activity
 ---
 
-To generate Chat Agent Activity report go to *Inbox -> Chats -> Reports -> All reports -> Agent Activity -> Generate*
+> To learn how to generate  Chat Agent Activity report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
 
 :::info
-Only an admin can download reports
+Only an admin can download reports.
 :::
 
 |Sno|Field        |Description                  |Comments |

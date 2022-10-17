@@ -1,40 +1,69 @@
 ---
-title: Access Management and Roles
-sidebar_label : Access Management
+title: Manage bot access
+sidebar_label : Manage bot access
 ---
 
-### How to share Bot Access?
-
-**Keywords** : bot access, invite
-
-1. Go to `Configure` section from the left side bar, open `Access controls`.
-
-![Invite a user](https://cdn.yellowmessenger.com/p3rRw8AVjzHJ1615873798240.png)
-
-2. Click on `Add User` and add an email of the user you want to invite as well as the role under `Access control` field. Under the dropdown menu of `Access control`, you can see which role provides which privileges. Click on save.
-
-![Access Control](https://cdn.yellowmessenger.com/WNHDz8vddUQm1615873897626.png)
-
-3. The user you've invited will received an email from Yellow.ai to accept the bot invite. Follow to this [guide](signup-post-bot-invite) to learn how to accept a bot invite.
-
-
-### Managing Roles and Privileges
-
-Here is a list of roles and privileges you can assign to the users.
-
-| Role               | Privilege                                                                             |
-|--------------------|---------------------------------------------------------------------------------------|
-| Super Admin        | The owner of the bot who has access to everything. <br/>Can provide *Approver* access to someone else. <br/>Can mask certain DB column on UI.   <br/>View data in the bot tables and can [mask columns of a table](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.     |
-| Admin              | Admin has all the access to all the modules                                           |
-| Developer          | Developer has all the access to all the modules                                       |
-| Database Viewer    | Database viewer has only view access to the database                                  |
-| Approver           | Approver can publish bot from staging to production and need to have developer access |
-| Inbox (Admin)      | Inbox Admin can see all tickets, agents and modifty them                              |
-| Inbox(Agent)       | Agent can only respond to chat received from the user                                 |
-| Insights           | The user can see all the analytics pertaining to the bot                              |
-| Engagement (Admin) | Engagement (Admin) can see campaigns and configure audiences                          |
-| Engagement (User)  | Engagement (User) The user can only schedule campaigns                                |
-| Tester             | The user can only see the test cases pertaining to the bot                            |
+You as a Superadmin can share bot access with other members. The following are the different access roles the Yellow.ai platform supports.
 
 
 
+
+## 1. Share bot access
+
+
+  
+To share bot access with others - 
+
+1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click the Access Control icon <img src="https://i.imgur.com/FPcfiW9.png" width="20"/>.
+
+   ![](https://i.imgur.com/IlBIRqa.jpg)
+
+
+
+2. Click **+Invite user**.
+  
+   <img src="https://i.imgur.com/cBnpqIe.png" width="50%"/>
+
+   a. Enter the official **Email** address of the user  
+   
+   b. Choose your preferred role(s) in **Access control**. You can choose more than one role for a user.
+   
+Role | Description
+------ | ---------
+Super Admin | The owner of the bot who has access to everything. <br/>Can provide *Approver* access to someone else. <br/>Can mask certain DB column on UI. <br/>View data in the bot tables and can [mask columns of a table](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.
+Admin | Has entire access to all the modules.
+Developer | Has entire access to to all the modules.
+Database Viewer | Can only view the database
+Approver | Can publish bot from staging to production. An Approver should also has Developer access.
+Inbox (Admin) | Can provide support for chat queries or tickets of the bot; and can view analytics of his/her own performance (First response time, number of tickets closed).
+Inbox (Agent) | Agent can only respond to chats received from the user.
+Insights  (Hop) | Can view all the analytics pertaining to the bot.
+Engagement (Admin) | Can send campaigns and configure audience.
+Engagement (User) | Can only schedule campaigns.
+
+   c. Click **Save**.
+   
+The user receives an email to accept the invite. 
+
+***
+
+## 2. Accept bot invite
+  
+
+In this section, you will learn the following - 
+  
+
+1. Log on to https://cloud.yellow.ai/. If sign up to the platform, [see this](https://docs.yellowmessenger.com/docs/howtos/basics/create-a-bot).
+
+2. If you've received a bot invite on your email address, you should be able to see a notification. Click on that bell icon > Green tick.
+
+   ![](https://i.imgur.com/XKd1KqL.png)
+  
+   ![](https://i.imgur.com/Jm0geRB.png)
+
+
+  
+3. Click on the drop-down to see the list of bots you have access to.
+
+
+   <img src="https://i.imgur.com/Gg7cHBz.png" width="50%"/>

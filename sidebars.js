@@ -22,40 +22,53 @@ module.exports = {
     "tutorials/integrations",
     "tutorials/webinars",
   ],
+
+  //cookbook- user guides 
+
+
   cookbooks: [
+
     "cookbooks/getting_started",
     "cookbooks/conversation-design",
-    "cookbooks/Upgrade_new_engage_app",
+  
+    {
+      type: "category",
+      label: "Configurations in studio-builder",
+      collapsed: true,
+      items: [
+          "cookbooks/newcard",
+      ],
+    }, 
     
     {
       type: "category",
-      label: "Basic",
-      items: ["cookbooks/multilingual"],
-    },
-    {
-      type: "category",
-      label: "Understanding channels 101",
+      label: "Understand engage module",
       collapsed: true,
       items: [
-        "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
-        "cookbooks/Understanding channels 101/fbm-chatbot-101",
-        "cookbooks/Understanding channels 101/gbm-chatbot-101",
+        "cookbooks/Upgrade_new_engage_app",
         "cookbooks/Understanding channels 101/email-outbound-101",
         "cookbooks/Understanding channels 101/sms-india-101",
+
       ],
-    },
+    }, 
+
     {
       type: "category",
-      label: "Template Bots",
+      label: "Configure bots for specific channel",
       collapsed: true,
       items: [
-        "cookbooks/template-bots/model-bot",
-        // "cookbooks/template-bots/customer-support-bot",
-        "cookbooks/template-bots/customer-support-bot",
-        "cookbooks/template-bots/faq",
-        "cookbooks/template-bots/lead-generation",
-      ],
-    },   
+
+        {
+          type: "category",
+          label: "Understanding channels 101",
+          collapsed: true,
+          items: [
+            "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
+            "cookbooks/Understanding channels 101/fbm-chatbot-101",
+            "cookbooks/Understanding channels 101/gbm-chatbot-101",
+
+          ],
+        },
 
     {
       type: "category",
@@ -80,18 +93,15 @@ module.exports = {
             "cookbooks/voice-as-channel/localisation",
             "cookbooks/voice-as-channel/intentdetection",
             "cookbooks/voice-as-channel/excuteandswitchflow",
-            "cookbooks/voice-as-channel/Miscellaneous",
           ],
         },
-
-
       ],
     },   
 
 
     {
       type: "category",
-      label: "WhatsApp As A Channel",
+      label: "WhatsApp as a channel",
       collapsed: true,
       items: [
         {
@@ -106,7 +116,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Channel Guide",
+          label: "Channel guide",
           collapsed: true,
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
@@ -116,7 +126,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Things To Know",
+          label: "Things to know",
           collapsed: true,
           items: [
             "cookbooks/whatsapp-channel/things-to-know",
@@ -127,9 +137,30 @@ module.exports = {
         },
         "cookbooks/whatsapp-channel/building-flows",
         "cookbooks/whatsapp-channel/faqs",
-        "cookbooks/whatsapp-channel/testing"
+        "cookbooks/whatsapp-channel/testing",
+        "cookbooks/whatsapp-channel/updates",
       ]
     }
+  ],
+},   
+/*
+{
+  type: "category",
+  label: "Template bots",
+  collapsed: true,
+  items: [
+    "cookbooks/template-bots/model-bot",
+    // "cookbooks/template-bots/customer-support-bot",
+    "cookbooks/template-bots/customer-support-bot",
+    "cookbooks/template-bots/faq",
+    "cookbooks/template-bots/lead-generation",
+  ],
+}, 
+
+*/
+
+
+
   ],
 
 
@@ -143,6 +174,9 @@ module.exports = {
       items: [
     "platform_concepts/getting-started",
     "platform_concepts/Getting Started/keyboard-shortcuts",
+    "platform_concepts/configurations/access-management",
+
+
       ]
     },
     {
@@ -214,25 +248,7 @@ module.exports = {
 
         "platform_concepts/studio/database",
 
-        // {
-        //   type: "category",
-        //   label: "Table",
-        //   collapsed: true,
-        //   items: [
-        //     "platform_concepts/studio/table/create-tables",
-        //     "platform_concepts/studio/table/database-search",
-        //   ],
-        // },
         "platform_concepts/studio/events/event-hub",
-        // {
-        //  type: "category",
-        //  label: "Events",
-        //  collapsed: true,
-        //  items: [
-        //    "platform_concepts/studio/events/event-hub",
-           // "platform_concepts/studio/events/user-inactive",
-        //  ],
-       // },
 
         {
           type: "category",
@@ -287,7 +303,7 @@ module.exports = {
     },
 
 
-// Inbox 
+// Inbox Section 
 
     {
       type: "category",
@@ -295,33 +311,41 @@ module.exports = {
       collapsed: true,
       items: [
 
-        //overview 
+        //1. Overview 
         "platform_concepts/inbox/inbox",
-        // monitor doc 
-"platform_concepts/inbox/monitor",
-
-        // chats doc 
+        //2. monitor doc 
+        "platform_concepts/inbox/monitor",
+        //3. chats doc 
         {
           type: "category",
           label: "Chat",
           collapsed: true,
           items: [
-"platform_concepts/inbox/chats/types-of-chat",
-"platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
-          ],
-    },
-
-        // tickets doc 
+            "platform_concepts/inbox/chats/getstartedwithlivechat",
+            "platform_concepts/inbox/chats/chatsearch",
+            "platform_concepts/inbox/tickets/bulkaction",
+            "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
+            "platform_concepts/inbox/chats/instagrampolicy",
+                 ],
+         },
+        //4. tickets doc 
         {
           type: "category",
           label: "Tickets",
           collapsed: true,
           items: [
-"platform_concepts/inbox/tickets/email-ticketing",
-          ],
-    },
+            "platform_concepts/inbox/tickets/setupandconfig",
+            "platform_concepts/inbox/tickets/email-ticketing",
+            "platform_concepts/inbox/tickets/manualticket",
+            "platform_concepts/inbox/tickets/searchandfilter",
+            "platform_concepts/inbox/tickets/bulkaction",
+                  ],
+        },
 
-        // analytics - reports  doc  
+        //5. contacts doc
+        "platform_concepts/inbox/contacts",
+
+        //6. analytics - reports  
         {
           type: "category",
           label: "Analytics and Reports",
@@ -332,119 +356,126 @@ module.exports = {
               label: "Analytics",
               collapsed: true,
               items: [
-// to be added 
-                
-              ],
+            "platform_concepts/inbox/analytics-reports/analytics/agents",
+            "platform_concepts/inbox/analytics-reports/analytics/chats",
+            "platform_concepts/inbox/analytics-reports/analytics/tickets",
+                    ],
             },
-
             {
               type: "category",
               label: "Reports",
               collapsed: true,
               items: [
-"platform_concepts/inbox/analytics-reports/reports/reports",
-"platform_concepts/inbox/analytics-reports/reports/chat-agent-activity-report",
-"platform_concepts/inbox/analytics-reports/reports/chat-agent-performance-report",
-"platform_concepts/inbox/analytics-reports/reports/chat-archives-report",
-"platform_concepts/inbox/analytics-reports/reports/chat-report-metrics",
-"platform_concepts/inbox/analytics-reports/reports/ticket-agent-performance-report",
-"platform_concepts/inbox/analytics-reports/reports/ticket-archive-report",
+            "platform_concepts/inbox/analytics-reports/reports/reports",
+            {
+              type: "category",
+              label: "Chats",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-activity-report",
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-performance-report",
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
               ],
             },
+            {
+              type: "category",
+              label: "Email",
+              collapsed: true,
+              items: [
+                "platform_concepts/inbox/analytics-reports/reports/tickets/ticket-agent-performance-report",
+                "platform_concepts/inbox/analytics-reports/reports/tickets/ticket-archive-report",    
+              ],
+            },
+              ],
+             },
           ],
         },
-
-        // knowledgebase 
-
+        //7. knowledgebase 
         {
           type: "category",
           label: "Knowledgebase",
           collapsed: true,
           items: [
             "platform_concepts/inbox/knowledge-base/edit-publish-articles",
-           // "platform_concepts/inbox/knowledge-base/connecttosubdomain",
             "platform_concepts/inbox/knowledge-base/managingcategories",
-          ],           
+                 ],           
        },
 
-        // contacts doc - create new 
-"platform_concepts/inbox/contacts",
 
-        // settings 
-        
+        //8. settings 
         {
           type: "category",
           label: "Inbox Settings",
           collapsed: true,
           items: [
+          //teams
+          {
+            type: "category",
+            label: "Teams settings",
+            collapsed: true,
+            items: [
+            //add realtive paths here
+            "platform_concepts/inbox/inbox-settings/team/agents",
+            "platform_concepts/inbox/inbox-settings/team/groups",
+            "platform_concepts/inbox/inbox-settings/team/chat_working_hours",
+                    ],
+          },
             //productivity tools
-            {
-              type: "category",
-              label: "Productivity tools Settings",
-              collapsed: true,
-              items: [
-//add realtive paths here
-              ],
+          {
+            type: "category",
+            label: "Productivity tools settings",
+            collapsed: true,
+            items: [
+            //add realtive paths here
+            "platform_concepts/inbox/inbox-settings/productivitytools/productivity-tools",
+            "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
+            "platform_concepts/inbox/inbox-settings/productivitytools/knowledgebase",
+            "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
+                   ],
+          },
+          //workflows
+          {
+            type: "category",
+            label: "Workflow settings",
+            collapsed: true,
+            items: [
+            "platform_concepts/inbox/inbox-settings/workflows/custom-status",
+            "platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields",
+            "platform_concepts/inbox/inbox-settings/workflows/sla",
+            "platform_concepts/inbox/inbox-settings/workflows/chat-queue",
+            "platform_concepts/inbox/inbox-settings/workflows/offline-chat",
+            "platform_concepts/inbox/inbox-settings/workflows/chattranscript",
+            "platform_concepts/inbox/inbox-settings/workflows/tags",
+            "platform_concepts/inbox/inbox-settings/workflows/csat",
+            "platform_concepts/inbox/inbox-settings/workflows/video-call-settings",
+            "platform_concepts/inbox/inbox-settings/workflows/emailticketing",
+                    ],
             },
-
-            //teams
-            {
-              type: "category",
-              label: "Teams settings",
-              collapsed: true,
-              items: [
-//add realtive paths here
-
-
-              ],
-            },
-
-            //workflows
-            {
-              type: "category",
-              label: "Workflow Settings",
-              collapsed: true,
-              items: [
-//add realtive paths here
-
-"platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields",
-"platform_concepts/inbox/inbox-settings/workflows/chat-queue",
-"platform_concepts/inbox/inbox-settings/workflows/csat",
-"platform_concepts/inbox/inbox-settings/workflows/custom-status",
-"platform_concepts/inbox/inbox-settings/workflows/default-agent-statuses",
-"platform_concepts/inbox/inbox-settings/workflows/default-agent-statuses",
-"platform_concepts/inbox/inbox-settings/workflows/offline-chat",
-"platform_concepts/inbox/inbox-settings/workflows/tags",
-"platform_concepts/inbox/inbox-settings/workflows/video-call-settings",
-
-              ],
-            },
-
             //automation
-            {
-              type: "category",
-              label: "Automation Settings",
-              collapsed: true,
-              items: [
-//add realtive paths here
-              ],
-            },
-
- //add realtive paths here for security
-"platform_concepts/inbox/inbox-settings/security",
+          {
+            type: "category",
+            label: "Automation settings",
+            collapsed: true,
+            items: [
+            "platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic",
+            "platform_concepts/inbox/inbox-settings/automation/chat_auto_translate",
+            "platform_concepts/inbox/inbox-settings/automation/google-translate-api-inbox",
+            "platform_concepts/inbox/inbox-settings/automation/agent-actions",
+            "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
+                   ],
+          },
+          //security
+            "platform_concepts/inbox/inbox-settings/security",
           ],
         },
-
-// add other files
-"platform_concepts/inbox/manage-support-agent",
-"platform_concepts/inbox/chat-timeout",
-"platform_concepts/inbox/custom-usecases",
-
+    //other files
+    "platform_concepts/inbox/custom-usecases",
       ],
     },
 
 
-    //next section
+    //next section - Mobile SDK
 
     {
       type: "category",
@@ -556,7 +587,7 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/viber-template",
               ],
             },
-            {
+           /* {
               type: "category",
               label: "Campaign",
               collapsed: true,
@@ -567,7 +598,8 @@ module.exports = {
                 "platform_concepts/engagement/outbound/outbound-campaigns/viber-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
               ],
-            },
+            }, */
+            "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
             "platform_concepts/engagement/outbound/filter",
             "platform_concepts/engagement/outbound/notification-engine",
           ],
@@ -628,6 +660,8 @@ module.exports = {
       items: [
         "platform_concepts/channelConfiguration/overview",
         "platform_concepts/channelConfiguration/alexa",
+        "platform_concepts/channelConfiguration/web-widget",
+
         "platform_concepts/channelConfiguration/email-outbound",
         "platform_concepts/channelConfiguration/facebook-messenger",
         "platform_concepts/channelConfiguration/fb-lead-ads",
@@ -638,12 +672,12 @@ module.exports = {
         "platform_concepts/channelConfiguration/google-message",
         "platform_concepts/channelConfiguration/instagram",
         "platform_concepts/channelConfiguration/ivr-bots",
+        "platform_concepts/channelConfiguration/Ivr",
         //"platform_concepts/channelConfiguration/slack",
         "platform_concepts/channelConfiguration/slack2",
         "platform_concepts/channelConfiguration/sms-outbound-india",
         "platform_concepts/channelConfiguration/teams",
         "platform_concepts/channelConfiguration/telegram",
-        "platform_concepts/channelConfiguration/web-widget",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
       ],
@@ -651,9 +685,11 @@ module.exports = {
     {
       type: "category",
       label: "Integrations",
+      
       collapsed: true,
       items: [
         "platform_concepts/appConfiguration/overview",
+        "platform_concepts/appConfiguration/aws-s3",
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/aws-s3",
         "platform_concepts/appConfiguration/camspay",
@@ -674,6 +710,7 @@ module.exports = {
         "platform_concepts/appConfiguration/power-bi",
         "platform_concepts/appConfiguration/razorpay",
         "platform_concepts/appConfiguration/sap-io",
+        "platform_concepts/appConfiguration/salesforcelivechat",
         "platform_concepts/appConfiguration/salesforce-service-cloud",
         "platform_concepts/appConfiguration/saleforce-live-chat.md",
         "platform_concepts/appConfiguration/service-now",
@@ -697,8 +734,7 @@ module.exports = {
       label: "Configurations",
       collapsed: true,
       items: [
-        "platform_concepts/configurations/signup-post-bot-invite",
-        "platform_concepts/configurations/access-management",
+      //  "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/subscription",
         "platform_concepts/configurations/api-keys",
       ],

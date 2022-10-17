@@ -1,6 +1,6 @@
 ---
-title: Offline Ticketing / Chat
-sidebar_label : Offline Chat
+title: Offline Ticketing/Chat
+sidebar_label : Offline chat
 ---
 
 

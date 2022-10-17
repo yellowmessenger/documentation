@@ -1,12 +1,13 @@
 ---
 title: Ticket Agent Performance Report
-sidebar_label : Ticket Agent Performance Report
+sidebar_label : Agent performance 
 ---
 
-To generate agent performance report:
-* Open Inbox -> Tickets -> Reports -> All reports -> Agent performance.
-* Click Generate.
+> To learn how to generate Ticket Agent Performance Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
 
+:::info
+Only an admin can download reports.
+:::
 
 | Sno | Field  | Description | Comments
 |--|--|--|--|
@@ -35,6 +36,8 @@ To generate agent performance report:
 |23| Agent busy duration [HH:MM:SS]|The total time spent by the agent under the busy status on the selected day||
 |24| Agent away duration [HH:MM:SS]|The total time spent by the agent under the away status on the selected date|
 |25| Custom status duration [HH:MM:SS]|The total time spent by the agent under the custom statuses, if any, on the selected date||
+
+---
 
 ### Note
 

@@ -24,9 +24,11 @@ To get started, visit our official website (https://cloud.yellow.ai/ ) and **si
 
 Watch how to create a bot project.
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/LaeNb_IV-UE" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
-    
-:::info
-Get live sessions on how to create your own bot using yellow.ai by signing up to our free academy training: https://academy.ascend.yellow.ai/
+
+
+
+:::note  
+Get live sessions on how to create your own bot using yellow.ai by signing up to our free academy training [here](https://academy.ascend.yellow.ai/).
 :::
 
 

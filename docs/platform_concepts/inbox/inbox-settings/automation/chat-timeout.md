@@ -1,5 +1,5 @@
 ---
-title: Chat Timeout
+title: Inactivity Timeout
 sidebar_label : Chat Timeout
 ---
 

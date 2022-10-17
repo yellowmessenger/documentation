@@ -1,9 +1,11 @@
 ---
-title: Chat Report Metrics 101
-sidebar_label : Chat Report Metrics
+title: Chat Report Metrics explained
+sidebar_label : Descriptions of downloaded metrics
 ---
 
-### Average Response Time [ Archive Report]
+## 1. Average Response Time
+
+
 It is the average time taken by the agent to respond to each message of the customer in a chat conversation. This metric is present in the Archives report. Response time is calculated for every agent response in a conversation. It is calculated by the following logic;
 
 >**ART = Sum of time duration between end user’s initial and agent’s initial message divided by the number of replies in the conversation.**
@@ -30,7 +32,7 @@ ART = (15s + 15s + 15s) / 3
 
 Note: ART will be N/A if the user or the agent doesn’t reply in the conversation
 
-### **Average Response Time [Agent Performance Report]**
+## 2. Average Response Time 
 It is the average time taken by the agent to respond to the user’s message in all the conversations during the selected day. This metric is present in the Agent performance report.
 
 >**Avg ART = Sum of Average response time of each ticket / No. of tickets**
@@ -51,7 +53,7 @@ Suppose,
     
 Then their **ART for that day in the Agent Performance report is 00:01:00 [1 min]**
 
-### Average First Response Time [Agent Performance Report]
+## 3. Average First Response Time
 
 First response time is the time taken by the agent to make the first response to the customer after a ticket is assigned to them. The average first response time is the average time taken by the agent to make the first response in all the tickets assigned to them that day
 
@@ -78,7 +80,7 @@ Suppose,
 Then their **Avg FRT for that day in the Agent Performance report is 00:00:30 [30 sec]**
 
 
-### Average Handling Time [Agent Performance Report]
+## 4. Average Handling Time 
 
 Handling time is the total time taken by the agent to resolve the ticket. Average handling time is the average time taken by the agent to resolve all the tickets assigned to them during that day
 
@@ -102,7 +104,7 @@ Suppose,
 Then their **Avg Handling Time for that day in the Agent Performance report is 00:05:00 [5 min]**
 
 
-### User Wait time [Archive Report]
+## 5. User Wait time 
 
 User wait time is the time a customer waits in a QUEUE or OPEN state before an agent is assigned to the ticket. This metric provides insights into the operating effectiveness of the customer support team.
 
@@ -115,7 +117,7 @@ Example conversation B,
 
   Here, the **user wait time would be 00:05:00 [5 mins].**
 
-### Customer agent interactivity time [Archive Report]
+## 6. Customer agent interactivity time 
 
 Customer agent interactivity is the total time duration in which both the parties - customer and the agent, chat in that conversation. It is basically the agent handling time of that ticket.
 
@@ -123,7 +125,7 @@ Customer agent interactivity is the total time duration in which both the partie
 
 Considering the example conversation B, the **customer agent interactivity time would be 00:25:00 [25 mins]**
 
-### Spent time [Archive Report]
+## 7. Spent time 
 
 It is the total time a customer spends right from creating a live agent ticket to getting their query resolved.
 

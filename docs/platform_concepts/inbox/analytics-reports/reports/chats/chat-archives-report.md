@@ -1,12 +1,13 @@
 ---
 title: Chat Archives Report
-sidebar_label : Chat Archives Report 
+sidebar_label : Chat archives 
 ---
 
-To download Chat Archives Report Go to *Inbox -> Chats -> Reports -> All reports -> Chat Archives -> Generate*
+> To learn how to generate Chat Archives Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
+
 
 :::info
-Only an admin can download reports
+Only an admin can download reports.
 :::
 
 |Sno|Field        |Description                  |Comments |
