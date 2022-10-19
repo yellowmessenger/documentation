@@ -10,7 +10,9 @@ In this article, you will learn:
 1. [Home flow- how a bot works](#home)
 2. [How to create a flow](#createflow)
 3. [Workflow- a variation of flow](#workflow)
-4. [How to trigger a flow?](#triggerflow)
+4. [How to configure a start trigger](#starttrigger)
+5. [How to trigger a flow?](#triggerflow)
+6. [How to export flow from one bot to another](#exportflow)
 
 
 ## <a name="home"></a> 1. Home - Bot flow 
@@ -218,7 +220,7 @@ Workflow is the same as any other flow page, it will have a start node. Nodes co
   
 ---
 
-## <a name="triggerflow"></a> 4. Configure start trigger
+## <a name="starttrigger"></a> 4. Configure start trigger
 
 To configure a start trigger, follow the steps below:
 
@@ -276,7 +278,7 @@ Flow is triggered using one of the following:
 
 ---
 
-## 5. Trigger the flow
+## <a name="triggerflow"></a> 5. Trigger the flow
 
 When you are configuring a bot, there could be several complex flows in the bot. You need to always ensure whether the outcome of a flow is as desired before moving on to the next flow and it’s tedious to run the entire bot every time you make some change in a flow.
 
@@ -354,6 +356,57 @@ To preview a bot via code (embedded on your website), follow the steps below:
 3. Paste the code in the Header or body of your website as per your need to preview the flow.
 
 ---
+
+## <a name="exportflow"></a> 6. Export flow from one bot to another
+
+:::note
+- Export flow will work only for bots created after Oct 2021.
+- Export flow will work for all the bots irrespective of region. While cloning flows to another bot, source and destination has to be of the same region.
+:::
+
+To export flow from one bot to another, follow the given steps:
+
+1. Click **Access Control**.
+
+![](https://i.imgur.com/2LmTBoA.png)
+
+
+2.  Click **Marketplace** > **Upload component** > **Journey**.  
+      
+![](https://i.imgur.com/L6ijwJK.png)
+
+3. Fill in relevant details. Click **Next** > Next for Bot variables > **Submit**.  
+      
+![](https://i.imgur.com/yvJl50R.jpg)
+      
+![](https://i.imgur.com/3s6LBMN.png)
+      
+![](https://i.imgur.com/UGtIhmG.png)
+
+4. Click  **Test** (Don’t click on “Submit for review”). Click on Test (again) > Select environment as **Staging** and the bot name where the flow needs to be copied. Click on **Import**.
+  
+:::note 
+All the flows tagged to a particular category will also get copied to another bot along with the test flow. Thus, we recommend creating a different category for the flow that needs to be copied to other bots.  
+:::
+
+![](https://i.imgur.com/nNj4fLg.png)
+  
+![](https://i.imgur.com/anejKNs.png)
+
+![](https://i.imgur.com/jPDf6T8.png)
+
+![](https://i.imgur.com/JY4Sy85.png)
+
+5. Check the bot to which the flow is copied. The copied flow is reflected with a red dot.  
+
+:::note 
+In case any other flows get copied along with the test flow, this would have happened because all the flows were tagged under a single category and unwanted flows can thus be deleted manually.  
+:::
+     
+![](https://i.imgur.com/XF0tnuq.png)
+
+   
+----
 
 **What Next?**
 
