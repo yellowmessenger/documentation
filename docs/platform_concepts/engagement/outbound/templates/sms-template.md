@@ -25,7 +25,7 @@ Option | Description
 -------- | ---------
 Template name | Name the template. Name should be in lower case and you can only use underscore as a special character. Example: sms_name
 Sender ID | Enter the sender ID from which you want to send the current SMS.
-Template ID | Enter 
+Template ID | Unique identifier of the SMS template approved by the DLT portal in India. It is a numberic value with length between 12 and 19 characters. You can find this against the template from the DLT portal of the brand.
 Language | Choose the language of the message.
 Body text | Enter the message body. To add variables such as verification code, payment links, or first nam, use {{ }}. For Example: {{CustName}}<br/>To create a new variable, use the structure {{*variable_name_comes_here*}} - ie, the variable name between double curly brackets.
 

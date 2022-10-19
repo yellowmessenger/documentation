@@ -24,11 +24,13 @@ In this article, you will learn -
 
    f. [Schedule events](#sch-1) 
 
-   g. [Custom events](#cust-1) 
+   g. [User events](#7-user-360-events)
 
+   h. [Custom events](#cust-1) 
 
-## Activate/deactivate event
+***
 
+## 1. Activate/deactivate event
 
 
 1. On the **Event** page, navigate to the category in which you want to activate or deactivate an event. 
@@ -50,7 +52,7 @@ Similarly, you can deactivate an active event. The flow will not trigger When yo
 
 
 
-## Type of Events
+## 2. Type of Events
 
 ### <a name="wid-1"></a> 1. Widget related events
 
@@ -88,7 +90,7 @@ Similarly, you can deactivate an active event. The flow will not trigger When yo
 | note-update | When ticket note is updated by agent |
 | ticket-assigned-UI | When a ticket is created from the bot messages from Inbox |
 | ticket-inactive | When a ticket is marked as inactive |
-| ticket-queue-to-open | When a ticket is moved from queued to open state |                            |
+| ticket-queue-to-open | When a ticket is moved from queued to open state |
 
 ### <a name="eng-1"></a> 3. Engage related events
 
@@ -103,14 +105,6 @@ Similarly, you can deactivate an active event. The flow will not trigger When yo
 
 
 
-
-### 4. System events
-
-Event | Description
------- | ----------
-USER_CREATE | When a user record is created in (CDP) DB through any of the following operations:<br/>- Single User Creation in UI<br/> - User Creation through Builder<br/> - User Creation through API<br/> - User Creation through CSV Import
-USER_UPDATE | When a user record is updated in (CDP) DB through the following operations:<br/> - Single User Updation in UI<br/> - User Updation through Builder <br/> - User Updation through API<br/> - User Updation through CSV Import
-USER_DELETE | When a user record is updated in (CDP) DB through any of the following operations: <br/> - Single User Updation in UI<br/> - Bulk User Deletion from UI<br/> - User Deletion during MERGE<br/> - User Deletion through API
 
 ### <a name="int-1"></a> 4. Integration related events
 
@@ -212,6 +206,8 @@ If there are any specific use-cases around inactivity that you'd like to impleme
 :::
 
 
+
+
 ### 6. <a name="sch-1"></a> Schedule events
 
 Use Schedule events to create events that define the time at which specific workflows of your choice need to be triggered.
@@ -247,20 +243,44 @@ By default, a scheduled event is in activate state. You can deactivate, edit, or
 
 
 
+### 7. User 360 events
+
+These are sytem events that helps in triggering flows or perform actions on user profile related activities - when a user is created, user details are updates, and user profile is deleted.
+
+The following are some real-time use cases that you can solve with these events - 
+
+* Send onboarding campaigns when a new user is created
+* Send message when a user information is updated or deleted.
+* Sync data to an external CRM through APIs when a user is added/upated/deleted.
+* Sync data from an external database through APIs when these events occur.
+
+Event | Description | Sample payload
+------ | ---------- | -------------
+USER_CREATE | When a user record is created in (CDP) DB through any of the following operations:<br/>- Single User Creation in UI<br/> - User Creation through Builder<br/> - User Creation through API<br/> - User Creation through CSV Import | { <br/>    "user": {   <br/>      "firstName": "kumar",   <br/>          "userName": "sasi",    <br/>     "userId": "10"  <br/>   }, <br/>    "userId": "10", <br/>    "timestamp": 1657713515000 <br/>  }
+USER_UPDATE | When a user record is updated in (CDP) DB through the following operations:<br/> - Single User Updation in UI<br/> - User Updation through Builder <br/> - User Updation through API<br/> - User Updation through CSV Import | **Setting an unset field**:<br/> { <br/>  "oldPayload": {}, <br/>  "newPayload": {<br/>"firstName": "sasiKumarT"<br/>},  <br/> "userId": "1",   <br/> "timestamp": 1657713515000, } <br/> <br/> **Updating an already set field**: <br/>{ <br/>  "oldPayload": {<br/>"firstName": "sasiKumarT"<br/>}, <br/>  "newPayload": {<br/>"firstName":"raviKumar"<br/>}, <br/>  "userId": "1",  <br/> "timestamp": 1657713515000, <br/> }
+USER_DELETE | When a user record is updated in (CDP) DB through any of the following operations: <br/> - Single User Updation in UI<br/> - Bulk User Deletion from UI<br/> - User Deletion during MERGE<br/> - User Deletion through API | {<br/>    "user": {<br/>        "firstName": "kumar",    <br/>        "userName": "sasi",<br/>        "userId": "10"<br/>    },<br/>    "userId": "10",<br/>    "timestamp": 1657713515000<br/>  }
+
+
 
 
 
 ### <a name="cust-1"></a> 8. Custom Event
 
-Besides the standard events that we have, you can also create custom events to capture your preferred activity.
+Besides the standard events that we have, you can also create custom events to perform actions any other activities that are not listed on this page. 
 
-To create a custom event
+You can create custom events through API or builder nodes. However, the event details are captured only when the event is active.
 
-* In the **Event** tab, click **Custom events** > **+Add Event**. 
-* Add **Event name** and **Description**. 
+* When this event triggers via. API, the event is recorded and sent to the bot only when the event is active.
+* When the event triggers via. Builder nodes, the event is recorded only if the event is active. The event originates from the executor services.
+
+To create a custom event, follow these steps -
+
+1. In the **Event** tab, click **Custom events** > **+Add Event**. 
+2. Add **Event name** and **Description**. 
 
    <img src="https://i.imgur.com/N3hkCdN.png" width="300"/>
 
+3. Then, push the event data using the Push user event (`POST /v1/internal/event/`) API.
 
 :::note
 Once a custom event is created, you can activate, deactivate, edit or delete a custom event. 
