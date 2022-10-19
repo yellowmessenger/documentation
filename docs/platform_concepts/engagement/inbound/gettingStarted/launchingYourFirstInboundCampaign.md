@@ -4,7 +4,7 @@ sidebar_label: Launching Your First Inbound Campaign
 ---
 
 
-Inbound engagement is carried out when customers visit the brand's website to explore the product or service offerings. The Inbound engagement helps in converting casual visitors into prospective leads or buyers.
+Inbound engagement is a method to attract customers by providing relevant information on the brand's website about their product or service offerings to attract more leads. The Inbound engagement helps in converting casual visitors into prospective leads.
 
 
 

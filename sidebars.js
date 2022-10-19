@@ -542,7 +542,7 @@ module.exports = {
                     "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
                     "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
                     "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
+                    // "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
                   ],
                 },
                 {

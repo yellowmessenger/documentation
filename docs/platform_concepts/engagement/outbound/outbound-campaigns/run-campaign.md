@@ -107,12 +107,12 @@ In case you want to switch to User module to add audience, you can save the camp
   
 
 ***
-  
+
 
   
 ## 2. Configure Template details
 
-This appears in the Basic Information stage once you select a channel template. You need to configure some settings depending on the channel and template. For example, seeting up the sender ID, and mapping variables used in the template.
+This appears in the *Basic information* screen once you select a channel template. You need to configure some settings depending on the channel and template. For example, setting up the sender ID, and mapping variables used in the template.
 
 This section guides you on how to configure template for each channel - 
 
