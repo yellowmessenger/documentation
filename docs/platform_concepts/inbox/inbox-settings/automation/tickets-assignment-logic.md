@@ -28,7 +28,7 @@ Steps to enable auto-assignment:
 
 ---
 
-  
+**Assignment logic**
 
 Three parameters dictate the chat ticket assignment logic, they are listed below:
 
