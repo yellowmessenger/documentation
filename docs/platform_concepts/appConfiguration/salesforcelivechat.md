@@ -1,6 +1,6 @@
 ---
-title : Saleforce-Live-chat
-sidebar_label : Saleforce-Live-chat
+title : Salesforce Live chat
+sidebar_label : Salesforce Live chat
 ---
 
 Yellow.ai Integration with Salesforce Live Chat allows you to seamlessly connect your Salesforce service with the yellow.ai platform.
@@ -11,11 +11,11 @@ In this integration you can use raise ticket node to create a conversation with 
 
 ![drawing](https://lh4.googleusercontent.com/L3cHYG59TLNA0GGtVd2U6iNfvcLW4F4va1W9o1_FMQkoBcWRmd5_bwb8cOYMp8v7Qqsm9lfW4ixczRwkEMTNSvV7XdYcavTdZwDLUqNVq1pJA98wh_fPcnPzm6wDQP09IchlTCodpPw_FLBuO1a5oz2C9wBYh0BaMGCHoNJIAXcjIBUOw6OkWI98ug)
 
-:::note
 
-In raiseTicket action node, There are two option custom params.
 
-1. Salesforce Live Chat Custom Fields (Type: Array) Sample format of the value.
+In **raiseTicket action node**, There are two option custom params.
+
+1. **Salesforce Live Chat Custom Fields** (Type: Array) Sample format of the value.
 
 ```
 [
@@ -51,7 +51,7 @@ In raiseTicket action node, There are two option custom params.
 
 ```
 
-2. Salesforce Live Chat Custom Entities: (Type: Array)
+2. **Salesforce Live Chat Custom Entities**: (Type: Array)
 
 ```
 [
@@ -87,7 +87,7 @@ In raiseTicket action node, There are two option custom params.
 ]
 
 ```
-:::
+
 
 
 ## 2. Configuration  

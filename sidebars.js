@@ -712,7 +712,6 @@ module.exports = {
         "platform_concepts/appConfiguration/sap-io",
         "platform_concepts/appConfiguration/salesforcelivechat",
         "platform_concepts/appConfiguration/salesforce-service-cloud",
-        "platform_concepts/appConfiguration/saleforce-live-chat.md",
         "platform_concepts/appConfiguration/service-now",
         "platform_concepts/appConfiguration/sftp",
         "platform_concepts/appConfiguration/shopify",
