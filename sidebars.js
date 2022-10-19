@@ -428,7 +428,6 @@ module.exports = {
             collapsed: true,
             items: [
             //add realtive paths here
-            "platform_concepts/inbox/inbox-settings/productivitytools/productivity-tools",
             "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
             "platform_concepts/inbox/inbox-settings/productivitytools/knowledgebase",
             "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",

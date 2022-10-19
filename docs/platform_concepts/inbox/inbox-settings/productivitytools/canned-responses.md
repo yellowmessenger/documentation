@@ -3,117 +3,76 @@ title: Canned Responses
 sidebar_label : Canned responses
 ---
 
+In this article, you will learn:
+1. [How to add canned responses for chat and email?](#add)
+2. [How to delete canned responses?](#delete)
 
-Canned Response are pre defined email notification for frequent replies, with which the support reps can reply to emails with ease. Other than customized template for individual mails, canned response can be sent to the frequently raised requests. It reduces the response time and also provides a personal touch to the request. The response can be made private or public according to your convenience. You can add, manage and share a canned response.
+---
 
+**What are canned responses?**
+
+Canned Responses are pre-defined email notifications for frequent replies, with which the support reps can reply to emails with ease. Other than a customized template for individual emails, the canned response can be sent to the frequently raised requests. It reduces the response time and also provides a personal touch to the request. The response can be made private or public according to your convenience. You can add, manage and share a canned response.
  
 It allows you to:
 
-* create and manage customizable templates for comments and issue descriptions
-* add automated actions to templates/chats
-* quickly insert favorite templates with just one-click
-
-
-### Manage Canned Responses
-
-
-Navigating to Canned Response is as below:
-
-1. Login to yellow.ai
-2. Click on Overview
-3. Select Inbox
-4. Navigate to Settings on the left pane
-5. Select Productivity tools
-
-
-![](https://i.imgur.com/uejMlCw.png)
-
-
-Managing Canned Response is easy and gives the list view of all the available canned response along with its template name and access ability. From the  page you can add, edit and delete the canned response.
-
-
-![](https://i.imgur.com/6MkZLxc.png)
-
-
-### To add a new canned response
+* Create and manage customizable templates for comments and issue descriptions.
+* Add automated actions to templates/chats.
+* Quickly insert favorite templates with just one click.
 
 
 There are two sections of canned responses:
-1. Chat
-2. Email
+1. **Chat**- Can text Text and Media as a response
+2. **Email**- Can have only Text as a response
 
-Based on the requirement, the canned response can be added or edited.
-
-
-#### Adding Canned Response for Chat
-
-1. Click on Add New Canned Response available on the right hand side of the page.
-
-![](https://i.imgur.com/a2Wp4hI.png)
-
-2. Select from the dropdown - either Text or media.
-
-    * Text
-
-![](https://i.imgur.com/tIC9PXE.png)
-
-- Specify a Tag Name for the canned response.
-
-- Enter a brief response of the canned response in the text field provided.
-
-Both the fields are mandatory.
-
-You can also select from a list of available responses.
-
-- Click on Add to save.
-
-    * Media
-
-![](https://i.imgur.com/aaWFE2I.png)
+Based on the requirement, these canned responses can be added or edited. The process to add/delete canned responses for chat and email are the same. 
 
 
-Media Canned responses allow you to quickly send a predefined image or a file.For each canned response, you can also define a hashtag to quickly navigate to the correct response.
+## <a name="add"></a> 1. Add canned responses 
 
-- Specify a Tag Name for the canned response.
+Follow the steps below to add a canned response:
 
-- Select the media type - Image or file from the dropdown
-
-- Upload or drag and drop any stored file
-
-- Click on Add canned response to save.
+1. Open **Inbox** > **Settings**. Search and select **Canned responses**.
 
 
+![](https://i.imgur.com/LMuoMr3.png)
 
-#### Adding Canned Response for Email
+2. On the canned response page, there are 2 tabs - Chat and Email. You can configure responses for both chat and email in the same manner. Select any of the tabs.
 
-1. Click on Add New Canned Response available on the right hand side of the page in the Email section.
+> Email does not support Media canned response. 
 
-![](https://i.imgur.com/QGntXzv.png)
-
-2. Specify a Name for the canned response.
-
-3. Enter a brief response of the canned response in the text field provided.
-
-You can also select from a list of available responses.
-
-4. Click on Add to save.
+![](https://i.imgur.com/QlybMMh.png)
 
 
+3. Select **+Create canned response**. 
 
-#### Edit/Delete a Canned Response
+![](https://i.imgur.com/iBujuJF.png)
 
+4. Select Text or Media from the dropdown menu. 
+    - **Text**
+    Save a canned response as text by entering **Canned response text** along with required **expressions** like agent email, bot title, etc (can be copy pasted from the right panel).  
+    You can add a **Tag**. On the chats screen, when you type # and your tag, the response will be displayed. Example: #welcomemessage.
+    
+    ![](https://i.imgur.com/Zj1e8iL.png)   
 
-You can edit the canned response from the canned response list view page. To edit a canned response:
+    - **Media**
+    For media canned response, select media type as **Image/ File** and upload the image/file from your local system. (Image- JPEG, PNG format. File- Any format).
+    
+    ![](https://i.imgur.com/jsUqUB0.jpg)
+    
+5. Click **Create**.  
+6. All the canned responses will be displayed on the page.   
 
-- Click the three dots icon beside the Template name you wish to edit.
+![](https://i.imgur.com/N0kjNRg.png) 
 
-- From the Edit Canned Response form, edit the details and Save the changes.
+**These saved responses will be available in the chats section**
 
-Deleting Canned Response
+![](https://i.imgur.com/5CqmfB6.png)
 
- 
-You can delete the canned response from the canned response list view page. To delete a canned response:
+## <a name="delete"></a> 2. Edit/Delete canned response
 
-- Click the three dots icon beside the Template name you wish to delete. A pop up window confirming the delete operation appears.
+To edit/delete a canned response, click the 3 dots beside the Template name you wish to edit.
 
-- Click Delete to proceed. The response is deleted from the available list.
+1. Select **Edit**/**Delete**.
+2. Save the edited changes/ Confirm to delete.
+
+![](https://i.imgur.com/HuV4z76.png)

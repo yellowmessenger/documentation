@@ -2,8 +2,13 @@
 title: Edit & publish articles
 sidebar_label : Edit & publish articles
 ---
+**What is knowledgebase**
 
-When creating an article, multiple updates and reviews must be done before you publish it. Here's how you can effectively manage, edit & publish articles in the knowledge base.
+Multilingual Knowledge base is a self serve medium to automate incoming support queries this helps the live agents can focus on more important queries other frequent doubts from the end customer can be resolved through knowledgebase.
+
+---
+
+When creating these knowledgebase articles, multiple updates and reviews must be done before you publish it. Here's how you can effectively manage, edit & publish articles in the knowledge base.
 
 :::note
 Only **Admin, Inbox Admin & Inbox Supervisor** can create, read, update and delete content in the knowledge base. 
