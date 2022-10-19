@@ -107,14 +107,11 @@ You can test your bot in multiple languages, by simply selecting the language of
 ![](https://i.imgur.com/5pwiSUQ.png)
 
   
-
-To add multiple languages for your bot, go to **Overview** > **Configure** > **Edit Basic Details** > **Add language**.
-
+:::note
+To add supported languages to your bot, see [Languages](./languages-supported.md#2-add-languages).
+:::
   
 
-![](https://i.imgur.com/mJLXV1W.png)
-
-  
   
 
 ## 2.2 Conversation
@@ -285,21 +282,12 @@ You can customise this using **Whatsapp Quick reply index** and **Structure pref
 
   
 
-1. **Whatsapp Quick reply index**
+1. **Whatsapp Quick reply index**: Select your preferred indexing - *Numbers* (default), *Alphabets* or *Emojis* (numerical emojis).
 
   
 
-Select your preferred indexing - *Numbers* (default), *Alphabets* or *Emojis* (numerical emojis).
+2. **Structure prefix**: You can display the entire prefix with bold and italics. The default preset entry in this box is {{index}} which looks like the example above (when Type is numbers).
 
-  
-
-2. **Structure prefix**
-
-
-You can display the entire prefix with bold and italics. The default preset entry in this box is {{index}} which looks like the example above (when Type is numbers).
-
-  
-  
 
 WhatsApp Only
 
@@ -343,7 +331,7 @@ This helps you configure the error message to be displayed when validation fails
 > Sample message: "It seems I do not have a response to your input, can you try rephrasing it".
 
 
-### 2.2.4 Autoskipping Settings
+### 2.2.4 Autoskipping settings
 
 Enable this option to allow the bot to inform the user that it already has the information that is being provided.
 
@@ -400,52 +388,40 @@ This includes settings related to Natural language understanding which is based 
 Our Machine Learning model matches the user utterances (input sentences) to an intent with certain confidence which lies between 0 to 1. You can set your preferred confidence value.
   
 
-![](https://i.imgur.com/PcYb9KM.jpg)
+   ![](https://i.imgur.com/PcYb9KM.jpg)
 
   
 
-1. **Min confidence**
-
-  
-
-It is a minimum value calculated (as per the accuracy of intent predicted) below which intent will not be triggered.
+1. **Min confidence**: It is a minimum value calculated (as per the accuracy of intent predicted) below which intent will not be triggered.
 
   
 > For example, if the Min Confidence is set to 0.85, which means, bot will respond only when the confidence level for the intent predicted for the input text is over 85%.
 
   
 
-Use case: When a user wants to talk to someone from the support team and they ask the bot "Talk to your agent" or "Talk to tech support", bot must understand the intent and direct to "Transfer Agent" flow.
+   *Use case*: When a user wants to talk to someone from the support team and they ask the bot "Talk to your agent" or "Talk to tech support", bot must understand the intent and direct to "Transfer Agent" flow.
 
-<img src="https://i.imgur.com/7DM473O.png" width="300"/>
+   <img src="https://i.imgur.com/7DM473O.png" width="300"/>
 
-- Min Confidence is set to 0.85 and the user types "Talk to your agent", bot replies appropriately as the intent predicted is "Transfer Agent" and confidence is 1.
+- If Min Confidence is set to 0.85 and the user types "Talk to your agent", bot replies appropriately as the intent predicted is "Transfer Agent" and confidence is 1.
 
- <img src="https://i.imgur.com/k5bc5Tz.png" widht="100"/> 
+   <img src="https://i.imgur.com/k5bc5Tz.png" widht="70%"/>
 
-  
 
-- Min Confidence is set to 0.85 and the user types "Talk to tech support", bot will not be able to reply as confidence for the intent predicted is unknown.
-
-  
-
-![](https://i.imgur.com/aok3dur.png)
+- If Min Confidence is set to 0.85 and the user types "Talk to tech support", bot will not be able to reply as confidence for the intent predicted is unknown.
 
   
-  
 
-2. **Context confidence**
-
-  
-Enter the minimum confidence score required. It a minimum value calculated for the context accuracy below which the intent will not be triggered.
+   <img src="https://i.imgur.com/aok3dur.png" width="100%"/>
 
   
   
 
-3. **Secondary model confidence**
+2. **Context confidence**: Enter the minimum confidence score required. It a minimum value calculated for the context accuracy below which the intent will not be triggered.
 
   
-It is a global contextual model value, if the predected value is below the entered value, intent will not be triggered.
+  
+3. **Secondary model confidence**: It is a global contextual model value, if the predected value is below the entered value, intent will not be triggered.
 
   
 
@@ -567,8 +543,11 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 | **Custom SIP header** | This can be used as an additional parameter that can be passed to an agent while transferring the call to an Agent to pass along bot collected information. You can pass a key-value pair in JSON format which will get passed in the SIP header. |
 
 > An example of the Custom SIP header:  
-
-```[{“key”:“User-to-User”,  “value”:“name=david&product=heater&query=not turning off&priority=high&number=12345”}] ``` 
+> ```
+> [{
+>   “key”:“User-to-User”,  
+>    “value”:“name=david&product=heater&query=not turning off&priority=high&number=12345”
+>  }]``` 
 
 
   
