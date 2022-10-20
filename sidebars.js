@@ -459,7 +459,7 @@ module.exports = {
             items: [
             "platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic",
             "platform_concepts/inbox/inbox-settings/automation/chat_auto_translate",
-            "platform_concepts/inbox/inbox-settings/automation/google-translate-api-inbox",
+            //"platform_concepts/inbox/inbox-settings/automation/google-translate-api-inbox",
             "platform_concepts/inbox/inbox-settings/automation/agent-actions",
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
                    ],
