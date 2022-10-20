@@ -1,6 +1,6 @@
 ---
-title: Knowledgebase
-sidebar_label : Knowledgebase 
+title: Collaboration
+sidebar_label : Collaboration
 ---
 
 
