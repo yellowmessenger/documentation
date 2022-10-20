@@ -613,7 +613,9 @@ module.exports = {
           label: "Inbound Engagement",
           collapsed: true,
           items: [
-            {
+            "platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign",
+            "platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen",
+          /*  {
               type: "category",
               label: "Getting Started",
               collapsed: true,
@@ -622,8 +624,8 @@ module.exports = {
                 "platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen",
                 "platform_concepts/engagement/inbound/gettingStarted/testingInboundCampaign",
               ],
-            },
-            {
+            }, */
+          /*  {
               type: "category",
               label: "Inbound Widgets",
               collapsed: true,
@@ -632,7 +634,7 @@ module.exports = {
                 "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnWebsite",
                 "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnShopify",
               ],
-            },
+            }, */
             {
               type: "category",
               label: "Web Behaviour Triggers (When)",
@@ -650,7 +652,7 @@ module.exports = {
               items: [
                 "platform_concepts/engagement/inbound/audienceTargetting/audienceTargetingRules",
               ],
-            },
+            }, 
           ],
         },
       ],

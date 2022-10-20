@@ -395,7 +395,9 @@ li img {
 
 /* HEADINGS & BODY FONTS */
 
-h1, h2, h3, h4, h5, h6, p {
+
+
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Source Sans Pro';
   font-style: normal;
   letter-spacing: 0.15px;
@@ -408,16 +410,17 @@ h1, h2, h3, h4, h5, h6, p {
   line-height: 39px;
 }
 
-.markdown li {
-  font-family: 'Source Sans Pro';
-
-}
 
 [class^=docTitle] {
-  font-family: 'Source Sans Pro';
+  font-family: 'roboto';
   font-style: normal;
 }
 
 [class^="admonition-content"] a {
   color: #5469d4;
+}
+
+
+[class^="markdown"] > p {
+  font-family: 'roboto';
 }
