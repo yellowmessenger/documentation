@@ -38,8 +38,8 @@ Option | Description
 --------- | ---------
 Card placement | Choose the place of the widget on the destination site - Right or Left.
 Card / Button | Select your preferred color for the widget and the button that better suit your website theme. ![](https://i.imgur.com/D0S94Oy.png)
-Header text | Specify your preferred title for the widget. Applicable only for Slide in and Bar widgets.<br/>To modify font style and color, hover on the box and use the styling options that appear. ![](https://i.imgur.com/J0a2hCb.png)
-Subheader text | Specify your preferred text for the subheading.Applicable only for Slide in widget.<img src="https://i.imgur.com/ry4uPy3.png" width="500"/> <br/>To modify font style and color, hover on the box and use the styling options that appear.
+Header text | Specify your preferred title for the widget. Applicable only for Slide in and Bar widgets.<br/>To modify font style and color, hover on the box and use the styling options that appear.<br/> <img src="https://i.imgur.com/J0a2hCb.png" width="50%"/>
+Subheader text | Specify your preferred text for the subheading.Applicable only for Slide in widget. <br/><img src="https://i.imgur.com/ry4uPy3.png" width="400"/> <br/>To modify font style and color, hover on the box and use the styling options that appear.
 Button text | Specify a label name for the button. Applicable only for Slide in and **Bar** widgets. Similar to Header text box, you can hover on the box to see the font styling options. You can customize the font's color, size, and family. 
 Button Type | Choose the intended behavior of the button (in Slide in or Bar widget) - FlowTriggers (to trigger a bot flow), WhatsappChat (to start a WhatsApp conversation). ![ezgif.com-gif-maker.gif](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/068BB776-1320-44EE-951A-D501BCFBC578/A5A1CB8A-0FB0-4645-863A-D9A298E47851_2/PVO4h0BFE4M4Rz0Wvfxuod9P4fvy6LtD36ksiLAWdjwz/ezgif.com-gif-maker.gif)
 Flow triggers | For FlowTriggers, choose the flow that you want to trigger. Available for Slide In, Bar, and Chat Auto Popup.
