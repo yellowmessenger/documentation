@@ -133,7 +133,7 @@ This section guides you on how to configure template for each channel -
 
    <img src="https://i.imgur.com/Y1h9Ui3.png" width="350" height="auto"/>
 
-2. In **Select the email from which you want to send the campaign**, choose the email address from which you want to send the campaign.
+2. In **Select the email address from which you want to send the campaign**, choose the email address from which you want to send the campaign. To know how to add email accounts, see [Email channel](/platform_concepts/channelConfiguration/email-outbound.md)
 
 3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link 
 
