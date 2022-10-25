@@ -612,6 +612,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign",
+            "platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType",
             "platform_concepts/engagement/inbound/gettingStarted/campaignsOverviewScreen",
           /*  {
               type: "category",
@@ -633,7 +634,7 @@ module.exports = {
                 "platform_concepts/engagement/inbound/inboundWidgets/embedWidgetsOnShopify",
               ],
             }, */
-            {
+           /* {
               type: "category",
               label: "Web Behaviour Triggers (When)",
               collapsed: true,
@@ -642,15 +643,15 @@ module.exports = {
                 "platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorsInEcomm",
                 "platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorsInContentMarketing",
               ],
-            },
-            {
+            }, */
+         /*   {
               type: "category",
               label: "Audience Targeting (Who)",
               collapsed: true,
               items: [
                 "platform_concepts/engagement/inbound/audienceTargetting/audienceTargetingRules",
               ],
-            }, 
+            }, */
           ],
         },
       ],
