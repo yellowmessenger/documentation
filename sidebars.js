@@ -422,7 +422,7 @@ module.exports = {
               "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
                      ],
             },
-            
+
           //teams
           {
             type: "category",
@@ -460,7 +460,18 @@ module.exports = {
             label: "Automation settings",
             collapsed: true,
             items: [
+
+              //auto assign
+            {
+            type: "category",
+            label: "Auto assignment",
+            collapsed: true,
+            items: [
             "platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic",
+            "platform_concepts/inbox/inbox-settings/automation/stickyagent",
+            ],
+          },
+
             "platform_concepts/inbox/inbox-settings/automation/chat_auto_translate",
             //"platform_concepts/inbox/inbox-settings/automation/google-translate-api-inbox",
             "platform_concepts/inbox/inbox-settings/automation/agent-actions",
