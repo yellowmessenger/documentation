@@ -3,6 +3,8 @@ title: Canned Responses
 sidebar_label : Canned responses
 ---
 
+Canned responses are displayed on the [chat screen](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#1-chat-screen) when the agent presses # (hash key), configure these responses in this section . 
+
 In this article, you will learn:
 1. [How to add canned responses for chat and email?](#add)
 2. [How to delete canned responses?](#delete)
@@ -11,7 +13,7 @@ In this article, you will learn:
 
 **What are canned responses?**
 
-Canned Responses are pre-defined email notifications for frequent replies, with which the support reps can reply to emails with ease. Other than a customized template for individual emails, the canned response can be sent to the frequently raised requests. It reduces the response time and also provides a personal touch to the request. The response can be made private or public according to your convenience. You can add, manage and share a canned response.
+Canned Responses are pre-defined notifications for frequent replies, with which the support reps can reply to emails with ease. Other than a customized template for individual emails, the canned response can be sent to the frequently raised requests. It reduces the response time and also provides a personal touch to the request. The response can be made private or public according to your convenience. You can add, manage and share a canned response.
  
 It allows you to:
 

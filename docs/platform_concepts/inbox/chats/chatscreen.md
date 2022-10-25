@@ -25,11 +25,13 @@ Simply type in any text and hit send button (or enable enter to send if you want
     
 2. **Actions/Canned response**
 
-You can add agent actions / [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown. This can be used for frequent replies so that the agent can simply select a canned response instead of typing the whole message multiple times.    
+You can add [agent actions](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions) / [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown. This can be used for frequent actions/replies so that the agent can simply select an action or canned response instead of typing the whole message multiple times.    
 
 <img src="https://i.imgur.com/IATnPlM.png" alt="drawing" width="50%"/>    
 
-
+:::note
+Use # to view the canned responses and / to view the actions. 
+:::
 
 3. **Upload image/files/emojis**
 
