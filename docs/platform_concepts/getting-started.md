@@ -4,7 +4,7 @@ sidebar_label: Get started
 ---
 
 
-See the power of Conversational AI for yourself. You can read all about it in our Studio section or you can stay on this page and build a bot immediately.
+See the power of Conversational AI for yourself. You can read all about it in our Studio section or you can stay on this page and build a bot.
 
 It is entirely your choice! If you don't know where to start, checkout this walkthrough video of yellow.ai Platform overview.
 
