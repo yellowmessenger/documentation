@@ -584,7 +584,7 @@ module.exports = {
             
         {
           type: "category",
-          label: "Outbound Engagement",
+          label: "Outbound engagement",
           collapsed: true,
           items: [
                 
@@ -613,16 +613,17 @@ module.exports = {
               ],
             }, */
             "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
-            "platform_concepts/engagement/outbound/filter",
+            "platform_concepts/engagement/workflowCampaign",
+          //  "platform_concepts/engagement/outbound/filter",
             "platform_concepts/engagement/outbound/outbound-campaigns/outbound-report",
             "platform_concepts/engagement/outbound/notification-engine",
           ],
         },
-        "platform_concepts/engagement/workflowCampaign",
+        
 
         {
           type: "category",
-          label: "Inbound Engagement",
+          label: "Inbound engagement",
           collapsed: true,
           items: [
             "platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign",

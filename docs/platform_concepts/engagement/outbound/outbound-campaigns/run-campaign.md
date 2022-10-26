@@ -54,8 +54,6 @@ You will see template configuration slide screen where you need to configure det
 * For Email, choose the variable that contains email Id, select the sender ID (email ID), and map the user variables used in the template. For more details, [see here](#22-email-template)
 * For WhatsApp or Viber, choose the variable containing WhatsApp number, sender ID, and map the user variables used in the template. For more details, [see here](#23-whatsappviber-template)
 
-  
-
    ![](https://i.imgur.com/NXuyf1Q.gif)
 
   
@@ -110,13 +108,13 @@ In case you want to switch to User module to add audience, you can save the camp
 
 
   
-## 2. Configure Template details
+## 3. Configure template details
 
 This appears in the *Basic information* screen once you select a channel template. You need to configure some settings depending on the channel and template. For example, setting up the sender ID, and mapping variables used in the template.
 
 This section guides you on how to configure template for each channel - 
 
-### 2.1 SMS template
+### 3.1 SMS template
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's phone number.
  
@@ -126,8 +124,7 @@ This section guides you on how to configure template for each channel -
 
    <img src="https://i.imgur.com/12hci2Z.png" class="center" width="60%"/>
 
-
-### 2.2 Email template
+### 3.2 Email template
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's email address.
 
@@ -139,7 +136,7 @@ This section guides you on how to configure template for each channel -
 
  
 
-### 2.3 WhatsApp/Viber template 
+### 3.3 WhatsApp/Viber template 
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's WhatsApp number (mobile number).
 
@@ -157,11 +154,11 @@ This section guides you on how to configure template for each channel -
  
 
 
-## 3. Schedule message
+## 4. Schedule message
 
 As explained in the Step 6, you can choose when to run your campaign. However, there are advanced options to customize scheduling your message and make your campaign more effective.
 
-### 3.1 How many times you want to run the campaign
+### 4.1 How many times you want to run the campaign
 
 Choose whether to run the campaign only once or on a recurring basis.
 
@@ -207,7 +204,7 @@ Select this to schedule a recurring campaign.
   
   
 
-### 3.2 Business hours
+### 4.2 Business hours
 
   
 
@@ -252,9 +249,15 @@ You can configure what to do with the messages after the configured business hou
 ![](https://i.imgur.com/63KYDaH.png)
 
   
-  
+:::note
+You can Pause a scheduled campaign and Resume it when required using the respective options from the Outbound campaign homepage.
 
-## 4. Segments
+![](https://i.imgur.com/BlRcStg.png)
+
+
+:::
+
+## 5. Segments
 
   
 
@@ -282,67 +285,38 @@ Segment is grouping of users based on certain condition sets. Segmentation can b
 
 ***
 
-## 5. Test Campaigns (Recommended)
+## 6. Test campaigns (Recommended)
 
-Make sure your campaign notifications are flawless by testing it with internal team members.
+It is recommended to test your campaign with internal or test users before launching to ensure the campaign notifications are flawless. Especially, verify if images, buttons, deep links, and elements of personalisation are working or rendering as expected.
 
-  
+The following are the benefits of testing a campaign before launching -
 
-Although this is an optional step, we highly recommend you to test your campaigns that contain images, buttons, deep links, and elements of personalisation in the message to ensure that everything's in order.
+* Prevent sending wrong content to the customers.
+* Enables viewing the notification messages as and how the end-users receive.
+* Ensures the variables are mapped to the right user properties.
+* Reduces campaign failures due to mismatch in parameters or issues with images size.
 
-  
+#### Prerequisites for adding test user details
 
-#### How does it help?
+* Test users data should be available in the *User 360* module
+* Test users should have all the data which will be mapped to the variables used in the template.
 
-* Prevents sending wrong content to the customers
+#### Test campaign
 
-* Enables viewing the notifications messages from end-user experience
 
-* Makes sure variables are mapped to the right user properties
+1. Once you Schedule a campaign, you will see an option to Test campaign in Step 8 of [Create campaign](#2-create-campaign), Review and launch.
 
-* Reduces campaign failures due to parameters mismatch or images size issues
+   ![](https://i.imgur.com/CzxSZrO.png)
 
-  
 
-#### Where do I get this option?
 
-  
 
-* While creating outbound campaigns, at final step "Review and Launch" you can review the content of the notifications once and click on "Test Campaign" from bottom right.
 
-* Step by Step guidance to run test campaigns
+2. Click on **Test campaign**.
 
-* Prerequisites for adding test user details
+   ![](https://i.imgur.com/Xfxyepv.png)
 
-* Test users data should be available in Users module
 
-* Make sure the test users has all the data which will be mapped as variables in notification templates
-
-* Doing so will enable viewing a user preview of the message with all the personalised data.
-
-  
-
-#### Steps to test your campaign
-
-  
-
-1. Login to cloud.yellow.ai and navigate to outbound notifications
-
-  
-
-![](https://i.imgur.com/Jzqlncs.png)
-
-  
-  
-
-2. Create campaigns and proceed till "review and launch" step. Click on "Test campaign" button
-
-  
-
-![](https://i.imgur.com/SAjth2N.png)
-
-  
-  
 
 3. Search test users.
 
@@ -350,70 +324,52 @@ Although this is an optional step, we highly recommend you to test your campaign
 
 * You can search users by name, email, phone number or userID. You will see auto-suggestions in the drop-down as you type.
 
-![](https://i.imgur.com/UqXJZ3h.gif)
+   ![](https://i.imgur.com/UqXJZ3h.gif)
 
   
   
 
 4. Add test users
 
-  
+   a. Click on the relevant user to populate all values like recipient ID and other parameters if any.
 
-* Click on relevant user to populate all values like recipient ID and other parameters if any.
+   b. Check whether all the parameters are mapped correctly to the desired user columns.
 
-* You can check whether all the parameters are mapped correctly to the desired user columns.
+   c. Ensure all the values are available for the user. If not, use a different user use whose required details are available.
 
-* Here you can ensure that all the values are available for the user. If not, then you can search an alternate user to personalise the message.
+   ![](https://i.imgur.com/mPC8ArU.png)
 
-  
 
-![](https://i.imgur.com/qD091UD.png)
+   d. To add more users (up to 5 test users) click on **+Add Users** and repeat the process.
 
-  
-
-* You can add up to 5 test users at a time. Click on "+Add Users" to search and add multiple users.
-
-![](https://i.imgur.com/OFDwZvH.gif)
+   ![](https://i.imgur.com/OFDwZvH.gif)
 
   
 
-5. Send Test Messages
+5. Click on **Send test campaign** to trigger campaign to the selected users.
 
-* Once all the data is cross verified, you can click on "send test campaign" to trigger notifications to recipient IDs added.
+   ![](https://i.imgur.com/AV194YX.png)
 
-  
 
-![](https://i.imgur.com/Z3NC91L.png)
-
-  
-
-* This screen will be frozen for 15 seconds to update the sent status of messages.
-
-* In case of any data mismatch you can save the campaign by clicking "save as draft", navigate to templates step, correct your mappings.
-
-* You can use "Test Campaign" option more than once.
-
->  **Note**:
-
-After the Test Message has been sent, you will see that it is in "sending" state. After some time you will be able to see the delivery status of the test message as Delivered or Failed.**
+You will see the *Sending* status. You can see the actual delivery status after a while (about 15 seconds) - Delivered or Failed.
 
   
+For Failed messages, you can also see the reason for failure.
 
-If the Test Message has Failed to deliver, then you will be able to see the reason for failure
+:::note
+* It takes 15 seconds to update the sent status of messages.
+* If there is any mismatch in the data, save the campaign using **Save as draft**. Then, navigate to templates step, correct your mappings and test again.
+:::
 
-  
 
 6. Check message sent status
 
-  
 
 * Click on **Test Campaign** will give you sent status of last test users and you can click on "Send new test campaign" to add new test users.
-
 * Once the notification is good to go, you can launch the campaign anytime.
 
   
-
-![](https://i.imgur.com/oVgpJRm.png)
+   ![](https://i.imgur.com/oVgpJRm.png)
 
   
   
