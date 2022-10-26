@@ -28,7 +28,7 @@ Full Support - All the messages can be translated by our platform (other languag
 | English - Nigerian Pidgin     |   en  | Yes                 |                          |                |                | Yes              |                     |                    |
 | English - South Africa        |  en   | Yes                 |                          |                |                | Yes              |                     |                    |
 | Chinese - Cantonese           |     | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
-| Chinese - Simplified          |     | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
+| Chinese - Simplified          | zh-cn    | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Chinese - Traditional         |    | Yes                 |                          |                |                | Yes              | Yes                 | Yes                |
 | Arabic (Peninsular Group)     |   ar  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Arabic (Mesopotamian Group)   |  ar | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
