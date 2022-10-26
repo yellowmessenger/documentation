@@ -47,7 +47,7 @@ Select WhatsApp profile | For WhatsappChat, choose the WhatsApp business number 
 Default user message | Specify the first message to show up in the WhatsApp chat when the user clicks on WhatsApp chat.
 
 
-Also, see the different types of widget in [**Types of Inbound Widgets**](https://docs.yellow.ai/docs/platform_concepts/engagement/inboundWidgets/typesOfWidgetButtons).  
+Also, see the different types of widget in [**Types of Inbound Widgets**](#6-inbound-widgets).  
 
 :::note
 At any point you can click 
@@ -61,7 +61,7 @@ At any point you can click
    ![](https://i.imgur.com/Tl4n4zU.png)
 
   
-6. In **Frequency**, define how frequently you a visitor to see the campaign.
+6. In **Frequency**, define how frequently you want a visitor to see the campaign.
 
    ![](https://i.imgur.com/yCgvhP8.png)
   
@@ -237,7 +237,7 @@ Sample report
 
 #### Supported button types
 
-* Trigger a Journey
+* Trigger a journey
 
 
 
