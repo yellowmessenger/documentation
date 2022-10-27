@@ -673,7 +673,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Channel Configuration",
+      label: "Channels",
       collapsed: true,
       items: [
         "platform_concepts/channelConfiguration/overview",
@@ -713,6 +713,7 @@ module.exports = {
         "platform_concepts/appConfiguration/camspay",
         "platform_concepts/appConfiguration/cashfree",
         "platform_concepts/appConfiguration/clevertap",
+        "platform_concepts/appConfiguration/customliveagent",
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/freshteam",
         "platform_concepts/appConfiguration/genesys-cloud-livechat",
@@ -809,7 +810,7 @@ module.exports = {
     },
     {
       type: "category",
-      label: "Channel Configuration",
+      label: "Channels",
       collapsed: true,
       items: [],
     },
