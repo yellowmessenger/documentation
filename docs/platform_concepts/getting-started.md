@@ -3,12 +3,9 @@ title: Getting started with yellow.ai
 sidebar_label: Get started
 ---
 
+Welcome to yellow.ai! To start creating bots, you need to create an account and add relevant bot information. Let's get to it.
 
-# Getting started
-
-To create a bot, you need to setup an account in yellow.ai. Let's get to it!
-
-## **Setup an Yellow.ai account**
+## **1. Setup a yellow.ai account**
 
 1. Go to cloud.yellow.ai
 2. Select your preferred mode of signup.
@@ -37,7 +34,7 @@ You will be taken to your Yellow.ai account.
 You're almost there. Provide the bot requisites to start creating a bot.
 
 
-## **Confirgure Bot Requisites**
+## **2. Confirgure bot requisites**
 
 1. Click **Create a bot** from scratch.
 
@@ -52,7 +49,7 @@ You're almost there. Provide the bot requisites to start creating a bot.
 
 Voila! You're done. Would you like a step by step guide on creating bots? [Here](https://docs.yellow.ai/docs/platform_concepts/studio/overview) you go.
 
-And it doens't end there. You can track the data and metrics of the bot, manage customer queries on multiple channels, run campaigns and much more. The following modules will help you in using your bot efficiently.
+It doesn't end there, you can track the data and metrics of your bot, manage customer queries on multiple channels, run campaigns and much more. The following modules will help you in using your bot efficiently.
 
 
 | Name   | Description                                                      |     |
