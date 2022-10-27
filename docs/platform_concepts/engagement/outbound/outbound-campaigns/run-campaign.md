@@ -318,7 +318,7 @@ The following are the benefits of testing a campaign before launching -
 
 
 
-3. Search test users.
+3. Search for test users.
 
 * A wizard will be opened to add test user details.
 
@@ -372,7 +372,5 @@ For Failed messages, you can also see the reason for failure.
    ![](https://i.imgur.com/oVgpJRm.png)
 
   
-  
-
 
 ---

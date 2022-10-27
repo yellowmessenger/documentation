@@ -519,7 +519,7 @@ Coming soon!
 
 ### 3.2 Outbound notification 
 
-Send outbound SMS, email, WhatsApp, and voice notification with this node. 
+Send outbound SMS, email, WhatsApp, and voice notification with this node. To know more,  See [Outbound notifications or Workflow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/workflowCampaign).
 
 ---
 
