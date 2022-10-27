@@ -711,6 +711,7 @@ module.exports = {
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/billdesk",
         "platform_concepts/appConfiguration/camspay",
+        "platform_concepts/appConfiguration/cashfree",
         "platform_concepts/appConfiguration/clevertap",
         "platform_concepts/appConfiguration/freshdesk",
         "platform_concepts/appConfiguration/freshteam",
