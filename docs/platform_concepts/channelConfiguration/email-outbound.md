@@ -33,11 +33,9 @@ Use the following table as a reference to decide on when to choose between SMPT 
 The yellow.ai platform needs permission to send emails on behalf of the email ID used to send emails. You can either do it by configuring the SMTP of the brand’s professional sender email ID or adding the web-based email API key to the platform.
 Upon successful configuration, the platform can send emails from the associated Email ID.
 
-### 2.2 Configure web-based email account (API)
 
-Reach out to the [yellow.ai team](mailto:vishnu@yellow.ai) for setting up an email account. The process will cover domain/subdomain authentication, and dedicated IP address procurement among others.
 
-### 2.2 Configure SMTP-based email account
+### 2.1 Set up SMTP-based email account (normal)
 
 To configure an SMTP in the yellow.ai platform, follow the given steps:
 
@@ -61,9 +59,8 @@ For SMTP set up, add the SMTP details of the email address from which you want t
 5. In **Email**, enter the email address (sender ID) that you want to associate with the account. For example, support@abc.com.
 6. In **Server**, enter the host URL.
 
-   The value will be unique for each mail server. For example, it will be smtp.gmail.com for the Gmail server and smtp.office365.com for the Outlook server. In some cases like a private server, the value will be an IP address of the SMTP connector service.
-Enter 
-7. In **Username**, enter the same email address that you entered in the Email field.
+   The value will be unique for each mail server. For example, it will be smtp.gmail.com for the Gmail server and smtp.office365.com for the Outlook server. In some cases like a private server, the value will be the IP address of the SMTP connector service.
+7. In **Username**, enter the same email address that you entered in the Email field. For shared accounts such as Microsoft, these could be different.
 8. In **Password**, enter the app password of the specified email address. To know how to generate and use app password for each server, see [Google](https://support.google.com/accounts/answer/185833?hl=en), [Microsoft](https://support.microsoft.com/en-us/account-billing/using-app-passwords-with-apps-that-don-t-support-two-step-verification-5896ed9b-4263-e681-128a-a6f2979a7944)
 
 :::note
@@ -79,6 +76,58 @@ Similarly, you can add multiple email accounts and choose your preferred sender 
 
 ![](https://i.imgur.com/Txsk01e.png)
 
+
+### 2.2 Set up SMTP-based email account (JSON)
+
+You can also configure SMTP using the JSON code.
+
+To configure an SMTP using JSON, follow the given steps -
+
+1. Open your project and navigate to > **Channels** > **Email**.
+
+   ![](https://i.imgur.com/QJpx4QX.png)
+
+
+  2. Click **Add account**
+  
+  ![](https://i.imgur.com/3pEdg2k.png)
+
+For SMTP set up, add the SMTP details of the email address from which you want to send emails.
+
+3. In **Email details**, select **Advanced** 
+4. Paste the JSON code of the SMTP.
+
+
+
+```
+{
+    "service": "Outlook365",
+    "auth": {
+        "user": "user name to login",
+        "pass": "login password"
+    }
+}
+```
+
+
+If the client’s email service provider has disabled auth, then you can remove auth object.
+
+```
+{
+    "host": "smtp.outlook365.com",
+    "port: 587",
+    "secure": false,
+    "auth": {
+        "user": "user name to login",
+        "pass": "login password"
+    }
+```
+
+:::note
+* To send mails on behalf of client, the client should enable SMTP authentication.
+* In cases where clients have disabled SMTP auth for security reasons, they can whitelist ym’s IP and allow emails from that IP.
+* For Ym to receive emails from the customers of the client, the client need to configure a unique forwarding address provided by ym after configuring an email on the Channels page.
+:::
 
 
 ### 2.3 Get your Outlook SMTP
@@ -103,3 +152,8 @@ For emails to be sent from smtp.gmail.com, make sure you have followed these 2 s
     b. Click **Generate**.   
     
     c. You will receive a 16-digit code, this code should be used as a password in email configuration and the user remains as your email.  
+
+
+### 2.5 Web-based email account (API)
+
+Reach out to the [yellow.ai team](mailto:vishnu@yellow.ai) for setting up an email account. The process will cover domain/subdomain authentication, and dedicated IP address procurement among others.
