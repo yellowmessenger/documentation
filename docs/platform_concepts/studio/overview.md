@@ -39,7 +39,7 @@ You can access Studio using the keyboard shortcut `g` + `s`.
 :::
 ---
 
-## <a name="ui"></a> 2. Understand UI elements
+## <a name="ui"></a> 2. Understand Studio elements
 
 ![](https://i.imgur.com/yCTY5Dz.png)
 

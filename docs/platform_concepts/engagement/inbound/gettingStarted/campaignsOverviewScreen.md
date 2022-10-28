@@ -1,6 +1,6 @@
 ---
-title: Campaign report
-sidebar_label: Campaign report
+title: Inbound campaign report
+sidebar_label: Inbound report
 ---
 
 
