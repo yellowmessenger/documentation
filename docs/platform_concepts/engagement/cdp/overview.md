@@ -1,44 +1,60 @@
 ---
-sidebar_label: User360 Overview
+sidebar_label: User360 overview
 title: User360 Overview
 ---
 
-## What is User360?
-
-User 360 can be used for the following purposes:
-
-- Collect user data from bot conversations and client’s external tech stack
-- Unify user profiles and maintain context across channels
-- Segment users into meaningful audiences, and
-- Activate user data and segments in various modules of yellow.ai to drive personalisation
 
 
-:::info
-User360 is enabled by default for bots created after 1st June 2022.
+User 360 is a Customer Data Platform that helps you manage your customer base.  You can segment your customers based on some shared characteristics for personalised targeting and get insights into their cross-channel engagement behavior.
 
-Write to sarthak@yellow.ai to get it enabled for your bot.
+The following are some key features of User 360 - 
+
+* Collect user data from bot conversations and client’s external tech stack
+* Unify user profiles and maintain context across channels
+* Segment users into meaningful audiences
+* Activate user data and segments in various modules of yellow.ai to drive personalisation
+
+:::note
+User360 is enabled by default for bots created after June 1, 2022.
+To enable it for your bot, write to sarthak@yellow.ai.
 :::
 
 
-## Getting Started with the yellow.ai's Users Module 
-User’s Module is available in the Engage section of your app. This is where you can see who your users are and manage them, define user properties, create user segments and more.
 
-:::info
+
+
+## 1. Access User 360
+
+
+You can see User 360 in the Engage module.  You can view your user details, modify their details, define user properties, create  user segments and do more.
+
+To access User 360, log on to https://cloud.yellow.ai and navigate to **Engage** > **User 360**.
+
+:::note
 This is enabled only for https://cloud.yellow.ai
 :::
 
-### Step 1: Customise the schema to be about your users
+The following are the key actions that you can perform on user 360.
 
-It’s import to gather data that’s specific to your Users. While there are a couple of Default User Properties in the schema, called [System Properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#system-user-properties), you can also create and send [Custom Properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#custom-user-properties) and [Events](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#user-events).
+### 1.1 Add users
 
-While User Properties store data about who your users are, events tell you when users take important actions in your product.
+The platform provides different ways to add your users. You can add each user manually or leverage advanced features  to quickly create your user base and maintain it real-time.  
+* Import users directly [from a CSV](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv) 
+* Use our [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api) to add or modify users real-time.
 
-### Step 2: Import your users
+  * Use [Bot Builder to create and update users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#3-using-builder-to-create--update-user-records-in-users-table)
 
-You might want to have some user data to begin with, in order to create personalised engagements. You can import users directly [from a CSV](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv) or by using [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
 
-If you don’t have any data to being with, do not worry, our platform can help you create and [enrich conversation based user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data).
+### 1.2 Enrich your user data
 
-### Step 3: Create segments to power personalisation
+It is important to collect data that is specific to your users. While there are some predefined properties, called [System Properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#system-user-properties), you can also create and send [Custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#custom-user-properties) and [Events](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#user-events).
 
-By combining the user data with Properties and Events, you can [create highly focussed segments](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment). These segments update automatically as users match the criteria set by you.
+ 
+User properties store data about who your users are, events tell you when users take important actions on your product.
+
+
+### 1.3 Create segments to power personalisation
+
+ 
+
+By combining the user data with Properties and Events, you can [create highly focussed segments](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment). These segments update automatically as and when users match the criteria that you set.
