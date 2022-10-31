@@ -715,6 +715,7 @@ module.exports = {
         "platform_concepts/appConfiguration/clevertap",
         "platform_concepts/appConfiguration/customliveagent",
         "platform_concepts/appConfiguration/freshdesk",
+        "platform_concepts/appConfiguration/freshservice",
         "platform_concepts/appConfiguration/freshteam",
         "platform_concepts/appConfiguration/genesys-cloud-livechat",
         "platform_concepts/appConfiguration/genesys",

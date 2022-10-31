@@ -1,61 +1,45 @@
 ---
-title: Offline Ticketing/Chat
-sidebar_label : Offline chat
+title: Offline ticketing/chat handling
+sidebar_label : Offline handling
 ---
 
+To manage tickets raised after working hours in the offline handling setting section. 
 
-If none of the agents are available in the system for and you want to address the customer request raised that time then you can enable offline chat.
-
-1. As shown at the step 5 in the given screenshot, click on radio button to enable / disable the offline chat.
-
-<img src="https://i.imgur.com/QOaS4G9.png" alt="drawing" width="100%"/>
-
-2. By clicking on edit button, you tickets should be managed.
-- Max offline tickets allowed: Number of tickets allowed while all agents are offline
-- Auto assign tickets: How tickets should be assigned when agents come back online
-- Priority of auto assignment: Which type of tickets should be given priority when agents come back online
-
-<p align="center"><img src="https://i.imgur.com/2xd9mwk.png" alt="drawing" width="60%"/></p>
+If none of the agents are available to resolve tickets and you want to address the customer requests raised at that time offline chat can be enabled. You can manage the limit and status of the tickets after working hours to provide 24/7 support.
+Offline chats uphold the continuum of service that your customers expect. If you have customers around the globe, you can anticipate that they may need support outside of your normal operating hours. Offline handling ensured that the inquiries are acknowledged and customers receive a satisfactory answer until an agent has the opportunity to follow up.
+An offline chat is essentially a status update that informs the users that an agent is unavailable to chat. This feature replaces your widget anytime agents are unavailable.
 
 
-Here you can manage limit and status of the tickets after working hours to provide 24/7 support.
+Follow the steps below to enable offline chats: 
+
+1. Open **Inbox** > **Setting**. 
+2. Search and select **Offline handling**. 
+
+![](https://i.imgur.com/7LPvaD4.jpg)
+
+3. You can **Enable/Disable offline chats**. Enable the toggle. 
+
+![](https://i.imgur.com/AbEmZ4V.png)
+
+4. By clicking the edit button you can configure offline chats for different [groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups). Click edit next to the required group name. 
+
+![](https://i.imgur.com/70A4ZQQ.png)
+
+> A group **Default** group already exists where you can set the default configurations to all the offline tickets. 
 
 
-Offline chats uphold the continuum of service that your customers expect. And if you have customers across the country or around the globe, you should anticipate that they may need support outside of your normal operating hours. This is a good way to acknowledge inquiries and satisfy customers until an agent has the opportunity to follow up.
+5. Select the type of field you want to create and decide the ticket behavior for agents. Click **Submit**.
+
+    - **Enable/Disable offline tickets**
+    - **Max offline tickets allowed**: Number of tickets allowed while all agents are offline.
+    - **Auto-assign tickets**: If enabled the tickets will be auto-assigned when the agents come back online.
+    - **Priority of auto-assignment**: The ticket type (Queued/open) that should be given priority when agents come back online. 
+
+![](https://i.imgur.com/YD24jSA.png)
 
 
-An offline chat is essentially a status update that tells users that an agent unavailable to chat. This feature replaces your widget anytime agents are unavailable.
+6. This can be configured for all the groups. 
 
 
-![](https://i.imgur.com/TrbU4is.png)
 
 
-### Configuring Offline Chats
-
-1. Login to yellow.ai
-2. Click on Overview from the header pane on the top left.
-3. Select Inbox.
-4. Goto Settings.
-5. Choose Workflows from the left pane.
-6. Click on Offline Handling from the list on the right pane.
-
-
-![](https://i.imgur.com/0aou0dz.png)
-
-
-Once you are on this page, you can enable or disable offline chats.
-
-A group with the name <i>Default</i> already exists where you can set the default configurations to all the offline tickets. Click on the edit button and make the necessary default settings.
-
-![](https://i.imgur.com/fxOa5KC.png)
-
-The following customization can be made:
-- Enable or disable offline tickets
-- Number of maximum tickets can be set
-- Auto assigning of tickets can be enabled/disabled
-- Priority of auto assignment can be changed.
-
-Click on the submit button to save the changes. A pop up window - Offline tickets configurations updated appears confirming the changes made.
-
-
-Similarly, groups can be created and the above same configurations can be set for each group of agents.

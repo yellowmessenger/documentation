@@ -4,30 +4,30 @@ sidebar_label : Tags
 ---
 
 
-Tags are labels that you assign to conversations after the end or during the chat sessions and one of the best ways to organize conversations and for quicker follow-ups. They are typically used to categorize and organize all customer communication and to escalate it to the right team for further actions fast and effectively.
+Tags are labels that you assign to the conversations after the end or during the chat sessions. They can be configured on the tags setting page. 
 
-Tagging your chats helps you search or filter your chat menu and makes it easier to analyze the chat traffic.
-
-
-![](https://i.imgur.com/39vPpD6.png)
-
-
-### Learn how to use tags
-
-Tags are great for both admins and agents. Admins can obtain an overview of chat conversation topics by viewing the 10 most popular tags in a week. Agents can easily tag chats either automatically using Shortcuts, or manually by selecting tags from a predefined list.
-
-
-To create a new tag:
-
-1. Login to your bot and go to <b>Inbox</b> -> Settings -> <b>Chats configuration</b>
-
-2. Enter a name for the tag. 
-
-3. Save it, by clicking on <b><i>Add</i></b>.
+* Tags can be configured for chats and email to organize conversations for quicker follow-ups. 
+* They are used to categorize and organize all customer communication and to escalate it to the right team for further actions fast and effectively.
+* Tagging your chats helps you in searching or filtering your chat menu. With this you can analyze the chat traffic.
+- **Admins** can obtain an overview of chat conversation topics. For example, for viewing the 10 most popular tags in a week.
+- **Agents** can only see tags relevant to them. They can easily tag chats either automatically using Shortcuts, or manually by selecting tags from a predefined list.
+- Tags can be created only for a particular group. The issues belonging to that group will can be tagged under a lable.
 
 
 
-You can select from a list of existing tags and also edit this list by adding and removing tags any time you need.
+To add a new tag, follow the given steps: 
 
 
-Tags can be created based for a particular group only. Only issues belonging to that group will see these tags. It’s quite handy as agents only see tags relevant to them, and don’t need to go through a never-ending list to find the correct one.
+1. Open **Inbox** > **Settings**. 
+2. Search and select **Tags**.
+
+![](https://i.imgur.com/n2sxLcB.png)
+
+4. Select Chat/Email tab. 
+5. Enter a tag lable (to enter multiple tags, use ','). Click **+Add**.
+
+![](https://i.imgur.com/pTUuy8N.png)
+
+6. You can delete any tag by clicking on the 3 dots next to the tag name and confirming the **delete** action. 
+
+![](https://i.imgur.com/ZKVWYLx.png)
