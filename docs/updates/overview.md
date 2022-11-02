@@ -12,7 +12,7 @@ Here are a list of product updates we made in the month of **October** to provid
 ## 1. **Insights**
 
 
-#### 1.1 Bot & Agent metrics added to enhanc data points on the insights dashboard
+#### 1.1 Bot & Agent metrics added to enhance data points on the insights dashboard
 
 > Type - Enhancement
 
