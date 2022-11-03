@@ -32,12 +32,14 @@ This document guides you how to migrate data from the older Users module to User
 
   
 
-**You may ignore these steps if you do not wish to migrate the old data.**
+:::note
+You can ignore these steps if you do not wish to migrate the old data.
+:::
 
   
 Bots that have records in the old Users Module will see a data migration window.
 
- :::note
+:::note
  Data migration is a one time activity. Double check your property mappings.
 ::
 
