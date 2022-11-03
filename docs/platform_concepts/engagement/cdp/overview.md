@@ -157,3 +157,16 @@ You can see events in User 360, and filter them to answer questions like:
 ### 3.1 Export your user data
 
  If you want to update your user base or use it outside Yellow.ai,  you to export user data easily and use it wherever required. To know more, see [Export users' data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#viewing--exporting-your-user-data).
+
+
+
+## 4. Unify profiles & maintain context across channels
+
+ To achieve true personalisation, you might want to recognise your users on every channel they appear on. To achieve this:
+
+-   Decide what your  [user identifier](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id/)  will be
+-   Start  [identifying users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data#2-what-are-identified-users)  on every channel
+-  [Capture as much conversational data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data)  you can
+-   Utilise the above data, captured on one channel, to  [deliver personalised engagement](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder)  on another channel
+
+![](https://i.imgur.com/aWczHLm.png)
