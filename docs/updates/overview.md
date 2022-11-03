@@ -81,27 +81,20 @@ Following marketplace templates were relased:
 
 
 1. **ITSM Automation**
-This template allows users to create a ticket, check ticket status and connect with an agent.
-> Click [here](https://cloud.yellow.ai/marketplace/df8632122f795dda899df38ff1dddb16) to use the template. 
+This template allows users to create a ticket, check ticket status and connect with an agent. Click [here](https://cloud.yellow.ai/marketplace/df8632122f795dda899df38ff1dddb16) to use the template. 
 
 2. **Session based Authentication using OTP**
-This template is used to authenticate the user using OTP and keep them authenticated until a certain period of inactivity.
-
-> Click [here](https://cloud.yellow.ai/marketplace/d48194ebfbf15dc51f5b9e5deba41c56) to use the template. 
+This template is used to authenticate the user using OTP and keep them authenticated until a certain period of inactivity. Click [here](https://cloud.yellow.ai/marketplace/d48194ebfbf15dc51f5b9e5deba41c56) to use the template. 
  
 
 3. **IT service desk**
-This template allows users to raise ticket and contact support for laptop/system related issues, login issues, etc.
-
-> Click [here](https://cloud.yellow.ai/marketplace/bad34a3a53f8a828ba6c073e87e21bfc) to use the template.
+This template allows users to raise ticket and contact support for laptop/system related issues, login issues, etc. Click [here](https://cloud.yellow.ai/marketplace/bad34a3a53f8a828ba6c073e87e21bfc) to use the template.
 
 4. **FAQ automation using Document cognition**
-This template is designed to demonstrate the document cognition feature supported by Yellow.ai.  
-> Click [here](https://cloud.yellow.ai/marketplace/3f67de2d7976a3c1a0c729cbec24c26d) to use the template.
+This template is designed to demonstrate the document cognition feature supported by Yellow.ai. Click [here](https://cloud.yellow.ai/marketplace/3f67de2d7976a3c1a0c729cbec24c26d) to use the template.
 
 5. **New course registration(send an email notification)**
-This template sends reminders to users on their email, when the user signs up for a course.  
-> Click [here](https://cloud.yellow.ai/marketplace/c98e5d23fec2cc535978fa98153bbc1a) to use the template.
+This template sends reminders to users on their email, when the user signs up for a course. Click [here](https://cloud.yellow.ai/marketplace/c98e5d23fec2cc535978fa98153bbc1a) to use the template.
 
 
 -----
