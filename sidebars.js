@@ -20,7 +20,7 @@ module.exports = {
     "tutorials/inbox",
     "tutorials/engage",
     "tutorials/integrations",
-    "tutorials/webinars",
+    // "tutorials/webinars",
   ],
 
   //cookbook- user guides 

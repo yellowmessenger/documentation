@@ -5,6 +5,10 @@ sidebar_label: Overview
 
 Yellow.ai is an omnichannel platform, which requires just one-time connectivity setup for any channel the user wants the bot to be present on. Any user can design the bot on the web and make it work seamlessly across any channel.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wPJKEVAojpQ" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
+
 The user will find the channels listed under various categories along with Chat Widget as mentioned below:
 
 1. Messaging
