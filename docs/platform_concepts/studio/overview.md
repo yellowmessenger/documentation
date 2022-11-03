@@ -17,6 +17,11 @@ This article briefs you on understanding various components of Studio and helps 
 :::note
 If you're new to creating bots or looking for more practical end-to-end guides on bot building, see [Cookbooks](https://docs.yellow.ai/docs/cookbooks/template-bots/customer-support-bot).
 :::
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qwga7KLj-zM" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
+
 ---
 
   

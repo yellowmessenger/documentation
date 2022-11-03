@@ -14,6 +14,10 @@ Effective campaign management is necessary for a successful business workflow. H
 
 With the Engage module, admins can build and execute marketing campaigns by targeting a set of customers with relevant marketing content across variety of channels.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HWcOSroSusk" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
+
 ## 1. Types of engagement
 The following are the different types of campaigns Yellow.ai supports.
 
