@@ -1,11 +1,11 @@
 ---
 title: August updates
-sidebar_label: August updates
+sidebar_label: August 
 ---
 
-## 1. Inbox
+## 1. **Inbox**
 
-### 1.1 Email tickets deeplink
+#### 1.1 Email tickets deeplink
 
 > Type - Enhancement
 
@@ -15,7 +15,7 @@ Email tickets are now deeplinked to improves the overall process of navigation a
 
 
 
-### 1.2 No code email ticketing
+#### 1.2 No code email ticketing
 
 > Type - New feature
 
@@ -25,7 +25,7 @@ One can configure email ticketing channel and raise tickets in Inbox cloud witho
 ![](https://i.imgur.com/JInKmIw.png)
 
 
-### 1.3 Queued chats access for Inbox Supervisor
+#### 1.3 Queued chats access for Inbox Supervisor
 
 > Type - Enhancement
 
@@ -33,11 +33,11 @@ Queued chats would now be visible to Inbox Supervisor role. They also have more 
 
 ***
 
-## 2. Insights
+## 2. **Insights**
 
   
 
-### 2.1 Enriched channel filter
+#### 2.1 Enriched channel filter
 
 > Type: Enhancement
 
@@ -49,7 +49,7 @@ To understand user behaviour in much better depth, YellowMessenger channel filte
 
 Additionally, Yellow API is a new channel introduced for users who only use our backend API to deploy bots with their own in-house UI.
 
-### 2.1 Failure reasons in Notifications report
+#### 2.1 Failure reasons in Notifications report
 
 Introduced a new column, *ERRORMESSAGE*, in the Notifications report of Data Explorer specifying the reasons behind failure of notifications delivery. For example, Recipient number is invalid, the user doesn’t have a WhatsApp account and so on.
 
@@ -59,7 +59,7 @@ There are filters to drill down data that helps understand different reasons for
 
   
 
-### 2.3 Extended session period (24 hrs)
+#### 2.3 Extended session period (24 hrs)
 
 The definition of a session is now updated to user interaction occurring with the bot within a 24-hours window. A single session is considered for any number of interactions the user has within 24 hours from the start of a session. A new session starts after 24 hours. This is to ensure better accuracy in the Sessions data and bring consistency across channels (like WhatsApp).
 
@@ -73,19 +73,19 @@ From a billing point of view, irrespective of the number of messages sent in the
   
   
 
-## 3. Integrations  
+## 3. **Integrations**
   
-### 3.1 CleverTap integration  
+#### 3.1 CleverTap integration  
 
 The CleverTap integration allows you to create Whatsapp templates on Yellow.ai and run campaigns for your user base directly on CleverTap. [Know more details](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/clevertap).
   
-### 3.2 Media File support with caption for custom live agent integrations  
+#### 3.2 Media File support with caption for custom live agent integrations  
 
 > Type: Fix
 
 Earlier, users were not able to receive videos that were sent during custom live chat. This has now been fixed and clients using Custom Live Agent will now receive media files with correct captions.  
   
-### 3.3 Integration UI enhancements
+#### 3.3 Integration UI enhancements
 
 > Type: Enhancements
 > 
@@ -95,21 +95,21 @@ The following are the enhancements made to the UI -
 * Added video tutorials for some complex integrations that would help bot builders with setting up flows
 
   
-### 3.4 In-Bot reply events for Webhook based integrations  
+#### 3.4 In-Bot reply events for Webhook based integrations  
 
 Clients using webhook-based live chat integrations will receive the agent reply events in the bot itself so that they can perform further operations based on that event data which was not supported earlier  
   
-### 3.5 Cashfree - Whatsapp payment  integration
+#### 3.5 Cashfree - Whatsapp payment  integration
 
 With this integration, you can now generate Cashfree tokens that can be passed on to WhatsApp pay to process payments. Post transactions you can also receive notifications on payment statuses.  
 
 
 ***
 
-## 4. Marketplace
+## 4. **Marketplace**
 
   
-### 4.1 Marketplace components
+#### 4.1 Marketplace components
 * Healthcare: Collect reports
    * Access and download lab test reports in pdf format.
 *   HR
@@ -119,9 +119,9 @@ With this integration, you can now generate Cashfree tokens that can be passed o
 
 ***
 
-## 5. Engage
+## 5. **Engage**
 
-### 5.1 Test campaign feature for outbound campaigns
+#### 5.1 Test campaign feature for outbound campaigns
     
 > Type: New feature
 
@@ -143,7 +143,7 @@ How does it help the customers?
 -   Reduces campaign failures due to parameters mismatch or images size issues
     
 
-### 5.2  App to cloud migration
+#### 5.2  App to cloud migration
 
 > Type: Enhancement
 
