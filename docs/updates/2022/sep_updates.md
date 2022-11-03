@@ -174,8 +174,11 @@ Clients who are having their solution in Genesys On-prem can also integrate with
 ## 5. **Marketplace**
 
   
+  
+#### 5.1 New Marketplace components were added
 
-#### 5.1 Marketplace templates
+Following marketplace templates were relased:
+
 
   > Type - New feature
 

@@ -109,7 +109,11 @@ With this integration, you can now generate Cashfree tokens that can be passed o
 ## 4. **Marketplace**
 
   
-#### 4.1 Marketplace components
+#### 4.1 New Marketplace components were added
+
+Following marketplace templates were relased:
+
+
 * Healthcare: Collect reports
    * Access and download lab test reports in pdf format.
 *   HR
