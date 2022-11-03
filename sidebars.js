@@ -536,7 +536,9 @@ module.exports = {
               items: [
                 "platform_concepts/engagement/cdp/overview",
                 "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
-                {
+                "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
+                "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+               /* {
                   type: "category",
                   label: "Managing User data and Creating Segments",
                   collapsed: true,
@@ -545,7 +547,7 @@ module.exports = {
                     "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
                     "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
                   ],
-                },
+                }, */
                 {
                   type: "category",
                   label: "Enriching User Profiles",
@@ -553,7 +555,7 @@ module.exports = {
                   items: [
                     "platform_concepts/engagement/cdp/enriching_user_profiles/user_id",
                     "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+                    // "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
                     "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
                     // "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
                   ],
