@@ -5,6 +5,11 @@ sidebar_label: Engage overview
 
 Engage is a customer engagement module that enables marketers to craft multi-channel campaigns intuitively.  Engage helps marketers to deliver total lifecycle CX from acquisition, through Transaction, to Retention and Growth.
 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/HWcOSroSusk" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
+
+
 Yellow has dedicated features to help you manage the business campaigns efficiently.
 
 
@@ -13,9 +18,6 @@ Yellow has dedicated features to help you manage the business campaigns efficien
 Effective campaign management is necessary for a successful business workflow. However, creating an effective campaign requires a lot of effort and time, still there are chances of proning to errors and campaign failures.
 
 With the Engage module, admins can build and execute marketing campaigns by targeting a set of customers with relevant marketing content across variety of channels.
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/HWcOSroSusk" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
 
 ## 1. Types of engagement
