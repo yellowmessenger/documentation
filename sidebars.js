@@ -571,7 +571,7 @@ module.exports = {
 
                   ],
                 },
-                {
+               /* {
                   type: "category",
                   label: "FAQs",
                   collapsed: true,
@@ -580,7 +580,7 @@ module.exports = {
                     "platform_concepts/engagement/cdp/faq/date_based_campaign",
                     "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
                   ],
-                },
+                }, */
               ],
             },
             
