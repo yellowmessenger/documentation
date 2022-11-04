@@ -324,6 +324,7 @@ module.exports = {
             "platform_concepts/inbox/chats/getstartedwithlivechat",
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/chatsearch",
+            "platform_concepts/inbox/chats/videocall",
             "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
             "platform_concepts/inbox/chats/instagrampolicy",
                  ],
