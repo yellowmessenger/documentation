@@ -727,6 +727,7 @@ module.exports = {
         "platform_concepts/appConfiguration/leadSquared-wa-connector",
         "platform_concepts/appConfiguration/microsoft-dynamics",
         "platform_concepts/appConfiguration/microsoft-graph",
+        "platform_concepts/appConfiguration/nice-incontact",
         "platform_concepts/appConfiguration/netcore",
         "platform_concepts/appConfiguration/paytm",
         "platform_concepts/appConfiguration/payuBiz",
