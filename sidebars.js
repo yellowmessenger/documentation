@@ -725,6 +725,7 @@ module.exports = {
         "platform_concepts/appConfiguration/intercom-livechat",
         "platform_concepts/appConfiguration/jira",
         "platform_concepts/appConfiguration/leadSquared-wa-connector",
+        "platform_concepts/appConfiguration/livechat-integration",
         "platform_concepts/appConfiguration/microsoft-dynamics",
         "platform_concepts/appConfiguration/microsoft-graph",
         "platform_concepts/appConfiguration/nice-incontact",
