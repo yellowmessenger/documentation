@@ -1,5 +1,5 @@
 ---
-title: Our Latest Product updates
+title: Our latest product updates
 sidebar_label: Latest updates
 featured: true
 ---
@@ -155,6 +155,27 @@ A new widget with an aggregate score of Bot CSAT and Agent CSAT on a scale of 1-
 These new additions will help users better analyse bot and agent performance with much more granularity, and without manual calculations anymore.
 
 <img src="https://i.imgur.com/CUhlum9.png" alt="drawing" width="70%"/>
+
+## 5. **Channel** 
+
+#### 5.1 Single/Multi Product message support (Catalog support)  is now available on Cloud 
+
+WhatsApp Product Message Support on Cloud Platform also known as the WhatsApp Catalog Support feature was available on app.ym and now has been made available to be used on Cloud Platform as well. There are two new Nodes that were introduced which will be required to send Product Messages on WhatsApp from the Business Catalogs.
+
+1. **Single Product Message**: This allows you to send a single product on a WhatsApp message with information like an image, description of the product, price, discounted price, etc.
+2. **Multi Product Message**: Multi-product message allows you to send an expandable Vertical Carousal message with a maximum of 30 Products for the user to go through and add to the cart or view each product individually as well.
+
+
+This feature opens doors to all the Business to have basic to complex E-commerce use cases and sell products right on WhatsApp. This is not only limited to physical goods but can also be used to showcase digital goods like Insurance, loans, etc.
+
+:::info
+References: 
+1. [Setting up of Catalog](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#2-catalog-setup)
+2. [Linking a Catalog to WABA](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#22-link-catalog-to-a-waba)
+3. [Using the SPM/MPM Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message)
+4. [Common FAQ’s](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#23-faqs)
+:::
+
 
 
 
