@@ -1,32 +1,37 @@
 ---
 title : Live Chat Integration on app.yellow.ai
-sidebar_label : Live Chat Integration on app.yellow.ai
+sidebar_label : Live Chat
 ---
 
 This integration will allow the customers who are using bots on app.yellow.ai to use the updated live chat integration on cloud.yellow.ai. 
 
-## 1. Use-cases 
+## 1. Use cases 
 The following are the use-cases of this integration:
 
-### 1.1 Amazon Connect Live Agent
+### 1.1 Amazon connect live agent
 
 To connect with an Amazon Connect Live Agent, use this code-snippet
 
-          app.raiseTicketForThirdPartyLiveChat({
-                 issue: "Test Issue",
-                 contact: {
-                     phone: "9876543210",
-                     name: "Raj",
-                     email: "Test@email.com"
-                   },
-               amazonConnectLiveAgentCustomFields: {customFields: {test: “yes”}}
-       }).then((ticketData) => {
-           app.log(ticketData, "ticketData");
-           // Display appropriate message based on the ticketData
-       }).catch((error) => {
-           app.log(error, 'error');
-           //Error handler
-       });
+
+```
+
+    app.raiseTicketForThirdPartyLiveChat({
+             issue: "Test Issue",
+             contact: {
+                 phone: "9876543210",
+                 name: "Raj",
+                 email: "Test@email.com"
+               },
+           amazonConnectLiveAgentCustomFields: {customFields: {test: “yes”}}
+    }).then((ticketData) => {
+       app.log(ticketData, "ticketData");
+       // Display appropriate message based on the ticketData
+    }).catch((error) => {
+       app.log(error, 'error');
+       //Error handler
+    });
+```
+
 This table consists of sample values, data types and descriptions for all the fields in the image.
 
 
@@ -206,26 +211,28 @@ apiresponse represents the raw response from the custom live agent create ticket
 
   To connect to a Freshchat Live Agent, please use this code-snippet
 
-
-          app.raiseTicketForThirdPartyLiveChat({
-                 issue: "Test Issue",
-                 contact: {
-                     phone: "9876543210",
-                     name: "Raj",
-                     email: "Test@email.com"
-                   },
-                    freshChatGroupId: "test-group",
-                    freshChatUserId: "3554-cbcbc-dchchc",
-                    freshChatUniqueIdentifier: "testInfo"
-       }).then((ticketData) => {
-           app.log(ticketData, "ticketData");
-           // Display appropriate message based on the ticketData
-       }).catch((error) => {
-           app.log(error, 'error');
-           //Error handler
-       });
+```
+    app.raiseTicketForThirdPartyLiveChat({
+         issue: "Test Issue",
+        contact: {
+             phone: "9876543210",
+             name: "Raj",
+             email: "Test@email.com"
+             },
+             freshChatGroupId: "test-group",
+             freshChatUserId: "3554-cbcbc-dchchc",
+             freshChatUniqueIdentifier: "testInfo"
+    }).then((ticketData) => {
+       app.log(ticketData, "ticketData");
+       // Display appropriate message based on the ticketData
+    }).catch((error) => {
+       app.log(error, 'error');
+       //Error handler
+    });
+```
 
 This table consists of sample values, data types and descriptions for all the fields in the image.
+
 | Field name| Sample value |Data type |Description|
 | -------- | -------- | -------- |-------|
 | issue    | Test description   | String    |The subject/topic/reason why the ticket is created.
