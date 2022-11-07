@@ -8,6 +8,9 @@ rank: 5
 
 Our platform tracks all data and metrics pertaining to your bot and provides you relevant analytics based on them. It even lets you create your own analytics when you need them. 
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zE3eWh-xjbg" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
+
 Some of the analytics that you get to see are:
 
 - How many users did your bot interact with?

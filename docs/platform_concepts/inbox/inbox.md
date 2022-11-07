@@ -10,6 +10,8 @@ rank: 5
 You can access Inbox using the keyboard shortcut `g` + `i`.
 :::
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UXM2-18QLds" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
 
 In this article, you will understand:
 1. [Inbox and it's functionalities](#inbox)

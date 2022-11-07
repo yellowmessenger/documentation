@@ -1,85 +1,277 @@
 ---
-sidebar_label: Manage User Data
-title: Managing user data in yellow.ai
+sidebar_label: User management
+title: User management
 ---
 
-User’s Module is available in the Engage section of your app. This is where you can see who your users are and manage them, define user properties, create user segments and more.
+You can add new users, enrich user data, define user properties, segment users into groups, and also delete users.
+
+
 
 :::info
 This is enabled only for https://cloud.yellow.ai
 :::
 
-## Manage User Properties
+  
 
-Click on **User Properties**. In the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#system-user-properties) as well as [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#custom-user-properties) along with their data types. Selecting/unselecting any of these properties decides which ones show up in the users table. Properties selected, show up in the right panel where you can arrange the order in which you want to see them on the users table
+## 1. Manage user properties
 
-![](https://i.imgur.com/KpYqmFo.jpg)
+You can customise the fields or information that you want to capture for your users and set the order in which you want the fields to appear on the UI.
 
-Clicking on **+ Custom properties**, allows you to create custom properties
+### 1.1 View user properties
+To manage user properties, follow these steps:
+
+1. On the **User 360** page, click **User properties**.
+
+![](https://i.imgur.com/BOUV1hq.png)
+
+In the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#system-user-properties) and [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#custom-user-properties) along with their data types. 
+
+2. Select the property that you want to include. You can see all the selected properties on the right. 
+
+   ![](https://i.imgur.com/O5nuQaz.png)
+
+3. To create a new custom property, cick **Add property**.
+   * Enter a name for the property > Choose the data type > Click **Save**.
+
+![](https://i.imgur.com/T9mEJaM.png)
 
 ![](https://i.imgur.com/xwdOtpt.png)
 
-## Add & Edit Users
+   To add more properties, click **New property**.
+![](https://i.imgur.com/O5nuQaz.png)
 
-If you need to add a single user, you can click on **+ Add user → Single User**. This is best for adding just a few at a time, like prospects you met at an event, or a lead who reached out on LinkedIn.
+ 4. To order user properties, in the selected properties section, drag a property to the required position.
+
+![](https://i.imgur.com/Eyk5uce.gif)
+
+
+
+
+  
+
+![](https://i.imgur.com/xwdOtpt.png)
+
+***
+
+  
+## 2. Manage  users
+
+A user could be your customer, lead, employee, or any other individual associated with your organisation or business. 
+
+When adding a user, a there could be a conflict where you identify a user with a userId that already exists in the users table.
+
+When a user who is available on channel1 tries to register with the same identifier on channel 2, all the properties of the new user will be updated as that of the existing user. That is, new user will be made identical to old user and both will be merged.
+  
+
+![](https://i.imgur.com/qNEdl6g.png)
+
+The following are the different ways in which you can add or users.
+
+The system can identify a registered user based on the userId. All updates made to this user through Flow builder, also show up in the users table.
+
+Therefore, while updating user details, make sure the user identifier is registered.
+
+
+To know about userId and its importance,  [read this article](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id/).
+
+:::note
+To identify a user in Flow builder node, use the **userId** property.
+:::
+
+### 2.1 Add/edit single user manually
+
+This is best for adding just a few at a time, like prospects you met at an event, or a lead who reached out on LinkedIn.
+
+To add a single user manually, follow these steps:
+
+1. On the User 360 page, click **Add user** > **Single user**. 
+2. Enter the user details and click **Save**. 
+
+<img src="https://i.imgur.com/ZuD3NZf.png" width="60%"/>
+
+To edit a user:
+1. On the **User 360** page, navigate to the user that you want to edit and click the more options icon > **Edit user**.
+
+![](https://i.imgur.com/b3iPfZm.png)
+
+2. Add or remove the required information and click **Save**.
+
+:::note
+Similarly, you can also delete a user using the more options icon > Delete user.
+:::
+
+
+### 2.2 Add/edit multiple users through CSV import
+
+You can also add multiple users at a time through CSV upload and Rest APIs.
+
+If you want to add/edit multiple users at once, you can use [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api/).
+
+#### 1. Manage users using Rest APIs
+
+In Yellow.ai, each user is an individual. This process of adding or updating user data is more dynamic. With APIs, you can ensure that all your user related data on Yellow.ai is always in sync with your entire tech stack.
+
+Use [User APIs](https://documenter.getpostman.com/view/17583548/UVsEVUsg) to Create, Read, Update and Delete your user data.
+
+
+  
 
 ![](https://i.imgur.com/llsMgDq.png)
 
-If you want to edit the above user, you can click on **user options → edit user**
+  
 
-![](https://i.imgur.com/TTb77hi.png)
+#### 2. Manage users through CSV import
 
-If you want to add/edit multiple users at once, we'd recommend using [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api/) or [CSV Import](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv/).
+You can also manage users and user data through CSV import. Use CSV import when you want to add a list of users that you already have, or update specific information of existing users.
 
-## Creating and managing segments
+To add customers through CSV:
 
-A segment is a group of your users defined by conditions that you set. To learn more about creating and managing segments, [refer to this document](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment/).
+1. On the User 360 page, click **Add users** > **Import users**.
+![](https://i.imgur.com/U3RuKq3.png)
+
+2. Add custom Tags to the user list if required and click on **Import**.
 
 
-:::info
+To know how the CSV import works in detail, see [CSV Import](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv/).
+
+:::note
 Users are automatically added to the segment every time the user updates to match those conditions
 :::
 
-## Viewing & Exporting your User Data
 
-By default, the Users table shows you the data for **All Users**. To view the data for Users who are a part of a particular segment, you can select that segment from the list below.
 
-![](https://i.imgur.com/8dJAT9R.png)
 
-You can export your user data as well. To export All User’s data, you can select **All Users → Actions → Download all user data**. To download the data for users that are in a particular segment, select **Segment → Actions → Download segment user data**.
+### 2.3 Add/updare users through conversations
 
-![](https://i.imgur.com/i2sdTHo.png)
+You can leverage conversational Studio [Conversational Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/) to capture relevant user data and enrich their profiles. You can also make use of the data in Studio to deliver personalised conversations.
 
-Your exported data will be in the form of CSV and will be available in **User Logs**. Head over to User Logs → Filter for **“Bulk user download”** → Click on **“Download Log”**
+  
+
+:::note
+The data captured through Studio conversations for [Identified Users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#what-are-identified-users) will be updated automatically in the Users table.
+:::
+
+
+
+#### 1. Store data in user properties
+
+
+User properties are available in all nodes under *User properties* in flow builder.
+
+In general bot conversations, it is very common practice to ask users for information like name, email, phone number.  You can enrich user profiles by storing the response to such questions in the relevant user property. This is where [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) come in handy.
+
+  
+
+To store a user’s response in the db:
+
+In the node setup, click on the **Store Response in** drop down and select the right user property under where to store the response.
+
+  
+
+<img  src="https://i.imgur.com/p6DvR3D.png"  alt="drawing"  width="60%"/>
+
+  
+However, many times, the data is not collected directly. For example, you might want to fetch certain data from the event payload and pass it to a user property.
+
+  
+
+This is where you can use a [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#variables). From the drop down, select the desired User property where you want to pass the data.
+
+  
+
+<img  src="https://i.imgur.com/NWnn7uW.png"  alt="drawing"  width="60%"/>
+
+  
+
+***
+
+
+  
+
+#### 2. Create & update user records in users table using builder
+
+  
+
+As mentioned above, to create a user record in the users table through builder, you need to identify that user. To do that, you need to set it’s **userId**, which is available as a property under **User Properties**, in every builder node.
+
+  
+
+What if a user’s response such as email id, needs to be passed to both, the userId property and email property?*
+
+  
+
+You can achieve this by storing the response in email property and then by clicking on **⚙️ icon** > Select **Use this as Unique ID for User**. This will store the response in both `email` and `userId` properties.
+
+  
+
+<img  src="https://i.imgur.com/lwP5L5r.png"  alt="drawing"  width="60%"/>
+
+  
+
+![](https://i.imgur.com/ty7LQKU.png)
+
+***
+
+## 3. Export user data
+
+ You can download your entire user data or a segment specific user data and use it wherever required. For example, you can update user details and import it again, and upload user data in a third-party system for your business use cases.
+
+To download your entire user base, in All users, click **Actions** > **Download all user data**.
+
+![](https://i.imgur.com/EPBeFUv.png)
+
+
+To download users in a particular segment, select the desired **Segment** > **Actions** > **Download segment user data**.
+
+![](https://i.imgur.com/0FIZgh7.png)
+
+You will get a download link to your email. Alternatively, you can download it from **User logs** > Apply Bulk user download filter > Click on **Download log**.
+
 
 ![](https://i.imgur.com/mPaMTEa.png)
 
-## Deleting your User Data
+***
 
-Deleting user data is possible too, however you may want to [export them](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#viewing--exporting-your-user-data) as a backup first.
 
-To delete All User’s data, you can select **All Users → Actions → Delete all user data**. To delete the data for users that are in a particular segment, select **Segment → Actions → Delete segment user data**.
+## 4. Delete user data
 
-![](https://i.imgur.com/19BKVDn.png)
+You can delete one or more users if required. However, you need to [export their data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#viewing--exporting-your-user-data) as a backup before deleting.
 
-You can also select multiple records and then choose to delete them.
 
-![](https://i.imgur.com/X3ASFOg.png)
+To delete a single user, navigate to the user that you want to delete, click on the more options icon > **Delete user**.
+ 
+  ![](https://i.imgur.com/28kG5jg.png)
 
-You may also delete user data using [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
+To delete multiple users at a time, select each user that you want to delete and click **Delete users**.
 
-:::warning
-“Archive segment” is not the same as “Delete segment user data”. The former has no impact on the user data and only archives/disables that segment from being viewed and used. The later however deletes the actual user data associated with that segment. You can read more about “Archive segment” [here](manage_user_data#viewing--exporting-your-user-data).
-:::
+![](https://i.imgur.com/nnB6VH2.png)
 
-## User Logs
 
-User logs is a space for your to audit your user data. There are 3 types of logs we capture at the moment:
+To delete user data using API, use [DELETE user API](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
 
-- **CSV Import →** This log appears whenever you import users using a CSV. The associated “Download log” link contains details around the import process, that is, which records were IMPORTED, FAILED or MERGED. You can read more about that [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv#figuring-out-what-went-wrong-with-your-csv-import).
+  
+***
 
-- **Bulk User Download →** This log appears whenever you [export your user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#viewing--exporting-your-user-data). The associated “Download log” can be used to download the exported user data in CSV format.
+## 5. View user activity logs
 
-- **Bulk User Delete →** This log appears whenever you [delete your user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#deleting-your-user-data).
+  
+
+User logs is a space for your to audit your user data. There are 3 types of logs that User 360 supports:
+
+
+-  **CSV import**: This log appears whenever you import users using a CSV. The associated *Download log* link contains details about the import process, that is, which records were imported, merged, or failed. See more about it [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv#figuring-out-what-went-wrong-with-your-csv-import).
+-  **Bulk user download **:  This log appears whenever you [export your user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#viewing--exporting-your-user-data). Use the associated *Download log* to download the exported user data in a CSV file.
+
+-  **Bulk user delete **: This log appears whenever you [delete your user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#deleting-your-user-data).
+
+  
 
 ![](https://i.imgur.com/s86psKQ.png)
+
+
+
+
+
+
+
+

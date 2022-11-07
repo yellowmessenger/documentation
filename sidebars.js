@@ -20,7 +20,7 @@ module.exports = {
     "tutorials/inbox",
     "tutorials/engage",
     "tutorials/integrations",
-    "tutorials/webinars",
+    // "tutorials/webinars",
   ],
 
   //cookbook- user guides 
@@ -324,6 +324,7 @@ module.exports = {
             "platform_concepts/inbox/chats/getstartedwithlivechat",
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/chatsearch",
+            "platform_concepts/inbox/chats/videocall",
             "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
             "platform_concepts/inbox/chats/instagrampolicy",
                  ],
@@ -536,7 +537,9 @@ module.exports = {
               items: [
                 "platform_concepts/engagement/cdp/overview",
                 "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
-                {
+                "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
+                "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+               /* {
                   type: "category",
                   label: "Managing User data and Creating Segments",
                   collapsed: true,
@@ -545,7 +548,7 @@ module.exports = {
                     "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
                     "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
                   ],
-                },
+                }, */
                 {
                   type: "category",
                   label: "Enriching User Profiles",
@@ -553,7 +556,7 @@ module.exports = {
                   items: [
                     "platform_concepts/engagement/cdp/enriching_user_profiles/user_id",
                     "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+                    // "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
                     "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
                     // "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
                   ],
@@ -569,7 +572,7 @@ module.exports = {
 
                   ],
                 },
-                {
+               /* {
                   type: "category",
                   label: "FAQs",
                   collapsed: true,
@@ -578,7 +581,7 @@ module.exports = {
                     "platform_concepts/engagement/cdp/faq/date_based_campaign",
                     "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
                   ],
-                },
+                }, */
               ],
             },
             
@@ -714,7 +717,8 @@ module.exports = {
         "platform_concepts/appConfiguration/cashfree",
         "platform_concepts/appConfiguration/clevertap",
         "platform_concepts/appConfiguration/customliveagent",
-        "platform_concepts/appConfiguration/freshdesk",
+        "platform_concepts/appConfiguration/freshchat",
+        "platform_concepts/appConfiguration/freshservice",
         "platform_concepts/appConfiguration/freshteam",
         "platform_concepts/appConfiguration/genesys-cloud-livechat",
         "platform_concepts/appConfiguration/genesys",
@@ -778,6 +782,7 @@ module.exports = {
       label: "2022 Updates",
       collapsed: true,
       items: [
+        "updates/2022/sep_updates",
         "updates/2022/aug",
         "updates/2022/july",
         

@@ -4,23 +4,48 @@ sidebar_label : Video call settings
 ---
 
 
-This document helps to configure all settings for when agents are in video calls with your customers.
+Video calling must be enabled for your customer to be able to avail of this functionality.  **Inbox Admins** can configure video call settings for their inbox agents. 
 
+Video calls must be enabled for:
+1. As a feature itself, on inbox settings.
+2. For each of the individual agents who is eligible to receive a video call. 
+3. Each [Raise Ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket). 
 
-**![](https://lh5.googleusercontent.com/Wou5ivzUvJ-QGnQH_gDJ12KPKmo8KXKTkj7BSjAAo_ze1Ke4rff9JxeRH5sE0w5BCd-Qi-Ywy-lx8eVOg9WzrgSWZU2r1Xsv2ShA-L02ighLShZDkLrMvg3lmLj3axkVSfxyUDHpOrkl-FAwsYQ1Bczhdw)**
+:::note
+Video calling ability is always limited to one. Even if an agent has an available concurrency of 20, they cannot have another call in parallel.
+:::
 
-### Manage Video Call Settings
+-----
 
+Follow the given steps to enable video calls for the inbox: 
 
-Navigating to Canned Response is as below:
+1. Open **Inbox** > **Settings**. 
+2. Search and select **Video call**. 
 
-1. Login to yellow.ai
-2. Click on Overview
-3. Select Inbox
-4. Navigate to Settings on the left pane
-5. Select Workflows
+![](https://i.imgur.com/4VS258n.jpg)
 
-![](https://i.imgur.com/x4JjmFc.jpg)
+3. Enable video call toggle. 
 
+![](https://i.imgur.com/PL7zj6S.jpg)
 
-More content to be added.
+4. Click **Upload Photos** to set a background for your video calls.  If there are multiple photos uploaded you can click on one of them(or select none) to make it the default background. 
+
+![](https://i.imgur.com/V2qFzNf.jpg)
+
+5. Add a **Video call redirect link** that will redirect a customer to a required location after the video call ends. Click **Save**.   
+
+![](https://i.imgur.com/ldMcgHG.png)
+
+Follow the given steps to enable video calls for specific agents: 
+
+> This must be enabled when the teams have dedicated agents to take video calls and the other agents can continue answering to chats/emails. 
+
+1. Open **Inbox** > **Settings**. 
+2. Search and select **Agents**. 
+
+![](https://i.imgur.com/yXJoPZs.jpg)
+
+3. Select (edit) a specific agent. Check **Available for call**. This makes them available for video calling during ticket assignments. 
+
+![](https://i.imgur.com/eJMbI5c.png)
+
