@@ -37,6 +37,8 @@ module.exports = {
       collapsed: true,
       items: [
           "cookbooks/newcard",
+          "cookbooks/studio/downloadapilogs",
+          "cookbooks/studio/regressiontest",
       ],
     }, 
     
