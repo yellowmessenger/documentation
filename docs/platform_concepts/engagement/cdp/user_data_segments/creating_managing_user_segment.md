@@ -139,3 +139,54 @@ To unarchive a segment, select any archived segment and click on **Unarchive** s
 
 ![](https://i.imgur.com/OvBSbKU.png)
  
+
+
+ ## Use case specific segments
+
+
+#### Segments for drip campaigns, birthday greetings, & other date based campaigns
+
+You might often want to reach out to users on a particular date, or after they have completed a certain number of days from that particular date. Below we will show you how you can create date based [segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/targeted_segments/) to achieve such use cases.
+
+### Drip campaign
+
+Usecase:
+- Reaching out to employees who have completed 7 days since date of joining.
+- Reaching out to users who signed up 7 days back.
+
+Such segments target users who fall within a certain range from a particular date.
+
+![](https://i.imgur.com/rK1T5sd.png)
+
+This sort of a segment can be created using [properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/) that are of Date or DateTime data type.
+The operator that can be selected are:
+- is was exactly
+- will be exactly
+- in the last
+- in the next
+
+### Birthday Greetings
+
+Usecase:
+- *Sending out Birthday Greetings!*
+
+![](https://i.imgur.com/7lFf46V.png)
+
+This segment can be set up only for Date type properties. If the campaign runs on 10th June 2022:
+- Current Day → Picks the day of when the segment is calculated, ie, 10th
+- Current Month → Picks the month of when the segment is calculated, ie, June
+- Any Year → Ignores the Year
+
+Therefore, all users with Date = 10th June, regardless of year, will be targeted.
+
+
+### Exclude users who have opted out from campaigns
+
+You might often want to exclude users who have opted out from all your campaigns. Doing this is simple:
+
+- First ensure that your opt-in data is up to date. This can be regularly updated through [conversational data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/), by uploading fresh data through [CSV](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv), or by using [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api/) to sync with your CRM.
+- Next, you can include a condition in your [segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/targeted_segments/) where, “Opt-in is true”. This segment will exclude all users for whom the opt-in is either false or unknown.
+
+![](https://i.imgur.com/xr4X98S.png)
+
+
