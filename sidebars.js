@@ -175,7 +175,7 @@ module.exports = {
       collapsed: true,
       items: [
     "platform_concepts/getting-started",
-    "platform_concepts/Getting Started/Yellow.ai-101",
+    "platform_concepts/Getting Started/introduction-to-yellow",
     "platform_concepts/Getting Started/keyboard-shortcuts",
     "platform_concepts/configurations/access-management",
 
