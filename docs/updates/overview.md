@@ -149,12 +149,15 @@ This is the percentage of sessions handled solely by the bot without transferrin
 **Human takeover** rate is now replaced with Deflection rate now because it is a better indication of bot performance.
 :::
 
+
 ##### 4. User Feedback
 
 A new widget with an aggregate score of Bot CSAT and Agent CSAT on a scale of 1-5, along with percentage increase/decrease in the selected timeframe.
 These new additions will help users better analyse bot and agent performance with much more granularity, and without manual calculations anymore.
 
 <img src="https://i.imgur.com/CUhlum9.png" alt="drawing" width="70%"/>
+
+-----
 
 ## 5. **Channel** 
 
@@ -177,6 +180,57 @@ References:
 :::
 
 
+-----
+
+## 6. **Voice**
+
+#### 6.1 Wait music for APIs
+
+Previously without Wait Music, there was dead silence on the call while API was executed resulting in a sub-optimal conversational experience.
+
+![](https://i.imgur.com/eCsR3Cy.jpg)
+
+
+Currently, if the Wait Music is configured for high latency API calls, it allows Voice Bot developers to play music on the call while waiting for the API response. Once the API call is completed, the wait music is stopped and the further steps (nodes) start executing. 
+
+
+
+
+<img src="https://i.imgur.com/skrJN8c.jpg" alt="drawing" width="100%"/>
+
+
+
+You can configure the wait music in the API node itself (works for voice bots only) where bot developers can upload a public URL or upload a file for the same. Supported formats for wait music files - .mp3 and .wav.
+
+:::note
+- This feature is an add-on hence nothing changes on the LIVE bots. Though, the team recommends implementing wait music if the latency of some APIs is high for a better user experience.
+- Ensure that the Wait Music Length (duration) is greater than the timeout configured for the API for a better experience to avoid unseen race condition scenarios.
+:::
+
+#### 6.2 Revamped voice options
+
+Voice options are fine-tunable parameters for voice channels like what is the STT engine to be used, the maximum recording duration, the length of DTMF input, the list of boost phrases, etc.
+With the revamp, both the global and voice options are now classified under different buckets to provide a more intuitive and cleaner user experience in the studio. All the voice options are classified into 6 buckets:
+1. Telephony
+2. Recording
+3. Speech-To-Text
+4. Text-To-Speech
+5. DTMF
+6. Conversation
+
+
+**Old vs. Revamped global level options** 
+
+![](https://i.imgur.com/oJauXmc.jpg)
+
+**Old vs. Revamped node level options** 
+
+
+![](https://i.imgur.com/4M0FICP.png)
+
+Along with a cleaner user experience, there are a few new voice options also introduced for configuration in UI viz. DTMF finish char, Acknowledgement Message (filler words), and TTS Array.
+
+Complete details of all the voice options are documented under [Node-Level Options](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#32-configure-node-for-a-voice-bot) and [Global-Level Options](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#25-voice).
 
 
 -----
