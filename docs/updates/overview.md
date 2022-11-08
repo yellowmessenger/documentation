@@ -1,5 +1,5 @@
 ---
-title: Our Latest Product updates
+title: Our latest product updates
 sidebar_label: Latest updates
 featured: true
 ---
@@ -149,6 +149,7 @@ This is the percentage of sessions handled solely by the bot without transferrin
 **Human takeover** rate is now replaced with Deflection rate now because it is a better indication of bot performance.
 :::
 
+
 ##### 4. User Feedback
 
 A new widget with an aggregate score of Bot CSAT and Agent CSAT on a scale of 1-5, along with percentage increase/decrease in the selected timeframe.
@@ -156,6 +157,80 @@ These new additions will help users better analyse bot and agent performance wit
 
 <img src="https://i.imgur.com/CUhlum9.png" alt="drawing" width="70%"/>
 
+-----
+
+## 5. **Channel** 
+
+#### 5.1 Single/Multi Product message support (Catalog support)  is now available on Cloud 
+
+WhatsApp Product Message Support on Cloud Platform also known as the WhatsApp Catalog Support feature was available on app.ym and now has been made available to be used on Cloud Platform as well. There are two new Nodes that were introduced which will be required to send Product Messages on WhatsApp from the Business Catalogs.
+
+1. **Single Product Message**: This allows you to send a single product on a WhatsApp message with information like an image, description of the product, price, discounted price, etc.
+2. **Multi Product Message**: Multi-product message allows you to send an expandable Vertical Carousal message with a maximum of 30 Products for the user to go through and add to the cart or view each product individually as well.
+
+
+This feature opens doors to all the Business to have basic to complex E-commerce use cases and sell products right on WhatsApp. This is not only limited to physical goods but can also be used to showcase digital goods like Insurance, loans, etc.
+
+:::info
+References: 
+1. [Setting up of Catalog](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#2-catalog-setup)
+2. [Linking a Catalog to WABA](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#22-link-catalog-to-a-waba)
+3. [Using the SPM/MPM Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message)
+4. [Common FAQ’s](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#23-faqs)
+:::
+
+
+-----
+
+## 6. **Voice**
+
+#### 6.1 Wait music for APIs
+
+Previously without Wait Music, there was dead silence on the call while API was executed resulting in a sub-optimal conversational experience.
+
+![](https://i.imgur.com/eCsR3Cy.jpg)
+
+
+Currently, if the Wait Music is configured for high latency API calls, it allows Voice Bot developers to play music on the call while waiting for the API response. Once the API call is completed, the wait music is stopped and the further steps (nodes) start executing. 
+
+
+
+
+<img src="https://i.imgur.com/skrJN8c.jpg" alt="drawing" width="100%"/>
+
+
+
+You can configure the wait music in the API node itself (works for voice bots only) where bot developers can upload a public URL or upload a file for the same. Supported formats for wait music files - .mp3 and .wav.
+
+:::note
+- This feature is an add-on hence nothing changes on the LIVE bots. Though, the team recommends implementing wait music if the latency of some APIs is high for a better user experience.
+- Ensure that the Wait Music Length (duration) is greater than the timeout configured for the API for a better experience to avoid unseen race condition scenarios.
+:::
+
+#### 6.2 Revamped voice options
+
+Voice options are fine-tunable parameters for voice channels like what is the STT engine to be used, the maximum recording duration, the length of DTMF input, the list of boost phrases, etc.
+With the revamp, both the global and voice options are now classified under different buckets to provide a more intuitive and cleaner user experience in the studio. All the voice options are classified into 6 buckets:
+1. Telephony
+2. Recording
+3. Speech-To-Text
+4. Text-To-Speech
+5. DTMF
+6. Conversation
+
+
+**Old vs. Revamped global level options** 
+
+![](https://i.imgur.com/oJauXmc.jpg)
+
+**Old vs. Revamped node level options** 
+
+
+![](https://i.imgur.com/4M0FICP.png)
+
+Along with a cleaner user experience, there are a few new voice options also introduced for configuration in UI viz. DTMF finish char, Acknowledgement Message (filler words), and TTS Array.
+
+Complete details of all the voice options are documented under [Node-Level Options](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#32-configure-node-for-a-voice-bot) and [Global-Level Options](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#25-voice).
 
 
 -----

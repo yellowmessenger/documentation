@@ -12,7 +12,9 @@ Video calls must be enabled for:
 3. Each [Raise Ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket). 
 
 :::note
-Video calling ability is always limited to one. Even if an agent has an available concurrency of 20, they cannot have another call in parallel.
+
+- Video calling can only be enabled for a live chat while creating it (a normal chat conversation cannot have video calling abilities post its creation when it is already assigned to an agent).
+- An agent can only have 1 video call ticket assigned at a given point of time (even if they are not actively engaged in that video call). This is independent of the concurrency, even if an agent has vacant available concurrency, they cannot have another call in parallel. 
 :::
 
 -----
