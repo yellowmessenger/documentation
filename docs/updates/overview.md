@@ -10,7 +10,7 @@ Here are a list of product updates we made in the month of **October** to provid
 ----
 ## 1. **Studio** 
 
-#### 1.1 Download API logs data of the last 15 days
+#### 1.1 Download API logs 
 
 > Type - Enhancement
 
@@ -18,7 +18,7 @@ Here are a list of product updates we made in the month of **October** to provid
 When there is an API issue, it is difficult to understand if our API calls are failing or if the client API is failing. To resolve this issue, we are storing all the API requests and responses to help establish the issues. Click [here](/cookbooks/studio/downloadapilogs.md) to learn more. 
 
 
-#### 1.2 Bulk Testing of utterances on Cloud
+#### 1.2 Bulk testing of utterances on cloud
 
 > Type - New feature
 
@@ -34,7 +34,7 @@ To test utterances, the studio QA team had to check each utterance in the bot on
 
   
   
-#### 2.1 New Marketplace components were added
+#### 2.1 Added new marketplace components 
 
 The following marketplace templates were are released on the platform:
 
@@ -44,16 +44,16 @@ The following marketplace templates were are released on the platform:
 
 
 ##### 1. ITSM Automation
-This template allows users to create a ticket, check ticket status and connect with an agent. Click [here](https://cloud.yellow.ai/marketplace/df8632122f795dda899df38ff1dddb16) to use the template. 
+This template allows bot users to create a ticket, check ticket status, and connect with an agent. Click [here](https://cloud.yellow.ai/marketplace/df8632122f795dda899df38ff1dddb16) to use the template. 
 
-##### 2. Session based Authentication using OTP
+##### 2. Session based authentication using OTP
 This template is used to authenticate the user using OTP and keep them authenticated until a certain period of inactivity. Click [here](https://cloud.yellow.ai/marketplace/d48194ebfbf15dc51f5b9e5deba41c56) to use the template. 
  
 
 ##### 3. IT service desk
 This template allows users to raise ticket and contact support for laptop/system related issues, login issues, etc. Click [here](https://cloud.yellow.ai/marketplace/bad34a3a53f8a828ba6c073e87e21bfc) to use the template.
 
-##### 4. FAQ automation using Document cognition
+##### 4. FAQ automation using document cognition
 This template is designed to demonstrate the document cognition feature supported by Yellow.ai. Click [here](https://cloud.yellow.ai/marketplace/3f67de2d7976a3c1a0c729cbec24c26d) to use the template.
 
 ##### 5. New course registration(send an email notification)
@@ -68,51 +68,51 @@ This template sends reminders to users on their email, when the user signs up fo
 
 > Type - Enhancement
 
-Going forward there will be improved logging in general for our service which will help to deep dive further & analyze the root cause of issues.
+Going forward there will be improved logging in general for our service which will help to deep dive further and analyze the root cause of issues.
 
-#### 3.2 New integrations were added 
+#### 3.2 Added new integrations 
 
 > Type - New feature
 
 
 The following 5 integrations are now available on our platform: 
 
-##### 1. Salesforce Live chat 
+##### 1. Salesforce live chat 
 
-Clients can now disable/enable receiving queue updates & Estimated wait time updates from the integration card UI.
+You can now disable/enable receiving queue updates and estimated wait time updates from the integration card UI.
 	
-##### 2. PayU Payment Gateway
+##### 2. PayU payment gateway
 
-Users can now generate payment links that support UPI as payment mode & also are now allowed to pass the UDF5 body as a field for supporting Payments. 
+You can now generate payment links that support UPI as payment mode and also are now allowed to pass the UDF5 body as a field for supporting Payments. 
 
 ##### 3. Billdesk Integration
-Yellow.ai Integration with Billdesk Payment Gateway allows you to create UPI Intent for WA Pay, view the payment status, and Send UPI notifications with the yellow.ai platform. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/billdesk) to know more. 
+Billdesk Payment Gateway allows you to create UPI Intent for WA Pay, view the payment status, and Send UPI notifications with the yellow.ai platform. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/billdesk) to know more. 
 
-##### 4.. Nice In-Contact Integration
-Yellow.ai Integration with Nice In-contact allows you to seamlessly connect your Nice In-contact with the yellow.ai platform. This connector will enable it to connect end users to live agents. 
+##### 4. Nice In-Contact Integration
+Nice In-contact allows you to seamlessly connect your Nice In-contact with the yellow.ai platform. This connector will enable it to connect end users to live agents. 
 
 ##### 5. Instamojo Payment Integration 
-Yellow.ai Integration with Instamojo Payment Gateway allows users to connect their business and generate payment links, view payment status, and create refunds with the yellow.ai platform. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/instamojo) to know more. 
+Instamojo Payment Gateway allows users to connect their business and generate payment links, view payment status, and create refunds with the yellow.ai platform. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/instamojo) to know more. 
 
 
 -----
 ## 4. **Insights**
 
 
-#### 4.1 Bot & Agent metrics was added to enhance data points on the insights dashboard
+#### 4.1 **Bot & Agent metrics** was added to enhance data points on the insights dashboard
 
 > Type - Enhancement
 
-To further enrich our out-of-the-box analytics present in the Overview page of Insights, we have added some new and enhanced data points on the dashboard. The 4 enhancements are:
+To further enrich our out-of-the-box analytics present on the Overview page of Insights, we have added some new and enhanced data points on the dashboard. The 4 enhancements are:
 - Messages bifurcation
 - Sessions bifurcation
 - Deflection rate
-- User Feedback
+- User feedback
 
 
 ##### 1. Messages bifurcation
 
-Messages metrics under User Traffic is now further bifurcated into:  
+Messages metrics under **User Traffic** is now further bifurcated into:  
 
 
 | Bot & User | Agent & User |
@@ -186,12 +186,12 @@ References:
 
 #### 6.1 Wait music for APIs
 
-Previously without Wait Music, there was dead silence on the call while API was executed resulting in a sub-optimal conversational experience.
+Previously, without **Wait Music**, there was silence on the call while API was executed resulting in a sub-optimal conversational experience.
 
 ![](https://i.imgur.com/eCsR3Cy.jpg)
 
 
-Currently, if the Wait Music is configured for high latency API calls, it allows Voice Bot developers to play music on the call while waiting for the API response. Once the API call is completed, the wait music is stopped and the further steps (nodes) start executing. 
+Currently, if the Wait Music is configured for high latency API calls, it allows Voice Bot developers to play music on the call while waiting for the API response. After the API call is completed, the wait music is stopped and the further steps (nodes) are executed. 
 
 
 
@@ -204,7 +204,7 @@ You can configure the wait music in the API node itself (works for voice bots on
 
 :::note
 - This feature is an add-on hence nothing changes on the LIVE bots. Though, the team recommends implementing wait music if the latency of some APIs is high for a better user experience.
-- Ensure that the Wait Music Length (duration) is greater than the timeout configured for the API for a better experience to avoid unseen race condition scenarios.
+- Ensure that the **Wait Music Length** (duration) is greater than the timeout configured for the API for a better experience to avoid unseen race condition scenarios.
 :::
 
 #### 6.2 Revamped voice options

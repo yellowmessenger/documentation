@@ -357,14 +357,16 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "Analytics",
+             label: "Analytics",
               collapsed: true,
-              items: [
-            "platform_concepts/inbox/analytics-reports/analytics/agents",
-            "platform_concepts/inbox/analytics-reports/analytics/chats",
-            "platform_concepts/inbox/analytics-reports/analytics/tickets",
+             items: [
+            
+
+              "platform_concepts/inbox/analytics-reports/analytics",
+              "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
                     ],
             },
+
             {
               type: "category",
               label: "Reports",
@@ -379,7 +381,6 @@ module.exports = {
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-activity-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-performance-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
-                "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
               ],
             },
             {

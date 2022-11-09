@@ -30,7 +30,7 @@ Few translations that could provide a human touch can be configured using the Tr
 ---
 
 On this page, you can configure your messages in multiple languages. 
-To add translatins, follow the given steps: 
+To add translations, follow the given steps: 
 
 1. Open **Studio** > **Translation**. 
 2. Click **+Add Key**.
