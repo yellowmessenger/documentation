@@ -713,6 +713,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/appConfiguration/overview",
+        "platform_concepts/appConfiguration/amazon-livechat",
         "platform_concepts/appConfiguration/aws-s3",
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/billdesk",
