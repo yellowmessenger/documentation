@@ -3,8 +3,6 @@ title : Amazon Connect Live Chat
 sidebar_label : Amazon Connect Live Connect
 ---
 
-# Amazon Connect Live Chat 
-
 Your yellow.ai account can be integrated with Amazon Connect Live Chat through this integration. This will help you connect your chats with live agents.
 
 ## 1. Use Case
