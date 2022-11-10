@@ -300,7 +300,7 @@ module.exports = {
         //3. chats doc 
         {
           type: "category",
-          label: "Chat",
+          label: "Chat Tickets",
           collapsed: true,
           items: [
             "platform_concepts/inbox/chats/getstartedwithlivechat",
@@ -314,11 +314,12 @@ module.exports = {
         //4. tickets doc 
         {
           type: "category",
-          label: "Tickets",
+          label: "Email Tickets",
           collapsed: true,
           items: [
             "platform_concepts/inbox/tickets/setupandconfig",
             "platform_concepts/inbox/tickets/email-ticketing",
+            "platform_concepts/inbox/tickets/emailticketstatus",
             "platform_concepts/inbox/tickets/manualticket",
             "platform_concepts/inbox/tickets/searchandfilter",
             "platform_concepts/inbox/tickets/bulkaction",
@@ -862,7 +863,7 @@ module.exports = {
     },
   ],
 
-  
+
   glossary: [
     // "glossary/advanced-virtual-assistants",
     // "glossary/agent-assist",
