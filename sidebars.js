@@ -178,6 +178,8 @@ module.exports = {
     "platform_concepts/Getting Started/introduction-to-yellow",
     "platform_concepts/Getting Started/keyboard-shortcuts",
     "platform_concepts/configurations/access-management",
+    "platform_concepts/configurations/api-keys",
+
 
 
       ]
@@ -280,30 +282,7 @@ module.exports = {
       ],
     },
   
-    {
-      type: "category",
-      label: "Insights",
-      collapsed: true,
-      items: [
-        "platform_concepts/growth/growth",
-        "platform_concepts/growth/overview",
-        "platform_concepts/growth/metrics",
-        "platform_concepts/growth/api-usage",
 
-        {
-          type: "category",
-          label: "User Journeys",
-          collapsed: true,
-          items: [
-            "platform_concepts/growth/user-journeys",
-            "platform_concepts/growth/funnels",
-          ],
-        },
-
-        "platform_concepts/growth/data-explorer",
-        "platform_concepts/growth/dashboards",
-      ],
-    },
 
 
 // Inbox Section 
@@ -357,14 +336,16 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "Analytics",
+             label: "Analytics",
               collapsed: true,
-              items: [
-            "platform_concepts/inbox/analytics-reports/analytics/agents",
-            "platform_concepts/inbox/analytics-reports/analytics/chats",
-            "platform_concepts/inbox/analytics-reports/analytics/tickets",
+             items: [
+            
+
+              "platform_concepts/inbox/analytics-reports/analytics",
+              "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
                     ],
             },
+
             {
               type: "category",
               label: "Reports",
@@ -379,7 +360,6 @@ module.exports = {
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-activity-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-performance-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
-                "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
               ],
             },
             {
@@ -492,38 +472,8 @@ module.exports = {
     },
 
 
-    //next section - Mobile SDK
+// Engage module starts here 
 
-    {
-      type: "category",
-      label: "Mobile SDK",
-      collapsed: true,
-      items: [
-        {
-          type: "category",
-          label: "Inbox",
-          collapsed: true,
-          items: [
-          "platform_concepts/mobile/inbox/android",
-          "platform_concepts/mobile/inbox/ios",
-          "platform_concepts/mobile/inbox/cordova",
-          ],
-        },
-        {
-          type: "category",
-          label: "ChatBot",
-          collapsed: true,
-          items: [
-          "platform_concepts/mobile/chatbot/android",
-          "platform_concepts/mobile/chatbot/cordova",
-          "platform_concepts/mobile/chatbot/flutter",
-          "platform_concepts/mobile/chatbot/ios",
-          "platform_concepts/mobile/chatbot/react-native",
-          "platform_concepts/mobile/chatbot/xamarin",
-          ],
-        },
-      ],
-    },
     
     
     {
@@ -677,6 +627,38 @@ module.exports = {
         },
       ],
     },
+
+// Insights module starts here 
+
+
+    {
+      type: "category",
+      label: "Insights",
+      collapsed: true,
+      items: [
+        "platform_concepts/growth/growth",
+        "platform_concepts/growth/overview",
+        "platform_concepts/growth/metrics",
+        "platform_concepts/growth/api-usage",
+
+        {
+          type: "category",
+          label: "User Journeys",
+          collapsed: true,
+          items: [
+            "platform_concepts/growth/user-journeys",
+            "platform_concepts/growth/funnels",
+          ],
+        },
+
+        "platform_concepts/growth/data-explorer",
+        "platform_concepts/growth/dashboards",
+      ],
+    },
+
+
+//Channels module starts here 
+
     {
       type: "category",
       label: "Channels",
@@ -761,23 +743,63 @@ module.exports = {
         "platform_concepts/appConfiguration/exposing-integration-to-app",
       ],
     },
-    {
+    
+   /* {
       type: "category",
       label: "Configurations",
       collapsed: true,
       items: [
       //  "platform_concepts/configurations/signup-post-bot-invite",
         "platform_concepts/configurations/subscription",
-        "platform_concepts/configurations/api-keys",
       ],
-    },
-    {
+    },*/
+    
+    /*{
       type: "category",
       label: "Compliances",
       collapsed: true,
       items: ["platform_concepts/compliances/certifications"],
-    },
-  ],
+    },*/
+
+        //next section - Mobile SDK
+
+        {
+          type: "category",
+          label: "Mobile SDK",
+          collapsed: true,
+          items: [
+            {
+              type: "category",
+              label: "Inbox",
+              collapsed: true,
+              items: [
+              "platform_concepts/mobile/inbox/android",
+              "platform_concepts/mobile/inbox/ios",
+              "platform_concepts/mobile/inbox/cordova",
+              ],
+            },
+            {
+              type: "category",
+              label: "ChatBot",
+              collapsed: true,
+              items: [
+              "platform_concepts/mobile/chatbot/android",
+              "platform_concepts/mobile/chatbot/cordova",
+              "platform_concepts/mobile/chatbot/flutter",
+              "platform_concepts/mobile/chatbot/ios",
+              "platform_concepts/mobile/chatbot/react-native",
+              "platform_concepts/mobile/chatbot/xamarin",
+              ],
+            },
+          ],
+        },
+
+  ], 
+  // Docs tab ends here
+
+
+  // Product updates/ What's new tab starts here
+
   updates: [
     "updates/overview",
    // "updates/2022/sep_updates",
@@ -839,6 +861,8 @@ module.exports = {
       items: [],
     },
   ],
+
+  
   glossary: [
     // "glossary/advanced-virtual-assistants",
     // "glossary/agent-assist",
