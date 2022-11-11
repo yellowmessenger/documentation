@@ -232,6 +232,24 @@ Along with a cleaner user experience, there are a few new voice options also int
 
 Complete details of all the voice options are documented under [Node-Level Options](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#32-configure-node-for-a-voice-bot) and [Global-Level Options](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#25-voice).
 
+#### 6.3 Voice bot number association
+
+:::note
+Phone numbers are a limited resource and are leased from downstream providers at Monthly costs to Yellow.ai. Ensure that only the required count of the phone numbers is being added to the Bot.
+:::
+
+Previously, the process of associating a phone number to a Voice Bot was manual hence, the TAT also revolved around 1 - 2 days. To streamline this process and bring us one step closer to a self-serve platform, developers can now associate numbers to their bots directly on our Cloud portal. 
+
+Currently, to find the new Phone number management screen, you can navigate to **Channels** > **Voice**  > **Interactive Voice Response**(IVR). On this screen the following actions are available to the users:
+* View the Phone number/s currently associated with the Bot.
+* Associate new Phone number/s to the Bot.
+* Remove Phone number/s mapping from the Bot.
+
+Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/Ivr) to learn more. 
+
+
+![](https://i.imgur.com/TYv4idf.jpg)
+
 
 -----
 
