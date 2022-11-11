@@ -176,6 +176,7 @@ module.exports = {
       items: [
     "platform_concepts/getting-started",
     "platform_concepts/Getting Started/introduction-to-yellow",
+    "platform_concepts/Getting Started/account-setup",
     "platform_concepts/Getting Started/keyboard-shortcuts",
     "platform_concepts/configurations/access-management",
 

@@ -3,8 +3,6 @@ title: Introduction to Yellow.ai
 sidebar_label: Introduction to Yellow.ai
 ---
 
-# Introduction to Yellow.ai
-
 Yellow.ai is an online platform that helps you create powerful AI driven bots. The combined capabilities of human and AI lets you provide best customer support experience. The platform allows you to connect bot users to human techies, run campaigns, manage the bots on multiple channels, integrate with third party applications, and measure the performance of these bots.
 
 ## 1. Exploring Yellow.ai
