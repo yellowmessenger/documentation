@@ -1,7 +1,6 @@
 ---
-title: Metrics
-sidebar_label: Metrics
-
+title: User metrics
+sidebar_label: User metrics
 ---
 
 ## How is your bot performing - Deepdive

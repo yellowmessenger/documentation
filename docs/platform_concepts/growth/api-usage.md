@@ -1,6 +1,6 @@
 ---
 title: API Usage
-sidebar_label: API Usage
+sidebar_label: API usage
 
 ---
 ## API Usage

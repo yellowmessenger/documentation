@@ -30,7 +30,7 @@ To configure DTMF, you can use the below-mentioned node level options:
 DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which the bot understands when to stop capturing:   
 1. Digit Length is useful when you are capturing fixed-length data. Ex: Phone number.  
 2. Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model id, application number. A user can define either "*" or "#" to inform that all Digits are added.  
-3. DTMF timeout is a default selection (not open for configuration) and it is set to 10 seconds by default. It overrides both the above mention way. Ex: If the length is 11 and the user has only entered 6 characters in 10 seconds, it will only capture those and move ahead.
+3. DTMF timeout is a default inactivity timeout (not open for configuration) and it is set to 10 seconds by default (it overrides **digit length** and **finish character**).  For example, if the length is 11 and the user has only entered 6 characters, and there are 10 seconds of inactivity, only those will be captured. 
 
 :::
     

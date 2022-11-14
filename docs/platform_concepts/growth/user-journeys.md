@@ -1,6 +1,6 @@
 ---
 title: User Journey Visualisation
-sidebar_label: User Journeys
+sidebar_label: Visualisation
 ---
 
 
@@ -36,6 +36,8 @@ User Journey Visualisation enables you to view how your users are moving across 
 
 
 ![](https://i.imgur.com/WBENaSa.png)
+
+
 
 
     
