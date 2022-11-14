@@ -641,8 +641,17 @@ module.exports = {
       items: [
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
-        "platform_concepts/growth/metrics",
-        "platform_concepts/growth/api-usage",
+
+
+        {
+          type: "category",
+          label: "Metrics",
+          collapsed: true,
+          items: [
+            "platform_concepts/growth/metrics",
+            "platform_concepts/growth/api-usage",
+          ],
+        },
 
         {
           type: "category",
@@ -654,8 +663,21 @@ module.exports = {
           ],
         },
 
-        "platform_concepts/growth/data-explorer",
+        {
+          type: "category",
+          label: "Data explorer",
+          collapsed: true,
+          items: [
+            //Add default table + Custom table 
+            "platform_concepts/growth/data-explorer",
+            
+
+          ],
+        },
+
         "platform_concepts/growth/dashboards",
+        "platform_concepts/growth/goals",
+        "platform_concepts/growth/faqs-user",
       ],
     },
 
