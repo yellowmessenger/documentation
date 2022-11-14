@@ -186,8 +186,6 @@ module.exports = {
     "platform_concepts/Getting Started/keyboard-shortcuts",
    
 
-
-
       ]
     },
     {
@@ -666,6 +664,8 @@ module.exports = {
             "platform_concepts/growth/funnels",
           ],
         },
+
+        "platform_concepts/growth/doccog",
 
         {
           type: "category",
