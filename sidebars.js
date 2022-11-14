@@ -174,7 +174,6 @@ module.exports = {
       label: "Get Started",
       collapsed: true,
       items: [
-    "platform_concepts/getting-started",
     "platform_concepts/Getting Started/introduction-to-yellow",
     "platform_concepts/Getting Started/account-setup",
     "platform_concepts/Getting Started/create-a-bot", 
