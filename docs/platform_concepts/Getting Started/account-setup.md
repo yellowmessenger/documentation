@@ -1,6 +1,6 @@
 ---
 title: Account Setup and Subscription
-sidebar_label: Account Setup and Subscription
+sidebar_label: Account setup & subscription
 ---
 
 

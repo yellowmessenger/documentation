@@ -174,22 +174,13 @@ module.exports = {
       label: "Get Started",
       collapsed: true,
       items: [
-
-   /*
-   
+    "platform_concepts/getting-started",
     "platform_concepts/Getting Started/introduction-to-yellow",
-    "platform_concepts/Getting Started/account-setup",
-    "platform_concepts/Getting Started/platform-offerings",
-    "platform_concepts/Getting Started/self-help-resources",
-    "platform_concepts/Getting Started/add-bot-collaborators",
-    "platform_concepts/Getting Started/create-a-bot", 
-    
-    */
-
+    "platform_concepts/Getting Started/keyboard-shortcuts",
     "platform_concepts/configurations/access-management",
     "platform_concepts/configurations/api-keys",
-    "platform_concepts/Getting Started/keyboard-shortcuts",
-   
+
+
 
       ]
     },
@@ -648,17 +639,8 @@ module.exports = {
       items: [
         "platform_concepts/growth/growth",
         "platform_concepts/growth/overview",
-
-
-        {
-          type: "category",
-          label: "Metrics",
-          collapsed: true,
-          items: [
-            "platform_concepts/growth/metrics",
-            "platform_concepts/growth/api-usage",
-          ],
-        },
+        "platform_concepts/growth/metrics",
+        "platform_concepts/growth/api-usage",
 
         {
           type: "category",
@@ -670,23 +652,8 @@ module.exports = {
           ],
         },
 
-        "platform_concepts/growth/doccog",
-
-        {
-          type: "category",
-          label: "Data explorer",
-          collapsed: true,
-          items: [
-            //Add default table + Custom table 
-            "platform_concepts/growth/data-explorer",
-            
-
-          ],
-        },
-
+        "platform_concepts/growth/data-explorer",
         "platform_concepts/growth/dashboards",
-        "platform_concepts/growth/goals",
-        "platform_concepts/growth/faqs-user",
       ],
     },
 
