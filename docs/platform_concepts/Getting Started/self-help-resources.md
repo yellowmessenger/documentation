@@ -1,6 +1,6 @@
 ---
-title: Self-help resources
-sidebar_label: Self-help resources
+title: Self help resources
+sidebar_label: Self help resources
 ---
 
 Self-help resources are readily available on the platform to provide you with immediate assistance in resolving your issues that are related to the product. 
