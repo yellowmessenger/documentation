@@ -1,6 +1,6 @@
 ---
 title: Getting started with yellow.ai
-sidebar_label: Get started
+sidebar_label: Account Setup and Subscription
 ---
 
 Welcome to yellow.ai! To start creating bots, you need to create an account and add relevant bot information. Let's get to it.
