@@ -11,7 +11,7 @@ The scope in the table says from where can you use that particular shortcut key.
 * Studio: You can use these keyboard shortcuts only in the Studio module.
 :::
 
-The following table lists the keyboard shortcuts for Studio module -
+The following table lists the keyboard shortcuts for our platform
 
 Action | Shortcut Key | Accessibility
 ------ | -------- | -----------
