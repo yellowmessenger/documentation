@@ -33,10 +33,13 @@ You can run outbound campaign in multiple channels such as Email, SMS, WhatsApp,
 The campaigns on messaging channels such as *FB Messenger* will be in the form of notifications.
 :::  
 
+To know more about Outbound engagement in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign)
+
 ### 1.2 Inbound Engagement
 
 Inbound engagement is carried out when customers visit the brand's website to explore the product or service offerings. The Inbound engagement helps in converting casual visitors into prospective leads or buyers.
 
+To know more about Outbound engagement in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign).
 
 ### 1.3 Workflow campaign
 
