@@ -100,9 +100,14 @@ Templates are categorized into 7 different collections which can be explored bas
 - Flows will be imported and trained automatically for your bot. 
 - Inside **Studio** > **Build**, you can select the imported flow and edit it further. 
 
+> Learn more about flows and how to edit flows [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#2-introdution-to-flow). 
+
 ![](https://i.imgur.com/gfw2hy9.png)
 
 - After editing, you can publish the changes. 
 
+> Click here to learn about [how to debug your flow](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) and [how to publish the bot](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
+
 ![](https://i.imgur.com/oRoCiRc.jpg)
+
 
