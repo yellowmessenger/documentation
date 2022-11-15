@@ -1,6 +1,6 @@
 ---
-title: Download API logs data of the last 15 days
-sidebar_label : Download API logs data
+title: Download API logs of the last 15 days
+sidebar_label : Download API logs 
 ---
 
 When there is an API issue, we don’t know if our API calls are failing or if the client API is failing. To resolve this issue we are now storing all the API requests and responses which will help establish the issues.
