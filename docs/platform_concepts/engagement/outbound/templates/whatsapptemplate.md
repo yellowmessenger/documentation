@@ -185,4 +185,4 @@ To learn to schedule a campaign to a user segment at the desired time, click [he
 
 **What next?**
 
-After creating a WhatsApp template, create a WhatsApp campaign using the template as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
+After creating a WhatsApp template, create a WhatsApp campaign using the template as explained [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
