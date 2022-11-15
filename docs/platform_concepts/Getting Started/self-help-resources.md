@@ -1,17 +1,17 @@
 ---
-title: Self-help resources
-sidebar_label: Self-help resources
+title: Self help resources
+sidebar_label: Self help resources
 ---
 
 Self-help resources are readily available on the platform to provide you with immediate assistance in resolving your issues that are related to the product. 
 
-### <a name="access"></a> 1. Access the help section
+## <a name="access"></a> 1. Access the help section
 
 You can access the **Help** section from any module, that is, the **Overview** page, **Studio, Inbox, Engage, Insights, Channels, and Integrations**. Click on the highlighted icon to access the **Help** resources, as shown in the below screenshot.
 
 <img src="https://i.imgur.com/jSNoQPL.jpg)" alt="drawing" width="70%"/>
 
-### <a name="use"></a> 2. Usage of the Help section
+## <a name="use"></a> 2. Usage of the Help section
 
 Irrespective of whether you are a new or experienced user, when you face any problem related to the platform, you can make use of the resources to understand a product, contact our product experts, or connect with our support agents. The following are the different help resources:
 * Read the docs
