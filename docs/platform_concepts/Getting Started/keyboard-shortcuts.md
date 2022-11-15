@@ -7,11 +7,11 @@ We have introduced keyboard shortcuts to make it easy for you to access key opti
 
 :::note
 The scope in the table says from where can you use that particular shortcut key.
-* Global: You can use these keyboard shortcuts from any screen of https://cloud.yellow.ai
-* Studio: You can use these keyboard shortcuts only in the Studio module.
+* **Global**: You can use these keyboard shortcuts from any screen of https://cloud.yellow.ai
+* **Studio**: You can use these keyboard shortcuts only in the Studio module.
 :::
 
-The following table lists the keyboard shortcuts for our platform
+The following table lists the keyboard shortcuts for our platform:
 
 Action | Shortcut Key | Accessibility
 ------ | -------- | -----------

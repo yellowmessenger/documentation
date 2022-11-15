@@ -169,21 +169,46 @@ module.exports = {
 
 
   platform_concepts: [
+
+  // Get started/ Overview starts here  
     {
       type: "category",
       label: "Get Started",
       collapsed: true,
       items: [
+    
+    "platform_concepts/Getting Started/account-setup",
+
     "platform_concepts/getting-started",
-    "platform_concepts/Getting Started/introduction-to-yellow",
+
+    {
+      type: "category",
+      label: "Overview",
+      collapsed: true,
+      items: [
+
+        "platform_concepts/Getting Started/platform-offerings",
+        "platform_concepts/Getting Started/self-help-resources",
+        "platform_concepts/Getting Started/create-a-bot",
+      ],
+    },
+    {
+      type: "category",
+      label: "User profile settings",
+      collapsed: true,
+      items: [
+        "platform_concepts/Getting Started/api-keys",
+      ],
+    },
+
+    "platform_concepts/Getting Started/add-bot-collaborators",
     "platform_concepts/Getting Started/keyboard-shortcuts",
-    "platform_concepts/configurations/access-management",
-    "platform_concepts/configurations/api-keys",
-
-
 
       ]
     },
+
+    // Studio starts here  
+  
     {
       type: "category",
       label: "Studio",
@@ -629,33 +654,56 @@ module.exports = {
       ],
     },
 
+
+
 // Insights module starts here 
 
 
+{
+  type: "category",
+  label: "Insights",
+  collapsed: true,
+  items: [
+    "platform_concepts/growth/growth",
+    "platform_concepts/growth/overview",
     {
       type: "category",
-      label: "Insights",
+      label: "Metrics",
       collapsed: true,
       items: [
-        "platform_concepts/growth/growth",
-        "platform_concepts/growth/overview",
         "platform_concepts/growth/metrics",
         "platform_concepts/growth/api-usage",
-
-        {
-          type: "category",
-          label: "User Journeys",
-          collapsed: true,
-          items: [
-            "platform_concepts/growth/user-journeys",
-            "platform_concepts/growth/funnels",
-          ],
-        },
-
-        "platform_concepts/growth/data-explorer",
-        "platform_concepts/growth/dashboards",
       ],
     },
+
+    {
+      type: "category",
+      label: "User Journeys",
+      collapsed: true,
+      items: [
+        "platform_concepts/growth/user-journeys",
+        "platform_concepts/growth/funnels",
+      ],
+    },
+
+    "platform_concepts/growth/doccog",
+
+    {
+      type: "category",
+      label: "Data explorer",
+      collapsed: true,
+      items: [
+        //Add default table + Custom table 
+        "platform_concepts/growth/data-explorer",
+      ],
+    },
+
+    "platform_concepts/growth/dashboards",
+    "platform_concepts/growth/goals",
+    "platform_concepts/growth/faqs-user",
+  ],
+},
+
 
 
 //Channels module starts here 

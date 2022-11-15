@@ -1,61 +1,45 @@
 ---
-title: Getting started with yellow.ai
-sidebar_label: Get started
+title: Introduction to Yellow.ai
+sidebar_label: Introduction to Yellow.ai
 ---
 
-Welcome to yellow.ai! To start creating bots, you need to create an account and add relevant bot information. Let's get to it.
+Yellow.ai is an online platform that helps you create powerful AI driven bots. The combined capabilities of human and AI lets you provide best customer support experience. The platform allows you to connect bot users to human techies, run campaigns, manage the bots on multiple channels, integrate with third party applications, and measure the performance of these bots.
 
-## **1. Setup a yellow.ai account**
+## 1. Exploring Yellow.ai
 
-1. Go to cloud.yellow.ai
-2. Select your preferred mode of signup.
-3. Fill in the fields and click **Signup**.
+Here's a list of the wide variet of features our platform has got to offer
 
-![](https://i.imgur.com/eTCs5QK.jpg)
+* Create efficient bots in **[Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview)**. These bots can be used to help your customers with a particular piece of information, carry out certain actions, connect them to a live agents, etc. 
 
-4. You will receive the verification link in your email. Click **Verify Email**.
+* Measure the perfomance of your bot such as customer location, successful API calls, customer engagement time, etc in **[Insights](https://docs.yellow.ai/docs/platform_concepts/growth/growth)**. They help you make better business decisions. 
 
-![](https://i.imgur.com/DjCqeFz.png)
+* Manage live customer queries from multiple channels in **[Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox)**. It's a one stop solution to attend customer queries via emails and chats, stack FAQs, evaluate the metrics of live agents and more. 
 
-You will be taken to your Yellow.ai account.
+* Run marketing campaigns using [**Engage**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).This can be in the form of messages, emails, in-app banners,etc. 
 
-5. In the following screen, select your business usecase and click **Next**.
+* [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)  are platforms via which you can run your bots. Yellow.ai offers 35+ channels and a one-time connectivuty setup. 
 
-![](https://i.imgur.com/59QaZQF.jpg)
+* Integrate your Yellow.ai platform with various other third party applications to access their functionalities in [**Integrations**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview).
 
-6. Choose your level of familiarity with bots and click **Next**.
+* Build bots easily from our readily available templates. These templates have been designed to suit different business use cases and industries. Pick the one that suits you from our collection of templates at **Marketplace**.
 
-![](https://i.imgur.com/gDRgnpb.jpg)
+## 2. Get Help
 
-7. Fill in your personal details and click **Get Started**.
+Apart from our knowledge base, we also have training materials for our product.
 
-![](https://i.imgur.com/B5lXN0E.jpg)
+[LMS](https://ascend.yellow.ai/) - This course will educate you on the inside out of yellow.ai . 
 
-You're almost there. Provide the bot requisites to start creating a bot.
+Yellow.ai [Youtube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) - Product videos that will walk you through all the features.
 
+We have a 3-day live training session where our product experts will guide you on every aspect of the product. Click [here](https://ascend.yellow.ai/training-registration) to register.
 
-## **2. Confirgure bot requisites**
+---------------------
 
-1. Click **Create a bot** from scratch.
+**Next Step**
 
-![](https://i.imgur.com/sem5S7Q.png)
-
-3. Fill in the details on the **Create bot** dialog box and click **Create bot**.
-
-![](https://i.imgur.com/GqmWXsx.png)
-
-5. Go to **Overview** and click **Studio**.
+Go to [cloud.yellow.ai](https://cloud.yellow.ai/) to signup. Refer to this [link](https://docs.yellow.ai/docs/platform_concepts/getting-started) for detailed steps on signing up and setting up your account.
 
 
-Voila! You're done. Would you like a step by step guide on creating bots? [Here](https://docs.yellow.ai/docs/platform_concepts/studio/overview) you go.
-
-It doesn't end there, you can track the data and metrics of your bot, manage customer queries on multiple channels, run campaigns and much more. The following modules will help you in using your bot efficiently.
 
 
-| Name   | Description                                                      |     |
-| ------ | ---------------------------------------------------------------- | --- |
-[Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox)      |     Connect your bots with human techies to help your customers.
-[Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview) | Watch how the conversations unfold and the journeys you put your users through.
-[Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage) | Run marketing campaigns across 20+ channels.
-[Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) | The bots you build can be plugged to various applications. 
-[Integrations](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview) | Integrate your bot with multiple platforms for efficient customer experience.
+
