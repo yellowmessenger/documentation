@@ -1,6 +1,6 @@
 ---
 title: Know about platform offerings 
-sidebar_label: Know about platform offerings
+sidebar_label: Platform offerings
 ---
 
 You will see the platform **Overview** page when you sign in to [Yellow.ai platform](https://cloud.yellow.ai). You can find all the useful links required to access platform offerings and get self-help. 
