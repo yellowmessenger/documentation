@@ -30,15 +30,23 @@ module.exports = {
 
     "cookbooks/getting_started",
     "cookbooks/conversation-design",
-  
+ 
+    {
+      type: "category",
+      label: "Marketplace templates",
+      collapsed: true,
+      items: [
+        "cookbooks/marketplacetemplates/intro",
+        "cookbooks/marketplacetemplates/template1",
+      ],
+    }, 
+
     {
       type: "category",
       label: "Configurations in studio-builder",
       collapsed: true,
       items: [
           "cookbooks/newcard",
-          "cookbooks/studio/downloadapilogs",
-          "cookbooks/studio/regressiontest",
       ],
     }, 
     
@@ -273,6 +281,8 @@ module.exports = {
             "platform_concepts/studio/api/bearer-token",
            // "platform_concepts/studio/api/transformation-function",
             "platform_concepts/studio/api/api-settings",
+            "cookbooks/studio/downloadapilogs",
+
           ],
         },
 
@@ -288,6 +298,8 @@ module.exports = {
             "platform_concepts/studio/analyze/chat-logs",
           ],
         },
+
+        "cookbooks/studio/regressiontest",
 
         {
           type: "category",
