@@ -1,6 +1,6 @@
 ---
-title: Generating API Keys
-sidebar_label : API Keys
+title: Generate API Keys
+sidebar_label : Generate API Keys
 ---
 
 API keys are used for authentication and authorization when another system or program calls the protected APIs. 

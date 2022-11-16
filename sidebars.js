@@ -184,20 +184,33 @@ module.exports = {
       label: "Get Started",
       collapsed: true,
       items: [
-    
+   
+        {
+          type: "category",
+          label: "Overview",
+          collapsed: true,
+          items: [
+          
+        "platform_concepts/getting-started",
     "platform_concepts/Getting Started/account-setup",
-
-    "platform_concepts/getting-started",
+    "platform_concepts/Getting Started/self-help-resources",
+  ],
+},
+    
 
     {
       type: "category",
-      label: "Overview",
+      label: "Get started with Platform",
       collapsed: true,
       items: [
 
         "platform_concepts/Getting Started/platform-offerings",
-        "platform_concepts/Getting Started/self-help-resources",
         "platform_concepts/Getting Started/create-a-bot",
+        "platform_concepts/Getting Started/add-bot-collaborators",
+        "platform_concepts/Getting Started/keyboard-shortcuts",
+        "platform_concepts/Getting Started/api-keys",
+
+
       ],
     },
     {
@@ -205,12 +218,9 @@ module.exports = {
       label: "User profile settings",
       collapsed: true,
       items: [
-        "platform_concepts/Getting Started/api-keys",
       ],
     },
 
-    "platform_concepts/Getting Started/add-bot-collaborators",
-    "platform_concepts/Getting Started/keyboard-shortcuts",
 
       ]
     },
