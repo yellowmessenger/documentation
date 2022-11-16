@@ -177,7 +177,7 @@ This segment can be set up only for Date type properties. If the campaign runs o
 - Current Month → Picks the month of when the segment is calculated, ie, June
 - Any Year → Ignores the Year
 
-Therefore, all users with Date = 10th June, regardless of year, will be targeted.
+Therefore, all users with Date June 10, (regardless of year), will be targeted.
 
 
 ### Exclude users who have opted out from campaigns
