@@ -9,7 +9,9 @@ We introduced this as a one-stop solution to help our customers quickly build co
 
 We have 100+ templates and components on Marketplace spanning across Ecommerce, Automobile, Healthcare, Ed-tech, BFSI, and Employee Experience verticals. Along with the templates, we have flows which are frequently used reusable components which we have researched and are present across most customer use cases. A prime example of frequently used flows are ‘Chat with an Agent’ or ‘Change Language’. Similarly, you will find a host of flows/templates built around integrations with applications like CRM, Payments, Live Agents, and Marketing Clouds among others.
 
-## 1. Open marketplace 
+## 1. Browse templates 
+
+### 1.1 Open marketplace 
 
 To start customizing a bot with the help of our templates, login to [yellow.ai](https://cloud.yellow.ai/auth/login) and open **Marketplace** from the overview page.
 
@@ -19,10 +21,14 @@ To start customizing a bot with the help of our templates, login to [yellow.ai](
 ![](https://i.imgur.com/oQJRB60.jpg)
 
 
+:::info
+**Sort templates**   
 
-## 2. Select the template
+Sort and view templates based on popularity or the recently added. 
+![](https://i.imgur.com/EXT9Vk1.png)
+:::
 
-### 2.1 Search templates
+### 1.2 Search templates using keywords
 
 Search for the templates using keywords related to your use case. You can also search specifically for the following templates by selecting the respective tab: 
 
@@ -35,7 +41,7 @@ Search for the templates using keywords related to your use case. You can also s
 
 
 
-### 2.2 Filter templates
+### 1.3 Filter templates by Industry, Use case, and Channels
 
 Filter templates for the following:
 1. **Most common use cases**: Employee Engagement, Customer Engagement, Enterprise Automation, Customer Support, and WhatsApp For Business.
@@ -46,26 +52,18 @@ Filter templates for the following:
 ![](https://i.imgur.com/5cJ8FHS.png)
 
 
-
-### 2.3 Sort templates
-
-Sort and view templates based on popularity or the recently added. 
-
-
-![](https://i.imgur.com/EXT9Vk1.png)
-
-### 2.4 Explore collections
+### 1.4 Explore collections
 
 Templates are categorized into 7 different collections which can be explored based on the topic names. 
 
 ![](https://i.imgur.com/MlEkolg.png)
 
 
-## 3. View and import template
+## 2. View and import template
 
-### 3.1 Preview selected template 
+### 2.1 Preview selected template 
 
-- To view the template, click on any template name (or view icon). 
+- To view the template, click on any template name (or View icon). 
 
 ![](https://i.imgur.com/m5VECfy.png)
 
@@ -83,9 +81,9 @@ Templates are categorized into 7 different collections which can be explored bas
 
 
 
-### 3.2 Use template in your bot
+### 2.2 Use template in your bot
 
-- To import the template, click on any template name (or use the template icon). 
+- To import the template, click on any template name (or Use template icon). 
 
 ![](https://i.imgur.com/Wey5PYw.png)
 
