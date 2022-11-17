@@ -519,6 +519,76 @@ module.exports = {
       ],
     },
 
+// User 360
+
+{
+  type: "category",
+  label: "User 360",
+  collapsed: true,
+  items: [
+    "platform_concepts/engagement/cdp/overview",
+    "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
+    {
+      type: "category",
+      label: "Manage users",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data/user_properties",
+        "platform_concepts/engagement/cdp/user_data/add_users",
+        "platform_concepts/engagement/cdp/user_data_segments/manage_user_data"
+      ],
+    },
+    
+    
+   /* {
+      type: "category",
+      label: "Managing User data and Creating Segments",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data_segments/cdp_data",
+        "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
+        "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+      ],
+    }, */
+   /* {
+      type: "category",
+      label: "Enriching User Profiles",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/enriching_user_profiles/user_id",
+        "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
+        // "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+        "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
+        // "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
+      ],
+    }, */
+    {
+      type: "category",
+      label: "User segments",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data_segments/segments_overview",
+        "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+        "platform_concepts/engagement/cdp/user_data_segments/segment_usecases",
+        // "platform_concepts/engagement/cdp/user_data/targeted_segments",
+        // "platform_concepts/engagement/cdp/user_data/conv_in_builder",
+        // "platform_concepts/engagement/cdp/user_data/campaign_in_engage",
+
+      ],
+    },
+   /* {
+      type: "category",
+      label: "FAQs",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/faq/exclude_user_campaign",
+        "platform_concepts/engagement/cdp/faq/date_based_campaign",
+        "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
+      ],
+    }, */
+  ],
+},
+
 
 // Engage module starts here 
 
@@ -531,60 +601,7 @@ module.exports = {
       items: [
         "platform_concepts/engagement/engage",
         "platform_concepts/engagement/effectivelyuseengage",
-        {
-              type: "category",
-              label: "User360",
-              collapsed: true,
-              items: [
-                "platform_concepts/engagement/cdp/overview",
-                "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
-                "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
-                "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
-               /* {
-                  type: "category",
-                  label: "Managing User data and Creating Segments",
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/engagement/cdp/user_data_segments/cdp_data",
-                    "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
-                    "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
-                  ],
-                }, */
-                {
-                  type: "category",
-                  label: "Enriching User Profiles",
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/user_id",
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
-                    // "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
-                    // "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Getting The Most From Your User Data",
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/engagement/cdp/user_data/targeted_segments",
-                    "platform_concepts/engagement/cdp/user_data/conv_in_builder",
-                    "platform_concepts/engagement/cdp/user_data/campaign_in_engage",
-
-                  ],
-                },
-               /* {
-                  type: "category",
-                  label: "FAQs",
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/engagement/cdp/faq/exclude_user_campaign",
-                    "platform_concepts/engagement/cdp/faq/date_based_campaign",
-                    "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
-                  ],
-                }, */
-              ],
-            },
+        
             
         {
           type: "category",
