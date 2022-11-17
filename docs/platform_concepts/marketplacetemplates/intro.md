@@ -1,6 +1,6 @@
 ---
-title: Marketplace overview
-sidebar_label : Marketplace overview
+title: Choose a right marketplace template 
+sidebar_label : Overview
 ---
 
 
@@ -9,7 +9,13 @@ We introduced this as a one-stop solution to help our customers quickly build co
 
 We have 100+ templates and components on Marketplace spanning across Ecommerce, Automobile, Healthcare, Ed-tech, BFSI, and Employee Experience verticals. Along with the templates, we have flows which are frequently used reusable components which we have researched and are present across most customer use cases. A prime example of frequently used flows are ‘Chat with an Agent’ or ‘Change Language’. Similarly, you will find a host of flows/templates built around integrations with applications like CRM, Payments, Live Agents, and Marketing Clouds among others.
 
-## 1. Browse templates 
+In this article, you will learn:
+
+1. [How to browse for the required template](#1)
+2. [How to preview and experience a demo of template](#2)
+3. [How to use the selected template in your bot](#3)
+
+## <a name="1"></a> 1. Browse templates 
 
 ### 1.1 Open marketplace 
 
@@ -61,7 +67,7 @@ Templates are categorized into 7 different collections which can be explored bas
 
 ## 2. View and import template
 
-### 2.1 Preview selected template 
+### <a name="2"></a> 2.1 Preview selected template 
 
 - To view the template, click on any template name (or View icon). 
 
@@ -77,11 +83,11 @@ Templates are categorized into 7 different collections which can be explored bas
 
 - Interact with the preview bot.
 
-<img src="https://i.imgur.com/ARdXEnk.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/7FYZVtd.png" alt="drawing" width="50%"/>
 
 
 
-### 2.2 Use template in your bot
+### <a name="3"></a> 2.2 Use template in your bot
 
 - To import the template, click on any template name (or Use template icon). 
 
