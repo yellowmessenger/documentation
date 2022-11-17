@@ -14,7 +14,7 @@ You can access the **Help** section from any module, that is, the **Overview** 
 <img src="https://i.imgur.com/jSNoQPL.jpg)" alt="drawing" width=""/>
 
 
-### 2.1 Take a quick tour of the product
+## 2 Take a quick tour of the product
 
 Before you get started with our platform, take a quick tour of the guided walkthrough or step-by-step guide tour to understand how to build your first bot.
 
@@ -22,7 +22,7 @@ Before you get started with our platform, take a quick tour of the guided walkth
 
 <img src="https://i.imgur.com/jtIBIkd.png)" alt="drawing" width="50%"/>
 
-### 2.2 Get instant help through documentation
+## 3 Get instant help through documentation
 
 Whenever you have any questions related to the product or understand how to use a specific option or feature, you can find instant help through our support documentation. It consists of complete help articles covering the entire product offerings. In Help section, click **Read the docs**. 
 
@@ -34,7 +34,7 @@ Navigates you to the Yellow.ai documentation page. Use the search option to quic
 <img src="https://i.imgur.com/mrK3fDq.jpg)" alt="drawing" width=""/>
 
 
-### 2.3 Get help from our product experts
+## 4 Get help from our product experts
 
 If you have any other questions related to a product, sign up to the community and post your queries. The product experts will analyse your query and provide relevant solutions. Enable notifications to get notified when someone responds to your queries. 
 
@@ -67,7 +67,7 @@ To post your queries in the community, make sure you have signed up to the [Comm
 ![](https://i.imgur.com/7dhqOBt.png)
         
 
-### 2.4 Chat with our self-help bot
+## 5 Chat with our self-help bot
 
 Use our in-house AI powered bot Mia to get instant answers to most of your queries. The bot will analyze, understand, and send you a quick response.
 
@@ -82,7 +82,7 @@ AI powered bot Mia displayed:
 <img src="https://i.imgur.com/mbqYLHc.png)" alt="drawing" width="50%"/>
 
 
-### 2.5 Provide your feedback
+## 6 Provide your feedback
 
 Post your concerns, likes, and dislikes about the product in our support bot, Mia. This helps us understand your needs and build a better product. 
 

@@ -7,7 +7,7 @@ You will see the platform **Overview** page when you sign in to [Yellow.ai platf
 
 The following is a sample screenshot of  **Overview** page:
 
-<img src="https://i.imgur.com/4Vxw8nV.jpg)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/TTYuGlk.jpg)" alt="drawing" width="100%"/>
 
 ## 1. Start with the product walkthrough
 
