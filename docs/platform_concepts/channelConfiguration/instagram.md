@@ -3,17 +3,11 @@ title : Instagram
 sidebar_label : Instagram
 ---
 
-# Instagram channel documentation
-
-> ## Introduction
-
----
 
 This document will help you understand features and limitations of Instagram channel, and guide you in setting up your own Instagram chatbot on Yellow AI platform.
 
-> ## Pre-requisites
+## Pre-requisites
 
----
 
 **Before setting up a chatbot make sure you have:**
 
