@@ -13,12 +13,12 @@ Follow the below steps to connect your chatbot to WhatsApp business account:
 ### 1.1 Create WhatsApp Business Account
 
 1. Login to [Yellow.ai](http://cloud.yellow.ai/) platfrom. 
-
-   ![](https://cdn.yellowmessenger.com/cBtHl9QjdEtK1619535411755.png)
+     
+     <img src="https://i.imgur.com/JnvcYEz.jpg" alt="drawing" width="90%"/>
 
 2. On the switcher, click **Channels**.
 
-<img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="90%"/>
+   <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="90%"/>
 
 
 3. Click **WhatsApp Messenger** on the **Messaging** page. To start with WhatsApp account creation, click **Get started**. 
@@ -31,7 +31,7 @@ Follow the below steps to connect your chatbot to WhatsApp business account:
 :::note
 Ensure that you have admin access to the Facebook business manager account.
 :::
-     <img src="https://i.imgur.com/BQwpnxC.jpg" alt="drawing" width="90%"/>
+      <img src="https://i.imgur.com/BQwpnxC.jpg" alt="drawing" width="90%"/>
 
 
 5. You have to login to your Facebook account that is linked with your Business Manager account.
@@ -68,19 +68,20 @@ Ensure that you have admin access to the Facebook business manager account.
 
 11. Click on **Continue to step 2** to proceed with the number edition process. 
 
-   ![](https://i.imgur.com/D4ZmNvm.png)
+    ![](https://i.imgur.com/D4ZmNvm.png)
 
 12. Enter a display name for your WhatsApp Business Account. You must think carefully when entering the **WhatsApp Business Display Name**. The name you provide will be displayed on your WhatsApp business account. To give an appropriate name, read through the [naming guidelines](https://www.facebook.com/business/help/757569725593362). 
    
-   <img src="https://i.imgur.com/RDOfp6V.png" alt="drawing" width="140%"/>
+    <img src="https://i.imgur.com/CtbvpMf.png" alt="drawing" width="40%"/>
 
-13. Select a category and enter the business description to create your WhatsApp business profile. Note that, you can later edit the information on the Yellow.ai platform. Click on **Continue to step 3**.
+13. Select a category and enter the business description to create your WhatsApp business profile. Note that, you can later edit the information on the Yellow.ai platform. Click on **Continue**.
 
-   <img src="https://i.imgur.com/dZ9udz7.png" alt="drawing" width="100%"/>
+    <img src="https://i.imgur.com/z0iSidb.png" alt="drawing" width="40%"/>
+
 
 14. Enter a phone number that does not have a WhatsApp account, and ensure that it receives any incoming message or voice call for the OTP verification.
 
-   <img src="https://i.imgur.com/hdo6P8e.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/hdo6P8e.png" alt="drawing" width="40%"/>
    
    
 
@@ -101,22 +102,22 @@ The number you give should not be connected to any WhatsApp account. If connecte
 
 17. The platform will take you back to the **Messaging** page. A dialog box is displayed. You must select the same WABA you created and the number that was added, and click **Connect**.
 
-   ![](https://i.imgur.com/CNm6g2g.png)
+    <img src="https://i.imgur.com/CNm6g2g.png)" alt="drawing" width="90%"/>
 
 
 18. Once the account is created, you can view your account on the **WhatsApp messenger** page.
 
-   ![](https://i.imgur.com/ezgp1Qy.png)
+    <img src="https://i.imgur.com/ezgp1Qy.png)" alt="drawing" width="90%"/>
 
 
 19. You can also add multiple numbers by clicking on **+ Add Number** at the top right corner.
 
-   ![](https://i.imgur.com/0wkbQHP.png)
+    <img src="https://i.imgur.com/0wkbQHP.png)" alt="drawing" width="90%"/>
 
 
 20. You can click on view more to view the business details, and you can also edit based on your requirements.
 
-   ![](https://i.imgur.com/LfIwYrC.png)
+    <img src="https://i.imgur.com/LfIwYrC.png)" alt="drawing" width="90%"/>
 
 ### 1.2 Create Facebook Business Manager (FBM) account
 
@@ -136,34 +137,34 @@ The number you give should not be connected to any WhatsApp account. If connecte
 
 2. Click on **Security Centre**.
 
-![](https://cdn.yellowmessenger.com/KkAtqbeljfoI1620219338763.png)
+   ![](https://cdn.yellowmessenger.com/KkAtqbeljfoI1620219338763.png)
 
 3. Let's start with the verification.
 
-![](https://cdn.yellowmessenger.com/4lUE9WFC5jTX1620219352063.png)
+   ![](https://cdn.yellowmessenger.com/4lUE9WFC5jTX1620219352063.png)
 
 4. Furnish the legal business details.
 
-![](https://i.imgur.com/zNoQ10s.png)
+   ![](https://i.imgur.com/zNoQ10s.png)
 
 
 5. Look for your business in the the list. This is listed based on the business name you given. If your business is listed, select your business and go to step 6. If not visible, click **None of these** and directly **jump to step 7**.
 
-![](https://cdn.yellowmessenger.com/NOqzxCypg7kz1620219379343.png)
+   ![](https://cdn.yellowmessenger.com/NOqzxCypg7kz1620219379343.png)
 
 6. Confirm the business details - business name, address, phone number. After this **jump to step 8**.
 
-![](https://i.imgur.com/2a6zHV3.png)
+  ![](https://i.imgur.com/2a6zHV3.png)
 
 
 7. Upload relevant legal business documents for the Facebook team to review. Check **accepted legal documents** [here](https://www.facebook.com/business/help/159334372093366).
 
-![](https://i.imgur.com/zQJWL1p.png)
+   ![](https://i.imgur.com/zQJWL1p.png)
 
 
 8. Final step: choose to get the **verification code via Email or phone** and enter the code.
 
-![](https://i.imgur.com/UdiJ3V8.png)
+  ![](https://i.imgur.com/UdiJ3V8.png)
 
 
 Submit the verification recieved.
@@ -230,6 +231,7 @@ To use catalog, it's mandatory for the Businesses to have a Business Manager Acc
 To create a Catalog in FB Commerce Manager for your Business - 
 
 1. Log on to [Facebook Business Manager](https://business.facebook.com/settings) and go to **Business Settings**. Use the client's BM to create Production Catalogs.
+
 2. Navigate to **Data Sources** and click on **Catalog**.
 
    ![](https://i.imgur.com/kBNq6tm.png)
@@ -244,8 +246,11 @@ To create a Catalog in FB Commerce Manager for your Business -
 
 
 4. Select the type of inventory you advertise or sell, then click **Next**.
-5. Choose how you want to add items to your catalogue - Upload product info, or Connect a partner platform
+
+5. Choose how you want to add items to your catalogue - Upload product info, or Connect a partner platform.
+
 6. Select the Business Manager account that your catalogue belongs to. This unlocks more ways to use your catalogue than selecting a personal account and enables you to assign other people permission to work on the catalogue. To select a Business Manager account, you must be a [business admin](https://en-gb.facebook.com/micro_site/url/?click_from_context_menu=true&country=IN&destination=https%3A%2F%2Fen-gb.facebook.com%2Fbusiness%2Fhelp%2F442345745885606&event_type=click&last_nav_impression_id=2bDTYoj64VaSUC2PQ&max_percent_page_viewed=52&max_viewport_height_px=711&max_viewport_width_px=1437&orig_http_referrer=https%3A%2F%2Fwww.google.com%2F&orig_request_uri=https%3A%2F%2Fen-gb.facebook.com%2Fbusiness%2Fhelp%2F1275400645914358&primary_cmsid=1275400645914358&primary_content_locale=en_GB&region=apac&scrolled=true&session_id=1QKGQufmtkRFBOVm3&site=fb4b&extra_data[view_type]=v3_initial_view&extra_data[site_section]=help&extra_data[placement]=%2Fbusiness%2Fhelp%2F1275400645914358).
+
 7. Enter a name for your catalogue and click **Create**.
 
    ![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBTy1qh81pXxw1St8NXU9ZiCfaw29VfbfkiWo9vFZyGem8Evjc3CSBKnpgnaX2Yw1PqPq9UYVxQ6azZQvjfN6sg21tCgDLt2b1rr5N7WVz5V7vRJtawHHqbPh3H6Cvpcd6d56iRgRLURKGxB5TGGQY67ncV/Image.jpg)
