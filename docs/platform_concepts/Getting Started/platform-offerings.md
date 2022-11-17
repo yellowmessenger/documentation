@@ -1,15 +1,15 @@
 ---
-title: Know about platform offerings 
-sidebar_label: Platform offerings
+title: Get started with the platform 
+sidebar_label: Understand UI elements
 ---
 
-You will see the platform **Overview** page when you sign in to [Yellow.ai platform](https://cloud.yellow.ai). You can find all the useful links required to access platform offerings and get self-help. 
+You will see the platform **Overview** page when you sign in to [Yellow.ai platform](https://cloud.yellow.ai). You can find all the useful links required to access platform offerings and get self-help.
 
 The following is a sample screenshot of  **Overview** page:
 
-<img src="https://i.imgur.com/4Vxw8nV.jpg)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/TTYuGlk.jpg)" alt="drawing" width="100%"/>
 
-## 1. Get started with product walkthrough
+## 1. Start with the product walkthrough
 
 Watch the product quick tour video to understand what you can do with Yellow.ai and how the bot works.
 

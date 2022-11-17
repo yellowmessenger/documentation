@@ -1,6 +1,6 @@
 ---
-title: Overview
-sidebar_label: Engage overview
+title: Engage overview
+sidebar_label: Overview
 ---
 
 Engage is a customer engagement module that enables marketers to craft multi-channel campaigns intuitively.  Engage helps marketers to deliver total lifecycle CX from acquisition, through Transaction, to Retention and Growth.

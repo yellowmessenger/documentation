@@ -3,24 +3,18 @@ title: Self help resources
 sidebar_label: Self help resources
 ---
 
-Self-help resources are readily available on the platform to provide you with immediate assistance in resolving your issues that are related to the product. 
+Self-help resources are readily available on the platform to provide you with immediate assistance in resolving your queries related to the product. Make use of the resources to understand the product, post queries, or connect with our support agents.
 
 ## <a name="access"></a> 1. Access the help section
 
+
+
 You can access the **Help** section from any module, that is, the **Overview** page, **Studio, Inbox, Engage, Insights, Channels, and Integrations**. Click on the highlighted icon to access the **Help** resources, as shown in the below screenshot.
 
-<img src="https://i.imgur.com/jSNoQPL.jpg)" alt="drawing" width="70%"/>
+<img src="https://i.imgur.com/jSNoQPL.jpg)" alt="drawing" width=""/>
 
-## <a name="use"></a> 2. Usage of the Help section
 
-Irrespective of whether you are a new or experienced user, when you face any problem related to the platform, you can make use of the resources to understand a product, contact our product experts, or connect with our support agents. The following are the different help resources:
-* Read the docs
-* Ask the community
-* Chat with support
-* Take guided tour
-* Submit feedback
-
-### 2.1 Take a quick tour of the product
+## 2 Take a quick tour of the product
 
 Before you get started with our platform, take a quick tour of the guided walkthrough or step-by-step guide tour to understand how to build your first bot.
 
@@ -28,19 +22,19 @@ Before you get started with our platform, take a quick tour of the guided walkth
 
 <img src="https://i.imgur.com/jtIBIkd.png)" alt="drawing" width="50%"/>
 
-### 2.2 Get instant help through documentation
+## 3 Get instant help through documentation
 
 Whenever you have any questions related to the product or understand how to use a specific option or feature, you can find instant help through our support documentation. It consists of complete help articles covering the entire product offerings. In Help section, click **Read the docs**. 
 
-<img src="https://i.imgur.com/gHbwzcA.png)" alt="drawing" width="50%"/>
+<img src="https://i.imgur.com/gHbwzcA.png)" alt="drawing" width=""/>
 
 Navigates you to the Yellow.ai documentation page. Use the search option to quickly find the content you are looking for.
 <br/>
 
-<img src="https://i.imgur.com/mrK3fDq.jpg)" alt="drawing" width="70%"/>
+<img src="https://i.imgur.com/mrK3fDq.jpg)" alt="drawing" width=""/>
 
 
-### 2.3 Get help from product experts
+## 4 Get help from our product experts
 
 If you have any other questions related to a product, sign up to the community and post your queries. The product experts will analyse your query and provide relevant solutions. Enable notifications to get notified when someone responds to your queries. 
 
@@ -54,13 +48,13 @@ To post your queries in the community, make sure you have signed up to the [Comm
 
 1. Click **Help** > **Ask the community**.
 
-   <img src="https://i.imgur.com/DaL60E1.jpg)" alt="drawing" width="70%"/>
+   <img src="https://i.imgur.com/DaL60E1.jpg)" alt="drawing" width="90%"/>
 
 <br/>
 
 2. **Yellow.ai Community** page is displayed. You have to sign in to post your queries.
 
-<img src="https://i.imgur.com/SEekVcf.jpg)" alt="drawing" width="70%"/>
+<img src="https://i.imgur.com/SEekVcf.jpg)" alt="drawing" width="90%"/>
 <br/>
 
 3. After successfully creating an account. Click **+ ASK QUESTION** to post your questions on the **Yellow.ai Community** page.
@@ -73,43 +67,33 @@ To post your queries in the community, make sure you have signed up to the [Comm
 ![](https://i.imgur.com/7dhqOBt.png)
         
 
-### 2.4 Chat with our support bot
+## 5 Chat with our self-help bot
 
-Use our in-house AI powered bot Mia to post your questions. Whatever question you ask, the bot will analyze, understand, and send you a proper response.
+Use our in-house AI powered bot Mia to get instant answers to most of your queries. The bot will analyze, understand, and send you a quick response.
 
 Here, you can raise an issue or book a session with our product experts. It also helps you to connect with our agents (during business hours). 
 
 In the Help section, click **Chat with support**.
 
-<img src="https://i.imgur.com/Zdgupej.png)" alt="drawing" width="70%"/>
+<img src="https://i.imgur.com/Zdgupej.png)" alt="drawing" width="90%"/>
 
 AI powered bot Mia displayed: 
 
 <img src="https://i.imgur.com/mbqYLHc.png)" alt="drawing" width="50%"/>
 
 
-### 2.5 Provide your feedback
+## 6 Provide your feedback
 
 Post your concerns, likes, and dislikes about the product in our support bot, Mia. This helps us understand your needs and build a better product. 
 
 In the Help section, click **Submit your feedback**.
 
-<img src="https://i.imgur.com/wGl2mGl.png)" alt="drawing" width="50%"/>
+<img src="https://i.imgur.com/wGl2mGl.png)" alt="drawing" width="90%"/>
 
 <br/>
 
 
-AI powered bot Mia displayed: 
+You will see the AI-powered Mia bot: 
 
 <img src="https://i.imgur.com/JlNlM7S.png)" alt="drawing" width="50%"/>
-
-
-
-
-
-
-
-
-
-
 

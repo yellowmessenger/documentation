@@ -30,15 +30,15 @@ module.exports = {
 
     "cookbooks/getting_started",
     "cookbooks/conversation-design",
-  
+ 
+
+
     {
       type: "category",
       label: "Configurations in studio-builder",
       collapsed: true,
       items: [
           "cookbooks/newcard",
-          "cookbooks/studio/downloadapilogs",
-          "cookbooks/studio/regressiontest",
       ],
     }, 
     
@@ -176,20 +176,33 @@ module.exports = {
       label: "Get Started",
       collapsed: true,
       items: [
-    
+   
+        {
+          type: "category",
+          label: "Overview",
+          collapsed: true,
+          items: [
+          
+        "platform_concepts/getting-started",
     "platform_concepts/Getting Started/account-setup",
-
-    "platform_concepts/getting-started",
+    "platform_concepts/Getting Started/self-help-resources",
+  ],
+},
+    
 
     {
       type: "category",
-      label: "Overview",
+      label: "Get started with Platform",
       collapsed: true,
       items: [
 
         "platform_concepts/Getting Started/platform-offerings",
-        "platform_concepts/Getting Started/self-help-resources",
         "platform_concepts/Getting Started/create-a-bot",
+        "platform_concepts/Getting Started/add-bot-collaborators",
+        "platform_concepts/Getting Started/keyboard-shortcuts",
+        "platform_concepts/Getting Started/api-keys",
+
+
       ],
     },
     {
@@ -197,12 +210,9 @@ module.exports = {
       label: "User profile settings",
       collapsed: true,
       items: [
-        "platform_concepts/Getting Started/api-keys",
       ],
     },
 
-    "platform_concepts/Getting Started/add-bot-collaborators",
-    "platform_concepts/Getting Started/keyboard-shortcuts",
 
       ]
     },
@@ -273,6 +283,8 @@ module.exports = {
             "platform_concepts/studio/api/bearer-token",
            // "platform_concepts/studio/api/transformation-function",
             "platform_concepts/studio/api/api-settings",
+            "cookbooks/studio/downloadapilogs",
+
           ],
         },
 
@@ -288,6 +300,8 @@ module.exports = {
             "platform_concepts/studio/analyze/chat-logs",
           ],
         },
+
+        "cookbooks/studio/regressiontest",
 
         {
           type: "category",
@@ -497,6 +511,76 @@ module.exports = {
       ],
     },
 
+// User 360
+
+{
+  type: "category",
+  label: "User 360",
+  collapsed: true,
+  items: [
+    "platform_concepts/engagement/cdp/overview",
+    "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
+    {
+      type: "category",
+      label: "Manage users",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data/user_properties",
+        "platform_concepts/engagement/cdp/user_data/add_users",
+        "platform_concepts/engagement/cdp/user_data_segments/manage_user_data"
+      ],
+    },
+    
+    
+   /* {
+      type: "category",
+      label: "Managing User data and Creating Segments",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data_segments/cdp_data",
+        "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
+        "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+      ],
+    }, */
+   /* {
+      type: "category",
+      label: "Enriching User Profiles",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/enriching_user_profiles/user_id",
+        "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
+        // "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+        "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
+        // "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
+      ],
+    }, */
+    {
+      type: "category",
+      label: "User segments",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data_segments/segments_overview",
+        "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+        "platform_concepts/engagement/cdp/user_data_segments/segment_usecases",
+        // "platform_concepts/engagement/cdp/user_data/targeted_segments",
+        // "platform_concepts/engagement/cdp/user_data/conv_in_builder",
+        // "platform_concepts/engagement/cdp/user_data/campaign_in_engage",
+
+      ],
+    },
+   /* {
+      type: "category",
+      label: "FAQs",
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/faq/exclude_user_campaign",
+        "platform_concepts/engagement/cdp/faq/date_based_campaign",
+        "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
+      ],
+    }, */
+  ],
+},
+
 
 // Engage module starts here 
 
@@ -509,60 +593,7 @@ module.exports = {
       items: [
         "platform_concepts/engagement/engage",
         "platform_concepts/engagement/effectivelyuseengage",
-        {
-              type: "category",
-              label: "User360",
-              collapsed: true,
-              items: [
-                "platform_concepts/engagement/cdp/overview",
-                "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
-                "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
-                "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
-               /* {
-                  type: "category",
-                  label: "Managing User data and Creating Segments",
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/engagement/cdp/user_data_segments/cdp_data",
-                    "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
-                    "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
-                  ],
-                }, */
-                {
-                  type: "category",
-                  label: "Enriching User Profiles",
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/user_id",
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv",
-                    // "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
-                    "platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data",
-                    // "platform_concepts/engagement/cdp/enriching_user_profiles/user_events",
-                  ],
-                },
-                {
-                  type: "category",
-                  label: "Getting The Most From Your User Data",
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/engagement/cdp/user_data/targeted_segments",
-                    "platform_concepts/engagement/cdp/user_data/conv_in_builder",
-                    "platform_concepts/engagement/cdp/user_data/campaign_in_engage",
-
-                  ],
-                },
-               /* {
-                  type: "category",
-                  label: "FAQs",
-                  collapsed: true,
-                  items: [
-                    "platform_concepts/engagement/cdp/faq/exclude_user_campaign",
-                    "platform_concepts/engagement/cdp/faq/date_based_campaign",
-                    "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
-                  ],
-                }, */
-              ],
-            },
+        
             
         {
           type: "category",
@@ -842,6 +873,19 @@ module.exports = {
             },
           ],
         },
+
+// Marketplace starts here
+
+{
+  type: "category",
+  label: "Marketplace",
+  collapsed: true,
+  items: [
+    "platform_concepts/marketplacetemplates/intro",
+    "platform_concepts/marketplacetemplates/template1",
+  ],
+}, 
+
 
   ], 
   // Docs tab ends here

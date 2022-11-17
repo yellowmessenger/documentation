@@ -1,6 +1,6 @@
 ---
 title: Keyboard shortcuts 
-sidebar_label: Keyboard shortcuts
+sidebar_label: Know keyboard shortcuts
 ---
 
 We have introduced keyboard shortcuts to make it easy for you to access key options and increase the productivity of repetitive tasks.
