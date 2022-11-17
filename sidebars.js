@@ -31,15 +31,7 @@ module.exports = {
     "cookbooks/getting_started",
     "cookbooks/conversation-design",
  
-    {
-      type: "category",
-      label: "Marketplace templates",
-      collapsed: true,
-      items: [
-        "cookbooks/marketplacetemplates/intro",
-        "cookbooks/marketplacetemplates/template1",
-      ],
-    }, 
+
 
     {
       type: "category",
@@ -881,6 +873,19 @@ module.exports = {
             },
           ],
         },
+
+// Marketplace starts here
+
+{
+  type: "category",
+  label: "Marketplace",
+  collapsed: true,
+  items: [
+    "platform_concepts/marketplacetemplates/intro",
+    "platform_concepts/marketplacetemplates/template1",
+  ],
+}, 
+
 
   ], 
   // Docs tab ends here
