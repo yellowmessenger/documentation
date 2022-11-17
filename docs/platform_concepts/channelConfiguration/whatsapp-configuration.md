@@ -4,85 +4,115 @@ sidebar_label: WhatsApp
 ---
 
 
-This document will guide you for creating a WhatsApp account and setting up your own WhatsApp chatbot. 
-
-> For detailed guide on whatsapp as a channel, click [here](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel/).
+This document will guide you through creating a WhatsApp business account and setting up your own WhatsApp chatbot. For more information, see [WhatsApp Accounts](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel/).
 
 ## 1. WhatsApp chatbot
 
-Following steps must be followed to create a WhatsApp chatbot: 
-
-1. Create a **WhatsApp Business Account** on the Yellow.ai platform
-2. Open a **Facebook Business Manager** (FBM) account
-3. Verfiy your business with Facebook.
+Follow the below steps to connect your chatbot to WhatsApp business account: 
 
 ### 1.1 Create WhatsApp Business Account
 
-1. [Sign-up](http://cloud.yellow.ai/) with Yellow.ai's platfrom. If you signed-up already, just sign-in.
+1. Login to [Yellow.ai](http://cloud.yellow.ai/) platfrom. 
 
-![](https://cdn.yellowmessenger.com/cBtHl9QjdEtK1619535411755.png)
+   ![](https://cdn.yellowmessenger.com/cBtHl9QjdEtK1619535411755.png)
 
-2. Navigate to your chatbot under **Projects > Select your chatbot**.
+2. On the switcher, click **Channels**.
+   ![](https://i.imgur.com/kv01RDY.png)
 
-![](https://cdn.yellowmessenger.com/98Uohu6oWwTw1619536105368.png)
 
-> If you haven't created your chatbot yet, create one by following these [steps](/docs/cookbooks/getting_started).
+3. Click **WhatsApp Messenger** on the **Messaging** page. To start with WhatsApp account creation, click **Get started**. 
 
-3. To start with WhatsApp account creation, go to **Channels > Communication > Select WhatsApp**.
+    ![](https://i.imgur.com/14XbqIg.png)
 
-![](https://cdn.yellowmessenger.com/sXl9Utb0eLlO1619540912699.png)
 
-4. Tap on **Connect your WhatsApp**.
-
-![](https://cdn.yellowmessenger.com/MXFhj6YWe2Jv1619542073374.png)
-
-5. Than, login to your Facebook account that is linked with your FB Business Manager account.
-
-![](https://cdn.yellowmessenger.com/xluqZo9ktZSa1619783923015.png)
+4. Choose your account type from the drop-down and enable the checkbox to ensure that you have read the above information. Click on **Connect WhatsApp**.
 
 :::note
-If you don't have an FB Business manager account, create one by following these [steps](https://business.facebook.com/).
+Ensure that you have admin access to the Facebook business manager account.
 :::
 
-6. Furnish your business details as mentioned in any legal business document that you have. Business name, Phone number, Business e-mail ID and Business website should be appropriate.
-
-![](https://cdn.yellowmessenger.com/YpiFVbVRDBT21619784836090.png)
+    ![](https://i.imgur.com/BQwpnxC.jpg)
 
 
+5. You have to login to your Facebook account that is linked with your Business Manager account.
 
-7. Continue adding relevant business details as asked.
+   <img src="https://i.imgur.com/Qb3eMpS.png" alt="drawing" width="100%"/>
 
-![](https://cdn.yellowmessenger.com/UiWxV4eDz0Rh1619785303495.png)
+6. Click on **Get started** to proceed with the next steps.
 
-8. Take a breather while the WhatsApp business account is being created.
+    <img src="https://i.imgur.com/L8hKZeO.png" alt="drawing" width="60%"/>
+   
 
-![](https://cdn.yellowmessenger.com/rYx7igVPuZYb1619785627342.png)
+7. Read the terms and conditions of WhatsApp Business and Meta. Click on **Continue**.
 
-9. Carefully think and give the 'WhatsApp Business Display Name'. The name you give exactly will show up on your WhatsApp chatbot.
+    <img src="https://i.imgur.com/dZ9udz7.png" alt="drawing" width="60%"/>
+  
 
-![](https://cdn.yellowmessenger.com/SQtCesZ8EI8a1619792169449.png)
+8. Select an existing Business Manager account or create a new account to start with.
 
-> To give an appropriate name, read through the [naming guidelines](https://developers.facebook.com/docs/whatsapp/guides/display-name/).
+    <img src="https://i.imgur.com/qyp074p.png" alt="drawing" width="60%"/>
+   
 
-If the display name you give is different from the legal business name, tick the checkbox as highlighted in the image above.
 
-10. Stay with me. We are progressing. Select the industry that you are functioning. You can also give a description about your business. We recommend you fill this.
+9. Create a new WABA and click on **Continue**. You can also select an existing WABA if you already have one with Yellow.ai.
 
-Example description: _"XYZ is an organic food brand that offers fresh and exotic farm-grown fruits._
+    ![](https://i.imgur.com/vAjqf8M.png)
+   
+   <img src="https://i.imgur.com/vAjqf8M.png" alt="drawing" width="60%"/>
 
-![](https://cdn.yellowmessenger.com/NLe7zcub7VU51619794609099.png)
+10. Based on the details provided it verifies the information. 
 
-11. Awesome! Let's now choose the contact number that will be the WhatsApp chatbot's contact. You can either choose the business number you given to be the WhatsApp number or add a new number.
+    <img src="https://i.imgur.com/KcCKCf4.png" alt="drawing" width="60%"/>
 
-![](https://cdn.yellowmessenger.com/G1yAjNffVoEr1619802704253.png)
 
-> Note: The number you give should not be connected to any WhatsApp account. If connected, ensure you disconnect the number from WhatsApp account.
+11. Click on **Continue to step 2** to proceed with the number edition process. 
 
-Complete the verification over text or voice call.
+    ![](https://i.imgur.com/D4ZmNvm.png)
 
-13. Wuhoo! Congrats. You have successfully requested for WhatsApp Business Account. You can come back after 24 hours to check the status of apporval.
+12. Enter a display name for your WhatsApp Business Account. You must think carefully when entering the **WhatsApp Business Display Name**. The name you provide will be displayed on your WhatsApp business account. To give an appropriate name, read through the [naming guidelines](https://www.facebook.com/business/help/757569725593362). 
 
-Once approved, you can scan the QR and test the WhastaApp chatbot.
+    ![](https://i.imgur.com/RDOfp6V.png)
+
+13. Select a category and enter the business description to create your WhatsApp business profile. Note that, you can later edit the information on the Yellow.ai platform. Click on **Continue to step 3**.
+
+    <img src="https://i.imgur.com/dZ9udz7.png" alt="drawing" width="250%"/>
+
+14. Enter a phone number that does not have a WhatsApp account, and ensure that it receives any incoming message or voice call for the OTP verification.
+
+    <img src="https://i.imgur.com/hdo6P8e.png" alt="drawing" width="60%"/>
+   
+:::note
+The number you give should not be connected to any WhatsApp account. If connected, ensure you disconnect the number from WhatsApp account.
+:::
+
+15. Enter the OTP received on the number via your preferred method. Please choose the retries wisely as its limited to upto 3 attempts in 24hour.
+
+    <img src="https://i.imgur.com/DnIuZZD.png)" alt="drawing" width="60%"/>
+
+
+16. Once the verification is successfully completed, click on **OK** and the platform  will display the WhatsApp business account details.
+
+    <img src="https://i.imgur.com/R9iT4B8.png))" alt="drawing" width="60%"/>
+    
+
+17. The platform will take you back to the **Messaging** page. A dialog box is displayed. You must select the same WABA you created and the number that was added, and click **Connect**.
+
+    ![](https://i.imgur.com/CNm6g2g.png)
+
+
+18. Once the account is created, you can view your account on the **WhatsApp messenger** page.
+
+    ![](https://i.imgur.com/ezgp1Qy.png)
+
+
+19. You can also add multiple numbers by clicking on **+ Add Number** at the top right corner.
+
+   ![](https://i.imgur.com/0wkbQHP.png)
+
+
+20. You can click on view more to view the business details, and you can also edit based on your requirements.
+
+    ![](https://i.imgur.com/LfIwYrC.png)
 
 ### 1.2 Create Facebook Business Manager (FBM) account
 
@@ -110,7 +140,8 @@ Once approved, you can scan the QR and test the WhastaApp chatbot.
 
 4. Furnish the legal business details.
 
-![](https://cdn.yellowmessenger.com/gv6oqZD4PnBQ1620219366519.png)
+![](https://i.imgur.com/zNoQ10s.png)
+
 
 5. Look for your business in the the list. This is listed based on the business name you given. If your business is listed, select your business and go to step 6. If not visible, click **None of these** and directly **jump to step 7**.
 
@@ -118,71 +149,28 @@ Once approved, you can scan the QR and test the WhastaApp chatbot.
 
 6. Confirm the business details - business name, address, phone number. After this **jump to step 8**.
 
-![](https://cdn.yellowmessenger.com/87AUS5pRIYWd1620223310056.png)
+![](https://i.imgur.com/2a6zHV3.png)
+
 
 7. Upload relevant legal business documents for the Facebook team to review. Check **accepted legal documents** [here](https://www.facebook.com/business/help/159334372093366).
 
-![](https://cdn.yellowmessenger.com/2mIxHaK9h8Ci1620219423439.png)
+![](https://i.imgur.com/zQJWL1p.png)
+
 
 8. Final step: choose to get the **verification code via Email or phone** and enter the code.
 
-![](https://cdn.yellowmessenger.com/fSpzqe5pizfV1620229125763.png)
+![](https://i.imgur.com/UdiJ3V8.png)
+
 
 Submit the verification recieved.
 
-![](https://cdn.yellowmessenger.com/A0oGT8lwHe2s1620229140125.png)
+![](https://i.imgur.com/xIIA6ih.png)
+
 
 For some reason, if you wish to cancel the verification request, go to **Security Center > Cancel**.
 
-![](https://cdn.yellowmessenger.com/e1sHK0iR65w91620229510980.png)
+![](https://i.imgur.com/dCA8zjm.png)
 
-### 1.4 Platform experience
-
-Once the account is successfully approved, configure the chatbot with a journey you want. For example, let's try adding few FAQs and see how it gets refelcted in the WhatsApp chatbot.
-
-1. Go to **Studio -> FAQs**.
-
-2. FAQs can have multiple categories such as Delivery policy, Refund policy, Product quality. To create a new category, **Click on '+' with the FAQs screen**.
-
-![](https://cdn.yellowmessenger.com/9Fs4AGsK4eE61621348717008.png)
-
-3. Create a **new category**.
-
-![](https://cdn.yellowmessenger.com/c9BkdVzPuU4X1621348684735.png)
-
-Similarly, you can add as many relevant categories as required.
-
-4. Now, **pick a 'Category'** to add questions within.
-
-![](https://cdn.yellowmessenger.com/NuDtN4RpAkac1621348670878.png)
-
-5. After choosing a category, you can **Add New Questions**.
-
-![](https://cdn.yellowmessenger.com/ps4qScjaoGqI1621348740566.png)
-
-![](https://cdn.yellowmessenger.com/RqBpexxNa6iS1621348659762.png)
-
-Similarly, you can add as many relevant questions you want under each FAQ category.
-
-6. You can see the the Q & A that you added as below.
-
-![](https://cdn.yellowmessenger.com/ZLQ2ToYpxGDI1621348650914.png)
-
-7. As a particular question can be asked in multiple ways, you can **add the possible 'Variants'** of the same question.
-
-![](https://cdn.yellowmessenger.com/57fxwswxtysU1621348636393.png)
-
-We recommend to add relevant variants for each question.
-
-8. Great, now before testing your WhatsApp chatbot, you should **Train** the chatbot. You will find the button on the FAQs screen itself.
-
-9. Wuhoo! Excited to test your WhatsApp chatbot? Start asking any of the added questions.
-
-Note: Your WhatsApp chatbot will function on the number that you got approved previously by Facebook.
-
-![](https://cdn.yellowmessenger.com/KMPmiULy5ARX1621420053934.png)
-
-Awesome! Congratulations on successfully connecting and testing your WhatsApp chatbot. You can now explore other options such as adding different options (such as products showcase, order status) and test them the same way!
 
 
 ## 2. Catalog setup
@@ -221,7 +209,6 @@ The following are the prerequisites to use WhatsApp Product Node -
 * The recipient can add preferred products to the cart using the Add To Cart option or the + option across each item. Once the products are added to the cart, the recipient can send the cart to the business to proceed to the next steps.
 
    <img src="https://i.imgur.com/ClYimi7.png" width="350px"/>
-
 
 
 
@@ -384,3 +371,17 @@ To create a new Catalog Journey on the Yellow.ai Platform, see [here](https://do
 11. **Is it possible to send digital goods like recharges, Loan offers etc to be sent as a product message?**
 
    Yes, digital goods are allowed to be sent as SPM/MPM. BFSI customers can also use SPM/MPM to showcase card, load or other finance related products on SPM/MPM.
+   
+## 3. WhatsApp business account guidelines
+
+When setting up your WhatsApp Business Profile, you must follow the below guidelines for display name:
+
+* A display name should represent a business or its service, organization, product, or department. Note that, organizations with a government affiliation will need to be approved by the WhatsApp team.
+* A display name must have grammatically correct capitalization and may not include all capitals, except for acronyms. <br/>For example, **Not accepted:** RETAIL BUSINESS ORGANISATION<br/> **Accepted:** Retail Business Account.
+* A dispaly name should not contain the following:
+  * Extra punctuation 
+  * Emojis
+  * Character symbols such as trademark designations
+  * URL format
+* A display name must have consistent branding with external sources. For example, a company's website or marketing (Fresh Produce Cold Pressed Juices).
+* A display name must have a clear relationship for your business (must be referred on the business’ website or external media references). <br/>For example, **Accepted:** Name of a charity mentioned on a non-profit organization's website.<br/>**Not accepted:** Name of a charity not mentioned on any external websites.
