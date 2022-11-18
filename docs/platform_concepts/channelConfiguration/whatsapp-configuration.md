@@ -31,57 +31,59 @@ Follow the below steps to connect your chatbot to WhatsApp business account:
 :::note
 Ensure that you have admin access to the Facebook business manager account.
 :::
-      <img src="https://i.imgur.com/BQwpnxC.jpg" alt="drawing" width="90%"/>
+
+   <img src="https://i.imgur.com/BQwpnxC.jpg" alt="drawing" width="90%"/>
 
 
 5. You have to login to your Facebook account that is linked with your Business Manager account.
 
-   <img src="https://i.imgur.com/Lqov4YW.png" alt="drawing" width="40%"/>
+   <img src="https://i.imgur.com/Lqov4YW.png" alt="drawing" width="50%"/>
   
 
 
 6. Click on **Get started** to proceed with the next steps.
 
-   <img src="https://i.imgur.com/L8hKZeO.png" alt="drawing" width="40%"/>
+   <img src="https://i.imgur.com/L8hKZeO.png" alt="drawing" width="50%"/>
 
 7. Read the terms and conditions of WhatsApp Business and Meta. Click on **Continue**.
 
-    <img src="https://i.imgur.com/Er17Zwe.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/Er17Zwe.png" alt="drawing" width="50%"/>
   
 
 8. Select an existing Business Manager account or create a new account to start with.
 
-   <img src="https://i.imgur.com/qyp074p.png" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/qyp074p.png" alt="drawing" width="40%"/>
    
 
 
 9. Create a new WABA and click on **Continue**. You can also select an existing WABA if you already have one with Yellow.ai.
 
-     <img src="https://i.imgur.com/p0nEs2n.png" alt="drawing" width="40%"/>
+     <img src="https://i.imgur.com/p0nEs2n.png" alt="drawing" width="70%"/>
   
 
 
 10. Based on the details provided it verifies the information. 
 
-    <img src="https://i.imgur.com/KcCKCf4.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/KcCKCf4.png" alt="drawing" width="60%"/>
 
 
 11. Click on **Continue to step 2** to proceed with the number edition process. 
 
-    ![](https://i.imgur.com/D4ZmNvm.png)
+    
+    <img src="https://i.imgur.com/D4ZmNvm.png" alt="drawing" width="60%"/>
 
 12. Enter a display name for your WhatsApp Business Account. You must think carefully when entering the **WhatsApp Business Display Name**. The name you provide will be displayed on your WhatsApp business account. To give an appropriate name, read through the [naming guidelines](https://www.facebook.com/business/help/757569725593362). 
    
-    <img src="https://i.imgur.com/CtbvpMf.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/CtbvpMf.png" alt="drawing" width="60%"/>
 
 13. Select a category and enter the business description to create your WhatsApp business profile. Note that, you can later edit the information on the Yellow.ai platform. Click on **Continue**.
 
-    <img src="https://i.imgur.com/z0iSidb.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/z0iSidb.png" alt="drawing" width="60%"/>
 
 
 14. Enter a phone number that does not have a WhatsApp account, and ensure that it receives any incoming message or voice call for the OTP verification.
 
-    <img src="https://i.imgur.com/hdo6P8e.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/hdo6P8e.png" alt="drawing" width="60%"/>
    
    
 
@@ -92,12 +94,12 @@ The number you give should not be connected to any WhatsApp account. If connecte
 
 15. Enter the OTP received on the number via your preferred method. Please choose the retries wisely as its limited to upto 3 attempts in 24hour.
 
-    <img src="https://i.imgur.com/DnIuZZD.png)" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/DnIuZZD.png)" alt="drawing" width="60%"/>
 
 
 16. Once the verification is successfully completed, click on **OK** and the platform  will display the WhatsApp business account details.
 
-    <img src="https://i.imgur.com/R9iT4B8.png))" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/R9iT4B8.png))" alt="drawing" width="60%"/>
     
 
 17. The platform will take you back to the **Messaging** page. A dialog box is displayed. You must select the same WABA you created and the number that was added, and click **Connect**.
@@ -387,11 +389,14 @@ To create a new Catalog Journey on the Yellow.ai Platform, see [here](https://do
 When setting up your WhatsApp Business Profile, you must follow the below guidelines for display name:
 
 * A display name should represent a business or its service, organization, product, or department. Note that, organizations with a government affiliation will need to be approved by the WhatsApp team.
-* A display name must have grammatically correct capitalization and may not include all capitals, except for acronyms. <br/>For example, **Not accepted:** RETAIL BUSINESS ORGANISATION<br/> **Accepted:** Retail Business Account.
+* A display name must have grammatically correct capitalization and may not include all uppercase, except for acronyms. <br/>For example, **Not accepted:** RETAIL BUSINESS ORGANISATION<br/> **Accepted:** Retail Business Organisation.
 * A dispaly name should not contain the following:
   * Extra punctuation 
   * Emojis
   * Character symbols such as trademark designations
   * URL format
+  * An individual's full name
+  * A generic term (For example, Apparals)
+  * Geographic location (For example, Texas)   * A slogan or a long description.
 * A display name must have consistent branding with external sources. For example, a company's website or marketing (Fresh Produce Cold Pressed Juices).
 * A display name must have a clear relationship for your business (must be referred on the business’ website or external media references). <br/>For example, **Accepted:** Name of a charity mentioned on a non-profit organization's website.<br/>**Not accepted:** Name of a charity not mentioned on any external websites.
