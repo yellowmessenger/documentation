@@ -433,6 +433,7 @@ module.exports = {
           label: "Knowledgebase",
           collapsed: true,
           items: [
+            "platform_concepts/inbox/knowledge-base/kboverview",
             "platform_concepts/inbox/knowledge-base/edit-publish-articles",
             "platform_concepts/inbox/knowledge-base/managingcategories",
                  ],           
