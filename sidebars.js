@@ -217,6 +217,18 @@ module.exports = {
       ]
     },
 
+    // Marketplace starts here
+
+{
+  type: "category",
+  label: "Marketplace",
+  collapsed: true,
+  items: [
+    "platform_concepts/marketplacetemplates/intro",
+    "platform_concepts/marketplacetemplates/template1",
+  ],
+}, 
+
     // Studio starts here  
   
     {
@@ -874,17 +886,7 @@ module.exports = {
           ],
         },
 
-// Marketplace starts here
 
-{
-  type: "category",
-  label: "Marketplace",
-  collapsed: true,
-  items: [
-    "platform_concepts/marketplacetemplates/intro",
-    "platform_concepts/marketplacetemplates/template1",
-  ],
-}, 
 
 
   ], 
