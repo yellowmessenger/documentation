@@ -9,6 +9,7 @@ To connect your bot with Telegram, follow these steps:
 1. Open the telegram app in your device and search for a Bot named @BotFather to create a new Telegram Bot.
 2. Start the conversation with that bot, then you can see the option to create a new bot in the message.
 
+
 <center><img src="https://cdn.yellowmessenger.com/zzeVMD31ud7Z1613188664508.png" width="50%"/></center>
 
 3. And now it will ask you to choose a name for your bot, Provide the name for the bot and this will show up as the display name to the users.

@@ -14,9 +14,11 @@ function renderFeedbackFooter() {
   const feedbackFooterHTML =
   //"<div id='feedbackFooter' style='padding-left: 48px; padding-bottom: 20px;'><h3>Was the article helpful?</h3><div style='padding: 10px; text-decoration: none;'><i class='ri-thumb-up-fill'></i></div><div style='padding: 10px; text-decoration: none;'><i class='ri-thumb-down-fill'></i></div></div>";
 
-  "<div id='feedbackFooter' style='padding-left: 48px; padding-bottom: 20px; text-align:center; width:75%;'><h3>Was the article helpful?</h3><a style='padding: 10px; text-decoration: none;' href=''><i class='ri-thumb-up-fill'></i></a><a style='padding: 10px; text-decoration: none;' href=''><i class='ri-thumb-down-fill'></i></a></div>";
+  "<div id='feedbackFooter' style='padding-left: 48px; padding-bottom: 20px; text-align:center; width:75%;'><h3>Was the article helpful?</h3><button style='padding: 10px; text-decoration: none;'><i class='ri-thumb-up-fill'></i></button><button style='padding: 10px; text-decoration: none;' href=''><i class='ri-thumb-down-fill'></i></button></div>";
   const div = document.createElement("div");
   div.innerHTML = feedbackFooterHTML;
   if (container && !footer) container.appendChild(div);
   
 }
+
+
