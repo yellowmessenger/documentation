@@ -152,11 +152,13 @@ Authentication is done with the help of a unique token generated for each user t
 
 Once this token is generated you can conditionally check if a user has been authenticated with the following script.
 
-```
+
+```java
+# Recommended approach 
+
 if (userIsAuthenticated) { 
 
-        // replace this with your own auth logic.
-	// reload the bot with new info.
+  // replace this with your own auth logic and reload the bot with new info.
 	
     window.YellowMessengerPlugin.init({
 		ymAuthenticationToken: 'Your_Unique_token'
@@ -164,13 +166,12 @@ if (userIsAuthenticated) {
 	window.YellowMessengerPlugin.show(); // display the bot icon
 }
 
+```
+
+----- OR -----
 
 
-// ----- OR -----
-
-
-
-
+```java
 if(userIsAuthenticated) { 
 
 // replace this with your own auth logic.
