@@ -110,7 +110,7 @@ You can add quotes manually and save the changes.
 
 
 
-### <a name="ml"></a> 2.2 Add FAQs for Multilingual bots
+### <a name="ml"></a> 2.1 Add FAQs for Multilingual bots
 
 To add FAQs for multi-lingual bots, follow the given steps:
 
