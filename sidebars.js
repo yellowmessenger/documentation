@@ -28,23 +28,20 @@ module.exports = {
 
   cookbooks: [
 
-    "cookbooks/getting_started",
-    "cookbooks/conversation-design",
- 
-
-
+    // "cookbooks/getting_started", 
     {
       type: "category",
-      label: "Configurations in studio-builder",
+      label: "Studio",
       collapsed: true,
       items: [
+        "cookbooks/conversation-design",
           "cookbooks/newcard",
       ],
     }, 
     
     {
       type: "category",
-      label: "Understand engage module",
+      label: "Engage",
       collapsed: true,
       items: [
         "cookbooks/Upgrade_new_engage_app",
@@ -56,7 +53,7 @@ module.exports = {
 
     {
       type: "category",
-      label: "Configure bots for specific channel",
+      label: "Channels",
       collapsed: true,
       items: [
 
@@ -145,25 +142,8 @@ module.exports = {
     }
   ],
 },   
-/*
-{
-  type: "category",
-  label: "Template bots",
-  collapsed: true,
-  items: [
-    "cookbooks/template-bots/model-bot",
-    // "cookbooks/template-bots/customer-support-bot",
-    "cookbooks/template-bots/customer-support-bot",
-    "cookbooks/template-bots/faq",
-    "cookbooks/template-bots/lead-generation",
-  ],
-}, 
 
-*/
-
-
-
-  ],
+  ], // user guides end here
 
 
 
@@ -897,8 +877,9 @@ module.exports = {
   // Product updates/ What's new tab starts here
 
   updates: [
+
+    //Do not add/ remove this file
     "updates/overview",
-   // "updates/2022/sep_updates",
     {
       type: "category",
       label: "2022 Updates",
@@ -908,17 +889,11 @@ module.exports = {
         "updates/2022/aug",
         "updates/2022/july",
         
-
-       //"updates/studio/build",
-       //"updates/studio/trainandtest",
-       // "updates/studio/analyse",
-       // "updates/studio/api",
-       // "updates/studio/table",
-      // "updates/studio/events",
-       // "updates/studio/tools",
-       // "updates/studio/language",
       ],
     },
+    // Prod update ends here.
+
+
     {
       type: "category",
       label: "Insights",
