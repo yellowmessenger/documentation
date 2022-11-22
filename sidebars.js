@@ -28,13 +28,13 @@ module.exports = {
 
   cookbooks: [
 
-    // "cookbooks/getting_started", 
+    "cookbooks/getting_started", 
     {
       type: "category",
       label: "Studio",
       collapsed: true,
       items: [
-        "cookbooks/conversation-design",
+       // "cookbooks/conversation-design",
           "cookbooks/newcard",
       ],
     }, 
