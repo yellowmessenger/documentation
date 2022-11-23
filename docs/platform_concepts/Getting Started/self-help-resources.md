@@ -8,8 +8,7 @@ Self-help resources are readily available on the platform to provide you with im
 ## <a name="access"></a> 1. Access the help section
 
 
-
-You can access the **Help** section from any module, that is, the **Overview** page, **Studio, Inbox, Engage, Insights, Channels, and Integrations**. Click on the highlighted icon to access the **Help** resources, as shown in the below screenshot.
+Click on the highlighted icon to access the **Help** resources, as shown in the below screenshot.
 
 <img src="https://i.imgur.com/jSNoQPL.jpg)" alt="drawing" width=""/>
 
@@ -19,6 +18,7 @@ You can access the **Help** section from any module, that is, the **Overview** 
 Before you get started with our platform, take a quick tour of the guided walkthrough or step-by-step guide tour to understand how to build your first bot.
 
 <img src="https://i.imgur.com/ZuYbA09.png)" alt="drawing" width="50%"/>
+<br/>
 
 <img src="https://i.imgur.com/jtIBIkd.png)" alt="drawing" width="50%"/>
 

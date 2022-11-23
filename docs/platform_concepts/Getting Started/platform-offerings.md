@@ -27,7 +27,7 @@ Switch among different modules of the platform using the **Module switcher**.
 
 ## 3. Set up your bot 
 
-Before creating a bot, you must have a clear idea of what you are desiging. Get all your initial questions ready for all the use cases that you want to solve using the bot. 
+Before creating a bot, you must have a clear idea of what you are desiging. Get all your initial questions ready for all the use cases that you want to solve using the bot. For more information, see [Create your first bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot)
 
 <img src="https://i.imgur.com/HYzms4v.png)" alt="drawing" width="80%"/>
 
@@ -68,7 +68,7 @@ Only superadmin can share bots and revoke access.
 
 ## 6. Connect bot to different channels
 
-You have the flexibility to reach out to your customers on different channels for better reachability. Integrate your bot seamlessly with various channels according to your business requirements.
+You have the flexibility to reach out to your customers on different channels for better reachability. Integrate your bot seamlessly with various channels according to your business requirements. For more information, see [Launch your bot across channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).
 
 <img src="https://i.imgur.com/qSqZG5T.png)" alt="drawing" width="80%"/>
 
@@ -82,7 +82,7 @@ Make your bot conversations more comfortable for your users, especially when you
 
 ## 8. Get instant help through Help links
 
-Self-help resources are readily available on the platform to provide you with immediate assistance in resolving your issues that are related to the product. Be it product understanding, reaching out to our product experts, or connecting with our support agents.
+Self-help resources are readily available on the platform to provide you with immediate assistance in resolving your issues that are related to the product. Be it product understanding, reaching out to our product experts, or connecting with our support agents. For more information, see [Self help resources](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/self-help-resources).
 
         
 <img src="https://i.imgur.com/MxEj2H1.png)" alt="drawing" width="30%"/> 

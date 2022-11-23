@@ -125,7 +125,7 @@ module.exports = {
   ],
   onBrokenLinks: "log",
   scripts: [
-    "/js/bot.js", // connect support bot 
     "/js/FeedbackFooter.js", // feedback footer
+    "/js/bot.js", // connect support bot 
   ],
 };
