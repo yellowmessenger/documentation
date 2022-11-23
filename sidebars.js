@@ -502,12 +502,10 @@ module.exports = {
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
                    ],
           },
-          //security
             "platform_concepts/inbox/inbox-settings/security",
           ],
         },
     //other files
-    "platform_concepts/inbox/custom-usecases",
       ],
     },
 
