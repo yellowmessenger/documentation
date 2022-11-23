@@ -188,6 +188,7 @@ module.exports = {
         "platform_concepts/Getting Started/add-bot-collaborators",
         "platform_concepts/Getting Started/keyboard-shortcuts",
         "platform_concepts/Getting Started/api-keys",
+        "platform_concepts/Getting Started/subscription",
 
 
       ],

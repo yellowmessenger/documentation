@@ -1,6 +1,6 @@
 ---
-title: User Metrics
-sidebar_label : User Metrics
+title: User metrics
+sidebar_label : User metrics
 ---
 
 User metrics are used to learn about your bot users. The following metrics can be monitored: 
