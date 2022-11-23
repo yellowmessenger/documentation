@@ -38,7 +38,14 @@ module.exports = {
           "cookbooks/newcard",
       ],
     }, 
-    
+    {
+      type: "category",
+      label: "Inbox",
+      collapsed: true,
+      items: [
+        "cookbooks/inbox/custom-usecases",
+      ],
+    },    
     {
       type: "category",
       label: "Engage",

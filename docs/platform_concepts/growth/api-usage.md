@@ -4,8 +4,8 @@ sidebar_label: API usage
 ---
 
 In this article, you will learn about how to monitor API usage metrics. The following can be observed on the API usage page: 
-1. API Usage
-2. API Request rate
+1. API usage
+2. API request rate
 3. API latency
 
 
@@ -42,7 +42,7 @@ Follow the below steps to view the API usage:
 -----
 
 
-### 1.1 View API Usage
+### 1.1 View API usage
 
 The below graph shows API usage by different status codes is being shown in this graph. This data is calculated on an API level.
 
@@ -61,7 +61,7 @@ The below graph shows API usage by different status codes is being shown in this
 
 
 
-### 1.2 View API Request rate
+### 1.2 View API request rate
 
 This graph displayes API request rate is the number of API requests made by the bot to other systems to get information to respond accurately to user intents. 
 
