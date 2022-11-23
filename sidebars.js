@@ -38,7 +38,14 @@ module.exports = {
           "cookbooks/newcard",
       ],
     }, 
-    
+    {
+      type: "category",
+      label: "Inbox",
+      collapsed: true,
+      items: [
+        "cookbooks/inbox/custom-usecases",
+      ],
+    },    
     {
       type: "category",
       label: "Engage",
@@ -495,12 +502,10 @@ module.exports = {
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
                    ],
           },
-          //security
             "platform_concepts/inbox/inbox-settings/security",
           ],
         },
     //other files
-    "platform_concepts/inbox/custom-usecases",
       ],
     },
 

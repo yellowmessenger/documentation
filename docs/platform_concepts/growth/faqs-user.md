@@ -1,6 +1,6 @@
 ---
-title: FAQs
-sidebar_label: FAQs
+title: Insights FAQs
+sidebar_label: Insights FAQs
 ---
 
 <details>
