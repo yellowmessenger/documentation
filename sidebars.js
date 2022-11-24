@@ -43,7 +43,14 @@ module.exports = {
 
       ],
     }, 
-    
+    {
+      type: "category",
+      label: "Inbox",
+      collapsed: true,
+      items: [
+        "cookbooks/inbox/custom-usecases",
+      ],
+    },    
     {
       type: "category",
       label: "Engage",
@@ -186,6 +193,7 @@ module.exports = {
         "platform_concepts/Getting Started/add-bot-collaborators",
         "platform_concepts/Getting Started/keyboard-shortcuts",
         "platform_concepts/Getting Started/api-keys",
+       // "platform_concepts/Getting Started/subscription",
 
 
       ],
@@ -501,12 +509,10 @@ module.exports = {
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
                    ],
           },
-          //security
             "platform_concepts/inbox/inbox-settings/security",
           ],
         },
     //other files
-    "platform_concepts/inbox/custom-usecases",
       ],
     },
 

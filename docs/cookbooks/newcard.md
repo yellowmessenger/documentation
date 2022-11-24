@@ -1,6 +1,7 @@
 ---
-title: Guide to Implement New Card in Yellow AI Cloud Platform
+title: Implement New Card in Yellow AI Cloud Platform
 sidebar_label : Implement carousel card
+tags: whatsapp card, carousel  
 ---
 
 
