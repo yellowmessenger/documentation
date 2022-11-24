@@ -12,7 +12,7 @@ In this article, you will learn:
 This feature is applicable only for live chats.
 :::
 
-The sticky agent is a type of ticket assignment where the customers can connect to an agent, of their choice (agents they are familiar with/ have conversed with before). This helps to provide a consistent and better experience, reduce conflicts and achieve faster resolution. It is used in Industries where the customer and agent relationship is crucial and it is expected that customers are to be mapped to their specific point of contact(agent/counselor/representative). 
+The sticky agent is a type of ticket assignment where the customers can connect to an agent, of their choice (agents they are familiar with/ have conversed with before). This helps to provide a consistent and better experience, reduce conflicts and achieve faster resolution. It is used in Industries where the customer and agent relationship is crucial and it is expected that customers are to be mapped to their specific point of contact (agent/counselor/representative). 
 For example - Real estate, Concierge services, Travel consultancy, Financial Services, Education, Healthcare, etc.
 
 
@@ -22,11 +22,10 @@ For example - Real estate, Concierge services, Travel consultancy, Financial Ser
 
 The sticky agent can solve the following use cases:
 
-1. Avoid assigning chats to agents who do not have the context of their customer queries: 
-    - When a customer creates a chat ticket and assigns that to their respective agent who is not eligible to take any new chats, capture the customer information and throw an error message.
 
-3.  Assign the ticket to the next available agent in the group:
-    - When a customer creates a chat ticket and assigns that to their respective agent who is not eligible to take any new chats, assign the ticket to the next available agent in the group (recommended approach).
+1. When a customer creates a live chat, assign it to their respective agent. If that particular agent is not eligible to take any new chats, capture the customer information and throw an error message  (don't assign that chat to other agents who might not have context of the customer). This sort of strict mapping behaviour is sometimes followed in industries like BFSI & other Concierge services etc., depending upon their business workflow. 
+2. [Recommended approach] When a customer creates a live chat, assign that to their respective agent. If that particular agent is not eligible to take any new chats, assign them to the next available agent in the same group.
+We believe that customers should not be left empty handed and should at least be connected with a regular support agent if not with their preferred one.
 
 
 :::info 
