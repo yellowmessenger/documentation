@@ -36,6 +36,11 @@ module.exports = {
       items: [
        // "cookbooks/conversation-design",
           "cookbooks/newcard",
+          "cookbooks/studio/trigger-whatsappresponse",
+          "cookbooks/studio/retriev-dbinfo"
+          "cookbooks/studio/text-fomat",
+
+
       ],
     }, 
     {
@@ -317,6 +322,7 @@ module.exports = {
         
         "platform_concepts/studio/tools",
         "platform_concepts/studio/languages-supported",
+        "platform_concepts/studio/studio-faqs",
     
       ],
     },
