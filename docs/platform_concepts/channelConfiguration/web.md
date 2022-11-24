@@ -153,8 +153,9 @@ Authentication is done with the help of a unique token generated for each user t
 Once this token is generated you can conditionally check if a user has been authenticated with the following script.
 
 
+
 ```java
-# Recommended approach 
+# Recommended approach for Chatbot authentication
 
 if (userIsAuthenticated) { 
 
@@ -167,6 +168,8 @@ if (userIsAuthenticated) {
 }
 
 ```
+
+
 
 ----- OR -----
 
