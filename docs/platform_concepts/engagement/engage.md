@@ -3,7 +3,7 @@ title: Engage overview
 sidebar_label: Overview
 ---
 
-Engage is a customer engagement module that enables marketers to craft multi-channel campaigns intuitively.  Engage helps marketers to deliver total lifecycle CX from acquisition, through Transaction, to Retention and Growth.
+Engage is a customer engagement module that enables marketers to craft multi-channel campaigns intuitively.  Engage helps marketers to deliver total lifecycle CX from acquisition, through Transaction, to Retention, and Growth.
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/HWcOSroSusk" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
@@ -25,7 +25,11 @@ The following are the different types of campaigns Yellow.ai supports.
 
 ### 1.1 Outbound engagement
 
-Outbound engagement are campaigns that help brands reach out to their customers proactively. For example, to send transactional messages, personalized birthday or anniversary wishes; or to promote new products, services, offers, or sale.
+Outbound engagement are campaigns that help brands reach out to their customers proactively. You can send out outgoing messages to your end consumers for promotional and transactional objectives.
+
+* Bulk email campaign for **promotional reasons**. For example, holiday offers, clearance sale, new products, new store launching.
+* Personal high-context email notifications for **transactional updates**. For example, appointment reminder, email confirmation , OTP,  and password change.
+
 
 You can run outbound campaign in multiple channels such as Email, SMS, WhatsApp, FB Messenger, Viber, and Slack.
 
