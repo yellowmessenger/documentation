@@ -398,5 +398,6 @@ When setting up your WhatsApp Business Profile, you must follow the below guidel
   * An individual's full name
   * A generic term (For example, Apparals)
   * Geographic location (For example, Texas)   * A slogan or a long description.
-* A display name must have consistent branding with external sources. For example, a company's website or marketing (Fresh Produce Cold Pressed Juices).
+* A display name must have consistent branding with external sources(for example, a company's website or marketing). If they don't feel the display name is abiding all these rules, then they will approve the display name.
+For instance: Facebook account of the client is in the name of Tolaram Grp and display name "Colgate" is rejected by Facebook saying there is no link between the two names. So client has to apply for new account under the name of "Colgate Nigeria."
 * A display name must have a clear relationship for your business (must be referred on the business’ website or external media references). <br/>For example, **Accepted:** Name of a charity mentioned on a non-profit organization's website.<br/>**Not accepted:** Name of a charity not mentioned on any external websites.
