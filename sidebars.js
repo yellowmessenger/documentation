@@ -37,8 +37,8 @@ module.exports = {
        // "cookbooks/conversation-design",
           "cookbooks/newcard",
           "cookbooks/studio/trigger-whatsappresponse",
-          "cookbooks/studio/retriev-dbinfo"
-          "cookbooks/studio/text-fomat",
+          "cookbooks/studio/retriev-dbinfo",
+          "cookbooks/studio/text-format",
 
 
       ],
