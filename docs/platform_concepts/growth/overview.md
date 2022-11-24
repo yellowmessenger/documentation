@@ -4,7 +4,7 @@ sidebar_label: Overview
 ---
 
 
-In this article, you will learn about the 9 common matrices that can be tracked on the insights overview page which summarizes how your bot is functioning.
+In this article, you will learn about the 9 common metrics that can be tracked on the insights overview page which summarizes how your bot is functioning.
 
 - Click **Insights** from the overview switcher. The first section displayed is the **Overview**. 
 
@@ -198,7 +198,7 @@ For every flow, the completion event is pushed. The count of those completed eve
 :::info
 
 **Filter for a period**
-- All the matrices can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
+- All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
 - If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
 
 

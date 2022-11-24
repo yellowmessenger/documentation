@@ -3,6 +3,10 @@ title: Guidelines to design your bot
 sidebar_label : Conversation design
 ---
 
+<!--
+This doc must be the first doc linked to guides. Please do not change the .md file name/delete this doc. You can edit the content in this doc.
+-->
+
 Follow the below guidelines from our conversation design experts to build a bot that functions more like human: 
 
 > Conversation Design | More Human Less Bot
