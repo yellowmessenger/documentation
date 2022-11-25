@@ -10,8 +10,12 @@ There are two types of Email senders for pushing outbound email notifications.
 
 * **Email SMTP**
 
-   Simple Mail Transfer Protocol (SMTP) is a simple mechanism to relay (send/receive) emails from/to your mail server.
+Simple Mail Transfer Protocol (SMTP) is a simple mechanism to relay (send/receive) emails from/to your mail server.
 Traditionally, the one-off emails that we send from our mailbox to another are powered by SMTP.
+
+:::note
+Use SMTP configuration when the purpose is to send 1:1 transactional/update email notifications through our [Notifications API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine/) or [Workflow}(https://docs.yellow.ai/docs/platform_concepts/engagement/workflowCampaign) campaign and not usually recommended for bulk promotional ones.
+:::
 
 * **Web-based Email API**
 
@@ -36,6 +40,9 @@ Upon successful configuration, the platform can send emails from the associated 
 
 
 ### 2.1 Set up SMTP-based email account (normal)
+
+This setup provides our platform with the permission to send emails on behalf of the email domain.
+
 
 To configure an SMTP in the yellow.ai platform, follow the given steps:
 

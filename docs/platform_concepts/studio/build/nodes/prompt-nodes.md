@@ -3,14 +3,11 @@ title: Prompt Nodes
 sidebar_label: Prompts
 ---
 
-Prompts are Interactive/conversational nodes which expect user input.
-When a user provides an invalid input to the prompt, a fallback message will be displayed. 
+Prompts are Interactive or conversational nodes, which expect user input. When a user provides an invalid input to the prompt, a fallback message will be displayed. 
 
 In this article, you will learn about the different types of prompt nodes: 
-1. [User details](#ud): Used to collect user details.
-2. [Feature](#feature): Used for creative display of information and collection of responses.
-3. [Media](#media): Nodes to collect social media related details.
-4. [Voice](#voice): Local voice-related node.
+1. [Frequently used promts](#used)
+2. [Other promts](#others)  
 
 > All these prompts must be followed by another node as a response to this node.
 
@@ -20,19 +17,38 @@ You can also make your **prompts smarter**. It will be discussed at the end of t
 
 **Randomization**
 
-The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple texts for randomizing**. Enter variations of text that you want your users to see. This feature will display different message to the user in a random order (instead of the same message every time) making the conversation more humanly. 
->  
+The nodes that have an option to ask the users a question or display a text are enabled with **Randomization** feature. On any such node, click **Add multiple texts for randomizing**. Enter variations of text that you want your users to see. This feature will display different messages to the user in a random order (instead of the same message every time), making the conversation more humanly. 
+  
 > ![](https://i.imgur.com/KucDPVJ.png)
 
 ---
-## <a name="ud"></a>  1. Collect user details
+## <a name="ud"></a>  1. Frequently used promts
 
-### 1.1 Name
+
+### 1.1 Question
+
+> This node is available for voice bots. 
+
+Ask a simple question with this node. 
+
+
+![](https://i.imgur.com/MU4Awmg.png)
+
+Click **Fetch from** to see the dynamic value. You can edit the value of the question by entering the code. 
+```
+{
+  "type": "text",
+  "value": "What is your query?"
+}
+```
+
+---
+### 1.2 Name
 
 > This node is available for voice bots. 
 
 
-Ask and validate the user name with this node. When the user enters a sentence instead of first + last name, validation fails and the bot replies- 'Can you please repeat this, looks like an Invalid name'.
+Ask and validate the user name with this node. When the user enters a sentence instead of the first + last name, validation fails, and the bot replies. ‘Can you please repeat this, looks like an invalid name’.
 
 :::note
  If you are building a multilingual bot, it's recommended to use a Question node instead of a Name node.
@@ -48,12 +64,13 @@ Create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bu
 
 ---
 
-### 1.2 Phone
+### 1.3 Phone
 
 > This node is available for voice bots. 
 
-Ask and validate the phone number with this node. **Default ISD** value can be selected if the bot is customized for a region.
-When the user enters a number of length greater or less than the expected number (10 for India +91), validation fails and the bot replies- 'Enter a valid phone number'.
+Ask and validate the phone number with this node. If the bot is customised for a specific region, select a **default ISD** value.
+
+When the user enters a number of length greater or less than the expected number (10 for India +91), validation fails and the bot replies, 'Enter a valid phone number'.
 
 
 ![](https://i.imgur.com/OE9W6fH.png)
@@ -64,9 +81,258 @@ When the user enters a number of length greater or less than the expected number
 
 Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the number in it. 
 
+
 ---
 
-### 1.3 Date 
+### 1.4 Quick Replies
+
+Display a question along with quick reply buttons as the response for this node.
+Users can either select from options or manually type out options.
+You can drag and extend each quick reply to attach it to the flow you want to use further. You can also configure fallback, which will work when none of the quick replies are validated from the user's input.
+
+
+![](https://i.imgur.com/Ign5Rz9.png)
+
+
+
+You can further customize buttons by adding:
+* **Button value** - If configured, this is the actual value of the button - that will go to any Database insert or be stored in a variable.
+* **Text aliases**: Other phrases users can type which means the same as the text in the button. 
+* **Link and Postback**: External URL link. 
+* **Prefix Image**: Image icon that you want to show for the button.
+
+![](https://i.imgur.com/mlA3ZYS.png)
+
+
+#### Dynamic Quick Replies 
+
+
+In the above method to add quick replies you had to add each button yourself. You knew the number and text of buttons beforehand to create quick replies. You can generate some options from an API response or Database query where you either don't know what will be the option or the number of options can change from where you want to fetch it from.
+In such cases, you need to dynamically generate quick replies.
+To do this, we have a **Fetch from** option in the quick reply prompt. Here, instead of adding quick replies manually, you can select a variable containing a quick reply object. Format of quick reply object:
+
+```
+{
+  "title": [
+    "Select an option",
+    "Pick an option"
+  ],
+  "options": [
+    {
+      "text": "cold drink",
+      "title": "Cold Drink",
+      "advancedSettings": true,
+      "aliases": [
+        "coke",
+        "soft drink"
+      ],
+      "url": "https://www.tasty-food.com",
+      "postback": "post-back",
+      "image": "https://cdn.abc.com/coke-img.jpeg",
+      "textColor": "#4384f5",
+      "backgroundColor": "#FFFF",
+      "id": "quick_01d78e38b44e1915",
+      "analytics": {
+        "aevent": "test-analytics"
+      }
+    },
+    {
+      "text": "",
+      "title": "Btn #2",
+      "advancedSettings": false,
+      "id": "quick_d9eda393404266d4"
+    },
+    {
+      "text": "",
+      "title": "Btn #3",
+      "advancedSettings": false,
+      "id": "quick_39563a54f6889f4d"
+    }
+  ]
+}
+```
+
+To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intended variable. For example, you can apply for a loop around options to dynamically add to them while parsing through some API responses etc.
+
+<!---
+#### Quick reply node for WhatsApp
+
+Quick replies node can switch between buttons and numbered lists. WhatsApp buttons can have up to maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
+
+![](https://i.imgur.com/Kc9r8xe.png)
+
+> Real time example: 
+> ![](https://i.imgur.com/7pp1yaf.jpg)
+-->
+
+#### Quick reply buttons for WhatsApp bots
+
+:::note
+This is a **workaround** to enable clickable quick reply buttons for WhatsApp bots. In-app feature is under development.
+:::
+
+Quick Replies are currently not supported on WhatsApp. That is, buttons won't be visible on the WhatsApp chat. 
+To use buttons (Quick reply like action), use one Carousel card without adding any images.  
+
+![](https://i.imgur.com/nmWXMaR.png)
+
+You will be permitted to add only 3 buttons to the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the selected response in it. 
+
+Given below is the WhatsApp chat screen for the above flow.
+
+![](https://i.imgur.com/xw1ksvM.jpg)
+
+----
+
+### 1.5 Email
+
+Ask, validate and store the user's email with this node.
+
+
+![](https://i.imgur.com/LRJ93DG.png)
+
+
+**Validation**
+Bot checks if the entered email is in username@company.domain format.
+
+Create an email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the email ID in it. 
+
+---
+
+### 1.6 Carousel 
+
+Display interactive carousel cards with buttons with this node. Carousel can be used in places like displaying a list of products.
+
+
+![](https://i.imgur.com/DJkmnpT.png)
+
+
+Carousel response contains an option to add an image (less than 10MB), title, and description.
+You can also add multiple buttons to a carousel. Clicking on the button can display a text, another flow, a URL entered, or will be sent to the phone number. Configure this in the Carousel settings.
+
+:::info
+ On WhatsApp, carousel cards do not support hyperlinking and allow for up to 3 clickable buttons.
+:::
+
+![](https://i.imgur.com/seysnzN.png)
+
+
+:::note
+Carousels without buttons will act as Messages instead of Prompts.
+:::
+
+**Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.  
+
+#### Dynamic Carousels
+
+Similar to quick replies, Carousels can also be dynamically created using **Fetch from** option. Carousel object is an array of each card (JSON objects). Sample Carousel object:
+
+```
+[
+  {
+    "title": "Item1",
+    "description": "Description",
+    "actions": [
+      {
+        "title": "Button #1",
+        "buttonDefault": "text",
+        "text": "Message1"
+      },
+      {
+        "title": "Button #2",
+        "buttonDefault": "triggerJourney",
+        "analytics": "analytics",
+        "triggerJourney": "test"
+      },
+      {
+        "title": "Button #3",
+        "buttonDefault": "url",
+        "analytics": "analytics",
+        "url": "https://www.sample-site.com",
+        "postback": "post-back"
+      },
+      {
+        "title": "Button #4",
+        "buttonDefault": "phoneNumber",
+        "analytics": "test-analytics",
+        "phoneNumber": "9876543210"
+      }
+    ],
+    "image": "https://cdn.abc.com/sample-img.jpeg",
+    "text": "Description for item1"
+  },
+  {
+    "title": "Title",
+    "description": "Description",
+    "actions": [
+      {
+        "title": "Button #1"
+      },
+      {
+        "title": "Button #2"
+      }
+    ],
+    "image": "",
+    "video": "",
+    "text": ""
+  }
+]
+
+```
+
+The actions above describe the card button. You can add multiple actions to a single card in a carousel.
+
+To add a URL type action, for example, the format becomes:
+
+```
+    {
+        "title": "Explore more",
+        "buttonDefault": "url",
+        "url": "https://sampleurl.com",
+    }                
+```
+**Sample function to add carousels**
+
+You can call this function from the function node we will learn about and store the returning value in a variable.
+
+```
+return new Promise(resolve => {
+    // Your logic goes here
+    let cars = data.variables.cars_h; //this bot variable contains an API response
+    let cars_cards = []; 
+
+    for (let i = 0; i < cars.length; i++) {
+        
+            cars_cards.push({
+                "title": cars[i].model,
+
+                "actions": [
+                    {
+                        "title": "Explore more",
+                        "buttonDefault": "text",
+                        "text": cars[i].model,
+
+                    }
+                ],
+                "image": cars[i].main_img,
+                // "video" : "",
+                // "text" : "Desc1",
+
+            });
+
+    }
+
+    return resolve(cars_cards);
+});
+```
+
+---
+
+
+## <a name="feature"></a> 2. Other prompts
+
+
+### 2.1 Date 
 
 Users will be able to select a date on the calendar widget with this node.
 If the user input contains a date or a time, it will pass the validator. Else the specified validation fail message will be sent.
@@ -128,357 +394,9 @@ The structure of the object is as follows:
     }
 }
 ```
-
 ---
 
-### 1.4 Location 
-
-Ask, validate and store user location with this node. 
-
-Validation is passed after extracting all the fields specified in **Required fields**. This does not mean users needs to provide all these fields, any info provided by the user is extracted.
-
-It is then stored in the specified variable with the following format:
-```
- { userMessage: '', coordinates: { lat: "", lng: "", }, fullAddress: '', city: '', state: '', country: '', postalCode: '', }
-```
-
-
-![](https://i.imgur.com/ukkmvnZ.png)
-
-
-You can also send a "**Share location**" button to allow users to share their current location. Customize the text in this button by clicking on it.
-
-
-![](https://i.imgur.com/bicgYat.png)
-
----
-
-### 1.5 Input
-
-Ask and store user input and other comments with this node. 
-
-:::note
- Use this node only to store text comments from users - these replies will not trigger NLP.
-:::
-
-In many use cases, there is a need for a non-linear flow. For example, if the phone number node asks "Please enter your phone number"- the user enters a number in the wrong format, the bot displays the validation message saying "Entered number is wrong. Please enter again". For the same, if the user enters "Why do you want my phone number?" the reply will still be "Entered number is wrong. Please enter again". To handle such cases, the Input node can be used to handle different types of user replies. 
-
-
-For better & dynamic conversation design, use the functionalities of the input node:  
-
-1. Custom validator design.  
-2. Attachment of different custom flows/messages every time validation fails. Validation failure messages need not be monotonous as it can be configured for each of the failed attempt separately.  
-3. Can attach the new [Context handler](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) locally for dynamic conversations. 
-
-![](https://i.imgur.com/MSHE9HW.png)
-
-
-----
-
-
-## <a name="feature"></a> 2. Feature 
-
-### 2.1 Question
-
-> This node is available for voice bots. 
-
-Ask a simple question with this node. 
-
-
-![](https://i.imgur.com/MU4Awmg.png)
-
-Click **Fetch from** to see the dynamic value, you can edit the value of the question by entering the code. 
-```
-{
-  "type": "text",
-  "value": "What is your query?"
-}
-```
----
-
-### 2.2 Carousel 
-
-Display interactive carousel cards with buttons with this node. Carousel can be used in places like displaying a list of products.
-
-
-![](https://i.imgur.com/DJkmnpT.png)
-
-
-Carousel response contains an option to add an image (less than 10MB), title and description.
-You can also add multiple buttons to a carousel. Clicking on the button can display a text, another flow, a URL entered or will be sent to the phone number. Configure this in the Carousel settings.
-
-:::info
- On WhatsApp, carousel cards do not support hyper linking and allow for up to 3 clickable buttons.
-:::
-
-![](https://i.imgur.com/seysnzN.png)
-
-
-:::note
-Carousels without buttons will act as Messages instead of Prompts.
-:::
-
-**Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.  
-
-#### Dynamic Carousels
-
-Similar to quick replies, Carousels can also be dynamically created using **Fetch from** option. Carousel object is an array of each card (JSON objects). Sample Carousel object
-
-```
-[
-  {
-    "title": "Item1",
-    "description": "Description",
-    "actions": [
-      {
-        "title": "Button #1",
-        "buttonDefault": "text",
-        "text": "Message1"
-      },
-      {
-        "title": "Button #2",
-        "buttonDefault": "triggerJourney",
-        "analytics": "analytics",
-        "triggerJourney": "test"
-      },
-      {
-        "title": "Button #3",
-        "buttonDefault": "url",
-        "analytics": "analytics",
-        "url": "https://www.sample-site.com",
-        "postback": "post-back"
-      },
-      {
-        "title": "Button #4",
-        "buttonDefault": "phoneNumber",
-        "analytics": "test-analytics",
-        "phoneNumber": "9876543210"
-      }
-    ],
-    "image": "https://cdn.abc.com/sample-img.jpeg",
-    "text": "Description for item1"
-  },
-  {
-    "title": "Title",
-    "description": "Description",
-    "actions": [
-      {
-        "title": "Button #1"
-      },
-      {
-        "title": "Button #2"
-      }
-    ],
-    "image": "",
-    "video": "",
-    "text": ""
-  }
-]
-
-```
-
-The actions above describe the card button, you can add multiple actions to a single card in a carousel.
-
-To add a URL type action, for example, the format becomes:
-
-```
-    {
-        "title": "Explore more",
-        "buttonDefault": "url",
-        "url": "https://sampleurl.com",
-    }                
-```
-**Sample function to add carousels**
-
-You can call this function from the function node we will learn about and store the returning value in a variable.
-
-```
-return new Promise(resolve => {
-    // Your logic goes here
-    let cars = data.variables.cars_h; //this bot variable contains an API response
-    let cars_cards = []; 
-
-    for (let i = 0; i < cars.length; i++) {
-        
-            cars_cards.push({
-                "title": cars[i].model,
-
-                "actions": [
-                    {
-                        "title": "Explore more",
-                        "buttonDefault": "text",
-                        "text": cars[i].model,
-
-                    }
-                ],
-                "image": cars[i].main_img,
-                // "video" : "",
-                // "text" : "Desc1",
-
-            });
-
-    }
-
-    return resolve(cars_cards);
-});
-```
----
-
-### 2.3 Feedback 
-
-:::info
-- Supported for all the mobile SDKs (Flutter, Android, iOS) and web.
-- Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
-:::
-
-Display a feedback widget and receive ratings and feedback with this node. 
-On this prompt, you can configure what your questions should be when you ask for feedback. Feedback prompt will ask for a rating on a scale of 5, and the additional comments prompt will take additional comments from the user in a text field if entered.
-
-
-![](https://i.imgur.com/v61glfs.png)
-
-:::info
-- Feedback data can be found in the Insights section > Data Explorer. You do not need to store it separately.
-- You can access this data if needed by using {{variables.var_name.rating}} and {{variables.var_name.comment}}
-:::
-
----
-
-
-### 2.4 Quick Replies
-
-Display a question along with quick reply buttons as its response with this node.
-Users can either select from options or type out options.
-You can drag and extend each quick reply to attach with the further flow you want ahead of it. There is also an option to configure fallback which will work when none of the quick replies are validated from the user input.
-
-
-![](https://i.imgur.com/Ign5Rz9.png)
-
-
-
-Buttons can be further customized by adding:
-* **Button value** - If configured, this is the actual value of the button - that will go to any Database insert or be stored in a variable.
-* **Text aliases**: Other phrases users can type which means the same as the button. 
-* **Link and Postback**: external URL link 
-* **Prefix Image**: icon that must be displayed for the button.
-
-
-![](https://i.imgur.com/mlA3ZYS.png)
-
-
-#### Dynamic Quick Replies 
-
-In the above method to add quick replies you had to add each button yourself. You knew the number and text of buttons beforehand to create quick replies. You can generate some options from an API response or Database query where you either don't know what will be the option or the number of options can change from where you want to fetch it from.
-In this case, you need to dynamically generate quick replies.
-To do this, we have a **Fetch from** option in the quick reply prompt. Here, instead of adding quick replies manually, you can select a variable containing a quick reply object. Format of quick reply object:
-
-```
-{
-  "title": [
-    "Select an option",
-    "Pick an option"
-  ],
-  "options": [
-    {
-      "text": "cold drink",
-      "title": "Cold Drink",
-      "advancedSettings": true,
-      "aliases": [
-        "coke",
-        "soft drink"
-      ],
-      "url": "https://www.tasty-food.com",
-      "postback": "post-back",
-      "image": "https://cdn.abc.com/coke-img.jpeg",
-      "textColor": "#4384f5",
-      "backgroundColor": "#FFFF",
-      "id": "quick_01d78e38b44e1915",
-      "analytics": {
-        "aevent": "test-analytics"
-      }
-    },
-    {
-      "text": "",
-      "title": "Btn #2",
-      "advancedSettings": false,
-      "id": "quick_d9eda393404266d4"
-    },
-    {
-      "text": "",
-      "title": "Btn #3",
-      "advancedSettings": false,
-      "id": "quick_39563a54f6889f4d"
-    }
-  ]
-}
-```
-
-To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intended variable. For example, you can apply for a loop around options to dynamically add to them while parsing through some API response etc.
-
-<!---
-#### Quick reply node for WhatsApp
-
-Quick replies node can switch between buttons and numbered lists. WhatsApp buttons can have up to maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
-
-![](https://i.imgur.com/Kc9r8xe.png)
-
-> Real time example: 
-> ![](https://i.imgur.com/7pp1yaf.jpg)
--->
-
-#### Quick reply buttons for WhatsApp bots
-
-:::note
-This is a **workaround** to enable clickable quick reply buttons for Whatsapp bots. In app feature is under development.
-:::
-
-Quick Replies are currently not supported on WhatsApp. That is, buttons wont be visible on the WhatsApp chat. 
-To use buttons (Quick reply like action) use one Carousel card without adding any images.  
-
-![](https://i.imgur.com/nmWXMaR.png)
-
-You will be permitted to add only 3 buttons to the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the selected response in it. 
-
-Given below is the WhatsApp chat screen for the above flow.
-
-![](https://i.imgur.com/xw1ksvM.jpg)
-
-----
-
-
-
-### 2.5 Multi Select 
-
-:::info
-- Supported for all the mobile SDKs (Flutter, Android , iOS) and web.
-- Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
-:::
-
-Similar to the Quick Replies node, display a question along with quick reply buttons where the user can select multiple responses with this node. 
-
-**Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.  
-
-
-![](https://i.imgur.com/YfWQNyZ.png)
-
----
-
-### 2.6 File Prompt 
-
-Ask, validate and store JPG/PNG/MP4/MOV/HEVC files with this node.
-The file size can be set to a certain number. 
-
-It will validate if the uploaded file is in JPG/PNG/MP4/MOV/HEVC format and if its size is less than or equal to the mentioned file size. 
-
-![](https://i.imgur.com/UvhKJn1.png)
-
-Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the file in it. 
-
----
-
-## <a name="media"></a> 3. Media related nodes
-
-### 3.1 WhatsApp List
+### 2.2 WhatsApp List
 
 Configure lists displayed on the WhatsApp channel with this node. 
 
@@ -573,24 +491,99 @@ Enable **Advanced options** and `i` option next to **fetch from** to see the dyn
 * Character limit of Button Text and Response is 24.
 * Section Title and List Headers are optional.
 
-### 3.2 Email
+---
 
-Ask, validate and store the user email with this node.
+### 2.3 Multi Select 
+
+:::info
+- Supported for all the mobile SDKs (Flutter, Android , iOS) and web.
+- Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
+:::
+
+Similar to the Quick Replies node, this node displays a question along with quick reply buttons where the user can select multiple responses.
+
+**Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.  
 
 
-![](https://i.imgur.com/LRJ93DG.png)
-
-
-**Validation**
-bot checks if the entered email is in username@company.domain format.
-
-Create an email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the email ID in it. 
+![](https://i.imgur.com/YfWQNyZ.png)
 
 ---
 
-## <a name="voice"></a>  4. Voice nodes
+### 2.4 Location 
 
-### 4.1 Speak
+Ask, validate and store user location with this node. 
+
+Validation is passed after extracting all the fields specified in **Required fields**. This does not mean users needs to provide all these fields, any info provided by the user is extracted.
+
+It is then stored in the specified variable with the following format:
+```
+ { userMessage: '', coordinates: { lat: "", lng: "", }, fullAddress: '', city: '', state: '', country: '', postalCode: '', }
+```
+
+
+![](https://i.imgur.com/ukkmvnZ.png)
+
+
+You can also send a "**Share location**" button to allow users to share their current location. Customize the text in this button by clicking on it.
+
+
+![](https://i.imgur.com/bicgYat.png)
+
+---
+
+### 2.5 Store comment
+
+
+This node helps you to skip triggering of NLU, intents, or entities for a respective flow. Using this node, you can provide inputs such as feedback, questions, suggestions, and so on.
+
+User inputs are stored in a variable through the Store comment node without triggering the NLU of that particular flow.
+
+
+For example, you have created a bot to order food from a restaurant. You want to allow the  user to provide feedback after delivering the food. In such cases, you can use the store comment node to provide feedback without triggering the NLU of the respective flow.
+
+:::note
+It is recommended not to use Quick reply option for Store comment node.
+:::
+
+![](https://i.imgur.com/oub8uVE.png)
+
+
+---
+
+### 2.6 File Prompt 
+
+Ask, validate and store JPG/PNG/MP4/MOV/HEVC files with this node.
+The file size can be set to a certain number. 
+
+It will validate if the uploaded file is in JPG/PNG/MP4/MOV/HEVC format and if its size is less than or equal to the mentioned file size. 
+
+![](https://i.imgur.com/UvhKJn1.png)
+
+Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the file in it. 
+
+---
+
+### 2.7 Feedback 
+
+:::info
+- Supported for all the mobile SDKs (Flutter, Android, iOS) and web.
+- Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
+:::
+
+Display a feedback widget and receive ratings and feedback with this node. 
+On this prompt, you can configure what your questions should be when you ask for feedback. Feedback prompt will ask for a rating on a scale of 5, and the additional comments prompt will take additional comments from the user in a text field if entered.
+
+
+![](https://i.imgur.com/v61glfs.png)
+
+:::info
+- Feedback data can be found in the Insights section > Data Explorer. You do not need to store it separately.
+- You can access this data if needed by using {{variables.var_name.rating}} and {{variables.var_name.comment}}
+:::
+
+---
+
+### 2.8 Speak
 
 > This node is available for voice bots. 
 
@@ -607,7 +600,8 @@ You can enter what a bot must ask the user in SSML format. This can be tested by
 The response message (user utterance) obtained for this node can be stored as a variable (similar to the question node)
 
 
-![](https://i.imgur.com/A1komJk.png)
+![](https://i.imgur.com/BVIW5bs.png)
+
 
 Sample SSML code: 
 
@@ -617,7 +611,28 @@ Sample SSML code:
 
 ---
 
-## 5. Make prompt smarter
+### 2.9 Input
+
+Ask and store user input and other comments with this node. 
+
+:::note
+ Use this node only to store text comments from users - these replies will not trigger NLP.
+:::
+
+In many use cases, there is a need for a non-linear flow. For example, if the phone number node asks "Please enter your phone number"- the user enters a number in the wrong format, the bot displays the validation message saying "Entered number is wrong. Please enter again". For the same, if the user enters "Why do you want my phone number?" the reply will still be "Entered number is wrong. Please enter again". To handle such cases, the Input node can be used to handle different types of user replies. 
+
+
+For better & dynamic conversation design, use the functionalities of the input node:  
+
+1. Custom validator design.  
+2. Attachment of different custom flows/messages every time validation fails. Validation failure messages need not be monotonous as it can be configured for each of the failed attempt separately.  
+3. Can attach the new [Context handler](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) locally for dynamic conversations. 
+
+![](https://i.imgur.com/MSHE9HW.png)
+
+---
+
+## 3. Make prompt smarter
 
 Make Prompt Smarter option is available on all the prompt nodes. 3 options available broadly are auto complete, autoskip and other related options. 
 
@@ -625,7 +640,7 @@ Make Prompt Smarter option is available on all the prompt nodes. 3 options avail
 
 ----
 
-### 5.1 Auto complete
+### 3.1 Auto complete
 
 Autocomplete is set so that the bot can start predicting the rest of the word or sentence for users as they start typing. For example, if you want to find your location and you start typing Jai, you will get the city names starting with Jai - Jaipur. Similarly, if you type Ban, you will get suggestions such as Bangalore, Bangla, Banswara, etc.
 
@@ -675,7 +690,7 @@ return new Promise(resolve => {
 
 --------
 
-### 5.2 Autoskip
+### 3.2 Autoskip
 
 You can keep your conversations from being repetitive by auto-skipping the prompt with entities or variables if you already received the value and have stored it.
 
@@ -689,7 +704,7 @@ Configure Auto-skip at a global level (from tools section), click [here](https:/
 
 ---
 
-### 5.3 Additional 
+### 3.3 Additional 
 
 1. **Use this as Unique ID for User**: Info entered at this node will be unique for a user. 
 For example, instead of setting a new user ID, you can use the phone number as a unique ID to recognize this user. Other nodes that can be used as Unique IDs are Car Number, Aadhar Card, SSN, etc. that are unique to an individual. 
@@ -734,4 +749,3 @@ To beautify the text you enter in the field -**bot says** you can add the follow
   - Bold: Message *- 
   - Italics: _ Message _ 
 ```
-
