@@ -243,7 +243,7 @@ By default, a scheduled event is in activate state. You can deactivate, edit, or
 
 
 
-### 7. User 360 events
+### 7. User 360 events (System events)
 
 These are sytem events that helps in triggering flows or perform actions on user profile related activities - when a user is created, user details are updates, and user profile is deleted.
 
