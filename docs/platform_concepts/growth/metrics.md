@@ -4,13 +4,13 @@ sidebar_label : User metrics
 ---
 
 User metrics are used to learn about your bot users. The following metrics can be monitored: 
-1. **User traffic**: Number of users visiting your bot, Number of messages sent to your bot, duration of the chat, etc. 
-2. **User retention**: Number of new users vs. old users. 
-3. **Users by demographics**: User classification based on the location the bot is being used from. 
+1. [User traffic](#traffic): Number of users visiting your bot, Number of messages sent to your bot, duration of the chat, etc. 
+2. [User retention](#retention): Number of new users vs. old users. 
+3. [Users by demographics](#demography): User classification based on the location the bot is being used from. 
 
 In this article, you will learn in detail about user metrics. 
 
-## 1. View user metrics 
+## 1. View and understand user metrics 
 
 To view user metrics, follow the given steps: 
 
@@ -20,7 +20,7 @@ To view user metrics, follow the given steps:
 ![](https://i.imgur.com/Zjiqb99.png)
 
 
-### 1.1 User traffic
+### <a name="traffic"></a> 1.1 User traffic
 
 This widget covers all the primary metrics needed to understand user traffic to your bot in a given timeframe.
 Select any of the below headings to view the graphs for the selected time range. 
@@ -41,7 +41,7 @@ Select any of the below headings to view the graphs for the selected time range.
 
 
 
-### 1.2 User retention
+### <a name="retention"></a> 1.2 User retention
 
 This widget shows the distribution between new users and old users visiting the platform. Any user who comes to the bot for the first time is categorized as a new user, and from their second visit onwards they are considered as a returning user.
 
@@ -66,7 +66,7 @@ This widget shows the funnel of users who are coming to the bot. The blue lines 
 
 **![](https://lh3.googleusercontent.com/anORKlWAhLV_lFakMJ6HJguQl-oypc8xnYqZhnPcdPhhuz7EwzTHKNVVEAQ0jdvIp96sGjgTmW0XmWy_P2mEANuWdkb-_Jh6FFqWMvB77puhRoE4v3r4W4BB0J_R_nSppVVZRg2gG6k0R8gSbHTcVtdH05cWUGtmQBpSU5DwLdObjc99wmgfaHhQ6HNajg)**
 
-### 1.5 Users By Demographics
+### <a name="demography"></a> 1.5 Users By Demographics
 
 
 This widget shows user demographics for a bot based on the selected parameter.

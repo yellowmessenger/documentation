@@ -6,7 +6,7 @@ sidebar_label : Knowledgebase overview
 
 **What is knowledgebase?**
 
-Multilingual Knowledge base is a self serve medium to automate incoming support queries. This helps the live agents can focus on more important queries other frequent doubts from the end customer can be resolved through knowledgebase.
+Multilingual Knowledge base is a self serve medium to automate incoming support queries. With this, the live agents can focus on more important queries other frequent doubts from the end customer can be resolved through knowledgebase.
 
 ![](https://i.imgur.com/zHslCKA.png)
 

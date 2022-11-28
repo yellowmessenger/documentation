@@ -704,7 +704,6 @@ module.exports = {
   label: "Insights",
   collapsed: true,
   items: [
-    "platform_concepts/growth/growth",
     "platform_concepts/growth/overview",
     {
       type: "category",
@@ -727,6 +726,7 @@ module.exports = {
     },
 
     "platform_concepts/growth/doccog",
+    "platform_concepts/growth/dashboards",
 
     {
       type: "category",
@@ -738,7 +738,6 @@ module.exports = {
       ],
     },
 
-    "platform_concepts/growth/dashboards",
     "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",
   ],
