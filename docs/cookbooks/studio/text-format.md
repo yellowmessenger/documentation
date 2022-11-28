@@ -1,6 +1,6 @@
 ---
 title: How do I format the text across channels?
-sidebar_label: Text Format across Channels
+sidebar_label: Text format across channels
 ---
 The format differs based on the targeted channel.
      
@@ -12,12 +12,19 @@ The format differs based on the targeted channel.
 ````
      
 <img  src="https://i.imgur.com/H06LoHR.png"  width="100%"/>
+
+
      
-###  For WhatsApp
+### For WhatsApp
+
+
+
 ```
 *bold*
 _italics_
 ~strikethrough~
 ```monospace```
- ```    
-<img  src="https://i.imgur.com/9wGNDO6.png"  width="100%"/>
+
+ ```   
+
+<img src="https://i.imgur.com/QCRa7ZQ.png" alt="drawing" width="100%"/>
