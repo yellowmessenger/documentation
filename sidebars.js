@@ -45,6 +45,14 @@ module.exports = {
     }, 
     {
       type: "category",
+      label: "Marketplace templates",
+      collapsed: true,
+      items: [
+        "cookbooks/marketplace-templates/edtech-template",
+      ],
+    }, 
+    {
+      type: "category",
       label: "Inbox",
       collapsed: true,
       items: [
