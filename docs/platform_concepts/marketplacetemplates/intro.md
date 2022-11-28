@@ -18,6 +18,8 @@ In this article, you will learn:
 1. [How to browse for the required template](#1)
 2. [How to preview and experience a demo of template](#2)
 3. [How to use the selected template in your bot](#3)
+4. [How to edit or delete the flows inside your template](#4)
+
 
 ## <a name="1"></a> 1. Choose a right marketplace template 
 
@@ -119,14 +121,61 @@ If you have an existing flow that is being used in one of your bots and you want
 Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#6-export-flow-from-one-bot-to-another) to learn how. 
 :::
 
-- Flows will be imported and trained automatically for your bot. 
-- To edit imported flows, go to **Studio** > **Build** > **Flows** and edit the flow. Learn more about flows and how to edit flows [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#2-introdution-to-flow). 
+3. Flows will be imported and trained automatically for your bot. 
 
-   ![](https://i.imgur.com/gfw2hy9.png)
 
-3. After editing,  Publish the changes. 
+## <a name="4"></a> 3. Edit imported flows 
 
-   ![](https://i.imgur.com/oRoCiRc.jpg)
+
+To edit imported flows, go to **Studio** > **Build** > **Flows** and edit the flow. Learn more about flows and how to edit flows [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#2-introdution-to-flow). 
+
+The following actions can be performed after exporting the template: 
+
+
+
+#### Delete flow
+
+If you have exported flows that are not relevant to your use case, you can delete the flows by clicking the menu on the right and selecting **Delete**. 
+For example, if you have exported the same flow twice, one flow can be deleted or if your bot does not require verification, that flow can be deleted. 
+
+![](https://i.imgur.com/u3yhreX.png)
+
+#### Clone flow
+
+If you want to reuse one flow more than once, you can clone the flows by clicking the menu on the right and selecting **Clone**. While cloning you can enter a custom flow name and description. 
+For example, the 'Bike Models' and 'Bike Models clone' flow will have the same flow except the models displayed through it will be different. 
+
+![](https://i.imgur.com/6fvtk0R.png)
+
+
+#### Edit flow 
+
+1. To edit a flow, open the flow by clicking on the flow name. 
+
+![](https://i.imgur.com/gfw2hy9.png)
+
+2. **Edit text**: Text inside each node can be rephrased. Open any node and enter the text in **Bot says**. For example,  "Remember me? I'm Mia, here to collect your AADHAR information." can be changed to "Hey! Please provide your AADHAR information."
+
+<img src="https://i.imgur.com/ypOZfjh.png)" alt="drawing" width="70%"/>
+
+3. **Add new nodes**: New nodes can be added when required. 
+
+
+| Nodes         | Description |
+| ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Prompts**  | Prompts can be used when the bot expects a user to respond to the posed question. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to learn more.                           |
+| **Messages** | Messages can be used when the bot has to display information to the user without expecting any response. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to learn more. These nodes can be used to provide a human touch to the conversation. |
+| **Action**   | Actions are non-interactive nodes that can be used to perform a specific task. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) to learn more.                            |
+|    **Logic**   |  Logic nodes can be used when the flow must be branched based on the given conditions. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to learn more.  |
+
+4. **Delete nodes**: You can delete a few unnecessary nodes provided in the default flow by clicking the delete icon. After deleting the node, connect the node to the next node so that the flow persists. 
+
+![](https://i.imgur.com/7O9NTQz.png)
+
+5. After editing, click **Publish changes**. 
+
+![](https://i.imgur.com/oRoCiRc.jpg)
+
 
 
 
@@ -135,7 +184,7 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys
 
 1. Learn how to **export flows** from one bot to another, [click here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#6-export-flow-from-one-bot-to-another)
 2. Learn to **debug the flows** in the template you imported, [click here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow). 
-3. Learn how to **publish the changes** after customizing your bot. [click here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
+3. Learn how to **publish the changes** after customizing your bot, [click here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
 :::
    
 
