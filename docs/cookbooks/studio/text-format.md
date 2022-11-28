@@ -27,4 +27,4 @@ _italics_
 
  ```   
 
-<img  src="https://i.imgur.com/9wGNDO6.png"  width="100%"/>
+<img src="https://i.imgur.com/QCRa7ZQ.png" alt="drawing" width="100%"/>
