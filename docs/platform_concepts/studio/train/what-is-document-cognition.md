@@ -1,12 +1,12 @@
 ---
 sidebar_label : Documents
-title: Document Cognition
+title: Documents
 ---
 
 
-Documents (Document cognition/ Doc-cog)is a feature on yellow cloud and app that allows the customer to upload the documents, integrate their knowledge source to the yellow platform and enable the end users to extract relevant information from these documents quickly.   
-Doc-cog can process both unstructured textual data and structured tables. 
-When you have multiple documents(20+) containing mostly(~70%) text, it is humanly impossible to convert this large pile of data into a structured format to feed it to a chatbot. In such cases, you can leverage this knowledge by feeding it to the Doc-Cog engine which utilizes its NLP model and directly searches for the most relevant response from within these documents.   
+Documents (Document/Doc)is a feature on yellow cloud and app that allows the customer to upload the documents, integrate their knowledge source to the yellow platform and enable the end users to extract relevant information from these documents quickly.   
+Doc can process both unstructured textual data and structured tables. 
+When you have multiple documents(20+) containing mostly(~70%) text, it is humanly impossible to convert this large pile of data into a structured format to feed it to a chatbot. In such cases, you can leverage this knowledge by feeding it to the Doc engine which utilizes its NLP model and directly searches for the most relevant response from within these documents.   
 By using the **Documents** feature, you can expect the model to answer queries and take you to the right page/paragraph content with ~75-85% accuracy depending on the type and size of documents.
 
 In this article, you will learn:   
@@ -42,15 +42,15 @@ Learn how to upload files to Documents in the [next section](#f).
 
 The document knowledge can be used in two different methods:   
 
-1. **Fallback**: Doc Cog can be used as a fallback mechanism for unidentified queries for the bot. When the bot is not able to understand the query from the intent, it goes as a fallback to document search and fetches the response from the uploaded doc. 
+1. **Fallback**: Doc can be used as a fallback mechanism for unidentified queries for the bot. When the bot is not able to understand the query from the intent, it goes as a fallback to document search and fetches the response from the uploaded doc. 
     - On the Studio landing page, click **Document Search**. 
     - **Enable** the toggle button next to **Actions**.   
 
 ![](https://i.imgur.com/QN5XllL.png)
 
-2. **Node**: Doc Cog can be used as a node in flows. [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#14-document-search) - action node can be added in a flow and used as a searching tool for any user query.
+2. **Node**: Doc can be used as a node in flows. [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#14-document-search) - action node can be added in a flow and used as a searching tool for any user query.
     - Open **Studio** > **Build** > **Flows**. 
-    - Add a node to store the user input (Query that is expected to be searched via Doc Cog)in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#22-variables) (For example: store a reply in a variable- agentquery).
+    - Add a node to store the user input (Query that is expected to be searched via Doc)in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#22-variables) (For example: store a reply in a variable- agentquery).
     - Add a [Document Search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#14-document-search). Select Query value as the previously stored variable. 
     - Metadata filters can be added when you only specific documents are required to be searched for the user query.
 
@@ -61,10 +61,10 @@ The document knowledge can be used in two different methods:
 
 **View Analytics on Document search** 
     
-Doc cog can provide analytics about the search results performance, categories of searches etc. on the [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview) module.
+Doc can provide analytics about the search results performance, categories of searches etc. on the [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview) module.
 
 - Open **Insights**. 
-- Select **Document cognition**. 
+- Select **Document**. 
     
 ![](https://i.imgur.com/5IPO2Sw.jpg)
 
@@ -142,9 +142,9 @@ When there is a user query entered in a particular language from the list, the b
     
 ### <a name="extkb"></a> 2.2 Upload files via. URL
 
-> Yellow.ai’s document cognition feature supports integration with external knowledge database by adding a URL.
+> Yellow.ai’s document feature supports integration with external knowledge database by adding a URL.
 
-A KnowledgeBase(KB) gives centralized and organize access to solutions in form of FAQs and documentation (eg. Prismic, Salesforce, Confluence, Service-now, etc). Doc cog provides seamless integration and powerful search on these API-based KBs without requiring to upload it on the yellow.ai platform. It is a generic integration framework that can help to sync external knowledge base articles with the Yellow.ai Doc cog.
+A KnowledgeBase(KB) gives centralized and organize access to solutions in form of FAQs and documentation (eg. Prismic, Salesforce, Confluence, Service-now, etc). Doc provides seamless integration and powerful search on these API-based KBs without requiring to upload it on the yellow.ai platform. It is a generic integration framework that can help to sync external knowledge base articles with the Yellow.ai Doc.
 
 
 :::info
@@ -206,7 +206,7 @@ curl --location --request POST 'https://login.salesforce.com/services/oauth2/tok
 --data-urlencode 'redirect_uri=<callback_url>'
 ```
 
-11. Share the instance_url, refresh_token, and api_version with the Doc cog team.
+11. Share the instance_url, refresh_token, and api_version with the Doc team.
 12. Share the token generation curl (if required/exist).
     
 
@@ -236,7 +236,7 @@ curl --location --request POST 'https://login.salesforce.com/services/oauth2/tok
     
 ### <a name="awss3"></a> 2.3 Upload file via. AWS
     
-> Yellow.ai’s document cognition feature supports integration with AWS S3.
+> Yellow.ai’s document feature supports integration with AWS S3.
 
 
 :::info
@@ -502,7 +502,7 @@ Client and Resource are two different abstractions within the boto3 SDK for maki
     
 ### <a name="shpt"></a> 2.4 Upload file via. SharePoint
     
-> Yellow.ai's document cognition search feature supports integration with SharePoint. 
+> Yellow.ai's document search feature supports integration with SharePoint. 
 
 
 :::info
@@ -622,7 +622,7 @@ Once an app is created you can give access to any site to it. You can view all t
 | Files.Read.All                    | To read the content of files                                   |
 
 2. **Updating on yellow.ai configuration**
-    - Open the yellow platform. **Studio** > **Doc cog** > **Upload documents** > **Select Sharepoint**
+    - Open the yellow platform. **Studio** > **Doc** > **Upload documents** > **Select Sharepoint**
     - Fill in the following details > Sync > select the required folders.
 
 | Client ID, Client Secret, Realm | Obtain from AAD App, Realm (tenant ID) |
@@ -640,7 +640,7 @@ Once an app is created you can give access to any site to it. You can view all t
 
 ## <a name="d"></a> 3. Extract Q&A 
     
-Doc Cog has the capability of auto-generating Questions and Answers. 
+Doc has the capability of auto-generating Questions and Answers. 
 1. Open the **QnA extract** tab. 
     
 ![](https://i.imgur.com/gTjILM5.png)
@@ -695,7 +695,7 @@ Follow the given steps to Configure:
     
 1. **What does a good document format look like?**
     
-The following are some of the characteristics of a document that’ll be processed well during document cognition. It's recommended to follow these guidelines while pre-processing your document -
+The following are some of the characteristics of a document that’ll be processed well during document. It's recommended to follow these guidelines while pre-processing your document -
 
 * It does not have scanned pages and images, these will be skipped if present in the doc.
 * At least 80% of the content is textual and well-formatted (e.g. Wikipedia articles)
@@ -705,7 +705,7 @@ The following are some of the characteristics of a document that’ll be process
 
 2. **Why am I not getting the right result in the first suggestion?**
 
-Because document cognition is a probabilistic model that is “predicting” the relevance of a specific paragraph or page by looking at the input string. There is no guarantee that the first result will be the most relevant. The most relevant results are expected to come in the top 3 results.
+Because document is a probabilistic model that is “predicting” the relevance of a specific paragraph or page by looking at the input string. There is no guarantee that the first result will be the most relevant. The most relevant results are expected to come in the top 3 results.
 
 3. **Why am I getting the other documents in suggestions which don't have the answer?**
 
@@ -730,18 +730,18 @@ Currently, we have restricted the life of each SAS link to an hour for security 
     
 There is no specific logic added to detect irrelevance right now. However, we do provide a relevance score with each search result that the bot developer can use. The model returns all documents which contain even a few keywords in the query in decreasing order of relevance. The bot developer can choose to show only Top N (e.g. Top 5) or Top 25% of the results based on relevance score.
 
-8. **Can the Doc cog work if the documents are stored in a different system?**
+8. **Can the Doc work if the documents are stored in a different system?**
     
-Doc cog has in-build integrations for Sharepoint, S3, URLs, and KBs (Salesforce, Service-now, Confluence). Any other KB can also be integrated which has APIs to access the articles/documents.
+Doc has in-build integrations for Sharepoint, S3, URLs, and KBs (Salesforce, Service-now, Confluence). Any other KB can also be integrated which has APIs to access the articles/documents.
 
-9. **Docs QNAs are not being generated, Do I need it for working of doc cog? or
-Can I edit the response of doc cog results?**
+9. **Docs QNAs are not being generated, Do I need it for working of doc? or
+Can I edit the response of doc results?**
     
-Doc cog search will work fine without the QNAs. If the upload docs are showing completed status, you can just enable doc cog fallback or add Action Node and start using it. QNA's are only required for editing the answers and adding them to the FAQs section.
+Doc search will work fine without the QNAs. If the upload docs are showing completed status, you can just enable doc fallback or add Action Node and start using it. QNA's are only required for editing the answers and adding them to the FAQs section.
 
-10. **Is permission-based Doc cog results possible so that only certain groups of people can search in a certain list of Docs / External KBs?**
+10. **Is permission-based Doc results possible so that only certain groups of people can search in a certain list of Docs / External KBs?**
     
-Yes, It is possible, User can add tags to the documents and pass the tag value as a variable in the doc cog action node while searching. 
+Yes, It is possible, User can add tags to the documents and pass the tag value as a variable in the doc action node while searching. 
 
 11. **If a single document has different answers/responses wrt a user profile like CEO, HR, SDE etc, Can we filter and show just the answers related to the User Profile?**
     
@@ -751,7 +751,7 @@ if answers are in a tabular structure, you can try adding the role of the user i
 
 12. **Why my documents are taking so long for indexing, is it stuck?**
     
-Doc cog uses queue base indexing flow which has a common queue among all the bots. A pending/queued status represents doc is still in the queue and waiting for indexing while the indexing status represents the doc is being indexed.
+Doc uses queue base indexing flow which has a common queue among all the bots. A pending/queued status represents doc is still in the queue and waiting for indexing while the indexing status represents the doc is being indexed.
 
 13. **Is there any limit on documents uploading?**
     
@@ -759,15 +759,15 @@ Yes, for a Tier 0 (Free Tier) bot there is a limit of a max of 50 total pages or
 
 14. **Can I index my articles present on ServiceNow / Confluence / Salesforce etc.?**
     
-Yes, Using Doc cog External KB integration it is possible to index the articles using the APIs.
+Yes, Using Doc External KB integration it is possible to index the articles using the APIs.
 
-15. **Why my bot is showing Journey Suggestions (Did you mean) instead of Doc cog results in fallback**?
+15. **Why my bot is showing Journey Suggestions (Did you mean) instead of Doc  results in fallback**?
     
 A bot has a specific priority order of actions in the fallback case. 
-Order: Journey -> FAQs -> Journey suggestion -> Doc cog -> Other fallback.
+Order: Journey -> FAQs -> Journey suggestion -> Doc -> Other fallback.
 So if the Journey suggestions are enabled and with good suggestion confidence, Journey suggestion will be triggered due to the priority order. You can try disabling the suggestion or increasing the confidence threshold of the suggestion.
 
-16. **Can I change the layout of the doc cog results cards?**   
+16. **Can I change the layout of the doc results cards?**   
     
 Yes, but the default layout is recommended which helps us in analytics, improves accuracy and provides a better user experience. 
 A layout that can be changed: Change vertical to horizontal cards, change the display name, remove tags, and remove the preview button.
