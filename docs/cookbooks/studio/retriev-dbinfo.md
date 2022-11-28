@@ -1,6 +1,6 @@
 ---
 title: How do I retrieve Database data inside a bot flow?
-sidebar_label: Retrieve Database data inside a flow
+sidebar_label: Retrieve database data inside a flow
 ---
 
 1. [Insert a Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) in your flow.
