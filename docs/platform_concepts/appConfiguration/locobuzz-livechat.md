@@ -21,19 +21,25 @@ To configure Locobuzz integration in your yellow.ai account, follow these steps.
 <img src="https://i.imgur.com/1WHnKoj.png" alt="drawing" width="100%"/>
 
 3. Fill in the required fields. 
-*  Api Key (To be provided by the client/locobuzz spoc of the client)
-*  Company Name (To be provided by the client/locobuzz spoc of the client) 
-*  Api Domain (To be provided by the client/locobuzz spoc of the client)
-*   Channel Id (To be provided by the client/locobuzz spoc of the client)
-*   Ticket Queue Message (This message will be displayed if the ticket goes into a queued state).
+*  **Api Key** (To be provided by the client/locobuzz spoc of the client)
+*  **Company Name** (To be provided by the client/locobuzz spoc of the client) 
+*  **Api Domain** (To be provided by the client/locobuzz spoc of the client)
+*   **Channel Id** (To be provided by the client/locobuzz spoc of the client)
+*   **Ticket Queue Message** (This message will be displayed if the ticket goes into a queued state).
 
 4. Once you're done, click **Connect**.
 
 ### 1.2 Configure webhook URL in Locobuzz Dashboard
 
-Copy the webhook url mentioned in the **Instructions** section of the **Locobuzz Integration Card**. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot.
+To receive events, you need to configure the webhook URL in the **Kapture CRM Dashboard**. 
 
-For example if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to India region, you can use origin domain itself.
+Copy the webhook url and the api key mentioned in the **Instructions** section of the **Kapture CRM Integration** Card. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.
+
+* r1 = MEA
+* r2 = Jakarta
+* r4= USA
+* r5 = Europe
+* r3 = Singapore
 
 ### 1.3 Enable events in Yellow.ai bot
 
@@ -70,7 +76,7 @@ For example if the domain is https://cloud.yellow.ai, you need to change it to h
  ```   
  ## 2. Use-case
 
-This integration lets you connect with live agents on Locobuzz from your yellow.ai account. 
+This integration lets you connect with live agents on **Locobuzz** from your yellow.ai account. 
 
 ### 2.1 Chat with Locobuzz Live Agent
  
@@ -104,7 +110,8 @@ Priority|Medium|String|The priority of the ticket|
    "ticketInfo": "{{apiresponse}}"
 }
 ```
-:::note apiresponse represents the raw response from the locobuzz create ticket API
+:::note 
+apiresponse represents the raw response from the Locobuzz create ticket API
 :::
 
 **Sample failure response**
@@ -117,5 +124,6 @@ Priority|Medium|String|The priority of the ticket|
    "ticketInfo": "{{apiresponse}}"
 }
 ```
-:::note apiresponse represents the raw response from the locobuzz create ticket API
+:::note 
+apiresponse represents the raw response from the Locobuzz create ticket API
 :::
