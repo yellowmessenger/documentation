@@ -792,6 +792,7 @@ module.exports = {
       items: [
         "platform_concepts/appConfiguration/overview",
         "platform_concepts/appConfiguration/amazon-livechat",
+        "platform_concepts/appConfiguration/avaya",
         "platform_concepts/appConfiguration/aws-s3",
         "platform_concepts/appConfiguration/azure-ad",
         "platform_concepts/appConfiguration/bamboohr",
@@ -811,6 +812,7 @@ module.exports = {
         "platform_concepts/appConfiguration/instamojo",
         "platform_concepts/appConfiguration/intercom-livechat",
         "platform_concepts/appConfiguration/jira",
+        "platform_concepts/appConfiguration/kapture-crm",
         "platform_concepts/appConfiguration/leadSquared-wa-connector",
         "platform_concepts/appConfiguration/livechat-integration",
         "platform_concepts/appConfiguration/locobuzz-livechat",
