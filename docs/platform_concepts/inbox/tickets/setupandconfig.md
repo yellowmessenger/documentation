@@ -14,10 +14,12 @@ After this configuration is successful, the tickets that are created via. Raise 
 ## <a name="1"></a>  1. Email channel and mail forwarding 
 
 
-Configure the email channel from the [channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound) module. Follow the below steps:
+Configure the email channel from the channels module, follow the below steps:
+
 
 1. Open **Channels** > **Email**. You can create an email(/account) for your group that handles email tickets. 
-2. Select **Basic/Advance** and add **Email server**, **Username**, **Password**, etc. 
+2. Select **Basic/Advance** and add **Email server**, **Username**, **Password**, etc.  Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound) for detailed documentation.  
+
 3. In **Configuration object** field, select **Support ticketing**. 
 
 ![](https://i.imgur.com/DlVVjbc.png)
