@@ -1,6 +1,6 @@
 ---
 title: Email ticketing - setup and configuration
-sidebar_label : Email ticketing- setup & config
+sidebar_label : Setup & configuration
 ---
 
 In this article you will learn how to configure email tickets, there are 3 steps to be followed: 
@@ -62,8 +62,15 @@ The email ticketing toggle must be enabled from the Inbox settings. Explained in
 
 ## <a name="3"></a>  3. Call email ticketing API
 
+
+**Enable email services (backend setting):**
+
+Once the setup is completed, bot developers need to make an API call (using services like Postman, MuleSoft, or other REST client) to enable the email ticketing service.
+
+**cURL of the request (all parameters are mandatory):**
+
 ```
-curl --location --request POST 'http://localhost:3000/settings/update?bot=x1595846061807' \
+curl --location --request POST 'http://localhost:3000/settings/update?bot={botId}' \
 --header 'x-api-key;' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -71,7 +78,18 @@ curl --location --request POST 'http://localhost:3000/settings/update?bot=x15958
 }'
 ```
 
+  
 
+| Key | Description |
+| ----|----|
+| botId | Unique ID of the bot for which you want to enable the Email ticketing feature (enter your botID) |
+| x-api-key | Unique access token |
+| useNewTicketing | Pass true (to enable) |
+
+
+
+
+> Simplified intuitive design coming soon!
 
 
 
