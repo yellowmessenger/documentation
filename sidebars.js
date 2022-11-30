@@ -197,6 +197,7 @@ module.exports = {
       items: [
 
         "platform_concepts/Getting Started/platform-offerings",
+        "platform_concepts/Getting Started/marketplaceintro",
         "platform_concepts/Getting Started/create-a-bot",
         "platform_concepts/Getting Started/add-bot-collaborators",
         "platform_concepts/Getting Started/keyboard-shortcuts",
@@ -218,17 +219,8 @@ module.exports = {
       ]
     },
 
-    // Marketplace starts here
 
-{
-  type: "category",
-  label: "Marketplace",
-  collapsed: true,
-  items: [
-    "platform_concepts/marketplacetemplates/intro",
-    "platform_concepts/marketplacetemplates/template1",
-  ],
-}, 
+
 
     // Studio starts here  
   
@@ -243,7 +235,20 @@ module.exports = {
           label: "Build your bot",
           collapsed: true,
           items: [
-            "platform_concepts/studio/build/journeys",
+          
+            //flows
+            {
+              type: "category",
+              label: "Understanding flows",
+              collapsed: true,
+              items: [          
+            "platform_concepts/studio/build/understandingflows/journeys",
+           // "platform_concepts/studio/build/understandingflows/configureflow",
+           // "platform_concepts/studio/build/understandingflows/exportflow",
+
+          ],
+        },
+
             {
               type: "category",
               label: "Nodes",

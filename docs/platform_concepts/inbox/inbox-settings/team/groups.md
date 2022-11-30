@@ -22,7 +22,7 @@ Follow the given steps to add agents to different groups:
 Every single agent will belong to a default group when they are created. The default group cannot be customized via Group settings. 
 :::
 
-**Add a new group**
+#### **Add a new group**
 
 3. To customize a particular group (for example, to assign 5 agents to a sales group) you can add the logic to differentiate the agents on the group settings. Follow the below steps to add a new group:   
 	- Click **+Add group**.  ![](https://i.imgur.com/3BJ0Nco.png)
@@ -36,7 +36,7 @@ Every single agent will belong to a default group when they are created. The def
 Only when the Group email ID is added, that group will be dedicated to Email tickets. If the Group email ID is not added, the group agents will handle chat tickets. 
 :::
 
-**Using groups in the Raise ticket node**
+#### **Using groups in the Raise ticket node**
 
 4. After the groups are added here, they will be visible on the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket)- Advance options. 
 	-For example, the Escalation group is selected on the Raise ticket node, and all the tickets that are triggered through this particular flow will be assigned to the Escalation group. 
