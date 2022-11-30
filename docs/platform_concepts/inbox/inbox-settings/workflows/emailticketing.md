@@ -7,7 +7,7 @@ sidebar_label : Email ticketing configuration
 Email settings must be enabled to handle email support tickets in the Inbox module. 
 
 :::note
-Prerequisites to email settings is available [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig)
+Prerequisites to email settings is available [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#1-email-channel-and-mail-forwarding).
 :::
 
 Follow the below steps to configure email settings: 
@@ -18,7 +18,7 @@ Follow the below steps to configure email settings:
 
 3. Select **Enable email ticketing**. When this is enabled, the support emails forwarded to the Inbox chats are converted into support tickets. 
 
-> With this, all the emails will be forwarded to the yellow.ai Inbox rather than the actual mailbox and they will automatically be created into tickets.
+> With this, all the emails will be forwarded to the yellow.ai Inbox rather than the actual mailbox and will automatically be created into tickets.
 
 4. **Configure acknowledgment email**: When an email is received and a support ticket is created in Inbox, an acknowledgment mail can be sent to the customer. This is a standard practice in the support ticketing industry.
     - Enter email **Subject**. 
