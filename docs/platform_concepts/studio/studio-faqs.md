@@ -218,10 +218,10 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
 
 
 <details>
- <summary>How do I link one flow to another for a bot?
+ <summary>How do I link one flow to another flow for a bot?
 </summary>
  <div>
-  <div>Use the Execute node to link  another flow to a bot. For more information, see [Execute Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#15-execute-flow).
+  <div>Use the [Execute Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#15-execute-flow) to link  another flow to a bot.
 ​
 </div>
   <br/>
@@ -232,7 +232,7 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
  <summary>Is it possible to skip triggering NLU for specific steps of a flow?
 </summary>
  <div>
-  <div>Yes, you can skip triggering NLU for specific flows using the **Store comment** node.  For more information, see [Store comment](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-store-comment).
+  <div>Yes, you can skip triggering NLU for specific flows using the [Store comment](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-store-comment) node.
 ​
 </div>
   <br/>
