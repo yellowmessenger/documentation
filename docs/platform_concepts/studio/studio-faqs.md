@@ -217,3 +217,37 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
 </details>
 
 
+<details>
+ <summary>How do I link one flow to another for a bot?
+</summary>
+ <div>
+  <div>Use the Execute node to link  another flow to a bot. For more information, see [Execute Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#15-execute-flow).
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to skip triggering NLU for specific steps of a flow?
+</summary>
+ <div>
+  <div>Yes, you can skip triggering NLU for specific flows using the **Store comment** node.  For more information, see [Store comment](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-store-comment).
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>I have configured Hindi language but it is triggering fallback/different journey? What might be the reason?
+</summary>
+ <div>
+  <div>In a flow, if you have selected "hi" (ISO code) for Hindi (button value), then it might be triggering another intent which you would have configured earlier ("hi" intent configured). To overcome this problem, set a variable, assign the variable value to Hindi language (hi), and then connect it to the Set language node.
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+
