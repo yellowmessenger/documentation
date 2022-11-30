@@ -57,6 +57,8 @@ module.exports = {
       collapsed: true,
       items: [
         "cookbooks/inbox/custom-usecases",
+        "cookbooks/inbox/emailvschat",
+        "cookbooks/inbox/notifyagents",
       ],
     },    
     {
