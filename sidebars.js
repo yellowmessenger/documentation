@@ -242,7 +242,7 @@ module.exports = {
             //flows
             {
               type: "category",
-              label: "flows",
+              label: "Flows",
               collapsed: true,
               items: [          
             "platform_concepts/studio/build/flows/journeys",
