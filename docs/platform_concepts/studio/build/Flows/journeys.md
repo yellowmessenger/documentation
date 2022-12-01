@@ -1,6 +1,6 @@
 ---
-title: Flows
-sidebar_label: Flows
+title: Create Flow
+sidebar_label: Create Flow
 ---
 
 > The words **Flows** and **Journeys** are used synonymously.
