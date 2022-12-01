@@ -52,7 +52,9 @@ Users can export a single flow or multiple flows from the bot. This option is av
 #### 2.2 View exported templates
 Users can view the templates submitted for review Under **Profile** > **Exports**. Users can view the template status from this page.
 
-**![](https://lh5.googleusercontent.com/1ByzfgBuCA9w2iyBa4HZkmWIMS0zg7pGyWn4qTJ9msaBrbQmmU5WYD-JdHaWAQdyij-jNPlxKJuJi3ahKALf4iD9Yed2f0yEpO4cerU3-knHLmOeL4cK3U1ktW89TXbiG2btALcfo1RXetQK_gDc7po3Hixt0tCDgie2ZinBvHJIsvjYlGcaT0i4acUc6g)**  
+<img src="https://lh5.googleusercontent.com/1ByzfgBuCA9w2iyBa4HZkmWIMS0zg7pGyWn4qTJ9msaBrbQmmU5WYD-JdHaWAQdyij-jNPlxKJuJi3ahKALf4iD9Yed2f0yEpO4cerU3-knHLmOeL4cK3U1ktW89TXbiG2btALcfo1RXetQK_gDc7po3Hixt0tCDgie2ZinBvHJIsvjYlGcaT0i4acUc6g" alt="drawing" width="40%"/>
+
+
 
 **![](https://lh6.googleusercontent.com/6wQcDM5UxEZJjEsSj8wNOlX9mCcWH6djRrfrUiTinT_vWXhfz_4hk8V5FdKYcj0WH4R13jUrW0vXx_Tc15OlOKw68dS4RGXHpBhNYRsCUsMQtuX4xX8HSd9V19rtyl8-jFXyz3k3g3uVB0GzUedcnjrEJDPIZ7aTBI0jRutATaLFybIK2dF5YsFW2sLlYQ)**
 

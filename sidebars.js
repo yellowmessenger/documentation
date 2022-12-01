@@ -188,7 +188,6 @@ module.exports = {
         "platform_concepts/getting-started",
     "platform_concepts/Getting Started/account-setup",
     "platform_concepts/Getting Started/self-help-resources",
-    "platform_concepts/Getting Started/user-account-settings",
   ],
 },
     
@@ -242,12 +241,12 @@ module.exports = {
             //flows
             {
               type: "category",
-              label: "Flows",
+              label: "Understanding flows",
               collapsed: true,
               items: [          
-            "platform_concepts/studio/build/flows/journeys",
-            "platform_concepts/studio/build/flows/configureflow",
-            "platform_concepts/studio/build/flows/exportflow",
+            "platform_concepts/studio/build/understandingflows/journeys",
+            "platform_concepts/studio/build/understandingflows/configureflow",
+            "platform_concepts/studio/build/understandingflows/exportflow",
 
           ],
         },
