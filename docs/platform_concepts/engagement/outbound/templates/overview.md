@@ -6,6 +6,7 @@ sidebar_label: Template overview
 A template is a message format that helps businesses to communicate with their customers. You can reuse common templates that you send to your customers. You can create templates for all the changes that Yellow.ai supports and the procedure for creating changes depending on the channel type. 
 
 
+
 ## 1. Access Template manager
 
 To access Template manager, follow these steps -

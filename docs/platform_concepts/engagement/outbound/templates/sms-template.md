@@ -6,7 +6,7 @@ sidebar_label: SMS template
 
 
 
-## Create SMS template
+## 1. Create SMS template
 
 1. Navigate to your project and go to **Engage** > **Templates**.
 
@@ -19,8 +19,6 @@ sidebar_label: SMS template
   
 
 3. Create the template using the available options and click **Save**. For descriptions of each field, see the following table.
-
-  
 
    ![](https://cdn.yellowmessenger.com/xUABq9rVRsiP1649260093253.png)
 
@@ -42,7 +40,7 @@ Body text | Enter the message body. To add variables such as verification code, 
 
 ***
 
-## 2. DLT compliance
+## 2. DLT compliance for Indian users
 
 Distributed Ledger Technology (DLT) is an account which brands need to create by giving relevant business info. The DLT account is in place to prevent customers from being SMS-spammed.
 
@@ -82,19 +80,19 @@ Upon successful creation of the DLT account, your brand will be assigned with th
 
 ### 2.2 Find the Entity ID
 
-On Airtel DLT: 👇
+**On Airtel DLT**: 👇
 
 ![dlt_airtel.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/951018E8-27FC-43A5-867B-8A70A19747D8/45ADABFB-1828-4E65-BEAF-C67E24A04221_2/dlt_airtel.png)
 
-On Jio DLT: 👇
+**On Jio DLT**: 👇
 
 ![dlt_jio.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/951018E8-27FC-43A5-867B-8A70A19747D8/65F4BE38-3B05-4776-A5FA-A1AA5903F674_2/dlt_jio.png)
 
-On Vodafone DLT: 👇
+**On Vodafone DLT**: 👇
 
 ![dlt_vodafone.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/951018E8-27FC-43A5-867B-8A70A19747D8/E2A06110-D90B-44A2-9A87-984640C350F3_2/dlt_vodafone.png)
 
-On Tata DLT: 👇
+**On Tata DLT**: 👇
 
 ![dlt_tata.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/951018E8-27FC-43A5-867B-8A70A19747D8/176C7FB2-F52E-43D5-953B-7F1CF07F4385_2/dlt_tata.png)
 
@@ -103,11 +101,11 @@ On PingConnect DLT: 👇
 ![dlt_pingconnect.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/951018E8-27FC-43A5-867B-8A70A19747D8/6836B950-8515-4E11-9E5A-D1CA0FC8B516_2/dlt_pingconnect.png)
 
 #### Charges involved 
-Subject to the Telcom operator.
+* Subject to the Telcom operator.
 
 #### Turn around time
 
-2 to 5 days (subject to Telecom operator).
+* 2 to 5 days (subject to Telecom operator).
 
 :::note
 Please use the brand’s email ID for the DLT registration.
@@ -153,11 +151,11 @@ The User interface may slightly differ for DLT portal from one telecom operator 
 
 ### 2.5 DLT Limitations
 
-1. Promotional are for non-customers
-2. Service-explicit, Service-inferred/service implicit, transactional for customers
-3. There is no limit on number of variables inside a template
-4. At Max, 30 characters can be passed as a variable
-5. Brand name should be mentioned in the message template
+1. Promotional are for non-customers.
+2. Service-explicit, Service-inferred/service implicit, transactional for customers.
+3. There is no limit on number of variables inside a template.
+4. A Maximum of 30 characters can be passed as a variable.
+5. Brand name should be mentioned in the message template.
 
 ### 2.6 Run campaigns
 
@@ -168,7 +166,7 @@ Two types of notifications can be achieved with yellow.ai platform.
 1. Blast campaigns to a large audience using the Campaigns manager
 2. 1-o-1 transactional updates to the customers
 
-**For bulk outbound:**
+**For bulk outbound campaign:**
 
 **If the bot is on the app platform**, use the Engagement module to send blast campaigns. For transactional updates, it should be handled by the bot developer at the bot level.
 
@@ -178,13 +176,11 @@ Sending blast campaign from the engagement platform:
 2. Create a segment based on the desired ‘tags
 3. [Schedule campaign](/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign)
 
-**If the bot is on the cloud platform**,
+**If the bot is on the cloud platform**, to run blast campaigns:
 
-To run a last campaigns:
-
-1. **Go to Engagement → Templates → Select SMS → Create the same template** that you created and got approved in the DLT portal. Please add the details exactly as added in the DLT portal. Make sure the message content is JUST THE SAME without any changes in the linespace, case (upper/lower case) and such
+1. Go to **Engage** > **Templates** > Select **SMS** > Create the same template that you created and got approved in the DLT portal. Ensure you add the exact details as added in the DLT portal - without any changes in the linespace, case (upper/lower case) and 
 2. Add the [audience CSV](https://docs.google.com/document/d/1RCPeDiS4Hv_n0thHRpICK0kQ1RjUpzET365cEEnxpQM/edit)
-3. Go to Campaigns → Select the template you created as per previous step → Choose the audience segment → Schedule campaign
+3. Schedule the campaign as explained in [](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md).
 
 **for transactional 1-o-1 updates 👇**
 

@@ -18,7 +18,7 @@ You can completely customize the template according to your business requirement
 
 The EdTech template covers the most common use cases targeted for students as explained in the following flow diagram:
 
-![](https://lh6.googleusercontent.com/V33lXuF6R8l6LxEK5rR8UF55w3sRejtWKtaQyldFH3NIT5ffMaHxif-QmNsCiXMcMPTRJiAahgmFZwzOXes7gvvkunKLyoKY_y6BveUWfYCohMVB1vt3bi2pQ9fXnTfSkW2RBrWzPqX5o1Or9fLfni1WYQ-p2x6TWaBDBNxFMpDkG_-WbrbojuBOfjVkixKT)
+![](https://i.imgur.com/7QgJTDP.png)
 
   
 
@@ -28,16 +28,16 @@ You can show the list of courses that you offer and when the user selects a spec
 
   
 
-![](https://lh5.googleusercontent.com/tZm2m6dxTRof8__i8-OfugxyqKet0Aq1PpJvtjH46Nx99pUhrEG2wB_OIRkfCn1q0dJ9T9otOJuYvf0fBiumQ4gapIw3oAe4uBIlfwasJXh9vNUoFqu6Xicn5JKkctB9aOpY-yULfhy_URJSocdGcL0oxEPh2VodpB-6grfQmriZxBxvD4NOTmPyzmnrEQqQ)
+   ![](https://i.imgur.com/9DN8Ou0.png)
 
   
 
 Let’s see the **Discover courses** flow in detail:
 
-1.  Triggers the intent *List all courses*.
+1.  Starts the flow when the user selects *Discover courses* (intent *List all courses*).
     
 
-![](https://lh4.googleusercontent.com/WFYhsp4_-ZO0ODEqHB1Jpvr4PVwf8VoyJDXP15oJpsbx6CmASajcaZ4erm8KngowaQjK6RYvhnqKLBzBYjordvs8p5uLi2HbTdlHtKpZ7-UYdzv0a6I3qEGUBf23KnFeVEKhYgKXW75FeRIVuwqBWRS16PMRL_9NJnCnUQOXtAwCpZqDASUB5h6JgpQffiN0)
+   ![](https://i.imgur.com/sGirfSB.png)
 
 2.  **Displays courses offered**: Shows the list of courses offered using the **Carousel node** and stores the user response in the variable `subjectname`.
     
@@ -57,7 +57,7 @@ History, Maths and Science main menus follow the same structure.
 4.  **Shows the carousel image with relevant options**: *Overview*, *Fee structure*, and *Apply now* options using the **Carousel** node and triggers a specific flow based on the user input.
     
 
-![](https://lh5.googleusercontent.com/eb3gJFFBSrEqMTZJbQ-Izg2LaUFQDzka6_vMR7qG5qB2xsG1UUZcSDLiTpY_rR5iaz_tqePjQVOTdnGyOc26ErR_1XjzbMFKTf07Er5PydhDudm2jZ-rAXvrpWTxeH1bUuJ-dZKIpWRHygWocGFexQTFf6iGu7a_1jb8KPHFXjAFSshuYztsIv4grcvlVcKu)
+   ![](https://i.imgur.com/Qdc9CKL.png)
 
 > * Here, you can modify the condition and define your own custom flows.
     
@@ -65,7 +65,7 @@ History, Maths and Science main menus follow the same structure.
 5.  **Maths overview flow**: Uses Image and Text nodes to display course overview and shows *Reviews*, *Fee structure*, and *Apply now* options (**Carousel**).
     
 
-![](https://lh4.googleusercontent.com/nU89cKg8vyO7I42gMw3hzI_rtNnbgHHM7on85yDzq3SKrgY9e27o1sqFztWd6osNY14PN0X5HIsrPuf2sYHMlmSEBsS2zABpBILkgFiM0LTUsi4lCskP8ZLqhwJScJwcI1sLLF2e2HHnRf9aKCt8AEcPFgfrqv2LViHe-q2ZdAXpiEVjUTUK0DE_6NilCiVr)
+   ![](https://i.imgur.com/gmOz8du.png)
 
 1.  Validates the user input (**Condition**) and triggers the relevant flow.
     
@@ -94,7 +94,7 @@ Let’s see the **Course material** flow in detail:
 2.  **Captures user identifier**: Shows a text message followed by the **Phone Prompt **node and stores it in the `PhoneNo` variable.
     
 
-![](https://lh5.googleusercontent.com/CR0-By6rlryZk3BE99DHYQ0ppuPWH9WqK9JosdJY1ykkYrMVRZHx_fL_cTWz-iqs2Y3O4ZbhlZe3bPwdl1bAFXQVyFbMU4jniA3kmJ2H7P8h-BxkaOVOKedwtOh3lGpDbXRuxZ6vmgvIiqSnhi15_wdPzAD583AnGW4u06dxTzval5F0XEnxXw92QbpADnxm)
+   ![](https://i.imgur.com/oyp3CUl.png)
 
 > * You can use email or other prompt nodes to identify the user.
     
@@ -152,7 +152,8 @@ You can allow your users to connect to an education counselor to address their q
 Let’s see the **Connect to a counselor** flow in detail:
 
 1.  Triggers the Connect with support agent intent and shows two options - Chat with support and FAQs.  
-    ![](https://lh5.googleusercontent.com/SCCTi6WJ-0oL0NGCAPWJ7FFbRzrBK-hFzC-f0AaqaaA6cXzk2WxMKqwQtn9IJQ6vyC4pIKroTOlh7b7kULq2G2Me0fPqKJlYL8DxMeV13UGavPu5-qeYKMuPL3IwGCU_quJjb23OVz684NQiVfNULm8QgiAND_GmlS7NWIs70aOqAM3dMPDk2KH8tpxcWljJ)
+
+   ![](https://i.imgur.com/kfPe4Lz.png)
     
 2.  Here is how the Chat with support flow works:
     
@@ -172,7 +173,7 @@ Let’s see the **Connect to a counselor** flow in detail:
 3.  **FAQs flow**: It fetches answers quickly from the list of FAQs added through the [FAQs module](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs).
     
 
-![](https://lh3.googleusercontent.com/tlIuytD4CaUBNy2QCONyor4QeBgeeyc1r5GeAkCeafxRgqbuMAxz2LeA7RU6GOSp0G-HnaHzT08mQZklbHoWDLUD4k4YgqInOA6avgir26oPBn5XV5NrUhgSYJb9c3GYiKMgyX8TsuFzvy_87FGV302CUiQkeULMwDeSqsCzPHD1PWKFWh1xx-Iv5oYChSs)
+   ![](https://i.imgur.com/w718G8Y.png)
 
    a.  Shows a list of frequently asked questions the user can select (**Quick replies node**).
     
@@ -190,7 +191,7 @@ You can allow the user to select the course that he is interested in, and show q
 
 Let’s see the **Take a quiz** flow in detail:
 
-![](https://lh5.googleusercontent.com/fqIMW1qH_HerDw0o8opZ4Xvb0xeLriMVAwVYx84iMeAJ9SXOGl7fCYTydhuqo6r9euHTtiocXTAwpGlsWjmyFDvX461wDHXaGuR-gCquCJSfR3o373WvHp7VUDJ2O-t1oeiF4kUMs_cHpMKkSPtQ-Y1Px7-5zdtiQrATOPlfpere0kXZ-toW8U8h23NTRhFH)
+![](https://i.imgur.com/5pSnBWy.png)
 
 1.  Starts with Take a quiz intent.
 2.  **Shows the list of courses**: Shows a text message followed by the list of courses to select from (Quick replies node).
@@ -208,7 +209,7 @@ Here are some EdTech specific templates:
 
 -   **OTP verification for qualifying leads**: You can validate your registered user details through OTP based authentication using the Send OTP and Verify OTP action nodes.
 
-![](https://lh3.googleusercontent.com/KqsweVLDKD2zxTNL_IBpkcdVK1DO-NC63LEmlMFv_Bktj-c88NdfYReLykcYT-ablLUg9bgiglcgo9ApzhpqFb8GD8paT8PJKxUzWUzR0nwu0t_SzLBfSQwrO1QpHe4LoRQBwJeq4JB7MnERFR27ir0ZthMaBr8t7noYuP4b7MCRecT0ztRzjsDNKQLPtAc8)
+   ![](https://i.imgur.com/lEyZPjC.png)
 
 -   **Send campaigns to promote new courses**: Use the bot as a good lead generation tool. You can send course information, promote new courses, or offer discounts on existing courses to your leads through [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) or [Workflow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/workflowCampaign).
     
@@ -222,5 +223,4 @@ Here are some EdTech specific templates:
     
 -   **Take elaborate career quizzes**: You can increase the number of questions and complexity in a quiz. You can do assessment post completing the courses.
     
-
 * **Use APIs to send or receive data**: You can also use [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to send or receive data according to your preference from third-party systems. With the API feature, you need not sync or import the entire data to yellow.ai platform.

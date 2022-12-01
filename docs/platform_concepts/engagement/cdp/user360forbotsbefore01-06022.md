@@ -41,7 +41,7 @@ Bots that have records in the old Users Module will see a data migration window.
 
 :::note
  Data migration is a one time activity. Double check your property mappings.
-::
+:::
 
 ![](https://i.imgur.com/8uVMauk.png)
 
@@ -72,7 +72,7 @@ The following mappings are not recommended as it might throw data incompatibilit
 | **Email** | Number, Phone, Url, Date, DateTime |
 
  
- :::note
+:::note
 At least one property mapping is required move to the next step. 
 :::
 
