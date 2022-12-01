@@ -104,7 +104,7 @@ Clients using webhook-based live chat integrations will receive the agent reply 
 With this integration, you can now generate Cashfree tokens that can be passed on to WhatsApp pay to process payments. Post transactions you can also receive notifications on payment statuses.  
 
 
-***
+----
 
 ## 4. **Marketplace**
 
