@@ -245,8 +245,8 @@ module.exports = {
               collapsed: true,
               items: [          
             "platform_concepts/studio/build/understandingflows/journeys",
-           // "platform_concepts/studio/build/understandingflows/configureflow",
-           // "platform_concepts/studio/build/understandingflows/exportflow",
+            "platform_concepts/studio/build/understandingflows/configureflow",
+            "platform_concepts/studio/build/understandingflows/exportflow",
 
           ],
         },

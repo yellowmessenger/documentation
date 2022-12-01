@@ -9,9 +9,11 @@ This article briefs you on understanding various components of Studio and helps 
 
 
  In this article, you will learn:
- 1. [Where to find Studio on the yellow platform](#as)
- 2. [What are the UI elements available on Studio](#ui)
- 3. [How to build a bot](#sb)
+ 1. [Where to find Studio on the yellow platform](#1-access-studio)
+ 2. [What are the UI elements available on Studio](#2-understand-studio-elements)
+ 3. [Conversation settings](#3-conversation-settings)
+ 4. [How to build a bot](#4-steps-to-build-a-bot)
+ 5. [Keyboard shortcuts](#5-keyboard-shortcuts)
 
 
 :::note
@@ -64,9 +66,95 @@ Option | Description
 
 ---
 
-  
+## <a name="home"></a> 3. Conversation settings 
 
-## <a name="sb"></a> 3. Steps to build a bot
+This is a general (**Home**) flow that the bot follows irrespective of the training given to it. 
+- There is always a [welcome message configured](https://docs.yellow.ai/docs/platform_concepts/getting-started/#21-configure-the-welcome-message) and displayed to the user.
+- The bot responds to the queries it **understands** and **do not understand**.
+
+Such a flow is configured on the Home -flow. It is further customized as per the use case.
+
+![](https://i.imgur.com/Va9Vw6F.png)
+
+
+> This flow is a basic architecture of the bot. 
+
+
+In-depth about each of the nodes involved in this flow: 
+1. **Welcome message**: This is the first message sent by the bot. 
+You can click **Click here to add responses** and select the type of message that you wish to display to the user.
+
+![](https://i.imgur.com/8BgBZ03.png)
+
+:::info
+Text can be entered in **Bot says** field. 
+**Images**, **Carousel**, **Videos**, **Files** and **Quick replies** can also be added. 
+When **Execute Flow** is selected, the start of the flow will be directed to the selected flow. 
+
+![](https://i.imgur.com/6z77Gkt.jpg)
+
+:::
+
+
+
+2. **Callout**: These banners on top of the chat can be used to promote a brand and/or to get visitors from the host website to go to the advertiser's website.
+
+![](https://i.imgur.com/f4LbObf.png)
+
+
+:::info
+You can add 4 callouts with 2 buttons each. 
+Buttons can be further customised by clicking **Advanced Settings**.
+
+![](https://i.imgur.com/BIyVT7R.jpg)
+
+:::
+
+
+
+
+> User responds to the bot question (that is mentioned along with the welcome message).
+
+
+
+When bot understands a user response, it will try and fetch answers from: 
+
+3. **Flows**: These are all the [flows (/categories)](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#31-create-a-flow) which will get triggered based on the user response. 
+
+4. **FAQs**: Bot check for replies in [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs). 
+
+![](https://i.imgur.com/8w80z8Q.png)
+
+
+When the bot does not understand a user response, it will display the text mentioned in either of the below options:
+
+5. **Suggestion**: Enable suggestions to display suggestions to this user. This can be used when you want to redirect a user in some way when the requested answer is not found. 
+
+![](https://i.imgur.com/oMiE3Y6.jpg)
+
+For example: 
+
+> User: I want a triple berry sparkler. 
+> Bot: I am sorry, would you like to look at our menu? 
+
+
+6. **Document Search**: The bot responds to the user based on the data from the [uploaded document](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition). 
+7. **Fallback**: Fallback occurs when the solution for what the user has asked was not found anywhere.
+
+:::info
+Text can be entered in **Bot says** field. 
+**Images**, **Carousel**, **Videos**, **Files** and **Quick replies** can also be added. 
+When **Execute Flow** is selected, the flow will be directed to the selected flow. 
+:::
+
+![](https://i.imgur.com/mFNMSbl.png)
+
+
+
+
+----  
+
+## <a name="sb"></a> 4. Steps to build a bot
 
 A bot consists of one or more conversation flows. A flow is a set of events carried out in sequential order according to the conditions set.
 
@@ -139,7 +227,7 @@ Create all the flows required for your use case and ensure these flows are prope
     
 ---
 
-## 4. Keyboard shortcuts
+## 5. Keyboard shortcuts
 
 We have introduced shortcut keys to make it easy for you to access key options and increase the productivity of repetetive tasks.
 

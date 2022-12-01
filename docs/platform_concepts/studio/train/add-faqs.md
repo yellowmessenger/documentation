@@ -139,7 +139,7 @@ To add FAQs for multi-lingual bots, follow the given steps:
 4. Your bot's language settings have been successfully updated. You can [add FAQs](#1-add-faqs-add-faqs) in different languages 
 
 **Enable autodetect:**
-- To automatically identify the language of your bot, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#221-behaviour) to know the steps.
+- To automatically identify the language of your bot enable autodetect under **Tool** section, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#221-behaviour) to know the steps.
 :::
 
 1. **Add FAQs manually**
