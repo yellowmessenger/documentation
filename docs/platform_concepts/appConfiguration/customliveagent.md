@@ -3,20 +3,21 @@ title: Custom Live Agent API Specification
 sidebar_label : Custom Live Agent
 ---
 
+# Custom Live Agent API Specification
 
-This document elaborates the integration approach for a custom live agent to integrate with Yellow. The major use cases covered in this document are:
+This document elaborates on the integration approach for a custom live agent to integrate with Yellow. The following are the major use cases covered in this document: 
 1. End Customer wants to talk to an agent
 2. End Customer sends Text/Image/Video/PDF ( or other media) to the Agent
-3. The interaction details updated to End Customer through the ticket ID & details
+3. The interaction details updated to end customer through ticket ID & details
 4. Additional information about Agent Availability ( Queue Status, Typing status etc)
 5. Agent connection established
-6. Two Way communication between the end customer and agent
+6. Two-way communication between the end customer and agent
 7. Closure of the ticket
 
-## 1. Design Principles
+## 1. Design principles
 
-1. The Integration approach is defined to be channel agnostic, the 3rd party system should consider Yellow as the channel and Yellow will ensure that end customer is able to connect to Agent from any channel ( Web, WhatsApp etc.) 
-2. Details of the end customer’s channel will be presented to the 3rd party system for proper reconciliation. 
+1. The integration approach is defined to be channel agnostic, the 3rd party system should consider Yellow as the channel and Yellow will ensure that the end customer connects with an agent from any channel ( Web, WhatsApp etc.) 
+2. Details of the end customer’s channel will be transferred to the 3rd party system for proper reconciliation. 
 3. The receiving system should be able to define custom parameters for their consumption and as needed for the business use case. 
 
 ### 1.1 Workflow Diagram
@@ -29,58 +30,51 @@ This document elaborates the integration approach for a custom live agent to int
 
 ### 2.1 Initiate Conversations 
 
-For an end customer, in the bot experience the following actions take place for connecting to a live agent:
+An end customer who uses the bot, will encounter the following action while connecting with a live agent
 
-1. Bot gives an option to connect to a Live Agent
-2. Bot goes into a paused state once the agent is connect
-3. Once the bot is in paused state , the 2-way communication between the agent and end -customer takes place. 
+1. Bot gives an option to connect to a Live Agent.
+2. Bot goes into a paused state once the agent gets connected.
+3. When the bot is in paused state, the 2-way communication between the agent and end customer takes place. 
 4. Once the agent ends the conversation, the bot takes over. 
 
-The following is the expectation of business use cases to be supported by the 3rd Party Tool for enabling this conversation:
+The following are the business use cases that should be supported by the third-party tool to enable this conversation:
 
-
-
-| Use case | Remark | Required |
-| -------- | -------- | -------- |
-| Send Message {text + media}       | Chat history will be present in the first message as link      | yes     |
-|Send typing event||no|
-|Create Ticket |Response should contain ticketID: Scenarios ( Ticket Lifecycle) 1. Request is in queue > 2. Ticket is created & OPEN > 3. Ticket is created & ASSIGNED |yes|
-|User details {Channel ID, Sender ID, Unique ID}||yes|
-|Transfer to a particular group|Department wise, as per business need|no|
-|Ability to pass custom parameter||yes|
-|Is User Active ||no|
-|Custom Parameters|Ability to pass custom parameters as per business need|yes|
-
-
-
-
+| # | Use-case | Required |Remarks|
+| -------- | -------- | -------- |----|
+| 1     | Send Message {text + media}       |   Yes   |Chat history will be present in the first message as a link  |
+|2|Send typing event|No|
+|3|Create Ticket |Yes|Response should contain ticketIDScenarios ( Ticket Lifecycle)  <br/>1. Request is in queue <br/>2. Ticket is created & OPEN <br/>3. Ticket is created & ASSIGNED<br/> |
+|4|User details {Channel ID, Sender ID, Unique ID}|Yes|
+|5|Transfer to a particular group|No|Department wise, as per business need|
+|6| Ability to pass custom parameter|Yes|
+|7|Is User Active| No|
+|8|Custom Parameters|Yes|Ability to pass custom parameters as per business need|
 
 
 ### 2.2 Enable conversation
 
-The below use cases depict the use cases & details required during a 2-way communication between the 3rd party system & Yellow.
+The following are the use cases & details required for a two-way communication between a third party system & Yellow.
 
 :::note
-For this, Yellow’s webhook must be configured at 3rd party systems end.
+For this, Yellow’s webhook must be configured at third party systems end.
 :::
 
-| Use case | Remark | Required |
-| -------- | -------- | -------- |
-|Event name/code specification||yes|
-|Agent message {text + media}||yes|
-|Agent assigned{along with agent details}|Agent details should be received; like agent name, department|yes|
-|Queue Positioning||no|
-|Closed ticket|Closed ticket event|yes|
-|Updation of any ticket detail (e.g. transferred to another agent)||no|
-|Is Agent active?||no|
-
+|S.no| Type| Required | Remarks |
+|------|----|--------|--------|
+|1|Event name/code specification|Yes|
+|2|Agent message {text + media}|Yes|
+|3|Agent assigned{along with agent details}|Yes|Agent details like agent name, department should be received
+|4|Queue Positioning|No|
+|5|Closed ticket|Yes|Closed ticket event|
+|6|Updation of any ticket detail (e.g. transferred to another agent)|No|
+|7|Is Agent active?|No|
 
 ---
 
 
 ## 3. API Specification
 
-The header that will be common across all the APIs which the third party needs to create is an auth token:-
+The header that will be common across all the APIs which the third party needs to create is an auth token:
 
 ```
 Authorization: {{token}}
@@ -89,7 +83,7 @@ Content-type: application/json
 
 ### 3.1 Create Ticket 
 
-|URL|https://{{domainName}}/createTicket/{{companyName}}|
+|URL|{{domainName}}/createTicket/{{companyName}}|
 |---|---|
 |METHOD|POST|
 
@@ -99,25 +93,23 @@ Content-type: application/json
 |Name|Data type|Description|Mandatory|
 |---|---|---|---|
 |senderId|string|Unique identifier of the user generated by Yellow.AI|Y|
-|messageId|string|Unique identifier of every message sent|Y|
+|messageId|string|Unique identifier of every sent message|Y|
 |source|string|Channel from where the message can be sent|Y|
 |conversationId|string|Unique identifier of this conversation|Y|
 |userName|string|Name of the user/customer|Y|
-|userMobile|string|Mobile number of the user. Accepts 10 digit mobile number|Y|
+|userMobile|string|Mobile number of the user, accepts 10 digit mobile number|Y|
 |userEmail|string|Email Id of the user|Y|
-|conversationHistory|string|The URL of the conversation prior to connecting to agent|Y|
-|ticketPriority|string|Priority of the ticket. Possible values low/medium/high|Y|
+|conversationHistory|string|The URL of the conversation prior to connecting to the agent|Y|
+|ticketPriority|string|Priority of the ticket, possible values low/medium/high|Y|
 |ticketCategory|string|Category to which a ticket may belong|N|
-|ticketGroupId|string|If we want the ticket to get assigned to a particular group of agents, then we need to add this|N|
-|customFields|object|If any custom key value pairs need to be passed, we need to use this. The data type of the values can be either string/number/boolean/object|N|
-
-
-
+|ticketGroupId|string|If we want the ticket to get assigned to a particular group of agents, we need to add this|N|
+|customFields|object| Use this if any custom key value pairs need to be passed. The data type of the values can be string/number/boolean/object|N|
+|conversationHistoryJSON| array| The JSON of the conversation prior to connecting to the agent| N| 
 
 #### CURL
 
 ```
-curl --location --request POST 'https://{{domainName}}/createTicket/{{companyName}}' \
+curl --location --request POST '{{domainName}}createTicket/{{companyName}}' \
 --header 'Authorization: Bearer {{token}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
@@ -140,7 +132,9 @@ curl --location --request POST 'https://{{domainName}}/createTicket/{{companyNam
         }
 }'
 
+
 ```
+Click [here](http://localtest.locobuzz.com/Webhook/RoyalEnfieldChatbot) for {{domainName}}createTicket
 
 #### Response
 
@@ -152,11 +146,14 @@ message: <Description of Error/ Success Message>
 } 
  
 ```
+:::note
+If queuing is enabled, the createTicket API should respond isAgentAvailable flag as false and isQueued flag as true.
+:::
 
 
 ### 3.2 Send Message to Agent
 
-|URL|https://{{domainName}}/sendMessage/{{companyName}}|
+|URL|{{domainName}}sendMessage/{{companyName}}|
 |---|---|
 |METHOD|POST|
 
@@ -165,25 +162,28 @@ message: <Description of Error/ Success Message>
 |Name|Data type|Description|Mandatory|
 |---|---|---|---|
 |senderId|string|Unique identifier of the user generated by Yellow.ai|Y|
+|userName|string|Name of the user|Y|
+|userEmail|string|Email Id of the user|N|
 |message|string|Message sent by the user|Y|
-|messageId|string|Unique identifier of every message sent|Y|
+|messageId|string|Unique identifier of every sent message|Y|
 |ticketId|string|Generated ticketId from API 1|Y|
-|source|string|Channel from where the message can be sent|Y|
+|source|string|Channel in which the message can be sent|Y|
 |conversationId|string|Unique identifier of this conversation|Y|
-|messageType|string|Type of the message sent. The value will be text|Y|
-
+|messageType|string|Type of the message sent,the value will be **text**|Y|
 
 
 #### CURL
 
 ```
-curl --location --request POST 'https://{{domainName}}/sendMessage/{{companyName}}' \
+curl --location --request POST '{{domainName}}sendMessage/{{companyName}}' \
 --header 'Authorization: Bearer {{token}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "body": {
         “user”:{
-         “senderId”: “11111”
+         “senderId”: “11111”,
+         “userName”: “Mahesh”,
+        “userEmail”: “test@gmail.com”
          }
         "ticket": {
            “messageType”: “text”,
@@ -197,22 +197,24 @@ curl --location --request POST 'https://{{domainName}}/sendMessage/{{companyName
 }'
 
 ```
+
+Refer [here](http://localtest.locobuzz.com/Webhook/RoyalEnfieldChatbot) for {{domainName}}sendMessage/
+
 #### Response
 
-
-```
+``` 
 {
 “status”: “success/failure”
 “data”: {ticketId: 25633}
 “message”: “<Description of Error/ Success Message>”
 }
+ 
 
 ```
 
-
 ### 3.3 Send User Media to Agent
 
-|URL|https://{{domainName}}/sendMedia/{{companyName}}|
+|URL|{{domainName}}sendMedia/{{companyName}}|
 |---|---|
 |METHOD|POST|
 
@@ -222,27 +224,27 @@ curl --location --request POST 'https://{{domainName}}/sendMessage/{{companyName
 |Name|Data type|Description|Mandatory|
 |---|---|---|---|
 |senderId|string|Unique identifier of the user generated by Yellow.AI|Y|
-|mediaJson|object|Has two properties. The first property is “type”, and its possible values are image/video/file, the second property is “url”, which will have the url of the media|Y|
-|messageId|string|Unique identifier of every message sent|Y|
+|userName|string|Name of the user| Y|
+|userEmail|string|Email Id of the user| N|
+|mediaJson|object|Has two properties. The first property is “type”, and its possible values are image/video/file. The second property is “url” which will have the url of the media|Y|
+|messageId|string|Unique identifier of every sent message|Y|
 |ticketId|number|Generated ticketId from API 1|Y|
-|source|string|Channel from where the message can be sent|Y|
+|source|string|Channel in which the message is sent|Y|
 |conversationId|string|Unique identifier of this conversation|Y|
-|messageType|string|Type of the message sent. The value will be media|Y|
-
-
-
-
+|messageType|string|Type of the message sent, the value will be media|Y|
 
 #### CURL
 
 ```
-curl --location --request POST 'https://{{domainName}}/sendMedia/{{companyName}}' \
+curl --location --request POST '{{domainName}}sendMedia/{{companyName}}' \
 --header 'Authorization: Bearer {{token}}' \
 --header 'Content-Type: application/json' \
 --data-raw '{
     "body": {
         “user”:{
-         “senderId”: “11111”
+         “senderId”: “11111”,
+         “userName”: “Mahesh”,
+        “userEmail”: “test@gmail.com”
          }
         "ticket": {
            “messageType”: “media”,
@@ -255,8 +257,9 @@ curl --location --request POST 'https://{{domainName}}/sendMedia/{{companyName}}
         }
 }'
 
-
 ```
+
+Click [here](http://localtest.locobuzz.com/Webhook/RoyalEnfieldChatbot) for {{domainName}}sendMedia/.
 
 #### Response
 
@@ -271,17 +274,29 @@ curl --location --request POST 'https://{{domainName}}/sendMedia/{{companyName}}
 
 ## 4. Webhook
 
-| URL  | https://{{domainName}}/sendMedia/{{companyName}} |
+| URL  | https://cloud.yellow.ai/integrations/genericIntegration/custom-live-agent  |
 | ---- | -------- |
 | Method | POST     |
 |x-auth-token|Will be provided by yellow|
 |Response Code|200|
 
+:::note
+ You need to append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can also refer the following list for the same.
 
-### 4.1 Text Message Sent by Agent 
+* r1 = MEA
+* r2 = Jakarta
+* r4= USA
+* r5 = Europe
+* r3 = Singapore
+
+
+For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to India, you can use origin domain itself.
+:::
+
+### 4.1 Text message sent by the agent 
 
 **Event**
-- Text message sent by agent
+- Text message sent by the agent
 
 **Payload**
 ```
@@ -300,6 +315,7 @@ curl --location --request POST 'https://{{domainName}}/sendMedia/{{companyName}}
 "agentId": "locobuzzagentId",
 "ticketAssignedTime": 3545454
 }
+
 
 ```
 **Response**
@@ -324,6 +340,7 @@ data: {"ticketId": 354545,
 },
 message: <Description of Error/ Success Message>
 }
+
 
 ```
 
@@ -351,7 +368,6 @@ message: <Description of Error/ Success Message>
 "ticketAssignedTime": 3545454
 }
 
-
 ```
 
 **Response**
@@ -376,14 +392,12 @@ data: {"ticketId": 354545,
 message: <Description of Error/ Success Message>
 }
 
-
 ```
 
-
-### 4.3 Ticket Assignment to Agent 
+### 4.3 Ticket assignment to the agent 
 
 **Event**
-- Ticket Assignment to Agent 
+- Ticket assignment to the agent 
 
 
 **Payload**
@@ -397,6 +411,7 @@ message: <Description of Error/ Success Message>
 "agentId": "locobuzzagentId",
 "ticketAssignedTime": 3545454
 }
+
 
 ```
 **Response**
@@ -454,8 +469,8 @@ data: {
 message: <Description of Error/ Success Message>
 }
 
-```
 
+```
 
 ### 4.5 Agent Logout during the conversation (After Working hours) 
 
@@ -475,6 +490,7 @@ message: <Description of Error/ Success Message>
 "ticketAssignedTime": 3545454
 }
 
+
 ```
 **Response**
 ```
@@ -493,10 +509,10 @@ message: <Description of Error/ Success Message>
 ```
 
 
-### 4.6. Agent Logged In but not active in Conversation 
+### 4.6. Agent Logged In but not active in the conversation 
 
 **Event**
-- Agent Logged In but not active in Conversation 
+- Agent Logged In but not active in the conversation 
 
 
 **Payload**
@@ -531,6 +547,7 @@ data: {"ticketId": 354545,
 "inactivityReason": "Network issue"}
 message: <Description of Error/ Success Message>
 }
+
 
 ```
 

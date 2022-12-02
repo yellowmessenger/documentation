@@ -85,8 +85,6 @@ To request for publishing the bot from an approver -
 
 
 
-
-
 ### 2.2 Approve request & publish bot
 
 When someone raises a publish request, the super admin and approvers will receive an email with subject line *Approval needed to publish Assistant : <YOUR_BOT_NAME>*
@@ -119,5 +117,28 @@ When someone raises a publish request, the super admin and approvers will receiv
 
 When the bot is published successfully, the admins and approvers of the bot receive an email with the subject line *Assistant : <BOT_NAME> has been approved* with the name of the user who published it.
 ![](https://i.imgur.com/tcdvurC.png)
+
+## 2.3 Publish selected flows
+
+You can choose to publish only certain set of flows in your bot. To do so, 
+
+1. Click **Publish changes** button on the top and select **Publish selected flows**.
+
+![](https://i.imgur.com/feRhJWR.png)
+
+2. Choose the flows to be published, select the approvers and post a comment on what the publish does. Click **Publish** to publish the bot.
+
+![](https://i.imgur.com/9wX1vRD.png)
+
+Published bots can be reverted as well. To do so, 
+
+1. Click **Revert** on the top.
+
+![](https://i.imgur.com/q37ebzW.png)
+
+2. Click **Revert** in the following dialog box.
+
+![](https://i.imgur.com/SjXcuvZ.png)
+
 
 
