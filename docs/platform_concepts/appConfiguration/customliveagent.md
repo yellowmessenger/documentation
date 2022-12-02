@@ -280,7 +280,7 @@ Click [here](http://localtest.locobuzz.com/Webhook/RoyalEnfieldChatbot) for {{do
 |x-auth-token|Will be provided by yellow|
 |Response Code|200|
 
-:note
+:::note
  You need to append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can also refer the following list for the same.
 
 * r1 = MEA
