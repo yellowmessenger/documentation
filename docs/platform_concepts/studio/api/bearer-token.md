@@ -55,7 +55,7 @@ If the API node goes to fallback,  you can add a text message node and trigger a
   
 
 > In the example
-> * Create or open a journey where you want to use Salesforce Search API, say `salesforceSearchLead` journey. Here, what we want is to first trigger is the `salesforceauth` API and store the bearer token in the `auth_token` variable which will be used here.
+> * Create or open a flow where you want to use Salesforce Search API, say `salesforceSearchLead` journey. Here, what we want is to first trigger is the `salesforceauth` API and store the bearer token in the `auth_token` variable which will be used here.
 > * Hence, in this flow,  add a [Trigger journey node](../build/nodes/action-nodes#trigger-journey) and trigger `salesforceauth` flow. Once the `salesforceauth` flow is executed, the current `salesforceSearchLead` will be executed. Now, in the API action node, select the `get_lead` API and under parameters, select `auth_token` and `email` variables.
 > * Finally, store the response of this API in `sf_search_lead_response`.
 > <img src="https://i.imgur.com/ijhgh60.png" width="400"/>

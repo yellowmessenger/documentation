@@ -44,7 +44,7 @@ Scope of the Autocomplete feature -
 
 1.  **Prompt level**- This works inside a prompt (after you ask a question and wait). You can configure this for **Database Column**, **List entity**, and **User properties**.
 
-2.  **Global level** - This works outside of a Journey improving discoverability.
+2.  **Global level** - This works outside of a flow improving discoverability.
 
 > [Know more](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#auto-complete)
 

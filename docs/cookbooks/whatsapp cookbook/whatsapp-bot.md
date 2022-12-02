@@ -148,7 +148,7 @@ For some reason, if you wish to cancel the verification request, go to **Securit
 
 ## Let's experience WhatsApp
 
-Great! Once the account is successfully approved, we can start configuring the chatbot with any journey you want. For example, let's try adding few FAQs and see how it gets refelcted in the WhatsApp chatbot.
+Great! Once the account is successfully approved, we can start configuring the chatbot with any flow you want. For example, let's try adding few FAQs and see how it gets refelcted in the WhatsApp chatbot.
 
 1. Go to **Studio -> FAQs**.
 

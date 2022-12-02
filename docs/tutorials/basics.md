@@ -43,7 +43,7 @@ Boost customer experience and employees productivity with yellow.ai's NLP powere
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/aOVeDv8Z_vI" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
 
-See how yellow.ai's low code/no code platform is used for building quick & efficient conversational bots. Create journeys effortlessly with pre-built & custom nodes and improve the quality of dialouges and conversations across a range of activities & workflows.
+See how yellow.ai's low code/no code platform is used for building quick & efficient conversational bots. Create flows effortlessly with pre-built & custom nodes and improve the quality of dialouges and conversations across a range of activities & workflows.
 
 ### Natural Language Understanding
 

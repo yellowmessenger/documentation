@@ -12,7 +12,7 @@ In this article, you will learn how to integrate yellow with Freshchat.
 
 ## 1. Use Case
 
-In this integration, you can use the **raise ticket node** to start a conversation with Freshchat Agent. Firstly you'll have to select Freshchat from the dropdown and add the necessary parameters. Then you can trigger the journey where tickets will be assigned to Freshchat agents.
+In this integration, you can use the **raise ticket node** to start a conversation with Freshchat Agent. Firstly you'll have to select Freshchat from the dropdown and add the necessary parameters. Then you can trigger the flow where tickets will be assigned to Freshchat agents.
 
 ## 2. Configuration
 

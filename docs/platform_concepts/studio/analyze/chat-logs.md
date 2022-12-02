@@ -43,7 +43,7 @@ The following are some key features of the Yellow AI’s Conversation Logs:
     You can make use of quick labeling to easily categorize conversations and provide better context to it.
 
 * ***Filter conversations***:
-    This makes your life easy when there are too many conversations in the log. You can choose to see specific types of conversations using the various predefined filters. For example, see conversations having a specific journey,  logged on a specific date range, involving specific nodes, drop-offs. and more. To know more, see [here](https://docs.google.com/document/d/1_ThTAqcZo62EayDfH4vV90zZwXZJ0fId/edit#heading=h.hsg2jg34bnxe).
+    This makes your life easy when there are too many conversations in the log. You can choose to see specific types of conversations using the various predefined filters. For example, see conversations having a specific flow,  logged on a specific date range, involving specific nodes, drop-offs. and more. To know more, see [here](https://docs.google.com/document/d/1_ThTAqcZo62EayDfH4vV90zZwXZJ0fId/edit#heading=h.hsg2jg34bnxe).
 
 
 
@@ -72,7 +72,7 @@ To filter the conversations:
 | Labels | View conversations having specific labels. |
 | Journeys | View conversations that have a specific journey. You can also filter by specific steps and drop-offs. |
 | Nodes | Filter conversations containing specific nodes. For example, you can view all conversations that have a phone number. Select multiple nodes if required. |
-| Drop-off | View all dropped (incomplete) conversations across all journeys. Select All and apply the filter. |
+| Drop-off | View all dropped (incomplete) conversations across all flows. Select All and apply the filter. |
 
 
 ## 3. Label conversations

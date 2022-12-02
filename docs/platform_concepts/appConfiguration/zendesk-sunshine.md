@@ -14,7 +14,7 @@ Following are the use-cases which are currently accommodated in the Integration:
 
 #### 1. Conversation with the Bot
 
-Automated replies from the pre-created journeys to the users endpoint channels listed Under sunshine
+Automated replies from the pre-created flows to the users endpoint channels listed Under sunshine
 
 #### 2. Interaction with the live agent 
 

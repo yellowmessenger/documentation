@@ -119,7 +119,7 @@ Buttons can be further customised by clicking **Advanced Settings**.
 
 When bot understands a user response, it will try and fetch answers from: 
 
-3. **Flows**: These are all the [flows (/categories)](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#31-create-a-flow) which will get triggered based on the user response. 
+3. **Flows**: These are all the [flows (/categories)](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) which will get triggered based on the user response. 
 
 4. **FAQs**: Bot check for replies in [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs). 
 
@@ -186,7 +186,7 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
 
 | Functionality                                                                                                                                                    | Description                                                                                                                                                                                                                                                                          |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [Add a Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/)                                                                              | A conversational flow is a set of events that are carried out in sequential order according to the conditions set. Create multiple flows and [trigger each flow](https://docs.yellow.ai/docs/platform_concepts/getting-started/#26-trigger-a-flow) logically as per the requirement. |
+| [Add a Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)                                                                              | A conversational flow is a set of events that are carried out in sequential order according to the conditions set. Create multiple flows and [trigger each flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) logically as per the requirement. |
 | Organise your conversational logic                                                                                                                              | Each node is a point of flow. Use [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) to ask questions, store values, show information, perform math functions, trigger condition-based actions, and make API calls.                                     |
 | Use [Database](https://docs.yellow.ai/docs/platform_concepts/studio/database)                                                                                    | To store information (such as location, address, and user information) in the Yellow.ai Platform and retrieve the details wherever required in the flow.                                                                                                                             |
 | Use [Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition/)                                                 | To enable bot to answer user queries from the documents that you have.                                                                                                                                                                                                               |
@@ -254,4 +254,4 @@ Go to Overview page | g + o| Global
 
 **What Next?**
 
-Understand the different types of flows and create a  bot flow for your use case, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) to learn more. 
+Understand the different types of flows and create a  bot flow for your use case, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to learn more. 

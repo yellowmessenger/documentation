@@ -39,7 +39,7 @@ Below, you will find the default dataset options and their functions:
 | User Feedbacks | Provides info about user experience from the feedback they give on the bot. Slice and dice it based on use cases they visit the bot for. See how individual use cases are performing. |
 | Messages | Data about the user traffic metrics here, messages exchanged, sessions created, user demographies, devices they are using, etc on a channel level. |
 | Notification Reports | Deep dive into how the campaigns are performing, which channel is doing well, how are different templates performing, how many notifications are failing etc. |
-| User Events | Check how your users are engaging with the bot, journeys they are taking, agent transfers, journey switches, unidentified utterances, etc. |
+| User Events | Check how your users are engaging with the bot, flows they are taking, agent transfers, flow switches, unidentified utterances, etc. |
 | Voice Events | Find insights around voice bots. Number of inbound / outbound calls, calls per user, region, call duration, etc. |
 
 

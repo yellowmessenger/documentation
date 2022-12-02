@@ -62,7 +62,7 @@ Even though Zero-shot model does not require manual addition of utterances, we w
 
 Creating intents for Jimmy's cafe:
 
-> *You are the owner of Jimmy's cafe and are setting up a bot for your website. Your customers would like to enjoy the simplicity of ordering a coffee through your bot. For this to happen, you want your bot to understand the different ways a customer may ask to place an order so that the [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) you built gets triggered.*
+> *You are the owner of Jimmy's cafe and are setting up a bot for your website. Your customers would like to enjoy the simplicity of ordering a coffee through your bot. For this to happen, you want your bot to understand the different ways a customer may ask to place an order so that the [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) you built gets triggered.*
 > **I want coffee** will be recognized as intent: **#ordercoffee**.
 > **I want a croissant** will be recognized as intent: **#ordersnack**.
 
@@ -76,7 +76,7 @@ To add intents and utterances, follow the given steps:
 
 ### 2.1 Create a flow 
 
-A prerequisite to training your bot with the required intents is to have a basic flow ready. Create your first [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) in the studio module of the platform. 
+A prerequisite to training your bot with the required intents is to have a basic flow ready. Create your first [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) in the studio module of the platform. 
 
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/getting-started#step-by-step-guide-on-how-to-get-started-with-yellowai) to learn more. 
 
@@ -153,7 +153,7 @@ You can increase the number of epochs for training your intent. The number of ep
 
 ### 3.2 Connect to bot
 
-After training intents you can connect it to your bot. You have to connect the flow you built to the intent '**Order**'. To do this click the [Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/#4-configure-start-trigger) and configure the intent to the node. 
+After training intents you can connect it to your bot. You have to connect the flow you built to the intent '**Order**'. To do this click the [Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) and configure the intent to the node. 
 
 Click the drop-down and select ‘**#order**’ intent.
 

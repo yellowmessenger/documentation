@@ -257,7 +257,7 @@ Yellow.ai offers a wide range of options to customize features for its web widg
 
 You can use certain tricks to customize your web widget to suit your needs. This section helps you with different ways to customize your chat widget’s look and feel,  functionality, and capture bot events.
 
-When your bot is operational, it generates various events. You can use them to capture those occurrences and trigger a journey or automation workflow.
+When your bot is operational, it generates various events. You can use them to capture those occurrences and trigger a flow or automation workflow.
 
 ### 4.1 Send event to bot
 

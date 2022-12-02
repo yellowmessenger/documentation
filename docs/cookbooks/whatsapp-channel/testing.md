@@ -85,4 +85,4 @@ Now when you ping on the whatsapp number connected to the bot from developer Wha
 
 **Note:**
 * Notifications triggered from development environment's engage section will also work for the development mode connected WhatsApp number.
-* Orchestrator bot wont trigger default journeys.
+* Orchestrator bot wont trigger default flows.
