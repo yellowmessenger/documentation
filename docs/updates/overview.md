@@ -84,7 +84,7 @@ The option to export FAQs as part of the template is now available.
 **![](https://lh6.googleusercontent.com/rGXUHjUkyXq1eAmM4qWYTRTnzAi1fEFDj5I-b35D7hWUBUXDA0_AV8GMGqSWKkfy2G2z7FQfuZhwQQ0q__0OI4-CqRTTNlfLWP3kJtbLjFt4ZnOYHIUbIK-WhRy8s9vqffPaFResM-o01pqbfGM5g3t4_GAkxbbUdBct3qmwC-cFv4W7tFw8J_eiAeT9Ng)**
 
 
-
+<!---
 ## 3. **Web widgets**
 
 #### 3.1 Store the response of the Time node in the Date & Time picker, and Time picker cards in GTM format
@@ -95,24 +95,25 @@ Previously, user selection was saved in local time which would vary across regio
 
 
 <img src="https://i.imgur.com/LQgxPFZ.png" alt="drawing" width="40%"/>
+-->
 
-## 4. **Integrations**
+## 3. **Integrations**
 
 
-#### 4.1 Live chat integrations are available on app.yellow.ai
+#### 3.1 Live chat integrations are available on app.yellow.ai
 
 The Live Chat Integrations can now be used on App bots, this allows app bots to leverage the same capabilities as cloud bots in terms of integrations supported. 
 Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/livechat-integration) to know how.
 
-#### 4.2 Multiple live agent integrations within a single bot
+#### 3.2 Multiple live agent integrations within a single bot
 
 You can now have multiple live chat services enabled. While using the [raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket), the bot developer has complete freedom to use any live chat service of choice (all the 3rd party Integrations that are enabled on yellow.ai platform will be available for live chat services).
 
-#### 4.3 Zendesk Sunshine integration available on the cloud
+#### 3.3 Zendesk Sunshine integration available on the cloud
 
 Zendesk Sunshine Integration is now supported for executor-cloud bots. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-sunshine/) to know more.
 
-#### 4.4 Custom Live agent integration v2
+#### 3.4 Custom Live agent integration v2
 
  Custom Live Agent was enhanced with the following features:
 
@@ -121,26 +122,26 @@ Zendesk Sunshine Integration is now supported for executor-cloud bots. Click [he
 3. Adding additional user information (name and email) while sending messages/media files from user to agent
 4. A new field in the Raise ticket node for providing the group ID using which the ticket can be created and assigned to a specific group of agents
 
-#### 4.5 Magento integration
+#### 3.5 Magento integration
 
 Magento Integration is now available for use through GIF.
 
 **![](https://lh6.googleusercontent.com/tYU1QP9F6AbHXkKVZtqeO7lGTUcsslQaHWuBL8AMAe7iacboqsNiQtHleMQEL6JtaQqN4AvlCuc-TwaOTNRkmVRU9fTLQazqVZ6ucKLzSmngqaaRjv7a8GrI3LVkVdiWpU-9tPm0AWu5bTauutXtdLOBGgzF1jae27MFO3TuCg_FKAEZEOqgIAIar9qB2g)**
 
-#### 4.6 Sticky Agents for Salesforce Live chat
+#### 3.6 Sticky Agents for Salesforce Live chat
 
 The sticky agent is a type of ticket assignment where the customers can connect to an agent, of their choice (agents they are familiar with/ have conversed with before). Salesforce Live chat is enabled with Sticky agents. 
 
-#### 4.7 Automated the delivery report to WebEngage
+#### 3.7 Automated the delivery report to WebEngage
 
 Previously, the delivery event was sent to the bot and the bot developer was responsible for using the action node to send the event data to WebEngage. 
 Currently, this process is automated to avoid any unintended bugs and failures by the users.
 
-#### 4.8 Support for Nested Objects for Integration Action Nodes V2
+#### 3.8 Support for Nested Objects for Integration Action Nodes V2
 
 Objects inside Objects are now supported for V2 Action Nodes. This was required for some integration(s).
 
-#### 4.9 Added code coverage
+#### 3.9 Added code coverage
 
 Moving towards better code quality and assurance, boilerplate code coverage has been written for Integrations which will be extended through more test cases.
 
