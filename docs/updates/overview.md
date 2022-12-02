@@ -15,17 +15,17 @@ Here are a list of product updates we made in the month of **November** to provi
 
 #### 1.1 Options to publish selective flows and revert to previously released bot version 
 
-Selective publish allows you to publish only selected flows from the flows you made changes to.
+- Selective publish allows you to publish only selected flows from the flows you made changes to.
 
 ![](https://i.imgur.com/yzIAgM4.png)
 
 
-Revert feature is available on “live” environment, it allows the admins to revert to any previously released version in one click.
+- Revert feature is available on “live” environment, it allows the admins to revert to any previously released version in one click.
 
 
 #### 1.2 Search bar functionality extended for Flows, FAQs, and Intents along with documentation
 
-To avoid scrolling through different sections to find the right flow/FAQ/Intent anymore. **Studio search bar** now supports Flows, FAQs, and Intent Search apart from documentation search that it already supported.
+To avoid scrolling through different sections to find the right flow/FAQ/Intent anymore. **Studio search bar** now supports Flows, FAQs, and Intent search apart from documentation search that it already supported.
 
 ![](https://i.imgur.com/1fo4e0H.png)
 
@@ -38,7 +38,7 @@ To avoid scrolling through different sections to find the right flow/FAQ/Intent 
 
 #### 2.1 Option to export a bot template
 
-Users can export a single flow or multiple flows from the bot. This option is available on the studio page. Users can select the flows to be exported as a single template, providing details such as key features, channels supported, industry, description, etc. Users can also choose to export data from databases and FAQs from the bot.  
+Users can export a single flow or multiple flows from the bot. This option is available on the Studio page. Users can select the flows to be exported as a single template, providing details such as key features, channels supported, industry, description, etc. Users can also choose to export data from databases and FAQs from the bot.  
 
 **Global- Export template**   
 
@@ -52,7 +52,7 @@ Users can export a single flow or multiple flows from the bot. This option is av
 #### 2.2 View exported templates
 Users can view the templates submitted for review Under **Profile** > **Exports**. Users can view the template status from this page.
 
-<img src="https://lh5.googleusercontent.com/1ByzfgBuCA9w2iyBa4HZkmWIMS0zg7pGyWn4qTJ9msaBrbQmmU5WYD-JdHaWAQdyij-jNPlxKJuJi3ahKALf4iD9Yed2f0yEpO4cerU3-knHLmOeL4cK3U1ktW89TXbiG2btALcfo1RXetQK_gDc7po3Hixt0tCDgie2ZinBvHJIsvjYlGcaT0i4acUc6g" alt="drawing" width="40%"/>
+<img src="https://i.imgur.com/1KoEq8Y.png" alt="drawing" width="30%"/>
 
 
 
@@ -66,13 +66,14 @@ The templates exported to the **public** marketplace would be submitted for revi
 
 **![](https://lh6.googleusercontent.com/y3dqwQN4AZPdy1ohIZAbXFKo2JGNbLCP7UPB0Ndewikd8-Mxv437SfxT-npj7eQrin-UMhxztL9gYdZwQ0rtsa5NmFhjuw7baeofNMU7eTl-ZacrnshMVDQ-VlNbuR271nsGfsenCl2GL7ByjnK7ZPg8zhiv8PBa6Fihu4N3zvHhRZNGJTS3Sa6oQ8HkIg)**
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/understandingflows/exportflow) for more information on exporting templates and their features. 
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/understandingflows/exportflow) for more information on **Export template** option and its features. 
 
 
 
 #### 2.4 Private Marketplace
 
-Users can now export templates to a private marketplace. These templates would be visible and can be imported only by them. This will not be accessible to anybody. Users can also export templates to a marketplace that is accessible only to members of a particular subscription. These templates would be visible and can be imported only by the users within the subscription.  
+- Users can now export templates to a private marketplace. These templates will be visible and can be imported only by the respective user. This will not be accessible to any external user. 
+- Users can also export templates to a marketplace that is accessible only to members of a particular subscription. These templates will be visible and can be imported only by the users within the subscription.  
 
 **![](https://lh4.googleusercontent.com/avpnNdSausBQVsrH_NJNO277j3HdXPhY-kDHYeWwohbDM0QF3sB87j4vQZu2FiPLBwNHDyqvZeBrs7NA0LPBVGICJlrw2Rrbn_uEHSL_mmhLxPujtV1ySYGQLlnC32vuh9XABW23qptUhE7mrhsivu0hbLCyY2LX3Kk6caGGjMmPjjqkYYB_4NMeaCPojA)**
 
@@ -86,7 +87,7 @@ The option to export FAQs as part of the template is now available.
 
 ## 3. **Web widgets**
 
-#### 3.1 Storing the response of the Time node in the Date & Time picker, and Time picker cards in GTM format
+#### 3.1 Store the response of the Time node in the Date & Time picker, and Time picker cards in GTM format
 
 Previously, user selection was saved in local time which would vary across regions. Currently, the Time node in Date & Time picker, and Time picker cards are saved in GMT to maintain the standard.
 
@@ -94,6 +95,55 @@ Previously, user selection was saved in local time which would vary across regio
 
 
 <img src="https://i.imgur.com/LQgxPFZ.png" alt="drawing" width="40%"/>
+
+## 4. **Integrations**
+
+
+#### 4.1 Live chat integrations are available on app.yellow.ai
+
+The Live Chat Integrations can now be used on App bots, this allows app bots to leverage the same capabilities as cloud bots in terms of integrations supported. 
+Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/livechat-integration) to know how.
+
+#### 4.2 Multiple live agent integrations within a single bot
+
+You can now have multiple live chat services enabled. While using the [raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket), the bot developer has complete freedom to use any live chat service of choice (all the 3rd party Integrations that are enabled on yellow.ai platform will be available for live chat services).
+
+#### 4.3 Zendesk Sunshine integration available on the cloud
+
+Zendesk Sunshine Integration is now supported for executor-cloud bots. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-sunshine/) to know more.
+
+#### 4.4 Custom Live agent integration v2
+
+ Custom Live Agent was enhanced with the following features:
+
+1. Ticket queuing
+2. Option to send the conversation that happened prior to connecting with the agent as a JSON file
+3. Adding additional user information (name and email) while sending messages/media files from user to agent
+4. A new field in the Raise ticket node for providing the group ID using which the ticket can be created and assigned to a specific group of agents
+
+#### 4.5 Magento integration
+
+Magento Integration is now available for use through GIF.
+
+**![](https://lh6.googleusercontent.com/tYU1QP9F6AbHXkKVZtqeO7lGTUcsslQaHWuBL8AMAe7iacboqsNiQtHleMQEL6JtaQqN4AvlCuc-TwaOTNRkmVRU9fTLQazqVZ6ucKLzSmngqaaRjv7a8GrI3LVkVdiWpU-9tPm0AWu5bTauutXtdLOBGgzF1jae27MFO3TuCg_FKAEZEOqgIAIar9qB2g)**
+
+#### 4.6 Sticky Agents for Salesforce Live chat
+
+The sticky agent is a type of ticket assignment where the customers can connect to an agent, of their choice (agents they are familiar with/ have conversed with before). Salesforce Live chat is enabled with Sticky agents. 
+
+#### 4.7 Automated the delivery report to WebEngage
+
+Previously, the delivery event was sent to the bot and the bot developer was responsible for using the action node to send the event data to WebEngage. 
+Currently, this process is automated to avoid any unintended bugs and failures by the users.
+
+#### 4.8 Support for Nested Objects for Integration Action Nodes V2
+
+Objects inside Objects are now supported for V2 Action Nodes. This was required for some integration(s).
+
+#### 4.9 Added code coverage
+
+Moving towards better code quality and assurance, boilerplate code coverage has been written for Integrations which will be extended through more test cases.
+
 
 -----
 
