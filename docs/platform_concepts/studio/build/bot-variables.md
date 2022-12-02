@@ -170,7 +170,7 @@ You can also create global variables with the help of [Prompt](https://docs.yell
 **To create a variable via Prompt node:**
 
 
-1. Select **Flows** > **Create flow**. For more information on how to create a flow, see [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#21-create-a-flow).
+1. Select **Flows** > **Create flow**. For more information on how to create a flow, see [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
 
 2. While creating a flow, if you want to store a user response in a variable and that variable does not exist, you can create a new variable via node by clicking **Store Response in > Select variable**. 
 

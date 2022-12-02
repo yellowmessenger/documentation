@@ -182,12 +182,12 @@ Know more about [Inbound campaigns](https://https://docs.yellow.ai/docs/platform
 
 ### 5.6 Handle fallback cases using workflow
 
-Workflow Campaigns is a journey-based campaign where you can create a journey starting with an *Outbound Node (mandatory)* and *trigger the Journey from Engage module* for the targeted set of users (segment).
+Workflow Campaigns is a journey-based campaign where you can create a flow starting with an *Outbound Node (mandatory)* and *trigger the flow from Engage module* for the targeted set of users (segment).
 
 This allows businesses to have fallback channels setup for use cases like EMI reminders, abandoned cart reminder, anniversary reminder and more.
 
   
 
-A typical journey of a Workflow campaign.
+A typical flow of a Workflow campaign.
 
 ![](https://i.imgur.com/h2gC6v2.jpg)

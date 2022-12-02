@@ -39,7 +39,7 @@ This bot must be trained in prior for intents that identify if the bot user is s
 
 **Prerequisites before adding Synonyms**
 1. Create a bot. 
-2. Create a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) for your use case with required [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#23-add-intent) with [utterances](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance). 
+2. Create a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case with required [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#23-add-intent) with [utterances](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance). 
 3. [Train](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#3-train-intents) your intents. 
 :::
 

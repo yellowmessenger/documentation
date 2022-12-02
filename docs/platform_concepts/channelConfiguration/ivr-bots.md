@@ -101,7 +101,7 @@ app.getContext()
     })
 ```
 
-Train 'welcome' for default/initial journey
+Train 'welcome' for default/initial flow
 
 ![](https://cdn.yellowmessenger.com/6u4HhK6tnD4U1612444738132.png)
 

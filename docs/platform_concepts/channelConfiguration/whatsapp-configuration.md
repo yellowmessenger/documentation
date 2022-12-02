@@ -334,7 +334,7 @@ Log on to the [Cloud Platform](https://cloud.yellow.ai/) and go to **Channels** 
 [](https://www.craft.do/s/0loidngTNNAzkK/b/8CA0C2DD-ECD2-437F-BBFB-C1303B7E0966/How_to_Create_an_End_to_End_Catalog_)
 
 :::note
-To create a new Catalog Journey on the Yellow.ai Platform, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message).
+To create a new Catalog flow on the Yellow.ai Platform, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message).
 :::
 
 

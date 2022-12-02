@@ -398,7 +398,7 @@ You can configure the Paytm payment gateway by following the below steps:
     * Login to cloud.yellow.ai and click the Studio Module from the top left corner of your screen.
     * Click the Event, from the left navigation bar and then choose Integrations.
     * You will find an event named Paytm Payment Status that needs to be activated by clicking on the three dots next to the name of the event.
-    * After activating the event, a journey needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
+    * After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
 
 ![](https://i.imgur.com/D6FFCed.png)
 

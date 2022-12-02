@@ -56,7 +56,7 @@ Copy the webhook url and the api key mentioned in the **Instructions** section o
 *  **locobuzz-agent-logout** - This event is triggered when there is an unexpected network/system issue at the agent’s end.
 *  **locobuzz-customer-inactivity** - This event is triggered when the customer is inactive for more than a minute. Activate this event by clicking  the three dots next to the name of the event.
 
-4. After activating these events, a journey needs to be created in  [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/)  whose trigger point will be this event. Based on the received event data, an appropriate message will be  displayed to the end user.
+4. After activating these events, a flow needs to be created in  [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/)  whose trigger point will be this event. Based on the received event data, an appropriate message will be  displayed to the end user.
 
 <img src="https://i.imgur.com/cg3dnKK.png" alt="drawing" width="100%"/>
 

@@ -3,7 +3,7 @@ title: Nodes Overview
 sidebar_label: Overview
 ---
 
-Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys).  
+Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).  
 
 In this article, you will learn:
 1. [Types of nodes](#types)
@@ -25,7 +25,7 @@ Nodes are classified into the following types:
 |    **Logic**   |  Logic nodes can be used when the flow must be branched based on the given conditions. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to learn more.  |
 
 
-After clicking **+Create flow**, you will be directed to a canvas with a **start node** from where you will have the flexibility to design a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys).
+After clicking **+Create flow**, you will be directed to a canvas with a **start node** from where you will have the flexibility to design a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
 
 ![](https://i.imgur.com/mfLbfy1.jpg)
 
@@ -48,7 +48,7 @@ Nodes can be added in two different ways:
 
 A flow is built using a series of smaller nodes. Each flow must have a minimum of two nodes configured.
 
-* **Start Trigger**: The first node must always be a trigger (click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/#4-configure-start-trigger) to learn more). You can configure how to trigger this flow. That is, by means of Intents, Entities, URL Events, or other flows.
+* **Start Trigger**: The first node must always be a trigger (click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) to learn more). You can configure how to trigger this flow. That is, by means of Intents, Entities, URL Events, or other flows.
 * Add any of the following nodes one by one to continue this flow with logic. 
     * **Prompts**: These nodes expect user inputs- when the input is invalid, fallback messages are displayed. They are interactive/conversational nodes.
     * **Messages**: Use these nodes to display messages, files, images etc. 
@@ -260,5 +260,5 @@ You can click on the `i` next to **Fetch from** and find the variable data.
 ---
 **What Next?**
 
-* Build a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) and [test](https://docs.yellow.ai/docs/platform_concepts/studio/tools) it. 
+* Build a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [test](https://docs.yellow.ai/docs/platform_concepts/studio/tools) it. 
 * Explore more about the types of nodes in the further sections.

@@ -25,7 +25,7 @@ Slack provides threaded messaging. It is important to understand how Yellow.ai p
 #### Channel
 
 1. Bot will always reply in the respective thread.
-2. Each thread has an independent context, if multiple threads are activated by same/different person → bot will maintain individual context/journey for each thread. Same journey can be run in parallel on different threads.
+2. Each thread has an independent context, if multiple threads are activated by same/different person → bot will maintain individual context/flow for each thread. Same flow can be run in parallel on different threads.
 3. User profiles are preserved across channels, threads, and DMs, ensuring that the sender is always the same.
 
 ![](https://i.imgur.com/IV7TTDq.png)
@@ -129,7 +129,7 @@ Follow the steps to configure multi-workspace:
 
 ![](https://i.imgur.com/toGSrt8.png)
 
-3. Store the accessToken of every workspace if you want to use Slack [APIs](#5). Set up a journey to capture your **`accessToken <> teamId`** mapping in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables/):
+3. Store the accessToken of every workspace if you want to use Slack [APIs](#5). Set up a flow to capture your **`accessToken <> teamId`** mapping in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables/):
 
 - Add a custom event `slack-oauth-access-token` in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/). You will receive this event each time your app is added to a workspace and will have the following schema:
 
@@ -147,8 +147,8 @@ Follow the steps to configure multi-workspace:
 }
 ```
 
-- Using the above event, you can trigger a [Journey](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/#5-configure-start-trigger). 
-- In the triggered journey, you can access the accessToken with `{{data.event.data.accessToken}}` and teamId with `{{data.event.data.teamId}}`.
+- Using the above event, you can trigger a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow). 
+- In the triggered flow, you can access the accessToken with `{{data.event.data.accessToken}}` and teamId with `{{data.event.data.teamId}}`.
 - Store the above 2 mappings in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables/) using the [Database Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#database).
 
 
@@ -202,7 +202,7 @@ Follow the below steps to add slash command:
 
 ![](https://i.imgur.com/HU5qrLT.png)
 
-3. Enable `slack-shortcuts` event in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/). If a journey is triggered using this event, the Event Payload can be accessed in builder using {{data.event.[]}}. Schema for this event would be:
+3. Enable `slack-shortcuts` event in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/). If a flow is triggered using this event, the Event Payload can be accessed in builder using {{data.event.[]}}. Schema for this event would be:
 
 ```
 {

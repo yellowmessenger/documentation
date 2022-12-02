@@ -5,7 +5,7 @@ title: Capture data through conversations
 
 You can leverage conversational Studio [Conversational Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/) to capture relevant user data and enrich their profiles.
 
-When you use [User properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#manage-user-properties) in a journey, it leads to a personalised conversation. Every bot session is mapped to a certain record in user 360. 
+When you use [User properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#manage-user-properties) in a flow, it leads to a personalised conversation. Every bot session is mapped to a certain record in user 360. 
 
 You can use user properties in the following manner:
 

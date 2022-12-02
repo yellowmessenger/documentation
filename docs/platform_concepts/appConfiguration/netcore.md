@@ -38,7 +38,7 @@ You can configure Netcore Smartech by following the below steps:
     * Login to cloud.yellow.ai and click on the Studio Module from the top left corner of your screen.
     * Click on the Event, from the left navigation bar and then choose Integrations.
     * You will find an event named netcoreEvent that needs to be activated by clicking on the three dots next to the name of the event.
-    * After activating the event, a journey needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
+    * After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
 
 
 

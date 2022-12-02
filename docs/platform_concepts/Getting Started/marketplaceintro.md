@@ -118,7 +118,7 @@ Templates are categorized into 7 different collections. You can explore template
 **Export flows from one bot to another**
 
 If you have an existing flow that is being used in one of your bots and you want to use the same flow in the current bot, you can do with the help of Marketplace component feature. This feature can be used when the available templates on our Marketplace does not match your requirement, but there is a functioning flow which is already exisiting on yellow.ai platform in another bot.
-Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#6-export-flow-from-one-bot-to-another) to learn how. 
+Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow) to learn how. 
 :::
 
 3. Flows will be imported and trained automatically for your bot. 
@@ -127,7 +127,7 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys
 ## <a name="4"></a> 3. Edit imported flows 
 
 
-To edit imported flows, go to **Studio** > **Build** > **Flows** and edit the flow. Learn more about flows and how to edit flows [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#2-introdution-to-flow). 
+To edit imported flows, go to **Studio** > **Build** > **Flows** and edit the flow. Learn more about flows and how to edit flows [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). 
 
 The following actions can be performed after exporting the template: 
 
@@ -182,7 +182,7 @@ For example, the 'Bike Models' and 'Bike Models clone' flow will have the same f
 
 :::info
 
-1. Learn how to **export flows** from one bot to another, [click here](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#6-export-flow-from-one-bot-to-another)
+1. Learn how to **export flows** from one bot to another, [click here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow)
 2. Learn to **debug the flows** in the template you imported, [click here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow). 
 3. Learn how to **publish the changes** after customizing your bot, [click here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
 :::

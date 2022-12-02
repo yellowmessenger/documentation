@@ -67,9 +67,9 @@ To explore integrations with tools & utilities softwares, click on any of the be
 ---
 ## 5. Retail/ ecommerce
 
-Retail/ ecommerce consists of integrations with tools used for managing retail and ecommerce journeys. Click on any of the below mentioned integrations that you wish to setup in order to understand the features, limitations and setup instructions:
+Retail/ ecommerce consists of integrations with tools used for managing retail and ecommerce flows. Click on any of the below mentioned integrations that you wish to setup in order to understand the features, limitations and setup instructions:
 
-1. [Shopify Shop](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/shopify/) - Integrate with Shopify to power your conversations to start your Ecommerce Journey.
+1. [Shopify Shop](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/shopify/) - Integrate with Shopify to power your conversations to start your Ecommerce flows.
 
 ---
 ## 6. Live Chat

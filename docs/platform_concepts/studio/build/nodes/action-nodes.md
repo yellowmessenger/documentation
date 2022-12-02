@@ -538,7 +538,7 @@ Make voice calls with this node.
 ## <a name="wf"></a> 4. Workflow nodes
 
 :::info
-These nodes are only available when a flow is created as a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#3-workflow). 
+These nodes are only available when a flow is created as a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#workflow). 
 :::
 
 ### 4.1 Sync database
@@ -557,7 +557,7 @@ To setup a sync database node, follow the steps below:
 
 ![](https://i.imgur.com/JeMgAdJ.jpg)
 
-3. Create/open a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys#3-workflow). On the start node, select the scheduled event as the start trigger. 
+3. Create/open a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#workflow). On the start node, select the scheduled event as the start trigger. 
 
 ![](https://i.imgur.com/BpOb6o5.png)
 
