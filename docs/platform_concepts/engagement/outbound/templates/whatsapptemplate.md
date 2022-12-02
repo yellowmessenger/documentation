@@ -179,7 +179,7 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 
   
 
-To learn to schedule a campaign to a user segment at the desired time, click [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#3-schedule-message).
+To learn to schedule a campaign to a user segment at the desired time, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign/#4-schedule-message).
 
 ***
 

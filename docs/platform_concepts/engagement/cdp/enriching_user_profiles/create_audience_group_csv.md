@@ -21,10 +21,10 @@ These names are **case sensitive** and the column header **should not include sp
 5. In **Tags**, add custom tags for the group. These tags are added to every user in the CSV. This helps you differentiate between users uploaded from multiple CSV files and to maintain multiple audiences.
    ![](https://i.imgur.com/Asg1896.jpg)
 
-6. [Create a segment](../user_data_segments/creating_managing_user_segment) using those tags to refer to the various set of audiences you have imported.
+6. [Create a segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment) using those tags to refer to the various set of audiences you have imported.
 
 :::note
-If the [userId](../enriching_user_profiles/user_id) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
+If the [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
 :::
 
 ## Pre-checks before uploading the CSV
@@ -54,7 +54,7 @@ If any of these column headers do not match with any user property, the entire C
 
 ## Using the userId column to identify users
 
-You can pass the userId for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. Know more about userId and it’s importance [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id).
+You can pass the userId for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. Know more about userId and it’s importance [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#1-user-id).
 
 When the CSV file includes a user record with a userId that already exists in the users table, a conflict arises between the old record and the new record. The new record is merged into the old record in the following manner:
 
@@ -91,11 +91,11 @@ Sometimes you might notice that the exact number of records you imported through
 Once you import a CSV file, you can check what happend with the records. You can see the count of new entries added, entries merged, and failed entries. 
 
 New users might not be created with all entries you upload. The following are the possible reasons:
-- [Wrong column headers](../enriching_user_profiles/create_audience_group_csv#pre-checks-before-uploading-the-csv)
-- [Data type mismatch](../enriching_user_profiles/create_audience_group_csv#pre-checks-before-uploading-the-csv)
-- Some users being imported must’ve [merged](../enriching_user_profiles/create_audience_group_csv#using-the-userid-column-to-identify-users) into existing user records
+- [Wrong column headers](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_users#22-checklist-for-csv-import)
+- [Data type mismatch](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_users#22-checklist-for-csv-import)
+- Some users being imported must’ve [merged](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_users#23-use-the-userid-column-for-unique-identifiers) into existing user records
 
-To identify errors in the import, see [User Logs](../user_data_segments/manage_user_data#user-logs). 
+To identify errors in the import, see [user Logs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_users#24-analyse-import-errors). 
 Click on **User Logs** > Navigate to the relevant **CSV Import activity** > Click **Download log**.
 
 
@@ -112,6 +112,6 @@ The downloaded log contains the following information:
 * **BOT_ID**: Bot Id for which the CSV was uploaded.
 * **REQUEST_PAYLOAD**: The user record for which an import was attempted but FAILED
 * **ERROR_PAYLOAD**: The error details due to which above user import FAILED:
-    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) was passed
+    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/#21-user-property-data-types) was passed
     - `invalidProperty`: Properties that do not exist in the user table
 * **LINE_NUMBER**: The row number of the user record for which import FAILED

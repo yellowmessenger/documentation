@@ -46,7 +46,7 @@ There are multiple options available in the inbox module, they are listed below:
 |**Chats**| You can provide 24/7 live support to your customers from this section. Perform bulk actions, chat searches for chats on Whatsapp, instagram and many more. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) to learn more. |
 |**Tickets**|Resolve the created tickets, create new tickets (one by one or in bulk). Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) to learn more.  |
 |**Contacts**|Create a list of contacts. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts) to learn more. |
-|**Analytics and Reports**|Find single click dynamic charts and generate and download detailed reports about your business and team performance to take data driven business decisions. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics/agents) to learn more.|
+|**Analytics and Reports**|Find single click dynamic charts and generate and download detailed reports about your business and team performance to take data driven business decisions. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics) to learn more.|
 |**Knowledgebase**|Design a knowledgebase with information to resolve user queries quickly. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/edit-publish-articles) to learn more. |
 |**Settings**|Manage other settings from [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents). |
 

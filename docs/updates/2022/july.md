@@ -138,13 +138,13 @@ Inbox data is exposed to Data explorer which allows businesses to build, and mon
 
 Customers can set custom virtual backgrounds for their agents and also redirect end-users to their own websites after the video call -to provide a consistent support experience. 
 
-> [Know more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/chats-configuration/video-call-settings)
+> [Know more](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/videocall)
 
 #### 2.4 Email ticketing now works without any code
 
 No-code email ticketing is added to support the use case in cloud bots. 
 
-> Know [more](https://docs.yellow.ai/docs/platform_concepts/inbox/email-ticketing).
+> Know [more](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig).
 
 
 
@@ -153,7 +153,7 @@ No-code email ticketing is added to support the use case in cloud bots.
 
 A detailed dump of all metrics related to agents resolving tickets, to better understand the efficiency & performance of the team. 
 
-> Know [more](https://docs.yellow.ai/docs/platform_concepts/inbox/reports/ticket-agent-performance-report). 
+> Know [more](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/tickets/ticket-agent-performance-report). 
 
 
 #### 2.6 Analytics are displayed for Email ticketing 
