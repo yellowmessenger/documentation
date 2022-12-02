@@ -79,7 +79,7 @@ Live Chat consists of integrations with tools used for managing agent connectivi
 1. Amazon Connect Live Chat - Build a conversational bot to connect with live agents via Amazon Connect. Create a custom bot for your own team to speed up teamwork.
 2. Avaya Live Chat - Now users can connect to the live agents for their queries using Avaya.
 3. Custom Live Agent - Build a conversation bot that helps to connect to human support using Custom Live Agent.
-4. [Freshchat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/freshdesk/) - Build a conversational bot to connect with live agents via freshchat.
+4. [Freshchat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/freshchat) - Build a conversational bot to connect with live agents via freshchat.
 5. [Genesys PureCloud Live Agent](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys-cloud-livechat/) - Build a conversational bot to connect with live agents via Genesys PureCloud. Create a custom bot for your own team to speed up teamwork.
 6. [Intercom Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/intercom-livechat/) - Integrate with Intercom account for seamless live agent transfer.
 7. Kapture CRM Live Chat - Integrate with Intercom account for seamless live agent transfer.

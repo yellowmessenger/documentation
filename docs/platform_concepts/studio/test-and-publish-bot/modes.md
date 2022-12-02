@@ -45,7 +45,7 @@ With live mode, you can
 
 Bot admins or approvers (access) can publish the bot. However, only super admin (who has created) can publish for the first time.
 
-> To know how to add someone as an approver, see [here](https://docs.yellow.ai/docs/platform_concepts/configurations/access-management). 
+> To know how to add someone as an approver, see [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators/). 
 
 :::note 
 Only super admins can add approvers.

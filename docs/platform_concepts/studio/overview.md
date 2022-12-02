@@ -16,9 +16,6 @@ This article briefs you on understanding various components of Studio and helps 
  5. [Keyboard shortcuts](#5-keyboard-shortcuts)
 
 
-:::note
-If you're new to creating bots or looking for more practical end-to-end guides on bot building, see [Cookbooks](https://docs.yellow.ai/docs/cookbooks/template-bots/customer-support-bot).
-:::
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qwga7KLj-zM" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
@@ -33,7 +30,7 @@ If you're new to creating bots or looking for more practical end-to-end guides o
 
 
 :::info
-Before designing your bot, you need to have the bot set up as mentioned in [Setting up your bot project](https://docs.yellow.ai/docs/cookbooks/getting_started).
+Before designing your bot, you need to have the bot set up as mentioned [here](https://docs.yellow.ai/docs/cookbooks/getting_started).
 :::
 
 1. Log in to https://cloud.yellow.ai.
@@ -192,7 +189,7 @@ A bot consists of one or more conversation flows. A flow is a set of events carr
 | Use [Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition/)                                                 | To enable bot to answer user queries from the documents that you have.                                                                                                                                                                                                               |
 | Make your bot smart by triggering actions or flows based on user activities or [Events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub)  | For example, send a predefined text when no agent is online, or when assigned to an agent; when a user closes a promotion shown in the bot; trigger flows when a user opens a specific URL.                                                                                       |
 | Make your bot handle unintended replies wisely through [Context management](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-contextual-response) | For example, what if a customer types a new question when the bot asks for the mobile number?                                                                                                                                                                                        |
-| Use [Localization](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)                                                                    | To serve users worldwide by making the bot interact in the user's native language. Yellow supports over 100 [languages]((https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported/)).                                                                                                                                                               |
+| Use [Localization](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)                                                                    | To serve users worldwide by making the bot interact in the user's native language. Yellow supports over 100 [languages](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported/).                                                                                                                                                               |
 | Function                                                                                                                                                             | If you are a developer, use [Code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code/) to define custom functionalities.                                                                                                                                               |
 | Connect third-party systems through [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to retrieve data directly from that system         | For example, you can show user details that are available in your database which is the need of importing the entire data to Yellow Platform.                                                                                                                                        |
 | Fallback                                                                                                                                                         | There could be instances where your bot does not understand how to respond to your user intent. Use Fallback to provide suggestions, answer from documents, connect to an agent, or show a message.  |
@@ -205,7 +202,7 @@ Create all the flows required for your use case and ensure these flows are prope
 
 4. **Train the bot**
 
-    [Train your bot](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/bot-training/) to understand common user utterances through NLU (Natural Language Understanding), identify [Entities](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) and more.
+    Train your bot to understand common user utterances through NLU (Natural Language Understanding), identify [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents), [entities](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) and more.
 
 ![](https://i.imgur.com/A7GqpLw.jpg)
 

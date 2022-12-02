@@ -61,7 +61,7 @@ The user contact details/ recipient column and other others can be selected from
 
 5. Select your **Target Audience** and click **Next** to proceed to scheduling the message (**Schedule**).
    * You can either choose audience from the list of  segments that you already created [OR] 
-   * Create a new segment using **+ Add new segment**. For more details, see [Users module and segment creation](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/overview).
+   * Create a new segment using **+ Add new segment**. For more details, see [Users module and segment creation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview).
 
 6. **Schedule** your Campaign: Define when to send the campaign (Timezone: Asia/Kolkata). For detailed procedure, see [Schedule message](#21-schedule-message).
 * Select **Once** to  run the campaign for one accurance.
