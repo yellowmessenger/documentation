@@ -159,7 +159,7 @@ If you wish to cancel the verification request for some reasons, go to ***Securi
 ## Let's make you experience WhatsApp
 
 
-Great! Once the account is approved, we can start configuring the chatbot with any journey you wish for.
+Great! Once the account is approved, we can start configuring the chatbot with any flow you wish for.
 For example, let's try adding few FAQs and see how it gets reflected in the WhatsApp chatbot.
 
 

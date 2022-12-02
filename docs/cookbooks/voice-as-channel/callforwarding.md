@@ -45,9 +45,9 @@ Call forwarding can be used in the following ways while building a voice bot:
 
 
 2. Bot requires to support on request Agent Transfer from the user while conversation.
-	- The components which can be used to build such a flow are Intent detection >  [Separate flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) (as per user request).  
+	- The components which can be used to build such a flow are Intent detection >  [Separate flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) (as per user request).  
 	- Apart from the cases where the bot transfers the call to an agent, which are pre-meditated for time-critical use cases business requirements could be of transferring the call directly to an Agent as and when the user requests.    
-	- In such cases, upon detecting the user intention of “Talk to Customer Support” at any point in the conversation, we could have an altogether separate journey that could be triggered via intent detection.  
+	- In such cases, upon detecting the user intention of “Talk to Customer Support” at any point in the conversation, we could have an altogether separate flow that could be triggered via intent detection.  
 
 
 <img src="https://lh4.googleusercontent.com/L2bA4jJBsCtet-AU3e6QbR2LvWU9IOGPGLL5DHQTpCvD7SEvU89qBJoVuvxKVEbPk7WnlYNxQXVoVcadJ9R9SQe4gKvVE8H6ixXErgA3-mIbzgoCnNsz5qcmz6kplwvWp__Ck20G9xqhsWybxJvHJKx566wpbPpFW2bFkcFBCzatyD2c8KC2EPj8_Q" alt="drawing" width="60%"/>
@@ -59,4 +59,4 @@ Call forwarding can be used in the following ways while building a voice bot:
 
 3. Bot is required to transfer to agents (as a fallback mechanism) if it isn’t able to understand the user response multiple times.
 	- The components which can be used to build such a flow are separate custom flows.
-	- Apart from the intent detection, one more use case could be where the voice bot for some reason isn’t able to understand the user response/query (even after multiple re-tries) and hence we want to transfer the call to an agent. For such cases, the ideal flow is where the bot tries to understand the user response 2/3 times (repeat limit can also be configured) and post that fallback mechanism like agent transfer (or call disconnect) needs to be configured. For this, the bot developer needs to create a custom journey using execute flow for a specific business use case.
+	- Apart from the intent detection, one more use case could be where the voice bot for some reason isn’t able to understand the user response/query (even after multiple re-tries) and hence we want to transfer the call to an agent. For such cases, the ideal flow is where the bot tries to understand the user response 2/3 times (repeat limit can also be configured) and post that fallback mechanism like agent transfer (or call disconnect) needs to be configured. For this, the bot developer needs to create a custom flow using execute flow for a specific business use case.

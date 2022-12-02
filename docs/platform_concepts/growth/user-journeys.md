@@ -9,7 +9,7 @@ In this article, you will learn about the various features available for the vis
 ![](https://i.imgur.com/GPQooDP.png)
 
 
-User journey visualization enables you to view how your users are moving across different [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys) when conversing with the bot. You can identify major points where users are dropping off or changing paths, and make changes in bot design to improve overall engagement and conversion.
+User journey visualization enables you to view how your users are moving across different [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) when conversing with the bot. You can identify major points where users are dropping off or changing paths, and make changes in bot design to improve overall engagement and conversion.
 
 
 Some high-level insights you can derive from this section are:

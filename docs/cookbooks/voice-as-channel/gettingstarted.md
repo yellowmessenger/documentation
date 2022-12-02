@@ -134,7 +134,7 @@ For a **voice bot**, every incoming call is a new request to start the conversat
 
 To create a simple voice bot flow, follow the steps below:
 
-1. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/#3-flow): When a call is received, bot will initilize a conversation with the caller by talking some phrases- 
+1. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys): When a call is received, bot will initilize a conversation with the caller by talking some phrases- 
 
 > "Hello, I am Bella, how can I help you today?"
 

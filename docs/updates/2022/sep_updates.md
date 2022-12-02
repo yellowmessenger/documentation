@@ -1,5 +1,5 @@
 ---
-title: Sep updates
+title: September updates
 sidebar_label: September
 ---
 

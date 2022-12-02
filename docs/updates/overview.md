@@ -5,25 +5,29 @@ featured: true
 ---
 
 For you, our Product & Development team is working hard to consistently improve the product.  
-Here are a list of product updates we made in the month of **October** to provide you with the best user experience. 
+Here are a list of product updates we made in the month of **November** to provide you with the best user experience. 
 
 ----
-## 1. **Studio** 
-
-#### 1.1 Download API logs 
-
-> Type - Enhancement
 
 
-When there is an API issue, it is difficult to understand if our API calls are failing or if the client API is failing. To resolve this issue, we are storing all the API requests and responses to help establish the issues. Click [here](/cookbooks/studio/downloadapilogs.md) to learn more. 
+
+## 1. **Studio**
+
+#### 1.1 Options to publish selective flows and revert to previously released bot version 
+
+- Selective publish allows you to publish only selected flows from the flows you made changes to.
+
+![](https://i.imgur.com/yzIAgM4.png)
 
 
-#### 1.2 Bulk testing of utterances on cloud
-
-> Type - New feature
+- Revert feature is available on “live” environment, it allows the admins to revert to any previously released version in one click.
 
 
-To test utterances, the studio QA team had to check each utterance in the bot one by one. This is very time-consuming. To tackle this we have introduced a feature where users can bulk upload the utterances and test which journey/intent they are triggering. Click [here](/cookbooks/studio/regressiontest.md) to learn more. 
+#### 1.2 Search bar functionality extended for Flows, FAQs, and Intents along with documentation
+
+To avoid scrolling through different sections to find the right flow/FAQ/Intent anymore. **Studio search bar** now supports Flows, FAQs, and Intent search apart from documentation search that it already supported.
+
+![](https://i.imgur.com/1fo4e0H.png)
 
 
 
@@ -32,228 +36,115 @@ To test utterances, the studio QA team had to check each utterance in the bot on
 
 ## 2. **Marketplace**
 
-  
-  
-#### 2.1 Added new marketplace components 
+#### 2.1 Option to export a bot template
 
-The following marketplace templates were are released on the platform:
+Users can export a single flow or multiple flows from the bot. This option is available on the Studio page. Users can select the flows to be exported as a single template, providing details such as key features, channels supported, industry, description, etc. Users can also choose to export data from databases and FAQs from the bot.  
+
+**Global- Export template**   
+
+**![](https://lh4.googleusercontent.com/MmELn-7AR6XphYoaokjDw_DULMz2nU00nIl-SgkX4hegq3cgaFFsgSqMOjzbAQeC3GeZe8EoH8seUARWv_ei_JRgPoZP8k6AWV_7svBrWteKkCcCdjgHpFzOtbuDXdLSToV_dBncIpj7MWOej5bMtMjvRR-wsc03HBoT2O9haprp00wqH-spxaOL1O-rhA)**
+
+**Export flows**  
+
+**![](https://lh5.googleusercontent.com/6EE_NW3HfTkpKR9jdlZHPYizUbjj89qvgtiDHag9ZtOode6lTW8GxU4id7UFjCUdA0XxxoAFgtEm3KSyuAhc9neACs6GbGRsFEi0J3UupvhkhXMul3Ey13duhzE6lRPnGRAGTaaMte8BNs4VRvS0UI_qYu54XbbyGw_AOsDnJmmVjqNTngMtYXbRm_t_FQ)**
 
 
-  > Type - New feature
+#### 2.2 View exported templates
+Users can view the templates submitted for review Under **Profile** > **Exports**. Users can view the template status from this page.
+
+<img src="https://i.imgur.com/1KoEq8Y.png" alt="drawing" width="30%"/>
 
 
 
-##### 1. ITSM Automation
-This template allows bot users to create a ticket, check ticket status, and connect with an agent. Click [here](https://cloud.yellow.ai/marketplace/df8632122f795dda899df38ff1dddb16) to use the template. 
+**![](https://lh6.googleusercontent.com/6wQcDM5UxEZJjEsSj8wNOlX9mCcWH6djRrfrUiTinT_vWXhfz_4hk8V5FdKYcj0WH4R13jUrW0vXx_Tc15OlOKw68dS4RGXHpBhNYRsCUsMQtuX4xX8HSd9V19rtyl8-jFXyz3k3g3uVB0GzUedcnjrEJDPIZ7aTBI0jRutATaLFybIK2dF5YsFW2sLlYQ)**
 
-##### 2. Session based authentication using OTP
-This template is used to authenticate the user using OTP and keep them authenticated until a certain period of inactivity. Click [here](https://cloud.yellow.ai/marketplace/d48194ebfbf15dc51f5b9e5deba41c56) to use the template. 
- 
+#### 2.3 Review and Publish templates
 
-##### 3. IT service desk
-This template allows users to raise ticket and contact support for laptop/system related issues, login issues, etc. Click [here](https://cloud.yellow.ai/marketplace/bad34a3a53f8a828ba6c073e87e21bfc) to use the template.
+The templates exported to a **private** marketplace would be published automatically without a review process. The templates exported for a subscription would be submitted for review and will be available on this page. The admin of the subscription will be able to view, test, and publish the templates.
+The templates exported to the **public** marketplace would be submitted for review and will be available on this page. The admin of the public marketplace will be able to view, test, and publish the templates.  
 
-##### 4. FAQ automation using document cognition
-This template is designed to demonstrate the document cognition feature supported by Yellow.ai. Click [here](https://cloud.yellow.ai/marketplace/3f67de2d7976a3c1a0c729cbec24c26d) to use the template.
 
-##### 5. New course registration(send an email notification)
-This template sends reminders to users on their email, when the user signs up for a course. Click [here](https://cloud.yellow.ai/marketplace/c98e5d23fec2cc535978fa98153bbc1a) to use the template.
+**![](https://lh6.googleusercontent.com/y3dqwQN4AZPdy1ohIZAbXFKo2JGNbLCP7UPB0Ndewikd8-Mxv437SfxT-npj7eQrin-UMhxztL9gYdZwQ0rtsa5NmFhjuw7baeofNMU7eTl-ZacrnshMVDQ-VlNbuR271nsGfsenCl2GL7ByjnK7ZPg8zhiv8PBa6Fihu4N3zvHhRZNGJTS3Sa6oQ8HkIg)**
+
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/understandingflows/exportflow) for more information on **Export template** option and its features. 
+
+
+
+#### 2.4 Private Marketplace
+
+- Users can now export templates to a private marketplace. These templates will be visible and can be imported only by the respective user. This will not be accessible to any external user. 
+- Users can also export templates to a marketplace that is accessible only to members of a particular subscription. These templates will be visible and can be imported only by the users within the subscription.  
+
+**![](https://lh4.googleusercontent.com/avpnNdSausBQVsrH_NJNO277j3HdXPhY-kDHYeWwohbDM0QF3sB87j4vQZu2FiPLBwNHDyqvZeBrs7NA0LPBVGICJlrw2Rrbn_uEHSL_mmhLxPujtV1ySYGQLlnC32vuh9XABW23qptUhE7mrhsivu0hbLCyY2LX3Kk6caGGjMmPjjqkYYB_4NMeaCPojA)**
+
+#### 2.5 FAQs export
+
+The option to export FAQs as part of the template is now available.  
+
+**![](https://lh6.googleusercontent.com/rGXUHjUkyXq1eAmM4qWYTRTnzAi1fEFDj5I-b35D7hWUBUXDA0_AV8GMGqSWKkfy2G2z7FQfuZhwQQ0q__0OI4-CqRTTNlfLWP3kJtbLjFt4ZnOYHIUbIK-WhRy8s9vqffPaFResM-o01pqbfGM5g3t4_GAkxbbUdBct3qmwC-cFv4W7tFw8J_eiAeT9Ng)**
+
+
+
+## 3. **Web widgets**
+
+#### 3.1 Store the response of the Time node in the Date & Time picker, and Time picker cards in GTM format
+
+Previously, user selection was saved in local time which would vary across regions. Currently, the Time node in Date & Time picker, and Time picker cards are saved in GMT to maintain the standard.
+
+> These changes will be affecting the bots which are using the Date and time picker Card and Time Picker Card, not the web view.
+
+
+<img src="https://i.imgur.com/LQgxPFZ.png" alt="drawing" width="40%"/>
+
+## 4. **Integrations**
+
+
+#### 4.1 Live chat integrations are available on app.yellow.ai
+
+The Live Chat Integrations can now be used on App bots, this allows app bots to leverage the same capabilities as cloud bots in terms of integrations supported. 
+Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/livechat-integration) to know how.
+
+#### 4.2 Multiple live agent integrations within a single bot
+
+You can now have multiple live chat services enabled. While using the [raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket), the bot developer has complete freedom to use any live chat service of choice (all the 3rd party Integrations that are enabled on yellow.ai platform will be available for live chat services).
+
+#### 4.3 Zendesk Sunshine integration available on the cloud
+
+Zendesk Sunshine Integration is now supported for executor-cloud bots. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-sunshine/) to know more.
+
+#### 4.4 Custom Live agent integration v2
+
+ Custom Live Agent was enhanced with the following features:
+
+1. Ticket queuing
+2. Option to send the conversation that happened prior to connecting with the agent as a JSON file
+3. Adding additional user information (name and email) while sending messages/media files from user to agent
+4. A new field in the Raise ticket node for providing the group ID using which the ticket can be created and assigned to a specific group of agents
+
+#### 4.5 Magento integration
+
+Magento Integration is now available for use through GIF.
+
+**![](https://lh6.googleusercontent.com/tYU1QP9F6AbHXkKVZtqeO7lGTUcsslQaHWuBL8AMAe7iacboqsNiQtHleMQEL6JtaQqN4AvlCuc-TwaOTNRkmVRU9fTLQazqVZ6ucKLzSmngqaaRjv7a8GrI3LVkVdiWpU-9tPm0AWu5bTauutXtdLOBGgzF1jae27MFO3TuCg_FKAEZEOqgIAIar9qB2g)**
+
+#### 4.6 Sticky Agents for Salesforce Live chat
+
+The sticky agent is a type of ticket assignment where the customers can connect to an agent, of their choice (agents they are familiar with/ have conversed with before). Salesforce Live chat is enabled with Sticky agents. 
+
+#### 4.7 Automated the delivery report to WebEngage
+
+Previously, the delivery event was sent to the bot and the bot developer was responsible for using the action node to send the event data to WebEngage. 
+Currently, this process is automated to avoid any unintended bugs and failures by the users.
+
+#### 4.8 Support for Nested Objects for Integration Action Nodes V2
+
+Objects inside Objects are now supported for V2 Action Nodes. This was required for some integration(s).
+
+#### 4.9 Added code coverage
+
+Moving towards better code quality and assurance, boilerplate code coverage has been written for Integrations which will be extended through more test cases.
 
 
 -----
 
-## 3. **Integrations**
-
-#### 3.1 Improvised logging
-
-> Type - Enhancement
-
-Going forward there will be improved logging in general for our service which will help to deep dive further and analyze the root cause of issues.
-
-#### 3.2 Added new integrations 
-
-> Type - New feature
-
-
-The following 5 integrations are now available on our platform: 
-
-##### 1. Salesforce live chat 
-
-You can now disable/enable receiving queue updates and estimated wait time updates from the integration card UI.
-	
-##### 2. PayU payment gateway
-
-You can now generate payment links that support UPI as payment mode and also are now allowed to pass the UDF5 body as a field for supporting Payments. 
-
-##### 3. Billdesk Integration
-Billdesk Payment Gateway allows you to create UPI Intent for WA Pay, view the payment status, and Send UPI notifications with the yellow.ai platform. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/billdesk) to know more. 
-
-##### 4. Nice In-Contact Integration
-Nice In-contact allows you to seamlessly connect your Nice In-contact with the yellow.ai platform. This connector will enable it to connect end users to live agents. 
-
-##### 5. Instamojo Payment Integration 
-Instamojo Payment Gateway allows users to connect their business and generate payment links, view payment status, and create refunds with the yellow.ai platform. Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/instamojo) to know more. 
-
-
------
-## 4. **Insights**
-
-
-#### 4.1 **Bot & Agent metrics** was added to enhance data points on the insights dashboard
-
-> Type - Enhancement
-
-To further enrich our out-of-the-box analytics present on the Overview page of Insights, we have added some new and enhanced data points on the dashboard. The 4 enhancements are:
-- Messages bifurcation
-- Sessions bifurcation
-- Deflection rate
-- User feedback
-
-
-##### 1. Messages bifurcation
-
-Messages metrics under **User Traffic** is now further bifurcated into:  
-
-
-| Bot & User | Agent & User |
-| -------- | -------- |
-| Messages exchanged between bot and user     | Messages exchanged between agent and user     |
-
-
-
-
-<img src="https://i.imgur.com/VLO6RYO.jpg" alt="drawing" width="70%"/>
-
-
-
-##### 2. Sessions bifurcation
-
-Sessions metrics is now divided further into:  
-
-| Bot  | Bot & Agent |
-| -------- | -------- |
-|Sessions handled by bot only|Sessions handled by both bot and agent|
-    
-
-<img src="https://i.imgur.com/OyItmMT.jpg" alt="drawing" width="70%"/>
-
-
-##### 3. Deflection rate
-
-This is the percentage of sessions handled solely by the bot without transferring to a live agent. It is a measure of chats resolved by self-serve. 
-
-<img src="https://i.imgur.com/xQ2SifJ.jpg" alt="drawing" width="70%"/>
-
-
-:::note
-**Human takeover** rate is now replaced with Deflection rate now because it is a better indication of bot performance.
-:::
-
-
-##### 4. User Feedback
-
-A new widget with an aggregate score of Bot CSAT and Agent CSAT on a scale of 1-5, along with percentage increase/decrease in the selected timeframe.
-These new additions will help users better analyse bot and agent performance with much more granularity, and without manual calculations anymore.
-
-<img src="https://i.imgur.com/CUhlum9.png" alt="drawing" width="70%"/>
-
------
-
-## 5. **Channel** 
-
-#### 5.1 Single/Multi Product message support (Catalog support)  is now available on Cloud 
-
-WhatsApp Product Message Support on Cloud Platform also known as the WhatsApp Catalog Support feature was available on app.ym and now has been made available to be used on Cloud Platform as well. There are two new Nodes that were introduced which will be required to send Product Messages on WhatsApp from the Business Catalogs.
-
-1. **Single Product Message**: This allows you to send a single product on a WhatsApp message with information like an image, description of the product, price, discounted price, etc.
-2. **Multi Product Message**: Multi-product message allows you to send an expandable Vertical Carousal message with a maximum of 30 Products for the user to go through and add to the cart or view each product individually as well.
-
-
-This feature opens doors to all the Business to have basic to complex E-commerce use cases and sell products right on WhatsApp. This is not only limited to physical goods but can also be used to showcase digital goods like Insurance, loans, etc.
-
-:::info
-References: 
-1. [Setting up of Catalog](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#2-catalog-setup)
-2. [Linking a Catalog to WABA](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#22-link-catalog-to-a-waba)
-3. [Using the SPM/MPM Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message)
-4. [Common FAQ’s](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/#23-faqs)
-:::
-
-
------
-
-## 6. **Voice**
-
-#### 6.1 Wait music for APIs
-
-Previously, without **Wait Music**, there was silence on the call while API was executed resulting in a sub-optimal conversational experience.
-
-![](https://i.imgur.com/eCsR3Cy.jpg)
-
-
-Currently, if the Wait Music is configured for high latency API calls, it allows Voice Bot developers to play music on the call while waiting for the API response. After the API call is completed, the wait music is stopped and the further steps (nodes) are executed. 
-
-
-
-
-<img src="https://i.imgur.com/skrJN8c.jpg" alt="drawing" width="100%"/>
-
-
-
-You can configure the wait music in the API node itself (works for voice bots only) where bot developers can upload a public URL or upload a file for the same. Supported formats for wait music files - .mp3 and .wav.
-
-:::note
-- This feature is an add-on hence nothing changes on the LIVE bots. Though, the team recommends implementing wait music if the latency of some APIs is high for a better user experience.
-- Ensure that the **Wait Music Length** (duration) is greater than the timeout configured for the API for a better experience to avoid unseen race condition scenarios.
-:::
-
-#### 6.2 Revamped voice options
-
-Voice options are fine-tunable parameters for voice channels like what is the STT engine to be used, the maximum recording duration, the length of DTMF input, the list of boost phrases, etc.
-With the revamp, both the global and voice options are now classified under different buckets to provide a more intuitive and cleaner user experience in the studio. All the voice options are classified into 6 buckets:
-1. Telephony
-2. Recording
-3. Speech-To-Text
-4. Text-To-Speech
-5. DTMF
-6. Conversation
-
-
-**Old vs. Revamped global level options** 
-
-![](https://i.imgur.com/oJauXmc.jpg)
-
-**Old vs. Revamped node level options** 
-
-
-![](https://i.imgur.com/4M0FICP.png)
-
-Along with a cleaner user experience, there are a few new voice options also introduced for configuration in UI viz. DTMF finish char, Acknowledgement Message (filler words), and TTS Array.
-
-Complete details of all the voice options are documented under [Node-Level Options](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#32-configure-node-for-a-voice-bot) and [Global-Level Options](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#25-voice).
-
-#### 6.3 Voice bot number association
-
-:::note
-Phone numbers are a limited resource and are leased from downstream providers at Monthly costs to Yellow.ai. Ensure that only the required count of the phone numbers is being added to the Bot.
-:::
-
-Previously, the process of associating a phone number to a Voice Bot was manual hence, the TAT also revolved around 1 - 2 days. To streamline this process and bring us one step closer to a self-serve platform, developers can now associate numbers to their bots directly on our Cloud portal. 
-
-Currently, to find the new Phone number management screen, you can navigate to **Channels** > **Voice**  > **Interactive Voice Response**(IVR). On this screen the following actions are available to the users:
-* View the Phone number/s currently associated with the Bot.
-* Associate new Phone number/s to the Bot.
-* Remove Phone number/s mapping from the Bot.
-
-Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/Ivr) to learn more. 
-
-
-![](https://i.imgur.com/TYv4idf.jpg)
-
-
------
-
-Other modules will be added soon!
-
-
-
+Other updates coming soon!

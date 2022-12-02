@@ -7,7 +7,7 @@ sidebar_label : IVR (for cloud)
 
 :::note
 
-Refer to [this](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/ivr-bots) article for bots created before JULY 2022.
+Refer to [this](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/ivr-bots) article for bots created before July 2022.
 
 :::
 
@@ -21,7 +21,7 @@ In this article, you will learn:
   
   
 
-While building voice bots, you must link the bot to some number, so that when the users call on this number they can have a conversation with the bot.
+While building voice bots, you must link the bot to some number, so that when the users call on this number, they can have a conversation with the bot.
 
 Once you are ready with a personalized voice bot of yours, the first step towards enabling the voice channel is to assign a number to your voice bot.
 

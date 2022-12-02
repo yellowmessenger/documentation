@@ -51,7 +51,7 @@ Hurray! You've now successfully connected your FB Messenger with our platform.
 
 ## Let's experience Facebook Messenger chatbot
 
-Great! Once the account is successfully approved, we can start configuring the chatbot with any journey you want. For example, let's try adding few FAQs and see how it gets refelcted in the FBM chatbot.
+Great! Once the account is successfully approved, we can start configuring the chatbot with any flow you want. For example, let's try adding few FAQs and see how it gets refelcted in the FBM chatbot.
 
 1. Go to **Studio -> FAQs**.
 

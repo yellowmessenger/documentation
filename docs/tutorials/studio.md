@@ -8,12 +8,12 @@ featured: true
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LXLW7-eeTV4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
- ### Learn about Intents, Journeys and Utterances
+ ### Learn about Intents, Flows and Utterances
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dCJD0yXFbG4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
 
 
-### Create a Journey
+### Create a Flow
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/03iTV7bbrYw" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 

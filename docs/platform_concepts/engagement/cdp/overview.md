@@ -31,7 +31,7 @@ You can see User 360 in the Engage module.  You can view your user details, modi
 To access User 360, log on to https://cloud.yellow.ai and navigate to **Engage** > **User 360**.
 
 :::note
-This is enabled only for https://cloud.yellow.ai
+This is enabled only for https://cloud.yellow.ai.
 :::
 
 The following are the key actions that you can perform on user 360.
@@ -132,8 +132,14 @@ These properties are ideal for helping you answer questions like:
    - Example: Show users who are paying over $10 per month.
 -  **What’s the name?** 
    - Example: Show the list of all users whose job title is ‘Marketer’.
--  **Is it true or false?** e.g. which users have visited my pricing page? (pricingPageVisit = true) and which users haven’t? (pricingPageVisit = false)
--  **What date?** e.g. which users’ subscriptions are due to end on September 1st?
+-  **Is it true or false?** 
+    
+   Example: 
+   
+   * Users who visited the pricing page - `(pricingPageVisit = true)`
+   * Users who haven’t visited the pricing page -  `(pricingPageVisit = false)`
+-  **Date?** 
+   * Example: Users whose subscription will end on 1 December.
 
 
 Custom User Properties can be [created from UI, in Users Module](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data/#manage-user-properties).

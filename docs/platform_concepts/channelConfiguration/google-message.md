@@ -33,8 +33,10 @@ Local entry points can be used for organisations which have a physical location.
 
 The Non-local entry point group contains entry points that do not rely on locations. If the brand does not have a physical location, or does not want to share its physical location on Google, you can use Google Business Messages with Non-local entry points.
 
-Here are some examples of non-local entry points -
-1. Sitelinks 2. Snippets and 3. Phone.
+Here are some examples of non-local entry points:
+1. Sitelinks 
+2. Snippets 
+3. Phone
 
 ![](https://i.imgur.com/BrKhx0l.png)
 
@@ -43,7 +45,7 @@ Here are some examples of non-local entry points -
 
 With Business Messages, you can receive messages from users and send response messages.
 
-Yellow.ai supports the following Business Messages.
+Yellow.ai supports the following Business Messages:
 
 * Plain text
 * Images
@@ -66,7 +68,7 @@ Likewise, the agent may send the following types of information to the user:
 
 ## 2. Limitations
 
-The following are the limitations of the GBM channel in different bot functionalities.
+The following are the limitations of the GBM channel in different bot functionalities:
 
 #### Welcome message limitations
 
@@ -90,7 +92,7 @@ Quick reply character length | 25
 > [See more details](https://developers.google.com/business-communications/business-messages/reference/rest/v1/conversations.messages#resource:-message)
 
 #### Text message
-* The a text message sent to the user can have up to 3072 characters.
+* A text message sent to the user can have up to 3072 characters.
 
 #### Image file
 The following are the limitations of the file shared by the bot.
@@ -131,7 +133,7 @@ Max. buttons in card | 4
     You will see a prompt to check if you have a live agent configured in Inbox.
 
 ### 2.  Enter brand details.
-   a. **Brand Name**: Enter the name of the client. As this is verified by the Google support team over email, we would recommend you to keep the brand name similar to your domain.
+   a. **Brand Name**: Enter the name of the client. As this was verified by the Google support team over email, we would recommend you to keep the brand name similar to your domain.
 
    b. **Point of contact name**: Name of the point of contact(PoC) from the client.
 
@@ -146,7 +148,7 @@ Max. buttons in card | 4
 
 
 :::note
-The brand name will be visible when the bot goes live on GBM. The name of the brand's POC won't be viisible, it is used only for verification purposes.
+The brand name will be visible when the bot goes live on GBM. The name of the brand's POC won't be visible, it is used only for verification purposes.
 :::
 
 ### 3.  Enter bot details
@@ -169,20 +171,20 @@ Enter the bot details based on the descriptions provided for each field in the f
    Language | Languages that the bot supports. This will be pre-filled based on the configuration setting saved in the builder. You can also set the default language using the check box next to this.
    Privacy policy | Provide the link where the privacy policy details of your organisation are available.
    Welcome message | The first message in a conversation between a bot and a user. The welcome message automatically appears when a user starts a new conversation.
-   Offline message | Message to show to the bot user during non-operating hours - when the human-agent is offline.
-   Quick replies | Conversation starters appear as vertically stacked suggested replies and directly follow the welcome message. When the end-user taps a conversation starter, the bot receives predefined content. You can add up to five quick replies . Quick replies are not visible (when the live agent is not available) if an offline message is set.
+   Offline message | Message to be displayed to the bot user during non-operational hours, when the human agent is offline.
+   Quick replies | Conversation starters appear as vertically stacked suggested replies and directly follow the welcome message. When the end-user taps a conversation starter, the bot receives predefined content. You can add up to five quick replies. Quick replies are not visible (when the live agent is not available) if an offline message is set.
    **Interactions** | -
    Primary interaction | The primary mode of interaction with the bot users. It is mandatory to have a live agent configuration for GBM. If human messaging is not available 24*7, uncheck **Always available** and specify the available days, time, and timezone.
    Secondary interaction | Secondary mode of interaction to activate when the primary mode is unable to respond to user queries.
    Start day | Weekdays from when the live-agent is available. You can choose from Monday to Sunday. For example, available from Monday (Start day) - Friday (End day).
    Start time (hours, minutes) | Set the available from time in hours and minutes. For example, available from 10hrs. 00min. - 18hrs 00min in the selected available days.
    End day | Weekdays until when the live-agent is available. You can choose from Monday to Sunday. For example, available from Monday (Start day) - Friday (End day).
-   End time (hours, minutes) | Set the available until time in hours and minutes. For example, available from 10hrs. 00min. - 18hrs 00min in the selected available days.
+   End time (hours, minutes) | Set the available time in hours and minutes. For example, available from 10hrs. 00min. - 18hrs 00min in the selected available days.
    Timezone | Base timezone considered for the specified availability period.
    
 
 ### 4.  Enter your business location
-Add location IDs as per the operating mode of business. If you have selected *Local entry* point in the previous step, you need to add at least one business location.
+Add location IDs as per the operating mode of business. You must add at least one business location if you chose Local entry point in the previous step.
 
    a. **Place ID**: Enter the unique ID the location (in Google places) that you want to add to the GBM configuration. To search for a place ID, click **[Find place ID](https://developers.google.com/maps/documentation/javascript/examples/places-placeid-finder)**.
 
@@ -200,7 +202,7 @@ Add location IDs as per the operating mode of business. If you have selected *Lo
    c. Click **Save and next** to proceed to next step.
 
 
-With this, the GBM bot configuration is completed. You then need to verify whether everything is working fine. 
+With this, the GBM bot configuration is completed. You then need to verify that everything is working fine. 
 
 ### 5.  Verify the bot
 
@@ -238,19 +240,19 @@ To verify the bot, the contact person needs to reply to the first email with the
 * Google-provided security key from separate email
 
 > **Standard format**
-> I, [name of brand employee] and [title of employee], grant yellow.ai the right to send Business Messages using the information specified in this email. Security key: [Google-provided security key from separate email]
+> I, [name of brand employee], and [title of employee], grant yellow.ai the right to send Business Messages using the information specified in this email. Security key: [Google-provided security key from separate email]
 
-Next, Google will verify this email and mark the bot as verified if all the information is as per the Google's guidelines.
+Next, Google will verify this email and mark the bot as verified if all the information is as per Google's guidelines.
 
 > Know Google's [Acceptable use policy](https://developers.google.com/business-communications/support/aup).
 
 ### 6. Verify locations associated with bot 
 
-After you verify a bot, verify locations associated with that bot. Once a location is verified and the bot is launched, you can launch the location that with the bot.
+After you verify a bot, verify locations associated with that bot. Once a location is verified and the bot is launched, you can launch the location with the bot.
 
 ### 7. Launch bot
 
-When you launch a bot, Business Messages performs checks for necessary approvals before beginng the launch process. Once the launch process begins, the agent is available to users within a few hours.
+When you launch a bot, Business Messages performs checks for necessary approvals before beginning the launch process. Once the launch process begins, the agent is available to users within a few hours.
 
 ### 8. Launch locations	
 When you launch a verified location, the location is available to users within a few hours. 
@@ -275,7 +277,7 @@ Metric | Definition | Sample Value
 -------- | ----------- | ----------
 Survey score | Percentage of positive survey responses. | Ranges from 0% to 100%
 MRR | Merchant response rate (MRR). The number of sessions that had responses (bot or live agent) relative to the total number of sessions. | Ranges from 0% to 100%
-HMRR | Human merchant response rate (HMRR). The number of sessions that had live agent responses relative to the total number of sessions that contained one or more live agent requests or live agent responses. | Ranges from 0% to 100%
+HMRR | Human merchant response rate (HMRR). The number of sessions that had live agent responses was relative to the total number of sessions that contained one or more live agent requests or live agent responses. | Ranges from 0% to 100%
 
 > To know more see [here](https://developers.google.com/business-communications/business-messages/guides/how-to/measure/metrics#performance)
 

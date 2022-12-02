@@ -57,6 +57,8 @@ module.exports = {
       collapsed: true,
       items: [
         "cookbooks/inbox/custom-usecases",
+        "cookbooks/inbox/emailvschat",
+        "cookbooks/inbox/notifyagents",
       ],
     },    
     {
@@ -197,6 +199,7 @@ module.exports = {
       items: [
 
         "platform_concepts/Getting Started/platform-offerings",
+        "platform_concepts/Getting Started/marketplaceintro",
         "platform_concepts/Getting Started/create-a-bot",
         "platform_concepts/Getting Started/add-bot-collaborators",
         "platform_concepts/Getting Started/keyboard-shortcuts",
@@ -218,17 +221,8 @@ module.exports = {
       ]
     },
 
-    // Marketplace starts here
 
-{
-  type: "category",
-  label: "Marketplace",
-  collapsed: true,
-  items: [
-    "platform_concepts/marketplacetemplates/intro",
-    "platform_concepts/marketplacetemplates/template1",
-  ],
-}, 
+
 
     // Studio starts here  
   
@@ -243,7 +237,20 @@ module.exports = {
           label: "Build your bot",
           collapsed: true,
           items: [
-            "platform_concepts/studio/build/journeys",
+          
+            //flows
+            {
+              type: "category",
+              label: "Flows",
+              collapsed: true,
+              items: [          
+            "platform_concepts/studio/build/Flows/journeys",
+            "platform_concepts/studio/build/Flows/configureflow",
+            "platform_concepts/studio/build/Flows/exportflow",
+
+          ],
+        },
+
             {
               type: "category",
               label: "Nodes",
@@ -912,6 +919,7 @@ module.exports = {
       label: "2022 Updates",
       collapsed: true,
       items: [
+        "updates/2022/oct2022",
         "updates/2022/sep_updates",
         "updates/2022/aug",
         "updates/2022/july",

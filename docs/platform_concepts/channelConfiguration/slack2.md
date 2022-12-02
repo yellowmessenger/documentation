@@ -7,7 +7,7 @@ sidebar_label: Slack
 This document consists of: 
 
 1. [Slack in yellow.ai](#1)
-2. [How to create an app on slack](#2)
+2. [How to create an app on Slack](#2)
 3. [How to configure a workspace](#3)
 4. [How to add Slack to Direct message/Channel](#4)
 5. [Slack APIs integration](#5)
@@ -16,32 +16,32 @@ This document consists of:
 
 ## <a name="1"></a> 1. Introduction
 
-Slack is a workplace communication tool, “a single place for messaging, tools and files.” This means Slack is an instant messaging system with lots of add-ins for other workplace tools. Slack has an intuitive UI with both group and person-to-person messaging. These are more than 1500 apps and allows users to create their own app which has evolved Slack to become a one-stop-shop for a lot of users.
+Slack is a workplace communication tool, “a single place for messaging, tools, and files.” This means Slack is an instant messaging system with lots of add-ins for other workplace tools. Slack has an intuitive UI with both group and person-to-person messaging. These are more than 1500 apps and allow users to create their own app, which has evolved Slack to become a one-stop-shop for a lot of users.
 
 ### 1.1 Slack Context Management 
 
-Slack provides threaded messaging. It is important to understand how Yellow.ai platform handles the context in channel, threads and in DM.
+Slack provides threaded messaging. It is important to understand how Yellow.ai platform handles context in channel, threads, and DM.
 
 #### Channel
 
 1. Bot will always reply in the respective thread.
-2. Each thread has an independent context, if multiple threads are activated by same/different person → bot will maintain individual context/journey for each thread. Same journey can be run in parallel on different threads.
-3. User profile is preserved cross channels/threads/DMs, ie, sender would always remain the same.
+2. Each thread has an independent context, if multiple threads are activated by same/different person → bot will maintain individual context/flow for each thread. Same flow can be run in parallel on different threads.
+3. User profiles are preserved across channels, threads, and DMs, ensuring that the sender is always the same.
 
 ![](https://i.imgur.com/IV7TTDq.png)
 
 #### DM
 
-1. Bot will always reply in 1-1 conversation (without threads formation).
-2. Bot ignores thread formation for better conversational experience.
-3. User profile is preserved cross channels/threads/DMs, ie, sender would always remain the same.
+1. Bot will always reply in 1-1 a conversation (without threads formation).
+2. Bot ignores thread formation for a better conversational experience.
+3. User profiles are preserved across channels, threads, and DMs, ensuring that the sender is always the same.
 
 ![](https://i.imgur.com/GRn6ZVV.png)
 
 
 ## <a name="2"></a> 2. Create an App 
 
-Follow the steps below to create an app on slack: 
+Follow the steps below to create an app on Slack: 
 
 1. Visit https://api.slack.com/apps and click **Create a new app**.
 2. Enter app name and select an app development workspace.
@@ -49,7 +49,7 @@ Follow the steps below to create an app on slack:
 
 ![](https://i.imgur.com/hLHzre9.png)
 
-4. Scroll down on the event subscription section and expand **Subscribe to bot events**. Add the events scope according to your bot requirement.
+4. Scroll down to the event subscription section and expand **Subscribe to bot events**. Add the events scope according to your bot requirement.
 
 > Some of the common events- [references](https://api.slack.com/events).
 
@@ -97,9 +97,9 @@ Slack App can be built for both **single** workspace use cases (example, apps fo
 
 ### 3.1 Single Workspace
 
-Slack app uses *`bot access token (xoxb)`* to communicate with workspace users, Bot access token is obtained when the slack workspace admin add the app to their workspace.
+Slack app uses a *`bot access token (xoxb)`* to communicate with workspace users. A Bot access token is obtained when the slack workspace admin adds the app to their workspace.
 
-Follow the steps to configure single workspace: 
+Follow these steps to configure a single workspace:
 
 1. Open **OAuth & Permissions**, Click **Install App to Workspace**.
 
@@ -109,7 +109,7 @@ Follow the steps to configure single workspace:
 
 ![](https://i.imgur.com/3ufAVAy.png)
 
-3. After installing the app to workspace, go back to the **OAuth & Permission**. Copy the Bot *`Access token (xoxb- )`*. 
+3. After installing the app in workspace, go back to **OAuth & Permission**. Copy the Bot *`Access token (xoxb- )`*. 
 4. Head to Channels > Messaging > Slack > Select token type > **Slack tokens** > Add the Slack access token > Save.
 
 ![](https://i.imgur.com/8FE6ih8.png)
@@ -117,7 +117,7 @@ Follow the steps to configure single workspace:
 
 ### 3.2 Multiple Workspace
 
-Slack multi-workspace can be handled using the `OAuth token`, YM bot will map the `accessToken` to the requesting workspace's `teamId`.
+Slack multi-workspace can be handled using the `OAuth token`, and YM bot will map the `accessToken` to the requesting workspace's `teamId`.
 
 Follow the steps to configure multi-workspace: 
 
@@ -129,7 +129,7 @@ Follow the steps to configure multi-workspace:
 
 ![](https://i.imgur.com/toGSrt8.png)
 
-3. Store the accessToken of every workspace if you want to use Slack [APIs](#5). Set up a journey to capture your **`accessToken <> teamId`** mapping in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables/):
+3. Store the accessToken of every workspace if you want to use Slack [APIs](#5). Set up a flow to capture your **`accessToken <> teamId`** mapping in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables/):
 
 - Add a custom event `slack-oauth-access-token` in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/). You will receive this event each time your app is added to a workspace and will have the following schema:
 
@@ -147,8 +147,8 @@ Follow the steps to configure multi-workspace:
 }
 ```
 
-- Using the above event, you can trigger a [Journey](https://docs.yellow.ai/docs/platform_concepts/studio/build/journeys/#5-configure-start-trigger). 
-- In the triggered journey, you can access the accessToken with `{{data.event.data.accessToken}}` and teamId with `{{data.event.data.teamId}}`.
+- Using the above event, you can trigger a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow). 
+- In the triggered flow, you can access the accessToken with `{{data.event.data.accessToken}}` and teamId with `{{data.event.data.teamId}}`.
 - Store the above 2 mappings in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/table/create-tables/) using the [Database Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#database).
 
 
@@ -157,9 +157,9 @@ Follow the steps to configure multi-workspace:
 ## <a name="4"></a> 4. Adding Slack app to Direct Message/Channel
 
 After adding the Slack app to the workspace, you are required to add the app to a group or DM for testing or interacting with the bot.
-* **Adding slack app to DM**: Use the **+button** near Apps and Select the app > Add > Messages , or search the App using the top workspace search.
+* **Adding slack app to DM**: Use the **+button** near Apps and select the app > Add > Messages , or search for the App using the top workspace search.
 
-> **DM**: Bot will reply in 1-1 conversation fashion (no threads will be formed)
+> **DM**: Bot will reply in 1-1 conversation fashion (no threads will be formed).
 
 
 * **Adding slack app to Group/Channel**: Open Channel details > More > View App in channels. You can add/remove the app to the channel.
@@ -202,7 +202,7 @@ Follow the below steps to add slash command:
 
 ![](https://i.imgur.com/HU5qrLT.png)
 
-3. Enable `slack-shortcuts` event in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/). If a journey is triggered using this event, the Event Payload can be accessed in builder using {{data.event.[]}}. Schema for this event would be:
+3. Enable `slack-shortcuts` event in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/). If a flow is triggered using this event, the Event Payload can be accessed in builder using {{data.event.[]}}. Schema for this event would be:
 
 ```
 {
@@ -219,7 +219,7 @@ Follow the below steps to add slash command:
 ```
 ### 5.2 Shortcuts
 
-Similar to Slash command, this is used to send command to the bot. Shortcut can be initiated from the **shortcuts** button the message composer, or from within search. Reference: https://api.slack.com/interactivity/shortcuts/using
+Similar to Slash command, this is used to send commands to the bot. Shortcut can be initiated from the **shortcuts** button the message composer or from within search. Reference: https://api.slack.com/interactivity/shortcuts/using
 
 ![](https://i.imgur.com/2qIzPz0.png)
 
