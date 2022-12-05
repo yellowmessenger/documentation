@@ -20,8 +20,8 @@ Here are a list of product updates we made in the month of **November** to provi
 - **Selective publish** allows you to publish only selected flows from the flows you made changes to.
 - **Revert** option is available on the *Live* environment, it allows the admins to revert to any previously released bot version.
 
-<u> [Learn more.](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#23-publish-selected-flows)
-</u>
+
+[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#23-publish-selected-flows) >
 
 
 
@@ -53,8 +53,8 @@ Export a single flow or multiple flows from the bot with the **Export** option a
 * **Export table data**: A toggle is added to choose if the template must be exported with selected database tables.
 
 
-<u> [Learn more.](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow)
-</u>
+[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow)
+
 
 
 #### 2.2 Option to import templates to private marketplace/ specific subscriptions
@@ -74,8 +74,8 @@ Users can now export templates to:
 * **Subscription**: The templates exported for a subscription will be submitted for review and will be available on the export page (**Profile** > **Exports**). The admin of the subscription will be able to view, test, and publish the templates.
 * **Public**: The templates exported to the **public** marketplace will be submitted for review and will be available on the export page (**Profile** > **Exports**). The admin of the public marketplace will be able to view, test, and publish the templates.  
 
-<u> [Learn more.](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow)
-</u>
+[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow)
+
 
 
 #### 2.4 View exported templates
@@ -111,8 +111,8 @@ Previously, user selection was saved in local time which would vary across regio
 
 The live chat integrations can now be used on App bots, this allows app bots to leverage the same capabilities as cloud bots in terms of integrations supported. 
 
-<u> [Learn more.](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/livechat-integration)
-</u>
+[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/livechat-integration)
+
 
 
 #### 3.2 Multiple live agent integrations within a single bot
@@ -130,8 +130,8 @@ While using the [raise ticket node](https://docs.yellow.ai/docs/platform_concept
 
 Zendesk Sunshine Integration is now supported for executor-cloud bots. 
 
-<u> [Learn more.](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-sunshine/)
-</u>
+[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-sunshine/)
+
 
 
 #### 3.4 Custom Live agent integration v2
