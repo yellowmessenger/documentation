@@ -1,6 +1,6 @@
 ---
-title: Add bot collaborators
-sidebar_label: Add bot collaborators
+title: Bot access management
+sidebar_label: Bot access management
 ---
 
 

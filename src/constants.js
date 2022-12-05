@@ -16,7 +16,7 @@ export const popularSearchItems = [
     title: "What is a WhatsApp notification campaign?",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/inbox/google-translate-api-inbox/",
+    url: "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate/",
     title: "Get Google Translate API key",
   },
   {

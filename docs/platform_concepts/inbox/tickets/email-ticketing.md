@@ -222,10 +222,10 @@ In this section, you can set the following:
         * Group/Agent - Ticket assignment to a group and to a specific agent in that group.
 
 * Tags
-        Depending on the user's query, appropriate tags can be added. Click here for more [info](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/chats-configuration/tags) on tags.
+        Depending on the user's query, appropriate tags can be added. Click here for more [info](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags/) on tags.
 
 * Custom fields
-         This field is set by admins. Custom fields enable you to add more details to your resources that may be useful for future references. You can add new custom fields for your contacts, teammates, inbox etc. For more info on custom fields, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/Chat%20custom%20fields).
+         This field is set by admins. Custom fields enable you to add more details to your resources that may be useful for future references. You can add new custom fields for your contacts, teammates, inbox etc. For more info on custom fields, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields/).
 
 
 #### 3.2. **Email details**

@@ -26,7 +26,7 @@ The user will find the channels listed under various categories along with Chat 
 Messaging consists of channels used mainly for messaging purposes. Click on any of the below mentioned messaging channels that you wish to setup in order to understand the features, limitations and setup instructions: 
 
 1. **[SMS Inbound](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-outbound-india)** - Engage with your customers via a seamless SMS chatbot.
-2. **[Facebook Messenger](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger)** - Connect your bot to facebook messenger to automate your chat with customers.
+2. **[Facebook Messenger](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger/)** - Connect your bot to facebook messenger to automate your chat with customers.
 3. **[Instagram](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/instagram)** - Connect your bot to Instagram account to automate your chat with customers.
 4. **[Slack](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/slack2)** - Build a conversational bot for your Slack account. Create a custom bot for your own team to speed up teamwork.
 5. **[Telegram](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/telegram)** - Connect your bot with a telegram bot and allow users to have conversation with the bot.

@@ -36,7 +36,7 @@ Select a value (only one value can be selected) from the dropdown based on your 
     * **Entity**: Used to compare and branch when an [Entity](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) is detected.
     * **Entity Value**: Used to compare and branch when a Entity value is detected. 
     * **Mustache**: You can write complex variable object and compare it to other variables (example variables.var_name.key_name)
-    * **Inside agent working hours**: This can be used to branch conversation based on agent working hours configured at [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/agent-configuration/default-agent-statuses/).
+    * **Inside agent working hours**: This can be used to branch conversation based on agent working hours configured at [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox/#agentstatus).
     * **Sentiment**: This is used to branch based on the Sentiment detected on the last user message (Sentiment can be Positive/ Negative/ Neutral). For example, if questioned about the user experience in the flow, and user replies with something negative, Conditional node can be used to → connect the user directly to an agent. If the reply is of positive or neutral sentiment, you can add them to reply back later with logic etc. 
 
 

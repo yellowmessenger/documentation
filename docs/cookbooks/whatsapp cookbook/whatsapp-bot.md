@@ -38,7 +38,7 @@ References to WhatsApp bot -
 
 ![](https://cdn.yellowmessenger.com/98Uohu6oWwTw1619536105368.png)
 
-If you haven't created your chatbot yet, [create one](../getting_started) right away. Happy creating!
+If you haven't created your chatbot yet, [create one](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot) right away. Happy creating!
 
 3. To start with WhatsApp account creation, Go to **Channels > Communication > Select WhatsApp**.
 
