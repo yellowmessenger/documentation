@@ -187,9 +187,7 @@ module.exports = {
           
         "platform_concepts/getting-started",
     "platform_concepts/Getting Started/account-setup",
-    "platform_concepts/Getting Started/self-help-resources",
-    "platform_concepts/Getting Started/user-account-settings",
-  ],
+    "platform_concepts/Getting Started/user-account-settings",  ],
 },
     
 
