@@ -11,38 +11,46 @@ Yellow.ai is an online platform that helps you create powerful AI driven bots. T
 
 ## 1. Exploring Yellow.ai
 
-Here's a list of the wide variety of features our platform has got to offer
+The following are the wide variety of modules our platform has got to offer,
 
-* Create efficient bots in [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview). These bots can be used to help your customers with a particular piece of information, carry out certain actions, connect them to a live agents, etc. 
+| Modules | Descriptions |
+| -------- | -------- | 
+| [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview)  | Create user-friendly and efficient bots here . These bots can be used to help your customers with a particular piece of information, carry out certain actions, connect them to live agents, etc.   |
+|[Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox)|Manage live customer queries by connecting with live agents on multiple channels. It's a one stop solution to attend customer queries via emails and chats, stack FAQs, evaluate the metrics of live agents and more. |
+|[Insights](https://docs.yellow.ai/docs/platform_concepts/growth/growth)| Measure the perfomance of your bot such as customer location, successful API calls, customer engagement time, etc in . They help you make better business decisions. |
+|[Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)|Run marketing campaigns on Engage. They can be in the form of messages, emails,inbound campaigns,outbound campaigns,etc.|
+[Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)| Channels are platforms via which you can run your bots. Yellow.ai offers 35+ channels and a one-time connectivuty setup. |
+[Integrations](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview)| Integrate your Yellow.ai platform with various other third party applications to access their functionalities in our out of the box Integrations module.|
+[Marketplace](https://docs.yellow.ai/docs/platform_concepts/marketplacetemplates/intro)| Build bots easily from our readily available templates. These templates have been designed to suit different business use cases and industries. Pick the one that suits you from our collection of templates at Marketplace.
 
-* Measure the perfomance of your bot such as customer location, successful API calls, customer engagement time, etc in [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/growth). They help you make better business decisions. 
+## 2. Self help resources
 
-* Manage live customer queries by connecting with live agents on multiple channels in [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox). It's a one stop solution to attend customer queries via emails and chats, stack FAQs, evaluate the metrics of live agents and more. 
+We have a bunch of self help resources that will help you learn everything about our product.
 
-* Run marketing campaigns using [Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).This can be in the form of messages, emails,inbound campaigns,outbound campaigns,etc. 
+![](https://i.imgur.com/zDt56kF.png)
 
-* [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)  are platforms via which you can run your bots. Yellow.ai offers 35+ channels and a one-time connectivuty setup. 
+On the overview page, click the **Help** button to access the following,
 
-* Integrate your Yellow.ai platform with various other third party applications to access their functionalities in our out of the box[Integrations](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview) module.
+| Features | Descriptions |
+| -------- | -------- | 
+Read the docs|Go through our help articles to quickly find answers to your queries.|
+|Ask the community|You can post your queries in our [community](https://community.yellow.ai/) page and our product experts will offer relevant solutions.|
+|Chat with support|Chat with our support agents to receive quick answers to your questions.|
+|Take guided tour| Learn to build your first bot by opting for a product walkthrough or a step-by-step guide.|
+|Submit Feedback|We'd like to hear your thoughts on our product and service. Feel free to drop in your feedback.|
 
-* Build bots easily from our readily available templates. These templates have been designed to suit different business use cases and industries. Pick the one that suits you from our collection of templates at [Marketplace](https://docs.yellow.ai/docs/platform_concepts/marketplacetemplates/intro).
 
-## 2. Self Help Resources
+Apart from these, we also have training materials that will educate you on the inside out of yellow.ai. Click [here](https://ascend.yellow.ai/) to enroll.
 
-Apart from our knowledge base, we also have training materials for our product.
+Our product videos on [Youtube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) will walk you through all the yellow.ai features.
 
-[LMS](https://ascend.yellow.ai/) - This course will educate you on the inside out of yellow.ai . 
-
-[Yellow.ai Youtube](https://www.youtube.com/watch?v=LaeNb_IV-UE&list=PLlq60Q0Jkdq-LoFniVxVaji1apowWUczZ&index=1) - Product videos that will walk you through all the features.
-
-If you'd like our product experts to train you on our product, write to **academy@yellow.ai**. 
+If you'd like our experts to train you on our product, write to academy@yellow.ai.
 
 ---------------------
 
 **Next Step**
 
-Go to [cloud.yellow.ai](https://cloud.yellow.ai/) to signup. Refer to this [link](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup) for detailed steps on signing up and setting up your account.
-
+Go to [cloud.yellow.ai](https://cloud.yellow.ai/) to signup. Refer this [link](https://docs.yellow.ai/docs/platform_concepts/getting-started) for detailed steps on signing up, setting up your account and subscription details.
 
 
 
