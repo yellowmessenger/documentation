@@ -249,3 +249,14 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
   <br/>
    </div>
 </details>
+
+<details>
+ <summary>Why am I getting a fallback message even when WhatsApps list message is configured?
+</summary>
+ <div>
+  <div>To avoid a fallback message, you must store the value of the WhatsApp list option in a variable and use an IF condition to compare the variable value to trigger the respective outcome (flow, text, and so on).
+​
+</div>
+  <br/>
+   </div>
+</details>
