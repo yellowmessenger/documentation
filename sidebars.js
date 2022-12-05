@@ -107,6 +107,7 @@ module.exports = {
           items: [
             "cookbooks/voice-as-channel/callforwarding",
             "cookbooks/voice-as-channel/callrecording",
+            "cookbooks/voice-as-channel/waitmusic",
             "cookbooks/voice-as-channel/dtmf",
             "cookbooks/voice-as-channel/stt",
             "cookbooks/voice-as-channel/tts",
