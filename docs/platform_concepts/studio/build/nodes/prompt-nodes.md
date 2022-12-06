@@ -154,33 +154,15 @@ To do this, we have a **Fetch from** option in the quick reply prompt. Here, ins
 
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intended variable. For example, you can apply for a loop around options to dynamically add to them while parsing through some API responses etc.
 
-<!---
-#### Quick reply node for WhatsApp
+
+#### Quick reply buttons for WhatsApp bots
 
 Quick replies node can switch between buttons and numbered lists. WhatsApp buttons can have up to maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
 
 ![](https://i.imgur.com/Kc9r8xe.png)
 
 > Real time example: 
-> ![](https://i.imgur.com/7pp1yaf.jpg)
--->
-
-#### Quick reply buttons for WhatsApp bots
-
-:::note
-This is a **workaround** to enable clickable quick reply buttons for WhatsApp bots. In-app feature is under development.
-:::
-
-Quick Replies are currently not supported on WhatsApp. That is, buttons won't be visible on the WhatsApp chat. 
-To use buttons (Quick reply like action), use one Carousel card without adding any images.  
-
-![](https://i.imgur.com/nmWXMaR.png)
-
-You will be permitted to add only 3 buttons to the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the selected response in it. 
-
-Given below is the WhatsApp chat screen for the above flow.
-
-![](https://i.imgur.com/xw1ksvM.jpg)
+> <img src="https://i.imgur.com/7pp1yaf.jpg)))" alt="drawing" width="60%"/>
 
 ----
 
