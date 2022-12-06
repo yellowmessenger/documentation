@@ -720,6 +720,8 @@ module.exports = {
   collapsed: true,
   items: [
     "platform_concepts/growth/overview",
+    "platform_concepts/growth/voiceoverview",
+    
     {
       type: "category",
       label: "Metrics",

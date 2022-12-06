@@ -65,7 +65,7 @@ The flow completion for the selected range of dates will be displayed here. This
 ![](https://i.imgur.com/VNyptnx.png)
 
 
-Reasons for Low FCR are listed in this tab. Analyze this further by clicking the required links. 
+Reasons for Low FCR are listed in this tab to understand why certain flow completion rates might be low and nudge to what immediate steps you can take to improve them. This helps you create hypotheses around poor-performing flows, make improvements to them, and ultimately boost completion rates of bot flows. Analyze this further by clicking the required links. 
 
 <img src="https://i.imgur.com/K9ZudnP.png" alt="drawing" width="60%"/>
 
