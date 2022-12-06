@@ -142,7 +142,6 @@ module.exports = {
           collapsed: true,
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
-            "cookbooks/whatsapp-channel/setup-steps",
             "cookbooks/whatsapp-channel/wa-migration"
           ],
         },

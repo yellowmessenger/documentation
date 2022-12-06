@@ -43,6 +43,11 @@ Once you create a segment, you can view users in the segment, modify segment con
 ## 2. View segment users 
 To view users of a segment, on the User 360 page, click on the segment. 
 
+If the list is long, use the **Search** box to fetch for a specific segment.
+
+![](https://i.imgur.com/bvS0ofr.png)
+
+
 You will see the list of users on the right.
 
 ![](https://i.imgur.com/wrVY5eE.png)
