@@ -7,29 +7,31 @@ sidebar_label: August
 
 #### 1.1 Email tickets deeplink
 
-> Type - Enhancement
+| *Enhancement*
 
-Email tickets are now deeplinked to improves the overall process of navigation and usability within Inbox. Agents and Admins will find it much easier to search, and filter ticket history.
+Email tickets are now deep linked to improve the overall process of navigation and usability within Inbox. Agents and Admins can search, and filter ticket history when the emails are configured for support ticketing.   
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#1-email-channel-and-mail-forwarding). 
 
-![](https://i.imgur.com/0ozN6uc.png)
+
 
 
 
 #### 1.2 No code email ticketing
 
-> Type - New feature
+| *New feature*
 
 
-One can configure email ticketing channel and raise tickets in Inbox cloud without the hassle of getting code access, app object, or  main function etc anymore. This speeds up the process and the experience of going live with email channel for support usecases.
+One can configure an email ticketing channel and raise tickets in the Inbox cloud without the hassle of getting code access, app object, main function, etc anymore. This speeds up the process and the experience of going live with an email channel for support use cases.   
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/manualticket). 
 
-![](https://i.imgur.com/JInKmIw.png)
 
 
-#### 1.3 Queued chats access for Inbox Supervisor
 
-> Type - Enhancement
+#### 1.3 Queued chat access for Inbox Supervisor
 
-Queued chats would now be visible to Inbox Supervisor role. They also have more control over queued chats wherein admins & aupervisors can now assign or push chats from queue to agents in case of need.
+| *Enhancement*
+
+[Queued chats](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat/#13-queued-chats) will now be visible to the Inbox Supervisor role. They also have more control over queued chats wherein admins & supervisors can now assign or push chats from the queue to agents in case of need.
 
 ***
 
@@ -39,32 +41,32 @@ Queued chats would now be visible to Inbox Supervisor role. They also have more 
 
 #### 2.1 Enriched channel filter
 
-> Type: Enhancement
+| *Enhancement*
 
-To understand user behaviour in much better depth, YellowMessenger channel filter is now divided into -
+To understand user behavior in depth, the YellowMessenger channel filter is now divided into:  
+1. **Web** - users interacting with bots deployed on websites.
+2. **Mobile** - users interacting with the bot via mobile apps.  
 
-1. Web - users interacting with bot deployed on websites
-
-2. Mobile - users interacting with bot via mobile apps
-
-Additionally, Yellow API is a new channel introduced for users who only use our backend API to deploy bots with their own in-house UI.
+Additionally, **Yellow API** is a new channel introduced for users who only use our backend API to deploy bots with their in-house UI.
 
 #### 2.1 Failure reasons in Notifications report
 
-Introduced a new column, *ERRORMESSAGE*, in the Notifications report of Data Explorer specifying the reasons behind failure of notifications delivery. For example, Recipient number is invalid, the user doesn’t have a WhatsApp account and so on.
+| *Enhancement*
 
-There are filters to drill down data that helps understand different reasons for notifications failing, retargeting of those users, plan how to avoid such failures in the future, etc.
 
-  ![](https://i.imgur.com/R2rvE4a.png)
+Introduced a new column, **ERRORMESSAGE**, in the Notifications report of **Data Explorer** specifying the reasons behind the failure of notifications delivery. 
+There are filters to drill down data that help understand different reasons for notifications failing, retargeting of those users, planning how to avoid such failures in the future, etc.   
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer/). 
 
-  
+
+
 
 #### 2.3 Extended session period (24 hrs)
 
-The definition of a session is now updated to user interaction occurring with the bot within a 24-hours window. A single session is considered for any number of interactions the user has within 24 hours from the start of a session. A new session starts after 24 hours. This is to ensure better accuracy in the Sessions data and bring consistency across channels (like WhatsApp).
+| *Enhancement*
 
-  
 
+The definition of a session is now updated to user interaction occurring with the bot within a 24-hours window. A single session is considered for any number of interactions the user has within 24 hours from the start of a session. A new session starts after 24 hours. This ensures better accuracy in the Sessions data and brings consistency across channels (like WhatsApp).   
 From a billing point of view, irrespective of the number of messages sent in the last 24 hours time frame, only 1 session will be counted for billing purposes.
 
   ---
@@ -77,32 +79,38 @@ From a billing point of view, irrespective of the number of messages sent in the
   
 #### 3.1 CleverTap integration  
 
-The CleverTap integration allows you to create Whatsapp templates on Yellow.ai and run campaigns for your user base directly on CleverTap. [Know more details](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/clevertap).
+| *New feature*
+
+
+The CleverTap integration allows you to create Whatsapp templates on Yellow.ai and run campaigns for your user base directly on CleverTap.   
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/clevertap). 
+
+
   
-#### 3.2 Media File support with caption for custom live agent integrations  
+#### 3.2 Integration UI enhancements
 
-> Type: Fix
-
-Earlier, users were not able to receive videos that were sent during custom live chat. This has now been fixed and clients using Custom Live Agent will now receive media files with correct captions.  
-  
-#### 3.3 Integration UI enhancements
-
-> Type: Enhancements
-> 
-The following are the enhancements made to the UI - 
+| *Enhancement*
 
 * Updated the Descriptions section on the Integration page with improved UX. 
-* Added video tutorials for some complex integrations that would help bot builders with setting up flows
+* Added video tutorials for complex integrations that would help bot builders set up flows.
+
+
 
   
-#### 3.4 In-Bot reply events for Webhook based integrations  
+#### 3.3 In-Bot reply events for Webhook-based integrations  
+
+| *Enhancement*
+
 
 Clients using webhook-based live chat integrations will receive the agent reply events in the bot itself so that they can perform further operations based on that event data which was not supported earlier  
   
-#### 3.5 Cashfree - Whatsapp payment  integration
+#### 3.4 Cashfree - Whatsapp payment  integration
 
-With this integration, you can now generate Cashfree tokens that can be passed on to WhatsApp pay to process payments. Post transactions you can also receive notifications on payment statuses.  
+| *New feature*
 
+
+With this integration, you can now generate Cashfree tokens that can be passed on to WhatsApp pay to process payments. Post transactions you can also receive notifications on payment statuses.    
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/cashfree). 
 
 ----
 
@@ -111,15 +119,12 @@ With this integration, you can now generate Cashfree tokens that can be passed o
   
 #### 4.1 New Marketplace components were added
 
-Following marketplace templates were relased:
+| *New feature*
 
 
-* Healthcare: Collect reports
-   * Access and download lab test reports in pdf format.
-*   HR
-    * Use cases like apply for leave, dispatch of onboarding kit, compensation roll out and employee feedback.
-*   Energy and Utility
-   * Use cases like billing enquiries, payments, meter readings; change of personal information, address, and also provides information around new connections, transfer of connections, and latest customer benefit schemes.
+* **Healthcare**: Collect reports, access, and download lab test reports in PDF format.
+*   **HR**: For use cases like applying for leave, dispatch of onboarding kit, compensation roll out, and employee feedback.
+*   **Energy and Utility**: For use cases like billing inquiries, payments, meter readings; change of personal information, and address, and also provides information around new connections, transfer of connections, and latest customer benefit schemes.
 
 ***
 
@@ -127,51 +132,22 @@ Following marketplace templates were relased:
 
 #### 5.1 Test campaign feature for outbound campaigns
     
-> Type: New feature
+| *New feature*
 
-You can schedule campaigns targeting larger audience and test their notification messages just before launching it. You can add up to five test users and send real-time notifications
-There is no need to create separate campaigns to check the end-user experience.
+You can schedule campaigns from Cloud Engage targeting a larger audience and test their notification messages just before launching them. You can add up to five test users and send real-time notifications.   
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign/#6-test-campaigns-recommended). 
 
-:::note
-Available only from Cloud Engage.
-:::
-
-[Documentation link](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign/#3-test-campaigns-recommended)
-
- 
-How does it help the customers?
-
--   Lets business go through the end-user experience
--   Ensures variables are mapped to the respective column
--   Prevents business from sending wrong content to the customers
--   Reduces campaign failures due to parameters mismatch or images size issues
-    
 
 #### 5.2  App to cloud migration
 
-> Type: Enhancement
-
-Category : Upgradation to Cloud Engage
-
-App bots are provided with an option to upgrade the Engage module by migrating all the campaigns and audience data with simple steps.
+| *Enhancement*
 
 
-App bots can now use new features available from CLOUD engage with improved UI/UX.
-
-The following are new in the New Engage Cloud -
-
+App bots are provided with an option to upgrade the Engage module by migrating all the campaigns and audience data with simple steps.   
+The following are new in the New Engage Cloud: 
 -   User 360
 -   Inbound Campaigns
 -   Template manager
--   Viber Business outbound campaign
-
-
-
-[Documentation link](https://docs.yellow.ai/docs/cookbooks/Upgrade_new_engage_app)
-
- 
-:::note
-Limitation:The migration to the new platform is not allowed for app bots that have schedule  (Status:pending) cron jobs with Function Executions.
-:::
-  
+-   Viber Business outbound campaign  
+[**Learn more here**](https://docs.yellow.ai/docs/cookbooks/Upgrade_new_engage_app). 
 

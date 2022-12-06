@@ -174,6 +174,3 @@ Objects inside Objects are now supported for V2 Action Nodes.
 Moving towards better code quality and assurance, boilerplate code coverage has been written for integrations which will be extended through more test cases.
 
 
------
-
-Other updates coming soon!
