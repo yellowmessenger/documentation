@@ -243,7 +243,7 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
  <summary>I have configured Hindi language but it is triggering fallback/different journey? What might be the reason?
 </summary>
  <div>
-  <div>In a flow, if you have selected "hi" (ISO code) for Hindi (button value), then it might be triggering another intent which you would have configured earlier ("hi" intent configured). To overcome this problem, set a variable, assign the variable value to Hindi language (hi), and then connect it to the Set language node.
+  <div>In a flow, if you have selected "hi" (ISO code) for Hindi (button value), then it might be triggering another intent which you would have configured earlier ("hi" intent configured). To overcome this problem, set a variable, assign the variable value to Hindi language (hi), and then connect it to the **Set language** node.
 ​
 </div>
   <br/>
