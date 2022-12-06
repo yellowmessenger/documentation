@@ -1,13 +1,15 @@
 ---
 title : Engage FAQs
 sidebar_label : Engage FAQs
+featured: true
+rank: 1
 ---
 
 
 ### Email outbound
 
 <details>
- <summary>Does the platform restrcit sending notifications/emails to duplicates?</summary>
+ <summary><h3>Does the platform restrcit sending notifications/emails to duplicates?</h3></summary>
  <div>
   <br/>
   <div>Yes, the platform automatically identifies duplicate identifiers before sending campaign messages or notifications.</div>
