@@ -4,11 +4,11 @@ export const popularSearchItems = [
     title: "Create and launch WhatsApp notification campaigns",
   },
   {
-    url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-ym/",
+    url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-ym",
     title: "Send WhatsApp Notifications",
   },
   {
-    url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-template/",
+    url: "https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-notification-template",
     title: "Apply for WhatsApp Notification Templates",
   },
   {
@@ -16,7 +16,7 @@ export const popularSearchItems = [
     title: "What is a WhatsApp notification campaign?",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate/",
+    url: "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate",
     title: "Get Google Translate API key",
   },
   {
@@ -24,7 +24,7 @@ export const popularSearchItems = [
     title: "Access data from an API response",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration/",
+    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration",
     title: "Setup a WhatsApp chatbot",
   },
 ];
