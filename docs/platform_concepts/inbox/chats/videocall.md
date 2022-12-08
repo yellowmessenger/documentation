@@ -1,5 +1,5 @@
 ---
-title: Configure and user Video call in chats 
+title: Configure and use video call in chats 
 sidebar_label : Video calling 
 ---
 
