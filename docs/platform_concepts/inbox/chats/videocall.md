@@ -93,7 +93,7 @@ When the customer has accepted to have a video call with the agent, Agent can in
 
 <img src="https://i.imgur.com/nSHQYWe.png" alt="drawing" width="60%"/>
 
-- Customer will have all the video calling facilities. They can disconnect/leave the call after finding the resolution. 
+- Customer will have all the video calling facilities (view in full screen, share screen with agent or customer, mute audio, mute video, disconnect, etc.). They can disconnect/leave the call after finding the resolution. 
 
 
 
