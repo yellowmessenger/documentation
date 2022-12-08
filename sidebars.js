@@ -790,6 +790,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/telegram",
         "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/whatsapp-configuration",
+        "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },
     {
