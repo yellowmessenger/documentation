@@ -1,9 +1,8 @@
 ---
 title: Function
 sidebar_label : Function (code)
+keywords : [code, function, math, calculations]
 ---
-
-**Keywords** : code, function, math, calculations 
 
 In this article, you will learn: 
 
