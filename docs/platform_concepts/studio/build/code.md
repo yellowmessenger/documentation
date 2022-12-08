@@ -3,6 +3,8 @@ title: Function
 sidebar_label : Function (code)
 ---
 
+**Keywords** : code, function, math, calculations 
+
 In this article, you will learn: 
 
 1. [How to add a new function?](#1) 
@@ -17,6 +19,7 @@ In this article, you will learn:
 :::note
 To work around this section, you will require minimal coding skills.
 :::
+
 
 The Function section is used to add function code. It is available in **Studio** -> **Build** -> **Function**.
 
@@ -306,3 +309,4 @@ The text node first prints the current timestamp and the second message is exact
 
 * Create your own function and use it by adding an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#api) in the flow.
 * You can visit our [community](https://community.yellow.ai/) and share your ideas with other fellow bot builders!!
+
