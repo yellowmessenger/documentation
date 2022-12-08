@@ -48,6 +48,7 @@ The bold line represents the metric for the current duration and the dotted line
 
 ### 1.1 Users 
 **Users**: This shows the unique number of users who conversed with the bot.
+
 **Calculation logic**: It is the unique count of users from the list of messages exchanged on the bot. It is calculated using the [hyperloglog](https://en.wikipedia.org/wiki/HyperLogLog) algorithm.
 
 
@@ -57,7 +58,8 @@ The bold line represents the metric for the current duration and the dotted line
 
 ### 1.2 Messages 
 
-**Messages**: This shows the total number of messages exchanged, along with the bifurcation of those exchanged with the bot and those with live agents.
+**Messages**: This shows the total number of messages exchanged, along with the bifurcation of those exchanged with the bot and users (messages exchanged between bot and user) and live agents and users (messages exchanged between agent and user).   
+
 **Calculation logic**: It is the sum of all the messages exchanged. The count includes user, bot, agent, and notification messages.
 
 <img src="https://i.imgur.com/ox2R4sE.png" alt="drawing" width="80%"/>
@@ -65,7 +67,8 @@ The bold line represents the metric for the current duration and the dotted line
 
 ### 1.3 Sessions
 
-**Sessions**: This shows the total number of sessions created by users, along with the count of bot-only sessions and sessions with both bot and live agent.
+**Sessions**: This shows the total number of sessions created by users, along with the count of bot-only sessions and sessions with both bot (sessions handled by bot only) and bot & live agent (sessions handled by both bot and agent).
+
 **Calculation logic**: It is the sum of all the sessions created by the user in the selected period.
 
 <img src="https://i.imgur.com/F008VRJ.png" alt="drawing" width="80%"/>
@@ -188,13 +191,17 @@ FCR = [(Flowy Completed Events) / (Flow Started Events)]* 100
 
 ### 7.3 Deflection Rate
 
-The deflection rate is the % age of queries that the bot was able to resolve without having to transfer the chat to a live agent. This is a measure of self-serve enabled by the bot.
+The deflection rate is the % age of queries that the bot was able to resolve without transferring the chat to a live agent. This is a measure of self-serve enabled by the bot.
 
 **Calculation**: For every conversation that happens on the bot, a human takeover event is pushed when the user requests for or is automatically transferred to a live agent. This metric is a count of all the sessions that do not have this human takeover event.
 
 **Deflection rate** = (Bot sessions without agent handover / Total sessions) * 100
 
 <img src="https://lh5.googleusercontent.com/WPfVI_IJMFdrI8hsg_K7TzezDieOFbFzbh3KEXKsH9xEEU0BiU8XeKrePydcgMzGtNg61qS_YkX1dQ-VPNUp5IC4qBRmGB5pSbYiRHL5zdp6KxTJ2JoxzUoyFpSkCyF5iLkOHI6GE2byj9AtfyNyhO8mUOWrqfBJ7ugi1bmhxIeQpuhOH4Tv-oNRUEmKQw" alt="drawing" width="80%"/>
+
+:::note
+**Human takeover** rate is now replaced with Deflection rate now because it is a better indication of bot performance.
+:::
 
 ## 8. User feedback
 

@@ -154,33 +154,15 @@ To do this, we have a **Fetch from** option in the quick reply prompt. Here, ins
 
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intended variable. For example, you can apply for a loop around options to dynamically add to them while parsing through some API responses etc.
 
-<!---
-#### Quick reply node for WhatsApp
+
+#### Quick reply buttons for WhatsApp bots
 
 Quick replies node can switch between buttons and numbered lists. WhatsApp buttons can have up to maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
 
 ![](https://i.imgur.com/Kc9r8xe.png)
 
 > Real time example: 
-> ![](https://i.imgur.com/7pp1yaf.jpg)
--->
-
-#### Quick reply buttons for WhatsApp bots
-
-:::note
-This is a **workaround** to enable clickable quick reply buttons for WhatsApp bots. In-app feature is under development.
-:::
-
-Quick Replies are currently not supported on WhatsApp. That is, buttons won't be visible on the WhatsApp chat. 
-To use buttons (Quick reply like action), use one Carousel card without adding any images.  
-
-![](https://i.imgur.com/nmWXMaR.png)
-
-You will be permitted to add only 3 buttons to the Carousel. Create a [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the selected response in it. 
-
-Given below is the WhatsApp chat screen for the above flow.
-
-![](https://i.imgur.com/xw1ksvM.jpg)
+> <img src="https://i.imgur.com/7pp1yaf.jpg)))" alt="drawing" width="60%"/>
 
 ----
 
@@ -538,16 +520,15 @@ This node helps you to skip triggering of NLU, intents, or entities for a respec
 
 User inputs are stored in a variable through the Store comment node without triggering the NLU of that particular flow.
 
-
 For example, you have created a bot to order food from a restaurant. You want to allow the  user to provide feedback after delivering the food. In such cases, you can use the store comment node to provide feedback without triggering the NLU of the respective flow.
+
+![](https://i.imgur.com/oub8uVE.png)
 
 :::note
 It is recommended not to use Quick reply option for Store comment node.
 :::
 
-![](https://i.imgur.com/oub8uVE.png)
-
-
+In the store comment node, there is a toggle to enable Quick reply. Quick reply in the comment store node captures both the comment and the Quick reply response. The comment will be stored as a fallback when the user hits enter after writing the comment, and if the user clicks on Quick reply, then that Quick reply response will be stored in the variable.
 ---
 
 ### 2.6 File Prompt 

@@ -79,7 +79,7 @@ module.exports = {
       collapsed: true,
       items: [
 
-        {
+       /* {
           type: "category",
           label: "Understanding channels 101",
           collapsed: true,
@@ -89,7 +89,8 @@ module.exports = {
             "cookbooks/Understanding channels 101/gbm-chatbot-101",
 
           ],
-        },
+        }, */
+        
 
     {
       type: "category",
@@ -107,6 +108,7 @@ module.exports = {
           items: [
             "cookbooks/voice-as-channel/callforwarding",
             "cookbooks/voice-as-channel/callrecording",
+            "cookbooks/voice-as-channel/waitmusic",
             "cookbooks/voice-as-channel/dtmf",
             "cookbooks/voice-as-channel/stt",
             "cookbooks/voice-as-channel/tts",
@@ -141,7 +143,6 @@ module.exports = {
           collapsed: true,
           items: [
             "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
-            "cookbooks/whatsapp-channel/setup-steps",
             "cookbooks/whatsapp-channel/wa-migration"
           ],
         },
@@ -719,6 +720,8 @@ module.exports = {
   collapsed: true,
   items: [
     "platform_concepts/growth/overview",
+    "platform_concepts/growth/voiceoverview",
+    
     {
       type: "category",
       label: "Metrics",

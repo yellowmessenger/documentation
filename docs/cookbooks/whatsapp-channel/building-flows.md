@@ -35,8 +35,8 @@ Know more about WhatsApp List [here](https://docs.yellow.ai/docs/platform_concep
 
 #### But there are a few limitations:
 
-* Carousel node will not work on whatsapp 
-* In date node, the web view will not be available on whatsapp
+* Carousel node will not render multiple cards like it does in a website carousel. You can only use one card at a time.
+* In date node, the web view will not be available on whatsapp.
 * Try your bot is not the preview for whatsapp but for web. For whatsapp preview use the demo whatsapp account setup by yellow.ai
 * When you configure platform quick replies, they appear on whatsapp as a list of numbered items in text. 
 * The current feedback prompt present on platform doesn't work on WhatsApp.
