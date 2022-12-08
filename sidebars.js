@@ -79,7 +79,7 @@ module.exports = {
       collapsed: true,
       items: [
 
-        {
+       /* {
           type: "category",
           label: "Understanding channels 101",
           collapsed: true,
@@ -89,7 +89,8 @@ module.exports = {
             "cookbooks/Understanding channels 101/gbm-chatbot-101",
 
           ],
-        },
+        }, */
+        
 
     {
       type: "category",

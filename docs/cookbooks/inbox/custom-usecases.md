@@ -46,3 +46,4 @@ The dummy name and query won’t be displayed to the user.
 
 1. In the raise ticket action node on the error node, use a send email action node.
 2. Create a database and use a database node to insert the ticket details into the database.
+

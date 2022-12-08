@@ -217,7 +217,7 @@ Clients who are having their solution in Genesys On-prem can also integrate with
 
 
 An all-new analytics dashboard- **Insights** > **Voice overview** is introduced specifically for voice bots.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/growth/voiceoverview).
   
   
 
