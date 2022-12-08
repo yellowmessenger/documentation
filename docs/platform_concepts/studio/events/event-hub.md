@@ -3,8 +3,6 @@ title: Events
 sidebar_label: Event
 ---
 
-
-
 Event is general programming term which is used to describe an occurrence recognised by the bot (mostly asynchronous). When your bot is operational, it generates various events which can be used to trigger a journey or automation workflow. Event helps you handle those occurrences and perform some tasks.
 For example, popup closed is an event, you can handle it by sending another message in the journey.
 
@@ -272,6 +270,7 @@ You can create custom events through API or builder nodes. However, the event de
 
 * When this event triggers via. API, the event is recorded and sent to the bot only when the event is active.
 * When the event triggers via. Builder nodes, the event is recorded only if the event is active. The event originates from the executor services.
+* User ID is required to pass data.
 
 To create a custom event, follow these steps -
 
@@ -283,7 +282,8 @@ To create a custom event, follow these steps -
 3. Then, push the event data using the Push user event (`POST /v1/internal/event/`)(https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) API.
 
 :::note
-Once a custom event is created, you can activate, deactivate, edit or delete a custom event. 
+1. The above-mentioned API doesn't allow genric payloads and cannot be used as a general webhook.
+2. Once a custom event is created, you can activate, deactivate, edit or delete a custom event. 
 :::
 
 

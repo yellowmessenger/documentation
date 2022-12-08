@@ -825,6 +825,7 @@ module.exports = {
         "platform_concepts/appConfiguration/leadSquared-wa-connector",
         "platform_concepts/appConfiguration/livechat-integration",
         "platform_concepts/appConfiguration/locobuzz-livechat",
+        "platform_concepts/appConfiguration/magento",
         "platform_concepts/appConfiguration/microsoft-dynamics",
         "platform_concepts/appConfiguration/microsoft-graph",
         "platform_concepts/appConfiguration/nice-incontact",
