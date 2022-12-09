@@ -466,6 +466,7 @@ module.exports = {
               "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
               "platform_concepts/inbox/inbox-settings/productivitytools/knowledgebase",
               "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
+              "platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte",
                      ],
             },
 
