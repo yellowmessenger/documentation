@@ -11,11 +11,10 @@ You can export a bot template to the Marketplace by selecting flows that you hav
 :::
 
 
-
 In this article, you will understand:
 
 * [How to export bot template to Marketplace](#1-export-bot-template)
-* [How to export flows via Access control](#2-export-flow-via-access-control)
+
 
 ## <a name="home"></a> 1. Export bot template
 
@@ -92,46 +91,4 @@ The templates exported to the public marketplace must be submitted for review a
 
 ![](https://i.imgur.com/e6T16cV.png)
 
-## <a name="exportflow"></a> 2. Export flow via Access control
-
-To export flow via Acces control, follow the given steps:
-
-1. Click **Access Control**.
-
-![](https://i.imgur.com/2LmTBoA.png)
-
-
-2.  Click **Marketplace** > **Upload component** > **Journey**.  
-      
-![](https://i.imgur.com/L6ijwJK.png)
-
-3. Fill in relevant details. Click **Next** > Next for Bot variables > **Submit**.  
-      
-![](https://i.imgur.com/yvJl50R.jpg)
-      
-![](https://i.imgur.com/3s6LBMN.png)
-      
-![](https://i.imgur.com/UGtIhmG.png)
-
-4. Click  **Test** (Don’t click on “Submit for review”). Click on Test (again) > Select environment as **Staging** and the bot name where the flow needs to be copied. Click on **Import**.
-  
-:::note 
-All the flows tagged to a particular category will also get copied to another bot along with the test flow. Thus, we recommend creating a different category for the flow that needs to be copied to other bots.  
-:::
-
-![](https://i.imgur.com/nNj4fLg.png)
-  
-![](https://i.imgur.com/anejKNs.png)
-
-![](https://i.imgur.com/jPDf6T8.png)
-
-![](https://i.imgur.com/JY4Sy85.png)
-
-5. Check the bot to which the flow is copied. The copied flow is reflected with a red dot.  
-
-:::note 
-In case any other flows get copied along with the test flow, this would have happened because all the flows were tagged under a single category and unwanted flows can thus be deleted manually.  
-:::
-     
-![](https://i.imgur.com/XF0tnuq.png)
 

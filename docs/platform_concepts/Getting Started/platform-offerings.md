@@ -72,7 +72,7 @@ Only superadmin can share bots and revoke access.
 
 ## 6. Connect bot to different channels
 
-You have the flexibility to reach out to your customers on different channels for better reachability. Integrate your bot seamlessly with various channels according to your business requirements.
+You have the flexibility to reach out to your customers on different channels for better reachability. Integrate your bot seamlessly with various channels according to your business requirements. You can also add the channels for your bot from the Overview page.
 
 <img src="https://i.imgur.com/qSqZG5T.png)" alt="drawing" width="100%"/>
 
