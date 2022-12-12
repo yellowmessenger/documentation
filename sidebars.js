@@ -60,6 +60,7 @@ module.exports = {
         "cookbooks/inbox/emailvschat",
         "cookbooks/inbox/notifyagents",
         "cookbooks/inbox/priority-assignee",
+        "cookbooks/inbox/transferwithoutinfo",
       ],
     },    
     {
