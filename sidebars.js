@@ -59,6 +59,7 @@ module.exports = {
         "cookbooks/inbox/custom-usecases",
         "cookbooks/inbox/emailvschat",
         "cookbooks/inbox/notifyagents",
+        "cookbooks/inbox/priority-assignee",
       ],
     },    
     {
