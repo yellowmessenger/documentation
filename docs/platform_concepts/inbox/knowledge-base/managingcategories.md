@@ -28,7 +28,7 @@ Categories basically cover the broad theme of your product or service. Taking an
 - Terms & condition
 
 :::note
-Only **Admin, Inbox Admin & Inbox Supervisor** can create, read, update and delete content in the knowledge base. 
+Only **Admin, Inbox Admin & Inbox Supervisor** can create, read, update and delete content in the knowledge base.   
 **Inbox Agents** can only read articles.
 :::
 
@@ -55,7 +55,7 @@ One can also edit the name, description, and icon of the category later by click
 ![enter image description here](https://cdn.yellowmessenger.com/s2hX88FlnaUt1664165430729.png)
 :::
 
-**Deleting a category**
+#### Deleting a category
 
 5. To delete a category, select the category that you want to delete in the left-side navigation bar. Click the three-dot icon and select **delete**.
 
@@ -89,7 +89,7 @@ Follow the below steps for managing a folder:
 Although we'd recommend not to have more than 3/4 levels of nesting for the sake of end-user experience & navigation.
 :::
 
-**Deleting a folder**
+#### Deleting a folder
 
 6. To delete a folder, click on the three dots on the folder either from the left navigation bar or from the middle and then **Delete**.
 

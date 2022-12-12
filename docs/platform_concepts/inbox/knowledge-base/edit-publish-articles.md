@@ -7,8 +7,9 @@ sidebar_label : Edit & publish articles
 When creating these knowledgebase articles, multiple updates and reviews must be done before you publish it. Here's how you can effectively manage, edit & publish articles in the knowledge base.
 
 :::note
-Only **Admin, Inbox Admin & Inbox Supervisor** can create, read, update and delete content in the knowledge base. 
-**Inbox Agents** can only read articles
+Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain) to configure knowledgebase settings. 
+- **Admin, Inbox Admin & Inbox Supervisor** can create, read, update and delete content in the knowledge base. 
+- **Inbox Agents** can only read articles.
 :::
 
 In this article, you will learn:

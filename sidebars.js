@@ -59,6 +59,8 @@ module.exports = {
         "cookbooks/inbox/custom-usecases",
         "cookbooks/inbox/emailvschat",
         "cookbooks/inbox/notifyagents",
+        "cookbooks/inbox/priority-assignee",
+        "cookbooks/inbox/transferwithoutinfo",
       ],
     },    
     {
@@ -751,8 +753,9 @@ module.exports = {
       label: "Data explorer",
       collapsed: true,
       items: [
-        //Add default table + Custom table 
+        // default table + Custom table 
         "platform_concepts/growth/data-explorer",
+        "platform_concepts/growth/customtables",
       ],
     },
 

@@ -12,7 +12,7 @@ Multilingual Knowledge base is a self serve medium to automate incoming support 
 
 ![](https://i.imgur.com/ZiTcxez.png)
 
-**Features**
+**Knowledgebase Features**
 
 - In addition to our chatbots, customers can create & publish knowledge bases [External Knowledgebase] for their products & services. It is another medium to enhance the customer support experience by providing in-depth article explanations and offer better discoverability since knowledgebase  articles are indexed in search engines.
 - Customers can also create and maintain knowledge bases for agents [Internal Knowledgebase] to train and onboard them faster and help them in need. It helps agents reduce the time taken to search for information spread across multiple systems and share it in the tickets they're handling.
