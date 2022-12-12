@@ -9,7 +9,7 @@ Yellow.ai's Notification API lets you send business-initiated messages from the 
 
 The API supports different channels (SMS, email, and WhatsApp) and makes it more easy for developers to integrate it anywhere in less time.
 
-**To jump to Notification API collections for each channel**, see
+**To view Notification API collections for each channel**, see
 
 [![](https://i.imgur.com/adPhuBf.png)](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8).
 
@@ -28,16 +28,57 @@ Additionally, our outbound IPs given below must be whitelisted for the reports c
 *   13.71.49.46
 
 
-### 1.3 Enable API Access
+### 1.3 Enable Notification API
 
 In order to use the Notification API you have to enable it on the platform as explained here
 
 1.  Go to the **Engage** module,
-2.  Navigate to **Preferences** and
+2.  Navigate to **Preferences**.
 3.  Click **Enable API Access**.
     
+  ![](https://i.imgur.com/h40gmOZ.png)
 
-> **Note**: If Engage is not enabled, you will get a `400` error (API access is not enabled).
+
+:::note
+If notification API is not enabled for the bot, you will get a `400` error (API access is not enabled).
+:::
+
+### 1.4 Send delivery status to Webhook
+
+You can use webhooks to share delivery notifications in real-time from yellow.ai to third-party applications. A Webhook is a HTTP callback function that allows communication between two applications.
+
+To enable sending delivery staus to the Client's webhook:
+
+1. Go to the **Engage** module,
+2. Navigate to **Preferences**.
+3. Enable **Postback URL**.
+
+   ![](https://i.imgur.com/vV8neaA.png)
+
+3. In **Send the delivery status to (applicable only for notifications API)**, enter the Webhook URL to which the delivery needs to be pushed. Ensure that no authentication is required to push data to the Webhook URL.
+
+### 1.5 Send notification API reports
+
+You can send reports of notifications sent through API to your preferred users. The report is sent as a CSV file for the chosen duration.
+
+To send Notification API reports to your preferred recipients:
+
+1. Go to the **Engage** module,
+2. Navigate to **Preferences**.
+3. Enable **Notification API reports**.
+
+   ![](https://i.imgur.com/tcwOzpL.png)
+
+4. In **Send notification API reports to**, enter email IDs of each recipient to whom you want to send reports. Press Enter after entering each email ID.
+
+   ![](https://i.imgur.com/dEHh91d.png)
+
+5. In **for time period between**, set the duration (**Start date** and **End date**)for which you want to send the report.
+6. To also send report of WhatsApp notification API, enable **Whatsapp v1 Notification API**.
+
+
+
+
 
 ## 2. Notification API Details
 
@@ -70,7 +111,8 @@ In order to use the Notification API you have to enable it on the platform as ex
 | `userDetails` | Object | Yes | Details of the user to be notified. Eg. Phone Number for WhatsApp. |
 | `notification`  (fields: `params`) | Object | Yes | Template details |
 | `media` | Object | Optional | Template Media URL, Quick Reply Payload can be passed here |
-| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - To receive delivery updates on clients webhook. Configurable from platform for now. <br/><br/>Please go to **Engage** > **Preferences** for setting up the `postbackUrl.` <br/><img src="https://i.imgur.com/8Y2NOvO.png" width="500"/>|
+| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - Used to receive delivery updates on the client's webhook. <br/>To receive delivery updates on the clients webhook, enable **Postback URL** in **Engage** > **Preferences** and enter the Webhook URL in **send the delivery status to**. <br/><img src="https://i.imgur.com/32xQQhQ.png" /><br/>* **Note**: Ensure the Webhook URL does not require any authentication*.
+
 
 ##### `userDetails` Object
 

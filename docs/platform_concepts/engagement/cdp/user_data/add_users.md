@@ -98,7 +98,7 @@ To ensure that your users are imported successfully without issues, verify the f
 
 * Correct column headers: Make sure that the column headers match with the name of the user property that you want to map. These names are case sensitive and the column header should not include spaces before/after. 
 
-:::warning
+:::note
 If any of these column headers do not match with any user property, the entire CSV import will fail.
 :::
 
@@ -148,7 +148,7 @@ When the CSV file includes a user record with a userId that already exists in th
 |--------|-----------|-------------------|--------------|-----------|
 |    123 | Sarthak   | sarthak@yellow.ai | 918888888888 | tag3,tag4 |
 
-:::warning
+:::note
 Sometimes you might notice that the exact number of records you imported through CSV won't show up in the users table. This could be because some of the records being imported were merged with existing records.
 :::
 
