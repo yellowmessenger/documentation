@@ -906,6 +906,7 @@ module.exports = {
               "platform_concepts/mobile/chatbot/xamarin",
               ],
             },
+            "platform_concepts/mobile/chatbot/mobile-sdk-faq",
           ],
         },
 
