@@ -7,17 +7,17 @@ title : Notification API
 
 Yellow.ai's Notification API lets you send business-initiated messages from the various supported channels directly from your CRM or internal Systems.
 
-The API supports different channels (SMS, email, and WhatsApp) and makes it more easy for developers to integrate it anywhere in less time.
+The API supports different channels (SMS, email, and WhatsApp) and makes it easier for developers to integrate it anywhere in less time.
 
-**To jump to Notification API collections for each channel**, see
+**To view Notification API collections for each channel**, see
 
 [![](https://i.imgur.com/adPhuBf.png)](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8).
 
 ### 1.1 Features of the Notification API
 
 *   Single endpoint for multiple channels
-*   Enable range of API services with one-click
-*   Real-time reports on YM Platform with the basic features of the BI tool to visualise your data
+*   Enable a range of API services with one-click
+*   Real-time reports on the YM Platform with the basic features of the BI tool to visualise your data
 *   Callback Webhook Configuration support to receive delivery updates directly on your system
 
 ### 1.2 IPs Whitelisting
@@ -28,16 +28,63 @@ Additionally, our outbound IPs given below must be whitelisted for the reports c
 *   13.71.49.46
 
 
-### 1.3 Enable API Access
+### 1.3 Enable Notification API
 
-In order to use the Notification API you have to enable it on the platform as explained here
+To use the Notification API you have to enable it on the platform as explained here
 
 1.  Go to the **Engage** module,
-2.  Navigate to **Preferences** and
+2.  Navigate to **Preferences**.
 3.  Click **Enable API Access**.
     
+  ![](https://i.imgur.com/h40gmOZ.png)
 
-> **Note**: If Engage is not enabled, you will get a `400` error (API access is not enabled).
+
+:::note
+If notification API is not enabled for the bot, you will get a `400` error (API access is not enabled).
+:::
+
+### 1.4 Send delivery status to Webhook
+
+You can add your webhook to receive delivery status updates in real time along with the custom payload from yellow.ai.
+
+To enable receiving delivery status updates to your webhook:
+
+1. Go to the **Engage** module,
+2. Navigate to **Preferences**.
+3. Enable **Postback URL**.
+
+   ![](https://i.imgur.com/vV8neaA.png)
+
+3. In **Send the delivery status to (applicable only for notifications API)**, enter the Webhook URL to which the delivery updates need to be pushed. 
+
+   To know what the sample webhook payload looks like, see [Sample webhook payload](#22-sample-webhook-payload).
+
+:::note
+Ensure that no authentication is required to push data to the Webhook URL.
+:::
+
+### 1.5 Send notification API reports
+
+You can send reports of notifications sent through API to your preferred users. The report is sent as a CSV file for the chosen duration.
+
+To send Notification API reports to your preferred recipients:
+
+1. Go to the **Engage** module,
+2. Navigate to **Preferences**.
+3. Enable **Notification API reports**.
+
+   ![](https://i.imgur.com/tcwOzpL.png)
+
+4. In **Send notification API reports to**, enter the email IDs of each recipient to whom you want to send reports. Press Enter after entering each email ID.
+
+   ![](https://i.imgur.com/dEHh91d.png)
+
+5. In **for time period between**, set the duration (**Start date** and **End date**)for which you want to send the report.
+6. To also send the report of WhatsApp notification API, enable **Whatsapp v1 Notification API**.
+
+
+
+
 
 ## 2. Notification API Details
 
@@ -53,9 +100,11 @@ In order to use the Notification API you have to enable it on the platform as ex
 | **Header** | **Description/Value** |
 | --- | --- |
 | `Content-Type` | application/json |
-| `x-api-key` | * **For** **`app.yellow.ai`** **platform**: Get the API key from the path **Configuration** > **Access Control** > **Bot API Key**.   **For** **`cloud.yellow.ai`** **platform**: Click the Yellow logo on top left corner > Select your bot from the dropdown > On the top-right corner, click **Configure** > On the left sidebar, click **API Keys** (you can see keys only if you are the super admin). |
+| `x-api-key` | * **For** **`app.yellow.ai`** **platform**: Get the API key from the path **Configuration** > **Access Control** > **Bot API Key**.   **For** **`cloud.yellow.ai`** **platform**: Click the Yellow logo on the top-left corner > Select your bot from the dropdown > On the top-right corner, click **Configure** > On the left sidebar, click **API Keys** (you can see keys only if you are the super admin). |
 
-> **Note**: Only users with Super Admin role can create a Bot API key.
+:::note
+Only users with a Super Admin role can create a Bot API key.
+:::
 
 #### Request Query Parameter
 
@@ -70,7 +119,8 @@ In order to use the Notification API you have to enable it on the platform as ex
 | `userDetails` | Object | Yes | Details of the user to be notified. Eg. Phone Number for WhatsApp. |
 | `notification`  (fields: `params`) | Object | Yes | Template details |
 | `media` | Object | Optional | Template Media URL, Quick Reply Payload can be passed here |
-| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - To receive delivery updates on clients webhook. Configurable from platform for now. <br/><br/>Please go to **Engage** > **Preferences** for setting up the `postbackUrl.` <br/><img src="https://i.imgur.com/8Y2NOvO.png" width="500"/>|
+| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - Used to receive delivery updates on the client's webhook. <br/>To receive delivery updates on the client's webhook, enable **Postback URL** in **Engage** > **Preferences** and enter the Webhook URL. See [Send delivery status to webhook](#14-send-delivery-status-to-webhook).
+
 
 ##### `userDetails` Object
 
@@ -88,7 +138,7 @@ This object contains all relevant information about the user. It needs to have a
 
 ##### `notification` Object
 
-This contains the message template details that needs to be sent as a notification. `templateId` is mandatory.
+This contains the message template details that need to be sent as a notification. `templateId` is mandatory.
 
 ``` json
 "notification": {
@@ -156,15 +206,15 @@ As soon as we receive a callback from the downstream services, we will post that
 
 ### 2.3 Status codes (of response)
 
-On successful queueing of the notification, you will receive a 202 status code with the relevant `msgId`. This confirms that the message details has been received by us and will be queued for sending on the relevant channel. The downstream service will pick the queue and will start sending it and updating the delivery status on the webhook and on the reports under Data Explorer on the platform.
+On successful queueing of the notification, you will receive a 202 status code with the relevant `msgId`. This confirms that the message details have been received by us and will be queued for sending on the relevant channel. The downstream service will pick the queue and will start sending it and updating the delivery status on the webhook, and the reports under Data Explorer on the platform.
 
 | **Code** | **Description** |
 | --- | --- |
 | 202 | Message queued successfully. You will receive a msgId for acknowledgement and tracking. |
 | 400 | Bad request. Request structure is not formed correctly. Please check the `message` field for more information. |
 | 401 | Unauthorised. Please check your auth token. Only Super Admin Auth tokens are accepted for using API. |
-| 422 | Invalid inputs. The request structure is evaluated to be correct but the parameter values are not within expected range. Channel not configured. |
-| 429 | Rate limited. Occurs when there are too many requests sent to the API within a short time. Once a rate limit error is captured the rate of the API call should be decreased to honour the limits.  *Default Rate Limit is 2000 requests/min per Bot.* |
+| 422 | Invalid inputs. The request structure is evaluated to be correct but the parameter values are not within the expected range. Channel not configured. |
+| 429 | Rate limited. Occurs when there are too many requests sent to the API within a short time. Once a rate limit error is captured, the rate of the API call should be decreased to honour the limits.  *Default Rate Limit is 2000 requests/min per Bot.* |
 | 500 | Internal server error. TraceId will be sent back for tracking. |
 
 #### API Error Codes
@@ -232,14 +282,16 @@ To access the entire Postman documentation and run collections, click the follow
 
 [![](https://i.imgur.com/adPhuBf.png)](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8)
 
-For API details of a specific channel, click the respetive channel.
+For API details of a specific channel, click the respective channel.
 
 1. [WhatsApp](https://documenter.getpostman.com/view/9982063/UzBvGPGB#5961e189-e9cb-40ad-8ba6-7bada77acc06)
 2. [SMS](https://documenter.getpostman.com/view/9982063/UzBvGPGB#c5013846-87a9-4062-9c1a-055eb7806f38)
 3. [Email](https://documenter.getpostman.com/view/9982063/UzBvGPGB#5fea5e39-8168-4c9e-977c-fc667dfba0e2)
 4. [Bulk messaging API](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8)
 
-> **Note**: Whem you raise any support ticket, include `msgId` or `traceId` in the request.
+:::note
+When you raise any support ticket, include `msgId` or `traceId` in the request.
+:::
 
 ### 2.5 Response Codes
 
