@@ -3,46 +3,107 @@ title: Dashboards
 sidebar_label: Dashboards
 ---
 
+In this article, you will learn: 
+1. [Features of the dashboard](#features )
+2. [How to create a dashboard via. Dashboard?](#1)
+3. [How to create a dashboard via. Data explorer?](#2)
+4. [How to add widgets?](#3)
 
-A dashboard is a visual display of all of your data. While it can be used in all kinds of different ways, its primary intention is to provide information at-a-glance. A dashboard usually sits on its own page and receives information from a linked database. In many cases it’s configurable, allowing you the ability to choose which data you want to see and whether you want to include charts or graphs to visualize the numbers.
+---- 
 
-Dashboard help the analysts to add multiple widgets into single page layout. Multiple Dashboard can be created. Widgets can be directly added to Dashboard from the data explorer too.
+#### <a name="features"></a> Insights Dashboard 
 
-
-![](https://i.imgur.com/lFXxFsQ.png)
-
-
-### Creating a Dashboard
-
-1. Login to [yellow.ai](https://cloud.yellow.ai/bot/Bot_ID/overview), click on Overview and select Insights.
-2. Choose Dashboard from the left side pane.
-3. Click on New dashboard.
-4. Enter the name and description.
-5. Click on save.
-
-![](https://i.imgur.com/eQO2dWJ.png)
+A dashboard is a visual display of all your data. It can be used for multiple use cases with its primary intention to provide information at a glance. 
+- A dashboard has its dedicated page and receives information from a **linked database** which can be **configured** as per your need. You can choose the data you want to see and whether you want to include charts or graphs to visualize the numbers.
+- You can create **Multiple Dashboards**. In this, each dashboard can include multiple widgets (reports).  
+- **Widgets** are the saved reports that are present on the [data explorer page](./platform_concepts/growth/customtables.md). The dashboard helps the analysts to add multiple widgets to the single page layout. 
+- Widgets can be directly added to the Dashboard from the **data explorer**.
 
 
-### Adding a Widget
-
-1. Select the new Dashboard created.
-2. Click on Add widget
-3. Select widgets from the dropdown
-
-Here, you can find 2 options:
-* You can choose multiple options from the list
-Or
-* Click on create a new widget and you shall be directed to Data explorer for creating a new widget and will be automatically added to the dashboard once you save the query in data explorer. Also, all the changes made so far in the dashboard will be saved.
-
-4. Choose the first option to select from the list.
-5. Click on Add
-
-![](https://i.imgur.com/Q30IsN3.png)
+![](https://i.imgur.com/LJz5RoC.png)
 
 
-Below image shows the dashboard after the addition of widgets and customising in real time.
+----
+
+## 1. Create Dashboard 
+
+Using either of the following methods you can create more than one dashboard. 
+
+**Usecase** 
+
+Depending upon the commonality between different widgets, you can club the reports having some type of commonality among each other under one particular page.
+If your company has three different types of products and you want to check the analytics for those products, separately, at the same time, in the same place for each product, you can create dashboards for product #1 product #2, and product #3. Add all of the metrics that are common to a particular product to the respective dashboard. With this, you can see all the values that are connected under one view.
 
 
-![](https://i.imgur.com/wwhd6qf.png)
+### <a name="1"></a>  1.1 Create a dashboard from Dashboard page 
 
-Dynamically change the dashboard data by selecting a specific date range from date filter. You can also drag and position the charts in any specific order.
+1. Login to [yellow.ai](https://cloud.yellow.ai/bot/Bot_ID/overview), click on Overview. Open **Insights** > **Dashboard**.
+2. Click **+Add new dashboard** or **+New dasbhoard** from the top right. 
+3. On the Dashboard details pop-up, enter **Name** and **Description**. 
+4. Click **Save**. 
+
+
+![](https://i.imgur.com/LRDZwpM.png)
+
+
+### <a name="2"></a>  1.2 Create a dashboard from Data explorer 
+
+1. Login to [yellow.ai](https://cloud.yellow.ai/bot/Bot_ID/overview), click on Overview. Open **Insights** > **Data explorer**. 
+2. Click and open any of the saved reports. 
+
+![](https://i.imgur.com/Sy9bmBJ.png)
+
+3. From **Actions** dropdown, select **Add to dashboard**.
+4. Select **New dashboard**. Add **Name** and **Description** (the saved report that you have selected is going to be the widget inside a dashboard. You can choose to add this widget to an existing dashboard or you can create a new dashboard and add this widget to it).
+5. Click **Save**. You can view this on the dashboard page. 
+
+![](https://i.imgur.com/o3ila14.png)
+
+------
+
+## <a name="3"></a> 2. Add widget
+
+1. To add a widget to a new dashboard, you must have an existing saved report on the data explorer page. Click **+Add widget**. You will be prompted to create a new widget.  
+
+![](https://i.imgur.com/22q7kUO.png)
+
+:::note
+To learn more about creating a saved report, refer to [custom tables](./platform_concepts/growth/customtables.md). 
+<img  src="https://i.imgur.com/MFgmkwk.png"  width="70%"/>
+:::
+
+2. To add a widget to a dashboard with existing widgets, click **+Add widget** on the top right. Select from the existing widgets (reports). 
+    - Multiple reports can be selected at once. You can also click **+Create new widget** to create new widgets. 
+
+![](https://i.imgur.com/ZXJkgqk.png)
+
+3. Click **Add**. 
+
+---
+
+Following are the other dashboard features: 
+
+**Date filter**
+
+- Irrespective of the filters added to the saved reports(widgets) you can add a data filter to your dashboard from the top left.  
+
+
+<img  src="https://i.imgur.com/XHr9FpN.png"  width="50%"/>
+
+
+
+**Delete dashboard** 
+
+- To delete this particular dashboard, click **Actions** on the top right and select **Delete dashboard**. 
+
+<img  src="https://i.imgur.com/4BBP5oJ.png"  width="50%"/>
+
+**Edit dashboard**
+
+- By clicking **Edit dashboard** on the top right, you can: 
+    - Change the dashboard **Name** and **Description**.
+    - Add more widgets. 
+    - Drag and drop the existing widgets at your convenience. 
+    - Click **Save**. 
+
+![](https://i.imgur.com/8tNItnb.png)

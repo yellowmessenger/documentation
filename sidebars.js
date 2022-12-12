@@ -59,6 +59,8 @@ module.exports = {
         "cookbooks/inbox/custom-usecases",
         "cookbooks/inbox/emailvschat",
         "cookbooks/inbox/notifyagents",
+        "cookbooks/inbox/priority-assignee",
+        "cookbooks/inbox/transferwithoutinfo",
       ],
     },    
     {
@@ -68,7 +70,6 @@ module.exports = {
       items: [
         "cookbooks/Upgrade_new_engage_app",
         "cookbooks/Understanding channels 101/email-outbound-101",
-        "cookbooks/Understanding channels 101/sms-india-101",
 
       ],
     }, 
@@ -633,6 +634,7 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
                 "platform_concepts/engagement/outbound/templates/viber-template",
+                "platform_concepts/engagement/outbound/templates/mobilepush",
               ],
             },
            /* {
@@ -751,8 +753,9 @@ module.exports = {
       label: "Data explorer",
       collapsed: true,
       items: [
-        //Add default table + Custom table 
+        // default table + Custom table 
         "platform_concepts/growth/data-explorer",
+        "platform_concepts/growth/customtables",
       ],
     },
 
@@ -903,6 +906,7 @@ module.exports = {
               "platform_concepts/mobile/chatbot/xamarin",
               ],
             },
+            "platform_concepts/mobile/chatbot/mobile-sdk-faq",
           ],
         },
 

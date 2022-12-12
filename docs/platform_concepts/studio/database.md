@@ -1,6 +1,6 @@
 ---
 title: Manage database tables & data
-sidebar_label: Database
+sidebar_label: Database (tables)
 ---
 
 Databases can be used to store information in the form of  tables.
