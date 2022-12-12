@@ -529,6 +529,7 @@ It is recommended not to use Quick reply option for Store comment node.
 :::
 
 In the store comment node, there is a toggle to enable Quick reply. Quick reply in the comment store node captures both the comment and the Quick reply response. The comment will be stored as a fallback when the user hits enter after writing the comment, and if the user clicks on Quick reply, then that Quick reply response will be stored in the variable.
+
 ---
 
 ### 2.6 File Prompt 
