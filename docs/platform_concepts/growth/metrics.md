@@ -5,7 +5,7 @@ sidebar_label : User metrics
 
 User metrics are used to learn about your bot users. The following metrics can be monitored: 
 1. [User traffic](#traffic): Number of users visiting your bot, Number of messages sent to your bot, duration of the chat, etc. 
-2. [User retention](#retention): Number of new users vs. old users. 
+2. [User retention and trend](#retention): Number of new users vs. old users. 
 3. [Users by demographics](#demography): User classification based on the location the bot is being used from. 
 
 In this article, you will learn in detail about user metrics. 
