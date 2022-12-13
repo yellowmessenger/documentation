@@ -30,10 +30,15 @@ This is best for adding just a few at a time, like prospects you met at an event
 
 To add a single user manually, follow these steps:
 
-1. On the User 360 page, click **Add user** > **Single user**. 
-2. Enter the user details and click **Save**. 
+1. On the User 360 page, click **Add user** > **Single user**.
+   
+   ![](https://i.imgur.com/Pw5g3Vt.png)
 
-<img src="https://i.imgur.com/ZuD3NZf.png" width="60%"/>
+2. Enter the **userId** of the customer along with other details.
+
+   <img src="https://i.imgur.com/LPnNYFF.png" width="60%"/>
+
+3.  Click **Save**. 
 
 **To edit a user details**:
 
@@ -50,6 +55,7 @@ Similarly, you can also delete a user using the more options icon > Delete user.
 
 ***
 
+
 ## 2. Add/edit multiple users through CSV import
 
 
@@ -59,16 +65,22 @@ You can also manage users and user data through CSV import. Use CSV import when 
 
 To add customers through CSV, follow these steps:
 
-1. Create a CSV file with user details. Make sure that the column headers match the name of the user property that you want to map with. 
+1. Create a CSV file with user details. Make sure that the column headers match the name of the user property that you want to map with.
 
-   ![](https://i.imgur.com/gEcRb2s.jpg)
+   a. `UserId` is mandatory.
+
+   b. Other properties that you can import are firstname, lastname, gender, country, city, timezone, email optin, sms optin, or any custom property that is added for the project.
+
+   c. Add tags that you want to associate with each user. When adding multiple tags to a user, use semicolon (;) between each tag without space. For example, regular_customers;campaign_responders.
+
+   ![](https://i.imgur.com/fh3NGV8.png)
 
 :::note
 These names are **case sensitive** and the column header **should not include spaces** before/after.
 :::
    
 
-2. On Engage page, click **User 360** > **Add user** > **Import users**.
+2. On Engage, click **User 360** > **Add user** > **Import users**.
 
     ![](https://i.imgur.com/KkDLtC2.png)
 
@@ -76,7 +88,6 @@ These names are **case sensitive** and the column header **should not include sp
 4. In **Tags**, add custom tags for the group. These tags are added to every user in the CSV. This helps you differentiate between users uploaded from multiple CSV files and to maintain multiple audiences. You can [create segments](../user_data_segments/creating_managing_user_segment) using those tags to refer to the various set of audiences you have imported.
 
    <img  src="https://i.imgur.com/U3RuKq3.png" width="60%"/>
-
 
 
 5. Click on **Import**.
