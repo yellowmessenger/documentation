@@ -36,11 +36,10 @@ Refer to the following documentation links for mobile SDK documentation:
 * [Flutter](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/flutter)
 * [Xamarian](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/xamarin)
 
-**5. How to enable history?**
+**5. How to enable chat history?**
 
-To enable history, follow these steps:
+To enable chat history, follow these steps:
 1. Ensure that mobile SDKs are passing the ymAuthenticationToken in the config before presenting the bot.
-2. Copy and paste the following code in the main function of the bot code:
 ```
 if (app.data.event && app.data.event.code === 'authenticate') {
     return app.sendEvent({
@@ -49,13 +48,10 @@ if (app.data.event && app.data.event.code === 'authenticate') {
     });
 }
 ```
-
-3. Ensure the **Reset Context for every load** checkbox is unchecked in the dashboard settings for "app.yellowmessenger.com" or "app.yellow.ai".
+2. Ensure the **Reset Context for every load** checkbox is unchecked in the dashboard settings for "app.yellowmessenger.com" or "app.yellow.ai".
 
    ![](https://i.imgur.com/VVSmy15.png)
-
-
-4. Ensure **Show history of the conersation** is enabled for [cloud.yellow.ai](https://cloud.yellow.ai).
+3. Ensure **Show history of the conersation** is enabled for [cloud.yellow.ai](https://cloud.yellow.ai).
 
    <img src="https://i.imgur.com/PoHJ0Yh.png)" alt="drawing" width="90%"/>
 
