@@ -1,5 +1,5 @@
 ---
-title: Change the priority of the ticket and assign it to a different agent
+title: Change the priority of the ticket and assign it to a different agent or a group
 sidebar_label: Change ticket priority and assignee 
 ---
 
@@ -24,7 +24,7 @@ In this article, you will learn how to change the **priority** of a chat/email t
 
 To change the **Priority**/**Assignee**, follow the below steps: 
 
-#### Assign chat tickets to a different agent 
+#### Assign chat tickets to a different agent or group
 
 :::note
 Inbox Agent or Admins cannot change the priority of chat tickets.  
@@ -34,7 +34,7 @@ Inbox Agent or Admins cannot change the priority of chat tickets.
 
 1. Open any ongoing chat > **Details** and click **Transfer** (this option will be available based on the configuration of [custom fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields)).
 2. Select the Agent/Group to which you want to transfer the ticket.  Confirm the reassignment. 
-3. Your chat will be transferred to the selected inbox agent. 
+3. Your chat will be transferred to the selected inbox agent or the concerned group/team (tickets will be autoassigned to the agents in this group). 
 
 
 ![](https://i.imgur.com/FhEUhju.png)
