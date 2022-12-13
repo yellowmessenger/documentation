@@ -15,11 +15,13 @@ Voice overview is available only for voice bots. Click [here](https://docs.yello
   
   
 
-An analytics dashboard in Insights is built specifically for voice bots, found under - **Voice Overview**. Voice bots are built on the IVR channel and hence, there are telephony metrics that are very critical while understanding overall voice bot performance like call statuses, average call duration, user traffic, etc. (along with the bot engagement metrics that are already available on Insights). The dashboard has all current and historical data.
+An analytics dashboard in Insights is built specifically for voice bots, found under - **Voice Overview**. Voice bots are built on the IVR channel and hence, there are telephony metrics that are very critical while understanding overall voice bot performance like call statuses, average call duration, user traffic, etc. (along with the bot engagement metrics that are already available on Insights). The dashboard has all current and historical data classified under: 
+1. [User traffic](#1)
+2. [Call status](#2)
 
   
 
-## 1. User traffic
+## <a name="1"></a> 1. User traffic
 
   
 
@@ -35,7 +37,7 @@ User traffic can be viewed for:
 
   
 
-## 2. Call status
+## <a name="2"></a> 2. Call status
 
   
 
