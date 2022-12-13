@@ -1,6 +1,6 @@
 ---
 title: User journey visualization
-sidebar_label: User journey
+sidebar_label: User journey visualization
 ---
 
 In this article, you will learn about the various features available for the visualization of user flow(/journey), namely: 
