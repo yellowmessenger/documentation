@@ -27,8 +27,7 @@ To change the **Priority**/**Assignee**, follow the below steps:
 #### Assign chat tickets to a different agent 
 
 :::note
-- Inbox Admin can change the Priority of Missed and Resolved chats assigned to all the Inbox agents. 
-- Inbox Agent can see the details of only his tickets but cannot change the priority.  
+Inbox Agent or Admins cannot change the priority of chat tickets.  
 :::
 
 > Refer to [this doc](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#2-user-details) to learn about chat screen and chat details. 
@@ -47,7 +46,12 @@ To change the **Priority**/**Assignee**, follow the below steps:
 
 #### Change priority and assign email tickets to a different agent 
 
+
 > Refer to [this doc](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/emailticketstatus#2-status-transition-from-different-views) to learn about email ticket screen and statuses. 
+
+:::note
+- Inbox Agent and Admins can change the priority of email tickets.  
+:::
 
 1. Priority and Assignee can be changed from the email tickets page. Search for the required ticket and select the priority/assignee (group/agent) from the dropdown. 
 
