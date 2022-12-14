@@ -21,7 +21,7 @@ See the session for each app in the following table -
 
 App | Session Duration
 --- | ----------------
-Web app | 30 minutes
+Web app | 24 hours
 Whatsapp | 24 hours
 
 

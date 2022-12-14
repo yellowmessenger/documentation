@@ -3,6 +3,8 @@ title: Studio FAQs
 sidebar_label: Studio FAQs
 ---
 
+### Nodes
+
 <details>
  <summary>Why is the send OTP node not working?
 </summary>
@@ -12,6 +14,54 @@ sidebar_label: Studio FAQs
   <br/>
    </div>
 </details>
+
+<details>
+ <summary>How do I link one flow to another flow for a bot?
+</summary>
+ <div>
+  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#15-execute-flow">Execute Flow</a> to link  another flow to a bot.
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to skip triggering NLU for specific steps of a flow?
+</summary>
+ <div>
+  <div>Yes, you can skip triggering NLU for specific flows using the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-store-comment">Store comment</a> node.
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>I have configured Hindi language but it is triggering fallback/different journey? What might be the reason?
+</summary>
+ <div>
+  <div>In a flow, if you have selected "hi" (ISO code) for Hindi (button value), then it might be triggering another intent which you would have configured earlier ("hi" intent configured). To overcome this problem, set a variable, assign the variable value to Hindi language (hi), and then connect it to the Set language node.
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Why am I getting a fallback message even when WhatsApps list message is configured?
+</summary>
+ <div>
+  <div>To avoid a fallback message, you must store the value of the WhatsApp list option in a variable and use an IF condition to compare the variable value to trigger the respective outcome (flow, text, and so on).
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+----
+
+### Documents
 
 <details>
  <summary>What does a good document format look like?
@@ -210,51 +260,6 @@ So if the Journey suggestions are enabled and with good suggestion confidence, J
   <div>Yes, but the default layout is recommended which helps us in analytics, improves accuracy and provides a better user experience.
 ​
 A layout that can be changed: Change vertical to horizontal cards, change the display name, remove tags, and remove the preview button.
-​
-</div>
-  <br/>
-   </div>
-</details>
-
-
-<details>
- <summary>How do I link one flow to another flow for a bot?
-</summary>
- <div>
-  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#15-execute-flow">Execute Flow</a> to link  another flow to a bot.
-​
-</div>
-  <br/>
-   </div>
-</details>
-
-<details>
- <summary>Is it possible to skip triggering NLU for specific steps of a flow?
-</summary>
- <div>
-  <div>Yes, you can skip triggering NLU for specific flows using the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-store-comment">Store comment</a> node.
-​
-</div>
-  <br/>
-   </div>
-</details>
-
-<details>
- <summary>I have configured Hindi language but it is triggering fallback/different journey? What might be the reason?
-</summary>
- <div>
-  <div>In a flow, if you have selected "hi" (ISO code) for Hindi (button value), then it might be triggering another intent which you would have configured earlier ("hi" intent configured). To overcome this problem, set a variable, assign the variable value to Hindi language (hi), and then connect it to the **Set language** node.
-​
-</div>
-  <br/>
-   </div>
-</details>
-
-<details>
- <summary>Why am I getting a fallback message even when WhatsApps list message is configured?
-</summary>
- <div>
-  <div>To avoid a fallback message, you must store the value of the WhatsApp list option in a variable and use an IF condition to compare the variable value to trigger the respective outcome (flow, text, and so on).
 ​
 </div>
   <br/>

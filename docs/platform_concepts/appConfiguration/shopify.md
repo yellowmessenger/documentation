@@ -30,9 +30,20 @@ Yellow.ai Integration with Shopify allows you to seamlessly connect your Shopify
 
    ![](https://i.imgur.com/9wGLsYQ.png)
 6. In **App name**, enter a name for the app and click **Create app**.
-7. In the **Admin API access scopes** section, select the actions that you want the Yellow AI to perform. For a detailed help doc, see [Custom apps](https://help.shopify.com/en/manual/apps/custom-apps) section of the Shopify documentation.
+7. In the **Admin API access scopes** section, select the actions that you want the Yellow AI platform to perform. For a detailed help doc, see [Custom apps](https://help.shopify.com/en/manual/apps/custom-apps) section of the Shopify documentation.
 
    ![](https://i.imgur.com/vDx7dQ1.png)
+
+  You need to enable the following scopes in the **Shopify Admin** section. 
+   
+  * orders_create 
+  * products_create 
+  * orders_cancelled 
+  * orders_fulfilled 
+  * orders_paid 
+  * refunds_create 
+  * customers_create 
+  * customers_update.
 
 8. Navigate to API Credentials and copy the API key and API secret key.
 
