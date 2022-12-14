@@ -69,14 +69,16 @@ To add customers through CSV, follow these steps:
 
    a. `UserId` is mandatory.
 
-   b. Other properties that you can import are firstname, lastname, gender, country, city, timezone, email optin, sms optin, or any custom property that is added for the project.
+   b. Prefix country codes to mobile numbers - CountryCode+phoneNumber. For example, an Indian phone number could be 919011111111.
 
-   c. Add tags that you want to associate with each user. When adding multiple tags to a user, use semicolon (;) between each tag without space. For example, regular_customers;campaign_responders.
+   c. Other properties that you can import are firstname, lastname, gender, country, city, timezone, email optin, sms optin, or any custom property that is added for the project.
+
+   d. Add tags that you want to associate with each user. When adding multiple tags to a user, use semicolon (;) between each tag without space. For example, regular_customers;campaign_responders.
 
    ![](https://i.imgur.com/fh3NGV8.png)
 
 :::note
-These names are **case sensitive** and the column header **should not include spaces** before/after.
+* These names are **case sensitive** and the column header **should not contain spaces** before/after.
 :::
    
 
