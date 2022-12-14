@@ -12,16 +12,10 @@ To integrate YellowChatBot into your Android project using gradle, specify the f
 ```gradle
 repositories {
     jcenter()
+
     // Add these two lines
-      maven {
-            url "https://maven.dyte.in"
-        }
-        maven {
-            url "https://jitpack.io"
-            credentials {
-                username="jp_i126eu1nt9chsog19kb4ks6lm8"
-            }
-        }
+    maven { url 'https://jitpack.io' }
+    maven { url 'https://maven.dyte.in' }
 }
 
 ...
@@ -31,13 +25,11 @@ repositories {
 dependencies {
     ...
     ...
-	   implementation 'com.github.yellowmessenger:android-chatbot-yellowai:dev-SNAPSHOT'
+	    implementation 'com.github.yellowmessenger:android-chatbot-yellowai:beta-0.0.1'
 }
 ```
 
 ### File provider
-
-Note: Only for version v1.4.0 & above
 
 Add following key in your `strings.xml` file, this will override default file provider used by SDK.
 
@@ -66,7 +58,7 @@ allowPersistance is used to tell application weather to use persistance database
 
 ## Basic Usage
 
-Import the YMChat library in your Activity.
+Import the YellowChatBot library in your Activity.
 
 ```kotlin
 import ai.yellow.chatbot.sdk.YellowChatBot
@@ -104,13 +96,13 @@ override fun onCreate(savedInstanceState: Bundle?) {
 }
 ```
 
-## YMConfig
+## YellowBotConfig
 
-YMConfig can be used to set the bot id and other bot related settings. It is recommended to set all appropriate config **before** starting the bot
+YellowBotConfig can be used to set the bot id and other bot related settings. It is recommended to set all appropriate config **before** starting the bot
 
-### Initialize YMConfig
+### Initialize YellowBotConfig
 
-YMConfig requires `botId` to initialize. All other settings are optional.
+YellowBotConfig requires `botId` to initialize. All other settings are optional.
 
 ```kotlin
 val yellowBotConfig: YellowBotConfig = YellowBotConfig(botId)
@@ -126,9 +118,57 @@ Whenever chatbot is launched with ymAuthenticationToken it will load the previou
  yellowBotConfig.ymAuthenticationToken = "your-token"
 ```
 
+### Custom Appbar
+
+YellowChatBot allows app bar to be customized. to customize the app bar set appropriate app bar settings to config
+
+```kotlin
+yellowBotConfig.customAppBar = CustomAppBar(
+    title = "Custom App Bar",
+    subTitle = "Custom subtitle",
+    imageUrl = "https://cdn.yellowmessenger.com/PQuTgjPG7NxY1611996274269.png",
+    // Optional
+    image = R.drawable.customIcon
+)
+```
+
+#### title
+
+To set custom title to the app bar
+
+#### subTitle
+
+To set custom subtitle to app bar
+
+#### imageUrl
+
+To set image from url to the app bar
+
+#### image
+
+To set image from local drawable to the app bar
+
+:::note: if both image and imageUrl is used then image will considered
+
+### App bar visibility
+
+YellowChaBot app bar visibility can be changed by setting shouldShowAppbar, setting false will make the app bar to disappear, shouldShowAppbar values defaults to true
+
+```kotlin
+yellowBotConfig.shouldShowAppbar = true
+```
+
+### App bar back button visibility
+
+YellowChaBot app bar back button visibility can be changed by setting shouldEnableBackButton, setting false will make the app bar back button to disappear, shouldEnableBackButton values defaults to true
+
+```kotlin
+yellowBotConfig.shouldEnableBackButton = true
+```
+
 ### Push Notifications
 
-YMChat supports firebase notifications. Assign your `FCM token` to deviceToken
+YellowChatBot supports firebase notifications. Assign your `FCM token` to deviceToken
 
 ```java
 yellowBotConfig.deviceToken = "your-firebase-device-token"

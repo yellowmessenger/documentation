@@ -487,7 +487,6 @@ module.exports = {
           label: "Inbox",
           collapsed: true,
           items: [
-          "platform_concepts/mobile/chatbot/android-native",
           "platform_concepts/mobile/inbox/android",
           "platform_concepts/mobile/inbox/ios",
           "platform_concepts/mobile/inbox/cordova",
@@ -498,6 +497,7 @@ module.exports = {
           label: "ChatBot",
           collapsed: true,
           items: [
+          "platform_concepts/mobile/chatbot/android-native",
           "platform_concepts/mobile/chatbot/android",
           "platform_concepts/mobile/chatbot/cordova",
           "platform_concepts/mobile/chatbot/flutter",
