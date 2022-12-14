@@ -1,9 +1,14 @@
 ---
 title: User journey visualization
-sidebar_label: User journey
+sidebar_label: User journey visualization
 ---
 
-In this article, you will learn about the various features available for the visualization of user flow(/journey).
+In this article, you will learn about the various features available for the visualization of user flow(/journey), namely: 
+1. [Understand the flows your users are taking](#1)
+2. [View steps inside each flow to know where the users switched/dropped off](#2)
+3. [Visualize insights of each flow](#3)
+
+
 - This can be found in **Insights** > **User journeys** > **User journey visualization**.
 
 ![](https://i.imgur.com/GPQooDP.png)
@@ -22,7 +27,7 @@ Some high-level insights you can derive from this section are:
 
 ----------
 
-## 1. Understand user flows
+## <a name="1"></a> 1. Understand user flows
 
 Follow the below steps to understand how to visualize the user journey: 
 
@@ -60,7 +65,7 @@ This means, out of 100% of the sessions which got triggered on the chat, 1.12 % 
 * The flow was triggered 7 times directly after starting the session. This does not include the numbers for cases where this flow was triggered at a later stage.
 :::
 
-### 1.1 View steps inside the flow
+### <a name="2"></a> 1.1 View steps inside the flow
 
 
 This modal helps you visualize how users have moved from one step to another inside a flow, and where they have dropped off, switched, or completed their flow. The option **View steps** can be accessed below each flow when that respective flow is open. 
@@ -77,7 +82,7 @@ This chart indicates the path taken after entering this flow, following can be m
 
 ------
 
-## 2. Visualization insights
+## <a name="3"></a> 2. Visualization insights
 
 Widget with actionable insights around good/poor performing flows, and steps with maximum drop-offs, switches, and agent transfers. 
 - This is to automate the analysis of Journey Visualisation and help you identify areas of concern quickly, to improve bot performance. 

@@ -68,7 +68,7 @@ for example, this is where the customer is unable to understand the solution tha
 
 When the customer has accepted to have a video call with the agent, Agent can initiate the call. 
 
-**Agent side**
+### 2.1  Agent side video calling features 
 
 - Click the phone icon next to the chat name (from **Inbox** > **Chats**). 
 
@@ -83,11 +83,15 @@ When the customer has accepted to have a video call with the agent, Agent can in
 
 ![](https://i.imgur.com/9Pikvvh.png)
 
+- Agent will have all the video calling facilities (view in full screen, share screen, mute audio, mute video, disconnect, etc.). They can disconnect/leave the call after providing the resolution. 
+    #### Share screen during the video call
+
+    <img src="https://i.imgur.com/bsf42Ib.png" alt="drawing" width="40%"/>   
 
 
 
 
-**Customer side**
+### 2.2 Customer side video calling features
 
 - Customer must click on the phone icon to receive/ initiate the call with the agent. 
 

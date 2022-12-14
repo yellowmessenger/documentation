@@ -1,5 +1,5 @@
 ---
-title: Dashboards 
+title: Create Dashboards and add widgets 
 sidebar_label: Dashboards
 ---
 

@@ -74,11 +74,11 @@ Click the required default table name.
 
 :::info
 **Reference links:** 
-1. [Add filters](./platform_concepts/growth/customtables#2.md)
-2. [Summarize](./platform_concepts/growth/customtables#3.md) 
-3. [Visualization](./platform_concepts/growth/customtables#4.md)
-4. [Save the report](./platform_concepts/growth/customtables#5.md)
-5. [Schedule report](./platform_concepts/growth/customtables#6.md)
+1. [Add filters to default tables](https://docs.yellow.ai/docs/platform_concepts/growth/customtables#2)
+2. [Summarize and group table data](https://docs.yellow.ai/docs/platform_concepts/growth/customtables#12-summarize-and-group-by) 
+3. [Visualization of summarized/grouped data](https://docs.yellow.ai/docs/platform_concepts/growth/customtables#13-visualization)
+4. [Save the report to add it to dashboard/schedule report](https://docs.yellow.ai/docs/platform_concepts/growth/customtables#14-save-query)
+5. [Schedule report](https://docs.yellow.ai/docs/platform_concepts/growth/customtables#2-schedule-a-report)
 :::
 
 
