@@ -79,6 +79,7 @@ To add customers through CSV, follow these steps:
 
 :::note
 * These names are **case sensitive** and the column header **should not contain spaces** before/after.
+* It is required to pass phone numbers with country codes.
 :::
    
 
