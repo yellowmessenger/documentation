@@ -39,7 +39,7 @@ Refer to the following documentation links for mobile SDK documentation:
 **5. How to enable chat history?**
 
 To enable chat history, follow these steps:
-1. Ensure that mobile SDKs are passing the ymAuthenticationToken in the config before presenting the bot.
+1. Ensure that you need to pass ymAuthenticationToken in the config before presenting the bot.
 ```
 if (app.data.event && app.data.event.code === 'authenticate') {
     return app.sendEvent({
