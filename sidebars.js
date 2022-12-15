@@ -746,17 +746,7 @@ module.exports = {
     },
 
     "platform_concepts/growth/doccog",
-
-    {
-      type: "category",
-      label: "Data explorer",
-      collapsed: true,
-      items: [
-        // default table + Custom table 
-        "platform_concepts/growth/data-explorer",
-        "platform_concepts/growth/customtables",
-      ],
-    },
+    "platform_concepts/growth/data-explorer", 
     "platform_concepts/growth/dashboards",
 
     "platform_concepts/growth/goals",
