@@ -746,7 +746,6 @@ module.exports = {
     },
 
     "platform_concepts/growth/doccog",
-    "platform_concepts/growth/dashboards",
 
     {
       type: "category",
@@ -758,6 +757,7 @@ module.exports = {
         "platform_concepts/growth/customtables",
       ],
     },
+    "platform_concepts/growth/dashboards",
 
     "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",

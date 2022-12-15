@@ -70,7 +70,7 @@ Click the required default table name.
 ![](https://i.imgur.com/D7FZZpM.png)
 
 - Click **Actions** and download this data (.CSV file) to your local system. 
-- Furthermore, you can add filters to the tables, and summarize and visualize them. This process is the same for default and custom tables.
+- Furthermore, you can add filters to the tables, summarize and visualize them. This process is the same for default and custom tables.
 
 :::info
 **Reference links:** 
