@@ -1,6 +1,7 @@
 ---
 title: Bot access management
 sidebar_label: Bot access management
+keywords : [access control, bot invite, invite users, send bot invite, share bot access]
 ---
 
 
@@ -11,7 +12,6 @@ While creating an end-to-end bot flow, you need to consider some instances where
 * Collaborators will have the access that you have provided. If you want to block the access you provided, you need to remove it separately.
 :::
 
-  
 
 ## 1. Share bot access
 

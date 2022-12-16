@@ -9,7 +9,7 @@ rank: 1
 ### Email outbound
 
 <details>
- <summary><h3>Does the platform restrcit sending notifications/emails to duplicates?</h3></summary>
+ <summary>Does the platform restrcit sending notifications/emails to duplicates?</summary>
  <div>
   <br/>
   <div>Yes, the platform automatically identifies duplicate identifiers before sending campaign messages or notifications.</div>

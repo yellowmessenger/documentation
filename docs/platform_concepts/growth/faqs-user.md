@@ -6,7 +6,7 @@ sidebar_label: Insights FAQs
 <details>
 <summary> How are sessions calculated? </summary>
 <div>
-A session can be a **user session** (when there’s user interaction) or **bot session** (when there’s a bot message but not necessarily any user message). Session duration is the average time for which the user has conversed with the bot. A session can be of 24 hours. A user can have any number of interactions with the bot within this 24 hours window from the start of a session and it will be considered a single session. A new session starts after 24 hours.
+A session can be a user session (when there’s user interaction) or bot session (when there’s a bot message but not necessarily any user message). Session duration is the average time for which the user has conversed with the bot. A session can be of 24 hours. A user can have any number of interactions with the bot within this 24 hours window from the start of a session and it will be considered a single session. A new session starts after 24 hours.
 </div>
 </details>
 
@@ -41,7 +41,7 @@ Switched means moved to a different journey at any point in time.
 <details>
 <summary> Why is my user count not matching the numbers displayed on the flow chart? </summary>
 <div>
-The number displayed in the flow chart is *the number of hits* and not *the number of users*.
+The number displayed in the flow chart is the number of hits and not the number of users.
 </div>
 </details>
 
@@ -81,7 +81,7 @@ Based on [flow completion rate](https://docs.yellow.ai/docs/platform_concepts/gr
 <details>
 <summary> Why are flow completion rates low?</summary>
 <div>
-There can be multiple reasons for [low flow completion rates](https://docs.yellow.ai/docs/platform_concepts/growth/funnels#31-flow-completion-rate-fcr). You can find a list of them along with recommended next steps under **User Journeys** > **Funnels** > **Flow Summary**.
+There can be multiple reasons for [low flow completion rates](https://docs.yellow.ai/docs/platform_concepts/growth/funnels#31-flow-completion-rate-fcr). You can find a list of them along with recommended next steps under User Journeys > Funnels > Flow Summary.
 </div>
 </details>
 
@@ -99,7 +99,7 @@ There can be multiple reasons for [low flow completion rates](https://docs.yello
 <details>
 <summary> Can I automate(/schedule) my report generation? </summary>
 <div>
-You can schedule any saved report on Data Explorer as an email alert. Open any **Saved report** > click **Actions** > schedule Reports > configure all details > **Save**. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer) for more details.
+You can schedule any saved report on Data Explorer as an email alert. Open any Saved report > click Actions > schedule Reports > configure all details > Save. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer) for more details.
 </div>
 </details>
 
@@ -109,9 +109,9 @@ You can schedule any saved report on Data Explorer as an email alert. Open any *
   
 
 <details>
-<summary> Why are the values not getting auto updates on the dashboard page (overview/ user journey/ metrics)? </summary>
+<summary> Why are the values not getting auto updated on the dashboard page (overview/ user journey/ metrics)? </summary>
 <div>
-All the Insights widget pages must be refreshed to see the updated data (pages do not get auto-refreshed).
+All the Insights widget pages (Overview, Metrics, User Journeys, Doc cog, Dashboards, Data explorer) must be refreshed to see the updated data (pages do not get auto-refreshed).
 </div>
 </details>
 
