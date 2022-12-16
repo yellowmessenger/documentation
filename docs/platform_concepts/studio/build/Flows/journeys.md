@@ -5,6 +5,9 @@ sidebar_label: Create Flow
 
 A flow is the logical design of your conversational journey. It is a structure that defines the sequence of a chatbot conversation with the virtual agent based on the questions your chatbot would ask and the various replies that a user would provide.
 
+> Flows can be further categorised using **Categories**.
+> The words **Flows** and **Journeys** are used synonymously.
+
 In the platform, there are different types of nodes, and you can connect each individual node to build a single  conversational flow based on your use case. Each of these nodes either displays, requests, or processes information when a particular flow is triggered.
 
 Once you have the scope of your bot ready, depending on the use case, the bot must be built to respond accordingly. This is done by dividing the scope into multiple flows.
@@ -20,17 +23,14 @@ Once you have the scope of your bot ready, depending on the use case, the bot mu
 
 
 Suppose the bot is used as an official portal to apply for leaves or check salary, bot must converse with the user and fetch the information from all the steps ([Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes)).
-    
 
-> Flows can be further categorised using **Categories**.
-The words **Flows** and **Journeys** are used synonymously.
 
 In this article, you will learn:
 
-1. [What are the different UI elements to build a flow](#elements)
-1. [How to create a flow](#createflow)
+1. [What are the different UI elements to build a flow](#elements)?
+1. [How to create a flow](#createflow)?
 2. [Workflow- a variation of flow](#workflow)
-3. [How to preview a flow](#preview)
+3. [How to preview a flow](#preview)?
   
 
 ----
@@ -63,20 +63,20 @@ You must first create a flow and then trigger a flow. You can create a flow usin
 
 To create a flow, follow the below steps:
 
-1. On the **Overview** page, select your bot. 
+1. Login to [yellow.ai](https://cloud.yellow.ai), select your bot. 
 2. Select **Overview** > **Studio**.
 
 > Learn more about [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview#access-studio). 
     
-3. Select **Flows** > Create flow.
+3. Click **+ Create a new flow**.
 
-   ![](https://i.imgur.com/DJe2ap5.jpg)
+   ![](https://i.imgur.com/5CVs4FT.png)
 
 :::tip
 To open flows, use the keyboard shortcut`s` + `f`.
 :::
 
-4. If you want to select from the available templates, click a suitable template from the **Flow template** dialog box.
+4. If you want to select from the available templates, click a suitable template from the **Flow template** dialog box. To know more about templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro).
 
     ![](https://i.imgur.com/azyPYFo.png)
 
@@ -88,16 +88,17 @@ To open flows, use the keyboard shortcut`s` + `f`.
 
 6. Enter the following details:
 
-*  **Flow name**: Enter the name of your flow and make sure the name is according to the task of the flow. For example, flight booking, customer service, and products on discount.
+   *  **Flow name**: Enter the name of your flow and make sure the name is according to the task of the flow. For example, flight booking, customer service, and products on discount.
 
-*  **Flow Description**: Enter the description of the flow. You can also convert the description into any language other than **English** by clicking the **Google translator** button. For example, these flows lead customers to flight booking workflow.
+   *  **Flow Description**: Enter the description of the flow. You can also convert the description into any language other than **English** by clicking the **Google translator** button. For example, these flows lead customers to flight booking workflow.
 
-*  **Category**: One flow can have multiple categories. The created flow will fall into default categories if no category is mentioned. You can either select an existing category from the drop-down or, add a new category:
+   *  **Category**: One flow can have multiple categories. The created flow will fall into default categories if no category is mentioned. You can either select an existing category from the drop-down or, add a new category:
 
-    1. Click **+Create category**.
-    2. Enter the **Name** of the category.
-    3. Click **Create Category** to save it.
-*  **Create as a workflow**: Click the toggle button if you want to convert the flow to a workflow. Workflows run in the backend along with the conversational flow. To know more about workflow, click [here](#2-workflow---a-variant-of-flow).
+         1. Click **+Create category**.
+         2. Enter the **Name** of the category.
+         3. Click **Create Category** to save it.
+
+    *  **Create as a workflow**: Click the toggle button if you want to convert the flow to a workflow. Workflows run in the backend along with the conversational flow. To know more about workflow, click [here](#2-workflow---a-variant-of-flow).
 
    ![](https://i.imgur.com/r9qKPuo.jpg)
 
@@ -119,19 +120,38 @@ Workflow is the same as any other flow page, it will have a start node. Nodes co
 
 ## 3. Preview a flow
 
-After creating a flow, you can test the flow to ensure it is displaying all the details as expected based on your use case, and then you can preview it.
+After creating a flow, you can preview it to ensure that its functionality is working as expected. You can quickly preview a single flow, or you can use a preview bot based on your business needs. 
 
-Consider that you have created a flow to order food from a restaurant and want to test the flow. 
+### 3.1 Preview single flow
 
-![](https://i.imgur.com/lzpOCdz.jpg)
+You can preview directly a selected flow instead of always triggering a flow from the welcome journey using **Preview current flow** option. This option helps you quickly test the single flow without triggering the welcome message or any intents that are not related to the selected flow.
 
-While testing your flow, you can view [debugging details](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow). When you click on the debugging details, which is highlighted in the below screenshot.
+Consider that you have created a flow to order food from a restaurant, and you can preview this particular flow by clicking **Preview current flow** option. 
 
-<img src="https://i.imgur.com/wCIFeNN.png)" alt="drawing" width="40%"/>
+![](https://i.imgur.com/BhWRW6n.jpg)
 
-You can view the respective node details in the flow.
+
+While testing your flow, you can view [debugging details](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow), which provide the details of the respective node in the flow.
 
 ![](https://i.imgur.com/LuHokrC.png)
 
+### 3.2 Preview a bot
 
-You can also select the channels from the drop-down into which you want your flow to integrate, and then you can test your flows. After testing the flow, you can preview your bot. To know more about preview flow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#2-publish-bot).
+You can preview all the flows that are intended a bot by clicking **Preview bot** option.
+
+![](https://i.imgur.com/SxReC72.jpg)
+
+
+You can also select the channels from the **Website** drop-down to test your flows in the respective channels. 
+
+<img src="https://i.imgur.com/zNjLfee.png)" alt="drawing" width="60%"/>
+
+
+After testing the flow, click the below highlighted icon to preview your bot.
+
+![](https://i.imgur.com/BDujOLo.png)
+
+
+![](https://i.imgur.com/zhXqsM1.png) 
+
+After previewing your flow, you can publish your bot. To know more about publish bot, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#2-publish-bot).

@@ -17,6 +17,12 @@ The nodes which have an option to ask the users a question/ display a text are e
 
 ---
 
+**Configure text displayed on the bot**
+
+To know more about how to configure the text, click [here](https://docs.yellow.ai/docs/cookbooks/studio/text-format/).
+
+---
+
 **Delay**
 
 You can set a delay in displaying each of these nodes. 
