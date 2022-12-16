@@ -6,12 +6,11 @@ sidebar_label: Prompts
 Prompts are Interactive or conversational nodes, which expect user input. When a user provides an invalid input to the prompt, a fallback message will be displayed. 
 
 In this article, you will learn about the different types of prompt nodes: 
-1. [Frequently used promts](#used)
-2. [Other promts](#others)  
+1. [Frequently used prompts](#used)
+2. [Other prompts](#others) 
+3. [Make prompt smarter](#smarter)
 
-> All these prompts must be followed by another node as a response to this node.
-
-You can also make your **prompts smarter**. It will be discussed at the end of this document. 
+> All these prompts must be followed by another node as a response to this node. 
 
 ---
 
@@ -22,6 +21,13 @@ The nodes that have an option to ask the users a question or display a text are 
 > ![](https://i.imgur.com/KucDPVJ.png)
 
 ---
+
+**Configure text displayed on the bot**
+
+To know more about how to configure the text, click [here](https://docs.yellow.ai/docs/cookbooks/studio/text-format/).
+
+---
+
 ## <a name="ud"></a>  1. Frequently used promts
 
 
@@ -714,20 +720,3 @@ For example, instead of setting a new user ID, you can use the phone number as a
 :::
 
 --- 
-
-## **Configure text displayed on the bot**
-
-To beautify the text you enter in the field -**bot says** you can add the following. 
-
-```
-1. Web (use HTML tags)
-
-  - Bold: <strong> baggage </strong> 
-  - Italics: <i> italics </i> 
-  - Hyperlink: <a href="google.com"> Google </a> 
-
-2. Whatsapp 
-
-  - Bold: Message *- 
-  - Italics: _ Message _ 
-```
