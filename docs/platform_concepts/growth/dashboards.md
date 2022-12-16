@@ -16,7 +16,7 @@ In this article, you will learn:
 A dashboard is a visual display of all your data. It can be used for multiple use cases with its primary intention to provide information at a glance. 
 - A dashboard has its dedicated page and receives information from a **linked database** which can be **configured** as per your need. You can choose the data you want to see and whether you want to include charts or graphs to visualize the numbers.
 - You can create **Multiple Dashboards**. In this, each dashboard can include multiple widgets (reports).  
-- **Widgets** are the saved reports that are present on the [data explorer page](./platform_concepts/growth/customtables.md). The dashboard helps the analysts to add multiple widgets to the single page layout. 
+- **Widgets** are the saved reports that are present on the [data explorer page](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer). The dashboard helps the analysts to add multiple widgets to the single page layout. 
 - Widgets can be directly added to the Dashboard from the **data explorer**.
 
 
@@ -68,7 +68,7 @@ If your company has three different types of products and you want to check the 
 ![](https://i.imgur.com/22q7kUO.png)
 
 :::note
-To learn more about creating a saved report, refer to [custom tables](./platform_concepts/growth/customtables.md). 
+To learn more about creating a saved report, refer to [custom tables](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer). 
 <img  src="https://i.imgur.com/MFgmkwk.png"  width="70%"/>
 :::
 
