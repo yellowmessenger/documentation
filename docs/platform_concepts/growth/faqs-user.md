@@ -109,9 +109,9 @@ You can schedule any saved report on Data Explorer as an email alert. Open any *
   
 
 <details>
-<summary> Why are the values not getting auto updates on the dashboard page (overview/ user journey/ metrics)? </summary>
+<summary> Why are the values not getting auto updated on the dashboard page (overview/ user journey/ metrics)? </summary>
 <div>
-All the Insights widget pages must be refreshed to see the updated data (pages do not get auto-refreshed).
+All the Insights widget pages (Overview, Metrics, User Journeys, Doc cog, Dashboards, Data explorer) must be refreshed to see the updated data (pages do not get auto-refreshed).
 </div>
 </details>
 
