@@ -219,7 +219,7 @@ apiresponse represents the raw response from the custom live agent create ticket
              name: "Raj",
              email: "Test@email.com"
              },
-             freshChatGroupId: "test-group",
+             assignedGroupId: "test-group",
              freshChatUserId: "3554-cbcbc-dchchc",
              freshChatUniqueIdentifier: "testInfo"
     }).then((ticketData) => {
@@ -239,7 +239,7 @@ This table consists of sample values, data types and descriptions for all the fi
 |phone|9876543210| String |Mobile number of the end user.|
 |email|test@gmail.com | String |Email address of the end user.|
 name| Rajesh | String| Name of the end user.|
-|freshChatGroupId|Sales|String | Category under which the ticket will be created.|
+|assignedGroupId|Sales|String | Category under which the ticket will be created.|
 |priority|3554-cbcbc-dchchc|String | Freshchat groupId to which the ticket needs to be assigned. The default value that needs to be passed for this is “”.|
 |freshChatUserId|test-group| String| Freshchat userId of the user. This is passed if the same ticket needs to be re-opened for the same user.The default value that needs to be passed for this is “”.|
 |freshChatUniqueIdentifier| testInfo|Object|A unique identifier that if passed will reflect as referenceId in the freshchat agent portal. The default value that needs to be passed for this is “”.|
