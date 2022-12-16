@@ -1,6 +1,7 @@
 ---
 title: Studio overview
 sidebar_label: Overview
+id: overview
 ---
 
 The studio provides a no-code bot-building platform that helps anyone create a bot for their business needs easily. With Studio, you can collect information from your customers, update their information, launch actions, show them the necessary information, have a live chat with an agent and do a lot more.
