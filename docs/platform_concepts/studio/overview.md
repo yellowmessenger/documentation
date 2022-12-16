@@ -69,7 +69,7 @@ This is a general (**Home**) flow that the bot follows, irrespective of the trai
 - There is always a welcome message configured and displayed for the user.
 - The bot responds to the queries it **understands** and **does not understand**.
 
-You can use global options for each node or flow that you build based on your use case. You can click on **Edit** icon to select the particular flow under each option. It is further customized as per the use case.
+You can use global options for each node or flow that you build based on your use case.
 
 ![](https://i.imgur.com/cFTYsIg.jpg)
 
@@ -84,7 +84,7 @@ The following are the various **Conversation settings** that are available on th
 | Channels | You can add various [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) to your bot based on your requirements.<br/> <img src="https://i.imgur.com/OHNrPmO.png)" alt="drawing" width="60%"/> |
 | Document Search | The bot responds to the user based on the data from the [uploaded document](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition). To add a new document, click **+ Add** document. <br/> <img src="https://i.imgur.com/YIc6nap.png)" alt="drawing" width="60%"/> | 
 | Suggestion | This can be used when you want to redirect a user when the requested answer is not found.<br/>For example, you have asked a bot, "I want to know my order status for the day". If bot does not understand or not sure about your question, then the relevant suggestions are displayed. <br/> In these cases, bot replies with a message, "My apologies, I was not able to understand what you have asked." and provides relevant suggestions to the user. Also, it provides an option, "Not Satisfied". When user selects "Not satisfied" option if they are not satisfied with any of the bot suggestions, bot searches for the answer from the **Document Search** if it is configured; otherwise, a fallback message is displayed.<br/>**Note**:<br/> * If the confidence is between 0.6 and 0.9, then the bot provides suggestions. <br/> * If the confidence is below 0.6, then the bot displays a fallback message. <br/> <img src="https://i.imgur.com/7OZv1Q4.png)" alt="drawing" width="60%"/> |
-| Language settings | You can add multiple languages to your bot based on your business needs. Click on **Edit** icon to add languages.<br/> <img src="https://i.imgur.com/sfyTVZj.png)" alt="drawing" width="60%"/> <br/> Select languages from drop-down and click **Save**. <br/> <img src="https://i.imgur.com/572R72g.png)" alt="drawing" width="60%"/> | 
+| Language settings | You can add multiple languages to your bot based on your business needs. Click **Edit** icon to add languages.<br/> <img src="https://i.imgur.com/sfyTVZj.png)" alt="drawing" width="60%"/> <br/> Select languages from drop-down and click **Save**. <br/> <img src="https://i.imgur.com/572R72g.png)" alt="drawing" width="60%"/> | 
 | Callout | These banners on top of the chat can be used to promote a brand and/or get visitors from the host website to go to the advertiser's website.<br/> <img src="https://i.imgur.com/f4LbObf.png)" alt="drawing" width="60%"/><br/> **Note**: You can add four callouts with two buttons each. Buttons can be further customised by clicking **Advanced Settings**. <br/> ![](https://i.imgur.com/qWMxeYl.png) | 
 
 :::info
