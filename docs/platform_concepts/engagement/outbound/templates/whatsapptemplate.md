@@ -77,38 +77,67 @@ You will see these options in Buttons under Button Type.
 
 #### Call to Action
 
-In Type of action, You can either choose between Visit Website or Call Phone. Currently it supports up to two CTAs in a template.
+In Type of action, You can either choose between Visit Website or Call Phone. Currently, it supports up to two CTAs in a template.
 
 ![](https://i.imgur.com/OpV6j9P.png)
- 
+
 For the action, Visit website -
-1. In **Button** text, enter the label name (character limit 20) for the CTA.
+
+1. In the **Button** text, enter the label name (character limit 20) for the CTA.
 2. In the drop-down box, choose the type of URL - *Static* or *Dynamic*.
 3. In URL, enter the URL that you want recipients to redirect upon clicking the button.
-  
+
 For the action, Phone number -
-1. In **Button** text, enter the label name (character limit 20) for the CTA.
+
+1. In the **Button** text, enter the label name (character limit 20) for the CTA.
 2. In the drop-down box, choose the country of the phone number.
-3. In **Phone number**, enter the phone number that you want your recipients to call to.
+3. In **Phone number**, enter the phone number that you want your recipients to call.
 
+#### Quick replies
+
+There are three different quick reply actions available.  You can use the desired action for each button and a maximum of three quick reply buttons are supported. Each button text can have up to 20 characters. 
+
+![](https://i.imgur.com/khDiOw3.png)
+
+The following are the three different quick reply options:
+
+* **Trigger journey**: Use this to trigger a specific journey when the user clicks on the button. For example, you can use it to send a promotional notification about store offers, and trigger the bot flow through which users can buy products when the user clicks on it.
+
+   **Prerequisite**: A journey should be created already for offers and buy products to select from.
+
+   Enter the **Button text**, choose the **Action type**,  *Trigger journey*, and select the **Journey name** that you want to trigger.
+
+   ![](https://i.imgur.com/7a6k9Nc.png)
+
+
+
+
+
+
+* **Trigger NLP**: Use this to trigger the bot conversation as per the utterances trained under intents. For example, use it to send a transactional notification about order cancellation, and provide a talk-to-customer support button to trigger Live Agent flow.
+
+   **Prerequisite**: Live agent flow should be trained with the *Talk to customer support* utterance.
+  
+  Enter the **Button text**, choose the **Action type**,  *Trigger NLP*.
+
+  ![](https://i.imgur.com/Ijp1chQ.png)
+
+
+
+* **Send as Event**: Use this to send all the template data to the bot and use it in custom flows. For example, you can capture the button clicked and the user ID in a custom dataset.
+
+  Enter the **Button text**, choose the **Action type**,  *Send as event*.
+
+   ![](https://i.imgur.com/ew3RIM0.png)
   
 
-#### Quick reply
-
-  
-You can add a maximum of three quick reply buttons and the button text can have up to 20 characters.
-
- 
-  ![](https://i.imgur.com/lKAIipS.png)
-
-  
-Enter label names for each reply. Use the Delete icon to remove any button. 
-
- ![](https://i.imgur.com/wJnIgW4.png)
- 
+:::note
+Use the Delete icon to remove any button.
+:::
 
 
  
+
 ### 1.2 Add variables
 Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
 

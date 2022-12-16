@@ -63,6 +63,7 @@ Similarly, you can deactivate an active event. The flow will not trigger When yo
 | ym_closed_promotion | When the user closed the promotion in the bot. |
 | page-url-based-trigger | To trigger a specific flow, when the URL matches with the loading page URL. |
 
+***
 
 ### <a name="inb-1"></a> 2. Inbox related events
 
@@ -90,6 +91,8 @@ Similarly, you can deactivate an active event. The flow will not trigger When yo
 | ticket-inactive | When a ticket is marked as inactive |
 | ticket-queue-to-open | When a ticket is moved from queued to open state |
 
+***
+
 ### <a name="eng-1"></a> 3. Engage related events
 
 
@@ -102,11 +105,96 @@ Similarly, you can deactivate an active event. The flow will not trigger When yo
 | fb-ad-referral                | Receive facebook ad referral property events             |
 
 
+#### 3.1 Facebook [Click-to-Whatsapp](https://www.facebook.com/business/help/447934475640650?id=371525583593535) campaign event
 
+This event is received from Facebook campaigns which navigates the user to WhatsApp, known as [Click-to-WhatsApp](https://www.facebook.com/business/help/447934475640650?id=371525583593535) ads.
+
+
+
+##### Description
+
+When a user clicks on a Facebook ad., the referral event is received in the bot containing the user and campaign information.
+
+The referral event works as follows:
+
+1.  A user clicks on an ad. for which the **Click-to-WhatsApp** CTA is configured.
+2.  The user will be redirected to WhatsApp with a pre-configured message related to the ad. 
+3.  The user needs to send a preconfigured message to receive the referral event to the bot.
+
+:::note
+If the user edits the preconfigured message, the event will not be triggered.
+:::
+
+4.  The advertising business gets an inbound message notification including the referral property, which provides additional context about the ad. that triggered the message. 
+5. The business can use the information received on the event and respond accordingly.
+    
+
+You can get the following fields in your referral event object:
+
+Field | Datatype | Description
+------ | ---------- | ---------
+`headline` | String | Used in the ad. that generated the message.
+`body` | String | The source type of the ad. Supported values are ad. and post.
+`source_id` | String | Facebook ID for an ad. or a post.
+`source_url` | String | The URL that leads to the ad. or post. Opening this URL takes you to the ad viewed by your user. <br/> A referral object may contain only the `source_url` field in some cases. <br/>This is expected and happens when: <ul><li>A user sends the message before the context for the ad. or post has been rendered on the user’s app.</li><li>An error or mismatch when the user's client tries to look for an ad. or post’s context.</li></ul>
+`image` and `video` | [Media object](https://developers.facebook.com/docs/whatsapp/api/webhooks/components#media) | Optional. The image or video that the user saw and clicked. This object will not appear if the `skip_referral_media_download` application setting is set to `true`. See application settings for more details.<br/>
+
+##### Prerequisites
+1.  The Facebook page where the campaigns are run should be linked with a WhatsApp Business Account number which is integrated with the bot. [See how to do it](https://www.facebook.com/help/iphone-app/2783732558314697).
+2.  The following events need to have enabled from the event hub for that particular bot.
+ 
+   * whatsapp-referral
+   * fb-ad-referral
+    
+   ![](https://i.imgur.com/Up3dBHY.png)
+
+
+##### Sample campaign from Facebook ad. manager:
+
+![](https://i.imgur.com/HR2JJYM.gif)
+
+##### Sample screenshots of the Campaigns or ad. on the Facebook Feed and Whatsapp landing pages:
+
+![](https://i.imgur.com/HoEs2lH.png)
+
+<center>
+<img src="https://i.imgur.com/A4hi1KV.png" width="300"/>
+</center>
+
+
+##### Sample event_data that will be captured in bot logs:
+
+```json
+"event":
+{
+“code”:“whatsapp-referral”,
+"data": {
+"body":"Find the quickest answers to the hardest questions with EMBIBE’s Doubt Resolution",
+"headline":"Chat with us",
+“source_id":“23849768127610425",“source_type":"ad",
+“source_url":"https://fb.me/1h8GtCKq7",
+“video":{
+
+"id":"42ac72f-204d-4f5b-81f4-f09bf1952253"
+},
+“message":“How can I use the Doubt Resolution feature?"
+}
+}
+```
+
+![](https://lh3.googleusercontent.com/GLf8hJ60i47iUPB2I1DcMrR02CAzieRUpkepQr4eGgJAMoJpwBOdO2hhGiBh3F69nBQu-T69OOL7EHEvMwLlwn7rK3rEt_cinNh-I_NYeloG1xaByMJwnV12_CSIdnyu_qAedCZohqsd1TlPa1KzhkVHTyX7aN3uTZcgEp3pgJ2MWiNP6CYuZ833zoEi)
+
+![](https://lh6.googleusercontent.com/Uy8n_hGEaF2UxU0di4TtiWVoUIc2rPXOwESYpKlCMIkj2M0Yd32GVvh91BHXR0Rjw1itlr9UgUlpHDwwgYbJFHiGnaPJN6THh14qePQxd1AWwv8IDfqXyRjOJii2oYMF_FTuQjAYRfgn8LBd5MUct8dqF-sRv4rQn2S7B_odV_aVoq5oDrj1S5gEeg4h)
+
+
+
+***
 
 ### <a name="int-1"></a> 4. Integration related events
 
 The integration related events depend completely on the events the respective third-party app supports. Hence, the list of supported events might vary for each integration. 
+
+***
 
 ### <a name="uie-1"></a> 5. User inactivity events
 
@@ -285,6 +373,7 @@ To create a custom event, follow these steps -
 1. The above-mentioned API doesn't allow genric payloads and cannot be used as a general webhook.
 2. Once a custom event is created, you can activate, deactivate, edit or delete a custom event. 
 :::
+
 
 
 
