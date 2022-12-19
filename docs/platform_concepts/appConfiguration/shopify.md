@@ -60,8 +60,8 @@ Yellow.ai Integration with Shopify allows you to seamlessly connect your Shopify
 
 3. Type shopify in the Search box, and select Shopify Shop from the list.
 4. Scroll down to Add account and enter the following details.
-   i. Enter the **Shop name**.
-   ii. Paste **Admin API access token** and **API secret key**.
+   * Enter the **Shop name**. The shop name should be taken from the Shopify store URL, for example if the merchant store URL is yellowxyz.myshopify.com,the shop name would be yellowxyz.
+   * Paste **Admin API access token** and **API secret key**.
    ![](https://i.imgur.com/Y6KFBfR.jpg)
 5. Click Connect.
 

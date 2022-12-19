@@ -37,7 +37,17 @@ Select a value (only one value can be selected) from the dropdown based on your 
     * **Entity Value**: Used to compare and branch when a Entity value is detected. 
     * **Mustache**: You can write complex variable object and compare it to other variables (example variables.var_name.key_name)
     * **Inside agent working hours**: This can be used to branch conversation based on agent working hours configured at [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox/#agentstatus).
-    * **Sentiment**: This is used to branch based on the Sentiment detected on the last user message (Sentiment can be Positive/ Negative/ Neutral). For example, if questioned about the user experience in the flow, and user replies with something negative, Conditional node can be used to → connect the user directly to an agent. If the reply is of positive or neutral sentiment, you can add them to reply back later with logic etc. 
+    * **Sentiment**: This is used to branch based on the Sentiment detected on the last user message (Sentiment can be Positive/ Negative/ Neutral). For example, if questioned about the user experience in the flow, and user replies with something negative, Conditional node can be used to → connect the user directly to an agent. If the reply is of positive or neutral sentiment, you can add them to reply back later with logic etc.
+    * **globalModel:** This is a context handler that is used to branch the flow based on the identified context. For example, if the user enters "Why is this process getting delayed?", the globalModel identifies the context as "why" and diverts the flow to the attached node (Execute flow-> followup and reply "We are processing your application, please stay with us.")
+
+![](https://i.imgur.com/oFadY2l.png)
+
+**Context Handler** is also available on our Beta release Input Node. [Add an input node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#29-input) to your flow to access it.
+
+![](https://i.imgur.com/HZNqOAi.png)
+
+To know more about handling contextual responses, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-contextual-response).
+ 
 
 
 * **System** - Page URL. This will branch conversation flow based on the page URL detected. 
@@ -95,27 +105,3 @@ Since none of the channels mentioned in If and Else-if was configured, the bot d
 
 ---
 
-## 3. Context Handler
-
-:::note
-This node can only be attached to an [Input node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#15-input).
-:::
-
-In the condition node, questions around why, what, No, repeat, etc can be answered locally. Which handles multiple paths except for just validation failure or success.
-
-A context handler is used to branch the flow based on the identified context. Follow the steps mentioned below as per your use case: 
-
-* Store the user query/ user input in a global variable. 
-* Select the variable on the **Context handler** nodes **If condition**.
-
- ![](https://i.imgur.com/qsiynIb.png)
-
-* Select the context from the drop-down. Branch each of these conditions to other nodes. 
-
-
-![](https://i.imgur.com/abxlkuP.png)
-
-
-For example, if the user enters  "Why is this process getting delayed?" and it is stored in a variable -> approvalReminder, the Context handler identifies the context as "why" and diverts the flow to the attached node (Execute flow-> followup and reply "We are processing your application, please stay with us.")
-
-![](https://i.imgur.com/Q9gSP2j.png)
