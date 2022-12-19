@@ -3,15 +3,10 @@ title: User journey visualization
 sidebar_label: User journey visualization
 ---
 
-In this article, you will learn about the various features available for the visualization of user flow(/journey), namely: 
+In this article, you will learn about the various features available for the visualization of user flow(journey), namely: 
 1. [Understand the flows your users are taking](#1)
 2. [View steps inside each flow to know where the users switched/dropped off](#2)
 3. [Visualize insights of each flow](#3)
-
-
-- This can be found in **Insights** > **User journeys** > **User journey visualization**.
-
-![](https://i.imgur.com/GPQooDP.png)
 
 
 User journey visualization enables you to view how your users are moving across different [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) when conversing with the bot. You can identify major points where users are dropping off or changing paths, and make changes in bot design to improve overall engagement and conversion.
@@ -19,15 +14,21 @@ User journey visualization enables you to view how your users are moving across 
 
 Some high-level insights you can derive from this section are:
 
-1. Various paths are taken by the users.
+1. Analyze various paths the user has taken.
 2. Identify major points where users are dropping off or changing paths.
-3. Help our customers build a hypothesis for adding/making any changes in the bot journeys.
+3. Help customers build a hypothesis for adding/making any changes in the bot journeys.
 4. Improve engagement & journey completion rate.
+
+**Navigation:**
+
+- To access User journey visualization, go to **Insights** > **User journeys** > **User journey visualization**.
+
+![](https://i.imgur.com/GPQooDP.png)
 
 
 ----------
 
-## <a name="1"></a> 1. Understand user flows
+## <a name="1"></a> 1. Understand user journey
 
 Follow the below steps to understand how to visualize the user journey: 
 
@@ -40,13 +41,13 @@ Follow the below steps to understand how to visualize the user journey:
 
 ![](https://i.imgur.com/m1UlUv4.png)
 
-3. Click **-** on the flow component and you can view the connected flows. By placing the cursor on any of the flow, you can view the following parameters: 
+3. Click the **-** sign on the flow component and you can view the connected flows. By placing the cursor on any of the flow, you can view the following parameters: 
 
 
 
 | label       | Description                                                                                  |
 | ------------ | -------------------------------------------------------------------------------------------- |
-| **User Dropped** | This means the user got dropped off the chat window or did not respond for a very long time |
+| **User Dropped** | This means that the user dropped off the chat window or did not respond for a very long time |
 |**Flow completion rate**|Total times a flow was completed / total times it was triggered|
 |**Flow dropped rate**|Percentage of times users dropped off the chat|
 |**Flow switched rate** |Percentage of times users switched paths between two flows|
@@ -100,14 +101,14 @@ Widget with actionable insights around good/poor performing flows, and steps wit
 
 
 2. The related steps and flows along with their relevant data points would be listed out 
-    - Take an example of **Steps with maximum drop offs**. The step names along with their related flow names are listed for which the drop-off rate is high.
+    1. Take an example of **Steps with maximum drop offs**. The step names along with their related flow names are listed for which the drop-off rate is high.
     <img src="https://i.imgur.com/N9o97iU.png" alt="drawing" width="80%"/>
-    - Select any of the flow names. For example - Quick replies.
+    2. Select any of the flow names. For example - Quick replies.
     <img src="https://i.imgur.com/UKXjx9H.png" alt="drawing" width="80%"/>
-    - You will reach the steps inside the floor model where you can see how the users have traversed within that particular flow.
-    - The step with the highest drop rate is highlighted for quick and easy reference.
+    3. You will reach the steps inside the floor model where you can see how the users have traversed within that particular flow.
+    4. The step with the highest drop rate is highlighted for quick and easy reference.
     <img src="https://i.imgur.com/x3z01fI.png" alt="drawing" width="100%"/>
-    -  Click **Show steps** on top right to get redirected to **Studio** > **Builder** to make necessary changes in the flow design.
+    5.  Click **Show steps** on top right to get redirected to **Studio** > **Builder** to make necessary changes in the flow design.
     <img src="https://i.imgur.com/lHb8Ko9.png" alt="drawing" width="80%"/>
 
 
