@@ -154,4 +154,4 @@ After testing the flow, click the below highlighted icon to preview your bot.
 
 ![](https://i.imgur.com/zhXqsM1.png) 
 
-After previewing your flow, you can publish your bot. To know more about publish bot, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#2-publish-bot).
+After previewing your flow, you can publish your bot to the respective environmnet. To know more about publish bot, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#2-publish-bot).

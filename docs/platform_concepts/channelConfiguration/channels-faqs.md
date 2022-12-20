@@ -211,3 +211,15 @@ sidebar_label: Channels FAQs
     These are the possible entry points to GBM channel.
 
     ![](https://cdn.yellowmessenger.com/KhsmRbGecXEy1621333747652.png)
+
+## 4. Chat widget related FAQs  
+
+1. **How to improve the website's performance after installing the bot?**
+
+     Ensure that the chatbot script is pasted in the `<body>` of the website rather than the `<head>`. This will ensure the bot loads only when the website is fully loaded without affecting its performance.
+
+2. **Why is the bot not displaying or loading any of the configured messages?**  
+
+     Make sure you have configured Welcome message in the [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview). Login to cloud.yellow.ai platform. Navigate to  **Studio -> Welcome Message -> Add welcome message**. To know more, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings).
+
+
