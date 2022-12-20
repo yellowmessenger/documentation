@@ -50,6 +50,7 @@ module.exports = {
       collapsed: true,
       items: [
         "cookbooks/marketplace-templates/edtech-template",
+        "cookbooks/marketplace-templates/ecommerce-template",
       ],
     }, 
     {
