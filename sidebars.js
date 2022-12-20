@@ -75,6 +75,16 @@ module.exports = {
 
       ],
     }, 
+    {
+      type: "category",
+      label: "Insights",
+      collapsed: true,
+      items: [
+        "cookbooks/insights/eventdescriptions",
+
+      ],
+    }, 
+
 
     {
       type: "category",
@@ -166,6 +176,8 @@ module.exports = {
         "cookbooks/whatsapp-channel/updates",
       ]
     }
+
+
   ],
 },   
 
