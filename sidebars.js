@@ -12,6 +12,7 @@ const { listPaths } = require("./src/plugins/components");
 // let components = listPaths();
 
 module.exports = {
+ 
   tutorials: [
     "tutorials/basics",
     "tutorials/studio",
@@ -615,13 +616,12 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
-        "platform_concepts/engagement/effectivelyuseengage",
         
         
             
         {
           type: "category",
-          label: "Outbound engagement",
+          label: "Outbound campaigns",
           collapsed: true,
           items: [
                 
@@ -651,17 +651,29 @@ module.exports = {
               ],
             }, */
             "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
-            "platform_concepts/engagement/workflowCampaign",
+            
           //  "platform_concepts/engagement/outbound/filter",
             "platform_concepts/engagement/outbound/outbound-campaigns/outbound-report",
             "platform_concepts/engagement/outbound/notification-engine",
+            "platform_concepts/engagement/effectivelyuseengage",
+
+           
           ],
         },
         
-
         {
           type: "category",
-          label: "Inbound engagement",
+          label: "Workflow campaigns",
+          collapsed: true,
+          items: [
+        "platform_concepts/engagement/workflowCampaign",
+        "platform_concepts/engagement/event-triggered-campaign",
+        "platform_concepts/engagement/workflow-report",
+      ],
+    },
+        {
+          type: "category",
+          label: "Inbound campaigns",
           collapsed: true,
           items: [
             "platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign",
