@@ -13,10 +13,10 @@ In this article, you will learn:
 
 #### <a name="features"></a> Insights Dashboard 
 
-A dashboard is a visual display of all your data. It can be used for multiple use cases with its primary intention to provide information at a glance. 
-- A dashboard has its dedicated page and receives information from a **linked database** which can be **configured** as per your need. You can choose the data you want to see and whether you want to include charts or graphs to visualize the numbers.
+A dashboard is a visual display of all your bot data. It can be used for multiple use-cases with its primary intention to provide information at a glance. 
+- A dashboard has its dedicated page and receives information from a **linked database**, which can be **configured** as per your needs. You can choose the data you want to see and choose to visualize the numbers using charts or graphs.
 - You can create **Multiple Dashboards**. In this, each dashboard can include multiple widgets (reports).  
-- **Widgets** are the saved reports that are present on the [data explorer page](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer). The dashboard helps the analysts to add multiple widgets to the single page layout. 
+- **Widgets** are the saved reports that are present on the [data explorer page](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer#45-save-query). The dashboard helps the analysts to add multiple widgets to the single page layout. 
 - Widgets can be directly added to the Dashboard from the **data explorer**.
 
 
@@ -27,12 +27,12 @@ A dashboard is a visual display of all your data. It can be used for multiple us
 
 ## 1. Create Dashboard 
 
-Using either of the following methods you can create more than one dashboard. 
+You can create more than one dashboard using either of the following methods.  
 
-**Usecase** 
+**Dashboard usecase** 
 
-Depending upon the commonality between different widgets, you can club the reports having some type of commonality among each other under one particular page.
-If your company has three different types of products and you want to check the analytics for those products, separately, at the same time, in the same place for each product, you can create dashboards for product #1 product #2, and product #3. Add all of the metrics that are common to a particular product to the respective dashboard. With this, you can see all the values that are connected under one view.
+Depending upon the commonality between different widgets, you can club the reports having some type of commonality among each other under one particular page(dashboard).
+If your company has three different types of products and you want to check the analytics for those products, separately, at the same time, in the same place, you can create dashboards for product #1 product #2, and product #3. Add all of the metrics that are common to a particular product to the respective dashboard. With this, you can see all the values that are connected under one view.
 
 
 ### <a name="1"></a>  1.1 Create a dashboard from Dashboard page 
@@ -47,6 +47,8 @@ If your company has three different types of products and you want to check the 
 
 
 ### <a name="2"></a>  1.2 Create a dashboard from Data explorer 
+
+> Prerequisites: [Data explorer](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer#52-add-report-to-dashboard)
 
 1. Login to [yellow.ai](https://cloud.yellow.ai/bot/Bot_ID/overview), click on Overview. Open **Insights** > **Data explorer**. 
 2. Click and open any of the saved reports. 
@@ -68,7 +70,8 @@ If your company has three different types of products and you want to check the 
 ![](https://i.imgur.com/22q7kUO.png)
 
 :::note
-To learn more about creating a saved report, refer to [custom tables](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer). 
+To learn more about creating a saved report, refer to [custom tables](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer#3-create-custom-tables).    
+
 <img  src="https://i.imgur.com/MFgmkwk.png"  width="70%"/>
 :::
 
@@ -81,7 +84,7 @@ To learn more about creating a saved report, refer to [custom tables](https://do
 
 ---
 
-Following are the other dashboard features: 
+Other dashboard features are listed below: 
 
 **Date filter**
 
@@ -102,8 +105,9 @@ Following are the other dashboard features:
 
 - By clicking **Edit dashboard** on the top right, you can: 
     - Change the dashboard **Name** and **Description**.
-    - Add more widgets. 
-    - Drag and drop the existing widgets at your convenience. 
+    - Add more widgets to the dashboard. 
+    - Delete the existing widgets from dashboard.
+    - Drag and drop the existing widgets to place is as per your needs. 
     - Click **Save**. 
 
 ![](https://i.imgur.com/8tNItnb.png)

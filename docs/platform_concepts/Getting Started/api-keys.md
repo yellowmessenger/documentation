@@ -1,6 +1,8 @@
 ---
 title: Generate API Keys
 sidebar_label : Generate API Keys
+keywords: [bot token, get bot token, bot access token, access token, x-auth-token, bottoken]
+
 ---
 
 API keys are used for authentication and authorization when another system or program calls the protected APIs. 
