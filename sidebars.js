@@ -832,11 +832,11 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/web-widget",
+            "platform_concepts/channelConfiguration/web",
           ]
         },
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/fb-workplace",
-        "platform_concepts/channelConfiguration/web",
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
