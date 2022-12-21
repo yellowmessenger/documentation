@@ -81,6 +81,7 @@ module.exports = {
       collapsed: true,
       items: [
         "cookbooks/insights/eventdescriptions",
+        "cookbooks/insights/botagentfedback",
 
       ],
     }, 
