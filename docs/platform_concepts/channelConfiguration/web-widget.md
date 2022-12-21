@@ -1,12 +1,10 @@
 ---
 title: Chat widget
-sidebar_label : Chat widget
+sidebar_label : Set up Chat widget
 keywords : [iframe]
 ---
 
 Chat widget is a window that you can embed on a website to interact with your website users real-time.
-
-
 
 
 ## 1. Access Chat widget
