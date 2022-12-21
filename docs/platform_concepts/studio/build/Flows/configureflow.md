@@ -101,7 +101,7 @@ Ensure that you clear the browser cache before you preview the bot. It is recomm
   * Use & if you want to append it after a variable. Example: https://cloud.yellow.ai/liveBot/x1635319612954?region=&ym.triggerJourney=feedback
 ::: 
 
-**Flow slug:** The flow name is displayed with the underscore and characters appended to the URL in the application header. You can view this when you select the created flows from the Flows drop-down. The slug is associated with every flow or journey created in the platform.  If you want to trigger a flow or customise at the code level on your website, you can use flow or slug journey. 
+**Flow slug:** The flow name is displayed with the underscore and characters appended to the URL in the application header. You can view this when you select the created flows from the **Flows** drop-down. The slug is associated with every flow or journey created in the platform. If you want to trigger a flow or customise at the code level on your website, you can use flow or slug journey. The journey slug is captured by bot and it is used to gain insights.  
 
 ![](https://i.imgur.com/e8MjGPV.png)
 
