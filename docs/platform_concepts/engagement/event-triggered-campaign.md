@@ -16,7 +16,24 @@ The following are some examples of where you can use Event-Triggered workflows:
 
 ## 2. Create an Event-Triggered workflow campaign
 
-### Step 1: Create Workflow
+### Step 1: **Add an event**:
+To create a custom user event, follow these steps:
+1. In Studio, go to the **Event** tab and click **Custom events** > **+Add event**.
+2. In **Event name**, name the event.
+3. In **Event description**, enter a brief description about the event.
+
+<center>
+   <img src="https://i.imgur.com/GhMQpyZ.png" width="400"/>
+</center>
+
+3. Click **Create event**.
+4. Push the custom event data of a user using the [Push user event](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) API. It needs the `userId` of the registered user. Events help you track user actions or trigger a Journey or Campaign for that user.
+
+   If the `userId` does not exist on [yellow.ai](http://yellow.ai/)'s User360 module, you need to call the [User create API](https://documenter.getpostman.com/view/17583548/UVsEVUsg#e7271fa6-4122-4e0b-a535-fe0354462c35) and then [push the event](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) data.
+
+   You can use a phone number or email address as a UserID and needs to be unique. For more details, see [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id).
+
+### Step 2: Create Workflow
 
 Workflow campaign is like a flow which you can trigger from the Engage Module. 
 
@@ -31,19 +48,22 @@ To create a Workflow campaign, follow these steps -
 
     ![](https://i.imgur.com/KtDjtdm.png)
 
+2. Set to trigger the flow when the event occurs. 
 
-2. To the Start node add a new **Action** node, **Outbound notification**. There is no need to configure the start node for workflows.
+   ![](https://i.imgur.com/uiOAUyg.png)
+
+3. To the Start node add a new **Action** node, **Outbound notification**. There is no need to configure the start node for workflows.
 
   .   ![](https://i.imgur.com/clEtIEw.png)
 
 ![](https://i.imgur.com/Eo7aEiZ.png)
 
-3. Map **To** to a CDP attribute of the notification type (for example, phone for WhatsApp, email for Email).
-4. Use various *Action* nodes in between flows to fetch notification status; use the Delay node to add timeout.
+4. Map **To** to a CDP attribute of the notification type (for example, phone for WhatsApp, email for Email).
+5. Use various *Action* nodes in between flows to fetch notification status; use the Delay node to add timeout.
 
 ![](https://i.imgur.com/gL830m9.png)
 
-5. Map Template params properly with CDP Attribute or Bot variable so that the Template can be sent to the user.
+6. Map Template params properly with CDP Attribute or Bot variable so that the Template can be sent to the user.
 
 :::note
 * There should be at least 1-2 minutes delay between an Outbound Node and Notification Status Node.
@@ -51,22 +71,7 @@ To create a Workflow campaign, follow these steps -
 * Currently, not all the Action Nodes are supported in a Workflow. Basic functionalities such as Outbound Nodes, Delay Nodes, and DB Updates are compatible with Workflow Campaign.
 :::
 
-### Step 2: **Add an event**:
-To create a custom user event, follow these steps:
-1. In Studio, go to the **Event** tab and click **Custom events** > **+Add event**.
-2. In **Event name**, name the event.
-3. In **Event description**, enter a brief description about the event.
 
-<center>
-   <img src="https://i.imgur.com/GhMQpyZ.png" width="400"/>
-</center>
-
-3. Click **Create event**.
-4. Push the custom event data of a user using the [Push user event]((https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a)) API. It needs the `userId` of the registered user. Events help you track user actions or trigger a Journey or Campaign for that user.
-
-   If the `userId` does not exist on [yellow.ai](http://yellow.ai/)'s User360 module, you need to call the [User create API](https://documenter.getpostman.com/view/17583548/UVsEVUsg#e7271fa6-4122-4e0b-a535-fe0354462c35) and then [push the event](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a)) data.
-
-   You can use a phone number or email address as a UserID and needs to be unique. For more details, see [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id).
 
 ### Step 3: Schedule an event-triggered workflow
 

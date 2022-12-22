@@ -44,6 +44,7 @@ module.exports = {
 
       ],
     }, 
+     
     {
       type: "category",
       label: "Marketplace templates",
@@ -205,9 +206,8 @@ module.exports = {
     "platform_concepts/Getting Started/account-setup",
     "platform_concepts/Getting Started/user-account-settings",  ],
 },
-    
 
-    {
+{
       type: "category",
       label: "Get started with Platform",
       collapsed: true,

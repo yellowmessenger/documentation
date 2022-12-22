@@ -66,7 +66,15 @@ Once your trial ends, you will see this pop-up in your  account.
 
 <img src="https://i.imgur.com/e57YUgM.png" alt="drawing" width="100%"/>
 
-Click the **Schedule call** button to have a 1:1 with our product consultants who will help you choose a plan that suits your business.
+Click the **Schedule call** button to have a 1:1 with our product consultants who will help you choose a plan that suits your business. 
+
+Once you click the **Schedule Now/ Schedule call** buttons, the **Calendly** pop-up gets displayed, where you can choose the **date**, **time** and the **time zone** that works for you.
+
+![](https://i.imgur.com/5Jrm75i.png)
+
+In the following screen, fill in all the fields and click **Schedule Event**. 
+ 
+![](https://i.imgur.com/gikyMOq.png)
  
 
 ------
@@ -104,7 +112,7 @@ Here is a list below which shows all the tiers and features available.
 
 
 ### Manage Subscription
-Whenever another platform user [shares bot access](https://docs.yellow.ai/docs/platform_concepts/configurations/access-management) with you to collaborate, you have to first accept the invite and then switch to their subscription to access their bot.
+Whenever another platform user [shares bot access](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators) with you to collaborate, you have to first accept the invite and then switch to their subscription to access their bot.
 
 
 1. To switch your subscription, go to your **Profile** and click on **Billing**.
