@@ -30,11 +30,11 @@ app.sendEvent({
 Refer to the following documentation links for mobile SDK documentation:
 
 * [IOS](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios)
-* [Android](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android)
-* [Cordova](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/cordova)
-* [React Native](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/react-native)
-* [Flutter](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/flutter)
-* [Xamarian](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/xamarin)
+* [Android](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android/)
+* [Cordova](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/cordova/)
+* [React Native](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/react-native/)
+* [Flutter](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/flutter/)
+* [Xamarian](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/xamarin/)
 
 **5. How to enable chat history?**
 

@@ -6,7 +6,7 @@ const Footer = () => {
   const learn = [
     {
       title: "Journey",
-      to: "./docs/platform_concepts/studio/build/journeys",
+      to: "./docs/platform_concepts/studio/build/Flows/journeys",
     },
     {
       title: "Nodes",

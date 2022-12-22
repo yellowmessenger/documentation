@@ -104,7 +104,7 @@ Here is a list below which shows all the tiers and features available.
 
 
 ### Manage Subscription
-Whenever another platform user [shares bot access](https://docs.yellow.ai/docs/platform_concepts/configurations/access-management) with you to collaborate, you have to first accept the invite and then switch to their subscription to access their bot.
+Whenever another platform user [shares bot access](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators) with you to collaborate, you have to first accept the invite and then switch to their subscription to access their bot.
 
 
 1. To switch your subscription, go to your **Profile** and click on **Billing**.
