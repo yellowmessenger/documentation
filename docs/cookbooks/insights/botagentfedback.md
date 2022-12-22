@@ -17,7 +17,7 @@ Following are the different approaches that can be taken (as per your use case) 
 
 ## 1. Track user feedback on the default table
 
-To obtain the user feedback graph on the overview page and the user feedback default table on the data explorer page,   follow the below steps: 
+To obtain the user feedback graph on the overview page and the user feedback default table on the data explorer page, follow the below steps: 
 
 **To obtain user feedback on the bot interaction:** 
 
@@ -27,26 +27,31 @@ To obtain the user feedback graph on the overview page and the user feedback def
 
 > After the user feedback is entered, it will be saved in the Feedback table (it is a default database, need not create any new table to save this data unless your use case demands it).
 
+:::note
+
 **To obtain user feedback on the agent interaction:** 
 
-2. Create a flow using the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket) action node. Configure Inbox. Enable **CSAT** from the inbox settings. After a chat ticket is closed, your customers will be asked for, agent feedback and chat feedback. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) to know more. 
+- Create a flow using the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket) action node. Configure Inbox. Enable **CSAT** from the inbox settings. After a chat ticket is closed, your customers will be asked for, agent feedback and chat feedback. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) to know more. 
+- These user feedbacks can be found in the Insights module, [Data Explorer](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer) > **Chat tickets** table .
+
+:::
 
 
-3. Data attained from step #1 and step #2 will be available on **Insights**.    
+2. Data attained from users will be available on **Insights**.    
     - Open **Insights**.
     - Select **Data explorer** > **Default tables** > **User feeback**.  
 
 
 ![](https://i.imgur.com/cpnqjNR.png)
 
-4. This user feedback table can be summarized, and visualized. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer#4-data-visualization-and-other-functions) to know more. 
-5. You can save these queries and view them on a separate dashboard. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards) to know more. 
+3. This user feedback table can be summarized, and visualized. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer#4-data-visualization-and-other-functions) to know more. 
+4. You can save these queries and view them on a separate dashboard. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards) to know more. 
 
-7. Customer feedback analytics can also be found on the **Insights Overview** page under [User feedback](https://docs.yellow.ai/docs/platform_concepts/growth/overview#8-user-feedback). 
+5. Customer feedback analytics can also be found on the **Insights Overview** page under [User feedback](https://docs.yellow.ai/docs/platform_concepts/growth/overview#8-user-feedback). 
 
 > **Bot feedback** is obtained from [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#27-feedback). 
 > **Agent feedback** is obtained from the [CSAT score](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) provided to the live agent. 
-> This graph is available only for the default table - not custom tables.
+> This graph is available only for default tables - not custom tables.
 
 <img src="https://i.imgur.com/sMmYWUz.jpg" alt="drawing" width="50%"/>
 
