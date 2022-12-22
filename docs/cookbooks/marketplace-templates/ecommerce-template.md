@@ -56,7 +56,7 @@ The flow starts when the bot user selects a product to add to the cart. The user
 
 4. **Shows cart summary**: Calculates the cart price (Price associated with the Product ID * quantity = Total Price) and renders the cart details using the `formatCartSummary` **Function** node along with these options (**Quick replies**) 
 
-   * [Buy now](#linktotheflow), [Edit cart](#linktotheflow), [Clear cart](#linktotheflow) and [Add more products](#linktotheflow). It triggers the respective flow based on the input. 
+   * [Buy now](#buy-now), [Edit cart](#edit-cart), [Clear cart](#clear-cart) and [Add more products](#browse-products). It triggers the respective flow based on the input. 
 
 
 ![](https://i.imgur.com/wW9pPJP.png)
@@ -78,7 +78,7 @@ This flow allows users to edit the current cart details - change quantity or rem
 4. **Edit item**: Allows editing the quantity (for that product ID) using **Quick replies** (and **WhatsApp list**). 
    Stores the new quantity using the `editcart` function in a variable and updates it in the database (user details). 
 5. **Remove item**: Removes the item from the cart using the `editcart` function and the new cart summary is updated in the database (user details).
-6. **Shows options to proceed**: Shows these **Quick replies** and clicking on it executes the respective flow [Buy now](#linktotheflow), [Clear cart](#linktotheflow) and [Add more products](#linktotheflow).
+6. **Shows options to proceed**: Shows these **Quick replies** and clicking on it executes the respective flow [Buy now](#buy-now), [Clear cart](#clear-cart) and [Add more products](#browse-products).
 
 ### Clear cart
 
@@ -96,7 +96,7 @@ The flow triggers when the user selects *Clear cart* from the bot flows. The car
 
    ![](https://i.imgur.com/6TQukpV.png)
 
-4. **Updates user details**: The database (user details) is updated to empty the cart. A text node is displayed to the user confirming that the cart is empty and shows the [Browse products](#linktotheflow) option. 
+4. **Updates user details**: The database (user details) is updated to empty the cart. A text node is displayed to the user confirming that the cart is empty and shows the [Browse products](#browse-products) option. 
 
 
 ### Buy now
