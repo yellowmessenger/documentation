@@ -293,11 +293,10 @@ This section helps you create a WhatsApp product messaging journey with a sample
 
 The following are the prerequisites to create a catalog journey - 
 
-1. Ensure the WhatsApp Number is on OnPrem WhatsApp Server. Support on Cloud API is not available for now.
-2. Fill the **Compliance Info** on the *Channel Configuration* page.
-3. Fill the Catalog with the required details.
-4. Connect the catalog to the WABA as discussed earlier
-5. Add the products from the Catalog to the Bot DB to use them while sending SPM/MPM
+1. Fill the Compliance information on the *Channel* configuration page (Not required for WABA hosted on Cloud API).
+2. Fill the Catalog with the required details as discussed earlier (Mandatory).
+3. Connect the catalog to the WABA as discussed earlier.
+4. Add the products from the Catalog to the Bot DB to use them while sending SPM/MPM.
 
 
 To create a catalog journey, follow these steps - 

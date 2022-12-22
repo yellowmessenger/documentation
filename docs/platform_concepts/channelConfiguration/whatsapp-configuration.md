@@ -342,7 +342,7 @@ To create a new Catalog flow on the Yellow.ai Platform, see [here](https://docs.
 
 1. **Is SPM/MPM Supported on Cloud API?**
    
-   No, currently, SPM/MPM is not supported for Cloud API Hosted WABAs. Please reach out to Engagement Team for rolling back the WABA to OnPrem before using SPM/MPM. There will be additional hosting charges for the OnPrem Infra. AMs are required to get a sign off from the Customer for the infra cost before agreeing for the support of the SPM/MPM.
+  Yes, WhatsApp SPM/MPM are now supported on Cloud API hosted WABAs as well.  
 
 2. **When is the support of SPM/MPM will be available on Cloud API WABA?**
 
