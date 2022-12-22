@@ -2,187 +2,482 @@
 title : Razorpay
 sidebar_label : Razorpay
 ---
-In this document, we will learn about how to integrate the razor payment gateway into a [yellow.ai](https://cloud.yellow.ai) ChatBot.
 
-**Step 1:** Go to Razor Payment Website and create an Account [https://razorpay.com/](https://razorpay.com/).
+You can integrate the Yellow.ai platform with your [Razorpay ](https://razorpay.com/)account to receive payments from your end users. Along with receiving payments, you can also perform the following actions:
 
-**Step 2:** Login to your account and Go to the Dashboard of RazorPay.
+* Generate a payment link and receive the status (success/failure) of the payment.
+* Generate a payment link to receive partial payments and receive the status (success/failure) of the payments.
+* Initiate refund process.
+* Check refund status. 
 
-**Step 3:** By Default, you will be in Test Mode but make sure you are in it. We would be using __Test Mode__ as of now.
+## 1. Connect Razorpay with Yellow.ai
 
-NOTE: There are 2 modes in Razor Payment Gateway:
+Connect your Yellow.ai platform with your Razorpay account by following the below-mentioned steps.
 
-* __Test Mode:__ This mode is for testing and for developers who are just getting started in Razor Payment Integration. Test Mode is completely Free of Charge. No real charges will be made, even if we give our valid card details in the Razor Payment Gateway Page.
+### 1.1 Generate API keys on Razorpay dashboard
 
-* __Live Mode:__ As the name suggests, In the Live Mode, we would be charged for real. In order to work on Live Mode, we have to give our bank account and KYC Details.
+1. Log into your **Razorpay** account and select the mode (Test/Live) for which you want to generate the API key.
 
-![](https://cdn.yellowmessenger.com/IXlfsjfKEZHH1615286695115.png)
+![](https://i.imgur.com/74zbT2o.png)
 
-**Step 4:** In the Dashboard, Go to __Settings__ and click on __API Keys__ Tab. Generate a New Key. Click on the __Download Key Details__ and save the key details in a safe location. Click Ok.
 
-NOTE:
+* **Test Mode:** The test mode is a simulation mode in which you can test your integration flow. Your customers cannot make payments in this mode. Check out this [video](https://www.youtube.com/watch?v=Xwiv6zSVVCM) to know more.
+* **Live Mode:** When your integration is complete, switch to **Live** mode and generate live mode API keys. Replace test mode keys with live mode keys in the integration to accept payments from customers.Check out this [video](https://www.youtube.com/watch?v=30REpNtYSak) to know more.
 
-__Only__ when you generate a new API key for the __first time__, you can see the __Key Secret__ value. So make sure to save the key details in a safe accessible place.
+**To generate API keys for a  mode**,
 
-![](https://cdn.yellowmessenger.com/Semips2HoRUp1615286775032.png)
+ Navigate to **Settings** > **API Keys** > **Generate Key** to generate key for the selected mode. 
 
-**Step 5:** For the API request of Razorpay Payment, we have to use __Basic Auth Authorization__.
+![](https://i.imgur.com/vFHopPF.png)
 
-To get the Basic Auth Authorization value, we are gonna use the __POSTMAN__(v8.0.6) application.  
+The **Key Id** and **Key Secret** will appear on the following page. Downalod them to use in your Yellow.ai platform.
 
-1. Open POSTMAN application, click on __New -> Collection__ and create a collection with a name.
+![](https://i.imgur.com/7RPBlMe.png)
 
-2. Click on __New -> Request__. Give a Request Name and save it to the collection which we created above.
 
-3. Click on __Authorization__ Tab, click __Type__ and select __Basic Auth__.
+### 1.2 Enable the Integration in Yellow.ai's Integrations Module.
 
-4. Open the downloaded file which contains your API keys.
 
-5. Give __Key Id in Username__ Textbox and __Key Secret in Password__ Textbox.
+1. Login to [cloud.yellow.ai](https://cloud.yellow.ai/auth/login), go to the **Overview Switcher** and click **Integrations**.
 
-![](https://cdn.yellowmessenger.com/sbNOf0vjThpt1615286847630.png)
+![](https://i.imgur.com/x4dJgOZ.png)
 
-6. After giving the values in the username and password textboxes, go to __Headers__ tab.
 
-7. If No Headers key value pairs are visible, Click on the hidden eye option and you would see all the key value pairs in the Headers.
+3. Look for **Razorpay** in the search box or click the **Payment** category on the left navigation bar and then click **Razorpay**.
 
-8. Click on the __value of the Authorization__ key and Copy it.
+![](https://i.imgur.com/TMzGetO.png)
 
-![](https://cdn.yellowmessenger.com/of0Z2sYaWqig1615286959513.png)
 
-**Step 6:** Now let's go to the Developer Section of our ChatBot in the YM Platform. 
 
-NOTE:
+5. Fill in the fields and click **Connect**.
 
-The Recommended Step to Integrate a Payment Gateway is after the Step in which we get the cart details of the products which users want to buy from us. 
-
-	-> After the Successful Payment, we can store the cart details in our DataBase.
-
-**Step 7:** Let’s create a New Function for the Razor Payment Gateway Integration API Code.
-
-**Step 8:** We are going to use a POST request an API call to the Razor Payment Gateway with the required Details as below :
-
-```js
-	let dt = new Date();
-	let max = 10000, min = 100;
  
-	let totalPrice = 500;
-	let botId = app.bot;
-	//gives the ID of your bot
- 
-	let config = {
-	   method: 'POST',
-	   url: 'https://api.razorpay.com/v1/invoices',
-	   headers = {
-	       'Authorization': 'Basic cnpwX3Rlc3RfNE4zeGZtTUTJcUkyQk46d3ZKQ3VodkFDa3VFaFlITjFkRnM2R09Q',
-	       'Content-Type': 'application/json'
-	   },
-	   data: {
-		"customer": { //optional ; we can sent these details of user in this customer object
-			"name":”XYZ”,
-			"email":”xyz@xyz.com”,
-			"contact": 9678954326
-		},
-		"type": "link", //MANDATORY
-		"view_less": 1, //optional
-		"amount": totalPrice, //MANDATORY ; amount value should be in the smallest unit of the given currency value ; For INR, it should be ‘paise’
-		"currency": "INR",//MANDATORY
-		"description": "YM Restaurant Orders Payment",//MANDATORY
-		"receipt": "Receipt No : " + Math.floor(Math.random() * (max - min + 1) + min), //optional; IF PASSED, IT MUST BE UNIQUE FOR EACH TRANSACTION ; to display receipt string in the payment gateway
-		"sms_notify": 1, //optional ; 0 - No, 1- Yes ; If you want to send the Payment link via SMS
-		"email_notify": 1, //optional ;  0 - No, 1- Yes; If you want to send the Payment Link via EMAIL
-		"expire_by": Math.round(dt.getTime() / 1000), //optional; link expiry time ; IF PASSED, EXPIRY TIME MUST BE ATLEAST 16 MINUTES AWAY FROM THE CURRENT TIME !
-		"notes": { //MANDATORY ; SENDER,SOURCE AND BOT KEY ARE MANDATORY ! From these 3 keys, we are able to identify whom and from which bot is making the razor payment ! If we want to send any additional information, we use this notes object
-			"sender": app.sender,
-			"source": app.source,
-			"bot": botId
-			// "bot": "x5189765732960"
-		}
-	   }
-	};
+### 1.3 Configure webhook URL in Razorpay Dashboard 
 
-	let response = await app.axios(config);
-	
-	//app.log(response.data, "THIS IS POST AXIOS data !");
-	//app.log(response.status,"THIS IS POST AXIOS STATUS !");
-	//app.log(response.statusText, "THIS IS POST AXIOS statusText !");
-	
-	if (response.data.short_url) {
-	   //app.log(response.data.short_url, "THIS IS response.data.short_url !");
-	   await app.sendTextMessage("PAYMENT LINK: ");
-	   await app.sendTextMessage(response.data.short_url);
-	   return resolve();
-	}
-	
-	return resolve({
-	   success: false,
-	   question: "THERE ARE SOME TECHNICAL ISSUES ! KINDLY TRY AFTER SOME TIME !"
-	});
+To receive events, you need to configure the webhook URL in the **Razorpay Dashboard**.
+
+Copy the webhook url and the api key mentioned in the **Instructions** section of the Razorpay Integration Card. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.
+
+r1 = MEA
+r2 = Jakarta
+r4= USA
+r5 = Europe
+r3 = Singapore
+
+For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is MEA. If the bot belongs to India, you can use origin domain itself.
+
+### 1.4 Set up webhooks on RazorPay dashboard
+
+1. Log into the [Razorpay Dashboard](https://dashboard.razorpay.com/#/access/signin) and navigate to **Settings** → **Webhooks**.
+2. Click **+ Add New Webhook** on the right corner.
+
+![](https://i.imgur.com/aE5zgwH.png)
+
+
+
+3. In the **Webhook Setup** pop-up, enter the URL in which you'd like to receive the webhook payload when an event is triggered. We recommend using a **HTTPS URL**.
+
+![](https://i.imgur.com/uDShz45.png)
+
+
+
+::: Tip
+* You can set upto 10 URLs to receive Webhook notifications. Webhooks can only be delivered to public URLs. If you attempt to save a localhost endpoint as part of a webhook setup, you will encounter an error.
+:::
+
+4. Enter a **Secret** for the webhook endpoint. This secret will be used to validate whether the webhook is from **RazorPay**. Do not expose this secret publicly. Click [here](https://razorpay.com/docs/webhooks/validate-test/) to know more validating webhooks. 
+5. In the **Alert Email** field, enter the email address to which the notifications should be sent in case there's a webhook failure.
+6. Select the required events from the list of **Active Events**.
+7. Click **Create Webhook**. After you set a webhook, it appears on the list of webhooks.
+
+:::note
+To modify the webhook further, you can select the webhook and click **Edit**. You can refer this [video](https://www.youtube.com/watch?v=qojkh8Vbnek) as well.
+:::
+
+### 1.4 Receive events in Yellow.ai
+
+1. Login to cloud.yellow.ai and click **Studio**. 
+2. Click **Event** from the left navigation bar and then choose **Integrations**.
+3. Activate the event **Razorpay Payment Status** by clicking the three dots next to it.
+
+![](https://i.imgur.com/fK1Eoii.png)
+
+4. A journey with its trigger point as this event should be created in **Studio**. Based on the received event data, an appropriate message will be displayed to the end user.
+
+![](https://i.imgur.com/Bs6iIH8.png)
+
+
+## 2. Use-cases
+
+The following are the use-cases that are supported in this integration.
+
+### 2.1 Generate Payment Link
+
+1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+![](https://i.imgur.com/iBzozGD.png)
+
+
+
+2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
+
+![](https://i.imgur.com/wYYsSxX.png)
+
+
+3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
+
+
+
+| Field name | Sample value| Data type |Description |
+| -------- | -------- | -------- |----|
+| Text     | Text     | Text     |
+Amount|100|String|The amount that should be the payment link. This must be in the smallest unit of the currency. For example, if you want to receive a payment of ₹299.95, you must enter the value 29995.|
+|Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
+|Description|Test|String|A brief description of the payment link.|
+IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
+|CustomerObject|{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },|Object|Customer details|
+|Notes|{ "policy_name": "Jeevan Bima" }|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
+|NotifyOptions|{ "email": true, "sms": true }|object|Defines who handles the payment link notifications.|
+CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a redirect URL to the payment link. Once a customer completes the payment, they will be redirected to the specified URL.|
+|CallbackMethod|get|String| If callback_url parameter is passed, callback_method must be passed with the value get.|
+|EnableRemindertrue||Boolean|This is used to send reminders for the payment link. Possible values:<br/> **true:** To send reminders.<br/> **false:** To disable reminders.<br/>
+|CustomOptions | Reference details|Object|Custom options|
+
+4. The **Generate Payment Link Integration Action** Node has two outcomes, success or failure. Based on the success/failure of the execution of the **Integration Action Node**, the flow will proceed to **success** or **fallback** branches respectively.
+
+**Sample response in case of success:**
+```
+{
+  "accept_partial": false,
+  "amount": 1000,
+  "amount_paid": 0,
+  "callback_method": "get",
+  "callback_url": "https://example-callback-url.com/",
+  "cancelled_at": 0,
+  "created_at": 1591097057,
+  "currency": "INR",
+  "customer": {
+    "contact": "+919999999999",
+    "email": "gaurav.kumar@example.com",
+    "name": "Gaurav Kumar"
+  },
+  "description": "Payment for policy no #23456",
+  "expire_by": 1691097057,
+  "expired_at": 0,
+  "first_min_partial_amount": 100,
+  "id": "plink_ExjpAUN3gVHrPJ",
+  "notes": {
+    "policy_name": "Jeevan Bima"
+  },
+  "notify": {
+    "email": true,
+    "sms": true
+  },
+  "payments": null,
+  "reference_id": "TS1989",
+  "reminder_enable": true,
+  "reminders": [],
+  "short_url": "https://rzp.io/i/nxrHnLJ",
+  "status": "created",
+  "updated_at": 1591097057,
+  "user_id": ""
+}
+```
+**Sample response in case of fallback:**
+```
+{
+  "error": {
+    "code": "BAD_REQUEST_ERROR",
+    "description": "The api key provided is invalid",
+    "source": "NA",
+    "step": "NA",
+    "reason": "NA",
+    "metadata": {}
+  }
+}
+```
+To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
+
+```
+app.executeIntegrationAction({
+   "integrationName": "razorpay",
+   "action": "Generate Payment Link - Partial Payments”,
+   "dynamicParams": {
+       "amount": "500",
+       "currency": "INR",
+       "description": "test",
+       "isUPILinkEnabled": true,
+       "customerObject": { "name": "GaurarKumar", "contact": "+919999999999", "email": "gaurav.kumar@example.com" },
+       "notes": {
+           "policy_name": "Jeevan Bima"
+       },
+       "notifyOptions": {
+           "sms": true,
+           "email": true
+       },
+       "callbackUrl": "https://example-callback-url.com/",
+       "callbackMethod": "get",
+       "enableReminder": "true",
+       "customOptions": {
+           "test":"testing"
+       }
+   }
+}).then((res) => {
+   console.log("response from action node", res);
+   app.log(res, '||Response from action node||')
+}).catch((err) => {
+   console.log("Error in action node", err);
+   app.log(err, '||Error in action node||')
+})
+```
+### 2.2 Generate Payment Link for Partial Payments
+
+1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+![](https://i.imgur.com/ysUIxfa.png)
+
+
+
+2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
+
+![](https://i.imgur.com/tMcsRTb.png)
+
+
+3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
+
+| Field name | Sample value| Data type |Description |
+| -------- | -------- | -------- |----|
+| Text     | Text     | Text     |
+Amount|100|String|The amount that should be the payment link. This must be in the smallest unit of the currency. For example, if you want to receive a payment of ₹299.95, you must enter the value 29995.|
+|Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
+|Description|Test|String|A brief description of the payment link.|
+IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
+|CustomerObject|{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },|Object|Customer details|
+|Notes|{ "policy_name": "Jeevan Bima" }|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
+|NotifyOptions|{ "email": true, "sms": true }|object|Defines who handles the payment link notifications.|
+CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a redirect URL to the payment link. Once a customer completes the payment, they will be redirected to the specified URL.|
+|CallbackMethod|get|String| If callback_url parameter is passed, callback_method must be passed with the value get.|
+|EnableRemindertrue||Boolean|This is used to send reminders for the payment link. Possible values:<br/> **true:** To send reminders.<br/> **false:** To disable reminders.<br/>
+|CustomOptions | Reference details|Object|Custom options|
+|isPartialPaymentAccepted|true|Boolean|Indicates whether customers can make partial payments using the payment link. <br/> **Possible values:** <br/> **true:** Customer can make partial payments.<br/>**false (default):** Customer cannot make partial payments.<br/>|
+
+**Sample response in case of success:**
+
 ```
 
-**BRIEF EXPLANATION:**
- 
-1. We are creating an object with __method type__, __url__, __headers__ and __data__. 
-2. Then, We are creating the required key value pairs (i.e) __Authorization Value__ and Content-Type for the __headers__ object.
-3. Then, We are passing the required data in the key value pair format to the data object.
-4. Then, We are passing that object which contains all the above information to the __app.axios()__ method and we are storing this result in a variable. 
-
-NOTE:
- 
-> * To know about axios, go through this link : [Axios Blog](https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/)
-> * Our YM Platform __does not support__ Shorthand methods for Axios HTTP requests such as axios.get(), axios.post() etc.
-
-5. Once the above API Call is Successful, we would get some objects in the result variable.
-6. If we want to see or access the data in the result variable, we have to use __.data__ along with the result variable.
-7. The payment link will be in the key called __short_url__. So, To Access it, we use __.data.short_url__ along with the result variable.
-8. We access it and show it to the user using app.sendTextMessage().
-9. Now, The User has to click on this short_url. This will take them to the Razor Payment Gateway Page where they can complete the Payment via Debit/Credit Cards, 
-Net Banking, UPI etc.
-
-**STEP 9:** We have to configure a Webhook so that upon Successful completion of the Payment, we can save the User’s Order Details in our DataBase and show some response to the user such as ` YOUR ORDER HAS BEEN PLACED SUCCESSFULLY ! `.
- 
-NOTE:
- 
-To learn about Webhooks and the difference between them and API, I suggest you go through these medium articles:
-
-[Let’s talk about Webhooks](https://medium.com/@ishmeet1995/lets-talk-about-webhooks-part-1-theory-9fc66bd3413d)
-[Webhook vs API: What’s the Difference?](https://medium.com/hackernoon/webhook-vs-api-whats-the-difference-8d41e6661652)
-
-**STEP 10:** We have to configure the Webhook in the [Razor Payment](https://razorpay.com/) Gateway Dashboard. So, Go to Razor Payment and Sign in using your login credentials. Go to the Dashboard page.
-
-**STEP 11:** Click on the Settings option and click on the Webhooks tab. Click on the Add New Webhook button.
-
-**STEP 12:** In the Webhook URL, give the following URL: 
-[https://app.yellowmessenger.com/integrations/razorpay](https://app.yellowmessenger.com/integrations/razorpay)
-
-**STEP 13:** For more or added security, you can use a Secret but this is Optional. 
-
-**STEP 14:** In the Alert Email, You can give your email address.
-
-**STEP 15:** In the Active Events, Click on the __Invoice Events checkbox__ so that all the sub events in it get clicked. 
-
-![](https://cdn.yellowmessenger.com/xYrfHt0Aw9Ck1615287138117.png)
-
-**STEP 16:** Click on __Create Webhook__ Button. Once this is Successful, For All the types of Payment Events which were mentioned in the Webhook, an event would get Triggered in our YM Chatbot. 
-
-**STEP 17:** When the Invoice Paid Event gets triggered by the webhook defined in the razor pay dashboard, we want to capture it and then display an appropriate message to the user. To do this, we use the following code in the __main__ function on the developer section of our chatbot : 
-
-```js
-	if(app.data && app.data.event){
-		//app.log(app.data,"THIS IS APP.DATA INSIDE MAIN FUNCTION !");
-		if (app.data.event.code == 'razorpay-payment' && app.data.event.data && app.data.event.data.status == "paid" && ((app.data.event.data.amount_paid / 100) > 0)) {
-		   await app.sendTextMessage("🥳 PAYMENT SUCCESSFULL !");
-		   //app.log("🥳 PAYMENT SUCCESSFULL !");
-		}
-	}
+{
+  "accept_partial": false,
+  "amount": 1000,
+  "amount_paid": 0,
+  "callback_method": "get",
+  "callback_url": "https://example-callback-url.com/",
+  "cancelled_at": 0,
+  "created_at": 1591097057,
+  "currency": "INR",
+  "customer": {
+    "contact": "+919999999999",
+    "email": "gaurav.kumar@example.com",
+    "name": "Gaurav Kumar"
+  },
+  "description": "Payment for policy no #23456",
+  "expire_by": 1691097057,
+  "expired_at": 0,
+  "first_min_partial_amount": 100,
+  "id": "plink_ExjpAUN3gVHrPJ",
+  "notes": {
+    "policy_name": "Jeevan Bima"
+  },
+  "notify": {
+    "email": true,
+    "sms": true
+  },
+  "payments": null,
+  "reference_id": "TS1989",
+  "reminder_enable": true,
+  "reminders": [],
+  "short_url": "https://rzp.io/i/nxrHnLJ",
+  "status": "created",
+  "updated_at": 1591097057,
+  "user_id": ""
+}
 ```
 
-**BRIEF EXPLANATION:**
+**Sample response in case of fallback:**
+```
+{
+  "error": {
+    "code": "BAD_REQUEST_ERROR",
+    "description": "The api key provided is invalid",
+    "source": "NA",
+    "step": "NA",
+    "reason": "NA",
+    "metadata": {}
+  }
+}
+```
+To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
 
-1. When the payment is successfully completed, the webhook we created in the razor pay dashboard gets triggered and it sends back the event code __`razorpay-payment`__ to our chatbot.
+```
+app.executeIntegrationAction({
+   "integrationName": "razorpay",
+   "action": "Generate Payment Link",
+   "dynamicParams": {
+       "amount": "500",
+       "isPartialPaymentAccepted":true,
+       "currency": "INR",
+       "description": "test",
+       "isUPILinkEnabled": true,
+       "customerObject": { "name": "GaurarKumar", "contact": "+919999999999", "email": "gaurav.kumar@example.com" },
+       "notes": {
+           "policy_name": "Jeevan Bima"
+       },
+       "notifyOptions": {
+           "sms": true,
+           "email": true
+       },
+       "callbackUrl": "https://example-callback-url.com/",
+       "callbackMethod": "get",
+       "enableReminder": "true",
+       "customOptions": {
+           "test":"testing"
+       }
+   }
+}).then((res) => {
+   console.log("response from action node", res);
+   app.log(res, '||Response from action node||')
+}).catch((err) => {
+   console.log("Error in action node", err);
+   app.log(err, '||Error in action node||')
+})
 
-2. So, If an event code of __`razorpay-payment`__ occurs with the event’s data’s status as __`paid`__ and if the amount paid is greater than 0 INR (since we are using the smallest unit of the given currency i.e __Paise__ for the amount value, we are dividing it with 100 for converting back to INR ), we are sending a Text Message to the user such as ‘Payment is Successful’.
+```
+### 2.3 Intiate refund
 
-NOTE:
+1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 
-As Mentioned above in the first NOTE, inside this function, we can store the user’s cart details to the DataBase as the Payment is Successfully made.
+![](https://i.imgur.com/NTGBdtv.png)
+
+
+
+2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
+
+![](https://i.imgur.com/WxXY6fZ.png)
+
+
+
+3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
+
+
+| Field Name | Sample value | Data type |Description|
+| -------- | -------- | -------- |---|
+| Amount|100|String| The amount to be refunded (in the smallest unit of currency).  For example, refund in INR, a value of 100 means 100 paise (equivalent to ₹1).|
+|paymentId|pay_FgR9UMzgmKDJRi|String|The unique identifier of the payment for which a refund is initiated|
+refundType|normal|String|Speed at which the refund should be processed. <br/> **Possible values:**<br/>**normal:** Indicates that the refund will be processed at a normal speed i.e. within 5-7 working days.<br/>**optimum:** Indicates that the refund will be processed at an optimal speed based on Razorpay's internal fund transfer logic.<br/> If the refund has to be processed instantly, **Razorpay** will do so irrespective of the payment method.<br/> If an instant refund is not possible, Razorpay will initiate a refund  at the normal speed. For example, in case of payments made using debit cards, netbanking or unsupported credit cards.
+notes|{}|object|Key-value store for storing your reference data. A maximum of 15 key-value pairs can be included.|
+
+4. The **Generate Payment Link Integration Action** Node has two outcomes, success or failure. Based on the success/failure of the execution of the **Integration Action Node**, the flow will proceed to **success** or **fallback** branches respectively.
+
+**Success Response:**
+
+```
+
+{
+  "id": "rfnd_FgRAHdNOM4ZVbO",
+  "entity": "refund",
+  "amount": 10000,
+  "currency": "INR",
+  "payment_id": "pay_FgR9UMzgmKDJRi",
+  "notes": {
+    "notes_key_1": "Beam me up Scotty.",
+    "notes_key_2": "Engage"
+  },
+  "receipt": null,
+  "acquirer_data": {
+    "arn": "10000000000000"
+  },
+  "created_at": 1600856650,
+  "batch_id": null,
+  "status": "processed",
+  "speed_processed": "normal",
+  "speed_requested": "normal"
+}
+```
+To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
+
+```
+app.executeIntegrationAction({
+   "integrationName": "razorpay",
+   "action": "Generate Payment Link",
+   "dynamicParams": {
+       "amount": "500",
+       "refundType":"normal",
+       "paymentId":"pay_FgR9UMzgmKDJRi",
+       "notes": {
+           "policy_name": "Jeevan Bima"
+       }
+   }
+}).then((res) => {
+   console.log("response from action node", res);
+   app.log(res, '||Response from action node||')
+}).catch((err) => {
+   console.log("Error in action node", err);
+   app.log(err, '||Error in action node||')
+})
+ 
+```
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
