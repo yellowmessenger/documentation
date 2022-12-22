@@ -119,7 +119,7 @@ The following fields are available in the user profile object:
 - region
 :::
 
-Learn more [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#system-user-properties). 
+To know more, see [System user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#22-system-user-properties). 
 
 ### 2.3 Config Variables 
 
@@ -129,7 +129,7 @@ Config variables can change their value (but not specifically for each session /
 
 ### 2.4 User Properties
 
-There are 22 user properties that are tracked by the bot. These values will be different for each instance (specific to each user). Click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data) to learn more. 
+There are 22 user properties that are tracked by the bot. These values will be different for each instance (specific to each user). To know more, see [User properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties). 
 
 :::note
  User properties cannot be modified. New variables cannot be added. 

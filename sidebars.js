@@ -12,6 +12,7 @@ const { listPaths } = require("./src/plugins/components");
 // let components = listPaths();
 
 module.exports = {
+ 
   tutorials: [
     "tutorials/basics",
     "tutorials/studio",
@@ -43,12 +44,14 @@ module.exports = {
 
       ],
     }, 
+     
     {
       type: "category",
       label: "Marketplace templates",
       collapsed: true,
       items: [
         "cookbooks/marketplace-templates/edtech-template",
+        "cookbooks/marketplace-templates/ecommerce-template",
       ],
     }, 
     {
@@ -73,6 +76,16 @@ module.exports = {
 
       ],
     }, 
+    {
+      type: "category",
+      label: "Insights",
+      collapsed: true,
+      items: [
+        "cookbooks/insights/eventdescriptions",
+
+      ],
+    }, 
+
 
     {
       type: "category",
@@ -95,7 +108,7 @@ module.exports = {
 
     {
       type: "category",
-      label: "Voice as a channel",
+      label: "Voice",
       collapsed: true,
       items: [
         "cookbooks/voice-as-channel/overview",
@@ -125,7 +138,7 @@ module.exports = {
 
     {
       type: "category",
-      label: "WhatsApp as a channel",
+      label: "WhatsApp",
       collapsed: true,
       items: [
         {
@@ -163,7 +176,8 @@ module.exports = {
         "cookbooks/whatsapp-channel/testing",
         "cookbooks/whatsapp-channel/updates",
       ]
-    }
+    }, 
+    "cookbooks/Chatwidgets/character-limits-sdk", 
   ],
 },   
 
@@ -191,9 +205,8 @@ module.exports = {
     "platform_concepts/Getting Started/account-setup",
     "platform_concepts/Getting Started/user-account-settings",  ],
 },
-    
 
-    {
+{
       type: "category",
       label: "Get started with Platform",
       collapsed: true,
@@ -615,13 +628,12 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/engage",
-        "platform_concepts/engagement/effectivelyuseengage",
         
         
             
         {
           type: "category",
-          label: "Outbound engagement",
+          label: "Outbound campaigns",
           collapsed: true,
           items: [
                 
@@ -651,17 +663,29 @@ module.exports = {
               ],
             }, */
             "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
-            "platform_concepts/engagement/workflowCampaign",
+            
           //  "platform_concepts/engagement/outbound/filter",
             "platform_concepts/engagement/outbound/outbound-campaigns/outbound-report",
             "platform_concepts/engagement/outbound/notification-engine",
+            "platform_concepts/engagement/effectivelyuseengage",
+
+           
           ],
         },
         
-
         {
           type: "category",
-          label: "Inbound engagement",
+          label: "Workflow campaigns",
+          collapsed: true,
+          items: [
+        "platform_concepts/engagement/workflowCampaign",
+        "platform_concepts/engagement/event-triggered-campaign",
+        "platform_concepts/engagement/workflow-report",
+      ],
+    },
+        {
+          type: "category",
+          label: "Inbound campaigns",
           collapsed: true,
           items: [
             "platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign",
@@ -765,27 +789,54 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/channelConfiguration/overview",
-        "platform_concepts/channelConfiguration/alexa",
-        "platform_concepts/channelConfiguration/web-widget",
-
-        "platform_concepts/channelConfiguration/email-outbound",
-        "platform_concepts/channelConfiguration/facebook-messenger",
+        {
+          type: "category",
+          label: "Messaging",
+          collapsed: true,
+          items: [
+            "platform_concepts/channelConfiguration/sms-outbound-india", 
+            "platform_concepts/channelConfiguration/sms-outbound-india", 
+            "platform_concepts/channelConfiguration/instagram",
+            "platform_concepts/channelConfiguration/alexa",
+            "platform_concepts/channelConfiguration/google-message",
+            "platform_concepts/channelConfiguration/googleChat",
+            "platform_concepts/channelConfiguration/email-outbound",
+            "platform_concepts/channelConfiguration/slack2",
+            "platform_concepts/channelConfiguration/teams",
+            "platform_concepts/channelConfiguration/telegram",
+            "platform_concepts/channelConfiguration/whatsapp-configuration",
+          ]
+        },
+        {
+          type: "category",
+          label: "Voice",
+          collapsed: true,
+          items: [
+            "platform_concepts/channelConfiguration/google-assistant",
+            "platform_concepts/channelConfiguration/ivr-bots",
+            "platform_concepts/channelConfiguration/Ivr",
+          ]
+        },
+        {
+          type: "category",
+          label: "Social",
+          collapsed: true,
+          items: [
+            "platform_concepts/channelConfiguration/facebook-messenger",
+          ]
+        },
+        {
+          type: "category",
+          label: "Chat widget",
+          collapsed: true,
+          items: [
+            "platform_concepts/channelConfiguration/web-widget",
+            "platform_concepts/channelConfiguration/web",
+          ]
+        },
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/fb-workplace",
         "platform_concepts/channelConfiguration/generic-webhook",
-        "platform_concepts/channelConfiguration/google-assistant",
-        "platform_concepts/channelConfiguration/googleChat",
-        "platform_concepts/channelConfiguration/google-message",
-        "platform_concepts/channelConfiguration/instagram",
-        "platform_concepts/channelConfiguration/ivr-bots",
-        "platform_concepts/channelConfiguration/Ivr",
-        //"platform_concepts/channelConfiguration/slack",
-        "platform_concepts/channelConfiguration/slack2",
-        "platform_concepts/channelConfiguration/sms-outbound-india",
-        "platform_concepts/channelConfiguration/teams",
-        "platform_concepts/channelConfiguration/telegram",
-        "platform_concepts/channelConfiguration/web",
-        "platform_concepts/channelConfiguration/whatsapp-configuration",
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },

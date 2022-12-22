@@ -22,8 +22,8 @@ This proactive notification is an outbound reach out where the agents or the bus
 - Increased potential sales.
 
 :::note 
-This feature is available only for the WhatsApp channel.   
-Contact: [sandeep.rajaram@yellow.ai](sandeep.rajaram@yellow.ai) to extend this to other channels. 
+* This feature is available only for the WhatsApp channel.   
+* To extend this to other channels, contact [sandeep Rajaram](mailto:sandeep.rajaram@yellow.ai)
 :::
 
 ## <a name="1"></a> 1. Create a new contact 

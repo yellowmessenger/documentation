@@ -73,7 +73,7 @@ In case you want to switch to User module to add audience, you can save the camp
 
    * You can either choose audience from the list of segments that you already created [OR]
 
-   * Create a new segment using **+ Add new segment**. For more details, see [Users module and segment creation](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/overview).
+   * Create a new segment using **+ Add new segment**. For more details, see [Users module and segment creation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview).
 
 7.  **Schedule** your Campaign: Define when to send the campaign (Timezone: Asia/Kolkata). For detailed procedure, see [Schedule message](#3-schedule-message).  From the options, select 
 

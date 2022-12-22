@@ -46,7 +46,7 @@ The platform provides different ways to add your users. You can add each user ma
 
 ### 1.2 Enrich your user data
 
-It is important to collect data that is specific to your users. While there are some predefined properties, called [System Properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#system-user-properties), you can also create and send [Custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#custom-user-properties) and [Events](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data#user-events).
+It is important to collect data that is specific to your users. While there are some predefined properties, called [System Properties](#22-system-user-properties), you can also create and send [Custom properties](#23-custom-user-properties) and [Events](#3-user-events).
 
  
 User properties store data about who your users are, events tell you when users take important actions on your product.
@@ -169,7 +169,7 @@ You can see events in User 360, and filter them to answer questions like:
 
  To achieve true personalisation, you might want to recognise your users on every channel they appear on. To achieve this:
 
--   Decide what your  [user identifier](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id/)  will be
+-   Decide what your  [user identifier](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id)  will be
 -   Start  [identifying users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data#2-what-are-identified-users)  on every channel
 -  [Capture as much conversational data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data)  you can
 -   Utilise the above data, captured on one channel, to  [deliver personalised engagement](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder)  on another channel

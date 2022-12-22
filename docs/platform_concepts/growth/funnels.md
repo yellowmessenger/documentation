@@ -4,12 +4,12 @@ sidebar_label: Funnels
 
 ---
 
-Understand user journey further on the **Funnels** section, you can view data captured across all journeys(/flows) that are accessed by users through various channels.  To view funnels:
-1. Open Insights > **User journeys**.  Select the **Funnels** tab. 
+You can understand user journey further on the **Funnels** section. On this page, you can view data captured across all journeys(flows) that are accessed by users through various channels.  To view funnels:
+1. Open **Insights** > **User journeys**.  Select the **Funnels** tab. 
 
 ![](https://i.imgur.com/7KPdhCX.png)
 
-In this article, you will learn how to use the funnels section to monitor: 
+In this article, you will learn how to use the **Funnels** section to monitor: 
 1. [Top flows completed](#topflows)
 2. [Step wise interactions](#interaction)
 3. [Flows summary](#summary)
@@ -17,7 +17,7 @@ In this article, you will learn how to use the funnels section to monitor:
 
 ## <a name="topflows"></a> 1. Top Flows Completed
 
-This widget shows users' top 5 flows (intents) along with the Flow Completion Rate for the selected time period.
+This widget shows users top 5 flows (intents) along with the [Flow Completion Rate](#fcr) for the selected time period.
 You can monitor the graph for a specific flow by filtering it on the menu below. 
 
 <img src="https://i.imgur.com/tvaRZVF.png" alt="drawing" width="90%"/>
@@ -29,8 +29,8 @@ You can monitor the graph for a specific flow by filtering it on the menu below.
 
 This widget is a stepwise funnel of selected flow. The number of people who moved from step 1 to step 2 to … step n and the number of people who dropped off in between these steps can be seen here.
 
-#**done** - user completed the journey
-#**switched** - user switched to some other journey
+#**done** - User completed the journey
+#**switched** - User switched to some other journey
 
 ![](https://i.imgur.com/lz4sOGe.png)
 
@@ -38,6 +38,7 @@ This widget is a stepwise funnel of selected flow. The number of people who move
 - This is mainly used to learn about the number of users dropping off at different levels of the journey, you can select the journey you want to view from the drop-down below. 
 
 <img src="https://i.imgur.com/bgpzi3v.png" alt="drawing" width="50%"/>
+
 :::
 
 ## <a name="summary"></a> 3. Flows summary
@@ -45,7 +46,7 @@ This widget is a stepwise funnel of selected flow. The number of people who move
 
 This table gives flow completion rates for all the flows, the number of times these flows were triggered, and the number of times they were completed. The last column shows how much a particular flow constitutes to the overall traffic.
 
-* **Flow name**: This is listed out for all flows, you can search for the required flow. 
+* **Flow name**: This is listed out for all the flows, you can search for the required flow. 
 
 <img src="https://i.imgur.com/yYL2lVh.png" alt="drawing" width="80%"/>
 
@@ -58,9 +59,9 @@ This table gives flow completion rates for all the flows, the number of times th
 > Sort these values by clicking the column name. 
 
 
-### 3.1 Flow completion rate (FCR)
+### <a name="fcr"></a> 3.1 Flow completion rate (FCR)
 
-The flow completion for the selected range of dates will be displayed here. This is the average flow completion rate obtained for all the flows. If the percentage of flow completion is low, you can click on the right **Know why** link to analyze your data. 
+The flow completion for the selected range of dates will be displayed here. This is the average flow completion rate obtained for all the flows. If the percentage of flow completion is low, you can click on the **Know why!** on the right corner to analyze your data. 
 
 ![](https://i.imgur.com/VNyptnx.png)
 

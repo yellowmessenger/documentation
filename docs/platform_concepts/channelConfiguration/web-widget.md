@@ -1,26 +1,28 @@
 ---
 title: Chat widget
-sidebar_label : Chat widget
+sidebar_label : Set up Chat widget
 keywords : [iframe]
 ---
 
 Chat widget is a window that you can embed on a website to interact with your website users real-time.
 
 
-
-
 ## 1. Access Chat widget
 
 To access Web widget, follow these steps - 
 
-1. Log on to [Yellow.ai Platform](https://cloud.yellow.ai).
-2. Click **More** > **Chat widget**.
+1. Log in to [Yellow.ai Platform](https://cloud.yellow.ai).
+2. On the switcher, click **Channels**.
 
-![](https://i.imgur.com/evTAjTW.png)
+![](https://i.imgur.com/UuFZ2eR.png)
+
+3. Click on **Chat widget**.
+
+![](https://i.imgur.com/SoTsfK0.png)
 
 The Chat widget screen appears as shown below.
 
-![](https://i.imgur.com/fDaMztT.png)
+![](https://i.imgur.com/Xfvvg3O.png)
  
 ## 2. Customize Chat widget
 
@@ -78,6 +80,31 @@ Slow messages | Enable this option to add a small delay to bot messages, a typin
 ### 2.4 Preview chat widget
 
 When you design and set the bot, you can preview the bot in the **Preview** tab before you save it.
+
+To preview your customized chatbot, follow these steps:
+
+1. Install the Chrome extension using this [link](https://chrome.google.com/webstore/detail/yellowai-web-widget-launc/hlajdopahpkoakfedombhdpomlpmafbb).
+
+2. Copy the chat widget code as explained [here](#25-deploy-chat-widget).
+
+3. Open the extension in your Chrome browser.
+
+![](https://i.imgur.com/aI0mRhb.png)
+
+4. In the first input box, enter the entire website URL.
+
+The chat widget will start running on all website URLs that include the value you enter here.
+
+![](https://i.imgur.com/xHROMyD.png)
+
+5. In the second input field, paste the chat widget script you copied in step 2 and click **Launch Widget**.
+
+![](https://i.imgur.com/7C7ubWH.png)
+
+6. Open the website URL that you have entered in the first input box to your view your chatbot.
+
+![](https://i.imgur.com/CUUbTev.png)
+
 
 ### 2.5 Deploy chat widget 
 

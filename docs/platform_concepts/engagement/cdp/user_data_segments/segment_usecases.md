@@ -18,7 +18,7 @@ Such segments target users who fall within a certain range from a particular dat
 
 ![](https://i.imgur.com/rK1T5sd.png)
 
-This sort of a segment can be created using [properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/) that are of Date or DateTime data type.
+This sort of a segment can be created using properties that are of Date or DateTime data type.
 The operator that can be selected are:
 - is was exactly
 - will be exactly
