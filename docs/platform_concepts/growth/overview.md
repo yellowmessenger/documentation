@@ -33,7 +33,7 @@ Insights module on the yellow.ai platform tracks all data and metrics pertaining
 The first section available on the **Insights** module is the **Overview** section. 
 In this article, you will learn about the 9 common metrics that can be tracked on the **Insights Overview** page which summarizes how your bot is functioning.
 
-- Click **Insights** from the Overview switcher, you will land on the **Overview** page. 
+- Click **Insights** from the Overview switcher, you will land on the **Overview** page. You can analyse all the default information collected by the bot. Custom data will not be reflected on any of the graphs. 
 
 
 ![](https://i.imgur.com/iSPi6HX.png)

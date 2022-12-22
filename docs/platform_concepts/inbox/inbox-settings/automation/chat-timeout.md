@@ -1,6 +1,7 @@
 ---
 title: Configure chat inactivity timeout
 sidebar_label : Inactivity trigger
+keywords : [chat timeoff, agent inactivity status, inactivity status, no agent reply, no user reply]
 ---
 
 When the chat system is online, users or agents who click to chat are entered into a queue until an agent accepts the chat request. The conversation starts between the agent and the user once the request is accepted. After a set period of inactivity between the agent and the user the chat session will “timeout.” 

@@ -1,6 +1,6 @@
 ---
 title: Event descriptions of default tables on data explorer 
-sidebar_label : Event ( DB column names) descriptions 
+sidebar_label : Event(DB column names) descriptions 
 ---
 
 

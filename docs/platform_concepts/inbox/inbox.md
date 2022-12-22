@@ -194,21 +194,20 @@ In case the user wants to talk to the live agent or sometimes it’s better for 
 
 **Prerequisites to get started**
 
-1. Get Inbox Agent Access.  
+1. Get Inbox Agent [Access](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#21-add-support-agent-on-the-platform).  
 2. To configure the Journey to trigger live agent action, know more about [flows and NLU](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).   
 3. Understand the [raise ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) and its settings.
 :::
 
 **Create a flow**
 
-On the [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) page: 
+On the [Studios](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) page: 
 
--  Add [prompts](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to collect information from users.
--  Create an Intent and utterances to it. For example, “Can I talk to Live agent?”, “Connect me to Customer Support”.
--  Connect to **Raise ticket** action node with the collected information.
+1. Create an [Intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) and [utterances](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance) to identify the flow that connects a user to a live inbox agent. Utterance examples, “Can I talk to a Live agent?”, “Connect me to Customer Support”.
+2. Add [prompts](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/) to collect information(name and query) from the users. Store the details in the respective variables. 
+3. Connect the flow to **Raise ticket action node** (pass the collected information). Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) to learn about the action node. 
 
-
-![](https://i.imgur.com/87JDbHK.png)
+![](https://i.imgur.com/ZXdujQO.png)
 
 
 
