@@ -7,7 +7,7 @@ App bots are now provided with an option to upgrade the Engage module by migrati
 
 ## What's new in Engage - Cloud ?
 ### User 360 
-#### *[Know more about User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/overview)*
+#### *[Know more about User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview)*
 ![](https://i.imgur.com/dFehW6I.png)
 
 ### Template manager
@@ -68,7 +68,7 @@ Here, I have selected 5 tables which I would need to migrate to new platform.
 #### Step 7: Map your audeince tables properties to new properties
 In cloud engage, we maintain single user database called CDP (User 360). Hence we need to merge the audience tables from app to CDP attributes.
 
-[Learn more about CDP (User 360)](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/cdp/overview)
+[Learn more about CDP (User 360)](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview)
 
 * From left side drop downs you can select you older column names.
 * Right side properties are "default CDP properties".

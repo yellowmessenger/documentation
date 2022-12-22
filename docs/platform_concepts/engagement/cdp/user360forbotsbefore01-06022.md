@@ -49,16 +49,16 @@ Bots that have records in the old Users Module will see a data migration window.
 2. Once the data is downloaded, click **Migrate data**. You will see the Data migration screen. 
 3. Map Old user properties to the  New user properties.
 
-   Under New user property, you will see [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id/) and pre-defined [System properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#system-user-properties).
+   Under New user property, you will see [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id) and pre-defined [System properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/#22-system-user-properties).
 
-* To create a [Custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#custom-user-properties), click **+ Add new user property**.
+* To create a [Custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/#23-custom-user-properties), click **+ Add new user property**.
 
 ![](https://i.imgur.com/MiVymww.png)
 
   
   
 
-* To know the data types supported in User 360, see [User property datatypes](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) . 
+* To know the data types supported in User 360, see [User property datatypes](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/#21-user-property-data-types) . 
 
 The following mappings are not recommended as it might throw data incompatibility errors, and prevent from successful migration of data.
 

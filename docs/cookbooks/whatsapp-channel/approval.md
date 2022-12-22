@@ -35,6 +35,6 @@ Your quality rating is based on how messages have been received by users over th
 
 > Read more about quality rating and messaging limits [here](https://developers.facebook.com/docs/whatsapp/api/rate-limits/)
 
-Now, once the template is approved and you are within your messaging limits, follow [these steps](https://https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign) to schedule a campaign using campaign manager present in engage -> outbound engagement.
+Now, once the template is approved and you are within your messaging limits, follow [these steps](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) to schedule an Outbound campaign..
 
 Alternatively, if you want to trigger a notification when a user performs certain key activites on your platform, you can follow [these steps](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine) to configure our notification API to send out messages to them on WhatsApp.

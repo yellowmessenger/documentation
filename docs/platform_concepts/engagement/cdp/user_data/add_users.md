@@ -18,7 +18,7 @@ The system can identify a registered user based on the userId. All updates made 
 Therefore, while updating user details, make sure the user identifier is registered.
 
 
-To know about userId and its importance,  [read this article](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id/).
+To know about userId and its importance,  [read this article](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id).
 
 :::note
 To identify a user in Flow builder node, use the **userId** property.
@@ -79,7 +79,7 @@ To add customers through CSV, follow these steps:
 
 :::note
 * These names are **case sensitive** and the column header **should not contain spaces** before/after.
-* It is required to pass phone numbers with country codes.
+* It is required to pass phone numbers with country codes in CSV file.
 :::
    
 
@@ -134,7 +134,7 @@ If any of these column headers do not match with any user property, the entire C
 
 ### 2.3 Use the userId column for unique identifiers
 
-You can pass `userId` for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. Know more about userId and it’s importance [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/user_id).
+You can pass `userId` for the users being imported by creating a **userId column** in your CSV. However, keep in mind that no 2 user records can have the same userId. Know more about userId and it’s importance [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#1-user-id).
 
 When the CSV file includes a user record with a userId that already exists in the users table, a conflict arises between the old record and the new record. The new record is merged into the old record in the following manner:
 
@@ -192,7 +192,7 @@ The downloaded log contains the following information:
 * **BOT_ID**: Bot Id for which the CSV was uploaded.
 * **REQUEST_PAYLOAD**: The user record for which an import was attempted but FAILED
 * **ERROR_PAYLOAD**: The error details due to which above user import FAILED:
-    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) was passed
+    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#21-user-property-data-types) was passed
     - `invalidProperty`: Properties that do not exist in the user table
 * **LINE_NUMBER**: The row number of the user record for which import FAILED
 

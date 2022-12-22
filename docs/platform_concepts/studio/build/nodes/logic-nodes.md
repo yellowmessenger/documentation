@@ -54,7 +54,7 @@ To know more about handling contextual responses, click [here](https://docs.yell
 
     
 :::note
- These dropdown values are derived from the [data available](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/cdp_data/#user-property-data-types) in the system. **Journey variables** are created by the user for that flow, **Global variables** are asked and extracted from the other nodes, **User properties** are extracted from variables and few are automatically fetched by the system like IP, Country, Timezone, Created at, etc. 
+ These dropdown values are derived from the [data available](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#21-user-property-data-types) in the system. **Journey variables** are created by the user for that flow, **Global variables** are asked and extracted from the other nodes, **User properties** are extracted from variables and few are automatically fetched by the system like IP, Country, Timezone, Created at, etc. 
 :::
 
 2. **Condition**
