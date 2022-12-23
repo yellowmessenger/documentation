@@ -31,9 +31,9 @@ To configure Locobuzz integration in your yellow.ai account, follow these steps.
 
 ### 1.2 Configure webhook URL in Locobuzz Dashboard
 
-To receive events, you need to configure the webhook URL in the **Kapture CRM Dashboard**. 
+To receive events, you need to configure the webhook URL in the **Locobuzz Dashboard**. 
 
-Copy the webhook url and the api key mentioned in the **Instructions** section of the **Kapture CRM Integration** Card. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.
+Copy the webhook url and the api key mentioned in the **Instructions** section of the **Locobuzz Integration** Card. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.
 
 * r1 = MEA
 * r2 = Jakarta
