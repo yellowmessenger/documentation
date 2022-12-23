@@ -177,11 +177,15 @@ Remove the filters when the data is summarized.
 ### <a name="6"></a> 4.3 Visualization
 
 
-Visualizing data (in charts, graphs, dashboards, etc.) is the most powerful strategy for getting your numbers out of your spreadsheets and into real-world conversations. 
+Visualizing data (in charts, graphs, dashboards, etc.) is the most powerful strategy for getting your numbers out of your spreadsheets and into real-world conversations. You can visualize the summarized tables by following the below steps. 
 
 1. On the query page, click **Visualisation**.
 
 <img  src="https://i.imgur.com/d2RVzrQ.png"  width="70%"/>
+
+
+> Tables must be Summarized before applying visualization. 
+
 
 2. Select the required chart. Hover the mouse on top of the chart for more details.
     - Line chart
@@ -255,6 +259,7 @@ For faster access and visualization, you can add this saved report to your dashb
 
 ![](https://i.imgur.com/mAutxVu.png)
 
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#12-create-a-dashboard-from-data-explorer) for more details. 
 
 ### <a name="11"></a> 5.3 Delete a saved report
 

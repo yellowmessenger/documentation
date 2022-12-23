@@ -40,11 +40,13 @@ Follow the below steps to enable the customer satisfaction feature:
 ![](https://i.imgur.com/C99xJ7F.png)
 
 
-**View feedback** 
+**View CSAT score(user feedback given to the inbox agent agent):** 
 
-4. These user feedbacks can be found on the [Data Explorer](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer) section of the Insights module.
+4. These user feedbacks can be found in the [Data Explorer](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer)- **Chat tickets** table of the Insights module.
 
-![](https://i.imgur.com/9kear6P.jpg)
+
+![](https://i.imgur.com/Aqxl9iG.png)
+
 
 
 
