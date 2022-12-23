@@ -544,6 +544,8 @@ module.exports = {
             "platform_concepts/inbox/inbox-settings/security",
           ],
         },
+        
+        "platform_concepts/inbox/inboxfaqs"
     //other files
       ],
     },
