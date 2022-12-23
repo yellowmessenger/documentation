@@ -394,7 +394,6 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/inbox/tickets/setupandconfig",
-            "platform_concepts/inbox/tickets/email-ticketing",
             "platform_concepts/inbox/tickets/emailticketstatus",
             "platform_concepts/inbox/tickets/manualticket",
             "platform_concepts/inbox/tickets/searchandfilter",
@@ -544,6 +543,8 @@ module.exports = {
             "platform_concepts/inbox/inbox-settings/security",
           ],
         },
+
+        "platform_concepts/inbox/inboxfaqs"
     //other files
       ],
     },

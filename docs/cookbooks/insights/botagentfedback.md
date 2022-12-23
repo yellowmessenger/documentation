@@ -49,9 +49,9 @@ To obtain the user feedback graph on the overview page and the user feedback def
 
 5. Customer feedback analytics can also be found on the **Insights Overview** page under [User feedback](https://docs.yellow.ai/docs/platform_concepts/growth/overview#8-user-feedback). 
 
-> **Bot feedback** is obtained from [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#27-feedback). 
-> **Agent feedback** is obtained from the [CSAT score](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) provided to the live agent. 
-> This graph is available only for default tables - not custom tables.
+> **Bot feedback** is obtained from [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#27-feedback).    
+> **Agent feedback** is obtained from the [CSAT score](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) provided to the live agent.       
+> This graph is available only for default tables - not custom tables.   
 
 <img src="https://i.imgur.com/sMmYWUz.jpg" alt="drawing" width="50%"/>
 
