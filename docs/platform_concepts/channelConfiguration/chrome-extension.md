@@ -1,5 +1,5 @@
 ---
-title : Add chrome extension 
+title : Install chrome extension 
 sidebar_label : Chrome Extension
 ---
 

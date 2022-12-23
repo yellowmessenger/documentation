@@ -792,7 +792,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/overview",
         {
           type: "category",
-          label: "Messaging",
+          label: "Messaging channels",
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/sms-outbound-india", 
@@ -810,7 +810,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Voice",
+          label: "Voice channels",
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/google-assistant",
@@ -820,7 +820,7 @@ module.exports = {
         },
         {
           type: "category",
-          label: "Social",
+          label: "Social channels",
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/facebook-messenger",
@@ -835,6 +835,8 @@ module.exports = {
             "platform_concepts/channelConfiguration/fuction-widgets",
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
+            "platform_concepts/channelConfiguration/user-authentication",
+            "platform_concepts/channelConfiguration/chat-widget-faq",
             // "platform_concepts/channelConfiguration/web",
           ]
         },
