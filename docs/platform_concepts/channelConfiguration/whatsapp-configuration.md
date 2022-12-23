@@ -178,8 +178,7 @@ For some reason, if you wish to cancel the verification request, go to **Securit
 
 ![](https://i.imgur.com/dCA8zjm.png)
 
-
-
+***
 
 ## 2. Catalog setup
 
@@ -344,45 +343,43 @@ To create a new Catalog flow on the Yellow.ai Platform, see [here](https://docs.
    
   Yes, WhatsApp SPM/MPM are now supported on Cloud API hosted WABAs as well.  
 
-2. **When is the support of SPM/MPM will be available on Cloud API WABA?**
-
-   As of now there is no tentative timeline due to some issues with respect to SPM/MPM on Cloud API WABA which needs to be resolved before taking a decision on the same.
-
-3. **Can we integrate the Catalog with the platform?**
+2. **Can we integrate the Catalog with the platform?**
 
    No, Catalog Integration is not live yet and will be evaluated in Q1 2023.
 
-4. **Can Shopify or other ecom platforms can be used for syncing the products on FB Catalog?**
+3. **Can Shopify or other ecom platforms can be used for syncing the products on FB Catalog?**
 
    Yes, Shopify Catalogs can be synced with WhatsApp Catalogs for the products uploaded on the Shopify to be used on the SPM/MPM as well. Its requested to the client to get in touch with Shopify Team to add the Sync of the Products with WA Catalog to get started. The feature is available but not explored yet from Yellow’s side due to limitation of access of active Shopify instance
 
-5. **Can we upload or update the Product quantity or availability from the Platform?**
+4. **Can we upload or update the Product quantity or availability from the Platform?**
 
    No, since there is no integration available for the CM and the Platform its not possible to currently manage the catalog in any way from platform.
 
-6. **How many products can be added in a Catalog?**
+5. **How many products can be added in a Catalog?**
 
    There is no set limit as of now on the number of items that can be added on a catalog.
 
-7. **How many products can be sent in a single message to the user?**
+6. **How many products can be sent in a single message to the user?**
 
    Businesses can send upto 30 Products on a MPM.
 
-8. **Is the feature available similar to the Jio Mart WABA?**
+7. **Is the feature available similar to the Jio Mart WABA?**
 
    No, Jio Mart Catalog feature is a Beta Feature and is exclusive to JioMart only and not available for GA or any other BSPs. There is no tentative timeline for the release of the feature.
 
-9. **Can the business send dynamic pricing based on the user location or other parameters?**
+8. **Can the business send dynamic pricing based on the user location or other parameters?**
    
    No, Product pricing is static and cannot be changed user to user.
 
-10. **Can the price or other mandatory fields be hidden if not required?**
+9. **Can the price or other mandatory fields be hidden if not required?**
 
    No, it's not possible to hide the mandatory fields like Image, Product Title, Description and Price can be hidden from the user while sending.
 
-11. **Is it possible to send digital goods like recharges, Loan offers etc to be sent as a product message?**
+10. **Is it possible to send digital goods like recharges, Loan offers etc to be sent as a product message?**
 
    Yes, digital goods are allowed to be sent as SPM/MPM. BFSI customers can also use SPM/MPM to showcase card, load or other finance related products on SPM/MPM.
+
+***
    
 ## 3. WhatsApp business account guidelines
 
