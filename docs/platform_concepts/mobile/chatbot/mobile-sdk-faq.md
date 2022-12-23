@@ -36,27 +36,7 @@ Refer to the following documentation links for mobile SDK documentation:
 * [Flutter](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/flutter/)
 * [Xamarian](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/xamarin/)
 
-**5. How to enable chat history?**
-
-To enable chat history, follow these steps:
-1. Ensure that you need to pass ymAuthenticationToken in the config before presenting the bot.
-```
-if (app.data.event && app.data.event.code === 'authenticate') {
-    return app.sendEvent({
-        code: "verifiedUser",
-        data: app.data.event.payload
-    });
-}
-```
-2. Ensure the **Reset Context for every load** checkbox is unchecked in the dashboard settings for "app.yellowmessenger.com" or "app.yellow.ai".
-
-   ![](https://i.imgur.com/VVSmy15.png)
-3. Ensure **Show history of the conersation** is enabled for [cloud.yellow.ai](https://cloud.yellow.ai).
-
-   <img src="https://i.imgur.com/PoHJ0Yh.png)" alt="drawing" width="90%"/>
-
-
-**6. The push notifications are not working as expected. How to resolve this issue?**
+**5. The push notifications are not working as expected. How to resolve this issue?**
 
 There are two ways to debug push notifications: 
 
@@ -73,7 +53,7 @@ If notifications are not displaying in the demo app, then you must follow these 
 
 You must see if they are able to receive notifications in their own app from the Firebase notification testing system. This will ensure notifications are properly configured on the app side. https://firebase.google.com/docs/cloud-messaging/ios/first-message
 
-**7. How to map Firebase Server JSON to a Bot ID?**
+**6. How to map Firebase Server JSON to a Bot ID?**
 
 Copy the following code and import to Postman. Enter the service key in the JSON body, replace your BotId in the request, and add an access token in the header against x-auth-token.
 
@@ -90,7 +70,7 @@ curl --location --request POST 'https://cloud.yellow.ai/api/data/vault/saveBotCo
  }
 ```
 
-**8. In Android, can we add a left-to-right view transition/animation or any animation?**
+**7. In Android, can we add a left-to-right view transition/animation or any animation?**
 
 Yes, it is possible to add left-to-right view transition/animation. You need to override the activity style by adding the following lines to the **themes.xml** or **styles.xml** files.
 
@@ -122,7 +102,7 @@ This is an example of adding slide in left and slide out right transition. You c
 </style>
 ```
 
-**9. How to access the payload in v2 chatbots built on [cloud.yellow.ai](https://cloud.yellow.ai)**?
+**8. How to access the payload in v2 chatbots built on [cloud.yellow.ai](https://cloud.yellow.ai)**?
 
 When payload is sent from mobile SDK, it is always a string of JSON. Ensure that you parse it before accessing the values.
 Follow the steps below:
