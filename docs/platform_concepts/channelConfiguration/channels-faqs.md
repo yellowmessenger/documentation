@@ -134,6 +134,22 @@ sidebar_label: Channels FAQs
    </div>
 </details>
 
+<details>
+ <summary>Is it possible to connect two phone numbers associated with different business manager accounts to a single bot?</summary>
+ <div>
+  <br/>
+  <div>You cannot connect two phone numbers of different WABA or Facebook business manager to a single bot.</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to remove the current WABA number and link to the new WABA or FBM?</summary>
+ <div>
+  <br/>
+  <div>WABA numbers cannot be migrated from one BM (Business Manager) to another. It can only be migrated from one BSP (Business Service Provider) to another, or from one WABA to another, by retrieving the same BM ID attached to both WABAs</div>
+   </div>
+</details>
+
 ### FB Messenger chatbot related FAQs
 
 <details>
@@ -352,27 +368,6 @@ sidebar_label: Channels FAQs
  <div>
   <br/>
   <div>These are the possible entry points to GBM channel.<br/> <img src= "https://cdn.yellowmessenger.com/KhsmRbGecXEy1621333747652.png"/></div>
-   </div>
-</details>
-
-
-
-
-### Chat widget related FAQs  
-
-<details>
- <summary>How to improve the website's performance after installing the bot?</summary>
- <div>
-  <br/>
-  <div>Ensure that the chatbot script is pasted in the &lt;body&gt; of the website rather than the &lt;head&gt;. This will ensure the bot loads only when the website is fully loaded without affecting its performance.</div>
-   </div>
-</details>
-
-<details>
- <summary>Why is the bot not displaying or loading any of the configured messages?</summary>
- <div>
-  <br/>
-  <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Studio</a> . Login to cloud.yellow.ai platform. Navigate to  <b>Studio -> Welcome Message -> Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a> .</div>
    </div>
 </details>
 
