@@ -229,6 +229,31 @@ app.executeIntegrationAction({
    app.log(err, '||Error in action node||')
 })
 ```
+:::note
+### Payment status event payload
+```
+{
+          "id": "rfnd_FS8TWyPrCsa0OB",
+          "entity": "payment",
+          "amount": 50000,
+          "currency": "INR",
+          "payment_id": "pay_FPoJKWQQ8lK13n",
+          "notes": {
+            "comment": "Customer Notes for Webhooks."
+          },
+          "receipt": null,
+          "acquirer_data": {
+            "arn": null
+          },
+          "created_at": 1597734071,
+          "batch_id": null,
+          "status": "processed",
+          "speed_processed": "normal",
+          "speed_requested": "optimum"
+        }
+
+```
+:::
 ### 2.2 Generate Payment Link for Partial Payments
 
 1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
@@ -423,8 +448,6 @@ app.executeIntegrationAction({
 })
  
 ```
-
-
 
 
 
