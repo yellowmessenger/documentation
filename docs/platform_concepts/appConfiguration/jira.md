@@ -19,7 +19,7 @@ Following are the use-cases which are currently accommodated in the Integration:
 | Field Name | Sample Input | Remarks|
 | issueIdOrKey* | INTG-189 | Issue Key or Issue Id.|
 
-#### Output Response should be stored in object type variables \
+#### Output Response should be stored in object type variables 
 
 
 ### Get Project Details:-
