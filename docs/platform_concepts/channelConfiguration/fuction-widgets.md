@@ -1,6 +1,6 @@
 ---
 title : Customize Chat bot using functions
-sidebar_label : Customize Chat bot using functions
+sidebar_label : Chat widget functions
 ---
 
 Yellow.ai offers a wide range of options to customize features for its web widget. However, sometimes our clients might need even more flexibility in crafting the widget’s design, and functionality unique to their use cases. There are certain tricks that you can use to customize your web widget to suit your business needs.

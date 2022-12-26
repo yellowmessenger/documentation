@@ -27,3 +27,10 @@ Follow the below steps to configure email settings:
     - Click **Save**. 
 
 ![](https://i.imgur.com/bXdbSAl.png)
+
+:::note
+Priority can be selected based on the tickets received by the group/agents:
+1. Low: If the tickets are not of immediate importance or are smaller queries.
+2. Medium: When tickets require a quick response.
+3. High: For tickets that require an urgent response.
+:::

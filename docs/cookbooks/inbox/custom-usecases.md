@@ -37,3 +37,12 @@ Follow the below steps to assign a ticket to a group by adding any tag:
 1. In the raise ticket action node on the error node, use a send email action node.
 2. Create a database and use a database node to insert the ticket details into the database.
 
+
+## 4. Visualize a team's CSAT values on the yellow.ai platform(Data explorer)?  
+
+Currently, the Inbox CSAT values are not available for visualization (widgets/graphs). Agent CSAT values are found in **Data explorer** > **Chat tickets**.    
+You can create a custom CSAT bot flow (on Studio). Store the custom CSAT data in a database, and create a visualisation of your preference in Data Explorer.
+Click [here](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback) for more details.
+ 
+**Sample flow:** 
+![](https://i.imgur.com/VbWcUqQ.png)
