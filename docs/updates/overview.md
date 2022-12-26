@@ -39,7 +39,7 @@ You can now track the first response time metric for tickets created manually th
 
 -------
 
-## 2. Marketplace
+## 2. **Marketplace**
 
 #### 1. Addition of new marketplace templates 
 
@@ -76,7 +76,7 @@ The option to select multiple templates and import them has been developed. This
 ------
 
 
-## 3. Integrations
+## 3. **Integrations**
 
 #### 1. OKTA integration
 
@@ -98,7 +98,7 @@ EPIC EHR is a cloud-based EHR that contains all the information related to the p
 
 
 
-## 4. Apps (Widget + Mobile)
+## 4. **Apps (Widget + Mobile)**
 
 
 
