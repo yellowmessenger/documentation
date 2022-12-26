@@ -5,172 +5,118 @@ featured: true
 ---
 
 For you, our Product & Development team is working hard to consistently improve the product.  
-Here are a list of product updates we made in the month of **November** to provide you with the best user experience. 
+Here is a list of product updates we made in the month of **December** to provide you with the best user experience. 
 
 ----
 
 
 
-## 1. **Studio**
+## 1. **Inbox**
 
-#### 1.1 Options to publish selective flows and revert to previously released bot version 
+#### 1.1 Add pre-designed templates to your emails
 
 | *New feature* 
 
-- **Selective publish** allows you to publish only selected flows from the flows you made changes to.
-- **Revert** option is available on the *Live* environment, it allows the admins to revert to any previously released bot version.  
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#23-publish-selected-flows).
+You can now create **Email templates** from the settings and communicate with customers by providing a consistent and professional look & feel for all of their emails. This makes it engaging & easier for the customers to read which improves their overall experience.   
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte/).
 
 
 
-#### 1.2 Search bar functionality is extended for Flows, FAQs, and Intents
+#### 2. Configure the look and feel of your knowledgebase
 
 | *Enhancement* 
 
 
-To avoid scrolling through different sections for finding the right flow/FAQ/Intent, **Studio search bar** is enhanced to supports Flows, FAQs, and Intent search apart from documentation search.
-
-![](https://i.imgur.com/1fo4e0H.png)
-
+One can now configure the look & feel of the [knowledge Base](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview) by customizing the primary color, choosing a dark or light theme and having custom images as a footer banner.    
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain).
 
 
+#### 3. Track First Response Time for manually created email tickets
+
+| *Enhancement* 
+
+You can now track the first response time metric for tickets created manually through APIs (i,e, web forms, chatbot flows). This data will be available in the **Analytics** & **Reports** tabs to download and would also apply for enforcing SLAs.
+
+-------
+
+## 2. Marketplace
+
+#### 1. Addition of new marketplace templates 
+
+| *New feature* 
+
+1. **Ed-tech use cases**: Templates are available for use cases like discover courses, book a demo class, download course material, take a quiz, and chat with support. [**Learn more here**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/edtech-template).
+2. **E-commerce use cases**: Templates are available for use cases like browse products, manage carts, make payments, get order details, and chat with support. [**Learn more here**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/ecommerce-template).
+3. **SaaS use cases**: Templates are available for use cases like explore products and offerings, view customer case studies, book a demo and chat with support.
+4. **Banking use cases**: Templates are available for use cases like apply for an account, apply for loan, EMI calculator, check loan status and connect with support.
+
+
+#### 2. Template recommendation while creating flows
+
+| *Enhancement* 
+
+
+While creating flows, users will have the option to select from ready-to-use templates available in the marketplace. This is now optimized and only templates relevant to the industry are recommended to users. The users also have the option to explore other collections.
+
+#### 3. Importing multiple templates API
+
+| *Enhancement* 
+
+The option to select multiple templates and import them has been developed. This is available as part of the onboarding flow, where the users can select multiple use cases(templates) and import them.
+
+#### 4. Marketplace UI improvements
+
+1. Templates have been reordered in the following sequence 
+**Newly added templates** > **Kick-starter** > **Flows** > **Integrator** > **Validator**
+2. The pagination design has been updated and a load more button is used instead of autoload.
+3. Carousel has been added to the collections section, for a better view of the collections.
+4. Filters have been reduced on the marketplace page for better search results.
+
+
+------
+
+
+## 3. Integrations
+
+#### 1. OKTA integration
+
+| *New feature* 
+
+Validates the authenticity of the users by generating a login URL. After successful login, the integration provides all the relevant user-related information.
+
+#### 2. EPIC EHR integration
+
+EPIC EHR is a cloud-based EHR that contains all the information related to the patients like demographics, diagnostics, and appointment details. Aside from these, it will also help in getting the slots available for booking and helps schedule appointments.    
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/epic-fhir).
+
+
+#### 3. Tracking metrics for third-party live agent integrations
+
+**Agent Session** and **Agent Message Count** per user for third-party live agent integration can now be tracked on the [metabase](https://overview.yellowmessenger.com/metabase/).
 
 -----
 
-## 2. **Marketplace**
 
-#### 2.1 Option to export bot template to marketplace 
 
-| *Enhancement* 
+## 4. Apps (Widget + Mobile)
 
 
-Export a single flow or multiple flows from the bot with the **Export** option available on the **Studio** page (home flow and other flow pages).  
-* **Export bot template**: You can export the entire bot.
-* **Export flow template**: You can select the flows to be exported as a single template by providing details such as key features, channels supported, industry, description, etc. 
-* **Export FAQs**: A toggle is added to choose if the template must be exported with FAQs. 
-* **Export table data**: A toggle is added to choose if the template must be exported with selected database tables.  
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow).
 
 
+| Updates | UI changes|
+| -------- | -------- |
+|**Speech-to-text & Text-to-speech**|![](https://i.imgur.com/5cnEmlf.png) ![](https://i.imgur.com/I2W43Bx.png)|
+|**Conversational Landing pages (Beta)***|![](https://i.imgur.com/E8Eui7o.png)|
+|**Revamped Setup (Settings) Page (Beta)***|![](https://i.imgur.com/dxBvNR4.png)|
+|**iOS: Single Sign-On and Apple sign-in**|<img src="https://i.imgur.com/wJWwfa4.png"  alt="drawing" width="50%"/>|
+|**Android: O-Auth sign-in**|<img src="https://i.imgur.com/SSM0kgA.png"  alt="drawing" width="50%"/>|
+|**Revamped Input bar and In-line quick replies**|<img src="https://i.imgur.com/wq7mCAq.png"  alt="drawing" width="60%"/>|
+|**Sensitive info can be hidden**|![](https://i.imgur.com/GSnufy4.png) ![](https://i.imgur.com/ryxrKl8.png)|
+|**Multi-lingual placeholder & metadata**|<img src="https://i.imgur.com/AoNK1Bs.png"  alt="drawing" width="60%"/>|
+|**New UI for errors**|<img src="https://i.imgur.com/bekS7Om.png"  alt="drawing" width="60%"/>|
+|**Block users from sending messages/uploading attachments during network drop**|<img src="https://i.imgur.com/oe0zR0w.png"  alt="drawing" width="60%"/>|
+|**Reload option during network drop**|![](https://i.imgur.com/eN0KSuE.png)|
+|**New design for Generic card (single and carousel)- Alignment, Icons, and Colours**|<img src="https://i.imgur.com/5BjT5Wn.png"  alt="drawing" width="60%"/>|
 
-#### 2.2 Option to import templates to private marketplace/ specific subscriptions
-
-| *Enhancement* 
-
-
-Users can now export templates to:
-- **Private marketplace**: These templates will be visible and available for import only for the respective user (it will be hidden from the external users). 
-- **Subscription**: Export templates to a marketplace with accessiblity only to members of a particular subscription. These templates will be visible and available for import only for the subscription users (it will be hidden from the other users).
-
-#### 2.3 Review and Publish templates process updated for private and public marketplace
-
-| *Enhancement* 
-
-* **Private**: The templates exported to a private marketplace will be published automatically without a review process. 
-* **Subscription**: The templates exported for a subscription will be submitted for review and will be available on the export page (**Profile** > **Exports**). The admin of the subscription will be able to view, test, and publish the templates.
-* **Public**: The templates exported to the **public** marketplace will be submitted for review and will be available on the export page (**Profile** > **Exports**). The admin of the public marketplace will be able to view, test, and publish the templates.  
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow).
-
-
-
-#### 2.4 View exported templates
-
-| *Enhancement* 
-
-
-Details and status of the templates submitted for review will now be available on the **Exports** page (**Profile** > **Exports**).
-
-
-<!---
-## 3. **Web widgets**
-
-#### 3.1 Store the response of the Time node in the Date & Time picker, and Time picker cards in GTM format
-
-Previously, user selection was saved in local time which would vary across regions. Currently, the Time node in Date & Time picker, and Time picker cards are saved in GMT to maintain the standard.
-
-> These changes will be affecting the bots which are using the Date and time picker Card and Time Picker Card, not the web view.
-
-
-<img src="https://i.imgur.com/LQgxPFZ.png" alt="drawing" width="40%"/>
--->
-------
-
-## 3. **Integrations**
-
-
-#### 3.1 Live chat integrations are available on app.yellow.ai
-
-
-| *Enhancement* 
-
-
-The live chat integrations can now be used on App bots, this allows app bots to leverage the same capabilities as cloud bots in terms of integrations supported.   
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/livechat-integration).
-
-
-
-#### 3.2 Multiple live agent integrations within a single bot
-
-| *Enhancement* 
-
-
-While using the [raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket), the bot developer can chose any of the live chat service that are enabled on the integrations module.
-
-
-
-#### 3.3 Zendesk Sunshine integration available on the cloud
-
-| *New feature* 
-
-Zendesk Sunshine Integration is now supported for executor-cloud bots.   
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-sunshine/).
-
-
-
-#### 3.4 Custom Live agent integration v2
-
-| *Enhancement* 
-
-Custom live agent was enhanced with the following features:
-* Ticket queuing.
-* Option to send the conversation that happened prior to connecting with the agent as a JSON file.
-* Adding additional user information (name and email) while sending messages/media files from user to agent.
-* A new field in the Raise ticket node for providing the group ID using which the ticket can be created and assigned to a specific group of agents.
-
-
-
-#### 3.5 Magento integration
-
-| *New feature* 
-
-Magento integration is available for usage through GIF.
-
-
-#### 3.6 Sticky Agents for Salesforce Live chat
-
-| *Enhancement* 
-
-
-Salesforce Live chat is enabled with Sticky agents (a type of ticket assignment where the customers can connect to an agent, of their choice i.e., agents they are familiar/have conversed with before). 
-
-#### 3.7 Automated delivery report to WebEngage
-
-| *New feature* 
-
-Previously, the delivery event was sent to the bot and the bot developer was responsible for using the action node to send the event data to WebEngage. 
-Currently, this process is automated to avoid any unintended bugs and failures by the users.
-
-#### 3.8 Support for Nested Objects for Integration Action Nodes V2
-
-| *Custom Enhancement* 
-
-
-Objects inside Objects are now supported for V2 Action Nodes.
-
-#### 3.9 Added code coverage
-
-| *Enhancement* 
-
-Moving towards better code quality and assurance, boilerplate code coverage has been written for integrations which will be extended through more test cases.
 
 
