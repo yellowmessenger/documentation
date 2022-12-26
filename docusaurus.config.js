@@ -46,7 +46,7 @@ module.exports = {
       disableSwitch: true,
     },
     image: "img/og_img.png",
-    metadatas: [{ name: "twitter:card", content: "summary" }],
+    metadata: [{ name: "twitter:card", content: "summary" }],
     navbar: {
       title: "",
       logo: {
@@ -97,10 +97,6 @@ module.exports = {
       ],
     },
     footer: { links: [] },
-    googleAnalytics: {
-      // trackingID: "UA-135959729-1",
-      trackingID: "UA-159942894-1",
-    },
   },
   presets: [
     [
@@ -108,6 +104,10 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+        },
+        googleAnalytics: {
+          // trackingID: "UA-135959729-1",
+          trackingID: "UA-159942894-1",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.module.css"),
