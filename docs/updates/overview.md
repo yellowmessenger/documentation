@@ -13,7 +13,7 @@ Here is a list of product updates we made in the month of **December** to provid
 
 ## 1. **Inbox**
 
-#### 1.1 Add pre-designed templates to your emails
+#### 1 Add pre-designed templates to your emails
 
 | *New feature* 
 
@@ -95,10 +95,20 @@ EPIC EHR is a cloud-based EHR that contains all the information related to the p
 **Agent Session** and **Agent Message Count** per user for third-party live agent integration can now be tracked on the [metabase](https://overview.yellowmessenger.com/metabase/).
 
 -----
+## 4. **Engage**
+
+#### 1. Quick reply in the template manager module 
+
+| *Enhancement* 
+
+A lot of development efforts and time would go into capturing the quick reply event and setting up the bot flow for taking the appropriate next action on WhatsApp. 
+To make the task much easier, the Template Manager module is enhanced to assign action (Trigger Journey, Trigger NLP, Send as an event) to each of the Quick Reply buttons as per their needs.
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate/#11-add-ctasquick-replies).
+
+-------
 
 
-
-## 4. **Apps (Widget + Mobile)**
+## 5. **Apps (Widget + Mobile)**
 
 
 

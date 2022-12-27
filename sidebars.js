@@ -479,7 +479,7 @@ module.exports = {
               items: [
               //add realtive paths here
               "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
-              "platform_concepts/inbox/inbox-settings/productivitytools/knowledgebase",
+              "platform_concepts/inbox/inbox-settings/productivitytools/collaboration",
               "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
               "platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte",
                      ],
@@ -540,7 +540,22 @@ module.exports = {
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
                    ],
           },
-            "platform_concepts/inbox/inbox-settings/security",
+
+          //account 
+          {
+            type: "category",
+            label: "Account",
+            collapsed: true,
+            items: [
+
+            "platform_concepts/inbox/inbox-settings/account/notification",
+            "platform_concepts/inbox/inbox-settings/account/security",
+            ]
+          },
+
+
+
+
           ],
         },
 
