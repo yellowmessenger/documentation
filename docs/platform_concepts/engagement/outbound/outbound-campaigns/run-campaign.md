@@ -86,19 +86,14 @@ In case you want to switch to User module to add audience, you can save the camp
 
 8. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
 
-9.  **Review and Launch** the campaign.
+9.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
+
+     ![](https://i.imgur.com/WlmnEYU.png)
+
 
   
 
-   Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
-
-  
-
-   ![](https://i.imgur.com/A5cRXqT.png)
-
-  
-
-   * Click **Save ad draft** to save all your changes. You can resume from here anytime.
+   * Click **Save as draft** to save all your changes. You can resume from here anytime.
 
    * Once you have reviewed all the details and is good to go, click on **Launch Campaign** to schedule. You will be redirected to *Campaigns overview* page where you can monitor the campaign.
 
@@ -108,13 +103,13 @@ In case you want to switch to User module to add audience, you can save the camp
 
 
   
-## 3. Configure template details
+## 3. Configure templates for different channels
 
 This appears in the *Basic information* screen once you select a channel template. You need to configure some settings depending on the channel and template. For example, setting up the sender ID, and mapping variables used in the template.
 
 This section guides you on how to configure template for each channel - 
 
-### 3.1 SMS template
+### 3.1 SMS campaign
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's phone number.
  
@@ -124,7 +119,7 @@ This section guides you on how to configure template for each channel -
 
    <img src="https://i.imgur.com/12hci2Z.png" class="center" width="60%"/>
 
-### 3.2 Email template
+### 3.2 Email campaign
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's email address.
 
@@ -136,7 +131,7 @@ This section guides you on how to configure template for each channel -
 
  
 
-### 3.3 WhatsApp/Viber template 
+### 3.3 WhatsApp/Viber campaign 
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's WhatsApp number (mobile number).
 
@@ -353,7 +348,14 @@ The following are the benefits of testing a campaign before launching -
 
 You will see the *Sending* status. You can see the actual delivery status after a while (about 15 seconds) - Delivered or Failed.
 
-  
+   ![](https://i.imgur.com/Sm9nuYW.png)
+
+
+* To send the test campaign to more users, click on **Send new test campaign**.
+
+   ![](https://i.imgur.com/UsOTzmX.png)
+
+
 For Failed messages, you can also see the reason for failure.
 
 :::note
@@ -361,16 +363,9 @@ For Failed messages, you can also see the reason for failure.
 * If there is any mismatch in the data, save the campaign using **Save as draft**. Then, navigate to templates step, correct your mappings and test again.
 :::
 
+***
 
-6. Check message sent status
 
+**What next**
 
-* Click on **Test Campaign** will give you sent status of last test users and you can click on "Send new test campaign" to add new test users.
-* Once the notification is good to go, you can launch the campaign anytime.
-
-  
-   ![](https://i.imgur.com/oVgpJRm.png)
-
-  
-
----
+* See how your campaign is performing using [Outbound campaign report](/platform_concepts/engagement/outbound/outbound-campaigns/outbound-report.md).

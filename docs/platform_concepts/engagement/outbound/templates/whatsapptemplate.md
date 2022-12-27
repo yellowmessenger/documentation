@@ -6,6 +6,9 @@ sidebar_label: WhatsApp template
 
 Unlike other channel templates that are approved by default, you need to send each WhatsApp template for approval as soon as you create it. Facebook might take upto 48 hours to review the template. A template gets approved if it is as per the Facebook's guidelines, else it will be rejected.
 
+## 1. Create WhatsApp template
+
+
 The following are the different steps involved in a WhatsApp template - 
 
 1. Create a WhatsApp and send for approval.
@@ -21,8 +24,6 @@ The following are the prerequisites for creating a WhatsApp template -
 
 * Account should be active with its status as *Connected*.
 
-
-## 1. Create WhatsApp template
 
  
 To create a WhatsApp template and send for approval - 
@@ -42,7 +43,6 @@ To create a WhatsApp template and send for approval -
 
    ![](https://i.imgur.com/cbxvaHy.png)
 
-  
   
 Option | Description
 --------- | --------
@@ -71,62 +71,65 @@ You can either add up to two CTAs or three Quick replies.
 
 
 
-### 1.1 Add CTAs/Quick replies
+### 1.1 Add Call to Actions (CTAs) in WhatsApp template
 
-You will see these options in Buttons under Button Type.
+A WhatsApp template supports two different CTAs - *Visit website* and *Call phone*. You can only add two different CTAs in a template. That is, you cannot use two Visit website or two Call phone in the same template.
 
-#### Call to Action
+![](https://i.imgur.com/Ru8T1Uz.png)
 
-In Type of action, You can either choose between Visit Website or Call Phone. Currently, it supports up to two CTAs in a template.
+Navigate to the **Button Type** section and select *Call to action*.
 
 ![](https://i.imgur.com/OpV6j9P.png)
 
-For the action, Visit website -
+#### 1. Add URL redirect CTA
 
-1. In the **Button** text, enter the label name (character limit 20) for the CTA.
-2. In the drop-down box, choose the type of URL - *Static* or *Dynamic*.
-3. In URL, enter the URL that you want recipients to redirect upon clicking the button.
+1. In **Type of action**, choose *Visit website*.
+2. In the **Button** text, enter the label name (character limit 20) for the CTA.
+3. In the drop-down box, choose the type of URL - *Static* or *Dynamic*.
+4. In URL, enter the URL that you want recipients to redirect upon clicking the button.
 
-For the action, Phone number -
+#### 2. Add make a phone call CTA
 
-1. In the **Button** text, enter the label name (character limit 20) for the CTA.
-2. In the drop-down box, choose the country of the phone number.
-3. In **Phone number**, enter the phone number that you want your recipients to call.
+1. In **Type of action**, choose *Phone call*.
+2. In the **Button** text, enter the label name (character limit 20) for the CTA.
+3. In the drop-down box, choose the country of the phone number.
+4. In **Phone number**, enter the phone number that you want your recipients to call.
 
-#### Quick replies
+### 1.2 Add Quick replies in WhatsApp template
 
-There are three different quick reply actions available.  You can use the desired action for each button and a maximum of three quick reply buttons are supported. Each button text can have up to 20 characters. 
+WhatsApp template supports three different quick reply actions. You can use the desired action for each button and a maximum of three quick reply buttons are supported. Each button text can have up to 20 characters. 
 
 ![](https://i.imgur.com/khDiOw3.png)
 
 The following are the three different quick reply options:
 
-* **Trigger journey**: Use this to trigger a specific journey when the user clicks on the button. For example, you can use it to send a promotional notification about store offers, and trigger the bot flow through which users can buy products when the user clicks on it.
+#### 1. Trigger journey
 
-   **Prerequisite**: A journey should be created already for offers and buy products to select from.
+Use this to trigger a specific journey when the user clicks on the button. For example, you can use it to send a promotional notification about store offers, and trigger the bot flow through which users can buy products when the user clicks on it.
 
-   Enter the **Button text**, choose the **Action type**,  *Trigger journey*, and select the **Journey name** that you want to trigger.
+**Prerequisite**: A journey should be created already for offers and buy products to select from.
+
+Enter the **Button text**, choose the **Action type**,  *Trigger journey*, and select the **Journey name** that you want to trigger.
 
    ![](https://i.imgur.com/7a6k9Nc.png)
 
 
 
+#### 2. Trigger NLP 
+Use this to trigger the bot conversation as per the utterances trained under intents. For example, use it to send a transactional notification about order cancellation, and provide a talk-to-customer support button to trigger Live Agent flow.
 
-
-
-* **Trigger NLP**: Use this to trigger the bot conversation as per the utterances trained under intents. For example, use it to send a transactional notification about order cancellation, and provide a talk-to-customer support button to trigger Live Agent flow.
-
-   **Prerequisite**: Live agent flow should be trained with the *Talk to customer support* utterance.
+**Prerequisite**: Live agent flow should be trained with the *Talk to customer support* utterance.
   
-  Enter the **Button text**, choose the **Action type**,  *Trigger NLP*.
+Enter the **Button text**, choose the **Action type**,  *Trigger NLP*.
 
   ![](https://i.imgur.com/Ijp1chQ.png)
 
 
 
-* **Send as Event**: Use this to send all the template data to the bot and use it in custom flows. For example, you can capture the button clicked and the user ID in a custom dataset.
+#### 3. Send as Event 
+Use this to send all the template data to the bot and use it in custom flows. For example, you can capture the button clicked and the user ID in a custom dataset.
 
-  Enter the **Button text**, choose the **Action type**,  *Send as event*.
+Enter the **Button text**, choose the **Action type**,  *Send as event*.
 
    ![](https://i.imgur.com/ew3RIM0.png)
   
@@ -138,7 +141,7 @@ Use the Delete icon to remove any button.
 
  
 
-### 1.2 Add variables
+### 1.3 Add variables in WhatsApp template
 Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
 
 You can add variables by adding two curly brackets before and after the variable name.
@@ -160,7 +163,7 @@ You can see in the preview tab below, the variable user we just created is highl
   
   
 
-## 2. Best practices to avoid rejections
+## 2. WhatsApp template guidelines to avoid rejections
 
   
 
@@ -202,16 +205,10 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 ![](https://i.imgur.com/OpceI9g.png)
 
   
-  
 
-## 3. Schedule a campaign
-
-  
-
-To learn to schedule a campaign to a user segment at the desired time, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign/#4-schedule-message).
 
 ***
 
 **What next?**
 
-After creating a WhatsApp template, create a WhatsApp campaign using the template as explained [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
+* **Schedule a WhatsApp campaign**: Create a WhatsApp campaign using the template as explained in [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
