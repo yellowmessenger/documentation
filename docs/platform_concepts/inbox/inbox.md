@@ -88,7 +88,7 @@ There are multiple options available in the inbox module, they are listed below:
 
 Based on the [access](#supportagents) you have (Inbox Admin, Supervisor, or Agent) you will get notified about all the actions on your Inbox. 
 
-1. Click the notification icon. You can find all the updates listed on the **Notification** tab. 
+1. Click the notification icon in the upper right corner of your screen. You can find all the updates and alerts listed on the **Notification** tab. 
 
 ![](https://i.imgur.com/6hs6g7s.png)
 
@@ -110,7 +110,7 @@ You can configure notifications on the settings page. Click [here](./inbox-setti
 
 ---------
 
-## <a name="supportagents"></a> 2. Manage Support Agents
+## <a name="supportagents"></a> 2. Manage support agents
 
 - There are two roles to access the inbox module, **Inbox Admin** and **Inbox Agent**
 - Incoming tickets (from the bot user) are assigned to the support agents.
@@ -132,15 +132,14 @@ To add **inbox admin/agent**, follow the below steps:
 
 2. On **Users** tab, click **+Invite users**.
 3. Enter **email ID** and from the Access control dropdown menu select **Inbox (Agent)** and click **Invite**. 
-
-> Follow the same to add Inbox (Admin) access.
+    - Follow the same to add Inbox (Admin) access.
 
 ![](https://i.imgur.com/n5E7zhY.png)
 
-4. Supervisor role can be added for agents.
+4. **Supervisor** role can be added for agents.
     - You can make your agents supervisors to a group where they can monitor & supervise the group's incoming chats as well as the agents.
     - While you share inbox agent access, you will get an additional option to make them supervisor for a group.
-    - From the dropdown, select the group that you want them to be a supervisor for.  
+    - From the dropdown, select the group that you want them to be a supervisor.  
     - Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) to configure a group.
     
 <img src="https://i.imgur.com/RNsGTzx.png" alt="drawing" width="60%"/>    
@@ -191,7 +190,7 @@ To join the team as an inbox agent, follow the steps below:
 
 ## <a name="agentstatus"></a> 3. Default agent status
 
-> Admin cannot change the status of any other agent.
+> An admin cannot change the status of any agents.
 
 
 Inbox offers three default agent statuses that you can choose to define your availability. These statuses are the foundation based on which the incoming tickets are assigned to you. Ensure that you are indeed selecting the correct status at any time.
@@ -230,10 +229,7 @@ Now if they are considered as **Away**, those chats will not be missed irrespect
 
 ### 3.2 Track activity via. Reports
 
-The time spent by each agent in the different statuses will be tracked and made available in the agent activity report.  
-> The **agent activity report** will not track the time spent in **Offline** status.
- 
- The aggregated time spent by the agent i.e total Available/Busy/Away time spent by the agent per each day is also accessible in the **agent performance report**.
+The time spent by each agent in the different statuses will be tracked and made available in the **Agent activity report**. The aggregated time spent by the agent i.e total Available/Busy/Away time spent by the agent per each day is  accessible in the **Agent performance report**.
 
 To download the Agent performance/ Agent activity report, follow the below steps:   
 
@@ -294,22 +290,22 @@ To check that click on the profile icon on the right corner, and verify the stat
 <img src="https://i.imgur.com/I7XrOLT.png" alt="drawing" width="70%"/>    
 :::
 
-5. Go to the previous tab or window where the bot was opened and raise a ticket. After the ticket is raised, the name of the agent connected will be displayed.
+4. Go to the previous tab or window where the bot was opened and raise a ticket. After the ticket is raised, the name of the agent connected will be displayed.
 
 <img src="https://i.imgur.com/Qv7fbgh.png" alt="drawing" width="90%"/>    
 
 
 
-6. On the tab in which the inbox is opened, you will see a ticket raised (it will be displayed as a message on Chat/Tickets page).
+5. On the tab in which the inbox is opened, you will see a ticket raised (it will be displayed as a message on Chat/Tickets page).
 
 ![](https://i.imgur.com/khxffRF.jpg)
 
-7. You can reply from your chat screen. This is a real-time conversation on the bot.
+6. You can reply from your chat screen. This is a real-time conversation on the bot.
 
 ![](https://i.imgur.com/LEdGd40.png)
 
 
-8. You can close the chat (and click **Resolve** to [resolve the ticket](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen/#3-resolve-or-transfer-tickets)) and test the message displayed after the chat has ended with the live agent. 
+7. You can close the chat (and click **Resolve** to [resolve the ticket](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen/#3-resolve-or-transfer-tickets)) and test the message displayed after the chat has ended with the live agent. 
 
 <img src="https://i.imgur.com/Gld3MHU.png" alt="drawing" width="50%"/>    
 
