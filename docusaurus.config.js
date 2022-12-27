@@ -7,6 +7,7 @@ module.exports = {
   url: "https://docs.yellow.ai",
   baseUrl: "/",
   favicon: "img/favicon.png",
+  trailingSlash: false, // to control trailing slash on the page url
   organizationName: "yellowmessenger",
   projectName: "documentation",
   // customFields: {
