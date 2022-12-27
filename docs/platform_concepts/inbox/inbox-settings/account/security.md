@@ -1,5 +1,5 @@
 ---
-title: Security settings 
+title: Multiple logins - security
 sidebar_label : Security settings 
 ---
 

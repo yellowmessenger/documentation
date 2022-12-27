@@ -30,10 +30,9 @@ There are 2 different types of reports, namely, **Chat reports** and **Email rep
   
   
 
-:::info
 
-Only an admin can download reports
-
+:::note
+Only an Inbox admin can download reports.
 :::
 
   
