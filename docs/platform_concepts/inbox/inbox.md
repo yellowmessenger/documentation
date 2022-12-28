@@ -223,7 +223,7 @@ On paper, **Busy** and **Away** are both identical in function but when you log 
 
 Consider a scenario wherein, all your agents break for lunch from 1 PM - 2 PM. If they are considered **Offline** during that time, the chats raised during the time will be completely missed unless Offline chats are enabled.  Even if they are enabled, those chats will only be captured in Open status and will not be assigned to agents immediately.
 Now if they are considered as **Away**, those chats will not be missed irrespective of whether Offline chats are enabled or not, and the chats will be queued, then automatically assigned to agents after 2 PM.
-:::
+
   
 ------
 
