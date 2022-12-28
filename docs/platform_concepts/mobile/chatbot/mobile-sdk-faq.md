@@ -25,7 +25,7 @@ app.sendEvent({
 })
 ```
 
-**4. Is there a documentation on Mobile SDK?**
+**4. Where can I find the documentation on Mobile SDK??**
 
 Refer to the following documentation links for mobile SDK documentation:
 
