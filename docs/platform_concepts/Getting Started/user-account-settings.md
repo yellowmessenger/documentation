@@ -82,7 +82,15 @@ The other team members will send you a bot invite to your email address, where y
 
 You can view the pending bot invites that have been sent by the other team members. Click Accept to access the bot, or click Decline. Also, you will get a notification to accept the bot. For more information, see [add bot collaborators](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#2-accept-bot-invite).
 
-<img src="https://i.imgur.com/KoWyEEW.png)" alt="drawing" width="100%"/>
+![](https://i.imgur.com/HgS5gtv.png)
+
+You can view the different bots, which belong to the Yellow.ai organization. You can search for a specific bot by bot Id, name, or sub Id. You can send a request to access the bots that were created by other members of the organisation. The super admin will provide access to the requested bot.
+
+:::note
+You cannot see your bots in this section.
+:::
+
+![](https://i.imgur.com/Pq5woJs.png)
 
 ***
 
