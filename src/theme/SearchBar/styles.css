@@ -11,11 +11,14 @@
 }
 
 .DocSearch-Button {
-  transition: all var(--ifm-transition-fast)
-    var(--ifm-transition-timing-default);
+  transition: all var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
 
-.search-input .DocSearch-Button{
+.DocSearch-Container {
+  z-index: calc(var(--ifm-z-index-fixed) + 1);
+}
+
+.search-input .DocSearch-Button {
   width: 60%;
   margin: 0 auto 0 auto;
   position: relative;
@@ -27,7 +30,7 @@
 
 .search-input .DocSearch-Search-Icon {
   stroke-width: 2;
-  color:  #a1aab2
+  color: #a1aab2
 }
 
 .search-input .DocSearch-Button-Placeholder {
@@ -35,10 +38,12 @@
   font-size: 0.8rem;
 }
 
-.search-input .DocSearch-Button-Placeholder::after{
+.search-input .DocSearch-Button-Placeholder::after {
   content: " by keyword ( Eg. How to build a bot, Journeys, steps)";
 }
 
-.search-input .DocSearch-Button:active, .search-input  .DocSearch-Button:focus, .search-input  .DocSearch-Button:hover {
+.search-input .DocSearch-Button:active,
+.search-input .DocSearch-Button:focus,
+.search-input .DocSearch-Button:hover {
   color: var(--docsearch-muted-color);
 }

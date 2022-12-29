@@ -348,4 +348,4 @@ Onboarded Recording Management controls on the Builder UI. Bot Developers can no
 | *New feature* (owned by the data and analytics team. Available for use on Insights)
 
 Voice bot metrics is now found on the **Insights** > **Voice Overview** section.  
-[**Learn more here**](./platform_concepts/growth/voiceoverview.md).
+[**Learn more here**][links](/platform_concepts/growth/voiceoverview.md).

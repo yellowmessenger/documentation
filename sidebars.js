@@ -225,13 +225,6 @@ module.exports = {
 
       ],
     },
-    {
-      type: "category",
-      label: "User profile settings",
-      collapsed: true,
-      items: [
-      ],
-    },
 
 
       ]
@@ -1003,45 +996,6 @@ module.exports = {
       ],
     },
     // Prod update ends here.
-
-
-    {
-      type: "category",
-      label: "Insights",
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Inbox",
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Engage",
-      collapsed: true,
-      items: [
-      ],
-    },
-    {
-      type: "category",
-      label: "Channels",
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Integrations",
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Configurations",
-      collapsed: true,
-      items: [],
-    },
   ],
 
 

@@ -7,11 +7,13 @@
 .main_wrapper {
   overflow-y: auto;
 }
+
 .main_wrapper .section_container {
   padding: 3.5rem 1rem;
   max-width: 1404px;
   margin: 0 auto;
 }
+
 .section_container .title {
   color: var(--ifm-primary-grey-color);
   font-size: 2rem;
@@ -37,10 +39,23 @@
   gap: 30px;
 }
 
+[class^="docMainContainer"] {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.feedbackFooter__cont {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
   }
+
   .main_wrapper .section_container {
     width: 90%;
   }
