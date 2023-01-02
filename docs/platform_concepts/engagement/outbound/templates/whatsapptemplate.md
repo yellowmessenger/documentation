@@ -46,7 +46,7 @@ To create a WhatsApp template and send for approval -
   
 Option | Description
 --------- | --------
-Template name | Enter a name for the template. This is used only for your reference and the client cannot see it.
+Template name | Enter a name for the template (Only lowercase letters, numbers and underscores are allowed). This is used only for your reference and the client cannot see it. 
 Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*.
 Select language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
 Header | Enter the message title If you want to include media or documents (Image, Video, Document, or Text) in your template messages, then Header Section will be of high importance. WhatsApp has certain guidelines for Header. WhatsApp Text supports upto 60 characters with only one variable.
