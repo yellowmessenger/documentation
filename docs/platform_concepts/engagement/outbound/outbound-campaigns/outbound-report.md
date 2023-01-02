@@ -14,8 +14,8 @@ You can [view report directly on the UI](#1-view-report) or [email the detailed 
 To view outbound campaigns' report, follow these steps -
 
 1. Log on to Yellow.ai platform and navigate to the **Engage** module.
-
-   ![](https://i.imgur.com/bYJ1Nvu.png)
+ 
+   ![](https://i.imgur.com/bgE3xeX.png)
 
 2. On the **Outbound** tab, click on the campaign for which you want to see the report.
 

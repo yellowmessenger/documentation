@@ -3,6 +3,13 @@ title: Mobile push template
 sidebar_label: Mobile push template
 ---
 
+## Prerequisites
+
+Before creating push notifications, you must have configured the following on the Yellow.ai platform.
+- [Android push notification or Firebase Cloud Messaging channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android_push) to send push notifications on the Android app
+- [iOS or Apple Push Notifications](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/ios_push) to send push notifications on the iOS app
+
+
 ## Create Mobile push template
 
 To create a Mobile push template, follow these steps:

@@ -12,7 +12,7 @@ To send push notifications on your iOS app using Yellow.ai, you must have a Appl
 
 ### Step 1: Create APNs private key
 
-* Download the private key (.p8 file) with APNs enabled using these [instructions](https://help.apple.com/developer-account/?_gl=1*1ydwszb*_ga*MTE1NjEzMTkzLjE2NTc3MTEyMzA.*_ga_8VQ6F1K67R*MTY2OTcxNDEzNS44OS4wLjE2Njk3MTQxNDMuMC4wLjA.*_ga_05Y0102HN7*MTY2OTcxNDEzNS40LjAuMTY2OTcxNDE0My4wLjAuMA..#/devcdfbb56a3).  Alternatively, you can also use an existing private key with APNs enabled.
+* Download the private key (.p8 file) with APNs enabled using these [instructions](https://developer.apple.com/help/account/).  Alternatively, you can also use an existing private key with APNs enabled.
 
 ### Step 2: Upload APNs private key on Yellow.ai
 
@@ -23,9 +23,29 @@ To send push notifications on your iOS app using Yellow.ai, you must have a Appl
 
 ![](https://secure-res.craft.do/v2/MXpitnt98nfq77xcERfHs5nKdeJUqQ42x1Paqh34KHvmo25ikVQryimMtxX8fAdU1SBcf9ZSL7SHduNiC1QsYBiwvFXXGgrEXzBXsR66jC14o7djEPtQKjWC2ZNyUmiYiYVsjd8UCUPNBKyRSKiXH3phczPr5qEBBoRoSV3iqCoFycXWFy15mVNCUZX1Adjze6y7ZKhWDgfpAD1441wesaaVVXcax81jmqN8N5cSPaSqPm19dLwQUjSGuofoMCvsVwi5P5tha29zHoQWcocWjaZXU4E41UbPy5C3aLWBEYofj9D5Wt/Image.jpg)
 
-### Sample Payloads:
 
-#### Notification without custom action
+:::info
+To know how to create a push notification campaign, see [Mobile push template](/docs/platform_concepts/engagement/outbound/templates/mobilepush.md).
+:::
+
+
+## 2. Code snippets for iOS Push notifications
+
+The following table provides descriptions of different parameters in the code snippets:
+
+
+Parameter | Datatype | Description
+------------ | ----- | -----------
+title | String | Title of the notification.
+body | String | Content of the notification.
+payload | String | Additional parameters such as image, botId, deep-link and journeySlug.
+botId | String | The bot ID for which the notification has been triggered.
+image | String | The path to the image file or a URL of the image.
+deeplink | String | URL which redirects the user to a particular page of the iOS application.
+journeySlug | String | The journey which has to be triggered in the bot, when the user taps on the notification.
+contentAvailable | Boolean | Whether to handle background notifications.
+
+### 2.1 Notification without custom action
 
 ```json
 {
@@ -34,13 +54,13 @@ To send push notifications on your iOS app using Yellow.ai, you must have a Appl
  "title": "hey there",
  "body": "description",
  "payload": {
- "image": "url"
+ "image": "{imageUrl}"
  }
 }
 ```
 
 
-#### Notification with Deep-link:
+### 2.2 Notification with Deep-link:
 
 ```json
 {
@@ -49,14 +69,14 @@ To send push notifications on your iOS app using Yellow.ai, you must have a Appl
   "title": "hey there",
   "body": "description",
   "payload": {
-    "image": "url",
+    "image": "{imageUrl}",
     "botId": "{botID}",
-    "deeplink": "url"
+    "deeplink": "{url}"
   }
 }
 ```
 
-#### Notification with bot response:
+### 2.3 Notification with bot response
 
 ```json
 {
@@ -66,34 +86,98 @@ To send push notifications on your iOS app using Yellow.ai, you must have a Appl
   "body": "description",
   "payload": {
     "botId": "{botID}",
-    "image": "url",
+    "image": "{imageUrl}",
     "journeySlug": "slug"
   }
 }
 ```
 
 
+:::note
+For code snippets in how to integrate Yellow Messenger bot, see the following:
+* [iOS chatbot](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios)
+* [YM chatbot iOS demo app](https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp)
+:::
 
 
 
-Parameters
+### 2.4 Extract parameters from notifications
 
-Parameter | Description
------------- | --------
-title | Title of the notification
-body | Content of the notification
-payload | Contains additional parameters such as image, botId, deep-link and journeySlug
-botId | The bot ID for which the notification has been triggered
-image | contains the path to the image file or a URL of the image
-deeplink | URL which redirects the user to a particular page of the application
-journeySlug | The journey which has to be triggered in the bot, when the user taps on the notification
-contentAvailable | To handle background notifications
+```
+class NotificationService: UNNotificationServiceExtension { 
+  var contentHandler: ((UNNotificationContent) -> Void)? 
+  var bestAttemptContent: UNMutableNotificationContent? 
 
+override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) { 
+self.contentHandler = contentHandler bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
 
-### Code Snippets
+  let title = request.content.userInfo["title"]; 
+  let body = request.content.userInfo["body"]; 
+  let payload = request.content.userInfo["payload"]; 
+  let botId = request.content.userInfo["payload"]["botId"]; 
+  let image = request.content.userInfo["payload"]["image"]; 
+  let journeySlug = request.content.userInfo["payload"]["journeySlug"]; 
+  }
+}
+```
 
-How to integrate YM bot
+### 2.5 Handle image notifications
 
-[https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios)
+```
+import UserNotifications 
+class NotificationService: UNNotificationServiceExtension { 
+   var contentHandler: ((UNNotificationContent) -> Void)? 
+   var bestAttemptContent: UNMutableNotificationContent? 
 
-[https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp](https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp)
+override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) { 
+   self.contentHandler = contentHandler bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent) if let  
+   bestAttemptContent = bestAttemptContent { // Modify the notification content here... bestAttemptContent.title = "\(bestAttemptContent.title) [modified]" 
+   var urlString:String? = nil if let urlImageString = request.content.userInfo["image"] as? String { 
+   urlString = urlImageString 
+} 
+
+if urlString != nil, let fileUrl = URL(string: urlString!) { print("fileUrl: \(fileUrl)") 
+
+   guard let imageData = NSData(contentsOf: fileUrl) else { 
+     contentHandler(bestAttemptContent) 
+     return } 
+   
+   guard let attachment = UNNotificationAttachment.saveImageToDisk(fileIdentifier: "image.jpg", data: imageData, options: nil) else { 
+   print("error in UNNotificationAttachment.saveImageToDisk()") 
+   contentHandler(bestAttemptContent) 
+   return 
+ } 
+   bestAttemptContent.attachments = [ attachment ] 
+   } 
+   contentHandler(bestAttemptContent) 
+  } 
+} 
+
+override func serviceExtensionTimeWillExpire() { 
+// Called just before the extension will be terminated by the system. 
+// Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used. 
+if let contentHandler = contentHandler, let bestAttemptContent = bestAttemptContent { 
+   contentHandler(bestAttemptContent) 
+   } 
+  } 
+} 
+
+@available(iOSApplicationExtension 10.0, *) 
+extension UNNotificationAttachment { 
+static func saveImageToDisk(fileIdentifier: String, data: NSData, options: [NSObject : AnyObject]?) -> UNNotificationAttachment? { 
+  let fileManager = FileManager.default 
+  let folderName = ProcessInfo.processInfo.globallyUniqueString 
+  let folderURL = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(folderName, isDirectory: true) do { 
+  try fileManager.createDirectory(at: folderURL!, withIntermediateDirectories: true, attributes: nil) 
+  let fileURL = folderURL?.appendingPathComponent(fileIdentifier) 
+  try data.write(to: fileURL!, options: []) 
+  let attachment = try UNNotificationAttachment(identifier: fileIdentifier, url: fileURL!, options: options) 
+  return attachment 
+} 
+catch let error { 
+  print("error \(error)") 
+ } 
+ return nil 
+ } 
+}
+```
