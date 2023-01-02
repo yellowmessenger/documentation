@@ -225,13 +225,6 @@ module.exports = {
 
       ],
     },
-    {
-      type: "category",
-      label: "User profile settings",
-      collapsed: true,
-      items: [
-      ],
-    },
 
 
       ]
@@ -479,7 +472,7 @@ module.exports = {
               items: [
               //add realtive paths here
               "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
-              "platform_concepts/inbox/inbox-settings/productivitytools/knowledgebase",
+              "platform_concepts/inbox/inbox-settings/productivitytools/collaboration",
               "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
               "platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte",
                      ],
@@ -540,7 +533,22 @@ module.exports = {
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
                    ],
           },
-            "platform_concepts/inbox/inbox-settings/security",
+
+          //account 
+          {
+            type: "category",
+            label: "Account",
+            collapsed: true,
+            items: [
+
+            "platform_concepts/inbox/inbox-settings/account/notification",
+            "platform_concepts/inbox/inbox-settings/account/security",
+            ]
+          },
+
+
+
+
           ],
         },
 
@@ -833,10 +841,11 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/web-widget",
+            "platform_concepts/channelConfiguration/chat-widget-payload",
+            "platform_concepts/channelConfiguration/user-authentication",
             "platform_concepts/channelConfiguration/fuction-widgets",
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
-            "platform_concepts/channelConfiguration/user-authentication",
             "platform_concepts/channelConfiguration/chat-widget-faq",
             // "platform_concepts/channelConfiguration/web",
           ]
@@ -987,45 +996,6 @@ module.exports = {
       ],
     },
     // Prod update ends here.
-
-
-    {
-      type: "category",
-      label: "Insights",
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Inbox",
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Engage",
-      collapsed: true,
-      items: [
-      ],
-    },
-    {
-      type: "category",
-      label: "Channels",
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Integrations",
-      collapsed: true,
-      items: [],
-    },
-    {
-      type: "category",
-      label: "Configurations",
-      collapsed: true,
-      items: [],
-    },
   ],
 
 

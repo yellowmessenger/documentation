@@ -1,5 +1,5 @@
 ---
-sidebar_label: Outbound report
+sidebar_label: Outbound campaign report
 title: Outbound campaign report
 ---
 

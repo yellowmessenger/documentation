@@ -1,5 +1,5 @@
 ---
-title: Contacts (Proactive notifications)
+title: Contacts (send proactive notifications)
 sidebar_label : Contacts 
 ---
 
