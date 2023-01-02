@@ -4,7 +4,7 @@ sidebar_label: Workflow campaign report
 ---
 
 
-Workflow Campaign provides a snapshot of your Ongoing and Completed campaigns. There are multiple places where the analytics is showcased with respect to different information on each.
+Workflow Campaign provides a snapshot of your ongoing and completed campaigns. There are multiple places where the analytics is showcased with respect to different information on each.
 
 ![](https://i.imgur.com/r7QVs9M.png)
 
@@ -15,6 +15,7 @@ On the **Engage** > **Outbound** > **Journeys** page, click on the campaign for 
 
    ![](https://i.imgur.com/SdZ6XOf.png)
 
+***
 
 
 ## 2. View channel-wise report
@@ -29,6 +30,8 @@ To view channel-wise report, click View channel wise statistics.
 * Total notifications sent - Channel wise: This shows the pie chart view of the total notifications and the contribution of each channel in percentages.
 * User count: It shows the detailed break-up of message statuses (Sent, Delivered, Read, and Failed) for each channel.
 
+***
+
 ## 3. Downoad report
 
 To download a campaign report -  
@@ -37,11 +40,15 @@ Post completion of Workflow Campaigns, you can also download the report in a CSV
 
 1. On the Journeys home page, navigate to the campaign and click the More options icon > **Request report**.
 
-   ![](https://i.imgur.com/hLVOJxs.png)
+   ![](https://i.imgur.com/9X62jwu.png)
 
-2. An option to download the report is sent to your Slack. Click on the link.
 
-   ![](https://i.imgur.com/rahrp4A.png)
+2. An option to download the report is sent to the registered email address, and the same is sent on Slack for Yellow.ai employees. 
+
+   Click on the link. You will be redirected to the Download page. You will be prompted to log in if you have not logged in to the Yellow.ai platform.
+   
+   ![](https://i.imgur.com/aVUXWXd.png)
+
 
 3. Click **Download**.
    
