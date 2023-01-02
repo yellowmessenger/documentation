@@ -178,7 +178,6 @@ module.exports = {
         "cookbooks/whatsapp-channel/updates",
       ]
     }, 
-    "cookbooks/Chatwidgets/character-limits-sdk", 
   ],
 },   
 
@@ -846,7 +845,8 @@ module.exports = {
             "platform_concepts/channelConfiguration/fuction-widgets",
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
-            "platform_concepts/channelConfiguration/chat-widget-faq",
+            "platform_concepts/channelConfiguration/chat-widget-faq", 
+            "platform_concepts/channelConfiguration/character-limits-sdk",
             // "platform_concepts/channelConfiguration/web",
           ]
         },

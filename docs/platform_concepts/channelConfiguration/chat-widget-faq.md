@@ -14,19 +14,10 @@ sidebar_label : Chat widget FAQs
 3. **How to enable chat history conversation?**
 
    To enable chat history, follow these steps:
-      1. Ensure that you need to pass ymAuthenticationToken in the config before presenting the bot.
-     ```
-     if (app.data.event && app.data.event.code === 'authenticate') {
-     return app.sendEvent({
-        code: "verifiedUser",
-        data: app.data.event.payload
-     });
-     }
-     ```
-     2. Ensure the **Reset Context for every load** checkbox is unchecked in the dashboard settings for "app.yellowmessenger.com" or "app.yellow.ai".
+     1. Ensure the **Reset Context for every load** checkbox is unchecked in the dashboard settings for "app.yellowmessenger.com" or "app.yellow.ai".
 
      ![](https://i.imgur.com/VVSmy15.png)
-     3. Ensure **Show history of the conersation** is enabled for [cloud.yellow.ai](https://cloud.yellow.ai).
+     2. Ensure **Show history of the conersation** is enabled for [cloud.yellow.ai](https://cloud.yellow.ai).
 
      <img src="https://i.imgur.com/PoHJ0Yh.png)" alt="drawing" width="90%"/>
 
@@ -43,7 +34,7 @@ sidebar_label : Chat widget FAQs
 
      No, the pop-up component appears only when an error message such as "device not connected to network" or "file upload limit exceeded" is displayed.
 
-7. **Is the drop-down option supported in the Chat widget?**
+7. **Is drop-down option supported in the Chat widget?**
    
      Currently, drop-down is not supported for the Chat widget bot.
 
