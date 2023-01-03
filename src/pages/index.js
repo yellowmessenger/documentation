@@ -84,7 +84,7 @@ function Home() {
   return (
     <Layout
       title="Home"
-      description="Add strong authentication, fine-grained authorization in your apps, devices, and APIs."
+      description="Learn about Yellow.ai’s features and capabilities. Find user guides, how-to articles, release notes, FAQs and more."
     >
       <main className={styles.main_wrapper}>
         {/* <div className={styles.buttons}>

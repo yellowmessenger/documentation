@@ -31,3 +31,9 @@ Follow the below steps to generate API key:
 6. Copy the key and use it where you want to make an API call.
 
    ![](https://i.imgur.com/VcDUuHe.png)
+
+***
+
+**What's next?**
+
+* Use the generated API key in [Notification API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine) or other development use cases.
