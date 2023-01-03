@@ -5,36 +5,9 @@ sidebar_label: Time-based Workflow campaign
 
 
 
-## 1. Introduction
-
-The Workflow campaign lets you automate your marketing or collection campaigns by providing you with the leverage to reach out to your customers on multiple channels. You can also configure fallback channels and check the delivery status of messages inside the workflow.
-
-![](https://i.imgur.com/aJ1Espm.png)
-
-:::note
-The Workflow campaign is not an alternative to the Scheduler of app.ym platform.
-:::
-
-### 1.1 Workflow vs. outbound campaigns
-
-You can use Outbound campaigns only with a single channel and all the users will receive the same template. You cannot configure Fallbacks in case of failed notifications. 
-
-With Workflow campaigns,  you can configure multiple channels and add fallbacks to each priority channel. 
-
-### 1.2 Features & benefits
-
-The following are some key benefits of Workflow campaigns - 
-
-* Reach out to the target audience through multiple channels.
-* Build Curated Flows based on the status of the outbound notification
-* Higher chances of user engagement compared to single channel outbound campaigns
-* Check in-flow outbound status.
-* Better fallback handling for failed cases.
-* Ability to call functions and APIs during execution.
 
 
-
-### 1.3 Use cases
+## 1. Use cases
 
 
 1. For Collection use cases, the primary pain point of business is reachability and ensuring that the user is getting information about the pending or upcoming payment. 

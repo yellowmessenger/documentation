@@ -199,10 +199,11 @@ module.exports = {
         {
           type: "category",
           label: "Overview",
+          link: {type: 'doc', id: 'platform_concepts/getting-started'},
           collapsed: true,
           items: [
           
-        "platform_concepts/getting-started",
+     //   "platform_concepts/getting-started",
     "platform_concepts/Getting Started/account-setup",
     "platform_concepts/Getting Started/user-account-settings",  ],
 },
@@ -238,9 +239,10 @@ module.exports = {
     {
       type: "category",
       label: "Studio",
+      link: {type: 'doc', id: 'platform_concepts/studio/overview'},
       collapsed: true,
       items: [
-        "platform_concepts/studio/overview",
+       // "platform_concepts/studio/overview",
         {
           type: "category",
           label: "Build your bot",
@@ -359,11 +361,12 @@ module.exports = {
     {
       type: "category",
       label: "Inbox",
+      link: {type: 'doc', id: 'platform_concepts/inbox/inbox'},
       collapsed: true,
       items: [
 
         //1. Overview 
-        "platform_concepts/inbox/inbox",
+       // "platform_concepts/inbox/inbox",
         //2. monitor doc 
         "platform_concepts/inbox/monitor",
         //3. chats doc 
@@ -562,9 +565,10 @@ module.exports = {
 {
   type: "category",
   label: "User 360",
+  link: {type: 'doc', id: 'platform_concepts/engagement/cdp/overview'},
   collapsed: true,
   items: [
-    "platform_concepts/engagement/cdp/overview",
+   // "platform_concepts/engagement/cdp/overview",
     "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
     {
       type: "category",
@@ -603,6 +607,7 @@ module.exports = {
     {
       type: "category",
       label: "User segments",
+      link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data_segments/segments_overview'},
       collapsed: true,
       items: [
         "platform_concepts/engagement/cdp/user_data_segments/segments_overview",
@@ -635,9 +640,10 @@ module.exports = {
     {
       type: "category",
       label: "Engage",
+      link: {type: 'doc', id: 'platform_concepts/engagement/engage'},
       collapsed: true,
       items: [
-        "platform_concepts/engagement/engage",
+       // "platform_concepts/engagement/engage",
         
         
             
@@ -650,9 +656,10 @@ module.exports = {
             {
               type: "category",
               label: "Templates",
+              link: {type: 'doc', id: 'platform_concepts/engagement/outbound/templates/overview'},
               collapsed: true,
               items: [
-                "platform_concepts/engagement/outbound/templates/overview",
+                //"platform_concepts/engagement/outbound/templates/overview",
                 "platform_concepts/engagement/outbound/templates/whatsapptemplate",
                 "platform_concepts/engagement/outbound/templates/sms-template",
                 "platform_concepts/engagement/outbound/templates/email-template",
@@ -686,6 +693,7 @@ module.exports = {
         {
           type: "category",
           label: "Workflow campaigns",
+          link: {type: 'doc', id: 'platform_concepts/engagement/workflow-intro'},
           collapsed: true,
           items: [
         "platform_concepts/engagement/workflowCampaign",
