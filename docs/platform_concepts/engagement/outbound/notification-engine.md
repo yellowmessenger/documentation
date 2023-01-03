@@ -103,7 +103,7 @@ To send Notification API reports to your preferred recipients:
 | `x-api-key` | **For** `https://app.yellow.ai` **platform**: Get the API key from the path **Configuration** > **Access Control** > **Bot API Key**. <br/>  <br/>**For** `https://cloud.yellow.ai` **platform**: Click the Yellow logo on the top-left corner > Select your bot from the dropdown > On the top-right corner, click **Configure** > On the left sidebar, click **API Keys** (you can see keys only if you are the super admin). |
 
 :::note
-Only users with a Super Admin role can create a Bot API key.
+Only users with a Super Admin role can [create a Bot API key](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/api-keys).
 :::
 
 #### Request Query Parameter
