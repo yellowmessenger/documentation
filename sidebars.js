@@ -110,9 +110,11 @@ module.exports = {
     {
       type: "category",
       label: "Voice",
+      link: {type: 'doc', id: 'cookbooks/voice-as-channel/overview'},
+
       collapsed: true,
       items: [
-        "cookbooks/voice-as-channel/overview",
+       // "cookbooks/voice-as-channel/overview",
         "cookbooks/voice-as-channel/gettingstarted",
         "cookbooks/voice-as-channel/understandingdelays",
 
