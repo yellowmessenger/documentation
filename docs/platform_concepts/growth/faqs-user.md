@@ -18,7 +18,7 @@ A session can be a user session (when there’s user interaction with the bot) o
 New users are first-time visitors.
 </div>
 <div>
-Unique users are the total number of users visiting within any time range (new + repeat users). If a user has visited before, irrespective of the timeframe, they will be considered returning users. New vs returning users are identified based on UIDs. If a UID exists in the database, the user is classified as a returning user.
+Unique users are the total number of users visiting within any time range (new + repeat users). If a user has visited before, irrespective of the timeframe, they will be considered returning users. New vs returning users are identified based on UIDs. If a UID exists in the database, the user is classified as a returning user (UID remains same for a user, unless they log in from different channel or browser).
 </div>
 </details>
 
