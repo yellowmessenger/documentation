@@ -902,6 +902,7 @@ module.exports = {
         "platform_concepts/appConfiguration/microsoft-graph",
         "platform_concepts/appConfiguration/nice-incontact",
         "platform_concepts/appConfiguration/netcore",
+        "platform_concepts/appConfiguration/okta",
         "platform_concepts/appConfiguration/paytm",
         "platform_concepts/appConfiguration/payuBiz",
         "platform_concepts/appConfiguration/power-bi",
