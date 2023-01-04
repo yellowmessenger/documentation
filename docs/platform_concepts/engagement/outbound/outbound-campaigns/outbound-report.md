@@ -43,6 +43,39 @@ You can also see the detailed break-up of the messages sent, delivered, and read
 
 ![](https://i.imgur.com/TtjmhlH.png)
 
+### 1.1 Delivery status for different channels
+
+The following table lists the campaign delivery status for different messaging channels.
+
+Channel | Statuses
+--------- | -------
+WhatsApp | Scheduled, Processing, Sent, Delivered, Read, and Failed.
+SMS | Scheduled, Sent, Delivered, and Failed.
+Email | Scheduled, Processing, Sent, Dropped, Delivery delayed, Bounced, Delivered, Opened, Clicked, Unsubscribed, Spam reports, and Failed.
+Mobile push | Scheduled, Delivered, and Failed.
+
+### 1.2 Message delivery status descriptions
+
+The following table provides descriptions of each delivery status.
+
+Delivery status | Description
+--------------- | -----------
+Triggered | Message has been sent to the downstream service.
+Scheduled | Message has been queued to be sent (single tick on Whatsapp)
+Sent | Message has been sent. For example, single tick on WhatsApp.
+Delivered | Message has been delivered. For example, double tick on WhatsApp. 
+Read | Message has been read. On Whatsapp this is trackable only when end-user has blue ticks - read receipt turned on.
+Triggered | Sent to the communication gateway, the message will be sent from there.
+Dropped | Report from the email server when bounce, unsubscribe, or spam occurs.
+Bounced | An error while sending the email for several reasons such as the email address doesn't exist, the recipient's inbox being full, poor sender reputation, server outages, and so on.
+Unsubscribed | User has opted out of receiving emails from the brand.
+Delivery delayed | Message sending got delayed for reasons such as servers are overloaded, and the recipient's mail server is temporarily offline.
+Spam reports | Email is reported as spam.
+Failed | Unable to send the message.
+
+
+
+
 ***
 
 ## 2. Email report
@@ -73,7 +106,7 @@ UserId | User contact details based on the channel. For example, WhatsApp phone 
 User Details | All the details of the bot user in the current campaign.
 Template ID | Name of the template used to trigger messages for that particular campaign.
 Sender ID | The phone number/email ID from which the messages were sent. Know how to configure sender IDs in Channels [Email](platform_concepts/channelConfiguration/email-outbound.md), [SMS](platform_concepts/channelConfiguration/sms-outbound-india.md), [WhatsApp](platform_concepts/channelConfiguration/whatsapp-configuration.md).
-Status | Message delivery status. <br/>For Whatsapp: *Message has been sent to the downstream service* - The status of the reports will be in TRIGGERED state. <br/>*Message has been delivered* - The status of the reports will be in DELIVERED state.<br/>*Message has been read* - The status of the reports will be in READ state.<br/>*Message has been failed with* - The status of the reports will be in FAILED state
+Status | Message delivery status.  Supported statuses for email: Scheduled, Processing, Sent, Dropped, Delivery delayed, Bounced, Delivered, Opened, Clicked, Unsubscribed, Spam reports, Failed. For details on each status, see [Delivery status descriptions](#12-message-delivery-status-descriptionsn).
 Quick Reply Response | Applicable for interactive templates.<br/>Example : For Whatsapp templates with button, the quick reply response from the button will be captured against each user
 Comments | Delivery state of the particular message.<br/>For FAILED messages, the error description will be shown. 
 Scheduled Time | The start time of the campaign. 
