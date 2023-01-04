@@ -1,6 +1,6 @@
 export const popularSearchItems = [
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate/#3-schedule-a-campaign",    
+    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate",    
     title: "Create and launch WhatsApp notification campaigns",
   },
   {
@@ -12,7 +12,7 @@ export const popularSearchItems = [
     title: "Apply for WhatsApp Notification Templates",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate/#3-schedule-a-campaign",
+    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate",
     title: "What is a WhatsApp notification campaign?",
   },
   {

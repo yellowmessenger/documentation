@@ -1,6 +1,6 @@
 ---
-title: Frequently Asked Questions
-sidebar_label : FAQs
+title: WhatsApp Frequently Asked Questions
+sidebar_label : WhatsApp FAQs
 ---
 
 ### Pre Whatsapp Business account Set up FAQs
