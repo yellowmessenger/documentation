@@ -140,3 +140,11 @@ On the user engagement events table, similar records are rolled up at 30 mins in
 </div>
 </details>
     
+<details>
+<summary> How can I <b>download chat transcripts</b> for the last year? 
+</summary>
+<div>
+Open <b>Insights</b> > <b>Metrics</b>. You can apply 31 days custom time filter of any month before 6 months(or a year) and click <b>Export</b> and select <b>Chat transcripts</b>. 
+
+</div>
+</details>

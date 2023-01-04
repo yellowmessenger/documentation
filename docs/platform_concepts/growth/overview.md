@@ -11,6 +11,7 @@ In this article, you will learn about the 9 common metrics that can be tracked o
 
 ![](https://i.imgur.com/iSPi6HX.png)
 
+> Conversations taking place only after the **welcome message** will be considered for the calculations. 
 
 ## 1. User traffic
 
@@ -26,7 +27,7 @@ The bold line represents the metric for the current duration and the dotted line
 **Calculation logic**: It is the unique count of users from the list of messages exchanged on the bot. It is calculated using the [hyperloglog](https://en.wikipedia.org/wiki/HyperLogLog) algorithm.
 
 
-<img src="https://i.imgur.com/VULdkRo.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/VULdkRo.png" alt="drawing" width="60%"/>
 
 
 
@@ -36,7 +37,7 @@ The bold line represents the metric for the current duration and the dotted line
 
 **Calculation logic**: It is the sum of all the messages exchanged. The count includes user, bot, agent, and notification messages.
 
-<img src="https://i.imgur.com/ox2R4sE.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/ox2R4sE.png" alt="drawing" width="60%"/>
 
 
 ### 1.3 Sessions
@@ -45,7 +46,7 @@ The bold line represents the metric for the current duration and the dotted line
 
 **Calculation logic**: It is the sum of all the sessions created by the user in the selected period.
 
-<img src="https://i.imgur.com/F008VRJ.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/F008VRJ.png" alt="drawing" width="60%"/>
 
 
 
@@ -56,7 +57,7 @@ The bold line represents the metric for the current duration and the dotted line
 **Calculation logic**: It is the average of the total time users conversed with the bot by the total number of sessions. This metric is captured for all the sources.
 
 
-<img src="https://i.imgur.com/ilgYdP9.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/ilgYdP9.png" alt="drawing" width="60%"/>
 
 ## 2. Real-time bot activity
 
@@ -68,7 +69,7 @@ This widget shows the real-time usage activity of the bot and flows which are tr
 
 > This is calculated for all the channels.
 
-<img src="https://i.imgur.com/2TNnwNq.png" alt="drawing" width="50%"/>
+<img src="https://i.imgur.com/2TNnwNq.png" alt="drawing" width="40%"/>
 
 ## 3. User acquisition
 
@@ -80,7 +81,7 @@ The frequency of unique users messaging the bot is segregated by source, and agg
 
 > This is calculated for all the channels.
 
-<img src="https://i.imgur.com/i3QRF6G.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/i3QRF6G.png" alt="drawing" width="50%"/>
 
 
 ### 3.2 Platform / Medium
@@ -90,7 +91,7 @@ The count may be significantly lesser compared to the number of users since othe
 
 > This is calculated for Yellow Web & Mobile.
 
-<img src="https://i.imgur.com/EybHJHP.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/EybHJHP.png" alt="drawing" width="60%"/>
 
 ## 4. Users by country
 
@@ -106,7 +107,7 @@ The captured IP address of the user is translated to a standard location using t
 
 
 
-<img src="https://i.imgur.com/mQK60AQ.png" alt="drawing" width="90%"/>
+<img src="https://i.imgur.com/mQK60AQ.png" alt="drawing" width="60%"/>
 
 ## 5. User activity by time
 
@@ -118,7 +119,7 @@ The frequency of unique users messaging the bot is aggregated in hourly buckets 
 
 > This is calculated for all the channels.
 
-<img src="https://i.imgur.com/T2u93Ao.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/T2u93Ao.png" alt="drawing" width="60%"/>
 
 ## 6. Users by device
 
@@ -130,7 +131,7 @@ The frequency of unique users conversing with the bot is segregated based on the
 
 > This is calculated for Yellow Web & Mobile.
 
-<img src="https://i.imgur.com/rQ2KMcV.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/rQ2KMcV.png" alt="drawing" width="50%"/>
 
 
 
@@ -148,7 +149,7 @@ Bot accuracy shows you the percentage of user messages that are identified by th
 **Calculation**
 BA = [1 - (Unidentified user messages / Total User Messages)]*100
 
-<img src="https://i.imgur.com/2fMs9iy.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/2fMs9iy.png" alt="drawing" width="60%"/>
 
 
 ### 7.2 Flow completion rate
@@ -159,7 +160,7 @@ Flow completion rate is a measure of how many customer intents are being fulfill
 For every flow the user takes, the flow started and the flow completed event is being pushed. The FCR is measured as:
 FCR = [(Flowy Completed Events) / (Flow Started Events)]* 100
 
-<img src="https://i.imgur.com/c1DNijc.png" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/c1DNijc.png" alt="drawing" width="60%"/>
 
 
 
@@ -171,7 +172,7 @@ The deflection rate is the % age of queries that the bot was able to resolve wit
 
 **Deflection rate** = (Bot sessions without agent handover / Total sessions) * 100
 
-<img src="https://lh5.googleusercontent.com/WPfVI_IJMFdrI8hsg_K7TzezDieOFbFzbh3KEXKsH9xEEU0BiU8XeKrePydcgMzGtNg61qS_YkX1dQ-VPNUp5IC4qBRmGB5pSbYiRHL5zdp6KxTJ2JoxzUoyFpSkCyF5iLkOHI6GE2byj9AtfyNyhO8mUOWrqfBJ7ugi1bmhxIeQpuhOH4Tv-oNRUEmKQw" alt="drawing" width="80%"/>
+<img src="https://lh5.googleusercontent.com/WPfVI_IJMFdrI8hsg_K7TzezDieOFbFzbh3KEXKsH9xEEU0BiU8XeKrePydcgMzGtNg61qS_YkX1dQ-VPNUp5IC4qBRmGB5pSbYiRHL5zdp6KxTJ2JoxzUoyFpSkCyF5iLkOHI6GE2byj9AtfyNyhO8mUOWrqfBJ7ugi1bmhxIeQpuhOH4Tv-oNRUEmKQw" alt="drawing" width="60%"/>
 
 :::note
 **Human takeover** rate is now replaced with **Deflection rate** because it is a better indication of the bot's performance.
@@ -181,7 +182,7 @@ The deflection rate is the % age of queries that the bot was able to resolve wit
 
 This widget shows the Customer Satisfaction (CSAT) score given by users for the bot as well as agent sessions. Both of these scores are on a scale of 0 to 5. The graph shows a comparison of user feedback on bot session vs agent session at the day level for the selected timeframe.
 
-<img src="https://lh5.googleusercontent.com/pEwKhxwpRidsJWDxu3mksdvv-hJ3fpl40s1pHCXnCvBO8t4U45ezuJ4uzgLJUQe-4_rMFZAIvLyofJkU_TjkCLjutJnZm9H9qwtCUlLNFIXGunqFH0Qs5jrn2nl5XEncrzm6gyxH2fkzGeBuBzGphiTe-wtz3klVVM7if3Umpn78EnErBcHMRF500CMGow" alt="drawing" width="80%"/>
+<img src="https://lh5.googleusercontent.com/pEwKhxwpRidsJWDxu3mksdvv-hJ3fpl40s1pHCXnCvBO8t4U45ezuJ4uzgLJUQe-4_rMFZAIvLyofJkU_TjkCLjutJnZm9H9qwtCUlLNFIXGunqFH0Qs5jrn2nl5XEncrzm6gyxH2fkzGeBuBzGphiTe-wtz3klVVM7if3Umpn78EnErBcHMRF500CMGow" alt="drawing" width="60%"/>
 
 
 
@@ -196,7 +197,7 @@ For every flow, the completion event is pushed. The count of those completed eve
 > - The detailed report can be viewed by visiting the "Funnels" section.
 > - This is calculated for all the channels.
 
-<img src="https://lh5.googleusercontent.com/X8d0RWHZQtbf_g3-ewNxeh0ALkcshEYA12MFqTtZ3gxTE_6qHFNMsdOHl5SgcfLQfCWhHnOOzs3Mkk8KKnmkDSpOPf-eStlsTyHOrXO1_Uo6h6mRXsbTHcJNuc02EIqo5xYWbgY8gu9200_lUE0RHbkgnlX76oNOCjxJ4L6fK51yGKqJb9djl9Oiq5Pkpg" alt="drawing" width="80%"/>
+<img src="https://lh5.googleusercontent.com/X8d0RWHZQtbf_g3-ewNxeh0ALkcshEYA12MFqTtZ3gxTE_6qHFNMsdOHl5SgcfLQfCWhHnOOzs3Mkk8KKnmkDSpOPf-eStlsTyHOrXO1_Uo6h6mRXsbTHcJNuc02EIqo5xYWbgY8gu9200_lUE0RHbkgnlX76oNOCjxJ4L6fK51yGKqJb9djl9Oiq5Pkpg" alt="drawing" width="60%"/>
 
 
 
