@@ -39,6 +39,6 @@ Agents are considered to be not eligible for assignment when the agent status is
 <details>
 <summary> Will a sticky ticket go into the queue if it is raised when all my agents are occupied? </summary>
 <div>
-- Sticky tickets will not go into the queue even if the group queue is turned ON. When an agent is at maximum concurrency OR busy/away/offline they are considered to be not eligible and will be skipped in consideration. It is recommended to a higher number than the set chat concurrency.
+Sticky tickets will not go into the queue even if the group queue is turned ON. When an agent is at maximum concurrency OR busy/away/offline they are considered to be not eligible and will be skipped in consideration. It is recommended to a higher number than the set chat concurrency.
 </div>
 </details>
