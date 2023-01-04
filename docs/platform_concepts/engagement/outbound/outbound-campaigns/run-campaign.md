@@ -10,7 +10,7 @@ This article provides how to create campaigns for any channel. The process for c
 
 **For WhatsApp**
 
-* You need to have [Whatsapp channel](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel/whatsapp-channel/) configured with a business number.
+* You need to have [Whatsapp channel](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel) configured with a business number.
 * Add only whitelisted templates (approved templates) in the [templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview) module.
 
 

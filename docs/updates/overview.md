@@ -103,7 +103,7 @@ EPIC EHR is a cloud-based EHR that contains all the information related to the p
 
 Previously, capturing the quick reply event and configuring a bot flow to take the appropriate next action on WhatsApp took a lot of time and effort. To make this task easier, the Template Manager module is now enhanced to assign action (Trigger Journey, Trigger NLP, Send an event) to each of the Quick Reply buttons.
 
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate/#11-add-ctasquick-replies).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#12-add-quick-replies-in-whatsapp-template).
 
 -------
 
