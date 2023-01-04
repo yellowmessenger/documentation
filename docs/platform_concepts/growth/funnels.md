@@ -80,9 +80,10 @@ Reasons for Low FCR are listed in this tab to understand why certain flow comple
 
 **Filter for a period**
 - All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
-- If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
+- If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range.  
 
-![](https://i.imgur.com/7Q5UeZq.png)
+<img src="https://i.imgur.com/7Q5UeZq.png" alt="drawing" width="60%"/>
+
 
 **Export data**
 
@@ -96,5 +97,5 @@ Reasons for Low FCR are listed in this tab to understand why certain flow comple
 
 - These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
 
-![](https://i.imgur.com/y7m028W.png)
+<img src="https://i.imgur.com/y7m028W.png" alt="drawing" width="60%"/>
 :::

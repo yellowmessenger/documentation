@@ -12,6 +12,8 @@ In this article, you will understand:
     - [Where to find Inbox?](#i1)
     - [What are the functionalities of Inbox?](#i2)
     - [Where to find all the notifications/updates?](#i3)
+    - [Notifications in Inbox](#i4)
+    - [How does the Orchestrator bot feature work in Inbox?](#i5)
 3. [How to provide/get access to become an Inbox live agent (support agent)?](#supportagents)
 4. [What are the default agent statuses?](#agentstatus)
 5. [Try a demo of the live agent module](#try)
@@ -107,6 +109,15 @@ Based on the [access](#supportagents) you have (Inbox Admin, Supervisor, or Agen
 :::note
 You can configure notifications on the settings page. Click [here](./inbox-settings/account/notification.md) to learn more. 
 :::
+
+
+
+### <a name="i5"></a> 1.5 Orchestrator bot feature 
+
+With the orchestrator bot feature, you can create a parent bot and add child bots(available bots in the same subscription) to it.   
+When **Unify inbox to all child bots** is selected, support tickets received by the child bots will be available in the parent bot's Inbox. You can have a unified inbox to reply to all customer queries. 
+
+![](https://i.imgur.com/WsKX6Ph.png)
 
 ---------
 

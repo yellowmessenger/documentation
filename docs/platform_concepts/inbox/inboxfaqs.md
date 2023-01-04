@@ -27,6 +27,8 @@ Click <a href="[link](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-
 </details>
   
 
+
+
 **Sticky agents** 
 
 <details>
