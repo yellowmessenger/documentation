@@ -95,6 +95,15 @@ To send Notification API reports to your preferred recipients:
 
 `https://cloud.yellow.ai/api/engagements/notifications/v2/push?bot={botId}`
 
+| Region Code | Region | Host |
+| --- | --- | --- |
+| R0 | India - Azure Central India | https://cloud.yellow.ai |
+| R1 | MEA - Azure UAE North | https://r1.cloud.yellow.ai |
+| R2 | Jakarta - GCP Asia-Southeast2 | https://r2.cloud.yellow.ai |
+| R3 | Singapore - AWS ap-Southeast-1 | https://r3.cloud.yellow.ai |
+| R4 | USA - AWS us-west-2 | https://r4.cloud.yellow.ai |
+| R5 | Europe - AWS eu-west-1 | https://r5.cloud.yellow.ai |
+
 **Headers**
 
 | **Header** | **Description/Value** |
