@@ -321,9 +321,9 @@ You can view data regarding the campaigns you execute through the **Insights** m
 
 
 
-## 4. Examples
-### 4.1 Normal Text  Notification
-#### CURL request
+## 5. Examples
+### 5.1 Normal Text  Notification
+#### 1. CURL request
 
 ```json
 curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=BOT_ID_HERE' \
@@ -346,12 +346,12 @@ curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/
 }'
 ```
 
-#### Sample
+#### 2. Sample
 <img src="https://i.imgur.com/YwkQ7Xr.png" alt="drawing" width="70%"/>
 
 
-### 4.2 Image Notification
-#### CURL request
+### 5.2 Image Notification
+#### 1. CURL request
 ```json
 curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=BOT_ID_HERE' \
 --header 'x-auth-token: TOKEN' \
@@ -378,8 +378,8 @@ curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/
 }'
 ```
 
-### 4.3 File Notification
-#### CURL request
+### 5.3 File Notification
+#### 1. CURL request
 ```json
 curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/notifications/v2/push?bot=BOT_ID_HERE' \
 --header 'x-auth-token: TOKEN' \
@@ -406,6 +406,6 @@ curl --location --request POST 'https://app.yellowmessenger.com/api/engagements/
 }'
 ```
 
-#### Sample
+#### 2. Sample
 ![](https://i.imgur.com/YLbGCo7.png)
 

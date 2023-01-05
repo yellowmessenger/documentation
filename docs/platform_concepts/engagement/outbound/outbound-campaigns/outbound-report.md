@@ -52,7 +52,7 @@ Channel | Statuses
 WhatsApp | Scheduled, Processing, Sent, Delivered, Read, and Failed.
 SMS | Scheduled, Sent, Delivered, and Failed.
 Email | Scheduled, Processing, Sent, Dropped, Delivery delayed, Bounced, Delivered, Opened, Clicked, Unsubscribed, Spam reports, and Failed.
-Mobile push | Scheduled, Delivered, and Failed.
+Mobile push | Scheduled, Sent, Delivered, Read, and Failed.
 
 ### 1.2 Message delivery status descriptions
 
@@ -72,7 +72,6 @@ Unsubscribed | User has opted out of receiving emails from the brand.
 Delivery delayed | Message sending got delayed for reasons such as servers are overloaded, and the recipient's mail server is temporarily offline.
 Spam reports | Email is reported as spam.
 Failed | Unable to send the message.
-
 
 
 
@@ -106,7 +105,7 @@ UserId | User contact details based on the channel. For example, WhatsApp phone 
 User Details | All the details of the bot user in the current campaign.
 Template ID | Name of the template used to trigger messages for that particular campaign.
 Sender ID | The phone number/email ID from which the messages were sent. Know how to configure sender IDs in Channels [Email](platform_concepts/channelConfiguration/email-outbound.md), [SMS](platform_concepts/channelConfiguration/sms-outbound-india.md), [WhatsApp](platform_concepts/channelConfiguration/whatsapp-configuration.md).
-Status | Message delivery status.  Supported statuses for email: Scheduled, Processing, Sent, Dropped, Delivery delayed, Bounced, Delivered, Opened, Clicked, Unsubscribed, Spam reports, Failed. For details on each status, see [Delivery status descriptions](#12-message-delivery-status-descriptionsn).
+Status | Message delivery status.  Supported statuses for email: Scheduled, Processing, Sent, Dropped, Delivery delayed, Bounced, Delivered, Opened, Clicked, Unsubscribed, Spam reports, Failed. <br/>To know about each status, see [Delivery status descriptions](#12-message-delivery-status-descriptionsn).
 Quick Reply Response | Applicable for interactive templates.<br/>Example : For Whatsapp templates with button, the quick reply response from the button will be captured against each user
 Comments | Delivery state of the particular message.<br/>For FAILED messages, the error description will be shown. 
 Scheduled Time | The start time of the campaign. 
