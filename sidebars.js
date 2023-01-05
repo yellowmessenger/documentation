@@ -142,17 +142,8 @@ module.exports = {
       label: "WhatsApp",
       collapsed: true,
       items: [
-        {
-          type: "category",
-          label: "Introduction",
-          collapsed: true,
-          items: [
-            "cookbooks/whatsapp-channel/whatsapp-channel",
-            "cookbooks/whatsapp-channel/bot-basics",
-            
-          ],
-        },
-        {
+       
+        /*{
           type: "category",
           label: "Channel guide",
           collapsed: true,
@@ -160,8 +151,8 @@ module.exports = {
             "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
             "cookbooks/whatsapp-channel/wa-migration"
           ],
-        },
-        {
+        }, */
+       /* {
           type: "category",
           label: "Things to know",
           collapsed: true,
@@ -171,9 +162,8 @@ module.exports = {
             "cookbooks/whatsapp-channel/approval",
             "cookbooks/whatsapp-channel/wa-capturing-qr"
           ],
-        },
+        },*/
         "cookbooks/whatsapp-channel/building-flows",
-        "cookbooks/whatsapp-channel/faqs",
         "cookbooks/whatsapp-channel/testing",
         "cookbooks/whatsapp-channel/updates",
       ]
@@ -811,6 +801,16 @@ module.exports = {
           label: "Messaging channels",
           collapsed: true,
           items: [
+            {
+              type: "category",
+              label: "WhatsApp channel",
+              link: {type: 'doc', id: 'cookbooks/whatsapp-channel/whatsapp-channel'},
+              collapsed: true,
+              items: [
+            "platform_concepts/channelConfiguration/whatsapp-configuration",
+            "cookbooks/whatsapp-channel/wa-migration",
+            "cookbooks/whatsapp-channel/faqs",
+              ]},
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
@@ -821,7 +821,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/slack2",
             "platform_concepts/channelConfiguration/teams",
             "platform_concepts/channelConfiguration/telegram",
-            "platform_concepts/channelConfiguration/whatsapp-configuration",
+            
           ]
         },
         {
