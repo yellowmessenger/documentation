@@ -15,7 +15,7 @@ A company handles queries on footwear and electronic accessories separately by c
 
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen) to learn more about the chat ticket screen. 
 
-#### Enable Collaborator 
+## 1. Configure collaboration
 
 To enable collaborators for chat tickets, follow the below steps: 
 1. Open **Inbox** > **Settings**. 
@@ -29,6 +29,6 @@ To enable collaborators for chat tickets, follow the below steps:
 
 4. Enabling the collaborator toggle on the inbox settings will enable a **Collaborator** field on your chat screen- user details section where you can add collaborators by selecting the names from the dropdown menu.
 
-<img src="https://i.imgur.com/Ec8jjPi.png" alt="drawing" width="30%"/>
+<img src="https://i.imgur.com/Ec8jjPi.png" alt="drawing" width="70%"/>
 
 
