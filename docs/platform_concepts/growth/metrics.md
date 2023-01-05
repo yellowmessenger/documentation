@@ -31,7 +31,7 @@ Select any of the below headings to view the graphs for the selected time range.
 
 * **Messages**: This is the number of messages exchanged between the bot, user, and agent. These can be filtered for:
 
-<img src="https://i.imgur.com/X09IfdT.png" alt="drawing" width="40%"/>
+<img src="https://i.imgur.com/X09IfdT.png" alt="drawing" width="30%"/>
 
 
 
@@ -50,7 +50,7 @@ This widget shows the distribution between new users and old users visiting the 
 > This is calculated for all the channels.
 
 
-<img src="https://i.imgur.com/QldTqc7.png" alt="drawing" width="70%"/>
+<img src="https://i.imgur.com/QldTqc7.png" alt="drawing" width="50%"/>
 
 ### 1.3 User retention trend
 
@@ -100,7 +100,6 @@ The total count and percentage of users is shown for the specified date range ba
 - If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
 
 <img src="https://i.imgur.com/FzSz7IB.png" alt="drawing" width="40%"/>
-
 
 
 

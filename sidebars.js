@@ -110,9 +110,11 @@ module.exports = {
     {
       type: "category",
       label: "Voice",
+      link: {type: 'doc', id: 'cookbooks/voice-as-channel/overview'},
+
       collapsed: true,
       items: [
-        "cookbooks/voice-as-channel/overview",
+       // "cookbooks/voice-as-channel/overview",
         "cookbooks/voice-as-channel/gettingstarted",
         "cookbooks/voice-as-channel/understandingdelays",
 
@@ -362,9 +364,10 @@ module.exports = {
         {
           type: "category",
           label: "Chat Tickets",
+          link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
           collapsed: true,
           items: [
-            "platform_concepts/inbox/chats/getstartedwithlivechat",
+           // "platform_concepts/inbox/chats/getstartedwithlivechat",
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/chats/videocall",
@@ -376,9 +379,10 @@ module.exports = {
         {
           type: "category",
           label: "Email Tickets",
+          link: {type: 'doc', id: 'platform_concepts/inbox/tickets/setupandconfig'},
           collapsed: true,
           items: [
-            "platform_concepts/inbox/tickets/setupandconfig",
+           // "platform_concepts/inbox/tickets/setupandconfig",
             "platform_concepts/inbox/tickets/emailticketstatus",
             "platform_concepts/inbox/tickets/manualticket",
             "platform_concepts/inbox/tickets/searchandfilter",
@@ -410,9 +414,11 @@ module.exports = {
             {
               type: "category",
               label: "Reports",
+              link: {type: 'doc', id: 'platform_concepts/inbox/analytics-reports/reports/reports'},
+
               collapsed: true,
               items: [
-            "platform_concepts/inbox/analytics-reports/reports/reports",
+           // "platform_concepts/inbox/analytics-reports/reports/reports",
             {
               type: "category",
               label: "Chats",
@@ -440,9 +446,10 @@ module.exports = {
         {
           type: "category",
           label: "Knowledgebase",
+          link: {type: 'doc', id: 'platform_concepts/inbox/knowledge-base/kboverview'},
           collapsed: true,
           items: [
-            "platform_concepts/inbox/knowledge-base/kboverview",
+           // "platform_concepts/inbox/knowledge-base/kboverview",
             "platform_concepts/inbox/knowledge-base/edit-publish-articles",
             "platform_concepts/inbox/knowledge-base/managingcategories",
                  ],           
@@ -752,6 +759,8 @@ module.exports = {
 {
   type: "category",
   label: "Insights",
+  link: {type: 'doc', id: 'platform_concepts/growth/introductiontoinsights'},
+
   collapsed: true,
   items: [
     "platform_concepts/growth/overview",
@@ -902,6 +911,7 @@ module.exports = {
         "platform_concepts/appConfiguration/microsoft-graph",
         "platform_concepts/appConfiguration/nice-incontact",
         "platform_concepts/appConfiguration/netcore",
+        "platform_concepts/appConfiguration/okta",
         "platform_concepts/appConfiguration/paytm",
         "platform_concepts/appConfiguration/payuBiz",
         "platform_concepts/appConfiguration/power-bi",
