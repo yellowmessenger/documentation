@@ -49,6 +49,81 @@ sidebar_label: Studio FAQs
 </details>
 
 <details>
+ <summary>I have an API response through which I’m getting a product image as a .png (few kb in size) Can I pass that into a Carousel/Image node to dynamically change the image?
+</summary>
+ <div>
+  <div>Yes, use the following code snippet in the API parse function.
+
+```
+return new Promise(resolve => {
+        const imageVariable = 
+        [{
+            "options": {  
+                "caption": { "type": 'random' },
+            },
+            "url": "insertURL"
+        }]
+        resolve(imageVariable);
+    }); 
+```
+You can also do this in the carousal by [creating your own custom/dynamic object](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#dynamic-carousels) (depending on the use case for which you select the node)​
+
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>The options in a dynamic Whatsapp list always leads to the fallback flow. How can we tweak this?
+</summary>
+
+ You can use the [Condition](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) node to redirect each option to the respective flow.
+ <div>
+  <div>
+
+1. Insert the condition node in your flow.
+2. Populate the node with button values.
+
+![](https://i.imgur.com/FYETzej.png)
+
+4. Connect each button to the flow that has to be executed if that button is clicked.
+
+![](https://i.imgur.com/SysoleQ.png)
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Can we increase the pagination size limit in Database Node?
+</summary>
+ <div>
+  <div>
+  
+  You can increase the size limit upto 25, to increase beyond that, while setting the <b>Pagination</b>, instead of <b>Text</b>, use <b>Variables</b> with a static value. <b>Variables</b> let you increase the size limit upto 200.
+
+
+![](https://i.imgur.com/Dgla9UJ.png)
+
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>I am able to create the same variable in Journey and Global but when I create the first global variable, I am unable to create the journey variable with same name
+</summary>
+ <div>
+  <div>Variables should not have the same name. If they do, it will fetch the value for which it is assigned based on the assigned priorities from global to local.
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
  <summary>Why am I getting a fallback message even when WhatsApps list message is configured?
 </summary>
  <div>
@@ -265,3 +340,5 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
   <br/>
    </div>
 </details>
+
+
