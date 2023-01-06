@@ -84,6 +84,14 @@ sidebar_label : Chat widget FAQs
    </div>
 </details>
 
+<details>
+ <summary>Is speech-to-text (STT) feature supported in the chat widget?</summary>
+ <div>
+  <br/>
+  <div>Yes, STT feature is supported for the chat widget.</div>
+   </div>
+</details>
+
 * **How to enable chat history conversation?**
 
    To enable chat history, follow these steps:
@@ -101,8 +109,7 @@ sidebar_label : Chat widget FAQs
         data: app.data.event.payload
      });
      }
-     ```
-
+     ``
 
      
      
