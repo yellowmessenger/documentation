@@ -84,24 +84,30 @@ sidebar_label : Chat widget FAQs
    </div>
 </details>
 
-* **How to enable chat history conversation?**
+<details>
+ <summary>Is speech-to-text (STT) feature supported in the chat widget?</summary>
+ <div>
+  <br/>
+  <div>Yes, STT feature is supported for the chat widget.</div>
+   </div>
+</details>
 
-   To enable chat history, follow these steps:
-     1. Ensure **Show history of the conersation** is enabled for [cloud.yellow.ai](https://cloud.yellow.ai).
+<details>
+ <summary>How to enable chat history conversation?</summary>
+ <div>
+  <br/>
+  <div>To enable chat history, follow these steps:<br/>1. Ensure <b>Show history of the conersation</b> is enabled for <a href="https://cloud.yellow.ai">cloud.yellow.ai</a>. <br/> <img src= "https://i.imgur.com/PoHJ0Yh.png"/> <br/> 2. Ensure the <b>Reset Context for every load</b> checkbox is unchecked in the dashboard settings for "app.yellowmessenger.com" or "app.yellow.ai". <br/> <img src= "https://i.imgur.com/VVSmy15.png"/><br/> 3. Ensure that you need to pass ymAuthenticationToken in the config before presenting the bot.<br/>
+     
 
-     <img src="https://i.imgur.com/PoHJ0Yh.png)" alt="drawing" width="90%"/>
-     2. Ensure the **Reset Context for every load** checkbox is unchecked in the dashboard settings for "app.yellowmessenger.com" or "app.yellow.ai".
-
-     ![](https://i.imgur.com/VVSmy15.png)
-     3. Ensure that you need to pass ymAuthenticationToken in the config before presenting the bot.
-     ```
      if (app.data.event && app.data.event.code === 'authenticate') {
      return app.sendEvent({
         code: "verifiedUser",
         data: app.data.event.payload
      });
-     }
-     ```
+     }     
+</div>
+   </div>
+</details>
 
 
      
