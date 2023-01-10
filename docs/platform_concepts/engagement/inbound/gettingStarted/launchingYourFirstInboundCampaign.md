@@ -1,6 +1,6 @@
 ---
 title: Create & manage Inbound campaign
-sidebar_label: Inbound campaign
+sidebar_label: Create Inbound campaign
 ---
 
 
@@ -60,7 +60,23 @@ At any point you can click
 
    ![](https://i.imgur.com/Tl4n4zU.png)
 
-  
+Option | Description
+-------- | ---------
+Cookie | Show the campaign either to visitors who have or do not have a specific cookie attached to them. You will have to define the cookies using *key-value* pairs.
+CTA | Show the campaign when the visitor clicked on a specific page element. Use the selector and define the *key-value* pair.
+Custom Event | Show the campaign based on custom events. 
+Device | The device from which the visitor accessed the website - mobile, desktop, or tablet.
+Element Clicked | Show the campaign when the user clicked on a specific element on the page. Format: `key=value` <br/>You can use the element's `id` or `class`. Example: `class=ri-thumb-up-fill` or `id=liked_docs`. ![](https://i.imgur.com/NX1zR7h.png)
+Element hovered over | Show the campaign when the vision hovered on a specific element of the page. Use the selector and define the *key-value* pair. Format: `key=value` <br/>You can use the element's `id` or `class`. Example: `class=ri-thumb-up-fill` or `id=liked_docs`. <br/>Supported operators: is and isn't.
+Referrer | The source (URL) from which the visitor has redirected to the current page.
+Site visits | Shows the campaign based on the number of times the user visted the site.
+Number of site visits | The number of times a user has visited the specified website site (It considers sessions, not page views).
+On exit intent | Show the campaign when a visitors's cursor leaves the window on the top half of the screen (an indication of changing the browser tab or closing the current tab/window).
+Seconds on page | Show the campaign if the visitor has been on the page for a certain number of seconds. 
+Seconds of inactivity | Show the campaign when the visitor is inactive for certain seconds. 
+Scroll percentage | Show the campaign when a visitor scrolls down X percent of the page.
+URL | Show the campaign only when visitors are on a particular URL or if the URL includes/excludes a specific keyword. You can use *is/is not*, or *includes/ does not include*. <br/>You can also use  **Wildcard (*)**, an asterisk to mention any keyword in the URL that is not specific. For example, the URL **http://yellow.ai/*/blog** considers any value in the URL in place of *.![](https://i.imgur.com/peathJj.png)
+
 6. In **Frequency**, define how frequently you want a visitor to see the campaign.
 
    ![](https://i.imgur.com/yCgvhP8.png)
