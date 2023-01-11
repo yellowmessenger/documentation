@@ -22,7 +22,7 @@ Once you have the scope of your bot ready, depending on the use case, the bot mu
 ![](https://i.imgur.com/z6dx9sS.jpg)
 
 
-Suppose the bot is used as an official portal to apply for leaves or check salary, bot must converse with the user and fetch the information from all the steps ([Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes)).
+Suppose the bot is used as an official portal to apply for leaves or check salary, bot must converse with the user and fetch the information from all the [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes).
 
 
 In this article, you will learn:

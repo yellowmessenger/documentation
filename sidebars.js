@@ -879,68 +879,213 @@ module.exports = {
         "platform_concepts/channelConfiguration/fb-lead-ads",
         "platform_concepts/channelConfiguration/fb-workplace",
         "platform_concepts/channelConfiguration/generic-webhook",
+        "platform_concepts/channelConfiguration/sunshine",
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },
     {
       type: "category",
       label: "Integrations",
-      
+      link: {type: 'doc', id: 'platform_concepts/appConfiguration/overview'},
       collapsed: true,
       items: [
-        "platform_concepts/appConfiguration/overview",
-        "platform_concepts/appConfiguration/amazon-livechat",
-        "platform_concepts/appConfiguration/avaya",
-        "platform_concepts/appConfiguration/aws-s3",
-        "platform_concepts/appConfiguration/azure-ad",
-        "platform_concepts/appConfiguration/bamboohr",
-        "platform_concepts/appConfiguration/billdesk",
-        "platform_concepts/appConfiguration/camspay",
-        "platform_concepts/appConfiguration/cashfree",
-        "platform_concepts/appConfiguration/clevertap",
-        "platform_concepts/appConfiguration/customliveagent",
-        "platform_concepts/appConfiguration/epic-fhir",
-        "platform_concepts/appConfiguration/freshchat",
-        "platform_concepts/appConfiguration/freshservice",
-        "platform_concepts/appConfiguration/freshteam",
-        "platform_concepts/appConfiguration/genesys-cloud-livechat",
-        "platform_concepts/appConfiguration/genesys",
-        "platform_concepts/appConfiguration/google-calendar",
-        "platform_concepts/appConfiguration/google-sheets",
-        "platform_concepts/appConfiguration/hubspot-crm",
-        "platform_concepts/appConfiguration/instamojo",
-        "platform_concepts/appConfiguration/intercom-livechat",
-        "platform_concepts/appConfiguration/jira",
-        "platform_concepts/appConfiguration/kapture-crm",
-        "platform_concepts/appConfiguration/leadSquared-wa-connector",
-        "platform_concepts/appConfiguration/livechat-integration",
-        "platform_concepts/appConfiguration/locobuzz-livechat",
-        "platform_concepts/appConfiguration/magento",
-        "platform_concepts/appConfiguration/microsoft-dynamics",
-        "platform_concepts/appConfiguration/microsoft-graph",
-        "platform_concepts/appConfiguration/nice-incontact",
-        "platform_concepts/appConfiguration/netcore",
-        "platform_concepts/appConfiguration/okta",
-        "platform_concepts/appConfiguration/paytm",
-        "platform_concepts/appConfiguration/payuBiz",
-        "platform_concepts/appConfiguration/power-bi",
-        "platform_concepts/appConfiguration/razorpay",
-        "platform_concepts/appConfiguration/sap-io",
-        "platform_concepts/appConfiguration/salesforcelivechat",
-        "platform_concepts/appConfiguration/salesforce-service-cloud",
-        "platform_concepts/appConfiguration/service-now",
-        "platform_concepts/appConfiguration/sftp",
-        "platform_concepts/appConfiguration/shopify",
-        "platform_concepts/appConfiguration/stripe",
-        "platform_concepts/appConfiguration/talisma",
-        "platform_concepts/appConfiguration/twilio-verify",
-        "platform_concepts/appConfiguration/successfactors",
-        "platform_concepts/appConfiguration/webengage",
-        "platform_concepts/appConfiguration/zalo",
-        "platform_concepts/appConfiguration/zendesk-sunshine",
-        "platform_concepts/appConfiguration/zendesk",
-        "platform_concepts/appConfiguration/zoho-crm",
-        "platform_concepts/appConfiguration/zoho-live-chat",
+
+        {
+          type: "category",
+          label: "All",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/amazon-livechat",
+            "platform_concepts/appConfiguration/azure-ad",
+            "platform_concepts/appConfiguration/billdesk",
+            "platform_concepts/appConfiguration/camspay",
+            "platform_concepts/appConfiguration/cashfree",
+            "platform_concepts/appConfiguration/clevertap",
+            "platform_concepts/appConfiguration/customliveagent",
+            "platform_concepts/appConfiguration/epic-fhir",
+            "platform_concepts/appConfiguration/freshdesk",
+            "platform_concepts/appConfiguration/freshchat",
+            "platform_concepts/appConfiguration/freshservice",
+            "platform_concepts/appConfiguration/freshteam",
+            "platform_concepts/appConfiguration/genesys",
+            "platform_concepts/appConfiguration/genesys-cloud-livechat",
+            "platform_concepts/appConfiguration/google-calendar",
+            "platform_concepts/appConfiguration/google-sheets",
+            "platform_concepts/appConfiguration/hubspot-crm",
+            "platform_concepts/appConfiguration/instamojo",
+            "platform_concepts/appConfiguration/intercom-livechat",
+            "platform_concepts/appConfiguration/jira",
+            "platform_concepts/appConfiguration/kapture-crm",
+            "platform_concepts/appConfiguration/leadSquared-wa-connector",
+            "platform_concepts/appConfiguration/locobuzz-livechat",
+            "platform_concepts/appConfiguration/magento",
+            "platform_concepts/appConfiguration/microsoft-dynamics",
+            "platform_concepts/appConfiguration/microsoft-graph",
+            "platform_concepts/appConfiguration/netcore",
+            "platform_concepts/appConfiguration/nice-incontact",
+            "platform_concepts/appConfiguration/okta",
+            "platform_concepts/appConfiguration/paytm",
+            "platform_concepts/appConfiguration/payuBiz",
+            "platform_concepts/appConfiguration/razorpay",
+            "platform_concepts/appConfiguration/salesforce-service-cloud",
+            "platform_concepts/appConfiguration/salesforcelivechat",
+            "platform_concepts/appConfiguration/sap-io",
+            "platform_concepts/appConfiguration/successfactors",
+            "platform_concepts/appConfiguration/service-now",
+            "platform_concepts/appConfiguration/sftp",
+            "platform_concepts/appConfiguration/shopify",
+            "platform_concepts/appConfiguration/stripe",
+            "platform_concepts/appConfiguration/talisma",
+            "platform_concepts/appConfiguration/twilio-verify",
+            "platform_concepts/appConfiguration/webengage",
+            "platform_concepts/appConfiguration/zoho-live-chat",
+            "platform_concepts/appConfiguration/zoho-crm",
+            "platform_concepts/appConfiguration/bamboohr",
+        
+          ],
+        },
+
+
+        {
+          type: "category",
+          label: "CRM",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/epic-fhir",
+            "platform_concepts/appConfiguration/hubspot-crm",
+            "platform_concepts/appConfiguration/microsoft-dynamics",
+            "platform_concepts/appConfiguration/salesforce-service-cloud",
+            "platform_concepts/appConfiguration/zoho-crm",
+          ],
+        },
+
+        {
+          type: "category",
+          label: "ITSM",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/freshservice",
+            "platform_concepts/appConfiguration/service-now",
+          ],
+        },
+
+        {
+          type: "category",
+          label: "Payments",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/billdesk",
+            "platform_concepts/appConfiguration/camspay",
+            "platform_concepts/appConfiguration/cashfree",
+            "platform_concepts/appConfiguration/instamojo",
+            "platform_concepts/appConfiguration/paytm",
+            "platform_concepts/appConfiguration/payuBiz",
+            "platform_concepts/appConfiguration/razorpay",
+            "platform_concepts/appConfiguration/stripe",
+
+
+          ],
+        },
+
+        {
+          type: "category",
+          label: "HR",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/freshteam",
+            "platform_concepts/appConfiguration/successfactors",
+          ],
+        },
+
+        {
+          type: "category",
+          label: "Tools & Utilities",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/aws-s3",
+            "platform_concepts/appConfiguration/azure-ad",
+            "platform_concepts/appConfiguration/clevertap",
+            "platform_concepts/appConfiguration/freshdesk",
+            "platform_concepts/appConfiguration/google-calendar",
+            "platform_concepts/appConfiguration/google-sheets",
+            "platform_concepts/appConfiguration/jira",
+            "platform_concepts/appConfiguration/leadSquared-wa-connector",
+            "platform_concepts/appConfiguration/magento",
+            "platform_concepts/appConfiguration/microsoft-graph",
+            "platform_concepts/appConfiguration/netcore",
+            "platform_concepts/appConfiguration/sftp",
+            "platform_concepts/appConfiguration/twilio-verify",
+            "platform_concepts/appConfiguration/webengage",
+
+          ],
+        },
+
+        {
+          type: "category",
+          label: "Retail/ecommerce",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/shopify",
+          ],
+        },
+
+        {
+          type: "category",
+          label: "Live Chat",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/amazon-livechat",
+            "platform_concepts/appConfiguration/avaya",
+            "platform_concepts/appConfiguration/customliveagent",
+            "platform_concepts/appConfiguration/freshchat",
+            "platform_concepts/appConfiguration/genesys",
+            "platform_concepts/appConfiguration/genesys-cloud-livechat",
+            "platform_concepts/appConfiguration/intercom-livechat",
+            "platform_concepts/appConfiguration/kapture-crm",
+            "platform_concepts/appConfiguration/locobuzz-livechat",
+            "platform_concepts/appConfiguration/nice-incontact",
+            "platform_concepts/appConfiguration/salesforcelivechat",
+            "platform_concepts/appConfiguration/talisma",
+            "platform_concepts/appConfiguration/zoho-live-chat",
+
+          ],
+        },
+        
+        {
+          type: "category",
+          label: "Live chat on app.yellow.ai",
+          collapsed: true,
+          items: [
+            "platform_concepts/appConfiguration/livechat-integration",
+          ],
+        },
+       
+        
+        
+        
+        
+      
+        
+       
+        
+        
+       
+        
+        
+        
+        
+        
+       
+        
+        
+       
+        
+
+       
+        
+        
+        
+        
         "platform_concepts/appConfiguration/exposing-integration-to-app",
       ],
     },
