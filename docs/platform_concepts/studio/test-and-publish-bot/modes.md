@@ -21,7 +21,7 @@ In the **Live** mode, you can
 
 * View the analytics of live users in the [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview/) module
 * Run campaigns in [Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage). 
-* Attend live customer queries as an agent in [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox).
+* Attend live customer queries as an agent in [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/).
 
 ![](https://i.imgur.com/4PLfGcE.png)
 

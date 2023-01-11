@@ -350,5 +350,5 @@ To access the weather description above, you can see it's inside an array [ ] an
 ---
 **What Next?**
 
-* Try building a flow with [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) that store and display variables. 
+* Try building a flow with [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) that store and display variables. 
 * Use variables in [code](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) and [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).

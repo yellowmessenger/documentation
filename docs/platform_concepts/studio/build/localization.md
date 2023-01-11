@@ -162,4 +162,4 @@ Consider a use-case **without**  **Translation**: Variables are accessed directl
 
   
 
-* Add translations to the [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) and see how it impacts the bot conversation.
+* Add translations to the [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) and see how it impacts the bot conversation.
