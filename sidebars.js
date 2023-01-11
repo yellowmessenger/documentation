@@ -52,6 +52,7 @@ module.exports = {
       items: [
         "cookbooks/marketplace-templates/edtech-template",
         "cookbooks/marketplace-templates/ecommerce-template",
+        "cookbooks/marketplace-templates/saas",
       ],
     }, 
     {

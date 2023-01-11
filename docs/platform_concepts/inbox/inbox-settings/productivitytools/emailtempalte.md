@@ -11,7 +11,7 @@ In this article, you will learn:
 
 #### <a name="1"></a> Email Templates 
 
-With the email templates feature, inbox admins can create branding templates that can be used by the inbox agents to establish that the agent chats follow the branding guidelines.  It can be sent to the customers directly while creating and responding to the [email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/email-ticketing).  These pre-made Email templates can be designed with complete details (without the agent's input) or admins can allow the agents to add their responses to the template. 
+With the email templates feature, inbox admins can create branding templates that can be used by the inbox agents to establish that the agent chats follow the branding guidelines.  It can be sent to the customers directly while creating and responding to the [email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#--1-email-tickets-introduction).  These pre-made Email templates can be designed with complete details (without the agent's input) or admins can allow the agents to add their responses to the template. 
 
 
 

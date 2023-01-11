@@ -4,7 +4,7 @@ sidebar_label : Ticket archive
 ---
 
 
-> To learn how to generate Ticket Archive Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
+> To learn how to generate Ticket Archive Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
 
 :::info
 Only an admin can download reports.

@@ -5,7 +5,7 @@ sidebar_label : Groups
 
 
 
-After the agents are added or provided with [inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#21-add-support-agent-on-the-platform), they can be segregated into Groups on team Group settings.
+After the agents are added or provided with [inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox), they can be segregated into Groups on team Group settings.
 It is essential to divide agents into groups to assign different types of tickets for different use cases.   
 For example, if there are 2 categories - Group support and group escalation, agents must be divided into different groups based on the respective logic. 
 
