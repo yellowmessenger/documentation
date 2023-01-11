@@ -73,7 +73,7 @@ You will start receiving notifications on the notifications tab. Following is a 
 | Video call started on chat (#{{ticketId}})                                                    | Video call start- notification is received when a video call is initiated (when the ticket is raised)                             |
 | Video call ended on chat (#{{ticketId}})                                                      | Video call end- notification is received one minute after everyone (agent+customer) leaves the call    (when the ticket is open)                          |
 | Video call recording for chat {{ticketId}} is now available on {{{url}}}                      | After the video call, the call recording is generated, and its status is notified                   |
-|**Email**||
+|**Emails**||
 | You have a new message on email ticket #({{ticketId}})                                        | When a new messages is received     on the email thread                                           |
 | {{requestedByName}} added {{agentName}} as a collaborator to email ticket #({{ticketId}})       | When one agent adds other agents to his email ticket as a Collaborator  |
 | {{requestedByName}} removed {{agentName}} as a collaborator from email ticket #({{ticketId}})   | When the agent removes other agents from his email ticket as a Collaborator                                  |
