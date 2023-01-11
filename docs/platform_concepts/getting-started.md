@@ -16,7 +16,7 @@ The following are the wide variety of modules our platform has got to offer
 | Modules | Descriptions |
 | -------- | -------- | 
 | [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview)  | Create user-friendly and efficient bots here . These bots can be used to help your customers with a particular piece of information, carry out certain actions, connect them to live agents, etc.   |
-|[Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox)|Manage live customer queries by connecting with live agents on multiple channels. It's a one stop solution to attend customer queries via emails and chats, stack FAQs, evaluate the metrics of live agents and more. |
+|[Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox)|Manage live customer queries by connecting with live agents on multiple channels. It's a one stop solution to attend customer queries via emails and chats, stack FAQs, evaluate the metrics of live agents and more. |
 |[Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview)| Measure the perfomance of your bot by collecting details such as customer location, successful API calls, customer engagement time, etc in . They help you make better business decisions. |
 |[Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)|Run marketing campaigns on Engage. This can be in the form of messages, emails,inbound campaigns,outbound campaigns,etc.|
 [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)| Channels are platforms via which you can run your bots. Yellow.ai offers 35+ channels and a one-time connectivuty setup. |
