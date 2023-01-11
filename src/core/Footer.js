@@ -10,7 +10,7 @@ const Footer = () => {
     },
     {
       title: "Nodes",
-      to: "./docs/platform_concepts/studio/build/nodes/nodes",
+      to: "./docs/platform_concepts/studio/build/nodes",
     },
     {
       title: "Intent",
@@ -33,7 +33,7 @@ const Footer = () => {
     },
     { 
       title: "Setup Inbox", 
-      to: "./docs/platform_concepts/inbox/inbox" 
+      to: "./docs/platform_concepts/inbox" 
     },
     { 
       title: "Use DocCog", 

@@ -256,11 +256,12 @@ module.exports = {
             {
               type: "category",
               label: "Nodes",
+              link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/nodes'},
               collapsed: true,
               items: [
                 //"platform_concepts/studio/cloud-function",
                 
-                "platform_concepts/studio/build/nodes/nodes",
+               // "platform_concepts/studio/build/nodes/nodes",
                 "platform_concepts/studio/build/nodes/prompt-nodes",
                 "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/action-nodes",
@@ -566,6 +567,15 @@ module.exports = {
   items: [
    // "platform_concepts/engagement/cdp/overview",
     "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
+    {
+      type: "category",
+      label: "Add users",
+      link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/add_user_overview'},
+      collapsed: true,
+      items: [
+
+      ]
+    },
     {
       type: "category",
       label: "Manage users",
