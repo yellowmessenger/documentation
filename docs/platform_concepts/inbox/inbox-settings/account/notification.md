@@ -12,7 +12,7 @@ In this article, you will learn:
 
 ------
 All the Inbox updates will be sent to you based on your role (Inbox admin/agent). These alerts will be available on the **Notifications** tab, and they can be helpful to keep a close eye on Inbox activities. The type of notifications that must be displayed on this tab can be configured from the Notification settings.     
-Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) for more details on **Notifications**. 
+Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox#--14-notifications) for more details on **Notifications**. 
 
 ![](https://i.imgur.com/5jrkOpD.png)
 

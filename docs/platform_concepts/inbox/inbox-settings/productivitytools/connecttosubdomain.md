@@ -136,6 +136,8 @@ To customize the site’s banner, logo, and favicon, follow the steps below:
     - **Footer text color**: Select the color for the footer text. 
     - **Contact info**: Footer text will contain info like: Still unsure about something? if you cannot find an answer to your question here, you can always reach out to us at < Contact >. The contact info updated in this field will allow the customers to directly contact you(Phone number, website, email ID, etc).
 
+<img src="https://i.imgur.com/O7FEHeR.jpg" alt="drawing" width="250%"/>    
+
 
 4. Click **Preview** to test the look and feel of the site and **Save** the changes.
 
