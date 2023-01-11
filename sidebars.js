@@ -803,9 +803,9 @@ module.exports = {
     {
       type: "category",
       label: "Channels",
+      link: {type: 'doc', id: 'platform_concepts/channelConfiguration/overview'},
       collapsed: true,
       items: [
-        "platform_concepts/channelConfiguration/overview",
         {
           type: "category",
           label: "Messaging channels",
@@ -821,7 +821,6 @@ module.exports = {
             "cookbooks/whatsapp-channel/wa-migration",
             "cookbooks/whatsapp-channel/faqs",
               ]},
-            "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
             "platform_concepts/channelConfiguration/alexa",
