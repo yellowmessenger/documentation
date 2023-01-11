@@ -61,7 +61,7 @@ By combining the user data with Properties and Events, you can [create highly fo
 
 You can group your users based on certain characteristics such as who they are and what they do. 
 
-## 2. Data tracking
+## 2. User properties
 
 We store three types of data about your users:
 
