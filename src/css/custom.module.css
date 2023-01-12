@@ -513,3 +513,9 @@ details>ul {
   /* Footer */
   --docsearch-footer-background: var(--ifm-color-white);
 }
+
+
+[class^="menu_link menu_link--sublist menu_link--active"] {
+  color: #007ed4;
+  font-weight: 500;
+}
