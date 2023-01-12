@@ -6,27 +6,24 @@ sidebar_label: WhatsApp chatbot
 
 This document will guide you through creating a WhatsApp business account and setting up your own WhatsApp chatbot. For more information, see [WhatsApp Accounts](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel).
 
-## 1. WhatsApp chatbot
+## 1. WhatsApp configuration
 
 Follow the below steps to connect your chatbot to WhatsApp business account: 
 
 ### 1.1 Create WhatsApp Business Account
 
-1. Login to [Yellow.ai](http://cloud.yellow.ai/) platfrom. 
-     
-     <img src="https://i.imgur.com/JnvcYEz.jpg" alt="drawing" width="90%"/>
 
-2. On the switcher, click **Channels**.
+1. On the switcher, click **Channels**.
 
    <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="90%"/>
 
 
-3. Click **WhatsApp Messenger** on the **Messaging** page. To start with WhatsApp account creation, click **Get started**. 
+2. Click **WhatsApp Messenger** on the **Messaging** page. To start with WhatsApp account creation, click **Get started**. 
 
    <img src="https://i.imgur.com/14XbqIg.png" alt="drawing" width="90%"/>
 
 
-4. Choose your account type from the drop-down and enable the checkbox to ensure that you have read the above information. Click on **Connect WhatsApp**.
+3. Choose your account type from the drop-down and enable the checkbox to ensure that you have read the above information. Click on **Connect WhatsApp**.
 
 :::note
 Ensure that you have admin access to the Facebook business manager account.
@@ -35,53 +32,53 @@ Ensure that you have admin access to the Facebook business manager account.
    <img src="https://i.imgur.com/BQwpnxC.jpg" alt="drawing" width="90%"/>
 
 
-5. You have to login to your Facebook account that is linked with your Business Manager account.
+4. You have to login to your Facebook account that is linked with your Business Manager account.
 
    <img src="https://i.imgur.com/Lqov4YW.png" alt="drawing" width="50%"/>
   
 
 
-6. Click on **Get started** to proceed with the next steps.
+5. Click on **Get started** to proceed with the next steps.
 
    <img src="https://i.imgur.com/L8hKZeO.png" alt="drawing" width="50%"/>
 
-7. Read the terms and conditions of WhatsApp Business and Meta. Click on **Continue**.
+6. Read the terms and conditions of WhatsApp Business and Meta. Click on **Continue**.
 
     <img src="https://i.imgur.com/Er17Zwe.png" alt="drawing" width="50%"/>
   
 
-8. Select an existing Business Manager account or create a new account to start with.
+7. Select an existing Business Manager account or create a new account to start with.
 
    <img src="https://i.imgur.com/qyp074p.png" alt="drawing" width="40%"/>
    
 
 
-9. Create a new WABA and click on **Continue**. You can also select an existing WABA if you already have one with Yellow.ai.
+8. Create a new WABA and click on **Continue**. You can also select an existing WABA if you already have one with Yellow.ai.
 
      <img src="https://i.imgur.com/p0nEs2n.png" alt="drawing" width="70%"/>
   
 
 
-10. Based on the details provided it verifies the information. 
+9. Based on the details provided it verifies the information. 
 
     <img src="https://i.imgur.com/KcCKCf4.png" alt="drawing" width="60%"/>
 
 
-11. Click on **Continue to step 2** to proceed with the number edition process. 
+10. Click on **Continue to step 2** to proceed with the number edition process. 
 
     
     <img src="https://i.imgur.com/D4ZmNvm.png" alt="drawing" width="60%"/>
 
-12. Enter a display name for your WhatsApp Business Account. You must think carefully when entering the **WhatsApp Business Display Name**. The name you provide will be displayed on your WhatsApp business account. To give an appropriate name, read through the [naming guidelines](https://www.facebook.com/business/help/757569725593362). 
+11. Enter a display name for your WhatsApp Business Account. You must think carefully when entering the **WhatsApp Business Display Name**. The name you provide will be displayed on your WhatsApp business account. To give an appropriate name, read through the [naming guidelines](https://www.facebook.com/business/help/757569725593362). 
    
     <img src="https://i.imgur.com/CtbvpMf.png" alt="drawing" width="60%"/>
 
-13. Select a category and enter the business description to create your WhatsApp business profile. Note that, you can later edit the information on the Yellow.ai platform. Click on **Continue**.
+12. Select a category and enter the business description to create your WhatsApp business profile. Note that, you can later edit the information on the Yellow.ai platform. Click on **Continue**.
 
     <img src="https://i.imgur.com/z0iSidb.png" alt="drawing" width="60%"/>
 
 
-14. Enter a phone number that does not have a WhatsApp account, and ensure that it receives any incoming message or voice call for the OTP verification.
+13. Enter a phone number that does not have a WhatsApp account, and ensure that it receives any incoming message or voice call for the OTP verification.
 
     <img src="https://i.imgur.com/hdo6P8e.png" alt="drawing" width="60%"/>
    

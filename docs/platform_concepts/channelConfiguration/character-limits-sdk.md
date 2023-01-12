@@ -1,5 +1,5 @@
 ---
-title: Character limit of chat widget and mobile SDK
+title: Limitations of chat widget and mobile SDK
 sidebar_label : Character limit
 ---
 
