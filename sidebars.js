@@ -830,6 +830,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-configuration",
             "cookbooks/whatsapp-channel/wa-migration",
             "cookbooks/whatsapp-channel/faqs",
+            "platform_concepts/channelConfiguration/whatsapp-char-limit",
               ]},
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
