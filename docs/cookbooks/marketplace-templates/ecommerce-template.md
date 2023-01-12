@@ -14,14 +14,13 @@ Here is the high-level overview of the e-commerce template:
 
 
 ### Browse products
-
-The flow shows the list of product categories and products within each category and guides users through purchasing products.
+The flow displays the list of product categories along with its products and help users with the purchase.
 
 
 
 ![](https://i.imgur.com/MjXppCD.png)
 
-Let’s see the Browse products flow in detail:
+Here are the details of the **Browse products** flow:
 
 
 1. Starts with the intent *View available products*.
@@ -40,13 +39,13 @@ Let’s see the Browse products flow in detail:
 
 ### Add to cart 
 
-The flow starts when the bot user selects a product to add to the cart. The user can add each product along with the quantity and proceed to buy once all the required cart items are added. 
+This flow is executed when the bot user selects a product to add to the cart. The user can add each product along with the quantity and proceed to buy once all the required items are added to the cart. 
 
 <center>
 <img src="https://i.imgur.com/SEeelG6.png" alt="drawing" width="40%"/> <img src="https://i.imgur.com/8oojZJc.png" alt="drawing" width="40%"/>
 </center>
 
-1. **Starts the flow** when the user selects *Add to cart* on the **Browse products** flow. 
+1. **Triggers flow** when the user selects *Add to cart* on the **Browse products** flow. 
 2. **Shows quantity**: Each product is associated with the product ID. Based on the selected product  ([Condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes/#1-condition)), it shows an option to select the quantity (**Quick replies** for web and **WhatsApp list** for WhatsApp).
 
 ![](https://i.imgur.com/uBkNFAg.png)
@@ -71,7 +70,7 @@ This flow allows users to edit the current cart details - change the quantity or
 <img src="https://i.imgur.com/ityexxS.png" alt="drawing" width="40%"/>
 </center>
 
-1. **Starts when the user selects **Edit cart** is selected on the **Add to cart** flow. 
+1. **Triggers** when the user selects **Edit cart** is selected on the **Add to cart** flow. 
 2. **Verifies cart items**: Checks if the cart is empty using the `IsCartEmpty` (**Function** and **Condition** nodes). 
 			* If it is empty, the user will be directed to the [Browse products flow](). 
 			* If the cart is not empty, it shows the current cart details (`ShowCart` function) of the user.
@@ -83,17 +82,17 @@ This flow allows users to edit the current cart details - change the quantity or
 
 ### Clear cart
 
-The flow triggers when the user selects *Clear cart* from the bot flows. The cart becomes empty, and all the item details (Product IDs and Quantity) stored in the user database will be deleted. 
+The flow triggers when the user selects *Clear cart* from the bot flows. The cart is cleared, and all the item details (Product IDs and Quantity) stored in the user database will be deleted. 
 
 <center>
 <img src="https://i.imgur.com/LhUielX.png" alt="drawing" width="40%"/>
 </center>
 
-1. **Starts the flow** with the intent `clearCart`  when the user selects the *Clear cart* option from any flow.
+1. **Triggers the flow** with the intent `clearCart`  when the user selects the *Clear cart* option from any flow.
 
 
 
-2. **Clears the cart**: Cart variable is assigned to [], which means the details present in the cart will become null. 
+2. **Clears the cart**: Cart variable is assigned to [], which means the details present in the cart becomes null. 
 
    ![](https://i.imgur.com/6TQukpV.png)
 
@@ -164,28 +163,28 @@ This flow generates the payment link using the cart details and sends the paymen
    
 ### Queries and Concerns
 
-With this flow, users can ask the bot FAQs or choose to chat with the support team. 
+With this flow, users can get instant answers through FAQs or choose to chat with the support team. 
 
 <img src="https://i.imgur.com/1KSSMut.png" alt="drawing" width="45%"/> <img src="https://i.imgur.com/CnKnqCQ.png" alt="drawing" width="45%"/>
 
-1. **Starts** when the user selects *Queries and Concerns* from the menu options. 
+1. **Triggers** when the user selects *Queries and Concerns* from the menu options. 
 2. **Shows support options**: Shows *FAQs* or Chat with support options using **Quick replies**. 
 3. **FAQs**: Shows questions using the **Quick replies** node. When the user types a question or selects from the options, it fetches the response from the [Trained FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) list. 
 
 > Add more such questions as **Quick reply** options or directly train them on the FAQ page. 
 > Show more support options if required such as Ask the community, and Refer to docs.
 
-6. **Chat with support**: Captures the user information and the query using [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are uses it to fetch the user data. Then it creates a ticket and assigns it to an Inbox agent ([Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node). The chat is handled by the [Inbox module](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#4-try-live-agent-module). 
+6. **Chat with support**: Captures the user information using [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and uses it to fetch the user details. It also captures the query using the [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and creates a ticket assigning it to an Inbox agent ([Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node). The chat is handled by the [Inbox module](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#4-try-live-agent-module). 
 
 ![](https://i.imgur.com/eNr7vI0.png)
 
 ## Build your own flows
 
 
-* **Promote products**: Use the bot as a good lead-generation tool. You can send offers, promote new products, and offer instant discounts to your leads through Outbound/Workflow campaigns.
+* **Promote products**: Use the bot as a lead-generation tool. You can send offers, promote new products, and offer instant discounts to your leads through Outbound/Workflow campaigns.
 
-* **Show store location**: If you are running both offline and online businesses, enable accessing the nearest store location and address using a search box or zip code. Use Database to store all your locations or make use of APIs to fetch directly from external systems.
+* **Show store location**: If you are running both offline businesses, you can allow your users to find the nearest store location and address using location or zip code. Use **Database** to store all your locations or make use of APIs to fetch directly from external systems.
 
-* **Showcase products from your database**: Use [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) and Functions to access data from an external database directly. You can update order/user details, retrieve details, or show any other information that you want your users to access.
+* **Showcase products from your database**: Use [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) and [Functions](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#docusaurus_skipToContent_fallback) to access data from an external database directly. You can update order/user details, retrieve details, or show any other information that you want your users to access.
 
-* **Enable single sign-on**: Make use of the [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) or Database modules and pass a custom script that can read data from your e-commerce site and pass it to the bot  every time the user opens the bot.
+* **Enable single sign-on**: Make use of the [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) or [Database](https://docs.yellow.ai/docs/platform_concepts/studio/database) modules and pass a custom script that can read data from your e-commerce site and pass it to the bot  every time the user opens the bot.
