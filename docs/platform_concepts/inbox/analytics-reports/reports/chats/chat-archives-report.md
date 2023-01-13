@@ -3,7 +3,7 @@ title: Chat Archives Report
 sidebar_label : Chat archives 
 ---
 
-> To learn how to generate Chat Archives Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
+> To learn how to generate Chat Archives Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
 
 
 :::info

@@ -4,7 +4,7 @@ sidebar_label : Agents
 ---
 
 
-After a user is provided with [inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#21-add-support-agent-on-the-platform), you must define the properties and the scope of the agent work, for example, the type of tickets that can be assigned to a specific agent. This can be done through **Inbox settings** > **Team settings** (agents and groups).
+After a user is provided with [inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox), you must define the properties and the scope of the agent work, for example, the type of tickets that can be assigned to a specific agent. This can be done through **Inbox settings** > **Team settings** (agents and groups).
 
 In this article, you will learn:
 

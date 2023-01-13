@@ -8,11 +8,11 @@ sidebar_label : Notification settings
 
 In this article, you will learn: 
 1. [How to enable inbox notifications?](#1)
-2. [List of the most common notifications](#2)
+2. [List of available notifications alerts](#2)
 
 ------
 All the Inbox updates will be sent to you based on your role (Inbox admin/agent). These alerts will be available on the **Notifications** tab, and they can be helpful to keep a close eye on Inbox activities. The type of notifications that must be displayed on this tab can be configured from the Notification settings.     
-Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#14-notifications) for more details on **Notifications**. 
+Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox#--14-notifications) for more details on **Notifications**. 
 
 ![](https://i.imgur.com/5jrkOpD.png)
 
@@ -68,12 +68,12 @@ You will start receiving notifications on the notifications tab. Following is a 
 | You have a new message on chat #({{ticketId}})                                                | When a new messages is received on the chat                                     |
 | {{reopenedBy}} reopened chat #{{reopenedFrom}} now available on chat #({{ticketId}})          | When a chat ticket is reopened                                      |
 |**Video call** ||
-| {{userName}} joined a video call on chat {{ticketId}}                                         | When someone is joining a video call                          |
-| {{userName}} left a video call on chat {{ticketId}}                                           | When someone is leaving a video call                          |
-| Video call started on chat (#{{ticketId}})                                                    | Video call starting notification is received when a video call is initiated (when the ticket is raised)                             |
-| Video call ended on chat (#{{ticketId}})                                                      | Video call ending notification is received one minute after everyone leaves the call    (when the ticket is open)                          |
-| Video call recording for chat {{ticketId}} is now available on {{{url}}}                      | After the video call the recording is generated, and its status is notified                   |
-|**Email**||
+| {{userName}} joined a video call on chat {{ticketId}}                                         | When someone joins a video call                          |
+| {{userName}} left a video call on chat {{ticketId}}                                           | When someone leaves a video call                          |
+| Video call started on chat (#{{ticketId}})                                                    | Video call start- notification is received when a video call is initiated (when the ticket is raised)                             |
+| Video call ended on chat (#{{ticketId}})                                                      | Video call end- notification is received one minute after everyone (agent+customer) leaves the call    (when the ticket is open)                          |
+| Video call recording for chat {{ticketId}} is now available on {{{url}}}                      | After the video call, the call recording is generated, and its status is notified                   |
+|**Emails**||
 | You have a new message on email ticket #({{ticketId}})                                        | When a new messages is received     on the email thread                                           |
 | {{requestedByName}} added {{agentName}} as a collaborator to email ticket #({{ticketId}})       | When one agent adds other agents to his email ticket as a Collaborator  |
 | {{requestedByName}} removed {{agentName}} as a collaborator from email ticket #({{ticketId}})   | When the agent removes other agents from his email ticket as a Collaborator                                  |
