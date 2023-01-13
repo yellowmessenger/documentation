@@ -1,30 +1,68 @@
 ---
-sidebar_label: Hyper-personalised Conversations
-title: Creating Hyper-personalised Conversations in Builder
+sidebar_label: Capture user data through conversations
+title: Capture data through Studio & create personalised conversations
 ---
 
-If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to create hyper-personalised conversations based on user properties.
 
-While these user properties are accessible in all the nodes of Studio, we’ll cover some of them with-in this document, to show you how you can create the right conversion for the right set of users.
+In a bot conversation, every bot session is mapped to a record in User 360. When building a bot using [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/), you can use [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to capture [User properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties) and store it in the database. 
 
-First you might want to read [Using Builder to capture user data through conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data).
+It can store responses of conversations that involve asking user details such as name, email, phone number, location, or any system/custom user property in the relevant field. You can also enrich user data and create personalised conversations using [User properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties) in Studio conversations. 
 
-:::info
-All user properties are accessible in nodes under “User properties”.
+:::note
+You need to use the **userId** property to identify a user in a conversation.
 :::
 
-### Creating personalised messages
-You can improve the engagement rates by creating personalised content. To do this, in your **Message Nodes**, you can can access user properties by clicking on the variable dropdown and selecting any **User Property**, or my simply accessing it using {{user.**propertyName**}}.
+## Capture `userId` through conversations
 
-<img src="https://i.imgur.com/Mebonpy.png" alt="drawing" width="60%"/>
+To update `userId` of customers through bot conversations:
+
+1. When building flows in [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/), use the **Prompt** node or *Variables* node. 
+3. Click **Make prompt smarter** and scroll-down to the *Additional section*.  
+
+  ![](https://i.imgur.com/t2p6uHD.png)
+
+4. Check **Use this as Unique ID for user**.
+
+   ![](https://i.imgur.com/7TPjvkH.png)
 
 
-### Creating segment specific workflows
 
-While in the above section we covered how to create personalised messages, it’s equally important to target the right set of users with the right message.
+## Capture user properties through conversations
 
-For example, when talking about the pricing plan, you might want to share different plans with different set of users. For example, this set of users could be defined on the basis of their country.
+The user record is updated in the database using the session mapping. 
 
-This is where the [Condition Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-if--condition) comes in handy.
+* In the bot Builder, use [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/#412-variables--action-node) nodes to capture user properties (such as name, email, phone number, location, or any system/custom user property) through conversations.
 
-![](https://i.imgur.com/h75l167.png)
+<center>
+<img src="https://i.imgur.com/p6DvR3D.png" width="60%"/>
+</center>
+
+* To extract data from a payload, use the **Input** node and store information in the relevant user property. For example, fetch user details from the user add event payload and store them in relevant user properties. 
+
+   ![](https://i.imgur.com/0kX3iJT.png)
+
+
+
+<center>
+<img  src="https://i.imgur.com/7ltkBj4.png" width="40%"/>
+</center>
+
+:::note
+The data captured through Studio conversations for [Identified Users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#what-are-identified-users) will be updated automatically in the Users table.
+:::
+
+## Fetch user properties through conversations
+
+You can fetch user properties in conversations using the **Text** node clicking on the variable dropdown and selecting any User Property manually. Instead, you can also use `{{{user.propertyName}}}`.
+
+![](https://i.imgur.com/tFyoRXF.png)
+
+
+You can also use user properties to improve the engagement rates by creating personalised content.
+
+> For example, Hi {{{variables.user_name}}}, you have unlocked an exclusive offer. Shop today and get flat 50% off. 
+
+The property value is fetched from the user record mapped to the current session.
+
+
+

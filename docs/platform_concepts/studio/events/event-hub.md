@@ -367,7 +367,7 @@ To create a custom event, follow these steps -
 
    <img src="https://i.imgur.com/N3hkCdN.png" width="300"/>
 
-3. Then, push the event data using the Push user event (`POST /v1/internal/event/`)(https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) API.
+3. Then, push the event data using the Push user event [POST /v1/internal/event/](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) API.
 
 :::note
 1. The above-mentioned API doesn't allow genric payloads and cannot be used as a general webhook.
