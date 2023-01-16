@@ -174,7 +174,7 @@ With inbound engagement, you can set up various widgets with various triggers su
 * Seconds on page: Used to specify the time spent on the same page, in seconds
 * Seconds of inactivity: Used to specify for how long the visitor has been inactive
 
-Know more about [Inbound campaigns](https://https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign), [Triggers](https://https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType/) & [Web widgets](https://https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations)
+Know more about [Inbound campaigns](https://https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign), [Triggers](/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType) & [Web widgets](https://https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/inboundWidgets/typesOfWidgetsAndWidgetConfigurations)
 
 ![](https://i.imgur.com/k44ErTj.png)
 
