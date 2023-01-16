@@ -15,7 +15,7 @@ sidebar_label : WhatsApp FAQs
 3. Select Security Centre.
 
 You will be able to initiate verification here.
-Click [here](https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot/#step-3---verfiy-your-business-account-with-facebook) for more details.
+Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#13-verfiy-business-account-with-facebook) for more details.
 
 </p>
 </details>

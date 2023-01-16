@@ -218,7 +218,7 @@ Here are some EdTech specific templates:
     
 -   **Single sign-on**: Make use of the API or Database modules and pass a custom script that can read data from your website and pass it to the bot directly every time the user opens the bot.
     
--   **Provide more study material**: You can use [Documents](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition/) feature available in Studio to upload your documents and generate FAQs from them. 
+-   **Provide more study material**: You can use [Documents](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition) feature available in Studio to upload your documents and generate FAQs from them. 
    For example, it can open the document and navigate to the specific page and section that the user has searched for.
     
 -   **Take elaborate career quizzes**: You can increase the number of questions and complexity in a quiz. You can do assessment post completing the courses.
