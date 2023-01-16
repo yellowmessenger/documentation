@@ -26,9 +26,9 @@ For example, the moment name is captured, a record is created in User 360 and ma
 
 #### 2. Identified users 
 
-These are registered users whose [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id) is added in Yellow.ai. A record is created for each identified user in the users table. Any update made to the identified user through builder will show up in User 360.
+These are registered users whose [userId](/docs/platform_concepts/engagement/cdp/user_data/user_properties#13-user-id-userid-as-a-property) is added in Yellow.ai. A record is created for each identified user in the users table. Any update made to the identified user through builder will show up in User 360.
 
-You can update only identified users' data. Any data captured for [Identified users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#what-are-identified-users) is automatically updated in the Users table.
+You can update only identified users' data. Any data captured for Identified users is automatically updated in the Users table.
 
 The session mapping changes when an existing `userId` is provided.
 
