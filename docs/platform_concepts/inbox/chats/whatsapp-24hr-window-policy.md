@@ -7,7 +7,6 @@ In this article, you will learn:
 
 1. [What is the WhatsApp Business Policy for Inbox?](#policy)
 2. [How to reinitiate expired WhatsApp chats?](#expchats)
-3. [FAQ](#faq).
 
 “In order to initiate a WhatsApp message to a person, you must first receive **opt-in permission** confirming that they wish to receive future messages from you on WhatsApp. The opt-in must clearly state the below conditions: 
 -  State that the person is opting in to receive messages from you over WhatsApp.
@@ -59,28 +58,3 @@ To reinitiate the expired WhatsApp chats, follow the given steps:
 
 <img src="https://i.imgur.com/qyhUsRy.png" alt="drawing" width="60%"/>
 
-
------
-
-## <a name="faq"></a>  2. FAQs
-
- 1. **What is the cost of sending WhatsApp templates?**  
-    Whatsapp charges a per-message fee for all the templates sent outside the 24 hr session based on the number of messages & country you send to. For more information, click [here](https://developers.facebook.com/docs/whatsapp/pricing/).  
-      
- 2. **Why is my chatbox not visible even though I have sent the WA template?**  
-      Just sending out the template message will not reinitiate the 24 hr window. The end-user has to reply back in the conversation.    
-    
- 3. **Why can’t I cannot attach my media to the template?**  
-    You cannot change the type of media once the template is approved. Also, you can only send out the following types of media:  
-    - **Image** - Jpeg or png format not more than 5MB.
-    - **Video** - MP4 video not more than 16MB.
-    - **Document** - PDF.  
-	  
-4. **Why am I not able to see any templates?**
-      There are two reasons why you are not able to see any WhatsApp templates within your  Inbox:
-      - None of your templates are approved by WhatsApp yet.
-      - You have not created any templates yet.  
-	  
-5. **Why am I not able to see the template message content that I just sent?**
-     WhatsApp templates created with [hsm](https://developers.facebook.com/docs/whatsapp/api/messages#hsm-object) object will not be displayed with the actual content inside Inbox. However templates created with [template](https://developers.facebook.com/docs/whatsapp/api/messages#template-object) object will be displayed inside Inbox. If you are not seeing the actual template content, then the template you sent out is most likely created with hsm object. 
-	 

@@ -6,7 +6,7 @@ title: Create segments for different use cases
 The segments you create should be specific to your use case. Here are some ideas to get you started:
 
 ## 1. Campaign specific use cases
-You might often want to reach out to users on a particular date, or after they have completed a certain number of days from that particular date. Below we will show you how you can create date based [segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/targeted_segments/) to achieve such use cases.
+You might often want to reach out to users on a particular date, or after they have completed a certain number of days from that particular date. Below we will show you how you can create date-based segment to achieve such use cases.
 
 ### 1.1 Drip campaign
 
@@ -44,8 +44,8 @@ Therefore, all users with Date June 10, (regardless of year), will be targeted.
 
 You might often want to exclude users who have opted out from all your campaigns. Doing this is simple:
 
-- First ensure that your opt-in data is up to date. This can be regularly updated through [conversational data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/), by uploading fresh data through [CSV](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv), or by using [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api/) to sync with your CRM.
-- Next, you can include a condition in your [segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/targeted_segments/) where, “Opt-in is true”. This segment will exclude all users for whom the opt-in is either false or unknown.
+- First ensure that your opt-in data is up to date. This can be regularly updated through [conversational data](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder), by uploading fresh data through [CSV](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv), or by using [REST APIs](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api) to sync with your CRM.
+- Next, you can include a condition in your [segment](/docs/platform_concepts/engagement/cdp/user_data_segments/segment_usecases) where, “Opt-in is true”. This segment will exclude all users for whom the opt-in is either false or unknown.
 
 <img src="https://i.imgur.com/xr4X98S.png" width="60%"/>
 

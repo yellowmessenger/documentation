@@ -24,7 +24,7 @@ The nodes that have an option to ask the users a question or display a text are 
 
 **Configure text displayed on the bot**
 
-To know more about how to configure the text, click [here](https://docs.yellow.ai/docs/cookbooks/studio/text-format/).
+To know more about how to configure the text, click [here](https://docs.yellow.ai/docs/cookbooks/studio/text-format).
 
 ---
 
@@ -643,7 +643,7 @@ This feature can be used:
 
 ![](https://i.imgur.com/anyDc8z.png)
 
-Auto complete is available at a [global level](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#22-conversation) and prompt level (that is triggered inside a prompt).
+Auto complete is available at a [global level](https://docs.yellow.ai/docs/platform_concepts/studio/tools#22-conversation) and prompt level (that is triggered inside a prompt).
 
 ![](https://i.imgur.com/Tpm7Qkb.png)
 

@@ -391,8 +391,13 @@ li img {
   border: 0.5px solid #C4C4C4;
 }
 
+/* LEFT NAV */
 
 
+[class^="menu__link menu__link--sublist menu__link--active"] {
+  font-weight:600;
+  color: var(--ifm-link-color);
+}
 
 /* HEADINGS & BODY FONTS */
 
@@ -513,3 +518,7 @@ details>ul {
   /* Footer */
   --docsearch-footer-background: var(--ifm-color-white);
 }
+
+
+
+

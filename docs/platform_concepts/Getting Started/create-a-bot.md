@@ -30,5 +30,5 @@ Bots can be created from scratch to specifically suit your individual business u
 
 ## 3. Publish the bot
 
-Once you have created a bot, you can publish it by following the steps you mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes/).
+Once you have created a bot, you can publish it by following the steps you mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
 

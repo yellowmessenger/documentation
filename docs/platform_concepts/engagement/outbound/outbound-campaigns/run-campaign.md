@@ -1,5 +1,5 @@
 ---
-sidebar_label : Outbound campaign
+sidebar_label : Create Outbound campaign
 title : Create outbound campaign
 ---
 
@@ -14,7 +14,7 @@ This article provides how to create campaigns for any channel. The process for c
 * Add only whitelisted templates (approved templates) in the [templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview) module.
 
 
-## 2. Create campaign
+## 2. Create Outbound campaign
 
 1. Navigate to your project and go to the **Engage** module.
 2. Click **+ Create Campaign**.

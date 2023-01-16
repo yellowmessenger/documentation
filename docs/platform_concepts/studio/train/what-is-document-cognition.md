@@ -47,10 +47,10 @@ The document knowledge can be used in two different methods:
 
 ![](https://i.imgur.com/QN5XllL.png)
 
-2. **Node**: Doc can be used as a node in flows. [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#14-document-search) - action node can be added in a flow and used as a searching tool for any user query.
+2. **Node**: Doc can be used as a node in flows. [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) - action node can be added in a flow and used as a searching tool for any user query.
     - Open **Studio** > **Build** > **Flows**. 
-    - Add a node to store the user input (Query that is expected to be searched via Doc)in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#22-variables) (For example: store a reply in a variable- agentquery).
-    - Add a [Document Search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#14-document-search). Select Query value as the previously stored variable. 
+    - Add a node to store the user input (Query that is expected to be searched via Doc)in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) (For example: store a reply in a variable- agentquery).
+    - Add a [Document Search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search). Select Query value as the previously stored variable. 
     - Metadata filters can be added when you only specific documents are required to be searched for the user query.
 
 ![](https://i.imgur.com/dyqMjy8.png)

@@ -42,7 +42,7 @@ On exit intent | Show the campaign when a visitors's cursor leaves the window on
 Cookie | Show the campaign either to visitors who have or do not have a specific cookie attached to them. You will have to define the cookies using *key-value* pairs.
 CTA | Show the campaign when the visitor clicked on a specific page element. Use the selector and define the *key-value* pair.
 Element hovered over | Show the campaign when the vision hovered on a specific element of the page. Use the selector and define the *key-value* pair.
-Custom Event | Show the campaig based on custom events. See [Custom event based trigger](#21-custom-event-based-trigger)
+Custom Event | Show the campaign based on custom events. See [Custom event based trigger](#21-custom-event-based-trigger)
 
 :::note
 To know when to use different trigger events, see [Web behaviour triggers for content marketing](#3-web-behaviour-triggers-for-content-marketing) and [Web behavior triggers for e-commerce](#4-web-behavior-triggers-for-e-commerce).

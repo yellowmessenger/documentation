@@ -3,7 +3,7 @@ title: Ticket Agent Performance Report
 sidebar_label : Agent performance 
 ---
 
-> To learn how to generate Ticket Agent Performance Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
+> To learn how to generate Ticket Agent Performance Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
 
 :::info
 Only an admin can download reports.

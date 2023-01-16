@@ -14,12 +14,11 @@ In this article, you will understand:
     - [Where to find all the notifications/updates?](#i3)
     - [Notifications in Inbox](#i4)
     - [How does the Orchestrator bot feature work in Inbox?](#i5)
-3. [How to provide/get access to become an Inbox live agent (support agent)?](#supportagents)
-4. [What are the default agent statuses?](#agentstatus)
-5. [Try a demo of the live agent module](#try)
+2. [Try a demo of the live agent module (understand how inbox works)](#try)
     - [Create a flow in Studio to raise a ticket](#try1)
     - [Connect to an Inbox agent and test your Inbox](#try2)
-
+3. [How to provide/get access to become an Inbox live agent (support agent)?](#supportagents)
+4. [What are the default agent statuses?](#agentstatus)
 
 
 
@@ -81,7 +80,7 @@ There are multiple options available in the inbox module, they are listed below:
 |**Tickets**| Monitor and resolve email tickets, create new tickets (manually/in bulk), and other no-code email ticketing functionalities. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) to learn more.  |
 |**Contacts**| Create a list of contacts and send pro active notifications(emails) for your brand. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts) to learn more. |
 |**Analytics and Reports**|Find single-click dynamic charts and generate and download detailed reports about your business and team performance to take data-driven business decisions. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics) to learn more.|
-|**Knowledgebase**|Design a knowledgebase with information to resolve user queries quickly. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/edit-publish-articles) to learn more. |
+|**Knowledgebase**|Design a knowledgebase with information to resolve user queries quickly. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview) to learn more. |
 |**Settings**|Manage Inbox by enabling the required functions from settings. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) for more details. |
 
 -------
@@ -121,142 +120,13 @@ When **Unify inbox to all child bots** is selected, support tickets received by 
 
 ---------
 
-## <a name="supportagents"></a> 2. Manage support agents
-
-- There are two roles to access the inbox module, **Inbox Admin** and **Inbox Agent**
-- Incoming tickets (from the bot user) are assigned to the support agents.
-- Admin can add support agents and Agent can accept an invite sent by an admin to join as a support agent.
-- Support agents will have access to the chats/tickets/analytics/performance to help understand and resolve queries in Inbox. 
-- For supporting documents to add/accept bot access, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
-
-------
 
 
-### <a name="provideaccess"></a> 2.1 Provide inbox agent/admin access
+## <a name="try"></a> 2. Try the live agent module 
 
 
-To add **inbox admin/agent**, follow the below steps: 
-
-1. Open **Access Control** from the overview page. 
-
-![](https://i.imgur.com/5ME81yH.png)
-
-2. On **Users** tab, click **+Invite users**.
-3. Enter **email ID** and from the Access control dropdown menu select **Inbox (Agent)** and click **Invite**. 
-    - Follow the same to add Inbox (Admin) access.
-
-![](https://i.imgur.com/n5E7zhY.png)
-
-4. **Supervisor** role can be added for agents.
-    - You can make your agents supervisors to a group where they can monitor & supervise the group's incoming chats as well as the agents.
-    - While you share inbox agent access, you will get an additional option to make them supervisor for a group.
-    - From the dropdown, select the group that you want them to be a supervisor.  
-    - Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) to configure a group.
-    
-<img src="https://i.imgur.com/RNsGTzx.png" alt="drawing" width="60%"/>    
-
-
-
-
-5. You can open the **Invites tab** and resend/revoke the invite. 
-
-![](https://i.imgur.com/Qd85Tlw.png)
-
-6. Once the agent accepts the request, their information will be listed in the user's tab. 
-7. You can edit or delete the users (if required).
-
-------
-
-### <a name="acceptaccess"></a> 2.2 Accept invite to join as a support agent
-
-To join the team as an inbox agent, follow the steps below:
-
-1. If you don't have an account on [Yellow.ai Platform](https://cloud.yellow.ai) you will receive an email from Yellow.ai to Sign Up on the platform and accept the invite to join the platform as a support agent.
-
-**![](https://i.imgur.com/T1kacbw.png)**
-
-
-2. If you already have an account on the Yellow.ai platform, check the notification icon on the overview page. 
-
-![](https://i.imgur.com/q20mMo4.png)
-
-
-3. Click on the tick mark to accept the invite.
-
-![](https://i.imgur.com/CGK4W7h.png)
-
-
-
-:::note
-- Only the user with bot **Admin** access can provide **Inbox admin** / **Inbox agent** access to any user (or themselves).
-- If you have only admin access, you can give yourself the Inbox (agent/Admin) access to explore the Inbox functionalities. In the Users tab, edit your row to add **inbox agent** access along with admin access.
-![](https://i.imgur.com/ZFp5TUO.png)
-- Users with **Inbox admin** access can add **Inbox agents/supervisors**.
-- Any user provided with **Inbox agent invite** can join as a support agent. 
-:::
-
-
-
--------------
-
-## <a name="agentstatus"></a> 3. Default agent status
-
-> An admin cannot change the status of any agents.
-
-
-Inbox offers three default agent statuses that you can choose to define your availability. These statuses are the foundation based on which the incoming tickets are assigned to you. Ensure that you are indeed selecting the correct status at any time.
-
-
-  
-The default statuses are as follows:  
-
-
-
-| Status | Description| 
-| -------- | -------- | 
-| **Available**     | The new incoming chats will only be assigned to agents who have set their status to Available. The chats will be assigned based on their concurrency.     |      
-|**Busy**|No new chat ticket will be assigned to agents who have set their status to be Busy. These chats will be queued in their respective group and then automatically assigned to agents when they make themselves Available. If the group queue is not enabled then these chats will be converted as Missed chats and stored in Inbox for reference. Eg: When you are working on important issues/escalations, Documentation work, Internal meetings/discussions, etc.|
-|**Away**|No new chat ticket will be assigned to agents who have set their status to be Away. These chats will be queued in their respective group and then automatically assigned to agents when they make themselves Available. If the group queue is not enabled then these chats will be converted as Missed chats and stored in your account for reference. Eg: Recess, Bio break, Lunch break.|
-|**Offline**|When an agent logs out or goes away from the Inbox module, they’ll be treated as Offline and no new conversation will be assigned to that agent even if they are present inside the yellow.ai platform in any other module like Insights, Studio, etc.|
-
-
---------
-
-      
-  
-### 3.1 Difference between Busy & Away
-
-On paper, **Busy** and **Away** are both identical in function but when you log out after changing your status to **Away**, your status will not be **Offline** it will remain as **Away**. This is to avoid missing out on the chats raised by the end users when all your agents have logged off within working hours (for example, for a lunch break).
-- Admins can manually transfer the chat to an agent who has set themselves to Busy / Away. This manual transfer operation will not consider the agent's current concurrency and will assign tickets even if their concurrency is full.
-
-
-#### Example
-
-Consider a scenario wherein, all your agents break for lunch from 1 PM - 2 PM. If they are considered **Offline** during that time, the chats raised during the time will be completely missed unless Offline chats are enabled.  Even if they are enabled, those chats will only be captured in Open status and will not be assigned to agents immediately.
-Now if they are considered as **Away**, those chats will not be missed irrespective of whether Offline chats are enabled or not, and the chats will be queued, then automatically assigned to agents after 2 PM.
-
-  
-------
-
-### 3.2 Track activity via. Reports
-
-The time spent by each agent in the different statuses will be tracked and made available in the **Agent activity report**. The aggregated time spent by the agent i.e total Available/Busy/Away time spent by the agent per each day is  accessible in the **Agent performance report**.
-
-To download the Agent performance/ Agent activity report, follow the below steps:   
-
-1. Open **Inbox** > **Analytics**. Select **Reports** > **Chat reports**.
-2. Click **Generate** on **Agent activity** / **Agent performance report**.  
-3. Once the reports are generated (status = success), click **Download**.
-
-For a detailed article, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports). 
-
--------
-
-## <a name="try"></a> 4. Try the live agent module 
-
-
-While conversing with the bot, if the user prefers chatting with a live agent, it’s preferred for humans to take over to provide a better customer experience.
-To do this, the bot should transfer the user’s chat to a live agent and this is achieved using the Inbox module and [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket) action node.
+While conversing with the bot, if the user prefers chatting with a live agent, humans can take over to provide a better customer experience.
+To do this, the bot should transfer the user’s chat to a live agent and this is achieved by using the Inbox module and [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket) action node.
 1. **Studio** flow must be configured:
     - To identify when a bot user prefers talking with a live agent. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to know more about **flows and NLU**.
     - To create a ticket when the intent to *chat with an agent* is identified. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) to understand the **Raise ticket** action node and its settings.
@@ -267,7 +137,7 @@ To do this, the bot should transfer the user’s chat to a live agent and this i
 
 -----
 
-### <a name="try1"></a> 4.1 Create a flow to raise a support ticket 
+### <a name="try1"></a> 2.1 Create a flow to raise a support ticket 
 
 To configure **Raise ticket** node on the [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)'s flow page, follow the steps below: 
 
@@ -283,7 +153,7 @@ To configure **Raise ticket** node on the [Studio](https://docs.yellow.ai/docs/p
 
 ---------
 
-### <a name="try2"></a> 4.2 Demo of ticket creation on Inbox
+### <a name="try2"></a> 2.2 Demo of ticket creation on Inbox
 
 > To test the live agent transfer, you need to have Inbox agent access.
 
@@ -321,3 +191,134 @@ To check that click on the profile icon on the right corner, and verify the stat
 <img src="https://i.imgur.com/Gld3MHU.png" alt="drawing" width="50%"/>    
 
 
+--------
+
+## <a name="supportagents"></a> 3. Manage support agents
+
+- There are two roles to access the inbox module, **Inbox Admin** and **Inbox Agent**
+- Incoming tickets (from the bot user) are assigned to the support agents.
+- Admin can add support agents and Agent can accept an invite sent by an admin to join as a support agent.
+- Support agents will have access to the chats/tickets/analytics/performance to help understand and resolve queries in Inbox (other modules such as Studio, Channels, etc. will not be visible to the inbox admin/agent).
+- For supporting documents to add/accept bot access, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
+
+------
+
+### <a name="provideaccess"></a> 3.1 Provide inbox agent/admin access
+
+
+To add **inbox admin/agent**, follow the below steps: 
+
+1. Open **Access Control** from the overview page. 
+
+![](https://i.imgur.com/5ME81yH.png)
+
+2. On **Users** tab, click **+Invite users**.
+3. Enter **email ID** and from the Access control dropdown menu select **Inbox (Agent)** and click **Invite**. 
+    - Follow the same to add Inbox (Admin) access.
+
+![](https://i.imgur.com/n5E7zhY.png)
+
+4. **Supervisor** role can be added for agents.
+    - You can make your agents supervisors to a group where they can monitor & supervise the group's incoming chats as well as the agents.
+    - While you share inbox agent access, you will get an additional option to make them supervisor for a group.
+    - From the dropdown, select the group that you want them to be a supervisor.  
+    - Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) to configure a group.
+    
+<img src="https://i.imgur.com/RNsGTzx.png" alt="drawing" width="60%"/>    
+
+
+
+
+5. You can open the **Invites tab** and resend/revoke the invite. 
+
+![](https://i.imgur.com/Qd85Tlw.png)
+
+6. Once the agent accepts the request, their information will be listed in the user's tab. 
+7. You can edit or delete the users (if required).
+
+------
+
+### <a name="acceptaccess"></a> 3.2 Accept invite to join as a support agent
+
+To join the team as an inbox agent, follow the steps below:
+
+1. If you don't have an account on [Yellow.ai Platform](https://cloud.yellow.ai) you will receive an email from Yellow.ai to Sign Up on the platform and accept the invite to join the platform as a support agent.
+
+**![](https://i.imgur.com/T1kacbw.png)**
+
+
+2. If you already have an account on the Yellow.ai platform, check the notification icon on the overview page. 
+
+![](https://i.imgur.com/q20mMo4.png)
+
+
+3. Click on the tick mark to accept the invite.
+
+![](https://i.imgur.com/CGK4W7h.png)
+
+
+
+:::note
+- Only the user with bot **Admin** access can provide **Inbox admin** / **Inbox agent** access to any user (or themselves).
+- If you have only admin access, you can give yourself the Inbox (agent/Admin) access to explore the Inbox functionalities. In the Users tab, edit your row to add **inbox agent** access along with admin access.
+![](https://i.imgur.com/ZFp5TUO.png)
+- Users with **Inbox admin** access can add **Inbox agents/supervisors**.
+- Any user provided with **Inbox agent invite** can join as a support agent. 
+:::
+
+
+
+-------------
+
+## <a name="agentstatus"></a> 4. Default agent status
+
+> An admin cannot change the status of any agents.
+
+
+Inbox offers three default agent statuses that you can choose to define your availability. These statuses are the foundation based on which the incoming tickets are assigned to you. Ensure that you are indeed selecting the correct status at any time.
+
+
+  
+The default statuses are as follows:  
+
+
+
+| Status | Description| 
+| -------- | -------- | 
+| **Available**     | The new incoming chats will only be assigned to agents who have set their status to Available. The chats will be assigned based on their concurrency.     |      
+|**Busy**|No new chat ticket will be assigned to agents who have set their status to be Busy. These chats will be queued in their respective group and then automatically assigned to agents when they make themselves Available. If the group queue is not enabled then these chats will be converted as Missed chats and stored in Inbox for reference. Eg: When you are working on important issues/escalations, Documentation work, Internal meetings/discussions, etc.|
+|**Away**|No new chat ticket will be assigned to agents who have set their status to be Away. These chats will be queued in their respective group and then automatically assigned to agents when they make themselves Available. If the group queue is not enabled then these chats will be converted as Missed chats and stored in your account for reference. Eg: Recess, Bio break, Lunch break.|
+|**Offline**|When an agent logs out or goes away from the Inbox module, they’ll be treated as Offline and no new conversation will be assigned to that agent even if they are present inside the yellow.ai platform in any other module like Insights, Studio, etc.|
+
+
+--------
+
+      
+  
+### 4.1 Difference between Busy & Away
+
+On paper, **Busy** and **Away** are both identical in function but when you log out after changing your status to **Away**, your status will not be **Offline** it will remain as **Away**. This is to avoid missing out on the chats raised by the end users when all your agents have logged off within working hours (for example, for a lunch break).
+- Admins can manually transfer the chat to an agent who has set themselves to Busy / Away. This manual transfer operation will not consider the agent's current concurrency and will assign tickets even if their concurrency is full.
+
+
+#### Example
+
+Consider a scenario wherein, all your agents break for lunch from 1 PM - 2 PM. If they are considered **Offline** during that time, the chats raised during the time will be completely missed unless Offline chats are enabled.  Even if they are enabled, those chats will only be captured in Open status and will not be assigned to agents immediately.
+Now if they are considered as **Away**, those chats will not be missed irrespective of whether Offline chats are enabled or not, and the chats will be queued, then automatically assigned to agents after 2 PM.
+
+  
+------
+
+### 4.2 Track activity via. Reports
+
+The time spent by each agent in the different statuses will be tracked and made available in the **Agent activity report**. The aggregated time spent by the agent i.e total Available/Busy/Away time spent by the agent per each day is  accessible in the **Agent performance report**.
+
+To download the Agent performance/ Agent activity report, follow the below steps:   
+
+1. Open **Inbox** > **Analytics**. Select **Reports** > **Chat reports**.
+2. Click **Generate** on **Agent activity** / **Agent performance report**.  
+3. Once the reports are generated (status = success), click **Download**.
+
+For a detailed article, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
+
+-------

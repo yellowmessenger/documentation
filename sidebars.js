@@ -52,6 +52,7 @@ module.exports = {
       items: [
         "cookbooks/marketplace-templates/edtech-template",
         "cookbooks/marketplace-templates/ecommerce-template",
+        "cookbooks/marketplace-templates/saas",
       ],
     }, 
     {
@@ -168,6 +169,7 @@ module.exports = {
         "cookbooks/whatsapp-channel/building-flows",
         "cookbooks/whatsapp-channel/testing",
         "cookbooks/whatsapp-channel/updates",
+        "platform_concepts/test",
       ]
     }, 
   ],
@@ -256,11 +258,12 @@ module.exports = {
             {
               type: "category",
               label: "Nodes",
+              link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/nodes'},
               collapsed: true,
               items: [
                 //"platform_concepts/studio/cloud-function",
                 
-                "platform_concepts/studio/build/nodes/nodes",
+               // "platform_concepts/studio/build/nodes/nodes",
                 "platform_concepts/studio/build/nodes/prompt-nodes",
                 "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/action-nodes",
@@ -566,16 +569,29 @@ module.exports = {
   items: [
    // "platform_concepts/engagement/cdp/overview",
     "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
+    "platform_concepts/engagement/cdp/user_data/user_properties",
     {
+      type: "category",
+      label: "Add users",
+      link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/add_user_overview'},
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data/add_users",
+        "platform_concepts/engagement/cdp/user_data/import_users",
+        "platform_concepts/engagement/cdp/user_data/conv_in_builder",
+        "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+      ]
+    },
+    "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
+
+/*    {
       type: "category",
       label: "Manage users",
       collapsed: true,
       items: [
-        "platform_concepts/engagement/cdp/user_data/user_properties",
-        "platform_concepts/engagement/cdp/user_data/add_users",
-        "platform_concepts/engagement/cdp/user_data_segments/manage_user_data"
+       // "platform_concepts/engagement/cdp/user_data/user_properties",
       ],
-    },
+    }, */
     
     
    /* {
@@ -606,7 +622,7 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data_segments/segments_overview'},
       collapsed: true,
       items: [
-        "platform_concepts/engagement/cdp/user_data_segments/segments_overview",
+        //"platform_concepts/engagement/cdp/user_data_segments/segments_overview",
         "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
         "platform_concepts/engagement/cdp/user_data_segments/segment_usecases",
         // "platform_concepts/engagement/cdp/user_data/targeted_segments",
@@ -640,7 +656,7 @@ module.exports = {
       collapsed: true,
       items: [
        // "platform_concepts/engagement/engage",
-        
+       "platform_concepts/engagement/outbound/engage-overview",
         
             
         {
@@ -670,7 +686,6 @@ module.exports = {
               items: [
                 "platform_concepts/engagement/outbound/outbound-campaigns/email-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/sms-campaign",
-                "platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/viber-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
               ],
@@ -802,9 +817,9 @@ module.exports = {
     {
       type: "category",
       label: "Channels",
+      link: {type: 'doc', id: 'platform_concepts/channelConfiguration/overview'},
       collapsed: true,
       items: [
-        "platform_concepts/channelConfiguration/overview",
         {
           type: "category",
           label: "Messaging channels",
@@ -819,8 +834,8 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-configuration",
             "cookbooks/whatsapp-channel/wa-migration",
             "cookbooks/whatsapp-channel/faqs",
+            "platform_concepts/channelConfiguration/whatsapp-char-limit",
               ]},
-            "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
             "platform_concepts/channelConfiguration/alexa",

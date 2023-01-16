@@ -11,7 +11,7 @@ The API supports different channels (SMS, email, and WhatsApp) and makes it easi
 
 **To view Notification API collections for each channel**, see
 
-[![](https://i.imgur.com/adPhuBf.png)](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8).
+[![](https://i.imgur.com/adPhuBf.png)](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8)
 
 ### 1.1 Features of the Notification API
 
