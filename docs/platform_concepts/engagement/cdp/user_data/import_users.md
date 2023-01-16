@@ -12,7 +12,7 @@ You can use a CSV file to bulk import new users or update existing user data.
 
 To ensure that your users are imported successfully without issues, verify the following:
 
-* **Use correct column headers**: Make sure that the column headers match with the name of the user property that you want to map. These names are case sensitive and the column header should not include spaces before/after. 
+* **Use correct column headers**: Make sure that the column headers match with the name of the user property that you want to map. These names are case-sensitive and the column header should not include spaces before/after. 
 
 :::note
 If any of these column headers do not match with any user property, the entire CSV import will fail.
@@ -27,7 +27,7 @@ If any of these column headers do not match with any user property, the entire C
 | email     | A valid email id format                          |
 | Number    | Any integer or decimal number with max 15 digits |
 | Phone     | A valid phone number with country code           |
-| url       | A valid url format                               |
+| url       | A valid URL format                               |
 | date      | YYYY-MM-DD format                                |
 | dateTime  | YYYY-MM-DD hh:mm:ss format                       |
 | time      | hh:mm:ss format                                  |
@@ -50,7 +50,7 @@ Create a CSV file with user details. Make sure that the column headers match the
 
 :::note
 * These names are **case sensitive** and the column header **should not contain spaces** before/after.
-* It is required to pass phone numbers with country codes in CSV file.
+* It is required to pass phone numbers with country codes in a CSV file.
 :::
 
 ***
@@ -88,7 +88,7 @@ To add users through CSV, follow these steps:
 
 ## Step 3: Analyse import errors
 
-Once you import a CSV file, you can check what happend with the records. You can see the count of new entries added, entries merged, and failed entries. 
+Once you import a CSV file, you can check what happened with the records. You can see the count of new entries added, entries merged, and failed entries. 
 
 New users might not be created with all entries you upload. The following are the possible reasons:
 - [Wrong column headers](#csv-file-checklist)
@@ -109,12 +109,12 @@ The downloaded log contains the following information:
 ![](https://i.imgur.com/PVDp28M.png)
 
 * **Summary**: Shows the count of user records that were newly added, failed to add, and were merged into the existing user details.  
-   - Records that were imported as new users
-   - Records for which import failed (included below)
-   - Records that were merged into existing users
+   - Records that were imported as new users.
+   - Records for which import failed (included below).
+   - Records that were merged into existing users.
 * **BOT_ID**: Bot Id for which the CSV was uploaded.
-* **REQUEST_PAYLOAD**: The user record for which an import was attempted but FAILED
-* **ERROR_PAYLOAD**: The error details due to which above user import FAILED:
-    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#21-user-property-data-types) was passed
-    - `invalidProperty`: Properties that do not exist in the user table
-* **LINE_NUMBER**: The row number of the user record for which import FAILED
+* **REQUEST_PAYLOAD**: The user record for which an import was attempted but FAILED.
+* **ERROR_PAYLOAD**: The error details due to which the above user import FAILED:
+    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#21-user-property-data-types) was passed.
+    - `invalidProperty`: Properties that do not exist in the user table.
+* **LINE_NUMBER**: The row number of the user record for which import FAILED.
