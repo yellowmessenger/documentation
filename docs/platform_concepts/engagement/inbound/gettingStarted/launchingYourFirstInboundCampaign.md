@@ -56,7 +56,7 @@ At any point, you can click
 * **Save as drafts** to save the current settings as draft and exit the campaign builder
 :::
 
-5. In **Web behaviour**, define the condition under which visitors should see this campaign. For more details, see [here](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType/)
+5. In **Web behaviour**, define the condition under which visitors should see this campaign. For more details, see [here](/docs/platform_concepts/engagement/inbound/webBehaviourTriggers/webBehaviorTriggerType)
 
    ![](https://i.imgur.com/Tl4n4zU.png)
 

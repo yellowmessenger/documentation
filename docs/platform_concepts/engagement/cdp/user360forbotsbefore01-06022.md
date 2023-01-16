@@ -8,7 +8,7 @@ sidebar_label: Migrate data to User 360
 The new module User 360 has been introduced recently. It is enabled for all bots created after June 1, 2022.   
 
 
-The old Users Module is being replaced with the new [User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/).
+The old Users Module is being replaced with the new [User 360](/docs/platform_concepts/engagement/cdp/overview).
 
  
 ****
@@ -49,16 +49,16 @@ Bots that have records in the old Users Module will see a data migration window.
 2. Once the data is downloaded, click **Migrate data**. You will see the Data migration screen. 
 3. Map Old user properties to the  New user properties.
 
-   Under New user property, you will see [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id) and pre-defined [System properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/#22-system-user-properties).
+   Under New user property, you will see [userId](/docs/platform_concepts/engagement/cdp/user_data/user_properties#13-user-id-userid-as-a-property) and pre-defined [System properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties#11-system-user-properties).
 
-* To create a [Custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/#23-custom-user-properties), click **+ Add new user property**.
+* To create a [Custom property](/docs/platform_concepts/engagement/cdp/user_data/user_properties#22-create-custom-user-property), click **+ Add new user property**.
 
 ![](https://i.imgur.com/MiVymww.png)
 
   
   
 
-* To know the data types supported in User 360, see [User property datatypes](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/#21-user-property-data-types) . 
+* To know the data types supported in User 360, see [User property datatypes](/docs/platform_concepts/engagement/cdp/user_data/user_properties#22-create-custom-user-property). 
 
 The following mappings are not recommended as it might throw data incompatibility errors, and prevent from successful migration of data.
 
@@ -88,7 +88,7 @@ Once done, click on **verify**. On this screen you can review the old and new pr
 
 ### View migration status activity
 
-To view the status of your migration activity, click [User logs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data/#user-logs). Here you can refer to the activity *Migrate Data*. 
+To view the status of your migration activity, click [User logs](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#view-user-activity-logs). Here you can refer to the activity *Migrate Data*. 
    * If the status is *In Progress*, the migration is still going on. 
    * The status will change to *Completed* once the migration is done.
 

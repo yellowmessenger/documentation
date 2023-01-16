@@ -24,7 +24,7 @@ These names are **case sensitive** and the column header **should not include sp
 6. [Create a segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment) using those tags to refer to the various set of audiences you have imported.
 
 :::note
-If the [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
+If the [userId](/docs/platform_concepts/engagement/cdp/user_data/user_properties#13-user-id-userid-as-a-property) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
 :::
 
 ## Pre-checks before uploading the CSV
@@ -112,6 +112,6 @@ The downloaded log contains the following information:
 * **BOT_ID**: Bot Id for which the CSV was uploaded.
 * **REQUEST_PAYLOAD**: The user record for which an import was attempted but FAILED
 * **ERROR_PAYLOAD**: The error details due to which above user import FAILED:
-    - `invalidDataType`: Properties for which the wrong [data type](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview/#21-user-property-data-types) was passed
+    - `invalidDataType`: Properties for which the wrong [data type](/platform_concepts/engagement/cdp/user_data/user_properties#11-system-user-properties) was passed
     - `invalidProperty`: Properties that do not exist in the user table
 * **LINE_NUMBER**: The row number of the user record for which import FAILED

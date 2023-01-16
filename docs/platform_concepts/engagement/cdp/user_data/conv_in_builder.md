@@ -48,7 +48,7 @@ The user record is updated in the database using the session mapping.
 </center>
 
 :::note
-The data captured through Studio conversations for [Identified Users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#what-are-identified-users) will be updated automatically in the Users table.
+The data captured through Studio conversations for [Identified Users](/docs/platform_concepts/engagement/cdp/user_data/add_user_overview#11-user-types) will be updated automatically in the Users table.
 :::
 
 ## Fetch user properties through conversations

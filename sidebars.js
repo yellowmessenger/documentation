@@ -622,7 +622,7 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data_segments/segments_overview'},
       collapsed: true,
       items: [
-        "platform_concepts/engagement/cdp/user_data_segments/segments_overview",
+        //"platform_concepts/engagement/cdp/user_data_segments/segments_overview",
         "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
         "platform_concepts/engagement/cdp/user_data_segments/segment_usecases",
         // "platform_concepts/engagement/cdp/user_data/targeted_segments",
@@ -686,7 +686,6 @@ module.exports = {
               items: [
                 "platform_concepts/engagement/outbound/outbound-campaigns/email-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/sms-campaign",
-                "platform_concepts/engagement/outbound/outbound-campaigns/whatsapp-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/viber-campaign",
                 "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
               ],
