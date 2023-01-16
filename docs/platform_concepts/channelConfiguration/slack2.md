@@ -184,7 +184,7 @@ The Slack Web API is an interface for querying information from and enacting cha
 
 **For multi-workspace configuration**
 - As a pre-requisite, you should complete Step3 mentioned in Multi-workspace configuration.
-- For every user who interacts with the bot, you can fetch their teamId using [sender](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/#system-variables). Sender would include `[teamId]_[userId]`.
+- For every user who interacts with the bot, you can fetch their teamId using [sender](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/#22-system-variables). Sender would include `[teamId]_[userId]`.
 - Using the `teamId`, you can fetch the relevant `accessToken` from the Bot Table.
 
 ### 5.1 Slash Commands
