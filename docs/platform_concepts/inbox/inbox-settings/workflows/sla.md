@@ -5,25 +5,26 @@ sidebar_label : SLA settings
 
 
 
-A service-level agreement (SLA) defines the level of service expected by a customer from a supplier, laying out the metrics by which that service is measured, and the remedies or penalties, if any, should the agreed-on service levels not be achieved. Usually, SLAs are between companies and external suppliers, but they may also be between two departments within a company.
 
-Most service providers have standard SLAs — sometimes several, reflecting various levels of service at different prices.
+A service-level agreement (SLA) defines the level of service expected by a customer from a supplier. It lays out the metrics by which that service is measured, and the remedies or penalties, if any, if the agreed-on service levels are not achieved. Usually, SLAs are between companies and external suppliers, but they may also be between two departments within a company.
+
+Most service providers have standard SLAs reflecting various levels of service at different prices.
 
 
 ------
 
-On the SLA settings page, **Inbox Admins** can define new SLAs, add conditions, and set targets for the inbox agents who are responsible to address the tickets. 
+**Inbox Admins** can define new SLAs, add conditions, and set targets for the inbox agents responsible for addressing the tickets. 
 
 
 
 :::note
-- Every ticket has an SLA attached to it. 
-- Two SLA policies cannot be applied to a single ticket. 
-- The priority of assignment will be Top > Down as the policies appear in the UI. 
+- First SLA policy that gets applied to a ticket will not change at any point (even if the group/tag is changed) because SLAs are end customer facing. 
+- Two SLAs policies cannot be applied to a single ticket. 
+- The priority of assignment will be Top → Down as the policies appear in the UI. 
 :::
 
 
-Follow the below steps to configure SLAs: 
+To configure SLAs, follow the below steps:
 
 1. Open **Inbox** > **Settings**.  
 2. Search and select **Service level agreement (SLA)**.
@@ -32,7 +33,7 @@ Follow the below steps to configure SLAs:
 ![](https://i.imgur.com/qAM0tUG.png)
 
 
-3. All the available SLAs are listed on this page. The **State** toggle next to the SLA names can be enabled or disabled, this will activate or deactivate the SLAs. 
+3. All the available SLAs are listed on this page. Use the State toggle next to the SLA names to enable or disable an SLA.
 4. Existing SLAs can be edited or deleted by clicking the menu next to the SLA name and selecting **Edit** or **Delete**. 
 
 ![](https://i.imgur.com/Ls5lfpG.png)
@@ -49,15 +50,15 @@ Follow the below steps to configure SLAs:
 7. By default, the SLA defined on this page will apply to all email tickets. If you want this SLA to apply only to certain **Group** or **Tag**: 
     - Click **Add another condition**.
     ![](https://i.imgur.com/DKPPI94.png)
-    - Slecte **Group**/ **Tag**. **Group** / **Tag** names will be listed in the drop-down, select the required value. 
+    - Select **Group**/ **Tag**. **Group** / **Tag** names will be listed in the drop-down, and select the required value. 
     ![](https://i.imgur.com/9aaLlRz.png)
 
-    - You can add multiple conditions by clicking on **Add another condition**. This SLA will be applicable if both conditions hold (AND condition). For example, in the above screenshot, SKmart SLA will be applied if the ticket belongs Payments group and is tagged as critical.  
+    - You can add multiple conditions by clicking on **Add another condition**. This SLA will be applicable if both conditions hold (AND condition). For example, in the above screenshot, SKmart SLA will be applied if the ticket belongs to the Payments group and is tagged as critical.  
 
-8. SLA targets are separated based on priority. You can set targets that the team should meet, otherwise required action can be taken. You can set the Timings(Minutes/Hours/Days) in the normal calendar hours for High, Medium, and Low priority tickets. By enabling the **Escalations** and **Reminder** toggle, agents will be notified. 
+8. SLA targets are separated based on priority. You can set targets that the team should meet, or the SLA gets breached. You can set the Timings(Minutes/Hours/Days) in the normal calendar hours for High, Medium, and Low priority tickets. Agents will be notified by enabling the **Escalations** and **Reminder** toggle. 
     - **Resolution time**: The total time taken by the agent to provide the resolution. It is calculated based on the time the ticket was opened (or assigned if it was directly assigned) to the time it was set as resolved.
-    - **First response time**: The measure of what time it took for the agent to first reply to the ticket after it was raised in the platform. It is calculated based on the time the ticket was opened (or assigned if it was directly assigned) to the first response from a human agent.
-    - **Every response time**: The time between every response of the agent and the end user, so to stick to the SLA agent will have to reply within X mins/hours to the end user after their every reply. It is calculated based on the time from when the end user sends a reply to the time agent replies back.
+    - **First response time**: The time taken by an agent to send a first reply to the ticket that was created.
+    - **Every response time**: The time taken for an agent to respond to a ticket after the end user/customer has replied. 
     
 ![](https://i.imgur.com/WkmTF39.png)
 
@@ -69,7 +70,9 @@ Follow the below steps to configure SLAs:
 - If the **Priority** of the ticket is changed, SLA will also change based on the priority. Before changing the SLA, if there was a **breach of policy**, it will be recorded and will be present as part of reports. Breaches will not be back-dated. 
 :::
 
-9. Add **Reminders** to remind agents when the SLA due time approaches. Multiple reminders can be added to a single SLA policy to approach the agent or relevant stakeholders when the SLA rule breach approaches.
+#### Add Reminders to remind agents before the SLA due time 
+
+9. Multiple reminders can be added to a single SLA policy to approach the agent or relevant stakeholders when the SLA rule breach approaches.
     - You can select when the remainder must be sent. Select **First response/Next response/Resolution time**
     - Add when the remainder must be sent by mentioning it next to **approaches in**, it is the representative of how much time before the reminder will be sent. 
     - The reminder will be sent as an email to the assigned agent, added agents/admins, or any email ID mentioned in the list. 
@@ -80,8 +83,9 @@ Follow the below steps to configure SLAs:
 ![](https://i.imgur.com/y0btViB.png)
 
 
+#### Add Escalation to send escalations mails when the SLA is violated. 
 
-10. Add **Escalation** to send escalations when the SLA is violated. This will send an email to the mentioned list when an SLA is breached or after a selected time the SLA is breached.
+10. Adding escalation will send an email to the mentioned list when an SLA is breached or after a selected time the SLA is breached.
     - You can select when the escalation mail must be sent. Select **First response/Next response/Resolution time**
      - Add when the escalation must be sent by mentioning it next to **escalate in**.
      - Add the list of email IDs that this escalation must be sent to. 
