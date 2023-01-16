@@ -86,7 +86,7 @@ There are two reasons why you are not able to see any WhatsApp templates within 
 <details>
 <summary> Why am I not able to see the template message content that I just sent? </summary>
 <div>
-WhatsApp templates created with <a href="https://developers.facebook.com/docs/whatsapp/pricing/">hsm</a>  object will not be displayed with the actual content inside Inbox. However templates created with <a href="https://developers.facebook.com/docs/whatsapp/pricing/"> template </a> object will be displayed inside Inbox. If you are not seeing the actual template content, then the template you sent out is most likely created with hsm object. 
+WhatsApp templates created with <a href="https://developers.facebook.com/docs/whatsapp/pricing">hsm</a>  object will not be displayed with the actual content inside Inbox. However templates created with <a href="https://developers.facebook.com/docs/whatsapp/pricing"> template </a> object will be displayed inside Inbox. If you are not seeing the actual template content, then the template you sent out is most likely created with hsm object. 
 	
 </div>
 </details> 

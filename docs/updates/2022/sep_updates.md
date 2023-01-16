@@ -26,7 +26,7 @@ The internal Knowledge base is introduced as a feature of inbox, it is a central
 | *New feature*
 
 Proactive notifications can be configured on the contacts tab, it let agents reach the customers (outbound) and create a ticket to continue their conversation. This is helpful in solving relationship management use cases in B2B and sales-support hybrid use cases.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts/). 
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts). 
 
   
   
@@ -39,7 +39,7 @@ Proactive notifications can be configured on the contacts tab, it let agents rea
 
 
 Sticky agent assignment is the process of connecting your customers to the agents they are already familiar with. Chat tickets raised in this manner will be assigned to their preferred agents. The tickets can also be assigned to the next available agent if the preferred agent is busy or unavailable at that moment.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/stickyagent/). 
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/stickyagent). 
   
   
 ***
@@ -118,7 +118,7 @@ User Search now supports the queries that are supported for Create User Segment:
 | *New feature*
 
 Clients can now use SAP.IO Integration in the cloud to create, update or get the service request that is raised by users.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/sap-io/).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/sap-io).
   
 
 #### 4.2 AWS S3 Integration
@@ -126,7 +126,7 @@ Clients can now use SAP.IO Integration in the cloud to create, update or get the
 | *New feature*
 
 Yellow.ai Integration with AWS-S3 allows you to seamlessly connect your remote bucket with our platform. Clients can now use this integration in the cloud to upload or delete files, get signed URLs, and create buckets.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/aws-s3/).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/aws-s3).
 
 
 #### 4.3. Improvised logging in Integrations backend
@@ -250,7 +250,7 @@ This helps you analyse flow paths taken by end-users in much better detail and d
 | *New feature*
 
 Slack is a workplace communication tool - a single place for messaging, tools and files. It is an instant messaging system with lots of add-ons for other workplace tools. Besides an intuitive UI, you can leverage group and person-to-person messaging. These are more than 1500 apps and allow the creation of custom apps which have evolved Slack to become a one-stop-shop for a lot of users.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/slack2/).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/slack2).
   
 
 

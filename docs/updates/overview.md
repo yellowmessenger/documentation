@@ -18,7 +18,7 @@ Here is a list of product updates we made in the month of **December** to provid
 | *New feature* 
 
 You can now create **Email templates** from the settings and communicate with customers by providing a consistent and professional look & feel for all of their emails. This makes it engaging & easier for the customers to read which improves their overall experience.   
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte/).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte).
 
 
 
@@ -92,7 +92,7 @@ EPIC EHR is a cloud-based EHR that contains all the information related to the p
 
 #### 3. Tracking metrics for third-party live agent integrations
 
-**Agent Session** and **Agent Message Count** per user for third-party live agent integration can now be tracked on the [metabase](https://overview.yellowmessenger.com/metabase/).
+**Agent Session** and **Agent Message Count** per user for third-party live agent integration can now be tracked on the [metabase](https://overview.yellowmessenger.com/metabase).
 
 -----
 ## 4. **Engage**

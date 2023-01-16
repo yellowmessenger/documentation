@@ -51,7 +51,7 @@ You can see its functioning on the [chat screen](https://docs.yellow.ai/docs/pla
 
 Follow the below steps to generate the google translate API key: 
 
-1. Go to [Google Cloud Platform console](https://console.cloud.google.com/) and log in with your Google credentials.
+1. Go to [Google Cloud Platform console](https://console.cloud.google.com) and log in with your Google credentials.
 
 ![Get started](https://cdn.yellowmessenger.com/UppSzrvO9uXf1622124831392.png)
 

@@ -3,15 +3,12 @@ title: SAAS
 sidebar_label : SAAS
 ---
 
-<!--https://docs.google.com/presentation/d/1sWAp19g5fVZZTsK16Jq8ajTpIoAHiqd8Ltl1lafZHtg/edit#slide=id.p
--->
-
 
 Software as a service (or SaaS) is an industry concept of delivering applications over the internet. Marketplace's SaaS template is designed to promote an industry's SaaS products to customers and offer them a product demo.
 
-Along with an option to explore products and offerings, customers can also view case studies of how this product was implemented to renowned customers and how it benefited them (customer testimonials). This template also offers to book a product demo with a company executive and chat with live support agents.
+Along with an option to explore products and offerings, customers can also view case studies of how this product was implemented to renowned customers and how it benefited them (customer testimonials). Customer can also book a product demo with a company executive and chat with live support agents.
 
-You can customize this template as per your industry. Reuse this flow design for your platform offerings (SaaS products), and add your customer use cases. 
+You can customize this template as per your industry and business requirements. Reuse this flow design for your platform offerings (SaaS products), and add your customer use cases. 
 
 ![](https://i.imgur.com/halY2LR.png)
 
@@ -26,13 +23,13 @@ Bot users can also read customer use cases from the main flow, directly book a d
 
 ## 1. Prebuilt use cases 
 
-The most common use cases for a SaaS industry to promote their products are prebuilt in the template, following are the flows:
+The most common use cases (flows) are prebuilt in this template for a SaaS industry to promote their products, following are the flows:
 
 
-1. **Home flow/Display menu**: After the welcome message is displayed, WelcomeLCsXc is executed. It is the home flow that is designed for WhatsApp and other channels. It displays the options that the bot user can select as the bot starts.
-2. **Explore products and offerings**: This flow is designed to provide insights into the available products. Based on the user's choice, the flow will be switched to the respective product flow (explore by use case/channel/industry).
+1. **Home flow/Display menu**: After the welcome message is displayed, WelcomeLCsXc is executed. It is the home flow that is designed for WhatsApp and other channels. It displays the menu a bot user can select as soon as the bot starts conversing.
+2. **Explore products and offerings**: This flow is designed to provide insights into the available products. Based on the user's choice, the flow will switch to the respective product flow (explore by use case/channel/industry).
     - **Explore by (use case, channel, and industry)**: These flows are cloned flows. They are all designed to display a description of the product and prompt the bot users to book a demo. 
-3. **Customer case studies**: This flow is designed to give a brief about the company and its impact on the industries. It gives the bot user to select the specific industry to explore the use cases implemented for them and read their testimonials. A pre-recorded demo/images can be displayed as a promotion and finally, the bot user will be prompted to book a demo.
+3. **Customer case studies**: This flow is designed to give a brief description of the company and its impact on the industries. It allows the bot user to select and explore the use cases implemented for a list of industries and read their testimonials. A pre-recorded demo/images can be displayed as a promotion and finally, the bot user will be prompted to book a demo.
 4. **Book a demo**: This flow collects the bot user's details(name, number, email) and displays a calendar and clock to select a preferred time and date to schedule a call with the executive to understand the product in depth. 
 5. **Connect with support**: This flow provides customer support either by fetching answers from the trained FAQs or by connecting the bot user directly to the support agent after collecting the details (name, number, query).
 
@@ -98,7 +95,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 
 1. **Start trigger**: This flow is triggered when the category is selected in the **Explore products and offerings** flow. 
 2. **Display sub-categories**: Using a [carousel node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel), sub-categories (Channels: Voice, Instagram, WhatsApp) are displayed. 
-3. **Verify the secected category and display details**: ```Explore_by_channel```  is an [entity](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) which is trained for 3 categories of ```entity value``` (Voice, Instagram, WhatsApp). The response obtained by clicking the carousel button will be identified as an entity value. If ```entity value``` is equal to ```Voice automation```, voice related details are displayed using [Text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text), [Video](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#4-video), and [Image](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-image) nodes. Similarly, when Instagram/WhatsApp are identified, the respective details are displayed. 
+3. **Verify the selected category and display details**: ```Explore_by_channel```  is an [entity](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) which is trained for 3 categories of ```entity value``` (Voice, Instagram, WhatsApp). The response obtained by clicking the carousel button will be identified as an entity value. If ```entity value``` is equal to ```Voice automation```, voice related details are displayed using [Text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text), [Video](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#4-video), and [Image](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-image) nodes. Similarly, when Instagram/WhatsApp are identified, the respective details are displayed. 
 4. **Next action**: After learning about the product, the bot user can select what to do next- two options (Book a demo and Main menu) are displayed using the [carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel) node. Book a demo or WelcomeLCsXc flow is executed next based on the response. 
 
 ![](https://i.imgur.com/eHluZ3i.png)
@@ -117,7 +114,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 
 1. **Start trigger**: Triggered when the **Customer case studies** option is selected from the main menu (WelcomeLCsXc). 
     - It can also be triggered when the bot user types a sentence that matches the intent- *customer case studies* options. You can customize this [intent.]
-2. **Display an intro and sub-categories**: Using a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) details about the company are displayed followed by a carousel node to allow the bot user to select the category of an industry that they would like to learn more about (banking, retail, and government). 
+2. **Display an intro and sub-categories**: Using a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text), details about the company are displayed followed by a carousel node to allow the bot user to select a category that they would like to learn more about (banking, retail, and government). 
 3. **Verify the category selected**: The selected category from the carousel is identified using a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition). 
 - ```@case_studies``` entity is trained to identify case studies categories as ```entity values```.  
     - If ```entity value``` is equal to ```Retail``` the flow continues to show details pretaining to Retail. Likewise for the other categories. 
@@ -126,7 +123,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 
 4. **Display introduction for the case study**: With [message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) all the information related to the case study can be displayed. A **Text node** is used here.
 5. **Identify channel and display quick replies**: Channel is identified using [channel filter](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) node. If the bot user is conversing from a WhatsApp channel, [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel) node is used to display the 3 menu options. Similarly, for other channels, [Quick reply](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to display the 3 menu options (Read more, See bot in action, Go back).
-6. **Identify the option selected and display details**: [Condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) is used to identify the selected options.
+6. **Identify the selected option and display details**: [Condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) is used to identify the selected options.
     - If **Read more** is selected, [Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) is used to display the detailed case study. 
     - If **See bot in action** is selected, an [image node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-image)/ [video node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#4-video) is used to display demo. 
     - If **Go back** is selected, the flow goes back to the previous node. This is configured in the [Tools section > Behaviour > Go back alias](https://docs.yellow.ai/docs/platform_concepts/studio/tools#221-behaviour).
@@ -156,7 +153,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
     - ```@demo_date``` [entity](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) is trained in the entities section for the pattern - 	```([0-2][0-9]|(3)[0-1])(/)(((0)[0-9])|((1)[0-2]))(/)\d{4}```. Using [Condition](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) node, it is verified if the user entered the date in DD/MM/YYYY format.
     - If the date entered is correct, the date value is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - **demoDate**.
     - Using [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-question) node, the bot user is asked to enter the time in HH:MM format. 
-    - ```@demo_time``` [entity](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) is trained in the entities section for the pattern - 	```([0-1]?[0-9]|2[0-3]):[0-5][0-9]```. Using [Condition](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) node, it is verified if the user entered the date in HH:MM format.
+    - ```@demo_time``` [entity](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) is trained in the entities section for the pattern - 	```([0-1]?[0-9]|2[0-3]):[0-5][0-9]```. Using [Condition](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) node, it is verified if the user has entered the date in HH:MM format.
     - If the time entry is correct, the time value is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) - **demoTime**.
     - **getCalenderTime** is a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) that is written to return **start** and **end** date-time (each scheduled meeting lasts for 30 min). **demoDate** and **demoTime** variables are passed into getCalenderTime function, and the code will calculate and return the **start** and **end** date and time. This output is stored in **StartDateTime** variable. 
 
@@ -168,8 +165,8 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 
 ![](https://i.imgur.com/5tR24lf.png)
 
-5. **Create Google calender event**: [Google calender third party integration](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/google-calendar) is enabled from the Integrations section. The details obtained from the conversation are passed into the Google calendar node to schedule a meeting (Title, Description, Start and End time, and Host and guest email).
-6. **Identify the channel and display options to Confirm or Reschedule booking**: After the meeting is scheduled successfully, using the [Condition](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) node, the channel is identified. If the identified channel is WhatsApp, [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel) node is used to display options to Reschedule/Confirm. If the bot conversation is happening from other channels, the [Quick replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to display Reschedule/Confirm options. 
+5. **Create Google calender event**: [Google calender third party integration](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/google-calendar) is enabled from the **Integrations** section. The details obtained from the conversation are passed into the **Google calendar** node to schedule a meeting (Title, Description, Start and End time, and Host and guest email).
+6. **Identify the channel and display options to Confirm or Reschedule booking**: After the meeting is scheduled successfully, using the [Condition](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) node, the channel is identified. If the identified channel is WhatsApp, [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel) node is used to display options to **Reschedule/Confirm**. If the bot conversation is happening from other channels, the [Quick replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to display **Reschedule/Confirm** options. 
 
     - **Reschedule booking**: If Reschedule is selected, the flow is directed back to step#3 to schedule a meeting from the beginning. 
     - **Confirm booking**: If the booking is confirmed, using a [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node, meeting details(**name, email, phone, demodate and demotime**) are stored in ```book_a_demo``` table ([table](https://docs.yellow.ai/docs/platform_concepts/studio/database) and respective columns are existing with the name ```book_a_demo```)
@@ -194,7 +191,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
     - If Chat with support is selected, a support agent will be connected to take the conversation forward. 
 3. **FAQs**: All the FAQs about the company are added and trained with the answers in the [FAQs section](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs). When FAQs is selected, a condition node ([channel filter](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter)) is added to identify the channel from which the conversation is taking place. 
     - If the conversation is happening on WhatsApp, [WhatsApp list](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#22-whatsapp-list) node is used to display the list of FAQs.
-    - If the conversation is via. other channels, [Quick reply](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to display the list of FAQs. 
+    - If the conversation is via other channels, [Quick reply](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to display the list of FAQs. 
     -  User can also type the query in the input bar.
     -  Based on the selection/entry, the answer will be fetched from the trained FAQs. 
 
@@ -222,8 +219,10 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 
 ------
 
-
-
+<!--
 ## 2. Build your use case 
 
-1. Add multiple products 
+TBA
+-->
+
+
