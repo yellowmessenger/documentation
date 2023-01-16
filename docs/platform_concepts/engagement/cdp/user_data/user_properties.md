@@ -67,9 +67,9 @@ The following properties are enabled by default. You can see these in User 360.
 ### 1.3 User ID (userId) as a property
 
 
-`userId` is a unique property in the users schema. It is used as a unique identifier for every user.
+`userId` is a unique property in the users schema and is used to identify a user.
 
-You may want to set a userId (a unique user identifier) for every user you create, to be able to recognise them as the same user on multiple touch-points. When the userId is the same as email, you might want to pass it both as userId and email. 
+You need to set a userId (a unique user identifier) for every user that you create, to be able to recognise them as the same user on multiple touch-points. If `userId` is the same as email, you might want to pass it both as `userId` and email address. 
 
 Passing the userId for your users will allow you to identify them on multiple touch-points, which will further allow you to:
 
@@ -78,12 +78,7 @@ Passing the userId for your users will allow you to identify them on multiple to
 - Offer personalised engagement across multiple touch-points/channels
 - Enrich the profile of that user with the data collected from multiple touch-points/channels
 
-`userId` can be set through the following:
-
-- [Data collection](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#3-using-builder-to-create--update-user-records-in-users-table) nodes in builder
-- While [adding or editing](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data/#add--edit-users) a single user through UI
-- [userId column](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv/#using-the-userid-column-to-identify-users), while importing users from a CSV
-- Create and Edit User [REST APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api/)
+You can use `userId` to identify a user and use it to capture add/update user data, capture data through bot conversation.
 
 :::warning
 No two users can have the same userId
@@ -97,7 +92,10 @@ A tag is a label used to categorise users based on certain characteristics or at
 
 A user can have more than one tag.
 
+![](https://i.imgur.com/om7QH6j.png)
 
+
+***
 
 ## 2. Manage user properties
 
@@ -185,7 +183,7 @@ If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](ht
 
 While these user properties are accessible in all the nodes of Studio, we’ll cover some of them with-in this document, to show you how you can create the right conversion for the right set of users.
 
-First you might want to read [Using Builder to capture user data through conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data).
+For more details, see [Using Builder to capture user data through conversations](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder).
 
 :::info
 All user properties are accessible in nodes under “User properties”.
@@ -193,4 +191,5 @@ All user properties are accessible in nodes under “User properties”.
 
 You can improve the engagement rates by creating personalised content. To do this, in your **Message Nodes**, you can can access user properties by clicking on the variable dropdown and selecting any **User Property**, or my simply accessing it using {{user.**propertyName**}}.
 
-<img src="https://i.imgur.com/Mebonpy.png" alt="drawing" width="60%"/>
+
+<img src="https://i.imgur.com/UWscij0.png" alt="drawing" width="60%"/>

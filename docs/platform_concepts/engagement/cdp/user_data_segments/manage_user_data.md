@@ -1,111 +1,63 @@
 ---
-sidebar_label: Capture data through conversations
-title: Capture data through conversations
+sidebar_label: Manage user data
+title: Manage user data
 ---
-When building a bot on yellow.ai, you can use [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/) to capture user details and enrich user data. You can also create personalised conversations using [User properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#manage-user-properties) in Studio conversations. Every bot session is mapped to a record in User 360.
-
-## 1. User types
-Users are categorised into two types on basis of the availability of their data in our system:
 
 
-### 1.1 Unidentified users
 
-Users who are not registered or whose `userId` is not added in Yellow.ai.	
+### Export user data
 
-An unidentified user is an individual whose `userId` is not captured in our system. For a new user on a channel, when a user property other than `userId` is captured, a record is created in User 360.
+ You can download your entire user data or a segment specific user data and use it wherever required. For example, you can update user details and import it again, and upload user data in a third-party system for your business use cases.
 
-For example, the moment name is captured, a record is created in User 360 and maps the ongoing session to the record.
+To download your entire user base, in All users, click **Actions** > **Download all user data**.
 
-![](https://i.imgur.com/k35p40f.png)
+![](https://i.imgur.com/EPBeFUv.png)
 
-:::info
-**userId** is also available as a property under **User Properties** of  **Studio** > **Build**.
-:::
 
-### 1.2 Identified users 
+To download users in a particular segment, select the desired **Segment** > **Actions** > **Download segment user data**.
 
-These are registered users whose [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties/#1-user-id) is added in Yellow.ai. A record is created for each identified user in the users table. Any update made to the identified user through builder will show up in User 360.
+![](https://i.imgur.com/0FIZgh7.png)
 
-You can update only identified users' data. Any data captured for [Identified users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/builder_capture_data/#what-are-identified-users) is automatically updated in the Users table.
+You will get a download link to your email. Alternatively, you can download it from **User logs** > Apply Bulk user download filter > Click on **Download log**.
 
-The session mapping changes when an existing `userId` is provided.
 
-For the session mentioned in the previous section, if the `userId` is `john@yellow.ai` which does not exist in User 360, the `userId` of the session will be updated without changing the mapping.
+![](https://i.imgur.com/jNPgPuq.png)
 
-![](https://secure-res.craft.do/v2/WvXLj9MBoxwsE1JhYdg5yCRjnyWs6uzQFF5i9xuHdDFzqh7sYqt3Rxr7pB68h7BeZhVVPU5iyTT9SaFto6iN7CoxM68rVUsJbhVTgb947xypNtqo1s3MWEsC8zCsa12quWXVsHx46LoJ3jLpN3CfqDCovop7ENkfwyCyDNpCEmPPvqik9YTHqNrwLrkfHqktxjo6ZD3VhoYdAxbup34V4gUQw5o2mPL8n6jDYhorDfBmqwY5ENzPrwdsSvn6L7Cw2e7MVh8QTgLDEYNmFa5Y24Fg6439hMqU1YtvuGk9Ag8B2cNj72/Image.jpg)
+***
+
+## Delete user data
+
+You can delete one or more users if required. However, you need to [export their data](#export-user-data) as a backup before deleting.
+
+
+To delete a single user, navigate to the user that you want to delete, click on the more options icon > **Delete user**.
+ 
+  ![](https://i.imgur.com/28kG5jg.png)
+
+To delete multiple users at a time, select each user that you want to delete and click **Delete users**.
+
+   ![](https://i.imgur.com/nnB6VH2.png)
+
+
+To delete user data using API, use [DELETE user API](https://documenter.getpostman.com/view/17583548/UVsEVUsg#73c5f32f-e6a5-4a3b-afbe-c17b7770d65b).
+
+
+***  
+
+## View user activity logs
 
   
 
-If the `userId` (say, adam@yellow.ai) already exists, the current session will be mapped to the existing record and it’s properties will be refreshed with the values available in the record.
-
-![](https://secure-res.craft.do/v2/WvXLj9MBoxwsE1JhYdg5yCRjnyWs6uzQFF5i9xuHdDFzqh7sYqt3Rxr7pB68h7BeZhVVPU5iyTT9SaFto6iN7CoxM68rVUsJbhVTgb947xypNtqo1s3MWEsC8zCsa12quWXVsHx46LoJ3jLpN3CfqDCowLVqsYQnENyjT2hddNejsC5xzh2MmP8AiEK2sEJWGVSYLjEWVAdBsgevad1WU5xQjGBf78caLXZxsRmLX8Y6MDasCCPp4MBV1Bpu6Go8jJA9gsNscVBiMgCWHL222hHxL7p8N2PKsvheEqwV9AWKGyrDDJ/Image.jpg)
-
- #### Example
- The following example shows how the information is mapped mapped based on the `userId`.
-  
- **Unidentified record**
-
-userId | firstName | whatsAppOptin | deviceToken | Tag
-------- | ------------ | ------------ | -------- | ----
-- | Jim | Yes | (123,456) | (t1,t3)
+User logs is a space for your to audit your user data. There are 3 types of logs that User 360 supports:
 
 
-**Identified record**
+-  **CSV import**: This log appears whenever you [import users using a CSV file](/docs/platform_concepts/engagement/cdp/user_data/import_users). The associated *Download log* link contains details about the import process, that is, which records were imported, merged, or failed.
+-  **Bulk users download**:  This log appears whenever you [export your user data](#export-user-data). Use the associated *Download log* to download the exported user data in a CSV file.
 
-  userId | firstName | whatsAppOptin | deviceToken | Tag
-------- | ---------- | ---------- | -------- | -------
-jim@example.com | Jim | - | 789 | (t1,t2)
+-  **Bulk user delete **: This log appears whenever you [delete your user data](#delete-user-data).
+
   
 
-**Result record**
-
-userId | firstName | whatsAppOptin | deviceToken | Tag
------ | -------- | -------- | ------------- | -------
-jim@example.com | Jim | Yes | (123,456,789) | (t1,t2,t3)
-
-:::note
-Session mapping is used to point multiple sessions on different channels to the same user record. 
-:::
-
-## 2. Add `userId` through conversations
-
-To update `userId` of customers through bot conversations:
-
-1. When building flows in [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/), use the **Prompt** node or *Variables* node. 
-3. Click **Make prompt smarter** and scroll-down to the *Additional section*.  
-
- ![](https://i.imgur.com/t2p6uHD.png)
-
-4. Check **Use this as Unique ID for user**.
-   ![](https://i.imgur.com/7TPjvkH.png)
-
-
-
-## 3. Set user properties through conversations
-
-The user record is updated in the database using the session mapping. 
-
-* When building a bot, use [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/#412-variables--action-node) nodes to capture user properties (such as name, email, phone number, location, or any system/custom user property) through conversations.
-
-<center>
-<img src="https://i.imgur.com/p6DvR3D.png" width="60%"/>
-</center>
-
-* To extract data from a payload, use the **Input** node and store information in the relevant user property. For example, fetch user details from the user add event payload and store them in relevant user properties. 
-
-   ![](https://i.imgur.com/0kX3iJT.png)
-
-
-
-<center>
-<img  src="https://i.imgur.com/7ltkBj4.png" width="40%"/>
-</center>
-
-
-## 4. Fetch user properties in conversations
-
-You can also fetch user properties in conversations using the **Text** node. For example, Hi {{{variables.user_name}}} - the value is fetched from the user record mapped to the current session. Use these variables to create personalised conversations.
-
-![](https://i.imgur.com/tFyoRXF.png)
+![](https://i.imgur.com/s86psKQ.png)
 
 
