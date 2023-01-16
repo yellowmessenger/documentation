@@ -3,11 +3,42 @@ sidebar_label: Manage user data
 title: Manage user data
 ---
 
+## See user data
+
+User 360 allows you to fetch a user's data or filter users by a specific parameter.
+
+To see details of an existing user, follow these steps:
+
+1. On the User 360 home page, navigate to the user whose details you want to see.
+2. If the user list is too long, use **Filters** to show a specific set of user records from the entire user base.
+
+   ![](https://i.imgur.com/Qkqryav.png)
+   
+   Defile the expression/condition by which you want to filter user records using the three boxes that correspond to {parameter}{operator}{value}.
+
+   * Parameter: The user property that you want to use to filter records (first box).
+   * Operator: The condition that you want to define. It contains `Is known`, `Is not known`, `Is`, `Isn't`, `Contains`, and `Does not contain`.
+   * Value: The value of the expression. This might not be applicable to all operators. For example, firstName Is Tom, phone is known, and emailOptin is true.
+3. Use **+** to evaluate `or` conditions. For example, 
+4. Use **+ Add condition** to evaluate multiple conditions (`and`).
+   
+   ![](https://i.imgur.com/WjfiW5w.png)
+
+5. Click **Apply**.
 
 
-### Export user data
+:::note
+Operators and values differ based on the parameter you select.
+:::
 
- You can download your entire user data or a segment specific user data and use it wherever required. For example, you can update user details and import it again, and upload user data in a third-party system for your business use cases.
+   
+   
+
+
+
+## Export user data
+
+ You can download your entire user data or segment specific user data and use it wherever required. For example, you can update user details and import them again, and upload user data in a third-party system for your business use cases.
 
 To download your entire user base, in All users, click **Actions** > **Download all user data**.
 
@@ -30,14 +61,27 @@ You will get a download link to your email. Alternatively, you can download it f
 You can delete one or more users if required. However, you need to [export their data](#export-user-data) as a backup before deleting.
 
 
-To delete a single user, navigate to the user that you want to delete, click on the more options icon > **Delete user**.
+### Delete an individual user
+
+1. Navigate to the user row and click on it to open user details page.
+
+   ![](https://i.imgur.com/2jZYHX7.png)
+
+2. Click **Delete**.
  
-  ![](https://i.imgur.com/28kG5jg.png)
+  ![](https://i.imgur.com/r9s3ml1.png)
 
-To delete multiple users at a time, select each user that you want to delete and click **Delete users**.
 
-   ![](https://i.imgur.com/nnB6VH2.png)
+### Delete one or more users a time
 
+1. On the User 360 home page, select each user that you want to delete using the respective check boxes 
+2. Click **Delete users**.
+
+ 
+ ![](https://i.imgur.com/ggBwK4A.png)
+
+
+### Delete user through API
 
 To delete user data using API, use [DELETE user API](https://documenter.getpostman.com/view/17583548/UVsEVUsg#73c5f32f-e6a5-4a3b-afbe-c17b7770d65b).
 

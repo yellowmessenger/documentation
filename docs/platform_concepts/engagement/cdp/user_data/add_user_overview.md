@@ -106,7 +106,7 @@ Sometimes you might notice that the exact number of records you imported through
 
 ## 2. Different ways of adding users
 
-The platform provides different ways to add your users. You can add each user manually or leverage advanced features to quickly create your user base and maintain it in real-time.
+The platform provides different ways to add your users. You can add each user manually or leverage advanced features to quickly create your user base and maintain it in real time.
 
 1. [Add individual users through User 360](/docs/platform_concepts/engagement/cdp/user_data/add_users).
 2. [Import users directly from a CSV](/docs/platform_concepts/engagement/cdp/user_data/import_users).
