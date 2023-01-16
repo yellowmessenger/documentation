@@ -250,7 +250,7 @@ This helps you analyse flow paths taken by end-users in much better detail and d
 | *New feature*
 
 Slack is a workplace communication tool - a single place for messaging, tools and files. It is an instant messaging system with lots of add-ons for other workplace tools. Besides an intuitive UI, you can leverage group and person-to-person messaging. These are more than 1500 apps and allow the creation of custom apps which have evolved Slack to become a one-stop-shop for a lot of users.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/slack2/).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/slack2).
   
 
 
