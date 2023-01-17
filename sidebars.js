@@ -198,7 +198,8 @@ module.exports = {
           
      //   "platform_concepts/getting-started",
     "platform_concepts/Getting Started/account-setup",
-    "platform_concepts/Getting Started/user-account-settings",  ],
+    "platform_concepts/Getting Started/user-account-settings",
+    "platform_concepts/Getting Started/orchestrator",  ],
 },
 
 {
@@ -902,6 +903,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/appConfiguration/amazon-livechat",
+            "platform_concepts/appConfiguration/avaya",
             "platform_concepts/appConfiguration/azure-ad",
             "platform_concepts/appConfiguration/billdesk",
             "platform_concepts/appConfiguration/camspay",
