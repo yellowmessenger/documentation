@@ -85,8 +85,27 @@ Navigate to the **Button Type** section and select *Call to action*.
 
 1. In **Type of action**, choose *Visit website*.
 2. In the **Button** text, enter the label name (character limit 20) for the CTA.
-3. In the drop-down box, choose the type of URL - *Static* or *Dynamic*.
-4. In URL, enter the URL that you want recipients to redirect upon clicking the button.
+3. In the drop-down box, choose the type of URL to be embedded for the CTA - *Static* or *Dynamic and in **URL**, enter the URL that you want recipients to redirect upon clicking the button.
+
+There are two types of URLs you can use in a CTA:
+
+   i. **Static URL**: In this type of CTA, the URL needs to be mentioned during the template approval and cannot be modified or edited later. For easier approval, it is recommended to use the company's domain URL.
+
+   Example.: [https://docs.yellow.ai](https://docs.yellow.ai)
+
+:::note
+The static URL cannot be changed later and the user will land on the above URL once the CTA is clicked.
+:::
+
+
+   ii. **Dynamic URL**:
+   In this type of CTA, the URL can be personalised when sending out the notification. When sending the template for approval, the domain of the URL and the path variable need to be specified. The domain URL cannot be modified later. However, you can replace the variable with the path or parameter value when sending the notification through Notification API/Outbound campaign.
+
+   Example: [https://docs.yellow.ai/{{1}}](https://docs.yellow.ai/%7B%7B1%7D%7D)
+
+   Here, you can replace `1`  with a parameter or path (say `docs/platform_concepts/engagement/engage`) before sending out the message through Notification API/Outbound campaign. 
+
+   On clicking on the CTA, the user will land on the [https://docs.yellow.ai/docs/platform_concepts/engagement/engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage) page.
 
 #### 2. Add make a phone call CTA
 
