@@ -1,6 +1,6 @@
 ---
 title: September updates
-sidebar_label: September
+sidebar_label: September 2022
 ---
 
 ## 1. **Inbox**

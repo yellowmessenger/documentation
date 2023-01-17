@@ -1,6 +1,6 @@
 ---
 title: Our latest product updates
-sidebar_label: Latest updates
+sidebar_label: December 2022
 featured: true
 ---
 

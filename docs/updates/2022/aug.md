@@ -1,6 +1,6 @@
 ---
 title: August updates
-sidebar_label: August 
+sidebar_label: August 2022
 ---
 
 ## 1. **Inbox**
