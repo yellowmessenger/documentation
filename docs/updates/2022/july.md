@@ -1,6 +1,6 @@
 ---
 title: July updates
-sidebar_label: July 
+sidebar_label: July 2022
 ---
 
 
