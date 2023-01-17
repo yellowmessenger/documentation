@@ -835,8 +835,8 @@ module.exports = {
               items: [
             "platform_concepts/channelConfiguration/whatsapp-configuration",
             "cookbooks/whatsapp-channel/wa-migration",
-            "cookbooks/whatsapp-channel/faqs",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
+            "cookbooks/whatsapp-channel/faqs",
               ]},
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
@@ -847,6 +847,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/slack2",
             "platform_concepts/channelConfiguration/teams",
             "platform_concepts/channelConfiguration/telegram",
+            "platform_concepts/channelConfiguration/viber-for-business",
             
           ]
         },
@@ -879,8 +880,8 @@ module.exports = {
             "platform_concepts/channelConfiguration/fuction-widgets",
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
-            "platform_concepts/channelConfiguration/chat-widget-faq", 
             "platform_concepts/channelConfiguration/character-limits-sdk",
+            "platform_concepts/channelConfiguration/chat-widget-faq", 
             // "platform_concepts/channelConfiguration/web",
           ]
         },
