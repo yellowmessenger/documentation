@@ -41,7 +41,7 @@ An agent within Inbox can be in any of the following statuses - Available, Busy,
 - If the agent is on Available status, they will be automatically assigned new incoming chat tickets.
 - If the agent is either Busy or Away, they’ll be not actively assigned to new chats. That chat will either be assigned to the next available agent or queued.
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox/#3-default-agent-status), to know more about the difference between Busy and Away.
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox#-4-default-agent-status), to know more about the difference between Busy and Away.
 
   
 

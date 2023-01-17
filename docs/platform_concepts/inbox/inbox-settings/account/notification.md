@@ -1,5 +1,5 @@
 ---
-title: Notification settings 
+title: Inbox notification settings 
 sidebar_label : Notification settings 
 ---
 

@@ -57,7 +57,7 @@ You cannot change the ticket status to **Open**.
 
 6. Click **Assign**.
     - Select the Group, Agent, or Agent of a particular group to that you want to transfer the selected tickets.
-    - (Optional) If there are any [custom fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields/) configured to reassign tickets, you must enter the custom fields values. 
+    - (Optional) If there are any [custom fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) configured to reassign tickets, you must enter the custom fields values. 
     - Click **Assign**.
 
 <img src="https://i.imgur.com/eEC0VDa.png" alt="drawing" width="50%"/>

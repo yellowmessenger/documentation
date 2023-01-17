@@ -4,7 +4,7 @@ sidebar_label : Manual ticket creation
 ---
 
 There are different methods to create email tickets in Inbox. 
-- Ideally, an email ticket is created when an end user sends an email to the [configured email address](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig/) requesting customer support. This email is automatically converted into an email ticket and auto-assigned to a live agent.   
+- Ideally, an email ticket is created when an end user sends an email to the [configured email address](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) requesting customer support. This email is automatically converted into an email ticket and auto-assigned to a live agent.   
 - Alternative method is to create email tickets manually. 
 
 In this article, you will learn: 
@@ -34,7 +34,7 @@ To create an email ticket, follow the steps below:
 3. Enter the ticket details: 
     - **Priority**: By default, the priority will be the value [configured for email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing) in inbox settings, it can be changed here. 
     - **Assignee**: This ticket can be assigned to a group or the agent of a particular group. **From email ID** value gets automatically updated based on this. 
-    - **Tags**: Labels configured in the [tags section](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags/) can be selected form the dropdown. 
+    - **Tags**: Labels configured in the [tags section](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) can be selected form the dropdown. 
     - **Custom fields**: Fields configured for email tickets can be entered here. 
 
 ![](https://i.imgur.com/EKgEg2S.png)

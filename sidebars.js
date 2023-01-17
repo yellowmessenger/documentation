@@ -47,7 +47,7 @@ module.exports = {
      
     {
       type: "category",
-      label: "Marketplace templates",
+      label: "Marketplace",
       collapsed: true,
       items: [
         "cookbooks/marketplace-templates/edtech-template",
@@ -391,6 +391,7 @@ module.exports = {
             "platform_concepts/inbox/tickets/manualticket",
             "platform_concepts/inbox/tickets/searchandfilter",
             "platform_concepts/inbox/tickets/bulkaction",
+            "platform_concepts/inbox/tickets/slaintro",
                   ],
         },
 
@@ -1162,6 +1163,14 @@ module.exports = {
 
     //Do not add/ remove this file
     "updates/overview",
+
+    "updates/2022/nov2022",
+    "updates/2022/oct2022",
+    "updates/2022/sep_updates",
+    "updates/2022/aug",
+    "updates/2022/july",
+   
+    /*
     {
       type: "category",
       label: "2022 Updates",
@@ -1175,6 +1184,7 @@ module.exports = {
         
       ],
     },
+    */
     // Prod update ends here.
   ],
 

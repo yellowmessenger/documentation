@@ -143,7 +143,7 @@ To configure **Raise ticket** node on the [Studio](https://docs.yellow.ai/docs/p
 
 1. Create an [Intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) and add [utterances](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance) to identify the flow that connects a user to a live inbox agent. 
     - Utterance examples, “Can I talk to a Live agent?”, and “Connect me to Customer Support”.
-2. Add [prompts](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/) to collect information(name and query) from the users. Store the details in the respective [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#hed-2). 
+2. Add [prompts](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to collect information(name and query) from the users. Store the details in the respective [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#hed-2). 
 3. Connect the flow to **Raise ticket action node** (pass the collected information). Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) to learn about the action node. 
 4. Advanced options can be enabled and optional fields can be entered. 
 

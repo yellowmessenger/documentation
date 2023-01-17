@@ -75,7 +75,7 @@ This is not available for Email custom fields.
 | Short Text    | Short text like credit card number or order id               |
 | Long Text     | Long text like Address, Detailed reason for complaint, etc                   |
 | Keyword       | A single word text/ alphanumeric value                                               |
-| Tags          | Predefined [tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags/) like product category                        |
+| Tags          | Predefined [tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) like product category                        |
 | Checkbox      | Agent can select multiple values that are listed. For example following values can be listed VIP customer, Sales, IT department, and the agent can select one or many of the relevant values |
 | Radio buttons | Agent can select only one value from the defined list. For example Location, Store name |
 | Email         | Any email ID                                                 |
