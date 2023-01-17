@@ -1,6 +1,6 @@
 ---
-title: SAAS
-sidebar_label : SAAS
+title: SAAS template
+sidebar_label : SAAS template
 ---
 
 
