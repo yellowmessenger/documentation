@@ -247,17 +247,17 @@ Different prompts/action nodes return responses in different formats and datatyp
 
 | Prompt    Nodes                                                                 | Variable Datatype |
 |----------------------------------------------------------------------------|-------------------|
-| [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-name)             | string            |
-| [Email](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#32-email)            | string            |
-| [Phone](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#12-phone)            | string            |
-| [Location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-location)           | object            |
-| [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#22-carousel)                  | string            |
-| [Quick Replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-quick-replies)         | string            |
-| [Date](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-date)                    | object            |
+| [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#12-name)             | string            |
+| [Email](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#15-email)            | string            |
+| [Phone](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-phone)            | string            |
+| [Location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-location)           | object            |
+| [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel)                  | string            |
+| [Quick Replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies)         | string            |
+| [Date](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#21-date)                    | object            |
 | [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#21-question)         | string            |
-| [Feedback](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#23-feedback)            | object            |
-| [Whatsapp List](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#31-whatsapp-list) | string            |
-| [Multiselect](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-multi-select)                                                                | string            |
+| [Feedback](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback)            | object            |
+| [Whatsapp List](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#22-whatsapp-list) | string            |
+| [Multiselect](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#23-multi-select)                                                                | string            |
 | [Image/file](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#26-file-prompt)        | string            |
 
 #### [Actions](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes)
@@ -285,7 +285,7 @@ Different prompts/action nodes return responses in different formats and datatyp
 
 ## <a name="hed-5"></a> 5. Access Array/Object Variables
 
-Accessing string/number is simple, it is slightly different for array/object datatype. In this example  [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#21-api), the response stored is not a simple string or number value.
+Accessing string/number is simple, it is slightly different for array/object datatype. In this example  [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api), the response stored is not a simple string or number value.
 
 
 Consider the following responses from a weather API - this consists of an object and array with different indexing.
