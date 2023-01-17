@@ -75,7 +75,7 @@ For example, if the domain is https://cloud.yellow.ai, you need to change it to 
 
 
 
-3. In the **Webhook Setup** pop-up, enter the URL in which you'd like to receive the webhook payload when an event is triggered. We recommend using a **HTTPS URL**.
+3. In the **Webhook Setup** pop-up, enter the URL in which you'd like to receive the webhook payload when an event is triggered. We recommend using a **HTTPS URL**. Ensure you enable all the events shown in the screenshot below.
 
 ![](https://i.imgur.com/uDShz45.png)
 
