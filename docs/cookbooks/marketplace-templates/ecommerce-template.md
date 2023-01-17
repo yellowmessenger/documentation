@@ -12,8 +12,11 @@ Here is the high-level overview of the e-commerce template:
 
 <img src="https://i.imgur.com/2mgM0ax.png" width="80%"/>
 
+## 1. Prebuilt use cases
 
-### Browse products
+This section covers all the standard use cases available in the e-commerce template.
+
+### 1.1 Browse products
 The flow displays the list of product categories along with its products and help users with the purchase.
 
 
@@ -37,7 +40,7 @@ Here are the details of the **Browse products** flow:
 ![](https://i.imgur.com/SOGbfgb.png)
 
 
-### Add to cart 
+### 1.2 Add to cart 
 
 This flow is executed when the bot user selects a product to add to the cart. The user can add each product along with the quantity and proceed to buy once all the required items are added to the cart. 
 
@@ -62,7 +65,7 @@ This flow is executed when the bot user selects a product to add to the cart. Th
 ![](https://i.imgur.com/wW9pPJP.png)
 
 
-### Edit cart
+### 1.3 Edit cart
 
 This flow allows users to edit the current cart details - change the quantity or remove a product from the cart.
 
@@ -80,7 +83,7 @@ This flow allows users to edit the current cart details - change the quantity or
 5. **Remove item**: Removes the item from the cart using the `editcart` function and the new cart summary is updated in the database (user details).
 6. **Shows options to proceed**: Shows these **Quick replies** and clicking on it executes the respective flow [Buy now](#buy-now), [Clear cart](#clear-cart) and [Add more products](#add-to-cart).
 
-### Clear cart
+### 1.4 Clear cart
 
 The flow triggers when the user selects *Clear cart* from the bot flows. The cart is cleared, and all the item details (Product IDs and Quantity) stored in the user database will be deleted. 
 
@@ -99,7 +102,7 @@ The flow triggers when the user selects *Clear cart* from the bot flows. The car
 4. **Updates user details**: The database (user details) is updated to empty the cart. A text node is displayed to the user confirming that the cart is empty and shows the [Browse products](#browse-products) option. 
 
 
-### Buy now
+### 1.5 Buy now
 
 This flow generates the payment link using the cart details and sends the payment link to the bot user.
 
@@ -128,7 +131,7 @@ This flow generates the payment link using the cart details and sends the paymen
    * Generates the payment link and sends it to the user.
 
 
-### Razorpay payment status
+### 1.6 Razorpay payment status
 
 1. Starts with *Razorpay payment status* intent.
 
@@ -149,7 +152,7 @@ This flow generates the payment link using the cart details and sends the paymen
    
    
 
-### Check order status
+### 1.7 Check order status
 
 1.  **Starts** when the user selects *View order status* from the bot flow.
 
@@ -161,7 +164,7 @@ This flow generates the payment link using the cart details and sends the paymen
   * For the WhatsApp channel, it uses the WhatsApp number and fetches the  last five orders of the customer from the database (using the **Function** node).
   * For channels except for WhatsApp, it captures the phone number of the user (Phone number node) and uses it in the **Function** node to fetch the last five orders of the customer from the database.
    
-### Queries and Concerns
+### 1.8 Queries and concerns
 
 With this flow, users can get instant answers through FAQs or choose to chat with the support team. 
 
@@ -178,7 +181,7 @@ With this flow, users can get instant answers through FAQs or choose to chat wit
 
 ![](https://i.imgur.com/eNr7vI0.png)
 
-## Build your own flows
+## 2. Build your own flows
 
 
 * **Promote products**: Use the bot as a lead-generation tool. You can send offers, promote new products, and offer instant discounts to your leads through Outbound/Workflow campaigns.
