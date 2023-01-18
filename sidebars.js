@@ -825,6 +825,7 @@ module.exports = {
         {
           type: "category",
           label: "Messaging channels",
+          link: {type: 'doc', id: 'platform_concepts/channelConfiguration/messaging-overview'},
           collapsed: true,
           items: [
             {
@@ -854,6 +855,7 @@ module.exports = {
         {
           type: "category",
           label: "Voice channels",
+          link: {type: 'doc', id: 'platform_concepts/channelConfiguration/voice-overview'},
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/google-assistant",
@@ -864,6 +866,7 @@ module.exports = {
         {
           type: "category",
           label: "Social channels",
+          link: {type: 'doc', id: 'platform_concepts/channelConfiguration/social-overview'},
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/facebook-messenger",
