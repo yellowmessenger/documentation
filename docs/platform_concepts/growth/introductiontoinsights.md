@@ -19,7 +19,7 @@ Insights module on the yellow.ai platform tracks all data and metrics pertaining
 
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zE3eWh-xjbg" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+<iframe width="760" height="515" src="https://www.youtube.com/watch?v=yAkP3imNl7Q" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
 
 
