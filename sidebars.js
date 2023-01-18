@@ -198,8 +198,7 @@ module.exports = {
           
      //   "platform_concepts/getting-started",
     "platform_concepts/Getting Started/account-setup",
-    "platform_concepts/Getting Started/user-account-settings",
-    "platform_concepts/Getting Started/orchestrator",  ],
+    "platform_concepts/Getting Started/user-account-settings", ],
 },
 
 {
@@ -343,6 +342,7 @@ module.exports = {
         
         "platform_concepts/studio/tools",
         "platform_concepts/studio/languages-supported",
+        "platform_concepts/studio/orchestrator", 
         "platform_concepts/studio/studio-faqs",
     
       ],
