@@ -1,12 +1,11 @@
 ---
-title: WhatsApp template
+title: Create WhatsApp template
 sidebar_label: WhatsApp template
 ---
 
 
 Unlike other channel templates that are approved by default, you need to send each WhatsApp template for approval as soon as you create it. Facebook might take upto 48 hours to review the template. A template gets approved if it is as per the Facebook's guidelines, else it will be rejected.
 
-## 1. Create WhatsApp template
 
 
 The following are the different steps involved in a WhatsApp template - 
@@ -16,7 +15,7 @@ The following are the different steps involved in a WhatsApp template -
 3. Use the approved template in your campaign.
   
 
-**Prerequisites**
+#### Prerequisites
 
 The following are the prerequisites for creating a WhatsApp template -
 
@@ -71,7 +70,7 @@ You can either add up to two CTAs or three Quick replies.
 
 
 
-### 1.1 Add Call to Actions (CTAs) in WhatsApp template
+## 1. Add Call to Actions (CTAs) in WhatsApp template
 
 A WhatsApp template supports two different CTAs - *Visit website* and *Call phone*. You can only add two different CTAs in a template. That is, you cannot use two Visit website or two Call phone in the same template.
 
@@ -81,40 +80,43 @@ Navigate to the **Button Type** section and select *Call to action*.
 
 ![](https://i.imgur.com/OpV6j9P.png)
 
-#### 1. Add URL redirect CTA
+### 1.1 Add URL redirect CTA
 
 1. In **Type of action**, choose *Visit website*.
 2. In the **Button** text, enter the label name (character limit 20) for the CTA.
-3. In the drop-down box, choose the type of URL to be embedded for the CTA - *Static* or *Dynamic and in **URL**, enter the URL that you want recipients to redirect upon clicking the button.
+3. In the drop-down box, choose the type of URL to be embedded for the CTA - [Static](#static-url) or [Dynamic](#dynamic-url). 
+4. In **URL**, enter the URL that you want recipients to redirect upon clicking the button.
 
 There are two types of URLs you can use in a CTA:
 
-   i. **Static URL**: In this type of CTA, the URL needs to be mentioned during the template approval and cannot be modified or edited later. For easier approval, it is recommended to use the company's domain URL.
+#### Static URL 
+In this type of CTA, you need to mention the URL that needs to be opened when seding the template for approval. You cannot modify the static URL once it is sent for approval or post approval. 
 
-   Example.: [https://docs.yellow.ai](https://docs.yellow.ai)
-
-:::note
-The static URL cannot be changed later and the user will land on the above URL once the CTA is clicked.
-:::
+For easy approval, it is recommended to use the company's domain URL. Example: [https://docs.yellow.ai](https://docs.yellow.ai)
 
 
-   ii. **Dynamic URL**:
-   In this type of CTA, the URL can be personalised when sending out the notification. When sending the template for approval, the domain of the URL and the path variable need to be specified. The domain URL cannot be modified later. However, you can replace the variable with the path or parameter value when sending the notification through Notification API/Outbound campaign.
+#### Dynamic URL
+
+In this type of CTA, the URL can be personalised when sending out the notification through Notification API/Outbound campaign as explained below. 
+
+You can mention the domain URL with a path variable in the CTA when sending for approval. Once approved, you can replace the variable with a specific path or parameter value before sending the notification to the targetted users.
+
 
    Example: [https://docs.yellow.ai/{{1}}](https://docs.yellow.ai/%7B%7B1%7D%7D)
 
    Here, you can replace `1`  with a parameter or path (say `docs/platform_concepts/engagement/engage`) before sending out the message through Notification API/Outbound campaign. 
 
-   On clicking on the CTA, the user will land on the [https://docs.yellow.ai/docs/platform_concepts/engagement/engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage) page.
+   When the user clicks on CTA sent through notification, it redirects to the following link.
+   [https://docs.yellow.ai/docs/platform_concepts/engagement/engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).
 
-#### 2. Add make a phone call CTA
+### 1.2 Add make a phone call CTA
 
 1. In **Type of action**, choose *Phone call*.
 2. In the **Button** text, enter the label name (character limit 20) for the CTA.
 3. In the drop-down box, choose the country of the phone number.
 4. In **Phone number**, enter the phone number that you want your recipients to call.
 
-### 1.2 Add Quick replies in WhatsApp template
+## 2. Add Quick replies in WhatsApp template
 
 WhatsApp template supports three different quick reply actions. You can use the desired action for each button and a maximum of three quick reply buttons are supported. Each button text can have up to 20 characters. 
 
@@ -122,7 +124,7 @@ WhatsApp template supports three different quick reply actions. You can use the 
 
 The following are the three different quick reply options:
 
-#### 1. Trigger journey
+### 2.1 Trigger journey
 
 Use this to trigger a specific journey when the user clicks on the button. For example, you can use it to send a promotional notification about store offers, and trigger the bot flow through which users can buy products when the user clicks on it.
 
@@ -134,7 +136,7 @@ Enter the **Button text**, choose the **Action type**,  *Trigger journey*, and s
 
 
 
-#### 2. Trigger NLP 
+### 2.2 Trigger NLP 
 Use this to trigger the bot conversation as per the utterances trained under intents. For example, use it to send a transactional notification about order cancellation, and provide a talk-to-customer support button to trigger Live Agent flow.
 
 **Prerequisite**: Live agent flow should be trained with the *Talk to customer support* utterance.
@@ -145,7 +147,7 @@ Enter the **Button text**, choose the **Action type**,  *Trigger NLP*.
 
 
 
-#### 3. Send as Event 
+### 2.3 Send as Event 
 Use this to send all the template data to the bot and use it in custom flows. For example, you can capture the button clicked and the user ID in a custom dataset.
 
 Enter the **Button text**, choose the **Action type**,  *Send as event*.
@@ -160,7 +162,7 @@ Use the Delete icon to remove any button.
 
  
 
-### 1.3 Add variables in WhatsApp template
+## 3. Add variables in WhatsApp template
 Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
 
 You can add variables by adding two curly brackets before and after the variable name.
@@ -182,11 +184,15 @@ You can see in the preview tab below, the variable user we just created is highl
   
   
 
-## 2. WhatsApp template guidelines to avoid rejections
+## 2. WhatsApp template guidelines
+
+A WhatsApp template needs to be approved by Facebook before you start using it. Here are some standard guidelines that you need to follow while creating a template to avoid rejections.
 
   
 
-Once you send a template for approval, Facebook might approve it if everything's as per the guidelines or will reject it if it is not as per their standards.
+:::note
+When you send a template for approval, Facebook approves it only if everything is as per the guidelines. or will reject it if it is not as per their standards.
+:::
 
 You can see the template status on the Templates home page.
 
