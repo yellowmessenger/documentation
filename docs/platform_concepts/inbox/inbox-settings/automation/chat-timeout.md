@@ -28,8 +28,8 @@ The following are some key features of the chat timeouts which can be customized
 
 | Setting | Description |
 |:-------- |:--------:|
-| Inactivity from customer | This is a built-in setting to automatically timeout a customer if he is inactive for a while. You can check the box and set the duration in minutes).   |
-| Inactivity from Agent    | This is a built-in mechanism to automatically timeout an agent if he is inactive for a while. You can check the box and set the duration in minutes). |
+| Inactivity from customer | This is a built-in setting to automatically timeout a customer if he is inactive for a while. You can check the box and set the duration in minutes.   |
+| Inactivity from Agent    | This is a built-in mechanism to automatically timeout an agent if he is inactive for a while. You can check the box and set the duration in minutes. |
 | Auto Ticket closure | Checking this box will automatically close the ticket. The default setting will be used if the chat is disabled, deleted or if their is no information from both the sources. |
 | Do not close Ticket | This box can be set based on the tags present in the chat. A set of customised tags are available which you can choose from. You can choose not to close the ticket based on the presence or absence of a tag.|
 
