@@ -1,6 +1,6 @@
 ---
 sidebar_label: Add individual users
-title: Add individual user through the User 360 UI
+title: Add individual users through User 360 UI
 ---
 
 ## Add user
@@ -22,9 +22,9 @@ To add a user using the User 360 UI:
 
 ***
 
-## Edit user
+## Edit users
 
-You can add missing properties or update existing properties of a user. However, you cannot modify the `userId` which is the unique identifier of the userId.
+You can add missing properties or update existing properties of a user. As the `userId` is the primary identifier and unique for a user, you cannot change it.
 
 
 1. On the **User 360** page, navigate to the user that you want to edit and click on the user row.
@@ -35,7 +35,7 @@ You can add missing properties or update existing properties of a user. However,
 
    ![](https://i.imgur.com/bLg7v0Z.png)
 
-2. Enter missing information, and update existing values as per your preference.
+2. Edit the properties that you want to change or add missing property values.
 3. To add more tags, click on **+Add tags** and in **Tags** enter each tag name and press enter. If the tag name you enter is available, you will see it in the drop-down.
 
    <center>
