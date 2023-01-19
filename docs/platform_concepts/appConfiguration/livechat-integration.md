@@ -32,7 +32,7 @@ To connect with an Amazon Connect Live Agent, use this code-snippet
     });
 ```
 
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
 
 
 | Field name| Sample value |Data type |Description|
@@ -96,7 +96,7 @@ To connect with an Avaya Live Agent, use this code-snippet
            app.log(error, 'error');
            //Error handler
        });
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields in the that need to be filled.
 
 | Field name| Sample value |Data type |Description|
 | -------- | -------- | -------- |-------|
@@ -163,7 +163,7 @@ To connect with a Custom Live Agent, use this code-snippet
            //Error handler
        });
 
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields in the that need to be filled.
 
 | Field name| Sample value |Data type |Description|
 | -------- | -------- | -------- |-------|
@@ -231,7 +231,7 @@ apiresponse represents the raw response from the custom live agent create ticket
     });
 ```
 
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields in the that need to be filled.
 
 | Field name| Sample value |Data type |Description|
 | -------- | -------- | -------- |-------|
@@ -296,7 +296,7 @@ apiresponse represents the raw response from the freshchat live agent create tic
            //Error handler
        });
 
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
 
 |  Field name  | Sample value | Data type  |Description|
 | -------- | -------- | -------- |-------|
@@ -359,7 +359,7 @@ apiresponse represents the raw response from the kapture crm create ticket API
            app.log(error, 'error');
            //Error handler
        });
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
 
 |  Field name  | Sample value | Data type  |Description|
 | -------- | -------- | -------- |-------|
@@ -423,7 +423,7 @@ apiresponse represents the raw response from the locobuzz live agent create tick
            //Error handler
        });
 
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
 
 
 | Field name | Sample value | Data type |Description|
@@ -483,7 +483,7 @@ apiresponse represents the raw response from genesys create ticket API
            app.log(error, 'error');
            //Error handler
        });
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
 
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---------|
@@ -544,7 +544,7 @@ apiresponse represents the raw response from genesys cloud create ticket API
            app.log(error, 'error');
            //Error handler
        });
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
 
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---------|
@@ -602,7 +602,7 @@ apiresponse represents the raw response from the intercom create ticket API
            app.log(error, 'error');
            //Error handler
        });
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
 
 
 | Field name | Sample value | Data type |Description|
@@ -659,7 +659,7 @@ apiresponse represents the raw response from the nice-incontact create ticket AP
            app.log(error, 'error');
            //Error handler
        });
-This table consists of sample values, data types and descriptions for all the fields in the image.
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
 
 
 | Field name | Sample value | Data type |Description|
@@ -698,7 +698,72 @@ apiresponse represents the raw response from the talishma create ticket API
 :::note 
 apiresponse represents the raw response from the talishma create ticket API
 :::
-   
+
+### 1.12 Salesforce Live Agent
+
+To connect with an Salesforce Live Agent, use this code-snippet
+
+          app.raiseTicketForThirdPartyLiveChat({
+                 issue: "Test Issue",
+                 contact: {
+                     phone: "9876543210",
+                     name: "Raj",
+                     email: "Test@email.com"
+                   },
+                   salesforceLiveChatCustomFields: [],
+                   salesforceLiveChatCustomEntities: [],
+                   salesforceLiveChatAgentId: ""
+       }).then((ticketData) => {
+           app.log(ticketData, "ticketData");
+           // Display appropriate message based on the ticketData
+       }).catch((error) => {
+           app.log(error, 'error');
+           //Error handler
+       });
+
+       
+This table consists of sample values, data types and descriptions for all the fields that need to be filled.
+
+| Field name | Sample value | Data type |Description|
+| -------- | -------- | -------- |---------|
+|issue|Test description|String|The subject/topic/reason why the ticket is created.|
+|phone|9876543210|String|Mobile number of the end user.|
+|email|test@gmail.com|String|Email address of the end user.|
+|name|Rajesh|String|Name of the end user.|
+| salesforceLiveChatCustomFields| [<br/>{<br/>"label": "Mobile",<br/> "value": "9999444443",<br/>"entityMaps": [<br/> {<br/>"entityName": "contact",<br/> "fieldName": "Mobile_Number__c"<br/>}<br/>],<br/>"transcriptFields": [<br/> "Mobile_Number__c"<br/>],<br/>"displayToAgent": true <br/> },<br/>{<br/>"label": "Chat",<br/> "value": "sessionURL",<br/>"entityMaps": [<br/>{<br/> "entityName": "case",<br/> "fieldName": "chat_transcript__c"<br/>}<br/>],<br/> "transcriptFields": [<br/>"chat_transcript__c"<br/> ],<br/> "displayToAgent": true<br/>}<br/>]<br/>| Array| The list of details provided by the user before initiating the chat with the live agent|
+|salesforceLiveChatCustomEntities|[<br/>{<br/>"entityName":"Contact",<br/>"saveToTranscript":"contact",<br/>"linkToEntityName":"Case",<br/>"linkToEntityField":"ContactId",<br/>"entityFieldsMaps":<br/>[<br/>{<br/>"fieldName":"LastName", <br/>"label":"LastName",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"FirstName",<br/>"label":"FirstName"<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"Email",<br/>"label":"Email",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>}<br/>]<br/>}<br/>]<br/>| Array| The records that are created/ searched depending on what [EntityFieldsMaps](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#EntityFieldMaps) have been enabled.|
+|salesforceLiveChatAgentId|0055g00000HEbLD|String|The agentId that needs to be passed if you want to use the sticky agent feature.|
+
+**Sample response in case of success:**
+
+```
+{
+   "assignedTo": true,
+   "success": true,
+   "status": "ASSIGNED",
+   "ticketInfo": "{{apiresponse}}"
+}
+```
+:::note
+apiresponse represents the raw response from the salesforce create ticket API
+:::
+
+**Sample response in case of failure:**
+
+```
+{
+   "success": false,
+   "assignedTo": false,
+   "agentNotAvailable": true,
+   "message": "TicketId is not created and transferring the control back to the bot",
+   "ticketInfo": "{{apiresponse}}"
+}
+
+```
+:::note
+apiresponse represents the raw response from the salesforce create ticket API
+:::
+  
 ## 2. Configuration
 
 You can configure any of the above mentioned live agent integration(s) by following these steps:-
