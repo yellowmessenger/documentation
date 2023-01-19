@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Introduction to insights 
 sidebar_label: Introduction 
 ---
 
@@ -17,9 +17,5 @@ Insights module on the yellow.ai platform tracks all data and metrics pertaining
 |[Dashboard](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards)|Create multiple dashboards with required widgets for visual display of all of your data|
 
 
-
-
-<iframe width="760" height="515" src="https://www.youtube.com/watch?v=yAkP3imNl7Q" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
-
-
+<iframe width="660" height="415" src="https://www.youtube.com/embed/yAkP3imNl7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 

@@ -111,7 +111,7 @@ The captured IP address of the user is translated to a standard location using t
 
 ## 5. User activity by time
 
-The graph shows the user frequency for the selected period aggregated by the hour.
+The graph shows the user frequency for the selected period aggregated by the hour (**Days of the week** vs **Time of the day**). You can export this data for the required time period(example- last 7 days) and understand at what time the user activity was highest and lowest. 
 
 **How does the calculation work?**
 
