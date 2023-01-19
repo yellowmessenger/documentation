@@ -5,7 +5,7 @@ sidebar_label: Engage dashboard
 
 
 
-Engage dashboard provides a summary of all the campaigns and users on a single screen. 
+Engage dashboard provides a summary of all campaigns and user activies on a single screen. This provides a quick glimpse of the daily/weekly performance of your campaigns and helps you plan for a better engagement and conversational experience for your end users. For a better experience, see [Use Conversation Starter Templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#2-add-quick-replies-in-whatsapp-template).
 
 These metrics provide insights into your marketing, promotional or other campaigns and shows the growth of your user base and profile completeness.
 
@@ -32,6 +32,8 @@ The following are the different KPIs of User data report:
 * **Total users**: The total number of users available in User 360.
 * **Profile completeness**: The average completeness of the profile information (based on the values available for user attributes) of the total users on User 360.
 * **User split**: Shows the count of users for which a specific user property is available across the user base. For example, to see the number of users with  `userId`(identified users), click on the **User split** drop-down and choose `userId`.
+
+If an attribute is available for the user, the Split considers it as a known category.
 
 <center><img src="https://i.imgur.com/bPLzOqP.png" width="30%"/></center>
 
@@ -65,7 +67,7 @@ To see a channel specific data, click on the channel name. Channels with black f
 
 Engagement performance refers to the effectiveness and efficiency of marketing campaigns in achieving their goals and objectives.
 
-It shows the total number of notifications sent and the total notifications read (for SMS, it just considers the delivered messages).
+It shows the total number of notifications sent and the total notifications read. For SMS, it just considers the delivered messages and for WhatsApp, it considers the messages that were sent successfully. Hence, it differs from channel to channel based on the sent state confirmed.
 
 <center><img src="https://i.imgur.com/lwikP5E.png" width="600"/></center>
 
@@ -76,6 +78,9 @@ The following are the different KPIs of the Engagement performance report:
 * **Sent**: Total number of notifications sent out through outbound campaigns or Notification API in a specific duration.
 * **User impressions**: Number of users who read those messages.
 
+:::note
+If a user has disabled the *Read Receipt* privacy settings, the impression cannot be identified as the last delivery status for the notification is `Delivered` instead of `Read`.
+:::
 
 Click on the *Current* or *Previous* to see the data for the current and previous week respectively.
 
@@ -92,3 +97,7 @@ User trends refer to the behaviour that users exhibit. These trends include the 
 * **User event occurrence**: The total number of user events triggered for the chosen duration.
 * **Users opted in**: The total number of users who have explicitly given permission to use their personal information to receive marketing and promotional messages from your organisation.
 * **Users opted out**: The total number of users who have revoked their permission from receiving marketing and promotional messages.
+
+:::note
+By default, a user is opted-out If no opt-in preference is specified when adding the user and will be updated when the user opts in.
+:::
