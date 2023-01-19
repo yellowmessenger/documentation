@@ -44,9 +44,17 @@ Follow the given steps to configure the queue for different agent groups:
 ![](https://i.imgur.com/nO0LbKq.png)
 
 4. Select the checkbox- **Mark the chat as missed when your customer who is queued in the website chatbot, becomes inactive for _ min(s)** and add the minutes of inactivity.   
-By checking this, if the user (who is in the queue) is not answered within (example) 3 minutes by the agent, chat automatically goes into [missed](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#16-missed-chats). 
+By checking this, if the user (who is in the queue) is not answered within X  minutes (example: 3 minutes) by the agent, chat automatically goes into [missed](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#16-missed-chats). 
 
 ![](https://i.imgur.com/B187p3D.png)
+
+:::note
+
+**Queued chats will be moved to inactive/Missed chats** and be dropped off if any of the following conditions are met:
+1. If the end-user closes the browser(any active windows which are embedded with the bot code) and does not return for X minutes.
+2. If the end user who is using a browser on a mobile device minimizes the tab or closes the browser containing the bot and does not return for X minutes.
+3. If there is no mouse or keyboard activity from the end user for 10+X minutes (for example, after 10+3=13 minutes, the chat is marked as missed). If any mouse/keyboard activity is encountered, the timer is reset. 
+:::
 
 5. By selecting the **Enable queue position display on widget** toggle, the customers can see the details that they are in a queue and queue position when they can expect a response from an agent. 
     - You can display the position by entering the text in the **Enter custom message to display queue position** field. Type in any message and use `{{queuePosition}}` to get the value. 
