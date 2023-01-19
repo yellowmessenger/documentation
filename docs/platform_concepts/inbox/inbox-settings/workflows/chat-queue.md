@@ -25,7 +25,7 @@ Functionalities of queue handling:
 ---
 
 
-## 1. Configuration
+## 1. Configure queue handling 
 
 
 Follow the given steps to configure the queue for different agent groups: 
