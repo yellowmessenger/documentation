@@ -42,7 +42,7 @@ You can also use the readily available templates if they are suitable for your u
 
 The platform also includes different environments, giving you complete freedom to experiment with the various options and then push the final version to the live bot with Environment. These are the different environments supported:
 
-<img src="https://i.imgur.com/5oVqs0O.png))" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/5oVqs0O.png)" alt="drawing" width="100%"/>
 
 
 ## 4. Modify bot details

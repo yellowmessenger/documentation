@@ -875,6 +875,7 @@ module.exports = {
         {
           type: "category",
           label: "Chat widget",
+          link: {type: 'doc', id: 'platform_concepts/channelConfiguration/chat-widget-overview'},
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/web-widget",
@@ -883,6 +884,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/fuction-widgets",
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
+            "platform_concepts/channelConfiguration/chat-widget-components",
             "platform_concepts/channelConfiguration/character-limits-sdk",
             "platform_concepts/channelConfiguration/chat-widget-faq", 
             // "platform_concepts/channelConfiguration/web",
