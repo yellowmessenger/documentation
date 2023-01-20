@@ -836,6 +836,16 @@ module.exports = {
             "cookbooks/whatsapp-channel/faqs",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
               ]},
+              {
+                type: "category",
+                label: "Mobile push notifications",
+                link: {type: 'doc', id: 'platform_concepts/channelConfiguration/mobilepush'},
+                collapsed: true,
+                items: [
+                  "platform_concepts/channelConfiguration/android_push",
+                  "platform_concepts/channelConfiguration/ios_push",
+                ]
+              },
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
             "platform_concepts/channelConfiguration/alexa",
