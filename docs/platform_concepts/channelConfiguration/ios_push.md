@@ -4,11 +4,10 @@ sidebar_label: iOS push notifications
 ---
 
 
+## Set up push notifications for iOS apps
 
-## 1. Set up push notifications for iOS apps
 
-
-To send push notifications on your iOS app using Yellow.ai, you must have a Apple Push Notification (APN) account configured with the app and upload the key file in Yellow.ai.
+To send push notifications on your iOS app using Yellow.ai, you must have an Apple Push Notification service (APNs) account configured with the app and upload the key file in Yellow.ai.
 
 ### Step 1: Create APNs private key
 
@@ -28,8 +27,13 @@ To send push notifications on your iOS app using Yellow.ai, you must have a Appl
 To know how to create a push notification campaign, see [Mobile push template](/docs/platform_concepts/engagement/outbound/templates/mobilepush.md).
 :::
 
+***
 
-## 2. Code snippets for iOS Push notifications
+
+## Code snippets for iOS Push notifications
+
+
+Notifications are sent to Apple Push Notification Service (APNs) service which then pushes them to the app using the user's device. This section provides payloads that are sent to APN for different on-tap actions.
 
 The following table provides descriptions of different parameters in the code snippets:
 
@@ -42,10 +46,14 @@ payload | String | Additional parameters such as image, botId, deep-link and jou
 botId | String | The bot ID for which the notification has been triggered.
 image | String | The path to the image file or a URL of the image.
 deeplink | String | URL which redirects the user to a particular page of the iOS application.
-journeySlug | String | The journey which has to be triggered in the bot, when the user taps on the notification.
+journeySlug | String | The name of the journey which has to be triggered in the bot, when the user taps on the notification.
 contentAvailable | Boolean | Whether to handle background notifications.
 
-### 2.1 Notification without custom action
+### Notification without custom action
+
+This is used for the On tap action, open the app (your app) - when a user clicks on the notification, it redirects to the main activity of the app where the deeplink is pointing to.
+
+We do not send any payload, instead, we just trigger the notification containing the title and body along with the image (if included). There is no action included in the payload.
 
 ```json
 {
@@ -60,7 +68,11 @@ contentAvailable | Boolean | Whether to handle background notifications.
 ```
 
 
-### 2.2 Notification with Deep-link:
+### Notification with Deep-link
+
+This is used for the On tap action to open a deep link to the app - when a user clicks on the notification, it redirects to a specific screen of the app.
+
+The payload consists of the standard notification details (title, body, and image) along with the `botId` and `deeplink` URI.
 
 ```json
 {
@@ -76,7 +88,13 @@ contentAvailable | Boolean | Whether to handle background notifications.
 }
 ```
 
-### 2.3 Notification with bot response
+### Notification with bot response
+
+This is used for the On tap action to open a specific bot flow - when a user clicks on the notification, it opens the bot that can [trigger a specific bot flow](#payload-to-trigger-bot-flow) or [shows a predefined response](#payload-to-open-the-bot-with-a-predefined-response).
+
+#### Payload to trigger bot flow
+
+Here is the payload to trigger a specific bot flow when the user clicks on the notification.
 
 ```json
 {
@@ -92,18 +110,40 @@ contentAvailable | Boolean | Whether to handle background notifications.
 }
 ```
 
+#### Payload to open the bot with a predefined response
 
+Here is the payload to show a specific bot response (text message) when the user clicks on the notification.
+
+It just contains `botId` in the response under the `data` parameter. 
+
+```json
+{
+  "topic": "{bundleId}",
+  "contentAvailable": true,
+  "title": "hey there",
+  "body": "description",
+  "payload": {
+    "botId": "{botID}",
+    "image": "{imageUrl}",
+  }
+}
+```
 :::note
-For code snippets in how to integrate Yellow Messenger bot, see the following:
+For code snippets on how to integrate the Yellow Messenger bot, see the following:
 * [iOS chatbot](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios)
 * [YM chatbot iOS demo app](https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp)
 :::
 
+***
 
 
-### 2.4 Extract parameters from notifications
+## Implementation codes for iOS app developer
 
-```
+### Extract parameters from notifications
+
+Use the following code snippet to define what happens when the user clicks on the notification. You can fetch additional data from the user when the user clicks on the notification.
+
+```js
 class NotificationService: UNNotificationServiceExtension { 
   var contentHandler: ((UNNotificationContent) -> Void)? 
   var bestAttemptContent: UNMutableNotificationContent? 
@@ -121,9 +161,11 @@ self.contentHandler = contentHandler bestAttemptContent = (request.content.mutab
 }
 ```
 
-### 2.5 Handle image notifications
+### Handle image notifications
 
-```
+Use the following code snippet to handle image notifications.
+
+```js
 import UserNotifications 
 class NotificationService: UNNotificationServiceExtension { 
    var contentHandler: ((UNNotificationContent) -> Void)? 

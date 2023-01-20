@@ -4,17 +4,7 @@ sidebar_label: Android push notifications
 ---
 
 
-Push notifications help communicate important information through mobile apps. It could be offers, app updates, important announcements, order information, or any other details that you want your app users to notify.
-
-<center><img src="https://i.imgur.com/pYaY53f.jpg" width="50%"/></center>
-
-
-You can send push notifications to Android or iOS applications using the following services:
-
-* **Firebase Cloud Messaging** (FCM):  To send push notifications to Android apps.
-* **Apple Push Notification Service** (APNS): To send push notifications to iOS or Mac OS apps.
-
-## 1. Configure Android push notification
+## Configure Android push notification
 
 ### Step 1: Add project to FCM & generate private key 
 
@@ -23,7 +13,7 @@ You can send push notifications to Android or iOS applications using the followi
 
 2. In Project settings, navigate to **Service accounts**.
 
-   ![](https://i.imgur.com/3Z1ga3w.png)
+ ![](https://i.imgur.com/3Z1ga3w.png)
 
 3. Click on **Generate new private key**. A JSON file will be downloaded which contains all the credentials.
 
@@ -51,23 +41,28 @@ To connect FCM to yellow.ai, follow these steps:
 To know how to create a push notification campaign, see [Mobile push template](/docs/platform_concepts/engagement/outbound/templates/mobilepush.md).
 :::
 
-## 2. Code snippets for Android Push notifications
+## Code snippets for Android Push notifications
+
+Notifications are sent to Firebase which then pushes them to the app using the user's device token. This section provides payloads that are sent to Firebase for different on-tap actions.
 
 The following table provides descriptions of different parameters:
 
 Parameter | Datatype | Description
 --------- | -------- | ---------
-notification | Obj | Details of the notification
+notification | Object | Details of the notification
 title | String | Title of the notification.
 body | String | Content of the notification.
-payload | String | Contains additional parameters such as iamge, botId, deeplink and journeySlug.
+payload | String | Contains additional parameters such as image, botId, deeplink and journeySlug.
 botId | String | The bot ID for which the notification has been triggered.
 image | String | Path of the image file or URL of the image.
 deeplink | String | URL which redirects the user to a particular page of the application.
-journeySlug | String | The journey which has to be triggered in the bot, when the user taps on the notification
+journeySlug | String | The name of the journey which has to be triggered in the bot, when the user taps on the notification
+token | String | A unique identifier or device ID generated for the operating system and specific device. Notifications are sent to the user's device ID.
 
-### 2.1 Notification without custom action
-
+### Notification without custom action
+  
+This is used for the On tap action, open the app (your app) - when a user clicks on the notification, it redirects to the main activity of the app.
+We do not send any payload, instead, we just trigger the notification containing the title and body along with the image (if included). There is no action included in the payload.
 
 ```js
 {
@@ -80,7 +75,11 @@ journeySlug | String | The journey which has to be triggered in the bot, when th
 }
 ```
 
-### 2.2 Notification with deep link
+### Notification with deep link
+
+This is used for the On tap action to open a deep link to the app - when a user clicks on the notification, it redirects to a specific screen of the app where the deeplink is pointing to.
+
+The payload consists of the standard notification details (title, body, and image) along with the `botId` and `deeplink` URI.
 
 ```js
 {
@@ -91,13 +90,19 @@ journeySlug | String | The journey which has to be triggered in the bot, when th
     },
     "data": {
         "botId": {botId},
-        "deeplink": "{url}"
+        "deeplink": "{uri}"
     },
     "token": "{deviceToken}"
 }
 ```
 
-### 2.3 Notification with bot response
+### Notification with bot response
+
+This is used for the On tap action to open a specific bot flow - when a user clicks on the notification, it opens the bot that can [trigger a specific bot flow](#payload-to-trigger-bot-flow) or [shows a predefined response](#payload-to-open-the-bot-with-a-predefined-response).
+
+#### Payload to trigger bot flow
+
+Here is the payload to trigger a specific bot flow when the user clicks on the notification.
 
 ```js
 {
@@ -115,27 +120,33 @@ journeySlug | String | The journey which has to be triggered in the bot, when th
 ```
 
 
-### 2.4 Handle notification for foreground app
+#### Payload to open the bot with a predefined response
 
-Use the following code snippet to display the notification when an incoming event notification payload is received.
+Here is the payload to show a specific bot response (text message) when the user clicks on the notification.
+
+It just contains `botId` in the response under the `data` parameter. 
 
 ```js
-import android.util.Log
-import com.google.firebase.messaging.FirebaseMessagingService
-import com.google.firebase.messaging.RemoteMessage
-
-class MyFirebaseMessagingService: FirebaseMessagingService() {
-    final
-    var TAG: String = "YMLog"
-    override fun onMessageReceived(remoteMessage: RemoteMessage) {
-        Log.i(TAG + " Remote message", remoteMessage.toString())
-        Log.i(TAG + " Remote message", remoteMessage.data.toString())
-        super.onMessageReceived(remoteMessage)
-    }
+{
+    "notification": {
+        "title": "Hey there",
+        "body": "Body",
+        "image": "{imageUrl}"
+    },
+    "data": {
+        "botId": "{botId}",
+    },
+    "token": "{deviceToken}"
 }
 ```
 
-### 2.5 Fetch extra data from notification when clicked
+
+## Implementation codes for Android app developer 
+
+The following are the code snippets for the Android app developer to get the notifications and handle different scenarios.
+
+
+### Fetch extra data from notifications when clicked
 
 Use the following code snippet to define what happens when the user clicks on the notification. You can fetch additional information from the user when the user clicks on the notification.
 
@@ -155,7 +166,7 @@ if (bundle != null) {
 }
 ```
 
-### 2.6 Start bot with extra data and bot details
+### Start chatbot with bot details and extra data
 
 Use the following code snippet to open the bot and trigger a specific bot flow when the user clicks on the notification. 
 
@@ -182,9 +193,28 @@ if (payloadData.get("botId") != null) {
 }
 ```
 
+### Handle notifications in the foreground when the bot is closed
+
+Use the following code snippet to handle notifications that you receive when the app is open in foreground.
+
+```js
+import android.util.Log
+import com.google.firebase.messaging.FirebaseMessagingService
+import com.google.firebase.messaging.RemoteMessage
+
+class MyFirebaseMessagingService: FirebaseMessagingService() {
+    final
+    var TAG: String = "YMLog"
+    override fun onMessageReceived(remoteMessage: RemoteMessage) {
+        Log.i(TAG + " Remote message", remoteMessage.toString())
+        Log.i(TAG + " Remote message", remoteMessage.data.toString())
+        super.onMessageReceived(remoteMessage)
+    }
+}
+```
+
 :::info
 For more details regarding the integration, see 
 * [Android SDK documentation](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android). 
 * [Test app with Android SDK and Firebase integration](https://github.com/yellowmessenger/YmChatBot-Android-DemoApp)
 :::
-
