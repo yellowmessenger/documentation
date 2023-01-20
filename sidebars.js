@@ -840,16 +840,6 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "cookbooks/whatsapp-channel/faqs",
               ]},
-              {
-                type: "category",
-                label: "Mobile push notifications",
-                link: {type: 'doc', id: 'platform_concepts/channelConfiguration/mobilepush'},
-                collapsed: true,
-                items: [
-                  "platform_concepts/channelConfiguration/android_push",
-                  "platform_concepts/channelConfiguration/ios_push",
-                ]
-              },
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
             "platform_concepts/channelConfiguration/alexa",
@@ -881,6 +871,16 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/facebook-messenger",
+          ]
+        },
+        {
+          type: "category",
+          label: "Push notifications",
+          link: {type: 'doc', id: 'platform_concepts/channelConfiguration/mobilepush'},
+          collapsed: true,
+          items: [
+            "platform_concepts/channelConfiguration/android_push",
+            "platform_concepts/channelConfiguration/ios_push",
           ]
         },
         {
