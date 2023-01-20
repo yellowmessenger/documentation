@@ -53,6 +53,7 @@ module.exports = {
         "cookbooks/marketplace-templates/edtech-template",
         "cookbooks/marketplace-templates/ecommerce-template",
         "cookbooks/marketplace-templates/saas",
+        "cookbooks/marketplace-templates/bfsi",
       ],
     }, 
     {
@@ -546,7 +547,7 @@ module.exports = {
             items: [
 
             "platform_concepts/inbox/inbox-settings/account/notification",
-            "platform_concepts/inbox/inbox-settings/account/security",
+            // "platform_concepts/inbox/inbox-settings/account/security",
             ]
           },
 
