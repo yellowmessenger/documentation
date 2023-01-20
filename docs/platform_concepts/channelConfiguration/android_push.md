@@ -98,7 +98,7 @@ The payload consists of the standard notification details (title, body, and imag
 
 ### Notification with bot response
 
-This is used for the On tap action to open a specific bot flow - when a user clicks on the notification, it opens the bot that can trigger a specific bot flow or shows a predefined response.
+This is used for the On tap action to open a specific bot flow - when a user clicks on the notification, it opens the bot that can [trigger a specific bot flow](#payload-to-trigger-bot-flow) or [shows a predefined response](#payload-to-open-the-bot-with-a-predefined-response).
 
 #### Payload to trigger bot flow
 
