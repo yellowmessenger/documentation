@@ -102,8 +102,5 @@ sidebar_label : Chat widget FAQs
 </details>
 
 
-image.png
-
-
      
      
