@@ -3,23 +3,23 @@ title : Shopify
 sidebar_label : Shopify
 ---
 ## 1. Introduction
-This integration helps Shopify stores automate the customer service and improve the user experience. In addition to the features of Yellow AI, it provides additional features that make the bot an effective selling channel for a Shopify business platform. 
-* Showcase store offerings
-* Allow  customers to browse products
-* Help customers track their order status
-* Show customer details
-* Handle Webhook events
+Shopify is an e-commerce platform that lets merchants all over the world to build and customize online stores to sell their products. Yellow.ai offers an integration with Shopify. You can connect your Shopify store to your Yellow.ai account to offer the best support service to your customers. 
 
+ **Benefits**
 
-Yellow.ai Integration with Shopify allows you to seamlessly connect your Shopify app with the yellow.ai platform. Using this integration one can get collections, get products(by Collection, Title, Product ID), get customer details(by email), and get order details(by Customer ID). Apart from this, it also provides support for handling webhook events.
-
+1. Sell your store products
+2. Allow customers to track their orders
+3. Display customer details
+4. Trigger webhook events
 
  
-## 2. Integrate Yellow bot with Shopify
-### Step 1: Create developer Shopify app
-1. Log on to your Shopify account.
-2. Select your preferred store.
-3. Navigate to **Apps** > **App and sales channel settings**.
+## 2.Configure Shopify Integration
+
+### Step 1: Create Shopify store app
+
+1. Login to your Shopify account.
+2. Choose the store you want to create the app for.
+3. Click **Apps** on the left sidebar and click **App and sales channel settings**.
 
    ![](https://i.imgur.com/QbXxgpt.jpg)
 4. Click **Develop apps for your app store**.
@@ -29,8 +29,8 @@ Yellow.ai Integration with Shopify allows you to seamlessly connect your Shopify
 5. Click **Create app**.
 
    ![](https://i.imgur.com/9wGLsYQ.png)
-6. In **App name**, enter a name for the app and click **Create app**.
-7. In the **Admin API access scopes** section, select the actions that you want the Yellow AI platform to perform. For a detailed help doc, see [Custom apps](https://help.shopify.com/en/manual/apps/custom-apps) section of the Shopify documentation.
+6. Provide a name for your app and click **Create app**.
+7. In the **Admin API integration** section, select the actions you want the Yellow.ai platform to perform. For a detailed help doc, see [Custom apps](https://help.shopify.com/en/manual/apps/custom-apps) section of the Shopify documentation.
 
    ![](https://i.imgur.com/vDx7dQ1.png)
 
@@ -45,35 +45,38 @@ Yellow.ai Integration with Shopify allows you to seamlessly connect your Shopify
   * customers_create 
   * customers_update.
 
-8. Navigate to API Credentials and copy the API key and API secret key.
-
+8. Go to API credentials and copy **API key and secret key**.
    ![](https://i.imgur.com/91ng6dO.png)
 
 
 
-### Step 2: Connect your app with Yellow Bot
+### Step 2: Connect Shopify Store App with Yellow.ai
 
-1. Log on to the Yellow AI Platform
+1. Go to cloud.yellow.ai.
 2. Go to the bot and navigate to **Integrations**.
 
    ![](https://i.imgur.com/ctLEU4H.png)
 
-3. Type shopify in the Search box, and select Shopify Shop from the list.
-4. Scroll down to Add account and enter the following details.
-   * Enter the **Shop name**. The shop name should be taken from the Shopify store URL, for example if the merchant store URL is yellowxyz.myshopify.com,the shop name would be yellowxyz.
-   * Paste **Admin API access token** and **API secret key**.
+3. Type shopify in the **Search** box, and select **Shopify Shop** from the list.
+4. Scroll down to **Add account** and fill in the following fields.
+   * **Shop Name**: Name of your shop in Shopify. The shop name should be taken from the Shopify store URL, for example if the merchant store URL is yellowxyz.myshopify.com,the shop name would be yellowxyz.
+   * **Admin API Access Token**: Copy and paste this from your Shopify store (refer step 8)
+   * **API Secret Key**: Copy and paste this from your Shopify store (refer step 8)
+
    ![](https://i.imgur.com/Y6KFBfR.jpg)
-5. Click Connect.
 
-   If the integration is successful, You can see the Shopify Shop app on the Integrations page. With this, the connection has been established between the integration app and your Shopify account.
+5. Click **Connect**.
+
+   If the integration is successful, You can see the **Shopify Shop** app on the **Integrations** page. With this, the connection has been established between the integration app and your Shopify account.
 
 
----
-
+:::note
+Please ensure that you enter your store name exactly as it is in the **Shopify** account.
+:::
    
-## 3. Use Shopify functions in your bot flow
-1. Open the bot Studio and navigate to the conversation flow where you want to use the Shopify node.
-2. You first need to collect information from the user. Use the Question node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/).
+## 3. Enable Shopify Store data in your bot
+1. Go to your bot in **Studio** and navigate to the flow where you want to use the Shopify node.
+2. As the first step, collect the customer information. Use the **Question** node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/).
 
    ![](https://i.imgur.com/3Nr7T6u.png)
 3. Add a new integration node - **Node** > **Integration** > **Shopify Shop**.
@@ -87,21 +90,21 @@ Yellow.ai Integration with Shopify allows you to seamlessly connect your Shopify
 6. Store the response in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/). 
    ![](https://i.imgur.com/fMgSeaw.png)
 
-7. Now, you can decide what information you want to show for the user. Use the Function node to customise the information that you want to display in the Code tab.
-   For example, in the preceding example, order details are stored in the variable order_details.
+7. You can decide the info you want to display to the user. Use the **Function** node to customise that information in the **Code** tab.
+   For example, in the previous screenshot, order details are stored in the variable order_details.
 order_details.order.name
-
 
 
 ---
 
 
-## 4. Use Shopify Webhook events in your bot
+## 4. Trigger Shopify Webhook events in your bot
 
-Once you have connected your Shopify Shop integration to a bot, you can use Webhook subscriptions to receive notifications about a particular event in your shop. You can trigger customised actions for a specific event using the bot flow. 
+Once you have set up the integration, you can use webhooks to receive notifications on events occuring in your store. You can trigger customised actions to those events.
 
-For example, you can show order details to the customer when he makes a transaction in your Shopify store. 
-The following are the events supported out of the box with Shopify integration:
+For example, you can show order details to customers when they purchase from your Shopify store. 
+
+The following are the events supported in our out of the box Shopify integration:
 
 Event | Description
 ----- | -----------
@@ -114,7 +117,7 @@ shopifyRefundCreated | Refund created for an order.
 shopifyNewCustomer | A new customer is registered.
 shopifyCustomerUpdate | A customer’s profile details have been updated.
 
-### Activate events to use in your bot
+## 5. Activate webhook events in your bot
 1. From the bot configuration page, click to **Events hub** > **Integrations**.You will see all the supported events.
    ![](https://i.imgur.com/AkXOKfw.jpg)
 
@@ -124,14 +127,14 @@ shopifyCustomerUpdate | A customer’s profile details have been updated.
    ![](https://i.imgur.com/kWOPYCh.png)
 4. Configure the actions that you want to trigger. For details on creating a bot, see [Studio documentation](https://docs.yellow.ai/docs/platform_concepts/studio/overview).
 
-
-
 ---
 
+## 6. Use-cases
 
-## 5. Integration nodes for Shopify 
+The following business use-cases are supported in this integrtion.
+
 ### Get all collections (getAllCollections)
-This integration node helps fetch all the available collections from shopify. However, to access this data, you need to enable all the relevant scopes for the custom app in Configure Storefront API scopes.
+This function fetches all the available collections from shopify. However, to access this data, you need to enable all the relevant scopes for the custom app in Configure Storefront API scopes.
 
    ![](https://i.imgur.com/taAOp16.png)
 
@@ -158,40 +161,8 @@ This integration node helps fetch all the available collections from shopify. Ho
   }
 ```
 
-
 ### Get products by collection (getProductsByCollection)
-This function helps you retrieve all the products of a specific collection from shopify by collection ID.
-
-Parameter | Datatype | Example
---------- | ------- | --------
-collection_id | String | 76854321
-
-
-**Sample json response object for getProductsByCollection**
-
-
-
-```{
-  "products": [
-    {
-      "id": 632910392,
-      "title": "IPod Nano - 8GB",
-      "variants": [
-        {
-          "id": 808950810,
-          "product_id": 632910392,
-          "title": "Pink",
-          "price": "199.00"
-        }
-      ]
-    }
-  ]
-}
-```
-
-### Get products by collection (getProductsByCollection)
-This function helps you retrieve all the products of a specific collection from Shopify by collection ID.
-
+This function retrieves all the products under a specific collection from shopify using collection ID.
 
 Parameter | Datatype | Example
 --------- | -------- | -------
@@ -244,6 +215,7 @@ product_id | Number  | 632910392
 ### Get products by name (getProductsByTitle)
 This function helps to retrieve the list of products with the specified title.
 
+
 Parameter | Datatype | Example
 -------- | -------- | -------
 title | String | Ipad Nano
@@ -270,7 +242,7 @@ title | String | Ipad Nano
 ```
 
 ### Get product variants (getProductVariants)
-This function helps to retrieve the list of all the available variants of a product based on the specified product ID.
+This function retrieves the list of all the variants of a product based on the specified product ID.
 
 Parameter | Datatype | Example
 -------- | --------- | --------
@@ -295,7 +267,7 @@ product_id |Number | 632910392
 
 ### Get order details (getOrderDetails)
 
-This function (integration node) helps to retrieve the details of an order using the specified order ID.
+This function retrieves the details of an order using the specified order ID.
 
 Parameter | Datatype | Example
 -------- | --------- | -------
@@ -320,7 +292,8 @@ order_id | Number | 632910392
 ```
 
 ### Get orders by customer ID (getOrdersByCustomerId)
-This function helps to retrieve the list of all the available orders of a customer based on the specified customer ID.
+This function helps to retrieve the list of all the orders of a customer based on the specified customer ID.
+
 
 Parameter | Datatype | Example
 -------- | ---------- | -------
@@ -345,7 +318,7 @@ customer_id | Number | 632910392
 ```
 
 ### Get customer details by email (findCustomerbyEmail)
-This function helps to retrieve the details of a customer based on the email ID specified.
+This function retrieves the details of a customer based on their email ID.
 
 Parameter | Datatype | Example
 --------- | -------- | -------
@@ -374,24 +347,29 @@ Sample json response object for findCustomerbyEmail -
 }
 ```
 
-
-
 ---
 
 
-## 6. Limitations
-You can 
-* fetch up to 50 products a time.
-* Use only 90kb of object size 
-* have upto 8 carousel images as you cannot input the Next option to see more products in the subsequent list. 
+## 7.Limitations
 
+1. You can fetch up to 50 products a time.
+2. You can use only 90kb of object size 
+3. You can have upto 8 carousel images since you cannot input the Next option to see more products in the subsequent list. 
 
+---
+:::note
+Abandon cart option is not available.
+:::
+
+## 8.Troubleshooting 
+
+**Error: Your webhook is failing**
+
+Ensure you have enabled Shopify's event in **Event Hub**. If your webhook fails more than twice, it will be removed and your application will not receive any notifications.
 
 ---
 
-
-
-## 7. Import Shopify template
+## 9. Import Shopify template
 Now that the connection has been established with the Shopify app, you need to import the Shopify template in your bot to use the predefined flows of the app. 
 
 To use Shopify shop template:
@@ -412,16 +390,14 @@ To use Shopify shop template:
 ---
 
 
-## 8. Disconnect Integration
-To remove an integration from your bot, follow these steps -
-1. On the bot configuration page, go to **Integration**.
-2. In the Connected apps list, click **Shopify shop** > **Disconnect**.
+## 10. Disconnect Integration
+To remove this integration from your bot, 
+
+1. On the bot configuration page, go to **Integrations**.
+2. Search for  **Shopify shop** > **Disconnect**.
    ![](https://i.imgur.com/5rb2Fxd.png)
    
-   
-
 ---
-
 
 
 ### Important References -
