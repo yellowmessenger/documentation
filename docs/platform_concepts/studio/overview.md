@@ -28,7 +28,6 @@ Before designing your bot, you need to have the bot set up as mentioned [here](h
 You can access Studio using the keyboard shortcut `g` + `s`.
 :::
 ---
-## <a name="home"></a> 2. Conversation settings 
 
 This is a general (**Home**) flow that the bot follows, irrespective of the training given to it. 
 - There is always a welcome message configured and displayed for the user.
