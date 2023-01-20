@@ -3,7 +3,7 @@ title : Shopify
 sidebar_label : Shopify
 ---
 ## 1. Introduction
-Shopify is an ecommerce platform that lets merchants all over the world to build and customize online stores to sell their products. Yellow.ai offers an integration with Shopify. You can connect your Shopify store to your Yellow.ai account to offer the best support service to your customers. 
+Shopify is an e-commerce platform that lets merchants all over the world to build and customize online stores to sell their products. Yellow.ai offers an integration with Shopify. You can connect your Shopify store to your Yellow.ai account to offer the best support service to your customers. 
 
  **Benefits**
 
