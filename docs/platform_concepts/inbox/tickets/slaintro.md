@@ -15,7 +15,7 @@ In this article, you will learn:
 ## <a name="1"></a> 1. Service level agreement for email tickets 
 
 
-A service level agreement (SLA) is a contract between yellow.ai and a customer, defining the types and standards of services that are offered.
+A service level agreement (SLA) is a contract between your organisation and your customers, defining the types and standards of services that are offered.
 SLAs lay out the metrics by which a service is measured, and remedies or penalties to be followed when the agreed-on service levels are not achieved.
 
 These SLAs are set for email tickets on the Inbox settings page.
@@ -25,7 +25,7 @@ These SLAs are set for email tickets on the Inbox settings page.
 
 - By default, there is no SLA applied to the email tickets. SLAs must be active on the settings page. 
 - After the configuration, SLA time logs will be available for all the email tickets that are created via the email channel (it will not be applicable for the email tickets created manually by any agents/admins). 
-- **First response time(FRT)**, **Resolution time(RT)** and **Every response time(ERT)** are monitored for all the tickets. 
+- **First response time(FRT)**, **Resolution time(RT)** and **Every response time(ERT)** are the SLA metrics monitored for all the tickets. 
 
 ---------------
 

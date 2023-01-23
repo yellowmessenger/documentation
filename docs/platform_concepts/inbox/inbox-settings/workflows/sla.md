@@ -6,7 +6,7 @@ sidebar_label : SLA settings
 
 
 
-A service-level agreement (SLA) defines the level of service expected by a customer from a supplier. It lays out the metrics by which that service is measured, and the remedies or penalties, if any, if the agreed-on service levels are not achieved. Usually, SLAs are between companies and external suppliers, but they may also be between two departments within a company.
+A service-level agreement (SLA) defines the level of service expected by a customer from an organisation. It lays out the metrics by which that service is measured, and the remedies or penalties, if any, in case the agreed-upon service levels are not maintained. Usually, SLAs are between companies and external stakeholders such as customers or suppliers, but they may also be between two departments within a company.
 
 Most service providers have standard SLAs reflecting various levels of service at different prices.
 
@@ -18,7 +18,7 @@ Most service providers have standard SLAs reflecting various levels of service a
 
 
 :::note
-- First SLA policy that gets applied to a ticket will not change at any point (even if the group/tag is changed) because SLAs are end customer facing. 
+- First SLA policy that gets applied to a ticket will not change at any point (even if the group/tag is changed) because SLAs are end-customer facing. 
 - Two SLAs policies cannot be applied to a single ticket. 
 - The priority of assignment will be Top → Down as the policies appear in the UI. 
 :::
@@ -53,7 +53,7 @@ To configure SLAs, follow the below steps:
     - Select **Group**/ **Tag**. **Group** / **Tag** names will be listed in the drop-down, and select the required value. 
     ![](https://i.imgur.com/9aaLlRz.png)
 
-    - You can add multiple conditions by clicking on **Add another condition**. This SLA will be applicable if both conditions hold (AND condition). For example, in the above screenshot, SKmart SLA will be applied if the ticket belongs to the Payments group and is tagged as critical.  
+    - You can add multiple conditions by clicking on **Add another condition**. This SLA will be applicable if both conditions hold (AND condition). For example, in the above screenshot, SkMart SLA will be applied if the ticket belongs to the Payments group and is tagged as critical.  
 
 8. SLA targets are separated based on priority. You can set targets that the team should meet, or the SLA gets breached. You can set the Timings(Minutes/Hours/Days) in the normal calendar hours for High, Medium, and Low priority tickets. Agents will be notified by enabling the **Escalations** and **Reminder** toggle. 
     - **Resolution time**: The total time taken by the agent to provide the resolution. It is calculated based on the time the ticket was opened (or assigned if it was directly assigned) to the time it was set as resolved.
@@ -73,8 +73,8 @@ To configure SLAs, follow the below steps:
 #### Add Reminders to remind agents before the SLA due time 
 
 9. Multiple reminders can be added to a single SLA policy to approach the agent or relevant stakeholders when the SLA rule breach approaches.
-    - You can select when the remainder must be sent. Select **First response/Next response/Resolution time**
-    - Add when the remainder must be sent by mentioning it next to **approaches in**, it is the representative of how much time before the reminder will be sent. 
+    - You can select when the reminder must be sent. Select **First response/Next response/Resolution time**
+    - Add when the reminder must be sent by mentioning it next to **approaches in**, it is the representative of how much time before the reminder will be sent. 
     - The reminder will be sent as an email to the assigned agent, added agents/admins, or any email ID mentioned in the list. 
 
 
