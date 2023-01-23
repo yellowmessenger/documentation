@@ -12,7 +12,7 @@ When the Automatic ticket assignment toggle is enabled, tickets will get distrib
 In this article, you will learn:
 
 1. [How does Auto assignment work?](#function)
-2. [How to enable chat auto-assignment in Inbox?](#enable)
+2. [How to enable auto-assignment in Inbox?](#enable)
 
 
 
@@ -27,7 +27,7 @@ In this article, you will learn:
 
   
 
-Three parameters dictate the chat ticket assignment logic based on which the chat/tickets will get assigned to the available agents, they are listed below:
+Three parameters dictate the email ticket assignment logic based on which the tickets will get assigned to the available agents, they are listed below:
 
   
 
@@ -38,8 +38,8 @@ Three parameters dictate the chat ticket assignment logic based on which the cha
 
 An agent within Inbox can be in any of the following statuses - Available, Busy, or Away.  
 
-- If the agent is on Available status, they will be automatically assigned new incoming chat tickets.
-- If the agent is either Busy or Away, they’ll be not actively assigned to new chats. That chat will either be assigned to the next available agent or queued.
+- If the agent is on Available status, they will be automatically assigned new incoming tickets.
+- If the agent is either Busy or Away, they’ll be not actively assigned to new tickets. That ticket will either be assigned to the next available agent or queued.
 
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox#-4-default-agent-status), to know more about the difference between Busy and Away.
 
@@ -49,7 +49,7 @@ An agent within Inbox can be in any of the following statuses - Available, Busy,
 
   
 
-This presents the timestamp at which the agent was last assigned with a chat ticket i.e the longest duration each agent has gone without getting a new ticket.
+This presents the timestamp at which the agent was last assigned with a email ticket i.e the longest duration each agent has gone without getting a new ticket.
 
   
 
@@ -61,8 +61,8 @@ Each agent will have an upper limit for chats called Concurrency which explains 
 
   
 
-- When a new chat ticket is raised (assuming it is raised within working hours), it will first fetch all the available agents in the group the ticket was raised for. It will not consider agents who have set their status to Busy or Away.
-- All the available agents will be sorted in the ascending order of their last ticket assigned time i.e the longest an agent has gone without getting a new ticket. Then the chat ticket will be assigned to the first agent who has available space in their concurrency.
+- When a new email ticket is raised (assuming it is raised within working hours), it will first fetch all the available agents in the group the ticket was raised for. It will not consider agents who have set their status to Busy or Away.
+- All the available agents will be sorted in the ascending order of their last ticket assigned time i.e the longest an agent has gone without getting a new ticket. Then the email ticket will be assigned to the first agent who has available space in their concurrency.
 
   
 
@@ -145,7 +145,7 @@ Then, they will be rearranged based on descending order of the last ticket assig
     
   
 
-The chat ticket will be assigned to **Agent C**, since **C** is the first agent that has gone the longest without a new ticket assigned to them and has space in their concurrency (3 more left to their max concurrency which is 6).
+The email ticket will be assigned to **Agent C**, since **C** is the first agent that has gone the longest without a new ticket assigned to them and has space in their concurrency (3 more left to their max concurrency which is 6).
 
   
 
@@ -155,7 +155,7 @@ The chat ticket will be assigned to **Agent C**, since **C** is the first agent 
 
   
 
-Follow the given steps to enable chat/ ticket auto-assignment:
+Follow the given steps to enable email ticket auto-assignment:
 
   
 

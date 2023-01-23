@@ -150,15 +150,6 @@ Speech to text can be enabled by setting the enableSpeech flag. Default value is
 config.enableSpeech = true
 ```
 
-If you are adding Speech recognization, add following snippet to Info.plist of the host app
-
-```xml
-<key>NSMicrophoneUsageDescription</key>
-<string>Your microphone will be used to record your speech when you use the Voice feature.</string>
-<key>NSSpeechRecognitionUsageDescription</key>
-<string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
-```
-
 ### Hide Input Bar
 
 You can hide the input bar while bot is loading by setting the disableActionsOnLoad flag present in config. Default value is `false`
@@ -334,6 +325,21 @@ To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
     }
 ```
 
+## Permissions
+
+We are requesting for following permissions
+
+```xml
+<key>NSMicrophoneUsageDescription</key>
+<string>Your microphone will be used to record your speech when you use the Voice feature.</string>
+<key>NSSpeechRecognitionUsageDescription</key>
+<string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
+```
+
+:::note Microphone and Speech Permission
+
+Apple's Speech Framework is added in the SDK to support the [Speech to Text](#speech-to-text) feature, and it will only be used when it has been declared in your config.
+:::
 
 ## Logging
 

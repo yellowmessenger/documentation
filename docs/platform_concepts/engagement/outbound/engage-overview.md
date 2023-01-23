@@ -33,7 +33,8 @@ The following are the different KPIs of User data report:
 * **Profile completeness**: The average completeness of the profile information (based on the values available for user attributes) of the total users on User 360.
 * **User split**: Shows the count of users for which a specific user property is available across the user base. For example, to see the number of users with  `userId`(identified users), click on the **User split** drop-down and choose `userId`.
 
-If an attribute is available for the user, the Split considers it as a known category.
+If an attribute is available for the user, the Split considers it as a known category. For some system attributes, the split is shown based on the standard unique values.
+
 
 <center><img src="https://i.imgur.com/bPLzOqP.png" width="30%"/></center>
 

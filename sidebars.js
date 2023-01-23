@@ -53,6 +53,7 @@ module.exports = {
         "cookbooks/marketplace-templates/edtech-template",
         "cookbooks/marketplace-templates/ecommerce-template",
         "cookbooks/marketplace-templates/saas",
+        "cookbooks/marketplace-templates/bfsi",
       ],
     }, 
     {
@@ -546,7 +547,7 @@ module.exports = {
             items: [
 
             "platform_concepts/inbox/inbox-settings/account/notification",
-            "platform_concepts/inbox/inbox-settings/account/security",
+            // "platform_concepts/inbox/inbox-settings/account/security",
             ]
           },
 
@@ -870,6 +871,16 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/facebook-messenger",
+          ]
+        },
+        {
+          type: "category",
+          label: "Push notifications",
+          link: {type: 'doc', id: 'platform_concepts/channelConfiguration/mobilepush'},
+          collapsed: true,
+          items: [
+            "platform_concepts/channelConfiguration/android_push",
+            "platform_concepts/channelConfiguration/ios_push",
           ]
         },
         {
