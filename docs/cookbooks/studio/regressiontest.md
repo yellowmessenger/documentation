@@ -1,105 +1,93 @@
 ---
-title: Regression Tests on Cloud
-sidebar_label : Regression Tests on Cloud
+title: NLU Automated Testing 
+sidebar_label : NLU automated testing
 ---
 
+Instead of creating utterances manually, you can now auto-generate them and run test utterances in bulk. Before publishing, you can test these utterances to check whether each one is mapped to the respective intents.
 
-The regression test feature enables the QA team to do the bulk testing of utterances to check whether it is triggering the expected journey/intent. It is available for both cloud/app bots.
+To try this, 
 
-**Use-case**
+1. Go to **Studio** and click **Test bot**.
 
-After the QA team has written the set of utterances, it takes a lot of time to manually execute those utterances one by one. Using this feature you can reduce the time taken for the execution of test utterances from days to hours.
+![](https://i.imgur.com/VsR4lqC.png)
+
+
+You will see the following options. 
+
+![](https://i.imgur.com/QIdy6nP.jpg)
+
+
+Choose how you want to test your bot.You can always swap between these two options at any given point.
+
+### 1. [Import Intents](#1-import-intents)
+
+If you haven't uploaded utterances to your bot and would like to import them and test them, click **Import Intents**.
+
+### 2. [Upload Utterances](#12-upload-utterances)
+
+If you already have a list of test utterances and want to just test them, click on  **Upload Utterances**. 
+
+## 1.1 Import Intents
+
+1. Click on any intent.
+2. In the **Utterances** field, type any utterance and click **Generate utterances**. A list of utterances would be generated.
+
+![](https://i.imgur.com/NKiWG2R.png)
+
+
+3. Select the utterances you need to test and click **Test intent**.
+
+![](https://i.imgur.com/ed5sIaV.png)
+
+
+ The platform will run the prediction test and display results according to the confidence level. The result is pass if any utterance trigger has the same intent with high confidence, else it is fail. 
+ 
+![](https://i.imgur.com/6Yp9J3B.png)
+ 
+4. To test all the other intents, click the back arrow(on the top left next to the intent's name) and click **Test Intents**. This will test the utterances for all the intents and give the status regressively. It's useful when you are making changes to your bot, you don't have to test each and every change, with a click you can collectively train the bot on all the changes.
+
+![](https://i.imgur.com/iKGRhZP.png)
+
+
+5. To download these tested utterances and access them offline click the **Download report** button. 
+
+### Test FAQs
+
+1. Click on any FAQ.
+2. In the variations field, type any question/text and click **Generate variations**. A list of variations would be generated.
+
+![](https://i.imgur.com/QvXdhqA.png)
+
+3. Select the variations you need to test and click **Test FAQ**. 
+
+![](https://i.imgur.com/0F9Is9F.png)
+
+The platform will run the prediction test and display results according to the confidence level. The result is pass if any utterance trigger has the same intent with high confidence, else it is fail. 
+
+![](https://i.imgur.com/FTXS4Gp.png)
+
+4. Click the back arrow(on the top left next to the faq's name) and click **Test Intents** to test all the other intents. This will test the variations for all the FAQs and give the status regressively. It's useful when you are making changes to your bot, you don't have to test each and every change, with a click you can collectively train the bot on all the changes.
+
+![](https://i.imgur.com/35gWFNY.png)
+
+
+5. To download these tested utterances and access them offline click the **Download report** button on the same page. 
+
+
+## 1.2 Upload Utterances 
+
+1. Click the download icon to download the template.
+![](https://i.imgur.com/bj9voiI.png)
+2. Populate your utterances in the template.
+3. Click the **Upload** button to upload this file.
+4. Check the status of those utterances by downloading the report from the **REPORTS** section.
+
+![](https://i.imgur.com/KIp9a0o.png)
+
 
 :::note
-This is an MVP and not enabled for multilingual and FAQs
+To switch between **Upload Utterances** and **Import Intents**, click the arrow beside **Import Intents**.
+
+![](https://i.imgur.com/PBebGxT.png)
 :::
-
-## 1. Demo for cloud bot
-
-Follow the given steps to perform a regression test for cloud bots: 
-
-1. **Prepare the Utterance List and write the expected intent.**
-
-Even before going to the platform to use this feature, prepare the list of utterances and their respective expected intent. 
-
-* QA Team will write the list of utterances.
-* During handover studio devs will write the expected intent in the journey column. 
-* Keep the utterance list ready with columns only as (utterance, journey, and tag).
-
-
-:::note
-- Make sure that it is written the same. These column names are case-sensitive. 
-- Bug to be resolved: Intent name must be entered in the journey column (excel sheet).
-:::
-
-![](https://i.imgur.com/27smAMS.jpg)
-
-2. **Upload the list (from the previous step)and Generate the report.**   
-
-
-- Open **Studio** > **Regression** (on left sidebar).  
-
-![](https://i.imgur.com/Ig2613P.png)
-
-- Clicking regression will open the regression suite in a new tab.   
-
-![](https://i.imgur.com/Q3OiT7x.jpg)
-    
-- Click **Utterance Management**. 
-
-![](https://i.imgur.com/07JkyCG.png)
-    
-- Download the utterance list file generated in step 1 as CSV and upload it here.
-
-![](https://i.imgur.com/fiongPq.jpg)
-    
-- Wait for the utterance 'report ready' icon to pop up and click **Reports**.
-
-![](https://i.imgur.com/xS1mEQO.jpg)
-    
-- Download the report for the latest uploaded utterance list.
-
-![](https://i.imgur.com/hNPOLjm.jpg)
-
-
-
-:::note
-If you are in Dev Environment it will open up the flows and intents in dev env only. It will give results based on the intent trained in the dev environment. If the bot is published on live, then you can select live env respectively. The same goes for sandbox, staging, and production.
-:::
-
-3. **Add Pass/Fail result.**
-
-- Download the report.
-- Add the downloaded data in the same file as a different sheet. Preferably named as “Report”.
-
-![](https://i.imgur.com/zfBdrQs.jpg)
-
-
-- Remove/hide columns Confidence, status, created from, and created date. Add a column “Result”
-
-:::note
-As mentioned above Journey here means expected intent & Predicted Journey means predicted intent.
-:::
-
-![](https://i.imgur.com/Va43gFR.jpg)
-
-
-- Write formula in Column D. (=B2=C2) and drag down. It will populate the column with True/False. 
-
-
-![](https://i.imgur.com/dUf08QW.jpg)
-
-
-4. **Verify results**.
-
-If the result is: 
-
-- **True**: Expected Intent is the Predicted Intent. It confirms the correct intent will be triggered with the respective intent.
-
-- **False**: Filter out the false results and check if you need to retrain the bot/or do some other corrective steps.
-
-
-
-
-
 
