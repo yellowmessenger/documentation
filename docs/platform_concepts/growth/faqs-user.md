@@ -145,6 +145,15 @@ On the user engagement events table, similar records are rolled up at 30 mins in
 </summary>
 <div>
 Open <b>Insights</b> > <b>Metrics</b>. You can apply 31 days custom time filter of any month before 6 months(or a year) and click <b>Export</b> and select <b>Chat transcripts</b>. 
+</div>
+</details>
 
+
+<details>
+<summary> 
+When is my raw data export sent to my email and when does it get downloaded directly?
+</summary>
+<div>
+How a dataset is exported depends on the file size. If the count of records is greater or equal to 500, we do an export from backend (email). For less than 500 records, the export happens directly.
 </div>
 </details>
