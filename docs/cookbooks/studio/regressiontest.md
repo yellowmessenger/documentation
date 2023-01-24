@@ -17,17 +17,19 @@ You will see the following options.
 ![](https://i.imgur.com/QIdy6nP.jpg)
 
 
-Choose how you want to test your bot.You can always swap between these two options at any given point.
+Choose how you want to test your bot. 
 
-### 1. [Import Intents](#1-import-intents)
-
-If you haven't uploaded utterances to your bot and would like to import them and test them, click **Import Intents**.
-
-### 2. [Upload Utterances](#12-upload-utterances)
-
-If you already have a list of test utterances and want to just test them, click on  **Upload Utterances**. 
+1. [Import Intents](#11-import-intents)
+2. [Upload Utterances](#12-upload-utterances)
+ 
+ :::note
+ To switch between **Upload Utterances** and **Import Intents**, click the arrow beside **Import Intents**.
+ ![](https://i.imgur.com/PBebGxT.png)
+ :::
 
 ## 1.1 Import Intents
+
+If you haven't uploaded utterances to your bot and would like to import them and test them, click **Import Intents**.
 
 1. Click on any intent.
 2. In the **Utterances** field, type any utterance and click **Generate utterances**. A list of utterances would be generated.
@@ -76,6 +78,8 @@ The platform will run the prediction test and display results according to the c
 
 ## 1.2 Upload Utterances 
 
+If you already have a list of test utterances and want to just test them, click on  **Upload Utterances**. 
+
 1. Click the download icon to download the template.
 ![](https://i.imgur.com/bj9voiI.png)
 2. Populate your utterances in the template.
@@ -85,9 +89,4 @@ The platform will run the prediction test and display results according to the c
 ![](https://i.imgur.com/KIp9a0o.png)
 
 
-:::note
-To switch between **Upload Utterances** and **Import Intents**, click the arrow beside **Import Intents**.
-
-![](https://i.imgur.com/PBebGxT.png)
-:::
 
