@@ -109,6 +109,10 @@ You can mention the domain URL with a path variable in the CTA when sending for 
    When the user clicks on CTA sent through notification, it redirects to the following link.
    [https://docs.yellow.ai/docs/platform_concepts/engagement/engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).
 
+:::note
+You cannot change the parent domain dynamically.
+:::
+
 ### 1.2 Add make a phone call CTA
 
 1. In **Type of action**, choose *Phone call*.

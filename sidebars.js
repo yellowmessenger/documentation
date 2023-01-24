@@ -53,7 +53,7 @@ module.exports = {
         "cookbooks/marketplace-templates/edtech-template",
         "cookbooks/marketplace-templates/ecommerce-template",
         "cookbooks/marketplace-templates/saas",
-        "cookbooks/marketplace-templates/bfsi",
+       // "cookbooks/marketplace-templates/bfsi",
       ],
     }, 
     {

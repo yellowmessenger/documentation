@@ -115,11 +115,8 @@ User logs is a space for your to audit your user data. There are 3 types of logs
 
 -  **CSV import**: This log appears whenever you [import users using a CSV file](/docs/platform_concepts/engagement/cdp/user_data/import_users). The associated *Download log* link contains details about the import process, that is, which records were imported, merged, or failed.
 -  **Bulk users download**:  This log appears whenever you [export your user data](#export-user-data). Use the associated *Download log* to download the exported user data in a CSV file.
-
 -  **Bulk user delete **: This log appears whenever you [delete your user data](#delete-user-data).
 
   
 
 ![](https://i.imgur.com/s86psKQ.png)
-
-
