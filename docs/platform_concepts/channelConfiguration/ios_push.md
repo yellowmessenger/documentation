@@ -49,9 +49,17 @@ deeplink | String | URL which redirects the user to a particular page of the iOS
 journeySlug | String | The name of the journey which has to be triggered in the bot, when the user taps on the notification.
 contentAvailable | Boolean | Whether to handle background notifications.
 
+:::note
+* Either `deviceToken` or `ymAuthToken` is needed. For campaigns, `deviceToken` is mandatory and `ymAuthToken` is optional. <br/>However, to push notifications from from your app to User 360, only `ymAuthToken` is required.
+* Ensure you create users along with their device and ym authentication tokens.
+* When sending out notifications, the yellow.ai consumes these details automatically, decides the platform, and sends out notifications accordingly.
+:::
+
+
 ### Notification without custom action
 
-This is used for the On tap action, open the app (your app) - when a user clicks on the notification, it redirects to the main activity of the app where the deeplink is pointing to.
+This is used to redirect the user to the main activity of the app - On tap action, open the app (your app)]- Step 7 of [Push notification template](/docs/platform_concepts/engagement/outbound/templates/mobilepush). 
+
 
 We do not send any payload, instead, we just trigger the notification containing the title and body along with the image (if included). There is no action included in the payload.
 
@@ -129,7 +137,7 @@ It just contains `botId` in the response under the `data` parameter.
 }
 ```
 :::note
-For code snippets on how to integrate the Yellow Messenger bot, see the following:
+For code snippets on how to integrate the yellow.ai bot, see the following:
 * [iOS chatbot](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios)
 * [YM chatbot iOS demo app](https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp)
 :::

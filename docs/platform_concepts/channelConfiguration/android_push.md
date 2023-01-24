@@ -21,8 +21,7 @@ sidebar_label: Android push notifications
 
 
 :::info
-For detailed help,  [see Firebase documentation](https://firebase.google.com/docs/cloud-messaging/android/client).
-2.  To set up Firebase Cloud Messaging client app on Android,  see the [Firebase official documentation](https://firebase.google.com/docs/cloud-messaging/android/client).
+To set up Firebase Cloud Messaging client app on Android,  see the [Firebase official documentation](https://firebase.google.com/docs/cloud-messaging/android/client).
 :::
 
 
@@ -43,7 +42,7 @@ To know how to create a push notification campaign, see [Mobile push template](/
 
 ## Code snippets for Android Push notifications
 
-Notifications are sent to Firebase which then pushes them to the app using the user's device token. This section provides payloads that are sent to Firebase for different on-tap actions.
+Notifications are sent to Firebase which then pushes them to the app using the user's device token. This section provides payloads that are sent to Firebase for different on-tap actions (action performed when the user taps on the push notification).
 
 The following table provides descriptions of different parameters:
 
@@ -57,11 +56,19 @@ botId | String | The bot ID for which the notification has been triggered.
 image | String | Path of the image file or URL of the image.
 deeplink | String | URL which redirects the user to a particular page of the application.
 journeySlug | String | The name of the journey which has to be triggered in the bot, when the user taps on the notification
-token | String | A unique identifier or device ID generated for the operating system and specific device. Notifications are sent to the user's device ID.
+token* | String | A unique identifier or device ID generated for the operating system and specific device. Notifications are sent to the user's device ID.
+
+:::note
+* Parameters with * are mandatory.
+* Either `deviceToken` or `ymAuthToken` is needed. For campaigns, `deviceToken` is mandatory and `ymAuthToken` is optional. <br/>However, to push notifications from from your app to User 360, only `ymAuthToken` is required.
+* Ensure you create users along with their device and ym authentication tokens.
+* When sending out notifications, the yellow.ai consumes these details automatically, decides the platform, and sends out notifications accordingly.
+:::
 
 ### Notification without custom action
   
-This is used for the On tap action, open the app (your app) - when a user clicks on the notification, it redirects to the main activity of the app.
+This is used to redirect to the main activity of the app when a user clicks on the notification - On tap action, open the app (your app). See Step 7 of [Push notification template](/docs/platform_concepts/engagement/outbound/templates/mobilepush).
+
 We do not send any payload, instead, we just trigger the notification containing the title and body along with the image (if included). There is no action included in the payload.
 
 ```js
@@ -146,9 +153,9 @@ It just contains `botId` in the response under the `data` parameter.
 The following are the code snippets for the Android app developer to get the notifications and handle different scenarios.
 
 
-### Fetch extra data from notifications when clicked
+### Fetch additional data from notifications when clicked
 
-Use the following code snippet to define what happens when the user clicks on the notification. You can fetch additional information from the user when the user clicks on the notification.
+Use the following code snippet fetch additional information from the user when the user clicks on the notification.
 
 ```js
 HashMap < String, Object > payloadData = new HashMap < > ();
@@ -166,7 +173,7 @@ if (bundle != null) {
 }
 ```
 
-### Start chatbot with bot details and extra data
+### Start chatbot with bot details and additional data
 
 Use the following code snippet to open the bot and trigger a specific bot flow when the user clicks on the notification. 
 
@@ -195,7 +202,7 @@ if (payloadData.get("botId") != null) {
 
 ### Handle notifications in the foreground when the bot is closed
 
-Use the following code snippet to handle notifications that you receive when the app is open in foreground.
+Use the following code snippet to handle the notifications you receive when the app is open in the foreground.
 
 ```js
 import android.util.Log
