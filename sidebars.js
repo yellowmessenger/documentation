@@ -53,7 +53,7 @@ module.exports = {
         "cookbooks/marketplace-templates/edtech-template",
         "cookbooks/marketplace-templates/ecommerce-template",
         "cookbooks/marketplace-templates/saas",
-       // "cookbooks/marketplace-templates/bfsi",
+       "cookbooks/marketplace-templates/bfsi",
       ],
     }, 
     {
@@ -363,6 +363,26 @@ module.exports = {
 
         //1. Overview 
        // "platform_concepts/inbox/inbox",
+
+
+        //Inbox Setup
+        {
+          type: "category",
+          label: "Inbox Setup",
+         // link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
+          collapsed: true,
+          items: [
+            "platform_concepts/inbox/inbox_setup/supportagents",
+            "platform_concepts/inbox/inbox_setup/inboxdemo",
+
+              "platform_concepts/inbox/inbox_setup/agentstatuses",
+              "platform_concepts/inbox/inbox_setup/debugchecklist",
+            //
+                 ],
+         },
+
+
+
         //2. monitor doc 
         "platform_concepts/inbox/monitor",
         //3. chats doc 
@@ -380,6 +400,7 @@ module.exports = {
             "platform_concepts/inbox/chats/instagrampolicy",
                  ],
          },
+
         //4. tickets doc 
         {
           type: "category",
