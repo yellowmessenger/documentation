@@ -40,4 +40,4 @@ Enable mulitlingual support for your bot by following these steps,
 
 ![](https://i.imgur.com/RCNpPes.png)
 
-9. The conversation with the bot after this point will be in the selected language and the previous conversations will also change to the selected language.
+9. The conversation with the bot after this point will be in the selected language.
