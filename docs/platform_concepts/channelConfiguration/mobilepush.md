@@ -3,7 +3,7 @@ title: Push notifications
 sidebar_label: Push notifications
 ---
 
-Push notifications help communicate important information through mobile apps. It could be offers, app updates, important announcements, order information, or any other details that you want your app users to notify.
+Push notifications help you communicate important information through mobile apps. It could be offers, app updates, important announcements, order information, or any other details that you want to notify your app users.
 
 <center><img src="https://i.imgur.com/pYaY53f.jpg" width="50%"/></center>
 
