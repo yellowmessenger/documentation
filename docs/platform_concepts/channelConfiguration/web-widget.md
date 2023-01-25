@@ -4,7 +4,7 @@ sidebar_label : Set up Chat widget
 keywords : [iframe]
 ---
 
-This document helps you understand how to access the Chat widget and will guide you through how to customise, deploy, and preview it before setting it up on the website.
+This document helps you understand how to access the Chat widget and will guide you through how to customize, deploy, and preview it before setting it up on the website.
 
 ## 1. Access Chat widget
 
@@ -13,15 +13,15 @@ To access Chat widget, follow these steps:
 1. Log in to [Yellow.ai Platform](https://cloud.yellow.ai).
 2. On the module switcher, click **Channels**.
 
-![](https://i.imgur.com/UuFZ2eR.png)
+   ![](https://i.imgur.com/UuFZ2eR.png)
 
 3. Click on **Chat widget**.
 
-![](https://i.imgur.com/1KzP77W.png)
+   ![](https://i.imgur.com/1KzP77W.png)
 
 4. The Chat widget screen appears as shown below.
 
-![](https://i.imgur.com/K2OFk9z.png)
+   ![](https://i.imgur.com/K2OFk9z.png)
 
  
 ## 2. Customize Chat widget
@@ -30,7 +30,7 @@ To access Chat widget, follow these steps:
 
 The **Widget Panel** helps you customize the look and feel of the chat widget.
 
-<img src="https://i.imgur.com/nbztdK4.jpg)" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/nbztdK4.jpg)" alt="drawing" width="80%"/>
 
 
 To customize the design, make the required changes as per the descriptions provided in the following table, and click **Save changes**.
@@ -48,7 +48,7 @@ Secondary color | Set the color of other components of the bot such as chat.
 | Position | Set the position of the widget on the website - Bottom Left and Bottom Right. |
 | Initial state for desktop | Set the initial display mode of the widget on websites -  Half opened, Minimised, or Conversational layout. |
 
-<img src="https://i.imgur.com/r1GHIfj.png)" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/r1GHIfj.png)" alt="drawing" width="60%"/>
 
 ***
 
@@ -62,8 +62,8 @@ The **Bot Icon** tab allows you to set the desired logo for your bot. You can al
 
 Option | Description
 --------|---------
-Icon Shape | Set the desired bot icon type for web and mobile apps. <br/>For web applications, you can select Circle, Square, or Bar, and for mobile app, you can select Circle or Square.<br/>You can set the bot icon by choosing one of the following options. <br/> **Same as avatar**: Set the shape of the bot icon. <br/> <img src="https://i.imgur.com/OgVl8Dm.png)" alt="drawing" width="80%"/> <br/> **Upload custom icon**: Set the customised logo for the bot by clicking the **Add** icon. <br/> <img src="https://i.imgur.com/E8dBn9d.png))" alt="drawing" width="60%"/>
- Bot icon animations | Select the **Animation type** from the drop-down to add animation to your bot icon. <br/> <img src="https://i.imgur.com/wC0q6Yt.png)" alt="drawing" width="60%"/>
+Icon Shape | Set the desired bot icon type for web and mobile apps. <br/>For web applications, you can select Circle, Square, or Bar, and for mobile app, you can select Circle or Square.<br/>You can set the bot icon by choosing one of the following options. <br/> **Same as avatar**: Set the shape of the bot icon. <br/> <img src="https://i.imgur.com/OgVl8Dm.png)" alt="drawing" width="60%"/> <br/> **Upload custom icon**: Set the customised logo for the bot by clicking the **Add** icon. <br/> <img src="https://i.imgur.com/E8dBn9d.png))" alt="drawing" width="40%"/>
+ Bot icon animations | Select the **Animation type** from the drop-down to add animation to your bot icon. <br/> <img src="https://i.imgur.com/wC0q6Yt.png)" alt="drawing" width="40%"/>
  | 
 
 ***
@@ -73,7 +73,7 @@ Icon Shape | Set the desired bot icon type for web and mobile apps. <br/>For web
 
 You can configure your chatbot by enabling or disabling the following features on the bot. 
 
-<img src="https://i.imgur.com/KJaHDDu.png)" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/KJaHDDu.png)" alt="drawing" width="40%"/>
 
 
 Option | Description
@@ -100,7 +100,7 @@ To deploy the widget on your website, follow these steps:
 1. Navigate to the **Deploy** tab.
 2. Copy the code using the respective icon, and paste it on your website.  
 
-   <img src="https://i.imgur.com/8TnDcjf.png" width="40%"/>
+   <img src="https://i.imgur.com/8TnDcjf.png" width="80%"/>
 
 
 2. In the same code, next to bot ID, add the following:
@@ -161,7 +161,7 @@ As you design the bot, you can preview the changes in real time in the **Preview
 
 To preview your bot on a website, click **Deploy** > **Experience on a Website**.
 
-<img src="https://i.imgur.com/8o40gQW.png" width="60%"/> 
+<img src="https://i.imgur.com/8o40gQW.png" width="80%"/> 
 
 :::info
 To share chatbot with other users, copy the bot link.
