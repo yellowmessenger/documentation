@@ -27,7 +27,7 @@ Choose how you want to test your bot.
  ![](https://i.imgur.com/PBebGxT.png)
  :::
 
-## 1.1 Import Intents
+## 1. Import intents
 
 If you haven't uploaded utterances to your bot and would like to import them and test them, click **Import Intents**.
 
@@ -46,14 +46,16 @@ If you haven't uploaded utterances to your bot and would like to import them and
  
 ![](https://i.imgur.com/6Yp9J3B.png)
  
-4. To test all the other intents, click the back arrow(on the top left next to the intent's name) and click **Test Intents**. This will test the utterances for all the intents and give the status regressively. It's useful when you are making changes to your bot, you don't have to test each and every change, with a click you can collectively train the bot on all the changes.
+4. To test all the other intents, click the back arrow(on the top left next to the intent's name) and click **Test Intents**. 
+
+This action will test the utterances for all the intents and give the status regressively. It's useful when you are making changes to your bot. You don't have to test each and every change, with a click you can collectively train the bot on all the changes.
 
 ![](https://i.imgur.com/iKGRhZP.png)
 
 
 5. To download these tested utterances and access them offline click the **Download report** button. 
 
-### Test FAQs
+### 1.1 Test FAQs
 
 1. Click on any FAQ.
 2. In the variations field, type any question/text and click **Generate variations**. A list of variations would be generated.
@@ -76,7 +78,7 @@ The platform will run the prediction test and display results according to the c
 5. To download these tested utterances and access them offline click the **Download report** button on the same page. 
 
 
-## 1.2 Upload Utterances 
+## 2. Upload utterances 
 
 If you already have a list of test utterances and want to just test them, click on  **Upload Utterances**. 
 
