@@ -1,132 +1,92 @@
 ---
 title: Our latest product updates
-sidebar_label: December 2022
+sidebar_label: January 2023
 featured: true
 ---
 
 For you, our Product & Development team is working hard to consistently improve the product.  
-Here is a list of product updates we made in the month of **December** to provide you with the best user experience. 
+Here is a list of product updates we made in the month of **January** to provide you with the best user experience. 
 
 ----
 
+## 1. **Studio**
+
+#### 1. Orchestrator for Cloud Bots
+
+You can now create a family of bots, where one parent bot connects to multiple child bots (only cloud bots are supported) with the following functionalities:
+1. **Unify Inbox**: Any ticket created in a child bot shall be redirected to the Inbox of the parent bot. This allows you to handle all the tickets in one place.
+2. **Conversation Redirect**: Customers can start conversations with the parent bot, and based on some triggered words that are configurable, the conversation shall be redirected to the respective child bots.
+3. **Additional Channel Support**: Connect the parent bot to Viber, Viber Business, FB Messenger, Yellow Messenger, Whatsapp, Google Assistant, Line, and MS Teams.    
+
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator).
 
 
-## 1. **Inbox**
+#### 2. NLU Automated Testing on the cloud 
 
-#### 1 Add pre-designed templates to your emails
+Bot QA process time is now reduced by up to 30-40% for medium to large complexity bots with the launch of Automated NLU Testing for Intents and FAQs. With this, you can **Generate Utterances** for testing and **Bulk Test** the utterances whether they are getting mapped to the right intent/FAQs.    
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator).
 
-| *New feature* 
+#### 3. Conversation Designer to design conversations before development 
 
-You can now create **Email templates** from the settings and communicate with customers by providing a consistent and professional look & feel for all of their emails. This makes it engaging & easier for the customers to read which improves their overall experience.   
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte).
+A simple easy-to-use tool for anyone to design conversations, preview them, and  hand them off for development.
+Once your design is done and the preview is approved, open the builder and your designs will automatically get converted into builder nodes, ready for integration. You can also use variables, conditions, and set fallbacks for common validators (Name, Email, and Phone).
 
-
-
-#### 2. Configure the look and feel of your knowledgebase
-
-| *Enhancement* 
+> Designer is automatically enabled for all bots created on and after 19th Jan 2023. Contact [anirudh.shenoy@yellow.ai](anirudh.shenoy@yellow.ai) for support. 
 
 
-One can now configure the look & feel of the [knowledge Base](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview) by customizing the primary color, choosing a dark or light theme and having custom images as a footer banner.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain).
+--------
+
+## 2. **Inbox**
+
+#### 1. Receive all the Inbox updates on the Notifications tab 
+
+You can see actionable notifications for new updates on the tickets assigned to agents in one place. Admins can enable and configure specific events to notify each role i.e Agents, Supervisors, and Admins.    
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/account/notification).
+> This can be plugged into other modules to show their notifications.
 
 
-#### 3. Track First Response Time for manually created email tickets
 
-| *Enhancement* 
+--------------
 
-You can now track the first response time metric for tickets created manually through APIs (i,e, web forms, chatbot flows). This data will be available in the **Analytics** & **Reports** tabs to download and would also apply for enforcing SLAs.
+## 3. **Engage**
 
--------
+#### 1. Engage Overview Dashboard for all the Bots using Cloud Platform
 
-## 2. **Marketplace**
+Engage Overview Dashboard gives customers and Engage Users to view their User 360, Outbound Campaign, and Notifications API usage for upto past 30 days and shows trends of the different available metrics in their respective graphs.     
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/engage-overview).
 
-#### 1. Addition of new marketplace templates 
-
-| *New feature* 
-
-1. **Ed-tech use cases**: Templates are available for use cases like discover courses, book a demo class, download course material, take a quiz, and chat with support. [**Learn more here**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/edtech-template).
-2. **E-commerce use cases**: Templates are available for use cases like browse products, manage carts, make payments, get order details, and chat with support. [**Learn more here**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/ecommerce-template).
-3. **SaaS use cases**: Templates are available for use cases like explore products and offerings, view customer case studies, book a demo and chat with support.
-4. **Banking use cases**: Templates are available for use cases like apply for an account, apply for loan, EMI calculator, check loan status and connect with support.
+> This data will not be used for billing purposes. 
 
 
-#### 2. Template recommendation while creating flows
+#### 2. Mobile push notifications for engaging with users in a conversational and interactive way
 
-| *Enhancement* 
+Engage push notifications are designed to route users directly to the in-app bot. This allows for a seamless transition from receiving a notification to having a conversation with the brand, making the campaign more personalized and effective.     
+[**Learn more on Android push notifications**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android_push).      
+[**Learn more on iOS push notifications**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android_push).     
+[**Learn more on Mobile push template**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/mobilepush#docusaurus_skipToContent_fallback).
 
+----------------
 
-While creating flows, users will have the option to select from ready-to-use templates available in the marketplace. This is now optimized and only templates relevant to the industry are recommended to users. The users also have the option to explore other collections.
+## 4. **Marketplace**
 
-#### 3. Importing multiple templates API
+#### 1. FAQs export and import
 
-| *Enhancement* 
+Support for importing the FAQs from templates to the bot has been provided.
 
-The option to select multiple templates and import them has been developed. This is available as part of the onboarding flow, where the users can select multiple use cases(templates) and import them.
+#### 2. Auto-training entities
+When a user imports a template, the entities and intents associated would also be auto-trained.
 
-#### 4. Marketplace UI improvements
+#### 3. Marketplace notification pop-up
 
-1. Templates have been reordered in the following sequence 
-**Newly added templates** > **Kick-starter** > **Flows** > **Integrator** > **Validator**
-2. The pagination design has been updated and a load more button is used instead of autoload.
-3. Carousel has been added to the collections section, for a better view of the collections.
-4. Filters have been reduced on the marketplace page for better search results.
+Users will now be able to view new templates added to our marketplace through a notification pop-up. Users will be able to directly click on the template link on the pop-up to view details.
 
+#### 4. Marketplace templates
 
-------
+- **Freshdesk ITSM Automation**: This template covers some of the common use cases of ITSM automation with Freshdesk integration like creating tickets, updating tickets, adding watchers, viewing lists of tickets, and viewing agent tickets. Click [here](https://cloud.yellow.ai/marketplace/dca1d59ce6e964706377341cf239082f) for the Freshdesk link.
+- **Magento (E-commerce use cases)**: This template covers some of the common use cases in E-commerce, like browsing products, cart management, checkout, customer logic, etc. This is also integrated with Magento.
 
-
-## 3. **Integrations**
-
-#### 1. OKTA integration
-
-| *New feature* 
-
-Validates the authenticity of the users by generating a login URL. After successful login, the integration provides all the relevant user-related information.
-
-#### 2. EPIC EHR integration
-
-EPIC EHR is a cloud-based EHR that contains all the information related to the patients like demographics, diagnostics, and appointment details. Aside from these, it will also help in getting the slots available for booking and helps schedule appointments.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/epic-fhir).
-
-
-#### 3. Tracking metrics for third-party live agent integrations
-
-**Agent Session** and **Agent Message Count** per user for third-party live agent integration can now be tracked on the [metabase](https://overview.yellowmessenger.com/metabase).
 
 -----
-## 4. **Engage**
-
-#### 1. Quick reply in the template manager module 
-
-| *Enhancement* 
-
-Previously, capturing the quick reply event and configuring a bot flow to take the appropriate next action on WhatsApp took a lot of time and effort. To make this task easier, the Template Manager module is now enhanced to assign action (Trigger Journey, Trigger NLP, Send an event) to each of the Quick Reply buttons.
-
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#12-add-quick-replies-in-whatsapp-template).
-
--------
 
 
-## 5. **Apps (Widget + Mobile)**
-
-
-
-
-| Updates | UI changes|
-| -------- | -------- |
-|**Speech-to-text & Text-to-speech**|![](https://i.imgur.com/5cnEmlf.png) ![](https://i.imgur.com/I2W43Bx.png)|
-|**Conversational Landing pages (Beta)***|![](https://i.imgur.com/E8Eui7o.png)|
-|**Revamped Setup (Settings) Page (Beta)***|![](https://i.imgur.com/dxBvNR4.png)|
-|**iOS: Single Sign-On and Apple sign-in**|<img src="https://i.imgur.com/wJWwfa4.png"  alt="drawing" width="50%"/>|
-|**Android: O-Auth sign-in**|<img src="https://i.imgur.com/SSM0kgA.png"  alt="drawing" width="50%"/>|
-|**Revamped Input bar and In-line quick replies**|<img src="https://i.imgur.com/wq7mCAq.png"  alt="drawing" width="60%"/>|
-|**Sensitive info can be hidden**|![](https://i.imgur.com/GSnufy4.png) ![](https://i.imgur.com/ryxrKl8.png)|
-|**Multi-lingual placeholder & metadata**|<img src="https://i.imgur.com/AoNK1Bs.png"  alt="drawing" width="60%"/>|
-|**New UI for errors**|<img src="https://i.imgur.com/bekS7Om.png"  alt="drawing" width="60%"/>|
-|**Block users from sending messages/uploading attachments during network drop**|<img src="https://i.imgur.com/oe0zR0w.png"  alt="drawing" width="60%"/>|
-|**Reload option during network drop**|![](https://i.imgur.com/eN0KSuE.png)|
-|**New design for Generic card (single and carousel)- Alignment, Icons, and Colours**|<img src="https://i.imgur.com/5BjT5Wn.png"  alt="drawing" width="60%"/>|
-
-
-
+Other modules will be added soon!
