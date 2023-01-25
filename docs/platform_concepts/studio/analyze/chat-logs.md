@@ -11,7 +11,7 @@ It helps you better analyze drop-offs, understand user perceptions, and optimise
 
 ![](https://i.imgur.com/muGI3Km.png)
 
-
+The logs are stored for six months. You can keep an active store post in which logs move to the cold store and remain there till the validity of the contract. These logs can be archived on demand.
 
 ### 1.1 Session
 

@@ -18,6 +18,6 @@ The **Chat widget** can be used in the following ways: 
 
 A Chat widget allows users to customize design of  the widget, preview, and deploy it as per their custom requirements. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget) to know more.
 
-To match any use case, the Chat widget can be customised in various ways using functions and events. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/fuction-widgets) to know more.
+To match any use case, the Chat widget can be customised in various ways using [Functions]((https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/fuction-widgets)) and [Events](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/event-widget). 
 
-You can retrieve the data of the user who is using the Chat widget by using the payload. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-payload), to know more.
+You can retrieve the data of the user who is using the Chat widget by using the [Payload](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-payload). 
