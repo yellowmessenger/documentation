@@ -374,7 +374,6 @@ module.exports = {
           items: [
             "platform_concepts/inbox/inbox_setup/supportagents",
             "platform_concepts/inbox/inbox_setup/inboxdemo",
-
               "platform_concepts/inbox/inbox_setup/agentstatuses",
               "platform_concepts/inbox/inbox_setup/debugchecklist",
             //
