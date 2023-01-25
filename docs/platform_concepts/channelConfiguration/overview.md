@@ -39,5 +39,5 @@ The platform supports a list of channels under various categories, as mentioned 
     ![](https://i.imgur.com/6voFjYG.png)
 
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/wPJKEVAojpQ" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/wPJKEVAojpQ" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
