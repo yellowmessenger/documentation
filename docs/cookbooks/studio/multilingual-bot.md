@@ -3,7 +3,7 @@ title: Multilingual bot
 sidebar_label : Multilingual bot 
 ---
 
-Enable mulitlingual support for your bot by following these steps,
+You can create multilingual bots in yellow.ai platfrom through which your bot can understand and respond to users in multiple languages. This can be useful in situations where a large number of users speak different languages and need assistance in their preferred language. Please follow the below-mentioned steps to set up one such bot.
 
 ![](https://i.imgur.com/45CAuGk.png)
 
@@ -40,4 +40,11 @@ Enable mulitlingual support for your bot by following these steps,
 
 ![](https://i.imgur.com/RCNpPes.png)
 
-9. The conversation with the bot after this point will be in the selected language.
+ The conversation with the bot after this point will be in the selected language.
+
+**Related articles**
+
+* [Languages supported](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported#docusaurus_skipToContent_fallback)
+* [Multi-language support](https://docs.yellow.ai/docs/platform_concepts/studio/tools#213-multi-language)
+* [Set language node in Flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language)
+* [Language Translation](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)
