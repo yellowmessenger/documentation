@@ -29,8 +29,20 @@ You can see its functioning on the [chat screen](https://docs.yellow.ai/docs/pla
 
  Follow the steps below to enable auto-translate: 
  
+
+
+:::info
+
+**Prerequisite**
+
+To Auto translate messages, you must first set  **Translate user message** to **YES** in **Studio** while configuring the **Raise Ticket** node.  
+
+![](https://i.imgur.com/FszdHVQ.png)
+
+:::
+
 1. Open **Inbox** > **Settings**.
-2. Search for **Auto Assignment**.
+2. Search for **Auto Translate**.
 
 ![](https://i.imgur.com/EAkPKUL.png)
 

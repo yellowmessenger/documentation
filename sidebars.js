@@ -374,8 +374,9 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/inbox/inbox_setup/supportagents",
-            "platform_concepts/inbox/inbox_setup/inboxdemo",
               "platform_concepts/inbox/inbox_setup/agentstatuses",
+              "platform_concepts/inbox/inbox_setup/inboxdemo",
+
               "platform_concepts/inbox/inbox_setup/debugchecklist",
             //
                  ],
@@ -405,15 +406,16 @@ module.exports = {
         {
           type: "category",
           label: "Email Tickets",
-          link: {type: 'doc', id: 'platform_concepts/inbox/tickets/setupandconfig'},
+          link: {type: 'doc', id: 'platform_concepts/inbox/tickets/tickets_intro'},
           collapsed: true,
           items: [
-           // "platform_concepts/inbox/tickets/setupandconfig",
+            "platform_concepts/inbox/tickets/setupandconfig",
             "platform_concepts/inbox/tickets/emailticketstatus",
             "platform_concepts/inbox/tickets/manualticket",
             "platform_concepts/inbox/tickets/searchandfilter",
             "platform_concepts/inbox/tickets/bulkaction",
             "platform_concepts/inbox/tickets/slaintro",
+
                   ],
         },
 
@@ -1202,6 +1204,7 @@ module.exports = {
     //Do not add/ remove this file
     "updates/overview",
 
+    "updates/2022/dec2022",
     "updates/2022/nov2022",
     "updates/2022/oct2022",
     "updates/2022/sep_updates",
