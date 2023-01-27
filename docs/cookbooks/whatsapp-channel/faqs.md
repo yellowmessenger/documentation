@@ -58,9 +58,9 @@ Yes. Before initiating a WA business API setup on any number, you will have to d
 
 You can initiate WA channel setup on the Channels page under WA logo. 
 
-Visit this URL after logging in on the platform - https://cloud.yellow.ai/bot/yourbotID/channels/whatsapp
+- Visit this URL after logging in on the platform - https://cloud.yellow.ai/bot/yourbotID/channels/whatsapp
 
-Here is the URL to the doc - https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot
+- Here is the [link to the doc](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
 
 </p>
 </details>
@@ -72,7 +72,7 @@ Here is the URL to the doc - https://docs.yellow.ai/docs/cookbooks/whatsapp%20co
 
 You will just need a phone number and admin access to the FB business manager account to initiate the Whatsapp channel integration. 
 
-Here is the URL to the doc - https://docs.yellow.ai/docs/cookbooks/whatsapp%20cookbook/whatsapp-bot
+Here is the [URL to the doc](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration
 
 </p>
 </details>
