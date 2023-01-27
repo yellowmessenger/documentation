@@ -13,7 +13,7 @@ To access Chat widget, follow these steps:
 1. Log in to [Yellow.ai Platform](https://cloud.yellow.ai).
 2. On the module switcher, click **Channels**.
 
-   ![](https://i.imgur.com/UuFZ2eR.png)
+  ![](https://i.imgur.com/UuFZ2eR.png)
 
 3. Click on **Chat widget**.
 

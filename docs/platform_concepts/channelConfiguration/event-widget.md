@@ -9,7 +9,7 @@ You can use certain tricks to customize your web widget to suit your needs. This
 
 When your bot is operational, it generates various events. You can use them to capture those occurrences and trigger a flow or automation workflow.
 
-### 1.1 Send event to bot
+## 1. Send event to bot
 
 ```js
 // find the yellow.ai widget iframe
@@ -21,7 +21,7 @@ const message = JSON.stringify({code: 'event_name', data: {...}});
 ymIframe.contentWindow?.postMessage(message, window.location.origin);
 ```
 
-### 1.2 Listen to a bot event
+## 2. Listen to a bot event
 
 ```js
 <script type="text/javascript">

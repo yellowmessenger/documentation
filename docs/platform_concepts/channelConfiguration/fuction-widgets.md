@@ -1,5 +1,5 @@
 ---
-title : Customize Chat bot using functions
+title : Customize chat bot using functions
 sidebar_label : Chat widget functions
 ---
 
@@ -10,7 +10,7 @@ If you have integrated Yellow AI’s chat widget on Android/iOS app, see [Androi
 This section guides you with different ways to customize your chat widget’s look & feel,  functionality, and capture bot events.
 
 
-### 1.1 Customize bot display
+## 1. Customize bot display
 
 If the bot’s default customisation settings do not match your brand guidelines, or if you do not want to display the bot right after the page load, you can use the following steps to set up the bot in a way so that it is displayed only when you want it to.
 
@@ -54,7 +54,7 @@ Host depends on the region where the bot is deployed. If this is not deployed re
 
 
 
-### 1.2 Hide the bot by default
+## 2. Hide the bot by default
 
 Inside `window.ymConfig` in the above script, add `hideChatButton: true`. When the website loads, you will not see the bot icon on the web page.
 
