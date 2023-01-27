@@ -63,7 +63,7 @@ An orchestrator has three sections,
 
 This is where you configure the orchestrator bot. You can refer the video below to set it up.
 
-<p align="center"><iframe width="100%" height="450" src="https://www.loom.com/embed/90977344f49646b786a92ebefbb052f9" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
+<iframe width="720" height="315" src="https://www.youtube.com/embed/LKnYlHE1MxQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 You can set welcome and fallback messages, add furthermore child bots and enable or disable child bots temporarily.
 
@@ -80,7 +80,7 @@ This is where you manage all the customer queries. Ensure you have done the foll
 
 You can refer to the following video to set this up.
 
-<p align="center"><iframe width="100%" height="450" src="https://www.loom.com/embed/877b2a80d82a4643a21f24c8d28c57d8" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
+<iframe width="720" height="315" src="https://www.youtube.com/embed/dZ1zYsBXKs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### 2.3 Add channels
 
