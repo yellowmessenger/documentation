@@ -1,6 +1,7 @@
 ---
 sidebar_label: Import users
 title: Import users through CSV file
+tags: [csv import, import bulk users, add bulk users, edit bulk users]
 ---
 
 You can use a CSV file import to bulk import new users or update existing user data. It lets you decide what fields to import irrespective of the fields available in the CSV file.  It includes an error report post-import to help you identify errors in the CSV file easily. 
