@@ -27,10 +27,11 @@ Suppose the bot is used as an official portal to apply for leaves or check salar
 
 In this article, you will learn:
 
-1. [What are the different UI elements to build a flow](#elements)?
-1. [How to create a flow](#createflow)?
-2. [Workflow- a variation of flow](#workflow)
-3. [How to preview a flow](#preview)?
+1. [What are the different UI elements to build a flow?](#1-understand-ui-elements-to-build-a-flow)
+2. [How to create a flow?](#2-create-a-flow)
+3. [How to edit a flow?](#21-edit-a-flow)
+4. [Workflow- a variation of flow?](#22-workflow---a-variant-of-flow)
+5. [How to preview a flow?](#3-preview-a-flow)
   
 
 ----
@@ -105,9 +106,18 @@ To open flows, use the keyboard shortcut`s` + `f`.
 
 7. Click **Save**.
 8. Add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) and build a flow as per your use-case. 
+
+### 2.1 Edit a flow
+
+To edit a flow, follow these steps
+
+1. Ensure the environment (on the top right corner) is in the [development mode](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
+2. Go to the flows drop-down on the top and click the flow you would like to edit. 
+
+![](https://i.imgur.com/YwwLdK3.png)
 --- 
 
-### <a name="workflow"></a> 2.1 Workflow - a variant of flow
+### <a name="workflow"></a> 2.2 Workflow - a variant of flow
 
 Workflows are background processes that run along with the conversational flow. **Workflow** option can be selected while creating a flow.
 
