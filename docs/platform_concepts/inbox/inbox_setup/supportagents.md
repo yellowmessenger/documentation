@@ -82,6 +82,33 @@ To join the team as an inbox agent, follow the steps below:
 --------
 
 
-## 3. Difference between each Inbox roles - Admin/Supervisor/Agent
+## 3. Difference access available to Inbox roles
 
-Coming soon!
+Following modules(features) are available for Admin/Supervisor/Agent:
+
+
+
+| Module | Inbox Agent |  Inbox Supervisor   | Inbox Admin | 
+| -------- | -------- | --- | -------- | 
+| **Live chats**     ||||
+|Chats assigned to the current agent|:heavy_check_mark:|  :heavy_check_mark: |  :heavy_check_mark:    |
+|Chats raised in a particular group|:x:| :heavy_check_mark: <br/>(Supervisor should be assigned with groups)| :heavy_check_mark:|
+|Chats raised in all groups|:x:|:x:| :heavy_check_mark:|  |
+|**All the Inbox Settings**|:x:|:x:|:heavy_check_mark:||
+|**Email tickets**||
+|Creating a manual ticket|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark: |
+|Tickets assigned to the current agent|:heavy_check_mark:|:x:|:heavy_check_mark: |
+|Tickets raised in a particular group|:heavy_check_mark:|:x:|:heavy_check_mark:|
+|Tickets raised in all groups|:x:|:x:|:heavy_check_mark:|
+|**Knowledge Base**||||
+|Reading articles [Published]|:heavy_check_mark:|  :heavy_check_mark: |  :heavy_check_mark:    ||
+|Create, Edit & Delete articles||:heavy_check_mark: |:heavy_check_mark: |
+|Publish, Unpublish articles||:heavy_check_mark:|:heavy_check_mark:||
+|**Monitor & Analytics**||||
+|Chats & tickets data assigned to current agents|:heavy_check_mark:|:heavy_check_mark:|:heavy_check_mark:|
+|Chats, Tickets & Agents data for a particular group||:heavy_check_mark:|:heavy_check_mark:||
+|All chats, tickets & agents performance data|||:heavy_check_mark:|
+|**Contacts**||||
+|Create, Read, Update, and Delete contacts||:heavy_check_mark:|:heavy_check_mark:| 
+
+

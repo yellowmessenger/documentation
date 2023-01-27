@@ -84,6 +84,8 @@ You can configure notifications on the settings page. Click [here](./inbox-setti
 :::
 
 
+--------
+
 
 ## <a name="i5"></a> 4. Orchestrator bot feature 
 
@@ -93,7 +95,6 @@ When **Unify inbox to all child bots** is selected, support tickets received by 
 ![](https://i.imgur.com/WsKX6Ph.png)
 
 
---------
 
 ----
 ## <a name="and_ios"></a> 5. Inbox support on Android & iOS

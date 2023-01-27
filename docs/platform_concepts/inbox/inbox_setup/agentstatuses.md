@@ -26,30 +26,16 @@ The default statuses are as follows:
 --------
 
       
-  
-## 1. Difference between Busy & Away
+:::info
+
+**Difference between Busy & Away**
 
 On paper, **Busy** and **Away** are both identical in function but when you log out after changing your status to **Away**, your status will not be **Offline** it will remain as **Away**. This is to avoid missing out on the chats raised by the end users when all your agents have logged off within working hours (for example, for a lunch break).
 - Admins can manually transfer the chat to an agent who has set themselves to Busy / Away. This manual transfer operation will not consider the agent's current concurrency and will assign tickets even if their concurrency is full.
 
 
-#### Example
+**Example**
 
 Consider a scenario wherein, all your agents break for lunch from 1 PM - 2 PM. If they are considered **Offline** during that time, the chats raised during the time will be completely missed unless Offline chats are enabled.  Even if they are enabled, those chats will only be captured in Open status and will not be assigned to agents immediately.
 Now if they are considered as **Away**, those chats will not be missed irrespective of whether Offline chats are enabled or not, and the chats will be queued, then automatically assigned to agents after 2 PM.
-
-  
-------
-
-## 2. Track activity via. Reports
-
-The time spent by each agent in the different statuses will be tracked and made available in the **Agent activity report**. The aggregated time spent by the agent i.e total Available/Busy/Away time spent by the agent per each day is  accessible in the **Agent performance report**.
-
-To download the Agent performance/ Agent activity report, follow the below steps:   
-
-1. Open **Inbox** > **Analytics**. Select **Reports** > **Chat reports**.
-2. Click **Generate** on **Agent activity** / **Agent performance report**.  
-3. Once the reports are generated (status = success), click **Download**.
-
-For a detailed article, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
-
+:::

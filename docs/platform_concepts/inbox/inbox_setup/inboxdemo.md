@@ -19,6 +19,13 @@ To do this, the bot should transfer the user’s chat to a live agent and this i
 
 ## <a name="try1"></a> 1. Create a flow to raise a support ticket 
 
+
+:::note
+
+This step can be skipped if you import **Connect with support** template from the **Marketplace**. 
+- [Open Marketplace](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#-1-choose-a-right-marketplace-template) and search for [Support templates](https://cloud.yellow.ai/marketplace?name=support)(Flows). Add the most suited flow to your bot. 
+:::
+
 To configure **Raise ticket** node on the [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)'s flow page, follow the steps below: 
 
 1. Create an [Intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) and add [utterances](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance) to identify the flow that connects a user to a live inbox agent. 

@@ -15,6 +15,10 @@ There are 3 tabs to monitor the progress:
 2. [Email trends](#email)
 3. [Team](#team)
 
+:::note
+Chats and email tickets in Inbox will be displayed for a maximum of 6 months. After which, they will be archived. The data will be unavailable on the platform(active store) but will be available on the servers(cold store) until the validity of the contract.
+:::
+
 ---
 
 ## <a name="chats"></a> 1. Chats
