@@ -47,11 +47,11 @@ To set up MS teams using Developer portal, follow these steps:
 	
    6.3 Go to **Client secrets** and click **Add a client secret for your bot**.
 	
-	![](https://i.imgur.com/rdqbs8M.png)
+	   ![](https://i.imgur.com/rdqbs8M.png)
 	
     6.4 Copy the **Client secret** and save it for future reference.
 	
-	![](https://i.imgur.com/Vsdgxe2.png)
+	   ![](https://i.imgur.com/Vsdgxe2.png)
 	
    6.5 Go back to **Bot management** and copy the Bot ID.
 	
@@ -79,7 +79,7 @@ To set up MS teams using Developer portal, follow these steps:
     * **Developer or Company Name, Website, Privacy Policy & TnC**: Ask Enterprises to use their details
     * **Application ID**: Paste the application ID, which you have copied from the Step 6.5, and click **Save**.
 	
-	 <img src="https://i.imgur.com/CytFL5J.jpg)" alt="drawing" width="80%"/>
+	 <img src="https://i.imgur.com/CytFL5J.jpg" alt="drawing" width="80%"/>
 
 10. Navigate to **Branding** under **Configure** to change the available branding options.
 	
@@ -104,9 +104,11 @@ To set up MS teams using Developer portal, follow these steps:
 	
 	![](https://i.imgur.com/WgKGHfs.png)
 
-	I. If it does not work, then download the Manifest zip file.<br/>
-    II. Go to `https://admin.teams.microsoft.com`.<br/>
-    III. Navigate to **Teams Apps > Manage Apps** and Upload app.<br/>
+	I. If it does not work, then download the Manifest zip file.
+
+   II. Go to `https://admin.teams.microsoft.com`.
+
+   III. Navigate to **Teams Apps > Manage Apps** and Upload app.
 	
 	![](https://i.imgur.com/LzoJyej.png)
 	
