@@ -369,7 +369,7 @@ module.exports = {
         //Inbox Setup
         {
           type: "category",
-          label: "Inbox Setup",
+          label: "Inbox setup",
          // link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
           collapsed: true,
           items: [
@@ -389,7 +389,7 @@ module.exports = {
         //3. chats doc 
         {
           type: "category",
-          label: "Chat Tickets",
+          label: "Chat tickets",
           link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
           collapsed: true,
           items: [
@@ -405,7 +405,7 @@ module.exports = {
         //4. tickets doc 
         {
           type: "category",
-          label: "Email Tickets",
+          label: "Email tickets",
           link: {type: 'doc', id: 'platform_concepts/inbox/tickets/tickets_intro'},
           collapsed: true,
           items: [
@@ -425,7 +425,7 @@ module.exports = {
         //6. analytics - reports  
         {
           type: "category",
-          label: "Analytics and Reports",
+          label: "Analytics and reports",
           collapsed: true,
           items: [
             {
@@ -488,7 +488,7 @@ module.exports = {
         //8. settings 
         {
           type: "category",
-          label: "Inbox Settings",
+          label: "Inbox settings",
           collapsed: true,
           items: [
 
@@ -819,7 +819,7 @@ module.exports = {
 
     {
       type: "category",
-      label: "User Journeys",
+      label: "User journeys",
       collapsed: true,
       items: [
         "platform_concepts/growth/user-journeys",

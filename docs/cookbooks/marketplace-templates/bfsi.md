@@ -4,6 +4,9 @@ sidebar_label: BFSI template
 featured: true
 ---
 
+> Explore **Banking and finance template** [here](https://cloud.yellow.ai/marketplace/c5e39a30338e3658daf4168937e979c6).  
+
+
 Online banking has now made daily transactional tasks easier for all consumers. Banks are exploring more options to provide user-friendly features through phone and online platforms, resulting in saving time, ease of usage, lower fees, improved customer service and security. 
 **BFSI template** is designed to accommodate daily banking needs via WhatsApp and other web channels.
 
@@ -15,6 +18,10 @@ Online banking has now made daily transactional tasks easier for all consumers. 
 
 Pre-built use cases accommodate basic online banking features such as creating an account, applying for a loan, checking the loan Status, calculating EMI, and connecting to support for better resolution. 
 The template can be customized for complex use cases, like digital banking options (paying bills online), or simple ones like applying for a debit card, and viewing transaction history. 
+
+:::info
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+:::
 
 -------------------
 

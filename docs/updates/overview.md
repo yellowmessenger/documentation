@@ -17,9 +17,8 @@ Here is a list of product updates we made in the month of **January** to provide
 
 You can now create a family of bots, where one parent bot connects to multiple child bots with the following functionalities:
 1. **Unify Inbox**: Any ticket created in a child bot shall be redirected to the Inbox of the parent bot. This allows you to handle all the tickets in one place.
-2. **Conversation Redirect**: Customers can start conversations with the parent bot, and based on some triggered words that are configurable, the conversation shall be redirected to the respective child bots.
-3. **Additional Channel Support**: Connect the parent bot to Viber, Viber Business, FB Messenger, Yellow Messenger, Whatsapp, Google Assistant, Line, and MS Teams.    
-
+<!-- 2. **Conversation Redirect**: Customers can start conversations with the parent bot, and based on some triggered words that are configurable, the conversation shall be redirected to the respective child bots.-->
+2. **Additional Channel Support**: Connect the parent bot to Viber, Viber Business, FB Messenger, Yellow Messenger, Whatsapp, Google Assistant, Line, and MS Teams.       
 [**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator).
 
 
@@ -100,12 +99,25 @@ Engage push notifications are designed to route users directly to the in-app bot
 
 | *New feature* 
 
-1. **Freshdesk ITSM Automation**: This template covers some of the common use cases of ITSM automation with Freshdesk integration like creating tickets, updating tickets, adding watchers, viewing lists of tickets, and viewing agent tickets. Click [here](https://cloud.yellow.ai/marketplace/dca1d59ce6e964706377341cf239082f) for the Freshdesk link.
-2. **Magento (E-commerce use cases)**: This template covers some of the common use cases in E-commerce, like browsing products, cart management, checkout, customer logic, etc. This is also integrated with Magento.
+1. **Freshdesk ITSM Automation**: This template covers some of the common use cases of ITSM automation with Freshdesk integration like creating tickets, updating tickets, adding watchers, viewing lists of tickets, and viewing agent tickets.      
+**[Explore Freshdesk ITSM Automation here](https://cloud.yellow.ai/marketplace/dca1d59ce6e964706377341cf239082f).**
+2. **Magento (E-commerce use cases)**: This template covers some of the common use cases in E-commerce, like browsing products, cart management, checkout, customer logic, etc. This is also integrated with Magento.    
+**[Explore Magento Ecomm here](https://cloud.yellow.ai/marketplace/5f9cb21beb6a9b8c3de2129b5d9b88ec).**
 
+
+-------
+
+## 5. **Integrations**
+
+#### 1.  Billdesk Payment gateway
+
+| *New feature* 
+
+New integration,  Billdesk Payment gateway is added to allow you to receive payments from your customers using BillDesk EmailPay.
 
 -----
-## 5. **Apps (Widget + Mobile)**
+
+## 6. **Apps (Widget + Mobile)**
 
 #### 1. Widget enhancements 
 
