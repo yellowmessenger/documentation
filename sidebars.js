@@ -609,6 +609,7 @@ module.exports = {
         "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
       ]
     },
+    "platform_concepts/engagement/cdp/user_data/viewuser",
     "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
 
 /*    {
