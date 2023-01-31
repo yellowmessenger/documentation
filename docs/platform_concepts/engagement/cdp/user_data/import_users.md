@@ -1,7 +1,7 @@
 ---
 sidebar_label: Import users
 title: Import users through CSV file
-tags: [csv import, import bulk users, add bulk users, edit bulk users]
+tags: [csv import, import bulk users, add bulk users, edit bulk users, add users]
 ---
 
 You can use a CSV file import to bulk import new users or update existing user data. It lets you decide what fields to import irrespective of the fields available in the CSV file.  It includes an error report post-import to help you identify errors in the CSV file easily. 
@@ -17,10 +17,17 @@ The following are the three different steps involved in importing a CSV file.
 ## Step 1: Create CSV file with user details
 
 
-Create a CSV file with user details. Ensure that the values passed in the CSV file adhere to the data type of user properties. 
+Create a CSV file with user details. Ensure that the values passed in the CSV file adhere to the data type of user properties.
+
+:::note
+A CSV file cannot exceed 30 MB.
+:::
 
 1.  **Use relevant header names**: It becomes easy to map headers with user properties when you use relevant names for column headers.
-2.  **Use correct data type**: Data type validation is run before importing each user record. If the validation fails, adding or updating the record will fail. The following are the data types of each user property:
+2.  **Use correct data type**: Data type validation is run before importing each user record. If the validation fails, adding or updating the record will fail. 
+
+The following table shows the data types of each user property with accepted values.
+
 
 | Data Type | Accepted Value |
 |-----------|----------------|
@@ -76,30 +83,39 @@ If a CSV header is not mapped to any user property, that CSV column will not be 
 
    ![](https://i.imgur.com/SG4zK66.png)
 
-#### Retain imported data
+#### Retain imported user data
 
 This replaces the entire user record with the ones available in the CSV file.
 
 * The existing values will be replaced with the ones in the CSV file.
 * The values will be empty for properties that are either not mapped or not specified in the CSV file.
 
-   ![](https://i.imgur.com/0gIkmWk.png)
+   ![](https://i.imgur.com/EM59i4Q.png)
+
    
 
+<!---
 #### Retain existing user data
 
 If the `userId` that you import already exists, it skips without making any changes to the existing record, even for the properies that are not mapped.
 
    ![](https://i.imgur.com/EQNTPHg.png)
     
-    
+  -->
+
 
 #### Update existing user data
 
 Updates the existing properties of the user with the ones imported through the CSV file. The existing properties that are not specified in the CSV file or not mapped will remain unchanged.
 
-   ![](https://i.imgur.com/S0tY8Ss.png)
+   ![](https://i.imgur.com/Q6gWZ66.png)
 
+:::note
+If the CSV file has two user records with the same userId, the data will be updated as per the sequence in the CSV file. The record is first updated with the data that comes first in the CSV and then updates with the data that comes next.
+For example, if there are two records with the same userId - one in row 10 and another in row 15:
+1. The record is first updated as per the data available in row 10.
+2. It is then updated as per row 15.
+:::
 
 6. Check **Merge tags** to retain existing tags and also add new tags in the CSV file if the userId that you are importing already exists. This overrides the behaviour of tags configured in Step 5.
 

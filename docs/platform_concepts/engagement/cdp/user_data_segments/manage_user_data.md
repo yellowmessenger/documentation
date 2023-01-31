@@ -103,7 +103,7 @@ You can also use this process to delete an individual user.
 
 To delete user data using API, use [DELETE user API](https://documenter.getpostman.com/view/17583548/UVsEVUsg#73c5f32f-e6a5-4a3b-afbe-c17b7770d65b).
 
-
+<!--
 ***  
 
 ## View user activity logs
@@ -120,3 +120,5 @@ User logs is a space for your to audit your user data. There are 3 types of logs
   
 
 ![](https://i.imgur.com/s86psKQ.png)
+
+-->
