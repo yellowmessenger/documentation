@@ -13,7 +13,7 @@ To connect your yellow.ai account with **Freshchat** follow these steps.
 **To retrieve App ID**
 
 1. Login to your **Freshchat** portal as an administrator.
-2. Go to **Admin Settings** > **Account Settings** > **Integration Settings**. 
+2. Go to **Admin Settings** > **Chat widget settings** > **Integration Settings**. 
 3. Under **AGENT MESSENGER** click **Copy** to copy the App ID. 
 
 ![](https://i.imgur.com/XWfj833.png)
