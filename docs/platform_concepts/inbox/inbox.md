@@ -9,7 +9,7 @@ rank: 5
 
 In this article, you will understand:
 1. [Where to find Inbox?](#i1)
-2. [What are the functionalities of Inbox?](#i2)
+2. [Functionalities of Inbox?](#i2)
 3. [Notifications in Inbox](#i4)
 4. [How does the Orchestrator bot feature work in Inbox?](#i5)
 5. [Inbox support on Android & iOS](#and_ios)
@@ -53,15 +53,15 @@ There are multiple options available in the inbox module, they are listed below:
 |**Chats**| Provide 24/7 live support to your customers from this section. Perform bulk actions, and chat searches for chats on the web, Whatsapp, Instagram, and other channels. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) to learn more. |
 |**Tickets**| Monitor and resolve email tickets, create new tickets (manually/in bulk), and other no-code email ticketing functionalities. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) to learn more.  |
 |**Contacts**| Create a list of contacts and send pro active notifications(emails) for your brand. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts) to learn more. |
-|**Analytics and Reports**|Find single-click dynamic charts and generate and download detailed reports about your business and team performance to take data-driven business decisions. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics) to learn more.|
-|**Knowledgebase**|Design a knowledgebase with information to resolve user queries quickly. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview) to learn more. |
-|**Settings**|Manage Inbox by enabling the required functions from settings. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) for more details. |
+|**Analytics and Reports**| Find single-click dynamic charts and generate and download detailed reports about your business and team performance to take data-driven business decisions. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics) to learn more.|
+|**Knowledgebase**| Design a knowledgebase with information to resolve user queries quickly. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview) to learn more. |
+|**Settings**| Manage Inbox by enabling the required functions from settings. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) for more details. |
 
 -------
 
-## <a name="i4"></a>  3. Notifications
+## <a name="i4"></a>  3. Inbox notifications
 
-Based on the [access](#supportagents) you have (Inbox Admin, Supervisor, or Agent) you will get notified about all the actions on your Inbox. 
+Based on the [access](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) you have (Inbox Admin, Supervisor, or Agent) you will get notified about all the actions on your Inbox. 
 
 1. Click the notification icon in the upper right corner of your screen. You can find all the updates and alerts listed on the **Notification** tab. 
 
@@ -80,14 +80,14 @@ Based on the [access](#supportagents) you have (Inbox Admin, Supervisor, or Agen
 
 
 :::note
-You can configure notifications on the settings page. Click [here](./inbox-settings/account/notification.md) to learn more. 
+You can configure notifications on the settings page. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/account/notification) to learn more. 
 :::
 
 
 --------
 
 
-## <a name="i5"></a> 4. Orchestrator bot feature 
+## <a name="i5"></a> 4. Unified Inbox- Orchestrator bot  
 
 With the [orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator) bot feature, you can create a parent bot and add child bots(available bots in the same subscription) to it.   
 When **Unify inbox to all child bots** is selected, support tickets received by the child bots will be available in the parent bot's Inbox. You can have a unified inbox to reply to all customer queries. 

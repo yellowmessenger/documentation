@@ -3,6 +3,8 @@ title: EdTech template
 sidebar_label : EdTech template
 ---
 
+> Explore **Edtech(education) template** [here](https://cloud.yellow.ai/marketplace?industries=Ed-tech).  
+
 ## 1. Introduction
 
 Educational firms often get a lot of enquiries about their courses and offerings.
@@ -12,6 +14,11 @@ The EdTech template provides a complete chat interface with prebuilt flows that 
 With this you can automate handling user inquiries, user support, and lead generation process.
 
 You can completely customize the template according to your business requirement. For example, customize dialogues used in conversations, update courses and their structure, enable OTP-based authentication or single sign-on options. show course discounts, take elaborative quizzes, add FAQs, and more.
+
+:::info
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+:::
+
 
 
 ## 2. Prebuilt use cases

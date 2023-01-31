@@ -1,16 +1,16 @@
 ---
 title: Monitor chat, email trends and teams
-sidebar_label : Monitor Inbox
+sidebar_label : Monitor inbox
 ---
 
 
 
 Keep a track of the productivity of your entire support team using the Monitor section.
 
-![](https://i.imgur.com/z3h17gR.png)
+![](https://i.imgur.com/NqQDSEd.png)
 
 
-There are 3 tabs to monitor the progress:
+There are three tabs to monitor the progress:
 1. [Chats](#chats)
 2. [Email trends](#email)
 3. [Team](#team)
@@ -23,7 +23,7 @@ Chats and email tickets in Inbox will be displayed for a maximum of 6 months. Af
 
 ## <a name="chats"></a> 1. Chats
 
-**Filter**
+**Filter tags**
 
 - Filter chat details for particular tags using the filter option. You can select a tag from the dropdown (tags are assigned in chat/while creating a ticket).
 
@@ -34,7 +34,7 @@ Chats and email tickets in Inbox will be displayed for a maximum of 6 months. Af
 ![](https://i.imgur.com/rUNl6DY.png)
 
 
-**Matrix**
+**Matrices**
 
 - Contains all the relevant matrices for the efficient functioning of the live chat workflow. 
 

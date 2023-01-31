@@ -3,6 +3,8 @@ title: SaaS template
 sidebar_label : SaaS template
 ---
 
+> Explore **SaaS template** [here](https://cloud.yellow.ai/marketplace/78e7ad81f4a59ba097c5968ed08959e4).  
+
 
 Software as a service (or SaaS) is an industry concept of delivering applications over the internet. Marketplace's SaaS template is designed to promote an industry's SaaS products to customers and offer them a product demo.
 
@@ -16,6 +18,9 @@ You can customize this template as per your industry and business requirements. 
 This template is built around the use case to help customers explore the products provided by yellow.ai. One can learn about the platform offerings based on the descriptions of custom use cases, channels (like WhatsApp, or Instagram), or industries(government, private sector). These flows are built to promote products and urge the user to book a demo. 
 Bot users can also read customer use cases from the main flow, directly book a demo, or talk to an agent. 
 
+:::info
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+:::
 
 
 
