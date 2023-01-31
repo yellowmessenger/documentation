@@ -79,9 +79,10 @@ If a CSV header is not mapped to any user property, that CSV column will not be 
 :::
 
 4. Click **Next**.
-5. In **Resolve conflicts** set the action to be performed to the record when a user ID in the CSV file already exists in User 360.
+5. In **Resolve conflicts** set the action to be performed to the record when a user ID in the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360. 
 
-   ![](https://i.imgur.com/SG4zK66.png)
+   ![](https://i.imgur.com/w9DvsBR.png)
+
 
 #### Retain imported user data
 
