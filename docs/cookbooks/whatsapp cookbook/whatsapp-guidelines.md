@@ -69,7 +69,7 @@ Please go through this link [here](https://www.whatsapp.com/legal/commerce-polic
 
 1. **Opt-in for push notifications**
 
-You cannot send push notifications without customers consent. If you still send the users notification without getting their consent. They might block your brand on Whatsapp or report it to Whatsapp. In both cases Whatsapp can either contact you to show them the flow for getting consent or directly block the business account. So make sure that you follow the guidelines mentioned [here](https://developers.facebook.com/docs/whatsapp/guides/opt-in/) to get customer opt-in. 
+You cannot send push notifications without customers consent. If you still send the users notification without getting their consent. They might block your brand on Whatsapp or report it to Whatsapp. In both cases Whatsapp can either contact you to show them the flow for getting consent or directly block the business account. So make sure that you follow the guidelines mentioned [here](https://developers.facebook.com/docs/whatsapp/guides/opt-in) to get customer opt-in. 
 
 ![5](https://i.imgur.com/9rJQPUM.png)
 

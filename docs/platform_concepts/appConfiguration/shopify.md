@@ -76,7 +76,7 @@ Please ensure that you enter your store name exactly as it is in the **Shopify**
    
 ## 3. Enable Shopify Store data in your bot
 1. Go to your bot in **Studio** and navigate to the flow where you want to use the Shopify node.
-2. As the first step, collect the customer information. Use the **Question** node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/).
+2. As the first step, collect the customer information. Use the **Question** node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
 
    ![](https://i.imgur.com/3Nr7T6u.png)
 3. Add a new integration node - **Node** > **Integration** > **Shopify Shop**.
@@ -87,7 +87,7 @@ Please ensure that you enter your store name exactly as it is in the **Shopify**
    * Static value: {variable_name}
    ![](https://i.imgur.com/X9e1rwL.png)
 5. Use Show sample response to see all the details that the function can retrieve in the JSON format.
-6. Store the response in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/). 
+6. Store the response in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables). 
    ![](https://i.imgur.com/fMgSeaw.png)
 
 7. You can decide the info you want to display to the user. Use the **Function** node to customise that information in the **Code** tab.

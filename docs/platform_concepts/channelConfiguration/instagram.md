@@ -161,7 +161,7 @@ Private Replies allows Businesses to reply to comments made on their posts with 
 
 An Instagram Professional account can be notified when a user mentions them in a story. When this happens, the IG Professional account will get a message in the inbox referencing the story that the user posted. Due to a story being ephemeral by nature (it will disappear after 24 hours or when deleted by the user), you must meet specific requirements and implementation guidelines to comply and respect user privacy for ephemeral content.
 
-Story mention is part of the app review requirements for `instagram_manage_messages` permission. Please ensure that you meet all the story mention requirements before submitting for [app review](https://developers.facebook.com/docs/messenger-platform/instagram/app-review/).
+Story mention is part of the app review requirements for `instagram_manage_messages` permission. Please ensure that you meet all the story mention requirements before submitting for [app review](https://developers.facebook.com/docs/messenger-platform/instagram/app-review).
 
 > ## Important Points
 

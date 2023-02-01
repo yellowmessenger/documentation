@@ -131,7 +131,7 @@ Follow the steps to configure multi-workspace:
 
 3. Store the accessToken of every workspace if you want to use Slack [APIs](#5). Set up a flow to capture your **`accessToken <> teamId`** mapping in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/database#1-create-table):
 
-- Add a custom event `slack-oauth-access-token` in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/). You will receive this event each time your app is added to a workspace and will have the following schema:
+- Add a custom event `slack-oauth-access-token` in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub). You will receive this event each time your app is added to a workspace and will have the following schema:
 
 ```
 {
@@ -202,7 +202,7 @@ Follow the below steps to add slash command:
 
 ![](https://i.imgur.com/HU5qrLT.png)
 
-3. Enable `slack-shortcuts` event in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/). If a flow is triggered using this event, the Event Payload can be accessed in builder using {{data.event.[]}}. Schema for this event would be:
+3. Enable `slack-shortcuts` event in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub). If a flow is triggered using this event, the Event Payload can be accessed in builder using {{data.event.[]}}. Schema for this event would be:
 
 ```
 {

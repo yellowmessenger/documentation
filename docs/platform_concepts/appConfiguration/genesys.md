@@ -7,7 +7,7 @@ sidebar_label : Genesys Live Chat
 
 Yellow.ai Integration with Genesys Live Chat allows you to seamlessly connect your genesys service with the yellow.ai platform.
 
-**Note**: We recommend this integration if you are using genesys on-prem solution otherwise you should use [genesys PureCloud](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys-cloud-livechat/) integration as that would be the latest version from genesys
+**Note**: We recommend this integration if you are using genesys on-prem solution otherwise you should use [genesys PureCloud](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys-cloud-livechat) integration as that would be the latest version from genesys
 
 
 

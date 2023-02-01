@@ -4,7 +4,7 @@ title: Using Builder to Capture User Data Through Conversations
 ---
 
 
-If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/) to also capture relevant data around your users and enrich their profile.
+If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to also capture relevant data around your users and enrich their profile.
 
 This data can also be used within the Conversational Studio to deliver personalised conversations.
 
