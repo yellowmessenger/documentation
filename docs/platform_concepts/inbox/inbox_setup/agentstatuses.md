@@ -1,6 +1,6 @@
 ---
-title: Default agent status
-sidebar_label : Default agent status
+title: Default agent statuses
+sidebar_label : Default agent statuses
 ---
 
 

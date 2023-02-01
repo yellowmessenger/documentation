@@ -5,6 +5,11 @@ sidebar_label : Download report
 
   
 
+:::note
+Only an Inbox admin can download reports.
+:::
+
+  
 This section displays the reports of all the chats handled by the agents, their activity, and their performance during their interaction with the users.
 
 Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#3-default-agent-status) to know why are reports necessary and what are the parameters tracked in the report. 
@@ -29,13 +34,14 @@ There are 2 different types of reports, namely, **Chat reports** and **Email rep
 
   
   
+:::info
 
+**Track Agent activity via. Reports**
 
-:::note
-Only an Inbox admin can download reports.
+The time spent by each agent in the different statuses will be tracked in the **Agent activity report**. The aggregated time spent by the agent i.e total Available/Busy/Away time spent by the agent per each day is tracked in the **Agent performance report**.
 :::
 
-  
+
 
 Follow the below steps to generate and download the reports:
 
