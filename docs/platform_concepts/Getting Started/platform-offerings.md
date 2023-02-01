@@ -14,7 +14,7 @@ The following is a sample screenshot of  **Overview** page:
 
 Watch the product quick tour video on [Youtube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) to understand what you can do with Yellow.ai and how the bot works.
 
-<img src="https://i.imgur.com/HfA4yu0.png))" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/HfA4yu0.png" alt="drawing" width="100%"/>
 
 
 ## 2. Access different product modules
@@ -23,7 +23,7 @@ The platform has different modules that helps solve different things for busines
 
 Switch among different modules of the platform using the **Module switcher**.
 
-<img src="https://i.imgur.com/BMXKA2Q.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/BMXKA2Q.png" alt="drawing" width="100%"/>
 
 
 ## 3. Set up your bot 
@@ -37,12 +37,12 @@ However, there could be some use cases that are not available in our Marketplace
 
 You can also use the readily available templates if they are suitable for your use case. 
 
-<img src="https://i.imgur.com/vHUDGM5.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/vHUDGM5.png" alt="drawing" width="100%"/>
 
 
 The platform also includes different environments, giving you complete freedom to experiment with the various options and then push the final version to the live bot with Environment. These are the different environments supported:
 
-<img src="https://i.imgur.com/5oVqs0O.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/5oVqs0O.png" alt="drawing" width="100%"/>
 
 
 ## 4. Modify bot details
@@ -51,7 +51,7 @@ You will provide basic details about the bot when signing up. However, you have 
 
 However, this does not impact the functionality of the bot that you have created.
 
-<img src="https://i.imgur.com/QMg5bVq.png)" alt="drawing" width="50%"/>
+<img src="https://i.imgur.com/QMg5bVq.png" alt="drawing" width="40%"/>
 
 
 ## 5. Add collaborators
@@ -62,11 +62,11 @@ You can involve other members of the team or cross team members to build the bot
 Only superadmin can share bots and revoke access.
 :::
 
-<img src="https://i.imgur.com/lZxRTfs.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/lZxRTfs.png" alt="drawing" width="100%"/>
 
 <br/>
 
-<img src="https://i.imgur.com/6alBjsK.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/6alBjsK.png" alt="drawing" width="100%"/>
 
 
 
@@ -74,7 +74,7 @@ Only superadmin can share bots and revoke access.
 
 You have the flexibility to reach out to your customers on different channels for better reachability. Integrate your bot seamlessly with various channels according to your business requirements. You can also add the channels for your bot from the Overview page.
 
-<img src="https://i.imgur.com/qSqZG5T.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/qSqZG5T.png" alt="drawing" width="100%"/>
 
 
 ## 7. Add multilingual support
@@ -89,7 +89,7 @@ Make your bot conversations more comfortable for your users, especially when you
 Self-help resources are readily available on the platform to provide you with immediate assistance in resolving your issues that are related to the product. Be it product understanding, reaching out to our product experts, or connecting with our support agents.
 
         
-<img src="https://i.imgur.com/MxEj2H1.png)" alt="drawing" width="50%"/> 
+<img src="https://i.imgur.com/MxEj2H1.png" alt="drawing" width="30%"/> 
 
 The following are the different resources available:
 
