@@ -139,12 +139,13 @@ For example, if there are two records with the same userId - one in row 10 and a
   
 You can see the Status of the import.
 
-  - In progress: It states that the import activity is going on. You will see this immediately when you import a CSV file.
+  - **In progress**: It states that the import activity is going on. You will see this immediately when you import a CSV file.
   - Completed: It states that the import activity is completed and doesn't mean that all the data is added successfully. There could be conflicts in the imported records and you can see that in Failed users.
 
-   ![](https://i.imgur.com/sOfx9Sq.png)
+   ![](https://i.imgur.com/1L2TjVR.png)
 
-  - Failed: It states that the import activity has failed due to reasons like incorrect file format or any other technical errors. 
+
+  - **Failed**: It states that the import activity has failed due to reasons like incorrect file format or any other technical errors. 
 
 :::note
 * Users are automatically added to the segment every time the user updates to match those conditions.
@@ -201,5 +202,6 @@ Status | Status of the import - In progress, Completed, or Cancelled.
 
    **What's next?**
 
-   * You can view imported users, export user data, and delete existing user records. For more details, see [Manage user data](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data).
+   * To see details of a user, see [View user card](/docs/platform_concepts/engagement/cdp/user_data/viewuser)
+   * To export user data, or delete an existing user record, see [Manage user data](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data).
    * See how to [create user segments](/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview).
