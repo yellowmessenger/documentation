@@ -68,10 +68,10 @@ You can group your users based on certain characteristics such as who they are a
 
 You can [send events](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) to yellow.ai, to record user activities or capture an important conversion [events](/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events).  It also captures the details such as the first and last time a user does something including the total number of times. For example, you can see the first time users clicked on a particular page, or when they most recently purchased an item.
 
-You can see events in User 360, and filter them to answer questions like:
-- Are users visiting the same product page quite often in recent times?
-- Did they use the export feature a number of times? or
-- Did they downgrade their plan?
+You can see events in User 360, and filter them based on a specific criteria like:
+- Users visiting the same product page quite often in recent times
+- Users who used the export feature a number of times or
+- Users who downgraded their plan
 
 
 ## 4. Export your user data

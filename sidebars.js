@@ -292,7 +292,6 @@ module.exports = {
             "platform_concepts/studio/train/synonyms",
             "platform_concepts/studio/train/smalltalk",
             "platform_concepts/studio/train/add-contextual-response",
-           // "platform_concepts/studio/train/utterance-report",
             
           ],
         },
@@ -594,7 +593,6 @@ module.exports = {
   collapsed: true,
   items: [
    // "platform_concepts/engagement/cdp/overview",
-    "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
     "platform_concepts/engagement/cdp/user_data/user_properties",
     {
       type: "category",
