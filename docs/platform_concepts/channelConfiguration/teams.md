@@ -6,9 +6,9 @@ sidebar_label: Microsoft Teams
 Microsoft Teams (MS Teams) is a collaboration platform that provides a digital workspace for various teams within the organisation to communicate and work together. The team members can have conversations, share files, images, video, audio, and schedule meetings. It includes chat, video meetings, file storage, and application integration to provide a secure, collaborative environment for teams to work together.
 
 In this article, you will learn:
-1. [How to set up MS Teams using Developer portal](#portal)
-2. [How to connect Teams app with your bot](#connet)
-3. [How to set permissions on Azure portal](#azure)
+1. [How to set up MS Teams using Developer portal](#1-set-up-ms-teams-using-developer-portal)
+2. [How to connect Teams app with your bot](#2-connect-your-teams-app-with-a-bot)
+3. [How to set permissions on Azure portal](#3-set-permission-on-azure-portal)
 
 ## 1. Set up MS teams using Developer portal
 

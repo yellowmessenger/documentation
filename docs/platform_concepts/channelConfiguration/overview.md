@@ -11,13 +11,6 @@ To launch your bot across channels, you need to set up your bot, which is releva
 
 After setting up the channel, you need to test your bot, connect it to the respective channel, and ensure that the bot is responding to users.
 
-The platform supports a list of channels under various categories, as mentioned below:
-* Messaging
-* Voice
-* Social
-* Business
-* Additional
-
 ## Access Channels
 
 1. Log in to https://cloud.yellow.ai.
