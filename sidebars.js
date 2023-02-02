@@ -949,6 +949,7 @@ module.exports = {
             "platform_concepts/appConfiguration/amazon-livechat",
             "platform_concepts/appConfiguration/avaya",
             "platform_concepts/appConfiguration/azure-ad",
+            "platform_concepts/appConfiguration/billdesk-emailpay",
             "platform_concepts/appConfiguration/billdesk",
             "platform_concepts/appConfiguration/camspay",
             "platform_concepts/appConfiguration/cashfree",
@@ -1026,6 +1027,7 @@ module.exports = {
           label: "Payments",
           collapsed: true,
           items: [
+            "platform_concepts/appConfiguration/billdesk-emailpay",
             "platform_concepts/appConfiguration/billdesk",
             "platform_concepts/appConfiguration/camspay",
             "platform_concepts/appConfiguration/cashfree",
