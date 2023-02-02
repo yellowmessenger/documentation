@@ -1,6 +1,6 @@
 ---
 title: Manage support agents
-sidebar_label : Manage support agents
+sidebar_label : Add inbox support agents
 ---
 
 

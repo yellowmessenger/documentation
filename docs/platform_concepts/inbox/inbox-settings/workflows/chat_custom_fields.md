@@ -1,5 +1,5 @@
 ---
-title: Custom fields in chat details 
+title: Custom fields for chat and email tickets
 sidebar_label : Custom fields
 ---
 
@@ -23,6 +23,8 @@ You can find the custom fields in the chat details. These are customized fields 
 Custom fields are necessary for the agent/admin to Resolve/Transfer any ticket. 
 
 ![](https://i.imgur.com/9ws77BL.png)
+
+> These custom fields are also available on the [email tickets (detailed view)](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro) page. 
 
 **What are custom fields?**
 

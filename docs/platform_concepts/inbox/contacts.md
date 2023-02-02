@@ -107,6 +107,12 @@ If there is an active chat [In Assigned, Queued, Open status] existing for the c
 
 :::
 
+
+9. All the tickets sent to a respective contact will be listed under the **Tickets** tab. 
+
+![](https://i.imgur.com/psNPElO.png)
+
+
 ## <a name="3"></a> 3. Chat with the contact 
 
 Follow the steps below to follow up with the contact after the notification is sent:
