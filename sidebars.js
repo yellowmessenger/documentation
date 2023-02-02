@@ -357,7 +357,7 @@ module.exports = {
     {
       type: "category",
       label: "Inbox",
-      link: {type: 'doc', id: 'platform_concepts/inbox/inbox'},
+      link: {type: 'doc', id: 'platform_concepts/inbox'},
       collapsed: true,
       items: [
 
