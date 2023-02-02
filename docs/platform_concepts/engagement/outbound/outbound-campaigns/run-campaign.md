@@ -35,7 +35,7 @@ This article provides how to create campaigns for any channel. The process for c
 
   
 
-4. Select your preferred **Message template** ([WhatsApp](/platform_concepts/engagement/outbound/templates/whatsapptemplate.md), [Email](/platform_concepts/engagement/outbound/templates/email-template.md), [SMS](/platform_concepts/engagement/outbound/templates/sms-template.md), [Mobile push](/docs/platform_concepts/engagement/outbound/templates/mobilepush), [Viber](/platform_concepts/engagement/outbound/templates/viber-template.md)) using the radio button. For more details, see [Templates overview](/platform_concepts/engagement/outbound/templates/overview.md).
+4. Select your preferred **Message template** ([WhatsApp](/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate), [Email](/docs/platform_concepts/engagement/outbound/templates/email-template), [SMS](/docs/platform_concepts/engagement/outbound/templates/sms-template), [Mobile push](/docs/platform_concepts/engagement/outbound/templates/mobilepush), [Viber](/docs/platform_concepts/engagement/outbound/templates/viber-template)) using the radio button. For more details, see [Templates overview](/docs/platform_concepts/engagement/outbound/templates/overview).
 
 
 :::note
@@ -125,7 +125,7 @@ This section guides you on how to configure template for each channel -
 
    <img src="https://i.imgur.com/Y1h9Ui3.png" width="350" height="auto"/>
 
-2. In **Select the email address from which you want to send the campaign**, choose the email address from which you want to send the campaign. To know how to add email accounts, see [Email channel](/platform_concepts/channelConfiguration/email-outbound.md)
+2. In **Select the email address from which you want to send the campaign**, choose the email address from which you want to send the campaign. To know how to add email accounts, see [Email channel](/docs/platform_concepts/channelConfiguration/email-outbound)
 
 3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link 
 
@@ -368,4 +368,4 @@ For Failed messages, you can also see the reason for failure.
 
 **What next**
 
-* See how your campaign is performing using [Outbound campaign report](/platform_concepts/engagement/outbound/outbound-campaigns/outbound-report.md).
+* See how your campaign is performing using [Outbound campaign report](/docs/platform_concepts/engagement/outbound/outbound-campaigns/outbound-report).
