@@ -70,7 +70,7 @@ Follow the given steps: 
 1. Create a feedback flow.
 ![](https://i.imgur.com/uE0Esxl.png)
 
-- You can add [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/) to ask questions or other details and store the response in a variable. 
+- You can add [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to ask questions or other details and store the response in a variable. 
 - To collect ratings, use a node to present options ranging from 1 to 5 (the CSAT score) and **store the response** in a variable (for example, feedback).If your channel is WhatsApp, you can use the [WhatsApp list node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#22-whatsapp-list). You can also use [Quick replies node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) to fetch the user rating. 
 
     <img  src="https://i.imgur.com/YUYBcyj.png"  width="50%"/>
@@ -97,6 +97,6 @@ Follow the given steps: 
 
 ![](https://i.imgur.com/bkDSbfc.png)
 
-6. Create a [dashboard](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards/) and track it. Refresh the page to update dashboards with newly added data points.
+6. Create a [dashboard](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards) and track it. Refresh the page to update dashboards with newly added data points.
 
 ![](https://i.imgur.com/wluH8KC.png)

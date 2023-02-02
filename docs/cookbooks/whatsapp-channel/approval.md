@@ -33,7 +33,7 @@ Your quality rating is based on how messages have been received by users over th
 * *Flagged*: This occurs when quality rating decreases. You can improve the quality rating and come back to connected again in a week
 * *Restricted*: This status occurs when messaging limit is reached and are not allowed to send business initiated messages anymore.
 
-> Read more about quality rating and messaging limits [here](https://developers.facebook.com/docs/whatsapp/api/rate-limits/)
+> Read more about quality rating and messaging limits [here](https://developers.facebook.com/docs/whatsapp/api/rate-limits)
 
 Now, once the template is approved and you are within your messaging limits, follow [these steps](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) to schedule an Outbound campaign..
 

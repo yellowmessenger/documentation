@@ -19,9 +19,9 @@ Yellow.ai supports multiple environments through which you can manage your publi
 
 In the **Live** mode, you can 
 
-* View the analytics of live users in the [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview/) module
+* View the analytics of live users in the [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview) module
 * Run campaigns in [Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage). 
-* Attend live customer queries as an agent in [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox/).
+* Attend live customer queries as an agent in [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox).
 
 ![](https://i.imgur.com/4PLfGcE.png)
 
@@ -43,7 +43,7 @@ In the **Live** mode, you can
 
 Bot admins or approvers (access) can publish the bot. However, only super admin (who has created) can publish for the first time.
 
-> To know how to add someone as an approver, see [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators/). 
+> To know how to add someone as an approver, see [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators). 
 
 :::note 
 Only super admins can add approvers.

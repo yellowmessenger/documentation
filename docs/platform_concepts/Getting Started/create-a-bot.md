@@ -26,7 +26,7 @@ Bots can be created from scratch to specifically suit your individual business u
 
 <img src="https://i.imgur.com/GSMvl22.png" alt="drawing" width="100%"/>
 
-3. Go to the **Studio** module to start creating bots. For a detailed guide, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/overview/).
+3. Go to the **Studio** module to start creating bots. For a detailed guide, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/overview).
 
 ## 3. Publish the bot
 

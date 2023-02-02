@@ -47,7 +47,7 @@ Follow the below steps to add the knowledgebase website's title and set the defa
 
 Businesses generally host their knowledge base within their website to make access easier for their customers.   
 
-> For example, [docs.yellow.ai](https://docs.yellow.ai/) is the official knowledge base for all Yellow.ai products.
+> For example, [docs.yellow.ai](https://docs.yellow.ai) is the official knowledge base for all Yellow.ai products.
 
 
 To host the knowledge base in your custom domain, follow the steps below:

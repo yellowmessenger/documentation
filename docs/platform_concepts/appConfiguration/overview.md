@@ -98,7 +98,7 @@ Payment consists of integrations with tools used for managing payment and relate
 2. [Cashfree Payments](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/camspay) - You can create payment links and check the status of the payment done via Cashfree Payment Integration.
 3. [Paytm](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/paytm) - You can create payment links and check the status of the payment done via Cashfree Payment Integration.
 4. [PayU Business](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/payuBiz) - Integrate PayU to fulfil your payment requirements, including creating payment links and checking the status of payments or refunds.
-5. [Razorpay](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/razorpay/) - Integrate Razorpay to fulfil your payment requirements, including creating payment links and checking the status of payments or refunds.
+5. [Razorpay](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/razorpay) - Integrate Razorpay to fulfil your payment requirements, including creating payment links and checking the status of payments or refunds.
 6. [Stripe Payment Gateway](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/stripe) - Integrate with Stripe to meet your payment needs, such as generating payment links and checking the status of payments and refunds.
 
 

@@ -164,7 +164,7 @@ There are 22 user properties that are tracked by the bot. These values will be d
 
 ### 3.1 Create a Variable via nodes
 
-You can also create global variables with the help of [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/) nodes, which can be used in any flow or node.
+You can also create global variables with the help of [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) nodes, which can be used in any flow or node.
 
 
 **To create a variable via Prompt node:**
