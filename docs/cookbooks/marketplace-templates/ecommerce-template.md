@@ -3,6 +3,9 @@ title: Ecommerce template
 sidebar_label: Ecommerce template
 ---
 
+> Explore **E-commerce template** [here](https://cloud.yellow.ai/marketplace/a77bc7a01c7e14698667c09d4c6a2512?name=ecommerce%20whatsapp).  
+
+
 The E-commerce template offers a highly efficient and valuable service for online businesses. It guides your customers through buying products. This includes adding a product to the cart, updating product quantity, adding more products, and proceeding to purchase. Post-purchase, customers can track their order status. The template can handle common customer queries and helps connect with the support team if required.
 
 You can use our platform to build custom flows for your business use cases. For example, promote products, show store location, showcase products from your database, enable single sign-on from your e-commerce site, and more.
@@ -11,6 +14,11 @@ Here is the high-level overview of the e-commerce template:
 
 
 <img src="https://i.imgur.com/2mgM0ax.png" width="80%"/>
+
+:::info
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+:::
+
 
 ## 1. Prebuilt use cases
 

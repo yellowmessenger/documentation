@@ -60,7 +60,7 @@ Let's understand the possibilities of FB Messenger chatbot channel.
 
 8.  **How to get onboarded to FBM chatbot and what are the prerequisites?**
 
-    Refer this [document](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger/).
+    Refer this [document](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger).
 
 9.  **How to make users discover and start using your brand’s chatbot?**
 

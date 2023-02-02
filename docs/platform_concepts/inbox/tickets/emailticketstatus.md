@@ -21,9 +21,9 @@ These statuses will affect everything from SLA timers to workflows, as an increm
 | Status | Description |
 | -------- | -------- |
 | Open     | When a ticket is raised and lies unassigned it states is open, open is a system-assigned state, and the ticket cannot be manually moved to an open state once removed from it.     |
-|In Progress|This status signifies that the ticket is assigned to an agent and or is being worked upon, this status simply signifies that the agent is actively working on the ticket.|
-|Pending|This status signifies that the agent is waiting on a response from the person who requested the ticket. If a ticket is in this status once the user replies the ticket shall automatically be moved to the assigned state. |
-|On-hold|This ticket signifies that the ticket is on hold as it is awaiting the response from a third party ie. not the person requesting the ticket.|
+|In Progress| In-progress means it is currently assigned to agent and the agent is yet to send a reply/respond back to the customer or the agent is working on the ticket|
+|Pending|This status signifies that the agent is waiting on a response from the person who requested the ticket. If a ticket is in this status once the user replies the ticket shall automatically be moved to the in-progress state. |
+|On-hold|This status signifies that the ticket is on hold as it is awaiting the response from a third party ie. not the person requesting the ticket. For example, if the agent is blocked or waiting for  information from the internal team,  the ticket will be put under ON-HOLD status so that the agent's support metrics are not impacted by the waiting time|
 |Resolved| This status states that the solution is provided by the agent hence this ticket is marked as closed.|
 
 

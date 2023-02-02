@@ -29,7 +29,7 @@ You can modify the details of the created bot according to your business needs.
 
 2. Modify the bot's name and click **Save**.
 
-<img src="https://i.imgur.com/c5wMtwI.png)" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/c5wMtwI.png" alt="drawing" width="40%"/>
 
 :::info
 The **Region** can be used for a integrations, voice bots-for phone numbers, and so on.
@@ -53,7 +53,7 @@ You can disable a bot response when you want to change the configuration, featur
 
 2. To disable the bot response, enable the toggle button.
 
-<img src="https://i.imgur.com/SFkZlqz.png)" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/SFkZlqz.png" alt="drawing" width="40%"/>
 <br/> 
 
 ## 3. Reset bot 
@@ -70,6 +70,6 @@ Only super admin and admin have the ability to reset the respective bot.
 
 2. Click on **Reset bot** to delete all past journeys, conversations, and data of the selected bot.
 
-<img src="https://i.imgur.com/aeNlkto.png)" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/aeNlkto.png" alt="drawing" width="40%"/>
 
 3. The selected bot has been successfully reset.

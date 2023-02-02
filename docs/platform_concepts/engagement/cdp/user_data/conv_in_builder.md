@@ -4,7 +4,7 @@ title: Capture data through Studio & create personalised conversations
 ---
 
 
-In a bot conversation, every bot session is mapped to a record in User 360. When building a bot using [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/), you can use [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to capture [User properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties) and store it in the database. 
+In a bot conversation, every bot session is mapped to a record in User 360. When building a bot using [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview), you can use [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to capture [User properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties) and store it in the database. 
 
 It can store responses of conversations that involve asking for user details such as name, email, phone number, location, or any system/custom user property in the relevant field. You can also enrich user data and create personalised conversations using [User properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties) in Studio conversations. 
 
@@ -16,7 +16,7 @@ You need to use the **userId** property to identify a user in a conversation.
 
 To update `userId` of customers through bot conversations:
 
-1. When building flows in [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/), use the **Prompt** node or *Variables* node. 
+1. When building flows in [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview), use the **Prompt** node or *Variables* node. 
 3. Click **Make prompt smarter** and scroll-down to the *Additional section*.  
 
   ![](https://i.imgur.com/t2p6uHD.png)

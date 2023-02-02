@@ -4,7 +4,7 @@ sidebar_label: WhatsApp chatbot
 ---
 
 
-This document will guide you through creating a WhatsApp business account and setting up your own WhatsApp chatbot. For more information, see [WhatsApp Accounts](https://docs.yellow.ai/docs/cookbooks/whatsapp-channel).
+This document will guide you through creating a WhatsApp business account and setting up your own WhatsApp chatbot. For more information, see [WhatsApp Accounts](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
 
 ## 1. WhatsApp configuration
 

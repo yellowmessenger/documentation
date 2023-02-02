@@ -16,9 +16,7 @@ To create a Mobile push template, follow these steps:
 1. Navigate to your project and go to **Engage** > **Templates**.
 2. Click **+Create new templates** > **Mobile push notifications**.
 
-<center>
-<img src="https://i.imgur.com/s7tflBN.png" width=""/>
-</center>
+   <img src="https://i.imgur.com/s7tflBN.png" width=""/>
 
 3. In **Template name**, enter a unique name for the template.
 <center>

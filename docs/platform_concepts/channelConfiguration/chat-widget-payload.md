@@ -7,7 +7,7 @@ A payload is used to pass the website's information to the bot.
 
 Consider that you have a requirement to pass the data of the user who is using the chat widget. In such cases, you can use payload to pass data from your website to the bot. For example, payload passes the data such as account IDs, customer identifiers like names, email addresses, and phone numbers, or other metadata associated with a user from your website to the bot. 
 
-In the payload, you need to create a string that is a key - value pair consisting of data and its value (in lower case). The data must have string-to-string key-value pairs. Payload is passed in JSON format. An error is displayed when data other than key-value is passed in the JSON code. 
+In the payload, you need to create a string that is a key-value pair consisting of data and its value (in lower case). The data must have string-to-string key-value pairs. Payload is passed in JSON format. An error is displayed when data other than key-value is passed in the JSON code. 
 
 
 :::note **payload security**

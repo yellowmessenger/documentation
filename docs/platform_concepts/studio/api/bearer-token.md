@@ -27,7 +27,7 @@ To do so, follow these steps -
   
 4. Open the API or [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api/#1) to which you want to add access token (Authorization header).
 
-> In the example, we will be adding a search lead API from Salesforce. Pass the bearer token in the header and email as a [parameter to this API](https://docs.yellow.ai/docs/platform_concepts/studio/api/send-data). So we will fetch values from [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/) and pass it to the API using this syntax `{{{variable_name}}}`; as shown in the screenshots below.
+> In the example, we will be adding a search lead API from Salesforce. Pass the bearer token in the header and email as a [parameter to this API](https://docs.yellow.ai/docs/platform_concepts/studio/api/send-data). So we will fetch values from [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and pass it to the API using this syntax `{{{variable_name}}}`; as shown in the screenshots below.
   
 
 <img  src="https://i.imgur.com/HJUtzk7.png"  alt="drawing"  width="80%"/>

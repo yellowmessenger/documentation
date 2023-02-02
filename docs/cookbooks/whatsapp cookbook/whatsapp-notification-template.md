@@ -14,7 +14,7 @@ For example:
 # Some important points to know about WhatsApp Notifications : 
 
 ### Opt-in for push notifications
-You cannot send push notifications without customers consent. If you still send the users notification without getting their consent. They might block your brand on Whatsapp or report it to Whatsapp. In both cases Whatsapp can either contact you to show them the flow for getting consent or directly block the business account. So make sure that you follow the guidelines mentioned [here](https://developers.facebook.com/docs/whatsapp/guides/opt-in/) to get customer opt-in. 
+You cannot send push notifications without customers consent. If you still send the users notification without getting their consent. They might block your brand on Whatsapp or report it to Whatsapp. In both cases Whatsapp can either contact you to show them the flow for getting consent or directly block the business account. So make sure that you follow the guidelines mentioned [here](https://developers.facebook.com/docs/whatsapp/guides/opt-in) to get customer opt-in. 
 
 ![](https://cdn.yellowmessenger.com/1nLFVUa0EUoE1617623630820.png)
 

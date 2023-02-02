@@ -293,7 +293,6 @@ module.exports = {
             "platform_concepts/studio/train/synonyms",
             "platform_concepts/studio/train/smalltalk",
             "platform_concepts/studio/train/add-contextual-response",
-           // "platform_concepts/studio/train/utterance-report",
             
           ],
         },
@@ -370,14 +369,14 @@ module.exports = {
         //Inbox Setup
         {
           type: "category",
-          label: "Inbox Setup",
+          label: "Inbox setup",
          // link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
           collapsed: true,
           items: [
             "platform_concepts/inbox/inbox_setup/supportagents",
-            "platform_concepts/inbox/inbox_setup/inboxdemo",
-
               "platform_concepts/inbox/inbox_setup/agentstatuses",
+              "platform_concepts/inbox/inbox_setup/inboxdemo",
+
               "platform_concepts/inbox/inbox_setup/debugchecklist",
             //
                  ],
@@ -390,7 +389,7 @@ module.exports = {
         //3. chats doc 
         {
           type: "category",
-          label: "Chat Tickets",
+          label: "Chat tickets",
           link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
           collapsed: true,
           items: [
@@ -406,16 +405,17 @@ module.exports = {
         //4. tickets doc 
         {
           type: "category",
-          label: "Email Tickets",
-          link: {type: 'doc', id: 'platform_concepts/inbox/tickets/setupandconfig'},
+          label: "Email tickets",
+          link: {type: 'doc', id: 'platform_concepts/inbox/tickets/tickets_intro'},
           collapsed: true,
           items: [
-           // "platform_concepts/inbox/tickets/setupandconfig",
+            "platform_concepts/inbox/tickets/setupandconfig",
             "platform_concepts/inbox/tickets/emailticketstatus",
             "platform_concepts/inbox/tickets/manualticket",
             "platform_concepts/inbox/tickets/searchandfilter",
             "platform_concepts/inbox/tickets/bulkaction",
             "platform_concepts/inbox/tickets/slaintro",
+
                   ],
         },
 
@@ -425,7 +425,7 @@ module.exports = {
         //6. analytics - reports  
         {
           type: "category",
-          label: "Analytics and Reports",
+          label: "Analytics and reports",
           collapsed: true,
           items: [
             {
@@ -488,7 +488,7 @@ module.exports = {
         //8. settings 
         {
           type: "category",
-          label: "Inbox Settings",
+          label: "Inbox settings",
           collapsed: true,
           items: [
 
@@ -594,7 +594,6 @@ module.exports = {
   collapsed: true,
   items: [
    // "platform_concepts/engagement/cdp/overview",
-    "platform_concepts/engagement/cdp/user360forbotsbefore01-06022",
     "platform_concepts/engagement/cdp/user_data/user_properties",
     {
       type: "category",
@@ -608,6 +607,7 @@ module.exports = {
         "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
       ]
     },
+    "platform_concepts/engagement/cdp/user_data/viewuser",
     "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
 
 /*    {
@@ -819,7 +819,7 @@ module.exports = {
 
     {
       type: "category",
-      label: "User Journeys",
+      label: "User journeys",
       collapsed: true,
       items: [
         "platform_concepts/growth/user-journeys",
@@ -919,6 +919,9 @@ module.exports = {
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
             "platform_concepts/channelConfiguration/chat-widget-components",
+            "platform_concepts/channelConfiguration/speech-to-text",
+            "platform_concepts/channelConfiguration/text-to-speech",
+            "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/character-limits-sdk",
             "platform_concepts/channelConfiguration/chat-widget-faq", 
             // "platform_concepts/channelConfiguration/web",
@@ -1204,6 +1207,7 @@ module.exports = {
     //Do not add/ remove this file
     "updates/overview",
 
+    "updates/2022/dec2022",
     "updates/2022/nov2022",
     "updates/2022/oct2022",
     "updates/2022/sep_updates",
