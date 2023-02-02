@@ -32,8 +32,8 @@ The following are some key benefits of Workflow campaigns -
 
 ### 1.3 Types of Workflow campaigns
 
-1. [Time-based workflow campaign](/platform_concepts/engagement/workflowCampaign.md)
-2. [Event-triggered workflow campaign](/platform_concepts/engagement/event-triggered-campaign.md)
+1. [Time-based workflow campaign](/docs/platform_concepts/engagement/workflowCampaign)
+2. [Event-triggered workflow campaign](/docs/platform_concepts/engagement/event-triggered-campaign)
 
 ### 1.4 Use cases
 
@@ -59,5 +59,5 @@ One drawback of such type of campaigns is that the read rate for the lower cost 
 
 **What's next**
 
-* See how to create [Time-based workflow campaign](/platform_concepts/engagement/workflowCampaign.md) and [Event-triggered workflow campaign](/platform_concepts/engagement/event-triggered-campaign.md).
-* Once you run a Workflow campaign, analyze the [performance of your Workflow campaign](/platform_concepts/engagement/workflow-report.md).
+* See how to create [Time-based workflow campaign](/docs/platform_concepts/engagement/workflowCampaign) and [Event-triggered workflow campaign](/docs/platform_concepts/engagement/event-triggered-campaign).
+* Once you run a Workflow campaign, analyze the [performance of your Workflow campaign](/docs/platform_concepts/engagement/workflow-report).

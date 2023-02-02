@@ -112,6 +112,6 @@ The downloaded log contains the following information:
 * **BOT_ID**: Bot Id for which the CSV was uploaded.
 * **REQUEST_PAYLOAD**: The user record for which an import was attempted but FAILED
 * **ERROR_PAYLOAD**: The error details due to which above user import FAILED:
-    - `invalidDataType`: Properties for which the wrong [data type](/platform_concepts/engagement/cdp/user_data/user_properties#11-system-user-properties) was passed
+    - `invalidDataType`: Properties for which the wrong [data type](/docs/platform_concepts/engagement/cdp/user_data/user_properties#11-system-user-properties) was passed
     - `invalidProperty`: Properties that do not exist in the user table
 * **LINE_NUMBER**: The row number of the user record for which import FAILED
