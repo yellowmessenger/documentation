@@ -1,6 +1,6 @@
 ---
 title : Billdesk
-sidebar_label : Billdesk
+sidebar_label : Billdesk UPI
 ---
 
 
