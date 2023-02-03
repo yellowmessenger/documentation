@@ -4,7 +4,7 @@ title: Import users through CSV file
 tags: [csv import, import bulk users, add bulk users, edit bulk users, add users]
 ---
 
-You can use a CSV file import to bulk import new users or update existing user data. It lets you decide what fields to import irrespective of the fields available in the CSV file.  It includes an error report post-import to help you identify errors in the CSV file easily. 
+Use a CSV file import to bulk import new users or update existing user data. You can choose the fields to import from the ones available in the CSV file.  It includes an error report post-import to help you identify errors in the CSV file easily. 
 
 The following are the three different steps involved in importing a CSV file.
 
@@ -17,14 +17,14 @@ The following are the three different steps involved in importing a CSV file.
 ## Step 1: Create CSV file with user details
 
 
-Create a CSV file with user details. Ensure that the values passed in the CSV file adhere to the data type of user properties.
+Create a CSV file with user details and ensure that the values passed in the CSV file adhere to the data types of user properties.
 
 :::note
 A CSV file cannot exceed 30 MB.
 :::
 
-1.  **Use relevant header names**: It becomes easy to map headers with user properties when you use relevant names for column headers.
-2.  **Use correct data type**: Data type validation is run before importing each user record. If the validation fails, adding or updating the record will fail. 
+1.  **Use similar header names**: It becomes easy to map headers with user properties when you use similar names for column headers.
+2.  **Use the right data type**: Data type validated before importing each user record. If the validation fails, adding or updating the record will fail. 
 
 The following table shows the data types of each user property with accepted values.
 
@@ -43,8 +43,8 @@ The following table shows the data types of each user property with accepted val
 | boolean | Value could be `true` or `false`, this is case insensitive. |
 | tags | Semicolon ; separated values without spaces. Example: tag1;tag2 
 
-3. **Prefix country codes** to mobile numbers - CountryCode+PhoneNumber. For example, an Indian phone number could be 919011111111.
-4. **Include all properties** that you want to import such as firstname, lastname, gender, country, city, timezone, email optin, sms optin, or any custom property that is added for the project.
+3. **Prefix country codes** to mobile numbers - CountryCode+PhoneNumber. For example, an Indian phone number could be 919011111111 where `91` is the country code and rest is a phone number.
+4. **Include all the properties** you want to import such as firstname, lastname, gender, country, city, timezone, email optin, sms optin, or any custom property that is added for the project.
 5.  **Add tags** that you want to associate with each user. To add multiple tags to a user, use a semicolon (;) between each tag without space. For example, `regular_customers;campaign_responders`.
 
    ![](https://i.imgur.com/8CKrTCS.jpg)
@@ -112,10 +112,10 @@ Updates the existing properties of the user with the ones imported through the C
    ![](https://i.imgur.com/Q6gWZ66.png)
 
 :::note
-If the CSV file has two user records with the same userId, the data will be updated as per the sequence in the CSV file. The record is first updated with the data that comes first in the CSV and then updates with the data that comes next.
+If the CSV file has two user records with the same userId, the data will be updated as per the sequence in the CSV file. The user record is updated with the data that comes first in the CSV and then with the ones that comes later.
 For example, if there are two records with the same userId - one in row 10 and another in row 15:
-1. The record is first updated as per the data available in row 10.
-2. It is then updated as per row 15.
+* The record is first updated with the data available in row 10.
+*  It is then updated as per row 15.
 :::
 
 6. Check **Merge tags** to retain existing tags and also add new tags in the CSV file if the userId that you are importing already exists. This overrides the behaviour of tags configured in Step 5.
@@ -127,7 +127,7 @@ For example, if there are two records with the same userId - one in row 10 and a
 
    ![](https://i.imgur.com/prCfNqu.png)
 
-9. To create a segment with the imported users, check **Create a segment of imported users based on tags assigned above** and enter the **Segment name** in the box that appears.
+9. To create a segment with the imported users, check **Create a segment of imported users based on tags assigned above** and enter the **Segment name**.
 
    ![](https://i.imgur.com/54TZVsw.png)
 
@@ -140,7 +140,7 @@ For example, if there are two records with the same userId - one in row 10 and a
 You can see the Status of the import.
 
   - **In progress**: It states that the import activity is going on. You will see this immediately when you import a CSV file.
-  - Completed: It states that the import activity is completed and doesn't mean that all the data is added successfully. There could be conflicts in the imported records and you can see that in Failed users.
+  - **Completed**: It states that the import activity is completed. There could be conflicts in the imported records and you can see that in Failed users.
 
    ![](https://i.imgur.com/1L2TjVR.png)
 
@@ -157,7 +157,9 @@ You can see the Status of the import.
 
 ## Step 3: Analyse import errors
 
-Once you import a CSV file, you can check what happened with the records. It is possible that new records are not created always you import a CSV file. An import could result in one or more of the following:
+Once you import a CSV file, you can check what happened with the records. 
+
+During the import, it is possible that new records are not always created but could also result in one or more of the following:
 
 - Created new records with the details provided in the CSV file.
 - Updated existing records with details provided in the CSV file.
