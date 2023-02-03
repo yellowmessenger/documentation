@@ -3,7 +3,7 @@ title: Intents
 sidebar_label: Intents
 ---
 
-In this document, the following topics will be covered:
+The following topics will be covered in this artice,
 
 1. [What are intents?](#intent)
 2. [How to add intents and utterances?](#add) 
@@ -12,20 +12,16 @@ In this document, the following topics will be covered:
 5. [How to resolve clashes in intents and utterance?](#clash)
 6. [Best practices to create intents and utterances](#bp)
 
-
 :::info
 The words **Flows** and **Journeys** are used synonymously.
 :::
----
+
+------
+
 
 ## <a name="intent"></a> 1. Intents overview
 
-NLU deals with training machines to read and converse in any human language. Making AI Models understand  the nuances  of language is a very complex problem. Using Linguistic Semantics i.e. by creating a structured format of sentences, models are able to perceive natural language with good accuracy.
-
-:::info
-- **Linguistic** : Study of language
-- **Semantics** : Study of the meaning of words, phrases or sentences i.e. how to arrange groups of words in a particular fashion to derive meaning.
-:::
+Intent refers to the purpose or goal behind an action or uterance. In the context of natural language processing, it often refers to the underlying intention of a user in a conversational context, such as the intention to ask a question, make a request, or provide information. Understanding the intent behind a user's input is crucial for building effective conversational AI systems.
 
 Knowledge of word meanings or sentence formation help in training the AI Models better with a few key concepts such as **Intents**, **Entities** and **Context**.
 
@@ -42,9 +38,7 @@ For example, any sentence can be broken down into smaller components -
 
 
 
-
-
-On our platform, you can add your **intents** (what will be the intention of the bot users response) and **utterances**(what is the information that the bot user asks for when this intention is detected). **Train** the model to recognise such sentences. 
+On our platform, you can add your **intents** (the intention of the bot users response) and **utterances**(the information that the bot user asks for when this intention is detected). **Train** the model to recognise such sentences. 
 
 ---
 
@@ -65,8 +59,6 @@ Creating intents for Jimmy's cafe:
 > *You are the owner of Jimmy's cafe and are setting up a bot for your website. Your customers would like to enjoy the simplicity of ordering a coffee through your bot. For this to happen, you want your bot to understand the different ways a customer may ask to place an order so that the [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) you built gets triggered.*
 > **I want coffee** will be recognized as intent: **#ordercoffee**.
 > **I want a croissant** will be recognized as intent: **#ordersnack**.
-
-
 
 After creating the required flows, click on **Intents** in the **Train** dropdown. Use the `i` key to access Intents directly from any Studio page. 
 
@@ -110,7 +102,7 @@ With “Yellow.ai DynamicNLP”, NLP based on Zero-shot learning we eliminate th
 
 ### 2.4 Add utterance
 
-Add utterances to the intent. Utterances are phrases or queries that users may type in the bot conversation with an expectation of a response to that exact query. 
+ Utterances are phrases or queries that users may type in the bot conversation with an expectation of a response to that exact query. These utterances need to be added to each intent for the bot to identify the intent based on the utterance.
 
 There are two ways to add Utterances to an intent:
 
@@ -155,8 +147,10 @@ You can increase the number of epochs for training your intent. The number of ep
 
 After training intents you can connect it to your bot. You have to connect the flow you built to the intent '**Order**'. To do this click the [Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) and configure the intent to the node. 
 
+
 Click the drop-down and select ‘**#order**’ intent.
 
+![](https://i.imgur.com/weM5JJD.png)
 
 Every time a user asks a query similar to the utterances within 'order' the flow you created would get triggered.
 
@@ -203,6 +197,8 @@ You can test how confident your bot is about a phrase and whether it can identif
 ```
  
 As you can see in the above code, the model understands that the phrase is a part of the intent '**order**' and is completely confident about it (0.999). 
+
+You can also [automatically generate intents and utterances](https://docs.yellow.ai/docs/cookbooks/studio/regressiontest) and test them in your bot.
 
 
 ---
@@ -273,8 +269,8 @@ If the similarity is more than 50%, you must go to any of the Intents page and d
 ## <a name="bp"></a> 6. Best practices
 
 This section is divided into:
-1. Best practices to follow while naming intents.
-2. Best practices to follow while adding utterances to the intents.
+1. [Best practices to follow while naming intents](#61-intent-naming)
+2. [Best practices to follow while adding utterances to the intents](#62-utterance--flows)
 
 
 ### <a name="Intn"></a> 6.1 Intent naming
@@ -283,11 +279,13 @@ There are guidelines for new bots and for the bots in productions. For your inte
 
 #### 6.1.1 New bots
 
+Bots created after August 1, 2022.
+
 1. Intent names must be at least 3 words long with unique words and no special characters. 
-    - Be mindful of intent names, make sure they are as descriptive as possible.
-    - Don't create intent names like intent test one, FAQ number one etc.
-    - Bad intent names will result in bad NLP performance (False positives) and unnecessary issues in the bot.
-    - For Cloud, it is possible to rename intent names.
+    * Be mindful of intent names, make sure they are as descriptive as possible.
+    * Don't create intent names like intent test one, FAQ number one etc.
+    * Bad intent names will result in bad NLP performance (False positives) and unnecessary issues in the bot.
+    * For Cloud, it is possible to rename intent names.
 2. The more descriptive the intent name, the better (add names with more than 3 words).
 3. Avoid uncommonly and business-specific abbreviations: Example: PO (purchase order ), GMV, etc - use the full forms and add synonyms if necessary. Few common abbreviations like UPI, EMI, and HR are acceptable.
 4. Phrase the intent name as a verb followed by a noun. Example: get a premium receipt, pay renewal amount, fetch order status.
@@ -297,7 +295,7 @@ There are guidelines for new bots and for the bots in productions. For your inte
 
 #### 6.1.2 Existing bots
 
-Following are a few important pointers for bots that are already in production: 
+Following are a few important pointers for bots created before August 1, 2022.
 
 ##### Cloud
 
@@ -306,7 +304,7 @@ Following are a few important pointers for bots that are already in production:
 3. If the intent name is camelCase (eg: chatWithAgent)  or has underscore/hyphens (eg: chat_with_agent, chat-with-agent), use the edit option to rename these following the guidelines mentioned in the above section(for new bots). 
 4. Ensure that there is no Small Talk in FAQs / Flows. If these are present, delete them - platform small talk is enabled for all cloud bots. 
 
-##### App
+##### App (app.yellow.ai)
 
 1. Enable suggestions for bots. 
     - To do this, in app.ym ensure that **enableDidYouMean** is set to true in app options in Function and in Tools → App Options → Prediction → Enable Suggestions.
