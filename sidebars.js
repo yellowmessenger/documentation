@@ -388,8 +388,10 @@ module.exports = {
          // link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
           collapsed: true,
           items: [
-            "platform_concepts/inbox/inbox_setup/supportagents",
+              "platform_concepts/inbox/inbox_setup/supportagents",
+              "platform_concepts/inbox/inbox_setup/roleaccess",
               "platform_concepts/inbox/inbox_setup/agentstatuses",
+
               "platform_concepts/inbox/inbox_setup/inboxdemo",
 
               "platform_concepts/inbox/inbox_setup/debugchecklist",
@@ -404,7 +406,7 @@ module.exports = {
         //3. chats doc 
         {
           type: "category",
-          label: "Chat tickets",
+          label: "Live chats",
           link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
           collapsed: true,
           items: [
