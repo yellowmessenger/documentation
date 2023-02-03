@@ -1,6 +1,6 @@
 ---
-title: NLU automated testing 
-sidebar_label : NLU automated testing
+title: Intents, FAQs and Utterances automated testing
+sidebar_label : Intents and Utterances automated testing
 ---
 
 Instead of creating utterances manually, you can now auto-generate them and run test utterances in bulk. Before publishing, you can test these utterances to check whether each one is mapped to the respective intents.
