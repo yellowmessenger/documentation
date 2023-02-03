@@ -1,13 +1,13 @@
 ---
-sidebar_label: User segmentation
-title: User segmentation
+sidebar_label: User segment
+title: User segment
 ---
 
 
 
-## 1. Create segment
+## 1. Create user segment
 
-To create a segment, follow these steps:
+To create a user segment, follow these steps:
 
 1. Navigate to **Engage** > **User 360**.
 2. Click **Add Segment**.
@@ -40,7 +40,8 @@ Once you create a segment, you can view users in the segment, modify segment con
 
 
   
-## 2. View segment users 
+## 2. View segment users
+
 To view users of a segment, on the User 360 page, click on the segment. 
 
 If the list is long, use the **Search** box to fetch for a specific segment.
@@ -54,7 +55,7 @@ You will see the list of users on the right.
 
 ***
 
-## 3. Edit segment
+## 3. Edit user segment
 
 To modify a segment's name or condition:
 
@@ -94,9 +95,23 @@ Alternatively, you can also download the user details using **User logs** > **Do
 
 ***
  
-## 5. Archive segment
+## 5. Archive user segment
 
 Archiving a segment will not delete the user data associated with that segment. It  makes that particular segment unusable for new campaigns. Old campaigns will continue running as it is.
+
+
+### 5.1 Auto-deleting of unused segments
+
+User segments that are not used in the last 60 days will be deleted automatically. A user segment is considered used if there is an activity (listed below).
+
+1. Viewed the segment
+2. Used in a campaign
+3. Updated the segment
+
+When there is an activity, the `updatedAt` column changes. A cron job runs every day to check if the column is not updated for any of the segments in the last 60 days and deletes it automatically.
+
+
+### 5.2 Manually delete user segment
 
 * To archive a segment, select the segment from the left panel, and click on **Actions** > **Archive segment**.
 

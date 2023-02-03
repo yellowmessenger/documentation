@@ -1,9 +1,9 @@
 ---
-sidebar_label: Segments overview
-title: Segments overview
+sidebar_label: User segments overview
+title: User segments overview
 ---
 
-A segment is grouping of users based on some common characteristics. You need to define a condition on what basis you want to group your users. Segments are dynamic. Hence, according to the condition set, customers will be added to the segment automatically whenever user updates to match those conditions.
+A user segment is grouping of users based on some common characteristics. You need to define a condition on what basis you want to group your users. Segments are dynamic. Hence, according to the condition set, customers will be added to the segment automatically whenever user updates to match those conditions.
 
 
 For example, users interested in a particular use case, users who have visited your pricing page, users in a particular department, users whose renewal data is nearing, etc.
