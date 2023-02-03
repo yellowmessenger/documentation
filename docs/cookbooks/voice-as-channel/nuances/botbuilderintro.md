@@ -1,6 +1,6 @@
 ---
-title: Voice overview
-sidebar_label : Overview
+title: Introduction to voice bot builder (voice nodes and voice options (global and node level)
+sidebar_label : Global & node level options 
 ---
 
 :::info
@@ -26,6 +26,3 @@ There are two methods to configure voice options:
 |    Action                 |   [Set variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables), [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function), [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database), [API](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api), [Execute Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow)     |
 
 
-In this section you will learn:
-1. How a voice bot flow works and how to get started. 
-2. Few use-cases on how to make use of the voice functionalities, like delays, recording and forwarding options, DTMF and configuring STT and TTS engines. 

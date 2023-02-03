@@ -110,37 +110,52 @@ module.exports = {
           ],
         }, */
         
-
+// Voice docs < channel starts here 
     {
       type: "category",
       label: "Voice",
-      link: {type: 'doc', id: 'cookbooks/voice-as-channel/overview'},
-
+      link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
       collapsed: true,
       items: [
-       // "cookbooks/voice-as-channel/overview",
-        "cookbooks/voice-as-channel/gettingstarted",
-        "cookbooks/voice-as-channel/understandingdelays",
 
-        {
-          type: "category",
-          label: "Use-cases",
-          collapsed: true,
-          items: [
-            "cookbooks/voice-as-channel/callforwarding",
-            "cookbooks/voice-as-channel/callrecording",
-            "cookbooks/voice-as-channel/waitmusic",
-            "cookbooks/voice-as-channel/dtmf",
-            "cookbooks/voice-as-channel/stt",
-            "cookbooks/voice-as-channel/tts",
-            "cookbooks/voice-as-channel/boostphrases",
-            "cookbooks/voice-as-channel/localisation",
-            "cookbooks/voice-as-channel/intentdetection",
-            "cookbooks/voice-as-channel/excuteandswitchflow",
-          ],
-        },
+// 1. Nuances 
+      {
+        type: "category",
+        label: "Voice bot nuances & guides",
+        collapsed: true,
+        items: [
+              "cookbooks/voice-as-channel/nuances/voicearchitecture",
+              "cookbooks/voice-as-channel/nuances/botbuilderintro",
+             /* "cookbooks/voice-as-channel/nuances/configurebotresponse",
+              "cookbooks/voice-as-channel/nuances/captureuserresponse",
+              "cookbooks/voice-as-channel/nuances/understanduserresponse",
+              "cookbooks/voice-as-channel/nuances/conversationalflows",
+              "cookbooks/voice-as-channel/nuances/conversationaldelays",
+              "cookbooks/voice-as-channel/nuances/firstvoicebot", */
+        ],
+      },
+
+// 2. Voice Capabilities (usecases)
+    /*  {
+        type: "category",
+        label: "Voice capabilities(usecases)",
+        collapsed: true,
+        items: [
+          "cookbooks/voice-as-channel/usecases/tts",
+          "cookbooks/voice-as-channel/usecases/stt",
+          "cookbooks/voice-as-channel/usecases/languagedetection",
+          "cookbooks/voice-as-channel/usecases/interrupthandling",
+          "cookbooks/voice-as-channel/usecases/contexttransfertoagents",
+          "cookbooks/voice-as-channel/usecases/transfercalltoagents",
+                ],
+      }, */
+
+// 3. FAQs 
+    //"cookbooks/voice-as-channel/voicefaqs",
+
       ],
-    },   
+    }, 
+//end of voice docs 
 
 
     {
@@ -358,7 +373,7 @@ module.exports = {
     {
       type: "category",
       label: "Inbox",
-      link: {type: 'doc', id: 'platform_concepts/inbox/inbox'},
+      link: {type: 'doc', id: 'platform_concepts/inbox'},
       collapsed: true,
       items: [
 
