@@ -3,7 +3,9 @@ title: Email ticketing overview
 sidebar_label : Overview
 ---
 
-All the queries raised by the customer through the email channel are complied with and listed in a unified user interface (Omni channel Customer support suite). Agents can select an email that needs attention and reply to it on time. 
+All the queries raised by the customer through the email channel are complied with and listed in a unified user interface (Omni channel Customer support suite). 
+Admins can view all the tickets that are sent to the respective support email.
+As an Agent, you will be assigned with the tickets (based on the [group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) or [auto-assign](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic) settings). You can select an email that needs attention and reply to it on time. 
 
 In this article, you will understand the two different methods in which the email tickets(ticket page) can be viewed - **List view** and **Detailed view**. 
 
