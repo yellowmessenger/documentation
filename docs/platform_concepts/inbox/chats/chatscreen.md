@@ -14,7 +14,7 @@ In this article, you will learn:
 
 ## <a name="cs"></a>  1. Chat screen
 
-You can chat with the bot user on this screen. This screen has the following functionalities to enable easy conversations:
+You can chat with the customer on this screen. This screen has the following functionalities to enable easy conversations:
 
 1. **Write a reply**
 
@@ -81,9 +81,9 @@ The following user details are available on this screen to provide agents with m
 | Type | Fields | Description|
 | -------- | -------- | -------- |
 | Basic     | User location, chatbot status, and chat status     | |
-|Chat details|Ticket ID| Assigned when the ticket is created|
-||Description| Added when the ticket is raised|
-||Priority|Added when the ticket is raised|
+|Chat details|Ticket ID| Assigned when the live chat request is created|
+||Description| Added when the live chat is raised|
+||Priority|Added when the live chat is raised (initially through Raise ticket action node)|
 ||Language|Conversation language is displayed here. Can be changed as per the auto-translate language |
 ||Tags| Chats can be tagged by the agent. Select the [available tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) from the dropdown|
 ||Note|Agents can add a note regarding the conversation|
@@ -91,8 +91,8 @@ The following user details are available on this screen to provide agents with m
 ||Customer email|Email can be updated by the agent after confirming it with the customer|
 ||Customer phone|Number can be updated by the agent after confirming it with the customer|
 |Custom fields||Inbox provides 11 custom fields to fetch more insights from the customer. Configure the required custom fields. Learn [more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields).|
-|Timeline|Agent details and time that the ticket was assigned, closed, and number of agents that it has been transferred to.|![](https://i.imgur.com/muyrQEv.png)|
-|Collaboration details| More than one agent can help to resolve a ticket (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.|![](https://i.imgur.com/ybV3WJX.png)|
+|Timeline|Agent details and time that the live chat was assigned, closed, and number of agents that it has been transferred to.|![](https://i.imgur.com/muyrQEv.png)|
+|Collaboration details| More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.|![](https://i.imgur.com/ybV3WJX.png)|
 |Device details|Details about the user device that the bot tracks.|![](https://i.imgur.com/VDayNjJ.png)|
 
 ## <a name="trt"></a> 3. Resolve or transfer tickets
@@ -119,7 +119,7 @@ Custom fields can be marked for required to transfer /close tickets while creati
 
 
 
-- You can **Transfer** a ticket to a particular configured [Group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) if the query is of a particular topic and anyone from that group will be able to answer it. The ticket can be transferred to an [Agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) if you know that this query can be resolved only by the selected agent. The ticket is transferred to an agent even if they are offline.   
+- You can **Transfer** a live chat to a particular configured [Group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) if the query is of a particular topic and anyone from that group will be able to answer it. The live chat can be transferred to an [Agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) if you know that this query can be resolved only by the selected agent. The live chat is transferred to an agent even if they are offline.   
 
 <img src="https://i.imgur.com/pI10HoR.png" alt="drawing" width="70%"/>   
 

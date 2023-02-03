@@ -45,16 +45,3 @@ If you have configured a **Group** by adding an email ID - abc@company.com, to h
 If you have configured a **Group** without adding an email ID, to handle live chats, the chat requests will be assigned to the agents. (Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo) to understand the flow).
 :::
 
-<!--
-### <a name="2"></a> 1.1  Use groups in the Raise ticket node
-
-1. After the agent groups are added in the inbox groups settings, they will be visible on the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket)- Advance options.  
-	- For example, the Escalation group is selected on the Raise ticket node, and all the tickets that are triggered through this particular flow will be assigned to the Escalation group. 
-
-![](https://i.imgur.com/Ba6S98Z.png)
-
-2. The tickets created in this flow will be automatically assigned to the live inbox agents of the selected groups(Department).  
-
--->
-
-

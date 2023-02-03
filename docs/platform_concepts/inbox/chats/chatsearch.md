@@ -31,7 +31,7 @@ For example, you can refine the list of chats in the current tab - my chats, res
 
 ## <a name="search"></a> 1. Search chats
 
-There is a search and several filtering options to help you find messages, ticket info, description, and other info shared in chats.
+There is a search and several filtering options to help you find messages, live chat request info, description, and other info shared in chats.
 
 <img src="https://i.imgur.com/M7G5NVg.png" alt="drawing" width="80%"/>  
 
@@ -197,10 +197,10 @@ When a message search result is clicked, instead of loading -100 & +100 messages
 :::info
 
 **Assumption**:
-Ideally, a ticket would not have 1000s of messages in it. 
+Ideally, a live chat would not have 1000s of messages in it. 
 
 **Look out for**:
-Count of instances where the ticket has a large no. of messages
+Count of instances where the live chat has a large no. of messages
 Increased loading time to product search results
 :::
 

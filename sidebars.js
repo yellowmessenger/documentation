@@ -373,7 +373,7 @@ module.exports = {
     {
       type: "category",
       label: "Inbox",
-      link: {type: 'doc', id: 'platform_concepts/inbox'},
+      link: {type: 'doc', id: 'platform_concepts/inbox/inbox'},
       collapsed: true,
       items: [
 
@@ -391,9 +391,8 @@ module.exports = {
               "platform_concepts/inbox/inbox_setup/supportagents",
               "platform_concepts/inbox/inbox_setup/roleaccess",
               "platform_concepts/inbox/inbox_setup/agentstatuses",
-
               "platform_concepts/inbox/inbox_setup/inboxdemo",
-
+              "platform_concepts/inbox/inbox_setup/assignmentlogic",
               "platform_concepts/inbox/inbox_setup/debugchecklist",
             //
                  ],
