@@ -42,7 +42,7 @@ export const topics = [
     description:
       "An AI powered, automation first unified inbox for agents to provide enhanced customer support across chat, email, and voice.",
     icon: "ri-inbox-line",
-    url: "/docs/platform_concepts/engagement/outbound/engage-overview",
+    url: "/docs/platform_concepts/inbox",
   },
   {
     title: "WhatsApp Bot",
