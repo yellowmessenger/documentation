@@ -149,7 +149,7 @@ Follow the steps to configure multi-workspace:
 
 - Using the above event, you can trigger a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow). 
 - In the triggered flow, you can access the accessToken with `{{data.event.data.accessToken}}` and teamId with `{{data.event.data.teamId}}`.
-- Store the above 2 mappings in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/database#1-create-table) using the [Database Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#database).
+- Store the above 2 mappings in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/database#1-create-table) using the [Database Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#database).
 
 
 4. You can install a multi-workspace App through OAuth flow, using the following link https://app.yellow.ai/integrations/slack/install/ botId
@@ -184,7 +184,7 @@ The Slack Web API is an interface for querying information from and enacting cha
 
 **For multi-workspace configuration**
 - As a pre-requisite, you should complete Step3 mentioned in Multi-workspace configuration.
-- For every user who interacts with the bot, you can fetch their teamId using [sender](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/#22-system-variables). Sender would include `[teamId]_[userId]`.
+- For every user who interacts with the bot, you can fetch their teamId using [sender](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#22-system-variables). Sender would include `[teamId]_[userId]`.
 - Using the `teamId`, you can fetch the relevant `accessToken` from the Bot Table.
 
 ### 5.1 Slash Commands

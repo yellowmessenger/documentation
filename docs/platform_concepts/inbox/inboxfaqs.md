@@ -19,7 +19,7 @@ Each bot has only one inbox, the bot can have multiple Whatsapp numbers activate
 </summary>
 <div>
     
-You can set the default language of the agent to English in <b>Inbox</b> > <b>Settings</b> > <b>Team</b> > <b>Agents</b>. Open the agent profile and select the <b>Default Language</b>. Click <a href= "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents/#11-editmodify-existing-agent-properties" >here</a> to learn more. 
+You can set the default language of the agent to English in <b>Inbox</b> > <b>Settings</b> > <b>Team</b> > <b>Agents</b>. Open the agent profile and select the <b>Default Language</b>. Click <a href= "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#11-editmodify-existing-agent-properties" >here</a> to learn more. 
     
 </div>
 </details>

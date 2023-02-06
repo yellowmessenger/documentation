@@ -14,14 +14,14 @@ All options in the Studio navigation are reordered according to the user flow. T
 #### 1.2 Autocomplete suggestions for bot users
 
 With autocomplete suggestions feature, the bot can predict the rest of the word when users types in the bot.    
-[**Learn more about prompt level settings here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#31-auto-complete).    
-[**Learn more about global level settings here**](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#22-conversation).
+[**Learn more about prompt level settings here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#31-auto-complete).    
+[**Learn more about global level settings here**](https://docs.yellow.ai/docs/platform_concepts/studio/tools#22-conversation).
 
 
 #### 1.3 Zero Shot Model to replace manual training of intents
 
 Now our system can automatically identify intents based on the intent naming. It works on Zero-Shot Learning where you do not need to manually train each utterance.  Naming intents correctly is the key to intent training.     
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents/#4-best-practices).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#4-best-practices).
 
 #### 1.4 Make localization more effective in Nodes
 
@@ -36,12 +36,12 @@ You can now monitor all the conversations in real time. The auto-tagging of prob
 #### 1.6 Add API to Sync data to the database
 
 The **Sync database** node is available in Workflow - actions. You can now insert, update or import databases to external sources using APIs. You can update database tables in a scheduled manner using APIs.     
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#41-sync-database).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database).
 
 #### 1.7 Quick Reply buttons in WhatsApp
 
 Quick reply nodes can also have buttons. You can switch between buttons and numbered lists according to your preference. It supports up to three buttons and each button can have up to 20 characters. If you try to add more than 3 buttons, it defaults to the numbered list.     
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#quick-reply-node-for-whatsapp).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#quick-reply-node-for-whatsapp).
 
 #### 1.8 New languages support in Document Cognition
 

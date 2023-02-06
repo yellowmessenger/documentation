@@ -41,7 +41,7 @@ These flows are explained in detail in the further sections.
 
 
 :::note
-A flow triggers when a particular intent/entity/event/URL is identified or when the [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#15-execute-flow) node is used in other flows. See [start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-1-configure-start-trigger) for more details.
+A flow triggers when a particular intent/entity/event/URL is identified or when the [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node is used in other flows. See [start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-1-configure-start-trigger) for more details.
 :::
 
 ---

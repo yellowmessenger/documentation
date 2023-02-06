@@ -18,7 +18,7 @@ In this article, you will learn about the different types of prompt nodes:
 
 The nodes that have an option to ask the users a question or display a text are enabled with **Randomization** feature. On any such node, click **Add multiple texts for randomizing**. Enter variations of text that you want your users to see. This feature will display different messages to the user in a random order (instead of the same message every time), making the conversation more humanly. 
   
-> ![](https://i.imgur.com/KucDPVJ.png)
+   ![](https://i.imgur.com/KucDPVJ.png)
 
 ---
 
@@ -688,7 +688,7 @@ In the below example, the user wont be asked for the name, phone number and emai
 
 ![](https://i.imgur.com/jIgnQRZ.png)
 
-Configure Auto-skip at a global level (from tools section), click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools/#224-autoskipping-settings). 
+Configure Auto-skip at a global level (from tools section), click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#224-autoskipping-settings). 
 
 ---
 

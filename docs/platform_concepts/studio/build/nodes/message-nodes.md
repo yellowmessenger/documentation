@@ -31,7 +31,7 @@ You can set a delay in displaying each of these nodes.
 ![](https://i.imgur.com/t7Z5eb7.jpg)
 
 :::info
- Alternative to this is to use a [delay node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#16-delay).
+ Alternative to this is to use a [delay node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#16-delay).
 :::
 ---
 

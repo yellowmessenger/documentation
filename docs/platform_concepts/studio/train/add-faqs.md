@@ -150,12 +150,12 @@ To add FAQs for multi-lingual bots, follow the given steps:
 
 2. **Add FAQs in bulk:**
 
-   - When you download the CSV template file (as mentioned in the [previous section](#step2)), language columns will be available. 
+   - When you download the CSV template file (as mentioned in the [previous section](#step2), language columns will be available. 
 
 
      ![](https://i.imgur.com/hteoHYF.png)
 
-   - Add responses in the required columns (column names are suffixed with the [ISO code of each language](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported/#1-languages-supported)). 
+   - Add responses in the required columns (column names are suffixed with the [ISO code of each language](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported#1-languages-supported). 
 
      **Example**
 
