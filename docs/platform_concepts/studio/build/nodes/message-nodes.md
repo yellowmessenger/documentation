@@ -259,7 +259,7 @@ Click **Fetch from** and add a dynamic value - if required:
 
 
 :::note
- Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
+ Click the tools icon and configure the node. For more details, see [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes. 
 :::
 
 ---

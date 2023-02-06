@@ -57,7 +57,7 @@ This flow is executed when the bot user selects a product to add to the cart. Th
 </center>
 
 1. **Triggers flow** when the user selects *Add to cart* on the **Browse products** flow. 
-2. **Shows quantity**: Each product is associated with the product ID. Based on the selected product [Condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition), it shows an option to select the quantity (**Quick replies** for web and **WhatsApp list** for WhatsApp).
+2. **Shows quantity**: Each product is associated with the product ID. Based on the selected product [Condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes), it shows an option to select the quantity (**Quick replies** for web and **WhatsApp list** for WhatsApp).
 
 ![](https://i.imgur.com/uBkNFAg.png)
  

@@ -716,7 +716,7 @@ For example, instead of setting a new user ID, you can use the phone number as a
 
 
 :::note
- Click the tools icon and configure the node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes/#3-configure-display) to learn more. 
+ Click the tools icon and configure the node. For more details, see [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes). 
 :::
 
 --- 
