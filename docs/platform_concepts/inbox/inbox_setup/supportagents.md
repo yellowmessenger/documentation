@@ -10,7 +10,7 @@ In this article, you will learn how to accept/add inbox roles.
 - **Admin** (of the bot) can give access to **Inbox Admin/Agent** to any user (or themselves).     
 - Users with **Inbox Admin** access can add **Inbox Agents** (these agents can become **Suprevisors** of a particular group).
 - Any user provided with **Inbox Agents** invite can join as a inbox agent. 
-- Users with only any of the **Inbox Admin/Agent** roles can access only **Inbox module** on the yellow.ai platform.
+- Users with only **Inbox Admin/Agent** roles can access only **Inbox module** on the yellow.ai platform.
 :::
 
 
@@ -52,7 +52,12 @@ To add an inbox role, follow the below steps:
     ![](https://i.imgur.com/n5E7zhY.png)
 
 :::note
-Each **Role** will have different permissions to use Inbox features, you can select a suitable role based on the access you want/want to provide. click [here](/inbox/inbox_setup/roleaccess.md) to know more. 
+
+- Email tickets are assigned only to an **Inbox agent** (although **Inbox admin** will have the permission to see and contribute to  the [operations](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/roleaccess) in Inbox).
+    - For an inbox admin, all the chats/tickets will be accessible.  
+    - For an inbox agent, only the chats/tickets assigned to them will be accessible.
+
+- Each **Role** will have different permissions to use Inbox features, you can select a suitable role based on the access you want/want to provide. click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/roleaccess) to know more. 
 :::
  
 
@@ -61,9 +66,10 @@ Each **Role** will have different permissions to use Inbox features, you can sel
 4. **Supervisor** role can be added for agents.
     - You can make your agents supervisors to a group where they can monitor & supervise the group's incoming chats as well as the agents.
     - When you share **Inbox agent** access, you will get an additional option to make them the supervisor for a respective group.
-    - From the dropdown, select the **Group** that you want them to be a supervisor.      
-    Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) to configure a Group.
-    
+    - From the dropdown, select the **Group** that you want them to be a supervisor. 
+    > Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) to configure a Group.   
+
+       
     <img src="https://i.imgur.com/RNsGTzx.png" alt="drawing" width="50%"/>    
 
 

@@ -35,7 +35,7 @@ To get started with *Live agent transfer*, you must configure **Studio** with [r
 > On your web browser, open 2 different tabs (Studio module and Inbox module)
 
 
-### Tab 1: Import/create a flow and raise a support request 
+### Tab 1: Import/create a flow and request for support 
 
 
 
@@ -78,7 +78,7 @@ To create a support flow from scratch on [Studio](https://docs.yellow.ai/docs/pl
 
 ---------
 
-### Tab 2: Ticket creation and assignment on the Inbox chat screen 
+### Tab 2: Live chat request and assignment on the Inbox chat screen 
 
 :::note
 - To test the live agent transfer, you must have **[Inbox agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) access**.

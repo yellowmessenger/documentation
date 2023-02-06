@@ -27,7 +27,7 @@ If a person initiates a chat with you, you may continue that conversation via Wh
 4. **Post the expiry of 24hr window** from the last end-user message, the **business will not be able to respond to the end-user without using approved message templates.**
 
 :::info    
-If you are not able to respond to the end user’s message within 24 hrs (if the ticket is taking too long to resolve, the ticket is created outside working hours or during holidays, etc.) you will not be able to respond to the end-user once the window is closed. 
+If you are not able to respond to the end user’s message within 24 hrs (if the chat ticket is taking too long to resolve, the chat ticket is created outside working hours or during holidays, etc.) you will not be able to respond to the end-user once the window is closed. 
 In that case, you can send out the pre-approved message templates.
 :::
 
@@ -54,7 +54,7 @@ To reinitiate the expired WhatsApp chats, follow the given steps:
 
 <img src="https://i.imgur.com/GYmYHyW.png" alt="drawing" width="60%"/>    
 
-5. Once the end-user replies back to the template message, the 24 hr window will be initiated (after which you can interact and close the ticket).    
+5. Once the end-user replies back to the template message, the 24 hr window will be initiated (after which you can interact and close the chat ticket).    
 
 <img src="https://i.imgur.com/qyhUsRy.png" alt="drawing" width="60%"/>
 
