@@ -373,7 +373,7 @@ module.exports = {
     {
       type: "category",
       label: "Inbox",
-      link: {type: 'doc', id: 'platform_concepts/inbox'},
+      link: {type: 'doc', id: 'platform_concepts/inbox/inbox'},
       collapsed: true,
       items: [
 
@@ -939,6 +939,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/speech-to-text",
             "platform_concepts/channelConfiguration/text-to-speech",
             "platform_concepts/channelConfiguration/support-banner-migration",
+            "platform_concepts/channelConfiguration/pwa",
             "platform_concepts/channelConfiguration/character-limits-sdk",
             "platform_concepts/channelConfiguration/chat-widget-faq", 
             // "platform_concepts/channelConfiguration/web",

@@ -17,18 +17,18 @@ Follow these steps to add a Chrome extension and to preview your customised chat
 
 3. Open the extension in your Chrome browser.
 
-![](https://i.imgur.com/aI0mRhb.png)
+   ![](https://i.imgur.com/aI0mRhb.png)
 
 4. In the first input box, enter the entire website URL. The chat widget will appear on the website based on the URL that you have entered here.
 
-![](https://i.imgur.com/xHROMyD.png)
+   ![](https://i.imgur.com/xHROMyD.png)
 
 5. In the second input field, paste the chat widget script you copied in step 2 and click **Launch Widget**.
 
-![](https://i.imgur.com/7C7ubWH.png)
+   ![](https://i.imgur.com/7C7ubWH.png)
 
 6. Open the website URL that you have entered in the first input box to view your chatbot.
 
-![](https://i.imgur.com/CUUbTev.png)
+   ![](https://i.imgur.com/CUUbTev.png)
 
 
