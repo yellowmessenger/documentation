@@ -14,7 +14,7 @@ In the yellow cloud platform, voice can be configured with quick settings and re
 There are two methods to configure voice options:
 
 1. [Global options](https://docs.yellow.ai/docs/platform_concepts/studio/tools#25-voice) - Default options for all nodes/flows.
-2. [Node options](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes#32-configure-node-for-a-voice-bot) - Overrides global options for specific nodes wherever it is defined.
+2. [Node options](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes#32-configure-node-for-a-voice-bot) - Overrides global options for specific nodes wherever it is defined.
 
 **Nodes supported for voice bots**
 

@@ -263,7 +263,7 @@ Slack is a workplace communication tool - a single place for messaging, tools an
 | *Enhancement*
 
 Earlier, if a client had hosted their channels on a third-party vendor, they could not extract the channel on our platform using the same third-party API. 
-Now using sync API, third-party API can be used as a channel, hence it gets reflected on the [Channel filter node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes/#2-channel-filter). 
+Now using sync API, third-party API can be used as a channel, hence it gets reflected on the [Channel filter node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition). 
 
 **![](https://lh6.googleusercontent.com/bd6nV55XUH9EVENY8s5sCg_YTvhi3dwi2BvHlMcqes8fFU9yocJj5ZLqcryws1imW3EWGOyzKR5P-gCbEe1UXUJJPDi2eeNiq1FTU655OQMcnxlM3VmuaOBei93HdaxWtHkHyyLpfH69FfrXY1Za2i9P12d0Rig2d1OQf5ORF0fchVd_ld5xv7-cqA)**
 

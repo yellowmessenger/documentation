@@ -259,7 +259,7 @@ For faster access and visualization, you can add this saved report to your dashb
 
 ![](https://i.imgur.com/mAutxVu.png)
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#12-create-a-dashboard-from-data-explorer) for more details. 
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#--12-create-a-dashboard-from-data-explorer) for more details. 
 
 ### <a name="11"></a> 5.3 Delete a saved report
 

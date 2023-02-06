@@ -525,7 +525,7 @@ Voice bot global options/settings are classified depending upon different uses a
 
 Most of the options can be configured globally.
 
-If they are configured at the [node level](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes#32-voice), node level customisation takes priority over the global level settings.
+If they are configured at the [node level](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes#32-configure-node-for-a-voice-bot), node level customisation takes priority over the global level settings.
 
 :::
 
