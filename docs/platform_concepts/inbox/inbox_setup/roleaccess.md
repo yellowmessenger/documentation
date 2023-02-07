@@ -1,6 +1,6 @@
 ---
-title: Inbox access available to Inbox roles
-sidebar_label : Agent/Supervisor/Admin access 
+title: Inbox access available to Inbox roles(Agent/Supervisor/Admin)
+sidebar_label : Inbox role access explained
 ---
 
  

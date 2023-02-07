@@ -43,6 +43,8 @@ When a live chat is raised by the bot user (requesting to connect with an agent)
 
 :::note
 
+- To learn how to build a flow that will raise a ticket to a live agent, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#4-try-live-agent-module). 
+- To learn more about the raise ticket node, click [here](hhttps://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket). 
 :::
 
 To understand the chats section, it is important to understand the types of chats. Inbox classifies chats into 7 different types. They are explained below: 

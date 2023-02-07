@@ -62,7 +62,7 @@ A flow is built using a series of smaller nodes. Each flow must have a minimum o
 
 ## <a name="config"></a> 3. Configure nodes on different channels
 
-This option is available for all the nodes that display some information on the bot. For example message and prompt nodes like name node, text node, video node etc. It is used to configure how the information must be produced on different platforms like Website, Alexa, Google Assistant, Voice etc.
+This option is available for all the nodes that display some information on the bot. For example message and prompt nodes like name node, text node, video node etc. It is used to configure how the information must be produced on different platforms like **Website, Alexa, Google Assistant, Voice** and other configured channels.
 
 * Click the tools(channel option) symbol available below the node name.  
 
@@ -97,10 +97,6 @@ Node-level voice options can be configured for each node specifically. The globa
 -   **Global level**: You can select an STT/TTS engine globally so that you don’t have to configure it for each node.
 -   **Node level**: You can configure different “recording max duration” for different nodes i.e. 10 seconds for address and 5 seconds for name node.
 
-:::info
-Voice features (and supporting documentation) are constantly getting improved and updated, there may be some issues/feature mis-match. 
-Please get in touch with the team incase of any queries.
-:::
 
 Voice bot node options/settings are classified depending upon different uses as below:  
 
@@ -111,10 +107,7 @@ Voice bot node options/settings are classified depending upon different uses as 
 5. **DTMF**: Dual-tone multi-frequency (DTMF) is used for touch tones, it is the sound made when pressing a number key. For cases, where we expect background noise and difficulty in correctly identifying the user utterance for numeric inputs, we can use this feature to record user responses.
 6.  **Conversation**: Yellow cloud provides additional conversational options to further customize and elevate the experience on the IVR channel.
 
-
-
-
-![](https://i.imgur.com/wjhRgA8.png)
+![](https://i.imgur.com/CEPvxI9.png)
 
 :::note
 Most of these options can be configured globally from  [tools and settings](https://docs.yellow.ai/docs/platform_concepts/studio/tools#25-voice).
@@ -123,7 +116,7 @@ If they are configured at the node level, node level customisation takes priorit
 
 
 
-**Telephony related options** 
+#### Telephony related options in nodes
 
 
 | Fields                   | Description                                                                                                                                                                  |
@@ -141,11 +134,7 @@ If they are configured at the node level, node level customisation takes priorit
 ```[{“key”:“User-to-User”,  “value”:“name=david&product=heater&query=not turning off&priority=high&number=12345”}]```
 
 
-
-
-
-
-**Recording related options**
+#### Recording related options in nodes
 
 
 
@@ -160,7 +149,7 @@ If they are configured at the node level, node level customisation takes priorit
 
 
 
-**STT related options**
+#### STT related options in nodes
 
 
 
@@ -181,7 +170,7 @@ If they are configured at the node level, node level customisation takes priorit
 
 
 
-**TTS related options**
+#### TTS related options in nodes 
 
 
 
@@ -197,7 +186,7 @@ If they are configured at the node level, node level customisation takes priorit
 
 
 
-**DTMF related options**
+#### DTMF related options in nodes 
 
 
 | Fields                        | Description |
@@ -210,14 +199,14 @@ If they are configured at the node level, node level customisation takes priorit
 :::info
 
 > Either DTMF digital length or DTMF finish character can be configured.
-DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which the bot understands when to stop capturing:
-1) Digit Length is useful when you are capturing fixed-length data. Ex: Phone number.
-2) Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model id, application number. A user can define either "*" or "#" to inform that all Digits are added.
-3) DTMF timeout is a default inactivity timeout (not open for configuration) and it is set to 10 seconds by default (it overrides **digit length** and **finish character**).  For example, if the length is 11 and the user has only entered 6 characters, and there are 10 seconds of inactivity, only those will be captured. 
+DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which the bot understands when to stop capturing: <br/>
+1. Digit Length is useful when you are capturing fixed-length data. Ex: Phone number. <br/>
+2. Finish character is useful when you don't know the length and that could vary depending upon different states/products. Ex: Model ID, application number. A user can define either "*" or "#" to inform that all Digits are added. <br/>
+3. DTMF timeout is a default inactivity timeout (not open for configuration) and it is set to 10 seconds by default (it overrides **digit length** and **finish character**).  For example, if the length is 11 and the user has only entered 6 characters, and there are 10 seconds of inactivity, only those will be captured. 
 
 :::
 
-**Conversation related options**
+#### Conversation related options in nodes 
 
 
 
@@ -230,13 +219,11 @@ DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which th
 
 
 
+> Click [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/voiceoverview) for voice related user guides. 
+
+--------
 
 
----
-
-:::note
-The rest of the options will be displayed for each of the configured [channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview). Viber, Telegram, Whatsapp, Google assistant, Alexa, etc.
-:::
 
 ### 3.3 Configure node for Google assistant 
 
@@ -245,6 +232,11 @@ The rest of the options will be displayed for each of the configured [channel](h
 ### 3.4 Configure node for Alexa 
 
 * **End Session** - Bot session on Alexa comes to an end when this node is reached.
+
+
+:::note
+The options will be displayed for each of the configured [channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview). Viber, Telegram, Whatsapp, Google assistant, Alexa, etc.
+:::
 
 -----
 
