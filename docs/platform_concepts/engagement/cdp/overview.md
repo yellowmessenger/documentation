@@ -39,7 +39,7 @@ The following are the key actions that you can perform on user 360.
 ### 1.1 Add users
 
 The platform provides different ways to add your users. You can add each user manually or leverage advanced features  to quickly create your user base and maintain it real-time.  
-* Add bulk users [through CSV import](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api) 
+* Add bulk users [through CSV import](/docs/platform_concepts/engagement/cdp/user_data/import_users) 
 * Use our [REST APIs](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api) to add or modify users real-time.
 * Use [Bot Builder to create and update users](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder)
 
@@ -76,7 +76,7 @@ You can see events in User 360, and filter them based on a specific criteria lik
 
 ## 4. Export your user data
 
- If you want to update your user base or use it outside Yellow.ai,  you to export user data easily and use it wherever required. To know more, see [Export users data](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#export-user-data).
+ If you want to update your user base or use it outside Yellow.ai,  you to export user data easily and use it wherever required. To know more, see [Export users data](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data).
 
 
 

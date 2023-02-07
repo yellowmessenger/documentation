@@ -27,7 +27,7 @@ You can reset your password in this section if required. Also, you can change th
 
 Enter your current password under "Old password" and your new password under "New password," then enter it again under "Re-enter new password" to confirm the password. Click **Update**.
 
-<img src="https://i.imgur.com/iqYpP66.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/iqYpP66.png" alt="drawing" width="100%"/>
 
 
 :::note
@@ -40,7 +40,7 @@ Your password has now been updated. You will be redirected to the login page, a
 
 By deafult platform language is English. If you want to change the language, then you can click on **Change language**. The user can change the current language of the user interface to one of Yellow.ai's supported languages. Select the language from the **Current language** drop-down in the **Account language** pop-up and click **Save**.
 
-<img src="https://i.imgur.com/4a4PUnZ.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/4a4PUnZ.png" alt="drawing" width="100%"/>
 
 
 ### 2.2 View your account activity 
@@ -51,7 +51,7 @@ You can see details such as the operating system from which you logged in and th
 
 On the User account drop-down, click **Profile > Sessions**.
 
-<img src="https://i.imgur.com/FTbRfJT.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/FTbRfJT.png" alt="drawing" width="100%"/>
 
 ***
 
@@ -63,20 +63,20 @@ In **My Subscriptions**, you can view the bots that you can access under the re
 If you want to add a new subscription, then you have to contact the account manager.
 :::
 
-<img src="https://i.imgur.com/M50BpIU.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/M50BpIU.png" alt="drawing" width="100%"/>
 
-<img src="https://i.imgur.com/X74Va7B.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/X74Va7B.png" alt="drawing" width="100%"/>
 
 You can view the details of the subscription plan that you have upgraded to, including the organisation name, billing address, and contact details. Also, you can invite users to access the bots under a particular subscription plan. 
 
-<img src="https://i.imgur.com/FAQnNgG.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
 
 ***
 ## 3 Accept bot invite
 
 The other team members will send you a bot invite to your email address, where you can accept or reject the bot access. You can accept the bot invite so that you can contribute to the organization by building an effective bot quickly and easily. Click **Bot Invites** from the user account drop-down.
 
-<img src="https://i.imgur.com/7NNIq5a.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/7NNIq5a.png" alt="drawing" width="100%"/>
 
 ### 3.1 View bot invites
 
@@ -98,15 +98,15 @@ You cannot see your bots in this section.
 
 In this section, you can view the pending approvals of the published bots that are sent by other members of the team. Click **Bot publish approvals** from the User account drop-down. 
 
-<img src="https://i.imgur.com/hstIkXS.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/hstIkXS.png" alt="drawing" width="100%"/>
 
 
 When the other members of the team want to publish their bot in the different environments, an approval request is sent to your email and also in the Bot Approval section. Here, you can accept or decline.
 
-<img src="https://i.imgur.com/Wr5NGdG.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/Wr5NGdG.png" alt="drawing" width="100%"/>
 
 
-<img src="https://i.imgur.com/wuZvyob.png)" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/wuZvyob.png" alt="drawing" width="60%"/>
 
 ***
 
@@ -117,10 +117,10 @@ Let us consider that you have used the pre-built bot template from the Marketpla
 Note that, other team members who are not part of this organization cannot see these templates that are downloaded.
 You can also delete this template based on your needs. Click **Exports** from the **User account** drop-down.
 
-<img src="https://i.imgur.com/B3U98x6.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
 <br/>
 
-<img src="https://i.imgur.com/7reCz7e.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/7reCz7e.png" alt="drawing" width="100%"/>
 
 
 ***
@@ -129,7 +129,7 @@ You can also delete this template based on your needs. Click **Exports** from t
 
 The platform automatically logs you out after a few minutes of inactivity. To resume, you will have to sign in. If you want to log out of the platform, you can click **Logout** under User account.
 
-<img src="https://i.imgur.com/8M6qNvZ.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/8M6qNvZ.png" alt="drawing" width="100%"/>
 
 :::note
 Inbox agents are not logged out of the platform after a few minutes of inactivity because they are waiting for tickets that are posted by other users.

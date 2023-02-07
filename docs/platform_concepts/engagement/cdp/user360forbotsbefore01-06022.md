@@ -88,7 +88,7 @@ Once done, click on **verify**. On this screen you can review the old and new pr
 
 ### View migration status activity
 
-To view the status of your migration activity, click [User logs](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data#view-user-activity-logs). Here you can refer to the activity *Migrate Data*. 
+To view the status of your migration activity, click [User logs](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data). Here you can refer to the activity *Migrate Data*. 
    * If the status is *In Progress*, the migration is still going on. 
    * The status will change to *Completed* once the migration is done.
 

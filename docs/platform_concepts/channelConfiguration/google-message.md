@@ -23,7 +23,7 @@ With GBM, you can launch your bots with the Non-local, and Local entry point gro
 
 The Local entry point group encompasses entry points that rely on locations.
 
-Local entry points can be used for organisations which have a physical location. This entry point enables conversations with locations associated with your brand from the Maps app (Supports Android and IOS) and when a user finds the location in Search (Supports Android and IOS (with the Google Maps app installed)).
+Local entry points can be used for organisations which have a physical location. This entry point enables conversations with locations associated with your brand from the Maps app (Supports Android and IOS) and when a user finds the location in Search (Supports Android and IOS with the Google Maps app installed).
 
 |  |  |
 | -- | -- |

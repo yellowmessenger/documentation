@@ -48,7 +48,7 @@ The icons available on the side are shortcuts to access the following:
 | Icon                                                                                                                                         | Functionality                                                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 | Node navigator                                                                                                                               | Used to navigate to a specific node. You can also use it to filter and segregate nodes in your flow. |
-| [Channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) - Use to configure how bot functions in each channel. | <img src="https://i.imgur.com/Jzrwr57.png)" alt="drawing" width="60%"/>                                                              |
+| [Channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) - Use to configure how bot functions in each channel. | <img src="https://i.imgur.com/Jzrwr57.png" alt="drawing" width="60%"/>                                                              |
 | [Prompts](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes)                                                     | Shortcut to drag and drop prompt nodes.                                                              |
 | [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes)                                                    | Shortcut to drag and drop message nodes.                                                             |
 | [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes)                                                      | Shortcut to drag and drop action nodes.                                                              |
@@ -154,7 +154,7 @@ You can preview all the flows that are intended a bot by clicking **Preview bot*
 
 You can also select the channels from the **Website** drop-down to test your flows in the respective channels. 
 
-<img src="https://i.imgur.com/zNjLfee.png)" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/zNjLfee.png" alt="drawing" width="60%"/>
 
 
 After testing the flow, click the below highlighted icon to preview your bot.

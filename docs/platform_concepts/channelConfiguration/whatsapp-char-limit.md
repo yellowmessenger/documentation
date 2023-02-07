@@ -8,10 +8,10 @@ This guide contains the limitations of WhatsApp channel.
 
 | Options | Limit |
 |---------------------|-----------------|
-| [Quick reply button](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) | Supports a maximum of 3 buttons and 20 characters per button. If more than 3 buttons are added, it defaults to a numbered list.<br/><img src="https://i.imgur.com/NDzr4JO.png)" alt="drawing" width="60%"/> |
+| [Quick reply button](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) | Supports a maximum of 3 buttons and 20 characters per button. If more than 3 buttons are added, it defaults to a numbered list.<br/><img src="https://i.imgur.com/NDzr4JO.png" alt="drawing" width="60%"/> |
 | [Carousel card](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel) | Supports a single carousel card. |
-| Carousel button | Supports a maximum of 3 buttons.<br/><img src="https://i.imgur.com/isKubvH.png)" alt="drawing" width="60%"/> |
-| Carousel character limit | The maximum number of characters supported is 1024. <br/><img src="https://i.imgur.com/sndE43Y.png)" alt="drawing" width="60%"/> |
+| Carousel button | Supports a maximum of 3 buttons.<br/><img src="https://i.imgur.com/isKubvH.png" alt="drawing" width="60%"/> |
+| Carousel character limit | The maximum number of characters supported is 1024. <br/><img src="https://i.imgur.com/sndE43Y.png" alt="drawing" width="60%"/> |
 | Image type | Supported image types are JPG and PNG.
 | Image size | Supported image size is 5MB.
 | Image diemensions | Supported image dimension is 250*250.

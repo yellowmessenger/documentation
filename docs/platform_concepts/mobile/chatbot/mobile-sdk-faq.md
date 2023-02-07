@@ -123,7 +123,7 @@ return new Promise(resolve => {
 * Save the resolved value from the function node to a variable of type `Object` (for example, `payload` )
 * Then, you can access the values of the variable ( For example, `{{{variables.payload.name}}}` )
 
-<img src="https://i.imgur.com/3fmiI63.png)" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/3fmiI63.png" alt="drawing" width="60%"/>
 
 
 

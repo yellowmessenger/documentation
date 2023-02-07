@@ -19,7 +19,7 @@ Below are the steps for integrating any Channel with Yellow.ai Bots via Webhook.
 
 4. When you will get a event in the webhook route you will get a token which will be used for the sending the reply so store it in the message data.
 
-5. Do the necessary changes for the different message types in executor for the sending the reply back(In the message object store the channel access token and reply token(It can sender id or reply token or something else)).
+5. Do the necessary changes for the different message types in executor for the sending the reply back(In the message object store the channel access token and reply token(It can sender id or reply token or something else.
 
 6. Test all the message types supported before pushing the changes.  
 

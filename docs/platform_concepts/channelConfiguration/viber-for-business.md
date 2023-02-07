@@ -52,7 +52,7 @@ Business name | Enter the name of the company to appear in your monthly billing 
 
 To set up a business card, you need to provide the details of your brand to appear on Viber such as your **business name**, **description**, **address**, **phone number**, **website**, and **logo**. Ensure that, you send the logo images with a size of **50\*50, 65\*65, 100\*100, 130\*130, 360*280** (mandatoy). The supported image types are JPG and PNG
 
-<img src="https://i.imgur.com/sWcCeCf.png)" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/sWcCeCf.png" alt="drawing" width="60%"/>
 
 After creating an official Viber business account, a unique business Id or service Id is created for your brand. You need to use these details while connecting your brand to Viber business channel.		
 		

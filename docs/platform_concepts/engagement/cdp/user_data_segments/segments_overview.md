@@ -40,7 +40,7 @@ The segments you create should be specific to your use case. Here are some ideas
 
 - **Exclude users who opted out from campaigns**: You might often want to exclude users who have opted out from all your campaigns. For this:
 
--   First ensure that your opt-in data is up to date. This can be regularly updated through  [conversational data](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder), by uploading fresh data through  [CSV](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/create_audience_group_csv), or by using  [REST APIs](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api)  to sync with your CRM.
+-   First ensure that your opt-in data is up to date. This can be regularly updated through  [conversational data](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder), by uploading fresh data through  [CSV](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users), or by using  [REST APIs](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api)  to sync with your CRM.
 -   Next, you can include a condition in your  [segment](/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview)  where, “Opt-in is true”. This segment will exclude all users for whom the opt-in is either false or unknown.
 
 <center><img src="https://i.imgur.com/xr4X98S.png" width="60%"/></center>

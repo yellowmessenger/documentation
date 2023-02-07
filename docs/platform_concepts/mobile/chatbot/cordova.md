@@ -108,7 +108,7 @@ cordova-plugin-ymchat supports bots with on-prem deployments. For the bot to wor
 cordova.plugins.ymchat.setCustomURL("https://your-on-prem-url.com");
 ```
 
-If the bot is deployed in a specific region(e.g. r1,r2,r3..rn)) on yellow.ai cloud, set the `customBaseUrl` as follows
+If the bot is deployed in a specific region(e.g. r1,r2,r3..rn) on yellow.ai cloud, set the `customBaseUrl` as follows
 
 ```javascript
 cordova.plugins.ymchat.setCustomURL("https://rx.cloud.yellow.ai");

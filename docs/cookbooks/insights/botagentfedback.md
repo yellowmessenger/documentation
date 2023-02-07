@@ -78,7 +78,7 @@ Follow the given steps: 
 
 
 
-2. Create a database with the required columns (for instructions, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/database)).
+2. Create a database with the required columns (for instructions, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/database).
 
 
 

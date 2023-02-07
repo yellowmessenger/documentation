@@ -679,7 +679,6 @@ module.exports = {
       items: [
         "platform_concepts/engagement/cdp/faq/exclude_user_campaign",
         "platform_concepts/engagement/cdp/faq/date_based_campaign",
-        "platform_concepts/engagement/cdp/faq/maintain_context_across_channel",
       ],
     }, */
   ],

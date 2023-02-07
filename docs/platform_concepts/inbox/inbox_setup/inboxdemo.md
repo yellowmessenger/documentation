@@ -98,7 +98,7 @@ Once you have created the live agent flow, follow these steps to test how ticket
 4. You can reply to that message from your live chat screen. This is a real-time conversation on the bot.
 
     ![](https://i.imgur.com/LEdGd40.png)
-5. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#3-resolve-or-transfer-tickets)) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
+5. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#3-resolve-or-transfer-tickets) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
 
     <img src="https://i.imgur.com/Gld3MHU.png" alt="drawing" width="50%"/>    
 
