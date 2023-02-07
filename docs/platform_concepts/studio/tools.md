@@ -485,9 +485,7 @@ In this tab, you can add constants by clicking the **+Add Constants button** and
 ## 2.5 Voice 
 
 :::note
-You can configure these settings only when IVR is connected from **Channel** > **Voice** > **IVR**.
-
-![](https://i.imgur.com/9hiy6Pg.jpg)
+You can configure these settings only when IVR **Channel** is connected. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/Ivr) to learn how. 
 :::
   
   
@@ -499,13 +497,6 @@ The voice global options that are configured will be applicable for all the node
 -   **Node level**: You can configure different “recording max duration” for different nodes i.e. 10 seconds for address and 5 seconds for name node.
 
 
-:::info
-Voice features (and supporting documentation) are constantly getting improved and updated, there may be some issues/feature mis-match. 
-Please get in touch with the team incase of any queries.
-:::
-  
-  
-
 Voice bot global options/settings are classified depending upon different uses as below:  
 
 1.  **Telephony**: For settings related to telephony like call forwarding, calling line identity, etc.
@@ -516,7 +507,8 @@ Voice bot global options/settings are classified depending upon different uses a
 6.  **Others**: Miscellaneous settings to handle invalid and blank user responses and fallbacks.
 
 
-  
+![](https://i.imgur.com/I4cS4Nn.png)
+
   
 
   
@@ -533,7 +525,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
   
   
 
-#### **Telephony related options**
+#### Telephony related voice settings 
 
   
   
@@ -542,12 +534,9 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Custom SIP header** | This can be used as an additional parameter that can be passed to an agent while transferring the call to an Agent to pass along bot collected information. You can pass a key-value pair in JSON format which will get passed in the SIP header. |
 
-> An example of the Custom SIP header:  
-> ```
-> [{
->   “key”:“User-to-User”,  
->    “value”:“name=david&product=heater&query=not turning off&priority=high&number=12345”
->  }]``` 
+> An example of the Custom SIP header:    
+
+``` [{“key”:“User-to-User”, “value”:“name=david&product=heater&query=not turning off&priority=high&number=12345”}] ``` 
 
 
   
@@ -558,7 +547,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
   
   
 
-#### **Recording related options**
+#### Recording related voice settings 
 
   
   
@@ -573,7 +562,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 
   
 
-#### **STT related options**
+#### STT related voice settings 
 
   
   
@@ -595,7 +584,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
   
   
 
-#### **TTS related options**
+#### TTS related voice settings 
 
   
   
@@ -615,7 +604,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
   
   
 
-#### **Conversation related options**
+#### Conversation related voice settings 
 
   
   
@@ -629,7 +618,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 
   
 
-#### **Other options**
+#### Other voice settings 
 
   
 

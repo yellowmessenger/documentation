@@ -385,13 +385,12 @@ module.exports = {
         {
           type: "category",
           label: "Inbox setup",
-         // link: {type: 'doc', id: 'platform_concepts/inbox/chats/getstartedwithlivechat'},
           collapsed: true,
           items: [
+              "platform_concepts/inbox/inbox_setup/inboxdemo",
               "platform_concepts/inbox/inbox_setup/supportagents",
               "platform_concepts/inbox/inbox_setup/roleaccess",
               "platform_concepts/inbox/inbox_setup/agentstatuses",
-              "platform_concepts/inbox/inbox_setup/inboxdemo",
               "platform_concepts/inbox/inbox_setup/assignmentlogic",
               "platform_concepts/inbox/inbox_setup/debugchecklist",
             //
