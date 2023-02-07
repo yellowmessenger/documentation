@@ -91,32 +91,32 @@ The number you give should not be connected to any WhatsApp account. If connecte
 
 15. Enter the OTP received on the number via your preferred method. Please choose the retries wisely as its limited to upto 3 attempts in 24hour.
 
-    <img src="https://i.imgur.com/DnIuZZD.png)" alt="drawing" width="60%"/>
+    <img src="https://i.imgur.com/DnIuZZD.png" alt="drawing" width="60%"/>
 
 
 16. Once the verification is successfully completed, click on **OK** and the platform  will display the WhatsApp business account details.
 
-    <img src="https://i.imgur.com/R9iT4B8.png))" alt="drawing" width="60%"/>
+    <img src="https://i.imgur.com/R9iT4B8.png" alt="drawing" width="60%"/>
     
 
 17. The platform will take you back to the **Messaging** page. A dialog box is displayed. You must select the same WABA you created and the number that was added, and click **Connect**.
 
-    <img src="https://i.imgur.com/CNm6g2g.png)" alt="drawing" width="90%"/>
+    <img src="https://i.imgur.com/CNm6g2g.png" alt="drawing" width="90%"/>
 
 
 18. Once the account is created, you can view your account on the **WhatsApp messenger** page.
 
-    <img src="https://i.imgur.com/ezgp1Qy.png)" alt="drawing" width="90%"/>
+    <img src="https://i.imgur.com/ezgp1Qy.png" alt="drawing" width="90%"/>
 
 
 19. You can also add multiple numbers by clicking on **+ Add Number** at the top right corner.
 
-    <img src="https://i.imgur.com/0wkbQHP.png)" alt="drawing" width="90%"/>
+    <img src="https://i.imgur.com/0wkbQHP.png" alt="drawing" width="90%"/>
 
 
 20. You can click on view more to view the business details, and you can also edit based on your requirements.
 
-    <img src="https://i.imgur.com/LfIwYrC.png)" alt="drawing" width="90%"/>
+    <img src="https://i.imgur.com/LfIwYrC.png" alt="drawing" width="90%"/>
 
 ### 1.2 Create Facebook Business Manager (FBM) account
 

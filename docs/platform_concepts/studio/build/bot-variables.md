@@ -234,7 +234,7 @@ Variables created above can be accessed using {{{variables.category}}}.
 The data that is entered in the variable is stored in a particular node, and the same data is retrieved when you use the same variable for the other node. The following is a sample screenshot of Bot that demonstrates the usage of variable: 
 
 
-<img src="https://i.imgur.com/DvYxITj.png)" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/DvYxITj.png" alt="drawing" width="60%"/>
 
  ### 4.3 Variable Datatypes
 
@@ -254,7 +254,7 @@ Different prompts/action nodes return responses in different formats and datatyp
 | [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel)                  | string            |
 | [Quick Replies](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies)         | string            |
 | [Date](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#21-date)                    | object            |
-| [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#21-question)         | string            |
+| [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-question)         | string            |
 | [Feedback](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback)            | object            |
 | [Whatsapp List](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#22-whatsapp-list) | string            |
 | [Multiselect](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#23-multi-select)                                                                | string            |

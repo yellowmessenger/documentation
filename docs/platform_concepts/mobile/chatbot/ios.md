@@ -119,7 +119,7 @@ Your on-prem deployment URL can be set to `customBaseUrl`
 config.customBaseUrl = "https://yourcustomurl.com"
 ```
 
-If the bot is deployed in a specific region(e.g. r1,r2,r3..rn)) on yellow.ai cloud, set the `customBaseUrl` as follows
+If the bot is deployed in a specific region(e.g. r1,r2,r3..rn) on yellow.ai cloud, set the `customBaseUrl` as follows
 
 ```swift
 config.customBaseUrl = "https://rx.cloud.yellow.ai"

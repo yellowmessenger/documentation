@@ -3,7 +3,7 @@ title: Chat Working hours
 sidebar_label : Working hours
 ---
 
-By enabling **Working Hours** in the Inbox settings, you can set the available number of hours your customer support team ([groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups)) will be functional. It refers to the time duration your agents would be available to take live chats and solve customer queries.
+By enabling **Working Hours** in the Inbox settings, you can set the available number of hours your customer support team [groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) will be functional. It refers to the time duration your agents would be available to take live chats and solve customer queries.
 In this section, you can specify unique working hours for each day of the week or/and set different working hours for each of your groups.
 
 In this article, you will learn:

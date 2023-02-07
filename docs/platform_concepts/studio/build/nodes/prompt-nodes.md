@@ -168,7 +168,7 @@ Quick replies node can switch between buttons and numbered lists. WhatsApp butto
 ![](https://i.imgur.com/Kc9r8xe.png)
 
 > Real time example: 
-> <img src="https://i.imgur.com/7pp1yaf.jpg)))" alt="drawing" width="60%"/>
+> <img src="https://i.imgur.com/7pp1yaf.jpg" alt="drawing" width="60%"/>
 
 ----
 

@@ -10,7 +10,7 @@ sidebar_label: August 2022
 | *Enhancement*
 
 Email tickets are now deep linked to improve the overall process of navigation and usability within Inbox. Agents and Admins can search, and filter ticket history when the emails are configured for support ticketing.   
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#1-email-channel-and-mail-forwarding). 
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#--2-set-mail-forwarding). 
 
 
 

@@ -136,7 +136,7 @@ All the Insights widget pages (<b>Overview, Metrics, User Journeys, Doc cog, Das
 <summary>  On the Data explorer - User engagement table, the timestamps increase by 30 mins. What is the reason for that?
 </summary>
 <div>
-On the user engagement events table, similar records are rolled up at 30 mins interval. You can refer to the Count column to check how many records are rolled up for a particular row event. The distinct count functionality uses <a href="[link](https://en.wikipedia.org/wiki/HyperLogLog)">hyperloglog</a> algorithm which gives an approximate number and not the exact count.
+On the user engagement events table, similar records are rolled up at 30 mins interval. You can refer to the Count column to check how many records are rolled up for a particular row event. The distinct count functionality uses <a href="https://en.wikipedia.org/wiki/HyperLogLog">hyperloglog</a> algorithm which gives an approximate number and not the exact count.
 </div>
 </details>
     

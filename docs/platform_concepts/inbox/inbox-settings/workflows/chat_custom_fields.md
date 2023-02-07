@@ -118,7 +118,7 @@ There is a column dedicated to each custom field in the [chat archives report](h
 
  ![Custom field reports](https://cdn.yellowmessenger.com/5JZOkYaOM9KO1635072241566.jpg)
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/reports) to learn to download the chat archive report. 
+> To know how to download the chat archive report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
 
 ## <a name="4"></a>  4. Automation on custom fields
 

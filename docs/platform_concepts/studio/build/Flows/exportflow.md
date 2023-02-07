@@ -33,13 +33,13 @@ To export a bot template to Marketplace, follow the below steps:
 
    ![](https://i.imgur.com/NcdTQDf.png)
 4. Enter the following mandatory fields details:
-<img src="https://i.imgur.com/d0BrkuS.png)" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/d0BrkuS.png" alt="drawing" width="60%"/>
 
 | Name | Description |
 |------|-------------|
 | Template name | By default, you can view the name of the template. You can also modify the name of the template according to your business needs. |
 | Overview | Enter the description of the selected flow. |
-| Component type | Select the component type based on the flow that you have selected.<br/> <img src="https://i.imgur.com/44tq00E.png)" alt="drawing" width="50%"/> |
+| Component type | Select the component type based on the flow that you have selected.<br/> <img src="https://i.imgur.com/44tq00E.png" alt="drawing" width="50%"/> |
 | Template icon | You can select a preconfigured template icon or you can upload the icon of your choice. ![](https://i.imgur.com/hPTOxCL.png) |
 | Description | The description that you enter in this field is displayed on the preview page when you click on the template. |
 | Flows | If you want to include the other flows in the same template, you can select flows that are displayed in the drop-down. ![](https://i.imgur.com/7deVwfk.png) |
@@ -55,7 +55,7 @@ To export a bot template to Marketplace, follow the below steps:
    ![](https://i.imgur.com/gaVSXZh.jpg)
 6. You can switch to other flows if you have selected more than one and preview the flow that you want to export.
 
-   <img src="https://i.imgur.com/VbIYpfD.png)" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/VbIYpfD.png" alt="drawing" width="50%"/>
 
 7. Select who can access this template by using the following options:
 
@@ -64,12 +64,12 @@ To export a bot template to Marketplace, follow the below steps:
    * **Training**: Only the user who has access to the particular subscription can access the exported template.
    * **Public:** The template gets published in the Marketplace only if it approved by the admin.
 
-   <img src="https://i.imgur.com/Oy5FoDN.png)" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/Oy5FoDN.png" alt="drawing" width="50%"/>
 
 
 ### 1.2 View exported templates
 Users can view the templates submitted for review Under **User account** > **Exports**. 
-<img src="https://i.imgur.com/B3U98x6.png)" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
 
 Users can view the template status from this page.
 
