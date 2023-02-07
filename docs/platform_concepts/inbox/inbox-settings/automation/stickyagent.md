@@ -1,6 +1,6 @@
 ---
-title: Sticky agent chat assignment
-sidebar_label : Sticky agent
+title: Sticky agent - live chat assignment
+sidebar_label : Chat assignment for sticky agent
 ---
 
 In this article, you will learn: 
@@ -12,7 +12,7 @@ In this article, you will learn:
 This feature is applicable only for live chats.
 :::
 
-The sticky agent is a type of ticket assignment where the customers can connect to an agent, of their choice (agents they are familiar with/ have conversed with before). This helps to provide a consistent and better experience, reduce conflicts and achieve faster resolution. It is used in Industries where the customer and agent relationship is crucial and it is expected that customers are to be mapped to their specific point of contact (agent/counselor/representative). 
+The sticky agent is a type of ticket (live chat) assignment where the customers can connect to an agent, of their choice (agents they are familiar with/ have conversed with before). This helps to provide a consistent and better experience, reduce conflicts and achieve faster resolution. It is used in Industries where the customer and agent relationship is crucial and it is expected that customers are to be mapped to their specific point of contact (agent/counselor/representative). 
 For example - Real estate, Concierge services, Travel consultancy, Financial Services, Education, Healthcare, etc.
 
 
@@ -30,12 +30,12 @@ We believe that customers should not be left empty handed and should at least be
 
 :::info 
 
-**Important Terminologies** 
+**Important terminologies** 
 
 1. **Preferred agent**: The exact agent to whom you want the incoming customer to be assigned.
-2. **Fallback**: When the preferred agent is not eligible to take up chat at that moment (when they are busy/away/offline or they are at their max concurrency), the Fallback determines what should happen to that chat ticket. In this case, 
-    - The ticket can go into missed without being assigned to anyone else.
-    - The ticket can be assigned to the next available agent in their group (recommended).
+2. **Fallback**: When the preferred agent is not eligible to take up chat at that moment (when they are busy/away/offline or they are at their max concurrency), the Fallback determines what should happen to that live chat. In this case, 
+    - The live chat can go into missed without being assigned to anyone else.
+    - The live chat can be assigned to the next available agent in their group (recommended).
 :::
 
 
@@ -77,7 +77,7 @@ The sticky agent mapping logic between agents and your customers can be maintain
 
 4. **To assign tickets to agents without any fallback** (use case #1) use the following API.
     - preferredAgent is **true** & preferredAgentFallback is **false**. 
-    - When the preferred agent being passed is not eligible, the chat ticket will directly go into missed chats.
+    - When the preferred agent being passed is not eligible, the live chat will directly go into missed chats.
 
 
 ```
@@ -108,7 +108,7 @@ curl --location -g --request POST 'https://cloud.yellow.ai/api/agents/tickets/cr
 
 5. **To assign tickets to agents with fallback** (use-case #2) use the following API.
     - preferredAgent & preferredAgentFallback are **true**. 
-    - When the preferred agent being passed is not eligible, the chat ticket will try to get assigned to the next eligible agent.
+    - When the preferred agent being passed is not eligible, the live chat will try to get assigned to the next eligible agent.
     - If no agent (in the group) is eligible to assign chats, it will go into missed chat.
 
 ```
