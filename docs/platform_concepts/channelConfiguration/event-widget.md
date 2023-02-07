@@ -34,7 +34,7 @@ ymIframe.contentWindow?.postMessage(message, window.location.origin);
 </script>
 ```
 
-### 1.3 Available events
+### 2.1 Available events
 
 
 | Event | Functionality |

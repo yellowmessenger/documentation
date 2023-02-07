@@ -81,7 +81,7 @@ To pass values from your parent interface to the bot, you can make use of our **
 </script>
 ```
 
-Our bot undergoes initialization on page load. Once the boat loads in, we can assign these values to variables using our [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#variables).
+Our bot undergoes initialization on page load. Once the boat loads in, we can assign these values to variables using our [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#variables).
 
 > Variable format is {{profile.payload.Your_Field_Name}}
 

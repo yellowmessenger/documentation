@@ -10,7 +10,7 @@ Follow the below steps to transfer the chat to an agent without asking for any i
 ![](https://i.imgur.com/b2PcVD0.png)
 
 2. Create a simple flow and directly connect Raise ticket node to the start node. 
-3. Pass the same variables in the [Raise ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket).
+3. Pass the same variables in the [Raise ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket).
 
 ![](https://i.imgur.com/ojL2BAU.png)
 

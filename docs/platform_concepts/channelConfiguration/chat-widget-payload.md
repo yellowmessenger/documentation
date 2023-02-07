@@ -60,7 +60,7 @@ Add the payload data in the following bot script:
 </script>
 ```
 
-The bot is initilized when the page loads. Once the boat loads, you can assign these values to variables using [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#variables).
+The bot is initilized when the page loads. Once the boat loads, you can assign these values to variables using [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#variables).
 
 
 Variable format is ```{{{profile.payload.Your_Field_Name}}```

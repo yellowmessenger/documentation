@@ -146,7 +146,7 @@ Apart from the List and Pattern type entities, a set of entities are recognized 
 
 ## <a name="ape"></a> 4. Autoskipping prompts using entities
 
-To detect entity and skip prompts, open **Make prompts smarter** of that respective prompt and select the entity value. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#5-make-prompt-smarter) to learn more on Make prompts smarter option. 
+To detect entity and skip prompts, open **Make prompts smarter** of that respective prompt and select the entity value. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#5-make-prompt-smarter) to learn more on Make prompts smarter option. 
 If the entity value is detected/ present in the memory, that prompt will be skipped from the flow. 
 
 

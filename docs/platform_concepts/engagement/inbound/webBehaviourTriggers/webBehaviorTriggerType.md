@@ -64,7 +64,7 @@ document.getElementById('ymIframe').contentWindow.postMessage(JSON.stringify({
 
 ```
 
-To know how to create custom event, see [Custom event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/#8-custom-event). 
+To know how to create custom event, see [Custom event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#8-custom-event). 
 
   
 

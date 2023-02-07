@@ -105,7 +105,7 @@ To open flows, use the keyboard shortcut`s` + `f`.
 
 
 7. Click **Save**.
-8. Add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes) and build a flow as per your use-case. 
+8. Add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) and build a flow as per your use-case. 
 
 ### 2.1 Edit a flow
 

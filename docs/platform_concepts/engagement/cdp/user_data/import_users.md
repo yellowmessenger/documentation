@@ -23,7 +23,7 @@ Create a CSV file with user details and ensure that the values passed in the CSV
 A CSV file cannot exceed 30 MB.
 :::
 
-1.  **Use similar header names**: It becomes easy to map headers with user properties when you use similar names for column headers.
+1.  **Use appropriate header names**: It becomes easy to map headers when their names are similar to user properties.
 2.  **Use the right data type**: Data type validated before importing each user record. If the validation fails, adding or updating the record will fail. 
 
 The following table shows the data types of each user property with accepted values.

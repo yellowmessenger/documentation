@@ -9,7 +9,7 @@ Video calling must be enabled for your customer to be able to avail of this func
 Video calls must be enabled for:
 1. As a feature itself, on inbox settings.
 2. For each of the individual agents who is eligible to receive a video call. 
-3. Each [Raise Ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket). 
+3. Each [Raise Ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket). 
 
 :::note
 

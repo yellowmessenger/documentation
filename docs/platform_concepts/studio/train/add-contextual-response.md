@@ -67,7 +67,9 @@ Add as many training utterances as possible for a particular context.
 
 **Enable small-talk**
 
-(This is available only for the **older bots**. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/smalltalk) to configure small talk for new bots.)
+:::note
+This is available only for the **older bots**. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/smalltalk) to configure small talk for new bots.
+:::
 
 If the small talk is enabled, when the user talking about generic topics, the bot will be able to answer the user with an appropriate answer. 
 

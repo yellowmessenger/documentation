@@ -23,7 +23,7 @@ In the **Live** mode, you can
 * Run campaigns in [Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage). 
 * Attend live customer queries as an agent in [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox).
 
-![](https://i.imgur.com/4PLfGcE.png)
+   ![](https://i.imgur.com/4PLfGcE.png)
 
 
 

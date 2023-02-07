@@ -18,7 +18,7 @@ In this article, you will learn:
 
 -----
 
-To get started with *Live agent transfer*, you must configure **Studio** with [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket) action node and **Inbox**. 
+To get started with *Live agent transfer*, you must configure **Studio** with [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node and **Inbox**. 
 
 
 1. **Studio** must be configured:
@@ -35,7 +35,7 @@ To get started with *Live agent transfer*, you must configure **Studio** with [r
 > On your web browser, open 2 different tabs (Studio module and Inbox module)
 
 
-### Tab 1: Import/create a flow and raise a support request 
+### Tab 1: Import/create a flow and request for support 
 
 
 
@@ -78,7 +78,7 @@ To create a support flow from scratch on [Studio](https://docs.yellow.ai/docs/pl
 
 ---------
 
-### Tab 2: Ticket creation and assignment on the Inbox chat screen 
+### Tab 2: Live chat request and assignment on the Inbox chat screen 
 
 :::note
 - To test the live agent transfer, you must have **[Inbox agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) access**.
@@ -98,7 +98,7 @@ Once you have created the live agent flow, follow these steps to test how ticket
 4. You can reply to that message from your live chat screen. This is a real-time conversation on the bot.
 
     ![](https://i.imgur.com/LEdGd40.png)
-5. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen/#3-resolve-or-transfer-tickets)) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
+5. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#3-resolve-or-transfer-tickets)) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
 
     <img src="https://i.imgur.com/Gld3MHU.png" alt="drawing" width="50%"/>    
 

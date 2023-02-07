@@ -101,15 +101,17 @@ Select the number of minutes/hours you want the bot to wait for before executing
 
 ### 1.7 Raise ticket 
 
-Raise ticket is used in order to connect bot user to the human agent. 
-Connect the user to an agent after collecting info and query with this node.  
+:::note
+This node is used to configure a flow to connect customers with the live inbox agents and provide customer support through **Live chats**. Learn more on live chats [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat).
+:::
 
-This simple UI node can be used to set up basic & advanced scenarios such as Working Hours, Agent Availability, voice/video calling, etc required to create a ticket.
+Raise ticket is used in order to connect bot user to the human agent. You can connect the user to an agent after collecting info and query with this node.  
+This node is used create a live chat request with basic or advanced scenarios such as **Working Hours, Agent Availability, Voice/Video calling**, etc.
 
 #### Raise ticket outputs 
 
-1. **Ticket Closed** - This essentially is bot behaviour after the Agent closes a ticket (i.e. s/he has resolved user query).
-2. **Error** - This can be used as a generic message in any case ticket creation is not successful. For customised messages, specific errors event hub can be configured. 
+1. **Ticket Closed** - This is bot behaviour after the Agent closes a ticket (when the inbox agent has resolved user query).
+2. **Error** - This can be used as a generic message if ticket creation is not successful. For customised messages, specific errors- event hub can be configured. 
 
 #### Raise ticket response
 
