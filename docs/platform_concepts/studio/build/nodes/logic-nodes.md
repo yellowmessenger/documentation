@@ -42,7 +42,7 @@ Select a value (only one value can be selected) from the dropdown based on your 
 
 ![](https://i.imgur.com/oFadY2l.png)
 
-**Context Handler** is also available on our Beta release Input Node. [Add an input node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#29-input) to your flow to access it.
+**Context Handler** is also available on our Beta release Input Node. [Add an input node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#29-input) to your flow to access it.
 
 ![](https://i.imgur.com/HZNqOAi.png)
 

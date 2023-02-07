@@ -42,7 +42,7 @@ The chat section screen is divided into 3 parts:
 When a live chat is raised by the bot user (requesting to connect with an agent), that chat will be displayed under this section. 
 
 :::note
-- To learn how to build a flow that will raise a ticket to a live agent, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo#tab-1-importcreate-a-flow-and-raise-a-support-request).   
+
 :::
 
 To understand the chats section, it is important to understand the types of chats. Inbox classifies chats into 7 different types. They are explained below: 

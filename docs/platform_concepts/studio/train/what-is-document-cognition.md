@@ -585,6 +585,7 @@ The text after '@' in the app identifier is the 'tenant id' or 'realm'.
 **Required Permissions**
     
 Run the following commands on PowerShell. Without these steps, your app won't have the required permissions.
+
 ```
 Install-Module -Name Microsoft.Online.SharePoint.PowerShell
 $adminUPN="<the full email address of a SharePoint administrator account, example: jdoe@contosotoycompany.onmicrosoft.com>"
@@ -596,7 +597,8 @@ set-spotenant -DisableCustomAppAuthentication $false
    
 :::note
 Once an app is created you can give access to any site to it. You can view all the apps that have access to the site and add new apps to a site.
-:::   
+:::
+
 5. **Update on yellow.ai configuration**
     - Open the yellow platform. **Studio** > **Train** > **Documents** > **Upload documents** > **Select Sharepoint**.
     - Fill in the following details and select the required folders.
@@ -642,7 +644,7 @@ Once an app is created you can give access to any site to it. You can view all t
 Doc has the capability of auto-generating Questions and Answers. 
 1. Open the **QnA extract** tab. 
     
-![](https://i.imgur.com/gTjILM5.png)
+   ![](https://i.imgur.com/gTjILM5.png)
 
 2. Expand the file you want to generate QnA. 
     
@@ -650,7 +652,7 @@ Doc has the capability of auto-generating Questions and Answers.
 3. Go to Each File to see automatically generated Questions and Answers. Click the checkbox for the questions you want to add to FAQs. 
     - Click on **Add FAQ**. It will add to the FAQ section of the bot.
 
-![](https://i.imgur.com/vgNTJ5G.jpg)
+   ![](https://i.imgur.com/vgNTJ5G.jpg)
 
 
 ---
@@ -674,16 +676,16 @@ Follow the given steps to Configure:
 1.  Open **Acronyms** Tab
 2.  Click **Add new acronym**.
     
-![](https://i.imgur.com/kT9Hzd6.png)
+   ![](https://i.imgur.com/kT9Hzd6.png)
 
     
 3. Add the Acronym **Name** and **List item**. 
 
-![](https://i.imgur.com/628O0f2.png)
+   ![](https://i.imgur.com/628O0f2.png)
 
 4. Acronyms have been configured.
 
-![](https://i.imgur.com/x1uAHN4.png)
+   ![](https://i.imgur.com/x1uAHN4.png)
 
 
 

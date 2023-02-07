@@ -31,7 +31,7 @@ To update `userId` of customers through bot conversations:
 
 The user record is updated in the database using the session mapping. 
 
-* In the bot Builder, use [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables/#412-variables--action-node) nodes to capture user properties (such as name, email, phone number, location, or any system/custom user property) through conversations.
+* In the bot Builder, use [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#412-variables--action-node) nodes to capture user properties (such as name, email, phone number, location, or any system/custom user property) through conversations.
 
 <center>
 <img src="https://i.imgur.com/p6DvR3D.png" width="60%"/>

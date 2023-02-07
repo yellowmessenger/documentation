@@ -45,14 +45,14 @@ ITSM consists of integrations with IT service management tools used for managing
 HR consists of integrations with human resource softwares used for managing recruiting, onboarding and HR related services. Click on any of the below mentioned integrations with HR tools that you wish to setup in order to understand the features, limitations and setup instructions:
 
 1. [Freshteam](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/freshteam) - Freshteam is a smart HR software that helps you handle recruiting, onboarding, time off and employee information in one place.
-2. [SAP Success Factors](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/successfactors/#references) - Integrate with SAP Successfactors to automate recruitment cycle through conversational bots.
+2. [SAP Success Factors](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/successfactors#references) - Integrate with SAP Successfactors to automate recruitment cycle through conversational bots.
 
 ---
 ## 4. Tools & Utilities
 
 To explore integrations with tools & utilities softwares, click on any of the below mentioned integrations with that you wish to setup in order to understand the features, limitations and setup instructions:
 
-1. [Azure Active Directory](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/azure-ad/#references) - Azure Active Directory integration to work with use-cases related to Azure AD.
+1. [Azure Active Directory](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/azure-ad#references) - Azure Active Directory integration to work with use-cases related to Azure AD.
 2. [Clever Tap](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/clevertap)
 3. [Google Calendar](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/google-calendar) - Google calendar integration helps to create events within conversational bots.
 4. [Google Sheets](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/google-sheets) - Google Sheets Integration will allow you to create new spreadsheet and read/write/update the data in the cells.

@@ -33,7 +33,7 @@ The Function section is used to add function code. It is available in **Studio**
 You can add a new function to write custom logic in the Function section by clicking **+Add new function**.
 
 :::note
- To execute these functions in a flow, attach a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#24-function)- action node.
+ To execute these functions in a flow, attach a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function)- action node.
 :::
 
 ### <a name="11"></a> 1.1 Format of cloud functions

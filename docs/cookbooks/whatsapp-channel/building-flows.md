@@ -24,13 +24,13 @@ We have a few system variables like:
 
 If you want to give users a button clickable option to choose from, you can use WhatsApp reply button in that case.
 
-Know how to configure WhatsApp reply buttons [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#quick-reply-buttons-for-whatsapp-bots)
+Know how to configure WhatsApp reply buttons [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#quick-reply-buttons-for-whatsapp-bots)
 
 **4. WhatsApp list:**
 
 If you want to provide clickable list even on whatsApp, you can use WhatsApp list instead of Quick replies.
 
-To know more, see [WhatsApp list](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#22-whatsapp-list).
+To know more, see [WhatsApp list](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#22-whatsapp-list).
 
 
 #### But there are a few limitations:

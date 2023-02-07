@@ -74,7 +74,7 @@ Sticky agent assignment is the process of connecting your customers to the agent
 
 
 You can now search segments using the Search box (this is similar to the search option available in the outbound campaign). To search from multiple segments, use filters to get your preferred segment from the Active segments or Archived segments.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment/#2-view-segment-users). 
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment#2-view-segment-users). 
 
 
 
@@ -91,7 +91,7 @@ New system event user_delete is available on events. It is triggered when the us
 4. User deletion through API
 
 **Event schema**: User object and Event creation timestamp    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub/#7-user-360-events-system-events). 
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events). 
 
 
 
@@ -227,7 +227,7 @@ An all-new analytics dashboard- **Insights** > **Voice overview** is introduced 
 
 
 In the Flows Summary section (**User Journeys** > **Funnels**), you can see the list of reasons why certain flow completion rates might be low and nudge to what immediate steps you can take to improve them.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/growth/funnels/#31-flow-completion-rate-fcr).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/growth/funnels#31-flow-completion-rate-fcr).
   
 
 #### 6.3 Channel filter on User Journey Visualisation  
@@ -279,7 +279,7 @@ Right now, to search for a FAQ, we need to know which category it belongs to bec
 | *Enhancement*
 
 In the store comment node, there is a toggle added to enable QR. QR in the comment store node is to capture the comment as well as the QR response.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#25-store-comment).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-store-comment).
   
 
 
@@ -297,7 +297,7 @@ When flows are triggered, earlier it was difficult to go and find which intent w
 | *Enhancement*  (Beta release- some settings may not be available as per expectations like autocomplete and auto skipping options)
 
 For better & dynamic conversation design, we release a new input node.   
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#29-input).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#29-input).
 
 
 

@@ -17,7 +17,7 @@ If you do not want to use code function, you can directly pass the access token 
 
 To do so, follow these steps - 
 
-1. In **Studio** > **Build** > **API**  and [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api/#1) to fetch the access token.
+1. In **Studio** > **Build** > **API**  and [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#1) to fetch the access token.
 2. Copy the access token from the source. 
 
 > Here, we’ve added a salesforce API to create a bearer token. During the course of this tutorial, we’ll call it auth API. This API returns a **Bearer token** which we will use in another API for authentication.
@@ -25,7 +25,7 @@ To do so, follow these steps -
    ![](https://i.imgur.com/zZCcghI.png)
 
   
-4. Open the API or [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api/#1) to which you want to add access token (Authorization header).
+4. Open the API or [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#1) to which you want to add access token (Authorization header).
 
 > In the example, we will be adding a search lead API from Salesforce. Pass the bearer token in the header and email as a [parameter to this API](https://docs.yellow.ai/docs/platform_concepts/studio/api/send-data). So we will fetch values from [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and pass it to the API using this syntax `{{{variable_name}}}`; as shown in the screenshots below.
   
@@ -37,14 +37,14 @@ To do so, follow these steps -
   
 
 5. Go back to **Studio** > **Build** > **Flows** and 
-6. Create an [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#21-api) to invoke auth API and store the response in a custom variable.
+6. Create an [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api) to invoke auth API and store the response in a custom variable.
 
 > In the example, create an action node named `salesforceAuth` to invoke auth API and store response in `sf_auth_response` variable.
 
   
 
 :::note
-Problem with this API is that most API which requires bearer token authentication requires the token to be in this format `Bearer TOKEN_HERE`. Auth API only returns a token without `Bearer` prefix. Hence, we can use a [variable action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#22-variables) to add a `Bearer` prefix to the token. Create another variable `auth_token` and use this syntax to add a prefix `Bearer {{{variables.sf_auth_response}}}`.
+Problem with this API is that most API which requires bearer token authentication requires the token to be in this format `Bearer TOKEN_HERE`. Auth API only returns a token without `Bearer` prefix. Hence, we can use a [variable action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) to add a `Bearer` prefix to the token. Create another variable `auth_token` and use this syntax to add a prefix `Bearer {{{variables.sf_auth_response}}}`.
 :::
   
 
@@ -56,7 +56,7 @@ If the API node goes to fallback,  you can add a text message node and trigger a
 
 > In the example
 > * Create or open a flow where you want to use Salesforce Search API, say `salesforceSearchLead` journey. Here, what we want is to first trigger is the `salesforceauth` API and store the bearer token in the `auth_token` variable which will be used here.
-> * Hence, in this flow,  add a [Trigger journey node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#15-execute-flow) and trigger `salesforceauth` flow. Once the `salesforceauth` flow is executed, the current `salesforceSearchLead` will be executed. Now, in the API action node, select the `get_lead` API and under parameters, select `auth_token` and `email` variables.
+> * Hence, in this flow,  add a [Trigger journey node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) and trigger `salesforceauth` flow. Once the `salesforceauth` flow is executed, the current `salesforceSearchLead` will be executed. Now, in the API action node, select the `get_lead` API and under parameters, select `auth_token` and `email` variables.
 > * Finally, store the response of this API in `sf_search_lead_response`.
 > <img src="https://i.imgur.com/ijhgh60.png" width="400"/>
 

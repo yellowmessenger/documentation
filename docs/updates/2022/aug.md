@@ -31,7 +31,7 @@ One can configure an email ticketing channel and raise tickets in the Inbox clou
 
 | *Enhancement*
 
-[Queued chats](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat/#13-queued-chats) will now be visible to the Inbox Supervisor role. They also have more control over queued chats wherein admins & supervisors can now assign or push chats from the queue to agents in case of need.
+[Queued chats](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#13-queued-chats) will now be visible to the Inbox Supervisor role. They also have more control over queued chats wherein admins & supervisors can now assign or push chats from the queue to agents in case of need.
 
 ***
 
@@ -135,7 +135,7 @@ With this integration, you can now generate Cashfree tokens that can be passed o
 | *New feature*
 
 You can schedule campaigns from Cloud Engage targeting a larger audience and test their notification messages just before launching them. You can add up to five test users and send real-time notifications.   
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign/#6-test-campaigns-recommended). 
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#6-test-campaigns-recommended). 
 
 
 #### 5.2  App to cloud migration

@@ -19,7 +19,7 @@ sidebar_label: Studio FAQs
  <summary>How do I link one flow to another flow for a bot?
 </summary>
  <div>
-  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#15-execute-flow">Execute Flow</a> to link  another flow to a bot.
+  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow">Execute Flow</a> to link  another flow to a bot.
 ​
 </div>
   <br/>

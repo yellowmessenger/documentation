@@ -21,7 +21,7 @@ To obtain the user feedback graph on the overview page and the user feedback def
 
 **To obtain user feedback on the bot interaction:** 
 
-1. In **Studio**, at the end of your existing flow, add a [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#27-feedback) to collect user feedback. 
+1. In **Studio**, at the end of your existing flow, add a [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback) to collect user feedback. 
 
 ![](https://i.imgur.com/SI8BwYL.png)
 
@@ -31,7 +31,7 @@ To obtain the user feedback graph on the overview page and the user feedback def
 
 **To obtain user feedback on the agent interaction:** 
 
-- Create a flow using the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes/#17-raise-ticket) action node. Configure Inbox. Enable **CSAT** from the inbox settings. After a chat ticket is closed, your customers will be asked for, agent feedback and chat feedback. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) to know more. 
+- Create a flow using the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node. Configure Inbox. Enable **CSAT** from the inbox settings. After a chat ticket is closed, your customers will be asked for, agent feedback and chat feedback. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) to know more. 
 - These user feedbacks can be found in the Insights module, [Data Explorer](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer) > **Chat tickets** table .
 
 :::
@@ -49,7 +49,7 @@ To obtain the user feedback graph on the overview page and the user feedback def
 
 5. Customer feedback analytics can also be found on the **Insights Overview** page under [User feedback](https://docs.yellow.ai/docs/platform_concepts/growth/overview#8-user-feedback). 
 
-> **Bot feedback** is obtained from [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#27-feedback).    
+> **Bot feedback** is obtained from [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback).    
 > **Agent feedback** is obtained from the [CSAT score](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) provided to the live agent.       
 > This graph is available only for default tables - not custom tables.   
 
