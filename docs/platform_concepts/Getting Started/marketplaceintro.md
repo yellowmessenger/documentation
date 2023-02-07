@@ -156,7 +156,7 @@ For example, the 'Bike Models' and 'Bike Models clone' flow will have the same f
 
 2. **Edit text**: Text inside each node can be rephrased. Open any node and enter the text in **Bot says**. For example,  "Remember me? I'm Mia, here to collect your AADHAR information." can be changed to "Hey! Please provide your AADHAR information."
 
-<img src="https://i.imgur.com/ypOZfjh.png)" alt="drawing" width="70%"/>
+<img src="https://i.imgur.com/ypOZfjh.png" alt="drawing" width="70%"/>
 
 3. **Add new nodes**: New nodes can be added when required. 
 

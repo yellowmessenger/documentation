@@ -110,7 +110,7 @@ To add an existing user property to your User 360 module, follow these steps:
 
 ![](https://i.imgur.com/BOUV1hq.png)
 
-In the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#22-system-user-properties) and [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#23-custom-user-properties) along with their data types. 
+On the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#22-system-user-properties) and [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#23-custom-user-properties) along with their data types. 
 
 2. Select the property that you want to include. You can see all the selected properties on the right. 
 

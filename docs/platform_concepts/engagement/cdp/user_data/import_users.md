@@ -149,7 +149,7 @@ You can see the Status of the import.
 
 :::note
 * Users are automatically added to the segment every time the user updates to match those conditions.
-* If the [userId](../enriching_user_profiles/user_id) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
+* If the [userId](/docs/platform_concepts/engagement/cdp/user_data/user_properties#13-user-id-userid-as-a-property) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
 :::
 
 ***
@@ -157,7 +157,7 @@ You can see the Status of the import.
 
 ## Step 3: Analyse import errors
 
-Once you import a CSV file, you can check what happened with the records. 
+Once you import a CSV file, you can check the status of those records - new records, updated records, and failed records. 
 
 During the import, it is possible that new records are not always created but could also result in one or more of the following:
 

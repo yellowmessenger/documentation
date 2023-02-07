@@ -124,17 +124,17 @@ To add FAQs for multi-lingual bots, follow the given steps:
 
 1. Navigate to **Studio** and click drop-down.
 
-   <img src="https://i.imgur.com/zzuN3m8.png)" alt="drawing" width="90%"/>
+   <img src="https://i.imgur.com/zzuN3m8.png" alt="drawing" width="90%"/>
    
 
 2. To add FAQs for multi-lingual bots, in **Language settings**, click on Edit icon to add the languages that you want to add to your bot. 
 
-   <img src="https://i.imgur.com/W24tVZC.png)" alt="drawing" width="90%"/> 
+   <img src="https://i.imgur.com/W24tVZC.png" alt="drawing" width="90%"/> 
    
 
 3. In **Add Language** dialog box, select the languages from the drop-down and click **Save**.
 
-    <img src="https://i.imgur.com/Eda9KcV.png)" alt="drawing" width="90%"/>
+    <img src="https://i.imgur.com/Eda9KcV.png" alt="drawing" width="90%"/>
 
 4. Your bot's language settings have been successfully updated. You can [add FAQs](#1-add-faqs-add-faqs) in different languages 
 

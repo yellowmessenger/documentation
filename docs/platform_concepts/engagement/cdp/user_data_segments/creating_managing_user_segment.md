@@ -30,7 +30,7 @@ value | Value of the expression. Use + to add multiple values. For example, crea
   
    ![](https://i.imgur.com/PnSrqvJ.png)
 
-To create more sophisticated segments you can [combine ‘and’ with ‘or’ conditions](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/targeted_segments). This makes segments more powerful and flexible.
+To create more sophisticated segments you can [combine `and` with `or` conditions](/docs/platform_concepts/engagement/cdp/user_data_segments/segment_usecases#21-segments-with-multiple-conditions-andor). This makes segments more powerful and flexible.
 
 
 Once you create a segment, you can view users in the segment, modify segment condition, download users of the segment, or delete it as explained in the following sections.

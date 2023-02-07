@@ -18,7 +18,7 @@ In this integration, you can use integration nodes configured for Bamboo HR. Fir
 | -------- | -------- | 
 | Fetch Employee Information   | Employee information can be fetched by providing the employee ID.  |
 |    Fetch Employee Time-Offs   | Employee time-offs can be fetched using employee ID, start date, and end date (date range in YYYY-MM-DD format).    |
-| Apply Time-Offs    | Time-off requests can be submitted by providing the necessary parameters (refer to [this doc](https://documentation.bamboohr.com/reference/time-off-add-a-time-off-request-1)).    |
+| Apply Time-Offs    | Time-off requests can be submitted by providing the necessary parameters (refer to [this doc](https://documentation.bamboohr.com/reference/time-off-add-a-time-off-request-1).    |
 | Update Time-Offs | Time-off requests can be updated by providing a time-off ID. You can update notes and status. |
 
 

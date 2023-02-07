@@ -17,7 +17,7 @@ During your [outbound campaign](https://docs.yellow.ai/docs/platform_concepts/en
 ![](https://i.imgur.com/uMaeBsY.png)
 
 ### Targeting the right set of users
-In the target audience step, you can choose the [segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment) you want to target with the above content. You can also create a new segment by clicking on **+ New segment**, which will allow you to create highly targeted [segments with And/Or conditions](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/targeted_segments).
+In the target audience step, you can choose the [segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment) you want to target with the above content. You can also create a new segment by clicking on **+ New segment**, which will allow you to create highly targeted [segments with And/Or conditions](/docs/platform_concepts/engagement/cdp/user_data_segments/segment_usecases#21-segments-with-multiple-conditions-andor).
 
 ![](https://i.imgur.com/wv4WTfl.png)
 
