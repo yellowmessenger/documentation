@@ -47,6 +47,10 @@ Our product videos on [Youtube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX
 
 If you'd like our experts to train you, write to academy@yellow.ai.
 
+## 3. Difference between cloud.yellow.ai and app.yellow.ai
+
+The [cloud.yellow.ai](https://cloud.yellow.ai/) is a no-code platform that allows businesses to create bots and automate processes without writing any code. The [app.yellow.ai](https://app.yellow.ai/) is a code-based platform that provides a drag-and-drop interface for users to build and deploy chat bots.
+
 ---------------------
 
 **Next Step**
