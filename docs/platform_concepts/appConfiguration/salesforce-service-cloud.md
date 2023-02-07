@@ -1,26 +1,25 @@
 ---
-title : Salesforce Service Cloud
-sidebar_label : Salesforce Service Cloud
+title : Salesforce CRM
+sidebar_label : Salesforce CRM
 ---
 
-## 1. Scope of Integration
 
 Yellow.ai Integration with Salesforce CRM allows you to seamlessly connect your Salesforce CRM instance with yellow.ai platform. Any customer who has a Salesforce CRM account will be able to seamlessly connect their Salesforce instance with yellow.ai using oAuth. This connector enables users to receive events for Salesforce objects, both system defined and custom objects. Furthermore, this connector with enable you to take actions, such as create, update etc. on the objects.
 
 > **Supported Version**
 This integration will support the latest version releases, latest one being 52.0
 
-## 2. Use-cases
+## 1. Use-cases
 
 Following are the use-cases which are currently accommodated in this Integration:
 
-### 2.1 Integration with oAuth 2.0
+### 1.1 Integration with oAuth 2.0
 
 Yellow.ai does not store the client’s credentials and leverages oAuth 2.0 approach for integrating with client’s Salesforce account.
 ​
 While integrating, yellow.ai navigates the user to the login page of Salesforce, i.e. login.salesforce.com or to the subdomain which was already used in the same browser. If you want to integrate in some other instance, clear your cookies and retry login in from yellow.ai platform.
 
-### 2.2 Take actions with Salesforce Nodes
+### 1.2 Take actions with Salesforce Nodes
 
 - You can store a new record or store data in any of your custom objects. 
 - The actions are not limited to the system defined Salesforce Objects, you can also use Custom Objects. 
@@ -36,15 +35,15 @@ While integrating, yellow.ai navigates the user to the login page of Salesforce,
 
 ![](https://cdn.yellowmessenger.com/rrvyShcKtbKe1659940554939.png)
 
-### 2.3 Receive Events from Salesforce
+### 1.3 Receive Events from Salesforce
 
 This feature is coming soon to the platform...
 
-## 3. Configuration
+## 2. Configuration
 
 Configuring the integration with Salesforce CRM is straightforward. Follow the steps defined below to integrate:
 
-### 3.1 Navigate to Integrations Tab
+### 2.1 Navigate to Integrations Tab
 
 - Inside your project, navigate to the **Configuration** tab. 
 -  Click the **Integrations** Tab. 
@@ -54,7 +53,7 @@ Configuring the integration with Salesforce CRM is straightforward. Follow the s
 
 Click [here](https://www.youtube.com/watch?v=_Sp4bzTpjMI) to learn more.
 
-### 3.2 Connect to the Salesforce account
+### 2.2 Connect to the Salesforce account
 
 - Click **Connect** and select **Connect with Salesforce**. 
 - You will be prompted to login to your Salesforce account.

@@ -4,7 +4,7 @@ sidebar_label: Messages
 ---
 
 Message nodes are one-way communication nodes which can be used when the bot has to display information to the user without expecting or taking any response.
-You can **randomize** the node text and add a **delay** to each node. 
+You can **randomize** the node text and add a **delay** to each node.  
 
 ---
 
@@ -38,6 +38,10 @@ You can set a delay in displaying each of these nodes.
 Given below is a flow created using message nodes to brief the users **about a coffee company**.
 
 ![](https://i.imgur.com/N8iN11b.jpg)
+
+:::note
+Message nodes are used only for interactive purpose, you cannot do anything else apart from displaying text/video/image etc. (along with [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#hed-1)) You cannot use auto complete and other features from [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#3-make-prompt-smarter) and you cannot store the user responses because these nodes are not designed to fetch user responses.
+:::
 
 ---
 Following are the different types of message nodes: 
