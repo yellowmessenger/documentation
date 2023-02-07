@@ -23,10 +23,6 @@ A voice bot functions as mentioned in the following steps:
 >  **Incoming request from**: User number +9187386*****
 > **Send request to**: Company number +9178903****1
 
-:::note
-The most critical part of voice bot is to configure WELCOME message response. Explained in detail in the [next section](#context). 
-:::
-
 3. Yellow cloud verifies company number to identify the Bot. 
 
 > Ex: User number +9187386***** belongs to XYZ company. Initilize XYZ bot. 
