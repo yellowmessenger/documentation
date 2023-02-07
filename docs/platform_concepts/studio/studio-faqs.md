@@ -3,6 +3,10 @@ title: Studio FAQs
 sidebar_label: Studio FAQs
 ---
 
+:::note
+Welcome message is supported only for web and app SDK and it is not supported for any of the [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).
+:::
+
 ### Nodes
 
 <details>

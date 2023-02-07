@@ -13,7 +13,7 @@ Yellow.ai Integration with SFTP allows you to seamlessly connect your remote ser
 Following are the use-cases which are currently accommodated in the Integration:
 
 
-### 1. **SFTP File Transfer**:- 
+### 1. SFTP File Transfer
   From this method you can easily upload files to a remote server.
 
 _ Node Input Params:-_                        
@@ -29,7 +29,7 @@ _ Node Input Params:-_
 
 
 
-### 2. **SFTP Get File**:- 
+### 2. SFTP Get File
 Retrieve a file from a remote SFTP server
 
 _ Node Input Params:-_                        
@@ -42,7 +42,7 @@ _ Node Input Params:-_
 
 
 
-### 3. **SFTP Make Directory**:- 
+### 3. SFTP Make Directory 
 Create a new directory. If the recursive flag is set to true, the method will create any directories in the path which do not already exist. Recursive flag defaults to false.
 
 _ Node Input Params:-_                        
@@ -58,7 +58,7 @@ _ Node Input Params:-_
 
 
 
-### 4. **SFTP Delete Directory**:- 
+### 4. SFTP Delete Directory
 Remove a directory. If removing a directory and recursive flag is set to `true`, the specified directory and all sub-directories and files will be deleted. If set to false and the directory has sub-directories or files, the action will fail. 
 
 _ Node Input Params:-_                        
@@ -70,7 +70,7 @@ _ Node Input Params:-_
 |recursive|true/false|recursive flag is set to true, the specified directory and all sub-directories and files will be deleted.|
 
 
-### 5. **SFTP Delete Files**:- 
+### 5. SFTP Delete Files
 
 Delete a file on the remote server.
 
@@ -84,7 +84,7 @@ _ Node Input Params:-_
 
 
 
-### 6. **SFTP Data Append**:- 
+### 6. SFTP Data Append
 Append the `input` data to an existing remote file. There is no integrity checking performed apart from normal writeStream checks. This function simply opens a writeStream on the remote file in append mode and writes the data passed in to the file.
 
 _ Node Input Params:-_                        
@@ -96,10 +96,7 @@ _ Node Input Params:-_
 |remoteFilePath*|/DirectoryPath/filename.txt|Path to remote file if files do not exist then It will auto create.|
 
 
-
-
-
-### 7. **SFTP List**:- 
+### 7. SFTP List
  Retrieves a directory listing
 
 _Node Input Params:-_                        
@@ -111,11 +108,11 @@ _Node Input Params:-_
 |pattern|*|{string|RegExp} A pattern used to filter the items included in the returned array. Pattern can be a simple glob-style string or a regular expression. Defaults to *|
 
 
-### 8. **SFTP Exists**:-
+### 8. SFTP Exists
  Tests to see if a remote file or directory exists. Returns type of remote object if it exists or false if it does not
 
 
-### 9. **SFTP Chmod:-** 
+### 9. SFTP Chmod
 Change the mode (read, write or execute permissions) of a remote file or directory.
 
 * remotePath: string. Path to the remote file or directory
@@ -144,7 +141,7 @@ Configuring the integration with SFTP is straightforward. Follow the steps defin
 
 Following the above steps will connect your SFTP remote server  with the yellow.ai platform.
 
-# **References:-**
+# **References:**
 
 
 1. [https://www.npmjs.com/package/ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client)

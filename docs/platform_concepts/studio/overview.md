@@ -52,6 +52,10 @@ The following are the various **Conversation settings** that are available on th
 | Language settings | You can add multiple languages to your bot based on your business needs. Click **Edit** icon to add languages.<br/> <img src="https://i.imgur.com/sfyTVZj.png)" alt="drawing" width="60%"/> <br/> Select languages from drop-down and click **Save**. <br/> <img src="https://i.imgur.com/572R72g.png)" alt="drawing" width="60%"/> | 
 | Callout | These banners on top of the chat can be used to promote a brand and/or get visitors from the host website to go to the advertiser's website.<br/> <img src="https://i.imgur.com/f4LbObf.png)" alt="drawing" width="60%"/><br/> **Note**: You can add four callouts with two buttons each. Buttons can be further customised by clicking **Advanced Settings**. <br/> ![](https://i.imgur.com/qWMxeYl.png) | 
 
+:::note
+Welcome message is supported only for web and app SDK and it is not supported for any of the [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).
+:::
+
 :::info
 Text can be entered in **Bot says** field. 
 **Images**, **Carousel**, **Videos**, **Files** and **Quick replies** can also be added. 
