@@ -499,6 +499,32 @@ details>ul {
 }
 
 
+
+a {
+  color: #1967d2;
+}
+
+
+/* TABLE STYLING */
+
+table th, table td {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: left;
+}
+
+p {
+
+  font-size: 14px;
+  line-height: 24px;
+
+}
+
+.markdown li {
+  font-size: 14px;
+  line-height: 24px;
+
+}
 /* Algolia Search */
 
 [data-theme='light'] .DocSearch {
