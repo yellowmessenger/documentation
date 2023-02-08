@@ -409,9 +409,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Source Sans Pro';
-  font-style: normal;
-  letter-spacing: 0.15px;
+    font-family: system-ui;
+    font-style: normal;
+    letter-spacing: 0.15px;
+    font-weight: normal;
 }
 
 
