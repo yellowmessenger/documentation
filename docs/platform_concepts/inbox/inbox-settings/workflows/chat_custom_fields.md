@@ -28,7 +28,7 @@ Custom fields are necessary for the agent/admin to Resolve/Transfer any ticket.
 
 **What are custom fields?**
 
-Custom fields can be added to tickets and are used to track business-specific information related to the customer like Order ID, Address, case details, etc. Custom fields enable your teams to add more information about a case and add further context, which helps with better reporting and to resolve issues faster. Custom fields are available for both chats and email (ticketing) modules.
+Custom fields can be added to tickets and are used to track business-specific information related to the customer like Order ID, Address, case details, etc. Custom fields enable your teams to add more information about a case and add further context, which helps with better reporting and to resolve issues faster. Custom fields are available for both live chats and email tickets.
 
 **Access**
 

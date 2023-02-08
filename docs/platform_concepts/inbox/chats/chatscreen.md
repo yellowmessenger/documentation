@@ -16,14 +16,14 @@ In this article, you will learn:
 
 You can chat with the customer on this screen. This screen has the following functionalities to enable easy conversations:
 
-1. **Write a reply**
+#### 1. **Write a reply**
 
 Simply type in any text and hit send button (or enable enter to send if you want the messages to be sent when you press the enter key).  
 
 <img src="https://i.imgur.com/oGJnkHz.png" alt="drawing" width="70%"/>    
 
     
-2. **Actions/Canned response**
+#### 2. **Actions/Canned response**
 
 You can add [agent actions](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions) / [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown. This can be used for frequent actions/replies so that the agent can simply select an action or canned response instead of typing the whole message multiple times.    
 
@@ -33,13 +33,13 @@ You can add [agent actions](https://docs.yellow.ai/docs/platform_concepts/inbox/
 Use # to view the canned responses and / to view the actions. 
 :::
 
-3. **Upload image/files/emojis**
+#### 3. **Upload image/files/emojis**
 
 Upload images/files to your message and add emojis to your text to make the conversation more interactive. 
     
 ![](https://i.imgur.com/54e5PWh.jpg)
 
-4. **Internal notes**
+#### 4. **Internal notes**
 
 This can be used to take notes/jot down the pain points/summarise the chat sent by the user. It is mostly used before transferring the chat to another agent. 
 The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin).  
@@ -48,18 +48,21 @@ The messages typed in internal notes will not be visible to the bot users. It wi
     
 <img src="https://i.imgur.com/NkEPDVb.png" alt="drawing" width="50%"/>    
 
-5. **Translate**  
+#### 5. **Translate**  
 
-When [auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is configured, the messages sent by the users in regional languages are automatically translated to English to the agents on the chat. 
-The reply- text typed in one language can be translated to the other by enabling the auto-translate toggle and selecting the respective language to which the reply must be translated.  
+When [auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is configured, the messages sent by the users in regional languages are automatically translated to [Agent's default language](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#-1-agent-settings) (English by default) to the agents on the chat. Once the customers language is detected, the messages sent by the agent are translated to the customers language. 
 
+The toggle displayed in the below image is the language identifier. For example, if the user responds in French, the language in the toggle is updated to French. 
+
+**Purpose of the translate toggle** (used in rare cases)          
+Assume, the user has typed a sentence and the language is detected as French (using google translate) and updated on the toggle. The agent identifies this language to be Italian. The agent can change the language on the toggle for better translation. 
 
 ![](https://i.imgur.com/N6emsoU.png)
 
 <img src="https://i.imgur.com/QK8T02e.png" alt="drawing" width="50%"/>    
 
 
-6. **Save or share chats**
+#### 6. **Save or share chats**
 
 Chats can be saved in CSV and PDF format to the local system. 
 Chats can be shared with anyone by clicking the **chat copy URL** icon and sharing the link with the respective person.   
@@ -84,7 +87,7 @@ The following user details are available on this screen to provide agents with m
 |Chat details|Ticket ID| Assigned when the live chat request is created|
 ||Description| Added when the live chat is raised|
 ||Priority|Added when the live chat is raised (initially through Raise ticket action node)|
-||Language|Conversation language is displayed here. Can be changed as per the auto-translate language |
+||Language|Conversation language is displayed here when [auto-translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is enabled. Can be changed by the agent |
 ||Tags| Chats can be tagged by the agent. Select the [available tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) from the dropdown|
 ||Note|Agents can add a note regarding the conversation|
 ||Customer name|Name can be updated by the agent after confirming it with the customer|
@@ -110,12 +113,12 @@ Custom fields can be marked for required to transfer /close tickets while creati
 
 - In the below image, **Order ID** is the custom field that must be entered to transfer/resolve this chat. 
 
-<img src="https://i.imgur.com/QLMOAPw.png" alt="drawing" width="50%"/>   
+<img src="https://i.imgur.com/QLMOAPw.png" alt="drawing" width="40%"/>   
 
 
 - When the required field is entered, **Transfer** and **Resolve** buttons are clickable. You can select the next action.
 
-<img src="https://i.imgur.com/2VlG6GP.png" alt="drawing" width="55%"/>     
+<img src="https://i.imgur.com/2VlG6GP.png" alt="drawing" width="40%"/>     
 
 
 
@@ -150,9 +153,9 @@ Resolved chats can be Reopened.
 
 To Transfer/Resolve/Reopen multiple chats, follow the steps below: 
 
-- Select the required chats (you can also select all).
+- By hovering over a chat avatar (display image) you will see the select option, select the required chats (you can also select all).
 
-<img src="https://i.imgur.com/7b4DlPw.png" alt="drawing" width="60%"/>   
+<img src="https://i.imgur.com/7b4DlPw.png" alt="drawing" width="50%"/>   
 
 - **Resolve**   
 
@@ -168,8 +171,14 @@ Select the Group/Agent name and confirm the transfer.
 ![](https://i.imgur.com/nivfDTH.png)
 
 - **Reopen**  
+ 
+Reopening an old chat will create a new chat (with new ticket ID).     
 
-Mark **priority** as Low/Medium/High (Default=high), Select the **group/agent** (Default=automatic), Add **tags** if required and add a **description** (mandatory). Click **Reopen**.
+As a Inbox admin, to Reopen a chat:
+- Mark **priority** as Low/Medium/High (Default=high).
+- Select the required **group/agent**. By default, the value in this field is Automatic, which means as soon as the ticket is reopened, it will be assigned to the next available agent irrespective of the group or any defined logic. 
+- Add **tags** if required and add a **description** (mandatory). 
+- Click **Reopen**.
 
 ![](https://i.imgur.com/OVNAirZ.png)
 
