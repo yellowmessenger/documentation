@@ -26,18 +26,18 @@ To configure video calls, it must be enabled on the settings page, agents page, 
 
 ### 1.1 Enable Video call from inbox settings
 
-Video calling must be enabled for your customer to be able to avail of this functionality. 
-Video call must be enabled:  
-1. As a feature itself, on inbox settings.
-2. For each of the individual agents. 
+To avail of this functionality for your customers, Video call must be enabled:  
+1. Through Inbox settings
+2. For each of the individual agents
 
 
-This can be achieved through inbox settings, explained in detail [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/video-call-settings).
+This steps are achieved through Inbox settings, explained in detail [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/video-call-settings).
 
+![](https://i.imgur.com/oDxRiD9.png)
 
 ### 1.2 Raise a video call for each live chat
 
-You can raise a video call for a live chat by setting it up in the Studio flow. 
+You can allow the customer to raise a video call for a live chat by setting it up in the Studio flow. 
 
 Follow the below steps to enable video call through the Raise ticket node: 
 
@@ -48,24 +48,36 @@ Follow the below steps to enable video call through the Raise ticket node:
     ![](https://i.imgur.com/5OuBB2P.png)
 
 :::info 
-If you add **Auto start call** to the **Voice ticket options** field (optional), it automatically starts the video for the end customers if the channel is **web widget**. 
-This will not work for other channels. 
+**Complete video call option**
+
+- If you add **Auto start call** to the **Voice ticket options** field (optional) on the Raise ticket node, the customer can directly initiate a video call (that is, without having to textually converse with a live agent, the agent will be assigned and customers screen switches to video call).
+- There will be no live chat between the Agent and customer as they are directly connected via. video call. 
+- This is currently available only if the channel is **Web widget**. 
 :::
 
 -----
 
 ## <a name="usage"></a> 2. Video calling workflow 
 
-Video calls can directly be initiated with the agent or the customer can switch to video calls while chatting with an agent. 
-For example, if the customer is not able to fully understand the solution that you're recommending.
-
-for example, this is where the customer is unable to understand the solution that the agent is recommending, or if there is something that can be resolved only via video/ images, the agent or customer can switch to the video call (when the functionality is enabled).
-
-<img src="https://i.imgur.com/EAIojQz.png" alt="drawing" width="50%"/>
+Agents can tend to their customer, share their screen, focus their products, provide consultation and superior customer experience, with a click of a button by using the video calling feature.
 
 
 
-When the customer has accepted to have a video call with the agent, Agent can initiate the call. 
+While resolving a query on live chat, Agents/customers might encounter instances where the solution is dependent on understanding the query through video call. For example: to fix a WIFI modem. In these situations a video call can be initiated. 
+
+> This switch from live chat to video call is possible when the **Video call** option is selected on the Raise ticket node. 
+
+
+- On the customers side the call option(icon) is disabled by default (unless **Voice call** is enabled within Raise ticket node). 
+- When the call icon is enabled, customers can request for a video call, agent gets notified, agent can join the video call and understand the query. 
+- Similarly, when an agent wants to understand the customer query better, they can request for video call and the customer can join the video call. 
+
+    <img src="https://i.imgur.com/EAIojQz.png" alt="drawing" width="50%"/>
+
+
+:::note
+Resolving a query on video call does not mean that the ticket is resolved. After disconnecting the video call, the agent must resolve the live chat by clicking the **Resolve** button on the chat screen.
+:::
 
 ### 2.1  Agent side video calling features 
 
@@ -92,7 +104,7 @@ When the customer has accepted to have a video call with the agent, Agent can in
 
 ### 2.2 Customer side video calling features
 
-- Customer must click on the phone icon to receive/ initiate the call with the agent. 
+- Customer must click on the phone icon to receive/initiate the call with the agent. 
 
     <img src="https://i.imgur.com/nSHQYWe.png" alt="drawing" width="60%"/>
 
@@ -100,7 +112,9 @@ When the customer has accepted to have a video call with the agent, Agent can in
 
     <img src="https://i.imgur.com/YhzCYQq.png" alt="drawing" width="50%"/>
 
+- To minimize the video call screen and view the chat screen, customers can click the message button. For example: if the agent has sent a URL for registration during video call, customer can minimize or maximize video call to view the chat screen. 
+
+    <img src="https://i.imgur.com/4QDTgSg.png" alt="drawing" width="50%"/>
 
 
-This is how an agent can tend to their customer, share their screen, focus their products, provide consultation, superior customer experience, and work with those solutions with a click of a button.
 

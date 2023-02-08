@@ -12,7 +12,9 @@ Only an Inbox admin can download reports.
   
 This section displays the reports of all the chats handled by the agents, their activity, and their performance during their interaction with the users.
 
-Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#3-default-agent-status) to know why are reports necessary and what are the parameters tracked in the report. 
+> The data available in these reports are for the period of last 30 days.         
+> To download reports for different time frames, you can use Insight's [Data explorer](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer).          
+> You cannot use Data explorer with only Inbox admin or Inbox agent access. Contact your bot admin and request for the suitable [access](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#1-share-bot-access).
   
 
 ![](https://i.imgur.com/ghVIVmj.png)

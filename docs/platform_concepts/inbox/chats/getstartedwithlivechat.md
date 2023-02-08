@@ -77,8 +77,8 @@ If either of the below conditions is true, the live chat raised will not be assi
 > A limit is set that each agent can handle 5 live chats and there are 2 agents. 10 live chats are raised and they are in the assigned state.  In this case, when an 11th live chat is raised and the chat queues are enabled, it will be queued and found under queued chats.
 
 
-Users will be notified that these live chats are in the queue and they will have a waiting time. 
-When any agent's status becomes available or the concurrency is changed, the live chat automatically gets assigned to an agent without any manual intervention. 
+Users will be notified with the position in which these live chats are in the queue. 
+When any agent's status becomes available or the concurrency is changed, the live chat gets assigned automatically to an agent without any manual intervention. 
 
 :::info
 
@@ -89,11 +89,11 @@ Advanced customers can have a dedicated supervisor who can keep a look at all th
 
 ### 1.4 Open Chats
 
-When a live chat is raised outside the [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours) and there is no agent available to handle it, live chats will be found under open chats.
-Open chats will be automatically assigned to the agents when they log in/ become available. 
+When a live chat is incoming and there are no inbox agents available (inside or outside [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours)) to take this live chat, Open chats are created. 
+Open chats will be automatically assigned to the agents when they log in/ become available when **Auto assign tickets** on [Offline handling setting](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) is enabled. 
 
 :::note
-Generally, users cannot raise a ticket outside working hours unless [offline ticketing](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) is enabled.
+Generally, customers cannot request for live chats outside working hours unless [offline handling](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) is enabled.
 :::
 
 
@@ -107,12 +107,12 @@ Admins can see all the resolved chats, while the agents can see only their resol
 This is the ultimate fallback. When a chat doesn't belong to any other category of chats, it becomes a missed chat.
 There are multiple ways in which a chat can move under missed chats. For example:  
 
-1. Inbox settings hamper the experience of chats going into other categories. 
-2. Raise ticket node (flow) is not configured correctly.
-3. Chat queues are not enabled in the setting, the chat that must be queued moves to missed chat. 
-4. Offline ticketing is not enabled in the setting, the chat that must be open moves to missed chat. 
+1. When the Inbox settings hamper the experience of chats going into other categories. 
+2. When the Raise ticket node (flow) is not configured correctly.
+3. When Chat queue is not enabled in the Inbox setting, the incoming live chat that must be available under Queued chats moves into missed chats. 
+4. When Offline handling is not enabled in the Inbox setting, the incoming live chat that must be available under Open chats moves into missed chats. 
 
-When any raise ticket action fails due to inbox settings that can be controlled (for example, if offline ticketing is disabled, group queue is not configured, etc.), the chat will be available in missed chats.
+When any raise ticket action fails due to Inbox settings that can be controlled (for example, if offline handling is disabled, group queue is not configured, etc.), the chat will be available in missed chats.
 
 > The chats do not move into missed chats for cases that are not controllable (like the bot server is down, technical error, bot shut down).
 
@@ -121,6 +121,9 @@ When any raise ticket action fails due to inbox settings that can be controlled 
 
 All the conversations that happen on the bot will be visible here (for admins and agents). This is an entire conversation, irrespective of the live chat request raised. 
 The purpose of this section is to monitor the bot responses. If the conversation is not going as expected, agents can take the control over from the bot and converse with the user. 
+
+> - For advance functionalities, you can see the [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs) in **Studio**. For example: To check if the bot is responding correctly, you can check the conversation logs.             
+> - If you have only Inbox agents/admins access consult your bot admin for Studio access. 
 
 
 :::note
