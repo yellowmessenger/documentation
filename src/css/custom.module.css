@@ -397,6 +397,7 @@ li img {
 [class^="menu__link menu__link--sublist menu__link--active"] {
   font-weight:600;
   color: var(--ifm-link-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* HEADINGS & BODY FONTS */
@@ -426,7 +427,7 @@ h6 {
 
 
 [class^=docTitle] {
-  font-family: 'roboto';
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
 }
 
@@ -436,7 +437,20 @@ h6 {
 
 
 [class^="markdown"]>p {
-  font-family: 'roboto';
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.markdown li {
+  overflow-wrap: break-word;
+  font-size: 14px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+ul, ol {
+  font-family: system-ui;
+  font-size: 14px;
+  line-height: 24px;
 }
 
 
@@ -521,11 +535,7 @@ p {
 
 }
 
-.markdown li {
-  font-size: 14px;
-  line-height: 24px;
 
-}
 /* Algolia Search */
 
 [data-theme='light'] .DocSearch {
