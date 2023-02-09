@@ -1,19 +1,19 @@
 export const popularSearchItems = [
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate",    
-    title: "Create and launch WhatsApp notification campaigns",
+    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine",    
+    title: "Send notifications using APIs",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration",
-    title: "Send WhatsApp Notifications",
+    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
+    title: "Send WhatsApp notifications",
   },
-  {
+  { 
     url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate",
-    title: "Create WhatsApp Notification Templates",
+    title: "Create WhatsApp notification templates",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate",
-    title: "What is a WhatsApp notification campaign?",
+    url: "https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub",
+    title: "Events & triggers",
   },
   {
     url: "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate",
@@ -21,11 +21,11 @@ export const popularSearchItems = [
   },
   {
     url: "https://docs.yellow.ai/docs/platform_concepts/studio/api/receive-data#how-to-access-data-from-an-apiresponse",
-    title: "Access data from an API response",
+    title: "Access data from API response",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration",
-    title: "Setup a WhatsApp chatbot",
+    url: "https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported",
+    title: "Bot multi-lingual support",
   },
 ];
 
