@@ -1,5 +1,5 @@
 ---
-title: Connect your knowledgebase to google tag manager(GTM)
+title: Integrate your knowledge base with google tag manager(GTM)
 sidebar_label : Integrate KB with GTM
 ---
 
@@ -47,7 +47,7 @@ To integrate GTM with your knowledge base, follow the steps below:
 
 7. Enter/paste your **GTM ID** (step#2). 
 
-    **Sample GTM ID** (GTM-6 digit alphanumeric value): ```GTM-5w2s8t```
+    **Sample GTM ID** (GTM- 7 digit alphanumeric value): ```GTM-KCDNK7H```
     
 8. Manually verify if your GTM ID is correct. Click **Connect**. 
 

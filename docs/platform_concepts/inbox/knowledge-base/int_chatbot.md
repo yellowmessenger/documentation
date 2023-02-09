@@ -42,17 +42,17 @@ To connect a chat widget, follow the below steps:
 
 6. Manually verify if the entered code is correct. Click **Connect**. 
 
-![](https://i.imgur.com/7Vthk1C.png)
+    ![](https://i.imgur.com/7Vthk1C.png)
 
 7. You can **Preview** the bot to see if it is functioning as expected. 
 
-![](https://i.imgur.com/6ae0HKg.png)
+    ![](https://i.imgur.com/6ae0HKg.png)
 
 #### Debug the bot code/ Delete bot on KB
 
 8. If the bot is not functioning as expected on the Knowledge base, you must **Disconnect** the bot from the Chatbot integration page and add the new(corrected) code again(step #5). 
 
-![](https://i.imgur.com/KdHqo6J.png)
+    ![](https://i.imgur.com/KdHqo6J.png)
 
 > You can **Disconnect/Connect** the bot as and when required. 
 

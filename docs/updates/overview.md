@@ -59,7 +59,7 @@ featured: true
 
 | New features | Summary | 
 | -------- | -------- | 
-| **New Marketplace templates**  |<ol><li> [**Freshdesk ITSM Automation**]((https://cloud.yellow.ai/marketplace/dca1d59ce6e964706377341cf239082f)): This template covers some of the common use cases of ITSM automation with Freshdesk integration like creating tickets, updating tickets, adding watchers, viewing lists of tickets, and viewing agent tickets.</li> <li>[**Magento (E-commerce use cases)**]((https://cloud.yellow.ai/marketplace/5f9cb21beb6a9b8c3de2129b5d9b88ec)): This template covers some of the common use cases in E-commerce, like browsing products, cart management, checkout, customer logic, etc. This is also integrated with Magento.</li></ol>| 
+| **New Marketplace templates**  |<ol><li> [**Freshdesk ITSM Automation**](https://cloud.yellow.ai/marketplace/dca1d59ce6e964706377341cf239082f): This template covers some of the common use cases of ITSM automation with Freshdesk integration like creating tickets, updating tickets, adding watchers, viewing lists of tickets, and viewing agent tickets.</li> <li>[**Magento (E-commerce use cases)**](https://cloud.yellow.ai/marketplace/5f9cb21beb6a9b8c3de2129b5d9b88ec): This template covers some of the common use cases in E-commerce, like browsing products, cart management, checkout, customer logic, etc. This is also integrated with Magento.</li></ol>| 
 
 | Enhancements | Summary   |
 | -------- | -------- |
