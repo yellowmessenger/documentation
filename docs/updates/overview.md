@@ -4,9 +4,11 @@ sidebar_label: January 2023
 featured: true
 ---
 
+<!--
 
 ![](https://i.imgur.com/i9fqbZw.png)
 
+-->
 
 ## Studio 
 
@@ -14,7 +16,7 @@ featured: true
 | New features | Description | 
 | -------- | -------- | 
 | **Orchestrator for Cloud Bots** <br/> | You can now create a family of bots, where one parent bot connects to multiple child bots with the following functionalities: <br/> <ol><li> **Unify Inbox**: Any ticket created in a child bot shall be redirected to the Inbox of the parent bot. This allows you to handle all the tickets in one place.<br/></li><li>**Additional Channel Support**: Connect the parent bot to Viber, Viber Business, FB Messenger, Yellow Messenger, Whatsapp, Google Assistant, Line, and MS Teams.</li></ol>   * **Note**: Only supported for cloud bots.* <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator)   | 
-| **Conversation Designer to <br/>design conversations before development**  | A simple easy-to-use tool for anyone to design conversations, preview them, and  hand them off for development. <br/><br/>Once your design is done and the preview is approved, open the builder and your designs will automatically get converted into builder nodes, ready for integration. <br/><br/>You can also use variables, conditions, and set fallbacks for common validators (Name, Email, and Phone).<br/>Contact [Anirudh Shenoy](mailto:anirudh.shenoy@yellow.ai) for support.<br/> * **Note**: Designer is enabled for all bots created on and after Jan 19, 2023.*|
+| **Conversation Designer to <br/>design conversations before development**  | A simple easy-to-use tool for anyone to design conversations, preview them, and  hand them off for development. <br/> Once your design is done and the preview is approved, open the builder and your designs will automatically get converted into builder nodes, ready for integration. <br/> You can also use variables, conditions, and set fallbacks for common validators (Name, Email, and Phone).<br/> * **Note**: Designer is enabled for all bots created on and after Jan 19, 2023.* <br/> Contact [Anirudh Shenoy](mailto:anirudh.shenoy@yellow.ai) for support.|
 
 <!-- >  Contact [Anirudh Shenoy](mailto:anirudh.shenoy@yellow.ai) for support. -->
 
@@ -37,7 +39,7 @@ featured: true
 | New features | Summary |
 | -------- | -------- |
 | **Notifications tab to receive all the Inbox updates**  | You can see actionable notifications for new updates on the tickets assigned to agents in one place. Admins can enable and configure specific events to notify each role i.e Agents, Supervisors, and Admins. <br/>* **Note**: Can be configured for other modules.*   <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/account/notification)     |
-| **Pagination logic updated for knowledge base** <br/>  | Search results in External knowledge base are now paginated for better user experience and navigation. <br/>* **Note**: Can be configured for other modules.* |
+| **Pagination logic updated for knowledge base** <br/>  | Search results in External knowledge base are now paginated for better user experience and navigation. |
 
 
 ## Engage
@@ -47,7 +49,7 @@ featured: true
 | New features | Summary |
 | -------- | -------- |
 | **Engage Overview ashboard for all the Bots on Cloud Platform**  |Engage Overview Dashboard gives customers and Engage Users to view their User 360, Outbound Campaign, and Notifications API usage for upto past 30 days and shows trends of the different available metrics in their respective graphs.<br/>* **Note**: This data will not be used for billing purposes.*<br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/engage-overview) |
-| **Mobile push notifications for engaging with users in a conversational and interactive way** | Engage push notifications are designed to route users directly to the in-app bot. <br/><br/>This allows for a seamless transition from receiving a notification to having a conversation with the brand, making the campaign more personalized and effective.<br/> Learn more: [**Android**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android_push), [**iOS**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android_push), [**Mobile**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/mobilepush#docusaurus_skipToContent_fallback) | 
+| **Mobile push notifications for engaging with users in a conversational and interactive way** | Engage push notifications are designed to route users directly to the in-app bot. <br/>This allows for a seamless transition from receiving a notification to having a conversation with the brand, making the campaign more personalized and effective.<br/> Learn more: [**Android**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android_push), [**iOS**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/android_push), [**Mobile**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/mobilepush) | 
 
 
 
@@ -74,8 +76,8 @@ featured: true
 
 
 
-| New features | Summary | Learn more |
-| -------- | -------- | ---- |
+| New features | Summary | 
+| -------- | -------- |
 | **Billdesk Payment gateway**  | New integration,  Billdesk Payment gateway is added to allow you to receive payments from your customers using BillDesk EmailPay.   <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/billdesk-emailpay)    |
 
 
@@ -87,7 +89,7 @@ featured: true
 
 | Enhancements | Summary |
 | -------- | -------- |
-| **STT and TTS language availability**  | <ol><li>**Speech-to-text** is now available for English, Hindi, Tamil, Kannada, and Slovak. </li><li>**Text-to-speech** is now available for English, Hindi, Tamil, and Slovak.</li></ol><br/>This is a paid feature. Contact [Akshay Bhat](mailto:akshay.bhat@yellow.ai) for support. |
+| **STT and TTS language availability** (Paid feature) | <ol><li>**Speech-to-text** is now available for English, Hindi, Tamil, Kannada, and Slovak. </li><li>**Text-to-speech** is now available for English, Hindi, Tamil, and Slovak.</li></ol>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/speech-to-text). <br/> Contact [Akshay Bhat](mailto:akshay.bhat@yellow.ai) for support. |
 | **Updated Accessibility Compliance - Level A**  | <ol><li>**Non-text Content**: User interface must have a text alternative that describes its purpose. </li> <li>**Use of Color**: Color must not be used as the only visual means for conveying meaning.</li><li> **Keyboard**: All controls and functions that can be used with a mouse must be reachable and operable with the keyboard.</li><li>**Focus order**: Components must receive focus in an order that preserves meaning and operability.</li></ol> |
 | **Widget Setup/Settings update**  | Widget Setup/Settings Page is updated to configure the chat functionalities.<br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget)     |  | 
 | **Mobile SDK enhancements**  |  1. Count of online users are displayed - iOS. <br/> 2. Collaborator Search is available in Inbox App - iOS.|
