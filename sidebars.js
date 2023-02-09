@@ -888,6 +888,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/teams",
             "platform_concepts/channelConfiguration/telegram",
             "platform_concepts/channelConfiguration/viber-for-business",
+            "platform_concepts/channelConfiguration/line",
             
           ]
         },

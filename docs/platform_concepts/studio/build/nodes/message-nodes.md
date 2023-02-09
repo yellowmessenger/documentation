@@ -74,6 +74,16 @@ Display information using a carousel card with this node.
 
 ![](https://i.imgur.com/2iS11MA.png)
 
+To disable the carousel list after a button has been clicked, 
+
+Go to the Carousel node and click the **settings** icon.
+
+![](https://i.imgur.com/XnzkjGq.png)
+
+Enable **Disable action after click** and click **Save**.
+
+![](https://i.imgur.com/0jQjuQp.png)
+
 ---
 
 ## 4. Video 
