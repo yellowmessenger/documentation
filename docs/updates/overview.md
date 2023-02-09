@@ -1,11 +1,11 @@
 ---
-title: Our latest product updates
+title: Yellow.ai platform latest releases
 sidebar_label: January 2023
 featured: true
 ---
 
 
-![](https://i.imgur.com/i9fqbZw.png)
+![](https://i.imgur.com/Wj06Bz6.png)
 
 
 ## Studio 
