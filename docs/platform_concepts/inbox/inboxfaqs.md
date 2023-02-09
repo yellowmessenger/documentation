@@ -90,3 +90,21 @@ WhatsApp templates created with <a href="https://developers.facebook.com/docs/wh
 	
 </div>
 </details> 
+
+**Knowledge base**
+
+<details>
+<summary> How can I integrate Google Analytics with knowledgebase?</summary>
+<div>
+We do not support a native integration for Google Analytics in v1 KB integrations. However you can integrate Google Analytics(GA) by connecting GA to a GTM account and then use Inbox KB's GTM Integration to avail the data.
+</div>
+</details>
+
+
+<details>
+<summary> How can I embed Intercom bot? </summary>
+<div>
+Use Chatbot integration to add the intercom bot source code.
+</div>
+</details>
+

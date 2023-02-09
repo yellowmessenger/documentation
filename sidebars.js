@@ -413,7 +413,6 @@ module.exports = {
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/chats/videocall",
             "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
-            "platform_concepts/inbox/chats/instagrampolicy",
                  ],
          },
 
@@ -496,6 +495,8 @@ module.exports = {
            // "platform_concepts/inbox/knowledge-base/kboverview",
             "platform_concepts/inbox/knowledge-base/edit-publish-articles",
             "platform_concepts/inbox/knowledge-base/managingcategories",
+            "platform_concepts/inbox/knowledge-base/int_chatbot",
+            "platform_concepts/inbox/knowledge-base/int_gtm",
                  ],           
        },
 
