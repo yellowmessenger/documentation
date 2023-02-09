@@ -20,17 +20,6 @@ Welcome message is supported only for web and app SDK and it is not supported fo
 </details>
 
 <details>
- <summary>How do I link one flow to another flow for a bot?
-</summary>
- <div>
-  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow">Execute Flow</a> to link  another flow to a bot.
-​
-</div>
-  <br/>
-   </div>
-</details>
-
-<details>
  <summary>Is it possible to skip triggering NLU for specific steps of a flow?
 </summary>
  <div>
@@ -128,6 +117,29 @@ You can also do this in the carousal by [creating your own custom/dynamic object
 </details>
 
 <details>
+ <summary>How to retrieve multiple data from the database node?
+</summary>
+
+<div>
+ <div>
+
+ Create  <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code"> function </a> and extract the data from the variable that <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-4-store-and-access-variables-via-nodes">stored the DB response.</a>
+
+ Write
+
+ ```
+ let records = data.variables.db_response.records
+ console.log(records, "records")
+ ```
+
+ Log the result and check the data. After this you can use the data based on your use case.
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
  <summary>Why am I getting a fallback message even when WhatsApps list message is configured?
 </summary>
  <div>
@@ -138,7 +150,7 @@ You can also do this in the carousal by [creating your own custom/dynamic object
    </div>
 </details>
 
-----
+------
 
 ### Documents
 
@@ -345,4 +357,53 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
    </div>
 </details>
 
+---------
 
+### API
+
+<details>
+ <summary>How to get the exact status code as our API Event Data explorer while getting API responses in a journey?
+</summary>
+
+ <div>
+ <div>
+
+ Create a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code"> function </a> after the API call and apply the below code snippet.
+
+ ```
+ ymLib.args.apiResponse.statusCode
+ ```
+ 
+ </div>
+ <br/>
+ </div>
+ </details>
+
+-------
+
+### Journey(flow)
+
+<details>
+ <summary>How do I link one flow to another flow for a bot?
+</summary>
+ <div>
+  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow">Execute Flow</a> to link  another flow to a bot.
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>How to export/clone a journey to another bot?
+</summary>
+
+ <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow#-1-export-bot-template">Export the template of that journey</a> and <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow#14-view-approved-template-in-marketplace"> import it </a> to the bot of your preference.
+
+ <div>
+  <div>
+​
+</div>
+  <br/>
+   </div>
+</details>
