@@ -34,19 +34,19 @@ To create a Line business account, follow these steps:
 
     <img src="https://i.imgur.com/4qH82tx.png" alt="drawing" width="40%"/>
 
-4. After signing up for your account, click **Continue**.
+3. After signing up for your account, click **Continue**.
 
     <img src="https://i.imgur.com/M6kOyQu.png" alt="drawing" width="40%"/>
 
-5. Enter the required information in the respective fields and click **Continue**.
+4. Enter the required information in the respective fields and click **Continue**.
 
     <img src="https://i.imgur.com/woSZAU4.png" alt="drawing" width="80%"/>
    
-6. Verify your account info and click **Submit**.   
+5. Verify your account info and click **Submit**.   
 
-   ![](https://i.imgur.com/xWoyO9a.png)
+   <img src="https://i.imgur.com/xWoyO9a.png" alt="drawing" width="80%"/>
 
-7. Your Line account wii be created successfully. 
+6. Your Line account will be created successfully. 
 
 ## 2. Setup Line channel using developer portal
 
