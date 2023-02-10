@@ -18,3 +18,4 @@ Multilingual Knowledge base is a self serve medium to automate incoming support 
 - Customers can also create and maintain knowledge bases for agents [Internal Knowledgebase] to train and onboard them faster and help them in need. It helps agents reduce the time taken to search for information spread across multiple systems and share it in the tickets they're handling.
 - The search functionalities in knowledgebase are powered by [Document cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition).
 
+> To configure knowledgebase, refer to [KB settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain).
