@@ -24,10 +24,12 @@ In this article, you will understand the two different methods in which the emai
 
 
 1. Log in to [yellow.ai](https://cloud.yellow.ai/) platform and open **Inbox** > **Tickets**.
-![](https://i.imgur.com/W8lAIJ6.png)
+
+    ![](https://i.imgur.com/W8lAIJ6.png)
 
 2. The landing page will have a ticket list and count, Sort and filter options, manual ticket creation, SLA messages, email details (agent ID, ticket ID, subject line, ticket creation time), priority, ticket status, and assigned group/agent. 
-![](https://i.imgur.com/JZ5SPUk.png)
+
+    ![](https://i.imgur.com/JZ5SPUk.png)
 
 
 
@@ -45,9 +47,11 @@ In this article, you will understand the two different methods in which the emai
 ## 2. Email tickets detailed view 
 
 1. Log in to [yellow.ai](https://cloud.yellow.ai/) platform and open **Inbox** > **Tickets**.
-![](https://i.imgur.com/W8lAIJ6.png)
+
+    ![](https://i.imgur.com/W8lAIJ6.png)
 2. Click on any of the ticket grids, and the detailed view of that respective ticket opens. 
-![](https://i.imgur.com/03mgNXK.png)
+
+    ![](https://i.imgur.com/03mgNXK.png)
 
 ---------
 
@@ -57,7 +61,7 @@ In this article, you will understand the two different methods in which the emai
 | -------- | -------- | -------- | 
 |**Title**|Ticket ID# and Subject are displayed on the top of the ticket thread| ![](https://i.imgur.com/g7mIP1p.png)|
 |**Copy and Download transcript**| You can copy the link to the transcript or download the transcript of the chat in this ticket- Be mindful of the user information provided in the chat|![](https://i.imgur.com/2nRy1TC.png)|
-|**SLA**|SLA log will be displayed with **Resolution in** time. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/slaintro#11-view-sla-time-log).|![](https://i.imgur.com/Hn7eqm4.png)|
+|**SLA**|SLA log will be displayed with based on the SLA policy applied for this ticket. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/slaintro#11-view-sla-time-log).|![](https://i.imgur.com/Hn7eqm4.png)|
 |**Email thread**|To and from messages along with the sent/received time|![](https://i.imgur.com/Jt2pUy3.png)|
 
 -----------
@@ -90,6 +94,8 @@ In this article, you will understand the two different methods in which the emai
 - **Group/Agent**: You can assign the email conversation to a Group (which gets [auto-assign](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic) to an agent) or you can assign this thread to an agent. Configure Email [group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) and [agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents). 
 - **Collaborator**: More than one agent can help to resolve a ticket (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.
 - **Tags**: You can tag this conversation to any of the configured [tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags). 
+
+
 <img src="https://i.imgur.com/v9DTmA0.png" alt="drawing" width="60%"/> 
 
 
@@ -99,6 +105,7 @@ In this article, you will understand the two different methods in which the emai
 ### 2.4 Contact details 
 
 This section contains a timeline of all the activities that are happening with this email contact. You can view the details by clicking the **Contact name**. Click **View all** to see all the details on the [Contacts tab](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts#--2-send-proactive-notification-to-a-contact).
+
 <img src="https://i.imgur.com/VwROLWL.png" alt="drawing" width="60%"/> 
 
 ---------
@@ -106,5 +113,6 @@ This section contains a timeline of all the activities that are happening with t
 ### 2.5 Activity log 
 
 The activity log consists summary of all the changes/updates that have taken place on this ticket (ticket ID). For example, Change of status/priority, Transfer of ticket from one agent to another, Reopening of the ticket, Breach of SLA, etc. 
+
 <img src="https://i.imgur.com/QEjd8th.png" alt="drawing" width="60%"/> 
 

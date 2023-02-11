@@ -4,6 +4,9 @@ sidebar_label: January 2023
 featured: true
 ---
 
+
+![](https://i.imgur.com/Wj06Bz6.png)
+
 <!--
 
 ![](https://i.imgur.com/Wj06Bz6.png)

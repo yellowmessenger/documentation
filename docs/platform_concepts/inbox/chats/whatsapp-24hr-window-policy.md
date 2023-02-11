@@ -58,3 +58,6 @@ To reinitiate the expired WhatsApp chats, follow the given steps:
 
 <img src="https://i.imgur.com/qyhUsRy.png" alt="drawing" width="60%"/>
 
+:::note
+As an agent, you can reply (or continue the conversation) on WhatsApp chat only after the customer has replied back to the sent template/message.
+:::

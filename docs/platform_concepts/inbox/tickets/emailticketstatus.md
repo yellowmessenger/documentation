@@ -41,40 +41,6 @@ These statuses will affect everything from SLA timers to workflows, as an increm
 
 :::note
 
-- If a user replies back on the same thread and the ticket is resolved, the ticket will be set to assigned and will be **assigned** (and it will be assigned to the same agent it was previously assigned). 
-- If the agent profile is unavailable/the assignment fails:
-    - Ticket is set to assigned.  
-    - Status is set to open.
+If a user replies back on the same thread and the ticket is resolved, the ticket will be reopened and the status will change to in-progress (and it will be assigned to the same agent it was previously assigned). 
 :::
-
-
-## <a name="2"></a> 2. Status transition from different views
-
-### 2.1 Ticket list view
-
-
-* If an agent creates a ticket and the ticket is assigned to him, the ticket is created and the agent will be directed to the **ticket details view**.
-* If an agent creates a ticket and the ticket is not assigned to him, the ticket is created and the agent will be directed to the **ticket list view**.
-* If the agent creates a ticket and sets the status to **Resolved**/**Pending**/**on-hold**, the ticket is created and the agent will be directed to the **ticket list view**. 
-* If the agent creates an unassigned ticket, new ticket status is assigned and the agent will be directed to the **ticket detail view**. 
-* If the agent creates a ticket that is unassigned and sets the status to **Resolved**/**Pending**/**On-hold**, the ticket is created and the agent will be directed to the **ticket list view**. 
-
-![](https://i.imgur.com/RAO9y0C.png)
-
-
-### 2.2 Ticket details view
-
-* When an agent sends from the respective ticket page, the agent will remain on the page (view mode). 
-* When an agent sends a reply and sets the status in ticket details as **Resolved**/ **Pending**/ **Hold**, the ticket status will be updated and the agent will be redirected back to his ticket list view. 
-
-![](https://i.imgur.com/31nUXNV.png)
-
-
-
-
-
-
-
-
-
 
