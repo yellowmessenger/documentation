@@ -3,9 +3,9 @@ title: Progressive web app
 sidebar_label: Progressive web app
 ---
 
-A Progressive Web App (PWA) is a web-based application that allows you to create an app-like experience for users and can be embedded on the web. It uses web technologies to facilitate features such as push notifications, offline access, and home screen icons.
+A Progressive Web App (PWA) is a web-based application that allows you to create an app-like experience for users and can be embedded on the web. 
 
-A PWA chatbot is designed to embed on desktops, mobile devices, and other web browsers without the need to download or install any native mobile apps. It is used to provide product information, customer support, schedule appointments, and collect customer feedback. PWA chatbots are supported on mobile, desktop, and web browsers such as Chrome, Safari, and Firefox.
+A PWA chatbot is designed to embed on desktops, mobile devices, and other web browsers without the need to download or install any native mobile apps. PWA chatbots are supported on mobile, desktop, and web browsers such as Chrome, Safari, and Firefox.
 
 Let's say that you want to build a standalone bot for your brand. You can use a PWA chatbot to provide a convenient and secure conversational experience for the users.
 
@@ -15,8 +15,9 @@ Let's say that you want to build a standalone bot for your brand. You can use a 
 In this article, you will learn:
 
 * [What are the differences between a chat widget and PWA?](#1-difference-between-chat-widget-and-pwa)
-* [How to install PWA?](#2-install-pwa-chatbot)
-* [How to setup PWA?](#3-setup-pwa-chatbot)
+* [How to setup PWA?](#2-setup-pwa-chatbot)
+* [How to install PWA?](#3-install-pwa-chatbot)
+
 
 ## 1. Difference between chat widget and PWA
 
@@ -29,11 +30,19 @@ You can set the size (Small, Medium, or Large), position (Bottom Left and Bottom
 
 ![](https://i.imgur.com/y5ZRkDG.png)
 
-## 2. Install PWA chatbot
+## 2. Configure PWA chatbot
+
+You can setup a PWA chatbot, which is similar to the chat widget setup, by customizing the bot name, description, font style, font size, primary color, and secondary color. To setup a PWA chatbot, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#1-access-chat-widget).
+
+:::note
+You cannot customise widget size, initial display mode, or the bot icon for PWA chatbots, as these options are not supported.
+:::
+
+## 3. Install PWA chatbot
 
 You can install the PWA chatbot on desktop or mobile via URL.
 
-### 2.1 Install PWA chatbot on your desktop via link
+### 3.1 Install PWA chatbot on your desktop via link
 
 To install PWA chatbot on your desktop, follow these steps:
 
@@ -56,7 +65,7 @@ To install PWA chatbot on your desktop, follow these steps:
    
 6. The PWA chatbot will be removed from your Apps folder.
 
-### 2.2 Install PWA chatbot on your mobile via link   
+### 3.2 Install PWA chatbot on your mobile via link   
 
 To install PWA chatbot on your mobile device, follow these steps:
 
@@ -73,15 +82,6 @@ To install PWA chatbot on your mobile device, follow these steps:
 4. The PWA chatbot app has been installed successfully on your mobile device.
 
     <img src="https://i.imgur.com/dw1mK6H.png" alt="drawing" width="40%"/>
-
-   
-## 3. Setup PWA chatbot
-
-You can setup a PWA chatbot, which is similar to the chat widget setup, by customizing the bot name, description, font style, font size, primary color, and secondary color. To setup a PWA chatbot, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#1-access-chat-widget).
-
-:::note
-You cannot customise widget size, initial display mode, or the bot icon for PWA chatbots, as these options are not supported.
-:::
 
 
 

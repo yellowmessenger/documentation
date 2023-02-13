@@ -20,12 +20,13 @@ SLAs lay out the metrics by which a service is measured, and remedies or penalti
 
 These SLAs are set for email tickets on the Inbox settings page.
 
-> For more details on how to set up and configure an SLA, read [SLA settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/sla). 
-
 
 - By default, there is no SLA applied to the email tickets. SLAs must be active on the settings page. 
 - After the configuration, SLA time logs will be available for all the email tickets that are created via the email channel (it will not be applicable for the email tickets created manually by any agents/admins). 
 - **First response time(FRT)**, **Resolution time(RT)** and **Every response time(ERT)** are the SLA metrics monitored for all the tickets. 
+
+
+> For more details on how to set up and configure an SLA, read [SLA settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/sla). 
 
 ---------------
 
@@ -35,15 +36,14 @@ To view the SLA time log, follow these steps:
 
 1. Open **Inbox** > **Tickets**. 
 2. Open any ticket that was auto-assigned (and not created manually). SLAs will be applicable to particular tickets for which Group/Tag the SLA is configured.
-3. Hover over **SLA achieved**. You can view the SLA achieved by the respective agent for that particular ticket. 
+3. Hover over **SLA log**. You can see the SLA log (SLA achieved/breeched) by the respective agent for that particular ticket. 
 4. SLA details are also updated on the **Activity log** in the bottom right corner. 
 
-![](https://i.imgur.com/66ffsP8.png)
+    ![](https://i.imgur.com/66ffsP8.png) 
 
 5. SLA reminders/escalations/nudges are highlighted on the **Tickets** page along with the ticket details for each ticket. 
 
-
-![](https://i.imgur.com/Uz74f1M.png)
+    ![](https://i.imgur.com/lIQv4tq.png)
 
 
 --------
@@ -54,9 +54,7 @@ In the *ticket list view*, you can [filter tickets](https://docs.yellow.ai/docs/
 
 1. On the email tickets screen, click **Filters**.
 
-![](https://i.imgur.com/5ZmfOqh.png)
-
-
+    ![](https://i.imgur.com/5ZmfOqh.png)
 
 2. Open **Response/resolution due by** and choose your preferred filter:
     - Resolution due by
@@ -65,15 +63,14 @@ In the *ticket list view*, you can [filter tickets](https://docs.yellow.ai/docs/
 
 3. Click **Apply filter**. 
 
+    > You can select the resolution time from the drop-down list or add a custom date to filter the response due time. 
 
-> You can select the resolution time from the drop-down list or add a custom date to filter the response due time. 
-
- ![](https://i.imgur.com/nZO4N5E.png)
+    ![](https://i.imgur.com/nZO4N5E.png)
 
 5. Search results will display the tickets which are filtered for a particular resolution time. For example, if **First response due by** is selected as **Overdue**, all the tickets that have not been replied to will be listed out. 
 6. You can clear old filters by clicking **Clear filters** and adding new ones. 
 
-![](https://i.imgur.com/YjAmBwQ.png)
+    ![](https://i.imgur.com/YjAmBwQ.png)
 
 
 
