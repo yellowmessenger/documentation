@@ -1,6 +1,7 @@
 ---
 title: FAQ Management
-sidebar_label : FAQs
+sidebar_label : FAQ Bots
+tags: [bot answers questions, faq bot, bot to answer questions ,bot that can answer any question, question answer bot, bot that answers questions, question bot]
 ---
 
 FAQs (frequently asked questions) are a list of questions and answers on a specific topic intended to provide basic information to users of the website. These help your business respond to the needs of bot audience more quickly and appropriately.
@@ -9,13 +10,27 @@ On the yellow platform, you can add these FAQs and train the bot so that it fetc
 
 In this article, you will learn:
 
-1. [How to add FAQs?](#add)
-2. [How to add multiple FAQs?](#bulk)
-3. [FAQs for Multilingual bots?](#ml)
-4. [How to train the bot with FAQs?](#train)
+1. [Why have an FAQ bot?](#why-choose-an-faq-bot-over-a-faq-page)
+2. [How to add FAQs?](#add)
+3. [How to add multiple FAQs?](#bulk)
+4. [FAQs for Multilingual bots?](#ml)
+5. [How to train the bot with FAQs?](#train)
  
 
 ----
+## 1. Why choose an FAQ Bot over a FAQ Page?
+
+1. **Interactivity**: Chatbots allow users to interact with the information in a conversational manner, rather than just reading through a static page. This makes the experience more engaging and can help users find the information they need more quickly and easily.
+
+2. **Personalization**: Chatbots can provide a personalized experience by asking questions and tailoring the information they provide based on the user's responses. This can help users find the information they need more quickly and efficiently.
+
+3. **Speed**: Chatbots can provide answers to simple questions almost instantly, which can save users time compared to searching through a long FAQ page.
+
+4. **Analytics**: Chatbots can collect data on user interactions, such as the questions asked and the answers provided, which can help organizations improve their FAQ content over time.
+
+Overall, chatbots offer a more dynamic, personalized, and efficient way for users to find the information they need compared to traditional FAQ pages.
+
+---
 **Where to find the FAQs tab?**
 
 - Open **Studio** > **Train** > **FAQs**. 
@@ -25,7 +40,7 @@ In this article, you will learn:
 
 ---
 
-## <a name="add"></a> 1. Add FAQs
+## <a name="add"></a> 2. Add FAQs
 
 To add FAQs, follow the given steps:
 
@@ -55,7 +70,7 @@ To add FAQs, follow the given steps:
 
 ---
 
-## <a name="bulk"></a> 2. Add FAQs in bulk
+## <a name="bulk"></a> 3. Add FAQs in bulk
 
 To upload multiple questions at once, you can use the bulk import option
 
@@ -112,7 +127,7 @@ You can add quotes manually and save the changes.
 
 
 
-## <a name="ml"></a> 3 Add FAQs for Multilingual bots
+## <a name="ml"></a> 4. Add FAQs for Multilingual bots
 
 To add FAQs for multi-lingual bots, follow the given steps:
 
@@ -164,7 +179,7 @@ To add FAQs for multi-lingual bots, follow the given steps:
 
 ----
 
-## <a name="train"></a> 4. Train and test FAQs
+## <a name="train"></a> 5. Train and test FAQs
 
 **Train**
 
@@ -193,3 +208,8 @@ You can test the results on the preview bot.
 ![](https://i.imgur.com/VdXRpl4.png)
 
 ----
+
+## 6. FAQ bot settings
+
+Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools) to learn about customizing and controllling the behavior of a chatbot designed for frequently asked questions.  
+
