@@ -4,11 +4,11 @@ sidebar_label : Integrate KB with chatbot
 ---
 
 
-> You can connect your knowledge base to any chatbot from the [knowledge base settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain) page. 
+> You can connect any chatbot to your knowledge base from the [knowledge base settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain) page. 
 
-Chatbots that are built on the yellow.ai platform or any other app can be integrated into the inbox knowledge base to help the end-users to use bot functionalities, and connect with the bot or the live agent faster.
+Chat bots(widgets) that are built on the yellow.ai platform or any other app can be integrated into the inbox knowledge base to help the end-users to use bot functionalities, and connect with the bot or the live agent faster.
 
-To connect a chat widget, follow the below steps: 
+To connect a chat bot, follow the below steps: 
 
 1. Open Inbox **settings**. Search and select **Knowledge base**.
 
@@ -28,9 +28,9 @@ To connect a chat widget, follow the below steps:
     ![](https://i.imgur.com/bCwI1Ms.png)
 
 5. Add bot code.
-    - If you want to connect a bot built on any third-party platform, *copy* the chatbot code (without script tags) and *paste* it on the **Bot widget code** box. 
+    - If you want to connect a bot built on any third-party platform, *copy* the chatbot code (without script tags) and *paste* it in the **Bot widget code** box. 
     - To connect your KB with the bot built on the yellow platform, click **Insert bot code**.   
-    (Refer to [Deploy chat widget](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#24-deploy-chat-widget),to fetch bot code from **Channels**)
+    (Refer to [Deploy chat widget](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#24-deploy-chat-widget), to fetch bot code from **Channels**)
     
     ![](https://i.imgur.com/dqmVgrb.png)
 
@@ -54,5 +54,5 @@ To connect a chat widget, follow the below steps:
 
     ![](https://i.imgur.com/KdHqo6J.png)
 
-> You can **Disconnect/Connect** the bot as and when required. 
+> You can **Disconnect/Connect** the bot to your knowledge base as and when required. 
 

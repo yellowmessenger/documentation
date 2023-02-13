@@ -28,7 +28,7 @@ To create an email ticket, follow the steps below:
 1. Open **Inbox** > **Tickets**. 
 2. Click  **+Create ticket**.
 
-![](https://i.imgur.com/sv75A6a.png)
+    ![](https://i.imgur.com/sv75A6a.png)
 
 
 3. Enter the ticket details: 
@@ -37,7 +37,7 @@ To create an email ticket, follow the steps below:
     - **Tags**: Labels configured in the [tags section](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) can be selected form the dropdown. 
     - **Custom fields**: Fields configured for email tickets can be entered here. 
 
-![](https://i.imgur.com/EKgEg2S.png)
+    ![](https://i.imgur.com/EKgEg2S.png)
 
 4. Enter the email details: 
     - **From address**:  This field will be auto-updated with the email ID assigned to the selected group (on ticket details). If the group is not selected on the ticket details, you can select an email ID from the available IDs in the drop-down list. The first email ID will be the default ID. 
@@ -45,11 +45,11 @@ To create an email ticket, follow the steps below:
     - **Subject**: Mandatory field. Enter the email subject. 
     - **Email Body/ Reply**: To create a ticket, text must be entered in the reply section. You can also add [email templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte) to this. 
 
-![](https://i.imgur.com/aIIsL4j.png)
+    ![](https://i.imgur.com/aIIsL4j.png)
 
 5. Click **Create ticket**. 
 
 6. This email ticket will be available in the **Tickets** section. You can track the email thread and maintain all the communications in this ticket. Through this method, agents can reach out to their end users and continue their conversation and provide a resolution within the SLAs and timing constraints, like a regular support ticket.
 
-![](https://i.imgur.com/hGLJV2z.png)
+    ![](https://i.imgur.com/hGLJV2z.png)
 

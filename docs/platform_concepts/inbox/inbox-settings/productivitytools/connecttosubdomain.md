@@ -154,7 +154,7 @@ To customize the site’s banner, logo, and favicon, follow the steps below:
 3rd party Integrations are a means to facilitate the knowledge base with additional capabilities like live chat, tracking customers, and their behavioral data, commenting, etc. 
 These integrations will help you make use of the best tool available to boost the functionality of the current system and share data to get a 360 degree of the end-user journey and their interactions.          
 **Example**:          
-Coolanalytics: With third-party integration, you can track data for the total page visits, time spent by the user on each of the pages along with their demographic data, event-driven analytics, ability to comment, and perform A/B testing.
+By adding Google analytics to your GTM and integrating it with your knowledge base, you can track data for the total page visits, time spent by the user on each of the pages along with their demographic data, event-driven analytics, ability to comment, and perform A/B testing.
 
 To integrate third party tools and apps to your knowledgebase, follow:
 

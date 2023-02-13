@@ -21,10 +21,12 @@ Configure the email channel from the channels module, follow the below steps:
 2. Select **Basic/Advance** and add **Email server**, **Username**, **Password**, etc.  Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound) for detailed documentation.  
 3. In **Configuration object** field, select **Support ticketing**.     
       
-![](https://i.imgur.com/DlVVjbc.png)
+    ![](https://i.imgur.com/DlVVjbc.png)
+
 4. **Save** the changes.   
-5. Once the email account details are Saved, **Forwarding Address** will be displayed.       
-![](https://i.imgur.com/dCNKHXz.png)
+5. Once the email account details are Saved, **Forwarding Address** will be displayed. 
+
+    ![](https://i.imgur.com/dCNKHXz.png)
 
 
 :::info
@@ -48,12 +50,12 @@ To forward mails from the email chatbox to the yellow.ai platform, follow the be
 
 3. Open **All settings** and go to **Forwarding and POP/IMAP** tab. 
 
-![](https://i.imgur.com/COXCn9T.jpg)
+    ![](https://i.imgur.com/COXCn9T.jpg)
 
 4. Click **Add a forwarding address** and paste the copied address. 
 5. An email verification code will be sent to the Inbox to ensure that the configuration is authorized. Open **Inbox** > **Chats** > **Bot Messages**. 
 
-![](https://i.imgur.com/P4znTah.png)
+    ![](https://i.imgur.com/P4znTah.png)
 
 6. Copy the verification code from the Inbox and paste it into Gmail settings to enable the forwarding of messages.
 
