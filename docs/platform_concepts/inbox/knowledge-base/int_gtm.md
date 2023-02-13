@@ -7,7 +7,7 @@ sidebar_label : Integrate KB with GTM
 > You can connect GTM to your knowledgebase from the [knowledgebase settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain) page.
 
 
-Google Tag Manager(GTM) is a tag management system where you can quickly and easily update measurement codes and related code fragments collectively known as **tags** on your website or mobile app.
+Google Tag Manager(GTM) is a tag management system where you can quickly and easily update measurement codes and their related code fragments collectively known as **tags** on your website or mobile app.
 Instead of integrating and monitoring tracking code for tools like Google Analytics, Facebook pixel tracking, Google Ads, etc, you can create one GTM tag and monitor all the required tools in one place.  
 
 Google Tag Manager will be an intermediate between your knowledge base and the tools(tags) you want to integrate. 
@@ -31,7 +31,7 @@ To integrate GTM with your knowledge base, follow the steps below:
     ![](https://i.imgur.com/B3x1dPf.png)
 
 
-3. On [yellow.ai](https://cloud.yellow.ai/) platform, Open Inbox **settings**. Search and select **Knowledge base**.
+3. On [yellow.ai](https://cloud.yellow.ai/) platform. Open **Inbox > Settings**. Search and select **Knowledge base**.
 
     ![](https://i.imgur.com/jPd74Ri.png)
 
@@ -65,7 +65,7 @@ To integrate GTM with your knowledge base, follow the steps below:
 	![](https://i.imgur.com/jDx8Ovt.png)
 
 
-    > You can **Disconnect/Connect** GTM account to your knowledge base as and when required. 
+> You can **Disconnect/Connect** GTM account to your knowledge base as and when required. 
 
 
 ---------

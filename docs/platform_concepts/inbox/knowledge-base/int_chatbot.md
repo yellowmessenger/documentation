@@ -6,9 +6,9 @@ sidebar_label : Integrate KB with chatbot
 
 > You can connect any chatbot to your knowledge base from the [knowledge base settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain) page. 
 
-Chatbots that are built on the yellow.ai platform or any other app can be integrated into the inbox knowledge base to help the end-users to use bot functionalities, and connect with the bot or the live agent faster.
+Chat bots(widgets) that are built on the yellow.ai platform or any other app can be integrated into the inbox knowledge base to help the end-users to use bot functionalities, and connect with the bot or the live agent faster.
 
-To connect a chat widget, follow the below steps: 
+To connect a chat bot, follow the below steps: 
 
 1. Open Inbox **settings**. Search and select **Knowledge base**.
 
