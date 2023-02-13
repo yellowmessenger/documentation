@@ -15,7 +15,7 @@ Let's say that you want to build a standalone bot for your brand. You can use a 
 In this article, you will learn:
 
 * [What are the differences between a chat widget and PWA?](#1-difference-between-chat-widget-and-pwa)
-* [How to setup PWA?](#2-setup-pwa-chatbot)
+* [How to configure PWA?](#2-configure-pwa-chatbot)
 * [How to install PWA?](#3-install-pwa-chatbot)
 
 
