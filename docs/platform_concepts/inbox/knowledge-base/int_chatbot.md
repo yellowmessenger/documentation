@@ -54,5 +54,5 @@ To connect a chat bot, follow the below steps:
 
     ![](https://i.imgur.com/KdHqo6J.png)
 
-    > You can **Disconnect/Connect** the bot to your knowledge base as and when required. 
+> You can **Disconnect/Connect** the bot to your knowledge base as and when required. 
 
