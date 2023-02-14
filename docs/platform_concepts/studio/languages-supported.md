@@ -1,6 +1,6 @@
 ---
 title: Languages Supported
-sidebar_label: Languages
+sidebar_label: Multilingual Support
 ---
 
 Hi, Hola, Konnichiwa, Bonjour!
