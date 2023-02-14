@@ -17,7 +17,7 @@ In this article, you will learn:
  
 
 ----
-## 1. Why choose a FAQ bot over a FAQ page?
+## 1. Difference between FAQ bot and FAQ page
 
 1. **Interactivity**: Chatbots allow users to interact with the information in a conversational manner, rather than just reading through a static page. This makes the experience more engaging and can help users find the information they need more quickly and easily.
 
@@ -27,7 +27,7 @@ In this article, you will learn:
 
 4. **Analytics**: Chatbots can collect data on user interactions, such as the questions asked and the answers provided, which can help organizations improve their FAQ content over time.
 
-Overall, chatbots offer a more dynamic, personalized, and efficient way for users to find the information they need compared to traditional FAQ pages.
+Overall, FAQ chatbots offer a more dynamic, personalized, and efficient way for users to find the information they need compared to traditional FAQ pages.
 
 ---
 
