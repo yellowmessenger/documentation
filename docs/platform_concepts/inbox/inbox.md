@@ -39,6 +39,10 @@ To open Inbox, follow the steps below:
 
 ![](https://i.imgur.com/Brz9Pb5.png)
 
+:::note
+**Inbox settings** applied in Development (Sandbox/Staging) mode do not apply to Inbox in Live(Production) mode. 
+It is recommended to try our customizable functionalities in Development mode and add Inbox settings once your bot is Live.
+:::
 
 ----
 
@@ -50,12 +54,15 @@ There are multiple options available in the inbox module, they are listed below:
 | Section | Description |
 | -------- | -------- |
 | **Monitor**     | Monitor chat and email trends and team details. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/monitor) to learn more.    |
-|**Chats**| Provide 24/7 live support to your customers from this section. Perform bulk actions, and chat searches for chats on the web, Whatsapp, Instagram, and other channels. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) to learn more. |
-|**Tickets**| Monitor and resolve email tickets, create new tickets (manually/in bulk), and other no-code email ticketing functionalities. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) to learn more.  |
+|**Live Chats**| Provide 24/7 live support to your customers from this section. Perform bulk actions, and chat searches for chats on the web, Whatsapp, Instagram, and other channels. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) to learn more. |
+|**Email Tickets**| Monitor and resolve email tickets, create new tickets (manually/in bulk), and other no-code email ticketing functionalities. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) to learn more.  |
 |**Contacts**| Create a list of contacts and send pro active notifications(emails) for your brand. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts) to learn more. |
 |**Analytics and Reports**| Find single-click dynamic charts and generate and download detailed reports about your business and team performance to take data-driven business decisions. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics) to learn more.|
 |**Knowledgebase**| Design a knowledgebase with information to resolve user queries quickly. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview) to learn more. |
 |**Settings**| Manage Inbox by enabling the required functions from settings. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) for more details. |
+
+
+> You can customize Inbox to meet your requirements from the **Settings** page. 
 
 -------
 

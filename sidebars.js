@@ -450,7 +450,6 @@ module.exports = {
             
 
               "platform_concepts/inbox/analytics-reports/analytics",
-              "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
                     ],
             },
 
@@ -462,14 +461,19 @@ module.exports = {
               collapsed: true,
               items: [
            // "platform_concepts/inbox/analytics-reports/reports/reports",
+
             {
               type: "category",
               label: "Chats",
               collapsed: true,
+
+
               items: [
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-activity-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-performance-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
+
               ],
             },
             {
@@ -481,6 +485,8 @@ module.exports = {
                 "platform_concepts/inbox/analytics-reports/reports/tickets/ticket-archive-report",    
               ],
             },
+
+
               ],
              },
           ],

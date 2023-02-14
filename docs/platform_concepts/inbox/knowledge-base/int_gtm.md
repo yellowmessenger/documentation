@@ -70,20 +70,60 @@ To integrate GTM with your knowledge base, follow the steps below:
 
 ---------
 
-<!--
 
-## Connect Google analytics to GTM
+### Connect Google analytics to GTM
 
-> This is an example of how to configure tools in your GTM account. You can add other tools in the same manner. 
+This is one example of how to configure tools(**Google analytics-GA**) in your GTM account. 
+Follow the below steps to connect **GA** to **GTM** account:
 
-1. Create a GTM account by entering **Container name** and **Container type**. 
-2. 
+1. Copy the **Measurement ID** for your GA4 property from your [google analytics](https://analytics.google.com/) account. 
 
+    > **Sample format**: ```G-A2ABC2ABCD``` 
 
-> Reference:     
-> [Set up](https://support.google.com/analytics/answer/9304153) Google Analytics for a website     
-> [Configure](https://support.google.com/tagmanager/answer/9442095) Google Analytics in GTM      
-> [Set up](https://support.google.com/tagmanager/answer/13034206) Google Analytics in GTM
+2. Create a [GTM account](https://tagmanager.google.com/) by entering **Account name**, **Container name**(the URL your GA is configured for) and **Container type**(Web). 
 
 
--->
+    ![](https://i.imgur.com/rnDx7eq.png)
+
+3. After logging into the Tag manager, you will be directed to the **Workspace** tab. Click **Add a new tag**.
+
+    ![](https://i.imgur.com/Gsa4lOR.png)
+
+4. Click **Tag configuration**.
+
+    ![](https://i.imgur.com/XkbastJ.png)
+
+5. Select **Google Analytics: GA4 Configuration** (GA4 is the latest version).
+
+    ![](https://i.imgur.com/dbpp5jT.png)
+
+6. Add **Measurement ID**(Step #1).     
+
+    ![](https://i.imgur.com/Muh5Gk6.png)
+
+7. Click **Triggering**. Select **Initialization - All Pages**. This will activate GA events for all the pages on your URL, you can add advance settings to customize this further. 
+
+    ![](https://i.imgur.com/w8zSfMn.png)
+
+8. Click **Save**. 
+
+    ![](https://i.imgur.com/WoFrOCn.png)
+
+9. To debug, click **Preview**. Add your **URL** and debug the configuration. 
+
+    ![](https://i.imgur.com/S3TQ2f1.png)
+
+
+
+:::info
+
+Reference:     
+ 
+- [Debug GTM code before publishing the container](https://support.google.com/tagmanager/answer/6107056?hl=en) 
+- [Set up Google Analytics for a website](https://support.google.com/analytics/answer/9304153)      
+- [Configure Google Analytics in GTM](https://support.google.com/tagmanager/answer/9442095)       
+- [Set up Google Analytics in GTM](https://support.google.com/tagmanager/answer/13034206) 
+
+:::
+
+

@@ -28,6 +28,10 @@ To get started with *Live agent transfer*, you must configure **Studio** with [r
     - To receive tickets. 
     - To allow agents to converse with the bot users by providing [Inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents)
 
+:::note
+You will not be able to create flows on Studio module when the bot is in **Live** mode, hence, try Inbox demo in **Development** mode. 
+:::
+
 -----
 
 ## 1. Try Inbox demo 
