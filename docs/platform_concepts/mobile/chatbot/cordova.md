@@ -228,16 +228,39 @@ Bot can be closed by tapping on cross button at top, and they can be programmati
 cordova.plugins.ymchat.closeBot();
 ```
 
+## Register Device
+
+If you want to receive push notifications without or before launching the bot, you can register your device.
+To use this api `apiKey`, `botId`, `deviceToken` and `ymAuthenticationToken` are mandatory parameters.
+
+```javascript
+cordova.plugins.ymchat.setBotId("botId");
+cordova.plugins.ymchat.setAuthenticationToken("authToken");
+cordova.plugins.ymchat.setDeviceToken("deviceToken");
+    
+cordova.plugins.ymchat.registerDevice(
+  apiKey,
+  () => {
+    console.log("Device token unlinked");
+  },
+  (error) => {
+    console.log(`error ${error.message}`);
+  }
+);
+```
+
 ## Unlink Device Token
 
-If you want to stop receiving push notifications you can unlink the device token.
+If you want to stop receiving push notifications you can unlink the device.
+To use this api `apiKey`, `botId` and `deviceToken` are mandatory parameters.
 Device token typically is unlinked when the user logs out of the app.
 
 ```javascript
+cordova.plugins.ymchat.setBotId("botId");
+cordova.plugins.ymchat.setDeviceToken("deviceToken");
+
 cordova.plugins.ymchat.unlinkDeviceToken(
-  botId,
   apiKey,
-  deviceToken,
   () => {
     console.log("Device token unlinked");
   },
@@ -249,10 +272,26 @@ cordova.plugins.ymchat.unlinkDeviceToken(
 
 :::note API Key
 API key can be generated/found by visiting `https://cloud.yellow.ai` -> Overview -> Configure -> API Key section
-
-Existing client can upgrade their dependency to `v2.1.+` and replace exisitng key with new API Key.
-Client using SDK version below `v2.1.0` will have no impact.
 :::
+
+## Unread Message Count
+
+If you want to show an indicator in your app if there is any unread messages, you can achieve that by calling the given api when bot is in closed state.
+Pre condition to use this api is that customer must have opened the bot at least once with `ymAuthenticationToken` otherwise you will receive an error message.
+To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
+
+```javascript
+cordova.plugins.ymchat.setBotId("botId");
+cordova.plugins.ymchat.setAuthenticationToken("authToken");
+
+cordova.plugins.ymchat.getUnreadMessagesCount(
+  (count) => {
+    console.log(`Unread Message Count: ${count}`);
+  }, (error) => {
+    console.log(`error ${error.message}`);
+  }
+);
+```
 
 ## Demo App
 
