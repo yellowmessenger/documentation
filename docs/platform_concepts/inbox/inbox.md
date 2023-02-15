@@ -40,8 +40,8 @@ To open Inbox, follow the steps below:
 ![](https://i.imgur.com/Brz9Pb5.png)
 
 :::note
-**Inbox settings** applied in Development (Sandbox/Staging) mode do not apply to Inbox in Live(Production) mode. 
-It is recommended to try our customizable functionalities in Development mode and add Inbox settings once your bot is Live.
+Inbox **Settings** applied in **Development(Sandbox/Staging)** mode does not apply to Inbox in **Live(Production)** mode.       
+It is recommended to try our customizable functionalities in **Development** mode and add Inbox **Settings** again once your bot is **Live**.
 :::
 
 ----
