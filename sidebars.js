@@ -242,6 +242,15 @@ module.exports = {
       ]
     },
 
+// Design starts here
+{
+  type: "category",
+  label: "Design",
+  collapsed: true,
+  items: [
+
+"platform_concepts/design/conversation-design", ],
+},
 
 
 
