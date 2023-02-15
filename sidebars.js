@@ -501,8 +501,8 @@ module.exports = {
            // "platform_concepts/inbox/knowledge-base/kboverview",
             "platform_concepts/inbox/knowledge-base/edit-publish-articles",
             "platform_concepts/inbox/knowledge-base/managingcategories",
-            "platform_concepts/inbox/knowledge-base/int_chatbot",
-            "platform_concepts/inbox/knowledge-base/int_gtm",
+           // "platform_concepts/inbox/knowledge-base/int_chatbot",
+           // "platform_concepts/inbox/knowledge-base/int_gtm",
                  ],           
        },
 
@@ -524,6 +524,7 @@ module.exports = {
               "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
               "platform_concepts/inbox/inbox-settings/productivitytools/collaboration",
               "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
+              "platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations",
               "platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte",
                      ],
             },
