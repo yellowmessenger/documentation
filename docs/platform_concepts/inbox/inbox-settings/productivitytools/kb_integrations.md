@@ -1,10 +1,82 @@
 ---
-title: Integrate your knowledge base with google tag manager(GTM)
-sidebar_label : Integrate KB with GTM
+title: Integrate a chat bot or GTM to your knowledge base
+sidebar_label : Knowledgebase - Integrations 
 ---
 
 
-> You can connect GTM to your knowledgebase from the [knowledgebase settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain) page.
+> You can connect an integration to your knowledge base from the [knowledge base settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain#-4-connect-knowledgebase-to-an-integration) page. 
+
+
+In this article, you will learn: 
+
+1. [How to integrate a Chatbot in your KB?](#bot)
+2. [How to integrate GTM to your KB?](#gtm)
+
+
+
+---------
+
+##  <a name="bot"></a>  1. Integrate KB with chat bots(widgets)
+
+
+Chat bots(widgets) that are built on the yellow.ai platform or any other app can be integrated into the inbox knowledge base to help the end-users to use bot functionalities, and connect with the bot or the live agent faster.
+
+To connect a chat bot, follow the below steps: 
+
+1. Open Inbox **settings**. Search and select **Knowledge base**.
+
+    ![](https://i.imgur.com/jPd74Ri.png)
+
+2. Click **View** next to integrations. 
+
+    <img src="https://i.imgur.com/dUPObzp.png" alt="drawing" width="70%"/>
+
+
+3. Select **Chat bot**. 
+
+    ![](https://i.imgur.com/9wfiWvL.png)
+
+4. Click **Connect**. 
+
+    ![](https://i.imgur.com/bCwI1Ms.png)
+
+5. Add bot code.
+    - If you want to connect a bot built on any third-party platform, *copy* the chatbot code (without script tags) and *paste* it in the **Bot widget code** box. 
+    - To connect your KB with the bot built on the yellow platform, click **Insert bot code**.   
+    (Refer to [Deploy chat widget](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#24-deploy-chat-widget), to fetch bot code from **Channels**)
+    
+    ![](https://i.imgur.com/dqmVgrb.png)
+
+    **Sample code** (copy/paste only the content available within script tags): 
+
+    ```
+    window.ymConfig = {"bot":"x1609156756707","host":"https://cloud.yellow.ai"};(function () {var w=window,ic=w.YellowMessenger;if("function"===typeof ic)ic("reattach_activator"),ic("update",ymConfig);else{var d=document,i=function(){i.c(arguments)};function l(){var e=d.createElement("script");e.type="text/javascript",e.async=!0,e.src="https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";var t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}i.q=[],i.c=function(e){i.q.push(e)},w.YellowMessenger=i,w.attachEvent?w.attachEvent("onload",l):w.addEventListener("load",l,!1)}})();
+    ```
+
+6. Manually verify if the entered code is correct. Click **Connect**. 
+
+    ![](https://i.imgur.com/7Vthk1C.png)
+
+7. You can **Preview** the bot to see if it is functioning as expected. 
+
+    ![](https://i.imgur.com/6ae0HKg.png)
+
+#### Debug the bot code/ Delete bot on KB
+
+8. If the bot is not functioning as expected on the Knowledge base, you must **Disconnect** the bot from the Chatbot integration page and add the new(corrected) code again(step #5). 
+
+    ![](https://i.imgur.com/KdHqo6J.png)
+
+> You can **Disconnect/Connect** the bot to your knowledge base as and when required. 
+
+
+
+-------------
+
+
+##  <a name="gtm"></a>  2. Integrate KT with google tag manager(GTM)
+
+
 
 
 Google Tag Manager(GTM) is a tag management system where you can quickly and easily update measurement codes and their related code fragments collectively known as **tags** on your website or mobile app.
@@ -16,9 +88,6 @@ Google Tag Manager will be an intermediate between your knowledge base and the t
 > See the tag template types(tools) that are natively supported by Google Tag Manager [here](https://support.google.com/tagmanager/answer/6106924?hl=en). 
 
 --------
-
-
-## Connect GTM to inbox knowledge base
 
 To integrate GTM with your knowledge base, follow the steps below: 
 
@@ -71,7 +140,7 @@ To integrate GTM with your knowledge base, follow the steps below:
 ---------
 
 
-### Connect Google analytics to GTM
+### 2.1 Connect Google analytics to GTM
 
 This is one example of how to configure tools(**Google analytics-GA**) in your GTM account. 
 Follow the below steps to connect **GA** to **GTM** account:
@@ -81,7 +150,6 @@ Follow the below steps to connect **GA** to **GTM** account:
     > **Sample format**: ```G-A2ABC2ABCD``` 
 
 2. Create a [GTM account](https://tagmanager.google.com/) by entering **Account name**, **Container name**(the URL your GA is configured for) and **Container type**(Web). 
-
 
     ![](https://i.imgur.com/rnDx7eq.png)
 
@@ -101,7 +169,7 @@ Follow the below steps to connect **GA** to **GTM** account:
 
     ![](https://i.imgur.com/Muh5Gk6.png)
 
-7. Click **Triggering**. Select **Initialization - All Pages**. This will activate GA events for all the pages on your URL, you can add advance settings to customize this further. 
+7. Click **Triggering**. Select **Initialization - All Pages**. This will activate GA for all the pages on your URL. 
 
     ![](https://i.imgur.com/w8zSfMn.png)
 
@@ -109,9 +177,14 @@ Follow the below steps to connect **GA** to **GTM** account:
 
     ![](https://i.imgur.com/WoFrOCn.png)
 
-9. To debug, click **Preview**. Add your **URL** and debug the configuration. 
+9. To debug, click **Preview**. Add your **URL** and debug the configuration. Click **Submit** and submit the configuration by adding a **Name** and **Description**. 
 
-    ![](https://i.imgur.com/S3TQ2f1.png)
+    ![](https://i.imgur.com/q7TjCFA.png)
+
+10. Click **Publish**. The tag will go Live and you can see the details. 
+
+    ![](https://i.imgur.com/Hqp0zQZ.png)  
+
 
 
 

@@ -162,11 +162,9 @@ To integrate third party tools and apps to your knowledgebase, follow:
     
     ![](https://i.imgur.com/hJCeq9Z.png)
 
-2. Select and connect to the most suited integration for your knowledgebase. Currently Inbox provides:
-    - [Chat bot integration](docs/platform_concepts/inbox/knowledge-base/int_chatbot.md)
-    - [Google tag manager integration](docs/platform_concepts/inbox/knowledge-base/int_gtm.md)
-    - Other integrations, coming soon!
-
+2. Select and connect to the most suited [integration](docs/platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations.md) for your knowledgebase. Currently Inbox provides:
+    - Chat bot integration
+    - Google tag manager integration
 
 > There can be only one chatbot and one Knowledgebase integration active at any point in time. They can be connected/disconnected as and when required. 
 
