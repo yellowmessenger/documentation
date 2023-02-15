@@ -1,6 +1,6 @@
 ---
-title: Knowledge base settings
-sidebar_label : Knowledge base
+title: Knowledge base subdomain and branding settings
+sidebar_label : Knowledgebase(domain & brand)
 ---
 
 After creating a [knowledgebase](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview), you can customize its look and feel on the Knowledgebase(KB) settings page. Manage your site's name, URL, favicon, banners and connect your KB with third party integrations. 
@@ -9,14 +9,13 @@ After creating a [knowledgebase](https://docs.yellow.ai/docs/platform_concepts/i
 
 In this article, you will learn:
 1. [How to add the knowledgebase website's title and default language?](#title)
-2. [How to connect Knowledge base to a custom subdomain?](#domain)
+2. [How to connect knowledge base to a custom subdomain?](#domain)
 3. [How to customize knowledgebase website's banner branding?](#brand)
-4. [How to connect knowledgebase to an integration?](#int)
 
 
 ---
 
-## <a name="title"></a> 1. Set Knowledge base title and default language
+## <a name="title"></a> 1. Set knowledge base title and default language
 
 Follow the below steps to add the knowledgebase website's title and set the default language:
 
@@ -43,7 +42,7 @@ Follow the below steps to add the knowledgebase website's title and set the defa
 
 ---
 
-## <a name="domain"></a> 2. Connect Knowledge base to a subdomain
+## <a name="domain"></a> 2. Connect knowledge base to a subdomain
 
 Businesses generally host their knowledge base within their website to make access easier for their customers.   
 
@@ -142,31 +141,5 @@ To customize the site’s banner, logo, and favicon, follow the steps below:
 4. Click **Preview** to test the look and feel of the site and **Save** the changes.
 
     <img src="https://i.imgur.com/jwuPt43.png" alt="drawing" width="70%"/>
-
-
-
-
-
------
-
-## <a name="int"></a> 4. Connect knowledgebase to an integration 
-
-3rd party Integrations are a means to facilitate the knowledge base with additional capabilities like live chat, tracking customers, and their behavioral data, commenting, etc. 
-These integrations will help you make use of the best tool available to boost the functionality of the current system and share data to get a 360 degree of the end-user journey and their interactions.          
-**Example**:          
-By adding Google analytics to your GTM and integrating it with your knowledge base, you can track data for the total page visits, time spent by the user on each of the pages along with their demographic data, event-driven analytics, ability to comment, and perform A/B testing.
-
-To integrate third party tools and apps to your knowledgebase, follow:
-
-1. Click **View** next to **Integrations** to see the available integrations. 
-    
-    ![](https://i.imgur.com/hJCeq9Z.png)
-
-2. Select and connect to the most suited [integration](docs/platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations.md) for your knowledgebase. Currently Inbox provides:
-    - Chat bot integration
-    - Google tag manager integration
-
-> There can be only one chatbot and one Knowledgebase integration active at any point in time. They can be connected/disconnected as and when required. 
-
 
 
