@@ -56,10 +56,13 @@ In the *ticket list view*, you can [filter tickets](https://docs.yellow.ai/docs/
 
     ![](https://i.imgur.com/5ZmfOqh.png)
 
-2. Open **Response/resolution due by** and choose your preferred filter:
-    - Resolution due by
-    - First response due by
-    - Next response due by
+2. Open **Response/resolution due by** and choose your preferred filter: **Resolution due by, First response due by, Next response due by**. For example: 
+    - **Resolution due by** (1 hour): This filters and displays all the tickets whose SLA would be breached unless the agent resolves the ticket within the mentioned time (next 1 hour). 
+    - **First response due by** (20 minutes): This filters and displays all the tickets whose SLA would be breached if the agent does not send a first response to the created ticket within the mentioned time (next 20 minutes). 
+    - **Next response due by** (custom - 14/02/2023): This filters and displays all the open tickets whose SLA would be breached if the agent does not send a response to the ticket in-progress within the mentioned time (within 14/02/2023).
+
+    <img src="https://i.imgur.com/RN1tmD8.png" alt="drawing" width="50%"/>    
+
 
 3. Click **Apply filter**. 
 

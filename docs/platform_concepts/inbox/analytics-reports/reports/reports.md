@@ -65,7 +65,7 @@ Follow the below steps to generate and download the reports:
 
   
 
-5. Add the filters (you can filter for a specific agent, otherwise report will get generated for all the agents), and date range (mandatory field).
+5. Add the **Filter** (you can filter for a specific agent, otherwise report will get generated for all the agents), and **Date range** (mandatory field). **Recipients** field will be auto updated with your respective email ID.
 
   
 
@@ -74,8 +74,10 @@ Follow the below steps to generate and download the reports:
   
 
 6. Click **Download**.
-7. When the status changes to Success, the reports are ready to download. Click the **download** icon to download the report to your local system.
+7. After the report is generated, it will be sent to the recepients mail ID. 
+8. Once the status is **Success**. Click the **download** icon to download the report to your local system.
 
-  
+![](https://i.imgur.com/mUmalo4.png)
 
-![](https://i.imgur.com/ka62HMn.png)
+> By default, the status is **Running/Pending**. Status will change to **Success** once you refresh the Status column. 
+

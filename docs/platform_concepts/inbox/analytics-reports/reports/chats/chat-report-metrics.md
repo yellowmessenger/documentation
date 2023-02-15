@@ -1,9 +1,9 @@
 ---
 title: Chat Report Metrics explained
-sidebar_label : Descriptions of downloaded metrics
+sidebar_label : Chat metrics explained 
 ---
 
-## 1. Average Response Time
+## 1. Average Response Time (Archive report)
 
 
 It is the average time taken by the agent to respond to each message of the customer in a chat conversation. This metric is present in the Archives report. Response time is calculated for every agent response in a conversation. It is calculated by the following logic;
@@ -32,7 +32,7 @@ ART = (15s + 15s + 15s) / 3
 
 Note: ART will be N/A if the user or the agent doesn’t reply in the conversation
 
-## 2. Average Response Time 
+## 2. Average Response Time (Agent performance report)
 It is the average time taken by the agent to respond to the user’s message in all the conversations during the selected day. This metric is present in the Agent performance report.
 
 >**Avg ART = Sum of Average response time of each ticket / No. of tickets**
