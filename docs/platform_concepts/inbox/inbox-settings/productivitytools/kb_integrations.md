@@ -1,10 +1,8 @@
 ---
 title: Integrate a chat bot or GTM to your knowledge base
-sidebar_label : Knowledgebase - Integrations 
+sidebar_label : Knowledgebase(integrations)
 ---
 
-
-> You can connect an integration to your knowledge base from the [knowledge base settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain#-4-connect-knowledgebase-to-an-integration) page. 
 
 
 In this article, you will learn: 
@@ -12,6 +10,15 @@ In this article, you will learn:
 1. [How to integrate a Chatbot in your KB?](#bot)
 2. [How to integrate GTM to your KB?](#gtm)
 
+------------
+
+3rd party Integrations are a means to facilitate the knowledge base with additional capabilities like live chat, tracking customers, and their behavioral data, commenting, etc. These integrations will help you make use of the best tool available to boost the functionality of the current system and share data to get a 360 degree of the end-user journey and their interactions.        
+**Example**:        
+By adding Google analytics to your GTM and integrating it with your knowledge base, you can track data for the total page visits, time spent by the user on each of the pages along with their demographic data, event-driven analytics, ability to comment, and perform A/B testing.
+
+Currently Inbox provides Chat bot integration and Google tag manager integration.
+
+> There can be only one chatbot and one Knowledgebase integration active at any point in time. They can be connected/disconnected as and when required.
 
 
 ---------
@@ -61,13 +68,20 @@ To connect a chat bot, follow the below steps:
 
     ![](https://i.imgur.com/6ae0HKg.png)
 
-#### Debug the bot code/ Delete bot on KB
+
+
+#### Debug the bot code/Delete bot on KB
 
 8. If the bot is not functioning as expected on the Knowledge base, you must **Disconnect** the bot from the Chatbot integration page and add the new(corrected) code again(step #5). 
 
     ![](https://i.imgur.com/KdHqo6J.png)
 
 > You can **Disconnect/Connect** the bot to your knowledge base as and when required. 
+
+
+9. **Save** the changes on Knowledge base settings page.
+
+    <img src="https://i.imgur.com/jwuPt43.png" alt="drawing" width="70%"/>
 
 
 
@@ -136,6 +150,10 @@ To integrate GTM with your knowledge base, follow the steps below:
 
 > You can **Disconnect/Connect** GTM account to your knowledge base as and when required. 
 
+10. **Save** the changes on Knowledge base settings page.
+
+    <img src="https://i.imgur.com/jwuPt43.png" alt="drawing" width="70%"/>
+
 
 ---------
 
@@ -199,4 +217,6 @@ Reference:
 
 :::
 
+
+----------
 

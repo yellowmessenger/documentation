@@ -1,12 +1,12 @@
 ---
-title: Enable/disable Auto assignment of email tickets to agents
+title: Enable/disable auto assignment of email tickets to agents
 sidebar_label : Auto assign email tickets
 ---
 
 > Auto-assign is enabled by default. It can be enabled/disabled as and when required for email tickets.
 
 
-- The auto-assignment feature automates the assignment of incoming chats/tickets based on agents' capacity, availability, and expertise. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/assignmentlogic) to know more. 
+- The auto-assignment feature automates the assignment of incoming tickets based on agents' capacity, availability, and expertise. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/assignmentlogic) to know more. 
 - When the Automatic ticket assignment toggle is enabled, tickets will get distributed automatically to your available agents through round-robin assignment.
   
 -----
