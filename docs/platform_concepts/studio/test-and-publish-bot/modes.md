@@ -15,7 +15,7 @@ Yellow.ai supports multiple environments through which you can manage your publi
 
 1. **Development**: Add/update bots with flows, functions and test it. If the bot works perfectly to your requirements, you can raise a request to **Publish** it. Only **Admins** can publish the bot. 
 
-2. **Live:** Published bots will be available in the **Live** mode. You cannot make any changes in this mode. 
+2. **Live:** Published bots will be available in the **Live** mode. **You cannot make any changes in this mode.** 
 
 In the **Live** mode, you can 
 
