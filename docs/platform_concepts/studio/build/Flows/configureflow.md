@@ -145,6 +145,27 @@ To preview a bot via code (embedded on your website), follow the steps below:
 
 3. Paste the code in the Header or body of your website as per your need to preview the flow.
 
+## 3. Flow settings
+
+To access a flow's settings,
+
+1. Click the gear icon at the bottom.
+
+ ![](https://i.imgur.com/toAQbCj.png)
+
+2. In the following screen, you can configure the following,
+
+ ![](https://i.imgur.com/M8b8icy.png)
+
+|Field|Description|
+|------|----------|
+|Init function| Function that will be executed before going through a flow.|
+|Change category| Category of the flow|
+|Mandate words| Mandatory words that have to be in the user utterance to trigger this flow.|
+| Precluded words| Flow will not be triggered if these words are present in the user utterance.|
+|Disable steps for Go Back functionality| If the user response is 'go back' (or related words - configured in tools), this takes them to the previous question. At the flow level, you can disable some steps from which going back should not be allowed.|
+|Channels| Flow will only be available in the selected channels.|
+
 **What Next?**
 
   
