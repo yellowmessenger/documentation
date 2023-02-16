@@ -241,7 +241,7 @@ cordova.plugins.ymchat.setDeviceToken("deviceToken");
 cordova.plugins.ymchat.registerDevice(
   apiKey,
   () => {
-    console.log("Device token unlinked");
+    console.log("Device token linked successfully");
   },
   (error) => {
     console.log(`error ${error.message}`);
