@@ -323,13 +323,6 @@ YMChat.getUnreadMessagesCount(
 );
 ```
 
-:::note API Key
-API key can be generated/found by visiting `https://cloud.yellow.ai` -> Overview -> Configure -> API Key section
-
-Existing client can upgrade their dependency to `v2.1.+` and replace exisitng key with new API Key.
-Client using SDK version below `v2.1.0` will have no impact.
-:::
-
 ## Demo App
 
 A demo app can be used as a reference to better understand how this SDK can be integrated in the app
