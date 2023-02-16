@@ -18,6 +18,11 @@ In this article, you will learn:
 7. [How to delete a saved report](#11)
 
 
+:::note
+Actions in Data explorer must be configured separately for **Live and Production** environment.
+:::
+
+
 
 ## <a name="1"></a> 1. Data explorer overview
 

@@ -3,8 +3,9 @@ title: Inbox settings
 sidebar_label : Inbox settings 
 ---
 
-:::note
-Only **Inbox Admins** can change/modify Inbox settings.
+:::note 
+- Only **Inbox Admins** can change/modify Inbox settings.    
+- Inbox **Settings** must be configured separately for **Live and Production** environment.
 :::
 
 
