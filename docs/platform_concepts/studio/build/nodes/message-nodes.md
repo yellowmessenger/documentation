@@ -65,6 +65,20 @@ Display any image (less than 10MB) with this node.
 
 ![](https://i.imgur.com/NuHZKEb.jpg)
 
+**Dynamice format**
+
+```
+const imageVariable = [{
+  options: {  
+    caption: {  
+      type: 'text',
+      value: 'image caption here' 
+    },
+  },
+  url: 'image_url_here'
+}]
+```
+
 ---
 
 ## 3. Carousel 
@@ -94,6 +108,21 @@ Display any MP4 video file with this node.
 
 ![](https://i.imgur.com/qxdhtox.jpg)
 
+**Dynamic format**
+
+```
+const videoVar = {
+  "url": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+  "caption": { 
+    "type": "text",
+    "value": "video caption"
+  }
+}
+```
+or
+```
+const videoVar = "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+```
 ---
 
 ## 5. File 
@@ -102,6 +131,18 @@ Display a file of the most common extension (JPG, JPEG, MP3, MP4, CSV, PDF, Doc,
 
 ![](https://i.imgur.com/jmqJpC8.jpg)
 
+**Dynamic format**
+
+```
+{
+	"file": {
+		"name": "Product_Manual.pdf",
+		"url": "https://www.antennahouse.com/hubfs/xsl-fo-sample/pdf/basic-link-1.pdf",
+		"urlEncoded": true/false
+	}
+}
+
+```
 
 ---
 
