@@ -1,6 +1,7 @@
 ---
 title: Intents
 sidebar_label: Intents
+tags: [intent detection nlp ,intent extraction nlp , intent in nlp,intent nlp, intent recognition nlp, nlp intent, nlp intent classification, nlp intent extraction, nlp intent recognition, nlp intent recognition python, why is intent important in negotiations nlp, intent identification nlp]
 ---
 
 The following topics will be covered in this artice,
