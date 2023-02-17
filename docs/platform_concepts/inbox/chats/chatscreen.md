@@ -10,7 +10,8 @@ In this article, you will learn:
 2. [User details](#ud)
 3. [How to transfer/ resolve a ticket?](#trt)
 4. [How to transfer/resolve/ reopen multiple chats?](#trmt)
-
+ 
+-----
 
 ## <a name="cs"></a>  1. Chat screen
 
@@ -98,6 +99,8 @@ The following user details are available on this screen to provide agents with m
 |Collaboration details| More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.|![](https://i.imgur.com/ybV3WJX.png)|
 |Device details|Details about the user device that the bot tracks.|![](https://i.imgur.com/VDayNjJ.png)|
 
+--------
+
 ## <a name="trt"></a> 3. Resolve or transfer tickets
 
 - To resolve/transfer tickets, required custom fields must be entered on the user details. 
@@ -130,18 +133,23 @@ Custom fields can be marked for required to transfer /close tickets while creati
 
 > If you select **Add me to collaborators**, you will be able to view this chat when it is transferred to the next agent. 
 
-:::info
 
-**Collaboration vs. Transfer ticket**
+------
+
+### 3.1 Collaboration vs. Transfer ticket
+
 
 
 
 | Collaboration | Transfer ticket |
 | -------- | -------- |
-| When you add a collaborator, you (inbox agent) and the collaborators (other agents who are invited to this chat) can respond to the customer.     | When you transfer a ticket, you will lose access to this chat and the chat (along with your conversation) will be transferred to the next available agent/ selected agent.     |
+| - You (inbox agent) and the collaborators (other agents who are invited to this chat) can respond to the customer. <br/> - For a customer, this will look like a normal(uninterrupted) agent-customer interaction.<br/> - On the agent's side, there could be multiple agents providing the resolution/responding to the customer. <br/> - The collaborator(other agent) will have access to the chat screen and they can respond directly to the chat, or, add **Notes** for the assigned agent to refer. | When you transfer a ticket, you will lose access to this chat and the chat (along with your conversation) will be transferred to the next available agent/ selected agent.     |
 |**Example**: When a query has been raised that is assigned to an agent who resolves tickets of the category:**Shipping and delivery**. While having a chat, the customer asks a question about **Payments**. A collaborator can be added to help with the question about payments. Once it is answered, the collaborator can leave and take over their chats.|**Example**: A chat enquiring **Payments** has to be assigned to an agent resolving queries related to **Returns and Refunds**. In such case, the chat can simply be transferred to **Payments & Pricing** group. |
-:::
 
+
+
+
+------
 
 
 ## <a name="trmt"></a> 4. Bulk actions 
