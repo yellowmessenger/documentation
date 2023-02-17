@@ -129,7 +129,7 @@ Here rx = r1,r2,r3,r4,r5 etc
 You can customize the loading image while bot loads. Just pass the URL in the following way. It is recommended to use jpg, png, svg or gif
 
 ```dart
-YMChat.setCustomLoaderUrl("https://example.com/your/custom/image.gif");
+YmChat.setCustomLoaderUrl("https://example.com/your/custom/image.gif");
 ```
 
 ### V2 bot
@@ -163,7 +163,7 @@ YmChat.setDisableActionsOnLoad(true);
 Status bar color can be set by calling `setStatusBarColor` method
 
 ```dart
-YMChat.setStatusBarColor("#FFFFFF");
+YmChat.setStatusBarColor("#FFFFFF");
 ```
 
 #### Close button
@@ -171,7 +171,7 @@ YMChat.setStatusBarColor("#FFFFFF");
 Close button color can be set by calling `setCloseButtonColor` method
 
 ```dart
-YMChat.setCloseButtonColor("#000000");
+YmChat.setCloseButtonColor("#000000");
 ```
 
 #### iOS
@@ -231,30 +231,70 @@ Bot can be programmatically closed using `closeBot()` function
 YmChat.closeBot();
 ```
 
+## Register Device
+
+If you want to receive push notifications without or before launching the bot, you can register your device.
+To use this api `apiKey`, `botId`, `deviceToken` and `ymAuthenticationToken` are mandatory parameters.
+
+```dart
+YmChat.setBotId("botId");
+YmChat.setAuthenticationToken("authToken");
+YmChat.setDeviceToken("deviceToken");
+
+YmChat.registerDevice(
+  apiKey,
+  () {
+    log("Device token linked successfully");
+  },
+  (failureMessage) {
+    log(failureMessage);
+  }
+);
+```
+
 ## Unlink Device Token
 
-If you want to stop receiving push notifications you can unlink the device token.
+If you want to stop receiving push notifications you can unlink the device.
+To use this api `apiKey`, `botId` and `deviceToken` are mandatory parameters.
 Device token typically is unlinked when the user logs out of the app.
 
 ```dart
-  YmChat.unLinkDeviceToken(
-    botId,
-    apiKey,
-    deviceToken,
-    () {
-      log("Device token unlinked");
-      },
-    (failureMessage) {
-      log(failureMessage);
-      });
+YmChat.unLinkDeviceToken(
+  botId,
+  apiKey,
+  deviceToken,
+  () {
+    log("Device token unlinked");
+  },
+  (failureMessage) {
+    log(failureMessage);
+  }
+);
 ```
 
 :::note API Key
 API key can be generated/found by visiting `https://cloud.yellow.ai` -> Overview -> Configure -> API Key section
-
-Existing client can upgrade their dependency to `v2.1.+` and replace exisitng key with new API Key.
-Client using SDK version below `v2.1.0` will have no impact.
 :::
+
+## Unread Message Count
+
+If you want to show an indicator in your app if there is any unread messages, you can achieve that by calling the given api when bot is in closed state.
+Pre condition to use this api is that customer must have opened the bot at least once with `ymAuthenticationToken` otherwise you will receive an error message.
+To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
+
+```dart
+YmChat.setBotId("botId");
+YmChat.setAuthenticationToken("authToken");
+
+YmChat.getUnreadMessages(
+  (count) {
+    log("Unread Message Count: ${count}");
+  },
+  (failureMessage) {
+    log(failureMessage);
+  }
+);
+```
 
 ## Demo App
 
