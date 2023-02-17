@@ -9,6 +9,12 @@ In this article, you will learn:
 3. [How to create a dashboard via. Data explorer?](#2)
 4. [How to add widgets?](#3)
 
+
+
+:::note
+Actions in Dashboard must be configured separately for **Live and Production** environment.
+:::
+
 ---- 
 
 #### <a name="features"></a> Insights Dashboard 

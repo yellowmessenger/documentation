@@ -4,7 +4,7 @@ sidebar_label : Debug checklist
 ---
 
 :::note
-Inbox **Settings** must be configured separately on **Live and Production** environment.
+Inbox **Settings** must be configured separately for **Live and Production** environment.
 :::
 
 

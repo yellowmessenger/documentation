@@ -520,6 +520,7 @@ module.exports = {
         {
           type: "category",
           label: "Inbox settings",
+          link: {type: 'doc', id: 'platform_concepts/inbox/inbox-settings/settings_intro'},
           collapsed: true,
           items: [
 
