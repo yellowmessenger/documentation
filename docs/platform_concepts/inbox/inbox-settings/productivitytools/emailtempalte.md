@@ -11,7 +11,7 @@ In this article, you will learn:
 
 #### <a name="1"></a> Email Templates 
 
-With the email templates feature, inbox admins can create branding templates that can be used by the inbox agents to establish that the agent chats follow the branding guidelines.  It can be sent to the customers directly while creating and responding to the [email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro).  These pre-made Email templates can be designed with complete details (without the agent's input) or admins can allow the agents to add their responses to the template. 
+With the email templates feature, inbox admins can create branding templates that can be used by the inbox agents to establish that the agent interactions follow the branding guidelines.  It can be sent to the customers directly while creating and responding to the [email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro).  These pre-made Email templates can be designed with complete details (without the agent's input) or admins can allow the agents to add their responses to the template. 
 
 
 
@@ -40,7 +40,9 @@ To create email templates, follow the below steps:
 
 
 :::note
-**To add variables** to the template that gets dynamically updated with the relevant data, click on the variables icon available at the top of the editor. Click **Add** next to the available variables. 
+**Add Dynamic variables to email templates**
+
+To add variables to the template that gets dynamically updated with the relevant data, click on the variables icon available at the top of the editor. Click **Add** next to the available variables. 
 
 ![](https://i.imgur.com/Ha7ENeC.png)
 
@@ -72,7 +74,7 @@ To create email templates, follow the below steps:
 
 
 
-## <a name="3"></a> 2. Use email templates in chats 
+## <a name="3"></a> 2. Use email templates to respond to email tickets 
 
 :::note
 Inbox admins and agents can use email templates while responding to or creating new email tickets. 
@@ -80,7 +82,7 @@ Inbox admins and agents can use email templates while responding to or creating 
 
 Follow the below steps to use email templates: 
 
-1. Click the **Quick actions** option that is available on the email chats screen (**Inbox** > **Tickets**). Click **Send template**.
+1. Click the **Quick actions** option that is available on the email ticket screen (**Inbox** > **Tickets**). Click **Send template**.
 
 ![](https://i.imgur.com/HBlpiAy.png)
 
@@ -89,9 +91,9 @@ Follow the below steps to use email templates:
 ![](https://i.imgur.com/7x4Dy1D.png)
 
 3. The template is inserted. 
-    - Type the content in the chat that will get updated to the ```{{content}}``` variable in the template. 
+    - Type the content in the email that will get updated to the ```{{content}}``` variable in the template. 
     - Click **Change** to add a different template. 
-    - Click **Remove** to delete this template from the chat. 
+    - Click **Remove** to delete this template from the email. 
     - Click **Preview** to view the complete template. 
 
 ![](https://i.imgur.com/ao5BT3t.png)
