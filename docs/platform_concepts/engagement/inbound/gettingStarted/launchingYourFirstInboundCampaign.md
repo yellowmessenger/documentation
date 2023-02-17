@@ -243,7 +243,7 @@ Whenever this type of campaign is executed, the chat widget opens up with the pr
 ![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/068BB776-1320-44EE-951A-D501BCFBC578/B6BD397D-3D20-43E2-BD0A-96EB4244752B_2/GkYg3GybLbn2xnt3mxlrXz6REIdInCLIZvK6nn7p7t0z/Image.png)
 
   
-When an inbound campaign is executed, a pop-up message is displayed on a mobile device. If there are more than one message and other components such as Quick Replies, Multi-select and so on, then a notification message is displayed. Upon clicking the message in the pop-up, the bot will open and display the respective message configured in the inbound campaign. 
+When an inbound campaign is executed, a pop-up message is displayed on a mobile device. If there is more than one message and other components such as Quick Replies, Multi-select and so on, then a notification message is displayed. Upon clicking the message in the pop-up, the bot will open and display the respective message configured in the inbound campaign. 
 
 :::note
 On desktop, bot will fully open when a respective journey is triggered.
