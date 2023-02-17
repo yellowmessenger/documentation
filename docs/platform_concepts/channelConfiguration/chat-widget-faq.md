@@ -93,27 +93,6 @@ sidebar_label : Chat widget FAQs
 </details>
 
 <details>
- <summary>How to enable chat history conversation?</summary>
- <div>
-  <br/>
-  <div>To enable chat history, follow these steps:<br/>1. Ensure <b>Show history of the conersation</b> is enabled for <a href="https://cloud.yellow.ai">cloud.yellow.ai</a>. <br/> <img src= "https://i.imgur.com/PoHJ0Yh.png"/> <br/> 2. Ensure the <b>Reset Context for every load</b> checkbox is unchecked in the dashboard settings for "app.yellowmessenger.com" or "app.yellow.ai". <br/> <img src= "https://i.imgur.com/VVSmy15.png"/> <br/> note: If you want to retain a histrory across the devices or different browsers, then you can create a authentication token, which is a unique token and you need to pass it in the given below format:
-
-```
-if (userIsAuthenticated) { 
-
-  // replace this with your own auth logic and reload the bot with new info.
-    
-    window.YellowMessengerPlugin.init({
-        ymAuthenticationToken: 'Your_Unique_token'
-    });
-    window.YellowMessengerPlugin.show(); // display the bot icon
-}
-``` 
-</div>
-   </div>
-</details>
-
-<details>
  <summary>How to enable chat history conversation?
 </summary>
  <div>
