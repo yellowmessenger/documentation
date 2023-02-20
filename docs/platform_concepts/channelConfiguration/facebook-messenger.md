@@ -3,98 +3,72 @@ title: Facebook Messenger
 sidebar_label: Facebook Messenger
 ---
 
-## Introduction
+Facebook Messenger (FBM) is a messaging app (iOS/ Android) that allows you to chat with your Facebook contacts. It also allows you to send and receive messages, photos, videos, audio recordings, and video calls. 
 
-This help doc will guide you through setting up your own Facebook Messenger chatbot.
+Businesses can use Facebook Messenger chatbot to interact with their business contacts and their target audience. It is also used to automate customer support by answering frequently asked questions, providing product information, and responding to customer inquiries.
 
-## Let's get started!
+In this article, you will learn:
 
-1. [Sign-up](https://cloud.yellow.ai/auth/signup) with Yellow.ai's platfrom. If you signed-up already, just sign-in.
+1. [How to connect your Facebook messenger account?](#1-connect-your-facebook-messenger-account)
+2. [How to test FBM chatbot?](#2-test-fbm-chatbot)
 
-![](https://cdn.yellowmessenger.com/cBtHl9QjdEtK1619535411755.png)
+## 1. Connect your Facebook messenger account
 
-2. Navigate to your chatbot under **Projects > Select your chatbot**.
+To create a Facebook messenger account, follow these steps:
 
-![](https://cdn.yellowmessenger.com/98Uohu6oWwTw1619536105368.png)
+1.  On the switcher, click **Channels**.
 
-If you haven't created your chatbot yet, [create one](https://docs.yellowmessenger.com/docs/howtos/basics/create-a-bot) right away. Happy creating!
+     <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="100%"/>
+   
+2. On the **Messaging** channels page, click **Facebook messenger**.   
 
-3. To start with WhatsApp account creation, Go to **Channels > Communication > Select Facebook Messenger**.
+   ![](https://i.imgur.com/EUeBbYi.png)
 
-![](https://cdn.yellowmessenger.com/YIb7lIHUMstE1620269651502.png)
+3. Click **Connect to your Facebook account**. 
 
-4. **Connect** to Facebook.
+:::note
+You need admin access to create an account.
+:::
 
-![](https://cdn.yellowmessenger.com/PUsFsb7vR2X21620268878656.png)
+   ![](https://i.imgur.com/k8oQiV9.png)
 
-5. Login to your Facebook account that is connected with your Facebook Business Page.
 
-![](https://cdn.yellowmessenger.com/5shhdXivpfkg1620268794851.png)
+4. Login to your Facebook account that is connected with your Facebook Business Page.
 
-6. After successfully logging in, **continue** as your page.
+   <img src="https://i.imgur.com/onQVVJz.png" alt="drawing" width="60%"/>
 
-![](https://cdn.yellowmessenger.com/3WmpAEJaaM3v1620268823470.png)
+5. After successfully logging in, click **continue** to navigate to your page.
 
-7. Select your business page. If you have more than one business page connected to this FB account, select the one for which you want to setup a chatbot.
+   ![](https://i.imgur.com/jYEkLpd.png)
 
-![](https://cdn.yellowmessenger.com/IbPJhmoV6EAe1620268900923.png)
 
-8. Give the **necessary permissions**.
+6. Select your business page. If you have more than one business page connected to this FB account, select the one for which you want to setup a chatbot, and then click **Next**.
 
-![](https://cdn.yellowmessenger.com/raydOKkK281L1620268946102.png)
+   <img src="https://i.imgur.com/BEbPw1j.png" alt="drawing" width="60%"/>
 
-9. You can notice your business page name here. Click on **Connect**.
+7. Enable the required permissions and click **Done**.
 
-![](https://cdn.yellowmessenger.com/9O5VAEYvHMNU1620268976925.png)
+   <img src="https://i.imgur.com/Gzo0WJ7.png" alt="drawing" width="60%"/>
 
-Hurray! You've now successfully connected your FB Messenger with our platform.
+8. Check the name of the business account and click on **Connect**.
 
-## Let's experience Facebook Messenger chatbot
+    <img src="https://i.imgur.com/NhfPBEl.png" alt="drawing" width="60%"/>
 
-Great! Once the account is successfully approved, we can start configuring the chatbot with any flow you want. For example, let's try adding few FAQs and see how it gets refelcted in the FBM chatbot.
+9. Your Facebook messenger account has been successfully connected to our platform.
 
-1. Go to **Studio -> FAQs**.
+## 2. Test FBM chatbot
 
-2. FAQs can have multiple categories such as Delivery policy, Refund policy, Product quality. To create a new category, **Click on '+' with the FAQs screen**.
+After creating your account successfully, you can start configuring the chatbot with any of the existing flows based on your business requirements.
 
-![](https://cdn.yellowmessenger.com/9Fs4AGsK4eE61621348717008.png)
+For example, let us try to add a few FAQs and see how it works in the FBM chatbot. For more information on how to add FAQs, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-1-add-faqs).
 
-3. Create a **new category**.
+After adding the FAQs and training the chatbot, you can test your FBM chatbot in your brand page's messenger channel based on the FAQs that you have added.
 
-![](https://cdn.yellowmessenger.com/c9BkdVzPuU4X1621348684735.png)
+<img src="https://i.imgur.com/egpbjjI.png" alt="drawing" width="40%"/>
 
-Similarly, you can add as many relevant categories as required.
-
-4. Now, **pick a 'Category'** to add questions within.
-
-![](https://cdn.yellowmessenger.com/NuDtN4RpAkac1621348670878.png)
-
-5. After choosing a category, you can **Add New Questions**.
-
-![](https://cdn.yellowmessenger.com/ps4qScjaoGqI1621348740566.png)
-
-![](https://cdn.yellowmessenger.com/RqBpexxNa6iS1621348659762.png)
-
-Similarly, you can add as many relevant questions you want under each FAQ category.
-
-6. You can see the the Q & A that you added as below.
-
-![](https://cdn.yellowmessenger.com/ZLQ2ToYpxGDI1621348650914.png)
-
-7. As a particular question can be asked in multiple ways, you can **add the possible 'Variants'** of the same question.
-
-![](https://cdn.yellowmessenger.com/57fxwswxtysU1621348636393.png)
-
-We recommend to add relevant variants for each question.
-
-8. Great, now before testing your FBM chatbot, you should **Train** the chatbot. You will find the button on the FAQs screen itself.
-
-9. Wuhoo! Excited to test your FBM chatbot? Start asking any of the added questions in your brand page's messenger channel.
-
-![](https://cdn.yellowmessenger.com/CCO0iJOmjeXW1621429968650.png)
 
 :::info
 `Get Started` in Facebook messengeer only works when get_started is added as the start trigger.
 :::
 
-Awesome! Congratulations on successfully connecting and testing your FBM chatbot. You can now explore other options such as adding different options (such as products showcase, order status) and test them the same way!
+Similarly, you can test your FBM chatbot by adding different options such as product showcase, order status, and so on.

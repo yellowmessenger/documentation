@@ -177,7 +177,7 @@ To set the order:
 
 
 
-## 3. Create prsonalised conversations with user properties
+## 3. Create personalised conversations with user properties
 
 If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to create hyper-personalised conversations based on user properties.
 

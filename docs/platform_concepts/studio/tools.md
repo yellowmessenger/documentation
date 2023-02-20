@@ -31,7 +31,7 @@ To access Tools, follow these steps -
 
 > Keyboard shortcut: `g + s`
 
-3. Navigate to any any of the custom Flows or FAQs.
+3. Navigate to any of the custom Flows or FAQs.
    * On the Flows page, click on <img src="https://i.imgur.com/vk5sSwA.png" width="20"/> ( **Tools** icon).
 
 ![](https://i.imgur.com/wP0Tc47.jpg)

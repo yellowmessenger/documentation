@@ -4,10 +4,13 @@ sidebar_label : Collaboration
 ---
 
 
+When the agents need help (from their fellow agents or a superior/admin) with any of they query that they are responding to, they can add a chat collaborator. 
+With this, the inbox agent or the collaborators (other agents who are invited to this chat) can respond to the customer queries.
+On the Collaboartion settings page, Inbox admin can provide the permission to add collaborators based on the business use case to the inbox agents. 
 
-When agents are auto-assigned to a chat ticket, they may want access to add collaborators to their chat.
-With this, the inbox agent and the collaborators (other agents who are invited to this chat) can respond to the customer queries.
-Inbox admin has permission based on the business use case to provide this option to the inbox agents.
+- For a customer, this will look like a normal(uninterrupted) agent-customer interaction.
+- On the agent's side, there could be multiple agents providing the resolution. 
+- The collaborator(other agent) will have access to the chat screen and they can respond directly to the chat, or, add **Notes** for the assigned agent to refer. 
 
 **Example use case:** 
 
@@ -18,17 +21,17 @@ A company handles queries on footwear and electronic accessories separately by c
 ## 1. Configure collaboration
 
 To enable collaborators for chat tickets, follow the below steps: 
+
 1. Open **Inbox** > **Settings**. 
 2. Search and select **Collaboration**.
 
-![](https://i.imgur.com/Xl82ptB.png)
+    ![](https://i.imgur.com/Xl82ptB.png)
 
 3. Select **Enable collaboration** toggle. 
 
-![](https://i.imgur.com/HsgmC3L.png)
+    ![](https://i.imgur.com/HsgmC3L.png)
 
 4. Enabling the collaborator toggle on the inbox settings will enable a **Collaborator** field on your chat screen- user details section where you can add collaborators by selecting the names from the dropdown menu.
 
-<img src="https://i.imgur.com/Ec8jjPi.png" alt="drawing" width="70%"/>
-
+    <img src="https://i.imgur.com/Ec8jjPi.png" alt="drawing" width="70%"/>
 
