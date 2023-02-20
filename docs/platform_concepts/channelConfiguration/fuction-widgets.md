@@ -10,7 +10,7 @@ If you have integrated Yellow AI’s chat widget on Android/iOS app, see [Androi
 This section guides you with different ways to customize your chat widget’s look & feel,  functionality, and capture bot events.
 
 
-## 1. Customize bot display
+## 1. Customize bot appearance
 
 If the bot’s default customisation settings do not match your brand guidelines, or if you do not want to display the bot right after the page load, you can use the following steps to set up the bot in a way so that it is displayed only when you want it to.
 
@@ -108,3 +108,30 @@ You can make use of the following out-of-the-box functions with our bot based on
 | window.YellowMessengerPlugin.openBot() | Opens chat widget |
 | window.YellowMessengerPlugin.closeBot() | Closes chat widget |
 | window.YellowMessengerPlugin.toggleChat() | Toggles chat widget to opposite state. That is, Opens chat widget if already closed. Closes chat widget if already open. |
+
+
+
+To preview a bot via code (embedded on your website), follow the steps below:
+
+1. Get the path of the flow as explained in the previous section.
+2. In `window.ymConfig`, pass the parameter `triggerJourney` and specify the path of the flow you copied.
+
+
+
+## 3 Trigger specific flow via payload
+
+You can trigger a specific flow using the function `triggerJourney` in the payload as explained here.
+
+
+
+```
+window.chat.send({triggerJournery: '<flow_slug>'})
+```
+
+#### Flow slug
+
+A flow slug or journey slug is the combination of the flow name with auto-generated characters in the format -  `/flow-name_{auto-generated characters}`.
+
+It appends to the URL and you can see it when you select a specific flow.
+
+   ![](https://i.imgur.com/e8MjGPV.png)
