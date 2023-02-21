@@ -59,6 +59,7 @@ Full Support - All the messages can be translated by our platform (other languag
 | Filipino (Tagalog)            |   tl  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Finnish                       |  fi | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | French - France               | fr  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
+| French - Canada               | fr  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Galician                      | gl  | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | Georgian                      |    ka | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | German                        |  de   | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
