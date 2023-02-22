@@ -110,7 +110,6 @@ You can make use of the following out-of-the-box functions with our bot based on
 | window.YellowMessengerPlugin.toggleChat() | Toggles chat widget to opposite state. That is, Opens chat widget if already closed. Closes chat widget if already open. |
 
 
-
 To preview a bot via code (embedded on your website), follow the steps below:
 
 1. Get the path of the flow as explained in the previous section.

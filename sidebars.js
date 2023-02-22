@@ -56,6 +56,7 @@ module.exports = {
         "cookbooks/marketplace-templates/ecommerce-template",
         "cookbooks/marketplace-templates/saas",
        "cookbooks/marketplace-templates/bfsi",
+       "cookbooks/marketplace-templates/healthcare_template"
       ],
     }, 
     {
