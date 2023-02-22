@@ -13,6 +13,37 @@ In this article, you will learn about the 9 common metrics that can be tracked o
 
 > Conversations taking place only after the **welcome message** will be considered for the calculations. 
 
+
+---------------------
+
+
+
+:::info
+
+**Filter for a period**
+- All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
+- If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
+
+
+![](https://i.imgur.com/cAq1z5N.png)
+
+
+
+**Export data**
+
+- To download any of these metrics, click **Export data**. 
+- Select the required metrics (to download all 9, click the link below) and click **Export**.
+
+![](https://i.imgur.com/8gK6LDr.png)
+
+
+**Filter channels**
+
+- These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
+
+![](https://i.imgur.com/Am22nJN.png)
+:::
+
 ## 1. User traffic
 
 Number of **Users, Messages, Sessions and Session duration** is used to identify user traffic. 
@@ -59,6 +90,8 @@ The bold line represents the metric for the current duration and the dotted line
 
 <img src="https://i.imgur.com/ilgYdP9.png" alt="drawing" width="60%"/>
 
+--------
+
 ## 2. Real-time bot activity
 
 This widget shows the real-time usage activity of the bot and flows which are triggered by the user.
@@ -70,6 +103,9 @@ This widget shows the real-time usage activity of the bot and flows which are tr
 > This is calculated for all the channels.
 
 <img src="https://i.imgur.com/2TNnwNq.png" alt="drawing" width="40%"/>
+
+
+------
 
 ## 3. User acquisition
 
@@ -93,6 +129,9 @@ The count may be significantly lesser compared to the number of users since othe
 
 <img src="https://i.imgur.com/EybHJHP.png" alt="drawing" width="60%"/>
 
+
+--------
+
 ## 4. Users by country
 
 This widget shows the count of unique users conversing with the bot from various countries. The top 5 countries and their percentage contributions are shown.
@@ -109,6 +148,10 @@ The captured IP address of the user is translated to a standard location using t
 
 <img src="https://i.imgur.com/mQK60AQ.png" alt="drawing" width="60%"/>
 
+
+---------
+
+
 ## 5. User activity by time
 
 The graph shows the user frequency for the selected period aggregated by the hour (**Days of the week** vs **Time of the day**). You can export this data for the required time period(example- last 7 days) and understand at what time the user activity was highest and lowest. 
@@ -120,6 +163,9 @@ The frequency of unique users messaging the bot is aggregated in hourly buckets 
 > This is calculated for all the channels.
 
 <img src="https://i.imgur.com/T2u93Ao.png" alt="drawing" width="60%"/>
+
+------
+
 
 ## 6. Users by device
 
@@ -134,6 +180,7 @@ The frequency of unique users conversing with the bot is segregated based on the
 <img src="https://i.imgur.com/rQ2KMcV.png" alt="drawing" width="50%"/>
 
 
+--------
 
 ## 7. Bot performance
 
@@ -178,12 +225,16 @@ The deflection rate is the % age of queries that the bot was able to resolve wit
 **Human takeover** rate is now replaced with **Deflection rate** because it is a better indication of the bot's performance.
 :::
 
+----------
+
 ## 8. User feedback
 
 This widget shows the Customer Satisfaction (CSAT) score given by users for the bot as well as agent sessions. Both of these scores are on a scale of 0 to 5. The graph shows a comparison of user feedback on bot session vs agent session at the day level for the selected timeframe.
 
 <img src="https://lh5.googleusercontent.com/pEwKhxwpRidsJWDxu3mksdvv-hJ3fpl40s1pHCXnCvBO8t4U45ezuJ4uzgLJUQe-4_rMFZAIvLyofJkU_TjkCLjutJnZm9H9qwtCUlLNFIXGunqFH0Qs5jrn2nl5XEncrzm6gyxH2fkzGeBuBzGphiTe-wtz3klVVM7if3Umpn78EnErBcHMRF500CMGow" alt="drawing" width="60%"/>
 
+
+--------
 
 
 ## 9. Top flows visited
@@ -202,30 +253,3 @@ For every flow, the completion event is pushed. The count of those completed eve
 
 
 
-
-
-:::info
-
-**Filter for a period**
-- All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
-- If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
-
-
-![](https://i.imgur.com/cAq1z5N.png)
-
-
-
-**Export data**
-
-- To download any of these metrics, click **Export data**. 
-- Select the required metrics (to download all 9, click the link below) and click **Export**.
-
-![](https://i.imgur.com/8gK6LDr.png)
-
-
-**Filter channels**
-
-- These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
-
-![](https://i.imgur.com/Am22nJN.png)
-:::
