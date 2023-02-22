@@ -483,6 +483,10 @@ ul, ol {
 
 }
 
+.details_b_Ee {
+background-color: #fff;
+}
+
 /* [class^="details_node_modules-@docusaurus-theme-common-lib-components-Details-styles-module isBrowser_node_modules-@docusaurus-theme-common-lib-components-Details-styles-module alert alert--info details_node_modules-@docusaurus-theme-classic-lib-theme-Details-styles-module"] {
   --docusaurus-details-decoration-color: var(--ifm-alert-border-color);
   --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
@@ -503,11 +507,9 @@ summary {
   padding-top: inherit;
 }
 
-
 summary:before {
   content: '';
   border-width: .4rem;
-  border-style: ;
   border-color: transparent transparent transparent #282828;
   position: absolute;
   top: 1.3rem;
