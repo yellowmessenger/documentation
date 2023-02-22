@@ -36,11 +36,11 @@ Follow the given steps to configure agent settings:
 ### 1.1 Edit/Modify existing agent properties
 
 - To change the basic properties of an agent, click on the edit icon. 
-    - You can define the **Name** and **Description**, which will be visible to the end customer when they're interacting with the inbox agent from the web.
+    - You can define the agent **Name** and **Description**, which will be visible to the end customer when they're interacting with the inbox agent from the web.
 
     ![](https://i.imgur.com/amJZAJi.jpg)
 
-    - When the agent is assigned to a customer, the name and description mentioned in the agent settings will be visible to the customer. 
+    - Add an image by clicking on Upload photo. When the agent is assigned to a customer, the avatar, name and description mentioned in the agent settings will be visible to the customer. 
     
     <img src="https://i.imgur.com/D3HIVip.png" alt="drawing" width="50%"/>
 
