@@ -1,6 +1,6 @@
 ---
 title: Introduction to voice bot builder - voice nodes & global and node level voice options 
-sidebar_label : Global & Node level options 
+sidebar_label : Global & node level options 
 ---
 
 In the yellow cloud platform, voice can be configured with **quick settings** and **reusable nodes** to ensure that the bot development is much faster and error-free. 

@@ -78,29 +78,36 @@ module.exports = {
     items: [
           "cookbooks/voice-as-channel/nuances/voicearchitecture",
           "cookbooks/voice-as-channel/nuances/botbuilderintro",
+
+
+          "cookbooks/voice-as-channel/nuances/conversationaldelays",
+
          /* "cookbooks/voice-as-channel/nuances/configurebotresponse",
           "cookbooks/voice-as-channel/nuances/captureuserresponse",
           "cookbooks/voice-as-channel/nuances/understanduserresponse",
           "cookbooks/voice-as-channel/nuances/conversationalflows",
-          "cookbooks/voice-as-channel/nuances/conversationaldelays",
           "cookbooks/voice-as-channel/nuances/firstvoicebot", */
     ],
   },
 
 // 2. Voice Capabilities (usecases)
-/*  {
+ {
     type: "category",
     label: "Voice capabilities(usecases)",
     collapsed: true,
     items: [
+      
+      "cookbooks/voice-as-channel/usecases/interrupthandling",
+      "cookbooks/voice-as-channel/usecases/languagedetection",
+
+    /*   
       "cookbooks/voice-as-channel/usecases/tts",
       "cookbooks/voice-as-channel/usecases/stt",
-      "cookbooks/voice-as-channel/usecases/languagedetection",
-      "cookbooks/voice-as-channel/usecases/interrupthandling",
       "cookbooks/voice-as-channel/usecases/contexttransfertoagents",
       "cookbooks/voice-as-channel/usecases/transfercalltoagents",
+      */
             ],
-  }, */
+  }, 
 
 // 3. FAQs 
 //"cookbooks/voice-as-channel/voicefaqs",
@@ -1108,32 +1115,6 @@ module.exports = {
           ],
         },
        
-        
-        
-        
-        
-      
-        
-       
-        
-        
-       
-        
-        
-        
-        
-        
-       
-        
-        
-       
-        
-
-       
-        
-        
-        
-        
         "platform_concepts/appConfiguration/exposing-integration-to-app",
       ],
     },
@@ -1203,30 +1184,32 @@ module.exports = {
     //Do not add/ remove this file
     "updates/overview",
 
-    "updates/2022/dec2022",
-    "updates/2022/nov2022",
-    "updates/2022/oct2022",
-    "updates/2022/sep_updates",
-    "updates/2022/aug",
-    "updates/2022/july",
-   
-    /*
     {
       type: "category",
-      label: "2022 Updates",
+      label: "2023 updates",
       collapsed: true,
       items: [
-        "updates/2022/nov2022",
-        "updates/2022/oct2022",
-        "updates/2022/sep_updates",
-        "updates/2022/aug",
-        "updates/2022/july",
-        
+
+        "updates/2022/jan2023",
+
       ],
     },
-    */
-    // Prod update ends here.
+ 
+    {
+      type: "category",
+      label: "2022 updates",
+      collapsed: true,
+      items: [
+              "updates/2022/dec2022",
+              "updates/2022/nov2022",
+              "updates/2022/oct2022",
+              "updates/2022/sep_updates",
+              "updates/2022/aug",
+              "updates/2022/july",
+      ],
+    },
   ],
+     // Prod update ends here.
 
 
   glossary: [
