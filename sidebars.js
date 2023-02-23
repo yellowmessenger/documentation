@@ -116,7 +116,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/inbox/custom-usecases",
-    "cookbooks/inbox/emailvschat",
+   // "cookbooks/inbox/emailvschat",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
     "cookbooks/inbox/transferwithoutinfo",
@@ -361,6 +361,7 @@ module.exports = {
               "platform_concepts/inbox/inbox_setup/inboxdemo",
               "platform_concepts/inbox/inbox_setup/supportagents",
               "platform_concepts/inbox/inbox_setup/roleaccess",
+              "platform_concepts/inbox/inbox_setup/emailvschat",
               "platform_concepts/inbox/inbox_setup/agentstatuses",
               "platform_concepts/inbox/inbox_setup/assignmentlogic",
               "platform_concepts/inbox/inbox_setup/debugchecklist",
