@@ -143,7 +143,7 @@ module.exports = {
   label: "Engage",
   collapsed: true,
   items: [
-    "cookbooks/Upgrade_new_engage_app",
+    // "cookbooks/Upgrade_new_engage_app",
     "cookbooks/Understanding channels 101/email-outbound-101",
 
   ],
@@ -570,9 +570,6 @@ module.exports = {
             ]
           },
 
-
-
-
           ],
         },
 
@@ -850,13 +847,13 @@ module.exports = {
             {
               type: "category",
               label: "WhatsApp channel",
-              link: {type: 'doc', id: 'cookbooks/whatsapp-channel/whatsapp-channel'},
+              link: {type: 'doc', id: 'platform_concepts/channelConfiguration/whatsapp-channel'},
               collapsed: true,
               items: [
             "platform_concepts/channelConfiguration/whatsapp-configuration",
-            "cookbooks/whatsapp-channel/wa-migration",
+            "platform_concepts/channelConfiguration/wa-migration",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
-            "cookbooks/whatsapp-channel/faqs",
+            "platform_concepts/channelConfiguration/wa-faqs",
               ]},
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
