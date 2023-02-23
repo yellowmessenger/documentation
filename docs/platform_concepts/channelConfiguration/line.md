@@ -16,6 +16,7 @@ In this article, you will learn:
 * [How to connect Line business channel to your bot?](#3-connect-line-channel-to-your-bot)
 * [How to setup webhook on Line channel](#4-setup-webhook-on-line-channel)
 * [How to test your bot on Line channel](#5-test-your-bot-on-line)
+* [What are the character limitations of Line channel](#6-limitations-of-line-channel)
 
 ## 1. Create a business account on Line 
 
@@ -142,3 +143,33 @@ To test your bot on Line, follow these steps:
 5. Click **Add** to start the conversation with your bot.
    <img src="https://i.imgur.com/QsSbRKw.png" alt="drawing" width="40%"/> 
 6. Once you have tested your bot, the configuration of the Line channel for your business is completed.
+
+## 6. Character limitations of Line channel
+
+In this section, you can view the character limitations of Line channel.
+
+### 6.1 Quick reply
+
+| Quick reply options | Character limit |
+|---------------------|-----------------|
+| Quick reply button name and value | The maximum number of characters supported is 20.  |
+| Quick reply title | The maximum number of characters supported is 300.  | 
+
+### 6.2 Carousel
+
+| Carousel options | Character limit |
+|---------------------|-----------------|
+| Title length | The maximum number of characters supported is 40 | 
+| Title value length | The maximum number of characters supported is 60 |
+| Column | The maximum number of characters supported is 10 | 
+| Button text | The maximum number of characters supported is 20 |
+| Button value | The maximum number of characters supported is 40 |
+
+### 6.3 Message types 
+
+| Message type | Character limit |
+|--------------|-----------------|
+| Text message | The maximum number of characters supported is 5000  | 
+| Image	| Image URL length - 2000, file size - 10 MB |
+| Video	| Video URL length - 2000, file size - 200 MB |
+| Audio | Audio URL length - 2000, file size - 200 MB | 
