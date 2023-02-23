@@ -26,27 +26,28 @@ module.exports = {
 
   //cookbook- user guides 
 
-
   cookbooks: [
 
     "cookbooks/getting_started", 
+   
+  // Studio  
     {
       type: "category",
       label: "Studio",
       collapsed: true,
       items: [
        // "cookbooks/conversation-design",
-          "cookbooks/newcard",
+          "cookbooks/studio/newcard",
           "cookbooks/studio/trigger-whatsappresponse",
           "cookbooks/studio/retriev-dbinfo",
           "cookbooks/studio/text-format",
           "cookbooks/studio/multilingual-bot",
           "cookbooks/studio/build-bot",
 
-
       ],
     }, 
-     
+
+// MP
     {
       type: "category",
       label: "Marketplace",
@@ -59,140 +60,96 @@ module.exports = {
        "cookbooks/marketplace-templates/healthcare_template"
       ],
     }, 
-    {
-      type: "category",
-      label: "Inbox",
-      collapsed: true,
-      items: [
-        "cookbooks/inbox/custom-usecases",
-        "cookbooks/inbox/emailvschat",
-        "cookbooks/inbox/notifyagents",
-        "cookbooks/inbox/priority-assignee",
-        "cookbooks/inbox/transferwithoutinfo",
-      ],
-    },    
-    {
-      type: "category",
-      label: "Engage",
-      collapsed: true,
-      items: [
-        "cookbooks/Upgrade_new_engage_app",
-        "cookbooks/Understanding channels 101/email-outbound-101",
-
-      ],
-    }, 
-    {
-      type: "category",
-      label: "Insights",
-      collapsed: true,
-      items: [
-        "cookbooks/insights/eventdescriptions",
-        "cookbooks/insights/botagentfedback",
-
-      ],
-    }, 
 
 
-    {
-      type: "category",
-      label: "Channels",
-      collapsed: true,
-      items: [
-
-       /* {
-          type: "category",
-          label: "Understanding channels 101",
-          collapsed: true,
-          items: [
-            "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
-            "cookbooks/Understanding channels 101/fbm-chatbot-101",
-            "cookbooks/Understanding channels 101/gbm-chatbot-101",
-
-          ],
-        }, */
-        
-// Voice docs < channel starts here 
-    {
-      type: "category",
-      label: "Voice",
-      link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
-      collapsed: true,
-      items: [
+// Voice docs 
+{
+  type: "category",
+  label: "Voice bot",
+  link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
+  collapsed: true,
+  items: [
 
 // 1. Nuances 
-      {
-        type: "category",
-        label: "Voice bot nuances & guides",
-        collapsed: true,
-        items: [
-              "cookbooks/voice-as-channel/nuances/voicearchitecture",
-              "cookbooks/voice-as-channel/nuances/botbuilderintro",
-             /* "cookbooks/voice-as-channel/nuances/configurebotresponse",
-              "cookbooks/voice-as-channel/nuances/captureuserresponse",
-              "cookbooks/voice-as-channel/nuances/understanduserresponse",
-              "cookbooks/voice-as-channel/nuances/conversationalflows",
-              "cookbooks/voice-as-channel/nuances/conversationaldelays",
-              "cookbooks/voice-as-channel/nuances/firstvoicebot", */
-        ],
-      },
+  {
+    type: "category",
+    label: "Voice bot nuances & guides",
+    collapsed: true,
+    items: [
+          "cookbooks/voice-as-channel/nuances/voicearchitecture",
+          "cookbooks/voice-as-channel/nuances/botbuilderintro",
+         /* "cookbooks/voice-as-channel/nuances/configurebotresponse",
+          "cookbooks/voice-as-channel/nuances/captureuserresponse",
+          "cookbooks/voice-as-channel/nuances/understanduserresponse",
+          "cookbooks/voice-as-channel/nuances/conversationalflows",
+          "cookbooks/voice-as-channel/nuances/conversationaldelays",
+          "cookbooks/voice-as-channel/nuances/firstvoicebot", */
+    ],
+  },
 
 // 2. Voice Capabilities (usecases)
-    /*  {
-        type: "category",
-        label: "Voice capabilities(usecases)",
-        collapsed: true,
-        items: [
-          "cookbooks/voice-as-channel/usecases/tts",
-          "cookbooks/voice-as-channel/usecases/stt",
-          "cookbooks/voice-as-channel/usecases/languagedetection",
-          "cookbooks/voice-as-channel/usecases/interrupthandling",
-          "cookbooks/voice-as-channel/usecases/contexttransfertoagents",
-          "cookbooks/voice-as-channel/usecases/transfercalltoagents",
-                ],
-      }, */
+/*  {
+    type: "category",
+    label: "Voice capabilities(usecases)",
+    collapsed: true,
+    items: [
+      "cookbooks/voice-as-channel/usecases/tts",
+      "cookbooks/voice-as-channel/usecases/stt",
+      "cookbooks/voice-as-channel/usecases/languagedetection",
+      "cookbooks/voice-as-channel/usecases/interrupthandling",
+      "cookbooks/voice-as-channel/usecases/contexttransfertoagents",
+      "cookbooks/voice-as-channel/usecases/transfercalltoagents",
+            ],
+  }, */
 
 // 3. FAQs 
-    //"cookbooks/voice-as-channel/voicefaqs",
+//"cookbooks/voice-as-channel/voicefaqs",
 
-      ],
-    }, 
+  ],
+}, 
 //end of voice docs 
 
-
-    {
-      type: "category",
-      label: "WhatsApp",
-      collapsed: true,
-      items: [
-       
-        /*{
-          type: "category",
-          label: "Channel guide",
-          collapsed: true,
-          items: [
-            "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
-            "cookbooks/whatsapp-channel/wa-migration"
-          ],
-        }, */
-       /* {
-          type: "category",
-          label: "Things to know",
-          collapsed: true,
-          items: [
-            "cookbooks/whatsapp-channel/things-to-know",
-            "cookbooks/whatsapp-channel/sending-notifications",
-            "cookbooks/whatsapp-channel/approval",
-            "cookbooks/whatsapp-channel/wa-capturing-qr"
-          ],
-        },*/
-        "cookbooks/whatsapp-channel/building-flows",
-        "cookbooks/whatsapp-channel/testing",
-        "cookbooks/whatsapp-channel/updates",
-        "platform_concepts/test",
-      ]
-    }, 
+// inbox
+{
+  type: "category",
+  label: "Inbox",
+  collapsed: true,
+  items: [
+    "cookbooks/inbox/custom-usecases",
+    "cookbooks/inbox/emailvschat",
+    "cookbooks/inbox/notifyagents",
+    "cookbooks/inbox/priority-assignee",
+    "cookbooks/inbox/transferwithoutinfo",
   ],
-},   
+},    
+// end of inbox 
+
+//insights 
+{
+  type: "category",
+  label: "Insights",
+  collapsed: true,
+  items: [
+    "cookbooks/insights/eventdescriptions",
+    "cookbooks/insights/botagentfedback",
+
+  ],
+}, 
+//end of insights 
+
+//engage
+{
+  type: "category",
+  label: "Engage",
+  collapsed: true,
+  items: [
+    "cookbooks/Upgrade_new_engage_app",
+    "cookbooks/Understanding channels 101/email-outbound-101",
+
+  ],
+}, 
+//end of engage 
+
 
   ], // user guides end here
 
