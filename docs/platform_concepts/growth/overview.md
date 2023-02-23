@@ -242,7 +242,7 @@ For every flow, the completion event is pushed. The count of those completed eve
 
 
 
-## 10. Conversation Issues
+## 10. Conversation issues
 
 These are the analytics based on the conversation logs (studio). 
 
@@ -278,11 +278,11 @@ You can click on each issue to get redirected to the conversation logs where tho
 
 ![](https://i.imgur.com/KHHIq3A.png)
 
-#### Steps to identify conversation issues and fix them 
+#### Steps to identify and fix conversation issues
 
 > Consider the following example to fix the **Missing bot response** issue. 
 
-**Missing bot response** has a high severity. This can be rectified by opening the conversations, finding the point where the bot response was missing, and configuring a fallback or adding a message to the node, if empty.
+**Missing bot response** can be rectified by opening the conversations, finding the point where the bot response was missing, and configuring a fallback or adding a message to the node, if empty.
 
 1. Click **Missing bot response**. You will be directed to the conversation log page that consists of the conversations that encountered missing bot responses. 
 2. Open any conversation. Select the **Missing bot response** to identify the exact point. 
