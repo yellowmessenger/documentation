@@ -3,7 +3,15 @@ title: Healthcare template
 sidebar_label : Healthcare template
 ---
 
+> Explore **Banking and finance template** [here](https://cloud.yellow.ai/marketplace/41d196469e2c531ec23971260e070663).  
+
 The **Healthcare** template provides quick and convenient access to information about your healthcare services, appointment scheduling, and patient registration. This article walks you through the features of the template and help you in  enhancing your overall healthcare experience.
+
+:::info
+For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
+:::
+
+-------------------
 
 ## 1. Prebuilt cases
 
@@ -15,6 +23,8 @@ The following are the most common use cases (flows) that are prebuilt in healthc
 4. **Locate Nearby Clinics:** This flow collects the user's location details and shows the clinics closer to their place.
 5. **Collect report:** This flow helps your users collect their health reports by accessing their electronic records.
 6. **Connect with support:** This flow provides customer support either by answering user questions from the trained FAQs or by connecting the bot user to the support agent to address complex queries.
+
+-------------------
 
 ### 1.1 Start - Display the main menu
 
@@ -31,46 +41,9 @@ The following are the most common use cases (flows) that are prebuilt in healthc
 - You can add multiple [channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) to your bot to reach out to your users through any mode.
 - If you have varied menu options, you can add (or delete) the quick reply buttons and customize what can be displayed in the main menu.
 
-### 1.2 Locate nearby clinics
+-------------------
 
-   ![](https://i.imgur.com/fcnNIEf.png)
-
-1. **Start Trigger:** This flow is triggered when the bot user selects the **Locate nearby clinics** button when menu options are displayed (start flow).
-
-   - It can also be triggered at any point of the conversation when the bot user types a sentence that matches with the [intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) - ```Locate nearby clinics```
-2. **Collect location:** User location is collected using the [location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-location) node. This information is stored in a variable named **location**.
-3. **Nearby clinics:** A search happens in the [database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) that contains the location details of all the clinics. A flash message 'Please wait while we fetch the nearest branch.' is displayed using the [text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) node before showning nearby clinics.
-
-   - If there is a clinic closer to the user location, the flow moves to the **success** branch.
-   - If there's no clinic in or closer to the user location, the flow moves to the **fallback** and conveys this in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text).
-
-    ![](https://i.imgur.com/r2tHPOX.png)
-4. **Clinic details:** The success branch is connected to a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) which executes the function **nearbyClinics** and stores the clinic details in the variable **fiveNearbyDealers**.
-5. **Display the clinic details:** The [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) is then connected to a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) which is connected to a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) and [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text). At this step, the list of clinics will be displayed to the end user.
-
-### 1.3 Connect with support
-
-[Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are used to fetch the bot user's information such as ```phone number```, ```name```, and ```query```. These details are stored in the [respective variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) and passed into the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node, this will connect the user to the support agent.  
-
-   ![](https://i.imgur.com/7yl13Mx.png)
-
-> Inbox must be set up to connect the bot user to a live support agent. A support agent must be available (online) when the support request is raised. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to learn about Inbox. 
-
-   ![](https://i.imgur.com/9nZR7wo.png)
-
-
-
-#### :pushpin: Tips 
-
-- Add/ Delete the number of FAQs listed on the Quick reply node. 
-- Add [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) based on your industry. 
-
-    ![](https://i.imgur.com/GAmjyQ7.png)
-
-- **Name** and **Query** are the mandatory fields to use a **Raise ticket** node. You can reduce the prompt nodes to avoid collecting details from the users prior or you can add more prompt nodes to collect other details before connecting to the agent.
-- As per requirements, you can fetch user details (name, email address, number) using **Prompt** nodes even if the user selects FAQs. This data can be used later for acquisition or monitoring purposes.
-
-### 1.4 New patient registration
+### 1.2 New patient registration
 
 1. **Start trigger:** This flow is triggered when the bot user selects the **New patient registration** button when menu options are displayed (start flow).
 It can also be triggered at any point of the conversation when the bot user types a sentence that matches the intent - ```New patient registration```.
@@ -85,9 +58,16 @@ It can also be triggered at any point of the conversation when the bot user type
 
 4. **Storing new patient details in the database:** After the details are modified, the [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node is used to store the entered details in the table - ```Patient details```. Once the records are added, a success message is displayed using text node .
 
-    <img src="https://i.imgur.com/WhEECsW.png" alt="drawing" width="80%"/>    
+    <img src="https://i.imgur.com/WhEECsW.png" alt="drawing" width="80%"/>  
+
+#### :pushpin: Tips 
+
+- You can collect more details - previous medical details and upload files.
+- Using [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) and [QR nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) you can display the next options available for the patient aft registration.       
    
-### 1.5 Book a consultant
+----------
+
+### 1.3 Book a consultant
 
 1. **Start trigger:** This flow is triggered when the bot user selects the **Book a consultant** button when menu options are displayed.
 It can also be triggered at any point of the conversation when the bot user types a sentence that matches the intent- ```Book an appointment```.
@@ -123,8 +103,28 @@ It can also be triggered at any point of the conversation when the bot user type
 
     <img src="https://i.imgur.com/0uox17m.png" alt="drawing" width="80%"/> 
 
+-------------------
 
-### 1.6 Collect reports
+### 1.4 Locate nearby clinics
+
+   ![](https://i.imgur.com/fcnNIEf.png)
+
+1. **Start Trigger:** This flow is triggered when the bot user selects the **Locate nearby clinics** button when menu options are displayed (start flow).
+
+   - It can also be triggered at any point of the conversation when the bot user types a sentence that matches with the [intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) - ```Locate nearby clinics```
+2. **Collect location:** User location is collected using the [location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-location) node. This information is stored in a variable named **location**.
+3. **Nearby clinics:** A search happens in the [database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) that contains the location details of all the clinics. A flash message 'Please wait while we fetch the nearest branch.' is displayed using the [text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) node before showning nearby clinics.
+
+   - If there is a clinic closer to the user location, the flow moves to the **success** branch.
+   - If there's no clinic in or closer to the user location, the flow moves to the **fallback** and conveys this in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text).
+
+    ![](https://i.imgur.com/r2tHPOX.png)
+4. **Clinic details:** The success branch is connected to a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) which executes the function **nearbyClinics** and stores the clinic details in the variable **fiveNearbyDealers**.
+5. **Display the clinic details:** The [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) is then connected to a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) which is connected to a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) and [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text). At this step, the list of clinics will be displayed to the end user.
+
+---------------
+
+### 1.5 Collect reports
 
 1. **Start trigger:** This flow is triggered when the bot user selects the **Collect report** button when menu options are displayed.
 It can also be triggered at any point of the conversation when the bot user types a sentence that matches the intent: "collect healthcare reports."
@@ -133,9 +133,34 @@ It can also be triggered at any point of the conversation when the bot user type
 3. **Identify the selected option and display details to collect report:** The selected option from the Carousel node is identified by the [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition).
    - If MRN option is selected, [question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-question) node is used to obtain the MRN number.
    - [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node is used to fetch MRN.
-   - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - ```generateDynamicLink``` function is used to fetch the report from the ```record health``` database, which is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)- ```test_report``` and it converts the report into pdf format.
+   - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - ```generateDynamicLink``` function is used to fetch the report from the ```record health``` database, which is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)- ```test_report``` and it converts the report into PDF format.
     ![](https://i.imgur.com/P6PVLqp.png) 
     - Similarly, if phone number option is selected, [phone number](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-phone) node is used to get the phone number of the patient.
 	- [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node is used to fetch phone number.
-   - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - ```generateDynamicLink``` function is used to fetch the report from the ```record health``` database, which is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)- ```test_report``` and it converts the report into pdf format.
+   - [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) - ```generateDynamicLink``` function is used to fetch the report from the ```record health``` database, which is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)- ```test_report``` and it converts the report into PDF format.
     ![](https://i.imgur.com/ISyRRgD.png)
+
+-------------
+
+### 1.6 Connect with support
+
+[Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) are used to fetch the bot user's information such as ```phone number```, ```name```, and ```query```. These details are stored in the [respective variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) and passed into the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node, this will connect the user to the support agent.  
+
+   ![](https://i.imgur.com/7yl13Mx.png)
+
+> Inbox must be set up to connect the bot user to a live support agent. A support agent must be available (online) when the support request is raised. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to learn about Inbox. 
+
+   ![](https://i.imgur.com/9nZR7wo.png)
+
+
+
+#### :pushpin: Tips 
+
+- Add/ Delete the number of FAQs listed on the Quick reply node. 
+- Add [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) based on your industry. 
+
+    ![](https://i.imgur.com/GAmjyQ7.png)
+
+- **Name** and **Query** are the mandatory fields to use a **Raise ticket** node. You can reduce the prompt nodes to avoid collecting details from the users prior or you can add more prompt nodes to collect other details before connecting to the agent.
+- As per requirements, you can fetch user details (name, email address, number) using **Prompt** nodes even if the user selects FAQs. This data can be used later for acquisition or monitoring purposes.
+
