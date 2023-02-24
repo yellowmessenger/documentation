@@ -1,6 +1,6 @@
 ---
-title: Understand conversational delays in a conversation 
-sidebar_label :  Understand delays  
+title: Understand delays in a conversation 
+sidebar_label :  Understand conversational delays  
 ---
 
 Delays are the time between the user response and the bot response. 

@@ -69,37 +69,38 @@ module.exports = {
   link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
   collapsed: true,
   items: [
-
-// 1. Nuances 
+    "cookbooks/voice-as-channel/voicearchitecture",
+// building  
   {
     type: "category",
-    label: "Voice bot nuances & guides",
+    label: "How to build a voice bot",
+    link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
     collapsed: true,
     items: [
-          "cookbooks/voice-as-channel/nuances/voicearchitecture",
-          "cookbooks/voice-as-channel/nuances/botbuilderintro",
-
-
-          "cookbooks/voice-as-channel/nuances/conversationaldelays",
-
-         /* "cookbooks/voice-as-channel/nuances/configurebotresponse",
-          "cookbooks/voice-as-channel/nuances/captureuserresponse",
-          "cookbooks/voice-as-channel/nuances/understanduserresponse",
-          "cookbooks/voice-as-channel/nuances/conversationalflows",
-          "cookbooks/voice-as-channel/nuances/firstvoicebot", */
-    ],
-  },
-
-// 2. Voice Capabilities (usecases)
+      "cookbooks/voice-as-channel/build/convdesiVB",
+      "cookbooks/voice-as-channel/build/usingvoiceinput",
+      "cookbooks/voice-as-channel/build/usingmp", 
+        ],
+      },
+      {
+        type: "category",
+        label: "Personalize bot-user conversations",
+        collapsed: true,
+        items: [
+    "cookbooks/voice-as-channel/personalize/customizebotresponse",
+    "cookbooks/voice-as-channel/personalize/captureuserresponse",
+    "cookbooks/voice-as-channel/personalize/understanduserresponse",
+    "cookbooks/voice-as-channel/personalize/conversationaldelays",
+  ],
+}, 
+// Voice Capabilities (usecases)
  {
     type: "category",
-    label: "Voice capabilities(usecases)",
+    label: "Capabilities of a voice bot",
     collapsed: true,
     items: [
-      
       "cookbooks/voice-as-channel/usecases/interrupthandling",
       "cookbooks/voice-as-channel/usecases/languagedetection",
-
     /*   
       "cookbooks/voice-as-channel/usecases/tts",
       "cookbooks/voice-as-channel/usecases/stt",
@@ -108,12 +109,12 @@ module.exports = {
       */
             ],
   }, 
-
-// 3. FAQs 
-//"cookbooks/voice-as-channel/voicefaqs",
-
+  "cookbooks/voice-as-channel/firstvoicebot", 
+// FAQs 
+"cookbooks/voice-as-channel/voicefaqs",
   ],
 }, 
+
 //end of voice docs 
 
 // inbox

@@ -61,6 +61,9 @@ To build a voice bot using designer, follow the steps below:
 - **Use variables**: Add [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) to the conversation to display the stored user data.
 - **User says**: Add the questions you are expecting from the bot user. Example: My name is Karan. I want to enquire about my bank balance. 
 - **Store response in**: Add [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) to store the responses in a variable. Choose an existing variable or click **+Add new variable**. Example: Store customers name in First name variable. 
+
+    > [User properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties) are default variables avaiable on the platform. [Custom variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#21-custom-variables) are variables created specifically for your bot. 
+
 - **Fallback**: Message from the bot's side when the bot is unable to provide the solution/ understand the user's query. Example: I did not get your name, can you please repeat? 
 - **Create flow**: Click **+ Create flow** to create a new flow. 
 
@@ -84,6 +87,8 @@ While creating flows manually, for each of these nodes, you had to enter the tex
 
 With the conversation designer, you can design natural voice conversations by auto-generating SSML tags from voice effects such as emphasis, pronunciation, pause, etc.
 
+> Global and Node-level settings are configured with the default values. You can skip these steps if you do not have a requirement to customize it. 
+
 ### 3.1 Bot persona settings(Global settings)
 
 - Click the **Settings** button on the top-right of the screen. Changes made in Bot persona settings will apply to all the nodes. 
@@ -95,12 +100,14 @@ With the conversation designer, you can design natural voice conversations by au
 
     ![](https://i.imgur.com/QCSgznC.png)
 
+> Bot persona settings will only be applied to the conversations created after applying to the settings. The previous conversations are not updated with the new settings. 
+
 --------
 
 ### 3.2 Node level settings
 
 - Double-click on the entered text (bot says).
-    - **Emphasis**: Select a text from the entered sentence and emphasize that word (**low, medium, high**). If you select **Off**, emphasis applied by default will detain. 
+    - **Emphasis**: Select a text from the entered sentence and emphasize(stress) that word (**low, medium, high**). If you select **Off**, emphasis applied by default will detain. 
     <img src="https://i.imgur.com/pp9id0a.png" alt="drawing" width="70%"/>     
     
     - **Pause**: You can add pauses (delays) between words/sentences. 
@@ -112,24 +119,24 @@ With the conversation designer, you can design natural voice conversations by au
     - **Interpret**: It can be used to interpret a word in a particular format. 
      <img src="https://i.imgur.com/IBRZqiG.png" alt="drawing" width="70%"/>    
      
-<!--
-     
-| Value | Meaning |
-| -------- | -------- |
-| Off     | TBA     |
-|Spell out||
-|Cardinal ||
-|Ordinal||
-|Number_di||
-|Date||
-|Time||
-|Duration||
-|Telephone||
-|Currency ||
-|Address||
-|Name||
 
--->
+     
+| Value | Input |Output |
+| -------- | -------- | ----- |
+| Off     | -   | If you are unhappy with the bot's interpretation, you can turn it off.  |
+|Spell out|EMI| E M I |
+|Cardinal(for decimal numbers) |-0.345| Minus zero point three four five|
+|Ordinal(integral numbers)|10 Jan| Tenth Jan|
+|Number_di|9000080000| Nine zero zero zero zero eight zero zero zero zero |
+|Date|14/02|Fourteenth feburary|
+|Time|9:15 am| Nine fifteen A.M |
+|Duration|5hrs| Five hours|
+|Telephone|9000080000|9000-080-000|
+|Currency |15 $| Fifteen dollars|
+|Address|||
+|Name|Mr.Aagam| Mister aagam|
+
+
 
 - Click **Preview** in the dialogue box and understand how the bot sounds after configuring it. 
 
@@ -179,7 +186,7 @@ With bi-directional auto-sync between **Conversation design** and **Studio > Flo
 
     ![](https://i.imgur.com/zv58neq.png)
 
-2. You can click on the created flows to edit and test them. 
+2. You can click on the created flows to edit and test them. All the nodes in the flow would be accommodated with the SSLM input as configured.  
 
     ![](https://i.imgur.com/v0dgTFm.png)
 
