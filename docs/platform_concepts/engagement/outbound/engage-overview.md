@@ -5,12 +5,12 @@ sidebar_label: Engage dashboard
 
 
 
-Engage dashboard provides a summary of all campaigns and user activies on a single screen. This provides a quick glimpse of the daily/weekly performance of your campaigns and helps you plan for a better engagement and conversational experience for your end users. For a better experience, see [Use Conversation Starter Templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#2-add-quick-replies-in-whatsapp-template).
+Engage dashboard provides a summary of all campaigns and user activities on a single screen. This provides a quick glimpse of the daily/weekly performance of your campaigns and helps you plan for a better engagement and conversational experience for your end users. For a better experience, see [Use Conversation Starter Templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#2-add-quick-replies-in-whatsapp-template).
 
-These metrics provide insights into your marketing, promotional or other campaigns and shows the growth of your user base and profile completeness.
+These metrics provide insights into your marketing, promotional or other campaigns and show the growth of your user base and profile completeness.
 
 There are two sections based on the metric type:
-* **User data** Gives you the snapshot of the current state of your user base in User 360.
+* **User data** Gives you a snapshot of the current state of your user base in User 360.
 * **Overview**: Shows you an Overview of your Campaigns and User management history.
 
 To access Engage Overview Dashboard, in the module switcher, click **Engage** > **Overview**.
@@ -21,13 +21,13 @@ To access Engage Overview Dashboard, in the module switcher, click **Engage** > 
 
 ## 1. User data
 
-This report provides a snapshot of users added to User 360 and overall profiles completeness percentage. Profile completeness refers to the extent to which a user's information is available on the yellow.ai's platform. It considers all the user properties configured for the org.
+This report provides a snapshot of users added to User 360 and the overall profile completeness percentage. Profile completeness refers to how much users' information is available on the yellow.ai's platform. It considers all the user properties configured for the org.
 
 
 ![](https://i.imgur.com/w4B0O7Z.png)
 
 
-The following are the different KPIs of User data report:
+The following are the different KPIs of the User data report:
 
 * **Total users**: The total number of users available in User 360.
 * **Profile completeness**: The average completeness of the profile information (based on the values available for user attributes) of the total users on User 360.
@@ -58,7 +58,7 @@ The following are the different KPIs of the Campaign summary report:
 
 By default, you will the summary report across all channels. You can choose to see the report of your preferred channels. 
 
-To see a channel specific data, click on the channel name. Channels with black font are considered for the report and greyed-out ones are hidden as shown below.
+To see channel specific data, click on the channel name. Channels with black font are considered for the report and greyed-out ones are hidden as shown below.
 
 <center><img src="https://i.imgur.com/VPaaw4i.png" width="600"/></center>
 
