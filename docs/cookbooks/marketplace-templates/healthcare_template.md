@@ -7,6 +7,8 @@ sidebar_label : Healthcare template
 
 The **Healthcare** template provides quick and convenient access to information about your healthcare services, appointment scheduling, and patient registration. This article walks you through the features of the template and help you in  enhancing your overall healthcare experience.
 
+![](https://i.imgur.com/REKc66X.png)
+
 :::info
 For details on importing and editing the markerplace templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro). 
 :::
