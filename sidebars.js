@@ -819,7 +819,7 @@ module.exports = {
         "platform_concepts/growth/funnels",
       ],
     },
-
+    "platform_concepts/growth/dataops",
     "platform_concepts/growth/doccog",
     "platform_concepts/growth/data-explorer", 
     "platform_concepts/growth/dashboards",

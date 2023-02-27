@@ -1,7 +1,7 @@
 ---
 id: inbox
 title: Overview
-description: How to add agents
+description: inbox for customer support agents 
 featured: true
 rank: 5
 ---
