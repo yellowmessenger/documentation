@@ -14,9 +14,9 @@ In this article, you will learn:
 * [How to create a Line account?](#1-create-a-business-account-on-line)
 * [How to setup Line channel using Developer portal?](#2-setup-line-channel-using-developer-portal)
 * [How to connect Line business channel to your bot?](#3-connect-line-channel-to-your-bot)
-* [How to setup webhook on Line channel](#4-setup-webhook-on-line-channel)
-* [How to test your bot on Line channel](#5-test-your-bot-on-line)
-* [What are the character limitations of Line channel](#6-limitations-of-line-channel)
+* [How to setup webhook on Line channel?](#4-setup-webhook-on-line-channel)
+* [How to test your bot on Line channel?](#5-test-your-bot-on-line)
+* [What are the character limitations of Line channel?](#6-limitations-of-line-channel)
 
 ## 1. Create a business account on Line 
 

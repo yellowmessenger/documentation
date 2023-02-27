@@ -3,7 +3,7 @@ title: Healthcare template
 sidebar_label : Healthcare template
 ---
 
-> Explore **Banking and finance template** [here](https://cloud.yellow.ai/marketplace/41d196469e2c531ec23971260e070663).  
+> Explore **Healthcare template** [here](https://cloud.yellow.ai/marketplace/41d196469e2c531ec23971260e070663).  
 
 The **Healthcare** template provides quick and convenient access to information about your healthcare services, appointment scheduling, and patient registration. This article walks you through the features of the template and help you in  enhancing your overall healthcare experience.
 

@@ -42,10 +42,11 @@ Custom Bot logo | Click **Add** icon and set the logo for the bot. <br/> **Note:
 Bot name | Enter the name of the bot as per your business requirement. | 
 | Bot description | Enter the description of your bot. |
 Colors & theme | You can set a **Light** or **Dark** theme for your widget.
-Brand color | You can select the following options to set the color for the header of the widget: <br/> * Solid -  When you select this option, you can view only the Color 1 option.<br/> * Gradient - When you select this option, Color 1 and Color 2 options are displayed.
-Color 1 and Color 2  | Set the color of the header. Match the widget colour with that of the client's website. See the screenshot below.
-Complementary color | Set the color of other components of the bot such as chat.|
-Accent color | Set the color of the weekday option. Brands can choose from "Color 1" and "Color 2" based on Gradient selection.
+Brand color | You can select the following options to set the color for the header of the widget: <br/> * **Solid** -  When you select this option, you can view only the Color 1 option (single color will be applied to the title bar).<br/> * **Gradient** - When you select this option, Color 1 and Color 2 options are displayed (two colours forming gradient will be applied to title bar).
+Color 1   | This option is dispalyed when solid/gradient is seleced. Match the widget colour with that of the client's website. See the screenshot below.
+Color 2   | This option is displayed only when a gradient is selected.
+Complementary color | Set the color of other components of the bot such as Quick Replies, Multi-select, and so on.|
+Accent color | You can set accent color across all components by choosing one of the colors from the drop-down. These colors are fretched from Color 1 or Color 2 (only when a gradient is selected).  
 Font style | Choose the default font for the bot.
 Font size | Set the font size of the widget on the website - Small, Medium, or Large.
 Widget size | Set your preferred widget size - Small, Medium, or Large. 

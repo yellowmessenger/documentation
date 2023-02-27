@@ -1,6 +1,6 @@
 ---
 title: Limitations and best practices of chat widget and mobile SDK
-sidebar_label : Character limit
+sidebar_label : Limitations and best practices
 ---
 
 This guide contains the character limits for Chat widget and Mobile SDK. 
