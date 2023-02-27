@@ -85,7 +85,7 @@ module.exports = {
         ],
       },
     
-    "cookbooks/voice-as-channel/personalize/conversationaldelays",
+    "cookbooks/voice-as-channel/conversationaldelays",
 
 // Voice Capabilities (usecases)
  {
@@ -95,6 +95,9 @@ module.exports = {
     items: [
       "cookbooks/voice-as-channel/usecases/interrupthandling",
       "cookbooks/voice-as-channel/usecases/languagedetection",
+      "cookbooks/voice-as-channel/usecases/dtmf",
+      "cookbooks/voice-as-channel/usecases/waitmusic",
+      "cookbooks/voice-as-channel/usecases/callrecording",
     /*   
       "cookbooks/voice-as-channel/usecases/tts",
       "cookbooks/voice-as-channel/usecases/stt",

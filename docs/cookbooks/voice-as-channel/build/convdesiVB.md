@@ -35,6 +35,10 @@ Let's break down the conversation:
 
 --- End of the call ---
 
+:::note
+For guidelines to build a good conversation, click [here](https://docs.yellow.ai/docs/cookbooks/getting_started). 
+:::
+
 -----
 
 To build this, 
@@ -42,7 +46,13 @@ To build this,
 1. Open **Conversation design**. 
 
     > This will work as a voice conversation designer only if you had selected the Type as Voice while creating a bot). 
+    
+:::note
+Bot persona is already configured with the default settings. To customize further, click **Settings** and select the required options. 
 
+![](https://i.imgur.com/vmKrZgv.png)
+:::
+    
 2. Create a dialogue for the initial conversation: 
     -  Add initial conversation, fetch user details (Example: Name)
     - Ask the determining question to fetch the response from the user(example: Response). 
@@ -61,7 +71,7 @@ To build this,
 
     ![](https://i.imgur.com/pwa8dss.png)    
 
-5. **Settings**:
+5. **SSML Settings**:
 
     - Configure fallbacks that are spoken out when the user responds with an unexpected message. 
 
@@ -71,14 +81,11 @@ To build this,
 
     ![](https://i.imgur.com/cvgJlI4.png)
 
-    - Bot persona is already configured with the default settings. To customize further, click **Settings** and select the required options. 
+6. You can [preview](https://docs.yellow.ai/docs/platform_concepts/design/convdesignvoice) the design by connecting your bot to the IVR number and requesting a call. 
 
-    ![](https://i.imgur.com/vmKrZgv.png)
-
-6. You can [preview](https://docs.yellow.ai/docs/platform_concepts/design/convdesignvoice#33-voice-bot-demoreceive-a-live-call) the design by connecting your bot to the IVR number and requesting a call. 
-
-7. Switch to **Studio**. Flows are in sync with the design module, you can edit them further. 
-    - For example, open the **Loan eligibility** flow, add database and function to calculate the loan and interest rate. 
+7. Switch to **Studio**. Flows are in sync with the design module.
+    - Text entered in the dialogue boxes are segregated and converted to Voice inpute nodes with SSML configurations. 
+    - You can edit the flows further. For example, open the **Loan eligibility** flow, add database and function to calculate the loan and interest rate. 
 
     ![](https://i.imgur.com/tbvwtgH.png)
 
