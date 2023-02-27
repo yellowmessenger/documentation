@@ -3,17 +3,16 @@ title: Chat widget components
 sidebar_label : Chat widget components 
 ---
 
-The platform allows you to add components to the chat widget so that the user experience is not limited to plain text. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/character-limits-sdk) to know more about the limitations of the components.
-
-There are two types of components - **Interactive** and **Non-Intercative**.
+The platform allows you to add components to the chat widget so that the user experience is not limited to plain text. 
+There are two types of components - **Interactive** and **Non-Intercative**. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/character-limits-sdk) to know more about the limitations of the components.
 
 Let's take an example, where you want to register for an online class through a website. With the help of date and time picker components in the chatbot, you can register quickly by providing the appropriate date and time instead of manually typing the text messages.
-
-<img src="https://i.imgur.com/ONYSM4K.png" alt="drawing" width="40%"/>
 
 :::note
 Each of these components supports both light and drak back ground theme.
 :::
+
+![](https://i.imgur.com/6UMCbqn.png)
 
 ## 1. Interactive messages
 
