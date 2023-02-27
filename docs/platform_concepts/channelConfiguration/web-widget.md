@@ -21,7 +21,7 @@ To access Chat widget, follow these steps:
 
 4. The Chat widget screen appears as shown below.
 
-   ![](https://i.imgur.com/K2OFk9z.png)
+   ![](https://i.imgur.com/lO86cQ0.png)
 
  
 ## 2. Customize Chat widget
@@ -30,7 +30,8 @@ To access Chat widget, follow these steps:
 
 The **Widget Panel** helps you customize the look and feel of the chat widget.
 
-   <img src="https://i.imgur.com/nbztdK4.jpg" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/Fu1t8y0.png" alt="drawing" width="80%"/>
+   
 
 
 To customize the design, make the required changes as per the descriptions provided in the following table, and click **Save changes**.
@@ -40,15 +41,19 @@ Option | Description
 Custom Bot logo | Click **Add** icon and set the logo for the bot. <br/> **Note:** It is recommended to upload images with a size of 150 x 150 pixels. |
 Bot name | Enter the name of the bot as per your business requirement. | 
 | Bot description | Enter the description of your bot. |
+Colors & theme | You can set a **Light** or **Dark** theme for your widget.
+Brand color | You can select the following options to set the color for the header of the widget: <br/> * **Solid** -  When you select this option, you can view only the Color 1 option (single color will be applied to the title bar).<br/> * **Gradient** - When you select this option, Color 1 and Color 2 options are displayed (two colours forming gradient will be applied to title bar).
+Color 1   | This option is dispalyed when solid/gradient is seleced. Match the widget colour with that of the client's website. See the screenshot below.
+Color 2   | This option is displayed only when a gradient is selected.
+Complementary color | Set the color of other components of the bot such as Quick Replies, Multi-select, and so on.|
+Accent color | You can set accent color across all components by choosing one of the colors from the drop-down. These colors are fretched from Color 1 or Color 2 (only when a gradient is selected).  
 Font style | Choose the default font for the bot.
 Font size | Set the font size of the widget on the website - Small, Medium, or Large.
 Widget size | Set your preferred widget size - Small, Medium, or Large. 
-Primary color | Set the color of the header. Match the widget colour with that of the client's website. See the screenshot below.
-Secondary color | Set the color of other components of the bot such as chat.
 | Position | Set the position of the widget on the website - Bottom Left and Bottom Right. |
 | Initial state for desktop | Set the initial display mode of the widget on websites -  Half opened, Minimised, or Conversational layout. |
 
-<img src="https://i.imgur.com/r1GHIfj.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/I8XaGOh.png" alt="drawing" width="60%"/>
 
 ***
 

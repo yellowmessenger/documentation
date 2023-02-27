@@ -1,6 +1,6 @@
 ---
-title : Conversation Design
-sidebar_label : Conversation Design
+title :  Design conversations for chat bots  
+sidebar_label :  Design conversations for chat bots  
 ---
 
 Conversation design in chatbots refers to the process of creating a flow with a sequence of interactions. This helps in building a chatbot that can effectively communicate with users and fulfill their needs in a user-friendly manner. 

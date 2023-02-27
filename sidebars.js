@@ -26,27 +26,28 @@ module.exports = {
 
   //cookbook- user guides 
 
-
   cookbooks: [
 
     "cookbooks/getting_started", 
+   
+  // Studio  
     {
       type: "category",
       label: "Studio",
       collapsed: true,
       items: [
        // "cookbooks/conversation-design",
-          "cookbooks/newcard",
+          "cookbooks/studio/newcard",
           "cookbooks/studio/trigger-whatsappresponse",
           "cookbooks/studio/retriev-dbinfo",
           "cookbooks/studio/text-format",
           "cookbooks/studio/multilingual-bot",
           "cookbooks/studio/build-bot",
 
-
       ],
     }, 
-     
+
+// MP
     {
       type: "category",
       label: "Marketplace",
@@ -56,142 +57,100 @@ module.exports = {
         "cookbooks/marketplace-templates/ecommerce-template",
         "cookbooks/marketplace-templates/saas",
        "cookbooks/marketplace-templates/bfsi",
-      ],
-    }, 
-    {
-      type: "category",
-      label: "Inbox",
-      collapsed: true,
-      items: [
-        "cookbooks/inbox/custom-usecases",
-        "cookbooks/inbox/emailvschat",
-        "cookbooks/inbox/notifyagents",
-        "cookbooks/inbox/priority-assignee",
-        "cookbooks/inbox/transferwithoutinfo",
-      ],
-    },    
-    {
-      type: "category",
-      label: "Engage",
-      collapsed: true,
-      items: [
-        "cookbooks/Upgrade_new_engage_app",
-        "cookbooks/Understanding channels 101/email-outbound-101",
-
-      ],
-    }, 
-    {
-      type: "category",
-      label: "Insights",
-      collapsed: true,
-      items: [
-        "cookbooks/insights/eventdescriptions",
-        "cookbooks/insights/botagentfedback",
-
+       "cookbooks/marketplace-templates/healthcare_template"
       ],
     }, 
 
 
-    {
-      type: "category",
-      label: "Channels",
-      collapsed: true,
-      items: [
+// Voice docs 
+{
+  type: "category",
+  label: "Voice bot",
+  link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
+  collapsed: true,
+  items: [
+    "cookbooks/voice-as-channel/voicearchitecture",
+    "cookbooks/voice-as-channel/components", 
 
-       /* {
-          type: "category",
-          label: "Understanding channels 101",
-          collapsed: true,
-          items: [
-            "cookbooks/Understanding channels 101/whatsapp-chatbot-101",
-            "cookbooks/Understanding channels 101/fbm-chatbot-101",
-            "cookbooks/Understanding channels 101/gbm-chatbot-101",
-
-          ],
-        }, */
-        
-// Voice docs < channel starts here 
-    {
-      type: "category",
-      label: "Voice",
-      link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
-      collapsed: true,
-      items: [
-
-// 1. Nuances 
-      {
-        type: "category",
-        label: "Voice bot nuances & guides",
-        collapsed: true,
-        items: [
-              "cookbooks/voice-as-channel/nuances/voicearchitecture",
-              "cookbooks/voice-as-channel/nuances/botbuilderintro",
-             /* "cookbooks/voice-as-channel/nuances/configurebotresponse",
-              "cookbooks/voice-as-channel/nuances/captureuserresponse",
-              "cookbooks/voice-as-channel/nuances/understanduserresponse",
-              "cookbooks/voice-as-channel/nuances/conversationalflows",
-              "cookbooks/voice-as-channel/nuances/conversationaldelays",
-              "cookbooks/voice-as-channel/nuances/firstvoicebot", */
+// building  
+  {
+    type: "category",
+    label: "How to build a voice bot",
+    link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
+    collapsed: true,
+    items: [
+      "cookbooks/voice-as-channel/build/convdesiVB",
+      "cookbooks/voice-as-channel/build/usingvoiceinput",
+      "cookbooks/voice-as-channel/build/usingmp", 
         ],
       },
+    
+    "cookbooks/voice-as-channel/personalize/conversationaldelays",
 
-// 2. Voice Capabilities (usecases)
-    /*  {
-        type: "category",
-        label: "Voice capabilities(usecases)",
-        collapsed: true,
-        items: [
-          "cookbooks/voice-as-channel/usecases/tts",
-          "cookbooks/voice-as-channel/usecases/stt",
-          "cookbooks/voice-as-channel/usecases/languagedetection",
-          "cookbooks/voice-as-channel/usecases/interrupthandling",
-          "cookbooks/voice-as-channel/usecases/contexttransfertoagents",
-          "cookbooks/voice-as-channel/usecases/transfercalltoagents",
-                ],
-      }, */
+// Voice Capabilities (usecases)
+ {
+    type: "category",
+    label: "Capabilities of a voice bot",
+    collapsed: true,
+    items: [
+      "cookbooks/voice-as-channel/usecases/interrupthandling",
+      "cookbooks/voice-as-channel/usecases/languagedetection",
+    /*   
+      "cookbooks/voice-as-channel/usecases/tts",
+      "cookbooks/voice-as-channel/usecases/stt",
+      "cookbooks/voice-as-channel/usecases/contexttransfertoagents",
+      "cookbooks/voice-as-channel/usecases/transfercalltoagents",
+      */
+            ],
+  }, 
+// FAQs 
+"cookbooks/voice-as-channel/voicefaqs",
+  ],
+}, 
 
-// 3. FAQs 
-    //"cookbooks/voice-as-channel/voicefaqs",
-
-      ],
-    }, 
 //end of voice docs 
 
-
-    {
-      type: "category",
-      label: "WhatsApp",
-      collapsed: true,
-      items: [
-       
-        /*{
-          type: "category",
-          label: "Channel guide",
-          collapsed: true,
-          items: [
-            "cookbooks/whatsapp-channel/whatsapp-channel-setup-guide",
-            "cookbooks/whatsapp-channel/wa-migration"
-          ],
-        }, */
-       /* {
-          type: "category",
-          label: "Things to know",
-          collapsed: true,
-          items: [
-            "cookbooks/whatsapp-channel/things-to-know",
-            "cookbooks/whatsapp-channel/sending-notifications",
-            "cookbooks/whatsapp-channel/approval",
-            "cookbooks/whatsapp-channel/wa-capturing-qr"
-          ],
-        },*/
-        "cookbooks/whatsapp-channel/building-flows",
-        "cookbooks/whatsapp-channel/testing",
-        "cookbooks/whatsapp-channel/updates",
-        "platform_concepts/test",
-      ]
-    }, 
+// inbox
+{
+  type: "category",
+  label: "Inbox",
+  collapsed: true,
+  items: [
+    "cookbooks/inbox/custom-usecases",
+   // "cookbooks/inbox/emailvschat",
+    "cookbooks/inbox/notifyagents",
+    "cookbooks/inbox/priority-assignee",
+    "cookbooks/inbox/transferwithoutinfo",
   ],
-},   
+},    
+// end of inbox 
+
+//insights 
+{
+  type: "category",
+  label: "Insights",
+  collapsed: true,
+  items: [
+    "cookbooks/insights/eventdescriptions",
+    "cookbooks/insights/botagentfedback",
+
+  ],
+}, 
+//end of insights 
+
+//engage
+{
+  type: "category",
+  label: "Engage",
+  collapsed: true,
+  items: [
+    // "cookbooks/Upgrade_new_engage_app",
+    "cookbooks/Understanding channels 101/email-outbound-101",
+
+  ],
+}, 
+//end of engage 
+
 
   ], // user guides end here
 
@@ -243,13 +202,17 @@ module.exports = {
     },
 
 // Design starts here
+
 {
   type: "category",
   label: "Design",
   collapsed: true,
   items: [
 
-"platform_concepts/design/conversation-design", ],
+"platform_concepts/design/conversation-design",
+"platform_concepts/design/convdesignvoice", 
+          
+],
 },
 
 
@@ -399,6 +362,7 @@ module.exports = {
               "platform_concepts/inbox/inbox_setup/inboxdemo",
               "platform_concepts/inbox/inbox_setup/supportagents",
               "platform_concepts/inbox/inbox_setup/roleaccess",
+              "platform_concepts/inbox/inbox_setup/emailvschat",
               "platform_concepts/inbox/inbox_setup/agentstatuses",
               "platform_concepts/inbox/inbox_setup/assignmentlogic",
               "platform_concepts/inbox/inbox_setup/debugchecklist",
@@ -606,9 +570,6 @@ module.exports = {
             // "platform_concepts/inbox/inbox-settings/account/security",
             ]
           },
-
-
-
 
           ],
         },
@@ -858,7 +819,7 @@ module.exports = {
         "platform_concepts/growth/funnels",
       ],
     },
-
+    "platform_concepts/growth/dataops",
     "platform_concepts/growth/doccog",
     "platform_concepts/growth/data-explorer", 
     "platform_concepts/growth/dashboards",
@@ -887,13 +848,13 @@ module.exports = {
             {
               type: "category",
               label: "WhatsApp channel",
-              link: {type: 'doc', id: 'cookbooks/whatsapp-channel/whatsapp-channel'},
+              link: {type: 'doc', id: 'platform_concepts/channelConfiguration/whatsapp-channel'},
               collapsed: true,
               items: [
             "platform_concepts/channelConfiguration/whatsapp-configuration",
-            "cookbooks/whatsapp-channel/wa-migration",
+            "platform_concepts/channelConfiguration/wa-migration",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
-            "cookbooks/whatsapp-channel/faqs",
+            "platform_concepts/channelConfiguration/wa-faqs",
               ]},
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
@@ -1148,32 +1109,6 @@ module.exports = {
           ],
         },
        
-        
-        
-        
-        
-      
-        
-       
-        
-        
-       
-        
-        
-        
-        
-        
-       
-        
-        
-       
-        
-
-       
-        
-        
-        
-        
         "platform_concepts/appConfiguration/exposing-integration-to-app",
       ],
     },
@@ -1243,30 +1178,32 @@ module.exports = {
     //Do not add/ remove this file
     "updates/overview",
 
-    "updates/2022/dec2022",
-    "updates/2022/nov2022",
-    "updates/2022/oct2022",
-    "updates/2022/sep_updates",
-    "updates/2022/aug",
-    "updates/2022/july",
-   
-    /*
     {
       type: "category",
-      label: "2022 Updates",
+      label: "2023 updates",
       collapsed: true,
       items: [
-        "updates/2022/nov2022",
-        "updates/2022/oct2022",
-        "updates/2022/sep_updates",
-        "updates/2022/aug",
-        "updates/2022/july",
-        
+
+        "updates/2022/jan2023",
+
       ],
     },
-    */
-    // Prod update ends here.
+ 
+    {
+      type: "category",
+      label: "2022 updates",
+      collapsed: true,
+      items: [
+              "updates/2022/dec2022",
+              "updates/2022/nov2022",
+              "updates/2022/oct2022",
+              "updates/2022/sep_updates",
+              "updates/2022/aug",
+              "updates/2022/july",
+      ],
+    },
   ],
+     // Prod update ends here.
 
 
   glossary: [
