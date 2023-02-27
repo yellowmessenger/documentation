@@ -52,3 +52,13 @@ featured: true
 | **Themes and changes on chat widget setup** | - You can now select between Light or Dark theme.<br/> - Colour schemes are now compliant with WCAG’s accessibility standards. <br/> - You can choose between Solid, or Gradient colours for title bar. <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget) |
 
 
+## Marketplace 
+
+
+| New template | Description | 
+| -------- | -------- | 
+| **WhatsApp starter pack** | Templates added to help showcase the implementation of buttons, lists, and date validators on WhatsApp. These can be easily customized and reused. <br/>[**Whatsapp list**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget)<br/> [**Whatsapp buttons**](https://cloud.yellow.ai/marketplace/a1113aea29b76704cbf3f77bf89761ad)<br/> [**Whatsapp date validator**](https://cloud.yellow.ai/marketplace/33abc8f07ffc4b6e1cd047f9ad0c0e62) |
+
+| New template | Description | 
+| -------- | -------- | 
+| **Healthcare template on WhatsApp channel** | This template has New patient registration, Book a consultation, Collect reports, Talk to support, and Locate nearby clinic use cases. <br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/healthcare_template) |
