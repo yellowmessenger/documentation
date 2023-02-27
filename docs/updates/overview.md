@@ -42,5 +42,13 @@ featured: true
 | -------- | -------- | 
 | **Auto-language detection** <br/> | You can now interact with the bot in multiple languages without manually selecting the language at any point.<br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/usecases/languagedetection) |
 
+---------
 
- 
+ ## Widgets
+
+
+| Enhancement | Description | 
+| -------- | -------- | 
+| **Themes and changes on chat widget setup** | - You can now select between Light or Dark theme.<br/> - Colour schemes are now compliant with WCAG’s accessibility standards. <br/> - You can choose between Solid, or Gradient colours for title bar. <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget) |
+
+

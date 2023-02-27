@@ -70,6 +70,8 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/voice-as-channel/voicearchitecture",
+    "cookbooks/voice-as-channel/components", 
+
 // building  
   {
     type: "category",
@@ -82,17 +84,9 @@ module.exports = {
       "cookbooks/voice-as-channel/build/usingmp", 
         ],
       },
-      {
-        type: "category",
-        label: "Personalize bot-user conversations",
-        collapsed: true,
-        items: [
-    "cookbooks/voice-as-channel/personalize/customizebotresponse",
-    "cookbooks/voice-as-channel/personalize/captureuserresponse",
-    "cookbooks/voice-as-channel/personalize/understanduserresponse",
+    
     "cookbooks/voice-as-channel/personalize/conversationaldelays",
-  ],
-}, 
+
 // Voice Capabilities (usecases)
  {
     type: "category",
@@ -109,7 +103,6 @@ module.exports = {
       */
             ],
   }, 
-  "cookbooks/voice-as-channel/firstvoicebot", 
 // FAQs 
 "cookbooks/voice-as-channel/voicefaqs",
   ],
@@ -826,7 +819,7 @@ module.exports = {
         "platform_concepts/growth/funnels",
       ],
     },
-
+    "platform_concepts/growth/dataops",
     "platform_concepts/growth/doccog",
     "platform_concepts/growth/data-explorer", 
     "platform_concepts/growth/dashboards",
