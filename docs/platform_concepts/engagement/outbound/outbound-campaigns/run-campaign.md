@@ -84,9 +84,14 @@ In case you want to switch to User module to add audience, you can save the camp
 
    ![](https://i.imgur.com/ffRXb4m.png)
 
-8. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
+8. In **Set a goal**, set the objective that you want to track for the campaign. For more details, see [Campaign goals](#6-campaign-goal).
 
-9.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
+   i. Select and configure your desired goal - [Delivery](#1-delivery-goal), [Conversion](#2-conversion-goal) or [Response](#3-response-goal).
+   ii. Set the duration (in hours/days) for which you want to track the goal in **Track the goal for**. For example, if there is a sale in a couple of days, you can set it to track for two days to get the count of messages delivered before the sale ends.
+
+9. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
+
+10.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
 
      ![](https://i.imgur.com/WlmnEYU.png)
 
@@ -280,7 +285,48 @@ Segment is grouping of users based on certain condition sets. Segmentation can b
 
 ***
 
-## 6. Test campaigns (Recommended)
+## 6. Campaign goal
+
+The campaign goal represents a specific objective that you want to achieve through the campaign. Campaign goals can vary depending on the purpose of the campaign and the desired outcome. 
+
+Tracking the progress of campaign goals is important to ensure the effectiveness of the campaign in meeting its objectives. This could include the template used, user segment targetted, scheduled time or any other parameter.
+
+Goals are categorised into three types depending on the purpose of the campaign:
+
+#### 1. Delivery goal
+
+The delivery goal helps you track the reachability of the campaign. For example, the goal of promoting a new outlet is to reach out to a larger audience, your goal could be the number of messages delivered. 
+
+Currently, there are three delivery statuses supported - sent, delivered, and read. However, not all channels support all three statuses. For example, the message read cannot be tracked for SMS.
+
+  ![](https://i.imgur.com/KAEGKoJ.png)
+   
+   * In **What do you want to track**,  select the delivery status to track.
+   
+  
+
+#### 2. Conversion goal 
+
+Track the conversion event as the campaign goal.
+
+![](https://i.imgur.com/2jDXx4C.png)
+
+
+In **Select event**, choose the event that you want to track.
+
+#### 3. Response goal
+
+This goal helps you track the reactions or clicks received for the campaign. 
+
+![](https://i.imgur.com/ozLtuBo.png)
+
+   * **Select Any response**: Tracks all types of responses received for the campaign.
+   * **Button clicks**: Tracks only button clicks received for the campaign. You can use this only for templates with CTAs.
+
+
+***
+
+## 7. Test campaigns (Recommended)
 
 It is recommended to test your campaign with internal or test users before launching to ensure the campaign notifications are flawless. Especially, verify if images, buttons, deep links, and elements of personalisation are working or rendering as expected.
 

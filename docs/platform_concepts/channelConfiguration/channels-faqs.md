@@ -6,7 +6,7 @@ sidebar_label: Channels FAQs
 ### WhatsApp chatbot related FAQs
 
 <details>
- <summary>Why WhatsApp chatbot channel?</summary>
+ <summary>Why should you use the WhatsApp chatbot channel?</summary>
  <div>
   <br/>
   <div>WhatsApp chatbots is one of the fastest growing chatbot messaging channels today. It gives brands a great potential to reach out, enagage and support their customers on the channel consumers are.</div>
