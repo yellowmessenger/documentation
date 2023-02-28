@@ -5,6 +5,12 @@ sidebar_label : Using voice input nodes
 
 A voice input node is used to gather user information, process it, and manage various scenarios of conversing in a human-like manner. This node is in auto-sync with the [conversation design](https://docs.yellow.ai/docs/platform_concepts/design/convdesignvoice) so all the designs you add there will appear here automatically.
 
+:::note
+Voice input node will work only for voice bots, i.e you should have enabled **Voice bot** while creating your bot.
+
+![](https://i.imgur.com/8f5cdfK.png)
+:::
+
 ## 1. Access voice input node
 
 Go to **Studio** > **Prompts** > **Voice input**
