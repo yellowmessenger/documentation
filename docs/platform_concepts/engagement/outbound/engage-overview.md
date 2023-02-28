@@ -102,3 +102,5 @@ User trends refer to the behaviour that users exhibit. These trends include the 
 :::note
 By default, a user is opted-out If no opt-in preference is specified when adding the user and will be updated when the user opts in.
 :::
+
+

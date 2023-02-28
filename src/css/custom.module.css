@@ -299,6 +299,10 @@ html[data-theme="dark"] .DocSearch {
   min-width: 160px;
 }
 
+tr:nth-child(even) {
+  background-color: #fff !important; 
+}
+
 .cta-btn {
   border-radius: 2em;
   margin-right: 1em;
