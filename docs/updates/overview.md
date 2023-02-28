@@ -15,8 +15,8 @@ featured: true
 
 | New features | Description | 
 | -------- | -------- | 
-| **Updated behavior of validation function in prompt nodes** <br/>(Applicable to the Delivery QA Team) |Bot QA team can remove steps to validate Prompt Nodes (**Name, Email, Phone and Location**) from their QA checklist as they are now handled by the platform.| 
-| **Voice Input node v0 to design dynamic voice flows** <br/> | Voice input node is used to take inputs in the voice channel. It replaces 15+ nodes that were previously used to build a voice bot flow. <br/> Common inputs and settings are pre-filled, this reduces the lines of code written for validation. <br/> <br/>You can experience the conversation without previewing the bot with SSML quick hearing and testing features. <br/><br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput)  | 
+| **Auto-validation of prompt nodes** <br/>(Applicable to the Delivery QA Team) |Bot QA team can remove steps to validate Prompt Nodes (**Name, Email, Phone and Location**) from their QA checklist as they are now handled by the platform.| 
+| **Design dynamic voice flows using the Voice Input node v0 ** <br/> | Voice input node is used to take inputs in the voice channel. It replaces 15+ nodes that were previously used to build a voice bot flow. <br/> Common inputs and settings are pre-filled, this reduces the lines of code written for validation. <br/> <br/>You can experience the conversation without previewing the bot with SSML quick hearing and testing features. <br/><br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput)  | 
 
 ------
 
@@ -52,7 +52,7 @@ featured: true
 | New template | Description | 
 | -------- | -------- | 
 | **WhatsApp starter pack** | Templates added to help showcase the implementation of buttons, lists, and date validators on WhatsApp. These can be easily customized and reused. <br/><br/><ul><li>[**Whatsapp list**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget)</li><li> [**Whatsapp buttons**](https://cloud.yellow.ai/marketplace/a1113aea29b76704cbf3f77bf89761ad)</li><li>[**Whatsapp date validator**](https://cloud.yellow.ai/marketplace/33abc8f07ffc4b6e1cd047f9ad0c0e62)</li></ul> |
-| **Healthcare template on WhatsApp channel** | This template has New patient registration, Book a consultation, Collect reports, Talk to support, and Locate nearby clinic use cases. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/healthcare_template) |
+| **Healthcare template on WhatsApp channel** | The Healthcare template contains several prebuilt flows such as New patient registration, Book a consultation, Collect reports, Talk to support, and Locate nearby clinic use cases. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/healthcare_template) |
 
 -------
 
@@ -61,3 +61,17 @@ featured: true
 | New features | Description | 
 | -------- | -------- | 
 | **Omni channel campaign planning tool (Flows)** <br/> | You can easily plan and coordinate your campaigns across Email, WhatsApp, SMS, Voice, and more, from Engage module to reach audience on your preferred channels. <br/><br/>You will also have access to valuable insights and analytics that will help you measure the effectiveness of the campaigns and make informed decisions about marketing strategy.<br/>| 
+
+
+
+## Insights
+
+
+| New feature | Description |
+| -------- | -------- |
+| **Data Ops to export data from yellow.ai** | Data ops allows you to fetch the data obtained on the yellow.ai platform and export it to Amazon S3, Azure Blob, or SFTP server easily. <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops)
+
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Added conversation <br/> issues widget** | You can now view analytics based on the conversation logs (studio). <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/overview#10-conversation-issues) |
