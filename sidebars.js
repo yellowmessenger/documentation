@@ -315,6 +315,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/studio/analyze/chat-logs",
+            "platform_concepts/studio/analyze/training-performance",
           ],
         },
 
