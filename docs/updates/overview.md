@@ -20,7 +20,7 @@ featured: true
 
 | New features | Description | 
 | -------- | -------- | 
-| **Voice Input node v0 to design dynamic voice flows** <br/> | Voice input node is used to take inputs in the voice channel. It replaces 15+ nodes that were previously used to build a voice bot flow. <br/> Common inputs and settings are pre-filled, this reduces the lines of code written for validation. <br/> You can experience the conversation without previewing the bot with SSML quick hearing and testing features.  | 
+| **Voice Input node v0 to design dynamic voice flows** <br/> | Voice input node is used to take inputs in the voice channel. It replaces 15+ nodes that were previously used to build a voice bot flow. <br/> Common inputs and settings are pre-filled, this reduces the lines of code written for validation. <br/> You can experience the conversation without previewing the bot with SSML quick hearing and testing features. <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput) | 
 
 ------
 
@@ -51,4 +51,23 @@ featured: true
 | -------- | -------- | 
 | **Themes and changes on chat widget setup** | - You can now select between Light or Dark theme.<br/> - Colour schemes are now compliant with WCAG’s accessibility standards. <br/> - You can choose between Solid, or Gradient colours for title bar. <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget) |
 
+-------
 
+## Marketplace 
+
+
+| New template | Description | 
+| -------- | -------- | 
+| **WhatsApp starter pack** | Templates added to help showcase the implementation of buttons, lists, and date validators on WhatsApp. These can be easily customized and reused. <br/>[**Whatsapp list**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget)<br/> [**Whatsapp buttons**](https://cloud.yellow.ai/marketplace/a1113aea29b76704cbf3f77bf89761ad)<br/> [**Whatsapp date validator**](https://cloud.yellow.ai/marketplace/33abc8f07ffc4b6e1cd047f9ad0c0e62) |
+
+| New template | Description | 
+| -------- | -------- | 
+| **Healthcare template on WhatsApp channel** | This template has New patient registration, Book a consultation, Collect reports, Talk to support, and Locate nearby clinic use cases. <br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/healthcare_template) |
+
+-------
+
+## Engage 
+
+| New features | Description | 
+| -------- | -------- | 
+| **Omni channel campaign planning tool (Flows)** <br/> | You can easily plan and coordinate your campaigns across Email, WhatsApp, SMS, Voice, and more, from Engage module to reach audience on your preferred channels. You will also have access to valuable insights and analytics that will help you measure the effectiveness of the campaigns and make informed decisions about marketing strategy.<br/>| 

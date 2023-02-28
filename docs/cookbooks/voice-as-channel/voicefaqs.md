@@ -17,7 +17,7 @@ sidebar_label : Voice FAQs
 Can yellow voice bots support DTMF inputs?
 </summary>
 <div>
-<div> Yes, voice bots support both speech recognition and DTMF (keypad) inputs. <a  href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes#dtmf-related-options-in-nodes"> Learn more here. </a>
+<div> Yes, voice bots support both speech recognition and DTMF (keypad) inputs. <a  href="https://docs.yellow.ai/docs/cookbooks/voice-as-channel/usecases/dtmf"> Learn more here. </a>
 </div>
 </div>
 </details>

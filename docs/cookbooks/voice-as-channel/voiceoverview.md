@@ -3,7 +3,6 @@ title: Introduction to voice bots
 sidebar_label : Voice bot overview 
 ---
 
-Coming soon!
 
 :::info
 Voice features (and supporting documentation) are constantly getting improved and updated, there may be some issues/feature mis-match. 
