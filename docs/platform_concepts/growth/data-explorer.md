@@ -6,6 +6,7 @@ sidebar_label: Data explorer
 In this article, you will learn: 
 1. [What is a data explorer?](#1)
 2. [What are default tables?](#2)
+    1. [How to push data from user360 to default tables?](#21)
 3. [How to create custom tables?](#3)
 4. Visualization on tables and other functions:
     1. [Add filters](#4)
@@ -14,8 +15,8 @@ In this article, you will learn:
     4. [Download the generated data](#7)
     5. [Save the report](#8)
 5. [Schedule to send reports via. email](#9)
-6. [How to add reports to the dashboard?](#10)
-7. [How to delete a saved report](#11)
+    1. [How to add reports to the dashboard?](#10)
+    2. [How to delete a saved report](#11)
 
 
 :::note
@@ -88,6 +89,32 @@ Following are the datasets and their functions:
 | **User Feedback** | Provides info about the user experience from the feedback they give on the bot. Slice and dice it based on the use cases they visit the bot for. See how individual use cases are performing. |
 |**Video Chats**|Analyse the usage metrics for video calling tickets, and create your custom dashboards.|
 | **Voice Bot Events** | Find insights around voice bots. Number of inbound/outbound calls, calls per user, region, call duration, etc. |
+
+------
+
+### <a name="21"></a> 2.1 Push custom data to default tables  
+
+
+**API events, Bot events, Message events, and User engagement events** tables have two columns blank by default, CUSTOMID 1	and CUSTOMID 2. You can choose to push any of the user properties that are stored on [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties) to all those default tables. 
+
+> This action is irreversible. Once you configure it, the column(s) added will remain as a part of the default tables. 
+
+Steps to push custom data to default tables: 
+
+1. Add a new user property on the [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#21-add-user-property) page.  
+2. Click **Data explorer** > **Configure**. 
+
+    ![](https://i.imgur.com/y0JULrU.png)
+
+3. From the dropdown menu, choose a property (the custom data you want to push to API events, Bot events, Message events, and User engagement events tables) for CUSTOMID 1 and CUSTOMID 2.
+
+    > CUSTOMID 2 can be added only after adding CUSTOMID 1.  
+
+    ![](https://i.imgur.com/c4qJSSX.png)
+4. Click **Configure** and **Add**. Your custom data will get populated in the default tables.  
+
+    <img  src="https://i.imgur.com/EmlxTmE.png"  width="50%"/>
+
 
 
 ---
