@@ -701,7 +701,8 @@ apiresponse represents the raw response from the talishma create ticket API
 
 ### 1.12 Salesforce Live Agent
 
-To connect with an Salesforce Live Agent, use this code-snippet
+To connect with a Salesforce Live Agent, use this code-snippet
+
 
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
@@ -712,7 +713,14 @@ To connect with an Salesforce Live Agent, use this code-snippet
                    },
                    salesforceLiveChatCustomFields: [],
                    salesforceLiveChatCustomEntities: [],
-                   salesforceLiveChatAgentId: ""
+                   salesforceLiveChatAgentId: "",
+                   salesforceLiveChatAgentAssignedMessage: "",
+                   salesforceLiveChatVisitorLanguage: "English",
+                   salesforceLiveChatQueuePositionMessage: "",
+                   salesforceLiveChatUpdatedQueuePositionMessage: "",
+                   salesforceLiveChatAgentTransferredMessage: "",
+                   salesforceLiveChatEstimatedWaitTimeMessage: "",
+                   salesforceLiveChatDisplayAgentName: true
        }).then((ticketData) => {
            app.log(ticketData, "ticketData");
            // Display appropriate message based on the ticketData
@@ -720,10 +728,6 @@ To connect with an Salesforce Live Agent, use this code-snippet
            app.log(error, 'error');
            //Error handler
        });
-
-       
-This table consists of sample values, data types and descriptions for all the fields that need to be filled.
-
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---------|
 |issue|Test description|String|The subject/topic/reason why the ticket is created.|
@@ -731,8 +735,16 @@ This table consists of sample values, data types and descriptions for all the fi
 |email|test@gmail.com|String|Email address of the end user.|
 |name|Rajesh|String|Name of the end user.|
 | salesforceLiveChatCustomFields| [<br/>{<br/>"label": "Mobile",<br/> "value": "9999444443",<br/>"entityMaps": [<br/> {<br/>"entityName": "contact",<br/> "fieldName": "Mobile_Number__c"<br/>}<br/>],<br/>"transcriptFields": [<br/> "Mobile_Number__c"<br/>],<br/>"displayToAgent": true <br/> },<br/>{<br/>"label": "Chat",<br/> "value": "sessionURL",<br/>"entityMaps": [<br/>{<br/> "entityName": "case",<br/> "fieldName": "chat_transcript__c"<br/>}<br/>],<br/> "transcriptFields": [<br/>"chat_transcript__c"<br/> ],<br/> "displayToAgent": true<br/>}<br/>]<br/>| Array| The list of details provided by the user before initiating the chat with the live agent|
-|salesforceLiveChatCustomEntities|[<br/>{<br/>"entityName":"Contact",<br/>"saveToTranscript":"contact",<br/>"linkToEntityName":"Case",<br/>"linkToEntityField":"ContactId",<br/>"entityFieldsMaps":<br/>[<br/>{<br/>"fieldName":"LastName", <br/>"label":"LastName",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"FirstName",<br/>"label":"FirstName"<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"Email",<br/>"label":"Email",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>}<br/>]<br/>}<br/>]<br/>| Array| The records that are created/ searched depending on what [EntityFieldsMaps](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#EntityFieldMaps) have been enabled.|
-|salesforceLiveChatAgentId|0055g00000HEbLD|String|The agentId that needs to be passed if you want to use the sticky agent feature.|
+|salesforceLiveChatCustomEntities|[<br/>{<br/>"entityName":"Contact",<br/>"saveToTranscript":"contact",<br/>"linkToEntityName":"Case",<br/>"linkToEntityField":"ContactId",<br/>"entityFieldsMaps":<br/>[<br/>{<br/>"fieldName":"LastName", <br/>"label":"LastName",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"FirstName",<br/>"label":"FirstName"<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"Email",<br/>"label":"Email",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>}<br/>]<br/>}<br/>]<br/>| Array| The records that are created/ searched depending on the enabled [EntityFieldsMaps](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#EntityFieldMaps).|
+|salesforceLiveChatAgentId|0055g00000HEbLD|String|The agentId that needs to be passed to use the sticky agent feature.|
+|salesforceLiveChatAgentAssignedMessage|You are now connected to {liveAgent}.|String|The message that will be displayed to the end user after an agent has been assigned. {liveAgent} is the dynamic parameter which represents the name of the agent, use it in the message to display the name of the agent.|
+|salesforceLiveChatVisitorLanguage|English|String|Language preferred by the end user to chat with the live agent.|
+|salesforceLiveChatQueuePositionMessage|Your queue position is {position}|String|The message will be displayed to the end user when the ticket is in queue. {position} is the dynamic parameter which represents the queue position numerically, use it in the message to display the position|
+|salesforceLiveChatUpdatedQueuePositionMessage|Your current queue position is {position}|String|The message will be displayed to the end user when the queue position changes. {position} is the dynamic parameter which represents the queue position numerically, use it in the message to display the position|
+|salesforceLiveChatAgentTransferredMessage|Your chat has been transferred to {liveAgent}|String|The message that will be displayed to the end user when the chat gets transferred from one agent to another. {liveAgent} is the dynamic parameter which represents the name of the agent, use it in the message to display the name of the agent.|
+|salesforceLiveChatEstimatedWaitTimeMessage|The time taken for the chat to get assigned is {waitTime} seconds|String|The end user will be shown this message to notify them of the duration they should expect to wait before an agent is assigned. {waitTime} is the dynamic parameter which represents that waiting time in seconds, use it in the message to display the wait time.|
+|salesforceLiveChatDisplayAgentName|true|Boolean|Enabling this flag will ensure that the agent name gets displayed when they get assigned.|
+
 
 **Sample response in case of success:**
 
