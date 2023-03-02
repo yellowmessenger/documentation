@@ -15,7 +15,7 @@ sidebar_label : Chat widget FAQs
  <summary>Why is the bot not displaying or loading any of the configured messages?</summary>
  <div>
   <br/>
-  <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Studio</a> . Login to cloud.yellow.ai platform. Navigate to  <b>Studio -> Welcome Message -> Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a>. </div>
+  <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Studio</a>. Login to cloud.yellow.ai platform. Navigate to  <b>Studio -> Welcome Message -> Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a>. </div>
    </div>
 </details>
 
@@ -170,7 +170,7 @@ export default () => (
 </details>
 
 <details>
- <summary>Can we have custom fonts for [v2](http://cloud.yellow.ai/) web bots?</summary>
+ <summary>Can we have custom fonts for <a href="http://cloud.yellow.ai">V2</a> web bots?</summary>
  <div>
   <br/>
   <div>Currently, v2 web bots do not support custom fonts as we need to validate legibility on the chat interface, ensure the availability of appropriate font weights, and then support respective languages. If you need to add a new font, reach out to the [support](mailto:support@yellow.ai).</div>
