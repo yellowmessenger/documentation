@@ -235,7 +235,8 @@ window.ymConfig = {
  <summary>Is possible to display image and text in a single node?</summary>
  <div>
   <br/>
-  <div>Yes, you can use the <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#14-cards">Generic card</a> without including any options in it. You need to include an image and description.<br/> <img src="https://i.imgur.com/UkcRGAy.png)" alt="drawing" width="40%"/> 
+  <div>Yes, you can make use of <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#14-cards">Generic card</a>, and don not include any options in it. You need to include image, and description. Store the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code">function</a> response in var of type array and connect it to a message carousel node.<br/> 
+<img src="https://i.imgur.com/UkcRGAy.png)" alt="drawing" width="40%"/> 
 </div>
    </div>
 </details>
