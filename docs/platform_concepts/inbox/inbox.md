@@ -1,7 +1,7 @@
 ---
 id: inbox
-title: Overview
-description: inbox for customer support agents 
+title: Provide customer support using yellow.ai's Inbox
+description: inbox for customer support agents and live agents
 featured: true
 rank: 5
 ---

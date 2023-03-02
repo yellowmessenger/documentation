@@ -70,7 +70,7 @@ To create or view any of the default/custom datasets, log in to the [yellow plat
 ## <a name="2"></a> 2. Default tables/datasets 
 
 **Default Datasets** are the built-in tables, related to Users Events, Messages, API Events, Agent Events, etc.
-- Click on any of the table names to view the datasets. 
+- Click on any of the table names to view the data available for the last month (use filters to customize). 
 
 ![](https://i.imgur.com/uqwkU9X.png)
 

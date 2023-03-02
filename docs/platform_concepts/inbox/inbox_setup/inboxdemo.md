@@ -1,5 +1,5 @@
 ---
-title: Try the live agent module
+title: Use yellow.ai's inbox live chat 
 sidebar_label : Try inbox demo
 ---
 
@@ -34,7 +34,7 @@ You will not be able to create flows on Studio module when the bot is in **Live*
 
 -----
 
-## 1. Try Inbox demo 
+## 1. Implement live chat 
 
 > On your web browser, open 2 different tabs (Studio module and Inbox module)
 
