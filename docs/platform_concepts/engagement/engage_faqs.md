@@ -19,9 +19,21 @@ By default, the rate limit is set to 2000 calls/min. If you want to reduce this 
 <details>
 
 <summary>
-How to add a WhatsApp number for testing purposes?
+How to add a WhatsApp number for testing purposes in the Live environment?
 </summary>
-In Channels, select <b>WhatsApp messenger</b> in live environment > Click on the number that you have added to the Live environment > Click <b>Enable development mode</b> and add the desired number.
+
+1. In Channels, select <b>WhatsApp messenger</b> in the Live environment.
+2. Click on the more options icon and select **Edit**.
+
+   ![](https://i.imgur.com/gPwidHR.png)
+
+3. **Enable development mode** using the toggle button.
+
+   ![](https://i.imgur.com/9RD6Jah.png)
+
+4. Enter the number in **Developer whatsapp number**. 
+5. To add more WhatsApp business numbers, click **Add phone numbers**.
+6. Click **Save**.
 
 </details>
 
