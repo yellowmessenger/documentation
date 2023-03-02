@@ -117,6 +117,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Added conversation <br/> issues widget** | You can now view analytics based on the conversation logs (studio). <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/overview#10-conversation-issues) |
+| **Added Conversation issues widget** | You can now view analytics based on the conversation logs (studio). <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/overview#10-conversation-issues) |
+| **Push custom data to default tables on Data explorer** | **API events, Bot events, Message events, and User engagement events** tables have two columns blank by default, CUSTOMID 1	and CUSTOMID 2. You can choose to push any of the user properties that are stored on [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties) to all those default tables.<br/> <br/> [**Learn more**](http://localhost:3000/docs/platform_concepts/growth/data-explorer#-21-push-custom-data-to-default-tables) |
 
 </details>
