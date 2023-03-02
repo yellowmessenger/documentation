@@ -7,7 +7,7 @@ Chat widget or Web widget is a bot that you can embed on a website to interact w
 
 ![](https://i.imgur.com/tezcJjN.png)
 
-This can be used to answer product queries, troubleshoot customer issues related to product features, and get quick feedback on website usability and customer service. 
+Chat widget can be used to answer product queries, troubleshoot customer issues related to product features, and get quick feedback on website usability and customer service. 
 
 The **Chat widget** can be used in the following ways: 
 
@@ -16,7 +16,7 @@ The **Chat widget** can be used in the following ways: 
 * **Shopping assistance**: It helps website users find their products and services quickly.
 * **Collecting feedback**: It can be used to collect reviews and ratings for your products and services from website visitors that can be used to improve customer satisfaction.  
 
-A Chat widget allows users to customize design of  the widget, preview, and deploy it as per their custom requirements. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget) to know more.
+In our platform, the Chat widget allows users to customize design of the widget, preview, and deploy it as per their custom requirements. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget) to know more.
 
 To match any use case, the Chat widget can be customised in various ways using [Functions](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/fuction-widgets) and [Events](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/event-widget). 
 

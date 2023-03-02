@@ -117,7 +117,33 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Added Conversation issues widget** | You can now view analytics based on the conversation logs (studio). <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/overview#10-conversation-issues) |
+| **Added Conversation Issues widget** | You can now view analytics based on the conversation logs (studio). <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/overview#10-conversation-issues) |
+
+
+| Enhancement | Description |
+| -------- | -------- |
 | **Push custom data to default tables on Data explorer** | **API events, Bot events, Message events, and User engagement events** tables have two columns blank by default, CUSTOMID 1	and CUSTOMID 2. You can choose to push any of the user properties that are stored on [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties) to all those default tables.<br/> <br/> [**Learn more**](http://localhost:3000/docs/platform_concepts/growth/data-explorer#-21-push-custom-data-to-default-tables) |
 
-</details>
+
+
+
+-----
+
+## Inbox
+
+
+| New feature | Description |
+| -------- | -------- |
+| **Integrations your knowledgebase(KB) with GTM and Chatbot** | Extend the native capabilities of Inbox's knowledge base through 3rd party integrations like Google Tag Manager and Chatbot widget. You can get insights on user demographics, behavioral data, and the efficiency of your KB and optimize it accordingly. <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations)
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Inbox default settings** | For new Inbox bots, default settings that are required for seamless onboarding are auto-enabled by default. This will reduce the friction and time to value for all the inbox users.|
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Debugging logs for Inbox issues** | Debug and solve live agent journey issues with ease. With these logs, you can understand why your chat is not getting raised, why your chats are getting missed, etc. at any point in time and make the required changes.|
+
+| Enhancement | Description |
+| -------- | -------- |
+| **New details section in email tickets page** | Based on feedback and pain points shared by the customers, the Email tickets section is redesigned to make it efficient for the agents to work with and increase their productivity.|

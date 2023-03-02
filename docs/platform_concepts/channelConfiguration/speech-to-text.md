@@ -8,7 +8,7 @@ The platform supports Speech-to-Text (STT) feature for chatbots to convert spoke
 STT helps users save time by not having to type their messages. Based on the user's spoken words, the chatbot interprets the user’s intent accurately compared to text based messages.
 
 :::note
-* To enable SST for your chatbots, contact support@yellow.ai.
+* To enable SST for your chatbots, contact [support](mailto:support@yellow.ai).
 * The supported languages for STT are English, Hindi, Tamil, Kannada, and Slovak.
 :::
 

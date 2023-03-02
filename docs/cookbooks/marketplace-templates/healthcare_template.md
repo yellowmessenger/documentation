@@ -22,7 +22,7 @@ The following are the most common use cases (flows) that are prebuilt in healthc
 1. **Start:** This flow offers the options for a new patient to register, book a consultation, view clinics closer to their place, collect medical reports and reach out to support for personalised queries.
 2. **New patient registration:** This flow collects the details of a new patient, for example, name, age, contact number, gender, email address and stores it in a database.
 3. **Book a consultation:** This flow assists your users in scheduling an appointment with your healthcare centre by collecting the date and time of the doctor you would like to consult. 
-4. **Locate Nearby Clinics:** This flow collects the user's location details and shows the clinics closer to their place.
+4. **Locate nearby clinics:** This flow collects the user's location details and shows the clinics closer to their place.
 5. **Collect report:** This flow helps your users collect their health reports by accessing their electronic records.
 6. **Connect with support:** This flow provides customer support either by answering user questions from the trained FAQs or by connecting the bot user to the support agent to address complex queries.
 
@@ -65,7 +65,7 @@ It can also be triggered at any point of the conversation when the bot user type
 #### :pushpin: Tips 
 
 - You can collect more details - previous medical details and upload files.
-- Using [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) and [QR nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) you can display the next options available for the patient aft registration.       
+- Using [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) and [QR nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) you can display the next options available for the patient registration.       
    
 ----------
 
