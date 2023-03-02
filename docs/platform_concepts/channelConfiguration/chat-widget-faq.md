@@ -15,7 +15,7 @@ sidebar_label : Chat widget FAQs
  <summary>Why is the bot not displaying or loading any of the configured messages?</summary>
  <div>
   <br/>
-  <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Studio</a> . Login to cloud.yellow.ai platform. Navigate to  <b>Studio -> Welcome Message -> Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a>. </div>
+  <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Studio</a>. Login to cloud.yellow.ai platform. Navigate to  <b>Studio -> Welcome Message -> Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a>. </div>
    </div>
 </details>
 
@@ -170,7 +170,7 @@ export default () => (
 </details>
 
 <details>
- <summary>Can we have custom fonts for [v2](http://cloud.yellow.ai/) web bots?</summary>
+ <summary>Can we have custom fonts for <a href="http://cloud.yellow.ai">V2</a> web bots?</summary>
  <div>
   <br/>
   <div>Currently, v2 web bots do not support custom fonts as we need to validate legibility on the chat interface, ensure the availability of appropriate font weights, and then support respective languages. If you need to add a new font, reach out to the [support](mailto:support@yellow.ai).</div>
@@ -235,7 +235,8 @@ window.ymConfig = {
  <summary>Is possible to display image and text in a single node?</summary>
  <div>
   <br/>
-  <div>Yes, you can use the <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#14-cards">Generic card</a> without including any options in it. You need to include an image and description.<br/> <img src="https://i.imgur.com/UkcRGAy.png)" alt="drawing" width="40%"/> 
+  <div>Yes, you can make use of <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#14-cards">Generic card</a>, and don not include any options in it. You need to include image, and description. Store the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code">function</a> response in var of type array and connect it to a message carousel node.<br/> 
+<img src="https://i.imgur.com/UkcRGAy.png)" alt="drawing" width="40%"/> 
 </div>
    </div>
 </details>
