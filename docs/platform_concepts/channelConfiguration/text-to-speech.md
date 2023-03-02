@@ -6,7 +6,7 @@ sidebar_label: Text-to-Speech
 The platform supports Text-to-Speech (TTS) feature for chatbots to convert text into audio. This feature helps to make the conversation between a user and the bot more interactive. It allows the chatbot to respond to users in a natural way, using a synthesized voice to provide a humanlike conversation experience. It also allows the users to receive a human-voice response to their query and provides additional information and feedback.
 
 :::note
-* To enable TTS for your chatbots, contact support@yellow.ai.
+* To enable TTS for your chatbots, contact [support](mailto:support@yellow.ai).
 * The supported languages for TTS are English, Hindi, Tamil, and Slovak.
 :::
 
