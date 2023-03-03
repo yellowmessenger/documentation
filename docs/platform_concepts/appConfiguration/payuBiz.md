@@ -4,8 +4,6 @@ sidebar_label : PayU Business
 ---
 
 
-# PayU Biz
-
 Integrate your Yellow.ai platform with [PayU ](https://payu.in/about-us?_ga=2.219146714.274874686.1677657469-282964387.1677657469)account to receive payments from your users through PayU. You can generate payment links, UPI intents for whatsapp pay and receive notifications on the success/failure of the payments.
 
 ## 1. Connect PayU with Yellow.ai
