@@ -5,6 +5,44 @@ featured: true
 rank: 1
 ---
 
+### WhatsApp 
+
+<details>
+
+<summary>
+
+What is the rate limit for Notification API for WhatsApp channel?
+</summary>
+By default, the rate limit is set to 2000 calls/min. If you want to reduce this rate, create a ticket requesting the same or contact support.
+</details>
+
+<details>
+
+<summary>
+How to add a WhatsApp number for testing purposes in the Live environment?
+</summary>
+
+1. In Channels, select <b>WhatsApp messenger</b> in the Live environment.
+2. Click on the more options icon and select **Edit**.
+
+   ![](https://i.imgur.com/gPwidHR.png)
+
+3. **Enable development mode** using the toggle button.
+
+   ![](https://i.imgur.com/9RD6Jah.png)
+
+4. Enter the number in **Developer whatsapp number**. 
+5. To add more WhatsApp business numbers, click **Add phone numbers**.
+6. Click **Save**.
+
+</details>
+
+
+<details>
+<summary>How to add a welcome message for the WhatsApp channel?</summary>
+The default message does not come automatically for WhatsApp. You have to train with initial <a href="https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance">utterance </a> like “hi” or “hello” to trigger a flow.
+</details>
+
 
 ### Email outbound
 

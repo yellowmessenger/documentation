@@ -11,28 +11,16 @@ In this article, you will learn:
 
 ---
 
-<!--
-**What are canned responses?**
+Pre-defines snippets of texts that can be used as shortcuts, greetings, and conversation dialogues while an agent is typing a message. It reduces the time taken by an agent to respond to a chat/ticket. 
+With the canned response feature, you can directly add frequently uses content (image/text) in a message without typing it multiple times. For example, questions like 'What is your return policy?' are asked frequently, for such questions, instead of typing the policy, an agent can add a canned response(which will have the policy).
 
-Canned Responses are pre-defined notifications for frequent replies, with which the support reps can reply to emails with ease. Other than a customized template for individual emails, the canned response can be sent to the frequently raised requests. It reduces the response time and also provides a personal touch to the request. The response can be made private or public according to your convenience. You can add, manage and share a canned response.
- 
-It allows you to:
+Canned responses can be configured for:
+1. **Live chats**- Can have Text and Media as a response
+2. **Email tickets**- Can have only Text as a response
 
-* Create and manage customizable templates for comments and issue descriptions.
-* Add automated actions to templates/chats.
-* Quickly insert favorite templates with just one click.
+Based on the requirement, these canned responses can be added or edited by an admin. The process to add/delete canned responses for chat and email is the same. 
 
--->
-
-
-There are two sections of canned responses:
-1. **Live chat**- Can text Text and Media as a response
-2. **Email ticket**- Can have only Text as a response
-
-Based on the requirement, these canned responses can be added or edited. The process to add/delete canned responses for chat and email are the same. 
-
-
-**These saved responses will be available in the chats section**
+These saved responses will be available in the chats/ticket section, you can add it by clicking canned response icon or by typing "#" followed by the required tag. 
 
 ![](https://i.imgur.com/5CqmfB6.png)
 
