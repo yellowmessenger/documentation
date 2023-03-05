@@ -3,9 +3,9 @@ title:  Design conversations for voice bots
 sidebar_label : Design conversations for voice bots  
 ---
 
-**Design** module on the [yellow.ai](https://cloud.yellow.ai) platform allows you to design a bot without needing to learn all the platform aspects prior. You can input text as required to create a conversation between the bot and the user. Flows are built automatically on the Studio module.
+The **Design** module helps you design a bot without needing to learn all the platform aspects prior. You can design a conversation between the bot and the user using text inputs. Based on the input, flows are created dynamically on the Studio module.
 
-You can design multiple flows on the conversation design module, Once they are converted into flows, you can train, test, preview, and publish the bot.
+Once the text you input is converted into flows, you can train, test, and preview the flow before publishing. You can design multiple flows.
 
 
 
@@ -16,7 +16,7 @@ In this article, you will learn how to use the conversation design to build **vo
 -----------
 
 
-## 1. Create a new bot 
+## 1. Create a new voice bot 
 
 > If you are a new user, refer to [this](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup) article. 
 
@@ -41,7 +41,7 @@ In this article, you will learn how to use the conversation design to build **vo
 
     ![](https://i.imgur.com/u2UEI56.png)
 
-5. From the Overview switcher, select **Design**. 
+5. From the module switcher, select **Design**. 
 
     <img src="https://i.imgur.com/AcKCNyw.png" alt="drawing" width="70%"/>
 
@@ -54,7 +54,7 @@ While creating flows manually, for each of these nodes, you had to enter the tex
 
 With the conversation designer, you can design natural voice conversations by auto-generating SSML tags from voice effects such as emphasis, pronunciation, pause, etc.
 
-> Global and Node-level settings are configured with the default values. You can skip these steps if you do not have a requirement to customize it. 
+> Global and Node-level settings are configured with the default values. You can skip these steps if you do not want to customize it. 
 
 ### 2.1 Bot persona settings
 
@@ -65,7 +65,7 @@ Bot persona settings (global settings) will only be applied to the conversations
 1. Click the **Settings** button on the top-right of the screen. Changes made in Bot persona settings will apply to all the nodes. 
     - **Language**: Select the language you want the bot to speak. 
     - **Voice**: Voices available are listed in the dropdown, select your preferred voice.  
-    - **Pitch/Speed/Volume**: Place the cursor on the number you want to select. 
+    - **Pitch/Speed/Volume**: Set the cursor to your preferred values. 
 
 2. Click **Save**. 
 
@@ -76,9 +76,10 @@ Bot persona settings (global settings) will only be applied to the conversations
 
 ### 2.2 Bot response settings
 
-> These are node-level settings. With this, voice input nodes are updated with **SSML** code(bot response) on **Studio**.  
+These are node-level settings. With this, voice input nodes are updated with **SSML** code(bot response) on **Studio**.  
 
-On your dialogue box, when you double-click on the entered text (bot says), you can find the below configurable options: 
+On the dialogue box, double-click on the entered text (bot says). You will see the following configurations:
+
 - **Emphasis**: Select a text from the entered sentence and emphasize(stress) that word (**low, medium, high**). If you select **Off**, emphasis applied by default will detain. 
 <img src="https://i.imgur.com/pp9id0a.png" alt="drawing" width="70%"/>     
 
@@ -88,7 +89,7 @@ On your dialogue box, when you double-click on the entered text (bot says), you 
 - **Music**: You can add .mp3 or .wav music files, that can get played during the conversation.
 <img src="https://i.imgur.com/AqLhpza.png" alt="drawing" width="70%"/>    
 
-- **Interpret**: It can be used to interpret a word in a particular format. 
+- **Interpret**: You can use it to interpret a word in a particular format. 
  <img src="https://i.imgur.com/IBRZqiG.png" alt="drawing" width="70%"/>    
      
 
@@ -121,10 +122,12 @@ Click **Preview** in the dialogue box and understand how the bot sounds after co
 ## 3. Store and use variables 
 
 You can store and use user's information during the conversation by storing it in a variable. 
-> There are two types of variables you can store this data in: 
-> - [User properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties): These are default variables avaiable on the platform. 
-> - [Custom variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#21-custom-variables): These are variables created specifically for your bot. 
 
+:::note
+There are two types of variables you can store this data in: 
+- [User properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties): These are default variables avaiable on the platform. 
+- [Custom variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#21-custom-variables): These are variables created specifically for your bot. 
+:::
 
 1. **Store response in** option is used for the user's side of the conversation (User says). You can store the input from the user in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#31-create-a-variable-via-nodes) by selecting a variable next to **Store the responses**. You can choose an existing variable or click **+Add new variable**. Example: Store customers name in First name variable. 
 
@@ -158,13 +161,13 @@ You can store and use user's information during the conversation by storing it i
 
     <img src="https://i.imgur.com/GplCpZt.png" alt="drawing" width="100%"/>
 
-- **Add components**: Click **+** and connect this dialogue to a new **flow/dialogue/condition**.
+- **Add components**: Click **+** and connect this dialogue to a new **flow**/**dialogue**/**condition**.
 
     ![](https://i.imgur.com/lORvCQ3.png)
 
 
 :::info
-Click [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/convdesiVB) for a detailed user guide on building a voice bot for a simple use-case using design. 
+Click [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/convdesiVB) for a detailed guide on building a voice bot for a sample use-case using design. 
 :::
 
 --------
@@ -204,9 +207,9 @@ Share designs with others within the platform to quickly close the feedback loop
 
 ## 7. Sync conversation flows to studio and deploy
 
-With bi-directional auto-sync between **Conversation design** and **Studio > Flows**, the information on the design module will be available as flows(and vice versa).
+With bi-directional auto-sync, the information on the **Design** module will be available as *flows* on **Studio** (and vice versa).
 
-1. From the overview switcher, select **Studio>Flows**. 
+1. From the overview switcher, select **Studio > Flows**. 
 2. If you want to add a welcome message or change the flow from which the bot conversation starts, click **Welcome message** on the conversation settings section and edit it. 
 
     ![](https://i.imgur.com/zv58neq.png)

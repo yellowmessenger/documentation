@@ -19,20 +19,24 @@ Live chats are assigned only to an **Inbox agent** (although **Inbox admin** wil
 - For an inbox agent, only the chats/tickets assigned to them will be accessible.
 :::
 
+---------
+
 
 The chat section screen is divided into 3 parts:
 
+![](https://i.imgur.com/oSPem4b.png)
+
+
 | Section| Description |
 | -------- | -------- |
-| [Live chat, search and filter section](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatsearch)     | Choose the type of chat you want to see. Filter and search for specific chats. Perform bulk actions like transfer/resolve/reopene etc. by simple selecting multiple chats.         |
-|[Chat - conversation screen](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/bulkaction) | View the chat. Reply to the user. Make notes of user conversation (summary) to help other agents understand the conversation quicker. Transfer the chat to another agent. Download the chat.     |
-|[User details](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/bulkaction)|Learn user details such as location, name, phone number, order ID, device details, etc. Add other agents to collaborate on this chat, to resolve the query quicker. Transfer or resolve the live chat.     |
+|[Chat conversation, resolve and transfer chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen) | View the chat. Reply to the user. Make notes of user conversation (summary) to help other agents understand the conversation quicker. Transfer the chat to another agent. Download the chat. <br/> Configure and understand how the [video calling](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/videocall) works for live chats. |
+| [Search and filter section](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatsearch)     | Choose the type of chat you want to see. Filter and search for specific chats. Perform bulk actions like transfer/resolve/reopene etc. by simple selecting multiple chats.         |
+|[User details](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-2-user-details)| Learn user details such as location, name, phone number, order ID, device details, etc. Add other agents to collaborate on this chat, to resolve the query quicker. Transfer or resolve the live chat.      |
 
 
 
-![](https://i.imgur.com/2dW8wTK.png)
 
- >The above sub-sections are explained in detail in the upcoming articles. 
+ > The above sub-sections are explained in detail in the upcoming articles. 
 
 
 ----
@@ -42,18 +46,17 @@ The chat section screen is divided into 3 parts:
 When a live chat is raised by the bot user (requesting to connect with an agent), that chat will be displayed under this section. 
 
 :::note
-
-- To learn how to build a flow that will raise a ticket to a live agent, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#4-try-live-agent-module). 
-- To learn more about the raise ticket node, click [here](hhttps://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket). 
+Only the **My chats** tab gets updated in real-time as and when the conversation occurs.  
+Other chats are not updated unless the page is refreshed.
 :::
 
-To understand the chats section, it is important to understand the types of chats. Inbox classifies chats into 7 different types. They are explained below: 
+Inbox classifies live chats into 7 different types, explained below: 
 
 
 
 ![](https://i.imgur.com/WP8TpCE.png)    
 
-
+> To learn how to build a flow that will raise a ticket to a live agent, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo).  
 > To view chats, Open Inbox > Chats. Select from the Chat types dropdown. 
 
 
@@ -126,10 +129,6 @@ The purpose of this section is to monitor the bot responses. If the conversation
 > - If you have only Inbox agents/admins access consult your bot admin for Studio access. 
 
 
-:::note
-Only the **My chats** tab gets updated in real-time as and when the conversation occurs.  
-Other chats are not updated unless the page is refreshed.
-:::
 
 
 

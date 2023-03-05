@@ -35,6 +35,8 @@ This steps are achieved through Inbox settings, explained in detail [here](https
 
 ![](https://i.imgur.com/oDxRiD9.png)
 
+-------
+
 ### 1.2 Raise a video call for each live chat
 
 You can allow the customer to raise a video call for a live chat by setting it up in the Studio flow. 
@@ -76,8 +78,10 @@ While resolving a query on live chat, Agents/customers might encounter instances
 
 
 :::note
-Resolving a query on video call does not mean that the ticket is resolved. After disconnecting the video call, the agent must resolve the live chat by clicking the **Resolve** button on the chat screen.
+Resolving a query on video call does not mean that the live chat is resolved. After disconnecting the video call, the agent must resolve the live chat by clicking the **Resolve** button on the chat screen.
 :::
+
+-------
 
 ### 2.1  Agent side video calling features 
 
@@ -100,7 +104,7 @@ Resolving a query on video call does not mean that the ticket is resolved. After
     <img src="https://i.imgur.com/bsf42Ib.png" alt="drawing" width="40%"/>   
 
 
-
+--------
 
 ### 2.2 Customer side video calling features
 

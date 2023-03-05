@@ -22,7 +22,10 @@ Based on the requirement, these canned responses can be added or edited by an ad
 
 These saved responses will be available in the chats/ticket section, you can add it by clicking canned response icon or by typing "#" followed by the required tag. 
 
+**Canned response on live chat screen** 
 ![](https://i.imgur.com/5CqmfB6.png)
+**Canned response on email tickets screen** 
+![](https://i.imgur.com/VMHjZNZ.png)
 
 
 ## <a name="add"></a> 1. Add canned responses 

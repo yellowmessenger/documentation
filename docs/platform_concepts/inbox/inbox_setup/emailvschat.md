@@ -4,9 +4,9 @@ sidebar_label : Email vs. Chat tickets
 ---
 
 
-Depending upon the business use case, Inbox can be configured to handle email or chat tickets. Few comparasions of email vs. chat tickets are mentioned below: 
+Depending upon the business use case, Inbox can be configured to handle email tickets or live chat. Few comparasions of email vs. chat are mentioned below: 
 
-|  Live chat| Email chat |
+|  Live chat| Email tickets |
 |--|--|
 |Synchronous form of communication|Asynchronous form of communication|
 |In this case, the bot user is actively present in the bot (WhatsApp bot, web bot, etc.) and is expecting a response to the raised queries in real time |This allows customers/ brands that are using the bot to provide support for a lot of customers in a situation when they are not required to respond instantaneously |
