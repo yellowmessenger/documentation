@@ -8,6 +8,9 @@ This data is used to power different modules inside the Yellow AI platform.
 
 **Data Ops**(Data operations) feature is designed for the customers(enterprises) who want to fetch this data from the yellow.ai platform into their systems from an information security perspective or for dashboarding and reporting purposes.
 
+
+## 1. Data Export 
+
 Data can be exported to your system storage by following three steps- choose the data to be exported, choose the frequency, choose the destination, and generate rules which will export your data. 
 
 > Existing rules can only be **Deactivated**. There is no option to Activate it. 

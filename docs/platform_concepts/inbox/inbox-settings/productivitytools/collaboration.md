@@ -32,6 +32,9 @@ To enable collaborators for chat tickets, follow the below steps:
     ![](https://i.imgur.com/HsgmC3L.png)
 
 4. Enabling the collaborator toggle on the inbox settings will enable a **Collaborator** field on your chat screen- user details section where you can add collaborators by selecting the names from the dropdown menu.
-
+    
+    **Collaborator on live chat**
     <img src="https://i.imgur.com/Ec8jjPi.png" alt="drawing" width="70%"/>
 
+    **Collaborator on email tickets**
+    <img src="https://i.imgur.com/D554EhD.png" alt="drawing" width="40%"/>
