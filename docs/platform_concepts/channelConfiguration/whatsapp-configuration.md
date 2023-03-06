@@ -132,13 +132,13 @@ The number you give should not be connected to any WhatsApp account. If connecte
 
 ### 1.3 Verfiy Business account with Facebook
 
-1. Now, let's get to verification. In the FBM, go to **More Tools > Business Settings > Select your Business**.
+1. In the FBM, go to **More Tools > Business Settings > Select your Business**.
 
 2. Click on **Security Centre**.
 
    ![](https://cdn.yellowmessenger.com/KkAtqbeljfoI1620219338763.png)
 
-3. Let's start with the verification.
+3. Click **Start verification**.
 
    ![](https://cdn.yellowmessenger.com/4lUE9WFC5jTX1620219352063.png)
 
@@ -174,6 +174,27 @@ Submit the verification recieved.
 For some reason, if you wish to cancel the verification request, go to **Security Center > Cancel**.
 
 ![](https://i.imgur.com/dCA8zjm.png)
+
+
+### 1.4 Add WhatsApp numbers for testing purposes
+
+Yellow.ai allows you to test your WhatsApp bot with Development mode before pushing the changes to the Live environment. You can add upto ten testing numbers.
+
+1. In Channels, select <b>WhatsApp messenger</b> in the *Live* environment.
+2. Click on the more options icon and select **Edit**.
+
+   ![](https://i.imgur.com/gPwidHR.png)
+
+3. **Enable development mode** using the toggle button.
+
+   <center><img src="https://i.imgur.com/aLV9n2I.png" width="80%"/></center>
+   
+
+
+4. Choose the **Development bot ID** that you want to use for testing purposes.
+5. Enter the number in **Developer whatsapp number**. 
+6. To add more WhatsApp business numbers, click **Add phone numbers**.
+7. Click **Save**.
 
 ***
 
