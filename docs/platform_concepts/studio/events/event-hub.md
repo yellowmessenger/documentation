@@ -350,7 +350,7 @@ USER_DELETE | When a user record is updated in (CDP) DB through any of the follo
 
 
 
-### <a name="cust-1"></a> 8. Custom Event
+### <a name="cust-1"></a> 8. Custom events
 
 Besides the standard events that we have, you can also create custom events to perform actions any other activities that are not listed on this page. 
 
