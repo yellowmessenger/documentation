@@ -173,7 +173,7 @@ export default () => (
  <summary>Can we have custom fonts for <a href="http://cloud.yellow.ai">V2</a> web bots?</summary>
  <div>
   <br/>
-  <div>Currently, v2 web bots do not support custom fonts as we need to validate legibility on the chat interface, ensure the availability of appropriate font weights, and then support respective languages. If you need to add a new font, reach out to the [support](mailto:support@yellow.ai).</div>
+  <div>Currently, v2 web bots do not support custom fonts as we need to validate legibility on the chat interface, ensure the availability of appropriate font weights, and then support respective languages. If you need to add a new font, reach out to the <a href="mailto:support@yellow.ai">support</a>.</div>
    </div>
 </details>
 
@@ -226,7 +226,7 @@ window.ymConfig = {
  <summary>Is it possible to change the chat widget background colour for bot and agent messages?</summary>
  <div>
   <br/>
-  <div>No, the background colour can be changed only for user messages. This can be done by updating the complimentary color in the [chat widget settings](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/speech-to-text).
+  <div>No, the background colour can be changed only for user messages. This can be done by updating the complimentary color in the <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/speech-to-text">chat widget settings</a>.
 </div>
    </div>
 </details>
@@ -272,8 +272,35 @@ window.ymConfig = {
  <summary>Even though the agent is not connected to the bot, the app.yellowmessenger.com chatbot displays a green round circle, indicating that the agent is online. Is it possible to change the settings of the bot on the app platform?</summary>
  <div>
   <br/>
-  <div>Yes, on "app.yellowmessenger.com" or "app.yellow.ai" platform you can disable it in Configuration > Channels > Chat Widget > General > Show Dot Status in Title**.<br/> <img src="https://i.imgur.com/NolCgJx.png"/> 
+  <div>Yes, on "app.yellowmessenger.com" or "app.yellow.ai" platform you can disable it in <b>Configuration > Channels > Chat Widget > General > Show Dot Status in Title</b>.<br/> <img src="https://i.imgur.com/NolCgJx.png"/> 
 
 </div>
    </div>
+</details>
+
+<details>
+ <summary>Is it possible to change the language of the bot whenever the user switches from one language to another on the website?</summary>
+ <div>
+  <br/>
+  <div>Yes, the language of the bot is changed when a user switches from one language to another on the website. You have to update the bot's language and reinitialize the bot. Note that the language of the chat history cannot be updated, as those messages were already delivered, stored, and fetched from the backend in the respective language.
+
+</div>
+   </div>
+</details>
+
+<details>
+ <summary>When a bot is migrated from V1 ("app.yellowmessenger.com" or "app.yellow.ai" platform) to V2 (cloud.yellow.ai platform) and you try to scroll through a widget, a blank space is displayed. What might be the reason?</summary>
+ <div>
+  <br/>
+  <div>On the "app.yellowmessenger.com" or "app.yellow.ai" platform, you need to disable "Voice First" for the V2 widget as it is not supported. To disable "Voice First" option, click <b>Configuration > Channels > Chat Widget > General > Voice First</b>.<br/> <img src="https://i.imgur.com/lS4ik8c.png"/> 
+
+</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to hide the icon of the chat widget on the website?</summary>
+
+ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the chat widget on the website.
+
 </details>
