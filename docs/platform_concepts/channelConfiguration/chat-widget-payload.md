@@ -3,7 +3,7 @@ title : Chat widget payload
 sidebar_label : Chat widget payload
 ---
 
-A payload is used to pass the website's information to the bot.  
+A payload is used to pass the information to the bot.  
 
 Consider that you have a requirement to pass the data of the user who is using the chat widget. In such cases, you can use payload to pass data from your website to the bot. For example, payload passes the data such as account IDs, customer identifiers like names, email addresses, and phone numbers, or other metadata associated with a user from your website to the bot. 
 
@@ -76,7 +76,7 @@ We make use of session tokens to authenticate all our users and maintain their c
 Sample code block that's formatted well
 ``` -->
 
-
+If you want to pass playload data after initialization of the bot, you can use the below script:
 
 ```java
 if(userIsAuthenticated) { 
