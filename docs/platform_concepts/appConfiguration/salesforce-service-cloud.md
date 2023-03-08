@@ -4,63 +4,139 @@ sidebar_label : Salesforce CRM
 ---
 
 
-Yellow.ai Integration with Salesforce CRM allows you to seamlessly connect your Salesforce CRM instance with yellow.ai platform. Any customer who has a Salesforce CRM account will be able to seamlessly connect their Salesforce instance with yellow.ai using oAuth. This connector enables users to receive events for Salesforce objects, both system defined and custom objects. Furthermore, this connector with enable you to take actions, such as create, update etc. on the objects.
+Integrate your yellow.ai platform with your [Salesforce CRM](https://www.salesforce.com/in/crm/) account to recieve updates on your Salesforce objects and to perform actions like create and update objects, etc.,
 
-> **Supported Version**
-This integration will support the latest version releases, latest one being 52.0
+:::note
 
-## 1. Use-cases
+An object is a Salesforce crm term which means a collection of related fields, which can be customized to suit the specific needs of an organization. These fields are essentially data points that hold specific pieces of information related to the entity represented by the object.
 
-Following are the use-cases which are currently accommodated in this Integration:
+For example, in Salesforce CRM, an **Account** object is used to store information about your customers or clients. This object can include fields such as **Company Name**, **Phone Number**, **Billing Address**, and **Industry**. By using the **Account** object, you can easily track and manage information about your customers, such as their contact information, buying history, and preferences.
+:::
 
-### 1.1 Integration with oAuth 2.0
+## 1. Connect Salesforce CRM with Yellow.ai
 
-Yellow.ai does not store the client’s credentials and leverages oAuth 2.0 approach for integrating with client’s Salesforce account.
-​
-While integrating, yellow.ai navigates the user to the login page of Salesforce, i.e. login.salesforce.com or to the subdomain which was already used in the same browser. If you want to integrate in some other instance, clear your cookies and retry login in from yellow.ai platform.
+To connect your Salesforce CRM account with Yellow.ai, follow the these steps:
 
-### 1.2 Take actions with Salesforce Nodes
+1. Go to cloud.yellow.ai and click **Integrations** on the module switcher.
 
-- You can store a new record or store data in any of your custom objects. 
-- The actions are not limited to the system defined Salesforce Objects, you can also use Custom Objects. 
-- Functionalities to update and search for records using a particular parameter is also available.
-
-![](https://cdn.yellowmessenger.com/BeijaEmjIOPY1659940145073.png)
-
-- On-click of the Salesforce CRM node, you can customize the object and action type along with the attributes that you wish to pass.
-
-![](https://cdn.yellowmessenger.com/H7KDA72IA3iB1659940427212.png)
-
-![](https://cdn.yellowmessenger.com/pBD9bJOeipap1659940497555.png)
-
-![](https://cdn.yellowmessenger.com/rrvyShcKtbKe1659940554939.png)
-
-### 1.3 Receive Events from Salesforce
-
-This feature is coming soon to the platform...
-
-## 2. Configuration
-
-Configuring the integration with Salesforce CRM is straightforward. Follow the steps defined below to integrate:
-
-### 2.1 Navigate to Integrations Tab
-
-- Inside your project, navigate to the **Configuration** tab. 
--  Click the **Integrations** Tab. 
--  Search for **Salesforce CRM**.
-​
-![](https://i.imgur.com/E9LZ68M.png)
-
-Click [here](https://www.youtube.com/watch?v=_Sp4bzTpjMI) to learn more.
-
-### 2.2 Connect to the Salesforce account
-
-- Click **Connect** and select **Connect with Salesforce**. 
-- You will be prompted to login to your Salesforce account.
-
-![](https://i.imgur.com/2ucDsE7.gif)
-
-Voila! You are now connected with your Salesforce account.
+ ![](https://i.imgur.com/1EjCvqy.png)
 
 
-For more information, click [here](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/api_rest_eol.htm).
+2. Search for **Salesforce CRM** in the search box or go to the category **CRM** > **Salesforce CRM**.
+
+ ![](https://i.imgur.com/KkbUVou.png)
+
+
+3. Choose the **Salesforce CRM environment**. 
+
+ ![](https://i.imgur.com/xwCT87l.png)
+
+
+4. Click **Connect to Salesforce CRM** button. 
+
+ ![](https://i.imgur.com/Rn5nXuX.png)
+
+
+5. Log in to your Salesforce CRM account in the following pop-up to establish this integration. 
+
+ ![](https://i.imgur.com/W4rrs7W.gif)
+
+
+
+## 2. Payload to access Salesforce CRM on app.yellow.ai 
+
+```
+app.executeIntegrationAction({
+        "action": <NODE TO BE EXECUTED>,
+        "dynamicParams": {
+    "context": [{
+       "key": "objects",
+       "value": <VALUE OF OBJECT SELECTED>,
+       "label": <VALUE LABEL OF OBJECT SELECTED>,
+       "nextStep":"fields"
+   }],
+   "botId": <BOT ID>,
+   "integrationName": "salesforce-crm",
+   "nodeName": <NODE NAME>,
+   "source": <SOURCE>,
+   "sender": <SENDER>,
+   "dynamicParams": {
+       <VALUES TO BE POPULATED>
+   }
+}})
+```
+
+:::note
+Yellow.ai uses oAuth 2.0 to connect with a client's Salesforce account and refrains from retaining the client's authentication details. During the integration process, Yellow.ai redirects the user to either the [Salesforce login page](login.salesforce.com), or to the previously used subdomain within the same browser. If the integration is required in a different browser, the user must delete their cookies and then login via the Yellow.ai platform.
+:::
+
+## 3. Use-case
+
+Through this integration you can create,update,fetch objects and perform further more actions in your Salesforce CRM account.
+
+1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **PayU** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
+
+![](https://i.imgur.com/oGH7ZRI.png)
+
+
+2. Click the node, choose the action to be performed and the object in which it has to be performed.
+
+<img src="https://i.imgur.com/QdJX2pg.png" alt="drawing" width="50%"/>
+
+<img src="https://i.imgur.com/BnqxBTc.png" alt="drawing" width="60%"/>
+
+
+**Sample success response:**
+
+```
+{
+   "success": true,
+   "message": "Execution Successful",
+   "data": {
+       "statusCode": 201,
+       "body": "{\"id\":\"00Q5i00000DcsbKEAR\",\"success\":true,\"errors\":[]}",
+       "headers": {
+           "date": "Tue, 21 Feb 2023 09:03:59 GMT",
+           "set-cookie": [
+               "CookieConsentPolicy=0:1; path=/; expires=Wed, 21-Feb-2024 09:03:59 GMT; Max-Age=31536000",
+               "LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Wed, 21-Feb-2024 09:03:59 GMT; Max-Age=31536000",
+               "BrowserId=re5NTLHGEe2nD8spPHPlfg; domain=.salesforce.com; path=/; expires=Wed, 21-Feb-2024 09:03:59 GMT; Max-Age=31536000"
+           ],
+           "strict-transport-security": "max-age=63072000; includeSubDomains",
+           "x-content-type-options": "nosniff",
+           "x-xss-protection": "1; mode=block",
+           "x-robots-tag": "none",
+           "cache-control": "no-cache,must-revalidate,max-age=0,no-store,private",
+           "sforce-limit-info": "api-usage=16/15000",
+           "location": "/services/data/v51.0/sobjects/Lead/00Q5i00000DcsbKEAR",
+           "content-type": "application/json;charset=UTF-8",
+           "vary": "Accept-Encoding",
+           "content-encoding": "gzip",
+           "transfer-encoding": "chunked",
+           "connection": "close"
+       },
+},
+
+```
+**Sample failure response:**
+
+```
+{
+   "success": false,
+   "message": "Execution Failed",
+   "data": {
+       "success": false,
+       "error": "Error processing createRecord :: {\"message\":\"[INTG ERROR] Node API Execution failed for salesforce-crm_createRecord in bot x1664176494495: 4xx or 5xx series code encountered\",\"name\":\"IntegrationNodeAPIError\",\"response\":{\"statusCode\":400,\"body\":\"[{\\\"message\\\":\\\"Required fields are missing: [Company]\\\",\\\"errorCode\\\":\\\"REQUIRED_FIELD_MISSING\\\",\\\"fields\\\":[\\\"Company\\\"]}]\",\"headers\":{\"date\":\"Tue, 21 Feb 2023 09:12:48 GMT\",\"set-cookie\":[\"CookieConsentPolicy=0:1; path=/; expires=Wed, 21-Feb-2024 09:12:48 GMT; Max-Age=31536000\",\"LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Wed, 21-Feb-2024 09:12:48 GMT; Max-Age=31536000\",\"BrowserId=6Oq-_bHHEe2M0bfscs6ulA; domain=.salesforce.com; path=/; expires=Wed, 21-Feb-2024 09:12:48 GMT; Max-Age=31536000\"],\"strict-transport-security\":\"max-age=63072000; includeSubDomains\",\"x-content-type-options\":\"nosniff\",\"x-xss-protection\":\"1; mode=block\",\"x-robots-tag\":\"none\",\"cache-control\":\"no-cache,must-revalidate,max-age=0,no-store,private\",\"sforce-limit-info\":\"api-usage=18/15000\",\"content-type\":\"application/json;charset=UTF-8\",\"transfer-encoding\":\"chunked\",\"connection\":\"close\"},\"request\":{\"uri\":{\"protocol\":\"https:\",\"slashes\":true,\"auth\":null,\"host\":\"101.53.168.117\",\"port\":443,\"hostname\":\"101.53.168.117\",\"hash\":null,\"search\":null,\"query\":null,\"pathname\":\"/services/data/v51.0/sobjects/Lead\",\"path\":\"/services/data/v51.0/sobjects/Lead\",\"href\":\"https://101.53.168.117/services/data/v51.0/sobjects/Lead\"},\"method\":\"POST\",\"headers\":{\"content-type\":\"application/json\",\"authorization\":\"Bearer 00D5i000009LFUq!AQIAQBNgSYLObvxoKFK.j8O7bIkkus.vcKGUHB75C8RfTUgK0kZNe6W6TCH.FAkF3hejM5fLLVPmewiFfk6x8wcBByElBUTQ\",\"host\":\"yellowai-b-dev-ed.my.salesforce.com\",\"user-agent\":\"yellow-ai/api_processor\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":18}}}}",
+       "node": "createRecord",
+}
+
+```
+
+#### Supported Version
+
+This integration will support the latest version's (52.0) releases. For more information on this, please click [here](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/api_rest_eol.htm).
+
+
+
+
+
