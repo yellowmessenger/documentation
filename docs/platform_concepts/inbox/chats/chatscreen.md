@@ -8,12 +8,12 @@ In this article, you will learn:
 
 1. [Components of chat screen](#cs)
 2. [User details](#ud)
-3. [How to transfer/ resolve a ticket?](#trt)
+3. [How to transfer/ resolve a live chat?](#trt)
 4. [How to transfer/resolve/ reopen multiple chats?](#trmt)
  
 -----
 
-## <a name="cs"></a>  1. Chat screen
+## <a name="cs"></a>  1. Chat conversation screen
 
 You can chat with the customer on this screen. This screen has the following functionalities to enable easy conversations:
 
@@ -101,12 +101,12 @@ The following user details are available on this screen to provide agents with m
 
 --------
 
-## <a name="trt"></a> 3. Resolve or transfer tickets
+## <a name="trt"></a> 3. Resolve or transfer live chats
 
-- To resolve/transfer tickets, required custom fields must be entered on the user details. 
+- To resolve/transfer live chats, required custom fields must be entered on the user details. 
 
 :::info
-Custom fields can be marked for required to transfer /close tickets while creating them. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) to create custom fields.   
+Custom fields can be marked for required to transfer /close ticket while creating them. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) to create custom fields.   
 
 <img src="https://i.imgur.com/fxaF4bz.png" alt="drawing" width="40%"/>    
    
@@ -136,15 +136,15 @@ Custom fields can be marked for required to transfer /close tickets while creati
 
 ------
 
-### 3.1 Collaboration vs. Transfer ticket
+### 3.1 Collaboration vs. Transfer live chat
 
 
 
 
-| Collaboration | Transfer ticket |
+| Collaboration | Transfer |
 | -------- | -------- |
-| - You (inbox agent) and the collaborators (other agents who are invited to this chat) can respond to the customer. <br/> - For a customer, this will look like a normal(uninterrupted) agent-customer interaction.<br/> - On the agent's side, there could be multiple agents providing the resolution/responding to the customer. <br/> - The collaborator(other agent) will have access to the chat screen and they can respond directly to the chat, or, add **Notes** for the assigned agent to refer. | When you transfer a ticket, you will lose access to this chat and the chat (along with your conversation) will be transferred to the next available agent/ selected agent.     |
-|**Example**: When a query has been raised that is assigned to an agent who resolves tickets of the category:**Shipping and delivery**. While having a chat, the customer asks a question about **Payments**. A collaborator can be added to help with the question about payments. Once it is answered, the collaborator can leave and take over their chats.|**Example**: A chat enquiring **Payments** has to be assigned to an agent resolving queries related to **Returns and Refunds**. In such case, the chat can simply be transferred to **Payments & Pricing** group. |
+| - You (inbox agent) and the collaborators (other agents who are invited to this chat) can respond to the customer. <br/> - For a customer, this will look like a normal(uninterrupted) agent-customer interaction.<br/> - On the agent's side, there could be multiple agents providing the resolution/responding to the customer. <br/> - The collaborator(other agent) will have access to the chat screen and they can respond directly to the chat, or, add **Notes** for the assigned agent to refer. | When you transfer a chat, you will lose access to this chat and the chat (along with your conversation) will be transferred to the next available agent/ selected agent.     |
+|**Example**: When a query has been raised that is assigned to an agent who resolves chats of the category:**Shipping and delivery**. While having a chat, the customer asks a question about **Payments**. A collaborator can be added to help with the question about payments. Once it is answered, the collaborator can leave and take over their chats.|**Example**: A chat enquiring **Payments** has to be assigned to an agent resolving queries related to **Returns and Refunds**. In such case, the chat can simply be transferred to **Payments & Pricing** group. |
 
 
 
@@ -180,11 +180,11 @@ Select the Group/Agent name and confirm the transfer.
 
 - **Reopen**  
  
-Reopening an old chat will create a new chat (with new ticket ID).     
+Reopening an old chat will create a new chat (with new chat ID).     
 
 As a Inbox admin, to Reopen a chat:
 - Mark **priority** as Low/Medium/High (Default=high).
-- Select the required **group/agent**. By default, the value in this field is Automatic, which means as soon as the ticket is reopened, it will be assigned to the next available agent irrespective of the group or any defined logic. 
+- Select the required **group/agent**. By default, the value in this field is Automatic, which means as soon as the chat is reopened, it will be assigned to the next available agent irrespective of the group or any defined logic. 
 - Add **tags** if required and add a **description** (mandatory). 
 - Click **Reopen**.
 

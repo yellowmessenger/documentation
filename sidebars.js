@@ -860,6 +860,15 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
+              {
+                type: "category",
+                label: "Instagram",
+                link: {type: 'doc', id: 'platform_concepts/channelConfiguration/instagram'},
+                collapsed: true,
+                items: [
+              "platform_concepts/channelConfiguration/instagram-limitations",
+              "platform_concepts/channelConfiguration/instagram-faqs",
+                ]},
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/instagram",
             "platform_concepts/channelConfiguration/alexa",

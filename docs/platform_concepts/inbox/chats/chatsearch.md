@@ -30,7 +30,7 @@ In this article, you will learn:
 > ![](https://i.imgur.com/m0FfeXj.png)
 
 :::note
-Agents can only search for the tickets that are assigned to/transferred/collaborated with them while Admins can search for all the tickets.
+Agents can only search for the chats that are assigned to/transferred/collaborated with them while Admins can search within all the live chats.
 :::
 
 

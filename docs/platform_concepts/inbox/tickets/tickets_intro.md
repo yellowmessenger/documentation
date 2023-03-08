@@ -51,25 +51,22 @@ In this article, you will understand the two different methods in which the emai
     ![](https://i.imgur.com/W8lAIJ6.png)
 2. Click on any of the ticket grids, and the detailed view of that respective ticket opens. 
 
-    ![](https://i.imgur.com/03mgNXK.png)
+    ![](https://i.imgur.com/DBidLMA.png)
 
----------
 
-### 2.1 Email conversation log
+### 2.1 Ticket screen elements
 
-| Feature  | Description | Preview|
-| -------- | -------- | -------- | 
-|**Title**|Ticket ID# and Subject are displayed on the top of the ticket thread| ![](https://i.imgur.com/g7mIP1p.png)|
-|**Copy and Download transcript**| You can copy the link to the transcript or download the transcript of the chat in this ticket- Be mindful of the user information provided in the chat|![](https://i.imgur.com/2nRy1TC.png)|
-|**SLA**|SLA log will be displayed with based on the SLA policy applied for this ticket. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/slaintro#11-view-sla-time-log).|![](https://i.imgur.com/Hn7eqm4.png)|
-|**Email thread**|To and from messages along with the sent/received time|![](https://i.imgur.com/Jt2pUy3.png)|
+| Feature | Description |  Preview   |
+| ---------------------- | -------------------------------------------------------------------- | --- |
+| **Ticket ID & Subject**  | Ticket ID# and Subject are displayed on the top of the ticket thread |  ![](https://i.imgur.com/2ZU7m7E.png)|
+|**SLA log** | Hover over SLA log to see the SLA policy applied for this ticket. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/slaintro#11-view-sla-time-log).|![](https://i.imgur.com/VNgBBXf.png)|
+|**Ticket status**| By selecting **Resolve ticket**, the ticket gets resolved. You can also change the ticket [statuses](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/emailticketstatus).|![](https://i.imgur.com/rKSWdnS.png)|
+|**Download & share thread**|You can copy the link to the transcript or download the transcript of the email conversation in this ticket- Be mindful of the user information provided in the email thread|![](https://i.imgur.com/8kxUISP.png)|
+|**Email thread**|To and from messages along with the sent/received time| ![](https://i.imgur.com/WOrxqoe.png)|
 
------------
+------
 
-### 2.2 Email response(chat) screen
-
- 
-
+### 2.2 Email response screen
 
 | Feature  | Description | Preview|
 | -------- | -------- | -------- | 
@@ -83,36 +80,28 @@ In this article, you will understand the two different methods in which the emai
 |**Select/change email ID**|All the [emails configured](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) for inbox are displayed here, you can select the email ID from which you wish to send this email.<br/> If you have received a mail on different mail ID and you send a reply using a different mail ID- the user will receive the old conversation thread in the current mail.|![](https://i.imgur.com/o46DjHM.png)|
 |**Email body**|You can only send a reply when the body contains some information. To send a reply without any content, use blank spaces.|![](https://i.imgur.com/ZDFEQXN.png)|
 
+----
 
----------
+### 2.3 Customer contact details
 
-### 2.3 Ticket details 
+| Feature  | Description | Preview|
+| -------- | -------- | -------- | 
+|**Contact details**| Customers name, number and email are displayed. You can view activities that are happening with this email contact by clicking the **Recent conversation**. Click **View all** to see all the details on the [Contacts tab](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts#--2-send-proactive-notification-to-a-contact).|![](https://i.imgur.com/Lks0uhG.png)|
 
+-------
 
-- **Status**: By selecting **Resolved**, the ticket gets resolved. You can also change the ticket [statuses](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/emailticketstatus#22-ticket-details-view). 
-- **Priority**: You can set the priority to **High**, **Medium**, or **Low**.
-- **Group/Agent**: You can assign the email conversation to a Group (which gets [auto-assign](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic) to an agent) or you can assign this thread to an agent. Configure Email [group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) and [agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents). 
-- **Collaborator**: More than one agent can help to resolve a ticket (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.
-- **Tags**: You can tag this conversation to any of the configured [tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags). 
+### 2.4 Email ticket details
 
+| Feature  | Description | Preview |
+| -------- | -------- | -------- |
+|**Email ticket details**| **Priority**: You can change the priority to low, medium, or high <br/> **Assignee**: You can assign the email conversation to a Group (which gets [auto-assign](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic) to an agent) or you can assign this thread to an agent. Configure Email [group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) and [agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents).  <br/> **Tags**: You can tag this conversation to any of the configured [tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags).  |![](https://i.imgur.com/8q8LSvZ.png) |
 
-<img src="https://i.imgur.com/v9DTmA0.png" alt="drawing" width="60%"/> 
+------
 
+### 2.5 Other details 
 
-
---------
-
-### 2.4 Contact details 
-
-This section contains a timeline of all the activities that are happening with this email contact. You can view the details by clicking the **Contact name**. Click **View all** to see all the details on the [Contacts tab](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts#--2-send-proactive-notification-to-a-contact).
-
-<img src="https://i.imgur.com/VwROLWL.png" alt="drawing" width="60%"/> 
-
----------
-
-### 2.5 Activity log 
-
-The activity log consists summary of all the changes/updates that have taken place on this ticket (ticket ID). For example, Change of status/priority, Transfer of ticket from one agent to another, Reopening of the ticket, Breach of SLA, etc. 
-
-<img src="https://i.imgur.com/QEjd8th.png" alt="drawing" width="60%"/> 
-
+| Feature  | Description | Preview |
+| -------- | -------- | -------- |
+|**Ticket fields** |These are custom fields, you can configure them in [settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields). |![](https://i.imgur.com/d8KddGJ.png)|
+|**Collaborators**| More than one agent can help to resolve a ticket (similar to a group chat). Add [collaborator](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/collaboration) names by selecting the names from the dropdown menu.|![](https://i.imgur.com/2pi1jhB.png)|
+|**Activity log**| The activity log consists summary of all the changes/updates that have taken place on this ticket (ticket ID). For example, Change of status/priority, Transfer of ticket from one agent to another, Reopening of the ticket, Breach of SLA, etc. |![](https://i.imgur.com/3K2SyF5.png)|

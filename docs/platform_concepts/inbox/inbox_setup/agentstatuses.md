@@ -22,9 +22,7 @@ The default statuses are as follows:
 --------
 
       
-:::info
-
-**Difference between Busy & Away**
+### Difference between Busy and Away status 
 
 For an Inbox agent, **Busy** and **Away** are both identical in function but when you log out after changing your status to **Away**, your status will not be **Offline** it will remain as **Away**. This is to avoid missing out on the chats/tickets raised by the end users when all the agents have logged off within working hours (for example, for a lunch break).
 - Admins can manually transfer the chats/tickets to an agent who has set themselves to **Busy/Away**. This manual transfer operation will not consider the agent's current concurrency and will assign tickets even if their concurrency is full.
@@ -34,4 +32,4 @@ For an Inbox agent, **Busy** and **Away** are both identical in function but whe
 
 Consider a scenario wherein, all the agents break for lunch from 1 PM - 2 PM. If they are considered **Offline** during that time, the chats/tickets raised during the time will be completely missed unless **Offline chats** are [enabled](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat).  Even if they are enabled, those chats/tickets will only be captured in Open status and will not be assigned to agents immediately.
 Now if they are considered as **Away**, those chats/tickets will not be missed irrespective of whether Offline chats are enabled or not, and the chats/tickets will be queued, then automatically assigned to agents after 2 PM.
-:::
+
