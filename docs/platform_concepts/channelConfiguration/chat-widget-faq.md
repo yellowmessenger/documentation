@@ -289,17 +289,17 @@ window.ymConfig = {
 </details>
 
 <details>
- <summary>When a bot is migrated from V1 ("app.yellowmessenger.com" or "app.yellow.ai" platform) to V2 (cloud.yellow.ai platform) and you try to scroll through a widget, a blank space is displayed. What might be the reason?</summary>
+ <summary>Why does a blank space appear when scrolling in the widget?</summary>
  <div>
   <br/>
-  <div>On the "app.yellowmessenger.com" or "app.yellow.ai" platform, you need to disable "Voice First" for the V2 widget as it is not supported. To disable "Voice First" option, click <b>Configuration > Channels > Chat Widget > General > Voice First</b>.<br/> <img src="https://i.imgur.com/lS4ik8c.png"/> 
+  <div>This happens only for bots migrated from V1 ("app.yellowmessenger.com" or "app.yellow.ai" platform) to V2 (cloud.yellow.ai platform). On the "app.yellowmessenger.com" or "app.yellow.ai" platform, you need to disable "Voice First" for the V2 widget as it is not supported. To disable "Voice First" option, click <b>Configuration > Channels > Chat Widget > General > Voice First</b>.<br/> <img src="https://i.imgur.com/lS4ik8c.png"/> 
 
 </div>
    </div>
 </details>
 
 <details>
- <summary>Is it possible to hide the icon of the chat widget on the website?</summary>
+ <summary>Is it possible to hide the chat widget icon on the website?</summary>
 
  Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the chat widget on the website.
 
