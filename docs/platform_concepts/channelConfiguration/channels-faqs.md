@@ -150,6 +150,62 @@ sidebar_label: Channels FAQs
    </div>
 </details>
 
+<details>
+ <summary>Is it possible to change the color of the email ID to black in WhatsApp chatbot?</summary>
+ <div>
+  <br/>
+  <div>No. By default, the email address is blue in color.</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is the speech-to-text (STT) feature supported in WhatsApp?</summary>
+ <div>
+  <br/>
+  <div>No, the STT feature is not supported for WhatsApp.</div>
+   </div>
+</details>
+
+<details>
+ <summary>Can we have multiple bots in a single subscription, with different WABAs connected to each?</summary>
+ <div>
+  <br/>
+  <div>Yes, you can have multiple bots under a single subscription, and each bot can have a different WABA connected to it. It is also possible to have multiple numbers connected to a single bot, but all the numbers have to be under the same WABA ID in this case.</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to select multiple answers at once on a WhatsApp channel using the quick reply button?</summary>
+ <div>
+  <br/>
+  <div>WhatsApp does not support Multi select in list or button messages. You can use the Multi Select prompt, which displays the options in the form of a text message, to share the options via text. For example, the bot shared a few options with 1, 2, 3, 4, and so on. and the user has to respond back with the selection as 1 or 3 in a specific accepted format to validate and get the user's selection. This is a workaround that is used in the case of WhatsApp.</div>
+   </div>
+</details>
+
+<details>
+ <summary>Does WhatsApp support sharing locations?</summary>
+ <div>
+  <br/>
+  <div>Yes, users can share their location by clicking this 📎 icon on WhatsApp and sharing their current location. The bot will receive the latitude and longitude of the user, based on which the user's location can be identified. Note that live location sharing won't work for this case.</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to display a thumbnail from an URL in WhatsApp?</summary>
+ <div>
+  <br/>
+  <div> Yes, WhatsApp will render URLs with thumbnails, and you will be able to preview them. URL previews are rendered in the following cases:<br/> • The business has sent a message template to the user. <br/> • The user initiates a conversation with a Click to chat link.<br/> • The user adds the business phone number to their address book and initiates a conversation.</div>
+   </div>
+</details>
+
+<details>
+ <summary>How to configure welcome message for WhatsApp?</summary>
+ <div>
+  <br/>
+  <div>The welcome message will not be displayed automatically in WhatsApp. You need to <a href="https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#train">train</a> an intent with “hi” or “hello” and configure it in a journey to trigger the flow.</div>
+   </div>
+</details>
+
 ### FB Messenger chatbot related FAQs
 
 <details>
@@ -253,6 +309,14 @@ sidebar_label: Channels FAQs
  <div>
   <br/>
   <div>Timely reminders on carts & payments, sales & support, and proactive suggestions are some good usecases.</div>
+   </div>
+</details>
+
+<details>
+ <summary>Does the Facebook channel support WebView?</summary>
+ <div>
+  <br/>
+  <div>No, the Facebook channel does not support WebView.</div>
    </div>
 </details>
 

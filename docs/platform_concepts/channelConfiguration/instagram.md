@@ -3,7 +3,7 @@ title : Instagram
 sidebar_label : Instagram
 ---
 
-Instagram is a social networking channel that allows you to share images and text either publicly or privately on Android or iOS. It allows you to edit your posts with filters, add locations, and hashtags related to your posts. You can also interact, like, and comment on the posts of the users you are following.
+Instagram is a social networking channel that allows you to share images and text on Android or iOS. It allows you to interact, like, and comment on the posts of the users.
 
 Businesses can use Instagram to promote their products and services, engage with customers by responding to their comments and queries, increase their brand’s visibility by providing promotional offers, and so on.
 
