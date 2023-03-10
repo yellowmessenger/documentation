@@ -17,7 +17,7 @@ In this article, you will learn:
     - [via. URL - integration with customer’s external Knowledge Base](#extkb)   
     - [via. AWS-S3](#awss3)
     - [via. Sharepoint](#shpt)
-3. [What is Q&A extract?](#d)   
+3. [What is Extract QNA?](#3-qna-extract)   
 4. [Understand active learning](#l)
 5. [How to add Acronyms?](#a) 
 
@@ -639,20 +639,48 @@ Once an app is created you can give access to any site to it. You can view all t
 
 ---
 
-## <a name="d"></a> 3. Extract Q&A 
-    
-Doc has the capability of auto-generating Questions and Answers. 
-1. Open the **QnA extract** tab. 
-    
-   ![](https://i.imgur.com/gTjILM5.png)
+## 3. QNA Extract
 
-2. Expand the file you want to generate QnA. 
-    
+The Yellow.ai platform can auto-generate questions and answers from the uploaded documents. You can choose between two different models(**Yellow DNLP** and **OpenAI API**) to genereate them.
 
-3. Go to Each File to see automatically generated Questions and Answers. Click the checkbox for the questions you want to add to FAQs. 
-    - Click on **Add FAQ**. It will add to the FAQ section of the bot.
+#### Yellow DNLP:
 
-   ![](https://i.imgur.com/vgNTJ5G.jpg)
+The T5(Text-to-Text Transfer Transformer) model is a pre-trained language model developed by Google that can handle a wide range of natural language processing tasks, including question generation. To do so, the model is fine-tuned on specific datasets such as SQuAD(Stanford Question Answering Dataset) and TriviaQA, where it learns to generate questions when given an answer or a piece of text.
+
+The T5 Q&A model architecture is based on the transformer architecture, which is a neural network designed for sequence-to-sequence learning tasks. The encoder processes the input, which is a combination of the question and the context, and produces a sequence of hidden states that are passed to the decoder. The decoder generates the answer to the question using a self-attention mechanism, which focuses on relevant parts of the context to generate the answer one word at a time.
+
+Overall, the T5 Q&A model architecture is an effective approach to answering questions using natural language processing techniques, similar to the GPT-3 Q&A model architecture.
+
+#### OpenAI API
+
+GPT-3 is a state-of-the-art language model developed by OpenAI that can generate questions from input text. It's a neural network-based model that uses the transformer architecture, which consists of an encoder and a decoder with self-attention mechanisms. The input to the encoder is a combination of the question and the context, which is typically a large body of text. The encoder processes the input and produces hidden states, which are passed to the decoder. The decoder generates the answer using a self-attention mechanism, predicting the probability distribution over all possible words in the vocabulary, and selecting the word with the highest probability as the next word in the answer. The quality of the generated questions can be evaluated using metrics such as BLEU and ROUGE.
+
+GPT-3 has promising results for question generation and has potential applications in information retrieval, text summarization, and conversational agents. However, like any language model, it may generate incorrect or irrelevant questions in some cases.
+
+To extract questions and answers from your docs, follow these steps:
+
+1. Click the **QNA Extract** tab.
+
+![](https://i.imgur.com/epGXZRJ.png)
+
+2. Click the file you want to generate QnA for.
+
+![](https://i.imgur.com/Lji2Amk.png)
+
+
+3. Choose the QNA model you prefer - [Yellow DNLP](#yellow-dnlp) or [OpenAI API](#openai-api).
+
+![](https://i.imgur.com/5mekh9d.png)
+
+
+4. Click each file to see the automatically generated Questions and Answers. Click the checkbox for the questions you want to add to FAQs and click **Add FAQ**. 
+
+![](https://i.imgur.com/tqVPy0n.png)
+
+5. In the following pop-up, you can edit the question(if you want to) in the **FAQ name** field, [choose a category](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#21-add-faqs-to-bot) for the FAQ in the **Category** field.
+![](https://i.imgur.com/wVDklLG.png)
+
+6. Click **Create**. This question will be added to the [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) section.
 
 
 ---
