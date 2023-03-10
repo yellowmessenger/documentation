@@ -661,24 +661,24 @@ To extract questions and answers from your docs, follow these steps:
 
 1. Click the **QNA Extract** tab.
 
-![](https://i.imgur.com/epGXZRJ.png)
+ ![](https://i.imgur.com/epGXZRJ.png)
 
 2. Click the file you want to generate QnA for.
 
-![](https://i.imgur.com/Lji2Amk.png)
+ ![](https://i.imgur.com/Lji2Amk.png)
 
 
 3. Choose the QNA model you prefer - [Yellow DNLP](#yellow-dnlp) or [OpenAI API](#openai-api).
 
-![](https://i.imgur.com/5mekh9d.png)
+ ![](https://i.imgur.com/5mekh9d.png)
 
 
 4. Click each file to see the automatically generated Questions and Answers. Click the checkbox for the questions you want to add to FAQs and click **Add FAQ**. 
 
-![](https://i.imgur.com/tqVPy0n.png)
+ ![](https://i.imgur.com/tqVPy0n.png)
 
 5. In the following pop-up, you can edit the question(if you want to) in the **FAQ name** field, [choose a category](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#21-add-faqs-to-bot) for the FAQ in the **Category** field.
-![](https://i.imgur.com/wVDklLG.png)
+ ![](https://i.imgur.com/wVDklLG.png)
 
 6. Click **Create**. This question will be added to the [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) section.
 
