@@ -923,7 +923,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/web-widget",
             "platform_concepts/channelConfiguration/chat-widget-payload",
             "platform_concepts/channelConfiguration/user-authentication",
-            "platform_concepts/channelConfiguration/fuction-widgets",
+            "platform_concepts/channelConfiguration/function-widgets",
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
             "platform_concepts/channelConfiguration/chat-widget-components",

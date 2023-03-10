@@ -79,8 +79,6 @@ Sample code block that's formatted well
 If you want to pass playload data after initialization of the bot, you can use the below script:
 
 ```java
-if(userIsAuthenticated) { 
-
 // replace this with your own auth logic.
 	window.YellowMessengerPlugin.init({
 		payload: {
@@ -88,6 +86,4 @@ if(userIsAuthenticated) {
 			member_id: '1231basd' // you can pass any info you want to be associated with the user based on your use case here. Note that this can be read by the bot using the {{profile.payload.member_id}} variable.
 		}
 	});
-	window.YellowMessengerPlugin.show(); // display the bot icon
-}
 ```

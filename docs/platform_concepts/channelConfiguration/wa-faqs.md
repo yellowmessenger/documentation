@@ -65,7 +65,7 @@ You can initiate WA channel setup on the Channels page under WA logo.
 </p>
 </details>
 
-<details><summary> <b> About Whatsapp Channel Set up </b> </summary>
+<details><summary> <b> How to set up Whatsapp channel?</b> </summary>
 <p>
 
 - Requirements & Steps
