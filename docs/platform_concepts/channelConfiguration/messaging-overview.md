@@ -17,8 +17,8 @@ The following are the messaging channels that can be connected to our platform. 
 6. **[Email](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/email-outbound)** - Use our NLP bots to help you serve the customers better by automatic most of replies.
 7. **[Microsoft Teams](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/teams)** - Build a customized conversational bot for your team to speed up teamwork in a few steps.
 8. **Viber** - Enable Yellow.ai chatbots on the world’s largest chat platform and be connected to your customers.
-9. **Line** - Build a customized conversational bot for your Line account and use it for your team to speed up teamwork.
-10. **Zalo** - Build a customized conversational bot for your Zalo account and use it for your team to speed up teamwork.
+9. **[Line](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/line)** - Build a customized conversational bot for your Line account and use it for your team to speed up teamwork.
+10. **[Zalo](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/zalo)** - Build a customized conversational bot for your Zalo account and use it for your team to speed up teamwork.
 11. **[Google Chat](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/googleChat)** - Improve team collaboration with a Google Chat Bot that can participate in chat spaces and respond to direct messages.
 
 ## Access Messaging Channels
