@@ -5,6 +5,13 @@ sidebar_label : Debug inbox errors
 
 In this article, you will learn how to debug the errors that are encountered while [testing](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) the bot for Inbox configuration (on **Studio** module).
 
+The debugging logs provide helpful information to bot developers for every raise chat operation, such as: 
+1. **Bot status**: Whether the bot is running or paused 
+2. **Chat status**: Whether the chat is assigned, queued, open, or missed
+3. **Chat ID**: If a chat was created, its unique number 
+4. **Missed reason**: If a chat was missed, its reason
+5. **Errors**: Description of the issue that occurred during the operation, like user input validation errors or incorrect information being passed.
+
 ![](https://i.imgur.com/ZKYGtgg.png)
 
 
