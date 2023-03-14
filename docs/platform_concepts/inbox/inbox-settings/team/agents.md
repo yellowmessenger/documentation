@@ -23,24 +23,24 @@ Follow the given steps to configure agent settings:
 1. Open **Inbox** > **Settings** > **Team**.
 2. Search and select **Agents**.
 
-![](https://i.imgur.com/ysUDmWk.jpg)
+    ![](https://i.imgur.com/ysUDmWk.jpg)
 
 3. Details of all the users with **Inbox agent** access will be on this page. 
 
-![](https://i.imgur.com/RSCMFjm.jpg)
+    ![](https://i.imgur.com/RSCMFjm.jpg)
 
-> You can search for a particular agent by typing the name in the search bar. 
-> 
-> ![](https://i.imgur.com/fhKL8VN.png)
+    > You can search for a particular agent by typing the name in the search bar. 
+    > 
+    > ![](https://i.imgur.com/fhKL8VN.png)
 
 
 
 ### 1.1 Edit/Modify existing agent properties
 
+![](https://i.imgur.com/amJZAJi.jpg)
+
 - To change the basic properties of an agent, click on the edit icon. 
     - **Name** and **Description**: You can define the agent **Name** and **Description**, which will be visible to the end customer when they are interacting with the inbox agent. Description can be set as per the industry, example: Customer support agent, Live chat, Client help specialist, Customer representative, etc. 
-
-    ![](https://i.imgur.com/amJZAJi.jpg)
 
     - **Display picture**: Add an image by clicking on **Upload photo**. When the agent is assigned to a customer, the avatar, name and description mentioned in the agent settings will be visible to the customer. 
     
@@ -62,11 +62,11 @@ Follow the given steps to configure agent settings:
 
 ### 1.2 Edit/ Modify concurrency in bulk
 
-- To modify the concurrency of multiple agents at once:
-    1. Select the required agent names
-    2. Click **Bulk edit**
-    3. Change the concurrency
-    4. Click **Update**.
+To modify the concurrency of multiple agents at once:
+1. Select the required agent names
+2. Click **Bulk edit**
+3. Change the concurrency
+4. Click **Update**.
 
 ![](https://i.imgur.com/fZUJLbm.png)
 
