@@ -31,6 +31,8 @@ The campaign flow builder consists of five categories of nodes:
 
 See how to configure each node in the following sections.
 
+***
+
 ## Create flow 
 
 To create a flow, follow these steps:
@@ -132,9 +134,9 @@ Option | Description
 User segment | Triggers the campaign only when the user is in a specific segment. Select your preferred segment in the Select segment box.<br/>[OR]<br/>To enable it for all users, select *All users*.
 Select start date and time | Choose the date and time when you want to run the campaign.
 
+***
 
-
-## Define the condition to trigger flow
+## Condition to trigger flow campaign
 
 This section helps you set the qualifying condition for users to enter a specific step of the flow. You can choose the target audience based on their user property values, current segments, event occurrence, or opt-in status.
 
@@ -160,6 +162,8 @@ Checks if a specific event has occurred to the user.
 Checks if the user has opted in for notifications of a specific channel.
 
 <center><img src="https://i.imgur.com/glD5AoC.png" width="60%"/></center>
+
+***
 
 ## Flow control
 
@@ -198,7 +202,9 @@ This allows you to end the flow. Use this in the last step of the flow.
 
 <center><img src="https://i.imgur.com/6wFfp5M.png" width="50%"/></center>
 
-## Message (Start conversation)
+***
+
+## Message (Conversations)
 
 This category lets you configure conversations across different channels. You can also configure different actions based on the message delivery status. For example, after sending a WhatsApp notification to announce a new product launch, you can nudge users who have read the notification by sending a discount coupon after 24 hours. Increase user engagement and ROI by sending out different messages when the user reads the message and clicks on the CTA used in the message template.
 
@@ -220,7 +226,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 * **Duration**: Proceed to the next step after a specific number of days, hours, or minutes from the message sent time. 
 * **Timestamp**: Proceed to the next step on a specific date and time.
 
-#### WhatsApp channel configuration
+#### 1. WhatsApp channel configuration
 
 1. In **From**, choose the sender's number.
 2. In **To**, choose the variable that contains the WhatsApp number of the user.
@@ -238,6 +244,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
     <center><img src="https://i.imgur.com/8sl6gwl.png" width="50%"/></center>
 
+<!--
 5. To use AI recommended template (uses GPT-3 APIs), enable **Generate AI suggested templates** and configure the following:
  
  <center><img src="https://i.imgur.com/0kXTCsp.png" width="50%"/></center>
@@ -252,13 +259,21 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
    
    <center><img src="https://i.imgur.com/v3TELtL.png" width="50%"/></center>
 
+:::note
+* Use **Tone configuration** to tune the objectives (Quirkiness, Enthusiasm, Urgency, and Formal).
+* Use *Reset* to reset tone configurations.
+* Use Regenerate to generate the template again.
+:::
+
    v. Enter the template name, choose the language, customise the message as required, and click **Create template**. 
    
    ![](https://i.imgur.com/dVV4Evg.png)
 
-6. Enable **During workflow business hours** to send the message only during business hours.
+-->
 
-#### SMS channel configuration
+5. Enable **During workflow business hours** to send the message only during business hours.
+
+#### 2. SMS channel configuration
 
 1. In **From**, choose the sender's number.
 2. In **To**, choose the variable that contains the mobile number of the user.
@@ -272,7 +287,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
 5. Enable **During workflow business hours** to send the message only during business hours.
 
-#### Email channel configuration
+#### 3. Email channel configuration
 
 1. In **From**, choose the sender's number.
 2. In **To**, choose the variable that contains the email address of the user.
@@ -284,19 +299,19 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 6.  In **Templates**, choose the email template that you want to use for sending the message.
 7. Enable **During workflow business hours** to send the message only during business hours.
 
-#### Push notification channel configuration
+#### 4. Push notification channel configuration
 
 *  In **Template**, choose the push notification template that you want to use for the notification.
 
   <center><img src="https://i.imgur.com/HAv4z3J.png" width="50%"/></center>
 
-#### Google business messages channel configuration
+#### 5. Google business messages channel configuration
 
 *  In **Template**, choose the GBM template that you want to use for the notification.
 
    <center><img src="https://i.imgur.com/cqSqHJ9.png" width="50%"/></center>
 
-#### Voice call channel configuration
+#### 6. Voice call channel configuration
 
 1.  Check **Enable answering machine detection (AMD)** to automatically identify answering machines.
 2.  In **Bot flow**, choose the welcome flow to be triggered (Studio) for the current channel.
@@ -320,6 +335,8 @@ Push notification | Delivered, Not delivered, Clicked, and Impression.
 SMS | Delivered, and Not delivered.
 Voice | Answered, Not answered, Busy, and Failed to connect.
 
+*** 
+
 ## Action
 
 This section helps you configure other actions in the campaign's flow, such as adding users to segments and making API calls.
@@ -328,7 +345,7 @@ This section helps you configure other actions in the campaign's flow, such as a
 
 Use this to call any internal or external API in between flows. For more information about APIs, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
 
-
+***
 
 ## Add goal
 
