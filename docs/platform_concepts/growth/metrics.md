@@ -68,6 +68,16 @@ Select any of the below headings to view the graphs for the selected time range.
 * **Average session per user**: This is the number of sessions created per user on average.
 * **Average session duration**: This is the average time for which the user has conversed with the bot. A session can be of 24 hours. For any number of interactions the user has in a 24 hours window from the start of a session, it'll be considered as one single session only. A new session is started after 24 hours.
 
+### 1.1 Download chat conversations 
+
+To download the chat transcripts (conversations between bot/agent and user): 
+1. Apply the time filter (all the conversations within this time range will get exported). 
+2. Click **Export data**. 
+3. Select **Chat transcripts**. 
+4. Click **Export**. 
+
+![](https://i.imgur.com/g77L9hC.png)
+
 
 ---
 
@@ -88,7 +98,7 @@ This widget shows the distribution between new users and old users visiting the 
 
 This widget shows user demographics for a bot based on the selected parameter.
 
-### Demography parameters
+### 3.1 Demography parameters
 
 :::note
 Some of these metrics are captured for all the sources and some for limited sources like - UTM-based users are for Yellow Web & Mobile only.
@@ -99,7 +109,7 @@ The drop-down field allows you to select from the multiple parameters for viewin
 
 <img src="https://lh3.googleusercontent.com/Elj0328Y4W3MV206Mxu44qP7w7JPic8C9rH5aQNMTc4fRWk81zUzlTiupOK6t7E8Mh0SQ30ziCPP6n9o-G30YFn7W-sPlh0e1zyIIOtzD_PD0WoEWdcFRoX9eqY-AUOKOtDzlRHAR0ZUpkqd6AVk6I-oILL9cAo10HoAGo6OuKYVtEf4cPRlQFdK1zFJow" alt="drawing" width="30%"/>
 
-### Demography data
+### 3.2 Demography data
 
 Users who interact with the bot are coming from different locations, sources, and campaigns.
 The total count and percentage of users is shown for the specified date range based on the chosen parameter from the above dropdown.
