@@ -304,3 +304,13 @@ window.ymConfig = {
  Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the chat widget on the website.
 
 </details>
+
+<details>
+ <summary>What are the minimum compatible versions of the browsers supported by the web widget?</summary>
+ <div>
+  <br/>
+  <div>• Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
+
+</div>
+   </div>
+</details>

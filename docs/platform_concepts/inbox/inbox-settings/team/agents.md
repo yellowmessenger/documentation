@@ -4,7 +4,9 @@ sidebar_label : Agents
 ---
 
 
-After a user is provided with [inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox), you must define the properties and the scope of the agent work, for example, the type of tickets that can be assigned to a specific agent. This can be done through **Inbox settings** > **Team settings** (agents and groups).
+After a user is provided with [inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents), you can define the properties (display picture/name, languages, concurrency, etc.) and the scope of the agent's work on the **Agent Settings** page.
+Further, you can classify the type of requests (live chat/email ticket) that these agent can receive on [Group settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups). 
+
 
 In this article, you will learn:
 
@@ -18,54 +20,53 @@ In this article, you will learn:
 
 Follow the given steps to configure agent settings:
 
-1. Open **Inbox** > **Settings**.
-2. Search and select **Agents** (from team settings).
+1. Open **Inbox** > **Settings** > **Team**.
+2. Search and select **Agents**.
 
-![](https://i.imgur.com/ysUDmWk.jpg)
+    ![](https://i.imgur.com/ysUDmWk.jpg)
 
 3. Details of all the users with **Inbox agent** access will be on this page. 
 
-![](https://i.imgur.com/RSCMFjm.jpg)
+    ![](https://i.imgur.com/RSCMFjm.jpg)
 
-> You can search for a particular agent by typing the name in the search bar. 
-> 
-> ![](https://i.imgur.com/fhKL8VN.png)
+    > You can search for a particular agent by typing the name in the search bar. 
+    > 
+    > ![](https://i.imgur.com/fhKL8VN.png)
 
 
 
 ### 1.1 Edit/Modify existing agent properties
 
+![](https://i.imgur.com/amJZAJi.jpg)
+
 - To change the basic properties of an agent, click on the edit icon. 
-    - You can define the agent **Name** and **Description**, which will be visible to the end customer when they're interacting with the inbox agent from the web.
+    - **Name** and **Description**: You can define the agent **Name** and **Description**, which will be visible to the end customer when they are interacting with the inbox agent. Description can be set as per the industry, example: Customer support agent, Live chat, Client help specialist, Customer representative, etc. 
 
-    ![](https://i.imgur.com/amJZAJi.jpg)
-
-    - Add an image by clicking on Upload photo. When the agent is assigned to a customer, the avatar, name and description mentioned in the agent settings will be visible to the customer. 
+    - **Display picture**: Add an image by clicking on **Upload photo**. When the agent is assigned to a customer, the avatar, name and description mentioned in the agent settings will be visible to the customer. 
     
     <img src="https://i.imgur.com/D3HIVip.png" alt="drawing" width="50%"/>
 
-    - You can define the **Concurrency** for chart tickets and email tickets.   
+    -  **Concurrency**: You can define the **Concurrency** for live chat and email tickets according to the business workflow. The maximum standard value for live chat concurrency is 6-10 and email concurrency is 20.
  
     :::info
-    **Concurrency** is the maximum number of tickets that an agent can handle at any point in time. For example, if concurrency is set to 20, an agent will not be able to handle more than 20 tickets at points.
-    This is set by the businesses according to the business workflow. The standard value for live chat concurrency is 6-10 and email concurrency is 20.
+    **Concurrency** is the maximum number of tickets that an agent can handle at any point in time. For example, if concurrency is set to 20, an agent will not be able to handle more than 20 tickets at once.
     :::
 
-    - You can set the **Default language** for an agent. Default language determines the language in which the agent is expected to send messages to the customer and help resolve queries. 
+    - **Default language**: You can set the **Default language** for an agent. Default language determines the language in which the agent is expected to send messages to the customer and help resolve queries. 
     
     :::note
     By default, most of the conversations will be in English. If the agent has set any other language (for example French) the bot uses [auto translation](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate). 
     :::
-    - **Available for call** determines the ability of the agents to take video calls. Unless this is enabled, this live agent will not be able to take video calls or request a video call with the customers.  
+    - **Available for call**: This determines the ability of the agents to engage in [video calls](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/videocall). This checkbox must be selected so that the live agent can take video calls or request a video call with the customers.  
 
 
-### 1.2 Edit/ Modify chat ticket concurrency in bulk
+### 1.2 Edit/ Modify concurrency in bulk
 
-- To modify the concurrency of multiple agents at once:
-    1. Select the required agent names
-    2. Click **Bulk edit**
-    3. Change the concurrency
-    4. Click **Update**.
+To modify the concurrency of multiple agents at once:
+1. Select the required agent names
+2. Click **Bulk edit**
+3. Change the concurrency
+4. Click **Update**.
 
 ![](https://i.imgur.com/fZUJLbm.png)
 
@@ -82,26 +83,27 @@ On the left, there is a list of all the agent names and on the right, there is a
 
 ![](https://i.imgur.com/iqgjng1.jpg)
 
-The unchecked fields next to the agent names will not be available for the agent. 
+By default, all these fields are checked (available to the agents). If you want to disable any of these, you can de-select the box next to the required field. The unchecked fields next to the agent names will not be available for the agent. 
 
 
 | Field | Description |
 | -------- | -------- |
 |Ticket report download visibility     |   |
-|Enable Attachments|If disabled, it will not allow agents to send any unwanted attachments that you as a company strives to support|
-|Public chat URL visibility| Every chat ticket has a chat transcript associated with it, if you enable this for a particular agent, they will not be able to access it or share it with their internal colleagues|
-|Chat transcript download visibility||
-|User activity visibility| |
-|User location visibility||
-|Enable Emoji| If disabled, the agent will not be able to send emojis|
-|Ability to pause/unpause bot||
-|Allow agent to view attachments sent by bot| If enabled, when a live chat gets connected to a live agent, the agent will be able to view the previous interaction between a bot and the customer|
-|Show WhatsApp phone number of the user||
-|Allow to edit contact|If disabled, agents cannot edit/update user contacts|
+|Enable Attachments|If this field is de-selected, it will not allow agents to send any unwanted attachments that you as a company strives to support|
+|Public chat URL visibility| Every live chat has a chat transcript associated with it, if you disable this for a particular agent, they will not be able to access it or share it with their internal colleagues (Copy icon will not be available on the chat screen).|
+|Chat transcript download visibility| If this field is de-selected, the agent will not be able to download the chat transcript (Download icon will not be available on the chat screen). |
+|User activity visibility| For web bots, User activity tab on the chat screen displays the URLs that the bot user has visited on the website before getting connected to the live agent. If this field is de-selected, the user activity is not displayed to the agent. |
+|User location visibility| Based on the IP address, approximate location of the bot user is tracked. If this field is de-selected, agent will not be able to see the bot user's location. |
+|Enable Emoji| If this field is de-selected, the agent will not be able to send emojis in the chat.|
+|Ability to pause/unpause bot|The toggle in Basic details on the chat screen displays if the bot is paused/running. When the live agent is connected, bot is paused (only the agent will be able to respond to the user and the bot will not be able to interfer in the conversation). If the bot user is asking questions that are configured in the bot, the agent can select toggle (to running) and allow the bot to answer the queries. If this field is de-selected, the toggle will not be visible to the agent. |
+|Allow agent to view attachments sent by bot| The agent will be able to view the previous interaction between a bot and the customer (including the files/images) that took place before connecting to the live agent. If this field is de-selected, the agent will not be able to see the attachments in the previous chat(only text messages will be displayed).   |
+|Show WhatsApp phone number of the user|Details of WhatsApp bots such as phone numbers are tracked. If this field is disabled, the WhatsApp number of the bot user will not be visible to the agent.  |
+|Allow to edit contact| Customer details passed through raise ticket nodes can be modified on the chat screen. If this field is de-selected, agents cannot edit/update bot user contacts. |
 
 **Bulk update**
 
 - UI settings can be updated for multiple agents by selecting the respective agents and clicking **Update**. 
+    > Previously configured data for the agents will be over-ridden by the new values. 
 
 ![](https://i.imgur.com/f4z2xgy.jpg)
 

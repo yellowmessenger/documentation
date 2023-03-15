@@ -8,7 +8,7 @@ Zalo is an instant messaging application that allows you to send text messages, 
 Businesses can use Zalo to communicate with their customers, respond quickly to customer inquiries, provide customer support, promote their brand by sending promotional offers, and host virtual meetings with colleagues and customers.
 
 In this article, you will learn:
-* [How to create a Zalo official account](#1-create-zalo-official-account)
+* [How to create a Zalo official account?](#1-create-zalo-official-account)
 * [How to setup a Zalo channel using Developer portal?](#2-setup-zalo-channel-using-developer-portal)
 * [How to connect Zalo business channel to your bot?](#3-connect-zalo-channel-to-your-bot)
 * [How to test your bot on Zalo channel?](#4-test-your-bot-on-zalo)
@@ -45,11 +45,11 @@ To set up a Zalo channel using the developer portal, use this [link](https://dev
 
 To setup Zalo channel using developer portal, follow these steps:
 
-1. Login to the developer portal using the URl`https://developers.zalo.me/`.
+1. Login to the developer portal using the URl `https://developers.zalo.me/`.
 
 2. Select your **Official Account** and click **Link**.
 
-   ![](https://i.imgur.com/5xkiB15.png)
+   ![](https://i.imgur.com/m5di5ye.png)
 
 3. You need to enable all the required permissions.
 
@@ -57,7 +57,7 @@ To setup Zalo channel using developer portal, follow these steps:
    
 ### 2.1 Configure Webhook on Zalo channel
 
-After connecting to your official account on the developer portal, you need to [setup a Webhook](https://developers.zalo.me/docs/api/official-account-api/webhook/gioi-thieu-ve-webhook-post-4219) on the Zalo. Enter the Webhook shared by the yellow.ai product team to test your bot on the Zalo channel. 
+After connecting to your official account on the developer portal, you need to [setup a Webhook](https://developers.zalo.me/docs/api/official-account-api/webhook/gioi-thieu-ve-webhook-post-4219) on the Zalo. Enter the Webhook URL shared by the yellow.ai product team to test your bot on the Zalo channel. 
 
 To configure Webhook on Zalo, follow these steps:
 
@@ -83,15 +83,15 @@ To configure Webhook on Zalo, follow these steps:
    
 6. Select your account from the **Lay Access Token**.
 
-   ![](https://i.imgur.com/6JxURzb.png)
+    ![](https://i.imgur.com/bFvqmj9.png)
 
 7. Agree to allow the application to manage the Official Account and click **Allow**.
 
-   <img src="https://i.imgur.com/x2Ezw21.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/TimLjWW.png" alt="drawing" width="80%"/>
   
 8. Copy the **Access token**.
 
-   ![](https://i.imgur.com/TERpJQW.png)
+   ![](https://i.imgur.com/3R48lse.png)
   
 
 ## 3. Connect Zalo channel to your bot
@@ -116,14 +116,14 @@ To test your bot on Zalo, follow these steps:
 
 1. Navigate to your Official Account
 
-   ![](https://i.imgur.com/l7sq92g.png)
+   ![](https://i.imgur.com/LzTtcXe.png)
 
 2. Click **Manage > Account Management > account information**. In this section, you can see the QR Code.
 
-   ![](https://i.imgur.com/4JJTryz.png)
+   ![](https://i.imgur.com/H8zlSyf.png)
    
-2. Scan the QR Code to chat with your bot. Click on **message** to start testing with your bot.   
+3. Scan the QR Code to chat with your bot. Click on **message** to start testing with your bot.   
 
-     <img src="https://i.imgur.com/MOhNI3Q.jpg" alt="drawing" width="60%"/>
+    <img src="https://i.imgur.com/Nsv10ho.jpg" alt="drawing" width="60%"/>
 	 
-3. Once you have tested your bot, the configuration of the Zalo channel for your business is completed.
+4. Once you have tested your bot, the configuration of the Zalo channel for your business is completed.

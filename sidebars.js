@@ -607,6 +607,7 @@ module.exports = {
     },
     "platform_concepts/engagement/cdp/user_data/viewuser",
     "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
+    
 
 /*    {
       type: "category",
@@ -655,6 +656,7 @@ module.exports = {
 
       ],
     },
+    "platform_concepts/engagement/cdp/user_faqs",
    /* {
       type: "category",
       label: "FAQs",
@@ -735,6 +737,7 @@ module.exports = {
         "platform_concepts/engagement/workflow-report",
       ],
     },
+    "platform_concepts/engagement/flows_campaign",
         {
           type: "category",
           label: "Inbound campaigns",
@@ -923,7 +926,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/web-widget",
             "platform_concepts/channelConfiguration/chat-widget-payload",
             "platform_concepts/channelConfiguration/user-authentication",
-            "platform_concepts/channelConfiguration/fuction-widgets",
+            "platform_concepts/channelConfiguration/function-widgets",
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
             "platform_concepts/channelConfiguration/chat-widget-components",

@@ -124,7 +124,7 @@ You can trigger a specific flow using the function `triggerJourney` in the paylo
 
 
 ```
-window.chat.send({triggerJournery: '<flow_slug>'})
+window.chat.send({triggerJourney: '<flow_slug>'})
 ```
 
 #### Flow slug
