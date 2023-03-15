@@ -976,6 +976,7 @@ module.exports = {
             "platform_concepts/appConfiguration/genesys-cloud-livechat",
             "platform_concepts/appConfiguration/google-calendar",
             "platform_concepts/appConfiguration/google-sheets",
+            "platform_concepts/appConfiguration/gpt3",
             "platform_concepts/appConfiguration/hubspot-crm",
             "platform_concepts/appConfiguration/instamojo",
             "platform_concepts/appConfiguration/intercom-livechat",
