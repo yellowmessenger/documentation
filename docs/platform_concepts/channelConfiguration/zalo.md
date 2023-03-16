@@ -72,24 +72,28 @@ To configure Webhook on Zalo, follow these steps:
 3. Copy the **OA Secret Key**.
    
    ![](https://i.imgur.com/oxOFK36.png)
+
+4. Navigate to **Settings** tab and copy **App id**.
+
+    ![](https://i.imgur.com/1kvYbgr.png)   
   
-4. Select **API Explorer** from the **Tools** drop-down.
+5. Select **API Explorer** from the **Tools** drop-down.
 
    ![](https://i.imgur.com/FI5ke8H.png)
   
-5. Select **OA Access token** from the **Access token type** drop-down.
+6. Select **OA Access token** from the **Access token type** drop-down.
 
    ![](https://i.imgur.com/acPoIAH.png)
    
-6. Select your account from the **Lay Access Token**.
+7. Select your account from the **Lay Access Token**.
 
     ![](https://i.imgur.com/bFvqmj9.png)
 
-7. Agree to allow the application to manage the Official Account and click **Allow**.
+8. Agree to allow the application to manage the Official Account and click **Allow**.
 
    <img src="https://i.imgur.com/TimLjWW.png" alt="drawing" width="80%"/>
   
-8. Copy the **Access token**.
+9. Copy the **Access token**.
 
    ![](https://i.imgur.com/3R48lse.png)
   
@@ -102,11 +106,15 @@ To connect the Zalo channel on the Yellow.ai platform, follow these steps:
 
    ![](https://i.imgur.com/eNwtDTh.png)
    
-2. Enter **OA server key** and **Access token** ID and click **Save**.  
+2.  Enter the **OA server key**, **refresh Token**, and **App id** that were copied from the developer portal, and then click **Save**.   
    
-   ![](https://i.imgur.com/Nh8G9Hx.png)
+    ![](https://i.imgur.com/DkKPgad.png)
 
 3. Your Zalo channel will be successfully connected. 
+
+:::note
+If a bot is not used for 3 months, the "refresh Token" will be expired. A mail is sent to bot admins to manually reset the "refresh Token" in the Zalo developer portal. Upon resetting, a new "refresh Token" is generated and you can add this token on our platform to reconnect your bot.
+:::
 
 ## 4. Test your bot on Zalo
 
