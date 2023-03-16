@@ -73,7 +73,7 @@ To configure Webhook on Zalo, follow these steps:
    
    ![](https://i.imgur.com/oxOFK36.png)
 
-4. Navigate to **Settings** tab and copy **App id**.
+4. Navigate to **Settings** tab and copy the **App id**.
 
     ![](https://i.imgur.com/1kvYbgr.png)   
   
