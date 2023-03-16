@@ -23,7 +23,7 @@ This customizable automated message is called **Away message** which will be dis
 
 #### 1. Handle chats/tickets if they are raised outside working hours
 
-You can still capture the incoming requests outside working hours by enabling [Offline Chats](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) which will record all the details and auto-assign them to agents who appear online. 
+You can capture the incoming requests outside working hours by enabling [Offline Chats](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) which will record all the details and auto-assign them to agents who appear online. 
 - Live chats will be created as [Open chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#14-open-chats)
 - Email tickets will be created with [Open status](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/emailticketstatus).
 
