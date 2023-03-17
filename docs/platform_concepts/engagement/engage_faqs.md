@@ -44,6 +44,16 @@ The default message does not come automatically for WhatsApp. You have to train 
 </details>
 
 
+
+
+
+<details>
+<summary> Can we trigger an outbound message on Whatsapp whenever a new user record is added to User 360? </summary>
+
+You can use [User360 events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events) in [Even-based workflow campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/event-triggered-campaign) to send out messages on User 360 events.
+
+</details>
+
 ### Email outbound
 
 <details>
