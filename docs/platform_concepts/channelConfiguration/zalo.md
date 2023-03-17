@@ -113,7 +113,7 @@ To connect the Zalo channel on the Yellow.ai platform, follow these steps:
 3. Your Zalo channel will be successfully connected. 
 
 :::note
-If a bot is not used for 3 months, the "refresh Token" will be expired. A mail is sent to bot admins to manually reset the "refresh Token" in the Zalo developer portal. Upon resetting, a new "refresh Token" is generated and you can add this token on our platform to reconnect your bot.
+If you don't use your bot for 3 months, the "refresh token" will expire. You'll get an email asking you to manually reset the "refresh token" in the Zalo developer portal. Once you reset it, a new "refresh token" will be created. You can add this token to our platform to reconnect your bot
 :::
 
 ## 4. Test your bot on Zalo
