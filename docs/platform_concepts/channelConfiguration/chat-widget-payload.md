@@ -76,10 +76,9 @@ We make use of session tokens to authenticate all our users and maintain their c
 Sample code block that's formatted well
 ``` -->
 
-If you want to pass playload data after initialization of the bot, you can use the below script:
+You can also pass the payload data via the init function. If you want to reinitialize the bot with a new payload, you can use the below script: 
 
-```java
-// replace this with your own auth logic.
+```
 	window.YellowMessengerPlugin.init({
 		payload: {
 			email: 'ted.lasso@yellow.ai',

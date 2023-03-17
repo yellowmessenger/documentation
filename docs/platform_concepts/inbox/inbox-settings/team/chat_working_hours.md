@@ -1,5 +1,5 @@
 ---
-title: Chat Working hours
+title: Working hours
 sidebar_label : Working hours
 ---
 
@@ -16,16 +16,25 @@ In this article, you will learn:
 When your team's working hours are set to 9 AM - 5 PM and a customer is requesting a resolution of a query at 6 PM, the customer cannot connect to any agent nor the ticket will be created/ queued. 
 To avoid such a situation, you can display an automated message to the customer which explains the situation why live agents cannot converse with them, for a better user experience.
 
-**Away message**
-
+**Away message**    
 This customizable automated message is called **Away message** which will be displayed when a customer is trying to reach out to a live agent outside their working hours.
 
 > No agents are available right now. Our working hours are from 10 AM to 7 PM; Monday to Saturday, except for National and Public Holidays*
 
+#### 1. Handle chats/tickets if they are raised outside working hours
 
-[**Open chat**](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#14-open-chats)
+You can capture the incoming requests outside working hours by enabling [Offline Chats](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) which will record all the details and auto-assign them to agents who appear online. 
+- Live chats will be created as [Open chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#14-open-chats)
+- Email tickets will be created with [Open status](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/emailticketstatus).
 
-You can still capture the incoming tickets outside working hours by enabling [Offline Chats](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) which will record all the tickets and auto-assign them to agents who appear online. 
+
+#### 2. Chats/tickets are raised outside working hours but there are no working hours configured
+
+If working hours toggle is enabled and there is no timelimit set for any group, then all the groups are considered to be outside working hours. Even if the agents are online and if the working hours are not set, the chats/tickets wont be received as expected (they will be converted to open chat/ open status ticket).
+
+> If you have enabled Working hours, it is recommended to set at least default timings. 
+
+---
 
 
 ## <a name="steps"></a> 2. Set working hours
@@ -34,40 +43,42 @@ Follow the below steps to set working hours:
 
 1. Open **Inbox** > **Settings**. Search for **Working hours**.
 
-![](https://i.imgur.com/dnpU61d.png)
+    ![](https://i.imgur.com/dnpU61d.png)
 
 
 2. Enable the working hours toggle.
 
-![](https://i.imgur.com/5j84kt3.png)
+    ![](https://i.imgur.com/5j84kt3.png)
 
-3. You can configure working hours for the available groups. If you do not have any group, you can set default working hours. 
+3. You can configure working hours for the available groups.
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) to learn how to add groups.  
+    > If you do not have any group or if you want to have same working hours for all the groups, you can set default working hours.   Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) to learn how to add groups.  
 
 4. Click the edit icon. You can Add/Edit the **Away message** and **Working hours**.
 
-![](https://i.imgur.com/CTf3cDI.png)
+    ![](https://i.imgur.com/CTf3cDI.png)
 
 
-5. Click **Set working hours**. Working hours can be configured for each day. It can have varied start and end times.  
+5. Click **Set working hours**. Working hours can be configured for each day. 
+    > A group can have varied start and end time (or) it can function only on few days (or) it can be functional for different timings on different days.     
+    > There can be multiple functional time slots for the same day. 
 
-![](https://i.imgur.com/OJTluPJ.png)
+    ![](https://i.imgur.com/oF6mGgO.png)
+
 
 6. **Set away message** for each of your groups.  
 
-![](https://i.imgur.com/LkvdV9T.png)
+    ![](https://i.imgur.com/LkvdV9T.png)
 
 
 7. Click **Save**. Once configured, all the groups working hours would be displayed here.
 
-![](https://i.imgur.com/Jl1zLMh.jpg)
+    ![](https://i.imgur.com/Jl1zLMh.jpg)
 
 
 8. You must select the **timezone** of your workforce. This applies to all the groups/agents in this account. Even when a customer messages from a different timezone, their time would be converted into the timezone that is set, and only then a ticket is created if it falls within the specified business hours.
 
-
-![](https://i.imgur.com/EMpAajZ.png)
+    ![](https://i.imgur.com/EMpAajZ.png)
 
 
 
