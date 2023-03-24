@@ -145,7 +145,7 @@ To pass the ymAuthentication token for a PWA bot, follow these steps:
 1. Use this `https://cloud.yellow.ai/pwa/v2/live/x1657623696077` URL.  
 
 2. In the address bar, append `?ymAuthenticationToken=12345`. 
-   For example, `https://cloud.yellow.ai/liveBot/x1657623696077?ymAuthenticationToken=12345`
+   For example, `https://cloud.yellow.ai/pwa/v2/live/x1657623696077?ymAuthenticationToken=12345`
    
    ![](https://i.imgur.com/74H5PE5.png)
  
