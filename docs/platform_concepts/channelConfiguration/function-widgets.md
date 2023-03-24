@@ -63,7 +63,7 @@ Inside `window.ymConfig` in the above script, add `hideChatButton: true`. Whe
   window.ymConfig = {
     bot: 'x1601234512345',
     host: 'https://cloud.yellow.ai',
-    hideChatButton: true
+    "hideChatButton": true
   };
   (function() {
       var w = window,

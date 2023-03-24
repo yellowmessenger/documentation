@@ -10,8 +10,6 @@ The platform supports Text-to-Speech (TTS) feature for chatbots to convert text 
 * The supported languages for TTS are English, Hindi, Tamil, and Slovak.
 :::
 
-
-
 ## 1. Use TTS in your chatbot
 
 To use TTS in your chatbot, follow the below steps:
@@ -21,6 +19,6 @@ To use TTS in your chatbot, follow the below steps:
    ![](https://i.imgur.com/aKz2n8O.png)
 
 
-2. Toggle **Text-to-speech** button and enter the text in the **Input** field. The chatbot converts text commands into spoken words.
+2. Click on the below highlighted iocn and select **Text-to-speech** option, then enter the text in the **Input** field. The chatbot converts text commands into spoken words.
 
-   <img src="https://i.imgur.com/nKDxMV9.png" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/wy65Du6.png" alt="drawing" width="50%"/>
