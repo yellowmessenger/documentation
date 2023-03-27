@@ -1201,12 +1201,11 @@ module.exports = {
       label: "2023 updates",
       collapsed: true,
       items: [
-
-        "updates/2022/jan2023",
-
+        "updates/2023/feb2023",
+        "updates/2023/jan2023",
       ],
     },
- 
+
     {
       type: "category",
       label: "2022 updates",
