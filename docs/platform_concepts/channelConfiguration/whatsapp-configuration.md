@@ -1,6 +1,6 @@
 ---
-title: WhatsApp chatbot
-sidebar_label: WhatsApp chatbot
+title: WhatsApp
+sidebar_label: WhatsApp
 ---
 
 

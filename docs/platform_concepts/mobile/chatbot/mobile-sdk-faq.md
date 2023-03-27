@@ -125,6 +125,15 @@ return new Promise(resolve => {
 
 <img src="https://i.imgur.com/3fmiI63.png" alt="drawing" width="60%"/>
 
+**9. What is the file size of Mobile SDKs?**
+
+* iOS SDK (Native): 158 KB
+* Android SDK (Native): 80.7KB
+* React Native: 39.2 KB
+* Cordova SDK: 47.4 KB
+* Xamarin SDK: 790KB
+* Flutter SDK: 156 KB
+
 
 
 

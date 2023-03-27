@@ -124,7 +124,7 @@ if (userIsAuthenticated) {
 </details>
 
 <details>
- <summary>Is it possible to integrate the Yellow AI chatbot with a ReactJS website?</summary>
+ <summary>Is it possible to integrate the Yellow AI chatbot with a NextJS website?</summary>
  <div>
   <br/>
   <div>Yes, you can add the script to any NextJS page, to do so:<br/> * Create a file called static/yellowai.js and paste our script. Note: You need to remove the tags. <br/> * You can now load this file on page (page name). (jsx|tsx) file</div>
@@ -142,6 +142,14 @@ export default () => (
 )
 ```
   <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Is the React SDK supported for the web widget?</summary>
+ <div>
+  <br/>
+  <div>React SDK is not supported for web widget. However, you can include our <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#24-deploy-chat-widget">script</a> at the end of the body tag in your index.html file.</div>
    </div>
 </details>
 

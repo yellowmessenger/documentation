@@ -88,7 +88,7 @@ To connect a chat bot, follow the below steps:
 -------------
 
 
-##  <a name="gtm"></a>  2. Integrate KT with google tag manager(GTM)
+##  <a name="gtm"></a>  2. Integrate KB with google tag manager(GTM)
 
 
 
