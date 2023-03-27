@@ -80,11 +80,33 @@ The following list provides descriptions for each parmeter of the response -
 
 >In a sentence "I would like to buy a phone", **Buy** is the **Intent** and **Phone** is the **Entity**.
 
-5.  **Global Entity**: These entities are not specifically trained by users, but by our platform itself for frequently typed phrases.
+5.  **Global Entity**: These entities are not specifically trained by users, but by our platform itself for frequently typed phrases related to **Date** and **Country** names.
 
-> For example, the phrase - Good Morning, is not trained by the user. The system automatically identifies it as Greeting because it is a global entity. Such training is essential for **Small talk**. Small talk is a general conversation between the user and bot, mostly pleasantries.
 
-![](https://i.imgur.com/HMtIjQf.jpg)
+| Dates  | Formats |
+| -------- | -------- |
+| **Identified as Global entity**| DD-MM-YY, DDth MM, Now, Today, X days ago, After X days, X weeks ago, Yesterday, Tomorrow, Day before yesterday, Day after tomorrow  |
+| **Not identified as Global entity**|X days later, X mins later, X  hours later, After X mins, After X hours |
+
+> - Bangalore is labeled as a **City** and Japan is labeled as a **Country**. 
+> - Phrases with a combination of date or time such as 12/03/2021, Yesterday, After 2 days, 5 hours, Summer, March, 25th October, etc. are labeled as **Date** or **Time** or **Minute**. 
+
+6.  **Global Model**: [Small talk](https://docs.yellow.ai/docs/platform_concepts/studio/train/smalltalk) and [Contexts](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-contextual-response) are listed and pre-trained by the platform or the bot developer to identify intents and display default responses. When these phrases are identified, the system recognizes them as a Global model.  
+
+> - The intent of "What is your name?" is identified as **What** (question).
+> - The intent of "Good morning!" is identified as **Greeting**.  
+
+:::info
+
+**Global model vs Global entity**
+
+- Global Model identifies values based on phrases trained in Small talk and Context management, you can add multiple contexts based on your industry use-case. 
+- Global entities identify values that are trained by the platform only for Dates and Locations. You cannot add/delete/modify the training. 
+
+![](https://i.imgur.com/Q9yU9sQ.png)
+
+:::
+
 
   
   

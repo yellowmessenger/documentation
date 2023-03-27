@@ -60,7 +60,7 @@ Follow the given steps to add new custom fields:
 
 4. Click **+Add custom field**.
 5. Add the required custom field details as per your requirement.
-    - **Custom field type**: Select from the dropdown ([explained below](cftypes))
+    - **Custom field type**: Select from the dropdown ([explained below](#cftypes))
     
         ![](https://i.imgur.com/6BMzMfs.jpg)
 
@@ -78,7 +78,7 @@ This is not available for Email custom fields.
 6. Click **Create**. Once these fields are added, they will be listed on the ticket/chat details section on the right sidebar.
 
 
-  ###  <a name="cftypes"></a> 2.1 Types of custom fields
+### <a name="cftypes"></a> 2.1 Types of custom fields
 
 |  Custom field |                          Application                         |
 |:-------------:|:------------------------------------------------------------:|

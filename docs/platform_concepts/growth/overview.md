@@ -37,6 +37,12 @@ In this article, you will learn about the 9 common metrics that can be tracked o
 - These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
 
     ![](https://i.imgur.com/Am22nJN.png)
+
+**Comparison**
+- All the % values displayed in a smaller font (in green/red) are the delta of the metrics in applied time range. For example, growth/decline of Unique users in the selected time range (this week) vs previous time range (last week).
+
+<img src="https://i.imgur.com/ExglSe8.png" alt="drawing" width="50%"/>
+
 :::
 
 ## 1. User traffic
