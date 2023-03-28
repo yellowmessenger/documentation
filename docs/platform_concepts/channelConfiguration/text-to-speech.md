@@ -19,6 +19,6 @@ To use TTS in your chatbot, follow the below steps:
    ![](https://i.imgur.com/aKz2n8O.png)
 
 
-2. Click on the below highlighted iocn and select **Text-to-speech** option, then enter the text in the **Input** field. The chatbot converts text commands into spoken words.
+2. Click on the below highlighted icon and select **Text-to-speech** option, then enter the text in the **Input** field. The chatbot converts text commands into spoken words.
 
-   <img src="https://i.imgur.com/wy65Du6.png" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/wy65Du6.png" alt="drawing" width="40%"/>

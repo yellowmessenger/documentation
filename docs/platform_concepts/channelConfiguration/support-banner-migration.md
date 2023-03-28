@@ -1,6 +1,6 @@
 ---
 title: Support banners on migrating from V1 to V2 widget
-sidebar_label: Support callout banners on V2 migration
+sidebar_label: V2 migration guide
 ---
 
 A callout banner allows you to add a banner to chatbot's conversation. Before starting a chat with the user, the callout banner is shown at the top of the chat window with a description of the chatbot’s purpose. To know more, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-access-studio).
