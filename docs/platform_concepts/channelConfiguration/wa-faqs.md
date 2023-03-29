@@ -143,7 +143,7 @@ Yes. Once migrated, templates will be moved and used from the same day.
 <details><summary><b> What is the difference between WA business application and WA business API? </b></summary>
 <p>
 
-Answer to be drafted.
+WA business application is an Android app that businesses can download but has limited functionality. WA business API is the service provided by the Yellow.
 
 </p>
 </details>
