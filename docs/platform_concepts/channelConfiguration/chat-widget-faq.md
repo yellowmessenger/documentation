@@ -317,7 +317,47 @@ window.ymConfig = {
  <summary>What are the minimum compatible versions of the browsers supported by the web widget?</summary>
  <div>
   <br/>
-  <div>• Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
+  <div>Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
+
+</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to pass the data from the URL to a widget?</summary>
+ <div>
+  <br/>
+  <div>Yes, using payload, you can pass the data.
+
+</div>
+   </div>
+</details>
+
+<details>
+ <summary>Can we pass data to the widget for every page of the website?</summary>
+ <div>
+  <br/>
+  <div>Yes, you can pass the data to the widget on its respective page of the website. For more information, see <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-payload">payload</a>.
+
+</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to change the time format to 24 hours in a bot?</summary>
+ <div>
+  <br/>
+  <div>No, currently the platform supports only a 12-hour time format.
+
+</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to customise the URL of the PWA bot?</summary>
+ <div>
+  <br/>
+  <div>No, you cannot customise the URL of the PWA bot.
 
 </div>
    </div>
