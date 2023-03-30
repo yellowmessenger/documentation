@@ -875,7 +875,6 @@ module.exports = {
               "platform_concepts/channelConfiguration/instagram-faqs",
                 ]},
             "platform_concepts/channelConfiguration/sms-outbound-india", 
-            "platform_concepts/channelConfiguration/instagram",
             "platform_concepts/channelConfiguration/alexa",
             "platform_concepts/channelConfiguration/google-message",
             "platform_concepts/channelConfiguration/googleChat",
