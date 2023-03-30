@@ -6,11 +6,13 @@ sidebar_label: Overview
 The first section available on the **Insights** module is the **Overview** section. 
 In this article, you will learn about the 9 common metrics that can be tracked on the **Insights Overview** page which summarizes how your bot is functioning.
 
-- Click **Insights** from the Overview switcher, you will land on the **Overview** page. You can analyse all the default information collected by the bot. Custom data will not be reflected on any of the graphs. 
+- Click **Insights** from the Overview switcher, you will land on the **Overview** page. You can analyse all the default information collected by the bot. 
+- Conversations taking place only after the **welcome message** will be considered for the calculations. 
+- Custom data will not be reflected on any of the graphs. 
 
 ![](https://i.imgur.com/iSPi6HX.png)
 
-> Conversations taking place only after the **welcome message** will be considered for the calculations. 
+
 
 
 ---------------------
@@ -22,26 +24,24 @@ In this article, you will learn about the 9 common metrics that can be tracked o
 **Filter for a period**
 - All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
 - If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
-    
     ![](https://i.imgur.com/cAq1z5N.png)
-
-**Export data**
-
-- To download any of these metrics, click **Export data**. 
-- Select the required metrics (to download all 9, click the link below) and click **Export**.
-
-    ![](https://i.imgur.com/8gK6LDr.png)
 
 **Filter channels**
 
 - These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
-
     ![](https://i.imgur.com/Am22nJN.png)
 
 **Comparison**
 - All the % values displayed in a smaller font (in green/red) are the delta of the metrics in applied time range. For example, growth/decline of Unique users in the selected time range (this week) vs previous time range (last week).
+    <img src="https://i.imgur.com/ExglSe8.png" alt="drawing" width="50%"/>
 
-<img src="https://i.imgur.com/ExglSe8.png" alt="drawing" width="50%"/>
+
+**Export data**
+
+- To download any of these metrics, click **Export data**. 
+- Select the required metrics and click **Export Reports**. You can also download all the reports as PDF. 
+- Click [here](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) for steps to schedule these reports. 
+    <img src="https://i.imgur.com/8R9HwkP.png" alt="drawing" width="60%"/>      
 
 :::
 
