@@ -856,7 +856,7 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "WhatsApp channel",
+              label: "WhatsApp",
               link: {type: 'doc', id: 'platform_concepts/channelConfiguration/whatsapp-channel'},
               collapsed: true,
               items: [

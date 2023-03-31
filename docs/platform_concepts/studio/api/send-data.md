@@ -9,7 +9,7 @@ In this article, you will learn -
 
 ---
 ## <a name="1"></a>1. Send data to API from a bot flow
-Once you configure an API as mentioned in [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#1), you can pass all the input parameter values in the bot flow where you want to consume it. These are usually dynamic values that you can capture directly from the user conversation. 
+Once you configure an API as mentioned in [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api), you can pass all the input parameter values in the bot flow where you want to consume it. These are usually dynamic values that you can capture directly from the user conversation. 
 1. To send a dynamic data from a flow, rename the parameters with {{{parameterName}}} for the API in **Studio** > **API** and save it.
 
 ![](https://i.imgur.com/a6xTjqL.png)

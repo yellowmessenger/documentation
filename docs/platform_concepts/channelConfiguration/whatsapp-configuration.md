@@ -1,16 +1,16 @@
 ---
-title: WhatsApp
-sidebar_label: WhatsApp
+title: Setup WhatsApp business account
+sidebar_label: Setup WhatsApp 
 ---
 
 
 This document will guide you through creating a WhatsApp business account and setting up your own WhatsApp chatbot. For more information, see [WhatsApp Accounts](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
 
-## 1. WhatsApp configuration
+## 1. Configure WhatsApp business account
 
 Follow the below steps to connect your chatbot to WhatsApp business account: 
 
-### 1.1 Create WhatsApp Business Account
+### 1.1 Create WhatsApp Business account
 
 
 1. On the switcher, click **Channels**.
@@ -198,7 +198,7 @@ Yellow.ai allows you to test your WhatsApp bot with Development mode before push
 
 ***
 
-## 2. Catalog setup
+## 2. WhatsApp catalog setup
 
 Prerequisites 
 
@@ -237,9 +237,9 @@ The following are the prerequisites to use WhatsApp Product Node -
 
 
 
-### 2.1 Commerce manager (Catalog)
+### 2.1 Create product catalog on Facebook
 
-The Facebook Commerce manager helps in listing the products to be used for SPM/MPM. It is not possible to send any product on WhatsApp without listing the products on the FB's Commerce Manager.
+The Facebook Commerce Manager (FCM) helps in listing the products to be used for SPM/MPM. It is not possible to send any product on WhatsApp without listing the products on the FB's Commerce Manager.
 
 
 :::note
@@ -301,7 +301,7 @@ It is important to note the following points in Catalog before using its product
 
 
 
-### 2.2 Link Catalog to a WABA
+### 2.2 Link Catalog to a WhatsApp business account
 
 Once the Catalog is set up, the Business has to share the Catalog cccess with the BSP (Yellow.ai) to use items from the Catalog in WABA accounts created by Yellow. 
 
@@ -338,11 +338,11 @@ To share Catalog access with the BSP and connect it to WABA -
 
 
 
-### 2.3 Business & compliance info. (Mandatory for Indian number WABA)
+### 2.3 Compliance to use SPM/MPM on WhatsApp (Mandatory for Indian WABA)
 
-It is mandatory for Indian Businesses to provide the Business and Compliance info to use the SPM/MPM feature on their WABA accounts. 
+It is mandatory for Indian Businesses to provide the Business and Compliance info to use the SPM/MPM feature on their WABA accounts. This is mandatory for all Indian WhatsApp business accounts.
 
-Log on to the [Cloud Platform](https://cloud.yellow.ai/) and go to **Channels** > **WhatsApp**, and fill in the details.
+Log on to the [Cloud Platform](https://cloud.yellow.ai/) and go to **Channels** > **WhatsApp**, and fill in all the Basic and Additional details.
 
 <img src="https://i.imgur.com/g7gw6v9.png" width="65%"/>
 
@@ -351,7 +351,7 @@ Log on to the [Cloud Platform](https://cloud.yellow.ai/) and go to **Channels** 
 [](https://www.craft.do/s/0loidngTNNAzkK/b/8CA0C2DD-ECD2-437F-BBFB-C1303B7E0966/How_to_Create_an_End_to_End_Catalog_)
 
 :::note
-To create a new Catalog flow on the Yellow.ai Platform, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message).
+To create a new Catalog on the the Yellow.ai Platform, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message).
 :::
 
 
@@ -415,4 +415,6 @@ When setting up your WhatsApp Business Profile, you must follow the below guidel
   * Geographic location (For example, Texas)   * A slogan or a long description.
 * A display name must have consistent branding with external sources(for example, a company's website or marketing). If they don't feel the display name is abiding all these rules, then they will approve the display name.
 For instance: Facebook account of the client is in the name of Tolaram Grp and display name "Colgate" is rejected by Facebook saying there is no link between the two names. So client has to apply for new account under the name of "Colgate Nigeria."
-* A display name must have a clear relationship for your business (must be referred on the business’ website or external media references). <br/>For example, **Accepted:** Name of a charity mentioned on a non-profit organization's website.<br/>**Not accepted:** Name of a charity not mentioned on any external websites.
+* A display name must have a clear relationship for your business (must be referred on the business’ website or external media references). <br/>For example:
+   *  **Accepted:**: Name of a charity mentioned on a non-profit organization's website.
+   * **Not accepted:**: Name of a charity not mentioned on any external websites.
