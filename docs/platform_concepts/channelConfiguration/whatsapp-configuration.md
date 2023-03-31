@@ -204,7 +204,7 @@ Prerequisites
 
 The following are the prerequisites to use WhatsApp Product Node - 
 
-1. [Product Listed on Catalog](#21-commerce-manager-catalog)
+1. [Product Listed on Catalog](#21-create-product-catalog-on-facebook)
 
 2. [Updated Business and Compliance Info](#23-business-and-compliance-info-mandatory-for-indian-number-waba)
 
