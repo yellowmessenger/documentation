@@ -41,6 +41,7 @@ To export data, follow the steps below:
     * **Notification reports**: Data of notifications sent out using the platform/ API: 
     * **Platform analytics**: Data on User engagement, bot, API, and Inbox events.
     * **Leads**: All the user profile data.
+    * **Call recordings**: All the recorded calls from the voice bot.
 - Click **Next**. 
 
 

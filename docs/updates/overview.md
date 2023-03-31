@@ -43,9 +43,6 @@ featured: true
     
 </details>
 
-
-
-
 <details>
 <summary>
 
@@ -57,6 +54,25 @@ featured: true
 | Enhancement | Description |
 | -------- | -------- |
 | **GPT-3 third party integration** <br/> | Customers can bring their free trial /paid openAI account (like any other 3rd party tool) and connect with yellow.ai. The node can take user text (user chat query) as the input and return the best possible response based on the model.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/gpt3) |
+
     
+</details>
+
+
+<details>
+<summary>
+
+### Insights  
+
+</summary>
+
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Transfer call recordings to customer cloud storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | Call recordings (.wav files) can be moved from our systems to customer’s cloud storage (Amazon S3/ Azure Blob/ SFTP) in an automated and recurring (Daily, Weekly, Monthly. Quarterly, One time) manner.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
+|**Standard report scheduling**| You can schedule raw reports available on the Overview, Metrics, and Funnels page for export as email alerts. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) |
+
+<!--- Alerting dashboard - you can enable proactive alerting for whenever your bot is down or any API fails from the Alerts dashboard under Health module. This is the first release of the entire Health module -->
+
 </details>
 

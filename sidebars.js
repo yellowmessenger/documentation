@@ -136,6 +136,7 @@ module.exports = {
   items: [
     "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
+    "cookbooks/insights/schedulerawreports",
 
   ],
 }, 
@@ -560,6 +561,7 @@ module.exports = {
             //"platform_concepts/inbox/inbox-settings/automation/google-translate-api-inbox",
             "platform_concepts/inbox/inbox-settings/automation/agent-actions",
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
+            "platform_concepts/inbox/inbox-settings/automation/emailinactivity",
                    ],
           },
 

@@ -1,5 +1,5 @@
 ---
-title: Create and modify custom status for agents
+title: Create & modify custom status for inbox agents
 sidebar_label : Custom status
 ---
 
