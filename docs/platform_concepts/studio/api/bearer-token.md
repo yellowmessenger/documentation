@@ -17,7 +17,7 @@ If you do not want to use code function, you can directly pass the access token 
 
 To do so, follow these steps - 
 
-1. In **Studio** > **Build** > **API**  and [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#1) to fetch the access token.
+1. In **Studio** > **Build** > **API**  and [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to fetch the access token.
 2. Copy the access token from the source. 
 
 > Here, we’ve added a salesforce API to create a bearer token. During the course of this tutorial, we’ll call it auth API. This API returns a **Bearer token** which we will use in another API for authentication.
@@ -25,7 +25,7 @@ To do so, follow these steps -
    ![](https://i.imgur.com/zZCcghI.png)
 
   
-4. Open the API or [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#1) to which you want to add access token (Authorization header).
+4. Open the API or [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to which you want to add access token (Authorization header).
 
 > In the example, we will be adding a search lead API from Salesforce. Pass the bearer token in the header and email as a [parameter to this API](https://docs.yellow.ai/docs/platform_concepts/studio/api/send-data). So we will fetch values from [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and pass it to the API using this syntax `{{{variable_name}}}`; as shown in the screenshots below.
   
