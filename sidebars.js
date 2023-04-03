@@ -40,7 +40,6 @@ module.exports = {
           "cookbooks/studio/newcard",
           "cookbooks/studio/trigger-whatsappresponse",
           "cookbooks/studio/retriev-dbinfo",
-          "cookbooks/studio/text-format",
           "cookbooks/studio/multilingual-bot",
           "cookbooks/studio/build-bot",
 
