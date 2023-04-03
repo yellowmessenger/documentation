@@ -76,3 +76,18 @@ featured: true
 
 </details>
 
+
+<details>
+<summary>
+
+### Apps (Widget + Mobile)
+
+</summary>
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Web widgets** <br/> | - Menu button now includes TTS, and Bot sounds settings. <br/> - Notification badge for unread agent messages. <br/> - Chat separators added. |
+| **Chatbot SDK** <br/> | - React-native SDK: Close bot issue fixed. <br/> - Hybrid SDK: Documentation update.|
+|**Inbox SDK and Partner app** |- Unsupported Widget addition. <br/> - SSO Redirection URL changes for Apple Login. <br/> - Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.|
+
+</details>
