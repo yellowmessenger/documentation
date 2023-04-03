@@ -1,18 +1,48 @@
 ---
 title: Account Setup and Subscription
 sidebar_label: Account setup & subscription
+tags: [start for free, essential features at no cost]
 ---
 
+## 1. Freemium
 
-To use yellow.ai, you need to have an account with us. This article will help you in setting up and upgrading your account.
+Yellow.ai's Freemium Plan helps small businesses and solo entrepreneurs looking to optimize their customer engagement strategy with conversational AI technology. Our Freemium plan is an ideal way to assess the suitability of our product for your unique business use cases.
 
-## 1. Signup to yellow.ai
+Start growing your business today by signing up to our Freemium Plan.  You can upgrade your productivity and discover the potential of our platform with our Freemium Plan before committing to our premium version. Try before you buy!
+ 
+Let's say that you're building a customer support automation, with the Freemium plan you can achieve the following:
 
-Once you sign up, your account will be on a free trial for 21 days. In this free trial you can try all the features in our platform and analyse what would work best for your business before you opt for a paid account.
+1. Add relevant Q&A to the [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) module to deflect tickets effectively.
+2. Have unlimited [agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) to answer customer questions.
+3. Improve bot performance by analyzing deflection rate with 5,000 monthly bot conversations.
+4. Handle up to 500 chat and email tickets per month when transferring chats to an agent.
+5. Increase your agents' productivity with features like canned responses, and integrate two channels (website, WhatsApp, mobile app) for customer interactions, and a unified inbox for your agents.
+
+:::note
+Your account automatically moves to Freemium plan as soon as you [signup](#2-signup-to-yellowai).
+:::
+
+### 1.1 Freemium limitations
+
+While Freemium provides businesses with a cost-effective way to access Yellow.ai's conversational AI solutions, it is important to note that this plan comes with certain limitations. Some of the advanced features and functionalities are only available to users who subscribe to Yellow.ai's paid plans. If you require access to any of these features, you will need to upgrade your plan accordingly.
+
+The following features are currently unavailable in the freemium plan. You need to upgrade your yellow.ai account in order to access them.
+
+
+| Module | Restrticted feature | Consumption limit |
+| -------- | -------- | -------- |
+| Studio     | Doc Cog     | 5000 chat sessions per user.  |
+|Inbox| Knowledgebase |500 email tickets and agent chats per month.  |
+|Insights|Data Explorer, Dashboard and Doc Cog Insights |NA |
+|Engage| Monthly tracked users|5000 users per month. |
+|Channels|SMS and Voice |NA |
+
+
+## 2. Signup to yellow.ai
 
 1. Go to [cloud.yellow.ai](https://cloud.yellow.ai/auth/signup)
 2. Select your preferred mode of signup.
-3. Fill in the fields and click **Signup**.
+3. Fill in the fields and click **Sign up**.
 
 <img src="https://i.imgur.com/5I4eh2i.jpg" alt="drawing" width="100%"/>
 
@@ -22,114 +52,77 @@ Once you sign up, your account will be on a free trial for 21 days. In this free
 * Choose your country code while providing your contact number.
 ::: 
 
-4. You will receive the verification link in your registered email address. Click **Verify Email**. You will be taken to your Yellow.ai account.
+4. In the following screen, the bot will list the bots created by your team(if any). Click **Request access** to get access to one of those bots or click **Get started** to build a bot from scratch. .
 
-<img src="https://i.imgur.com/altk7y6.png" alt="drawing" width="100%"/>
+![](https://i.imgur.com/MeQczsX.png)
 
-:::note
-This link is valid for 24 hours.
-:::
+5. Click **Get started** under the preferred use-case.
 
-5. In the following screen, select your business usecase and click **Next**.
+![](https://i.imgur.com/Q5ALzLs.png)
 
-<img src="https://i.imgur.com/59QaZQF.jpg" alt="drawing" width="100%"/>
+6. Choose the industry your business belongs to. To skip the following steps, click **Skip for now**.
 
-6. Choose your level of familiarity with bots and click **Next**.
-
-<img src="https://i.imgur.com/gDRgnpb.jpg" alt="drawing" width="100%"/>
-
-
-7. Fill in your personal details and click **Get Started**.
-
-<img src="https://i.imgur.com/B5lXN0E.jpg" alt="drawing" width="100%"/>
+![](https://i.imgur.com/IHGleUT.png)
 
 In the following page, you can choose to either create a bot from scratch, or choose one of the predefined bot templates.
- 
-## 2. Account Upgrade
 
-Your yellow.ai account can be upgraded before or after your trial periods ends. 
+### 2.1 To create a bot from scratch
 
-### 2.1 To upgrade before the trial period
+1. In the **I would like to start afresh** field, describe the use case for which the bot is built.
+2. Click the **+Start from scratch** button.
 
- 1. Click the **Free** button on the top left corner.
+<img src="https://i.imgur.com/IfmeeWu.png" alt="drawing" width="60%"/>
 
-<img src="https://i.imgur.com/wAolRzi.png" alt="drawing" width="100%"/>
+3. Select the bot type, the region of the bot and click **Create Project**.
 
-2. Click the **Schedule now** button in the following pop-up to have a 1:1 with our product consultants who will help you choose a plan that suits your business.
+<img src="https://i.imgur.com/86kgJxw.png" alt="drawing" width="60%"/>
 
-<img src="https://i.imgur.com/er6Ut7y.png" alt="drawing" width="100%"/>
+### 2.2 Use predefined bot templates
 
+1. Choose the preferred use cases.
+2. Click **Import+**.
 
-### 2.2 To upgrade after the trial period
- 
-Once your trial ends, you will see this pop-up in your  account. 
+<img src="https://i.imgur.com/Xjk1Rqc.png" alt="drawing" width="60%"/>
 
-<img src="https://i.imgur.com/e57YUgM.png" alt="drawing" width="100%"/>
+3. Choose the region of the bot and click **Create Project**.
 
-Click the **Schedule call** button to have a 1:1 with our product consultants who will help you choose a plan that suits your business. 
+<img src="https://i.imgur.com/4phs5gv.png" alt="drawing" width="60%"/>
 
-Once you click the **Schedule Now/ Schedule call** buttons, the **Calendly** pop-up gets displayed, where you can choose the **date**, **time** and the **time zone** that works for you.
+## 3. Upgrade from Freemium
 
-![](https://i.imgur.com/5Jrm75i.png)
-
-In the following screen, fill in all the fields and click **Schedule Event**. 
- 
-![](https://i.imgur.com/gikyMOq.png)
- 
-
-------
-
-## 3. Subscription
-
-A default subscription with basic plan (T0) is created for every new user signing up on the cloud.yellow.ai platform. 
-
-For yellow.ai employees signing up on cloud.yellow.ai for the first time, can create their own subscription or is provided a training subscription where they can create a bot and explore the platform.
-
-### Number of bots per subscription
-
-Initially all subscriptions are allowed to create a single bot but if needed, we can upgrade the account to create more bots within the same subscription. Please reach out to sales@yellow.ai for more details. 
-
-Subscription is used by the account team to maintain billing details, users can have more than one subscription but its suggested that one company or organisation creates only one subscription and gets it upgraded via sales if required.
-
-### Upgrade Subscription and Tier details
-
-In your subscription, you will initially have Basic subscription (T0), for accessing other premium features, you need to upgrade your subscription.
-To upgrade your subscription reach out to support@yellow.ai .
-Here is a list below which shows all the tiers and features available.
-
-|   Feature   |  Basic (T0) |    Standard (T1)   |  Professional (T2) |         Enterprise (T3)        |
-|:-----------:|:-----------:|:------------------:|:------------------:|:------------------------------:|
-|    Studio   |      ✅      |          ✅         |          ✅         |                ✅               |
-|     Data    |             |          ✅         |          ✅         |                ✅               |
-|     API     |      ✅      |          ✅         |          ✅         |                ✅               |
-|     Code    |             |                    |          ✅         |                ✅               |
-|   Insights  |      ✅      |          ✅         |          ✅         |                ✅               |
-|    Inbox    |      ✅      |          ✅         |          ✅         |                ✅               |
-|  Engagement |      ✅      |          ✅         |          ✅         |                ✅               |
-|   Channels  |      ✅      |          ✅         |          ✅         |                ✅               |
-| Enviroments | Development | Live / Development | Live / Development | Sandbox / Staging / Production |
+Yellow.ai provides you with the flexibility to upgrade your account based on their specific business requirements. It is recommended that you carefully evaluate your needs before deciding on the plan that best suits your requirements. 
 
 
+1. Click the **Upgrade** button.
 
-### Manage Subscription
-Whenever another platform user [shares bot access](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators) with you to collaborate, you have to first accept the invite and then switch to their subscription to access their bot.
-
-
-1. To switch your subscription, go to your **Profile** and click on **Billing**.
-![](https://i.imgur.com/bnKSsOA.png)
-
-2. Against their subscription, click on the **Switch** button.
-
-![](https://i.imgur.com/kODvWi4.png)
-
-3. Now go back to projects and you should be able to see the bot shared with you. 
+![](https://i.imgur.com/6J6fYcY.png)
 
 
+2. Click the **Schedule Now** button to have a 1:1 with our product consultants who will help you choose a plan that suits your business. 
+
+![](https://i.imgur.com/Pmx0AwS.png)
 
 
+3. Once you click the **Schedule Now** button, a **Calendly** pop-up is displayed, where you can choose your preferred **date**, **time** and the **time zone**.
+
+![](https://i.imgur.com/w7o0VlK.png)
+
+4. On the following screen, fill in all the fields and click **Schedule Event**. 
+
+![](https://i.imgur.com/UgoDQdM.png)
 
 
+## 4. Pricing plans
+
+The paid subscription plans offer various integrations and channels, personalized reports and dashboards, and professional support. Furthermore, these plans can be adjusted to fit your specific requirements, offering unlimited functionalities.
+
+If you've signed up with a new domain on our platform, click the **Upgrade** button to see all the subscription plans.
+
+![](https://i.imgur.com/mNl6DvH.png)
 
 
+To select a plan either on a monthly or annual basis, toggle between the **Monthly/Yearly** options on the top. For a complete comparison of features included in all plans, click  **See full plan comparison** located at the bottom of the page. 
+
+Clicking **Choose Plan** or **Contact Sales** will redirect you to the Calendly pop-up (same as mentioned above) to book a one-on-one session with our product experts.
 
 
