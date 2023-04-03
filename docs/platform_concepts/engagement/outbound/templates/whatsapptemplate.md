@@ -90,7 +90,7 @@ Navigate to the **Button Type** section and select *Call to action*.
 There are two types of URLs you can use in a CTA:
 
 #### Static URL 
-In this type of CTA, you need to mention the URL that needs to be opened when seding the template for approval. You cannot modify the static URL once it is sent for approval or post approval. 
+In this type of CTA, you need to mention the URL that needs to be opened when sending the template for approval. You cannot modify the static URL once it is sent for approval or post approval. 
 
 For easy approval, it is recommended to use the company's domain URL. Example: [https://docs.yellow.ai](https://docs.yellow.ai)
 
@@ -130,7 +130,7 @@ The following are the three different quick reply options:
 
 ### 2.1 Trigger journey
 
-Use this to trigger a specific journey when the user clicks on the button. For example, you can use it to send a promotional notification about store offers, and trigger the bot flow through which users can buy products when the user clicks on it.
+Use this to trigger a specific journey when the user clicks on the button. For example, you can use it to send a promotional notification about store offers and trigger the bot flow through which users can buy products when the user clicks on it.
 
 **Prerequisite**: A journey should be created already for offers and buy products to select from.
 

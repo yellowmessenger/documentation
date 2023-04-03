@@ -289,13 +289,13 @@ Segment is grouping of users based on certain condition sets. Segmentation can b
 
 The campaign goal represents a specific objective that you want to achieve through the campaign. Campaign goals can vary depending on the purpose of the campaign and the desired outcome. 
 
-Tracking the progress of campaign goals is important to ensure the effectiveness of the campaign in meeting its objectives. This could include the template used, user segment targetted, scheduled time or any other parameter.
+Tracking the progress of campaign goals is important to ensure the effectiveness of the campaign in meeting its objectives. This could include the template used, user segment targetted, scheduled time, or any other parameter.
 
 Goals are categorised into three types depending on the purpose of the campaign:
 
 #### 1. Delivery goal
 
-The delivery goal helps you track the reachability of the campaign. For example, the goal of promoting a new outlet is to reach out to a larger audience, your goal could be the number of messages delivered. 
+The delivery goal helps you track the messages delivery status and assess the campaign reach. For example, for promoting a new outlet, your goal could be the number of messages delivered. 
 
 Currently, there are three delivery statuses supported - sent, delivered, and read. However, not all channels support all three statuses. For example, the message read cannot be tracked for SMS.
 
