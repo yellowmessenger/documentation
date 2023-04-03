@@ -239,7 +239,7 @@ The following are the prerequisites to use WhatsApp Product Node -
 
 ### 2.1 Commerce manager (Catalog)
 
-The Facebook Commerce manager helps in listing the products to be used for SPM/MPM. It is not possible to send any product on WhatsApp without listing the products on the FB's Commerce Manager.
+The Facebook Commerce manager helps in listing the products to be used for SPM (Single Product Message)/MPM (Multi Product Message). It is not possible to send any product on WhatsApp without listing the products on the FB's Commerce Manager.
 
 
 :::note
