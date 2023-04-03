@@ -1,6 +1,6 @@
 ---
-title: Configure chat inactivity timeout
-sidebar_label : Inactivity trigger
+title: Configure chat inactivity timeout / Handle inactive chats 
+sidebar_label : Chat inactivity trigger
 keywords : [chat timeoff, agent inactivity status, inactivity status, no agent reply, no user reply]
 ---
 

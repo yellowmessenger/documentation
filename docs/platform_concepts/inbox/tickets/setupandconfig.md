@@ -1,11 +1,11 @@
 ---
-title:  Setup and configuration 
+title:  Setup and configuration of email tickets on inbox 
 sidebar_label : Setup and configuration 
 ---
 
 In this article you will learn how to configure email tickets. There are 3 steps to be followed in the given order: 
-1. [Create an email channel(email ID](#1)
-2. [Link  email channel to Inbox (with forwarding address](#22)
+1. [Create an email channel(email ID)](#1)
+2. [Link  email channel to Inbox (with forwarding address)](#22)
 3. [Enable email ticketing from settings](#2)
 
 After this configuration is successful, the tickets that are created via. Raise ticket node for [email support groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) will be assigned to a live agent for resolution. 

@@ -1,6 +1,6 @@
 ---
-title: February 2023
-sidebar_label: Latest product updates (Feb 2023)
+title: March 2023
+sidebar_label: Latest product updates (Mar 2023)
 featured: true
 ---
 
@@ -11,9 +11,23 @@ featured: true
 
 ![](https://i.imgur.com/Wj06Bz6.png)
 
-  
-  
-  
+
+
+<details>
+<summary>
+
+### Subscription 
+
+</summary>
+
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Launched freemium** <br/> | Users will have free access to the platform for indefinite number of days with  limited features.  |
+    
+</details>
+
+<!--<br/><br/> [**Learn more**](.) -->
 
 <details>
 <summary>
@@ -22,133 +36,58 @@ featured: true
 
 </summary>
 
-  
-  
-
-| New features | Description |
-| -------- | -------- |
-| **Auto-validation of prompt nodes**  <br/>(Applicable to the Delivery QA Team) |Bot QA team can remove steps to validate Prompt Nodes (**Name, Email, Phone and Location**) from their QA checklist as they are now handled by the platform.|
-| **Design dynamic voice flows using the Voice Input node v0 ** <br/> | Voice input node is used to take inputs in the voice channel. It replaces 15+ nodes that were previously used to build a voice bot flow. <br/> Common inputs and settings are pre-filled, this reduces the lines of code written for validation. <br/>  <br/>You can experience the conversation without previewing the bot with SSML quick hearing and testing features. <br/><br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput) |
-</details>
-
-  
-  
-
-<details>
-<summary>
-
-### Design
-
-</summary>
-
-  
-| New features | Description |
-| -------- | -------- |
-| **Conversation designer for voice bots to design conversations before development**  <br/> | A simple easy-to-use tool to design voice conversations, preview, and push for development. <br/>  <br/> Design and Studio modules are in sync with the design, all the flows that you design on this module are automatically converted into builder flows. Bot persona and node-level settings are easily configurable. <br/><br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/design/convdesignvoice)|
-
-</details>
-
-  
-  
-
-<details>
-<summary>
-
-### Voice
-
-</summary>
-
-| New features | Description |
-| -------- | -------- |
-| **Context-aware interruption handling**  <br/> (Private-Beta)<br/> | To ensure that only relevant inputs from the callers are considered as interruptions, the voice bot can be configured to identify valid interruptions (positive and negative cases). With a positive interruption, the bot stops speaking and allows the user to converse. With negative interruption(background noise), the bot continues speaking.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/usecases/interrupthandling) |
-| **Auto-language detection**  <br/> | You can now interact with the bot in multiple languages without manually selecting the language at any point.<br/>  <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/usecases/languagedetection) |
-
-</details>  
-
-<details>
-<summary>
-
-### Widgets
-
-  </summary>
-
-  
-| Enhancement | Description |
-| -------- | -------- |
-| **Themes and changes on chat widget setup** | <ul><li> You can now select between Light or Dark theme.</li>  <li>Colour schemes are now compliant with WCAG’s accessibility standards.</li>  <li>You can choose between Solid, or Gradient colours for title bar. </li></ul> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget) |
-
-</details>
-
-
-<details>
-<summary>
-
-### Marketplace  
-
-</summary>
-
-  
-  
-
-| New template | Description |
-| -------- | -------- 
-| **WhatsApp starter pack** | Templates added to help showcase the implementation of buttons, lists, and date validators on WhatsApp. These can be easily customized and reused. <br/><br/><ul><li>[**Whatsapp list**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget)</li><li> [**Whatsapp buttons**](https://cloud.yellow.ai/marketplace/a1113aea29b76704cbf3f77bf89761ad)</li><li>[**Whatsapp date validator**](https://cloud.yellow.ai/marketplace/33abc8f07ffc4b6e1cd047f9ad0c0e62)</li></ul> |
-| **Healthcare template on WhatsApp channel** | The Healthcare template contains several prebuilt flows such as New patient registration, Book a consultation, Collect reports, Talk to support, and Locate nearby clinic use cases. <br/>  <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/marketplace-templates/healthcare_template) |
-
-</details>
-
-
-<details>
-<summary>
-
-### Engage
-
-</summary>
-
-  
-
-| New features | Description |
-| -------- | -------- |
-| **Omni channel campaign planning tool (Flows)**  <br/> | You can easily plan and coordinate your campaigns across Email, WhatsApp, SMS, Voice, and more, from Engage module to reach audience on your preferred channels. <br/><br/>You will also have access to valuable insights and analytics that will help you measure the effectiveness of the campaigns and make informed decisions about marketing strategy.<br/>|
-
-</details>
-
-
-<details>
-<summary>
-
-### Insights
-
-</summary>
-
-
-| New feature | Description |
-| -------- | -------- |
-| **Data Ops to export data from yellow.ai** | Data ops allows you to fetch the data obtained on the yellow.ai platform and export it to Amazon S3, Azure Blob, or SFTP server easily. <br/>  <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops)
-  
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Added Conversation Issues widget** | You can now view analytics based on the conversation logs (studio). <br/>  <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/overview#10-conversation-issues) |
-| **Push custom data to default tables on Data explorer** | **API events, Bot events, Message events, and User engagement events** tables have two columns blank by default, CUSTOMID 1 and CUSTOMID 2. You can choose to push any of the user properties that are stored on [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties) to all those default tables.<br/>  <br/> [**Learn more**](http://localhost:3000/docs/platform_concepts/growth/data-explorer#-21-push-custom-data-to-default-tables) |
+| **JSON support for syncDB node** <br/> | Sync database node is used for syncing bot tables to external databases in regular intervals. This is now supported for CSV and JSON files. You can create and add an API that pulls the bulk data and the node performs the necessary actions.  <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) |
+    
+</details>
 
-  </details>
-  
-  
+<details>
+<summary>
 
-  
-   <details>
-<summary> 
-
-### Inbox
+### Integrations 
 
 </summary>
 
-| New feature | Description |
-| -------- | -------- |
-| **Integrations your knowledgebase(KB) with GTM and Chatbot** | Extend the native capabilities of Inbox's knowledge base through 3rd party integrations like Google Tag Manager and Chatbot widget. You can get insights on user demographics, behavioral data, and the efficiency of your KB and optimize it accordingly. <br/>  <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations)
-| **Inbox default settings** | For new Inbox bots, default settings that are required for seamless onboarding are auto-enabled by default. This will reduce the friction and time to value for all the inbox users.|
-| **Debugging logs for Inbox issues** | Debug and solve live agent journey issues with ease. With these logs, you can understand why your chat is not getting raised, why your chats are getting missed, etc. at any point in time and make the required changes.|
-| **New details section in email tickets page** | Based on feedback and pain points shared by the customers, the Email tickets section is redesigned to make it efficient for the agents to work with and increase their productivity.|
 
-  </details>
+| Enhancement | Description |
+| -------- | -------- |
+| **GPT-3 third party integration** <br/> | Customers can bring their free trial /paid openAI account (like any other 3rd party tool) and connect with yellow.ai. The node can take user text (user chat query) as the input and return the best possible response based on the model.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/gpt3) |
+
+    
+</details>
+
+
+<details>
+<summary>
+
+### Insights  
+
+</summary>
+
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Transfer call recordings to customer cloud storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | Call recordings (.wav files) can be moved from our systems to customer’s cloud storage (Amazon S3/ Azure Blob/ SFTP) in an automated and recurring (Daily, Weekly, Monthly. Quarterly, One time) manner.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
+|**Standard report scheduling**| You can schedule raw reports available on the Overview, Metrics, and Funnels page for export as email alerts. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) |
+
+<!--- Alerting dashboard - you can enable proactive alerting for whenever your bot is down or any API fails from the Alerts dashboard under Health module. This is the first release of the entire Health module -->
+
+</details>
+
+
+<details>
+<summary>
+
+### Apps (Widget + Mobile)
+
+</summary>
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Web widgets** <br/> | - Menu button now includes TTS, and Bot sounds settings. <br/> - Notification badge for unread agent messages. <br/> - Chat separators added. |
+| **Chatbot SDK** <br/> | - React-native SDK: Close bot issue fixed. <br/> - Hybrid SDK: Documentation update.|
+|**Inbox SDK and Partner app** |- Unsupported Widget addition. <br/> - SSO Redirection URL changes for Apple Login. <br/> - Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.|
+
+</details>

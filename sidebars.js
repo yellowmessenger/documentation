@@ -136,6 +136,7 @@ module.exports = {
   items: [
     "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
+    "cookbooks/insights/schedulerawreports",
 
   ],
 }, 
@@ -560,6 +561,7 @@ module.exports = {
             //"platform_concepts/inbox/inbox-settings/automation/google-translate-api-inbox",
             "platform_concepts/inbox/inbox-settings/automation/agent-actions",
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
+            "platform_concepts/inbox/inbox-settings/automation/emailinactivity",
                    ],
           },
 
@@ -854,7 +856,7 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "WhatsApp channel",
+              label: "WhatsApp",
               link: {type: 'doc', id: 'platform_concepts/channelConfiguration/whatsapp-channel'},
               collapsed: true,
               items: [
@@ -873,7 +875,6 @@ module.exports = {
               "platform_concepts/channelConfiguration/instagram-faqs",
                 ]},
             "platform_concepts/channelConfiguration/sms-outbound-india", 
-            "platform_concepts/channelConfiguration/instagram",
             "platform_concepts/channelConfiguration/alexa",
             "platform_concepts/channelConfiguration/google-message",
             "platform_concepts/channelConfiguration/googleChat",
@@ -1201,12 +1202,11 @@ module.exports = {
       label: "2023 updates",
       collapsed: true,
       items: [
-
-        "updates/2022/jan2023",
-
+        "updates/2023/feb2023",
+        "updates/2023/jan2023",
       ],
     },
- 
+
     {
       type: "category",
       label: "2022 updates",

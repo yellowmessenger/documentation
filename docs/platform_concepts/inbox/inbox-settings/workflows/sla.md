@@ -1,5 +1,5 @@
 ---
-title: SLA settings
+title: SLA settings for email tickets
 sidebar_label : SLA settings
 ---
 

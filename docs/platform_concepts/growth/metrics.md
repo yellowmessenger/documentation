@@ -27,23 +27,23 @@ To view user metrics, follow the given steps:
 - All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
 - If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
 
-<img src="https://i.imgur.com/FzSz7IB.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/FzSz7IB.png" alt="drawing" width="40%"/>
 
 
 
 **Export data**
 
 - To download any of these metrics, click **Export data**. 
-- Select the required metrics (to download all 9, click the link below) and click **Export**.
-
-![](https://i.imgur.com/t4zIzcA.png)
+- Select the required metrics and click **Export Reports**. You can also download all the reports as PDF. 
+- Click [here](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) for steps to schedule these reports. 
+    <img  src="https://i.imgur.com/ZtcYRCT.png"  width="70%"/>
 
 
 **Filter channels**
 
 - These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
 
-<img src="https://i.imgur.com/gjCGo8e.png" alt="drawing" width="80%"/>
+    <img src="https://i.imgur.com/gjCGo8e.png" alt="drawing" width="80%"/>
 
 
 :::
@@ -86,7 +86,6 @@ To download the chat transcripts (conversations between bot/agent and user):
 This widget shows the distribution between new users and old users visiting the platform. Any user who comes to the bot for the first time is categorized as a new user, and from their second visit onwards they are considered as a returning user.
 
 > This is calculated for all the channels.
-
 
 <img src="https://i.imgur.com/QldTqc7.png" alt="drawing" width="50%"/>
 
