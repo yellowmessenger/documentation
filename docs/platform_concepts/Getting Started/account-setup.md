@@ -24,12 +24,12 @@ Your account automatically moves to Freemium plan as soon as you [signup](#2-sig
 
 ### 1.1 Freemium limitations
 
-While Freemium provides businesses with a cost-effective way to access Yellow.ai's conversational AI solutions, it is important to note that this plan comes with certain limitations. Some of the advanced features and functionalities are only available to users who subscribe to Yellow.ai's paid plans. If you require access to any of these features, you will need to upgrade your plan accordingly.
+While Freemium provides businesses with a cost-effective way to access Yellow.ai's conversational AI solutions, it is important to note that this plan comes with certain limitations. Some of the advanced features and functionalities are only available to users who subscribe to Yellow.ai's paid plans. If you need access to any of these features, you will need to upgrade your plan accordingly.
 
 The following features are currently unavailable in the freemium plan. You need to upgrade your yellow.ai account in order to access them.
 
 
-| Module | Restrticted feature | Consumption limit |
+| Module | Restricted feature | Consumption limit |
 | -------- | -------- | -------- |
 | Studio     | Doc Cog     | 5000 chat sessions per user.  |
 |Inbox| Knowledgebase |500 email tickets and agent chats per month.  |
@@ -44,7 +44,7 @@ The following features are currently unavailable in the freemium plan. You need 
 2. Select your preferred mode of signup.
 3. Fill in the fields and click **Sign up**.
 
-<img src="https://i.imgur.com/5I4eh2i.jpg" alt="drawing" width="100%"/>
+ <img src="https://i.imgur.com/5I4eh2i.jpg" alt="drawing" width="100%"/>
 
 
 :::note 
@@ -54,15 +54,15 @@ The following features are currently unavailable in the freemium plan. You need 
 
 4. In the following screen, the bot will list the bots created by your team(if any). Click **Request access** to get access to one of those bots or click **Get started** to build a bot from scratch. .
 
-![](https://i.imgur.com/MeQczsX.png)
+ ![](https://i.imgur.com/MeQczsX.png)
 
 5. Click **Get started** under the preferred use-case.
 
-![](https://i.imgur.com/Q5ALzLs.png)
+ ![](https://i.imgur.com/Q5ALzLs.png)
 
 6. Choose the industry your business belongs to. To skip the following steps, click **Skip for now**.
 
-![](https://i.imgur.com/IHGleUT.png)
+ ![](https://i.imgur.com/IHGleUT.png)
 
 In the following page, you can choose to either create a bot from scratch, or choose one of the predefined bot templates.
 
@@ -71,22 +71,22 @@ In the following page, you can choose to either create a bot from scratch, or ch
 1. In the **I would like to start afresh** field, describe the use case for which the bot is built.
 2. Click the **+Start from scratch** button.
 
-<img src="https://i.imgur.com/IfmeeWu.png" alt="drawing" width="60%"/>
+ <img src="https://i.imgur.com/IfmeeWu.png" alt="drawing" width="60%"/>
 
 3. Select the bot type, the region of the bot and click **Create Project**.
 
-<img src="https://i.imgur.com/86kgJxw.png" alt="drawing" width="60%"/>
+ <img src="https://i.imgur.com/86kgJxw.png" alt="drawing" width="60%"/>
 
 ### 2.2 Use predefined bot templates
 
 1. Choose the preferred use cases.
 2. Click **Import+**.
 
-<img src="https://i.imgur.com/Xjk1Rqc.png" alt="drawing" width="60%"/>
+ <img src="https://i.imgur.com/Xjk1Rqc.png" alt="drawing" width="60%"/>
 
 3. Choose the region of the bot and click **Create Project**.
 
-<img src="https://i.imgur.com/4phs5gv.png" alt="drawing" width="60%"/>
+ <img src="https://i.imgur.com/4phs5gv.png" alt="drawing" width="60%"/>
 
 ## 3. Upgrade from Freemium
 
@@ -95,30 +95,30 @@ Yellow.ai provides you with the flexibility to upgrade your account based on the
 
 1. Click the **Upgrade** button.
 
-![](https://i.imgur.com/6J6fYcY.png)
+ ![](https://i.imgur.com/6J6fYcY.png)
 
 
-2. Click the **Schedule Now** button to have a 1:1 with our product consultants who will help you choose a plan that suits your business. 
+2. Click the **Schedule Now** button to have a 1:1 call with our product consultants who will help you choose a plan that suits your business. 
 
-![](https://i.imgur.com/Pmx0AwS.png)
+ ![](https://i.imgur.com/Pmx0AwS.png)
 
 
 3. Once you click the **Schedule Now** button, a **Calendly** pop-up is displayed, where you can choose your preferred **date**, **time** and the **time zone**.
 
-![](https://i.imgur.com/w7o0VlK.png)
+ ![](https://i.imgur.com/w7o0VlK.png)
 
 4. On the following screen, fill in all the fields and click **Schedule Event**. 
 
-![](https://i.imgur.com/UgoDQdM.png)
+ ![](https://i.imgur.com/UgoDQdM.png)
 
 
 ## 4. Pricing plans
 
-The paid subscription plans offer various integrations and channels, personalized reports and dashboards, and professional support. Furthermore, these plans can be adjusted to fit your specific requirements, offering unlimited functionalities.
+Our paid subscription plans offer a variety of benefits to enhance your experience, including access to a range of integrations and channels, personalized reports and dashboards, and professional support. With these features, you can enjoy a more comprehensive and personalized experience to help you achieve your goals.
 
 If you've signed up with a new domain on our platform, click the **Upgrade** button to see all the subscription plans.
 
-![](https://i.imgur.com/mNl6DvH.png)
+ ![](https://i.imgur.com/mNl6DvH.png)
 
 
 To select a plan either on a monthly or annual basis, toggle between the **Monthly/Yearly** options on the top. For a complete comparison of features included in all plans, click  **See full plan comparison** located at the bottom of the page. 
