@@ -24,12 +24,12 @@ Your account automatically moves to Freemium plan as soon as you [signup](#2-sig
 
 ### 1.1 Freemium limitations
 
-While Freemium provides businesses with a cost-effective way to access Yellow.ai's conversational AI solutions, it is important to note that this plan comes with certain limitations. Some of the advanced features and functionalities are only available to users who subscribe to Yellow.ai's paid plans. If you require access to any of these features, you will need to upgrade your plan accordingly.
+While Freemium provides businesses with a cost-effective way to access Yellow.ai's conversational AI solutions, it is important to note that this plan comes with certain limitations. Some of the advanced features and functionalities are only available to users who subscribe to Yellow.ai's paid plans. If you need access to any of these features, you will need to upgrade your plan accordingly.
 
 The following features are currently unavailable in the freemium plan. You need to upgrade your yellow.ai account in order to access them.
 
 
-| Module | Restrticted feature | Consumption limit |
+| Module | Restricted feature | Consumption limit |
 | -------- | -------- | -------- |
 | Studio     | Doc Cog     | 5000 chat sessions per user.  |
 |Inbox| Knowledgebase |500 email tickets and agent chats per month.  |
@@ -98,7 +98,7 @@ Yellow.ai provides you with the flexibility to upgrade your account based on the
  ![](https://i.imgur.com/6J6fYcY.png)
 
 
-2. Click the **Schedule Now** button to have a 1:1 with our product consultants who will help you choose a plan that suits your business. 
+2. Click the **Schedule Now** button to have a 1:1 call with our product consultants who will help you choose a plan that suits your business. 
 
  ![](https://i.imgur.com/Pmx0AwS.png)
 
@@ -114,7 +114,7 @@ Yellow.ai provides you with the flexibility to upgrade your account based on the
 
 ## 4. Pricing plans
 
-The paid subscription plans offer various integrations and channels, personalized reports and dashboards, and professional support. Furthermore, these plans can be adjusted to fit your specific requirements, offering unlimited functionalities.
+Our paid subscription plans offer a variety of benefits to enhance your experience, including access to a range of integrations and channels, personalized reports and dashboards, and professional support. With these features, you can enjoy a more comprehensive and personalized experience to help you achieve your goals.
 
 If you've signed up with a new domain on our platform, click the **Upgrade** button to see all the subscription plans.
 
