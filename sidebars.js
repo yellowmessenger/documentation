@@ -42,6 +42,7 @@ module.exports = {
           "cookbooks/studio/retriev-dbinfo",
           "cookbooks/studio/multilingual-bot",
           "cookbooks/studio/build-bot",
+          "cookbooks/studio/hide-input",
 
       ],
     }, 
