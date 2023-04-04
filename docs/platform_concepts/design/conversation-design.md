@@ -130,4 +130,4 @@ If you'd like a detailed guide on building a lead-generation bot, follow the bel
 
  ![](https://i.imgur.com/JJyYGIE.png)
 
-8. [Test your bot]([**https://**](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot)) , [preview](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#32-preview-a-bot) it and then [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) it.
+8. [Test your bot](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) , [preview](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#32-preview-a-bot) it and then [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) it.
