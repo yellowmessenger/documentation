@@ -39,7 +39,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **JSON support for syncDB node** <br/> | The Sync Database node now supports both CSV and JSON files, allowing you to synchronize bot tables with external databases automatically and regularly. You just need to create and add an API that pulls the bulk data, the node can then perform all necessary actions seamlessly.<br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) |
+| **JSON support for syncDB node** <br/> | The Sync Database node now supports both CSV and JSON files, allowing you to synchronise bot tables with external databases automatically and regularly. You just need to create and add an API that pulls the bulk data, the node can then perform all necessary actions seamlessly.<br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) |
     
 </details>
 
@@ -69,7 +69,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Seamlessly store call recordings in your preferred Cloud Storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | With this release, our system provides an automated and customizable way to transfer call recordings in .wav format to your preferred cloud storage (Amazon S3, Azure Blob, SFTP) just once or on a daily, weekly, monthly, or quarterly basis to suit your needs.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
+| **Seamlessly store call recordings in your preferred Cloud Storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | With this feature, our system provides an automated and customisable way to transfer call recordings in .wav format to your preferred cloud storage (Amazon S3, Azure Blob, SFTP) just once or on a daily, weekly, monthly, or quarterly basis to suit your needs.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
 |**Schedule Standard reports for automated delivery**| Now, you can now streamline your reporting process by scheduling to export raw reports available on the Overview, Metrics, and Funnels pages as email alerts. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) |
 
 <!--- Alerting dashboard - you can enable proactive alerting for whenever your bot is down or any API fails from the Alerts dashboard under Health module. This is the first release of the entire Health module -->
