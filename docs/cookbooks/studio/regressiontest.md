@@ -19,8 +19,8 @@ You will see the following options.
 
 Choose how you want to test your bot. 
 
-1. [Import Intents](#11-import-intents)
-2. [Upload Utterances](#12-upload-utterances)
+1. [Import Intents](#1-import-intents)
+2. [Upload Utterances](#2-upload-utterances)
  
  :::note
  To switch between **Upload Utterances** and **Import Intents**, click the arrow beside **Import Intents**.
@@ -29,7 +29,11 @@ Choose how you want to test your bot.
 
 ## 1. Import intents
 
-If you haven't uploaded utterances to your bot and would like to import them and test them, click **Import Intents**.
+If you haven't uploaded utterances/FAQs to your bot and would like to import them and test them, click **Import Intents**.
+
+### 1.1 Test intents
+
+To test intents,
 
 1. Click on any intent.
 2. In the **Utterances** field, type any utterance and click **Generate utterances**. A list of utterances would be generated.
@@ -64,7 +68,9 @@ intent - intents that will get triggered through those utterances.
 * **predictedConfidence** - The % at which the respective intent gets triggered.
 * **result** - result of the predictions, success- predicted successfully, fail - prediction failed.
 
-### 1.1 Test FAQs
+### 1.2 Test FAQs
+
+To test FAQs,
 
 1. Click on any FAQ.
 2. In the variations field, type any question/text and click **Generate variations**. A list of variations would be generated.

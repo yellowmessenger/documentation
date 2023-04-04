@@ -40,7 +40,6 @@ module.exports = {
           "cookbooks/studio/newcard",
           "cookbooks/studio/trigger-whatsappresponse",
           "cookbooks/studio/retriev-dbinfo",
-          "cookbooks/studio/text-format",
           "cookbooks/studio/multilingual-bot",
           "cookbooks/studio/build-bot",
 
@@ -704,6 +703,8 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/email-template",
                 "platform_concepts/engagement/outbound/templates/viber-template",
                 "platform_concepts/engagement/outbound/templates/mobilepush",
+                "platform_concepts/engagement/outbound/templates/gbm-template",
+
               ],
             },
            /* {
@@ -856,7 +857,7 @@ module.exports = {
           items: [
             {
               type: "category",
-              label: "WhatsApp channel",
+              label: "WhatsApp",
               link: {type: 'doc', id: 'platform_concepts/channelConfiguration/whatsapp-channel'},
               collapsed: true,
               items: [
