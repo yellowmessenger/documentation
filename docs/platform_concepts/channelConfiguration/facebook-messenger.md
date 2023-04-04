@@ -18,7 +18,7 @@ To create a Facebook messenger account, follow these steps:
 
 1.  On the switcher, click **Channels**.
 
-     <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="100%"/>
+   <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="100%"/>
    
 2. On the **Messaging** channels page, click **Facebook messenger**.   
 
@@ -35,40 +35,50 @@ You need admin access to create an account.
 
 4. Login to your Facebook account that is connected with your Facebook Business Page.
 
-   <img src="https://i.imgur.com/onQVVJz.png" alt="drawing" width="60%"/>
+   <img src="https://i.imgur.com/47XbbF2.png" alt="drawing" width="60%"/>
 
 5. After successfully logging in, click **continue** to navigate to your page.
 
-   ![](https://i.imgur.com/jYEkLpd.png)
+   <img src="https://i.imgur.com/e6z2lqv.png" alt="drawing" width="60%"/>
 
 
 6. Select your business page. If you have more than one business page connected to this FB account, select the one for which you want to setup a chatbot, and then click **Next**.
 
-   <img src="https://i.imgur.com/BEbPw1j.png" alt="drawing" width="60%"/>
+   <img src="https://i.imgur.com/o4bt7xF.png" alt="drawing" width="60%"/>
 
 7. Enable the required permissions and click **Done**.
 
    <img src="https://i.imgur.com/Gzo0WJ7.png" alt="drawing" width="60%"/>
 
-8. Check the name of the business account and click on **Connect**.
+8. Your Facebook messenger account has been successfully connected to our platform. Enable the toggle button to connect your bot.
 
-    <img src="https://i.imgur.com/NhfPBEl.png" alt="drawing" width="60%"/>
-
-9. Your Facebook messenger account has been successfully connected to our platform.
+   ![](https://i.imgur.com/Zgp95PF.png)
 
 ## 2. Test FBM chatbot
 
 After creating your account successfully, you can start configuring the chatbot with any of the existing flows based on your business requirements.
 
+##### Prerequisite 
+
+* `Get Started` in Facebook messengeer only works when get_started is added as the start trigger.
+
+
+To test FBM chatbot, follow these steps:
+
+1. Open your Facebook account and switch to your business page.
+
+   ![](https://i.imgur.com/2Fzfba4.png)
+   
+2. Click **Message** to test your bot.
+
+   ![](https://i.imgur.com/OEMAEvD.png)
+ 
+##### Test FBM chatbot by adding FAQs
+
 For example, let us try to add a few FAQs and see how it works in the FBM chatbot. For more information on how to add FAQs, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-1-add-faqs).
 
 After adding the FAQs and training the chatbot, you can test your FBM chatbot in your brand page's messenger channel based on the FAQs that you have added.
 
-<img src="https://i.imgur.com/egpbjjI.png" alt="drawing" width="40%"/>
-
-
-:::info
-`Get Started` in Facebook messengeer only works when get_started is added as the start trigger.
-:::
+   <img src="https://i.imgur.com/egpbjjI.png" alt="drawing" width="40%"/>
 
 Similarly, you can test your FBM chatbot by adding different options such as product showcase, order status, and so on.

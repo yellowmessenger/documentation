@@ -703,6 +703,8 @@ module.exports = {
                 "platform_concepts/engagement/outbound/templates/email-template",
                 "platform_concepts/engagement/outbound/templates/viber-template",
                 "platform_concepts/engagement/outbound/templates/mobilepush",
+                "platform_concepts/engagement/outbound/templates/gbm-template",
+
               ],
             },
            /* {

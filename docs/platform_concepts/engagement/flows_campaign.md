@@ -311,6 +311,8 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
    <center><img src="https://i.imgur.com/cqSqHJ9.png" width="50%"/></center>
 
+   To know how to create a template, see [GBM template](/docs/platform_concepts/engagement/outbound/templates/gbm-template).
+
 #### 6. Voice call channel configuration
 
 1.  Check **Enable answering machine detection (AMD)** to automatically identify answering machines.
