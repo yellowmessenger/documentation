@@ -23,7 +23,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Launched freemium** <br/> | Users will have free access to the platform for indefinite number of days with  limited features.  |
+| **Introducing Freemium Model for maximum impact** <br/> | Discover the potential of our platform with our freemium plan, which offers limited features for free. Upgrade to our premium version for full access to boost your productivity.  |
     
 </details>
 
@@ -39,7 +39,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **JSON support for syncDB node** <br/> | Sync database node is used for syncing bot tables to external databases in regular intervals. This is now supported for CSV and JSON files. You can create and add an API that pulls the bulk data and the node performs the necessary actions.  <br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) |
+| **JSON support for syncDB node** <br/> | The Sync Database node now supports both CSV and JSON files, allowing you to synchronize bot tables with external databases automatically and regularly. You just need to create and add an API that pulls the bulk data, the node can then perform all necessary actions seamlessly.<br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) |
     
 </details>
 
@@ -53,7 +53,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **GPT-3 third party integration** <br/> | Customers can bring their free trial /paid openAI account (like any other 3rd party tool) and connect with yellow.ai. The node can take user text (user chat query) as the input and return the best possible response based on the model.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/gpt3) |
+| **Smart query handling with OpenAI GPT-3 integrationn** <br/> | You can connect your free trial or paid OpenAI account just like any other third-party tool. Once connected, the node can receive user chat queries as input and use the OpenAI model to generate the best possible responses.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/gpt3) |
 
     
 </details>
@@ -69,8 +69,8 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Transfer call recordings to customer cloud storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | Call recordings (.wav files) can be moved from our systems to customer’s cloud storage (Amazon S3/ Azure Blob/ SFTP) in an automated and recurring (Daily, Weekly, Monthly. Quarterly, One time) manner.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
-|**Standard report scheduling**| You can schedule raw reports available on the Overview, Metrics, and Funnels page for export as email alerts. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) |
+| **Seamlessly store call recordings in your preferred Cloud Storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | With this release, our system provides an automated and customizable way to transfer call recordings in .wav format to your preferred cloud storage (Amazon S3, Azure Blob, SFTP) just once or on a daily, weekly, monthly, or quarterly basis to suit your needs.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
+|**Schedule Standard reports for automated delivery**| Now, you can now streamline your reporting process by scheduling to export raw reports available on the Overview, Metrics, and Funnels pages as email alerts. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) |
 
 <!--- Alerting dashboard - you can enable proactive alerting for whenever your bot is down or any API fails from the Alerts dashboard under Health module. This is the first release of the entire Health module -->
 
@@ -86,8 +86,8 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Web widgets** <br/> | - Menu button now includes TTS, and Bot sounds settings. <br/> - Notification badge for unread agent messages. <br/> - Chat separators added. |
-| **Chatbot SDK** <br/> | - React-native SDK: Close bot issue fixed. <br/> - Hybrid SDK: Documentation update.|
+| **Web widget enhancements** <br/> | - Introduced Text-to-Speech in the Menu button, <br/>Added Bot notification sound settings. <br/> - Added Notification Badge for unread agent messages. <br/> - Added Chat separators. |
+| **Chatbot SDK enhancements** <br/> | - React-native SDK: Close bot issue fixed. <br/> - Hybrid SDK: Documentation update.|
 |**Inbox SDK and Partner app** |- Unsupported Widget addition. <br/> - SSO Redirection URL changes for Apple Login. <br/> - Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.|
 
 </details>
