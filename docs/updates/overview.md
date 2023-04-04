@@ -23,11 +23,9 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Launched freemium** <br/> | Users will have free access to the platform for indefinite number of days with  limited features.  |
+| **Launched freemium** <br/> | Users will have free access to the platform for indefinite number of days with  limited features. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup)  |
     
 </details>
-
-<!--<br/><br/> [**Learn more**](.) -->
 
 <details>
 <summary>
