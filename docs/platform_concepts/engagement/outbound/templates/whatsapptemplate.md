@@ -164,8 +164,6 @@ Use the Delete icon to remove any button.
 :::
 
 
- 
-
 ## 3. Add variables in WhatsApp template
 Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
 
