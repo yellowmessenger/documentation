@@ -67,7 +67,7 @@ app.executeIntegrationAction({
 ```
 
 :::note
-Yellow.ai uses oAuth 2.0 to connect with a client's Salesforce account and refrains from retaining the client's authentication details. During the integration process, Yellow.ai redirects the user to either the [Salesforce login page](login.salesforce.com), or to the previously used subdomain within the same browser. If the integration is required in a different browser, the user must delete their cookies and then login via the Yellow.ai platform.
+Yellow.ai uses oAuth 2.0 to connect with a client's Salesforce account and refrains from retaining the client's authentication details. During the integration process, Yellow.ai redirects the user to either the [Salesforce login page](https://www.salesforce.com/in/?ir=1), or to the previously used subdomain within the same browser. If the integration is required in a different browser, the user must delete their cookies and then login via the Yellow.ai platform.
 :::
 
 ## 3. Use-case
