@@ -73,19 +73,9 @@ In the Buttons section (Step 8),  choose **Type of button** as *Call to action*.
 
 1. In **Type of action**, choose *Open URL*.
 2. In the **Button text**, enter the label name (character limit 20) for the button.
-3. In the drop-down box, choose the type of URL to be embedded for the button - [Static](#static-url) or [Dynamic](#dynamic-url).
+4. In **URL**, enter the URL that you want recipients to redirect upon clicking the button.
 
-   ![](https://i.imgur.com/jaUJZvq.png)
-
-   * A **Static URL** remains constant, while a **Dynamic URL** include parameters that can be personalized when sending notifications through the Notification API/Outbound campaign. <br/>Example: `https://docs.yellow.ai/{{1}}`
-   * You can replace the path variable with a specific value before sending the notification to the targeted users.<br/>Example: `https://docs.yellow.ai/docs`
-   
-:::note
-You cannot change the parent domain dynamically.
-:::
-
-5. In **URL**, enter the URL that you want recipients to redirect upon clicking the button.
-
+   ![](https://i.imgur.com/ko9ypU3.png)
 
 
 ### 2. Add CTA to Make a phone call
