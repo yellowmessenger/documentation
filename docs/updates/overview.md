@@ -86,8 +86,8 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Web widget enhancements** <br/> | <ul>Option to enable Bot notification sound to notify users when there is a new message. </ul><br/> - Notification Badges to indicate unread messages. <br/> - Real-time status updates in the chatbot related to agent/user connection, tickets and more. |
-| **Chatbot SDK enhancements** <br/> | - React-native SDK: Close bot issue fixed. <br/> - Hybrid SDK: Documentation update.|
-|**Inbox SDK and Partner app** |- Unsupported Widget addition. <br/> - SSO Redirection URL changes for Apple Login. <br/> - Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.|
+| **Web widget enhancements** <br/> | <ul><li>Text-to-Speech support in chat widget.</li><li>Option to enable Bot notification sound to intimate users when there is a new message.</li> <li> Notification Badges to indicate unread messages. </li> <li>Real-time status updates in the chatbot related to agent/user connection, tickets and more.</li></ul> |
+| **Chatbot SDK enhancements** <br/> | * Hybrid SDK: Documentation update.|
+|**Inbox SDK and Partner app** | <ul><li>Unsupported Widget addition. </li> <li>SSO Redirection URL changes for Apple Login. </li> <li>Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.</li></ul>|
 
 </details>
