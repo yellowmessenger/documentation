@@ -4,14 +4,7 @@ sidebar_label: Latest product updates (Mar 2023)
 featured: true
 ---
 
-  
-  
-  
-  
-
 ![](https://i.imgur.com/Wj06Bz6.png)
-
-
 
 <details>
 <summary>
@@ -53,7 +46,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Smart query handling with OpenAI GPT-3 integrationn** <br/> | You can connect your free trial or paid OpenAI account just like any other third-party tool. Once connected, the node can receive user chat queries as input and use the OpenAI model to generate the best possible responses.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/gpt3) |
+| **Smart query handling with OpenAI GPT-3 integration** <br/> | You can connect your free trial or paid OpenAI account just like any other third-party tool. Once connected, the node can receive user chat queries as input and use the OpenAI model to generate the best possible responses.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/gpt3) |
 
     
 </details>
@@ -72,7 +65,7 @@ featured: true
 | **Seamlessly store call recordings in your preferred Cloud Storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | With this feature, our system provides an automated and customisable way to transfer call recordings in .wav format to your preferred cloud storage (Amazon S3, Azure Blob, SFTP) just once or on a daily, weekly, monthly, or quarterly basis to suit your needs.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
 |**Schedule Standard reports for automated delivery**| Now, you can now streamline your reporting process by scheduling to export raw reports available on the Overview, Metrics, and Funnels pages as email alerts. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) |
 
-<!--- Alerting dashboard - you can enable proactive alerting for whenever your bot is down or any API fails from the Alerts dashboard under Health module. This is the first release of the entire Health module -->
+<!--- Alerting dashboard - you can enable proactive alerting for whenever your bot is down or any API fails from the Alerts dashboard under the Health module. This is the first release of the entire Health module -->
 
 </details>
 
@@ -88,6 +81,6 @@ featured: true
 | -------- | -------- |
 | **Web widget enhancements** <br/> | - Introduced Text-to-Speech in the Menu button, <br/>Added Bot notification sound settings. <br/> - Added Notification Badge for unread agent messages. <br/> - Added Chat separators. |
 | **Chatbot SDK enhancements** <br/> | - React-native SDK: Close bot issue fixed. <br/> - Hybrid SDK: Documentation update.|
-|**Inbox SDK and Partner app** |- Unsupported Widget addition. <br/> - SSO Redirection URL changes for Apple Login. <br/> - Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.|
+|**Inbox SDK and Partner app** |- Unsupported Widget addition. <br/> - SSO Redirection URL changes for Apple Login. <br/> - Overview section revamped to provide updated metrics, better transition and filters, a tooltip in analytics, and show online visitor messages and live queue.|
 
 </details>
