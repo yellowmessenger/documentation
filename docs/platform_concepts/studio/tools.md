@@ -445,7 +445,11 @@ Our Machine Learning model matches the user utterances (input sentences) to an i
   
 3. **Secondary model confidence**: It is a global contextual model value, if the predected value is below the entered value, intent will not be triggered.
 
-  
+
+:::note
+The confidence of the utterance should be greater than the confidence of the context so that the system will not classify intents/entities/faqs as global module (context).
+:::
+ 
 
 ### 2.3.2 Document search settings
 

@@ -109,6 +109,18 @@ You can further customize buttons by adding:
 
 ![](https://i.imgur.com/mlA3ZYS.png)
 
+#### Whatsapp Quick replies
+
+WA Quick replies node can switch between buttons and numbered lists. WhatsApp buttons can have up to maximum of 3 buttons and 20 characters/button. If more than 3 buttons are added, it defaults to numbered list.
+
+![](https://i.imgur.com/Kc9r8xe.png)
+
+> Real time example: 
+> <img src="https://i.imgur.com/7pp1yaf.jpg" alt="drawing" width="60%"/>
+
+----
+
+
 
 #### Dynamic Quick Replies 
 
