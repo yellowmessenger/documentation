@@ -239,7 +239,7 @@ The following are the prerequisites to use WhatsApp Product Node -
 
 ### 2.1 Create product catalog on Facebook
 
-
+The Facebook Commerce Manager (FCM) helps in listing the products to be used for SPM (Single Product Message) or MPM (Multi Product Message). It is not possible to send any product on WhatsApp without listing the products on the FB's Commerce Manager.
 
 :::note
 To use catalog, it's mandatory for the Businesses to have a Business Manager Account with Catalog.

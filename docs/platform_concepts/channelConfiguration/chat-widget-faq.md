@@ -344,16 +344,6 @@ window.ymConfig = {
 </details>
 
 <details>
- <summary>Is it possible to change the time format to 24 hours in a bot?</summary>
- <div>
-  <br/>
-  <div>No, currently the platform supports only a 12-hour time format.
-
-</div>
-   </div>
-</details>
-
-<details>
  <summary>Is it possible to customise the URL of the PWA bot?</summary>
  <div>
   <br/>
@@ -362,3 +352,15 @@ window.ymConfig = {
 </div>
    </div>
 </details>
+
+<details>
+ <summary>Is it possible to configure the position of the bot to be on right when the user selects Arabic and to the left when the user selects English?</summary>
+ <div>
+  <br/>
+  <div>Yes, in ymConfig, you must set "alignLeft:true".
+
+</div>
+   </div>
+</details>
+
+
