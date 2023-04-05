@@ -18,10 +18,6 @@ To connect your yellow.ai account with **Freshchat** follow these steps.
 
 ![](https://i.imgur.com/XWfj833.png)
 
-**To retrieve the [Channel ID](https://app.swaggerhub.com/apis-docs/Freshchat/freshchat-api/2.0.0#/Channel%20API/getAllChannels)**
-
-1. This API needs to be called from **Postman**, which in turn will fetch the list of channel IDs associated with that **Freshchat** account and post confirmation from the client. (The right channel ID value needs to be used.)
-
 **To retrieve API token**
 
 1. Login to your **Freshchat** portal as an administrator.
@@ -55,7 +51,7 @@ The following are the domain URLs of data centres on different regions:
 2. Search for **Freshchat** or choose the category named **Live chat** from the left navigation bar and then click **Freshchat**.
 3. Fill in the fields and click **Connect**.
 
-![](https://i.imgur.com/tDpbP7B.png)
+![](https://i.imgur.com/OarRGkq.png)
 
 
 ### 1.3 Configure webhook URL in Freshchat dashboard
@@ -83,20 +79,22 @@ This integration lets you connect with live agents on the **Freshchat** platform
 
 The following table contains the details of all the fields in the **Raise ticket** node.
 
-![](https://i.imgur.com/ZekiXy8.png)
+<img src="https://i.imgur.com/krPvBQm.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/Tx0duiY.png" alt="drawing" width="60%"/>
 
 
+| Field name                | Sample value            | Data type | Description                                                                                      |
+|---------------------------|-------------------------|-----------|--------------------------------------------------------------------------------------------------|
+| Message after ticket assignment | Requesting live agent connection | String    | The message that will be displayed to the user after a ticket is assigned to an agent. |
+| Name                      | Rajesh                  | String    | Name of the end user.                                                                            |
+| Mobile                    | 9876543210              | String    | Mobile number of the end user.                                                                   |
+| Email                     | test@gmail.com          | String    | Email address of the end user.                                                                   |
+| Query                     | I have a concern regarding my flight ticket | String    | The subject/topic/reason why the ticket was created.                                     |
+| Group name                | Sales                   | String    | Freshchat group to which the ticket needs to be assigned.                                       |
+| Channel name              | Chat with US            | String    | Freshchat topic to which the ticket needs to be assigned.                                       |
+| User ID                   | efgeye-fefefef-14343    | String    | Freshchat userId of the user, this is passed if the previous ticket needs to be re-opened.      |
+| Unique Identifier         | ggyugu-2343h-34343      | String    | A unique identifier that will reflect as referenceId in the freshchat agent portal if passed        |
 
-| Field name | Sample value | Data type |Description|
-| -------- | -------- | -------- |--------|
-| Message after ticket assignment     | Requesting live agent connection     | String     |The message that will be displayed to the end user after a ticket is assigned to an agent.|
-|Name|Rajesh|String|Name of the end user.|
-|Mobile|9876543210|String|Mobile number of the end user.|
-|Email|test@gmail.com|String|Email address of the end user.|
-|Query|I have a concern regarding my flight ticket|String|The subject/topic/reason why the ticket was created.|
-|Group ID|test-sales|String|Freshchat groupId to which the ticket needs to be assigned.|
-|User ID|efgeye-fefefef-14343|String|Freshchat userId of the user. This is passed if the previous ticket needs to be re-opened for the same user.|
-|Unique Identifier|ggyugu-2343h-34343|String|A unique identifier, if passed will reflect as referenceId in the freshchat agent portal.|
 
 **Sample success response:**
 

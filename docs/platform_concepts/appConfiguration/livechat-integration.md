@@ -209,40 +209,46 @@ apiresponse represents the raw response from the custom live agent create ticket
 
 ### 1.4 Freshchat Live Agent
 
-  To connect to a Freshchat Live Agent, please use this code-snippet
+To connect to a Freshchat Live Agent, please use this code-snippet:
 
 ```
-    app.raiseTicketForThirdPartyLiveChat({
-         issue: "Test Issue",
-        contact: {
-             phone: "9876543210",
-             name: "Raj",
-             email: "Test@email.com"
-             },
-             assignedGroupId: "test-group",
-             freshChatUserId: "3554-cbcbc-dchchc",
-             freshChatUniqueIdentifier: "testInfo"
-    }).then((ticketData) => {
-       app.log(ticketData, "ticketData");
-       // Display appropriate message based on the ticketData
-    }).catch((error) => {
-       app.log(error, 'error');
-       //Error handler
-    });
-```
+   app.raiseTicketForThirdPartyLiveChat({
+        issue: "Test Issue",
+       contact: {
+            phone: "9876543210",
+            name: "Raj",
+            email: "Test@email.com"
+            },
+            assignedGroupId: "test-group",
+            freshChatUserId: "3554-cbcbc-dchchc",
+            freshChatUniqueIdentifier: "testInfo",
+            properties: [],
+            freshChatChannelId: "abce-ddede-eded-3454"
+   }).then((ticketData) => {
+      app.log(ticketData, "ticketData");
+      // Display appropriate message based on the ticketData
+   }).catch((error) => {
+      app.log(error, 'error');
+      //Error handler
+   });
 
+```
 This table consists of sample values, data types and descriptions for all the fields in the that need to be filled.
 
-| Field name| Sample value |Data type |Description|
-| -------- | -------- | -------- |-------|
-| issue    | Test description   | String    |The subject/topic/reason why the ticket is created.
-|phone|9876543210| String |Mobile number of the end user.|
-|email|test@gmail.com | String |Email address of the end user.|
-name| Rajesh | String| Name of the end user.|
-|assignedGroupId|Sales|String | Category under which the ticket will be created.|
-|priority|3554-cbcbc-dchchc|String | Freshchat groupId to which the ticket needs to be assigned. The default value that needs to be passed for this is “”.|
-|freshChatUserId|test-group| String| Freshchat userId of the user. This is passed if the same ticket needs to be re-opened for the same user.The default value that needs to be passed for this is “”.|
-|freshChatUniqueIdentifier| testInfo|Object|A unique identifier that if passed will reflect as referenceId in the freshchat agent portal. The default value that needs to be passed for this is “”.|
+| Field name                 | Sample value           | Data type | Description                                                                                                                                                                   |
+| --------------------------| ----------------------| ---------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| issue                      | Test description       | String   | The subject/topic/reason why the ticket is created.                                                                                                                         |
+| phone                      | 9876543210             | String   | Mobile number of the user.                                                                                                                                               |
+| email                      | test@gmail.com         | String   | Email address of the user.                                                                                                                                               |
+| name                       | Rajesh                 | String   | Name of the user.                                                                                                                                                        |
+| assignedGroupId            | Sales                  | String   | Category under which the ticket will be created.                                                                                                                             |
+| priority                   | 3554-cbcbc-dchchc      | String   | Freshchat groupId to which the ticket should be assigned. The default value “” should be passed for this.                                                          |
+| freshChatUserId            | test-group             | String   | Freshchat userId of the user, this is passed if the same ticket needs to be re-opened for the same user. The default value “” should be passed for this.                              |
+| freshChatUniqueIdentifier  | testInfo               | Object   | A unique identifier that will reflect as referenceId in the freshchat agent portal if passed. The default value “” should be passed for this.                       |
+| properties                 | [{key:”Hash”, value: “Yes”} ] | Array | Custom properties that can be passed on while creating a ticket.                                                                                                               |
+| freshChatChannelId         | abce-ddede-eded-3454   | String   | This[ API](https://app.swaggerhub.com/apis-docs/Freshchat/freshchat-api/2.0.0#/Channel%20API/getAllChannels) needs to be called from Postman, which in turn will fetch the list of channel IDs associated with that Freshchat account and confirms the client's authorization to access that account. |
+
+
 
 
 **Sample response in case of success**
