@@ -7,7 +7,7 @@ Yellow.ai offers a wide range of options to customize features for its web widg
 
 If you have integrated Yellow AI’s chat widget on Android/iOS app, see [Android chatbot SDK](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android) and [iOS chatbot SDK](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios).
 
-This section guides you with different ways to customize your chat widget’s functionality.
+This section guides you with different ways to customize your chat widget’s visibility and functionality.
 
 In this article, you will learn:
 

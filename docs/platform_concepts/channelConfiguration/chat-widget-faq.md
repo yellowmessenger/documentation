@@ -344,16 +344,6 @@ window.ymConfig = {
 </details>
 
 <details>
- <summary>Is it possible to change the time format to 24 hours in a bot?</summary>
- <div>
-  <br/>
-  <div>No, currently the platform supports only a 12-hour time format.
-
-</div>
-   </div>
-</details>
-
-<details>
  <summary>Is it possible to customise the URL of the PWA bot?</summary>
  <div>
   <br/>
