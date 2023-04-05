@@ -18,7 +18,7 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
 
 2. Search for **Salesforce Live Chat** or choose the category named **Live chat** from the left navigation bar and then click on **Salesforce Live Chat**.
 
-![](https://i.imgur.com/r9mGCRt.png)
+![](https://i.imgur.com/gEcRpLU.png)
 
 
 3. Fill in the required fields. 
@@ -30,17 +30,11 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
 * **Agent Device** - The browser’s userAgent value. (To be provided by salesforce spoc of the client).
 * **Language** - Language preferred by the user to chat with the live agent.
 * **Agent Screen Resolution** - The screen resolution of the device used by the agent.
-* **Idle Time Warning Message** - This message will be displayed to the end user whenever the customer inactivity event is triggered by salesforce during the live chat session.
-* **Idle Time Timeout Message** - This message will be displayed when the live chat ends due to inactivity on the user's side for a particular duration of time.
-* **Connection Failure Message** - This message will be displayed to the user when there is a failure in connecting with the live agent.
  * **Agent Timeout** - The value of this field determines the time till which the chat will remain active in case of inactivity at the agent’s side.
-* **Agent Disconnect Message** - This message will be displayed to the user when their agent disconnects the chat. (This message will be displayed only if there are other active agents with the capacity to take new chats, otherwise, the message configured for the field **Connection Failure** will be displayed).
-* **Agent Timeout Message** - This message will be displayed to the user when the **Agent Timeout** value has surpassed.
-
 
 4. Once you're done, click **Connect**.
 
- ## 2. Use-case
+## 2. Use-case
 
 This integration lets you connect with live agents on the **Salesforce** platform from your yellow.ai account. 
 
@@ -72,7 +66,10 @@ Salesforce Live Chat Custom Fields|<pre lang="json">[<br/>    {<br/>        "lab
 
 **Advanced options**
 
-<img src="https://i.imgur.com/OT7Nfp3.png" alt="drawing" width="50%"/>
+<img src="https://i.imgur.com/OT7Nfp3.png" alt="drawing" width="55%"/>
+<img src="https://i.imgur.com/E6H9TJw.png" alt="drawing" width="50%"/>
+
+
 
 The following table contains the details of each field in the **Advanced options** section.
 
