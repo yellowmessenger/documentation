@@ -97,6 +97,12 @@ This component allows you to add images, videos, and files to the bot conversati
 |---------|-------|
 | This component allows you to refresh a chatbot or  to trigger a conversational flow. | <img src="https://i.imgur.com/Tz2XO46.png" alt="drawing" width="60%"/>	
 
+### 1.10 Callout banner
+
+|     |  |
+|---------|-------|
+| A callout banner allows you to add a banner to the chatbot's conversation. It can be used to alert the users about new products, services, special offers, and promotions. <br/> When multiple banners are configured for a chatbot, the banners are automatically scrolled every five seconds. On enabling this option, the close button gets replaced by the minimize button. <br/> **Limitations:**<br/>• Each callout banner supports two buttons with up to 24 characters each.<br/>• The callout banner supports 200 characters in the title. <br/> **Note:** You cannot add images or videos to the callout banner.| <img src="https://i.imgur.com/KT7cd0U.png" alt="drawing" width="90%"/>	
+
 ## 2. Non-interactive messages
 	
 This type of message does not require a response from your bot user by clicking the buttons, menus, or custom actions. A Chabot uses this type of message to generate automated response with all the details related to your queries.  	
