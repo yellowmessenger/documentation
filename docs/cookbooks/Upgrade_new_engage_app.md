@@ -15,6 +15,7 @@ App bots are now provided with an option to upgrade the Engage module by migrati
 
 ### Inbound campaigns 
 #### *[Know more about Inbound Campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/inbound/gettingStarted/launchingYourFirstInboundCampaign)*
+
 ![](https://i.imgur.com/MexHCVf.png)
 
 
