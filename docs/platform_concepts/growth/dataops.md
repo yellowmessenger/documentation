@@ -1,6 +1,6 @@
 ---
 title: Data operations (Data export)
-sidebar_label : Data Ops
+sidebar_label : Data operations
 ---
 
 Our platform collects and stores certain system data points to give the right experience to the end-users, customers, and their dynamic AI agents. 
