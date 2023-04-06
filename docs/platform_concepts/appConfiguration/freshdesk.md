@@ -886,6 +886,28 @@ This action helps in creating a public or private note in the ticket.
 
 **Sample Response:** 5
 
+## 3. Common errors and solutions
+
+**Error:** Action node failed.
+
+```
+"field": "custom_fields.cf_agent",
+            "message": "It should be one of these values: 'Sarath,Bharath,Ajay,Prem,Senthil,Archana,Sneha Kandasamy (Freshworks),Prashanth Thiagarajan (Freshworks),Aarabhi,Srikanth,Bibin,Ibraz,Animesh,Pawan,Arivazhahan,Kirti,Abrar,Bhavana,Chitrita,Dipesh,Ashok,Nishanth,Athulya,Chandni,Waseem,Akarsh V,Mayank'",
+            "code": "missing_field"
+```
+```
+{
+            "field": "custom_fields.cf_category761533",
+            "message": "It should be one of these values: 'Transaction monitoring,Credit limit IncreaseV2,Feature Ask,App Breakages,KYC Verification Dont Use,Missing Label V2,Remittance India to US V2,Remittance U.S to India V2,ACH Transfer V2,WIRE Transfer V2,Credit card Bill Payment V2,Azpire V2,Azpire (linking to fintech Apps) V2,Azpire - Transaction Failures V2,Azpire - Transfers V2,Azpire - Bill Payments V2,Rewards 2.0 V2,Activation Journey V2,Credit card Subscription V2,SIM card request V2,Statements V2,KYC documents - Credit card / Checking account V2,Disputes V2,Card unblock V2,Card Ops V2,Account Closure V2,Bureau Reporting - Unsecured V2,Card logistics V2,Credit score tracker V2,Boost Account V2,Student Loan V2,Login/VPN issues V2,Reconciliation,ATM,CC Transaction Failures,Credit card / Debit card ( linking to fintech Apps),Junk/Influencer SPAM,Callback request'",
+            "code": "missing_field"
+        },
+```
+
+**Problem:** Ticket creation using Freshdesk keeps failing because custom fields that were configured in your Freshdesk account weren't configured/passed in the Freshdesk nodes.
+
+**Solution:** Pass the custom field names in the parameter - {”key1”:”value1”,..}. The names of the custom fields are derived from the labels given to them during their creation. All the custom fields will have 'cf_' prepended to its name, eg., if you create a custom field with the label 'test', then the name of the custom_field will be 'cf_test'.
+
+
 
 
 
