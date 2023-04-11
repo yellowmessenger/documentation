@@ -1,10 +1,10 @@
 ---
-title: Getting started with Two-torials
+title: Getting started with Yellow.ai
 sidebar_label: Getting Started
 featured: true
 ---
 
-## Become a coversational expert with YM two minutes at a time. 
+## Become a coversational expert with YM two minutes at a time
 
 This section is for all the learners who LOVE to LEARN on the GO 🏃🏻‍♂️ Time is precious and not everyone likes to take the long trail of step by step learning but get quick answers to tricky questions. This section is for the same kind of learners.
 
@@ -13,18 +13,18 @@ For more information about yellow.ai and learning, please visit this link - [Asc
 :::
 
 
-### How to Sign up and Create a bot? 
+### How to Sign up to Yellow.ai and create your first bot? 
 This video will take you through the steps of signing up on https://cloud.yellow.ai/
 
 :::info
 Don't forget to verify your email in your inbox after sign up.
 :::
 
-<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/LaeNb_IV-UE" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
+<p align="center"><iframe width="560" height="315" src="https://youtu.be/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
 
-### Platform Overview
+### Platform overview
 
-<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/gyB697FRLDQ" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
+<p align="center"><iframe width="560" height="315" src="https://youtu.be/QYRdym4wZf8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
 
 ### yellow.ai Platform UI Interface
 
