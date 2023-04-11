@@ -101,7 +101,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Email search v2** | Searching email tickets is a lot easier with our enhanced search feature. You can now search for email tickets using email body, subject line, ticket ID, contact email ID and custom fields.|
+| **Email search v2** | Searching email tickets is a lot easier with our enhanced search feature. You can now search for email tickets using email body, subject line, ticket ID, contact email ID and custom fields. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/searchandfilter)|
 | **Ticketing inactivity & autoclose**| Enable this setting to automatically identify tickets where the customers are inactive and close them in order to save agents time and avoid manual interference. Additionally for a better experience, you can also send reminders to notify customers about the open ticket. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/emailinactivity)|
 | **KB sitemap** |  All your knowledge base articles are now crawled & indexed on search engines through sitemaps.|
 
