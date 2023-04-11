@@ -43,6 +43,10 @@ module.exports = {
           "cookbooks/studio/multilingual-bot",
           "cookbooks/studio/build-bot",
           "cookbooks/studio/hide-input",
+          "cookbooks/studio/dynamic-quickreplies",
+          "cookbooks/studio/images-languages",
+          "cookbooks/studio/ticketclose-message",
+
 
       ],
     }, 
