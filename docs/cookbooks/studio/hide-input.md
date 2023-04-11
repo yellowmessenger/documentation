@@ -1,6 +1,6 @@
 ---
 title : How to hide the input field in quick replies node?
-sidebar_label : Hide input field in Quick replies
+sidebar_label : Hide input field in quick replies
 ---
 
 

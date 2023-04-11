@@ -547,9 +547,58 @@ These nodes are only available when a flow is created as a [workflow](https://do
 
 This node enables bulk operations like "Import, Insert, Update" on tables (of bigger databases) from external data sources through APIs instead of updating them manually. You can also schedule database updates.
 
-#### Usage
+#### Sync database node via JSON
 
-To setup a sync database node, follow the steps below: 
+1. [Import the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#2-import-a-new-api-curljson).
+2. Write a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#1) to parse the API response.
+3. Map the API response to the table columns. The column names in the table should be exactly the same as the attribute names in the JSON response.
+4. Access the JSON attributes from the API response and store the attributes in the record variable. You can access the individual records through "ymLibs.args.record" and this can be modified to create dictionary as a response. 
+
+Example:
+```
+return new Promise(resolve => {
+    // Initiating a variable "emp" using 
+    // a unit record from API
+    let emp = ymLib.args.record;
+        // returning a dictionary for the bot tablr
+        // Keys should match column names
+        resolve({
+            e_id: emp.userId,
+            department: emp.department
+        });
+    }); 
+    
+```
+Then, go to the **Sync database node** and add the following,
+
+ ![](https://i.imgur.com/2uAOiDT.png)
+
+1. Select the API you want to sync with the bot tables. 
+2. Select the API Response Type as JSON.
+3. Select the path where the relevant data lies in the JSON response. For e.g., the JSON path  for the following code would be the  is "data.results.*
+
+```
+{
+      data: {
+                results: {
+                                 record1 :{},
+                                 record2: {},
+                                 ........
+                 } 
+       }
+}
+```
+
+4. Pass the record that comes from the selected path in **Parse API response** so that the response comes in a dictionary format.
+5. Select the custom variable and select the bot table where they want to store the API response.
+6. Select the operation type. There are three types of operations that users can perform: Insert, Update, and Import.
+
+* **Insert:** Insert the data as new rows to the existing table.
+* **Update:** Update the existing data with the new data to update the existing rows. Users need to select the primary key. If there is a primary key match, the row will be updated else a new row will be added.
+* **Import:** Drop the table and replace it with the data that comes from the API.
+
+
+#### Sync database node via CSV 
 
 1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#sch-1) (if there is a requirement to schedule the database updates).
 
