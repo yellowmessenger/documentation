@@ -130,7 +130,7 @@ The number you give should not be connected to any WhatsApp account. If connecte
 
 5. Hurray! You have now created the FBM.
 
-### 1.3 Verfiy Business account with Facebook
+### 1.3 Verify Business account with Facebook
 
 1. In the FBM, go to **More Tools > Business Settings > Select your Business**.
 
