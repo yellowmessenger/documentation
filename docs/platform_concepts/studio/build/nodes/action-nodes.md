@@ -547,31 +547,31 @@ These nodes are only available when a flow is created as a [workflow](https://do
 
 This node enables bulk operations like "Import, Insert, Update" on tables (of bigger databases) from external data sources through APIs instead of updating them manually. You can also schedule database updates.
 
+
+1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#sch-1) (if there is a requirement to schedule the database updates).
+
+![](https://i.imgur.com/QjIIo2d.png)
+
+2. Create an [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api). Create a table in the required format (template without any rows).
+
+![](https://i.imgur.com/JeMgAdJ.jpg)
+
+3. Create/open a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#workflow). On the start node, select the scheduled event as the start trigger. 
+
+![](https://i.imgur.com/BpOb6o5.png)
+
+4. Connect the start node to the Sync Database node.
+
+#### Sync database node via CSV 
+
+1. Select the API, Table and appropriate action.
+    - **Insert**: Adds rows from API call to the end of the table.
+    - **Update**: Compares rows from API call to the existing table and checks if there is a match in Unique ID and updates those rows.
+    - **Import**: Truncates existing table completely and replaces it with data from API call.
+
+![](https://i.imgur.com/SsJcSCp.png)
+
 #### Sync database node via JSON
-
-1. [Import the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#2-import-a-new-api-curljson).
-2. Write a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#1) to parse the API response.
-3. Map the API response to the table columns. The column names in the table should be exactly the same as the attribute names in the JSON response.
-4. Access the JSON attributes from the API response and store the attributes in the record variable. You can access the individual records through "ymLibs.args.record" and this can be modified to create dictionary as a response. 
-
-Example:
-```
-return new Promise(resolve => {
-    // Initiating a variable "emp" using 
-    // a unit record from API
-    let emp = ymLib.args.record;
-        // returning a dictionary for the bot tablr
-        // Keys should match column names
-        resolve({
-            e_id: emp.userId,
-            department: emp.department
-        });
-    }); 
-    
-```
-Then, go to the **Sync database node** and add the following,
-
- ![](https://i.imgur.com/2uAOiDT.png)
 
 1. Select the API you want to sync with the bot tables. 
 2. Select the API Response Type as JSON.
@@ -597,30 +597,11 @@ Then, go to the **Sync database node** and add the following,
 * **Update:** Update the existing data with the new data to update the existing rows. Users need to select the primary key. If there is a primary key match, the row will be updated else a new row will be added.
 * **Import:** Drop the table and replace it with the data that comes from the API.
 
+:::note
+The column names in the table should be exactly the same as the attribute names in the JSON response.
+:::
 
-#### Sync database node via CSV 
-
-1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#sch-1) (if there is a requirement to schedule the database updates).
-
-![](https://i.imgur.com/QjIIo2d.png)
-
-2. Create an [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api). Create a table in the required format (template without any rows).
-
-![](https://i.imgur.com/JeMgAdJ.jpg)
-
-3. Create/open a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#workflow). On the start node, select the scheduled event as the start trigger. 
-
-![](https://i.imgur.com/BpOb6o5.png)
-
-4. Connect the start node to the Sync Database node. 
-5. Select the API, Table and appropriate action.
-    - **Insert**: Adds rows from API call to the end of the table.
-    - **Update**: Compares rows from API call to the existing table and checks if there is a match in Unique ID and updates those rows.
-    - **Import**: Truncates existing table completely and replaces it with data from API call.
-
-![](https://i.imgur.com/SsJcSCp.png)
-
-6. When this is triggered, the node pulls all the data through API. 
+2. When this gets triggered, the node pulls all the data through API. 
 
 :::note
 - Data is supported only in CSV format.
@@ -628,9 +609,19 @@ Then, go to the **Sync database node** and add the following,
 - All the rows will be imported, processed and sent to the selected table to perform the selected action.
 :::
 
+3. On the scheduled time, status of the sync can be viewed in "status" object.
+
+```
+{
+success: true,
+error : 'if any, we show it',
+recordsProcessed: 1230,
+}
+```
+
 **(Optional)**
 
-7. Configure a parser function where individual row attributes could be accessed with a custom code: 
+ Configure a parser function where individual row attributes could be accessed with a custom code: 
 
 ```
 return new Promise(resolve => {
@@ -643,14 +634,4 @@ return new Promise(resolve => {
     category: record.category
   });
 });
-```
-
-8. On the scheduled time, status of the sync can be viewed in "status" object.
-
-```
-{
-success: true,
-error : 'if any, we show it',
-recordsProcessed: 1230,
-}
 ```
