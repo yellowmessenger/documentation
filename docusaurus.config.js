@@ -93,7 +93,7 @@ module.exports = {
         },
         {
           to: "https://cloud.yellow.ai",
-          label: "FREE TRIAL",
+          label: "TRY FOR FREE",
           position: "right",
         },
       ],
