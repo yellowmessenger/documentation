@@ -83,8 +83,6 @@ Ensure that you have admin access to the Facebook business manager account.
     <img src="https://i.imgur.com/hdo6P8e.png" alt="drawing" width="60%"/>
    
    
-
-
 :::note
 The number you give should not be connected to any WhatsApp account. If connected, ensure you disconnect the number from WhatsApp account.
 :::

@@ -99,7 +99,7 @@ You can make use of the following out-of-the-box functions with our bot based on
 | window.YellowMessengerPlugin.closeBot() | Closes chat widget |
 | window.YellowMessengerPlugin.toggleChat() | Toggles chat widget to opposite state. That is, Opens chat widget if already closed. Closes chat widget if already open. |
 
-## 2. Trigger specific flow via payload
+## 2. Trigger specific flow using function in the payload
 
 A flow slug or journey slug is the combination of the flow name with auto-generated characters in the format -  `/flow-name_{auto-generated characters}`.
 
