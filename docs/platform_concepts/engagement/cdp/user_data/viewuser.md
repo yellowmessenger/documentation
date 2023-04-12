@@ -30,9 +30,10 @@ You can see three boxes that correspond to {parameter}{operator}{value}.
 
       ![](https://i.imgur.com/cLBmKxf.png)
    
-4. Use **+ Add condition** to evaluate multiple conditions (`and`). For example, the condition `gender is Male` and `phoneNumber is known` fetches all male users whose phone number is available in User 360.
+4. Use **+ Add condition** to evaluate multiple conditions (`and`). For example, the condition `gender is Male` and `phoneNumber is known` fetches all male users whose phone number is available in User 360, `emailOptIn is false` fetches all users who have opted out from emails.
    
 ![](https://i.imgur.com/kgMgHkw.png)
+
 
   
 5. Click **Apply**. You will see the filtered user list.

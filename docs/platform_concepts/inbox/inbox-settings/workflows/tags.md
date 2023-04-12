@@ -1,33 +1,42 @@
 ---
-title: Tags
+title: Tags (for live chats and email tickets)
 sidebar_label : Tags
 ---
 
+**Tags**    
+Tags are patterns or keywords used to label a conversation, which can be applied to both email tickets and live chats. By tagging chats and tickets, admins can filter and search for them more easily, which helps them analyze the traffic. Some examples of tags include suggestion, payment_issue, general_query, and delivery_issue.
 
-Tags are labels that you assign to the conversations after the end or during the chat sessions. They can be configured on the tags setting page. 
+- Agents can add any tags they want to the live chat or email ticket they are working on. 
+- Admins or supervisors can use tags to identify new trends in the support process, analyze the type of incoming requests that are being raised, and develop their product strategy through analytics.
 
-* Tags can be configured for chats and email to organize conversations for quicker follow-ups. 
-* They are used to categorize and organize all customer communication and to escalate it to the right team for further actions fast and effectively.
-* Tagging your chats helps you in searching or filtering your chat menu. With this you can analyze the chat traffic.
-- **Admins** can obtain an overview of chat conversation topics. For example, for viewing the 10 most popular tags in a week.
-- **Agents** can only see tags relevant to them. They can easily tag chats either automatically using Shortcuts, or manually by selecting tags from a predefined list.
-- Tags can be created only for a particular group. The issues belonging to that group will can be tagged under a lable.
+**Use case**    
+When agents are handling multiple incoming chat requests, it can be challenging to have an idea of the kind of chats being handled due to the heavy load. Therefore, the trend or pattern behind the chat is identified and labeled using keywords called tags. For instance, if there are multiple support tickets or chats tagged with payment_issue on the same day, an admin can analyze that there is an escalated issue occurring in the payment gateway. Once identified, an immediate solution can be provided.
 
+:::note
+Only Admins can create tags, which can be analyzed in the [Chat archive report](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report) and [Ticket archive report](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/tickets/ticket-archive-report).
+:::
 
+------
+## 1. Create new tag 
 
 To add a new tag, follow the given steps: 
 
-
 1. Open **Inbox** > **Settings**. 
 2. Search and select **Tags**.
+    ![](https://i.imgur.com/n2sxLcB.png)
+3. Select the **Chat/Email** tab. Enter tags separately for live chats and email tickets.
+4. Enter a tag label (to enter multiple tags, use ',') and click **+Add**.
+    ![](https://i.imgur.com/pTUuy8N.png)
+5. You can delete any tag by clicking on the three dots next to the tag name and confirming the delete action.
+    ![](https://i.imgur.com/ZKVWYLx.png)
 
-![](https://i.imgur.com/n2sxLcB.png)
+-----
 
-4. Select Chat/Email tab. 
-5. Enter a tag lable (to enter multiple tags, use ','). Click **+Add**.
+## 2. View tags on chat/email screens
 
-![](https://i.imgur.com/pTUuy8N.png)
+All the tags that have been created will be available in the tags dropdown menu, which agents can use to search and select the required values. You can find the tags in the following screens:
 
-6. You can delete any tag by clicking on the 3 dots next to the tag name and confirming the **delete** action. 
-
-![](https://i.imgur.com/ZKVWYLx.png)
+1. Chat screen: 
+    ![](https://i.imgur.com/rcPTvFU.png)
+2. Ticket screen (detailed view): 
+    ![](https://i.imgur.com/9u6ObzC.png)
