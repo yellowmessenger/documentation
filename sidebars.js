@@ -880,6 +880,7 @@ module.exports = {
               "platform_concepts/channelConfiguration/instagram-limitations",
               "platform_concepts/channelConfiguration/instagram-faqs",
                 ]},
+            "platform_concepts/channelConfiguration/facebook-messenger",    
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/alexa",
             "platform_concepts/channelConfiguration/google-message",
@@ -911,7 +912,7 @@ module.exports = {
           link: {type: 'doc', id: 'platform_concepts/channelConfiguration/social-overview'},
           collapsed: true,
           items: [
-            "platform_concepts/channelConfiguration/facebook-messenger",
+            "platform_concepts/channelConfiguration/twitter",
           ]
         },
         {
