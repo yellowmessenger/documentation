@@ -23,11 +23,11 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Introducing Freemium Model for maximum impact** <br/> | Discover the potential of our platform with our freemium plan, which offers limited features for free. Upgrade to our premium version for full access to boost your productivity.  |
+| **Introducing Freemium Model for maximum impact** <br/> | Discover the potential of our platform with our freemium plan, which offers limited features for free. Upgrade to our premium version for full access to boost your productivity. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup) |
     
 </details>
 
-<!--<br/><br/> [**Learn more**](.) -->
+
 
 <details>
 <summary>
@@ -66,7 +66,6 @@ featured: true
 
 </summary>
 
-
 | Enhancement | Description |
 | -------- | -------- |
 | **Seamlessly store call recordings in your preferred Cloud Storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | With this feature, our system provides an automated and customisable way to transfer call recordings in .wav format to your preferred cloud storage (Amazon S3, Azure Blob, SFTP) just once or on a daily, weekly, monthly, or quarterly basis to suit your needs.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
@@ -86,8 +85,25 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Web widget enhancements** <br/> | <ul><li>Text-to-Speech support in chat widget.</li><li>Option to enable Bot notification sound to intimate users when there is a new message.</li> <li> Notification Badges to indicate unread messages. </li> <li>Real-time status updates in the chatbot related to agent/user connection, tickets and more.</li></ul> |
-| **Chatbot SDK enhancements** <br/> | * Hybrid SDK: Documentation update.|
-|**Inbox SDK and Partner app** | <ul><li>Unsupported Widget addition. </li> <li>SSO Redirection URL changes for Apple Login. </li> <li>Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.</li></ul>|
+| **Web widget enhancements** <br/> | <ul><li> Text-to-Speech support in chat widget.</li><li> Option to enable Bot notification sound to intimate users when there is a new message. </li> <li> Notification Badges to indicate unread messages. <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-notification).</li> <li> Real-time status updates in the chatbot related to agent/user connection, tickets and more.  </li> <li> Added chat seperator  <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-separator) </li></ul> |
+|**Inbox SDK and Partner app** | <ul><li> Unsupported Widget addition. </li> <li> SSO Redirection URL changes for Apple Login. </li> <li> Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.</li></ul>|
+</details>
+
+
+
+
+<details>
+<summary>
+
+### Inbox
+
+</summary>
+
+| Enhancement | Description |
+| -------- | -------- |
+| **Email search v2** | Searching email tickets is a lot easier with our enhanced search feature. You can now search for email tickets using email body, subject line, ticket ID, contact email ID and custom fields. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/searchandfilter)|
+| **Ticketing inactivity & autoclose**| Enable this setting to automatically identify tickets where the customers are inactive and close them in order to save agents time and avoid manual interference. Additionally for a better experience, you can also send reminders to notify customers about the open ticket. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/emailinactivity)|
+| **KB sitemap** |  All your knowledge base articles are now crawled & indexed on search engines through sitemaps.|
 
 </details>
+

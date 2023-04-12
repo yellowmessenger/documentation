@@ -547,9 +547,6 @@ These nodes are only available when a flow is created as a [workflow](https://do
 
 This node enables bulk operations like "Import, Insert, Update" on tables (of bigger databases) from external data sources through APIs instead of updating them manually. You can also schedule database updates.
 
-#### Usage
-
-To setup a sync database node, follow the steps below: 
 
 1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#sch-1) (if there is a requirement to schedule the database updates).
 
@@ -563,15 +560,48 @@ To setup a sync database node, follow the steps below:
 
 ![](https://i.imgur.com/BpOb6o5.png)
 
-4. Connect the start node to the Sync Database node. 
-5. Select the API, Table and appropriate action.
+4. Connect the start node to the Sync Database node.
+
+#### Sync database node via CSV 
+
+1. Select the API, Table and appropriate action.
     - **Insert**: Adds rows from API call to the end of the table.
     - **Update**: Compares rows from API call to the existing table and checks if there is a match in Unique ID and updates those rows.
     - **Import**: Truncates existing table completely and replaces it with data from API call.
 
 ![](https://i.imgur.com/SsJcSCp.png)
 
-6. When this is triggered, the node pulls all the data through API. 
+#### Sync database node via JSON
+
+1. Select the API you want to sync with the bot tables. 
+2. Select the API Response Type as JSON.
+3. Select the path where the relevant data lies in the JSON response. For e.g., the JSON path  for the following code would be the  is "data.results.*
+
+```
+{
+      data: {
+                results: {
+                                 record1 :{},
+                                 record2: {},
+                                 ........
+                 } 
+       }
+}
+```
+
+4. Pass the record that comes from the selected path in **Parse API response** so that the response comes in a dictionary format.
+5. Select the custom variable and select the bot table where they want to store the API response.
+6. Select the operation type. There are three types of operations that users can perform: Insert, Update, and Import.
+
+* **Insert:** Insert the data as new rows to the existing table.
+* **Update:** Update the existing data with the new data to update the existing rows. Users need to select the primary key. If there is a primary key match, the row will be updated else a new row will be added.
+* **Import:** Drop the table and replace it with the data that comes from the API.
+
+:::note
+The column names in the table should be exactly the same as the attribute names in the JSON response.
+:::
+
+2. When this gets triggered, the node pulls all the data through API. 
 
 :::note
 - Data is supported only in CSV format.
@@ -579,9 +609,19 @@ To setup a sync database node, follow the steps below:
 - All the rows will be imported, processed and sent to the selected table to perform the selected action.
 :::
 
+3. On the scheduled time, status of the sync can be viewed in "status" object.
+
+```
+{
+success: true,
+error : 'if any, we show it',
+recordsProcessed: 1230,
+}
+```
+
 **(Optional)**
 
-7. Configure a parser function where individual row attributes could be accessed with a custom code: 
+ Configure a parser function where individual row attributes could be accessed with a custom code: 
 
 ```
 return new Promise(resolve => {
@@ -594,14 +634,4 @@ return new Promise(resolve => {
     category: record.category
   });
 });
-```
-
-8. On the scheduled time, status of the sync can be viewed in "status" object.
-
-```
-{
-success: true,
-error : 'if any, we show it',
-recordsProcessed: 1230,
-}
 ```

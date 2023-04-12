@@ -8,9 +8,9 @@ Email inactivity refers to a situation where a customer has not responded to an 
 It is necessary to keep track of such emails to which the customer has not replied so that the team can close the ticket and prioritize other tickets. 
 With email inactivity setting, email ticket inactivity is handled automatically without the inbox agent's interference. 
 
-You can be perform any of the below mentioned actions to handle this situation: 
+Email inactivity is handled by performing the below action: 
 1. **Close the ticket**: If the customer has not responded within the set time, you can choose to automatically close the ticket. So that the agent assigned to this ticket gets auto-assigned to another one (or, concurrency value reduces).
-2. **Send reminder and close the ticket**: In addition to the above one, you can also send a reminder to the customer expecting a response. if the customer does not respond within the set time, you can choose to automatically close the ticket.
+    - **Send reminder and close the ticket**: In addition to the above one, you can also send a reminder to the customer expecting a response. if the customer does not respond within the set time, you can choose to automatically close the ticket.
 
 ----
 
@@ -42,10 +42,10 @@ To automatically close an inactive email ticket, follow these steps:
 
 :::note
 - Trigger time must be more than 0. 
-- Reminder timer must be less than the auto-close timer.
 - Auto-closed tickets will be tagged with - *autoclose*, you can see them on the tickets page.
-- **Send reminder** toggle can be enabled only if **Automatically close inactive email tickets** is enabled. 
 :::
+
+-----
 
 ### 1.1 Send a reminder before auto-closing an inactive email ticket
 
@@ -67,3 +67,64 @@ To send a reminder before auto-closing an inactive email ticket, follow these st
     > - [Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte) on creating email tempaltes. 
 
 4. **Save** the changes. 
+
+:::note
+- Trigger time must be more than 0. 
+- Reminder timer must be less than the auto-close timer.
+- **Send reminder** toggle can be enabled only if **Automatically close inactive email tickets** is enabled. 
+:::
+
+
+## 2. Use case
+
+Assume an email ticket was raised by a customer to Globex Corporation:
+
+**Customer's email ticket**:
+
+```
+Hi, 
+I purchased a core i5 latitude from you before 2 months. 
+I need replacement for the battery adapter. Can you help me out? 
+Regards, 
+James
+```
+**Response from the inbox agent**:
+
+```
+(#223)
+Hi James! 
+I will help you with your issue. 
+However to fetch your details, can you please send me your invoice?
+Thanks, 
+Globex
+```
+
+**No reply from the customer** (ticket is still assigned to the agent until manually closed):
+```
+```
+
+**Admin enables Auto-close (with alerts). If the customer is inactivy for more than set time (30 min), reminder will be sent and ticket will be auto closed saving agents time.**
+
+**Automated reminder from inbox**:
+
+```
+Hi, 
+We noticed that you have not responded to our previous mail. 
+Are you still looking for support?"
+```
+
+**No reply from the customer**:
+
+```
+```
+
+**Automated closure from inbox**:
+
+```
+Hi, 
+We have closed your ticket (#223) due to inactivity. 
+If required, you can raise another ticket to get in touch with us. 
+Have a great day!
+```
+
+

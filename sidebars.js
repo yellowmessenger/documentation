@@ -43,6 +43,10 @@ module.exports = {
           "cookbooks/studio/multilingual-bot",
           "cookbooks/studio/build-bot",
           "cookbooks/studio/hide-input",
+          "cookbooks/studio/dynamic-quickreplies",
+          "cookbooks/studio/images-languages",
+          "cookbooks/studio/ticketclose-message",
+
 
       ],
     }, 
@@ -834,7 +838,7 @@ module.exports = {
     "platform_concepts/growth/doccog",
     "platform_concepts/growth/data-explorer", 
     "platform_concepts/growth/dashboards",
-
+    "platform_concepts/growth/health",
     "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",
   ],
@@ -876,6 +880,7 @@ module.exports = {
               "platform_concepts/channelConfiguration/instagram-limitations",
               "platform_concepts/channelConfiguration/instagram-faqs",
                 ]},
+            "platform_concepts/channelConfiguration/facebook-messenger",    
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/alexa",
             "platform_concepts/channelConfiguration/google-message",
@@ -907,7 +912,7 @@ module.exports = {
           link: {type: 'doc', id: 'platform_concepts/channelConfiguration/social-overview'},
           collapsed: true,
           items: [
-            "platform_concepts/channelConfiguration/facebook-messenger",
+            "platform_concepts/channelConfiguration/twitter",
           ]
         },
         {

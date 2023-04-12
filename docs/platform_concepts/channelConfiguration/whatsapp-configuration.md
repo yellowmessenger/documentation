@@ -83,8 +83,6 @@ Ensure that you have admin access to the Facebook business manager account.
     <img src="https://i.imgur.com/hdo6P8e.png" alt="drawing" width="60%"/>
    
    
-
-
 :::note
 The number you give should not be connected to any WhatsApp account. If connected, ensure you disconnect the number from WhatsApp account.
 :::
@@ -130,7 +128,7 @@ The number you give should not be connected to any WhatsApp account. If connecte
 
 5. Hurray! You have now created the FBM.
 
-### 1.3 Verfiy Business account with Facebook
+### 1.3 Verify Business account with Facebook
 
 1. In the FBM, go to **More Tools > Business Settings > Select your Business**.
 
