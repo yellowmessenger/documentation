@@ -73,6 +73,22 @@ module.exports = {
   link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
   collapsed: true,
   items: [
+
+// Reporting  
+{
+  type: "category",
+  label: "Reporting",
+  link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
+  collapsed: true,
+  items: [
+          "cookbooks/voice-as-channel/reporting/cdr",
+          "cookbooks/voice-as-channel/reporting/dashboard",
+      ],
+    },
+
+  // ---- old docs 
+
+
     "cookbooks/voice-as-channel/voicearchitecture",
     "cookbooks/voice-as-channel/components", 
 
@@ -88,7 +104,7 @@ module.exports = {
       "cookbooks/voice-as-channel/build/usingmp", 
         ],
       },
-    
+
     "cookbooks/voice-as-channel/conversationaldelays",
 
 // Voice Capabilities (usecases)

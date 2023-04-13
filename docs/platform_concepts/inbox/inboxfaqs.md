@@ -7,6 +7,16 @@ sidebar_label : Inbox FAQs
 
 <details>
 <summary> 
+Which attachment formats does Inbox support?
+</summary>
+<div>
+In the chat or email conversation, customers, agents, and admins have the ability to attach files of these formats: <br/> JPEG, JPG, PNG, GIF, PDF, TXT, DOC, PPT, DOCX, PPTX, XLS, XLSX, CSV, TSV, ZIP, JSON, MP4, MP3, WAV, AAC, M4A, SVG, 3GP, and MOV.
+</div>
+</details>
+
+
+<details>
+<summary> 
 Can we have primary and secondary WhatsApp numbers(2 phone numbers) connecting a bot user to the live agents? </summary>
 <div>
 Each bot has only one inbox, the bot can have multiple Whatsapp numbers activated, and the agent queries will be directed to the bot's Inbox. Hence, all Whatsapp numbers are sourced to the same Inbox module, and agents can pick up conversations(tickets) from any of the numbers.
