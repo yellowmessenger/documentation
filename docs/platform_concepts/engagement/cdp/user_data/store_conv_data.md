@@ -10,7 +10,7 @@ There are three ways in which you can capture the user ID through bot Builder.
 
 ### Using Prompt nodes
 
-When capturing user information through [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes), you can store a specific user response both as a property value and user ID. For example, if mobile number is the unique identifier, you can use the Phone prompt node and store the user's response in phone property and user ID simultaneously. 
+When capturing user information through [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes), you can store a specific user response both as a property value and user ID. For example, if mobile number is the unique identifier, you can use the prompt node, Phone and store the user's response in phone property and user ID simultaneously. 
 
 To do this: 
 1. Open the Prompt node that you want to set as the user ID.
@@ -22,7 +22,9 @@ To do this:
 
 
 :::note
-You cannot update a user ID once added. If the user ID is captured again in a flow, it will map to the existing record if it already exists, or create a new user ID if it does not exist. To know about user identification in Builder, see [How user records are created through conversations & unified in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
+You cannot update a user ID once it is added. If the user ID is captured again in a flow 
+* it will map to the existing record if it already exists.
+* it will create a new user ID if it does not exist. To know about user identification in Builder, see [How user records are created through conversations & unified in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
 :::
 
 ### Using the Store response in option
@@ -72,12 +74,12 @@ To update existing user properties:
 
 2. Store them in the respective User properties, as explained in [Store user properties through builder](#store-user-properties-through-builder).
 
-For Prompt nodes, choose the relevant name under User properties.
+In Prompt nodes, choose the relevant name under User properties.
 
   <center> <img src="https://i.imgur.com/mFz74Ka.png" width="60%"/></center>
 
 
-For the Variable node, choose the relevant user property or add it manually using the syntax `{{user.propertyName}}`
+In the Variable node, choose the relevant user property or add it manually using the syntax `{{user.propertyName}}`
   <center> <img src="https://i.imgur.com/1MvEa5O.png" width="60%"/></center>
 
 
