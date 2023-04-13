@@ -36,11 +36,11 @@ The following properties are enabled by default. You can see these in User 360.
 | firstName | string | The first name of the user |
 | lastName | string | Last name of the user |
 | gender | string | Gender of the user |
-| country | string | Identifies based on the location of the user’s IP address |
-| city | string | Identifies based on the location of the user’s IP address |
-| ip | string | Fetches from the user’s browser |
-| latitude | number | Identifies from the location of the user’s IP address |
-| longitude | number | Identifies from the location of the user’s IP address |
+| country | string | Country of the user. In bot conversation, it identifies this property based on the location of the user’s IP address |
+| city | string | City of the user. In bot conversation, it identifies this property based on the location of the user’s IP address |
+| ip | string | In bot conversation, it fetches this property from the user’s browser |
+| latitude | number | In bot conversation, it identifies this from the location of the user’s IP address |
+| longitude | number | In bot conversation, it identifies this from the location of the user’s IP address |
 | language | string | Preferred language of the user |
 | timezone | string | Identifies based on the location of user's IP address |
 | email | email | Email address of the user |
@@ -103,14 +103,15 @@ You can add the System properties that you want to capture for your users. If re
 
 ### 2.1 Add user property
 
-To section explains how you can add a system property 
+This section explains how you can add a system property that you want to capture. Adding a property creates a new column in the User 360 table to store the respective property value.
+
 To add an existing user property to your User 360 module, follow these steps:
 
 1. On the **User 360** page, click **User properties**.
 
 ![](https://i.imgur.com/BOUV1hq.png)
 
-On the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#22-system-user-properties) and [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#23-custom-user-properties) along with their data types. 
+   On the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#22-system-user-properties) and [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#23-custom-user-properties) along with their data types. 
 
 2. Select the property that you want to include. You can see all the selected properties on the right. 
 
@@ -129,7 +130,8 @@ To create new user properties with your preferred label name and datatype, follo
 
    ![](https://i.imgur.com/BOUV1hq.png)
 
-2. In **Property name**, enter a name for the property. 
+2. Click on **+Custom property**
+3. In **Property name**, enter a name for the property. 
 
    <img src="https://i.imgur.com/KrGzGpD.png" width="60%"/>
 
