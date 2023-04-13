@@ -1,6 +1,6 @@
 ---
-title : Store conversational data in User360 & create personalized conversations
-sidebar_label : Store user data & personalize conversations
+title : Store conversational data in User 360
+sidebar_label : Store user data in User 360
 ---
 
 
@@ -22,7 +22,7 @@ To do this:
 
 
 :::note
-You cannot update a user ID once added.
+You cannot update a user ID once added. If the user ID is captured again in a flow, it will map to the existing record if it already exists, or create a new user ID if it does not exist. To know about user identification in Builder, see [How user records are created through conversations & unified in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
 :::
 
 ### Using the Store response in option
@@ -57,5 +57,27 @@ To store the user’s response in User 360, in **Store Response in**, choose var
 
    ![](https://i.imgur.com/h8FfpZE.png)
 
+
+
+## Update user properties through Builder
+
+Once the user is identified, you can update the user properties (other than user ID) using the Prompt or Vaiable nodes.
+
+:::note
+You cannot update user properties once captured. If the user ID is captured again in a flow, it will map to the existing record if it already exists, or create a new user ID if it does not exist. To know about user identification in Builder, see [How user records are created through conversations & unified in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
+:::
+
+To update existing user properties:
+1. Capture the user property that you want to update using the Variable node or Prompt node, as explained in [Store user ID through builder](#store-user-id-through-builder).
+
+2. Store them in the respective User properties, as explained in [Store user properties through builder](#store-user-properties-through-builder).
+
+For Prompt nodes, choose the relevant name under User properties.
+
+  <center> <img src="https://i.imgur.com/mFz74Ka.png" width="60%"/></center>
+
+
+For the Variable node, choose the relevant user property or add it manually using the syntax `{{user.propertyName}}`
+  <center> <img src="https://i.imgur.com/1MvEa5O.png" width="60%"/></center>
 
 
