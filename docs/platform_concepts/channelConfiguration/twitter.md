@@ -17,7 +17,7 @@ In this article, you will learn:
 
 1. Navigate to the [Twitter website](https://twitter.com/i/flow/signup) and click **Create account**.
 
-2. Enter the required information, such as your name, email, and date of birth, and click **Next**.
+2. Enter the required information, such as your name, email, date of birth, and click **Next**.
 
    <img src="https://i.imgur.com/awiGWBi.png" alt="drawing" width="50%"/>
  
@@ -31,7 +31,7 @@ In this article, you will learn:
   
 5. Enter the verification code that is sent to your email address and click **Next**. 
 :::note
-If you used your phone number, you will receive a text with your code.
+If you have used your phone number, you will receive the code through SMS.
 :::
 
    <img src="https://i.imgur.com/Rb65bA4.png" alt="drawing" width="50%"/>
@@ -48,7 +48,7 @@ If you used your phone number, you will receive a text with your code.
  
    <img src="https://i.imgur.com/Dd9SUHU.png" alt="drawing" width="50%"/>
    
-9. Click **Allow notifications** to receive notifications of your recent activities.
+9. Click **Allow notifications** to receive notifications for your recent activities.
 
     <img src="https://i.imgur.com/m4Wu0Zj.png" alt="drawing" width="50%"/>
 	
@@ -84,7 +84,7 @@ To setup a Twitter channel using the developer portal, follow these steps:
 
     ![](https://i.imgur.com/NKyznKD.png)
 
-5. Select the required app environment and click **Next**.
+5. Select your preferred app environment and click **Next**.
 
    ![](https://i.imgur.com/I2sO4Vo.png)
    
@@ -92,21 +92,21 @@ To setup a Twitter channel using the developer portal, follow these steps:
 
    ![](https://i.imgur.com/OIg2v4j.png)
    
-7. **API key** and **API key Secret** is generated. Click **App settings**.
+7. You can view **API key** and **API key Secret**. Click **App settings**.
 
     ![](https://i.imgur.com/5iUCGIs.png)
   
-8. You can view your app details and click **Set up** under "User authentication settings".
+8. Click **Set up** under **User authentication settings**.
 
-9. On the User authentication settings page, enable the following:
-   * Under **App permissions**, enable **Read and Write and Direct message permissions**.
+9. On the User authentication settings page, configure the following:
+   * Under **App permissions**, enable Read and write and Direct message to allow read tweets and profile information, read and post direct messages.
    * Under **Type of App**, enable **Web App, Automated App or Bot**.
    * Under **App info**, enter the callback URL and the website URL.
    * Click **Save**.
 
    ![](https://i.imgur.com/bNwmAtj.png)
 
-10. Upon enabling these permissions, a **Client ID** and **Client Secret** are generated. 
+10. After enabling the above permissions, a **Client ID** and **Client Secret** are generated after enabling the above permissions.
 
     ![](https://i.imgur.com/B5W1Twl.png)
 
@@ -114,7 +114,7 @@ To setup a Twitter channel using the developer portal, follow these steps:
 
     ![](https://i.imgur.com/bzkk13Z.png)
 
-12. To setup environment, under Products click **Dev Environments**. 
+12. To setup environment, click **Dev Environments** under **Products**. 
 
      ![](https://i.imgur.com/mRShEWO.png)
 	 
@@ -126,12 +126,12 @@ To setup a Twitter channel using the developer portal, follow these steps:
 
      <img src="https://i.imgur.com/Ww0616o.png" alt="drawing" width="60%"/>
 	 
-15. Dev environment is successfully setup.
+    * The  Dev environment is successfully setup.
 
      ![](https://i.imgur.com/DUAiP6f.png)
 
 
-## 3. Connect Twitter channel to your bot
+## 3. Connect Twitter to your bot
 
 To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
@@ -143,15 +143,15 @@ To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
    ![](https://i.imgur.com/PFvwsPc.png)
 
-3. Enter the account details such as **Access token, Access token secret, Consumer key, Consumer secret**, and **Environment name** that you have copied from the developer portal. Click **Add account**.   
+3. Enter the account details such as **Access token, Access token secret, Consumer key, Consumer secret**, and **Environment name** that you have copied from the Twitter's developer portal. Click **Add account**.   
    
-    <img src="https://i.imgur.com/SnGCsvS.png" alt="drawing" width="80%"/>
+    <img src="https://i.imgur.com/AVpx2pt.png" alt="drawing" width="80%"/>
 
-3. Your Twitter channel will be successfully connected.
+3. Add **Click account**. Your Twitter channel will be successfully connected.
 
 ## 4. Test your bot on Twitter
 
-After configuring your Twitter developer account and connecting your bot to a Twitter channel, you need to test your bot.
+After connecting your bot to a Twitter, you need to test your bot.
 
 To test your bot on Twitter, follow these steps:
 
@@ -159,12 +159,11 @@ To test your bot on Twitter, follow these steps:
 
     ![](https://i.imgur.com/8NFC9bY.jpg)
 
-2. Use the search option to find your bot and start the conversation to test your bot. 
+2. In the **Search bar**, search your bot name. 
 
-     ![](https://i.imgur.com/giCnRBA.png)
+     ![](https://i.imgur.com/yQbZTmr.png)
 
-
-3. Once you have tested your bot, the configuration of the Twitter channel for your business is complete.
+3. Select your bot to start the conversation and test it to ensure that it is working as expected.
 
     ![](https://i.imgur.com/U83LsQH.png)
 
