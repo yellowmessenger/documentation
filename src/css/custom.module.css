@@ -486,7 +486,7 @@ ul, ol {
   border-radius: 8px;
   background-color: #f27264;
   font-family: "CarosSoft",sans-serif;
-  
+  align-items: center;
   box-shadow: 0px 1px 0px rgba(61,47,38,.15);
 }
 
@@ -497,13 +497,14 @@ ul, ol {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #f9f7f6;
   color: #f27264 !important;
   font-weight: 500;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   border: 1px solid #f27264;
+  background-color: #fff;
+
 }
 
 

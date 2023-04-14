@@ -48,24 +48,29 @@ You can capture the user ID through Prompt or Variable nodes when creating bot f
 
 If the provided user ID does not exist in User 360, the current record will be updated with the user ID without affecting the details captured during the session.
 
-   <img src="https://i.imgur.com/kF52Va6.png" width="80%"/>
+
+   <img src="https://i.imgur.com/815BUjZ.png" width="80%"/>
 
 ### When an existing user ID is captured
 
-If the provided user ID already exists, it **switches** the mapping to the existing record and **merges** new details overriding the existing data.
+If the provided user ID already exists, it switches the mapping to the existing record and merges new details, without overriding the existing data. It then deletes the unidentified record.
+
+These are the steps that take place:
 
 1. It **Switches** to the existing record.
 
-   ![](https://i.imgur.com/Nc27feD.png)
+   ![](https://i.imgur.com/paPd0mu.png)
+
 
 2. It then **Merges** the details that are not available in the existing record.
 
   <center>
-   <img src="https://i.imgur.com/u9IKhBA.png" width="70%"/>
+   <img src="https://i.imgur.com/jUzFP3o.png" width="90%"/>
    </center>
 
-   * **Properties with single values**: The user properties that do not exist in the identified record will be migrated from the unidentified record. For example, refer to firstName and whatsAppOptin in the above table.
-   * **Properties with list values**: The values will be unified. Example: `lable` the above table.
+   * **Properties with single values**:<br/>
+   The user properties that are not present in the identified record will be obtained from the unidentified record. For example, refer to `emailOptin` in the above table. <br/>The user properties that already exist in the identified record will be skipped without making any change. For example, refer to `firstName` in the above table.
+   * **Properties with list values**: The values will be unified. Example: `labels` in the above table.
 3. It deletes the unidentified record after merging.
 
 
@@ -79,9 +84,9 @@ This happens when an user ID provided for an unidentified record already exists 
 
 In this, the mapping **Switches** to the existing record and the details that are not available in the existing record will be updated as explained in the following.
 
-   ![](https://i.imgur.com/Nc27feD.png)
+   ![](https://i.imgur.com/paPd0mu.png)
 
-   ![](https://i.imgur.com/xFUSJAn.png)
+   ![](https://i.imgur.com/jUzFP3o.png)
 
 See the [Effect of merging on user properties](#effect-of-merging-on-user-properties).
 
@@ -89,30 +94,25 @@ See the [Effect of merging on user properties](#effect-of-merging-on-user-proper
 
 Consider a user who is on WhatsApp is identified on Web bot with the same user ID. Similar to the previous case, it switchs the current mapping to the existing record and then merges new details. For instance, consider a user already on WhatsApp, started a conversation on the web bot and provides the same user ID.
 
-<img src="https://i.imgur.com/pWmUi55.png" width="80%"/>
+
+<img src="https://i.imgur.com/QC5Bf0v.png" width="90%"/>
 
 The existing property values will remain unchanged, and any missing property values will be added to the existing account.
 
-<img src="https://i.imgur.com/rCfeZ4y.png" width="90%"/>
 
-See the [Effect of merging on user properties](#effect-of-merging-on-user-properties).
+Learn about the [Effect of merging on user properties](#effect-of-merging-on-user-properties).
 
 ### Effect of merging on user properties
 
  The following are the effects of account merging:
 
-<img src="https://i.imgur.com/Y82Fghd.png" width="70%"/>
+![](https://i.imgur.com/hqybAgj.png)
 
-
-* **Properties with single values**: The user properties that do not exist in the identified record will be migrated from the unidentified record. For example, refer to firstName and whatsAppOptin in the above table.
-
-   ![](https://i.imgur.com/CeMfVHt.png)
-
-   * **Properties with `list` values**: The values will be unified. Example: `lables` the above table.
-
-   ![](https://i.imgur.com/82kmphS.png)
-
-*  **Unidentified record** will be deleted post-merging.
+* **Properties with single values**: 
+   * The user properties that are not present in the identified record will be obtained from the unidentified record. For example, refer to `WhatsAppOptIn`.
+   * User properties that already exist in the identified record will be ignored and no changes will be made to them. For example, `firstName` in the above table.
+* **Properties with list values**: These values will be unified. Example: `labels` in the above table.
+*  The **Unidentified record** will be deleted post-merging.
    
 
 ## What happens when the user ID is recaptured?
@@ -123,11 +123,13 @@ There could be cases when a user ID is recaptured. For example, the user logs ou
 
 When a user provides a new user ID that already exists in User 360, the chatbot will switch the current record mapping to the respective record that already exists. It uses information associated with that user ID to personalize conversations.
 
-   ![](https://i.imgur.com/XtCkcOF.png)
+   ![](https://i.imgur.com/Ew2Efrb.png)
+
 
 ### When the new user Id does not exist
 
 The chatbot will create a new record with the provided user ID. This means that the chatbot will treat the user as a new user and will not have access to any previous information or conversation history associated with that user. However, the chatbot can still capture new information about the user's preferences and behavior going forward, which can be used to personalize future interactions.
 
-   ![](https://i.imgur.com/7K01MNK.png)
+   ![](https://i.imgur.com/pPxBuhn.png)
+
 
