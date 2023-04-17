@@ -73,6 +73,22 @@ module.exports = {
   link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
   collapsed: true,
   items: [
+
+// Reporting  
+{
+  type: "category",
+  label: "Reporting",
+  link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
+  collapsed: true,
+  items: [
+          "cookbooks/voice-as-channel/reporting/cdr",
+          "cookbooks/voice-as-channel/reporting/dashboard",
+      ],
+    },
+
+  // ---- old docs 
+
+
     "cookbooks/voice-as-channel/voicearchitecture",
     "cookbooks/voice-as-channel/components", 
 
@@ -88,7 +104,7 @@ module.exports = {
       "cookbooks/voice-as-channel/build/usingmp", 
         ],
       },
-    
+
     "cookbooks/voice-as-channel/conversationaldelays",
 
 // Voice Capabilities (usecases)
@@ -880,6 +896,7 @@ module.exports = {
               "platform_concepts/channelConfiguration/instagram-limitations",
               "platform_concepts/channelConfiguration/instagram-faqs",
                 ]},
+            "platform_concepts/channelConfiguration/facebook-messenger",    
             "platform_concepts/channelConfiguration/sms-outbound-india", 
             "platform_concepts/channelConfiguration/alexa",
             "platform_concepts/channelConfiguration/google-message",
@@ -911,7 +928,7 @@ module.exports = {
           link: {type: 'doc', id: 'platform_concepts/channelConfiguration/social-overview'},
           collapsed: true,
           items: [
-            "platform_concepts/channelConfiguration/facebook-messenger",
+            "platform_concepts/channelConfiguration/twitter",
           ]
         },
         {
