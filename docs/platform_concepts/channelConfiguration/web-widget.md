@@ -98,19 +98,19 @@ Slow messages | Enable this option to add a small delay to bot messages, a typin
 
 ### 2.4 Deploy chat widget 
 
-Now, your widget is set up with your preferred style and settings. 
+Your widget has been set up with your preferred style and settings, you can deploy it on your website and mobile application.
+
+#### Deploy chat widget on website
 
 To deploy the widget on your website, follow these steps:
 
 1. Navigate to the **Deploy** tab.
 2. Copy the code using the respective icon, and paste it on your website.  
 
-   <img src="https://i.imgur.com/8TnDcjf.png" width="80%"/>
+   <img src="https://i.imgur.com/yvDO4Vq.png" width="70%"/>
 
 
 2. In the same code, next to bot ID, add the following:
-
-  
 
 ```
 { bot: '{botId}',alignLeft: true }
@@ -157,16 +157,33 @@ To deploy the widget on your website, follow these steps:
 To view the bot in full screen mode, use the following link: https://cloud.yellowmessenger.com/pwa/live/YOUR_BOT_ID/?fullScreen=true
 :::
 
+#### Deploy chat widget on your mobile application
+
+To deploy a chat widget on your mobile application, follow the instructions in the help documentation provided for the corresponding SDK under the Deploy section on the Setup page. The documentation links include [Android](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android), [iOS](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios), [React Native](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/react-native), [Flutter](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/flutter), [Cordova](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/cordova), and [Xamarin](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/xamarin).
+
+To access mobile SDKs help doc links, follow these steps.
+   
+1. Navigate to the **Deploy** tab and click **Mobile SDK**. 
+
+      <img src="https://i.imgur.com/U57jMw1.png" width="80%"/>
+
+2. To install the chat widget on your mobile application, click **Read docs** links corresponding to the respective mobile SDKs. 
+
+     <img src="https://i.imgur.com/LWWr2ik.png" width="80%"/>
+	
+3. Upon clicking the links, it navigates you to the respective Mobile SDK documentation.	
+
 ### 2.5 Preview chat widget 
 
 As you design the bot, you can preview the changes in real time in the **Preview Screen** tab before you save it. When you choose colors, the chat preview updates automatically so that you can see what your widget will look like.
 
-![](https://i.imgur.com/evi4d4L.png)
+  ![](https://i.imgur.com/ZKEUTwy.png)
 
 
-To preview your bot on a website, click **Deploy** > **Experience on a Website**.
+To preview your bot on a website, click **Deploy** > **Web** > **Experience on a Website**.
 
-<img src="https://i.imgur.com/8o40gQW.png" width="80%"/> 
+   <img src="https://i.imgur.com/1s7zOkH.png" width="70%"/> 
+
 
 :::info
 To share chatbot with other users, copy the bot link.
