@@ -3,7 +3,7 @@ title : How to display images based on different languages?
 sidebar_label : Display images for different languages
 ---
 
-1. Click the **Language** button on the left tile and add the preferred languages. 
+1. Click the **Language** button on the left tile and add the preferred languages using **+Add language**. 
 
 <img src="https://i.imgur.com/SdsOthh.png" alt="drawing" width="60%"/>
 
@@ -32,7 +32,7 @@ sidebar_label : Display images for different languages
 ![](https://i.imgur.com/ap27ou3.png)
 
 
-5. Whenever you set a language code in the variable node, the respective image will be displayed in the bot.
+5. Set a language code in the variable node to display the respective image in the bot
 
 ![](https://i.imgur.com/GA7xqdP.gif)
 
