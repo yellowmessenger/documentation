@@ -545,7 +545,7 @@ These nodes are only available when a flow is created as a [workflow](https://do
 
 ### 4.1 Sync database
 
-This node enables bulk operations like "Import, Insert, Update" on tables (of bigger databases) from external data sources through APIs instead of updating them manually. You can also schedule database updates.
+The Sync database node is an action workflow node that lets you sync the bot tables with external databases in real-time. It is useful when the data in the bot tables needs to be updated frequently, and manual editing becomes tedious and non-scalable. The Sync database node enables users to connect any bot table to an external database through APIs.
 
 
 1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#sch-1) (if there is a requirement to schedule the database updates).
@@ -598,10 +598,14 @@ This node enables bulk operations like "Import, Insert, Update" on tables (of bi
 * **Import:** Drop the table and replace it with the data that comes from the API.
 
 :::note
-The column names in the table should be exactly the same as the attribute names in the JSON response.
+1. The column names in the table should be exactly the same as the attribute names in the JSON response.
+2. You can also refer this video for further clarity.
+
+[![Sync DB node](https://cdn.loom.com/sessions/thumbnails/1e7104db203c4061a5d6839ea515198e-with-play.gif)](https://www.loom.com/share/1e7104db203c4061a5d6839ea515198e)
+
 :::
 
-2. When this gets triggered, the node pulls all the data through API. 
+5. When the Sync Db node gets triggered, it pulls all the data through API. 
 
 :::note
 - Data is supported only in CSV format.
@@ -609,7 +613,7 @@ The column names in the table should be exactly the same as the attribute names 
 - All the rows will be imported, processed and sent to the selected table to perform the selected action.
 :::
 
-3. On the scheduled time, status of the sync can be viewed in "status" object.
+6. On the scheduled time, status of the sync can be viewed in "status" object.
 
 ```
 {
@@ -619,9 +623,9 @@ recordsProcessed: 1230,
 }
 ```
 
-**(Optional)**
-
  Configure a parser function where individual row attributes could be accessed with a custom code: 
+
+ **This is optional for CSV**
 
 ```
 return new Promise(resolve => {
