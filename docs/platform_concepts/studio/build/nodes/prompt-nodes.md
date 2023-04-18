@@ -566,8 +566,11 @@ On this prompt, you can configure what your questions should be when you ask for
 ![](https://i.imgur.com/v61glfs.png)
 
 :::info
-- Feedback data can be found in the Insights section > Data Explorer. You do not need to store it separately.
-- You can access this data if needed by using {{variables.var_name.rating}} and {{variables.var_name.comment}}
+- Feedback data can be found in **Insights** > **Data Explorer** > **User feedback**. You do not need to store it separately, the ratings, feedback  along with other user and flow details will be displayed here.
+
+![](https://i.imgur.com/drECKWt.png)
+
+- The response to the Feedback node will be stored in an object [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables), you can access this data and display it by using {{variables.var_name.rating}} and {{variables.var_name.comment}}
 :::
 
 ---
