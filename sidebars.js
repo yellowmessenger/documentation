@@ -140,7 +140,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/inbox/custom-usecases",
-   // "cookbooks/inbox/emailvschat",
+    "cookbooks/inbox/alias",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
     "cookbooks/inbox/transferwithoutinfo",
