@@ -408,6 +408,15 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
   </div>
 </details>
 
+<details>
+<summary>How to add the image in Quick Replies node?</summary>
+<div>
+ <br/>
+ <div>In the quick reply node, add the image link under the Prefix image. Click <a href="http://localhost:3000/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies">here</a> for more information.<br/><img src="https://i.imgur.com/CERBwzb.png"/><img src="https://i.imgur.com/FhUnKaK.png" alt="drawing" width="40%"/>
+</div>
+  </div>
+</details>
+
 
 
 
