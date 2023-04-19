@@ -3,7 +3,7 @@ title: WhatsApp Frequently Asked Questions
 sidebar_label : WhatsApp FAQs
 ---
 
-### Pre Whatsapp Business account Set up FAQs
+### Whatsapp business account 
 
 <details><summary><b> How to verify your business account with Facebook? </b></summary>
 <p>
@@ -29,7 +29,7 @@ Though there are some limitations of the same as mentioned, after completing emb
 
 1. Respond to unlimited customer-initiated conversations(24-hour messaging windows.)
 2. Send business-initiated conversations to 50 unique customers in a rolling 24-hour period.
-3. Register up to two(2) phone numbers.
+3. Register up to two(2) phone numbers.<br/> **Note:** It is suggested to complete the business verification before making your bot live on WhatsApp to ensure unlimited business-initiated conversations after the increase in the daily limit tier.
 
 </p>
 </details>
@@ -150,7 +150,7 @@ WA business application is an Android app that businesses can download but has l
 
 
 
-### During Whatsapp Business account Set Up FAQs
+### Whatsapp Business account setup 
 
 
 <details><summary><b> What is the character limitation for WhatsApp display Name? </b></summary>
@@ -209,8 +209,7 @@ Answer yet to be drafted.
 </details>
 
 
-
-### Post Whatsapp Business Account Set Up FAQs
+### WhatsApp Configuration
 
 
 <details><summary><b> How to get the green tick? </b></summary>
@@ -230,7 +229,7 @@ Yes. Multiple numbers can be added to the same WABA account.
 </details>
 
 
-<details><summary><b> Will the services be affected </b></summary>
+<details><summary><b> Will the services be affected?</b></summary>
 <p>
 
 For 24hrs the service will remain broken during migration.
