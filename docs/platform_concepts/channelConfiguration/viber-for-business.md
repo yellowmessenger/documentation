@@ -68,7 +68,9 @@ To connect Viber's business channel to your brand, you need to follow these step
 
    ![](https://i.imgur.com/1u5fmt6.png)
 	
-3. Now, your Viber business has connected successfully, and you can test your bot.	
+3. Navigate to the **Overview** page, under **Active channels** section, you can see that Viber business channel is successfully connected to your bot.
+	
+	![](https://i.imgur.com/6wvBqJp.png)
 	
 ## 3. To access Viber business account
 	
