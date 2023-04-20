@@ -7,10 +7,10 @@ sidebar_label : Chat widget FAQs
 ## Setup page related FAQs
 
 <details>
-<summary>Chatbot is auto-scrolling upwards after navigating to a different tab by clicking the URL from the chatbot. How to resolve this issue</summary>
+<summary>Chatbot is auto-scrolling upwards after navigating to a different tab by clicking the URL from the chatbot. How to resolve this issue?</summary>
 <div>
  <br/>
- <div>You need to enable the "Scroll the chat window to the bottom" option in the Chat widget's <b>Settings</b> tab. Navigate to the <b>Channels > Chat widget > Settings</b></div>
+ <div>You need to enable the "Scroll the chat window to the bottom" option in the Chat widget's <b>Settings</b> tab. Navigate to the <b>Channels > Chat widget > Settings.</b></div>
   </div>
 </details>
 
