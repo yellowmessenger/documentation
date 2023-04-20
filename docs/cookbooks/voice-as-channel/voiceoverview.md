@@ -86,9 +86,3 @@ Yellow.ai offers a complete voice bot solution that integrates speech recognitio
 5. **Channels module**: Businesses can easily set up their voice bots, including configuring the IVR channel, and associated phone numbers.
 6. **Integration module**: Along with leading speech recognition and speech synthesis technologies, businesses can integrate their Voice Bots with other external services like CRM. These integrations can then be utilized in the bot flows, making it possible to create a more personalized experience for customers.
 
-----
-
-<audio controls>
-  <source src="static/voice/demo.mp3" type="audio/mpeg"></source>
-  Your browser does not support the audio element.
-</audio>

@@ -3,8 +3,9 @@ title : Alias name for agents
 sidebar_label : Alias name for agents 
 ---
 
-
-> The Alias name feature is available for enterprise customers only.
+:::note
+The Alias name feature is available for enterprise customers only.
+:::
 
 Maintaining confidentiality is crucial in chat conversations. To ensure privacy, you can display an alias name instead of an agent's actual name. This feature enables you to record information in reports while remaining anonymous. For security reasons, the system will store the agent's real name, but only the alias name will be visible on the widget. If you don't provide an alias name, the system will display the real name.
 
@@ -12,11 +13,11 @@ Here are some scenarios where you can use this feature:
 
 ## 1. Add an alias name to be displayed on the chat widget
 
-> Only **Inbox admins** can modify agent details. 
-> 
+> Only **Inbox admins** can modify agent details.      
+
+
+
 When customers connect with an agent, the alias name will appear on the chat screen.
-
-
 
 1. Open **Inbox** > **Settings** > **Team** > **Agents**.
 2. Select the agent you want to assign an alias name to.
@@ -33,7 +34,8 @@ The **widget** and **preview** screens will show the alias name when available:
 
 ## 2. Display alias name in the chat when the agent is connected
 
-> This feature is available to **Bot developers** with access to create studio flows, provided that the **Inbox admin** has configured the alias names.. 
+> This feature is available to **Bot developers** with access to create studio flows, provided that the **Inbox admin** has configured the alias names.
+
 
 You can customize the message with alias name and display it to the bot user after they are connected to an agent. 
 
