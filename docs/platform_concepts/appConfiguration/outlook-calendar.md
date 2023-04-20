@@ -70,7 +70,7 @@ This actions allows you to create online events in your default calendar, specif
 
 <img src="https://i.imgur.com/FJuP7u7.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 | Field Name      | Sample Input                                                               | Datatype    | Remarks                                                                   |
 |----------------|----------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------|
@@ -139,7 +139,7 @@ The Get Calendar Events function returns a list of events from the your default 
 
 <img src="https://i.imgur.com/qrexSTP.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 | Field Name         | Sample Input                | Data Type | Remarks                                                             |
 |--------------------|-----------------------------|-----------|---------------------------------------------------------------------|
@@ -194,7 +194,7 @@ This option allows you to set parameters such as date, time, and attendees for a
 <img src="https://i.imgur.com/1KIjMYr.png" alt="drawing" width="60%"/>
 
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 
 | Field Name                      | Sample Input                                                                                                                                                                                                                    | Data Type | Remarks                                                                                                                                                                                                             |
@@ -249,7 +249,7 @@ This action allows you to change the details of an event that is already on your
 
 <img src="https://i.imgur.com/fJOuWmX.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 | Field Name           | Sample Input                                                                                                             | Datatype   | Remarks                                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------|
@@ -296,7 +296,7 @@ This action adds a file to an event, and the size of the file should be less tha
 
 <img src="https://i.imgur.com/wiMkvcB.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 
 | Field Name | Sample Input | Data Type | Remarks |
@@ -327,13 +327,41 @@ This action lets the meeting organizer cancel an event by sending a cancellation
 
 <img src="https://i.imgur.com/aUqeWRp.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 | Field Name                  | Sample Input                 | Data type | Remarks                  |
 |-----------------------------|------------------------------|-----------|--------------------------|
 | Event ID                    | AAMkAGI1AAAt9AHjAAA=          | String    | Event ID.                |
 | Send a cancellation message | Out of office                | String    | Sends a cancellation message.    |
 
+### 2.7 Get event details
+
+This action will provide information about a specific event, including its properties and relationships. The start and end times of the event will be in the time zone chosen by the user.
+
+<img src="https://i.imgur.com/wQrxfrG.png" alt="drawing" width="60%"/>
+
+
+The table below has sample inputs, data types and remarks of the fields for this action.
+
+| Field Name         | Sample Input                                                                                              | Data type | Remarks                                                                                                                               |
+| ------------------ | --------------------------------------------------------------------------------------------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------- |
+| Event ID           | AAMkADA1ODMyOWE0LWNkZmUtNDJiYy1hNWI1LWE1NmQwY2RmNDhlOQBGAAAAAAAXtAWtBH7%2BRLmY0nAoX3PzBwCh69yUb7hwSIjZoGosUcSzAAAAAAENAACh69yUb7hwSIjZoGosUcSzAAAFJQ9WAAA%3D | String    | Unique identifier for the event                                                                                                      |
+| Response time zone | India standard time                                                                                       | String    | Provides the start and end time of the event adjusted to the time zone specified by the user.                                         |
+
+### 2.8 Get busy time slots
+
+This action shows a someone's scheduled events during a specific time period from their default calendar, indicating whether they are free or busy. If no events are scheduled, the user is assumed to be free during that time range.
+
+<img src="https://i.imgur.com/1ULuPGI.png" alt="drawing" width="60%"/>
+
+The table below has sample inputs, data types and remarks of the fields for this action.
+
+| Field Name         | Sample Input                                                                                     | Datatype | Remarks                                                                                         |
+|--------------------|--------------------------------------------------------------------------------------------------|----------|-------------------------------------------------------------------------------------------------|
+| Email addresses    | ["samanthab@contoso.onmicrosoft.com", "Rahul@contoso.onmicrosoft.com"]                         | Array    | SMTP addresses of users to get availability information for.                                    |
+| Start time         | {"dateTime":"2023-04-04T09:00:00.000","timeZone":"India Standard Time"}                         | Object   | The start date, time, and time zone of the event.                                              |
+| End time           | {"dateTime":"2023-04-04T12:43:49.4949","timeZone":"India standard Time"}                        | Object   | The end date, time, and time zone of the event.                                                |
+| View available interval | 40                                                                                               | number   | Duration of a time slot in the [availability View] of the response.                            |
 
 
 
