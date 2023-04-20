@@ -1021,6 +1021,7 @@ module.exports = {
             "platform_concepts/appConfiguration/magento",
             "platform_concepts/appConfiguration/microsoft-dynamics",
             "platform_concepts/appConfiguration/microsoft-graph",
+            "platform_concepts/appConfiguration/outlook-calendar",
             "platform_concepts/appConfiguration/netcore",
             "platform_concepts/appConfiguration/nice-incontact",
             "platform_concepts/appConfiguration/okta",
