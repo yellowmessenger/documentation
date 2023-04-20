@@ -14,24 +14,35 @@ In this article, you will learn about the different types of prompt nodes:
 
 ---
 
+## 1. Common Features in all the Prompt Nodes
+
 **Randomization**
 
-The nodes that have an option to ask the users a question or display a text are enabled with **Randomization** feature. On any such node, click **Add multiple texts for randomizing**. Enter variations of text that you want your users to see. This feature will display different messages to the user in a random order (instead of the same message every time), making the conversation more humanly. 
-  
-   ![](https://i.imgur.com/KucDPVJ.png)
+Randomization is a feature available in nodes that allows chatbots show different variation of greeting messages/ questions to users, making the conversation feel more natural and human-like.
+
+1. To add multiple texts, click **Add multiple text for randomizing** on the node. 
+2. Enter variations of the text that you want your users to see. 
+
+
+![](https://i.imgur.com/plxv0Yb.png)
+
+
+**Delay**
+
+You can set a delay in displaying each of these nodes. 
+
+**Fetch from**
+
+A Fetch from field will be provided in most of the fields to render the dynamic data of that respective node.
+
 
 ---
 
-**Configure text displayed on the bot**
 
-To know more about how to configure the text, click [here](https://docs.yellow.ai/docs/cookbooks/studio/text-format).
-
----
-
-## <a name="ud"></a>  1. Frequently used promts
+## <a name="ud"></a>  2. Frequently used promts
 
 
-### 1.1 Question
+### 2.1 Question
 
 > This node is available for voice bots. 
 
@@ -49,12 +60,18 @@ Click **Fetch from** to see the dynamic value. You can edit the value of the que
 ```
 
 ---
-### 1.2 Name
+### 2.2 Name
 
 > This node is available for voice bots. 
 
 
-Ask and validate the user name with this node. When the user enters a sentence instead of the first + last name, validation fails, and the bot replies. ‘Can you please repeat this, looks like an invalid name’.
+Ask and validate the user name with this node. 
+
+**Validator**
+
+In the **If validation fails field**, enter the message to be displayed when the user enters an invalid response.
+
+For example, if users enter anything instead of their names(first + last name), validation will fail and the bot will display ‘Can you please repeat this, looks like an invalid name’.
 
 :::note
  If you are building a multilingual bot, it's recommended to use a Question node instead of a Name node.
@@ -63,51 +80,83 @@ Ask and validate the user name with this node. When the user enters a sentence i
 ![](https://i.imgur.com/Rr81uih.png)
 
 
-Create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the user name in it. 
+[To store this response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables), create a Name [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the user name in it. 
 
 
 ![](https://i.imgur.com/t8UFyzS.png)
 
+**Function autovalidation in nodes**
+
+Yellow.ai automatically validates the **Name** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
+
+|Input Type|User Input|Accepted/Not Accepted as a valid name|Name processed by the platform|
+|------|------|-------|------|
+|Only numbers|139344|Not Accepted|-|
+|Numbers + Special characters|13143=?|Not Accepted|-|
+|At least one alphabet, Numbers + Special character|1243242swqw=?|Accepted|1243242swqw=?|
+|Gibberish|scsadf|Accepted|scsadf|
+|Sentence|My Name is Vikash|Accepted|Vikash|
+|Sentence in any language |मेरा नाम विकाश कुमार |Accepted|काश कुमार|
+
 ---
 
-### 1.3 Phone
+### 2.3 Phone
 
 > This node is available for voice bots. 
 
-Ask and validate the phone number with this node. If the bot is customised for a specific region, select a **default ISD** value.
+Ask and validate phone numbers with this node. If the bot is customised for a specific region, select a **default ISD** value.
 
-When the user enters a number of length greater or less than the expected number (10 for India +91), validation fails and the bot replies, 'Enter a valid phone number'.
+In the **If validation fails field**, enter the message to be displayed when the user enters an invalid response.
+
+For example, if users enters a number of length greater or less than the expected number (10 for India +91), validation fails and the bot replies, 'Enter a valid phone number'.
 
 
 ![](https://i.imgur.com/OE9W6fH.png)
 
 :::info
- One phone node can only support validation of one country code. 
+One phone node can only support validation of one country code. 
 :::
 
-Create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the number in it. 
+[To store this response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables), create a Phone [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the phone number in it. 
 
+
+If default ISD is not selected, the platform will fetch India's ISD and try to validate the user inputs based on the Indian Phone numbers. If the ISD is selected, then it will validate the user inputs based on the selected country's phone numbers.
+
+**Function autovalidation in nodes**
+
+Yellow.ai automatically validates the **Phone** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
+
+|Input Type|User Input|Accepted/Not Accepted as a valid phone number|Phone number processed by the platform|
+|------|------|-------|------|
+|Gibberish |sdsad1211|Not Accepted|-|
+|Gibberish with special characters|eqwrj#|Not Accepted|-
+|9 digit no (If India selected as ISD/ Nothing selected in ISD)|704430890|Not Accepted|-|
+|10 digit No( If India selected as ISD)|7044308905|Accepted|7044308905
+|Sentences with 9 digit no (If India is selected)|My No is 703330890|Not Accepted|-|
 
 ---
 
-### 1.4 Quick Replies
+### 2.4 Quick Replies
 
-Display a question along with quick reply buttons as the response for this node.
-Users can either select from options or manually type out options.
-You can drag and extend each quick reply to attach it to the flow you want to use further. You can also configure fallback, which will work when none of the quick replies are validated from the user's input.
+Display a question along with quick reply buttons as the response for this node.Users can send their response by either clicking the buttons or manually typing them out.
+
+You can connect each quick reply to a flow that should be triggered when this button is clicked. You can also configure fallback, which will work when none of the quick replies are validated from the user's input.
 
 
 ![](https://i.imgur.com/Ign5Rz9.png)
 
 
+You can customize these buttons. To do so, click **Configure buttons**.
 
-You can further customize buttons by adding:
-* **Button value** - If configured, this is the actual value of the button - that will go to any Database insert or be stored in a variable.
-* **Text aliases**: Other phrases users can type which means the same as the text in the button. 
-* **Link and Postback**: External URL link. 
+<img src="https://i.imgur.com/HlAIlst.png" alt="drawing" width="80%"/>
+
+* **Button value** - This refers to the value that a button will hold if configured, which can either be stored in a variable or inserted into a database.
+* **Text aliases**: Other phrases users can type which means the same as the text in the button, for example number can also be typed as num. or no. 
+* **Link and Postback**: On clicking this button, the users will be redirected to this link.
 * **Prefix Image**: Image icon that you want to show for the button.
 
-![](https://i.imgur.com/mlA3ZYS.png)
+![](https://i.imgur.com/qi0BKMW.png)
+
 
 #### Whatsapp Quick replies
 
@@ -173,7 +222,7 @@ To do this, we have a **Fetch from** option in the quick reply prompt. Here, ins
 To dynamically generate quick replies, you can apply any logic in code (functions) around quick replies and store value of final object in intended variable. For example, you can apply for a loop around options to dynamically add to them while parsing through some API responses etc.
 
 
-### 1.5 Email
+### 2.5 Email
 
 Ask, validate and store the user's email with this node.
 
@@ -181,14 +230,26 @@ Ask, validate and store the user's email with this node.
 ![](https://i.imgur.com/LRJ93DG.png)
 
 
-**Validation**
+**Validator**
+
 Bot checks if the entered email is in username@company.domain format.
 
-Create an email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the email ID in it. 
+[To store the response](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables) (email address) in a variable, create an email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the email ID in it. 
+
+**Function autovalidation in nodes**
+
+Yellow.ai automatically validates the **Email** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
+
+|Input Type|User Input|Accepted/Not Accepted as a valid email address|Email address processed by the platform|
+|------|------|-------|------|
+|number@valid email domain|12@gmail.com|Not Accepted|-|
+|Text @valid email domain |1234w@gmail.com|Not Accepted|-
+|nothing@valid email domain|@gmail.com |Not Accepted|-|
+|Sentence (validator works on other languages too)|My email is vikash@gmail.com|Accepted|vikash@gmail.com|
 
 ---
 
-### 1.6 Carousel 
+### 2.6 Carousel 
 
 Display interactive carousel cards with buttons with this node. Carousel can be used in places like displaying a list of products.
 
@@ -210,7 +271,7 @@ You can also add multiple buttons to a carousel. Clicking on the button can disp
 Carousels without buttons will act as Messages instead of Prompts.
 :::
 
-**Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.  
+**Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.
 
 #### Dynamic Carousels
 
@@ -318,10 +379,10 @@ return new Promise(resolve => {
 ---
 
 
-## <a name="feature"></a> 2. Other prompts
+## <a name="feature"></a> 3. Other prompts
 
 
-### 2.1 Date 
+### 3.1 Date 
 
 Users will be able to select a date on the calendar widget with this node.
 If the user input contains a date or a time, it will pass the validator. Else the specified validation fail message will be sent.
@@ -343,7 +404,7 @@ Example of a Single Date Picker.
 ![](https://i.imgur.com/QAIhG8M.png)
 
 
-**Storing date variables**: Post validation, the entered date by the users will be stored in the specified variable as an object. 
+[**Storing date variables**](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables): Post validation, the entered date by the users will be stored in the specified variable as an object. 
 
 The structure of the object is as follows:
 
@@ -385,15 +446,15 @@ The structure of the object is as follows:
 ```
 ---
 
-### 2.2 WhatsApp List
+### 3.2 WhatsApp List
 
-Configure lists displayed on the WhatsApp channel with this node. 
+This node lets you configure the lists displayed on the WhatsApp channel. WhatsApp API provides a better UI for businesses to send List items (within 24 hours window).
 
-WhatsApp API provides a better UI for businesses to send List items (within 24 hours window). 
 To create a WhatsApp List:
-* Select WhatsApp List under Prompt Nodes.
-* Edit Body Message, Footer, Section Title and Button Title/Name and list.
 
+1.  Select **WhatsApp List** under P**rompt Nodes**.
+2.  Populate the fields **Message Body**, **Title** and **Row**.
+3.  To provide row details, click a row and populate the fields **Title**, **Value** and **Description**.
 
 ![](https://i.imgur.com/vmDdimd.png)
 
@@ -482,7 +543,7 @@ Enable **Advanced options** and `i` option next to **fetch from** to see the dyn
 
 ---
 
-### 2.3 Multi Select 
+### 3.3 Multi Select 
 
 :::info
 - Supported for all the mobile SDKs (Flutter, Android , iOS) and web.
@@ -498,7 +559,7 @@ Similar to the Quick Replies node, this node displays a question along with quic
 
 ---
 
-### 2.4 Location 
+### 3.4 Location 
 
 Ask, validate and store user location with this node. 
 
@@ -513,14 +574,36 @@ It is then stored in the specified variable with the following format:
 ![](https://i.imgur.com/ukkmvnZ.png)
 
 
-You can also send a "**Share location**" button to allow users to share their current location. Customize the text in this button by clicking on it.
+You can also send a **Share location** button to allow users to share their current location. Customize the text in this button by clicking on it.
 
+<img src="https://i.imgur.com/vRKzKv4.png" alt="drawing" width="50%"/>
+![](https://i.imgur.com/bicgYat.png)
+
+The following screenshot is how **Share your location** will look on your bot.
 
 ![](https://i.imgur.com/bicgYat.png)
 
+**Function autovalidation in nodes**
+
+Yellow.ai automatically validates the **Location** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
+
+Location has various attributes. For e.g., lets say that we have stored the user response in obj type variable named “address”,
+
+You can fetch Pin Code through : variables.address.postalcode
+You can also fetch the City code through: variables.address.city
+
+|Input Type|User Input|Accepted/Not Accepted as a valid location|Pincode processed by the platform|City processed by the platform
+|------|------|-------|------|---------|
+|Only Pincode |800007|Accepted|800007|-
+|City+ Pincode|Patna 800007|Accepted|800007|Patna
+|City+ wrong pincode|Patna 110007|Accepted (with corrected Pin code)|800001 (Pincode will be corrected by the platform)|Patna
+|City + wrong format pin code|Patna 80007|Accepted (with corrected pin code)|800001 (Pincode will be corrected by platform)|Patna
+|Only Address (without city and pin)|Hauz Khas|Accepted|110016 (correct)| Delhi|
+
+
 ---
 
-### 2.5 Store comment
+### 3.5 Store comment
 
 
 This node helps you to skip triggering of NLU, intents, or entities for a respective flow. Using this node, you can provide inputs such as feedback, questions, suggestions, and so on.
@@ -539,7 +622,7 @@ In the store comment node, there is a toggle to enable Quick reply. Quick reply 
 
 ---
 
-### 2.6 File Prompt 
+### 3.6 File Prompt 
 
 Ask, validate and store JPG/PNG/MP4/MOV/HEVC files with this node.
 The file size can be set to a certain number. 
@@ -552,7 +635,7 @@ Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/bu
 
 ---
 
-### 2.7 Feedback 
+### 3.7 Feedback 
 
 :::info
 - Supported for all the mobile SDKs (Flutter, Android, iOS) and web.
@@ -575,7 +658,7 @@ On this prompt, you can configure what your questions should be when you ask for
 
 ---
 
-### 2.8 Speak
+### 3.8 Speak
 
 > This node is available for voice bots. 
 
@@ -603,7 +686,7 @@ Sample SSML code:
 
 ---
 
-### 2.9 Input
+### 3.9 Input
 
 Ask and store user input and other comments with this node. 
 
@@ -624,7 +707,7 @@ For better & dynamic conversation design, use the functionalities of the input n
 
 ---
 
-## 3. Make prompt smarter
+## 4. Make prompt smarter
 
 Make Prompt Smarter option is available on all the prompt nodes. 3 options available broadly are auto complete, autoskip and other related options. 
 
@@ -632,7 +715,7 @@ Make Prompt Smarter option is available on all the prompt nodes. 3 options avail
 
 ----
 
-### 3.1 Auto complete
+### 4.1 Auto complete
 
 Autocomplete is set so that the bot can start predicting the rest of the word or sentence for users as they start typing. For example, if you want to find your location and you start typing Jai, you will get the city names starting with Jai - Jaipur. Similarly, if you type Ban, you will get suggestions such as Bangalore, Bangla, Banswara, etc.
 
@@ -682,7 +765,7 @@ return new Promise(resolve => {
 
 --------
 
-### 3.2 Autoskip
+### 4.2 Autoskip
 
 You can keep your conversations from being repetitive by auto-skipping the prompt with entities or variables if you already received the value and have stored it.
 
@@ -696,7 +779,7 @@ Configure Auto-skip at a global level (from tools section), click [here](https:/
 
 ---
 
-### 3.3 Additional 
+### 4.3 Additional 
 
 1. **Use this as Unique ID for User**: Info entered at this node will be unique for a user. 
 For example, instead of setting a new user ID, you can use the phone number as a unique ID to recognize this user. Other nodes that can be used as Unique IDs are Car Number, Aadhar Card, SSN, etc. that are unique to an individual. 
@@ -724,7 +807,7 @@ For example, instead of setting a new user ID, you can use the phone number as a
 :::
 
 --- 
-## 4. Voice input node
+## 5. Voice input node
 
 A voice input node is used to gather user information, process it, and manage various scenarios of conversing in a human-like manner. This node is in auto-sync with the conversation design so all the designs you add there will appear here automatically. To learn about using this node, click [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput).
 
