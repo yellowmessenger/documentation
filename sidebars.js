@@ -77,12 +77,19 @@ module.exports = {
 // Reporting  
 {
   type: "category",
-  label: "Reporting",
+  label: "Analytics and Reports",
   link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
   collapsed: true,
   items: [
-          "cookbooks/voice-as-channel/reporting/cdr",
           "cookbooks/voice-as-channel/reporting/dashboard",
+          {
+            type: "category",
+            label: "Advanced reporting",
+            collapsed: true,
+            items: [
+                   "cookbooks/voice-as-channel/reporting/advance/cdr",
+                ],
+              },
       ],
     },
 
@@ -140,7 +147,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/inbox/custom-usecases",
-   // "cookbooks/inbox/emailvschat",
+    "cookbooks/inbox/alias",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
     "cookbooks/inbox/transferwithoutinfo",
@@ -958,6 +965,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/text-to-speech",
             "platform_concepts/channelConfiguration/chat-widget-notification",
             "platform_concepts/channelConfiguration/chat-separator",
+            "platform_concepts/channelConfiguration/domain-whitelisting",
             "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/pwa",
             "platform_concepts/channelConfiguration/character-limits-sdk",

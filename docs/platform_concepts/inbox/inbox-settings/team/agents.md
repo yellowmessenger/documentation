@@ -37,10 +37,12 @@ Follow the given steps to configure agent settings:
 
 ### 1.1 Edit/Modify existing agent properties
 
-![](https://i.imgur.com/amJZAJi.jpg)
+![](https://i.imgur.com/kD3hLBp.png)
 
 - To change the basic properties of an agent, click on the edit icon. 
     - **Name** and **Description**: You can define the agent **Name** and **Description**, which will be visible to the end customer when they are interacting with the inbox agent. Description can be set as per the industry, example: Customer support agent, Live chat, Client help specialist, Customer representative, etc. 
+    
+    - **Alias name**(for enterprise yellow.ai customers): Alias name is used to conceal the agent's name from the customer, you have the option to show an Alias name instead of agent name in the chat window. The agent's information can still be tracked in reports, but a substitute name can be displayed to the customer. Learn more [here](https://docs.yellow.ai/docs/cookbooks/inbox/alias).
 
     - **Display picture**: Add an image by clicking on **Upload photo**. When the agent is assigned to a customer, the avatar, name and description mentioned in the agent settings will be visible to the customer. 
     
