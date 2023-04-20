@@ -70,7 +70,7 @@ This actions allows you to create online events in your default calendar, specif
 
 <img src="https://i.imgur.com/FJuP7u7.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 | Field Name      | Sample Input                                                               | Datatype    | Remarks                                                                   |
 |----------------|----------------------------------------------------------------------------|-------------|---------------------------------------------------------------------------|
@@ -139,7 +139,7 @@ The Get Calendar Events function returns a list of events from the your default 
 
 <img src="https://i.imgur.com/qrexSTP.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 | Field Name         | Sample Input                | Data Type | Remarks                                                             |
 |--------------------|-----------------------------|-----------|---------------------------------------------------------------------|
@@ -194,7 +194,7 @@ This option allows you to set parameters such as date, time, and attendees for a
 <img src="https://i.imgur.com/1KIjMYr.png" alt="drawing" width="60%"/>
 
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 
 | Field Name                      | Sample Input                                                                                                                                                                                                                    | Data Type | Remarks                                                                                                                                                                                                             |
@@ -249,7 +249,7 @@ This action allows you to change the details of an event that is already on your
 
 <img src="https://i.imgur.com/fJOuWmX.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 | Field Name           | Sample Input                                                                                                             | Datatype   | Remarks                                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------|------------|------------------------------------------------------------------------------------------------------------|
@@ -296,7 +296,7 @@ This action adds a file to an event, and the size of the file should be less tha
 
 <img src="https://i.imgur.com/wiMkvcB.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 
 | Field Name | Sample Input | Data Type | Remarks |
@@ -327,7 +327,7 @@ This action lets the meeting organizer cancel an event by sending a cancellation
 
 <img src="https://i.imgur.com/aUqeWRp.png" alt="drawing" width="60%"/>
 
-The table below has sample inputs, data tyes and remarks of the fields for this action.
+The table below has sample inputs, data types and remarks of the fields for this action.
 
 | Field Name                  | Sample Input                 | Data type | Remarks                  |
 |-----------------------------|------------------------------|-----------|--------------------------|
