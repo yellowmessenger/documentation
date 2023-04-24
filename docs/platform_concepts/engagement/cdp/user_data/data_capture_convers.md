@@ -18,7 +18,7 @@ When a user starts a conversation with the bot and starts capturing user propert
 
 ### Auto-capturing of location-specific information
 
-To optimize your user profiles with better accuracy and enhance profile completeness, the system can auto-capture location specific information for Web and WhatsApp bots.
+To optimize your user records with better accuracy and enhance profile completeness, the system can auto-capture location specific information for Web and WhatsApp bots.
 
 * For users on web bot, the system automatically captures location-specific information such as timezone and country. By using this information, you can create location-based segments that allow for personalized campaigns in Engage.
 
@@ -26,7 +26,7 @@ To optimize your user profiles with better accuracy and enhance profile complete
    <img src="https://i.imgur.com/l51XMt7.png" width="80%"/>
 </center>
 
-* For users on WhatsApp bot, the system automatically captures the phone number and identifies their country and name. However, the system may not capture the user's name in all cases, as the user may not have provided it.
+* For users on the WhatsApp bot, the system automatically captures the phone number and identifies their country and name. However, the system may not capture the user's name in all cases, as the user might not have provided it, or the name might contain numbers or special characters that fail validation for the `firstName` and `lastName` properties.
 
 Any user property captured during the session will be stored in that unidentified record, until the `userId` is captured. 
 
@@ -57,7 +57,7 @@ You can capture the user ID through Prompt or Variable nodes when creating bot f
 If the provided user ID does not exist in User 360, the current record will be updated with the user ID without affecting the details captured during the session.
 
 
-   <img src="https://i.imgur.com/815BUjZ.png" width="80%"/>
+   <img src="https://i.imgur.com/kWWhX4m.png" width="90%"/>
 
 ### When an existing user ID is captured
 
@@ -120,6 +120,9 @@ Learn about the [Effect of merging on user properties](#effect-of-merging-on-use
 * **Properties with single values**: 
    * The user properties that are not present in the identified record will be obtained from the unidentified record. For example, refer to `WhatsAppOptIn`.
    * User properties that already exist in the identified record will be ignored and no changes will be made to them. For example, `firstName` in the above table.
+* **Auto-captured property values**: 
+   * If the existing record has blank values, the country and timezone in the existing record will be updated with the auto-captured values.
+   * If the existing record has some value for timezone or country, the system will skip those values without making any changes. 
 * **Properties with list values**: These values will be unified. Example: `labels` in the above table.
 *  The **Unidentified record** will be deleted post-merging.
    
