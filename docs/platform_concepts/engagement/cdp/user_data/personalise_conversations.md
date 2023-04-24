@@ -1,6 +1,6 @@
 ---
 title : Create personalised conversations using user properties
-sidebar_label : Personalise conversations using user properties
+sidebar_label : Personalise conversations with user properties
 ---
 
 Through the [Bot Builder](https://docs.yellow.ai/docs/platform_concepts/studio/overview), you can create personalized conversations using user data. This data can include user details, event information, preferences, and more. For example, you can address users by name during the conversation and send personalized messages based on their preferences. 

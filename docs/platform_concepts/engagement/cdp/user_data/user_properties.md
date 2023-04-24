@@ -177,7 +177,7 @@ To set the order:
    ![](https://i.imgur.com/Eyk5uce.gif)
 
 
-
+<!--
 
 ## 3. Create personalised conversations with user properties
 
@@ -195,3 +195,5 @@ You can improve the engagement rates by creating personalised content. To do thi
 
 
 <img src="https://i.imgur.com/UWscij0.png" alt="drawing" width="60%"/>
+
+-->
