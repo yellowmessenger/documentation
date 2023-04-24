@@ -1,6 +1,6 @@
 ---
 title : Get access to Call Details Report (CDR) of your voice bot on Insights module
-sidebar_label : Call details report 
+sidebar_label : Call details report (CDR)
 ---
 
 
@@ -80,6 +80,7 @@ Suppose you are a new support center on the yellow.ai voice bot, and you need to
     ![](https://i.imgur.com/K59SALi.png)
 
 
+> Understand other operations on [Insights modules](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights). 
 
 
 

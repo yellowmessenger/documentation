@@ -3,19 +3,13 @@ title : Alias name for agents
 sidebar_label : Alias name for agents 
 ---
 
-:::note
-The Alias name feature is available for enterprise customers only.
-:::
-
 Maintaining confidentiality is crucial in chat conversations. To ensure privacy, you can display an alias name instead of an agent's actual name. This feature enables you to record information in reports while remaining anonymous. For security reasons, the system will store the agent's real name, but only the alias name will be visible on the widget. If you don't provide an alias name, the system will display the real name.
 
 Here are some scenarios where you can use this feature:
 
 ## 1. Add an alias name to be displayed on the chat widget
 
-> Only **Inbox admins** can modify agent details.      
-
-
+> Only **Inbox admins** can modify agent details.        
 
 When customers connect with an agent, the alias name will appear on the chat screen.
 
