@@ -1,5 +1,5 @@
 ---
-title : How user records are created through conversations & unified in User 360
+title : How user records are created through conversations & unified in User 360?
 sidebar_label : User records creation & unification process
 ---
 
@@ -16,20 +16,28 @@ When a user starts a conversation with the bot and starts capturing user propert
 
    ![](https://i.imgur.com/3nMWou9.png)
 
-Any user property captured during the session will be stored in that unidentified record, until the userId is captured. 
+### Auto-capturing of location-specific information
 
-For instance, if a user starts a conversation and provides his name, an unidentified record will be created with the given name.
+To optimize your user profiles with better accuracy and enhance profile completeness, the system can auto-capture location specific information for Web and WhatsApp bots.
 
-<center>
-   <img src="https://i.imgur.com/afNlSpI.png" width="80%"/>
-   </center>
-
-As the user provides more user properties, the record will be updated accordingly.
+* For users on web bot, the system automatically captures location-specific information such as timezone and country. By using this information, you can create location-based segments that allow for personalized campaigns in Engage.
 
 <center>
-   <img src="https://i.imgur.com/qLFP8CG.png" width="70%"/>
+   <img src="https://i.imgur.com/l51XMt7.png" width="80%"/>
 </center>
 
+* For users on WhatsApp bot, the system automatically captures the phone number and identifies their country and name. However, the system may not capture the user's name in all cases, as the user may not have provided it.
+
+Any user property captured during the session will be stored in that unidentified record, until the `userId` is captured. 
+
+
+<center>
+   <img src="https://i.imgur.com/SL1Z0Ca.png" width="80%"/>
+</center>
+
+:::note
+To know properties that are auto-captured for different channels, see [Automated capturing of location-specific data](/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#automated-capturing-of-location-specific-data).
+:::
 
 <!-- * All user properties captured for a record will be mapped to the user as soon as the `userId' is captured during the session.
 
@@ -59,18 +67,19 @@ These are the steps that take place:
 
 1. It **Switches** to the existing record.
 
-   ![](https://i.imgur.com/paPd0mu.png)
+   ![](https://i.imgur.com/v2rK5EV.png)
 
 
 2. It then **Merges** the details that are not available in the existing record.
 
   <center>
-   <img src="https://i.imgur.com/jUzFP3o.png" width="90%"/>
+   <img src="https://i.imgur.com/p9cDdHl.png" width="90%"/>
    </center>
 
    * **Properties with single values**:<br/>
    The user properties that are not present in the identified record will be obtained from the unidentified record. For example, refer to `emailOptin` in the above table. <br/>The user properties that already exist in the identified record will be skipped without making any change. For example, refer to `firstName` in the above table.
    * **Properties with list values**: The values will be unified. Example: `labels` in the above table.
+   * **Auto-captured property values**: The blank values for country and timezone in the existing record will be updated with the auto-captured values.
 3. It deletes the unidentified record after merging.
 
 
@@ -84,9 +93,9 @@ This happens when an user ID provided for an unidentified record already exists 
 
 In this, the mapping **Switches** to the existing record and the details that are not available in the existing record will be updated as explained in the following.
 
-   ![](https://i.imgur.com/paPd0mu.png)
 
-   ![](https://i.imgur.com/jUzFP3o.png)
+   ![](https://i.imgur.com/vfkGucl.png)
+
 
 See the [Effect of merging on user properties](#effect-of-merging-on-user-properties).
 

@@ -39,6 +39,25 @@ Alternatively, you can also use the Variable node (under Actions) to store a spe
 
   <center><img src="https://i.imgur.com/mAFehuO.png" width="60%"/></center>
 
+***
+
+## Automated capturing of location-specific data
+
+This optimizes your user profiles with better accuracy and enhances profile completeness, while saving time and effort. By using this information, you can create location-based segments that allow for personalized campaigns and tailored content.
+
+:::note
+This is currently supported for web, email, and WhatsApp bots.
+:::
+
+The following are the auto-captured details for each bot channel.
+
+Channel | User properties captured | Additional details
+--------- | --------------------- | ----------
+WhatsApp bot | Phone number, Country code | Captures country code using the phone number.
+Web bot | Timezone and country code | Uses IP address to capture these details.
+Email channel | Email address | Captures this when a user sends an email for the first time using email ticketing.
+
+
 
 ***
 
@@ -58,6 +77,9 @@ To store the user’s response in User 360, in **Store Response in**, choose var
 
 
    ![](https://i.imgur.com/h8FfpZE.png)
+
+
+
 
 
 

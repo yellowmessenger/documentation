@@ -624,6 +624,18 @@ module.exports = {
     "platform_concepts/engagement/cdp/user_data/user_properties",
     {
       type: "category",
+      label: "User management via bot conversations",
+      link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data/data_capture_convers",
+        "platform_concepts/engagement/cdp/user_data/store_conv_data",
+        "platform_concepts/engagement/cdp/user_data/personalise_conversations",
+        
+      ]
+    },
+    {
+      type: "category",
       label: "Add users",
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/add_user_overview'},
       collapsed: true,
@@ -634,6 +646,7 @@ module.exports = {
         "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
       ]
     },
+    
     "platform_concepts/engagement/cdp/user_data/viewuser",
     "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
     
