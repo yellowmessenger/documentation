@@ -15,6 +15,8 @@ In this article, you will learn:
 
 ## 1. Create a Twitter account
 
+To create a Twitter account, follow these steps:
+
 1. Navigate to the [Twitter website](https://twitter.com/i/flow/signup) and click **Create account**.
 
 2. Enter the required information, such as your name, email, date of birth, and click **Next**.
@@ -151,7 +153,7 @@ To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
 ## 4. Test your bot on Twitter
 
-After connecting your bot to a Twitter, you need to test your bot.
+After connecting your bot to a Twitter, you can test your bot.
 
 To test your bot on Twitter, follow these steps:
 

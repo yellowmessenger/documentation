@@ -85,3 +85,4 @@ Yellow.ai offers a complete voice bot solution that integrates speech recognitio
 4. **Insights module**: The Insights module provides businesses with detailed analytics and metrics related to their voice bots' performance, such as the number of calls, call duration, and API response time.
 5. **Channels module**: Businesses can easily set up their voice bots, including configuring the IVR channel, and associated phone numbers.
 6. **Integration module**: Along with leading speech recognition and speech synthesis technologies, businesses can integrate their Voice Bots with other external services like CRM. These integrations can then be utilized in the bot flows, making it possible to create a more personalized experience for customers.
+

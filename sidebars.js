@@ -77,12 +77,19 @@ module.exports = {
 // Reporting  
 {
   type: "category",
-  label: "Reporting",
+  label: "Analytics and Reports",
   link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
   collapsed: true,
   items: [
-          "cookbooks/voice-as-channel/reporting/cdr",
           "cookbooks/voice-as-channel/reporting/dashboard",
+          {
+            type: "category",
+            label: "Advanced reporting",
+            collapsed: true,
+            items: [
+                   "cookbooks/voice-as-channel/reporting/advance/cdr",
+                ],
+              },
       ],
     },
 
@@ -140,7 +147,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/inbox/custom-usecases",
-   // "cookbooks/inbox/emailvschat",
+    "cookbooks/inbox/alias",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
     "cookbooks/inbox/transferwithoutinfo",
@@ -896,7 +903,9 @@ module.exports = {
               collapsed: true,
               items: [
             "platform_concepts/channelConfiguration/whatsapp-configuration",
+            "platform_concepts/channelConfiguration/whatsapp-product-catalog",
             "platform_concepts/channelConfiguration/wa-migration",
+            "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
@@ -971,8 +980,10 @@ module.exports = {
             "platform_concepts/channelConfiguration/text-to-speech",
             "platform_concepts/channelConfiguration/chat-widget-notification",
             "platform_concepts/channelConfiguration/chat-separator",
-            "platform_concepts/channelConfiguration/support-banner-migration",
+            "platform_concepts/channelConfiguration/domain-whitelisting",
             "platform_concepts/channelConfiguration/pwa",
+            "platform_concepts/channelConfiguration/support-banner-migration",
+            "platform_concepts/channelConfiguration/chat-widget-errors",
             "platform_concepts/channelConfiguration/character-limits-sdk",
             "platform_concepts/channelConfiguration/chat-widget-faq", 
             // "platform_concepts/channelConfiguration/web",
@@ -1026,6 +1037,7 @@ module.exports = {
             "platform_concepts/appConfiguration/magento",
             "platform_concepts/appConfiguration/microsoft-dynamics",
             "platform_concepts/appConfiguration/microsoft-graph",
+            "platform_concepts/appConfiguration/outlook-calendar",
             "platform_concepts/appConfiguration/netcore",
             "platform_concepts/appConfiguration/nice-incontact",
             "platform_concepts/appConfiguration/okta",

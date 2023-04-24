@@ -3,7 +3,7 @@ title: Nodes Overview
 sidebar_label: Overview
 ---
 
-Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).  
+Nodes are the building blocks of a [Flow/Journeys](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). Each node represents a specific point in the conversation where the chatbot can perform a certain action or respond to a user's input.
 
 In this article, you will learn:
 1. [Types of nodes](#types)
@@ -27,7 +27,7 @@ Nodes are classified into the following types:
 
 After clicking **+Create flow**, you will be directed to a canvas with a **start node** from where you will have the flexibility to design a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
 
-![](https://i.imgur.com/mfLbfy1.jpg)
+![](https://i.imgur.com/RGxw20v.png)
 
 
 ## <a name="addnode"></a> 2. Add nodes
@@ -36,12 +36,12 @@ Nodes can be added in two different ways:
 
 1. Click the black dot in the centre of a node.
 
-![](https://i.imgur.com/UjHsxhK.jpg)
+![](https://i.imgur.com/Nn0SJLw.png)
 
 
 2. Click any 4 of the icons on the left which represent each category of nodes. Drag and drop the nodes.
 
-![](https://i.imgur.com/lTiO07q.png)
+![](https://i.imgur.com/olgqi1w.png)
 
 
 ### 2.1 Build a flow 
@@ -55,34 +55,42 @@ A flow is built using a series of smaller nodes. Each flow must have a minimum o
     * **Actions**: Background actions like Database Insert, Search, or executing an API are performed with these nodes.
     * **Logic**: Conditional branching nodes.
 
-* Connect all the nodes to complete the flow. Test it on the bot. 
+* Connect all the nodes to complete the flow and [test](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) the bot.
 
-![](https://i.imgur.com/kjnaZr1.jpg)
+## <a name="config"></a> 3. Node settings
+
+Node settings can be configured to improve the use of nodes across different purposes. To access the settings, click the **tools** icon in each node,
+
+![](https://i.imgur.com/acjZ9RG.png)
+
+Some of the components included in Node settings are:
+
+### 3.1 Configure nodes on different channels
+
+This option is available for all the nodes that display some information on the bot. For example, message and prompt nodes like name node, text node, video node etc. It is used to configure how the information must be produced on different platforms like **Website, Alexa, Google Assistant, Voice** and other configured channels.
+
+ Multiple channel options are available for each type of node. 
+
+<img src="https://i.imgur.com/xT6Xjnv.png" alt="drawing" width="60%"/>
 
 
-## <a name="config"></a> 3. Configure nodes on different channels
-
-This option is available for all the nodes that display some information on the bot. For example message and prompt nodes like name node, text node, video node etc. It is used to configure how the information must be produced on different platforms like **Website, Alexa, Google Assistant, Voice** and other configured channels.
-
-* Click the tools(channel option) symbol available below the node name.  
-
-![](https://i.imgur.com/5Xv1ndp.png)
-
-* Multiple channel options are available for each type of node. 
-
-![](https://i.imgur.com/78ie4Gm.png)
-
-* Few commonly used configurations are listed below.  
+Each of these channels have multiple configurations. Take a look at them below.
 
 ### 3.1 Configure node for a website
+
+<img src="https://i.imgur.com/7yev2mo.png" alt="drawing" width="60%"/>
 
 * **Hide Input** - When enabled, user input won't be displayed on the bot.
 * **Hide Home Button** - When enabled and this node is executed in the flow, the user will not be able to click on the home button to restart the flow. 
 * **Sensitive information** - Can be enabled to hide passwords and other personal information from being displayed. 
+* **Enable feedback**- Enable this to receive feedback from your user.
 * **Button Auto Width** - For Quick replies and multi select, buttons can be configured.
 * **Enable Multiple Files** - This is used for file-related nodes, which gives the user permission to add more than one file at once.
 
-Enable these options to improve the video viewing experience. 
+Enable these options to improve the video viewing experience. (available in the [Video node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#4-video) settings).
+
+<img src="https://i.imgur.com/txLnGZL.png" alt="drawing" width="60%"/>
+
 * **Thumbnail** - This is the image that will be displayed when the video is not being played. 
 * **Autoplay** - Video will play automatically.
 * **Show controls** - Controls such as Play/Pause, Forward etc will be displayed.
@@ -229,10 +237,14 @@ DTMF digit length, DTMF finish character and DTMF timeout are 3 ways in which th
 
 * **End Session** - Bot session on google assistant comes to an end when this node is reached.
 
+<img src="https://i.imgur.com/FeCAyTA.png" alt="drawing" width="60%"/>
+
+
 ### 3.4 Configure node for Alexa 
 
 * **End Session** - Bot session on Alexa comes to an end when this node is reached.
 
+<img src="https://i.imgur.com/hE9OoiF.png" alt="drawing" width="60%"/>
 
 :::note
 The options will be displayed for each of the configured [channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview). Viber, Telegram, Whatsapp, Google assistant, Alexa, etc.

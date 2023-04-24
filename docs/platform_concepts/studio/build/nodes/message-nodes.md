@@ -8,31 +8,27 @@ You can **randomize** the node text and add a **delay** to each node.
 
 ---
 
+## 1. Common Features in all the message nodes
+
 **Randomization**
 
+Randomization is a feature available in nodes that allows chatbots show different variation of greeting messages/ questions to users, making the conversation feel more natural and human-like.
 
-The nodes which have an option to ask the users a question/ display a text are enabled with **Randomization** feature. On any such node, click **Add multiple text for randomizing**. Enter variations of text that you want your users to see. This feature will display different messages to the user in a random order (instead of the same message every time) making the conversation more humanly. 
->  
-> ![](https://i.imgur.com/k4kQYfg.png)
+1. To add multiple texts, click **Add multiple text for randomizing** on the node. 
+2. Enter variations of the text that you want your users to see. 
 
----
 
-**Configure text displayed on the bot**
+![](https://i.imgur.com/Y2O5tcA.png)
 
-To know more about how to configure the text, click [here](https://docs.yellow.ai/docs/cookbooks/studio/text-format).
-
----
 
 **Delay**
 
 You can set a delay in displaying each of these nodes. 
 
+**Fetch from**
 
-![](https://i.imgur.com/t7Z5eb7.jpg)
+A Fetch from field will be provided in most of the fields to render the dynamic data of that respective node.
 
-:::info
- Alternative to this is to use a [delay node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#16-delay).
-:::
 ---
 
 Given below is a flow created using message nodes to brief the users **about a coffee company**.
@@ -46,7 +42,7 @@ Message nodes are used only for interactive purpose, you cannot do anything else
 ---
 Following are the different types of message nodes: 
 
-## 1. Text
+## 2. Text
 
 > This node is available for voice bots. 
 
@@ -58,7 +54,7 @@ Display a simple text with this node.
 
 ----
 
-## 2. Image 
+## 3. Image 
 
 Display any image (less than 10MB) with this node.
 
@@ -81,7 +77,7 @@ const imageVariable = [{
 
 ---
 
-## 3. Carousel 
+## 4. Carousel 
 
 Display information using a carousel card with this node.
 > These Carousel buttons do not perform any further action, nor the response can be stored in a variable. 
@@ -100,7 +96,7 @@ Enable **Disable action after click** and click **Save**.
 
 ---
 
-## 4. Video 
+## 5. Video 
 
 Display any MP4 video file with this node.
 * Click the tools(channel option) symbol available below the node name.  
@@ -125,7 +121,7 @@ const videoVar = "http://commondatastorage.googleapis.com/gtv-videos-bucket/samp
 ```
 ---
 
-## 5. File 
+## 6. File 
 
 Display a file of the most common extension (JPG, JPEG, MP3, MP4, CSV, PDF, Doc, Docx, Txt, HTML, PPT, PPTX, etc.) with this node. 
 
@@ -146,7 +142,7 @@ Display a file of the most common extension (JPG, JPEG, MP3, MP4, CSV, PDF, Doc,
 
 ---
 
-## 6. Quick Replies
+## 7. Quick Replies
 
 Display a question along with quick reply buttons with this node.
 
@@ -214,18 +210,19 @@ Click **Fetch from** and add a dynamic value - if required:
 ```
 ---
 
-## 7. WhatsApp List
-
-Configure lists displayed on the WhatsApp channel with this node. 
+## 8. WhatsApp List
 
 :::note
- This node does not expect any user reply, hence the fallback message need not be configured nor this node is expected to follow another node. It simply displays the list values. This node is used for the interactive purposes only. 
+ This node does not expect any user reply, hence the fallback message need not be configured nor this node is expected to follow another node. It simply displays the list values. This node is used for interactive purposes only. 
 :::
 
-Whatsapp API provides a better UI for businesses to send List items (within 24 hours window). 
-To create a Whatsapp List:
-* Select Whatsapp List under Prompt Nodes.
-* Edit Body Message, Footer, Section Title and Button Title/Name and list.
+This node lets you configure the lists displayed on the WhatsApp channel. WhatsApp API provides a better UI for businesses to send List items (within a 24 hours window).
+
+To create a WhatsApp List:
+
+1.  Select **WhatsApp List** under **Prompt Nodes**.
+2.  Populate the fields **Message Body**, **Title** and **Row**.
+3.  To provide row details, click a row and populate the fields **Title**, **Value** and **Description**.
 
 
 ![](https://i.imgur.com/vmDdimd.png)
@@ -336,7 +333,7 @@ To beautify the text you enter in the field -**bot says** you can add the follow
   - Italics: _ Message _ 
 ```
 
-## 8. WhatsApp product message
+## 9. WhatsApp product message
 
 This section helps you create a WhatsApp product messaging journey with a sample use case.
 
@@ -344,14 +341,14 @@ This section helps you create a WhatsApp product messaging journey with a sample
 
 
 
-**Prerequisites** - 
+**Prerequisites** 
 
-The following are the prerequisites to create a catalog journey - 
+The following are the prerequisites to create a catalog flow:
 
-1. Fill the Compliance information on the *Channel* configuration page (Not required for WABA hosted on Cloud API).
-2. Fill the Catalog with the required details as discussed earlier (Mandatory).
-3. Connect the catalog to the WABA as discussed earlier.
-4. Add the products from the Catalog to the Bot DB to use them while sending SPM/MPM.
+1. Fill the Compliance information on the [Whatsapp Channel configuration page](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#1-whatsapp-configuration) (Not required for WABA hosted on Cloud API).
+2. [Fill the Catalog with the required details](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#21-commerce-manager-catalog).
+3. [Connect the catalog to the WABA](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#22-link-catalog-to-a-waba).
+4. [Add the products](https://docs.yellow.ai/docs/platform_concepts/studio/database#-3-import-data-into-table) from Catalog to your yellow bot's database to use them while sending SPM/MPM.
 
 
 To create a catalog journey, follow these steps - 
@@ -438,7 +435,7 @@ You can handle this event using a journey to carry out the next steps of the buy
 
 ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfmHHPievXu1X8Qk2iP8HegpWun5GMj8ZqpYKLsifTBLzzqYQycjFEkHjK6uLS6KwLnHFgD8bAUmAeXAvkTKAQCKZrXKFs4kyYGy6JNKj4BXxrjCJ7M7KytztWQBcim6aHkgPSkc8fC1FkvuNV4B5CQ9aw3y/Image.jpg)
 
-4. There is also another type of event which can be configured for the Message Business option which the user can choose which we be sent back to the bot as a normal msg or can be fetched as an event as well to understand the context of the Product for which the message has been sent.
+4. The Message Business option also allows for another event type to be configured. This event can be sent back to the bot as a normal message, or it can be fetched as an event to provide context about the product for which the message was sent.
 
 ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfmNJL9wfkW5hC3z4pk1oFhjAUfdeFzEtZGD3g6dxz9BRwu5iqfX594rr9uTpyguRNHGQ7iKid5FKJMFeJ6nANvncEaSMezx1XPyQhZ2dpLvpk7CCVX4QiCnSh9ZVkYYEVTcsTwrnTuKfr32Hpb6chFpvmcF/Image.jpg)
 

@@ -7,10 +7,10 @@ sidebar_label : Chat widget FAQs
 ## Setup page related FAQs
 
 <details>
-<summary>Chatbot is auto-scrolling upwards after navigating to a different tab by clicking the URL from the chatbot. How to resolve this issue</summary>
+<summary>Chatbot is auto-scrolling upwards after navigating to a different tab by clicking the URL from the chatbot. How to resolve this issue?</summary>
 <div>
  <br/>
- <div>You need to enable the "Scroll the chat window to the bottom" option in the Chat widget's <b>Settings</b> tab. Navigate to the <b>Channels > Chat widget > Settings</b></div>
+ <div>You need to enable the "Scroll the chat window to the bottom" option in the Chat widget's <b>Settings</b> tab. Navigate to the <b>Channels > Chat widget > Settings.</b></div>
   </div>
 </details>
 
@@ -404,6 +404,15 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 <div>
  <br/>
  <div>Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
+</div>
+  </div>
+</details>
+
+<details>
+<summary>How to add the image in Quick Replies node?</summary>
+<div>
+ <br/>
+ <div>In the quick reply node, add the image link under the Prefix image. Click <a href="http://localhost:3000/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies">here</a> for more information.<br/><img src="https://i.imgur.com/CERBwzb.png"/><img src="https://i.imgur.com/FhUnKaK.png" alt="drawing" width="40%"/>
 </div>
   </div>
 </details>
