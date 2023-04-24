@@ -4,13 +4,19 @@ title: Capture data through Studio & create personalised conversations
 ---
 
 
-In a bot conversation, every bot session is mapped to a record in User 360. When building a bot using [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview), you can use [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to capture [User properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties) and store it in the database. 
+In a bot conversation, every bot session is mapped to a record in User 360. When building a bot using [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview), you can use [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to capture [User properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties) and store it in the User 360 table.
 
-It can store responses of conversations that involve asking for user details such as name, email, phone number, location, or any system/custom user property in the relevant field. You can also enrich user data and create personalised conversations using [User properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties) in Studio conversations. 
 
-:::note
-You need to use the **userId** property to identify a user in a conversation.
-:::
+For complete details on how Studio-User 360 integration works see
+
+* [User record creation and unification via bot conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
+* [Storing user data via bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
+* [Creating personalised conversations using user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
+
+
+<!--
+
+For a detailed information on how 
 
 ## Capture `userId` through conversations
 
@@ -65,4 +71,4 @@ You can also use user properties to improve engagement rates by creating persona
 The property value is fetched from the user record mapped to the current session.
 
 
-
+-->
