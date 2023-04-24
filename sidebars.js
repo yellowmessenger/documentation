@@ -85,9 +85,12 @@ module.exports = {
           {
             type: "category",
             label: "Advanced reporting",
+           // link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/advance/intro'},
             collapsed: true,
             items: [
                    "cookbooks/voice-as-channel/reporting/advance/cdr",
+                   "cookbooks/voice-as-channel/reporting/advance/convdata",
+                   "cookbooks/voice-as-channel/reporting/advance/conv_cdr",
                 ],
               },
       ],
