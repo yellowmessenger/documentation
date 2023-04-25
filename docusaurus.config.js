@@ -6,7 +6,7 @@ module.exports = {
   tagline: "Conversational AI cloud for all",
   url: "https://docs.yellow.ai",
   baseUrl: "/",
-  favicon: "img/favicon.svg",
+  favicon: "img/favicon.png",
   trailingSlash: false, // to control trailing slash on the page url
   organizationName: "yellowmessenger",
   projectName: "documentation",
@@ -52,7 +52,7 @@ module.exports = {
       title: "",
       logo: {
         alt: "yellow.ai",
-        src: "img/Yai-logo-yellow.svg",
+        src: "img/yellowMessenger.svg",
       },
       items: [
         {
