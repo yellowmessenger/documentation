@@ -64,7 +64,7 @@ const Footer = () => {
     <footer className={styles.custom_footer}>
       <div className={styles.container}>
         <div className={styles.logo_container}>
-          <a href="https://yellow.ai/" target="_blank"><img src="img/yellowAi_white.svg" alt="logo" /></a>
+          <a href="https://yellow.ai/" target="_blank"><img src="img/yai-light-mode.svg" alt="logo" /></a>
           <p className={styles.description}>
             “The World’s Leading
             CX Automation Platform.”
