@@ -45,8 +45,6 @@ module.exports = {
           "cookbooks/studio/hide-input",
           "cookbooks/studio/dynamic-quickreplies",
           "cookbooks/studio/images-languages",
-          "cookbooks/studio/ticketclose-message",
-
 
       ],
     }, 
@@ -151,6 +149,7 @@ module.exports = {
   items: [
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
+    "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
     "cookbooks/inbox/transferwithoutinfo",
