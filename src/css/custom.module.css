@@ -586,6 +586,17 @@ p {
 }
 
 
+/*COLUMN STYLE*/
+
+
+[class^=docPage] {
+  margin: 0 auto;
+  max-width: 100%;
+
+}
+
+
+
 /* Algolia Search */
 
 [data-theme='light'] .DocSearch {
