@@ -19,18 +19,18 @@
 }
 
 .search-input .DocSearch-Button {
-  width: 60%;
+  width: 80%;
   margin: 0 auto 0 auto;
   position: relative;
   background: #ffffff;
-  border: 1px solid #dddddd;
+  border: 1px solid #f2cb67;
   min-height: 62px;
-  border-radius: 0;
+  border-radius: 8px;
 }
 
 .search-input .DocSearch-Search-Icon {
   stroke-width: 2;
-  color: #a1aab2
+  color: #a1aab2;
 }
 
 .search-input .DocSearch-Button-Placeholder {
@@ -39,11 +39,11 @@
 }
 
 .search-input .DocSearch-Button-Placeholder::after {
-  content: " by keyword ( Eg. How to build a bot, Journeys, steps)";
+  content: " by keyword ( Eg. How to build a bot, create campaigns, nodes)";
 }
 
 .search-input .DocSearch-Button:active,
 .search-input .DocSearch-Button:focus,
 .search-input .DocSearch-Button:hover {
-  color: var(--docsearch-muted-color);
+  color: var(--docsearch-muted-color); 
 }
