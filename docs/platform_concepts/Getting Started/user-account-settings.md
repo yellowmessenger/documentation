@@ -19,7 +19,7 @@ Click **Profile** from the user account drop-down.
 <img src="https://i.imgur.com/IqalgMH.png" alt="drawing" width="100%"/>
 
 
-### 2. Change your account password or platform language
+### 1. Change your account password or platform language
 
 You can reset your password in this section if required. Also, you can change the language of the platform based on your business needs.
 

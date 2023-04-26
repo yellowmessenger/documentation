@@ -13,7 +13,7 @@
 }
 
 .topic_container .header .topic_logo {
-  border: 1px solid #007ed4;
+  border: 1px solid #eac463;
   box-sizing: border-box;
   border-radius: 4px;
   width: 72px;
@@ -27,7 +27,8 @@
 
 .topic_container .header .topic_logo i {
   font-size: 2.5rem;
-  color: #007ed4;
+  color: #f2cb67;
+  
 }
 
 .topic_container .header .title {
@@ -48,10 +49,11 @@
 .topic_container .footer {
   padding: 15px 30px;
   border-top: 1px solid #e8e8e8;
-  color: #007ed4;
+  color: black;
   display: flex;
   align-items: center;
   height: 50px;
+  background-color: #f2cb67;
 }
 .topic_container .footer span {
   font-size: 0.875rem;
@@ -65,8 +67,8 @@
 }
 
 .topic_container:hover .footer {
-  background-color: var(--docsearch-highlight-color);
-  color: var(--docsearch-hit-active-color);
+  background-color: #eacb7f;
+  color: black;
   border-radius: 0 0 4px 4px;
 }
 

@@ -1,4 +1,6 @@
 export const popularSearchItems = [
+
+  /*
   {
     url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine",    
     title: "Send notifications using APIs",
@@ -26,9 +28,8 @@ export const popularSearchItems = [
   {
     url: "https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported",
     title: "Bot multi-lingual support",
-  },
+  },  */
 ];
-
 export const topics = [
   {
     title: "Get started 🚀",

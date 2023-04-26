@@ -93,7 +93,7 @@ module.exports = {
         },
         {
           to: "https://cloud.yellow.ai/auth/signup?utm_source=SupportDocs&utm_medium=doc_navbar&utm_campaign=docs_april_23",
-          label: "Signup for Free",
+          label: "Try for free",
           position: "right",
           className: 'free-signup',
         },
