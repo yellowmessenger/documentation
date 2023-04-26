@@ -45,8 +45,6 @@ module.exports = {
           "cookbooks/studio/hide-input",
           "cookbooks/studio/dynamic-quickreplies",
           "cookbooks/studio/images-languages",
-          "cookbooks/studio/ticketclose-message",
-
 
       ],
     }, 
@@ -85,9 +83,12 @@ module.exports = {
           {
             type: "category",
             label: "Advanced reporting",
+           // link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/advance/intro'},
             collapsed: true,
             items: [
                    "cookbooks/voice-as-channel/reporting/advance/cdr",
+                   "cookbooks/voice-as-channel/reporting/advance/convdata",
+                   "cookbooks/voice-as-channel/reporting/advance/conv_cdr",
                 ],
               },
       ],
@@ -148,6 +149,7 @@ module.exports = {
   items: [
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
+    "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
     "cookbooks/inbox/transferwithoutinfo",
@@ -624,6 +626,18 @@ module.exports = {
     "platform_concepts/engagement/cdp/user_data/user_properties",
     {
       type: "category",
+      label: "User management via bot conversations",
+      link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
+      collapsed: true,
+      items: [
+        "platform_concepts/engagement/cdp/user_data/data_capture_convers",
+        "platform_concepts/engagement/cdp/user_data/store_conv_data",
+        "platform_concepts/engagement/cdp/user_data/personalise_conversations",
+        
+      ]
+    },
+    {
+      type: "category",
       label: "Add users",
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/add_user_overview'},
       collapsed: true,
@@ -634,6 +648,7 @@ module.exports = {
         "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
       ]
     },
+    
     "platform_concepts/engagement/cdp/user_data/viewuser",
     "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
     
@@ -890,7 +905,9 @@ module.exports = {
               collapsed: true,
               items: [
             "platform_concepts/channelConfiguration/whatsapp-configuration",
+            "platform_concepts/channelConfiguration/whatsapp-product-catalog",
             "platform_concepts/channelConfiguration/wa-migration",
+            "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
@@ -966,8 +983,9 @@ module.exports = {
             "platform_concepts/channelConfiguration/chat-widget-notification",
             "platform_concepts/channelConfiguration/chat-separator",
             "platform_concepts/channelConfiguration/domain-whitelisting",
-            "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/pwa",
+            "platform_concepts/channelConfiguration/support-banner-migration",
+            "platform_concepts/channelConfiguration/chat-widget-errors",
             "platform_concepts/channelConfiguration/character-limits-sdk",
             "platform_concepts/channelConfiguration/chat-widget-faq", 
             // "platform_concepts/channelConfiguration/web",

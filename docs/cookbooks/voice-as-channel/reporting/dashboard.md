@@ -1,5 +1,5 @@
 ---
-title : Voice bot overview for effective reporting of voice bots
+title : Voice bot overview (voice dashboard)
 sidebar_label : Voice dashboard 
 ---
 
