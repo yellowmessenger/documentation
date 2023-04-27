@@ -1,11 +1,24 @@
 ---
-title: Email ticketing overview
+title: No-code email ticketing 
 sidebar_label : Overview
 ---
 
-- All the queries raised by the customer through the email channel are complied with and listed in a unified user interface (Omni channel Customer support suite). 
-- Admins can view all the tickets that are sent to the respective support email.
+**No code email ticketing**
+
+When a customer sends an email to the support team in a typical business scenario, it usually lands in the inbox of the respective email app, such as Gmail or Outlook. This process is often disorganized and difficult to streamline.     
+**No code email ticketing** offers a solution to manage customer support requests or tickets through email without the need for programming. This system automatically directs incoming emails to the appropriate customer support agent or group, and utilizes an **inbox ticket section** to monitor and control the status of each ticket.
+
+> You can enable no code email ticketing [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing). 
+
+
+Features offered by the tickets section: 
+- The primary objective of no code email ticketing is to simplify the management of customer support requests and enhance the efficiency and effectiveness of customer service teams.
+- All customer queries raised via email are compiled and listed in a unified user interface (omni-channel customer support suite).
+- Adminis can view all tickets sent to or received by the support email address.
 - As an Agent, you will be assigned with the tickets (based on the [group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) or [auto-assign](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic) settings). You can select an email that needs attention and reply to it on time. 
+
+
+Once the email tickets have been set up according to the instructions provided in [configuration page](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig), the inbox will receive emails. From there, you can view the email support requests as tickets on the email tickets page, which can be seen in either **List view** or **Detailed view**.
 
 
 :::note
@@ -13,10 +26,6 @@ Email tickets are assigned only to an **Inbox agent** (although **Inbox admin** 
 - For an inbox admin, all the chats/tickets will be accessible.  
 - For an inbox agent, only the chats/tickets assigned to them will be accessible.
 :::
-
-In this article, you will understand the two different methods in which the email tickets(ticket page) can be viewed - **List view** and **Detailed view**. 
-
->  Email tickets must be [configured in prior](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) and emails must be received by Inbox.
 
 ---------
 

@@ -72,6 +72,10 @@ This component allows you to add images, videos, and files to the bot conversati
 --------|-------|-----|	
 <img src="https://i.imgur.com/qZgN15f.png" alt="drawing" width="80%"/> | <img src="https://i.imgur.com/lTmi3i0.png" alt="drawing" width="80%"/> | <img src="https://i.imgur.com/SXkbRNp.png" alt="drawing" width="80%"/> 
 
+:::note
+You can download video, image, and file sent by the bot or agent. 
+:::
+
 ### 1.6 Feedback 
 	
 |     |  |
@@ -101,7 +105,7 @@ This component allows you to add images, videos, and files to the bot conversati
 
 |     |  |
 |---------|-------|
-| A callout banner allows you to add a banner to the chatbot's conversation. It can be used to alert the users about new products, services, special offers, and promotions. <br/> When multiple banners are configured for a chatbot, the banners are automatically scrolled every five seconds. On enabling this option, the close button gets replaced by the minimize button. <br/> **Limitations:**<br/>• Each callout banner supports two buttons with up to 24 characters each.<br/>• The callout banner supports 200 characters in the title. <br/> **Note:** You cannot add images or videos to the callout banner.| <img src="https://i.imgur.com/KT7cd0U.png" alt="drawing" width="90%"/>	
+| A callout banner allows you to add a banner to the chatbot's conversation. It can be used to alert the users about new products, services, special offers, and promotions. <br/> When multiple banners are configured for a chatbot, the banners are automatically scrolled every five seconds. <br/> On enabling this option, the close button gets replaced by the minimize button. Brands can select close, or minimise button for banners. Upon minimising, users can later access the banner by clicking on expand button. The user’s last selection is retained on page reload.<br/> **Limitations:**<br/>• Each callout banner supports two buttons with up to 24 characters each.<br/>• The callout banner supports 200 characters in the title. <br/> **Note:** You cannot add images or videos to the callout banner.| ![](https://i.imgur.com/iXIlMVq.png)
 
 ## 2. Non-interactive messages
 	
