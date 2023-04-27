@@ -80,7 +80,9 @@ These are the steps that take place:
    The user properties that are not present in the identified record will be obtained from the unidentified record. For example, refer to `emailOptin` in the above table. <br/>The user properties that already exist in the identified record will be skipped without making any change. For example, refer to `firstName` in the above table.
    * **Properties with list values**: The values will be unified. Example: `labels` in the above table.
    * **Auto-captured property values**: The blank values for country and timezone in the existing record will be updated with the auto-captured values.
-3. It deletes the unidentified record after merging.
+3. It deletes the unidentified record after merging. However, if either country or timezone is already captured in the existing record, no changes will be made to both the values as shown in the following.
+ 
+  ![](https://i.imgur.com/68MCC0a.png)
 
 
 ## Scenarios in which merging of user properties happen
