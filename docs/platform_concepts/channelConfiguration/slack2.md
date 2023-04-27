@@ -3,22 +3,18 @@ title: Slack
 sidebar_label: Slack
 ---
 
-
-This document consists of: 
-
-1. [Slack in yellow.ai](#1)
-2. [How to create an app on Slack](#2)
-3. [How to configure a workspace](#3)
-4. [How to add Slack to Direct message/Channel](#4)
-5. [Slack APIs integration](#5)
-6. [Slack features supported by yellow.ai](#6)
-
-
-## <a name="1"></a> 1. Introduction
-
 Slack is a workplace communication tool, “a single place for messaging, tools, and files.” This means Slack is an instant messaging system with lots of add-ins for other workplace tools. Slack has an intuitive UI with both group and person-to-person messaging. These are more than 1500 apps and allow users to create their own app, which has evolved Slack to become a one-stop-shop for a lot of users.
 
-### 1.1 Slack Context Management 
+In this article, you will learn: 
+
+* [How to create an app on Slack](#2-create-an-app)
+* [How to configure a workspace](#3-configure-singlemulti-workspace)
+* [How to add Slack to Direct message/Channel](#4-adding-slack-app-to-direct-messagechannel)
+* [Slack APIs integration](#5-api)
+* [Slack features supported by yellow.ai](#6-supported-slack-features)
+
+
+## 1. Slack Context Management 
 
 Slack provides threaded messaging. It is important to understand how Yellow.ai platform handles context in channel, threads, and DM.
 
@@ -28,7 +24,7 @@ Slack provides threaded messaging. It is important to understand how Yellow.ai p
 2. Each thread has an independent context, if multiple threads are activated by same/different person → bot will maintain individual context/flow for each thread. Same flow can be run in parallel on different threads.
 3. User profiles are preserved across channels, threads, and DMs, ensuring that the sender is always the same.
 
-![](https://i.imgur.com/IV7TTDq.png)
+  ![](https://i.imgur.com/IV7TTDq.png)
 
 #### DM
 
@@ -36,7 +32,7 @@ Slack provides threaded messaging. It is important to understand how Yellow.ai p
 2. Bot ignores thread formation for a better conversational experience.
 3. User profiles are preserved across channels, threads, and DMs, ensuring that the sender is always the same.
 
-![](https://i.imgur.com/GRn6ZVV.png)
+  ![](https://i.imgur.com/GRn6ZVV.png)
 
 
 ## <a name="2"></a> 2. Create an App 
@@ -47,7 +43,7 @@ Follow the steps below to create an app on Slack:
 2. Enter app name and select an app development workspace.
 3. After creating the app, goto the event subscription on the left panel. Enable the event subscription and add request URL to https://app.yellowmessenger.com/integrations/slack/receive/ botID
 
-![](https://i.imgur.com/hLHzre9.png)
+  ![](https://i.imgur.com/hLHzre9.png)
 
 4. Scroll down to the event subscription section and expand **Subscribe to bot events**. Add the events scope according to your bot requirement.
 
@@ -85,11 +81,11 @@ Follow the steps below to create an app on Slack:
     - [team:read](https://api.slack.com/scopes/team:read) View the name, email domain, and icon for workspaces App is connected to.
     - [users:read](https://api.slack.com/scopes/users:read) View people in a workspace.
 
-![](https://i.imgur.com/rMWt5KS.png)
+  ![](https://i.imgur.com/rMWt5KS.png)
 
 6. Open **Interactivity & Shortcuts**, enable and add request URL to: https://app.yellowmessenger.com/integrations/slack/interaction/ botID
 
-![](https://i.imgur.com/ecPETcX.png)
+  ![](https://i.imgur.com/ecPETcX.png)
 
 ## <a name="3"></a> 3. Configure Single/Multi-workspace
 
@@ -103,16 +99,16 @@ Follow these steps to configure a single workspace:
 
 1. Open **OAuth & Permissions**, Click **Install App to Workspace**.
 
-![](https://i.imgur.com/tFspnLG.png)
+  ![](https://i.imgur.com/tFspnLG.png)
 
 2. Select a channel, incase you have enabled external incoming [webhooks](https://api.slack.com/apps/[APPID]/incoming-webhooks)
 
-![](https://i.imgur.com/3ufAVAy.png)
+  ![](https://i.imgur.com/3ufAVAy.png)
 
 3. After installing the app in workspace, go back to **OAuth & Permission**. Copy the Bot *`Access token (xoxb- )`*. 
 4. Head to Channels > Messaging > Slack > Select token type > **Slack tokens** > Add the Slack access token > Save.
 
-![](https://i.imgur.com/8FE6ih8.png)
+  ![](https://i.imgur.com/8FE6ih8.png)
 
 
 ### 3.2 Multiple Workspace
@@ -123,11 +119,11 @@ Follow the steps to configure multi-workspace:
 
 1. Open https://api.slack.com/apps/ > Basic Information on the left panel. Copy the `Client ID` & `Client Secret`.
 
-![](https://i.imgur.com/CIdAjUw.png)
+  ![](https://i.imgur.com/CIdAjUw.png)
 
 2. Open Channels > Messaging > Slack > Select token type > OAuth tokens > Add the Client ID, Client Secret, Scope, User Scope > Save.
 
-![](https://i.imgur.com/toGSrt8.png)
+  ![](https://i.imgur.com/toGSrt8.png)
 
 3. Store the accessToken of every workspace if you want to use Slack [APIs](#5). Set up a flow to capture your **`accessToken <> teamId`** mapping in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/database#1-create-table):
 
@@ -166,9 +162,9 @@ After adding the Slack app to the workspace, you are required to add the app to 
 
 > **Group/Channel**: Bot will reply in the threads and context will be mentioned within the respective threads.
 
-![](https://i.imgur.com/sONDbA6.png)
+  ![](https://i.imgur.com/sONDbA6.png)
 
-![](https://i.imgur.com/gkDK36B.png)
+  ![](https://i.imgur.com/gkDK36B.png)
 
 
 ## <a name="5"></a> 5. API
@@ -196,11 +192,11 @@ Follow the below steps to add slash command:
 
 1. Goto https://api.slack.com/apps/ > Select you App > Select the Slash Commands in left panel > Create New Command.
 
-![](https://i.imgur.com/iqVY0Y3.png)
+  ![](https://i.imgur.com/iqVY0Y3.png)
 
 2. Fill the command, Description and add Request URL > SAVE Request URL: https://app.yellowmessenger.com/integrations/slack/shortcuts/ botID
 
-![](https://i.imgur.com/HU5qrLT.png)
+  ![](https://i.imgur.com/HU5qrLT.png)
 
 3. Enable `slack-shortcuts` event in [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub). If a flow is triggered using this event, the Event Payload can be accessed in builder using {{data.event.[]}}. Schema for this event would be:
 
@@ -221,13 +217,13 @@ Follow the below steps to add slash command:
 
 Similar to Slash command, this is used to send commands to the bot. Shortcut can be initiated from the **shortcuts** button the message composer or from within search. Reference: https://api.slack.com/interactivity/shortcuts/using
 
-![](https://i.imgur.com/2qIzPz0.png)
+  ![](https://i.imgur.com/2qIzPz0.png)
 
 Follow the given steps to add shortcuts:
 
 1. Open api.slack.com > Interactivity & Shortcuts > Create new Shortcut.
 
-![](https://i.imgur.com/3nmEdaK.png)
+  ![](https://i.imgur.com/3nmEdaK.png)
 
 
 ## <a name="6"></a> 6. Supported slack features

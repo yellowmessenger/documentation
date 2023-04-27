@@ -922,7 +922,6 @@ module.exports = {
                 ]},
             "platform_concepts/channelConfiguration/facebook-messenger",    
             "platform_concepts/channelConfiguration/sms-outbound-india", 
-            "platform_concepts/channelConfiguration/alexa",
             "platform_concepts/channelConfiguration/google-message",
             "platform_concepts/channelConfiguration/googleChat",
             "platform_concepts/channelConfiguration/email-outbound",
@@ -932,6 +931,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/viber-for-business",
             "platform_concepts/channelConfiguration/line",
             "platform_concepts/channelConfiguration/zalo",
+            "platform_concepts/channelConfiguration/viber",
             
           ]
         },
@@ -944,6 +944,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/google-assistant",
             "platform_concepts/channelConfiguration/ivr-bots",
             "platform_concepts/channelConfiguration/Ivr",
+            "platform_concepts/channelConfiguration/alexa",
           ]
         },
         {
