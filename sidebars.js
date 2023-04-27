@@ -184,6 +184,17 @@ module.exports = {
 }, 
 //end of engage 
 
+// Integrations
+{
+  type: "category",
+  label: "Integrations",
+  collapsed: true,
+  items: [
+    "cookbooks/integrations/parseapi",
+  ],
+}, 
+//end of integrations
+
 
   ], // user guides end here
 
