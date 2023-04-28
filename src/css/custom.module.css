@@ -96,7 +96,7 @@
 }
 
 [class^="pagination-nav__link"] {
-  background-color: var(--ifm-color-primary-lightest);
+  background-color: #f2cb67;
 }
 
 [class^="pagination-nav__sublabel"] {
@@ -244,9 +244,9 @@ html[data-theme="dark"] .admonition h5 {
 /* main wrapper */
 
 [class^="docPage"] {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 0 auto;
-  width: 100%;
+  width: 95%;
 }
 
 .header-download-link:before {
@@ -364,11 +364,11 @@ tr:nth-child(even) {
 /* NOTE */
 
 [class^="theme-admonition theme-admonition-note alert alert--secondary"] {
-  background: #EAF5FB;
+  background:rgb(249 235 200);
   color: #384248;
   border-radius: 6px;
-  border: 1px solid #3398DD;
-  border-left: 6px solid #3398DD;
+  border: 1px solid #f3b20e;
+  border-left: 6px solid #f3b20e;
 
 }
 
@@ -486,12 +486,10 @@ background: #f2eee3 !important;
   -ms-flex-pack: justify;
 }
 
-[class^="ri-booklet-line"] {
+[class^="hero_j_Uo"] {
+  background: #f2eee3 !important;
 
-  border-color: green;
-  color: green;
 }
-
 /* SIGNUP FOR FREE */
 
 [class^="navbar__item navbar__link free-signup"] {
@@ -553,23 +551,22 @@ background: #f2eee3 !important;
   box-shadow: 0 .1rem 1rem -.5rem rgba(0, 0, 0, .4);
   border-radius: 5px;
   overflow: hidden;
-  border: 1px solid #707e8a;
+  border: 1px solid #f2cb67 !important;
 
+}
+
+
+
+
+[class^="details_node_modules-\@docusaurus-theme-common-lib-components-Details-styles-module"] > summary::before {
+
+  border-color: transparent transparent transparent #f2cb67;
 }
 
 [class^="details_lb9f isBrowser_bmU9 alert alert--info details_b_Ee"] {
 background-color: #fff;
 }
 
-/* [class^="details_node_modules-@docusaurus-theme-common-lib-components-Details-styles-module isBrowser_node_modules-@docusaurus-theme-common-lib-components-Details-styles-module alert alert--info details_node_modules-@docusaurus-theme-classic-lib-theme-Details-styles-module"] {
-  --docusaurus-details-decoration-color: var(--ifm-alert-border-color);
-  --docusaurus-details-transition: transform var(--ifm-transition-fast) ease;
-  margin: 0 0 var(--ifm-spacing-vertical);
-  border: 1px solid var(--ifm-alert-border-color);
-  background-color: #fff;
-
-}
-*/
 
 summary {
   padding: 1rem;
@@ -584,14 +581,25 @@ summary {
 summary:before {
   content: '';
   border-width: .4rem;
-  border-color: transparent transparent transparent #282828;
+  border-color: transparent transparent transparent #f0b41c !important;
   position: absolute;
   top: 1.3rem;
   left: 1rem;
   transform: rotate(0);
   transform-origin: .2rem 50%;
   transition: .25s transform ease;
+
 }
+
+[class^="collapsibleContent_node_modules-@docusaurus-theme-common-lib-components-Details-styles-module"] {
+  border-top:#000;
+
+}
+
+[class^="details_node_modules-@docusaurus-theme-common-lib-components-Details-styles-module isBrowser_node_modules-@docusaurus-theme-common-lib-components-Details-styles-module alert alert--info details_node_modules-@docusaurus-theme-classic-lib-theme-Details-styles-module"] {
+  --docusaurus-details-decoration-color: #f0b41c !important;
+}
+
 
 /* THE MAGIC 🧙‍♀️ */
 
