@@ -2,10 +2,6 @@
 title: Summarize data tables 
 sidebar_label: Data summarization 
 ---
-<!--
-https://hackmd.io/JQxuzRN9RwiryYbNhr_sGg?both
--->
-
 
 Tables are available on the data explorer page (differnt types are discussed in the previous section). 
 On these tables you can do the following actions to view data as you wish. 
