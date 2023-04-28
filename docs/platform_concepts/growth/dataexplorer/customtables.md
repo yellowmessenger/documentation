@@ -48,7 +48,7 @@ It is not possible to join or combine two different tables while writing a singl
 
 ----
 
-## 2. Add filters on generated tables 
+## Add filters on generated tables 
 
 When using the filters option, you can apply filters to any of the available column names. These column names are automatically displayed and available for selection when you click on the filters option.
 
@@ -59,13 +59,13 @@ When using the filters option, you can apply filters to any of the available col
 3. Click **Apply filter**.
     ![](https://i.imgur.com/emPZU07.png)
 
-### 2.1 Download filtered data as a CSV file
+### Download filtered data as a CSV file
 
 You can filter data by a single column value or a combination of column values. To download the data generated at any step, simply click on **Actions > Export as CSV** and it will be saved as a CSV file on your local system.
 
 ![](https://i.imgur.com/4wmoCjT.png)
 
-### 2.2 Save filtered data as reports 
+### Save filtered data as reports 
 
 Once you have applied filters, a button labeled **Save query** will appear. Click on this button to save the filtered data as a saved report. This report can then be accessed under the **Saved reports** section every time you open the data explorer, without the need to repeat all the filtering steps again.
 
