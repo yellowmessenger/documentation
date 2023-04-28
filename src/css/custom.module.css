@@ -222,7 +222,7 @@ html[data-theme="dark"] .admonition h5 {
 }
 
 [class^="navbar__items navbar__items--right"] a:last-child:hover {
-  background-color: #c9540d;
+  background-color: #5c42fc;
 }
 
 [class^="navbar__inner"] [class^="navbar__item navbar__link navbar__link--active"] {
@@ -233,7 +233,7 @@ html[data-theme="dark"] .admonition h5 {
   content: "";
   width: 100%;
   height: 4px;
-  background-color: #007ed4 !important;
+  background-color: #efb113 !important;
   position: absolute;
   bottom: -20px;
   border-radius: 10px;
@@ -316,9 +316,13 @@ tr:nth-child(even) {
 
 [class^="menu__link"]:hover,
 [class^="menu__link menu__link--active active"] {
-  color: #007ed4;
+  color: #5c42fc;
   font-weight: 500;
 }
+
+
+
+
 
 [class^="menu__link menu__link--sublist menu__link--active"] {
   font-weight: 500;
@@ -404,6 +408,12 @@ li img {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+
+[class^="clean-btn menu__caret"]::before {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1.5rem 2rem !important;
+
+}
+
 /* HEADINGS & BODY FONTS */
 
 
@@ -439,7 +449,7 @@ h4, h5, h6 {
 }
 
 [class^="admonition-content"] a {
-  color: #5469d4;
+  color: #5c42fc;
 }
 
 
@@ -462,6 +472,7 @@ ul, ol {
 
 .table-of-contents__link {
   font-size: 14px;
+  max-width: 270px;
 }
 
 [class^="table-of-contents__link toc-highlight"] {
@@ -606,7 +617,7 @@ summary:before {
 
 
 a {
-  color: #1967d2;
+  color: #5c42fc;
 }
 
 
