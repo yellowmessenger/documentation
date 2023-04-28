@@ -12,16 +12,16 @@ The GPT-3 integration is currently in Beta.
 
 #### What is OpenAI GPT-3?
 
-OpenAI GPT-3 is an advanced artificial intelligence language model developed by OpenAI, with a capacity of 175 billion parameters. It uses deep learning techniques to generate natural language text and has been pre-trained on a massive amount of data from the internet and other sources. The OpenAI ChatGPT is used for language translation, chatbots, writing assistance, and content generation, and is known for its ability to generate human-like text with remarkable accuracy.
+OpenAI GPT-3 is an advanced artificial intelligence language model developed by OpenAI, with a capacity of 175 billion parameters. It uses deep learning techniques to generate natural language text and has been pre-trained on a massive amount of data from the internet and other sources. The OpenAI GPT-3 is used for language translation, chatbots, writing assistance, and content generation, and is known for its ability to generate human-like text with remarkable accuracy.
 
-#### How does a OpenAI ChatGPT chatbot work?
+#### How does a OpenAI GPT-3 chatbot work?
 
 The chatbot can be designed to receive input from users which is then sent to GPT-3 for processing.
 
 OpenAI GPT-3 will use its pre-trained knowledge to generate a response based on the user's input, which is then sent back to the chatbot. The chatbot displays the generated response to the user in a natural and coherent way.
 
 
-## 1. Build a chatbot using ChatGPT
+## 1. Build a chatbot using GPT-3
 
 To build a chatbot using OpenAI GPT-3, you need to connect your open AI account with your yellow.ai platform. To do so, follow these steps: 
 
@@ -73,9 +73,9 @@ API usage will depend on your org subscription.
 
 The following use case is currently supported in this integration:
 
-### 2.1 Generate answers using ChatGPT
+### 2.1 Generate answers using OpenAI GPT-3
 
-Your chatbot users can receive answers to their queries by leveraging the ChatGPT text completion model. We support Da Vinci, Curie, Babbage, Ada, and custom models. By selecting one of these models, your chatbot can provide detailed and precise responses from ChatGPT.
+Your chatbot users can receive answers to their queries by leveraging the GPT-3 text completion model. We support Da Vinci, Curie, Babbage, Ada, and custom models. By selecting one of these models, your chatbot can provide detailed and precise responses from GPT-3.
 
 :::info
 
