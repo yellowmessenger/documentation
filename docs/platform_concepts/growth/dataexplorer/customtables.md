@@ -1,22 +1,22 @@
 ---
-title: Create custom queries and analyse custom tables 
-sidebar_label: Analyse custom tables  
+title: Create custom queries for custom tables
+sidebar_label : Analyse custom tables 
 ---
 
-**What are custom tables(datasets)?**
+#### What are custom tables(datasets)?
 
 The bot builder can create Custom datasets that are tailored to your needs. You can modify these tables according to your preferences using a **custom query**.
 
-## 1. Steps to add a custom query 
+## Steps to add a custom query 
 
 Custom queries can be created using the default datasets or custom datasets.
 1. Open **Insights** > **Data explorer**. 
 2. Click **+Create Report**. 
 3. Select the type of **query** and click **Next**. 
 
-![](https://i.imgur.com/pHHRhJx.png)
+<img src="https://i.imgur.com/pHHRhJx.png" width="90%"/>
 
-### 1.1 Choose query to create a table
+### Choose query to create a table
 
 You have the option to choose a custom query that includes either bot data or data retrieved from custom tables in flows. By using any of this data, you can obtain the desired insights and analytics from your existing datasets.
 
@@ -30,19 +30,21 @@ To create reports on selected tables, there are two types of queries available:
     ![](https://i.imgur.com/gM5kxps.png)
     
     **Sample native query**:
-    ```
-    SELECT category, 
-    COUNT(*) AS total_sales, 
-    AVG(sale_amount) AS average_sale_amount, 
-    MAX(sale_amount) AS highest_sale_amount, 
-    MIN(sale_amount) AS lowest_sale_amount 
-    FROM sales_data
-    GROUP BY category
-    ORDER BY total_sales DESC; --This query groups the sales data by category and calculates the total number of sales, the average sale amount, and the highest and lowest sale amounts for each category. The results are then sorted in descending order by the total number of sales.
-    ```
-    :::note
-    It is not possible to join or combine two different tables while writing a single query.
-    :::
+
+```js
+SELECT category, 
+COUNT(*) AS total_sales, 
+AVG(sale_amount) AS average_sale_amount, 
+MAX(sale_amount) AS highest_sale_amount, 
+MIN(sale_amount) AS lowest_sale_amount 
+FROM sales_data
+GROUP BY category
+ORDER BY total_sales DESC; --This query groups the sales data by category and calculates the total number of sales, the average sale amount, and the highest and lowest sale amounts for each category. The results are then sorted in descending order by the total number of sales.
+```
+
+:::note
+It is not possible to join or combine two different tables while writing a single query.
+:::
 
 ----
 
