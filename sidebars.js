@@ -885,7 +885,21 @@ module.exports = {
     },
     "platform_concepts/growth/dataops",
     "platform_concepts/growth/doccog",
-    "platform_concepts/growth/data-explorer", 
+
+      {
+        type: "category",
+        label: "Data explorer",
+        link: {type: 'doc', id: 'platform_concepts/growth/dataexplorer/intro'},
+        collapsed: true,
+        items: [
+            "platform_concepts/growth/dataexplorer/defaulttables",
+            "platform_concepts/growth/dataexplorer/customtables",
+          //  "platform_concepts/growth/dataexplorer/sumarize",
+            "platform_concepts/growth/dataexplorer/visualization",
+            "platform_concepts/growth/dataexplorer/savedreportsactions",
+          ],
+      },
+
     "platform_concepts/growth/dashboards",
     "platform_concepts/growth/health",
     "platform_concepts/growth/goals",

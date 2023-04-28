@@ -12,7 +12,6 @@ User metrics section is used to learn about the bot users. The following user me
 
 ---
 
-
 To view user metrics, follow the given steps: 
 
 1. Open **Insights** > **Metrics**. 
@@ -20,36 +19,9 @@ To view user metrics, follow the given steps:
 
 ![](https://i.imgur.com/Zjiqb99.png)
 
+## 1. User metrics available as widgets 
 
-:::info
-
-**Filter for a period**
-- All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
-- If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
-
-    <img src="https://i.imgur.com/FzSz7IB.png" alt="drawing" width="40%"/>
-
-
-
-**Export data**
-
-- To download any of these metrics, click **Export data**. 
-- Select the required metrics and click **Export Reports**. You can also download all the reports as PDF. 
-- Click [here](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) for steps to schedule these reports. 
-    <img  src="https://i.imgur.com/ZtcYRCT.png"  width="70%"/>
-
-
-**Filter channels**
-
-- These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
-
-    <img src="https://i.imgur.com/gjCGo8e.png" alt="drawing" width="80%"/>
-
-
-:::
-
-
-## <a name="traffic"></a> 1. User traffic
+### <a name="traffic"></a> User traffic
 
 This widget covers all the primary metrics needed to understand user traffic to your bot in a given timeframe.
 Select any of the below headings to view the graphs for the selected time range. 
@@ -68,7 +40,7 @@ Select any of the below headings to view the graphs for the selected time range.
 * **Average session per user**: This is the number of sessions created per user on average.
 * **Average session duration**: This is the average time for which the user has conversed with the bot. A session can be of 24 hours. For any number of interactions the user has in a 24 hours window from the start of a session, it'll be considered as one single session only. A new session is started after 24 hours.
 
-### 1.1 Download chat conversations 
+#### Download chat conversations 
 
 To download the chat transcripts (conversations between bot/agent and user): 
 1. Apply the time filter (all the conversations within this time range will get exported). 
@@ -81,7 +53,7 @@ To download the chat transcripts (conversations between bot/agent and user):
 
 ---
 
-## <a name="retention"></a> 2. User retention
+### <a name="retention"></a> User retention
 
 This widget shows the distribution between new users and old users visiting the platform. Any user who comes to the bot for the first time is categorized as a new user, and from their second visit onwards they are considered as a returning user.
 
@@ -92,12 +64,12 @@ This widget shows the distribution between new users and old users visiting the 
 
 ---
 
-## <a name="demography"></a> 3. Users By Demographics
+### <a name="demography"></a> Users By Demographics
 
 
 This widget shows user demographics for a bot based on the selected parameter.
 
-### 3.1 Demography parameters
+#### Demography parameters
 
 :::note
 Some of these metrics are captured for all the sources and some for limited sources like - UTM-based users are for Yellow Web & Mobile only.
@@ -108,7 +80,7 @@ The drop-down field allows you to select from the multiple parameters for viewin
 
 <img src="https://lh3.googleusercontent.com/Elj0328Y4W3MV206Mxu44qP7w7JPic8C9rH5aQNMTc4fRWk81zUzlTiupOK6t7E8Mh0SQ30ziCPP6n9o-G30YFn7W-sPlh0e1zyIIOtzD_PD0WoEWdcFRoX9eqY-AUOKOtDzlRHAR0ZUpkqd6AVk6I-oILL9cAo10HoAGo6OuKYVtEf4cPRlQFdK1zFJow" alt="drawing" width="30%"/>
 
-### 3.2 Demography data
+#### Demography data
 
 Users who interact with the bot are coming from different locations, sources, and campaigns.
 The total count and percentage of users is shown for the specified date range based on the chosen parameter from the above dropdown.
@@ -117,7 +89,7 @@ The total count and percentage of users is shown for the specified date range ba
 
 ---
 
-## 4. User retention trend
+### User retention trend
 
 This widget shows the kind of users visiting the bot within a given timeframe. If a user converses with the bot for the first time, he/she is counted as user-visited. If the user has visited the bot before and is a returning user, then it's categorized as a user-revisited session.
 
@@ -127,7 +99,7 @@ This widget shows the kind of users visiting the bot within a given timeframe. I
 
 -----
 
-## 5. User engagement trend
+### User engagement trend
 
 This widget shows the funnel of users who are coming to the bot. The blue lines tell you about the number of times the bot was loaded, and the green and purple lines tell you about the number of people who started with an intent (flow) and at least completed one intent (flow) respectively.
 
@@ -137,7 +109,7 @@ This widget shows the funnel of users who are coming to the bot. The blue lines 
 
 ----
 
-## 6. Whatsapp consumption
+### Whatsapp consumption
 
 > This is calculated for WhatsApp channel.
 
@@ -149,5 +121,45 @@ Following three categories are tracked for the selected WhatsApp phone numbers:
 You can select the WhatsApp numbers from the bottom of the widget. 
 
 <img src="https://i.imgur.com/4BFEBKI.png" alt="drawing" width="50%"/> 
+
+
+--------
+
+## 2. Actions on user metrics
+
+
+### Filter data for a period
+
+- All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
+- If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
+
+    <img src="https://i.imgur.com/FzSz7IB.png" alt="drawing" width="40%"/>
+
+----
+
+### Schedule data export/export data 
+
+To download any of these metrics:
+1. Click **Export data**. 
+2. Select the required metrics and click **Export Reports**. You can also download all the reports as PDF. 
+3. Click [here](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) for steps to schedule these reports. 
+    <img  src="https://i.imgur.com/ZtcYRCT.png"  width="70%"/>
+
+#### User metrics available for quick download
+
+1. User traffic
+2. User by demographics
+3. Weekly user traffic
+4. Chat transcripts
+5. User details
+6. Notification statuses by campaign ID
+
+-----
+
+### View metrics for different channels
+
+- These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
+
+    <img src="https://i.imgur.com/gjCGo8e.png" alt="drawing" width="80%"/>
 
 
