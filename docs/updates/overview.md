@@ -1,31 +1,12 @@
 ---
-title: March 2023
-sidebar_label: Latest product updates (Mar 2023)
+title: April 2023
+sidebar_label: Latest product updates (Apr 2023)
 featured: true
 ---
 
-  
-  
-  
-  
+   
 
 ![](https://i.imgur.com/Wj06Bz6.png)
-
-
-
-<details>
-<summary>
-
-### Subscription 
-
-</summary>
-
-
-| Enhancement | Description |
-| -------- | -------- |
-| **Introducing Freemium Model for maximum impact** <br/> | Discover the potential of our platform with our freemium plan, which offers limited features for free. Upgrade to our premium version for full access to boost your productivity. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup) |
-    
-</details>
 
 
 
@@ -37,23 +18,56 @@ featured: true
 </summary>
 
 
-| Enhancement | Description |
+| New feature | Description |
 | -------- | -------- |
-| **JSON support for syncDB node** <br/> | The Sync Database node now supports both CSV and JSON files, allowing you to synchronise bot tables with external databases automatically and regularly. You just need to create and add an API that pulls the bulk data, the node can then perform all necessary actions seamlessly.<br/> <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) |
+| **Dynamic AI based chat for goal based conversations** | Our ChatGPT-powered feature guides users towards a goal, like lead generation, without the need for extra bot messages or context handling. The result is a more natural conversation experience, better goal completion rates, and higher bot conversion rates. <br/> <br/>**This feature is in closed BETA currently**|
+       
+    
+</details>
+
+
+
+<details>
+<summary>
+
+### Insights
+
+</summary>
+
+| New feature | Description |
+| --- | --- |
+| **Alerts to notify bot failures** | Proactively monitor failures and issues in the bot by creating alerts to notify you when set rules are met. <br/> <br/>**[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/health)** |
+| **Introduced notifications report** | We have introduced **Notifications status by campaigns ID** report that can be downloaded and scheduled. It is available under **Metrics** > **Export**. |
+| **Hourly grouping of timestamps for efficient data analysis** | You can use the 'Group by Hourly' option to group timestamps while summarizing a table. |   
+    
+| Enhancement | Description |
+| --- | --- |
+| **Displaying agent alias name for agent's privacy** | This allows agents to use an alias instead of their real name when communicating with customers. The customer will see the agent's alias name during conversations. However, we will maintain the agent's real name for reporting and monitoring purposes on the platform. This feature helps to protect the agent's privacy while still maintaining the highest level of customer service possible. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/inbox/alias) |
+| **Text editor for no-code email ticketing** | We have added a rich text editor that allows a more customized and user-friendly experience. The editor includes options such as attaching files, utilizing ticket variables, and formatting text. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing) |
+| **Canned response search for accurate search results** | Users can now search for canned responses based on both the keyword and the content of the response. This feature saves time and improves the accuracy of the search results. Please note that media type canned responses can only be searched using the defined keyword or tag. |
+| **Chat summarisation to understand bot conversations in one click** | Summarise chat is an AI powered feature that automatically generates a summary of the entire conversation. This eliminates the need for agents to manually read through multiple exchanges between the bot, agent, and customer, and provides them the entire context of the ticket. |
+| **Tone selection for personalised conversations** | This feature allows agents to select a different tone for their responses based on the customer's mood and the nature of the conversation. By selecting an appropriate tone, agents can create a more empathetic and personalized interaction with customers. |
+    
     
 </details>
 
 <details>
 <summary>
 
-### Integrations 
+### Engage 
 
 </summary>
 
+| New feature | Description | 
+| --- | --- | 
+| Introducing a new channel in Flows: Outbound Campaigns on Google Business Messages | Flows now support a new outbound campaign channel, allowing you to utilise Google Business Messages (GBM) for your marketing campaigns.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/gbm-template) | 
+    
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Smart query handling with OpenAI GPT-3 integration** <br/> | You can connect your free trial or paid OpenAI account just like any other third-party tool. Once connected, the node can receive user chat queries as input and use the OpenAI model to generate the best possible responses.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/gpt3) |
+| **Automated location-specific data capture for web and Whatsapp bots to improve user records' accuracy and completeness** <br/> | Our system now automatically captures location-specific information on your Web and WhatsApp bots. The Web bot uses the user's IP address to capture timezone and country, while the WhatsApp bot captures the user's country through their phone number. <br/><br/> [**Learn more**](https://docs/yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#automated-capturing-of-location-specific-data) |
+
+
 
     
 </details>
@@ -62,16 +76,32 @@ featured: true
 <details>
 <summary>
 
-### Insights  
+### Channels
+
+| Enhancement | Description |
+| --- | --- |
+| **Introduced Favicons to enhance user experience with distinctive website icons** | While a user is on a different page or screen, the widget displays a favicon along with a text message.<br/> |
+| **Domain whitelisting to protect your bot script and prevent unauthorized use** | You can whitelist a set of domains on which your bot can be loaded, preventing others from copying your script and using the bot on their websites. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/domain-whitelisting) |
+| **Mobile SDK resources made available in the deploy section for quick access to help** | The Setup page includes help documentation links for the corresponding SDK under the Deploy section to assist in deploying a chat widget on your mobile application.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#24-deploy-chat-widget) |
+| **Introducing the Minimize Banner option to streamline the user experience for bots with multiple banners**| If multiple banners are configured for a chatbot, they are automatically scrolled every five seconds. When this option is enabled, the close button is replaced with a minimize button.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#110-callout-banner) |
+| **Encrypt ymAuthenticationToken for enhanced protection** | Customers can encrypt their tokens before loading the chat widget for added security. |
+    
 
 </summary>
 
-| Enhancement | Description |
-| -------- | -------- |
-| **Seamlessly store call recordings in your preferred Cloud Storage (Amazon S3/ Azure Blob/ SFTP)** <br/> | With this feature, our system provides an automated and customisable way to transfer call recordings in .wav format to your preferred cloud storage (Amazon S3, Azure Blob, SFTP) just once or on a daily, weekly, monthly, or quarterly basis to suit your needs.  <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) |
-|**Schedule Standard reports for automated delivery**| Now, you can now streamline your reporting process by scheduling to export raw reports available on the Overview, Metrics, and Funnels pages as email alerts. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) |
 
-<!--- Alerting dashboard - you can enable proactive alerting whenever your bot is down or any API fails from the Alerts dashboard under Health module. This is the first release of the entire Health module -->
+</details>
+
+<details>
+<summary>
+
+### Integration  
+
+</summary>
+
+| Feature | Description |
+| -------- | -------- |
+| **Simplified schedule management with MS Outlook** <br/> | This integration lets you easily create, reschedule, retrieve, and cancel online meetings and events, view the availability of others, suggest convenient meeting times, and attach files to events for easy organization. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/outlook-calendar) |
 
 </details>
 
@@ -79,31 +109,22 @@ featured: true
 <details>
 <summary>
 
-### Apps (Widget + Mobile)
+### Voice
 
 </summary>
 
-| Enhancement | Description |
-| -------- | -------- |
-| **Web widget enhancements** <br/> | <ul><li> Text-to-Speech support in chat widget.</li><li> Option to enable Bot notification sound to intimate users when there is a new message. </li> <li> Notification Badges to indicate unread messages. <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-notification).</li> <li> Real-time status updates in the chatbot related to agent/user connection, tickets and more.  </li> <li> Added chat seperator  <br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-separator) </li></ul> |
-|**Inbox SDK and Partner app** | <ul><li> Unsupported Widget addition. </li> <li> SSO Redirection URL changes for Apple Login. </li> <li> Overview section revamped to provide updated metrics and better transition and filters, tooltip in analytics, show online visitor message and live queue.</li></ul>|
+| Feature | Description |
+| --- | --- |
+| **User Raw Utterance Recording to analyze STT** | Record user speech separately for each question to analyze STT accuracy. |
+| **Conversational Latency Recording to analyze factors impacting latency** | Record turn-level conversational latency and atomic factors impacting latency (e.g. STT time, NLP processing time, TTS time). |
+| **Sending Top 5 STT transcriptions with confidence for better user response** | Send Top 5 utterances (including the highest confidence one) after STT to help NLP improve user response. |
+| **Configuration for Ignoring low volume/clarity voice for better experience** | Ignore low volume/clarity voice transcription by setting a confidence factor. |
+
+    
+    
 </details>
 
 
 
 
-<details>
-<summary>
-
-### Inbox
-
-</summary>
-
-| Enhancement | Description |
-| -------- | -------- |
-| **Email search v2** | Searching email tickets is a lot easier with our enhanced search feature. You can now search for email tickets using email body, subject line, ticket ID, contact email ID and custom fields. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/searchandfilter)|
-| **Ticketing inactivity & autoclose**| Enable this setting to automatically identify tickets where the customers are inactive and close them in order to save agents time and avoid manual interference. Additionally for a better experience, you can also send reminders to notify customers about the open ticket. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/emailinactivity)|
-| **KB sitemap** |  All your knowledge base articles are now crawled & indexed on search engines through sitemaps.|
-
-</details>
 
