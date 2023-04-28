@@ -150,6 +150,6 @@ Scenario 3:User has a legit query but it falls outside the bot’s scope.
 * If the PAN given by the user is of the wrong format, let the user know 
 that the PAN is incorrect because it’s in the wrong format. 
 
-## 27.	Closure	"* Every use case needs closure. 
+## 27.	Closure: Every use case needs closure
 * The bot should not stop with one use and hang right there. 
-* Ask the user if he needs further help."
+* Ask the user if he needs further help.
