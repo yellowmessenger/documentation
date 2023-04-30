@@ -647,7 +647,7 @@ p {
 }
 
 [class^="col col--3"] {
-  --ifm-col-width: calc(3.5/ 12 * 100%)!important;
+  --ifm-col-width: calc(3/ 12 * 100%)!important;
 }
 
 /* Algolia Search */
