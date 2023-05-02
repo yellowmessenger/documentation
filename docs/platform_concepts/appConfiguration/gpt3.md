@@ -7,7 +7,7 @@ tags: [ GPT chatbot, chatGPT bot,How to use ChatGPT to improve customer engageme
 Yellow.ai platform can be integrated with [OpenAI GPT-3](https://openai.com/blog/gpt-3-apps). We currently support DaVinci, Curie, Babbage, and custom language models.
 
 :::note
-The GPT-3 integration is currently in Beta.
+The GPT-3 integration is currently in beta, so there may be issues or limitations while it's being tested and refined..
 :::
 
 #### What is OpenAI GPT-3?
