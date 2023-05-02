@@ -582,6 +582,12 @@ background-color: #fff;
   border: 1px solid #f2cb67;
 }
 
+.details_b_Ee {
+  --docusaurus-details-decoration-color: #f2cb67 !important;
+  border: 1px solid #f2cb67 !important;
+
+}
+
 
 summary {
   padding: 1rem;
