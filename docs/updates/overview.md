@@ -20,7 +20,7 @@ featured: true
 
 | New feature | Description |
 | -------- | -------- |
-| **Dynamic AI based chat for goal based conversations** | Our ChatGPT-powered feature guides users towards a goal, like lead generation, without the need for extra bot messages or context handling. The result is a more natural conversation experience, better goal completion rates, and higher bot conversion rates. <br/> <br/>**This feature is in BETA currently**|
+| **Dynamic AI based chat for goal based conversations** | Our ChatGPT-powered feature guides users towards a goal, like lead generation, without the need for extra bot messages or context handling. The result is a more natural conversation experience, better goal completion rates, and higher bot conversion rates. <br/> <br/>**This feature is in beta currently**|
        
     
 </details>
