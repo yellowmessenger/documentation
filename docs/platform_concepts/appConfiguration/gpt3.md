@@ -1,27 +1,31 @@
 ---
-title: GPT-3 
+title: OpenAI GPT-3 integration (Beta)
 sidebar_label : GPT-3 
 tags: [ GPT chatbot, chatGPT bot,How to use ChatGPT to improve customer engagement, Get user support queries resolved with chatGPT, Improve your customer support with chatGPT, ChatGPT in Conversational AI]
 ---
 
-Yellow.ai platform can be integrated with [GPT-3](https://openai.com/blog/gpt-3-apps). We currently support DaVinci, Curie, Babbage, and custom language models.
+Yellow.ai platform can be integrated with [OpenAI GPT-3](https://openai.com/blog/gpt-3-apps). We currently support DaVinci, Curie, Babbage, and custom language models.
 
-**What is GPT-3?**
+:::note
+The GPT-3 integration is currently in Beta.
+:::
 
-GPT-3 is an advanced artificial intelligence language model developed by OpenAI, with a capacity of 175 billion parameters. It uses deep learning techniques to generate natural language text and has been pre-trained on a massive amount of data from the internet and other sources. GPT-3 is used for language translation, chatbots, writing assistance, and content generation, and is known for its ability to generate human-like text with remarkable accuracy.
+#### What is OpenAI GPT-3?
 
-**How does a GPT-3 chatbot work?**
+OpenAI GPT-3 is an advanced artificial intelligence language model developed by OpenAI, with a capacity of 175 billion parameters. It uses deep learning techniques to generate natural language text and has been pre-trained on a massive amount of data from the internet and other sources. The OpenAI GPT-3 is used for language translation, chatbots, writing assistance, and content generation, and is known for its ability to generate human-like text with remarkable accuracy.
+
+#### How does a OpenAI GPT-3 chatbot work?
 
 The chatbot can be designed to receive input from users which is then sent to GPT-3 for processing.
 
-GPT-3 will use its pre-trained knowledge to generate a response based on the user's input, which is then sent back to the chatbot. The chatbot displays the generated response to the user in a natural and coherent way.
+OpenAI GPT-3 will use its pre-trained knowledge to generate a response based on the user's input, which is then sent back to the chatbot. The chatbot displays the generated response to the user in a natural and coherent way.
 
 
 ## 1. Build a chatbot using GPT-3
 
-To build a chatbot using GPT-3, you need to connect your open AI account with your yellow.ai platform. To do so, follow these steps: 
+To build a chatbot using OpenAI GPT-3, you need to connect your open AI account with your yellow.ai platform. To do so, follow these steps: 
 
-### 1.1 Retrieve the API key
+### 1.1 Retrieve the OpenAI API key
 
 1. Log in to your [OpenAI](https://auth0.openai.com/u/signup/identifier?state=hKFo2SBYQVNnbUlSUDNBaUdUTERlWnZUUk1abDF0SEpaeGROa6Fur3VuaXZlcnNhbC1sb2dpbqN0aWTZIGZsTThtY1liTGE4S3BEanVzOGtVUTYtd3MycXkzR20to2NpZNkgRFJpdnNubTJNdTQyVDNLT3BxZHR3QjNOWXZpSFl6d0Q) website.
 2. Click your profile picture on the top right corner and click **View API keys**.
@@ -69,7 +73,7 @@ API usage will depend on your org subscription.
 
 The following use case is currently supported in this integration:
 
-### 2.1 Generate answers using GPT-3 
+### 2.1 Generate answers using OpenAI GPT-3
 
 Your chatbot users can receive answers to their queries by leveraging the GPT-3 text completion model. We support Da Vinci, Curie, Babbage, Ada, and custom models. By selecting one of these models, your chatbot can provide detailed and precise responses from GPT-3.
 
