@@ -7,7 +7,7 @@ sidebar_label : Analyse custom tables
 
 The bot builder can create Custom datasets that are tailored to your needs. You can modify these tables according to your preferences using a **custom query**.
 
-## Steps to add a custom query 
+## 1. Steps to add a custom query 
 
 Custom queries can be created using the default datasets or custom datasets.
 1. Open **Insights** > **Data explorer**. 
@@ -48,7 +48,7 @@ It is not possible to join or combine two different tables while writing a singl
 
 ----
 
-## Add filters on generated tables 
+## 2. Add filters on generated tables 
 
 When using the filters option, you can apply filters to any of the available column names. These column names are automatically displayed and available for selection when you click on the filters option.
 
