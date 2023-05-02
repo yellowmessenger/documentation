@@ -266,7 +266,7 @@ Steps to generate dynamic documents:
 
 1. **Upload a template document**: This document should be in .docx format and have placeholder values wherever the dynamic data is to be inserted. The placeholder should be enclosed in single brackets, that is`{placeholdername}`. For example, The company name is {company name}.
 2. **Map placeholder names to variables**: Enter the placeholder name without the brackets in the left column and select a variable value in the right column. 
-3. **Save to a variable**: This can now be sent through the **Send file** node. Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user.
+3. **To display**: The dynamic document can be displayed though the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#6-file). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user.
 
 -----
 
