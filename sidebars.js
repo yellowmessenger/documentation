@@ -429,6 +429,8 @@ module.exports = {
            // "platform_concepts/inbox/chats/getstartedwithlivechat",
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/chatsearch",
+            "platform_concepts/inbox/chats/resolve",
+            "platform_concepts/inbox/chats/bulkactions",
             "platform_concepts/inbox/chats/videocall",
             "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
                  ],
@@ -894,7 +896,7 @@ module.exports = {
         items: [
             "platform_concepts/growth/dataexplorer/defaulttables",
             "platform_concepts/growth/dataexplorer/customtables",
-          //  "platform_concepts/growth/dataexplorer/sumarize",
+            "platform_concepts/growth/dataexplorer/sumarize",
             "platform_concepts/growth/dataexplorer/visualization",
             "platform_concepts/growth/dataexplorer/savedreportsactions",
           ],

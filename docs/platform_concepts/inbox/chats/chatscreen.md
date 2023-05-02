@@ -1,30 +1,25 @@
 ---
-title: Chat screen, user details, and bulk actions
+title: Components of chat screen and user details
 sidebar_label :  Chat screen & user details
 ---
 
+![](https://i.imgur.com/oSPem4b.png)
 
-In this article, you will learn:
-
-1. [Components of chat screen](#cs)
-2. [User details](#ud)
-3. [How to transfer/ resolve a live chat?](#trt)
-4. [How to transfer/resolve/ reopen multiple chats?](#trmt)
- 
------
 
 ## <a name="cs"></a>  1. Chat conversation screen
 
 You can chat with the customer on this screen. This screen has the following functionalities to enable easy conversations:
 
-#### 1. **Write a reply**
+### Write a reply
 
 Simply type in any text and hit send button (or enable enter to send if you want the messages to be sent when you press the enter key).  
 
 <img src="https://i.imgur.com/oGJnkHz.png" alt="drawing" width="70%"/>    
 
+----
+
     
-#### 2. **Actions/Canned response**
+### Actions/Canned response
 
 You can add [agent actions](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions) / [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown. This can be used for frequent actions/replies so that the agent can simply select an action or canned response instead of typing the whole message multiple times.    
 
@@ -34,13 +29,19 @@ You can add [agent actions](https://docs.yellow.ai/docs/platform_concepts/inbox/
 Use # to view the canned responses and / to view the actions. 
 :::
 
-#### 3. **Upload image/files/emojis**
+----
+
+
+### Upload image/files/emojis
 
 Upload images/files to your message and add emojis to your text to make the conversation more interactive. 
     
 ![](https://i.imgur.com/54e5PWh.jpg)
 
-#### 4. **Internal notes**
+
+----
+
+### Internal notes
 
 This can be used to take notes/jot down the pain points/summarise the chat sent by the user. It is mostly used before transferring the chat to another agent. 
 The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin).  
@@ -49,7 +50,9 @@ The messages typed in internal notes will not be visible to the bot users. It wi
     
 <img src="https://i.imgur.com/NkEPDVb.png" alt="drawing" width="50%"/>    
 
-#### 5. **Translate**  
+----
+
+### Translate  
 
 When [auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is configured, the messages sent by the users in regional languages are automatically translated to [Agent's default language](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#-1-agent-settings) (English by default) to the agents on the chat. Once the customers language is detected, the messages sent by the agent are translated to the customers language. 
 
@@ -62,17 +65,46 @@ Assume, the user has typed a sentence and the language is detected as French (us
 
 <img src="https://i.imgur.com/QK8T02e.png" alt="drawing" width="50%"/>    
 
+----
 
-#### 6. **Save or share chats**
+
+### Save or share chats
 
 Chats can be saved in CSV and PDF format to the local system. 
 Chats can be shared with anyone by clicking the **chat copy URL** icon and sharing the link with the respective person.   
 
 > Chats in this link will not be visible after 6 months. 
 
-
 ![](https://i.imgur.com/bpmVToO.png)
 
+----
+
+### Summarize chat (AI)
+
+The **Summarize chat** AI feature provides a summary of the entire conversation between a customer and a bot or agent. This summary can be used to analyze the quality of support, customer satisfaction, trends, and more.
+
+**Use-cases:** 
+- When the conversations are long, it could become difficult for agents to follow. This feature can help save their time by providing a summary of the chat the user had with the bot.
+- Agents and Admins can also check if they are addressing customer's concerns effectively.
+- Summarized chat can be used to later point if the agent want to refer to the chat conversation.
+
+To access this feature, click on the **AI collaborator icon** and select **Summarize chat**.
+
+![](https://i.imgur.com/Xi8Vqn9.png)
+
+![](https://i.imgur.com/2X03K8b.png)
+
+----
+
+### Tone change (AI)
+
+The **Tone Change** AI feature assists inbox agents in maintaining a professional and courteous tone while responding to customers. Here's how to use it:
+1. Type the desired message.
+2. Click on the **AI collaborator icon** and select **Tone change**.
+3. Choose between **Formal ton**e or **Friendly tone**. The feature will automatically transform the message into a polished version with the selected tone.
+4. Click **Send** to send the refined message.
+
+![](https://i.imgur.com/dqjDKDI.png)
 
 ---
 
@@ -98,96 +130,3 @@ The following user details are available on this screen to provide agents with m
 |Timeline|Agent details and time that the live chat was assigned, closed, and number of agents that it has been transferred to.|![](https://i.imgur.com/muyrQEv.png)|
 |Collaboration details| More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.|![](https://i.imgur.com/ybV3WJX.png)|
 |Device details|Details about the user device that the bot tracks.|![](https://i.imgur.com/VDayNjJ.png)|
-
---------
-
-## <a name="trt"></a> 3. Resolve or transfer live chats
-
-- To resolve/transfer live chats, required custom fields must be entered on the user details. 
-
-:::info
-Custom fields can be marked for required to transfer /close ticket while creating them. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) to create custom fields.   
-
-<img src="https://i.imgur.com/fxaF4bz.png" alt="drawing" width="40%"/>    
-   
-
-> Only the Inbox (admins) can control this section.
-:::
-
-- In the below image, **Order ID** is the custom field that must be entered to transfer/resolve this chat. 
-
-<img src="https://i.imgur.com/QLMOAPw.png" alt="drawing" width="40%"/>   
-
-
-- When the required field is entered, **Transfer** and **Resolve** buttons are clickable. You can select the next action.
-
-<img src="https://i.imgur.com/2VlG6GP.png" alt="drawing" width="40%"/>     
-
-
-
-- You can **Transfer** a live chat to a particular configured [Group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) if the query is of a particular topic and anyone from that group will be able to answer it. The live chat can be transferred to an [Agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) if you know that this query can be resolved only by the selected agent. The live chat is transferred to an agent even if they are offline.   
-
-<img src="https://i.imgur.com/pI10HoR.png" alt="drawing" width="70%"/>   
-
-
-
-> If you select **Add me to collaborators**, you will be able to view this chat when it is transferred to the next agent. 
-
-
-------
-
-### 3.1 Collaboration vs. Transfer live chat
-
-
-
-
-| Collaboration | Transfer |
-| -------- | -------- |
-| - You (inbox agent) and the collaborators (other agents who are invited to this chat) can respond to the customer. <br/> - For a customer, this will look like a normal(uninterrupted) agent-customer interaction.<br/> - On the agent's side, there could be multiple agents providing the resolution/responding to the customer. <br/> - The collaborator(other agent) will have access to the chat screen and they can respond directly to the chat, or, add **Notes** for the assigned agent to refer. | When you transfer a chat, you will lose access to this chat and the chat (along with your conversation) will be transferred to the next available agent/ selected agent.     |
-|**Example**: When a query has been raised that is assigned to an agent who resolves chats of the category:**Shipping and delivery**. While having a chat, the customer asks a question about **Payments**. A collaborator can be added to help with the question about payments. Once it is answered, the collaborator can leave and take over their chats.|**Example**: A chat enquiring **Payments** has to be assigned to an agent resolving queries related to **Returns and Refunds**. In such case, the chat can simply be transferred to **Payments & Pricing** group. |
-
-
-
-
-------
-
-
-## <a name="trmt"></a> 4. Bulk actions 
-
-:::note 
-Active chats can be Transferred/Resolved.   
-Resolved chats can be Reopened.
-:::
-
-To Transfer/Resolve/Reopen multiple chats, follow the steps below: 
-
-- By hovering over a chat avatar (display image) you will see the select option, select the required chats (you can also select all).
-
-<img src="https://i.imgur.com/7b4DlPw.png" alt="drawing" width="50%"/>   
-
-- **Resolve**   
-
-Enter the required custom field and click **Resolve**.   
-
-![](https://i.imgur.com/TL55Szx.png)
-
-
-- **Transfer**  
-
-Select the Group/Agent name and confirm the transfer.
-
-![](https://i.imgur.com/nivfDTH.png)
-
-- **Reopen**  
- 
-Reopening an old chat will create a new chat (with new chat ID).     
-
-As a Inbox admin, to Reopen a chat:
-- Mark **priority** as Low/Medium/High (Default=high).
-- Select the required **group/agent**. By default, the value in this field is Automatic, which means as soon as the chat is reopened, it will be assigned to the next available agent irrespective of the group or any defined logic. 
-- Add **tags** if required and add a **description** (mandatory). 
-- Click **Reopen**.
-
-![](https://i.imgur.com/OVNAirZ.png)
-
-

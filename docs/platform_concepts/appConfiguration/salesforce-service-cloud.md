@@ -74,7 +74,7 @@ Yellow.ai uses oAuth 2.0 to connect with a client's Salesforce account and refra
 
 Through this integration you can create,update,fetch objects and perform further more actions in your Salesforce CRM account.
 
-1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **PayU** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
+1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Salesforce CRM** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
 ![](https://i.imgur.com/oGH7ZRI.png)
 
