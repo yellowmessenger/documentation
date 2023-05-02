@@ -81,7 +81,12 @@ Chats can be shared with anyone by clicking the **chat copy URL** icon and shari
 
 ### Summarize chat (AI)
 
-The **Summarize chat** AI feature provides a summary of the entire conversation between a customer and a bot or agent. This summary can be used to analyze the quality of support, customer satisfaction, trends, and more. It is commonly used when a chat is transferred from a bot to an agent, or when an agent wants to transfer a ticket to another agent. 
+The **Summarize chat** AI feature provides a summary of the entire conversation between a customer and a bot or agent. This summary can be used to analyze the quality of support, customer satisfaction, trends, and more.
+
+**Use-cases:** 
+- When the conversations are long, it could become difficult for agents to follow. This feature can help save their time by providing a summary of the chat the user had with the bot.
+- Agents and Admins can also check if they are addressing customer's concerns effectively.
+- Summarized chat can be used to later point if the agent want to refer to the chat conversation.
 
 To access this feature, click on the **AI collaborator icon** and select **Summarize chat**.
 

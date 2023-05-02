@@ -896,7 +896,7 @@ module.exports = {
         items: [
             "platform_concepts/growth/dataexplorer/defaulttables",
             "platform_concepts/growth/dataexplorer/customtables",
-          //  "platform_concepts/growth/dataexplorer/sumarize",
+            "platform_concepts/growth/dataexplorer/sumarize",
             "platform_concepts/growth/dataexplorer/visualization",
             "platform_concepts/growth/dataexplorer/savedreportsactions",
           ],
