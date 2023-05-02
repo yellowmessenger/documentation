@@ -38,17 +38,7 @@ featured: true
 | --- | --- |
 | **Alerts to notify bot failures** | Proactively monitor failures and issues in the bot by creating alerts to notify you when set rules are met. <br/> <br/>**[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/health)** |
 | **Analyze your campaign performance with our new Campaign Notifications Report** | Gain valuable insights into your campaign performance with our new report. Monitor important details such as campaign dates, template IDs, status updates, and message counts all in one place.<br/> <br/>You can easily download the report or schedule it to be sent to your email on a recurring basis, providing you with regular updates on your campaign performance. It is available under **Metrics** > **Export**. |
-| **Hourly grouping of timestamps for efficient data analysis** | You can use the 'Group by Hourly' option to group timestamps while summarizing a table. |   
-    
-| Enhancements | Description |
-| --- | --- |
-| **Displaying agent alias name for agent's privacy** | This allows agents to use an alias instead of their real name when communicating with customers. The customer will see the agent's alias name during conversations. However, we will maintain the agent's real name for reporting and monitoring purposes on the platform. This feature helps to protect the agent's privacy while still maintaining the highest level of customer service possible. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/inbox/alias) |
-| **Text editor for no-code email ticketing** | We have added a rich text editor that allows a more customized and user-friendly experience. The editor includes options such as attaching files, utilizing ticket variables, and formatting text. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing) |
-| **Canned response search for accurate search results** | Users can now search for canned responses based on both the keyword and the content of the response. This saves time and improves the accuracy of the search results. <br/> Please note that media type canned responses can only be searched using the defined keyword or tag. |
-| **Chat summarisation to understand bot conversations in one click** | Summarise chat is an AI powered feature that automatically generates a summary of the entire conversation. This eliminates the need for agents to manually read through multiple exchanges between the bot, agent, and customer, and provides them the entire context of the ticket. |
-| **Tone selection for personalised conversations** | With this agents can now select a different tone for their responses based on the customer's mood and the nature of the conversation. By selecting an appropriate tone, agents can create a more empathetic and personalized interaction with customers. |
-    
-    
+| **Hourly grouping of timestamps for efficient data analysis** | You can use the 'Group by Hourly' option to group timestamps while summarizing a table. |      
 </details>
 
 <details>
@@ -78,6 +68,8 @@ featured: true
 
 ### Channels
 
+</summary>
+
 | Enhancements | Description |
 | --- | --- |
 | **Introduced Favicons to enhance user experience with distinctive website icons** | While a user is on a different page or screen, the widget displays a favicon along with a text message.<br/> |
@@ -86,9 +78,6 @@ featured: true
 | **Introducing the Minimize Banner option to streamline the user experience for bots with multiple banners**| If multiple banners are configured for a chatbot, they are automatically scrolled every five seconds. When this option is enabled, the close button is replaced with a minimize button.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#110-callout-banner) |
 | **Encrypt ymAuthenticationToken for enhanced protection** | You can encrypt your tokens before loading the chat widget for added security. |
     
-
-</summary>
-
 
 </details>
 
@@ -125,6 +114,23 @@ featured: true
 </details>
 
 
+<details>
+<summary>
+
+### Inbox
+
+</summary>
+
+| Enhancements | Description |
+| --- | --- |
+| **Displaying agent alias name for agent's privacy** | This allows agents to use an alias instead of their real name when communicating with customers. The customer will see the agent's alias name during conversations. However, we will maintain the agent's real name for reporting and monitoring purposes on the platform. This feature helps to protect the agent's privacy while still maintaining the highest level of customer service possible. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/inbox/alias) |
+| **Text editor for no-code email ticketing** | We have added a rich text editor that allows a more customized and user-friendly experience. The editor includes options such as attaching files, utilizing ticket variables, and formatting text. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing) |
+| **Canned response search for accurate search results** | Users can now search for canned responses based on both the keyword and the content of the response. This saves time and improves the accuracy of the search results. <br/> Please note that media type canned responses can only be searched using the defined keyword or tag. |
+| **Chat summarisation to understand bot conversations in one click** | Summarise chat is an AI powered feature that automatically generates a summary of the entire conversation. This eliminates the need for agents to manually read through multiple exchanges between the bot, agent, and customer, and provides them the entire context of the ticket.<br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#summarize-chat-ai) |
+| **Tone selection for personalised conversations** | With this agents can now select a different tone for their responses based on the customer's mood and the nature of the conversation. By selecting an appropriate tone, agents can create a more empathetic and personalized interaction with customers.<br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#tone-change-ai) |
+    
+    
+</details>
 
 
 
