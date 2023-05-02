@@ -1,6 +1,6 @@
 ---
 title: Understanding how chat search works 
-sidebar_label :  Chat search and filters
+sidebar_label :  Chat search & filters
 ---
 
 This document explains how the search works in the chats section when an agent or an admin desires to look into a particular chat for more information about the user, how the chat started, what was the bot user looking for, etc.
