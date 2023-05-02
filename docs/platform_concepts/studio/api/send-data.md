@@ -47,7 +47,7 @@ Through variable | $$tobase64{{{{url}}}
 ![](https://i.imgur.com/SRHt8OM.png)
 
 
-## <a name="3"></a>3. Pass JSON in Array/Object variable
+## <a name="3"></a>3. Pass Array/Object variable in JSON
 
 You need to pass the JSON file or the details to be entered as an array/object.
 

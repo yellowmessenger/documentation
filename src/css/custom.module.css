@@ -574,6 +574,11 @@ background: #f2eee3 !important;
   border-color: transparent transparent transparent #f2cb67;
 }
 
+[class^="details_b_Ee"] {
+  --docusaurus-details-decoration-color: #f2cb67;
+  border: 1px solid #f2cb67;
+}
+
 [class^="details_lb9f isBrowser_bmU9 alert alert--info details_b_Ee"] {
 background-color: #fff;
 }
