@@ -10,8 +10,8 @@ sidebar_label : Inbox FAQs
 Which attachment formats does Inbox support?
 </summary>
 <div>
-In the chat or email conversation, customers, agents, and admins have the ability to attach files of these formats: <br/> JPEG, JPG, PNG, GIF, PDF, TXT, DOC, PPT, DOCX, PPTX, XLS, XLSX, CSV, TSV, ZIP, JSON, MP4, MP3, WAV, AAC, M4A, SVG, 3GP, and MOV.
-</div>
+In the chat or email conversation, customers, agents, and admins have the ability to attach files of these formats: <br/> JPEG, JPG, PNG, GIF, PDF, TXT, DOC, PPT, DOCX, PPTX, XLS, XLSX, CSV, TSV, ZIP, JSON, MP4, MP3, WAV, AAC, M4A, SVG, 3GP, and MOV. <br/>
+However, there is a 25MB size-limit on the files you can send. </div>
 </details>
 
 

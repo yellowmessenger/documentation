@@ -67,7 +67,6 @@ Assume, the user has typed a sentence and the language is detected as French (us
 
 ----
 
-
 ### Save or share chats
 
 Chats can be saved in CSV and PDF format to the local system. 
@@ -77,34 +76,8 @@ Chats can be shared with anyone by clicking the **chat copy URL** icon and shari
 
 ![](https://i.imgur.com/bpmVToO.png)
 
-----
 
-### Summarize chat (AI)
-
-The **Summarize chat** AI feature provides a summary of the entire conversation between a customer and a bot or agent. This summary can be used to analyze the quality of support, customer satisfaction, trends, and more.
-
-**Use-cases:** 
-- When the conversations are long, it could become difficult for agents to follow. This feature can help save their time by providing a summary of the chat the user had with the bot.
-- Agents and Admins can also check if they are addressing customer's concerns effectively.
-- Summarized chat can be used to later point if the agent want to refer to the chat conversation.
-
-To access this feature, click on the **AI collaborator icon** and select **Summarize chat**.
-
-![](https://i.imgur.com/Xi8Vqn9.png)
-
-![](https://i.imgur.com/2X03K8b.png)
-
-----
-
-### Tone change (AI)
-
-The **Tone Change** AI feature assists inbox agents in maintaining a professional and courteous tone while responding to customers. Here's how to use it:
-1. Type the desired message.
-2. Click on the **AI collaborator icon** and select **Tone change**.
-3. Choose between **Formal ton**e or **Friendly tone**. The feature will automatically transform the message into a polished version with the selected tone.
-4. Click **Send** to send the refined message.
-
-![](https://i.imgur.com/dqjDKDI.png)
+> Other AI features on the chat screen are listed in the next article. 
 
 ---
 
