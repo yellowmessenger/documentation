@@ -100,6 +100,13 @@ To test your bot on Viber, follow these steps:
 
 1. Open the Viber app that you have downloaded to your mobile device and search for your bot.
 
+   * You can either scan the QR code from the [Viber chatbot account](https://partners.viber.com/account/) that you have created.
+  
+     ![](https://i.imgur.com/290utvn.png)
+	 
+	 OR	 
+   * You can search the bot from your mobile app.
+
 	 <img src="https://i.imgur.com/GlmPafa.png" alt="drawing" width="40%"/>
 
 2. Select your respective bot.
