@@ -68,10 +68,10 @@ module.exports = {
 {
   type: "category",
   label: "Voice bot",
-  link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
+  //link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
   collapsed: true,
   items: [
-
+        "cookbooks/voice-as-channel/voiceoverview",
 // Reporting  
 {
   type: "category",
