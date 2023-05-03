@@ -76,21 +76,14 @@ module.exports = {
 {
   type: "category",
   label: "Analytics and Reports",
-  link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
+  //link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
   collapsed: true,
   items: [
+          "cookbooks/voice-as-channel/reporting/intro",
           "cookbooks/voice-as-channel/reporting/dashboard",
-          {
-            type: "category",
-            label: "Advanced reporting",
-           // link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/advance/intro'},
-            collapsed: true,
-            items: [
-                   "cookbooks/voice-as-channel/reporting/advance/cdr",
-                   "cookbooks/voice-as-channel/reporting/advance/convdata",
-                   "cookbooks/voice-as-channel/reporting/advance/conv_cdr",
-                ],
-              },
+          "cookbooks/voice-as-channel/reporting/cdr",
+          "cookbooks/voice-as-channel/reporting/convdata",
+          "cookbooks/voice-as-channel/reporting/conv_cdr",
       ],
     },
 

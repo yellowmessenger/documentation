@@ -13,9 +13,8 @@ In this article, you will learn:
 2. [How to filter chats?](#filter)
    
 
-> To navigating to the Chats section, click **Overview** > **Inbox**. Select **Chats**.   
-> 
-> ![](https://i.imgur.com/sQvGw89.png)
+To navigating to the Chats section, click **Overview** > **Inbox**. Select **Chats**.    
+![](https://i.imgur.com/sQvGw89.png)
 
 
 :::info
@@ -25,9 +24,8 @@ In this article, you will learn:
 :::
 
 
-> On the chats section, you can find **Chats list**, **Message pane**, and **Details list**.
->
-> ![](https://i.imgur.com/m0FfeXj.png)
+On the chats section, you can find **Chats list**, **Message pane**, and **Details list**.
+![](https://i.imgur.com/m0FfeXj.png)
 
 :::note
 Agents can only search for the chats that are assigned to/transferred/collaborated with them while Admins can search within all the live chats.

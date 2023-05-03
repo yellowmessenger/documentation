@@ -1,6 +1,6 @@
 ---
 title : Get access to Call Details Report (CDR) of your voice bot on Insights module
-sidebar_label : Call details report (CDR)
+sidebar_label : Call details report 
 ---
 
 
