@@ -29,53 +29,22 @@ module.exports = {
   cookbooks: [
 
     "cookbooks/getting_started", 
-   
-  // Studio  
-    {
-      type: "category",
-      label: "Studio",
-      collapsed: true,
-      items: [
-       // "cookbooks/conversation-design",
-          "cookbooks/studio/newcard",
-          "cookbooks/studio/trigger-whatsappresponse",
-          "cookbooks/studio/retriev-dbinfo",
-          "cookbooks/studio/multilingual-bot",
-          "cookbooks/studio/build-bot",
-          "cookbooks/studio/hide-input",
-          "cookbooks/studio/dynamic-quickreplies",
-          "cookbooks/studio/images-languages",
-
-      ],
-    }, 
-
-// MP
-    {
-      type: "category",
-      label: "Marketplace",
-      collapsed: true,
-      items: [
-        "cookbooks/marketplace-templates/edtech-template",
-        "cookbooks/marketplace-templates/ecommerce-template",
-        "cookbooks/marketplace-templates/saas",
-       "cookbooks/marketplace-templates/bfsi",
-       "cookbooks/marketplace-templates/healthcare_template"
-      ],
-    }, 
-
-
+ 
+  
 // Voice docs 
 {
   type: "category",
-  label: "Voice bot",
-  //link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
+  label: "AI Voicebot builder",
   collapsed: true,
   items: [
         "cookbooks/voice-as-channel/voiceoverview",
+        "cookbooks/voice-as-channel/components", 
+
+
 // Reporting  
 {
   type: "category",
-  label: "Analytics and Reports",
+  label: "Analytics and reports",
   //link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
   collapsed: true,
   items: [
@@ -86,12 +55,13 @@ module.exports = {
           "cookbooks/voice-as-channel/reporting/conv_cdr",
       ],
     },
+    "cookbooks/voice-as-channel/transfertoagent",
+    "cookbooks/voice-as-channel/callmgmt",
 
   // ---- old docs 
 
 
     "cookbooks/voice-as-channel/voicearchitecture",
-    "cookbooks/voice-as-channel/components", 
 
 // building  
   {
@@ -132,7 +102,43 @@ module.exports = {
   ],
 }, 
 
-//end of voice docs 
+//end of voice docs   
+
+
+  // Studio  
+    {
+      type: "category",
+      label: "Studio",
+      collapsed: true,
+      items: [
+       // "cookbooks/conversation-design",
+          "cookbooks/studio/newcard",
+          "cookbooks/studio/trigger-whatsappresponse",
+          "cookbooks/studio/retriev-dbinfo",
+          "cookbooks/studio/multilingual-bot",
+          "cookbooks/studio/build-bot",
+          "cookbooks/studio/hide-input",
+          "cookbooks/studio/dynamic-quickreplies",
+          "cookbooks/studio/images-languages",
+
+      ],
+    }, 
+
+// Marketplace
+    {
+      type: "category",
+      label: "Marketplace",
+      collapsed: true,
+      items: [
+        "cookbooks/marketplace-templates/edtech-template",
+        "cookbooks/marketplace-templates/ecommerce-template",
+        "cookbooks/marketplace-templates/saas",
+       "cookbooks/marketplace-templates/bfsi",
+       "cookbooks/marketplace-templates/healthcare_template"
+      ],
+    }, 
+
+
 
 // inbox
 {

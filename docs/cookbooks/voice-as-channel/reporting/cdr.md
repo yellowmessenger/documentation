@@ -1,5 +1,5 @@
 ---
-title : Get access to Call Details Report (CDR) of your voice bot on Insights module
+title : Call Details Report (CDR) of your voice bot on Insights module
 sidebar_label : Call details report 
 ---
 
@@ -8,7 +8,8 @@ sidebar_label : Call details report
 In Data Explorer, CDR is available only for voice bots.
 :::
 
-This article focuses on **Call details report** (CDR).
+This article focuses on **Call details report** (CDR) for voice bots, a database table maintained by yellow.ai platform which records more than 15+ important metrics (like start time, duration, recording url etc) for each call.
+
 
 ## 1. Call details report overview
 
@@ -18,28 +19,15 @@ CDR is a report of telephony data obtained from each call (bot conversation with
 - The CDR table contains several fields that record various details about the call, such as **call duration, caller ID, called number, call status, and call type**. CDR fields are explained in the [last section](#cdr) of this article. 
 - By analyzing CDR data, businesses can **identify trends and patterns** in their call center operations, **improve call quality**, and **enhance customer experience**, make **data-driven decisions** and **optimize** the voice bot operations for maximum efficiency and effectiveness.
 
-### CDR in business scenerios 
-
-Below are some instances that can be obtained from the CDR report after referring to this article:
-
-| Use-cases | Insights |
-| -------- | -------- |
-| **Identifying customer trends**     | CDR reports can provide insights into customer behavior, including the types of calls received, the most common reasons for calling, and the most frequent customer complaints. This information can be used to improve customer experience and drive business growth. <br/> For example, a marketing team may use CDR reports to identify common customer pain points and develop targeted campaigns to address them.     |
-|**Evaluating call quality**|CDR reports can  provide insights into the quality of calls, including call duration, call wait time, and call drop rate. A business may use this data to identify trends and areas for improvement. <br/> For example, a call center may use CDR reports to identify common issues that cause calls to be dropped and take steps to address them.|
-|**Analyzing call volume**| CDR reports can help businesses track call volume, including the number of calls received, missed, answered, and abandoned. <br/>For example, a customer service team may use CDR reports to analyze their call volume and determine the busiest times of day.|
-|**Call Duration Analysis** | Businesses can use CDR reports to analyze the average call duration. This can help identify if customers are spending too much time on call or answering multiple questions posed by that bot without completly understanding the intent. |
-|**Measuring chatbot performance** | With CDR reports, businesses can track how well their chatbot is performing. They can see metrics such as the response time, resolution rate, and error rate, which can help them identify areas for improvement and optimize their chatbot for better customer service.|
-|**Assessing chatbot ROI** | By tracking the number of conversations and the time spent on each conversation, businesses can calculate the ROI of their chatbot investment. They can also track how many leads or sales were generated as a result of chatbot conversations.|
-|**Monitoring compliance** | Businesses in regulated industries, such as finance or healthcare, can use CDR reports to monitor compliance with industry regulations. They can track the conversations and ensure that their chatbot is providing accurate and compliant information to customers.|
-
-
-
-
+Examples of insights you can derive from the auto generated call details report: 
+- Retrieve a list of users who disconnected calls during the last 7 days.
+- Retrieve the answering rate for a specific campaign (identified by its ID) that was launched last Sunday.
+- Retrieve daily total calls handled by the voice bot.
 
 
 -------
 
-## 2. How to access call details(CDR) on Data Explorer
+## 2. Access call details(CDR) on Data Explorer
 
 
 To access the CDR for voice bots: 
@@ -51,7 +39,7 @@ To access the CDR for voice bots:
 
 --------
 
-### Visualize call detail report  
+## 3. Visualize call detail report  
 
 On the data explorer, you have the option to filter or summarize the CDR data according to your specific needs. You can then visualize this data on a dashboard and download reports that only include the filtered data.
 
@@ -59,7 +47,7 @@ On the data explorer, you have the option to filter or summarize the CDR data ac
 
 ----
 
-#### Use case 1: Create custom dasboards
+### Use case 1: Create custom dasboards
 
 Suppose you're a ticket booking center using the yellow.ai voice bot, and you want to track the number of daily calls due to the different offers you provide. Here are the steps you can follow:
 
@@ -86,7 +74,7 @@ Suppose you're a ticket booking center using the yellow.ai voice bot, and you wa
 
 -----
 
-#### Use case 2: Schedule reports to be sent to your email
+### Use case 2: Schedule reports to be sent to your email
 
 Suppose you are a new support center on the yellow.ai voice bot, and you need to send a weekly report of the voice bot's billing duration to the accounts department. Here are the steps you can follow:
 
@@ -114,12 +102,11 @@ Suppose you are a new support center on the yellow.ai voice bot, and you need to
 
 
 
-##  <a name="cdr"></a> 3. CDR fields and their definitions
+##  <a name="cdr"></a> 4. CDR fields and their definitions
 
 
 The CDR report provides the following information:
 
-> Time duration is displayed in seconds and time format in UTC.
 
 ### Call ID
 
@@ -127,11 +114,11 @@ Call ID, or Call Identifier, is a system-generated unique identifier that is use
 
 ### Call start time 
 
-Call start time refers to the timestamp, in UTC (Coordinated Universal Time), at which the call was initiated by the caller. This timestamp marks the beginning of the call and is used to track when the call was started.
+Call start time refers to the timestamp, at which the call was initiated by the caller. This timestamp marks the beginning of the call and is used to track when the call was started.
 
 ### Call end time 
 
-Call End Time refers to the time when a phone call or a communication session is terminated or disconnected. This can occur due to various reasons, a technical issue causing the call to drop, or the call being terminated by user or the bot. <br/> In telecommunication systems, the Call End Time is usually recorded in Call Detail Records (CDRs) and is used for various purposes, such as billing, call analysis, and network optimization. The Call End Time is also important for call logging and call recording systems, as it marks the point at which the recording should stop.
+Call End Time refers to the time when a phone call or a communication session is terminated or disconnected.
 
 ### Ring Duration
 
@@ -150,26 +137,20 @@ Voice bot duration, in seconds refers to the length of time that a voice bot or 
 The duration, in seconds, of the conversation between the user and the voice bot, rounded up to the nearest Voice Billing Pulse interval for billing purposes.
 
 ### Campaign ID
+
 A Campaign ID is a system-generated unique identifier assigned to a marketing campaign to track its performance and measure the effectiveness of marketing efforts. This field is empty for inbound calls by default.
 
 ### Hangup Reason
 
-Hangup Reason refers to the reason why a call or communication session was terminated, ended, or disconnected. 
-
-This can be due to various factors such as, **Invalid destination network error, Call switch off, Normal hangup, Bot failure, User busy, and Ring timeout**. 
-
+Hangup Reason refers to the reason why a call or communication session was terminated, ended, or disconnected.
 Hangup Reason is a valuable metric for analyzing call center performance and identifying areas for improvement. By tracking and analyzing the reasons for call terminations, call centers can identify common issues, patterns, and trends, and take steps to address them to improve customer satisfaction and retention.
+
 
 ### Hangup Source
 
-Hangup Source refers to the reason or the event that initiated the hangup of a call, it is the reason why the call was terminated. Some examples of Hangup Sources are:
-* The caller hung up the call
-* The call was terminated due to a network error
-* The call was disconnected due to an invalid number
-* The call was disconnected due to a timeout
-
+Hangup source specifies the party that disconnected the calls be it user or the bot.
 Hangup Source can provide useful information for analyzing call quality, identifying problems with the network or equipment, and understanding the reasons for call failures.
-    
+
 ### Source Number
 
 Source number refers to the phone number or caller ID of the party that initiated the call. It is the number from which the call originated. In other words, it is the phone number of the person or device that made the call.
