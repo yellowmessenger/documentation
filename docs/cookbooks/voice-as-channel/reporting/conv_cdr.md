@@ -1,11 +1,17 @@
 ---
-title : Create flows to combine call details and conversational details for analysis
-sidebar_label : CDR & custom data analysis
+title : Create flows to combine call and conversational details for analysis
+sidebar_label : Call & conversational details analysis 
 ---
 
-This document outlines the application of **custom fields** and **call detail report** parameters for customer tracking purposes.
+This document outlines the application of **conversational details report** and **call detail report** parameters for customer tracking purposes.
 
-Along with standard fields present in [CDR](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/advance/cdr) and conversational data ([custom fields](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/advance/convdata)), voice bot developers can define fields based on their business logic requirements.
+Along with standard fields present in [CDR](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr) and [conversational details report](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata), voice bot developers can define fields based on their business logic requirements.
+
+Examples of insights you can derive from the call and conversational details reports: 
+- Retrieve average call duration for callers from Gujarat state by combining **duration** fields from CDR table and **state** name from conversational details report table.
+- Retrieve the success rate for answered calls with Hindi language selection by combining **call status** field from CDR table and selected **language** from conversational details report table.
+
+------------
 
 **Use-case:** 
 
@@ -13,7 +19,6 @@ To analyze both call details and conversational details for certain use cases, y
 
 For example, if you are developing a voice bot for medical counseling aimed at different age groups, it may be necessary to track the age of customers, the nature of their queries, and the length of their calls, in accordance with company guidelines. You could record the customer's age and query as custom fields, while the call duration can be automatically tracked by CDR. By combining both sources of data, you could create a dashboard that is tailored to this use case.
 
----
 
 To accomplish use cases that involve using both conversational data and CDR data, three steps need to be followed:
 1. Set up a flow that can **collect and store** custom details from the conversation.
@@ -25,7 +30,7 @@ To accomplish use cases that involve using both conversational data and CDR data
 
 -----
 
-## 1. Call data collection and storage using variables
+## Step 1. Call data collection and storage using variables
 
 To store the age and query type along with the rest of the flow, follow these steps:
 
@@ -39,7 +44,7 @@ To store the age and query type along with the rest of the flow, follow these st
 
 
 
-## 2. Create a callbackStatus event
+## Step 2. Create a callbackStatus event
 
 To streamline call management, create a custom event named `callbackStatus`. You can follow the steps provided [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events) to create a custom event. Once you've created the event, verify that its status is set to **Active**.
  
@@ -52,14 +57,14 @@ The `callbackStatus` object is a container that holds important CDR data and is 
 
 ------
 
-## 3. Merge and analyse CDR and conversation data post-call disconnection
+## Step 3. Merge and analyse CDR and conversation data post-call disconnection
 
 1. Create a new flow from scratch by following the steps provided [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow).
 2. On the start node, add an [event trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event) by selecting **Event** as the trigger and `callbackStatus` as the value. This will ensure that the flow executes when the call has ended as per the backend logic. See the image below for reference.
     ![](https://i.imgur.com/5xbfRqM.png)
 3. Add a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) action node to retrieve CDR-related entries.
     ![](https://i.imgur.com/8wBb4Bf.png)
-4. Add a database node to combine CDR and custom fields into one table. Refer to the steps outlined [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) to learn how to use the DB node.
+4. Add a database node to combine CDR and conversational detail fields into one table. Refer to the steps outlined [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) to learn how to use the DB node.
     ![](https://i.imgur.com/yuogCEP.png)
     :::info
     **Pre-requisite** 
@@ -74,9 +79,9 @@ The `callbackStatus` object is a container that holds important CDR data and is 
 
 ------
 
-## 4. Download or visualize call  details for better insights
+## Step 4. Download or visualize call  details for better insights
 
-You can find all the information related to your use case, including data from both CDR and custom fields, on the table.
+You can find all the information related to your use case, including data from both CDR and conversational detail fields, on the table.
 
 To download this data, navigate to **Studio** > **Database**, and click on **Table actions**. From there, you can easily download the data.
 ![](https://i.imgur.com/bZZlNeW.png)
@@ -85,10 +90,11 @@ You can also view this data on **Insights** > **Data explorer**, where it can be
 ![](https://i.imgur.com/Xyig1o0.png)
 
 
+------
 
 **Understand other operations on insights**
 
-> - Check out the available actions for custom tables by visiting [this page](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer#-3-create-custom-tables).    
-> - To visualize the data collected from calls, follow the steps outlined in [this guide](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/advance/cdr#1-visualize-call-detail-report).
+> - Check out the available actions for custom tables by visiting [this page](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/customtables).    
+> - To visualize the data collected from calls, follow the steps outlined in [this guide](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr).
 > - Understand other operations on [Insights modules](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights). 
 
