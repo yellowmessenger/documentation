@@ -25,7 +25,7 @@ const Footer = () => {
   const build = [
     { 
       title: "Building your first bot", 
-      to: "./docs/cookbooks/getting_started" 
+      to: "./docs/cookbooks/studio/build-bot" 
     },
     { 
       title: "Invoke an API in the bot", 

@@ -211,6 +211,11 @@ html[data-theme="dark"] .admonition h5 {
   font-family: "Nunito", sans-serif;
 }
 
+[class^="navbar__item navbar__link"]:hover {
+  
+  color: #7d6bf4;
+}
+
 [class^="navbar__items navbar__items--right"] a:last-child {
   background-color: var(--ifm-primary-button-color);
   border: 1px solid #c9540d;
