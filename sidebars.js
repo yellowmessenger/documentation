@@ -29,76 +29,39 @@ module.exports = {
   cookbooks: [
 
     "cookbooks/getting_started", 
-   
-  // Studio  
-    {
-      type: "category",
-      label: "Studio",
-      collapsed: true,
-      items: [
-       // "cookbooks/conversation-design",
-          "cookbooks/studio/newcard",
-          "cookbooks/studio/trigger-whatsappresponse",
-          "cookbooks/studio/retriev-dbinfo",
-          "cookbooks/studio/multilingual-bot",
-          "cookbooks/studio/build-bot",
-          "cookbooks/studio/hide-input",
-          "cookbooks/studio/dynamic-quickreplies",
-          "cookbooks/studio/images-languages",
-
-      ],
-    }, 
-
-// MP
-    {
-      type: "category",
-      label: "Marketplace",
-      collapsed: true,
-      items: [
-        "cookbooks/marketplace-templates/edtech-template",
-        "cookbooks/marketplace-templates/ecommerce-template",
-        "cookbooks/marketplace-templates/saas",
-       "cookbooks/marketplace-templates/bfsi",
-       "cookbooks/marketplace-templates/healthcare_template"
-      ],
-    }, 
-
-
+ 
+  
 // Voice docs 
 {
   type: "category",
-  label: "Voice bot",
-  link: {type: 'doc', id: 'cookbooks/voice-as-channel/voiceoverview'},
+  label: "AI Voicebot builder",
   collapsed: true,
   items: [
+        "cookbooks/voice-as-channel/voiceoverview",
+        "cookbooks/voice-as-channel/components", 
+
 
 // Reporting  
 {
   type: "category",
-  label: "Analytics and Reports",
-  link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
+  label: "Analytics and reports",
+  //link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
   collapsed: true,
   items: [
+          "cookbooks/voice-as-channel/reporting/intro",
           "cookbooks/voice-as-channel/reporting/dashboard",
-          {
-            type: "category",
-            label: "Advanced reporting",
-           // link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/advance/intro'},
-            collapsed: true,
-            items: [
-                   "cookbooks/voice-as-channel/reporting/advance/cdr",
-                   "cookbooks/voice-as-channel/reporting/advance/convdata",
-                   "cookbooks/voice-as-channel/reporting/advance/conv_cdr",
-                ],
-              },
+          "cookbooks/voice-as-channel/reporting/cdr",
+          "cookbooks/voice-as-channel/reporting/convdata",
+          "cookbooks/voice-as-channel/reporting/conv_cdr",
       ],
     },
+    "cookbooks/voice-as-channel/transfertoagent",
+    "cookbooks/voice-as-channel/callmgmt",
 
   // ---- old docs 
 
 
     "cookbooks/voice-as-channel/voicearchitecture",
-    "cookbooks/voice-as-channel/components", 
 
 // building  
   {
@@ -139,7 +102,43 @@ module.exports = {
   ],
 }, 
 
-//end of voice docs 
+//end of voice docs   
+
+
+  // Studio  
+    {
+      type: "category",
+      label: "Studio",
+      collapsed: true,
+      items: [
+       // "cookbooks/conversation-design",
+          "cookbooks/studio/newcard",
+          "cookbooks/studio/trigger-whatsappresponse",
+          "cookbooks/studio/retriev-dbinfo",
+          "cookbooks/studio/multilingual-bot",
+          "cookbooks/studio/build-bot",
+          "cookbooks/studio/hide-input",
+          "cookbooks/studio/dynamic-quickreplies",
+          "cookbooks/studio/images-languages",
+
+      ],
+    }, 
+
+// Marketplace
+    {
+      type: "category",
+      label: "Marketplace",
+      collapsed: true,
+      items: [
+        "cookbooks/marketplace-templates/edtech-template",
+        "cookbooks/marketplace-templates/ecommerce-template",
+        "cookbooks/marketplace-templates/saas",
+       "cookbooks/marketplace-templates/bfsi",
+       "cookbooks/marketplace-templates/healthcare_template"
+      ],
+    }, 
+
+
 
 // inbox
 {
@@ -428,6 +427,7 @@ module.exports = {
           items: [
            // "platform_concepts/inbox/chats/getstartedwithlivechat",
             "platform_concepts/inbox/chats/chatscreen",
+            "platform_concepts/inbox/chats/genai",
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",
@@ -896,7 +896,7 @@ module.exports = {
         items: [
             "platform_concepts/growth/dataexplorer/defaulttables",
             "platform_concepts/growth/dataexplorer/customtables",
-          //  "platform_concepts/growth/dataexplorer/sumarize",
+            "platform_concepts/growth/dataexplorer/sumarize",
             "platform_concepts/growth/dataexplorer/visualization",
             "platform_concepts/growth/dataexplorer/savedreportsactions",
           ],

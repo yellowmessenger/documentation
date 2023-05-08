@@ -34,7 +34,7 @@ export const topics = [
   {
     title: "Get started 🚀",
     description:
-      "Learn to build a bot on yellow.ai's no-code platform in just a few clicks with excellent speed!",
+      "Discover Yellow.ai's diverse product offerings and self-help resources that can assist you with any questions or issues related to product understanding and usage.",
     icon: "ri-booklet-line",
     url: "/docs/platform_concepts/getting-started",
   },
@@ -52,17 +52,25 @@ export const topics = [
     icon: "ri-whatsapp-line",
     url: "/docs/platform_concepts/channelConfiguration/whatsapp-configuration",
   },
+  
   {
-    title: "Tutorials",
+    title: "Use Case Guides",
     description:
       "Tutorials for one shot learning of major sections of the platform",
     icon: "ri-git-repository-line",
     url: "/docs/cookbooks/getting_started",
   },
   {
-    title: "Ask",
+    title: "Explore What's new",
     description:
-      "Can't find what you're looking for? Ask our community of bot-building experts!",
+      "Stay up-to-date with the new releases of the Yellow.ai's platform.",
+    icon: "ri-lightbulb-flash-line",
+    url: "/docs/cookbooks/getting_started",
+  },
+  {
+    title: "Ask the Community",
+    description:
+      "Can't find what you're looking for? Ask our product experts!",
     icon: "ri-question-line",
     url: "https://community.yellow.ai",
   },

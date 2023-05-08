@@ -1,26 +1,27 @@
 ---
 title : Extract user responses from conversations and create custom reports
-sidebar_label : Custom data report
+sidebar_label : Conversational details report
 ---
 
-In this document, we will cover a use case where custom fields are used to track customer details.
-
-Voice bot developers have the ability to define custom fields based on their business logic requirements, in addition to standard fields. This allows them to derive additional insights from their data.
-
-**Examples of custom details**: 
-
-Phone numbers, ages, names, and other data points that are specific to the conversations, which can be used to generate custom reports.
-
-**Use-case:**
-
-If you are developing a voice bot for educational counseling for students across various age groups, it may be required as per company guidelines to keep track of the customer/student's age and the type of query asked. This information can be recorded as custom fields, allowing you to gain insights into the types of queries being asked by different age groups and improve the voice bot's performance accordingly.
+In this document, we will cover a use case where custom fields are used to track customer details obtained from the conversation.
 
 
+**Conversational details that can be tracked on call**
+
+Voice bot developers have the ability to define custom fields based on their business logic requirements, in addition to standard fields. This allows them to derive additional insights from their data. A few examples of custom details are additional phone numbers, ages, names, etc.
+
+Examples of insights you can derive from the conversational details report: 
+- Retrieve the percentage of callers who are selecting the Hindi language option.
+- For an e-commerce chatbot, retrieve the percentage split between inquiries related to order status and those related to registering a complaint.
 
 
 -----
 
 ## 1. Create a flow to collect and store custom details from calls
+
+**Use-case to understand how to create reports with conversational details data**
+
+If you are developing a voice bot for educational counseling for students across various age groups, it may be required as per company guidelines to keep track of the customer/student's age and the type of query asked. This information can be recorded as custom fields, allowing you to gain insights into the types of queries being asked by different age groups and improve performance accordingly.
 
 
 ### Step 1. Create a flow to store data in variables 
@@ -49,7 +50,7 @@ To store data collected from flows, you need to create a table. For instance, yo
 
 ------
 
-## 2. Download or visualize custom call details for better insights
+## 2. Download or visualize conversational details for better insights
 
 To download this data, navigate to **Studio** > **Database**, and click on **Table actions**. From there, you can easily download the data.
 ![](https://i.imgur.com/ZCrHFs2.png)
@@ -61,7 +62,7 @@ You can also view this data on the data explorer, where it can be summarized, vi
 
 **Understand other operations on insights**
 
-> - Check out the available actions for custom tables by visiting [this page](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer#-3-create-custom-tables).    
-> - To visualize the data collected from calls, follow the steps outlined in [this guide](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/advance/cdr#1-visualize-call-detail-report).
+> - Check out the available actions for custom tables by visiting [this page](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/customtables).    
+> - To visualize the data collected from calls, follow the steps outlined in [this guide](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr).
 > - Understand other operations on [Insights modules](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights). 
 

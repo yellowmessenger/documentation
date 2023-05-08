@@ -68,12 +68,12 @@
   --ifm-orange-color: #ffd3a7;
   --ifm-h1-font-size: 2rem;
   --ifm-h2-font-size: 1rem;
-  --ifm-link-color: #007ed4;
+  --ifm-link-color: #5C42FC;
 
   --ifm-menu-color: #505862;
   --ifm-menu-color-background-active: #fff;
   --ifm-menu-color-background-hover: #fff;
-  --ifm-menu-color-active: #007ed4;
+  --ifm-menu-color-active: #735ef7;
 
   --ifm-menu-link-sublist-icon-filter: #505862;
 
@@ -320,9 +320,20 @@ tr:nth-child(even) {
   font-weight: 500;
 }
 
+[class^="menu__link"]:hover {
+  color: #7d6bf4;
+}
+
+[class^="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active"] {
+  color: #5c42fc;
+
+}
 
 
+[class^="table-of-contents__link toc-highlight table-of-contents__link--active"] {
+  color: #5c42fc;
 
+}
 
 [class^="menu__link menu__link--sublist menu__link--active"] {
   font-weight: 500;
@@ -475,6 +486,10 @@ ul, ol {
   max-width: 270px;
 }
 
+.table-of-contents__link--active, .table-of-contents__link--active code, .table-of-contents__link:hover, .table-of-contents__link:hover code {
+  color: #5C42FC;
+}
+
 [class^="table-of-contents__link toc-highlight"] {
 
   font-size: 14px;
@@ -574,9 +589,15 @@ background: #f2eee3 !important;
   border-color: transparent transparent transparent #f2cb67;
 }
 
+
+
 [class^="details_lb9f isBrowser_bmU9 alert alert--info details_b_Ee"] {
 background-color: #fff;
+--docusaurus-details-decoration-color: #f2cb67 !important;
+  border: 1px solid #f2cb67 !important;
 }
+
+
 
 
 summary {
