@@ -3,7 +3,7 @@ title: Handle inactivity for email tickets
 sidebar_label : Email inactivity trigger
 ---
 
-Email inactivity refers to a situation where a customer has not responded to an email, request, or inquiry from a business or service provider (sent by an inbox agent) within a set time and the ticket is considered inactive. 
+Email inactivity refers to a situation where a customer has not responded to an email, request, or inquiry  sent by an inbox agent within a set time and the ticket is considered inactive. 
 
 It is necessary to keep track of such emails to which the customer has not replied so that the team can close the ticket and prioritize other tickets. 
 With email inactivity setting, email ticket inactivity is handled automatically without the inbox agent's interference. 
@@ -77,7 +77,9 @@ To send a reminder before auto-closing an inactive email ticket, follow these st
 
 ## 2. Use case
 
-Assume an email ticket was raised by a customer to Globex Corporation:
+**Email ticket raised by**: Customer (James) to Globex Corporation           
+**Email inactivity settings**: If customer is inactive, send **Reminder** after 20 min and **Auto-close** after 30 min.     
+
 
 **Customer's email ticket**:
 
@@ -88,7 +90,7 @@ I need replacement for the battery adapter. Can you help me out?
 Regards, 
 James
 ```
-**Response from the inbox agent**:
+**Response from the inbox agent sent at 12PM**:
 
 ```
 (#223)
@@ -103,9 +105,8 @@ Globex
 ```
 ```
 
-**Admin enables Auto-close (with alerts). If the customer is inactivy for more than set time (30 min), reminder will be sent and ticket will be auto closed saving agents time.**
 
-**Automated reminder from inbox**:
+**Automated reminder from inbox at 12:20PM**:
 
 ```
 Hi, 
@@ -118,7 +119,7 @@ Are you still looking for support?"
 ```
 ```
 
-**Automated closure from inbox**:
+**Automated closure from inbox at 12:30PM**:
 
 ```
 Hi, 

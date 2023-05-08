@@ -6,7 +6,12 @@ sidebar_label : Email settings
 Email settings must be enabled to handle support emails in the Inbox tickets module. 
 
 :::note
-Prerequisite to email settings is available [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig).
+**Prerequisites to no-code email ticketing**
+1. Create an email channel(email ID)
+2. Link email channel to Inbox (with forwarding address)
+3. Enable email ticketing from settings
+
+Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) for details.
 :::
 
 Follow the below steps to configure email settings: 
