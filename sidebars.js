@@ -39,6 +39,7 @@ module.exports = {
   items: [
         "cookbooks/voice-as-channel/voiceoverview",
         "cookbooks/voice-as-channel/components", 
+        "cookbooks/voice-as-channel/voicearchitecture",
 
 
 // Reporting  
@@ -61,7 +62,6 @@ module.exports = {
   // ---- old docs 
 
 
-    "cookbooks/voice-as-channel/voicearchitecture",
 
 // building  
   {
