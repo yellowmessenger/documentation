@@ -1,57 +1,79 @@
 ---
 title: Understanding Yellow's Voice Bot System Architecture
-sidebar_label : Architecture of a voice bot
+sidebar_label: Architecture of a voice bot
 ---
 
+In this article, we will focus on an **inbound use case** to understand the workflow of a voice bot.
 
-Voice bot has a simple working architecture with two most important components.  Let us take an inbound usecase as an example and understand the complete workflow.
 
-1. **Telephony platform**: This takes care of voice processing related options like initilizing calls, call forwarding, and call waiting. which enables the robust platform capabilities for bot functioning.
-2. **Yellow Cloud platform**: This is responsible for the business logic, NLP, and conversation flow. 
+Yellow's voice bot system architecture comprises two primary components, which work together to enable the bot's smooth functioning. 
+1. **Telephony Platform**: This component handles voice processing related tasks such as initializing calls, call forwarding, and call waiting. It provides the necessary platform capabilities for the bot to function efficiently.
+2. **Yellow Cloud Platform**: This component is responsible for the business logic, conversation flow, and natural language processing (NLP).
 
 ![](https://i.imgur.com/ii1yOS5.png)
 
-A voice bot functions as mentioned in the following: 
+-------
 
-**Initialize a conversation**
+## 1. Inbound voice call
 
-1. An incoming call is received from the user's end which is identified on the Telephony platform. 
-2. A request is made by the Telephony platform to make a call with user phone number and bot phone number.
+**Initiation:**
 
-    > Example:    
-    >  **Incoming request from**: User number +9187386*****    
-    > **Send request to**: Company number +9178903****1
+**Inbound** voice calls are calls that are initiated by the bot user(caller/customer) and received by the voice bot. **Outbound** voice calls are initiate by the voice bot itself.
 
-3. Yellow cloud verifies the company number to identify the Bot. 
+**Purpose:** 
 
-    > Ex: User number +9187386***** belongs to XYZ company. Initilize XYZ bot. 
+**Inbound** voice calls to a voice bot are usually made by customers or users who need to interact with the bot to get information or perform an action. **Outbound** voice calls from a voice bot are usually made for specific reasons, such as sending notifications, reminders, or alerts to users.
 
-4. Starts the home flow (to begin a conversation). This is the first flow which gets executed when the bot starts conversation. 
+----------
 
-    > Ex: #WelcomeFlow > Hey! I am XYZ bot, what is your name? 
+## 2. Workflow of a voice bot (inbound call)
+
+The voice bot workflow involves the following steps:
+
+### Step 1: Initialize a conversation
+
+1. When a user initiates a call (by calling to the configured support number), the Telephony platform identifies an incoming call.
+2. Telephony platform sends a request to Yellow platform to make a call with the user's phone number and the bot's phone number.      
+
+`Incoming request from: User number +9187386*****`   
+`Send request to: Company number +9178903****1`    
+
+3. The Yellow Cloud platform verifies the company number to identify the bot.      
+
+`Company number +9178903****1 belongs to XYZ company`    
+`Initialize XYZ bot`     
+
+4. The bot starts the home flow to initiate a conversation, which is the first flow executed when the bot begins a conversation.      
+
+`#WelcomeFlow: Hey! I am XYZ bot, what is your name?`
 
 ![](https://i.imgur.com/NIUnZLq.png)
 
-5. First node of the flow will be processed on the Yellow platform and sent to the Telephony platform. 
+5. First node of the home flow will be processed on the Yellow platform and sent to the Telephony platform. 
 
-    > Ex: Question nodes text is converted to speech - "Hey! I am XYZ bot, what is your name?"
-
+`Question node: "Hey! I am XYZ bot, what is your name?"`
 
 6. The user hears the bot's request in form of speech. 
 
+`Voice response(TTS): "Hey! I am XYZ bot, what is your name?"`
+
 ![](https://i.imgur.com/QfKYRS4.png)
 
-**Continue bot conversation**
 
-7. User replies to the previously posed request. 
+### Step 2: Continue bot conversation
 
-    > Ex: "I am Jake, I want to know my bank balance."
+After the bot's home flow, the first node of the flow gets processed on the Yellow platform and sent to the Telephony platform in the form of speech. 
 
-8. The user response will be sent from the Telephony platform to the Yellow Cloud platform. 
-9. Bot identifies the request(intent) and generates an output to be sent to the user via. Telephony platform in the form of speech. 
+1. The user hears the bot's request and replies to it.        
+
+`User response: "I am Jake, I want to know my bank balance."`
+
+2. The Telephony platform sends the user's response to the Yellow Cloud platform, where the bot identifies the intent and generates an output. 
+
+`Intent: "Check bank balance."`      
+`Response bot logic: "Ask account number."`
 
 ![](https://i.imgur.com/jA2y1NU.png)
 
-This flow continues until the conversation reaches the end or the bot user disconnects the call. 
-
+3. Further logics are executed and output is sent to the user via the Telephony platform in the form of speech. This workflow continues until the conversation ends or the user disconnects the call.
 
