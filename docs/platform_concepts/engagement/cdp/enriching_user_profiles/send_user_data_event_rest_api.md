@@ -1,6 +1,6 @@
 ---
-sidebar_label: Add user data through APIs
-title: Add or manage user data and events using APIs
+sidebar_label: Add/manage user records via APIs
+title: Add or manage user data and events via APIs
 ---
 
 In Yellow.ai, each user is an individual. This process of adding or updating user data is more dynamic. With APIs, you can ensure that all your user-related data on Yellow.ai is always in sync with your entire tech stack.
