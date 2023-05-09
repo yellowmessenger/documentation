@@ -637,28 +637,30 @@ module.exports = {
   items: [
    // "platform_concepts/engagement/cdp/overview",
     "platform_concepts/engagement/cdp/user_data/user_properties",
+    
     {
       type: "category",
-      label: "User management via bot conversations",
-      link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
-      collapsed: true,
-      items: [
-        "platform_concepts/engagement/cdp/user_data/data_capture_convers",
-        "platform_concepts/engagement/cdp/user_data/store_conv_data",
-        "platform_concepts/engagement/cdp/user_data/personalise_conversations",
-        
-      ]
-    },
-    {
-      type: "category",
-      label: "Add users",
+      label: "Create/update user records",
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/add_user_overview'},
       collapsed: true,
       items: [
         "platform_concepts/engagement/cdp/user_data/add_users",
         "platform_concepts/engagement/cdp/user_data/import_users",
-        "platform_concepts/engagement/cdp/user_data/conv_in_builder",
+      //  "platform_concepts/engagement/cdp/user_data/conv_in_builder",
         "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
+        {
+          type: "category",
+          label: "Capture user properties via bot conversations",
+          link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
+          collapsed: true,
+          items: [
+           // "platform_concepts/engagement/cdp/user_data/data_capture_convers",
+            "platform_concepts/engagement/cdp/user_data/store_conv_data",
+            "platform_concepts/engagement/cdp/user_data/auto-capture",
+            "platform_concepts/engagement/cdp/user_data/personalise_conversations",
+            
+          ]
+        },
       ]
     },
     
