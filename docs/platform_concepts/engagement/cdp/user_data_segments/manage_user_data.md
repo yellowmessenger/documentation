@@ -24,7 +24,7 @@ You will get a download link to your email. Alternatively, you can download it f
 
 ***
 
-## Delete user details
+## Delete user records
 
 You can delete one or more users if required. However, you need to [export their data](#export-user-data) as a backup before deleting.
 
@@ -40,7 +40,7 @@ You can delete one or more users if required. However, you need to [export their
   ![](https://i.imgur.com/r9s3ml1.png)
 
 
-### Delete multiple users
+### Delete multiple user records
 
 1. On the User 360 home page, select each user that you want to delete using the respective check boxes 
 2. Click **Delete users**.

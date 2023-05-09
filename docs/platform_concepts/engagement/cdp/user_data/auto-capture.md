@@ -1,5 +1,5 @@
 ---
-title: Auto capturing of user's location-specific data through bot
+title: Auto capturing of user's location-specific data from bot
 sidebar_label: Auto-capturing of location-specific data from bot
 ---
 

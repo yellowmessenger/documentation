@@ -3,7 +3,7 @@ sidebar_label: User properties
 title: User properties
 ---
 
-## 1. User properties overview
+## User properties overview
 
 Properties are individual fields to be captured for a customer. For example, name, phone number, gender, email address and more. There are several predefined fields that you can use to capture a user's data. You can also create custom properties if required.
 
@@ -18,21 +18,30 @@ This is enabled only for https://cloud.yellow.ai
 
 We store three types of data about your users:
 
-1. System user properties (a default set of data that we capture about your users).
-2. Custom user properties (data you send us about your users).
-3. Events (data that records specific activities of users).
+1. [System user properties](#system-user-properties): A default set of data that you can capture about your users.
+2. [Custom user properties](#custom-user-properties): Custom data that you can capture about your users and send us.
+3. Events: Data that records specific activities of your users.
 
   
 
 
-### 1.1 System user properties
 
-The following properties are enabled by default. You can see these in User 360.
+
+
+
+***
+
+
+## System user properties
+
+System properties are the default user properties that contain the essential data organizations need to capture from their users. If you need to capture additional information, you can [create custom user properties](#custom-user-properties).
+
   
+The following are the available system user properties, you can see these in User 360.
 
 | **Property Name** | **Data Type** | **Description** |
 |-------------------|---------------|------------------------|
-| userId | string | Unique identifier for a user NOTE: This can be passed |
+| userId | string | Unique identifier for a user. <br/>NOTE: This can be passed |
 | firstName | string | The first name of the user |
 | lastName | string | Last name of the user |
 | gender | string | Gender of the user |
@@ -55,16 +64,8 @@ The following properties are enabled by default. You can see these in User 360.
 | updatedAt | dateTime | Timestamp of when the user record was recently updated |
 | tags | list | List of groups associated to the user. You can add tags to users manually. |
 
-  
 
-
-
-
-
-
-
-
-### 1.3 User ID (userId) as a property
+### 1. `User ID` (userId) as a property
 
 
 `userId` is a unique property in the users schema and is used to identify a user.
@@ -84,9 +85,8 @@ You can use `userId` to identify a user and use it to capture add/update user da
 No two users can have the same userId
 :::
 
-You can customise the fields or information that you want to capture for your users and set the order in which you want the fields to appear on the UI.
 
-### 1.5 Tag as a user property
+### 2. `Tag` as user property
 
 A tag is a label used to categorise users based on certain characteristics or attributes. These labels can be used to segment customers into different groups for targeted marketing, sales, or customer service efforts. Some examples of customer labels include High-value, New customer, Inactive, or campaign responders.
 
@@ -95,36 +95,15 @@ A user can have more than one tag.
 ![](https://i.imgur.com/om7QH6j.png)
 
 
-***
 
-## 2. Manage user properties
+## Custom user properties
 
-You can add the System properties that you want to capture for your users. If required, you can also create your own property (custom property) that you want to capture.
+Custom user properties refer to additional fields that you can create to capture information that is not covered by the default system properties. You can define these custom properties according to your business specific needs and requirements.
 
-### 2.1 Add user property
-
-This section explains how you can add a system property that you want to capture. Adding a property creates a new column in the User 360 table to store the respective property value.
-
-To add an existing user property to your User 360 module, follow these steps:
-
-1. On the **User 360** page, click **User properties**.
-
-![](https://i.imgur.com/BOUV1hq.png)
-
-   On the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#22-system-user-properties) and [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#23-custom-user-properties) along with their data types. 
-
-2. Select the property that you want to include. You can see all the selected properties on the right. 
-
-   ![](https://i.imgur.com/O5nuQaz.png)
+For instance, you might want to store details such as the number of times they have visited your pricing page, their department, and their preferred product.
 
 
-### 2.2 Create custom user property
-
-Custom properties store additional information specific to your users. For example, you might want to store details such as the number of times they have visited your pricing page, what their department is, and their preferred product.
-
-
-
-To create new user properties with your preferred label name and datatype, follow these steps:
+To create a new user property with your preferred label name and datatype, follow these steps:
 
 1. On the **User 360** page, click **User properties**.
 
@@ -162,19 +141,13 @@ The table lists the different datatypes supported for user properties.
 Currently, you cannot modify or delete a custom property once created.
 :::
 
-### 2.3 Order user properties
 
-You can set the order in which user properties has to appear on the interface.
 
-To set the order:
 
-1. On the **User 360** page, click **User properties**.
 
-   ![](https://i.imgur.com/BOUV1hq.png)
 
-2. On the right pane, drag a property to the required position.
 
-   ![](https://i.imgur.com/Eyk5uce.gif)
+
 
 
 <!--
