@@ -3,28 +3,50 @@ title: Speech-to-Text
 sidebar_label: Speech-to-Text
 ---
 
-The platform supports Speech-to-Text (STT) feature for chatbots to convert spoken words into text. This allows the chatbot to recognize the spoken language of the user and respond to their queries in the form of text. 
+The Speech-to-Text feature (SST) in the chat widget enables the conversion of spoken words into text. This allows the chatbot to recognize the spoken language of the user and respond to their queries in the form of text. 
 
-STT helps users save time by not having to type their messages. Based on the user's spoken words, the chatbot interprets the user’s intent accurately compared to text based messages.
+STT helps users save time by eliminating the need to type their messages. Based on the user's spoken words, the chatbot can accurately interpret the user's intent, which is often more accurate than interpreting intent from text-based messages.
+
+STT is a paid feature. You need to upgrade to enterprise subscription to access this feature. To enable STT for your chatbots, contact [support](mailto:support@yellow.ai)
 
 :::note
-* To enable SST for your chatbots, contact [support](mailto:support@yellow.ai).
-* The supported languages for STT are English, Hindi, Tamil, Kannada, and Slovak.
+* STT feature is supported only for the chat widget. It is not supported for PWA or mobile SDK.
+* TTS currently supports Arabic (Saudi), Arabic (UAE), Bengali, English (India, Australia, Canada, United Kingdom, Ireland, and United States), French, Gujarati, Hindi, Indonesia, Kannada, Marathi, Malayalam, Malay (Malaysia), Tamil, Telugu, Urdu (Pakistan), and Vietnamese.
 :::
 
-## 1. Use STT in your chatbot
+## Enable STT in your chatbot
 
-To use STT in your chatbot, follow these steps:
+To Enable STT in your chatbot, follow these steps:
 
-1. Open your chatbot on the intended website, or you can [preview](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#32-preview-a-bot) your chatbot to use STT. 
+1. On the module switcher, click **Channels**.
 
-   ![](https://i.imgur.com/aKz2n8O.png)
+    ![](https://i.imgur.com/UuFZ2eR.png)
 
+2. Click on **Chat widget**.
 
-2. To provide your input via spoken words to the chatbot, click the **Mic** button and allow the system to use your microphone.
+    ![](https://i.imgur.com/1KzP77W.png)
+	
+3. Navigate to the **Settings** tab and expand the **Speech & Dictation** drop-down.
+  
+    <img src="https://i.imgur.com/Fo2sgOa.png)" alt="drawing" width="70%"/>
+
+4. Enable **Speech to text** option. If you wish to automatically send the spoken text without clicking on the send button, you can enable the **Auto send** option and click **Save changes**.  
+
+    <img src="https://i.imgur.com/JRE5ejK.png)" alt="drawing" width="70%"/>
+
+5. Navigate to the **Deploy** tab and click **Experience  on a website**. 
+ 
+   <img src="https://hackmd.io/_uploads/ByKqItDE2.png" alt="drawing" width="70%"/>
+
+6. To provide your input via spoken words to the chatbot, click the **Mic** button and grant the system to use your microphone by clicking the **Allow** button.
 
    ![](https://i.imgur.com/QqZmWmV.png)
 
-3. Once you start speaking, the chatbot can understand your words and automatically start converting them to text messages.
+7. Once you start speaking, the chatbot can understand your words and automatically start converting them to text messages.
 
    ![](https://i.imgur.com/QSvEtDx.png)
+   
+:::note
+* The Mic button is displayed in the input bar when STT option is enabled. It is turned off by default. 
+* Enabling the Auto Send option allows translated messages to be sent automatically after 3 seconds once the user stops speaking. Otherwise, users need to click on the Send button to send the translated message. 
+:::
