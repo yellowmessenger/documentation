@@ -78,19 +78,48 @@ Icon Shape | Set the desired bot icon type for web and mobile apps. <br/>For web
 
 You can configure your chatbot by enabling or disabling the following features on the bot. 
 
-<img src="https://i.imgur.com/KJaHDDu.png" alt="drawing" width="40%"/>
+<img src="https://hackmd.io/_uploads/HkyfLpw4n.png)" alt="drawing" width="80%"/>
 
+
+#### General settings
+
+You can set up basic configurations for your chat widget.
 
 Option | Description
 -------- | ---------
-Auto-complete | Enable auto-complete to allow auto-predict words as the bot user types. 
+Auto-complete | Enable auto-complete to allow the bot to auto-predict words as the user types. 
 Message feedback | Enable to allow capturing feedback for every bot message in a conversation.
-Show history of the conversation | Disable this to refresh the bot's chat history when the page is reloaded. Enable to show the chat history even after the page is refreshed. By default, this option is disabled. 
-Attachment | Enable this option to allow adding attachments via. the chat widget.
-Always scroll chat window to bottom | Enable this option to navigate to the last message when there are multiple messages in a single step as each message loads one by one.
-Create fresh session for every new tab | Enable this option to refresh (not retain) the chat history when the bot is opened in a new tab/window.
+Attachment | Enable this option to allow adding attachments via the chat widget.
+Always scroll chat window to bottom | Enable this option to navigate to the last message when there are multiple messages in a single step, as each message loads one by one.
 Slow messages | Enable this option to add a small delay to bot messages, a typing indicator is displayed to make it look more natural. It is recommended to use this for all bot messages for a better experience. 
+Multiline input | Enable this option to enter multiple lines of text in a single input. After enabling this option, by clicking on the enter key, it will take the cursor to next line instead of sending the message.
 
+#### Chat history
+
+Displays the user’s chat history with bot and agent.
+
+Option | Description
+-------- | ---------
+Show history of the conversation | Disable this to refresh the bot's chat history when the page is reloaded. Enable to show the chat history even after the page is refreshed. By default, this option is disabled. 
+Create fresh session for every new tab | Enable this option to refresh (not retain) the chat history when the bot is opened in a new tab/window.
+
+#### Notifications
+
+Notifies the users when they receive a new message.
+
+Option | Description
+-------- | ---------
+Unread message(s) badge | Enable this option to display the count of unread messages on the bot icon. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-notification). | 
+Unread notification in browser tab | Enable this option to display a favicon and text in the browser tab (desktop) when users have unread messages from a bot or agent.
+Message Sound | Enable this option to notify users when there are new messages from a bot or agent.
+
+#### Speech & Dictation
+
+Option | Description
+-------- | ---------
+Speech to text | Enable this option to allow users to respond to the bot with a human voice. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/speech-to-text).
+Auto send | Enable this option to automatically send the translated text without clicking on send button.
+Text to speech | Enable this option to allow the bot to respond to the user's queries with a human voice. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/text-to-speech).
 
 
 ***

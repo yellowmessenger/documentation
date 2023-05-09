@@ -1014,6 +1014,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/chat-widget-notification",
             "platform_concepts/channelConfiguration/chat-separator",
             "platform_concepts/channelConfiguration/domain-whitelisting",
+            "platform_concepts/channelConfiguration/chat-widget-localization",
             "platform_concepts/channelConfiguration/pwa",
             "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/chat-widget-errors",

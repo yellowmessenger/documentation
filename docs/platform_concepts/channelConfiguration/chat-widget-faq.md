@@ -412,7 +412,32 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 <summary>How to add the image in Quick Replies node?</summary>
 <div>
  <br/>
- <div>In the quick reply node, add the image link under the Prefix image. Click <a href="http://localhost:3000/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies">here</a> for more information.<br/><img src="https://i.imgur.com/CERBwzb.png"/><img src="https://i.imgur.com/FhUnKaK.png" alt="drawing" width="40%"/>
+ <div>In the quick reply node, add the image link under the Prefix image. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-quick-replies">here</a> for more information.<br/><img src="https://i.imgur.com/CERBwzb.png"/><img src="https://i.imgur.com/FhUnKaK.png" alt="drawing" width="40%"/>
+</div>
+  </div>
+</details>
+
+<details>
+<summary>When an agent is connected to the bot, it is possible to close the conversation and trigger a journey?</summary>
+<div>
+ <br/>
+ <div>When an agent is connected to the bot, the bot will not trigger any flow. To trigger a particular flow and close the conversation, you need to add the "talk to bot" button in the Callout banner. You can add the button either from the UI or using the function.<br/><b>Add talk to bot button using the function</b><br/>The following is the sample function:
+
+```
+array = [{
+            title: 'Wish to end your chat with our Live Agent',
+            options: [
+                {
+   
+                 title: 'End Chat', text: "talk to bot"
+                }
+            ]
+        }]
+event : ui-event-update-promotion
+```
+<b>Add Talk to bot button using Studio's Conversation settings</b><br/>To add the banner text for the <b>talk to bot</b> button, follow these steps:<br/> 1. Navigate to <b>Studio > Conversation settings > Callout banner</b>.<br/><img src="https://i.imgur.com/HBKYqOg.png"/><br/>2. Enter the title and button name. Click <b>Update</b>.<br/><img src="https://i.imgur.com/rorMtMu.png" alt="drawing" width="40%"/><img src="https://i.imgur.com/0qqQDEI.png" alt="drawing" width="40%"/><br/>• The callout banner will be updated accordingly.
+
+ 
 </div>
   </div>
 </details>
