@@ -22,7 +22,7 @@ To add a user using the User 360 UI:
 
 ***
 
-## Edit users
+## Edit user
 
 You can add missing properties or update existing properties of a user. As the `userId` is the primary identifier and unique for a user, you cannot change it.
 

@@ -1,6 +1,6 @@
 ---
 title : How user records are created through conversations & unified in User 360?
-sidebar_label : User records creation & unification process
+sidebar_label : How are user records created from conversations & unified in User 360
 ---
 
 This article provides complete information on how user records are automatically created in User 360 and unified based on bot conversations.

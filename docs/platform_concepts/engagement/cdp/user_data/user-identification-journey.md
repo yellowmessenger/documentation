@@ -3,7 +3,7 @@ title: User identification flow
 sidebar_label: User identification flow 
 ---
 
-The User identification flow in bot conversation is the process of identifying the bot user. This is typically done by requesting the unique identifier such as an email address, phone number or other identifier from the user. For details on user identification and profile unification, see [Profile identification & unification](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers)..
+The User identification flow in bot conversation is the process of identifying the bot user. This is typically done by requesting the unique identifier such as an email address, phone number or other identifier from the user. For details on user identification and profile unification, see [Profile identification & unification](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
 
 
 ### Significance of user identification
@@ -16,12 +16,15 @@ The user identification is an important aspect of bot conversation design, as it
 * **Better data collection**: User identification also allows the bot to collect more detailed and accurate data on individual users. This can be used to improve the bot's performance over time, by providing insights into user behavior and preferences.
 
 
-
-By identifying the user, the bot can provide personalized and relevant responses to their queries, and maintain context throughout the conversation. This improves the overall user experience and can lead to higher engagement and satisfaction.
-
 ### Understand how user identification flow works
 
-The User Identification flow serves as a nudge to check if the user ID is captured during the bot conversation. If the bot is unable to capture the user ID, it will automatically trigger the User Identification flow at the starting of the conversation to capture the user ID. 
+The User Identification flow helps ensure that the user ID is captured and associated with the conversation.
+
+The flow works as a nudge or prompt to check whether the user ID has been captured during the conversation. If it hasn't been captured, the flow will automatically trigger at the beginning of the conversation to capture the user ID. This ensures that the bot can identify the user and provide them with a more personalized experience.
+
+
+
+### Setup user identification flow
 
 To enable this, you need to add the user identification flow separately in Studio as mentioned in the following:
 
