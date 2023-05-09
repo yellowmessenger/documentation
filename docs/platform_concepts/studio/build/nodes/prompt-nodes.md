@@ -89,6 +89,7 @@ For example, if users enter anything instead of their names(first + last name), 
 
 Yellow.ai automatically validates the **Name** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
 
+
 |Input Type|User Input|Accepted/Not Accepted as a valid name|Name processed by the platform|
 |------|------|-------|------|
 |Only numbers|139344|Not Accepted|-|
@@ -632,6 +633,16 @@ It will validate if the uploaded file is in JPG/PNG/MP4/MOV/HEVC format and if i
 ![](https://i.imgur.com/UvhKJn1.png)
 
 Create a file [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the file in it. 
+
+To let users skip this option,
+
+1. Click the tools icon.
+
+ ![image description](https://i.imgur.com/uDukhAT.png)
+
+2. Enable the toggle **Enable Skip Button**.
+
+ ![image description](https://i.imgur.com/a5cX3fp.png)
 
 ---
 
