@@ -55,7 +55,7 @@ Once you have captured the user's details, you can store them in User 360 table 
 * All user properties captured for a record will be mapped to the user as soon as the `userId' is captured during the session.
 :::
 
-To store the user’s response in User 360, in **Store Response in**, choose variables only under **User properties**. If a specific user property is not avilable, [create a custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#21-add-user-property) and use it.
+To store the user’s response in User 360, in **Store Response in**, choose variables only under **User properties**. If a specific user property is not avilable, [create a custom property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) and use it.
 
 
    ![](https://i.imgur.com/h8FfpZE.png)

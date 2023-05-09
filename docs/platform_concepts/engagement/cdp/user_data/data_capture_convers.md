@@ -36,7 +36,7 @@ Any user property captured during the session will be stored in that unidentifie
 </center>
 
 :::note
-To know properties that are auto-captured for different channels, see [Automated capturing of location-specific data](/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#automated-capturing-of-location-specific-data).
+To know properties that are auto-captured for different channels, see [Automated capturing of location-specific data](/docs/platform_concepts/engagement/cdp/user_data/auto-capture).
 :::
 
 <!-- * All user properties captured for a record will be mapped to the user as soon as the `userId' is captured during the session.
