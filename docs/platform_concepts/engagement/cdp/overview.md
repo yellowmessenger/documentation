@@ -3,7 +3,7 @@ sidebar_label: User 360 overview
 title: User 360 Overview
 ---
 
-
+## User 360 overview
 
 User 360 is a Customer Data Platform that helps you manage your customer base.  You can segment your customers based on some shared characteristics for personalised targeting and get insights into their cross-channel engagement behavior.
 
@@ -23,7 +23,7 @@ To enable it for your bot, write to sarthak@yellow.ai.
 
 
 
-## 1. Access User 360
+## Access User 360
 
 
 You can see User 360 in the Engage module.  You can view your user details, modify their details, define user properties, create  user segments and do more.
@@ -36,23 +36,23 @@ This is enabled only for https://cloud.yellow.ai.
 
 The following are the key actions that you can perform on user 360.
 
-### 1.1 Add users
+### Create user records
 
 The platform provides different ways to add your users. You can add each user manually or leverage advanced features  to quickly create your user base and maintain it real-time.  
 * Add bulk users [through CSV import](/docs/platform_concepts/engagement/cdp/user_data/import_users) 
 * Use our [REST APIs](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api) to add or modify users real-time.
-* Use [Bot Builder to create and update users](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder)
+* Use [Bot Builder to create and update users](/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers)
 
 
-### 1.2 Enrich your user data
+### Enrich user data
 
-It is important to collect data that is specific to your users. While there are some predefined properties, called [System Properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties#11-system-user-properties), you can also create and send [Custom properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties#22-create-custom-user-property) and Events.
+It is important to collect data that is specific to your users. While there are some predefined properties, called [System Properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties), you can also create and send [Custom properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) and Events.
 
  
 User properties store data about who your users are, events tell you when users take important actions on your product.
 
 
-### 1.3 Create segments to power personalisation
+### Create segments to power personalisation
 
  
 
@@ -64,7 +64,7 @@ You can group your users based on certain characteristics such as who they are a
 
 
 
-## 2. User events
+## User events
 
 You can [send events](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) to yellow.ai, to record user activities or capture an important conversion [events](/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events).  It also captures the details such as the first and last time a user does something including the total number of times. For example, you can see the first time users clicked on a particular page, or when they most recently purchased an item.
 
@@ -74,7 +74,7 @@ You can see events in User 360, and filter them based on a specific criteria lik
 - Users who downgraded their plan
 
 
-## 4. Export your user data
+## Export your user data
 
  If you want to update your user base or use it outside Yellow.ai,  you to export user data easily and use it wherever required. To know more, see [Export users data](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data).
 

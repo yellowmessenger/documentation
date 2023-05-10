@@ -6,6 +6,9 @@ title: Add users
 ## 1. Overview
 A user will have a unique identifier, `userId` mapped to the record. When adding users, keep in mind that no two user records  have the same `userId`. Know more about [userId](/docs/platform_concepts/engagement/cdp/user_data/user_properties#13-user-id-userid-as-a-property) and it’s importance.
 
+
+<!--
+
 ### 1.1 User types
 Users are categorised into two types on basis of the availability of their data in our system:
 
@@ -104,14 +107,16 @@ Sometimes you might notice that the exact number of records you imported through
 
 ***
 
+-->
+
 ## 2. Different ways of adding users
 
-The platform provides different ways to add your users. You can add each user manually or leverage advanced features to quickly create your user base and maintain it in real time.
+The platform provides different ways in which you can add or update user records. You can add each user manually or leverage advanced features to quickly create your user base and maintain it in real time.
 
-1. [Add individual users through User 360](/docs/platform_concepts/engagement/cdp/user_data/add_users).
-2. [Import users directly from a CSV](/docs/platform_concepts/engagement/cdp/user_data/import_users).
+1. [Add individual users using Add Single user in User 360](/docs/platform_concepts/engagement/cdp/user_data/add_users).
+2. [Import users directly from a CSV file](/docs/platform_concepts/engagement/cdp/user_data/import_users).
 3. [Use our REST APIs to add or modify users real time](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
-4. [Use Bot Builder to create and update users](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder).
+4. [Use Bot conversations to create and update user records](/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
 
 
 
