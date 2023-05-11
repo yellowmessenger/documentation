@@ -38,8 +38,8 @@ module.exports = {
   collapsed: true,
   items: [
         "cookbooks/voice-as-channel/voiceoverview",
-        "cookbooks/voice-as-channel/components", 
         "cookbooks/voice-as-channel/voicearchitecture",
+        "cookbooks/voice-as-channel/components", 
 
 
 // Reporting  

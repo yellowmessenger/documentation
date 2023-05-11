@@ -6,29 +6,33 @@ sidebar_label: Architecture of a voice bot
 In this article, we will focus on an **inbound use case** to understand the workflow of a voice bot.
 
 
+
+-------
+
+## 1. Types of voice call 
+
+
+
+There are two different types of calls that a voice bot can handle, **Inbound and Outbound**. Calls mainly classified based on how they are initiated and why they are initiated.
+
+| Type | Initiation method | Purpose of the call |
+| -------- | -------- | -------- |
+| **Inbound** | Inbound voice calls are calls that are initiated by the bot user(caller/customer) and received by the voice bot.     | Inbound voice calls to a voice bot are usually made by customers or users who need to interact with the bot to get information or perform an action.     |
+|**Outbound** |Outbound voice calls are initiate by the voice bot itself.| Outbound voice calls from a voice bot are usually made for specific reasons, such as sending notifications, reminders, or alerts to users.|
+
+
+----------
+
+## 2. Workflow of a voice bot 
+
+
 Yellow's voice bot system architecture comprises two primary components, which work together to enable the bot's smooth functioning. 
 1. **Telephony Platform**: This component handles voice processing related tasks such as initializing calls, call forwarding, and call waiting. It provides the necessary platform capabilities for the bot to function efficiently.
 2. **Yellow Cloud Platform**: This component is responsible for the business logic, conversation flow, and natural language processing (NLP).
 
 ![](https://i.imgur.com/ii1yOS5.png)
 
--------
-
-## 1. Inbound voice call
-
-**Initiation:**
-
-**Inbound** voice calls are calls that are initiated by the bot user(caller/customer) and received by the voice bot. **Outbound** voice calls are initiate by the voice bot itself.
-
-**Purpose:** 
-
-**Inbound** voice calls to a voice bot are usually made by customers or users who need to interact with the bot to get information or perform an action. **Outbound** voice calls from a voice bot are usually made for specific reasons, such as sending notifications, reminders, or alerts to users.
-
-----------
-
-## 2. Workflow of a voice bot (inbound call)
-
-The voice bot workflow involves the following steps:
+This section explains workflow of an **inbound** voice bot call. Follow the steps below: 
 
 ### Step 1: Initialize a conversation
 
