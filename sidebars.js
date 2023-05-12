@@ -120,6 +120,7 @@ module.exports = {
           "cookbooks/studio/hide-input",
           "cookbooks/studio/dynamic-quickreplies",
           "cookbooks/studio/images-languages",
+          "cookbooks/studio/storeApiResponse",
 
       ],
     }, 
