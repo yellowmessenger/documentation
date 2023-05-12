@@ -16,11 +16,15 @@ This is enabled only for https://cloud.yellow.ai
 :::
 
 
-We store three types of data about your users:
+There are two types of user data that is supported in User 360:
 
-1. [System user properties](#system-user-properties): A default set of data that you can capture about your users.
-2. [Custom user properties](#custom-user-properties): Custom data that you can capture about your users and send us.
-3. Events: Data that records specific activities of your users.
+
+1. User properties
+
+   i. [System user properties](#system-user-properties): Default data that you can capture about your users.
+   ii. [Custom user properties](#custom-user-properties): Custom data that you can capture about your users and send to the platform.
+
+2. [User Events: Data that tracks specific activities performed by your users. For more details, see [User 360 events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events) and [Custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events)
 
   
 
@@ -47,42 +51,37 @@ The following are the available system user properties, you can see these in Use
 | gender | string | Gender of the user |
 | country | string | Country of the user. In bot conversation, it identifies this property based on the location of the user’s IP address |
 | city | string | City of the user. In bot conversation, it identifies this property based on the location of the user’s IP address |
-| ip | string | In bot conversation, it fetches this property from the user’s browser |
-| latitude | number | In bot conversation, it identifies this from the location of the user’s IP address |
-| longitude | number | In bot conversation, it identifies this from the location of the user’s IP address |
 | language | string | Preferred language of the user |
 | timezone | string | Identifies based on the location of user's IP address |
 | email | email | Email address of the user |
 | phone | phone | Phone number of the user with country code |
 | lastChannel | string | Recent channel (set up on yellow.ai) where the user had an active session <br/>You can update this property to cover touch-points/channels outside yellow.ai. |
 | dob | date | Date of birth of the user. |
-| lastSession | dateTime | timestamp of the last time the user had an active session on one of the channels set up on yellow.ai NOTE: You can update this property to cover touch-points/channels outside yellow.ai |
 | emailOptin | boolean | Subscription status of the user to emails. The value is `true` if a user has subscribed to your emails, else it is `false` |
 | smsOptin | boolean | Subscription status of the user to SMS. The value is `true` if a user has subscribed to your SMS, else it is `false` |
 | whatsAppOptin | boolean | WhatsApp subscription status of the user. This is `true` if a user has subscribed to your WhatsApp messages, else it is `false`. |
-| createdAt | dateTime | Timestamp of when the user record was created |
-| updatedAt | dateTime | Timestamp of when the user record was recently updated |
 | tags | list | List of groups associated to the user. You can add tags to users manually. |
 
 
-### 1. `User ID` (userId) as a property
+### 1. `UserId` as a property
 
 
-`userId` is a unique property in the users schema and is used to identify a user.
-
-You need to set a userId (a unique user identifier) for every user that you create, to be able to recognise them as the same user on multiple touch-points. If `userId` is the same as email, you might want to pass it both as `userId` and email address. 
-
-Passing the userId for your users will allow you to identify them on multiple touch-points, which will further allow you to:
+The `userId` is a unique property in the users schema and serves as an identifier for each user. It helps in recognizing users across multiple touch-points, capture and update user data. A `userId` can be any unique identifier such as phone number, email address, or any other external unique identifier such as driving licence number.
 
    <img src="https://i.imgur.com/aWczHLm.png"/>
 
-- Offer personalised engagement across multiple touch-points/channels
-- Enrich the profile of that user with the data collected from multiple touch-points/channels
 
-You can use `userId` to identify a user and use it to capture add/update user data, capture data through bot conversation.
+Also, see:
+
+- [How to capture userId through bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-id-through-builder).
+- [What happens when a userId is captured for the first time during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-a-userid-is-captured-for-the-first-time).
+- [What happens when a userId is recaptured during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-the-userid-is-recaptured).
+- [How to enrich user profiles with the data collected from multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_user_overview)
+- [How to offer personalised engegement across multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
+
 
 :::warning
-No two users can have the same userId
+Two records cannot have the same userId.
 :::
 
 
@@ -93,7 +92,6 @@ A tag is a label used to categorise users based on certain characteristics or at
 A user can have more than one tag.
 
 ![](https://i.imgur.com/om7QH6j.png)
-
 
 
 ## Custom user properties

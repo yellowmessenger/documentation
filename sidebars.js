@@ -656,7 +656,7 @@ module.exports = {
           items: [
            // "platform_concepts/engagement/cdp/user_data/data_capture_convers",
             "platform_concepts/engagement/cdp/user_data/store_conv_data",
-            "platform_concepts/engagement/cdp/user_data/auto-capture",
+          //  "platform_concepts/engagement/cdp/user_data/auto-capture",
             "platform_concepts/engagement/cdp/user_data/personalise_conversations",
             
           ]

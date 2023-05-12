@@ -18,9 +18,9 @@ The user identification is an important aspect of bot conversation design, as it
 
 ### Understand how user identification flow works
 
-The User Identification flow helps ensure that the user ID is captured and associated with the conversation.
+The User Identification flow helps ensure that the userId is captured and associated with the conversation.
 
-The flow works as a nudge or prompt to check whether the user ID has been captured during the conversation. If it hasn't been captured, the flow will automatically trigger at the beginning of the conversation to capture the user ID. This ensures that the bot can identify the user and provide them with a more personalized experience.
+The flow works as a nudge or prompt to check whether the userId has been captured during the conversation. If it hasn't been captured, the flow will automatically trigger at the beginning of the conversation to capture the userId. This ensures that the bot can identify the user and provide them with a more personalized experience.
 
 
 
@@ -43,12 +43,12 @@ To enable this, you need to add the user identification flow separately in Studi
 
   <center> <img src="https://i.imgur.com/KGeBIwq.png" width="60%"/></center>
 
-   * **Phone identifier flow**: Select this to add the user ID flow using phone number.
-   * **Email identifier flow**: Select this to add the user ID flow using email address.
-   * **Custom property flow**: Select this to add the user ID flow using any other property.
+   * **Phone identifier flow**: Select this to add the userId flow using phone number.
+   * **Email identifier flow**: Select this to add the userId flow using email address.
+   * **Custom property flow**: Select this to add the userId flow using any other property.
 
-4. For the Phone/Email identifier flow, you will see the respective prompt nodes. To know how to store user ID, see [Store conversational data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#using-prompt-nodes).
+4. For the Phone/Email identifier flow, you will see the respective prompt nodes. To know how to store userId, see [Store conversational data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#using-prompt-nodes).
 
-5. For the Custom property flow, you can either choose an existing user property or **Create a new property** and set it as the user ID. To know how to store user ID, see [Store conversational data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#using-prompt-nodes).
+5. For the Custom property flow, you can either choose an existing user property or **Create a new property** and set it as the userId. To know how to store userId, see [Store conversational data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#using-prompt-nodes).
 
    <center><img src="https://i.imgur.com/fqhxItb.png" width="50%"/></center>
