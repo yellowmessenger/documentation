@@ -1,11 +1,11 @@
 ---
 title : Call Details Report (CDR) of your voice bot on Insights module
-sidebar_label : Call details report 
+sidebar_label : Auto-generated call details report 
 ---
 
 
 :::note
-In Data Explorer, CDR is available only for voice bots.
+In Data Explorer, CDR is available only for voice bots. The data will be updated after the call is completed. 
 :::
 
 This article focuses on **Call details report** (CDR) for voice bots, a database table maintained by yellow.ai platform which records more than 15+ important metrics (like start time, duration, recording url etc) for each call.

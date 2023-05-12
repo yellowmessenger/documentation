@@ -19,13 +19,13 @@ However, there is a 25MB size-limit on the files you can send. </div>
 <summary> 
 Can we have primary and secondary WhatsApp numbers(2 phone numbers) connecting a bot user to the live agents? </summary>
 <div>
-Each bot has only one inbox, the bot can have multiple Whatsapp numbers activated, and the agent queries will be directed to the bot's Inbox. Hence, all Whatsapp numbers are sourced to the same Inbox module, and agents can pick up conversations(tickets) from any of the numbers.
+Each bot has only one inbox, the bot can have multiple Whatsapp numbers activated, and the agent queries will be directed to the bot's Inbox. Hence, all Whatsapp numbers are sourced to the same Inbox module, and agents will be assigned with live chats from any of the numbers.
 </div>
 </details>
     
     
 <details>
-<summary> Why is the agent's language is getting translated automatically to the user's language even when the agent is replying in English?
+<summary> Why is the agent's language not getting translated automatically to the customer's language even when the agent is replying in English?
 </summary>
 <div>
     
@@ -78,7 +78,7 @@ Just sending out the template message will not reinitiate the 24 hr window. The 
 </details>
 
 <details>
-<summary> Why can’t I cannot attach my media to the template? </summary>
+<summary> Why can’t I attach my media to the template? </summary>
 <div>
 You cannot change the type of media once the template is approved. Also, you can only send out the following types of media:  
 <b> Image </b> - Jpeg or png format not more than 5MB, <b> Video </b> - MP4 video not more than 16MB, <b> Document </b> - PDF.  
