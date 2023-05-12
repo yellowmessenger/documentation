@@ -53,7 +53,7 @@ Useful args to access in code:
 | data.variables.<variable_name>   | Key : String, Value: any |To access any bot variable in function. |
 | data.channel | String | To access channel names like whatsapp, yellowmessenger, facebook etc|
 |data.profile| Object| Contains user profile values like name, number, email, city , country, language |
-| data.sender | String | User ID |
+| data.sender | String | UserId |
 |data.bot | String| Bot ID|
 |data.message | String | To access Last/latest user message in the conversation|
 |data.event.<event_name>|Object|To access events in function|
