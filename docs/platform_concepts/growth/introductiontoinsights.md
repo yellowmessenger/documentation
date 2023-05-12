@@ -3,9 +3,11 @@ title: Introduction to insights
 sidebar_label: Introduction 
 ---
 
-Insights module on the yellow.ai platform tracks all data and metrics pertaining to your bot and provides you relevant analytics.   
+Insights module on the yellow.ai platform tracks all data and metrics pertaining to your bot and provides relevant analytics.   
 
-**Features of Insights:**
+## Features of Insights
+
+Within the Insights module, you can find the following sections: 
 
 | Section | Description |
 | -------- | -------- |
@@ -19,5 +21,24 @@ Insights module on the yellow.ai platform tracks all data and metrics pertaining
 |[Dashboard](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards)|Create multiple dashboards with required widgets for visual display of all of your data|
 
 
-<iframe width="660" height="415" src="https://www.youtube.com/embed/yAkP3imNl7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+
+## Insights access control 
+
+
+There are two access control roles, **Insights analytics and Insights admins** implemented for the Insights module.
+
+**Insights (Analytics)**: This role provides access to standard analytics, bot health monitoring, and user journey and goal tracking. However, this role does **not** grant access to the following:
+* Data Explorer  
+* Dashboards
+* Chat transcripts report and user details report
+
+**Insights (Admin)**: This role provides access to all available data and analytics.
+
+![](https://hackmd.io/_uploads/HkKy6W9E3.png)
+
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#1-share-bot-access) to learn about roles and access management. 
+
+## Insights demo 
+
+<iframe width="660" height="415" src="https://www.youtube.com/embed/yAkP3imNl7Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>

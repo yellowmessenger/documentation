@@ -1,6 +1,6 @@
 ---
 title : Voice bot overview (voice dashboard)
-sidebar_label : Voice dashboard 
+sidebar_label : Simplified voice dashboard 
 ---
 
 :::note
