@@ -358,7 +358,7 @@ You can create custom events through API or builder nodes. However, the event de
 
 * When this event triggers via. API, the event is recorded and sent to the bot only when the event is active.
 * When the event triggers via. Builder nodes, the event is recorded only if the event is active. The event originates from the executor services.
-* User ID is required to pass data.
+* UserId is required to pass data.
 
 To create a custom event, follow these steps -
 

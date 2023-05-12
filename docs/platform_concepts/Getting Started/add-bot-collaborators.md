@@ -41,7 +41,8 @@ b. Select your preferred role(s) in **Access control**. You can select more than
 | Approver | Can publish bot from staging to production. An Approver should also have Developer access.|
 | Inbox (Admin) | Can provide support for chat queries or tickets of the bot, and can view the analytics of his/her performance (First response time, number of tickets closed).|
 |Inbox (Agent) | Agent can only respond to chats received from the user.|
-|Insights (Hop) | Can view all the analytics about the bot.|
+|Insights (Analytics) | Has access to standard analytics, bot health monitoring, and user journey and goal tracking.|
+|Insights (Admin) | Has access to all the available data and analytics.|
 |Engagement (Admin) | Can send campaigns and configure audience.|
 |Engagement (User) | Can only schedule campaigns.|
 
