@@ -24,21 +24,21 @@ In this article, you will learn:
 
 ## 1. Default status vs. custom status
 
-**Default status**      
+### Default agent status
 
 **Available**, **Busy** and **Away** are the [default statuses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentstatuses) that are present by default. These statuses cannot be modified/deleted.
 
 ![](https://i.imgur.com/SjzhsdB.png)
 
 
-**Purpose of custom status**
+### Purpose of custom agent status
 
 On the custom status settings, admins can create a custom status for the agents to suit the business operations to accommodate live chat requests.
 - With this, agents can set their status depending on this availability (from available to busy or other options).
 - Customizing the status also helps to provide visibility into what agents are doing on a day-to-day basis.
 - Admins can decide the statuses that are beneficial for the agents to effectively handle chats.
 
-**Use cases of custom status**
+### Use cases of custom agent status
 
 1. If the agent has decides go for lunch, 1-1.30 PM can be set as **Lunch** (custom status) by the agent so that the incoming tickets don't get auto assigned within those 30 minutes. Also, admins can know that the agent has taken 30min lunch. 
 2. If the agent is attending a meeting, status can be set to **Internal meeting** (custom status). Tickets won't be assigned to the agents and admin can track the time spent by that agent attending meetings. 

@@ -54,6 +54,7 @@ module.exports = {
           "cookbooks/voice-as-channel/reporting/cdr",
           "cookbooks/voice-as-channel/reporting/convdata",
           "cookbooks/voice-as-channel/reporting/conv_cdr",
+          "cookbooks/voice-as-channel/reporting/variables",
       ],
     },
     "cookbooks/voice-as-channel/transfertoagent",

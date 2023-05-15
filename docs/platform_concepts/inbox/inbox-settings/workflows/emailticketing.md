@@ -3,7 +3,9 @@ title: Email ticketing configuration
 sidebar_label : Email settings 
 ---
 
-Email settings must be enabled to handle support emails in the Inbox tickets module. 
+Yellow.ai's Inbox Email ticketing is a widely used approach that enables businesses and organizations to effectively handle customer inquiries, complaints, and support requests. It offers several use cases, including customer support, sales inquiries, IT support, bug reports, and complaints and feedback management. These applications allow companies to efficiently track the status of requests and provide timely updates to customers, employees, and users. 
+
+**Email settings** must be enabled to handle support emails in the Inbox tickets module. 
 
 :::note
 **Prerequisites to no-code email ticketing**

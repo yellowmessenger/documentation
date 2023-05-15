@@ -34,10 +34,11 @@ To accomplish use cases that involve using both conversational data and CDR data
 
 To store the age and query type along with the rest of the flow, follow these steps:
 
-1. Go to **Studio** and create a flow that supports your use case.
-2. In the node that collects age and query type, select **Store response in** a global variable.
-    ![](https://i.imgur.com/qyw4l5R.png)
-> Store the custom variables in a **global variable** so that it can be used in other flows. 
+1. Create a flow on studio using prompts to  store conversational data in variables.
+2. Create a table with required columns to store variable data. 
+3. Use database nodes to send variable data to a table. 
+
+> [Refer this](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata#1-create-a-flow-to-collect-and-store-custom-details-from-calls) for elaboration on these 3 steps. 
 
 
 ------
@@ -57,24 +58,19 @@ The `callbackStatus` object is a container that holds important CDR data and is 
 
 ------
 
-## Step 3. Merge and analyse CDR and conversation data post-call disconnection
+## Step 3. Merge  CDR and conversation data post-call disconnection
 
 1. Create a new flow from scratch by following the steps provided [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow).
-2. On the start node, add an [event trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event) by selecting **Event** as the trigger and `callbackStatus` as the value. This will ensure that the flow executes when the call has ended as per the backend logic. See the image below for reference.
+2. On the start node, add an [event trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event) by selecting **Event** as the trigger and `callbackStatus` as the value. This will ensure that the flow executes when the call has ended as per the backend logic.     
     ![](https://i.imgur.com/5xbfRqM.png)
-3. Add a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) action node to retrieve CDR-related entries.
-    ![](https://i.imgur.com/8wBb4Bf.png)
-4. Add a database node to combine CDR and conversational detail fields into one table. Refer to the steps outlined [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) to learn how to use the DB node.
-    ![](https://i.imgur.com/yuogCEP.png)
-    :::info
-    **Pre-requisite** 
-    Before using this flow, you must create a table to store the collected data. For example, you can create a table with three columns to store the age, query, and call duration for each call. Here are the steps to create a table:
-    1. Go to **Studio** > **Database**.
-    2. Create a new table with three columns and mark all of them as Searchable. Refer to [these instructions](https://docs.yellow.ai/docs/platform_concepts/studio/database#-1-create-table) for creating a table in Studio.
-    ![](https://i.imgur.com/wWAPpnu.png)
-    All the information gathered from the calls will be accessible in the table. 
-    ![](https://i.imgur.com/OXqQoHT.png)
-    :::
+3. Create new [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-3-create-a-variable) to retrieve CDR-related entries. For example, to retrieve **Call duration**, create a variable *Duration* and add value as `{{variables.EVENT_DATA.duration}}`. [Click here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/variables#variables-available-for-disconnected-calls) for detailed explaination. 
+4. Add a [database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node to combine CDR and conversational detail fields [into one table](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata#step-1-create-a-flow-to-store-data-in-variables).   
+    - Add type as **Update**. Select the same table name. 
+    - Filter for **SID**.
+    - Add CDR fields/variables. 
+
+    ![](https://hackmd.io/_uploads/rkdLGYiV2.png)
+   
 
 
 ------
@@ -83,18 +79,19 @@ The `callbackStatus` object is a container that holds important CDR data and is 
 
 You can find all the information related to your use case, including data from both CDR and conversational detail fields, on the table.
 
-To download this data, navigate to **Studio** > **Database**, and click on **Table actions**. From there, you can easily download the data.
+1. To download this data, navigate to **Studio** > **Database**, and click on **Table actions**. From there, you can easily download the data.
+
 ![](https://i.imgur.com/bZZlNeW.png)
 
-You can also view this data on **Insights** > **Data explorer**, where it can be summarized, visualized, and even added as a custom dashboard for easy access to analytics.
+2. You can also view this data on **Insights** > **Data explorer**, where it can be summarized, visualized, and even added as a custom dashboard for easy access to analytics.
+
 ![](https://i.imgur.com/Xyig1o0.png)
 
 
-------
+---------
 
 **Understand other operations on insights**
 
-> - Check out the available actions for custom tables by visiting [this page](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/customtables).    
-> - To visualize the data collected from calls, follow the steps outlined in [this guide](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr).
-> - Understand other operations on [Insights modules](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights). 
-
+- Check out the available actions for custom tables by visiting [this page](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/customtables).    
+- To visualize the data collected from calls, follow the steps outlined in [this guide](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr).
+- Understand other operations on [Insights modules](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights). 
