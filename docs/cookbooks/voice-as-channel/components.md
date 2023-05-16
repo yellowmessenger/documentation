@@ -1,110 +1,98 @@
 ---
-title: Components of a voice bot and steps to set them up
+title: Introduction to key components of a voice bot
 sidebar_label : Components of a voice bot
 ---
 
-There are 3 components to consider in the voice bot architecture: 
-1. Customizing bot response 
-2. Capturing user input 
-3. Understanding user input 
+Voice bots use advanced technologies for seamless and interactive communication via voice channels. Understanding the key **components** is vital for designing and implementing an effective voice bot system. These components facilitate efficient user interaction and communication.
 
-![](https://i.imgur.com/VHni0bH.png)
+This article highlights the basics of voice bot components. 
 
-In this article, you will learn how each of these components functions and what you must do to set up your voice bot. 
+
+:::info
+#### Recap of the voicebot workflow
+
+To understand the components of a voice bot, you must have a basic understanding of the [voice bot architecture](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/voicearchitecture#2-workflow-of-a-voice-bot). 
+
+1. **Customer** initiates a **call** to the voice bot and makes a service request.
+2. The customer's **speech is converted into text**. This text is then sent to the **telephony** platform, which acts as the interface between the cloud and the customer.
+3. The text representing the customer's **request is processed** by the backend logic, which can be implemented through flows or custom code on the **Yellow.ai Cloud platform**.
+4. Once the cloud platform understands the user's request, it generates a **response in the form of text**, which is then sent back to the **telephony** platform.
+5. The voice bot **converts the response text into speech** and delivers it to the **customer**, allowing them to hear the response in a natural voice.
+:::
+
+#### Key components of voicebot workflow
+
+
+The voice bot architecture consists of three key components:
+
+1. **Capture user input**: The bot records and captures the customer's input.
+2. **Understand user input**: The bot processes and comprehends the customer's input to generate a response.
+3. **Customize bot response**: The bot plays or communicates the response back to the customer.
+
+
+![](https://hackmd.io/_uploads/Hyp_msJBn.png)
+
+
 
 ----
 
-## 1. Customize bot responses 
 
-> Once the platform output is available, it is converted from Text-To-Speech. How the user listens to this speech can be customized.
+## 1. Capturing user inputs
 
-To customize the bot responses on the IVR channel, we use text-to-speech technology in partnership with leading Text-To-Speech(TTS) engines (like Microsoft, Google, and Amazon) to better serve all kinds of business requirements like customized and life-like speech.
+There are three methods to capture user input on the IVR channel that is summarized below.
 
-You can explore the four different ways in which you can customize bot responses: 
+1. **Capturing user speech**: Yellow.ai platform incorporates Speech-to-Text (STT) and Automatic Speech Recognition (ASR) technologies for accurate transcription and real-time recognition of user speech. Through partnerships with leading STT engines like Microsoft and Google, we ensure high-quality transcription. ASR leverages advanced machine learning algorithms to facilitate seamless and precise communication between users and voice bots, enabling natural and interactive interactions. You can configure parameters such as STT engine, mode, and silence parameters for optimal performance.
 
-### 1.1 Using pre-built neural voices
+2. **Capturing keypad (DTMF) input**: Users can provide input through the keypad while on a call, typically used for numeric inputs. Two configurations are available:
+    - **DTMF Digit Length**: Captures fixed-length user input, like a mobile number.
+    - **DTMF Finish Character**: Used for variable-length inputs, such as an application ID. Users can press "*" or "#" to indicate the completion of input.
+        > If there is no activity for more than 10 seconds, bot considers it as the end of input.
 
-The TTS engines have pre-built neural voices. When you provide text (response of bot), it is automatically converted to speech. For example: 
-- Using Bot persona in [Design](https://docs.yellow.ai/docs/platform_concepts/design/convdesignvoice#21-bot-persona-settings). 
-- In the [Voice input node](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput#11-input-type), Bot speaks is directly converted into speech. 
-
-### 1.2 Applying SSMLs for more customization
-
-For more customized business use cases where the bot needs to have more control over the speech synthesis, you can apply speech effects (rate, pitch, style, pause, etc.) using SSML (Speech Synthesis Markup Language). You can customize all the bot responses in an easy-to-use editor in the [design mode](https://docs.yellow.ai/docs/platform_concepts/design/convdesignvoice#22-bot-response-settings).
-
-(or)
-
-You can add a customized SSML code directly to the [voice input node](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput#11-input-type). 
-
-![](https://i.imgur.com/evq5cVU.png)
-
-### 1.3 Adding variables for custom responses
-
-You can have a personalized interaction with the bot by using variables. For example: 
-
-| Conversation 1 | Conversation 2 |
-| -------- | -------- |
-| **User**: I live in **Bangalore**. <br/> **Bot**: **Bangalore** is a great place! May I know your account number? | **User**: My name is **Sam**. <br/> **Bot**: Welcome to our store, **Sam**. What would you like to try first?      |
-
-You can add variables in the [design](https://docs.yellow.ai/docs/platform_concepts/design/convdesignvoice#3-store-and-use-variables) module or [voice input node](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput#2-voice-input-node-demo) while building flows. 
-
-### 1.4 Using the translations page for multilingual bots
-
-While customizing bot response for multilingual bots you can use [Translations](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization) to customize speech in other languages. 
-
-:::note
-- The translation text added on this page must be in **SSML format** only. 
-    ![](https://i.imgur.com/VHTadGP.png)
-
-- On the Voice input node, click the translation icon and select the **Key**.
-    ![](https://i.imgur.com/StslBrJ.png)
-
-:::
+3. **Capturing keypad and speech as input**: In certain cases, the bot can allow users to provide input by either typing on the keypad or speaking it out. The bot recognizes the first response, whether it's from keypad activity or speech, as the final input.
 
 
--------
 
-## 2. Capture user responses
-
-After synthesizing bot responses, the next step is to accurately capture user responses over call. There are three methods to capture user input on the IVR channel that is summarized below.
-
-> Click [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput#13-capturing-user-input) for complete details.
-
-### 2.1 Capture user speech
-
-You can capture user speech and get it transcribed using Speech-To-Text(STT) technology. Similar to TTS, we have partnerships and integrations with advanced STT engines like Microsoft and Google to accurately capture speech and convert it to text which then can be processed by the bot.
-Multiple parameters can be configured for this such as STT engine, STT mode, Silence Parameters, etc.
-
-> Click [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput#voice) for details. 
+--------
 
 
-### 2.2 Capture keypad(DTMF) input
+## 2. Understanding user responses (& follow-up)
 
-User response can be captured with [keypad](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput#keypad) while being on call. This is mostly used to capture numeric inputs. There are two configurations available to use: 
-
-1. **DTMF_Digit_Length**: Used to capture fixed length user input like *Mobile Number*.
-2. **DTMF_finish_character**: Used when the user response is expected to be a variable length input like an application ID. A user can define either "*" or "#" to inform that all Digits are added.
-
-:::note 
-If either case, there is no activity for more than 10 seconds, it is considered as the end of input.
-:::
-
-### 2.3 Capture keypad and speech as input
-
-There are use cases where the bot can allow the user to either provide input by typing on the keypad or speaking it out. 
-
-:::note
-The first response recognized by the bot will be considered the final input. It can be noise/response or Keypad activity.
-:::
-
-----------
-
-## 3. Understand user responses and follow-up
-
-These are the platform operations to be performed to understand the user input that is available in text format and analyze and provide output in text format. For example: 
+Operations on yellow.ai cloud platform must be performed to understand the user input that is available in text format and analyze and provide output in text format. For example: 
 
 - Bot training by adding [intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) and [entities](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities).
-- Configuring output for [Failure or no-response messages](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput#12-validator). 
-- Configuring [validations](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput#12-validator) against the context (intents, entities, pre-trained entities, etc). 
+- Configuring output for failure or no-response messages. 
+- Configuring validations against the context (intents, entities, pre-trained entities, etc). 
+- Many more...
+
+
+![](https://hackmd.io/_uploads/r1kLKoyHh.png)
+
+
+------
+
+## 3. Customizing bot responses 
+
+To make the users hear the bot's responses during a call, the text generated by the bot must be converted into spoken words. This conversion is achieved using text-to-speech (TTS) technology in collaboration with leading TTS engines such as Microsoft, Google, and Amazon. These engines provide a range of capabilities to meet different business requirements, including the ability to create customized and lifelike speech.
+
+There are three ways to convert bot-generated text into speech on the IVR channel:
+
+1. **Using pre-built neural voice models**: TTS providers offer pre-built neural voice models that can be utilized for quick prototyping and building demo voice bots. Design module and Voice input node enable the conversion of text into speech, providing a basic understanding of how the bot's responses would sound.
+2. **Applying customization with SSML**: For more advanced use cases where precise control over speech synthesis is needed, Speech Synthesis Markup Language (SSML) can be employed. SSML in design module and voice input node allows for fine-grained customization of speech, like adjustments to speech rate, pitch, style, pauses, etc. By incorporating SSML in the text, the resulting speech can be highly tailored and expressive.
+3. **Playing pre-recorded messages**: In some scenarios, it may be necessary to play pre-recorded messages during a call. For example, when a custom proprietary sound or a welcome tone needs to be played. Pre-recorded messages,  in .wav or .mp3 formats, can be integrated into the call flow to provide a specific audio experience.
+
+
+### Additional response customization on yellow.ai
+
+Yellow AI offers extensive features for customizing bot responses. They are:
+
+1. **Adding variables for custom responses (Dynamic messages)**: Personalize interactions with the bot by incorporating variables. By storing and using variables in the design module or voice input node, you can dynamically include user-specific information in the bot's responses, creating a more tailored experience. For example, you can dynamically include the user's name or city in the responses.
+
+    | Conversation 1 | Conversation 2 |
+    | -------- | -------- |
+    | **User**: I live in **Bangalore**. <br/> **Bot**: **Bangalore** is a great place! May I know your account number? | **User**: My name is **Sam**. <br/> **Bot**: Welcome to our store, **Sam**. What would you like to try first?      |
+
+
+2. **Using the translations page for multilingual bots (Multi-lingual flows)**: For multilingual bots, the [translations](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization) feature can be employed to customize speech in different languages. This means that you can build a single flow and use the translations feature on the platform to store configurations for each language. You can provide localized experiences to users in different languages without the need to duplicate or recreate entire flows. This streamlines the development process and ensures consistency across different language versions of the voice bot.
+    > The translation text should be in SSML format. 
 
 
