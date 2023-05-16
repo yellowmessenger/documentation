@@ -964,6 +964,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/line",
             "platform_concepts/channelConfiguration/zalo",
             "platform_concepts/channelConfiguration/viber",
+            "platform_concepts/channelConfiguration/abc",
             
           ]
         },
