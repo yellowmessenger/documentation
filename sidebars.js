@@ -29,6 +29,7 @@ module.exports = {
   cookbooks: [
 
     "cookbooks/getting_started", 
+    "cookbooks/migration-guide",
  
   
 // Voice docs 
