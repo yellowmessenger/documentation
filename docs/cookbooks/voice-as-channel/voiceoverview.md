@@ -4,12 +4,6 @@ sidebar_label : Voice overview
 ---
 
 
-:::info
-- Post your queries on [voice community](https://community.yellow.ai/c/voice/31).
-- Contact Aagam Mehta (aagam.mehta@yellow.ai) for support.
-:::
-  
-
 In this article, you will learn: 
 1. [Introduction to conversational voice AI](#intro) 
 2. [Deploying and understanding voice bots for business](#fundamentals)
@@ -18,11 +12,19 @@ In this article, you will learn:
 
 ------
 
-## <a name="intro"></a> 1. Introduction to conversational voice AI
+## 1. AI Voicebot Demo 
+
+:::info
+- **Visit our [voice channel](https://yellow.ai/voice-channel/) to listen to the live calls attended by the yellow.ai voice bots.** 
+- Post your queries on [voice community](https://community.yellow.ai/c/voice/31).
+- Contact Aagam Mehta (aagam.mehta@yellow.ai) for support.
+:::
+
+## <a name="intro"></a> 2. Introduction to conversational voice AI
 
 To begin with, let's understand Conversational AI before delving into its subset, Conversational Voice AI.
 
-### 1.1 What is conversational AI?
+### What is conversational AI?
 
 Conversational AI, short for Conversational Artificial Intelligence, refers to the utilization of technology and algorithms to create lifelike dialogues and interactions between humans and machines. By incorporating Natural Language Processing (NLP), Machine Learning (ML), and other related technologies, chatbots, virtual assistants, and other automated systems can communicate with users in a way that is natural and intuitive, similar to how humans converse with one another.
 
@@ -32,7 +34,7 @@ To comprehend user input, conversational AI systems employ various techniques su
 
 ----
 
-### 1.2 What is conversational voice AI
+### What is conversational voice AI
 
 Conversational AI is an extensive domain that encompasses diverse channels and technologies. One of its significant subsets is Conversational Voice AI, which focuses specifically on voice-based interactions between machines and humans. It leverages Speech Recognition technologies and Speech Synthesis alongside NLP to enable users to interact with devices and software using natural language or voice commands instead of traditional input methods like typing or clicking.
 
@@ -44,7 +46,7 @@ Overall, Conversational Voice AI holds immense potential to improve accessibilit
 
 ------
 
-### 1.3 Adapting to customer needs with voice bots
+### Adapting to customer needs with voice bots
 
 In today's fast-paced world, customer preferences evolve rapidly, and businesses must keep up to stay ahead of the competition and meet their customers' changing needs. Customers increasingly prefer automated self-service options like mobile applications or business chatbot setups to address simple concerns, such as updating personal account details or canceling an order.
 
@@ -54,7 +56,7 @@ To assist businesses in providing better virtual assistants, Yellow offers voice
 
 ----
 
-## <a name="fundamentals"></a> 2. Deploying and understanding voice bots for business
+## <a name="fundamentals"></a> 3. Deploying and understanding voice bots for business
 
 
 Yellow AI offers top-notch voice bots that can be easily integrated with a business's phone lines. These bots simulate human-like conversations and can perform various tasks, including answering questions, providing information, and completing transactions.
@@ -74,7 +76,7 @@ Here's how voice bots work end-to-end:
 
 -----
 
-## <a name="ecosystem"></a>  3. Yellow.ai's Complete Voice Bot Solution
+## <a name="ecosystem"></a>  4. Yellow.ai's Complete Voice Bot Solution
 
 
 Yellow.ai offers a complete voice bot solution that integrates speech recognition and speech synthesis technologies into their product ecosystem. This comprehensive solution simplifies the process of creating and deploying voice bots for businesses. Let's take a closer look at the different products in the ecosystem.
@@ -85,4 +87,5 @@ Yellow.ai offers a complete voice bot solution that integrates speech recognitio
 4. **Insights module**: The Insights module provides businesses with detailed analytics and metrics related to their voice bots' performance, such as the number of calls, call duration, and API response time.
 5. **Channels module**: Businesses can easily set up their voice bots, including configuring the IVR channel, and associated phone numbers.
 6. **Integration module**: Along with leading speech recognition and speech synthesis technologies, businesses can integrate their Voice Bots with other external services like CRM. These integrations can then be utilized in the bot flows, making it possible to create a more personalized experience for customers.
+
 

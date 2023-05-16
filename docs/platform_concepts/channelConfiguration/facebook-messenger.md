@@ -82,3 +82,24 @@ After adding the FAQs and training the chatbot, you can test your FBM chatbot in
    <img src="https://i.imgur.com/egpbjjI.png" alt="drawing" width="40%"/>
 
 Similarly, you can test your FBM chatbot by adding different options such as product showcase, order status, and so on.
+
+## 3. Character limitations of FBM
+
+In this section, you can view the character limitations of FBM channel.
+
+### Quick reply
+
+Quick reply options |	Character limit
+--------------------|----------------------
+Quick reply | <br/>• The maximum number of characters supported is 22. <br/>• A maximum of 13 quick replies are supported.
+
+### Carousel
+
+Carousel options	| Character limit
+-----------------|-----------------
+Carousel title | The maximum number of characters supported is 22.
+
+:::note
+* You cannot add a description to the carousel prompt node.
+* The carousel message node is not supported.
+:::

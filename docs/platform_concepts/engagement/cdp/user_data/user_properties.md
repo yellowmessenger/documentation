@@ -3,7 +3,7 @@ sidebar_label: User properties
 title: User properties
 ---
 
-## 1. User properties overview
+## User properties overview
 
 Properties are individual fields to be captured for a customer. For example, name, phone number, gender, email address and more. There are several predefined fields that you can use to capture a user's data. You can also create custom properties if required.
 
@@ -16,77 +16,76 @@ This is enabled only for https://cloud.yellow.ai
 :::
 
 
-We store three types of data about your users:
+There are two types of user data that is supported in User 360:
 
-1. System user properties (a default set of data that we capture about your users).
-2. Custom user properties (data you send us about your users).
-3. Events (data that records specific activities of users).
+
+1. User properties
+
+   i. [System user properties](#system-user-properties): Default data that you can capture about your users.
+   ii. [Custom user properties](#custom-user-properties): Custom data that you can capture about your users and send to the platform.
+
+2. [User Events: Data that tracks specific activities performed by your users. For more details, see [User 360 events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events) and [Custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events)
 
   
 
 
-### 1.1 System user properties
 
-The following properties are enabled by default. You can see these in User 360.
+
+
+
+***
+
+
+## System user properties
+
+System properties are the default user properties that contain the essential data organizations need to capture from their users. If you need to capture additional information, you can [create custom user properties](#custom-user-properties).
+
   
+The following are the available system user properties, you can see these in User 360.
 
 | **Property Name** | **Data Type** | **Description** |
 |-------------------|---------------|------------------------|
-| userId | string | Unique identifier for a user NOTE: This can be passed |
+| userId | string | Unique identifier for a user. <br/>NOTE: This can be passed |
 | firstName | string | The first name of the user |
 | lastName | string | Last name of the user |
 | gender | string | Gender of the user |
 | country | string | Country of the user. In bot conversation, it identifies this property based on the location of the user’s IP address |
 | city | string | City of the user. In bot conversation, it identifies this property based on the location of the user’s IP address |
-| ip | string | In bot conversation, it fetches this property from the user’s browser |
-| latitude | number | In bot conversation, it identifies this from the location of the user’s IP address |
-| longitude | number | In bot conversation, it identifies this from the location of the user’s IP address |
 | language | string | Preferred language of the user |
 | timezone | string | Identifies based on the location of user's IP address |
 | email | email | Email address of the user |
 | phone | phone | Phone number of the user with country code |
 | lastChannel | string | Recent channel (set up on yellow.ai) where the user had an active session <br/>You can update this property to cover touch-points/channels outside yellow.ai. |
 | dob | date | Date of birth of the user. |
-| lastSession | dateTime | timestamp of the last time the user had an active session on one of the channels set up on yellow.ai NOTE: You can update this property to cover touch-points/channels outside yellow.ai |
 | emailOptin | boolean | Subscription status of the user to emails. The value is `true` if a user has subscribed to your emails, else it is `false` |
 | smsOptin | boolean | Subscription status of the user to SMS. The value is `true` if a user has subscribed to your SMS, else it is `false` |
 | whatsAppOptin | boolean | WhatsApp subscription status of the user. This is `true` if a user has subscribed to your WhatsApp messages, else it is `false`. |
-| createdAt | dateTime | Timestamp of when the user record was created |
-| updatedAt | dateTime | Timestamp of when the user record was recently updated |
 | tags | list | List of groups associated to the user. You can add tags to users manually. |
 
-  
+
+### 1. `UserId` as a property
 
 
-
-
-
-
-
-
-### 1.3 User ID (userId) as a property
-
-
-`userId` is a unique property in the users schema and is used to identify a user.
-
-You need to set a userId (a unique user identifier) for every user that you create, to be able to recognise them as the same user on multiple touch-points. If `userId` is the same as email, you might want to pass it both as `userId` and email address. 
-
-Passing the userId for your users will allow you to identify them on multiple touch-points, which will further allow you to:
+The `userId` is a unique property in the users schema and serves as an identifier for each user. It helps in recognizing users across multiple touch-points, capture and update user data. A `userId` can be any unique identifier such as phone number, email address, or any other external unique identifier such as driving licence number.
 
    <img src="https://i.imgur.com/aWczHLm.png"/>
 
-- Offer personalised engagement across multiple touch-points/channels
-- Enrich the profile of that user with the data collected from multiple touch-points/channels
 
-You can use `userId` to identify a user and use it to capture add/update user data, capture data through bot conversation.
+Also, see:
+
+- [How to capture userId through bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-id-through-builder).
+- [What happens when a userId is captured for the first time during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-a-userid-is-captured-for-the-first-time).
+- [What happens when a userId is recaptured during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-the-userid-is-recaptured).
+- [How to enrich user profiles with the data collected from multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_user_overview)
+- [How to offer personalised engegement across multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
+
 
 :::warning
-No two users can have the same userId
+Two records cannot have the same userId.
 :::
 
-You can customise the fields or information that you want to capture for your users and set the order in which you want the fields to appear on the UI.
 
-### 1.5 Tag as a user property
+### 2. `Tag` as user property
 
 A tag is a label used to categorise users based on certain characteristics or attributes. These labels can be used to segment customers into different groups for targeted marketing, sales, or customer service efforts. Some examples of customer labels include High-value, New customer, Inactive, or campaign responders.
 
@@ -95,36 +94,14 @@ A user can have more than one tag.
 ![](https://i.imgur.com/om7QH6j.png)
 
 
-***
+## Custom user properties
 
-## 2. Manage user properties
+Custom user properties refer to additional fields that you can create to capture information that is not covered by the default system properties. You can define these custom properties according to your business specific needs and requirements.
 
-You can add the System properties that you want to capture for your users. If required, you can also create your own property (custom property) that you want to capture.
-
-### 2.1 Add user property
-
-This section explains how you can add a system property that you want to capture. Adding a property creates a new column in the User 360 table to store the respective property value.
-
-To add an existing user property to your User 360 module, follow these steps:
-
-1. On the **User 360** page, click **User properties**.
-
-![](https://i.imgur.com/BOUV1hq.png)
-
-   On the left panel, you can see the user schema, which includes all the [system](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#22-system-user-properties) and [custom properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#23-custom-user-properties) along with their data types. 
-
-2. Select the property that you want to include. You can see all the selected properties on the right. 
-
-   ![](https://i.imgur.com/O5nuQaz.png)
+For instance, you might want to store details such as the number of times they have visited your pricing page, their department, and their preferred product.
 
 
-### 2.2 Create custom user property
-
-Custom properties store additional information specific to your users. For example, you might want to store details such as the number of times they have visited your pricing page, what their department is, and their preferred product.
-
-
-
-To create new user properties with your preferred label name and datatype, follow these steps:
+To create a new user property with your preferred label name and datatype, follow these steps:
 
 1. On the **User 360** page, click **User properties**.
 
@@ -162,19 +139,13 @@ The table lists the different datatypes supported for user properties.
 Currently, you cannot modify or delete a custom property once created.
 :::
 
-### 2.3 Order user properties
 
-You can set the order in which user properties has to appear on the interface.
 
-To set the order:
 
-1. On the **User 360** page, click **User properties**.
 
-   ![](https://i.imgur.com/BOUV1hq.png)
 
-2. On the right pane, drag a property to the required position.
 
-   ![](https://i.imgur.com/Eyk5uce.gif)
+
 
 
 <!--

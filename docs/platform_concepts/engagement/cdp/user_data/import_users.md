@@ -70,7 +70,7 @@ To import the CSV file with user details, follow these steps:
 
 3. Map CSV headers with the user properties. 
 
-   * Select the CSV header that includes `userId` in the **User ID** column.
+   * Select the CSV header that includes `userId` in the **UserId** column.
    * Associate each CSV header (column 2) with the User property (column 4).
   ![](https://i.imgur.com/pcotUYF.png)
 
@@ -79,7 +79,7 @@ If a CSV header is not mapped to any user property, that CSV column will not be 
 :::
 
 4. Click **Next**.
-5. In **Resolve conflicts** set the action to be performed to the record when a user ID in the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360. 
+5. In **Resolve conflicts** set the action to be performed to the record when a userIdin the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360. 
 
    ![](https://i.imgur.com/w9DvsBR.png)
 

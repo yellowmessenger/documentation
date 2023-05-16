@@ -5,16 +5,16 @@ sidebar_label : Overview
 
 If you're using a voice bot, tracking your metrics is essential for achieving the desired results. Yellow's platform offers comprehensive tracking to give you complete insights into your bot's performance.
 
-## 1. Types of reports 
+## 1. Voice reports available on Insights
 
 You have two options to track your voice data:
 
-1. **Basic Reporting**: The platform automatically tracks common points from the voice conversation and displays them on the [Voice Overview Dashboard](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/dashboard). From the dashboard, you can:
+1. **Basic Reporting**: The platform automatically tracks common points from the voice conversation and displays them on the [Voice Overview Dashboard](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/dashboard) on Insights module. From the dashboard, you can:
     - Retrieve the total number of calls received in the past week.
     - Retrieve the average duration of calls for the previous 30 days.
     - Retrieve the answering rate for the outbound campaign during the last quarter.
 
-2. **Advanced Reporting**: You can track bot analytics based on your specific needs in the following ways:
+2. **Advanced Reporting**: You can track bot analytics on Insights based on your specific needs in the following ways:
     1. [CDR reports](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr): View more than 15 voice call parameters on the **Call Details Report** (CDR) in the Data Explorer. From the CDR report, you can:
         - Retrieve a list of users who disconnected calls during the last 7 days.
         - Retrieve the answering rate for a specific campaign (identified by its ID) that was launched last Sunday.

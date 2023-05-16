@@ -38,6 +38,7 @@ module.exports = {
   collapsed: true,
   items: [
         "cookbooks/voice-as-channel/voiceoverview",
+        "cookbooks/voice-as-channel/voicearchitecture",
         "cookbooks/voice-as-channel/components", 
 
 
@@ -53,6 +54,7 @@ module.exports = {
           "cookbooks/voice-as-channel/reporting/cdr",
           "cookbooks/voice-as-channel/reporting/convdata",
           "cookbooks/voice-as-channel/reporting/conv_cdr",
+          "cookbooks/voice-as-channel/reporting/variables",
       ],
     },
     "cookbooks/voice-as-channel/transfertoagent",
@@ -61,7 +63,6 @@ module.exports = {
   // ---- old docs 
 
 
-    "cookbooks/voice-as-channel/voicearchitecture",
 
 // building  
   {
@@ -120,6 +121,7 @@ module.exports = {
           "cookbooks/studio/hide-input",
           "cookbooks/studio/dynamic-quickreplies",
           "cookbooks/studio/images-languages",
+          "cookbooks/studio/storeApiResponse",
 
       ],
     }, 
@@ -637,27 +639,30 @@ module.exports = {
   items: [
    // "platform_concepts/engagement/cdp/overview",
     "platform_concepts/engagement/cdp/user_data/user_properties",
+    
     {
       type: "category",
-      label: "User management via bot conversations",
-      link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
-      collapsed: true,
-      items: [
-        "platform_concepts/engagement/cdp/user_data/data_capture_convers",
-        "platform_concepts/engagement/cdp/user_data/store_conv_data",
-        "platform_concepts/engagement/cdp/user_data/personalise_conversations",
-        
-      ]
-    },
-    {
-      type: "category",
-      label: "Add users",
+      label: "Create/update user records",
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/add_user_overview'},
       collapsed: true,
       items: [
         "platform_concepts/engagement/cdp/user_data/add_users",
         "platform_concepts/engagement/cdp/user_data/import_users",
-        "platform_concepts/engagement/cdp/user_data/conv_in_builder",
+      //  "platform_concepts/engagement/cdp/user_data/conv_in_builder",
+        
+        {
+          type: "category",
+          label: "Add/update user records via bot conversations",
+          link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
+          collapsed: true,
+          items: [
+           // "platform_concepts/engagement/cdp/user_data/data_capture_convers",
+            "platform_concepts/engagement/cdp/user_data/store_conv_data",
+          //  "platform_concepts/engagement/cdp/user_data/auto-capture",
+            "platform_concepts/engagement/cdp/user_data/personalise_conversations",
+            
+          ]
+        },
         "platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api",
       ]
     },
@@ -959,6 +964,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/line",
             "platform_concepts/channelConfiguration/zalo",
             "platform_concepts/channelConfiguration/viber",
+            "platform_concepts/channelConfiguration/abc",
             
           ]
         },
@@ -1011,6 +1017,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/chat-widget-notification",
             "platform_concepts/channelConfiguration/chat-separator",
             "platform_concepts/channelConfiguration/domain-whitelisting",
+            "platform_concepts/channelConfiguration/chat-widget-localization",
             "platform_concepts/channelConfiguration/pwa",
             "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/chat-widget-errors",

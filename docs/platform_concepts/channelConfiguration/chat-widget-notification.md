@@ -36,44 +36,32 @@ To enable chat widget notifications, follow these steps:
 
 2. Click on **Chat widget**.
 
-    ![](https://i.imgur.com/1KzP77W.png)
+     ![](https://i.imgur.com/1KzP77W.png)
 	
-3. The *Widget panel* is displayed. Navigate to the **Settings** tab, enable the **Unread message(s) badge** and **Unread notification in browser tab** and click **Save changes**.
+3. Navigate to the **Settings** tab and expand **Notifications** drop-down.
+
+     ![](https://hackmd.io/_uploads/H1VOn6w43.png)
+
+4. Enable the **Unread message(s) badge**, **Unread notification in browser tab**, and **Message sound**, then click **Save changes**.
    
-   <img src="https://i.imgur.com/sAmc02y.png" alt="drawing" width="70%"/>
-     
+     ![](https://hackmd.io/_uploads/BkwxAFwEh.png)
+   
 4. Navigate to the **Deploy** tab and click **Experience  on a website**. 
  
-   ![](https://i.imgur.com/y7ZwGP9.png) 
-   
+   <img src="https://hackmd.io/_uploads/ByKqItDE2.png" alt="drawing" width="70%"/>
+    
 5. If there are new messages, you will see the notification in the Favicon when you are on a different tab, as shown below.   
 
     ![](https://i.imgur.com/IOBbgzn.png)
 
-* When a bot is in a minimized state, a notification badge is displayed on top of the bot icon.
+     * When a bot is in a minimized state, a notification badge is displayed on top of the bot icon.
 
      <img src="https://i.imgur.com/RWLV22E.png" alt="drawing" width="50%"/> 
+	 
+	 * The notification button is displayed on the header of the chat widget when Message sound option is enabled. It is turned off by default.
+	 
+     <img src="https://i.imgur.com/4D2HS91.png" alt="drawing" width="40%"/>
 
-
-## Turn on chat widget notification sound
-
-To turn on chat widget notification, follow these steps:
-
-1. On the module switcher, click **Channels**.
-
-   ![](https://i.imgur.com/UuFZ2eR.png)
-
-2. Click on **Chat widget**.
-
-    ![](https://i.imgur.com/1KzP77W.png)
-   
-3. Navigate to the **Deploy** tab and click **Experience  on a website**. 
- 
-   ![](https://i.imgur.com/y7ZwGP9.png) 
-   
-4. Click on the below highlighted icon to enable the **Turn on message sound** option to notify you when there are new messages from a bot or from agents.
-
-    <img src="https://i.imgur.com/4D2HS91.png" alt="drawing" width="40%"/>
 
 :::note
 If there are multiple messages in a single step, you will hear the notification sound only once.

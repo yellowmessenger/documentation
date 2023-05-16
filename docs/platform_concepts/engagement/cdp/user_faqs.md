@@ -26,7 +26,7 @@ Ensure that the CSV file does not contain exponential notation.
 
 <summary>Can I change userId frequently?</summary>
 
-You cannot update a userId once captured. If you try to capture a new user ID in the same session, a new record is created with that specific identifier. For more details, see [What happens when the user Id is recaptured](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-the-user-id-is-recaptured).
+You cannot update a userId once captured. If you try to capture a new userId in the same session, a new record is created with that specific identifier. For more details, see [What happens when the userId is recaptured](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-the-userid-is-recaptured).
 
 </details>
 
@@ -34,5 +34,5 @@ You cannot update a userId once captured. If you try to capture a new user ID in
 
 <summary>How can I update existing user properties?</summary>
 
-You can update existing user properties by identifying the user and recapturing the user properties that you would like to update. However, you cannot update the user ID. For more details, see [Store conversational data in User360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#update-user-properties-through-builder)
+You can update existing user properties by identifying the user and recapturing the user properties that you would like to update. However, you cannot update the userId. For more details, see [Store conversational data in User360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#update-user-properties-through-builder)
 </details>

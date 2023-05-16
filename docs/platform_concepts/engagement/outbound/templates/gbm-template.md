@@ -138,7 +138,7 @@ To add trigger a journey CTA on button click:
 
 ### 3. Add button to send template data (as event)
 
-Use this to send all the template data to the bot and create custom flows. For example, you can capture the button clicked and the user ID in a custom dataset and use them in building flows.
+Use this to send all the template data to the bot and create custom flows. For example, you can capture the button clicked and the userId in a custom dataset and use them in building flows.
 
 Choose the **Type of action** as *Send as event* and enter the **Button text**.
 

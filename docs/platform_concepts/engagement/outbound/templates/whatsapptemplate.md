@@ -152,7 +152,7 @@ Enter the **Button text**, choose the **Action type**,  *Trigger NLP*.
 
 
 ### 2.3 Send as Event 
-Use this to send all the template data to the bot and use it in custom flows. For example, you can capture the button clicked and the user ID in a custom dataset.
+Use this to send all the template data to the bot and use it in custom flows. For example, you can capture the button clicked and the userId in a custom dataset.
 
 Enter the **Button text**, choose the **Action type**,  *Send as event*.
 
