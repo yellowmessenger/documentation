@@ -90,7 +90,7 @@ By default, all these fields are checked (available to the agents). If you want 
 
 | Field | Description |
 | -------- | -------- |
-|Add only internal notes & block reply|If this field is de-selected, the agents can reply to the customer on the chat screen and also add internal notes for the collaborators/agents/admins. When this field is selected, agents can only add internal notes to the assigned live chat and cannot send a textual reply to the customer. <br/> **Use-case**: For agents escalation, agents must be restricted so that they cannot directly respond to the customers. Admin can enable this feature and the agent can provide updates as internal notes.|
+|Add only internal notes & block reply| If this field is de-selected, the agents can reply to the customer on the chat screen and also add internal notes for the collaborators/agents/admins. When this field is selected, agents can only add internal notes to the assigned live chat and cannot send a textual reply to the customer. <br/> **Use-case**: During escalations, special agents(supervisors/level 2 agents) would want to have the ability to add internal notes to a customer chat, so that the agent can see  these updates as internal notes and answer the query.|
 |Ticket report download visibility     |   |
 |Enable Attachments|If this field is de-selected, it will not allow agents to send any unwanted attachments that you as a company strives to support|
 |Public chat URL visibility| Every live chat has a chat transcript associated with it, if you disable this for a particular agent, they will not be able to access it or share it with their internal colleagues (Copy icon will not be available on the chat screen).|
