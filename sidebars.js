@@ -1029,7 +1029,6 @@ module.exports = {
           ]
         },
         "platform_concepts/channelConfiguration/fb-lead-ads",
-        "platform_concepts/channelConfiguration/fb-workplace",
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/sunshine",
         "platform_concepts/channelConfiguration/channels-faqs",
