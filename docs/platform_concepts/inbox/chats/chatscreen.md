@@ -18,7 +18,6 @@ Simply type in any text and hit send button (or enable enter to send if you want
 
 ----
 
-    
 ### Actions/Canned response
 
 You can add [agent actions](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions) / [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown. This can be used for frequent actions/replies so that the agent can simply select an action or canned response instead of typing the whole message multiple times.    
@@ -107,3 +106,8 @@ The following user details are available on this screen to provide agents with m
 |Timeline|Agent details and time that the live chat was assigned, closed, and number of agents that it has been transferred to.|![](https://i.imgur.com/muyrQEv.png)|
 |Collaboration details| More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.|![](https://i.imgur.com/ybV3WJX.png)|
 |Device details|Details about the user device that the bot tracks.|![](https://i.imgur.com/VDayNjJ.png)|
+
+
+:::info
+A few of these options can be customized for each agent via. [settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents). 
+:::

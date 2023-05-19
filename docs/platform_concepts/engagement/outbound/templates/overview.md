@@ -3,9 +3,18 @@ title: Template overview
 sidebar_label: Template overview
 ---
 
-A template is a message format that helps businesses to communicate with their customers. You can reuse common templates that you send to your customers. You can create templates for all the changes that Yellow.ai supports and the procedure for creating changes depending on the channel type. 
+A message template refers to a predefined format or structure of a message that ensures consistency and standardization in different communication channels. It serves as a convenient tool for businesses to create and reuse common messages sent to their customers. 
 
+These templates often consist of variables that can be dynamically populated with personalized information like customer names, order details, or transaction specifics. By leveraging message templates, businesses can streamline their communication processes, save time, and maintain a consistent messaging approach across different communication channels.
 
+The following are the different channels that Engage supports for sending out campaigns:
+
+* [WhatsApp](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate)
+* [SMS](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/sms-template)
+* [Email](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/email-template)
+* [Viber](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/viber-template)
+* [Mobile push](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/mobilepush)
+* [Google Business Message](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/gbm-template)
 
 ## 1. Access Template manager
 

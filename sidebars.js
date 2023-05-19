@@ -966,6 +966,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/zalo",
             "platform_concepts/channelConfiguration/viber",
             "platform_concepts/channelConfiguration/abc",
+            "platform_concepts/channelConfiguration/fb-workplace",
             
           ]
         },
@@ -1028,7 +1029,6 @@ module.exports = {
           ]
         },
         "platform_concepts/channelConfiguration/fb-lead-ads",
-        "platform_concepts/channelConfiguration/fb-workplace",
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/sunshine",
         "platform_concepts/channelConfiguration/channels-faqs",
