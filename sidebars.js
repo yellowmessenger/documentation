@@ -966,6 +966,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/zalo",
             "platform_concepts/channelConfiguration/viber",
             "platform_concepts/channelConfiguration/abc",
+            "platform_concepts/channelConfiguration/fb-workplace",
             
           ]
         },

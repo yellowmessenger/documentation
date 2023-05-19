@@ -3,48 +3,151 @@ title : Facebook Workplace
 sidebar_label : Facebook Workplace
 ---
 
-On Workplace, bots are represented as pages. A page is automatically created when you create a custom integration app. Only System Administrators of a Workplace community can create apps and generate access tokens in that community.
+Facebook Workplace is an online collaborative tool that helps businesses and organizations to communicate and collaborate with internal team members. Using this tool, you can create various channels that help you to manage work-related activities such as group discussions, project management; file, image, or video sharing; and updates related to specific projects. You can have both public and private channels.
 
-## Overall Workflow
-1. Each YM Bot is considered as a custom integration for the workplace (page). 
-2. The workplace custom integration interacts with the YM Bot through webhooks which can be configured from within the workplace settings.
-3. The YM Bot consumes workplace APIs to send messages across. 
+On Facebook Workplace, bots are represented as pages. A page is automatically created for a custom integration app. Only system administrators of a workplace community can create apps and generate access tokens in that community.
 
-## Creating Custom Integrations
-You will be needing a Super Administrator role.
-To create an app for Workplace, follow the steps below:
+In this article, you will learn:
 
-1. In the Admin Panel, open the Integrations tab.
-2. Click on the Create Custom Integration button.
+* [How to Setup Facebook workplace using developer portal](#setup-facebook-workplace-channel-using-developer-portal)
+* [How to connect Facebook workplace to your bot](#connect-facebook-workplace-to-your-bot)
+* [How to configure Webhook for custom integration](#configure-webhook-for-custom-integration)
+* [How to test your bot on Facebook workplace](#test-your-bot-on-facebook-workplace)
 
-![](https://cdn.yellowmessenger.com/SfBlkFwlUjXn1612757417910.png)
+## Setup Facebook workplace channel using developer portal
 
-3. Choose a relevant name and description for the app.
-4. Add a profile picture for the app. This will be used any time the app is visually represented, for instance if it makes a post to a group.
-5. Choose the required permissions for the app, based on the integration functionality you require.
-6. **Create Access Token** once you are landed to the Integration details page
+You need to register for a new system admin account in the [Facebook Workplace](https://yellowtest150.workplace.com/) Developers Portal (`https://<Domain name>.workplace.com/work/admin`) to create a Facebook Workplace channel. 
 
-![](https://cdn.yellowmessenger.com/3JEzEJQmYnte1612757515594.png)
+To setup Facebook workplace channel to your bot, configure the following:
 
-7. Copy and safely store the access token that is shown to you. You will need this when making API calls and configuring in the YM Portal.
+* [Create Custom Integration](#step-1-create-a-custom-integration)
+* [Get App ID, App Secret, and Access token](#step-2-get-app-id-app-secret-and-access-token)
+* [Provide Permissions to interact with your bot](#step-3-provide-permissions-to-interact-with-your-bot)
 
-## General List of permissions required
-**Message any member** - *This permission is used to send a message to any member in the workplace team.*
-**Real all messages** - *See messages sent to anyone in the workplace team.*
+### Step 1: Create a Custom Integration
 
-## Configuring workplace as a channel in the Portal
-1. In the portal, go to Configuration and then select Channels.
-2. Now select Facebook workplace form the list of channels, there paste the App ID from the workplace integration page, and the access token which was generated earlier, and click on connect.
+To create a Custom Integration, follow these steps:
 
-![](https://cdn.yellowmessenger.com/W14rzpSfqCPY1612757606237.png)
+1. Log in to your Facebook Workplace admin account.
 
-3. Now, post successful connection, copy the Webhook configuration, both callback URL and the verify token and paste under the “Page” tab of the “Configure Webhooks” section in the workplace integrations page. 
+    ![](https://hackmd.io/_uploads/rJjygybBn.png)
 
-![](https://cdn.yellowmessenger.com/v014KVvMnf9h1612757653829.png)
+2. On the *Home* page, click **Admin Panel**.
 
-Making sure that all the checkboxes are selected under the Page tab, click on save.
-Now the created workplace integration is successfully configured with the YM Bot as a channel, and all the messages can be exchanged between.
+   ![](https://hackmd.io/_uploads/r1BSoy-Sh.png)
+   
 
-### Documentations References
-Permission Reference : [Permission Documents](https://developers.facebook.com/docs/workplace/reference/permissions)
-For official documentation : [read more](https://developers.facebook.com/docs/workplace/integrations/custom-integrations/bots/)
+    ![](https://hackmd.io/_uploads/SJ3ToyZBn.png)
+
+4. Click **Create Custom Integration** to provide authorization to create a channel between Facebook Workplace and Yellow bot.
+
+   ![](https://hackmd.io/_uploads/SkqQ3y-B3.png)
+   
+5. Under *Create Custom Integration*, enter the following details:
+    i. Enter the **Name** of your integration.
+	ii. Enter a short **Description** of your integration.
+	iii. Click **Create**.
+   
+   <img src="https://hackmd.io/_uploads/HycbaybBn.png)" alt="drawing" width="60%"/>
+   
+   * You will see the integration details. You can update the integration details if required.
+
+     ![](https://hackmd.io/_uploads/rJzYflWrh.png)
+	 
+### Step 2: Get App ID, App Secret, and Access token
+
+To get the App ID, App Secret, and Access token from Facebook Workplace developer portal, follow these steps:
+
+1. On the Integration details page, click on the below highlighted icon and copy the **App ID** and **App Secret**.
+
+     <img src="https://hackmd.io/_uploads/rkShVWWS2.png)" alt="drawing" width="60%"/>
+
+2. Click **Create access token**.
+   
+   <img src="https://hackmd.io/_uploads/B1QvS-Wrh.png)" alt="drawing" width="60%"/>
+
+3. Select the **I Understand** box to agree to access token guidelines and click **Copy** to copy the access token, then click **Done**.
+   
+    <img src="https://hackmd.io/_uploads/S1_kHlWBn.png)" alt="drawing" width="60%"/>
+	
+:::note
+* It is recommended to store the token on your local device, as you cannot access it again.
+::: 
+
+### Step 3: Provide permissions to interact with your bot
+
+You need to select your preferred permissions for your users to interact with the bot in the workplace.
+
+To grant permissions, follow these steps:
+
+1. On the Integration details page, click **Permissions**.
+    
+   ![](https://hackmd.io/_uploads/rymHPlZB3.png)
+	
+2. Select **Message any member** permission to send a message to any member in the workplace and click **Save**.
+
+     ![](https://hackmd.io/_uploads/HJt6uxWBh.png)
+	 
+:::note
+* You can choose the necessary permissions based on your business use case.
+:::
+
+### Connect Facebook workplace to your bot
+
+#### Prerequisite
+
+* Copy the App ID, App Secret, and Access token from the developer portal to connect the Facebook workplace channel to your bot on the platform.
+
+To connect Facebook workplace channel to your bot on the platform, follow these steps:
+
+1. Log on to https://cloud.yellow.ai and navigate to **Overview > Channels > Messaging > Facebook workplace**.
+
+   ![](https://hackmd.io/_uploads/rkoZqgZHh.png)
+
+2. Enter the **App ID**, **App secret**, **Access token** that you have copied from the workplace developer portal admin account and click **Save**.
+
+   ![](https://hackmd.io/_uploads/HkA9cxWHn.png)
+   
+   * Your Facebook workplace channel will be successfully connected.
+
+3. Navigate to the **Overview** page, under the **Active channels** section, to verify that the Facebook workplace channel is successfully connected to your bot.
+
+    ![](https://hackmd.io/_uploads/B1AzsgWSn.png)
+	
+## Configure Webhook for custom integration
+
+After connecting your bot to the Facebook workplace channel, you need to subscribe to events under **Page** section of the *Configure Webhooks*.
+
+To setup a Webhook on the workplace, follow these steps:
+
+1. On the Integration details page, click **Webhooks**.
+
+    ![](https://hackmd.io/_uploads/rJLB3g-Bh.png)
+
+2. Click **Edit** icon corresponding to the Page.
+
+    ![](https://hackmd.io/_uploads/HydwnlZSh.png)
+
+3. By default, a callback URL is displayed after successfully connecting your bot to the Facebook workplace channel. Select **messages** and **messaging_postbacks** and click **Save**. 
+   
+   ![](https://hackmd.io/_uploads/rkOChgbB3.png)
+     
+   
+## Test your bot on Facebook workplace
+
+After connecting your bot to the Facebook workplace, you can test your bot. 
+     
+#### Prerequisites
+
+* Ensure that you have created the bot with intents and configured the flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot). 
+
+To test your bot on Facebook workplace, follow these steps:
+
+1. Go to your Facebook workplace developer account.
+2. On the Home page, select your bot.
+
+    ![](https://hackmd.io/_uploads/HyN2J-Zr3.png)
+	
+3. Start the conversation to test your bot based on the configured flow.
+
+    ![](https://hackmd.io/_uploads/By0rgZ-r3.png)
