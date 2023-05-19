@@ -1,6 +1,6 @@
 ---
-sidebar_label: User segment
-title: User segment
+sidebar_label: Manage user segments
+title: Manage user segments
 ---
 
 

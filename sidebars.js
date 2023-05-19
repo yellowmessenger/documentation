@@ -789,9 +789,10 @@ module.exports = {
 
            
           ],
+          
         },
-        
-        {
+        "platform_concepts/engagement/flows_campaign",
+ /*     {
           type: "category",
           label: "Workflow campaigns",
           link: {type: 'doc', id: 'platform_concepts/engagement/workflow-intro'},
@@ -801,8 +802,8 @@ module.exports = {
         "platform_concepts/engagement/event-triggered-campaign",
         "platform_concepts/engagement/workflow-report",
       ],
-    },
-    "platform_concepts/engagement/flows_campaign",
+    }, */
+    
         {
           type: "category",
           label: "Inbound campaigns",
