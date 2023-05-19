@@ -28,31 +28,29 @@ To setup Facebook workplace channel to your bot, configure the following:
 
 To create a Custom Integration, follow these steps:
 
-1. Log in to your Facebook Workplace admin account.
+1. Log in to your Facebook Workplace admin account and click **Integrations**.
 
-    ![](https://hackmd.io/_uploads/rJjygybBn.png)
+     ![](https://i.imgur.com/9PZIuk2.png)
 
 2. On the *Home* page, click **Admin Panel**.
 
-   ![](https://hackmd.io/_uploads/r1BSoy-Sh.png)
+     ![](https://i.imgur.com/lRfafEf.png)
    
 
-    ![](https://hackmd.io/_uploads/SJ3ToyZBn.png)
+3. Click **Create Custom Integration** to provide authorization to create a channel between Facebook Workplace and Yellow bot.
 
-4. Click **Create Custom Integration** to provide authorization to create a channel between Facebook Workplace and Yellow bot.
-
-   ![](https://hackmd.io/_uploads/SkqQ3y-B3.png)
+    ![](https://i.imgur.com/KYTghT9.png)
    
-5. Under *Create Custom Integration*, enter the following details:
+4. Under *Create Custom Integration*, enter the following details:
     i. Enter the **Name** of your integration.
 	ii. Enter a short **Description** of your integration.
 	iii. Click **Create**.
    
-   <img src="https://hackmd.io/_uploads/HycbaybBn.png)" alt="drawing" width="60%"/>
+   <img src="https://i.imgur.com/RZTjClZ.png)" alt="drawing" width="60%"/>
    
    * You will see the integration details. You can update the integration details if required.
 
-     ![](https://hackmd.io/_uploads/rJzYflWrh.png)
+     ![](https://i.imgur.com/kFgr8O6.png)
 	 
 ### Step 2: Get App ID, App Secret, and Access token
 
@@ -60,18 +58,18 @@ To get the App ID, App Secret, and Access token from Facebook Workplace develope
 
 1. On the Integration details page, click on the below highlighted icon and copy the **App ID** and **App Secret**.
 
-     <img src="https://hackmd.io/_uploads/rkShVWWS2.png)" alt="drawing" width="60%"/>
+     <img src="https://i.imgur.com/OOWRWQg.png)" alt="drawing" width="70%"/>
 
 2. Click **Create access token**.
    
-   <img src="https://hackmd.io/_uploads/B1QvS-Wrh.png)" alt="drawing" width="60%"/>
+   <img src="https://i.imgur.com/loumjRK.png)" alt="drawing" width="60%"/>
 
 3. Select the **I Understand** box to agree to access token guidelines and click **Copy** to copy the access token, then click **Done**.
    
-    <img src="https://hackmd.io/_uploads/S1_kHlWBn.png)" alt="drawing" width="60%"/>
+    <img src="https://i.imgur.com/xk61nnM.png)" alt="drawing" width="60%"/>
 	
 :::note
-* It is recommended to store the token on your local device, as you cannot access it again.
+*  Access tokens cannot be retrieved but new token can be generated.
 ::: 
 
 ### Step 3: Provide permissions to interact with your bot
@@ -82,15 +80,12 @@ To grant permissions, follow these steps:
 
 1. On the Integration details page, click **Permissions**.
     
-   ![](https://hackmd.io/_uploads/rymHPlZB3.png)
+   ![](https://i.imgur.com/gonyJfv.png)
 	
 2. Select **Message any member** permission to send a message to any member in the workplace and click **Save**.
 
-     ![](https://hackmd.io/_uploads/HJt6uxWBh.png)
+     ![](https://i.imgur.com/A7OSj2C.png)
 	 
-:::note
-* You can choose the necessary permissions based on your business use case.
-:::
 
 ### Connect Facebook workplace to your bot
 
@@ -102,17 +97,17 @@ To connect Facebook workplace channel to your bot on the platform, follow these 
 
 1. Log on to https://cloud.yellow.ai and navigate to **Overview > Channels > Messaging > Facebook workplace**.
 
-   ![](https://hackmd.io/_uploads/rkoZqgZHh.png)
+   ![](https://i.imgur.com/iR12Lsl.png)
 
 2. Enter the **App ID**, **App secret**, **Access token** that you have copied from the workplace developer portal admin account and click **Save**.
 
-   ![](https://hackmd.io/_uploads/HkA9cxWHn.png)
+   ![](https://i.imgur.com/8sOvFuS.png)
    
    * Your Facebook workplace channel will be successfully connected.
 
 3. Navigate to the **Overview** page, under the **Active channels** section, to verify that the Facebook workplace channel is successfully connected to your bot.
 
-    ![](https://hackmd.io/_uploads/B1AzsgWSn.png)
+    ![](https://i.imgur.com/P9rCPwE.png)
 	
 ## Configure Webhook for custom integration
 
@@ -122,15 +117,15 @@ To setup a Webhook on the workplace, follow these steps:
 
 1. On the Integration details page, click **Webhooks**.
 
-    ![](https://hackmd.io/_uploads/rJLB3g-Bh.png)
+    ![](https://i.imgur.com/2YYIUru.png)
 
 2. Click **Edit** icon corresponding to the Page.
 
-    ![](https://hackmd.io/_uploads/HydwnlZSh.png)
+    ![](https://i.imgur.com/k3Xkui6.png)
 
 3. By default, a callback URL is displayed after successfully connecting your bot to the Facebook workplace channel. Select **messages** and **messaging_postbacks** and click **Save**. 
    
-   ![](https://hackmd.io/_uploads/rkOChgbB3.png)
+   ![](https://i.imgur.com/CJ8Kl76.png)
      
    
 ## Test your bot on Facebook workplace
@@ -146,8 +141,8 @@ To test your bot on Facebook workplace, follow these steps:
 1. Go to your Facebook workplace developer account.
 2. On the Home page, select your bot.
 
-    ![](https://hackmd.io/_uploads/HyN2J-Zr3.png)
+    ![](https://i.imgur.com/WXAHifW.png)
 	
 3. Start the conversation to test your bot based on the configured flow.
 
-    ![](https://hackmd.io/_uploads/By0rgZ-r3.png)
+    ![](https://i.imgur.com/uKFbqE1.png)
