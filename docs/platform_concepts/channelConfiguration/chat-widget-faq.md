@@ -200,6 +200,17 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
   </div>
 </details>
 
+<details>
+<summary>How can we change the font color in the bot name and description?</summary>
+<div>
+ <br/>
+ <div>The bot name and description text color is set automatically based on the background color to ensure readability, with a contrast ratio of 4.5+. For example, white text on bright red background is hard to read, so text color is set to black. Slightly darker red shades can be tested to find a readable color combination.
+
+
+</div>
+  </div>
+</details>
+
 -----------
 
 ## PWA related FAQs
