@@ -377,7 +377,6 @@ module.exports = {
         },
         
         "platform_concepts/studio/tools",
-        "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/orchestrator", 
         "platform_concepts/studio/studio-faqs",
     
