@@ -74,8 +74,9 @@ To send a reminder before auto-closing an inactive email ticket, follow these st
 - **Send reminder** toggle can be enabled only if **Automatically close inactive email tickets** is enabled. 
 :::
 
+-----
 
-## 2. Use case
+## 2. Auto-close use case demonstration
 
 **Email ticket raised by**: Customer (James) to Globex Corporation           
 **Email inactivity settings**: If customer is inactive, send **Reminder** after 20 min and **Auto-close** after 30 min.     

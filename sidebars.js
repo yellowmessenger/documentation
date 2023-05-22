@@ -32,79 +32,6 @@ module.exports = {
     "cookbooks/migration-guide",
  
   
-// Voice docs 
-{
-  type: "category",
-  label: "AI Voicebot builder",
-  collapsed: true,
-  items: [
-        "cookbooks/voice-as-channel/voiceoverview",
-        "cookbooks/voice-as-channel/voicearchitecture",
-        "cookbooks/voice-as-channel/components", 
-
-
-// Reporting  
-{
-  type: "category",
-  label: "Analytics and reports",
-  //link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
-  collapsed: true,
-  items: [
-          "cookbooks/voice-as-channel/reporting/intro",
-          "cookbooks/voice-as-channel/reporting/dashboard",
-          "cookbooks/voice-as-channel/reporting/cdr",
-          "cookbooks/voice-as-channel/reporting/convdata",
-          "cookbooks/voice-as-channel/reporting/conv_cdr",
-          "cookbooks/voice-as-channel/reporting/variables",
-      ],
-    },
-    "cookbooks/voice-as-channel/transfertoagent",
-    "cookbooks/voice-as-channel/callmgmt",
-
-  // ---- old docs 
-
-
-
-// building  
-  {
-    type: "category",
-    label: "How to build a voice bot",
-    link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
-    collapsed: true,
-    items: [
-      "cookbooks/voice-as-channel/build/convdesiVB",
-      "cookbooks/voice-as-channel/build/usingvoiceinput",
-      "cookbooks/voice-as-channel/build/usingmp", 
-        ],
-      },
-
-    "cookbooks/voice-as-channel/conversationaldelays",
-
-// Voice Capabilities (usecases)
- {
-    type: "category",
-    label: "Capabilities of a voice bot",
-    collapsed: true,
-    items: [
-      "cookbooks/voice-as-channel/usecases/interrupthandling",
-      "cookbooks/voice-as-channel/usecases/languagedetection",
-      "cookbooks/voice-as-channel/usecases/dtmf",
-      "cookbooks/voice-as-channel/usecases/waitmusic",
-      "cookbooks/voice-as-channel/usecases/callrecording",
-    /*   
-      "cookbooks/voice-as-channel/usecases/tts",
-      "cookbooks/voice-as-channel/usecases/stt",
-      "cookbooks/voice-as-channel/usecases/contexttransfertoagents",
-      "cookbooks/voice-as-channel/usecases/transfercalltoagents",
-      */
-            ],
-  }, 
-// FAQs 
-"cookbooks/voice-as-channel/voicefaqs",
-  ],
-}, 
-
-//end of voice docs   
 
 
   // Studio  
@@ -384,7 +311,80 @@ module.exports = {
     },
   
 
+  
+// Voice docs 
+{
+  type: "category",
+  label: "AI Voice bot builder",
+  collapsed: true,
+  items: [
+        "cookbooks/voice-as-channel/voiceoverview",
+        "cookbooks/voice-as-channel/voicearchitecture",
+        "cookbooks/voice-as-channel/components", 
 
+
+// Reporting  
+{
+  type: "category",
+  label: "Analytics and reports",
+  //link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
+  collapsed: true,
+  items: [
+          "cookbooks/voice-as-channel/reporting/intro",
+          "cookbooks/voice-as-channel/reporting/dashboard",
+          "cookbooks/voice-as-channel/reporting/cdr",
+          "cookbooks/voice-as-channel/reporting/convdata",
+          "cookbooks/voice-as-channel/reporting/conv_cdr",
+          "cookbooks/voice-as-channel/reporting/variables",
+      ],
+    },
+    "cookbooks/voice-as-channel/transfertoagent",
+    "cookbooks/voice-as-channel/callmgmt",
+
+  // ---- old docs 
+
+
+
+// building  
+  {
+    type: "category",
+    label: "How to build a voice bot",
+    link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
+    collapsed: true,
+    items: [
+      "cookbooks/voice-as-channel/build/convdesiVB",
+      "cookbooks/voice-as-channel/build/usingvoiceinput",
+      "cookbooks/voice-as-channel/build/usingmp", 
+        ],
+      },
+
+    "cookbooks/voice-as-channel/conversationaldelays",
+
+// Voice Capabilities (usecases)
+ {
+    type: "category",
+    label: "Capabilities of a voice bot",
+    collapsed: true,
+    items: [
+      "cookbooks/voice-as-channel/usecases/interrupthandling",
+      "cookbooks/voice-as-channel/usecases/languagedetection",
+      "cookbooks/voice-as-channel/usecases/dtmf",
+      "cookbooks/voice-as-channel/usecases/waitmusic",
+      "cookbooks/voice-as-channel/usecases/callrecording",
+    /*   
+      "cookbooks/voice-as-channel/usecases/tts",
+      "cookbooks/voice-as-channel/usecases/stt",
+      "cookbooks/voice-as-channel/usecases/contexttransfertoagents",
+      "cookbooks/voice-as-channel/usecases/transfercalltoagents",
+      */
+            ],
+  }, 
+// FAQs 
+"cookbooks/voice-as-channel/voicefaqs",
+  ],
+}, 
+
+//end of voice docs 
 
 // Inbox Section 
 

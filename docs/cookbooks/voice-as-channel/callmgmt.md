@@ -1,5 +1,5 @@
 ---
-title : Advanced call management options in Yellow.ai (call disconnection and call recording)
+title : Call disconnection and call recording
 sidebar_label : Call management options
 ---
 

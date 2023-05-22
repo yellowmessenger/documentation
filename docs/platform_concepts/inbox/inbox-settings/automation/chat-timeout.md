@@ -10,12 +10,13 @@ When a chat is assigned to an agent but neither the agent nor the customer has r
 Inbox admins can enable the inactivity trigger setting to identify these inactive chats.    
 This can then be captured as an event called ```ticket-inactive``` and further actions can be taken based on this event.
 
-**Use case**    
+#### Use case of chat inactivity trigger
+
 The inactivity trigger setting can be useful in cases where customers do not respond to a chat, as it helps to prevent wasted time spent on manual follow-ups by agents. This can lead to increased productivity for agents.
 
 --------
 
-## 1. Configure event to identify chat inactivity 
+## Configure event to identify chat inactivity 
 
 
 **Open inactivity trigger settings**
@@ -47,7 +48,7 @@ The following are some key features of the chat timeouts which can be customized
 - The default value is applicable to all the channels. The period set in it will be considered for Auto Ticket closure (when it is enabled).
     ![](https://i.imgur.com/3iHR8En.png)
 
-#### Add/Delete inactivity triggers for different channels
+### Add/Delete inactivity triggers for different channels
 
 - Click **+Add channel** and add different channels like WhatsApp, Slack etc for which the above settings can be applied.
     ![](https://i.imgur.com/fGl18Fz.png)
@@ -58,7 +59,7 @@ The following are some key features of the chat timeouts which can be customized
 
 ----------
 
-### 1.1 Send a message to an inactive bot user
+## Send a message to an inactive bot user
 
 **Use case**    
 The bot asks the user if he is still on the chat if the user has not responded for more than one minute. 
