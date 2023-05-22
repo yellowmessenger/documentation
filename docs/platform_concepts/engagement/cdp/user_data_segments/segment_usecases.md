@@ -6,12 +6,12 @@ title: Segment your user base according to different use cases
 The segments you create should align with your specific use case. Here are some ideas to help you get started.
 
 
-## 1. Campaign specific use cases
+## Campaign specific use cases
 You may frequently need to target users on specific dates or after a certain number of days from a particular date. In the following example, we will demonstrate how to create a date-based segment to accomplish such use cases.
 
 
 
-### 1.1 Drip campaign
+### Drip campaign
 
 #### Usecase
 - Reaching out to employees who have completed seven days since date of joining.
@@ -29,9 +29,10 @@ To create this type of segment, you can use properties that are of the Date or D
 - in the last
 - in the next
 
-### 1.2 Birthday Greetings
+### Birthday greetings
 
 #### Usecase
+
 - Sending out birthday greetings
 
 <center><img src="https://i.imgur.com/7lFf46V.png" width="70%"/></center>
@@ -50,20 +51,23 @@ Therefore, this segment will target all users with a date of June 10, irrespecti
 
 
 
-### 1.3 Exclude users who have opted out from campaigns
+### Exclude users who opted out from campaigns
 
-You might often want to exclude users who have opted out from all your campaigns. Doing this is simple:
+You might often want to exclude users who have opted out from all your campaigns. 
 
-1. Ensure that your opt-in data is up to date. This can be regularly updated through [conversational data](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder), by uploading fresh data through [CSV](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users), or by using [REST APIs](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api) to sync with your CRM.
-2. Include a condition in your [segment](/docs/platform_concepts/engagement/cdp/user_data_segments/segment_usecases) where, “Opt-in is true”. This segment will exclude all users for whom the opt-in is either false or unknown.
+Exclude users who have opted out from all your campaigns. To achieve this:
+
+   * Ensure that your opt-in data is up to date. This can be regularly updated through  [conversational data](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder), [CSV imports](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users), [REST APIs](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api)  to sync with your CRM.
+   * Next, include a condition in your segment [segment](/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview)  where, "Opt-in is true”. This segment will exclude all users for whom the opt-in status is false or unknown.
+
 
    <img src="https://i.imgur.com/xr4X98S.png" width="60%"/>
 
 
 
-## 2. Highly targeted segments
+## Highly targeted segments
 
-### 2.1 Segments with multiple conditions (and/or)
+### Segments with multiple conditions (and/or)
 
 Segments can be created with multiple condition sets, allowing for more complex filtering based on multiple conditions. Each condition set consists of one or more individual conditions.
 
@@ -101,36 +105,41 @@ For a user to be a part of a segment, he must meet all the AND conditions of a c
 :::
 
 
-### 2.2 Customers nearing subscription expiry
+### Create segment specific workflows
 
-These customers are nearing their subscription expiry date. To remind them to renew their subscription, you can create a segment with filters such as "Subscription End Date will be exactly 6 days later." This segment will include customers whose subscription is about to expire within the next 6 days, allowing you to send them targeted reminders.
+In bot conversations, you may want to display specific information to different sets of users. For example, when discussing pricing plans, you might want to show different plans based on the user's country. 
+
+
+You can use the [Condition Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-if--condition) to achieve this.
+
+<center><img src="https://i.imgur.com/h75l167.png" width="70%"/></center>
+
+
+### Customers nearing subscription expiry
+
+ You can send personalized reminders customers to renew their subscriptions. For this, you can create a segment based on the filter "Subscription end date will be exactly 6 days later." This segment will include customers whose subscription expiration date is approaching within the next 6 days.
 
 
 
    ![](https://i.imgur.com/surY1EB.png)
 
-### 2.3 Employees in a certain department 
+### Employees in a certain department 
 
-You might want to send out communication related to training activity to junior employees from a certain department. Your filters here might be: `Department is "Product" or "Engineering" AND Title **includes** "Junior" or "Associate"`
+
+Send training-related communications to junior employees in specific departments. Your filters for this segment might be: **Department is "Product" or "Engineering" AND Title includes "Junior" or "Associate"**.
 
    ![](https://i.imgur.com/tC3f2Qu.png)
 
-### 2.4 Visitors who have opted in to receiving updates on email 
-You might want to create a segment of users whom you can regularly share content with via email. This segment will consist of users who have opted in to receive updates and newsletters. To set up this segment, you can use the filter "Email Subscription is true." By targeting this segment, you can ensure that your email communications reach the users who are interested in receiving your content.
+### Visitors who have opted in to receiving updates on email 
 
-
-
-
-
+Create a segment of users who have opted to receive regular product updates via email. This segment will include users who have subscribed to updates and newsletters. To set up this segment, **use the filter "Email Subscription is true"**.
 
 
    ![](https://i.imgur.com/45FBZpB.png)
 
-### 2.5 Potential leads 
-You can create a segment of users who have visited your pricing page more than twice. This segment allows you to specifically target users who have shown a significant interest in your pricing information. By doing so, you can give them a gentle reminder and provide incentives such as special offers or the opportunity to schedule a demo with your sales team. To set up this segment, you can use the filter "Pricing Page visited more than twice."
+### Potential leads
 
-
-
+Create a segment of users who have visited your pricing page more than twice. This will allow you to reach out to them with offers or set up demos with your sales team.
 
    ![](https://i.imgur.com/9NYYn0L.png)
 
