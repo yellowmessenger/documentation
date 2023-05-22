@@ -362,8 +362,6 @@ module.exports = {
           ],
         },
 
-        "cookbooks/studio/regressiontest",
-
         {
           type: "category",
           label: "Test and publish bot",
@@ -371,6 +369,7 @@ module.exports = {
           items: [
            // "platform_concepts/studio/test-and-publish-bot/bot-training",
             "platform_concepts/studio/test-and-publish-bot/debug-flow",
+            "cookbooks/studio/regressiontest",
             "platform_concepts/studio/test-and-publish-bot/modes",
           
           ],
