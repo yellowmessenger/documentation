@@ -80,7 +80,7 @@ This integration lets you connect with live agents on the **Freshchat** platform
 The following table contains the details of all the fields in the **Raise ticket** node.
 
 <img src="https://i.imgur.com/krPvBQm.png" alt="drawing" width="60%"/>
-<img src="https://i.imgur.com/Tx0duiY.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/A3VsJEW.png" alt="drawing" width="60%"/>
 
 
 | Field name                | Sample value            | Data type | Description                                                                                      |
@@ -94,7 +94,7 @@ The following table contains the details of all the fields in the **Raise ticket
 | Channel name              | Chat with US            | String    | Freshchat topic to which the ticket needs to be assigned.                                       |
 | User ID                   | efgeye-fefefef-14343    | String    | Freshchat userId of the user, this is passed if the previous ticket needs to be re-opened.      |
 | Unique Identifier         | ggyugu-2343h-34343      | String    | A unique identifier that will reflect as referenceId in the freshchat agent portal if passed        |
-
+| Properties |  [{"name": "name of the key", "value": "value"}] | Array | Custom properties that can be passed while creating a ticket.|
 
 **Sample success response:**
 
