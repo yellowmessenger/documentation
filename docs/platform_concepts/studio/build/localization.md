@@ -241,7 +241,7 @@ To enable the translation feature and allow nodes to switch to the required lang
 
 ![](https://i.imgur.com/Bzlt66X.png)
 
-2. Select the [Key](https://) that is already configured for that text translation (or, [add new translations](https://) as you create each node).
+2. Select the [Key](#2-add-languages-to-your-bot) that is already configured for that text translation (or, [add new translations](#31-set-language-translation-for-your-bot) as you create each node).
 
 ![](https://i.imgur.com/wmSwZYu.png)
 
