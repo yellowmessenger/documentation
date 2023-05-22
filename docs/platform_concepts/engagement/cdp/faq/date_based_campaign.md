@@ -22,7 +22,7 @@ The operator that can be selected are:
 - in the last
 - in the next
 
-### Birthday Greetings
+### Birthday greetings
 
 Usecase:
 - *Sending out Birthday Greetings!*
