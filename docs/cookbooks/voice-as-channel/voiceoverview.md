@@ -89,3 +89,6 @@ Yellow.ai offers a complete voice bot solution that integrates speech recognitio
 6. **Integration module**: Along with leading speech recognition and speech synthesis technologies, businesses can integrate their Voice Bots with other external services like CRM. These integrations can then be utilized in the bot flows, making it possible to create a more personalized experience for customers.
 
 
+<figure class="video_container">
+  <iframe src="/voice/demo.mp3" frameborder="0" allowfullscreen="true"> </iframe>
+</figure>
