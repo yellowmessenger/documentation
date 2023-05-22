@@ -54,7 +54,7 @@ When the voice bot repeatedly fails to understand the user's input or when the c
 1. Identify the voice input node where the agent transfer should occur. For example, if the voice input node (e.g., phone number) repeatedly triggers fallback scenarios, the bot can automatically transfer the call to a live agent.
 2. Connect the node's **fallback for failure** and **fallback for no response** to the agent transfer.
 3. Establish connection through another voice input or prompt node: If you choose the voice input node, you can simply enter a message in the **Bot asks** field, which will be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#fwd).
-    ![](https://hackmd.io/_uploads/SkaAUVSrh.png)
+    ![](https://hackmd.io/_uploads/rkFwtnurn.png)
 
 (or)
 
@@ -64,6 +64,7 @@ When the voice bot repeatedly fails to understand the user's input or when the c
     ![](https://hackmd.io/_uploads/HyfcONrS3.png)
     **Chat with agent flow**:
     ![](https://hackmd.io/_uploads/B16_KVHr2.png)
+    ![](https://hackmd.io/_uploads/HJ7N5hdH2.png)
 
 4. When a fallback is encountered, the call will automatically be transferred to a live agent.
 
@@ -82,7 +83,7 @@ you can set specific intents or keywords that indicate the customer's desire to 
     ![](https://hackmd.io/_uploads/r19ziNHHh.png)
 
 3. In the flow design, add nodes as needed and end the flow with a prompt node. Enter a message in the **Bot asks** field, which will be played before the call transfer. Click **make prompts smarter** icon and configure the [forwarding details](#fwd).
-    ![](https://hackmd.io/_uploads/rypeRVBHh.png)
+    ![](https://hackmd.io/_uploads/r1hA52drh.png)
 
 ----
 
