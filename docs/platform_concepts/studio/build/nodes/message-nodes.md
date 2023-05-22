@@ -61,7 +61,7 @@ Display any image (less than 10MB) with this node.
 
 ![](https://i.imgur.com/NuHZKEb.jpg)
 
-**Dynamice format**
+**Dynamic format**
 
 ```
 const imageVariable = [{

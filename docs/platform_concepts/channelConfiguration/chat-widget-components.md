@@ -101,7 +101,13 @@ You can download video, image, and file sent by the bot or agent.
 |---------|-------|
 | This component allows you to refresh a chatbot or  to trigger a conversational flow. | <img src="https://i.imgur.com/Tz2XO46.png" alt="drawing" width="60%"/>	
 
-### 1.10 Callout banner
+### 1.10 Upload file
+
+|     |  |
+|---------|-------|
+| This component allows you to upload files in supported formats such as JPG, PNG, MP4, MOV, and HEVC. You can either attach a file or skip it. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#36-file-prompt">here</a> to implement Location using a node. | <img src="https://hackmd.io/_uploads/BkhgtvUV3.png" alt="drawing" width="90%"/>	
+
+### 1.11 Callout banner
 
 |     |  |
 |---------|-------|
@@ -112,7 +118,6 @@ You can download video, image, and file sent by the bot or agent.
 This type of message does not require a response from your bot user by clicking the buttons, menus, or custom actions. A Chabot uses this type of message to generate automated response with all the details related to your queries.  	
 	
 Following are the types of non-interactive message components:
-
 	
 Components | Description
 ------|-------

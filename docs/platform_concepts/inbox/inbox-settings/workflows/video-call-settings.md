@@ -1,5 +1,5 @@
 ---
-title: Video Call Settings
+title: Video call settings
 sidebar_label : Video call settings
 ---
 

@@ -320,6 +320,27 @@ sidebar_label: Channels FAQs
    </div>
 </details>
 
+<details>
+ <summary>How can we share a location on Facebook Messenger?</summary>
+ <div>
+  <br/>
+  <div>It is not possible to directly share a location in Facebook Messenger. However, there is an alternative approach you can take:<br/>• <b>Ask for City/Zip Code</b>: Instead of sharing the location directly, you can prompt the user to provide their city, zip code, or any other relevant location information.<br/>• <b>Use Geolocation API</b>: Once the user provides the location information, you can use the Geolocation API to retrieve the coordinates or specific details about that location.</div>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to get the user’s mobile number in the WhatsApp channel?</summary>
+ 
+ 
+ Yes, to get the mobile number when a user is connected to the bot, you need to use a system variable called sender as shown below. 
+
+
+   `{{{sender}}}`
+
+
+
+</details>
+
 
 ### Google Business Messaging (GBM) chatbot related FAQs
 

@@ -29,6 +29,7 @@ module.exports = {
   cookbooks: [
 
     "cookbooks/getting_started", 
+    "cookbooks/migration-guide",
  
   
 // Voice docs 
@@ -38,6 +39,7 @@ module.exports = {
   collapsed: true,
   items: [
         "cookbooks/voice-as-channel/voiceoverview",
+        "cookbooks/voice-as-channel/voicearchitecture",
         "cookbooks/voice-as-channel/components", 
 
 
@@ -53,6 +55,7 @@ module.exports = {
           "cookbooks/voice-as-channel/reporting/cdr",
           "cookbooks/voice-as-channel/reporting/convdata",
           "cookbooks/voice-as-channel/reporting/conv_cdr",
+          "cookbooks/voice-as-channel/reporting/variables",
       ],
     },
     "cookbooks/voice-as-channel/transfertoagent",
@@ -61,7 +64,6 @@ module.exports = {
   // ---- old docs 
 
 
-    "cookbooks/voice-as-channel/voicearchitecture",
 
 // building  
   {
@@ -375,7 +377,6 @@ module.exports = {
         },
         
         "platform_concepts/studio/tools",
-        "platform_concepts/studio/languages-supported",
         "platform_concepts/studio/orchestrator", 
         "platform_concepts/studio/studio-faqs",
     
@@ -964,6 +965,8 @@ module.exports = {
             "platform_concepts/channelConfiguration/line",
             "platform_concepts/channelConfiguration/zalo",
             "platform_concepts/channelConfiguration/viber",
+            "platform_concepts/channelConfiguration/abc",
+            "platform_concepts/channelConfiguration/fb-workplace",
             
           ]
         },
@@ -1016,6 +1019,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/chat-widget-notification",
             "platform_concepts/channelConfiguration/chat-separator",
             "platform_concepts/channelConfiguration/domain-whitelisting",
+            "platform_concepts/channelConfiguration/chat-widget-localization",
             "platform_concepts/channelConfiguration/pwa",
             "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/chat-widget-errors",
@@ -1025,7 +1029,6 @@ module.exports = {
           ]
         },
         "platform_concepts/channelConfiguration/fb-lead-ads",
-        "platform_concepts/channelConfiguration/fb-workplace",
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/sunshine",
         "platform_concepts/channelConfiguration/channels-faqs",

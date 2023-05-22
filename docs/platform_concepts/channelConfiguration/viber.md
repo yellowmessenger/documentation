@@ -9,10 +9,10 @@ Viber integration helps businesses to provide customer support to their clients 
 
 In this article, you will learn:
 
-* [How to create a Viber account](#account)
-* [How to create a Bot Account in Viber](#account)
-* [How to connect Viber to your bot](#connect)
-* [How to test your bot on Viber](#test)
+* [How to create a Viber account](#create-a-viber-account)
+* [How to create a Bot Account in Viber](#create-a-bot-account-in-viber)
+* [How to connect Viber to your bot](#connect-viber-to-your-bot)
+* [How to test your bot on Viber](#test-your-bot-on-viber)
 
 ## Create a Viber account
 

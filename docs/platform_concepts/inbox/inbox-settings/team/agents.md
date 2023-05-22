@@ -11,12 +11,10 @@ Further, you can classify the type of requests (live chat/email ticket) that the
 In this article, you will learn:
 
 1. [To configure agent settings](#1)
-    - Modify agent properties 
-    - Modify concurrency in bulk
 2. [To configure agent UI settings](#2)
 
 
-## <a name="1"></a> 1. Agent settings 
+## <a name="1"></a> 1. View agent details 
 
 Follow the given steps to configure agent settings:
 
@@ -35,7 +33,7 @@ Follow the given steps to configure agent settings:
 
 
 
-### 1.1 Edit/Modify existing agent properties
+### Modify existing agent properties
 
 ![](https://i.imgur.com/kD3hLBp.png)
 
@@ -48,7 +46,7 @@ Follow the given steps to configure agent settings:
     
     <img src="https://i.imgur.com/D3HIVip.png" alt="drawing" width="50%"/>
 
-    -  **Concurrency**: You can define the **Concurrency** for live chat and email tickets according to the business workflow. The maximum standard value for live chat concurrency is 6-10 and email concurrency is 20.
+    - **Concurrency**: You can define the **Concurrency** for live chat and email tickets according to the business workflow. The maximum standard value for live chat concurrency is 6-10 and email concurrency is 20.
  
     :::info
     **Concurrency** is the maximum number of tickets that an agent can handle at any point in time. For example, if concurrency is set to 20, an agent will not be able to handle more than 20 tickets at once.
@@ -62,7 +60,7 @@ Follow the given steps to configure agent settings:
     - **Available for call**: This determines the ability of the agents to engage in [video calls](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/videocall). This checkbox must be selected so that the live agent can take video calls or request a video call with the customers.  
 
 
-### 1.2 Edit/ Modify concurrency in bulk
+### Modify concurrency for agents in bulk
 
 To modify the concurrency of multiple agents at once:
 1. Select the required agent names
@@ -72,9 +70,9 @@ To modify the concurrency of multiple agents at once:
 
 ![](https://i.imgur.com/fZUJLbm.png)
 
- ----
+----
 
-## <a name="2"></a> 2. Configure agent UI settings
+## <a name="2"></a> 2. Configure chat screen UI for agents 
 
 Admin can provide (enable/disable) special permissions for agents interface by clicking the **+Configure agent UI** button.
 
@@ -85,11 +83,14 @@ On the left, there is a list of all the agent names and on the right, there is a
 
 ![](https://i.imgur.com/iqgjng1.jpg)
 
+### Add agent permissions 
+
 By default, all these fields are checked (available to the agents). If you want to disable any of these, you can de-select the box next to the required field. The unchecked fields next to the agent names will not be available for the agent. 
 
 
 | Field | Description |
 | -------- | -------- |
+|Add only internal notes & block reply| If this field is de-selected, the agents can reply to the customer on the chat screen and also add internal notes for the collaborators/agents/admins. When this field is selected, agents can only add internal notes to the assigned live chat and cannot send a textual reply to the customer. <br/> **Use-case**: During escalations, special agents(supervisors/level 2 agents) would want to have the ability to add internal notes to a customer chat, so that the agent can see  these updates as internal notes and answer the query.|
 |Ticket report download visibility     |   |
 |Enable Attachments|If this field is de-selected, it will not allow agents to send any unwanted attachments that you as a company strives to support|
 |Public chat URL visibility| Every live chat has a chat transcript associated with it, if you disable this for a particular agent, they will not be able to access it or share it with their internal colleagues (Copy icon will not be available on the chat screen).|
@@ -102,12 +103,19 @@ By default, all these fields are checked (available to the agents). If you want 
 |Show WhatsApp phone number of the user|Details of WhatsApp bots such as phone numbers are tracked. If this field is disabled, the WhatsApp number of the bot user will not be visible to the agent.  |
 |Allow to edit contact| Customer details passed through raise ticket nodes can be modified on the chat screen. If this field is de-selected, agents cannot edit/update bot user contacts. |
 
-**Bulk update**
 
-- UI settings can be updated for multiple agents by selecting the respective agents and clicking **Update**. 
-    > Previously configured data for the agents will be over-ridden by the new values. 
+### Bulk update agent permissions
 
-![](https://i.imgur.com/f4z2xgy.jpg)
+UI settings on the chat screen/agent permissions can be updated for multiple agents.
+
+- Use search/select all/manually select the respective agents.
+- Select/de-select permissions and click **Update**. 
+
+:::note
+Previously configured data for the agents will be over-ridden by the new values. 
+:::
+
+![](https://hackmd.io/_uploads/HyaCPu7H3.png)
 
 
 
