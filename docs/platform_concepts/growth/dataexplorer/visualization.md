@@ -44,6 +44,6 @@ Before creating visualizations, you must **summarize** the data in tables. After
 ------
 ## 3. Save queries as reports
 
-These visualized queries can be used for future references and they will be available for quick use on the data explorer page(under **Saved reports**), click the **Save query** option available at the bottom of the page. 
+These visualized queries can be used for future references and they will be available for quick use on the data explorer page(under **Saved reports**), click the **Save query** option available at the top of the page. 
 
-![](https://i.imgur.com/gpfmER3.png)
+![](https://hackmd.io/_uploads/HyqYX15r2.png)
