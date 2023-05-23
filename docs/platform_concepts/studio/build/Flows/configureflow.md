@@ -1,11 +1,11 @@
 ---
-title: Configure start trigger 
+title: Configure flow trigger 
 sidebar_label: Configure flow triggers
 ---
 
 In order for a flow to operate, it must be initiated by specific triggers. 
 
-Let's say you have a website bot that facilitates food orders for your customers. To initiate the order process, you would have designed a flow that requires specific triggers. These triggers can be in the form of intents such as 'I want to order food' or 'Food order'. By training your bot on these intents and their utterances, whenever a customer types a matching intent or similar phrases, it automatically activates the food order flow.
+To initiate a specific flow, you need triggers. One popular trigger option is using predefined intents, such as "I want to order food" or "Food order". By training your bot to recognise these intents and the corresponding phrases, whenever a user enters a matching intent or similar phrases, it automatically triggers the corresponding flow.
 
 ## <a name="starttrigger"></a> 1. Configure start trigger
 
@@ -88,28 +88,43 @@ Let's say you have a chatbot for a customer support service. The start trigger f
 In this scenario, if any of the events occur or if a customer types one of the specified intents or provides relevant entities, the bot will trigger the flow and assist the customer accordingly.
 
 ------ 
-## <a name="triggerflow"></a> 3. Test a specific flow (Trigger bot flow)
+## <a name="triggerflow"></a> 3. Test a specific flow
 
-When you are configuring a bot, there could be several complex flows in the bot. You need to always ensure whether the outcome of a flow is as desired before moving on to the next flow and it’s tedious to run the entire bot every time you make some change in a flow.
-
-You just need to add a parameter to the URL or widget code to preview changes made in a particular flow of your bot. You no longer have to run through the entire bot flow every time you make some changes to a flow.
+When configuring a bot with multiple flows, it's important to ensure desired outcomes before moving to the next flow. However, running the entire bot for every change can be time-consuming. To simplify the process, you can test each flow separately using URL, code or the option available on the Studio overview page. This allows you to focus on specific flows without executing the entire bot, saving time and effort during configuration.
 
 To preview a specific bot flow there are two methods, discussed in the further sections:
-1. [Trigger bot flow via. URL](#21-trigger-bot-flow-via-url)
-2. [Trigger bot flow via. Code](#22-trigger-bot-flow-via-code)
+1. [Test bot flow on the Studio overview page](#31-test-bot-flow-via-studio-overview-page)
+2. [Test bot flow via. URL](#32-test-bot-flow-via-url)
+3. [Test bot flow via. Code](#33-test-bot-flow-via-code)
 
-### 3.1 Trigger bot flow via. URL
+### 3.1 Test bot flow via Studio overview page
+
+To preview a bot on the Studio overview page,
+
+1. Go to **Studio**.
+2. Click the **Preview button** next to the desired flow. 
+3. The flow will get triggered in the chat box on the right end.
+
+![](https://i.imgur.com/ayZl1tb.png)
+
+You can also go to the respective flow and click **Preview current flow**.
+
+![](https://i.imgur.com/BP7lckE.png)
+
+### 3.2 Test bot flow via. URL
 
 To preview a bot via URL, follow the given steps:
 
-1. Open the bot and navigate to **Studio** > **Flows**.
-2. Click the Flows drop-down and select the flow that you want to preview.
+1. Go to **Studio** > **Flows**.
+2. Click the **Flows** drop-down and select the flow that you want to preview.
 3. Copy the path of the flow that you see in the URL (after `flow/`)
 
 ![](https://i.imgur.com/K9naz4Z.jpg)
 
+4. Click **Preview bot**, you will see the entire bot flow in a new tab.
 
-4. Click Preview bot. You will see the entire bot flow in a new tab.
+![](https://i.imgur.com/jZCPVVI.png)
+
 5. In the address bar, append `?ym.triggerJourney={flow path}`.
 
 Example:
@@ -131,7 +146,7 @@ It appends to the URL and you can see it when you select a specific flow.
 
    ![](https://i.imgur.com/e8MjGPV.png)
 
-### 3.2 Trigger bot flow via. code
+### 3.3 Test bot flow via. code
 
 To preview a bot via code (embedded on your website), follow the steps below:
 
