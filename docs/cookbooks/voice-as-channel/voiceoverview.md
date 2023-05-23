@@ -90,5 +90,5 @@ Yellow.ai offers a complete voice bot solution that integrates speech recognitio
 
 
 <figure class="video_container">
-  <iframe src="/voice/demo.mp3" frameborder="0" allowfullscreen="true"> </iframe>
+  <video src="/voice/demo.mp3" controls frameborder="0" allowfullscreen="true"> </video>
 </figure>
