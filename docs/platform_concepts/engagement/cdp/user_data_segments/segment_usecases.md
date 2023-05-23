@@ -63,6 +63,20 @@ Exclude users who have opted out from all your campaigns. To achieve this:
 
    <img src="https://i.imgur.com/xr4X98S.png" width="60%"/>
 
+### Send discount vouchers to new users
+
+
+The `createdAt` date can be useful for understanding how long users have been with your product or service. For example, you could segment users into the following groups:
+
+* **New users**: Users who have been with your product or service for less than 30 days.
+* **Active users**: Users who have been with your product or service for more than 30 days and have logged in in the past 30 days.
+* **Inactive users**: Users who have been with your product or service for more than 30 days but have not logged in in the past 30 days.
+
+Create a segment with users who have been with your product or service for less than 30 days.
+
+
+<center><img src="/img/cdp/createdAt.png" width="60%"/></center>
+
 
 
 ## Highly targeted segments
