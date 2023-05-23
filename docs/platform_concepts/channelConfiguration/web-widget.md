@@ -51,7 +51,7 @@ Font style | Choose the default font for the bot.
 Font size | Set the font size of the widget on the website - Small, Medium, or Large.
 Widget size | Set your preferred widget size - Small, Medium, or Large. 
 | Position | Set the position of the widget on the website - Bottom Left and Bottom Right. |
-| Initial state for desktop | Set the initial display mode of the widget on websites -  Half opened, Minimised, or Conversational layout. |
+| Initial state for desktop | Set the initial display mode of the widget on websites -  Half opened, Minimised, or Conversational layover. |
 
 <img src="https://i.imgur.com/I8XaGOh.png" alt="drawing" width="60%"/>
 
