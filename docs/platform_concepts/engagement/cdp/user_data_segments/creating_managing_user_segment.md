@@ -1,20 +1,23 @@
 ---
-sidebar_label: User segment
-title: User segment
+sidebar_label: Manage user segments
+title: Manage user segments
 ---
 
 
 
 ## 1. Create user segment
 
+
+### Segment users based on specific condition
+
 To create a user segment, follow these steps:
 
 1. Navigate to **Engage** > **User 360**.
 2. Click **Add Segment**.
-   <img src="https://i.imgur.com/WmouIvi.png" width="50%"/>
+   <img src="https://i.imgur.com/WmouIvi.png" width="40%"/>
 3.  In **Segment name**, enter a unique name for the segment.
 
- <img src="https://i.imgur.com/6O2hgru.png" width="60%"/>
+ <img src="https://i.imgur.com/6O2hgru.png" width="70%"/>
 
 4. In **Conditions**, define the condition basis which you want to create the group. A condition consists of the following pattern.
  {property} {operator} {value}
@@ -22,18 +25,30 @@ To create a user segment, follow these steps:
 Option | Description
 --------- | --------
 property | The attribute by which you want to create the segment. You can choose from a list of user properties such as first name, last name, city, language, and so on.
-operator | The condition operator that you want to use - is known, is not known, is, isn't, contains, does not contain.
-value | Value of the expression. Use + to add multiple values. For example, create users whose city is either Bangalore or Mummbai.![](https://i.imgur.com/vdcl0je.png)
+operator | The condition operator that you want to use - is known, is not known, is, isn't, contains, does not contain.<br/><ul><li>**Operators for String datatypes**: is known, is not known, is, isn't, contains, does not contain </li><li>**Operators for Email/phone**: is known, is not known, is, isn't</li> <li>**Operators for date datatype**: is today, is known, is not known, is, is after, is above, was exact </li><li> **Operators for Boolean data type**: is known, is not known, is true, is not true, is false, is not false</li></ul>
+value | Value of the expression. Use + to add multiple values. For example, create users whose city is either Bangalore or Mumbai.<img src="https://i.imgur.com/vdcl0je.png" width="90%"/>
+
 
 
 5. To add more conditions, click **Add condition**.
   
-   ![](https://i.imgur.com/PnSrqvJ.png)
+  <img src="https://i.imgur.com/PnSrqvJ.png" width="80%"/>
 
 To create more sophisticated segments you can [combine `and` with `or` conditions](/docs/platform_concepts/engagement/cdp/user_data_segments/segment_usecases#21-segments-with-multiple-conditions-andor). This makes segments more powerful and flexible.
 
 
 Once you create a segment, you can view users in the segment, modify segment condition, download users of the segment, or delete it as explained in the following sections.
+
+
+### Segment imported users
+
+You can also create a segment during the import process. This means that you can create a user segment directly when importing a set of user records.
+
+
+For more details, see Step 9 of [Import CSV file](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users#step-2-import-csv-file).
+
+
+
 
 ***
 
@@ -42,16 +57,18 @@ Once you create a segment, you can view users in the segment, modify segment con
   
 ## 2. View segment users
 
-To view users of a segment, on the User 360 page, click on the segment. 
+To view users of a segment:
 
-If the list is long, use the **Search** box to fetch for a specific segment.
+1. On the User 360 page, click on the segment that you want to view. 
 
-![](https://i.imgur.com/bvS0ofr.png)
+2. If the list is long, you can use the **Search** box to find a specific segment quickly.
+
+   ![](https://i.imgur.com/bvS0ofr.png)
 
 
-You will see the list of users on the right.
+You will see the list of users on the right side of the page.
 
-![](https://i.imgur.com/wrVY5eE.png)
+   ![](https://i.imgur.com/wrVY5eE.png)
 
 ***
 

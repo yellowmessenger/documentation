@@ -83,6 +83,7 @@ After event, campaign triggers | Choose when to trigger the flow. <ul><li>Choose
 
    <center><img src="https://i.imgur.com/SdcMiVJ.png" width="50%"/></center>
    
+
 4. In **Target audience**, **select one or more segments** to choose specific [user segments](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) for the current campaign; select **All users** to include all your [User 360 users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/viewuser).
 
 <center><img src="https://i.imgur.com/CEreQxC.png" width="50%"/></center>

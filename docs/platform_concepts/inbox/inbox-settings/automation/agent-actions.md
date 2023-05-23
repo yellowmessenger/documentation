@@ -6,19 +6,16 @@ sidebar_label : Agent actions
 Actions are displayed on the [chat screen](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#1-chat-screen) when the inbox agent presses "/". 
 **Inbox admin** can configure these actions in the automation with studio section. 
 
-In this article, you will learn:
-1. [What are agent actions?](#intro)
-2. [How are agent actions updated?](#update)
-3. [How to add agent actions?](#add) 
-
 ---
-## <a name="intro"></a> Agent actions
 
-Agent actions are commands that agents can trigger from within the inbox to automate a micro-task that a customer must perform and follow. These can be invoked by typing "/" in the message box to help save agents’ time and improve their productivity.
+## <a name="intro"></a> Agent actions overview 
 
-<img src="https://i.imgur.com/v67ccp5.png" alt="drawing" width="60%"/>
+An agent action is a conversational flow that can be triggered and executed by the bot based on a command given by an agent within the inbox. Inbox agents can utilize agent actions to initiate predefined flows and automate manual, repetitive, and monotonous tasks.
 
-### Use-cases of agent actions 
+These can be invoked by typing "/" in the message box to help save agents’ time and improve their productivity.
+
+
+### Use cases of agent actions 
 
 - **Automating tasks**: Agent actions can be used to automate tasks that agents typically spend a lot of time on, such as sending out canned responses, updating records, or creating tickets. This can free up agents to focus on more complex tasks that require their expertise. For example, an agent action could be used to automatically send a response to a customer based on the information provided in the chat.
 - **Providing quick access to information**: Agent actions can be used to provide agents with quick and easy access to information, such as customer records, product information, or FAQs. This can help agents resolve customer issues more quickly and efficiently. For example, an agent action could be used to display a list of all the products that a customer has purchased in the past.
@@ -28,58 +25,77 @@ Agent actions are commands that agents can trigger from within the inbox to auto
 
 ## <a name="update"></a> Create agent actions
 
-- All the flows that are created in the builder/studio section are available in the inbox to be converted into an automated agent action.
-- On the **Inbox** > **Automation with studio** section, you can **enable** the flow that must be available as an agent action. 
-    ![](https://i.imgur.com/4kafoOU.png)
-- **Default** and **ym_fallback** are the 2 agent actions available by default. 
-- As you create new flows on the studio, they get updated on the **Automation with Studio** screen.
+To create agent actions, follow these steps:
+
+1. Access the **studio** module where you create flows. Any flows created in this module will be available in the inbox for conversion into **automated agent actions**. As you [create new flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) in the **studio**, they will be updated on the **Automation with Studio** screen.
+
     ![](https://i.imgur.com/V2qyXdC.jpg)
 
+2. Open **Inbox** > **Settings** > **Automation**. Search and select **Automation with Studio**.
 
---------
-
-## <a name="add"></a> Configure agent actions
-
-To make these flows(actions) available on the chat screen, you must enable the available agent actions, follow the given steps: 
-
-1. Open **Inbox** > **Settings** > **Automation**. Search and select **Automation with Studio**.
     ![](https://i.imgur.com/iSooZ14.jpg)
-2. All the flows created (and are **live**) in the Studio module are available here and can be enabled as an agent action.        
+    
+3. On the Automation with Studio page, you will find all the live flows created in the Studio module. You can **enable** specific flows that you want to make available as agent actions.
 
-    <img src="https://i.imgur.com/vfep9Jr.jpg" alt="drawing" width="90%"/>
-3. Click the edit icon.      
-    ![](https://i.imgur.com/Z5tlZhD.png)   
-4. Enable **Mark action enabled for this flow**.      
-5. Enable **Mark shortcut enabled for this flow**. In this case, agents can directly pass arguments as part of the message while triggering an action.      
+    ![](https://i.imgur.com/4kafoOU.png)
+    
+    > By default, there are two agent actions available: **Default** and **ym_fallback**.
 
-    <img src="https://i.imgur.com/jnktBcm.png" alt="drawing" width="80%"/>
+4. Click on the edit icon for the flow you want to modify.      
+    
+    ![](https://hackmd.io/_uploads/B1HoZxIr2.png)
 
-> For example, PlaceOrder OrderID can be triggered by simply typing /PlaceOrder AABV123009.
+5. It is recommended to enable all the agent action settings.
+    - Enable **Mark action enabled for this flow**.     
+    - Enable **Mark shortcut enabled for this flow**. This allows agents to directly pass arguments as part of the message when triggering an action. 
 
-6. For each flow, there are multiple steps/variables that can be enabled. 
-    - Each step of the flow is converted into an argument that is expected to be passed so that the entire action can be executed.
+    <img src="https://i.imgur.com/diPNrmC.png" alt="drawing" width="60%"/>
 
-        <img src="https://i.imgur.com/diPNrmC.png" alt="drawing" width="60%"/>
-
-    - When you mark a step as mandatory, the bot will prompt the agent to enter this value to trigger the action. If it is not marked as mandatory, make sure that you handle an empty value for this step in your flow definition (by providing a default value for that step).
-
-        <img src="https://i.imgur.com/qntAnbQ.png" alt="drawing" width="60%"/>
-
-    - For example, in the below screenshot, agent action will only be triggered when the **InputQuery** and **InputName** are entered/available. 
+6. Each flow has multiple steps or variables that can be enabled. Each step of the flow will be converted into an argument that needs to be passed to execute the entire action.
+    - **Mark a step as mandatory** if the bot should prompt the agent to enter a value for that step in order to trigger the action. If a step is not marked as mandatory, make sure you handle empty values for that step in your flow definition by providing a default value.
+    - For example, in the given screenshot, the agent action will only be triggered when both **InputQuery** and **InputName** are entered.
 
         ![](https://i.imgur.com/jCQ3j2i.png)
 
-7. After enabling the required fields, **Save** the changes. 
-8. On the chat screen, when the agent tries to trigger any agent action, the bot triggers the corresponding flow and presents the final response to the agent. This can be validated by the agent and sent to the customer (bot user) by clicking the green tick icon. 
-For example, when the “PlaceOrder” action is triggered, the following message is displayed on the screen. The agent can click the tick to proceed. 
+7. Once you have enabled the necessary fields, click **Save** to apply the changes.
+ 
+
+:::info
+* Agent actions are stateless, meaning each action should be defined as an independent unit without relying on variables from other flows.
+* Variables defined in one flow cannot be used in another flow within an agent action.
+* However, you can fetch variables from a database and use them within an agent action.
+* Currently, agent actions are designed to be executed as a single shot, meaning all the required step values must be passed before triggering the action.
+:::
+
+----
+
+## Use agent actions on chat screen
+
+1. On the chat screen, when the agent types "/" or clicks on agent actions, a list of all enabled flows is displayed. Agents can select the desired flow to trigger the corresponding agent action.
+
+<img src="https://i.imgur.com/v67ccp5.png" alt="drawing" width="1000%"/>
+
+2. When an agent action is selected, the bot initiates the associated flow. If there are mandatory fields or inputs required from the agent, they need to be provided. 
+
+    **Example 1**:
+    PlaceOrder OrderID can be triggered by simply typing /PlaceOrder AABV123009.
+    
+    <img src="https://i.imgur.com/jnktBcm.png" alt="drawing" width="80%"/>
+
+    **Example 2**:
+    Agents can click on the input fields, enter the required values, and click **Save**.
+ 
+    <img src="https://i.imgur.com/qntAnbQ.png" alt="drawing" width="60%"/>
+
+3. Flow is triggered and the final response is presented to the agent. This can be validated by the agent and sent to the customer (bot user). For example, when the “PlaceOrder” action is triggered, the following message is displayed on the screen. 
+    - The agent can click on the tick icon to proceed with the generated message.
+    - Agent can also type a custom message based on the information and send it to the customer. 
+
     ![](https://i.imgur.com/yiyl2Ju.png)
 
 
 
 
-:::info
-- Agent actions are stateless. The flow defined should be an independent unit. 
-- You cant use a variable previously defined in another flow. 
-- You can fetch a variable from the database.
-- Agent action is currently a single shot, all the step values must be passed before the action is triggered.
-:::
+
+
+
