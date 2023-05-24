@@ -3,8 +3,17 @@ title : Add or update user properties from bot conversations
 sidebar_label : Add/update user properties from bot conversations
 ---
 
-
+<!--
 ## Store `userId` from bot conversation
+
+### Significance of identifying users
+
+The user identification is an important aspect of bot conversation design, as it allows for a more personalized and engaging user experience. User identification helps in the following:
+
+* **Personalized responses**: When a user is identified, the bot can tailor its responses to the individual user's needs and preferences. This can lead to more relevant and helpful responses, which can improve the overall user experience.
+* **Context maintenance**: User identification allows the bot to maintain context throughout the conversation and across different channels. This means that the bot can use user data and the interaction with the user, and use that information to provide more accurate and useful responses in subsequent interactions.
+* **Improved engagement**: By providing personalized responses and maintaining context, the bot can create a more engaging conversation with the user. This can lead to increased user satisfaction and higher levels of engagement with the bot.
+* **Better data collection**: User identification also allows the bot to collect more detailed and accurate data on individual users. This can be used to improve the bot's performance over time, by providing insights into user behavior and preferences.
 
 There are three ways in which you can capture the userId through bot Builder.
 
@@ -47,6 +56,7 @@ Alternatively, you can also use the Variable node (under Actions) to store a spe
 
 ***
 
+-->
 
 
 ## Store user properties from bot conversations

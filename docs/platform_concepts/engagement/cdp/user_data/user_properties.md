@@ -68,12 +68,14 @@ The following are the available system user properties, you can see these in Use
 
 The `userId` is a unique property in the users schema and serves as an identifier for each user. It helps in recognizing users across multiple touch-points, capture and update user data. A `userId` can be any unique identifier such as phone number, email address, or any other external unique identifier such as driving licence number.
 
-   <img src="https://i.imgur.com/aWczHLm.png"/>
+   <img src="https://i.imgur.com/aWczHLm.png" width="70%"/>
 
 
-Also, see:
 
-- [How to capture userId through bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-id-through-builder).
+
+For more details, see:
+
+- [How to capture userId through bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
 - [What happens when a userId is captured for the first time during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-a-userid-is-captured-for-the-first-time).
 - [What happens when a userId is recaptured during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-the-userid-is-recaptured).
 - [How to enrich user profiles with the data collected from multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_user_overview)
