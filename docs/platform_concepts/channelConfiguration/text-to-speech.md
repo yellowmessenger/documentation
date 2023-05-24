@@ -38,9 +38,9 @@ To enable TTS in your chatbot, follow these steps:
       <img src="https://i.imgur.com/Y1KiMms.png)" alt="drawing" width="70%"/>
 
 
-5. Navigate to the **Deploy** tab and click **Experience  on a website**. 
- 
-    <img src="https://hackmd.io/_uploads/ByKqItDE2.png" alt="drawing" width="70%"/>
+5. Navigate to **Deploy** > **Web** > **Experience on a Website**.
+
+     <img src="https://i.imgur.com/1s7zOkH.png" width="70%"/>
 
 6. Enter the text in the **Input** field. The chatbot converts text commands into spoken words.
 
