@@ -34,9 +34,9 @@ To Enable STT in your chatbot, follow these steps:
 
     <img src="https://i.imgur.com/JRE5ejK.png)" alt="drawing" width="70%"/>
 
-5. Navigate to the **Deploy** tab and click **Experience  on a website**. 
- 
-   <img src="https://hackmd.io/_uploads/ByKqItDE2.png" alt="drawing" width="70%"/>
+5. Navigate to **Deploy** > **Web** > **Experience on a Website**.
+
+     <img src="https://i.imgur.com/1s7zOkH.png" width="70%"/>
 
 6. To provide your input via spoken words to the chatbot, click the **Mic** button and grant the system to use your microphone by clicking the **Allow** button.
 

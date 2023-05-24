@@ -221,7 +221,7 @@ To test your bot on ABC, follow these steps:
 
 1. Paste the conversational link that you have copied from the Messages for Business Account in the address bar and click enter.
 
-      ![](https://hackmd.io/_uploads/SJrBOClHh.png)
+      ![](https://i.imgur.com/qbYYmrM.png)
 	  
 2. Enable the checkbox and click **Open Messages**.
 

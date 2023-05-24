@@ -289,8 +289,6 @@ module.exports = {
           ],
         },
 
-        "cookbooks/studio/regressiontest",
-
         {
           type: "category",
           label: "Test and publish bot",
@@ -298,6 +296,7 @@ module.exports = {
           items: [
            // "platform_concepts/studio/test-and-publish-bot/bot-training",
             "platform_concepts/studio/test-and-publish-bot/debug-flow",
+            "cookbooks/studio/regressiontest",
             "platform_concepts/studio/test-and-publish-bot/modes",
           
           ],
@@ -1021,7 +1020,9 @@ module.exports = {
             "platform_concepts/channelConfiguration/chat-separator",
             "platform_concepts/channelConfiguration/domain-whitelisting",
             "platform_concepts/channelConfiguration/chat-widget-localization",
+            "platform_concepts/channelConfiguration/summary-card",
             "platform_concepts/channelConfiguration/pwa",
+            "platform_concepts/channelConfiguration/depoly-WA-bot",
             "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/chat-widget-errors",
             "platform_concepts/channelConfiguration/character-limits-sdk",
