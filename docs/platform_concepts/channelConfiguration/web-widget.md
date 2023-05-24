@@ -21,7 +21,7 @@ To access Chat widget, follow these steps:
 
 4. The Chat widget screen appears as shown below.
 
-   ![](https://i.imgur.com/lO86cQ0.png)
+   ![](https://i.imgur.com/h9QYJDi.png)
 
  
 ## 2. Customize Chat widget
@@ -30,7 +30,7 @@ To access Chat widget, follow these steps:
 
 The **Widget Panel** helps you customize the look and feel of the chat widget.
 
-   <img src="https://i.imgur.com/Fu1t8y0.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/67BPLwY.png" alt="drawing" width="90%"/>
    
 
 
@@ -51,7 +51,7 @@ Font style | Choose the default font for the bot.
 Font size | Set the font size of the widget on the website - Small, Medium, or Large.
 Widget size | Set your preferred widget size - Small, Medium, or Large. 
 | Position | Set the position of the widget on the website - Bottom Left and Bottom Right. |
-| Initial state for desktop | Set the initial display mode of the widget on websites -  Half opened, Minimised, or Conversational layover. |
+| Initial state for desktop and mobile | The initial state helps you to set the chatbot’s appearance when the user visits the website and views the bot for the first time. The following are the initial display modes for the chat widgets:<br/>• **Half opened**: Selecting this option will place the bot in a partially opened state.<br/>• **Minimized**: Selecting this option will place the bot in a minimized or closed state.<br/>• **Conversational layover**: Selecting this option will display a welcome message, input bar, and other components to the user. Once the user interacts, the bot will fully open. <br/>• **Chat bubble**: Selecting this option will display a small bubble on top of the bot icon, showing a welcome message.<br/><img src="https://i.imgur.com/cgbJrQI.png" alt="drawing" width="40%"/><br/>**note:**<br/>• For **Mobile** applications only **Minimized** and **Chat bubble** options are supported.<br/>• When user interacts with initial state options such as Half opened, Minimised, Conversational layover, and Chat bubble, the bot will transition to a fully opened state. |
 
 <img src="https://i.imgur.com/I8XaGOh.png" alt="drawing" width="60%"/>
 

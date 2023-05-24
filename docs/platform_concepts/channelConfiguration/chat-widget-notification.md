@@ -40,17 +40,17 @@ To enable chat widget notifications, follow these steps:
 	
 3. Navigate to the **Settings** tab and expand **Notifications** drop-down.
 
-     ![](https://hackmd.io/_uploads/H1VOn6w43.png)
+     ![](https://i.imgur.com/HRB5IXL.png)
 
 4. Enable the **Unread message(s) badge**, **Unread notification in browser tab**, and **Message sound**, then click **Save changes**.
    
-     ![](https://hackmd.io/_uploads/BkwxAFwEh.png)
+     ![](https://i.imgur.com/wRZaMOC.png)
    
-4. Navigate to the **Deploy** tab and click **Experience  on a website**. 
- 
-   <img src="https://hackmd.io/_uploads/ByKqItDE2.png" alt="drawing" width="70%"/>
+5. Navigate to **Deploy** > **Web** > **Experience on a Website**.
+
+     <img src="https://i.imgur.com/1s7zOkH.png" width="70%"/>
     
-5. If there are new messages, you will see the notification in the Favicon when you are on a different tab, as shown below.   
+6. If there are new messages, you will see the notification in the Favicon when you are on a different tab, as shown below.   
 
     ![](https://i.imgur.com/IOBbgzn.png)
 
