@@ -18,7 +18,7 @@ To schedule a report, follow the below steps:
 1. Saved queries are available as saved reports on the data explorer page, open any of your saved reports. For example: Studio feedback. 
     ![](https://i.imgur.com/DkPaVC3.png)
 2. On the queries page, click **Actions**. From the dropdown select **Schedule report**. 
-    ![](https://i.imgur.com/MV03xWg.png)
+    ![](https://hackmd.io/_uploads/BJZYDJ9S2.png)
 3. On the side panel, configure the following: 
     - **Frequency**: You can choose hourly, weekly (select the days of the week that the report needs to be sent on), monthly or quarterly (choose timezone and dates).
     - **Email**: Specify the email IDs of the recipients to which the report needs to be sent. You can add up to a maximum of 10 email IDs (they can also be external to your organization).
@@ -49,7 +49,7 @@ For faster access and visualization, you can add this saved report to your dashb
 
 To delete the saved query, select **Delete query** from the **Actions** dropdown.
 
-![](https://i.imgur.com/Lc5nmIg.png)
+![](https://hackmd.io/_uploads/rJohv1cB2.png)
 
 ----
 
@@ -59,16 +59,17 @@ To add a formula to a column, follow these simple steps:
 
 1. Click on the **Actions** dropdown menu and select **Add formula column**.
     ![](https://i.imgur.com/9YI7A27.png)
-2. Enter a **name** for the formula in the tab that appears.
-    ![](https://i.imgur.com/chmyIi0.png)
+2. Enter a **Name** for the formula in the tab that appears.
+    ![](https://hackmd.io/_uploads/BkRYoJqS3.png)
 3. Add the required formula using entities like calculating values in a column, calculating values in a specific cell, adding integers or arithmetic operators.
     - To add a column, select **Select column** under **table operations**. The available columns (of integer data type) in your summarized table will be listed on the right side. Click **Add** next to the column name.
-    ![](https://i.imgur.com/mmwnA6N.png)
+    ![](https://hackmd.io/_uploads/rkgPsk5rn.png)
     - To add a cell, select **Select cell** after choosing a column. All the available rows for the selected column will be displayed in the dropdown list. Select a value.
-    ![](https://i.imgur.com/eANfjM2.png)
+    ![](https://hackmd.io/_uploads/ry64oJcr3.png)
     - Complete the formula with numbers and operators.
-    - Click **Save**.
-    ![](https://i.imgur.com/Tu9yxz8.png)
+    - Click **Next**.
+    ![](https://hackmd.io/_uploads/SkDlsk9B3.png)
+
 4. The summarized table will now have a new column with the calculated formula values. You can edit or delete this data as needed by clicking on the new column name.
     ![](https://i.imgur.com/Ru1zaDZ.png)
 5. Click **Save query** to save this as a new report or add it to the existing one. 
@@ -100,13 +101,12 @@ To rearrange rows with integer datatype based on a base column of string datatyp
 
 1. Click on the **Actions** dropdown menu and select **Create pivot table**.
     ![](https://i.imgur.com/akWlSfI.png)
-2. You will be redirected to a new page. Click on **Create pivot table**.
-    ![](https://i.imgur.com/FLOg5Zo.png)
-3. Select a **base column** by choosing a column from the list displayed (which contains column names with string datatype). Only one column can be selected.
-4. Add multiple **rows** by selecting them from the dropdown list (which will contain row values only if they consist of integer datatype).
-5. Click **Save**.
-    ![](https://i.imgur.com/mYU1dUO.png)
-6. The selected base column's values will become the row headers and the added rows will be displayed as columns.
+2. You will be redirected to create a new table. Select a **base column** by choosing a column from the list displayed (which contains column names with string datatype). Only one column can be selected.
+3. Add multiple **rows** by selecting them from the dropdown list (which will contain row values only if they consist of integer datatype).
+4. Click **Apply**.
+    ![](https://hackmd.io/_uploads/SyJPt1cHh.png)
+5. The selected base column's values will become the row headers and the added rows will be displayed as columns.
 For example, if the base column is "Platform" and rows are "Avg Session Duration," "DISTINCT_SESSIONID," and "SUM_SESSION_SUM" (choose multiple), the resulting pivot table will look like this:
-    ![](https://i.imgur.com/5ShWRhd.png)
-7. You can edit the column name/rows, click **Edit**.  You can also save this table by clicking **Save query**. 
+    ![](https://hackmd.io/_uploads/HkLWhJcSh.png)
+6. You can edit the column name/rows, click **Edit pivot table** from actions.  You can also save this table by clicking **Save query**. 
+    ![](https://hackmd.io/_uploads/SJliFJcB3.png)

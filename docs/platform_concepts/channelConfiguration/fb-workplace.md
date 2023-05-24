@@ -3,7 +3,7 @@ title : Facebook Workplace
 sidebar_label : Facebook Workplace
 ---
 
-Facebook Workplace is an online collaborative tool that helps businesses and organizations to communicate and collaborate with internal team members. Using this tool, you can create various channels that help you to manage work-related activities such as group discussions, project management; file, image, or video sharing; and updates related to specific projects. You can have both public and private channels.
+Facebook Workplace is an online collaborative tool that helps businesses and organizations to communicate and collaborate with internal team members. Using this tool, you can create various channels that help you to manage work-related activities such as group discussions, project management; file, image, or video sharing, and updates related to specific projects. You can have both public and private channels.
 
 On Facebook Workplace, bots are represented as pages. A page is automatically created for a custom integration app. Only system administrators of a workplace community can create apps and generate access tokens in that community.
 
@@ -146,3 +146,32 @@ To test your bot on Facebook workplace, follow these steps:
 3. Start the conversation to test your bot based on the configured flow.
 
     ![](https://i.imgur.com/uKFbqE1.png)
+
+## Character limitations of Facebook workplace channel   
+
+ In this section, you can view the character limitations of Facebook workplace channel.
+
+ ###  Message types
+
+ Message types options	| Character limit
+ ----------------------|------------------
+ Text | The maximum number of characters supported is 2000.
+ Image | The maximum size of an image is 8 MB.
+ Video, audio, and other file types | The maximum size is 25 MB.
+
+### Quick Reply
+
+Quick Reply options | Character limit
+--------------------|---------------
+Quick reply title |  The maximum number of characters supported is 2000.
+Quick Reply buttons | A maximum of 13 quick reply buttons are supported.
+Quick Reply button title | The maximum number of characters supported is 20.
+
+### Carousel 
+
+Carousel options | Character limit
+--------------------|---------------
+Cards | A maximum of 10 cards per message is supported.
+Title  |  The maximum number of characters supported is 80.
+Subtitle | The maximum number of characters supported is 80.
+Buttons | A maximum of 3 buttons per card are supported.
