@@ -1,11 +1,12 @@
 ---
-title: No-code email ticketing 
+title: Set up inbox to handle email tickets without any code
 sidebar_label : Overview
 ---
 
 **No code email ticketing**
 
 When a customer sends an email to the support team in a typical business scenario, it usually lands in the inbox of the respective email app, such as Gmail or Outlook. This process is often disorganized and difficult to streamline.     
+
 **No code email ticketing** offers a solution to manage customer support requests or tickets through email without the need for programming. This system automatically directs incoming emails to the appropriate customer support agent or group, and utilizes an **inbox ticket section** to monitor and control the status of each ticket.
 
 > You can enable no code email ticketing [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing). 
@@ -14,7 +15,7 @@ When a customer sends an email to the support team in a typical business scenari
 Features offered by the tickets section: 
 - The primary objective of no code email ticketing is to simplify the management of customer support requests and enhance the efficiency and effectiveness of customer service teams.
 - All customer queries raised via email are compiled and listed in a unified user interface (omni-channel customer support suite).
-- Adminis can view all tickets sent to or received by the support email address.
+- Admins can view all tickets sent to or received by the support email address.
 - As an Agent, you will be assigned with the tickets (based on the [group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) or [auto-assign](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic) settings). You can select an email that needs attention and reply to it on time. 
 
 

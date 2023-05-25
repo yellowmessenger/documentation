@@ -315,17 +315,20 @@ module.exports = {
 {
   type: "category",
   label: "AI Voice bot builder",
+  link: {type: 'doc', id: 'cookbooks/voice-as-channel/vbintro'},
   collapsed: true,
   items: [
         "cookbooks/voice-as-channel/voiceoverview",
         "cookbooks/voice-as-channel/voicearchitecture",
         "cookbooks/voice-as-channel/components", 
+        "cookbooks/voice-as-channel/transfertoagent",
+        "cookbooks/voice-as-channel/callmgmt",
 
 
 // Reporting  
 {
   type: "category",
-  label: "Analytics and reports",
+  label: "Voice bot analytics and reports",
   //link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
   collapsed: true,
   items: [
@@ -337,8 +340,22 @@ module.exports = {
           "cookbooks/voice-as-channel/reporting/variables",
       ],
     },
-    "cookbooks/voice-as-channel/transfertoagent",
-    "cookbooks/voice-as-channel/callmgmt",
+
+    "cookbooks/voice-as-channel/datahandling",
+
+// Outbound campaign 
+
+{
+  type: "category",
+  label: "Outbound campaign via. voice bot",
+  collapsed: true,
+  items: [
+    "cookbooks/voice-as-channel/OBcampaign/introOBC",
+    "cookbooks/voice-as-channel/OBcampaign/setupOBC",
+  ],
+},
+
+
 
   // ---- old docs 
 
@@ -347,7 +364,7 @@ module.exports = {
 // building  
   {
     type: "category",
-    label: "How to build a voice bot",
+    label: "Build a voice bot",
     link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
     collapsed: true,
     items: [

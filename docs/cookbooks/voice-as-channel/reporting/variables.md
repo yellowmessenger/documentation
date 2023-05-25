@@ -4,7 +4,7 @@ sidebar_label : (Additional) Voice variables in studio
 ---
 
 
-## Types of voice variables 
+## 1. Types of voice variables 
 
 **Voice bot variables** are similar to regular [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables), with the only difference being the way they are acquired. There are two types of voice variables that can be utilized in the process of building a flow in studio:
 1. **Bot variables**: These variables are automatically available to the bot at the beginning of the voice call.
@@ -12,7 +12,7 @@ sidebar_label : (Additional) Voice variables in studio
 
 -----
 
-## Access voice variable values 
+## 2. Access voice variable values 
 
 To work with [conversational details reports](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata) or [call and conversational details reports](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/conv_cdr), you may require access to voice variables (default and CDR). To push the necessary values into the database node and tables, you must create variables. Follow the steps below:
 
