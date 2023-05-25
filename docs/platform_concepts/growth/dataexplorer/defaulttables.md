@@ -5,7 +5,7 @@ sidebar_label: Analyse default tables
 
 **What are Default tables(datasets)?** 
 
-**Default Datasets** are the built-in tables, related to Users Events, Messages, API Events, Agent Events, etc. Click on any of the table names to view the data available for the last month (you can use filters to customize what you want to see). 
+**Default Datasets** are the built-in tables, related to Users Events, Messages, API Events, Agent Events, etc. Click on any of the table names to view the data available for the last month (you can use filters to customise what you want to see). 
 
 ![](https://i.imgur.com/uqwkU9X.png)
 
@@ -19,7 +19,8 @@ Following are the default datasets and their functions:
 | **Bot Events** | Provides technical insights around chat widget loads, various function execution, where widget loads are happening, what is the platform and channel, etc. |
 | **Chat tickets** |  Delivers data for chat tickets about how agents are performing, how many users are interacting with the agents, response time, Agent details, User details, CSAT, AHT, etc. |
 | **Email tickets** |  Analyse operational metrics and agent performance for email tickets, and create your custom analytics dashboards. |
-|**Inbox events**|Analyse agent performance by deep diving into first response time, average handling time, resolved and missed tickets, etc.|
+|**Inbox events**| Analyse agent performance by deep diving into first response time, average handling time, resolved and missed tickets, etc.|
+| **Knowledgebase articles** | Analyse views, likes, dislikes and other details of the articles published on the inbox knowledgebase section. | 
 | **Messages** | Data about the user traffic metrics here, messages exchanged, sessions created, user demographics, devices they are using, etc on a channel level. |
 | **Notification Reports** | Deep dive into how the campaigns are performing, which channel is doing well, how are different templates performing, how many notifications are failing, etc. |
 | **User Engagement Events** | Check how your users are engaging with the bot, flows they are taking, agent transfers, flow switches, unidentified utterances, etc. |
@@ -28,6 +29,7 @@ Following are the default datasets and their functions:
 | **Voice Bot Events** | Find insights around voice bots. Number of inbound/outbound calls, calls per user, region, call duration, etc. |
 |**Call details report** |CDR is a report of telephony data such as call duration, caller ID, called number, call status, and call type obtained from each call (bot conversation with customer). |
 
+-----
 
 ## 2. Push custom data to default tables  
 
@@ -50,6 +52,8 @@ Steps to push custom data to default tables:
 :::note
 CUSTOMID 2 can be added only after adding CUSTOMID 1.  
 :::
+
+------
 
 ## 3. Add filters to the default table 
 
@@ -75,4 +79,4 @@ Once you have applied filters, a button labeled **Save query** will appear. Clic
 ![](https://i.imgur.com/PM6HYDu.png)
 
 
-> You can also summarize and visualize this data, steps are explained in further sections. 
+> You can also summarize and visualise this data, steps are explained in further sections. 

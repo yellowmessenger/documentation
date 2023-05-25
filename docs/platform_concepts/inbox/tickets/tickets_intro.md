@@ -112,6 +112,6 @@ Email tickets are assigned only to an **Inbox agent** (although **Inbox admin** 
 
 | Feature  | Description | Preview |
 | -------- | -------- | -------- |
-|**Ticket fields** |These are custom fields, you can configure them in [settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields). |![](https://i.imgur.com/d8KddGJ.png)|
+|**Ticket fields** |These are custom fields, you can configure and arrange them in [settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields). |![](https://i.imgur.com/d8KddGJ.png)|
 |**Collaborators**| More than one agent can help to resolve a ticket (similar to a group chat). Add [collaborator](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/collaboration) names by selecting the names from the dropdown menu.|![](https://i.imgur.com/2pi1jhB.png)|
 |**Activity log**| The activity log consists summary of all the changes/updates that have taken place on this ticket (ticket ID). For example, Change of status/priority, Transfer of ticket from one agent to another, Reopening of the ticket, Breach of SLA, etc. |![](https://i.imgur.com/3K2SyF5.png)|

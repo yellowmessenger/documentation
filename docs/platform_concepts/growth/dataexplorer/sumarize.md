@@ -71,7 +71,7 @@ By default, all summarized tables in Data Explorer display a **Total** at the en
 ### Add formulas(arithimetic operations) to columns
 
 You have the ability to add formulas using arithmetic operators to the required columns to quickly calculate results. This feature allows you to perform calculations without leaving the platform. 
-You can simply select the desired columns, add the formula using arithmetic operators, and apply it to calculate the results. This feature saves time and enhances your ability to analyze data efficiently in Data Explorer.
+You can simply select the desired columns, add the formula using arithmetic operators, and apply it to calculate the results. This feature saves time and enhances your ability to analyse data efficiently in Data Explorer.
 
 > This feature is available for **Saved reports**. Read more [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#4-add-a-formula-column-to-a-report). 
 
@@ -80,7 +80,7 @@ You can simply select the desired columns, add the formula using arithmetic oper
 
 ### Pivot data tables
 
-Pivot tables are a powerful feature that can help you summarize, sort, and analyze large amounts of data quickly and efficiently. With a pivot table, you can create a new table that allows you to rearrange and summarize your data by switching the rows for a base column. This feature enables you to easily analyze and understand complex data sets and identify trends, patterns, and insights that may be difficult to spot in a traditional table format.
+Pivot tables are a powerful feature that can help you summarize, sort, and analyse large amounts of data quickly and efficiently. With a pivot table, you can create a new table that allows you to rearrange and summarize your data by switching the rows for a base column. This feature enables you to easily analyse and understand complex data sets and identify trends, patterns, and insights that may be difficult to spot in a traditional table format.
 
 > This feature is available for **Saved reports**. Read more [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#5-pivot-a-report). 
 
@@ -101,6 +101,6 @@ These summarized queries can be used for future references and they will be avai
 
 ![](https://hackmd.io/_uploads/r1crm1qS2.png)
 
-> You can visualize this data, steps are explained in next section. 
+> You can visualise this data, steps are explained in next section. 
 
 

@@ -1,11 +1,11 @@
 ---
 title: Visualizing summarized tables for effective data analysis
-sidebar_label : Data visualization
+sidebar_label : Data visualisation
 ---
 
 Using charts, graphs, dashboards, and other visualizations is an effective way to make your data more accessible and engaging in real-world discussions. 
 
-## 1. Apply visualization on a summarized table
+## 1. Apply visualisation on a summarized table
 
 Before creating visualizations, you must **summarize** the data in tables. After that, you can then create visualizations using the summarized tables by following the steps below.
 
@@ -25,7 +25,7 @@ Before creating visualizations, you must **summarize** the data in tables. After
     ![](https://i.imgur.com/Yuj3tfA.png)
 
 
-#### Choosing the right chart for visualization 
+#### Choosing the right chart for visualisation 
 
 - **Line Chart**: A line chart is suitable for visualizing trends over time. It could be used to display changes in a variable, such as stock prices of a company, over a period of time.
 - **Bar Chart**: A bar chart is effective in comparing data across different categories. It could be used to compare the sales of various products in a store.
