@@ -5,7 +5,11 @@ sidebar_label: User identification flow
 
 ## Overview
 
-The User Identification flow in bot conversation is the process of identifying the user interacting with the bot. This is achieved by requesting the unique identifier such as an email address, phone number or other identifier from the user. 
+The User Identification flow in bot conversation is the process of identifying the user interacting with the bot. This is achieved by requesting the unique identifier from the user. It could be an email address, phone number or other identifier. 
+
+:::note
+Date datatypes are not supported as the userId. It supports String, Number, email, and phone types.
+:::
 
 ### Significance of identifying users
 
@@ -20,12 +24,16 @@ The user identification is an important aspect of bot conversation design, as it
 
 ### Understand how user identification flow works
 
-The primary objective of the User Identification flow is to ensure that the userId is captured for users that interact with bot on multiple channels.
+The primary objective of the User Identification flow is to ensure that the userId is captured for users that interact with the bot on any channel.
 
+The following are the steps involved:
 
-1. You first need to define the user property that needs to considered as the userId. Whenever the selected property is updated, the userId will be automatically updated with the same value. <br/>For example, if you select the `phone` user property, each time a value is captured for the phone property, that same value will be automatically copied and assigned to the userId field as well.
-2. At the start of every conversation, the bot verifies if the userId is known. 
-3. If not, the **User identification flow** is triggered to capture the userId.
+1. You first need to define the user property that needs to considered as the userId. Whenever the selected property is updated, the userId will be automatically updated with the same value.
+
+   For example, if you select the `phone` user property, each time a value is captured for the phone property, that same value will also be automatically copied and assigned to the userId field.
+
+2. At the beginning of every conversation, the bot verifies if the userId is known. 
+3. If it is not known, the **User identification flow** is triggered to capture the userId.
 
 :::note
 For details on how user identification is handled, see [Profile identification & unification](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
@@ -76,7 +84,7 @@ Select this option if the unique identifier of your users is any property other 
    <img src="/img/cdp/customproperty.png" width="60%"/>
 
    
-3. Collect the selected user property using the Prompt node.
+3. Collect the selected user property using the [Prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes).
 4. Store the value in the relevant user property.
    
    ![](https://hackmd.io/_uploads/B1kn1dsHn.png)
