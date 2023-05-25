@@ -130,10 +130,10 @@ You can test your bot in multiple languages, by simply selecting the language of
 
   
 :::note
-To add supported languages to your bot, see [Languages](./languages-supported.md#2-add-languages).
+To add supported languages to your bot, see [Languages](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#2-add-languages-to-your-bot).
 :::
   
-
+[](./)
   
 
 ## 2.2 Conversation
