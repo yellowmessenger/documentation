@@ -1,6 +1,6 @@
 ---
 title : Introduction to Conversational Voice AI - Benefits and Applications for Businesses
-sidebar_label : Voice overview 
+sidebar_label : Voice bot overview 
 ---
 
 

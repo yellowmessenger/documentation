@@ -3,9 +3,7 @@ title: Understanding Yellow's Voice Bot System Architecture
 sidebar_label: Architecture of a voice bot
 ---
 
-In this article, we will focus on an **inbound use case** to understand the workflow of a voice bot.
-
-
+In this article, we will focus on an **inbound voice call use case** to understand the workflow of a voice bot.
 
 -------
 
