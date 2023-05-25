@@ -102,7 +102,7 @@ The following user details are available on this screen to provide agents with m
 ||Customer name|Name can be updated by the agent after confirming it with the customer|
 ||Customer email|Email can be updated by the agent after confirming it with the customer|
 ||Customer phone|Number can be updated by the agent after confirming it with the customer|
-|Custom fields||Inbox provides custom fields to fetch more insights from the customer. Configure the required custom fields. Learn [more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields).|
+|Custom fields||Inbox provides custom fields to fetch more insights from the customer. Configure and arrange the required custom fields. Learn [more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields).|
 |Timeline|Agent details and time that the live chat was assigned, closed, and number of agents that it has been transferred to.|![](https://i.imgur.com/muyrQEv.png)|
 |Collaboration details| More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.|![](https://i.imgur.com/ybV3WJX.png)|
 |Device details|Details about the user device that the bot tracks.|![](https://i.imgur.com/VDayNjJ.png)|
