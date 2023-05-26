@@ -152,7 +152,7 @@ You can create variables only from [Prompt](https://docs.yellow.ai/docs/platform
 We recommend using new variables to store data rather than reusing existing ones, as the values may get overwritten.
 ::: 
 
-1. Select **Flows** > **Create flow**. To know more about creating flows, click [here]((https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)).
+1. Select **Flows** > **Create flow**. To know more about creating flows, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
 2. While creating a flow, if you want to store a user response in a variable and that variable does not exist, you can create a new variable via node by clicking **Store Response in > Select variable**. 
 
 ![](https://i.imgur.com/eCsilSz.png)
