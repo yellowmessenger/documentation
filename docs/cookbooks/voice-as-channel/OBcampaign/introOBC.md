@@ -24,8 +24,9 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_camp
 
 ### Target audience for flow campaign
 
-* You can easily configure and automate your outbound campaigns by integrating with your existing customer data through **User360**. 
-* You can target specific segments or individuals with relevant messages. 
+* You can configure and automate your outbound campaigns by integrating with your existing customer data through [User360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview). 
+* You can target specific [segments](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) or individuals with relevant messages. 
+* Flows designed on Engage flow campaign are targeted towards the users on user360 (not to all the bot users).
 
 -------
 
