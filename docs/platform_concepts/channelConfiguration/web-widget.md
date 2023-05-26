@@ -78,7 +78,7 @@ Icon Shape | Set the desired bot icon type for web and mobile apps. <br/>For web
 
 You can configure your chatbot by enabling or disabling the following features on the bot. 
 
-<img src="https://hackmd.io/_uploads/HkyfLpw4n.png)" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/YhQgf9t.png)" alt="drawing" width="80%"/>
 
 
 #### General settings
