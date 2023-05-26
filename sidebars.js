@@ -50,6 +50,7 @@ module.exports = {
           "cookbooks/studio/dynamic-quickreplies",
           "cookbooks/studio/images-languages",
           "cookbooks/studio/storeApiResponse",
+          "cookbooks/studio/qr-node",
 
       ],
     }, 
