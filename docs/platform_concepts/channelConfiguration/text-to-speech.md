@@ -44,7 +44,7 @@ To enable TTS in your chatbot, follow these steps:
 
 6. Enter the text in the **Input** field. The chatbot converts text commands into spoken words.
 
-   <img src="https://i.imgur.com/JzrbsMZ.png)" alt="drawing" width="40%"/>
+   <img src="https://i.imgur.com/WZ4aUoE.png)" alt="drawing" width="40%"/>
    
 :::note
 * If TTS is enabled, you will see the speaker icon on the Title bar. By default, it is disabled.
