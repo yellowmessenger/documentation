@@ -1,9 +1,9 @@
 ---
 title : Streamline customer support by connecting voice bot to live agent
-sidebar_label : Transfer call to an agent
+sidebar_label : Set up customer support
 ---
 
-Transfer to human agent refers to the process of transferring a customer's interaction from an automated voice bot to a human agent. This is typically done when the voice bot cannot resolve the customer's issue, or when the customer requests to speak to a human.
+Businesses can set up customer support process to transfer a customer's interaction from yellow.ai's voice bot to a human agent. This can typically by used when the voice bot cannot resolve the customer's issue, or when the customer requests to speak to a human.
 
 In this article, you will learn how to configure your voice bot to transfer the voice call to a support agent. 
 
@@ -14,6 +14,7 @@ On the Yellow platform, to transfer a user's call to a human agent, the platform
 The platform then connects the end user's call to the agent, allowing the user to speak directly with the human agent.
 
 ![](https://hackmd.io/_uploads/BkndT4Hrh.png)
+
 
 
 #### <a name="ex"></a>  Scenarios for voice bot transfer to an agent

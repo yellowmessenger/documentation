@@ -4,7 +4,7 @@ sidebar_label : (Additional) Voice variables in studio
 ---
 
 
-## Types of voice variables 
+## 1. Types of voice variables 
 
 **Voice bot variables** are similar to regular [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables), with the only difference being the way they are acquired. There are two types of voice variables that can be utilized in the process of building a flow in studio:
 1. **Bot variables**: These variables are automatically available to the bot at the beginning of the voice call.
@@ -12,7 +12,7 @@ sidebar_label : (Additional) Voice variables in studio
 
 -----
 
-## Access voice variable values 
+## 2. Access voice variable values 
 
 To work with [conversational details reports](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata) or [call and conversational details reports](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/conv_cdr), you may require access to voice variables (default and CDR). To push the necessary values into the database node and tables, you must create variables. Follow the steps below:
 
@@ -26,7 +26,7 @@ To work with [conversational details reports](https://docs.yellow.ai/docs/cookbo
 
 ----
 
-### Variables available for ongoing calls 
+### Variables related for ongoing calls 
 
 Once the call is initiated, these voice bot variables (global variables) are accessible throughout the flows in the bot. To retrieve these variables, use the following format:
 
@@ -41,7 +41,7 @@ Once the call is initiated, these voice bot variables (global variables) are acc
 
 ----
 
-### Variables available for disconnected calls 
+### Variables related for disconnected calls 
 
 
 Additional details are only obtained after the [callback event](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/conv_cdr#step-2-create-a-callbackstatus-event) is triggered, which can be retrieved by creating a new flow that executes after the call ends. To retrieve these details, use the following format:

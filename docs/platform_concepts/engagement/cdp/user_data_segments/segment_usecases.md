@@ -61,7 +61,21 @@ Exclude users who have opted out from all your campaigns. To achieve this:
    * Next, include a condition in your segment [segment](/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview)  where, "Opt-in is true”. This segment will exclude all users for whom the opt-in status is false or unknown.
 
 
-   <img src="https://i.imgur.com/xr4X98S.png" width="60%"/>
+  <center> <img src="https://i.imgur.com/xr4X98S.png" width="70%"/></center>
+
+### Send discount vouchers to new users
+
+
+The `createdAt` date can be useful for understanding how long users have been with your product or service. For example, you could segment users into the following groups:
+
+* **New users**: Users who have been with your product or service for less than 30 days.
+* **Active users**: Users who have been with your product or service for more than 30 days and have logged in in the past 30 days.
+* **Inactive users**: Users who have been with your product or service for more than 30 days but have not logged in in the past 30 days.
+
+Create a segment with users who have been with your product or service for less than 30 days.
+
+
+<center><img src="/img/cdp/createdAt.png" width="70%"/></center>
 
 
 
@@ -83,22 +97,22 @@ By combining multiple condition sets and conditions, you can create segments tha
 Some operators might not have an associated value field.
 :::
 
-   <img src="https://i.imgur.com/URAzjop.png" width="70%"/>
+   <center><img src="https://i.imgur.com/URAzjop.png" width="70%"/></center>
 
 
 For certain conditions, you can add multiple values by clicking the "+" button next to the value field. These values are treated as separate options and evaluated using the **OR** logic. If a user property matches any of the specified values, the condition is considered true. This allows for more flexibility in segmenting users based on specific criteria.
 
 
-![](https://i.imgur.com/bxJDJ6s.png)
+   <center><img src="https://i.imgur.com/bxJDJ6s.png" width="70%"/></center>
 
 
 You can add more conditions to a condition set using **+ Add condition**. These conditions are connected with the "AND" operator, meaning that all conditions within the set must be true for the segment to be matched. Adding multiple conditions allows you to create more specific segments based on different criteria.
 
-   ![](https://i.imgur.com/PqeiHR7.png)
+ <center><img src="https://i.imgur.com/PqeiHR7.png" width="70%"/></center>
 
 A new condition set can be added by clicking on + Add condition set. Conditions sets are separated by **OR**
 
-![](https://i.imgur.com/m6zBzmo.png)
+<center><img src="https://i.imgur.com/m6zBzmo.png" width="70%"/></center>
 
 :::note
 For a user to be a part of a segment, he must meet all the AND conditions of a condition set.
@@ -121,26 +135,26 @@ You can use the [Condition Node](https://docs.yellow.ai/docs/platform_concepts/s
 
 
 
-   ![](https://i.imgur.com/surY1EB.png)
+<center><img src="https://i.imgur.com/surY1EB.png" width="80%"/></center>
 
 ### Employees in a certain department 
 
 
 Send training-related communications to junior employees in specific departments. Your filters for this segment might be: **Department is "Product" or "Engineering" AND Title includes "Junior" or "Associate"**.
 
-   ![](https://i.imgur.com/tC3f2Qu.png)
+<center><img src="https://i.imgur.com/tC3f2Qu.png" width="80%"/></center>
 
 ### Visitors who have opted in to receiving updates on email 
 
 Create a segment of users who have opted to receive regular product updates via email. This segment will include users who have subscribed to updates and newsletters. To set up this segment, **use the filter "Email Subscription is true"**.
 
 
-   ![](https://i.imgur.com/45FBZpB.png)
+<center><img src="https://i.imgur.com/45FBZpB.png" width="80%"/></center>
 
 ### Potential leads
 
 Create a segment of users who have visited your pricing page more than twice. This will allow you to reach out to them with offers or set up demos with your sales team.
 
-   ![](https://i.imgur.com/9NYYn0L.png)
+<center><img src="https://i.imgur.com/9NYYn0L.png" width="80%"/></center>
 
 

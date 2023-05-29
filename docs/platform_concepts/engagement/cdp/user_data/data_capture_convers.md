@@ -10,6 +10,8 @@ Bot users are classified into the following categories:
 1. Unidentified user - A user whose userId is not known or captured by the bot yet.
 2. Identified user - A user whose userId has been captured by the bot.
 
+
+
 ## How are unidentified records auto-created from bot conversations?
 
 When a user starts a conversation with the bot and starts capturing user properties, it automatically creates a new unidentified record in User 360. A record for which the userId is unknown is considered as an unidentified record. The ongoing session is always mapped to the record in user 360 and user properties captured will be stored in that record.
@@ -33,7 +35,7 @@ The following table summarizes the behavior of userId capturing in User 360.
 
 In a bot conversation, a user is identified through the userId and can be captured through [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) nodes. A userId is a unique indetifier such as mobile number, email address, or any other identifier such as driving livence number. 
 
-For more information, see [how to capture userId through bot conversations](https://docs.yellow.aidocs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-userid-from-bot-conversation).
+For more information, see [how to capture userId through bot conversations](https://docs.yellow.aidocs/platform_concepts/engagement/cdp/user_data/userid-flow).
 
 The following sections explain how the current record is affected based on the provided userId.
 

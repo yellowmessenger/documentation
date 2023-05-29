@@ -5,7 +5,7 @@ sidebar_label: Data explorer
 
 #### What is Data explorer?
 
-The Data Explorer facilitates the extraction of valuable business insights and empowers data-driven decision making by leveraging the available bot data. This tool serves as a business intelligence platform that enables the creation of custom analytics. By utilizing the Data Explorer, you can conveniently condense data pertaining to specific fields and analyze empirical relationships between fields.
+The Data Explorer facilitates the extraction of valuable business insights and empowers data-driven decision making by leveraging the available bot data. This tool serves as a business intelligence platform that enables the creation of custom analytics. By utilizing the Data Explorer, you can conveniently condense data pertaining to specific fields and analyse empirical relationships between fields.
 
 ---
 
@@ -18,7 +18,7 @@ Data explorer has several features:
 * **Standard Datasets**: The tool provides a standard set of Datasets (tables) that can be utilized to construct Widgets.
 * **Custom Datasets**: Analysts have the ability to create custom datasets by utilizing the tables that have been developed by bot builders.
 * **Druid Datastore**: Data Explorer currently uses the Druid Datastore and the bot database to conduct its analytics.
-* **Dashboard**: Users can visualize the Datasets and reports generated using Data Explorer through the use of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards). Multiple dashboards can be created to group widgets based on different use cases.
+* **Dashboard**: Users can visualise the Datasets and reports generated using Data Explorer through the use of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards). Multiple dashboards can be created to group widgets based on different use cases.
 
 ---
 
@@ -30,7 +30,7 @@ Data explorer is categorized into 2 sections:
 * **Custom datasets**: These are the custom tables created by the bot builder. A table can be customized based on your preferences. They are fetched using [database nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database)/stored [database](https://docs.yellow.ai/docs/platform_concepts/studio/database) on the **Studio** page
 
 :::note
-The labels Reports and Queries, Datasets, and Tables are used synonymously. Reports/queries are created for the data present in the Datasets/tables. These reports (default and custom) are used for complex data analysis/summarization/visualization. 
+The labels Reports and Queries, Datasets, and Tables are used synonymously. Reports/queries are created for the data present in the Datasets/tables. These reports (default and custom) are used for complex data analysis/summarization/visualisation. 
 :::
 
 ----

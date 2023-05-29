@@ -37,9 +37,9 @@ Custom fields can be added to tickets and are used to track business-specific in
 
 **Access**
 
-- **Inbox Agent** with access to edit that particular ticket will have permission to update these custom fields in the chat. 
+- **Inbox Admins** can update/create and reorder custom fields for all the tickets. Agents can also search by custom field values if they are of the type short test, long text, email, number, phone and date.
+- **Inbox Agent** with access to edit that particular ticket will have permission to update these custom fields in the chat/ticket screen. 
 - **Inbox Supervisor** can make changes to the custom fields on chat/email screen of any inbox agents they supervise. 
-- **Inbox Admins** can update/create custom fields for all the tickets. Agents can also search by custom field values if they are of the type short test, long text, email, number, phone and date.
 
     ![](https://i.imgur.com/3L9jEmR.png)
 
@@ -49,21 +49,17 @@ Custom fields can be added to tickets and are used to track business-specific in
 
 Follow the given steps to add new custom fields:
 
-1. Open **Inbox** > **Chats** > **Settings**.
+1. Open **Inbox** > **Settings**.
 2. Search and select **Custom fields**.
-
     ![](https://i.imgur.com/RS3lgWj.jpg)
 
 3. You can add custom fields for **Chat** and **Email** tickets. Select the required tab.
-
     ![](https://i.imgur.com/mdezMvJ.png)
 
 4. Click **+Add custom field**.
 5. Add the required custom field details as per your requirement.
     - **Custom field type**: Select from the dropdown ([explained below](#cftypes))
-    
         ![](https://i.imgur.com/6BMzMfs.jpg)
-
     - **Field name**: Type the name that must appear on the ticket details page.
     - **Placeholder**: This is the placeholder text that appears on the input bar on the ticket details page. Example: Enter phone number here, Type user name. 
     - **Options**: If the custom field is of the type checkbox or radio button, you must enter the values in the options field by using enter key after each value. 
@@ -77,8 +73,14 @@ This is not available for Email custom fields.
 
 6. Click **Create**. Once these fields are added, they will be listed on the ticket/chat details section on the right sidebar.
 
+#### Re-order custom fields as per their priority 
 
-### <a name="cftypes"></a> 2.1 Types of custom fields
+7. Admins can **drag** and place the custom fields in the desired order. The custom fields will be displayed in the same order in the live chat or email ticket screen. Frequently used fields can be placed at the top for easy accessibility among a larger set of custom fields.
+    ![](https://hackmd.io/_uploads/H1qbDs2rn.png)
+
+
+-------
+### <a name="cftypes"></a> Types of custom fields
 
 |  Custom field |                          Application                         |
 |:-------------:|:------------------------------------------------------------:|
@@ -102,20 +104,21 @@ For example, when the customer sends "Charging broken", the agent can obtain the
 :::
 
 
-### 2.2 Transfer/Resolve chat ticket
+### Transfer/Resolve chat ticket by providing custom fields
 
 For chat disposition with custom fields, you must mark the below checkboxes: 
 
-1. Required to create ticket- A ticket cant is created if this field value is not entered. 
-2. Required to transfer ticket- This value must be entered by the agent to transfer the ticket to another agent. 
-3. Required to close ticket- This value must be entered by the agent if the ticket must be closed. 
+1. **Required to create ticket**: A ticket cant is created if this field value is not entered. 
+2. **Required to transfer ticket**: This value must be entered by the agent to transfer the ticket to another agent. 
+3. **Required to close ticket**: This value must be entered by the agent if the ticket must be closed. 
 
 ![](https://i.imgur.com/e5TbTK6.png)
 
-If these checkboxes are marked, the agent can not dispose of the chat without providing a value for the custom field.
+If these checkboxes are marked, the agent can not transfer or resolve the chat without providing a value for the custom field.
 
 ![](https://i.imgur.com/gb1Fcyw.png)
 
+----
 
 ## <a name="3"></a>  3. Download custom fields report
 
@@ -126,7 +129,15 @@ There is a column dedicated to each custom field in the [chat archives report](h
 
 > To know how to download the chat archive report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
 
-## <a name="4"></a>  4. Automation on custom fields
+------
 
-When a custom field is updated, the app sends an event **ticket-update** with changeType **change_custom_field**, you can capture this event in Builder/Studio on [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#inb-1) to develop automation flows following custom field updates.
-For example: Updating an order in Shopify when the order ID custom field is updated in Yellow AI.
+## <a name="4"></a>  4. Event to identify custom field inputs
+
+When a custom field is updated in the platform, an event ` ticket-update` is triggered, with the `changeType` set as `change_custom_field`. This event can be captured and utilized by activating it in **Studio** on **Events**. 
+
+> For steps to create and activate events, refer to [this article](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events).
+
+By identifying the `ticket-update` event and custom fields associated with it, you can develop Studio flows to address various use cases. 
+- For example: When you have a custom field called "Order ID" in the Inbox and it gets updated, you can create an automation flow on Studio that triggers an action to update the corresponding order details on your website.
+
+This can help keep the information synchronized and save time by avoiding the need for manual updates.

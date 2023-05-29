@@ -3,6 +3,10 @@ title: SLA settings for email tickets
 sidebar_label : SLA settings
 ---
 
+:::info
+SLAs and SLA reminders are applicable only for email tickets (not live chats).
+:::
+
 **SLA introduction**
 
 A service-level agreement (SLA) defines the level of service expected by a customer from an organisation. It lays out the metrics by which that service is measured, and the remedies or penalties, if any, in case the agreed-upon service levels are not maintained. Usually, SLAs are between companies and external stakeholders such as customers or suppliers, but they may also be between two departments within a company.

@@ -22,7 +22,7 @@ You have the option to choose a custom query that includes either bot data or da
 
 To create reports on selected tables, there are two types of queries available:
 
-1. **Custom query**: This query allows you to choose a default or custom table, and provides options to filter, summarize and visualize the data using the provided buttons. With this query, you can perform actions on tables through a simple interface, without the need for any database queries.
+1. **Custom query**: This query allows you to choose a default or custom table, and provides options to filter, summarize and visualise the data using the provided buttons. With this query, you can perform actions on tables through a simple interface, without the need for any database queries.
     - Filters and logic within Filters can be used to construct queries. You can filter data by specific column values or combinations of column values.
     ![](https://i.imgur.com/Rj2r4Of.png)   
 
@@ -69,7 +69,7 @@ You can filter data by a single column value or a combination of column values. 
 
 Once you have applied filters, a button labeled **Save query** will appear. Click on this button to save the filtered data as a saved report. This report can then be accessed under the **Saved reports** section every time you open the data explorer, without the need to repeat all the filtering steps again.
 
-![](https://i.imgur.com/PM6HYDu.png)
+![](https://hackmd.io/_uploads/r1crm1qS2.png)
 
 
-> You can also summarize and visualize this data, steps are explained in further sections. 
+> You can also summarize and visualise this data, steps are explained in further sections. 

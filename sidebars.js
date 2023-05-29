@@ -317,17 +317,20 @@ module.exports = {
 {
   type: "category",
   label: "AI Voice bot builder",
+  link: {type: 'doc', id: 'cookbooks/voice-as-channel/vbintro'},
   collapsed: true,
   items: [
         "cookbooks/voice-as-channel/voiceoverview",
         "cookbooks/voice-as-channel/voicearchitecture",
         "cookbooks/voice-as-channel/components", 
+        "cookbooks/voice-as-channel/transfertoagent",
+        "cookbooks/voice-as-channel/callmgmt",
 
 
 // Reporting  
 {
   type: "category",
-  label: "Analytics and reports",
+  label: "Voice bot analytics and reports",
   //link: {type: 'doc', id: 'cookbooks/voice-as-channel/reporting/intro'},
   collapsed: true,
   items: [
@@ -339,8 +342,22 @@ module.exports = {
           "cookbooks/voice-as-channel/reporting/variables",
       ],
     },
-    "cookbooks/voice-as-channel/transfertoagent",
-    "cookbooks/voice-as-channel/callmgmt",
+
+    "cookbooks/voice-as-channel/datahandling",
+
+// Outbound campaign 
+
+{
+  type: "category",
+  label: "Outbound campaign via. voice bot",
+  collapsed: true,
+  items: [
+    "cookbooks/voice-as-channel/OBcampaign/introOBC",
+    "cookbooks/voice-as-channel/OBcampaign/setupOBC",
+  ],
+},
+
+
 
   // ---- old docs 
 
@@ -349,7 +366,7 @@ module.exports = {
 // building  
   {
     type: "category",
-    label: "How to build a voice bot",
+    label: "Build a voice bot",
     link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
     collapsed: true,
     items: [
@@ -658,6 +675,7 @@ module.exports = {
           collapsed: true,
           items: [
            // "platform_concepts/engagement/cdp/user_data/data_capture_convers",
+           "platform_concepts/engagement/cdp/user_data/userid-flow",
             "platform_concepts/engagement/cdp/user_data/store_conv_data",
           //  "platform_concepts/engagement/cdp/user_data/auto-capture",
             "platform_concepts/engagement/cdp/user_data/personalise_conversations",
@@ -1021,7 +1039,9 @@ module.exports = {
             "platform_concepts/channelConfiguration/chat-separator",
             "platform_concepts/channelConfiguration/domain-whitelisting",
             "platform_concepts/channelConfiguration/chat-widget-localization",
+            "platform_concepts/channelConfiguration/summary-card",
             "platform_concepts/channelConfiguration/pwa",
+            "platform_concepts/channelConfiguration/depoly-WA-bot",
             "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/chat-widget-errors",
             "platform_concepts/channelConfiguration/character-limits-sdk",

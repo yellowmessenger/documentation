@@ -1,6 +1,6 @@
 ---
 title: Maximizing Business Outcomes with Voice Bot KPI Tracking
-sidebar_label : Overview
+sidebar_label : Voice bot reports overview
 ---
 
 If you're using a voice bot, tracking your metrics is essential for achieving the desired results. Yellow's platform offers comprehensive tracking to give you complete insights into your bot's performance.

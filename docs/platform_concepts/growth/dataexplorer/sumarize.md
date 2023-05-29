@@ -61,30 +61,30 @@ Insights module provide users with advanced data analysis capabilities using bas
 By default, all summarized tables in Data Explorer display a **Total** at the end of each column. The type of **Total** displayed depends on the data type of the column:
 * For columns with **Integer** data type, the Total displayed will be the sum of all the values in the column.
 * For columns with **non-integer** data type, the Total displayed will be the unique count of values in the column.
-* If you have applied **Count, Sum, or Distinct** operations while summarizing data, the Total displayed will be the sum of values in the column.
-* If you have applied **Min, Max, or Average** operations while summarizing data, the Total value will be empty.
+* If you have applied **Count, Sum, or Distinct** operations while summarizing data, the Total displayed will be the *sum* of values in the column.
+* If you have applied **Min, Max, or Average** operations while summarizing data, the *Total* value will be empty.
 
 
-![](https://i.imgur.com/xlFkqvc.png)
+![](https://hackmd.io/_uploads/SyFwNy5S2.png)
 
 
 ### Add formulas(arithimetic operations) to columns
 
 You have the ability to add formulas using arithmetic operators to the required columns to quickly calculate results. This feature allows you to perform calculations without leaving the platform. 
-You can simply select the desired columns, add the formula using arithmetic operators, and apply it to calculate the results. This feature saves time and enhances your ability to analyze data efficiently in Data Explorer.
+You can simply select the desired columns, add the formula using arithmetic operators, and apply it to calculate the results. This feature saves time and enhances your ability to analyse data efficiently in Data Explorer.
 
 > This feature is available for **Saved reports**. Read more [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#4-add-a-formula-column-to-a-report). 
 
-![](https://i.imgur.com/GMTWPF7.png)
+![](https://hackmd.io/_uploads/BkMqSkqHh.png)
 
 
 ### Pivot data tables
 
-Pivot tables are a powerful feature that can help you summarize, sort, and analyze large amounts of data quickly and efficiently. With a pivot table, you can create a new table that allows you to rearrange and summarize your data by switching the rows for a base column. This feature enables you to easily analyze and understand complex data sets and identify trends, patterns, and insights that may be difficult to spot in a traditional table format.
+Pivot tables are a powerful feature that can help you summarize, sort, and analyse large amounts of data quickly and efficiently. With a pivot table, you can create a new table that allows you to rearrange and summarize your data by switching the rows for a base column. This feature enables you to easily analyse and understand complex data sets and identify trends, patterns, and insights that may be difficult to spot in a traditional table format.
 
 > This feature is available for **Saved reports**. Read more [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#5-pivot-a-report). 
 
-![](https://i.imgur.com/81wiRQM.png)
+![](https://hackmd.io/_uploads/HkOC8y5rh.png)
 
 ----
 
@@ -97,10 +97,10 @@ Pivot tables are a powerful feature that can help you summarize, sort, and analy
 
 ## 4. Save queries as reports
 
-These summarized queries can be used for future references and they will be available for quick use on the data explorer page(under **Saved reports**), click the **Save query** option available at the bottom of the page. 
+These summarized queries can be used for future references and they will be available for quick use on the data explorer page(under **Saved reports**), click the **Save query** option available at the top of the page. 
 
-![](https://i.imgur.com/gpfmER3.png)
+![](https://hackmd.io/_uploads/r1crm1qS2.png)
 
-> You can visualize this data, steps are explained in next section. 
+> You can visualise this data, steps are explained in next section. 
 
 

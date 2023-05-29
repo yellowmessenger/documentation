@@ -33,9 +33,9 @@ On the node (question, text, voice input, etc.) that you want to disconnect the 
 ![](https://i.imgur.com/T6bjkPK.png)
 
 
+------
 
-
-## 2. Manage call recording behaviour 
+## 2. Manage call recording through bot flows 
 
 
 By default, the **end-to-end call is always recorded**, but you can change this behavior (**pause, stop, resume**) based on specific cases.
