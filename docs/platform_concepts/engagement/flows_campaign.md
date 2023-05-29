@@ -76,17 +76,18 @@ To set an event for which the user qualifies to enter the flow:
 
    <center><img src="https://i.imgur.com/gwgWer5.png" width="60%"/></center>
 
-Option | Description
------- | -----------
-Campaign triggers when user | Choose the event for which the user qualifies to enter the flow. Learn more about [how to activate events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#1-activatedeactivate-event) and [how to add custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-event).
-After event, campaign triggers | Choose when to trigger the flow. <ul><li>Choose *Immediately* to trigger the campaign after the event has occurred.</li> <li>Choose *At a specific time* to trigger the campaign on a future date and time. </li><li>Choose *After a delay* to trigger the campaign after a specific number of hours, days, or weeks from the event occured time.</li></ul>
 
-   <center><img src="https://i.imgur.com/SdcMiVJ.png" width="50%"/></center>
-   
 
-4. In **Target audience**, **select one or more segments** to choose specific [user segments](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) for the current campaign; select **All users** to include all your [User 360 users](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/viewuser).
+| Option | Description |
+| ------ | ------------ |
+| **Campaign triggers when user**  | Choose the event for which the user qualifies to enter the flow. Learn more about [how to activate events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#1-activatedeactivate-event) and [how to add custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-event). |
+**After event, campaign triggers** | Choose *Immediately* to trigger the campaign immediately after the event has occured. 
+| ^ | Choose **At a specific time** to trigger the campaign on a specific date for the qualified users. <br/><img src="https://i.imgur.com/SdcMiVJ.png" width="50%"/> | 
+| ^ | Choose **After a delay** to trigger the campaign after a specific number of hours, days, or weeks from the event occured time. <img src="/img/cdp/afteraDelay.png" width="60%"/><br/> You can also define a custom property (Click **Add property input**) by which you want to trigger the campaign. <br/><img src="/img/cdp/addPropertyInput.png" width="60%"/> <br/>1. Set the duration in minutes, hours, days or weeks. <br/>2. Choose when to remind - Before or After, and <br/>3. Enter your preferred event property in the last box. <img src="/img/cdp/property2.png" width="60%"/><br/>For example, send a notification 2 days before a subscription renewal date, Send a greeting on the customer's birthdate, send a reminder 30 minutes before the appointment, or send a thank you message an hour after the flight departure. | 
+| **Campaign frequency & duration** | Setup when to run the campaign.<br/>1. In **Run this campaig**, choose *Once per user* or *Everytime when the event happens*.<br/>2. In **Start** and **End**, set the duration of the campaign (date and time). | 
+| **Target audience** | - To make the campaign applicable for specific user groups, select **One or more segments** and choose your preferred user segments.<br/>- To make the campaign enabled for all users, select **All users**. | 
 
-<center><img src="https://i.imgur.com/CEreQxC.png" width="50%"/></center>
+***
 
 
 ### User entered a segment
@@ -99,12 +100,15 @@ To trigger the campaign when a user enters a segment, on the flow builder screen
 
 Option | Description
 --------- | --------
-User entered segment | Triggers the campaign when the user enters a specific segment. Select your preferred segment in the respective box.
+**User entered segment** | Triggers the campaign when the user enters a specific segment. Select your preferred segment in the respective box.
 After entering segment, campaign triggers | Once a user enters the segment, choose when to schedule the campaign - Immediately, At a specific time, or After a delay.
-Frequency & duration | Set the campaign's frequency and duration.
-Run this campaign | Choose whether to run the campaign only *Once per user* or *Every time event happens*.
-Start / End | Choose the duration of the campaign using the calendar boxes. It should be a future duration.
-Target audience | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the campaign applicable to all users.
+**Frequency & duration** | Set the campaign's frequency and duration.
+**Run this campaign** | Choose whether to run the campaign only *Once per user* or *Every time event happens*.
+**Start** / **End** | Choose the duration of the campaign using the calendar boxes. It should be a future duration.
+**Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the campaign applicable to all users.
+
+
+*** 
 
 ### User exited a segment 
 Select this to trigger the flow when a user exits a segment.
@@ -115,15 +119,15 @@ To trigger the campaign when a user exits a segment, on the flow builder screen,
 
 Option | Description
 --------- | --------
-User exited a segment | Triggers the campaign when the user exits a specific segment. Select the segment in the respective box.
+**User exited a segment** | Triggers the campaign when the user exits a specific segment. Select the segment in the respective box.
 After exiting segment, campaign triggers | Once a user exits the segment, choose when to schedule the campaign - Immediately, At a specific time, or After a delay.
-Campaign frequency & duration | Set the campaign frequency and duration.
-Run this campaign | Choose whether to run the campaign only *Once per user* or *Every time event happens* (every time a user exits a segment).
-Start / End | Choose the duration of the campaign using the calendar boxes.
-Target audience | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the. campaign applicable to all users.
+**Campaign frequency & duration** | Set the campaign frequency and duration.
+**Run this campaign** | Choose whether to run the campaign only *Once per user* or *Every time event happens* (every time a user exits a segment).
+**Start** / **End** | Choose the duration of the campaign using the calendar boxes.
+**Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the. campaign applicable to all users.
 
 
-
+***
 
 ### User present in a segment 
 Select this to trigger the flow when a user is in a particular segment.
@@ -132,8 +136,8 @@ Select this to trigger the flow when a user is in a particular segment.
 
 Option | Description
 -------- | ---------
-User segment | Triggers the campaign only when the user is in a specific segment. Select your preferred segment in the Select segment box.<br/>[OR]<br/>To enable it for all users, select *All users*.
-Select start date and time | Choose the date and time when you want to run the campaign.
+**User segment** | Triggers the campaign only when the user is in a specific segment. Select your preferred segment in the Select segment box.<br/>[OR]<br/>To enable it for all users, select *All users*.
+**Select start date and time** | Choose the date and time when you want to run the campaign.
 
 ***
 
