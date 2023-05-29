@@ -42,10 +42,12 @@ To export data, follow the steps below:
     * **Platform analytics**: Data on User engagement, bot, API, and Inbox events.
     * **Leads**: All the user profile data.
     * **Call recordings**: All the recorded calls from the voice bot.
+    * **User 360**: All the User 360 report from engage.
+
 - Click **Next**. 
 
 
-> Export is supported only in JSON format. 
+> Export is supported only in JSON (and WAV for voice bot data) format. 
 
 
 ![](https://i.imgur.com/0HaT9yF.png)

@@ -1,5 +1,5 @@
 ---
-title: Introduction to key components of a voice bot
+title: Key components of a voice bot
 sidebar_label : Components of a voice bot
 ---
 
@@ -55,7 +55,7 @@ There are three methods to capture user input on the IVR channel that is summari
 --------
 
 
-## 2. Understanding user responses (& follow-up)
+## 2. Understanding & responding to user responses
 
 Operations on yellow.ai cloud platform must be performed to understand the user input that is available in text format and analyze and provide output in text format. For example: 
 

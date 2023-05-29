@@ -9,6 +9,10 @@ In this article, you will learn:
 3. [How to analyze reports related to SLAs](#3)
 
 
+:::info
+SLAs and SLA reminders are applicable only for email tickets (not live chats).
+:::
+
 ----------
 
 
