@@ -1,6 +1,7 @@
 ---
 title: Chat handling when the agents are offline
 sidebar_label : Offline handling
+keywords : [offline ticketing]
 ---
 
 To manage tickets raised after [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours) (or during working hours if the entire team is logged off) in the offline handling setting section. 
@@ -9,6 +10,7 @@ If none of the agents are available (all the inbox agents have logged out) to re
 Offline chats uphold the continuum of service that your customers expect. If you have customers around the globe, you can anticipate that they may need support outside of your normal operating hours. Offline handling ensured that the inquiries are acknowledged and customers receive a satisfactory answer until an agent has the opportunity to follow up.
 An offline chat is essentially a status update that informs the users that an agent is unavailable to chat. 
 
+> Offline handling is sometimes referred to as **offline ticketing**, although this configuration is applicable only for live chats. 
 
 Follow the steps below to enable offline chats: 
 

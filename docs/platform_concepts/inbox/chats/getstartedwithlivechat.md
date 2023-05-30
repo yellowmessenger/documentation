@@ -1,6 +1,8 @@
 ---
 title: Chat section and different types of chats
 sidebar_label : Getting started with live chat
+keywords : [bot messages, active chats, queued chats, open chat, missed chats]
+
 ---
 
 > Previously, **live chats** were referred to/termed as **chat tickets**. Please bear with the us while we make changes to our product and documentation. 
@@ -122,8 +124,8 @@ When any raise ticket action fails due to Inbox settings that can be controlled 
 
 ### 1.7 Bot Messages
 
-All the conversations that happen on the bot will be visible here (for admins and agents). This is an entire conversation, irrespective of the live chat request raised. 
-The purpose of this section is to monitor the bot responses. If the conversation is not going as expected, agents can take the control over from the bot and converse with the user. 
+All the conversations that happen on the bot will be visible under bot messages (for admins and agents). This is an entire conversation that the user went through, irrespective of the live chat request raised. 
+The purpose of this section is to monitor the bot responses (bot messages). If the conversation is not going as expected, agents can take the control over from the bot and converse with the user. 
 
 > - For advance functionalities, you can see the [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs) in **Studio**. For example: To check if the bot is responding correctly, you can check the conversation logs.             
 > - If you have only Inbox agents/admins access consult your bot admin for Studio access. 
