@@ -25,9 +25,9 @@ A CSV file cannot exceed 30 MB.
 
 1.  **Use appropriate header names**: It becomes easy to map headers when their names are similar to user properties.
 2.  **Use the right data type**: Data type validated before importing each user record. If the validation fails, adding or updating the record will fail. 
-3. **Supports only UTF-8 characters**: Use UTF-8 encoded CSV files.
 
-The following table shows the data types of each user property with accepted values.
+
+   The following table shows the data types of each user property with accepted values.
 
 
 | Data Type | Accepted Value |
@@ -50,6 +50,7 @@ The following table shows the data types of each user property with accepted val
 
    ![](https://i.imgur.com/8CKrTCS.jpg)
 
+6. **Supports only UTF-8 characters**: Use UTF-8 encoded CSV files.
   
 :::note
 * It is required to pass phone numbers with country codes in a CSV file.

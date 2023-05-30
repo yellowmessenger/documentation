@@ -16,6 +16,8 @@ Bot users are classified into the following categories:
 
 When a user starts a conversation with the bot and starts capturing user properties, it automatically creates a new unidentified record in User 360. A record for which the userId is unknown is considered as an unidentified record. The ongoing session is always mapped to the record in user 360 and user properties captured will be stored in that record.
 
+   ![](/img/cdp/userrecord_blank.png)
+
    ![](https://i.imgur.com/3nMWou9.png)
 
 The following table summarizes the behavior of userId capturing in User 360.
