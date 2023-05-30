@@ -159,13 +159,13 @@ You can see the Status of the import.
 
 ## Step 3: Analyse import errors
 
-Once you import a CSV file, you can check the status of those records - new records, updated records, and failed records. 
+When importing a CSV file, it is important to analyze any potential errors that may occur:
 
-During the import, it is possible that new records are not always created but could also result in one or more of the following:
+* **New records**: New records will be created with the new userIds provided in the CSV file.
+* ***Failed records**: This can occur due to incorrect column mapping, data type mismatches, or other errors that prevent the addition or updating of users.
 
-- Created new records with the details provided in the CSV file.
-- Updated existing records with details provided in the CSV file.
-- Failed to add or update users due to wrong column mapping, data type mismatch, or some other error.
+To ensure data accuracy, it is important to carefully review and address any import errors that arise.
+
 
 To see errors in the import:
 
@@ -189,10 +189,15 @@ Status | Status of the import - In progress, Completed, or Cancelled.
 
    ![](https://i.imgur.com/PVDp28M.png)
 
-   **Summary**: Shows the count of user records that were newly added, failed, and merged into the existing user records.
-- Records that were imported as new users (new users).
-- Records for which import failed (failed records).
-- Records that were merged into existing users (updated records). The following information is available for failed records:
+The following sections provide descriptions for each column in the error report.
+
+#### Summary
+
+The summary report provides information on the count of user records based on their status, including newly added, failed, and merged records.
+
+- New users: Records that were imported as new users.
+- Updated records: Properties or fields that were merged into existing records. 
+- Failed records: Records for which import failed. You can see information on the specific errors encountered as mentioned in the following:
 
    * **BOT_ID**: Bot ID for which the CSV was uploaded.
    * **REQUEST_PAYLOAD**: The user record for which an import was attempted but FAILED.
