@@ -54,10 +54,10 @@ if (userIsAuthenticated) {
 ## Chat widget related FAQs
 
 <details>
-<summary>How to improve the website's performance after installing the bot?</summary>
+<summary>How to resolve the website performance issue after installing the bot?</summary>
 <div>
  <br/>
- <div>Ensure that the chatbot script is pasted in the &lt;body&gt; of the website rather than the &lt;head&gt;. This will ensure the bot loads only when the website is fully loaded without affecting its performance.</div>
+ <div>Ensure that the chatbot script is placed within the &lt;body&gt; tag of the host website rather than the &lt;head&gt;. This will ensure that the bot loads only when the website is fully loaded without affecting its performance.<br/><img src="https://i.imgur.com/M362zHu.jpg"/></div>
   </div>
 </details>
 
@@ -208,6 +208,46 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 
 
 </div>
+  </div>
+</details>
+
+<details>
+<summary>Does chat widget support HTML tags?</summary>
+<div>
+ <br/>
+ <div>No, the chat widget does not support HTML tags. In order to maintain security and prevent web attacks, HTML tags are blocked within the widget. Any content containing HTML tags will be converted into plain text for display.<br/><img src="https://i.imgur.com/lJ8MfpE.png)" alt="drawing" width="40%"/></div>
+  </div>
+</details>
+
+<details>
+<summary>Does chat widget automatically aligns the text based on the selected language?</summary>
+<div>
+ <br/>
+ <div>Yes, the widget automatically aligns the text based on the selected language. For example, English, Hindi, Spanish, and so on are aligned from left to right. Languages like Arabic and Dhivehi are aligned from right to left.<br/> <b>Note:</b> If a text message contains both languages, the text will be aligned based on the language set in the bot at the respective step.<br/><img src="https://i.imgur.com/55dKIEv.png"/></div>
+  </div>
+</details>
+
+<details>
+<summary>Does chat widget support auto-complete feature?</summary>
+<div>
+ <br/>
+ <div>Yes, the chat widget supports auto-complete. To set up auto-complete, follow these steps:<br/>• You need to enable auto complete in [Yellow.ai Platform](https://cloud.yellow.ai) > <b>Channels</b> > <b>Chat widget</b> > <b>Settings</b> > enable <b>Auto complete</b> > click <b>Save changes</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settings">here</a><br/><img src="https://i.imgur.com/268ATI6.png)" alt="drawing" width="60%"/><br/>• Navigate to <b>Studio</b> > select a flow > click on the respective <b>node</b> > click <b>Make prompt smarter</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#4-make-prompt-smarter">here</a>.</div>
+  </div>
+</details>
+
+<details>
+<summary>How to disable Message feedback?</summary>
+<div>
+ <br/>
+ <div>By default, message feedback is enabled for all bots. This helps to gather feedback on how helpful bot responses have been to the end user. It is recommended not to disable Message feedback. However, you can disable message feedback from <b>Channels</b> > <b>Chat widget</b> > disable <b>Message feedback</b> > click <b>Save changes</b>.<br/><img src="https://i.imgur.com/rtH0zGw.png)" alt="drawing" width="60%"/></div>
+  </div>
+</details>
+
+<details>
+<summary>How to restrict users from clicking on carousel card buttons repeatedly?</summary>
+<div>
+ <br/>
+ <div>Go to <b>Studio</b> > Select the <b>flow</b> > Click on <b>Carousel</b> node > Click <b>Settings</b> icon > Enable <b>Disable action after click</b><br/><img src="https://i.imgur.com/gaKpuvd.png)"/></div>
   </div>
 </details>
 
