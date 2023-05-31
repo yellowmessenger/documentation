@@ -51,6 +51,7 @@ module.exports = {
           "cookbooks/studio/images-languages",
           "cookbooks/studio/storeApiResponse",
           "cookbooks/studio/qr-node",
+          "cookbooks/studio/usecases-functions",
 
       ],
     }, 
