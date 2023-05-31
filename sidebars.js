@@ -51,6 +51,7 @@ module.exports = {
           "cookbooks/studio/images-languages",
           "cookbooks/studio/storeApiResponse",
           "cookbooks/studio/qr-node",
+          "cookbooks/studio/usecases-functions",
 
       ],
     }, 
@@ -1256,6 +1257,7 @@ module.exports = {
       label: "2023 updates",
       collapsed: true,
       items: [
+        "updates/2023/april2023",
         "updates/2023/mar2023",
         "updates/2023/feb2023",
         "updates/2023/jan2023",

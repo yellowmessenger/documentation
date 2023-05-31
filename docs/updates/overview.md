@@ -1,14 +1,10 @@
 ---
-title: April 2023
-sidebar_label: Latest product updates (Apr 2023)
+title: May 2023
+sidebar_label: Latest product updates (May 2023)
 featured: true
 ---
 
-   
-
 ![](https://i.imgur.com/Wj06Bz6.png)
-
-
 
 <details>
 <summary>
@@ -18,119 +14,133 @@ featured: true
 </summary>
 
 
-| New feature | Description |
+| New features | Description |
 | -------- | -------- |
-| **Dynamic AI based chat for goal based conversations** | Our ChatGPT-powered feature guides users towards a goal, like lead generation, without the need for extra bot messages or context handling. The result is a more natural conversation experience, better goal completion rates, and higher bot conversion rates. <br/> <br/>**This feature is in beta currently**|
-       
+|  **Simplify the process of designing customer interactions with Dynamic chat node** | Just input the desired tasks into the node, and it will automatically engage in the corresponding conversation with customers, eliminating the need to create separate flows and nodes for each interaction. <br/> <br/>**This feature is activated upon request.**|
+| **Seamless bot creation in minutes with Zero Setup** | You can now effortlessly generate a bot by just providing your website link and supporting files. This bot will be able to handle address customer queries. <br/> <br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/kb)|       
     
 </details>
+    
 
-
-
+    
 <details>
 <summary>
 
-### Insights
+### User 360 + Studio
 
 </summary>
+
 
 | New features | Description |
-| --- | --- |
-| **Alerts to notify bot failures** | Proactively monitor failures and issues in the bot by creating alerts to notify you when set rules are met. <br/> <br/>**[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/health)** |
-| **Analyze your campaign performance with our new Campaign Notifications Report** | Gain valuable insights into your campaign performance with our new report. Monitor important details such as campaign dates, template IDs, status updates, and message counts all in one place.<br/> <br/>You can easily download the report or schedule it to be sent to your email on a recurring basis, providing you with regular updates on your campaign performance. It is available under **Metrics** > **Export**. |
-| **Hourly grouping of timestamps for efficient data analysis** | You can use the 'Group by Hourly' option to group timestamps while summarizing a table. |      
+| -------- | -------- |
+|  **Nudge userIds with User idenitfication flow** | The flow identifies bot users before starting a conversation by capturing their unique identifier (userId) at the beginning. This is crucial for a personalized and engaging user experience.|
+      
+    
 </details>
 
-<details>
+ 
+ <details>
 <summary>
 
-### Engage 
+### Integrations
 
 </summary>
 
-| New feature | Description | 
-| --- | --- | 
-| **Introducing a new channel in Flows: Outbound Campaigns on Google Business Messages** | Flows now support a new outbound campaign channel, allowing you to utilise Google Business Messages (GBM) for your marketing campaigns.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/gbm-template) | 
-    
 
-| Enhancement | Description |
+| New features | Description |
 | -------- | -------- |
-| **Automated location-specific data capture for web and Whatsapp bots to improve user records' accuracy and completeness** <br/> | Our system now automatically captures location-specific information on your Web and WhatsApp bots. The Web bot uses the user's IP address to capture timezone and country, while the WhatsApp bot captures the user's country through their phone number. <br/><br/> [**Learn more**](https://docs/yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#automated-capturing-of-location-specific-data) |
-
-
-
+|  **Introducing Google Playstore integration** |  Yellow.ai integrates with Google Play Store, enabling agents to effectively address and respond to user reviews received for their apps.|
+      
     
 </details>
 
+----
 
-<details>
+ <details>
 <summary>
 
 ### Channels
 
 </summary>
 
-| Enhancements | Description |
-| --- | --- |
-| **Introduced Favicons to enhance user experience with distinctive website icons** | While a user is on a different page or screen, the widget displays a favicon along with a text message.<br/> |
-| **Domain whitelisting to protect your bot script and prevent unauthorized use** | You can whitelist a set of domains on which your bot can be loaded, preventing others from copying your script and using the bot on their websites. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/domain-whitelisting) |
-| **Mobile SDK resources made available in the deploy section for quick access to help** | The Setup page includes help documentation links for the corresponding SDK under the Deploy section to assist in deploying a chat widget on your mobile application.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#24-deploy-chat-widget) |
-| **Introducing the Minimize Banner option to streamline the user experience for bots with multiple banners**| If multiple banners are configured for a chatbot, they are automatically scrolled every five seconds. When this option is enabled, the close button is replaced with a minimize button.<br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#110-callout-banner) |
-| **Encrypt ymAuthenticationToken for enhanced protection** | You can encrypt your tokens before loading the chat widget for added security. |
-    
-
-</details>
-
-<details>
-<summary>
-
-### Integration  
-
-</summary>
-
-| New feature | Description |
-| -------- | -------- |
-| **Simplified schedule management with MS Outlook** <br/> | This integration lets you manage your Microsoft Outlook account from yellow.ai. <br/><br/> You can easily create, reschedule, retrieve, and cancel online meetings and events, view the availability of others, suggest convenient meeting times, and attach files to events for easy organization. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/outlook-calendar) |
-
-</details>
-
-
-<details>
-<summary>
-
-### Voice
-
-</summary>
 
 | New features | Description |
-| --- | --- |
-| **User Raw Utterance Recording to analyze Speech-To-Text** | Record user speech separately for each question to analyze STT accuracy. |
-| **Conversational Latency Recording to analyze factors impacting latency** | Record turn-level conversational latency and atomic factors impacting latency (For example, STT time, NLP processing time, TTS time). |
-| **Sending Top 5 STT transcriptions with confidence for better user response** | Send Top 5 utterances (including the highest confidence one) after STT to help NLP improve user response. |
-| **Configuration for Ignoring low volume/clarity voice for better experience** | Ignore low volume/clarity voice transcription by setting a confidence factor. |
+| ------------ | ----------- |
+|  **Introducing Apple Buisiness Chat** |  Apple Business Chat in yellow.ai allows seamless customer interactions. Users can acknowledge order confirmations via text, while agents can send useful images. The bot provides helpful videos and order receipt files, making it easier for users to respond with Quick Reply. <br/><br/> [Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/abc)|
+|  **Introducing Facebook workplace** |  Yellow.ai facilitates the **Facebook Workplace** channel, offering employees the ability to apply for leave, receive feedback from managers, request device changes, check Jira ticket statuses, and access onboarding guides. This powerful collaboration platform simplifies administrative tasks, enhances communication, and promotes productivity within organizations. <br/><br/> [Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/fb-workplace)|
+|  **Effortless communication with speech-to-text (STT) in the Chat Widget** |  Speech-to-Text (STT) in the Chat Widget converts spoken words into text, enabling the chatbot to understand user queries and respond accordingly. STT saves time by eliminating the need for typing and improves intent interpretation compared to text-based messages. <br/><br/> [Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/speech-to-text#enable-stt-in-your-chatbot)|
 
+ 
     
+| Enhancements | Description |
+| -------- | -------- |
+|  **Enhance user experience with auto language adaptation** |  The chat widget can now dynamically adjust text based on the user's language preference, supporting multiple languages for placeholder texts, tooltips, and time stamps. <br/><br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-localization)|
+|  **Tailor the bot's appearance** |  Customize the way the chat widget looks using the widget panel. <br/><br/> [Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#2-customize-chat-widget)|
+|  **Curate the bot's debut with Initial state** | Define the chatbot's appearance for new users. <br/><br/> [Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#21-customize-bot-look--feel-design)|
+|  **Elevate user experience through interactive summary cards** |  The chat widget has summary cards that deliver precise information, feedback options (👍 and 👎), and reference links. These visually appealing cards enrich the user experience by presenting relevant information in a concise format, covering product details, user inquiries, and interaction information. <br/><br/> [Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/summary-card)|
+|  **Notification sounds for bot and user messages** |   The chat widget alerts users with sound notifications for new messages from bots or agents. Customize your experience by enabling or disabling message sounds in the Settings section. <br/><br/> [Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-notification)|
+|  **Send descriptive messages in one go using multiline input** |  Enable Multi-line input to enter text in multiple lines. Once enabled, pressing the enter key will move the cursor to the next line instead of sending the message. <br/><br/> [Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settings)|
     
 </details>
 
+----
 
-<details>
+
+
+ <details>
+<summary>
+
+### Insights
+
+</summary>
+
+
+| Enhancements | Description |
+| -------- | -------- |
+|  **Introduced two new access control roles** |  1.  **Insights (Analytics)** - This role can access all standard analytics, monitor bot health, track user journeys and goals.<br/> <br/>2. **Insights (Admin**) - This role will have access to all available data and analytics.<br/><br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights#2-manage-access-and-permission-to-insights)|
+|  **Unlock powerful data insights with Data explorer advanced analytics** |  Perform arithmetic operations on aggregated columns with **Formula Columns** and customize report structure through **Pivot Tables**.<br/><br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#4-add-a-formula-column-to-a-report)|
+|  **Export User 360 data to a third-Party system for enhanced data utilization** |  You can export user 360 data on to external system via data ops.<br/><br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/dataops#1-data-export)|
+|  **New playstore filter to filter insights data** |  You can filter insights data for the play store channel via **Insights > Overview > All channels**.|
+|  **Refine insights with Play Store filter** |  You can find knowledgebase analytics on Data Explorer> Default tables.<br/><br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/defaulttables#1-types-of-default-tables)|      
+    
+</details>
+
+-----
+
+ <details>
 <summary>
 
 ### Inbox
 
 </summary>
 
+
 | Enhancements | Description |
-| --- | --- |
-| **Displaying agent alias name for agent's privacy** | This allows agents to use an alias instead of their real name when communicating with customers. The customer will see the agent's alias name during conversations. However, we will maintain the agent's real name for reporting and monitoring purposes on the platform. This feature helps to protect the agent's privacy while still maintaining the highest level of customer service possible. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/cookbooks/inbox/alias) |
-| **Text editor for no-code email ticketing** | We have added a rich text editor that allows a more customized and user-friendly experience. The editor includes options such as attaching files, utilizing ticket variables, and formatting text. <br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing) |
-| **Canned response search for accurate search results** | Users can now search for canned responses based on both the keyword and the content of the response. This saves time and improves the accuracy of the search results. <br/> Please note that media type canned responses can only be searched using the defined keyword or tag. |
-| **Chat summarisation to understand bot conversations in one click** | Summarise chat is an AI powered feature that automatically generates a summary of the entire conversation. This eliminates the need for agents to manually read through multiple exchanges between the bot, agent, and customer, and provides them the entire context of the ticket.<br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai#summarize-chat-conversation) |
-| **Tone selection for personalised conversations** | With this agents can now select a different tone for their responses based on the customer's mood and the nature of the conversation. By selecting an appropriate tone, agents can create a more empathetic and personalized interaction with customers.<br/> <br/>[**Learn more**](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai#change-the-tone-of-a-typed-message) |
-    
+| -------- | -------- |
+|  **Streamline field access** | You can easily rearrange essential 5-7 custom fields on the **Settings** page. By positioning them at the top of the list on the My Chats page, agents gain quick access and eliminate the need to scroll through irrelevant fields.<br/><br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields#re-order-custom-fields-as-per-their-priority)|
+|  **Unlock valuable insights on Knowledgebase data** |  Access and analyze your knowledge base data effortlessly through the Data Explorer. Uncover valuable insights and make informed decisions based on your knowledge base analytics.<br/><br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/defaulttables#1-types-of-default-tables)|
+|  **Enhanced performance and scalability** |  Latest update targets reported performance issues on the MyChats Page. The speed and responisiveness have been inproved.|
+|**Enhanced communication control**|Agents are restricted from directly responding to customers, allowing only internal notes.<br/><br/>[Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#-2-configure-chat-screen-ui-for-agents)  
     
 </details>
 
+-----
+
+  <details>
+<summary>
+
+### Inbox + Mobile (Partner app)
+
+</summary>
+
+
+| Enhancements | Description |
+| -------- | -------- |
+|  **Support to view Whatsapp list messages** | Users can view Whatsapp list messages within the app.|
+|  **Image and text display for WhatsApp messages** |  Users can easily view both the image and accompanying text as a single, unified message within the app.|
+|  **Reference message display enhancement** |  Similar to regular WhatsApp, agents can now view the message to which the customer replied, enabling more effective and meaningful conversations.|
+|  **Send approved templates** | You can now send pre-approved templates after the 24-hour window of active conversation ends. This enables continued communication and compliance with WhatsApp policies.|
+    
+</details>
 
 
