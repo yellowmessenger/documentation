@@ -4,186 +4,111 @@ sidebar_label: Intents
 tags: [intent detection nlp ,intent extraction nlp , intent in nlp,intent nlp, intent recognition nlp, nlp intent, nlp intent classification, nlp intent extraction, nlp intent recognition, nlp intent recognition python, why is intent important in negotiations nlp, intent identification nlp]
 ---
 
-The following topics will be covered in this artice,
 
-1. [What are intents?](#intent)
-2. [How to add intents and utterances?](#add) 
-3. [How to train Intents?](#train)
-4. [How to test bots prediction-accuracy?](#test)
-5. [How to resolve clashes in intents and utterance?](#clash)
-6. [Best practices to create intents and utterances](#bp)
+Intent is the purpose or goal behind someone's action or words. In natural language processing, it specifically relates to determining a user's intention in a conversation, like asking a question, making a request, or giving information. 
 
-:::info
-The words **Flows** and **Journeys** are used synonymously.
-:::
+Let's say that you want to book a flight to Singapore, **book a flight** is the intent of this sentence.
 
-------
-
-
-## <a name="intent"></a> 1. Intents overview
-
-Intent refers to the purpose or goal behind an action or uterance. In the context of natural language processing, it often refers to the underlying intention of a user in a conversational context, such as the intention to ask a question, make a request, or provide information. Understanding the intent behind a user's input is crucial for building effective conversational AI systems.
-
-Knowledge of word meanings or sentence formation help in training the AI Models better with a few key concepts such as **Intents**, **Entities** and **Context**.
-
-For example, any sentence can be broken down into smaller components - 
-
-
-![](https://cdn.yellowmessenger.com/7M9C8YcyuCJk1626109495211.png)
-
-
-
-| **Intents** | **Entities** | **Context** |
-| -------- | -------- | -------- |
-| These are the literal meanings or core objectives of any sentence like in the above example it is **booking a flight**.| These are facts or additional information that adds meaning to sentences, for example, Delhi, New York and 11th August.| In a day-to-day conversation, this generally refers to the underlying meaning of the previous few exchanges. For Example - if a person is asking repeated questions about a product and says "Buy IT", the IT here refers to the product.     |
-
-
-
-On our platform, you can add your **intents** (the intention of the bot users response) and **utterances**(the information that the bot user asks for when this intention is detected). **Train** the model to recognise such sentences. 
+On our platform, you can add **intents** (the purpose of the bot users' response) and **utterances** (the various responses used by bot users for a specific intent, for example, to book a flight the utterances can be 'flight booking' or 'book flights'). You need to **train** the bot to identify and understand these sentences.
 
 ---
 
-### 1.1 Zero-shot model 
-
-Yellow.ai DynamicNLP is based on cutting-edge technology, Zero-shot Learning, that will allow you to bypass the tedious, complex, and error-prone process of model training.
-Continuous upgrade to the NLP engine helps our Dynamic AI Agents improve the intent performance, which ensures that your customers get accurate responses from day one. Our NLP has “seen” all different syntactic variations of sentences from billions of conversational data. With a better understanding of the context and intention of their queries, your customers enjoy a seamless experience.
-You can just add in your intents by following our [Intent naming conventions](#Intn) and train the bot.
-
----
-
-Even though Zero-shot model does not require manual addition of utterances, we will consider that scenario and discuss  intent and utterances in this document. 
-
-### 1.2 Use-case 
-
-Creating intents for Jimmy's cafe:
-
-> *You are the owner of Jimmy's cafe and are setting up a bot for your website. Your customers would like to enjoy the simplicity of ordering a coffee through your bot. For this to happen, you want your bot to understand the different ways a customer may ask to place an order so that the [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) you built gets triggered.*
-> **I want coffee** will be recognized as intent: **#ordercoffee**.
-> **I want a croissant** will be recognized as intent: **#ordersnack**.
-
-After creating the required flows, click on **Intents** in the **Train** dropdown. Use the `i` key to access Intents directly from any Studio page. 
-
-## <a name="add"></a> 2. Add intents and utterances  
-
-To add intents and utterances, follow the given steps: 
-
-### 2.1 Create a flow 
-
-A prerequisite to training your bot with the required intents is to have a basic flow ready. Create your first [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) in the studio module of the platform. 
-
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/getting-started#step-by-step-guide-on-how-to-get-started-with-yellowai) to learn more. 
-
-
-### 2.2 Open intents page
-
-After creating the required flows, click **Studio** > **Train** > **Intents**. 
-
-![](https://i.imgur.com/5EJzAUi.jpg)
-
-:::tip
-You can access Intents using the keyboard shortcut `i`.
+:::note
+Yellow.ai DynamicNLP simplifies the process of model training by utilizing advanced technology called Zero-shot Learning. This eliminates the need for tedious and error-prone training processes.
 :::
 
-### 2.3 Add intent
+## Add intents and utterances 
 
-There are several ways in which a customer would like to  place an order for a cup of coffee:
-* Place an order
-* I want to place an order
-* Place order, and many more...
-
-You can group all these statements in an intent called **order**. 
-
-To add a new intent, click on **+Add new Intent** button and manually add the first Utterance.
-
-![](https://i.imgur.com/aXfco3M.png)
-
-:::info
-With “Yellow.ai DynamicNLP”, NLP based on Zero-shot learning we eliminate the need for training the NLP model with utterances. To take advantage of this, follow the guidelines in Best Practices > [6.1 Intent Naming](#Intn) .
-:::
-
-### 2.4 Add utterance
-
- Utterances are phrases or queries that users may type in the bot conversation with an expectation of a response to that exact query. These utterances need to be added to each intent for the bot to identify the intent based on the utterance.
-
-There are two ways to add Utterances to an intent:
-
-#### 2.4.1 Add utterance manually
-
-While adding utterances manually to your intent, you do not need to pay attention to the case of the utterance, the bot will consider all such scenarios.
-
-Type in your utterance and click  **+Add** to add the utterance to an intent.
-
-![](https://i.imgur.com/N7S5mO5.png)
-
-#### 2.4.2 Use suggested utterance
-
-Yellow.ai has data collected from over 100+ bots. This data is used to curate the suggested utterance section. In this section, you can see phrases similar to the first utterance you added. 
-
-The refresh button will allow you to access a fresh batch of utterances every time you click on it. You may add a few utterances by clicking the **'+'** sign next to them or add all of them by selecting the check box next to 'Suggested utterances'.
-
-![](https://i.imgur.com/YQ9p7HK.png)
-
-This would save you the effort of thinking of phrases and help you create intents in minutes.
-
----
-
-## <a name="train"></a> 3. Train intents
-
-Click **Train Intents**.
-
-You can train the intent after adding 2 utterances, but it's recommended to train your intent after adding at least 15 utterances. 
-
-![](https://i.imgur.com/DCbNCkp.png)
+Intents represent the intentions or goals behind user inputs, while utterances are the specific phrases or queries users use to express those intentions. By mapping utterances to corresponding intents, the bot can accurately understand and respond to user queries.
 
 
-### 3.1 Change epochs 
+1. Create a [flow ](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)and add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) based on the conversation design.
 
-(Optional)
+  > Intents are added to trigger this flow or a identify user goal and trigger this flow accordingly.
 
-You can increase the number of epochs for training your intent. The number of epochs is set to 20 by default. However, they could be a deciding factor when it comes to underfitting or over-fitting the model.
+2. Go to **Train** > **Intents** > **+ Add new intent**.
 
-![](https://i.imgur.com/pGySd37.png)
+![](https://i.imgur.com/fIxfttM.png)
 
-### 3.2 Connect to bot
+3. Provide a name to your intent, followed by the utterances that should trigger that flow.
 
-After training intents you can connect it to your bot. You have to connect the flow you built to the intent '**Order**'. To do this click the [Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) and configure the intent to the node. 
+<img src="https://i.imgur.com/WjgI4nY.png" alt="drawing" width="70%"/>
 
+ > To add multiple utterances, click **Add another utterance**.
 
-Click the drop-down and select ‘**#order**’ intent.
+4. Click **Add intent** when you're done.
 
-![](https://i.imgur.com/weM5JJD.png)
+## Add utterances manually
 
-Every time a user asks a query similar to the utterances within 'order' the flow you created would get triggered.
+Type in your utterance and click **+Add** to add the utterance to an intent.
 
-:::success
-Congratulations! You trained and connected your first intent! :tada::tada::tada:
-:::
----
+![](https://i.imgur.com/FGlxFu1.png)
 
-## <a name="test"></a> 4. Test intents
+## Add suggested utterances
 
-Once you have trained your intent you can test it for the results and retrain it (if required) based on the utterance report. 
-There are two methods to test your intent. 
+The Yellow.ai platform generates suggestions for utterances. In this section, you will find phrases similar to the initial utterance you provided.
 
-### 4.1  Test bot
+### Generate utterances
 
-To test your bot you can follow these steps:
+The refresh button will allow you to access a fresh batch of utterances every time you click on it. You may add a few utterances by clicking the **+** sign next to them or add all of them by selecting the check box next to **Suggested utterances**.
 
-* On the **studio** page, click the right panel to test your bot.
-* To test your intent, type "**Place an order**" in your bot.
-* You will see that your flow gets triggered.
+![](https://i.imgur.com/lPgv03i.png)
 
-![](https://i.imgur.com/WqSgkzc.gif)
+### Add utterances in bulk
 
+To add them in bulk, select the preferred ones and click **Add selected** on top.
 
+### Edit utterances
 
-### 4.2 Test intent
- 
-To see what response is generated by the model when a user types a query. Click on [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools) and the section 'Test your bot'.
+The suggested utterances can also be edited, click the pen icon to do so.
 
-You can test how confident your bot is about a phrase and whether it can identify the intent you just built.
+## Train your bot with intents
 
-```json=
+Once you have added the intents and utterances, click Train intents to train your bot on this data.
+
+![](https://i.imgur.com/1yo9Lwa.png)
+
+### Train your model
+
+You can train your bot on the following features by setting the right number of epochs.
+
+* Sentence encoder
+* Multilingual
+* Bahasa
+
+1. Click the arrow.
+
+![](https://i.imgur.com/w44xhyP.png)
+
+2. Choose the **Feature type** and set the required number of **Epochs**.
+
+![](https://i.imgur.com/QNdA2w0.png)
+
+3. Click **Train**.
+
+## Map intents to flows
+
+To trigger a flow, set this intent to that flow. 
+
+1. Go to the respective flow and click the **Start** node.
+
+![](https://i.imgur.com/dxHgwao.png)
+
+2. Choose **Intent** and select the intent.
+
+## Test your intents
+
+There are two ways by which you can test your intents, you can either test the flows in which they are set or you can test them in the **Tools** section.
+
+To know about testing specific flows, click [here.](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) 
+
+To test your bot's confidence and intent identification: 
+
+1. Go to **Tools** > **Test your bot** and enter a phrase. Upon hitting enter, a generated code will display the bot's response to that intent. 
+
+In the example code below, the bot confidently recognizes the phrase as part of the **order intent**, with a confidence score of 0.999.
+
+```
 {
   "text": "place order.",
   "intents": {
@@ -196,33 +121,22 @@ You can test how confident your bot is about a phrase and whether it can identif
   "entities": {}
 }
 ```
- 
-As you can see in the above code, the model understands that the phrase is a part of the intent '**order**' and is completely confident about it (0.999). 
 
-You can also [automatically generate intents and utterances](https://docs.yellow.ai/docs/cookbooks/studio/regressiontest) and test them in your bot.
+## Resolve conflicts in intents and utterances 
 
 
----
-
-## <a name="clash"></a> 5. Resolve clashes in intents and utterances
+A bot is trained with multiple intents and entities to improve its performance. If utterances are not classified correctly during training, it can lead to confusion. To resolve these clashes caused by unclear utterance classification, it is necessary to analyse the report..
 
 
-A bot is trained with multiple custom intents and entities to get the best result. There might be situations that will confuse the bot if the utterances are not classified correctly while training. These clashes that have resulted due to unclear utterance classification can be resolved by studying the utterance report. 
+### Download utterance report
 
-Follow the given steps to learn: 
-1. How to download an utterance report 
-2. How to resolve clashes among utterances 
-
-
-### 5.1 Download utterance report
-
-1. Open **Studio** > **Train** > **Intents** , click **Generate utterance report**.
+1. Go to  **Studio** > **Train** > **Intents** , click **Generate utterance report**.
 
 
 ![](https://i.imgur.com/Botct6y.png)
 
 
-2. Two reports will be sent to your registered email ID. 
+2. Two reports will be sent to your registered email address. 
 
     * Utterances within intents/faqs
     * Utterances across intents/faqs 
@@ -232,31 +146,30 @@ Follow the given steps to learn:
 
 :::note
 
-- Report for **utterances within intents/faq** highlights similar or extremely diverse utterances that must be edited within an intent/FAQ including clashes due to entity featurisation.
-- Report for **utterances across intents/faqs** highlights similar utterances across the flows, it will recommend you to change any one utterance of the similar pair including clashes due to entity featurisation.
+*  **Utterances within intents/faqs** report identifies similar or highly diverse utterances that require editing within a specific intent/FAQ, including clashes caused by entity features.
+* **Utterances across intents/FAQs** report identifies similar utterances across different flows and suggests modifying one of the similar utterances, taking into account clashes caused by entity features.
 :::
 
-### 5.2 Resolve clashes among utterances 
+### Resolve conflicts among utterances 
 
-Utterance reports sent to your mail ID are used to evaluate how well your bot utterances are designed. You can learn how 'similar' your utterances are within an intent and if there are any intents common in between the flows.
+Utterance reports sent to your email address help evaluate the quality of your bot's utterances. They provide insights into the similarity of utterances within an intent and identify any common intents across different flows.
 
 :::note
-It is recommended to generate an utterance report after initial Train setup and regularly at least once a month.
+It is recommended to generate an utterance report after initial **Train** setup and regularly at least once a month.
 :::
 
-#### 5.2.1 Conflicts within intents and FAQ's
+#### Conflicts within intents and FAQ's
 
-This report will point to the relationship between the two utterances as a conflict if they have a high similarity.
-It is a comparison between utterances of the same intents.
+This report identifies conflicts between two utterances if they have a high level of similarity. It compares utterances within the same intents.
 
-If the similarity is more than 50%, you must go to the respective Intents page and delete one of the similar utterances or rephrase the sentence. 
+If the similarity exceeds 50%, you need to visit the respective Intents page and either delete one of the similar utterances or rephrase the sentence.
 
 ![](https://i.imgur.com/WCHtIPg.png)
 
-If the similarity is less than 50%, it can be ignored. 
+If the similarity is less than 50%, ignore it.
 
 
-#### 5.2.2 Conflicts across intents and FAQ's
+#### Conflicts across intents and FAQ's
 
 This is a comparison between utterances of different intents.
 
@@ -266,37 +179,35 @@ If the similarity is more than 50%, you must go to any of the Intents page and d
 
 ----
 
+## Best practices
 
-## <a name="bp"></a> 6. Best practices
+The following are the recommended best practices to follow while naming intents and adding utteraces to them.
 
-This section is divided into:
 1. [Best practices to follow while naming intents](#61-intent-naming)
 2. [Best practices to follow while adding utterances to the intents](#62-utterance--flows)
 
 
-### <a name="Intn"></a> 6.1 Intent naming
+### Naming intents
 
-There are guidelines for new bots and for the bots in productions. For your intent to work best globally, follow the respective guidelines:
-
-#### 6.1.1 New bots
+#### For new bots
 
 Bots created after August 1, 2022.
 
 1. Intent names must be at least 3 words long with unique words and no special characters. 
-    * Be mindful of intent names, make sure they are as descriptive as possible.
-    * Don't create intent names like intent test one, FAQ number one etc.
-    * Bad intent names will result in bad NLP performance (False positives) and unnecessary issues in the bot.
-    * For Cloud, it is possible to rename intent names.
+    * Ensure intent names are descriptive to enhance clarity.
+   * Avoid using generic names like "intent test one" or "FAQ number one".
+   * Poor intent names can negatively impact NLP performance, leading to false positives and unnecessary bot issues.
+   * In the case of cloud, renaming intent names is possible.
 2. The more descriptive the intent name, the better (add names with more than 3 words).
 3. Avoid uncommonly and business-specific abbreviations: Example: PO (purchase order ), GMV, etc - use the full forms and add synonyms if necessary. Few common abbreviations like UPI, EMI, and HR are acceptable.
 4. Phrase the intent name as a verb followed by a noun. Example: get a premium receipt, pay renewal amount, fetch order status.
 5. Keywords and sentences less than 3 words will fallback to the existing bot model and will work as-is. These types of utterances will not go to the new model.
 6. This model is applicable and works well for [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) as well (since FAQs are descriptive and longer sentences) 
-7. Suggestions are enabled by default for all new bots - as this is critical for model improvement and to provide the full performance benefit.
+7. Suggestions are automatically enabled for all new bots by default. This default setting is crucial for improving the model and maximizing performance benefits.
 
-#### 6.1.2 Existing bots
+#### For existing bots
 
-Following are a few important pointers for bots created before August 1, 2022.
+The following are a few important pointers for bots created before August 1, 2022.
 
 ##### Cloud
 
@@ -308,15 +219,15 @@ Following are a few important pointers for bots created before August 1, 2022.
 ##### App (app.yellow.ai)
 
 1. Enable suggestions for bots. 
-    - To do this, in app.ym ensure that **enableDidYouMean** is set to true in app options in Function and in Tools → App Options → Prediction → Enable Suggestions.
+    - To do this, in app.ym ensure that **enableDidYouMean** is set to true in app options in Function and in **Tools** > **App Options** > **Prediction** > **Enable Suggestions**.
     - If there’s an existing **DidYouMean** function in default:response, remove it.
 2. Verify that the flow/journey DESCRIPTION is in line with the guidelines mentioned above. 
-    - If these are not in line and are in camelCase or have special characters, change these by going to flow settings for that flow (you need not change the journey name, only the description can be changed).
+    > If these are not in line and are in camelCase or have special characters, change these by going to flow settings for that flow (you need not change the journey name, only the description can be changed).
 3. Ensure that there is no Small Talk in FAQs/Flows. If these are present, delete them and enable platform small talk in **Context Management** and enable **Small Talk**.
 
 ------
 
-### 6.2 Utterance & flows
+### Utterance & flows
 
 
 | DONTs ❌ | DOs ✅ | 
@@ -526,7 +437,4 @@ Adding utterances here will unnecessarily increase the complexity of the NLP Mod
 :::
 
 ---
-
-**What next?**
-
-- Train your model to recognize [Entities](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities), [Synonyms](https://docs.yellow.ai/docs/platform_concepts/studio/train/synonyms), and [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs). 
+ 
