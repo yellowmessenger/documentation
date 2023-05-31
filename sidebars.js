@@ -540,6 +540,7 @@ module.exports = {
           collapsed: true,
           items: [
            // "platform_concepts/inbox/knowledge-base/kboverview",
+           "platform_concepts/inbox/knowledge-base/createkb",
             "platform_concepts/inbox/knowledge-base/edit-publish-articles",
             "platform_concepts/inbox/knowledge-base/managingcategories",
            // "platform_concepts/inbox/knowledge-base/int_chatbot",

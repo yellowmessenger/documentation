@@ -7,7 +7,7 @@ The Speech-to-Text feature (SST) in the chat widget enables the conversion of sp
 
 STT helps users save time by eliminating the need to type their messages. Based on the user's spoken words, the chatbot can accurately interpret the user's intent, which is often more accurate than interpreting intent from text-based messages.
 
-STT is a paid feature. You need to upgrade to enterprise subscription to access this feature. To enable STT for your chatbots, contact [support](mailto:support@yellow.ai)
+STT is a paid feature. You need to upgrade to enterprise subscription to access this feature. To enable STT for your chatbots, contact [support](mailto:support@yellow.ai).
 
 :::note
 * STT feature is supported only for the chat widget. It is not supported for PWA or mobile SDK.
