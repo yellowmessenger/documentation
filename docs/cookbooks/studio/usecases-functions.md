@@ -92,9 +92,8 @@ return new Promise(resolve => {
 <img src="https://i.imgur.com/fioBFmp.png" alt="drawing" width="60%"/>
 
 
-## Codes to perform sentence autocompletion and decode BASE64
+## Code snippet to perform sentence autocompletion 
 
-**Autocomplete**
 
 ```
 return new Promise(resolve => {
@@ -111,7 +110,7 @@ return new Promise(resolve => {
 });
 ```
 
-**Decode BASE64**
+## Code snippet to decode BASE64
 
 Base64 encoding represents data using 64 ASCII characters. When we receive an encrypted string via an API, we decrypt it to obtain the original object. After decryption, we can upload it to a server like Yellow's server. We can then share the URL of the uploaded object to enable access by others. Base64 encoding safeguards data integrity during transmission and simplifies its decoding back to the original format. To know more about BASE64, click [here](https://developer.mozilla.org/en-US/docs/Glossary/Base64).
 
