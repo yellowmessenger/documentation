@@ -50,7 +50,7 @@ A CSV file cannot exceed 30 MB.
 
    ![](https://i.imgur.com/8CKrTCS.jpg)
 
-6. **Supports only UTF-8 characters**: Use UTF-8 encoded CSV files.
+6. **Save the file in the right CSV format**: When creating the CSV file from tools like Microsoft Excel, ensure you save it in the format CSV (Comma delimited).
   
 :::note
 * It is required to pass phone numbers with country codes in a CSV file.

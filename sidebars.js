@@ -204,7 +204,6 @@ module.exports = {
           label: "Build your bot",
           collapsed: true,
           items: [
-          
             //flows
             {
               type: "category",
@@ -214,10 +213,9 @@ module.exports = {
             "platform_concepts/studio/build/Flows/journeys",
             "platform_concepts/studio/build/Flows/configureflow",
             "platform_concepts/studio/build/Flows/exportflow",
-
           ],
         },
-
+        
             {
               type: "category",
               label: "Nodes",
@@ -232,6 +230,16 @@ module.exports = {
                 "platform_concepts/studio/build/nodes/action-nodes",
                 "platform_concepts/studio/build/nodes/logic-nodes",
               ],
+            },
+            {
+              type: "category",
+              label: "User record management",
+             link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
+             items: [ 
+                "platform_concepts/engagement/cdp/user_data/userid-flow",
+                "platform_concepts/engagement/cdp/user_data/store_conv_data",
+                "platform_concepts/engagement/cdp/user_data/personalise_conversations",
+             ],
             },
             "platform_concepts/studio/build/code",
            // "platform_concepts/studio/build/math-ops",
