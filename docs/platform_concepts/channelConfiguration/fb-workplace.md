@@ -87,7 +87,7 @@ To grant permissions, follow these steps:
      ![](https://i.imgur.com/A7OSj2C.png)
 	 
 
-### Connect Facebook workplace to your bot
+## Connect Facebook workplace to your bot
 
 #### Prerequisite
 
