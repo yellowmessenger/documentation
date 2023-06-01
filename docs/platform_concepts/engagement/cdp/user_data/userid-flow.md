@@ -36,7 +36,7 @@ The following are the steps involved:
 3. If it is not known, the **User identification flow** is triggered to capture the userId.
 
 :::note
-For details on how user identification is handled, see [Profile identification & unification](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
+For details on how user records are created through conversations and unified in User 360, see [this article](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
 :::
 
 ***
@@ -99,3 +99,10 @@ In the User identification flow, if you don't store the user property correctly,
 
 So, if the user property is not captured correctly, this loop will continue, and the end user will be stuck.
 :::
+
+***
+
+**What next?**
+
+* See [how to capture user properties from bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
+* Know [how to create personalized conversations in bot conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
