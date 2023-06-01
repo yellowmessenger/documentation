@@ -54,7 +54,7 @@ if (userIsAuthenticated) {
 ## Chat widget related FAQs
 
 <details>
-<summary>How to resolve the website performance issue after installing the bot?</summary>
+<summary>How to resolve a website performance issue after installing the bot?</summary>
 <div>
  <br/>
  <div>Ensure that the chatbot script is placed within the &lt;body&gt; tag of the host website rather than the &lt;head&gt;. This will ensure that the bot loads only when the website is fully loaded without affecting its performance.<br/><img src="https://i.imgur.com/M362zHu.jpg"/></div>
@@ -212,7 +212,7 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 </details>
 
 <details>
-<summary>Does chat widget support HTML tags?</summary>
+<summary>Does the chat widget support HTML tags?</summary>
 <div>
  <br/>
  <div>No, the chat widget does not support HTML tags. In order to maintain security and prevent web attacks, HTML tags are blocked within the widget. Any content containing HTML tags will be converted into plain text for display.<br/><img src="https://i.imgur.com/lJ8MfpE.png)" alt="drawing" width="40%"/></div>
@@ -220,7 +220,7 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 </details>
 
 <details>
-<summary>Does chat widget automatically aligns the text based on the selected language?</summary>
+<summary>Does the chat widget automatically aligns the text based on the selected language?</summary>
 <div>
  <br/>
  <div>Yes, the widget automatically aligns the text based on the selected language. For example, English, Hindi, Spanish, and so on are aligned from left to right. Languages like Arabic and Dhivehi are aligned from right to left.<br/> <b>Note:</b> If a text message contains both languages, the text will be aligned based on the language set in the bot at the respective step.<br/><img src="https://i.imgur.com/55dKIEv.png"/></div>
@@ -228,7 +228,7 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 </details>
 
 <details>
-<summary>Does chat widget support auto-complete feature?</summary>
+<summary>Does the chat widget support auto-complete feature?</summary>
 <div>
  <br/>
  <div>Yes, the chat widget supports auto-complete. To set up auto-complete, follow these steps:<br/>• You need to enable auto complete in [Yellow.ai Platform](https://cloud.yellow.ai) > <b>Channels</b> > <b>Chat widget</b> > <b>Settings</b> > enable <b>Auto complete</b> > click <b>Save changes</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settings">here</a><br/><img src="https://i.imgur.com/268ATI6.png)" alt="drawing" width="60%"/><br/>• Navigate to <b>Studio</b> > select a flow > click on the respective <b>node</b> > click <b>Make prompt smarter</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#4-make-prompt-smarter">here</a>.</div>
