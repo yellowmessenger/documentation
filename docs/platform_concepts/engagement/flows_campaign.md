@@ -322,10 +322,14 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
 1.  Check **Enable answering machine detection (AMD)** to automatically identify answering machines.
 2.  In **Bot flow**, choose the welcome flow to be triggered (Studio) for the current channel.
-3. In **From**, choose the IVR number(s) through which the voice call is made. When multiple IVRs are added, calls are made from any of those numbers randomly. 
+3. In **From**, choose the IVR number(s) through which the voice call is made. When multiple IVRs are added, calls are made from any of those numbers randomly.
 4. In **To**, choose the variable that contains the user identifier.
 
- <center><img src="https://i.imgur.com/lBvitpz.png" width="50%"/></center>
+<center><img src="https://i.imgur.com/lBvitpz.png" width="50%"/></center>
+
+:::note
+For a detailed help doc on how to create an outbound campaign via Voice channel, see [this article](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/OBcampaign/setupOBC).
+:::
 
 ### Define flows based on delivery statuses
 You can also perform different actions based on different delivery statuses. For example, if the message is not delivered, send an email. If the user opens the message, send an exclusive discount coupon over WhatsApp.
