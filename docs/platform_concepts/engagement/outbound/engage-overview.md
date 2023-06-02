@@ -3,18 +3,18 @@ title: Engage overview dashboard
 sidebar_label: Engage dashboard
 ---
 
+The Engage dashboard offers a comprehensive summary of all campaigns and user activities in a single view. It provides a quick overview of the daily/weekly performance of your campaigns, enabling you to plan for enhanced engagement and improved conversational experiences for your end users. 
 
-Engage dashboard provides a summary of all campaigns and user activities on a single screen. This provides a quick glimpse of the daily/weekly performance of your campaigns and helps you plan for a better engagement and conversational experience for your end users. For a better experience, see [Use conversation starter templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#2-add-quick-replies-in-whatsapp-template).
+For a better experience, see [Use conversation starter templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#2-add-quick-replies-in-whatsapp-template).
 
-These metrics provide insights into your marketing, promotional or other campaigns and show the growth of your user base and profile completeness.
+These metrics provide insights into your marketing, promotional, or other campaigns and showcase the growth of your user base and profile completeness.
 
-There are two sections based on the metric type:
-* **User data** Gives you a snapshot of the current state of your user base in User 360.
-* **Overview**: Shows you an Overview of your Campaigns and User management history.
 
 To access Engage Overview Dashboard, in the module switcher, click **Engage** > **Overview**.
 
-![](/img/cdp/dashboard.png)
+   ![](/img/cdp/dashboard.png)
+
+The following sections prvides different KPIs that you can monitor on the Engage Dashboard.
 
 ***
 
@@ -22,8 +22,7 @@ To access Engage Overview Dashboard, in the module switcher, click **Engage** > 
 
 This report provides a snapshot of users added to User 360 and the overall profile completeness percentage. Profile completeness refers to how much users' information is available on the yellow.ai's platform. It considers all the user properties configured for the org.
 
-
-![](/img/cdp/userdata.png)
+   ![](/img/cdp/userdata.png)
 
 
 The following are the different KPIs of the User data report:
