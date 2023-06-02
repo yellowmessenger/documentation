@@ -699,3 +699,10 @@ p {
 
 
 
+
+
+[class^="theme-doc-footer-tags-row row margin-bottom--sm"] {
+
+display: none;
+}
+
