@@ -4,11 +4,10 @@ sidebar_label: WhatsApp template
 ---
 
 
-Unlike other channel templates that are approved by default, you need to send each WhatsApp template for approval as soon as you create it. Facebook might take upto 48 hours to review the template. A template gets approved if it is as per the Facebook's guidelines, else it will be rejected.
+When creating a WhatsApp template, it is important to note that unlike other channel templates, each WhatsApp template requires individual approval. Once created, the template must be submitted for review by Facebook. The review process typically takes up to 48 hours. If the template complies with Facebook's guidelines, it will be approved. However, if it does not meet the guidelines, it will be rejected.
 
 
-
-The following are the different steps involved in a WhatsApp template - 
+The following are the different steps involved in a WhatsApp template:
 
 1. Create a WhatsApp and send for approval.
 2. Facebook verifies the WhatsApp template and updates the status within 48 hours.
@@ -17,11 +16,11 @@ The following are the different steps involved in a WhatsApp template -
 
 #### Prerequisites
 
-The following are the prerequisites for creating a WhatsApp template -
+The following are the prerequisites for creating a WhatsApp template:
 
-* You need to have the WhatsApp channel configured under [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
+* Ensure that the WhatsApp channel is configured under [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
 
-* Account should be active with its status as *Connected*.
+* Verify that the account is active and its status is showing as *Connected*.
 
 
  
