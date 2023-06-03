@@ -257,6 +257,14 @@ Bot can be programatically closed using `closeBot()` function
 YMChat.closeBot();
 ```
 
+## Reload bot
+
+Bot can be reloaded with the same config bot started with, using the `reloadBot()` function.
+
+```javascript
+YMChat.reloadBot();
+```
+
 ## Register Device
 
 If you want to receive push notifications without or before launching the bot, you can register your device.

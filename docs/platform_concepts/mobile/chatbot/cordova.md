@@ -228,6 +228,14 @@ Bot can be closed by tapping on cross button at top, and they can be programmati
 cordova.plugins.ymchat.closeBot();
 ```
 
+## Reload bot
+
+Bot can be reloaded with the same config bot started with, using the `reloadBot()` function.
+
+```javascript
+cordova.plugins.ymchat.reloadBot();
+```
+
 ## Register Device
 
 If you want to receive push notifications without or before launching the bot, you can register your device.
