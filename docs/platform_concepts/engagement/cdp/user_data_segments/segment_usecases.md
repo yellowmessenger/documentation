@@ -46,6 +46,16 @@ This segment is applicable only for properties of the Date type. When setting up
 Therefore, this segment will target all users with a date of June 10, irrespective of the year.
 
 
+ ### Schedule recurring campaign based on User 360 Table updates
+
+Schedule a recurring campaign that targets user records which have been updated in the User 360 table within the last 24 hours.
+
+
+To implement the use case, follow these steps:
+
+* In the segment filter, choose the user property property `createdAt` and set condition as in the **last 1 day(s) ** as shown in the following.
+
+<img src="https://i.imgur.com/mUTWcrH.png"/>
 
 
 
