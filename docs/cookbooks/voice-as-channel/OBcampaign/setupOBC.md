@@ -10,7 +10,7 @@ In this article, you will learn how to select an entry rule and design a campaig
 **Prerequisite**
 
 1. **User segmentation**: Grouping users based on shared characteristics, such as interests or behaviors, is known as user segmentation. There are two types of segments: static segments, which remain constant, and dynamic segments, which update automatically based on user data. To send targeted campaigns, you need to have user data grouped into segments in **user360**. Segments like product interest or recent purchasers can be created for effective messaging.
-    > Follow the steps [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) to create and manage user segments
+    > Follow the steps provided [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) to create and manage user segments
 2. **Events**: an event refers to a recognized occurrence by the bot (asynchronous). In **Studio**, there are various events available, such as widget, inbox, engage, integration, user inactivity, schedule, User 360, and custom events, which are used to handle occurrences and perform tasks.
     > Learn more about events and the steps to create custom events [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub).
 :::
@@ -29,7 +29,9 @@ To create a voice bot campaign, follow these steps:
 
 ## Step 2: Select entry rule for the voice bot campaign
 
-To get started, select the entry rule that best aligns with your business needs.
+To get started, follow the steps below: 
+
+1. Select the entry rule that best aligns with your business needs.
 
 | Entry rule | Trigger | 
 | -------- | -------- | 
@@ -38,8 +40,8 @@ To get started, select the entry rule that best aligns with your business needs.
 |[User exited a segment](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-exited-a-segment) | Select this to trigger the campaign when the user exits a specific segment. | 
 |[User present in a segment](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-present-in-a-segment)| Select this to trigger the campaign only when the user is in a specific segment. |
 
-- **Choose your audience**: When selecting entry rules, you have the option to choose one or multiple user segments or target all users in User360.
-- **Set campaign schedule**: For each entry rule, you can determine the frequency and specific time for running the campaign.           
+2. **Choose your audience**: When selecting entry rules, you have the option to choose one or multiple user segments or target all users in User360.
+3. **Set campaign schedule**: For each entry rule, you can determine the frequency and specific time for running the campaign.           
 
      <img  src="https://hackmd.io/_uploads/BJTjcGRH2.png"  width="50%"/>
 
@@ -53,6 +55,8 @@ To get started, select the entry rule that best aligns with your business needs.
 - If you intend to use other message channels such as SMS or Email, you need to configure the senderID/channel and ensure that a corresponding template is available for that particular channel.
 :::
 
+To initiate a voice call, follow the steps below: 
+
 1. Connect the **Voice call node** (available under the message category) to the initial node in the workflow.
     <img  src="https://hackmd.io/_uploads/HJcCv70Bh.png" width="90%"/>
     
@@ -65,7 +69,7 @@ To get started, select the entry rule that best aligns with your business needs.
 
     ![](https://hackmd.io/_uploads/SyIl0Q0S2.png)
 
-3. Add connecting nodes to the voice node to determine the subsequent steps based on different scenarios. You have the flexibility to define the next actions based on whether AMD is detected, the call is answered, the line is busy, there is no answer, or if the call fails to connect.
+3. Add connecting nodes to the voice node to determine the subsequent steps based on different scenarios. You can define the next actions based on whether AMD is detected, the call is answered, the line is busy, there is no answer, or if the call fails to connect.
     ![](https://hackmd.io/_uploads/BkiZpQCBn.png)
 
 

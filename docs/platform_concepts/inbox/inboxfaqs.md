@@ -42,6 +42,15 @@ Inbox Agent or Admin cannot delete any tickets from Inbox. Tickets can only be d
 </details>
 
 
+<details>
+<summary> Can internal notes on live chats and email tickets be downloaded/ is internal notes data available on any reports? </summary>
+<div>
+No. You cannot download internal notes, they are only available within the respective chat/ticket screen.   
+</div>
+</details>
+
+
+
 **Sticky agents** 
 
 <details>

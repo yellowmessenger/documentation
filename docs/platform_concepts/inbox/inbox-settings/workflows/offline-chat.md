@@ -4,7 +4,7 @@ sidebar_label : Offline handling
 keywords : [offline ticketing]
 ---
 
-To manage tickets raised after [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours) (or during working hours if the entire team is logged off) in the offline handling setting section. 
+Manage tickets raised after [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours) (or during working hours if the entire team is logged off) in the offline handling setting section. 
 
 If none of the agents are available (all the inbox agents have logged out) to resolve tickets and you want to address the customer requests raised at that time offline chat can be enabled. You can manage the limit and status of the tickets after working hours to provide 24/7 support.
 Offline chats uphold the continuum of service that your customers expect. If you have customers around the globe, you can anticipate that they may need support outside of your normal operating hours. Offline handling ensured that the inquiries are acknowledged and customers receive a satisfactory answer until an agent has the opportunity to follow up.
