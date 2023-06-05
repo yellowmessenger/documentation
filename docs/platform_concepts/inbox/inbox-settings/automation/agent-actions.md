@@ -3,7 +3,7 @@ title: Agent actions - Automation with Studio
 sidebar_label : Agent actions
 ---
 
-Actions are displayed on the [chat screen](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#1-chat-screen) when the inbox agent presses "/". 
+Actions are displayed on the [chat screen](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#agent-actions) when the inbox agent presses "/". 
 **Inbox admin** can configure these actions in the automation with studio section. 
 
 ---

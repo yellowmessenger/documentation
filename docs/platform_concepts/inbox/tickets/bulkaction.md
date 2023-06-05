@@ -2,7 +2,9 @@
 title: Change status, Assign/Reassign, and Merge tickets in bulk 
 sidebar_label : Bulk actions
 ---
-
+   
+      
+      
 In this article, you will learn: 
 1. [How to change the status of multiple tickets?](#1) 
 2. [How to assign tickets to a group/agent?](#11)
