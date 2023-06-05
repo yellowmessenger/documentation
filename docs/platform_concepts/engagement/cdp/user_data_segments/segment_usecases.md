@@ -35,7 +35,7 @@ To create this type of segment, you can use properties that are of the Date or D
 
 - Sending out birthday greetings
 
-<center><img src="https://i.imgur.com/7lFf46V.png" width="70%"/></center>
+<center><img src="https://i.imgur.com/WBlOVFR.png" width="70%"/></center>
 
 This segment is applicable only for properties of the Date type. When setting up the segment for a campaign that runs on June 10, 2022, the following considerations apply:
 
@@ -112,7 +112,7 @@ You can add more conditions to a condition set using **+ Add condition**. These 
 
 A new condition set can be added by clicking on + Add condition set. Conditions sets are separated by **OR**
 
-<center><img src="https://i.imgur.com/m6zBzmo.png" width="70%"/></center>
+<center><img src="https://i.imgur.com/tMmoDcC.png" width="70%"/></center>
 
 :::note
 For a user to be a part of a segment, he must meet all the AND conditions of a condition set.
@@ -135,21 +135,21 @@ You can use the [Condition Node](https://docs.yellow.ai/docs/platform_concepts/s
 
 
 
-<center><img src="https://i.imgur.com/surY1EB.png" width="80%"/></center>
+<center><img src="https://i.imgur.com/7dCmuHU.png" width="80%"/></center>
 
 ### Employees in a certain department 
 
 
 Send training-related communications to junior employees in specific departments. Your filters for this segment might be: **Department is "Product" or "Engineering" AND Title includes "Junior" or "Associate"**.
 
-<center><img src="https://i.imgur.com/tC3f2Qu.png" width="80%"/></center>
+<center><img src="https://i.imgur.com/xUR6Ve7.png" width="80%"/></center>
 
 ### Visitors who have opted in to receiving updates on email 
 
 Create a segment of users who have opted to receive regular product updates via email. This segment will include users who have subscribed to updates and newsletters. To set up this segment, **use the filter "Email Subscription is true"**.
 
 
-<center><img src="https://i.imgur.com/45FBZpB.png" width="80%"/></center>
+<center><img src="https://i.imgur.com/xUR6Ve7.png" width="80%"/></center>
 
 ### Potential leads
 

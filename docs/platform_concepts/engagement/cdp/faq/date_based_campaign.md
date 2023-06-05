@@ -27,7 +27,7 @@ The operator that can be selected are:
 Usecase:
 - *Sending out Birthday Greetings!*
 
-![](https://i.imgur.com/7lFf46V.png)
+   ![](https://i.imgur.com/WBlOVFR.png)
 
 This segment can be set up only for Date type properties. If the campaign runs on 10th June 2022:
 - Current Day → Picks the day of when the segment is calculated, ie, 10th
