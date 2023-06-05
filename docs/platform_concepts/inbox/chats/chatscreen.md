@@ -18,18 +18,25 @@ Simply type in any text and hit send button (or enable enter to send if you want
 
 ----
 
-### Actions/Canned response
+### Canned response
 
-You can add [agent actions](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions) / [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown. This can be used for frequent actions/replies so that the agent can simply select an action or canned response instead of typing the whole message multiple times.    
+Canned response can be used to reduce the manual effort on sending frequent replies. Agent can simply select a canned response instead of typing the whole message multiple times and send it to the customer.  
+You can add [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown by clicking **#**.   
+
+> Canned responses can be searched by typing any relevant keywords. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses).
 
 <img src="https://i.imgur.com/IATnPlM.png" alt="drawing" width="50%"/>    
 
-:::note
-Use # to view the canned responses and / to view the actions. 
-:::
 
 ----
 
+### Agent actions
+
+Agents can type **/** on the screen and the agent actions (automated with the help of studio flows) will be displayed in the dropdown list. Agent can select an action that is automated and the results are fetched easily without multiple manual steps. 
+
+> Learn more about [agent actions here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions).
+
+-----
 
 ### Upload image/files/emojis
 
@@ -43,7 +50,7 @@ Upload images/files to your message and add emojis to your text to make the conv
 ### Internal notes
 
 This can be used to take notes/jot down the pain points/summarise the chat sent by the user. It is mostly used before transferring the chat to another agent. 
-The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin).  
+The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin) within the chat.  
 
 ![](https://i.imgur.com/cae3RVU.png)
     
@@ -80,7 +87,7 @@ Chats can be shared with anyone by clicking the **chat copy URL** icon and shari
 ![](https://i.imgur.com/bpmVToO.png)
 
 
-> Other AI features on the chat screen are listed in the next article. 
+> Other AI features on the chat screen are listed in the [Generative AI article](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai). 
 
 ---
 
