@@ -94,6 +94,7 @@ module.exports = {
   label: "Insights",
   collapsed: true,
   items: [
+    "cookbooks/insights/convissue",
     "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/schedulerawreports",
