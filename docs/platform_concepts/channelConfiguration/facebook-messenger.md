@@ -116,7 +116,7 @@ Similarly, you can test your FBM chatbot by adding different options such as pro
 
 
 
-#### Verify Facebook Business
+#### Facebook Business verification process
 
 As the verification process can take more than two weeks, we recommend starting the verification at the beginning phase of the project.
 
@@ -184,7 +184,7 @@ To increase the company's chances of being verified by Facebook, it is important
 - The company's trade name in the documentation is the same as used on the website and on the Facebook page. If different, the names need to be related in some way on the website. For example, at the footer, enter "Company ABC powered by company D."
 
 
-### Documents checklist
+#### Documents checklist
 
 - Document quality / resolution should be good - no pixelation.
 - Documents should always be signed, especially GST and other accepted documents.
@@ -193,7 +193,7 @@ To increase the company's chances of being verified by Facebook, it is important
 - English documentation seems to be processed more quickly; currently, the following languages are supported for business verification:
 
 
-#### Website checklist:
+#### Website checklist
 
 - Website should be accessible, with no geo filters that may prevent FB teams from viewing the website.
 - The website should be secure (https://).

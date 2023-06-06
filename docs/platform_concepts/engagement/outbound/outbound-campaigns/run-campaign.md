@@ -411,6 +411,14 @@ For Failed messages, you can also see the reason for failure.
 
 ***
 
+## 8. Campaign errors
+
+Here are some common errors that you may encounter when working with campaigns:
+
+:::note
+For API related error codes and descriptions, see [Notification API response codes](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#24-response-codes)
+:::
+
 
 **What next**
 
