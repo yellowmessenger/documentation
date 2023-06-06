@@ -233,7 +233,8 @@ YmChat.closeBot();
 
 ## Reload bot
 
-Bot can be reloaded with the same config bot started with, using the `reloadBot()` function.
+If you want to reload the bot with same configs you have started it, you can do so by calling `reloadBot()` function.
+This will reload the bot without closing and reopening it.
 
 ```dart
 YmChat.reloadBot();
