@@ -21,13 +21,13 @@ After setting up the channel, you need to test your bot, connect it to the respe
 
 3. You can see list of channels under various categories along with Chat Widget as mentioned below:
 
-   * Messaging
-   * Voice
-   * Social
+   * [Messaging](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/messaging-overview)
+   * [Voice](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/voice-overview)
+   * [Social](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/social-overview)
    * Business
-   * Push notifications
+   * [Push notifications](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/mobilepush)
    * Additional
-   * Chat widget
+   * [Chat widget](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-overview)
 
     ![](https://i.imgur.com/6voFjYG.png)
 
