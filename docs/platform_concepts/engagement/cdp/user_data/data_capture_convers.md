@@ -102,8 +102,7 @@ These are the steps that take place:
 
 ## What happens when the userId is recaptured?
 
-There could be cases when a userId is recaptured. For example, the user logs out and logs in again or when the user whats interacts with the bot with a different userId.
-
+There are situations where a userId may be recaptured. This can occur when a user logs out and then logs back in, or when the user interacts with the bot using a different userId.
 
 ### When the recaptured userId does not exist
 
