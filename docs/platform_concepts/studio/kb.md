@@ -1,6 +1,6 @@
 ---
 title: Zero Setup
-sidebar_label: KB
+sidebar_label: Zero effort bot setup
 ---
 
 
@@ -18,15 +18,24 @@ You can find this under **Studio** > **KB**.
 All of these features are powered by Yellow.ai's in-house **Studio** module and NOT by GPT. If you would like to have these features powered by GPT, please reach out to us on [community.yellow.ai](https://community.yellow.ai/), our product team will help you.
 :::
 
-### Channels
+### Add channels
 
 Lets you choose the channels in which you can run your bot. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) to know all about channels in detail.
 
-### URL
+Zero setup is compatible on the following:
+
+1. Web
+2. Mobile-Apps
+3. FBM
+4. WhatsApp
+5. Line
+6. MS Teams
+
+### Add your website URL
 
 This is where you add your website URL. Click the pen icon to add your website URL.
 
-### Documents
+### Upload supporting documents
 
 Click **Upload document** to upload your documents here.
 

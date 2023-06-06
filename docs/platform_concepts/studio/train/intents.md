@@ -7,7 +7,7 @@ tags: [intent detection nlp ,intent extraction nlp , intent in nlp,intent nlp, i
 
 Intent is the purpose or goal behind someone's action or words. In natural language processing, it specifically relates to determining a user's intention in a conversation, like asking a question, making a request, or giving information. 
 
-Let's say that you want to book a flight to Singapore, **book a flight** is the intent of this sentence.
+Let's say that you want to book a flight to Singapore, **book a flight** is the intent of this case.
 
 On our platform, you can add **intents** (the purpose of the bot users' response) and **utterances** (the various responses used by bot users for a specific intent, for example, to book a flight the utterances can be 'flight booking' or 'book flights'). You need to **train** the bot to identify and understand these sentences.
 
