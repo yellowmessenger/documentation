@@ -1,5 +1,5 @@
 ---
-title : Display a message or/and trigger an action when chat is closed
+title : Display a message or/and trigger an action when a live chat is closed
 sidebar_label : End of the live chat 
 ---
 
@@ -15,23 +15,60 @@ To configure the system to automatically trigger an event when agents resolve a 
 
 ------
 
-**Use-case**
 
-After the ticket is resolved, you can:
-
-1. Intimate the user and provide 3 options as promotional activity.
-2. Immediately after the ticket is resolved, create a logic to filter the user data based on the type of query raised and send it to a CRM.
-
-### Step 1: Attach nodes to ticket closed
+## Step 1: Attach nodes to ticket closed
 
 1. To attach nodes to ticket closed, connect the **Raise ticket** > **Ticket closed** with the nodes you want to execute. This will get triggered after the ticket is closed.
     ![](https://i.imgur.com/tFTr2P5.png)
 
-### Step 2: Trigger other actions after ticket closed 
+    :::info
+    - This step is recommended but not mandatory, it is required to make sure that the flow is completed and the user is intimidated that the ticket is closed.
+    - You can also add options in this flow that connects to other flows to improve your user experience.
+    :::
 
-1. Go to **Studio** > **Events** > **Inbox** and search for **ticket-closed**.
+-----
+
+## Step 2: Activate ticket-closed event
+
+To identify that the inbox agent has closed a ticket you must enable **Ticket closed** event. Follow these steps: 
+
+1. Go to **Studio** > **Events** > **Inbox** and search for `ticket-closed`.
     ![](https://i.imgur.com/qZYPSZ2.png)
 2. Click the three dots icon and select **Activate** to activate the event.
-3. Create a new [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) with the trigger set to **Event** and value set to **ticket-closed**.
+
+-----
+
+## Step 3: Trigger flows after ticket closed 
+
+You can design flows that can be triggered when **Ticket closed event** is identified. Follow these steps: 
+
+1. Create a new [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). 
+2. By clicking **Start** node you can set when the flow gets triggered. Set it to **Event** and select the value as **ticket-closed**.
     ![](https://i.imgur.com/5J4tjm4.png)
-4. To provide a personalized response from the bot when a ticket is closed, add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) to the flow that are designed to execute specific tasks. The flow will automatically run whenever a ticket is closed.
+3. To provide a personalized response from the bot when a ticket is closed, add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) to the flow that are designed to execute specific tasks. The flow will automatically run whenever a ticket is closed.
+
+-----
+
+
+### Use-cases of ticket-closed event
+
+A few examples of the flows that can be run after the ticket is closed.
+
+> You can add one or more flows with start trigger as `ticket-closed`. All these flows will run simultaneously. 
+
+1. **Update a database/CRM with ticket details.**
+![](https://hackmd.io/_uploads/H157Iya8n.png)
+
+2. **Create a logic to filter the user data based on the type of query raised and send it to a CRM/Database.**
+![](https://hackmd.io/_uploads/ry9pDJpI2.png)
+
+3. **Hit an API once the ticket is closed.** 
+![](https://hackmd.io/_uploads/r1QFu1pUn.png)
+
+4. **Send a promotional messsage.** 
+![](https://hackmd.io/_uploads/SyFft1p8h.png)
+
+5. **Schedule a follow up interview.**
+![](https://hackmd.io/_uploads/BkAvCCn8n.png)
+
+
