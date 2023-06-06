@@ -272,7 +272,7 @@ module.exports = {
         
         {
           type: "category",
-          label: "API",
+          label: "Fetch data via API",
           collapsed: true,
           items: [
             "platform_concepts/studio/api/add-api",
@@ -293,7 +293,7 @@ module.exports = {
 
         {
           type: "category",
-          label: "Analysis",
+          label: "Chat log analysis and training evaluation",
           collapsed: true,
           items: [
             "platform_concepts/studio/analyze/chat-logs",

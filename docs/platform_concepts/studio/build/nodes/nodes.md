@@ -31,7 +31,7 @@ After clicking **+Create flow**, you will be directed to a canvas with a **start
 
 
 ## <a name="addnode"></a> 2. Add nodes
-
+ß
 Nodes can be added in two different ways:
 
 1. Click the black dot in the centre of a node.
@@ -42,6 +42,10 @@ Nodes can be added in two different ways:
 2. Click any 4 of the icons on the left which represent each category of nodes. Drag and drop the nodes.
 
 ![](https://i.imgur.com/olgqi1w.png)
+
+:::note
+You cannot add more than 150 nodes in a flow.
+:::
 
 
 ### 2.1 Build a flow 

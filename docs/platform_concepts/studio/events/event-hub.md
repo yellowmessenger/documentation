@@ -1,6 +1,6 @@
 ---
 title: Events
-sidebar_label: Event
+sidebar_label: Handle bot events
 ---
 
 Event is general programming term which is used to describe an occurrence recognised by the bot (mostly asynchronous). When your bot is operational, it generates various events which can be used to trigger a journey or automation workflow. Event helps you handle those occurrences and perform some tasks.
@@ -297,6 +297,10 @@ If there are any specific use-cases around inactivity that you'd like to impleme
 ### 6. <a name="sch-1"></a> Schedule events
 
 Use Schedule events to create events that define the time at which specific workflows of your choice need to be triggered.
+
+:::note
+Schedule event appears on the **Start node** of a flow only if that flow is a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#-22-workflow---a-variant-of-flow).
+:::
 
 To schedule events, follow these steps -
 

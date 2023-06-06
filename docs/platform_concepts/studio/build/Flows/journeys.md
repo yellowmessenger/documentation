@@ -85,6 +85,10 @@ You can also use the keyboard shortcut`s` + `f`.
 
 For the flow to work, you need to trigger it. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) for the detailed steps.
 
+:::note
+You cannot add more than 150 nodes in a flow.
+:::
+
 ### 2.1 Edit a flow
 
 To edit a flow, follow these steps
