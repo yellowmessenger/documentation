@@ -12,7 +12,7 @@ In this article, you will learn:
 1. [How to connect your Facebook messenger account?](#1-connect-your-facebook-messenger-account)
 2. [How to test FBM chatbot?](#2-test-fbm-chatbot)
 
-## 1. Connect your Facebook messenger account
+## Connect your Facebook messenger account
 
 To create a Facebook messenger account, follow these steps:
 
@@ -54,7 +54,99 @@ You need admin access to create an account.
 
    ![](https://i.imgur.com/Zgp95PF.png)
 
-## 2. Test FBM chatbot
+
+## Verify Facebook Business
+
+### 1. Access Business Manager Security Center
+
+To start the verification process, go to Security Center and click **Start Verification** in the Business verification section.
+
+The **Start Verification** button will be greyed out unless your business needs access to certain features. See the below section on how to enable the button.
+
+
+### 2. Select Your Business
+
+If your business is already listed:
+
+1. Confirm your business details
+   - Select a phone number that you have access to from the drop-down menu and click **Next**.
+   - Double check for any typos or other errors: you will not be able to edit this information upon submission.
+
+2. Get a verification code
+   - Choose to receive the verification code on your business phone number via a text message or a phone call, or via email. Note that the phone number option may not be available in all countries.
+   - Please make sure that the email registered has the same domain as the website.<br/> **Accepted Values**: <br/>Email: name@business.com<br/>Site: www.business.com
+
+:::note
+The following examples are not accepted:
+   - Email: name@gmail.com or name@otherbusiness.com
+   - Site: www.business.com
+:::
+
+3. Get a verification code
+   - Choose to receive the verification code on your business phone number via a text message or a phone call, or via email. Note that the phone number option may not be available in all countries.
+   - Please make sure that the email registered has the same domain as the website.
+
+4. Or verify your domain
+   - If your domain is already verified, click **Use Domain Verification**. If not, complete the domain verification process, then return to the Security Centre and select **Continue**.
+   - Enter verification code (not applicable if you use domain verification)
+   - Enter your verification code. Click **Submit**.
+   - You can skip the remaining steps 3 & 4 below.
+
+If your business is not listed:
+- If you cannot see your business in the list, please select **None of these matches**. Then proceed with [Steps 3](#3-verify-the-legal-business-name) and [Step 4](#4-verify-the-business-address-or-phone-number) below.
+
+### 3. Verify the Legal Business name
+You may be asked in step 3 to provide official documentation of your business's legal name.
+
+Upload an official document that matches the business's legal name you entered in step 1, such as a business license, articles of incorporation, or business tax registration.
+
+- Please check [here](link-to-documentation-accepted-and-not-accepted) for the list of the documents accepted and not accepted before submitting them.
+
+### 4. Verify the Business Address or Phone Number
+- Upload a document that shows both the legal name of your business and the mailing address or phone number shown on the screen.
+- Please check [here](link-to-documentation-accepted-and-not-accepted) for the list of the documents accepted and not accepted before submitting them.
+
+When your business is verified, you will be notified, and you will also see the verified status in your account.
+
+
+## Checklist for Business Verification
+
+To increase the company's chances of being verified by Facebook, it is important to have the following items checked internally by the respective Business Analysts (BAs) of the projects:
+
+- The company's website is active and complete, containing the company's name and address.
+- The account email is from the same domain as the company's website provided in the documentation. (www.mywebsite.com > xyz@mywebsite.com).
+- If the verification will be made through the phone number, make sure the number is able to receive the call. If the phone has IVR, ask the client to disable it temporarily.
+- The company's trade name in the documentation is the same as used on the website and on the Facebook page. If different, the names need to be related in some way on the website. For example, at the footer, enter "Company ABC powered by company D."
+
+## Best Practices to follow while proceeding with business verification process:
+
+### Documents:
+
+- Document quality / resolution should be good - no pixelation.
+- Documents should always be signed, especially GST and other accepted documents.
+- Documents should not be modified or show signs of tampering (e.g., handwritten notes, strikethroughs, white ink, etc.).
+- The legal business documents should have a matching address. If not, please provide additional documents that prove the address.
+- English documentation seems to be processed more quickly; currently, the following languages are supported for business verification:
+
+
+### Website:
+
+- Website should be accessible, with no geo filters that may prevent FB teams from viewing the website.
+- The website should be secure (https://).
+- The website must contain the legal business name, preferably on the home page (e.g., in the footer of the website).
+- The website domain and email domain (for OTP verification) must be the same. If not, upload DNS records to prove that the legal business entity owns both domains. Another option is domain verification. It is helpful to have ownership of the provided domain.
+- Upload the website to FB Business Manager.
+
+### Duration:
+
+As the verification process can take more than two weeks, we recommend starting the verification at the beginning phase of the project. Here are the links to the Official Facebook Documentation -
+
+* [Verify your business](https://www.facebook.com/business/help/2058515294227817?id=180505742745347)
+* [Documents to upload](https://www.facebook.com/business/help/159334372093366)
+* [Troubleshooting when the business is not verified](https://www.facebook.com/business/help/2342133782492969?id=180505742745347)
+
+
+## Test Facebook Business Messenger chatbot
 
 After creating your account successfully, you can start configuring the chatbot with any of the existing flows based on your business requirements.
 
