@@ -1,20 +1,35 @@
 ---
-title: Explore bot effectiveness on insights overview 
-sidebar_label: Insights overview 
+title: Explore bot performance on insights 
+sidebar_label: Chat bot insights
 ---
 
-The first section available on the **Insights** module is the **Overview** section. 
-In this article, you will learn about the common metrics that can be tracked on the **Insights Overview** page which summarizes how your bot is functioning.
+In this article, you will learn about the key metrics you can track on the **Insights Overview** page which summarizes how your bot is functioning.
 
-**Where can you find insights overview page?**
+**Access insights overview page:**
 
 - Click **Insights** from the Overview switcher, you will land on the insights **Overview** page. 
     ![](https://i.imgur.com/iSPi6HX.png)
 
 :::note 
-- Conversations taking place only after the **welcome message** will be considered for the calculations. 
-- On this overview page, you can analyse all the **default data** collected by the bot. **Custom data** will not be reflected on any of the graphs. 
+- Conversations taking place only after the **welcome message** will be considered for calculations. 
+- On this Overview page, you can analyse all the **default data** collected by the bot. **Custom data** will not be reflected on any of the graphs. 
 ::: 
+
+**Summarized metrics data**
+
+| Widget |	Description |
+| --- | ---- |
+| User Traffic	| Tracks the unique number of bot users, total messages exchanged, sessions initiated by users, and average time spent by users per session.|
+| Live Monitoring|Provides real-time monitoring of bot activities, allowing you to observe and analyze the bot's performance as conversations happen.|
+| Source of New Users |	Analyzes the channels used by users and user acquisition from different systems, providing insights into the sources of new users. |
+|Country Analysis |	Analyzes the geography of new users, allowing you to understand the distribution of users across different countries. |
+| Device Analysis|	Analyzes the devices used by users for bot conversations, providing insights into the types of devices preferred by users.|
+|Engagement & User Activity by Time	| Analyzes user engagement and activity over time, allowing you to identify patterns, peak usage periods, and measure bot performance. |
+|Bot Performance	|Monitors bot performance by understanding bot accuracy, analyzing flow completion rate (FCR), and tracking deflection rate (the rate at which users are redirected to human support).|
+|User Feedback/Customer Satisfaction (CSAT)	| Analyzes user feedback and measures customer satisfaction to gauge the overall quality of the bot's interactions.|
+| Summary of Flows	|Provides a summary of the conversation flows traversed by users, helping you understand the typical paths users take within the bot.|
+| Conversation Analysis	|Enables the understanding and analysis of issues in conversations, providing an overview of conversational issues and offering insights to resolve them.|
+|WhatsApp Bot Consumption |	Tracks the consumption of WhatsApp bots, allowing you to measure and analyze usage metrics specific to WhatsApp channels.
 
 
 ---------------------

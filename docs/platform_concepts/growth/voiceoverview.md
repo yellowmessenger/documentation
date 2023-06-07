@@ -1,6 +1,6 @@
 ---
 title: Overview dashboard to monitor voice bots
-sidebar_label: Voice bot overview
+sidebar_label: Voice bot insights
 ---
 
 :::note
