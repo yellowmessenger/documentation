@@ -1,6 +1,6 @@
 ---
-title : Display a message or/and trigger an action when a live chat is closed
-sidebar_label : End of the live chat 
+title : Display message or sync data when a Live Chat is closed
+sidebar_label : Trigger actions upon chat resolution
 ---
 
 When a customer initiates a live chat, an inbox agent takes on the task of resolving the query. Once the agent has resolved the query, they mark the chat as **Resolved**. This triggers the execution of the node connected to the **ticket closed** in the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#raise-ticket-outputs) node, which is followed by the other nodes connected to it.
@@ -38,7 +38,7 @@ To identify that the inbox agent has closed a ticket you must enable **Ticket cl
 
 -----
 
-## Step 3: Trigger flows after ticket closed 
+## Step 3: Trigger flows after a ticket is resolved 
 
 You can design flows that can be triggered when **Ticket closed event** is identified. Follow these steps: 
 
