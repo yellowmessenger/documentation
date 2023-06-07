@@ -11,7 +11,7 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 
 ## 1. Add a new card to the flow
 
-1.  Create a Function and store the variables in the function node as an Array  
+1.  Create a Function and store the variables in the function node as an Array. Our cards use the data from this variable to display  it on the UI. You can skip this step if your card data is not dynamic. You can add the data in the card node directly in such cases.
 
 > Regarding the code to use in the  function, refer to table Code and Card Mapping for the new card in the next section.
     
