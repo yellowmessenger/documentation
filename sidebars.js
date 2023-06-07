@@ -962,6 +962,28 @@ module.exports = {
           link: {type: 'doc', id: 'platform_concepts/channelConfiguration/messaging-overview'},
           collapsed: true,
           items: [
+            "platform_concepts/channelConfiguration/abc",
+            "platform_concepts/channelConfiguration/email-outbound",
+            "platform_concepts/channelConfiguration/facebook-messenger", 
+            "platform_concepts/channelConfiguration/fb-workplace",
+            "platform_concepts/channelConfiguration/google-message",
+            "platform_concepts/channelConfiguration/googleChat",
+            {
+              type: "category",
+              label: "Instagram",
+              link: {type: 'doc', id: 'platform_concepts/channelConfiguration/instagram'},
+              collapsed: true,
+              items: [
+            "platform_concepts/channelConfiguration/instagram-limitations",
+            "platform_concepts/channelConfiguration/instagram-faqs",
+              ]},
+            "platform_concepts/channelConfiguration/line", 
+            "platform_concepts/channelConfiguration/teams", 
+            "platform_concepts/channelConfiguration/slack2",
+            "platform_concepts/channelConfiguration/sms-outbound-india", 
+            "platform_concepts/channelConfiguration/telegram",
+            "platform_concepts/channelConfiguration/viber",
+            "platform_concepts/channelConfiguration/viber-for-business",
             {
               type: "category",
               label: "WhatsApp",
@@ -975,29 +997,19 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
-              {
-                type: "category",
-                label: "Instagram",
-                link: {type: 'doc', id: 'platform_concepts/channelConfiguration/instagram'},
-                collapsed: true,
-                items: [
-              "platform_concepts/channelConfiguration/instagram-limitations",
-              "platform_concepts/channelConfiguration/instagram-faqs",
-                ]},
-            "platform_concepts/channelConfiguration/facebook-messenger",    
-            "platform_concepts/channelConfiguration/sms-outbound-india", 
-            "platform_concepts/channelConfiguration/google-message",
-            "platform_concepts/channelConfiguration/googleChat",
-            "platform_concepts/channelConfiguration/email-outbound",
-            "platform_concepts/channelConfiguration/slack2",
-            "platform_concepts/channelConfiguration/teams",
-            "platform_concepts/channelConfiguration/telegram",
-            "platform_concepts/channelConfiguration/viber-for-business",
-            "platform_concepts/channelConfiguration/line",
-            "platform_concepts/channelConfiguration/zalo",
-            "platform_concepts/channelConfiguration/viber",
-            "platform_concepts/channelConfiguration/abc",
-            "platform_concepts/channelConfiguration/fb-workplace",
+            "platform_concepts/channelConfiguration/zalo",  
+               
+            
+            
+            
+            
+            
+           
+            
+            
+            
+           
+            
             
           ]
         },
@@ -1045,6 +1057,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
             "platform_concepts/channelConfiguration/chat-widget-components",
+            "platform_concepts/channelConfiguration/custom-boticon",
             "platform_concepts/channelConfiguration/speech-to-text",
             "platform_concepts/channelConfiguration/text-to-speech",
             "platform_concepts/channelConfiguration/chat-widget-notification",

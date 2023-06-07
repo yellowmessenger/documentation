@@ -134,6 +134,10 @@ return new Promise(resolve => {
 * Xamarin SDK: 790KB
 * Flutter SDK: 156 KB
 
+**10. Why are TTS and STT features not supported on Mobile SDK?**
+
+Mobile SDK uses a web view with the Webkit browser, which lacks the necessary capabilities for STT. To enable STT, native OS capabilities are required, implemented through a custom mic button. Disabling the "enableSpeech" flag can temporarily disable STT.  For further assistance, contact our [support team](mailto:support@yellow.ai).
+
 
 
 

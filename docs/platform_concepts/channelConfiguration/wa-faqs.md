@@ -156,6 +156,14 @@ WA business application is an Android app that businesses can download but has l
 </p>
 </details>
 
+<details><summary><b> Can I track the count of users clicking on "Send Message" and landing on the WhatsApp bot when redirecting from Instagram?</b></summary>
+<p>
+
+Yes, you can track the count of users clicking on "Send Message" and landing on the WhatsApp bot from Instagram. Follow these steps:<br/>1. Include UTM parameters in the URL that redirects users from Instagram to the WhatsApp bot. For example `http://sample.com?utm_campaign=testcamp&utm_medium=social&utm_source=instagram`.<br/> 2. After users have landed on the WhatsApp bot, navigate to the Insights section of your platform.<br/> 3. Access the Data Explorer or a similar feature that provides analytics and tracking capabilities.<br/> 4. Look for the <b>Message Events</b> section within the Insights or <b>Data Explorer</b>. Here, you will find relevant metrics and data related to user interactions and events within the WhatsApp bot.<br/><img src="https://i.imgur.com/UC4de37.png"/><br/>Make sure to set up the appropriate UTM parameters and utilize the Insights or Data Explorer tool to track user engagement and measure the success of your Instagram to WhatsApp bot redirection.<br/> If you have any further questions or need assistance, reach out to our <a href="mailto:support@yellow.ai">support team</a>.
+
+</p>
+</details>
+
 
 
 ### Whatsapp Business account setup 

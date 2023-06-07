@@ -14,6 +14,8 @@ The chat widget automatically changes the text based on the user's language pref
    * When an agent is connected to the bot, the chat separator description is not changed.
 * The chat widget automatically aligns the text based on the selected language. For example, English, Hindi, Spanish, and so on are aligned from left to right. Languages like Arabic and Dhivehi are aligned from right to left.
 * If a text message contains both languages, the text will be aligned based on the language set in the bot at the respective step.   
+* Localization is supported only for the placeholder texts whereas for date it is not supported.
+
 :::
 
 ## Change your bot language
