@@ -21,12 +21,13 @@ Simply type in any text and hit send button (or enable enter to send if you want
 ### Canned response
 
 Canned response can be used to reduce the manual effort on sending frequent replies. Agent can simply select a canned response instead of typing the whole message multiple times and send it to the customer.  
-You can add [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown by clicking **#**.   
-
-> Canned responses can be searched by typing any relevant keywords. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses).
+An agent can add [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown by clicking **#** followed by the relevant search term.   
 
 <img src="https://i.imgur.com/IATnPlM.png" alt="drawing" width="50%"/>    
 
+:::note
+Quickly find canned responses by entering relevant keywords/tags or searching within the content. Learn more about the advance search functionality [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses).
+:::
 
 ----
 
