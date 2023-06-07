@@ -65,15 +65,11 @@ The list of expressions available on the left side can be added along with your 
 4.  In **Media** you can add image/file as canned response. 
     - **Tag**: Tag is a short keyword that you can add on your chats screen (when you type # and your tag) the media canned response configured will be displayed. Example: #confirmation.
     - **Media type**: Select media type as **Image/ File** and upload an image(JPEG, PNG format) or file(any format) from your local system. 
-    
     ![](https://i.imgur.com/jsUqUB0.jpg)
-    
 5. Click **Create**.  
 6. All the canned responses will be displayed on the page.   
-
     ![](https://i.imgur.com/N0kjNRg.png) 
-
-
+    
 ------
 
 ## <a name="delete"></a> Edit/Delete canned response
@@ -97,21 +93,32 @@ Saved/configured canned responses will be available in the chats/ticket section 
 
 ### Canned response search functionality 
 
-You can search for canned responses in the dropdown list by clicking on the canned response icon and entering relevant keywords. Here are some tips on how to use the canned response search effectively:
+You can search for canned responses in the dropdown list by clicking on the canned response icon and entering relevant tags/content. Here are some tips on how to use the canned response search effectively:
 - **Search by tag or content**: Canned responses can be searched using either tags or the exact words within their content.     
     > If you have a canned response tagged as "greeting" and the content "Hello, how can I assist you?", searching for either "greeting" or "assist" will display this response.
+    
+    **Tag search**:
+    ![](https://hackmd.io/_uploads/SyNXe9aL3.png)
+    **Content search**:
+    ![](https://hackmd.io/_uploads/rkYpx5pUn.png)
+
+
 - **Highlighting of matching terms**: When you perform a search, the matching content or tag from the search term will be highlighted in bold. This makes it easier to identify relevant responses. 
-    > If you search for the tag "refund," any canned responses with that tag will have it highlighted.
+    > If you search for the tag "discount," any canned responses with that tag will have it highlighted.
+    
+    ![](https://hackmd.io/_uploads/ByTM-5pU3.png)
+
 - **Preference for tag results**: Results that match the assigned tags will be given priority over those that match the content. 
     > If you have a canned response tag as "billing" and another response with the word "billing" in its content, the tag "billing" will appear first in the search results.
 - **Case insensitivity**: The search function is case insensitive, meaning it considers uppercase and lowercase letters as equivalent. 
-    > Searching for "refund" or "Refund" will yield the same results.
+    > Searching for "Fashion" or "fashion" will yield the same results.
+    ![](https://hackmd.io/_uploads/SJrK15aUn.png)
+
 - **Combined result for multiple search terms**: When you use multiple search terms, the search operation follows a logical AND operation. This means that the results will only be shown if both terms match in the exact order. 
-    > Searching for "customer" and "complaint" will only display responses that contain both of these words in that specific order.
+    > Searching for "fanta" and "offers" will only display responses that contain both of these words in that specific order.
+
 
 :::note
 Media type canned responses can only be searched through their assigned tags and not their attachment names.
 :::
-
-<img src="https://hackmd.io/_uploads/HkBFjxFI2.png" alt="drawing" width="70%"/>    
 
