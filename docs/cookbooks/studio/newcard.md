@@ -41,34 +41,42 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 ### 2.1 Tracker card
 
 **Code in Function**
-```
-return new Promise(resolve => {
-    // Your logic goes here
-    let arr= [];
-    let tracard =
-            {
-                "title": "Track Order",
-                "statuses": ["Ordered", "Ready", "Shipped", "In City", "Arrived"],
-                "currentStatus": "Shipped",
-                "from": { "Title": "Jakarta", "Description": "12/12/2021" },
-                "to": { "Title": "Surabaya", "Description": "14/12/2021" },
-                "assigneeDetails": {
-                    "key": "Name",
-                    "value": 'Novi Andari',
-                    "image": "https://cdn.yellowmessenger.com/q9f6PUO48xbV1617021384235.jpeg",
-                },
-                "details": {
-                    "Order ID": "#444-2445-2442-222",
-                    "Delivey": "14/12/2021",
-                    "Total": "IDR 1500",
-                },
-                //  "actions": {
-                //    title: "View data",
-                //  text: "View data"
-            };
-            arr.push (tracard);
-    resolve(arr);
-});   
+```js
+[
+    {
+        "title": "Track Order",
+        "statuses": [
+            "Ordered",
+            "Ready",
+            "Shipped",
+            "In City",
+            "Arrived"
+        ],
+        "currentStatus": "Arrived",
+        "from": {
+            "Title": "Mumbai",
+            "Description": "12/12/2021"
+        },
+        "to": {
+            "Title": "Bengaluru",
+            "Description": "14/12/2021"
+        },
+        "assigneeDetails": {
+            "key": "Name",
+            "value": "Purush",
+            "image": "https://cdn.yellowmessenger.com/PQuTgjPG7NxY1611996274269.png"
+        },
+        "details": {
+            "Order ID": "#444-2445-2442-222",
+            "Delivey": "14/12/2021",
+            "Total": "₹ 1500"
+        },
+        "actions": {
+            "title": "View data",
+            "text": "View data"
+        }
+    }
+] 
 ```
 
 
@@ -87,59 +95,66 @@ return new Promise(resolve => {
 ### 2.2 List Card
 
 **Code in Function**
-```
-return new Promise(resolve => {
-  // Your logic goes here
-  let arr = [];
-  let listcard1 =
-    {
-      title: 'COVID-19 Queries',
-      options: [{
-        title: "Domestic - Covid travel guidelines",
-        text: "Domestic - Covid travel guidelines"
-      }, {
-        title: "International - Travel guideliness",
-        text: "International - Travel guideliness"
-      }, {
-        title: "Mandatory web check in",
-        text: "Mandatory web check in"
-      }, {
-        title: "Fly safe and hassle-free",
-        text: "Fly safe and hassle-free"
-      }, {
-        title: "Interest on credit shell",
-        text: "Interest on credit shell"
-      }]
-    } ;
-    let listcard2 =
-    {
-      title: 'Flight COVID-19 Queries',
-      options: [{
-        title: "Domestic - Covid travel guidelines",
-        text: "Domestic - Covid travel guidelines"
-      }, {
-        title: "International - Travel guideliness",
-        text: "International - Travel guideliness"
-      }, {
-        title: "Mandatory web check in",
-        text: "Mandatory web check in"
-      }, {
-        title: "Fly safe and hassle-free",
-        text: "Fly safe and hassle-free"
-      }, {
-        title: "Interest on credit shell",
-        text: "Interest on credit shell"
-      }]
-         } ; 
-      arr.push(listcard1, listcard2);
-  resolve(arr);
-});  
+```js
+[
+	{
+		"title": "COVID-19 Queries",
+		"options": [
+			{
+				"title": "Domestic - Covid travel guidelines",
+				"text": "Domestic - Covid travel guidelines",
+				"url": "https://yellow.ai"
+			},
+			{
+				"title": "International - Travel guideliness",
+				"text": "International - Travel guideliness"
+			},
+			{
+				"title": "Mandatory web check in",
+				"text": "Mandatory web check in"
+			},
+			{
+				"title": "Fly safe and hassle-free",
+				"text": "Fly safe and hassle-free"
+			},
+			{
+				"title": "Interest on credit shell",
+				"text": "Interest on credit shell"
+			}
+		]
+	},
+	{
+      "title": "Flight COVID-19 Queries",
+      "options": [
+			{
+        "title": "Domestic - Covid travel guidelines",
+        "text": "Domestic - Covid travel guidelines"
+			},
+			{
+        "title": "International - Travel guideliness",
+        "text": "International - Travel guideliness"
+			},
+			{
+        "title": "Mandatory web check in",
+        "text": "Mandatory web check in"
+			},
+			{
+        "title": "Fly safe and hassle-free",
+        "text": "Fly safe and hassle-free"
+			},
+			{
+        "title": "Interest on credit shell",
+        "text": "Interest on credit shell"
+			}
+		]
+	}
+]
 ```
 
 
 **Card Type in Carousel**   
 
-<img src="https://i.imgur.com/avq95rt.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/avq95rt.png" alt="drawing" width="40%"/>
 
 
 
@@ -150,70 +165,89 @@ return new Promise(resolve => {
 
  
 
-### 2.3 Status card
+### 2.3 Transaction status card
+
+#### Transaction status card (Payment success)
 
 **Code in Function**
+```js
+[{
+	"title": "Payment success",
+	"success": true,
+	"text": "Your payment was successful & your order has been placed.",
+	"value": 1500
+}
+]
 ```
-return new Promise(resolve => {
-      // Your logic goes here
-         let arr= [];
-         let stacard =     {
-            "title": "Payment success",
-            "success": true, //In case of failed pass false
-            "text": "Your payment was successfull & your order has been placed.",
-            "value": "IDR 15000"
-        };
-         arr.push (stacard);
-      resolve(arr);
-  });      
-```
+
 **Card Type in Carousel**   
 
 **![](https://lh6.googleusercontent.com/XYabBrzuqGil3LGyI4Jh8VT4jhiG133OBaMj3LszSqhUzXnbW5ActJIlDo0T7f9lRktagBReqdPlil7endagu-oZJeNGh49o19ryV6W9-TfTAUJRpXcFANv0uqsBkijokF0XzzCb33tV7VBJhpIIh7ZL8wnvNGDl_1rvj2s0o5XHx4WR7m6P8c_7DrIWcs_OgrCy-Q)**  
 
 **Display in chat**  
  
-**![](https://lh4.googleusercontent.com/kdiPR0SFsryQIsp30d90i7TymakTNeSc0EnJSlkNT5wFbljSxP_sua8SbeRtXexv7ajBrD1WIR_a3fVaSEQT5kL2kT0PveBfTU4EOsnks07xVAD6e73qkfbceOSiR9fAcriN5ja1ur1JzNveiu3MBNG4mW7DW30oaHrfAPwhA8bDtHx0cM0qNCXS4ggXH67EkYrSdg)**  
+<img src="https://i.imgur.com/SrQxE6Z.png)" alt="drawing" width="40%"/>
+
+#### Transaction status card (Payment failed)
+
+**Code in Function**
+```js
+[{
+	"title": "Payment failed",
+	"success": false,
+	"text": "Your payment was failed & your order is not placed.",
+	"value": 1500
+}]
+```
+
+**Card Type in Carousel**   
+
+**![](https://lh6.googleusercontent.com/XYabBrzuqGil3LGyI4Jh8VT4jhiG133OBaMj3LszSqhUzXnbW5ActJIlDo0T7f9lRktagBReqdPlil7endagu-oZJeNGh49o19ryV6W9-TfTAUJRpXcFANv0uqsBkijokF0XzzCb33tV7VBJhpIIh7ZL8wnvNGDl_1rvj2s0o5XHx4WR7m6P8c_7DrIWcs_OgrCy-Q)**  
+
+**Display in chat**  
+
+<img src="https://i.imgur.com/QUUbKcL.png)" alt="drawing" width="40%"/>
 
 ### 2.4 Contact Card
 
 **Code in Function**
+```js
+[
+    {
+        "title": "Contact Info",
+        "download": "https://cdn.yellowmessenger.com/KpvHzrKBodtw1648483057986.jpg",
+        "options": {
+            "image": "https://cdn.yellowmessenger.com/PQuTgjPG7NxY1611996274269.png",
+            "key": "Name",
+            "value": "Purush"
+        },
+        "actions": [
+            {
+                "title": "email",
+                "text": "purushottam.yadav@yellow.ai",
+                "icon_class": "ri-mail-fill",
+               "url":"mailto:sankalp.gupta@gmail.com"
+            },
+            {
+                "title": "Phone",
+                 "text": "Phone",
+                "icon_class": "ri-phone-fill",
+               "url":"tel:9810272341"
+            },
+            {
+                "title": "whatsapp",
+                 "text": "whatsapp",
+                "icon_class": "ri-whatsapp-fill",
+               "url":"whatsapp://send?phone=+919810272341"
+            }
+        ]
+    }
+]
 ```
-return new Promise(resolve => {
-   // Your logic goes here
-   let arr = [];
-   let contcard =
-   {
-      "title": "Contact Info",
-      "download": true,
-      "options": {
-         "image": "https://cdn.yellowmessenger.com/q9f6PUO48xbV1617021384235.jpeg",
-         "key": "Name",
-         "value": "Shweta Kumari"
-      },
-      "actions": [{
-         "title": "email",
-         "text": "s@gmail.com",
-         "icon_class": 'ri-mail-fill'
-      }, {
-         "title": "Phone",
-                 "url": "9876543210",
-         "icon_class": 'ri-phone-fill'
-      }, {
-         "title": "whatsapp",
-         "url": "9876543210",
-         "icon_class": 'ri-whatsapp-fill'
-      }]
-   };
- 
-   arr.push(contcard);
-   resolve(arr);
-});     
-```  
 
 **Card Type in Carousel**  
 
-**![](https://lh5.googleusercontent.com/YSHSSps-jhnshg032xqx6FItENy31im6MBHi56B8PZH-2B7XbDt_zbLwuDLHqD7SmBByTDMBqlO5NI4E5ie-gn_YC2aPWR7n7VAjULwQcJ4DYBy8jqxn_V18yFkOZAR8Nx_bsfg_Av5hIqmOVXM9DRTmHsc5DZ5460pJOArQyL0H2JZ9-RKRF7EbS21rrSd30KaXJA)**  
+**![](https://i.imgur.com/3gB7q7Y.png)** 
 
 **Display in chat**  
 
@@ -223,32 +257,48 @@ return new Promise(resolve => {
 ### 2.5 Receipt card
 
 **Code in Function**
-```
-return new Promise(resolve => {
-    // Your logic goes here
-    let arr = [];
-    //let result = JSON.parse(data.variables.searchroomorder);
-    let rececard = {
+```js
+[
+    {
         "title": "Payment receipt",
-        "titleHeader": { "Transaction ID": "#444-2445-2442-222" },
-        "download": false,
-        "item": { "items": "7 Rendang" },
-        "options": [{
-            'key': "With a value of",
-            'value': "IDR 70000"
-        }, {
-            'key': "On date",
-            'value': "14 Feb 2022"
-        }],
-       // "action": {
-         //   title: "View all items",
-           // text: "View all items"
-       // }
-    };
-    arr.push(rececard);
-    resolve(arr);
-    });
+        "titleHeader": {
+            "Transaction Number": "#444-2445-2442-222",
+            "Transaction ID": "#444-2445-2442-222"
+        },
+        "download": "https://yellow.ai",
+        "item": {
+            "items": "7 Rendang"
+        },
+        "options": [
+            {
+                "key": "With a value of",
+                "value": "IDR 70000"
+            },
+            {
+                "key": "date",
+                "value": "Feb 2022"
+            },
+            {
+                "key": "Cost in rupees",
+                "value": "70000"
+            },
+            {
+                "key": "yyyy-mm-dd",
+                "value": "2022-02-02 "
+            },
+            {
+                "key": "On date",
+                "value": "14 Feb 2022"
+            }
+        ],
+        "action": {
+            "title": "View all items",
+            "url": "https://www.yellow.ai"
+        }
+    }
+]
 ```
+
 **Card Type in Carousel**  
 
 **![](https://lh6.googleusercontent.com/je_wRsbKYejZaTqzPzwxh9Kn2iCkrMEjqrHNz6zmyq-Lev46N7rqw5d5eAfY8WNfapeAqW-kDeuahGEtkynjCGRGL67cdnb7pIhmKLr0BYShc24wWwcqrzgOCbv0LQShVSqKzG_JcLk_sIGC5MgTiLjmg9Q75QF_aFzwduNOm2tt_9Yw2d_OcQM6vdni7SC9WtZ_dw)**  
@@ -293,3 +343,161 @@ return new Promise(resolve => {
 **Display in chat**
 
 **![](https://lh3.googleusercontent.com/HorDL6FIXM-Uo6Vi1NJdJgD9Fm8nmFPicCH0oXW8BmRjktEnd_q-IzxAUUzobnurki_FafBEFjkIUBv4TixpfG09ihoOrMOfhE7iTUC21TG7rWFKJIsb_th1R0jd4b9uJAibWbZtqFjcFPnleQv02VmoVOYXO-wFFGjctzVZUd3SGVH2uc_GuONM6IG7K6Wa5j8SCQ)**
+
+
+### 2.7 Multi select transaction card
+
+**Code in Function**
+
+```js
+[
+            {
+                id: ‘1b23-0zdc’,
+                title: “Pertam Kedua Ketiga”,
+                type: “Debit”,
+                image: “https://cdn.yellowmessenger.com/boXfK6e5d6LK1675079020492.png”,
+                status: “Success”,
+                amount: 10000,
+                accountName: “DCA”,
+                currency: “IDR”,
+                time: “2022-09-12T00:00:00.000Z”,
+                accountNumber: `${cardId}`,
+                additionalInfo: [
+                    “Transfer to bank”,
+                    “Destination : BCA”
+                ]
+            },
+            {
+                id: “23bc-123x”,
+                title: “Pertam Kedua Ketiga”,
+                type: “Debit”,
+                status: “Success”,
+                amount: 10000,
+                accountName: “DCA”,
+                currency: “IDR”,
+                time: “2022-09-12T00:00:00.000Z”,
+                accountNumber: “xxxx-5678”,
+                additionalInfo: [
+                    “Transfer to bank”,
+                    “Destination : BCA”
+                ]
+            }
+	]
+```
+
+**Display in chat**
+
+<img src="https://i.imgur.com/OAToVqQ.png)" alt="drawing" width="40%"/>
+
+### 2.8 Product card
+
+**Code in Function**
+
+```js
+[
+  {
+    "title": "New Apple iPhone 12 (128GB)",
+    "text": "The iPhone 12 and iPhone 12 mini are part of Apple's latest generation of smartphones, offering OLED displays, 5G connectivity, the A14 chip for better performance, improved cameras, and MagSafe, all in a new, squared-off design.",
+    "value": [
+      "₹ 80,900",
+      "fsdafadsfasf",
+      "You save ₹ 2,900"
+    ],
+    "input": true,
+    "image": [
+      "https://cdn.yellowmessenger.com/ZglWKNRsESKb1623145034869.jpeg"
+    ],
+    "titleHeader": {
+      "₹ 82,900": "You save ₹ 2,900"
+    },
+    "options": {
+      "key": "Description",
+      "value": "The iPhone 12 and iPhone 12 mini are part of Apple's latest generation of smartphones, offering OLED displays, 5G connectivity, the A14 chip for better performance, improved cameras, and MagSafe, all in a new, squared-off design."
+    },
+    "actions": [
+      {
+        "title": "Purchase",
+        "text": "Purchase"
+      },
+      {
+        "title": "Know More",
+        "text": "Know More"
+      },
+      {
+        "title": "More",
+        "text": "More"
+      },
+      {
+        "title": "Visit Site",
+        "url": "https://www.yellow.ai"
+      }
+    ]
+  },
+{
+    "title": "New Apple iPhone 12 (128GB)",
+    "text": "The iPhone 12 and iPhone 12 mini are part of Apple's latest generation of smartphones, offering OLED displays, 5G connectivity, the A14 chip for better performance, improved cameras, and MagSafe, all in a new, squared-off design.",
+    "value": [
+      "₹ 80,900",
+      "fsdafadsfasf",
+      "You save ₹ 2,900"
+    ],
+    "input": true,
+    "image": [
+      "https://cdn.yellowmessenger.com/ZglWKNRsESKb1623145034869.jpeg"
+    ],
+    "titleHeader": {
+      "₹ 82,900": "You save ₹ 2,900"
+    },
+    "options": {
+      "key": "Description",
+      "value": "The iPhone 12 and iPhone 12 mini are part of Apple's latest generation of smartphones, offering OLED displays, 5G connectivity, the A14 chip for better performance, improved cameras, and MagSafe, all in a new, squared-off design."
+    },
+    "actions": [
+      {
+        "title": "Purchase",
+        "text": "Purchase"
+      },
+      {
+        "title": "Know More",
+        "text": "Know More"
+      },
+      {
+        "title": "More",
+        "text": "More"
+      },
+      {
+        "title": "Visit Site",
+        "url": "https://www.yellow.ai"
+      }
+    ]
+  }
+]
+```
+
+**Display in chat**
+
+<img src="https://i.imgur.com/pzQW3vv.png" alt="drawing" width="40%"/>
+
+### 2.8 Slider card
+
+**Code in Function**
+
+```js
+[
+	{
+		"title": "Loan Amount",
+		"slider": {
+			"step": 1000000,
+			"min": 1000000,
+			"max": 25000000,
+			"val": 0,
+			"min_content": "10 L",
+			"max_content": "25 Cr"
+		}
+	}
+]
+```
+
+**Display in chat**
+
+<img src="https://i.imgur.com/3Q5nz60.png" alt="drawing" width="40%"/>
