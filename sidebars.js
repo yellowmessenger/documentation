@@ -1045,6 +1045,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/event-widget",
             "platform_concepts/channelConfiguration/chrome-extension",
             "platform_concepts/channelConfiguration/chat-widget-components",
+            "platform_concepts/channelConfiguration/custom-boticon",
             "platform_concepts/channelConfiguration/speech-to-text",
             "platform_concepts/channelConfiguration/text-to-speech",
             "platform_concepts/channelConfiguration/chat-widget-notification",

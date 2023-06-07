@@ -11,9 +11,13 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 
 ## 1. Add a new card to the flow
 
-1.  Create a Function and store the variables in the function node as an Array  
+1.  Create a Function and store the variables in the function node as an Array. 
 
 > Regarding the code to use in the  function, refer to table Code and Card Mapping for the new card in the next section.
+
+:::note
+This step is optional if you do not want to use dynamic data. 
+:::
     
 <img src="https://i.imgur.com/Wyoinwg.png" alt="drawing"/>
 
@@ -27,9 +31,9 @@ Follow the steps below to use the **card type** option on the **carousel** node 
     ![](https://i.imgur.com/YEX71jL.png)
     - Edit the carousel setting based on the new card type. To edit the card type to use, you can hover the cursor to the right side and then click it.  
 
-    ![](https://i.imgur.com/NcUvtFR.png)  
+     ![](https://i.imgur.com/NcUvtFR.png)  
     
-    ![](https://i.imgur.com/RApulNU.png)
+     ![](https://i.imgur.com/RApulNU.png)
 
 > Regarding the Card type to use, refer to Code and Card Mapping for the new card below.  
 
@@ -39,6 +43,14 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 
 
 ### 2.1 Tracker card
+
+**Card Type in Carousel**  
+
+<img src="https://i.imgur.com/u6glp54.png" alt="drawing" width="60%"/>
+
+**Display in chat**  
+
+<img src="https://i.imgur.com/gO0zj9o.png" alt="drawing" width="40%"/>
 
 **Code in Function**
 ```js
@@ -80,19 +92,16 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 ```
 
 
-**Card Type in Carousel**  
-
-<img src="https://i.imgur.com/u6glp54.png" alt="drawing" width="60%"/>
-
-
-
-
-**Display in chat**  
-
-<img src="https://i.imgur.com/0LiFOcR.png" alt="drawing" width="60%"/>
-
-
 ### 2.2 List Card
+
+**Card Type in Carousel**   
+
+<img src="https://i.imgur.com/avq95rt.png" alt="drawing" width="40%"/>
+
+
+**Display in chat**
+
+<img src="https://i.imgur.com/hiBPxx0.png" alt="drawing" width="60%"/>
 
 **Code in Function**
 ```js
@@ -151,23 +160,17 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 ]
 ```
 
-
-**Card Type in Carousel**   
-
-<img src="https://i.imgur.com/avq95rt.png" alt="drawing" width="40%"/>
-
-
-
-
-**Display in chat**
-
-**![](https://lh4.googleusercontent.com/llWIH43nPoCp08gIifTBRr9L_7U1BfZQ9qKPXXFDwCAXHeETmLfRAL4yBYJXhk6tBPssgzwFQGLDIGIuaToeJs-CFVhgCfKYZqou7PyNMNZgjHsZTjarZ0wbw5_JJxpiVaexIdGCbUVGzgKbnZqrdMV0EfvYORXLkwc-5l_ETGJVN70EHThcmF3wtzTicpzvGc3Qkg)**
-
- 
-
 ### 2.3 Transaction status card
 
 #### Transaction status card (Payment success)
+
+**Card Type in Carousel**   
+
+**![](https://lh6.googleusercontent.com/XYabBrzuqGil3LGyI4Jh8VT4jhiG133OBaMj3LszSqhUzXnbW5ActJIlDo0T7f9lRktagBReqdPlil7endagu-oZJeNGh49o19ryV6W9-TfTAUJRpXcFANv0uqsBkijokF0XzzCb33tV7VBJhpIIh7ZL8wnvNGDl_1rvj2s0o5XHx4WR7m6P8c_7DrIWcs_OgrCy-Q)**  
+
+**Display in chat**  
+ 
+<img src="https://i.imgur.com/SrQxE6Z.png)" alt="drawing" width="40%"/>
 
 **Code in Function**
 ```js
@@ -180,25 +183,7 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 ]
 ```
 
-**Card Type in Carousel**   
-
-**![](https://lh6.googleusercontent.com/XYabBrzuqGil3LGyI4Jh8VT4jhiG133OBaMj3LszSqhUzXnbW5ActJIlDo0T7f9lRktagBReqdPlil7endagu-oZJeNGh49o19ryV6W9-TfTAUJRpXcFANv0uqsBkijokF0XzzCb33tV7VBJhpIIh7ZL8wnvNGDl_1rvj2s0o5XHx4WR7m6P8c_7DrIWcs_OgrCy-Q)**  
-
-**Display in chat**  
- 
-<img src="https://i.imgur.com/SrQxE6Z.png)" alt="drawing" width="40%"/>
-
 #### Transaction status card (Payment failed)
-
-**Code in Function**
-```js
-[{
-	"title": "Payment failed",
-	"success": false,
-	"text": "Your payment was failed & your order is not placed.",
-	"value": 1500
-}]
-```
 
 **Card Type in Carousel**   
 
@@ -208,7 +193,27 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 
 <img src="https://i.imgur.com/QUUbKcL.png)" alt="drawing" width="40%"/>
 
+**Code in Function**
+```js
+[
+  {
+	"title": "Payment failed",
+	"success": false,
+	"text": "Your payment was failed & your order is not placed.",
+	"value": 1500
+}
+]
+```
+
 ### 2.4 Contact Card
+
+**Card Type in Carousel**  
+
+**![](https://i.imgur.com/3gB7q7Y.png)** 
+
+**Display in chat**  
+
+<img src="https://i.imgur.com/HVUfu8y.png" alt="drawing" width="40%"/>  
 
 **Code in Function**
 ```js
@@ -245,16 +250,17 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 ]
 ```
 
+
+### 2.5 Receipt card
+
 **Card Type in Carousel**  
 
-**![](https://i.imgur.com/3gB7q7Y.png)** 
+**![](https://lh6.googleusercontent.com/je_wRsbKYejZaTqzPzwxh9Kn2iCkrMEjqrHNz6zmyq-Lev46N7rqw5d5eAfY8WNfapeAqW-kDeuahGEtkynjCGRGL67cdnb7pIhmKLr0BYShc24wWwcqrzgOCbv0LQShVSqKzG_JcLk_sIGC5MgTiLjmg9Q75QF_aFzwduNOm2tt_9Yw2d_OcQM6vdni7SC9WtZ_dw)**  
+
 
 **Display in chat**  
 
-**![](https://lh3.googleusercontent.com/yp8ShI5YTbkdO4zsk4efZr0q7oY3GF1Vxg4wX1NAY7Wx4_zfYbtidnTZuQfpdSYy7cLtm7XLxz24LFhtzuH_SYzhxrAftevto-xapfvnKVYuRUD2RkRPNWzjUHdmiwXvWh0XuzqxLBduXceDvfcZWh2EE_Za5poxS24jONLpLVpq9kA8NrilET0XW9JNVJNVGo0yUA)**  
-
-
-### 2.5 Receipt card
+<img src="https://i.imgur.com/LJeO5AF.png" alt="drawing" width="40%"/> 
 
 **Code in Function**
 ```js
@@ -299,16 +305,15 @@ Follow the steps below to use the **card type** option on the **carousel** node 
 ]
 ```
 
+### 2.6 PDF preview card
+
 **Card Type in Carousel**  
 
-**![](https://lh6.googleusercontent.com/je_wRsbKYejZaTqzPzwxh9Kn2iCkrMEjqrHNz6zmyq-Lev46N7rqw5d5eAfY8WNfapeAqW-kDeuahGEtkynjCGRGL67cdnb7pIhmKLr0BYShc24wWwcqrzgOCbv0LQShVSqKzG_JcLk_sIGC5MgTiLjmg9Q75QF_aFzwduNOm2tt_9Yw2d_OcQM6vdni7SC9WtZ_dw)**  
+**![](https://lh5.googleusercontent.com/PYbE7pUVEKMZ7OFyXsPwJxuOIRmqtaAiig1F5TjUvog_ghmdcBV1UH6M5GzITpO3DkWlGvqDRrV6m7M-Hko46fyj8cEqchMIYvKrndC28Y3YXqcLFtHmiwcU-sdjZE-nRlQogyE9BHDq2FRvv8SPL-FirBx4n56g7orsKklMYvm0u9rX96oj3ACfWouEdHFQsu_yyQ)**  
 
+**Display in chat**
 
-**Display in chat**  
-
-**![](https://lh5.googleusercontent.com/zQwIv-FZSJHiw-zuo8tg4lWnGtCnv2RjsqROwo-E4bq3n_2zd8riCYua044X2-p_V4YDZXpheyJ0XHd0DqFOHn0W8E5ufLf3mxxJkQzpLZ2AEFDf7_NRrsls5IDLs1BOjIgOqIXrdYiGObmtF9RJhHEDHBWhQxtwGZyp2gak3a1ZvcblLeJmqmSZP0scdr68eIk8vQ)**
-
-### 2.6 PDF preview card
+**![](https://lh3.googleusercontent.com/HorDL6FIXM-Uo6Vi1NJdJgD9Fm8nmFPicCH0oXW8BmRjktEnd_q-IzxAUUzobnurki_FafBEFjkIUBv4TixpfG09ihoOrMOfhE7iTUC21TG7rWFKJIsb_th1R0jd4b9uJAibWbZtqFjcFPnleQv02VmoVOYXO-wFFGjctzVZUd3SGVH2uc_GuONM6IG7K6Wa5j8SCQ)**
 
 **Code in Function**
 ```
@@ -336,16 +341,12 @@ return new Promise(resolve => {
     resolve(arr);
   });   
 ```
-**Card Type in Carousel**  
 
-**![](https://lh5.googleusercontent.com/PYbE7pUVEKMZ7OFyXsPwJxuOIRmqtaAiig1F5TjUvog_ghmdcBV1UH6M5GzITpO3DkWlGvqDRrV6m7M-Hko46fyj8cEqchMIYvKrndC28Y3YXqcLFtHmiwcU-sdjZE-nRlQogyE9BHDq2FRvv8SPL-FirBx4n56g7orsKklMYvm0u9rX96oj3ACfWouEdHFQsu_yyQ)**  
+### 2.7 Multi select transaction card
 
 **Display in chat**
 
-**![](https://lh3.googleusercontent.com/HorDL6FIXM-Uo6Vi1NJdJgD9Fm8nmFPicCH0oXW8BmRjktEnd_q-IzxAUUzobnurki_FafBEFjkIUBv4TixpfG09ihoOrMOfhE7iTUC21TG7rWFKJIsb_th1R0jd4b9uJAibWbZtqFjcFPnleQv02VmoVOYXO-wFFGjctzVZUd3SGVH2uc_GuONM6IG7K6Wa5j8SCQ)**
-
-
-### 2.7 Multi select transaction card
+<img src="https://i.imgur.com/OAToVqQ.png)" alt="drawing" width="50%"/>
 
 **Code in Function**
 
@@ -385,11 +386,11 @@ return new Promise(resolve => {
 	]
 ```
 
+### 2.8 Product card
+
 **Display in chat**
 
-<img src="https://i.imgur.com/OAToVqQ.png)" alt="drawing" width="40%"/>
-
-### 2.8 Product card
+<img src="https://i.imgur.com/pzQW3vv.png" alt="drawing" width="40%"/>
 
 **Code in Function**
 
@@ -400,7 +401,7 @@ return new Promise(resolve => {
     "text": "The iPhone 12 and iPhone 12 mini are part of Apple's latest generation of smartphones, offering OLED displays, 5G connectivity, the A14 chip for better performance, improved cameras, and MagSafe, all in a new, squared-off design.",
     "value": [
       "₹ 80,900",
-      "fsdafadsfasf",
+      "₹ 82,900",
       "You save ₹ 2,900"
     ],
     "input": true,
@@ -438,7 +439,7 @@ return new Promise(resolve => {
     "text": "The iPhone 12 and iPhone 12 mini are part of Apple's latest generation of smartphones, offering OLED displays, 5G connectivity, the A14 chip for better performance, improved cameras, and MagSafe, all in a new, squared-off design.",
     "value": [
       "₹ 80,900",
-      "fsdafadsfasf",
+      "₹ 82,900",
       "You save ₹ 2,900"
     ],
     "input": true,
@@ -474,11 +475,11 @@ return new Promise(resolve => {
 ]
 ```
 
+### 2.9 Slider card
+
 **Display in chat**
 
-<img src="https://i.imgur.com/pzQW3vv.png" alt="drawing" width="40%"/>
-
-### 2.8 Slider card
+<img src="https://i.imgur.com/l3xsbQJ.png" alt="drawing" width="40%"/>
 
 **Code in Function**
 
@@ -498,6 +499,3 @@ return new Promise(resolve => {
 ]
 ```
 
-**Display in chat**
-
-<img src="https://i.imgur.com/3Q5nz60.png" alt="drawing" width="40%"/>
