@@ -1,19 +1,23 @@
 ---
 id: inbox
-title: Provide customer support using yellow.ai's Inbox
-description: inbox for customer support agents and live agents
+title: Enhance customer support with yellow.ai's Inbox | Best omnichannel helpdesk
+description: yellow.ai's Inbox is a powerful customer support helpdesk for agents, providing seamless management of customer queries across multiple channels. Learn about its functionalities, notifications, Orchestrator bot feature, and support on Android and iOS.
 featured: true
-rank: 5
+rank: 1
 ---
 
+Our Inbox is a comprehensive omnichannel helpdesk designed to empower customer support agents and live agents. Discover how you can provide exceptional customer support using Inbox's advanced features and functionalities.
 
-In this article, you will understand:
-1. [Where to find Inbox?](#i1)
-2. [Functionalities of Inbox?](#i2)
-3. [Notifications in Inbox](#i4)
-4. [How does the Orchestrator bot feature work in Inbox?](#i5)
-5. [Inbox support on Android & iOS](#and_ios)
 
+**Learn more about Inbox's capabilities**:
+
+1. [Easy navigation to inbox](#i1): Find out how to access Inbox effortlessly.
+2. [Powerful functionalities of inbox](#i2): Explore the wide range of features available in Inbox for efficient customer query management.
+3. [Stay notified with inbox notifications](#i4): Never miss a beat with timely notifications about important actions in your Inbox.
+4. [Orchestrator bot feature in inbox](#i5): Discover how the Orchestrator bot feature simplifies customer query handling and unifies the Inbox experience.
+5. [Inbox support on android & iOS](#and_ios): Access Inbox on your Android or iOS device and enjoy seamless customer interactions on the go.
+
+**Check out our informative video on Inbox**:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UXM2-18QLds" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
@@ -22,99 +26,94 @@ In this article, you will understand:
 You can access Inbox using the keyboard shortcut `g` + `i`.
 :::
 
+Inbox revolutionizes the way you handle customer support. With its intuitive user experience and support for over 35 conversational channels, Inbox empowers agents to manage customer queries effectively. Say goodbye to scattered information and hello to a unified helpdesk that provides complete customer history and context. By centralizing all customer information, Inbox ensures efficient, relevant, and personalized communication between businesses and their customers.
 
-
-Inbox is a unified omnichannel customer support helpdesk for agents to seamlessly manage customer queries across 35+ conversational channels. With an intuitive UX, INBOX enables agents to handle requests from a single dashboard in any language, offering complete customer history with superior context, and reducing query resolution time.
-It integrates and manages all customer information in one place so that communication between businesses and their customers is efficient, relevant, and personal.
-
+Discover Inbox's features in detail:
 
 -----
 
-## <a name="i1"></a>  1. Navigation to Inbox
+## <a name="i1"></a>  1. Easy navigation to Inbox
 
-To open Inbox, follow the steps below: 
+To open Inbox, follow these simple steps:
 
 1. Log in to [yellow.ai](https://cloud.yellow.ai/auth/login) platform.
 2. On the overview switcher, click **Inbox**.
 
 ![](https://i.imgur.com/Brz9Pb5.png)
 
-:::note
-Inbox **Settings** applied in **Development(Sandbox/Staging)** mode does not apply to Inbox in **Live(Production)** mode.       
-It is recommended to try our customizable functionalities in **Development** mode and add Inbox **Settings** again once your bot is **Live**.
-:::
-
 ----
 
-## <a name="i2"></a>  2. Functionalities of Inbox
+## <a name="i2"></a>  2. Powerful functionalities of Inbox
 
-There are multiple options available in the inbox module, they are listed below:
-
+Inbox offers a wide range of options and modules to streamline your customer support process. Take advantage of the following functionalities:
 
 | Section | Description |
 | -------- | -------- |
-| **Monitor**     | Monitor chat and email trends and team details. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/monitor) to learn more.    |
-|**Live Chats**| Provide 24/7 live support to your customers from this section. Perform bulk actions, and chat searches for chats on the web, Whatsapp, Instagram, and other channels. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) to learn more. |
-|**Email Tickets**| Monitor and resolve email tickets, create new tickets (manually/in bulk), and other no-code email ticketing functionalities. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) to learn more.  |
-|**Contacts**| Create a list of contacts and send pro active notifications(emails) for your brand. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts) to learn more. |
-|**Analytics and Reports**| Find single-click dynamic charts and generate and download detailed reports about your business and team performance to take data-driven business decisions. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics) to learn more.|
-|**Knowledgebase**| Design a knowledgebase with information to resolve user queries quickly. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview) to learn more. |
-|**Settings**| Manage Inbox by enabling the required functions from settings. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) for more details. |
+| **Monitor**     | Keep track of chat and email trends, as well as team details. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/monitor) to learn more.    |
+|**Live Chats**| Provide 24/7 live support to your customers across various channels. Perform bulk actions and conduct chat searches easily. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) to learn more. |
+|**Email Tickets**| 	Monitor and resolve email tickets, create new tickets manually or in bulk, and leverage no-code email ticketing functionalities. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) to learn more.  |
+|**Contacts**| Create contact lists and send proactive notifications (emails) to enhance your brand's engagement. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts) to learn more. |
+|**Analytics and Reports**| Access dynamic charts and generate detailed reports on your business and team performance, enabling data-driven decision-making. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics) to learn more.|
+|**Knowledgebase**| Design a knowledgebase to provide quick resolutions to user queries. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/knowledge-base/kboverview) to learn more. |
+|**Settings**| MCustomize Inbox to meet your specific requirements. Enable essential functions and configurations from the Settings page. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents) for more details. <br/> You can tailor Inbox according to your needs by adjusting the settings on the dedicated page.|
 
-
-> You can customize Inbox to meet your requirements from the **Settings** page. 
+:::note
+Settings applied to Inbox in **Development (Sandbox/Staging)** mode do not carry over to **Live (Production)** mode. We recommend customizing functionalities in **Development** mode and reapplying Inbox settings when your bot goes **Live**.
+:::
 
 -------
 
-## <a name="i4"></a>  3. Inbox notifications
+## <a name="i4"></a>  3. Stay notified with Inbox notifications
 
-Based on the [access](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) you have (Inbox Admin, Supervisor, or Agent) you will get notified about all the actions on your Inbox. 
+Stay informed about all the activities happening in your Inbox, based on your [access level](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) (Inbox Admin, Supervisor, or Agent). Here's how notifications work:
 
-1. Click the notification icon in the upper right corner of your screen. You can find all the updates and alerts listed on the **Notification** tab. 
+
+
+1. Click on the notification icon in the upper right corner of your screen. The **Notification** tab displays all the updates and alerts.
 
 ![](https://i.imgur.com/6hs6g7s.png)
 
-2. On clicking any of the notifications, you will be directed to the respective page.
-    - For example, clicking *New chat #100596 was created with status set to ASSIGNED* will direct you to the chat page of #100596.
+2. Clicking on any notification takes you directly to the relevant page.
+    > For example, clicking on New chat #100596 was created with status set to ASSIGNED will redirect you to chat #100596.
 
-3. Click **See all notifications**, you will be redirected to the **Notifications** page.
-    - Click **All** (selecting this will display all the notifications), and you can select to see **Read** notifications/ **Unread** notifications from the list.
-    - If you click **Mark all as read**, all the notifications will be marked as read. 
-    - You can click the blue dot next to the notifications to change the read status of it. Read notifications can be marked as unread and vice versa. 
-    - Click **Go to settings** to configure notification options. 
+3. Click on see all notifications to access the comprehensive **Notifications** page.
+    - You can filter notifications by selecting **All** (displays all notifications) or choose to view **Read** or **Unread** notifications.
+    - Mark all notifications as read by clicking **Mark all as read**.
+    - Easily change the read status of notifications by clicking the blue dot next to each notification. Toggle between read and unread statuses.
+    - Configure notification options by clicking on **Go to settings**.
 
 ![](https://i.imgur.com/3KOSLYg.png)
 
-
 :::note
-You can configure notifications on the settings page. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/account/notification) to learn more. 
+Configure your notification preferences on the settings page. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/account/notification).
 :::
 
 
 --------
 
 
-## <a name="i5"></a> 4. Unified Inbox- Orchestrator bot  
+## <a name="i5"></a> 4. Orchestrator bot feature in Inbox
 
-With the [orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator) bot feature, you can create a parent bot and add child bots(available bots in the same subscription) to it.   
-When **Unify inbox to all child bots** is selected, support tickets received by the child bots will be available in the parent bot's Inbox. You can have a unified inbox to reply to all customer queries. 
+With the powerful [orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator) bot feature, you can create a parent bot and add child bots from the same subscription. When you select **Unify inbox to all child bots**, support tickets received by the child bots become available in the parent bot's Inbox. This unified inbox allows you to efficiently respond to all customer queries.
 
 ![](https://i.imgur.com/WsKX6Ph.png)
 
 
 
 ----
-## <a name="and_ios"></a> 5. Inbox support on Android & iOS
 
-Yellow.ai brings **YellowAI Partner** for agents to reduce query resolution time by responding and addressing queries in a matter of seconds on [Android](https://play.google.com/store/apps/details?id=ai.yellow.supportagent&hl=en&gl=US) and [iOS](https://apps.apple.com/tr/app/yellowai-partner/id1612610646). Our innovative automated live chat technology seamlessly bridges the gap between traditional and modern communication channels, while driving agent productivity, automating L1 queries, and providing better interactions through voice and video calling features.
+## <a name="and_ios"></a> 5. Inbox Support on Android & iOS
 
-Agents can use YellowAI Partner to:
+Experience the convenience of Inbox on your Android or iOS device with YellowAI Partner. This dedicated app empowers agents to resolve queries swiftly, enhancing query resolution time and customer satisfaction. Key features of YellowAI Partner include:
+- Seamless communication with customers, providing round-the-clock support.
+- Effective handling of L1 and L2 queries.
+- Collaboration with teammates for efficient query resolution.
+- Enhanced customer interactions through voice and video calling features.
+- Instant access to information, empowering agents to provide accurate and timely responses.
+- Real-time feedback from customers to improve support quality.
+- AI Agent Workflows to automate agent actions and boost productivity.
+- Push Notifications to ensure you never miss any tickets, even when taking a break.
 
-* Communicate with customers and serve them round the clock.
-* Handle L1 L2 queries like a boss.
-* Collaborate with teammates to address queries.
-* Provide better interactions through voice and video calling features.
-* Get empowered with access to the information.
-* Get instant feedback from customers.
-* AI Agent Workflows to automate agent actions.
-* Push Notifications for when you are on a break, so you don't miss any tickets.
+:::note
+Download **YellowAI Partner** on [Android](https://play.google.com/store/apps/details?id=ai.yellow.supportagent&hl=en&gl=US) and [iOS](https://apps.apple.com/tr/app/yellowai-partner/id1612610646) to leverage its innovative automated live chat technology and elevate your customer support game.
+:::
