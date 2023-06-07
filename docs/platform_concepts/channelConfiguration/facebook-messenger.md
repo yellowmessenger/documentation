@@ -165,11 +165,11 @@ You may be asked in step 3 to provide official documentation of your business's 
 
 Upload an official document that matches the business's legal name you entered in step 1, such as a business license, articles of incorporation, or business tax registration.
 
-- Please check [here](link-to-documentation-accepted-and-not-accepted) for the list of the documents accepted and not accepted before submitting them.
+- Please check [here](#documents-checklist) for the list of the documents accepted and not accepted before submitting them.
 
 #### 4. Verify the Business Address or Phone Number
 - Upload a document that shows both the legal name of your business and the mailing address or phone number shown on the screen.
-- Please check [here](link-to-documentation-accepted-and-not-accepted) for the list of the documents accepted and not accepted before submitting them.
+- Please check [here](#documents-checklist) for the list of the documents accepted and not accepted before submitting them.
 
 When your business is verified, you will be notified, and you will also see the verified status in your account.
 
