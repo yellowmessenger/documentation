@@ -98,7 +98,7 @@ The following fields are available in the user profile object:
 - region
 
 
-To know more, see [System user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview#22-system-user-properties). 
+To know more, see [System user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties). 
 :::
 
 ### 2.3 Config Variables 
@@ -113,7 +113,7 @@ User Properties are variables that store information about each individual user 
 
 
 :::note
- To create new user properties, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#22-create-custom-user-property) for the steps. 
+ To create new user properties, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) for the steps. 
 :::
 
 ## <a name="hed-2"></a> 3. Create a Variable

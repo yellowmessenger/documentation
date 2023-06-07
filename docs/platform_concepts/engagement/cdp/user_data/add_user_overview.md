@@ -4,7 +4,7 @@ title: Add users
 ---
 
 ## 1. Overview
-A user will have a unique identifier, `userId` mapped to the record. When adding users, keep in mind that no two user records  have the same `userId`. Know more about [userId](/docs/platform_concepts/engagement/cdp/user_data/user_properties#13-user-id-userid-as-a-property) and it’s importance.
+A user will have a unique identifier, `userId` mapped to the record. When adding users, keep in mind that no two user records  have the same `userId`. Know more about [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#1-userid-as-a-property) and it’s importance.
 
 
 <!--
