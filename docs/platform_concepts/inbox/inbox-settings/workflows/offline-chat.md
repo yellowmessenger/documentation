@@ -80,7 +80,7 @@ Follow the steps below to enable offline handling of live chats:
 
 ---------
 
-## 2. Update customers on agent unavailability 
+## 2. Notify customers on agent unavailability 
 
 To inform customers that agents are currently unavailable and their queries will be addressed once an agent is back online, follow the steps below for implementing offline handling:
 
