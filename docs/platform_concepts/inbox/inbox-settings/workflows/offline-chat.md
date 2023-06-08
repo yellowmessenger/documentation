@@ -1,6 +1,6 @@
 ---
 title: Handle live chats when all the agents are offline
-sidebar_label : Offline handling of live chats
+sidebar_label : Live chat offline handling
 keywords : [offline ticketing, offline chat]
 ---
 

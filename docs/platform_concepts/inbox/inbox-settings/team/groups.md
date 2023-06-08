@@ -1,6 +1,6 @@
 ---
 title: Groups settings
-sidebar_label : Groups 
+sidebar_label : Create groups 
 ---
 
 After the agents are added or provided with [inbox agent access](https://docs.yellow.ai/docs/platform_concepts/inbox), they can be segregated into Groups. It is essential to divide agents into groups so that there is a differenciation between

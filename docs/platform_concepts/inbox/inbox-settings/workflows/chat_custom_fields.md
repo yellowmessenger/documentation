@@ -1,6 +1,6 @@
 ---
 title: Custom fields in live chats and email tickets
-sidebar_label : Custom fields
+sidebar_label : Chat/ticket custom fields
 ---
 
 

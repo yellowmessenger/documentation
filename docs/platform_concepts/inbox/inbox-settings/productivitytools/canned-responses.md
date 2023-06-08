@@ -1,6 +1,6 @@
 ---
-title: Canned Responses
-sidebar_label : Canned responses
+title: Canned responses
+sidebar_label : Chat/ticket canned responses
 ---
 
 Canned responses are displayed on the [chat screen](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#1-chat-screen) when the agent presses # (hash key), configure these responses in this section . 
