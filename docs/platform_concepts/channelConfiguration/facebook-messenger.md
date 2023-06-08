@@ -116,7 +116,7 @@ Similarly, you can test your FBM chatbot by adding different options such as pro
 
 
 
-#### Facebook Business verification process
+### Facebook Business verification process
 
 As the verification process can take more than two weeks, we recommend starting the verification at the beginning phase of the project.
 
@@ -128,7 +128,7 @@ To start the verification process, go to Security Center and click **Start Verif
 The **Start Verification** button will be greyed out unless your business needs access to certain features. See the below section on how to enable the button.
 
 
-#### 2. Select Your Business
+#### 2. Select your Business
 
 If your business is already listed:
 
