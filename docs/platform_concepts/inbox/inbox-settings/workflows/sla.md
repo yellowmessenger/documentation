@@ -1,6 +1,6 @@
 ---
 title: SLA settings for email tickets
-sidebar_label : SLA settings
+sidebar_label : SLA settings for tickets
 ---
 
 :::info

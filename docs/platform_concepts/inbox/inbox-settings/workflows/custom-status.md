@@ -1,6 +1,6 @@
 ---
 title: Create & modify custom status for inbox agents
-sidebar_label : Custom status
+sidebar_label : Chat agent custom status
 ---
 
   
