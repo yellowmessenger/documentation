@@ -49,6 +49,15 @@ No. You cannot download internal notes, they are only available within the respe
 </div>
 </details>
 
+<details>
+<summary> 
+What happens to the live chat requests from customers when the all the agents are offline? / How to handle incoming live chats when the agents are offline? </summary>
+<div>
+An inbox admin can configure what happens to the live chats when all the agents are offline on [offline handling settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) 
+</div>
+</details>
+
+
 
 
 **Sticky agents** 
