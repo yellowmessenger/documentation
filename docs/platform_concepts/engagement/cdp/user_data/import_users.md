@@ -23,7 +23,7 @@ Create a CSV file with user details and ensure that the values passed in the CSV
 A CSV file cannot exceed 30 MB.
 :::
 
-1.  **Use appropriate header names**: It becomes easy to map headers when their names are similar to user properties.
+1.  **Use appropriate header names**: It becomes easy to map headers when their names are similar to user properties. It also leverages [Auto column Mapping](#auto-mapping-of-csv-columns) feature that simplifies the process of mapping headers by matching them with user properties that have similar names.
 2.  **Use the right data type**: Data type validated before importing each user record. If the validation fails, adding or updating the record will fail. 
 
 
@@ -70,7 +70,7 @@ To import the CSV file with user details, follow these steps:
 2. Click **Upload .csv** and add the CSV file that you have created.
    ![](https://i.imgur.com/SP7HQ3t.png)
 
-3. Map CSV headers with the user properties. 
+3. Map CSV headers with the user properties. However, [columns will be auto-mapped](#auto-mapping-of-csv-columns) from the based on the column names used and based on the previous mapping (if applicable).
 
    * Select the CSV header that includes `userId` in the **UserId** column.
    * Associate each CSV header (column 2) with the User property (column 4).
@@ -86,7 +86,7 @@ If a CSV header is not mapped to any user property, that CSV column will not be 
    ![](https://i.imgur.com/w9DvsBR.png)
 
 
-#### Retain imported user data
+### Retain imported user data
 
 This replaces the entire user record with the ones available in the CSV file.
 
@@ -107,7 +107,7 @@ If the `userId` that you import already exists, it skips without making any chan
   -->
 
 
-#### Update existing user data
+### Update existing user data
 
 Updates the existing properties of the user with the ones imported through the CSV file. The existing properties that are not specified in the CSV file or not mapped will remain unchanged.
 
@@ -152,6 +152,25 @@ You can see the Status of the import.
 :::note
 * Users are automatically added to the segment every time the user updates to match those conditions.
 * If the [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#1-userid-as-a-property) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
+:::
+
+***
+
+### Auto mapping of CSV columns
+
+The auto-mapping feature aims to simplify the column-to-property mapping process during data import from CSV files. This helps streamline the column-to-property mapping and reduce the manual effort required, especially when dealing with large CSV files containing numerous properties.
+
+<img src="https://i.imgur.com/RIvfySH.png" width="45%"/>
+
+The auto-mapping functionality operates based on two aspects:
+
+1. **Past mapping**: The property that the column header was previously mapped to during the last import will be utilized. This ensures consistency and saves time by automatically assigning the same property as before.
+2. **Matching property**: If no previous mapping exists for a column header, the system will directly look for a property with an identical name. The column header and property name can be either exact match or approximately.
+
+   Example: If a column header is "phoneNumber," the system will search for a property with the exact name "phonenumber" or approximate match "phone" and automatically maps the column.
+
+:::note
+The system prioritizes past mapping over matching property names. If a past mapping exists, it will be used instead of property name matching. Additionally, the auto-matching feature supports approximate matching, allowing the system to find a close match between the column header and property name based on similarities.
 :::
 
 ***
