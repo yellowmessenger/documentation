@@ -51,7 +51,7 @@ Font style | Choose the default font for the bot.
 Font size | Set the font size of the widget on the website - Small, Medium, or Large.
 Widget size | Set your preferred widget size - Small, Medium, or Large. 
 | Position | Set the position of the widget on the website - Bottom Left and Bottom Right. |
-| Initial state for desktop and mobile | The initial state helps you to set the chatbot’s appearance when the user visits the website and views the bot for the first time. The following are the initial display modes for the chat widgets:<br/>• **Half opened**: Selecting this option will place the bot in a partially opened state.<br/><img src="https://i.imgur.com/ziYilKB.png" alt="drawing" width="40%"/> <br/>• **Minimized**: Selecting this option will place the bot in a minimized or closed state.<br/><img src="https://i.imgur.com/F31qAiv.png" alt="drawing" width="40%"/><br/>• **Conversational layover**: Selecting this option will display a welcome message, input bar, and other components to the user. Once the user interacts, the bot will fully open.<br/><img src="https://i.imgur.com/4Hldu5U.png" alt="drawing" width="40%"/> <br/>• **Chat bubble**: Selecting this option will display a small bubble on top of the bot icon, showing a welcome message.<br/><img src="https://i.imgur.com/fFGBCVj.png" alt="drawing" width="40%"/><br/>**Note:**<br/>• For **Mobile** devices/browsers only **Minimized** and **Chat bubble** options are supported. <br/>•  When user interacts with initial state options such as Half opened, Minimised, Conversational layover, and Chat bubble, the bot will transition to a fully opened state. |
+| Initial state for desktop and mobile | The initial state helps you to set the chatbot’s appearance when the user visits the website and views the bot for the first time. The following are the initial display modes for the chat widgets:<br/>• **Half opened**: Selecting this option will place the bot in a partially opened state.<br/><img src="https://i.imgur.com/ziYilKB.png" alt="drawing" width="40%"/> <br/>• **Minimized**: Selecting this option will place the bot in a minimized or closed state.<br/><img src="https://i.imgur.com/F31qAiv.png" alt="drawing" width="40%"/><br/>• **Conversational layover**: Selecting this option will display a welcome message, input bar, and other components to the user. Once the user interacts, the bot will fully open.<br/><img src="https://i.imgur.com/4Hldu5U.png" alt="drawing" width="40%"/> <br/>• **Chat bubble**: Selecting this option will display a small bubble on top of the bot icon, showing a welcome message.<br/><img src="https://i.imgur.com/fFGBCVj.png" alt="drawing" width="40%"/><br/>**Note:**<br/>• For **Mobile** devices or browsers only **Minimized** and **Chat bubble** options are supported. <br/>•  When user interacts with initial state options such as Half opened, Minimised, Conversational layover, and Chat bubble, the bot will transition to a fully opened state. |
 
 <img src="https://i.imgur.com/I8XaGOh.png" alt="drawing" width="60%"/>
 
@@ -78,7 +78,7 @@ Icon Shape | Set the desired bot icon type for web and mobile apps. <br/>For web
 
 You can configure your chatbot by enabling or disabling the following features on the bot. 
 
-<img src="https://i.imgur.com/YhQgf9t.png)" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/mf2KAGl.png)" alt="drawing" width="80%"/>
 
 
 #### General settings
@@ -93,8 +93,11 @@ Attachment | Enable this option to allow adding attachments via the chat widget.
 Always scroll chat window to bottom | Enable this option to navigate to the last message when there are multiple messages in a single step, as each message loads one by one.
 Slow messages | Enable this option to add a small delay to bot messages, a typing indicator is displayed to make it look more natural. It is recommended to use this for all bot messages for a better experience. 
 Multiline input | Enable this option to enter multiple lines of text in a single input. After enabling this option, by clicking on the enter key, it will take the cursor to next line instead of sending the message.
+Validate attachments | The chat widget provides an option to allow or block specific file formats for users to upload documents, images, and other files. <br/> **Note:** <br/> The file size limit is 20 MB.<br/> <img src="https://i.imgur.com/0GU94m6.png" width="50%"/>	|
+Scroll behavior | When users receive a new message from the bot/agent, the chat window scrolls to bottom by default. However, you can configure this behaviour as per your requirement. Available scroll behavior for new messages:<br/>• **Bottom**: Select this option to scroll the widget automatically to the bottom of the new message.<br/>• **Top**: Select this option to scroll the widget automatically to the top of the new message.<br/>• **Off**: Select this option to disable scrolling, the widget will remain at the same message when a new message is received. <img src="https://i.imgur.com/zJaqyB6.png" width="50%"/>
 
-#### Chat history
+
+#### **Chat history**
 
 Displays the user’s chat history with bot and agent.
 
@@ -103,7 +106,7 @@ Option | Description
 Show history of the conversation | Disable this to refresh the bot's chat history when the page is reloaded. Enable to show the chat history even after the page is refreshed. By default, this option is disabled. 
 Create fresh session for every new tab | Enable this option to refresh (not retain) the chat history when the bot is opened in a new tab/window.
 
-#### Notifications
+#### **Notifications**
 
 Notifies the users when they receive a new message.
 
@@ -113,7 +116,7 @@ Unread message(s) badge | Enable this option to display the count of unread mess
 Unread notification in browser tab | Enable this option to display a favicon and text in the browser tab (desktop) when users have unread messages from a bot or agent.
 Message Sound | Enable this option to notify users when there are new messages from a bot or agent.
 
-#### Speech & Dictation
+#### **Speech & Dictation**
 
 Option | Description
 -------- | ---------

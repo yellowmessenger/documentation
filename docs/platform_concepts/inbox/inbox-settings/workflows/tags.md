@@ -1,6 +1,6 @@
 ---
 title: Tags (for live chats and email tickets)
-sidebar_label : Tags
+sidebar_label : Chat/ticket tags
 ---
 
 **Tags**    

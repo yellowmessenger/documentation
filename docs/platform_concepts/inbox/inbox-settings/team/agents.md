@@ -1,6 +1,6 @@
 ---
 title: Agent settings
-sidebar_label : Agents
+sidebar_label : Configure agents
 ---
 
 

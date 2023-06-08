@@ -64,7 +64,9 @@ Inbox classifies live chats into 7 different types, explained below:
 
 ### 1.1 My Chats
 
-If you are an Inbox agent and your status is available, the live chats raised and assigned to you will be displayed under My chats. My chats will differ from agent to agent because they can only see the live chat assigned specifically to them. 
+Inbox agents with the status as **Available** will be assigned live chats based on the [auto assignment logic](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/assignmentlogic). 
+These chats assigned to the respective agents will be displayed under My chats.
+My chats will differ from agent to agent because they can only see the live chat assigned specifically to them. 
 
 ### 1.2 Active Chats
 
@@ -109,6 +111,7 @@ Admins can see all the resolved chats, while the agents can see only their resol
 
 ### 1.6 Missed Chats
 
+When a chat is missed, it won't be assigned to any agent hence the resolution wont be provided to the customer. 
 This is the ultimate fallback. When a chat doesn't belong to any other category of chats, it becomes a missed chat.
 There are multiple ways in which a chat can move under missed chats. For example:  
 
@@ -123,6 +126,8 @@ When any raise ticket action fails due to Inbox settings that can be controlled 
 
 
 ### 1.7 Bot Messages
+
+Bot messages are not assigned to any agents. Admins can use this tab to see the conversation flows. 
 
 All the conversations that happen on the bot will be visible under bot messages (for admins and agents). This is an entire conversation that the user went through, irrespective of the live chat request raised. 
 The purpose of this section is to monitor the bot responses (bot messages). If the conversation is not going as expected, agents can take the control over from the bot and converse with the user. 

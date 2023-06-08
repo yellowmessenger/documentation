@@ -1,6 +1,6 @@
 ---
 title: Send chat transcript to customers
-sidebar_label: Chat transcript
+sidebar_label: Send transcripts after chat
 ---
 
 As a common practice in the support industry, the conversation between the live agent and the customer is sent to the customer (after the conversation ends) as a **chat transcript** that can be used as a reference for the customer. 
