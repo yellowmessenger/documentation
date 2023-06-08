@@ -151,7 +151,7 @@ You can see the Status of the import.
 
 :::note
 * Users are automatically added to the segment every time the user updates to match those conditions.
-* If the [userId](/docs/platform_concepts/engagement/cdp/user_data/user_properties#13-user-id-userid-as-a-property) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
+* If the [userId](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#1-userid-as-a-property) is not passed in the CSV, yellow.ai creates and assigns an internally generated userId to each user.
 :::
 
 ***

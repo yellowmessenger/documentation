@@ -53,7 +53,7 @@ featured: true
 
 | Enhancement | Description |
 | -------- | -------- |
-| **Automated location-specific data capture for web and Whatsapp bots to improve user records' accuracy and completeness** <br/> | Our system now automatically captures location-specific information on your Web and WhatsApp bots. The Web bot uses the user's IP address to capture timezone and country, while the WhatsApp bot captures the user's country through their phone number. <br/><br/> [**Learn more**](https://docs/yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#automated-capturing-of-location-specific-data) |
+| **Automated location-specific data capture for web and Whatsapp bots to improve user records' accuracy and completeness** <br/> | Our system now automatically captures location-specific information on your Web and WhatsApp bots. The Web bot uses the user's IP address to capture timezone and country, while the WhatsApp bot captures the user's country through their phone number. <br/><br/> [**Learn more**](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#automated-capturing-of-location-specific-user-properties) |
 
 
 

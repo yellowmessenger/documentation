@@ -73,7 +73,7 @@ Workflow ID | Unique Workflow ID of the specific campaign.
 Custom payload | Any custom payload sent using the Workflow API.
 Template ID | Unique ID of the template used to send the Workflow campaign.
 Notification Sent By | Username of the platform user whose API key is used to trigger the Workflow using API (only for Workflows triggered using API).
-Comments | Comments on the message sent. [Know more](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#23-status-codes-of-response).
+Comments | Comments on the message sent. [Know more](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#24-response-codes).
 Created Time | Time at which the record was create on the CSV.
 Scheduled Time | Time at which the record was scheduled to be sent.
 Updated Time | Time at which the status was last updated.
