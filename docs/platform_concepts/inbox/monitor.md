@@ -166,6 +166,16 @@ You can quickly see the count of email tickets in various states such as **Unass
 
 The Teams tab provides a consolidated view of agents and groups in one place, with real-time data.
 
+**Use cases of metrics on teams data:**
+
+
+| Use case | Description/Solution |
+| -------- | -------- |
+| **Performance evaluation** | Evaluate agents performance using metrics like chat concurrency, ticket concurrency, and current status duration. |
+| **Resource allocation** | Allocate workload effectively by analyzing the number of agents, active chats/tickets, and active agents in each group. |
+| **Real-time monitoring** | Monitor agent availability, busy status, and custom statuses to ensure efficient operations and identify any bottlenecks.|
+
+----
 
 ### Filter team data  
 
