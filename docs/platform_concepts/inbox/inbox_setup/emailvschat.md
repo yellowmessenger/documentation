@@ -1,6 +1,6 @@
 ---
-title: Email tickets vs. Chat tickets 
-sidebar_label : Email vs. Chat tickets
+title: Email tickets vs. live chats
+sidebar_label : Chats vs tickets
 ---
 
 
