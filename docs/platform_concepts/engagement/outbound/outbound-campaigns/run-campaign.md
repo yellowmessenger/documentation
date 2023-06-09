@@ -136,7 +136,23 @@ This section guides you on how to configure template for each channel -
 
  
 
-### 3.3 WhatsApp/Viber campaign 
+### 3.3 WhatsApp campaign 
+
+1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the Viber number (mobile number) of the user.
+
+   <img src="https://i.imgur.com/94QMG8p.png" width="350"/>
+
+2. In **Sender ID**, choose the Viber business number from which you want to send the campaign.
+   
+   <img src="https://i.imgur.com/C2IrHHc.gif"/>
+
+3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link.
+
+4. Use **Media** to configure personalized media for the campaign.
+   *  **Static** media: Select to send a common media file to all the recipients. Use **Browse** to upload the media file.
+   *  **Dynamic** media: Select this option to send personalized media to each user. Map the column from the database where you have included these details. For instance, you can send WhatsApp campaigns with personalized video media to your customers.<br/> <br/>To insert a property dynamic URL:<br/>a. [Create a user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) with the data type set as URL.<br/><img src="https://i.imgur.com/l1CSdNF.png" width="60%"/><br/>b. [Store the image URL for each user to that user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).<br/>c. Associate the media with this user property when scheduling the camapign.<img src="https://i.imgur.com/umvqXL4.png" width="50%"/>
+
+### 3.4 Viber campaign 
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's WhatsApp number (mobile number).
 
@@ -148,11 +164,7 @@ This section guides you on how to configure template for each channel -
 
 3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link.
 
-4. Use **Media** to configure personalized media for the campaign.
-   *  **Static**: Select to send a common media file to all the recipients. Use **Browse** to upload the media file.
-   *  **Dynamic**: Select to send a personalized media to each user. Map the column from the db where you have included these details.
- 
-
+***
 
 ## 4. Schedule message
 

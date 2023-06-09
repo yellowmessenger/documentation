@@ -288,7 +288,7 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 1429 - parameterMissing | Number of parameters passed does not match the expected number of variable parameters.
 | 1432 - parameterTypeError | The format of the parameter does not match with the format in the created template.
 | 1443 - Template error | Template name does not exist in the translation.
-| 1444	System overloaded	| WhatsApp cloud API system is overloaded 
+| 1444 - System overloaded	| WhatsApp cloud API system is overloaded.
 | 1500 - messageExpired | The message failed to send due to some issue with the WhatsApp Business Account. It may be down or disconnected for more than 1 day.
 | 1501 - ttlLimitReached | The message failed to send during its Time To Live (TTL) duration. Please resend the message.
 | 14271 - invalidParameter | One or more parameters are invalid.
