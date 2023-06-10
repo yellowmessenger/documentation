@@ -3,7 +3,7 @@ title: Understanding how chat search works
 sidebar_label :  Chat search & filters
 ---
 
-This document explains how the search works in the chats section when an agent or an admin desires to look into a particular chat for more information about the user, how the chat started, what was the bot user looking for, etc.
+This document explains how the search works in the chats section when an agent or an admin desires to look into a particular chat for more information faster.
 - **Search** the entire chat inbox for a particular input like ticket ID, customer details, etc. You can also apply filters on top of the global search results to further refine them. 
 - You can apply **filters** like date, agent in their current chat tab, etc.  
 

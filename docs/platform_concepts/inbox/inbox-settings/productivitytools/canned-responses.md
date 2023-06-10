@@ -114,7 +114,7 @@ You can search for canned responses in the dropdown list by clicking on the cann
     > Searching for "Fashion" or "fashion" will yield the same results.
     ![](https://hackmd.io/_uploads/SJrK15aUn.png)
 
-- **Combined result for multiple search terms**: When you use multiple search terms, the search operation follows a logical AND operation. This means that the results will only be shown if both terms match in the exact order. 
+- **Combined result for multiple search terms**: When you use multiple search terms, the results will only be shown if both terms match in the exact order. 
     > Searching for "fanta" and "offers" will only display responses that contain both of these words in that specific order.
 
 
