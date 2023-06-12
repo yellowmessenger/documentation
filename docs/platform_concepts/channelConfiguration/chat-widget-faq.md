@@ -484,7 +484,7 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 <summary>What are the minimum compatible versions of the browsers supported by the web widget?</summary>
 <div>
  <br/>
- <div>Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
+ <div>• Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
 </div>
   </div>
 </details>
