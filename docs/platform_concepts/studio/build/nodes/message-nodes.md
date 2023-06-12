@@ -104,6 +104,10 @@ Display any MP4 video file with this node.
 
 ![](https://i.imgur.com/qxdhtox.jpg)
 
+:::note
+Video size should be lesser than 50 MB
+:::
+
 **Dynamic format**
 
 ```
@@ -126,6 +130,10 @@ const videoVar = "http://commondatastorage.googleapis.com/gtv-videos-bucket/samp
 Display a file of the most common extension (JPG, JPEG, MP3, MP4, CSV, PDF, Doc, Docx, Txt, HTML, PPT, PPTX, etc.) with this node. 
 
 ![](https://i.imgur.com/jmqJpC8.jpg)
+
+:::note
+File size limit is 15 MB.
+:::
 
 **Dynamic format**
 
