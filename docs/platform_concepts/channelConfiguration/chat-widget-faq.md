@@ -251,6 +251,36 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
   </div>
 </details>
 
+<details>
+<summary>How to deploy a website bot on sites.google.com?</summary>
+<div>
+ <br/>
+ <div>To deploy a website bot on sites.google.com, follow these steps:<br/>Navigate to the admin portal of your Google site >
+Add an <b>Embed block</b> > Select <b>Embed code</b> > <b>Paste the bot script</b> > Click <b>Next</b>. <img src="https://i.imgur.com/ilmH20B.png)"/><br/>The bot will be deployed on sites.google.com.<br/><img src="https://i.imgur.com/BoxdUeu.png)"/></div>
+  </div>
+</details>
+
+<details>
+<summary>Is it possible to deploy a bot in multiple locations on a website or Mobile SDK?</summary>
+<div>
+ <br/>
+ <div>For web bots, it is not possible to have two bots on the same window simultaneously. However, you can load a default bot initially, and then when a user selects a specific order in which the bot needs to be deployed, you can trigger a new bot using the following code. </div>
+
+```
+window.YellowMessengerPlugin.init({bot: '<botId>'})
+```
+Note that, this will replace the previously loaded bot. On Mobile SDK, if you want to maintain a separate session and history for each order, you need to pass the ymAuthToken parameter. Ensure that these approaches allow you to manage different instances of the bot, but only one bot can be active at a time.
+  </div>
+</details>
+
+<details>
+<summary>How long will the session be active in the chat widget?</summary>
+<div>
+ <br/>
+ <div>The session in the chat widget will remain active for 24 hours by default. However, if needed, you have the flexibility to customize the session duration from the backend. The session duration can be adjusted within a range of 1 minute to 1440 minutes, which is equivalent to 24 hours.<br/> By configuring the session duration according to your specific requirements, you can ensure that users have an adequate amount of time to interact with the chat widget before the session expires.<br/> If you have any additional questions or need further assistance, contact our <a href="mailto:support@yellow.ai">support team</a></div>
+  </div>
+</details>
+
 -----------
 
 ## PWA related FAQs
@@ -454,7 +484,7 @@ You need to pass the ymAuthenticationToken in the URL as a query parameter.
 <summary>What are the minimum compatible versions of the browsers supported by the web widget?</summary>
 <div>
  <br/>
- <div>Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
+ <div>• Chrome 89 and later <br/>• Edge 89 and later <br/>• Firefox 70 and later <br/>• Safari 10.1 and later
 </div>
   </div>
 </details>

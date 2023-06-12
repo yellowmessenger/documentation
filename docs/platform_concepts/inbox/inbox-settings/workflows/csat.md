@@ -1,6 +1,7 @@
 ---
 title: Customer satisfaction (CSAT)
-sidebar_label : Customer satisfaction 
+sidebar_label : CSAT for chat agent
+keyword: [Customer satisfaction score, csat]
 ---
 
 **CSAT (Customer satisfaction) score** is a numerical measure of customer satisfaction.      

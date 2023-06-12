@@ -21,18 +21,19 @@ Simply type in any text and hit send button (or enable enter to send if you want
 ### Canned response
 
 Canned response can be used to reduce the manual effort on sending frequent replies. Agent can simply select a canned response instead of typing the whole message multiple times and send it to the customer.  
-You can add [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown by clicking **#**.   
-
-> Canned responses can be searched by typing any relevant keywords. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses).
+An agent can add [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown by clicking the shortcut **#** followed by the relevant search term.   
 
 <img src="https://i.imgur.com/IATnPlM.png" alt="drawing" width="50%"/>    
 
+:::note
+Quickly find canned responses by entering relevant keywords/tags or searching within the content. Learn more about the advance search functionality [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses).
+:::
 
 ----
 
 ### Agent actions
 
-Agents can type **/** on the screen and the agent actions (automated with the help of studio flows) will be displayed in the dropdown list. Agent can select an action that is automated and the results are fetched easily without multiple manual steps. 
+Agents can type the shortcut **/** on the screen and the agent actions (automated with the help of studio flows) will be displayed in the dropdown list. Agent can select an action that is automated and the results are fetched easily without multiple manual steps. 
 
 > Learn more about [agent actions here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions).
 
@@ -58,28 +59,30 @@ The messages typed in internal notes will not be visible to the bot users. It wi
 
 ----
 
-### Translate  
+### Auto-translate  
 
-When [auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is configured, the messages sent by the users in regional languages are automatically translated to [Agent's default language](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#-1-agent-settings) (English by default) to the agents on the chat. Once the customers language is detected, the messages sent by the agent are translated to the customers language. 
-- Any incoming language will be auto-detected by the system. You can also hardcode to translate only a particular set of languages. Once a foreign language is detected, Agents can identify the language at the top of their chat input box. If needed, agents can manually change the language.
- - All incoming and outgoing messages would be translated according to the agents’ and end-users preferred language. Agents can toggle and see both the original and translated message by clicking on the label - **Show translated / Show original**.
- - If for any reason, the agents want to send a generic message such as an address without being translated, they can disable the auto-translate toggle in the chat input box. This will stop translation for that message alone. After that message is sent, the toggle will automatically enable itself for the translation of the next message.
+When [auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is enabled on the inbox settings, the messages sent by the users in their regional languages are automatically translated to [Agent's default language](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#-1-agent-settings) (English by default) on the inbox chat screen. 
+Once the customers language is detected, the messages sent by the agent in agent's default language are automatically translated to the customers language. 
+ - Agents can **toggle** and see both the original and translated message by clicking on the label - **Show translated / Show original**.
 
+     <img src="https://hackmd.io/_uploads/SytNUYZv3.png" alt="drawing" width="50%"/>
+ 
+ - If for any reason, the agents want to send a generic message such as an address without being translated, they can disable the auto-translate toggle in the chat input box. 
 
-The toggle displayed in the below image is the language identifier. For example, if the user responds in French, the language in the toggle is updated to French. 
+    <img src="https://hackmd.io/_uploads/ryhtwtbPn.png" alt="drawing" width="50%"/>
 
-**Purpose of the translate toggle** (used in rare cases)          
-Assume, the user has typed a sentence and the language is detected as French (using google translate) and updated on the toggle. The agent identifies this language to be Italian. The agent can change the language on the toggle for better translation. 
+- The toggle displayed in the below image is the language identifier. For example, if the user responds in French, the language in the toggle is updated to French automatically. 
+    <img src="https://i.imgur.com/N6emsoU.png" alt="drawing" width="70%"/>    
 
-![](https://i.imgur.com/N6emsoU.png)
+    <img src="https://i.imgur.com/QK8T02e.png" alt="drawing" width="50%"/>    
 
-<img src="https://i.imgur.com/QK8T02e.png" alt="drawing" width="50%"/>    
+> Learn more about auto translate feature [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate). 
 
 ----
 
-### Save or share chats
+### Chat transcript
 
-Chats can be saved in CSV and PDF format to the local system. 
+Chats can be saved/downloaded in CSV and PDF format to the local system.           
 Chats can be shared with anyone by clicking the **chat copy URL** icon and sharing the link with the respective person.   
 
 > Chats in this link will not be visible after 6 months. 

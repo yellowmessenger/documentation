@@ -1,6 +1,7 @@
 ---
 title: Queue handling for live chats
-sidebar_label : Queue handling
+sidebar_label : Queue live chats
+keywords: [Queue handling, handle queueing of live chats, live chats in queue]
 ---
 
   

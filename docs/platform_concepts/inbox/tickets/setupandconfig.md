@@ -66,3 +66,5 @@ To forward mails from the email chatbox to the yellow.ai platform, follow the be
 ## <a name="2"></a>  3. Enable email ticketing settings 
 
 The email ticketing toggle must be enabled from the Inbox settings. Explained in detail [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing)
+
+![](https://hackmd.io/_uploads/S12xu_lvn.png)

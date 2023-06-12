@@ -105,8 +105,8 @@ You can mention the domain URL with a path variable in the CTA when sending for 
 
    Here, you can replace `1`  with a parameter or path (say `docs/platform_concepts/engagement/engage`) before sending out the message through Notification API/Outbound campaign. 
 
-   When the user clicks on CTA sent through notification, it redirects to the following link.
-   [https://docs.yellow.ai/docs/platform_concepts/engagement/engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).
+   When the user clicks on CTA sent through notification, it redirects to the
+   [Engage documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).
 
 :::note
 You cannot change the parent domain dynamically.

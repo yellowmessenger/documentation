@@ -49,7 +49,7 @@ The following are the different date pickers supported:
 
 ### 1.4 Cards
 	
-This component uses UI annotations to display concise information related to a specific context in a limited-space container using images, buttons, and links to download attachments. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel">here</a> to implement Date picker using a node
+This component uses UI annotations to display concise information related to a specific context in a limited-space container using images, buttons, and links to download attachments. Click <a href="https://docs.yellow.ai/docs/cookbooks/studio/newcard#1-add-a-new-card-to-the-flow">here</a> to implement cards using a code-based approach. 
 	
 The following are some key features of cards:
 * Provide a richer experience in chatbot conversations when compared to text based messages.
@@ -111,7 +111,7 @@ You can download video, image, and file sent by the bot or agent.
 
 |     |  |
 |---------|-------|
-| A callout banner allows you to add a banner to the chatbot's conversation. It can be used to alert the users about new products, services, special offers, and promotions. <br/> When multiple banners are configured for a chatbot, the banners are automatically scrolled every five seconds. <br/> On enabling this option, the close button gets replaced by the minimize button. Brands can select close, or minimise button for banners. Upon minimising, users can later access the banner by clicking on expand button. The user’s last selection is retained on page reload.<br/> **Limitations:**<br/>• Each callout banner supports two buttons with up to 24 characters each.<br/>• The callout banner supports 200 characters in the title. <br/> **Note:** You cannot add images or videos to the callout banner.| ![](https://i.imgur.com/iXIlMVq.png)
+| A callout banner allows you to add a banner to the chatbot's conversation. It can be used to alert the users about new products, services, special offers, and promotions. <br/> When multiple banners are configured for a chatbot, the banners are automatically scrolled every five seconds. You can also add the images to the callout banner. <br/> On enabling this option, the close button gets replaced by the minimize button. Brands can select close, or minimise button for banners. Upon minimising, users can later access the banner by clicking on expand button. The user’s last selection is retained on page reload.<br/> **Limitations:**<br/>• Each callout banner supports two buttons with up to 24 characters each.<br/>• The callout banner supports 200 characters in the title. <br/> **Note:** You cannot add videos or GIFs to the callout banner.| <img src="https://i.imgur.com/iXIlMVq.png" alt="drawing" width="60%"/> <img src="https://i.imgur.com/XFm8I9S.png" alt="drawing" width="60%"/>
 
 ## 2. Non-interactive messages
 	

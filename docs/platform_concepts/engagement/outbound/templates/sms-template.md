@@ -180,7 +180,7 @@ Sending blast campaign from the engagement platform:
 
 1. Go to **Engage** > **Templates** > Select **SMS** > Create the same template that you created and got approved in the DLT portal. Ensure you add the exact details as added in the DLT portal - without any changes in the linespace, case (upper/lower case) and 
 2. Add the [audience CSV](https://docs.google.com/document/d/1RCPeDiS4Hv_n0thHRpICK0kQ1RjUpzET365cEEnxpQM/edit)
-3. Schedule the campaign as explained in [Create outbound campaign](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md).
+3. Schedule the campaign as explained in [Create outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
 
 **for transactional 1-o-1 updates 👇**
 
@@ -194,4 +194,4 @@ Sending blast campaign from the engagement platform:
 
 **What next?**
 
-After creating an SMS template, create an SMS campaign as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md)
+After creating an SMS template, create an SMS campaign as explained [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign)

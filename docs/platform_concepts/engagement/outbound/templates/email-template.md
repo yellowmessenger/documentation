@@ -46,4 +46,4 @@ In this document, we shall see how to create an new email template.
 
 **What next?**
 
-After creating an email template, create an email campaign as explained [here](/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign.md).
+After creating an email template, create an email campaign as explained [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).

@@ -41,7 +41,7 @@ This action is irreversible. Once you configure it, the column(s) added will rem
 
 Steps to push custom data to default tables: 
 
-1. Add a new user property on the [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#21-add-user-property) page. 
+1. Add a new user property on the [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) page. 
 2. Click **Data explorer** > **Configure**. 
     ![](https://i.imgur.com/y0JULrU.png)
 3. From the dropdown menu, choose a property (the custom data you want to push to API events, Bot events, Message events, and User engagement events tables) for CUSTOMID 1 and CUSTOMID 2.

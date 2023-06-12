@@ -7,11 +7,6 @@ Facebook Messenger (FBM) is a messaging app (iOS/ Android) that allows you to ch
 
 Businesses can use Facebook Messenger chatbot to interact with their business contacts and their target audience. It is also used to automate customer support by answering frequently asked questions, providing product information, and responding to customer inquiries.
 
-In this article, you will learn:
-
-1. [How to connect your Facebook messenger account?](#1-connect-your-facebook-messenger-account)
-2. [How to test FBM chatbot?](#2-test-fbm-chatbot)
-
 ## Connect your Facebook messenger account
 
 To create a Facebook messenger account, follow these steps:
@@ -54,32 +49,6 @@ You need admin access to create an account.
 
    ![](https://i.imgur.com/Zgp95PF.png)
 
-
-## Character limitation of Facebook Business Messenger (FBM)
-
-In this section, you can view the character limitations of FBM channel.
-
-### Quick reply
-
-Quick reply options |	Character limit
---------------------|----------------------
-Quick reply | <br/>• The maximum number of characters supported is 22. <br/>• A maximum of 13 quick replies are supported.
-
-### Carousel
-
-Carousel options	| Character limit
------------------|-----------------
-Carousel title | The maximum number of characters supported is 22.
-
-:::note
-* You cannot add a description to the carousel prompt node.
-* The carousel message node is not supported.
-:::
-
-
-
-
-
 ## Test Facebook Business Messenger chatbot
 
 After creating your account successfully, you can start configuring the chatbot with any of the existing flows based on your business requirements.
@@ -105,35 +74,62 @@ For example, let us try to [add a few FAQs](https://docs.yellow.ai/docs/platform
 
 After adding the FAQs and training the chatbot, you can test your FBM chatbot in your brand page's messenger channel based on the FAQs that you have added.
 
-   <img src="https://i.imgur.com/egpbjjI.png" width="50%"/>
+   <img src="https://i.imgur.com/egpbjjI.png" width="40%"/>
 
 Similarly, you can test your FBM chatbot by adding different options such as product showcase, order status, and so on.
 
 
+## Character limitation of Facebook Business Messenger (FBM)
+
+In this section, you can view the character limitations of FBM channel.
+
+### Quick reply
+
+Quick reply options |	Character limit
+--------------------|----------------------
+Quick reply | <br/>• The maximum number of characters supported is 22. <br/>• A maximum of 13 quick replies are supported.
+
+### Carousel
+
+Carousel options	| Character limit
+-----------------|-----------------
+Carousel title | The maximum number of characters supported is 22.
+
+:::note
+* You cannot add a description to the carousel prompt node.
+* The carousel message node is not supported.
+:::
 
 
 ## Facebook Business best practices
 
 
 
-#### Verify Facebook Business
+### Facebook Business verification process
 
 As the verification process can take more than two weeks, we recommend starting the verification at the beginning phase of the project.
 
 
 #### 1. Access Business Manager Security Center
 
-To start the verification process, go to Security Center and click **Start Verification** in the Business verification section.
+To start the verification process, go to *Security Center* and click **Start Verification** in the Business verification section.
+
+   ![](https://i.imgur.com/SvbZvVN.png)
 
 The **Start Verification** button will be greyed out unless your business needs access to certain features. See the below section on how to enable the button.
 
+   ![](https://cdn.yellowmessenger.com/4lUE9WFC5jTX1620219352063.png)
 
-#### 2. Select Your Business
+
+#### 2. Select your Business
 
 If your business is already listed:
 
 1. **Confirm your business details**
    - Select a phone number that you have access to from the drop-down menu and click **Next**.
+
+     <img src="https://i.imgur.com/TywEtMc.png" width="50%"/>
+
    - Double check for any typos or other errors: you will not be able to edit this information upon submission.
 
 2. **Get a verification code**
@@ -165,11 +161,11 @@ You may be asked in step 3 to provide official documentation of your business's 
 
 Upload an official document that matches the business's legal name you entered in step 1, such as a business license, articles of incorporation, or business tax registration.
 
-- Please check [here](link-to-documentation-accepted-and-not-accepted) for the list of the documents accepted and not accepted before submitting them.
+- Please check [here](#documents-checklist) for the list of the documents accepted and not accepted before submitting them.
 
 #### 4. Verify the Business Address or Phone Number
 - Upload a document that shows both the legal name of your business and the mailing address or phone number shown on the screen.
-- Please check [here](link-to-documentation-accepted-and-not-accepted) for the list of the documents accepted and not accepted before submitting them.
+- Please check [here](#documents-checklist) for the list of the documents accepted and not accepted before submitting them.
 
 When your business is verified, you will be notified, and you will also see the verified status in your account.
 
@@ -184,7 +180,7 @@ To increase the company's chances of being verified by Facebook, it is important
 - The company's trade name in the documentation is the same as used on the website and on the Facebook page. If different, the names need to be related in some way on the website. For example, at the footer, enter "Company ABC powered by company D."
 
 
-### Documents checklist
+#### Documents checklist
 
 - Document quality / resolution should be good - no pixelation.
 - Documents should always be signed, especially GST and other accepted documents.
@@ -193,7 +189,7 @@ To increase the company's chances of being verified by Facebook, it is important
 - English documentation seems to be processed more quickly; currently, the following languages are supported for business verification:
 
 
-#### Website checklist:
+#### Website checklist
 
 - Website should be accessible, with no geo filters that may prevent FB teams from viewing the website.
 - The website should be secure (https://).
