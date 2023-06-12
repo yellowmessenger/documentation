@@ -3,19 +3,18 @@ title: Engage overview dashboard
 sidebar_label: Engage dashboard
 ---
 
+The Engage dashboard offers a comprehensive summary of all campaigns and user activities in a single view. It provides a quick overview of the daily/weekly performance of your campaigns, enabling you to plan for enhanced engagement and improved conversational experiences for your end users. 
 
+For a better experience, see [Use conversation starter templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#2-add-quick-replies-in-whatsapp-template).
 
-Engage dashboard provides a summary of all campaigns and user activities on a single screen. This provides a quick glimpse of the daily/weekly performance of your campaigns and helps you plan for a better engagement and conversational experience for your end users. For a better experience, see [Use Conversation Starter Templates](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#2-add-quick-replies-in-whatsapp-template).
+These metrics provide insights into your marketing, promotional, or other campaigns and showcase the growth of your user base and profile completeness.
 
-These metrics provide insights into your marketing, promotional or other campaigns and show the growth of your user base and profile completeness.
-
-There are two sections based on the metric type:
-* **User data** Gives you a snapshot of the current state of your user base in User 360.
-* **Overview**: Shows you an Overview of your Campaigns and User management history.
 
 To access Engage Overview Dashboard, in the module switcher, click **Engage** > **Overview**.
 
-![](https://i.imgur.com/mYjjFVI.png)
+   ![](/img/cdp/dashboard.png)
+
+The following sections prvides different KPIs that you can monitor on the Engage Dashboard.
 
 ***
 
@@ -23,14 +22,14 @@ To access Engage Overview Dashboard, in the module switcher, click **Engage** > 
 
 This report provides a snapshot of users added to User 360 and the overall profile completeness percentage. Profile completeness refers to how much users' information is available on the yellow.ai's platform. It considers all the user properties configured for the org.
 
-
-![](https://i.imgur.com/w4B0O7Z.png)
+   ![](/img/cdp/userdata.png)
 
 
 The following are the different KPIs of the User data report:
 
 * **Total users**: The total number of users available in User 360.
 * **Profile completeness**: The average completeness of the profile information (based on the values available for user attributes) of the total users on User 360.
+* **Current period MRU**: The number of unique end-user profiles or user records in User360 to whom a campaign has been sent within a given calendar month. Each user is counted only once per month, regardless of the number of campaigns they have received.
 * **User split**: Shows the count of users for which a specific user property is available across the user base. For example, to see the number of users with  `userId`(identified users), click on the **User split** drop-down and choose `userId`.
 
 If an attribute is available for the user, the Split considers it as a known category. For some system attributes, the split is shown based on the standard unique values.
@@ -38,9 +37,26 @@ If an attribute is available for the user, the Split considers it as a known cat
 
 <center><img src="https://i.imgur.com/bPLzOqP.png" width="30%"/></center>
 
+### 1.1 Total MRU
+
+The Total MRU (Monthly Reached User) card shows the count of unique users in User360 to whom at least one campaign has been sent out in each calendar month. This graph provides an overview of the monthly reach and engagement with users. It counts each user only once per month, regardless of the number of campaigns they have been targeted with.
+
+   ![](/img/cdp/mru.png)
+
+This includes campaigns sent via the following channel:
+* SMS
+* Email
+* Mobile Push Notification, and 
+* WhatsApp.
+
+:::note
+Deleted or archived individuals are still counted in the total number of Monthly Reached Users if they were reached since the last billing date.
+If a deleted user is recreated, they will be counted as a new user, even if they have the same userId.
+:::
+
 ***
 
-## 2. Overview
+## 2. Outbound
 
 This section provides a snapshot of the engagements through campaigns and Notification APIs for the last seven days. You can use the calendar box to change date-rage and a maximum of one-month duration is supported.
 

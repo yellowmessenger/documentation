@@ -41,8 +41,9 @@ The following features are currently unavailable in the freemium plan. You need 
 ## 2. Signup to yellow.ai
 
 You can either follow the step-by-step instructions provided below, or watch the instructional video, to successfully sign up for yellow.ai.
-
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
 1. Go to [cloud.yellow.ai](https://cloud.yellow.ai/auth/signup)
 2. Select your preferred mode of signup.

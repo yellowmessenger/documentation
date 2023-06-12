@@ -34,6 +34,14 @@ Though there are some limitations of the same as mentioned, after completing emb
 </p>
 </details>
 
+<details>
+<summary>After business verification on WhatsApp, can we change the website URL? Will there be any impact?</summary>
+
+Yes, it is possible to change the website URL after business verification on WhatsApp. However, there may be some potential impacts on the business account that need to be considered.<br/>
+
+Changing the website URL may require re-verification or re-approval from WhatsApp. The new URL will need to meet WhatsApp's guidelines and requirements for business verification.
+</details>
+
 <details><summary> <b> Do I need a phone number to create a bot on your platform? </b> </summary>
 <p>
 
