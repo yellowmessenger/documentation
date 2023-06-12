@@ -1,6 +1,6 @@
 ---
-title: WhatsApp 24hr Window Policy
-sidebar_label : WhatsApp policy 
+title: Reinitate an expired WhatsApp chat
+sidebar_label : WhatsApp chat reinitation 
 ---
 
 In this article, you will learn: 
@@ -22,7 +22,9 @@ If a person initiates a chat with you, you may continue that conversation via Wh
 -----
 
 
-## <a name="policy"></a>  1. Summarized WhatsApp Business Policy   
+## <a name="policy"></a>  1. Business policy for WhatsApp chats
+
+Following are the rules followed as per the WhatsApp guidelines while handling inbox chats that are taking place on WhatsApp: 
 
 1. **One can only initiate a conversation with the end-user using a pre-approved Message template, provided they have opted-in** for your business service or reached out to you first   
 2. **If the end-user initiates the chat** with your business first, then **no opt-ins are required**     

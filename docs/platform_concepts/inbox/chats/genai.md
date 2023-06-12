@@ -10,7 +10,7 @@ Generative AI features are gated, they are not available for all the freemium cu
 The **Inbox Live Chat** screen provides agents with powerful generative AI features that can improve their customer service skills. These features include live chat summarization, the ability to modify message tone, and AI-powered suggestions for conversation enhancement. With these tools at their disposal, agents can offer more efficient and personalized support to customers, leading to higher satisfaction rates and better business outcomes.
 
 
-## Summarize chat conversation 
+## 1. Summarize chat conversation 
 
 The **Summarize chat** AI feature provides a summary of the entire conversation between a customer and a bot or agent. This summary can be used to analyze the quality of support, customer satisfaction, trends, and more.
 
@@ -28,7 +28,7 @@ To access this feature, click on the **AI collaborator icon** and select **Summa
 
 ----
 
-## Change the tone of a typed message
+## 2. Change the tone of a typed message
 
 The **Tone Change** AI feature assists inbox agents in maintaining a professional and courteous tone while responding to customers. Here's how to use it:
 1. Type the desired message.
@@ -40,7 +40,7 @@ The **Tone Change** AI feature assists inbox agents in maintaining a professiona
 
 --- 
 
-## AI Suggestions for conversation improvement
+## 3. AI Suggestions for conversation improvement
 
 Coming soon! 
 

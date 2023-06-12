@@ -19,6 +19,12 @@ You can see its functioning on the [chat screen](https://docs.yellow.ai/docs/pla
  - If for any reason, the agents want to send a generic message such as an address without being translated, they can disable the auto-translate toggle in the chat input box. This will stop translation for that message alone. After that message is sent, the toggle will automatically enable itself for the translation of the next message.
 
 
+:::note
+**Purpose of the translate toggle** (used in rare cases)          
+Assume, the user has typed a sentence and the language is detected as French (using google translate) and updated on the toggle. The agent identifies this language to be Italian. The agent can change the language on the toggle for better translation.
+::: 
+
+
 ### Use cases of auto translate
 
 - **Improving customer service**: With auto-translate, agents can effectively communicate with customers who speak different languages, enabling businesses to offer better customer service and support to a global audience.
