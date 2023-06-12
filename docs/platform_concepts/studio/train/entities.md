@@ -3,159 +3,188 @@ title : Entities
 sidebar_label : Entities
 ---
 
+An entity refers to specific information or data that the chatbot can identify and extract from user input. Let's consider the following example:
 
-In this article, you will learn: 
+User query: I'm looking for Italian restaurants in New York to accommodate four people.
 
-1. [Introduction](#ex)
-2. [How to add and train entities](#ate)
-3. [Types of entities](#et)
-4. [Autoskipping prompts using entities](#ape)
+In this sentence, the entities are the location (New York), cuisine (Italian), and the number of people (four).
 
-:::tip
-You can access Entities using the keyboard shortcut `e`.
-:::
+By training your bot on these specific entities, it enables the bot to answer questions like this accurately. Entities are primarily utilized to bypass prompts and provide suggestions to users once the bot identifies the relevant entity. For more information on configuring entities for this purpose, please refer to this section.
 
----
-## <a name="ex"></a> 1. Entities overview 
+There are a set of entities that our out-of-the-box bot recognizes without requiring specific training. These prebuilt entities include:
 
+* Name
+* Date
+* Email
+* Location
 
-Entities are background or any additional information that is valuable to the message. At times, users tend to provide all the information(entities) upfront in an utterance. Using entities appropriately in bot model training leads to a better conversational experience.
-
-> I want to book an appointment with the **Dentist** on **27th May**.
-    - Entity 'Type of Doctor' = Dentist, 'Date' = 27th May
-
-> Buy the latest **SUV** for your brand.
-    - Entity 'Type of car'= SUV 
+These entities provide a convenient way to handle common types of information without the need for explicit training.
 
 
----
+## Add entities
 
-## 2. Entity and entity values
+In order for the bot to identify and understand the entities, it is essential to add the entities and train the bot specifically on those entities. 
 
-Entities define the categories or types of information being discussed, while entity values are the specific mentions of those entities within the text.  For example, "Maserati" is an entity value for the entity "car's name", and "Paris" is an entity value for the entity "location".
+The yellow.ai platform offers 4 different types of entities:
 
-
-## <a name="ate"></a> 3. Add and train entities 
-
-* Open **Studio** > **Train**. Click **Entities**.
-
-![](https://i.imgur.com/jq1QXyS.png)
+1. Text
+2. List
+3. Regex
+4. System entities
 
 
-* For the bot to recognize entities they must be added and trained. 
+### Add text type entities
 
-### 3.1 Add entities
+Text type entities are suitable for use cases where there is no specific list or predefined format of entity items required. They can be employed when the context calls for extracting specific text values without the need for list or regex type entities.
 
-* Click **+Add new entity**.
-* Add **Name**. Select a [Type](#et) from the dropdown.
+Let's say you have a chatbot that helps users find nearby restaurants. In this case, you can use a text type entity to extract specific cuisine preferences from the user's input. Here's a simple example:
 
-:::note
-Entity name should be alphanumeric, lower case and must not contain spaces.
-:::
+User: Can you recommend some good Italian restaurants nearby?
 
-![](https://i.imgur.com/lrVhau8.png)
+In this example, the text type entity would extract the value **Italian** from the user's input, allowing the chatbot to understand the cuisine preference and provide relevant recommendations. Since there isn't a predefined list or format of entity items required for this use case, a text type entity works well in extracting specific text values without the need for a predefined list or regular expression-based entity.
 
-* If **Enable similar entities** is selected, the bot detects an entity even if there is a partial match. For example: "How much does **mahindra scorp** cost?" will look for the entity- **Mahindra Scorpio** as it is a partial match. 
+1.  Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
 
+![](https://i.imgur.com/US9yAo3.png)
 
+2. Enter the **Entity name** and and choose the **Type** as **Text**.
 
-### 3.2 Train entities
+![](https://i.imgur.com/XGHBhAZ.png)
 
-* Click **Train entities**. 
-* Select **Model Type** (it can be trained for english/multiple-languages).
-
-![](https://i.imgur.com/9rCHT2f.png)
-
-
-* When **Fuzzy search** is selected, the bot searches for text that matches a term closely instead of exactly even when the terms are misspelt. For example, a fuzzy search for "rode" will find terms similar in spelling, such as “ride” or “node”. 
-
-
-----
-
-## <a name="et"></a> 4. Types of entities
-In the [yellow.ai](https://cloud.yellow.ai/) platform, following entities can be defined:
-
-1. **List Type**
-2. **Regex Type**
-3. **Text Type**
-4. **System Entities**
-
----
-
-### 4.1 List 
-
-* These consist of around 60-70% usecases such as product catalogues, type of leaves, mode of payments, etc. Ideally, when all possible distinct values of the entity are known, list type of entity can be used. For example:
-    * **Type of loan** : Home, Personal, Car, Bike. 
-    * **Type of Leave** : Sick, Casual, Privilege, Maternity, Paternity.
-* Select **List** type, and **List items**.
-* In the list, add **Names** of the items. 
-* For each item, **Name** and **Synonyms** can be added.
-
-:::info
-**Synonyms** are multiple variations - *Car* can be regarded as *4 wheeler* and *Bike* as *2 wheeler*. Synonyms can be other meanings of the entity in other languages.
-:::
-
-![](https://i.imgur.com/UEQWA4v.png)
-
----
-
-### 4.2 Regex
-
-Cases when the pattern of the information is known but there is no way to list all the possible exact values of the same entity. This includes entities like Flight Number, ID cards, etc.
-
-> **Policy Numbers** - OG - XXXX -XXX -XXXX
-> **PAN Number** - ABCDE1234F
-
-Defining these entities is very simple, by entering the regular expression (general format of input) Example, Regex for PAN card- "[A-Z]{5}[0-9]{4}[A-Z]{1}".
-
----
-### 4.3 Text
-
-Text Type entities can be used when the use-case doesn't require list/regex type (when there is no specific list/format of entity items). 
-
-* Add **Entity name** and **Type**.
-
-![](https://i.imgur.com/m8WfLmL.png)
-
-* Open **Studio** > **Train** > **Intents** and [add intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intent).  
-* In each Intent- user utterance, select a word that hold the meaning of an entity and right click. Select the required entity.
+2. Go to  **Studio** > **Train** > **Intents** and [add intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
+3. In each user utterance of an intent, right-click on a word that represents an entity and select the corresponding entity from the options.
 
 ![](https://i.imgur.com/yg1p3Z6.jpg)
 
+### Add list type entities
+
+List type entities refer to a specific type of entities that are used to recognize predefined lists of values. These entities are designed to identify options from a predetermined set of choices.
+
+For examaple, **mode of payments** will be the list name and its values would be **UPI, Card, Cash on delivery**. Ideally, when all possible distinct values of the entity are known, list type of entity can be used. 
+
+1. Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
+
+![](https://i.imgur.com/US9yAo3.png)
+
+2. Select **Type** as **List**, and click **Add list item**.
+
+![](https://i.imgur.com/qKNZgPu.png)
+
+3. Add a name for your list and enter the items in synonyms.
+
+For instance, **Type of leaves** : Sick, Casual, Privilege, Maternity, Paternity.
+
+### Add regex type entities
+
+Regular expressions (regex) in entities are patterns that are used to identify and extract specific text patterns from user inputs. Regex allows you to define rules for matching and capturing text based on patterns or formats.
+
+For example, let's say you have a regex entity for email addresses. The pattern for an email address could be something like "\b[A-Za-z0-9.%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}\b". When this regex pattern is applied, it can recognize and extract valid email addresses from user inputs, such as **john.doe@example.com** or **janesmith123@gmail.com**.
+
+1. Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
+
+![](https://i.imgur.com/US9yAo3.png)
+
+2. Enter the entity name in **Entity name** and select **Type** as **Regex**.
+
+![](https://i.imgur.com/ujjr6yM.png)
+
+3. Enter the format in the **Regex** field.
+
+## Train the bot on entities
+
+Once you add entities, you need to train your bot on the same. To train entities:
+
+1. Click **Train entities** on top.
+
+![](https://i.imgur.com/HVuCiMl.png)
+
+
+2. Select the **Model type**, the bot can be trained on English and multiple languages.
+
+  > Multilanguage training  works only for **Text** type entities.
+
+![](https://i.imgur.com/RnA8fYY.png)
+
+3. Enable **Fuzzy search** for the bot to conduct searches for text that closely matches a term, even when there are slight misspellings. 
+
+For instance, if you perform a fuzzy search for "rode," it will identify terms with similar spelling, such as "ride" or "node," rather than strictly requiring an exact match.
+
+6. Click **Train**.
+
+
+## Update entities
+
+You can update the entities(all of the information in it) at any point of time. To update an entity:
+
+1. Go to **Studio** > **Train** > **Entities**.
+
+![](https://i.imgur.com/bJNtr5w.png)
+
+2. Click **Edit**.
+3. Make the required changes and click **Update**.
+
+![](https://i.imgur.com/gktslXm.png)
+
+
+## Import entities
+
+You can import the entities from an external source. The file to be uploaded should be a CSV file with two headers, **Name** for the item name and **Synonyms** for comma-separated synonyms associated with the item.
+
+**Sample**
+
+<img src="https://i.imgur.com/tdhpmfW.png" alt="drawing" width="40%"/>
+
+1. Go to **Studio** > **Train** > **Entities**.
+2. Click **Import**.
+
+![](https://i.imgur.com/hYe6DO8.png)
+
+3. Click **Upload file** and upload the CSV file. 
+
+<img src="https://i.imgur.com/OWqXVb0.png" alt="drawing" width="70%"/>
+
+4. Click **Import**.
+
+
+## Export entities
+
+You can export entities from our platform for backup or integration purposes. To export entities:
+
+1. Go to **Studio** > **Train** > **Entities**.
+2. Click **Export**.
+
+![](https://i.imgur.com/exJn6JX.png)
+
+Entities will be downloaded in your system as a CSV file.
 
 :::note
-It is highly recommended not to use text entity unless required as it is not very definite. 
+Import and Export actions are available only for list type entities
 :::
 
----
 
-### 4.4 System entities
+## Delete entities
 
-Apart from the List and Pattern type entities, a set of entities are recognized by the model out-of-the-box without any specific training. These include:
+1. Go to **Studio** > **Train** > **Entities**.
+2. Click **Delete** followed by another **Delete** button.
 
-  - Name
-  - Date
-  - Email
-  - Location
+![](https://i.imgur.com/3wgz5Nx.png)
 
 
+## Auto-skip prompts & simplify interactions with entity-based suggestions
 
+Entities offer simplified conversations by providing auto-suggestions based on identified entities. This process enhances the user experience by minimising unnecessary interactions.
 
+For instance, if your bot has been trained on the "places" entity, it can offer relevant suggestions when the customer mentions a place. 
 
+<img src="https://i.imgur.com/anyDc8z.png" alt="drawing" width="50%"/>
 
----
+Similarly, if the date entity is set to automatically skip the date prompt, the bot will automatically assign the provided date value without displaying the prompt to the user. This enhances the user experience by seamlessly handling specific entities and reducing unnecessary interactions.
 
-## <a name="ape"></a> 5. Autoskipping prompts using entities
+To add entities to skip prompts and offer suggestions:
 
-To detect entity and skip prompts, open **Make prompts smarter** of that respective prompt and select the entity value. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#5-make-prompt-smarter) to learn more on Make prompts smarter option. 
-If the entity value is detected/ present in the memory, that prompt will be skipped from the flow. 
+1. Click **Make prompt smarter** on any prompt node.
+2. Under **Auto-complete**, choose  **Entities** and the **Entity name**.
+3. Under **Auto-skip** select the preferred **entity**. 
+4. Click **Save**.
 
-
-> For example, if date entity is selected for autoskipping in date prompt, value of date will be automatically assigned to given date and user will not be shown that prompt. 
-
-![](https://i.imgur.com/e8gUqST.png)
-
-
-:::note
-You can test Entities detected in a phrase/utterance using [Test your bot](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) option in tools.
-:::
+![](https://i.imgur.com/VbObv3i.png)
