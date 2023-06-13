@@ -22,6 +22,19 @@ User 360 verifies uniqueness solely based on the userId. Therefore, to avoid dup
 </details>
 
 
+<details>
+<summary>Can I connect a database with User 360?</summary>
+
+Usecase: I currently store the details of users who click the "STOP" button to unsubscribe from my campaign. I want to integrate this information with User 360 to ensure that campaigns are not sent to those users. Is it possible to use User360 instead of a separate database to store the list of unsubscribers?<br/>
+
+
+1. **Store user responses directly to User360 table**: You can store the user responses in a user property which saves it directly in User360. This allows you to associate the unsubscribe information with each user profile. For more details, refer to the documentation on [Storing conversation data in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
+2. **Using events and user APIs**: You can use Events and user APIs to store user data to user 360. For more details, see  [Events and User APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
+
+
+
+
+</details>
 
 
 ## Data import
@@ -58,7 +71,23 @@ When saving the file from Excel, select the option to save it as <b>CSV (Comma d
 
 </details>
 
+<details>
+<summary>
+How to update a specific user property through CSV import?
+</summary>
 
+1. **Prepare your CSV file**: Ensure that your CSV file contains the necessary columns, including the "UserId" column and the column you want to update.
+
+2. **Start the import process**: Initiate the import process and select the CSV file you prepared in step 1. Follow the prompts to proceed to the mapping screen.
+
+3. **Map the property to update**: In the Map properties screen, map the column that you want to update and select the column that corresponds to "userId".
+
+4. **Resolve conflicts**: In the resolve conflict screen, select "Update existing data".
+
+5. Proceed with the other steps.
+
+For detailed procedure, refer to the [Import users documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users#step-2-import-csv-file).
+</details>
 
 
 ## User identification journey
@@ -77,3 +106,5 @@ You cannot update a userId once captured. If you try to capture a new userId in 
 
 You can update existing user properties by identifying the user and recapturing the user properties that you would like to update. However, you cannot update the userId. For more details, see [Store conversational data in User360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#update-user-properties-through-bot-conversations)
 </details>
+
+
