@@ -260,8 +260,8 @@ YMChat.closeBot();
 
 To reload the bot with the same configuration, use the `reloadBot()` function. This will reload the bot without closing and reopening it.
 
-```java
-ymChat.reloadBot();
+```javascript
+YMChat.reloadBot();
 ```
 
 ## Register Device
