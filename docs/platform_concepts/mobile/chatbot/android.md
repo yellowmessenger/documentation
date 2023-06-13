@@ -392,6 +392,10 @@ Speech to text can be enabled by setting the enableSpeech flag present in config
 ymChat.config.enableSpeech = true
 ```
 
+:::note Imporant
+To enable Speech to text Please add record audio permission  (`<uses-permission android:name="android.permission.RECORD_AUDIO" />`) in manifest file.
+:::
+
 #### Mic Icon Color
 You can change the mic button icon color by setting `fabIconColor` in `enableSpeechConfig` of YMConfig.
 
