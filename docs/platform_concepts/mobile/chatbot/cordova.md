@@ -136,10 +136,25 @@ cordova.plugins.ymchat.setVersion(2);
 
 ### Speech to Text
 
+#### Enable Speech
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
 
 ```javascript
 cordova.plugins.ymchat.setEnableSpeech(true);
+```
+
+#### Mic Icon Color
+You can change the mic button icon color by calling setMicIconColor.
+
+```javascript
+cordova.plugins.ymchat.setMicIconColor("#000000");
+```
+
+#### Mic Background Color
+You can change the mic button bakground color by calling setMicBackgroundColor.
+
+```javascript
+cordova.plugins.ymchat.setMicBackgroundColor("#0000FF");
 ```
 
 ### Hide Input Bar

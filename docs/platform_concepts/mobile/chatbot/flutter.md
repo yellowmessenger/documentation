@@ -142,10 +142,25 @@ YmChat.setVersion(2);
 
 ### Speech to Text
 
+#### Enable Speech
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
 
 ```dart
 YmChat.setEnableSpeech(true);
+```
+
+#### Mic Icon Color
+You can change the mic button icon color by calling setMicIconColor.
+
+```dart
+YmChat.setMicIconColor("#000000");
+```
+
+#### Mic Background Color
+You can change the mic button bakground color by calling setMicBackgroundColor.
+
+```dart
+YmChat.setMicBackgroundColor("#0000FF");
 ```
 
 ### Hide Input Bar

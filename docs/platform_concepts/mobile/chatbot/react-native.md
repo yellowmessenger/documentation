@@ -175,6 +175,29 @@ Speech to text can be enabled and disabled by calling setEnableSpeech(). Default
 YMChat.setEnableSpeech(true);
 ```
 
+### Speech to Text
+
+#### Enable Speech
+Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
+
+```javascript
+YMChat.setEnableSpeech(true);
+```
+
+#### Mic Icon Color
+You can change the mic button icon color by calling setMicIconColor.
+
+```javascript
+YMChat.setMicIconColor("#000000");
+```
+
+#### Mic Background Color
+You can change the mic button bakground color by calling setMicBackgroundColor.
+
+```javascript
+YMChat.setMicBackgroundColor("#0000FF");
+```
+
 ### Hide Input Bar
 
 You can hide the input bar while bot is loading by calling the `setDisableActionsOnLoad` API . Default value is `false`
