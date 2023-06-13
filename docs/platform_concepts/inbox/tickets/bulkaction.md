@@ -1,6 +1,6 @@
 ---
 title: Change status, Assign/Reassign, and Merge tickets in bulk 
-sidebar_label : Bulk actions
+sidebar_label : Bulk actions on tickets
 ---
 
 In this article, you will learn: 

@@ -7,11 +7,6 @@ Facebook Messenger (FBM) is a messaging app (iOS/ Android) that allows you to ch
 
 Businesses can use Facebook Messenger chatbot to interact with their business contacts and their target audience. It is also used to automate customer support by answering frequently asked questions, providing product information, and responding to customer inquiries.
 
-In this article, you will learn:
-
-1. [How to connect your Facebook messenger account?](#1-connect-your-facebook-messenger-account)
-2. [How to test FBM chatbot?](#2-test-fbm-chatbot)
-
 ## Connect your Facebook messenger account
 
 To create a Facebook messenger account, follow these steps:
@@ -54,32 +49,6 @@ You need admin access to create an account.
 
    ![](https://i.imgur.com/Zgp95PF.png)
 
-
-## Character limitation of Facebook Business Messenger (FBM)
-
-In this section, you can view the character limitations of FBM channel.
-
-### Quick reply
-
-Quick reply options |	Character limit
---------------------|----------------------
-Quick reply | <br/>• The maximum number of characters supported is 22. <br/>• A maximum of 13 quick replies are supported.
-
-### Carousel
-
-Carousel options	| Character limit
------------------|-----------------
-Carousel title | The maximum number of characters supported is 22.
-
-:::note
-* You cannot add a description to the carousel prompt node.
-* The carousel message node is not supported.
-:::
-
-
-
-
-
 ## Test Facebook Business Messenger chatbot
 
 After creating your account successfully, you can start configuring the chatbot with any of the existing flows based on your business requirements.
@@ -105,11 +74,31 @@ For example, let us try to [add a few FAQs](https://docs.yellow.ai/docs/platform
 
 After adding the FAQs and training the chatbot, you can test your FBM chatbot in your brand page's messenger channel based on the FAQs that you have added.
 
-   <img src="https://i.imgur.com/egpbjjI.png" width="50%"/>
+   <img src="https://i.imgur.com/egpbjjI.png" width="40%"/>
 
 Similarly, you can test your FBM chatbot by adding different options such as product showcase, order status, and so on.
 
 
+## Character limitation of Facebook Business Messenger (FBM)
+
+In this section, you can view the character limitations of FBM channel.
+
+### Quick reply
+
+Quick reply options |	Character limit
+--------------------|----------------------
+Quick reply | <br/>• The maximum number of characters supported is 22. <br/>• A maximum of 13 quick replies are supported.
+
+### Carousel
+
+Carousel options	| Character limit
+-----------------|-----------------
+Carousel title | The maximum number of characters supported is 22.
+
+:::note
+* You cannot add a description to the carousel prompt node.
+* The carousel message node is not supported.
+:::
 
 
 ## Facebook Business best practices
@@ -123,9 +112,13 @@ As the verification process can take more than two weeks, we recommend starting 
 
 #### 1. Access Business Manager Security Center
 
-To start the verification process, go to Security Center and click **Start Verification** in the Business verification section.
+To start the verification process, go to *Security Center* and click **Start Verification** in the Business verification section.
+
+   ![](https://i.imgur.com/SvbZvVN.png)
 
 The **Start Verification** button will be greyed out unless your business needs access to certain features. See the below section on how to enable the button.
+
+   ![](https://cdn.yellowmessenger.com/4lUE9WFC5jTX1620219352063.png)
 
 
 #### 2. Select your Business
@@ -134,6 +127,9 @@ If your business is already listed:
 
 1. **Confirm your business details**
    - Select a phone number that you have access to from the drop-down menu and click **Next**.
+
+     <img src="https://i.imgur.com/TywEtMc.png" width="50%"/>
+
    - Double check for any typos or other errors: you will not be able to edit this information upon submission.
 
 2. **Get a verification code**

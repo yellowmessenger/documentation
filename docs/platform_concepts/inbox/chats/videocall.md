@@ -9,14 +9,15 @@ To resolve this complication, Inbox provides the option of video calls. Video ca
 - It helps provide in-person support from anywhere across the world. 
 - It improves customer satisfaction, increases the efficiency of the team's fast and stick resolution, boosts sales, and increases the trust with the customer.
 
-In this article, you will learn: 
+:::note
+Video call feature will only work once the bot and agent are configured for it. Refer to [video calling settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/video-call-settings) for the steps to configure it.
 
-1. [How video calling works for agents vs. customers?](#usage)
-2. [How to configure video calling?](#configure)
+:::
 
------
+In this article, you will learn how video calling works for agents vs. customers.
 
-## <a name="usage"></a> 1. Video calling workflow 
+
+## Video calling workflow 
 
 Agents can tend to their customer, share their screen, focus their products, provide consultation and superior customer experience, with a click of a button by using the video calling feature.
 
@@ -70,16 +71,3 @@ Resolving a query on video call does not mean that the live chat is resolved. Af
     <img src="https://i.imgur.com/4QDTgSg.png" alt="drawing" width="50%"/>
 
 
----------
-
-
-
-## <a name="configure"></a> 2. Configure video call 
-
-To configure video calls, it must be enabled on the settings page, agents page, and on individual raise ticket nodes.
-- Open [Raise ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) > Advanced settings. On the **Voice ticket options** field select **Voice call** (mandatory to enable video for particular live chat).   
-    ![](https://i.imgur.com/5OuBB2P.png)
-- Enable Video call from inbox settings. 
-    ![](https://i.imgur.com/oDxRiD9.png)
-
-> These steps are achieved through Inbox settings, explained in detail [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/video-call-settings).
