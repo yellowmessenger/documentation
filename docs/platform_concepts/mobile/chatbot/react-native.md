@@ -169,14 +169,6 @@ YMChat.setVersion(2);
 
 ### Speech to Text
 
-Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
-
-```javascript
-YMChat.setEnableSpeech(true);
-```
-
-### Speech to Text
-
 #### Enable Speech
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
 
