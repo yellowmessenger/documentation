@@ -116,6 +116,11 @@ shopifyOrderPaid | Payment made for an order.
 shopifyRefundCreated | Refund created for an order.
 shopifyNewCustomer | A new customer is registered.
 shopifyCustomerUpdate | A customer’s profile details have been updated.
+shopifyCheckoutCreated | Order checkout is initiated in Shopify.
+shopifyOrdersUpdated | Shopify order is updated.
+shopifyCartCreate | A cart is created in Shopify.
+shopifyCartEmpty | A cart is deleted.
+
 
 ## 5. Activate webhook events in your bot
 1. From the bot configuration page, click to **Events hub** > **Integrations**.You will see all the supported events.
@@ -129,7 +134,24 @@ shopifyCustomerUpdate | A customer’s profile details have been updated.
 
 ---
 
-## 6. Use-cases
+## 6. Enable Script Tags Scopes for SDK tracking of custom user events
+
+1. Login to your [Shopify account](https://www.shopify.com/in) and go to **Apps and sales channels** > **Develop apps**.
+
+![](https://i.imgur.com/BuehIWp.png)
+
+2. Click your private app.
+
+![](https://i.imgur.com/DImNqph.png)
+
+3. Go to **Configuration** > **Admin API integration** > **Edit**.
+
+![](https://i.imgur.com/Bwgm6A8.png)
+
+4. Search for script tags and enable  **write_script_tags** and **read_script_tags**.
+
+
+## 7. Use-cases
 
 The following business use-cases are supported in this integrtion.
 
@@ -347,10 +369,273 @@ Sample json response object for findCustomerbyEmail -
 }
 ```
 
+### Track cart creation in Shopify (shopifyCartCreate )
+
+This function helps you when a cart has been created in Shopify
+
+
+
+**Sample json response object for shopifyCartCreate** 
+
+```
+{
+    "userId": "6840133746837",
+    "eventName": "shopifyCartCreate",
+    "source": "shopify",
+    "payload": {
+        "token": "b9b2df63631a91eab0daa3e1833f1f70",
+        "note": null,
+        "attributes": {},
+        "original_total_price": 3000,
+        "total_price": 3000,
+        "total_discount": 0,
+        "total_weight": 0,
+        "item_count": 1,
+        "items": [
+            {
+                "id": 43453026762901,
+                "properties": null,
+                "quantity": 1,
+                "variant_id": 43453026762901,
+                "key": "43453026762901:159c30471db14672fe636da24f9346f2",
+                "title": "Adania Pant - Black",
+                "price": 3000,
+                "url": "/products/adania-pant?variant=43453026762901",
+                "image": "https://cdn.shopify.com/s/files/1/0458/0252/0725/files/2015-03-30_Jake_Look_16_20656_16533.jpg?v=1684943817",
+                "handle": "adania-pant",
+                "requires_shipping": true,
+                "product_type": "",
+                "product_title": "Adania Pant",
+                "variant_title": "Black",
+                "variant_options": [
+                    "Black"
+                ],
+                "options_with_values": [
+                    {
+                        "name": "Color",
+                        "value": "Black"
+                    }
+                ],
+        "customer": {
+            "id": 6840133746837,
+            "email": "chirag.baid@yellow.ai",
+            "accepts_marketing": false,
+            "created_at": "2023-06-07T02:36:22-04:00",
+            "updated_at": "2023-06-07T02:36:22-04:00",
+            "first_name": "Chirag",
+            "last_name": "Baid",
+            "orders_count": 0,
+            "currency": "INR",
+            "phone": null,
+            "addresses": [
+                {
+                    "id": 8154764738709,
+                    "customer_id": 6840133746837,
+                    "first_name": "Chirag",
+                    "last_name": "Baid",
+                    "company": null,
+                    "address1": null,
+                    "address2": null,
+                    "city": null,
+                    "province": null,
+                    "country": "India",
+                    "zip": null,
+                    "phone": null,
+                    "name": "Chirag Baid",
+                    "province_code": null,
+                }
+            ],
+        }
+    },
+    "userProperties": {
+        "email": "ram.jeeven@gmail.com",
+        "phone": null,
+        "firstName": "Chirag",
+        "lastName": "Baid"
+    }
+}
+
+```
+
+### Track Shopify order update (ShopifyOrdersUpdated)
+
+This function helps you when a Shopify order hhas been updated.
+
+
+**Sample json response object for shopifyCartCreate** 
+
+```
+
+{
+    "userId": "6840133746837",
+    "eventName": "shopifyOrdersUpdated",
+    "source": "shopify",
+    "payload": {
+        "id": 820982911946154500,
+        "admin_graphql_api_id": "gid://shopify/Order/820982911946154508",
+        "app_id": null,
+        "browser_ip": null,
+        "buyer_accepts_marketing": true,
+        "cancel_reason": "customer",
+        "cancelled_at": "2021-12-31T19:00:00-05:00",
+        "cart_token": null,
+        "discount_codes": [],
+        "email": "jon@example.com",
+        "phone": null,
+        "total_outstanding": "398.00",
+        "total_price": "403.00",
+        "customer": {
+            "id": 115310627314723950,
+            "email": "john@example.com",
+            "accepts_marketing": false,
+            "created_at": null,
+            "updated_at": null,
+            "first_name": "John",
+            "last_name": "Smith",
+            "default_address": {
+                "id": 715243470612851200,
+                "customer_id": 115310627314723950,
+                "first_name": null,
+                "last_name": null,
+                "company": null,
+                "address1": "123 Elm St."
+            }
+        },
+        "discount_applications": [],
+        "fulfillments": [],
+        "line_items": [
+            {
+                "id": 866550311766439000,
+                "admin_graphql_api_id": "gid://shopify/LineItem/866550311766439020",
+                "fulfillable_quantity": 1,
+                "fulfillment_service": "manual",
+                "fulfillment_status": null,
+                "gift_card": false,
+                "grams": 567,
+                "name": "IPod Nano - 8GB",
+                "price": "199.00",
+                "price_set": {
+                    "shop_money": {
+                        "amount": "199.00",
+                        "currency_code": "USD"
+                    },
+                    "presentment_money": {
+                        "amount": "199.00",
+                        "currency_code": "USD"
+                    }
+                },
+                "product_exists": true,
+                "product_id": 632910392,
+                "properties": [],
+                "quantity": 1
+            }
+        ],
+        "shipping_address": {
+            "first_name": "Steve",
+            "address1": "123 Shipping Street",
+            "phone": "555-555-SHIP",
+            "city": "Shippington"
+        }
+    },
+    "userProperties": {
+        "email": "ram.jeeven@gmail.com",
+        "phone": "918820305570",
+        "firstName": "Steve",
+        "lastName": "Rogers"
+    }
+}
+
+```
+
+### Track checkout initiation in Shopify (ShopifyCheckoutCreated)
+
+This function helps you when a checkout has been initiated in Shopify.
+
+
+**Sample json response object for shopifyCartCreate** 
+
+```
+{
+    "userId": "6840133746837",
+    "eventName": "shopifyOrdersUpdated",
+    "source": "shopify",
+    "payload": {
+        "id": 981820079255243500,
+        "token": "123123123",
+        "cart_token": "eeafa272cebfd4b22385bc4b645e762c",
+        "email": "example@email.com",
+        "gateway": null,
+        "abandoned_checkout_url": "https://checkout.local/548380009/checkouts/123123123/recover?key=example-secret-token",
+            "billing_address": {
+            "first_name": "Bob",
+            "address1": "123 Billing Street",
+            "phone": "555-555-BILL",
+            "city": "Billtown",
+            "last_name": "Biller",
+            "address2": null,
+            "name": "Bob Biller"
+        },
+        "shipping_address": {
+            "first_name": "Steve",
+            "address1": "123 Shipping Street",
+            "phone": "555-555-SHIP",
+            "city": "Shippington",
+            "zip": "K2P0S0",
+            "province": "Kentucky",
+            "country": "United States",
+            "last_name": "Shipper",
+            "name": "Steve Shipper"
+        },
+        "customer": {
+            "id": 603851970716743400,
+            "email": "john@example.com",
+            "accepts_marketing": false,
+            "created_at": null,
+            "updated_at": null,
+            "first_name": "John",
+            "last_name": "Smith",
+            "orders_count": 0,
+            "marketing_opt_in_level": null,
+            "tax_exemptions": [],
+            "email_marketing_consent": {
+                "state": "not_subscribed",
+                "opt_in_level": null,
+                "consent_updated_at": null
+            },
+           "default_address": {
+                "id": null,
+                "customer_id": 603851970716743400,
+                "first_name": null,
+                "last_name": null,
+                "company": null,
+                "address1": "123 Elm St.",
+                "address2": null,
+                "city": "Ottawa",
+                "province": "Ontario",
+                "country": "Canada",
+                "zip": "K2H7A8",
+                "phone": "123-123-1234",
+                "name": "",
+                "default": true
+            }
+        }
+    },
+    "userProperties": {
+        "email": "chirag.baid@yellow.ai",
+        "phone": "918820305570",
+        "firstName": "Chirag",
+        "lastName": "Baid"
+    }
+}
+```
+
 ---
 
+## 8. Run campaigns based on Shopify events
 
-## 7.Limitations
+You can initiate campaigns based on Shopify events. To know more about it, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
+
+## 9.Limitations
 
 1. You can fetch up to 50 products a time.
 2. You can use only 90kb of object size 
@@ -361,7 +646,7 @@ Sample json response object for findCustomerbyEmail -
 Abandon cart option is not available.
 :::
 
-## 8.Troubleshooting 
+## 10.Troubleshooting 
 
 **Error: Your webhook is failing**
 
@@ -369,7 +654,8 @@ Ensure you have enabled Shopify's event in **Event Hub**. If your webhook fails 
 
 ---
 
-## 9. Import Shopify template
+## 11. Import Shopify template
+
 Now that the connection has been established with the Shopify app, you need to import the Shopify template in your bot to use the predefined flows of the app. 
 
 To use Shopify shop template:
@@ -390,7 +676,7 @@ To use Shopify shop template:
 ---
 
 
-## 10. Disconnect Integration
+## 12. Disconnect Integration
 To remove this integration from your bot, 
 
 1. On the bot configuration page, go to **Integrations**.
@@ -400,7 +686,7 @@ To remove this integration from your bot,
 ---
 
 
-### Important References -
+### Important References 
 1. [Shopify Custom Apps](https://help.shopify.com/en/manual/apps/custom-apps)
 2. [Configuring Storefront data for getAllCollections integration node](https://community.shopify.com/c/shopify-apis-and-sdks/404-error-from-get-admin-collection-listings-json-for-one-store/m-p/367034/highlight/true#M19606)
 
