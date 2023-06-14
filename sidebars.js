@@ -774,7 +774,23 @@ module.exports = {
       items: [
        // "platform_concepts/engagement/engage",
        "platform_concepts/engagement/outbound/engage-overview",
-        
+       {
+        type: "category",
+        label: "Outbound templates",
+        link: {type: 'doc', id: 'platform_concepts/engagement/outbound/templates/overview'},
+        collapsed: true,
+        items: [
+          //"platform_concepts/engagement/outbound/templates/overview",
+          "platform_concepts/engagement/outbound/templates/whatsapptemplate",
+          "platform_concepts/engagement/outbound/templates/sms-template",
+          "platform_concepts/engagement/outbound/templates/email-template",
+          "platform_concepts/engagement/outbound/templates/viber-template",
+          "platform_concepts/engagement/outbound/templates/mobilepush",
+          "platform_concepts/engagement/outbound/templates/gbm-template",
+          "platform_concepts/engagement/outbound/templates/linetemplate",
+
+        ],
+      },
             
         {
           type: "category",
@@ -782,23 +798,7 @@ module.exports = {
           collapsed: true,
           items: [
                 
-            {
-              type: "category",
-              label: "Templates",
-              link: {type: 'doc', id: 'platform_concepts/engagement/outbound/templates/overview'},
-              collapsed: true,
-              items: [
-                //"platform_concepts/engagement/outbound/templates/overview",
-                "platform_concepts/engagement/outbound/templates/whatsapptemplate",
-                "platform_concepts/engagement/outbound/templates/sms-template",
-                "platform_concepts/engagement/outbound/templates/email-template",
-                "platform_concepts/engagement/outbound/templates/viber-template",
-                "platform_concepts/engagement/outbound/templates/mobilepush",
-                "platform_concepts/engagement/outbound/templates/gbm-template",
-                "platform_concepts/engagement/outbound/templates/linetemplate",
-
-              ],
-            },
+            
            /* {
               type: "category",
               label: "Campaign",
