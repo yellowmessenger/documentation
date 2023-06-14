@@ -206,6 +206,7 @@ To connect ABC channel to your bot on the platform, follow these steps:
 
     ![](https://i.imgur.com/bsiYLdy.png)
 
+
 ## Test your bot on ABC
 
 After connecting your bot to the ABC channel, you can test your bot. 

@@ -49,7 +49,9 @@ Still, if you want to use exact and latest version please visit the github repos
 
 ### File provider
 
-Note: Only for version v1.4.0 & above
+:::note
+The following key in your strings.xml file is only required for version v1.4.0 to v2.5.0. Starting from version v2.5.0, it is no longer necessary to add this key.
+:::
 
 Add following key in your `strings.xml` file, this will override default file provider used by SDK.
 
@@ -385,15 +387,33 @@ ymChat.config.version = 2;
 
 ### Speech to Text
 
+#### Enable Speech to Text
+
 Speech to text can be enabled by setting the enableSpeech flag present in config. Default value is `false`
 
 ```java
 ymChat.config.enableSpeech = true
 ```
 
-:::note Imporant
-To enable Speech to text Please add record audio permission  (`<uses-permission android:name="android.permission.RECORD_AUDIO" />`) in manifest file.
+:::note
+To enable Speech to text please add record audio permission  (`<uses-permission android:name="android.permission.RECORD_AUDIO" />`) in manifest file.
 :::
+
+#### Mic Icon Color
+
+You can change the mic button icon color by setting `fabIconColor` in `enableSpeechConfig` of YMConfig:
+
+```java
+ymChat.config.enableSpeechConfig.fabIconColor = "#000000"
+```
+
+### Mic Background Color
+
+You can change the mic button bakground color by setting `fabBackgroundColor` in `enableSpeechConfig` of YMConfig:
+
+```java
+ymChat.config.enableSpeechConfig.fabBackgroundColor = "#0000FF"
+```
 
 ### Hide Input Bar
 
