@@ -91,42 +91,26 @@ Create a segment with users who have been with your product or service for less 
 
 ## Highly targeted segments
 
-### Segments with multiple conditions (and/or)
+### Segment with multiple conditions
 
-Segments can be created with multiple condition sets, allowing for more complex filtering based on multiple conditions. Each condition set consists of one or more individual conditions.
-
-An individual condition typically consists of three components:
+Segments are powerful tools for filtering users based on multiple conditions. Each condition set contains individual conditions, consisting of a user property, an operator, and a value. By combining condition sets and conditions, you can create precise segments for targeted messaging.
 
 * **User property**: This is the specific property or attribute of the user that you want to use as a condition.
 * **Operator**: The operator defines the relationship or comparison between the user property and the value.
 * **Value**: The value represents the specific value or range that the user property is compared to.
 
-By combining multiple condition sets and conditions, you can create segments that reflect more specific and granular criteria for targeting your users. This allows for more refined and customized messaging and engagement strategies.
-
 :::info
-Some operators might not have an associated value field.
+Some operators might not have an associated value field. For example, `firstName is known`. <center><img src="https://i.imgur.com/3RvuVfX.png" width="50%"/></center>
 :::
 
-   <center><img src="https://i.imgur.com/URAzjop.png" width="70%"/></center>
-
-
-For certain conditions, you can add multiple values by clicking the "+" button next to the value field. These values are treated as separate options and evaluated using the **OR** logic. If a user property matches any of the specified values, the condition is considered true. This allows for more flexibility in segmenting users based on specific criteria.
-
+Click + sign to evaluate multiple values in a condition. For example, Country is India or United States. **This is applicable only for `is` and `isn't` operator**.
 
    <center><img src="https://i.imgur.com/bxJDJ6s.png" width="70%"/></center>
 
 
-You can add more conditions to a condition set using **+ Add condition**. These conditions are connected with the "AND" operator, meaning that all conditions within the set must be true for the segment to be matched. Adding multiple conditions allows you to create more specific segments based on different criteria.
+To evaluate multiple conditions,  click **+ Add condition**. These conditions are connected with the "AND" operator, meaning users will be added only if all conditions are true.
 
  <center><img src="https://i.imgur.com/PqeiHR7.png" width="70%"/></center>
-
-A new condition set can be added by clicking on + Add condition set. Conditions sets are separated by **OR**
-
-<center><img src="https://i.imgur.com/tMmoDcC.png" width="70%"/></center>
-
-:::note
-For a user to be a part of a segment, he must meet all the AND conditions of a condition set.
-:::
 
 
 ### Create segment specific workflows

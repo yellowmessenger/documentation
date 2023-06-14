@@ -54,6 +54,17 @@ You can use [User360 events](https://docs.yellow.ai/docs/platform_concepts/studi
 
 </details>
 
+
+<details>
+<summary>Getting this error when creating a WhatsApp template `Cannot read property 'wabaID' of null`</summary>
+
+This error can occur when you are trying to create a WhatsApp template or access a WhatsApp Business number, and the corresponding variable is null or undefined.
+
+To address this error, ensure that the [WhatsApp business account is configured](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration) successfully.
+
+</details>
+
+
 ### Email outbound
 
 <details>

@@ -233,3 +233,4 @@ The summary report provides information on the count of user records based on th
    * To see details of a user, see [View user card](/docs/platform_concepts/engagement/cdp/user_data/viewuser)
    * To export user data, or delete an existing user record, see [Manage user data](/docs/platform_concepts/engagement/cdp/user_data_segments/manage_user_data).
    * See how to [create user segments](/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview).
+   * Check out [Import related FAQs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_faqs).
