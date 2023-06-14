@@ -8,9 +8,6 @@ The studio provides a no-code bot-building platform that helps anyone create a b
 
 This article briefs you on understanding various components of Studio and helps you to get started with creating a bot.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qwga7KLj-zM" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
-
-
 --- 
 
 ## 1. Access studio
@@ -29,17 +26,21 @@ You can access Studio using the keyboard shortcut `g` + `s`.
 :::
 ---
 
-This is a general (**Home**) flow that the bot follows, irrespective of the training given to it. 
-- There is always a welcome message configured and displayed for the user.
-- The bot responds to the queries it **understands** and **does not understand**.
+## 2. Navigate the Studio homepage
 
-You can use global options for each node or flow that you build based on your use case.
+![](https://i.imgur.com/yGIqAbE.png)
 
-![](https://i.imgur.com/cFTYsIg.jpg)
+The studio homepage showcases a collection of created and imported flows. It offers the following options to enhance your bot-building experience:
 
-#### Conversation settings
+1. [Conversation Settings](#conversation-settings): Customize the way your bot engages with end users.
+2. [Preview](#preview): Take a sneak peek at how your bot will interact before deploying it.
+3. [Publish changes](#publish-changes): Make your bot live and unleash its full potential.
+4. [Welcome (Start flow)](#welcome-start-flow)
+5. [Fallback (Fallback flow)](#fallback-fallback-flow)
 
-The following are the various **Conversation settings** that are available on the **Studio** page:
+
+### Conversation Settings
+Fine-tune the conversational behavior of your bot to align with your desired user experience. The following are the various conversation settings that are available on the **Studio** page:
 
 | Global Options | Description |
 |---------|----------|
@@ -65,29 +66,127 @@ When **Execute Flow** is selected, the start of the flow will be directed to the
 
 :::
 
-## 2. Train the bot
+### Preview
 
-Train your bot to understand common user utterances through NLU (Natural Language Understanding), identify [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents), [entities](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) and more.
+The preview option lets you take a preview of the entire bot, giving you a look at how the bot would look, function, and converse with the end user.
 
-![](https://i.imgur.com/A7GqpLw.jpg)
+![](https://i.imgur.com/ePnYure.png)
+
+When you click the **Preview** button, it opens on the right side. You can also click the arrow on the top to open the bot on a different page and test it.
+
+![](https://i.imgur.com/CfWWPcN.png)
+
+### Publish changes
+
+Publish changes has the following options:
+
+![](https://i.imgur.com/pTYufMt.png)
+
+#### Publish bot live
+
+Publishes the entire bot live. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) to learn more about publish.
+
+#### Export bot as templates
+
+Export the bot as a template to be reused in the future. Flows, databases and FAQs of the  bot can be exported.
+
+To export a bot template:
+
+1. Click **Export bot as template**.
+2. To set up export, fill the following fields:
+
+| Name | Description |
+|------|-------------|
+| Template name | Name of the template. This is auto-filled and you can modify the name of the template according to your business needs. |
+| Overview | Give a gist of the selected flow, this appears on the template. |
+| Component type | Select the component type based on the selected.<br/> <img src="https://i.imgur.com/44tq00E.png" alt="drawing" width="50%"/> |
+| Template icon | Select a preconfigured template icon or you can upload the icon of your choice. ![](https://i.imgur.com/hPTOxCL.png) |
+| Description | Describe the template. |
+| Flows | You can include other flows in the same template by selecting the flows from the dropdown. ![](https://i.imgur.com/7deVwfk.png) |
+|Export table data | Include database tables to your template by selecting the respective database from the dropdown. <br/> <img src="https://i.imgur.com/DlwlOg3.png" alt="drawing" width="80%"/>|
+| Add FAQs | To export FAQs along with your template, simply toggle the corresponding button. ![](https://i.imgur.com/4fpQd4a.png) |
+| Key features | You can include up to three key features in your template, which will be shown on the template cover.|
+| Template tags | Tags entered in this field can enhance search results when looking for specific keywords related to your use case. |
+| Use cases | You can select up to three categories that are available in the drop-down that suit your template. ![](https://i.imgur.com/aVZJ3M7.png) |
+| Languages | To view your template in multiple languages, you can select the language of your choice. |
+| Industries | You can choose up to three industries that match your flow. |
+| Channels | Choose the channel you wish to integrate your template with.| 
 
 
-## 3. Test the bot
+3. Click **Next**.
+4. If you've selected multiple flows, you can switch between them and preview the one you want to export.
 
-[Test your bot](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) to ensure it's functioning as expected.
+   <img src="https://i.imgur.com/VbIYpfD.png" alt="drawing" width="50%"/>
 
-## 4. Debug
+5. Choose who can access your template using these options:
 
-[Debug](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) if there are any issues and [Publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) the bot.
-  
+* **Myself**: Publish and reuse the template for your own use.
+* **Training**: Only users with access to the specific subscription can use the exported template.
+* **Public**: The template is published in the Marketplace and publicly available within the bot after admin approval.
 
-## 5. Conversation log
+   <img src="https://i.imgur.com/Oy5FoDN.png" alt="drawing" width="50%"/>
 
- Keep your bot effective over time through Self-learning and analysing [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs). 
+6. Templates submitted for review can be viewed under **User account** > **Exports**.
 
-## 6. Keyboard shortcuts
 
-We have introduced shortcut keys to make it easy for you to access key options and increase the productivity of repetetive tasks.
+ <img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
+
+ You can view the status of the template on this page.
+
+ ![](https://i.imgur.com/oynJE4x.png)
+
+ 7. Templates exported to a private marketplace are automatically published without review. For subscription exports, they require review and are displayed on this page. The subscription admin can view, test, and publish them. Similarly, templates exported to the public marketplace also undergo review and appear here. The public marketplace admin can view, test, and publish those templates.
+
+ ![](https://i.imgur.com/aAR4eF3.png)
+
+ 8. After selecting the access option for the template, the system will list the approved templates under the corresponding category.
+
+ ![](https://i.imgur.com/e6T16cV.png)
+
+
+### Welcome (Start Flow)
+
+This is the flow any user would encounter when they access the bot. Here, you can assign a flow the bot should carry out when a new user uses the bot for the first time.
+
+![](https://i.imgur.com/AkqCkIa.png)
+
+To set a welcome flow:
+
+1. Click the **Welcome** option.
+2. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
+
+:::note
+If you had previously set a welcome flow in our previous UI, you will see a legacy node that contains the old welcome flow settings. It cannot be edited.
+![](https://i.imgur.com/BN4TTGy.png)
+:::
+
+Any of the flows can be set as a welcome flow.
+
+![](https://i.imgur.com/TUZVCdt.png)
+
+### Fallback (Fallback Flow)
+
+The bot switches to this flow when it doesn't understand the user input.
+
+![](https://i.imgur.com/ej9HWfL.png)
+
+To set a fallback flow:
+
+1. Click the **Fallback** option.
+2. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
+
+:::note
+If you had previously set a fallback flow in our previous UI, you will see a legacy node that contains the old fallback flow settings. It cannot be edited.
+![](https://i.imgur.com/OwHXy4c.png)
+:::
+
+Any of the flows can be set as a fallback flow.
+
+![](https://i.imgur.com/L3nTKAv.png)
+
+## 3. Keyboard shortcuts
+
+We have shortcut keys to make it easy for you to access key options and increase the productivity of repetetive tasks.
 
 :::note
 You can directly use the keys to access the function from the screen where that particular option is available.

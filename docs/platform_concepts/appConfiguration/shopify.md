@@ -123,7 +123,8 @@ shopifyCartEmpty | A cart is deleted.
 
 
 ## 5. Activate webhook events in your bot
-1. From the bot configuration page, click to **Events hub** > **Integrations**.You will see all the supported events.
+
+1. From the bot configuration page, click  **Events hub** > **Integrations**. You will see all the supported events.
    ![](https://i.imgur.com/AkXOKfw.jpg)
 
 2. Navigate to the event that you want to use in the bot, click the more options icon, and select **Activate**. 
