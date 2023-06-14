@@ -2,6 +2,7 @@
 title: Studio overview
 sidebar_label: Overview
 id: overview
+tags: [export bot template, how to export bot template, legacy node]
 ---
 
 The studio provides a no-code bot-building platform that helps anyone create a bot for their business needs easily. With Studio, you can collect information from your customers, update their information, launch actions, show them the necessary information, have a live chat with an agent and do a lot more.
@@ -32,11 +33,11 @@ You can access Studio using the keyboard shortcut `g` + `s`.
 
 The studio homepage showcases a collection of created and imported flows. It offers the following options to enhance your bot-building experience:
 
-1. [Conversation Settings](#conversation-settings): Customize the way your bot engages with end users.
-2. [Preview](#preview): Take a sneak peek at how your bot will interact before deploying it.
-3. [Publish changes](#publish-changes): Make your bot live and unleash its full potential.
-4. [Welcome (Start flow)](#welcome-start-flow)
-5. [Fallback (Fallback flow)](#fallback-fallback-flow)
+1. **[Conversation Settings](#conversation-settings)**: Customize the way your bot engages with end users.
+2. **[Preview](#preview)**: Take a sneak peek at how your bot will interact before deploying it.
+3. **[Publish changes](#publish-changes)**: Make your bot live and unleash its full potential.
+4. **[Welcome (Start flow)](#welcome-start-flow)**: The initial flow users encounter when interacting with the bot.
+5. **[Fallback (Fallback flow)](#fallback-fallback-flow)**: The alternative flow users experience when the bot fails to understand their message.
 
 
 ### Conversation Settings
@@ -51,7 +52,7 @@ Fine-tune the conversational behavior of your bot to align with your desired use
 | Document Search | The bot responds to the user based on the data from the [uploaded document](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition). To add a new document, click **+ Add** document. <br/> <img src="https://i.imgur.com/YIc6nap.png" alt="drawing" width="60%"/> | 
 | Suggestion | This can be used when you want to redirect a user when the requested answer is not found.<br/>For example, you have asked a bot, "I want to know my order status for the day". If bot does not understand or not sure about your question, then the relevant suggestions are displayed. <br/> In these cases, bot replies with a message, "My apologies, I was not able to understand what you have asked." and provides relevant suggestions to the user. Also, it provides an option, "Not Satisfied". When user selects "Not satisfied" option if they are not satisfied with any of the bot suggestions, bot searches for the answer from the **Document Search** if it is configured; otherwise, a fallback message is displayed.<br/> Suggestion triggers when an utterance doesn't reach minimum confidence. It extracts the similar intents that match any intent and exposes the 20 matches with the highest similarity confidence. It then calls another API internally to extract the descriptions of the journeys and display them. <br/>**Note**:<br/> * If the confidence is between 0.6 and 0.9, then the bot provides suggestions. <br/> * If the confidence is below 0.6, then the bot displays a fallback message. <br/> <img src="https://i.imgur.com/7OZv1Q4.png" alt="drawing" width="60%"/> |
 | Language settings | You can add multiple languages to your bot based on your business needs. Click **Edit** icon to add languages.<br/> <img src="https://i.imgur.com/sfyTVZj.png" alt="drawing" width="60%"/> <br/> Select languages from drop-down and click **Save**. <br/> <img src="https://i.imgur.com/572R72g.png" alt="drawing" width="60%"/> | 
-| Callout | These banners on top of the chat can be used to promote a brand and/or get visitors from the host website to go to the advertiser's website.<br/> <img src="https://i.imgur.com/f4LbObf.png" alt="drawing" width="60%"/><br/> **Note**: You can add four callouts with two buttons each. Buttons can be further customised by clicking **Advanced Settings**. <br/> ![](https://i.imgur.com/qWMxeYl.png) | 
+| Callout | These banners on top of the chat can be used to promote a brand and/or get visitors from the host website to go to the advertiser's website.<br/> <img src="https://i.imgur.com/f4LbObf.png" alt="drawing" width="60%"/><br/> **Note**: You can add four callouts with two buttons each.<br/> You can choose the type of callout banner, **text** or **image**.<br/> In the text banner, you can type the text for the banner and buttons to support it.<br/> <img src="https://i.imgur.com/1XnwjXn.png" alt="drawing" width="60%"/><br/> In the image banner you can add an image and enable **Add link upon image click** for the image to redirect the user to a certain flow or URL when clicked.<img src="https://i.imgur.com/zZfkcS3.png" alt="drawing" width="60%"/><br/> | 
 
 :::note
 Welcome message is supported only for web and app SDK and it is not supported for any of the [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).
@@ -82,17 +83,17 @@ Publish changes has the following options:
 
 ![](https://i.imgur.com/pTYufMt.png)
 
-#### Publish bot live
+#### Publish bot 
 
 Publishes the entire bot live. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) to learn more about publish.
 
-#### Export bot as templates
+#### Export as bot template
 
 Export the bot as a template to be reused in the future. Flows, databases and FAQs of the  bot can be exported.
 
 To export a bot template:
 
-1. Click **Export bot as template**.
+1. Click **Export as bot template**.
 2. To set up export, fill the following fields:
 
 | Name | Description |
