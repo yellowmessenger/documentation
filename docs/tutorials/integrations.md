@@ -3,6 +3,7 @@ title: Integration
 sidebar_label: Integration
 featured: true
 ---
+
 Discover our video tutorials on integration and learn how to seamlessly integrate several systems and applications with Yellow.ai.
 
 
