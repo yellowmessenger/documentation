@@ -46,18 +46,18 @@ For details on how user records are created through conversations and unified in
 To add the User identification flow to your bot, follow these steps:
 
 
-1. Navigate to **Studio** > **Build** and click **Add user identification**.
+1. Navigate to **Studio** and click **Conversation settings**.
    
-   ![](https://i.imgur.com/VFlV6tJ.png)
+   ![](https://i.imgur.com/WA0J7b2.png)
 
 
-2. On the pop-up screen that appears, click **Create**.
+2. On the pop-up screen that appears, click **User identification**.
 
-  <img src="https://i.imgur.com/s6SQPZN.png" width="50%"/>
+  <center><img src="https://i.imgur.com/dqW7gKF.png" width="60%"/></center>
 
 3. Select the relevant identification flow - [Phone identification flow](#phone-identifier-flow), [Email identification flow](#email-identifier-flow) or [Custom property flow](#custom-property-flow).
 
-   <img src="https://i.imgur.com/KGeBIwq.png" width="60%"/>
+   <img src="https://i.imgur.com/WiY0CqZ.png" width="60%"/>
 
 #### Phone identifier flow
   
