@@ -4,39 +4,82 @@ sidebar_label: Getting Started
 featured: true
 ---
 
-## Become a coversational expert with YM two minutes at a time
+Explore video-based learning to effortlessly enhance your skills! This section is tailored for busy learners seeking concise and engaging experiences. These videos provide visual demonstrations, step-by-step processes, and walkthroughs of various products of Yellow.ai in a more engaging, accessible, and efficient manner. Elevate your learning journey today 🏃🏻‍♂️!
 
-This section is for all the learners who LOVE to LEARN on the GO 🏃🏻‍♂️ Time is precious and not everyone likes to take the long trail of step by step learning but get quick answers to tricky questions. This section is for the same kind of learners.
 
 :::info
-For more information about yellow.ai and learning, please visit this link - [Ascend](https://ascend.yellow.ai/) and sign up here to access all the resources bot building courses, virtual classroom sessions, video/audio content and much more.
+To access all the resources, including bot building courses, virtual classroom sessions, video/audio content, and more, visit [this link](https://ascend.yellow.ai/) and sign up to Yellow.ai's Ascend.
 :::
 
 
-### How to Sign up to Yellow.ai and create your first bot? 
-This video will take you through the steps of signing up on https://cloud.yellow.ai/
+### Sign up to Yellow.ai and create your first bot
 
-:::info
-Don't forget to verify your email in your inbox after sign up.
-:::
+Join Yellow.ai to unlock the power of building and customizing your own bot. With an easy sign-up process, you'll be able to dive right in and start creating your bot from scratch. Get started today and experience the excitement of bringing your ideas to life with Yellow.ai's user-friendly bot creation platform.
 
-<p align="center"><iframe width="560" height="315" src="https://youtu.be/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
+
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
+
+
 
 ### Platform overview
 
-<p align="center"><iframe width="560" height="315" src="https://youtu.be/QYRdym4wZf8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
+Welcome to our platform overview video! In this brief introduction, we will take you on a tour of our powerful platform, showcasing its key features and functionalities. Discover how our platform empowers you to create, customize, and deploy intelligent bots with ease. From seamless integrations to advanced analytics, we have everything you need to streamline your conversational AI initiatives. Let's dive in and explore the possibilities that await you on our platform.
 
-### yellow.ai Platform UI Interface
+
+
+<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/QYRdym4wZf8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
+
+
+
+
+### Understanding the Platform's  interface
+
+In this video, we will provide you with a glimpse of our intuitive platform interface. 
+
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/yLZUfLKm5TA" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
 
-### Bot orchestration
+
+
+
+ ### Build lead generation chatbot in minutes
+
+
+This video demonstrates how to  build a lead generation chatbot in minutes.
+
+ <center><iframe width="560" height="315" src="https://www.youtube.com/embed/vt_ZduzRqfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+
+
+### Build FAQ-based chatbot in minutes
+
+
+This video demonstrates how to  build a FAQ chatbot in minutes.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4DXUCRWE9J8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+ 
+
+
+### Build Customer support chatbot in minutes
+
+This video demonstrates how to  build a customer support chatbot in minutes.
+
+
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/Fgmp-ofBy78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+
+
+
+<!--
+### Manage parent and child bots efficiently with Bot Orchestrator
+
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/uwmSrT_epcw" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
 
-Manage and deploy multiple child bots efficiently & effectively with yellow.ai's Bot Orchestrator!
 
-Boost customer experience and employees productivity with yellow.ai's NLP powered Bot Orchestrator to oversee conversations and assign queries to the individual child bots based on intent & context for a smoother conversational experience.
+Efficiently manage parent and child bots with Bot Orchestrator. This powerful tool simplifies coordination and control of multiple bots in your conversational AI ecosystem. Assign conversations and queries to individual child bots based on intent and context. Discover the benefits of Bot Orchestrator for your conversational AI strategy in our video.
 
 
 ### Dialogue management
@@ -64,3 +107,5 @@ The result? Smooth and fluid customer conversations over digital voice channels.
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/JZwdUcj6RiI" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
 
 Protect your customers and their data with access based controls. Define your own custom rules which will give you control over data and insights including the ability to adjust what data is shared across user personas.
+
+-->
