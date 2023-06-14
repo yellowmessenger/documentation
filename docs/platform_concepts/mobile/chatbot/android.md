@@ -49,7 +49,9 @@ Still, if you want to use exact and latest version please visit the github repos
 
 ### File provider
 
-Note: Only for version v1.4.0 & above
+:::note
+Note: Only for version v1.4.0 to v.2.5.0. Post v.2.5.0 it is not required to add following key in your strings.xml
+:::
 
 Add following key in your `strings.xml` file, this will override default file provider used by SDK.
 

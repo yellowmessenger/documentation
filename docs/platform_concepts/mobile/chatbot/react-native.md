@@ -38,6 +38,10 @@ yarn add ymchat-react-native
 
 #### File provider
 
+:::note
+Note: Only required for version v.2.5.0 and below. Post v.2.5.0, it is not required to add the following key in your strings.xml
+:::
+
 Add following key in your `strings.xml` file found at `yourproject/android/app/src/main/res/values/strings.xml`, this will override default file provider used by SDK.
 
 Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
