@@ -346,10 +346,27 @@ config.version = 2
 
 ### Speech to Text
 
+#### Enable Speech to Text
+
 Speech to text can be enabled by setting the enableSpeech flag. Default value is `false`
 
 ```swift
 config.enableSpeech = true
+```
+
+#### Mic Icon Color
+
+You can change the mic button icon color by setting `fabIconColor` in `enableSpeechConfig` of YMConfig:
+
+```swift
+config.enableSpeechConfig.fabIconColor = UIColor.white
+```
+#### Mic Background Color
+
+You can change the background color of the mic button by setting `fabBackgroundColor` in `enableSpeechConfig` of YMConfig.
+
+```swift
+config.enableSpeechConfig.fabBackgroundColor = UIColor.blue
 ```
 
 ### Hide Input Bar

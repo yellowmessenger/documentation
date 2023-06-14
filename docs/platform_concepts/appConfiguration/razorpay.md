@@ -79,7 +79,7 @@ For example, if the domain is https://cloud.yellow.ai, you need to change it to 
 
 ![](https://i.imgur.com/uDShz45.png)
 
-
+![](https://i.imgur.com/Zfsj8ub.png)
 
 ::: Tip
 * You can set upto 10 URLs to receive Webhook notifications. Webhooks can only be delivered to public URLs. If you attempt to save a localhost endpoint as part of a webhook setup, you will encounter an error.
@@ -94,7 +94,7 @@ For example, if the domain is https://cloud.yellow.ai, you need to change it to 
 To modify the webhook further, you can select the webhook and click **Edit**. You can refer this [video](https://www.youtube.com/watch?v=qojkh8Vbnek) as well.
 :::
 
-### 1.4 Receive events in Yellow.ai
+### 1.5 Receive events in Yellow.ai
 
 1. Login to cloud.yellow.ai and click **Studio**. 
 2. Click **Event** from the left navigation bar and then choose **Integrations**.

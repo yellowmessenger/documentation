@@ -37,6 +37,10 @@ dependencies:
 
 #### File provider
 
+:::note
+* The following key in your strings.xml file is only required for versions below v2.5.0. Starting from version v2.5.0, it is no longer necessary to add this key.
+:::
+
 Add following key in your `strings.xml` file found at `yourproject/platforms/android/app/src/main/res/values/strings.xml`, this will override default file provider used by SDK.
 
 Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
@@ -142,10 +146,28 @@ YmChat.setVersion(2);
 
 ### Speech to Text
 
+#### Enable Speech to Text
+
 Speech to text can be enabled and disabled by calling setEnableSpeech(). Default value is `false`
 
 ```dart
 YmChat.setEnableSpeech(true);
+```
+
+#### Mic Icon Color
+
+You can change the mic button icon color using the `setMicIconColor` function:
+
+```dart
+YmChat.setMicIconColor("#000000");
+```
+
+#### Mic Background Color
+
+To change the background color of the mic button, use the `setMicBackgroundColor` function:
+
+```dart
+YmChat.setMicBackgroundColor("#0000FF");
 ```
 
 ### Hide Input Bar
