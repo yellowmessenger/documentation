@@ -21,7 +21,7 @@ You can export one or more bot flows as a template with data from databases and 
 
 1. Go to **Studio** and click the flow you want to export as a template.
 
- ![](https://i.imgur.com/pPJUHjM.png)
+ ![](https://i.imgur.com/47ONnMU.png)
  
 2. Go to **Publish changes** > **Export as flow template**.
 
