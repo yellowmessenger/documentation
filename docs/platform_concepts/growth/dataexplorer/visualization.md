@@ -46,4 +46,6 @@ Before creating visualizations, you must **summarize** the data in tables. After
 
 These visualized queries can be used for future references and they will be available for quick use on the data explorer page(under **Saved reports**), click the **Save query** option available at the top of the page. 
 
+> Learn more about actions available on [Saved reports](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions).
+
 ![](https://hackmd.io/_uploads/HyqYX15r2.png)

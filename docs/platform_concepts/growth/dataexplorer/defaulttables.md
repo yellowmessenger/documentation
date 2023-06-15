@@ -76,6 +76,8 @@ You can filter data by a single column value or a combination of column values. 
 
 Once you have applied filters, a button labeled **Save query** will appear. Click on this button to save the filtered data as a saved report. This report can then be accessed under the **Saved reports** section every time you open the data explorer, without the need to repeat all the filtering steps again.
 
+> Learn more about actions available on [Saved reports](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions).
+
 ![](https://i.imgur.com/PM6HYDu.png)
 
 
