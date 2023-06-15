@@ -13,7 +13,7 @@ To configure a start trigger, follow the steps below:
 
 1. Go to **Studio** and click a flow.
 
-![](https://i.imgur.com/0UnEjxQ.png)
+ ![](https://i.imgur.com/47ONnMU.png)
 
 
 3. Click the **Start** node.
@@ -105,11 +105,11 @@ To preview a bot on the Studio overview page,
 2. Click the **Preview button** next to the desired flow. 
 3. The flow will get triggered in the chat box on the right end.
 
-![](https://i.imgur.com/ayZl1tb.png)
+![](https://i.imgur.com/WYpfNtZ.png)
 
 You can also go to the respective flow and click **Preview current flow**.
 
-![](https://i.imgur.com/BP7lckE.png)
+![](https://i.imgur.com/EP8evnD.png)
 
 ### 3.2 Test bot flow via. URL
 
@@ -119,11 +119,11 @@ To preview a bot via URL, follow the given steps:
 2. Click the **Flows** drop-down and select the flow that you want to preview.
 3. Copy the path of the flow that you see in the URL (after `flow/`)
 
-![](https://i.imgur.com/K9naz4Z.jpg)
+![](https://i.imgur.com/hXZezYH.png)
 
 4. Click **Preview bot**, you will see the entire bot flow in a new tab.
 
-![](https://i.imgur.com/jZCPVVI.png)
+![](https://i.imgur.com/U4aFkpd.png)
 
 5. In the address bar, append `?ym.triggerJourney={flow path}`.
 
@@ -144,7 +144,7 @@ A flow slug is the combination of flow name with auto-generated characters for a
 
 It appends to the URL and you can see it when you select a specific flow.
 
-   ![](https://i.imgur.com/e8MjGPV.png)
+   ![](https://i.imgur.com/k9VY1Uh.png)
 
 ### 3.3 Test bot flow via. code
 
@@ -192,7 +192,7 @@ To access a flow's settings,
 
 1. Click the gear icon at the bottom.
 
- ![](https://i.imgur.com/toAQbCj.png)
+ ![](https://i.imgur.com/40wKmIJ.png)
 
 2. In the following screen, you can configure the following,
 
