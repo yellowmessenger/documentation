@@ -29,8 +29,20 @@ Discover how to create WhatsApp templates in this video tutorial. WhatsApp templ
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZFejxFcVYfU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>
 
+
+:::info
+For detailed instructions, please refer to the [Help Documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate).
+:::
+
+
 ### Create WhatsApp campaign
 
 Explore how to create WhatsApp campaigns in this video tutorial. WhatsApp campaigns enable you to reach your audience with targeted and personalized messages on this popular messaging platform.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/zMD12iDdO34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<center>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zMD12iDdO34" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
+
+:::info
+For detailed instructions, please refer to the [Help Documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#2-create-outbound-campaign).
+:::
