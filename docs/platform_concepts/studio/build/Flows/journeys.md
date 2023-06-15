@@ -12,7 +12,7 @@ The following is an example of a food order flow:
 - User: South Indian
 - Bot: Please select the Item: Dosa, Pongal . . .
 
-![](https://i.imgur.com/z6dx9sS.jpg)
+![](https://i.imgur.com/51LCOoO.png)
 
 
 Through flows bot can also converse with users and fetch a piece of information via nodes, for example, the bot can be used as an official portal to apply for leaves or check salary.
@@ -22,7 +22,7 @@ Through flows bot can also converse with users and fetch a piece of information 
 
 The icons located on the tile provide quick access to the following
 
-![](https://i.imgur.com/cXboxyj.jpg)
+![](https://i.imgur.com/G9n27EO.png)
 
 (The sequence follows the order of the UI layout)
 
@@ -48,7 +48,7 @@ To create a flow, follow the below steps:
     
 3. Click **+ Create a new flow**.
 
-   ![](https://i.imgur.com/5CVs4FT.png)
+   ![](https://i.imgur.com/Zp2fpb0.png)
 
 :::tip
 You can also use the keyboard shortcut`s` + `f`.
@@ -78,7 +78,7 @@ You can also use the keyboard shortcut`s` + `f`.
 
     *  **Create as a workflow**: Click the toggle button if you want to convert the flow to a workflow. Workflows run in the backend along with the conversational flow. To know more about workflow, click [here](#2-workflow---a-variant-of-flow).
 
-![](https://i.imgur.com/r9qKPuo.jpg)
+ ![](https://i.imgur.com/x63yJNZ.png)
 
 7. Click **Save**.
 8. Add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) and build a flow as per your use-case. 
@@ -96,14 +96,14 @@ To edit a flow, follow these steps
 1. Ensure the environment (on the top right corner) is in the [development mode](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
 2. Go to the flows drop-down on the top and click the flow you would like to edit. 
 
-![](https://i.imgur.com/YwwLdK3.png)
+![](https://i.imgur.com/4lUHL3d.png)
 --- 
 
 ### <a name="workflow"></a> 2.2 Workflow - a variant of flow
 
 Workflows are background processes that run along with the conversational flow. **Workflow** option can be selected while creating a flow. For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) operates in the background, synchronizing data with an external database while the bot executes the rest of the other flows.
 
-![](https://i.imgur.com/icmGvq4.png)
+![](https://i.imgur.com/x63yJNZ.png)
 
 Workflow is the same as any other flow, nodes connecting the start node can only be [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes (Message and Prompt nodes are not available to build a workflow).
 

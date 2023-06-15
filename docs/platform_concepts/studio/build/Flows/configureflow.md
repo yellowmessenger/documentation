@@ -13,7 +13,7 @@ To configure a start trigger, follow the steps below:
 
 1. Go to **Studio** and click a flow.
 
-![](https://i.imgur.com/0UnEjxQ.png)
+![](https://i.imgur.com/47ONnMU.png)
 
 
 3. Click the **Start** node.
