@@ -9,7 +9,7 @@ User query: I'm looking for Italian restaurants in New York to accommodate four 
 
 In this sentence, the entities are the location (New York), cuisine (Italian), and the number of people (four).
 
-By training your bot on these specific entities, it enables the bot to answer questions like this accurately. Entities are primarily utilized to bypass prompts and provide suggestions to users once the bot identifies the relevant entity. For more information on configuring entities for this purpose, please refer to this section.
+By training your bot on these specific entities, it enables the bot to answer questions like this accurately. Entities are primarily utilized to bypass prompts and provide suggestions to users once the bot identifies the relevant entity. For more information on configuring entities for this purpose, please refer to [this section](#auto-skip-prompts--simplify-interactions-with-entity-based-suggestions).
 
 There are a set of entities that our out-of-the-box bot recognizes without requiring specific training. These prebuilt entities include:
 
