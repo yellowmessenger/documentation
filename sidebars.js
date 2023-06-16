@@ -994,6 +994,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-product-catalog",
             "platform_concepts/channelConfiguration/wa-migration",
             "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
+            "platform_concepts/channelConfiguration/WA-pricing",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
