@@ -58,6 +58,30 @@ To implement the use case, follow these steps:
 <img src="https://i.imgur.com/mUTWcrH.png"/>
 
 
+### Segment based on user created date
+
+Creating segments based on the created date can be useful in various use cases. You can use the user property `createdAt` to define your condition.
+
+Here are a few real-time examples of user segment based on the created date:
+
+* Onboarding Campaign: You can create a segment of customers who were recently created or onboarded within a specific time frame.
+* Re-engagement Campaign: Identify customers who haven't engaged with your business for a certain period since their creation. 
+* VIP Customers: Segment customers based on the date they became your customers and their purchase history.
+* Churn Prevention: Monitor customers who are nearing their anniversary or renewal date. 
+* Feedback Surveys: Create segments of customers who recently became your customers to gather feedback on their initial experience.
+
+To create segment based on user added date:
+
+1. In Segment filters, select the user property `createdAt`.
+
+   <img src="https://i.imgur.com/JskEsA0.png"/>
+2. Choose the desired operator and select the date-time accordingly.
+
+* **Is**: Create segments with customers whose record is created on a specific date such as "Created At Is 15 June, 2023".
+* **Is after**: Create segments with customers whose record is created after a specific date, such as "Created At Is Before 15 June, 2023".
+* **Is before**: Create segments with customers whose record is created before a specific date, such as "Created At Was Exactly 2 days ago".
+* **Was exactly**: Create segments with customers whose record was created just before a specific number of days, hours or minutes, such as "Created At was Exactly after 12 hours dbefore".
+* **Will be exactly**: Create segments with customers whose record will be created exactly after a specific number of days, hours or minutes, such as "Created At Will Be Exactly after 1 day".
 
 
 
