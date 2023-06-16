@@ -5,7 +5,8 @@ sidebar_label : Analyse custom tables
 
 #### What are custom tables(datasets)?
 
-On **Studio** you can create [Custom datasets](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs (ex- these tables have the data obtained from variables from the flows). You can modify these tables according to your preferences using a **Custom query**.
+On **Studio** you can create [Custom datasets](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs. For example, you can create tables to store the data obtained from variables from the flows. 
+You can modify/visualise and perform actions on these tables according to your preferences using a **Custom query**.
 
 ## 1. Steps to add a custom query 
 
