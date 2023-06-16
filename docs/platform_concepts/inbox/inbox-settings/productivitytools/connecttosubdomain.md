@@ -138,7 +138,15 @@ To customize the site’s banner, logo, and favicon, follow the steps below:
 
 ![](https://i.imgur.com/yb1sp1b.jpg)
  
+:::note
 
+The minimum required image sizes for the given objects are as follows:
+- Banner background: 1400 pixels width by 400 pixels height.
+- Footer background: 1400 pixels width by 400 pixels height.
+- Logo: 30 pixels width by 30 pixels height.
+- Favicon: 16 pixels width by 16 pixels height.        
+These are the minimum sizes, you can use larger dimensions if you prefer.
+:::
 
 4. Click **Preview** to test the look and feel of the site and **Save** the changes.
 
