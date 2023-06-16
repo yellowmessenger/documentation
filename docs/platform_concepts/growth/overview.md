@@ -3,7 +3,7 @@ title: Yellow.ai's insights overview to monitor your chatbot
 sidebar_label: Chat bot insights
 ---
 
-In this article, you will learn about the key metrics you can track on the **Insights Overview** page which summarizes how your bot is functioning.
+In this article, you will learn about the key metrics you can track on the **Insights Overview** page which summarizes how your bot is functioning. 
 
 ## 1. Introduction to chatbot overview
 
