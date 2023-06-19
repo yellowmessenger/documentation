@@ -315,7 +315,7 @@ A business starts with 1,000 business-initiated conversations per phone number w
 <details><summary><b> How to upgrade my Whatsapp messaging Tier? </b></summary>
 <p>
 
-To upgrade your Whatsapp tier and messaging limit, pleaase visit [this link](https://developers.facebook.com/docs/whatsapp/api/rate-limits#quality-rating-and-messaging-limits).
+To upgrade your Whatsapp tier and messaging limit, click [here](https://developers.facebook.com/docs/whatsapp/api/rate-limits#quality-rating-and-messaging-limits).
 
 </p>
 </details>

@@ -25,11 +25,11 @@ How to add a WhatsApp number for testing purposes in the Live environment?
 1. In Channels, select <b>WhatsApp messenger</b> in the Live environment.
 2. Click on the more options icon and select **Edit**.
 
-   ![](https://i.imgur.com/gPwidHR.png)
+   ![](https://i.imgur.com/8uSndt0.png)
 
 3. **Enable development mode** using the toggle button.
 
-   ![](https://i.imgur.com/9RD6Jah.png)
+   ![](https://i.imgur.com/MkazXQE.png)
 
 4. Enter the number in **Developer whatsapp number**. 
 5. To add more WhatsApp business numbers, click **Add phone numbers**.
