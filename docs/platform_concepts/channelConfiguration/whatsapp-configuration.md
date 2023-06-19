@@ -190,11 +190,11 @@ Yellow.ai allows you to test your WhatsApp bot in Development mode before pushin
 1. In Channels, select <b>WhatsApp messenger</b> in the *Live* environment.
 2. Click on the **more options** icon and select **Edit**.
 
-   ![](https://i.imgur.com/gPwidHR.png)
+   ![](https://i.imgur.com/8uSndt0.png)
 
 3. **Enable development mode** using the toggle button.
 
-   <center><img src="https://i.imgur.com/aLV9n2I.png" width="60%"/></center>
+   <center><img src="https://i.imgur.com/MkazXQE.png" width="60%"/></center>
 
 4. Choose the **Development bot ID** that you want to use for testing purposes.
 5. Enter the number in **Developer whatsapp number**. 
