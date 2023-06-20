@@ -111,7 +111,7 @@ Sometimes you might notice that the exact number of records you imported through
 
 ## 2. Different ways of adding users
 
-The platform provides different ways in which you can add or update user records. You can add each user manually or leverage advanced features to quickly create your user base and maintain it in real time.
+In User360, the platform provides four different methods for adding or updating user records. You can choose to manually add each user individually or leverage advanced features that facilitate efficient creation and real-time management of your user base.
 
 1. [Add individual users using Add Single user in User 360](/docs/platform_concepts/engagement/cdp/user_data/add_users).
 2. [Import users directly from a CSV file](/docs/platform_concepts/engagement/cdp/user_data/import_users).

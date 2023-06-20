@@ -13,7 +13,7 @@ This video provides a comprehensive overview of the Inbox module. Discover how t
 </center>
 
 
-### Innbox Features
+### Inbox Features
 This video showcases the powerful features of the inbox. Explore the diverse functionalities available to streamline your customer support workflow.
 
 <center>
@@ -95,4 +95,33 @@ his video provides a step-by-step guide on configuring Canned Responses in the I
 <center>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vwP7WySiKZ0" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+</center>
+
+
+### Automate Agent Actions
+
+The video showcases how the platform's automation capabilities empower agents to streamline their tasks and increase productivity. It demonstrates how agents can automate repetitive actions and save their time and effort.
+
+
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TxWW1cAhN6U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+
+### Inbox SLA Settings
+
+The video provides a comprehensive walkthrough of how to configure and manage service level agreements (SLAs) within your inbox management system. It demonstrates step-by-step instructions on how to set response and resolution time targets, define escalation rules, and establish priority levels for incoming messages or tickets.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gZU14gdou5M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+
+### Knowledgebase Settings
+
+The video offers a detailed overview of how to configure and utilize the knowledgeable settings within your inbox management system. It provides a step-by-step guide on how to set up and manage knowledge bases, create and organize articles, and establish search and tagging functionalities.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LqSGBXTcPXM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>

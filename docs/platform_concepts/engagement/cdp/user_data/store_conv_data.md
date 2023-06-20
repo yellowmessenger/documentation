@@ -61,8 +61,9 @@ Alternatively, you can also use the Variable node (under Actions) to store a spe
 
 ## Store user properties from bot conversations
 
-In addition to the userId, you can also store other user properties in the user record. User properties are stored in the current record, which is mapped in User 360.
-You can use these properties to [create personalised conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations) with bot users based on their previous interactions and preferences.
+In addition to the userId, you can also store other user properties in real-time within the user record. User properties are stored in the current record, which is mapped in User 360. You can utilize these properties to [create personalized conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations) with bot users, taking into account their previous interactions and preferences.
+
+
 
 To store user details (such as name, email address, phone number, and any other relevant information) through the bot, use [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) in the bot Builder.
 

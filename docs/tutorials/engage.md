@@ -14,7 +14,7 @@ In this tutorial, we will walk you through various methods of adding customers t
 </center>
 
 
-:::note
+:::info
 For more details, see how to [Add users in User360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_user_overview).
 :::
 
