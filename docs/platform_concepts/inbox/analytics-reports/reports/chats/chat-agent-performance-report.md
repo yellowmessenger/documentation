@@ -11,7 +11,7 @@ Only an admin can download reports.
 
 |Sno|Field        |Description                  |Comments |
 |---|------------ |-----------------------------|---------|
-|1|Date|The seelcted date||
+|1|Date|The selected date||
 |2|Name|Name of the agent||
 |3|Email|Email of the agent||
 |4|Group|Name of the group to which the agent belongs|N/A if no group is specified for the agent|

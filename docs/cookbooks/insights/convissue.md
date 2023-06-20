@@ -18,7 +18,7 @@ This is a time-series view of the priority issues identified in your bot-user co
 
 | High-level metrics tracked on overview tab|
 | ---- |
-| **Messages with issues**: This represents the percentage of messages where the above issues have been identified out of the total messages exchanged between the user and bot. |
+| **Messages with issues**: This represents the percentage of messages where the below listed issues have been identified out of the total messages exchanged between the user and bot. |
 |**Users affected**: This is the percentage of total users that faced one or more of the issues while conversing with the bot. |
 
 ![](https://i.imgur.com/Xz4Gw0h.png)
