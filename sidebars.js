@@ -1132,6 +1132,7 @@ module.exports = {
             "platform_concepts/appConfiguration/clevertap",
             "platform_concepts/appConfiguration/freshdesk",
             "platform_concepts/appConfiguration/google-calendar",
+            "platform_concepts/appConfiguration/playstore",
             "platform_concepts/appConfiguration/google-sheets",
             "platform_concepts/appConfiguration/gpt3",
             "platform_concepts/appConfiguration/jira",
