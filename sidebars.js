@@ -1107,6 +1107,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/appConfiguration/freshservice",
+            "platform_concepts/appConfiguration/sap-io",
             "platform_concepts/appConfiguration/service-now",
           ],
         },
@@ -1132,6 +1133,7 @@ module.exports = {
             "platform_concepts/appConfiguration/clevertap",
             "platform_concepts/appConfiguration/freshdesk",
             "platform_concepts/appConfiguration/google-calendar",
+            "platform_concepts/appConfiguration/playstore",
             "platform_concepts/appConfiguration/google-sheets",
             "platform_concepts/appConfiguration/gpt3",
             "platform_concepts/appConfiguration/jira",
