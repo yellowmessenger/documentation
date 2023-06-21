@@ -51,6 +51,24 @@ The **Key Id** and **Key Secret** will appear on the following page. Downalod th
 
 5. Fill in the fields and click **Connect**.
 
+**Manage multiple accounts**
+
+Yellow.ai allows you to manage multiple profiles within its integration platform. It streamlines the process of switching between accounts, making it easier to manage and monitor multiple merchant accounts within the integration.
+
+To connect multiple accounts:
+
+1. Click **+Add account**.
+
+   > You can add a maximum of 5 merchant accounts.
+
+ 2. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability.
+
+ 3. Fill in the respective fields and click **Connect**.
+
+:::note
+1. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+2. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
  
 ### 1.3 Configure webhook URL in Razorpay Dashboard 
 
@@ -73,15 +91,13 @@ For example, if the domain is https://cloud.yellow.ai, you need to change it to 
 
 ![](https://i.imgur.com/aE5zgwH.png)
 
-
-
 3. In the **Webhook Setup** pop-up, enter the URL in which you'd like to receive the webhook payload when an event is triggered. We recommend using a **HTTPS URL**. Ensure you enable all the events shown in the screenshot below.
 
 ![](https://i.imgur.com/uDShz45.png)
 
 ![](https://i.imgur.com/Zfsj8ub.png)
 
-::: Tip
+:::Tip
 * You can set upto 10 URLs to receive Webhook notifications. Webhooks can only be delivered to public URLs. If you attempt to save a localhost endpoint as part of a webhook setup, you will encounter an error.
 :::
 
@@ -106,26 +122,28 @@ To modify the webhook further, you can select the webhook and click **Edit**. Yo
 
 ![](https://i.imgur.com/Bs6iIH8.png)
 
+:::info
+If you have added multiple accounts in your platform, enable events for each of those accounts.
+:::
 
 ## 2. Use-cases
 
 The following are the use-cases that are supported in this integration.
+
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 ### 2.1 Generate Payment Link
 
 1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 ![](https://i.imgur.com/iBzozGD.png)
 
-
-
 2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
 
 ![](https://i.imgur.com/wYYsSxX.png)
 
-
 3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
-
-
 
 | Field name | Sample value| Data type |Description |
 | -------- | -------- | -------- |----|

@@ -1106,6 +1106,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/appConfiguration/freshservice",
+            "platform_concepts/appConfiguration/sap-io",
             "platform_concepts/appConfiguration/service-now",
           ],
         },
