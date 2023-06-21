@@ -47,27 +47,14 @@ The **Key Id** and **Key Secret** will appear on the following page. Downalod th
 
 ![](https://i.imgur.com/TMzGetO.png)
 
-
-
 5. Fill in the fields and click **Connect**.
-
-**Manage multiple accounts**
-
-Yellow.ai allows you to manage multiple profiles within its integration platform. It streamlines the process of switching between accounts, making it easier to manage and monitor multiple merchant accounts within the integration.
-
-To connect multiple accounts:
-
-1. Click **+Add account**.
-
-   > You can add a maximum of 5 merchant accounts.
-
- 2. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability.
-
- 3. Fill in the respective fields and click **Connect**.
+6. If you have multiple accounts, follow the above mentioned steps to add each of them.
 
 :::note
-1. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-2. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
 :::
  
 ### 1.3 Configure webhook URL in Razorpay Dashboard 
@@ -445,7 +432,7 @@ notes|{}|object|Key-value store for storing your reference data. A maximum of 15
 ```
 To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
 
-```
+```js
 app.executeIntegrationAction({
    "integrationName": "razorpay",
    "action": "Generate Payment Link",
