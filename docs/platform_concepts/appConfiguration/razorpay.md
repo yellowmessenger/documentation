@@ -18,7 +18,7 @@ Connect your Yellow.ai platform with your Razorpay account by following the belo
 
 1. Log into your **Razorpay** account and select the mode (Test/Live) for which you want to generate the API key.
 
-![](https://i.imgur.com/74zbT2o.png)
+ ![](https://i.imgur.com/74zbT2o.png)
 
 
 * **Test Mode:** The test mode is a simulation mode in which you can test your integration flow. Your customers cannot make payments in this mode. Check out this [video](https://www.youtube.com/watch?v=Xwiv6zSVVCM) to know more.
@@ -28,11 +28,11 @@ Connect your Yellow.ai platform with your Razorpay account by following the belo
 
  Navigate to **Settings** > **API Keys** > **Generate Key** to generate key for the selected mode. 
 
-![](https://i.imgur.com/vFHopPF.png)
+ ![](https://i.imgur.com/vFHopPF.png)
 
 The **Key Id** and **Key Secret** will appear on the following page. Downalod them to use in your Yellow.ai platform.
 
-![](https://i.imgur.com/7RPBlMe.png)
+ ![](https://i.imgur.com/7RPBlMe.png)
 
 
 ### 1.2 Enable the Integration in Yellow.ai's Integrations Module.
@@ -40,12 +40,12 @@ The **Key Id** and **Key Secret** will appear on the following page. Downalod th
 
 1. Login to [cloud.yellow.ai](https://cloud.yellow.ai/auth/login), go to the **Overview Switcher** and click **Integrations**.
 
-![](https://i.imgur.com/x4dJgOZ.png)
+ ![](https://i.imgur.com/x4dJgOZ.png)
 
 
 3. Look for **Razorpay** in the search box or click the **Payment** category on the left navigation bar and then click **Razorpay**.
 
-![](https://i.imgur.com/TMzGetO.png)
+ ![](https://i.imgur.com/TMzGetO.png)
 
 5. Fill in the fields and click **Connect**.
 6. If you have multiple accounts, follow the above mentioned steps to add each of them.
@@ -76,16 +76,15 @@ For example, if the domain is https://cloud.yellow.ai, you need to change it to 
 1. Log into the [Razorpay Dashboard](https://dashboard.razorpay.com/#/access/signin) and navigate to **Settings** → **Webhooks**.
 2. Click **+ Add New Webhook** on the right corner.
 
-![](https://i.imgur.com/aE5zgwH.png)
+ ![](https://i.imgur.com/aE5zgwH.png)
 
 3. In the **Webhook Setup** pop-up, enter the URL in which you'd like to receive the webhook payload when an event is triggered. We recommend using a **HTTPS URL**. Ensure you enable all the events shown in the screenshot below.
 
-![](https://i.imgur.com/uDShz45.png)
+ <img src="https://i.imgur.com/uDShz45.png" alt="drawing" width="80%"/>
+ <img src="https://i.imgur.com/Zfsj8ub.png" alt="drawing" width="80%"/>
 
-![](https://i.imgur.com/Zfsj8ub.png)
-
-:::Tip
-* You can set upto 10 URLs to receive Webhook notifications. Webhooks can only be delivered to public URLs. If you attempt to save a localhost endpoint as part of a webhook setup, you will encounter an error.
+:::note
+You can set upto 10 URLs to receive Webhook notifications. Webhooks can only be delivered to public URLs. If you attempt to save a localhost endpoint as part of a webhook setup, you will encounter an error.
 :::
 
 4. Enter a **Secret** for the webhook endpoint. This secret will be used to validate whether the webhook is from **RazorPay**. Do not expose this secret publicly. Click [here](https://razorpay.com/docs/webhooks/validate-test/) to know more validating webhooks. 
@@ -103,11 +102,11 @@ To modify the webhook further, you can select the webhook and click **Edit**. Yo
 2. Click **Event** from the left navigation bar and then choose **Integrations**.
 3. Activate the event **Razorpay Payment Status** by clicking the three dots next to it.
 
-![](https://i.imgur.com/fK1Eoii.png)
+ ![](https://i.imgur.com/fK1Eoii.png)
 
 4. A journey with its trigger point as this event should be created in **Studio**. Based on the received event data, an appropriate message will be displayed to the end user.
 
-![](https://i.imgur.com/Bs6iIH8.png)
+ ![](https://i.imgur.com/Bs6iIH8.png)
 
 :::info
 If you have added multiple accounts in your platform, enable events for each of those accounts.
@@ -124,11 +123,12 @@ When multiple accounts are added, select the appropriate account for each node, 
 ### 2.1 Generate Payment Link
 
 1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
-![](https://i.imgur.com/iBzozGD.png)
+
+ <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
 2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
 
-![](https://i.imgur.com/wYYsSxX.png)
+ <img src="https://i.imgur.com/wYYsSxX.png" alt="drawing" width="80%"/>
 
 3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
 
@@ -150,7 +150,7 @@ CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a re
 4. The **Generate Payment Link Integration Action** Node has two outcomes, success or failure. Based on the success/failure of the execution of the **Integration Action Node**, the flow will proceed to **success** or **fallback** branches respectively.
 
 **Sample response in case of success:**
-```
+```js
 {
   "accept_partial": false,
   "amount": 1000,
@@ -188,7 +188,7 @@ CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a re
 }
 ```
 **Sample response in case of fallback:**
-```
+```js
 {
   "error": {
     "code": "BAD_REQUEST_ERROR",
@@ -202,7 +202,7 @@ CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a re
 ```
 To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
 
-```
+```js
 app.executeIntegrationAction({
    "integrationName": "razorpay",
    "action": "Generate Payment Link - Partial Payments”,
@@ -236,7 +236,7 @@ app.executeIntegrationAction({
 ```
 :::note
 ### Payment status event payload
-```
+```js
 {
           "id": "rfnd_FS8TWyPrCsa0OB",
           "entity": "payment",
@@ -262,14 +262,12 @@ app.executeIntegrationAction({
 ### 2.2 Generate Payment Link for Partial Payments
 
 1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
-![](https://i.imgur.com/ysUIxfa.png)
 
-
+ <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
 2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
 
-![](https://i.imgur.com/tMcsRTb.png)
-
+ <img src="https://i.imgur.com/tMcsRTb.png" alt="drawing" width="80%"/>
 
 3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
 
@@ -291,7 +289,7 @@ CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a re
 
 **Sample response in case of success:**
 
-```
+```js
 
 {
   "accept_partial": false,
@@ -331,7 +329,7 @@ CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a re
 ```
 
 **Sample response in case of fallback:**
-```
+```js
 {
   "error": {
     "code": "BAD_REQUEST_ERROR",
@@ -345,7 +343,7 @@ CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a re
 ```
 To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
 
-```
+```js
 app.executeIntegrationAction({
    "integrationName": "razorpay",
    "action": "Generate Payment Link",
@@ -383,18 +381,13 @@ app.executeIntegrationAction({
 
 1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 
-![](https://i.imgur.com/NTGBdtv.png)
-
-
+ <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
 2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
 
-![](https://i.imgur.com/WxXY6fZ.png)
-
-
+ <img src="https://i.imgur.com/WxXY6fZ.png" alt="drawing" width="80%"/>
 
 3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
-
 
 | Field Name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---|
@@ -407,7 +400,7 @@ notes|{}|object|Key-value store for storing your reference data. A maximum of 15
 
 **Success Response:**
 
-```
+```js
 
 {
   "id": "rfnd_FgRAHdNOM4ZVbO",
