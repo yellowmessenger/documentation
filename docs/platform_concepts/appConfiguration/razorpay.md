@@ -47,7 +47,7 @@ The **Key Id** and **Key Secret** will appear on the following page. Downalod th
 
  ![](https://i.imgur.com/TMzGetO.png)
 
-5. Fill in the fields and click **Connect**.
+5. Click **+ Add account** and fill in the fields. Click **Connect** when you're done.
 6. If you have multiple accounts, follow the above mentioned steps to add each of them.
 
 :::note
