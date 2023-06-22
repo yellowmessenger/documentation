@@ -3,7 +3,7 @@ sidebar_label: Explore Outbound campaigns & reports
 title: Explore Outbound campaigns & reports
 ---
 
-On the Outbound page in the Engage module, you can access and view all the campaigns created for your organization. This section provides a comprehensive overview of each campaign, including its name, status, scheduled dates, and performance metrics. It enables you to conveniently monitor and track the progress and effectiveness of your campaigns. Additionally, you have the option to view or download campaign reports for further analysis and insights. 
+You can access and view all the campaigns created for your organization on the Outbound page of the Engage module. This section provides a comprehensive overview of each campaign, including its name, status, scheduled dates, and performance metrics. It lets you monitor and track the progress and effectiveness of your campaigns. Additionally, you have the option to view or download campaign reports for further analysis and insights. 
 
 
 
@@ -11,7 +11,7 @@ On the Outbound page in the Engage module, you can access and view all the campa
 
 To access Outbound campaigns:
 
-* Navigate to your project and navigate to the **Engage** module > **Outbound**.
+* Go to your project and navigate to the **Engage** module > **Outbound**.
 
    ![](https://i.imgur.com/bgE3xeX.png)
 
@@ -26,7 +26,7 @@ The following table provides descriptions of each column of the table.
 Column | Description
 ------ | -----------
 Name | Name of the campaign.
-Status | Current status of the campaign. <ul><li><strong>Pending:</strong> The campaign has been scheduled and is pending preparation and sending at the scheduled time.</li><li><strong>Preparing:</strong> We start finalizing the users to whom the campaigns will be sent 30 minutes prior to the campaign execution time based on the created segmentation logic. This process may take more than 30 minutes in rare cases where the segment size is very large.</li><li><strong>Failed:</strong> The campaign failed to execute or complete due to an issue. Please retry the campaign or reach out to support for assistance.</li><li><strong>Paused:</strong> The campaign has been paused. There are multiple cases in which campaigns can be paused. Please refer to the tooltip for more information when hovering over the status.</li><li><strong>In Progress:</strong> The campaign has initiated and is currently in progress.</li><li><strong>Completed:</strong> The campaign has been successfully completed. You can download the report or refer to the metrics available in the table for more information on delivery updates.</li><li><strong>Draft:</strong> The campaign has been saved as a draft for editing.</li></ul>
+Status | Current status of the campaign. <ul><li><strong>Pending:</strong> The campaign has been scheduled and is awaiting preparation and sending at the scheduled time.</li><li><strong>Preparing:</strong> We initiate the process of finalizing the recipients for the campaigns 30 minutes before the scheduled execution time, using the segmentation logic that has been set up. In rare cases, when dealing with a considerably large segment size, this process may exceed the allocated 30 minutes.</li><li><strong>Failed:</strong> The campaign failed to execute or complete due to an issue. Please retry the campaign or reach out to support for assistance.</li><li><strong>Paused:</strong> The campaign has been paused. There are multiple cases in which campaigns can be paused. For additional information, please refer the tooltip by hovering over the status.</li><li><strong>In Progress:</strong> The campaign has initiated and is currently in progress.</li><li><strong>Completed:</strong> The campaign has been successfully completed. You can download the report or refer to the metrics available in the table for more information on delivery updates.</li><li><strong>Draft:</strong> The campaign has been saved as a draft for editing.</li></ul>
 Channels | The communication channel used to send out the campaign, such as email, SMS, WhatsApp, or any other messaging channel. 
 Success | The success rate indicates the success status of messages from the previous campaign execution and provides the overall success rate for the entire campaign. It also includes a breakdown of the count of messages sent, delivered, read and failed.<center><img src="https://i.imgur.com/D1477ji.png" width="40%"/></center>
 Last executed | The most recent execution (date and time) of a recurring campaign. It provides information on the success status of messages from the previous execution and also displays the overall success for the entire campain.
@@ -53,7 +53,7 @@ To filter campaigns:
 3. Configure your preferred filter condition. You can set one or more filters.
 
    * **Name**: Enter the name of the campaign you want to fetch. This will filter the campaigns based on the specified name.
-   * **Status**: Select the desired status to filter campaigns. You can choose from options such as Pending, Scheduled, Running, Completed, Failed, or Paused. This will display campaigns that match the selected status.
+   * **Status**: Select the desired status to filter campaigns. You can choose from options such as *Pending*, *Scheduled*, *Running*, *Completed*, *Failed*, or *Paused*. This will display campaigns that match the selected status.
    * **Date range**: Choose the duration for which you want to filter campaigns. You can specify a specific date range to narrow down the campaigns based on their execution or creation dates.
 
 4. Click **Apply filter**.
@@ -68,7 +68,7 @@ You can [view report directly on the UI](#view-report) or [download detailed rep
 
 ***
 
-## Pause or Resume campaign
+## Pause or resume campaign
 
 You can temporarily halt or restart a campaign from execution. When you pause a campaign, it stops sending messages and remains in a paused state until you decide to resume it. This can be useful when you need to make adjustments, review performance, or address any issues. Once you're ready, you can easily resume the campaign to continue sending messages to your intended recipients. Pausing and resuming campaigns gives you control and flexibility in managing your messaging activities.
 
@@ -76,7 +76,7 @@ You can temporarily halt or restart a campaign from execution. When you pause a 
 
    <img src="https://i.imgur.com/0tAW75J.png"/>
 
-* To resume a campaign has been paused, navigate to the desired campaign and click on the **Resume** icon.
+* To resume a campaign that has been paused, navigate to the desired campaign and click on the **Resume** icon.
 
    <img src="https://i.imgur.com/OLLHake.png"/>
 
@@ -120,7 +120,7 @@ The following table provides descriptions of each delivery status.
 Delivery status | Description
 --------------- | -----------
 Triggered | Message has been sent to the downstream service and is yet to send from there.
-Scheduled | Message has been queued to be sent (single tick on Whatsapp)
+Scheduled | Message has been queued to be sent. For example, single tick on Whatsapp.
 Sent | Message has been sent. For example, single tick on WhatsApp.
 Delivered | Message has been delivered. For example, double tick on WhatsApp. 
 Read | Message has been read. On Whatsapp this is trackable only when end-user has blue ticks - read receipt turned on. This status includes both messages that have been read and messages that have been replied to by the recipient.
@@ -147,7 +147,7 @@ Mobile push | Scheduled, Sent, Delivered, Read, and Failed.
 
 ### Download and analyse campaign report
 
-The campaign report provides comprehensive insights and data regarding the performance and results of your campaigns. By downloading the campaign report, you can access detailed information about campaign metrics, audience engagement, conversion rates, and more. This report serves as a valuable resource for analyzing the effectiveness of your campaigns and making data-driven decisions to optimize future marketing strategies.
+The campaign report provides complete insights and data regarding the performance and results of your campaigns. By downloading the campaign report, you can access detailed information about campaign metrics, audience engagement, conversion rates, and more. This report serves as a valuable resource for analyzing the effectiveness of your campaigns and making data-driven decisions to optimize future marketing strategies.
 
 To download the campaign report:
 
@@ -172,7 +172,7 @@ For detailed information on how to understand campaign report, see the following
 
 | Column           | Description                                                                                              |
 |------------------|----------------------------------------------------------------------------------------------------------|
-| Campaign ID      | The unique ID for the campaign generated at Yellow.ai.                                                   |
+| Campaign ID      | The unique ID generated for the campaign.                                                   |
 | Campaign Name    | The name provided for the campaign when creating.                                                        |
 | Channel          | The targeted channel for the campaign such as Email, Whatsapp, SMS, and so on.                          |
 | BotId            | Bot ID associated with the campaign.                                                                     |
@@ -189,4 +189,3 @@ For detailed information on how to understand campaign report, see the following
 | Read time        | The time when the recipient read the message (Applicable only for Whatsapp channel).                     |
 | Error            | Error code in case of FAILED messages.                                                                   |
 | UserDetails      | User details fetched from the user profile used in the notification message. Examples: UserDetails.phone, UserDetails.firstName. |
-
