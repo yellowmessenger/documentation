@@ -111,11 +111,13 @@ This widget shows the funnel of users who are coming to the bot. The blue lines 
 
 ### WhatsApp comsumption
 
-In the WhatsApp comsumption widget, you can select a WhatsApp phone number from the dropdown to see the consumption for that specific number. If no number is selected, the data will be displayed for all the numbers combined.
+In the WhatsApp comsumption widget, you can select a WhatsApp phone number from the dropdown to see the consumption for that specific number.    
+If no number is selected, the data will be compiled and displayed for all the numbers collectively.
+
 
 <img src="https://hackmd.io/_uploads/H1J0UVwwn.png" alt="drawing" width="50%"/> 
 
-The three tracked categories for WhatsApp phone numbers are:
+The three categories tracked for WhatsApp phone numbers are:
 
 | Category                         | Sub category    | Description |
 | -------------------------------- | --- | ----------- |
