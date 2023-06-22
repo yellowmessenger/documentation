@@ -3,12 +3,12 @@ title: Auto assignment of live chats and email tickets to agents
 sidebar_label : Auto assignment of chats & emails
 ---
 
-**Auto assignment for live chats vs email tickets**
+**Auto assignment of live chats vs email tickets**
 
 | Live chats | Email tickets |
 | -------- | -------- |
 | Auto assignment logic is enabled by default. | Auto assignment logic is enabled by default. |
-|Auto assignment cannot be disabled.   | Auto-assignment of **email tickets** can be restricted (enabled/disabled) as per industry needs, follow these [steps](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic). <br/><br/> When Auto-assignment setting is disabled, all the tickets created will be in **Open** status and must be manually assigned to the agents. |
+|Auto assignment cannot be disabled. <br/><br/>  Chats can be assigned to a specific agents by using sticky agent functionality, follow [these](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/stickyagent) steps.  | Auto-assignment of **email tickets** can be restricted (enabled/disabled) as per industry needs, follow these [steps](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic). <br/><br/> When Auto-assignment setting is disabled, all the tickets created will be in **Open** status and must be manually assigned to the agents. |
 
 -------
 
