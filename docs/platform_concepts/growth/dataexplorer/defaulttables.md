@@ -19,9 +19,10 @@ Following are the default datasets and their functions:
 | **Bot Events** | Provides technical insights around chat widget loads, various function execution, where widget loads are happening, what is the platform and channel, etc. |
 | **Chat tickets** |  Delivers data for chat tickets about how agents are performing, how many users are interacting with the agents, response time, Agent details, User details, CSAT, AHT, etc. |
 | **Email tickets** |  Analyse operational metrics and agent performance for email tickets, and create your custom analytics dashboards. |
+| **Inbox call records** | Analyse details regarding the calls between inbox agents and end users. |
 |**Inbox events**| Analyse agent performance by deep diving into first response time, average handling time, resolved and missed tickets, etc.|
 | **Knowledgebase articles** | Analyse views, likes, dislikes and other details of the articles published on the inbox knowledgebase section. | 
-| **Messages** | Data about the user traffic metrics here, messages exchanged, sessions created, user demographics, devices they are using, etc on a channel level. |
+| **Message events** | Data about the user traffic metrics here, messages exchanged, sessions created, user demographics, devices they are using, etc on a channel level. |
 | **Notification Reports** | Deep dive into how the campaigns are performing, which channel is doing well, how are different templates performing, how many notifications are failing, etc. |
 | **User Engagement Events** | Check how your users are engaging with the bot, flows they are taking, agent transfers, flow switches, unidentified utterances, etc. |
 | **User Feedback** | Provides info about the user experience from the feedback they give on the bot. Slice and dice it based on the use cases they visit the bot for. See how individual use cases are performing. |

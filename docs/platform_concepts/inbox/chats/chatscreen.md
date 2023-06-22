@@ -16,6 +16,21 @@ Simply type in any text and hit send button (or enable enter to send if you want
 
 <img src="https://i.imgur.com/oGJnkHz.png" alt="drawing" width="70%"/>    
 
+#### Auto-save draft message 
+
+> This feature is available only for professional and enterprise customers. 
+
+The draft message saving option allows the agents to save their composed messages (or private notes) automatically, ensuring that their work is preserved when switching between chats or windows, or even when accidentally closing the tab.
+The chat interface will display an indication to show that a draft has been created and these drafts will be visible only to the agent who authored it.
+
+:::note
+**Limitations**:
+- **Session-based retention**: Drafts are retained only until the user session concludes. Upon session end, drafts may be cleared to maintain privacy and optimize system resources.
+- **Storage capacity**: Drafts are limited to a maximum storage capacity of 5 MB, preventing excessive storage usage and ensuring system performance.
+- **Browser compatibility**: The draft functionality does not support all web browsers. Users should be aware that the feature may not be available or may behave differently depending on their browser of choice.
+- **Incognito mode**: Drafts are not compatible with incognito mode. Agents should refrain from using incognito browsing when relying on the draft feature to ensure a seamless experience.
+:::
+
 ----
 
 ### Canned response
