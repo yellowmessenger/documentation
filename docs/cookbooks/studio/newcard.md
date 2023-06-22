@@ -498,3 +498,46 @@ return new Promise(resolve => {
 ]
 ```
 
+### 2.10 Single select transaction card
+
+**Display in chat**
+
+ <img src="https://i.imgur.com/xdNmlNi.png" alt="drawing" width="60%"/>
+
+**Code in Function**
+
+```js
+[
+            {
+                id: ‘1b23-0zdc’,
+                title: “Pertam Kedua Ketiga”,
+                type: “Debit”,
+                image: “https://cdn.yellowmessenger.com/boXfK6e5d6LK1675079020492.png”,
+                status: “Success”,
+                amount: 10000,
+                accountName: “DCA”,
+                currency: “IDR”,
+                time: “2022-09-12T00:00:00.000Z”,
+                accountNumber: `${cardId}`,
+                additionalInfo: [
+                    “Transfer to bank”,
+                    “Destination : BCA”
+                ]
+            },
+            {
+                id: “23bc-123x”,
+                title: “Pertam Kedua Ketiga”,
+                type: “Debit”,
+                status: “Success”,
+                amount: 10000,
+                accountName: “DCA”,
+                currency: “IDR”,
+                time: “2022-09-12T00:00:00.000Z”,
+                accountNumber: “xxxx-5678”,
+                additionalInfo: [
+                    “Transfer to bank”,
+                    “Destination : BCA”
+                ]
+            }
+	]
+```

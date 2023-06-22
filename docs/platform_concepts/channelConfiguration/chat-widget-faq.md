@@ -281,12 +281,63 @@ Note that, this will replace the previously loaded bot. On Mobile SDK, if you wa
   </div>
 </details>
 
+<details>
+<summary>When you receive new messages from a bot or agent, how do you enable scroll behaviour for the chat widget?</summary>
+<div>
+ <br/>
+ <div>Follow the below steps to enable the scroll behaviour. <br/> Navigate <b>Channels > Chat widget > Settings ></b> expand <b>General settings > Scroll behaviour</b>.<img src="https://i.imgur.com/snvUcCX.png)"/><br/>Under Scroll behavior, choose your preferred option:<br/>• <b>Bottom</b>: Select this option to scroll the widget automatically to the bottom of the new message.<br/>• <b>Top</b>: Select this option to scroll the widget automatically to the top of the new message.<br/>• <b>Off</b>: Select this option to disable scrolling, the widget will remain at the same message when a new message is received.<br/> <img src="https://i.imgur.com/zJaqyB6.png" width="50%"/></div>
+  </div>
+</details>
+
+<details>
+<summary>Is it possible to drag the chatbot icon and place it anywhere on the website?</summary>
+<div>
+ <br/>
+ <div>Yes, you need to add <b>floatingIcon: true</b> in the following chat bot script to drag the chatbot icon.</div>
+
+
+```
+<script type="text/javascript">
+      window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "floatingIcon":true};
+    (function() {
+        var w = window,
+            ic = w.YellowMessenger;
+        if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+        else {
+            var d = document,
+                i = function() {
+                    i.c(arguments)
+                };
+            function l() {
+                var e = d.createElement("script");
+                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+                var t = d.getElementsByTagName("script")[0];
+                t.parentNode.insertBefore(e, t)
+            }
+            i.q = [], i.c = function(e) {
+                i.q.push(e)
+            }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
+    })();
+</script>
+```
+ <br/>
+  </div>
+</details>
+
+<details>
+<summary>Is it possible to minimise the callout banner?</summary>
+<div>
+ <br/>
+ <div>Yes, you can minimize it using the icon highlighted in the following:<br/><img src="https://i.imgur.com/YQB6TUg.png" alt="drawing" width="40%"/></div>
+  </div>
+</details>
+
 -----------
 
 ## PWA related FAQs
 
 <details>
-<summary>Is it possible to change the short cut iocn for PWA bot?</summary>
+<summary>Is it possible to change the short cut icon for PWA bot?</summary>
 <div>
  <br/>
  <div>Yes, you can change the PWA bot's shortcut icon via bot mapping. Note that the icons are supported with the following resolutions: <br/> * Mobile: 192*192 <br/> * Desktop: 512*512.</div>
@@ -312,6 +363,29 @@ Note that, this will replace the previously loaded bot. On Mobile SDK, if you wa
 
 
 </div>
+  </div>
+</details>
+
+<details>
+<summary>Is it possible to integrate the Yellow AI chatbot with a NextJS website?</summary>
+<div>
+ <br/>
+ <div>Yes, you can add the script to any NextJS page, to do so:<br/> * Create a file called static/yellowai.js and paste our script. Note: You need to remove the tags. <br/> * You can now load this file on page (page name). (jsx|tsx) file</div>
+
+
+```
+import Head from 'next/head';
+import MyComponent from '../components/mycomponent';
+export default () => (
+ <div>
+   <Head>
+     <script type="text/javascript" src="/static/yellowai.js"></script>
+   </Head>
+   <MyComponent />
+ </div>
+)
+```
+ <br/>
   </div>
 </details>
 
