@@ -1,6 +1,7 @@
 ---
-title: Reinitate an expired WhatsApp chat
-sidebar_label : WhatsApp chat reinitation 
+title: Steps to reinitiating expired WhatsApp chats on Inbox
+sidebar_label : WhatsApp chat reinitiation
+Keywords: [WhatsApp policies in Inbox , reinitiate whatsapp chat, send template to whatsapp chat, send message to an expired chat] 
 ---
 
 In this article, you will learn: 
