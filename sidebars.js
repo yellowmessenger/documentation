@@ -212,7 +212,8 @@ module.exports = {
               type: "category",
               label: "Flows",
               collapsed: true,
-              items: [          
+              items: [ 
+            "platform_concepts/studio/build/Flows/ai-copilot",         
             "platform_concepts/studio/build/Flows/journeys",
             "platform_concepts/studio/build/Flows/configureflow",
             "platform_concepts/studio/build/Flows/exportflow",
