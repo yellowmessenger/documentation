@@ -1,6 +1,6 @@
 ---
-title: Setup WhatsApp business account
-sidebar_label: Setup WhatsApp 
+title: Add WhatsApp business account
+sidebar_label: Add WhatsApp account
 ---
 
 This guide will walk you through the process of creating a WhatsApp Business account and setting up your own chatbot for WhatsApp.
@@ -18,6 +18,8 @@ To set up a WhatsApp channel, you need to have an active WhatsApp business accou
 * Verify your WhatsApp business account with Facebook
 
 ## 1. Connect your WhatsApp business account
+
+Yellow.ai allows you to add multiple WhatsApp numbers for your business account based on you requirements. This helps businesses that operate with multiple WhatsApp numbers or want to provide support through different contact points. With this capability, you can streamline your communication and efficiently handle conversations from various WhatsApp accounts.
 
 Follow the these steps to connect your chatbot to WhatsApp business account (WABA):
 
@@ -116,16 +118,19 @@ Make sure that the phone number you provide is not currently connected to any Wh
     <img src="https://i.imgur.com/ezgp1Qy.png" alt="drawing" width="90%"/>
 
 
-18. To add multiple numbers by clicking on **+ Add Number** at the top right corner.
+### 1.1 Add multiple WhatsApp numbers
+
+To add more WhatsApp business accounts, follow these steps:
+
+1.  Click on **+ Add Number** at the top right corner. Follow the steps from step 4 to step 17 in the [Connect your WhatsApp business account](#1-connect-your-whatsapp-business-account) section.
 
     <img src="https://i.imgur.com/0wkbQHP.png" alt="drawing" width="90%"/>
 
-
-19. To see the business details click on view more. You can also edit the provided details based on your requirements.
+2. To see the business details click on view more. You can also edit the provided details based on your requirements.
 
     <img src="https://i.imgur.com/LfIwYrC.png" alt="drawing" width="90%"/>
 
-### 1.1 Create Facebook Business Manager (FBM) account
+### 1.2 Create Facebook Business Manager (FBM) account
 
 If you have already created the account, login to FBM. If not, follow the steps to create an FBM account.
 
@@ -137,7 +142,7 @@ If you have already created the account, login to FBM. If not, follow the steps 
 
 4. Now, you have created the FBM.
 
-### 1.2 Verify Business account with Facebook
+### 1.3 Verify Business account with Facebook
 
 1. In the FBM (Facebook Business Manager), go to **More Tools > Business Settings > Select your Business**.
 
