@@ -463,7 +463,7 @@ module.exports = {
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",
             "platform_concepts/inbox/chats/videocall",
-            "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
+            "platform_concepts/inbox/chats/reinitiatewachats",
                  ],
          },
 
@@ -995,6 +995,8 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-product-catalog",
             "platform_concepts/channelConfiguration/wa-migration",
             "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
+            "platform_concepts/channelConfiguration/WA-bot-bestpractices",
+            "platform_concepts/channelConfiguration/WA-pricing",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},

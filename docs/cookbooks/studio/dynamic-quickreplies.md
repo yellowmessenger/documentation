@@ -14,7 +14,7 @@ A **Fetch from** field is available in the quick replies node to add the code to
 
 ### Sample snippet to generate dynamic quick replies
 
-```
+```js
 return new Promise(resolve => {
       // Your logic goes here
       let title = data.variables.carsData2;
@@ -29,7 +29,6 @@ return new Promise(resolve => {
     console.log(qrObject,"qrObject");
     resolve(qrObject);
   });                                               
-
 ```
 
 
@@ -37,7 +36,7 @@ return new Promise(resolve => {
 
 To parse API responses and convert them into an array format, refer the following snippet. 
 
-```
+```js
 return new Promise(resolve => {
     let apiResponse = ymLib.args.apiResponse; // fetch API response
     let body;
@@ -58,3 +57,32 @@ return new Promise(resolve => {
 });    
 ```
 
+## Create dynamic WhatsApp list 
+
+To create dynamic WhatsApp list, you need follow the same procedure as dynamic quick replies.
+
+  ![](https://i.imgur.com/hjPSbi8.png)
+
+Use the snippet below to generate a dynamic Whatsapp list:
+
+```js
+return new Promise(resolve => {
+      // Your logic goes here
+      let title = data.variables.carsData2;
+      let options = [];
+      for (let i = 0; i < title.length; i++) {
+        options.push({title : title[i].Mfr_CommonName, text:title[i].Mfr_Name});
+      }
+      let qrObject = {
+        title: 'Please select the relevant option from below',
+        optionText: 'Options',
+        options: [
+          {
+            options: options
+          }
+        ]
+      }
+    console.log(qrObject,"qrObject");
+    resolve(qrObject);
+  });                                               
+```

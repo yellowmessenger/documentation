@@ -16,8 +16,10 @@ To access all the resources, including bot building courses, virtual classroom s
 
 Join Yellow.ai to unlock the power of building and customizing your own bot. With an easy sign-up process, you'll be able to dive right in and start creating your bot from scratch. Get started today and experience the excitement of bringing your ideas to life with Yellow.ai's user-friendly bot creation platform.
 
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2fdv1Ip3DKI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
-<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen="True"></iframe></p>
 
 
 
@@ -26,9 +28,9 @@ Join Yellow.ai to unlock the power of building and customizing your own bot. Wit
 Welcome to our platform overview video! In this brief introduction, we will take you on a tour of our powerful platform, showcasing its key features and functionalities. Discover how our platform empowers you to create, customize, and deploy intelligent bots with ease. From seamless integrations to advanced analytics, we have everything you need to streamline your conversational AI initiatives. Let's dive in and explore the possibilities that await you on our platform.
 
 
-
-<p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/QYRdym4wZf8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
-
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0edNpCqcS80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
 
 

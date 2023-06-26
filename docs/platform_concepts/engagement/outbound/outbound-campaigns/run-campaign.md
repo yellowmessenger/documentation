@@ -328,7 +328,7 @@ In **Select event**, choose the event that you want to track.
 
 #### 3. Response goal
 
-This goal helps you track the reactions or clicks received for the campaign. 
+This goal helps you track the reactions or clicks received for the campaign. However, CTA events are not captured from WhatsApp and button clicks are not included in the tracked events.
 
 ![](https://i.imgur.com/ozLtuBo.png)
 

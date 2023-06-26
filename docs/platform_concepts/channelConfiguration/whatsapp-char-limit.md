@@ -34,3 +34,4 @@ footer | no | Faded text below the body | 60
 :::note
 Date picker, Multi-select, Location, Feedback, and Speak nodes are not supported for WhatsApp channels.  
 :::
+

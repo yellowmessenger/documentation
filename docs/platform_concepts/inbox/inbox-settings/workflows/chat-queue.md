@@ -92,3 +92,7 @@ A user whose chat is QUEUED will be considered inactive/dropped off and moved to
     > Recommended to have lesser than or equal to 20 chats in the queue at once to provide better support.
 
 7. Click the **Save** at the end of the page and save all the changes.
+
+:::info
+To identify if the chat is queued, ```ticket-queued``` event can be used(Activated). Learn more about custom events [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events).
+:::

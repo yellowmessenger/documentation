@@ -109,19 +109,36 @@ This widget shows the funnel of users who are coming to the bot. The blue lines 
 
 ----
 
-### Whatsapp consumption
+### WhatsApp comsumption
 
-> This is calculated for WhatsApp channel.
+In the WhatsApp comsumption widget, you can select a WhatsApp phone number from the dropdown to see the consumption for that specific number.    
+If no number is selected, the data will be compiled and displayed for all the numbers collectively.
 
-Following three categories are tracked for the selected WhatsApp phone numbers: 
-1. Business initiated conversations 
-2. User initiated conversations 
-3. Referral conversations 
 
-You can select the WhatsApp numbers from the bottom of the widget. 
+<img src="https://hackmd.io/_uploads/H1J0UVwwn.png" alt="drawing" width="50%"/> 
 
-<img src="https://i.imgur.com/4BFEBKI.png" alt="drawing" width="50%"/> 
+The three categories tracked for WhatsApp phone numbers are:
 
+| Category                         | Sub category    | Description |
+| -------------------------------- | --- | ----------- |
+| **Business-initiated conversations** |     |  Conversations initiated by the bot or business to provide information, send notifications, or engage with users based on predefined triggers or events.        |
+||Authentication | Indicates the business initiated the conversation with a message template categorized as AUTHENTICATION. |
+||Marketing | Indicates the business initiated the conversation with a message template categorized as MARKETING.|
+||Utility | Indicates the business initiated the conversation with a message template categorized as UTILITY.|
+| **User-initiated conversations**     |     |   Conversations initiated by users who send messages or queries to the bot, seeking information or assistance.          |
+||Service | Indicates the user initiated the conversation. |
+|| Referral conversion | Indicates the user initiated the conversation by clicking a **Click to WhatsApp ad** or a Facebook Page **Call-to-Action** button.|
+| **Referral Initiated**           |     |  Conversations that occur when users refer the bot to others, allowing the bot to initiate personalized conversations with those referred contacts.           |
+
+> The WhatsApp consumption is calculated specifically for the WhatsApp channel. 
+
+:::note
+Prior to June 1, 2023, only the main categories of Business-initiated, User-initiated, and Referral conversations were tracked without the subcategories. However, with the [WhatsApp update](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/launch-timeline#june-1--2023), the subcategories (Authentication, Marketing, Utility, Service, and Referral conversations) are now included in the widget.
+Here are a few points to note:
+1. If you select a time period before June 1, 2023, you won't see the updated subcategories in the widget.
+2. If your custom date range includes both dates before and after June 1, 2023, the updated categories will be applied to the entire range. The subcategories will be available only for the data generated after June 1, 2023.
+3. Due to these updates, there might be a mismatch in the data when comparing periods before and after June 1, 2023.
+:::
 
 --------
 

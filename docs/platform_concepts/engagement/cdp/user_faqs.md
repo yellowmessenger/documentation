@@ -31,8 +31,16 @@ Usecase: I currently store the details of users who click the "STOP" button to u
 1. **Store user responses directly to User360 table**: You can store the user responses in a user property which saves it directly in User360. This allows you to associate the unsubscribe information with each user profile. For more details, refer to the documentation on [Storing conversation data in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
 2. **Using events and user APIs**: You can use Events and user APIs to store user data to user 360. For more details, see  [Events and User APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
 
+</details>
+
+<details>
+<summary>
+Why is the phone number not saving in User 360? And how can I ensure it gets saved correctly?</summary>
 
 
+The phone number may not be saving in User 360 if it is not entered with the country code. It is important to include the country code when capturing phone numbers to ensure proper saving in the system. 
+
+Additionally, you can enable the **Prefix a calling code** option to automatically add the country code, helping to ensure accurate storage of phone numbers in User 360.
 
 </details>
 
