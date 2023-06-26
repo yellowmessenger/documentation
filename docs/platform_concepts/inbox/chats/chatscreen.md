@@ -51,6 +51,31 @@ Agents can type the shortcut **/** on the screen and the agent actions (automate
 > Learn more about [agent actions here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions).
 
 -----
+### @bot (Execute studio flow)
+
+To execute a pre-configured flow available in the **Studio** module during a livechat conversation with a customer, inbox agents can utilize the functionality of **@bot**.
+
+:::info
+
+**Prerequisites**
+
+- **Inbox admins** can configure [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) within the **Studio** module. These flows can be triggered by commonly used intents that agents may employ when conversing with customers. Learn how to trigger a flow using intents [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent).
+- **Inbox agents** should be familiar with the available flows/intents within the studio module that can facilitate their conversations.
+
+**Example**     
+- **Intent (Order details)**: Fetch customer's order, order details, I want information about the customer's order, Get customer order info
+- **Flow**: Customer order details
+:::
+
+To use this feature, simply type `@bot` on the reply screen, followed by the intent that will trigger the desired flow.
+
+#### **@bot vs Agent Actions**
+
+- When using **@bot**, agents can observe the ongoing conversation between the bot and the customer, displayed in real-time on the agent's chat screen. The functionality operates seamlessly, making it appear as if the agent is directly conversing with the customer, while in reality, it is the bot engaging in the conversation. Agents can view this conversation transparently and can also send responses once the flow is completed.
+- When using **Agent actions**, agents can select a flow (agent action) that will be triggered in the backend, fetching a single output that the agent can utilize.
+
+
+-----
 
 ### Upload image/files/emojis
 
