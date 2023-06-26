@@ -38,7 +38,7 @@ Let's say a utility conversation is initiated, a message is delivered at 10:00 A
 
 ### Two sessions using a different category
 
-Let’s say a marketing conversation is initiated and a message is delivered at 8:00. If the marketing conversation is still in the active state and a utility template is delivered at 6:00, this results in a separate utility conversation.
+Let’s say a marketing conversation is initiated and a message is delivered at 8:00 AM. If the marketing conversation is still in the active state and a utility template is delivered at 6:00 PM, this results in a separate utility conversation.
 
 In this scenario, businesses have to pay for two sessions  - a service conversation and utility conversation.
 
