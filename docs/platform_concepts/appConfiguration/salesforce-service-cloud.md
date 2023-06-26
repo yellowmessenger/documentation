@@ -8,7 +8,7 @@ Integrate your yellow.ai platform with your [Salesforce CRM](https://www.salesfo
 
 :::note
 
-An object is a Salesforce crm term which means a collection of related fields, which can be customized to suit the specific needs of an organization. These fields are essentially data points that hold specific pieces of information related to the entity represented by the object.
+An object is a Salesforce CRM term which means a collection of related fields, which can be customized to suit the specific needs of an organization. These fields are essentially data points that hold specific pieces of information related to the entity represented by the object.
 
 For example, in Salesforce CRM, an **Account** object is used to store information about your customers or clients. This object can include fields such as **Company Name**, **Phone Number**, **Billing Address**, and **Industry**. By using the **Account** object, you can easily track and manage information about your customers, such as their contact information, buying history, and preferences.
 :::
