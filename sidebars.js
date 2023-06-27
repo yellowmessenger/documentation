@@ -943,7 +943,7 @@ module.exports = {
 
     "platform_concepts/growth/dashboards",
     "platform_concepts/growth/health",
-    "platform_concepts/growth/goals",
+   // "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",
   ],
 },
