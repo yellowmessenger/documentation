@@ -7,7 +7,7 @@ const PopularSearches = ({ items }) => {
   return (
     <div className={styles.popularsearches_container}>
       <div className={styles.popularsearches_container__title}>
-        <IFrameModal />
+
       </div>
       <div className={styles.popularsearches_container__content_wrapper}>
         {items.map(({ title, url }) => (

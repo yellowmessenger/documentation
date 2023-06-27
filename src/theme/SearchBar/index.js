@@ -11,6 +11,8 @@ import { DocSearchButton, useDocSearchKeyboardEvents } from "@docsearch/react";
 import { useAlgoliaContextualFacetFilters } from "@docusaurus/theme-search-algolia/client";
 import Translate from "@docusaurus/Translate";
 import translations from "@theme/SearchTranslations";
+import IFrameModal from "../../components/PopularSearches/IFrameModal";
+
 let DocSearchModal = null;
 function Hit({ hit, children }) {
   return <Link to={hit.url}>{children}</Link>;
@@ -196,12 +198,18 @@ function DocSearch({ contextualSearch, externalUrlRegex, ...props }) {
   );
 }
 
-export default function SearchBar({ displayAsInputBox = false }) {
+export default function SearchBar({
+  displayAsInputBox = false,
+  showBot = true,
+}) {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <DocSearch
-      {...siteConfig.themeConfig.algolia}
-      displayAsInputBox={displayAsInputBox}
-    />
+    <div style={{ display: "flex" }}>
+      {showBot && <IFrameModal />}
+      <DocSearch
+        {...siteConfig.themeConfig.algolia}
+        displayAsInputBox={displayAsInputBox}
+      />
+    </div>
   );
 }

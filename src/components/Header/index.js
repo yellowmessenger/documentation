@@ -6,8 +6,8 @@ import { popularSearchItems } from "../../constants";
 const Header = () => {
   return (
     <header className={`${styles.hero}  ${styles.heroBanner}`}>
-      <div className="container">
-        <SearchBar displayAsInputBox />
+      <div className={`container ${styles.headerCont}`}>
+        <SearchBar displayAsInputBox showBot={false} />
         <PopularSearches items={popularSearchItems} />
       </div>
     </header>

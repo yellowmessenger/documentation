@@ -26,7 +26,7 @@ const IFrameModal = () => {
 
   return (
     <div>
-      <button onClick={openModal}>Open Modal</button>
+      <button onClick={openModal} className={styles.botButton}>Support Bot</button>
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
@@ -34,7 +34,7 @@ const IFrameModal = () => {
       >
         <div className={styles.botContainer}>
           <iframe
-            src="https://cloud.yellow.ai/pwa/v2/live/x1634118728207"
+            src="https://r0.cloud.yellow.ai/pwa/v2/live/x1635319613183?fullScreen=true"
             width="100%"
             height="100%"
             frameBorder="0"
