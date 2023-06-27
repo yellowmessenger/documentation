@@ -130,5 +130,6 @@ module.exports = {
   scripts: [
     "/js/FeedbackFooter.js", // feedback footer
     "/js/bot.js", // connect support bot 
+    //"/js/bot.html", // connect support bot 
   ],
 };
