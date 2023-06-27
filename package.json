@@ -19,6 +19,7 @@
     "path": "^0.12.7",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-modal": "^3.16.1",
     "react-player": "^2.7.2",
     "reading-time": "^1.2.0",
     "remixicon": "^2.5.0",

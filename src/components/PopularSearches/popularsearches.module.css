@@ -15,3 +15,9 @@
   flex-wrap: wrap;
   gap: 16px;
 }
+
+.botContainer {
+  z-index: 2147483638;
+  height: calc(100vh - 120px);
+  max-height: 795px;
+}
