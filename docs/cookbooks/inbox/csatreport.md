@@ -46,8 +46,12 @@ Modify the API request by providing the correct values for the variables:
     The *ticketCsatScore* field in the API accepts the values 0, 1, or null, indicating the following:
     - 1: The ticket has been solved.
     - 0: The ticket remains unsolved.
-    - Null: No CSAT score has been provided.
+    - Null: No response was provided.
 - Replace `agentCsatScore`: 5 with the corresponding CSAT score you have captured.      
     
     The *agentCsatScore* field in the API only accepts numerical values from 0 to 5. A score of 0 represents the lowest rating, while 5 represents the highest rating.
 
+
+:::note
+You can find the CSAT scores in the [Chat archive reports](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report) under the fields **ticket_csat** and **agent_rating**.
+:::
