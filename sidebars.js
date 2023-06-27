@@ -80,6 +80,7 @@ module.exports = {
   items: [
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
+    "cookbooks/inbox/csatreport",
     "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
