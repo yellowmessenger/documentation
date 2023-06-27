@@ -96,3 +96,22 @@ Yes, the new WhatsApp pricing policy will impact customers of Yellow.ai who have
 
 No, these changes only apply to the WhatsApp business platform. Pricing for Facebook and Instagram has not been affected by Meta's new policy.
 </details>
+
+<details><summary>
+    What happens to older templates with the new WA pricing policy?</summary>
+
+All the older templates are re-categorised by Meta, and the new categories are updated in the Business Manager. Any template that violates WhatsApp’s commerce or business policies will be rejected.<br/> Note:<br/>• To view the status of the template approval, click on the Sync template button.<img src="https://i.imgur.com/5iO2AK8.png" alt="drawing"/><br/>• For the India region, all the authentication templates will be moved under the Utility category as they are not available for this particular region.
+</details>
+
+<details><summary>
+    Where to find the template category in the platform?</summary>
+
+To view the template category in the platform, click <a href="https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview">here</a>.
+</details>
+
+<details><summary>
+    What happens if a template does not fall under Marketing or Utility category?</summary>
+        If a template does not fall under Marketing or Utility, it will be rejected.
+</details>
+
+
