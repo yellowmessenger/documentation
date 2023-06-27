@@ -14,7 +14,6 @@ For instance, if a business has integrated Sunshine conversations with Facebook,
 * Contact the Zendesk Support team to integrate the Sunshine account with the Zendesk account.
 * Create a [Facebook account](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger#connect-your-facebook-messenger-account) and page for integration with Sunshine Conversations. You can connect to any channel under Sunshine integrations. For example, Facebook is connected.
 
-
 ## Create a Sunshine conversation app
 
 To configure Sunshine Conversation on the Yellow.ai platform, you need to create a new Sunshine Conversation app.
