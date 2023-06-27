@@ -1,115 +1,175 @@
 ---
-title: User metrics
+title: Understanding user metrics
 sidebar_label : User metrics
 ---
 
-In this article, you will learn in detail about user metrics. 
+In this article, we will delve into the concept of user metrics and explore various aspects related to it.
 
-User metrics section is used to learn about the bot users. The following user metrics can be monitored on this page: 
-1. [User traffic](#traffic): Number of users visiting your bot, Number of messages sent to your bot, duration of the chat, etc. 
-2. [User retention](#retention): Number of new users vs. old users. 
-3. [Users by demographics](#demography): User classification based on the location the bot is being used from. 
+## Overview of user metrics
 
----
+The user metrics section provides valuable insights about the users of your bot. The following user metrics can be monitored on this page:
 
-To view user metrics, follow the given steps: 
+| Metric | Description|
+| -------- | -------- |
+| [User traffic](#traffic) | This metric includes the number of users visiting your bot, the number of messages sent to your bot, and the duration of the chat.|
+| [User retention](#retention) | This metric compares the number of new users versus old users.|
+| [Users by demographics](#demography) | User data classified based on the location from where the bot is being used. |
+| [User retention](#ret) and [User engagement](#eng) trends | This metric analyzes the retention and engagement trends specifically for mobile and web platforms. |
+| [WhatsApp consumption](#wac) | This metric provides insights into the consumption patterns of a selected WhatsApp phone number. |
+
+
+To view user metrics, follow these steps: 
 
 1. Open **Insights** > **Metrics**. 
 2. Select **User Metrics** tab. 
 
 ![](https://i.imgur.com/Zjiqb99.png)
 
-## 1. User metrics available as widgets 
-
-### <a name="traffic"></a> User traffic
-
-This widget covers all the primary metrics needed to understand user traffic to your bot in a given timeframe.
-Select any of the below headings to view the graphs for the selected time range. 
-
-![](https://i.imgur.com/gQeEdhH.png)
-
-* **Messages**: This is the number of messages exchanged between the bot, user, and agent. These can be filtered for:
-
-<img src="https://i.imgur.com/X09IfdT.png" alt="drawing" width="30%"/>
+-----
 
 
+### Filter data for a specific time period
 
-* **Unique users**: This shows the unique number of users who conversed with the bot (can be filtered for bot users and notification users).
-* **New users**: This is the number of users who conversed with the bot for the first time.
-* **Sessions**: This shows the number of sessions created by users on the bot.
-* **Average session per user**: This is the number of sessions created per user on average.
-* **Average session duration**: This is the average time for which the user has conversed with the bot. A session can be of 24 hours. For any number of interactions the user has in a 24 hours window from the start of a session, it'll be considered as one single session only. A new session is started after 24 hours.
+You can filter and view the metrics for a specific time period by selecting the desired time range from the dropdown menu. For example, you can choose to view the metrics for the last 7 days or the last 90 days. 
+- If you want to analyze a custom range, such as from September 21st to September 23rd, click on **Custom** and select the desired range.
+
+<img src="https://i.imgur.com/FzSz7IB.png" alt="drawing" width="40%"/>
+
+----
+
+### Export/Download user data
+
+The following user metrics are available for quick download:
+1. User traffic
+2. User by demographics
+3. Weekly user traffic
+4. Chat transcripts
+5. User details
+6. Notification statuses by campaign ID
+
+To download any of these metrics:
+1. Click **Export data**. 
+2. Select the required metrics and click **Export Reports**. You can also download all the reports as PDF. 
+
+:::info
+For scheduling reports, refer to the steps mentioned [here](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports). 
+:::
+
+<img  src="https://i.imgur.com/ZtcYRCT.png"  width="60%"/>
+
+
+-----
 
 #### Download chat conversations 
 
 To download the chat transcripts (conversations between bot/agent and user): 
-1. Apply the time filter (all the conversations within this time range will get exported). 
+
+1. Apply the desired time filter to specify the conversations within that time range.
 2. Click **Export data**. 
 3. Select **Chat transcripts**. 
 4. Click **Export**. 
 
 ![](https://i.imgur.com/g77L9hC.png)
 
+-----
+
+### Filter data for different channels
+
+User metrics are measured across all channels. However, if you want to obtain results for specific channels that are activated for your bot, select the desired channel from the **Channel** dropdown menu.
+
+<img src="https://i.imgur.com/gjCGo8e.png" alt="drawing" width="80%"/>
+
+-----
+
+
+## <a name="traffic"></a> User traffic
+
+> User traffic is calculated for all the channels.
+
+This widget provides comprehensive metrics to understand the user traffic to your bot within a specific timeframe. You can select different headings to view the corresponding graphs for the chosen time range.
+
+![](https://i.imgur.com/gQeEdhH.png)
+
+* **Messages**: This metric represents the number of messages exchanged between the bot, user, and agent. It can be further filtered based on different criteria.
+
+    <img src="https://i.imgur.com/X09IfdT.png" alt="drawing" width="30%"/>
+
+* **Unique users**: This metric shows the total count of unique users who interacted with the bot. It can be filtered for bot users and notification users.
+* **New users**: This metric represents the number of users who interacted with the bot for the first time.
+* **Sessions**: This shows the number of sessions created by users on the bot.
+* **Average session per user**: This metric denotes the average number of sessions created per user.
+* **Average session duration**: This metric represents the average duration of user-bot conversations. A session is considered to be of 24 hours, regardless of the number of interactions within that time window. After 24 hours, a new session is initiated.
 
 ---
 
-### <a name="retention"></a> User retention
+## <a name="retention"></a> User retention
 
-This widget shows the distribution between new users and old users visiting the platform. Any user who comes to the bot for the first time is categorized as a new user, and from their second visit onwards they are considered as a returning user.
+> User retention is calculated for all the channels.
 
-> This is calculated for all the channels.
+This widget illustrates the distribution between new users and returning users who visit the bot. 
+- A new user is someone who visits the bot for the first time.
+- A returning user is someone who has visited the bot before.
+
 
 <img src="https://i.imgur.com/QldTqc7.png" alt="drawing" width="50%"/>
 
 
 ---
 
-### <a name="demography"></a> Users By Demographics
+## <a name="demography"></a> Users By Demographics
 
 
-This widget shows user demographics for a bot based on the selected parameter.
+This widget provides insights into the user demographics of your bot based on selected parameters.
 
-#### Demography parameters
+
+### Demography parameters
 
 :::note
-Some of these metrics are captured for all the sources and some for limited sources like - UTM-based users are for Yellow Web & Mobile only.
+Some of these metrics are captured for all sources, while others are specific to limited sources like web & mobile.
 :::
 
-The drop-down field allows you to select from the multiple parameters for viewing user demographics - country, region, device, platform, medium, campaign, and source.
-
+The dropdown menu allows you to select various parameters for viewing user demographics, including country, region, device, platform, medium, campaign, and source.
 
 <img src="https://lh3.googleusercontent.com/Elj0328Y4W3MV206Mxu44qP7w7JPic8C9rH5aQNMTc4fRWk81zUzlTiupOK6t7E8Mh0SQ30ziCPP6n9o-G30YFn7W-sPlh0e1zyIIOtzD_PD0WoEWdcFRoX9eqY-AUOKOtDzlRHAR0ZUpkqd6AVk6I-oILL9cAo10HoAGo6OuKYVtEf4cPRlQFdK1zFJow" alt="drawing" width="30%"/>
 
-#### Demography data
+### Demography data
 
-Users who interact with the bot are coming from different locations, sources, and campaigns.
-The total count and percentage of users is shown for the specified date range based on the chosen parameter from the above dropdown.
+Users who interact with the bot come from different locations, sources, and campaigns. The total count and percentage of users are shown for the specified date range based on the chosen parameter from the dropdown menu.
 
 **![](https://lh5.googleusercontent.com/zVQdlZrh4ker_GAsEs2pnS-1xrER5vhNYL-DmN8H6M2hYd2m0gqOUTctVvXuuZgHgtsEUFdkhf18Ziauj-IT60ASWcREm1dhnYnuRla7n4Y-S6U48szKsqKqe4nQIW2GbDt5CFXTNGN-A6qKU1kAg1BWqUVOsSVPgFuWeFMc5RE8IASKDsxRvTTkNcxHpw)**
 
 ---
 
-### User retention trend
+## <a name="ret"></a>  User retention trend
 
-This widget shows the kind of users visiting the bot within a given timeframe. If a user converses with the bot for the first time, he/she is counted as user-visited. If the user has visited the bot before and is a returning user, then it's categorized as a user-revisited session.
+> User retention trend is calculated for Web & Mobile.
 
-> This is calculated for Yellow Web & Mobile.
+This widget demonstrates the types of users who visit the bot within a specific timeframe. A user who engages with the bot for the first time is categorized as a **user-visited**, while a returning user is categorized as a **user-revisited**.
 
 **![](https://lh4.googleusercontent.com/FjEtm5x8npgIPc9b3AzRuwjn1nonrpu7mxBGSXg0tPV_6orpBpDR4mAXMt3NuLTYuIZX_-oMu1Gqxntdz8PvDeNQqwjoq4Z5jOpYTP1z4vzaqq9ONuo5g5NG99GQMVG0PpVqY9Uz1NABjTSbWVBQxYva2iYcYrvbsJJymE_CQx9aArahGeiLtgvaLxSFLA)**
 
 -----
 
-### User engagement trend
+## <a name="eng"></a> User engagement trend
 
-This widget shows the funnel of users who are coming to the bot. The blue lines tell you about the number of times the bot was loaded, and the green and purple lines tell you about the number of people who started with an intent (flow) and at least completed one intent (flow) respectively.
+> User engagement trend is calculated for Web & Mobile.
 
-> This is calculated for Yellow Web & Mobile.
+The widget visualizes the different stages of user engagement through a funnel, highlighting the number of users at each stage. 
+- The blue line represents the number of times the bot was loaded, indicating the total visits to the bot. 
+- The green line represents the number of users who started with an intent or flow, indicating the number of users who initiated a conversation or interaction. 
+- The purple line represents the number of users who completed at least one intent or flow, indicating the number of users who successfully completed an interaction or achieved their goal.
+
+The widget allows you to analyze the conversion rates between each stage of engagement, providing insights into how effectively users progress through the interaction funnel.
+
 
 **![](https://lh3.googleusercontent.com/anORKlWAhLV_lFakMJ6HJguQl-oypc8xnYqZhnPcdPhhuz7EwzTHKNVVEAQ0jdvIp96sGjgTmW0XmWy_P2mEANuWdkb-_Jh6FFqWMvB77puhRoE4v3r4W4BB0J_R_nSppVVZRg2gG6k0R8gSbHTcVtdH05cWUGtmQBpSU5DwLdObjc99wmgfaHhQ6HNajg)**
 
 ----
 
-### WhatsApp comsumption
+## <a name="wac"></a> WhatsApp comsumption
+
+> WhatsApp comsumption is calculated only for WhatsApp bots.
+
 
 In the WhatsApp comsumption widget, you can select a WhatsApp phone number from the dropdown to see the consumption for that specific number.    
 If no number is selected, the data will be compiled and displayed for all the numbers collectively.
@@ -130,8 +190,6 @@ The three categories tracked for WhatsApp phone numbers are:
 || Referral conversion | Indicates the user initiated the conversation by clicking a **Click to WhatsApp ad** or a Facebook Page **Call-to-Action** button.|
 | **Referral Initiated**           |     |  Conversations that occur when users refer the bot to others, allowing the bot to initiate personalized conversations with those referred contacts.           |
 
-> The WhatsApp consumption is calculated specifically for the WhatsApp channel. 
-
 :::note
 Prior to June 1, 2023, only the main categories of Business-initiated, User-initiated, and Referral conversations were tracked without the subcategories. However, with the [WhatsApp update](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/launch-timeline#june-1--2023), the subcategories (Authentication, Marketing, Utility, Service, and Referral conversations) are now included in the widget.
 Here are a few points to note:
@@ -139,44 +197,5 @@ Here are a few points to note:
 2. If your custom date range includes both dates before and after June 1, 2023, the updated categories will be applied to the entire range. The subcategories will be available only for the data generated after June 1, 2023.
 3. Due to these updates, there might be a mismatch in the data when comparing periods before and after June 1, 2023.
 :::
-
---------
-
-## 2. Actions on user metrics
-
-
-### Filter data for a period
-
-- All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
-- If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range. 
-
-    <img src="https://i.imgur.com/FzSz7IB.png" alt="drawing" width="40%"/>
-
-----
-
-### Schedule data export/export data 
-
-To download any of these metrics:
-1. Click **Export data**. 
-2. Select the required metrics and click **Export Reports**. You can also download all the reports as PDF. 
-3. Click [here](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) for steps to schedule these reports. 
-    <img  src="https://i.imgur.com/ZtcYRCT.png"  width="70%"/>
-
-#### User metrics available for quick download
-
-1. User traffic
-2. User by demographics
-3. Weekly user traffic
-4. Chat transcripts
-5. User details
-6. Notification statuses by campaign ID
-
------
-
-### View metrics for different channels
-
-- These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
-
-    <img src="https://i.imgur.com/gjCGo8e.png" alt="drawing" width="80%"/>
 
 

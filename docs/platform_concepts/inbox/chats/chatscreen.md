@@ -51,9 +51,9 @@ Agents can type the shortcut **/** on the screen and the agent actions (automate
 > Learn more about [agent actions here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions).
 
 -----
-### @bot (Execute studio flow)
+### Execute studio flow with @bot
 
-To execute a pre-configured flow available in the **Studio** module during a livechat conversation with a customer, inbox agents can utilize the functionality of **@bot**.
+To execute a pre-configured flow available in the **Studio** module during a live chat conversation with a customer, inbox agents can utilize the functionality of **@bot**.
 
 :::info
 
@@ -68,6 +68,8 @@ To execute a pre-configured flow available in the **Studio** module during a liv
 :::
 
 To use this feature, simply type `@bot` on the reply screen, followed by the intent that will trigger the desired flow.
+
+![](https://hackmd.io/_uploads/BJec_RIOh.png)
 
 #### **@bot vs Agent Actions**
 
