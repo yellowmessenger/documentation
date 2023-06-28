@@ -27,7 +27,7 @@ Let's say that you have built a bot on [V1](https://app.yellow.ai/api/chat/demo/
 
 3. **Configure the callout banner**: If your V1 bot includes a banner and you wish to migrate it to V2, you need to configure the callout banner in the Studio module. For information on how to set up the callout banner during the migration process, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/overview#conversation-settings).
 
-<img src="https://i.imgur.com/KT7cd0U.png" alt="drawing" width="50%"/>
+    <img src="https://i.imgur.com/KT7cd0U.png" alt="drawing" width="50%"/>
 
 #### Load banners dynamically
  
