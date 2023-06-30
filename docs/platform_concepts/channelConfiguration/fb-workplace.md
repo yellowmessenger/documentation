@@ -82,9 +82,13 @@ To grant permissions, follow these steps:
     
    ![](https://i.imgur.com/gonyJfv.png)
 	
-2. Select **Message any member** permission to send a message to any member in the workplace and click **Save**.
+2. Select the following permissions:
+     * **Message any member** - Send a message to any member in the workplace.
+     * **Read user email** - See any group member's email address.
+     * **Read work profile** - See any group member's complete profile, including phone number, department, and location.
+     * Click **Save**.
 
-     ![](https://i.imgur.com/A7OSj2C.png)
+     ![](https://i.imgur.com/gQpDGVn.png)
 	 
 
 ## Connect Facebook workplace to your bot

@@ -80,6 +80,7 @@ module.exports = {
   items: [
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
+    "cookbooks/inbox/csatreport",
     "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
@@ -212,7 +213,8 @@ module.exports = {
               type: "category",
               label: "Flows",
               collapsed: true,
-              items: [          
+              items: [ 
+            "platform_concepts/studio/build/Flows/ai-copilot",         
             "platform_concepts/studio/build/Flows/journeys",
             "platform_concepts/studio/build/Flows/configureflow",
             "platform_concepts/studio/build/Flows/exportflow",
@@ -462,7 +464,7 @@ module.exports = {
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",
             "platform_concepts/inbox/chats/videocall",
-            "platform_concepts/inbox/chats/whatsapp-24hr-window-policy",
+            "platform_concepts/inbox/chats/reinitiatewachats",
                  ],
          },
 
@@ -941,7 +943,7 @@ module.exports = {
 
     "platform_concepts/growth/dashboards",
     "platform_concepts/growth/health",
-    "platform_concepts/growth/goals",
+   // "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",
   ],
 },
@@ -994,6 +996,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-product-catalog",
             "platform_concepts/channelConfiguration/wa-migration",
             "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
+            "platform_concepts/channelConfiguration/WA-bot-bestpractices",
             "platform_concepts/channelConfiguration/WA-pricing",
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",

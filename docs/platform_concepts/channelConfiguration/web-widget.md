@@ -90,7 +90,6 @@ Option | Description
 Auto-complete | Enable auto-complete to allow the bot to auto-predict words as the user types. 
 Message feedback | Enable to allow capturing feedback for every bot message in a conversation.
 Attachment | Enable this option to allow adding attachments via the chat widget.
-Always scroll chat window to bottom | Enable this option to navigate to the last message when there are multiple messages in a single step, as each message loads one by one.
 Slow messages | Enable this option to add a small delay to bot messages, a typing indicator is displayed to make it look more natural. It is recommended to use this for all bot messages for a better experience. 
 Multiline input | Enable this option to enter multiple lines of text in a single input. After enabling this option, by clicking on the enter key, it will take the cursor to next line instead of sending the message.
 Validate attachments | The chat widget provides an option to allow or block specific file formats for users to upload documents, images, and other files. <br/> **Note:** <br/> The file size limit is 20 MB.<br/> <img src="https://i.imgur.com/0GU94m6.png" width="50%"/>	|
@@ -203,7 +202,16 @@ To access mobile SDKs help doc links, follow these steps.
 
      <img src="https://i.imgur.com/LWWr2ik.png" width="80%"/>
 	
-3. Upon clicking the links, it navigates you to the respective Mobile SDK documentation.	
+3. Upon clicking the links, it navigates you to the respective Mobile SDK documentation.
+
+#### To preview your PWA bot, follow these steps:
+
+1. Navigate to the **Deploy** tab and click **PWA**.
+
+    <img src="https://i.imgur.com/mN5p5fO.png" alt="drawing" width="80%"/>
+
+2. To preview your PWA bot on the platform itself, click on <img src="https://i.imgur.com/RG1RUmC.png)" alt="drawing" width="10%"/>. 
+3. Copy the link by clicking on <img src="https://i.imgur.com/dv3k6vh.png)" alt="drawing" width="10%"/>. You can share the PWA live bot link directly with your users or you can embed it on your website.
 
 ### 2.5 Preview chat widget 
 

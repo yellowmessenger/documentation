@@ -90,6 +90,20 @@ Email tickets are assigned only to an **Inbox agent** (although **Inbox admin** 
 |**Select/change email ID**|All the [emails configured](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) for inbox are displayed here, you can select the email ID from which you wish to send this email.<br/> If you have received a mail on different mail ID and you send a reply using a different mail ID- the user will receive the old conversation thread in the current mail.|![](https://i.imgur.com/o46DjHM.png)|
 |**Email body**|You can only send a reply when the body contains some information. To send a reply without any content, use blank spaces.|![](https://i.imgur.com/ZDFEQXN.png)|
 
+:::note
+**Auto-save draft message**   
+
+
+The draft message saving option allows the agents to save their composed messages (or private notes) automatically, ensuring that their work is preserved when switching between chats or windows, or even when accidentally closing the tab.
+The ticket interface will display an indication to show that a draft has been created and these drafts will be visible only to the agent who authored it.
+
+**Limitations**:
+- **Session-based retention**: Drafts are retained only until the user session concludes. Upon session end, drafts may be cleared to maintain privacy and optimize system resources.
+- **Browser compatibility**: Cross-browser compatibility is not functional in this situation. For example, when Chrome and Firefox browsers are simultaneously opened, and a cloud app is accessed on both, any draft created in one browser (e.g., Chrome) cannot be observed within the corresponding chat in the other browser (e.g., Firefox). 
+- **Incognito mode**: Drafts are not compatible with incognito mode. Agents should refrain from using incognito browsing when relying on the draft feature to ensure a seamless experience.
+:::
+
+
 ----
 
 ### 2.3 Customer contact details

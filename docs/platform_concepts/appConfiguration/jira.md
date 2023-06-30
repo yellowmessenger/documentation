@@ -6,6 +6,10 @@ sidebar_label : Jira
 # Scope of Integration
 Yellow.ai Integration with Jira allows you to seamlessly connect your jira cloud with the yellow.ai platform. Using this integration, one can create issue, view issue details, create project, get project details or get user details.
 
+:::note
+Atlassian and JIRA are different integrations available on the yellow.ai platform. To use them, you must set them up individually.
+:::
+
 ## Use-cases 
 Following are the use-cases which are currently accommodated in the Integration:
 

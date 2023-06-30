@@ -46,7 +46,7 @@ You can install the PWA chatbot on desktop or mobile via URL.
 
 To install PWA chatbot on your desktop, follow these steps:
 
-1. Use this `https://cloud.yellow.ai/pwa/v2/live/x1657623696077`  URL to install PWA on your website.
+1. Use this `https://cloud.yellow.ai/pwa/v2/live/{botId}` URL to install PWA on your website.
 2. Click the below highlighted icon and click **Install**.
 
     ![](https://i.imgur.com/8bPzN29.png)
@@ -55,7 +55,7 @@ To install PWA chatbot on your desktop, follow these steps:
 
    ![](https://i.imgur.com/wel1w5E.png) 
    
-4. You can also uninsatll the PWA chatbot from your apps folder. Click on the below highlighted icon and select **Uninstall webby**.  
+4. You can also uninstall the PWA chatbot from your apps folder. Click on the below highlighted icon and select **Uninstall webby**.  
 
    ![](https://i.imgur.com/lrPHOiQ.png)
 

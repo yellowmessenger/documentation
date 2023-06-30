@@ -16,6 +16,19 @@ Simply type in any text and hit send button (or enable enter to send if you want
 
 <img src="https://i.imgur.com/oGJnkHz.png" alt="drawing" width="70%"/>    
 
+#### Auto-save draft message 
+
+
+The draft message saving option allows the agents to save their composed messages (or private notes) automatically, ensuring that their work is preserved when switching between chats or windows, or even when accidentally closing the tab.
+The chat interface will display an indication to show that a draft has been created and these drafts will be visible only to the agent who authored it.
+
+:::note
+**Limitations**:
+- **Session-based retention**: Drafts are retained only until the user session concludes. Upon session end, drafts may be cleared to maintain privacy and optimize system resources.
+- **Browser compatibility**: Cross-browser compatibility is not functional in this situation. For example, when Chrome and Firefox browsers are simultaneously opened, and a cloud app is accessed on both, any draft created in one browser (e.g., Chrome) cannot be observed within the corresponding chat in the other browser (e.g., Firefox). 
+- **Incognito mode**: Drafts are not compatible with incognito mode. Agents should refrain from using incognito browsing when relying on the draft feature to ensure a seamless experience.
+:::
+
 ----
 
 ### Canned response
@@ -36,6 +49,33 @@ Quickly find canned responses by entering relevant keywords/tags or searching wi
 Agents can type the shortcut **/** on the screen and the agent actions (automated with the help of studio flows) will be displayed in the dropdown list. Agent can select an action that is automated and the results are fetched easily without multiple manual steps. 
 
 > Learn more about [agent actions here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions).
+
+-----
+### Execute studio flow with @bot
+
+To execute a pre-configured flow available in the **Studio** module during a live chat conversation with a customer, inbox agents can utilize the functionality of **@bot**.
+
+:::info
+
+**Prerequisites**
+
+- **Inbox admins** can configure [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) within the **Studio** module. These flows can be triggered by commonly used intents that agents may employ when conversing with customers. Learn how to trigger a flow using intents [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent).
+- **Inbox agents** should be familiar with the available flows/intents within the studio module that can facilitate their conversations.
+
+**Example**     
+- **Intent (Order details)**: Fetch customer's order, order details, I want information about the customer's order, Get customer order info
+- **Flow**: Customer order details
+:::
+
+To use this feature, simply type `@bot` on the reply screen, followed by the intent that will trigger the desired flow.
+
+![](https://hackmd.io/_uploads/BJec_RIOh.png)
+
+#### **@bot vs Agent Actions**
+
+- When using **@bot**, agents can observe the ongoing conversation between the bot and the customer, displayed in real-time on the agent's chat screen. The functionality operates seamlessly, making it appear as if the agent is directly conversing with the customer, while in reality, it is the bot engaging in the conversation. Agents can view this conversation transparently and can also send responses once the flow is completed.
+- When using **Agent actions**, agents can select a flow (agent action) that will be triggered in the backend, fetching a single output that the agent can utilize.
+
 
 -----
 
@@ -94,11 +134,17 @@ Chats can be shared with anyone by clicking the **chat copy URL** icon and shari
 
 ---
 
+### First response auto-indicator
+
+The live chat interface includes an automatic indicator that remains visible until the agent sends the first response. This indicator cannot be customized and serves as a visual cue to indicate that the agent has not yet provided a response.
+
+<img src="https://hackmd.io/_uploads/HkvlpoZOh.png" alt="drawing" width="50%"/> 
+
+---
+
 ## <a name="ud"></a> 2. User details
 
 The following user details are available on this screen to provide agents with more context:
-
-
 
 | Type | Fields | Description|
 | -------- | -------- | -------- |

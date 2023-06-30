@@ -61,6 +61,8 @@ return new Promise(resolve => {
 
 To create dynamic WhatsApp list, you need follow the same procedure as dynamic quick replies.
 
+  ![](https://i.imgur.com/hjPSbi8.png)
+
 Use the snippet below to generate a dynamic Whatsapp list:
 
 ```js
