@@ -51,7 +51,7 @@ To create an app, follow these steps:
 
 The Sunshine web messenger app allows you to connect the messaging channels to interact with your users from your web page.
 
-To connect your messaging channels to the Zendesk web app, follow these steps:
+To connect your messaging channels to the Zendesk web messenger, follow these steps:
 
 1. Enter the name of this integration so that you can easily find it in your Sunshine Conversations app.
 
