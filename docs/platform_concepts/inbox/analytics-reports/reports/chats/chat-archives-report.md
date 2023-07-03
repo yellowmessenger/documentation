@@ -56,7 +56,7 @@ Only an admin can download reports.
 |42 |Custom field|Displays all the updated custom field data for each ticket||
 
 :::note
-To capture CSAT scores in the "ticket_csat" and "agent_rating" fields of the chat archive reports, you can either enable CSAT score from settings or implement a custom bot flow using the API to update the scores based on user feedback.
+To capture CSAT scores in the "ticket_csat" and "agent_rating" fields of the chat archive reports, you can either enable CSAT score from settings or implement a custom bot flow using the API to update the scores based on user feedback.        
 Supporting articles: [CSAT API](https://docs.yellow.ai/docs/cookbooks/inbox/csatreport), [CSAT flow design](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback).
 :::
 
