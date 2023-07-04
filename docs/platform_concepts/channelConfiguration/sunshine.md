@@ -59,7 +59,7 @@ To connect your messaging channels to the Zendesk web messenger, follow these st
 
    <img src="https://i.imgur.com/zanN1QL.png)" alt="drawing" width="60%"/>
 
-3. Add the Sunshine Conversations plugin to your web page. Add the following code at the end of the <head> section on your page:
+3. Add the Sunshine Conversations plugin to your web page. Add the following code at the end of the `<head>` section on your page:
     
 ```
 <script>
@@ -77,7 +77,7 @@ Smooch.init({ integrationId: '62274004515b2600ef7b3a07' });
 </script>
 ```    
 :::note
-* You need to place the above code snippet at the end of the <body> section for better performance.
+* You need to place the above code snippet at the end of the `<body>` section for better performance.
 :::  
 
 5. Verify that your integration is successfully working as intended.    
