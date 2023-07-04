@@ -118,6 +118,28 @@ If the API details are properly added, you should be able to see a sample respon
 > API response has a size limit of 250kb.You will get an error if the response exceeds the limit
 ><img src="https://i.imgur.com/8fTglp1.png" alt="drawing"  width="50%"/>
 :::
+
+### 1.6 Configure MTSL authentication
+
+MTSL (Message Transmission Security Layer) authentication is a method used for securing APIs by ensuring the integrity and authenticity of messages exchanged between the client and the server. It provides a secure communication channel and verifies that the messages have not been tampered with during transmission.
+
+Retrieve the following information from the system where you are integrating APIs:
+
+1. Domain
+2. Certificate
+3. Key
+4. Certificate Authority
+
+![](https://i.imgur.com/UFthYh1.png)
+
+1. Click the lock button at the right end.
+2. Fill in the fields and click **Upload** to upload the required documents. 
+3. Click **Save** when you're done.
+
+
+:::note
+**Developer**, **Admin** and **Super admin** roles can view this feature but only the **Super Admin** can make changes such as add a new certificate, delete the existing certificate, etc.
+:::
   
 ---  
 

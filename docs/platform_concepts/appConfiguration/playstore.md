@@ -42,6 +42,10 @@ The credentials used during integration with yellow.ai will generate access and 
 ![](https://i.imgur.com/lx14ZkH.png)
 2. Include a [Raise a Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) to capture reviews and ratings as tickets, and build the remaining flow based on your specific use case.
 
+:::note
+Currently, the use case is restricted to receiving ratings and reviews through tickets and responding to them via tickets.
+:::
+
 
 **Sample success response:**
 
