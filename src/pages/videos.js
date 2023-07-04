@@ -11,7 +11,7 @@ function Videos() {
   return (
     <Layout
       title={`${siteConfig.title} Videos`}
-      description="A collection of Benthos videos">
+      description="A collection of Yellow.ai's platform training videos">
       <header>
         <div className="container">
           <div className="row">
@@ -30,7 +30,7 @@ function Videos() {
             </div> 
             <ReactPlayer
               className={classnames('col col--8 col--offset-2')}
-              url='https://youtu.be/5RhnA_jOdlM'
+              url='https://youtu.be/2fdv1Ip3DKI'
               controls='true'
             />
           </div>
@@ -43,7 +43,7 @@ function Videos() {
             </div> 
             <ReactPlayer
               className={classnames('col col--8 col--offset-2')}
-              url='https://youtu.be/QYRdym4wZf8'
+              url='https://youtu.be/69LmMc4QwME'
               controls='true'
             />
           </div>

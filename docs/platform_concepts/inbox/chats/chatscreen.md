@@ -18,7 +18,6 @@ Simply type in any text and hit send button (or enable enter to send if you want
 
 #### Auto-save draft message 
 
-> This feature is available only for professional and enterprise customers. 
 
 The draft message saving option allows the agents to save their composed messages (or private notes) automatically, ensuring that their work is preserved when switching between chats or windows, or even when accidentally closing the tab.
 The chat interface will display an indication to show that a draft has been created and these drafts will be visible only to the agent who authored it.
@@ -26,8 +25,7 @@ The chat interface will display an indication to show that a draft has been crea
 :::note
 **Limitations**:
 - **Session-based retention**: Drafts are retained only until the user session concludes. Upon session end, drafts may be cleared to maintain privacy and optimize system resources.
-- **Storage capacity**: Drafts are limited to a maximum storage capacity of 5 MB, preventing excessive storage usage and ensuring system performance.
-- **Browser compatibility**: The draft functionality does not support all web browsers. Users should be aware that the feature may not be available or may behave differently depending on their browser of choice.
+- **Browser compatibility**: Cross-browser compatibility is not functional in this situation. For example, when Chrome and Firefox browsers are simultaneously opened, and a cloud app is accessed on both, any draft created in one browser (e.g., Chrome) cannot be observed within the corresponding chat in the other browser (e.g., Firefox). 
 - **Incognito mode**: Drafts are not compatible with incognito mode. Agents should refrain from using incognito browsing when relying on the draft feature to ensure a seamless experience.
 :::
 
@@ -109,11 +107,62 @@ Chats can be shared with anyone by clicking the **chat copy URL** icon and shari
 
 ---
 
+### First response auto-indicator
+
+The live chat interface includes an automatic indicator that remains visible until the agent sends the first response. This indicator cannot be customized and serves as a visual cue to indicate that the agent has not yet provided a response.
+
+<img src="https://hackmd.io/_uploads/HkvlpoZOh.png" alt="drawing" width="50%"/> 
+
+---
+
+
+### Initiate studio flow with @bot
+
+To execute a pre-configured flow within the **Studio** module during a live chat conversation with a customer, inbox agents can make use of the **@bot** feature.
+
+
+:::info
+
+**Prerequisites**
+
+- **Inbox admins** can configure [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) within the **Studio** module. These flows can be triggered by commonly used intents that agents may employ when conversing with customers. Learn how to trigger a flow using intents [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent).
+- **Inbox agents** should be familiar with the available flows/intents within the studio module that can facilitate their conversations.
+
+**Example**     
+- **Intent (Order details)**: Fetch customer's order, order details, I want information about the customer's order, Get customer order info
+- **Flow**: Customer order details
+:::
+
+To use this feature, simply type `@bot` on the reply screen, followed by the intent that will trigger the desired flow.
+
+![](https://hackmd.io/_uploads/BJec_RIOh.png)
+
+#### **@bot vs Agent Actions**
+
+| @bot| Agent action  |
+| -------- | -------- |
+| When using **@bot**, agents can observe the ongoing conversation between the bot and the customer, displayed in real-time on the agent's chat screen. The functionality operates seamlessly, making it appear as if the agent is directly conversing with the customer, while in reality, it is the bot engaging in the conversation. Agents can view this conversation transparently and can also send responses once the flow is completed.     | When using **Agent actions**, agents can select a flow (agent action) that will be triggered in the backend, fetching a single output that the agent can utilize. | 
+
+#### Real-time example
+A customer has placed an order and is experiencing an issue with their return request. The customer contacts the support agent for assistance. The agent needs to:
+
+**Step 1**: Verify the order status 
+**Step 2**: Assist the customer in placing a return request
+
+For step 1, the agent can quickly retrieve the order status from an internal or external system by using **Agent actions** and entering the command `/order-status 100100`, where `100100` is the order ID.
+
+For step 2, instead of manually gathering the required details from the customer, such as confirming the product, return address, return pickup date, etc., the agent can streamline the process using a predefined workflow created in the studio with the help of the bot. By triggering this workflow with the command `@bot raise a return request`, the agent initiates a chatbot interaction where the bot collects the necessary information from the customer. This allows the agent to focus on other priority and complex issues, saving time in handling these types of chats. The agent can still monitor the chat and seamlessly take over the conversation when needed.
+
+By leveraging agent actions and the **@bot** functionality, the agent can efficiently handle the customer's order status inquiry and facilitate the return request process, ensuring a smoother and more convenient customer support experience.
+
+
+
+
+-----
+
 ## <a name="ud"></a> 2. User details
 
 The following user details are available on this screen to provide agents with more context:
-
-
 
 | Type | Fields | Description|
 | -------- | -------- | -------- |

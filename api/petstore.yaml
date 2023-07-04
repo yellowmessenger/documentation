@@ -1,0 +1,659 @@
+openapi: 3.0.3
+info:
+  title: Yellow.ai APIs
+  version: '1.0'
+  description: |
+   ## API Documentation: Yellow.ai
+
+   Welcome to the API documentation for Yellow.ai! This comprehensive guide will walk you through the powerful RESTful API provided by Yellow.ai. With our API, you can seamlessly create and manage user data, retrieve user details, update user information, and unlock a host of other functionalities. Our API is designed to offer flexibility and simplicity, while prioritizing the security and integrity of your user data.
+
+   ## Overview
+
+   Yellow.ai offers a robust RESTful API that empowers you to manage user data, user events, outbound notifications, email ticketing, and more. Our API is designed to provide a seamless experience, offering flexibility and simplicity in its usage. We prioritize the security and integrity of your user data, ensuring that it remains protected throughout your interactions with our API. Leverage our powerful API to streamline your workflows and enhance your user management capabilities.
+
+    ## Authentication
+    Yellow.ai APIs support OAuth for authentication. To generate an authentication token, follow these steps:
+
+    1. Ensure that you have super admin privileges for the bot.
+    2. Access the Yellow.ai platform and navigate to the bot for which you want to generate the authentication token.
+    3. In the bot settings or administration section, locate the option for generating an authentication token. The exact location may vary depending on the Yellow.ai platform version you are using.
+    4. Click on the "Generate Token" or similar button to initiate the token generation process.
+    5. You may be prompted to provide additional information or permissions for the token generation. Follow the on-screen instructions and provide the necessary details.
+    6. Once the process is complete, the Yellow.ai platform will generate an authentication token for you.
+    7. Safely store the authentication token as it will be required for making authenticated API requests to Yellow.ai APIs.
+    8. Include the authentication token in the request headers of your API calls. Typically, you would add an `Authorization` header with the value "Bearer <authentication_token>".
+    9. Please note that the generated authentication token provides access to the APIs based on the permissions and privileges associated with your super admin account. Handle the token with caution.
+
+
+
+
+  
+servers:
+  - url: 'https://cloud.yellow.ai'
+    description: Default host
+  - url: 'https://r1.cloud.yellow.ai'
+    description: MEA region
+  - url: 'https://r2.cloud.yellow.ai'
+    description: Jakarta region
+  - url: 'https://r3.cloud.yellow.ai'
+    description: Singapore region
+  - url: 'https://r4.cloud.yellow.ai'
+    description: USA region
+  - url: 'https://r5.cloud.yellow.ai'
+    description: Europe region
+  - url: https://alpha5.yellowmessenger.com
+    description: Staging
+  
+tags:
+  - name: user
+    description: Manage users
+  - name: event
+    description: Operations about users
+  - name: emailTicket
+    description: Manage email tickets
+  - name: ticket
+    description: Manage email tickets
+  - name: messages
+    description: Manage bot messages
+
+components:
+  headers:
+    x-api-key:
+      description: Authentication token
+      required: true
+      schema:
+        type: string
+    Content-Type:
+      description: Content type of the request body
+      required: true
+      schema:
+        type: string
+paths:
+  '/cdp/api/v1/user':
+    post:
+      tags:
+        - user
+      summary: Add user
+      description: Creates a user record in User360.
+      operationId: addUser
+      parameters:
+        - name: x-api-key
+          in: header
+          required: true
+          schema:
+            type: string
+          example: "Bearer <TOKEN>"
+        - name: bot
+          in: query
+          description: The unique ID of the bot associated with the user record.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                  description: The ID of the user (mandatory)
+                lastName:
+                  type: string
+                  description: The last name of the user
+                phone:
+                  type: string
+                  description: The phone number of the user
+                tags:
+                  type: array
+                  items:
+                    type: string
+                  description: An array of tags
+                country:
+                  type: string
+                  description: The country of the user
+                emailOptIn:
+                  type: boolean
+                  description: >-
+                    Indicates whether the user has opted in for email
+                    notifications
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  contactDetails:
+                    type: object
+                    description: Details of the created contact
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details
+        '401':
+          description: Unauthorized request or invalid `X-Auth-Token` or `botId`
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details
+                    
+  '/cdp/api/v1/user/{userId}':
+    get:
+      tags:
+        - user
+      summary: Get user details
+      description: Retrieves the details of a specific user based on the userId provided.
+      operationId: getUser
+      parameters:
+        - name: userId
+          in: path
+          description: The unique ID of the user.
+          required: true
+          schema:
+            type: string
+        - name: bot
+          in: query
+          description: The unique bot ID in which the user record is available.
+          required: true
+          schema:
+            type: string
+        - name: allProperties
+          in: query
+          description: Pass `true` to retrieve all user properties. By default, only a few standard properties firstName, lastName
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  contactDetails:
+                    type: object
+                    description: Details of the created contact
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details
+        '401':
+          description: Unauthorized request or invalid `X-Auth-Token` or `botId`
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details            
+    put:
+      tags:
+        - user
+      summary: Update user
+      description: Updates user properties of an existing user.
+      parameters:
+        - name: userId
+          in: path
+          description: The unique ID of the user.
+          required: true
+          schema:
+            type: string
+        - name: bot
+          in: query
+          description: The unique bot ID associated with the user record.
+          required: true
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Invalid userId provided
+        '404':
+          description: User not found
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userId:
+                  type: string
+                  description: The ID of the user (mandatory)
+                lastName:
+                  type: string
+                  description: The last name of the user
+                phone:
+                  type: string
+                  description: The phone number of the user
+                tags:
+                  type: array
+                  items:
+                    type: string
+                  description: An array of tags
+                country:
+                  type: string
+                  description: The country of the user
+                emailOptIn:
+                  type: boolean
+                  description: Indicates whether the user has opted in for email notifications
+        
+    delete:
+      tags:
+        - user
+      summary: Delete user
+      description: This can only be done by the logged in user.
+      operationId: deleteUser
+      parameters:
+        - name: userId
+          in: path
+          description: The unique ID of the user that needs to be deleted
+          required: true
+          schema:
+            type: string
+        - name: bot
+          in: query
+          description: The unique ID of the bot associated with the user record
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  contactDetails:
+                    type: object
+                    description: Details of the created contact
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details
+        '401':
+          description: Unauthorized request or invalid `X-Auth-Token` or `botId`
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details
+   
+  'cdp/api/v1/event':
+    get:
+      tags:
+        - event
+      summary: Get user details
+      description: Retrieves the details of a specific user based on the userId provided.
+      operationId: getUserDetails
+      parameters:
+        - name: x-api-key
+          in: header
+          required: true
+          schema:
+            type: string
+          example: "Bearer <TOKEN>"      
+        - name: userId
+          in: query
+          description: The unique ID of the user.
+          required: true
+          schema:
+            type: string
+        - name: bot
+          in: query
+          description: The unique bot ID in which the user record is available.
+          required: true
+          schema:
+            type: string
+        - name: allProperties
+          in: query
+          description: Pass `true` to retrieve all user properties. By default, only a few standard properties firstName, lastName
+          schema:
+            type: string
+
+  '/data/messages':
+    get:
+      tags: 
+        - messages
+      summary: Get messages
+      description: Retrieves messages for a user from the Yellow.ai platform.
+      parameters:
+        - name: x-api-key
+          in: header
+          required: true
+          schema:
+            type: string
+          example: "Bearer <TOKEN>"  
+        - name: bot
+          in: query
+          description: The unique ID of the bot associated with the messages.
+          required: true
+          schema:
+            type: string
+        - name: uid
+          in: query
+          description: The unique ID of the user associated with the messages.
+          required: true
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: Limit the number of messages to retrieve.
+          required: false
+          schema:
+            type: integer
+            minimum: 0
+            maximum: 100
+            default: 100
+        - name: offset
+          in: query
+          description: Number of rows to skip from the top of the results table when fetching data.
+          required: false
+          schema:
+            type: integer
+            default: 0
+        - name: ticketId
+          in: query
+          description: Get details of a specific ticket
+          required: false
+          schema:
+            type: string
+        - name: source
+          in: query
+          description: Get tickets from a specific source.
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  message:
+                    type: string
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        _id:
+                          type: string
+                          description: The ID of the message
+                        shouldTranslateMessage:
+                          type: boolean
+                          description: Indicates whether the message should be translated
+                        created:
+                          type: string
+                          format: date-time
+                          description: The creation timestamp of the message
+                        updated:
+                          type: string
+                          format: date-time
+                          description: The last update timestamp of the message
+                        botId:
+                          type: string
+                          description: The ID of the bot associated with the message
+                        uid:
+                          type: string
+                          description: The ID of the user associated with the message
+                        message:
+                          type: string
+                          description: The content of the message
+                        messageType:
+                          type: string
+                          description: Type of the user associated with the message
+                          enum:
+                            - AGENT
+                            - BOT
+                            - USER
+                            - NOTIFICATION
+                        sessionId:
+                          type: string
+                          description: The ID of the session associated with the message
+                        slug:
+                          type: string
+                          description: The slug of the message
+                        feedback:
+                          type: string
+                          description: The feedback associated with the message
+                        source:
+                          type: string
+                          description: The source of the message
+                        questionId:
+                          type: string
+                          description: The ID of the question associated with the message
+                        medium:
+                          type: string
+                          description: The medium of the message
+                        conversationId:
+                          type: string
+                          description: The ID of the conversation associated with the message
+                        messageTags:
+                          type: array
+                          items:
+                            type: string
+                          description: An array of message tags
+                        nodeType:
+                          type: string
+                          description: The type of the node associated with the message
+
+
+
+  '/api/ticketing/data/send':
+    post:
+      tags: 
+        - emailTicket
+      summary: Create a new email ticket
+      parameters:
+        - in: query
+          name: botId
+          required: true
+          schema:
+            type: string
+          description: Unique ID of the bot associated with email tickets.
+        - name: x-api-key
+          in: header
+          required: true
+          schema:
+            type: string
+          example: "Bearer <TOKEN>"    
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                ticketData:
+                  type: object
+                  properties:
+                    assignedTo:
+                      type: string
+                    botId:
+                      type: string
+                    contact:
+                      type: object
+                      properties:
+                        firstName:
+                          type: string
+                        lastName:
+                          type: string
+                        primaryEmail:
+                          type: string
+                      required:
+                        - primaryEmail
+                    tags:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          tagId:
+                            type: string
+                    dueDate:
+                      type: string
+                      format: date-time
+                    priority:
+                      type: string
+                      enum:
+                        - LOW
+                        - MEDIUM
+                        - HIGH
+                      example: MEDIUM
+                    subject:
+                      type: string
+                    customFields:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          code:
+                            type: string
+                          value:
+                            type: string
+                    mailData:
+                      type: object
+                      properties:
+                        sender:
+                          type: object
+                          properties:
+                            address:
+                              type: string
+                        toAddresses:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              address:
+                                type: string
+                        bccAddresses:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              address:
+                                type: string
+                        ccAddresses:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              address:
+                                type: string
+                        subject:
+                          type: string
+                        message:
+                          type: string
+                        html:
+                          type: string
+              example:
+                ticketData:
+                  assignedTo: "agent123"
+                  botId: "bot123"
+                  contact:
+                    firstName: "John"
+                    lastName: "Doe"
+                    primaryEmail: "john@example.com"
+                  tags:
+                    - tagId: "tag123"
+                  dueDate: "2023-07-01T12:00:00Z"
+                  priority: "MEDIUM"
+                  subject: "Support Ticket"
+                  customFields:
+                    - code: "h1"
+                      value: "Value 1"
+                    - code: "s1"
+                      value: "Value 2"
+                  mailData:
+                    sender:
+                      address: "sender@example.com"
+                    toAddresses:
+                      - address: "recipient1@example.com"
+                      - address: "recipient2@example.com"
+                    bccAddresses:
+                      - address: "bcc1@example.com"
+                    ccAddresses:
+                      - address: "cc1@example.com"
+                    subject: "Support Ticket"
+                    message: "This is a support ticket."
+                    html: "<p>This is a support ticket.</p>"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  contactDetails:
+                    type: object
+                    description: Details of the created contact
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details      
+        '401':
+          description: Unauthorized request or invalid `X-Auth-Token` or `botId`
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details

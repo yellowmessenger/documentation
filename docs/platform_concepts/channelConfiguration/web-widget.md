@@ -211,7 +211,7 @@ To access mobile SDKs help doc links, follow these steps.
     <img src="https://i.imgur.com/mN5p5fO.png" alt="drawing" width="80%"/>
 
 2. To preview your PWA bot on the platform itself, click on <img src="https://i.imgur.com/RG1RUmC.png)" alt="drawing" width="10%"/>. 
-3. Copy the link by clicking on <img src="https://i.imgur.com/dv3k6vh.png)" alt="drawing" width="10%"/>. You can share the PWA live bot link directly with your users or deploy it wherever you want.
+3. Copy the link by clicking on <img src="https://i.imgur.com/dv3k6vh.png)" alt="drawing" width="10%"/>. You can share the PWA live bot link directly with your users or you can embed it on your website.
 
 ### 2.5 Preview chat widget 
 

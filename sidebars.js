@@ -80,6 +80,7 @@ module.exports = {
   items: [
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
+    "cookbooks/inbox/csatreport",
     "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
@@ -942,7 +943,7 @@ module.exports = {
 
     "platform_concepts/growth/dashboards",
     "platform_concepts/growth/health",
-    "platform_concepts/growth/goals",
+   // "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",
   ],
 },
