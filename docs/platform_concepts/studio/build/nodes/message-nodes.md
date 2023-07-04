@@ -354,9 +354,9 @@ This section helps you create a WhatsApp product messaging journey with a sample
 The following are the prerequisites to create a catalog flow:
 
 1. Fill the Compliance information on the [Whatsapp Channel configuration page](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#1-whatsapp-configuration) (Not required for WABA hosted on Cloud API).
-2. [Fill the Catalog with the required details](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#21-commerce-manager-catalog).
-3. [Connect the catalog to the WABA](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#22-link-catalog-to-a-waba).
-4. [Add the products](https://docs.yellow.ai/docs/platform_concepts/studio/database#-3-import-data-into-table) from Catalog to your yellow bot's database to use them while sending SPM/MPM.
+2. [Add the Catalog with the required details](https://business.facebook.com/commerce/catalogs/930872404988098/products).
+3. [Connect the catalog to the WABA](https://www.craft.me/s/0loidngTNNAzkK/b/2AF9F5B2-431A-4361-801B-535519A98047/Catalog-Linked-with-the-WABA).
+4. [Create a table](https://docs.yellow.ai/docs/platform_concepts/studio/database#create) and [Add the products](https://docs.yellow.ai/docs/platform_concepts/studio/database#-3-import-data-into-table) from Catalog to your yellow bot's database to use them while sending SPM/MPM.
 
 
 To create a catalog journey, follow these steps - 

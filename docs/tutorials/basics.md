@@ -29,7 +29,7 @@ Welcome to our platform overview video! In this brief introduction, we will take
 
 
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0edNpCqcS80" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/69LmMc4QwME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </center>
 
 

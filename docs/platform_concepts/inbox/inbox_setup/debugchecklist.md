@@ -19,6 +19,8 @@ The debugging logs provide helpful information to bot developers for every raise
 Inbox may behave differently in Live and Development enviornments because the settings configured in Live mode are not reflected in Development mode, and vice versa.
 :::
 
+## Common inbox error messages 
+
 The following table provides different error messages along with the possible reasons and solutions.
 
 | Error message <br/> (in debug logs) | Resolution |
@@ -40,6 +42,32 @@ The following table provides different error messages along with the possible re
 |**Video call not enabled in settings**| You are trying to initiate a video call in the chat, but the video call functionality is disabled in the settings. This is why the chat is not being raised with video call ability. <br/> <br/> **Solution**: Enable the video call functionality in the [settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/video-call-settings). Once you do that, you should be able to initiate video calls in the chat. |
 |**Agent info missing for manual assignment**| Agent email ID is not being passed for manual assignment. <br/> <br/> **Solution**: Pass in a valid agent email ID for the manual assignment to take place. |
 
+
+-----
+
+
+## Understand missed chat scenarios
+
+
+Chats can be missed due to certain settings in [queue handling](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat-queue) or [offline handling](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat). These chats will only be visible if you open the [missed chats page](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#16-missed-chats) and search for them. Here are the reasons why a live chat may be moved to the missed chats:
+
+
+| Check [queue handling](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat-queue) settings for the following: |
+| -------- |
+| **Default queue disabled**: The chat is missed when the agent's maximum concurrent chat limit is reached and the default group's queue is not enabled.|
+| **Group queue disabled**: The chat is missed when the agent's maximum concurrent chat limit is reached and the group queue is not enabled. |
+| **Group queue reached**: The chat is missed when the agent's maximum concurrent chat limit is reached and the set queue limit for the group is reached. |
+| **Queue chats inactivity**: If the option to mark the chat as missed is enabled when the user with a queued ticket is inactive for a certain period of time. | 
+
+
+| Check [offline handling](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/offline-chat) settings for the following: |
+| -------- |
+| **Offline chats disabled**: The chat is missed because offline chats setting was not enabled at all.|
+| **Default group offline disabled**: The chat is missed because offline chats were not enabled for the default group.|
+| **Group offline disabled**: The chat is missed because offline chats were not enabled for the chat's group. |
+| **Group offline reached**: The chat is missed because the set offline chat limit was reached for the chat's group. |
+| **Group offline unavailable**: The chat is missed because the group name does not exist in the Inbox group Settings, for example, an incorrect group name or group code. |
+| **Agents went offline**: The chat is missed because all the agents went offline for more than 10 minutes once the chat got queued. |
 
 
 

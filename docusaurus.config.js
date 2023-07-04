@@ -103,8 +103,13 @@ module.exports = {
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+     // "@docusaurus/preset-classic",
+     "docusaurus-preset-openapi",
       {
+        api: {
+          path: "api/petstore.yaml",
+          routeBasePath: "api",
+        },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
         },
@@ -130,5 +135,6 @@ module.exports = {
   scripts: [
     "/js/FeedbackFooter.js", // feedback footer
     "/js/bot.js", // connect support bot 
+    //"/js/bot.html", // connect support bot 
   ],
 };

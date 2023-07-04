@@ -96,6 +96,10 @@ To view the status of the template approval, you need to click on the **Sync tem
 ![](https://i.imgur.com/5iO2AK8.png)
 :::
 
+For more information on how to execute a campaign, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#33-whatsapp-campaign).
+
+For more information on how to trigger a flow when a user clicks on a quick reply option on WhatsApp, click [here](https://docs.yellow.ai/docs/cookbooks/studio/qr-node).
+
 ## Set up a WhatsApp channel
 
 To set up a WhatsApp channel, you need to have an active WhatsApp business account. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).

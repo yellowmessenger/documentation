@@ -116,14 +116,15 @@ This is the ultimate fallback. When a chat doesn't belong to any other category 
 There are multiple ways in which a chat can move under missed chats. For example:  
 
 1. When the Inbox settings hamper the experience of chats going into other categories. 
-2. When the Raise ticket node (flow) is not configured correctly.
+2. When the Raise ticket node (flow) is not configured correctly or raise ticket action fails due to Inbox settings that can be controlled (for example, if offline handling is disabled, group queue is not configured, etc.), the chat will be available in missed chats.
 3. When Chat queue is not enabled in the Inbox setting, the incoming live chat that must be available under Queued chats moves into missed chats. 
 4. When Offline handling is not enabled in the Inbox setting, the incoming live chat that must be available under Open chats moves into missed chats. 
 
-When any raise ticket action fails due to Inbox settings that can be controlled (for example, if offline handling is disabled, group queue is not configured, etc.), the chat will be available in missed chats.
-
 > The chats do not move into missed chats for cases that are not controllable (like the bot server is down, technical error, bot shut down).
 
+:::note
+[Here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/debugchecklist#understand-missed-chat-scenarios) are some additional reasons why chats can be missed.
+:::
 
 ### 1.7 Bot Messages
 
