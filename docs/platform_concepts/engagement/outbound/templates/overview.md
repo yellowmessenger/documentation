@@ -28,19 +28,24 @@ To access Template manager, follow these steps -
 
   
 
-2. Inside Engage module, select ‘Templates’ from left panel.
+2. In Engage module, select **Templates** from left panel.
 
-   ![](https://i.imgur.com/koMjQf0.jpg)
+   <img src="https://i.imgur.com/cCpxuC7.png"/>
 
 
+Column Name | Description
+------------- | ----------
+Template name | Name of the template.
+Status | The current status of the template.<ul><li>**Pending**: Templates that have been submitted for approval but are still awaiting review from Facebook.</li> <li>**Rejected**: Templates that have been reviewed and rejected for not meeting the guidelines or requirements set by WhatsApp. These templates cannot be used for messaging purposes.</li> <li>**Disabled**: Templates that were previously approved but have been disabled either by the business or by WhatsApp. Disabled templates cannot be used for messaging until reactivated.</li> <li>**Approved**: Templates that have successfully passed the review process and meet the guidelines and requirements set by WhatsApp. These templates are eligible for use in messaging campaigns.</li> <li>**1st phase**: WhatsApp templates that have successfully passed the review process but received negative feedback from users. The campaign using these templates will be suspended for 3 hours as a precautionary measure.</li> <li> **2nd phase**: If you resend the same WhatsApp template after the 3-hour suspension, the templates will be blocked for 6 hours as a further measure to prevent any potential issues or misuse.</li></ul>
+Quality | The quality rating of the template based on users feedback.<ul><li>**Not available**: This is the initial rating for approved message templates.</li><li>**High**: Templates with positive performance and user feedback.</li><li>**Medium**: Templates with moderate performance and user feedback.</li><li>**Low**: Templates with poor performance and negative feedback.</li><li>**Pending**:   </li></ul>
+Template category | Classification of the template based on its purpose or content - Utility, Marketing.
+Created on | Date and time of the template creation. 
+Created by | The platform user who the template.
+  
+:::note
+When a WhatsApp template is rated as "Active - Low quality," the campaign is paused to preserve the quality rating of associated phone numbers. Pausing durations are as follows: 1st instance - 3 hours, 2nd instance - 6 hours, and the 3rd instance leads to disabling of the campaign. If you wish to edit a paused template, it must be re-approved before it can be used again.
+:::
 
-| Field | Description |
-| -------- | -------- |
-| **Template Name** | Name of the templates with the respective channel logos.  |
-|**Status**| Current approval status of the template (Channel specific) - Approved, Rejected, or Pending.<br/> You can only use  approved templates in your campaigns.|
-|**Language**| Language of the message template|
-|**Created on**| Date on which the template is created.|
-|**Created by**| Unique ID of the admin who created the template. For WhatsApp templates, if the template is created from FB business manager, you can see it here. |
 
 
 ## 2. Search & filter templates

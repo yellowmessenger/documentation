@@ -97,12 +97,11 @@ In case you want to switch to User module to add audience, you can save the camp
 
 
   
-
    * Click **Save as draft** to save all your changes. You can resume from here anytime.
 
    * Once you have reviewed all the details and is good to go, click on **Launch Campaign** to schedule. You will be redirected to *Campaigns overview* page where you can monitor the campaign.
 
-  
+  ![](https://i.imgur.com/wxMkzQf.png)
 
 ***
 
@@ -430,6 +429,26 @@ Here are some common errors that you may encounter when working with campaigns:
 :::note
 For API related error codes and descriptions, see [Notification API response codes](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#24-response-codes)
 :::
+
+## 9. Configure Campaign status & progress notifications
+
+You can get notified via email for critical campaign status and progress alerts. For broader awareness and efficient resolution of campaign-related concerns, you can specify preferred users to receive notifications in case of any issues with the campaign. By default, email alerts are sent automatically to the template creator for critical template statuses and to the campaign creator for campaign failures due to template disablement.
+
+
+To enable email alerts:
+
+1. On Engage, navigate to **Preferences**.
+2. Toggle the **Enable campaign alerts**.
+
+   <img src="https://i.imgur.com/rP6fvrr.png"/>
+
+3. Check **Send alerts on campaign progress** to receive campaign progress related updates. By default, **Send alerts when campaigns are paused/failed** is enabled, you cannot uncheck it.
+4. In **Sending email alerts** enter your preferred email addresses separating each with comma (,).
+
+   <img src="https://i.imgur.com/jaGOOCM.png"/>
+
+5. Click **Add**.
+
 
 
 **What next**

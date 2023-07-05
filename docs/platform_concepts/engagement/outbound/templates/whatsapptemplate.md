@@ -14,7 +14,7 @@ The following are the different steps involved in a WhatsApp template:
 3. Use the approved template in your campaign.
   
 
-#### Prerequisites
+#### Prerequisites to create WhatsApp template
 
 The following are the prerequisites for creating a WhatsApp template:
 
@@ -23,8 +23,7 @@ The following are the prerequisites for creating a WhatsApp template:
 * Verify that the account is active and its status is showing as *Connected*.
 
 
- 
-To create a WhatsApp template and send for approval - 
+To create a WhatsApp template and send for approval, follow these steps:
 
 1. Navigate to your project and go to **Engage** > **Templates**.
 
@@ -37,7 +36,7 @@ To create a WhatsApp template and send for approval -
    ![](https://i.imgur.com/GNCxave.png)
 
 
-4. Configure the template using the available options and click **Save**.
+3. Configure the template using the available options and click **Save**.
 
    ![](https://i.imgur.com/cbxvaHy.png)
 
@@ -53,8 +52,8 @@ Footer | Use this to mention something at the end of your message. You can use u
 Button type | Choose the button type - None, Call to action (CTA) or Quick reply.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone.
 Quick reply | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
 
-5. To add another CTA, click **Add new button**.
-6. Preview the message on the right pane and click **Send for approval**. 
+4. To add another CTA, click **Add new button**.
+5. Preview the message on the right pane and click **Send for approval**. 
 
    ![](https://i.imgur.com/wJnIgW4.png)
 
@@ -89,7 +88,7 @@ Navigate to the **Button Type** section and select *Call to action*.
 There are two types of URLs you can use in a CTA:
 
 #### Static URL 
-In this type of CTA, you need to mention the URL that needs to be opened when sending the template for approval. You cannot modify the static URL once it is sent for approval or post approval. 
+In this type of CTA, you need to specify the URL that needs to be opened when sending the template for approval. You cannot modify the static URL once it is sent for approval or post approval. 
 
 For easy approval, it is recommended to use the company's domain URL. Example: [https://docs.yellow.ai](https://docs.yellow.ai)
 
@@ -164,6 +163,7 @@ Use the Delete icon to remove any button.
 
 
 ## 3. Add variables in WhatsApp template
+
 Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
 
 You can add variables by adding two curly brackets before and after the variable name.
@@ -182,10 +182,32 @@ You can see in the preview tab below, the variable user we just created is highl
 
   
 
+## ## View WhatsApp template approval or rejection status
+Once a WhatsApp template is approved and marked as Active, it can be used to send messages to customers, regardless of its quality rating. However, WhatsApp templates are rated based on their quality, reflecting their performance. 
+
+Users can report or block WhatsApp templates which can result in blocking of the campaign. If the template receives consistent negative feedback, its status may change and can interrupt the campaign, impacting its performance. 
+
+By actively monitoring the approval status, you can proactively address any potential issues and maintain seamless communication with your audience.
+
+   <img src="https://i.imgur.com/cCpxuC7.png"/>
+
+The following are the different statuses available for an Active template:
+
+Column Name | Description
+------------- | ----------
+Template name | Name of the template.
+Status | The current status of the template.<ul><li>**Pending**: Templates that have been submitted for approval but are still awaiting review from Facebook.</li> <li>**Rejected**: Templates that have been reviewed and rejected for not meeting the guidelines or requirements set by WhatsApp. These templates cannot be used for messaging purposes.</li> <li>**Disabled**: Templates that were previously approved but have been disabled either by the business or by WhatsApp. Disabled templates cannot be used for messaging until reactivated.</li> <li>**Approved**: Templates that have successfully passed the review process and meet the guidelines and requirements set by WhatsApp. These templates are eligible for use in messaging campaigns.</li> <li>**1st phase**: Templates that have successfully passed the review process but received negative feedback from users. The campaign using these templates will be suspended for 3 hours as a precautionary measure.</li> <li> **2nd phase**: If you resend the same template after the 3-hour suspension, the templates will be blocked for 6 hours as a further measure to prevent any potential issues or misuse.</li></ul>
+Quality | The quality rating of the template based on users feedback.<ul><li>**Not available**: This is the initial rating for approved message templates.</li><li>**High**: Templates with positive performance and user feedback.</li><li>**Medium**: Templates with moderate performance and user feedback.</li><li>**Low**: Templates with poor performance and negative feedback.</li><li>**Pending**:   </li></ul>
+Template category | Classification of the template based on its purpose or content - Utility, Marketing.
+Created on | Date and time of the template creation. 
+Created by | The platform user who the template.
   
+:::note
+When a WhatsApp template is rated as "Active - Low quality," the campaign is paused to preserve the quality rating of associated phone numbers. Pausing durations are as follows: 1st instance - 3 hours, 2nd instance - 6 hours, and the 3rd instance leads to disabling of the campaign. If you wish to edit a paused template, it must be re-approved before it can be used again.
+:::
   
 
-## 2. WhatsApp template guidelines
+## 5. WhatsApp template guidelines
 
 A WhatsApp template needs to be approved by Facebook before you start using it. Here are some standard guidelines that you need to follow while creating a template to avoid rejections.
 
