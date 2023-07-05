@@ -189,7 +189,7 @@ Users can report or block WhatsApp templates which can result in blocking of the
 
 By actively monitoring the approval status, you can proactively address any potential issues and maintain seamless communication with your audience.
 
-   <img src="https://i.imgur.com/fWnhQ6d.png"/>
+   <img src="https://i.imgur.com/THa7a10.png"/>
 
 The following are the different statuses available for an Active template:
 
