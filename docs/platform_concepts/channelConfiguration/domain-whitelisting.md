@@ -26,15 +26,15 @@ To whitelist specific domains for the chat widget, follow these steps:
 	
 3. Navigate to the **Whitelist Domain** tab and enter the domain that you want to whitelist, then click **+Add**. You can also add multiple domains based on your requirements.
 
-     ![](https://i.imgur.com/WjQ8LtU.png)	 
+     ![](https://i.imgur.com/PjmPijU.png)	 
 
 4. The domain will be successfully whitelisted.
 
-   ![](https://i.imgur.com/uJvQ7o1.png)
+    <img src="https://i.imgur.com/Is4Z3qF.png" alt="drawing" width="80%"/>
 
 5. To test your chatbot locally, you need to enable **Allow localhost**. Note that, you need to disable it after deployment.
 
-    <img src="https://i.imgur.com/K57Qa7e.png" alt="drawing" width="80%"/>
+    <img src="https://i.imgur.com/iBDY35S.png" alt="drawing" width="80%"/>
   
 ## Delete whitelisted domains 
 
@@ -42,7 +42,7 @@ To delete whitelisted domains, follow these steps:
    
 1. If you wish to delete the added domain, click **Delete** icon.
 
-   ![](https://i.imgur.com/TIMG7Sl.png)
+   ![](https://i.imgur.com/CwojA0x.png)
 
 2. A pop-up is displayed with a confirmation message **Are you sure you want to delete "app.yellowmessenger.com"?**, click **Delete**.
 
