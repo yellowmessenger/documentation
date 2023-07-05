@@ -40,7 +40,7 @@ To enable TTS in your chatbot, follow these steps:
 
 5. Navigate to **Deploy** > **Web** > **Experience on a Website**.
 
-     <img src="https://i.imgur.com/1s7zOkH.png" width="70%"/>
+     <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
 
 6. Enter the text in the **Input** field. The chatbot converts text commands into spoken words.
 

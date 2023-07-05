@@ -332,6 +332,111 @@ Note that, this will replace the previously loaded bot. On Mobile SDK, if you wa
   </div>
 </details>
 
+<details>
+<summary>How to load the callout banner dynamically in the middle of a chat?</summary>
+<div>
+ <br/>
+ <div>A callout banner allows you to add a banner to chatbot's conversation. Before starting a chat with the user, the callout banner is shown at the top of the chat window with a description of the chatbot’s purpose. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#1-access-studio">here</a>
+
+Banners can used to alert the users about new products, services, special offers, and promotions.
+
+If the V1 bot consists of a banner and you want to move to V2 dynamically in the middle of th chat conversation, then you need to add a function to display the same banner in V2.
+
+While migrating from V1 to V2 use the following function code to copy the banner from V1 to V2:
+
+```
+return new Promise(async (resolve, reject) => {
+    try {
+        app.log(app.profile,"in profile");
+        if (app.profile && app.profile.payload && app.profile.payload.widgetVersion && app.profile.payload.widgetVersion=="v2"){
+            await app.sendEvent({
+                code: "ui-event-update-promotion",
+                data:[{
+                    title: app.renderMessage('indiatour', {}, ''),
+                    options: [
+                        {
+                            title: app.renderMessage('activate_now', {}, 'Activate Now'),
+                            text: `activate channel`
+                        }
+                    ]
+                
+            },
+                    {
+                        title: app.renderMessage('promotion_2', {}, ''),
+                        options: [
+                            {
+                                title: app.renderMessage('download_now', {}, 'Download Now'),
+                                url: `https://watcho.onelink.me/eyNf/4plou2wu`
+                            },
+                        ]
+                    },
+                    {
+                        title: app.renderMessage('promotion_3', {}, ''),
+                        options: [
+                            {
+                                title: app.renderMessage('subscribe', {}, 'Subscribe'),
+                                text: 'Subscribe'
+                            }
+                        ]
+                    },
+            ]
+        })
+        }
+        else{
+        await app.sendEvent({
+            code: "ui-event-update-promotion",
+            data: {
+                quickReplies: [
+                    {
+                        title: app.renderMessage('indiatour', {}, ''),
+                        options: [
+                                                        {
+                               title: app.renderMessage('activate_now', {}, 'Activate Now'),
+                                text: `activate channel`
+                            },
+                        ]
+                    },
+                    {
+                        title: app.renderMessage('promotion_2', {}, ''),
+                        options: [
+                            {
+                                title: app.renderMessage('download_now', {}, 'Download Now'),
+                                url: `https://watcho.onelink.me/eyNf/4plou2wu`
+                            },
+                        ]
+                    },
+                    {
+                        title: app.renderMessage('promotion_3', {}, ''),
+                        options: [
+                            {
+                                title: app.renderMessage('subscribe', {}, 'Subscribe'),
+                                text: 'Subscribe'
+                            }
+                        ]
+                    },
+                ],
+                "autoPlay": true,
+                "autoPlaySpeed": "4000",
+                hide: true,
+                showPromotionMessage: 'Hi! I am Dia, your <strong>d</strong>2h <strong>I</strong>ntelligent <strong>A</strong>ssistant.',
+                displayShowPromotionBar: true
+            }
+        });
+        }
+        return resolve();
+    } catch (e) {
+        app.log(e, 'error in showPromotion');
+        return resolve();
+    }
+
+});
+```
+<img src="https://i.imgur.com/VyvR6ZD.png" alt="drawing" width="100%"/></div>
+
+ <br/>
+  </div>
+</details>
+
 -----------
 
 ## PWA related FAQs

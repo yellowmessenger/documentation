@@ -46,6 +46,6 @@ To delete whitelisted domains, follow these steps:
 
 2. A pop-up is displayed with a confirmation message **Are you sure you want to delete "app.yellowmessenger.com"?**, click **Delete**.
 
-	<img src="https://i.imgur.com/xA2D6Po.png" alt="drawing" width="60%"/>
+	<img src="https://i.imgur.com/8mkASCj.png" alt="drawing" width="60%"/>
 
 3. The domain will be successfully deleted.

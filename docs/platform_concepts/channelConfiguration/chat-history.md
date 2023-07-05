@@ -61,9 +61,10 @@ To pass ymAuthentication token via script, follow these steps:
 
    ![](https://i.imgur.com/lO86cQ0.png)
 	
-5. Navigate to the **Deploy** tab and **COPY CODE TO Install bot**. A bot script is copied.
+5. Navigate to the **Deploy > Web > COPY CODE TO Install bot**. A bot script is copied.
  
-    ![](https://i.imgur.com/2Mstpsg.png)
+    <img src="https://i.imgur.com/cqdwcSc.png" alt="drawing" width="60%"/>
+
 
 	
 **Sample bot script:**
