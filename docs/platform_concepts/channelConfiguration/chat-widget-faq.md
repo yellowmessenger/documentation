@@ -389,6 +389,17 @@ export default () => (
   </div>
 </details>
 
+<details>
+<summary>It is possible to automatically open PWA chatbot using chat widget functions?</summary>
+<div>
+ <br/>
+ <div>No, by default PWA bot will be opened automatically.
+
+
+</div>
+  </div>
+</details>
+
 ----------
 
 ## Chat history related FAQs
