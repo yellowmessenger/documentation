@@ -182,7 +182,7 @@ You can see in the preview tab below, the variable user we just created is highl
 
   
 
-## ## View WhatsApp template approval or rejection status
+## 4. View WhatsApp template approval or rejection status
 Once a WhatsApp template is approved and marked as Active, it can be used to send messages to customers, regardless of its quality rating. However, WhatsApp templates are rated based on their quality, reflecting their performance. 
 
 Users can report or block WhatsApp templates which can result in blocking of the campaign. If the template receives consistent negative feedback, its status may change and can interrupt the campaign, impacting its performance. 
@@ -238,7 +238,7 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 
   
 
-### 2.1 Examples of approved & rejected templates
+### 5.1 Examples of approved & rejected templates
 
   
 
