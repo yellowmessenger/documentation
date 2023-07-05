@@ -18,7 +18,7 @@ Simply enter your requirements, and let our AI Copilot do the work for you. No t
 
    ![](https://i.imgur.com/B38RYSN.png)
    
-Click [here]([https:/](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot)/) to learn about this feature in detail.
+Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot) to learn about this feature in detail.
 
 #### 2. MTSL for safe transmission of data
 
