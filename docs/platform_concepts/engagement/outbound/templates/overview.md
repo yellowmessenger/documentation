@@ -28,9 +28,9 @@ To access Template manager, follow these steps -
 
   
 
-2. In Engage module, select **Templates** from left panel.
+2. In the **Engage** module, select **Templates** from left panel.
 
-   <img src="https://i.imgur.com/fWnhQ6d.png"/>
+   <img src="https://i.imgur.com/THa7a10.png"/>
 
 
 Column Name | Description
