@@ -394,6 +394,7 @@ The following are the benefits of testing a campaign before launching -
 
    d. To add more users (up to 5 test users) click on **+Add Users** and repeat the process.
 
+   
    ![](https://i.imgur.com/OFDwZvH.gif)
 
   
@@ -430,7 +431,7 @@ Here are some common errors that you may encounter when working with campaigns:
 For API related error codes and descriptions, see [Notification API response codes](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#24-response-codes)
 :::
 
-## 9. Configure Campaign status & progress notifications
+## 9. Notifications on Campaign status & progress
 
 You can get notified via email for critical campaign status and progress alerts. For broader awareness and efficient resolution of campaign-related concerns, you can specify preferred users to receive notifications in case of any issues with the campaign. By default, email alerts are sent automatically to the template creator for critical template statuses and to the campaign creator for campaign failures due to template disablement.
 

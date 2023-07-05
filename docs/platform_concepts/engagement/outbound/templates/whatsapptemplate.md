@@ -189,7 +189,7 @@ Users can report or block WhatsApp templates which can result in blocking of the
 
 By actively monitoring the approval status, you can proactively address any potential issues and maintain seamless communication with your audience.
 
-   <img src="https://i.imgur.com/cCpxuC7.png"/>
+   <img src="https://i.imgur.com/fWnhQ6d.png"/>
 
 The following are the different statuses available for an Active template:
 
@@ -197,7 +197,7 @@ Column Name | Description
 ------------- | ----------
 Template name | Name of the template.
 Status | The current status of the template.<ul><li>**Pending**: Templates that have been submitted for approval but are still awaiting review from Facebook.</li> <li>**Rejected**: Templates that have been reviewed and rejected for not meeting the guidelines or requirements set by WhatsApp. These templates cannot be used for messaging purposes.</li> <li>**Disabled**: Templates that were previously approved but have been disabled either by the business or by WhatsApp. Disabled templates cannot be used for messaging until reactivated.</li> <li>**Approved**: Templates that have successfully passed the review process and meet the guidelines and requirements set by WhatsApp. These templates are eligible for use in messaging campaigns.</li> <li>**1st phase**: Templates that have successfully passed the review process but received negative feedback from users. The campaign using these templates will be suspended for 3 hours as a precautionary measure.</li> <li> **2nd phase**: If you resend the same template after the 3-hour suspension, the templates will be blocked for 6 hours as a further measure to prevent any potential issues or misuse.</li></ul>
-Quality | The quality rating of the template based on users feedback.<ul><li>**Not available**: This is the initial rating for approved message templates.</li><li>**High**: Templates with positive performance and user feedback.</li><li>**Medium**: Templates with moderate performance and user feedback.</li><li>**Low**: Templates with poor performance and negative feedback.</li><li>**Pending**:   </li></ul>
+Quality | The quality rating of the template based on users feedback.<ul><li>**Not available**: This is the initial rating for approved message templates.</li><li>**High**: Templates with positive performance and user feedback.</li><li>**Medium**: Templates with moderate performance and user feedback.</li><li>**Low**: Templates with poor performance and negative feedback.</li></ul>
 Template category | Classification of the template based on its purpose or content - Utility, Marketing.
 Created on | Date and time of the template creation. 
 Created by | The platform user who the template.
