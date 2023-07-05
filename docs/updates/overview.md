@@ -167,7 +167,7 @@ The chat widget provides an option to allow or block specific file formats for u
 
 Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settingsr) to learn more about this feature in detail.
 
-<img src="https://i.imgur.com/eBzXp6o.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/0GU94m6.png" width="40%"/>
 
 
 #### 2. Image support in callout banners
@@ -178,7 +178,7 @@ This feature will make your banners more visually appealing and eye-catching opt
 Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#111-callout-banner) to learn more about this feature in detail.
 
 
-<img src="https://i.imgur.com/jeD86ja.png" alt="drawing" width="40%"/>
+<img src="https://i.imgur.com/lSlDg4H.png" alt="drawing" width="40%"/>
 
 #### 3. Single select transaction card
 

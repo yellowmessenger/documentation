@@ -138,7 +138,7 @@ To deploy the widget on your website, follow these steps:
 1. Navigate to the **Deploy** tab.
 2. Copy the code using the respective icon, and paste it on your website.  
 
-   <img src="https://i.imgur.com/yvDO4Vq.png" width="70%"/>
+   <img src="https://i.imgur.com/G9ZU6PI.png" width="70%"/>
 
 
 2. In the same code, next to bot ID, add the following:
@@ -196,11 +196,11 @@ To access mobile SDKs help doc links, follow these steps.
    
 1. Navigate to the **Deploy** tab and click **Mobile SDK**. 
 
-      <img src="https://i.imgur.com/U57jMw1.png" width="80%"/>
+      <img src="https://i.imgur.com/p4ZPjCn.png" width="80%"/>
 
 2. To install the chat widget on your mobile application, click **Read docs** links corresponding to the respective mobile SDKs. 
 
-     <img src="https://i.imgur.com/LWWr2ik.png" width="80%"/>
+     <img src="https://i.imgur.com/ZRE43N3.png" width="80%"/>
 	
 3. Upon clicking the links, it navigates you to the respective Mobile SDK documentation.
 
@@ -222,7 +222,7 @@ As you design the bot, you can preview the changes in real time in the **Preview
 
 To preview your bot on a website, click **Deploy** > **Web** > **Experience on a Website**.
 
-   <img src="https://i.imgur.com/1s7zOkH.png" width="70%"/> 
+   <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/> 
 
 
 :::info
