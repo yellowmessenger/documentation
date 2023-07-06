@@ -41,6 +41,13 @@ If an attribute is available for the user, the Split considers it as a known cat
 
 The Total MRU (Monthly Reached User) card shows the count of unique users in User360 to whom at least one campaign has been sent out in each calendar month. This graph provides an overview of the monthly reach and engagement with users. It counts each user only once per month, regardless of the number of campaigns they have been targeted with.
 
+:::info
+#### MRU Pricing
+Pay for the Value You Receive with MRU Pricing
+
+Yellow.ai charges businesses based on the MRU count. With MRU pricing, you are billed according to the number of MRUs, ensuring that you pay only for the value you receive. Each user is counted once per month, regardless of the number of campaigns they engage with. This transparent pricing model allows you to optimize costs and align your expenses with the actual value delivered by Yellow.ai.
+:::
+
    ![](/img/cdp/mru.png)
 
 This includes campaigns sent via the following channel:
@@ -53,6 +60,7 @@ This includes campaigns sent via the following channel:
 Deleted or archived individuals are still counted in the total number of Monthly Reached Users if they were reached since the last billing date.
 If a deleted user is recreated, they will be counted as a new user, even if they have the same userId.
 :::
+
 
 ***
 
