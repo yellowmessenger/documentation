@@ -143,7 +143,7 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/d
 
 ## Channels
 
-## 1. New Whatsapp Policy by Meta
+### 1. New Whatsapp Policy by Meta
 
 WhatsApp has introduced a new pricing policy for the messages that are delivered through its business platform and APIs based on the conversation initiator (user-initiated or business-initiated) and category.
 
