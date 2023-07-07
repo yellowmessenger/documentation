@@ -1,13 +1,13 @@
 ---
-title: Chat Agent Activity Report
+title: Chat agent activity report
 sidebar_label : Agent activity
 ---
 
-> To learn how to generate  Chat Agent Activity report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
+> Learn how to generate Chat agent activity report [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
 
 :::info
-- Only an admin can download reports.
-- The **agent activity report** will not track the time spent in **Offline** status.
+- Only an admin can download the reports.
+- The **agent activity report** does not track the time spent in the **Offline** status.
 
 :::
 
@@ -16,6 +16,6 @@ sidebar_label : Agent activity
 |1|Name|Name of the agent|
 |2|Start time|The starting time of the corresponding status|
 |3|End time|The ending time of the corresponding status|
-|4|Agent ID| UID for agents. For internal purpose |
+|4|Agent ID| UID for agents (for internal purposes) |
 |5|Active Type|Agent status - Available, Away, Busy|
-|6|Duration|The total time duration the agent remained in the corresponding status|
+|6|Duration|The total duration the agent remained in the corresponding status|

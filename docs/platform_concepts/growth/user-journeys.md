@@ -1,98 +1,120 @@
 ---
-title: User journey visualization
-sidebar_label: User journey visualization
+title: User journey visualisation
+sidebar_label: User journey visualisation
 ---
+This article introduces the different features available for visualising user [flows/journey](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). They are:
+1. [Understanding the paths users are taking](#1): This feature allows you to gain insights into the routes users follow while interacting with the bot. By understanding the various flows, you can better comprehend user behavior.
+2. [Viewing steps within each flow](#2): With this feature, you can examine individual steps within a flow to determine where users are switching or dropping off. This information helps you pinpoint critical points in the user journey.
+3. [Visualising insights for each flow](#3): By visualising insights for each flow, you can gather valuable information about user interactions. This feature enables you to analyze the performance of different flows and identify areas for improvement.
 
-In this article, you will learn about the various features available for the visualization of user flow(journey), namely: 
-1. [Understand the flows your users are taking](#1)
-2. [View steps inside each flow to know where the users switched/dropped off](#2)
-3. [Visualize insights of each flow](#3)
+-----
+
+## User journey viz. overview 
 
 
-User journey visualization enables you to view how your users are moving across different [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) when conversing with the bot. You can identify major points where users are dropping off or changing paths, and make changes in bot design to improve overall engagement and conversion.
+User journey visualisation provides a comprehensive view of how users navigate through different flows during conversations with the bot. It allows you to detect significant drop-off or path changes, allowing you to make design adjustments that enhance engagement and conversion rates.
 
+### Navigate to user journey visualisation
 
-Some high-level insights you can derive from this section are:
+To access the User journey visualisation feature, follow these steps:
 
-1. Analyze various paths the user has taken.
-2. Identify major points where users are dropping off or changing paths.
-3. Help customers build a hypothesis for adding/making any changes in the bot journeys.
-4. Improve engagement & journey completion rate.
-
-**Navigation:**
-
-- To access User journey visualization, go to **Insights** > **User journeys** > **User journey visualization**.
+1. Go to **Insights** in the platform.
+2. Select **User journeys**.
+3. Choose **User journey visualisation**.
 
 ![](https://i.imgur.com/GPQooDP.png)
 
 
-----------
 
-## <a name="1"></a> 1. Understand user journey
+### Use cases of visualisation 
 
-Follow the below steps to understand how to visualize the user journey: 
+- **Analyzing user paths**: You can analyze the different paths users have taken during their interactions.
+- **Identifying drop-off and path changes**: This feature helps you identify major points where users may be dropping off or deviating from expected paths.
+- **Assisting with hypothesis building**: User journey visualisation aids customers in formulating hypotheses for making changes or additions to bot journeys.
+- **Improving engagement and journey completion**: By utilizing the insights gained from user journey visualisation, you can enhance user engagement and increase the rate of journey completion.
+
+### Filter data for channels 
+
+This section can be viewed for all channels or specifically for active channels in your bot.
+
+![](https://i.imgur.com/jE0qcDE.png)
+
+### Filter data for a time period 
+
+You can view data for a specific date range by selecting the dates on the calendar. 
+
+![](https://i.imgur.com/tpjMXBl.png)
 
 
-1. On the user journey visualization page, you will find the below flowchart. This chart will consist of the start node followed by all the flows available in your bot. 
+-------
 
-![](https://i.imgur.com/jLqm2y7.png)
+## <a name="1"></a> Understand the user journey
 
-2. **Start**: This is the start of the flow chart. Paths are created for continued bot-user sessions until there is a 30 minutes stretch of inactivity. This session definition differs from the standard definition used across the dashboard. This is for more accurate visualizations. 
+To understand how to visualise the user journey, follow the steps below:
 
-![](https://i.imgur.com/m1UlUv4.png)
+1. When you open the user journey visualisation page, you will see a flowchart. This chart includes a start node followed by all the available flows in your bot.
 
-3. Click the **-** sign on the flow component and you can view the connected flows. By placing the cursor on any of the flow, you can view the following parameters: 
+    ![](https://i.imgur.com/jLqm2y7.png)
+
+2. **Start**: This represents the beginning of the flowchart. Paths are created to track ongoing bot-user sessions until there is a 30-minute period of inactivity. 
+
+    > This session definition differs from the standard definition used across the dashboard. This is for more accurate visualisations. 
 
 
+    ![](https://i.imgur.com/m1UlUv4.png)
 
-| label       | Description                                                                                  |
-| ------------ | -------------------------------------------------------------------------------------------- |
-| **User Dropped** | This means that the user dropped off the chat window or did not respond for a very long time |
-|**Flow completion rate**|Total times a flow was completed / total times it was triggered|
-|**Flow dropped rate**|Percentage of times users dropped off the chat|
-|**Flow switched rate** |Percentage of times users switched paths between two flows|
+3. Click the **-** sign on a flow component to view the connected flows. By hovering over any flow, you can see the following parameters:
 
-:::note
+    | label       | Description                                                                                  |
+    | ------------ | -------------------------------------------------------------------------------------------- |
+    | **User Dropped** | Indicates when the user has dropped off the chat window or has not responded for an extended period of time |
+    |**Flow completion rate** | Total number of times a flow has been successfully completed divided by the total number of times it was triggered. |
+    |**Flow dropped rate** | Percentage of times users dropped off during the flow. |
+    |**Flow switched rate** | Percentage of times users switched paths between two flows. |
 
-**What do the numbers above each flow indicate?**
+#### What do the numbers above each flow indicate?
 
-Let us take the below example (**Free trial subscription** flow **1.12%(7)**) to understand these numbers. 
+Take the example of the **Free trial subscription** flow, with a rate of **1.12% (7)**:
+
 <img src="https://i.imgur.com/ZXkkCi5.png" alt="drawing" width="80%"/>
 
+This means that out of 100% of sessions triggered in the chat, approximately **1.12%** (around 7) of them directly entered the **Free trial subscription** flow after starting the session.
 
-This means, out of 100% of the sessions which got triggered on the chat, 1.12 % (~ 7) times people went to the Free trial subscription flow directly after starting the session.
-* This does not mean 7 users went through this flow. 
-* This also does not mean that only 7 times the  Free trial subscription flow was triggered. 
-* The flow was triggered 7 times directly after starting the session. This does not include the numbers for cases where this flow was triggered at a later stage.
-:::
-
-### <a name="2"></a> 1.1 View steps inside the flow
+- This doesn't imply that only 7 users went through this flow.
+- This doesn't mean that the **Free trial subscription** flow was triggered only 7 times.
+- The flow was triggered 7 times directly after starting the session, excluding cases where it was triggered at a later stage.
 
 
-This modal helps you visualize how users have moved from one step to another inside a flow, and where they have dropped off, switched, or completed their flow. The option **View steps** can be accessed below each flow when that respective flow is open. 
+
+### <a name="2"></a> View steps within the flow
+
+This modal allows you to visualise how users progress from one step to another within a flow, as well as where they drop off, switch paths, or complete the flow. The option **View steps** is available below each flow when the respective flow is open.
 
 <img src="https://i.imgur.com/0yv7SxV.png" alt="drawing" width="80%"/>
 
-This chart indicates the path taken after entering this flow, following can be monitored by the components within:
+This chart illustrates the path taken after entering the flow, and the following components can be observed:
 
-1. **Flow switched**: This means the user switched from flow A to flow B.
-2. **Flow completed**: This denotes the completion of the flow. It might take longer for certain users to complete the flow based on the steps in the flow and their responses to it.
-3. **User dropped**: This means the user got dropped off the chat window or did not respond for a very long time.
+1. **Flow switched**: Indicates when users switch from Flow A to Flow B.
+2. **Flow completed**: Indicates the completion of the flow. Completion time may vary for different users based on the steps within the flow and their responses.
+3. **User dropped**: Indicates when the user has dropped off the chat window or has not responded for an extended period of time.
+
 
 ![](https://i.imgur.com/QFfzzEQ.png)
 
 ------
 
-## <a name="3"></a> 2. Visualization insights
+## <a name="3"></a> visualisation insights
 
-Widget with actionable insights around good/poor performing flows, and steps with maximum drop-offs, switches, and agent transfers. 
-- This is to automate the analysis of Journey Visualisation and help you identify areas of concern quickly, to improve bot performance. 
-- You can further analyze the flows/steps highlighted and visit Builder to make necessary bot design changes. You can also check week-on-week improvement numbers to understand the impact of the changes made. 
-- The analysis of user journey visualization has been automated to provide direct actionable insights, available on the right side of the section.
+The user journey visualisation section provides a widget with actionable insights regarding the performance of flows and steps, including maximum drop-offs, switches, and agent transfers. 
+- The purpose of automating the analysis of user journey visualisation is to help you quickly identify areas of concern and improve bot performance. 
+- The actionable insights provided in this section allow you to analyze the highlighted flows and steps, make necessary bot design changes in the **Studio/Builder**, and assess the impact of these changes by checking week-on-week improvement numbers. 
+- This automated analysis aims to streamline the process and provide you with direct insights to facilitate effective optimization of your bot. 
+- These insights are available on the right side of the section.
+
 
 ![](https://i.imgur.com/Cj46e5s.png)
 
-1. View insights of the following by selecting a value:
+1. To view insights for the following categories, select a value:
     * **Poor performing flows**
     * **Good performing flows**
     * **Steps with maximum drop off’s**
@@ -100,38 +122,26 @@ Widget with actionable insights around good/poor performing flows, and steps wit
     * **Steps with maximum agent transfers**
 
 
-2. The related steps and flows along with their relevant data points would be listed out 
-    1. Take an example of **Steps with maximum drop offs**. The step names along with their related flow names are listed for which the drop-off rate is high.
+2. The relevant steps and flows, along with their corresponding data points, will be listed:
+    1. Take the example of **Steps with maximum drop-offs**. The step names, along with their related flow names, are listed when the drop-off rate is high.
     <img src="https://i.imgur.com/N9o97iU.png" alt="drawing" width="80%"/>
-    2. Select any of the flow names. For example - Quick replies.
+    2. Select any of the flow names, such as **Quick replies**.
     <img src="https://i.imgur.com/UKXjx9H.png" alt="drawing" width="80%"/>
-    3. You will reach the steps inside the floor model where you can see how the users have traversed within that particular flow.
-    4. The step with the highest drop rate is highlighted for quick and easy reference.
+    3. You will be directed to the steps within the flow model, where you can see how users have progressed within that particular flow.
+    4. The step with the highest drop-off rate is highlighted for quick and easy reference.
     <img src="https://i.imgur.com/x3z01fI.png" alt="drawing" width="100%"/>
-    5.  Click **Show steps** on top right to get redirected to **Studio** > **Builder** to make necessary changes in the flow design.
+    5. Click **Show steps** on the top right to be redirected to **Studio > Builder** to make necessary changes in the flow design.
     <img src="https://i.imgur.com/lHb8Ko9.png" alt="drawing" width="80%"/>
 
 
 
 :::note
 
-Important pointers about the visualization section: 
-
-- This can be viewed for all channels or the active channels on your bot. 
-
-![](https://i.imgur.com/jE0qcDE.png)
-
-- This can be viewed for a specific range of dates. 
-
-![](https://i.imgur.com/tpjMXBl.png)
-
-- The data is distributed on a ***session level***.
-- Individual user paths cannot be visualized here.
-- All the numbers mentioned inside the black boxes denote the number of ***user hits and not the unique users***.
-- journeyVizOther(~3.12%) is the number of hits where paths did not follow any pattern.
-
-
-![](https://i.imgur.com/RBM5nLL.png)
+- The data is distributed at a **session level**.
+- Individual user paths cannot be visualised here.
+- The numbers inside the black boxes represent the **number of user hits, not unique users**.
+- **journeyVizOther (~3.12%)** represents the number of hits where paths did not follow any specific pattern.
+    ![](https://i.imgur.com/RBM5nLL.png)
 :::
 
 

@@ -130,4 +130,15 @@ To select a plan either on a monthly or annual basis, toggle between the **Month
 
 Clicking **Choose Plan** or **Contact Sales** will redirect you to the Calendly pop-up (same as mentioned above) to book a one-on-one session with our product experts.
 
+## 5. Other modules pricing details
+
+Apart from the subscription plans, Yellow.ai charges based on the usage of specific modules.
+
+### 5.1 Monthly Reached Users (MRU) pricing
+
+Yellow.ai charges businesses based on the MRU count. With MRU pricing, you are billed according to the number of MRUs, ensuring that you pay only for the value you receive. Each user is counted once per month, regardless of the number of campaigns they engage with. This transparent pricing model allows you to optimize costs and align your expenses with the actual value delivered by Yellow.ai.
+
+### 5.2 WhatsApp pricing
+
+Meta has announced updates to its price policy starting June 1, 2023. Yellow.ai charges businesses based on the MRU count. The charges for WhatsApp conversations are determined by the end user's phone number, and the cost varies depending on the type of conversation, country, or location. You can have up to 1,000 free conversations every month. If the limit is exceeded, you need to pay a monthly fee.  For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-pricing).
 

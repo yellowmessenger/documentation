@@ -25,9 +25,9 @@ module.exports = {
   // },
   themeConfig: {
     algolia: {
-      apiKey: 'b91fb91a4d3a5067f2f5165bb92c9fa8',
-      indexName: 'ym_docs',
-      appId: 'LWOORM11IH',
+      apiKey: "b91fb91a4d3a5067f2f5165bb92c9fa8",
+      indexName: "ym_docs",
+      appId: "LWOORM11IH",
 
       // Optional: see doc section below
       contextualSearch: true,
@@ -36,7 +36,7 @@ module.exports = {
       searchParameters: {},
 
       //... other Algolia params
-      placeholder: 'Search docs'
+      placeholder: "Search docs",
     },
     prism: {
       theme: require("prism-react-renderer/themes/github"),
@@ -67,7 +67,7 @@ module.exports = {
           position: "left",
           activeBasePath: "/docs/cookbooks",
         },
-        
+
         {
           to: "docs/updates/overview",
           label: "What's New",
@@ -95,7 +95,7 @@ module.exports = {
           to: "https://cloud.yellow.ai/auth/signup?utm_source=SupportDocs&utm_medium=doc_navbar&utm_campaign=docs_april_23",
           label: "Try for free",
           position: "right",
-          className: 'free-signup',
+          className: "free-signup",
         },
       ],
     },
@@ -103,13 +103,8 @@ module.exports = {
   },
   presets: [
     [
-     // "@docusaurus/preset-classic",
-     "docusaurus-preset-openapi",
+      "@docusaurus/preset-classic",
       {
-        api: {
-          path: "api/petstore.yaml",
-          routeBasePath: "api",
-        },
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
         },
@@ -134,7 +129,7 @@ module.exports = {
   onBrokenLinks: "log",
   scripts: [
     "/js/FeedbackFooter.js", // feedback footer
-    "/js/bot.js", // connect support bot 
-    //"/js/bot.html", // connect support bot 
+    "/js/bot.js", // connect support bot
+    //"/js/bot.html", // connect support bot
   ],
 };
