@@ -3,7 +3,7 @@ title: Ticket Agent Performance Report
 sidebar_label : Agent performance 
 ---
 
-> To learn how to generate Ticket Agent Performance Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
+> Learn how to generate Ticket agent performance report [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports).
 
 :::info
 Only an admin can download reports.
@@ -13,7 +13,7 @@ Only an admin can download reports.
 |--|--|--|--|
 |1| Date | The date for which the report is generated| Format is DD-MM-YYYY|
 |2| Agent Name| Name of the agent||
-|3| Agent Email| Email id of the agent||
+|3| Agent Email| Email ID of the agent||
 |4| Group name| All the group names to which the agent belongs|If agent belongs to multiple group, all the group names will be listed here|
 |5| Assigned tickets|Total number of new tickets that were assigned to the agent on the selected date| Including ticket transfers|
 |6| Resolved tickets|The total number of tickets assigned to agent that were resolved on the selected date. |The ticket may have been created inside/outside the selected date.|

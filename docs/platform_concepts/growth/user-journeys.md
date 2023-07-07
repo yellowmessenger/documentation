@@ -2,10 +2,10 @@
 title: User journey visualisation
 sidebar_label: User journey visualisation
 ---
-This article introduces the different features available for visualizing user [flows/journey](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). They are:
+This article introduces the different features available for visualising user [flows/journey](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). They are:
 1. [Understanding the paths users are taking](#1): This feature allows you to gain insights into the routes users follow while interacting with the bot. By understanding the various flows, you can better comprehend user behavior.
 2. [Viewing steps within each flow](#2): With this feature, you can examine individual steps within a flow to determine where users are switching or dropping off. This information helps you pinpoint critical points in the user journey.
-3. [Visualizing insights for each flow](#3): By visualizing insights for each flow, you can gather valuable information about user interactions. This feature enables you to analyze the performance of different flows and identify areas for improvement.
+3. [Visualising insights for each flow](#3): By visualising insights for each flow, you can gather valuable information about user interactions. This feature enables you to analyze the performance of different flows and identify areas for improvement.
 
 -----
 
@@ -50,7 +50,7 @@ You can view data for a specific date range by selecting the dates on the calend
 
 ## <a name="1"></a> Understand the user journey
 
-To understand how to visualize the user journey, follow the steps below:
+To understand how to visualise the user journey, follow the steps below:
 
 1. When you open the user journey visualisation page, you will see a flowchart. This chart includes a start node followed by all the available flows in your bot.
 
@@ -88,7 +88,7 @@ This means that out of 100% of sessions triggered in the chat, approximately **1
 
 ### <a name="2"></a> View steps within the flow
 
-This modal allows you to visualize how users progress from one step to another within a flow, as well as where they drop off, switch paths, or complete the flow. The option **View steps** is available below each flow when the respective flow is open.
+This modal allows you to visualise how users progress from one step to another within a flow, as well as where they drop off, switch paths, or complete the flow. The option **View steps** is available below each flow when the respective flow is open.
 
 <img src="https://i.imgur.com/0yv7SxV.png" alt="drawing" width="80%"/>
 
@@ -138,7 +138,7 @@ The user journey visualisation section provides a widget with actionable insight
 :::note
 
 - The data is distributed at a **session level**.
-- Individual user paths cannot be visualized here.
+- Individual user paths cannot be visualised here.
 - The numbers inside the black boxes represent the **number of user hits, not unique users**.
 - **journeyVizOther (~3.12%)** represents the number of hits where paths did not follow any specific pattern.
     ![](https://i.imgur.com/RBM5nLL.png)

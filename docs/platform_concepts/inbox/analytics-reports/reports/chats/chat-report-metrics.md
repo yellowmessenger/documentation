@@ -8,7 +8,7 @@ sidebar_label : Chat metrics explained
 
 It is the average time taken by the agent to respond to each message of the customer in a chat conversation. This metric is present in the Archives report. Response time is calculated for every agent response in a conversation. It is calculated by the following logic;
 
->**ART = Sum of time duration between end user’s initial and agent’s initial message divided by the number of replies in the conversation.**
+> **ART = Sum of time duration between end user’s initial and agent’s initial message divided by the number of replies in the conversation.**
 
 Example conversation A,
 
