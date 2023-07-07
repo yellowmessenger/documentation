@@ -4,7 +4,7 @@ sidebar_label : Ticket archive
 ---
 
 
-> To learn how to generate Ticket Archive Report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
+> Learn how to generate Ticket archive report [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
 
 :::info
 Only an admin can download reports.
@@ -13,14 +13,14 @@ Only an admin can download reports.
 | Sno | Field  | Description | Comments
 |--|--|--|--|
 | 1 | ticket_id |The auto generated reference number for every incoming ticket | |
-| 2 | user_email | Email id of the end user who raised the ticket | |
+| 2 | user_email | Email ID of the end user who raised the ticket | |
 | 3 | subject| Subject of the incoming  ticket| |
 | 4 | tags | All the tags applied on the ticket| |
 | 5 | group | The current group to which the ticket belongs to | |
-| 6 | group_email | The email id that is configured to the assigned group||
+| 6 | group_email | The email ID that is configured to the assigned group||
 | 7 | status | The current status of the ticket | |
 | 8 |assignment_type|The nature of how the ticket got assigned - AUTO (by the bot) or MANUAL (by agent/admin) | |
-| 9 |source_email| The email id to which the customer raised/created this specific ticket to||
+| 9 |source_email| The email ID to which the customer raised/created this specific ticket to||
 | 10 | priority |The current priority of the ticket| |
 | 11 | resolution_time | The timestamp at which the ticket was marked resolved | |
 | 12 | handling_time | The time taken by the agent to resolve the ticket | [[Resolved time - Assigned time] - Time spent in (Pending + On-hold)]| 
@@ -44,5 +44,5 @@ Only an admin can download reports.
 | 30 | first_response_time_sla | The duration by which the first response SLA was achieved/breached | Eg: **+20:00** if the first response was achieved 20 mins before the set limit OR **-10:00** if the first response was breached by 10 mins|
 | 31 | every_response_time_sla | Percentage of every response SLAs achieved to the total applicable SLAs | |
 | 32 | resolution_time_sla | The duration by which the resolution SLA was achieved/breached|Eg: **+20:00** if the resolution was achieved 20 mins before the set limit OR **-10:00** if the resolution was breached by 10 mins |
-| 33 | collaborators | Email ids of the other agents who collaborated in this ticket| |
+| 33 | collaborators | Email IDs of the other agents who collaborated in this ticket| |
 | 34 | custom fields | All the custom field data updated for this ticket| 

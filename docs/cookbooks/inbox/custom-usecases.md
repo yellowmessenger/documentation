@@ -59,3 +59,23 @@ Click [here](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback) for
 - All the support requests that are triggered through this particular flow will be assigned to the Escalation group **live chats**. These support requests will be found in the **Chats** tab and not in the **Tickets** tab.  
 
 ![](https://i.imgur.com/Ba6S98Z.png)
+
+---
+
+## 6. How to pass hierarchical custom fields in raise ticket node?
+
+- You can pass hierarchical custom fields in an array variable (this array variable has to be created in a function).
+**Array variable syntax**       
+
+[
+  {
+      "id": "id6d80e018eb471-1687697102772",
+      "name": "Typeone",
+      "levelName": "Sub Category"
+  },
+  {
+      "id": "ida4564067aff73-1687697129156",
+      "name": "TypeTwo",
+      "levelName": "Sub Category"
+  }
+]
