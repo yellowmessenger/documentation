@@ -1,6 +1,6 @@
 ---
-title: WhatsApp bot best practices
-sidebar_label: WhatsApp bot best practices
+title: WhatsApp starter guide
+sidebar_label: WhatsApp starter guide
 ---
 
 This document provides details on the best practises and limitations that you need to follow while creating the WhatsApp (WA) bot. For more information on WA limitations, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-char-limit).
