@@ -103,7 +103,7 @@ If you want your chatbot to provide accurate answers for a specific use case, su
 
 **Sample Response:**
 
-```
+```js
 
 {
     "id": "cmpl-6ktdmH8VoyYh1dJRxwa2WIDaW49I6",
@@ -124,4 +124,4 @@ If you want your chatbot to provide accurate answers for a specific use case, su
         "total_tokens": 21
     }
 }
-```Modified
+```

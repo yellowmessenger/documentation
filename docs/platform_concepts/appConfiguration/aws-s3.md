@@ -111,14 +111,20 @@ Configuring the integration with AWS-S3 is straightforward. Follow the steps def
 2. Go to Integration section
 3. In Integration click on the connect for the AWS-S3.
 4. Enter Access Key Id and Secret Access Key.
-![alt_text](https://cdn.yellowmessenger.com/bBy2uI0OMplv1661313612403.png "image_tooltip")
+![alt_text](https://i.imgur.com/vQ1MaA2.png "image_tooltip")
 
 5. Click on Save
 6. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
 
 7. Store AWS-S3 response in Object type variable in action-node.
+8. If you have multiple accounts, follow the above mentioned steps to add each of them.
 
-
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
 
 Following the above steps will connect AWS-S3 with the yellow.ai platform.
 
