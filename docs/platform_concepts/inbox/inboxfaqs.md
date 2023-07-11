@@ -84,7 +84,7 @@ Sticky tickets will not go into the queue even if the group queue is turned ON. 
 <details>
 <summary> What is the cost of sending WhatsApp templates? </summary>
 <div>
- Whatsapp charges a per-message fee for all the templates sent outside the 24 hr session based on the number of messages & country you send to. Click <a href= "https://developers.facebook.com/docs/whatsapp/pricing" > here </a> to learn more.   
+ Whatsapp charges a per-message fee for all the templates sent outside the 24 hr session based on the number of messages & country you send to. Click <a href= "https://developers.facebook.com/docs/whatsapp/updates-to-pricing/"> here </a> to learn more.   
 </div>
 </details>
 

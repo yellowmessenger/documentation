@@ -41,7 +41,7 @@ Follow the steps below to create an app on Slack:
 
 1. Visit https://api.slack.com/apps and click **Create a new app**.
 2. Enter app name and select an app development workspace.
-3. After creating the app, goto the event subscription on the left panel. Enable the event subscription and add request URL to https://app.yellowmessenger.com/integrations/slack/receive/ botID
+3. After creating the app, goto the event subscription on the left panel. Enable the event subscription and add request URL to `https://app.yellowmessenger.com/integrations/slack/receive/botID`
 
   ![](https://i.imgur.com/hLHzre9.png)
 
@@ -83,7 +83,7 @@ Follow the steps below to create an app on Slack:
 
   ![](https://i.imgur.com/rMWt5KS.png)
 
-6. Open **Interactivity & Shortcuts**, enable and add request URL to: https://app.yellowmessenger.com/integrations/slack/interaction/ botID
+6. Open **Interactivity & Shortcuts**, enable and add request URL to: `https://app.yellowmessenger.com/integrations/slack/interaction/botID`
 
   ![](https://i.imgur.com/ecPETcX.png)
 
@@ -101,7 +101,7 @@ Follow these steps to configure a single workspace:
 
   ![](https://i.imgur.com/tFspnLG.png)
 
-2. Select a channel, incase you have enabled external incoming [webhooks](https://api.slack.com/apps/[APPID]/incoming-webhooks)
+2. Select a channel, incase you have enabled external incoming [webhooks](https://api.slack.com/messaging/webhooks)
 
   ![](https://i.imgur.com/3ufAVAy.png)
 
@@ -148,7 +148,7 @@ Follow the steps to configure multi-workspace:
 - Store the above 2 mappings in the [Bot Table](https://docs.yellow.ai/docs/platform_concepts/studio/database#1-create-table) using the [Database Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#database).
 
 
-4. You can install a multi-workspace App through OAuth flow, using the following link https://app.yellow.ai/integrations/slack/install/ botId
+4. You can install a multi-workspace App through OAuth flow, using the following link `https://app.yellow.ai/integrations/slack/install/botId`
 
 ## <a name="4"></a> 4. Adding Slack app to Direct Message/Channel
 
@@ -194,7 +194,7 @@ Follow the below steps to add slash command:
 
   ![](https://i.imgur.com/iqVY0Y3.png)
 
-2. Fill the command, Description and add Request URL > SAVE Request URL: https://app.yellowmessenger.com/integrations/slack/shortcuts/ botID
+2. Fill the command, Description and add Request URL > SAVE Request URL: `https://app.yellowmessenger.com/integrations/slack/shortcuts/botID`
 
   ![](https://i.imgur.com/HU5qrLT.png)
 

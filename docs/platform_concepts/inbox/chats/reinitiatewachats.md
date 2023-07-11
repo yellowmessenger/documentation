@@ -16,7 +16,7 @@ In order to initiate a WhatsApp message to a person, you must first receive **op
 :::note
 If a person initiates a chat with you, you may continue that conversation via WhatsApp for up to 24 hours after the last message was sent to you by that person- without any charge (24-hour Window). 
 **Outside the 24-hour window, you may only send messages via approved Message Templates**, for which you will be charged with the applicable rate. 
-> Learn more about the [WhatsApp Business Policy](https://www.whatsapp.com/legal/business-policy/?lang=en).  
+> Learn more about the [WhatsApp Business Policy](https://www.whatsapp.com/legal/business-policy).  
  
 :::
 
