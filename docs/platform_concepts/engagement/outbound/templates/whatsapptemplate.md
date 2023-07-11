@@ -205,6 +205,18 @@ Created by | The platform user who the template.
 :::note
 When a WhatsApp template is rated as "Active - Low quality," the campaign is paused to preserve the quality rating of associated phone numbers. Pausing durations are as follows: 1st instance - 3 hours, 2nd instance - 6 hours, and the 3rd instance leads to disabling of the campaign. If you wish to edit a paused template, it must be re-approved before it can be used again.
 :::
+
+:::info
+When using [Notification APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine), you may encounter the following error message if the template receives a low rating.
+
+```json
+{ 
+    success: false, 
+    message: "Template:<template-name> has reached low quality and cannot be used"
+}
+```
+
+:::
   
 
 ## 5. WhatsApp template guidelines

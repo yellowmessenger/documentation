@@ -295,8 +295,17 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 14272 - Invalid user | The recipient WhatsApp number is invalid or the user doesn't have a WhatsApp account.
 
 
+:::note
+When using Notification APIs, you may encounter the following error message if a WhatsApp template receives a low rating.
 
+```json
+{ 
+    success: false, 
+    message: "Template:<template-name> has reached low quality and cannot be used"
+}
+```
 
+:::
 
 ---
 
