@@ -8,7 +8,7 @@ WhatsApp has introduced a new pricing policy for the messages that are delivered
 The new WhatsApp pricing model is based on 24-hour conversation sessions, while the older model is based on the number of template messages sent outside the user window.
 
 :::info
-Starting June 1, 2023, Meta has announced updates to its [pricing policy](https://developers.facebook.com/docs/whatsapp/updates-to-pricing).
+Starting June 1, 2023, Meta has announced updates to its [pricing policy](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/).
 :::
 
 This document will provide details on the  WhatsApp chatbot conversation categories, benefits, and pricing.
@@ -44,7 +44,7 @@ In this scenario, businesses have to pay for two sessions  - a service conversat
 
 ### Single session using one template with both utility and marketing categories
 
-Let's say a message is delivered using a template that includes both utility and marketing based on the [template guidelines](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines). In this case, marketing content is identified and categorized as a marketing template.
+Let's say a message is delivered using a template that includes both utility and marketing based on the [template guidelines](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines/). In this case, marketing content is identified and categorized as a marketing template.
 
 In this scenario, businesses will incur one charge for a marketing conversation.
 

@@ -20,7 +20,7 @@ In this article, you will learn:
 
 To set up an Instagram channel, you need to follow the below prerequisites:
 
-- Create an [Instagram Professional Account](https://www.facebook.com/help/instagram/138925576505882) or a business account.
+- Create an [Instagram Professional Account](https://developers.facebook.com/docs/instagram-api/overview#overview) or a business account.
 - Ensure that your **Facebook Page** is connected to your [Instagram professional account](https://developers.facebook.com/docs/instagram-api/overview#pages). To create a new page, click [here](https://www.facebook.com/pages/create). You can also set up a test page to start.
 - Ensure that you have enabled **Access to Messages** in your Instagram account. (**Settings > Privacy > Messages > Enable Allow Access to Messages**).
 
