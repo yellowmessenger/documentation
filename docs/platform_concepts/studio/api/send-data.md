@@ -25,7 +25,7 @@ Once you configure an API as mentioned in [add a new API](https://docs.yellow.ai
 ![](https://i.imgur.com/iSBQmEu.png)
 
 6. Add the dynamic parameter fields (such as authentication, email, token, name etc. as per the API).
-7. Select a value ([transformation function](https://docs.yellow.ai/docs/platform_concepts/studio/api/transformation-function)) in **Parse API response** to extract a part of API response before storing.
+7. Select a value [transformation function](https://docs.yellow.ai/docs/platform_concepts/studio/api/transformation-function) in **Parse API response** to extract a part of API response before storing.
 
 8. Test the API to ensure it is working as desired.
 
