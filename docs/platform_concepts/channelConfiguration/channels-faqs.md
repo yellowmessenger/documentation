@@ -130,7 +130,7 @@ sidebar_label: Channels FAQs
  <summary>What is the commerce/business policy of WhatsApp?</summary>
  <div>
   <br/>
-  <div>The updated commerce policy can be found <a href="https://www.whatsapp.com/legal/commerce-policy">here</a>. <br/> The updated business policy can be found <a href="https://www.whatsapp.com/legal/business-policy/?lang=en">here</a></div>
+  <div>The updated commerce policy can be found <a href="https://www.whatsapp.com/legal/commerce-policy">here</a>. <br/> The updated business policy can be found <a href="https://www.whatsapp.com/legal/business-policy">here</a></div>
    </div>
 </details>
 
@@ -268,7 +268,7 @@ sidebar_label: Channels FAQs
  <summary>What is a message template?</summary>
  <div>
   <br/>
-  <div> Predefined message structure convenient to showcase products, receipts etc. <a href="https://developers.facebook.com/docs/messenger-platform/send-messages/templates">Learn more</a></div>
+  <div> Predefined message structure convenient to showcase products, receipts etc. <a href="https://developers.facebook.com/docs/messenger-platform/send-messages/templates/">Learn more</a></div>
    </div>
 </details>
 
@@ -292,7 +292,7 @@ sidebar_label: Channels FAQs
  <summary>How to get onboarded to FBM chatbot and what are the prerequisites?</summary>
  <div>
   <br/>
-  <div>Refer this <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger/">document</a></div>
+  <div>Refer this <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger">document</a></div>
    </div>
 </details>
 

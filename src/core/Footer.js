@@ -48,7 +48,7 @@ const Footer = () => {
     },
     {
       title: "Signup and Create a bot",
-      to: "https://www.youtube.com/watch?v=pT5PpSKTeb8",
+      to: "https://youtu.be/2fdv1Ip3DKI",
     },
     {
       title: "Create a Journey",
@@ -123,7 +123,7 @@ const Footer = () => {
             <i className="ri-instagram-fill" />
           </a>
           <a
-            href="https://www.linkedin.com/company/yellowdotai"
+            href="https://www.linkedin.com/company/yellowdotai/"
             target="_blank"
           >
             <i className="ri-linkedin-fill" />
