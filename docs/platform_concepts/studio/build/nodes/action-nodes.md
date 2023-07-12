@@ -530,7 +530,7 @@ Change the bot language to any of the configured languages using this node.
 
 Set language action node takes only one input - variable containing **ISO code** of language you wish to change to.  Arrange the nodes as follows:
 
-* Configure a node to ask for a valid ISO code (only languages configured with the bot are allowed) and store the value in the variable. You can use a question node for this. [Click here](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported) for the list of languages that we support.
+* Configure a node to ask for a valid ISO code (only languages configured with the bot are allowed) and store the value in the variable. You can use a question node for this. [Click here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages) for the list of languages that we support.
 * Connect the **Set Language node** to the node that takes ISO input. Select the variable in which the previous reply is stored. 
 This language will be permanently set (currently set 2 days of expiry), unless it is being changed by same action node only.
 
