@@ -225,7 +225,7 @@ curl --location --request POST 'https://login.salesforce.com/services/oauth2/tok
 
 **Prerequisites**
 
-1. Instance URL (https://testdoccog1.atlassian.net/wiki/rest/api/search?cql=(type=page)or(type=blogpost)
+1. Instance URL
 2. Authentication Token (https://id.atlassian.com/manage-profile/security/api-tokens)
 3. Token generation CURL (if any): If the Authentication token (Step 2) is not fixed and needs to be generated using an additional API.
 

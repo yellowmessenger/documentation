@@ -13,7 +13,7 @@ sidebar_label : Display images for different languages
 <img src="https://i.imgur.com/CYsussz.png" alt="drawing" width="80%"/>
 
 
-3. Add a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-1-variables), in **Name** include the global variable and in **Value** enter one of the preferred [language codes](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported#1-languages-supported).
+3. Add a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-1-variables), in **Name** include the global variable and in **Value** enter one of the preferred [language codes](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages).
 
 ![](https://i.imgur.com/P575QBh.png)
 

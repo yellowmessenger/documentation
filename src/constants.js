@@ -26,7 +26,7 @@ export const popularSearchItems = [
     title: "Access data from API response",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported",
+    url: "https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages",
     title: "Bot multi-lingual support",
   },  */
 ];

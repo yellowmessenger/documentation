@@ -34,7 +34,7 @@ The icons located on the tile provide quick access to the following
 | [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes)                                                      | Drag and drop action nodes.                                                              |
 | [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes)                                                        | Drag and drop logic nodes.                                                               |
 | [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)                                                        | Variables are used to store and retrieve specific data in a flow.                                       |
-| [Language](https://docs.yellow.ai/docs/platform_concepts/studio/languages-supported#2-add-languages)                                         | Choose the language(s) in which your bot can be accessed.                                                     |
+| [Language](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#2-add-languages-to-your-bot)                                         | Choose the language(s) in which your bot can be accessed.                                                     |
 | [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools) |   Open the global tools tab.                                                                                                   |
 
 ## 2. Create a flow
