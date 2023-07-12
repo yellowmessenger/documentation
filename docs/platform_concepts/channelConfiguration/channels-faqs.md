@@ -268,7 +268,7 @@ sidebar_label: Channels FAQs
  <summary>What is a message template?</summary>
  <div>
   <br/>
-  <div> Predefined message structure convenient to showcase products, receipts etc. <a href="https://developers.facebook.com/docs/messenger-platform/send-messages/templates/">Learn more</a></div>
+  <div> Predefined message structure convenient to showcase products, receipts etc. <a href="https://developers.facebook.com/docs/messenger-platform/send-messages/templates">Learn more</a></div>
    </div>
 </details>
 
@@ -409,26 +409,10 @@ sidebar_label: Channels FAQs
 </details>
 
 <details>
- <summary>What are the pre-requisites to onboard a Customer?</summary>
- <div>
-  <br/>
-  <div>Check the prerequisites <a href="https://docs.google.com/document/d/17-BDmZYkllrZd6QrooPQMyaTmOY_w55mqxX3-9F-I2Y/edit?usp=sharing">here</a></div>
-   </div>
-</details>
-
-<details>
  <summary>How much time would it take to deploy a chatbot for a customer in GBM?</summary>
  <div>
   <br/>
   <div>If the bot is ready(w.r.t Changes to be made for GBM specific bot) and the pre-requisite to onboard a customer is available, the whole process from registration to verification till launch with relevant Google and Brand approval should be tentatively around 3-4 business days in an ideal scenario.</div>
-   </div>
-</details>
-
-<details>
- <summary>Does the brand at any moment have to acknowledge that YM will be handling their Business messages?</summary>
- <div>
-  <br/>
-  <div>Yes, <a href="https://docs.google.com/document/d/1RWyXmufvlRxkLdMFz3-daCr1h1c9eyN3uUqNBbw2Yuc/edit?usp=sharing">here</a> is how</div>
    </div>
 </details>
 

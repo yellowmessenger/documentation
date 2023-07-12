@@ -22,20 +22,20 @@ Before creating a flow for the WhatsApp bot, you need to consider the following 
 
 ### Using WhatsApp nodes
 
-#### Prompt carousel node
+#### **Prompt carousel node**
 
 The WA bot will respond with a number list even if the buttons are configured in the quick reply node. In this case, you can use the [prompt carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#26-carousel) node instead of quick reply to display the buttons in the bot response.
 
 <img src="https://i.imgur.com/1coMBB2.png)" alt="drawing" width="40%"/>
 
-##### Limitations of prompt carousel
+##### **Limitations of prompt carousel**
 
 * Supports a single carousel card.
 * Supports a maximum of 3 buttons.
 * The maximum number of characters supported is 1024.
 * Carousel button - The maximum number of characters supported is 20.
 
-#### Quick reply node
+#### **Quick reply node**
 
 <img src="https://i.imgur.com/u1R8BGI.png)" alt="drawing" width="60%"/>
 
@@ -47,11 +47,11 @@ The WA bot will respond with a number list even if the buttons are configured i
    <img src="/img/channels/WAgif.gif" alt="drawing"/>
 * If you want to delete a quick reply node, you have to switch to Website from the channels filter and then delete the buttons.
 
-##### Configure Dynamic WA quick reply and Dynamic WA list message
+##### **Configure Dynamic WA quick reply and Dynamic WA list message**
 
 * For more information on how to create dynamic quick replies, click [here](https://docs.yellow.ai/docs/cookbooks/studio/dynamic-quickreplies).
 
-##### Pass data to quick reply buttons and title using variable
+##### **Pass data to quick reply buttons and title using variable**
 
 * You can also pass the data to the quick reply buttons and title using the variable. Use the following code to pass the data:
   
@@ -67,11 +67,11 @@ For more information on how to create a variable, to store, and retrieve data fr
 * The WhatsApp quick reply supports a maximum of 3 buttons and 20 characters per button. If more than 3 buttons are added, it defaults to a numbered list.
 * If a quick reply button exceeds 20 characters, the message containing that button will not display while the bot is reacting.
 
-#### WhatsApp list
+#### **WhatsApp list**
 
 * To know more about how to use the WA list node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-quick-replies).
 
-#### WA list options 
+#### **WA list options** 
 
 <img src="https://i.imgur.com/883ZHGx.png)" alt="drawing" width="30%"/><img src="https://i.imgur.com/2j0bYE7.png)" alt="drawing" width="30%"/> 
 
@@ -81,6 +81,18 @@ For more information on how to create a variable, to store, and retrieve data fr
 * The character limit for the body is 1024.
 * The character limit for the footer is 60.
 * The character limit for button text and response is 24.
+
+#### **Limitations of supported media types**
+
+| Options | Limit |
+|---------------------|-----------------|
+| Image type | Supported image types are JPG and PNG.
+| Image size | Supported image size is 5MB.
+| Image diemensions | Supported image dimension is 250*250.
+| Video type | Supported video type is MP4.
+| Video size | Supported video size is 15MB.
+| Video dimensions | No restrictions.
+| File size | Supports any valid MIME type up to 15 MB in size.
 
 ### WhatsApp template
 
@@ -99,6 +111,22 @@ To view the status of the template approval, you need to click on the **Sync tem
 For more information on how to execute a campaign, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign#33-whatsapp-campaign).
 
 For more information on how to trigger a flow when a user clicks on a quick reply option on WhatsApp, click [here](https://docs.yellow.ai/docs/cookbooks/studio/qr-node).
+
+### Quality rating of a WA template
+
+When you are executing a WhatsApp campaign, you need to use a template, and if users block or report the number or template, then the quality rating of the template or the number will reduce. If the quality rating of the number is marked as flagged for more than 7 consecutive days, the messaging limit will be reduced to the immediate lower tier. For example, 100000 to 10000 or 10000 to 1000.
+
+To ensure that the quality rating does not become low, click [here](https://developers.facebook.com/docs/whatsapp/messaging-limits/#quality-rating-and-messaging-limits).
+
+To view the quality rating of the template and phone numbers, follow these steps:
+
+1. Login to your Facebook business manager account and select **Account tools > Message templates**.
+
+    ![](https://i.imgur.com/GT46xg4.png)
+     
+2. To view the quality rating of phone numbers, click **Account tools > Message templates**.
+
+    ![](https://i.imgur.com/GF76rL8.png)  
 
 ## Set up a WhatsApp channel
 
@@ -158,7 +186,7 @@ To change the WA display name, follow these steps:
 
 After successfully creating your WhatsApp business account and configuring the flow, you need to select the **WhatsApp** channel from the **Channels** filter to test your bot and ensure all the flows you configured are working as intended. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#3-test-your-bot-on-whatsapp). 
 
-  ![](https://i.imgur.com/9MBMVC6.png)
+   ![](https://i.imgur.com/9MBMVC6.png)
   
 ### Add WhatsApp number for testing
 
@@ -183,7 +211,7 @@ You can test the WA bot in staging and sandbox environments by enabling **Develo
 
 ### 24-hour WhatsApp policy
 
-If a live agent connects with the WhatsApp bot user and does not close the ticket within 24 hours of the chat initiation, the chat will be automatically disabled under the **Chats** section > **Bot messages** of the Inbox module. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/whatsapp-24hr-window-policy#-2-reinitiate-expired-whatsapp-chats). 
+If a live agent connects with the WhatsApp bot user and does not close the ticket within 24 hours of the chat initiation, the chat will be automatically disabled under the **Chats** section > **Bot messages** of the Inbox module. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/reinitiatewachats#expchats). 
 
 <img src="https://i.imgur.com/pVKcpx1.jpg" alt="drawing" width="50%"/> 
 

@@ -8,7 +8,7 @@ WhatsApp has introduced a new pricing policy for the messages that are delivered
 The new WhatsApp pricing model is based on 24-hour conversation sessions, while the older model is based on the number of template messages sent outside the user window.
 
 :::info
-Starting June 1, 2023, Meta has announced updates to its [pricing policy](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/).
+Starting June 1, 2023, Meta has announced updates to its [pricing policy](https://developers.facebook.com/docs/whatsapp/updates-to-pricing).
 :::
 
 This document will provide details on the  WhatsApp chatbot conversation categories, benefits, and pricing.
@@ -44,7 +44,7 @@ In this scenario, businesses have to pay for two sessions  - a service conversat
 
 ### Single session using one template with both utility and marketing categories
 
-Let's say a message is delivered using a template that includes both utility and marketing based on the [template guidelines](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines/). In this case, marketing content is identified and categorized as a marketing template.
+Let's say a message is delivered using a template that includes both utility and marketing based on the [template guidelines](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/new-template-guidelines). In this case, marketing content is identified and categorized as a marketing template.
 
 In this scenario, businesses will incur one charge for a marketing conversation.
 
@@ -74,7 +74,7 @@ From June 1, 2023, each WhatsApp Business Account gets 1,000 free service conver
 
    Based on the time zone of WhatsApp Business Accounts, these prices are applicable for any chat started on or after June 1, 2023, at 12:00 AM.
 * You can have up to 1,000 free conversations every month.
-* Customers who exceed the limit of 1,000 conversations per month will be required to pay a monthly fee. For detailed information on pricing, you can click [here](https://developers.facebook.com/docs/whatsapp/pricing).
+* Customers who exceed the limit of 1,000 conversations per month will be required to pay a monthly fee. For detailed information on pricing, you can click [here](https://developers.facebook.com/docs/whatsapp/updates-to-pricing).
 
    If you have any additional questions or concerns regarding billing, please feel free to reach out to our support team. They will be able to assist you further.
 

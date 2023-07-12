@@ -61,7 +61,7 @@ Follow the steps below to create an app on Slack:
 | [message.mpim](https://api.slack.com/events/message.mpim)|A message was posted in a multiparty direct message channel|
 
 
-5. Open **OAuth & Permission**. Add redirect URL: https://app.yellow.ai/integrations/oauth/redirect and Bot Token Scope according to your requirement. 
+5. Open **OAuth & Permission**. Add redirect URL: `https://app.yellow.ai/integrations/oauth/redirect` and Bot Token Scope according to your requirement. 
 
 > Click [here](https://api.slack.com/scopes) for scope references. 
 
