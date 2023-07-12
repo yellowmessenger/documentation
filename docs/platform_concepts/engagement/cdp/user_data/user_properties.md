@@ -75,7 +75,7 @@ The `userId` is a unique property in the users schema and serves as an identifie
 
 For more details, see:
 
-- [How to capture userId through bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
+- [Capture userId through bot conversation using the User identification flow](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
 - [What happens when a userId is captured for the first time during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-a-userid-is-captured-for-the-first-time).
 - [What happens when a userId is recaptured during bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers#what-happens-when-the-userid-is-recaptured).
 - [How to enrich user profiles with the data collected from multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/add_user_overview)
