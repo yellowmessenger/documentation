@@ -1,101 +1,133 @@
 ---
-title: Funnels
+title: Understand flow-related details using funnels 
 sidebar_label: Funnels
 
 ---
 
-You can understand user journey further on the **Funnels** section. On this page, you can view data captured across all journeys(flows) that are accessed by users through various channels.  To view funnels:
-1. Open **Insights** > **User journeys**.  Select the **Funnels** tab. 
-
-![](https://i.imgur.com/7KPdhCX.png)
 
 In this article, you will learn how to use the **Funnels** section to monitor: 
 1. [Top flows completed](#topflows)
 2. [Step wise interactions](#interaction)
 3. [Flows summary](#summary)
 
------------
+
+----
+
+## Access funnels
+
+In order to gain deeper insights into user journeys(flows), you can explore **Funnels**. This section allows you to view data collected across all user journeys or flows, accessed through various channels. To view funnels data: 
+
+1. Open **Insights** > **User journeys**.  
+2. Select the **Funnels** tab. 
+
+![](https://i.imgur.com/7KPdhCX.png)
 
 
-:::info
+### Filter funnels data for a time period
 
-**Filter for a period**
-- All the metrics can be filtered and viewed for a period of time by selecting the time from the drop-down (for example, last 7 days, last 90 days). 
-- If you want to see the metrics for a custom range (for example 21st Sept to 23rd Sept), click **Custom** and select the range.  
+- From the drop-down menu, select the desired time period, such as the last 7 days or the last 90 days.
+- If you need to view metrics for a custom range, click on **Custom** and select the specific start and end dates.
 
 <img src="https://i.imgur.com/7Q5UeZq.png" alt="drawing" width="60%"/>
 
 
-**Export data**
+### Export/download funnels data
 
-- To download any of these metrics, click **Export data**. 
-- Select the required metrics and click **Export Reports**. You can also download all the reports as PDF. 
-- Click [here](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports) for steps to schedule these reports. 
-    <img  src="https://i.imgur.com/1Wkecfl.png"  width="70%"/>
+To download **Flows summary** and **Flow day wise data** reports, follow these steps: 
+1. Click on **Export data**.
+2. Select the metrics you require.
+3. Click **Export reports**. You can also choose to download all the reports as a PDF.
 
-**Filter channels**
+> For instructions on scheduling these reports, refer to [these steps](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports). 
 
-- These metrics are measured for all the channels. If you want to obtain results for any of the specific channels (that are activated for your bot), select the required channel from the channel dropdown. 
+<img  src="https://i.imgur.com/1Wkecfl.png"  width="70%"/>
+
+### Filter funnels data for different channels
+
+The metrics in the Funnels section are measured across all channels. If you want to obtain results for specific channels that are activated for your bot, from the **Channel** dropdown, select the desired channel.
+The metrics will be filtered and displayed based on the selected channel.
 
 <img src="https://i.imgur.com/y7m028W.png" alt="drawing" width="60%"/>
-:::
 
-## <a name="topflows"></a> 1. Top Flows Completed
 
-This widget shows users top 5 flows (intents) along with the [Flow Completion Rate](#fcr) for the selected time period.
-You can monitor the graph for a specific flow by filtering it on the menu below. 
 
-<img src="https://i.imgur.com/tvaRZVF.png" alt="drawing" width="90%"/>
+---
+
+
+## <a name="topflows"></a> Monitor top flows completed
+
+The Top Flows Completed widget displays the top 5 flows (intents) completed by users, along with the [Flow Completion Rate](#fcr), for the selected time period. 
+> You can also filter the graph to focus on a specific flow.
+
+
+<img src="https://i.imgur.com/tvaRZVF.png" alt="drawing" width="70%"/>
 
 
 
 -------------
 
-## <a name="interaction"></a> 2. Step wise interactions
+## <a name="interaction"></a> Analyse step wise interactions
 
-This widget is a stepwise funnel of selected flow. The number of people who moved from step 1 to step 2 to … step n and the number of people who dropped off in between these steps can be seen here.
+The Stepwise Interactions widget provides a step-by-step funnel of a selected flow. It shows the number of users who moved from one step to another, as well as those who dropped off in between. This helps in understanding user engagement at different levels of the journey.
 
-#**done** - User completed the journey
-#**switched** - User switched to some other journey
+### Example to understand step wise interaction 
 
-![](https://i.imgur.com/lz4sOGe.png)
+One of the primary use cases in the Funnels section is to understand the number of users dropping off at different levels of their journey. You can select the specific journey you want to analyze from the dropdown menu. Follow these steps:
 
-:::note
-- This is mainly used to learn about the number of users dropping off at different levels of the journey, you can select the journey you want to view from the drop-down below. 
+1. From the dropdown menu, select the journey(flow) you want to view.
+2. The graph will display the steps or nodes within the selected journey.
 
-    <img src="https://i.imgur.com/bgpzi3v.png" alt="drawing" width="50%"/>
+<img src="https://i.imgur.com/bgpzi3v.png" alt="drawing" width="40%"/>
+    
+Let's consider the example flow **Booking**:
 
-:::
+![](https://hackmd.io/_uploads/B1oZDKYY2.png)
+
+The graph will include two default bars for all flows:
+- **#done**: Represents the users who completed the entire journey.
+- **#switched**: Represents the users who switched to some other journey.
+
+In addition, other bars represent the node names or numbers within the selected flow. By analyzing the graph, you can understand how many users completed each specific step. For example, you can understand that 100% of the users entered their email (user_email), while only 30% of the users entered their phone numbers (user_contact).
+
+Analyzing the steps helps identify potential bottlenecks or areas where users drop off.
 
 ------
 
-## <a name="summary"></a> 3. Flows summary
+## <a name="summary"></a> Flows summary
 
+The **Flows Summary** table provides essential information about flow completion rates, the number of times flows were triggered, and the overall flow contribution to traffic. You can search for specific flows and sort the table based on different criteria.
 
-This table gives flow completion rates for all the flows, the number of times these flows were triggered, and the number of times they were completed. The last column shows how much a particular flow constitutes to the overall traffic.
+![](https://hackmd.io/_uploads/SyGtYKFYh.png)
 
 * **Flow name**: This is listed out for all the flows, you can search for the required flow. 
-
-    <img src="https://i.imgur.com/yYL2lVh.png" alt="drawing" width="80%"/>
-
 * **Flow started**:  Number of times a journey was started.
 * **Flow completed**: Number of times a journey was completed.
 * **Flow completion rate (%)**: Flow completion rate/FCR of each journey.
 * **Flow hits / total hits**: Ratio of the Journey Hits to overall traffic (where the flow hits value is the number of times a journey was started).
 
-    > Sort these values by clicking the column name. 
+> Sort these values by clicking the column name. 
 
 
-### <a name="fcr"></a> 3.1 Flow completion rate (FCR)
+### <a name="fcr"></a> Analyse flow completion rate (FCR)
 
-The flow completion for the selected range of dates will be displayed here. This is the average flow completion rate obtained for all the flows. If the percentage of flow completion is low, you can click on the **Know why!** on the right corner to analyze your data. 
+The Flow Completion Rate (FCR) section displays the **average flow completion rate** for all flows within the selected date range. If the FCR is low, you can click on **Know why!** to analyze the underlying data and identify potential areas for improvement.
+
+In the below example the FCR is 14%. 
 
 ![](https://i.imgur.com/VNyptnx.png)
 
+The Low FCR Reasons tab provides insights into why certain flows have low completion rates and suggests immediate steps to enhance them. By clicking on the provided links, you can further analyze and optimize your bot flows.
 
-Reasons for Low FCR are listed in this tab to understand why certain flow completion rates might be low and nudge to what immediate steps you can take to improve them. This helps you create hypotheses around poor-performing flows, make improvements to them, and ultimately boost completion rates of bot flows. Analyze this further by clicking the required links. 
+### Detailed reasons for Low FCR 
 
-<img src="https://i.imgur.com/K9ZudnP.png" alt="drawing" width="60%"/>
+| Reason| Resolution |
+| -------- | -------- |
+| **Users are dropping off without completing the flow** | Use the Stepwise Interactions widget in the Funnels section to identify which steps within the flow users are dropping off the most. This analysis will help pinpoint specific areas that may be causing user abandonment.|
+| **Users are switching to other flows without completing the concerned flow**| Explore the User Journey Visualisation feature to understand which flows and steps users are switching to instead of completing the concerned flow. This analysis will provide insights into user behavior and help identify factors contributing to flow abandonment. |
+| **Complicated or redundant step structure in the flow** | Navigate to the Builder and evaluate each step of the concerned flow. Check for any complications or redundancies in the flow structure that may confuse or deter users. Simplify and streamline the flow by removing unnecessary steps and ensuring it aligns with the intended use case. | 
+| **Users have never triggered certain flows** | Identify flows with zero start counts, indicating that users are not triggering or utilizing them at all. Evaluate if these flows need to be modified or removed entirely in the Builder to declutter and optimize the user experience. |
+| **Other issues such as missing bot response, long response time, etc.** | Low FCR can be caused by technical issues such as missing bot responses or long response times. Access the Conversation Logs in the Studio to search for sessions with relevant tags indicating these issues. Resolve any technical issues that may impact user engagement and completion rates. | 
+
 
 
 

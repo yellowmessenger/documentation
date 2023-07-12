@@ -78,7 +78,7 @@ It depends on the step structure and how many steps are required to complete a f
 <details>
 <summary> How do you differentiate between Poor performance and Good performance based on the visualization insights? </summary>
 <div>
-Based on <a href="https://docs.yellow.ai/docs/platform_concepts/growth/funnels#31-flow-completion-rate-fcr"> Flow completion rate </a> (in user journey visualization).
+Based on <a href="https://docs.yellow.ai/docs/platform_concepts/growth/funnels"> Flow completion rate </a> (in user journey visualization).
 </div>
 </details>
 
@@ -86,7 +86,7 @@ Based on <a href="https://docs.yellow.ai/docs/platform_concepts/growth/funnels#3
 <details>
 <summary> Why are flow completion rates low?</summary>
 <div>
-There can be multiple reasons for <a href="https://docs.yellow.ai/docs/platform_concepts/growth/funnels#31-flow-completion-rate-fcr"> Flow completion rate </a> . You can find a list of them along with recommended next steps under <b>User Journeys</b> > <b>Funnels</b> > <b>Flow Summary</b>.
+There can be multiple reasons for <a href="https://docs.yellow.ai/docs/platform_concepts/growth/funnels"> Flow completion rate </a> . You can find a list of them along with recommended next steps under <b>User Journeys</b> > <b>Funnels</b> > <b>Flow Summary</b>.
     
 </div>
 </details>
@@ -97,7 +97,7 @@ There can be multiple reasons for <a href="https://docs.yellow.ai/docs/platform_
 <summary> How to check where users are dropping off?</summary>
 <div>
     
-<a href="https://docs.yellow.ai/docs/platform_concepts/growth/user-journeys#2-visualization-insights"> User journey visualization </a> can show you which flows users are mostly dropping off after and where within the journeys.
+<a href="https://docs.yellow.ai/docs/platform_concepts/growth/user-journeys"> User journey visualization </a> can show you which flows users are mostly dropping off after and where within the journeys.
 </div>
 </details>
 
@@ -106,7 +106,7 @@ There can be multiple reasons for <a href="https://docs.yellow.ai/docs/platform_
 <details>
 <summary> Can I automate(schedule) my report generation? </summary>
 <div>
-You can schedule any saved report on <b>Data Explorer</b> as an email alert. Open any <b>Saved report</b> > click <b>Actions</b> > <b>Schedule Reports</b> > configure all details > <b>Save</b>.  Click <a href="https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer"> here </a> for more details.
+You can schedule any saved report on <b>Data Explorer</b> as an email alert. Open any <b>Saved report</b> > click <b>Actions</b> > <b>Schedule Reports</b> > configure all details > <b>Save</b>.  Click <a href="https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#1-schedule-a-report"> here </a> for more details.
 </div>
 </details>
 
