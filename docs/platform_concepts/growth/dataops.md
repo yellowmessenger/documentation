@@ -3,18 +3,16 @@ title: Data operations (Data export)
 sidebar_label : Data operations
 ---
 
-Our platform collects and stores certain system data points to give the right experience to the end-users, customers, and their dynamic AI agents. 
-This data is used to power different modules inside the Yellow AI platform. 
+The Yellow.AI platform collects and stores system data points to enhance the end-user and customer experience with dynamic AI agents. This data is utilized by various modules within the platform.
 
-**Data Ops**(Data operations) feature is designed for the customers(enterprises) who want to fetch this data from the yellow.ai platform into their systems from an information security perspective or for dashboarding and reporting purposes.
+The **Data Ops** (Data Operations) feature allows enterprises(customers) to retrieve this data from the Yellow.AI platform for information security purposes or to create dashboards and reports.
 
 
-## 1. Data Export 
+## Data export 
 
-Data can be exported to your system storage by following three steps- choose the data to be exported, choose the frequency, choose the destination, and generate rules which will export your data. 
+You can export data from the Yellow.AI platform to your system storage by following three steps: selecting the data to be exported, choosing the export frequency, and selecting the destination.
 
-> Existing rules can only be **Deactivated**. There is no option to Activate it. 
-
+> Existing rules can only be **deactivated**. Activation is not available.
 
 ------
 
@@ -24,8 +22,6 @@ To export data, follow the steps below:
 2. Click **Create export rule**.       
     ![](https://i.imgur.com/f2luQiP.png)
     
--------
-
 #### 3. Choose data required for data export 
 
 - Enter any **Export name**. 
@@ -43,12 +39,12 @@ To export data, follow the steps below:
     * **Leads**: All the user profile data.
     * **Call recordings**: All the recorded calls from the voice bot.
     * **User 360**: All the User 360 report from engage.
-
 - Click **Next**. 
 
 
-> Export is supported only in JSON (and WAV for voice bot data) format. 
-
+:::info
+Export is supported only in JSON (and WAV for voice bot data) format. 
+:::
 
 ![](https://i.imgur.com/0HaT9yF.png)
 
@@ -71,10 +67,13 @@ To export data, follow the steps below:
 
 #### 5. Choose the destination of data export 
 
-> - Data can be exported to **Amazon S3, Azure Blob, or SFTP server** in one export rule. 
-> - Write permission/privilege to the storage system(S3/blob/SFTP) is mandatory.
-> - Credentials are encrypted and stored securely in our systems.
- 
+:::info
+- Currently, data can be exported to **Amazon S3, Azure Blob, or SFTP server** only. 
+- You can select only one external destination in one export rule. 
+- Write permission/privilege to the storage system(S3/blob/SFTP) is mandatory.
+- Credentials are encrypted and stored securely in yellow.ai systems.
+:::
+
 - Choose an export destination: 
     - Connect with **Amazon S3** by providing **Bucket name, Access Key, and Secret Key**.
     - Connect with **Azure Blob** by providing **Container Name and Connection String**.
@@ -84,19 +83,19 @@ To export data, follow the steps below:
 -------
 
 6. All the existing export rules will be available on the Data Ops page, you can add new rules if required. 
-
     ![](https://i.imgur.com/htPEADz.png)
     
-    > There is no restriction on the number of rules that can be added. 
-
+:::note
+There is no restriction on the number of rules that can be added. 
+:::
 
 7. Click on the rule name to view the complete **Logs** and understand whether the data export (for the assigned rules) is successful. 
-
     ![](https://i.imgur.com/9851hzV.png)
 
     - Click **View details** to see the assigned rule details (data, frequency, and destination).    
     - You can see **Export date** (frequency), **Status of export** (scheduled, ongoing, and failure/success), and **Size of data** exported. 
-        > Failure of data export depends on multiple reasons, mostly unrelated to the yellow.ai platform. 
 
- 
+:::note
+Data export failures are usually unrelated to the Yellow.AI platform and can occur due to various reasons.
+:::
  

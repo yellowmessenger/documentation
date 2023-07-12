@@ -3,41 +3,36 @@ title: Set up alerts for bot downtimes and failures
 sidebar_label : Health & alerts 
 ---
 
-The Health module allows you to monitor your bot's overall performance and set up alerts to receive email notifications for any issues or failures that occur.
+The Health module provides you with the ability to monitor your bot's performance and receive email notifications for any failures or issues. By setting up alerts, you can proactively stay informed about the status of your bot.
 
 -----
 
+## Set up alerts 
 
-## 1. Alerts 
+To monitor failures or issues and receive timely notifications, you can create alerts based on specific rules.
 
-You can proactively monitor any failures or issues by creating alerts to notify you when set rules are met. 
+### Enable default alerts
 
-### 1.1 Enable default alerts
-
-Follow these steps to enable pre-configured alerts:
-
+To enable pre-configured alerts, perform the following steps:
 
 1. Go to the **Alerts** section of **Insights** > **Health**.
-2. Activate the toggle button for the required alert. There are two pre-configured alerts available:
-    - **API failure**: When enabled, an email notification will be sent if any APIs set up in Studio fail more than 5% in the last 7 days.
-    - **Bot downtime**. When enabled, an email notification will be sent if the bot is down for more than 30 minutes.
-
+2. Activate the toggle button for the required alert. Two pre-configured alerts are available:
+    - **API failure**: When enabled, you will receive an email notification if any APIs configured in Studio have a failure rate of more than 5% in the last 7 days.
+    - **Bot downtime**: When enabled, you will receive an email notification if the bot remains inactive for more than 30 minutes.
     ![](https://i.imgur.com/ivKNwXt.png)
-
     :::info
-    The bot is pinged every minute to monitor its health. If a response is received, the bot is considered to be up (uptime). If the bot does not respond for more than 30 minutes, it is considered to be down (downtime).
+    The bot's health is monitored by pinging it every minute. If a response is received, the bot is considered up (uptime). If the bot fails to respond for more than 30 minutes, it is considered down (downtime).
     :::
-
-
-3. Add multiple recipients by typing their email addresses, hitting enter, and clicking **Add**. 
+3. To add multiple recipients, enter their email addresses, press enter, and click **Add**. 
     ![](https://i.imgur.com/psNzedR.png)
-
-4. To modify the recipients, click Edit in the menu next to the Alert name and add or remove email IDs.
+4. To modify the recipients, click **Edit** in the menu next to the alert name and add or remove email addresses.
     ![](https://i.imgur.com/yOCs4D1.png)
-5. When there is a failure or issue, an email alert will be sent to the recipients you entered. The time of the alert will be recorded in the **Last fired** column next to the alert name.
+5. Whenever a failure or issue occurs, an email alert will be sent to the specified recipients. The time of the alert will be recorded in the **Last fired** column next to the alert name.
 
 
-With this setup, you can receive timely alerts and take action to address any issues or failures to ensure your bot's optimum performance.
+---
+
+By following these steps, you will receive alerts in a timely manner, enabling you to address any issues or failures promptly and ensure optimal performance of your bot.
 
 **Sample alerts**: 
 

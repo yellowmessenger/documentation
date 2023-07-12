@@ -128,6 +128,6 @@ Follow the steps below to follow up with the contact after the notification is s
 3. When the contact responds to the notification, the Chat restriction is lifted and the agents can have a free-flow conversation. 
 
 :::note
-As per [WhatsApp guidelines](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/whatsapp-24hr-window-policy), live agents cannot have a free flowing conversation with the customers up until they respond back to the proactive template message sent by the agents. Once the customer responds, the 24hr session rule is lifted and agents can handhold the customer to resolution. 
+As per [WhatsApp guidelines](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/reinitiatewachats), live agents cannot have a free flowing conversation with the customers up until they respond back to the proactive template message sent by the agents. Once the customer responds, the 24hr session rule is lifted and agents can handhold the customer to resolution. 
 :::
 

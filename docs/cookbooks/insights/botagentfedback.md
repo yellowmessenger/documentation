@@ -17,17 +17,18 @@ You can visualize it further by taking advantage of [Dashboards](https://docs.ye
 
 ## 1. Default user feedback for bot interaction
 
-1. In **Studio**, at the end of your existing flow, add a [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback) to collect user feedback. 
+1. In **Studio**, at the end of your existing flow, add a [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback) to collect user feedback on the **bot-customer** and **inbox agent-customer** conversation. 
 
     ![](https://i.imgur.com/SI8BwYL.png)
 
 -------
+
 ## 2. Default user feedback for agent interaction
 
 1. Create a flow using the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) action node. 
 2. Configure Inbox agents . 
 3. Enable **CSAT** from the inbox settings. 
-4. After a chat ticket is closed, your customers will be asked for, agent feedback and chat feedback.
+4. After a chat ticket is closed, your customers will be asked for feedback on the agent interaction.
 
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/csat) to know more about Agent CSAT score. 
 
@@ -35,7 +36,8 @@ You can visualize it further by taking advantage of [Dashboards](https://docs.ye
 
 ##  3. Customize user feedback flow on studio
 
-The above-mentioned default feedback method will work only on your website chatbot. 
+> The above-mentioned default feedback methods will work only on your **website chatbot**. 
+
 You can create flows in Studio to manually collect user feedback (from the bot interaction) for two use cases: 
 1. Collect CSAT feedback for other channels like WhatsApp, Facebook, etc. after an inbox live agent interaction.
 2. Customize your feedback parameters. The feedback node collects only the rating and comments from the user. If you want to collect other details, like "which product would you likely recommend to your friends," you can use this method.
