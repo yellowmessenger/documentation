@@ -37,7 +37,7 @@ The following table summarizes the behavior of userId capturing in User 360.
 
 In a bot conversation, a user is identified through the userId and can be captured through [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) nodes. A userId is a unique indetifier such as mobile number, email address, or any other identifier such as driving livence number. 
 
-For more information, see [how to capture userId through bot conversations](https://docs.yellow.aidocs/platform_concepts/engagement/cdp/user_data/userid-flow).
+For more details, see [How to capture userId in bot conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
 
 The following sections explain how the current record is affected based on the provided userId.
 
