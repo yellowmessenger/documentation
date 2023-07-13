@@ -102,6 +102,11 @@ Custom user properties refer to additional fields that you can create to capture
 
 For instance, you might want to store details such as the number of times they have visited your pricing page, their department, and their preferred product.
 
+:::note
+
+Once a property is created, you cannot change its data type or delete it.
+:::
+
 
 To create a new user property with your preferred label name and datatype, follow these steps:
 
