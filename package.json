@@ -19,6 +19,7 @@
     "@docusaurus/preset-classic": "^2.2.0",
     "@docusaurus/theme-search-algolia": "^2.2.0",
     "classnames": "^2.2.6",
+    "docusaurus-preset-openapi": "^0.6.4",
     "html-minifier-terser": "^5.1.1",
     "path": "^0.12.7",
     "react": "^16.8.4",
