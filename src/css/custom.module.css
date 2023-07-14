@@ -612,6 +612,14 @@ background: #29165E !important;
 
 }
 
+[class^="custom_footer_Vtry"] {
+  background-color: #29165E !important;
+}
+
+[class^="title_LZkR"] {
+  color: #F2CB67 !important;
+  font-weight: 500;
+}
 /* SIGNUP FOR FREE */
 
 [class^="navbar__item navbar__link free-signup"] {
