@@ -20,6 +20,15 @@ You can now integrate your app on [Epic FHIR](https://fhir.epic.com/) account wi
 
 ![](https://i.imgur.com/bHEXvm6.png)
 
+4. If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
 
 :::note 
 1. Yellow.ai does not store the client’s credentials. We use the OAuth 2.0 approach to integrate with the client’s **Epic FHIR** account. 
