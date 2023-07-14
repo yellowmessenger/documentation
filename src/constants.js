@@ -52,7 +52,6 @@ export const topics = [
     icon: "ri-whatsapp-line",
     url: "/docs/platform_concepts/channelConfiguration/whatsapp-configuration",
   },
-  
   {
     title: "Use Case Guides",
     description:
