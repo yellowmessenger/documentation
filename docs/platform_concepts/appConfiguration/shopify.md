@@ -44,6 +44,8 @@ Shopify is an e-commerce platform that lets merchants all over the world to buil
   * refunds_create 
   * customers_create 
   * customers_update.
+  * write_scripts_tags 
+  * read_script_tags
 
 8. Go to API credentials and copy **API key and secret key**.
    ![](https://i.imgur.com/91ng6dO.png)
@@ -60,7 +62,7 @@ Shopify is an e-commerce platform that lets merchants all over the world to buil
 3. Type shopify in the **Search** box, and select **Shopify Shop** from the list.
 4. Scroll down to **Add account** and fill in the following fields.
    * **Shop Name**: Name of your shop in Shopify. The shop name should be taken from the Shopify store URL, for example if the merchant store URL is yellowxyz.myshopify.com,the shop name would be yellowxyz.
-   * **Admin API Access Token**: Copy and paste this from your Shopify store (refer step 8)
+   * **Admin API Access Token**: Copy and paste this from your Shopify store (refer step 8). Please only enter the Admin API access token that is displayed during the app creation process on Shopify.
    * **API Secret Key**: Copy and paste this from your Shopify store (refer step 8)
 
    ![](https://i.imgur.com/Y6KFBfR.jpg)
