@@ -44,6 +44,8 @@ Shopify is an e-commerce platform that lets merchants all over the world to buil
   * refunds_create 
   * customers_create 
   * customers_update.
+  * write_scripts_tags 
+  * read_script_tags
 
 8. Go to API credentials and copy **API key and secret key**.
    ![](https://i.imgur.com/91ng6dO.png)
