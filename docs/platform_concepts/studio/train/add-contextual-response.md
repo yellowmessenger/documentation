@@ -4,166 +4,61 @@ sidebar_label : Contextual Responses
 ---
 
 
-Setting up contextual responses means adding more context as a response to a particular prompt. 
+Adding contextual responses involves providing additional context as a response to a specific prompt.
 
-**Use case**
+Here's an example:
 
-To simplify contextual response further, take an example:  
-**Bot** : Can you share your email with me?  
-~~**User** : Sure, gooduser@email.com~~ (Expected response)  
-**User** : Why do you need my email?  (Received response)
+* Bot: Can you share your email with me?
+* User: Sure, gooduser@email.com (Expected response)
+* User: What is an email? Or Why do you need my email? (Received response)
 
-What if instead of giving their email address during a conversation, a customer asked *What is an email* Or *Why do you need my email*. 
-These types of contextual intents can be handled by adding contextual responses. 
+In this scenario, the user asks a question about emails instead of directly providing their email address. To handle these types of contextual intents, contextual responses can be employed to provide appropriate information or address the user's query.
 
-## 1. Add Global Contextual Responses
+## Add contextual responses
 
-Setting up standard contextual responses for all prompts in all journeys in the bot will give a response to the users when the bot has been asked questions with Why/What/How/ etc at any prompt.    
-To explore the options available, follow the given steps: 
+By establishing standardized contextual responses for all prompts across various user journeys in the bot, users will receive a response when they ask questions starting with words like Why, What, How, and so on, regardless of the specific prompt.
 
-1. **Open Context management tab**
+1. Go to **Studio** > **Train** > **Context Management**.
 
-    - On the Yellow.ai Platform, go to **Studio** > **Train** > **Context Management**.
+ ![](https://i.imgur.com/UhnjgWg.png)
 
-![](https://i.imgur.com/XuwMeQP.png)
+2. For existing intents, click **Set default response** to set a default response to that intent.
 
-2. **Add contextual responses** 
+ ![](https://i.imgur.com/29PQjc0.png)
 
-    - To add new intents click **+Add Contextual Responses**. 
-    - Add an Intent name and supporting Utterances.
-    - Click **Submit**. 
+3. Choose a type of default message and add the respective info.
 
-![](https://i.imgur.com/QzpYCLY.png)
+<img src="https://i.imgur.com/fmKF1v0.png" alt="drawing" width="40%"/>
 
+4. To add more utterances to that intent, click **Edit**, add the utterance and click **Add**.
 
-3. **Modify existing contexts**
+ ![](https://i.imgur.com/b4CPnxK.png)
 
-    - **Utterances** for the various predefined contextual intents like What/Why/How/When/Where/etc. can be modified by clicking the **Edit** option.
+5. To add new intents and contextual responses, click **+ Add contextual intents**.
 
-    ![](https://i.imgur.com/nLiggZ6.png)  
-  
-  
-    - Modify the default response of the existing contexts by clicking **Set default response > Click here to add more response** and adding a new response. 
+ ![](https://i.imgur.com/fbEI1Uh.png)
 
-    ![](https://i.imgur.com/4sGxnOE.png)
+6. In **Intent name**, enter the name of the intent.
+7. In **Utterances**,  add the different phrases that synonymous with the intent and click **Add**.
+8. Click **Train responses** to train the bot on the added intents and responses.
 
+## Bulk upload and download of contextual responses
 
-4. **Bulk upload**
+### Bulk upload
 
-    - You can add multiple contexts at once. Click **Bulk manage > Import**. 
-    - Click **Upload file**.
-    - Upload a CSV file from your local system which has 2 columns (intent and utterance).
-    - Click **Upload**. 
+To upload contextual responses in bulk into your system go to **Bulk manage > Import > Upload file**.
 
+ ![](https://i.imgur.com/klbhfeE.png)
 
-![](https://i.imgur.com/eBrK6HN.png)
+**Sample file**
 
-:::note
-Add as many training utterances as possible for a particular context. 
-:::
+ <img src="https://i.imgur.com/0rw3qLK.png" alt="drawing" width="40%"/>
 
 
-:::info
+### Bulk download
 
-**Enable small-talk**
+To download contextual responses in bulk, go to **Bulk manage > Export**.
 
-:::note
-This is available only for the **older bots**. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/smalltalk) to configure small talk for new bots.
-:::
+![](https://i.imgur.com/hUoeWvQ.png)
 
-If the small talk is enabled, when the user talking about generic topics, the bot will be able to answer the user with an appropriate answer. 
-
-> **Bot**: Please enter your desired location.   
-> **User**: Which location are you from?  
-> **Bot**: I'm digital, so I'm always just... here.
-
-![](https://i.imgur.com/vtWxpz2.png)
-:::
-
-
-
-
-
-## 2. Train responses 
-
-Click **Train response** to train the contexts. 
-
-![](https://i.imgur.com/xfgFirr.png)
-
-Now, when the user will ask these questions [Why/What/How/etc] at any prompt during the conversation. The bot will be able to send these contextual responses to the user. 
-
-:::note
-The user is not moving ahead while the user is asking for contextual responses. They will remain at the same prompt until the correct response is given.
-:::
-
-
-
-<img src="https://cdn.yellowmessenger.com/fZN8lIisIfxw1615525657154.png" alt="drawing" width="60%"/>
-
-
-
-
-
-
-
-<!---
-### How to setup context at any prompt? 
-
->We humans are always aware of context. Even chatbots also store the context to maintain the state of conversation.
-Conversations always happen on a particular topic (like intent), and it is a chain of texts exchanged between the user and the bot. So, this context keeps the conversation flowing.
-
-This context is stored as a JSON which is constantly updated at each and every prompt of a conversation. It stores all the info required to identify the state of a conversation, like the *prompt(step) information* (visited prompts), *intent name* (current intent) any many more.
-It is available at app.context
-
-```
-app.context object
-{
-   "complete": true,
-   "steps": {
-        "mobile_num": "9999999999",
-       "customer_id": "-",
-        "otp": "-"
-    },
-    "intent": "login"
-}
-```
-At any point, you can access this object to do things like
-* getting data of the prompts
-* knowing the current status of the conversation ( Intent name & the number of prompts visited )
-* changing a prompt value
-
-#### Getting data of the prompts
-* app.context.steps is an object which contains key-value pairs of prompts and the prompt values (user inputs) in the format step_name: step_value
-* A new prompt is added into app.context.steps only after the validation of that prompt.
-* When it hits an intent, this steps object is initially empty
-
-#### Getting Intent name
-* app.context.intent contains the current intent name
-
-#### Other data
-(Very limited use cases though)
-
-* app.context.complete contains a boolean value. If it’s true then the intent is done with visiting all the steps
-* app.dataHistory contains an array of most recent incoming messages to the bot 
-In action function, you can make use of this app.context object to get all the required information to process the answer.
-
-A typical action function below
-```
-return new Promise(resolve => {
-
-    // Getting the data from the steps
-    let otp = app.context.steps.otp
-    let mobile = app.context.steps['mobile_number'] // another way of accessing data
-
-    // API CALL which requires the above data
-    // api logic here
-    
-    app.sendTextMessage('You have been successfully logged in')
-
-    resolve();
-});
-
-```
-
-This object is always updated for every intent. When it hits another intent all the steps data will erased and the intent name will be changed.
---->
+All the contextual responses will be downloaded to your system as a CSV file.
