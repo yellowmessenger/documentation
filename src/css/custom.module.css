@@ -520,6 +520,11 @@ ul, ol {
 background: #29165E !important;
 }
 
+[class^="hero_j_Uo"] {
+  background: #29165E !important;
+ 
+ }
+
 [class^="custom_footer_src-core-footer-module"] {
   background-color: #29165E;
   letter-spacing: 0.15px;
@@ -529,9 +534,9 @@ background: #29165E !important;
   -ms-flex-pack: justify;
 }
 
-[class^="hero_j_Uo"] {
- background: #111110 !important;
-
+[class^="topic_logo_NbGP"] {
+  background-color: #5C42FC10 !important;
+    border: none !important;
 }
 
 
@@ -551,6 +556,15 @@ background: #29165E !important;
   color: #fff !important;
 }
 
+[class^="footer_Sene"] {
+  background-color: #fff !important;
+  color: #5C42FC !important;
+}
+
+[class^="footer_Sene"]:hover {
+  background-color: #5C42FC !important;
+  color: #fff !important;
+}
 
 
 [class^="topic_logo_src-components-TopicCard-topicCard-module"] {
@@ -593,7 +607,10 @@ background: #29165E !important;
   background-color: #29165E !important;
 }
 
+[class^="topic_logo_NbGP"] {
+  border: 1px solid #eac463;
 
+}
 
 /* SIGNUP FOR FREE */
 
