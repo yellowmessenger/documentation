@@ -517,11 +517,16 @@ ul, ol {
 
 
 [class^="hero_src-components-Header-header-module"] {
-background: #f2eee3 !important;
+background: #29165E !important;
 }
 
+[class^="hero_j_Uo"] {
+  background: #29165E !important;
+ 
+ }
+
 [class^="custom_footer_src-core-footer-module"] {
-  background-color: #29165e;
+  background-color: #29165E;
   letter-spacing: 0.15px;
   padding: 3.75rem 0 7.5rem;
  /* -webkit-box-pack: justify; */
@@ -529,9 +534,91 @@ background: #f2eee3 !important;
   -ms-flex-pack: justify;
 }
 
-[class^="hero_j_Uo"] {
-  background: #f2eee3 !important;
+[class^="topic_logo_NbGP"] {
+  background-color: #5C42FC10 !important;
+    border: none !important;
+}
 
+
+[class^="DocSearch DocSearch-Button"] {
+
+  border: 0px solid #0b0b0a !important; 
+
+}
+
+[class^="footer_src-components-TopicCard-topicCard-module"] {
+  background-color: #fff !important;
+  color: #5C42FC !important;
+}
+
+[class^="footer_src-components-TopicCard-topicCard-module"]:hover {
+  background-color: #5C42FC !important;
+  color: #fff !important;
+}
+
+[class^="footer_Sene"] {
+  background-color: #fff !important;
+  color: #5C42FC !important;
+}
+
+[class^="footer_Sene"]:hover {
+  background-color: #5C42FC !important;
+  color: #fff !important;
+}
+
+
+[class^="topic_logo_src-components-TopicCard-topicCard-module"] {
+  background-color: #5C42FC10 !important;
+  border: none !important;
+}
+
+[class^="ri-"], [class*=" ri-"] {
+  color: #5C42FC !important; 
+}
+
+[class^="ri-facebook-fill"] {
+  color: #fff !important;
+}
+
+[class^="ri-twitter-fill"] {
+  color: #fff !important;
+}
+
+[class^="ri-instagram-fill"] {
+  color: #fff !important;
+}
+
+[class^="ri-linkedin-fill"] {
+  color: #fff !important;
+}
+
+[class^="ri-youtube-fill"] {
+  color: #fff !important;
+}
+
+/* FOOTER */
+
+[class^="title_src-core-footer-module"] {
+
+  color: #F2CB67 !important;
+}
+
+[class^="custom_footer_src-core-footer-module"] {
+  background-color: #29165E !important;
+}
+
+[class^="topic_logo_NbGP"] {
+  border: 1px solid #eac463;
+
+}
+
+[class^="custom_footer_Vtry"] {
+  background-color: #29165E !important;
+}
+
+[class^="title_LZkR"] {
+  color: #F2CB67 !important;
+  font-weight: 500;
 }
 /* SIGNUP FOR FREE */
 
@@ -726,3 +813,5 @@ display: none;
   z-index: var(--ifm-z-index-fixed);
   width: 135px;
 }
+
+

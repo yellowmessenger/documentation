@@ -14,8 +14,9 @@ const TopicCard = ({ title, description, icon, url }) => {
           <p className={styles.description}>{description}</p>
         </div>
         <div className={styles.footer}>
-          <span>Read resource</span>
+          <span>Learn more</span>
           <i className="ri-arrow-right-line" />
+
         </div>
       </div>
     </Link>

@@ -119,7 +119,7 @@ const Footer = () => {
           <a href="https://twitter.com/yellowdotai" target="_blank">
             <i className="ri-twitter-fill" />
           </a>
-          <a href="https://www.instagram.com/yellowdotai/" target="_blank">
+          <a href="https://www.linkedin.com/company/yellowdotai/" target="_blank">
             <i className="ri-instagram-fill" />
           </a>
           <a

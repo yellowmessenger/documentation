@@ -62,11 +62,12 @@ Click [here](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback) for
 
 ---
 
-## 6. How to pass hierarchical custom fields in raise ticket node?
+## 6. How to pass hierarchical custom fields in raise ticket node
 
-- You can pass hierarchical custom fields in an array variable (this array variable has to be created in a function).
-**Array variable syntax**       
+You can pass hierarchical custom fields in an array variable (this array variable has to be created in a function).              
+**Array variable syntax:**       
 
+```
 [
   {
       "id": "id6d80e018eb471-1687697102772",
@@ -79,3 +80,4 @@ Click [here](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback) for
       "levelName": "Sub Category"
   }
 ]
+```

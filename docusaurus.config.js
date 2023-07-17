@@ -103,10 +103,14 @@ module.exports = {
   },
   presets: [
     [
-      "@docusaurus/preset-classic",
+      "docusaurus-preset-openapi",
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
+        },
+        api: {
+          path: "api/petstore.yaml",
+          routeBasePath: "/api",
         },
         googleAnalytics: {
           // trackingID: "UA-135959729-1",
