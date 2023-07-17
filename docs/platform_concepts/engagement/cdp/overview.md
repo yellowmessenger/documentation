@@ -66,12 +66,16 @@ You can group your users based on certain characteristics such as who they are a
 
 ## User events
 
-You can [send events](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) to yellow.ai, to record user activities or capture an important conversion [events](/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events).  It also captures the details such as the first and last time a user does something including the total number of times. For example, you can see the first time users clicked on a particular page, or when they most recently purchased an item.
+User events refer to specific actions or activities a user performs within a system, app, or platform. These define user behavior, engagements, and interactions. 
+The standard events include user creation, user update, and user deletion. 
 
-You can see events in User 360, and filter them based on a specific criteria like:
-- Users visiting the same product page quite often in recent times
-- Users who used the export feature a number of times or
-- Users who downgraded their plan
+You can also create [custom events](/docs/platform_concepts/studio/events/event-hub#-8-custom-events) to capture important activities or conversations and [send events data](https://documenter.getpostman.com/view/17583548/UVsEVUsg#00eb59cf-7f00-461e-8d53-94eafb056a9a) to yellow.ai. Custom events can include activities such as clicks, page views, form submissions, purchases, logins, searches, interactions with specific features, and more. Tracking user events help businesses gain valuable insights into user engagement, preferences, patterns, and conversion behavior.
+
+
+In User 360, you can view and filter events based on specific criteria. For example:
+- Users who have frequently visited the same product page recently
+- Users who have used the export feature multiple times
+- Users who have downgraded their plan
 
 
 ## Export your user data
