@@ -42,7 +42,10 @@ servers:
   - url: 'https://r5.cloud.yellow.ai'
     description: Europe region
   - url: https://alpha5.yellowmessenger.com
+    description: Alpha5
+  - url: https://staging.yellowmessenger.com
     description: Staging
+
   
 tags:
   - name: user
@@ -83,6 +86,12 @@ paths:
           schema:
             type: string
           example: "Bearer <TOKEN>"
+        - name: Content-Type
+          in: header
+          required: true
+          schema:
+            type: string
+          example: "Bearer <TOKEN>"  
         - name: bot
           in: query
           description: The unique ID of the bot associated with the user record.
