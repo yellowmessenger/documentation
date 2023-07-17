@@ -67,13 +67,13 @@ module.exports = {
           position: "left",
           activeBasePath: "/docs/cookbooks",
         },
-        {
+      /*  {
           to: "/api",
           label: "API Reference",
           position: "left",
           activeBasePath: "/api",
         },
-
+*/
         {
           to: "docs/updates/overview",
           label: "What's New",
