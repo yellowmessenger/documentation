@@ -3,6 +3,11 @@ title: Contacts (send proactive notifications)
 sidebar_label : Contacts 
 ---
 
+:::note
+Contacts is currently undergoing a revamp. During this time, there may be temporary issues and disruptions in its functionality. We apologize for any inconvenience caused.
+:::
+
+<!--
 In this article, you will learn: 
 1. [What are proactive notifications?](#defination)
 2. [How to create new contacts in the inbox?](#1)
@@ -10,7 +15,7 @@ In this article, you will learn:
 4. [How to followup with the tickets created for proactive notifications](#3)
 
 ------
-
+-->
 
 
 #### <a name="defination"></a>  **Proactive notifications**
