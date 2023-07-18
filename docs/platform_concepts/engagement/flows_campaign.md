@@ -1,6 +1,6 @@
 ---
-sidebar_label: Flow campaign
-title: Flow campaign
+sidebar_label: Create Flow campaign manually
+title: Create Flow campaign manually
 ---
 Yellow.ai's Flow Campaign is a  conversational marketing tool  with an advanced campaign builder. It helps marketers deliver a comprehensive customer experience across channels and engage customers at every stage of their journey.
 
