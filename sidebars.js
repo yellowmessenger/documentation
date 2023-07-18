@@ -824,17 +824,16 @@ module.exports = {
           
         },
         "platform_concepts/engagement/flows_campaign",
- /*     {
+     {
           type: "category",
-          label: "Workflow campaigns",
-          link: {type: 'doc', id: 'platform_concepts/engagement/workflow-intro'},
+          label: "Flow campaigns",
+         /*  link: {type: 'doc', id: 'platform_concepts/engagement/workflow-intro'},*/
           collapsed: true,
           items: [
-        "platform_concepts/engagement/workflowCampaign",
-        "platform_concepts/engagement/event-triggered-campaign",
-        "platform_concepts/engagement/workflow-report",
+        "platform_concepts/engagement/flows_campaign",    
+        "platform_concepts/engagement/flow-ai",
       ],
-    }, */
+    }, 
     
         {
           type: "category",
