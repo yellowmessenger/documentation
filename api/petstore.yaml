@@ -30,17 +30,17 @@ info:
   
 servers:
   - url: 'https://cloud.yellow.ai'
-    description: Default host
+    description: India
   - url: 'https://r1.cloud.yellow.ai'
-    description: MEA region
-  - url: 'https://r2.cloud.yellow.ai'
-    description: Jakarta region
+    description: MEA
+  - url: 'https://r2.cloud.yellow.ai/cdp/api/v1'
+    description: Indonasia
   - url: 'https://r3.cloud.yellow.ai'
-    description: Singapore region
+    description: Singapore
   - url: 'https://r4.cloud.yellow.ai'
-    description: USA region
+    description: USA
   - url: 'https://r5.cloud.yellow.ai'
-    description: Europe region
+    description: Europe
   - url: https://alpha5.yellowmessenger.com
     description: Alpha5
   - url: https://staging.yellowmessenger.com
@@ -60,38 +60,33 @@ tags:
     description: Manage bot messages
 
 components:
-  headers:
-    x-api-key:
-      description: Authentication token
-      required: true
-      schema:
-        type: string
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: X-API-KEY     
+  headers:  
     Content-Type:
-      description: Content type of the request body
-      required: true
+      description: Content type of the request payload
       schema:
         type: string
+      example: application/json
+    Accept:
+      description: Acceptable response content types
+      schema:
+        type: string
+      example: application/json
 paths:
   '/cdp/api/v1/user':
     post:
+      security:
+        - ApiKeyAuth: []    
       tags:
         - user
       summary: Add user
       description: Creates a user record in User360.
       operationId: addUser
       parameters:
-        - name: x-api-key
-          in: header
-          required: true
-          schema:
-            type: string
-          example: "Bearer <TOKEN>"
-        - name: Content-Type
-          in: header
-          required: true
-          schema:
-            type: string
-          example: "Bearer <TOKEN>"  
         - name: bot
           in: query
           description: The unique ID of the bot associated with the user record.
@@ -165,6 +160,8 @@ paths:
                     
   '/cdp/api/v1/user/{userId}':
     get:
+      security:
+        - ApiKeyAuth: []
       tags:
         - user
       summary: Get user details
@@ -224,6 +221,8 @@ paths:
                     type: string
                     description: Error details            
     put:
+      security:
+        - ApiKeyAuth: []    
       tags:
         - user
       summary: Update user
@@ -275,6 +274,8 @@ paths:
                   description: Indicates whether the user has opted in for email notifications
         
     delete:
+      security:
+        - ApiKeyAuth: []    
       tags:
         - user
       summary: Delete user
@@ -329,20 +330,16 @@ paths:
                     type: string
                     description: Error details
    
-  'cdp/api/v1/event':
+  '/cdp/api/v1/event':
     get:
+      security:
+        - ApiKeyAuth: []    
       tags:
         - event
       summary: Get user details
       description: Retrieves the details of a specific user based on the userId provided.
       operationId: getUserDetails
       parameters:
-        - name: x-api-key
-          in: header
-          required: true
-          schema:
-            type: string
-          example: "Bearer <TOKEN>"      
         - name: userId
           in: query
           description: The unique ID of the user.
@@ -360,20 +357,51 @@ paths:
           description: Pass `true` to retrieve all user properties. By default, only a few standard properties firstName, lastName
           schema:
             type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  contactDetails:
+                    type: object
+                    description: Details of the created contact
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details
+        '401':
+          description: Unauthorized request or invalid `X-Auth-Token` or `botId`
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details      
 
   '/data/messages':
     get:
+      security:
+        - ApiKeyAuth: []    
       tags: 
         - messages
       summary: Get messages
       description: Retrieves messages for a user from the Yellow.ai platform.
       parameters:
-        - name: x-api-key
-          in: header
-          required: true
-          schema:
-            type: string
-          example: "Bearer <TOKEN>"  
         - name: bot
           in: query
           description: The unique ID of the bot associated with the messages.
@@ -496,6 +524,8 @@ paths:
 
   '/api/ticketing/data/send':
     post:
+      security:
+        - ApiKeyAuth: []    
       tags: 
         - emailTicket
       summary: Create a new email ticket
