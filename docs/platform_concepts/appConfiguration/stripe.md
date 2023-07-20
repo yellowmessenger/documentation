@@ -8,26 +8,6 @@ sidebar_label : Stripe Payment
 
 Yellow.ai Integration with Stripe Payment Gateway  allows you to generate payment links and view payment status with yellow.ai platform. 
 
-
-# Use-cases 
-
-Following are the use-cases which are currently accommodated in the Integration:
-
-
-### 1. Simple integration 
-Yellow.ai connect with stripe payment gateway using the stripe api-key or credentials.While integrating,the user has to provide some client credentials.
-
-
-### 2. Do actions with stripe action nodes
-
-Using the action nodes you can generate payment links according to your use cases.
-
-
-![alt_text](https://i.imgur.com/IsFwMEI.png"image_tooltip")
-
-
-![alt_text](https://i.imgur.com/IsFwMEI.png "image_tooltip")
-
 # Configuration
 
 Configuring the integration with stripe payment gateway is straightforward. Follow the steps defined below to start integrating:
@@ -56,6 +36,25 @@ Stripe Payment Status | In case of payments/refunds the status can be checked wi
  
 
 ![alt_text](https://i.imgur.com/X8d0WQR.png "image_tooltip")
+
+# Use-cases 
+
+Following are the use-cases which are currently accommodated in the Integration:
+
+
+### 1. Simple integration 
+Yellow.ai connect with stripe payment gateway using the stripe api-key or credentials.While integrating,the user has to provide some client credentials.
+
+
+### 2. Do actions with stripe action nodes
+
+Using the action nodes you can generate payment links according to your use cases.
+
+
+![alt_text](https://i.imgur.com/IsFwMEI.png"image_tooltip")
+
+
+![alt_text](https://i.imgur.com/IsFwMEI.png "image_tooltip")
  
 
 # Reference

@@ -1,78 +1,69 @@
 ---
-title: Netcore Smartech
-sidebar_label : Netcore Smartech
+title : Microsoft Graph
+sidebar_label : Microsoft Graph
 ---
 
+### Scope of Integration
 
-Yellow.ai Integration with Netcore Smartech enables the end user to do the following:
-1. Receive the event from Netcore on the addition of Yellow’s webhook URL.
+Yellow.ai Integration with Microsoft Graph allows you to seamlessly connect and use Microsoft
+Graph services with yellow.ai platform. Any customer who has an Azure Active Directory will be
+able to seamlessly connect and call Microsoft Graph APIs on yellow.ai platform. This connector
+will enable users to get access tokens using action node which can then be used to call the
+Graph APIs.
 
+### Configuration
 
-## 1. Configuration
+Configuring the integration with Microsoft Graph is straight forward. Follow the steps defined
+below to start integrating:
 
-You can configure Netcore Smartech by following the below steps:
+#### 1. Navigate to Integrations Tab
 
-1. Enabling the Integration in yellow.ai Integrations Module.
+Inside your project, navigate to the Configuration tab and then click on the Integrations 
+Tab. Search for Microsoft Graph.
 
-    * Login to cloud.yellow.ai and click on the Integrations Module from the top left corner of your screen.
-    * Then search for the integration named Netcore or choose the category named Tools & Utilities from the left navigation bar and then click on Netcore Smartech.
-    * Click on Connect and the Integration will be enabled at yellow.ai’s end and the event will be added to Event Hub.
+<img src="https://www.dropbox.com/s/dlo1br71882jf5v/image2.png?raw=1" alt="drawing" width="40%"/>
 
-**![](https://lh6.googleusercontent.com/gDTZ6sC2oS6ykg5GO5tOmcuKkDXShI24ddv86ezx7W5Uu43sSP05xNL0P_1krdoOmZX-g4pFak2kG62rM2BwjzysyfgNrhAPjfoIYSyIVmd_hPn7r5O7F2MGOz_nabmjp6Q2qAuPIyLd0Tyd77XUeE14Nvp5icy0BMbffuhdh7JwoMH4MaDjFVi1IQ)**
+#### 2. Connect to Microsoft Graph
 
+Click on Connect and enter the values in the fields from your Azure account. Once the
+values are given, the Microsoft Graph will be connected and the action node can be
+used to get the access token which can then be used to call Microsoft Graph APIs.
 
-**![](https://lh3.googleusercontent.com/u9gFHQZkooKcKv-BWRNKfG25Ph1j9WzKpQdaIHixBjFbKRJI6_QAdXgkQcINgn7AoV3qln178AESa69qlR5nUOLc84P2XxXAbxUAg77YbkNsym4vjGWm2WDXW_WVDfLvJoC2DDR5m62yUbedsrHSxQJPEFsidhcXgZ8ciqx1t7TrjoFhy4_8-yLrBw)**
+<img src="https://www.dropbox.com/s/qqxql3vomvy75w2/image3.png?raw=1" alt="drawing" width="100%"/>
 
-**![](https://lh6.googleusercontent.com/9jX0oKyH5Y985k0q663-7DbKgOpSKAFf7BVIGZXlo3QIhO9FnZVycbLG7RmIcu7eI2a3lM_UuRkGUsOmVXTNWzz2dSTTgP_pDfhXtYyKT5ISZNFw6oVK_ROjUryB1LV2d0KqP5MJauVj_sZfYn8_75kgzZa2cDsZu3_VcUZaqJtsPaABC-8MsaMYuw)**
+<img src="https://www.dropbox.com/s/z6kl9wk0vt9dq4i/image4.png?raw=1" alt="drawing" width="100%"/>
 
-2. Configure webhook URL in netcore dashboard.
-    * Copy the webhook URL mentioned in the Instructions section of the Netcore Smartech Integration Card. Please note that based on the region of your bot i.e r1/r2/r3/r4/r5, you need to append that to the domain of the webhook URL. For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to the India region, you can use the origin domain itself.
-    * The client needs to log in to the Netcore Smartech dashboard and navigate to the Webhook URL Configuration section and add the provided webhook URL.
+Voila! And just like that, you are now connected and can call Microsoft Graph APIs.
 
-**![](https://lh3.googleusercontent.com/N7bg-EHJLIfmu4kd1UwMKcv_bsM6pxpzWM8QJd-ddWmYmLl88sq1-eLRDez9FEwhPdbv2w9QxBPYCcCj7K65W57bzyC09Ksnsp4EBDaRGRzWICfWKahvV_e-1U_8tjv-m2PxccM4r9VmND0AqTuNHeDJqbvN_ZVEAhiPN7xitNE3fGoUZJKS054_2w)**
+If you have multiple accounts, follow the above mentioned steps to add each of them.
 
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
 
+### Use-cases
 
-3. Receiving event in yellow.ai Bot.
+Following are the use-cases which are currently accommodated in the Integration:
 
-    * Login to cloud.yellow.ai and click on the Studio Module from the top left corner of your screen.
-    * Click on the Event, from the left navigation bar and then choose Integrations.
-    * You will find an event named netcoreEvent that needs to be activated by clicking on the three dots next to the name of the event.
-    * After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
+#### Get access tokens
 
+Access tokens required to call the Graph APIs can be fetched using action nodes
+provided in the integration. It should be noted that necessary permissions need to be
+given while registering the application on the Azure portal. For more details, please refer
+https://docs.microsoft.com/en-us/graph/auth-v2-service.
 
+<img src="https://www.dropbox.com/s/1czxex1jx76le23/image1.png?raw=1" alt="drawing" width="60%"/>
 
+### Supported Version
 
+This integration shall support latest version releases.
 
-**![](https://lh6.googleusercontent.com/gDTZ6sC2oS6ykg5GO5tOmcuKkDXShI24ddv86ezx7W5Uu43sSP05xNL0P_1krdoOmZX-g4pFak2kG62rM2BwjzysyfgNrhAPjfoIYSyIVmd_hPn7r5O7F2MGOz_nabmjp6Q2qAuPIyLd0Tyd77XUeE14Nvp5icy0BMbffuhdh7JwoMH4MaDjFVi1IQ)**
+For more information, please refer to Microsoft Graph Documentation.
 
-
-**![](https://lh3.googleusercontent.com/aepM3XSZgirczPjyCoMTv0r0T-q-MVHg4cGH5l5tzX9xd0nOjYJ2XmNKeWrzjdq4pfZvngZq9Fyd-2GLE7cELlXAZYUEJPesLrbMGridFgrNxLkXzw8n7O_-uWxC3Py4u5BinvCXDYzP9fSPs6KaAO038Dq2fEEDzf87IUQ3_8ZouK-rhylpvryRhg)**
-
-**![](https://lh4.googleusercontent.com/LGfbPG4rqwnkN7e0eX1QSpCxKYAbDlEUlgJ3d3g3Vx3mYzsxDUHwtctl-LGr6gqIjkiBBJtAIp9hLvhIt6FuKLW1SkR7j9HSlfhSz69hki86wO5DCyewfCnYLG5jC4wTrvs4EoP-X8oJxVeS98Z4c19OPH9l9-IQh2atzfaq4H4jvRG9mlCWyXFZAg)**
-
-
-
-Sample webhook event data sent by Paytm:
-
-```
-{
-          "webhook_name": "yellow-ai",
-          "event_params": {
-            "foreignkey": "9999999997",
-            "linkid": -1
-          },
-          "custom_params": {
-            "channel": "sms",
-            "type": "click"
-          },
-          "att_params": {
-            "MBR_DOBIRTH": "23-12-88",
-            "AGE_BUCKET_APR17": "25 To <30_Yr",
-            "MARIAL_STATUS": "S",
-            "CAMPAINGENAME": "XYZ"
-          }
-        }
-
-```

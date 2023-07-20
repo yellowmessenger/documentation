@@ -137,24 +137,7 @@ shopifyCartEmpty | A cart is deleted.
 
 ---
 
-## 6. Enable Script Tags Scopes for SDK tracking of custom user events
-
-1. Login to your [Shopify account](https://www.shopify.com/in) and go to **Apps and sales channels** > **Develop apps**.
-
-![](https://i.imgur.com/BuehIWp.png)
-
-2. Click your private app.
-
-![](https://i.imgur.com/DImNqph.png)
-
-3. Go to **Configuration** > **Admin API integration** > **Edit**.
-
-![](https://i.imgur.com/Bwgm6A8.png)
-
-4. Search for script tags and enable  **write_script_tags** and **read_script_tags**.
-
-
-## 7. Use-cases
+## 6. Use-cases
 
 The following business use-cases are supported in this integrtion.
 
@@ -634,11 +617,11 @@ This function helps you when a checkout has been initiated in Shopify.
 
 ---
 
-## 8. Run campaigns based on Shopify events
+## 7. Run campaigns based on Shopify events
 
 You can initiate campaigns based on Shopify events. To know more about it, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
 
-## 9.Limitations
+## 8.Limitations
 
 1. You can fetch up to 50 products a time.
 2. You can use only 90kb of object size 
@@ -649,7 +632,7 @@ You can initiate campaigns based on Shopify events. To know more about it, click
 Abandon cart option is not available.
 :::
 
-## 10.Troubleshooting 
+## 9.Troubleshooting 
 
 **Error: Your webhook is failing**
 
@@ -657,7 +640,7 @@ Ensure you have enabled Shopify's event in **Event Hub**. If your webhook fails 
 
 ---
 
-## 11. Import Shopify template
+## 10. Import Shopify template
 
 Now that the connection has been established with the Shopify app, you need to import the Shopify template in your bot to use the predefined flows of the app. 
 
@@ -679,7 +662,7 @@ To use Shopify shop template:
 ---
 
 
-## 12. Disconnect Integration
+## 11. Disconnect Integration
 To remove this integration from your bot, 
 
 1. On the bot configuration page, go to **Integrations**.

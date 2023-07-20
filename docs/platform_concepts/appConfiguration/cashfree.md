@@ -6,9 +6,47 @@ sidebar_label : Cashfree Payment
 
 Yellow.ai Integration with Cashfree Payment Gateway allows you to generateTransaction ID and view payment status with the yellow.ai platform.
 
-## 1. Use cases
+## 1.  Configuration
+
+
+Configuring the integration with Cashfree is straightforward. Follow the steps defined below to start integrating:
+
+1. Sign up on Cashfree dashboard.
+2. Copy the App ID and Secret.
+3. Go to the integration page of cloud.yellow.ai and search for cashfree then Paste the app Id and Secret in the form.
+4. Choose the API base URL according to the type of cashfree account that has been configured.
+
+If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+**Event for receiving payment confirmation on bot**
+
+Following are the events that are currently accommodated in the Integration:
+
+|Event|Description|
+|---|---|
+|Cashfree payment status|In case of successful payments the status can be checked with these details.|
+
+:::note
+* Activate the Cashfree Payment Status after configuring cashfree credentials at the integration page.
+* If you have added multiple accounts in your platform, enable events for each of those accounts.
+:::
+
+**![](https://lh3.googleusercontent.com/zgmzj8u9FXIrz1BGiBzUyi6_S-k2tzQVxaVvqAiHX-pYF8_bDgIsEgqW8_AOVP4jAT_Gn25Wey8vCywa6pU-JirAQqqaEPnPxhu5za_GrP8JTUlahnifhZ-ATNnvjLJJN2Jkt6bLS2GIT2bazEeZIdXM0Tf_j1Jepa9iDC8pBwNbERLHg-S3p7RQdg)**
+
+## 2. Use cases
 
 Following are the use cases that are currently accommodated in the Integration:
+
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 1. Generate Transaction ID
     
@@ -71,32 +109,6 @@ Following are the use cases that are currently accommodated in the Integration:
 
 
 ```
-
-**Event for receiving payment confirmation on bot**
-
-Following are the events that are currently accommodated in the Integration:
-
-|Event|Description|
-|---|---|
-|Cashfree payment status|In case of successful payments the status can be checked with these details.|
-
-:::note
-Activate the Cashfree Payment Status after configuring cashfree credentials at the integration page.
-:::
-
-**![](https://lh3.googleusercontent.com/zgmzj8u9FXIrz1BGiBzUyi6_S-k2tzQVxaVvqAiHX-pYF8_bDgIsEgqW8_AOVP4jAT_Gn25Wey8vCywa6pU-JirAQqqaEPnPxhu5za_GrP8JTUlahnifhZ-ATNnvjLJJN2Jkt6bLS2GIT2bazEeZIdXM0Tf_j1Jepa9iDC8pBwNbERLHg-S3p7RQdg)**
-
-
-## 2.  Configuration
-
-
-Configuring the integration with Cashfree is straightforward. Follow the steps defined below to start integrating:
-
-1. Sign up on Cashfree dashboard.
-2. Copy the App ID and Secret.
-3. Go to the integration page of cloud.yellow.ai and search for cashfree then Paste the app Id and Secret in the form.
-4. Choose the API base URL according to the type of cashfree account that has been configured.
-
 
 ----
 

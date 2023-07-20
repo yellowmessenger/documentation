@@ -12,6 +12,9 @@ Yellow.ai Integration with Bamboo HR allows you to seamlessly connect your Bambo
 ## 1. Use Case
 In this integration, you can use integration nodes configured for Bamboo HR. Firstly you'll have to select Bamboo HR from the options in Integrations and add the necessary parameters. After that, you can use their action nodes in the required flows.
 
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 
 | Node Name |  Functionality |
@@ -39,3 +42,10 @@ To integrate yellow with Bamboo HR, follow the steps below:
 3. For API Key, navigate to the account icon in the top right. In the dropdown, you'll find the 'API Keys' option. There you can create your API Key.
 
 4. Click **Connect**.
+5. :::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+ 
