@@ -32,20 +32,23 @@ See how to configure each node in the following sections.
 
 ***
 
-## Create flow 
+## Create flow campaign
 
 To create a flow, follow these steps:
-1. In Engage, go to **Outbound**.
 
+1. Click on the Module Switcher and navigate to **Engage**.
+2. Navigate to **Flows** and click **Create flow** > **Create from scratch**.
 
-2. In the **Flows** tab, click **Create workflow**.
+  ![](https://i.imgur.com/AsPgjaT.png)
+
+2. Click on  to **Flows**.
   
-  ![](https://i.imgur.com/qjajBeX.png)
+  ![](https://i.imgur.com/wrBLa4B.png)
 
 
 3. Click on the Edit icon of the Untitled workflow (the default name) and enter the campaign name.
 
-   ![](https://i.imgur.com/gxQL2E5.png)
+   ![](https://i.imgur.com/9VMYAuN.png)
    
 4. Select the rule when users should enter the flow.
 	
@@ -80,11 +83,9 @@ To set an event for which the user qualifies to enter the flow:
 | Option | Description |
 | ------ | ------------ |
 | **Campaign triggers when user**  | Choose the event for which the user qualifies to enter the flow. Learn more about [how to activate events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#1-activatedeactivate-event) and [how to add custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-event). |
-**After event, campaign triggers** | Choose *Immediately* to trigger the campaign immediately after the event has occured. 
-| ^ | Choose **At a specific time** to trigger the campaign on a specific date for the qualified users. <br/><img src="https://i.imgur.com/SdcMiVJ.png" width="50%"/> | 
-| ^ | Choose **After a delay** to trigger the campaign after a specific number of hours, days, or weeks from the event occured time. <img src="/img/cdp/afteraDelay.png" width="60%"/><br/> You can also define a custom property (Click **Add property input**) by which you want to trigger the campaign. <br/><img src="/img/cdp/addPropertyInput.png" width="60%"/> <br/>1. Set the duration in minutes, hours, days or weeks. <br/>2. Choose when to remind - Before or After, and <br/>3. Enter your preferred event property in the last box. <img src="/img/cdp/property2.png" width="60%"/><br/>For example, send a notification 2 days before a subscription renewal date, Send a greeting on the customer's birthdate, send a reminder 30 minutes before the appointment, or send a thank you message an hour after the flight departure. | 
-| **Campaign frequency & duration** | Setup when to run the campaign.<br/>1. In **Run this campaig**, choose *Once per user* or *Everytime when the event happens*.<br/>2. In **Start** and **End**, set the duration of the campaign (date and time). | 
-| **Target audience** | - To make the campaign applicable for specific user groups, select **One or more segments** and choose your preferred user segments.<br/>- To make the campaign enabled for all users, select **All users**. | 
+**After event, campaign triggers** | <ul><li>Choose *Immediately* to trigger the campaign right after the event has occured.</li><li>Choose **At a specific time** to trigger the campaign on a specific date for the qualified users. <br/><img src="https://i.imgur.com/SdcMiVJ.png" width="50%"/></li><li>Choose **After a delay** to trigger the campaign after a specific number of hours, days, or weeks from the event occured time. <img src="/img/cdp/afteraDelay.png" width="60%"/><br/> You can also define a custom property (Click **Add property input**) by which you want to trigger the campaign. <br/><img src="/img/cdp/addPropertyInput.png" width="60%"/> <br/>1. Set the duration in minutes, hours, days or weeks. <br/>2. Choose when to remind - Before or After, and <br/>3. Enter your preferred event property in the last box. <img src="/img/cdp/property2.png" width="60%"/><br/>For example, send a notification 2 days before a subscription renewal date, Send a greeting on the customer's birthdate, send a reminder 30 minutes before the appointment, or send a thank you message an hour after the flight departure.</li></ul> | 
+| **Campaign frequency & duration** | Setup when to run the campaign.<br/><ol><li>In **Run this campaig**, choose between *Once per user* or *Everytime when the event happens*.</li><li>In **Start** and **End**, set the duration of the campaign (date and time).</li></ol> | 
+| **Target audience** | <ul><li>If you want the campaign to be applicable for specific users groups, select **One or more segments** and choose your preferred user segments.</li><li> If you want the campaign to be enabled for all users, select **All users**. </li></ul> | 
 
 ***
 
@@ -189,7 +190,7 @@ This allows you to set a future timestamp (date and time) for which the user has
 
 ### Wait for this duration
 
-This allows you to set a relative duration (in days, hours, or minutes) for which the user has to wait at a specific point of the flow before proceeding to the next action.
+This allows you to define a relative duration during which the user must wait at a specific point in the flow before proceeding to the next action. You can set the duration either in  days, hours, or minutes.
 
 1. Drag-and-drop **Wait until this duration** to the desired step of the flow.
 
