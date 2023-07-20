@@ -6,11 +6,61 @@ sidebar_label : Instamojo
 
 Yellow.ai Integration with Instamojo Payment Gateway allows you to generate payment links, view payment status, and create refunds with the yellow.ai platform. 
 
-## 1. Use cases 
+## Configuration
+
+Configuring the integration with Instamojo is straightforward. Follow the steps defined below to start integrating:
+
+1. Sign up on Instamojo.
+    * __Test Mode:__ This mode is for testing and for developers who are just getting started in Instamojo Integration. Test Mode is completely Free of Charge. No real charges will be made, even if we give our valid card details in the Instamojo use (https://test.instamojo.com/) to sign Up
+    * __Live Mode:__ As the name suggests, In the Live Mode, we would be charged for real. To work on Live Mode, we have to give our bank account and KYC Details. Use (https://www.instamojo.com/) to Signup.
+
+2. After signing up, log in to Dashboard > Go to API & Plugins > Generate Credentials > Select Direct Rest API Integration.
+
+![alt_text](https://cdn.yellowmessenger.com/QMOhzge5GSgd1665990761659.png "image_tooltip")
+
+3. Copy the Client ID and Client Secret.
+
+4. Go to the integration page of cloud.yellow.ai and search for Instamojo then Paste the client Id and Client Secret in the form.
+
+5. For sandbox environment use ```https://test.instamojo.com``` as baseUrl and for production env use ```https://api.instamojo.com``` as baseUrl
+
+6. If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+
+----
+
+## Event for receiving payment confirmation on the bot
+Following are the events that are currently accommodated in the Integration:
+
+Event | Description
+----- | -----------
+Instamojo Payment Status | In the case of payments the status can be checked with these details.
+
+Please Activate the Instamojo Payment Status after configuring Instamojo credentials on the integration page.
+
+
+![alt_text](https://cdn.yellowmessenger.com/tHfJQScwtIoy1665990705590.png "image_tooltip")
+
+:::info
+If you have added multiple accounts in your platform, enable events for each of those accounts.
+:::
+
+##  Use cases 
 
 Following are the use cases that are currently accommodated in the Integration:
 
-### 1.1 Generate Payment link
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
+
+### Generate Payment link
 
 Using the action nodes, you can generate payment links according to your use cases. 
 Get the final amount from your cart total and call the Generate Payment link action node of integration.
@@ -64,19 +114,7 @@ Get the final amount from your cart total and call the Generate Payment link act
 }
 ```
 
-#### Event for receiving payment confirmation on the bot
-Following are the events that are currently accommodated in the Integration:
-
-Event | Description
------ | -----------
-Instamojo Payment Status | In the case of payments the status can be checked with these details.
-
-Please Activate the Instamojo Payment Status after configuring Instamojo credentials on the integration page.
-
-
-![alt_text](https://cdn.yellowmessenger.com/tHfJQScwtIoy1665990705590.png "image_tooltip")
-
-### 1.2 Create a Refund
+### Create a Refund
 
 This will refund a payment made on Instamojo.
 
@@ -119,26 +157,6 @@ This will refund a payment made on Instamojo.
   "success": true
 }
 ```
-
-## 2. Configuration
-
-Configuring the integration with Instamojo is straightforward. Follow the steps defined below to start integrating:
-
-1. Sign up on Instamojo.
-    * __Test Mode:__ This mode is for testing and for developers who are just getting started in Instamojo Integration. Test Mode is completely Free of Charge. No real charges will be made, even if we give our valid card details in the Instamojo use (https://test.instamojo.com/) to sign Up
-    * __Live Mode:__ As the name suggests, In the Live Mode, we would be charged for real. To work on Live Mode, we have to give our bank account and KYC Details. Use (https://www.instamojo.com/) to Signup.
-
-2. After signing up, log in to Dashboard > Go to API & Plugins > Generate Credentials > Select Direct Rest API Integration.
-
-![alt_text](https://cdn.yellowmessenger.com/QMOhzge5GSgd1665990761659.png "image_tooltip")
-
-3. Copy the Client ID and Client Secret.
-
-4. Go to the integration page of cloud.yellow.ai and search for Instamojo then Paste the client Id and Client Secret in the form.
-
-5. For sandbox environment use ```https://test.instamojo.com``` as baseUrl and for production env use ```https://api.instamojo.com``` as baseUrl
-
-----
 
 **Reference**
 

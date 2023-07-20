@@ -9,9 +9,45 @@ Yellow.ai integration with Freshservice ITSM enables the end user to do the foll
 * Checking the status of a particular ticket.
 * Create a new IT-related ticket.
 
-## 1. Use-cases 
+## 1. Configuration
+
+
+You can configure Freshservice ITSM Solution by following the below steps:
+
+1. Log in to cloud.yellow.ai and click the Integrations Module from the top left corner of your screen.
+2. Then search the integration named Freshservice ITSM Solution or choose the category named ITSM from the left navigation bar and then click Freshservice ITSM Solution.
+3. This will now open a section where we have to type in the required details to enable this integration. The required values are API Key (This key will be provided by the client/freshservice spoc of the client), and Domain Name.
+:::note
+The format of this field should be https://yellowtest.freshservice.com/api/v2 and this is also to be provided by the client/freshservice spoc of the client.
+:::
+
+4. After entering these values, you need to click **Connect** and the integration will be enabled at yellow.ai’s end.
+
+![](https://i.imgur.com/UA5udkA.jpg)
+
+
+![](https://i.imgur.com/7oBwA4s.jpg)
+
+
+![](https://i.imgur.com/44WE6pM.png)
+
+5. If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+
+## 2. Use-cases 
 
 Following are the use cases that are currently accommodated in the integration:
+
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 ### 1.1 My Tickets
 
@@ -331,27 +367,5 @@ The **Create Ticket Integration Action Node** has two possible outcomes, success
 ```
 
 
-
-## 2. Configuration
-
-
-You can configure Freshservice ITSM Solution by following the below steps:
-
-1. Log in to cloud.yellow.ai and click the Integrations Module from the top left corner of your screen.
-2. Then search the integration named Freshservice ITSM Solution or choose the category named ITSM from the left navigation bar and then click Freshservice ITSM Solution.
-3. This will now open a section where we have to type in the required details to enable this integration. The required values are API Key (This key will be provided by the client/freshservice spoc of the client), and Domain Name.
-:::note
-The format of this field should be https://yellowtest.freshservice.com/api/v2 and this is also to be provided by the client/freshservice spoc of the client.
-:::
-
-4. After entering these values, you need to click **Connect** and the integration will be enabled at yellow.ai’s end.
-
-![](https://i.imgur.com/UA5udkA.jpg)
-
-
-![](https://i.imgur.com/7oBwA4s.jpg)
-
-
-![](https://i.imgur.com/44WE6pM.png)
 
 

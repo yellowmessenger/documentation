@@ -8,9 +8,42 @@ sidebar_label : SFTP
 
 Yellow.ai Integration with SFTP allows you to seamlessly connect your remote server with the yellow.ai platform. Using this integration, one can get remote files, make a directory, delete directory, upload files to remote server, check if file exists or not.
 
+# Configuration
+
+Configuring the integration with SFTP is straightforward. Follow the steps defined below to start integrating:
+
+**To integrate SFTP with your bot on the platform:**
+
+1. Go to Integration section
+2. In Integration click on the connect for the SFTP.
+3. Enter Host, Port, username, Password.
+
+![alt_text](https://i.imgur.com/xepX9Ka.png "image_tooltip")
+
+4. Click on Save
+5. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
+
+6. Store SFTP response in Object type variable in action-node.
+
+![](https://i.imgur.com/KCWAcMf.png)
+
+If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+
 # Use-cases 
 
 Following are the use-cases which are currently accommodated in the Integration:
+
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 
 ### 1. SFTP File Transfer
@@ -118,28 +151,6 @@ Change the mode (read, write or execute permissions) of a remote file or directo
 * remotePath: string. Path to the remote file or directory
 * newmode: octal. New mode to set for the remote file or directory
 
-
-# Configuration
-
-Configuring the integration with SFTP is straightforward. Follow the steps defined below to start integrating:
-
-**To integrate SFTP with your bot on the platform:**
-
-1. Go to Integration section
-2. In Integration click on the connect for the SFTP.
-3. Enter Host, Port, username, Password.
-
-![alt_text](https://i.imgur.com/xepX9Ka.png "image_tooltip")
-
-4. Click on Save
-5. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
-
-6. Store SFTP response in Object type variable in action-node.
-
-![](https://i.imgur.com/KCWAcMf.png)
-
-
-Following the above steps will connect your SFTP remote server  with the yellow.ai platform.
 
 # **References:**
 

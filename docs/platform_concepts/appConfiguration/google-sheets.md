@@ -7,12 +7,44 @@ sidebar_label : Google Sheets
 
 Yellow.ai Integration with Google Sheets enables you to seamlessly access Google sheets services. Any customer who has a Google account will be able to connect with yellow.ai using OAuth. Using this integration you can create, read, insert/update and clear values from a spreadsheet.
 
+## Configuration
+
+Configuring the integration with Google sheets is straightforward. Follow the steps defined below to start integrating:
+
+### Navigate to integration tab:-
+
+Inside your project, fom the switcher navigate to the Integrations, search for Google Sheets in the search bar, or you can find Google Sheets under Tools & Utilities section.
+![Integration_Tab](https://cdn.yellowmessenger.com/gpzeigOUh0wp1650969736563.png)
+
+
+### Connect your google account:-
+
+One can easily enable Google sheets integration for their bot using Oauth. Follow the below steps to enable Google Sheets integration for your bot:-
+
+1. Click on `Sign in with Google` button.
+2. Login with your Google credentials in the window opened.
+3. Click on `Allow Access` to provide your bot the access to Google Sheets.
+
+![Integration_Gif](https://cdn.yellowmessenger.com/lJDrhSTboKk11650969677157.gif)
+Following the above steps will connect your Google Sheets with Yellow.ai platform.
+
+If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
 
 ## Use-cases
 
 Following are the use-cases which are currently accommodated in the Integration:
 
-
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 ### CreateSpreadsheet:-
 
@@ -215,32 +247,6 @@ Clear values in a sheet integration node helps users in clearing values in a spr
    </td>
   </tr>
 </table>
-
-
-
-## Configuration
-
-Configuring the integration with Google sheets is straightforward. Follow the steps defined below to start integrating:
-
-
-
-### Navigate to integration tab:-
-
-Inside your project, fom the switcher navigate to the Integrations, search for Google Sheets in the search bar, or you can find Google Sheets under Tools & Utilities section.
-![Integration_Tab](https://cdn.yellowmessenger.com/gpzeigOUh0wp1650969736563.png)
-
-
-### Connect your google account:-
-
-One can easily enable Google sheets integration for their bot using Oauth. Follow the below steps to enable Google Sheets integration for your bot:-
-
-1. Click on `Sign in with Google` button.
-2. Login with your Google credentials in the window opened.
-3. Click on `Allow Access` to provide your bot the access to Google Sheets.
-
-![Integration_Gif](https://cdn.yellowmessenger.com/lJDrhSTboKk11650969677157.gif)
-Following the above steps will connect your Google Sheets with Yellow.ai platform.
-
 
 ## References:-
 
