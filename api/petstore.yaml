@@ -130,9 +130,111 @@ paths:
               schema:
                 type: object
                 properties:
-                  contactDetails:
+                  message:
+                    type: string
+                    example: "User created successfully"
+                  data:
                     type: object
-                    description: Details of the created contact
+                    properties:
+                      userId:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "12395"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      lastName:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "Rohit3"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      phone:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "919876543211"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      tags:
+                        type: object
+                        properties:
+                          value:
+                            type: array
+                            items:
+                              type: string
+                            example:
+                              - "tags2"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      country:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "IN"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      emailOptIn:
+                        type: object
+                        properties:
+                          value:
+                            type: boolean
+                            example: false
+                          propertyType:
+                            type: string
+                            example: "System"
+                      botId:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: ""
+                        description: Unique ID of the bot associated with the user    
+                      id:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "x1632831689374_t4-qyVsPjufdqVfL0uXRM"
+                        description: Unique internal ID genetated for the user.
+                      updatedAt:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            format: date-time
+                            example: "YYYY-MM-DDTHH:mm:ss.sssZ"
+                          propertyType:
+                            type: string
+                            example: "System"
+                        description: The date and time of the last update to the user record in the ISO standard format
+                      createdAt:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            format: date-time
+                            example: "2023-07-17T12:55:06.730Z"
+                          propertyType:
+                            type: string
+                            example: "System"
+                        description: The date and time of the record creation in ISO standard format    
+                      profileComplete:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "13.04"
         '400':
           description: Bad Request
           content:
@@ -157,6 +259,7 @@ paths:
                   error:
                     type: string
                     description: Error details
+  
                     
   '/cdp/api/v1/user/{userId}':
     get:
