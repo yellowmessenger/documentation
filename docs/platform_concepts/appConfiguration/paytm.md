@@ -9,11 +9,99 @@ Yellow.ai Integration with Paytm Payment Gateway enables the end user to do the 
 2. Initiate the process of refund.
 3. Check the status of the refund that was initiated.
 
-## 1. Use cases 
+## Configuration
+
+You can configure the Paytm payment gateway by following the below steps:
+
+1. Enabling the Integration in the yellow.ai Integrations Module.
+
+    - Login to cloud.yellow.ai and click the Integrations Module from the top left corner of your screen.
+    - Then search the integration named **Paytm** or choose the category named Payment from the left navigation bar and then click **Paytm**.
+    - This will now open a section where we have to type in the required details to enable this integration. The required values are **Merchant ID** (To be provided by the client/Paytm spoc of the client), **Merchant Key** (To be provided by the client/Paytm spoc of the client) , **API Domain** (In case you want to use the staging domain of Paytm please use https://securegw-stage.paytm.in otherwise please use https://securegw.paytm.in) , **Channel ID** (To be provided by the client/Paytm spoc of the client), **Industry Type** (To be provided by the client/Paytm spoc of the client).
+    - After entering these values, you need to click  **Connect** and the Integration will be enabled at yellow.ai’s end.
+    - If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+
+
+![](https://i.imgur.com/D6FFCed.png)
+
+
+![](https://i.imgur.com/knahjjR.png)
+
+
+![](https://i.imgur.com/4e8mqVP.jpg)
+
+
+2. Configure the webhook URL in the Paytm dashboard.
+
+    - Copy the webhook URL mentioned in the Instructions section of the Paytm Integration Card. Please note that based on the region of your bot i.e r1/r2/r3/r4/r5, you need to append that to the domain of the webhook URL. For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to the Indian region, you can use the origin domain itself.
+
+![](https://i.imgur.com/17C5i0Y.png)
+
+
+  - The client needs to log in to the Paytm dashboard and navigate to the Webhook URL Configuration section and add the provided webhook URL.
+
+3. Receiving event in yellow.ai Bot.
+
+    * Login to cloud.yellow.ai and click the Studio Module from the top left corner of your screen.
+    * Click the Event, from the left navigation bar and then choose Integrations.
+    * You will find an event named Paytm Payment Status that needs to be activated by clicking on the three dots next to the name of the event.
+    * After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
+
+![](https://i.imgur.com/D6FFCed.png)
+
+
+![](https://i.imgur.com/9Xkc7SK.png)
+
+
+![](https://i.imgur.com/lnAQscW.png)
+
+:::info
+If you have added multiple accounts in your platform, enable events for each of those accounts.
+:::
+
+**Sample webhook event data sent by Paytm**
+
+```
+{
+ "PAYMENTEMAILID": "user@example.com",
+ "PAYMENTMOBILENUMBER": "7777777777",
+ "GATEWAYNAME": "WALLET",
+ "RESPMSG": "Txn Success",
+ "BANKNAME": "WALLET",
+ "PAYMENTMODE": "PPI",
+ "CUSTID": "CUST_001",
+ "MID": "INTEGR7769XXXXXX9383",
+ "MERC_UNQ_REF": "LI_12345",
+ "RESPCODE": "01",
+ "TXNID": "202005081112128XXXXXX68470101509706",
+ "TXNAMOUNT": "1.00",
+ "ORDERID": "ORDERID_98765",
+ "STATUS": "TXN_SUCCESS",
+ "BANKTXNID": "63240520",
+ "TXNDATETIME": "2020-09-10 13:03:05.0",
+ "TXNDATE": "2020-09-10",
+ "CHECKSUMHASH": "PMXJocjUUKGq7MXGwHO0LNOV+YxwuYi4gKjRgFOIZVGVqyxqfFuec+A8boUq5Q3c87yYM9DOeCmjIj5mH20SfIiDjOJiU4eFzNxu0J1qKdc=",
+ "LINKNOTES": "Link Note Description"
+}
+```
+
+## Use cases 
 
 Following are the use cases that are currently accommodated in the Integration:
 
-### 1.1 Generate Payment Link
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
+
+### Generate Payment Link
 
 In the studio flow builder, you need to choose the node type Integrations from the dialog box and then you will see an option to select Paytm from the list of Integrations that have been enabled for that particular bot.
 
@@ -26,8 +114,6 @@ After clicking on Paytm, you will see that an Integration Action Node is added t
 
 
 The set of mandatory fields required for the successful execution of this use case (Generate Payment Link in this case), will be displayed. The below-mentioned table consists of the sample value, data type, and description for each field present in the above screenshot:
-
-
 
 
 | Field name | Sample value |  Data type   | Description |
@@ -138,7 +224,7 @@ In case of success, you must extract the key **shortUrl** present in the **body*
 
 ```
 
-### 1.2 Initiate Refund
+### Initiate Refund
 
 In the studio flow builder, choose the node type as Integrations from the dialog box. You will see an option to select Paytm from the list of Integrations that have been enabled for that particular bot.
 
@@ -242,7 +328,7 @@ app.executeIntegrationAction({
 
 ```
 
-### 1.3 Check Refund Status
+### Check Refund Status
 
 In the studio flow builder, choose the node type Integrations from the dialog box, and then you will see an option to select Paytm from the list of Integrations that have been enabled for that particular bot.
 
@@ -363,73 +449,3 @@ In case of success, extract the key(s) and display to the end user an appropriat
 
 ```
 
-## 2. Configuration
-
-You can configure the Paytm payment gateway by following the below steps:
-
-1. Enabling the Integration in the yellow.ai Integrations Module.
-
-    - Login to cloud.yellow.ai and click the Integrations Module from the top left corner of your screen.
-    - Then search the integration named **Paytm** or choose the category named Payment from the left navigation bar and then click **Paytm**.
-    - This will now open a section where we have to type in the required details to enable this integration. The required values are **Merchant ID** (To be provided by the client/Paytm spoc of the client), **Merchant Key** (To be provided by the client/Paytm spoc of the client) , **API Domain** (In case you want to use the staging domain of Paytm please use https://securegw-stage.paytm.in otherwise please use https://securegw.paytm.in) , **Channel ID** (To be provided by the client/Paytm spoc of the client), **Industry Type** (To be provided by the client/Paytm spoc of the client).
-    - After entering these values, you need to click  **Connect** and the Integration will be enabled at yellow.ai’s end.
-
-
-![](https://i.imgur.com/D6FFCed.png)
-
-
-![](https://i.imgur.com/knahjjR.png)
-
-
-![](https://i.imgur.com/4e8mqVP.jpg)
-
-
-2. Configure the webhook URL in the Paytm dashboard.
-
-    - Copy the webhook URL mentioned in the Instructions section of the Paytm Integration Card. Please note that based on the region of your bot i.e r1/r2/r3/r4/r5, you need to append that to the domain of the webhook URL. For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to the Indian region, you can use the origin domain itself.
-
-![](https://i.imgur.com/17C5i0Y.png)
-
-
-  - The client needs to log in to the Paytm dashboard and navigate to the Webhook URL Configuration section and add the provided webhook URL.
-
-3. Receiving event in yellow.ai Bot.
-
-    * Login to cloud.yellow.ai and click the Studio Module from the top left corner of your screen.
-    * Click the Event, from the left navigation bar and then choose Integrations.
-    * You will find an event named Paytm Payment Status that needs to be activated by clicking on the three dots next to the name of the event.
-    * After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
-
-![](https://i.imgur.com/D6FFCed.png)
-
-
-![](https://i.imgur.com/9Xkc7SK.png)
-
-
-![](https://i.imgur.com/lnAQscW.png)
-
-**Sample webhook event data sent by Paytm**
-
-```
-{
- "PAYMENTEMAILID": "user@example.com",
- "PAYMENTMOBILENUMBER": "7777777777",
- "GATEWAYNAME": "WALLET",
- "RESPMSG": "Txn Success",
- "BANKNAME": "WALLET",
- "PAYMENTMODE": "PPI",
- "CUSTID": "CUST_001",
- "MID": "INTEGR7769XXXXXX9383",
- "MERC_UNQ_REF": "LI_12345",
- "RESPCODE": "01",
- "TXNID": "202005081112128XXXXXX68470101509706",
- "TXNAMOUNT": "1.00",
- "ORDERID": "ORDERID_98765",
- "STATUS": "TXN_SUCCESS",
- "BANKTXNID": "63240520",
- "TXNDATETIME": "2020-09-10 13:03:05.0",
- "TXNDATE": "2020-09-10",
- "CHECKSUMHASH": "PMXJocjUUKGq7MXGwHO0LNOV+YxwuYi4gKjRgFOIZVGVqyxqfFuec+A8boUq5Q3c87yYM9DOeCmjIj5mH20SfIiDjOJiU4eFzNxu0J1qKdc=",
- "LINKNOTES": "Link Note Description"
-}
-```

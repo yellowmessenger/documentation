@@ -6,6 +6,7 @@ sidebar_label : Freshdesk
 You can integrate the Yellow.ai platform with your [Freshdesk](https://www.freshworks.com/freshdesk/lp/freshdesk-brand-2/?tactic_id=3387224&utm_source=google-adwords&utm_medium=FD-Search-Brand-India&utm_campaign=FD-Search-Brand-India&utm_term=freshdesk&device=c&matchtype=e&network=g&gclid=CjwKCAiAk--dBhABEiwAchIwkWwR98aagz6FUX6uYz0UUX5vI0nF2LejFRgTXo8mXiGm6jC87Ef5YxoCLfcQAvD_BwE&gclid=CjwKCAiAk--dBhABEiwAchIwkWwR98aagz6FUX6uYz0UUX5vI0nF2LejFRgTXo8mXiGm6jC87Ef5YxoCLfcQAvD_BwE) account. This integration lets you create/update tickets, fetch ticket details and modify ticket forms. Along with this you can also get agent info, create notes and add watchers to the tickets.
 
 ## 1. Connect Freshdesk with Yellow.ai
+
 You need a **Freshdesk domain** and an **API key** to integrate with Yellow.ai.
 
 ### 1.1 Get the API Key from Freshdesk 
@@ -32,7 +33,16 @@ You can get your **Freshdesk domain URL** from the browser address bar e.g., htt
 ![](https://i.imgur.com/QZewAAS.png)
 
 2. Fill in the **Api Key** and  **Domain Name** and click the **Connect** button.
-3. Once **Freshdesk** is connected to the platform, you will find **Freshdesk** in the **Integrations** node.
+3. If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+4. Once **Freshdesk** is connected to the platform, you will find **Freshdesk** in the **Integrations** node.
 
 ![](https://i.imgur.com/QFXJeRm.png)
 
@@ -40,6 +50,10 @@ You can get your **Freshdesk domain URL** from the browser address bar e.g., htt
 ## 2. Use-cases 
 
 The following are the use cases that are accommodated in this integration:
+
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 ### 2.1 Create ticket
 

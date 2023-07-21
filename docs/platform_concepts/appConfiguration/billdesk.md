@@ -8,9 +8,47 @@ sidebar_label : Billdesk UPI
 
 Yellow.ai Integration with Billdesk Payment Gateway allows you to create UPI Intent for WA Pay, view payment status and Send UPI notification with the yellow.ai platform. 
 
+## Configuration
+
+Configuring the integration with Billdesk is straightforward. Follow the steps defined below to start integrating:
+
+1. Get the KeyId, Client Id, Merchant Id, Public Key File and API Base URL from Billdesk Team.
+
+2. Upload your Public Key file in some bucket or server like (AWS-S3, SFTP, etc) and Get the public CDN Url . Note:(CDN URL should be public readable).
+
+3. Now Go to Integration page and Enter the right value in Billdesk's form to connect the billdesk Integration.
+
+![alt_text](https://cdn.yellowmessenger.com/NsZFcYu9H3md1666156528149.png "image_tooltip")
+
+If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+### Event for receving payment confirmation on bot
+Following are the events which are currently accommodated in the Integration:
+
+Event | Description
+----- | -----------
+Billdesk Payment Status | In case of payments the status can be checked with these details.
+Please Activate the Billdesk Payment Status after configuring instamojo credentials at integration page.
+
+:::info
+If you have added multiple accounts in your platform, enable events for each of those accounts.
+:::
+
+
 ## Use-cases 
 
 Following are the use-cases which are currently accommodated in the Integration:
+
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 ### 1. Generate UPI Intent
 
@@ -118,25 +156,6 @@ app.executeIntegrationAction({
   "payment_method_type": "upi"
 ```
 
-#### Event for receving payment confirmation on bot
-Following are the events which are currently accommodated in the Integration:
-
-Event | Description
------ | -----------
-Billdesk Payment Status | In case of payments the status can be checked with these details.
-Please Activate the Billdesk Payment Status after configuring instamojo credentials at integration page.
-
-## Configuration
-
-Configuring the integration with Billdesk is straightforward. Follow the steps defined below to start integrating:
-
-1. Get the KeyId, Client Id, Merchant Id, Public Key File and API Base URL from Billdesk Team.
-
-2. Upload your Public Key file in some bucket or server like (AWS-S3, SFTP, etc) and Get the public CDN Url . Note:(CDN URL should be public readable).
-
-3. Now Go to Integration page and Enter the right value in Billdesk's form to connect the billdesk Integration.
-
-![alt_text](https://cdn.yellowmessenger.com/NsZFcYu9H3md1666156528149.png "image_tooltip")
 
 
 

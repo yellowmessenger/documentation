@@ -3,137 +3,153 @@ title: Manage account settings
 sidebar_label: Manage account settings
 ---
 
-As a user, you can view your own profile, the subscription plan that you have upgraded to, bot invites, bot approvals, and the templates that you have downloaded from the Marketplace to build a bot that is related to your use case. 
 
-You can modify your account password and set the default language after signing into the Yellow.ai platform. For more information about account settings and subscriptions, see [Account Setup and Subscription](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
-
-## 1. View your profile information
-
-Once you login to the platorm, you can see your first name, last name, and organisation name in this section. On the **Overview** page, click **User account** in the top right corner.
-
-<img src="https://i.imgur.com/5fo0P9x.png" alt="drawing" width="100%"/>
-<br/>
-
-Click **Profile** from the user account drop-down.
-
-<img src="https://i.imgur.com/IqalgMH.png" alt="drawing" width="100%"/>
+After logging in successfully, you can manage various aspects of your account settings. The options available are explained below. 
 
 
-### 1. Change your account password or platform language
 
-You can reset your password in this section if required. Also, you can change the language of the platform based on your business needs.
+### View profile information
 
-**Change your pasword**
+1. After logging in, click on **User account** in the top right corner of the Overview page.
+    <img src="https://i.imgur.com/5fo0P9x.png" alt="drawing" width="100%"/>
+2. Select **Profile** from the drop-down to view your profile information.
+    <img src="https://i.imgur.com/IqalgMH.png" alt="drawing" width="100%"/>
 
-Enter your current password under "Old password" and your new password under "New password," then enter it again under "Re-enter new password" to confirm the password. Click **Update**.
+----
 
-<img src="https://i.imgur.com/iqYpP66.png" alt="drawing" width="100%"/>
+### Change account password 
 
+To reset your password: 
 
-:::note
-The green check mark under "Password must contain" will indicate your password's strength. Use a mixture of upper and lower case letters, numbers, and special characters (for example, !, $, %, &, #, and so on) to create a stronger password.
-:::
+1. Go to the Password section in the account settings.
+2. Enter your current password under "Old password" and your new password under "New password."
+3. Confirm the new password by entering it again under "Re-enter new password."
+4. Click Update to save your new password.
 
-Your password has now been updated. You will be redirected to the login page, and the new password will in effect next time you log in to the application.
+    <img src="https://i.imgur.com/iqYpP66.png" alt="drawing" width="100%"/>
 
-**Change your platform language**
+    :::note
+    The green check mark under **Password must contain** indicates the strength of your password. Use a combination of upper and lower case letters, numbers, and special characters to create a strong password.
+    :::
 
-By deafult platform language is English. If you want to change the language, then you can click on **Change language**. The user can change the current language of the user interface to one of Yellow.ai's supported languages. Select the language from the **Current language** drop-down in the **Account language** pop-up and click **Save**.
+----
 
-<img src="https://i.imgur.com/4a4PUnZ.png" alt="drawing" width="100%"/>
+### Change your platform language
 
+By default, the platform language is English. To change the language:
+1. Click on **Change language** in the account settings.
+2. Select the desired language from the Current language drop-down in the Account language pop-up.
+3. Click **Save** to apply the new language.
 
-### 2.2 View your account activity 
+![](https://hackmd.io/_uploads/BJK6gJv93.png)
 
-In the Inbox module, our agent replies to multiple customers through the mobile app or a signed-in device. In such cases, there will be two active sessions running, whether through the laptop or mobile app. In this case, you can track all the active sessions of the agent.
+<img src="https://hackmd.io/_uploads/S1E9gJDc2.png" alt="drawing" width="50%"/>
 
-You can see details such as the operating system from which you logged in and the browser used, along with the respective date and time.
+-----
 
-On the User account drop-down, click **Profile > Sessions**.
+### View account activity 
+
+To see your account activity:
+1. Click on **Profile** > **Sessions** from the User account drop-down.
+2. You can track all active sessions, including details such as the operating system and browser used, along with the date and time.
 
 <img src="https://i.imgur.com/FTbRfJT.png" alt="drawing" width="100%"/>
 
+**Use case:**
+In the Inbox module, agents can handle customer queries and respond through either the mobile app or a signed-in device. In such situations, there may be two active sessions running simultaneously, one on the laptop and another on the mobile app. To keep track of all the active sessions of an agent, the platform provides a session tracking feature. This feature allows you to monitor details such as the operating system used, the browser being utilized, and the respective date and time for each session. 
+
 ***
 
-## 2. View your bot subscriptions
+### View audit log 
 
-In **My Subscriptions**, you can view the bots that you can access under the respective subscription plan. Click **Subscriptions** from the user account drop-down.
+To keep track of all the changes made in the bot, you can access the Audit Log feature. Follow these steps:
+
+1. From the account settings, navigate to your profile. 
+2. Click on **Audit logs** to access the log of all the changes made.
+    ![](https://hackmd.io/_uploads/rJOpDew92.png)
+3. In the Audit Log, you will find a detailed record of the changes made to each module, including information about the user (user email) who made the changes and the timestamp of the actions taken.
+4. To filter the results and view specific information, you can use the **filter** button and apply relevant filters.
+    <img src="https://hackmd.io/_uploads/ryIEuxv92.png" alt="drawing" width="50%"/>
+5. if you wish to download all the data from the Audit Log, you can do so by clicking on **Download CSV**. This will allow you to have a comprehensive record of all the changes made to the bot over time.
+
+----
+
+### View your bot subscriptions
 
 :::note
-If you want to add a new subscription, then you have to contact the account manager.
+To add a new subscription, contact the account manager.
 :::
 
-<img src="https://i.imgur.com/M50BpIU.png" alt="drawing" width="100%"/>
+To view an existing subscription:
 
-<img src="https://i.imgur.com/X74Va7B.png" alt="drawing" width="100%"/>
+1. Go to **Subscriptions** under User account to view your bot subscriptions.
+    <img src="https://i.imgur.com/M50BpIU.png" alt="drawing" width="100%"/>
+2. You can see the details of your subscription plan, organization name, billing address, and contact details.
+    <img src="https://i.imgur.com/X74Va7B.png" alt="drawing" width="100%"/>
+3. You can also invite users to access the bots under a particular subscription plan.
+    <img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
 
-You can view the details of the subscription plan that you have upgraded to, including the organisation name, billing address, and contact details. Also, you can invite users to access the bots under a particular subscription plan. 
-
-<img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
 
 ***
-## 3 Accept bot invite
 
-The other team members will send you a bot invite to your email address, where you can accept or reject the bot access. You can accept the bot invite so that you can contribute to the organization by building an effective bot quickly and easily. Click **Bot Invites** from the user account drop-down.
+### Accept bot invite
+
+To accept or reject bot invites:
+1. Click on **Bot Invites** from the User account drop-down.
+2. Accepting a bot invite allows you to contribute to the organization by building an effective bot quickly and easily.
 
 <img src="https://i.imgur.com/7NNIq5a.png" alt="drawing" width="100%"/>
 
-### 3.1 View bot invites
 
-You can view the pending bot invites that have been sent by the other team members. Click Accept to access the bot, or click Decline. Also, you will get a notification to accept the bot. For more information, see [add bot collaborators](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#2-accept-bot-invite).
+### View bot invites
 
-![](https://i.imgur.com/HgS5gtv.png)
+In the View bot invites section, you can easily access and manage pending bot invites sent by other team members. Follow these steps:
 
-You can view the different bots, which belong to the Yellow.ai organization. You can search for a specific bot by bot Id, name, or sub Id. You can send a request to access the bots that were created by other members of the organisation. The super admin will provide access to the requested bot.
+- You will see a list of pending bot invites, and you can choose to either **Accept** the invitation to gain access to the bot or **Decline** it if you wish to decline the invitation.
 
 :::note
-You cannot see your bots in this section.
+Your own bots are not visible in this section.
 :::
 
-![](https://i.imgur.com/Pq5woJs.png)
+- You will also receive notifications regarding bot invites, making it convenient for you to respond promptly.
+    ![](https://i.imgur.com/HgS5gtv.png)
+- In this section, you can explore and access different bots that belong to the Yellow.ai organization. You can search for specific bots using their bot Id, name, or sub Id. If you need access to a bot created by other members of the organization, you can send a request. The super admin will review the request and provide access to the bot if approved.
+    ![](https://i.imgur.com/Pq5woJs.png)
+
+:::info
+For detailed instructions on how to send and receive bot invites, refer to the [add bot collaborators documentation](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
+:::
 
 ***
 
-## 4 Approve published bots
+### Approve published bots
 
-In this section, you can view the pending approvals of the published bots that are sent by other members of the team. Click **Bot publish approvals** from the User account drop-down. 
+1. Check for pending approvals of published bots under **Bot publish approvals** from the User account drop-down.
+    <img src="https://i.imgur.com/hstIkXS.png" alt="drawing" width="100%"/>
+2. **Accept** or **decline** approval requests for publishing bots in different environments.
+    <img src="https://hackmd.io/_uploads/BynRJywc2.png" alt="drawing" width="80%"/>
 
-<img src="https://i.imgur.com/hstIkXS.png" alt="drawing" width="100%"/>
-
-
-When the other members of the team want to publish their bot in the different environments, an approval request is sent to your email and also in the Bot Approval section. Here, you can accept or decline.
-
-<img src="https://i.imgur.com/Wr5NGdG.png" alt="drawing" width="100%"/>
-
-
+**Review request email:**
 <img src="https://i.imgur.com/wuZvyob.png" alt="drawing" width="60%"/>
 
 ***
 
-## 5 Download the templates 
+### Download pre-built templates 
 
-Let us consider that you have used the pre-built bot template from the Marketplace to build your bot based on your use case. If you want to publish the bot and want to keep a copy of this template, then you can download this template and view all the details of the template in this section. 
+Suppose you have utilized a pre-built bot template from the Marketplace to create your bot according to your specific use case. If you wish to publish the bot and retain a copy of this template, you can easily download it and view all the relevant details in this section.
 
-Note that, other team members who are not part of this organization cannot see these templates that are downloaded.
-You can also delete this template based on your needs. Click **Exports** from the **User account** drop-down.
+- To access this feature, click on **Exports** from the User account drop-down.
+    
+    <img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
 
-<img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
-<br/>
-
-<img src="https://i.imgur.com/7reCz7e.png" alt="drawing" width="100%"/>
-
-
-***
-
-## 6 Log out of the platform
-
-The platform automatically logs you out after a few minutes of inactivity. To resume, you will have to sign in. If you want to log out of the platform, you can click **Logout** under User account.
-
-<img src="https://i.imgur.com/8M6qNvZ.png" alt="drawing" width="100%"/>
+- If you no longer need a specific template, you have the option to delete it based on your requirements. 
+    
+    <img src="https://i.imgur.com/7reCz7e.png" alt="drawing" width="100%"/>
 
 :::note
-Inbox agents are not logged out of the platform after a few minutes of inactivity because they are waiting for tickets that are posted by other users.
+Other team members who are not part of this organization won't have access to these downloaded templates. This ensures the security and privacy of your organization's bot templates.
 :::
+
 
 
 

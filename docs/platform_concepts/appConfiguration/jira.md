@@ -10,8 +10,60 @@ Yellow.ai Integration with Jira allows you to seamlessly connect your jira cloud
 Atlassian and JIRA are different integrations available on the yellow.ai platform. To use them, you must set them up individually.
 :::
 
+## Configuration
+
+Configuring the integration with jira iis straightforward. Follow the steps defined below to start integrating:
+
+1. Create an application on [https://developer.atlassian.com/console/myapps/](https://developer.atlassian.com/console/myapps/)
+
+2. Select Oauth 2.0 integration 
+
+![alt_text](https://cdn.yellowmessenger.com/TGZ0kqG4h79e1658993552653.png "image_tooltip")
+
+3. Go to Console -> My apps -> youAppName -> Permission -> jira Api  then click on add  
+
+![alt_text](https://cdn.yellowmessenger.com/7iSCsKEKczOD1658993957398.png "image_tooltip")
+
+4. Add and configure your app’s API scopes.
+
+
+
+![alt_text](https://cdn.yellowmessenger.com/7iSCsKEKczOD1658993957398.png "image_tooltip")
+
+5. Then Go to Authorization and copy the url from integration card then configure the url there. \
+
+![alt_text](https://cdn.yellowmessenger.com/7CvlfU4omlpP1658994104038.png "image_tooltip")
+
+
+![alt_text](https://cdn.yellowmessenger.com/rt9Dk704U1r31658994142607.png "image_tooltip")
+
+![alt_text](https://cdn.yellowmessenger.com/mSWay36LfoOU1658994204859.png "image_tooltip")
+
+6. Go to setting then copy client Id and client Secret then paste in to integration form and connect. It is oauth based integration hence jira will ask to give access to above app then allow. Then you can use jira integration action node.
+
+
+![alt_text](https://cdn.yellowmessenger.com/KJI6MKPEM00A1658994256776.png "image_tooltip")
+
+7. Get ApiToken value for using inside the action-node. follow the below steps
+   Click on Profile icon on top-right -> Manage Account -> Security -> API Token -> Create and manage API tokens -> create new API token and copy the value and paste somewhere for your reference. 
+
+![alt_text](https://cdn.yellowmessenger.com/egTVdRkrWqwu1659068555096.png "image_tooltip")
+
+8. If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
 ## Use-cases 
 Following are the use-cases which are currently accommodated in the Integration:
+
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 
 ### Get Issue Details:-  
@@ -104,41 +156,3 @@ _Node Input Params_
  #### Response should be stored in object type variables
 
 
-# Configuration
-
-Configuring the integration with jira iis straightforward. Follow the steps defined below to start integrating:
-
-1. Create an application on [https://developer.atlassian.com/console/myapps/](https://developer.atlassian.com/console/myapps/)
-
-2. Select Oauth 2.0 integration 
-
-![alt_text](https://cdn.yellowmessenger.com/TGZ0kqG4h79e1658993552653.png "image_tooltip")
-
-3. Go to Console -> My apps -> youAppName -> Permission -> jira Api  then click on add  
-
-![alt_text](https://cdn.yellowmessenger.com/7iSCsKEKczOD1658993957398.png "image_tooltip")
-
-4. Add and configure your app’s API scopes.
-
-
-
-![alt_text](https://cdn.yellowmessenger.com/7iSCsKEKczOD1658993957398.png "image_tooltip")
-
-5. Then Go to Authorization and copy the url from integration card then configure the url there. \
-
-![alt_text](https://cdn.yellowmessenger.com/7CvlfU4omlpP1658994104038.png "image_tooltip")
-
-
-![alt_text](https://cdn.yellowmessenger.com/rt9Dk704U1r31658994142607.png "image_tooltip")
-
-![alt_text](https://cdn.yellowmessenger.com/mSWay36LfoOU1658994204859.png "image_tooltip")
-
-6. Go to setting then copy client Id and client Secret then paste in to integration form and connect. It is oauth based integration hence jira will ask to give access to above app then allow. Then you can use jira integration action node.
-
-
-![alt_text](https://cdn.yellowmessenger.com/KJI6MKPEM00A1658994256776.png "image_tooltip")
-
-7. Get ApiToken value for using inside the action-node. follow the below steps
-   Click on Profile icon on top-right -> Manage Account -> Security -> API Token -> Create and manage API tokens -> create new API token and copy the value and paste somewhere for your reference. 
-
-![alt_text](https://cdn.yellowmessenger.com/egTVdRkrWqwu1659068555096.png "image_tooltip")

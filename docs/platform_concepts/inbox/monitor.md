@@ -15,6 +15,7 @@ In the Monitor section you can effectively track the productivity of your entire
 - The values displayed in the Monitor section are **updated automatically** after every 60 seconds. To view real-time values, refresh your browser.
 - Live chats and email tickets in the Inbox are retained for a maximum of **6 months**. After this period, they will be archived. While the data will no longer be accessible on the platform (active store), it will still be available on the servers (cold store) until the contract's validity expires.
 :::
+
 ---
 
 ## <a name="chats"></a> 1. Monitor live chat activities
@@ -42,9 +43,7 @@ The chat trends tab provides valuable insights into live chat activity and perfo
     
     <img src="https://hackmd.io/_uploads/BJsXtgRUn.png" alt="drawing" width="80%"/>
 
-
-
-
+---------
 
 ### Summarized chat insights with widgets
 
@@ -62,8 +61,7 @@ The widgets provide the following data:
 | Resolved tickets	| Total number of chats resolved within the last 7 days.|
 | Active tickets	| Number of chats currently assigned to you and your team, including those in the queue. |
 
-
-
+---------
 
 ### Indepth analysis of chat trends 
 
@@ -79,12 +77,59 @@ The two graphs provided offer detailed analysis of chat trends, allowing trackin
 | Average wait time | This metric indicates the average time a customer has to wait before being connected to a live agent during the specified date range.|
 | Average reply time | The graph showcases the average time it takes for an agent to reply back to the end user's conversation during the specified date range.|
 
+------
 
+### Dashboard to monitor live chats 
 
+A live monitor dashboard has been specifically developed for inbox adminis and supervisors to oversee latest live chats.
 
-### Real-time monitoring of active chats
+- By selecting **View live chat dashboard**, a new page will open, presenting the **50 most recent chats**. The chats in the table are arranged in descending order based on the latest received chat.
 
-The table visualization presents all active chats in a consolidated view, displaying relevant metrics upfront.
+    ![](https://hackmd.io/_uploads/By565R79n.png)
+    
+- The table includes the following information for each chat:
+    - **ID**: Unique identification for each chat.
+    - **Customer name**
+    - **Agent assigned**
+    - **Group**
+    - **First response timer**: Duration taken by the agent to respond to the initial message from the customer in the chat.
+    - **Current response timer**: Duration taken by the agent to respond to the customer's most recent message.
+    - **Inactivity status**
+    - **Chat duration**
+    ![](https://hackmd.io/_uploads/SJOAZKP93.png)
+
+:::note
+The first and current response timers continue running (indicated in red) until the agent sends a response. Once the response is sent, the corresponding timestamp will be displayed in the respective row.
+:::
+
+- When a new chat is assigned, a new row is appended to the table and marked with the `new` tag for 5 seconds, allowing for easy identification.
+    ![](https://hackmd.io/_uploads/H1OrBCmq2.png)
+
+- Upon resolution of a chat, the `chat resolved` tag is added next to the corresponding chat details.
+    ![](https://hackmd.io/_uploads/HkgDHRmqh.png)
+
+- You can filter the data based on different channels or agent emails. Click **Apply filters** to apply and **Clear filters** to delete the applied filters. 
+
+    ![](https://hackmd.io/_uploads/BkW4MKv5n.png)
+
+- A table-level filter can be applied to monitor specific **agents** or **group** performance or **inactivity status** of the agent or the user. By using the filter next to the column name, you can closely observe the chats handled by a particular agent or assess a group's performance. 
+
+    <img src="https://hackmd.io/_uploads/SyGvWCm53.png" alt="drawing" width="30%"/>  
+
+    > When filtered by agents, all tickets assigned to that agent will be visible.
+
+- To read an ongoing chat (without the ability to respond), simply click on the chat ID. The chat will be displayed on the same screen, along with chat details, agent information, and chat history. You can close the chat or navigate to other chat screens. 
+    ![](https://hackmd.io/_uploads/HyHQQtP5h.png)
+
+:::note
+The displayed chat data is not live. Click **Refresh** to fetch the latest messages.
+:::
+
+-------
+
+### Real time active of all chats
+
+Real-time chat activity is displayed in a table within the Inbox. This table provides comprehensive details about **all ongoing live chats**. The table visualization presents all active chats in a consolidated view, displaying relevant metrics upfront.
 
 ![](https://i.imgur.com/v2CZiCr.png)
 
@@ -97,7 +142,6 @@ The table visualization presents all active chats in a consolidated view, displa
     ![](https://i.imgur.com/K6B5gnd.png)
 
 ---
-
 
 ## <a name="email"></a> 2. Monitor email ticket activities
 
@@ -124,8 +168,7 @@ You can filter the email trends data based on specific **tags, groups, agents, a
 
 ![](https://i.imgur.com/LO2TQQg.png)
 
-
-
+----
 
 ### Summarized ticket insights with widgets
 
@@ -133,11 +176,9 @@ You can quickly see the count of email tickets in various states such as **Unass
 
 ![](https://hackmd.io/_uploads/HyobEEgwn.png)
 
-
-
+----
 
 ### Ticket trends for the current day
-
 
 - **Track agent availability to handle tickets**:  
     Monitor the number of agents who are currently **available, busy, or away** on that day.
@@ -147,7 +188,7 @@ You can quickly see the count of email tickets in various states such as **Unass
 
 ![](https://hackmd.io/_uploads/BkJaxEewh.png)
 
-
+----
 
 ### Indepth analysis of email trends 
 
@@ -155,19 +196,15 @@ You can quickly see the count of email tickets in various states such as **Unass
 - Understand the **average first response time, average handling time** for tickets, **average wait time** for customers before connecting to a live agent, and the **average reply time** for agents responding to end users.
 - These metrics can be tracked for specified date ranges or custom date ranges.
 
-
 ![](https://i.imgur.com/HW9QJRC.png)
 
-
 ---
-
 
 ## <a name="team"></a> 3. Monitor team activities
 
 The Teams tab provides a consolidated view of agents and groups in one place, with real-time data.
 
 **Use cases of metrics on teams data:**
-
 
 | Use case | Description/Solution |
 | -------- | -------- |
@@ -184,8 +221,7 @@ You have the option to apply filters and retrieve agent data based on their stat
 ![](https://hackmd.io/_uploads/rkoaPVevn.png)
 ![](https://hackmd.io/_uploads/H14lu4xwn.png)
 
-
-
+----
 
 ### View agents data 
 
@@ -195,18 +231,13 @@ You can view the following columns in the Agents data section: **Agent Name, Gro
  
 ![](https://i.imgur.com/waZZ4Jv.png)
 
-
-
+----
 
 ### View groups data 
 
-
 In the groups table, you can gain insights into the total number of groups and their respective details. It provides information on the number of agents belonging to each group, the count of active chats/tickets within each group, the number of agents currently active in each group, and whether there are any active chats in progress.
-
 
 In the Groups data section, you can see the following columns: **Group Code, Group Name, Number of Agents, Active Tickets, Active Agents, and Queued Tickets**.
 
 ![](https://i.imgur.com/gWvnWgE.png)
-
-
 

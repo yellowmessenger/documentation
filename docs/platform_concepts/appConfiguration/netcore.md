@@ -17,6 +17,14 @@ You can configure Netcore Smartech by following the below steps:
     * Login to cloud.yellow.ai and click on the Integrations Module from the top left corner of your screen.
     * Then search for the integration named Netcore or choose the category named Tools & Utilities from the left navigation bar and then click on Netcore Smartech.
     * Click on Connect and the Integration will be enabled at yellow.ai’s end and the event will be added to Event Hub.
+    * If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
 
 **![](https://lh6.googleusercontent.com/gDTZ6sC2oS6ykg5GO5tOmcuKkDXShI24ddv86ezx7W5Uu43sSP05xNL0P_1krdoOmZX-g4pFak2kG62rM2BwjzysyfgNrhAPjfoIYSyIVmd_hPn7r5O7F2MGOz_nabmjp6Q2qAuPIyLd0Tyd77XUeE14Nvp5icy0BMbffuhdh7JwoMH4MaDjFVi1IQ)**
 
@@ -39,6 +47,10 @@ You can configure Netcore Smartech by following the below steps:
     * Click on the Event, from the left navigation bar and then choose Integrations.
     * You will find an event named netcoreEvent that needs to be activated by clicking on the three dots next to the name of the event.
     * After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
+
+    :::info
+If you have added multiple accounts in your platform, enable events for each of those accounts.
+:::
 
 
 

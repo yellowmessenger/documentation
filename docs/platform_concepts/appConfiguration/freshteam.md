@@ -5,14 +5,53 @@ sidebar_label : Freshteam
 
 Yellow.ai Integration with Freshteam enables you to seamlessly access Freshteam services. Any customer who has an account in Freshteam will be able to connect it with yellow.ai. Using this integration one can fetch employee info, create and manage time off requests, and retrieve  job posting information from Freshteam.
 
-## 1. Use cases 
+## 1. Configure freshteam
+
+Configuring the integration with Freshteam is straightforward. Follow the steps below to integrate Freshteam:
+
+1. **Navigate to integration tab**
+
+Inside your project, from the switcher, open Integrations, search for **Freshteam** in the search bar or you can find **Freshteam** under HR.
+
+![](https://i.imgur.com/wvRnq7s.png)
+
+
+2. **Connect your Freshteam account**
+
+Follow the below steps to enable Freshteam integration for your bot:
+
+- Login to https://www.freshworks.com/hrms/login/ and click on your Profile Avatar.
+     
+![](https://i.imgur.com/B1bHeZz.png)
+
+- From the drop-down select API key, generate or use the existing API key.
+     
+![](https://i.imgur.com/n2SADMw.png)
+
+     
+- Provide your Freshteam Domain and API key details in the Freshteam Integration page in cloud.  
+- Click **connect** to connect your freshteam account to the bot.
+- If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+---
+
+
+## 2. Use cases 
 Following are the use-cases which are currently accommodated in the Integration:
 	
-### 1.1 List all employees
+### 2.1 List all employees
 List all employees integration node helps in retrieving all the employees available in Freshteam. One can retrieve employee information by applying sort and sortType filters as well.
 
 :::note
-Only users in HR Partner, Admin, and Account Admin roles can access this API.
+* Only users in HR Partner, Admin, and Account Admin roles can access this API.
+* When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
 :::
 
 **Node Sample Inputs**
@@ -160,35 +199,6 @@ Retrieve Job posting information integration node helps in retrieving available 
 
 Retrieve Job posting information integration node returns the value of object type, use object variable as an output variable.
 
-## 2. Configure freshteam
-
-Configuring the integration with Freshteam is straightforward. Follow the steps below to integrate Freshteam:
-
-1. **Navigate to integration tab**
-
-Inside your project, from the switcher, open Integrations, search for **Freshteam** in the search bar or you can find **Freshteam** under HR.
-
-![](https://i.imgur.com/wvRnq7s.png)
-
-
-2. **Connect your Freshteam account**
-
-Follow the below steps to enable Freshteam integration for your bot:
-
-- Login to https://www.freshworks.com/hrms/login/ and click on your Profile Avatar.
-     
-![](https://i.imgur.com/B1bHeZz.png)
-
-- From the drop-down select API key, generate or use the existing API key.
-     
-![](https://i.imgur.com/n2SADMw.png)
-
-     
-- Provide your Freshteam Domain and API key details in the Freshteam Integration page in cloud.  
-- Click **connect** to connect your freshteam account to the bot.
-
-
----
 
 **References**
 

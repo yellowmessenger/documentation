@@ -23,6 +23,15 @@ To connect your Zoho CRM account with Yellow.ai, follow these steps:
 ![](https://i.imgur.com/07zbS8L.png)
 
 3. Click **Connect to Zoho-CRM** button and log in to your Zoho CRM account in the following pop-up to establish this integration. 
+4. If you have multiple accounts, follow the above mentioned steps to add each of them.
+
+:::note
+1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. You can add a maximum of 5 merchant accounts.
+3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
 
 
 ## 2. Payload to access Zoho CRM on app.yellow.ai 
@@ -55,6 +64,10 @@ Yellow.ai adopts a secure approach towards client credential storage, whereby it
 ## 3. Use-case
 
 Through this integration you can create and update all the standard records in your Zoho CRM account.
+
+:::note
+When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+:::
 
 1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Zoho CRM** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
