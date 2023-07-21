@@ -96,10 +96,10 @@ A live monitor dashboard has been specifically developed for inbox adminis and s
     - **Current response timer**: Duration taken by the agent to respond to the customer's most recent message.
     - **Inactivity status**
     - **Chat duration**
-    ![](https://hackmd.io/_uploads/BkcICTm52.png)
+    ![](https://hackmd.io/_uploads/SJOAZKP93.png)
 
 :::note
-The first and current response timers continue running until the agent sends a response. Once the response is sent, the corresponding timestamp will be displayed in the respective row.
+The first and current response timers continue running (indicated in red) until the agent sends a response. Once the response is sent, the corresponding timestamp will be displayed in the respective row.
 :::
 
 - When a new chat is assigned, a new row is appended to the table and marked with the `new` tag for 5 seconds, allowing for easy identification.
@@ -108,19 +108,18 @@ The first and current response timers continue running until the agent sends a r
 - Upon resolution of a chat, the `chat resolved` tag is added next to the corresponding chat details.
     ![](https://hackmd.io/_uploads/HkgDHRmqh.png)
 
-- You can filter the data based on different channels or agent emails.
+- You can filter the data based on different channels or agent emails. Click **Apply filters** to apply and **Clear filters** to delete the applied filters. 
 
-    <img src="https://hackmd.io/_uploads/HyYkWRX93.png" alt="drawing" width="60%"/>  
+    ![](https://hackmd.io/_uploads/BkW4MKv5n.png)
 
-- A table-level filter can be applied to monitor specific **agents** or **group** performance. By using the filter next to the column name, you can closely observe the chats handled by a particular agent or assess a group's performance. 
+- A table-level filter can be applied to monitor specific **agents** or **group** performance or **inactivity status** of the agent or the user. By using the filter next to the column name, you can closely observe the chats handled by a particular agent or assess a group's performance. 
 
     <img src="https://hackmd.io/_uploads/SyGvWCm53.png" alt="drawing" width="30%"/>  
 
     > When filtered by agents, all tickets assigned to that agent will be visible.
 
-- To read an ongoing chat (without the ability to respond), simply click on the chat ID. The chat will be displayed on the same screen, along with chat details, agent information, and chat history.
-
-    ![](https://hackmd.io/_uploads/BkCLQRQ9h.png)
+- To read an ongoing chat (without the ability to respond), simply click on the chat ID. The chat will be displayed on the same screen, along with chat details, agent information, and chat history. You can close the chat or navigate to other chat screens. 
+    ![](https://hackmd.io/_uploads/HyHQQtP5h.png)
 
 :::note
 The displayed chat data is not live. Click **Refresh** to fetch the latest messages.
