@@ -3,106 +3,190 @@ title : Google Chat
 sidebar_label : Google Chat
 ---
 
-# Google Chat Channel Setup Help Doc
+Google Chat is a messaging platform that allows you to communicate with your users. You can share files, images, videos, and audio and have conversations.
 
-> ## Introduction
+## Setup Google chat using Google console developer portal
 
----
+Login to the [Google console portal](https://developers.google.com) to setup your Google Chat.
 
-This document will help you understand features and limitations of Google Chat channel, and guide you in setting up your own Google Chat chatbot on Yellow AI platform.
+To setup Googel chat to your bot, configure the following:
 
-> ## Pre-requisites
+1. [Create a new project on the Google Console](#step-1-create-a-new-project-on-google-console)
+2. [Enable the service account and Generate keys](#step-2-enable-service-account-and-generate-keys)
+3. [Enable the Google Chat API](#step-3-enable-google-chat-api)
+4. [Configure your Google chat bot](#step-4-configure-your-google-chat-bot)
 
----
+### Step 1: Create a new project on Google console
 
-**Before setting up a chatbot:**
+To create a new project on Google console, follow these steps:
 
-- [Create a new Google Cloud Platform (GCP) project](https://developers.google.com/workspace/guides/create-project#create_a_new_google_cloud_platform_gcp_project) if you don’t have one.
+1. On the [Google console developer](https://developers.google.com/workspace/guides/create-project#create_a_new_google_cloud_platform_gcp_project) portal, click **Go to create a project**.
 
-![Screenshot 2021-12-09 at 4.13.52 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/5209602D-6F58-4EC0-BEF5-2ED88C1BEE07_2/Screenshot%202021-12-09%20at%204.13.52%20PM.png)
+2. Enter the **Project name**, **Organization**, and **Location**, then click **Create** to create a project.
+
+    ![](https://i.imgur.com/Pz8F3TN.png)
+    
+3. Your project will be successfully created.
+
+     ![](https://i.imgur.com/zKou5jD.png)
+     
+### Step 2: Enable Service account and Generate Keys     
+     
+To enable service account and generate keys, follow these steps:
+
+1. On the navigation panel, go to **IAM & Admin** > **Service Accounts**.
+
+     ![](https://i.imgur.com/do384LL.png)
+     
+2. Click on **+ CREATE SERVICE ACCOUNT**.
+
+     ![](https://i.imgur.com/gN31KZ0.png)
+     
+3. Add the *Service Account Details* such as **Service account name**, **Service account ID**, and **Service account description**, then **CREATE AND CONTINUE** in Step 1. Skip Step 2 and 3. 
+
+     ![](https://i.imgur.com/gN31KZ0.png)   
+
+* The service account details for your project will be added successfully. 
+
+     ![](https://i.imgur.com/yByfMn1.png)
+      
+5. Once the service account is created, click on the **email link**.
+
+      ![](https://i.imgur.com/CAq3YFX.png)
+      
+6. Go to **KEYS** tab and click on **ADD KEY** > **Create new key**.
+
+      ![](https://i.imgur.com/AvKOUU1.png)
+      
+7.  Select the *Key type* as **JSON** and click **Create**. 
+
+:::note
+* Ensure that you save this file carefully, it cannot be recovered once lost.
+:::
+
+   <img src="https://i.imgur.com/rZtypMi.png" alt="drawing" width="50%"/>
+   
+    <br/> * A confirmation message <b>Private key saved to your computer</b> is displayed.
+
+   <img src="https://i.imgur.com/wDDpoOa.png" alt="drawing" width="80%"/>
 
 
-- Enable Service Account and Generate Keys:
-   - In the navigation panel go to **IAM & Admin → Service Accounts**
+          
+### Step 3: Enable Google chat API
 
-![Screenshot 2021-12-09 at 4.21.32 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/1AE5CCA9-077B-4A0C-B0DC-9FD8823B1091_2/Screenshot%202021-12-09%20at%204.21.32%20PM.png)
+To enable the Google chat API, follow these steps:
 
-- On the next screen click on **+ CREATE SERVICE ACCOUNT**
+1. On the navigation panel, click **APIs & Services**.
 
-![Screenshot 2021-12-09 at 4.21.46 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/3FCC51F4-550E-4324-AA24-36F103711F38_2/Screenshot%202021-12-09%20at%204.21.46%20PM.png)
+    ![](https://i.imgur.com/EMBjm7z.png)
+    
+2. Click **+ Enable APIs and services**.
 
-- Add the Service Account Details in Step 1. Skip Step 2 & 3.
+    ![](https://i.imgur.com/b7czI0m.png)
+    
+3. In the **Search** bar, search for "Google Chat API" and select it.
 
-![Screenshot 2021-12-09 at 4.22.15 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/770B11C7-1BDA-4AC3-B5B9-9EC74F6225DC_2/Screenshot%202021-12-09%20at%204.22.15%20PM.png)
+     ![](https://i.imgur.com/3TJpMFZ.png)
+     
+4. Click **Enable**. The **Google Chat API** will be enabled.
 
-![Screenshot 2021-12-09 at 4.22.28 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/B33EE2E1-9FAD-411A-8A78-40FE2DB6D87D_2/Screenshot%202021-12-09%20at%204.22.28%20PM.png)
+    ![](https://i.imgur.com/xLCYC5Q.png)
+    
+5. Once the Google Chat API is enabled, you need to configure your Google Chat bot as explained in the following.
 
-- Once the service account is created, open it.
-- Go to **KEYS** tab and click on **ADD KEY →** Create new key and select JSON. Please save this file carefully as this can not be recovered.
+### Step 4: Configure your Google chat bot
 
-![Screenshot 2021-12-09 at 4.37.47 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/3C8E7187-B6C4-48AD-997F-CB2734BE8AC2_2/Screenshot%202021-12-09%20at%204.37.47%20PM.png)
+To configure your Google chat Bot, follow these steps:
 
-![Screenshot 2021-12-09 at 4.38.05 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/97524A85-DDA8-4F58-8227-4CE5CCFFFEFD_2/Screenshot%202021-12-09%20at%204.38.05%20PM.png)
+1. Go to **Configuration**, and enter the following details to configure your Google Chat Bot:
 
-![Screenshot 2021-12-09 at 4.38.19 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/A30EC30C-57F2-4900-8398-1BC81923DE5B_2/Screenshot%202021-12-09%20at%204.38.19%20PM.png)
+   * Enter the name of your app.
+   * Add the avatar URL.
+   * Enter the relevant description based on your app.
+   * Enable the **Interactive features**.
+   * Under *Functionality*, select both checkboxes.
+   * Under *Connection* settings, select App URL and enter  `https://cloud.yellow.ai/integrations/googleChat/receive/[BOT ID]`
+    :::note
+    * Based on the region of your bot, which is  r1/r2/r3/r4/r5, you need to append that to the domain of the webhook URL. For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to the Indian region, you can use the origin domain itself.
+:::
 
-- Enable Google Chat API:
-   - In navigation go click on **APIs & Services**
+   * Under *Visibility*, enter the email addresses to add individuals and groups to your domain.
+   * Click **Save** to save the configuration details.
 
-![Screenshot 2021-12-09 at 4.18.05 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/C7AAEBB4-7064-4865-941A-C9A480AE8BDE_2/Screenshot%202021-12-09%20at%204.18.05%20PM.png)
+     ![](https://i.imgur.com/FRRm7Qy.png)
+    
+## Connect Google chat to your bot
 
-- Click on **+ ENABLE APIS AND SERVICES**
+#### Prerequisite
 
-![Screenshot 2021-12-09 at 4.18.20 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/B7481934-6896-4B39-8A79-1893F7EB0C9F_2/Screenshot%202021-12-09%20at%204.18.20%20PM.png)
+* Copy the Client Email and Private Key from the JSON file that you downloaded earlier.
 
-- Search for **Google Chat API**
+    ![](https://i.imgur.com/sCgdodm.png)
 
-![Screenshot 2021-12-09 at 4.18.38 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/2BD3DF66-6CE9-4390-A0A1-BDAE4E4EA5A1_2/Screenshot%202021-12-09%20at%204.18.38%20PM.png)
+To connect the Google chat channel to your bot on the platform, follow these steps:
 
-- **Enable** on Google Chat API:
-   - Once enabled, go to **Configuration.**
+1. Log on to https://cloud.yellow.ai and navigate to **Overview > Channels > Messaging > Google Chat**.
 
-![Screenshot 2021-12-09 at 4.18.47 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/C0DB5ACA-670F-4778-874B-41AC76472B5E_2/Screenshot%202021-12-09%20at%204.18.47%20PM.png)
+   ![](https://i.imgur.com/dCWuek7.png)
 
-![Screenshot 2021-12-09 at 4.42.26 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/D47ABAAE-533B-4101-9ECB-F69264705E33_2/Screenshot%202021-12-09%20at%204.42.26%20PM.png)
+2. Enter the **Client email** and **Private key** that you have copied from the downloaded JSON and click **Save**.
 
-- Fill in all the details to configure your Google Chat Bot:
-   - Please check both the options for **Functionality**
-   - For **Connection setting** select “Bot URL” and add the following:
-      - For `cloud.yellow.ai` → `https://cloud.yellow.ai/integrations/googleChat/receive/[BOT ID]`
-      - For `app.yellowmessenger.com` → `https://app.yellowmessenger.com/integrations/googleChat/receive/[BOT ID]`
+   ![](https://i.imgur.com/JOc6xXl.png)
+   
+   * Your Facebook workplace channel will be successfully connected.
 
-![Screenshot 2021-12-09 at 4.43.47 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/E4909823-7968-4FE2-9F76-06CE93A50BB2_2/Screenshot%202021-12-09%20at%204.43.47%20PM.png)
+3. Navigate to the **Overview** page, under the **Active channels** section, to verify that the Google chat channel is successfully connected to your bot.
 
-> ## Channel setup on yellow.ai platform
+    ![](https://i.imgur.com/DLuEqQM.png) 
+    
+### Add events to your bot
 
----
+To add events to your bot, follow these steps:
 
-1) To connect your Google Chat account, go to **Channels → Communication → Google Chat → Connect.**
+1. Navigate to the **Studio** module and select **Events**.
 
-![Screenshot 2021-12-10 at 1.09.18 PM.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/52FFDE5A-4E81-4AE0-86F0-78383E741894_2/Screenshot%202021-12-10%20at%201.09.18%20PM.png)
+     ![](https://i.imgur.com/7TSCbaC.png)
+     
+2. Select **Custom events** and click **+ Add event**. 
 
-2) Enter the **Client Email** and **Private Key.** You will find this in the JSON file you had downloaded earlier.
+    ![](https://i.imgur.com/8KF4d10.png)
+    
+3. Add the following events:
+   * `google_chat_added_to_space`: This event is received when your Bot is added to a space.
+   * `google_chat_removed_from_space`: This event is received when your Bot is removed from a space. 
+   
+4. Enter the **Event name** and **Event description**, then click **Create event**.
+    
+    ![](https://i.imgur.com/8KF4d10.png)
 
-![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/722C1A3D-BC4D-438D-BDF0-D62850284AB0_2/Image.png)
+5. The events will be successfully added.
 
-![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/88CCF5CF-BB04-4777-9032-B801146B9C0E_2/Image.png)
+    ![](https://i.imgur.com/6uYR0ir.png)
+    
+    <img src="https://i.imgur.com/Oxunyya.png" alt="drawing" width="70%"/>
+    
+## Test your bot on Google chat
 
-![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/57CAC722-2F2F-4D02-A3B6-260C833E59FF_2/Image.png)
+After connecting your bot to the Google chat, you can test your bot. 
+     
+#### Prerequisites
 
-3) Your Google Chat Channel should now be configured successfully!!
+* Ensure that you have created the bot with intents and configured the flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot). 
 
-![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/EFB52470-8157-44BF-A8AD-F0AAE6660654/F68A2ECF-346C-48C7-966A-C0775CAAFC46_2/Image.png)
+To test your bot on Google chat, follow these steps:
 
-> ## Supported Features
+1. Login to your personal email account and click **Chat** > **New Chat** > **Find apps**.   
 
-- Following variables are passed to the profile object and can be accessed using {{{profile.**Variable**}}}:
-   - spaceId → This refers to the Google Chat space in which the user has messaged
-   - displayName → This refers to the name of the Google Chat user
-   - email → This refers to the email of the Google Chat user
-   - thread → This refers to the thread in which the User has messaged
-- [**Events**](https://developers.google.com/chat/api/guides/message-formats/events)**:** Upon successful configuration, the following events are auto-added to the Event Hub in yellow.ai platform:
-   - `google_chat_added_to_space` → Received when your Bot is added to a Space.
-   - `google_chat_removed_from_space` → Received when your Bot is removed from a Space.
-- **Text Messages:** Synchronous messages supported only.
-- **Card Messages:** This is **not supported** right now.
+      ![](https://i.imgur.com/ezZdCpl.png)
+      
+2. In the **Search** bar, search for the name of the app that you have created.
+
+    <img src="https://i.imgur.com/69JeuE6.png" alt="drawing" width="70%"/>
+      
+3. Select the app and click **Chat**.
+
+    ![](https://i.imgur.com/ZuzKZ7n.png)
+     
+4. Start the conversation to test your bot.
+
+     ![](https://i.imgur.com/pkC6B3O.png)    
