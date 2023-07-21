@@ -60,7 +60,7 @@ If you have used your phone number, you will receive the code through SMS.
 
 ## 2. Setup Twitter channel using developer portal
 
-To get the API key, access token, consumer key, and consumer secret, you need to connect to the developer portal. Use this [link](https://developer.twitter.com/en/apps).
+To get the access token, access token secret, consumer key, and consumer secret, you need to connect to the developer portal. Use this [link](https://developer.twitter.com/en/apps).
 
 #### Prerequisites
 
@@ -116,21 +116,24 @@ To setup a Twitter channel using the developer portal, follow these steps:
 
     ![](https://i.imgur.com/bzkk13Z.png)
 
-12. To setup environment, click **Dev Environments** under **Products**. 
+12. To setup environment, under **Products** click **Twitter API V2**. 
 
-     ![](https://i.imgur.com/mRShEWO.png)
+     ![](https://i.imgur.com/8wNjpPU.png)
 	 
-13. Click **Set up dev environment**.
+13. Select **Pro** pricing plan to interact with the bot.
 
-     ![](https://i.imgur.com/fXVSyHS.png)
+:::note
+* It is recommended to select either Pro or Enterprise plan to interact with the Yellow's bot.
+:::
 
-14. Enter the **Dev environment label**, select your app from the drop-down, and click **Complete setup**.
+   ![](https://i.imgur.com/F0SVCp6.png)
+   
+The following are the limits for pro plan:
 
-     <img src="https://i.imgur.com/Ww0616o.png" alt="drawing" width="60%"/>
-	 
-    * The  Dev environment is successfully setup.
-
-     ![](https://i.imgur.com/DUAiP6f.png)
+Endpoint | Ratelimit
+---------|----------
+agent/bot messages | 1000 requests / 24 hours per user
+agent/bot messages| 200 requests / 15 mins per user
 
 
 ## 3. Connect Twitter to your bot
@@ -170,7 +173,46 @@ To test your bot on Twitter, follow these steps:
     ![](https://i.imgur.com/U83LsQH.png)
 
 
+## 5. Twitter pricing plans
 
-   
+The following are the pricing plans for Twitter:
+
+1. **Free Developer App**: This plan does not allow you to access the Direct Message (DM) lookup (get messages) or manage API (post messages).
+
+2. **Basic Developer App**: This plan allows you to access both DM lookups and manage DM APIs with the following messaging limits:
+
+   1. **Direct messages**: There is no limit on the number of direct messages that can be sent from Twitter to Yellow, but there is a limit on how many times you can look up or poll for new messages via the Twitter API. You can do that 5 times in 15 minutes and check for new messages every 3 minutes with this plan.
+
+     ##### **Limitaions**
+
+       * Bot or agent can send 5 messages in 15 minutes
+       * Bot or agent can send 50 messages in 24 hours
+
+   2. **Mentions**: Similar to direct messages, there is no limit on the number of mentioned tweets received at Yellow. There is a limit to how many times you can use the lookup API to fetch new tweets. And there is a limit of 10 request in 15 minutes for this plan, which means you can check for new mentions every 1.5 seconds, approximately.
+
+      ##### **Limitaions**
+      
+        * A bot or agent can reply or comment 100 messages in the mentioned tweets in 24 hours.
+
+3. **Pro Developer App**: This plan allows you to access both DM lookups and manage DM APIs with the following messaging limits:
+
+    1. **Direct messages**: There is no limit on the number of direct messages that can be sent from Twitter to Yellow, but there is a limit on how many times you can look up or poll for new messages via the Twitter API. You can do that 100 times in 15 minutes and check for new messages every 10 seconds with this plan.
+
+     ##### **Limitaions**
+
+       * Bot or agent can send 200 messages in 15 minutes
+       * Bot or agent can send 1000 messages in 24 hours
+
+   2. **Mentions**: Similar to direct messages, there is no limit on the number of mention tweets received at Yellow. There will be a limit on how many times you can use the lookup API to fetch new tweets. There is a limit of 300 requests in 15 minutes for this plan, which means we can check for new mentions every 3 to 4 seconds.
+
+       ##### **Limitaions**
+      
+          * A bot or agent can reply or comment 100 messages in the mentioned tweets in 15 mins.
+          * A bot or agent can reply or comment 10000 messages in the mentioned tweets in 24 hours.
 
  
+
+
+
+
+      

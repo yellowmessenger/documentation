@@ -149,7 +149,7 @@ To test your bot on the Sunshine conversations, follow these steps:
 
      ![](https://i.imgur.com/qTi9442.png)
 
-2. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to create a conversation with a Zendesk agent, then the agent will accept the invite. Once a conversation is initiated, the user can talk to the agent from the Zendesk workspace. Once the conversation between the agent and user ends, the bot takes the conversation forward with the user.
+2. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to create a conversation with a Zendesk agent, then the agent will accept the invite. Once a conversation is initiated, the user can talk to the agent from the Zendesk workspace. When the conversation between the agent and user ends, the bot takes the conversation forward with the user.
 
       ![](https://i.imgur.com/Akqa8K7.png)
 	  
