@@ -62,7 +62,7 @@
   --ifm-hero-text-color: #373737;
   --ifm-blockquote-color: #3c3c3c;
 
-  --ifm-code-font-size: 95%;
+  --ifm-code-font-size: 85%;
 
   --ifm-footer-bg-color: #001c3a;
   --ifm-orange-color: #ffd3a7;
@@ -171,8 +171,8 @@ html[data-theme="dark"] {
 }
 
 code {
-  background: #F9F9F9;
-  color: #d01040;
+  background: rgba(175,184,193,0.2);
+  font-weight: bold;
 }
 
 a>code {
@@ -517,12 +517,13 @@ ul, ol {
 
 
 [class^="hero_src-components-Header-header-module"] {
-background: #29165E !important;
+/* background: meteorite !important; */
+background-image: url(/img/cdp/rectangle.png) !important;
 }
 
 [class^="hero_j_Uo"] {
-  background: #29165E !important;
- 
+ /* background: #29165E !important;*/
+  background-image: url(/img/cdp/rectangle.png) !important;
  }
 
 [class^="custom_footer_src-core-footer-module"] {
@@ -824,3 +825,18 @@ display: none;
 }
 
 
+/* API TAB */
+
+[class^="required-text"] {
+  color: green !important; /* Replace "red" with your desired color */
+}
+
+[class^="floatingButton_node_modules-docusaurus-theme-openapi-lib-next-theme-ApiDemoPanel-FloatingButton-styles-module"]{
+
+}
+
+pre code {
+  font-family: "Courier New", monospace;
+  font-size: 14px;
+  color: #ef668d;
+}
