@@ -1144,6 +1144,7 @@ module.exports = {
             "platform_concepts/appConfiguration/microsoft-graph",
             "platform_concepts/appConfiguration/netcore",
             "platform_concepts/appConfiguration/okta",
+            "platform_concepts/appConfiguration/oracle-responsys",
             "platform_concepts/appConfiguration/outlook-calendar",
             "platform_concepts/appConfiguration/sftp",
             "platform_concepts/appConfiguration/twilio-verify",
