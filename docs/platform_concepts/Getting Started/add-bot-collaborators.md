@@ -1,36 +1,28 @@
 ---
 title: Bot access management
-sidebar_label: Bot access management
+sidebar_label: Manage bot access/permissions
 keywords : [access control, bot invite, invite users, send bot invite, share bot access]
 ---
 
-
-While creating an end-to-end bot flow, you need to consider some instances where certain flows need to be handled by other teams or need help from other members of the team. Adding more collaborators to the platform enables everyone to create flows for different business use cases. All collaborators can work together and contribute to building an effective bot quickly and easily.
+When creating an end-to-end bot flow, there may be instances where certain flows need to be handled by other teams or require assistance from other team members. To enable effective collaboration and allow everyone to contribute to building an efficient bot, you can share bot access with other users. 
 
 :::note
-* Only the super admin can share bot access with other users and get notifications for the invited users to accept or reject bot access.
-* Collaborators will have the access that you have provided. If you want to block the access you provided, you need to remove it separately.
+- Only the **super admin** has the privilege to share bot access with other users and receive notifications when the invited users accept or reject the bot access.
+- **Collaborators** will have the access level provided by the super admin. If you wish to revoke access, you'll need to remove it separately.
 :::
 
 
-## 1. Share bot access
+## Share bot access
 
-To share bot access with other users, follow the below steps:
+To share bot access with other users, follow these steps:
 
 1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click the Access Control icon <img  src="https://i.imgur.com/FPcfiW9.png"  width="20"/>.
-
 
 ![](https://i.imgur.com/IlBIRqa.jpg)
 
 2. Click **+Invite user**.
-
-<img  src="https://i.imgur.com/cBnpqIe.png"  width="50%"/>
-
-  
-
-a. Enter the official **Email** address of the user.
-
-b. Select your preferred role(s) in **Access control**. You can select more than one role for a user.
+    - Enter the official **Email** address of the user.
+    - Select your preferred role(s) in **Access control**. You can select more than one role for a user.
 
 | Role | Description |
 |------ | --------- |
@@ -46,42 +38,20 @@ b. Select your preferred role(s) in **Access control**. You can select more than
 |Engagement (Admin) | Can send campaigns and configure audience.|
 |Engagement (User) | Can only schedule campaigns.|
 
-c. Click **Save**.
-
-The user receives an email to accept the invite.
-
-  
+<img  src="https://i.imgur.com/cBnpqIe.png"  width="50%"/>
+    
+c. Click **Save**. The invited user will receive an email with the bot access invitation.
 
 ***
 
-  
+## Accept bot access invite
 
-## 2. Accept bot invite
-
-  
-
-To accept the bot invite, follow the below steps:
-
-  
+To accept a bot access invitation, follow these steps:
 
 1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click **Notifications** icon at the top right corner.
-
-  
-
+    ![](https://i.imgur.com/XKd1KqL.png)
 2. If you have received a bot invite to your email address, then you should be able to view a notification. Click on the bell icon > Green tick.
-
-  
-
-![](https://i.imgur.com/XKd1KqL.png)
-
-![](https://i.imgur.com/Jm0geRB.png)
-
-  
-  
-
+    ![](https://i.imgur.com/Jm0geRB.png)
 3. Click on the drop-down to view the list of bots you have access to.
 
-  
-  
-
-<img  src="https://i.imgur.com/Gg7cHBz.png"  width="50%"/>
+    <img  src="https://i.imgur.com/Gg7cHBz.png"  width="50%"/>

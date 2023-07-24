@@ -60,6 +60,7 @@ module.exports = {
     {
       type: "category",
       label: "Marketplace",
+      link: {type: 'doc', id: 'platform_concepts/Getting Started/marketplaceintro'},
       collapsed: true,
       items: [
         "cookbooks/marketplace-templates/edtech-template",
@@ -81,6 +82,7 @@ module.exports = {
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
     "cookbooks/inbox/csatreport",
+    "cookbooks/inbox/chattranscriptsecurity",
     "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
@@ -140,39 +142,26 @@ module.exports = {
     {
       type: "category",
       label: "Get Started",
+      link: {type: 'doc', id: 'platform_concepts/getting-started'},
       collapsed: true,
       items: [
-   
-        {
-          type: "category",
-          label: "Overview",
-          link: {type: 'doc', id: 'platform_concepts/getting-started'},
-          collapsed: true,
-          items: [
-          
-     //   "platform_concepts/getting-started",
-    "platform_concepts/Getting Started/account-setup",
-    "platform_concepts/Getting Started/user-account-settings", ],
-},
-
-{
+      "platform_concepts/Getting Started/resources",
+      "platform_concepts/Getting Started/account-setup",
+      "platform_concepts/Getting Started/upgrade",  
+    {
       type: "category",
-      label: "Get started with Platform",
+      label: "Introduction",
       collapsed: true,
       items: [
-
-        "platform_concepts/Getting Started/platform-offerings",
-        "platform_concepts/Getting Started/marketplaceintro",
-        "platform_concepts/Getting Started/create-a-bot",
+        "platform_concepts/Getting Started/user-account-settings", 
         "platform_concepts/Getting Started/add-bot-collaborators",
+        "platform_concepts/Getting Started/platform-offerings",
         "platform_concepts/Getting Started/keyboard-shortcuts",
         "platform_concepts/Getting Started/api-keys",
         "platform_concepts/Getting Started/modify-bot-configuration",
-        // "platform_concepts/Getting Started/subscription",
-
-
       ],
     },
+      "platform_concepts/Getting Started/create-a-bot",
 
 
       ]
@@ -824,16 +813,17 @@ module.exports = {
           
         },
         "platform_concepts/engagement/flows_campaign",
-     {
+ /*     {
           type: "category",
-          label: "Flow campaigns",
-         /*  link: {type: 'doc', id: 'platform_concepts/engagement/workflow-intro'},*/
+          label: "Workflow campaigns",
+          link: {type: 'doc', id: 'platform_concepts/engagement/workflow-intro'},
           collapsed: true,
           items: [
-        "platform_concepts/engagement/flows_campaign",    
-        "platform_concepts/engagement/flow-ai",
+        "platform_concepts/engagement/workflowCampaign",
+        "platform_concepts/engagement/event-triggered-campaign",
+        "platform_concepts/engagement/workflow-report",
       ],
-    }, 
+    }, */
     
         {
           type: "category",

@@ -48,9 +48,9 @@ servers:
 
   
 tags:
-  - name: user
+  - name: User
     description: Manage users
-  - name: event
+  - name: Event
     description: Operations about users
   - name: emailTicket
     description: Manage email tickets
@@ -64,7 +64,8 @@ components:
     ApiKeyAuth:
       type: apiKey
       in: header
-      name: X-API-KEY     
+      name: X-API-KEY
+      description: API key to authorize requests
   headers:  
     Content-Type:
       description: Content type of the request payload
@@ -82,7 +83,7 @@ paths:
       security:
         - ApiKeyAuth: []    
       tags:
-        - user
+        - User
       summary: Add user
       description: Creates a user record in User360.
       operationId: addUser
@@ -130,9 +131,111 @@ paths:
               schema:
                 type: object
                 properties:
-                  contactDetails:
+                  message:
+                    type: string
+                    example: "User created successfully"
+                  data:
                     type: object
-                    description: Details of the created contact
+                    properties:
+                      userId:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "12395"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      lastName:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "Rohit3"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      phone:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "919876543211"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      tags:
+                        type: object
+                        properties:
+                          value:
+                            type: array
+                            items:
+                              type: string
+                            example:
+                              - "tags2"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      country:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "IN"
+                          propertyType:
+                            type: string
+                            example: "System"
+                      emailOptIn:
+                        type: object
+                        properties:
+                          value:
+                            type: boolean
+                            example: false
+                          propertyType:
+                            type: string
+                            example: "System"
+                      botId:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: ""
+                        description: Unique ID of the bot associated with the user    
+                      id:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "x1632831689374_t4-qyVsPjufdqVfL0uXRM"
+                        description: Unique internal ID genetated for the user.
+                      updatedAt:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            format: date-time
+                            example: "YYYY-MM-DDTHH:mm:ss.sssZ"
+                          propertyType:
+                            type: string
+                            example: "System"
+                        description: The date and time of the last update to the user record in the ISO standard format
+                      createdAt:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            format: date-time
+                            example: "2023-07-17T12:55:06.730Z"
+                          propertyType:
+                            type: string
+                            example: "System"
+                        description: The date and time of the record creation in ISO standard format    
+                      profileComplete:
+                        type: object
+                        properties:
+                          value:
+                            type: string
+                            example: "13.04"
         '400':
           description: Bad Request
           content:
@@ -157,13 +260,150 @@ paths:
                   error:
                     type: string
                     description: Error details
-                    
+  
+  '/cdp/api/v1/user/create-bulk':
+    post:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - User    
+      summary: Add users (Bulk)
+      operationId: createBulkUsers
+      parameters:
+        - name: bot
+          in: query
+          description: The unique ID of the bot associated with the users.
+          required: true
+          schema:
+            type: string
+        - name: uponConflict
+          in: query
+          description: Specify the conflict resolution strategy when a `userId` is already present in the system. Update the existing user data with the provided information, or if the userId exists, retain the existing user data and ignore the import data.
+          required: false
+          schema:
+            type: string   
+            enum:
+              - UPDATE_EXISTING
+              - RETAIN_IMPORTED        
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                users:
+                  type: array
+                  items:
+                    type: object
+                    required:
+                      - userId
+                    properties:
+                      firstName:
+                        type: string
+                        description: The first name of the user.
+                      userId:
+                        type: string
+                        description: The unique ID that you want to assign to the user.
+              example:
+                users:
+                  - firstName: "sasi"
+                    userId: "12"
+                  - firstName: "Tom"
+                    userId: "125"
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Empty message string.
+                  data:
+                    type: string
+                    description: Unique ID for the bulk creation of users.
+                    example: "qnN5xz34haspjpTd1uDVY"
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details
+        '401':
+          description: Unauthorized request or invalid `X-Auth-Token` or `botId`
+        '406':
+          description: Not Acceptable
+        '500':
+          description: Internal Server Error
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    description: Error details
+    get:             
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - User
+      summary: Get Status of Bulk Create API
+      description: Get the status of the Bulk Create API based on the unique data ID generated
+      parameters:
+        - name: bot
+          in: query
+          required: true
+          description: The unique ID of the bot associated with the request.
+          schema:
+            type: string
+        - name: id
+          in: query
+          required: true
+          description: The unique `data` ID generated for the `/create-bulk` API
+          schema:
+            type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Details Fetched Successfully"
+                  data:
+                    type: object
+                    properties:
+                      comment:
+                        type: string
+                        example: "finished processing"
+                      result:
+                        type: object
+                        properties:
+                          newUsers:
+                            type: object
+                          conflictedUsers:
+                            type: object
+                            additionalProperties:
+                              type: string
+                              description: "Key is the userId, value is the botId"       
+
   '/cdp/api/v1/user/{userId}':
     get:
       security:
         - ApiKeyAuth: []
       tags:
-        - user
+        - User
       summary: Get user details
       description: Retrieves the details of a specific user based on the userId provided.
       operationId: getUser
@@ -224,7 +464,7 @@ paths:
       security:
         - ApiKeyAuth: []    
       tags:
-        - user
+        - User
       summary: Update user
       description: Updates user properties of an existing user.
       parameters:
@@ -277,7 +517,7 @@ paths:
       security:
         - ApiKeyAuth: []    
       tags:
-        - user
+        - User
       summary: Delete user
       description: This can only be done by the logged in user.
       operationId: deleteUser
@@ -335,7 +575,7 @@ paths:
       security:
         - ApiKeyAuth: []    
       tags:
-        - event
+        - Event
       summary: Get user details
       description: Retrieves the details of a specific user based on the userId provided.
       operationId: getUserDetails
@@ -398,7 +638,7 @@ paths:
       security:
         - ApiKeyAuth: []    
       tags: 
-        - messages
+        - Messages
       summary: Get messages
       description: Retrieves messages for a user from the Yellow.ai platform.
       parameters:
@@ -527,7 +767,7 @@ paths:
       security:
         - ApiKeyAuth: []    
       tags: 
-        - emailTicket
+        - Email Ticket
       summary: Create a new email ticket
       parameters:
         - in: query
