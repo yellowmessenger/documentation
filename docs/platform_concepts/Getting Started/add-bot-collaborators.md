@@ -53,4 +53,5 @@ To accept a bot access invitation, follow these steps:
 2. If you have received a bot invite to your email address, then you should be able to view a notification. Click on the bell icon > Green tick.
     ![](https://i.imgur.com/Jm0geRB.png)
 3. Click on the drop-down to view the list of bots you have access to.
+
     <img  src="https://i.imgur.com/Gg7cHBz.png"  width="50%"/>

@@ -81,7 +81,7 @@ The two graphs provided offer detailed analysis of chat trends, allowing trackin
 
 ### Dashboard to monitor live chats 
 
-A live monitor dashboard has been specifically developed for inbox adminis and supervisors to oversee latest live chats.
+A live monitor dashboard has been specifically developed for inbox admins and supervisors to oversee latest live chats.
 
 - By selecting **View live chat dashboard**, a new page will open, presenting the **50 most recent chats**. The chats in the table are arranged in descending order based on the latest received chat.
 
