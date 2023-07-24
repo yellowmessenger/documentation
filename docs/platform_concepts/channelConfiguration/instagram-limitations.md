@@ -97,13 +97,47 @@ Following are the sample use cases:
 
 ----
 
-#### Story Mentions/Replies
+## 4. Supported features
 
-An Instagram Professional account can be notified when a user mentions them in a story. When this happens, the IG Professional account will get a message in the inbox referencing the story that the user posted. Due to a story being ephemeral by nature (it will disappear after 24 hours or when deleted by the user), you must meet specific requirements and implementation guidelines to comply and respect user privacy for ephemeral content.
+Connecting your Instagram Professional account with the [Yellow platform](https://cloud.yellow.ai/) enables the following features to communicate with your bot:
 
-Story mention is part of the app review requirements for `instagram_manage_messages` permission. Please ensure that you meet all the story mention requirements before submitting for [app review](https://developers.facebook.com/docs/messenger-platform/instagram/app-review).
+* **Direct Message:** The bot can handle direct messages from your Instagram account. When a bot user posts a direct message on Instagram page, the bot responds within 24 hours. If the bot is not able to resolve the query of the user, then a live agent can respond back to the user within 7 days.
+
+* **Comment or Private Replies**: This enables businesses to reply to their users for any comment made on their Instagram posts. When a comment is made on the Instagram post, an event `instagram-comment` is sent to the bot, and a ticket is raised in the Inbox module for agents to respond to the user.
+
+   <img src="https://i.imgur.com/pOaEMHt.png" alt="drawing" width="80%"/>
 
 :::note
-- A Story mention webhook will only flow in if the user mentioning the account has their account setup as public. Story mentions from a private account will only flow in if the account follows the said account.
-- You must not store/cache the media content on your server.
+* Private replies are currently not supported for Instagram ads and IGTV comments.
 :::
+
+* **Story Mentions:** An Instagram (IG) business account can be notified when a user mentions the businesses on their story. When this happens, an event is sent to the bot, and a message will be displayed in the Inbox referencing the story so that the live agent can respond back. For more information, click [here](https://developers.facebook.com/docs/messenger-platform/instagram/features/story-mention). 
+
+     <img src="https://i.imgur.com/eqVolIf.jpg" alt="drawing" width="40%"/>
+
+:::note
+* In the Inbox module, the user response should be displayed appropriately for the agent to understand in which story the account was mentioned. For more information, click [here](https://developers.facebook.com/docs/messenger-platform/instagram/features/story-mention#rendering-story-in-agent-s-inbox-client-view).
+* If the story mentioned occurs outside the session window, the agent should be notified to close the ticket. 
+* Agents can reply to the story mentions only once and cannot send more than one message for a particular story mention.
+* Stories will expire after 24 hours, and the agents won't be able to respond post-expiration.
+
+   ![](https://i.imgur.com/tiZwtey.png)
+:::
+
+* **Story Replies:** An Instagram (IG) business account enables the businesses to add a story, and when their user replies to the story, the bot gets triggered automatically.
+
+    <img src="https://i.imgur.com/49fI4a5.jpg" alt="drawing" width="40%"/>
+
+
+* **Media Share:** An Instagram (IG) business account allows business to share or repost the media content such as posts, images, videos, IGTV, stories, and reels for their users.
+
+    ![](https://i.imgur.com/0EEayvs.png)
+
+The following are the events of the above features:
+
+Features | Code | Description
+---------|------|------------
+Story reply | instagram-story-reply | Bot receives an event with the available information when a user replies to the business instagram story.
+Story mention | instagram-story-mention | Bot receives an event with the available information when a user mentions the Business in their insta story. 
+Media share | instagram-media-share | Bot receives an event with the available information when the business shares a media from a post.
+Comment | instagram-comment | Bot receives an event with the available info when a user comments on the business insta post.

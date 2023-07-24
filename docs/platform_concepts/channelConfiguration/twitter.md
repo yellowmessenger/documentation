@@ -148,11 +148,7 @@ To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
    ![](https://i.imgur.com/PFvwsPc.png)
 
-3. Enter the account details such as **Access token, Access token secret, Consumer key, Consumer secret**, and **Environment name** that you have copied from the Twitter's developer portal. Click **Add account**.   
-   
-    <img src="https://i.imgur.com/AVpx2pt.png" alt="drawing" width="80%"/>
-
-3. Add **Click account**. Your Twitter channel will be successfully connected.
+3. Copy the details such as **Access token, Access token secret, Consumer key, and Consumer secret** from Twitter's developer portal and contact the [support](mailto:support@yellow.ai) team to connect your bot to Twitter.  
 
 ## 4. Test your bot on Twitter
 
@@ -209,10 +205,5 @@ The following are the pricing plans for Twitter:
       
           * A bot or agent can reply or comment 100 messages in the mentioned tweets in 15 mins.
           * A bot or agent can reply or comment 10000 messages in the mentioned tweets in 24 hours.
-
- 
-
-
-
 
       
