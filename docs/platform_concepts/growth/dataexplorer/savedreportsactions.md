@@ -75,6 +75,14 @@ To add a formula to a column, follow these simple steps:
 5. Click **Save query** to save this as a new report or add it to the existing one. 
     ![](https://i.imgur.com/hoPwKin.png)
 
+:::note
+You can add formulas to custom tables as long as the concerned column is of number data type. This will not work on string type columns.
+:::
+
+
+
+
+
 
 ### Common formulas that can be applied on summarized tables
 

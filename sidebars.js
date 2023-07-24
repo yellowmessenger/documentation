@@ -82,6 +82,7 @@ module.exports = {
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
     "cookbooks/inbox/csatreport",
+    "cookbooks/inbox/chattranscriptsecurity",
     "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
