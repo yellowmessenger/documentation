@@ -269,6 +269,7 @@ paths:
         - User    
       summary: Add users (Bulk)
       operationId: createBulkUsers
+      description: Adds users in batch, with each batch can contain up to 100 records (Internally, there will be approximately 40-50 API calls per batch).
       parameters:
         - name: bot
           in: query
