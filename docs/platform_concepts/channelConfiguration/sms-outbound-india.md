@@ -169,4 +169,4 @@ Sending blast campaign from the engagement platform:
 **If the bot is on cloud platform**
 
 1. **Go to Engagement > Templates > Select SMS > Create the same template** that you created and got approved in the DLT portal. Add the exact details as added in the DLT portal. Make sure the message content is JUST THE SAME without any changes in the linespace, case (upper/lower case) and such
-2. Make use of the V2 Notification API and/or [Workflow campaign](/docs/platform_concepts/engagement/workflowCampaign) as per required.
+2. Make use of the V2 Notification APIs and [Flow campaigns](/docs/platform_concepts/engagement/flows_campaign) as per required.
