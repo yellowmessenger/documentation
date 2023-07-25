@@ -95,34 +95,57 @@ paths:
           schema:
             type: string
       requestBody:
-        required: true
         content:
           application/json:
             schema:
               type: object
               properties:
-                userId:
+                firstName:
                   type: string
-                  description: The ID of the user (mandatory)
+                  description: The first name of the user.
                 lastName:
                   type: string
-                  description: The last name of the user
+                  description: Last name of the user.
+                gender:
+                  type: string
+                  description: Gender of the user.
+                country:
+                  type: string
+                  description: Country of the user.
+                city:
+                  type: string
+                  description: City of the user according to the user's address.
+                language:
+                  type: string
+                  description: Preferred language of the user.
+                email:
+                  type: string
+                  format: email
+                  description: Email address of the user.
                 phone:
                   type: string
-                  description: The phone number of the user
+                  description: Phone number of the user with country code.
+                lastChannel:
+                  type: string
+                  description: Recent channel (set up on yellow.ai) where the user had an active session. You can update this property to cover touch-points/channels outside yellow.ai.
+                dob:
+                  type: string
+                  format: date
+                  description: Date of birth of the user.
+                emailOptin:
+                  type: boolean
+                  description: Subscription status of the user to emails. Pass `true` to subscribe for emails, else pass `false`.
+                smsOptin:
+                  type: boolean
+                  description: Subscription status of the user to SMS. Pass `true` to subscribe the user to SMS, else pass `false`.
+                whatsAppOptin:
+                  type: boolean
+                  description: WhatsApp subscription status of the user. Pass `true` to subscribe the user to your WhatsApp notifications, else pass `false`.
                 tags:
                   type: array
                   items:
                     type: string
-                  description: An array of tags
-                country:
-                  type: string
-                  description: The country of the user
-                emailOptIn:
-                  type: boolean
-                  description: >-
-                    Indicates whether the user has opted in for email
-                    notifications
+                  description: List of groups associated with the user. You can add tags to users manually.
       responses:
         '200':
           description: OK
@@ -287,31 +310,95 @@ paths:
               - UPDATE_EXISTING
               - RETAIN_IMPORTED        
       requestBody:
-        required: true
         content:
           application/json:
             schema:
               type: object
               properties:
-                users:
+                firstName:
+                  type: string
+                  description: The first name of the user.
+                lastName:
+                  type: string
+                  description: Last name of the user.
+                gender:
+                  type: string
+                  description: Gender of the user.
+                country:
+                  type: string
+                  description: Country of the user. 
+                city:
+                  type: string
+                  description: City of the user. 
+                language:
+                  type: string
+                  description: Preferred language of the user.
+                email:
+                  type: string
+                  format: email
+                  description: Email address of the user.
+                phone:
+                  type: string
+                  description: Phone number of the user with country code.
+                lastChannel:
+                  type: string
+                  description: Recent channel (set up on yellow.ai) where the user had an active session. You can update this property to cover touch-points/channels outside yellow.ai.
+                dob:
+                  type: string
+                  format: date
+                  description: Date of birth of the user.
+                emailOptin:
+                  type: boolean
+                  description: Subscription status of the user to emails. Pass `true` to subscribe the user to your email notifications, else pass `false`.
+                smsOptin:
+                  type: boolean
+                  description: Subscription status of the user to SMS.  Pass `true` to subscribe the user to your SMS notifications, else pass `false`.
+                whatsAppOptin:
+                  type: boolean
+                  description: WhatsApp subscription status of the user.  Pass `true` to subscribe the user to your WhatsApp notifications, else pass `false`.
+                tags:
                   type: array
                   items:
-                    type: object
-                    required:
-                      - userId
-                    properties:
-                      firstName:
-                        type: string
-                        description: The first name of the user.
-                      userId:
-                        type: string
-                        description: The unique ID that you want to assign to the user.
+                    type: string
+                  description: List of groups associated with the user. You can add tags to users manually.
+  
               example:
                 users:
                   - firstName: "sasi"
                     userId: "12"
+                    lastName: "Kumar"
+                    gender: "Male"
+                    country: "India"
+                    city: "Bangalore"
+                    language: "English"
+                    timezone: "Asia/Kolkata"
+                    email: "sasi@example.com"
+                    phone: "919876543210"
+                    lastChannel: "WhatsApp"
+                    dob: "1990-12-31"
+                    emailOptin: true
+                    smsOptin: false
+                    whatsAppOptin: true
+                    tags:
+                      - "Premium Customers"
+                      - "VIP Members"
                   - firstName: "Tom"
                     userId: "125"
+                    lastName: "Smith"
+                    gender: "Male"
+                    country: "USA"
+                    city: "New York"
+                    language: "English"
+                    timezone: "America/New_York"
+                    email: "tom@example.com"
+                    phone: "911234567890"
+                    lastChannel: "Email"
+                    dob: "1985-08-15"
+                    emailOptin: true
+                    smsOptin: true
+                    whatsAppOptin: false
+                    tags:
+                      - "Subscribers"
       responses:
         '200':
           description: OK
@@ -493,9 +580,9 @@ paths:
             schema:
               type: object
               properties:
-                userId:
+                firstName:
                   type: string
-                  description: The ID of the user (mandatory)
+                  description: The first name of the user
                 lastName:
                   type: string
                   description: The last name of the user
