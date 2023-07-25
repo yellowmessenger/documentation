@@ -196,12 +196,12 @@ This allows you to define a relative duration during which the user must wait at
 
 <center><img src="https://i.imgur.com/SLRRaCa.png" width="60%"/></center>
 
-2. In **Days**, **Hours**, and **Minutes**, enter your preferred duration. For example, setting 12 days, 23 hours, and 34 minutes, takes the next action configured in the flow after this duration. 
+2. Choose your preferred duration in **Days**, **Hours**, or **Minutes**. For example, setting 12 days, takes the next action configured in the flow after this duration. 
 
 
 ### End flow
 
-This allows you to end the flow. Use this in the last step of the flow.
+Drag-and-drop **End flow** to the last step of your flow. However, this step is optional and signifies the completion of the flow.
 
 * Drag-and-drop **End flow** to the end of the flow.
 
@@ -249,32 +249,6 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
     <center><img src="https://i.imgur.com/8sl6gwl.png" width="50%"/></center>
 
-<!--
-5. To use AI recommended template (uses GPT-3 APIs), enable **Generate AI suggested templates** and configure the following:
- 
- <center><img src="https://i.imgur.com/0kXTCsp.png" width="50%"/></center>
- 
-   i. In **User segment**, choose the user segment that you want to target.
-   
-   ii. In **Campaign goal**, choose the objective of the campaign.
-   
-   iii. Click **Generate**. An AI based template will be added automatically.
-   
-   iv. To customise the message and personalise the message using user properties, click on the message.
-   
-   <center><img src="https://i.imgur.com/v3TELtL.png" width="50%"/></center>
-
-:::note
-* Use **Tone configuration** to tune the objectives (Quirkiness, Enthusiasm, Urgency, and Formal).
-* Use *Reset* to reset tone configurations.
-* Use Regenerate to generate the template again.
-:::
-
-   v. Enter the template name, choose the language, customise the message as required, and click **Create template**. 
-   
-   ![](https://i.imgur.com/dVV4Evg.png)
-
--->
 
 5. Enable **During workflow business hours** to send the message only during business hours.
 
@@ -332,12 +306,17 @@ For a detailed help doc on how to create an outbound campaign via Voice channel,
 :::
 
 ### Define flows based on delivery statuses
-You can also perform different actions based on different delivery statuses. For example, if the message is not delivered, send an email. If the user opens the message, send an exclusive discount coupon over WhatsApp.
+
+This helps you to automate campaign triggers based on the delivery status of your messages to achieve more effective marketing outcomes. You can also have customizable wait times. If users don't take action within the specified period, trigger follow-up actions like reminders. This can maximize engagement and campaign effectiveness.
+
 <center>
 <img src="https://i.imgur.com/QNZQ4GA.png" width="50%"/></center>
 
 
-The following table provides the delivery statuses supported for different channels.
+The following table provides the delivery statuses supported for different channels:
+
+<center>
+<img src="https://i.imgur.com/XW0qyTI.png" width="30%"/></center>
 
 Channel | Supported statuses
 ---------- | ---------------
@@ -345,6 +324,36 @@ WhatsApp/Email/ Google Business Message | Delivered, Not delivered, Read, Replie
 Push notification | Delivered, Not delivered, Clicked, and Impression.
 SMS | Delivered, and Not delivered.
 Voice | Answered, Not answered, Busy, and Failed to connect.
+
+The following table provides the different wait time supported:
+
+<center>
+ <img src="https://i.imgur.com/NBm6d4w.png" width="30%"/></center>
+
+Wait time | Description
+--------- | -----------
+Immediately | Select this option to trigger the next action in the flow or launch a campaign instantly without any delay when a specific delivery status is identified. 
+Duration | Choose this option to set a custom time duration before triggering the next action or campaign. For example, you can wait for 1 hour, 1 day, or any other specified time frame to allow users to interact with the message before proceeding with the campaign.
+Timestamp | Choose this option to set a specific date and time for the next action or campaign to be triggered.
+
+
+#### Use cases:
+
+Below are some examples that illustrate how to effectively use the feature:
+
+* **Delivery Status: Delivered**:<br/>Use Case: After a promotional message is delivered, wait for 24 hours to see if the message is read by any of the recipients. If the user does not read the message during this time, send a reminder to prompt their attention and increase the chances of interaction.
+
+* **Delivery Status: Read**:<br/>
+   Use Case: After a message is read by a user, wait for 24 hours to see if the user interacts with the message using the call-to-action (CTA). If the user does not take any action, even after the 24-hour period, send an automatic reminder to re-engage them with the content and encourage them to respond to the CTA.
+
+* **Delivery Status: Replied**:<br/>
+   Use Case: After a user clicks on a button in the message, wait for 12 hours to see if they complete the desired action, such as signing up for an event or making a purchase. If the action is not completed, send a follow-up message with more information or a special discount to entice them to complete the action.
+
+* **Delivery Status: Button Clicked**: <br/>
+   Use Case: If a user clicks on a survey link but does not complete the survey, wait for 48 hours to see if they return to complete it. If no response is received, send a gentle reminder with a shortened survey or an incentive to increase survey completion rates.
+
+
+
 
 *** 
 
@@ -368,7 +377,7 @@ To add a goal:
 
    <center><img src="https://i.imgur.com/jp1Clr2.png" width="40%"/></center>
 
-2. In Name, enter a name for the goal.
+2. In **Name**, enter a name for the goal.
 3. In **Event**, choose the event that you want to associate with the goal. See [how to add events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-event).
 4. In **Goal validity**, set the validity of the goal using any of the following:
 
