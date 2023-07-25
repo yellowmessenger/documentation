@@ -218,7 +218,7 @@ Here are some EdTech specific templates:
 
    ![](https://i.imgur.com/lEyZPjC.png)
 
--   **Send campaigns to promote new courses**: Use the bot as a good lead generation tool. You can send course information, promote new courses, or offer discounts on existing courses to your leads through [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) or [Workflow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/workflowCampaign).
+-   **Send campaigns to promote new courses**: Use the bot as a good lead generation tool. You can send course information, promote new courses, or offer discounts on existing courses to your leads through [Outbound campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) or [Workflow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
     
 -   **Take feedback/review on courses**: 
     You can create a flow to capture feedback from users. Provide an option to select the course, and list down the feedback options to select with a text box. Create a database table to store the user response.
