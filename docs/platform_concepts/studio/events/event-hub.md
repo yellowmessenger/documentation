@@ -3,141 +3,77 @@ title: Events
 sidebar_label: Handle bot events
 ---
 
-Event is general programming term which is used to describe an occurrence recognised by the bot (mostly asynchronous). When your bot is operational, it generates various events which can be used to trigger a journey or automation workflow. Event helps you handle those occurrences and perform some tasks.
-For example, popup closed is an event, you can handle it by sending another message in the journey.
+Events are occurences that happen in a platform or system.
 
-In this article, you will learn -
-1. [How to activate or deactivate an event](#activatedeactivate-an-event)
-2. [About different types of events](#type-of-events) 
+For example, let's consider a customer support chatbot for an e-commerce platform. When a user initiates a conversation, a welcome event is triggered, presenting a greeting message along with options for the user to select from.
 
-   a. [Widget related events](#wid-1)
+You can use these events to trigger specific bot flows, run campaigns, or perform any other actions based on your requirements.
 
-   b. [Inbox related events](#inb-1)
+## Types of events in yellow.ai
 
-   c. [Engage related events](#eng-1) 
+The following are the different types of events available for different modules.
 
-   d. [Integration events](#int-1) 
+### <a name="wid-1"></a> Widget related events
 
-   e. [User inactivity events](#uie-1) 
-
-   f. [Schedule events](#sch-1) 
-
-   g. [User events](#7-user-360-events)
-
-   h. [Custom events](#cust-1) 
-
-***
-
-## 1. Activate/deactivate event
-
-
-1. On the **Event** page, navigate to the category in which you want to activate or deactivate an event. 
-2. Click on the inactive event that you want to activate.
-3. Click the more options icon, <img src="https://i.imgur.com/VTnjRYM.png" width="10"/> > **Activate**.
-
-   ![](https://i.imgur.com/eMEfIG1.png)
-
-
-4. To use an active event in a flow, in the **Start** node, select *Event* from the first drop-down and select the event that you have enabled.
-
-![](https://i.imgur.com/JwRfFpM.png)
-
-:::note
-Similarly, you can deactivate an active event. The flow will not trigger When you deactivate a [custom event] or system event.
-![](https://i.imgur.com/tPm5oKy.png)
-:::
-
-
-
-
-## 2. Type of Events
-
-### <a name="wid-1"></a> 1. Widget related events
+The following are the events available for our chat widget.
 
 | Event | Description |
 |--------|---------------|
-| bot-opened | On a website:  when someone clicks on the chat bubble to open the bot.<br/>For PWA: It is when the bot loads. |
-| bot-closed | When the user closes the bot on a website. |
-| bot-loaded-on-page-reload | When the current bot page is reloaded. |
-| ym_home | When someone clicks the home button. |
-| ym_closed_promotion | When the user closed the promotion in the bot. |
-| page-url-based-trigger | To trigger a specific flow, when the URL matches with the loading page URL. |
+| bot-opened | On a website:  when the user clicks the chat bubble to open the bot.<br/>For PWA: When the bot loads. |
+| bot-closed | When the user closes the bot.|
+| bot-loaded-on-page-reload | When the user reloads the current bot page or the page gets reloaded automatically. |
+| ym_home | When the user clicks the home button. |
+| ym_closed_promotion | When the user closes the promotion in the bot. |
+| page-url-based-trigger | Triggers based on a specific URL or webpage. |
 
 ***
 
-### <a name="inb-1"></a> 2. Inbox related events
+### Inbox related events
 
+The following are the events available for **Inbox**.
 
 | Event | Description |
 |---------|--------------|
-| offline-ticketing-disabled | ticket tried to go to open state but offline ticketing disabled |
-| offline-ticketing-not-configured-for-group | ticket tried to go to open state but offline ticketing config not there for group |
-| offline-ticket-limit-reached | open ticket limit reached |
-| offline-disabled-group-absent | no group given (i.e. default) and offline not enabled |
-| offline-ticketing-disabled-for-group | group given and offline ticketing not enabled for group |
-| no-agents-online | When there are no agents online |
-| all-agents-busy | When there is atleast one online agent and all are busy  |
-| ticket-queue-state-only-inside-working-hours | ticket tried to go to queue but not in working hours |
-| ticket-assign-state-only-inside-working-hours | ticket tried to go to assign but not in working hours |
-| default-queue-disabled | default queue config disabled |
-| group-queue-not-configured | specific group queue config not allowed |
-| group-queue-limit-reached | max queue limit for group reached |
-| ticket-open-state-only-outside-working-hours | ticket tried to go to open but it's inside working hours |
-| agent-reply | When an agent replies to the user |
-| assigned-from-queue | When a conversation is assigned to an agent from the queue |
-| custom-field-update | When the agent updates a custom field |
-| note-update | When ticket note is updated by agent |
-| ticket-assigned-UI | When a ticket is created from the bot messages from Inbox |
-| ticket-inactive | When a ticket is marked as inactive |
-| ticket-queue-to-open | When a ticket is moved from queued to open state |
+| offline-ticketing-disabled | When ticket tries to go to open state but offline ticketing is disabled. |
+| offline-ticketing-not-configured-for-group | When ticket tries to go to open state but offline ticketing config is not available for the group. |
+| offline-ticket-limit-reached | Open tickets reach their limit |
+| offline-disabled-group-absent | By default, no group is available, and offline ticketing is disabled.|
+| offline-ticketing-disabled-for-group | Group is available, but offline ticketing is disabled. |
+| no-agents-online | When there are no agents online. |
+| all-agents-busy | All agents are busy when there is at least one online agent.  |
+| ticket-queue-state-only-inside-working-hours | When a ticket tried to go to queue outside working hours. |
+| ticket-assign-state-only-inside-working-hours | When a ticket tried to go to assign outside working hours. |
+| default-queue-disabled | default queue config disabled. |
+| group-queue-not-configured | A specific group queue configuration isn't permitted. |
+| group-queue-limit-reached | The group has reached the maximum queue limit. |
+| ticket-open-state-only-outside-working-hours | When a ticket tried to go to open status within working hours. |
+| agent-reply | When an agent replies to the user. |
+| assigned-from-queue | When a conversation is assigned to an agent from the queue. |
+| custom-field-update | When an agent updates a custom field. |
+| note-update | When an agent updates a ticket note. |
+| ticket-assigned-UI | When a ticket is created from the bot messages on Inbox. |
+| ticket-inactive | When a ticket is marked inactive. |
+| ticket-queue-to-open | When a ticket moves from queued to open state |
 
-***
+### <a name="eng-1"></a> Engage related events
 
-### <a name="eng-1"></a> 3. Engage related events
-
-
-
-| Event                         | Description                                              |
-|-------------------------------|----------------------------------------------------------|
-| quick_reply_event             | Receive WhatsApp Quick Reply Template related events     |
-| campaign-notification-updates | Receive Notification API delivery updates to the bot     |
-| whatsapp-referral             | Receive Click to WhatsApp(CTWA) referral property events |
-| fb-ad-referral                | Receive facebook ad referral property events             |
+The following are the events available for **Engage**.
 
 
-#### 3.1 Facebook [Click-to-Whatsapp](https://www.facebook.com/business/help/447934475640650?id=371525583593535) campaign event
-
-This event is received from Facebook campaigns which navigates the user to WhatsApp, known as [Click-to-WhatsApp](https://www.facebook.com/business/help/447934475640650?id=371525583593535) ads.
+| Event                         | Description                                                      |
+|-------------------------------|------------------------------------------------------------------|
+| quick_reply_event             | When a user clicks on Quick reply option in whatsapp          |
+| campaign-notification-updates | Receive updates on campaign notifications   |
+| whatsapp-referral             | When a user referral is identified through WhatsApp.    |
+| fb-ad-referral                | When a user interacts with a Facebook ad and is referred to a specific destination or webpage.        |
 
 
 
-##### Description
+#### Facebook Click-to-WhatsApp Campaign Event
 
-When a user clicks on a Facebook ad., the referral event is received in the bot containing the user and campaign information.
+This event is triggered by Facebook campaigns that utilize the Click-to-WhatsApp feature, which allows users to navigate directly to WhatsApp from the ad.
 
-The referral event works as follows:
-
-1.  A user clicks on an ad. for which the **Click-to-WhatsApp** CTA is configured.
-2.  The user will be redirected to WhatsApp with a pre-configured message related to the ad. 
-3.  The user needs to send a preconfigured message to receive the referral event to the bot.
-
-:::note
-If the user edits the preconfigured message, the event will not be triggered.
-:::
-
-4.  The advertising business gets an inbound message notification including the referral property, which provides additional context about the ad. that triggered the message. 
-5. The business can use the information received on the event and respond accordingly.
-    
-
-You can get the following fields in your referral event object:
-
-Field | Datatype | Description
------- | ---------- | ---------
-`headline` | String | Used in the ad. that generated the message.
-`body` | String | The source type of the ad. Supported values are ad. and post.
-`source_id` | String | Facebook ID for an ad. or a post.
-`source_url` | String | The URL that leads to the ad. or post. Opening this URL takes you to the ad viewed by your user. <br/> A referral object may contain only the `source_url` field in some cases. <br/>This is expected and happens when: <ul><li>A user sends the message before the context for the ad. or post has been rendered on the user’s app.</li><li>An error or mismatch when the user's client tries to look for an ad. or post’s context.</li></ul>
-`image` and `video` | [Media object](https://developers.facebook.com/docs/whatsapp/api/webhooks/components#media) | Optional. The image or video that the user saw and clicked. This object will not appear if the `skip_referral_media_download` application setting is set to `true`. See application settings for more details.<br/>
+When a user interacts with a Facebook ad, a referral event is received by the bot, containing information about the user and the campaign.
 
 ##### Prerequisites
 1.  The Facebook page where the campaigns are run should be linked with a WhatsApp Business Account number which is integrated with the bot. [See how to do it](https://www.facebook.com/help/iphone-app/2783732558314697).
@@ -149,20 +85,39 @@ Field | Datatype | Description
    ![](https://i.imgur.com/Up3dBHY.png)
 
 
-##### Sample campaign from Facebook ad. manager:
+The referral event follows the following process:
 
-![](https://i.imgur.com/HR2JJYM.gif)
-
-##### Sample screenshots of the Campaigns or ad. on the Facebook Feed and Whatsapp landing pages:
-
-![](https://i.imgur.com/HoEs2lH.png)
-
-<center>
-<img src="https://i.imgur.com/A4hi1KV.png" width="300"/>
-</center>
+1. The user clicks on an ad that has the Click-to-WhatsApp call-to-action (CTA) configured.
+2. The user is redirected to WhatsApp with a pre-configured message related to the ad.
+3. To trigger the referral event in the bot, the user needs to send the pre-configured message without making any edits.
+4. The advertising business receives an inbound message notification that includes the referral property. This referral property provides additional context about the ad that triggered the message.
+5. The business can utilize the information received from the event to appropriately respond and engage with the user.
 
 
-##### Sample event_data that will be captured in bot logs:
+:::note
+If the user modifies the pre-configured message, the referral event will not be triggered.
+:::
+
+By leveraging the referral event and the associated information, businesses can effectively track the success of their Facebook Click-to-WhatsApp campaigns and tailor their responses accordingly.
+    
+
+You can get the following fields in your referral event object:
+
+| Field        | Datatype        | Description                                                                                                                                                                                                                                                                                                                                                             |
+|--------------|-----------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `headline`   | String          | Represents the text used in the ad that generated the message.                                                                                                                                                                                                                                                                                                           |
+| `body`       | String          | Represents the source type of the ad. Supported values are "ad" and "post".                                                                                                                                                                                                                                                                                             |
+| `source_id`  | String          | Represents the Facebook ID for an ad or a post.                                                                                                                                                                                                                                                                                                                        |
+| `source_url` | String          | Represents the URL that leads to the ad or post. Opening this URL takes you to the ad viewed by the user. A referral object may contain only the `source_url` field in some cases. This can happen if: <ul><li>A user sends the message before the context for the ad or post has been rendered on the user’s app.</li><li>An error or mismatch occurs when the user's client tries to look for the ad or post’s context.</li></ul> |
+| `image` and `video` | [Media object](https://developers.facebook.com/docs/whatsapp/api/webhooks/components#media) | Represents the image or video that the user saw and clicked. This object will not appear if the `skip_referral_media_download` application setting is set to `true`. See application settings for more details.                                    |
+
+---
+
+<img src="https://i.imgur.com/HoEs2lH.png" alt="drawing" width="60%"/>
+
+<img src="https://i.imgur.com/N0tyDzL.png" alt="drawing" width="50%"/>
+
+**Sample event data that will be captured in bot logs**
 
 ```json
 "event":
@@ -186,158 +141,83 @@ Field | Datatype | Description
 
 ![](https://lh6.googleusercontent.com/Uy8n_hGEaF2UxU0di4TtiWVoUIc2rPXOwESYpKlCMIkj2M0Yd32GVvh91BHXR0Rjw1itlr9UgUlpHDwwgYbJFHiGnaPJN6THh14qePQxd1AWwv8IDfqXyRjOJii2oYMF_FTuQjAYRfgn8LBd5MUct8dqF-sRv4rQn2S7B_odV_aVoq5oDrj1S5gEeg4h)
 
-
-
 ***
 
-### <a name="int-1"></a> 4. Integration related events
+### <a name="int-1"></a>  Integration related events
 
 The integration related events depend completely on the events the respective third-party app supports. Hence, the list of supported events might vary for each integration. 
 
 ***
 
-### <a name="uie-1"></a> 5. User inactivity events
+### <a name="uie-1"></a> User inactivity events
+
+User inactivity event refers to a specific event that is triggered when a user remains inactive or doesn't respond to the bot's prompts for a certain period of time. 
+
+For example, if we ask for an email and get no response, we may check if they are still available or repeat the request. Options include sending a message, repeating the prompt, or starting a new flow to handle inactivity.
+
+### To create user inactive events:
+
+1. Go to **Studio** > **Event** > **User inactivity events** > **+ Add event**.
+
+   ![](https://i.imgur.com/1Tie3If.png)
+
+2. In **Event name**, provide a name to that event.
+
+   <img src="https://i.imgur.com/6osVbAp.png" alt="drawing" width="50%"/>
+
+3. In **Event description**, describe that event.
+4. In **Event delay**, type the inactive time in minutes/seconds.
+5. Activate **Activate for specific steps** to activate this event for a certain step in a flow.
+6. Activate **Handle event with message** to display a message when a user has been inactive.
+7. Enable **Show previous prompt** to nudge the user to provide answer to the question.
+8. Click **Create event**.
+
+###  Schedule events
+
+Schedule events are used to define the exact timing at which a workflow of your choice need to be triggered. Schedule events work only for flows that have been created as a workflow. To know about workflows in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#workflow).
+
+By setting up Schedule events, you can determine when certain actions or processes within your system should be executed, providing better control and automation over your workflows.
+
+#### To schedule an event:
+
+1. Go to **Schedule events** > **+Add Event**
+
+   ![](https://i.imgur.com/Dp1g6rN.png)
+
+2. In **Event name**, enter the name of the event.
 
 
+   <img src="https://i.imgur.com/Thn8N4W.png" alt="drawing" width="50%"/>
 
-Sometimes, when a user is asked for an input, we might not get a response and would like to nudge them to share a response, otherwise the bot flow cannot move forward.
+3. In **Event description**, describe that event.
+4. Choose any option under **Execute event**.
 
-> Example: You have asked user for their email address and they have not shared it. You would like to ask the user if they're still available by their device or have they dropped off.
-
-On the *User inactivity* tab, you can create events that handle situations when no sign of input is received from the user after a specified period.
-
-#### Use-cases
-
-We treat a user as inactive when a user does not respond to a prompt such as -
-
-* Please share your email-ID
-* Please select one of the options (Quick reply/Whatsapp List)
-* What is your name?
-
-If there is no response to such a prompt, we can trigger the *Inactivity event*.
-
-#### Handling inactivity
-
-We can handle inactivity in different ways depending on the conversational design and tone in which the flow moves forward in. A few examples are -
-
-* Sending a message asking whether the user is still active.
-* Sending the above message followed by repeating the input requested for.
-* Triggering a whole new flow for inactivity.
-
-
-#### Handling inactivity in lead generation
-
-This is a [lead generation template](https://cloud.yellow.ai/marketplace/d18654cb9537eeaf11c7511aff8f9bfe) that's available in the **Marketplace**![](https://i.imgur.com/RHprZir.png)
-
-Take the following inputs from the user -
-* Email-id
-* Product of interest
-
-Then, insert the data into a table considering as a lead. 
-
-Here, we wouldn't want the user to drop off just because they haven't entered their email ID. So, if we see the user is inactive for more than 5 minutes, we can ask for his email ID once again through chat.
-
-Event | Description
------- | -----------
-send-delayed-message-for-session | To transfer to the agent after 5 mins of inactivity
-
-
-#### Create inactivity event
-
-All user inactivity events have to be created in the same way.
-
-1. On the Studio page, go to **Event** > **User inactivty events**.
-2. Click **Add event**.
-
-![](https://i.imgur.com/bumxETE.png)
-
-
-2. Click **Add event** and configure the event as explained in the following table.
-
-<img src="https://i.imgur.com/qGY1t2n.png" width="300"/>
-
-   Enter the event name and description. In **Event delay**, choose the inactive period (hours/minutes) and enter the value in the respective box. For example, if you set 5 minutes, a user is considered as inactive if the users does not respond to the prompt for five minutes.
-
-   ![](https://i.imgur.com/wqZPD1E.png)
-
-
-3. Handle event with message.
-   There are three different ways to set up the bot response when a user is inactive -
-
-   1. Set up a nudge as a message
-   2. Set up the nudge followed by question they dropped off at.
-
-   ![](https://i.imgur.com/Ko3xkH0.jpg)
-
-
-<img src="https://i.imgur.com/erG3UqL.png" width="300"/>
-
-4. Trigger a different flow to handle inactivity
-
-![](https://i.imgur.com/BrzIHis.png)
-
-5. Activate event for specific steps in a specific flow.
-If you are observing consistent drop offs at a particular step, you can set up a unique event exclusively for that step.
-
-> Example: Handle inactivity for email in a flow called 'moreinfo'.
-> <img src="https://i.imgur.com/bf4My69.png" width="250"/>
-
-
-This will trigger the event exclusively for the email step and won't be applicable globally.
-
+| Fields      | Descriptions                                                                                                                                                                                                                                                       |
+|-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Once        | Execute the event once on a specific date and time.                                                                                                                                                                                                                |
+| Recurring   | Set regular event occurrences with options like Hourly, Daily, Weekly, or Monthly intervals. Customize timing based on Minutes, Time, Date, or Day. Choose Timezone and End date for concluding recurring events.                                                    |
+| Advanced    | Use cron expressions for flexible scheduling of complex scenarios. Cron expressions consist of six or seven subexpressions (fields) defining various schedule aspects. This option offers greater control over event timing and execution. |
 
 
 :::note
-If there are any specific use-cases around inactivity that you'd like to implement, post it in our [Community](https://community.yellow.ai/). Someone from the team will reach out to you.
+It is advisable to use the Advanced option solely for intricate use cases that cannot be accommodated through Once or Recurring. Familiarity with [Cron expressions](https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.html) is essential when utilizing this feature.
 :::
 
+5. In **Date** and **Timezone**, choose the date and timezone in which the event should be carried out.
+6. Click **Create event**.
 
 
-
-### 6. <a name="sch-1"></a> Schedule events
-
-Use Schedule events to create events that define the time at which specific workflows of your choice need to be triggered.
-
-:::note
-Schedule event appears on the **Start node** of a flow only if that flow is a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#-22-workflow---a-variant-of-flow).
-:::
-
-To schedule events, follow these steps -
-
-1. Go to **Events** > **Schedule events**. 
-2. Click **+Add event**. 
-3. Enter the **Event Name** and **Description**. 
-<img src="https://i.imgur.com/rGu0zpy.png" width="300"/>
-
-4. In **Execute Event**, select the frequency of schedule
-
-    * **Once**: Select to run the event only once at a particular date and time. 
-    <img src="https://i.imgur.com/xaz0Uaf.png" width="350"/>
-
-    * **Recurring**: Select if the event is recurring, *Hourly*, *Daily*, *Weekly*, or *Monthly*. Set when to run according to the chosen options (Minutes/ Time/ Date/ Day). Choose your preferred **Timezone**, and the **End date** (when the recurring events must end) accordingly. 
-    <img src="https://i.imgur.com/Dadx3wV.png" width="350"/>
-
-
-
-   * **Advanced**: This gives you the flexibility to use corn expressions to handle complex cases. A cron expression is a string consisting of six or seven subexpressions (fields) that describe each information of the schedule.
-   
-   It is recommended to use the Advanced option only if your use case is complex which cannot be configured through Once or Recurring. Ensure that you are familiar with Cron expression to use it.
- 
-   [Know more about corn expressions with examples](https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.htm)
-
-   
 :::note
 By default, a scheduled event is in activate state. You can deactivate, edit, or delete the event by using the more options icon.
-![](https://i.imgur.com/gAjgQEw.png)
+    ![](https://i.imgur.com/gAjgQEw.png)
 :::
 
 
+### User 360 events (System events)
 
-### 7. User 360 events (System events)
+These are sytem events that helps in triggering flows or perform actions on user profile related activities - when a user is created, user details are updated, and user profile is deleted.
 
-These are sytem events that helps in triggering flows or perform actions on user profile related activities - when a user is created, user details are updates, and user profile is deleted.
-
-The following are some real-time use cases that you can solve with these events - 
+The following are some real-time use cases that you can solve with these events:
 
 * Send onboarding campaigns when a new user is created
 * Send message when a user information is updated or deleted.
@@ -350,24 +230,17 @@ USER_CREATE | When a user record is created in (CDP) DB through any of the follo
 USER_UPDATE | When a user record is updated in (CDP) DB through the following operations:<br/> - Single User Updation in UI<br/> - User Updation through Builder <br/> - User Updation through API<br/> - User Updation through CSV Import | **Setting an unset field**:<br/> {<br/> "id": "5IjS7mCLBEWehufVSa3Jj",<br/> "botId": "x1659503658437",<br/> "userId": "x1659503658437_jolly@example.com",<br/>"event": "USER_UPDATE",<br/>"source": "SYSTEM",<br/>"payload": {<br/>"newPayload": {<br/>"city": "Bengaluru",<br/> "country": "IN",<br/>"lastName": "Harsha",<br/>"profileComplete": "35.29"<br/>},<br/>"oldPayload": {<br/>"city": null,<br/>"country": null,<br/>"lastName": null,<br/>"profileComplete": "17.65"<br/> },<br/> "timestamp": 1666352773812,<br/>"userId": "jolly@example.com"<br/> },<br/>"createdAt": "2022-10-21T11:46:15.000Z",<br/>"updatedAt": "2022-10-21T11:46:15.000Z",<br/>  "deletedAt": null<br/> } <br/> **Updating an already set field**: <br/>{<br/> "id": "O0-AanNYjvHzWB-l62tKM",{<br/> "botId": "x1659503658437",{<br/>  "userId": "x1659503658437_jolly@example.com",{<br/> "event": "USER_UPDATE",{<br/> "source": "SYSTEM",{<br/> "payload": {{<br/> "newPayload": {{<br/> "city": "Mysore"{<br/> },{<br/> "oldPayload": {{<br/> "city": "Bengaluru"{<br/> },{<br/> "timestamp": 1666353518569,{<br/> "userId": "jolly@example.com"{<br/> },{<br/> "createdAt": "2022-10-21T11:58:40.000Z",{<br/> "updatedAt": "2022-10-21T11:58:40.000Z",{<br/> "deletedAt": null{<br/> }
 USER_DELETE | When a user record is updated in (CDP) DB through any of the following operations: <br/> - Single User Updation in UI<br/> - Bulk User Deletion from UI<br/> - User Deletion during MERGE<br/> - User Deletion through API | {<br/>    "user": {<br/>        "firstName": "kumar",    <br/>        "userName": "sasi",<br/>        "userId": "10"<br/>    },<br/>    "userId": "10",<br/>    "timestamp": 1657713515000<br/>  }
 
+### Custom events
 
+In addition to the standard events available, you have the flexibility to create custom events that allow you to perform various actions and activities not listed on th events page.
 
+To create a custom event, follow these steps:
 
+1. Go to **Studio** > **Event** **Custom events** > **+Add Event**.
 
-### <a name="cust-1"></a> 8. Custom events
+   ![](https://i.imgur.com/yz0DL7n.png)
 
-Besides the standard events that we have, you can also create custom events to perform actions any other activities that are not listed on this page. 
-
-You can create custom events through API or builder nodes. However, the event details are captured only when the event is active.
-
-* When this event triggers via. API, the event is recorded and sent to the bot only when the event is active.
-* When the event triggers via. Builder nodes, the event is recorded only if the event is active. The event originates from the executor services.
-* UserId is required to pass data.
-
-To create a custom event, follow these steps -
-
-1. In the **Event** tab, click **Custom events** > **+Add Event**. 
-2. Add **Event name** and **Description**. 
+3. Add **Event name** and **Event description**. 
 
    <img src="https://i.imgur.com/N3hkCdN.png" width="300"/>
 
@@ -378,6 +251,41 @@ To create a custom event, follow these steps -
 2. Once a custom event is created, you can activate, deactivate, edit or delete a custom event. 
 :::
 
+### Whatsapp events
+
+Whatsapp events refer to the events related to Whatsapp.
 
 
 
+| Event | Description | 
+| -------- | -------- | 
+| whatsapp-product-query | When a user enquires about a product on whatsapp|
+|whatsapp-cart | When a user adds a product to the cart on Whatsapp|
+
+## Activate events
+
+For the bot to perform certain actions when an event occurs, the event needs to be activated. To activate an event and use it in your flow,
+
+1. Go to **Event** and click any module (except **Schedule**, **User 360**, **Custom** and **User events**, refer the docs above to create those events)
+2. Click more and click **Activate** on the respective event.
+
+   ![](https://i.imgur.com/BHmLQQk.png)
+
+3. Go to a flow and include that event in the Start node and [build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) to carry out the action when that event occurs.
+
+   ![](https://i.imgur.com/JrzUEOo.png)
+
+## Deactivate/Delete events
+
+Deactivate will deactivate an event and delete will remove that event from the platform.
+
+:::info
+You cannot delete standard events, only custom events can be deleted
+:::
+
+To deactivate/delete an event,
+
+1. Go to **Event** > click any module.
+2. Click more and click **Deactivate** or **Delete** on the respective event.
+
+   ![](https://i.imgur.com/bnfCMIs.png)
