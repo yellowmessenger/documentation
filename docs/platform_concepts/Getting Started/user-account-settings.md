@@ -1,6 +1,6 @@
 ---
 title: Manage account settings
-sidebar_label: Manage account settings
+sidebar_label: Account settings
 ---
 
 
@@ -8,7 +8,7 @@ After logging in successfully, you can manage various aspects of your account se
 
 
 
-### View profile information
+## View profile information
 
 1. After logging in, click on **User account** in the top right corner of the Overview page.
     <img src="https://i.imgur.com/5fo0P9x.png" alt="drawing" width="100%"/>
@@ -17,7 +17,7 @@ After logging in successfully, you can manage various aspects of your account se
 
 ----
 
-### Change account password 
+## Change account password 
 
 To reset your password: 
 
@@ -34,7 +34,7 @@ To reset your password:
 
 ----
 
-### Change your platform language
+## Change platform language
 
 By default, the platform language is English. To change the language:
 1. Click on **Change language** in the account settings.
@@ -47,7 +47,7 @@ By default, the platform language is English. To change the language:
 
 -----
 
-### View account activity 
+## View account activity 
 
 To see your account activity:
 1. Click on **Profile** > **Sessions** from the User account drop-down.
@@ -60,7 +60,7 @@ In the Inbox module, agents can handle customer queries and respond through eith
 
 ***
 
-### View audit log 
+## View audit log 
 
 To keep track of all the changes made in the bot, you can access the Audit Log feature. Follow these steps:
 
@@ -74,7 +74,7 @@ To keep track of all the changes made in the bot, you can access the Audit Log f
 
 ----
 
-### View your bot subscriptions
+## View bot subscriptions
 
 :::note
 To add a new subscription, contact the account manager.
@@ -92,49 +92,7 @@ To view an existing subscription:
 
 ***
 
-### Accept bot invite
-
-To accept or reject bot invites:
-1. Click on **Bot Invites** from the User account drop-down.
-2. Accepting a bot invite allows you to contribute to the organization by building an effective bot quickly and easily.
-
-<img src="https://i.imgur.com/7NNIq5a.png" alt="drawing" width="100%"/>
-
-
-### View bot invites
-
-In the View bot invites section, you can easily access and manage pending bot invites sent by other team members. Follow these steps:
-
-- You will see a list of pending bot invites, and you can choose to either **Accept** the invitation to gain access to the bot or **Decline** it if you wish to decline the invitation.
-
-:::note
-Your own bots are not visible in this section.
-:::
-
-- You will also receive notifications regarding bot invites, making it convenient for you to respond promptly.
-    ![](https://i.imgur.com/HgS5gtv.png)
-- In this section, you can explore and access different bots that belong to the Yellow.ai organization. You can search for specific bots using their bot Id, name, or sub Id. If you need access to a bot created by other members of the organization, you can send a request. The super admin will review the request and provide access to the bot if approved.
-    ![](https://i.imgur.com/Pq5woJs.png)
-
-:::info
-For detailed instructions on how to send and receive bot invites, refer to the [add bot collaborators documentation](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
-:::
-
-***
-
-### Approve published bots
-
-1. Check for pending approvals of published bots under **Bot publish approvals** from the User account drop-down.
-    <img src="https://i.imgur.com/hstIkXS.png" alt="drawing" width="100%"/>
-2. **Accept** or **decline** approval requests for publishing bots in different environments.
-    <img src="https://hackmd.io/_uploads/BynRJywc2.png" alt="drawing" width="80%"/>
-
-**Review request email:**
-<img src="https://i.imgur.com/wuZvyob.png" alt="drawing" width="60%"/>
-
-***
-
-### Download pre-built templates 
+## Download pre-built templates 
 
 Suppose you have utilized a pre-built bot template from the Marketplace to create your bot according to your specific use case. If you wish to publish the bot and retain a copy of this template, you can easily download it and view all the relevant details in this section.
 

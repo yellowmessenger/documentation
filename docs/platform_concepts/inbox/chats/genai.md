@@ -10,7 +10,7 @@ Generative AI features are gated, they are not available for all the freemium cu
 The **Inbox Live Chat** screen provides agents with powerful generative AI features that can improve their customer service skills. These features include live chat summarization, the ability to modify message tone, and AI-powered suggestions for conversation enhancement. With these tools at their disposal, agents can offer more efficient and personalized support to customers, leading to higher satisfaction rates and better business outcomes.
 
 
-## 1. Summarize chat conversation 
+## Summarize chat conversation 
 
 The **Summarize chat** AI feature provides a summary of the entire conversation between a customer and a bot or agent. This summary can be used to analyze the quality of support, customer satisfaction, trends, and more.
 
@@ -28,7 +28,7 @@ To access this feature, click on the **AI collaborator icon** and select **Summa
 
 ----
 
-## 2. Change the tone of a typed message
+## Change the tone of a typed message
 
 The **Tone Change** AI feature assists inbox agents in maintaining a professional and courteous tone while responding to customers. Here's how to use it:
 1. Type the desired message.
@@ -40,9 +40,24 @@ The **Tone Change** AI feature assists inbox agents in maintaining a professiona
 
 --- 
 
-## 3. AI Suggestions for conversation improvement
+## AI Suggestions for conversation improvement
 
-Coming soon! 
+The **Reply suggestion** feature is designed to support inbox agents in their customer interactions by providing helpful suggestions for replies. Its main goal is to help agents maintain a low response time.
+
+By combining predictive text suggestions with easy access to knowledge sources, the feature helps agents maintain high-quality customer support without extensive training or reliance on canned responses. This leads to enhanced customer satisfaction and builds stronger relationships between the company and its customers.
+
+![](https://hackmd.io/_uploads/H15rOUC5n.png)
+
+Here's how the feature works:
+
+1. **Prediction of next possible responses**: AI Assist utilizes advanced language models (LLMs) and Generative AI to analyze the customer's input and predict potential responses that the agent can send. Based on the context of the conversation and the customer's query, the system generates **three** best suggestions for the agent to consider.
+2. **Simplified reply process**: Instead of typing out the entire response, agents can simply choose from the three suggested replies. This streamlines the process and saves valuable time, especially during high-volume periods or when dealing with numerous inquiries.
+3. **Full visibility of suggestions**: To ensure agents have complete control and understanding of the responses, they can hover over each suggestion to view the entire text on the reply screen. This allows agents to evaluate each option thoroughly before making a decision.
+4. **Access to various knowledge sources**: There may be situations where agents need to refer to external knowledge sources, such as knowledge bases, documents, or past interactions. With a single click of a button (AI Assist), agents can access information from multiple sources, including:
+    - **Website URLs added in Studio's Knowledge Base**: Agents can fetch relevant information from the company's knowledge base to provide accurate responses.
+    - **Manually uploaded documents in Studio's Doc Cog**: Agents can access important documents and resources to address customer queries effectively.
+    - **Knowledge Base articles created in Inbox**: Agents can use internal knowledge base articles to find resolutions quickly.
+    - **Records of past live chats and email tickets in Inbox**: Agents can refer to previous interactions to ensure consistency and provide informed responses.
 
 
 > [Click here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#--1-chat-conversation-screen) to revisit other options on the chat screen. 

@@ -1,6 +1,6 @@
 ---
 title: Setup your yellow.ai account and sign in
-sidebar_label: Set up & sign in to yellow.ai
+sidebar_label: Set up & sign in
 ---
 
 ## Signup for yellow.ai 
