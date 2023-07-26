@@ -1,17 +1,12 @@
 ---
-title: Keyboard shortcuts 
-sidebar_label: Know keyboard shortcuts
+title: Simplify tasks with keyboard shortcuts
+sidebar_label: Keyboard shortcuts
 ---
 
-We have introduced keyboard shortcuts to make it easy for you to access key options and increase the productivity of repetitive tasks.
+A range of keyboard shortcuts are designed to enhance your experience by streamlining access to key options and boosting productivity for repetitive tasks. The table illustrates where each specific shortcut key can be utilized:
+* **Global**: You can use these keyboard shortcuts from any screen within https://cloud.yellow.ai.
+* **Studio**: These keyboard shortcuts are exclusive to the Studio module.
 
-:::note
-The scope in the table says from where can you use that particular shortcut key.
-* **Global**: You can use these keyboard shortcuts from any screen of https://cloud.yellow.ai
-* **Studio**: You can use these keyboard shortcuts only in the Studio module.
-:::
-
-The following table lists the keyboard shortcuts for our platform:
 
 Action | Shortcut Key | Accessibility
 ------ | -------- | -----------
@@ -31,3 +26,5 @@ Go to Integrations module | g + t| Global
 Switch to Development environment | m + d| Global
 Switch to Production environment | m + p| Global
 Switch to Sandbox environment | m + x| Global
+
+

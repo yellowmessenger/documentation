@@ -141,28 +141,37 @@ module.exports = {
   // Get started/ Overview starts here  
     {
       type: "category",
-      label: "Get Started",
+      label: "Get started with yellow.ai",
       link: {type: 'doc', id: 'platform_concepts/getting-started'},
       collapsed: true,
       items: [
       "platform_concepts/Getting Started/resources",
-      "platform_concepts/Getting Started/account-setup",
-      "platform_concepts/Getting Started/upgrade",  
+
+      {
+        type: "category",
+        label: "Manage your account",
+        collapsed: true,
+        items: [
+          "platform_concepts/Getting Started/account-setup",
+          "platform_concepts/Getting Started/upgrade",  
+          "platform_concepts/Getting Started/user-account-settings", 
+          "platform_concepts/Getting Started/add-bot-collaborators",
+          "platform_concepts/Getting Started/modify-bot-configuration",
+
+        ],
+      },
+
     {
       type: "category",
-      label: "Introduction",
+      label: "Understand the platform",
       collapsed: true,
       items: [
-        "platform_concepts/Getting Started/user-account-settings", 
-        "platform_concepts/Getting Started/add-bot-collaborators",
         "platform_concepts/Getting Started/platform-offerings",
-        "platform_concepts/Getting Started/keyboard-shortcuts",
         "platform_concepts/Getting Started/api-keys",
-        "platform_concepts/Getting Started/modify-bot-configuration",
+        "platform_concepts/Getting Started/keyboard-shortcuts",
       ],
     },
-      "platform_concepts/Getting Started/create-a-bot",
-
+    "platform_concepts/Getting Started/create-a-bot",
 
       ]
     },

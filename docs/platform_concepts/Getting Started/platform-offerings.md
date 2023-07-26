@@ -1,6 +1,6 @@
 ---
 title: Get started with the platform 
-sidebar_label: Understand UI elements
+sidebar_label: UI elements
 ---
 
 You will see the platform **Overview** page when you sign in to [Yellow.ai platform](https://cloud.yellow.ai). You can find all the useful links required to access platform offerings and get self-help. 
