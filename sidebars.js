@@ -1011,7 +1011,6 @@ module.exports = {
           link: {type: 'doc', id: 'platform_concepts/channelConfiguration/voice-overview'},
           collapsed: true,
           items: [
-            "platform_concepts/channelConfiguration/google-assistant",
             "platform_concepts/channelConfiguration/ivr-bots",
             "platform_concepts/channelConfiguration/Ivr",
             "platform_concepts/channelConfiguration/alexa",

@@ -369,7 +369,7 @@ sidebar_label: Channels FAQs
 </details>
 
 <details>
- <summary>What is not possible with GBM chatbot chatbot today?</summary>
+ <summary>What is not possible with GBM chatbot today?</summary>
  <div>
   <br/>
   <div>- The GBM chatbot is not supported in desktop/laptop view but only on mobile phones.<br/> - Videos cannot be embedded. Any type of custom e.g. Slider, dropdown is not available.<br/> - The Thumbview/preview link is not possible through GBM chatbot.</div>

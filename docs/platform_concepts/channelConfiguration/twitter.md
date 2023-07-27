@@ -171,6 +171,13 @@ To test your bot on Twitter, follow these steps:
 
 ## 5. Twitter pricing plans
 
+##### **Prerequisites**
+
+You need to consider the below prerequisites to get the paid Twitter plan:
+
+* [create a Twitter account](#1-create-a-twitter-account)
+* Sign up for [Twitter's Developer portal](#2-setup-twitter-channel-using-developer-portal).
+
 The following are the pricing plans for Twitter:
 
 1. **Free Developer App**: This plan does not allow you to access the Direct Message (DM) lookup (get messages) or manage API (post messages).
