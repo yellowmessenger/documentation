@@ -2,24 +2,7 @@
 sidebar_label: Create Flow campaign manually
 title: Create Flow campaign manually
 ---
-Yellow.ai's Flow Campaign is a  conversational marketing tool  with an advanced campaign builder. It helps marketers deliver a comprehensive customer experience across channels and engage customers at every stage of their journey.
 
-A Flow Campaign consists of  user journeys  which you can use to strategically target customers across channels. You can quickly develop flows using the no-code builder according to your business needs. This also allows you to track  customer activities  across platforms and analyze the data to make decisions.
-
-
-  
-#### Use case
-
-This sample use case shows how to effectively engage users by nudging them at different stages in a flow using the Flow campaign.
-
-Consider a cart abandonment example in an e-commerce store.
-
-1. Send a reminder message through a Push notification to proceed with the purchase after one day.
-2. For users who have read the push notification, send an exclusive 10% off coupon on WhatsApp.
-3. If the user has not responded to the message, resend the coupon over WhatsApp after 48 hours.
-4. Wait a couple more days and end the flow.
- 
- 
 The campaign flow builder consists of five categories of nodes:
 
 * Entry point
@@ -27,12 +10,6 @@ The campaign flow builder consists of five categories of nodes:
 * Flow control
 * Message 
 * Action
-
-See how to configure each node in the following sections.
-
-***
-
-## Create flow campaign
 
 To create a flow, follow these steps:
 
@@ -45,6 +22,9 @@ To create a flow, follow these steps:
   
   ![](https://i.imgur.com/wrBLa4B.png)
 
+:::note
+You can also reuse an existing flow using More options > **Duplicate**.
+:::
 
 3. Click on the Edit icon of the Untitled workflow (the default name) and enter the campaign name.
 
@@ -365,6 +345,24 @@ This section helps you configure other actions in the campaign's flow, such as a
 
 Use this to call any internal or external API in between flows. For more information about APIs, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
 
+### Update user property
+
+This helps you effortlessly update user properties during Flow campaign interactions. With the ability to update user details like name, email, or other relevant information, you can create personalized experiences for each user and enrich user data.
+
+:::note
+
+You can only update custom user properties and the tags property. However, modifying Standard user properties, which are available by default, is restricted to avoid any unintended changes that might impact the user experience in a Flow campaign. 
+:::
+
+To update a user property in a flow campaign:
+
+1. In **Action**, select **Update user property** and drag it to the desired position in the flow.
+
+  <center> <img src="https://i.imgur.com/FUujXCR.png" width="70%"/></center>
+
+2. In **Property name**, choose the custom property that you want to update.
+3. In **New value**, enter a new value that you want to assign to the selected property.
+
 ***
 
 ## Add goal
@@ -384,3 +382,4 @@ To add a goal:
    i. Choose *Duration* to set the validity of the goal in Hours, Days or Weeks and enter your preferred value in the respective text box.
    
    ii. Choose a *Timestamp* to end the validity on a specific date and time. Select your preferred date and time using the calendar box.
+
