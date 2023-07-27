@@ -824,11 +824,13 @@ module.exports = {
     {
           type: "category",
           label: "Flow campaigns",
-         /*   link: {type: 'doc', id: 'platform_concepts/engagement/workflow-intro'}, */
+         link: {type: 'doc', id: 'platform_concepts/engagement/flow-campaigns-intro'},
           collapsed: true,
           items: [
             "platform_concepts/engagement/flows_campaign",    
              "platform_concepts/engagement/flow-ai",
+             "platform_concepts/engagement/reuse-flow-campaigns",
+             "platform_concepts/engagement/manage-flow-campaign"
       ],
     },
     
