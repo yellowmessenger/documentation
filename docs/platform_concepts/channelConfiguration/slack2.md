@@ -5,6 +5,30 @@ sidebar_label: Slack
 
 Slack is a collaboration platform that is used by organizations to facilitate communication among team members. The team members can have conversations, share files, images, video, audio, and schedule meetings. It also provides a secure, collaborative environment for teams to work together by using chat, video meetings, file storage, and application integration.
 
+### Slack Context Management
+
+Slack provides threaded messaging. It is important to understand how Yellow.ai platform handles context in channel, threads, and DM.
+
+**Channel**
+
+1. Bot will always reply in the respective thread.
+
+2. Each thread has an independent context, if multiple threads are activated by same or different person → bot will maintain individual context or flow for each thread. Same flow can be run in parallel on different threads.
+
+3. User profiles are preserved across channels, threads, and DMs, ensuring that the sender is always the same.
+
+  ![](https://i.imgur.com/lh44QmC.png)
+
+**DM**
+
+1. Bot will always reply in 1-1 a conversation (without threads formation).
+
+2. Bot ignores thread formation for a better conversational experience.
+
+3. User profiles are preserved across channels, threads, and DMs, ensuring that the sender is always the same.
+
+  ![](https://i.imgur.com/YXkKVHi.png)
+
 ### Supported slack features
 
 Yellow.ai supports the following slack features: 
@@ -17,15 +41,6 @@ Yellow.ai supports the following slack features:
 | Slash Commands/Shortcuts|  yes    |
 | Ephemeral Message|         no     |
 | V2 Notification API|       no     |
-
-In this article, you will learn:
-
-* [How to create an app on Slack](#2-create-an-app)
-* [How to configure a workspace](#3-configure-singlemulti-workspace)
-* [How to add Slack to Direct message/Channel](#4-adding-slack-app-to-direct-messagechannel)
-* [How to test the bot on Slack](#test)
-* [Slack APIs integration](#5-api)
-* [Slack features supported by yellow.ai](#6-supported-slack-features)
 
 ## Create an app in Slack
 
@@ -65,26 +80,25 @@ To add a new redirect URL, follow these steps:
 
 - **Required Bot Token Scopes:**
 
+  - [channels:history](https://api.slack.com/scopes/channels:history)- View messages and other content in public channels to which the app has been added.
+  - [app_mentions:read](https://api.slack.com/scopes/app_mentions:read)- View messages that directly mention the @Yellow test bot in conversations that the app is in.
+  - [chat:write ](https://api.slack.com/scopes/chat:write)- Send messages as @yourBot.
+  - [commands](https://api.slack.com/scopes/commands)-  Add shortcuts and/or slash commands that people can use.
+  - [groups:history](https://api.slack.com/scopes/groups:history)- View messages and other content in private channels to which the app has been added.
+  - [groups:read](https://api.slack.com/scopes/groups:read)- View basic information about private channels to which the app has been added.
+  - [im:history](https://api.slack.com/scopes/im:history)- View messages and other content in direct messages to which the app has been added.
+  - [im:read](https://api.slack.com/scopes/im:read)- View basic information about direct messages that App has been added to.
+  - [im:write](https://api.slack.com/scopes/im:write)- Start direct messages with people.
+  - [incoming-webhook](https://api.slack.com/scopes/incoming-webhook)- Post messages to specific channels in Slack.
+  - [mpim:history](https://api.slack.com/scopes/mpim:history)- View messages and other content in group direct messages that the app has been added to.
+  - [mpim:read](https://api.slack.com/scopes/mpim:read)- View basic information about group direct messages that the app has been added to.
+  - [team:read](https://api.slack.com/scopes/team:read)- View the name, email domain, and icon for workspaces the app is connected to.
+  - [users:read](https://api.slack.com/scopes/users:read)- View people in a Slack workspace.
+  - [links:write](https://api.slack.com/scopes/links:write)- Show previews of URLs in messages.
+  - [channels:read](https://api.slack.com/scopes/channels:read)- View basic information about public channels in a workspace.
+  - [chat:write.public](https://api.slack.com/scopes/chat:write.public)- Send messages to channels that the @Yellow test bot is not a member of.
 
-    - [channels:history](https://api.slack.com/scopes/channels:history)- View messages and other content in public channels to which the app has been added.
-    - [app_mentions:read](https://api.slack.com/scopes/app_mentions:read)- View messages that directly mention the @Yellow test bot in conversations that the app is in.
-    - [chat:write ](https://api.slack.com/scopes/chat:write)- Send messages as @yourBot.
-    - [commands](https://api.slack.com/scopes/commands)-  Add shortcuts and/or slash commands that people can use.
-    - [groups:history](https://api.slack.com/scopes/groups:history)- View messages and other content in private channels to which the app has been added.
-    - [groups:read](https://api.slack.com/scopes/groups:read)- View basic information about private channels to which the app has been added.
-    - [im:history](https://api.slack.com/scopes/im:history)- View messages and other content in direct messages to which the app has been added.
-    - [im:read](https://api.slack.com/scopes/im:read)- View basic information about direct messages that App has been added to.
-    - [im:write](https://api.slack.com/scopes/im:write)- Start direct messages with people.
-    - [incoming-webhook](https://api.slack.com/scopes/incoming-webhook)- Post messages to specific channels in Slack.
-    - [mpim:history](https://api.slack.com/scopes/mpim:history)- View messages and other content in group direct messages that the app has been added to.
-    - [mpim:read](https://api.slack.com/scopes/mpim:read)- View basic information about group direct messages that the app has been added to.
-    - [team:read](https://api.slack.com/scopes/team:read)- View the name, email domain, and icon for workspaces the app is connected to.
-    - [users:read](https://api.slack.com/scopes/users:read)- View people in a Slack workspace.
-    - [links:write](https://api.slack.com/scopes/links:write)- Show previews of URLs in messages.
-    - [channels:read](https://api.slack.com/scopes/channels:read)- View basic information about public channels in a workspace.
-    - [chat:write.public](https://api.slack.com/scopes/chat:write.public)- Send messages to channels that the @Yellow test bot is not a member of.
-
-  ![](https://i.imgur.com/zlmk4ai.png)
+  <img src="https://i.imgur.com/zlmk4ai.png" alt="drawing" width="70%"/>
 
   
 ### Step 2: Subscribe to bot events 
@@ -102,7 +116,7 @@ After adding the redirect URL, you need to subscribe your app to bot events. Sla
 
 3. In *Event subscription* section, expand **Subscribe to bot events** and click **Add Bot User Event** to add the scope according to your bot. For more details, click [common events](https://api.slack.com/events).
 
-    ![](https://i.imgur.com/cQYL1pr.png)
+   <img src="https://i.imgur.com/cQYL1pr.png" alt="drawing" width="70%"/>
 
 The following are required bot events:
 
@@ -266,11 +280,11 @@ To add the app to Slack workspace, follow these steps:
 
      ![](https://i.imgur.com/gyzBJXj.png)
 
-* With this, your app will be added to the Slack workspace under the **Apps** section.
+* Under the **Apps** section, the app will be added.
 
    <img src="https://i.imgur.com/ypcDOa0.png)" alt="drawing" width="40%"/>
 
-### Add app to Channel
+### Add an app to Channel
 
 To an Add app to the Channel, follow these steps: 
 
