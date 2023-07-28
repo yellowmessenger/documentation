@@ -116,7 +116,7 @@ For more information on how to trigger a flow when a user clicks on a quick repl
 
 When you are executing a WhatsApp campaign, you need to use a template, and if users block or report the number or template, then the quality rating of the template or the number will reduce. If the quality rating of the number is marked as flagged for more than 7 consecutive days, the messaging limit will be reduced to the immediate lower tier. For example, 100000 to 10000 or 10000 to 1000.
 
-To ensure that the quality rating does not become low, click [here](https://developers.facebook.com/docs/whatsapp/messaging-limits/#quality-rating-and-messaging-limits).
+To ensure that the quality rating does not become low, click [here](https://developers.facebook.com/docs/whatsapp/messaging-limits/).
 
 To view the quality rating of the template and phone numbers, follow these steps:
 

@@ -186,14 +186,14 @@ The following are the pricing plans for Twitter:
 
    1. **Direct messages**: There is no limit on the number of direct messages that can be sent from Twitter to Yellow, but there is a limit on how many times you can look up or poll for new messages via the Twitter API. You can do that 5 times in 15 minutes and check for new messages every 3 minutes with this plan.
 
-     ##### **Limitaions**
+     ##### **Limitations**
 
        * Bot or agent can send 5 messages in 15 minutes
        * Bot or agent can send 50 messages in 24 hours
 
    2. **Mentions**: Similar to direct messages, there is no limit on the number of mentioned tweets received at Yellow. There is a limit to how many times you can use the lookup API to fetch new tweets. And there is a limit of 10 request in 15 minutes for this plan, which means you can check for new mentions every 1.5 seconds, approximately.
 
-      ##### **Limitaions**
+      ##### **Limitations**
       
         * A bot or agent can reply or comment 100 messages in the mentioned tweets in 24 hours.
 
@@ -201,14 +201,14 @@ The following are the pricing plans for Twitter:
 
     1. **Direct messages**: There is no limit on the number of direct messages that can be sent from Twitter to Yellow, but there is a limit on how many times you can look up or poll for new messages via the Twitter API. You can do that 100 times in 15 minutes and check for new messages every 10 seconds with this plan.
 
-     ##### **Limitaions**
+     ##### **Limitations**
 
        * Bot or agent can send 200 messages in 15 minutes
        * Bot or agent can send 1000 messages in 24 hours
 
    2. **Mentions**: Similar to direct messages, there is no limit on the number of mention tweets received at Yellow. There will be a limit on how many times you can use the lookup API to fetch new tweets. There is a limit of 300 requests in 15 minutes for this plan, which means we can check for new mentions every 3 to 4 seconds.
 
-       ##### **Limitaions**
+       ##### **Limitations**
       
           * A bot or agent can reply or comment 100 messages in the mentioned tweets in 15 mins.
           * A bot or agent can reply or comment 10000 messages in the mentioned tweets in 24 hours.

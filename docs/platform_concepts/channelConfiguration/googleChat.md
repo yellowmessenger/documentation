@@ -7,7 +7,7 @@ Google Chat is a messaging platform that allows you to communicate with your use
 
 ## Setup Google chat using Google console developer portal
 
-Login to the [Google console portal](https://developers.google.com) to setup your Google Chat.
+Login to the [Google console portal](https://developers.google.com/) to setup your Google Chat.
 
 To setup Googel chat to your bot, configure the following:
 

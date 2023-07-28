@@ -304,7 +304,7 @@ The three categories tracked for WhatsApp phone numbers are:
 > The WhatsApp consumption is calculated specifically for the WhatsApp channel. 
 
 :::note
-Prior to June 1, 2023, only the main categories of Business-initiated, User-initiated, and Referral conversations were tracked without the subcategories. However, with the [WhatsApp update](https://developers.facebook.com/docs/whatsapp/updates-to-pricing), the subcategories (Authentication, Marketing, Utility, Service, and Referral conversations) are now included in the widget.
+Prior to June 1, 2023, only the main categories of Business-initiated, User-initiated, and Referral conversations were tracked without the subcategories. However, with the [WhatsApp update](https://developers.facebook.com/docs/whatsapp/updates-to-pricing/), the subcategories (Authentication, Marketing, Utility, Service, and Referral conversations) are now included in the widget.
 Here are a few points to note:
 1. If you select a time period before June 1, 2023, you won't see the updated subcategories in the widget.
 2. If your custom date range includes both dates before and after June 1, 2023, the updated categories will be applied to the entire range. The subcategories will be available only for the data generated after June 1, 2023.

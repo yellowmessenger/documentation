@@ -268,7 +268,7 @@ sidebar_label: Channels FAQs
  <summary>What is a message template?</summary>
  <div>
   <br/>
-  <div> Predefined message structure convenient to showcase products, receipts etc. <a href="https://developers.facebook.com/docs/messenger-platform/send-messages/templates">Learn more</a></div>
+  <div> Predefined message structure convenient to showcase products, receipts etc. <a href="https://developers.facebook.com/docs/messenger-platform/send-messages/templates/">Learn more</a></div>
    </div>
 </details>
 

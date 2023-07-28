@@ -84,7 +84,7 @@ Sticky tickets will not go into the queue even if the group queue is turned ON. 
 <details>
 <summary> What is the cost of sending WhatsApp templates? </summary>
 <div>
- Whatsapp charges a per-message fee for all the templates sent outside the 24 hr session based on the number of messages & country you send to. Click <a href= "https://developers.facebook.com/docs/whatsapp/updates-to-pricing"> here </a> to learn more.   
+ Whatsapp charges a per-message fee for all the templates sent outside the 24 hr session based on the number of messages & country you send to. Click <a href= "https://developers.facebook.com/docs/whatsapp/updates-to-pricing/"> here </a> to learn more.   
 </div>
 </details>
 
@@ -115,7 +115,7 @@ There are two reasons why you are not able to see any WhatsApp templates within 
 <details>
 <summary> Why am I not able to see the template message content that I just sent? </summary>
 <div>
-WhatsApp templates created with <a href="https://developers.facebook.com/docs/whatsapp/updates-to-pricing/">hsm</a>  object will not be displayed with the actual content inside Inbox. However templates created with <a href="https://developers.facebook.com/docs/whatsapp/updates-to-pricing"> template </a> object will be displayed inside Inbox. If you are not seeing the actual template content, then the template you sent out is most likely created with hsm object. 
+WhatsApp templates created with <a href="https://developers.facebook.com/docs/whatsapp/updates-to-pricing/">hsm</a>  object will not be displayed with the actual content inside Inbox. However templates created with <a href="https://developers.facebook.com/docs/whatsapp/updates-to-pricing/"> template </a> object will be displayed inside Inbox. If you are not seeing the actual template content, then the template you sent out is most likely created with hsm object. 
 	
 </div>
 </details> 
