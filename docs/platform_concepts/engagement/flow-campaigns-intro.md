@@ -39,7 +39,7 @@ To add your brand details:
 1. On the **Flows** page of the Engage module, click on **Brand settings**.
 
    ![](https://i.imgur.com/Qt6cBOC.png)
-2. In **Describe about brand**,  enter essential details about your brand within 1000 characters.
+2. In **Describe about brand**,  enter essential details about your brand within 1000 characters. For best results, provide as much information as possible.
 
    <center><img src="https://i.imgur.com/BfgFyE7.png" width="60%"/></center>
 
