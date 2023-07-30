@@ -1,75 +1,80 @@
 ---
-title: Modify bot details 
+title: Managing bot configuration
 sidebar_label : Modify bot details 
 keywords : [reset bot, pause bot, modify bot]
 ---
 
-You must provide the details while creating the bot. After creating a bot, you can modify the bot's information using **Configure** option. However, this does not impact the functionality of the bot that you have created. You can also disable a bot response and reset a bot.
+When you create a bot, you need to provide certain details that influence its usage, such as the timezone and customer interactions. These details can be modified at any point without affecting the bot's functionality.
 
-:::note
-You can either pause a bot's response or reset a bot, but you cannot delete a bot.
-:::
+
+## Bot configuration 
+
+To modify your bot's configured information:
+
+1. Log in to your account.
+2. Click on **Configure** at the top right corner. 
+3. You can perform the following actions:
+    * [Change bot information](#1-change-the-bots-information)
+    * [Disable bot response](#2-disable-bot-response)
+    * [Reset a bot](#3-reset-bot)
 
 ![](https://i.imgur.com/JEpBtZe.png)
 
-In this article, you will learn:
+---
 
-* [How to modify bot configuration](#1-change-the-bots-information)
-* [How to disable a bot response](#2-disable-bot-response)
-* [How to reset a bot](#3-reset-bot)
+### Change bot information
 
+You can customize the bot's details according to your business needs. Follow these steps to modify bot details:
 
-## 1. Change the bot's information.
+1. Select the bot you want to modify and click on **Overview** > **Configure**.
+2. You can modify the bot's name, industry, timezone, and description.
+3. Click **Save** to apply the changes.
 
-You can modify the details of the created bot according to your business needs.
-
-**To modify bot details, follow the steps below**:
-
-1. Select the bot that you want to modify and click **Overview** > **Configure**.
-
-2. Modify the bot's name and click **Save**.
-
-   <img src="https://i.imgur.com/c5wMtwI.png" alt="drawing" width="40%"/>
+<img src="https://i.imgur.com/c5wMtwI.png" alt="drawing" width="40%"/>
 
 :::info
-The **Region** can be used for a integrations, voice bots-for phone numbers, and so on.
+The **Region** setting can be used for integrations, voice bots (for phone numbers), and more. Changing the region may impact the bot as it's configured for that specific region.
 :::
 
-3. Your bot settings have been updated successfully.
+----
 
-## 2. Disable bot response
-
-You can disable a bot response when you want to change the configuration, feature, or strategy based on the requirements of your business use case. After disabling a bot response, you can access the same bot to change the functionality and then you can enable the bot response and publish the bot. 
+### Disable bot response
 
 :::note
 - Only super admin and admin have the ability to pause a bot.
-- If you export a bot template to a private Marketplace, it gets published automatically, and you will not be able to pause the bot in between.
-- If you export a bot template to public or training section of the Marketplace, the bot template is submitted for review, and you will not be able to pause a bot.
 :::
 
-**To disable a bot response, you must follow the below steps:**
+You can temporarily disable a bot's response to make changes to its configuration, features, or strategies based on your business requirements. After disabling the bot response, you can make adjustments and then enable the bot response to publish the bot. Follow the below steps:
 
-1. Select the respective bot that you want to disable bot response and click **Overview** > **Configure**.
-
+1. Select the respective bot for which you want to disable the response and click on **Overview** > **Configure**.
 2. To disable the bot response, enable the toggle button.
 
-   <img src="https://i.imgur.com/SFkZlqz.png" alt="drawing" width="40%"/>
-<br/> 
+<img src="https://i.imgur.com/SFkZlqz.png" alt="drawing" width="40%"/>
 
-## 3. Reset bot 
-
-You can reset your bot to delete all past journeys, conversations, and data in your bot.
-
-:::note
-Only super admin and admin have the ability to reset the respective bot.
+:::info 
+**Marketplace dependency**: 
+- If you export a bot template to a **private** Marketplace, it gets published automatically, and you will not be able to pause the bot in between.
+- If you export a bot template to the **public** or training section of the Marketplace, the bot template is submitted for review, and you will not be able to pause the bot.
 :::
 
-**To reset a bot follow the steps below:**
+----
+
+### Reset bot 
+
+:::note
+Only super admin and admin have the ability to reset the bot.
+:::
+
+Resetting a bot allows you to delete all past flows, conversations, and data associated with it. Follow these steps to reset a bot:
+
 
 1. Select the bot that you want to reset and click **Overview** > **Configure**.
-
-2. Click on **Reset bot** to delete all past journeys, conversations, and data of the selected bot.
+2. Click on **Reset bot** to delete all past flows, conversations, and data of the selected bot.
 
    <img src="https://i.imgur.com/aeNlkto.png" alt="drawing" width="40%"/>
 
-3. The selected bot has been successfully reset.
+----
+
+### Delete bot
+
+**You cannot delete a bot**. However, you have the flexibility to either pause the bot's response or reset it as needed.

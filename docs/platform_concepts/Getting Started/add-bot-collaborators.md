@@ -1,6 +1,6 @@
 ---
 title: Bot access management
-sidebar_label: Manage bot access
+sidebar_label: User roles & permissions
 keywords : [access control, bot invite, invite users, send bot invite, share bot access]
 ---
 
@@ -11,7 +11,6 @@ When creating an end-to-end bot flow, there may be instances where certain flows
 - **Collaborators** will have the access level provided by the super admin. If you wish to revoke access, you'll need to remove it separately.
 :::
 
-----
 
 ## Share bot access
 
@@ -57,26 +56,26 @@ To accept or reject a bot access invitation, follow these steps:
     ![](https://i.imgur.com/Jm0geRB.png)
 3. Click on the drop-down to view the list of bots you have access to.
 
-    <img  src="https://i.imgur.com/Gg7cHBz.png"  width="50%"/>
+    <img  src="https://i.imgur.com/Gg7cHBz.png"  width="40%"/>
 
 4. You can also accept/reject a bot invite by clicking on **Bot Invites** from the User account drop-down.
 
     <img src="https://i.imgur.com/7NNIq5a.png" alt="drawing" width="100%"/>
 
+----
 
 ## View bot invites
-
-In the **View bot invites** section, you can easily access and manage pending bot invites sent by other team members. Follow these steps:
-
-- You will see a list of pending bot invites, and you can choose to either **Accept** the invitation to gain access to the bot or **Decline** it if you wish to decline the invitation.
 
 :::note
 Your own bots are not visible in this section.
 :::
 
-- You will also receive notifications regarding bot invites, making it convenient for you to respond promptly.
+In the **View bot invites** section, you can easily access and manage pending bot invites sent by other team members. Follow these steps:
+
+1. You will see a list of pending bot invites, and you can choose to either **Accept** the invitation to gain access to the bot or **Decline** it if you wish to decline the invitation.
+2. You will also receive notifications regarding bot invites, making it convenient for you to respond promptly.
     ![](https://i.imgur.com/HgS5gtv.png)
-- In this section, you can explore and access different bots that belong to the Yellow.ai organization. You can search for specific bots using their bot Id, name, or sub Id. If you need access to a bot created by other members of the organization, you can send a request. The super admin will review the request and provide access to the bot if approved.
+3. In this section, you can explore and access different bots that belong to the Yellow.ai organization. You can search for specific bots using their bot Id, name, or sub Id. If you need access to a bot created by other members of the organization, you can send a request. The super admin will review the request and provide access to the bot if approved.
     ![](https://i.imgur.com/Pq5woJs.png)
 
 ***

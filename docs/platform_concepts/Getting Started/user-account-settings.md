@@ -22,15 +22,15 @@ After logging in successfully, you can manage various aspects of your account se
 To reset your password: 
 
 1. Go to the Password section in the account settings.
-2. Enter your current password under "Old password" and your new password under "New password."
+2. Enter your current password under "Old password" and your new password under "New password".
 3. Confirm the new password by entering it again under "Re-enter new password."
 4. Click Update to save your new password.
 
-    <img src="https://i.imgur.com/iqYpP66.png" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/iqYpP66.png" alt="drawing" width="100%"/>
 
-    :::note
-    The green check mark under **Password must contain** indicates the strength of your password. Use a combination of upper and lower case letters, numbers, and special characters to create a strong password.
-    :::
+:::note
+The green check mark under **Password must contain** indicates the strength of your password. Use a combination of upper and lower case letters, numbers, and special characters to create a strong password.
+:::
 
 ----
 
@@ -53,10 +53,10 @@ To see your account activity:
 1. Click on **Profile** > **Sessions** from the User account drop-down.
 2. You can track all active sessions, including details such as the operating system and browser used, along with the date and time.
 
-<img src="https://i.imgur.com/FTbRfJT.png" alt="drawing" width="100%"/>
-
-**Use case:**
+**Common use case:**       
 In the Inbox module, agents can handle customer queries and respond through either the mobile app or a signed-in device. In such situations, there may be two active sessions running simultaneously, one on the laptop and another on the mobile app. To keep track of all the active sessions of an agent, the platform provides a session tracking feature. This feature allows you to monitor details such as the operating system used, the browser being utilized, and the respective date and time for each session. 
+
+<img src="https://i.imgur.com/FTbRfJT.png" alt="drawing" width="100%"/>
 
 ***
 
@@ -96,12 +96,9 @@ To view an existing subscription:
 
 Suppose you have utilized a pre-built bot template from the Marketplace to create your bot according to your specific use case. If you wish to publish the bot and retain a copy of this template, you can easily download it and view all the relevant details in this section.
 
-- To access this feature, click on **Exports** from the User account drop-down.
-    
+1. To access this feature, click on **Exports** from the User account drop-down.         
     <img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
-
-- If you no longer need a specific template, you have the option to delete it based on your requirements. 
-    
+2. If you no longer need a specific template, you have the option to delete it based on your requirements.      
     <img src="https://i.imgur.com/7reCz7e.png" alt="drawing" width="100%"/>
 
 :::note
