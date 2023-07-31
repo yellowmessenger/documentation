@@ -3,7 +3,7 @@ title: Ultimate AI bot building platform
 sidebar_label: Yellow.ai
 ---
 
-## App.yellow.ai vs Cloud.yellow.ai
+## App vs Cloud
 
 When it comes to building AI bots, Yellow.ai offers two powerful options: **cloud.yellow.ai and app.yellow.ai**.
 - **App.yellow.ai** is our code-based platform, catering to users who prefer a more hands-on approach. It offers a drag-and-drop interface that empowers users with advanced customization options and full control over their bot's behavior. This platform is ideal for developers or businesses with specific coding requirements or the need for highly tailored bot functionalities.

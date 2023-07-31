@@ -36,7 +36,7 @@ Within the platform, you'll find a **Help** section. Here, you can access docume
 
 ![](https://hackmd.io/_uploads/SyUKlMVsh.png)
 
-> :bulb: [Learn more about the available self help options](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/resources). 
+**[Learn more about the available self help options](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/resources) :arrow_right:**
 
 ### Enviornment switcher
 
@@ -44,7 +44,7 @@ The platform provides different environments, allowing you to freely experiment 
 
 <img src="https://i.imgur.com/5oVqs0O.png" alt="drawing" width="100%"/>
 
-> :bulb: [ Learn more about the significance of different environments.](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes)
+**[Learn more about the significance of different environments](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) :arrow_right:**
 
 ### Marketplace 
 
@@ -55,7 +55,7 @@ However, if your use case is not available in the Marketplace, you can use [Stud
 <img src="https://i.imgur.com/vHUDGM5.png" alt="drawing" width="100%"/>
 
 
-> :bulb: [Access a complete guide on Marketplace features and its ready-made templates for common use cases](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro)
+**[Access the guide on Marketplace features and its ready-made templates](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro) :arrow_right:**
 
 
 ### Access control 
@@ -69,7 +69,7 @@ Collaboration is easy with Yellow.ai. Share bot access with team members or cros
 <img src="https://i.imgur.com/6alBjsK.png" alt="drawing" width="100%"/>
 
 
-> :bulb: [Learn about the rules and permissions when adding or accepting a collaborator](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
+**[Learn about the rules and permissions when adding or accepting a collaborator](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators) :arrow_right:**
 
 ### Modify bot configuration 
 
@@ -77,7 +77,7 @@ While providing basic bot details during sign-up, you have the flexibility to mo
 
 <img src="https://i.imgur.com/QMg5bVq.png" alt="drawing" width="40%"/>
 
-> :bulb: [Learn more about what can be configured and modified.](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration)
+**[Learn more about what can be configured and modified](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration) :arrow_right:**
 
 ### Notifications
 
@@ -91,7 +91,7 @@ Access your profile settings or account settings by clicking on your account nam
 
 ![](https://hackmd.io/_uploads/BkVB7GNsh.png)
 
-> :bulb: [Learn more about the profile setting functionality.](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings)
+**[Learn more about the profile setting functionality](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings) :arrow_right:**
 
 
 ### Bot switcher 
@@ -111,7 +111,8 @@ Enhance your customer reachability by integrating your bot seamlessly with vario
 
 <img src="https://i.imgur.com/qSqZG5T.png" alt="drawing" width="100%"/>
 
-> :bulb: [Learn more about the available channels and how to configure them.](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) 
+
+**[Learn more about the available channels and how to configure them](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview):arrow_right:**
 
 ### Quick links 
 
@@ -126,7 +127,7 @@ Make your bot conversations more user-friendly by configuring them in the native
 
 <img src="https://i.imgur.com/DGv2cCp.png" alt="drawing" width="100%"/>
 
-> :bulb: [Learn more about configuring your bot for multiple languages.](https://docs.yellow.ai/docs/cookbooks/studio/multilingual-bot)
+**[Learn more about configuring your bot for multiple languages](https://docs.yellow.ai/docs/cookbooks/studio/multilingual-bot) :arrow_right:**
 
 
 
