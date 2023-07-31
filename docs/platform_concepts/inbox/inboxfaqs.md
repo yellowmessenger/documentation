@@ -137,3 +137,18 @@ Use Chatbot integration to add the intercom bot source code.
 </div>
 </details>
 
+**Mobile APP**
+
+<details>
+<summary> Where can I view missed or queued chats? </summary>
+<div>
+The archive tab in the mobile app is a collection of active, open, resolved, missed and queued chats. Use the filter option to view missed chats from this section.
+</div>
+</details>
+
+<details>
+<summary> Where can I check agent status? </summary>
+<div>
+On the overview tab there is an option to view agent and their current statuses.
+</div>
+</details>
