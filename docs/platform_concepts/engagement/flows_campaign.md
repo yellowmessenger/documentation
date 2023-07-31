@@ -3,6 +3,9 @@ sidebar_label: Create Flow campaign manually
 title: Create Flow campaign manually
 ---
 
+
+## Create Flow campaign
+
 The campaign flow builder consists of five categories of nodes:
 
 * Entry point
@@ -216,9 +219,19 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 1. In **From**, choose the sender's number.
 2. In **To**, choose the variable that contains the WhatsApp number of the user.
 
-<center><img src="https://i.imgur.com/IFiqgEH.png" width="50%"/></center>
+<center><img src="https://i.imgur.com/qGgU3zR.png" width="50%"/></center>
 
-3. In **Templates**, choose the WhatsApp template that you want to use for the conversation.
+3. In **Templates**, you can select from the following options:
+
+   * **AI generated**: Choose this option to generate templates dynamically using advanced AI technology. You can configure all the necessary options, including *Include emoji, Include quick reply buttons*, and *Consider brand guidelines*.
+
+   
+   <center><img src="https://i.imgur.com/VWPy22v.png" width="50%"/></center>
+
+   * **Existing templates**: Select this option to choose from manually created templates and choose your preferred **Template**. You can also see the preview of each template using the eye icon.
+
+   <center><img src="https://i.imgur.com/7zgzxbP.png" width="70%"/></center>
+
 4. In **Template media** 
 
    * Select *Default* to send personalized media to each user, and choose the variable that contains the media file in the relevant box.
@@ -347,11 +360,11 @@ Use this to call any internal or external API in between flows. For more informa
 
 ### Update user property
 
-This helps you effortlessly update user properties during Flow campaign interactions. With the ability to update user details like name, email, or other relevant information, you can create personalized experiences for each user and enrich user data.
+During Flow campaign interactions, you can update user properties. This includes user details such as subscription status, preferences, or gather other relevant information. This enables you to create highly personalized experiences for each user, enhancing user engagement and enriching your user data for better insights and decision-making.
 
 :::note
 
-You can only update custom user properties and the tags property. However, modifying Standard user properties, which are available by default, is restricted to avoid any unintended changes that might impact the user experience in a Flow campaign. 
+You can only update custom user properties and the tags property. However, modifying standard user properties, which are available by default, is restricted to avoid any unintended changes that might impact the user experience in a Flow campaign. 
 :::
 
 To update a user property in a flow campaign:
@@ -362,6 +375,12 @@ To update a user property in a flow campaign:
 
 2. In **Property name**, choose the custom property that you want to update.
 3. In **New value**, enter a new value that you want to assign to the selected property.
+4. For a **Date** property, you will see two options:
+
+   * Select **Real-time value** to set the date when the user reaches the step in the Flow campaign.
+   * Select **Custom** to set a static date of your preference.
+ 
+ <center><img src="https://i.imgur.com/YxsLQAe.png" width="60%"/></center>
 
 ***
 
