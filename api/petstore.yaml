@@ -229,7 +229,7 @@ paths:
                         properties:
                           value:
                             type: string
-                            example: "x1632831689374_t4-qyVsPjufdqVfL0uXRM"
+                            example: "x1632831689374_t4-qyVsPjufdqVfL0ugRM"
                         description: Unique internal ID genetated for the user.
                       updatedAt:
                         type: object

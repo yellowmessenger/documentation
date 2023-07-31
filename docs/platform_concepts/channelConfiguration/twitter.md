@@ -8,12 +8,58 @@ Twitter is a social media platform that allows you to post tweets in the form of
 Twitter integration helps to create mentions and direct messages related to customer queries and to promote your brand.
 
 In this article, you will learn:
+
+* [Twitter pricing plans](#twitter-pricing-plans)
 * [How to create a Twitter account](#1-create-a-twitter-account)
 * [How to setup a Twitter channel using the Developer portal](#2-setup-twitter-channel-using-developer-portal)
 * [How to connect a Twitter channel to your bot](#3-connect-twitter-channel-to-your-bot)
 * [How to test your bot on Twitter channel](#4-test-your-bot-on-twitter)
 
-## 1. Create a Twitter account
+## Twitter pricing plans
+
+##### **Prerequisites**
+
+You need to consider the below prerequisites to get the paid Twitter plan:
+
+* [create a Twitter account](#create-a-twitter-account)
+* Sign up for [Twitter's Developer portal](#setup-twitter-channel-using-developer-portal).
+
+The following are the pricing plans for Twitter:
+
+1. **Free Developer App**: This plan does not allow you to access the Direct Message (DM) lookup (get messages) or manage API (post messages).
+
+2. **Basic Developer App**: This plan allows you to access both DM lookups and manage DM APIs with the following messaging limits:
+
+   1. **Direct messages**: There is no limit on the number of direct messages that can be sent from Twitter to Yellow, but there is a limit on how many times you can look up or poll for new messages via the Twitter API. You can do that 5 times in 15 minutes and check for new messages every 3 minutes with this plan.
+
+     ##### **Limitations**
+
+       * Bot or agent can send 5 messages in 15 minutes
+       * Bot or agent can send 50 messages in 24 hours
+
+   2. **Mentions**: Similar to direct messages, there is no limit on the number of mentioned tweets received at Yellow. There is a limit to how many times you can use the lookup API to fetch new tweets. And there is a limit of 10 request in 15 minutes for this plan, which means you can check for new mentions every 1.5 seconds, approximately.
+
+      ##### **Limitations**
+      
+        * A bot or agent can reply or comment 100 messages in the mentioned tweets in 24 hours.
+
+3. **Pro Developer App**: This plan allows you to access both DM lookups and manage DM APIs with the following messaging limits:
+
+    1. **Direct messages**: There is no limit on the number of direct messages that can be sent from Twitter to Yellow, but there is a limit on how many times you can look up or poll for new messages via the Twitter API. You can do that 100 times in 15 minutes and check for new messages every 10 seconds with this plan.
+
+     ##### **Limitations**
+
+       * Bot or agent can send 200 messages in 15 minutes
+       * Bot or agent can send 1000 messages in 24 hours
+
+   2. **Mentions**: Similar to direct messages, there is no limit on the number of mention tweets received at Yellow. There will be a limit on how many times you can use the lookup API to fetch new tweets. There is a limit of 300 requests in 15 minutes for this plan, which means we can check for new mentions every 3 to 4 seconds.
+
+       ##### **Limitations**
+      
+          * A bot or agent can reply or comment 100 messages in the mentioned tweets in 15 mins.
+          * A bot or agent can reply or comment 10000 messages in the mentioned tweets in 24 hours.
+
+## Create a Twitter account
 
 To create a Twitter account, follow these steps:
 
@@ -58,7 +104,7 @@ If you have used your phone number, you will receive the code through SMS.
 
     ![](https://i.imgur.com/qiJfoxJ.png)
 
-## 2. Setup Twitter channel using developer portal
+## Setup Twitter channel using developer portal
 
 To get the access token, access token secret, consumer key, and consumer secret, you need to connect to the developer portal. Use this [link](https://developer.twitter.com/en/apps).
 
@@ -136,7 +182,7 @@ agent/bot messages | 1000 requests / 24 hours per user
 agent/bot messages| 200 requests / 15 mins per user
 
 
-## 3. Connect Twitter to your bot
+## Connect Twitter to your bot
 
 To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
@@ -150,7 +196,7 @@ To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
 3. Copy the details such as **Access token, Access token secret, Consumer key, and Consumer secret** from Twitter's developer portal and contact the [support](mailto:support@yellow.ai) team to connect your bot to Twitter.  
 
-## 4. Test your bot on Twitter
+## Test your bot on Twitter
 
 After connecting your bot to a Twitter, you can test your bot.
 
@@ -167,43 +213,5 @@ To test your bot on Twitter, follow these steps:
 3. Select your bot to start the conversation and test it to ensure that it is working as expected.
 
     ![](https://i.imgur.com/U83LsQH.png)
-
-
-## 5. Twitter pricing plans
-
-The following are the pricing plans for Twitter:
-
-1. **Free Developer App**: This plan does not allow you to access the Direct Message (DM) lookup (get messages) or manage API (post messages).
-
-2. **Basic Developer App**: This plan allows you to access both DM lookups and manage DM APIs with the following messaging limits:
-
-   1. **Direct messages**: There is no limit on the number of direct messages that can be sent from Twitter to Yellow, but there is a limit on how many times you can look up or poll for new messages via the Twitter API. You can do that 5 times in 15 minutes and check for new messages every 3 minutes with this plan.
-
-     ##### **Limitaions**
-
-       * Bot or agent can send 5 messages in 15 minutes
-       * Bot or agent can send 50 messages in 24 hours
-
-   2. **Mentions**: Similar to direct messages, there is no limit on the number of mentioned tweets received at Yellow. There is a limit to how many times you can use the lookup API to fetch new tweets. And there is a limit of 10 request in 15 minutes for this plan, which means you can check for new mentions every 1.5 seconds, approximately.
-
-      ##### **Limitaions**
-      
-        * A bot or agent can reply or comment 100 messages in the mentioned tweets in 24 hours.
-
-3. **Pro Developer App**: This plan allows you to access both DM lookups and manage DM APIs with the following messaging limits:
-
-    1. **Direct messages**: There is no limit on the number of direct messages that can be sent from Twitter to Yellow, but there is a limit on how many times you can look up or poll for new messages via the Twitter API. You can do that 100 times in 15 minutes and check for new messages every 10 seconds with this plan.
-
-     ##### **Limitaions**
-
-       * Bot or agent can send 200 messages in 15 minutes
-       * Bot or agent can send 1000 messages in 24 hours
-
-   2. **Mentions**: Similar to direct messages, there is no limit on the number of mention tweets received at Yellow. There will be a limit on how many times you can use the lookup API to fetch new tweets. There is a limit of 300 requests in 15 minutes for this plan, which means we can check for new mentions every 3 to 4 seconds.
-
-       ##### **Limitaions**
-      
-          * A bot or agent can reply or comment 100 messages in the mentioned tweets in 15 mins.
-          * A bot or agent can reply or comment 10000 messages in the mentioned tweets in 24 hours.
 
       

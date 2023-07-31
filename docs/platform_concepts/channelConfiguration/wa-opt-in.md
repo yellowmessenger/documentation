@@ -37,7 +37,7 @@ The following are the various options to obtain WhatsApp opt-in from users:
 
 5. **Through user registration forms**: Set up a registration process through online forms on your website or mobile app to opt-in and provide consent for receiving WhatsApp messages. While registering users for opt-ins, ensure that you adhere to WhatsApp's guidelines and terms of service.
 
-For more information on how to opt-in for WhatsApp, click [here](https://developers.facebook.com/docs/whatsapp/overview/getting-opt-in).
+For more information on how to opt-in for WhatsApp, click [here](https://developers.facebook.com/docs/whatsapp/overview/getting-opt-in/).
 
 ### WhatsApp opt-out
 

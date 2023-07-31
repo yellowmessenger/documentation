@@ -1,66 +1,66 @@
 ---
 title: Get started with the platform 
-sidebar_label: Understand UI elements
+sidebar_label: UI elements
 ---
 
-You will see the platform **Overview** page when you sign in to [Yellow.ai platform](https://cloud.yellow.ai). You can find all the useful links required to access platform offerings and get self-help. 
+## Platform introduction
 
-The following is a sample screenshot of  **Overview** page:
+When you sign in to the [Yellow.ai platform](https://cloud.yellow.ai), you'll be welcomed by the Overview page, which serves as the gateway to various platform offerings and self-help resources. Whether you're a coding expert or a newcomer, Yellow.ai caters to all users with its intuitive and user-friendly interface. Let's dive into the essential elements and functionalities of the platform.
 
 ![](https://i.imgur.com/wOzHxAL.jpg)
 
+Watch the product quick tour video on [Youtube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) to learn about what you can achieve with Yellow.ai and how the bot works. You can also find this video link directly on the platform.
 
-## 1. Get started with product walkthrough
-
-Watch the product quick tour video on [Youtube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) to understand what you can do with Yellow.ai and how the bot works.
-
-<img src="https://i.imgur.com/HfA4yu0.png" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/HfA4yu0.png" alt="drawing" width="80%"/>
 
 
-## 2. Access different product modules
 
-The platform has different modules that helps solve different things for businesses, from bot building to monitoring conversations, integrating with third-party systems, engaging customers, analysing bot performance, and so on. 
+### Module switcher
 
-Switch among different modules of the platform using the **Module switcher**.
+The platform is divided into various modules, each designed to handle different aspects of businesses. From bot building and conversation monitoring to integrating with third-party systems and engaging customers, there's a module for every need. Easily switch between these modules using the **Module switcher**.
 
 <img src="https://i.imgur.com/BMXKA2Q.png" alt="drawing" width="100%"/>
 
 
-## 3. Set up your bot 
+### Search 
 
-Before creating a bot, you must have a clear idea of what you are desiging. Get all your initial questions ready for all the use cases that you want to solve using the bot.
+Looking for specific concepts on the platform? Use the search feature to find relevant information directly from the documentation.
+
+![](https://hackmd.io/_uploads/rJtGlMVi2.png)
 
 
-We have made your life easy by creating bots. There are readily available templates in our **Marketplace** that have a lot of flows based on real-time use cases. You will also see recommendations specific to your industry that you can just plug-and-play and start running your bot.
+### Self help resources 
 
-However, there could be some use cases that are not available in our Marketplace. You can use [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to completely build your bot from scratch.
+Within the platform, you'll find a **Help** section. Here, you can access documentation, join the community page, or chat with MIA for instant support.
 
-You can also use the readily available templates if they are suitable for your use case. 
+
+![](https://hackmd.io/_uploads/SyUKlMVsh.png)
+
+**[Learn more about the available self help options](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/resources) :arrow_right:**
+
+### Enviornment switcher
+
+The platform provides different environments, allowing you to freely experiment with various options before pushing the final version to the live bot. Environments include Sandbox, Staging, Production, Live, and Development.
+
+<img src="https://i.imgur.com/5oVqs0O.png" alt="drawing" width="100%"/>
+
+**[Learn more about the significance of different environments](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) :arrow_right:**
+
+### Marketplace 
+
+Before creating a bot, it's essential to have a clear idea of your design and the use cases you want your bot to solve. The **Marketplace** offers readily available templates with pre-built flows based on real-time use cases. You'll also find industry-specific recommendations for easy plug-and-play implementation.
+
+However, if your use case is not available in the Marketplace, you can use [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to build your bot from scratch.
 
 <img src="https://i.imgur.com/vHUDGM5.png" alt="drawing" width="100%"/>
 
 
-The platform also includes different environments, giving you complete freedom to experiment with the various options and then push the final version to the live bot with Environment. These are the different environments supported:
-
-<img src="https://i.imgur.com/5oVqs0O.png" alt="drawing" width="100%"/>
+**[Access the guide on Marketplace features and its ready-made templates](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro) :arrow_right:**
 
 
-## 4. Modify bot details
+### Access control 
 
-You will provide basic details about the bot when signing up. However, you have the flexibility to modify the bot information whenever required using **Configure**.  
-
-However, this does not impact the functionality of the bot that you have created.
-
-<img src="https://i.imgur.com/QMg5bVq.png" alt="drawing" width="40%"/>
-
-
-## 5. Add collaborators
-
-You can involve other members of the team or cross team members to build the bot. With Yellow.ai, you can share bot access with other members, and define their roles. All the invited members can contribute to building a better bot based on the business use case.
-
-:::note
-Only superadmin can share bots and revoke access.
-:::
+Collaboration is easy with Yellow.ai. Share bot access with team members or cross-functional colleagues, defining their roles and permissions. All invited members can contribute to building a better bot based on the business use case.
 
 <img src="https://i.imgur.com/lZxRTfs.png" alt="drawing" width="100%"/>
 
@@ -69,32 +69,79 @@ Only superadmin can share bots and revoke access.
 <img src="https://i.imgur.com/6alBjsK.png" alt="drawing" width="100%"/>
 
 
+**[Learn about the rules and permissions when adding or accepting a collaborator](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators) :arrow_right:**
 
-## 6. Connect bot to different channels
+### Modify bot configuration 
 
-You have the flexibility to reach out to your customers on different channels for better reachability. Integrate your bot seamlessly with various channels according to your business requirements. You can also add the channels for your bot from the Overview page.
+While providing basic bot details during sign-up, you have the flexibility to modify this information whenever needed using **Configure**. Any changes made here won't affect the functionality of your bot.
+
+<img src="https://i.imgur.com/QMg5bVq.png" alt="drawing" width="40%"/>
+
+**[Learn more about what can be configured and modified](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration) :arrow_right:**
+
+### Notifications
+
+Check the **Notifications** icon to view updates related to your specific module or notifications for bot invites.
+
+![](https://hackmd.io/_uploads/rycD4MVsn.png)
+
+### User account 
+
+Access your profile settings or account settings by clicking on your account name in the top left corner.
+
+![](https://hackmd.io/_uploads/BkVB7GNsh.png)
+
+**[Learn more about the profile setting functionality](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings) :arrow_right:**
+
+
+### Bot switcher 
+
+Click on the bot name to see all the available bots for your subscription or those you have access to. Easily switch between different bots and use the search feature to find a specific bot.
+
+![](https://hackmd.io/_uploads/HJ8YGMNi3.png)
+
+When working inside any module, you'll find the bot switcher feature available at the bottom right.
+
+![](https://hackmd.io/_uploads/rkN-QGVon.png)
+
+
+### Add channels
+
+Enhance your customer reachability by integrating your bot seamlessly with various channels to meet your business requirements. Add channels for your bot from the Overview page.
 
 <img src="https://i.imgur.com/qSqZG5T.png" alt="drawing" width="100%"/>
 
 
-## 7. Add multilingual support
+**[Learn more about the available channels and how to configure them](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview):arrow_right:**
 
-Make your bot conversations more comfortable for your users, especially when you want to run the bot in different regions or countries. Reach out to a wider audience with **Multi-language** support. Define conversations in the bot user's native language.
+### Quick links 
+
+Find multiple links throughout the platform that explain each functionality. Click on the respective links based on your use case to learn more. These options are also available within each module.
+
+![](https://hackmd.io/_uploads/SJkkmQEsh.png)
+
+### Multilingual support 
+
+Make your bot conversations more user-friendly by configuring them in the native language of your bot users, especially when running the bot in different regions or countries. Enable **Multilingual support** for a wider audience reach.
+
 
 <img src="https://i.imgur.com/DGv2cCp.png" alt="drawing" width="100%"/>
 
+**[Learn more about configuring your bot for multiple languages](https://docs.yellow.ai/docs/cookbooks/studio/multilingual-bot) :arrow_right:**
 
-## 8. Get instant help through Help links
 
-Self-help resources are readily available on the platform to provide you with immediate assistance in resolving your issues that are related to the product. Be it product understanding, reaching out to our product experts, or connecting with our support agents.
 
-        
-<img src="https://i.imgur.com/MxEj2H1.png" alt="drawing" width="30%"/> 
 
-The following are the different resources available:
 
-* **Take guided tour** - Before you begin using our platform, take a quick product tour to understand different user interface elements.
-* **Read the docs** - This is a great place for you to get instant help through our docs anytime. Browse through our documentation to learn about a particular module, feature, or concept.
-* **Ask the community** - If you have any other questions related to a product, get help from our product experts through Community.
-* **Chat with support**- Use our in-house AI powered bot (Mia) to post your questions. It helps with instant answers for more of your questions. You can also book a session with our product experts, or connect with agents during business hours.
-* **Submit feedback** - Share your feedback on our product or offerings through our support bot, Mia. This makes us better understand your needs and helps in building a better product.
+
+
+
+
+
+
+
+
+
+
+
+

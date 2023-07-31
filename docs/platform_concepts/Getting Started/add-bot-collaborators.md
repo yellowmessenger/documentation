@@ -1,6 +1,6 @@
 ---
 title: Bot access management
-sidebar_label: Manage bot access/permissions
+sidebar_label: User roles & permissions
 keywords : [access control, bot invite, invite users, send bot invite, share bot access]
 ---
 
@@ -38,15 +38,17 @@ To share bot access with other users, follow these steps:
 |Engagement (Admin) | Can send campaigns and configure audience.|
 |Engagement (User) | Can only schedule campaigns.|
 
-<img  src="https://i.imgur.com/cBnpqIe.png"  width="50%"/>
-    
+
+<img  src="https://i.imgur.com/cBnpqIe.png"  width="50%"/>        
+
+
 c. Click **Save**. The invited user will receive an email with the bot access invitation.
 
 ***
 
-## Accept bot access invite
+## Accept bot invites
 
-To accept a bot access invitation, follow these steps:
+To accept or reject a bot access invitation, follow these steps:
 
 1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click **Notifications** icon at the top right corner.
     ![](https://i.imgur.com/XKd1KqL.png)
@@ -54,4 +56,40 @@ To accept a bot access invitation, follow these steps:
     ![](https://i.imgur.com/Jm0geRB.png)
 3. Click on the drop-down to view the list of bots you have access to.
 
-    <img  src="https://i.imgur.com/Gg7cHBz.png"  width="50%"/>
+    <img  src="https://i.imgur.com/Gg7cHBz.png"  width="40%"/>
+
+4. You can also accept/reject a bot invite by clicking on **Bot Invites** from the User account drop-down.
+
+    <img src="https://i.imgur.com/7NNIq5a.png" alt="drawing" width="100%"/>
+
+----
+
+## View bot invites
+
+:::note
+Your own bots are not visible in this section.
+:::
+
+In the **View bot invites** section, you can easily access and manage pending bot invites sent by other team members. Follow these steps:
+
+1. You will see a list of pending bot invites, and you can choose to either **Accept** the invitation to gain access to the bot or **Decline** it if you wish to decline the invitation.
+2. You will also receive notifications regarding bot invites, making it convenient for you to respond promptly.
+    ![](https://i.imgur.com/HgS5gtv.png)
+3. In this section, you can explore and access different bots that belong to the Yellow.ai organization. You can search for specific bots using their bot Id, name, or sub Id. If you need access to a bot created by other members of the organization, you can send a request. The super admin will review the request and provide access to the bot if approved.
+    ![](https://i.imgur.com/Pq5woJs.png)
+
+***
+
+## Approve published bots
+
+1. Check for pending approvals of published bots under **Bot publish approvals** from the User account drop-down.
+
+    <img src="https://i.imgur.com/hstIkXS.png" alt="drawing" width="100%"/>
+
+2. **Accept** or **decline** approval requests for publishing bots in different environments.
+
+    <img src="https://hackmd.io/_uploads/BynRJywc2.png" alt="drawing" width="80%"/>
+
+**Review request email:**
+<img src="https://i.imgur.com/wuZvyob.png" alt="drawing" width="60%"/>
+

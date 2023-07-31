@@ -1,16 +1,18 @@
 ---
 title: Setup your yellow.ai account and sign in
-sidebar_label: Set up & sign in to yellow.ai
+sidebar_label: Set up & sign in
 ---
 
-## Signup for yellow.ai 
 
 **Signup demo video:**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## Signup for yellow.ai 
+
 1. Go to cloud.yellow.ai.
 2. Choose your preferred mode of signup.
 3. Fill in the required fields and click **Sign up**.
+
     <img src="https://i.imgur.com/5I4eh2i.jpg" alt="drawing" width="100%"/>
 
     :::note 
@@ -19,11 +21,16 @@ sidebar_label: Set up & sign in to yellow.ai
     ::: 
 
 4. On the following screen, the bot will list the bots created by your team (if any). Click **Request access** to gain access to one of those bots or click **Get started** to build a bot from scratch.
-![](https://i.imgur.com/MeQczsX.png)
+
+    <img src="https://i.imgur.com/MeQczsX.png" alt="drawing" width="80%"/>
+
 5. Click **Get started** under the preferred use-case.
-    ![](https://i.imgur.com/Q5ALzLs.png)
+
+    <img src="https://hackmd.io/_uploads/Syo9bakin.png" alt="drawing" width="80%"/>
+
 6. Choose the industry your business belongs to. To skip the following steps, click **Skip for now**.
-    ![](https://i.imgur.com/IHGleUT.png)
+
+    ![](https://hackmd.io/_uploads/S1Q0-Tkon.png)
 
 In the following page, you can choose to either create a bot from scratch, or choose one of the predefined bot templates.
 
@@ -33,9 +40,10 @@ In the following page, you can choose to either create a bot from scratch, or ch
 2. Click the **+Start from scratch** button.
     
     <img src="https://i.imgur.com/IfmeeWu.png" alt="drawing" width="60%"/>
+
 3. Select the bot type, the region of the bot and click **Create Project**.
-    
-    <img src="https://i.imgur.com/86kgJxw.png" alt="drawing" width="60%"/>
+
+    <img src="https://i.imgur.com/86kgJxw.png" alt="drawing" width="50%"/>
 
 -----
 
@@ -43,10 +51,12 @@ In the following page, you can choose to either create a bot from scratch, or ch
 
 1. Choose the preferred use cases.
 2. Click **Import+**.
+
     <img src="https://i.imgur.com/Xjk1Rqc.png" alt="drawing" width="60%"/>
 
 3. Choose the region of the bot and click **Create Project**.
-    <img src="https://i.imgur.com/4phs5gv.png" alt="drawing" width="60%"/>
+
+    <img src="https://i.imgur.com/4phs5gv.png" alt="drawing" width="50%"/>
 
 ---
 

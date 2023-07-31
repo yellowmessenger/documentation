@@ -2,24 +2,10 @@
 sidebar_label: Create Flow campaign manually
 title: Create Flow campaign manually
 ---
-Yellow.ai's Flow Campaign is a  conversational marketing tool  with an advanced campaign builder. It helps marketers deliver a comprehensive customer experience across channels and engage customers at every stage of their journey.
-
-A Flow Campaign consists of  user journeys  which you can use to strategically target customers across channels. You can quickly develop flows using the no-code builder according to your business needs. This also allows you to track  customer activities  across platforms and analyze the data to make decisions.
 
 
-  
-#### Use case
+## Create Flow campaign
 
-This sample use case shows how to effectively engage users by nudging them at different stages in a flow using the Flow campaign.
-
-Consider a cart abandonment example in an e-commerce store.
-
-1. Send a reminder message through a Push notification to proceed with the purchase after one day.
-2. For users who have read the push notification, send an exclusive 10% off coupon on WhatsApp.
-3. If the user has not responded to the message, resend the coupon over WhatsApp after 48 hours.
-4. Wait a couple more days and end the flow.
- 
- 
 The campaign flow builder consists of five categories of nodes:
 
 * Entry point
@@ -27,12 +13,6 @@ The campaign flow builder consists of five categories of nodes:
 * Flow control
 * Message 
 * Action
-
-See how to configure each node in the following sections.
-
-***
-
-## Create flow campaign
 
 To create a flow, follow these steps:
 
@@ -45,6 +25,9 @@ To create a flow, follow these steps:
   
   ![](https://i.imgur.com/wrBLa4B.png)
 
+:::note
+You can also reuse an existing flow using More options > **Duplicate**.
+:::
 
 3. Click on the Edit icon of the Untitled workflow (the default name) and enter the campaign name.
 
@@ -236,9 +219,19 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 1. In **From**, choose the sender's number.
 2. In **To**, choose the variable that contains the WhatsApp number of the user.
 
-<center><img src="https://i.imgur.com/IFiqgEH.png" width="50%"/></center>
+<center><img src="https://i.imgur.com/qGgU3zR.png" width="50%"/></center>
 
-3. In **Templates**, choose the WhatsApp template that you want to use for the conversation.
+3. In **Templates**, you can select from the following options:
+
+   * **AI generated**: Choose this option to generate templates dynamically using advanced AI technology. You can configure all the necessary options, including *Include emoji, Include quick reply buttons*, and *Consider brand guidelines*.
+
+   
+   <center><img src="https://i.imgur.com/VWPy22v.png" width="50%"/></center>
+
+   * **Existing templates**: Select this option to choose from manually created templates and choose your preferred **Template**. You can also see the preview of each template using the eye icon.
+
+   <center><img src="https://i.imgur.com/7zgzxbP.png" width="70%"/></center>
+
 4. In **Template media** 
 
    * Select *Default* to send personalized media to each user, and choose the variable that contains the media file in the relevant box.
@@ -365,6 +358,30 @@ This section helps you configure other actions in the campaign's flow, such as a
 
 Use this to call any internal or external API in between flows. For more information about APIs, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
 
+### Update user property
+
+During Flow campaign interactions, you can update user properties. This includes user details such as subscription status, preferences, or gather other relevant information. This enables you to create highly personalized experiences for each user, enhancing user engagement and enriching your user data for better insights and decision-making.
+
+:::note
+
+You can only update custom user properties and the tags property. However, modifying standard user properties, which are available by default, is restricted to avoid any unintended changes that might impact the user experience in a Flow campaign. 
+:::
+
+To update a user property in a flow campaign:
+
+1. In **Action**, select **Update user property** and drag it to the desired position in the flow.
+
+  <center> <img src="https://i.imgur.com/FUujXCR.png" width="70%"/></center>
+
+2. In **Property name**, choose the custom property that you want to update.
+3. In **New value**, enter a new value that you want to assign to the selected property.
+4. For a **Date** property, you will see two options:
+
+   * Select **Real-time value** to set the date when the user reaches the step in the Flow campaign.
+   * Select **Custom** to set a static date of your preference.
+ 
+ <center><img src="https://i.imgur.com/YxsLQAe.png" width="60%"/></center>
+
 ***
 
 ## Add goal
@@ -384,3 +401,4 @@ To add a goal:
    i. Choose *Duration* to set the validity of the goal in Hours, Days or Weeks and enter your preferred value in the respective text box.
    
    ii. Choose a *Timestamp* to end the validity on a specific date and time. Select your preferred date and time using the calendar box.
+
