@@ -22,7 +22,7 @@ In Inbox, analytics can be viewed and exported (as CSV files) for the following:
 ![](https://i.imgur.com/ZBNlST0.png)
 
 :::info
-Chat analytics metrics are displayed based on their status time. For example, if there were two chats created on February 1st and resolved on February 2nd, the count for resolved chats will include both the chats from the previous day (February 1st) and the ones resolved on February 2nd.
+Chat analytics metrics are shown according to the time when the chats were active. For instance, if two chats, one initiated on February 1st and another resolved on February 2nd,  resolved chats metric will include both the chats. The metrics consider the entire duration when the chats were active, not just the resolution date.
 :::
 
 2. **Agent performance**: Analyse [team performance metrics](/platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics.md) and improve productivity. 

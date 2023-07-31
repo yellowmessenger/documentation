@@ -38,6 +38,7 @@ The **Tone Change** AI feature assists inbox agents in maintaining a professiona
 
 ![](https://i.imgur.com/dqjDKDI.png)
 
+<!--
 --- 
 
 ## AI Suggestions for conversation improvement
@@ -46,18 +47,25 @@ The **Reply suggestion** feature is designed to support inbox agents in their cu
 
 By combining predictive text suggestions with easy access to knowledge sources, the feature helps agents maintain high-quality customer support without extensive training or reliance on canned responses. This leads to enhanced customer satisfaction and builds stronger relationships between the company and its customers.
 
-![](https://hackmd.io/_uploads/H15rOUC5n.png)
+![](https://hackmd.io/_uploads/rykNyzrsn.png)
 
 Here's how the feature works:
 
 1. **Prediction of next possible responses**: AI Assist utilizes advanced language models (LLMs) and Generative AI to analyze the customer's input and predict potential responses that the agent can send. Based on the context of the conversation and the customer's query, the system generates **three** best suggestions for the agent to consider.
 2. **Simplified reply process**: Instead of typing out the entire response, agents can simply choose from the three suggested replies. This streamlines the process and saves valuable time, especially during high-volume periods or when dealing with numerous inquiries.
 3. **Full visibility of suggestions**: To ensure agents have complete control and understanding of the responses, they can hover over each suggestion to view the entire text on the reply screen. This allows agents to evaluate each option thoroughly before making a decision.
+
+
 4. **Access to various knowledge sources**: There may be situations where agents need to refer to external knowledge sources, such as knowledge bases, documents, or past interactions. With a single click of a button (AI Assist), agents can access information from multiple sources, including:
     - **Website URLs added in Studio's Knowledge Base**: Agents can fetch relevant information from the company's knowledge base to provide accurate responses.
     - **Manually uploaded documents in Studio's Doc Cog**: Agents can access important documents and resources to address customer queries effectively.
     - **Knowledge Base articles created in Inbox**: Agents can use internal knowledge base articles to find resolutions quickly.
+
+
+
+
     - **Records of past live chats and email tickets in Inbox**: Agents can refer to previous interactions to ensure consistency and provide informed responses.
 
+-->
 
 > [Click here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#--1-chat-conversation-screen) to revisit other options on the chat screen. 
