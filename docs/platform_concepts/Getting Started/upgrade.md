@@ -44,37 +44,36 @@ The following features are currently unavailable in the Freemium plan and can be
 You can easily upgrade your account to better suit your specific business requirements. We recommend carefully evaluating your needs before making a decision.
 
 1. Click the **Upgrade** button.
-    ![](https://i.imgur.com/6J6fYcY.png)
+
+    ![](https://hackmd.io/_uploads/ByRpzTki3.png)
 
 2. Click the **Schedule Now** button to book a 1:1 call with our product consultants. They will assist you in choosing a plan that suits your business.
-    ![](https://i.imgur.com/Pmx0AwS.png)
+
+    <img src="https://i.imgur.com/Pmx0AwS.png" alt="drawing" width="50%"/>
 
 3. After clicking the **Schedule Now** button, a **Calendly** pop-up will appear. You can choose your preferred **date, time, and time zone**.
+
     ![](https://i.imgur.com/w7o0VlK.png)
 
 4. On the following screen, fill in all the fields and click **Schedule Event**.
+
     ![](https://i.imgur.com/UgoDQdM.png)
 
 -----
 
-## Pricing plans
-
+## General pricing plans
 
 Our paid subscription plans offer various benefits to enhance user experience, including access to integrations and channels, personalized reports and dashboards, and professional support. These features provide a comprehensive and personalized experience to help you achieve your business goals.
 
-If you've signed up with a new domain on our platform, click the **Upgrade** button to see all the subscription plans.
-
 ![](https://i.imgur.com/mNl6DvH.png)
 
-To select a plan either on a monthly or annual basis, toggle between the **Monthly/Yearly** options on the top. For a complete comparison of features included in all plans, click **See full plan comparison** located at the bottom of the page.
+- If you've signed up with a new domain on our platform, click the **Upgrade** button to see all the subscription plans.
+- To select a plan either on a monthly or annual basis, toggle between the **Monthly/Yearly** options on the top. For a complete comparison of features included in all plans, click **See full plan comparison** located at the bottom of the page.
+- Clicking **Choose Plan** or **Contact Sales** will redirect you to the Calendly pop-up (same as mentioned above) to book a one-on-one session with our product experts.
 
-Clicking **Choose Plan** or **Contact Sales** will redirect you to the Calendly pop-up (same as mentioned above) to book a one-on-one session with our product experts.
 
-------
+Apart from the subscription plans, Yellow.ai charges based on the usage of specific modules such as MRU count and WhatsApp usage.
 
-## Other modules pricing details
-
-Apart from the subscription plans, Yellow.ai charges based on the usage of specific modules.
 
 ### Monthly reached users (MRU) pricing
 
@@ -82,7 +81,8 @@ Yellow.ai charges businesses based on the MRU count. With MRU pricing, you are b
 
 ### WhatsApp pricing
 
-Meta has announced updates to its price policy starting June 1, 2023. Yellow.ai charges businesses based on the MRU count. The charges for WhatsApp conversations are determined by the end user's phone number, and the cost varies depending on the type of conversation, country, or location. Users can have up to 1,000 free conversations every month. If the limit is exceeded, a monthly fee will apply. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-pricing).
+Meta has announced updates to its price policy starting June 1, 2023. Yellow.ai charges businesses based on the MRU count. The charges for WhatsApp conversations are determined by the end user's phone number, and the cost varies depending on the type of conversation, country, or location. Users can have up to 1,000 free conversations every month. If the limit is exceeded, a monthly fee will apply. 
+> For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-pricing).
 
 
 
