@@ -44,6 +44,11 @@ The default message does not come automatically for WhatsApp. You have to train 
 </details>
 
 
+<details>
+<summary>If a user replies to a WhatsApp notification with quick reply buttons and triggers a flow using /quick-reply-event, will the /quick-reply-event be triggered again for subsequent quick reply interactions within the same flow?</summary>
+
+No, the /quick-reply-event is specific to WhatsApp notifications and will only be triggered for replies to those notifications. It will not be triggered again for subsequent quick reply interactions within the same flow.
+</details>
 
 
 
