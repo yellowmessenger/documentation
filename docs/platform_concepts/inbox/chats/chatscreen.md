@@ -58,6 +58,9 @@ Upload images/files to your message and add emojis to your text to make the conv
     
 ![](https://i.imgur.com/54e5PWh.jpg)
 
+:::note
+On **Whatsapp channel** you can upload a maximum size of 5 MB for images and 16 MB for videos/files.
+:::
 
 ----
 
@@ -103,7 +106,9 @@ Chats can be shared with anyone by clicking the **chat copy URL** icon and shari
 ![](https://i.imgur.com/bpmVToO.png)
 
 
-> Other AI features on the chat screen are listed in the [Generative AI article](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai). 
+:::info
+Other AI features on the chat screen are listed in the [Generative AI article](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai). 
+:::
 
 ---
 
@@ -146,7 +151,7 @@ To use this feature, simply type `@bot` on the reply screen, followed by the int
 #### Real-time example
 A customer has placed an order and is experiencing an issue with their return request. The customer contacts the support agent for assistance. The agent needs to:
 
-**Step 1**: Verify the order status 
+**Step 1**: Verify the order status                          
 **Step 2**: Assist the customer in placing a return request
 
 For step 1, the agent can quickly retrieve the order status from an internal or external system by using **Agent actions** and entering the command `/order-status 100100`, where `100100` is the order ID.
