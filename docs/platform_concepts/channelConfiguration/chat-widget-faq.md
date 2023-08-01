@@ -49,6 +49,15 @@ if (userIsAuthenticated) {
   </div>
 </details>
 
+<details>
+<summary>How to change the font size in the widget?</summary>
+<div>
+ <br/>
+ <div>To change the font size in the widget, follow these steps :<br/> 1.Navigate to <b>Channels</b> > <b>Chat widget</b> > <b>Widget panel</b>.<br/><img src="https://i.imgur.com/Bf9iQsC.png)" alt="drawing" width="70%"/><br/>2. Expand <b>Font</b> drop-down and select your preffered font size and click <b>Save changes</b>.<br/><img src="https://i.imgur.com/i5RGQAD.png)" alt="drawing" width="70%"/>
+</div>
+  </div>
+</details>
+
 --------
 
 ## Chat widget related FAQs
