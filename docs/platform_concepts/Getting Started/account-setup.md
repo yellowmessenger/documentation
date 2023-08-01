@@ -1,13 +1,31 @@
 ---
-title: Setup your yellow.ai account and sign in
-sidebar_label: Set up & sign in
+title: Create your free yellow.ai account
+sidebar_label: Signup to yellow.ai
 ---
 
-
-**Signup demo video:**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Signup for yellow.ai 
+
+## Start using yellow.ai for Free
+
+Yellow.ai offers a default **Freemium plan**, catering to small businesses and solo entrepreneurs seeking to optimize their customer engagement strategy using conversational AI technology. The Freemium plan allows you to assess the suitability of our product for your specific business use cases without any cost.
+
+By signing up for the Freemium Plan, you can start growing your business today. This plan enables you to experience the full potential of our platform and its essential features before committing to the premium version. 
+**It's a try-before-you-buy opportunity!**
+
+With the Freemium Plan, you can achieve the following benefits:
+
+1. Add relevant Q&A to the [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) module to effectively deflect tickets.
+2. Have unlimited [agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) to answer customer questions.
+3. Analyze bot performance by reviewing deflection rates with 5,000 monthly bot conversations.
+4. Handle up to 500 chat and email tickets per month by transferring chats to an agent.
+5. Increase your agents' productivity with features like canned responses, and integrate two channels (website, WhatsApp, mobile app) for customer interactions, along with a unified inbox for your agents.
+
+:::note
+Upon signing up, your account will automatically be enrolled in the Freemium plan.
+:::
+
+## Create your Yellow.ai account
 
 1. Go to cloud.yellow.ai.
 2. Choose your preferred mode of signup.
@@ -38,8 +56,8 @@ In the following page, you can choose to either create a bot from scratch, or ch
 
 1. In the **I would like to start afresh** field, describe the use case for which the bot is built.
 2. Click the **+Start from scratch** button.
-    
-    <img src="https://i.imgur.com/IfmeeWu.png" alt="drawing" width="60%"/>
+
+    <img src="https://hackmd.io/_uploads/H1Z--XLo2.png" alt="drawing" width="70%"/>
 
 3. Select the bot type, the region of the bot and click **Create Project**.
 
@@ -49,10 +67,10 @@ In the following page, you can choose to either create a bot from scratch, or ch
 
 ### Use predefined bot templates
 
-1. Choose the preferred use cases.
+1. Choose your preferred use cases.
 2. Click **Import+**.
 
-    <img src="https://i.imgur.com/Xjk1Rqc.png" alt="drawing" width="60%"/>
+    <img src="https://hackmd.io/_uploads/H1aHZQLj3.png" alt="drawing" width="70%"/>
 
 3. Choose the region of the bot and click **Create Project**.
 
@@ -62,15 +80,12 @@ In the following page, you can choose to either create a bot from scratch, or ch
 
 ## Log out of yellow.ai
 
-The platform has an automatic logout feature that activates after a few minutes of inactivity. If you are inactive for a certain period, the platform will log you out for security purposes. To continue using the platform, you will need to sign in again.
+If you are inactive for a certain period, the platform will log you out for security purposes.
+However, this is not applicable to Inbox agents who handle tickets to ensure they respond promptly to customer queries without any disruptions.
 
-If you wish to log out of the platform voluntarily, you can do so by clicking on **Logout** under the User account section.
+To logout manually, you can click **Logout** under the User account section.
 
 <img src="https://i.imgur.com/8M6qNvZ.png" alt="drawing" width="100%"/>
 
-:::info
-Inbox agents who handle customer tickets are not automatically logged out after a period of inactivity. This is because they may be actively waiting for incoming tickets from other users, and automatic logout could disrupt their ability to respond promptly to customer queries.
-:::
 
 
-----
