@@ -84,6 +84,14 @@ You can train your bot on the following features by setting the right number of 
 
 ![](https://i.imgur.com/QNdA2w0.png)
 
+* **Sentence Encoder:** Converts input sentences or messages into numerical representations, making it easier for the bot to understand and process user inputs.
+
+* **Epochs:** Epoch refers to one complete iteration through the entire dataset during training. It helps the chatbot improve its performance by learning from the data multiple times.
+
+* **Multilingual:** Choose this option if your bot is multilingual. This allows the bot to communicate with users in different languages, catering to a broader and more diverse audience.
+
+* **Bahasa:** Bahasa is an Indonesian language. If you choose this option, the bot can communicate with users in Indonesian, providing more personalized and localized interactions.
+
 3. Click **Train**.
 
 ## Map intents to flows
