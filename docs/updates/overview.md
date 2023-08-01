@@ -1,6 +1,6 @@
 ---
-title: June 2023
-sidebar_label: Latest product updates (June 2023)
+title: July 2023
+sidebar_label: Latest product updates (July 2023)
 featured: true
 ---
 
@@ -8,243 +8,113 @@ featured: true
 
 ## Studio
 
-### 1. AI Copilot for effortless bot creation 
+### 1. Introduced Knowledgebase with QnA support and enhanced Data Ingestion
 
-With our new AI Copilot, you can seamlessly generate personalized chatbot workflows tailored to your industry. Creating flows is now a breeze. 
+We have introduced a new interface that streamlines bot management with QnA support, removing the need for NLP. Effortlessly ingest data from URLs, PDFs, Sharepoint, S3, and more, while enjoying rapid testing and enhanced business personalization. We have also provided support for up to 1000 pages per document and 50 MB file sizes.
 
-   ![](https://i.imgur.com/B38RYSN.png)
+![](https://i.imgur.com/vKr4BvT.png) 
 
-Simply enter your requirements, and let our AI Copilot do the work for you. No technical expertise is needed to set it up. Best of all, it's powered by GPT-4, providing you with advanced capabilities for an even smarter chatbot experience.
 
-   
-   
-**[Try It Now](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot)**
+### 2. Added debugging & root cause analysis(RCA) for faster issue resolution in Dynamic Chat Node
 
+Easily identify the causes of failure/timeout messages using tags. If the tags are related to APIs or the LLM vendor, kindly contact the respective third-party vendor or check their status for support. For bot-level tags, manage the configurations within your node. If the tags are platform-level, please reach out to us for assistance.
 
-### 2. MTSL for safe transmission of data
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-dynamic-chat)**
 
-   <center><img src="https://i.imgur.com/ud7zFzT.jpg" width="80%"/></center>
+![](https://i.imgur.com/qsbHdOB.png) 
 
-Yellow.ai has strengthened data security by implementing MTSL for APIs. This ensures a secure data transmission channel while adding APIs to Yellow.ai and facilitates safe data exchange through the platform.
 
+### 3. NLP Orchestrator on cloud for efficient scalability
 
+With the latest enhancement, the Orchestrator feature now utilizes NLP to efficiently route incoming chat requests to the relevant child bot, based on its trained NLP capabilities.
 
-### 3. Revamped Studio Overview page 
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator#docusaurus_skipToContent_fallback)**
 
-   ![](https://i.imgur.com/fNppcix.png)
+![](https://i.imgur.com/N4Q6c93.png) 
 
-The Studio overview page has undergone an update, for a better user experience.
-
-
-### 4. Enhanced Dynamic chat for better user experience 
-
-  <center> <img src="https://i.imgur.com/UEnWu3c.png" width="50%"/></center>
-
-The Dynamic Chat node can now be accessed as a node in the Builder section, offering expanded functionality with the following added features.
-
-* Editable timeout messages & seconds control
-
-   ![](https://i.imgur.com/vaQdyAC.png)
-
-* Increased configuration options for properties like temperature, P, and maximum length
-
-   ![](https://i.imgur.com/X55MNs6.png)
-* Additional fallback option after multiple timeout messages.
-   
-
-   
-
-### 5. Upcoming releases
-
-* **NLP Orchestrator**: The NLP Orchestrator will act as a central hub for managing multiple bots and skillfully directs incoming chats to the appropriate bot that aligns with the user's intended purpose.
-
-* **NLP Retraining:** NLP retraining will allow effortless training of the bot on unidentified user utterances. This streamlined process enhances the bot's ability to understand and respond to a wider range of user inputs with accuracy and ease.
-
-----
-
-## Engage
-
-### 1. Optimized outbound campaigns UI for effective campaign management
-
-   ![](https://i.imgur.com/nedFcZr.png)
-
-The revamped outbound campaigns landing page features real-time updates, a comprehensive monitoring dashboard, and enhanced reporting and analytics. It offers a user-friendly experience for efficient management of outbound campaigns.
-
-**[Learn More](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/outbound-report)**
-
-
-
-### 2. Auto-mapping of CSV columns
-
-The CSV import feature now includes an auto-mapping function that effortlessly maps CSV columns to their corresponding fields, based on previous mappings and column names. This simplifies the import process, saving users time and effort by eliminating the need for manual column mapping.
-
-**[Read the Docs](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users#auto-mapping-of-csv-columns)**
-
-### 3. New KPI to track the progression and influence of user base
-
-   ![](https://i.imgur.com/IdrGJOA.png)
-
-The new KPI, **Monthly Reached Users**, measures the number of unique users reached through campaigns and notifications within a given month. It offers valuable insights into the reach and engagement of your platform, enabling you to monitor the growth and impact of your user base over time.
-
-**[Check it Out](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/engage-overview#11-total-mru)**
-
-
-
-----
-
-## Inbox
-
-### 1. Chat and email drafts for seamless navigation across chats, tabs, and product
-
-Agents can now draft messages that are automatically saved. The drafts will be available until the end of the user session.  Note that drafts are limited to 5 MB of storage and are not supported in different web browsers or incognito mode. 
-
-**[Learn more ](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#auto-save-draft-message)**
-
-
-### 2. Shopee product card support for agents to quickly view product info
-
-   ![](https://i.imgur.com/OPqjfSU.png)
-
-With this new feature, agents will now have the ability to view the product details shared by customers directly within our support platform. This enhancement enables agents to quickly access and review specific product information, allowing for more efficient and accurate customer support.
-
-
-
----
-
-## Inbox for Mobile (Partner app)
-
-### 1. Filter chats by Status in the archived tab (both Android and iOS)
-
-This feature lets users easily access specific chat statuses such as queues and missed chats within the archived section, providing better organization and quick access to relevant conversations.
-
-### 2. Introducing Bahasa for mobile app
-
-Users can now enjoy a fully localized experience in the Bahasa language. This enhancement aims to provide a seamless and user-friendly experience for our Bahasa-speaking agents, allowing them to interact with the app in their preferred language and improving overall accessibility.
-
-### 3. Supervisor role support in Mobile app
-
-Supervisors can now access relevant chats and take necessary actions directly from their mobile devices. To learn more about the role privileges, **[click here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/roleaccess)**.
-
-----
-## Insights
-
-### 1. Consistent data masking in custom datasets for better data protetcion
-
-The Data Explorer page now eliminates masked columns in Studio tables as part of an improvement that promotes uniform data masking in the data environment (DE). 
-
-This enhancement guarantees consistent data privacy and security by extending the masking capability from studio tables to custom datasets. With this advancement, organizations can maintain standardized data protection across their data pipeline, effectively safeguarding sensitive information from unauthorized access.
-
-### 2. Enhanced WhatsApp Consumption Widget with additional categories for improved user interaction and engagement
-
-<center><img src="https://i.imgur.com/nJJzXE3.png" alt="drawing" width="60%"/></center>
-
-The overview page's WhatsApp Consumption Widget is improved to incorporate additional categories, thereby offering a more thorough understanding of user interactions and engagement.
-
- [Check it Out](https://docs.yellow.ai/docs/platform_concepts/growth/overview#-whatsapp-comsumption) to learn about this enhancement in detail.
-
-
-### 3. Inbox Call records table in Data Explorer for call analysis
-
-A new table, **Inbox Call Records**, has been added to Data Explorer, providing valuable data for analyzing the details of calls between inbox agents and end users. 
-
-**[Find Out More](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/defaulttables#1-types-of-default-tables)**
-
-
-----
-
-## Channels
-
-### 1. New Whatsapp Policy by Meta
-
-WhatsApp has introduced a new pricing policy for the messages that are delivered through its business platform and APIs based on the conversation initiator (user-initiated or business-initiated) and category.
-
-The new WhatsApp pricing model is based on 24-hour conversation sessions, while the older model is based on the number of template messages sent outside the user window.
-
-**[Learn More](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-pricing)**
-
-## Chat Widget
-
-### 1. Attachment validation to accept only supported file formats
-
-<center><img src="https://i.imgur.com/0GU94m6.png" width="40%"/></center>
-
-The chat widget provides an option to allow or block specific file formats for users to upload documents, images, and other files. 
-
-**[Find Out More](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settingsr)**
-
-
-
-### 2. Image support in callout banners
-
- <center> <img src="https://i.imgur.com/lSlDg4H.png" alt="drawing" width="40%"/> </center> 
-
-This feature will make your banners more visually appealing and eye-catching optimizing it for marketing purposes.
-
-
-**[Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#111-callout-banner)**
-
-
-
-
-### 3. Single select transaction card
-
- <center>  <img src="https://i.imgur.com/iCZ7TlR.png" alt="drawing" width="60%"/></center>
-
-Similar to MSTC (Multi-select transaction card) with the same set of functionalities, the SSTC card has been implemented in the chat widget, to allow the user to select only one option in the card. 
-
-**[Read the Documentation](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#14-cards)**
-
-
-
-### 4. Customizable scroll behaviour in Chat widget
-
- <center>    <img src="https://i.imgur.com/rFuoolV.png" alt="drawing" width="50%"/> </center> 
-
-By default, the chatbot on the platform automatically scrolls to the bottom when a new message is received from an agent. However, the platform now allows users to customize the scroll behavior. This can be done by accessing the Settings page of the chat widget and selecting options such as top, bottom, or off.
-
-
-**[Try it Out](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settings)**
-
-
-
-### 5. Preview PWA bot
-
-   <center> <img src="https://i.imgur.com/FZ7MDhA.png" alt="drawing" width="60%"/> </center> 
-
-On the yellow.ai platform, you have the option to preview your PWA bot directly within the platform itself. Alternatively, you can share the live PWA bot link directly with your users or embed it on your website. 
-
-**[Try it Out](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#24-deploy-chat-widget)**
-
-
-
-### 6. Flexibility to place the bot anywhere on the website
-
- You can now move the bot icon horizontally and place it anywhere on the screen.
-
------
 
 ## Integrations
 
-### 1. Multi-account support
+### 1. Yellow.ai app on Oracle responsys
 
-Yellow.ai has introduced support for multi-account integration, allowing you to connect multiple merchant accounts to your platform. This means that if you have multiple merchant accounts of a specific integration, you can now link them with your Yellow.ai platform. Currently, there is a limit of five accounts per integration.
+You can now integrate Yellow.ai with Oracle Responsys, offering valuable engagement opportunities with your leads and contacts on their preferred messaging platform. With the power of WhatsApp, you can effortlessly conduct text message and multimedia marketing campaigns using the Oracle Responsys Program Designer.
 
-   ![](https://i.imgur.com/SbB0Zj8.png)
-
-### 2. Additional events in Shopify
-
-   ![](https://i.imgur.com/kfLGfhy.png)
-
- In Shopify, the following events have been implemented to ensure that users can purchase the items they have added to their shopping cart.
-
-* shopifyCheckoutCreated
-* shopifyOrdersUpdated	
-* shopifyCartCreate	
-* shopifyCartEmpty
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/oracle-responsys)**
 
 
+![](https://i.imgur.com/lQN7YnV.png) 
 
-### 3. Upcoming releases
 
-* Oracle to support integration with Yellow.ai.
-* New integration support - Service Now live chat.
+### 2. Yellow.ai agent assist on Zendesk
+
+Our genAI tools empower agents by offering chat summaries upon ticket creation on Zendesk, displaying real-time customer emotions, providing live chat suggestions, and enhancing knowledge base search with our searchGPT technology.
+
+
+## Engagement
+
+### 1. Introducing AI-Based Flow Campaigns
+
+We are excited to announce our new AI-Based Flow Campaigns that can generate a Flow campaign using advanced artificial intelligence technology. This innovative approach leverages powerful algorithms to automatically create effective and engaging campaigns tailored to your specific needs. The AI analyses various parameters, including target audience, campaign goals, and desired outcomes, to generate a customised flow that optimises user experience and maximises campaign performance.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/flow-ai)**
+
+
+![](https://i.imgur.com/HfDC8qn.png) 
+
+
+
+### 2. Flow Campaign UI Enhancements
+
+We have made significant improvements to our Flow Campaign user interface to accommodate our new AI-based campaign, making it even more intuitive and user-friendly. You can expect a more efficient campaign management experience and look forward to the introduction of additional options in the near future. Stay tuned for more updates.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#create-flow-campaign)**
+
+![](https://i.imgur.com/SbCfwW7.png) 
+
+### 3. Support for new statuses in WhatsApp Templates
+
+We have implemented new WhatsApp template statuses - "1st Phase" and "2nd Phase." With these updates, you will receive timely alerts whenever users report an active WhatsApp template as low quality or spam. As a proactive measure to maintain template quality, any reported template will be automatically blocked to prevent further complaints. You can update the template to seamlessly continue using it in your campaigns.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#4-view-whatsapp-template-approval-or-rejection-status)**
+
+![](https://i.imgur.com/l7S80oi.png) 
+
+## Inbox
+
+### 1. Live monitoring dashboard for Inbox admins and supervisors to oversee latest live chats
+
+
+The live monitoring dashboard provides real-time chat updates, comprehensive chat history access, FRT and CRT metrics calculation, and preparedness for future SLA integration to enhance support services.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/inbox/monitor#dashboard-to-monitor-live-chats)**
+
+
+![](https://i.imgur.com/oNSUoUs.png) 
+
+
+### 2. Email canned response for better accuracy of the search results
+
+The enhanced email canned responses now allow users to search based on both keywords and response content, optimizing search accuracy and saving valuable time. This feature is accessible in both the **Settings** page for creating Email canned responses and in the email editor when adding canned responses.
+
+## Channels
+
+### 1. Introducing Instagram channel on Yellow.ai
+
+Connect your Instagram Professional account with the Yellow platform, and gain access to various communication features for your bot, including direct messages, comments or private replies, story mentions, story replies, and media sharing. This capability enables businesses to effectively engage with users by responding to their comments and queries, fostering better interactions.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/instagram-limitations#4-supported-features)**
+
+### 2. Shopee Channel
+
+Yellow.ai integration with Shopee empowers the e-commerce platform in Southeast Asia with the ability to send purchase-related instructions to users from the bot, connect users to live agents, and track order details seamlessly.
+
+
+### 3. New pricing plan for Twitter
+
+Twitter has recently introduced new pricing plan limits, and to ensure smooth interactions with Yellow's bot, it is advisable to opt for either the Pro or Enterprise plan.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/twitter#twitter-pricing-plans)**
+
+
+
+
