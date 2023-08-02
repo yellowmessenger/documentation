@@ -1,64 +1,47 @@
 ---
-title: Workflow campaign report
-sidebar_label: Workflow campaign report
+title: Flow campaign report
+sidebar_label: Flow campaign report
 ---
 
+The campaign report provides comprehensive insights and data regarding the performance and results of your Flow campaigns. This helps conveniently monitor and assess the performance of your outbound campaigns without the hassle of downloading and analyzing CSV reports.
 
-Workflow Campaign provides a snapshot of your ongoing and completed campaigns. There are multiple places where the analytics is showcased with respect to different information on each.
+:::note
+Reports are available for Completed and Scheduled campaigns.
+:::
 
-![](https://i.imgur.com/r7QVs9M.png)
+To view a campaign report:
+
+* On the Flows page, click on the **Analytics** icon.
+
+<center>
+<img src="https://i.imgur.com/7CWYYoK.png" width="80%"/>
+</center>
+
+You will see the performance of the campaign .
+<center>
+<img src="https://i.imgur.com/j6iA1G9.png" width="80%"/>
+</center>
+
+KPI | Description
+--- | -----------
+Users Entered Flow | The number of unique users who have initiated or entered the flow campaign.
+Users in Flow | The number of active users currently engaged within the flow campaign.
+Users Exited Flow | The count of users who have left or exited the flow campaign before completing it.
+Users Who Achieved Goal | The total count of users who successfully completed the predefined goal or objective of the flow campaign.
 
 
-## 1. View summary report
 
-On the **Engage** > **Outbound** > **Journeys** page, click on the campaign for which you want to see the report. Choose your preferred duration using the date range boxes on the top-right.
+## View channel statistics
 
-   ![](https://i.imgur.com/SdZ6XOf.png)
+To view channel-wise report, click **Channel statistics**.
 
-***
-
-
-## 2. View channel-wise report
-
-To view channel-wise report, click View channel wise statistics.
-
-   ![](https://i.imgur.com/mRmVyYC.png)
+   ![](https://i.imgur.com/VlDhwgI.png)
 
 
-   ![](https://i.imgur.com/pOtMNMV.png)
+   <center><img src="https://i.imgur.com/pOtMNMV.png" width="60%"/></center>
 
 * Total notifications sent - Channel wise: This shows the pie chart view of the total notifications and the contribution of each channel in percentages.
 * User count: It shows the detailed break-up of message statuses (Sent, Delivered, Read, and Failed) for each channel.
-
-***
-
-## 3. Downoad report
-
-To download a campaign report -  
-
-Post completion of Workflow Campaigns, you can also download the report in a CSV file.
-
-1. On the Journeys home page, navigate to the campaign and click the More options icon > **Request report**.
-
-   ![](https://i.imgur.com/9X62jwu.png)
-
-
-2. An option to download the report is sent to the registered email address, and the same is sent on Slack for Yellow.ai employees. 
-
-   Click on the link. You will be redirected to the Download page. You will be prompted to log in if you have not logged in to the Yellow.ai platform.
-   
-   ![](https://i.imgur.com/aVUXWXd.png)
-
-
-3. Click **Download**.
-   
-   <img src="https://i.imgur.com/MCWoQpR.png" width="50%"/>
-
-
-Here is an example of a sample CSV file - 
-
-![](https://i.imgur.com/8NWIxEh.png)
-
 
 
 Metric | Description

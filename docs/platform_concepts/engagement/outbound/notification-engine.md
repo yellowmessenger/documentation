@@ -264,7 +264,7 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 1406 - parameterIsInvalid | One or more parameters are invalid (wa tier - cloud-api/onprem)      |
 | 1406 - invalidUser  | The recipient WhatsApp number is invalid / The user doesn't have a WhatsApp Account (wa tier - cloud-api/onprem) |
 | 1407 - accessTokenExpired  | Get a new access token. (WA tier - cloud-api/onprem)  |
-| 1408 - contactsError  | Too many errors. Client-side rate limit has been hit (WA tier - cloud-api/onprem).   |
+| 1408 - contactsError  | Client-side rate limit has been hit. Unable to deliver message. Reasons can include: <br/>The recipient phone number is not a WhatsApp phone number. <ol><li>Recipient has not accepted our new Terms of Service and Privacy Policy.</li><li> Recipient using an old WhatsApp version; must use the following WhatsApp version or greater: <br/> * - Android: 2.21.15.15<br/> *  - SMBA: 2.21.15.15 <br/> * - iOS: 2.21.170.4 <br/> * - SMBI: 2.21.170.4  <br/> *  - KaiOS: 2.2130.10 <br/> * - Web: 2.2132.6 </li></ol>
 | 1409 - phoneNumberNotAllowed | You are not allowed to onboard this phone number in Cloud API, please contact us for more information (wa tier - cloud-api/onprem)  |
 | 1410 - temporaryBlockForPolicyViolations | Wait and retry the operation. (wa tier - cloud-api/onprem)     |
 | 1411 - duplicatePost | Duplicate posts cannot be published consecutively. Change the content of the post and try again. (wa tier - cloud-api/onprem)     |
@@ -291,8 +291,7 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 1444 - System overloaded	| WhatsApp cloud API system is overloaded.
 | 1500 - messageExpired | The message failed to send due to some issue with the WhatsApp Business Account. It may be down or disconnected for more than 1 day.
 | 1501 - ttlLimitReached | The message failed to send during its Time To Live (TTL) duration. Please resend the message.
-| 1408       | Unable to deliver message. Reasons can include: <br/>The recipient phone number is not a WhatsApp phone number. <ol><li>Recipient has not accepted our new Terms of Service and Privacy Policy.</li><li> Recipient using an old WhatsApp version; must use the following WhatsApp version or greater: <br/> * Android: 2.21.15.15<br/> *  SMBA: 2.21.15.15 <br/> * iOS: 2.21.170.4 <br/> * SMBI: 2.21.170.4  <br/> *  KaiOS: 2.2130.10 <br/> * Web: 2.2132.6 </li></ol>
-| 14271 - invalidParameter | One or more parameters are invalid.
+| 14271 - invalidParameter | One or more parameters are invalid. (WA tier - cloud-api/onprem).   |
 | 14272 - Invalid user | The recipient WhatsApp number is invalid or the user doesn't have a WhatsApp account.
 
 

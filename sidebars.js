@@ -830,8 +830,9 @@ module.exports = {
           items: [
             "platform_concepts/engagement/flows_campaign",    
              "platform_concepts/engagement/flow-ai",
-             "platform_concepts/engagement/reuse-flow-campaigns",
-             "platform_concepts/engagement/manage-flow-campaign"
+             "platform_concepts/engagement/clone-flow-campaigns",
+             "platform_concepts/engagement/manage-flow-campaign",
+             "platform_concepts/engagement/flow-report",
       ],
     },
     
