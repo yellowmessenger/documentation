@@ -9,16 +9,37 @@ Businesses can use the Line to provide product information, promote their brands
 
 Let's say that a user wants immediate assistance regarding product information. In such cases, users can converse with the bot that is connected to your business's Line channel. The bot responds to the user's queries without having to wait for the agents to respond. 
 
-In this article, you will learn:
+## Character limitations of Line channel
 
-* [How to create a Line account?](#1-create-a-business-account-on-line)
-* [How to setup Line channel using Developer portal?](#2-setup-line-channel-using-developer-portal)
-* [How to connect Line business channel to your bot?](#3-connect-line-channel-to-your-bot)
-* [How to setup webhook on Line channel?](#4-setup-webhook-on-line-channel)
-* [How to test your bot on Line channel?](#5-test-your-bot-on-line)
-* [What are the character limitations of Line channel?](#6-limitations-of-line-channel)
+In this section, you can view the character limitations of Line channel.
 
-## 1. Create a business account on Line 
+##### **Quick reply**
+
+| Quick reply options | Character limit |
+|---------------------|-----------------|
+| Quick reply button name and value | The maximum number of characters supported is 20.  |
+| Quick reply title | The maximum number of characters supported is 300.  | 
+
+##### **Carousel**
+
+| Carousel options | Character limit |
+|---------------------|-----------------|
+| Title length | The maximum number of characters supported is 40 | 
+| Title value length | The maximum number of characters supported is 60 |
+| Column | The maximum number of characters supported is 10 | 
+| Button text | The maximum number of characters supported is 20 |
+| Button value | The maximum number of characters supported is 40 |
+
+##### **Message types** 
+
+| Message type | Character limit |
+|--------------|-----------------|
+| Text message | The maximum number of characters supported is 5000  | 
+| Image	| Image URL length - 2000, file size - 10 MB |
+| Video	| Video URL length - 2000, file size - 200 MB |
+| Audio | Audio URL length - 2000, file size - 200 MB | 
+
+## Create a business account on Line 
 
 You can create a Line business account using the [Line official account](https://www.linebiz.com/jp-en/other/) app or website. Before creating an account, you need to choose the account type and subscription plan:
 
@@ -49,7 +70,7 @@ To create a Line business account, follow these steps:
 
 6. Your Line account will be created successfully. 
 
-## 2. Setup Line channel using developer portal
+## Setup Line channel using developer portal
 
 :::note
 To know more about how to setup Line channel using developer portal, click [here](https://developers.line.biz/en/docs/messaging-api/getting-started/)
@@ -79,7 +100,7 @@ To set up Line channel using Developer portal, follow these steps:
    ![](https://i.imgur.com/PSsaHF0.png)
 7. Your channel will be successfully set up with the channel token and secret ID.    
 
-## 3. Connect Line channel to your bot
+## Connect Line channel to your bot
 
 To configure the Line channel on the Yellow.ai platform, follow the below steps:
 
@@ -123,7 +144,7 @@ Contact **support@yellow.ai** for the Webhook URL.
  
 5. You can test your bot after configuring a webhook.
 
-## 5. Test your bot on Line
+## Test your bot on Line
 
 To test your bot on Line, you have to download Line from the Playstore or App Store, depending on your mobile device's operating system. After downloading the Line app on your mobile device, you can test your bot. 
 
@@ -144,32 +165,3 @@ To test your bot on Line, follow these steps:
    <img src="https://i.imgur.com/QsSbRKw.png" alt="drawing" width="40%"/> 
 6. Once you have tested your bot, the configuration of the Line channel for your business is completed.
 
-## 6. Character limitations of Line channel
-
-In this section, you can view the character limitations of Line channel.
-
-### 6.1 Quick reply
-
-| Quick reply options | Character limit |
-|---------------------|-----------------|
-| Quick reply button name and value | The maximum number of characters supported is 20.  |
-| Quick reply title | The maximum number of characters supported is 300.  | 
-
-### 6.2 Carousel
-
-| Carousel options | Character limit |
-|---------------------|-----------------|
-| Title length | The maximum number of characters supported is 40 | 
-| Title value length | The maximum number of characters supported is 60 |
-| Column | The maximum number of characters supported is 10 | 
-| Button text | The maximum number of characters supported is 20 |
-| Button value | The maximum number of characters supported is 40 |
-
-### 6.3 Message types 
-
-| Message type | Character limit |
-|--------------|-----------------|
-| Text message | The maximum number of characters supported is 5000  | 
-| Image	| Image URL length - 2000, file size - 10 MB |
-| Video	| Video URL length - 2000, file size - 200 MB |
-| Audio | Audio URL length - 2000, file size - 200 MB | 

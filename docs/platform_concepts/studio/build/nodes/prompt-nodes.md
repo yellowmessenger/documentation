@@ -385,7 +385,7 @@ return new Promise(resolve => {
 This node is activated only upon request.
 :::
 
-The dynamic chat node simplifies conversation design by eliminating the need for building nodes or designing flows. You can directly type the instructions for the node, and the bot will automatically execute them. This saves time since you don't have to create complex flows or add multiple nodes. Just type the instructions, and the bot will handle the conversation accordingly.
+The dynamic chat node simplifies conversation design by eliminating the need for building nodes or designing flows. You can directly type the instructions for the node, an d the bot will automatically execute them. This saves time since you don't have to create complex flows or add multiple nodes. Just type the instructions, and the bot will handle the conversation accordingly.
 
 You can also add additional nodes to dynamic node to build the rest of the flow.
 
@@ -402,8 +402,8 @@ Once you click the dynamic node, these are the options you see first.
 
 1. **Begin the prompt with clear instructions, separating the instruction and context using ### or """.**
 
-   **Wrong** ❌: Summarize the text below as a bullet point list of the most important points.
-**Correct** ✅:  Summarize the text below as a bullet point list of the most important points.
+   * **Wrong** ❌: Summarize the text below as a bullet point list of the most important points.
+   * **Correct** ✅:  Summarize the text below as a bullet point list of the most important points.
 
      """
      {text input here}
@@ -411,23 +411,23 @@ Once you click the dynamic node, these are the options you see first.
 
 2. **Provide specific, descriptive, and detailed requirements regarding the desired context, outcome, length, format, style, etc.**
 
-   **Wrong** ❌: Write a poem about OpenAI. 
-   **Correct** ✅: Write a short inspiring poem about OpenAI, focusing on the recent DALL-E product launch (DALL-E is a text to image ML model) in the style of a {famous poet}
+   * **Wrong** ❌: Write a poem about OpenAI. 
+   * **Correct** ✅: Write a short inspiring poem about OpenAI, focusing on the recent DALL-E product launch (DALL-E is a text to image ML model) in the style of a {famous poet}
 
 3. **Minimize the use of vague and imprecise descriptions.**
 
-   **Wrong** ❌: The description for this product should be fairly short, a few sentences only, and not too much more.
-   **Correct** ✅: Use a 3 to 5 sentence paragraph to describe this product.
+   * **Wrong** ❌: The description for this product should be fairly short, a few sentences only, and not too much more.
+   * **Correct** ✅: Use a 3 to 5 sentence paragraph to describe this product.
 
 4. **Include relevant details in your query to ensure more accurate and pertinent answers.**
 
-   **Wrong** ❌: How do I add numbers in Excel?
-   **Correct** ✅: How do I add up a row of dollar amounts in Excel? I want to do this automatically for a whole sheet of rows with all the totals ending up on the right in a column called "Total".
+   * **Wrong** ❌: How do I add numbers in Excel?
+   * **Correct** ✅: How do I add up a row of dollar amounts in Excel? I want to do this automatically for a whole sheet of rows with all the totals ending up on the right in a column called "Total".
 
 5. **Articulate the desired output format through examples**
 
-   **Wrong** ❌: Extract the entities mentioned in the text below. Extract the following 4 entity types: company names, people names, specific topics and themes.
-   **Correct** ✅:Extract the important entities mentioned in the text below. First extract all company names, then extract all people names, then extract specific topics which fit the content and finally extract general overarching themes
+   * **Wrong** ❌: Extract the entities mentioned in the text below. Extract the following 4 entity types: company names, people names, specific topics and themes.
+   * **Correct** ✅:Extract the important entities mentioned in the text below. First extract all company names, then extract all people names, then extract specific topics which fit the content and finally extract general overarching themes
 
    Desired format:
    Company names: <comma_separated_list_of_company_names>
@@ -437,9 +437,8 @@ Once you click the dynamic node, these are the options you see first.
 
 6. **Instead of just saying what not to do, say what to do instead**
 
-   **Wrong** ❌: The following is a conversation between an Agent and a Customer. DO NOT ASK USERNAME OR PASSWORD. DO NOT REPEAT.
-
-    **Correct** ✅:The following is a conversation between an Agent and a Customer. The agent will attempt to diagnose the problem and suggest a solution, whilst refraining from asking any questions related to PII. Instead of asking for PII, such as username or password, refer the user to the help article www.samplewebsite.com/help/faq
+   * **Wrong** ❌: The following is a conversation between an Agent and a Customer. DO NOT ASK USERNAME OR PASSWORD. DO NOT REPEAT.
+   * **Correct** ✅:The following is a conversation between an Agent and a Customer. The agent will attempt to diagnose the problem and suggest a solution, whilst refraining from asking any questions related to PII. Instead of asking for PII, such as username or password, refer the user to the help article www.samplewebsite.com/help/faq
 
 #### **Input list**
 

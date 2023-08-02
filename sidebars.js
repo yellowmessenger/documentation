@@ -145,6 +145,9 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/getting-started'},
       collapsed: true,
       items: [
+      "platform_concepts/Getting Started/account-setup",
+      "platform_concepts/Getting Started/upgrade",  
+
       "platform_concepts/Getting Started/resources",
 
       {
@@ -152,8 +155,6 @@ module.exports = {
         label: "Manage your account",
         collapsed: true,
         items: [
-          "platform_concepts/Getting Started/account-setup",
-          "platform_concepts/Getting Started/upgrade",  
           "platform_concepts/Getting Started/user-account-settings", 
           "platform_concepts/Getting Started/add-bot-collaborators",
           "platform_concepts/Getting Started/modify-bot-configuration",
@@ -1286,6 +1287,7 @@ module.exports = {
       label: "2023 updates",
       collapsed: true,
       items: [
+        "updates/2023/jun2023",
         "updates/2023/may2023",
         "updates/2023/april2023",
         "updates/2023/mar2023",
