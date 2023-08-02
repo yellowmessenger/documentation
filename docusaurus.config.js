@@ -54,6 +54,7 @@ module.exports = {
         alt: "yellow.ai",
         src: "img/Yai-logo-yellow.svg",
         href: "https://yellow.ai",
+        target: "_self",
       },
       items: [
         {
