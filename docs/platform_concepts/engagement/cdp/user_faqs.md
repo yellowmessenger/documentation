@@ -44,6 +44,20 @@ Additionally, you can enable the **Prefix a calling code** option to automatical
 
 </details>
 
+<details>
+<summary>
+Can I change the datatype of a user property?</summary>
+
+Unfortunately, once created, you cannot modify the data type of a property. It's essential to plan and choose the right datatype from the beginning to ensure accurate data management.
+</details>
+
+<details>
+<summary>
+Can I delete a user from user 360?</summary>
+
+No, deleting a user from user 360 is not possible. Once a user is created, their data becomes a permanent part of the user 360 database. Be cautious when adding users and ensure the accuracy of the information provided.
+</details>
+
 
 ## Data import
 
