@@ -318,9 +318,11 @@ Currently, there are three delivery statuses supported - sent, delivered, and re
 
 #### 2. Conversion goal 
 
-Track the conversion event as the campaign goal.
+This refers to the process of identifying a specific user action or interaction that indicates a successful completion of a predefined objective or desired outcome.
 
-![](https://i.imgur.com/2jDXx4C.png)
+When users perform the conversion event, it signifies that they have taken the intended action or achieved the goal you have set for the campaign. This could be anything from making a purchase, signing up for a newsletter, filling out a form, or any other action that aligns with the campaign's objectives.
+
+   ![](https://i.imgur.com/2jDXx4C.png)
 
 
 In **Select event**, choose the event that you want to track.
