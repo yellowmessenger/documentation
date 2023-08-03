@@ -47,8 +47,9 @@ Shopify is an e-commerce platform that lets merchants all over the world to buil
   * write_scripts_tags 
   * read_script_tags
 
-8. Go to API credentials and copy **API key and secret key**.
-   ![](https://i.imgur.com/91ng6dO.png)
+8. Go to **API credentials** section and copy the **Admin API access token** that is displayed during the app creation process on Shopify and the **API secret key**.
+
+   ![](https://i.imgur.com/GoqZ8fk.png)
 
 
 
