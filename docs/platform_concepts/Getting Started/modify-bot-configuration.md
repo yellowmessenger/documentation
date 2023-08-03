@@ -1,6 +1,6 @@
 ---
 title: Managing bot configuration
-sidebar_label : Modify bot details 
+sidebar_label : Manage bot data 
 keywords : [reset bot, pause bot, modify bot]
 ---
 

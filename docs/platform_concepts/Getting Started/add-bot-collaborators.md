@@ -1,6 +1,6 @@
 ---
 title: Bot access management
-sidebar_label: User roles & permissions
+sidebar_label: Manage bot users
 keywords : [access control, bot invite, invite users, send bot invite, share bot access]
 ---
 
@@ -11,6 +11,23 @@ When creating an end-to-end bot flow, there may be instances where certain flows
 - **Collaborators** will have the access level provided by the super admin. If you wish to revoke access, you'll need to remove it separately.
 :::
 
+## User roles and permission 
+
+Following are the user roles available for the bot: 
+
+| Role | Description |
+|------ | --------- |
+| Super Admin | The owner of the bot has access to everything. <br/>Can provide *Approver* access to someone else. <br/>  Can mask certain Database columns on UI. <br/>View data in the bot tables and can [mask columns of a table](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.|
+|Admin | Has entire access to all the modules.|
+|Developer | Has entire access to all the modules.|
+|Database Viewer | Can only view the database.|
+| Approver | Can publish bot from staging to production. An Approver should also have Developer access.|
+| Inbox (Admin) | Can provide support for chat queries or tickets of the bot, and can view the analytics of his/her performance (First response time, number of tickets closed).|
+|Inbox (Agent) | Agent can only respond to chats received from the user.|
+|Insights (Analytics) | Has access to standard analytics, bot health monitoring, and user journey and goal tracking.|
+|Insights (Admin) | Has access to all the available data and analytics.|
+|Engagement (Admin) | Can send campaigns and configure audience.|
+|Engagement (User) | Can only schedule campaigns.|
 
 ## Share bot access
 
@@ -24,23 +41,7 @@ To share bot access with other users, follow these steps:
     - Enter the official **Email** address of the user.
     - Select your preferred role(s) in **Access control**. You can select more than one role for a user.
 
-| Role | Description |
-|------ | --------- |
-| Super Admin | The owner of the bot has access to everything. <br/>Can provide *Approver* access to someone else. <br/>Can mask certain Database columns on UI. <br/>View data in the bot tables and can [mask columns of a table](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.|
-|Admin | Has entire access to all the modules.|
-|Developer | Has entire access to all the modules.|
-|Database Viewer | Can only view the database.|
-| Approver | Can publish bot from staging to production. An Approver should also have Developer access.|
-| Inbox (Admin) | Can provide support for chat queries or tickets of the bot, and can view the analytics of his/her performance (First response time, number of tickets closed).|
-|Inbox (Agent) | Agent can only respond to chats received from the user.|
-|Insights (Analytics) | Has access to standard analytics, bot health monitoring, and user journey and goal tracking.|
-|Insights (Admin) | Has access to all the available data and analytics.|
-|Engagement (Admin) | Can send campaigns and configure audience.|
-|Engagement (User) | Can only schedule campaigns.|
-
-
 <img  src="https://i.imgur.com/cBnpqIe.png"  width="50%"/>        
-
 
 c. Click **Save**. The invited user will receive an email with the bot access invitation.
 
