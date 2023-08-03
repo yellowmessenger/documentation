@@ -325,3 +325,12 @@ The following are examples of supported opt-in methods:
 
 </p>
 </details>
+
+<details><summary><b>Why is the bot not responding when it is connected to the WA channel?</b></summary>
+<p>
+
+Ensure that you have created the bot with intents and configured the flows using the the same intent.
+
+</p>
+</details>
+

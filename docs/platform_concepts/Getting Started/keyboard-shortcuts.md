@@ -1,6 +1,6 @@
 ---
 title: Simplify tasks with keyboard shortcuts
-sidebar_label: Keyboard shortcuts
+sidebar_label: Platform keyboard shortcuts
 ---
 
 A range of keyboard shortcuts are designed to enhance your experience by streamlining access to key options and boosting productivity for repetitive tasks. The table illustrates where each specific shortcut key can be utilized:

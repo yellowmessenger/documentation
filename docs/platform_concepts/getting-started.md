@@ -3,30 +3,24 @@ title: Ultimate AI bot building platform
 sidebar_label: Yellow.ai
 ---
 
-## App vs Cloud
-
-When it comes to building AI bots, Yellow.ai offers two powerful options: **cloud.yellow.ai and app.yellow.ai**.
-- **App.yellow.ai** is our code-based platform, catering to users who prefer a more hands-on approach. It offers a drag-and-drop interface that empowers users with advanced customization options and full control over their bot's behavior. This platform is ideal for developers or businesses with specific coding requirements or the need for highly tailored bot functionalities.
-- **Cloud.yellow.ai** is our no-code platform, designed specifically for those who want to create bots and automate processes without writing a single line of code. With its intuitive interface and user-friendly features, you can easily design and deploy AI bots, regardless of your technical expertise. Say goodbye to complex coding and hello to simplicity and efficiency.
-
-
-While both platforms enable you to create and deploy chat bots, there are distinct differences that make the cloud.yellow.ai platform the recommended choice for many businesses, such as: 
-- Accessibility and ease of use
-- Accelerated development workflow
-- Flexibility and agility
-- Seamless collaboration
-- Continuous innovation
-
-:::info
-
-Transitioning from app.yellow.ai to cloud.yellow.ai is a seamless process. For detailed instructions on how to migrate, refer to our [migration guide](https://docs.yellow.ai/docs/cookbooks/migration-guide). 
-:::
-
-## Cloud.yellow.ai
-
 Yellow.ai is an advanced cloud-based software platform designed to revolutionize the way businesses build AI bots. With our powerful technology, you can create intelligent and highly efficient bots that provide exceptional customer support experiences. By combining the capabilities of AI and human expertise, Yellow.ai empowers you to deliver personalized interactions, automate processes, and streamline customer engagement across multiple channels.
 
-![](https://hackmd.io/_uploads/HkREzQHq2.png)
+Yellow.ai offers two options to build powerful bots: **cloud.yellow.ai and app.yellow.ai**.
+
+
+- **App.yellow.ai** is our **code-based platform**, catering to users who prefer a more hands-on approach. It offers a drag-and-drop interface that empowers users with advanced customization options and full control over their bot's behavior. This platform is ideal for developers or businesses with specific coding requirements or the need for highly tailored bot functionalities. All the new features will only be available on cloud platform.
+- **Cloud.yellow.ai** is our **no-code platform**, designed specifically for those who want to create bots and automate processes without writing a single line of code. With its intuitive interface and user-friendly features, you can easily design and deploy AI bots, regardless of your technical expertise. Say goodbye to complex coding and hello to simplicity and efficiency. Following are the **additional features** that you can leverage with the [Cloud platform](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#21-request-information):
+    - Accessibility and ease of use
+    - Accelerated development workflow
+    - Flexibility and agility
+    - Seamless collaboration
+    - Continuous innovation
+
+:::info
+Not all Cloud features are available on the App. For a comprehensive and enhanced experience, we highly recommend migrating to the Cloud Platform. Detailed instructions on how to migrate can be found in our [migration guide](https://docs.yellow.ai/docs/cookbooks/migration-guide). You can reach out to your designated POC for further assistance.
+:::
+
+## Features of cloud platform
 
 ### Build powerful AI bots with ease
 

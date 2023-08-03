@@ -1,8 +1,7 @@
 ---
-title: Manage account settings
-sidebar_label: Account settings
+title: Manage your account settings
+sidebar_label: Manage your account
 ---
-
 
 After logging in successfully, you can manage various aspects of your account settings. The options available are explained below. 
 
@@ -104,6 +103,18 @@ Suppose you have utilized a pre-built bot template from the Marketplace to creat
 :::note
 Other team members who are not part of this organization won't have access to these downloaded templates. This ensures the security and privacy of your organization's bot templates.
 :::
+
+---
+
+## Log out of yellow.ai
+
+If you are inactive for a certain period, the platform will log you out for security purposes.
+However, this is not applicable to Inbox agents who handle tickets to ensure they respond promptly to customer queries without any disruptions.
+
+To logout manually, you can click **Logout** under the User account section.
+
+<img src="https://i.imgur.com/8M6qNvZ.png" alt="drawing" width="100%"/>
+
 
 
 

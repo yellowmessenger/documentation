@@ -1,13 +1,12 @@
 ---
-title: Setup your yellow.ai account and sign in
-sidebar_label: Set up & sign in
+title: Create your free yellow.ai account
+sidebar_label: Signup & create your first bot
 ---
 
+Upon signing up, your account will automatically be enrolled in the [Freemium plan](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade).
 
-**Signup demo video:**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="660" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Signup for yellow.ai 
 
 1. Go to cloud.yellow.ai.
 2. Choose your preferred mode of signup.
@@ -20,57 +19,88 @@ sidebar_label: Set up & sign in
     * Provide your contact number along with the country code.
     ::: 
 
-4. On the following screen, the bot will list the bots created by your team (if any). Click **Request access** to gain access to one of those bots or click **Get started** to build a bot from scratch.
+4. Click **Get started** to build a bot from scratch.
 
-    <img src="https://i.imgur.com/MeQczsX.png" alt="drawing" width="80%"/>
+   :::info
+   You can see all the bots of your organization. To request access for a specific bot, click **Request access**.
+   <img src="https://i.imgur.com/MeQczsX.png" alt="drawing" width="80%"/>
+   :::
 
 5. Click **Get started** under the preferred use-case.
 
-    <img src="https://hackmd.io/_uploads/Syo9bakin.png" alt="drawing" width="80%"/>
+   <img src="https://hackmd.io/_uploads/Syo9bakin.png" alt="drawing" width="80%"/>
 
 6. Choose the industry your business belongs to. To skip the following steps, click **Skip for now**.
 
     ![](https://hackmd.io/_uploads/S1Q0-Tkon.png)
 
-In the following page, you can choose to either create a bot from scratch, or choose one of the predefined bot templates.
-
-### Create a bot from scratch
-
-1. In the **I would like to start afresh** field, describe the use case for which the bot is built.
-2. Click the **+Start from scratch** button.
-    
-    <img src="https://i.imgur.com/IfmeeWu.png" alt="drawing" width="60%"/>
-
-3. Select the bot type, the region of the bot and click **Create Project**.
-
-    <img src="https://i.imgur.com/86kgJxw.png" alt="drawing" width="50%"/>
 
 -----
 
+
+## Create your bot during signup
+
+<!--
+You will see two options to create a bot:
+
+1. [Start building from scratch to create all flows manually](#create-bot-from-scratch)
+2. [Use pre-built bot templates that come with predefined flows](#use-predefined-bot-templates)
+-->
+
+### Create bot from scratch
+
+1. In the **I would like to start afresh** field, describe the use case for which the bot is built.
+2. Click the **+Start from scratch** button.
+
+   <img src="https://hackmd.io/_uploads/H1Z--XLo2.png" alt="drawing" width="70%"/>
+
+3. Select the bot type, the region of the bot and click **Create Project**.
+
+   <img src="https://i.imgur.com/86kgJxw.png" alt="drawing" width="50%"/>
+
+
 ### Use predefined bot templates
 
-1. Choose the preferred use cases.
+1. Choose your preferred use cases.
 2. Click **Import+**.
 
-    <img src="https://i.imgur.com/Xjk1Rqc.png" alt="drawing" width="60%"/>
+   <img src="https://hackmd.io/_uploads/H1aHZQLj3.png" alt="drawing" width="70%"/>
 
 3. Choose the region of the bot and click **Create Project**.
 
-    <img src="https://i.imgur.com/4phs5gv.png" alt="drawing" width="50%"/>
-
----
-
-## Log out of yellow.ai
-
-The platform has an automatic logout feature that activates after a few minutes of inactivity. If you are inactive for a certain period, the platform will log you out for security purposes. To continue using the platform, you will need to sign in again.
-
-If you wish to log out of the platform voluntarily, you can do so by clicking on **Logout** under the User account section.
-
-<img src="https://i.imgur.com/8M6qNvZ.png" alt="drawing" width="100%"/>
-
-:::info
-Inbox agents who handle customer tickets are not automatically logged out after a period of inactivity. This is because they may be actively waiting for incoming tickets from other users, and automatic logout could disrupt their ability to respond promptly to customer queries.
-:::
+   <img src="https://i.imgur.com/4phs5gv.png" alt="drawing" width="50%"/>
 
 
-----
+------
+
+## Create a bot after signup 
+
+Once you finish the signup process, you can create a new bot by yourself in two ways.
+
+### Import from existing templates
+
+Yellow.ai has a huge collection of predefined templates. These templates have been designed to suit different buisness usecases and industries. You can create a fully functional chatbot within minutes by using our templates.
+
+1. Skim through the template collection and click the one that suits your usecase. 
+2. Click **Create**.
+
+<img src="https://i.imgur.com/WUyJg7x.png" alt="drawing" width="100%"/>
+
+### Create from scratch
+
+Bots can be created from scratch to specifically suit your individual business usecases. To do so, you need to start by providing your bot requisites.
+
+1. Click **Create a bot** from scratch.
+
+<img src="https://i.imgur.com/Y8Qg0Ea.png" alt="drawing" width="100%"/>
+
+2. Fill in the details on the **Create bot** dialog box and click **Create bot**.
+
+<img src="https://i.imgur.com/GSMvl22.png" alt="drawing" width="100%"/>
+
+3. Go to the **Studio** module to start creating bots. For a detailed guide, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/overview).
+
+### Publish the bot
+
+Once you have created a bot, you can publish it by following the steps you mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
+
