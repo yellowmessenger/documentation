@@ -1,6 +1,6 @@
 ---
-title: Generate API Keys
-sidebar_label : API key generation
+title: Generate your bot API keys
+sidebar_label : Generate your bot API keys
 tags: [bot token, get bot token, bot access token, access token, x-auth-token, bottoken]
 ---
 

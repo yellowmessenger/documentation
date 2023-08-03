@@ -1,6 +1,6 @@
 ---
-title: Bot access management
-sidebar_label: Manage bot users
+title: Manage your bot users
+sidebar_label: Manage your bot users
 keywords : [access control, bot invite, invite users, send bot invite, share bot access]
 ---
 
