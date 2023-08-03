@@ -1,6 +1,6 @@
 ---
 title: Get started with the platform 
-sidebar_label: UI elements
+sidebar_label: Get started with the platform
 ---
 
 ## Platform introduction

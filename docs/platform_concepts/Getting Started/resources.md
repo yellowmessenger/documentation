@@ -1,5 +1,5 @@
 ---
-title: Level up with Self-help Resources
+title: Level up with self-help resources
 sidebar_label: Self-help resources
 ---
 

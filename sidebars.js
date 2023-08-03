@@ -149,30 +149,18 @@ module.exports = {
       "platform_concepts/Getting Started/upgrade",  
 
       "platform_concepts/Getting Started/resources",
+      "platform_concepts/Getting Started/user-account-settings", 
+      "platform_concepts/Getting Started/add-bot-collaborators",
+      "platform_concepts/Getting Started/modify-bot-configuration",
 
-      {
-        type: "category",
-        label: "Manage your account",
-        collapsed: true,
-        items: [
-          "platform_concepts/Getting Started/user-account-settings", 
-          "platform_concepts/Getting Started/add-bot-collaborators",
-          "platform_concepts/Getting Started/modify-bot-configuration",
 
-        ],
-      },
-
-    {
-      type: "category",
-      label: "Understand the platform",
-      link: {type: 'doc', id: 'platform_concepts/Getting Started/platform-offerings'},
-      collapsed: true,
-      items: [
-        "platform_concepts/Getting Started/api-keys",
+        "platform_concepts/Getting Started/platform-offerings",
         "platform_concepts/Getting Started/keyboard-shortcuts",
-      ],
-    },
-    "platform_concepts/Getting Started/create-a-bot",
+        "platform_concepts/Getting Started/api-keys",
+
+ 
+
+    //"platform_concepts/Getting Started/create-a-bot",
 
       ]
     },
@@ -184,11 +172,9 @@ module.exports = {
   label: "Design",
   collapsed: true,
   items: [
-
-"platform_concepts/design/conversation-design",
-"platform_concepts/design/convdesignvoice", 
-          
-],
+      "platform_concepts/design/conversation-design",
+      "platform_concepts/design/convdesignvoice",   
+        ],
 },
 
 
@@ -226,9 +212,8 @@ module.exports = {
               link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/nodes'},
               collapsed: true,
               items: [
-                //"platform_concepts/studio/cloud-function",
-                
-               // "platform_concepts/studio/build/nodes/nodes",
+              //"platform_concepts/studio/cloud-function",
+              // "platform_concepts/studio/build/nodes/nodes",
                 "platform_concepts/studio/build/nodes/prompt-nodes",
                 "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/action-nodes",
