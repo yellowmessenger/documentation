@@ -326,7 +326,7 @@ The following are examples of supported opt-in methods:
 </p>
 </details>
 
-<details><summary><b>Why is the bot not responding when it is connected to the WA channel?</b></summary>
+<details><summary><b>Why bot not responding when it is connected to the WA channel?</b></summary>
 <p>
 
 Ensure that you have created the bot with intents and configured the flows using the the same intent.
@@ -334,3 +334,10 @@ Ensure that you have created the bot with intents and configured the flows using
 </p>
 </details>
 
+<details><summary><b>Can the WhatsApp bot auto-populate the OTP?</b></summary>
+<p>
+
+No, WhatsApp bot cannot automatically enter the OTP.
+
+</p>
+</details>

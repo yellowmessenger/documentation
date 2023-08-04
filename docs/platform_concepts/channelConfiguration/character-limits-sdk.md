@@ -27,7 +27,7 @@ The following are the character limits for Quick Reply (QR) options:
 | Single card | There is no limit to the number of buttons in a single card.<br/> ![](https://i.imgur.com/3fXaiTl.png) |
 | Buttons | There is no limit on the number of characters in each button (both name and text). <br/> ![](https://i.imgur.com/71iF98f.png) |
 | Title | There is no limit on characters in the title. <br/> ![](https://i.imgur.com/nGUyyl2.png) |
-| Carousel card | In Builder, there is a limit of 10 cards in a single carousel (there is no limit when these are generated via API).<br/> ![](https://i.imgur.com/TQdMKle.png)  |
+| Carousel card | In Builder, there is a limit of 10 cards in a single carousel (there is no limit when these are generated via API). The recommended dimensions for carousel images: Width - 248px and Height - 164.2px.<br/> ![](https://i.imgur.com/TQdMKle.png)  |
 | Description | There is no limit on characters in the description. <br/> ![](https://i.imgur.com/J7EgmYI.png) | 
 
 ## 4. Multi select
