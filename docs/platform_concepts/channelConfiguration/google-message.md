@@ -101,7 +101,7 @@ Supported formats | image/jpeg, image/jpg, image/png, image/webp
 
 | | |
 |- | - | 
-Min. cards | 2
+Min. cards | 2s
 Max. cards | 10
 Max. buttons in card | 4
 > [See more details](https://developers.google.com/business-communications/business-messages/reference/rest/v1/conversations.messages#carouselcard)
@@ -203,8 +203,14 @@ Add location IDs as per the operating mode of business. You must add at least on
 
    ![](https://i.imgur.com/3am8xDQ.gif)
 
-   
-   2. Click **Add location** to add another location.
+
+The following is the sample CSV file to upload multiple place ID's:
+
+   <img src="https://i.imgur.com/dUtuH1c.png" width="40%"/>
+
+<br/>  
+
+2. Click **Add location** to add another location.
 
 :::note
    To upload multiple locations at once, click *Upload locations* and upload the CSV file containing different place IDs.
