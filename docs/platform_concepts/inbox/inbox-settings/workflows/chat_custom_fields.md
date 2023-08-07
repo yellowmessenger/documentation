@@ -103,6 +103,18 @@ For example, when the customer sends "Charging broken", the agent can obtain the
 ![](https://i.imgur.com/HgH1VrT.png)
 :::
 
+### Custom field limitation based on data types
+
+You can only create the following number of custom fields for each data type: 
+
+| Data type | Number of custom fields allowed | 
+| --- | --- |
+| Array |  20 | 
+| Date | 10 | 
+| Hierarchical | 3 |
+| Keyword | 20 | 
+| Number | 10 |
+| String | 20 | 
 
 ### Transfer/Resolve chat ticket by providing custom fields
 

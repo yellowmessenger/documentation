@@ -22,9 +22,9 @@ To modify your bot's configured information:
 
 ---
 
-### Change bot information
+### Personalise your bot information
 
-You can customize the bot's details according to your business needs. Follow these steps to modify bot details:
+You can customise the bot's details according to your business needs. Follow these steps to modify bot details:
 
 1. Select the bot you want to modify and click on **Overview** > **Configure**.
 2. You can modify the bot's name, industry, timezone, and description.
@@ -38,7 +38,7 @@ The **Region** setting can be used for integrations, voice bots (for phone numbe
 
 ----
 
-### Disable bot response
+### Pause your bot
 
 :::note
 - Only super admin and admin have the ability to pause a bot.
@@ -59,7 +59,7 @@ You can temporarily disable a bot's response to make changes to its configuratio
 
 ----
 
-### Reset bot 
+### Reset your bot flows
 
 :::note
 Only super admin and admin have the ability to reset the bot.
@@ -75,6 +75,6 @@ Resetting a bot allows you to delete all past flows, conversations, and data ass
 
 ----
 
-### Delete bot
+### Delete your bot
 
 **You cannot delete a bot**. However, you have the flexibility to either pause the bot's response or reset it as needed.
