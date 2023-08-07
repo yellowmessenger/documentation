@@ -4,146 +4,123 @@ sidebar_label : Salesforce CRM
 ---
 
 
-Integrate your yellow.ai platform with your [Salesforce CRM](https://www.salesforce.com/in/crm/) account to recieve updates on your Salesforce objects and to perform actions like create and update objects, etc.,
+Salesforce is a cloud-based software company that provides a range of business solutions. At its core, Salesforce offers Customer Relationship Management (CRM) software, which helps businesses manage and analyze customer interactions and data. The CRM system allows companies to track sales, marketing efforts, customer service, and other aspects of their operations.
 
-:::note
+In addition to CRM, Salesforce has various subsidiaries and products that extend its capabilities. For instance, they offer live chat solutions to facilitate real-time customer support and engagement. Yellow.ai supportes integration with Salesforce CRM and [Salesforce Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforcelivechat#21-chat-with-salesforce-live-agent). 
 
-An object is a Salesforce CRM term which means a collection of related fields, which can be customized to suit the specific needs of an organization. These fields are essentially data points that hold specific pieces of information related to the entity represented by the object.
 
-For example, in Salesforce CRM, an **Account** object is used to store information about your customers or clients. This object can include fields such as **Company Name**, **Phone Number**, **Billing Address**, and **Industry**. By using the **Account** object, you can easily track and manage information about your customers, such as their contact information, buying history, and preferences.
-:::
+## Table of contents
 
-## 1. Connect Salesforce CRM with Yellow.ai
+1. [What Salesforce actions are available on Yellow.ai?](#salesforce-actions-that-can-be-managed-from-yellowai)
+2. [How to connect Salesforce CRM with Yellow.ai?](#connect-salesforce-crm-with-yellowai)
+3. [How to use Salesforce CRM from Yellow.ai?](#manage-your-salesforce-crm-through-bot-conversations)
+
+
+
+## Salesforce actions that can be managed from yellow.ai
+
+After integrating with Salesforce CRM, you can perform the following tasks directly from the Yellow.ai platform:
+
+| Action                          | Description                                                                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| createRecord                    | Creates a record in the integrated Salesforce account. The following are the different types of available records:<br/> 1. Accounts<br/>2. Contacts<br/>3. Opportunities<br/>4. Leads<br/>5. Cases<br/>6. Campaigns<br/>7. Products and Price Books<br/>8. Tasks<br/>9. Events<br/>10. Custom<br/>11. Objects<br/>12. Documents and Attachments                                                                                                     |
+| updateRecord                    | Updates a record in the integrated Salesforce account.                                                                                                       |
+| searchRecord                    | Looks for a particular info in the integrated Salesforce account.                                                                                            |
+| Query by SOQL                   | Query and retrieve data from the Salesforce database. You can create SQL queries by refering to the following links: <br/> [Link 1](https://trailhead.salesforce.com/content/learn/modules/apex_database/apex_database_soql) <br/> [Link 2](https://developer.salesforce.com/docs/atlas.en-us.soql_sosl.meta/soql_sosl/sforce_api_calls_soql.htm)                                                                                                       |
+| Get User Details by Owner ID    | In Salesforce, each user has a unique identifier known as the Owner Id. This process involves using the Owner Id of a record (e.g., Account, Contact, or Opportunity) to fetch details about the user who owns that particular record. |
+
+
+## Connect Salesforce CRM with Yellow.ai
+
+**Prerequsites:**
+
+1. An active Salesforce CRM account
+2. An active yellow.ai account.
 
 To connect your Salesforce CRM account with Yellow.ai, follow the these steps:
 
 1. Go to cloud.yellow.ai and click **Integrations** on the module switcher.
 
- ![](https://i.imgur.com/1EjCvqy.png)
+   ![](https://i.imgur.com/1EjCvqy.png)
 
 
 2. Search for **Salesforce CRM** in the search box or go to the category **CRM** > **Salesforce CRM**.
 
- ![](https://i.imgur.com/KkbUVou.png)
+   ![](https://i.imgur.com/Pqzthkd.png)
 
 
-3. Choose the **Salesforce CRM environment**. 
+3. Enter a name for your Salesforce account and choose the **Salesforce CRM environment**. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
 
- ![](https://i.imgur.com/xwCT87l.png)
-
-
-4. Click **Connect to Salesforce CRM** button. 
-
- ![](https://i.imgur.com/Rn5nXuX.png)
+   ![](https://i.imgur.com/kPLCOyk.png)
 
 
-5. Log in to your Salesforce CRM account in the following pop-up to establish this integration. 
+4. Click **Connect**.
+5.  You will see a pop-up screen to login with a list of accounts.
 
- ![](https://i.imgur.com/W4rrs7W.gif)
+5. Choose the respective account and click **Log in** 
 
- 6. If you have multiple accounts, follow the above mentioned steps to add each of them.
+   ![](https://i.imgur.com/W4rrs7W.gif)
 
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 5 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
+ 6. If you have multiple accounts, click **+Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 5 merchant accounts.
 
-
-
-## 2. Payload to access Salesforce CRM on app.yellow.ai 
-
-```
-app.executeIntegrationAction({
-        "action": <NODE TO BE EXECUTED>,
-        "dynamicParams": {
-    "context": [{
-       "key": "objects",
-       "value": <VALUE OF OBJECT SELECTED>,
-       "label": <VALUE LABEL OF OBJECT SELECTED>,
-       "nextStep":"fields"
-   }],
-   "botId": <BOT ID>,
-   "integrationName": "salesforce-crm",
-   "nodeName": <NODE NAME>,
-   "source": <SOURCE>,
-   "sender": <SENDER>,
-   "dynamicParams": {
-       <VALUES TO BE POPULATED>
-   }
-}})
-```
+![](https://i.imgur.com/dGxkcov.png)
 
 :::note
-Yellow.ai uses oAuth 2.0 to connect with a client's Salesforce account and refrains from retaining the client's authentication details. During the integration process, Yellow.ai redirects the user to either the [Salesforce login page](https://www.salesforce.com/in/?ir=1), or to the previously used subdomain within the same browser. If the integration is required in a different browser, the user must delete their cookies and then login via the Yellow.ai platform.
+1. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+2. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
 :::
 
-## 3. Use-case
+## Manage your Salesforce CRM through bot conversations
 
-Through this integration you can create,update,fetch objects and perform further more actions in your Salesforce CRM account.
+To carry out a certain action in your Salesforce account, follow these steps:
 
-:::note
-When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
-:::
+1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
 
-1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Salesforce CRM** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
+   ![](https://i.imgur.com/Wcacej3.png)
 
-![](https://i.imgur.com/oGH7ZRI.png)
+2. In whichever point you want the bot to access Salesforce, inlcude the Salesforce CRM node. For that drag the node connector, go to **Integrations** > **Salesforce CRM**.
+
+   ![](https://i.imgur.com/YVDlhAu.png)
+
+3. In the Salesforce CRM node, fill the following
+
+   ![](https://i.imgur.com/LtUHOev.png)
+
+* **Account name:** Choose the prefereed Salesforce CRM account.
+* **Action:** Choose the action to be performed.
+* **Select Objects:** Choose the Salesforce CRM object in which the chosen action should be performed.
+* Depending on the selected object, the corresponding fields will be shown. To collect this information from users, you must construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be used in this context.
 
 
-2. Click the node, choose the action to be performed and the object in which it has to be performed.
+4. Each Salesforce action returns a response as a JSON object or an array. [Store that response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to display that response to the end user.
 
-<img src="https://i.imgur.com/QdJX2pg.png" alt="drawing" width="50%"/>
+| Action                                                             | Syntax                                                                                    |
+|--------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| To consume the JSON object as it is                                | `{{variables.variable_name_object.choices.0.text}}`                                       |
+| To access fields in JSON object response                           | `{{variables.variable_name.field_name}}`                                                  |
+| To access array values| Use keys. For instance, to access the weather description from the below response, use<br/> `{{variables.API_var.weather.0.description}}`                                                                    because the value is inside an array and is the first value (0th index).|
+  
 
-<img src="https://i.imgur.com/BnqxBTc.png" alt="drawing" width="60%"/>
-
-
-**Sample success response:**
+**Sample response:**
 
 ```
 {
-   "success": true,
-   "message": "Execution Successful",
-   "data": {
-       "statusCode": 201,
-       "body": "{\"id\":\"00Q5i00000DcsbKEAR\",\"success\":true,\"errors\":[]}",
-       "headers": {
-           "date": "Tue, 21 Feb 2023 09:03:59 GMT",
-           "set-cookie": [
-               "CookieConsentPolicy=0:1; path=/; expires=Wed, 21-Feb-2024 09:03:59 GMT; Max-Age=31536000",
-               "LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Wed, 21-Feb-2024 09:03:59 GMT; Max-Age=31536000",
-               "BrowserId=re5NTLHGEe2nD8spPHPlfg; domain=.salesforce.com; path=/; expires=Wed, 21-Feb-2024 09:03:59 GMT; Max-Age=31536000"
-           ],
-           "strict-transport-security": "max-age=63072000; includeSubDomains",
-           "x-content-type-options": "nosniff",
-           "x-xss-protection": "1; mode=block",
-           "x-robots-tag": "none",
-           "cache-control": "no-cache,must-revalidate,max-age=0,no-store,private",
-           "sforce-limit-info": "api-usage=16/15000",
-           "location": "/services/data/v51.0/sobjects/Lead/00Q5i00000DcsbKEAR",
-           "content-type": "application/json;charset=UTF-8",
-           "vary": "Accept-Encoding",
-           "content-encoding": "gzip",
-           "transfer-encoding": "chunked",
-           "connection": "close"
-       },
-},
+  "coord": {
+    "lon": 77.2167,
+    "lat": 28.6667
+  },
+  "weather": [
+    {
+      "id": 761,
+      "main": "Dust",
+      "description": "dust",
+      "icon": "50d"
+    }
+  ],
 
 ```
-**Sample failure response:**
 
-```
-{
-   "success": false,
-   "message": "Execution Failed",
-   "data": {
-       "success": false,
-       "error": "Error processing createRecord :: {\"message\":\"[INTG ERROR] Node API Execution failed for salesforce-crm_createRecord in bot x1664176494495: 4xx or 5xx series code encountered\",\"name\":\"IntegrationNodeAPIError\",\"response\":{\"statusCode\":400,\"body\":\"[{\\\"message\\\":\\\"Required fields are missing: [Company]\\\",\\\"errorCode\\\":\\\"REQUIRED_FIELD_MISSING\\\",\\\"fields\\\":[\\\"Company\\\"]}]\",\"headers\":{\"date\":\"Tue, 21 Feb 2023 09:12:48 GMT\",\"set-cookie\":[\"CookieConsentPolicy=0:1; path=/; expires=Wed, 21-Feb-2024 09:12:48 GMT; Max-Age=31536000\",\"LSKey-c$CookieConsentPolicy=0:1; path=/; expires=Wed, 21-Feb-2024 09:12:48 GMT; Max-Age=31536000\",\"BrowserId=6Oq-_bHHEe2M0bfscs6ulA; domain=.salesforce.com; path=/; expires=Wed, 21-Feb-2024 09:12:48 GMT; Max-Age=31536000\"],\"strict-transport-security\":\"max-age=63072000; includeSubDomains\",\"x-content-type-options\":\"nosniff\",\"x-xss-protection\":\"1; mode=block\",\"x-robots-tag\":\"none\",\"cache-control\":\"no-cache,must-revalidate,max-age=0,no-store,private\",\"sforce-limit-info\":\"api-usage=18/15000\",\"content-type\":\"application/json;charset=UTF-8\",\"transfer-encoding\":\"chunked\",\"connection\":\"close\"},\"request\":{\"uri\":{\"protocol\":\"https:\",\"slashes\":true,\"auth\":null,\"host\":\"101.53.168.117\",\"port\":443,\"hostname\":\"101.53.168.117\",\"hash\":null,\"search\":null,\"query\":null,\"pathname\":\"/services/data/v51.0/sobjects/Lead\",\"path\":\"/services/data/v51.0/sobjects/Lead\",\"href\":\"https://101.53.168.117/services/data/v51.0/sobjects/Lead\"},\"method\":\"POST\",\"headers\":{\"content-type\":\"application/json\",\"authorization\":\"Bearer 00D5i000009LFUq!AQIAQBNgSYLObvxoKFK.j8O7bIkkus.vcKGUHB75C8RfTUgK0kZNe6W6TCH.FAkF3hejM5fLLVPmewiFfk6x8wcBByElBUTQ\",\"host\":\"yellowai-b-dev-ed.my.salesforce.com\",\"user-agent\":\"yellow-ai/api_processor\",\"accept-encoding\":\"gzip, deflate\",\"content-length\":18}}}}",
-       "node": "createRecord",
-}
 
-```
 
 #### Supported Version
 
