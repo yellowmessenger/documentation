@@ -17,9 +17,10 @@ In this article, you will learn:
 * [What are the differences between a chat widget and PWA?](#1-difference-between-chat-widget-and-pwa)
 * [How to configure PWA?](#2-configure-pwa-chatbot)
 * [How to install PWA?](#3-install-pwa-chatbot)
+* [How to embed PWA bot on website](#embed-pwa-chatbot-on-website)
 
 
-## 1. Difference between chat widget and PWA
+## Difference between chat widget and PWA
 
 Chat widget | PWA chatbot
 ------------|-----------
@@ -30,7 +31,7 @@ You can set the size (Small, Medium, or Large), position (Bottom Left and Bottom
 
 ![](https://i.imgur.com/y5ZRkDG.png)
 
-## 2. Configure PWA chatbot
+## Configure PWA chatbot
 
 You can setup a PWA chatbot, which is similar to the chat widget setup, by customizing the bot name, description, font style, font size, primary color, and secondary color. To setup a PWA chatbot, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#1-access-chat-widget).
 
@@ -38,11 +39,11 @@ You can setup a PWA chatbot, which is similar to the chat widget setup, by cust
 You cannot customise widget size, initial display mode, or the bot icon for PWA chatbots, as these options are not supported.
 :::
 
-## 3. Install PWA chatbot
+## Install PWA chatbot
 
 You can install the PWA chatbot on desktop or mobile via URL.
 
-### 3.1 Install PWA chatbot on your desktop via link
+### Install PWA chatbot on your desktop via link
 
 To install PWA chatbot on your desktop, follow these steps:
 
@@ -65,7 +66,7 @@ To install PWA chatbot on your desktop, follow these steps:
    
 6. The PWA chatbot will be removed from your Apps folder.
 
-### 3.2 Install PWA chatbot on your mobile via link   
+### Install PWA chatbot on your mobile via link   
 
 To install PWA chatbot on your mobile device, follow these steps:
 
@@ -83,7 +84,13 @@ To install PWA chatbot on your mobile device, follow these steps:
 
     <img src="https://i.imgur.com/dw1mK6H.png" alt="drawing" width="40%"/>
 
+## Embed PWA chatbot on website
 
+To embed a PWA chatbot, you need to paste the PWA bot link in the iframe of your website. Following is the sample format: 
+
+`<iframe src="https://r0.cloud.yellow.ai/pwa/v2/live/x1635319613183?fullScreen=true" frameborder="0" allowfullscreen width="100%"></iframe>`
+
+  ![](https://i.imgur.com/K5NnNvn.png)
 
 
 
