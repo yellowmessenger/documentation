@@ -211,7 +211,7 @@ You can test the WA bot in staging and sandbox environments by enabling **Develo
 
 ### 24-hour WhatsApp policy
 
-If a live agent connects with the WhatsApp bot user and does not close the ticket within 24 hours of the chat initiation, the chat will be automatically disabled under the **Chats** section > **Bot messages** of the Inbox module. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/reinitiatewachats#expchats). 
+If a live agent connects with the WhatsApp bot user and does not close the ticket within 24 hours of the last message sent by the user, the chat will be automatically disabled under the **Chats** section > **Bot messages** of the Inbox module. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/reinitiatewachats#expchats). 
 
 <img src="https://i.imgur.com/pVKcpx1.jpg" alt="drawing" width="50%"/> 
 
