@@ -22,7 +22,7 @@ The Freemium plan includes the following features:
 Upon [signing up](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup), your account will automatically be enrolled in the Freemium plan.
 :::
 
-#### Freemium plan limitations
+#### Limitations of Freemium plan
 
 While the Freemium plan provides businesses with a cost-effective way to access Yellow.ai's conversational AI solutions, it does come with certain limitations. Some advanced features and functionalities are exclusively available to users who subscribe to Yellow.ai's paid plans. If you require access to any of these features, you'll need to upgrade your plan accordingly.
 
@@ -55,9 +55,11 @@ Apart from the subscription plans, Yellow.ai charges based on the usage of speci
 
 You can easily upgrade your account by having a discussion with our consultants to better suit your specific business requirements. We recommend carefully evaluating your needs before making a decision and our consultants will help you with the best custom pricing. 
 
+To set up a call for upgrading your account, follow these steps: 
+
 1. Click the **Upgrade** button.
 
-    ![](https://hackmd.io/_uploads/ByRpzTki3.png)
+    <img src="https://hackmd.io/_uploads/ByRpzTki3.png" alt="drawing" width="80%"/>
 
 2. Click the **Schedule Now** button to book a 1:1 call with our product consultants. They will assist you in choosing a plan that suits your business.
 
@@ -67,9 +69,9 @@ You can easily upgrade your account by having a discussion with our consultants 
 
     ![](https://i.imgur.com/w7o0VlK.png)
 
-4. On the following screen, fill in all the fields and click **Schedule Event**.
+4. On the following screen, fill in the required fields to provide the context for the call and click **Schedule Event**.
 
-    ![](https://i.imgur.com/UgoDQdM.png)
+    ![](https://hackmd.io/_uploads/SJ3q8U122.png)
 
 ----
 

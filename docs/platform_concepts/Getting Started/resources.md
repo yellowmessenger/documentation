@@ -25,7 +25,7 @@ Our extensive library of help articles is readily available to provide quick ans
 * [**API documentation :arrow_right:**](https://docs.yellow.ai/docs/updates/overview)      
 * [**Monthly product updates(for each module) :arrow_right:**](https://docs.yellow.ai/docs/updates/overview)      
 
-## Follow yellow academy for training 
+## Follow our Academy for training 
 
 Join Yellow Academy for expert-led learning and enjoy the following benefits:
 bot building with comprehensive training and courses from our experts.
@@ -42,7 +42,7 @@ If you prefer personalized training, write to academy@yellow.ai, and our experts
 
 
 
-## Join yellow.ai community for product discussions
+## Join our Community for product discussions
 
 At Yellow.ai, we believe in fostering a strong community of bot builders and enthusiasts. 
 Join our community to connect with fellow users, share experiences, and exchange knowledge. Engage with our product experts and receive guidance, support, and inspiration to create exceptional AI bots.
