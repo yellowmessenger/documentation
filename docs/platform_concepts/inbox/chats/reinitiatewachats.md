@@ -1,71 +1,72 @@
 ---
-title: Steps to reinitiating expired WhatsApp chats on Inbox
+title: Steps to reinitiate expired WhatsApp chats in Inbox
 sidebar_label : WhatsApp chat reinitiation
 Keywords: [WhatsApp policies in Inbox , reinitiate whatsapp chat, send template to whatsapp chat, send message to an expired chat] 
 ---
 
-In this article, you will learn: 
+When a customer initiates a chat with an inbox agent on WhatsApp, the agent can respond for free within 24 hours of the customer's last message (referred to as the 24-hour Window). After this time, the WhatsApp chats are considered expired.
 
-1. [What is the WhatsApp Business Policy for Inbox?](#policy)
-2. [How to reinitiate expired WhatsApp chats?](#expchats)
+**After the 24-hour window**, if agents want to reinitiate an expired conversation, they must use approved **Message Templates** and will be charged at the applicable rate.
 
-In order to initiate a WhatsApp message to a person, you must first receive **opt-in permission** confirming that they wish to receive future messages from you on WhatsApp. The opt-in must clearly state the below conditions: 
-- State that the person is opting in to receive messages from you over WhatsApp.
-- State the business’ name. You may **only initiate chats using an approved Message Template** (as defined in our documentation), subject to applicable pricing. Any Message Template must comply with our terms and policies, and only be used for its designated purpose. We have the right to review, approve and reject any Message Template at any time.
+For instance, if agents cannot reply within 24 hours due to various reasons (extended resolution time, non-working hours, holidays, etc.), they won't be able to respond to the user after the window closes. In such cases, pre-approved message templates are used.
+
+---
+
+## <a name="policy"></a> Business policy for WhatsApp chats
+
+
+### Permission to initiate chats
+
+Before an inbox agent can start a WhatsApp conversation with a customer, you must receive opt-in permission confirmation. This confirms the customer's willingness to receive future messages from your business on WhatsApp. The opt-in must clearly state:
+- Customer's consent to receive messages over WhatsApp.
+- Your business's name.
+- Usage of an approved **Message Template** (as defined in this article) for initiating chats. 
 
 :::note
-If a person initiates a chat with you, you may continue that conversation via WhatsApp for up to 24 hours after the last message was sent to you by that person- without any charge (24-hour Window). 
-**Outside the 24-hour window, you may only send messages via approved Message Templates**, for which you will be charged with the applicable rate. 
-> Learn more about the [WhatsApp Business Policy](https://www.whatsapp.com/legal/business-policy).  
- 
+These templates must adhere to our terms and policies and be used for their intended purpose. We retain the right to review, approve, or reject any Message Template.
+:::
+
+### Summarized WhatsApp guidelines for inbox
+
+Adhering to WhatsApp guidelines for managing inbox chats on the platform:
+
+1. **Initiating conversations**: Agents can only start a conversation using a pre-approved Message Template if the customer has opted in or initiated contact with your business.
+2. **Customer-initiated chats**: No opt-ins are needed if the customer starts the chat.
+3. **24-hour window**: After each customer message, a 24-hour window opens. During this time, your business can send both regular and template messages for free.
+4. **Post-window expiry**: After 24 hours from the customer's last message, your business can't respond without using approved message templates.
+
+
+:::info
+For additional information, refer [WhatsApp Business Policy](https://www.whatsapp.com/legal/business-policy).  
 :::
 
 -----
 
+## <a name="expchats"></a> Reinitiate expired WhatsApp chats
 
-## <a name="policy"></a>  1. Business policy for WhatsApp chats
-
-Following are the rules followed as per the WhatsApp guidelines while handling inbox chats that are taking place on WhatsApp: 
-
-1. **One can only initiate a conversation with the end-user using a pre-approved Message template, provided they have opted-in** for your business service or reached out to you first   
-2. **If the end-user initiates the chat** with your business first, then **no opt-ins are required**     
-3. **For every message** from the end-user in a conversation, **a 24 hr window will open** during which the **business can send both normal & template messages for free.**    
-4. **Post the expiry of 24hr window** from the last end-user message, the **business will not be able to respond to the end-user without using approved message templates.**
-
-:::info    
-If you are not able to respond to the end user’s message within 24 hrs (if the chat ticket is taking too long to resolve, the chat ticket is created outside working hours or during holidays, etc.) you will not be able to respond to the end-user once the window is closed. 
-In that case, you can send out the pre-approved message templates.
-:::
-
------
-
-## <a name="expchats"></a> 2. Reinitiate expired WhatsApp chats
+> This section applies to **Inbox agents**. 
 
 To reinitiate the expired WhatsApp chats, follow the given steps: 
 
-1. Once the 24hr window expires from the end user’s last message, Inbox would automatically remove the chatbox and show the following error callout.
+1. Once the 24-hour window expires from the customer's last message, the chatbox will be removed automatically, and you'll see the following error message.
 
-<img src="https://i.imgur.com/pVKcpx1.jpg" alt="drawing" width="60%"/>  
+    <img src="https://i.imgur.com/pVKcpx1.jpg" alt="drawing" width="60%"/>  
 
+2. Click on **Send Template**, search for the relevant template, and click **Next** after selecting it.
 
-2. Click **Send Template** and search for the appropriate template you want to send. Click **Next** once you’ve selected the template.
-
-<img src="https://i.imgur.com/7kKgk3l.png" alt="drawing" width="60%"/>
-  
+    <img src="https://i.imgur.com/7kKgk3l.png" alt="drawing" width="60%"/>
 
 3. **Map the variables/attachments** in the selected template (if applicable).
 
-<img src="https://i.imgur.com/AmNhyzP.png" alt="drawing" width="60%"/>
+    <img src="https://i.imgur.com/AmNhyzP.png" alt="drawing" width="60%"/>
 
-  
 4. Preview the template message and click **Send**.  
 
-<img src="https://i.imgur.com/GYmYHyW.png" alt="drawing" width="60%"/>    
+    <img src="https://i.imgur.com/GYmYHyW.png" alt="drawing" width="60%"/>    
 
-5. Once the end-user replies back to the template message, the 24 hr window will be initiated (after which you can interact and close the chat ticket).    
+
+When the customer responds to the template message, a new 24-hour window begins. During this time, you can interact and close the chat ticket.
+> You can reply on WhatsApp chat only after the customer responds to your sent template/message.
 
 <img src="https://i.imgur.com/qyhUsRy.png" alt="drawing" width="60%"/>
 
-:::note
-As an agent, you can reply (or continue the conversation) on WhatsApp chat only after the customer has replied back to the sent template/message.
-:::
