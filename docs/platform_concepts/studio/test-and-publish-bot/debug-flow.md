@@ -4,112 +4,112 @@ sidebar_label : Debug bot flows
 ---
 
 
-When automating conversations, there can be cases of errors in flows.
+Debugging flows involve finding and fixing issues in the bot's conversations to ensure smooth user interactions. This helps enhance performance and reliability by addressing errors caused by factors like logical mistakes, syntax errors, and missing information in the automated conversations.
 
-It could be because of -
-* A logical error in a flow
-* A syntax or datatype mismatch
-* Missing or null values in mandatory fields
+Here are some frequently encountered errors and their corresponding solutions.
 
-:::note
-If you are unable to identify the issue, please reach out to us at support@yellow.ai.
-:::
+## Flow based errors
 
-In this article we have mentioned some commonly observed errors and how to resolve them
+In this section we will see how to fix errors that occur at the flow level.
 
-## 1. Flow based errors
+If you notice that certain nodes aren't being executed, consider the following steps:
 
-If you observe that some nodes are not getting executed, try out the following.
+### Test with a text node
 
-* **Adding a Text node** with a testing message to the flow BEFORE and AFTER the node is executed. 
-> Example: Printing the email input taken from the user right after the email node to test if it's working as intended.
-> ![](https://i.imgur.com/uaTNNnb.png)
+Insert a[ Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text) containing a test message into the flow both BEFORE and AFTER the node that's not executing.
 
+For instance, you can print the user's input email right after the email node to verify its functionality.
 
-* **Using our Debug feature** to view at which step of the flow the bot stopped working.
-![](https://i.imgur.com/DFIOz4S.png)
+   ![](https://i.imgur.com/uaTNNnb.png)
 
-* **Breaking down flows** to smaller sections to execute just a specific part.
-You can make use of the **Cloning** feature to duplicate your flow and try executing a specific section of your flow. 
-> In the example, we broke a big flow into a couple of nodes. 
-> ![](https://i.imgur.com/1yGyOP0.png)
-> ![](https://i.imgur.com/AtSm1pE.png)
+### Utilize the debug feature
 
----
+When you [test a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow) in your bot, you'll notice that the bot automatically conducts a step-by-step debugging of each phase of the conversation. It provides insights into the occurrences at each conversation stage. This feature is valuable for identifying the precise point in the flow where the bot's functionality encountered an issue.
+      
+   <img src="https://i.imgur.com/andTLxy.png" alt="drawing" width="30%"/>
 
-## 2. Data type based errors
+## Handle datatype mismatch errors
 
-Another frequent occurence when some variables are created in one data type (number), but passed as 'String'.
+Data type mismatch happens when we assign a data type to a field, but the value we collect ends up being a different type. For instance, if you set a field as a string, but the collected value is actually a number, it causes an error. In this section, we'll explore ways to manage and address these kinds of errors.
 
-This can happen at a function/user input level and Database record insertion level.
+###  Resolve variable datatype conflicts
 
-### 2.1 Review the datatype of a variable
+1. Go to **Studio** and click the **Variable** icon.
 
-1. Open up the Variables section
-2. Review the data type and cross reference if it matches the input being passed
-![](https://i.imgur.com/LUBTtG7.jpg)
+![](https://i.imgur.com/3vkklcJ.png)
+
+2. Assess if the selected data type aligns with the type of value you intend to collect.
+
+![](https://i.imgur.com/LyBOsUw.png)
+
+3. If they don't match, delete that variable and [creat a new one](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-3-create-a-variable) and [assign it to that node](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables).
 
 
-### 2.2 Review the datatype of a database column
-1. Open up the table you're trying to review.
-2. Click on the dropdown Table Actions.
-3. Click Edit Table and you'll be able to review the data types of each column.
-![](https://i.imgur.com/GPuVb6i.png)
+### Resolve datatype conflicts in database column 
+
+1. Go to **Studio** > **Database** > Click the desired table > **Table actions** > **Edit table**.
+
+![](https://i.imgur.com/kWcpAEE.png)
+
+2. Go through the data type of each field of the database table under **Type**.
+
+![](https://i.imgur.com/ldxkxZ1.png)
 
 
+## Resolve code based errors
 
-## 3. Code based errors
+Code errors can lead to non-functioning aspects. To ensure a flawless user experience, it's important to review the code as well.
 
-We love our no-code/low-code solutions, but sometimes you need to run your own functions to come full circle with the end user's experience. 
+### Check code logs
 
-### 3.1 View code logs
-We have a code logs section on our platform as well. Go to the **Code** section and click on **Logs**.
-![](https://i.imgur.com/G3KmhjT.jpg)
+We offer a dedicated code logs section within our platform. 
+
+To access it:
+
+1. Navigate to **Studio** > **Functions** > **Logs**.
+
+For instance, if you need to troubleshoot a particular function within your flow and review its output:
+
+2. Configure the function to display relevant text alongside the data you wish to validate in the Functions section.
+3. Navigate to the **Logs** section and click on the specific logs.
+4. Use ctrl/cmd + F to open the Search box, enabling you to confirm if the console is indeed displaying the log.
+
+![](https://i.imgur.com/4YlC6OS.png)
 
 
+### Set up a test function
 
+   ![](https://i.imgur.com/4yhYCxg.png)
 
-![](https://i.imgur.com/HIoj1CF.png)
+Once the function gets executed, you can review the logs to see if you're getting the output.
 
-For example, you want to debug a specific function in your flow to see the output you're getting.
-* You can set up the function such that it prints some text along with the data you'd like to check.
-* Click on the actual logs inside the Logs section.
-* Press **ctrl/cmd + F**  to open Search box where you can check if the console is printing the log.
+   ![](https://i.imgur.com/69J9LYp.png)
 
+### Resolve API level errors
 
-### 3.2 Set up a test function
-![](https://i.imgur.com/4yhYCxg.png)
-
-Once the function gets executed, we can review the logs to see if we're getting the output.
-
-![](https://i.imgur.com/69J9LYp.png)
-
-:::note
-There is a difference between the logs of the bot and the logs of your browser.
-:::
-
-## 4. Test APIs
 You can test APIs either in the API management page or within the flow.
 
-To test it within a flow
+To test it within a flow:
+
 1. Go to the **API node** you wish to test.
-![](https://i.imgur.com/CAoQX2H.png)
+   ![](https://i.imgur.com/CAoQX2H.png)
 
 2. Click on **Test** and enter the mandatory fields.
- ![](https://i.imgur.com/yQ32pAi.png)
+   ![](https://i.imgur.com/yQ32pAi.png)
  
-3. Click on **Run** and review your output.
-![](https://i.imgur.com/JKkWtPF.png)
+3. Click on **Run** and check if you're able to get the expected output.
+  ![](https://i.imgur.com/JKkWtPF.png)
 
 
+You can also test your APIs in the [Studio APIs section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#14-test-the-api).
 
 :::note
-You can share your learnings or issues on our [Community](https://community.yellow.ai/)
+If you have any questions, feel free to post them on our [Community](https://community.yellow.ai/)
 :::
 
 ## 3. Common errors and solutions
 
-**Error:** Action node failed.
+#### Error: Action node failed
 
 ```
 "field": "custom_fields.cf_agent",
@@ -127,5 +127,7 @@ You can share your learnings or issues on our [Community](https://community.yell
 **Problem:** Ticket creation using [Freshdesk](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/freshdesk) keeps failing because custom fields that were configured in your Freshdesk account weren't configured/passed in the Freshdesk nodes.
 
 **Solution:** Pass the custom field names in the parameter - {”key1”:”value1”,..}. The names of the custom fields are derived from the labels given to them during their creation. All the custom fields will have 'cf_' prepended to its name, eg., if you create a custom field with the label 'test', then the name of the custom_field will be 'cf_test'.
+
+
 
 
