@@ -82,7 +82,6 @@ module.exports = {
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
     "cookbooks/inbox/csatreport",
-    "cookbooks/inbox/chattranscriptsecurity",
     "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
@@ -151,6 +150,7 @@ module.exports = {
       "platform_concepts/Getting Started/resources",
       "platform_concepts/Getting Started/user-account-settings", 
       "platform_concepts/Getting Started/add-bot-collaborators",
+      "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/modify-bot-configuration",
 
 
