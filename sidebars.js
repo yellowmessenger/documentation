@@ -1021,6 +1021,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/twitter",
+            "platform_concepts/channelConfiguration/facebook-comments",
           ]
         },
         {
