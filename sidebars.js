@@ -113,6 +113,7 @@ module.exports = {
   items: [
     // "cookbooks/Upgrade_new_engage_app",
     "cookbooks/Understanding channels 101/email-outbound-101",
+    "cookbooks/Understanding channels 101/optout-campaigns",
 
   ],
 }, 

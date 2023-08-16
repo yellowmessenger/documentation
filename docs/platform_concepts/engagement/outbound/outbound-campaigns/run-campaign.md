@@ -123,6 +123,10 @@ This section guides you on how to configure template for each channel -
 
    <img src="https://i.imgur.com/12hci2Z.png" class="center" width="60%"/>
 
+3. To monitor URL clicks, select **URL click tracking** for variables that contain URLs.
+
+   <img src="https://i.imgur.com/QkqZcQr.png" class="center" width="60%"/>
+
 ### 3.2 Email campaign
 
 1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the user's email address.
@@ -147,7 +151,11 @@ This section guides you on how to configure template for each channel -
 
 3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link.
 
-4. Use **Media** to configure personalized media for the campaign.
+4. To monitor URL clicks, select **URL click tracking** for variables that contain URLs.
+
+   <img src="https://i.imgur.com/QkqZcQr.png" class="center" width="60%"/>
+
+5. Use **Media** to configure personalized media for the campaign.
    *  **Static** media: Select to send a common media file to all the recipients. Use **Browse** to upload the media file.
    *  **Dynamic** media: Select this option to send personalized media to each user. Map the column from the database where you have included these details. For instance, you can send WhatsApp campaigns with personalized video media to your customers.<br/> <br/>To insert a property dynamic URL:<br/>a. [Create a user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) with the data type set as URL.<br/><img src="https://i.imgur.com/l1CSdNF.png" width="60%"/><br/>b. [Store the image URL for each user to that user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).<br/>c. Associate the media with this user property when scheduling the camapign.<img src="https://i.imgur.com/umvqXL4.png" width="50%"/>
 
