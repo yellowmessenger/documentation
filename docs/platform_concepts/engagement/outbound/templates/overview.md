@@ -141,8 +141,6 @@ You cannot edit or delete an approved template.
 
    ![](https://i.imgur.com/fKoTP1I.gif)
 
-  
-
 
 ## 6. FAQs
 
