@@ -26,7 +26,7 @@ If you're new to the yellow.ai platform, here's how to sign up:
 ::: 
 
 4. **Verify email**: Check your email for a verification message and click **Verify email**.
-   <img src="https://hackmd.io/_uploads/S1BZcWHh3.png" alt="drawing" width="70%"/>
+   <img src="https://hackmd.io/_uploads/S1BZcWHh3.png" alt="drawing" width="60%"/>
 
 5. **Choose use case**: Select the option closest to your use case. Regardless of the choice, you'll have access to the same modules and features.
    <img src="https://hackmd.io/_uploads/Hy10Kbr2n.png" alt="drawing" width="90%"/>
@@ -42,7 +42,8 @@ If you're new to the yellow.ai platform, here's how to sign up:
 
 
 8. Select data region and create a project: For compliance, choose the region nearest to you to store your account data. Click **Create Project**.
-   <img src="https://hackmd.io/_uploads/Sy9ei-B2n.png" alt="drawing" width="60%"/>
+
+   <img src="https://hackmd.io/_uploads/Sy9ei-B2n.png" alt="drawing" width="50%"/>
    
 :::note
 Upon signing up, your account will automatically be enrolled in the [Freemium plan](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade) and a default **chat bot** will be created for your subscription. 
