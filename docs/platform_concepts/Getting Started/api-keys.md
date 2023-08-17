@@ -10,6 +10,7 @@ Only super admin of the bot will have access to generate API keys.
 
 API keys act as secure passcodes, granting authorized access to specific functionalities or resources within a system. They serve as an additional layer of protection, safeguarding sensitive data and ensuring that only authenticated users or applications can interact with the API.
 
+
 To generate an API key, follow these steps:
 
 1. On the bot Overview page, go to **Access Control** > **API Keys**.
@@ -24,6 +25,12 @@ To generate an API key, follow these steps:
 5. Click **Save** to generate the API key.
 6. Copy the generated key and use it in your API calls wherever required.
    ![](https://i.imgur.com/VcDUuHe.png)
+
+
+:::note
+* The token's maximum length is 40 characters. 
+* The character set used includes A-Z, a-z, 0-9, underscore (_), and dash (-), encompassing both uppercase and lowercase English letters, numbers 0 through 9, and symbols underscore (_) and dash (-).
+:::
 
 ***
 
