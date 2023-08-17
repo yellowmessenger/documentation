@@ -18,7 +18,7 @@ sidebar_label: SMS template
    ![](https://i.imgur.com/P2Vezjr.png)
   
 
-3. Create the template using the available options and click **Save**. For descriptions of each field, see the following table.
+3. Create the template using the available options. For descriptions, refer to the following table.
 
    ![](https://cdn.yellowmessenger.com/xUABq9rVRsiP1649260093253.png)
 
@@ -32,11 +32,51 @@ Body text | Enter the message body. To add variables such as verification code, 
 
    ![](https://cdn.yellowmessenger.com/VfiEBNhwk6IM1649261672637.png)
 
+4. In **URL click tracking**, select the URLs for which you want to track clicks. Learn more about [URL click tracking](#11-track-url-clicks-in-sms-campaigns).
+
+   ![](https://i.imgur.com/1W8LlCr.png)
+
+
+
 
 :::note 
 * For Indian phone numbers, the details you add here should exactly be same as the one added in the DLT portal. Even slightest change in any of the details or template body will be rejected .
 * For some countries, details like entity ID and template ID will be irrelevant. In such cases, you can only add the Sender ID and template message you want to send.
 :::
+
+### 1.1 Track URL clicks in SMS campaigns
+
+URL click tracking in Campaigns allows you to monitor user clicks on links used in messages.  Before sending out the actual message, the URLs in the template are shortened, and each user is provided with a unique identifier. This allows you to track individual clicks on the links, providing valuable insights into user engagement and campaign performance.
+
+:::note
+URL click tracking is currently available for SMS and WhatsApp campaigns. If you need it for URLs in other channels, please contact us.
+:::
+
+
+You can track URL clicks in three different elements of your template - Template body, CTA, and variable.
+
+#### Sample use cases:
+1. **E-commerce**: Track how many users clicked on the link to a specific product or offer in your online store.
+2. **Surveys**: Measure the response rate by tracking the number of users who clicked on the survey link.
+3. **Event invitations**: Monitor the interest level by tracking clicks on event registration links.
+
+To track URL clicks:
+1. Create your marketing campaign with the URLs.
+2. Navigate to the **URL click tracking** section and select the URL(s) that you want to track. You will see all the URLs used in the template in the respective sections - this includes URLs in Body text, variables and CTAs.
+
+   <img src="https://i.imgur.com/1W8LlCr.png"/>
+
+3. Click **Create template**.    
+
+4. [Send out the campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign) to users with the template. The URLs in the tracked list are shortended and a unique identifier is provided to each user before sending.
+
+
+
+:::note
+* Tracking will be active for 3 months after you send the campaign.
+* Currently, the metrics for URL clicks is available in the backend, The reporting UI for URL tracking will be relesed soon.
+:::
+
 
 ***
 
