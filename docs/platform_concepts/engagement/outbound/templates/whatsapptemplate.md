@@ -53,7 +53,8 @@ Button type | Choose the button type - None, Call to action (CTA) or Quick reply
 Quick reply | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
 
 4. To add another CTA, click **Add new button**.
-5. Preview the message on the right pane and click **Send for approval**. 
+5. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For more detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns).
+6. Preview the message on the right pane and click **Send for approval**. 
 
    ![](https://i.imgur.com/wJnIgW4.png)
 
@@ -180,9 +181,33 @@ You can see in the preview tab below, the variable user we just created is highl
 
 ![](https://i.imgur.com/jRhm0jE.png)
 
-  
+## 4. Track URL clicks in WhatsApp campaigns
 
-## 4. View WhatsApp template approval or rejection status
+URL click tracking in Campaigns allows you to monitor user clicks on links used in messages.  Before sending out the actual message, the URLs in the template are shortened, and each user is provided with a unique identifier. This allows you to track individual clicks on the links, providing valuable insights into user engagement and campaign performance.
+
+You can track URL clicks in three different elements of your template - Template body, CTA, and variable.
+
+#### Sample use cases:
+1. **E-commerce**: Track how many users clicked on the link to a specific product or offer in your online store.
+2. **Surveys**: Measure the response rate by tracking the number of users who clicked on the survey link.
+3. **Event invitations**: Monitor the interest level by tracking clicks on event registration links.
+
+To track URL clicks:
+1. Create your marketing campaign with the URLs.
+2. Navigate to the **URL click tracking** section and select the URL(s) that you want to track. You will see all the URLs used in the template in the respective sections - Body text URL, and CTA URL.
+
+   <img src="https://i.imgur.com/G1ihjVL.png"/>
+
+3. Send out the campaign to users with the template. The URLs in the tracked list are shortended and a unique identifier is provided to each user before sending.
+
+
+
+:::note
+* Tracking will be active for 3 months after you send the campaign.
+* Currently, the metrics for URL clicks is available in the backend, The reporting UI for URL tracking will be relesed soon.
+:::
+
+## 5. View WhatsApp template approval or rejection status
 Once a WhatsApp template is approved and marked as Active, it can be used to send messages to customers, regardless of its quality rating. However, WhatsApp templates are rated based on their quality, reflecting their performance. 
 
 Users can report or block WhatsApp templates which can result in blocking of the campaign. If the template receives consistent negative feedback, its status may change and can interrupt the campaign, impacting its performance. 
@@ -219,7 +244,7 @@ When using [Notification APIs](https://docs.yellow.ai/docs/platform_concepts/eng
 :::
   
 
-## 5. WhatsApp template guidelines
+## 6. WhatsApp template guidelines
 
 A WhatsApp template needs to be approved by Facebook before you start using it. Here are some standard guidelines that you need to follow while creating a template to avoid rejections.
 
@@ -250,7 +275,7 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 
   
 
-### 5.1 Examples of approved & rejected templates
+### 6.1 Examples of approved & rejected templates
 
   
 
