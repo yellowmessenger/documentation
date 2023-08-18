@@ -7,31 +7,35 @@ Enhance your campaign targeting by excluding users who have opted out. Learn how
 
 ## Store opt-out status through converstions
 
-1. [Train an utterance](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances) on DND.
-2. [Set up a flow triggered by the utterance](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#map-intents-to-flows) or capture opt-out status manually.
-3. Within the flow, [update the opt-in property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data) accordingly.
-4. Use this updated property as a condition in segment targeting to exclude users who have opted for DND from receiving further campaign messages.
+1. [Train an utterance](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances) with the keywords such as "DND" and "unsubscribe".
+
+    <img src="https://i.imgur.com/N7RKWZJ.png" width="40%"/>
+
+     i. Navigate to **Studio** > **Train**.
+
+    ii. Click **Add new intent**.
+
+   iii. Provide a relevant name for the intent and add "DND" and "unsubscribe" as Uttrences.
+   iv. Click **Add** to save the intent.
+
+2. [Set up a flow to trigger based on the intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#map-intents-to-flows) and choose the relevant intent.
+
+    <img src="https://i.imgur.com/r1h2ZHC.png" width="80%"/>
 
 
-## Exclude opted-out users from Campaigns
 
-Here are the steps to create a segment with users who have not opted out:
+3. Use the [Variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables)  to [update the relevant user property](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data), in the following example, the `campaignOptIn` property is set to `false`. This ensures that the customer's optout status is captured and stored in User 360.
 
-1. **Login to Yellow.ai platform**: Log in to your Yellow.ai account using your credentials.
+    <img src="https://i.imgur.com/rK3a7ZU.png" width="100%"/>
 
-2. **Navigate to User 360**: This is where you can manage your segments.
+4. [Create a user segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment#1-create-user-segment) excluding opted-out users. 
 
-3. **Create new segment**: Click on the **Segments** tab and then click the "Add segment" button to start creating a new segment.
+    Add a condition to include users whose `campaignOptIn` status is `true. `Use this updated property as a condition in segment targeting to exclude users who have opted for DND from receiving further campaign messages.
 
-4. **Segment name**: Provide a name for your segment, such as "Active Users" or "Non-Opted Out Users".
+    <img src="https://i.imgur.com/MZkQI1H.png" width="80%"/>
 
-5. **Add conditions**: In the conditions section, add a condition that filters out users who have not opted out. You can do this by selecting a property like "Opt-out Status" and setting it to "False" or Opt-in status to "Not false".
 
-  ![](https://i.imgur.com/d6wt8N5.png)
+5. When [setting up your campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign), make sure to exclude opted-out users using the segment you created. This ensures that users who have opted for "STOP" or "DND" will not receive any further campaign messages. 
 
-6. **Save the segment**: Once you've set the conditions, click the "Add" button to save your segment.
 
-7. **Use in campaigns**: Now, when you create a new campaign, you can select this segment to target users who have not opted out. This ensures that your campaign reaches the right audience.
-
-   ![](https://i.imgur.com/2JUWsRT.png)
-
+   <center><img src="https://i.imgur.com/Tk2DCZL.png" width="90%"/></center>
