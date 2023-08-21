@@ -88,6 +88,10 @@ Once you've completed the signup process, you can create a new bot in two ways:
 
 ## Publish your first bot
 
+:::note
+Bots can be built in Development/Sandbox/Staging mode and published to Live/Production. Learn more about these enviornment [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+:::
+
 Once your bot is ready, you can publish it by following the steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
 
 ----

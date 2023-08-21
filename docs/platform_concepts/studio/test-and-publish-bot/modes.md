@@ -4,7 +4,7 @@ sidebar_label : Publish your bot
 ---
 
 :::info
-To learn about different bot enviornments (modes), click here.
+To learn about different bot enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
 :::
 
 ## Publishing roles

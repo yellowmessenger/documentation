@@ -3,13 +3,31 @@ title: IP whitelisting
 sidebar_label : IP whitelisting
 ---
 
-IP whitelisting is a security practice that involves creating a list of approved IP addresses or ranges that are allowed to access a particular network, system, application, or service. This approach helps enhance security by restricting access only to authorized entities. 
+IP whitelisting is a security practice that involves creating a list of approved IP addresses or ranges that are allowed to access a particular network, system, application, or service. This approach helps enhance security by restricting access only to authorized entities to chat transcripts. 
 
 This feature is available on the app and cloud platform. 
 
 :::note
 Currently, only IPV4 addresses are supported for whitelisting.
 :::
+
+
+### Enhance chat transcript security
+
+Chat transcripts are vital records of interactions between users and chatbots, whether they are [conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs) or [chats with agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chattranscript). By enabling IP whitelisting, the platform allows access to the conversations only from specified IP addresses.
+
+Chat transcript visibility for different permissions: 
+
+- **Users with Bot Access**: If the user already has access to the bot, they can seamlessly view the chat transcript links without the need to whitelist their IP address. However, users must have an active session (logged into the platform) to access the chat transcript links. If not logged in, they will be prompted to log in before viewing the links.
+
+- **Users without Bot Access**: Users who do not have access to the bot can access the chat transcript links only by whitelisting their IP address.
+
+    ![](https://hackmd.io/_uploads/BJMISIB22.png)
+
+- **Users without bot access and without whitelisted IP addresses**: The chat transcript link will not be accessable.
+
+    ![](https://hackmd.io/_uploads/rJi5B8S2h.png)
+
 
 ---
 
@@ -63,19 +81,3 @@ After adding the IP range, it will be displayed on the dashboard. You can edit/d
 
 
 ----
-
-## Enhance chat transcript security with IP whitelisting
-
-Chat transcripts are vital records of interactions between users and chatbots, whether they are [conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs) or [chats with agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chattranscript). By enabling IP whitelisting, the platform allows access to the conversations only from specified IP addresses.
-
-Chat transcript visibility for different permissions: 
-
-- **Users with Bot Access**: If the user already has access to the bot, they can seamlessly view the chat transcript links without the need to whitelist their IP address. However, users must have an active session (logged into the platform) to access the chat transcript links. If not logged in, they will be prompted to log in before viewing the links.
-
-- **Users without Bot Access**: Users who do not have access to the bot can access the chat transcript links only by whitelisting their IP address.
-
-    ![](https://hackmd.io/_uploads/BJMISIB22.png)
-
-- **Users without bot access and without whitelisted IP addresses**: The chat transcript link will not be accessable.
-
-    ![](https://hackmd.io/_uploads/rJi5B8S2h.png)

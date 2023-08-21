@@ -26,11 +26,12 @@ To generate an API key, follow these steps:
 6. Copy the generated key and use it in your API calls wherever required.
    ![](https://i.imgur.com/VcDUuHe.png)
 
-
+<!--
 :::note
 * The token's maximum length is 40 characters. 
 * The character set used includes A-Z, a-z, 0-9, underscore (_), and dash (-), encompassing both uppercase and lowercase English letters, numbers 0 through 9, and symbols underscore (_) and dash (-).
 :::
+-->
 
 ***
 
