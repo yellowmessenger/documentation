@@ -445,6 +445,7 @@ module.exports = {
            // "platform_concepts/inbox/chats/getstartedwithlivechat",
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/genai",
+            "platform_concepts/inbox/chats/internal-ticket",
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",
