@@ -54,3 +54,43 @@ Production contains the published live bots and is very similar to the **Live** 
 
 
 
+
+## Behavior of features post bot-publishing
+
+:::note
+The development, sandbox, and staging environments share a similar operational pattern. To make changes to your bot and apply those modifications, you need to be within these environments.
+
+
+The live and production environments follow the same pattern. In this environment, the bot is active, and no further modifications can be made. Several functionalities are tracked distinctly in this setting.
+:::
+
+Not every feature configured in the development, sandbox, and staging environments will carry over to the live and production environments.
+
+Here's a compilation of features that require separate configuration in both of these environments.
+
+
+| Module | Settings requiring separate configuration in live/production environment|
+| -------- | -------- |
+| **Engage**     |  |
+||User360 data |
+|| Segments|
+||Scheduled campaigns|
+||User360 variables (Studio and User360 sync)|
+||Inbound campaign configuration|
+||Enabling Notificaion AP|
+||Postback URL|
+|**Analytics/Insights**||
+|| Custom queries|
+|| Goals |
+|| Custom dashboards |
+| **Channels and Integration** |	|
+|| All the Channels and integrations (except **WhatsApp**) |
+| **Chat widget** | Chat widget settings |
+|**Inbox**	||
+|| Custom Tags|
+|| Groups creation and configuration |
+|| Inbox settings  |
+|| Agent settings |
+| **Studio** ||
+||Database must be created only in Sandbox/Development env|
+||Data within the DB will not move to Live/Prod| 
