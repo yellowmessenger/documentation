@@ -5,14 +5,36 @@ featured: true
 rank: 1
 ---
 
+## Outbound Campaigns
+
+<details>
+<summary> How can we ensure that campaign messages are not sent to users who respond with DND?</summary>
+
+To prevent sending campaigns to users who respond with DND, follow these steps:
+
+1. Create and train an [intent on relevant uttrences like DND and unsubscribe](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
+2. Set up a flow triggered by the respective intent.
+3. Within the flow, [update the opt-in property when the intent is triggered.
+4. Use this updated property as a [condition in segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment) targeting to exclude users who have opted for DND from receiving further campaign messages.
+
+For a detailed help guide, refer to [Engage user guide](https://docs.yellow.ai/docs/cookbooks/Understanding%20channels%20101/optout-campaigns).
+
+</details>
+
+
+<details>
+<summary> Do we receive any event on the bot if users click on the CTA used in Outbound campaigns? </summary>
+
+No, for CTA button clicks, you will not receive any events on the bot.
+
+</details>
+
 ### WhatsApp 
 
 <details>
 
-<summary>
+<summary>What is the rate limit for Notification API for WhatsApp channel?</summary>
 
-What is the rate limit for Notification API for WhatsApp channel?
-</summary>
 By default, the rate limit is set to 2000 calls/min. If you want to reduce this rate, create a ticket requesting the same or contact support.
 </details>
 

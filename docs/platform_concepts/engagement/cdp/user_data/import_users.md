@@ -70,7 +70,7 @@ To import the CSV file with user details, follow these steps:
 2. Click **Upload .csv** and add the CSV file that you have created.
    ![](https://i.imgur.com/SP7HQ3t.png)
 
-3. Map CSV headers with the user properties. However, [columns will be auto-mapped](#auto-mapping-of-csv-columns) from the based on the column names used and based on the previous mapping (if applicable).
+3. Map CSV headers with the user properties. However, [columns will be auto-mapped](#auto-mapping-of-csv-columns) based on matching column names and previous mapping that might exist.
 
    * Select the CSV header that includes `userId` in the **UserId** column.
    * Associate each CSV header (column 2) with the User property (column 4).
@@ -223,6 +223,7 @@ The summary report provides information on the count of user records based on th
    *  **ERROR_PAYLOAD**: The error details due to which the above user import FAILED:
    -  `invalidDataType`: Properties for which the wrong [data type](#step-1-create-csv-file-with-user-details) was passed.
    -  `invalidProperty`: Properties that do not exist in the user table.
+   -  `propertiesRequired`: Mandatory properties that are missing in the CSV file.
    *  **LINE_NUMBER**: The row number of the user record for which import FAILED.
 
 

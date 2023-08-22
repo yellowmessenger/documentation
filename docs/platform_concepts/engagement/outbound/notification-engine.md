@@ -9,6 +9,12 @@ Yellow.ai's Notification API lets you send business-initiated messages from the 
 
 The API supports different channels (SMS, email, and WhatsApp) and makes it easier for developers to integrate it anywhere in less time.
 
+:::note
+Starting from August 1, 2023, access to Notification APIs has been shifted to an on-demand model. This means that these APIs will no longer be available by default for bots created on or after August 1, 2023.
+
+For a more efficient approach, we strongly recommend adopting [Flow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flow-campaigns-intro) and User Event APIs. Rest assured, bots that were created before August 2023 can still use Notification APIs without any interruptions.
+:::
+
 **To view Notification API collections for each channel**, see
 
 [![](https://i.imgur.com/adPhuBf.png)](https://documenter.getpostman.com/view/9982063/UzBvGPGB#6b08f300-6405-457e-aaf7-7df822e258c8)

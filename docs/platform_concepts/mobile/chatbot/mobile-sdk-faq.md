@@ -138,6 +138,14 @@ return new Promise(resolve => {
 
 Mobile SDK uses a web view with the Webkit browser, which lacks the necessary capabilities for STT. To enable STT, native OS capabilities are required, implemented through a custom mic button. Disabling the "enableSpeech" flag can temporarily disable STT.  For further assistance, contact our [support team](mailto:support@yellow.ai).
 
+**11. What is the maximum length of the YM auth token?**
+
+The YM auth token can have a maximum length of 40 characters.
+
+**12. What is the character set used to create the YM auth token?**
+
+The character set comprises `A-Z a-z 0-9 _ -` including English uppercase and lowercase letters, numbers 0-9, underscore (_), and dash (-).
+
 
 
 

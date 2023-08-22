@@ -82,7 +82,6 @@ module.exports = {
     "cookbooks/inbox/custom-usecases",
     "cookbooks/inbox/alias",
     "cookbooks/inbox/csatreport",
-    "cookbooks/inbox/chattranscriptsecurity",
     "cookbooks/inbox/ticketclose-message",
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
@@ -114,6 +113,7 @@ module.exports = {
   items: [
     // "cookbooks/Upgrade_new_engage_app",
     "cookbooks/Understanding channels 101/email-outbound-101",
+    "cookbooks/Understanding channels 101/optout-campaigns",
 
   ],
 }, 
@@ -151,12 +151,13 @@ module.exports = {
       "platform_concepts/Getting Started/resources",
       "platform_concepts/Getting Started/user-account-settings", 
       "platform_concepts/Getting Started/add-bot-collaborators",
+      "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/modify-bot-configuration",
+      "platform_concepts/Getting Started/publish-env",
 
-
-        "platform_concepts/Getting Started/platform-offerings",
-        "platform_concepts/Getting Started/keyboard-shortcuts",
-        "platform_concepts/Getting Started/api-keys",
+      "platform_concepts/Getting Started/platform-offerings",
+      "platform_concepts/Getting Started/keyboard-shortcuts",
+      "platform_concepts/Getting Started/api-keys",
 
  
 
@@ -444,6 +445,7 @@ module.exports = {
            // "platform_concepts/inbox/chats/getstartedwithlivechat",
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/genai",
+            "platform_concepts/inbox/chats/internal-ticket",
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",
@@ -1021,6 +1023,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/twitter",
+            "platform_concepts/channelConfiguration/facebook-comments",
           ]
         },
         {

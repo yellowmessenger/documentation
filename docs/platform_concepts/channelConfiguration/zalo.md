@@ -8,13 +8,13 @@ Zalo is an instant messaging application that allows you to send text messages, 
 Businesses can use Zalo to communicate with their customers, respond quickly to customer inquiries, provide customer support, promote their brand by sending promotional offers, and host virtual meetings with colleagues and customers.
 
 In this article, you will learn:
-* [How to create a Zalo official account?](#1-create-zalo-official-account)
-* [How to setup a Zalo channel using Developer portal?](#2-setup-zalo-channel-using-developer-portal)
-* [How to connect Zalo business channel to your bot?](#3-connect-zalo-channel-to-your-bot)
-* [How to test your bot on Zalo channel?](#4-test-your-bot-on-zalo)
+* [How to create a Zalo official account?](#create-zalo-official-account)
+* [How to setup a Zalo channel using Developer portal?](#setup-zalo-channel-using-developer-portal)
+* [How to connect Zalo business channel to your bot?](#connect-zalo-channel-to-your-bot)
+* [How to test your bot on Zalo channel?](#test-your-bot-on-zalo)
 
 
-## 1. Create Zalo official account
+## Create Zalo official account
 
 1. Go to [Zalo website](https://oa.zalo.me/home) and click **Create Official Account now**.
 
@@ -39,7 +39,7 @@ In this article, you will learn:
 	
 6. After registering for an OA account and submitting the authentication profile, Zalo OA BQT will verify the account information and respond within 7 working days. 
 
-## 2. Setup Zalo channel using developer portal
+## Setup Zalo channel using developer portal
 
 To set up a Zalo channel using the developer portal, use this [link](https://developers.zalo.me/). Once your channel is set up in the developer portal, you can get the **OA server key** and **Access token ID** to connect your bot to the Zalo channel.
 
@@ -55,7 +55,7 @@ To setup Zalo channel using developer portal, follow these steps:
 
    ![](https://i.imgur.com/VDNR5q4.png)
    
-### 2.1 Configure Webhook on Zalo channel
+### Configure Webhook on Zalo channel
 
 After connecting to your official account on the developer portal, you need to [setup a Webhook](https://developers.zalo.me/docs/api/official-account-api/webhook/gioi-thieu-ve-webhook-post-4219) on the Zalo. Enter the Webhook URL shared by the yellow.ai product team to test your bot on the Zalo channel. 
 
@@ -96,9 +96,24 @@ To configure Webhook on Zalo, follow these steps:
 9. Copy the **Access token**.
 
    ![](https://i.imgur.com/3R48lse.png)
-  
 
-## 3. Connect Zalo channel to your bot
+### Add DNS TXT record to your domain
+
+To add a DNS TXT record, you need to verify our domain at Zalo.
+
+To add a DNS TXT record, follow these steps:
+
+1. Select Domain Authentication and enter a domain based on the bot region, for example, `cloud.yellow.ai` or `r1.cloud.yellow.ai`.
+
+   ![](https://i.imgur.com/CAimMVG.png)
+  
+   * After adding the domain, Add TXT record dialog box will be displayed.
+
+2. Copy the TXT record and send it to the integration team for adding the TXT record to our DNS.
+
+   ![](https://i.imgur.com/jVzySga.png)
+
+## Connect Zalo channel to your bot
 
 To connect the Zalo channel on the Yellow.ai platform, follow these steps:
 
@@ -116,7 +131,7 @@ To connect the Zalo channel on the Yellow.ai platform, follow these steps:
 If you don't use your bot for 3 months, the "refresh token" will expire. You'll get an email asking you to manually reset the "refresh token" in the Zalo developer portal. Once you reset it, a new "refresh token" will be created. You can add this token to our platform to reconnect your bot
 :::
 
-## 4. Test your bot on Zalo
+## Test your bot on Zalo
 
 After configuring Webhook, you can test your bot on the Zalo channel and you can start responding to the user queries.
 

@@ -10,6 +10,8 @@ title: Manage user segments
 
 ### Segment users based on user property filters
 
+Segmenting users based on user property filters is a powerful technique that allows you to categorize and target specific groups of users within your system. You can create customized segments that align with your marketing goals using various user attributes and properties as filters. This method allows you to dynamically generate user lists, optimizing the impact of your campaigns and ensuring that your content resonates with the intended audience.
+
 To create a user segment, follow these steps:
 
 1. Navigate to **Engage** > **User 360**.
@@ -41,6 +43,8 @@ Once you create a segment, you can view users in the segment, modify segment con
 
 
 ### Manually segment users when importing CSV file
+
+When importing a CSV file, you have the option to manually segment users. This allows you to create a user segment right during the import enabling you to efficiently categorize users as you bring in their records.
 
 You can also create a segment during the import process. This means that you can create a user segment directly when importing a set of user records.
 

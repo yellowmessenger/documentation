@@ -3,104 +3,103 @@ title: Create your free yellow.ai account
 sidebar_label: Signup & create your first bot
 ---
 
-Upon signing up, your account will automatically be enrolled in the [Freemium plan](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade).
 
 <iframe width="660" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+This guide will walk you through the process of signing up for a yellow.ai account and creating your first bot. Follow these steps to get started:
 
-1. Go to cloud.yellow.ai.
-2. Choose your preferred mode of signup.
-3. Fill in the required fields and click **Sign up**.
 
-    <img src="https://i.imgur.com/5I4eh2i.jpg" alt="drawing" width="100%"/>
+## Sign up process
 
-    :::note 
-    * Only official email addresses are accepted for signup. Personal email addresses will not be validated. If you encounter any issues, [contact us](https://yellow.ai/contact-us/).
-    * Provide your contact number along with the country code.
-    ::: 
+If you're new to the yellow.ai platform, here's how to sign up:
 
-4. Click **Get started** to build a bot from scratch.
 
-   :::info
-   You can see all the bots of your organization. To request access for a specific bot, click **Request access**.
+1. **Visit the website**: Go to cloud.yellow.ai.
+2. **Choose signup mode**: Select your preferred signup method.
+3. **Fill in details**: Complete the required fields and click Sign up.
+    ![](https://hackmd.io/_uploads/ByX-KWSn2.png)
+
+:::note 
+* Only official email addresses are accepted for signup. Personal email addresses won't be validated. For any issues, [contact us](https://yellow.ai/contact-us/).
+* Include your contact number with the country code.
+
+::: 
+
+4. **Verify email**: Check your email for a verification message and click **Verify email**.
+   <img src="https://hackmd.io/_uploads/S1BZcWHh3.png" alt="drawing" width="60%"/>
+
+5. **Choose use case**: Select the option closest to your use case. Regardless of the choice, you'll have access to the same modules and features.
+   <img src="https://hackmd.io/_uploads/Hy10Kbr2n.png" alt="drawing" width="90%"/>
+
+6. **Request bot access**: To access specific bots within your organization, click Request Access.
    <img src="https://i.imgur.com/MeQczsX.png" alt="drawing" width="80%"/>
-   :::
+   
+7. **Choose bot creation option**: Opt to build a bot from **scratch** or use **predefined templates**.
+   <img src="https://hackmd.io/_uploads/H1Z--XLo2.png" alt="drawing" width="70%"/>         
+    
+    (or)       
+   <img src="https://hackmd.io/_uploads/H1aHZQLj3.png" alt="drawing" width="70%"/>
 
-5. Click **Get started** under the preferred use-case.
 
-   <img src="https://hackmd.io/_uploads/Syo9bakin.png" alt="drawing" width="80%"/>
+8. Select data region and create a project: For compliance, choose the region nearest to you to store your account data. Click **Create Project**.
 
-6. Choose the industry your business belongs to. To skip the following steps, click **Skip for now**.
+   <img src="https://hackmd.io/_uploads/Sy9ei-B2n.png" alt="drawing" width="50%"/>
+   
+:::note
+Upon signing up, your account will automatically be enrolled in the [Freemium plan](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade) and a default **chat bot** will be created for your subscription. 
+:::
 
-    ![](https://hackmd.io/_uploads/S1Q0-Tkon.png)
+9. **Explore Studio**: You'll be directed to the [**Studio** (Builder)](https://docs.yellow.ai/docs/platform_concepts/studio/overview) module, where you can:
+    - Set up a bot for your website effortlessly. Refer to [Zero effort bot setup](https://docs.yellow.ai/docs/platform_concepts/studio/kb). 
+    - Navigate to [Overview](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/platform-offerings) to deepen your understanding of the platform.
+    - Access account settings to [configure the bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings). 
+
+![](https://hackmd.io/_uploads/HJahiWBhh.png)
+
+By default, your bot comes with essential flows: Welcome, fallback for unidentified customer questions, multilingual support, and customer-agent chat. You can customize these [flows](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings) and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot.
+
+![](https://hackmd.io/_uploads/r1qvNSBn2.png)
 
 
 -----
 
+## Create your first bot 
 
-## Create your bot during signup
-
-<!--
-You will see two options to create a bot:
-
-1. [Start building from scratch to create all flows manually](#create-bot-from-scratch)
-2. [Use pre-built bot templates that come with predefined flows](#use-predefined-bot-templates)
--->
-
-### Create bot from scratch
-
-1. In the **I would like to start afresh** field, describe the use case for which the bot is built.
-2. Click the **+Start from scratch** button.
-
-   <img src="https://hackmd.io/_uploads/H1Z--XLo2.png" alt="drawing" width="70%"/>
-
-3. Select the bot type, the region of the bot and click **Create Project**.
-
-   <img src="https://i.imgur.com/86kgJxw.png" alt="drawing" width="50%"/>
+Once you've completed the signup process, you can create a new bot in two ways:
 
 
-### Use predefined bot templates
+1. **Import from Marketplace templates**: yellow.ai offers a wide range of predefined templates tailored to various business cases. You can swiftly create a fully functional chatbot by using these templates.
 
-1. Choose your preferred use cases.
-2. Click **Import+**.
+    [**Learn how to use marketplace templates :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#2-view--import-template)
 
-   <img src="https://hackmd.io/_uploads/H1aHZQLj3.png" alt="drawing" width="70%"/>
-
-3. Choose the region of the bot and click **Create Project**.
-
-   <img src="https://i.imgur.com/4phs5gv.png" alt="drawing" width="50%"/>
+    <img src="https://i.imgur.com/WUyJg7x.png" alt="drawing" width="100%"/>       
 
 
-------
 
-## Create a bot after signup 
+2. **Create from scratch**: Craft a bot from the ground up to align precisely with your unique business requirements. Start by specifying your bot's details and confirm to **Create a Bot** from scratch.
 
-Once you finish the signup process, you can create a new bot by yourself in two ways.
+    [**Learn how to use studio to build your bot :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
-### Import from existing templates
+    ![](https://hackmd.io/_uploads/Sk01ut923.png)
 
-Yellow.ai has a huge collection of predefined templates. These templates have been designed to suit different buisness usecases and industries. You can create a fully functional chatbot within minutes by using our templates.
+    <img src="https://i.imgur.com/GSMvl22.png" alt="drawing" width="100%"/>
 
-1. Skim through the template collection and click the one that suits your usecase. 
-2. Click **Create**.
 
-<img src="https://i.imgur.com/WUyJg7x.png" alt="drawing" width="100%"/>
 
-### Create from scratch
+## Publish your first bot
 
-Bots can be created from scratch to specifically suit your individual business usecases. To do so, you need to start by providing your bot requisites.
+:::note
+Bots can be built in Development/Sandbox/Staging mode and published to Live/Production. Learn more about these enviornment [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+:::
 
-1. Click **Create a bot** from scratch.
+Once your bot is ready, you can publish it by following the steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
 
-<img src="https://i.imgur.com/Y8Qg0Ea.png" alt="drawing" width="100%"/>
+----
 
-2. Fill in the details on the **Create bot** dialog box and click **Create bot**.
+**What's next?**
 
-<img src="https://i.imgur.com/GSMvl22.png" alt="drawing" width="100%"/>
-
-3. Go to the **Studio** module to start creating bots. For a detailed guide, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/overview).
-
-### Publish the bot
-
-Once you have created a bot, you can publish it by following the steps you mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
-
+- Dive into [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) and [functions](https://docs.yellow.ai/docs/platform_concepts/studio/build/code).
+- Integrate various [channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).
+- Create flows using [tables](https://docs.yellow.ai/docs/platform_concepts/studio/database).
+- Analyze performance through [analytics](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights).
+- Design a [voice bot](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/vbintro).
