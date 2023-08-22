@@ -23,14 +23,46 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
 
 3. Fill in the required fields. 
 
-* **Organization Id** - The unique identifier of the salesforce account that represents a particular organization (To be provided by salesforce spoc of the client).
-* **Deployment Id** - The ID of the deployment from where the chat has been initiated (To be provided by salesforce spoc of the client).
-* **Button Id** - The Id of the button(group) from where the chat has been initiated (To be provided by salesforce spoc of the client).
-* **Base Url** - The chat API endpoint of a particular salesforce organization (To be provided by salesforce spoc of the client).
-* **Agent Device** - The browser’s userAgent value. (To be provided by salesforce spoc of the client).
+* **Organization Id** - The unique identifier of the salesforce account that represents a particular organization. To fetch this, refer to the following steps:
+
+ 1. Login to your Salesforce account.
+ 2. Click on the app launcher and choose **Service Console**.
+ 3. Click on the setup button at the top right corner and select **Setup**.
+ 4. In the **Quick Find** section, search for **Deployments** in the **Chat** section.
+ 5. Click on the deployment that is already created (if not, create a deployment).
+ 6. In the deployment script, locate an ID starting with **00D**, which is the Organization ID.
+
+* **Deployment Id** - The ID of the deployment from where the chat has been initiated. To fetch this, refer to the following steps:
+
+ 1. Login to your Salesforce account.
+ 2. Click on the app launcher and choose **Service Console**.
+ 3. Click on the setup button at the top right corner and select **Setup**.
+ 4. In the **Quick Find** section, search for **Deployments** in the **Chat** section.
+ 5. Click on the deployment that is already created (if not, create a deployment).
+ 6. In the deployment script, locate an ID not starting with **00D**, which is the Deployment ID.
+
+* **Button Id** - The Id of the button(group) from where the chat has been initiated. To fetch this, refer to the following steps:
+
+ 1. Login to your Salesforce account.
+ 2. Click on the app launcher and choose **Service Console**.
+ 3. Click on the setup button at the top right corner and select **Setup**.
+ 4. In the **Quick Find** section, search for **Chat Buttons and Invitations** in the **Chat** section.
+ 5. Click on the button that is already created (if not, create a button).
+ 6. In the **Chat Button Code**, locate an ID not starting with **573**, which is the Button ID.
+
+* **Base Url** - The chat API endpoint of a particular salesforce organization. To fetch this, refer to the following steps:
+
+ 1. Login to your Salesforce account.
+ 2. Click on the app launcher and choose **Service Console**.
+ 3. Click on the setup button at the top right corner and select **Setup**.
+ 4. In the **Quick Find** section,  search for **Chat Settings** in the Chat section.
+ 5. Find the **Chat API Endpoint** present and copy the URL value till **.com**. This is your Organization Base URL.
+
+* **Agent Device** - The browser’s userAgent value. 
 * **Language** - Language preferred by the user to chat with the live agent.
 * **Agent Screen Resolution** - The screen resolution of the device used by the agent.
  * **Agent Timeout** - The value of this field determines the time till which the chat will remain active in case of inactivity at the agent’s side.
+
 
 4. Once you're done, click **Connect**.
 5. If you have multiple accounts, follow the above mentioned steps to add each of them.

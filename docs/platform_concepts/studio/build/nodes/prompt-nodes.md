@@ -535,13 +535,12 @@ Different types of date pickers are available to be displayed to the users.
 Example of a Single Date Picker. 
 
 
-
-
-
 ![](https://i.imgur.com/QAIhG8M.png)
 
 
 [**Storing date variables**](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables): Post validation, the entered date by the users will be stored in the specified variable as an object. 
+
+Users aren't restricted to using only the date picker, they can also input the date manually, and it will be saved in a variable.
 
 The structure of the object is as follows:
 
