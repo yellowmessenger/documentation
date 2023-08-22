@@ -106,8 +106,10 @@ To add a DNS TXT record, follow these steps:
 1. Select Domain Authentication and enter a domain based on the bot region, for example, `cloud.yellow.ai` or `r1.cloud.yellow.ai`.
 
    ![](https://i.imgur.com/CAimMVG.png)
-  
-   * After adding the domain, Add TXT record dialog box will be displayed.
+
+:::note  
+A TXT dialog box is displayed if the domain has not been verified before.
+:::
 
 2. Copy the TXT record and send it to the integration team for adding the TXT record to our DNS.
 
