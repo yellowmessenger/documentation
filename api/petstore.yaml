@@ -77,6 +77,132 @@ components:
       schema:
         type: string
       example: application/json
+  schemas:
+    UserEvent:
+      type: object
+      properties:
+        id:
+          type: string
+          description: The ID of the event
+        botId:
+          type: string
+          description: The ID of the bot
+        userId:
+          type: string
+          description: The user's unique ID
+        event:
+          type: string
+          description: The name of the event
+        source:
+          type: string
+          description: The source of the event
+        payload:
+          type: object
+          properties:
+            timestamp:
+              type: number
+              description: The timestamp of the event
+            user:
+              type: object
+              properties:
+                city:
+                  type: string
+                  description: The user's city
+                country:
+                  type: string
+                  description: The user's country code
+                firstName:
+                  type: string
+                  description: The user's first name
+                gender:
+                  type: string
+                  description: The user's gender
+                lastName:
+                  type: string
+                  description: The user's last name
+                profileComplete:
+                  type: string
+                  description: The completeness of the user's profile
+                userId:
+                  type: string
+                  description: The user's unique ID
+            createdAt:
+              type: string
+              format: date-time
+              description: The creation timestamp of the event
+            updatedAt:
+              type: string
+              format: date-time
+              description: The last update timestamp of the event
+    UserEventRequestBody:
+      type: object
+      properties:
+        userId:
+          type: string
+          description: The user's unique ID
+          example: "91828890000"
+        eventName:
+          type: string
+          description: The name of the event
+          example: "shopifyNewOrder"
+        source:
+          type: string
+          description: The source of the event, pass `CUSTOM`
+          example: "CUSTOM"
+        userProperties:
+          type: object
+          properties:
+            phone:
+              type: string
+              description: The user's phone number
+              example: "918000023491"
+            email:
+              type: string
+              description: The user's email address
+              example: "tim@example.com"
+        payload:
+          type: object
+          properties:
+            firstName:
+              type: string
+              description: The user's first name
+              example: "Tim"
+    UserEventResponseBody:
+      type: object
+      properties:
+        message:
+          type: string
+          description: Message indicating the response status
+          example: "Event created successfully"
+        data:
+          type: object
+          properties:
+            id:
+              type: string
+              description: The ID of the event
+            botId:
+              type: string
+              description: The ID of the bot
+            userId:
+              type: string
+              description: The user's unique ID
+            event:
+              type: string
+              description: The name of the event
+            source:
+              type: string
+              description: The source of the event
+            payload:
+              type: object
+              properties:
+                firstName:
+                  type: string
+                  description: The user's first name
+            createdAt:
+              type: string
+              format: date-time
+              description: The creation timestamp of the event 
+
 paths:
   '/cdp/api/v1/user':
     post:
@@ -657,45 +783,89 @@ paths:
                   error:
                     type: string
                     description: Error details
-   
+
   '/cdp/api/v1/event':
-    get:
+    post:
       security:
-        - ApiKeyAuth: []    
+        - ApiKeyAuth: []
       tags:
-        - Event
-      summary: Get user details
-      description: Retrieves the details of a specific user based on the userId provided.
-      operationId: getUserDetails
+        - Event    
+      summary: Create new event
+      description: Pushes a new event to User 360. If the userId already existsin User 360, it updates the data; if not, it creates a new user record.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/UserEventRequestBody'
       parameters:
-        - name: userId
-          in: query
-          description: The unique ID of the user.
+        - in: query
+          name: bot
           required: true
           schema:
             type: string
-        - name: bot
-          in: query
-          description: The unique bot ID in which the user record is available.
-          required: true
-          schema:
-            type: string
-        - name: allProperties
-          in: query
-          description: Pass `true` to retrieve all user properties. By default, only a few standard properties firstName, lastName
-          schema:
-            type: string
+          description: The ID of the bot
       responses:
         '200':
-          description: OK
+          description: Event created successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/UserEventResponseBody'
+            
+    get:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Event
+      summary: Get user events
+      description: Retrieve events associated with a specific user.
+      parameters:
+        - in: query
+          name: bot
+          schema:
+            type: string
+          description: The ID of the bot
+        - in: query
+          name: userId
+          required: true
+          schema:
+            type: string
+          description: The unique ID of the user generated internally. This is usually in the format `{botId_userId}`
+        - in: query
+          name: eventName
+          required: false
+          schema:
+            type: string
+          description: The name of the event. Use this parameter to filter results by event name.
+        - in: query
+          name: offsetTimestamp
+          required: false
+          schema:
+            type: string
+          description: The offset timestamp (ISO format) from which to start retrieving events. Use this parameter to paginate through event results.
+        - in: query
+          name: limit
+          required: false
+          schema:
+            type: integer
+          description: The maximum number of events to retrieve per request. Use this parameter for result pagination and limiting the response size.          
+      responses:
+        '200':
+          description: Successful response with a list of user events
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  contactDetails:
-                    type: object
-                    description: Details of the created contact
+                  message:
+                    type: string
+                    description: Message indicating the response status
+                  data:
+                    type: array
+                    description: List of user events
+                    items:
+                      $ref: '#/components/schemas/UserEvent' 
         '400':
           description: Bad Request
           content:
@@ -719,7 +889,110 @@ paths:
                 properties:
                   error:
                     type: string
-                    description: Error details      
+                    description: Error details
+
+  '/cdp/api/v2/event/custom/properties':
+    get:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Event
+      summary: Get custom event properties
+      description: Retrieve all custom properties associated with events.
+      parameters:
+        - in: query
+          name: bot
+          required: true
+          schema:
+            type: string
+          description: The unique ID of the bot
+      responses:
+        '200':
+          description: Successful response with custom event properties
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Message indicating the response status
+                  data:
+                    type: object
+                    properties:
+                      propertyCount:
+                        type: integer
+                        description: Number of custom event properties
+                      properties:
+                        type: array
+                        description: List of custom event properties
+                        items:
+                          type: string
+                    example:
+                      propertyCount: 6
+                      properties:
+                        - message
+                        - firstName
+                        - order
+                        - address
+                        - trackingNumber
+                        - link
+    
+  '/cdp/api/v2/event/by-type':
+    get:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Event    
+      summary: Get events by ID & name
+      description: Retrieve a specific event associated with a user.
+      parameters:
+        - in: query
+          name: bot
+          required: true
+          schema:
+            type: string
+          description: The unique ID of the bot
+        - in: query
+          name: id
+          required: true
+          schema:
+            type: string
+          description: The unique internal ID of the user in the format `botId_userId`
+        - in: query
+          name: eventName
+          required: true
+          schema:
+            type: string
+          description: The name of the event to fetch
+        - in: query
+          name: offsetTimestamp
+          required: false
+          schema:
+            type: string
+          description: The offset timestamp (ISO foramt) for retrieving events
+        - in: query
+          name: limit
+          required: false
+          schema:
+            type: integer
+          description: The maximum number of events to retrieve
+      responses:
+        '200':
+          description: Successful response with events of the specified type
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    description: Message indicating the response status
+                  data:
+                    type: array
+                    description: List of events
+                    items:
+                      $ref: '#/components/schemas/UserEvent'
 
   '/data/messages':
     get:
@@ -1024,3 +1297,4 @@ paths:
                   error:
                     type: string
                     description: Error details
+ 
