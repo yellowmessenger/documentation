@@ -8,7 +8,7 @@ This is best for adding one user at a time, like prospects you met at an event, 
 
 To add a user using the User 360 UI:
 
-1. On the User 360 page, click **Add user** > **Single user**.
+1. On the **User 360** module, click **Add user** > **Single user**.
    
    ![](https://i.imgur.com/Pw5g3Vt.png)
 

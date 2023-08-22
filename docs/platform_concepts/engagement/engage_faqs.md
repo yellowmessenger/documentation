@@ -12,10 +12,20 @@ rank: 1
 
 To prevent sending campaigns to users who respond with DND, follow these steps:
 
-1. Train an [utterance on DND](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
-2. Set up a flow triggered by the DND utterance or capture opt-out status manually.
-3. Within the flow, [update the opt-in property accordingly](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
+1. Create and train an [intent on relevant uttrences like DND and unsubscribe](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
+2. Set up a flow triggered by the respective intent.
+3. Within the flow, [update the opt-in property when the intent is triggered.
 4. Use this updated property as a [condition in segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment) targeting to exclude users who have opted for DND from receiving further campaign messages.
+
+For a detailed help guide, refer to [Engage user guide](https://docs.yellow.ai/docs/cookbooks/Understanding%20channels%20101/optout-campaigns).
+
+</details>
+
+
+<details>
+<summary> Do we receive any event on the bot if users click on the CTA used in Outbound campaigns? </summary>
+
+No, for CTA button clicks, you will not receive any events on the bot.
 
 </details>
 
