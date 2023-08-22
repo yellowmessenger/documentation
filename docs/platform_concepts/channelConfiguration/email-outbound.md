@@ -39,7 +39,7 @@ You can add sender email acount either by configuring the SMTP of the brand’s 
 
 ### Set up SMTP-based email account (Basic)
 
-This setup allows our platform to send emails on behalf of the email domain.
+This setup allows our platform to send emails on behalf of the email domain. For more information on how to setup Email channel, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#1).
 
 To set up SMTP server on the yellow.ai platform, follow these steps:
 
@@ -78,9 +78,9 @@ Enter the following details:
 
    <img src="https://i.imgur.com/1BbJrgg.png" width="80%"/>
 	
-* Once the email account details are Saved, forwarding address will be displayed. For more information on how to forward the email address, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#--2-set-mail-forwarding).
+* Once the email account details are Saved, forwarding address will be displayed. For more information on how to set mail forwarding, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#22).
 
-     ![](https://i.imgur.com/D6gV0dW.png)
+ ![](https://i.imgur.com/D6gV0dW.png)
 
 Similarly, you can add multiple email accounts and choose your preferred sender ID when configuring an outbound campaign.
 
