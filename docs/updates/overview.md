@@ -73,7 +73,7 @@ We have made significant improvements to our Flow Campaign user interface to acc
 
 ### 3. Support for new statuses in WhatsApp Templates
 
-We have implemented new WhatsApp template statuses - "1st Phase" and "2nd Phase." With these updates, you will receive timely alerts whenever users report an active WhatsApp template as low quality or spam. As a proactive measure to maintain template quality, any reported template will be automatically blocked to prevent further complaints. You can update the template to seamlessly continue using it in your campaigns.
+We have implemented new WhatsApp template statuses - "1st Pause" and "2nd Pause." With these updates, you will receive timely alerts whenever users report an active WhatsApp template as low quality or spam. As a proactive measure to maintain template quality, any reported template will be automatically blocked to prevent further complaints. You can update the template to seamlessly continue using it in your campaigns.
 
 **[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#4-view-whatsapp-template-approval-or-rejection-status)**
 
