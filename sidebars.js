@@ -1120,6 +1120,7 @@ module.exports = {
           label: "Tools & Utilities",
           collapsed: true,
           items: [
+            "platform_concepts/appConfiguration/atlassian",
             "platform_concepts/appConfiguration/aws-s3",
             "platform_concepts/appConfiguration/azure-ad",
             "platform_concepts/appConfiguration/clevertap",
