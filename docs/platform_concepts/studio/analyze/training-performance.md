@@ -1,22 +1,21 @@
 ---
-title: Training Performance
-sidebar_label : Training Performance
+title: Message view
+sidebar_label : Message view
 ---
 
 
-Training performance refers to how well the chatbot has been trained to understand and respond to user input in a conversational context. It is typically evaluated by testing the bot's ability to generate accurate and relevant responses to a set of input that it has not seen before. 
+Message view refers to how well the chatbot has been trained to understand and respond to user input in a conversational context. It is typically evaluated by testing the bot's ability to generate accurate and relevant responses to a set of input that it has not seen before. 
 
-To access this option, go to **Studio** > **Analysis** > **Training Performance**.
+To access this option, go to **Studio** > **Analysis** > **Message view**.
 
-![](https://i.imgur.com/o0Ap5Qy.png)
+   ![](https://i.imgur.com/BqM4cUP.png)
 
 
 ## 1. Filter messages 
 
  The **Filters** section lets you set the criteria based on which the utterances should be displayed.
 
-![](https://i.imgur.com/wAfXdlT.png)
-
+   ![](https://i.imgur.com/jUKk8S1.png)
 
 * **Date**
 
@@ -32,16 +31,14 @@ To access this option, go to **Studio** > **Analysis** > **Training Performance*
 
  Once you have set the filters, click the **Apply filter** button at the bottom to apply the changes. To reset these filters, click the **Reset filters** button.
 
-![](https://i.imgur.com/VC2ymlk.png)
-
 ## 2. Map unidentified utterances
 
  Messages display the unidentified utterances of the bot. If the filters are set, messages will be displayed based on that. Click on a message to see the entire conversation in which it was used. 
 
-![](https://i.imgur.com/O76PAFF.png)
+   ![](https://i.imgur.com/EB4byme.png)
 
  You can map these utterances to intents by clicking the dropdown right next to them.
 
-![](https://i.imgur.com/qU8xhLY.png)
+   ![](https://i.imgur.com/9W8UEOc.png)
 
 
