@@ -71,26 +71,9 @@ Here's a compilation of features that require separate configuration in both of 
 
 | Module | Settings requiring separate configuration in live/production environment|
 | -------- | -------- |
-| **Engage**     |  |
-||User360 data |
-|| Segments|
-||Scheduled campaigns|
-||User360 variables (Studio and User360 sync)|
-||Inbound campaign configuration|
-||Enabling Notificaion AP|
-||Postback URL|
-|**Analytics/Insights**||
-|| Custom queries|
-|| Goals |
-|| Custom dashboards |
-| **Channels and Integration** |	|
-|| All the Channels and integrations (except **WhatsApp**) |
+| **Engage**     |  User360 data <br/> Segments <br/> Scheduled campaigns <br/> User360 variables (Studio and User360 sync) <br/> Inbound campaign configuration <br/> Enabling Notificaion API <br/> Postback URL |
+|**Analytics/Insights**|  Custom queries <br/> Goals <br/>  Custom dashboards |
+| **Channels and Integration** | All the Channels and integrations (except **WhatsApp**) |
 | **Chat widget** | Chat widget settings |
-|**Inbox**	||
-|| Custom Tags|
-|| Groups creation and configuration |
-|| Inbox settings  |
-|| Agent settings |
-| **Studio** ||
-||Database must be created only in Sandbox/Development env|
-||Data within the DB will not move to Live/Prod| 
+|**Inbox**	| Custom Tags <br/> Groups creation and configuration <br/> Inbox settings <br/> Agent settings |
+| **Studio** | Database must be created only in Sandbox/Development env <br/> Data within the DB will not move to Live/Prod| 
