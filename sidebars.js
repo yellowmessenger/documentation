@@ -17,11 +17,11 @@ module.exports = {
     "tutorials/basics",
     "tutorials/studio",
     "tutorials/data",
+    "tutorials/engage",
+    "tutorials/channels",
     "tutorials/growth",
     "tutorials/inbox",
-    "tutorials/engage",
     "tutorials/integrations",
-    // "tutorials/webinars",
   ],
 
   //cookbook- user guides 

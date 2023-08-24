@@ -6,6 +6,14 @@ featured: true
 
 Discover our video tutorials on integration and learn how to seamlessly integrate several systems and applications with Yellow.ai.
 
+## Integration Overview
+
+Unlock the Power of Integration with Yellow.ai! This video is your gateway to discovering the art of seamlessly connecting your bot with external tools and services. Integration is the key to extending your bot's capabilities, enabling it to fetch real-time data, trigger actions, and enhance user experiences across platforms.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0f0ca84M4Ns?si=3Rai_zz4E0wtyOW6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
 
 <!--
 

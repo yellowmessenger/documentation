@@ -4,6 +4,14 @@ sidebar_label: Engage
 featured: true
 ---
 
+## Introduction to Engage
+
+Welcome to the world of engagement! In this informative video, we'll introduce you to the Engage module, a powerful tool designed to enhance your interactions with users. Discover how to create and manage campaigns, send targeted messages, and build personalized user experiences that drive meaningful engagement.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oCRh5osqEfM?si=5xAtTzhQQQlo3RXA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
 ## User 360
 
 ### Add users to User 360
