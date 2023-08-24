@@ -33,7 +33,7 @@ Welcome to our platform overview video! In this brief introduction, we will take
 </center>
 
 
-
+<!--
 ### Understanding the Platform's  interface
 
 In this video, we will provide you with a glimpse of our intuitive platform interface. 
@@ -41,10 +41,27 @@ In this video, we will provide you with a glimpse of our intuitive platform inte
 
 <p align="center"><iframe width="560" height="315" src="https://www.youtube.com/embed/yLZUfLKm5TA" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></p>
 
+-->
+
+### Add bot collaborators with role-based access
+
+Discover the process of granting role-based access to developers and other users within the platform in this informative video. Role-based access ensures that each user is provided with the appropriate level of permissions and privileges, aligning with their responsibilities and tasks.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/mWGuhIOE4xI?si=Nk3OqkaKi4pvThPQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+### Customizing the Look and Feel of the Chatbot 
+
+Discover the art of crafting the perfect visual experience for your chatbot with our comprehensive tutorial. In this video, we'll walk you through the process of managing the chatbot's look and feel.
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q5uKVYSeKh4?si=2ImndgOghLJEK100" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 
+<!--
 
- ### Build lead generation chatbot in minutes
+### Build lead generation chatbot in minutes
 
 
 This video demonstrates how to  build a lead generation chatbot in minutes.
@@ -71,7 +88,7 @@ This video demonstrates how to  build a customer support chatbot in minutes.
 
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/Fgmp-ofBy78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
-
+-->
 
 
 <!--
