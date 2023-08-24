@@ -112,6 +112,17 @@ Other AI features on the chat screen are listed in the [Generative AI article](h
 
 ---
 
+### Internal ticketing via. slack threads
+
+The internal ticketing feature enhances collaboration among L1 and L2 support agents through Slack threads. 
+
+![](https://hackmd.io/_uploads/ryNr-BGTn.png)
+
+
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/internal-ticket) for a detailed documentation on slack threads. 
+
+---
+
 ### First response auto-indicator
 
 The live chat interface includes an automatic indicator that remains visible until the agent sends the first response. This indicator cannot be customized and serves as a visual cue to indicate that the agent has not yet provided a response.
