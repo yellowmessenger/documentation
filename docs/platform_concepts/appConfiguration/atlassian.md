@@ -3,7 +3,8 @@ title : Atlassian
 sidebar_label : Atlassian
 ---
 
-Integrate your Yellow.ai platform with Atlassian, allowing management of your Atlassian account from Yellow.ai. This integration empowers your bot to provide users with access to their Atlassian account and perform Atlassian actions directly within the Yellow.ai bot.
+
+Integrate Atlassian with yellow.ai and manage all your Atlassian activities from our platform. This integration empowers your bot to provide users with access to their Atlassian account and perform Atlassian actions directly within the Yellow.ai bot.
 
 
 ## Steps to integrate with Yellow.ai
@@ -20,17 +21,17 @@ The following are the steps to be followed to integrate your Atlassian account w
 
 ![](https://i.imgur.com/8RBBmcn.png)
 
-3. Add and configure the app’s API scopes for JIRA platform's REST and Service Management API.
+3. Add and configure the app’s API scopes for JIRA. 
 
 **Common permissions**
 
 | Scope | Description |
 | --- | --- |
-| read:jira-work | Read Jira project and issue information, and search for specific issues. |
-| read:jira-user | Read Jira user information that is available to you. |
-| write:jira-work | Create and edit Jira issues, including creating and editing them, posting comments on behalf of the user, adding worklogs, and deleting issues. |
-| read:servicedesk-request | Read customer requests data, including approvals, attachments, comments, and request participants. |
-| write:servicedesk-request | Create and edit customer requests, including creating and editing them, adding comments and attachments. |
+| read:jira-work | Read access to Jira project and issue information, and search for specific issues. |
+| read:jira-user | Read access to Jira user information that is available to you. |
+| write:jira-work | Create and edit access to Jira issues, including creating and editing them, posting comments on behalf of the user, adding worklogs, and deleting issues. |
+| read:servicedesk-request | Read access to customer requests data, including approvals, attachments, comments, and request participants. |
+| write:servicedesk-request | Create and edit access to customer requests, including creating and editing them, adding comments and attachments. |
 
 4. Go to yellow.ai > **Integrations**, click the URL hyperlink, and copy it. 
 
@@ -73,7 +74,7 @@ The following are the steps to be followed to integrate your Atlassian account w
 
    ![](https://i.imgur.com/qVFBaUO.png)
 
-2. You can set this event as a [start trigger for a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event). This flow will get triggered after a user has successfully been authorized. [Build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to execute the desired action immediately after the user's authorization.
+2. You can set this event as a [start trigger for a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event). This flow will get triggered after a user is successfully authorized. [Build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to execute the desired action immediately after the user's authorization.
 
 ![](https://i.imgur.com/Jgg4B2s.png)
 
