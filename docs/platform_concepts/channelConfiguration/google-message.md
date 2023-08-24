@@ -162,7 +162,7 @@ The brand name will be visible when the bot goes live on GBM. The name of the br
 
 ### Step 3: Enter bot details
 
-Enter the bot details based on the descriptions provided for each field in the following table and click **Save and next** to proceed to configure your [Business locations](enter-your-business-location). 
+Enter the bot details based on the descriptions provided for each field in the following table and click **Save and next** to proceed to configure your [Business locations](#step-4-add-your-business-location). 
 
 ![](https://i.imgur.com/6YJsEZN.png)
 
