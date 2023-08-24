@@ -47,6 +47,10 @@ The WA bot will respond with a number list even if the buttons are configured i
    <img src="/img/channels/WAgif.gif" alt="drawing"/>
 * If you want to delete a quick reply node, you have to switch to Website from the channels filter and then delete the buttons.
 
+:::note
+Using Quick Replies, you cannot add a message with a CTA in WA. It is recommended to use a WhatsApp template and pass the link as a CTA.
+:::
+
 ##### **Configure Dynamic WA quick reply and Dynamic WA list message**
 
 * For more information on how to create dynamic quick replies, click [here](https://docs.yellow.ai/docs/cookbooks/studio/dynamic-quickreplies).
@@ -179,7 +183,11 @@ To change the WA display name, follow these steps:
 	 
 3. Under *Name*, click **Edit** icon to edit the display name.
 
-     ![](https://i.imgur.com/jNtOL3r.png)	 
+     ![](https://i.imgur.com/jNtOL3r.png)	
+
+:::note
+If your WhatsApp display name gets rejected for the first time while applying via an embedded sign-up process, you need to reapply from your own FBM. After reapplying, if it is still rejected, you need to raise a support ticket with Meta.
+:::     
 	 
 
 ## Test your WhatsApp bot 
