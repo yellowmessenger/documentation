@@ -9,8 +9,7 @@ featured: true
 This video provides a comprehensive overview of the Inbox module. Discover how to navigate through the inbox interface and explore its various components and functionalities. Learn how to manage conversations, respond to customer queries, and access important information and tools within the inbox.
 
 <center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UXM2-18QLds" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
-</center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QehnmejcyIA?si=YC4AjJ9RB8sBcdVv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
 
 ### Inbox Features
