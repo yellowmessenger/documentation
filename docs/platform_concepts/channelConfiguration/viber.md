@@ -116,3 +116,23 @@ To test your bot on Viber, follow these steps:
 3. Start the conversation to test your bot.
 
 	 <img src="https://i.imgur.com/YbIFnOv.png" alt="drawing" width="40%"/>
+
+## Viber links
+
+Viber links are URLs that are used to initiate conversations with your business account on the Viber messaging app. Viber links are similar to [deep links](https://developers.viber.com/docs/tools/deep-links/) and are designed to provide a seamless user experience. Clicking these links directs users to specific interactions within the Viber app.
+
+You can get the Viber links manually by appending your chatbot username to the Viber deep link.
+
+To get the Viber links, follow these steps:
+
+1. Open Viber app and navigate to **More** > **Settings**.
+
+    <img src="https://i.imgur.com/HEBiryx.png" alt="drawing" width="60%"/>
+    
+2. In **URL**, copy your bot's username.
+
+     <img src="https://i.imgur.com/G25TXg0.png" alt="drawing" width="40%"/>   
+     
+3. Paste the bot username at the end of `viber://pa?chatURI=`. For instance, if your bot's username is 'xyz', the link will be `viber://pa?chatURI=xyz`.
+
+4. Embed this link on your business website for user access and interaction. 
