@@ -14,12 +14,13 @@ The following are some key features of User 360 -
 * Segment users into meaningful audiences
 * Activate user data and segments in various modules of yellow.ai to drive personalisation
 
+<!--
 :::note
 User360 is enabled by default for bots created after June 1, 2022.
 To enable it for your bot, write to sarthak@yellow.ai.
 :::
 
-
+-->
 
 
 
