@@ -118,7 +118,7 @@ You can only forward messages to a single Gmail address, not an email group or a
     
 7. A confirmation code will be sent to the **Bot Messages** section of the Inbox module. This code needs to be added to your email settings.
 
-     ![](https://i.imgur.com/NPCsdnU.png)
+     ![](https://i.imgur.com/P4znTah.png)
      
 8. In the "Forwarding" section, enter the **Confirmation code** and click **Verify**.
 
