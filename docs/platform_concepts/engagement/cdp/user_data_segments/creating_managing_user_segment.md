@@ -42,6 +42,42 @@ To create more sophisticated segments you can [combine `and` with `or` condition
 Once you create a segment, you can view users in the segment, modify segment condition, download users of the segment, or delete it as explained in the following sections.
 
 
+### Segment users on basis of events
+
+Event-based user segments allow you to categorize and target specific groups of users based on their interactions with events. These are dynamic segments and help you tailor your marketing strategies and engagement efforts more effectively.
+
+Event-based segmentation enables you to send targeted messages, offers, or content to users who have shown particular behaviors or engaged with specific events. This improves the relevance of your interactions and drives better engagement and conversions.
+
+To create event-based segments:
+
+1. Navigate to **User 360**.
+2. Click **Add Segment**.
+   <img src="https://i.imgur.com/WmouIvi.png" width="40%"/>
+3.  In **Segment name**, enter a unique name for the segment.
+4. Click **+Add condition** > Navigate to the **Events** tab.
+
+   <img src="https://i.imgur.com/q073Soh.png" width="70%"/>
+
+5. Choose the event based on which you want to create the segment. Search by event name to easily find the desired event.
+
+6. You will see the following configuration options.
+
+   | Purpose | Options | Description
+   | ------- | ------ | -----------
+   | Include/Exclude | <ul><li>Occurance</li><li>Didn't occur</li></ul> | Choose **Occurance** to include users who performed the chosen event; choose **Didn't occur** to exclude users that did not perform the chosen event.
+   | operator | <ul><li>is</li><li>isn't</li><li>is greater than</li><li>is less than</li></ul> | Choose the desired operator for comparison.
+   | No. of times | text box | Number of times the event has occurred.
+   Duration |  <ul><li>today</li><li>yesterday</li><li>last week</li><li>this month</li><li>last month</li><li>on</li><li>after</li></ul> |  Time period for event occurrence.
+
+7. Click **+Add another condition** to add multiple conditions if needed. 
+8. Click **Add**. The segment is created in 20 minutes.
+
+:::note
+* You cannot create a segment that uses an event-based condition and combine it with a segment based on user properties, and vice versa.
+* After creating an event-based segment, it may take up to 20 minutes for it to be visible on the user interface.
+:::
+
+
 ### Manually segment users when importing CSV file
 
 When importing a CSV file, you have the option to manually segment users. This allows you to create a user segment right during the import enabling you to efficiently categorize users as you bring in their records.
@@ -107,12 +143,6 @@ The file contains complete details of each user that is available in the databas
 
    ![](https://i.imgur.com/ECyBtOn.png)
 
-
-Alternatively, you can also download the user details using **User logs** > **Download log**.
-
-![](https://i.imgur.com/DJVTeUz.png)
-
-<img src="https://i.imgur.com/WlV8OQD.png" width="60%"/>
 
 ***
  
