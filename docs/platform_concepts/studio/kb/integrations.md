@@ -46,11 +46,11 @@ To integrate with Sharepoint:
 
 To optimize the usage of KB, you can use the **Document search** node and leverage tags created in the tags section. For more information on using this node, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search).
 
-## Acronym
+## Boost bot understanding and search accuracy via Acronyms
 
 In the **Acronym** section, you can enter common phrases for specific terms. This helps the bot understand and fetch accurate results from the documentation, even when users use abbreviations. 
 
-For example, **Whatsapp** is also known as **WA**. So if a user types WA, the bot understands it refers to Whatsapp and displays relevant documents.
+For example, users might use **WA** for **WhatsApp**. If you add this acronym the bot can understand it as WhatsApp whenever a user uses it. 
 
 To add an acronym:
 
