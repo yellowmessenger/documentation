@@ -17,7 +17,7 @@ To download users in a particular segment, select the desired **Segment** > **Ac
 
 ![](https://i.imgur.com/0FIZgh7.png)
 
-You will get a download link to your email. Alternatively, you can download it from **User logs** > Apply Bulk user download filter > Click on **Download log**.
+You will get a download link to your email. 
 
 
 ![](https://i.imgur.com/jNPgPuq.png)
