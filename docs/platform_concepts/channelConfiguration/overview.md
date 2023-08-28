@@ -11,6 +11,10 @@ To launch your bot across channels, you need to set up your bot, which is releva
 
 After setting up the channel, you need to test your bot, connect it to the respective channel, and ensure that the bot is responding to users.
 
+**Check out the introductory video on Channels:**
+
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/HiFaT5R4ppY" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
 ## Access Channels
 
 1. Log in to https://cloud.yellow.ai.
@@ -30,7 +34,4 @@ After setting up the channel, you need to test your bot, connect it to the respe
    * [Chat widget](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-overview)
 
     ![](https://i.imgur.com/6voFjYG.png)
-
-
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/wPJKEVAojpQ" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
