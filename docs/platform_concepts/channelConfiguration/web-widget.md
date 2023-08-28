@@ -6,6 +6,10 @@ tags : [iframe]
 
 This document helps you understand how to access the Chat widget and will guide you through how to customize, deploy, and preview it before setting it up on the website.
 
+**Watch the video on how to setup a chat widget:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Q5uKVYSeKh4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
 ## 1. Access Chat widget
 
 To access Chat widget, follow these steps: 
@@ -230,3 +234,4 @@ To share chatbot with other users, copy the bot link.
 <img src="https://i.imgur.com/unAJYEl.png" width="30%"/>
 :::
 ***
+
