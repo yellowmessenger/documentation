@@ -12,6 +12,10 @@ The following are the three different steps involved in importing a CSV file.
 2. [Importing the created CSV file](#step-2-import-csv-file)
 3. [Analysing import](#step-3-analyse-import-errors)
 
+:::note
+During the CSV import process, the system allows simultaneous import of only two files at a time. 
+:::
+
 ***
 
 ## Step 1: Create CSV file with user details
