@@ -3,491 +3,202 @@ title: Tools and settings
 sidebar_label: Tools & settings 
 ---
 
+You can find advanced settings in the tools section, that will help you to finely adjust your bot's performance. You can calibrate language understanding through NLU, configure conversational behavior, add constant values that do not change in any conversations, and prepare for upcoming Voice capabilities. These tools collectively elevate your bot's performance and user engagement.
 
+## Access tools
 
-**Tools** section helps you with the advanced bot settings related to NLU, conversation, and testing.  You can also test the bot as you build it. 
+To access the tools section:
 
-Different settings dedicated to Conversation, NLU, etc. can be configured in this section.
+1. Go to **Studio** > **Train** > **Intents** > **Tools**
 
-This article provides detailed information about different tools of the *Studio* module. 
-1. Navigation to Tools
-2. Bot Testing
-3. Conversation Settings
-4. NLU Settings
+   ![](https://i.imgur.com/jEMMz9q.png)
 
-  
-  
+The tools section consists of five segments:
 
-## 1. Access Tools
+   
+   <img src="https://i.imgur.com/YrLTZ16.png" alt="drawing" width="60%"/>
 
-To access Tools, follow these steps - 
+| Tool          | Description                                                                                             |
+| ------------- | ------------------------------------------------------------------------------------------------------- |
+| Test your bot | Analyse user-input sentences.                                                            |
+| Conversation  | Tailor **Conversation settings**, such as **Behavior**, **Intelligent switching**, **Step validation**, and **Auto skip settings**. |
+| NLU           | Customize technical specifics based on training.                                                      |
+| Constants     | Incorporate constant values stored in the database, such as names or filenames, ensuring continuity throughout interactions. |
+| Voice         | Adjust settings linked to the **Voice** feature on our platform.                       |
 
-1. Login in to the [Yellow.ai Platform](https://cloud.yellow.ai/auth/login)
+## Test your bot
 
-![](https://i.imgur.com/OLxJjsP.png)
+This section helps you check whether the associated intent will be triggered or not. The bot utilizes prediction to determine the intention behind the input and evaluates the accuracy of the prediction. It also identifies the bot's response based on the input text, including automatically recognized entities.
 
-  
-2. From the menu options, click **Studio**
+For instance, when you type an utterance in the "What user says?" section, you'll see the corresponding response and its confidence level displayed along with the related flow.
 
-> Keyboard shortcut: `g + s`
+   <img src="https://i.imgur.com/F5rVJIF.png" alt="drawing" width="60%"/>
 
-3. Navigate to any of the custom Flows or FAQs.
-   * On the Flows page, click on <img src="https://i.imgur.com/vk5sSwA.png" width="20"/> ( **Tools** icon).
+### Response parameters
 
-![](https://i.imgur.com/wP0Tc47.jpg)
+The following is a comprehensive description of the parameters in the response received for the typed input.
 
-   * On the FAQ page, click the **Tools** button.
-
-![](https://i.imgur.com/9grZUR0.png)
-
-Tools widget pops up on the right.
-
- 
-![](https://i.imgur.com/Cb9ylep.png)
-
-Tool | Description
------ | -------
-Test your bot | Analyse any sentence the user types as an input.
-Conversation  | Helps you configure Conversation related settings such as Behaviour, Intelligent switching, Step validation settings, and Auto skip settings.
-NLU | Helps you configure technical details based on the training.
-Constants | Helps you add constant values and store those in the database. There are a few values that will remain constant throughout the conversation. It can be a person's name, a file name or any value that will not be changed as the conversation progresses.
-Voice | Helps you configure settings related to the the Voice module. *It is an upcoming feature on our platform*.
-
-
-## 2.1. Test your bot
-
-This bot helps test whether the corresponding intent will get triggered or not.
-
-For example, if you type a sentence (user utterance) in **What user says?**, the Intent of that sentence and the journey that it belongs to will be displayed along with its confidence.
-
-![](https://i.imgur.com/aokPbNA.jpg)
-
-  
-### 2.1.1 Response parameters
-
-The results displayed here are based on the data used to train your *intents* and *entities*.
-
-  
-
-The following list provides descriptions for each parmeter of the response - 
-
-*  **Intent**: The flow of the sentence entered. That is, the bots prediction about the intention behind the text entered.
-*  **Confidence**: Confidence is the % value based on the accuracy of the predicted Intent. Confidence score lies between 0 and 1. 
-   * The confidence score will be 1If the bot is 100% confident about the prediction made for the intent for the specified input.
-   * If the confidence value is greater than 0.8, the accuracy of the prediction is considered to be good.
-3.  **Default Response**: This is the default response that bot will display to the user based on the text entered.
-4.  **Entity**: Words or phrases that represent a noun is called an entity.
-
->In a sentence "I would like to buy a phone", **Buy** is the **Intent** and **Phone** is the **Entity**.
-
-5.  **Global Entity**: These entities are not specifically trained by users, but by our platform itself for frequently typed phrases related to **Date** and **Country** names.
-
-
-| Dates  | Formats |
-| -------- | -------- |
-| **Identified as Global entity**| DD-MM-YY, DDth MM, Now, Today, X days ago, After X days, X weeks ago, Yesterday, Tomorrow, Day before yesterday, Day after tomorrow  |
-| **Not identified as Global entity**|X days later, X mins later, X  hours later, After X mins, After X hours |
-
-> - Bangalore is labeled as a **City** and Japan is labeled as a **Country**. 
-> - Phrases with a combination of date or time such as 12/03/2021, Yesterday, After 2 days, 5 hours, Summer, March, 25th October, etc. are labeled as **Date** or **Time** or **Minute**. 
-
-6.  **Global Model**: [Small talk](https://docs.yellow.ai/docs/platform_concepts/studio/train/smalltalk) and [Contexts](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-contextual-response) are listed and pre-trained by the platform or the bot developer to identify intents and display default responses. When these phrases are identified, the system recognizes them as a Global model.  
-
-> - The intent of "What is your name?" is identified as **What** (question).
-> - The intent of "Good morning!" is identified as **Greeting**.  
-
-:::info
+| Parameter       | Description                                                                                                     |
+| --------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Intent**      | Represents the utterance that you used to test flow prediction. The bot predicts the intention behind the input.          |
+| **Confidence**  | A percentage (0 to 1) reflecting how accurate the predicted intent is. Higher values indicate greater certainty.<br/> * Confidence is 1 when the bot is absolutely sure about the intent.<br/>* If the confidence is over 0.8, the prediction is considered accurate. |
+| **Default Response** | The bot's response based on the input text.                                                                 |
+| **Entity**      | Words or phrases representing nouns within the text. For example, in **I want to buy a phone**, Buy is the Intent and Phone is the Entity.                                                         |
+| **Global Entity** | Entities (for example, dates, countries) recognized automatically by the platform.<br/> * For **Dates**: DD-MM-YY, Today, Yesterday, Tomorrow, and more. <br/> * For **Countries**: Japan, India, etc.                               |
+| **Global Model** | Pre-trained phrases like Small Talk or Contexts, that help identify the intent.       |
 
 **Global model vs Global entity**
 
 - Global Model identifies values based on phrases trained in Small talk and Context management, you can add multiple contexts based on your industry use-case. 
 - Global entities identify values that are trained by the platform only for Dates and Locations. You cannot add/delete/modify the training. 
 
-![](https://i.imgur.com/Q9yU9sQ.png)
-
-:::
-
-
-  
-  
-
-### 2.1.2 Verbose
-
-This helps you to identify the emotion (sentiment) behind the text.
- Enable **Verbose** to view more details related to the sentiment and synonyms. 
-
-  
-![](https://i.imgur.com/NiSigKX.jpg)
-
-  
-
-### 2.1.3 Multi-language
-
-You can test your bot in multiple languages, by simply selecting the language of your choice from the dropdown.
-  
-
-![](https://i.imgur.com/5pwiSUQ.png)
-
-  
-:::note
-To add supported languages to your bot, see [Languages](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#2-add-languages-to-your-bot).
-:::
-  
-[](./)
-  
-
-## 2.2 Conversation
-
-This lets you control the conversation flow, message display, and the conversation related aspects.
-
-Changes can be controlled from the following categories -
-
-
-### 2.2.1 Behaviour
-
- This consists of fields to control the behaviour of the conversation.
- 
-
-![](https://i.imgur.com/H9Eu9QP.jpg)
-
-  
-
-1. **Target language** 
-    The default language in which the bot will converse in before auto-suggestion or change language journey occurs.<br/> 
-
-   For example, if **EN** (english) is entered as a target language, then the bot will initially converse in English with the user (it can be changed later).
-
-2. **Translate quick reply responses** 
-    *Currently, not in use.* 
-
-   Choose *Yes* from the dropdown list if you want the Quick reply buttons to auto-translate the entered sentence, else select *No* to disable auto-translation.
-
-3. **Enable Hinglish** 
-    Set *Yes* to allow the bot to understand Hinglish (Hindi + English) utterances. This is tailored specifically for Indian users.<br/>
-
-   For example, when the user types 'Agent se baat karao' the bot understands that it must - connect the user to an agent.
-
-<img src="https://i.imgur.com/3Kt7IiD.png" width="300"/>
-
-4. **Auto Detect Language** 
-   Set *Yes* to enable bot to auto-identify the language when the user types in and respond in that respective language (this is available only if configured).
-
-   This remains in place for 2 days or until the user changes the bot language through the set language action node. 
-
-<img src="https://i.imgur.com/p1xK8Sq.png" width="250"/>
-
-5. **Enable Go Back/Go Home** 
-    This is a shortcut that a user can use to move to the previous step in the conversation or to go back home. 
-
-   Select *Yes* to enable hot keywords. That is, when user types **Go home**, the welcome prompt is triggered in the bot, <br/>
-
-   When the user types **Go back**, the chat goes back to the previous prompt in a flow. <br/>
-
-:::note 
-Go back keywords inside a journey take user to previous prompt. If used outside journey (As first prompt of a journey or after a journey is completed) - Go back goes to Welcome prompt.
-:::
-
-
-6. **Go back Aliases**
-
-   Type in and configure the hot keywords of your choice to trigger the **Go back** action.
-
-   For example, if the **Go Back Aliases** is entered as **0** or '**go back**' in the settings, the conversation will go back to the previous step when the user enters any of those words in the chat. 
-
-<img src="https://i.imgur.com/tt2P4FO.jpg" width="50%"/>
-
-  
-
-7. **Go home Aliases**
-
-   Type in the hot keywords of your choice to trigger the **Go home** action.
-
-   For example, if the **Go Home Aliases** is entered as **x** or '**go home**' in the settings, the conversation will go back to the first step when the user enters any of these words.
-
-<img src="https://i.imgur.com/T1jOHPX.jpg" width="50%"/>
-
-
-
-  
-8. **Negation journey**
-
-It consists of all the flows associated with the bot. When the user inputs a sentence which urges the bot to not perform an action, the bot takes to the Negation journey.
-
-![](https://i.imgur.com/1ktdSut.jpg)
-  
-
-For example, 
-
-* When the user inputs "I want to talk to the manager" the bot takes to the *Transfer to Agent* flow.
-* If the user inputs " I dont want to talk to the manager", the bot takes the selected negation journey.
-
-<img src="https://i.imgur.com/VZalCux.png" width="50%"/>
-
-
-### 2.2.2 Intelligent switching
-
-As the name suggests, it is used to switch the conversation based on the users input.
-
-> For example, instead of selecting one of the options (Savings account or Fixed deposit) for the bot question 
-> 1. Bot asks "Select the type of account." 
-> 2. If the user replies "What is the difference between Savings account and Fixed deposit?"
-> 3. With intelligent switching, the bot replies to the user query and then switchs back to the previous flow - "Select a type of account".
-
-  
-
-![](https://i.imgur.com/31i60zu.jpg)
-
-  
-  
-
-Enter the following fields to configure this section:
-
-  
-
-1. **Enable**: Select *Yes* from the drop-down list to enable Intelligent switching.
-2. **Sticky Journeys**
+   ![](https://i.imgur.com/Q9yU9sQ.png)
    
-   If you have journeys that are complicated and user interruption/intrusion from the expected flow is not ideal, you can mark them as sticky journeys.
 
-   For these journeys, if an interruption is received, Sticky journey prompt (editable) will nudge users to stick to this journey.
+### Identify the emotion via Verbose
 
-   If this is selected, current journey will continue. Otherwise,  another flow will be suggested later in followup message.
+Enable **Verbose** to identify the emotion (sentiment) behind the text.
 
-  
+   <img src="https://i.imgur.com/U0iekzn.png" alt="drawing" width="60%"/>
 
-3. **Prompt for sticky journeys**
+### Test your bot in multiple languages
 
-Enter the message to show when a Sticky Journey is selected. This will nudge the user to complete the journey that the bot is currently on.
+You can try out your bot in various languages by just picking your preferred language from the dropdown menu.
 
-> For example: Hi, would you like to complete this first? I will not be able to save your progress.
+   <img src="https://i.imgur.com/XJpwl4I.png" alt="drawing" width="60%"/>
 
+:::note
+To add languages to your bot, check out the steps [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#2-add-languages-to-your-bot).
+:::
 
-<img src="https://i.imgur.com/K8qsb52.png" width="50%"/>
+## Conversation 
 
+Here you can manage how conversations unfold, how messages are shown, and various elements related to the conversation.
 
-4. **Followup message**
+You can oversee modifications through the following categories:
 
-This helps to switch back the conversation to the required flow.
+### Update bot behaviour
 
-> For example: "Do you want to continue where you left off?" or "What would you like to do next?"
+This section consists of fields to control the behaviour of the conversation.
 
-<img src="https://i.imgur.com/FpRIio0.png" width="50%"/>
+<img src="https://i.imgur.com/lDz7NrX.png" alt="drawing" width="60%"/>
 
+| Fields                  | Descriptions                                                                                                    |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------- |
+| **Target language**     | The default language in which the bot will converse in before auto-suggestion or language change occurs. You can modify this if required.      |
+| **Translate quick reply responses** | Translate quick reply responses<br/>(Does not work). |
+| **Enable Hinglish**     | Set *Yes* to allow the bot to understand Hinglish (Hindi + English) utterances, tailored for Indian users.<br/><img src="https://i.imgur.com/3Kt7IiD.png" width="300"/>    |
+| **Auto Detect Language**| Set *Yes* to enable the bot to auto-identify the language a user types in and respond accordingly (if configured).<br/><img src="https://i.imgur.com/p1xK8Sq.png" width="250"/> |
+| **Enable Go Back/Go Home** | Shortcut for users to move to the previous step or go back home.<br/><img src="https://i.imgur.com/fsJZA3R.png" width="300"/>                                           |
+| **Go back Aliases**     | Configure keywords to trigger the **Go back** action and navigate to the previous conversation step.<br/><img src="https://i.imgur.com/tt2P4FO.jpg" width="50%"/>          |
+| **Go home Aliases**     | Specify keywords to trigger the **Go home** action and return to the beginning of the conversation.<br/><img src="https://i.imgur.com/T1jOHPX.jpg" width="50%"/>|
+| **Negation journey**    | Collection of flows the bot goes through when a user rejects an action.<br/>For example:<br/><br/> * When the user inputs "I want to talk to the manager", the bot takes to the *Transfer to Agent* flow.<br/>* If the user inputs " I dont want to talk to the manager", the bot takes the selected negation journey.<br/><img src="https://i.imgur.com/VZalCux.png" width="50%"/>                                    |
+### Intelligent switching
 
+This section helps the bot to switch the conversation based on user input.
 
-### 2.2.3 Step validation settings
+For instance, consider a scenario where:
+
+* Bot asks: "Choose the type of account," offering options like Savings account or Fixed deposit. 
+* User responds: "Can you explain the difference between Savings account and Fixed deposit?" 
+
+With intelligent switching, the bot would answer the user's query and then smoothly transition back to the previous flow, prompting the user to "Select a type of account" again. 
+
+<img src="https://i.imgur.com/Ix9CTWR.png" alt="drawing" width="80%"/>
+
+| Fields                         | Descriptions                                                                                               |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------- |
+| **Enable**                     | Select **Yes** from the drop-down list to activate Intelligent Switching.                                  |
+| **Sticky Journeys**            | Identify complex flows as **sticky** to minimize user interruption from the expected flow.<br/>         When interruptions occur, a customizable sticky journey prompt encourages users to stay on that path. <br/> If chosen, the current journey continues; if not, an alternative flow is suggested in a follow-up message. |
+| **Prompt for sticky journeys** | Define the message to be displayed when a **Sticky Journey** is selected. This encourages users to complete the current flow.<br/><img src="https://i.imgur.com/K8qsb52.png" width="50%"/> |
+| **Followup message**           | Redirects the conversation back to the desired flow like "Do you want to continue where you left off?" or "What would you like to do next?"<br/> <img src="https://i.imgur.com/FpRIio0.png" width="50%"/>        |
+
+### Step validation settings
 
 This helps you configure the settings related to validating the steps involved in the bot conversation. In simple words, you can configure this to validate prompts.
 
+   <img src="https://i.imgur.com/7mMh5Nz.png" width="70%"/>
 
-![](https://i.imgur.com/lqHA99M.jpg)
 
-  
-
-:::note
 When platform quick replies are configured, they appear in WhatsApp as a list of items in text. 
 
 For example - 
 What do you want to do next?
 1. Check order status
 2. Receive notification
-3. Go back to Main Menu
-:::
-  
+3. Go back to Main Menu   
 
+You can customise this format **Whatsapp Quick reply index** and **Structure prefix** fields.  
 
+| Fields                          | Descriptions                                                                                                 |
+| ------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Whatsapp Quick reply index**  | Choose the preferred indexing: *Numbers* (default), *Alphabets*, or *Emojis* (numerical emojis).              |
+| **Structure prefix**            | Display the complete prefix with formatting. Default is {{index}}, as shown above.<br/><br/>                   For instance, **_Type_ {{index}} for** will show **Type 1 for Gate Mechanical**, **Type 2 for AE & JE Mechanical** which simplifies selection of options. <br/> ![](https://i.imgur.com/yQtdhUD.png)  |
+| **Show prompt again**           | Enable to show the original prompt after a validation failure message with *Yes* from the dropdown.<br/><br/>      For instance, when an incorrect phone number is entered, the prompt can be displayed again.                  |
+| **Enable limit on retries**     | Enable the default retry limit (3 times) with **Yes**.                                                       |
+| **Error message**               | Set the error message for validation failure.<br/><br/> For example: Hey, you've reached the maximum retry limit. <br/> ![](https://i.imgur.com/8l46UFv.png)                                               |
+| **Unknown message**             | Define the message for system inability to validate the prompt response.                           <br/><br/> For example: **It seems I can't understand your input, could you rephrase it?**                     |
 
-
-  
-
-You can customise this using **Whatsapp Quick reply index** and **Structure prefix** fields.
-
-  
-
-1. **Whatsapp Quick reply index**: Select your preferred indexing - *Numbers* (default), *Alphabets* or *Emojis* (numerical emojis).
-
-  
-
-2. **Structure prefix**: You can display the entire prefix with bold and italics. The default preset entry in this box is {{index}} which looks like the example above (when Type is numbers).
-
-
-WhatsApp Only
-
-> For example: "_Type_ *{{index}}** for" will display prefix -
-> "Type 1 for Gate Mechanical ", "Type 2 for AE & JE Mechanical" and so on.
-> When 1 is typed, Gate Mechanical is selected, without having to type out the entire phrase.
-> ![](https://i.imgur.com/yQtdhUD.png)
-
-  
-  
-
-3. **Show prompt again**
-
-  Select *Yes* from the dropdown to enable displaying the original prompt again after the validation failure message.
-
-  
-
-> For example, for **Phone prompt**
->- Phone number entered is not correct [validation failure message]
->- Can you please share your phone number? [original prompt]
-
-
-**4. Enable limit on retries**
-
-  
-Select *Yes* enable the default limit on the number of retries. By default, the validation failure is allowed 3 times. 
-  
-5. **Error message**
-
-  
-This helps you configure the error message to be displayed when validation fails.  
-> Sample message: Hey, you have reached maximum limit of retries.
-> For example, in the chat below, user has attempted to select an option 3 times and the bot has timed out.
-> ![](https://i.imgur.com/8l46UFv.png)
-
-  
-6.** Unknown message**
-
- Enter the message to display when the system is unable to validate the prompt response. 
-
-> Sample message: "It seems I do not have a response to your input, can you try rephrasing it".
-
-
-### 2.2.4 Autoskipping settings
+### Autoskipping settings
 
 Enable this option to allow the bot to inform the user that it already has the information that is being provided.
 
-You can skip a prompt using entitity or variable if the value already exists. This helps avoid asking users the same question multiple times depicting the memory of your chatbot. 
+You can skip a prompt using entitity or variable if the value already exists. This helps avoid asking users the same question multiple times depicting the memory of your chatbot.  
 
-![](https://i.imgur.com/ss1V7UQ.jpg)
+<img src="https://i.imgur.com/Hvu2ioK.png" width="65%"/>
 
-  
-  
-
-To configure autoskip globally (at node level), click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#autoskip).
-
-  
-
-1. **Acknowledgement**
-
-Select *Yes* to display an acknowledgement prompt during atto-skipping.
-It is highly recommended to enable this acknowledgement for autoskipping.   
-
-> Example:
-> Bot: "I already have Account type : Savings, do you wish to continue?"
-> [ Yes ][ Modify Account type]
-> On clicking **Yes**, the bot will skip the step. If **Modify** is clicked, the user will be asked to select again instead of autoskipping.
-
-  
-  
-
-2. **Acknowledgement Prompt**
-
-  
-Enter the message to be displayed as an acknowledgement.
-
-> Example: I already have {{{stepName}}}:{{{value}}}. Do you wish to continue with this?
-
-  
-
-![](https://i.imgur.com/uJODA57.png)
+| Fields                   | Descriptions                                                                                       |
+| ------------------------ | -------------------------------------------------------------------------------------------------- |
+| **Acknowledgment**      | Activate this option for the bot to receive user acknowledgment to automatically skip the upcoming flow. |
+| **Acknowledgment prompt** | Type the message to be displayed to the user when the bot suggests auto-skipping the upcoming step in the flow. |
+| **Invalid prompt** | This message will appear when the user enters an invalid prompt. |
+| **Confirm button label** | The label on the confirm button which users click to confirm that the option can be skipped. |
+| **Modify button label** | The label on the edit button when users choose to modify their selection. |
 
 
+To configure autoskip at node level, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#autoskip).
 
+### Global autocomplete
 
+In the **What do you want to show for autocomplete** option, you can select the choice that the bot will use to autocomplete the user's input.
 
-## 2.3 NLU setting
+## NLU
 
-  
+### Prediction
 
-This includes settings related to Natural language understanding which is based on the intent training. 
-  
+Our machine learning system matches user input sentences to specific intents with confidence scores between 0 and 1. You can adjust the desired confidence level. 
 
-### 2.3.1 Prediction
+<img src="https://i.imgur.com/Ik9ozKr.png" width="65%"/>
 
-  
+| Fields                    | Descriptions                                                                                                     |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
+| **Min Confidence**        | Set the minimum value below which the bot won't trigger an intent. For instance, if set to 0.85, the bot responds only when the intent's confidence level for the input is over 85%. <img src="https://i.imgur.com/7DM473O.png" width="300"/>**Use case:**<br/><br/> When a user says **Talk to your agent** and **Min Confidence** is 0.85, the bot responds correctly only if the intent predicted is **Transfer Agent** with a confidence of 1.<img src="https://i.imgur.com/k5bc5Tz.png" widht="60%"/><br/> However, if the user types **Talk to tech support**, the bot won't reply as the confidence for the predicted intent is uncertain. <img src="https://i.imgur.com/aok3dur.png" width="90%"/> |
+| **Context Confidence**    | Specify the minimum confidence score required for context accuracy.                                           |
+| **Secondary Model Confidence** | A global contextual model value. If the predicted value is below the threshold entered, the intent won't trigger. |
 
-Our Machine Learning model matches the user utterances (input sentences) to an intent with certain confidence which lies between 0 to 1. You can set your preferred confidence value.
-  
+### Document search settings
 
-   ![](https://i.imgur.com/PcYb9KM.jpg)
-
-  
-
-1. **Min confidence**: It is a minimum value calculated (as per the accuracy of intent predicted) below which intent will not be triggered.
-
-  
-> For example, if the Min Confidence is set to 0.85, which means, bot will respond only when the confidence level for the intent predicted for the input text is over 85%.
-
-  
-
-   *Use case*: When a user wants to talk to someone from the support team and they ask the bot "Talk to your agent" or "Talk to tech support", bot must understand the intent and direct to "Transfer Agent" flow.
-
-   <img src="https://i.imgur.com/7DM473O.png" width="300"/>
-
-- If Min Confidence is set to 0.85 and the user types "Talk to your agent", bot replies appropriately as the intent predicted is "Transfer Agent" and confidence is 1.
-
-   <img src="https://i.imgur.com/k5bc5Tz.png" widht="70%"/>
-
-
-- If Min Confidence is set to 0.85 and the user types "Talk to tech support", bot will not be able to reply as confidence for the intent predicted is unknown.
-
-  
-
-   <img src="https://i.imgur.com/aok3dur.png" width="100%"/>
-
-  
-  
-
-2. **Context confidence**: Enter the minimum confidence score required. It a minimum value calculated for the context accuracy below which the intent will not be triggered.
-
-  
-  
-3. **Secondary model confidence**: It is a global contextual model value, if the predected value is below the entered value, intent will not be triggered.
-
-
-:::note
-The confidence of the utterance should be greater than the confidence of the context so that the system will not classify intents/entities/faqs as global module (context).
-:::
- 
-
-### 2.3.2 Document search settings
-
-  
-
-![](https://i.imgur.com/48zbQOf.jpg)
+<img src="https://i.imgur.com/vaIpqm5.png" width="65%"/>
 
 Option | Description
 -------- | ------
 Document search threshold | Minimum confidence needed to show documents in the Document search node.
-Boost document rank by  | Choose the preference by which the user query should match - Headers or Paragraph. This parameter can be used to boost the document ranks.<br/>For example, if a document has a header with the user data and rest of content below it and Boost document rank by is enabled, this document will show up higher in ranks as the query users data matches the header in the document.
+Boost document rank by  | Choose the preference by which the user query should match - Headers or Paragraph. This parameter can be used to boost the document ranks.<br/><br/>For example, if a document has a header with the user data and rest of content below it and Boost document rank by is enabled, this document will show up higher in ranks as the query users data matches the header in the document.
 
 
 ![](https://i.imgur.com/hLQTC4N.png)
 
+### Multi Intent Settings
 
-### 2.3.3 Multi Intent Settings
+Enabling **Multi-Intent** allows the model to identify two intents in a single user message. For example, if this option is on and the user types **Book a flight** and **reserve a hotel** (assuming proper [training to the bot](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#train-your-bot-with-intents)), the model will detect both **Book a flight** and **Reserve a hotel** as intents.
 
-*Coming soon... Currently not in use*
+After detecting the intents, the model will acknowledge this (via an Acknowledgment message) and ask the user which task they want to start with. The options will be provided as quick reply choices.
+****
+Other options and the **Go home** option will also be suggested as quick replies, along with a follow-up message (similar to **Intelligent Switching**).
 
+<img src="https://i.imgur.com/CCIjO7s.png" width="55%"/>  
   
-
-Enabling Multi-Intent will help the model to detect two - intents in one user utterances. Basically, if this option is enabled and the user types " Book a flight and reserve a hotel" (assuming appropriate training) Model will detect two intents "Book a flight" and "Reserve a hotel".
-
-  
-
-Responding to the multi intent, model will acknowledge this (Acknowledgement message) and ask the user what would they like to do first, with these two options as quick replies.
-
-  
-
-Remaining option and Go home will be suggested as quick replies with followup message (this is similar to **Intelligent switching**).
-
-  
-
-![](https://i.imgur.com/U0C7Dwl.png)
-
-  
-Option | Description
+Fields | Descriptions
 -------- | ---------
 Enable | Set *Yes* to enable multi-intent.
 Acknowledgement question | The acknowledge message to display when multiple intents are detected. <br/>Sample message: I understand, What would you like to do first?
@@ -497,18 +208,17 @@ Followup question |  Question to ask in follow up to the previous question. <br/
 ![](https://i.imgur.com/s4zM19K.png)
 
 
-
-## 2.4 Constants
+## Add constant values
 
 This section helps you add values that remain constant throughout the conversation. It can be a person's name, a file name or any value that will not be modified as the conversation progresses. 
 
-In this tab, you can add constants by clicking the **+Add Constants button** and also store those values in the database.
+Add constants by clicking the **+Add Constants button** and click **Save** to store those values in the database.
 
-![](https://i.imgur.com/dernhZp.jpg)
 
+<img src="https://i.imgur.com/ikUXSHT.png" width="55%"/>  
 
  
-## 2.5 Voice 
+## Voice 
 
 :::note
 You can configure these settings only when IVR **Channel** is connected. Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/Ivr) to learn how. 

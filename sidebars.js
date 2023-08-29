@@ -100,6 +100,7 @@ module.exports = {
     "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/schedulerawreports",
+    "cookbooks/insights/toptriggeredintents",
 
   ],
 }, 
@@ -189,6 +190,19 @@ module.exports = {
       collapsed: true,
       items: [
        // "platform_concepts/studio/overview",
+
+       {
+        type: "category",
+        label: "KnowledgeBase ",
+        collapsed: true,
+        items: [
+          "platform_concepts/studio/kb/overview",
+          "platform_concepts/studio/kb/ingestion",
+          "platform_concepts/studio/kb/integrations",
+          
+        ],
+      },       
+      
         {
           type: "category",
           label: "Build your bot",

@@ -84,6 +84,50 @@ Enter the following details:
 
 Similarly, you can add multiple email accounts and choose your preferred sender ID when configuring an outbound campaign.
 
+#### **Configure forwarding address**
+
+The forwarding address generated within the platform must be added to your email server's setup, be it Gmail, Outlook, or another email server.
+
+To configure a forwarding address, follow these steps:
+
+1. Go to the [Gmail](https://mail.google.com/) account.
+
+:::note
+You can only forward messages to a single Gmail address, not an email group or alias.
+:::
+
+2. Click on **Settings** (top right) > **See all settings**.
+
+      <img src="https://i.imgur.com/OD4o8QH.png" alt="drawing" width="40%"/>
+      
+3. Click **Forwarding and POP/IMAP** tab.
+
+   ![](https://i.imgur.com/qgJ6QnT.png)
+   
+4. In the "Forwarding" section, click **Add a forwarding address**.
+
+     ![](https://i.imgur.com/04jG8R9.png)
+     
+5. Enter the email address for which you want to forward messages to and click **Next**.
+
+    ![](https://i.imgur.com/Z0kI6r4.png)
+    
+6. Click **Proceed** > **Ok**.
+
+    ![](https://i.imgur.com/UYTQq9Q.png) 
+    
+7. A confirmation code will be sent to the **Bot Messages** section of the Inbox module. This code needs to be added to your email settings.
+
+     ![](https://i.imgur.com/P4znTah.png)
+     
+8. In the "Forwarding" section, enter the **Confirmation code** and click **Verify**.
+
+     ![](https://i.imgur.com/itJrHEc.png)
+     
+9. The forwarding address will be successfully added. Clik **Save changes**.
+ 
+    ![](https://i.imgur.com/irgBwY8.png)
+
 ### Set up SMTP-based email account (JSON)
 
 You can also configure SMTP using the JSON code.

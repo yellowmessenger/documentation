@@ -1,6 +1,7 @@
 ---
-title: WhatsApp starter guide
-sidebar_label: WhatsApp starter guide
+title: Create WhatsApp bot
+sidebar_label: Create WhatsApp bot
+tags: [build WhatsApp chatbot, WhatsApp bot, WhatsApp business chatbot, integrate chatbot with bot]
 ---
 
 This document provides details on the best practises and limitations that you need to follow while creating the WhatsApp (WA) bot. For more information on WA limitations, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-char-limit).
@@ -46,6 +47,10 @@ The WA bot will respond with a number list even if the buttons are configured i
 * To add a quick reply button, you need to switch the channel filter to Website. Eventually, if you try to add a button in the WA channel filter, then the add button option will be disabled.
    <img src="/img/channels/WAgif.gif" alt="drawing"/>
 * If you want to delete a quick reply node, you have to switch to Website from the channels filter and then delete the buttons.
+
+:::note
+Using Quick Replies, you cannot add a message with a CTA in WA. It is recommended to use a WhatsApp template and pass the link as a CTA.
+:::
 
 ##### **Configure Dynamic WA quick reply and Dynamic WA list message**
 
@@ -179,7 +184,11 @@ To change the WA display name, follow these steps:
 	 
 3. Under *Name*, click **Edit** icon to edit the display name.
 
-     ![](https://i.imgur.com/jNtOL3r.png)	 
+     ![](https://i.imgur.com/jNtOL3r.png)	
+
+:::note
+If your WhatsApp display name gets rejected for the first time while applying via an embedded sign-up process, you need to reapply from your own FBM. After reapplying, if it is still rejected, you need to raise a support ticket with Meta.
+:::     
 	 
 
 ## Test your WhatsApp bot 
