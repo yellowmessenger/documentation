@@ -100,6 +100,7 @@ module.exports = {
     "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/schedulerawreports",
+    "cookbooks/insights/toptriggeredintents",
 
   ],
 }, 
