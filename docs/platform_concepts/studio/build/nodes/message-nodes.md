@@ -61,7 +61,7 @@ Display any image (less than 10MB) with this node.
 
 ![](https://i.imgur.com/NuHZKEb.jpg)
 
-**Dynamic format**
+**Dynamic format for web**
 
 ```
 const imageVariable = [{
@@ -72,6 +72,20 @@ const imageVariable = [{
     },
   },
   url: 'image_url_here'
+}]
+```
+
+**Dynamic format for WhatsApp**
+
+```
+const imageVariable = [{
+  options: {  
+    caption: {  
+      type: 'text',
+      value: 'image caption here' 
+    },
+  },
+  url: location.file.url
 }]
 ```
 
