@@ -24,7 +24,7 @@ To create a bot in Webex, follow these steps:
    
 2. Enter your email address and click **Next**.
 
-    ![](https://i.imgur.com/5rjVBa9.png)  
+    ![](https://i.imgur.com/D6BVoSs.png)  
    
 3. Enter the verification code that is sent to your email address and provide the details such as **First name, Last name, phone**, and **Create Password**, then click **Continue**.
 
@@ -91,7 +91,7 @@ To test your Webex chatbot, follow these steps:
 
 2. Copy the bot username from the [Webex Developers portal](https://developer.webex.com/). 
 
-    <center><img src="https://i.imgur.com/HZ17iEf.png" alt="drawing" width="40%"/></center>
+    <img src="https://i.imgur.com/HZ17iEf.png" alt="drawing" width="40%"/>
 
 3. Open your Webex app and click **Invite people to Webex**.
   
