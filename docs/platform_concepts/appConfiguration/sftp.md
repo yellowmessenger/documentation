@@ -16,14 +16,30 @@ Configuring the integration with SFTP is straightforward. Follow the steps defin
 
 1. Go to Integration section
 2. In Integration click on the connect for the SFTP.
-3. Enter Host, Port, username, Password.
+3. Enter **Give account name**, **Host**, **Port**, **username**, **Password**.
+4. Click **Connect**
 
-![alt_text](https://i.imgur.com/xepX9Ka.png "image_tooltip")
+![](https://i.imgur.com/vl7ZP9q.png)
 
-4. Click on Save
-5. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
+5. If you do not want to upload your SFTP account password, enable **Private key based authentication**. Reach out to our team at support@yellow.ai for the private key. Once you recieve it,  whitelist the key at the SFTP's end to set up a connection between Yellow.ai and SFTP without the password.
 
-6. Store SFTP response in Object type variable in action-node.
+To whitelist our private key in your remote SFTP server, follow the below mentioned commands:
+
+```
+— on remote system ——
+
+mkdir -p .ssh
+nano .ssh/authorized_keys
+—- add the public key generated on your Mac —
+
+chmod 600 .ssh/authorized_keys
+chmod 700 .ssh
+
+```
+
+6. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
+
+7. Store SFTP response in Object type variable in action-node.
 
 ![](https://i.imgur.com/KCWAcMf.png)
 
