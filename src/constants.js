@@ -60,7 +60,7 @@ export const topics = [
     description:
       "Know how to craft multi-channel campaigns intuitively with Engage and deliver total lifecycle CX from acquisition through transaction, to retention and growth.",
     icon: "ri-mail-send-line",
-    url: "/docs/platform_concepts/studio/overview",
+    url: "/docs/platform_concepts/engagement/engage",
   },
   {
     title: "Inbox",

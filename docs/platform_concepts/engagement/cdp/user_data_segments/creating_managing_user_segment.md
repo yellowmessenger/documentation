@@ -1,14 +1,9 @@
 ---
-sidebar_label: Manage user segments
-title: Manage user segments
+sidebar_label: Create user segments
+title: Create user segments
 ---
 
-
-
-## 1. Create user segment
-
-
-### Segment users based on user property filters
+## Create segments using user property filters
 
 Segmenting users based on user property filters is a powerful technique that allows you to categorize and target specific groups of users within your system. You can create customized segments that align with your marketing goals using various user attributes and properties as filters. This method allows you to dynamically generate user lists, optimizing the impact of your campaigns and ensuring that your content resonates with the intended audience.
 
@@ -42,7 +37,7 @@ To create more sophisticated segments you can [combine `and` with `or` condition
 Once you create a segment, you can view users in the segment, modify segment condition, download users of the segment, or delete it as explained in the following sections.
 
 
-### Segment users on basis of events
+## Create segments using Events
 
 Event-based user segments allow you to categorize and target specific groups of users based on their interactions with events. These are dynamic segments and help you tailor your marketing strategies and engagement efforts more effectively.
 
@@ -78,7 +73,7 @@ To create event-based segments:
 :::
 
 
-### Manually segment users when importing CSV file
+## Create user segment when Importing CSV file
 
 When importing a CSV file, you have the option to manually segment users. This allows you to create a user segment right during the import enabling you to efficiently categorize users as you bring in their records.
 
@@ -87,98 +82,8 @@ You can also create a segment during the import process. This means that you can
 
 For more details, see Step 9 of [Import CSV file](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users#step-2-import-csv-file).
 
-
-
-
 ***
 
+**What next?**
 
-
-  
-## 2. View segment users
-
-To view users of a segment:
-
-1. On the User 360 page, click on the segment that you want to view. 
-
-2. If the list is long, you can use the **Search** box to find a specific segment quickly.
-
-   ![](https://i.imgur.com/bvS0ofr.png)
-
-
-You will see the list of users on the right side of the page.
-
-   ![](https://i.imgur.com/wrVY5eE.png)
-
-***
-
-## 3. Edit user segment
-
-To modify a segment's name or condition:
-
-1. Click on **Actions** > **Edit segment**.
-
-   ![](https://i.imgur.com/du1KLbt.png)
-
-2. Edit the required details and **Save** it.
-
-:::note
-When the conditions of the segment are edited, the users that show up in the segment might change based on the new condition.
-:::
-
-***
-
-## 4. Download segment users
-
-To download users of a segment:
-1. Click **Actions** > **Download segment user data**.
-
-   ![](https://i.imgur.com/tMtITgm.png)
-
-2. You will get an email with the download link. Click on the link. The file downloads as a CSV file. 
-
-   ![](https://i.imgur.com/mOqzgWm.png)
-
-The file contains complete details of each user that is available in the database.
-
-   ![](https://i.imgur.com/ECyBtOn.png)
-
-
-***
- 
-## 5. Archive user segment
-
-Archiving a segment will not delete the user data associated with that segment. It  makes that particular segment unusable for new campaigns. Old campaigns will continue running as it is.
-
-
-### 5.1 Auto-deleting of unused segments
-
-User segments that are not used in the last 60 days will be deleted automatically. A user segment is considered used if there is an activity (listed below).
-
-1. Viewed the segment
-2. Used in a campaign
-3. Updated the segment
-
-When there is an activity, the `updatedAt` column changes. A cron job runs every day to check if the column is not updated for any of the segments in the last 60 days and deletes it automatically.
-
-
-### 5.2 Manually delete user segment
-
-* To archive a segment, select the segment from the left panel, and click on **Actions** > **Archive segment**.
-
-   ![](https://i.imgur.com/ml1Gh8j.png)
-
-* To view all archived segments, click on the **Archived** tab in the left panel.
-
-   ![](https://i.imgur.com/huCOEOJ.png)
-  
-
-
-  
-
-* To unarchive a segment, select any archived segment and click on **Unarchive** segment.
-
-   ![](https://i.imgur.com/OvBSbKU.png)
- 
-
-
+* View created segments and know how to 
