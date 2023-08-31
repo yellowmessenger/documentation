@@ -146,7 +146,58 @@ The YM auth token can have a maximum length of 40 characters.
 
 The character set comprises `A-Z a-z 0-9 _ -` including English uppercase and lowercase letters, numbers 0-9, underscore (_), and dash (-).
 
+**13. How to handle notifications in the foreground when the bot is closed?**
 
+Use the following code snippet to handle the notifications you receive when the app is open in the foreground.
+
+```js
+import android.util.Log
+import com.google.firebase.messaging.FirebaseMessagingService
+import com.google.firebase.messaging.RemoteMessage
+
+class MyFirebaseMessagingService: FirebaseMessagingService() {
+    final
+    var TAG: String = "YMLog"
+    override fun onMessageReceived(remoteMessage: RemoteMessage) {
+        Log.i(TAG + " Remote message", remoteMessage.toString())
+        Log.i(TAG + " Remote message", remoteMessage.data.toString())
+        super.onMessageReceived(remoteMessage)
+    }
+}
+```
+
+:::info
+For more details regarding the integration, see 
+* [Android SDK documentation](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android). 
+* [Test app with Android SDK and Firebase integration](https://github.com/yellowmessenger/YmChatBot-Android-DemoApp)
+:::
+
+**14. How to trigger a specific bot flow when the user clicks on the notification?**
+
+Use the following code snippet to open the bot and trigger a specific bot flow when the user clicks on the notification. 
+
+```js
+if (payloadData.get("botId") != null) {
+    String botId = (String) payloadData.get("botId");
+    YMChat ymChat = YMChat.getInstance();
+
+    ymChat.config = new YMConfig(botId);
+    ymChat.config.version = 2;
+    ymChat.config.ymAuthenticationToken = "2gs20emoof1666164936076";
+
+    if (payloadData.get("journeySlug") != null) {
+        String journeySlug = (String) payloadData.get("journeySlug");
+        botPayloadData.put("JourneySlug", journeySlug);
+        ymChat.config.payload = botPayloadData;
+    }
+
+    try {
+        ymChat.startChatbot(this);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+}
+```
 
 
 
