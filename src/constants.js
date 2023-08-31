@@ -1,18 +1,27 @@
 export const popularSearchItems = [
 
-  /*
+  
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine",    
-    title: "Send notifications using APIs",
+    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-bot-bestpractices",    
+    title: "Create whatsapp bot",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
-    title: "Send WhatsApp notifications",
+    url: "https://docs.yellow.ai/docs/cookbooks/voice-as-channel/voiceoverview",
+    title: "Create voice bot",
   },
   { 
-    url: "https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate",
-    title: "Create WhatsApp notification templates",
+    url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-overview",
+    title: "Create web bot",
   },
+  { 
+    url: "/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
+    title: "Outbound campaigns",
+  },
+  { 
+    url: "/docs/platform_concepts/engagement/flow-campaigns-intro",
+    title: "Flow campaigns",
+  },
+  /*
   {
     url: "https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub",
     title: "Events & triggers",
@@ -31,6 +40,7 @@ export const popularSearchItems = [
   },  */
 ];
 export const topics = [
+
   {
     title: "Get started 🚀",
     description:
@@ -39,12 +49,48 @@ export const topics = [
     url: "/docs/platform_concepts/getting-started",
   },
   {
+    title: "Studio",
+    description:
+      "Create your bot effortlessly using our no-code bot-building platform or dynamic bot generator for your business requirements.",
+    icon: "ri-robot-line",
+    url: "/docs/platform_concepts/studio/overview",
+  },
+  {
+    title: "Engage",
+    description:
+      "Know how to craft multi-channel campaigns intuitively with Engage and deliver total lifecycle CX from acquisition through transaction, to retention and growth.",
+    icon: "ri-mail-send-line",
+    url: "/docs/platform_concepts/engagement/engage",
+  },
+  {
     title: "Inbox",
     description:
       "An AI powered, automation first unified inbox for agents to provide enhanced customer support across chat, email, and voice.",
-    icon: "ri-inbox-line",
+    icon: "ri-inbox-fill",
     url: "/docs/platform_concepts/inbox",
   },
+  {
+    title: "Channels",
+    description:
+      "Learn how to seamlessly connect your bot to different channels, including social media platforms, websites, and messaging applications.",
+    icon: "ri-inbox-line",
+    url: "/docs/platform_concepts/channelConfiguration/overview",
+  },
+  {
+    title: "Integration",
+    description:
+      "Discover the process of integrating your bot with external systems, enabling you to seamlessly leverage their functionalities within our platform.",
+    icon: "ri-link-m",
+    url: "/docs/platform_concepts/appConfiguration/overview",
+  },
+  {
+    title: "API Reference",
+    description:
+      "Explore our comprehensive API documentation for seamless integration, empowering you with the tools to unlock the full potential of our platform's capabilities.",
+    icon: "ri-whatsapp-line",
+    url: "/api",
+  },
+  /*
   {
     title: "WhatsApp Bot",
     description:
@@ -52,6 +98,7 @@ export const topics = [
     icon: "ri-whatsapp-line",
     url: "/docs/platform_concepts/channelConfiguration/whatsapp-configuration",
   },
+  
   {
     title: "Use Case Guides",
     description:
@@ -59,6 +106,7 @@ export const topics = [
     icon: "ri-git-repository-line",
     url: "/docs/cookbooks/getting_started",
   },
+  */
   {
     title: "Explore What's new",
     description:

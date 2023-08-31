@@ -40,4 +40,4 @@ To create a GBM template, follow these steps:
 
 **What next?**
 
-* Schedule the campaign with the created GBM template using [Flow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
+* Schedule the campaign with the created Line template using [Flow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).

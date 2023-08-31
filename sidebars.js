@@ -100,6 +100,7 @@ module.exports = {
     "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/schedulerawreports",
+    "cookbooks/insights/toptriggeredintents",
 
   ],
 }, 
@@ -740,8 +741,8 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data_segments/segments_overview'},
       collapsed: true,
       items: [
-        //"platform_concepts/engagement/cdp/user_data_segments/segments_overview",
         "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+        "platform_concepts/engagement/cdp/user_data_segments/manage_segments",
         "platform_concepts/engagement/cdp/user_data_segments/segment_usecases",
         // "platform_concepts/engagement/cdp/user_data/targeted_segments",
         // "platform_concepts/engagement/cdp/user_data/conv_in_builder",
@@ -1002,7 +1003,8 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
-            "platform_concepts/channelConfiguration/zalo",  
+            "platform_concepts/channelConfiguration/zalo", 
+            "platform_concepts/channelConfiguration/webex",
                
             
             
