@@ -994,6 +994,7 @@ module.exports = {
               collapsed: true,
               items: [
             "platform_concepts/channelConfiguration/whatsapp-configuration",
+            "platform_concepts/channelConfiguration/test-wa-bot",
             "platform_concepts/channelConfiguration/whatsapp-product-catalog",
             "platform_concepts/channelConfiguration/wa-migration",
             "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
@@ -1003,7 +1004,8 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
-            "platform_concepts/channelConfiguration/zalo",  
+            "platform_concepts/channelConfiguration/zalo", 
+            "platform_concepts/channelConfiguration/webex",
                
             
             

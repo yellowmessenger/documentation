@@ -1,6 +1,6 @@
 ---
 title: WhatsApp pricing policy
-sidebar_label : WhatsApp pricing policy
+sidebar_label: WhatsApp pricing policy
 ---
 
 WhatsApp has introduced a new pricing policy for the messages that are delivered through its business platform and APIs based on the conversation initiator (user-initiated or business-initiated) and category.

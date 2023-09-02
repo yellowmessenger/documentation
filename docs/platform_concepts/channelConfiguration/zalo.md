@@ -97,23 +97,45 @@ To configure Webhook on Zalo, follow these steps:
 
    ![](https://i.imgur.com/3R48lse.png)
 
-### Add DNS TXT record to your domain
+### Add DNS TXT record to verify Webhook URL domain
 
-To add a DNS TXT record, you need to verify our domain at Zalo.
+In order to verify the Webhook URL domain, you need to add Zalo DNS TXT to Yellow.ai's domain.
 
-To add a DNS TXT record, follow these steps:
+To verify the Webhook URL domain, follow these steps:
 
-1. Select Domain Authentication and enter a domain based on the bot region, for example, `cloud.yellow.ai` or `r1.cloud.yellow.ai`.
+1. Select Domain Authentication and enter a domain based on the bot region, for example, `cloud.yellow.ai` or `r1.cloud.yellow.ai`. Click **Accuracy**.
 
-   ![](https://i.imgur.com/CAimMVG.png)
+   ![](https://i.imgur.com/r9km3E6.png)
+  
+2. If your domain is not verified, click **Verify now**.
 
-:::note  
-A TXT dialog box is displayed if the domain has not been verified before.
-:::
+   ![](https://i.imgur.com/kbFkuJF.png)
 
-2. Copy the TXT record and send it to the integration team for adding the TXT record to our DNS.
+2. Copy the content value to establish the [connection between the Webex channel](#connect-zalo-channel-to-your-bo) and your bot on the platform. 
 
-   ![](https://i.imgur.com/jVzySga.png)
+   ![](https://i.imgur.com/plj0GDc.png)
+
+3. Once your bot is connected to Zalo, open the following link and keep it active for 10–20 minutes in a browser window:
+
+   `https://cloud.yellow.ai/zalo_verifierVzQC6wkaBK1jshzBv_ibOnRbZKpwcbmMDpG.html?bot=<botID>`
+
+   To create the above URL, follow these steps:
+
+   1. Expand **Upload an HTML file to your website** drop-down and copy the highlighted query path.
+
+      ![](https://i.imgur.com/B3Eh4tJ.png)  
+
+   2. Enter the domain (for example, https://cloud.yellow.ai) that you have specified during the verification and paste the copied query parameter (zalo_verifierVzQC6wkaBK1jshzBv_ibOnRbZKpwcbmMDpG.html). 
+
+   3. Append your bot ID as a Parameter (`bot=<botID>`) to the URL.
+
+4. Go back to **Domain Authentication**, enter your domain in the input field to verify your domain, and click **Accuracy**.
+
+     ![](https://i.imgur.com/x48ZD4q.png)
+
+* Your domain will be successfully verified.   
+
+   <img src="https://i.imgur.com/I1lTg2Z.png" alt="drawing" width="60%"/>
 
 ## Connect Zalo channel to your bot
 
@@ -123,7 +145,7 @@ To connect the Zalo channel on the Yellow.ai platform, follow these steps:
 
    ![](https://i.imgur.com/eNwtDTh.png)
    
-2.  Enter the **OA server key**, **refresh Token**, and **App id** that were copied from the developer portal, and then click **Save**.   
+2.  Enter the **OA server key**, **refresh Token**, and **App ID** that were copied from the developer portal, and then click **Save**.   
    
     ![](https://i.imgur.com/DkKPgad.png)
 
