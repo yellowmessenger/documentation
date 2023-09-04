@@ -446,6 +446,15 @@ return new Promise(async (resolve, reject) => {
   </div>
 </details>
 
+<details>
+<summary>How to hide the home and input buttons when the user opens the chatbot for first time?</summary>
+<div>
+ <br/>
+ <div>To hide the home and input buttons when the user opens the chatbot, add the <b>setDisableActionsTimeout</b> property inside the window.ymConfig object.
+ </div>
+  </div>
+</details>
+
 -----------
 
 ## PWA related FAQs

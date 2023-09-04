@@ -713,6 +713,7 @@ It is then stored in the specified variable with the following format:
 You can also send a **Share location** button to allow users to share their current location. Customize the text in this button by clicking on it.
 
 <img src="https://i.imgur.com/vRKzKv4.png" alt="drawing" width="50%"/>
+
 ![](https://i.imgur.com/bicgYat.png)
 
 The following screenshot is how **Share your location** will look on your bot.
