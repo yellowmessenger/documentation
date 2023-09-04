@@ -79,6 +79,8 @@ Select this to trigger the flow when a user enters a segment.
 
 To trigger the campaign when a user enters a segment, on the flow builder screen, click on the **User enters segment** node.
 
+
+
 <center><img src="https://i.imgur.com/NuiRCDg.png" width="50%"/></center>
 
 Option | Description
@@ -90,6 +92,9 @@ After entering segment, campaign triggers | Once a user enters the segment, choo
 **Start** / **End** | Choose the duration of the campaign using the calendar boxes. It should be a future duration.
 **Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the campaign applicable to all users.
 
+:::note
+Once the flow is published, do not modify the segment condition.
+:::
 
 *** 
 
