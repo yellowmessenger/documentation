@@ -155,11 +155,9 @@ components:
             phone:
               type: string
               description: The user's phone number
-              example: "918000023491"
             email:
               type: string
               description: The user's email address
-              example: "tim@example.com"
         payload:
           type: object
           properties:
