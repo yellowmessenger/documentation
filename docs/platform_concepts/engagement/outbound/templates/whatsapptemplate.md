@@ -53,7 +53,7 @@ To create a WhatsApp template and send for approval, follow these steps:
    Quick reply | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
 
 4. To add another CTA, click **Add new button**.
-5. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns).
+5. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
 
    ![](https://i.imgur.com/63SeUhj.png)
 
@@ -189,6 +189,12 @@ URL click tracking in Campaigns allows you to monitor user clicks on links used 
 
 You can track URL clicks in three different elements of your template - Template body, CTA, and variable.
 
+:::note
+URL click tracking is currently
+* supported for SMS and WhatsApp campaigns. If you need it for URLs in other channels, please contact us.
+* available only for Premium users.
+:::
+
 #### Sample use cases:
 1. **E-commerce**: Track how many users clicked on the link to a specific product or offer in your online store.
 2. **Surveys**: Measure the response rate by tracking the number of users who clicked on the survey link.
@@ -205,7 +211,6 @@ To track URL clicks:
 
 
 :::note
-* Tracking will be active for 3 months after you send the campaign.
 * Currently, the metrics for URL clicks is available in the backend, The reporting UI for URL tracking will be relesed soon.
 :::
 

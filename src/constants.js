@@ -1,6 +1,9 @@
 export const popularSearchItems = [
 
-  
+  { 
+    url: "/docs/platform_concepts/Getting%20Started/account-setup",
+    title: "Signup & create first bot",
+  },
   {
     url: "https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-bot-bestpractices",    
     title: "Create whatsapp bot",
@@ -20,6 +23,10 @@ export const popularSearchItems = [
   { 
     url: "/docs/platform_concepts/engagement/flow-campaigns-intro",
     title: "Flow campaigns",
+  },
+  { 
+    url: "/docs/platform_concepts/Getting%20Started/add-bot-collaborators",
+    title: "Bot access",
   },
   /*
   {

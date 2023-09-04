@@ -32,7 +32,7 @@ Body text | Enter the message body. To add variables such as verification code, 
 
    ![](https://cdn.yellowmessenger.com/VfiEBNhwk6IM1649261672637.png)
 
-4. In **URL click tracking**, select the URLs for which you want to track clicks. Learn more about [URL click tracking](#11-track-url-clicks-in-sms-campaigns).
+4. In **URL click tracking**, select the URLs for which you want to track clicks. Learn more about [URL click tracking](#11-track-url-clicks-in-sms-campaigns). URL click tracking is available only for Premium users.
 
    ![](https://i.imgur.com/1W8LlCr.png)
 
@@ -49,7 +49,9 @@ Body text | Enter the message body. To add variables such as verification code, 
 URL click tracking in Campaigns allows you to monitor user clicks on links used in messages.  Before sending out the actual message, the URLs in the template are shortened, and each user is provided with a unique identifier. This allows you to track individual clicks on the links, providing valuable insights into user engagement and campaign performance.
 
 :::note
-URL click tracking is currently available for SMS and WhatsApp campaigns. If you need it for URLs in other channels, please contact us.
+URL click tracking is currently
+* supported for SMS and WhatsApp campaigns. If you need it for URLs in other channels, please contact us.
+* available only for Premium users.
 :::
 
 
@@ -73,7 +75,6 @@ To track URL clicks:
 
 
 :::note
-* Tracking will be active for 3 months after you send the campaign.
 * Currently, the metrics for URL clicks is available in the backend, The reporting UI for URL tracking will be relesed soon.
 :::
 
