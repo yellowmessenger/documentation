@@ -17,10 +17,9 @@ To access Outbound campaigns:
 
 
 The Campaigns table provides a comprehensive overview of your outbound campaigns, including the status of each campaign.
+   ![](https://i.imgur.com/hE1L0uF.png)
 
-   <img src="https://i.imgur.com/hE1L0uF.png"/>
 
-<br/><br/>
 The following table provides descriptions of each column of the table.
 
 Column | Description
@@ -111,11 +110,23 @@ To view the performance of an outbound campaign, follow these steps:
 
 You can also see the detailed break-up of the messages sent, delivered, and read.
 
-![](https://i.imgur.com/TtjmhlH.png)
+   ![](https://i.imgur.com/2SQtH1I.png)
 
-#### Message delivery status descriptions
+#### Performance
 
-The following table provides descriptions of each delivery status.
+This section showcases the count of messages sent, failed, and goals achieved.
+
+KPI | Description
+---- | ---------
+Sent | The total number of messages sent from the campaign.
+Failed | The total number of messages that did not deliver successfully. 
+Goals | The total number of goals accomplished during the campaign. 
+
+The Performance section also includes the delivery status funnel chart, each status is explained in the following section.
+
+#### Message delivery status
+
+The following table provides descriptions of different delivery status of Outbound report.
 
 Delivery status | Description
 --------------- | -----------
@@ -142,6 +153,17 @@ SMS | Scheduled, Sent, Delivered, and Failed.
 Email | Scheduled, Processing, Sent, Dropped, Delivery delayed, Bounced, Delivered, Opened, Clicked, Unsubscribed, Spam reports, and Failed.
 Mobile push | Scheduled, Sent, Delivered, Read, and Failed.
 
+
+#### Campaign details
+
+Name | Description
+---- | -----------
+Campaign type | Type if the campaign - Outbound.
+Channels sent on | Channel through which the campaign was sent.
+Segment name | Name of the segment.
+Schedule type | Occurance of the campaign - once or recurring.
+Scheduled on |  Date and time when the campaign was sent.
+Campaign progress | Displays the history of the campaign, including details such as the creator, scheduled execution time, campaign execution start, and successful processing of all audiences.
 
 ***
 
