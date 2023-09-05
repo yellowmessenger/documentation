@@ -93,6 +93,7 @@
 [class^="docTitle"] {
   font-size: var(--ifm-h1-font-size) !important;
   font-family: "Nunito", sans-serif;
+
 }
 
 [class^="pagination-nav__link"] {
@@ -460,7 +461,7 @@ h6 {
 
 
 h4, h5, h6 {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 [class^="anchor enhancedAnchor_prK2"] {
