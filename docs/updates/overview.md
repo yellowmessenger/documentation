@@ -71,16 +71,6 @@ We're excited to announce a feature that nudges to explore the insights and adva
 
    ![](https://i.imgur.com/Mr4mFHY.png)
 
-## Channel
-
-### Introducing Webex Channel
-
-Yellow.ai now supports Webex, a communication platform that enables conversations with chatbots or agents within the Webex messaging app. This channel lets you initiate conversations and share files, images, and videos.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/webex)**
-
-   ![](https://i.imgur.com/WOlN4tG.png)
-
 ## Chat Widget
 
 ### 1. Introducing Yellow.ai's search bar
