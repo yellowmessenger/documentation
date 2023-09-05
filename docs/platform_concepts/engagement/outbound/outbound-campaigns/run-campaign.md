@@ -93,15 +93,26 @@ In case you want to switch to User module to add audience, you can save the camp
 
 10.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
 
+:::note
+Click **Save as draft** to save all your changes. You can resume from here anytime.
+:::
+
+   i. Once you have reviewed all the details and is good to go, click on **Launch Campaign** to schedule.
+
      ![](https://i.imgur.com/WlmnEYU.png)
 
+   The system prompts you with a pop-up screen to convert the outbound campaign to a Flow campaign, mentioning all the benefits post-conversion.
 
+   ii. Click Not interested to proceed with creating outbound campaign. [OR] Click **Explore flows** to convert the Outbound flow to a [Flow campaign](https://docs.yellow.ai/docs/platform_concepts/engagement/flow-campaigns-intro).
+
+   ![](https://i.imgur.com/37cuqAw.png)
+
+   Once you create the outbound campaign, you will be redirected to the campaigns dashboard page.
+
+   ![](https://i.imgur.com/wxMkzQf.png)
   
-   * Click **Save as draft** to save all your changes. You can resume from here anytime.
 
-   * Once you have reviewed all the details and is good to go, click on **Launch Campaign** to schedule. You will be redirected to *Campaigns overview* page where you can monitor the campaign.
 
-  ![](https://i.imgur.com/wxMkzQf.png)
 
 ***
 

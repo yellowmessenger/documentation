@@ -8,6 +8,10 @@ sidebar_label : Analyse custom tables
 On **Studio** you can create [Custom datasets](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs. For example, you can create tables to store the data obtained from variables from the flows. 
 You can modify/visualise and perform actions on these tables according to your preferences using a **Custom query**.
 
+:::note
+To **secure data** security for custom tables, you can employ masking techniques by following [these steps](https://docs.yellow.ai/docs/platform_concepts/studio/database#mask-database-columns). As a result, the data in these tables will remain concealed on insights tables for all users except super admins.
+:::
+
 ## 1. Steps to add a custom query 
 
 Custom queries can be created using the default datasets or custom datasets.
@@ -76,3 +80,4 @@ Once you have applied filters, a button labeled **Save query** will appear. Clic
 
 
 > You can also summarize and visualise this data, steps are explained in further sections. 
+

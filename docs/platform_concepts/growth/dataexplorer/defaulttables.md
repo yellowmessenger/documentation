@@ -9,7 +9,7 @@ sidebar_label: Analyse default tables
 
 ![](https://i.imgur.com/uqwkU9X.png)
 
-## 1. Types of default tables 
+## Types of default tables 
 
 Following are the default datasets and their functions:
 
@@ -32,31 +32,7 @@ Following are the default datasets and their functions:
 
 -----
 
-## 2. Push custom data to default tables  
-
-**API events, Bot events, Message events, and User engagement events** tables have two columns blank by default, CUSTOMID 1	and CUSTOMID 2. You can choose to push any of the user properties that are stored on [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties) to all those default tables. 
-
-:::note
-This action is irreversible. Once you configure it, the column(s) added will remain as a part of the default tables. 
-:::
-
-Steps to push custom data to default tables: 
-
-1. Add a new user property on the [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) page. 
-2. Click **Data explorer** > **Configure**. 
-    ![](https://i.imgur.com/y0JULrU.png)
-3. From the dropdown menu, choose a property (the custom data you want to push to API events, Bot events, Message events, and User engagement events tables) for CUSTOMID 1 and CUSTOMID 2.
-    ![](https://i.imgur.com/c4qJSSX.png)
-4. Click **Configure** and **Add**. Your custom data will get populated in the default tables.  
-    <img  src="https://i.imgur.com/EmlxTmE.png"  width="50%"/>
-
-:::note
-CUSTOMID 2 can be added only after adding CUSTOMID 1.  
-:::
-
-------
-
-## 3. Add filters to the default table 
+## Add filters to the default table 
 
 When using the filters option, you can apply filters to any of the available column names. These column names are automatically displayed and available for selection when you click on the filters option.
 

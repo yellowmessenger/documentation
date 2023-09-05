@@ -939,6 +939,7 @@ module.exports = {
             "platform_concepts/growth/dataexplorer/sumarize",
             "platform_concepts/growth/dataexplorer/visualization",
             "platform_concepts/growth/dataexplorer/savedreportsactions",
+            "platform_concepts/growth/dataexplorer/configure-data",
           ],
       },
 
@@ -994,6 +995,7 @@ module.exports = {
               collapsed: true,
               items: [
             "platform_concepts/channelConfiguration/whatsapp-configuration",
+            "platform_concepts/channelConfiguration/test-wa-bot",
             "platform_concepts/channelConfiguration/whatsapp-product-catalog",
             "platform_concepts/channelConfiguration/wa-migration",
             "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
