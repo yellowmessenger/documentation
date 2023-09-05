@@ -939,6 +939,7 @@ module.exports = {
             "platform_concepts/growth/dataexplorer/sumarize",
             "platform_concepts/growth/dataexplorer/visualization",
             "platform_concepts/growth/dataexplorer/savedreportsactions",
+            "platform_concepts/growth/dataexplorer/configure-data",
           ],
       },
 
