@@ -1,120 +1,106 @@
 ---
-title: July 2023
-sidebar_label: Latest product updates (July 2023)
+title: Aug 2023
+sidebar_label: Latest product updates (August 2023)
 featured: true
 ---
 
 ![](https://i.imgur.com/hIGEIJL.png)
 
-## Studio
-
-### 1. Introduced Knowledgebase with QnA support and enhanced Data Ingestion
-
-We have introduced a new interface that streamlines bot management with QnA support, removing the need for NLP. Effortlessly ingest data from URLs, PDFs, Sharepoint, S3, and more, while enjoying rapid testing and enhanced business personalization. We have also provided support for up to 1000 pages per document and 50 MB file sizes.
-
-![](https://i.imgur.com/vKr4BvT.png) 
-
-
-### 2. Added debugging & root cause analysis(RCA) for faster issue resolution in Dynamic Chat Node
-
-Easily identify the causes of failure/timeout messages using tags. If the tags are related to APIs or the LLM vendor, kindly contact the respective third-party vendor or check their status for support. For bot-level tags, manage the configurations within your node. If the tags are platform-level, please reach out to us for assistance.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-dynamic-chat)**
-
-![](https://i.imgur.com/qsbHdOB.png) 
-
-
-### 3. NLP Orchestrator on cloud for efficient scalability
-
-With the latest enhancement, the Orchestrator feature now utilizes NLP to efficiently route incoming chat requests to the relevant child bot, based on its trained NLP capabilities.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator#docusaurus_skipToContent_fallback)**
-
-![](https://i.imgur.com/N4Q6c93.png) 
-
-
-## Integrations
-
-### 1. Yellow.ai app on Oracle responsys
-
-You can now integrate Yellow.ai with Oracle Responsys, offering valuable engagement opportunities with your leads and contacts on their preferred messaging platform. With the power of WhatsApp, you can effortlessly conduct text message and multimedia marketing campaigns using the Oracle Responsys Program Designer.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/oracle-responsys)**
-
-
-![](https://i.imgur.com/lQN7YnV.png) 
-
-
-### 2. Yellow.ai agent assist on Zendesk
-
-Our genAI tools empower agents by offering chat summaries upon ticket creation on Zendesk, displaying real-time customer emotions, providing live chat suggestions, and enhancing knowledge base search with our searchGPT technology.
-
-
-## Engagement
-
-### 1. Introducing AI-Based Flow Campaigns
-
-We are excited to announce our new AI-Based Flow Campaigns that can generate a Flow campaign using advanced artificial intelligence technology. This innovative approach leverages powerful algorithms to automatically create effective and engaging campaigns tailored to your specific needs. The AI analyses various parameters, including target audience, campaign goals, and desired outcomes, to generate a customised flow that optimises user experience and maximises campaign performance.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/flow-ai)**
-
-
-![](https://i.imgur.com/HfDC8qn.png) 
-
-
-
-### 2. Flow Campaign UI Enhancements
-
-We have made significant improvements to our Flow Campaign user interface to accommodate our new AI-based campaign, making it even more intuitive and user-friendly. You can expect a more efficient campaign management experience and look forward to the introduction of additional options in the near future. Stay tuned for more updates.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#create-flow-campaign)**
-
-![](https://i.imgur.com/SbCfwW7.png) 
-
-### 3. Support for new statuses in WhatsApp Templates
-
-We have implemented new WhatsApp template statuses - "1st Pause" and "2nd Pause." With these updates, you will receive timely alerts whenever users report an active WhatsApp template as low quality or spam. As a proactive measure to maintain template quality, any reported template will be automatically blocked to prevent further complaints. You can update the template to seamlessly continue using it in your campaigns.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#4-view-whatsapp-template-approval-or-rejection-status)**
-
-![](https://i.imgur.com/l7S80oi.png) 
-
 ## Inbox
 
-### 1. Live monitoring dashboard for Inbox admins and supervisors to oversee latest live chats
+### 1. Inbox UI enhancements for chats and ticket details
 
 
-The live monitoring dashboard provides real-time chat updates, comprehensive chat history access, FRT and CRT metrics calculation, and preparedness for future SLA integration to enhance support services.
+Our engineering team has made substantial improvements to boost performance and tackle occasional issues. The upgraded Inbox is offering smoother interactions with no disruptions or noticeable visual changes.
 
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/inbox/monitor#dashboard-to-monitor-live-chats)**
+   ![](https://i.imgur.com/Z74ZaIn.png)
 
-
-![](https://i.imgur.com/oNSUoUs.png) 
-
-
-### 2. Email canned response for better accuracy of the search results
-
-The enhanced email canned responses now allow users to search based on both keywords and response content, optimizing search accuracy and saving valuable time. This feature is accessible in both the **Settings** page for creating Email canned responses and in the email editor when adding canned responses.
-
-## Channels
-
-### 1. Introducing Instagram channel on Yellow.ai
-
-Connect your Instagram Professional account with the Yellow platform, and gain access to various communication features for your bot, including direct messages, comments or private replies, story mentions, story replies, and media sharing. This capability enables businesses to effectively engage with users by responding to their comments and queries, fostering better interactions.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/instagram-limitations#4-supported-features)**
-
-### 2. Shopee Channel
-
-Yellow.ai integration with Shopee empowers the e-commerce platform in Southeast Asia with the ability to send purchase-related instructions to users from the bot, connect users to live agents, and track order details seamlessly.
+### 2. Boost efficiency and customer satisfaction with Reply Suggestions
 
 
-### 3. New pricing plan for Twitter
+A powerful feature that leverages your knowledgebase, legacy documents, and configured websites to provide agents with instant response suggestions for user messages. Enhance customer interactions with accurate and effective replies, all while retaining control and personalization.
 
-Twitter has recently introduced new pricing plan limits, and to ensure smooth interactions with Yellow's bot, it is advisable to opt for either the Pro or Enterprise plan.
-
-**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/twitter#twitter-pricing-plans)**
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai#reply-suggestions-for-conversation-improvement)**
 
 
+### 3. Simplify collaboration via Internal ticketing 
+ 
+Now, agents can seamlessly initiate quick ad-hoc conversations with colleagues and external vendors directly from yellow.ai, eliminating the need to navigate between platforms. This collaborative approach streamlines support interactions, reduces the time taken to resolve & ensures effective communication.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/internal-ticket)**
+
+   ![](https://i.imgur.com/W7iOQCu.png)
+
+### 4. Upcoming releases
+
+**1. Custom views**
+
+We're excited to introduce a powerful upcoming feature that enables administrators to generate and save personalized, filtered views for streamlined chat management. Moreover, administrators can extend this capability to all agents. By customizing views to align with specific requirements, such as status, tags, and custom fields, you'll optimize time spent navigating chat volumes and guarantee that conversations are promptly attended to.
+
+**2. Internal Ticketing enhancement**
+
+Soon, you'll be getting real time notifications, coupled with a refined workflow, which will simplify ticket management even further.
+
+**3. Integration with User 360**
+
+Built-in integration with Yellow.ai's in-house Customer Data Platform (CDP) to provide a comprehensive 360-degree view of customer activities and data stored within our system. It offers a deep understanding of customer interactions, enabling you to deliver more personalized and effective support.
+
+## Engage
+
+### 1. Event-based segments for personalized user interactions  
+
+Elevate your engagement strategy with our new event-based segments. Now, you can precisely target and personalize interactions for users who have taken specific actions within your platform. Tailor your approach to their behaviors and boost your impact.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment#create-segments-using-events)**
 
 
+   <img src="https://i.imgur.com/ePzTU3b.png" alt="drawing" width="60%"/>
+
+### 2. Discover actionable insights with Flow campaign reports
+
+Monitor the performance of your campaigns, giving you deeper insights into the effectiveness of your flow campaigns. Stay tuned for a more data-rich and actionable experience with our enhanced Flow Campaign Report.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/engagement/flow-report)**
+
+   ![](https://i.imgur.com/ORBr1GC.png)
+
+### 3. Nudges to convert Outbound Campaigns to Flow Campaigns
+
+We're excited to announce a feature that nudges to explore the insights and advantages of Flow campaigns when transitioning your Outbound campaigns to the dynamic world of Flow campaigns. Gain a deeper understanding of how this transformation can elevate your campaign management to new heights
+
+
+   ![](https://i.imgur.com/Mr4mFHY.png)
+
+## Channel
+
+### Introducing Webex Channel
+
+Yellow.ai now supports Webex, a communication platform that enables conversations with chatbots or agents within the Webex messaging app. This channel lets you initiate conversations and share files, images, and videos.
+
+**[Read the doc](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/webex)**
+
+   ![](https://i.imgur.com/WOlN4tG.png)
+
+## Chat Widget
+
+### 1. Introducing Yellow.ai's search bar
+
+Introducing our AI-powered Search Engine for your websites. This intelligent search bar can provide real-time suggestions, with category-based results. Enhance user experience by allowing visitors to easily find product information, access documentation, and explore FAQs directly on your site.
+
+
+### 2. Enhanced receipt card with transaction details
+
+This component has been improved to show transaction or purchase details, such as the amount of a fixed deposit, the interest rate, the title, and the reference ID, within the carousel node.
+
+   
+   <img src="https://i.imgur.com/VSZcWhR.png" alt="drawing" width="60%"/>
+
+### 3. Feedback card to collect customer feedback
+
+This allows you to gather feedback from bot users, based on their experience with the chatbot or live agent, at the conclusion of the conversation. The feedback feature offers two choices: thumbs up/thumbs down and star rating. Moreover, users can share their feedback via text input. Users are free to skip any step of the feedback process.
+
+### 4. Share location via Google Maps using location component
+
+This component provides users with the ability to perform actions related to location using Google Maps. Users can search for specific locations, select them, and share location access seamlessly.
+
+   ![](https://i.imgur.com/OpiPYhl.png)

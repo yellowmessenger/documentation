@@ -1293,6 +1293,7 @@ module.exports = {
       label: "2023 updates",
       collapsed: true,
       items: [
+        "updates/2023/jul2023",
         "updates/2023/jun2023",
         "updates/2023/may2023",
         "updates/2023/april2023",
