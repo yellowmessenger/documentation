@@ -69,7 +69,11 @@ For example:
     - **AssignedTo** - agentId has to be passed. agent ID is the agent's login email address without any special characters. Example:  sandy.r@yellow.ai > sandyryellowai
     - **PreferredAgent**
     - **PreferredAgentFallback**
-    
+
+:::note
+When testing sticky agent assignment, you can skip using the **Raise ticket** node. Use this API at the end of the flow to auto-generate and assign chats to Inbox agents.
+:::
+
 ----
 
 ### Assign tickets to agents without any fallback
