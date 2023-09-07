@@ -171,7 +171,7 @@ Variables allow you to personalize your template content for the user. You can i
 
 You can add variables by adding two curly brackets before and after the variable name.
 
-![](https://i.imgur.com/2DX9Uiu.png)
+   ![](https://i.imgur.com/2DX9Uiu.png)
 
   
 
@@ -181,7 +181,7 @@ By doing so you define a variable user, which can contain unique names of the us
 
 You can see in the preview tab below, the variable user we just created is highlighted in blue for your own convenience.
 
-![](https://i.imgur.com/jRhm0jE.png)
+   <img src="https://i.imgur.com/jRhm0jE.png" width="50%"/>
 
 ## 4. Track URL clicks in WhatsApp campaigns
 
@@ -207,6 +207,8 @@ To track URL clicks:
    <img src="https://i.imgur.com/G1ihjVL.png"/>
 
 3. Send out the campaign to users with the template. The URLs in the tracked list are shortended and a unique identifier is provided to each user before sending.
+
+   <img src="https://i.imgur.com/RZGOF9e.jpg" width="40%"/>
 
 
 
@@ -263,7 +265,7 @@ When you send a template for approval, Facebook approves it only if everything i
 
 You can see the template status on the Templates home page.
 
-![](https://i.imgur.com/FmTmtzY.png)
+   ![](https://i.imgur.com/FmTmtzY.png)
 
 
 Here are some basic guidelines that you can follow to get your templates approved -    
@@ -288,13 +290,12 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 
 1. The template on the **left** got rejected because it placed a link inside the body instead of using call to action. The one on the **right** got approved after removing the link.
 
-
-![](https://i.imgur.com/mBJxZ7t.png)
+   <img src="https://i.imgur.com/mBJxZ7t.png" width="70%"/>
 
   
 2. The template on the **left** got rejected because user didn't pass any parameter inside curly braces. The one on the **right** got approved after passing a parameter inside the bracket.
 
-![](https://i.imgur.com/OpceI9g.png)
+   <img src="https://i.imgur.com/OpceI9g.png" width="60%"/>
 
   
 
