@@ -17,12 +17,41 @@ To view a campaign report:
 <img src="https://i.imgur.com/7CWYYoK.png" width="80%"/>
 </center>
 
-You will see the performance of the campaign .
+You will see the performance report as shown below.
 <center>
-<img src="https://i.imgur.com/j6iA1G9.png" width="80%"/>
+<img src="https://i.imgur.com/CeOftfu.png" width="80%"/>
 </center>
 
+### User engagement overview
+
 KPI | Description
+--- | -----------
+Engagement channels | Channels that are connected to the flow.
+Number of events | The total number of events received for the flow.
+Unique clicks | The total number of unique clicks received to the URL used in the flow campaign.
+Conversations initiated | The total number of unique users who started conversation.
+Goal conversation | The total number of unique users who have achieved the campaign goal.
+
+### User engagement analysis
+
+This section provides a comprehensive evaluation of how effectively the campaign is connecting with your target audience. This includes key engagement metrics such as Audience, Impression, Reach, and Engagement.
+
+By default, you'll find these engagement metrics aggregated across all channels. You have the flexibility to analyze metrics specific to each channel by using the channel filter.
+
+   ![](https://i.imgur.com/3HYxbW3.png)
+
+KPI | Description
+--- | -----------
+Audience | The size of the audience in the flow campaign.
+Impression | The number of times the campaign content is delivered to your users, along with the percentage of delivery rate.
+Reach | The total number of unique users to whom the campaign was reached out.
+Engagement | The total number of user interactions with your content, such as clicks,likes, shares, and comments.
+
+
+
+
+
+KPI | Descriptions
 --- | -----------
 Users Entered Flow | The number of unique users who have initiated or entered the flow campaign.
 Users in Flow | The number of active users currently engaged within the flow campaign.
