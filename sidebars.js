@@ -813,6 +813,7 @@ module.exports = {
             "platform_concepts/engagement/outbound/outbound-campaigns/run-campaign",
             
           //  "platform_concepts/engagement/outbound/filter",
+          "platform_concepts/engagement/outbound/outbound-campaigns/view-outbound",
             "platform_concepts/engagement/outbound/outbound-campaigns/outbound-report",
             "platform_concepts/engagement/outbound/notification-engine",
             "platform_concepts/engagement/effectivelyuseengage",
