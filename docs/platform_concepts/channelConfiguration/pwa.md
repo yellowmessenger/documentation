@@ -5,8 +5,6 @@ sidebar_label: Progressive web app
 
 A Progressive Web App (PWA) is a web-based application that allows you to create an app-like experience for users and can be embedded on the web. 
 
-A PWA chatbot is designed to embed on desktops, mobile devices, and other web browsers without the need to download or install any native mobile apps. PWA chatbots are supported on mobile, desktop, and web browsers such as Chrome, Safari, and Firefox.
-
 Let's say that you want to build a standalone bot for your brand. You can use a PWA chatbot to provide a convenient and secure conversational experience for the users.
 
 ![](https://i.imgur.com/tkk9TjW.png)
@@ -83,14 +81,6 @@ To install PWA chatbot on your mobile device, follow these steps:
 4. The PWA chatbot app has been installed successfully on your mobile device.
 
     <img src="https://i.imgur.com/dw1mK6H.png" alt="drawing" width="40%"/>
-
-## Embed PWA chatbot on website
-
-To embed a PWA chatbot, you need to paste the PWA bot link in the iframe of your website. Following is the sample format: 
-
-`<iframe src="https://r0.cloud.yellow.ai/pwa/v2/live/x1635319613183?fullScreen=true" frameborder="0" allowfullscreen width="100%"></iframe>`
-
-  ![](https://i.imgur.com/K5NnNvn.png)
 
 
 

@@ -19,21 +19,21 @@ To set the custom bot icon, follow these steps:
 
    ![](https://i.imgur.com/UuFZ2eR.png)
 
-3. Click on **Chat widget**.
+2. Click on **Chat widget**.
 
    ![](https://i.imgur.com/1KzP77W.png)
    
-4. Navigate to **Bot icon**, under *Icon shape*, select the **Upload custom icon** option. 
+3. Navigate to **Bot icon**, under *Icon shape*, select the **Upload custom icon** option. 
 	 	 
-	 ![](https://i.imgur.com/O9LuvOa.png)
+	<img src="https://i.imgur.com/pR1N6Hy.png" alt="drawing" width="80%"/>
 	 
-5. Hover over the bot icon and click the **Edit** icon to upload the custom icon.	
+4. Click **Add icon** to upload the custom icon.	
 
-     ![](https://i.imgur.com/qFFMt8U.png)
+     ![](https://i.imgur.com/GyUP1ia.png)
 	 
-6. Choose the icon from your local  system and click **Open** to upload the icon. You can view the custom icon on the *Preview* screen.
+5. Choose the icon from your local system and click **Open** to upload the icon. You can view the custom icon on the *Preview* screen.
 
-     ![](https://i.imgur.com/tN4dcvc.png)
+     ![](https://i.imgur.com/3mRZANr.png)
 
 :::note
 You can choose any animation for the icon if needed. 

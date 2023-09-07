@@ -65,7 +65,7 @@ Widget size | Set your preferred widget size - Small, Medium, or Large.
 
 The **Bot Icon** tab allows you to set the desired logo for your bot. You can also set the bot icon from the **Preview screen** by clicking on the bot icon.
 
-<img src="https://i.imgur.com/lCetTMt.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/1zSNcyA.png" alt="drawing" width="60%"/>
 <br/>
 
 

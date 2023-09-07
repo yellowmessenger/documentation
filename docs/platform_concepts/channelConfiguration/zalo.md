@@ -145,9 +145,9 @@ To connect the Zalo channel on the Yellow.ai platform, follow these steps:
 
    ![](https://i.imgur.com/eNwtDTh.png)
    
-2.  Enter the **OA server key**, **refresh Token**, and **App ID** that were copied from the developer portal, and then click **Save**.   
+2.  Enter the **OA server key**, **Refresh token**, **App ID**, and **Zalo DNS TXT** that were copied from the developer portal, and then click **Save**.   
    
-    ![](https://i.imgur.com/DkKPgad.png)
+    ![](https://i.imgur.com/zealQZi.png)
 
 3. Your Zalo channel will be successfully connected. 
 
