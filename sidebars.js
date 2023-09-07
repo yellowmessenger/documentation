@@ -268,8 +268,6 @@ module.exports = {
             
           ],
         },
-       
-        "platform_concepts/studio/kb",
         
         {
           type: "category",
