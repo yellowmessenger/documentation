@@ -7,6 +7,8 @@ We're thrilled to launch the latest update to our inbox chat interface, designed
 
 ## What’s improved? 
 
+![](https://hackmd.io/_uploads/r1OiVePR2.png)
+
 1. **Streamlined navigation within chat details**
 
 We've restructured the interface to ensure that you can effortlessly access the information you need, no matter how extensive the custom fields, website activity, timeline etc., are. This streamlined navigation not only enhances discoverability but also scales well to future additions, such as integrations, ensuring a smooth user experience.
@@ -29,12 +31,14 @@ The new UI is now more responsive than ever before. Whether you're using a deskt
 
 ### 1. Readily available customer details
 
+<!--
 
 | **Before** | **Now**  |
 | -------- | -------- |
 | Customer data was not separated, and the user interface only presented basic information  | We've integrated the CDP module, allowing for well-defined segregation of customer details  |
 | <img src="https://hackmd.io/_uploads/ryOKqHN0n.png" alt="drawing" width="70%"/> |  <img src="https://hackmd.io/_uploads/B1PXfVNR3.png" alt="drawing" width="100%"/> |
 
+-->
 
 | Current enhancement | UI |
 | -------- | -------- |
@@ -47,16 +51,16 @@ The new UI is now more responsive than ever before. Whether you're using a deskt
 
 | **Before** | **Now**  |
 | -------- | -------- |
-| Chat details were stored in a confusing manner, with only icons displayed alongside the fields | Our user-friendly UI includes comprehensive features such as chat details, internal notes, <br/>custom field details, chat collaboration, activity log, website activity, <br/> and device details|  
+| Chat details was organized in a perplexing manner, using only icons to represent the fields, resulting in an overcrowded, never-ending scroll and a limited viewing experience | Streamline your focus on what matters most to you with our user-friendly UI, with essential features like chat details, internal notes, custom field details, chat collaboration, activity logs, website activity tracking, and device information|  
 | ![](https://hackmd.io/_uploads/BkQeNPN03.png) | ![](https://hackmd.io/_uploads/r11IQv4C2.png)
  | 
 
 | Current enhancement | UI |
 | -------- | -------- |
-| Chat details are now prominently displayed alongside field names, and you have the option to attach tags to individual chats | <img src="https://hackmd.io/_uploads/HJi5gIEAn.png" width="100%"/>  |
+| Quickly access your chat details that are prominently displayed alongside field names and provided with the option to attach tags to individual chats for faster identification | <img src="https://hackmd.io/_uploads/HJi5gIEAn.png" width="100%"/>  |
 | Clicking **Details** provides access to internal notes and simplifies the classification of custom fields. <br/> Internal notes are extracted from the chat screen. <br/> Custom fields can be manually input by agents for chat resolution or transfer. | ![](https://hackmd.io/_uploads/rJG1Gs4An.png)| 
-| The **Collaborator** section has been separated, allowing agents to include other team members in resolving chat queries | ![](https://hackmd.io/_uploads/HkB5IUNA3.png)| 
-|You can now view **Website activity**, that includes links to the URLs that your customer previously visited.	| ![](https://hackmd.io/_uploads/BJRrt8ECh.png)|
+| On **Collaborator** section you can include other team members in resolving chat queries | ![](https://hackmd.io/_uploads/HkB5IUNA3.png)| 
+|You can view **Website activity**, that includes links to the URLs that your customer previously visited.	| ![](https://hackmd.io/_uploads/BJRrt8ECh.png)|
 | click **Device details** to access and review device-specific information | ![](https://hackmd.io/_uploads/r1IuF8ERn.png) | 
 
 
