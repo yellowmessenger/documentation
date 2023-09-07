@@ -82,13 +82,15 @@ You can download video, image, and file sent by the bot or agent.
 	
 |     |  |
 |---------|-------|
-| This component allows you to provide feedback and to rate their chat experience. The rating is displayed as a number of stars on a scale of 5. You can click on the stars to provide a rating. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback">here</a> to implement Feedback using a node. | <img src="https://i.imgur.com/nESHeK6.png" alt="drawing" width="100%"/>
+| This feature allows you to collect user feedback. Feedback is collected based on the user's interaction with the chatbot or live agent at the end of the conversation. The feedback component has two options (:thumbsup: or :thumbsdown:) and star rating. Additionally, there is an optional text field to capture detailed feedback through text input. Users have the flexibility to skip any step of the feedback process. You can collect feedback through the following options:<br/> 1. **(:thumbsup: or :thumbsdown:)**<br/>The thumbs up or down options enable users to provide positive or negative feedback. Additionally, they can include comments based on their feedback selection. <br/>• Use this option to capture whether the user has liked or disliked the overall conversation. <br/>• You can configure the positive and negative feedback options according to your business needs. <br/>2. **Star rating** <br/> This option allows users to rate their experience on a scale of 1 to 5. Depending on the rating, the following actions will be displayed: <br/> • Ratings 1 to 3 redirect users to a page with up to 5 predefined negative feedback options. <br/> • Ratings 4 to 5 redirect users to a page with up to 5 predefined positive feedback options. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback">here</a> to implement Feedback using a node. |  <img src="https://i.imgur.com/BKZbpjZ.png" alt="drawing" width="100%"/> <img src="https://i.imgur.com/JR7rxeH.png" alt="drawing" width="100%"/>|
 
 ### 1.7 Location
 	
-|     |  |
-|---------|-------|
-| This component allows you to share your location. Based on the shared location, the chatbot understands the user's context and offers more relevant information. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-location">here</a> to implement Location using a node. | <img src="https://i.imgur.com/GDp7suq.png" alt="drawing" width="100%"/>
+|     |
+|------|    
+| This component enables your bot users to search, select, or share location access using Google Maps. With this component, you can perform the following actions:<br/> • **Share location**: This enables you to share your current location.<br/> • **Map**: Expand the map view to pinpoint and select the desired location. Note that this function is not available on iOS devices.<br/> • **Search for location**: Search for a specific location you wish to share. The component will start displaying suggestions as users type.<br/> • **Confirm:** You can confirm the selected location by clicking the **Confirm** button.<br/> • **Cancel**: To close the map view, click the **Cancel** button. <br/> • **Go back**: Click this button to go back to the Share location option.<br/> Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-location">here</a> to implement Location using a node.  |
+
+![](https://i.imgur.com/OpiPYhl.png")
 
 ###	1.8 Attachment
 
@@ -126,4 +128,4 @@ Components | Description
 **Contact card** | This component displays the information of the user and allows you to communicate with the user through email, phone, or WhatsApp.<br/><img src="https://i.imgur.com/HVUfu8y.png" alt="drawing" width="40%"/> 	
 **Order status** | This component is used to track the status of your order with details such as order Id, delivery date, and total amount. <br/> <img src="https://i.imgur.com/gO0zj9o.png" alt="drawing" width="40%"/>
 **Transaction status**	| This component is used to track the status of your transactions. <br/><img src="https://i.imgur.com/tpT0wsR.png" alt="drawing" width="40%"/>
-**Receipt card** | This component is used to view the details of your purchase, including the items, price, date, and transaction number. <br/><img src="https://i.imgur.com/LJeO5AF.png" alt="drawing" width="40%"/> 
+**Receipt card** | This component is used to display transaction or purchase-related details such as fixed deposit amount, interest rate, title, and reference ID. With this card, you can perform the following action:<br/>• **Submit**: Sends title header text and title header value data to the bot. <br/><img src="https://i.imgur.com/nXR1Jsk.png" alt="drawing" width="90%"/> 

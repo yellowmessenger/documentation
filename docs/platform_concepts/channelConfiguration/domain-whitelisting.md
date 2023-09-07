@@ -1,6 +1,6 @@
 ---
 title : Domain whitelisting for Chat widget 
-sidebar_label : Domain whitelisting for Chat widget 
+sidebar_label : Domain whitelisting
 ---
 
 Domain whitelisting allows you to secure your chatbot and ensures that the chatbot can be accessed only in authorized domains. It prevents unauthorized users from copying the script and embedding the bot on their websites or mobile applications. 
