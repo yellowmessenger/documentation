@@ -1,13 +1,12 @@
 // script to integrate support bot
 
 const titlePathData = document.querySelectorAll('span.breadcrumbs__link');
-let titleText = '';
 if (titlePathData.length) {
-    titleText = titlePathData[titlePathData.length-1].innerText
+    window.titleText = titlePathData[titlePathData.length-1].innerText
 }
 
 
-window.ymConfig = {"bot":"x1687158407670","host":"https://r0.cloud.yellow.ai","payload": {"title": titleText}};
+window.ymConfig = {"bot":"x1687158407670","host":"https://r0.cloud.yellow.ai","payload": {"title": window.titleText}};
 (function() {
   var w = window,
       ic = w.YellowMessenger;
