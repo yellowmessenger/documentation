@@ -3,138 +3,89 @@ title : Publish your bot
 sidebar_label : Publish your bot
 ---
 
+Publishing a bot involves deploying bot changes to the live environment. Only a **Super Admin** can publish a bot for the first time. Each bot environment will have a unique bot ID. It's important to understand that [database](https://docs.yellow.ai/docs/platform_concepts/studio/database#docusaurus_skipToContent_fallback) records will not automatically transfer to the live environment upon publication. They must be configured separately in both the development and live environments.
+
+Only certain user roles can approve the bot. To know about user roles in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
+
+## Publish bot to go live
+
+To publish a bot to live mode follow these steps:
+
+1. Ensure the bot is in **Sandbox**/**Development** mode. Go to **Studio** > **Build** > **Publish changes**. 
+
+   ![](https://i.imgur.com/mVfjm0G.png)
+
+
+2. In the following screen, fill in the following fields.
+
+* Click **Configure more channels** to configure further more channels to the bot in the upcoming stage.
+*  In **Approvers**, you can see the name of the users who have the access to approve the bot.
+* In **Comment**, add a message to the approver citing the changes made in the bot.
+
+   <img src="https://i.imgur.com/vKGHdg5.png" alt="drawing" width="50%"/>
+
+3. Click **Publish**. The changes will move to **Staging**. 
+4. Change your bot environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. Bots with only **Development** and **Live** modes need not do this. When you publish the changes, bot sends the approval request to approvers.
+
 :::info
 To learn about different bot enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
 :::
 
-## Publishing roles
+## Approve a bot publish request
 
+1. The Approver will receive an email with the content like the image below. Click **Review Request**.
 
-- **Bot admins** or **Approvers** have the authority to publish bots. 
-    - The **initial publication** can only be performed by the **Super admin** who created the bot.
-- Only **Super admins** can add **Approvers**. To learn to add approvers, refer  [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators). 
-- To identify the **Super admin** of the bot, navigate to **Access control**.
-![](https://i.imgur.com/gd7yn1Q.png)
+   ![](https://i.imgur.com/H2fG9Q5.png)
 
+2. You will be redirected to the **Bot approvals** page. Click **View request**.
 
-:::note
+   <img src="https://i.imgur.com/7SAJgfz.png" alt="drawing" width="50%"/>
 
-Following changes are not transferred to the **Live** environment upon publishing the bot. They must be configured seperately in **Development** and **Live** enviornment. 
+3. In the following screen, add a message to the approval requestor and click **Publish**.
 
-* Database records
-* Inbox module settings
-* Bot analytics in the Insights tab
-* Scheduled campaigns in the Engage module
-* Applied templates in the Engage module
-* Bot ID differs between development and live environments
+   <img src="https://i.imgur.com/NvYhXin.png" alt="drawing" width="50%"/>
+   
 
-:::
+## Publish specific flows
 
------
+Publishing certain flows only helps you to release specific flows within your bot, allowing you to observe results while continuing to refine other components. This approach enables you to swiftly address issues or implement copy changes after the initial release without interrupting ongoing work. Additionally, it provides the opportunity to proactively plan your development efforts based on feedback received from the currently published flows, fostering an agile and responsive development process.
 
-## Request for bot publish approval
+To access **Publish selected flow**s, follow these steps: 
 
->  Bot publish option is only available when the bot is in **Development** mode.
+1. Go to **Studio** > **Publish changes** > **Publish selected flows**
+    
+    ![](https://i.imgur.com/z6kwgb9.png)
 
+2. In the following pop-up, fill the following fields.
 
-To initiate a bot publishing request:
+* **Flows:** Choose the flows to be published.
+* **Approvers:** Displays the approvers who will aprove the publish.
+* **Comment:** Add a message to the approvers
 
-1. Go to **Studio** and click on **Publish changes**.
-    ![](https://i.imgur.com/KpPExXP.jpg)
+    
+   <img src="https://i.imgur.com/Uem2lET.png" alt="drawing" width="50%"/>
 
-2. Verify the *List of changes pushed*, enter a **Comment message**.
-    <img src="https://i.imgur.com/Vw2K047.png" width="70%"/>
-
-3. Click **Publish**. You will see the *Publish approval awaited* status until the bot is published.
-    <img src="https://i.imgur.com/KP1Z06P.jpg"/>
-
-
----
-
-## Approve request and publish bot
+3. Click the **Publish** button. The changes will move to **Staging**. Change your bot environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. Bots with only **Development** and **Live** modes need not do this. When you publish the changes, bot sends the approval request to approvers. Click [here](#approve-a-bot-publish-request) to know about approving the publish request.
 
 :::info
-
-**When a publish request is raised:**
-
-- **Super admins** and **Approvers** receive an email with the subject:::
-*Approval Needed to Publish Assistant: <YOUR_BOT_NAME>*.
-
-**Before approval:**
-
-- Confirm that the bot functions as expected in the development environment.
-- Ensure the bot is trained with correct intents.
-
-:::
-
-To publish the bot, follow these steps:
-
-:::note
-If the publish button is disabled and indicates the bot is in read-only mode, ensure all prior publish requests are approved and published.
-:::
-
-
-1. Open the email and click **Check publish request**. This redirects to the bot approval page.
-    ![](https://i.imgur.com/2P0Muuy.png)
-
-2. From the Profile dropdown, select **Take actions** and navigate to the **Bot approval** tab.
-    ![](https://i.imgur.com/fWqYPzH.png)
-
-3. Click **Approve**.
-4. Complete the checklist verification by selecting checkboxes.
-    <img src="https://i.imgur.com/FT5KrCR.png" width="70%"/>
-
-5. Click **Approve** to confirm.
-
-
-After successful publishing, admins and approvers receive an email confirming the publication, including the user's name who performed the action with the subject:::
-*Assistant : <BOT_NAME> has been approved* 
-
-![](https://i.imgur.com/tcdvurC.png)
-
-
-----
-
-## Selective publish for specific flows
-
-Selective publish enables publishing specific flows rather than the entire bot. 
-
-:::info 
-
-**Use-cases of Selective publish:**
-
-* You can release a part of your bot and start seeing results while working on the other flows.
-* You can make quick bug fixes or copy changes after your first release without disturbing the ongoing work.
-* Proactively plan your work based on the feedback received for the currently published flows.
-:::
-
-To access Selective publish, follow these steps: 
-
-1. Click **Publish changes** button on the top and select **Publish selected flows**.
-    ![](https://i.imgur.com/feRhJWR.png)
-
-2. Choose the flows to be published, select the approvers, and post a comment on what the publish does. Click **Publish** to publish the bot.
-    ![](https://i.imgur.com/9wX1vRD.png)
-
-:::info
-For bots with **Sandbox**, **Staging** and **Production** modes, **Selective Publish** will be available only if the bot is published from **Staging** to **Production** 
-:::
+To learn about different bot enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+:::   
 
 ---
 
 ## Revert published changes 
 
-Reverting published bots can be used for addressing bugs in the published version.
+Revert option is a handy tool for fixing bugs in the live version. It lets you roll back to any previous version of your bot. The **Revert** feature is available only in the **live/production** environment. Only **Admins** can have access to this option.
 
-1. Click **Revert** on the top.
-    ![](https://i.imgur.com/q37ebzW.png)
+To revert changes:
 
-2. Select the bot to be reverted and click **Revert** in the following dialog box.
-    ![](https://i.imgur.com/T1Ixoqp.png)
+1. Go to a bot, ensure the bot is in **Live/Production** mode and go to **Studio** > **Build** > **Revert**.
+    ![](https://i.imgur.com/2U4KqrJ.png)
 
+2. Select the version to which the bot should be reverted.
 
-:::info
-- **Revert** action is only possible in the **Live** environments.
-- Only admins can use the **Revert** option.
-:::
+   ![](https://i.imgur.com/7XplLfu.png)
 
+3. Click **Revert**.
+    
+   <img src="https://i.imgur.com/4GiwCmo.png" alt="drawing" width="70%"/>

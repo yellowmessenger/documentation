@@ -268,8 +268,6 @@ module.exports = {
             
           ],
         },
-       
-        "platform_concepts/studio/kb",
         
         {
           type: "category",
@@ -940,6 +938,7 @@ module.exports = {
             "platform_concepts/growth/dataexplorer/sumarize",
             "platform_concepts/growth/dataexplorer/visualization",
             "platform_concepts/growth/dataexplorer/savedreportsactions",
+            "platform_concepts/growth/dataexplorer/configure-data",
           ],
       },
 
@@ -1295,6 +1294,7 @@ module.exports = {
       label: "2023 updates",
       collapsed: true,
       items: [
+        "updates/2023/jul2023",
         "updates/2023/jun2023",
         "updates/2023/may2023",
         "updates/2023/april2023",
