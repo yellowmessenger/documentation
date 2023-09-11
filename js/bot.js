@@ -1,6 +1,6 @@
 // script to integrate support bot
 
-const addDocTitleToPayload = () => {
+/*const addDocTitleToPayload = () => {
     const titlePathData = document.querySelectorAll('span.breadcrumbs__link');
     if (titlePathData.length) {
         const titleText = titlePathData[titlePathData.length-1].innerText
@@ -12,8 +12,9 @@ const addDocTitleToPayload = () => {
     }
     console.log("BOT.JS", window.ymConfig.payload)
 }
+*/
 
-window.ymConfig = {"bot":"x1687158407670","host":"https://r0.cloud.yellow.ai"};
+window.ymConfig = {"bot":"x1687158406786","host":"https://r0.cloud.yellow.ai"};
 (function() {
   var w = window,
       ic = w.YellowMessenger;
@@ -28,7 +29,7 @@ window.ymConfig = {"bot":"x1687158407670","host":"https://r0.cloud.yellow.ai"};
           e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
           var t = d.getElementsByTagName("script")[0];
           t.parentNode.insertBefore(e, t)
-          addDocTitleToPayload();
+        //  addDocTitleToPayload();
       }
       i.q = [], i.c = function(e) {
           i.q.push(e)
