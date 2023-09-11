@@ -19,7 +19,7 @@ module.exports = {
     "tutorials/data",
     "tutorials/engage",
     "tutorials/channels",
-    "tutorials/growth",
+  //    "tutorials/growth",
     "tutorials/inbox",
     "tutorials/integrations",
   ],
