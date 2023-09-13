@@ -137,6 +137,13 @@ For example, if there are two records with the same userId - one in row 10 and a
 
    ![](https://i.imgur.com/54TZVsw.png)
 
+:::note
+When multiple CSV files are uploaded simultaneously, it's possible that each CSV file may contain duplicate records.
+
+In cases where there are conflicting records due to duplicated userIds, the total user count within the segment might fluctuate accordingly. However, if records are merged to resolve these conflicts, these merged records may potentially appear in multiple segments.
+
+For example, if you opt to retain user data during a conflict resolution process, the previous record may be deleted, and as a result, it won't be available in the segment that was originally created through the prior import.
+:::
 
 11. Click **Import**.
   
