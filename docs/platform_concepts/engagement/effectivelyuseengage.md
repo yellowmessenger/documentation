@@ -15,7 +15,7 @@ In this article, you will learn how to -
 
 When you create a campaign, it is important to identify the right set of audience. Sending messages to uninterested audience might lead to a low quality rating. For example, if a customer keeps receiving irrelevant messages from your WhatsApp business number, he might block your number.
 
-> To know how to create an audience group, see [here](./cdp/user_data_segments/creating_managing_user_segment.md). 
+> To know how to create an audience group, see [here](/docs/platform_concepts/engagement/cdp/user_data_segments/segment-properties).
 
 #### Important points
 * Add a right country code, otherwise WhatsApp will append the country code of your business phone number and sends the message to a user.
