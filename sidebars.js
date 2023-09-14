@@ -483,6 +483,8 @@ module.exports = {
                   ],
         },
 
+       // "platform_concepts/inbox/inbox-cdp",
+
         //5. contacts doc
         "platform_concepts/inbox/contacts",
 

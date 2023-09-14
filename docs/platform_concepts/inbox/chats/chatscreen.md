@@ -3,7 +3,7 @@ title: Components of chat screen and user details
 sidebar_label :  Chat screen & user details
 ---
 
-![](https://i.imgur.com/oSPem4b.png)
+![](https://hackmd.io/_uploads/r1V6zyJkp.png)
 
 
 ## <a name="cs"></a>  1. Chat conversation screen
@@ -14,7 +14,7 @@ You can chat with the customer on this screen. This screen has the following fun
 
 Simply type in any text and hit send button (or enable enter to send if you want the messages to be sent when you press the enter key).  
 
-<img src="https://i.imgur.com/oGJnkHz.png" alt="drawing" width="70%"/>    
+<img src="https://hackmd.io/_uploads/rkfSF11y6.png" alt="drawing" width="70%"/>    
 
 #### Auto-save draft message 
 
@@ -36,7 +36,7 @@ The chat interface will display an indication to show that a draft has been crea
 Canned response can be used to reduce the manual effort on sending frequent replies. Agent can simply select a canned response instead of typing the whole message multiple times and send it to the customer.  
 An agent can add [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown by clicking the shortcut **#** followed by the relevant search term.   
 
-<img src="https://i.imgur.com/IATnPlM.png" alt="drawing" width="50%"/>    
+<img src="https://hackmd.io/_uploads/SyalqJy1p.png" alt="drawing" width="50%"/>    
 
 :::note
 Quickly find canned responses by entering relevant keywords/tags or searching within the content. Learn more about the advance search functionality [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses).
@@ -48,6 +48,8 @@ Quickly find canned responses by entering relevant keywords/tags or searching wi
 
 Agents can type the shortcut **/** on the screen and the agent actions (automated with the help of studio flows) will be displayed in the dropdown list. Agent can select an action that is automated and the results are fetched easily without multiple manual steps. 
 
+<img src="https://hackmd.io/_uploads/rJPF91kyp.png" alt="drawing" width="100%"/>    
+
 > Learn more about [agent actions here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions).
 
 -----
@@ -56,7 +58,7 @@ Agents can type the shortcut **/** on the screen and the agent actions (automate
 
 Upload images/files to your message and add emojis to your text to make the conversation more interactive. 
     
-![](https://i.imgur.com/54e5PWh.jpg)
+<img src="https://hackmd.io/_uploads/SJRtj1yka.png" alt="drawing" width="50%"/>    
 
 :::note
 On **Whatsapp channel** you can upload a maximum size of 5 MB for images and 16 MB for videos/files.
@@ -67,7 +69,7 @@ On **Whatsapp channel** you can upload a maximum size of 5 MB for images and 16 
 ### Internal notes
 
 This can be used to take notes/jot down the pain points/summarise the chat sent by the user. It is mostly used before transferring the chat to another agent. 
-The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin) within the chat.  
+The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin) within the chat.  Slack thread's initiated for internal ticket purpose will also be stored as internal notes. 
 
 ![](https://i.imgur.com/cae3RVU.png)
     
