@@ -2,15 +2,11 @@
 sidebar_label: User segments overview
 title: User segments overview
 ---
+A user segment is a grouping of users based on common characteristics. There are two type of segments - Static segment and dynamic segment. You can use static and dynamic segments to effectively tailor your communication to different user groups and improve the overall user experience.
 
-## Introduction 
-A user segment is a grouping of users based on common characteristics. You can define conditions to create static segments, which remain fixed over time, and dynamic segments that automatically update based on user data.
+* **Static segments**: These segments are manually created by uploading a specific set of users. For instance, you can upload users who have shown interest in a product, visited your pricing page, trial users or belong to a specific department. You can [create static segments when uploading users via a CSV file](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segment-csv).
+* **Dynamic segments**: These segments are generated based on conditions defined using [user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segment-properties) or [events](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments-events). For instance, you can create segments with users who purchased in the last 30 days, age is between 20-30 and so on. As these are dynamic, the  user count in a segment changes over time. 
 
-For example, you can create static segments for users interested in a particular product, visitors to your pricing page, or users in a specific department. Dynamic segments can be formed based on conditions like users whose age group is between 20-30 or those who have recently made a purchase.
-
-Segmenting your user base is highly recommended as it allows you to filter and send targeted messages to specific groups. For instance, you can create a static segment for trial users and a dynamic segment for users who have made a purchase in the last 30 days. This enables you to send personalized onboarding messages to trial users and follow-up messages to recent purchasers.
-
-By utilizing both static and dynamic segments, you can effectively tailor your communication to different user groups and improve the overall user experience.
 
 Here are some user segmentation examples based on different specializations:
 
