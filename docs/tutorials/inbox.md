@@ -72,22 +72,14 @@ his video provides a step-by-step guide on configuring Canned Responses in the I
 </center>
 
 
-
-### Email Ticketing
-
-<center>
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vGwb8DTUdEs" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
-</center>
-
+<!-- 
 
 ### Managing Chat Queues
 
 <center>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uEjFdFnY2CU" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe></center>
-
+-->
 
 ### Agent escalation, handling and assistance
 

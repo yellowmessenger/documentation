@@ -38,23 +38,6 @@ This video provides a step-by-step guide on creating start and fallback flows fo
 </center>
 
 
-## Create a Flow
-
-<center>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/03iTV7bbrYw" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
-</center>
-
-
-
-
- ## Learn about Intents, Flows and Utterances
-
-<center>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dCJD0yXFbG4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allow="fullscreen"></iframe>
-</center>
-
 ## Introduction to Entities
 
 In this video, we'll guide you through the process of creating entities tailored to specific use cases, and show you how to seamlessly integrate them into your bot's flow.
@@ -72,11 +55,7 @@ This video demonstrates how to configure the conversation settings of a bot. The
 </center>
 
 
-### Studio UI Updates
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LXLW7-eeTV4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
-</center>
 
 
 ## Managing Synonyms

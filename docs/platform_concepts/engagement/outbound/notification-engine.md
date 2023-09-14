@@ -299,7 +299,8 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 1501 - ttlLimitReached | The message failed to send during its Time To Live (TTL) duration. Please resend the message.
 | 1504 - waCompatibility | There could be any of the following reasons: <ul><li>Unable to deliver message due to software/device compatibility.</li><li> The recipient's phone number is not a WhatsApp phone number.</li><li> Recipient has not accepted our new Terms of Service and Privacy Policy.</li><li>Recipients using an old WhatsApp version; must use the following WhatsApp version or greater: <br/> * - Android: 2.21.15.15<br/> *  - SMBA: 2.21.15.15 <br/> * - iOS: 2.21.170.4 <br/> * - SMBI: 2.21.170.4  <br/> *  - KaiOS: 2.2130.10 <br/> * - Web: 2.2132.6</li></ul>
 | 14271 - invalidParameter | One or more parameters are invalid. (WA tier - cloud-api/onprem).   |
-| 14272 - Invalid user | The recipient WhatsApp number is invalid or the user doesn't have a WhatsApp account.
+| 14272 - Invalid user | The recipient WhatsApp number is invalid or the user doesn't have a WhatsApp account. |
+| 130472 - Undeliverable | Failed to send message because this user's phone number is part of an experiment. |
 
 
 :::note

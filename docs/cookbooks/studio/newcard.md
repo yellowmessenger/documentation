@@ -259,48 +259,68 @@ This step is optional if you do not want to use dynamic data.
 
 **Display in chat**  
 
-<img src="https://i.imgur.com/LJeO5AF.png" alt="drawing" width="40%"/> 
+<img src="https://i.imgur.com/nXR1Jsk.png" alt="drawing" width="80%"/> 
 
 **Code in Function**
 ```js
 [
-    {
-        "title": "Payment receipt",
-        "titleHeader": {
-            "Transaction Number": "#444-2445-2442-222",
-            "Transaction ID": "#444-2445-2442-222"
-        },
-        "download": "https://yellow.ai",
-        "item": {
-            "items": "7 Rendang"
-        },
-        "options": [
-            {
-                "key": "With a value of",
-                "value": "IDR 70000"
-            },
-            {
-                "key": "date",
-                "value": "Feb 2022"
-            },
-            {
-                "key": "Cost in rupees",
-                "value": "70000"
-            },
-            {
-                "key": "yyyy-mm-dd",
-                "value": "2022-02-02 "
-            },
-            {
-                "key": "On date",
-                "value": "14 Feb 2022"
-            }
-        ],
-        "action": {
-            "title": "View all items",
-            "url": "https://www.yellow.ai"
-        }
-    }
+  {
+    "title": "Fixed Deposit",
+    "titleHeader": {
+      "1234 5678 1234 5678": "Status: Active"
+    },
+    "options": [
+      {
+        "key": "FD Amount",
+        "value": "$1,20,000"
+      },
+      {
+        "key": "Rate of Interest",
+        "value": "8.2% (p.a)"
+      }
+    ],
+  "action": {
+                 "title" : "Submit"
+          }
+  },
+  {
+    "title": "Fixed Deposit",
+    "titleHeader": {
+      "253236": "Status: Maturing Soon"
+    },
+    "options": [
+      {
+        "key": "FD Amount",
+        "value": "$1,20,000"
+      },
+      {
+        "key": "Rate of Interest",
+        "value": "8.2% (p.a))"
+      }
+    ],
+   "action": {
+             "title": "Submit"
+         }
+  },
+{
+    "title": "Fixed Deposit",
+    "titleHeader": {
+      "253236": "Status: Matured"
+    },
+    "options": [
+      {
+        "key": "FD Amount",
+        "value": "$1,20,000"
+      },
+      {
+        "key": "Rate of Interest",
+        "value": "8.2% (p.a)"
+      }
+    ],
+   "action": {
+              "title": "Submit"
+         }
+  }
 ]
 ```
 

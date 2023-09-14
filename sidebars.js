@@ -19,7 +19,7 @@ module.exports = {
     "tutorials/data",
     "tutorials/engage",
     "tutorials/channels",
-    "tutorials/growth",
+  //    "tutorials/growth",
     "tutorials/inbox",
     "tutorials/integrations",
   ],
@@ -653,7 +653,9 @@ module.exports = {
           ],
         },
 
-        "platform_concepts/inbox/inboxfaqs"
+        "platform_concepts/inbox/inboxfaqs",
+        "platform_concepts/inbox/upcoming-developments",
+
     //other files
       ],
     },
@@ -718,7 +720,6 @@ module.exports = {
       items: [
         "platform_concepts/engagement/cdp/user_data_segments/cdp_data",
         "platform_concepts/engagement/cdp/user_data_segments/manage_user_data",
-        "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
       ],
     }, */
    /* {
@@ -739,8 +740,18 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data_segments/segments_overview'},
       collapsed: true,
       items: [
-        "platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment",
+        {
+          type: "category",
+          label: "Create user segments",
+          collapsed: true,
+          items: [
+           "platform_concepts/engagement/cdp/user_data_segments/segment-properties",
+           "platform_concepts/engagement/cdp/user_data_segments/segments-events",
+           "platform_concepts/engagement/cdp/user_data_segments/segment-csv",
+          ]
+        },
         "platform_concepts/engagement/cdp/user_data_segments/manage_segments",
+        "platform_concepts/engagement/cdp/user_data_segments/archive-user-segment",
         "platform_concepts/engagement/cdp/user_data_segments/segment_usecases",
         // "platform_concepts/engagement/cdp/user_data/targeted_segments",
         // "platform_concepts/engagement/cdp/user_data/conv_in_builder",
