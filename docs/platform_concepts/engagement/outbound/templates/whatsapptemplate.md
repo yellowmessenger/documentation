@@ -12,6 +12,10 @@ The following are the different steps involved in a WhatsApp template:
 1. Create a WhatsApp and send for approval.
 2. Facebook verifies the WhatsApp template and updates the status within 48 hours.
 3. Use the approved template in your campaign.
+
+:::note
+Important update: FBM made changes to WhatsApp authentication templates for businesses in India. [Click here](#6-important-update-changes-to-whatsapp-authentication-templates-for-businesses-in-india) for more details.
+:::
   
 
 #### Prerequisites to create WhatsApp template
@@ -251,9 +255,32 @@ When using [Notification APIs](https://docs.yellow.ai/docs/platform_concepts/eng
 ```
 
 :::
-  
 
-## 6. WhatsApp template guidelines
+
+## 6. Important update: Changes to WhatsApp authentication templates for businesses in India
+
+Starting from October 2, 2023, older authentication templates will no longer be supported for businesses operating in India.
+
+Here's what you need to do:
+
+1. **Review Your Templates**: If you currently use authentication templates, please take a moment to review them.
+2. **Access Message Templates**: To make the necessary updates, navigate to **Message Templates** in FBM.
+   
+   ![](https://i.imgur.com/MuRUwtR.jpg)
+
+3. **Download CSV**: In **Message Templates**, you will find an option to download a CSV file. Use this CSV file to identify templates that do not comply with the new format.
+
+   ![](https://i.imgur.com/opG5AGz.jpg)
+
+4. **Create new templates**: To ensure continued functionality, create new templates under the **Authentication** category. These templates should include the OTP button type for a seamless authentication experience.
+
+   ![](https://i.imgur.com/oHsGUIK.jpg)
+
+5. **Sync templates on yellow.ai platform**: On the yellow.ai platform's Engage module, navigate to **Templates** and click **Sync templates**. 
+
+   ![](https://i.imgur.com/IiEndmE.jpg)
+
+## 7. WhatsApp template guidelines
 
 A WhatsApp template needs to be approved by Facebook before you start using it. Here are some standard guidelines that you need to follow while creating a template to avoid rejections.
 
@@ -284,7 +311,7 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 
   
 
-### 6.1 Examples of approved & rejected templates
+### 7.1 Examples of approved & rejected templates
 
   
 
