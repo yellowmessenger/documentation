@@ -19,7 +19,7 @@ To publish a bot to live mode follow these steps:
 2. In the following screen, fill in the following fields.
 
 * Click **Configure more channels** to configure further more channels to the bot in the upcoming stage.
-*  In **Approvers**, you can see the name of the users who have the access to approve the bot.
+*  In **Approvers**, you will see the list of bot approvers added by the **Super admin**. This cannot be modified. All the approvers will be notified when you raise a publish request.
 * In **Comment**, add a message to the approver citing the changes made in the bot.
 
    <img src="https://i.imgur.com/vKGHdg5.png" alt="drawing" width="50%"/>
@@ -33,7 +33,7 @@ To learn about different bot enviornments (modes), click [here](https://docs.yel
 
 ## Approve a bot publish request
 
-1. The Approver will receive an email with the content like the image below. Click **Review Request**.
+1. Users with **Approver** access(as provided by **Super Admin**) will receive an email with the content like the image below. Any one of them can approve, to approve click **Review Request**.
 
    ![](https://i.imgur.com/H2fG9Q5.png)
 

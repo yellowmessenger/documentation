@@ -183,5 +183,6 @@ To update an existing field value of a table use the [Database node](https://doc
 6. In **Filter distinct**, choose the column that should serve as distinct parameter in the search.
 7. Under **Pagination**, enter the **Page number** and **Size limit** to display the records to the user. The page number and size limit can also be fetched from variables. 
 
+The search reponse will be in the form of object. You can use the snippet ```{{{variables.variablename.record.0.fieldName}}}``` in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text) to display the response.
 
 
