@@ -257,9 +257,9 @@ When using [Notification APIs](https://docs.yellow.ai/docs/platform_concepts/eng
 :::
 
 
-## 6. Important update: Changes to WhatsApp authentication templates for businesses in India
+## 6. Important update: Changes to WhatsApp authentication templates for businesses outside India
 
-Starting from October 2, 2023, older authentication templates will no longer be supported for businesses operating in India.
+Starting from October 2, 2023, older authentication templates will no longer be supported for businesses operating in countries other than India.
 
 Here's what you need to do:
 
@@ -279,6 +279,10 @@ Here's what you need to do:
 5. **Sync templates on yellow.ai platform**: On the yellow.ai platform's Engage module, navigate to **Templates** and click **Sync templates**. 
 
    ![](https://i.imgur.com/IiEndmE.jpg)
+
+:::note
+Authentication templates are not available or applicable for India.
+:::
 
 ## 7. WhatsApp template guidelines
 
@@ -309,7 +313,7 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 * Mismatch in the defined language and the template content. For example, Spanish was select but the content is English or the content is a mixture of languages containing both Spanish and English.
 * The URL domain in your links does not belong to your business.
 
-  
+
 
 ### 7.1 Examples of approved & rejected templates
 

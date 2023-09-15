@@ -547,13 +547,45 @@ Coming soon!
 
 ### 3.2 Outbound notification 
 
-Send outbound SMS, email, WhatsApp, and voice notification with this node. To know more,  See [Outbound notifications or Workflow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
+You can incorporate the Outbound notification node in your bot flows to enhance communication capabilities. This dynamic node enables you to effortlessly send SMS, email, WhatsApp, and voice notifications. You can choose your preferred sender ID, manage CC and BCC recipients, and choose from a wide range of templates to streamline your communication efforts right within the bot's flow.
+
+To know more,  See [Outbound notifications or Workflow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
+
+Here is how you can configure the Outbound notification node:
+
+  ![](https://i.imgur.com/7GEgUGE.png)
+
+Option | Description
+------ | ----------
+Type | Choose the type of communication you want to send: SMS, Email, WhatsApp, or Voice.
+Sender | Choose the sender ID from which you want to send the communication.
+Profile | Select the sender for the SMS notification. Applicable only for SMS in India.
+To | Choose the appropriate variable containing the recipient details, example, SMS phone number, Email address, etc.
+CC | Choose recipients for CC (Carbon Copy) if needed.
+BCC | Choose recipients for BCC (Blind Carbon Copy) if needed.
+Select template | Pick a template to use for your communication.
+Store message ID in | Choose the variable where you want to store the Message ID. 
+
+
+
 
 ---
 
-### 3.3 Notification status 
+### 3.3 Notification status
 
-Check outbound notification status with this node. 
+The Notification status node helps you track the delivery and status of your [outbound notifications](#32-outbound-notification). It uses the **Message ID** to retrive the notification status. The node offers valuable insights, such as delivery confirmation, read receipts, or error notifications, depending on the capabilities of the communication channel. 
+
+You can use of the data to make informed decisions and take appropriate actions based on the status of your outbound notification, ensuring effective and responsive communication with your audience.
+
+
+Option | Description
+------ | ----------
+**Type:** | Choose the specific type of communication you wish to track: SMS, Email, WhatsApp, or Voice.
+**Message ID:** | Choose the Message ID variable associated with the sent communication. Selecting the message ID retrieves real-time information about the status of that specific communication.
+
+:::note
+To know more about Outbound notifications, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
+:::
 
 ---
 
