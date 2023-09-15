@@ -44,9 +44,9 @@ Follow the steps below to secure PII data within default tables:
 
     ![](https://i.imgur.com/y0JULrU.png)
     
-2. Enter your **Public key** and enable the option to encrypt PII data.
+2. Enable the option to encrypt PII data and enter your **Public key**.
 
-    ![](https://hackmd.io/_uploads/SJFzDB1C2.png)
+    ![](https://hackmd.io/_uploads/r1j5NLhA3.png)
 
 3. A summary will be displayed, showing which tables and columns will be encrypted. This data will be encrypted in the table UI in Data Explorer, the table UI in Reporting, during export from Data Explorer, and during export from Data Ops.
 
@@ -63,7 +63,7 @@ Encrypted data:
 | Chat tickets | User_ID, Contact_phone, Contact_email, Contact_name |
 | Email tickets | Contact_first_name, Contact_email|
 | Video chats | Client_name, Client_email |
-| Notifications report | UserID, SenderID| 
+| Notifications report | UserID, SenderID, cdpUserID| 
 | Call details report | SourceNumber, DestinationNumber |
 | Leads | UID, BID |
 | Conversations | UID, userName, replyTo, answeredBy |
