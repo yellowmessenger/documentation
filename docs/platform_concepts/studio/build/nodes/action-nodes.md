@@ -553,7 +553,7 @@ To know more,  See [Outbound notifications or Workflow campaigns](https://docs.y
 
 Here is how you can configure the Outbound notification node:
 
-  ![](https://i.imgur.com/7GEgUGE.png)
+  <center><img src="https://i.imgur.com/7GEgUGE.png" width="70%"/></center>
 
 Option | Description
 ------ | ----------
@@ -575,13 +575,15 @@ Store message ID in | Choose the variable where you want to store the Message ID
 
 The Notification status node helps you track the delivery and status of your [outbound notifications](#32-outbound-notification). It uses the **Message ID** to retrive the notification status. The node offers valuable insights, such as delivery confirmation, read receipts, or error notifications, depending on the capabilities of the communication channel. 
 
-You can use of the data to make informed decisions and take appropriate actions based on the status of your outbound notification, ensuring effective and responsive communication with your audience.
+You can make use of message status (Sent/Delivered) to take appropriate actions based on the status of your outbound notification, ensuring effective and responsive communication with your audience.
 
+ <center> <img src="https://i.imgur.com/rHvs8mM.png" width="70%"/></center>
 
 Option | Description
 ------ | ----------
 **Type:** | Choose the specific type of communication you wish to track: SMS, Email, WhatsApp, or Voice.
 **Message ID:** | Choose the Message ID variable associated with the sent communication. Selecting the message ID retrieves real-time information about the status of that specific communication.
+**Sent**/**Delivered** | You can see this node level options to configure desired action for each status.
 
 :::note
 To know more about Outbound notifications, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
