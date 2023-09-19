@@ -5,6 +5,10 @@ sidebar_label :  Chat screen & user details
 
 ![](https://hackmd.io/_uploads/r1V6zyJkp.png)
 
+:::info
+AI features on the chat screen are listed in the [Generative AI article](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai). 
+:::
+
 
 ## <a name="cs"></a>  1. Chat conversation screen
 
@@ -98,19 +102,28 @@ Once the customers language is detected, the messages sent by the agent in agent
 
 ----
 
-### Chat transcript
+
+
+### Chat URL & Chat transcript
+
+You can click **Copy chat URL** to fetch the URL of the chat and share it with the team members who have access to Inbox. You can enable [IP whitelisting](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/chattranscriptsecurity) for these URLs. 
+
+![](https://hackmd.io/_uploads/SkVEPIx1p.png)
 
 Chats can be saved/downloaded in CSV and PDF format to the local system.           
-Chats can be shared with anyone by clicking the **chat copy URL** icon and sharing the link with the respective person.   
+
+![](https://hackmd.io/_uploads/H1T8DLgya.png)
 
 > Chats in this link will not be visible after 6 months. 
 
-![](https://i.imgur.com/bpmVToO.png)
+----
+
+### Report agent messages 
+
+To report messages that may not have been received by customers, simply click on the "Report" option within your messaging platform, and then select the messages in question. This action is designed to alert agents and prompt them to investigate any potential message delivery problems to ensure a smooth communication experience.
 
 
-:::info
-Other AI features on the chat screen are listed in the [Generative AI article](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai). 
-:::
+![](https://hackmd.io/_uploads/Bk9fhIg16.jpg)
 
 ---
 
@@ -159,7 +172,7 @@ To use this feature, simply type `@bot` on the reply screen, followed by the int
 
 | @bot| Agent action  |
 | -------- | -------- |
-| When using **@bot**, agents can observe the ongoing conversation between the bot and the customer, displayed in real-time on the agent's chat screen. The functionality operates seamlessly, making it appear as if the agent is directly conversing with the customer, while in reality, it is the bot engaging in the conversation. Agents can view this conversation transparently and can also send responses once the flow is completed.     | When using **Agent actions**, agents can select a flow (agent action) that will be triggered in the backend, fetching a single output that the agent can utilize. | 
+| When using **@bot**, agents can observe the ongoing conversation between the bot and the customer, displayed in real-time on the agent's chat screen. The functionality operates seamlessly, making it appear as if the agent is directly conversing with the customer, while in reality, it is the bot engaging in the conversation. Agents can view this conversation transparently and can also send responses once the flow is completed. | When using **Agent actions**, agents can select a flow (agent action) that will be triggered in the backend, fetching a single output that the agent can utilize. | 
 
 #### Real-time example
 A customer has placed an order and is experiencing an issue with their return request. The customer contacts the support agent for assistance. The agent needs to:
@@ -173,14 +186,17 @@ For step 2, instead of manually gathering the required details from the customer
 
 By leveraging agent actions and the **@bot** functionality, the agent can efficiently handle the customer's order status inquiry and facilitate the return request process, ensuring a smoother and more convenient customer support experience.
 
-
-
-
 -----
 
-## <a name="ud"></a> 2. User details
+## <a name="ud"></a> 2. User & chat details
 
-The following user details are available on this screen to provide agents with more context:
+:::info
+These options can be customized for each agent via. [settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents). 
+:::
+
+The following details are available on this screen to provide agents with more context:
+
+![](https://hackmd.io/_uploads/HyYE6Ilkp.png)
 
 | Type | Fields | Description|
 | -------- | -------- | -------- |
@@ -200,6 +216,3 @@ The following user details are available on this screen to provide agents with m
 |Device details|Details about the user device that the bot tracks.|![](https://i.imgur.com/VDayNjJ.png)|
 
 
-:::info
-A few of these options can be customized for each agent via. [settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents). 
-:::
