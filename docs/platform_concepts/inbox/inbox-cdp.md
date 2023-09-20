@@ -55,7 +55,6 @@ Learn more about UserIDs [here](https://docs.yellow.ai/docs/platform_concepts/en
 :::
 
 
-
 After settling on a userId for your bot, the subsequent action is to commence tracking it within your **Studio** flows. Depending on your bot version, you might encounter one of three scenarios:
 
 1. **User identification flow** is visible
@@ -69,7 +68,7 @@ After settling on a userId for your bot, the subsequent action is to commence tr
 :::
 
 
-### User identification flow is visible
+### Set userId via. conversation settings 
 
 If you can find the **User identification flow** setting in **Studio** > **Build** > **Conversation Settings** > **User identification**, [follow the steps](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow#understand-how-user-identification-flow-works) mentioned here to set up the user identification flow. 
 
@@ -80,7 +79,7 @@ After setting up the user identification flow, use **User property variables** i
 
 <img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
 
-### Unique ID for the user option is available
+### Set UserId in the prompt nodes
 
 If the User identification setting is not visible in the Conversation settings popup and **Use this as unique ID for user** option is available, follow these steps:
 
@@ -92,12 +91,10 @@ If the User identification setting is not visible in the Conversation settings p
     ![](https://hackmd.io/_uploads/Hyd-s4_Jp.png)
 
 
-
-### Both options are not visible
-
-In the unfortunate scenario where neither option is visible, it signifies that your current account does not meet the requirements for enabling the Inbox - User360 integration.
-
 :::note
+
+In the unfortunate scenario where neither of the above options are visible, it signifies that your current account does not meet the requirements for enabling the Inbox - User360 integration.
+
 We recommend reaching out to your account representative or contacting Yellow's team for guidance on [upgrading your account](https://calendly.com/yellow-ps/free-trial?month=2023-09) to access this integration.
 :::
 
