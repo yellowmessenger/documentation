@@ -103,9 +103,11 @@ Connecting your Instagram Professional account with the [Yellow platform](https:
 
 * **Direct Message:** The bot can handle direct messages from your Instagram account. When a bot user posts a direct message on Instagram page, the bot responds within 24 hours. If the bot is not able to resolve the query of the user, then a live agent can respond back to the user within 7 days.
 
+    ![](https://i.imgur.com/9rYDrjA.png)
+
 * **Comment or Private Replies**: This enables businesses to reply to their users for any comment made on their Instagram posts. When a comment is made on the Instagram post, an event `instagram-comment` is sent to the bot, and a ticket is raised in the Inbox module for agents to respond to the user.
 
-   <img src="https://i.imgur.com/pOaEMHt.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/Nb3piqe.png" alt="drawing" width="80%"/>
 
 :::note
 * Private replies are currently not supported for Instagram ads and IGTV comments.
@@ -113,7 +115,7 @@ Connecting your Instagram Professional account with the [Yellow platform](https:
 
 * **Story Mentions:** An Instagram (IG) business account can be notified when a user mentions the businesses on their story. When this happens, an event is sent to the bot, and a message will be displayed in the Inbox referencing the story so that the live agent can respond back. For more information, click [here](https://developers.facebook.com/docs/messenger-platform/instagram/features/story-mention). 
 
-     <img src="https://i.imgur.com/eqVolIf.jpg" alt="drawing" width="40%"/>
+    ![](https://i.imgur.com/TqXqJ39.png)<img src="https://i.imgur.com/HYPPT21.png" alt="drawing" width="40%"/> 
 
 :::note
 * In the Inbox module, the user response should be displayed appropriately for the agent to understand in which story the account was mentioned. For more information, click [here](https://developers.facebook.com/docs/messenger-platform/instagram/features/story-mention#rendering-story-in-agent-s-inbox-client-view).
@@ -126,12 +128,12 @@ Connecting your Instagram Professional account with the [Yellow platform](https:
 
 * **Story Replies:** An Instagram (IG) business account enables the businesses to add a story, and when their user replies to the story, the bot gets triggered automatically.
 
-    <img src="https://i.imgur.com/49fI4a5.jpg" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/l2xqKns.png" alt="drawing" width="40%"/>
 
 
 * **Media Share:** An Instagram (IG) business account allows business to share or repost the media content such as posts, images, videos, IGTV, stories, and reels for their users.
 
-    ![](https://i.imgur.com/0EEayvs.png)
+    ![](https://i.imgur.com/M87cpNf.png)
 
 The following are the events of the above features:
 
