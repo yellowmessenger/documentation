@@ -65,8 +65,9 @@ To enable service account and generate keys, follow these steps:
 :::
 
    <img src="https://i.imgur.com/rZtypMi.png" alt="drawing" width="50%"/>
+<br/>   
    
-    <br/> * A confirmation message <b>Private key saved to your computer</b> is displayed.
+• A confirmation message <b>Private key saved to your computer</b> is displayed.
 
    <img src="https://i.imgur.com/wDDpoOa.png" alt="drawing" width="80%"/>
 
@@ -106,8 +107,9 @@ To configure your Google chat Bot, follow these steps:
    * Enable the **Interactive features**.
    * Under *Functionality*, select both checkboxes.
    * Under *Connection* settings, select App URL and enter  `https://cloud.yellow.ai/integrations/googleChat/receive/[BOT ID]`
-    :::note
-    * Based on the region of your bot, which is  r1/r2/r3/r4/r5, you need to append that to the domain of the webhook URL. For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to the Indian region, you can use the origin domain itself.
+
+:::note
+Based on the region of your bot, which is  r1/r2/r3/r4/r5, you need to append that to the domain of the webhook URL. For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to the Indian region, you can use the origin domain itself.
 :::
 
    * Under *Visibility*, enter the email addresses to add individuals and groups to your domain.
@@ -133,7 +135,7 @@ To connect the Google chat channel to your bot on the platform, follow these ste
 
    ![](https://i.imgur.com/JOc6xXl.png)
    
-   * Your Facebook workplace channel will be successfully connected.
+   * Your Google chat channel will be successfully connected.
 
 3. Navigate to the **Overview** page, under the **Active channels** section, to verify that the Google chat channel is successfully connected to your bot.
 
