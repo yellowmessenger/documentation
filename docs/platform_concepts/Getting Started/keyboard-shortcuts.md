@@ -28,3 +28,20 @@ Switch to Production environment | m + p| Global
 Switch to Sandbox environment | m + x| Global
 
 
+
+:::note
+You can directly use the keys to access the function from the screen where that particular option is available.
+:::
+
+The following table lists the keyboard shortcuts for Studio module:
+
+Action | Shortcut | Access from
+------ | -------- | -----------
+Open new node selector | n | Studio
+Go to Intents page | i | Studio
+Go to Entities page | e | Studio
+Opens select flow/journey dropdown | s + f | Studio
+Go back (wherever you are) | b | Global
+Opens select bot dropdown | s + b| Global
+Go to Studio module | g + s| Global
+Go to Overview page | g + o| Global
