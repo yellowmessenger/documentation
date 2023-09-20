@@ -53,6 +53,8 @@ The following is a comprehensive description of the parameters in the response r
 - Global entities identify values that are trained by the platform only for Dates and Locations. You cannot add/delete/modify the training. 
 
    ![](https://i.imgur.com/Q9yU9sQ.png)
+
+To access global entities, use this snippet ```{{{prediction.gloablEntities.0.text}}}```.
    
 
 ### Identify the emotion via Verbose

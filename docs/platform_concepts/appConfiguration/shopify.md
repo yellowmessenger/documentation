@@ -52,8 +52,7 @@ Shopify is an e-commerce platform that lets merchants all over the world to buil
    ![](https://i.imgur.com/GoqZ8fk.png)
 
 
-
-### Step 2: Connect Shopify Store App with Yellow.ai
+### Step 2: Connect the Shopify Store App with Yellow.ai
 
 1. Go to cloud.yellow.ai.
 2. Go to the bot and navigate to **Integrations**.
@@ -79,7 +78,8 @@ Shopify is an e-commerce platform that lets merchants all over the world to buil
 Please ensure that you enter your store name exactly as it is in the **Shopify** account.
 :::
    
-## 3. Enable Shopify Store data in your bot
+## 3. Manage Shopify from your bot
+
 1. Go to your bot in **Studio** and navigate to the flow where you want to use the Shopify node.
 2. As the first step, collect the customer information. Use the **Question** node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
 
@@ -103,7 +103,7 @@ order_details.order.name
 ---
 
 
-## 4. Trigger Shopify Webhook events in your bot
+## 4. Recieve Shopify events in your bot
 
 Once you have set up the integration, you can use webhooks to receive notifications on events occuring in your store. You can trigger customised actions to those events.
 
@@ -111,20 +111,21 @@ For example, you can show order details to customers when they purchase from you
 
 The following are the events supported in our out of the box Shopify integration:
 
-Event | Description
------ | -----------
-shopifyNewOrder | A new order created in the Shopify store.
-shopifyNewProduct | A new product has been added to the Shopify store.
-shopifyOrderCancelled | An order is canceled.
-shopifyOrderFulfilled | An order was fulfilled or completed.
-shopifyOrderPaid | Payment made for an order. 
-shopifyRefundCreated | Refund created for an order.
-shopifyNewCustomer | A new customer is registered.
-shopifyCustomerUpdate | A customer’s profile details have been updated.
-shopifyCheckoutCreated | Order checkout is initiated in Shopify.
-shopifyOrdersUpdated | Shopify order is updated.
-shopifyCartCreate | A cart is created in Shopify.
-shopifyCartEmpty | A cart is deleted.
+| Event                | Description                                             | Use Cases                                                                                                     |
+|----------------------|---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+| shopifyNewOrder      | A new order is created in the Shopify store.           | - Trigger actions when a new order is created in your Shopify store. For example, send order confirmation emails or update inventory.                                   |
+| shopifyNewProduct    | A new product has been added to the Shopify store.      | - Trigger actions when a new product is added to your Shopify store. For instance, update your product catalog, create product listings, or notify your team.   |
+| shopifyOrderCancelled | An order is cancelled.                                  | - Use this event to handle order cancellations. You might want to update inventory levels, refund payments, or notify customers when their orders are canceled.     |
+| shopifyOrderFulfilled | An order was fulfilled or completed.                   | - Trigger actions when an order is fulfilled or completed. This event can be used to update shipping information, send shipping notifications to customers, or update your order status.  |
+| shopifyOrderPaid      | Payment made for an order.                              | - Use this event to respond when a payment is made for an order. For example, you can mark orders as paid, send payment receipts, or update financial records.   |
+| shopifyRefundCreated  | A refund was created for an order.                      | - Trigger actions when a refund is issued for an order. You can update financial records, notify customers about the refund, or adjust inventory levels.          |
+| shopifyNewCustomer    | A new customer is registered.                           | - Use this event to respond when a new customer registers in your Shopify store. You can add them to your customer database, send welcome emails, or track customer acquisition. |
+| shopifyCustomerUpdate | A customer’s profile details have been updated.         | - Trigger actions when a customer's profile details are updated. You might want to keep your customer database up to date or send profile change notifications.       |
+| shopifyCheckoutCreated| Order checkout is initiated in Shopify.                 | - Respond when an order checkout is initiated in Shopify. This can be used to track the progress of orders and gather data about checkout behaviors.                |
+| shopifyOrdersUpdated  | Shopify order is updated.                               | - Use this event to handle updates to existing Shopify orders. You can monitor order changes, adjust inventory, or notify customers about updates to their orders.       |
+| shopifyCartCreate     | A cart is created in Shopify.                           | - Trigger actions when a cart is created in Shopify. This event can be used to track shopping cart activity, gather data on abandoned carts, or initiate cart-related marketing efforts. |
+| shopifyCartEmpty      | A cart is deleted.                                      | - Use this event to respond when a cart is emptied in Shopify. You can update cart-related data, trigger follow-up actions, or analyze cart abandonment patterns.          |
+
 
 
 ## 5. Activate webhook events in your bot
