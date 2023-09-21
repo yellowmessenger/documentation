@@ -113,8 +113,9 @@ module.exports = {
   collapsed: true,
   items: [
     // "cookbooks/Upgrade_new_engage_app",
-    "cookbooks/Understanding channels 101/email-outbound-101",
-    "cookbooks/Understanding channels 101/optout-campaigns",
+    "cookbooks/engage/email-outbound-101",
+    "cookbooks/engage/optout-campaigns",
+    "cookbooks/engage/shopify-events",
 
   ],
 }, 
