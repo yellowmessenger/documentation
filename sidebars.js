@@ -113,8 +113,9 @@ module.exports = {
   collapsed: true,
   items: [
     // "cookbooks/Upgrade_new_engage_app",
-    "cookbooks/Understanding channels 101/email-outbound-101",
-    "cookbooks/Understanding channels 101/optout-campaigns",
+    "cookbooks/engage/email-outbound-101",
+    "cookbooks/engage/optout-campaigns",
+    "cookbooks/engage/shopify-events",
 
   ],
 }, 
@@ -482,6 +483,8 @@ module.exports = {
 
                   ],
         },
+
+        "platform_concepts/inbox/inbox-cdp",
 
         //5. contacts doc
         "platform_concepts/inbox/contacts",
@@ -1084,6 +1087,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/domain-whitelisting",
             "platform_concepts/channelConfiguration/chat-widget-localization",
             "platform_concepts/channelConfiguration/summary-card",
+            "platform_concepts/channelConfiguration/chat-widget-text-formatter",
             "platform_concepts/channelConfiguration/pwa",
             "platform_concepts/channelConfiguration/depoly-WA-bot",
             "platform_concepts/channelConfiguration/support-banner-migration",

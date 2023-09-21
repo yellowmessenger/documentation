@@ -17,7 +17,7 @@ bot building with comprehensive training and courses from our experts.
 If you prefer personalized training, write to academy@yellow.ai, and our experts will be happy to assist you.
 :::
 
-- [**Sign-up for free instructor led product training :arrow_right:**](https://ascend.yellow.ai)
+- [**Sign-up for free instructor led product training :arrow_right:**](https://ascend.yellow.ai/training-registration)
 - [**Watch product demo videos :arrow_right:**](https://docs.yellow.ai/docs/tutorials/basics)        
 - [**Subscribe to academy youtube channel :arrow_right:**](https://www.youtube.com/@yellowaiacademy)      
 

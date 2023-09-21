@@ -90,7 +90,11 @@ You can follow any of the given three methods to create flow on **Studio** to su
 
 - If the live chat request is raised successfully and the Inbox agent has received the chat (explained in the next section), agent connected message will be displayed (as configured on the raise ticket node).
 
-    <img src="https://i.imgur.com/6HzAMVf.png" alt="drawing" width="40%"/>    
+    <img src="https://hackmd.io/_uploads/BkHIaTRRh.png" alt="drawing" width="50%"/>    
+
+- You can navigate to the Inbox screen by clicking **Go to Inbox**.
+
+    ![](https://hackmd.io/_uploads/BJNunp0Ch.png)
 
 
 :::note
@@ -113,14 +117,13 @@ Once you have created the live agent flow, follow these steps to test how ticket
 2. As only you will be the only available Inbox agent to your bot, the live chat will be assigned to you. Make sure you are **Available**. To check your status, click on the profile icon on the right corner, and verify the status drop-down. 
 
     <img src="https://i.imgur.com/I7XrOLT.png" alt="drawing" width="70%"/>    
-3. You will see a live chat raised. It will be displayed as a message on **My chat** page(if the live chat request is successful).
+    
+3. You will see a live chat raised. It will be displayed as a message on **My chat** page(if the live chat request is successful). You can reply to that message from your live chat screen. This is a real-time conversation on the bot.
 
-    ![](https://i.imgur.com/khxffRF.jpg)
-4. You can reply to that message from your live chat screen. This is a real-time conversation on the bot.
+    ![](https://hackmd.io/_uploads/HkTSAa002.png)
 
-    ![](https://i.imgur.com/LEdGd40.png)
-5. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-3-resolve-or-transfer-tickets) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
+4. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-3-resolve-or-transfer-tickets) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
 
-    <img src="https://i.imgur.com/Gld3MHU.png" alt="drawing" width="50%"/>    
+    <img src="https://hackmd.io/_uploads/BkhNyCC0h.png" alt="drawing" width="50%"/>    
 
 
