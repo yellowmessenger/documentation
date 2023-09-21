@@ -7,7 +7,7 @@ In today's fast-paced business landscape, delivering exceptional customer suppor
 
 *"The greater the depth of customer data at our disposal, the more effectively support agents can enhance the customer experience."*
 
-:::warning
+:::note
 
 - The Inbox-User360 integration is currently limited to bots created on cloud platforms and is not accessible for bots built on app.ym.
 - The bot messages section within Inbox has not undergone a full transformation to align with the Inbox-User360 integration yet. 
@@ -40,7 +40,7 @@ Here's how User360 integration empowers your support team and administrators:
 --------
 
 
-## <a name="uiprocess"></a> Integrate User360 and inbox by implementing user identification process
+## <a name="uiprocess"></a> Integrate User360 by implementing user identification process
 
 
 :::info
@@ -79,7 +79,7 @@ After setting up the user identification flow, use **User property variables** i
 
 <img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
 
-### Set UserId in the prompt nodes
+### Set userId in the prompt nodes
 
 If the User identification setting is not visible in the Conversation settings popup and **Use this as unique ID for user** option is available, follow these steps:
 
@@ -89,20 +89,22 @@ If the User identification setting is not visible in the Conversation settings p
     ![](https://hackmd.io/_uploads/HJlWi4_kT.png)
 4. Choose **Use this as Unique ID for User**.
     ![](https://hackmd.io/_uploads/Hyd-s4_Jp.png)
-
+5. Use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) instead of using regular journey or global variables.
+![](https://hackmd.io/_uploads/SkeqhuEd1T.png)
+    <img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
 
 :::note
 
 In the unfortunate scenario where neither of the above options are visible, it signifies that your current account does not meet the requirements for enabling the Inbox - User360 integration.
 
-We recommend reaching out to your account representative or contacting Yellow's team for guidance on [upgrading your account](https://calendly.com/yellow-ps/free-trial?month=2023-09) to access this integration.
+We recommend reaching out to your account representative or contacting Yellow's team for [guidance](https://calendly.com/yellow-ps/free-trial?month=2023-09) on access to this integration.
 :::
 
 
 
 ----
 
-## User identification methods across different channels
+## User identification methods across Inbox channels
 
 
 
