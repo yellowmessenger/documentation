@@ -32,7 +32,8 @@ Shopify is an e-commerce platform that lets merchants all over the world to buil
 6. Provide a name for your app and click **Create app**.
 7. In the **Admin API integration** section, select the actions you want the Yellow.ai platform to perform. For a detailed help doc, see [Custom apps](https://help.shopify.com/en/manual/apps/custom-apps) section of the Shopify documentation.
 
-   ![](https://i.imgur.com/vDx7dQ1.png)
+   <img src="https://i.imgur.com/vDx7dQ1.png" alt="drawing" width="80%"/>
+  
 
   You need to enable the following scopes in the **Shopify Admin** section. 
    
@@ -57,7 +58,8 @@ Shopify is an e-commerce platform that lets merchants all over the world to buil
 1. Go to cloud.yellow.ai.
 2. Go to the bot and navigate to **Integrations**.
 
-   ![](https://i.imgur.com/ctLEU4H.png)
+   
+   <img src="https://i.imgur.com/ctLEU4H.png" alt="drawing" width="75%"/>
 
 3. Type shopify in the **Search** box, and select **Shopify Shop** from the list.
 4. Scroll down to **Add account** and fill in the following fields.
@@ -85,15 +87,20 @@ Please ensure that you enter your store name exactly as it is in the **Shopify**
 
    ![](https://i.imgur.com/3Nr7T6u.png)
 3. Add a new integration node - **Node** > **Integration** > **Shopify Shop**.
-   ![](https://i.imgur.com/PygmosI.png)
+   
+   <img src="https://i.imgur.com/PygmosI.png" alt="drawing" width="75%"/>
+
 
 4. Pass the collected value a varIn Parameters of action selected with the syntax 
    * Dynamic value: variables.{variable_name}
    * Static value: {variable_name}
-   ![](https://i.imgur.com/X9e1rwL.png)
+
+   <img src="https://i.imgur.com/X9e1rwL.png" alt="drawing" width="75%"/>
+
 5. Use Show sample response to see all the details that the function can retrieve in the JSON format.
 6. Store the response in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables). 
-   ![](https://i.imgur.com/fMgSeaw.png)
+   
+   <img src="https://i.imgur.com/fMgSeaw.png" alt="drawing" width="65%"/>
 
 7. You can decide the info you want to display to the user. Use the **Function** node to customise that information in the **Code** tab.
    For example, in the previous screenshot, order details are stored in the variable order_details.
@@ -113,19 +120,20 @@ The following are the events supported in our out of the box Shopify integration
 
 | Event                | Description                                             | Use Cases                                                                                                     |
 |----------------------|---------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-| shopifyNewOrder      | A new order is created in the Shopify store.           | - Trigger actions when a new order is created in your Shopify store. For example, send order confirmation emails or update inventory.                                   |
-| shopifyNewProduct    | A new product has been added to the Shopify store.      | - Trigger actions when a new product is added to your Shopify store. For instance, update your product catalog, create product listings, or notify your team.   |
-| shopifyOrderCancelled | An order is cancelled.                                  | - Use this event to handle order cancellations. You might want to update inventory levels, refund payments, or notify customers when their orders are canceled.     |
-| shopifyOrderFulfilled | An order was fulfilled or completed.                   | - Trigger actions when an order is fulfilled or completed. This event can be used to update shipping information, send shipping notifications to customers, or update your order status.  |
-| shopifyOrderPaid      | Payment made for an order.                              | - Use this event to respond when a payment is made for an order. For example, you can mark orders as paid, send payment receipts, or update financial records.   |
-| shopifyRefundCreated  | A refund was created for an order.                      | - Trigger actions when a refund is issued for an order. You can update financial records, notify customers about the refund, or adjust inventory levels.          |
-| shopifyNewCustomer    | A new customer is registered.                           | - Use this event to respond when a new customer registers in your Shopify store. You can add them to your customer database, send welcome emails, or track customer acquisition. |
-| shopifyCustomerUpdate | A customer’s profile details have been updated.         | - Trigger actions when a customer's profile details are updated. You might want to keep your customer database up to date or send profile change notifications.       |
-| shopifyCheckoutCreated| Order checkout is initiated in Shopify.                 | - Respond when an order checkout is initiated in Shopify. This can be used to track the progress of orders and gather data about checkout behaviors.                |
-| shopifyOrdersUpdated  | Shopify order is updated.                               | - Use this event to handle updates to existing Shopify orders. You can monitor order changes, adjust inventory, or notify customers about updates to their orders.       |
-| shopifyCartCreate     | A cart is created in Shopify.                           | - Trigger actions when a cart is created in Shopify. This event can be used to track shopping cart activity, gather data on abandoned carts, or initiate cart-related marketing efforts. |
-| shopifyCartEmpty      | A cart is deleted.                                      | - Use this event to respond when a cart is emptied in Shopify. You can update cart-related data, trigger follow-up actions, or analyze cart abandonment patterns.          |
+| shopifyNewOrder      | A new order is created in the Shopify store.           | Trigger actions when a new order is created in your Shopify store. For example, send order confirmation emails or update inventory.                                   |
+| shopifyNewProduct    | A new product has been added to the Shopify store.      | Trigger actions when a new product is added to your Shopify store. For instance, update your product catalog, create product listings, or notify your team.   |
+| shopifyOrderCancelled | An order is cancelled.                                  | Use this event to handle order cancellations. You might want to update inventory levels, refund payments, or notify customers when their orders are canceled.     |
+| shopifyOrderFulfilled | An order was fulfilled or completed.                   | Trigger actions when an order is fulfilled or completed. This event can be used to update shipping information, send shipping notifications to customers, or update your order status.  |
+| shopifyOrderPaid      | Payment made for an order.                              | Use this event to respond when a payment is made for an order. For example, you can mark orders as paid, send payment receipts, or update financial records.   |
+| shopifyRefundCreated  | A refund was created for an order.                      | Trigger actions when a refund is issued for an order. You can update financial records, notify customers about the refund, or adjust inventory levels.          |
+| shopifyNewCustomer    | A new customer is registered.                           | Use this event to respond when a new customer registers in your Shopify store. You can add them to your customer database, send welcome emails, or track customer acquisition. |
+| shopifyCustomerUpdate | A customer’s profile details have been updated.         | Trigger actions when a customer's profile details are updated. You might want to keep your customer database up to date or send profile change notifications.       |
+| shopifyCheckoutCreated| Order checkout is initiated in Shopify.                 | Respond when an order checkout is initiated in Shopify. This can be used to track the progress of orders and gather data about checkout behaviors.                |
+| shopifyOrdersUpdated  | Shopify order is updated.                               | Use this event to handle updates to existing Shopify orders. You can monitor order changes, adjust inventory, or notify customers about updates to their orders.       |
+| shopifyCartCreate     | A cart is created in Shopify.                           | Trigger actions when a cart is created in Shopify. This event can be used to track shopping cart activity, gather data on abandoned carts, or initiate cart-related marketing efforts. |
+| shopifyCartEmpty      | A cart is deleted.                                      | Use this event to respond when a cart is emptied in Shopify. You can update cart-related data, trigger follow-up actions, or analyze cart abandonment patterns.          |
 
+For use case guides on Shopify event-driven campaigns, click [here](https://docs.yellow.ai/docs/cookbooks/engage/shopify-events).
 
 
 ## 5. Activate webhook events in your bot
@@ -136,7 +144,9 @@ The following are the events supported in our out of the box Shopify integration
 2. Navigate to the event that you want to use in the bot, click the more options icon, and select **Activate**. 
 
 3. When configuring the bot flow, in the **Start** node, choose Event and select the event that you want to use from the drop-down list.
-   ![](https://i.imgur.com/kWOPYCh.png)
+   
+   <img src="https://i.imgur.com/kWOPYCh.png" alt="drawing" width="65%"/>
+
 4. Configure the actions that you want to trigger. For details on creating a bot, see [Studio documentation](https://docs.yellow.ai/docs/platform_concepts/studio/overview).
 
 ---
@@ -358,267 +368,6 @@ Sample json response object for findCustomerbyEmail -
   ]
 }
 ```
-
-### Track cart creation in Shopify (shopifyCartCreate )
-
-This function helps you when a cart has been created in Shopify
-
-
-
-**Sample json response object for shopifyCartCreate** 
-
-```
-{
-    "userId": "6840133746837",
-    "eventName": "shopifyCartCreate",
-    "source": "shopify",
-    "payload": {
-        "token": "b9b2df63631a91eab0daa3e1833f1f70",
-        "note": null,
-        "attributes": {},
-        "original_total_price": 3000,
-        "total_price": 3000,
-        "total_discount": 0,
-        "total_weight": 0,
-        "item_count": 1,
-        "items": [
-            {
-                "id": 43453026762901,
-                "properties": null,
-                "quantity": 1,
-                "variant_id": 43453026762901,
-                "key": "43453026762901:159c30471db14672fe636da24f9346f2",
-                "title": "Adania Pant - Black",
-                "price": 3000,
-                "url": "/products/adania-pant?variant=43453026762901",
-                "image": "https://cdn.shopify.com/s/files/1/0458/0252/0725/files/2015-03-30_Jake_Look_16_20656_16533.jpg?v=1684943817",
-                "handle": "adania-pant",
-                "requires_shipping": true,
-                "product_type": "",
-                "product_title": "Adania Pant",
-                "variant_title": "Black",
-                "variant_options": [
-                    "Black"
-                ],
-                "options_with_values": [
-                    {
-                        "name": "Color",
-                        "value": "Black"
-                    }
-                ],
-        "customer": {
-            "id": 6840133746837,
-            "email": "chirag.baid@yellow.ai",
-            "accepts_marketing": false,
-            "created_at": "2023-06-07T02:36:22-04:00",
-            "updated_at": "2023-06-07T02:36:22-04:00",
-            "first_name": "Chirag",
-            "last_name": "Baid",
-            "orders_count": 0,
-            "currency": "INR",
-            "phone": null,
-            "addresses": [
-                {
-                    "id": 8154764738709,
-                    "customer_id": 6840133746837,
-                    "first_name": "Chirag",
-                    "last_name": "Baid",
-                    "company": null,
-                    "address1": null,
-                    "address2": null,
-                    "city": null,
-                    "province": null,
-                    "country": "India",
-                    "zip": null,
-                    "phone": null,
-                    "name": "Chirag Baid",
-                    "province_code": null,
-                }
-            ],
-        }
-    },
-    "userProperties": {
-        "email": "ram.jeeven@gmail.com",
-        "phone": null,
-        "firstName": "Chirag",
-        "lastName": "Baid"
-    }
-}
-
-```
-
-### Track Shopify order update (ShopifyOrdersUpdated)
-
-This function helps you when a Shopify order hhas been updated.
-
-
-**Sample json response object for shopifyCartCreate** 
-
-```
-
-{
-    "userId": "6840133746837",
-    "eventName": "shopifyOrdersUpdated",
-    "source": "shopify",
-    "payload": {
-        "id": 820982911946154500,
-        "admin_graphql_api_id": "gid://shopify/Order/820982911946154508",
-        "app_id": null,
-        "browser_ip": null,
-        "buyer_accepts_marketing": true,
-        "cancel_reason": "customer",
-        "cancelled_at": "2021-12-31T19:00:00-05:00",
-        "cart_token": null,
-        "discount_codes": [],
-        "email": "jon@example.com",
-        "phone": null,
-        "total_outstanding": "398.00",
-        "total_price": "403.00",
-        "customer": {
-            "id": 115310627314723950,
-            "email": "john@example.com",
-            "accepts_marketing": false,
-            "created_at": null,
-            "updated_at": null,
-            "first_name": "John",
-            "last_name": "Smith",
-            "default_address": {
-                "id": 715243470612851200,
-                "customer_id": 115310627314723950,
-                "first_name": null,
-                "last_name": null,
-                "company": null,
-                "address1": "123 Elm St."
-            }
-        },
-        "discount_applications": [],
-        "fulfillments": [],
-        "line_items": [
-            {
-                "id": 866550311766439000,
-                "admin_graphql_api_id": "gid://shopify/LineItem/866550311766439020",
-                "fulfillable_quantity": 1,
-                "fulfillment_service": "manual",
-                "fulfillment_status": null,
-                "gift_card": false,
-                "grams": 567,
-                "name": "IPod Nano - 8GB",
-                "price": "199.00",
-                "price_set": {
-                    "shop_money": {
-                        "amount": "199.00",
-                        "currency_code": "USD"
-                    },
-                    "presentment_money": {
-                        "amount": "199.00",
-                        "currency_code": "USD"
-                    }
-                },
-                "product_exists": true,
-                "product_id": 632910392,
-                "properties": [],
-                "quantity": 1
-            }
-        ],
-        "shipping_address": {
-            "first_name": "Steve",
-            "address1": "123 Shipping Street",
-            "phone": "555-555-SHIP",
-            "city": "Shippington"
-        }
-    },
-    "userProperties": {
-        "email": "ram.jeeven@gmail.com",
-        "phone": "918820305570",
-        "firstName": "Steve",
-        "lastName": "Rogers"
-    }
-}
-
-```
-
-### Track checkout initiation in Shopify (ShopifyCheckoutCreated)
-
-This function helps you when a checkout has been initiated in Shopify.
-
-
-**Sample json response object for shopifyCartCreate** 
-
-```
-{
-    "userId": "6840133746837",
-    "eventName": "shopifyOrdersUpdated",
-    "source": "shopify",
-    "payload": {
-        "id": 981820079255243500,
-        "token": "123123123",
-        "cart_token": "eeafa272cebfd4b22385bc4b645e762c",
-        "email": "example@email.com",
-        "gateway": null,
-        "abandoned_checkout_url": "https://checkout.local/548380009/checkouts/123123123/recover?key=example-secret-token",
-            "billing_address": {
-            "first_name": "Bob",
-            "address1": "123 Billing Street",
-            "phone": "555-555-BILL",
-            "city": "Billtown",
-            "last_name": "Biller",
-            "address2": null,
-            "name": "Bob Biller"
-        },
-        "shipping_address": {
-            "first_name": "Steve",
-            "address1": "123 Shipping Street",
-            "phone": "555-555-SHIP",
-            "city": "Shippington",
-            "zip": "K2P0S0",
-            "province": "Kentucky",
-            "country": "United States",
-            "last_name": "Shipper",
-            "name": "Steve Shipper"
-        },
-        "customer": {
-            "id": 603851970716743400,
-            "email": "john@example.com",
-            "accepts_marketing": false,
-            "created_at": null,
-            "updated_at": null,
-            "first_name": "John",
-            "last_name": "Smith",
-            "orders_count": 0,
-            "marketing_opt_in_level": null,
-            "tax_exemptions": [],
-            "email_marketing_consent": {
-                "state": "not_subscribed",
-                "opt_in_level": null,
-                "consent_updated_at": null
-            },
-           "default_address": {
-                "id": null,
-                "customer_id": 603851970716743400,
-                "first_name": null,
-                "last_name": null,
-                "company": null,
-                "address1": "123 Elm St.",
-                "address2": null,
-                "city": "Ottawa",
-                "province": "Ontario",
-                "country": "Canada",
-                "zip": "K2H7A8",
-                "phone": "123-123-1234",
-                "name": "",
-                "default": true
-            }
-        }
-    },
-    "userProperties": {
-        "email": "chirag.baid@yellow.ai",
-        "phone": "918820305570",
-        "firstName": "Chirag",
-        "lastName": "Baid"
-    }
-}
-```
-
 ---
 
 ## 7. Run campaigns based on Shopify events
