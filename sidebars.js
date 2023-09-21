@@ -1086,6 +1086,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/domain-whitelisting",
             "platform_concepts/channelConfiguration/chat-widget-localization",
             "platform_concepts/channelConfiguration/summary-card",
+            "platform_concepts/channelConfiguration/chat-widget-text-formatter",
             "platform_concepts/channelConfiguration/pwa",
             "platform_concepts/channelConfiguration/depoly-WA-bot",
             "platform_concepts/channelConfiguration/support-banner-migration",
