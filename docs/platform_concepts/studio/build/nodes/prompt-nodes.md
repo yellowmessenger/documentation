@@ -440,6 +440,24 @@ Once you click the dynamic node, these are the options you see first.
    * **Wrong** ❌: The following is a conversation between an Agent and a Customer. DO NOT ASK USERNAME OR PASSWORD. DO NOT REPEAT.
    * **Correct** ✅:The following is a conversation between an Agent and a Customer. The agent will attempt to diagnose the problem and suggest a solution, whilst refraining from asking any questions related to PII. Instead of asking for PII, such as username or password, refer the user to the help article www.samplewebsite.com/help/faq
 
+#### Save and restore versions of prompt
+
+If you're working on a prompt and think your input is stable, you can save the current version as a backup. This way, you can easily go back to a previous version if needed. The published prompt will also have a separate tag, making it easy to restore to the last stable version.
+
+This action is possible only in Sandbox/Developement modes.
+
+1. Click the **floppy disk icon** to save the prompt.
+
+<img src="https://i.imgur.com/sZnTiqu.png" alt="drawing" width="70%"/>
+
+2. Whenever you want to restore the prompt, click the **restore** icon.
+
+<img src="https://i.imgur.com/AEnmwwk.png" alt="drawing" width="70%"/>
+
+3. Choose the version of the prompt to be restored, and click **Restore**.
+
+<img src="https://i.imgur.com/rQ89iFe.png" alt="drawing" width="70%"/>
+
 #### **Input list**
 
 The **Input list** allows you to store the specific details of the input that need to be collected from the user.
@@ -453,21 +471,23 @@ The **Input list** allows you to store the specific details of the input that ne
 2. In **Input name**, enter the name of the input to be collected.
 3. In **Store response in**, choose or create a variable in which the collected information should be stored.
 4. Select **Mark as optional** to indicate if the collected information is optional, allowing for the possibility of it being collected or not.
-5. Select **Mask input** to conceal the input collected from the user.
+5. Select **Mask input** to conceal the input collected from the user and this input will be concealed in the conversation logs as well.
 6. Enable **Add input details**(optional) to enter a sample format for the input to be collected.
 7. In **Regex for validation** specify the desired format for validation.
 8. In **Examples of expected input**, provide a sample of the expected input to align with the defined format.
 9. Click **Add**.
 
-#### **Timeout setting**
+#### **Failure setting**
 
-In the **Timeout setting** you can specify the messages to be shown when the bot takes too long to respond, as well as set the desired response time in seconds.
+In the **Failure setting** you can specify the messages to be shown when the bot takes too long to respond, set the desired response time and maximum limit for conversations.
 
- ![](https://i.imgur.com/7Aok8il.png)
+ ![](https://i.imgur.com/CxgtfNa.png)
 
-In **Timeout message 1** and **Timeout message 2**, you can define the consecutive messages to be displayed when the bot exceeds a specific response time.
+Enable **Enable retries** for the bot to show a maximum of two failure messages after which it will switch to fallback flow.
 
 In **Configure timeout time**, you can set the exact duration after which the bot should time out.
+
+In **Max limit of conversations**, set the limit beyond which the bot will move to fallback if the conversation is still not over.
 
 You can easily determine the reasons behind failure/timeout messages through tags. If the tags are related to APIs or the LLM vendor, please reach out to the respective third-party vendor or check their status for assistance. If the tags are bot-level, you can manage the configurations within your node. And if the tags are platform-level, please contact us. 
 
@@ -512,7 +532,38 @@ Example (maximum length of 140 characters): "Lorem ipsum dolor sit amet, consect
   **Promoting diversity:** Increase the threshold (e.g., p = 0.9) to encourage more varied and imaginative responses. For example, generating creative writing prompts or brainstorming ideas for fiction.
 
   **Balancing creativity and coherence:** Use a moderate threshold (e.g., p = 0.5) to strike a balance between controlled output and promoting creative alternatives. Example: Generating marketing taglines or social media posts.
+  
+#### **Model configuration**
 
+Within the model configuration, you have the freedom to manually input your own custom GPT or LLM credentials into the bot. You can then use various models on different dynamic nodes within the same bot independently. This grants you the flexibility to conduct extensive experiments.
+
+<img src="https://i.imgur.com/x3N9gOh.png" alt="drawing" width="70%"/>
+
+To add custom LLM,
+
+1. Click **+ Add account**.
+
+<img src="https://i.imgur.com/ByrrXBQ.png" alt="drawing" width="70%%"/>
+
+2. Fill in the following fields:
+
+* **Give account name:** Provide a name to your LLM account.
+* **LLM Provider:** Choose the provider as **Azure Open AI**.
+
+You can derieve **API Key** and **Resource** from the endpoint of your GPT 3.5 or GPT 4 credentials as mentioned below:
+
+
+|                   | **For GPT 3.5**                          | **For GPT 4**                            |
+|-------------------|-----------------------------------------|-----------------------------------------|
+| **Endpoint URL (API Key) from the Curl** | `https://bfl-chatbot.openai.azure.com/` | `https://3in1-chatbot-yellow-messenger-poc.openai.azure.com/` |
+| **Resource**     | bfl-chatbot                             | 3in1-chatbot-yellow-messenger-poc      |
+
+![](https://i.imgur.com/UXsaPcu.png)
+
+3. Click **Connect**.
+4. Then go to the node > **Model configuration** > choose **Model**.
+
+ <img src="https://i.imgur.com/A5sQmyZ.png" alt="drawing" width="70%%"/>
 -----
 
 
