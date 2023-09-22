@@ -52,13 +52,13 @@ To test WA bot from Studio module, follow these steps:
 
 5. Alternatively, a notification link is displayed on your device. Click it to open the WA app.
 
-   <img src="https://i.imgur.com/H0tMidJ.jpg" alt="drawing" width="40%"/> 
+   <img src="https://i.imgur.com/tfySZdj.jpg" alt="drawing" width="40%"/> 
    
    * The WhatsApp app will display a generic template containing your flow's name and the steps for testing the bot.
 
-5. Enter the pre-configured utterance to trigger the flow. 
+6. Enter the pre-configured utterance to trigger the flow. 
 
-    <img src="https://i.imgur.com/k9Bx5tj.jpg" alt="drawing" width="40%"/>  
+    <img src="https://i.imgur.com/LOrpZMZ.jpg" alt="drawing" width="40%"/>  
     
 ### Test WhatsApp bot using Channels module
 
