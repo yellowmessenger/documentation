@@ -216,10 +216,6 @@ To track URL clicks:
 
 
 
-:::note
-* Currently, the metrics for URL clicks is available in the backend, The reporting UI for URL tracking will be relesed soon.
-:::
-
 ## 5. View WhatsApp template approval or rejection status
 Once a WhatsApp template is approved and marked as Active, it can be used to send messages to customers, regardless of its quality rating. However, WhatsApp templates are rated based on their quality, reflecting their performance. 
 

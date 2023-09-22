@@ -87,12 +87,12 @@ module.exports = {
           position: "right",
           activeBasePath: "docs/tutorials",
         },
-        {
+      /*  {
           to: "docs/glossary/advanced-virtual-assistants",
           label: "Glossary",
           position: "right",
           activeBasePath: "docs/glossary",
-        },
+        }, */
         {
           to: "https://community.yellow.ai",
           label: "Community",
