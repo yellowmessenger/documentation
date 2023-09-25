@@ -7,6 +7,27 @@ Facebook Messenger (FBM) is a messaging app (iOS/ Android) that allows you to ch
 
 Businesses can use Facebook Messenger chatbot to interact with their business contacts and their target audience. It is also used to automate customer support by answering frequently asked questions, providing product information, and responding to customer inquiries.
 
+## Character limitation of Facebook Business Messenger (FBM)
+
+In this section, you can view the character limitations of FBM channel.
+
+### Quick reply
+
+Quick reply options |	Character limit
+--------------------|----------------------
+Quick reply | <br/>• The maximum number of characters supported is 22. <br/>• A maximum of 13 quick replies are supported.
+
+### Carousel
+
+Carousel options	| Character limit
+-----------------|-----------------
+Carousel title | The maximum number of characters supported is 22.
+
+:::note
+* You cannot add a description to the carousel prompt node.
+* The carousel message node is not supported.
+:::
+
 ## Connect your Facebook messenger account
 
 To create a Facebook messenger account, follow these steps:
@@ -78,31 +99,7 @@ After adding the FAQs and training the chatbot, you can test your FBM chatbot in
 
 Similarly, you can test your FBM chatbot by adding different options such as product showcase, order status, and so on.
 
-
-## Character limitation of Facebook Business Messenger (FBM)
-
-In this section, you can view the character limitations of FBM channel.
-
-### Quick reply
-
-Quick reply options |	Character limit
---------------------|----------------------
-Quick reply | <br/>• The maximum number of characters supported is 22. <br/>• A maximum of 13 quick replies are supported.
-
-### Carousel
-
-Carousel options	| Character limit
------------------|-----------------
-Carousel title | The maximum number of characters supported is 22.
-
-:::note
-* You cannot add a description to the carousel prompt node.
-* The carousel message node is not supported.
-:::
-
-
 ## Facebook Business best practices
-
 
 
 ### Facebook Business verification process
