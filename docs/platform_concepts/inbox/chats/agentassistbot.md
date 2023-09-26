@@ -3,6 +3,11 @@ title: Agent assist bot in the chat screen
 sidebar_label: Agent assist bot
 ---
 
+:::note
+This feature is currently in beta, and customers interested in using it must contact the Inbox team to have it enabled.
+:::
+
+
 ## Introduction to agent assist bot
 
 Support agents often find themselves repeatedly performing actions such as retrieving or updating customer information in external tools like CRM systems. Additionally, agents often need to execute tasks on behalf of customers, like canceling orders or initiating service requests, which often involve navigating through multiple tools or tabs.
