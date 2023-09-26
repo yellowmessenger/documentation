@@ -29,19 +29,122 @@ By implementing this solution, agents would no longer need to perform these manu
 
 ------
 
-## Steps to use an agent assist bot within the chat screen 
+## Steps to use the agent assist bot 
+
+
+### Configure assist bot within studio 
 
 > Bot admins, bot developers, or administrators have the necessary permissions to create a new bot.
 
 1. [Create a new bot](https://docs.yellow.ai/docs/platform_concepts/studio/overview) under your subscription, giving it a unique name (e.g., Mia Support). 
-2. Create multiple [custom flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on your business use cases.
-    - All the data within the inbox, including contacts and custom fields, is accessible within **Studio**. You can design flows to automatically retrieve information without manual input. For instance, when an agent clicks on "cancel order," the order ID can be automatically captured, and the order can be marked as canceled without the agent needing to search for the order ID and confirm it again.
-3. In the new bot, navigate to **Channels** > **Chat Widgets** > **Settings**.
-4. Enable the option **Show the conversation history** and disable **Create a new session for every new tab**.
+2. Create multiple [custom flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) within **Studio** based on your business use cases. 
+    > All the data within the inbox (like contacts and custom fields) is accessible within **Studio**.
+3. Test and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot. 
+4. Navigate to **Channels** > **Chat Widgets** > **Settings** and enable the option **Show the conversation history** and disable **Create a new session for every new tab**.
     ![](https://hackmd.io/_uploads/Bk07mmklT.png)
 5. After completion of the above steps, reachout to the Yellow.ai's Inbox team to integrate your agent assist bot to the chat screen. 
 
-**Within Inbox chat screen:** 
+-------
+
+
+#### How to use inbox data within Studio while building the assist bot flows?
+
+When the assist bot is triggered by agents within the inbox, it receives a complete set of current chat data as a payload. This chat data comprises essential information such as the chat ID, custom fields, and tags. You can design flows to automatically retrieve inbox information in studio without manual input. 
+
+**Example**: When an agent clicks on **Cancel order**, the order ID can be automatically captured, and the order can be marked as canceled without the agent needing to search for the order ID and confirm it again.
+
+
+To use the payload details within flows, follow these steps: 
+
+1. Use the [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) node to initialize variables. Use this format `{{{profile.payload.Your_Field_Name}}}` to extract data from the payload.
+    ![](https://hackmd.io/_uploads/HkIizVexp.png)
+2. Add multiple flows/nodes using the payload variables. These flows can be employed for various purposes, such as API calls and other automation tasks.
+    ![](https://hackmd.io/_uploads/SyYQmExlT.png)
+
+>  Click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-payload#11-pass-payload-data-via-bot-script) to learn more on payload data extraction.
+
+
+**Sample payload**: 
+
+```
+{
+    "tags": [],
+    "responded": true,
+    "ticketType": "livechat",
+    "ticketCsatScore": null,
+    "agentCsatScore": null,
+    "comments": [
+        "AUTO_TRANSLATE_HARDCODED_USER_LANGUAGE_NOT_FOUND"
+    ],
+    "assignedByAdmin": true,
+    "manualAssignment": false,
+    "lastAgentMessageTime": 1695620201345,
+    "lastUserMessageTime": null,
+    "lastBotMessageTime": null,
+    "userActiveStatus": "INACTIVE",
+    "agentActiveStatus": "ACTIVE",
+    "replyCount": 0,
+    "userReplyCount": 0,
+    "voiceCall": false,
+    "sipCall": false,
+    "agentCurrentHandlingTicketsCount": 11,
+    "autoStartCall": false,
+    "autoTranslate": false,
+    "autoDetectLanguage": false,
+    "preferredAgent": false,
+    "preferredAgentFallback": false,
+    "createdFromProactiveNotification": false,
+    "unreadCount": 0,
+    "cdpId": "",
+    "_id": "65111c55c281975d14cac7a5",
+    "botId": "x1623067352191",
+    "uid": "82570131562126492148356127684",
+    "priority": "MEDIUM",
+    "severity": "MEDIUM",
+    "source": "yellowmessenger",
+    "contact": {
+        "name": "Kindred Flamingo"
+    },
+    "assignedTo": "inboxyellowai",
+    "xmpp": "user_tYxPsWVbYjXfUhdwxkHuR",
+    "ticketId": "100820",
+    "isNewTicket": true,
+    "logs": [],
+    "timestamp": "2023-09-25T05:36:21.550Z",
+    "reassignmentLog": [],
+    "lastMessageTime": 1695620201345,
+    "collaborators": [
+        {
+            "_id": "65111c55c281979faecac810",
+            "username": "inboxyellowai",
+            "xmppUsername": "user_tYxPsWVbYjXfUhdwxkHuR",
+            "name": "Inbox team 1234"
+        }
+    ],
+    "agentLanguage": "en",
+    "status": "ASSIGNED",
+    "assignedTime": "2023-09-25T05:36:21.950Z",
+    "createdAt": "2023-09-25T05:36:21.956Z",
+    "updatedAt": "2023-09-26T05:30:37.865Z",
+    "__v": 0,
+    "firstResponseTime": "2023-09-25T05:36:41.341Z",
+    "updated": "2023-09-25T05:36:41.346Z",
+    "isSecondaryEncrypt": true,
+    "lastMessage": "hi ther",
+    "lastMessageType": "AGENT",
+    "customFields": {
+        "s6": "",
+        "s5": "",
+        "s2": ""
+    }
+}
+```
+
+
+
+----
+
+### Use assist bot within the inbox chat screen 
 
 > Inbox agents and inbox admins will have access to use the agent assist bot within the chat screen.
 
