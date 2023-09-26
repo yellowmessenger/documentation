@@ -186,6 +186,22 @@ For step 2, instead of manually gathering the required details from the customer
 
 By leveraging agent actions and the **@bot** functionality, the agent can efficiently handle the customer's order status inquiry and facilitate the return request process, ensuring a smoother and more convenient customer support experience.
 
+
+
+----
+
+### Agent assist bot 
+
+The agent assist bot serves as a virtual assistant for support agents, offering customizable workflow configurations. This includes adding buttons within the inbox for actions like creating tickets or processing refunds. 
+To implement it, you can create a new bot with custom flows and integrate it into the chat screen. 
+
+Agents can access the agent assist bot by pressing Cmd + K (Ctrl + K on Windows) or clicking on its icon within the chat interface.
+
+![](https://hackmd.io/_uploads/rJf_D7Jxp.png)
+
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/agentassistbot) for a detailed documentation on agent assist bot. 
+
+
 -----
 
 ## <a name="ud"></a> 2. User & chat details
