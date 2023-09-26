@@ -115,4 +115,4 @@ You can also pass the payload data via the init function. If you want to reiniti
 		}
 	});
 ```
-```
+
