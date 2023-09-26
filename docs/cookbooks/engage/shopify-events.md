@@ -3,11 +3,7 @@ title: Use cases for Shopify event-driven campaigns
 sidebar_label: Strategic campaigns with Shopify events
 ---
 
-## Cart abandonment recovery campaign {.tabset .tabset-fade}
-
-### [Sample text](#tab/tab-a)
-
-### [Sample text2](#tab/tab-b)
+## Cart abandonment recovery campaign 
 
 
 In an online store on Shopify, you notice that some customers abandon their shopping carts during the checkout process. To recover those potential sales, set up a Flow campaign to automatically send reminders to users who have abandoned their shopping carts on your Shopify store.
