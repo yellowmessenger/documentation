@@ -3,7 +3,11 @@ title : Test WhatsApp bot
 sidebar_label : Test WhatsApp bot
 ---
 
-You can test your bot on WhatsApp without connecting it to a WhatsApp Business Account (WABA) through Yellow.ai platform.  The platform offers a dedicated testing environment where you can test and refine your bot before deployment. 
+You can test your bot on WhatsApp without connecting it to a WhatsApp Business Account (WABA) through Yellow.ai platform. The platform offers a dedicated testing environment where you can test and refine your bot before deployment. 
+
+:::note
+You can add up to 10 phone numbers to test your bot flow.
+:::
 
 The following table provides a list of supported and unsupported message formats for testing:
 
