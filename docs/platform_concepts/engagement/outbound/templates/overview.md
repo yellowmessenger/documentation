@@ -15,6 +15,8 @@ The following are the different channels that Engage supports for sending out ca
 * [Viber](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/viber-template)
 * [Mobile push](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/mobilepush)
 * [Google Business Message](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/gbm-template)
+* [Microsoft Teams](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/teams-template)
+
 
 ## 1. Access Template manager
 

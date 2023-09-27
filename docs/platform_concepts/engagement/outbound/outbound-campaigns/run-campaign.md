@@ -35,8 +35,15 @@ This article provides how to create campaigns for any channel. The process for c
 
   
 
-4. Select your preferred **Message template** ([WhatsApp](/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate), [Email](/docs/platform_concepts/engagement/outbound/templates/email-template), [SMS](/docs/platform_concepts/engagement/outbound/templates/sms-template), [Mobile push](/docs/platform_concepts/engagement/outbound/templates/mobilepush), [Viber](/docs/platform_concepts/engagement/outbound/templates/viber-template) using the radio button. For more details, see [Templates overview](/docs/platform_concepts/engagement/outbound/templates/overview).
+4. Select your preferred **Message template** using the respective radio button. For more details, see [Templates overview](/docs/platform_concepts/engagement/outbound/templates/overview).
 
+   * [WhatsApp](/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate)
+   * [Email](/docs/platform_concepts/engagement/outbound/templates/email-template)
+   * [SMS](/docs/platform_concepts/engagement/outbound/templates/sms-template)
+   * [Mobile push](/docs/platform_concepts/engagement/outbound/templates/mobilepush)
+   * [Google Business Message](/docs/platform_concepts/engagement/outbound/templates/gbm-template)
+   * [Viber](/docs/platform_concepts/engagement/outbound/templates/viber-template)
+   * [Microsoft Teams](/docs/platform_concepts/engagement/outbound/templates/teams-template)
 
 :::note
 To view details of a template, click on the respective template. You can also see the preview of the template once you select it.
@@ -50,9 +57,10 @@ You will see template configuration slide screen where you need to configure det
 
 5. Configure each template details and click **Next** to continue. 
 
-* For SMS, choose the user's phone number variable and map the variables used in the template to the user property variable.For more details, [see here](#21-sms-template)
-* For Email, choose the variable that contains email Id, select the sender ID (email ID), and map the user variables used in the template. For more details, [see here](#22-email-template)
-* For WhatsApp or Viber, choose the variable containing WhatsApp number, sender ID, and map the user variables used in the template. For more details, [see here](#23-whatsappviber-template)
+* For SMS, choose the user's phone number variable and map the variables used in the template to the user property variable.For more details, [see here](#21-sms-template).
+* For Email, choose the variable that contains email Id, select the sender ID (email ID), and map the user variables used in the template. For more details, [see here](#22-email-template).
+* For WhatsApp or Viber, choose the variable containing WhatsApp number, sender ID, and map the user variables used in the template. For more details, [see here](#23-whatsappviber-template).
+* For Microsoft Teams, choose the variable containing **Users contact details**, sender ID, and map the user variables used in the template same as [WhatsApp or Viber template](#23-whatsappviber-template).
 
    ![](https://i.imgur.com/NXuyf1Q.gif)
 
@@ -65,7 +73,7 @@ The user contact details/ recipient column and other others can be selected from
   
 
 :::tip
-In case you want to switch to User module to add audience, you can save the campaign as draft and continue later.
+If you want to switch to User module to add audience, you can save the campaign as draft and continue later.
 :::
   
 
@@ -99,7 +107,7 @@ Click **Save as draft** to save all your changes. You can resume from here anyti
 
    i. Once you have reviewed all the details and is good to go, click on **Launch Campaign** to schedule.
 
-     ![](https://i.imgur.com/WlmnEYU.png)
+   ![](https://i.imgur.com/WlmnEYU.png)
 
    The system prompts you with a pop-up screen to convert the outbound campaign to a Flow campaign, mentioning all the benefits post-conversion.
 
@@ -111,7 +119,6 @@ Click **Save as draft** to save all your changes. You can resume from here anyti
 
    ![](https://i.imgur.com/wxMkzQf.png)
   
-
 
 
 ***
@@ -449,7 +456,7 @@ For Failed messages, you can also see the reason for failure.
 Here are some common errors that you may encounter when working with campaigns:
 
 :::note
-For API related error codes and descriptions, see [Notification API response codes](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#24-response-codes)
+For API related error codes and descriptions, see [Notification API response codes](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#24-response-codes).
 :::
 
 ## 9. Notifications on Campaign status & progress
