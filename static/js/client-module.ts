@@ -27,7 +27,8 @@ const module: ClientModule = {
             const myHeaders = new Headers();
             myHeaders.append("content-type", "application/json");
 
-            const uid = window?.frames?.ymIframe?.chat?.jid;
+            // const uid = window?.frames?.ymIframe?.chat?.jid;
+            const uid = window?.frames?.ymIframe?.chat?.jid?.split('@')[0]
             if (uid) {
                 const raw = JSON.stringify({
                     "bot": window.ymConfig.bot,
