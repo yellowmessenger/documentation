@@ -1,9 +1,14 @@
 ---
-title: Agent assist bot in the chat screen 
-sidebar_label: Agent assist bot
+title: Assist bot in the chat screen 
+sidebar_label: Assist bot
 ---
 
-## Introduction to agent assist bot
+:::note
+This feature is currently in beta, and customers interested in using it must contact the Inbox team to have it enabled.
+:::
+
+
+## Introduction to assist bot
 
 Support agents often find themselves repeatedly performing actions such as retrieving or updating customer information in external tools like CRM systems. Additionally, agents often need to execute tasks on behalf of customers, like canceling orders or initiating service requests, which often involve navigating through multiple tools or tabs.
 
@@ -16,16 +21,16 @@ By implementing this solution, agents would no longer need to perform these manu
 Agent assist bot helps agents efficiently complete their tasks directly within the inbox. This not only streamlines their work but also allows them to concentrate on addressing high-priority customer issues, ultimately enhancing overall support efficiency.
 
 
-### Use cases of agent assist bot
+### Use cases of assist bot
 
 1. **Customer service**: Assist bots help address customer inquiries, troubleshoot issues, track orders, and handle returns/refunds, improving customer satisfaction.
 2. **Sales and lead generation**: Bots assist in recommending products, qualifying leads, and scheduling sales appointments, enhancing sales and lead conversion.
 3. **HR and employee services**: These bots aid in onboarding, answer HR-related queries, and recommend training and development resources for employees.
-4. **IT support**: Agent assist bots help with IT-related tasks like password resets, software installation, and network issue troubleshooting, reducing IT support workload.
+4. **IT support**: Assist bots help with IT-related tasks like password resets, software installation, and network issue troubleshooting, reducing IT support workload.
 
-### Agent assist bot vs @bot
+### Assist bot vs @bot
 
-- **Agent assist bot** |  **@bot*
+- **Assist bot** |  **@bot*
 —------------------------- | —----------
 This is a feature that allows the agent to interact with another customized bot from within their inbox to enable quick and seamless resolution. It's for the agent's use during the conversation and doesn't involve the bot communicating with the customer at all. | This is a command used by the agent to initiate a conversation flow directly with the customer, essentially asking the bot to take over the conversation on behalf of the agent. Read more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#initiate-studio-flow-with-bot). 
 
@@ -33,7 +38,7 @@ This is a feature that allows the agent to interact with another customized bot 
 
 ------
 
-## Steps to use the agent assist bot 
+## Steps to use the assist bot 
 
 
 ### Configure assist bot in Studio 
@@ -46,7 +51,7 @@ This is a feature that allows the agent to interact with another customized bot 
 3. Test and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot. 
 4. Navigate to **Channels** > **Chat widgets** > **Settings** and enable the option **Show the conversation history** and disable **Create a new session for every new tab**.
     ![](https://hackmd.io/_uploads/Bk07mmklT.png)
-5. After completing the above steps, reach out to Yellow.ai's Inbox team to integrate your Agent Assist bot with the chat screen. 
+5. After completing the above steps, reach out to Yellow.ai's Inbox team to integrate your Assist bot with the chat screen. 
 
 -------
 
@@ -147,12 +152,11 @@ To use the payload details within flows, follow these steps:
 
 ### Use the Assist bot within the inbox chat screen 
 
-> Inbox agents and inbox admins have access to the agent assist bot within the chat screen.
+> Inbox agents and inbox admins have access to the assist bot within the chat screen.
 
-- Inside the Inbox chat screen, simply press Cmd + K (Ctrl + K on Windows) or click on the agent assist bot icon within the chat interface to open the agent assist bot.
+- Inside the Inbox chat screen, simply press Cmd + K (Ctrl + K on Windows) or click on the assist bot icon within the chat interface to open the assist bot.
     ![](https://hackmd.io/_uploads/rygEwmyxp.png)
 
 - Each chat session will include a dedicated bot instance, allowing agents to ask questions or perform various operations tailored to the ongoing customer interaction.
     ![](https://hackmd.io/_uploads/rJf_D7Jxp.png)
-
 
