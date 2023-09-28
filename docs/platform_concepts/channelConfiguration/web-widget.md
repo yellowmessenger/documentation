@@ -25,7 +25,7 @@ To access Chat widget, follow these steps:
 
 4. The Chat widget screen appears as shown below.
 
-   ![](https://i.imgur.com/h9QYJDi.png)
+   ![](https://i.imgur.com/MfIKU9W.png)
 
  
 ## 2. Customize Chat widget
@@ -34,7 +34,7 @@ To access Chat widget, follow these steps:
 
 The **Widget Panel** helps you customize the look and feel of the chat widget.
 
-   <img src="https://i.imgur.com/67BPLwY.png" alt="drawing" width="90%"/>
+   <img src="https://i.imgur.com/xYoerv3.png" alt="drawing" width="90%"/>
    
 
 
@@ -43,7 +43,7 @@ To customize the design, make the required changes as per the descriptions provi
 Option | Description
 -------- | ---------
 Custom Bot logo | Click **Add** icon and set the logo for the bot. <br/> **Note:** It is recommended to upload images with a size of 150 x 150 pixels. |
-Bot name | Enter the name of the bot as per your business requirement. | 
+Bot display name | Enter the display name of the bot as per your business requirement. | 
 | Bot description | Enter the description of your bot. |
 Colors & theme | You can set a **Light** or **Dark** theme for your widget.
 Brand color | You can select the following options to set the color for the header of the widget: <br/> * **Solid** -  When you select this option, you can view only the Color 1 option (single color will be applied to the title bar).<br/> * **Gradient** - When you select this option, Color 1 and Color 2 options are displayed (two colours forming gradient will be applied to title bar).
