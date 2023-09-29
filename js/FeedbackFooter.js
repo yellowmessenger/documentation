@@ -22,7 +22,7 @@ function thumb_down_flow () {
   window?.frames?.ymIframe?.postMessage(JSON.stringify({
     event_code: 'trigger-journey',
     data: {
-      journeySlug: "dislikeflow_wkcfhv_cdtvj"
+      journeySlug: "dislikeflow2_iffaih"
     }
   }));
 }
