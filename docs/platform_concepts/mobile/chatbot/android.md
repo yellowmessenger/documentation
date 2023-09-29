@@ -124,6 +124,19 @@ ymChat.config.ymAuthenticationToken = "your-token"
 History will load only when `Show history` flag is enabled in the channel settings.
 :::
 
+### Use Secure YM Auth
+
+The ymAuthenticationToken serves as a means to link a user's identity with the chatbot. However, for enhanced security, one can employ the secure YMAuth feature. By doing so, even if an unauthorized party gains access to the token, they will be unable to retrieve the conversation due to this protective feature after the token expiration.
+
+```java
+ymChat.config.useSecureYmAuth = true
+```
+
+:::note Secure Authentication Workflow for Your Bot - Managing and Refreshing Authentication Tokens
+
+To dig deeper into this you can visit [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-authentication-workflow).
+:::
+
 ### Push Notifications
 
 YMChat supports firebase notifications. Assign your `FCM token` to deviceToken
@@ -434,6 +447,29 @@ To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
             e.printStackTrace();
         }
 ```
+
+## Revalidate Token
+
+This feature is essential when secure YM Auth is enabled. When the token expires, your server will automatically request a new token from Yellow. It is crucial for the app to pass this new `token` along with the `refreshSession` received in the data when handling the `ym-revalidate-token` event.
+
+
+To use this api `token` and `refreshSession` are mandatory parameters.
+
+```java
+    try {
+        YMChat ymChat = YMChat.getInstance();
+        ymChat.revalidateToken("new token", refreshSession);
+    } catch (Exception e) {
+        //Catch and handle the exception
+        e.printStackTrace();
+    }
+```
+
+:::note Secure Authentication Workflow for Your Bot - Managing and Refreshing Authentication Tokens
+
+To dig deeper into this you can visit [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-authentication-workflow).
+:::
+***
 
 
 ## Dependencies
