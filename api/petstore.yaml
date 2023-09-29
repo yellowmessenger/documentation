@@ -24,6 +24,30 @@ info:
     8. Include the authentication token in the request headers of your API calls. Typically, you would add an `Authorization` header with the value "Bearer <authentication_token>".
     9. Please note that the generated authentication token provides access to the APIs based on the permissions and privileges associated with your super admin account. Handle the token with caution.
 
+   ## Generate API Keys
+
+    > Only super admin of the bot will have access to generate API keys.
+
+    API keys act as secure passcodes, granting authorized access to specific functionalities or resources within a system. They serve as an additional layer of protection, safeguarding sensitive data and ensuring that only authenticated users or applications can interact with the API.
+
+
+    To generate an API key, follow these steps:
+
+    1. On the bot Overview page, go to **Access Control** > **API Keys**.
+   
+    ![](https://i.imgur.com/6L7qEaO.png)
+
+    2. To create a new API Key, click **Generate new API key**.
+    3. Name the API key in **API Name** and select **User role** from the dropdown.
+
+    <img src="https://i.imgur.com/UUCmfG1.png" width="40%"/>
+
+    4. If necessary, add whitelist IP to ensure smooth access, especially if the IP is at risk of being blocked by the firewall.
+    5. Click **Save** to generate the API key.
+    6. Copy the generated key and use it in your API calls wherever required.
+   
+    ![](https://i.imgur.com/VcDUuHe.png)
+
 
 
 

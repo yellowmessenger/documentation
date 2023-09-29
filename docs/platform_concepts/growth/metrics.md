@@ -166,6 +166,7 @@ The widget allows you to analyze the conversion rates between each stage of enga
 
 ----
 
+
 ## <a name="wac"></a> WhatsApp comsumption
 
 > WhatsApp comsumption is calculated only for WhatsApp bots.
@@ -197,5 +198,4 @@ Here are a few points to note:
 2. If your custom date range includes both dates before and after June 1, 2023, the updated categories will be applied to the entire range. The subcategories will be available only for the data generated after June 1, 2023.
 3. Due to these updates, there might be a mismatch in the data when comparing periods before and after June 1, 2023.
 :::
-
 
