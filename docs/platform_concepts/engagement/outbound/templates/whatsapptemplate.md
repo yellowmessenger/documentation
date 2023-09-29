@@ -56,6 +56,16 @@ To create a WhatsApp template and send for approval, follow these steps:
    Button type | Choose the button type - None, Call to action (CTA) or Quick reply.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone.
    Quick reply | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
 
+   :::note
+
+   To format text in a WhatsApp template, use the following syntax:
+
+   * *Italic*: `_text_`
+   * **Bold**:  `*text*`
+   * ~~Strikethrough~~: `~text~`
+   * `Bullet`: `- text`
+   :::
+
 4. To add another CTA, click **Add new button**.
 5. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
 
