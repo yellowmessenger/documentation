@@ -24,6 +24,30 @@ info:
     8. Include the authentication token in the request headers of your API calls. Typically, you would add an `Authorization` header with the value "Bearer <authentication_token>".
     9. Please note that the generated authentication token provides access to the APIs based on the permissions and privileges associated with your super admin account. Handle the token with caution.
 
+   ## Generate API Keys
+
+    > Only super admin of the bot will have access to generate API keys.
+
+    API keys act as secure passcodes, granting authorized access to specific functionalities or resources within a system. They serve as an additional layer of protection, safeguarding sensitive data and ensuring that only authenticated users or applications can interact with the API.
+
+
+    To generate an API key, follow these steps:
+
+    1. On the bot Overview page, go to **Access Control** > **API Keys**.
+   
+    ![](https://i.imgur.com/6L7qEaO.png)
+
+    2. To create a new API Key, click **Generate new API key**.
+    3. Name the API key in **API Name** and select **User role** from the dropdown.
+
+    <img src="https://i.imgur.com/UUCmfG1.png" width="40%"/>
+
+    4. If necessary, add whitelist IP to ensure smooth access, especially if the IP is at risk of being blocked by the firewall.
+    5. Click **Save** to generate the API key.
+    6. Copy the generated key and use it in your API calls wherever required.
+   
+    ![](https://i.imgur.com/VcDUuHe.png)
+
 
 
 
@@ -149,15 +173,6 @@ components:
           type: string
           description: The source of the event, pass `CUSTOM`
           example: "CUSTOM"
-        userProperties:
-          type: object
-          properties:
-            phone:
-              type: string
-              description: The user's phone number
-            email:
-              type: string
-              description: The user's email address
         payload:
           type: object
           properties:
@@ -209,7 +224,7 @@ paths:
       tags:
         - User
       summary: Add user
-      description: Creates a user record in User360.
+      description: Creates a user record in User360. There is a rate limit is 2000 per minute.
       operationId: addUser
       parameters:
         - name: bot
@@ -409,54 +424,6 @@ paths:
                     description: Error details
   
   
-    get:             
-      security:
-        - ApiKeyAuth: []
-      tags:
-        - User
-      summary: Get Status of Bulk Create API
-      description: Get the status of the Bulk Create API based on the unique data ID generated
-      parameters:
-        - name: bot
-          in: query
-          required: true
-          description: The unique ID of the bot associated with the request.
-          schema:
-            type: string
-        - name: id
-          in: query
-          required: true
-          description: The unique `data` ID generated for the `/create-bulk` API
-          schema:
-            type: string
-      responses:
-        '200':
-          description: OK
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    example: "Details Fetched Successfully"
-                  data:
-                    type: object
-                    properties:
-                      comment:
-                        type: string
-                        example: "finished processing"
-                      result:
-                        type: object
-                        properties:
-                          newUsers:
-                            type: object
-                          conflictedUsers:
-                            type: object
-                            additionalProperties:
-                              type: string
-                              description: "Key is the userId, value is the botId"       
-
   '/cdp/api/v1/user/{userId}':
     get:
       security:
@@ -525,7 +492,7 @@ paths:
       tags:
         - User
       summary: Update user
-      description: Updates user properties of an existing user.
+      description: Updates user properties of an existing user. There is a rate limit is 1500 per minute.
       parameters:
         - name: userId
           in: path
@@ -578,7 +545,7 @@ paths:
       tags:
         - User
       summary: Delete user
-      description: This can only be done by the logged in user.
+      description: This can only be done by the logged in user. There is a rate limit is 1000 per minute.
       operationId: deleteUser
       parameters:
         - name: userId
@@ -636,7 +603,7 @@ paths:
       tags:
         - Event    
       summary: Create new event
-      description: Pushes a new event to User 360. If the userId already existsin User 360, it updates the data; if not, it creates a new user record.
+      description: Pushes a new event to User 360. If the userId already existsin User 360, it updates the data; if not, it creates a new user record. There is a rate limit is 6000 per minute.
       requestBody:
         required: true
         content:
@@ -735,109 +702,6 @@ paths:
                   error:
                     type: string
                     description: Error details
-
-  '/cdp/api/v2/event/custom/properties':
-    get:
-      security:
-        - ApiKeyAuth: []
-      tags:
-        - Event
-      summary: Get custom event properties
-      description: Retrieve all custom properties associated with events.
-      parameters:
-        - in: query
-          name: bot
-          required: true
-          schema:
-            type: string
-          description: The unique ID of the bot
-      responses:
-        '200':
-          description: Successful response with custom event properties
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    description: Message indicating the response status
-                  data:
-                    type: object
-                    properties:
-                      propertyCount:
-                        type: integer
-                        description: Number of custom event properties
-                      properties:
-                        type: array
-                        description: List of custom event properties
-                        items:
-                          type: string
-                    example:
-                      propertyCount: 6
-                      properties:
-                        - message
-                        - firstName
-                        - order
-                        - address
-                        - trackingNumber
-                        - link
-    
-  '/cdp/api/v2/event/by-type':
-    get:
-      security:
-        - ApiKeyAuth: []
-      tags:
-        - Event    
-      summary: Get events by ID & name
-      description: Retrieve a specific event associated with a user.
-      parameters:
-        - in: query
-          name: bot
-          required: true
-          schema:
-            type: string
-          description: The unique ID of the bot
-        - in: query
-          name: id
-          required: true
-          schema:
-            type: string
-          description: The unique internal ID of the user in the format `botId_userId`
-        - in: query
-          name: eventName
-          required: true
-          schema:
-            type: string
-          description: The name of the event to fetch
-        - in: query
-          name: offsetTimestamp
-          required: false
-          schema:
-            type: string
-          description: The offset timestamp (ISO foramt) for retrieving events
-        - in: query
-          name: limit
-          required: false
-          schema:
-            type: integer
-          description: The maximum number of events to retrieve
-      responses:
-        '200':
-          description: Successful response with events of the specified type
-          content:
-            application/json:
-              schema:
-                type: object
-                properties:
-                  message:
-                    type: string
-                    description: Message indicating the response status
-                  data:
-                    type: array
-                    description: List of events
-                    items:
-                      $ref: '#/components/schemas/UserEvent'
 
   '/data/messages':
     get:

@@ -1,6 +1,6 @@
 ---
-title: Yellow.ai's insights overview to monitor your chatbot
-sidebar_label: Chat bot insights
+title: Chatbot & Engage performance overview
+sidebar_label: Chatbot & Engage insights
 ---
 
 
@@ -281,7 +281,9 @@ On the **Conversational issues** widget, the analytics based on the [conversatio
 
 -----
 
-## <a name="11"></a> WhatsApp comsumption
+## Channel consumption
+
+### <a name="11"></a> WhatsApp comsumption
 
 In the WhatsApp comsumption widget, you can select a WhatsApp phone number from the dropdown to see the consumption trends for that specific number.    
 If no number is selected, the data will be compiled and displayed for all the numbers collectively.
@@ -314,5 +316,13 @@ Here are a few points to note:
 
 
 
+### SMS consumption
 
+This shows the **total number of SMS units used** and the **overall count of messages sent** during a specific timeframe. Units in SMS consumption are calculated based on the number of characters involved in a message. For instance, if a single SMS contains a message with characters that exceed a certain limit, it might be counted as consuming 2 units rather than just one.
+
+   <img src="https://i.imgur.com/0r6ai2a.png" width="50%"/>
+
+
+* **Analyze consumption for your preferred timeframe**: Select your preferred timeframe from the corresponding dropdown box within the report, which includes options such as Today, Yesterday, Last 7 days, Last 28 days, Last 90 days, and Custom date range.
+* **View consumption a specific sender ID**: Select the specific sender ID for which you wish to view the SMS consumption report from the respective dropdown box within the report.
 

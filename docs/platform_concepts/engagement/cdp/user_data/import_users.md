@@ -74,7 +74,11 @@ To import the CSV file with user details, follow these steps:
 2. Click **Upload .csv** and add the CSV file that you have created.
    ![](https://i.imgur.com/SP7HQ3t.png)
 
-3. Map CSV headers with the user properties. However, [columns will be auto-mapped](#auto-mapping-of-csv-columns) based on matching column names and previous mapping that might exist.
+3. In **User id**, choose the column that contains userId.
+
+   ![](https://i.imgur.com/SahEW5T.png)
+
+4. In **Map CSV headers**, associate each CSV header with the respective user property. [Columns will be auto-mapped](#auto-mapping-of-csv-columns) based on matching column names and previous mapping that might exist.
 
    * Select the CSV header that includes `userId` in the **UserId** column.
    * Associate each CSV header (column 2) with the User property (column 4).
@@ -84,8 +88,8 @@ To import the CSV file with user details, follow these steps:
 If a CSV header is not mapped to any user property, that CSV column will not be imported.
 :::
 
-4. Click **Next**.
-5. In **Resolve conflicts** set the action to be performed to the record when a userIdin the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360. 
+5. Click **Next**.
+6. In **Resolve conflicts** set the action to be performed to the record when a userIdin the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360. 
 
    ![](https://i.imgur.com/w9DvsBR.png)
 
@@ -124,16 +128,16 @@ For example, if there are two records with the same userId - one in row 10 and a
 *  It is then updated as per row 15.
 :::
 
-6. Check **Merge tags** to retain existing tags and also add new tags in the CSV file if the userId that you are importing already exists. This overrides the behaviour of tags configured in Step 5.
+7. Check **Merge tags** to retain existing tags and also add new tags in the CSV file if the userId that you are importing already exists. This overrides the behaviour of tags configured in Step 5.
 
    ![](https://i.imgur.com/z3VGPUJ.png)
 
-7. Click **Next** to proceed.
-8. In **Tags**, add tags to the entire set of users in the import. By default, a tag with the name {imported_timestamp} - `DDMonYY_HH:MM` - is added to the import. To add more tags, enter the tag name and press Enter.
+8. Click **Next** to proceed.
+9. In **Tags**, add tags to the entire set of users in the import. By default, a tag with the name {imported_timestamp} - `DDMonYY_HH:MM` - is added to the import. To add more tags, enter the tag name and press Enter.
 
    ![](https://i.imgur.com/prCfNqu.png)
 
-9. To create a segment with the imported users, check **Create a segment of imported users based on tags assigned above** and enter the **Segment name**.
+10. To create a segment with the imported users, check **Create a segment of imported users based on tags assigned above** and enter the **Segment name**.
 
    ![](https://i.imgur.com/54TZVsw.png)
 
@@ -210,6 +214,7 @@ Total users | Total number of user records in the CSV file.
 New users | Total number of new user added through the import.
 Conflicting users | Total number of user records in the CSV file that conflicted with the existing users in User 360.
 Failed users | Number of user records that couldn't import.
+Empty records | Number of empty records that were identified in the imported file.
 Tags | User tags associated with all the users of the import. This includes the default tag and any other tags that were added on *Add tags and segment users* screen.
 User segment | Segment created with the user list on the *Add tags and segment users* screen.
 Status | Status of the import - In progress, Completed, or Cancelled.

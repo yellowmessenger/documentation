@@ -3,7 +3,11 @@ title : Test WhatsApp bot
 sidebar_label : Test WhatsApp bot
 ---
 
-You can test your bot on WhatsApp without connecting it to a WhatsApp Business Account (WABA) through Yellow.ai platform.  The platform offers a dedicated testing environment where you can test and refine your bot before deployment. 
+You can test your bot on WhatsApp without connecting it to a WhatsApp Business Account (WABA) through Yellow.ai platform. The platform offers a dedicated testing environment where you can test and refine your bot before deployment. 
+
+:::note
+You can add up to 10 phone numbers to test your bot flow.
+:::
 
 The following table provides a list of supported and unsupported message formats for testing:
 
@@ -52,13 +56,13 @@ To test WA bot from Studio module, follow these steps:
 
 5. Alternatively, a notification link is displayed on your device. Click it to open the WA app.
 
-   <img src="https://i.imgur.com/H0tMidJ.jpg" alt="drawing" width="40%"/> 
+   <img src="https://i.imgur.com/tfySZdj.jpg" alt="drawing" width="40%"/> 
    
    * The WhatsApp app will display a generic template containing your flow's name and the steps for testing the bot.
 
-5. Enter the pre-configured utterance to trigger the flow. 
+6. Enter the pre-configured utterance to trigger the flow. 
 
-    <img src="https://i.imgur.com/k9Bx5tj.jpg" alt="drawing" width="40%"/>  
+    <img src="https://i.imgur.com/LOrpZMZ.jpg" alt="drawing" width="40%"/>  
     
 ### Test WhatsApp bot using Channels module
 

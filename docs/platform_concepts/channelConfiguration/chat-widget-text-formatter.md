@@ -5,6 +5,11 @@ sidebar_label : Text formatter
 
 You can style the text on the Chat Widget as per your needs using the Markdown syntax to enhance the user experience. With the Markdown syntax, you can emphasize important information and capture the reader's attention within specific parts of the conversation.
 
+**Watch the video on how to format the text in the bot conversation:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9yfV6TRtxqs" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+<br/>
+
 Use the following syntax for styling the text in the bot conversation:
 
 * **Bold**: Use asterisks to enclose text when you want to emphasize or highlight its importance. (`*text*`).

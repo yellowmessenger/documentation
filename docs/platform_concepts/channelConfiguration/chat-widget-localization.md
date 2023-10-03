@@ -35,19 +35,15 @@ To change the language of your bot, follow these steps:
 3. Navigate to **Deploy** > **Web** > **Experience on a Website**.
 
    <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+
+4. Click on the higlighted icon and select **Change language**.
+
+    <img src="https://i.imgur.com/qDIBDVP.png" width="40%"/>
    
-4. Choose **Change language** from the widget.      
+5. Select your preferred language and click **Done**.      
   
-   <img src="https://i.imgur.com/eNSmx6D.png)" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/oemvBrH.png)" alt="drawing" width="40%"/>
    
-5. Click **Change language** from the bot response.
+* The chat widget language will change based on the selected language.
 
-    <img src="https://i.imgur.com/vfvznN7.png)" alt="drawing" width="40%"/>
-	
-6. Select your preferred language.
-
-    <img src="https://i.imgur.com/mz7m6qk.png)" alt="drawing" width="40%"/>
-	
-7. The chat widget language will change based on the selected language.
-
-     <img src="https://i.imgur.com/CkJAbTI.png)" alt="drawing" width="60%"/>
+    <img src="https://i.imgur.com/CkJAbTI.png)" alt="drawing" width="60%"/>

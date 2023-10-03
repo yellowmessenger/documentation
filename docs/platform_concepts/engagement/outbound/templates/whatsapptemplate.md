@@ -50,11 +50,21 @@ To create a WhatsApp template and send for approval, follow these steps:
    Template name | Enter a name for the template (Only lowercase letters, numbers and underscores are allowed). This is used only for your reference and the client cannot see it. 
    Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*. <br/>If you want the template to move to the right category automatically depending on the content, **If the template does not qualify under the selected category, move it to the correct category**.
    Select language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
-   Header | Enter the message title If you want to include media or documents (Image, Video, Document, or Text) in your template messages, then Header Section will be of high importance. WhatsApp has certain guidelines for Header. WhatsApp Text supports upto 60 characters with only one variable.
+   Header | Enter a title for the message. If you want to include media or documents (Image, Video, Document, or Text) in your template messages, then Header Section will be of high importance. WhatsApp has certain guidelines for Header. WhatsApp Text supports upto 60 characters with only one variable.
    Body | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can use upto 1024 characters, which can include text and variables.
    Footer | Use this to mention something at the end of your message. You can use up to 60 words.
    Button type | Choose the button type - None, Call to action (CTA) or Quick reply.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone.
    Quick reply | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
+
+   :::note
+
+   To format text in a WhatsApp template, use the following syntax:
+
+   * *Italic*: `_text_`
+   * **Bold**:  `*text*`
+   * ~~Strikethrough~~: `~text~`
+   * `Bullet`: `- text`
+   :::
 
 4. To add another CTA, click **Add new button**.
 5. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
@@ -215,10 +225,6 @@ To track URL clicks:
    <img src="https://i.imgur.com/RZGOF9e.jpg" width="40%"/>
 
 
-
-:::note
-* Currently, the metrics for URL clicks is available in the backend, The reporting UI for URL tracking will be relesed soon.
-:::
 
 ## 5. View WhatsApp template approval or rejection status
 Once a WhatsApp template is approved and marked as Active, it can be used to send messages to customers, regardless of its quality rating. However, WhatsApp templates are rated based on their quality, reflecting their performance. 

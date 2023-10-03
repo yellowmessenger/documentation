@@ -57,9 +57,9 @@ Learn more about UserIDs [here](https://docs.yellow.ai/docs/platform_concepts/en
 
 After settling on a userId for your bot, the subsequent action is to commence tracking it within your **Studio** flows. Depending on your bot version, you might encounter one of three scenarios:
 
-1. **User identification flow** is visible
-2. Only the **Use this as a unique ID for the user** option is available
-3. Neither of the above options are visible
+1. Set userId via. conversation settings
+2. Set userId in the prompt nodes
+3. Set userId when neither of the above options are visible
 
 :::note
 - Each bot can have only one unique userId.
@@ -90,8 +90,9 @@ If the User identification setting is not visible in the Conversation settings p
 4. Choose **Use this as Unique ID for User**.
     ![](https://hackmd.io/_uploads/Hyd-s4_Jp.png)
 5. Use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) instead of using regular journey or global variables.
-![](https://hackmd.io/_uploads/SkeqhuEd1T.png)
-    <img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
+    ![](https://hackmd.io/_uploads/SkeqhuEd1T.png)
+
+<img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
 
 :::note
 

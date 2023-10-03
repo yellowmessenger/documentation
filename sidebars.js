@@ -160,6 +160,7 @@ module.exports = {
       "platform_concepts/Getting Started/platform-offerings",
       "platform_concepts/Getting Started/keyboard-shortcuts",
       "platform_concepts/Getting Started/api-keys",
+      "platform_concepts/Getting Started/yellow-search-feature",
 
  
 
@@ -170,15 +171,14 @@ module.exports = {
 
 // Design starts here
 
-{
-  type: "category",
-  label: "Design",
-  collapsed: true,
-  items: [
-      "platform_concepts/design/conversation-design",
-      "platform_concepts/design/convdesignvoice",   
-        ],
-},
+// {
+//   type: "category",
+//   label: "Design",
+//   collapsed: true,
+//   items: [
+//       "platform_concepts/design/convdesignvoice",   
+//         ],
+// },
 
 
 
@@ -459,6 +459,7 @@ module.exports = {
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/genai",
             "platform_concepts/inbox/chats/internal-ticket",
+            "platform_concepts/inbox/chats/agentassistbot",
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",
@@ -802,6 +803,7 @@ module.exports = {
           "platform_concepts/engagement/outbound/templates/mobilepush",
           "platform_concepts/engagement/outbound/templates/gbm-template",
           "platform_concepts/engagement/outbound/templates/linetemplate",
+          "platform_concepts/engagement/outbound/templates/teams-template"
 
         ],
       },

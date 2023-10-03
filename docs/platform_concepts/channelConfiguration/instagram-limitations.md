@@ -101,7 +101,7 @@ Following are the sample use cases:
 
 Connecting your Instagram Professional account with the [Yellow platform](https://cloud.yellow.ai/) enables the following features to communicate with your bot:
 
-* **Direct Message:** The bot can handle direct messages from your Instagram account. When a bot user posts a direct message on Instagram page, the bot responds within 24 hours. If the bot is not able to resolve the query of the user, then a live agent can respond back to the user within 7 days.
+* **Direct Message:** The bot can handle direct messages from your Instagram account. When a bot user posts a direct message on Instagram page, the bot automatically responds. If the bot is not able to resolve the query of the user, then a live agent can respond back to the user within 7 days.
 
     ![](https://i.imgur.com/9rYDrjA.png)
 
@@ -123,7 +123,7 @@ Connecting your Instagram Professional account with the [Yellow platform](https:
 * Agents can reply to the story mentions only once and cannot send more than one message for a particular story mention.
 * Stories will expire after 24 hours, and the agents won't be able to respond post-expiration.
 
-   ![](https://i.imgur.com/tiZwtey.png)
+   ![](https://i.imgur.com/zUA6KBX.png)
 :::
 
 * **Story Replies:** An Instagram (IG) business account enables the businesses to add a story, and when their user replies to the story, the bot gets triggered automatically.
