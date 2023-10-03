@@ -75,7 +75,7 @@ You need admin access to create an account.
 After creating your account successfully, you can start configuring the chatbot with any of the existing flows based on your business requirements.
 
 :::note
-* `Get Started` in Facebook messengeer only works when get_started is added as the start trigger.
+* `Get Started` in Facebook messenger only works when get_started is added as the start trigger.
 :::
 
 To test FBM chatbot, follow these steps:
