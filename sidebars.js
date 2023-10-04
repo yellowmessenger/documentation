@@ -1288,6 +1288,8 @@ module.exports = {
               "platform_concepts/mobile/chatbot/ios",
               "platform_concepts/mobile/chatbot/react-native",
               "platform_concepts/mobile/chatbot/xamarin",
+              "platform_concepts/mobile/chatbot/secure-ymauth",
+              "platform_concepts/mobile/chatbot/send-event-workflow",
               ],
             },
             "platform_concepts/mobile/chatbot/mobile-sdk-faq",
