@@ -352,6 +352,23 @@ To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
     }
 ```
 
+## Send Event To Bot
+
+If you intend to transmit data back to the bot after it has been successfully launched and is in a running state, you can make use of this API.
+
+To use this api `event` is a mandatory parameter.
+
+```swift
+let event = YMEventModel(code: "code", data: ["token": "token"])
+YMChat.shared.sendEventToBot(event: event)
+```
+
+:::note Send Event To Bot Workflow for Your Bot
+
+To dig deeper into this you can visit [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-authentication-workflow).
+:::
+***
+
 ## Permissions
 
 We are requesting for following permissions

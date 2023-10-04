@@ -325,6 +325,22 @@ YmChat.getUnreadMessages(
 );
 ```
 
+## Send Event To Bot
+
+If you intend to transmit data back to the bot after it has been successfully launched and is in a running state, you can make use of this API.
+
+To use this api `code` and `data` are mandatory parameter.
+
+```dart
+YmChat.sendEventToBot('code', { "some-key": "some-value" });
+```
+
+:::note Send Event To Bot Workflow for Your Bot
+
+To dig deeper into this you can visit [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/send-event-to-bot-workflow).
+:::
+***
+
 ## Demo App
 
 A demo app can be used as a reference to better understand how this SDK can be integrated in the app

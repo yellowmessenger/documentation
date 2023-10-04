@@ -435,6 +435,32 @@ To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
         }
 ```
 
+## Send Event To Bot
+
+If you intend to transmit data back to the bot after it has been successfully launched and is in a running state, you can make use of this API.
+
+To use this api `event` is a mandatory parameter.
+
+```java
+    try {
+        YMChat ymChat = YMChat.getInstance();
+
+        HashMap<String, Object> payloadData = new HashMap<>();
+        //Setting Payload Data
+        payloadData.put("some-key", "some-value");
+
+        YMEventModel model = new YMEventModel(code, payloadData);
+        ymChat.sendEventToBot(model);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+```
+
+:::note Send Event To Bot Workflow for Your Bot
+
+To dig deeper into this you can visit [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-authentication-workflow).
+:::
+***
 
 ## Dependencies
 
