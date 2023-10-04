@@ -35,7 +35,7 @@ Following are the types of interactive message components:
 
 |     |  |
 |---------|-------|
-| Allows you to select a preferred date from the calendar view. The date is displayed in the predefined format. If the user's input contains a date or a time, it will pass the validator. Otherwise, the specified validation fail message will be sent. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#21-date">here</a> to implement Date picker using a node. | <img src="https://i.imgur.com/iIZpkxw.png" alt="drawing" width="100%"/>
+| Allows you to select a preferred date from the calendar view. The date is displayed in the predefined format. If the user's input contains a date or a time, it will pass the validator. Otherwise, the specified validation fail message will be sent. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#31-date">here</a> to implement Date picker using a node. | <img src="https://i.imgur.com/iIZpkxw.png" alt="drawing" width="100%"/>
 
 The following are the different date pickers supported:
 

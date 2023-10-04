@@ -3,8 +3,6 @@ title: Yellow.ai Search
 sidebar_label: Yellow.ai Search 
 ---
 
-## Yellow.ai Search overview
-
 Yellow.ai offers a search engine powered by Document Cognition that can be deployed on any website. This enables website users to easily search for product information, documentation, and FAQs directly within the site.
 
 To enable this search functionality on your website, you need to 
