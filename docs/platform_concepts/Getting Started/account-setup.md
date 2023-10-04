@@ -14,7 +14,17 @@ This guide will walk you through the process of signing up for a yellow.ai accou
 If you're new to the yellow.ai platform, here's how to sign up:
 
 
-1. **Visit the website**: Go to cloud.yellow.ai.
+1. **Visit the website**: 
+
+   | Region Code | Region | Platform URL |
+   | -------- | -------- | -------- |
+   R0	| INDIA - Azure Central India |	https://cloud.yellow.ai
+   R1	| MEA - Azure UAE North	| https://r1.cloud.yellow.ai
+   R2	| AKARTA - GCP Asia-Southeast2	|https://r2.cloud.yellow.ai
+   R3	|SINGAPORE - AWS ap-Southeast-1	|https://r3.cloud.yellow.ai
+   R4	|USA - AWS us-west-2	|https://r4.cloud.yellow.ai
+   R5	|EUROPE - AWS eu-west-1	| https://r5.cloud.yellow.ai
+
 2. **Choose signup mode**: Select your preferred signup method.
 3. **Fill in details**: Complete the required fields and click Sign up.
     ![](https://hackmd.io/_uploads/ByX-KWSn2.png)

@@ -9,8 +9,8 @@ By combining the capabilities of AI and human expertise, Yellow.ai empowers you 
 
 Yellow.ai offers two different platforms:
 
-- App platform: App.yellow.ai is our **code-based platform**, catering to users who prefer a more hands-on approach. It offers a drag-and-drop interface that empowers users with advanced customization options and full control over their bot's behavior. This platform is ideal for developers or businesses with specific coding requirements or the need for highly tailored bot functionalities. All the new features will only be available on cloud platform.
-- Cloud platform: Cloud.yellow.ai is our **no-code platform**, designed specifically for those who want to create bots and automate processes without writing a single line of code. With its intuitive interface and user-friendly features, you can easily design and deploy AI bots, regardless of your technical expertise. Say goodbye to complex coding and hello to simplicity and efficiency. Following are the **additional features** that you can leverage with the [Cloud platform](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#21-request-information):
+- **App**: App.yellow.ai is our **code-based platform**, catering to users who prefer a more hands-on approach. It offers a drag-and-drop interface that empowers users with advanced customization options and full control over their bot's behavior. This platform is ideal for developers or businesses with specific coding requirements or the need for highly tailored bot functionalities. All the new features will only be available on cloud platform.
+- **Cloud**: Cloud.yellow.ai is our **no-code platform**, designed specifically for those who want to create bots and automate processes without writing a single line of code. With its intuitive interface and user-friendly features, you can easily design and deploy AI bots, regardless of your technical expertise. Say goodbye to complex coding and hello to simplicity and efficiency. Following are the **additional features** that you can leverage with the Cloud platform:
     - Accessibility and ease of use
     - Accelerated development workflow
     - Flexibility and agility
@@ -23,6 +23,20 @@ Not all Cloud features are available on the App. Hence we highly recommend migra
 Detailed instructions on how to migrate can be found in our [migration guide](https://docs.yellow.ai/docs/cookbooks/migration-guide).     
 For further assistance, reach out to your designated POC.
 :::
+
+Cloud URLs for different region: 
+
+| Region Code | Region | Platform URL |
+| -------- | -------- | -------- |
+R0	| INDIA - Azure Central India |	https://cloud.yellow.ai
+R1	| MEA - Azure UAE North	| https://r1.cloud.yellow.ai
+R2	| AKARTA - GCP Asia-Southeast2	|https://r2.cloud.yellow.ai
+R3	|SINGAPORE - AWS ap-Southeast-1	|https://r3.cloud.yellow.ai
+R4	|USA - AWS us-west-2	|https://r4.cloud.yellow.ai
+R5	|EUROPE - AWS eu-west-1	| https://r5.cloud.yellow.ai
+
+
+--------
 
 ## Features of cloud platform
 
