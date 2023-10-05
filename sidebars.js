@@ -159,7 +159,7 @@ module.exports = {
 
       "platform_concepts/Getting Started/platform-offerings",
       "platform_concepts/Getting Started/keyboard-shortcuts",
-      "platform_concepts/Getting Started/api-keys",
+      //"platform_concepts/Getting Started/api-keys",
       "platform_concepts/Getting Started/yellow-search-feature",
 
  
@@ -1288,6 +1288,8 @@ module.exports = {
               "platform_concepts/mobile/chatbot/ios",
               "platform_concepts/mobile/chatbot/react-native",
               "platform_concepts/mobile/chatbot/xamarin",
+              "platform_concepts/mobile/chatbot/secure-ymauth",
+              "platform_concepts/mobile/chatbot/send-event-workflow",
               ],
             },
             "platform_concepts/mobile/chatbot/mobile-sdk-faq",
@@ -1313,7 +1315,6 @@ module.exports = {
       label: "2023 updates",
       collapsed: true,
       items: [
-        "updates/2023/aug2023",
         "updates/2023/jul2023",
         "updates/2023/jun2023",
         "updates/2023/may2023",
