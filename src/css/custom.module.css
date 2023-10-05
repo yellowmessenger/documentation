@@ -839,3 +839,12 @@ pre code {
   font-size: 14px;
   color: #f1507e;
 }
+
+
+
+/*SCHEMA TABS*/
+
+
+[class^="tabs"] {
+  flex-wrap: wrap;
+}
