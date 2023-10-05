@@ -112,20 +112,25 @@ For easy approval, it is recommended to use the company's domain URL. Example: [
 
 #### Dynamic URL
 
-In this type of CTA, the URL can be personalised when sending out the notification through Notification API/Outbound campaign as explained below. 
+In dynamic URL CTA, you can personalize the URL when sending out the notification through the Notification API/Outbound campaign, as explained below.
 
-You can mention the domain URL with a path variable in the CTA when sending for approval. Once approved, you can replace the variable with a specific path or parameter value before sending the notification to the targetted users.
+Simply specify the static URL (excluding the dynamic path) when submitting it for approval. After approval, append the path with a specific variable before sending the notification to the targeted users.
+
+For example: If the URL is https://exampleshopping.com/checkout/{userId}
 
 
-   Example: [https://docs.yellow.ai/{{1}}](https://docs.yellow.ai/%7B%7B1%7D%7D)
+   1. In the template configuration , just mention `https://exampleshopping.com/checkout/`
 
-   Here, you can replace `1`  with a parameter or path (say `docs/platform_concepts/engagement/engage`) before sending out the message through Notification API/Outbound campaign. 
+   2. When configuring campaign, specify the path variable (say `userId`).
+
+   3. When the campaign is sent, the user receives the URL https://exampleshopping.com/checkout/userId123
 
    When the user clicks on CTA sent through notification, it redirects to the
    [Engage documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).
 
 :::note
-You cannot change the parent domain dynamically.
+* You can only append the dynamic variable towards the end.
+* You cannot change the parent domain URL dynamically.
 :::
 
 ### 1.2 Add make a phone call CTA
