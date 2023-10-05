@@ -11,7 +11,7 @@ function thumb_up_flow () {
   window?.frames?.ymIframe?.postMessage(JSON.stringify({
     event_code: 'trigger-journey',
     data: {
-      journeySlug: "likeflow-clone_cllteh"
+      journeySlug: "likes_sxpmll"
     }
   }));
 }
@@ -22,7 +22,7 @@ function thumb_down_flow () {
   window?.frames?.ymIframe?.postMessage(JSON.stringify({
     event_code: 'trigger-journey',
     data: {
-      journeySlug: "dislikeflow2_iffaih"
+      journeySlug: "dislikes_dsxlbu"
     }
   }));
 }

@@ -14,7 +14,7 @@
 }
 */
 
-window.ymConfig = {"bot":"x1687158407670","host":"https://r0.cloud.yellow.ai"};
+window.ymConfig = {"bot":"x1696422652998","host":"https://r0.cloud.yellow.ai"};
 (function() {
   var w = window,
       ic = w.YellowMessenger;
