@@ -224,7 +224,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 1. In **From**, choose the sender's number.
 2. In **To**, choose the variable that contains the WhatsApp number of the user.
 
-<center><img src="https://i.imgur.com/qGgU3zR.png" width="50%"/></center>
+<center><img src="https://i.imgur.com/a2DsA8x.png" width="50%"/></center>
 
 3. In **Templates**, you can select from the following options:
 
@@ -233,19 +233,40 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
    
    <center><img src="https://i.imgur.com/VWPy22v.png" width="50%"/></center>
 
-   * **Existing templates**: Select this option to choose from manually created templates and choose your preferred **Template**. You can also see the preview of each template using the eye icon.
+   * **Existing templates**: Select this option to choose from manually created templates and choose your preferred **Template**. You can also see the preview of each template using the eye icon. You need to Map template variables to properties.
 
    <center><img src="https://i.imgur.com/7zgzxbP.png" width="70%"/></center>
 
-4. In **Template media** 
+   #### Map template variables to user or event properties
 
-   * Select *Default* to send personalized media to each user, and choose the variable that contains the media file in the relevant box.
+   If there are variables in the template, you will see an option to map those variables to user or event properties. To map:
 
-   <center><img src="https://i.imgur.com/VgKrGTI.png" width="50%"/></center>
+   a. Click on the specific Map variable option you want to configure.
+
+   <img src="https://i.imgur.com/pWwPkw6.png"/>
+
+   b. To map a user property, select **User property** and choose the desired property from the dropdown.
+
+   <img src="https://i.imgur.com/AwgdgKB.png" width="50%"/>
+
+   c. To map an event property, select **Event property**, and enter the relevant event variable.
+
+   <img src="https://i.imgur.com/Pg1iZFA.png" width="50%"/>
+
+   d. To map a static text, select **Static text** and enter the text that you want to replace with for the variable.
+
+   <img src="https://i.imgur.com/QpwCHL0.png" width="50%"/>
+
+
+4. If your template includes media content, you can add it in the **Template media** section.
+
+   * In **Template media**, select *Dynamic* to send personalized media to each user, and choose the dynamic variable that contains the media file.
+
+   <center><img src="https://i.imgur.com/GEh50DO.png" width="50%"/></center>
 
    * Select *Static* to send a single media file for all users. Upload the static file using the **+Upload** option.
 
-    <center><img src="https://i.imgur.com/8sl6gwl.png" width="50%"/></center>
+    <center><img src="https://i.imgur.com/oAvPu7k.png" width="50%"/></center>
 
 
 5. Enable **During workflow business hours** to send the message only during business hours.
@@ -258,7 +279,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 <center><img src="https://i.imgur.com/RdJwTtk.png" width="50%"/></center>
 
 3. In **Templates**, choose the SMS template that you want to use.
-4. In **Template variables**, map each variable with user properties or static text.
+4. In **Template variables**, map each variable in the template with user properties, event properties, or static text. For more information, see [Map variables to user or event properties](#map-template-variables-to-user-or-event-properties-1).
 
 <center><img src="https://i.imgur.com/QvVZwi4.png" width="50%"/></center>
 
@@ -272,28 +293,44 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 <center><img src="https://i.imgur.com/ykOxSYJ.png" width="50%"/></center>
 
 4. In **CC**,  add the email addresses to which you want to send a copy of the email. Recipients in the CC field are visible to all the recipients of the email.
-5.  In **BCC**, add other email addresses to which you want to send the email copy.  Recipients in the BCC field won't be visible to anyone else.
-6.  In **Templates**, choose the email template that you want to use for sending the message.
+5. In **BCC**, add other email addresses to which you want to send the email copy.  Recipients in the BCC field won't be visible to anyone else.
+6. In **Templates**, choose the email template that you want to use for sending the message.
+7. If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).
 7. Enable **During workflow business hours** to send the message only during business hours.
 
-#### 4. Push notification channel configuration
+
+#### 4. GBM channel configuration
+
+1. In **Template**, choose the GBM template that you want to use for the notification. To know how to create a template, see [GBM template](/docs/platform_concepts/engagement/outbound/templates/gbm-template).
+
+  <center><img src="https://i.imgur.com/YXtLI03.png" width="50%"/></center>
+
+2.  If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).
+3. If your template includes media content, you can add it in the **Template media** section. [Know more about](#add-media-content-in-your-template---static-or-dynamic)
+
+
+
+#### 5. Push notification channel configuration
 
 *  In **Template**, choose the push notification template that you want to use for the notification.
 
   <center><img src="https://i.imgur.com/HAv4z3J.png" width="50%"/></center>
 
-#### 5. Google business messages channel configuration
+#### 6. Line channel configuration
 
-*  In **Template**, choose the GBM template that you want to use for the notification.
+1. In **Template**, choose the Line template that you want to use for the notification. To know how to create a template, see [Line template](/docs/platform_concepts/engagement/outbound/templates/linetemplate).
 
    <center><img src="https://i.imgur.com/cqSqHJ9.png" width="50%"/></center>
 
-   To know how to create a template, see [GBM template](/docs/platform_concepts/engagement/outbound/templates/gbm-template).
+2.  If there are variables in the template, you will see an option to map those variables to user or event properties. <br/>In **Template variables**, associate each variable with a user or event property as explained [here](#map-template-variables-to-user-or-event-properties-1).
 
-#### 6. Voice call channel configuration
+3. If your template includes media content, you can add it in the **Template media** section. [Know more about](#add-media-content-in-your-template---static-or-dynamic)
 
-1.  Check **Enable answering machine detection (AMD)** to automatically identify answering machines.
-2.  In **Bot flow**, choose the welcome flow to be triggered (Studio) for the current channel.
+
+#### 7. Voice call channel configuration
+
+1. Check **Enable answering machine detection (AMD)** to automatically identify answering machines.
+2. In **Bot flow**, choose the welcome flow to be triggered (Studio) for the current channel.
 3. In **From**, choose the IVR number(s) through which the voice call is made. When multiple IVRs are added, calls are made from any of those numbers randomly.
 4. In **To**, choose the variable that contains the user identifier.
 
@@ -302,6 +339,44 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 :::note
 For a detailed help doc on how to create an outbound campaign via Voice channel, see [this article](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/OBcampaign/setupOBC).
 :::
+
+### Map template variables to user or event properties
+
+When using templates that contain variables, you can map those variables to user or event properties, or you can choose a static text replacement for a variable. This gives you control over how you customize your template content.
+
+To map template variables:
+
+1. Click on the specific Map variable option you want to configure.
+
+   <img src="https://i.imgur.com/pWwPkw6.png"/>
+
+2. To map a user property, select **User property** and choose the desired property from the dropdown. For URLs, you can just append the user property to the configured URL.
+
+   <img src="https://i.imgur.com/AwgdgKB.png" width="50%"/>
+
+3. To map an event property, select **Event property**, and enter the relevant event variable (key name). For URLs, you can just append the event property.
+
+   <img src="https://i.imgur.com/Pg1iZFA.png" width="50%"/>
+
+4. To map a static text, select **Static text** and enter the text that you want to replace with for the variable.
+
+   <img src="https://i.imgur.com/QpwCHL0.png" width="50%"/>
+
+### Add media content in your template - Static or Dynamic
+
+If your template includes media content, you can customize how this media is sent to users based on the template type. In the "Template Media" section:
+
+In the **Template media** section:
+
+* Select *Dynamic* to send personalized media to each user, and choose the dynamic variable that contains the media file.
+
+   <center><img src="https://i.imgur.com/GEh50DO.png" width="50%"/></center>
+
+* Select *Static* to send a single media file for all users. Upload the static file using the **+Upload** option or paste the URL of the media file.
+
+    <center><img src="https://i.imgur.com/oAvPu7k.png" width="50%"/></center>
+
+
 
 ### Define flows based on delivery statuses
 
