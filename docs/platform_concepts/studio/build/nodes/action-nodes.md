@@ -542,9 +542,6 @@ Language can only be changed to only if that language is configured in bot setti
 
 ---
 
-Notification Nodes (Outbound Notification, Notification Status and Voice Call) are currently not in use. 
-Coming soon!
-
 ### 3.2 Outbound notification 
 
 You can incorporate the Outbound notification node in your bot flows to enhance communication capabilities. This dynamic node enables you to effortlessly send SMS, email, WhatsApp, and voice notifications. You can choose your preferred sender ID, manage CC and BCC recipients, and choose from a wide range of templates to streamline your communication efforts right within the bot's flow.
@@ -593,7 +590,8 @@ To know more about Outbound notifications, click [here](https://docs.yellow.ai/d
 
 ### 3.4 Voice call 
 
-Make voice calls with this node.
+> This node is not in use. 
+
 
 ---
 
