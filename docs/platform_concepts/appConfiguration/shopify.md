@@ -13,10 +13,9 @@ Shopify is an e-commerce platform that lets merchants worldwide to build and cus
 **Here are some key benefits of leveraging this integration**:
 
 * **Unified customer data & customer self-serve**: Gain a 360-degree view of your customers by integrating their Shopify data with other touchpoints. You can enable customers to access their data and order details conveniently through bot conversations.
-* Personalized campaigns and automated workflows: Leverage customer data to create targeted marketing campaigns, boost sales and create automated workflows.
-* Better support: Provide better customer support by accessing order history and customer details directly from Shopify.
-* Multi-channel support: Provide consistent support and information to customers across various channels, including chat, email, Whatsapp and more.
-* Time and Cost Savings: Reduce manual data entry, streamline processes, and save time and resources by automating tasks.
+* **Personalized campaigns and automated workflows**: Leverage customer data to create targeted marketing campaigns, boost sales and create automated workflows.
+* **Better support with multi-channel**: Provide better customer support by accessing order history and customer details directly from Shopify and interact across various channels, including chat, email, Whatsapp and more.
+* **Time and Cost Saving**s: Reduce manual data entry, streamline processes, and save time and resources by automating tasks.
 
 
 ## 2.Integrate Shopify with Yellow.ai
