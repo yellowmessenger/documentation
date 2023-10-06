@@ -91,12 +91,12 @@ You can only send text, images, files, and emojis on this chat screen. Other opt
 ### Key points of internal ticketing
 
 - Agents will only be notified of new responses in a Slack thread if they are in the corresponding chat where the thread was initiated. When a Slack user (L2) responds to an agent (L1), an orange bubble appears on the Slack thread icon to signal a new message.
-- Files or attachments sent from Slack or the inbox will be displayed as URLs. Clicking on the URL opens the content in a new tab. (On Slack, the URL will be previewed.)
+- Files or attachments can be previewed in Slack and Inbox. It saves you time when checking important files.
 - Whenever a Slack thread is created, the system automatically generates an internal note for tracking purposes. This note is part of the chat history but is not visible to bot users.
 - Slack threads are visible in My Chats, Active Chats, and Resolved Chats. In My Chats, agents can create, view, reply to, and close Slack threads. In Active Chats, admins can see read-only Slack threads. In Resolved Chats, admins and agents can view closed Slack threads in a read-only manner, similar to a transcript.
 - Slack threads are visible when the chat is transferred (not when reopened), as the chat ticket remains unresolved during the transfer.
 - If an L1 agent sends a message and an attachment together, it is combined into a single message on Inbox instead of sending two separate messages consecutively.
-
+- Support is added for mentions, including @here, @channel, and user groups, allowing you to easily notify and collaborate with specific individuals or teams within your Slack workspace. 
 
 ### Limitations of internal ticketing
 
@@ -104,5 +104,4 @@ You can only send text, images, files, and emojis on this chat screen. Other opt
 - Admins do not receive notifications for these Slack messages.
 - Emojis sent from Slack to the inbox agent (L1) will not be visible in the inbox.
 - Reopening a chat ticket creates a new separate ticket, and Slack threads from the previous ticket are not visible in the reopened ticket.
-- Inbox does not support features like @channel, @here, or similar functionalities available in Slack.
 - Inbox does not support all message types and formatting options that Slack provides in its UI. For example, formatting styles like bold, italics, and strikethrough are not supported in the chat interface.
