@@ -368,7 +368,7 @@ cordova.plugins.ymchat.sendEventToBot('code', { some-key: "some-value" });
 ```
 
 :::note 
-For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/platform_concepts/mobile/chatbot/send-event-workflow).
+For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/send-event-workflow).
 :::
 
 ## Demo App
