@@ -8,6 +8,10 @@ rank: 1
 
 Our Inbox is a comprehensive omnichannel helpdesk designed to empower customer support agents and live agents. Discover how you can provide exceptional customer support using Inbox's advanced features and functionalities.
 
+:::note
+To try Inbox demo, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo). 
+:::
+
 
 **Learn more about Inbox's capabilities**:
 
