@@ -29,19 +29,6 @@ Detailed instructions on how to migrate can be found in our [migration guide](ht
 For further assistance, reach out to your designated POC.
 :::
 
-<!-- 
-Cloud URLs for different region: 
-
-| Region Code | Region | Platform URL |
-| -------- | -------- | -------- |
-R0	| INDIA - Azure Central India |	https://cloud.yellow.ai
-R1	| MEA - Azure UAE North	| https://r1.cloud.yellow.ai
-R2	| AKARTA - GCP Asia-Southeast2	|https://r2.cloud.yellow.ai
-R3	|SINGAPORE - AWS ap-Southeast-1	|https://r3.cloud.yellow.ai
-R4	|USA - AWS us-west-2	|https://r4.cloud.yellow.ai
-R5	|EUROPE - AWS eu-west-1	| https://r5.cloud.yellow.ai
-
--->
 
 --------
 
