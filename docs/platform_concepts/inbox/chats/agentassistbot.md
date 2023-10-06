@@ -30,9 +30,11 @@ Agent assist bot helps agents efficiently complete their tasks directly within t
 
 ### Assist bot vs @bot
 
-- **Assist bot** |  **@bot*
-—------------------------- | —----------
-This is a feature that allows the agent to interact with another customized bot from within their inbox to enable quick and seamless resolution. It's for the agent's use during the conversation and doesn't involve the bot communicating with the customer at all. | This is a command used by the agent to initiate a conversation flow directly with the customer, essentially asking the bot to take over the conversation on behalf of the agent. Read more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#initiate-studio-flow-with-bot). 
+
+
+| Assist bot | @bot |
+| -------- | -------- |
+| This is a feature that allows the agent to interact with another customized bot from within their inbox to enable quick and seamless resolution. It's for the agent's use during the conversation and doesn't involve the bot communicating with the customer at all. | This is a command used by the agent to initiate a conversation flow directly with the customer, essentially asking the bot to take over the conversation on behalf of the agent. Read more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#initiate-studio-flow-with-bot). |
 
 
 
