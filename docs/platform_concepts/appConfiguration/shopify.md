@@ -96,23 +96,35 @@ Please ensure that you enter your store name exactly as it is in the **Shopify**
 
 ***
 
-## 3. Activate Shopify events you wish to use in Yellow.ai
 
-Once your integration is set up, all Shopify-related events become available in the Events section. These events act as triggers for bot flows, enabling the creation of personalized conversations, run effective campaigns, store customer data in User360 and more. 
 
-By default, these events are inactive, giving you the flexibility to enable only what you require. 
+## 3. Shopify user data syncing in User 360
 
-To enable events:
+This integration automates the creation of user records in User 360 using Shopify event data. By default, it is configured to capture userIds, emails, and phone numbers. Additionally, the integration enables the automatic synchronization of the following event data with User 360. This empowers User 360 as a valuable resource for personalized and effective user engagement strategies.
 
-1. Go to **Studio** > **Event** > **Integrations**. You will see all the events related to Shopify with the prefix `shopify<eventName>`.
+### Supported standard user properties from Shopify events
 
-  <img src="https://i.imgur.com/Qeq0NvS.png"/>
+The following standard user properties are automatically added or updated in User 360 directly from Shopify events.
 
-2. Navigate to the event that you want to enable and click on the more options icon > **Activate**.
+* userId
+* email
+* firstName
+* phone
+* city
+* country
 
-### Supported Shopify events
+
+
+### Supported Shopify events syncing in User 360
+
+The integration enables the automatic synchronization of the following event data with User 360. This empowers User 360 as a valuable resource for personalized and effective user engagement strategies.
+
+   <img src="https://i.imgur.com/whVni4U.png"/>
+
 
 The following table provides a comprehensive list of Shopify events along with their descriptions and sample use cases.
+
+
 
   | Event  | Description    | Sample use cases      |
   |--------|----------------|----------------------|
@@ -127,44 +139,17 @@ The following table provides a comprehensive list of Shopify events along with t
   | shopifyCheckoutCreated| Order checkout is initiated in Shopify. | Track order progress when an order checkout is initiated in your Shopify store.    |
   | shopifyOrdersUpdated  | Shopify order is updated.  | Monitor order changes, adjust inventory, or notify the customer on order updates to handle order updates in Shopify store.  |
   | shopifyCartCreate     | A cart is created in Shopify.   | Track shopping cart activity, gather data on abandoned carts, or initiate cart-related marketing efforts when a cart is created in Shopify store. |
-  | shopifyCartEmpty      | A cart is deleted. | Update cart-related data, trigger follow-up actions, or analyze cart abandonment patterns when a cart is emptied in Shopify. |
-
-For a comprehensive guide on creating capaigns for Shopify cart abandonment, click [here](https://docs.yellow.ai/docs/cookbooks/engage/shopify-events).
-
-3. Once you enable required shopify events, you can use these Shopify events to:
-  
-  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event)
-  * [Initiate flow campaigns based on events](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-events)
-  * [Store user variables that come from user events into user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations)
 
 
-
-## 4. Shopify user data syncing in User 360
-
-This integration automates user record creation in User 360 using Shopify event data. By default, it is configured to capture userIds, emails, and phone numbers.
-
-Additionally, it merges [Shopify user events](#payload-examples-shopify-events-in-user-360) seamlessly into User 360, providing a complete picture of user interactions. These events include new customer, cart create, checkout created, new order, order fulfilled, order updated, and order canceled. This synergy empowers User 360 as a valuable resource for personalized and effective user engagement strategies.
-
-
-   <img src="https://i.imgur.com/whVni4U.png"/>
 
 
 * To add/update user properties through bot conversations, see [this article](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
 * To create personalized bot conversations with user data, see [this article](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations).
 
-### Supported standard user properties from Shopify events
-
-The following standard user properties are automatically added or updated in User 360 directly from Shopify events.
-
-* userId
-* email
-* firstName
-* phone
-* city
-* country
 
 
-### Payload Examples: Shopify Events in User 360
+
+### Payload samples of Shopify events in User 360
 
 The following are the event schemas associated with various Shopify events. These event schemas define the structure and data that get sent to the CDP when specific events occur in your Shopify store.
 
@@ -1912,13 +1897,69 @@ The following are the event schemas associated with various Shopify events. Thes
 
 
 
+***
 
 
-## 5. Access Shopify data in bot conversations
 
-Using Shopify data in bot conversations offers several advantages such as real-time engagement, personalized responses, enrich user data, and create efficient workflows. However, to access those data, you need to enable all the relevant scopes for the custom app in Configure Storefront API scopes.
 
-  <img src="https://i.imgur.com/Ri1rcX7.png"/>
+
+## 4. Access Shopify data in bot conversations
+
+Once the integration is set up, Shopify events start flowing to Yellow.ai. These events serve as triggers for bot flows, enabling the creation of personalized conversations, running effective campaigns, storing customer data in User360,personalized responses, data enrichment, and the creation of efficient workflows.
+
+
+### Supported Shopify events you can use in Studio
+
+The following table provides a comprehensive list of Shopify events along with their descriptions and sample use cases.
+
+  | Event  | Description    | Sample use cases      |
+  |--------|----------------|----------------------|
+  | shopifyNewOrder  | A new order is created in the Shopify store.   | - Trigger order confirmation emails<br/>- Update inventory when a new order is created in your Shopify store.                           |
+  | shopifyNewProduct  | A new product has been added to the Shopify store.  | - Update the product catalog<br/>- Create product listings<br/>- Send WhatsApp notifications when a new product is added to your Shopify store.  |
+  | shopifyOrderCancelled | An order is cancelled. | - Handle order cancellations<br/>- Update inventory levels<br/>- Refund payments<br/>- Notify customers when their orders are canceled. |
+  | shopifyOrderFulfilled | An order was fulfilled or completed.   |  Update shipping information<br/>- Send shipping notifications to customers<br/>- Update order status when an order is fulfilled or completed.  |
+  | shopifyOrderPaid      | Payment made for an order. | - Send payment receipts<br/>- Update financial records when a payment is made for an order.  |
+  | shopifyRefundCreated  | A refund was created for an order.  | - Update financial records<br/>- Notify customers about their refunds<br/>- Adjust inventory levels when a refund is issued for an order. |
+  | shopifyNewCustomer    | A new customer is registered.  | - Add the customer to User 360<br/>- Send welcome emails<br/>- Track customer acquisition when a new customer registers in your Shopify store. |
+  | shopifyCustomerUpdate | A customer’s profile details have been updated. | - Keep your customer database up to date<br/>- Send profile change notifications when a customer's profile details are updated. |
+  | shopifyCheckoutCreated| Order checkout is initiated in Shopify. | - Track order progress when an order checkout is initiated in your Shopify store.   |
+  | shopifyOrdersUpdated  | Shopify order is updated.  | - Monitor order changes<br/>- Adjust inventory<br/>- Notify the customer about order updates to handle order updates in the Shopify store.  |
+
+### Events enabled by default in Studio
+
+Once your integration is set up, the following events are sent to bot directly are available by default with this integration.
+
+* shopifyRefundCreated
+* shopifyNewProduct
+* shopifyOrderPaid
+
+
+:::note
+The availability of events within the integration depends on the scopes you have enabled when generating the API token.
+ <img src="https://i.imgur.com/Ri1rcX7.png"/>
+:::
+ 
+### Activate Shopify events you wish to use in Studio
+
+Apart from the events mentioned in the previous section, you can enable other events that you want to make use in Studio. For a list of events supported in Studio, see [here](#supported-shopify-events-you-can-use-in-studio).
+
+To enable events:
+
+1. Go to **Studio** > **Event** > **Integrations**. You will see all the events related to Shopify with the prefix `shopify<eventName>`.
+
+  <img src="https://i.imgur.com/Qeq0NvS.png"/>
+
+2. Navigate to the event that you want to enable and click on the more options icon > **Activate**.
+
+
+3. Once you enable required shopify events, you can use these Shopify events to:
+  
+  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event)
+  * [Initiate flow campaigns based on events](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-events)
+  * [Store user variables that come from user events into user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations)
+
+
+### Fetch Shopify data in bot conversations
 
 To make use of Shopify events in bot flows:
 
@@ -1951,18 +1992,20 @@ To make use of Shopify events in bot flows:
 8. You can decide which info to display to the user. Use the **Function** node to customise that information in the **Code** tab.
    For example, in the previous screenshot, order details are stored in the variable `order_details`. You can access this data using order_details.order.name.
 
-### Map shopify data to user properties
 
-You can add/update user properties with Shopify data through bot conversations by mapping them to user properties. This enables you to create highly personalized and engaging interactions with your users.
+### Shopify action nodes with Sample payloads
 
-<center><img src="https://i.imgur.com/vMqK1Nr.png" width="60%"/></center>
+You can see all the Shopify action nodes in **Integration** > **Shopify** node (Refer to the previous section for more details).
 
-For detailed instructions, see [Add user variables that come from user events into user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations).
+The following are some limitations with these action nodes: 
 
-You can create personalized conversations using stored properties, [know how](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations).
+1. **Data Fetch Limitation**: You can retrieve a maximum of 50 records (products/orders/collections etc.) in a single query or request.
 
+2. **Object Size Restriction**: The response object size is limited to 90KB. The data you send or receive should not exceed this limit.
 
-### Sample payloads for different Shopify actions
+3. **Product Display Limitation**: When displaying product details, you can showcase up to 8 carousel images. This limitation is due to the inability to use a "Next" option to view additional products in subsequent lists.
+
+These points highlight the specific constraints and limitations that users or developers should be aware of when working with this system or application.
 
 
 <Tabs style="flex-wrap: wrap;">
@@ -2199,9 +2242,22 @@ collection_id | Number | 482865238
 </Tabs>
 
 
+
+### Map shopify data to user properties
+
+You can add/update user properties with Shopify data through bot conversations by mapping them to user properties. This enables you to create highly personalized and engaging interactions with your users.
+
+<center><img src="https://i.imgur.com/vMqK1Nr.png" width="60%"/></center>
+
+For detailed instructions, see [Add user variables that come from user events into user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations).
+
+You can create personalized conversations using stored properties, [know how](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations).
+
+
+
 ---
 
-## 6. Run campaigns based on Shopify events
+## 5. Run campaigns based on Shopify events
 
 You can initiate Flow campaigns based on Shopify events that you have enabled in Yellow.ai.
 
@@ -2267,7 +2323,7 @@ To know more about Flow campaigns, click [here](https://docs.yellow.ai/docs/plat
 
 ***
 
-## 7. Import Shopify bot from Marketplace template
+## 6. Import Shopify bot from Marketplace template
 
 Importing a Shopify bot template into your Yellow.ai account is a straightforward process that streamlines the integration of Yellow.ai with your Shopify store. This template provides pre-configured floes and actions designed to enhance your e-commerce operations. This includes flows such as Browse products, Get order details, authenticate user via OTP, show customer details, connect to support, and raise ticket.
 
@@ -2531,19 +2587,7 @@ Sample json response object for findCustomerbyEmail -
 
 
 
-
-## 8. Limitations
-
-1. You can fetch up to 50 products a time.
-2. You can use only 90kb of object size 
-3. You can have upto 8 carousel images since you cannot input the Next option to see more products in the subsequent list. 
-
----
-:::note
-Abandon cart option is not available.
-:::
-
-## 9. Troubleshooting 
+## 7. Troubleshooting 
 
 **Error: Your webhook is failing**
 
@@ -2553,7 +2597,7 @@ Ensure you have enabled Shopify's event in **Event Hub**. If your webhook fails 
 ---
 
 
-## 10. Disconnect Integration
+## 8. Disconnect Shopify integration
 
 To remove this integration from your bot:
 
@@ -2561,7 +2605,7 @@ To remove this integration from your bot:
 2. Search for  **Shopify shop** > **Disconnect**.
    ![](https://i.imgur.com/5rb2Fxd.png)
    
----
+--- 
 
 
 ### Important References 
