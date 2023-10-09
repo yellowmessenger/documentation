@@ -10,9 +10,10 @@ const addDocTitleToPayload = () => {
         if (window.ymConfig && window.ymConfig.payload) {
             // @ts-ignore
             window.ymConfig.payload.title = titleText;
+            window.ymConfig.payload.pageUrl = window.location.href;
 
         } else if (window.ymConfig) {
-            window.ymConfig.payload = {title: titleText};
+            window.ymConfig.payload = {title: titleText, pageUrl: window.location.href};
         }
     }
     console.log("BOT.JS", window.ymConfig.payload)

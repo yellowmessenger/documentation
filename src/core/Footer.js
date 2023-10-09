@@ -105,8 +105,7 @@ const Footer = () => {
           <a href="https://yellow.ai/privacy-policy" target="_blank">
             Privacy Policy
           </a>
-          <span>Sitemaps</span>
-          <span>FAQs</span>
+          
           <span>
             @2022 yellow.ai, a trading division of Biotonic Labs Ltd. All
             rights reserved worldwide.
