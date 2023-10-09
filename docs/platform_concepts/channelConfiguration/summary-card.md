@@ -1,6 +1,6 @@
 ---
 title: Chat widget Summary card
-sidebar_label: Chat widget Summary card
+sidebar_label: Summary card
 ---
 
 The chat widget includes a summary card within bot responses, presenting users with precise and relevant information related to their queries. This card includes a brief description, message feedback options (:thumbsup: and :thumbsdown:), and reference links.
