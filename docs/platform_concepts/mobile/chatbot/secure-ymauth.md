@@ -18,12 +18,3 @@ The following are the steps involved in setting up secure YMAuthentication:
 6. **Update configuration**:<br/> Once you receive the new token, update the configuration’s ymAuthenticationToken with a new value.
 7. **Revalidate the token**:<br/> Pass this updated token, along with the "refreshSession" value (obtained earlier), by invoking the revalidateToken function from the Chatbot SDK. This action revalidates the token and refreshes the chat session.
 8. **Handling invalid tokens**:<br/> If the token is found to be invalid, you will receive another `ym-revalidate-token` event (up to 3 incorrect attempts). Follow the above steps to revalidate the token. After three unsuccessful attempts, if the token remains invalid, you will be directed to an error page with a *Try again* option.
-
-### Bot session validation upon launch
-
-![](https://cdn.yellowmessenger.com/IwSJq5KuWhFg1695958536969.mp4)
-
-
-### Revalidating a loaded bot session when it expires
-
-![](https://cdn.yellowmessenger.com/fJNg53raWVim1695958730603.mp4)
