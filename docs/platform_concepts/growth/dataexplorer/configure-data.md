@@ -21,7 +21,7 @@ Steps to push custom data to default tables:
 1. Add a new user property on the [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) page. 
 2. Click **Data explorer** > **Configure**. 
     ![](https://i.imgur.com/y0JULrU.png)
-3. From the dropdown menu, choose a property (the custom data you want to push to API events, Bot events, Message events, and User engagement events tables) for CUSTOMID 1 and CUSTOMID 2.
+3. Select **Map custom data**. From the dropdown menu, choose a property (the custom data you want to push to API events, Bot events, Message events, and User engagement events tables) for CUSTOMID 1 and CUSTOMID 2.
     ![](https://i.imgur.com/c4qJSSX.png)
 4. Click **Configure** and **Add**. Your custom data will get populated in the default tables.  
     <img  src="https://i.imgur.com/EmlxTmE.png"  width="50%"/>
@@ -54,11 +54,11 @@ Encrypted data:
 
 | Tables | ColumnsColumns |
 | -------- | -------- |
-|  API events | UID|
-| Message events | UID |
-| User engagement events | UID |
+|  API events | UID, BID |
+| Message events | UID, BID |
+| User engagement events | UID, BID |
 | User feedback | UID|
-| Inbox events | UID |
+| Inbox events | UID, AgentId |
 | Inbox call records | UID
 | Chat tickets | User_ID, Contact_phone, Contact_email, Contact_name |
 | Email tickets | Contact_first_name, Contact_email|
@@ -68,6 +68,7 @@ Encrypted data:
 | Leads | UID, BID |
 | Conversations | UID, userName, replyTo, answeredBy |
 | Bot tables | Masked columns will be encrypted (builder configuration) |
+| Analytics (Under Custom Tables) | UID, BID | 
 
 
 4. Click **Configure** to save the configuration and encrypt all PII data.
