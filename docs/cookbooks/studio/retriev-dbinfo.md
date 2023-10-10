@@ -8,4 +8,4 @@ sidebar_label: Retrieve database data inside a flow
 
 <img  src="https://i.imgur.com/4gP0X0w.png"  width="100%"/>
 
-3. Click the **Select Variable** option at the bottom right corner and create a new variable. All the information in your database will now be stored in this variable. Use this code snippet **{{{variables.dbResponse.record.0.fieldName}}}** in your flows to retrieve a specific set of data.
+3. Click the **Select Variable** option at the bottom right corner and create a new variable. All the information in your database will now be stored in this variable. Use this code snippet **{{{variables.dbResponse.records.0.fieldName}}}** in your flows to retrieve a specific set of data.
