@@ -141,9 +141,9 @@ The following table provides a comprehensive list of Shopify events along with t
   | shopifyCartCreate     | A cart is created in Shopify.   | Track shopping cart activity, gather data on abandoned carts, or initiate cart-related marketing efforts when a cart is created in Shopify store. |
 
 
-
-
-
+:::note
+To know how to run campaigns based on Shopify events, see [here](#run-campaigns-based-on-shopify-events).
+:::
 
 ### Payload samples of Shopify events in User 360
 
@@ -1892,6 +1892,69 @@ The following are the event schemas associated with various Shopify events. Thes
 </Tabs>
 
 
+### Run campaigns based on Shopify events
+
+You can initiate Flow campaigns based on Shopify events that you have enabled in Yellow.ai.
+
+In [Flow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign), choose **Condition** as *Has done event check* and in **Campaign triggers when user**, choose the event that you want to use to trigger campaigns.
+
+<center><img src="https://i.imgur.com/LC7jd5q.png" width="60%"/></center>
+
+Here are some examples:
+
+
+
+<Tabs>
+<TabItem value="AbandonedCart" label="Abandoned cart recovery campaign" default>
+
+
+
+In an online store on Shopify, you notice that some customers abandon their shopping carts during the checkout process. To recover those potential sales, set up a Flow campaign to automatically send reminders to users who have abandoned their shopping carts on your Shopify store.
+
+
+**Entry trigger**: `shopifyCartCreate` event
+
+**Exception to trigger notification**: `ShopifyCheckoutCreated` event
+
+**Flow configuration**:
+
+
+1. **Trigger the flow**: Initiate the campaign when a user adds items to their cart, identify it using the `shopifyCartCreate` event. 
+
+   ![](https://i.imgur.com/qxmCKM3.gif)
+
+2. **Wait condition**: Check if the user has completed the purchase by waiting for the `ShopifyCheckoutCreated` event. Set time delay, say 10 min. If no `ShopifyCheckoutCreated` event is detected within 10 min, proceed to the next step.
+
+   ![](https://i.imgur.com/2210dOW.gif)
+
+3. **Send abandonment reminder**:  If the user has not completed the purchase within the specified time, send a WhatsApp notification. Here is a sample message:
+
+   ![](https://i.imgur.com/MSyaUBa.gif)
+
+   - *Sample Notification Message:* "Hello [User's Name], we noticed you left some wonderful items in your cart. 🛒 Don't miss out on these great finds! Tap here to complete your purchase: [Checkout Link]. Thank you for choosing our store!"
+
+
+</TabItem>
+
+
+<TabItem value="newCustomer" label="New customer welcome campaign" default>
+When a new customer registers on your Shopify store (shopifyNewCustomer event), you can trigger a welcome campaign to send a warm welcome message and offers a discount code for their first purchase.
+</TabItem>
+
+
+<TabItem value="orderConfirmation" label="Order confirmation campaign" default>
+When an order is successfully placed (shopifyNewOrder event), send an order confirmation campaign. This includes order details, expected delivery date, and a thank-you message.
+</TabItem>
+
+</Tabs> 
+
+
+:::note
+You will see only events that you have enabled for the bot. For more details, [see how to activate events](#3-activate-shopify-events-you-wish-to-use-in-yellowai).
+:::
+
+
+To know more about Flow campaigns, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
 
 ***
 
@@ -2253,69 +2316,6 @@ You can create personalized conversations using stored properties, [know how](ht
 
 ---
 
-## 5. Run campaigns based on Shopify events
-
-You can initiate Flow campaigns based on Shopify events that you have enabled in Yellow.ai.
-
-In [Flow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign), choose **Condition** as *Has done event check* and in **Campaign triggers when user**, choose the event that you want to use to trigger campaigns.
-
-<center><img src="https://i.imgur.com/LC7jd5q.png" width="60%"/></center>
-
-Here are some examples:
-
-
-
-<Tabs>
-<TabItem value="AbandonedCart" label="Abandoned cart recovery campaign" default>
-
-
-
-In an online store on Shopify, you notice that some customers abandon their shopping carts during the checkout process. To recover those potential sales, set up a Flow campaign to automatically send reminders to users who have abandoned their shopping carts on your Shopify store.
-
-
-**Entry trigger**: `shopifyCartCreate` event
-
-**Exception to trigger notification**: `ShopifyCheckoutCreated` event
-
-**Flow configuration**:
-
-
-1. **Trigger the flow**: Initiate the campaign when a user adds items to their cart, identify it using the `shopifyCartCreate` event. 
-
-   ![](https://i.imgur.com/qxmCKM3.gif)
-
-2. **Wait condition**: Check if the user has completed the purchase by waiting for the `ShopifyCheckoutCreated` event. Set time delay, say 10 min. If no `ShopifyCheckoutCreated` event is detected within 10 min, proceed to the next step.
-
-   ![](https://i.imgur.com/2210dOW.gif)
-
-3. **Send abandonment reminder**:  If the user has not completed the purchase within the specified time, send a WhatsApp notification. Here is a sample message:
-
-   ![](https://i.imgur.com/MSyaUBa.gif)
-
-   - *Sample Notification Message:* "Hello [User's Name], we noticed you left some wonderful items in your cart. 🛒 Don't miss out on these great finds! Tap here to complete your purchase: [Checkout Link]. Thank you for choosing our store!"
-
-
-</TabItem>
-
-
-<TabItem value="newCustomer" label="New customer welcome campaign" default>
-When a new customer registers on your Shopify store (shopifyNewCustomer event), you can trigger a welcome campaign to send a warm welcome message and offers a discount code for their first purchase.
-</TabItem>
-
-
-<TabItem value="orderConfirmation" label="Order confirmation campaign" default>
-When an order is successfully placed (shopifyNewOrder event), send an order confirmation campaign. This includes order details, expected delivery date, and a thank-you message.
-</TabItem>
-
-</Tabs> 
-
-
-:::note
-You will see only events that you have enabled for the bot. For more details, [see how to activate events](#3-activate-shopify-events-you-wish-to-use-in-yellowai).
-:::
-
-
-To know more about Flow campaigns, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
 
 ***
 
