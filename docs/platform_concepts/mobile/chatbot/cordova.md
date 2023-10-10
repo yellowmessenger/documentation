@@ -338,7 +338,7 @@ cordova.plugins.ymchat.getUnreadMessagesCount(
 
 ## Revalidate Token
 
-When your authentication token expires (after every 2 minutes), you can use revalidate token to generate a new token.
+When your authentication token expires, you can use revalidate token to generate a new token.
 
 Once your secure YMAuth is enabled, whenever your authentication token expires, the server will automatically initiate a request to get a fresh token from Yellow.
 
@@ -361,7 +361,7 @@ For more detailed information on how to set up secure YMAuthentication, click [h
 
 If you intend to transmit data back to the bot after it has been successfully launched and is in a running state, you can make use of this API.
 
-To use this api `event` is a mandatory parameter.
+To use this api `code` and `data` are mandatory parameter.
 
 ```javascript
 cordova.plugins.ymchat.sendEventToBot('code', { some-key: "some-value" });

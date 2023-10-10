@@ -7,9 +7,12 @@ Shopee is an e-commerce platform in Southeast Asia where businesses can sign up 
 
 Connecting Shopee to Yellow.ai enables live agent support for users to respond and view clicked products during the chat.
 
-Let's say, if you have a question about a product that you want to purchase, you can use the bot integrated with the Shopee channel to receive immediate assistance. If the bot is not able to answer your queries, a ticket is created in the Inbox for further support.
+![](https://i.imgur.com/6Onmzsd.png)
 
-   ![](https://i.imgur.com/6Onmzsd.png)
+:::note
+As per Shopee's documentation guidelines, automated chatbot replies are not supported. The recommended approach is to use the Shopee channel for interactions between users and live agents. This ensures that all interactions are handled by human agents rather than automated bots.
+<img src="https://i.imgur.com/IYaPkm6.png" alt="drawing" width="70%"/>
+:::
 
 ## Supported message types
  

@@ -111,7 +111,7 @@ To verify the Webhook URL domain, follow these steps:
 
    ![](https://i.imgur.com/kbFkuJF.png)
 
-2. Copy the content value to establish the [connection between the Webex channel](#connect-zalo-channel-to-your-bo) and your bot on the platform. 
+2. Copy the content value to establish the [connection between the Zalo channel](#connect-zalo-channel-to-your-bot) and your bot on the platform. 
 
    ![](https://i.imgur.com/plj0GDc.png)
 

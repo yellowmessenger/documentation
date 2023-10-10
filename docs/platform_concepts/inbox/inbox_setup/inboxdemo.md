@@ -56,7 +56,7 @@ You can follow any of the given three methods to create flow on **Studio** to su
 1. After creating a bot, go to **Studio**. 
 2. Open Preview bot tab and select **Connect to agent** (to configure Inbox flow) or **Others** (to connect to other live agent apps on Integrations).
 
-![](https://hackmd.io/_uploads/S19UYX2la.png)
+![](https://hackmd.io/_uploads/By12VYalT.png)
 
 #### Steps to create **Support flow** from scratch
 
