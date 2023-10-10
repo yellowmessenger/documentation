@@ -87,9 +87,11 @@ To edit/delete a canned response, click the 3 dots beside the Template name you 
 Saved/configured canned responses will be available in the chats/ticket section automatically, you can them by clicking canned response icon or by typing **#** followed by the required tag. 
 
 **Canned response on live chat screen** 
-![](https://i.imgur.com/5CqmfB6.png)
-**Canned response on email tickets screen** 
-![](https://i.imgur.com/VMHjZNZ.png)
+<img src="https://imgur.com/KNGeBhb.png" alt="drawing" width="70%"/> 
+
+
+**Canned response on email tickets screen**      
+    ![](https://i.imgur.com/VMHjZNZ.png)
 
 ### Canned response search functionality 
 

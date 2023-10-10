@@ -19,7 +19,7 @@ If this is the case, refer to this article for more information.
 
 - To resolve/transfer live chats, required custom fields must be entered on the user details. In the below image, **Order ID** is the custom field that must be entered to transfer/resolve this chat. 
     
-    <img src="https://i.imgur.com/QLMOAPw.png" alt="drawing" width="40%"/>   
+    <img src="https://imgur.com/aPBFnKA.png" alt="drawing" width="40%"/>    
 
 
 :::note
@@ -32,18 +32,18 @@ Custom fields can be marked for required to transfer /close chat while creating 
 
 - Agent can close the chat by clicking **Resolve**.   
 
-    <img src="https://i.imgur.com/2VlG6GP.png" alt="drawing" width="40%"/>     
+    <img src="https://imgur.com/0mqsZK2.png" alt="drawing" width="70%"/>      
 
 - Agent can **Transfer** a live chat,
     - **To a particular [Group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups)**: If the query is of a particular topic and it is transfered to a group, it is auto-assigned to any available agent of that group.
     > The numbers visible in the brackets next to the group names are the total number of agents available in that group. 
     - **To a particular [Agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents)**: If this query can be resolved only by the selected agent/want a particular agent to address this chat, select the agent's name. The live chat will be force transferred to that agent (even if they are offline or the concurrency is full).   
     
-    <img src="https://i.imgur.com/pI10HoR.png" alt="drawing" width="70%"/>   
+    <img src="https://imgur.com/rirxzu2.png" alt="drawing" width="80%"/> 
+
 
 - Select **Add me to collaborators** to view this chat when it is transferred to the next agent. You can add yourself to the collaborator while transfering when you want to work with your colleague to resolve a query.
     
-    <img src="https://hackmd.io/_uploads/ByPjjKbwn.png" alt="drawing" width="50%"/>
 
 ------
 
@@ -52,7 +52,7 @@ Custom fields can be marked for required to transfer /close chat while creating 
 Any chats can be re-opened, by clicking the **Re-open** button on the **missed chat or resolved chat** screens and providing mandatory details such as **Priority** and **Description**.
 The **re-opened chats will be created as new chats** and will be auto-assigned to an available agent (when it is not assigned to a particular agent, otherwise it will land in the My chats page of the selected agent).
 
-![](https://hackmd.io/_uploads/BJOdN9bDh.png)
+<img src="https://imgur.com/EorcLi6.png" alt="drawing" width="80%"/> 
 
 
 ------
@@ -67,5 +67,7 @@ The **re-opened chats will be created as new chats** and will be auto-assigned t
 |**Example**: When a query has been raised that is assigned to an agent who resolves chats of the category:**Shipping and delivery**. While having a chat, the customer asks a question about **Payments**. A collaborator can be added to help with the question about payments. Once it is answered, the collaborator can leave and take over their chats.|**Example**: A chat enquiring **Payments** has to be assigned to an agent resolving queries related to **Returns and Refunds**. In such case, the chat can simply be transferred to **Payments & Pricing** group. |
 
 
+<!--
 <img src="https://hackmd.io/_uploads/BJKfpK-Dh.png" alt="drawing" width="40%"/>
 
+-->
