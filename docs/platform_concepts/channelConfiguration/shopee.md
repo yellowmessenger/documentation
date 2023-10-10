@@ -9,9 +9,10 @@ Connecting Shopee to Yellow.ai enables live agent support for users to respond a
 
 ![](https://i.imgur.com/6Onmzsd.png)
 
+:::note
 As per Shopee's documentation guidelines, automated chatbot replies are not supported. The recommended approach is to use the Shopee channel for interactions between users and live agents. This ensures that all interactions are handled by human agents rather than automated bots.
-
 <img src="https://i.imgur.com/IYaPkm6.png" alt="drawing" width="70%"/>
+:::
 
 ## Supported message types
  
