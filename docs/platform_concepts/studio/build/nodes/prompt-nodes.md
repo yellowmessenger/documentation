@@ -85,9 +85,7 @@ For example, if users enter anything instead of their names(first + last name), 
 
 ![](https://i.imgur.com/t8UFyzS.png)
 
-**Function autovalidation in nodes**
-
-Yellow.ai automatically validates the **Name** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
+**Function auto-validation in nodes**
 
 
 |Input Type|User Input|Accepted/Not Accepted as a valid name|Name processed by the platform|
@@ -125,7 +123,7 @@ If default ISD is not selected, the platform will fetch India's ISD and try to v
 
 **Function autovalidation in nodes**
 
-Yellow.ai automatically validates the **Phone** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
+Yellow.ai automatically validates the **Phone** node and no additional validation is needed.
 
 |Input Type|User Input|Accepted/Not Accepted as a valid phone number|Phone number processed by the platform|
 |------|------|-------|------|
@@ -239,7 +237,8 @@ Bot checks if the entered email is in username@company.domain format.
 
 **Function autovalidation in nodes**
 
-Yellow.ai automatically validates the **Email** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
+Yellow.ai automatically validates the **Email** node and no additional validation is needed.
+
 
 |Input Type|User Input|Accepted/Not Accepted as a valid email address|Email address processed by the platform|
 |------|------|-------|------|
@@ -773,7 +772,7 @@ The following screenshot is how **Share your location** will look on your bot.
 
 **Function autovalidation in nodes**
 
-Yellow.ai automatically validates the **Location** node. Therefore, the QA team need not conduct any validation checks on bots for these nodes as they are already taken care of by the platform. 
+Yellow.ai automatically validates the **Location** node and no additional validation is needed.
 
 Location has various attributes. For e.g., lets say that we have stored the user response in obj type variable named “address”,
 
@@ -840,19 +839,32 @@ To let users skip this option,
 - Not Supported for WhatsApp, Instagram, Facebook , Teams, and Slack.
 :::
 
-Display a feedback widget and receive ratings and feedback with this node. 
-On this prompt, you can configure what your questions should be when you ask for feedback. Feedback prompt will ask for a rating on a scale of 5, and the additional comments prompt will take additional comments from the user in a text field if entered.
+The Feedback node displays a feedback widget and stores user ratings and comments in a database table. Feedback prompt will ask for a rating on a scale of 5, and the additional comments prompt will take additional comments from the user in a text field if entered.
+
+   ![](https://i.imgur.com/v61glfs.png)
 
 
-![](https://i.imgur.com/v61glfs.png)
+#### Feedback node data types:
 
-:::info
-- Feedback data can be found in **Insights** > **Data Explorer** > **User feedback**. You do not need to store it separately, the ratings, feedback  along with other user and flow details will be displayed here.
+* Use 'number' as the data type for the rating field.
+* Use 'string' as the data type for the comment field in the Feedback node.
 
-![](https://i.imgur.com/drECKWt.png)
+#### Customizable feedback questions:
 
-- The response to the Feedback node will be stored in an object [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables), you can access this data and display it by using {{variables.var_name.rating}} and {{variables.var_name.comment}}
-:::
+* You can configure the questions you want to ask for feedback on this prompt.
+* The feedback prompt will request a rating on a scale of 5.
+* You can collect additional comments from users in a text field if provided.
+
+
+#### Accessing Feedback data:
+
+1. Find feedback data in **Insights** > **Data explorer** > **User feedback**. Ratings, feedback, and other user and flow details are all stored here without the need for separate storage.
+
+  ![](https://i.imgur.com/drECKWt.png)
+
+2. The response to the Feedback node is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables), which can be accessed and displayed using `{{variables.var_name.rating}}` and `{{variables.var_name.comment}}`.
+
+
 
 ---
 

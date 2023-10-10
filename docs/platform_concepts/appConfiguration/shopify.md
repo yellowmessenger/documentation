@@ -143,10 +143,6 @@ The following table provides a comprehensive list of Shopify events along with t
 
 
 
-* To add/update user properties through bot conversations, see [this article](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
-* To create personalized bot conversations with user data, see [this article](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations).
-
-
 
 
 ### Payload samples of Shopify events in User 360
