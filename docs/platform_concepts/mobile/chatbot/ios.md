@@ -368,7 +368,7 @@ To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
 
 ## Revalidate Token
 
-When your authentication token expires (after every 2 minutes), you can use revalidate token to generate a new token.
+When your authentication token expires, you can use revalidate token to generate a new token.
 
 Once your secure YMAuth is enabled, whenever your authentication token expires, the server will automatically initiate a request to get a fresh token from Yellow.
 
