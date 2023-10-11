@@ -10,7 +10,7 @@ This saves you from the tedious task of individually responding to each comment.
 With FB comments integration, you can engage in seamless two-way conversations.
 
 :::note
-Facebook Messenger and Facebook comments function as separate communication channels.
+[Facebook Messenger](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger) and Facebook comments function as separate communication channels.
 :::
 
 The FB comments integration offers these features: 
@@ -104,3 +104,12 @@ To test your bot on Facebook page, follow these steps:
 
 * When the conversation between the agent and user ends, the bot takes the conversation forward with the user.
 
+### Test Facebook comments chatbot with FAQs
+
+You can also add FAQs to the bot to simplify bot responses. For example, for a product-related post, you can add all the details related to the product as questions and answers. The bot can respond to customer questions based on the FAQs that you have added.
+
+Similarly, you can test your FBM chatbot by adding different options such as order updates, shipping information, and so on. 
+
+First, [add few FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-1-add-faqs) and train them. Then, test them to ensure that they work as expected.
+
+   ![](https://i.imgur.com/hj3FKv1.jpg)
