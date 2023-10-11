@@ -93,3 +93,22 @@ Updated Time | Time at which the status was last updated.
 :::note
 Delivery Status such as Delivered and Read are not available for all channels except WhatsApp.
 :::
+
+
+## Download campaign report
+
+You can download the Flow campaign report to gain access to in-depth data on campaign metrics, audience engagement, conversion rates, and more. It's a valuable resource for analyzing your campaign's effectiveness and making data-driven decisions to enhance future marketing strategies.
+
+To download a Flow campaign report:
+
+1. On the **Engage** > **Flows** page.
+2. Click more options icon for a specific campaign > **Download report**.
+
+   ![](https://i.imgur.com/ZM182WA.png)
+
+   You will get a notification over email (external users) or Slack (Yellow users) with a link to download the report.
+
+   For detailed information about each entry in the CSV report, refer to [this article](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/outbound-report#download-and-analyse-campaign-report).
+   
+
+

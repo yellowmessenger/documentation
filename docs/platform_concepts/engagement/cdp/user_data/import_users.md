@@ -196,7 +196,7 @@ The system prioritizes past mapping over matching property names. If a past mapp
 When importing a CSV file, it is important to analyze any potential errors that may occur:
 
 * **New records**: New records will be created with the new userIds provided in the CSV file.
-* ***Failed records**: This can occur due to incorrect column mapping, data type mismatches, or other errors that prevent the addition or updating of users.
+* **Failed records**: This can occur due to incorrect column mapping, data type mismatches, or other errors that prevent the addition or updating of users.
 
 To ensure data accuracy, it is important to carefully review and address any import errors that arise.
 
