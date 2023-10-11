@@ -15,6 +15,10 @@ We have either two or three environments, depending on the specific bot: Develop
 
 ## Create database table
 
+:::note
+You can create a db table only in sandbox/development environment.
+:::
+
 1. Go to **Studio** > **Database**.
 2. Navigate to the base environment (Staging or Sandbox).
 3. Click **Create new table**.
@@ -214,6 +218,11 @@ For example, you can see the column named ‘test’ with `****` instead of real
 
 
 ## Delete database table fields or table
+
+
+:::note
+You can delete a db table only in sandbox/development environment.
+:::
 
 1. Go to **Studio** > **Database** and select the table to edit 
 2. Click **Table actions** and choose the preferred option.

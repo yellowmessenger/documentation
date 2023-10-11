@@ -37,6 +37,7 @@ Sent | The total number of messages sent from the campaign.
 Failed | The total number of messages that did not deliver successfully. 
 Goals | The total number of goals accomplished during the campaign. 
 
+
 The Performance section also includes the delivery status funnel chart, each status is explained in the following section.
 
 #### Message delivery status
@@ -56,6 +57,7 @@ Unsubscribed | User has opted out of receiving emails from the brand.
 Delivery delayed | Message sending got delayed for reasons such as servers are overloaded, and the recipient's mail server is temporarily offline.
 Spam reports | Email is reported as spam.
 Failed | Unable to send the message.
+malformed |  This occurs when essential properties in your template, such as the phone number or other user property, are not available for some users. 
 
 #### Campaign delivery status by messaging channels
 
@@ -117,7 +119,7 @@ For detailed information on how to understand campaign report, see the following
 | User Details     | All the details of the bot user in the current campaign.                                                 |
 | Template ID      | Name of the template used to trigger messages for that particular campaign.                              |
 | Sender ID        | The phone number/email ID from which the messages were sent. Learn how to configure sender IDs in Channels [Email](platform_concepts/channelConfiguration/email-outbound.md), [SMS](platform_concepts/channelConfiguration/sms-outbound-india.md), [WhatsApp](platform_concepts/channelConfiguration/whatsapp-configuration.md). |
-| Status           | Message delivery status. Supported statuses for email: Scheduled, Processing, Sent, Dropped, Delivery delayed, Bounced, Delivered, Opened, Clicked, Unsubscribed, Spam reports, Failed. To know about each status, see [Delivery status descriptions](#delivery-status-for-different-channels). |
+| Status           | Message delivery status. Supported statuses for email: Scheduled, Processing, Sent, Dropped, Delivery delayed, Malformed, Bounced, Delivered, Opened, Clicked, Unsubscribed, Spam reports, Failed. To know about each status, see [Delivery status descriptions](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/outbound-report#message-delivery-status). |
 | Quick Reply Response | Applicable for interactive templates. Example: For Whatsapp templates with a button, the quick reply response from the button will be captured against each user. |
 | Comments         | Delivery state of the particular message. For FAILED messages, the error description will be shown.      |
 | Scheduled Time   | The start time of the campaign.                                                                          |

@@ -2018,6 +2018,13 @@ To enable events:
   * [Store user variables that come from user events into user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations)
 
 
+:::note
+
+**Error: Webhook is failing**: 
+
+* Ensure you have activated the respective event as mentioned above. If your webhook fails more than twice, it will be removed and your application will not receive any notifications.
+:::
+
 ### Fetch Shopify data in bot conversations
 
 To make use of Shopify events in bot flows:
@@ -2319,7 +2326,7 @@ You can create personalized conversations using stored properties, [know how](ht
 
 ***
 
-## 6. Import Shopify bot from Marketplace template
+## 5. Import Shopify bot from Marketplace template
 
 Importing a Shopify bot template into your Yellow.ai account is a straightforward process that streamlines the integration of Yellow.ai with your Shopify store. This template provides pre-configured floes and actions designed to enhance your e-commerce operations. This includes flows such as Browse products, Get order details, authenticate user via OTP, show customer details, connect to support, and raise ticket.
 
@@ -2583,7 +2590,7 @@ Sample json response object for findCustomerbyEmail -
 
 
 
-## 7. Troubleshooting 
+## 6. Troubleshooting 
 
 **Error: Your webhook is failing**
 
@@ -2593,7 +2600,7 @@ Ensure you have enabled Shopify's event in **Event Hub**. If your webhook fails 
 ---
 
 
-## 8. Disconnect Shopify integration
+## 7. Disconnect Shopify integration
 
 To remove this integration from your bot:
 
