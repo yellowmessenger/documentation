@@ -108,7 +108,7 @@ To test your bot on Facebook page, follow these steps:
 
 You can also add FAQs to the bot to simplify bot responses. For example, for a product-related post, you can add all the details related to the product as questions and answers. The bot can respond to customer questions based on the FAQs that you have added.
 
-Similarly, you can test your FBM chatbot by adding different options such as order updates, shipping information, and so on. 
+Similarly, you can test your Facebook comments chatbot by adding different options such as order updates, shipping information, and so on. 
 
 First, [add few FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-1-add-faqs) and train them. Then, test them to ensure that they work as expected.
 
