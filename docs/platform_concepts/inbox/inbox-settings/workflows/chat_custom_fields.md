@@ -103,6 +103,15 @@ For example, when the customer sends "Charging broken", the agent can obtain the
 ![](https://i.imgur.com/HgH1VrT.png)
 :::
 
+:::note
+
+If you input a **URL** into **Short/Long text** custom fields, Inbox can automatically recognize it and facilitate one-click navigation for agents, simplifying the process compared to the tedious method where they have to manually select, copy, open a new tab, and paste the URL.
+- The URL won't be recognized if it doesn't have "www" in the web address.
+
+<img src="https://imgur.com/c3AGCz3.png" alt="drawing" width="30%"/> 
+
+:::
+
 ### Custom field limitation based on data types
 
 You can only create the following number of custom fields for each data type: 
