@@ -15,9 +15,12 @@ These metrics can be filtered for a particular time-range by clicking the data d
 
 :::
 
+## Bot metrics
+
+Coming soon! 
 
 ----
-
+<!-- 
 ## Bot metrics
 
 The Bot Metrics tab offers the following widgets:
@@ -45,7 +48,7 @@ The Bot Metrics tab offers the following widgets:
 <img src="https://imgur.com/HWwAMEB.png" alt="drawing" width="100%"/> 
 
 
-----
+-->
 
 ## Chat metrics
 
@@ -59,7 +62,9 @@ The Chat Metrics tab offers the following widgets which can be used for the user
     * **Completion rate**: This metric signifies the completion rate of the Dynamic chat node, calculated as (Users Completed / Users Entered) * 100.
 
 <img src="https://imgur.com/dv6bOxq.png" alt="drawing" width="100%"/> 
-    
+
+
+
 > Click **View Chat** link next to the relevant node name, to access conversation logs filtered by the chosen time frame, flow name, and node name within that flow.
 
 
