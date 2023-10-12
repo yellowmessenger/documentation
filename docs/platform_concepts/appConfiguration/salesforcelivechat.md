@@ -5,6 +5,10 @@ sidebar_label : Salesforce Live Chat
 
 Yellow.ai’s integration with [Salesforce](https://www.salesforce.com/in/) lets you connect with the live chat agents of **Salesforce** to resolve your queries.
 
+:::note      
+Agents must remain available (online) on Salesforce (when queue management and offline support are not configured).
+:::
+
 
 ## 1. Connect Salesforce with Yellow.ai
 
@@ -48,9 +52,9 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
  3. Click on the setup button at the top right corner and select **Setup**.
  4. In the **Quick Find** section, search for **Chat Buttons and Invitations** in the **Chat** section.
  5. Click on the button that is already created (if not, create a button).
- 6. In the **Chat Button Code**, locate an ID not starting with **573**, which is the Button ID.
+ 6. In the **Chat Button Code**, locate an ID starting with **573**, which is the Button ID.
 
-* **Base Url** - The chat API endpoint of a particular salesforce organization. To fetch this, refer to the following steps:
+* **Base URL** - The chat API endpoint of a particular salesforce organization. To fetch this, refer to the following steps:
 
  1. Login to your Salesforce account.
  2. Click on the app launcher and choose **Service Console**.
@@ -74,13 +78,18 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
 4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
 :::
 
+
+
 ## 2. Use-case
 
 This integration lets you connect with live agents on the **Salesforce** platform from your yellow.ai account. 
 
 :::note
-When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+- When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+- During the testing process, agents should be **online** for the specific button ID or group mapped in the configuration.
 :::
+
+
 
 ### 2.1 Chat with Salesforce Live Agent
  
