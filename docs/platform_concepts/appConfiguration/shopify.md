@@ -98,7 +98,7 @@ Please ensure that you enter your store name exactly as it is in the **Shopify**
 
 
 
-## 3. Shopify user data syncing in User 360
+## 3. Shopify user data syncing in User 360/Engage
 
 This integration automates the creation of user records in User 360 using Shopify event data. By default, it is configured to capture userIds, emails, and phone numbers. Additionally, the integration enables the automatic synchronization of the following event data with User 360. This empowers User 360 as a valuable resource for personalized and effective user engagement strategies.
 
@@ -1938,12 +1938,60 @@ In an online store on Shopify, you notice that some customers abandon their shop
 
 
 <TabItem value="newCustomer" label="New customer welcome campaign" default>
-When a new customer registers on your Shopify store (shopifyNewCustomer event), you can trigger a welcome campaign to send a warm welcome message and offers a discount code for their first purchase.
+
+When a new customer registers in your Shopify store, initiate a series of welcome emails, introducing them to your products and offering exclusive discounts on their first purchase.
+
+* **Event**: ShopifyNewCustomer
+* **Wait time**: Immediately
+
+  <img src="https://i.imgur.com/nI3l6lC.png" width="60%"/>
+
 </TabItem>
 
 
 <TabItem value="orderConfirmation" label="Order confirmation campaign" default>
 When an order is successfully placed (shopifyNewOrder event), send an order confirmation campaign. This includes order details, expected delivery date, and a thank-you message.
+</TabItem>
+
+<TabItem value="OrderCancellation" label="Reorder Incentive Campaign" default>
+
+For customers who cancelled an order on Shopify store, trigger a well-crafted campaign aimed at enticing customers to initiate a new transaction. The campaign is designed to re-engage customers who experienced an order cancellation and guide them toward completing a new purchase.
+
+   <img src="https://i.imgur.com/xEneOFU.png" width="60%"/>
+
+
+* **Event**: ShopifyOrderCancelled
+* **Wait time**: 24 hours
+* **Sample message**:
+
+
+
+```
+Subject: Exclusive Offer for Your Next Purchase 🛒
+
+Message:
+
+Dear [Customer's Name],
+
+We noticed that your recent order was canceled, and we're here to make it up to you with an exclusive offer.
+
+To show our appreciation for your continued support, we're pleased to offer you a special 20% discount on your next purchase. Use code: REORDER20 at checkout to enjoy your savings.
+
+We've also handpicked some fantastic product recommendations based on your previous preferences, which we think you'll love:
+
+Recommended Products:
+
+[Product 1]
+[Product 2]
+[Product 3]
+
+Explore these selections and easily add them to your cart with just a click.
+
+[Shop Now]
+```
+
+ 
+
 </TabItem>
 
 </Tabs> 
