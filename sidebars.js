@@ -86,6 +86,7 @@ module.exports = {
     "cookbooks/inbox/notifyagents",
     "cookbooks/inbox/priority-assignee",
     "cookbooks/inbox/transferwithoutinfo",
+    "cookbooks/inbox/notifycustomerofflinehandling",
   ],
 },    
 // end of inbox 
