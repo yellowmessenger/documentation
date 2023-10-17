@@ -5,7 +5,7 @@ sidebar_label: Chat analytics overview
 
 With the advent of generative AI bots, it has become increasingly crucial to monitor their performance and their impact on user decisions and business objectives. The **Analysis** section within the **Studio** module provides a comprehensive view of various metrics related to user interactions within **Chat metrics** (pertaining to a conversation when the **Dynamic chat nodes** are used).
 
-<img src="https://imgur.com/UEsb3FH.png" alt="drawing" width="100%"/> 
+![](https://hackmd.io/_uploads/SkYuXisZ6.png)
 
 :::info
 These metrics can be filtered for a particular time-range by clicking the data dropdown on the top right. 
