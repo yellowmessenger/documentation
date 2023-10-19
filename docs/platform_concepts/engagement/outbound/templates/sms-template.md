@@ -74,11 +74,6 @@ To track URL clicks:
 
 
 
-:::note
-* Currently, the metrics for URL clicks is available in the backend, The reporting UI for URL tracking will be relesed soon.
-:::
-
-
 ***
 
 ## 2. DLT compliance for Indian users
