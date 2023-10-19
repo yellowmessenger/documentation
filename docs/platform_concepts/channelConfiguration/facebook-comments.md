@@ -9,7 +9,9 @@ This saves you from the tedious task of individually responding to each comment.
 
 With FB comments integration, you can engage in seamless two-way conversations.
 
-
+:::note
+[Facebook Messenger](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger) and Facebook comments function as separate communication channels.
+:::
 
 The FB comments integration offers these features: 
 
@@ -71,7 +73,7 @@ Before you start testing your bot, setup your bot with intents to automatically 
 
 * **Define bot's purpose and scope**: First, understand the scope and purpose of your bot (use case). Clearly outline what types of questions or requests the bot should handle based on your intended use case.
 * **[Create Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)**: Include the intents for common questions or requests. Add the utterances to each intent and train them to trigger the respective flow.
-* **[Create flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)**: Design customized conversation flows to manage responses to your FB posts. You can incorporate text, images, videos, and file prompts within the flow. While quick replies are supported, they will be displayed as plain text in the bot's responses.
+* **[Create flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)**: Design customized conversation flows to manage responses to your FB posts. You can incorporate text, images, and file prompts within the flow. While quick replies are supported, they will be displayed as plain text in the bot's responses.
 
 Once you set up the bot, verify whether the bot effectively handles and responds to user comments according to the defined expectations.
 
@@ -100,4 +102,14 @@ To test your bot on Facebook page, follow these steps:
     ![](https://i.imgur.com/Ncsbe2k.png)
 
 
-* When the conversation between the agent and user ends, the bot takes the conversation forward with the user.     
+* When the conversation between the agent and user ends, the bot takes the conversation forward with the user.
+
+### Test Facebook comments chatbot with FAQs
+
+You can also add FAQs to the bot to simplify bot responses. For example, for a product-related post, you can add all the details related to the product as questions and answers. The bot can respond to customer questions based on the FAQs that you have added.
+
+Similarly, you can test your Facebook comments chatbot by adding different options such as order updates, shipping information, and so on. 
+
+First, [add few FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-1-add-faqs) and train them. Then, test them to ensure that they work as expected.
+
+   ![](https://i.imgur.com/hj3FKv1.jpg)

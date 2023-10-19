@@ -1,5 +1,5 @@
 ---
-title: Sticky agent - live chat assignment
+title: Sticky agent - live chat assignment (for all channels)
 sidebar_label : Chat assignment for sticky agent
 ---
 
@@ -9,7 +9,7 @@ In this article, you will learn:
 
 
 :::note
-This feature is applicable only for live chats.
+This feature is applicable only for live chats (for all the channels like WhatsApp, Instagram, etc.).
 :::
 
 

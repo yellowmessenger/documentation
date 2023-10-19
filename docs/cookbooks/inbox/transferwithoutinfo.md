@@ -1,6 +1,6 @@
 ---
 title: Flow to connect with an agent without asking for any information from the user
-sidebar_label: Agent transfer without user information
+sidebar_label: Use raise ticket node w/o input
 ---
 
 Follow the below steps to transfer the chat to an agent without asking for any information from the user:

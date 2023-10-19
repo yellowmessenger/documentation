@@ -30,8 +30,9 @@ To enable collaborators for chats/tickets, follow the below steps:
     
 
 
-**Collaborator on live chat**
-<img src="https://i.imgur.com/Ec8jjPi.png" alt="drawing" width="70%"/>
+**Collaborator on live chat and email tickets look alike**
 
-**Collaborator on email tickets**
+
 <img src="https://i.imgur.com/D554EhD.png" alt="drawing" width="40%"/>
+
+<img src="https://imgur.com/uUHZ1Jj.png" alt="drawing" width="30%"/> 

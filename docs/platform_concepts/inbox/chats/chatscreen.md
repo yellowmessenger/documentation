@@ -214,21 +214,29 @@ The following details are available on this screen to provide agents with more c
 
 ![](https://hackmd.io/_uploads/HyYE6Ilkp.png)
 
+
+
 | Type | Fields | Description|
 | -------- | -------- | -------- |
-| Basic     | User location, chatbot status, and chat status     | |
-|Chat details|Ticket ID| Assigned when the live chat request is created|
-||Description| Added when the live chat is raised|
-||Priority|Added when the live chat is raised (initially through Raise ticket action node)|
+|Contact details (integrated with User360)|| <img src="https://hackmd.io/_uploads/B1PXfVNR3.png" alt="drawing" width="90%"/>  <br/> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-cdp#use-user360-to-enhance-customer-context-in-inbox).|
+||Name| User name auto updated from the information provided to bot|
+||Phone number|Phone number auto updated from the information provided to bot|
+||Email ID|Email auto updated from the information provided to bot|
+||View contact | <img src="https://hackmd.io/_uploads/HJyOiS40h.png" alt="drawing" width="70%"/><br/> Click to update contact information |
+|Chat details||<img src="https://imgur.com/lfbtBaZ.png" alt="drawing" width="70%"/>|
+||Chat ID| Assigned when the live chat request is created|
+||Status ||
 ||Language|Conversation language is displayed here when [auto-translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) is enabled. Can be changed by the agent |
+||Priority|Added when the live chat is raised (initially through Raise ticket action node)|
+||Description| Added when the live chat is raised|
 ||Tags| Chats can be tagged by the agent. Select the [available tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) from the dropdown|
-||Note|Agents can add a note regarding the conversation|
-||Customer name|Name can be updated by the agent after confirming it with the customer|
-||Customer email|Email can be updated by the agent after confirming it with the customer|
-||Customer phone|Number can be updated by the agent after confirming it with the customer|
-|Custom fields||Inbox provides custom fields to fetch more insights from the customer. Configure and arrange the required custom fields. Learn [more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields).|
-|Timeline|Agent details and time that the live chat was assigned, closed, and number of agents that it has been transferred to.|![](https://i.imgur.com/muyrQEv.png)|
-|Collaboration details| More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu.|![](https://i.imgur.com/ybV3WJX.png)|
-|Device details|Details about the user device that the bot tracks.|![](https://i.imgur.com/VDayNjJ.png)|
+|Details| |<img src="https://hackmd.io/_uploads/rJG1Gs4An.png" alt="drawing" width="60%"/>|
+||Internal notes|Agents can add a note regarding the conversation or Internal notes are updated here|
+||Custom fields| Inbox provides custom fields to fetch more insights from the customer. Configure and arrange the required custom fields. Learn [more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields)|
+|Collaborators| | <img src="https://hackmd.io/_uploads/HkB5IUNA3.png" alt="drawing" width="60%"/><br/>More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu|
+| Activity log| | <img src="https://hackmd.io/_uploads/HyyGnrN02.png" width="70%"/> <br/> Click **View recent activity** to gain a comprehensive understanding of customer activity |
+|Website activity||<img src="https://hackmd.io/_uploads/BJRrt8ECh.png" alt="drawing" width="70%"/> <br/> This includes links to the URLs that your customer previously visited|
+|Device details| |<img src="https://hackmd.io/_uploads/r1IuF8ERn.png" alt="drawing" width="70%"/> <br/>Details about the user device that the bot tracks |
+
 
 

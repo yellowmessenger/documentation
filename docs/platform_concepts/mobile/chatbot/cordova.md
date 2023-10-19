@@ -67,6 +67,20 @@ cordova.plugins.ymchat.setAuthenticationToken("token");
 
 Note: History will load only when `Show history` flag is enabled in the channel settings
 
+### Use Secure YM Auth
+
+You can pass `useSecureYmAuth` to enable additional security to your chat history. This safeguards your chatbot from unauthorized access even if an unauthorized party tries to access the token. 
+
+To enable secure YmAuth, set `useSecureYmAuth` to `true`.
+
+```javascript
+cordova.plugins.ymchat.useSecureYmAuth(true);
+```
+
+:::note
+For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth).
+:::
+
 ### Push Notifications
 
 YMChat supports firebase notifications. Pass your `FCM token` in setDeviceToken method.
@@ -321,6 +335,41 @@ cordova.plugins.ymchat.getUnreadMessagesCount(
   }
 );
 ```
+
+## Revalidate Token
+
+When your authentication token expires, you can use revalidate token to generate a new token.
+
+Once your secure YMAuth is enabled, whenever your authentication token expires, the server will automatically initiate a request to get a fresh token from Yellow.
+
+When you are using the `ym-revalidate-token` event, your application must include both the `apiToken` and `refreshSession` as mandatory parameters. This ensures a seamless and secure revalidation process.
+
+```javascript
+cordova.plugins.ymchat.setBotId("botId");
+cordova.plugins.ymchat.setAuthenticationToken("authToken");
+
+cordova.plugins.ymchat.revalidateToken("new token", refreshSession);
+```
+
+:::note 
+For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth).
+:::
+
+***
+
+## Send Event To Bot
+
+If you intend to transmit data back to the bot after it has been successfully launched and is in a running state, you can make use of this API.
+
+To use this api `code` and `data` are mandatory parameter.
+
+```javascript
+cordova.plugins.ymchat.sendEventToBot('code', { some-key: "some-value" });
+```
+
+:::note 
+For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/send-event-workflow).
+:::
 
 ## Demo App
 

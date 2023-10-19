@@ -47,13 +47,19 @@ To learn more about entities, [click here. ](https://docs.yellow.ai/docs/platfor
 
 ### 1.3 Trigger flow using event
 
-Trigger a flow when an event takes place. An event refers to a recognized occurrence or action that can be used to trigger certain behaviors or actions within the chatbot. 
+You can trigger bot flows when a specific event occurs allowing you to automate responses and actions. With event based triggers, you can create personalized and timely interactions with your customers based on their actions.
 
-For example, if all the live chat agents are busy, a message can be triggered to inform the user that all live agents are currently occupied and unavailable to chat.
+Example:
 
-To learn more about  events, [click here. ](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub)
+If you run an online store, and a customer adds items to their shopping cart but abandons it without completing the purchase. You can set up an event trigger to activate a bot flow that sends a reminder message to the customer, encouraging them to complete their purchase. This automated response can help recover potentially lost sales.
 
-### 1.4 Trigger flow using page Url
+* To configure event based trigger: Create a flow that you want to trigger for a specific event and set the start node to event 
+
+   <center><img src="https://i.imgur.com/kCWiZah.png" width="70%"/></center>
+
+You can trigger flows using any event that is enabled for the bot. This can include system events, user events, custom events, and integration related events. To know about various events that are available in the system, see [Events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub).
+
+### 1.4 Trigger flow using page URL
 
 Initiate a flow with a page Url. For example, triggering the help centre URL on the contact us page.
 

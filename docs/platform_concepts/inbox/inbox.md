@@ -8,14 +8,17 @@ rank: 1
 
 Our Inbox is a comprehensive omnichannel helpdesk designed to empower customer support agents and live agents. Discover how you can provide exceptional customer support using Inbox's advanced features and functionalities.
 
+:::note
+To try Inbox demo, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo). 
+:::
+
 
 **Learn more about Inbox's capabilities**:
 
-1. [Easy navigation to inbox](#i1): Find out how to access Inbox effortlessly.
-2. [Powerful functionalities of inbox](#i2): Explore the wide range of features available in Inbox for efficient customer query management.
-3. [Stay notified with inbox notifications](#i4): Never miss a beat with timely notifications about important actions in your Inbox.
-4. [Orchestrator bot feature in inbox](#i5): Discover how the Orchestrator bot feature simplifies customer query handling and unifies the Inbox experience.
-5. [Inbox support on android & iOS](#and_ios): Access Inbox on your Android or iOS device and enjoy seamless customer interactions on the go.
+1. [Easy navigation to inbox and its powerful functionalities](#i2): Access inbox and explore the wide range of features available in Inbox for efficient customer query management.
+2. [Stay notified with inbox notifications](#i4): Never miss a beat with timely notifications about important actions in your Inbox.
+3. [Orchestrator bot feature in inbox](#i5): Discover how the Orchestrator bot feature simplifies customer query handling and unifies the Inbox experience.
+4. [Inbox support on android & iOS](#and_ios): Access Inbox on your Android or iOS device and enjoy seamless customer interactions on the go.
 
 **Check out our informative video on Inbox**:
 
@@ -32,7 +35,8 @@ Discover Inbox's features in detail:
 
 -----
 
-## <a name="i1"></a>  1. Easy navigation to Inbox
+
+## <a name="i2"></a> Powerful functionalities of Inbox
 
 To open Inbox, follow these simple steps:
 
@@ -40,10 +44,6 @@ To open Inbox, follow these simple steps:
 2. On the overview switcher, click **Inbox**.
 
 ![](https://i.imgur.com/Brz9Pb5.png)
-
-----
-
-## <a name="i2"></a>  2. Powerful functionalities of Inbox
 
 Inbox offers a wide range of options and modules to streamline your customer support process. Take advantage of the following functionalities:
 
@@ -63,7 +63,7 @@ Settings applied to Inbox in **Development (Sandbox/Staging)** mode do not carry
 
 -------
 
-## <a name="i4"></a>  3. Stay notified with Inbox notifications
+## <a name="i4"></a> Stay notified with Inbox notifications
 
 Stay informed about all the activities happening in your Inbox, based on your [access level](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) (Inbox Admin, Supervisor, or Agent). Here's how notifications work:
 
@@ -92,7 +92,7 @@ Configure your notification preferences on the settings page. Learn more [here](
 --------
 
 
-## <a name="i5"></a> 4. Orchestrator bot feature in Inbox
+## <a name="i5"></a> Orchestrator bot feature in Inbox
 
 With the powerful [orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator) bot feature, you can create a parent bot and add child bots from the same subscription. When you select **Unify inbox to all child bots**, support tickets received by the child bots become available in the parent bot's Inbox. This unified inbox allows you to efficiently respond to all customer queries.
 
@@ -102,7 +102,7 @@ With the powerful [orchestrator](https://docs.yellow.ai/docs/platform_concepts/s
 
 ----
 
-## <a name="and_ios"></a> 5. Inbox Support on Android & iOS
+## <a name="and_ios"></a> Inbox Support on Android & iOS
 
 Experience the convenience of Inbox on your Android or iOS device with YellowAI Partner. This dedicated app empowers agents to resolve queries swiftly, enhancing query resolution time and customer satisfaction. Key features of YellowAI Partner include:
 - Seamless communication with customers, providing round-the-clock support.

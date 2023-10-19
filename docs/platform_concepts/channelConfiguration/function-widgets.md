@@ -49,12 +49,12 @@ Host depends on the region where the bot is deployed. If this is not deployed re
 
 | Region Code | Region | Host |
 | --- | --- | --- |
-| R0 | INDIA - Azure Central India | https://cloud.yellow.ai |
-| R1 | MEA - Azure UAE North | https://r1.cloud.yellow.ai |
-| R2 | AKARTA - GCP Asia-Southeast2 | https://r2.cloud.yellow.ai |
-| R3 | SINGAPORE - AWS ap-Southeast-1 | https://r3.cloud.yellow.ai |
-| R4 | USA - AWS us-west-2 | https://r4.cloud.yellow.ai |
-| R5 | EUROPE - AWS eu-west-1 | https://r5.cloud.yellow.ai |
+| R0 | INDIA - India | https://cloud.yellow.ai |
+| R1 | MEA - UAE North | https://r1.cloud.yellow.ai |
+| R2 | JAKARTA | https://r2.cloud.yellow.ai |
+| R3 | SINGAPORE | https://r3.cloud.yellow.ai |
+| R4 | USA  | https://r4.cloud.yellow.ai |
+| R5 | EUROPE | https://r5.cloud.yellow.ai |
 
 ### 1.1 Hide the bot by default
 

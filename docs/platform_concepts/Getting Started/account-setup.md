@@ -14,9 +14,10 @@ This guide will walk you through the process of signing up for a yellow.ai accou
 If you're new to the yellow.ai platform, here's how to sign up:
 
 
-1. **Visit the website**: Go to cloud.yellow.ai.
+1. Visit  [https://cloud.yellow.ai](https://cloud.yellow.ai).
+1. **Visit the website**: Log in to https://cloud.yellow.ai.         
 2. **Choose signup mode**: Select your preferred signup method.
-3. **Fill in details**: Complete the required fields and click Sign up.
+3. **Fill in details**: Complete the required fields and click **Sign up**.
     ![](https://hackmd.io/_uploads/ByX-KWSn2.png)
 
 :::note 

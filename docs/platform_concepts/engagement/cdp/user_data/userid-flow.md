@@ -59,21 +59,22 @@ To add the User identification flow to your bot, follow these steps:
 
    <img src="https://i.imgur.com/WiY0CqZ.png" width="60%"/>
 
-#### Phone identifier flow
+### Phone identifier flow
   
    Select this option if the `phone` user property serves as the unique identifier for your users. Make sure to collect the phone number and store it in the `phone` user property, which is already set by default for this identifier flow.
 
    ![](https://hackmd.io/_uploads/HkrzKJcH3.png)
 
- #### Email identifier flow
+ ### Email identifier flow
  
  Select this option if `email` user property serves as the unique identifier for your users. Make sure to collect the email address and store it in the `email` user property, which is already set by default for this identifier flow.
 
    ![](https://hackmd.io/_uploads/ByMjFyqr3.png)
 
-#### Custom property flow
+### Custom property identifier flow
 
 Select this option if the unique identifier of your users is any property other than email or phone. In this case:
+
 
 1. Choose the custom property that serves as the unique identifier for your users. Please note that only String, Number, email, and phone data types are supported for the custom property.
    
@@ -83,14 +84,38 @@ Select this option if the unique identifier of your users is any property other 
   
    <img src="/img/cdp/customproperty.png" width="60%"/>
 
-   
-3. Collect the selected user property using the [Prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes).
+3. Collect property value.
+
+   **Collect values that comes through user input**
+
+   * Collect the selected user property using the [Prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and use **Save response in** to map the variable to the user property.
+
+   **Collect values that comes through payload**
+
+   * To capture a user property from a payload, use the funtion node and store the response in an object variable and retrieve it using the format: `variables.objVariableName.key` (as per the schema).
+
+   <img src="https://i.imgur.com/g4zb0a8.png" width="70%"/>
+
+**Collect values that comes through function**
+
+   * To capture properties from a function, store the response in a property or object variable depending on the response and store it in the user property using: `{{variables.responseVariable.key}}`.
+
+   <img src="https://i.imgur.com/g4zb0a8.png" width="70%"/>
+
+   > Learn how to usilize the [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) to capture data from the payload.
+
+:::note
+You can also use SDK APIs to programmatically set user properties and the user ID.
+:::
+
 4. Store the value in the relevant user property.
+
+   The following screenshots on how to store data captured through user input or payload in a user property. 
    
    ![](https://hackmd.io/_uploads/B1kn1dsHn.png)
 
 
-
+  <img src="https://i.imgur.com/U5Rg8pe.png" width="70%"/>
 
 :::caution
 In the User identification flow, if you don't store the user property correctly, the bot will stop and won't continue. If the user prompts the bot again, the user identification flow will start again as shown below.

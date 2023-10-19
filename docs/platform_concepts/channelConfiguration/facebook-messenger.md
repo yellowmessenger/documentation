@@ -3,101 +3,143 @@ title: Facebook Messenger
 sidebar_label: Facebook Messenger
 ---
 
-Facebook Messenger (FBM) is a messaging app (iOS/ Android) that allows you to chat with your Facebook contacts. It also allows you to send and receive messages, photos, videos, audio recordings, and video calls. 
+Facebook Messenger (FBM) is a social media platform that allows you to interact with your users directly through Facebook business pages. FBM integration enables two-way conversations.
 
-Businesses can use Facebook Messenger chatbot to interact with their business contacts and their target audience. It is also used to automate customer support by answering frequently asked questions, providing product information, and responding to customer inquiries.
+Businesses can use FBM chatbots to automate customer support, provide order updates, shipping information, and send promotional messages to their users.
 
-## Character limitation of Facebook Business Messenger (FBM)
+This integration enables the following key features: 
 
-In this section, you can view the character limitations of FBM channel.
-
-### Quick reply
-
-Quick reply options |	Character limit
---------------------|----------------------
-Quick reply | <br/>• The maximum number of characters supported is 22. <br/>• A maximum of 13 quick replies are supported.
-
-### Carousel
-
-Carousel options	| Character limit
------------------|-----------------
-Carousel title | The maximum number of characters supported is 22.
+* **Automated Replies**: Provides the ability to automatically respond to user messages received in the FBM chat inbox.
+* **Supported message types**: You can use various message types including text, image, videos, file, carousel, and quick replies, enhancing the communication experience.
 
 :::note
-* You cannot add a description to the carousel prompt node.
-* The carousel message node is not supported.
+Facebook Messenger and [Facebook Comments](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-comments) function as separate communication channels.
 :::
 
-## Connect your Facebook messenger account
+## Limitations of Facebook Business Messenger (FBM) Chat
 
-To create a Facebook messenger account, follow these steps:
+
+Option | Character limit
+--------------------|----------------------
+Character limit in each quick reply | 22
+Maximum number of quick replies | 13
+Character limit for the Carousel title | 22
+Character limit for Text message | 2000
+ 
+
+## Setting up FBM chatbot
+
+To set up FBM bot, you need to perform the following:
+
+* [Connect Facebook page to Yellow.ai](#connect-your-facebook-page-to-yellowai)
+* [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Test your FBM chatbot](#test-fbm-chatbot)
+
+## Connect your Facebook page to Yellow.ai
+
+To connect your Facebook page to Yellow.ai, you need to have a Facebook Business account with at least one Facebook page created.
+
+:::note
+To establish a connection, you must be an admin of the Facebook account and the respective Facebook page.
+:::
+
+
+To connect your Facebook page to Yellow.ai, follow these steps:
 
 1.  On the switcher, click **Channels**.
 
-   <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="100%"/>
+    <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="100%"/>
    
 2. On the **Messaging** channels page, click **Facebook messenger**.   
 
-   ![](https://i.imgur.com/EUeBbYi.png)
+    ![](https://i.imgur.com/EUeBbYi.png)
 
 3. Click **Connect to your Facebook account**. 
-
-:::note
-You need admin access to create an account.
-:::
 
    ![](https://i.imgur.com/k8oQiV9.png)
 
 
-4. Login to your Facebook account that is connected with your Facebook Business Page.
+4. Login to your Facebook account that is connected to your Facebook Business Page.
 
-   <img src="https://i.imgur.com/47XbbF2.png" alt="drawing" width="60%"/>
+    <center><img src="https://i.imgur.com/47XbbF2.png" alt="drawing" width="60%"/></center>
 
-5. After successfully logging in, click **continue** to navigate to your page.
+5. After successfully logging in, click **Continue** to navigate to your page.
 
-   <img src="https://i.imgur.com/e6z2lqv.png" alt="drawing" width="60%"/>
+   <center><img src="https://i.imgur.com/e6z2lqv.png" alt="drawing" width="60%"/></center>
 
 
 6. Select your business page. If you have more than one business page connected to this FB account, select the one for which you want to setup a chatbot, and then click **Next**.
 
-   <img src="https://i.imgur.com/o4bt7xF.png" alt="drawing" width="60%"/>
+   <center><img src="https://i.imgur.com/o4bt7xF.png" alt="drawing" width="60%"/></center>
 
-7. Enable the required permissions and click **Done**.
+7. Enable the required permissions, and click **Done**.
 
-   <img src="https://i.imgur.com/Gzo0WJ7.png" alt="drawing" width="60%"/>
+   <center><img src="https://i.imgur.com/Gzo0WJ7.png" alt="drawing" width="60%"/></center>
 
-8. Your Facebook messenger account has been successfully connected to our platform. Enable the toggle button to connect your bot.
+8. Your Facebook page will be successfully connected to our platform. Enable the toggle button to connect your bot.
 
-   ![](https://i.imgur.com/Zgp95PF.png)
+    ![](https://i.imgur.com/Zgp95PF.png)
 
-## Test Facebook Business Messenger chatbot
 
-After creating your account successfully, you can start configuring the chatbot with any of the existing flows based on your business requirements.
+## Setup your bot
 
+Before you start testing your bot, set up your bot with intents to automatically respond to user messages on their Facebook pages.
+
+* **Define bot's purpose and scope**: First, understand the scope and purpose of your bot (use case). Clearly outline what types of questions or requests the bot should handle based on your intended use case.
+* **[Create Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)**: Add the intents that correspond to common questions or requests from users. Within each intent, add the relevant utterances and ensure they are trained to trigger the appropriate flow.
 :::note
-* `Get Started` in Facebook messengeer only works when get_started is added as the start trigger.
+To trigger the respective flow in the FBM chatbot, you must add the utterances `get started` and `Get Started` and train them accordingly.
 :::
+* **[Create flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)**: Design customized conversation flows to manage responses to your FBM. You can use the nodes such as name, email, phone number, quick reply, image, video, text, file within the flow.
 
-To test FBM chatbot, follow these steps:
+Once you set up the bot, verify whether the bot responds to user according to the defined use case.
 
-1. Open your Facebook account and switch to your business page.
+## Test Facebook Business Messenger
 
-   ![](https://i.imgur.com/2Fzfba4.png)
-   
-2. Click **Message** to test your bot.
+### Test FBM Chatbot
 
-   ![](https://i.imgur.com/OEMAEvD.png)
+Once you have linked your bot to your Facebook page through the Yellow.ai platform, you need to test the bot to verify whether the bot  is able to respond to user messages on their Facebook page.
 
+To test your bot on Facebook page, follow these steps:
+
+1. Open your Facebook account and go to your business page.
+  
+2. Click **Message**.
  
-#### Test FBM chatbot by adding FAQs
+    ![](https://i.imgur.com/8x7cUTb.png)
+    
+3. Click **Get Started** to start the conversation with the bot. Make sure you have already created an intent and added the utterances `get started` and `Get Started` to trigger the corresponding flow in your FBM chatbot.
 
-For example, let us try to [add a few FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-1-add-faqs) and see how it works in the FBM chatbot.
+   ![](https://i.imgur.com/3dOQry2.png)
+   
+* The FBM chatbot will trigger the relevant flow, and you can start interacting with the bot.   
+   
+   <img src="https://i.imgur.com/hzNPPgs.png" alt="drawing" width="30%"/>
+   
+:::note
+If you have not added the `get started` or `Get Started` utterances to your flow, the FBM chatbot will not trigger the intended flow. Instead, a fallback message will be displayed.
+:::   
+   
+4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
 
-After adding the FAQs and training the chatbot, you can test your FBM chatbot in your brand page's messenger channel based on the FAQs that you have added.
+    <img src="https://i.imgur.com/jG4pgDK.png" alt="drawing" width="50%"/>
+    
+5. To view the entire conversation between the live agent and user, navigate to the **Inbox** module in the platform and select **Bot messages** in the **My Chats** section.
 
-   <img src="https://i.imgur.com/egpbjjI.png" width="40%"/>
+    ![](https://i.imgur.com/o21FqgC.png)
 
-Similarly, you can test your FBM chatbot by adding different options such as product showcase, order status, and so on.
+
+* When the conversation between the agent and user ends, the bot takes the conversation forward with the user.   
+
+### Test FBM chatbot with FAQs
+
+You can also add FAQs to the bot to simplify bot responses. For example, for a product-related post, you can add all the details related to the product as questions and answers. The bot can respond to customer questions based on the FAQs that you have added.
+
+Similarly, you can test your FBM chatbot by adding different options such as order updates, shipping information, and so on. 
+
+First, [add few FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#-1-add-faqs) and train them. Then, test them to ensure that they work as expected.
+
+   <center><img src="https://i.imgur.com/dcJjGfE.png" width="40%"/></center>
 
 ## Facebook Business best practices
 

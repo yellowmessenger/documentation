@@ -21,27 +21,27 @@ In this article, you will learn:
 
 Custom fields can be added to tickets and are used to track business-specific information related to the customer like Order ID, Address, case details, etc. These are customized fields created by the admin to obtain additional details based on the industry. Custom fields enable your teams to add more information and further context about a case, which helps with better reporting and faster resolution. 
 - As per the configuration, Custom fields can also be used as mandatory fields to **Resolve/Transfer** a chat/ticket.
+- **11 types of Custom fields** are available for both live chats and email tickets.
+
 
 **Where can you find custom fields?**
 
-11 types of Custom fields are available for both live chats and email tickets.
 
-- On the [chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-2-user-details) screen, expand **Custom fields**. These are captured and passed to inbox via. **Raise ticket node > Advanced options**. 
+- On the [chat screen](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-2-user-details), expand **Details**. These are captured and passed to inbox via. **Raise ticket node > Advanced options**. 
 
-    ![](https://i.imgur.com/9ws77BL.png)
+    <img src="https://imgur.com/shBBqq5.png" alt="drawing" width="40%"/> 
 
 - On the [email detailed view](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro#25-other-details) screen, expand **Ticket fields**. 
 
     <img src="https://i.imgur.com/PHBkbaq.png" alt="drawing" width="70%"/>
 
 
-**Access**
+**Who can update/view custom fields?**
 
 - **Inbox Admins** can update/create and reorder custom fields for all the tickets. Agents can also search by custom field values if they are of the type short test, long text, email, number, phone and date.
 - **Inbox Agent** with access to edit that particular ticket will have permission to update these custom fields in the chat/ticket screen. 
 - **Inbox Supervisor** can make changes to the custom fields on chat/email screen of any inbox agents they supervise. 
 
-    ![](https://i.imgur.com/3L9jEmR.png)
 
 
 
@@ -103,6 +103,15 @@ For example, when the customer sends "Charging broken", the agent can obtain the
 ![](https://i.imgur.com/HgH1VrT.png)
 :::
 
+:::note
+
+If you input a **URL** into **Short/Long text** custom fields, Inbox can automatically recognize it and facilitate one-click navigation for agents, simplifying the process compared to the tedious method where they have to manually select, copy, open a new tab, and paste the URL.
+- The URL won't be recognized if it doesn't have "www" in the web address.
+
+<img src="https://imgur.com/c3AGCz3.png" alt="drawing" width="30%"/> 
+
+:::
+
 ### Custom field limitation based on data types
 
 You can only create the following number of custom fields for each data type: 
@@ -128,7 +137,7 @@ For chat disposition with custom fields, you must mark the below checkboxes:
 
 If these checkboxes are marked, the agent can not transfer or resolve the chat without providing a value for the custom field.
 
-![](https://i.imgur.com/gb1Fcyw.png)
+<img src="https://imgur.com/TlSQqqt.png" alt="drawing" width="50%"/> 
 
 ----
 

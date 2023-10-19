@@ -124,6 +124,20 @@ ymChat.config.ymAuthenticationToken = "your-token"
 History will load only when `Show history` flag is enabled in the channel settings.
 :::
 
+### Use Secure YM Auth
+
+You can pass `useSecureYmAuth` to enable additional security to your chat history. This safeguards your chatbot from unauthorized access even if an unauthorized party tries to access the token. 
+
+To enable secure YmAuth, set `useSecureYmAuth` to `true`.
+
+```java
+ymChat.config.useSecureYmAuth = true
+```
+
+:::note
+For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth).  
+:::
+
 ### Push Notifications
 
 YMChat supports firebase notifications. Assign your `FCM token` to deviceToken
@@ -435,6 +449,57 @@ To use this api `botId` and `ymAuthenticationToken` are mandatory parameters.
         }
 ```
 
+## Revalidate Token
+
+When your authentication token expires, you can use revalidate token to generate a new token.
+
+Once your secure YMAuth is enabled, whenever your authentication token expires, the server will automatically initiate a request to get a fresh token from Yellow.
+
+When you are using the `ym-revalidate-token` event, your application must include both the `apiToken` and `refreshSession` as mandatory parameters. This ensures a seamless and secure revalidation process.
+
+```java
+    try {
+        YMChat ymChat = YMChat.getInstance();
+        ymChat.revalidateToken("new token", refreshSession);
+    } catch (Exception e) {
+        //Catch and handle the exception
+        e.printStackTrace();
+    }
+```
+***
+
+:::note 
+For more detailed information on how to set up secure YMAuthentication, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth).
+:::
+
+***
+
+## Send Event To Bot
+
+If you intend to transmit data back to the bot after it has been successfully launched and is in a running state, you can make use of this API.
+
+To use this api `event` is a mandatory parameter.
+
+```java
+    try {
+        YMChat ymChat = YMChat.getInstance();
+
+        HashMap<String, Object> payloadData = new HashMap<>();
+        //Setting Payload Data
+        payloadData.put("some-key", "some-value");
+
+        YMEventModel model = new YMEventModel(code, payloadData);
+        ymChat.sendEventToBot(model);
+    } catch (Exception e) {
+        e.printStackTrace();
+    }
+```
+
+:::note 
+For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/send-event-workflow). 
+:::
+
+***
 
 ## Dependencies
 

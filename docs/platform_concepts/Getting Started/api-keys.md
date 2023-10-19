@@ -5,7 +5,7 @@ tags: [bot token, get bot token, bot access token, access token, x-auth-token, b
 ---
 
 :::note
-Only super admin of the bot will have access to generate API keys.
+Only super admin and admins of the bot will have access to generate API keys.
 :::
 
 API keys act as secure passcodes, granting authorized access to specific functionalities or resources within a system. They serve as an additional layer of protection, safeguarding sensitive data and ensuring that only authenticated users or applications can interact with the API.

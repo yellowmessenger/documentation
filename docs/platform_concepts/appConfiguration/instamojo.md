@@ -11,7 +11,7 @@ Yellow.ai Integration with Instamojo Payment Gateway allows you to generate paym
 Configuring the integration with Instamojo is straightforward. Follow the steps defined below to start integrating:
 
 1. Sign up on Instamojo.
-    * __Test Mode:__ This mode is for testing and for developers who are just getting started in Instamojo Integration. Test Mode is completely Free of Charge. No real charges will be made, even if we give our valid card details in the Instamojo use (https://test.instamojo.com/) to sign Up
+    * __Test Mode:__ This mode is for testing and for developers who are just getting started in Instamojo Integration. Test Mode is completely Free of Charge but requires KYC to be completed. No real charges will be made, even if we give our valid card details in the Instamojo use (https://test.instamojo.com/) to sign up.
     * __Live Mode:__ As the name suggests, In the Live Mode, we would be charged for real. To work on Live Mode, we have to give our bank account and KYC Details. Use (https://www.instamojo.com/) to Signup.
 
 2. After signing up, log in to Dashboard > Go to API & Plugins > Generate Credentials > Select Direct Rest API Integration.

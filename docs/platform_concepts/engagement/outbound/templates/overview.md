@@ -22,7 +22,7 @@ The following are the different channels that Engage supports for sending out ca
 
 To access Template manager, follow these steps -
 
-1. Log on to the yellow.ai platform and select your bot 
+1. Log on to the [Cloud Platform](https://cloud.yellow.ai) and select your bot 
 2. Click on **Engage for campaigns**. [OR] From the menu, click **Engage**.
 
    ![](https://i.imgur.com/WTdyVg4.jpg)

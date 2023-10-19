@@ -3,6 +3,13 @@ title: Events
 sidebar_label: Handle bot events
 ---
 
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+
+
 Events are occurences that happen in a platform or system.
 
 For example, let's consider a customer support chatbot for an e-commerce platform. When a user initiates a conversation, a welcome event is triggered, presenting a greeting message along with options for the user to select from.
@@ -19,7 +26,7 @@ The following are the events available for our chat widget.
 
 | Event | Description |
 |--------|---------------|
-| bot-opened | On a website:  when the user clicks the chat bubble to open the bot.<br/>For PWA: When the bot loads. |
+| bot-opened | For websites:  When a user clicks on the chat bubble to open the bot.<br/>For PWA: When the bot loads. |
 | bot-closed | When the user closes the bot.|
 | bot-loaded-on-page-reload | When the user reloads the current bot page or the page gets reloaded automatically. |
 | ym_home | When the user clicks the home button. |
@@ -60,12 +67,52 @@ The following are the events available for **Inbox**.
 The following are the events available for **Engage**.
 
 
-| Event                         | Description                                                      |
-|-------------------------------|------------------------------------------------------------------|
-| quick_reply_event             | When a user clicks on Quick reply option in whatsapp          |
-| campaign-notification-updates | Receive updates on campaign notifications   |
-| whatsapp-referral             | When a user referral is identified through WhatsApp.    |
-| fb-ad-referral                | When a user interacts with a Facebook ad and is referred to a specific destination or webpage.        |
+<Tabs>
+
+
+<TabItem value="quick_reply_event" label="quick_reply_event" default>
+
+This event occurs when a user clicks on Quick reply option in whatsapp.
+
+**Event schema**
+
+```json
+{
+  "event": {
+    "code": "quick_reply_event",
+    "data": "Haan, vapas aana hai",
+    "templateName": "Template name",
+    "userId": "919533211xxx",
+    "campaignId": "apiNotifications",
+    "extraParams": {
+      "campaignId": "apiNotifications",
+      "templateId": "element name:”Template name",
+      "workflowId": "null"
+    }
+  }
+}
+```
+
+</TabItem>
+
+<TabItem value="campaign-notification-updates" label="campaign-notification-updates" default>
+
+Receive updates on campaign notifications
+
+</TabItem>
+
+<TabItem value="whatsapp-referral" label="whatsapp-referral" default>
+
+When a user referral is identified through WhatsApp. 
+
+</TabItem>
+
+<TabItem value="fb-ad-referral " label="fb-ad-referral " default>
+
+When a user interacts with a Facebook ad and is referred to a specific destination or webpage.       
+
+</TabItem>
+</Tabs>
 
 
 
@@ -145,7 +192,29 @@ You can get the following fields in your referral event object:
 
 ### <a name="int-1"></a>  Integration related events
 
-The integration related events depend completely on the events the respective third-party app supports. Hence, the list of supported events might vary for each integration. 
+The integration related events depend completely on the events the respective third-party app supports. Hence, the list of supported events might vary for each integration.
+
+#### Shopify related events
+
+Event | Description
+----- | ----------
+shopifyCustomerUpdate | When there's an update to a customer's information in a Shopify store.
+shopifyNewOrder:** This event occurs when a new order is created in a Shopify store, indicating a customer's purchase.
+shopifyNewProduct | When a new product is added to the Shopify store's inventory.
+shopifyOrderCancelled | This event happens when an order in the Shopify store is canceled.
+shopifyOrderFulfilled | When an order is marked as fulfilled, indicating that it has been shipped or completed.
+shopifyOrderPaid | When an order in the Shopify store is marked as paid.
+shopifyRefundCreated | When a refund is created for an order in the Shopify store.
+shopifyNewCustome | When a new customer is added to the Shopify store.
+shopifyCheckoutCreated | When a customer initiates the checkout process in the Shopify store.
+shopifyCheckoutUpdate | When there's an update to a checkout in progress.
+shopifyOrdersUpdated | When there are updates or modifications to existing orders in a Shopify store.
+shopifyCartCreate | When a customer creates a shopping cart in the Shopify store, indicating their intent to make a purchase.
+shopifyCartEmpty | When a customer empties their shopping cart, indicating the removal of items they previously intended to purchase.
+shopifyUserSessionCreate | When a user initiates a session in the Shopify store, typically by logging in or visiting the site.
+shopifyUserSessionUpdate | When there's an update or change in the user's session within the Shopify store.
+
+
 
 ***
 

@@ -357,3 +357,13 @@ b. Service Implicit - transactional notifications sent based on customer’s act
 c. Service Explicit - Notifications to existing customers only promoting other products/services of the brand.<br/>
 </details>
 
+
+## Campaign errors & troubleshooting
+
+<details>
+
+<summary>  What does "Malformed issue" mean in my campaign error report? </summary>
+
+The 'Malformed issue' typically occurs when essential properties in your template, such as the phone number, are not available for some users. To resolve this, ensure that the required property variables are accurately captured.
+
+</details>

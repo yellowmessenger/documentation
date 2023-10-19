@@ -37,6 +37,8 @@ To add a new tag, follow the given steps:
 All the tags that have been created will be available in the tags dropdown menu, which agents can use to search and select the required values. You can find the tags in the following screens:
 
 1. Chat screen: 
-    ![](https://i.imgur.com/rcPTvFU.png)
+    <img src="https://imgur.com/7ylpMoM.png" alt="drawing" width="100%"/> 
+
 2. Ticket screen (detailed view): 
+
     ![](https://i.imgur.com/9u6ObzC.png)
