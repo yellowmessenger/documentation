@@ -1,5 +1,5 @@
 ---
-title: Sep 2023
+title: September 2023
 sidebar_label: Latest product updates (September 2023)
 featured: true
 ---
