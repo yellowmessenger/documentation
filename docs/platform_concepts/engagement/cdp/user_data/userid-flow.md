@@ -104,7 +104,10 @@ Select this option if the unique identifier of your users is any property other 
 
    > Learn how to usilize the [Function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) to capture data from the payload.
 
- 
+:::note
+You can also use SDK APIs to programmatically set user properties and the user ID.
+:::
+
 4. Store the value in the relevant user property.
 
    The following screenshots on how to store data captured through user input or payload in a user property. 
