@@ -5,6 +5,10 @@ sidebar_label : Freshchat
 
 Yellow.ai’s integration with [Freshchat](https://www.freshworks.com/lp/freshchat-live-chat-software-1/?tactic_id=3419421&gclid=Cj0KCQiA_bieBhDSARIsADU4zLcCLpI23wzdYy7F2mUUk2lIuAeiAp2MGNux6yTfARuOhC8YugNFJCgaAtFZEALw_wcB#&utm_source=google-adwords&utm_medium=FChat-Search-India-Brand&utm_campaign=FChat-Search-India-Brand&utm_term=freshchat&device=c&matchtype=e&network=g&gclid=Cj0KCQiA_bieBhDSARIsADU4zLcCLpI23wzdYy7F2mUUk2lIuAeiAp2MGNux6yTfARuOhC8YugNFJCgaAtFZEALw_wcB) lets you connect with the live chat agents of Freshchat to resolve your queries.
 
+:::note
+Token has to be generated the Super Admin of the freshchat account
+:::
+
 ## 1. Connect Freshchat  with Yellow.ai
 To connect your yellow.ai account with **Freshchat** follow these steps.
 

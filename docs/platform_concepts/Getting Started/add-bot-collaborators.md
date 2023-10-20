@@ -17,17 +17,18 @@ The following table outlines various roles along with the associated access priv
 
 | Role | Description |
 |------ | --------- |
-| Super Admin | <ol><li>The owner of the bot has access to all the modules.</li><li>Can provide *Approver* access to others.   </li><li>Can mask certain Database columns on UI. </li><li>Access bot tables and can [mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.</li></ol>|
-|Admin | Can access all components across modules.|
-|Developer | Can access all components across modules.|
-|Database Viewer | Can only view the database.|
-| Approver | Can publish bot from staging to production. An Approver should also have Developer access.|
-| Inbox (Admin) | Can provide support for chat queries or tickets of the bot, and can view the analytics of his/her performance (First response time, number of tickets closed).|
-|Inbox (Agent) | Agent can only respond to chats received from the user.|
-|Insights (Analytics) | Has access to standard analytics, bot health monitoring, and user journey and goal tracking.|
-|Insights (Admin) | Has access to all the available data and analytics.|
-|Engagement (Admin) | Can send campaigns and configure audience.|
-|Engagement (User) | Can only schedule campaigns.|
+| Super Admin |This user holds ultimate authority, capable of controlling all bot features: <ol><li>Can provide *Approver* access to others.   </li><li>Can mask certain Database columns on UI. </li><li>Access bot tables and can [mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.</li></ol>|
+|Admin | This user has comprehensive access to all modules and their components.|
+|Developer | This user has full access to bot components, enabling customization and development.|
+|Database Viewer | This user is limited to viewing tables and their data, ensuring data security.|
+| Approver | This user has the ability to publish the bot from staging/development to production/live. <br/>(prerequisite, must be given Developer access)|
+| Inbox (Admin) | This user can access all inbox components, including chat, email, and knowledge base (KB); also monitor performance (of agents and team) and customize inbox settings.|
+|Inbox (Agent) | This user can respond exclusively to customer chats or emails and is restricted to assigned interactions.|
+|Insights (Analytics) | This user can only access standard analytics (default table), bot health monitoring, user journey tracking, and goal monitoring for informed decision-making.|
+|Insights (Admin) | This user has holistic access to all bot-related data and analytics, enabling in-depth analysis.|
+|Engagement (Admin) | This user can manage campaign deployment and audience configuration for effective engagement strategies.|
+|Engagement (User) | This user can only schedule campaigns with simplified options, streamlining the campaign planning process.|
+
 
 ## Share bot access
 
