@@ -604,7 +604,7 @@ paths:
         - User
       summary: Add users (Bulk)
       operationId: createBulkUsers
-      description: This API allows you to add users in batches, with each batch accommodating up to 1000 records. It is highly recommended not to use the Bulk API for adding individual users to ensure a seamless experience.
+      description: This API allows batch user addition. Each batch can include up to 1000 records and a rate limit of 120 requests per minute. For a smoother experience, it is strongly advised not to utilize the Bulk API for adding individual users
       parameters:
         - name: bot
           in: query
