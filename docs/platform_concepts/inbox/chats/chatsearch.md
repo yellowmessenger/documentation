@@ -115,11 +115,7 @@ Filters can be applied in the details tab list based on the following options:
 
 
 :::info
-When you search first and apply a filter next, the filter will be applied on top of the search results. Whenever you search, it is a new operation and it is global. It will look for matching results across all tabs irrespective of the current tab.
-
-Whenever you first apply a filter, it will only filter within the current tab [ My chats, Active chats, etc.,] i.e, the chats list as shown in the image below:
-
-<img src="https://i.imgur.com/oyByMRC.png" alt="drawing" width="60%"/>  
+When you search first and apply a filter next, the filter will be applied on top of the search results. When you search, it is a new operation and it is global. It will look for matching results across all tabs irrespective of the current tab.
 
 If a user has applied some filters already and then searches for another keyword, the search will reset the applied filters and provide completely new results.
 :::
