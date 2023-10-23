@@ -119,7 +119,8 @@ Display any MP4 video file with this node.
 ![](https://i.imgur.com/qxdhtox.jpg)
 
 :::note
-Video size should be lesser than 50 MB
+1. Video size should be lesser than 50 MB
+2. This node does not support Youtube links, but you can upload any commonly available video links. For example, http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4.
 :::
 
 **Dynamic format**
