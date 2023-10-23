@@ -5,7 +5,7 @@ featured: true
 rank: 1
 ---
 
-## Outbound Campaigns
+## Outbound Campaigns/Notification API
 
 <details>
 <summary> How can we ensure that campaign messages are not sent to users who respond with DND?</summary>
@@ -59,6 +59,15 @@ How to add a WhatsApp number for testing purposes in the Live environment?
 
 </details>
 
+<details>
+
+<summary>Is there a way to access the delivery status as a response from the Yellow.ai notification API call itself?</summary>
+
+No, there isn't a direct way to access the delivery status as part of the response from the Yellow.ai notification API call. You need to use webhook URL to receive delivery status updates.
+
+The delivery status is asynchronous. This means that we don't have a precise timeframe for when a message will be delivered or read. Consequently, waiting for an unknown duration is not a feasible approach to obtain the delivery status within the API call response.
+
+</details>
 
 <details>
 <summary>How to add a welcome message for the WhatsApp channel?</summary>

@@ -52,6 +52,8 @@ Shopify is an e-commerce platform that lets merchants worldwide to build and cus
   * customers_update.
   * write_scripts_tags 
   * read_script_tags
+  * write_returns
+  * read_returns
 
 ### Step 2: Get Admin API access credentials
 
@@ -134,6 +136,7 @@ The following table provides a comprehensive list of Shopify events along with t
   | shopifyOrderFulfilled | An order was fulfilled or completed.   | Update shipping information, send shipping notifications to the customer, or update order status when an order is fulfilled or completed.  |
   | shopifyOrderPaid      | Payment made for an order. | Send payment receipt, or update financial record when a payment is made for an order.   |
   | shopifyRefundCreated  | A refund was created for an order.  | Update financial records, notify customers about their refund, or adjust inventory levels when a refund is issued for an order. |
+  | shopifyReturnRequest | A return request is initiated. | Helpful for handling return-related processes, such as notifying customers and managing inventory. |
   | shopifyNewCustomer    | A new customer is registered.  | Add the customer to User 360, send welcome email, or track customer acquisition when a new customer registers in your Shopify store. |
   | shopifyCustomerUpdate | A customer’s profile details have been updated. | Keep your customer database up to date or send profile change notification when a customer's profile details are updated. |
   | shopifyCheckoutCreated| Order checkout is initiated in Shopify. | Track order progress when an order checkout is initiated in your Shopify store.    |
@@ -1888,6 +1891,88 @@ The following are the event schemas associated with various Shopify events. Thes
 ```
 
 </TabItem>
+
+
+<TabItem value="shopifyReturnRequest" label="shopifyReturnRequest" default>
+
+
+```json
+{
+    "id": 3547267221,
+    "admin_graphql_api_id": "gid://shopify/Return/3547267221",
+    "status": "requested",
+    "order": {
+        "id": 5196695273621,
+        "admin_graphql_api_id": "gid://shopify/Order/5196695273621"
+    },
+    "total_return_line_items": 1,
+    "name": "#1106-R2",
+    "return_line_items": [
+        {
+            "id": 6200524949,
+            "admin_graphql_api_id": "gid://shopify/ReturnLineItem/6200524949",
+            "fulfillment_line_item": {
+                "id": 10736341352597,
+                "admin_graphql_api_id": "gid://shopify/FulfillmentLineItem/10736341352597",
+                "line_item": {
+                    "id": 12695210000533,
+                    "admin_graphql_api_id": "gid://shopify/LineItem/12695210000533"
+                }
+            },
+            "quantity": 1,
+            "return_reason": "unwanted",
+            "return_reason_note": "",
+            "customer_note": null
+        }
+    ],
+    "customer": {
+        "id": 7029431102139,
+        "email": "andrew@gmail.com",
+        "accepts_marketing": false,
+        "created_at": "2023-10-18T07:18:03-04:00",
+        "updated_at": "2023-10-19T06:19:34-04:00",
+        "first_name": "Andrew",
+        "last_name": "B",
+        "state": "disabled",
+        "note": null,
+        "verified_email": true,
+        "multipass_identifier": null,
+        "tax_exempt": false,
+        "phone": null,
+        "email_marketing_consent": {
+            "state": "not_subscribed",
+            "opt_in_level": "single_opt_in",
+            "consent_updated_at": null
+        },
+        "sms_marketing_consent": null,
+        "tags": "",
+        "currency": "INR",
+        "accepts_marketing_updated_at": "2023-10-18T07:18:03-04:00",
+        "marketing_opt_in_level": null,
+        "tax_exemptions": [],
+        "admin_graphql_api_id": "gid://shopify/Customer/7029431102139",
+        "default_address": {
+            "id": 836448003234781,
+            "customer_id": 7029431102139,
+            "first_name": "Andrew",
+            "address1": "Kerala",
+            "address2": null,
+            "city": "Manglore",
+            "province": "Kerala",
+            "country": "India",
+            "zip": "574241",
+            "phone": "09008692935",
+            "province_code": "KL",
+            "country_code": "IN",
+            "country_name": "India",
+            "default": true
+        }
+    }
+}
+```
+
+</TabItem>
+
 
 </Tabs>
 
