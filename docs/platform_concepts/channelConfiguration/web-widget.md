@@ -4,13 +4,14 @@ sidebar_label : Set up Chat widget
 tags : [iframe]
 ---
 
-This document helps you understand how to access the Chat widget and will guide you through how to customize, deploy, and preview it before setting it up on the website.
+This document helps you understand how to access the Chat widget and will guide you through how to customize, preview, and deploy it before setting it up on the website.
 
 **Watch the video on how to setup a chat widget:**
-
+<center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Q5uKVYSeKh4" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
-
-## 1. Access Chat widget
+</center>center>
+    
+## Setup your Chat widget
 
 To access Chat widget, follow these steps: 
 
@@ -27,58 +28,91 @@ To access Chat widget, follow these steps:
 
    ![](https://i.imgur.com/MfIKU9W.png)
 
- 
-## 2. Customize Chat widget
 
-### 2.1 Customize bot look & feel (Design)
+### Customize bot UI (Appearance)
 
 The **Widget Panel** helps you customize the look and feel of the chat widget.
+
+To customize the design, make the required changes as per the descriptions provided in the following table, and click **Save changes**.
 
    <img src="https://i.imgur.com/xYoerv3.png" alt="drawing" width="90%"/>
    
 
-
-To customize the design, make the required changes as per the descriptions provided in the following table, and click **Save changes**.
+<img src="https://i.imgur.com/I8XaGOh.png" alt="drawing" width="60%"/>
 
 Option | Description
 -------- | ---------
-Custom Bot logo | Click **Add** icon and set the logo for the bot. <br/> **Note:** It is recommended to upload images with a size of 150 x 150 pixels. |
+Custom obt logo | Click **Add** icon and set the logo for the bot. <br/> **Note:** It is recommended to upload images with a size of 150 x 150 pixels. |
 Bot display name | Enter the display name of the bot as per your business requirement. | 
 | Bot description | Enter the description of your bot. |
 Colors & theme | You can set a **Light** or **Dark** theme for your widget.
-Brand color | You can select the following options to set the color for the header of the widget: <br/> * **Solid** -  When you select this option, you can view only the Color 1 option (single color will be applied to the title bar).<br/> * **Gradient** - When you select this option, Color 1 and Color 2 options are displayed (two colours forming gradient will be applied to title bar).
-Color 1   | This option is dispalyed when solid/gradient is seleced. Match the widget colour with that of the client's website. See the screenshot below.
-Color 2   | This option is displayed only when a gradient is selected.
+Brand color | Select the color mode for the bot header from the available options: <br/> * **Solid** - Select this option to have a single color throughout the header .<br/> * **Gradient** - Select this option to have gradient format. Then, choose two colours  that you want to use. <ol><li>Color 1: Choose the primary color for the widget.</li> <li>Color 2: Choose the secondary color for the gradient.</li></ol>
 Complementary color | Set the color of other components of the bot such as Quick Replies, Multi-select, and so on.|
-Accent color | You can set accent color across all components by choosing one of the colors from the drop-down. These colors are fretched from Color 1 or Color 2 (only when a gradient is selected).  
-Font style | Choose the default font for the bot.
+Accent color | Set accent color across all components by choosing one of the colors from the drop-down. These colors are fretched from Color 1 or Color 2 (only when a gradient is selected).  
+Font style | Choose the default font for the bot or upload a custom font family or style to customize the text displayed within a widget. This customization allows you to choose from various font styles to align with your brand identity and design preferences.
 Font size | Set the font size of the widget on the website - Small, Medium, or Large.
 Widget size | Set your preferred widget size - Small, Medium, or Large. 
 | Position | Set the position of the widget on the website - Bottom Left and Bottom Right. |
 | Initial state for desktop and mobile | The initial state helps you to set the chatbot’s appearance when the user visits the website and views the bot for the first time. The following are the initial display modes for the chat widgets:<br/>• **Half opened**: Selecting this option will place the bot in a partially opened state.<br/><img src="https://i.imgur.com/ziYilKB.png" alt="drawing" width="40%"/> <br/>• **Minimized**: Selecting this option will place the bot in a minimized or closed state.<br/><img src="https://i.imgur.com/F31qAiv.png" alt="drawing" width="40%"/><br/>• **Conversational layover**: Selecting this option will display a welcome message, input bar, and other components to the user. Once the user interacts, the bot will fully open.<br/><img src="https://i.imgur.com/4Hldu5U.png" alt="drawing" width="40%"/> <br/>• **Chat bubble**: Selecting this option will display a small bubble on top of the bot icon, showing a welcome message.<br/><img src="https://i.imgur.com/fFGBCVj.png" alt="drawing" width="40%"/><br/>**Note:**<br/>• For **Mobile** devices or browsers only **Minimized** and **Chat bubble** options are supported. <br/>•  When user interacts with initial state options such as Half opened, Minimised, Conversational layover, and Chat bubble, the bot will transition to a fully opened state. |
 
-<img src="https://i.imgur.com/I8XaGOh.png" alt="drawing" width="60%"/>
+
+
+#### Upload a Custom font for chat widget
+
+To upload custom font, follow these steps:
+
+1. In **Widget panel**, under **Fonts** select **Custom** from the Font style drop-down. 
+
+    ![](https://i.imgur.com/XJnWyu4.png)
+
+2. Enter **Font family** and **Font URL**.
+  
+    ![](https://i.imgur.com/jZYLMja.png)
+    
+3. Click **Save changes**. 
+
+:::note
+For custom fonts, previews are not available as they require whitelisting. To use a custom font, you must ensure that the font's URL is whitelisted in the Content Security Policy (CSP) header of the website where the bot is deployed. 
+::: 
+
+4. Navigate to **Deploy** > **Web** > **Experience on a Website**.
+
+   <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+   
+* You can view the added font style in the widget.
+
+    <img src="https://i.imgur.com/Y2sHd1a.png" width="30%"/>  
 
 ***
 
-### 2.2 Set bot icon
+### Customise bot icon shape & style
 
-The **Bot Icon** tab allows you to set the desired logo for your bot. You can also set the bot icon from the **Preview screen** by clicking on the bot icon.
+The **Bot Icon** tab allows you to set the desired logo for your bot. You can also view the bot icon from the **Preview screen**.
+
+
+You can set the shape and style of your bot in the **Bot actions** tab as explained below:
 
 <img src="https://i.imgur.com/1zSNcyA.png" alt="drawing" width="60%"/>
 <br/>
 
 
-Option | Description
---------|---------
-Icon Shape | Set the desired bot icon type for web and mobile apps. <br/>For web applications, you can select Circle, Square, or Bar, and for mobile app, you can select Circle or Square.<br/>You can set the bot icon by choosing one of the following options. <br/> **Same as avatar**: Set the shape of the bot icon. <br/> <img src="https://i.imgur.com/OgVl8Dm.png" alt="drawing" width="60%"/> <br/> **Upload custom icon**: Set the customised logo for the bot by clicking the **Add** icon. <br/> <img src="https://i.imgur.com/E8dBn9d.png" alt="drawing" width="40%"/>
- Bot icon animations | Select the **Animation type** from the drop-down to add animation to your bot icon. <br/> <img src="https://i.imgur.com/wC0q6Yt.png" alt="drawing" width="40%"/>
- | 
+
+#### Icon Shape 
+
+Set the desired bot icon type for web and mobile apps. <br/>For web applications, you can select Circle, Square, or Bar, and for mobile app, you can select Circle or Square.<br/>You can set the bot icon by choosing one of the following options. 
+
+* **Same as avatar**: Set the shape of the bot icon. <br/> <img src="https://i.imgur.com/OgVl8Dm.png" alt="drawing" width="60%"/>
+
+* **Upload custom icon**: Set the customised logo for the bot by clicking the **Add** icon. <br/> <img src="https://i.imgur.com/E8dBn9d.png" alt="drawing" width="40%"/>
+
+**Bot icon animations**
+
+Select the **Animation type** from the drop-down to add animation to your bot icon. <br/> <img src="https://i.imgur.com/wC0q6Yt.png" alt="drawing" width="40%"/>
 
 ***
 
 
-### 2.3 Configure bot features (Other settings)
+### Configure bot settings
 
 You can configure your chatbot by enabling or disabling the following features on the bot. 
 
@@ -130,8 +164,28 @@ Text to speech | Enable this option to allow the bot to respond to the user's qu
 
 ***
 
+### Preview chat widget 
 
-### 2.4 Deploy chat widget 
+As you design the bot, you can preview the changes in real time in the **Preview Screen** tab before you save it. When you choose colors, the chat preview updates automatically so that you can see what your widget will look like.
+
+  ![](https://i.imgur.com/ZKEUTwy.png)
+
+
+To preview your bot on a website, click **Deploy** > **Web** > **Experience on a Website**.
+
+<img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+
+:::info
+To share chatbot with other users, copy the bot link.
+<img src="https://i.imgur.com/unAJYEl.png" width="30%"/>
+:::
+   
+This will navigate you to the live bot page.
+
+   ![](https://i.imgur.com/RBLNrkI.png)
+   
+***
+### Deploy chat widget 
 
 Your widget has been set up with your preferred style and settings, you can deploy it on your website and mobile application.
 
@@ -149,9 +203,7 @@ To deploy the widget on your website, follow these steps:
 
 ```
 { bot: '{botId}',alignLeft: true }
-```
-
-  
+```  
 
 **Sample JavaScript to embed the chatbot on a website**:
 
@@ -216,22 +268,3 @@ To access mobile SDKs help doc links, follow these steps.
 
 2. To preview your PWA bot on the platform itself, click on <img src="https://i.imgur.com/RG1RUmC.png)" alt="drawing" width="10%"/>. 
 3. Copy the link by clicking on <img src="https://i.imgur.com/dv3k6vh.png)" alt="drawing" width="10%"/>. You can share the PWA live bot link directly with your users or you can embed it on your website.
-
-### 2.5 Preview chat widget 
-
-As you design the bot, you can preview the changes in real time in the **Preview Screen** tab before you save it. When you choose colors, the chat preview updates automatically so that you can see what your widget will look like.
-
-  ![](https://i.imgur.com/ZKEUTwy.png)
-
-
-To preview your bot on a website, click **Deploy** > **Web** > **Experience on a Website**.
-
-   <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/> 
-
-
-:::info
-To share chatbot with other users, copy the bot link.
-<img src="https://i.imgur.com/unAJYEl.png" width="30%"/>
-:::
-***
-
