@@ -3,18 +3,29 @@ title: Create custom views for your chats
 sidebar_label: Chat custom view 
 ---
 
+:::note
+The number of allowable custom views for each subscription tier is as follows:
+* **Freemium**: 1 custom view
+* **Premium**: 10 custom views
+* **Enterprise**: 20 custom views
+
+:::
+
+
 Custom views are specialized chat categories that can be distinguished from the default chat types based on specific use cases or requirements set by the inbox admins. They are accessible in a separate tab, providing an extra layer of sorting and convenient access to specific chat types.
 - Custom views help individuals and teams streamline their work by focusing on specific criteria.
 - Filters based on status, tags, or other criteria simplify navigating through large amounts of data.
 - Custom views provide a personalized experience, boosting engagement.
 - Agents can emphasize critical information to prevent it from getting lost.
+- Custom views enable admins to effectively oversee and manage chats that belong to specific categories. Moreover, they provide a means to vigilantly monitor scenarios, such as chats awaiting agent responses beyond a pre-defined timeframe. 
+
 
 For example, you want to view all chats related to the *Payments* group that are tagged as *Escalation*. In this scenario, you can create a custom view named *Payment Escalations*, enabling you and all your inbox agents to easily access chats falling under the *Payments* group and tagged as *Escalation*.
 
 > **Admins** will have visibility into all chats that meet these criteria.      
 > **Agents** will only see the chats assigned to them with these specific filters applied (when the permission is given during custom view creation). 
 
-#### Use case of custom views 
+#### Use case of custom views for inbox admins for monitoring purpose
 
 - **Filtering by tags**: Create custom views for specific tags, such as Escalated Chats, VIP Customers, or New Leads.
 - **Time sensitivity**: Custom views can be used to separate chats based on their age, helping teams focus on older, unresolved chats or recently incoming ones.
@@ -105,3 +116,16 @@ Regardless of the methods used to create custom views, you can find and access t
 - By clicking on the selected custom view name, you will be directed to a page filtered to display these specific chats. To return to other views or chat types, simply click on the chat's menu.
 
     <img src="https://hackmd.io/_uploads/SyZNrJyMa.png" alt="drawing" width="50%"/>
+    
+    
+#### Editing and Deleting Custom Views:
+
+The options to edit and delete custom views are exclusively available to Inbox admins. To initiate edit/delete actions follow these steps:
+
+1. Hover your cursor over the name of the custom view to reveal the edit and delete icons.
+2. By clicking the edit icon, the custom views tab will open on the right-hand side, permitting the necessary modifications to be made. Save the changes after completing the edits.
+3. Deleting a custom view is straightforward, click the delete icon and confirm the action.
+
+<img src="https://hackmd.io/_uploads/ryKokKrzT.png" alt="drawing" width="50%"/>
+
+

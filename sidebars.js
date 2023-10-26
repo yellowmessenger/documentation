@@ -150,13 +150,13 @@ module.exports = {
       items: [
       "platform_concepts/Getting Started/account-setup",
       "platform_concepts/Getting Started/upgrade",  
+      "platform_concepts/Getting Started/publish-env",
 
       "platform_concepts/Getting Started/resources",
       "platform_concepts/Getting Started/user-account-settings", 
       "platform_concepts/Getting Started/add-bot-collaborators",
       "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/modify-bot-configuration",
-      "platform_concepts/Getting Started/publish-env",
 
       "platform_concepts/Getting Started/platform-offerings",
       "platform_concepts/Getting Started/keyboard-shortcuts",

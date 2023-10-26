@@ -4,9 +4,15 @@ sidebar_label: Bot subscription plans
 tags: [start for free, essential features at no cost]
 ---
 
-## Subscription plans
+two subscription plans offered by Yellow.ai for bot-building:
 
-### Freemium plan 
+1. **Freemium plan**: This is the standard plan available to all users upon signing up for Yellow.ai. It provides several free features and allows users to create basic bots without any additional cost.
+2. **Premium plan**: For users who want to unlock advanced customization options and access features not available in the freemium plan, they can upgrade to the premium plan. To do so, you need to contact a Yellow.ai product expert who will tailor a customized plan to meet your specific needs.
+
+
+-----
+
+## Freemium plan 
 
 Yellow.ai offers a **Freemium plan**. The plan is designed for new users and serves as a trial version for a limited period. It allows you to explore the product and its capabilities at no cost. During this trial, you can test the platform's features and functionalities to see how well it fits your business needs. With the Freemium plan, you can experience the full potential of our platform and its essential features before committing to premium plans.
 
@@ -22,7 +28,7 @@ The Freemium plan includes the following features:
 Upon [signing up](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup), your account will automatically be enrolled in the Freemium plan.
 :::
 
-#### Limitations of Freemium plan
+### Limitations of Freemium plan
 
 While the Freemium plan provides businesses with a cost-effective way to access Yellow.ai's conversational AI solutions, it does come with certain limitations. Some advanced features and functionalities are exclusively available to users who subscribe to Yellow.ai's paid plans. If you require access to any of these features, you'll need to upgrade your plan accordingly.
 
@@ -38,20 +44,35 @@ The following features are currently unavailable in the Freemium plan and can be
 
 ------
 
-### Premium plans
+## Premium plans
 
 Our paid subscription plans offer various benefits to enhance user experience, including access to integrations and channels, personalized reports and dashboards, and professional support. These features provide a comprehensive and personalized experience to help you achieve your business goals.
 
+<!-- 
 ![](https://i.imgur.com/mNl6DvH.png)
+-->
 
 - If you've signed up with a new domain on our platform, click the **Upgrade** button to see all the subscription plans.
 - To select a plan either on a monthly or annual basis, toggle between the **Monthly/Yearly** options on the top. For a complete comparison of features included in all plans, click **See full plan comparison** located at the bottom of the page.
 - Clicking **Choose Plan** or **Contact Sales** will redirect you to the Calendly pop-up (same as mentioned above) to book a one-on-one session with our product experts.
 
 
-Apart from the subscription plans, Yellow.ai charges based on the usage of specific modules such as MRU count and WhatsApp usage.
+> Apart from the subscription plans, Yellow.ai charges based on the usage of specific modules such as MRU count and WhatsApp usage.
 
-## Upgrade your freemium plan
+
+## Monthly reached users (MRU) pricing
+
+Yellow.ai charges businesses based on the MRU count. With MRU pricing, you are billed according to the number of MRUs, ensuring that you pay only for the value you receive. Each user is counted once per month, regardless of the number of campaigns they engage with. This transparent pricing model allows you to optimize costs and align your expenses with the actual value delivered by Yellow.ai.
+
+## WhatsApp pricing
+
+Meta has announced updates to its price policy starting June 1, 2023. Yellow.ai charges businesses based on the MRU count. The charges for WhatsApp conversations are determined by the end user's phone number, and the cost varies depending on the type of conversation, country, or location. Users can have up to 1,000 free conversations every month. If the limit is exceeded, a monthly fee will apply. 
+> For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-pricing).
+
+
+--------
+
+## Steps to upgrade your freemium plan
 
 You can easily upgrade your account by having a discussion with our consultants to better suit your specific business requirements. We recommend carefully evaluating your needs before making a decision and our consultants will help you with the best custom pricing. 
 
@@ -73,17 +94,9 @@ To set up a call for upgrading your account, follow these steps:
 
     ![](https://hackmd.io/_uploads/SJ3q8U122.png)
 
-----
+------
 
-## Other pricing 
+After the upgrade, you can work on a three enviornment platform.
 
-### Monthly reached users (MRU) pricing
-
-Yellow.ai charges businesses based on the MRU count. With MRU pricing, you are billed according to the number of MRUs, ensuring that you pay only for the value you receive. Each user is counted once per month, regardless of the number of campaigns they engage with. This transparent pricing model allows you to optimize costs and align your expenses with the actual value delivered by Yellow.ai.
-
-### WhatsApp pricing
-
-Meta has announced updates to its price policy starting June 1, 2023. Yellow.ai charges businesses based on the MRU count. The charges for WhatsApp conversations are determined by the end user's phone number, and the cost varies depending on the type of conversation, country, or location. Users can have up to 1,000 free conversations every month. If the limit is exceeded, a monthly fee will apply. 
-> For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-pricing).
-
-
+- **Freemium plan**: Provides 2 environments: Development for creating, configuring, and launching your bot, and Live Mode for making your bot available to customers.
+- **Premium plan**: Offers 3 environments: Sandbox for primary bot development, Staging for thorough testing, and Production for active customer service.
