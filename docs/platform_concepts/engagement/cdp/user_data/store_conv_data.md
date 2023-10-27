@@ -95,14 +95,17 @@ To update existing user properties:
 
 2. Store them in the respective User properties, as explained in [Store user properties through builder](#store-user-properties-through-builder).
 
-In Prompt nodes, choose the relevant name under User properties.
+  * In Prompt nodes, choose the relevant name under User properties.
 
   <center> <img src="https://i.imgur.com/mFz74Ka.png" width="60%"/></center>
 
 
-In the Variable node, choose the relevant user property or add it manually using the syntax `{{user.propertyName}}`
+  * In the Variable node, choose the relevant user property or add it manually using the syntax `{{user.propertyName}}`
+
   <center> <img src="https://i.imgur.com/1MvEa5O.png" width="60%"/></center>
 
+  * Furthermore, learn [how to capture variables from Functions, Payload, and Bot script](/platform_concepts/engagement/cdp/user_data/userid-flow#custom-property-identifier-flow). Please note that the process for capturing userId or any  any other user property remains the same.
+ 
 ***
 
 ## Automated capturing of location-specific user properties 

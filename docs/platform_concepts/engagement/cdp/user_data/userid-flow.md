@@ -86,10 +86,95 @@ Select this option if the unique identifier of your users is any property other 
 
 3. Collect property value.
 
-   **Collect values that comes through user input**
+   #### 1. Collect values that comes through user input
 
-   * Collect the selected user property using the [Prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and use **Save response in** to map the variable to the user property.
+   Collect the selected user property using the [Prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and use **Save response in** to map the variable to the user property.
 
+   #### 2. To capture the userId from the bot script
+
+   Use the syntax: `data.variables.variableName`
+
+   Example:
+
+   In the sample script below, to store the phone number as the userId, use `data.variables.phoneNumber`
+
+   ```js
+   `<script type="text/javascript">`  
+   window.ymConfig = {"bot":"x1673261303850","host":"[https://cloud.yellow.ai](https://cloud.yellow.ai/)", "payload":{"name":"Tom","phoneNumber":"9090000000","email":"[tom@example.com](mailto:email@example.com)"},};  
+   (function() {  
+   var w = window,  
+   ic = w.YellowMessenger;  
+   if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);  
+   else {  
+   var d = document,  
+   i = function() {  
+   i.c(arguments)  
+   };  
+   function l() {  
+   var e = d.createElement("script");  
+   e.type = "text/javascript", e.async = !0, e.src = "[https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js](https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js)";  
+   var t = d.getElementsByTagName("script")[0];  
+   t.parentNode.insertBefore(e, t)  
+   }  
+   i.q = [], i.c = function(e) {  
+   i.q.push(e)  
+   }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}  
+   })();  
+   </script>
+
+   ```
+
+
+
+   #### 3. To capture userId from Function
+   
+   Use the Function node and store the variable to capture in the respective user property.
+   
+   <img src="https://i.imgur.com/qqltmgO.png" width="70%"/>
+
+   ```js
+   return new Promise(resolve => {
+      let payload = data.profile.payload
+      if (typeof (payload) === "string") {
+         payload = JSON.parse(payload);
+      }
+      console.log(payload);
+      ymLib.logger.log(payload,"init--Payload");
+      resolve(payload)
+   });
+
+   ```
+
+   #### 4. To capture userId from payload
+
+   First, store the payload in an object variable, let's call it `userData`.
+
+   <img src="https://i.imgur.com/fTTcOPO.png" width="50%"/>
+
+   Sample payload
+
+   ```js
+   {
+      "name": "Tom",
+      "phoneNumber":"9090000000",
+      "email":"tom@example.com"
+   }
+   ```
+
+   To access a specific key value, use the syntax:  {{{variables.objVariableName.key}}}
+
+<img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
+
+   For example:
+
+   * `{{{variables.userData.phoneNumber}}}`
+   * `{{{variables.userData.email}}}`
+
+:::note
+You can also use SDK APIs to programmatically set user properties and the user ID.
+:::
+
+<!--
    **Collect values that comes through payload**
 
    * To capture a user property from a payload, use the funtion node and store the response in an object variable and retrieve it using the format: `variables.objVariableName.key` (as per the schema).
@@ -124,6 +209,20 @@ In the User identification flow, if you don't store the user property correctly,
 
 So, if the user property is not captured correctly, this loop will continue, and the end user will be stuck.
 :::
+
+
+#### Collect user properties from functions or payloads
+
+To collect user properties from functions or payloads:
+
+
+2. As the first step, collect the customer information. Use the **Question** node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
+
+   ![](https://i.imgur.com/3Nr7T6u.png)
+
+-->
+
+
 
 ***
 
