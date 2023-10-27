@@ -333,6 +333,14 @@ sidebar_label: Channels FAQs
 
 </details>
 
+<details>
+ <summary>Is it possible to get user details through payload in the Facebook Messenger bot?</summary>
+ <div>
+  <br/>
+  <div>Currently, you can retrieve the name and profile picture (if available) for Facebook users using the payload.</div>
+   </div>
+</details>
+
 
 ### Google Business Messaging (GBM) chatbot related FAQs
 
