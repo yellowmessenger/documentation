@@ -237,6 +237,8 @@ module.exports = {
                 "platform_concepts/studio/build/nodes/logic-nodes",
               ],
             },
+
+            "platform_concepts/studio/dynamicchatnode",            
             {
               type: "category",
               label: "User record management",
