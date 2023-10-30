@@ -150,13 +150,13 @@ module.exports = {
       items: [
       "platform_concepts/Getting Started/account-setup",
       "platform_concepts/Getting Started/upgrade",  
+      "platform_concepts/Getting Started/publish-env",
 
       "platform_concepts/Getting Started/resources",
       "platform_concepts/Getting Started/user-account-settings", 
       "platform_concepts/Getting Started/add-bot-collaborators",
       "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/modify-bot-configuration",
-      "platform_concepts/Getting Started/publish-env",
 
       "platform_concepts/Getting Started/platform-offerings",
       "platform_concepts/Getting Started/keyboard-shortcuts",
@@ -464,6 +464,7 @@ module.exports = {
             "platform_concepts/inbox/chats/genai",
             "platform_concepts/inbox/chats/internal-ticket",
             "platform_concepts/inbox/chats/agentassistbot",
+            "platform_concepts/inbox/chats/customview",
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",

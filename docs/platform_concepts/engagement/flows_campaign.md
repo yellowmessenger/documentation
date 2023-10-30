@@ -46,7 +46,9 @@ You can also reuse an existing flow using More options > **Duplicate**.
 
    ![](https://i.imgur.com/XOoCuIQ.png)
 
-
+:::note
+Once the flow is published, do not modify the segment condition.
+:::
 
 ## Entry rule
 
@@ -93,12 +95,15 @@ After entering segment, campaign triggers | Once a user enters the segment, choo
 **Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the campaign applicable to all users.
 
 :::note
-Once the flow is published, do not modify the segment condition.
+Segments created using the date, time, or date-time data types refresh only at midnight. For example, if you set up a campaign to trigger every 5 minutes or every hour, the segment's user list won't receive real-time updates. The user list will be refreshed at midnight.
 :::
+
+
 
 *** 
 
-### User exited a segment 
+### User exited a segment
+
 Select this to trigger the flow when a user exits a segment.
 
 To trigger the campaign when a user exits a segment, on the flow builder screen, click on the **User exited segment** node.
@@ -113,6 +118,11 @@ After exiting segment, campaign triggers | Once a user exits the segment, choose
 **Run this campaign** | Choose whether to run the campaign only *Once per user* or *Every time event happens* (every time a user exits a segment).
 **Start** / **End** | Choose the duration of the campaign using the calendar boxes.
 **Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the. campaign applicable to all users.
+
+
+:::note
+Segments created using the date, time, or date-time data types refresh only at midnight. For example, if you set up a campaign to trigger every 5 minutes or every hour, the segment's user list won't receive real-time updates. The user list will be refreshed at midnight.
+:::
 
 
 ***

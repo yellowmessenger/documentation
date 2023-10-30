@@ -35,8 +35,14 @@ To create more sophisticated segments you can [combine `and` with `or` condition
 
 Once you create a segment, you can view users in the segment, modify segment condition, download users of the segment, or delete it as explained in the following sections.
 
-
+:::note
+Segments involving date, time, or date-time data types are not real-time; the user list updates at midnight when the cron job runs.
+:::
 ***
+
+
+
+
 
 
 **What next?**

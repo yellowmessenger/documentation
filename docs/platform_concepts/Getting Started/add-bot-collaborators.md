@@ -19,11 +19,11 @@ The following table outlines various roles along with the associated access priv
 |------ | --------- |
 | Super Admin |This user holds ultimate authority, capable of controlling all bot features: <ol><li>Can provide *Approver* access to others.   </li><li>Can mask certain Database columns on UI. </li><li>Access bot tables and can [mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.</li></ol>|
 |Admin | This user has comprehensive access to all modules and their components.|
-|Developer | This user has full access to bot components, enabling customization and development.|
-|Database Viewer | This user is limited to viewing tables and their data, ensuring data security.|
-| Approver | This user has the ability to publish the bot from staging/development to production/live. <br/>(prerequisite, must be given Developer access)|
+|Developer | This user has full access to bot components but cannot edit bot configurations or invite other users to use the bot.|
+|Database Viewer |  This user is limited to editing and viewing tables and their data in selected databases.|
+| Approver | This user has the ability to publish the bot from staging/development to production/live. |
 | Inbox (Admin) | This user can access all inbox components, including chat, email, and knowledge base (KB); also monitor performance (of agents and team) and customize inbox settings.|
-|Inbox (Agent) | This user can respond exclusively to customer chats or emails and is restricted to assigned interactions.|
+|Inbox (Agent) | This user can respond to their assigned customer chats or emails and has viewing access to Monitor, Analytics (self-reports), and the KB.|
 |Insights (Analytics) | This user can only access standard analytics (default table), bot health monitoring, user journey tracking, and goal monitoring for informed decision-making.|
 |Insights (Admin) | This user has holistic access to all bot-related data and analytics, enabling in-depth analysis.|
 |Engagement (Admin) | This user can manage campaign deployment and audience configuration for effective engagement strategies.|
