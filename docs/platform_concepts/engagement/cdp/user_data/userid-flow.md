@@ -94,6 +94,8 @@ Select this option if the unique identifier of your users is any property other 
 
    Use the syntax: `data.variables.variableName`
 
+   <img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
+
    Example:
 
    In the sample script below, to store the phone number as the userId, use `data.variables.phoneNumber`
@@ -161,7 +163,7 @@ Select this option if the unique identifier of your users is any property other 
    }
    ```
 
-   To access a specific key value, use the syntax:  {{{variables.objVariableName.key}}}
+   To access a specific key value, use the syntax:  `{{{variables.objVariableName.key}}}`
 
 <img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
 

@@ -9,6 +9,8 @@ The campaign report provides comprehensive insights and data regarding the perfo
 Reports are available for Completed and Scheduled campaigns.
 :::
 
+## View Flow campaign report
+
 To view a campaign report:
 
 * On the Flows page, click on the **Analytics** icon.
@@ -30,13 +32,13 @@ Engagement channels | Channels that are connected to the flow.
 Number of events | The total number of events received for the flow.
 Unique clicks | The total number of unique clicks received to the URL used in the flow campaign.
 Conversations initiated | The total number of unique users who started conversation.
-Goal conversation | The total number of unique users who have achieved the campaign goal.
+Goal conversation | The total number of unique users who have achieved the campaign goal (only if the goal is configured for the campaign).
 
 ### User engagement analysis
 
-This section provides a comprehensive evaluation of how effectively the campaign is connecting with your target audience. This includes key engagement metrics such as Audience, Impression, Reach, and Engagement.
+This section provides a comprehensive evaluation of how effectively a marketing campaign is connecting with your target audience. This includes key engagement metrics such as Audience, Impression, Reach, and Engagement.
 
-By default, you'll find these engagement metrics aggregated across all channels. You have the flexibility to analyze metrics specific to each channel by using the channel filter.
+By default, you'll find these engagement metrics aggregated across all channels. To view the metrics for a specific channel, click on the specific channel icon.
 
    ![](https://i.imgur.com/3HYxbW3.png)
 
@@ -48,17 +50,39 @@ Reach | The total number of unique users to whom the campaign was reached out.
 Engagement | The total number of user interactions with your content, such as clicks,likes, shares, and comments.
 
 
+The following table provides descriptions for impression, reach, and engagement for each channel:
+
+| Channel    | Impression  | Reach  | Engagement |
+| ---------- | ----------- | ------ | ---------- |
+| **All**   | The total number of unique users for whom `IMPRESSION` is achieved in any of the channels.   | The total number of unique users for whom `REACH` is achieved in any of the channels.  | The total number of unique users for whom `ENGAGEMENT` is achieved in any of the channels. |
+| **WhatsApp**| The total number of unique users to whom the WhatsApp message is `DELIVERED` .  | The total number of unique users who `READ` the message. | The total number of unique users who either `REPLIED` to the WhatsApp message or `CLICKED` the URL present in the template body. |
+| **SMS** | The total number of unique users to whom the SMS is `SENT`.  | The total number of unique users to whom SMS is `DELIVERED`.  | The total number of unique users who **CLICKED** the URL present in the template body. |
+| **Email**  | The total number of unique users to whom the email is `DELIVERED`  | The total number of unique users who `READ` the email.  | The total number of unique users who **REPLIED** to the email message. |
+| **Voice** | The number of unique users to whom a call is `CONNECTED`  | The number of unique users who `PICKED UP` the call. | The number of unique users who `SPOKE FOR` more than 5 seconds. |
+| **Google Business Messages** | The total number of unique users to whom the message is `DELIVERED` .   | The total number of unique users who `READ` the message.  | The total number of unique users who either `REPLIED` to the message. |
+| **Line**  | The total number of unique users to whom the notification is `TRIGGERED`. | The total number of unique users to whom the notification is `SENT` .  | The total number of unique users to whom the notification is `SENT`. |
+| **Mobile Push Notifications** | The total number of unique users to whom the notification is `SENT`. | The total number of unique users to whom the notification is `DELIVERED`. | The total number of unique users to whom the notification is `DELIVERED`. |
+| **Microsoft Teams** | The total number of unique users to whom the notification is `TRIGGERED`. | The total number of unique users to whom the notification is `SENT`.  | The total number of unique users to whom the notification is `SENT`. |
 
 
 
-KPI | Descriptions
---- | -----------
-Users Entered Flow | The number of unique users who have initiated or entered the flow campaign.
-Users in Flow | The number of active users currently engaged within the flow campaign.
-Users Exited Flow | The count of users who have left or exited the flow campaign before completing it.
-Users Who Achieved Goal | The total count of users who successfully completed the predefined goal or objective of the flow campaign.
 
 
+#### Engagement insights
+
+Engagement Insights provides valuable analytics for optimizing customer engagement across various channels and helps enhance communication and engagement strategies. This report includes URL click tracking for specific channels and distribution analysis for chat and voice interactions. 
+
+   ![](https://i.imgur.com/ONWsg2C.png)
+
+To view engagement for each channel, click on the respective channel icon: <img src="https://i.imgur.com/IB4zZUc.png" width="10%"/>
+
+* **No. of replies**: This metric represents the total count of text replies and quick replies received for the campaign. It also offers a detailed breakdown of each quick reply.
+* **URL click tracking**: This assesses the performance of the links included in your messages. It provides insights into which URLs were clicked, total clicks, click through rate and click through open rate. This data helps you understand the effectiveness of your call-to-action links and the relevance of the linked content to your users. Applicable for channels e
+* **Call dropoff rate**: This metric offers insights into the performance and efficiency of the Interactive Voice Response (IVR) solution. It provides information on the distribution of call drops or calls terminated by users in various time intervals, including 1 - 5 secs, 5 - 30 secs, 30 secs - 1 min, 1 - 5 mins, and durations exceeding 5 mins.
+* **Call pickup rate**: When multiple phone numbers are used, it provides the percentage of calls that are successfully picked up from each number. It helps identify specific numbers associated with lower call pickup rates, allowing organizations to take informed actions such as removing or replacing underperforming numbers.
+
+
+<!--
 
 ## View channel statistics
 
@@ -93,6 +117,30 @@ Updated Time | Time at which the status was last updated.
 :::note
 Delivery Status such as Delivered and Read are not available for all channels except WhatsApp.
 :::
+
+-->
+
+
+
+### Flow analytics
+
+"The Flow Analysis Report provides comprehensive insights into the performance of your flow, offering details on user interactions, message delivery, and engagement across various channels. This report furnishes valuable information about how your campaigns are reaching and resonating with your target audience. 
+
+   ![](https://i.imgur.com/PqlYzed.png)
+
+Key elements of the report include:
+
+KPI | Descriptions
+--- | -----------
+Users present in the segment | Total number of users entered the segment.
+Users entered Flow | The number of unique users who have initiated or entered the flow campaign.
+Users in Flow | The number of active users currently engaged within the flow campaign.
+Messages sent | The total number of messages sent through the specific channel within the flow. It provides a comprehensive breakdown of metrics such as messages delivered, read, engaged, not delivered, and more. You can also see the percentage of each delivery status.  <br/><img src="https://i.imgur.com/n6OB823.png" width="40%"/>
+Users in wait state | The total number of users who who entered the flow but not yet progressed to the next stage in the sequence.
+Users who achieved goal | The total count of users who successfully completed the predefined goal or objective of the flow campaign.
+
+
+
 
 
 ## Download campaign report
