@@ -169,6 +169,58 @@ apiresponse represents the raw response from the Salesforce create ticket API
 apiresponse represents the raw response from the Salesforce create ticket API
 :::
 
+### 2.2 Steps to set up bot in Salesforce Live Chat
+
+1. Login to your [Salesforce account](https://login.salesforce.com/?locale=in) and click **Setup**
+
+   ![](https://i.imgur.com/oMnJ2yc.png)
+
+2. On the left side bar search, search for **Visualforce Pages** and click on it.
+
+   <img src="https://i.imgur.com/XOwD557.png" alt="drawing" width="40%"/>
+
+3. Click **New** to create a new VF page.
+
+   ![](https://i.imgur.com/M1h9H27.png)
+
+4. Perform the following actions:
+
+* Enter the **Label**,**name** and check the **Available for Lightning. Experience, Experience Builder sites, and the mobile app** option.
+* Paste the embedded bot code into the markups section between the <apex:page> </apex:page> tags.
+* Click **Save**.
+
+   ![](https://i.imgur.com/ddX5fGC.png)
+
+5. Go back to the left side bar search and search for **App Manager** and click it.
+
+   ![](https://i.imgur.com/ddX5fGC.png)
+
+6. Scroll down to **Service Console** and click **Edit**.
+
+   ![](https://i.imgur.com/mbiy9SW.png)
+
+7. Click **Utility items(Desktop only)** and click **Add Utility Item**.
+
+   ![](https://i.imgur.com/1UT4ElB.png)
+
+8. Select **VisualForce** from the drop-down.
+
+   ![](https://i.imgur.com/WOZgdEV.png)
+
+9. Perform the following actions in the following page.
+
+* Add **Label** , **Icon**, **Panel Width**, **Panel Height**.
+* Under **Component Properties** deselect **Show Label**.
+* In **Visualforce Page Name**, add the name of the VF page created in **step 4**.
+* Click **Save**.
+
+   ![](https://i.imgur.com/FDOn8Ht.png)
+
+10. Go to **App launcher** and navigate to Service Console. You should see the bot at the bot footer.
+
+   ![](https://i.imgur.com/PuNynWd.png)
+
+
 ### Reference
 
 https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_API_requests.htm

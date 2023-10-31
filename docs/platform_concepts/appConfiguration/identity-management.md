@@ -44,6 +44,11 @@ To integrate your Google Identity Management account with Yellow.ai, follow thes
 
  ![](https://i.imgur.com/8Eh1LsA.png)
 
+ :::info
+
+ To retrieve package name and private key from google console, please follow the steps mentioned [here](https://www.iwantanelephant.com/blog/2020/11/17/how-to-configure-api-access-to-google-play-console/).
+ :::
+
 
 ### Add the credentials in Yellow.ai
 
