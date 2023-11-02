@@ -8,7 +8,7 @@ sidebar_label: User identification flow
 The User Identification flow in bot conversation is the process of identifying the user interacting with the bot. This is achieved by requesting the unique identifier from the user. It could be an email address, phone number or other identifier. 
 
 :::note
-Date datatypes are not supported as the userId. It supports String, Number, email, and phone types.
+Date datatypes are not supported for the userId. It supports String, Number, email, and phone types.
 :::
 
 ### Significance of identifying users
@@ -24,7 +24,11 @@ The user identification is an important aspect of bot conversation design, as it
 
 ### Understand how user identification flow works
 
-The primary objective of the User Identification flow is to ensure that the userId is captured for users that interact with the bot on any channel.
+The primary objective of the User Identification flow is to ensure that the userId is captured for users that interact with the bot on any channel. 
+
+:::note
+If the `userId` is not captured before initiating a conversation, a blank user record is created without a `userId` with a user starts conversation. If capturing of userId is not managed properly, it may result in the creation of duplicate records for the same user, one with a userId and one without. This can also lead to the creation of multiple unidentified records for different sessions.
+:::
 
 The following are the steps involved:
 

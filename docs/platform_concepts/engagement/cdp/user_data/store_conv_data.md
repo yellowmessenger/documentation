@@ -104,7 +104,7 @@ To update existing user properties:
 
   <center> <img src="https://i.imgur.com/1MvEa5O.png" width="60%"/></center>
 
-  * Furthermore, learn [how to capture variables from Functions, Payload, and Bot script](/platform_concepts/engagement/cdp/user_data/userid-flow#custom-property-identifier-flow). Please note that the process for capturing userId or any  any other user property remains the same.
+  * Furthermore, learn [how to capture variables from Functions, Payload, and Bot script](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow#custom-property-identifier-flow). Please note that the process for capturing userId or any  any other user property remains the same.
  
 ***
 
