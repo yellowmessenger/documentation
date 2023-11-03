@@ -11,7 +11,49 @@ The dynamic chat node simplifies conversation design by eliminating the need for
 
 You can also add additional nodes to dynamic node to build the rest of the flow.
 
-Once you click the dynamic node, these are the options you see first.
+## Prompts for Dynamic chat node
+
+There are two ways by which you can enter your prompts. They are:
+
+### Generate prompts with AI Prompt Generator
+
+1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case and extend the node where you want to include the **Dynamic chat** node. Under **Prompts** click **Dynamic chat** node.
+
+   <img src="https://i.imgur.com/RE9I5Jr.png" alt="drawing" width="70%"/>
+
+2. Once you click the dynamic node, the **AI prompt generator** opens up. 
+
+   <img src="https://i.imgur.com/QaVQe8Q.png" alt="drawing" width="70%"/>
+
+3. Fill in the following fields and click **Generate** and the platform will automatically genrate a prompt for you.
+
+   <img src="https://i.imgur.com/LWgYCmX.png" alt="drawing" width="70%"/>
+
+* **Write goal**: Define the conversation's primary objective.
+* **Write usecase:** Specify the topics or scenarios the conversation will cover.
+* **Describe fallback:** Explain the action the bot should take if it doesn't understand the user's input.
+* **Add input:** List the information the bot needs to collect from the user.
+
+4. Once the prompt gets generated, you can click **Add prompt** to add it. If you'd like to further improvise the prompt, click **Improve prompt**.
+   
+   <img src="https://i.imgur.com/DwdHQVj.png" alt="drawing" width="70%"/>
+
+5. Select the additional prompts to be added, enter the details to be collected for those prompts and click **Regenerate**.
+   
+    <img src="https://i.imgur.com/U0UXKVH.png" alt="drawing" width="70%"/>
+
+### Write your own prompts
+
+1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case and extend the node where you want to include the **Dynamic chat** node. Under **Prompts** click **Dynamic chat** node.
+
+   <img src="https://i.imgur.com/RE9I5Jr.png" alt="drawing" width="70%"/>
+
+2. Once you click the dynamic node, the **AI prompt generator** opens up. 
+
+   <img src="https://i.imgur.com/QaVQe8Q.png" alt="drawing" width="70%"/>
+
+6. Click **Cancel** on the pop-up and enter your prompt.
+
 
 ![](https://i.imgur.com/HFHBq0c.png)
 
@@ -132,6 +174,29 @@ You can find these tags in two places:
  For continuous and replicable errors, you can find additional information in the debug logs within the Preview section, as well as in the conversation logs (highlighted in orange).
 
  <img src="https://i.imgur.com/hbmBquG.png" alt="drawing" width="35%"/>
+
+## Skill configuration
+
+In **Skill configuration**, you can call workflows (skills). Skill is a flow built using [Action nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) and [Logic nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to perform a certain action. You can build a skill to hit APIs, update databases, execute custom logic, etc. This extends the bot's capability of handling dynamic data.
+
+1. Go to **Build** > **Create flow** > **+ Create skill** and create a flow to execute certain actions. 
+
+   <img src="https://i.imgur.com/rJQw0ny.png" alt="drawing" width="90%"/>
+
+
+2. Once you're done, click **Skill configuration** and enable **Enable skill**.
+
+   <img src="https://i.imgur.com/LtNyMPH.png" alt="drawing" width="90%"/>
+
+3. Fill the following fields:
+
+   <img src="https://i.imgur.com/AB1XU3r.png" alt="drawing" width="90%"/>
+
+* **Skill**: Choose the skill to be utilized by the Dynamic Chat node. 
+* **Input to skill**: Choose the variable that holds the input for the skill..
+* **Output from skill**: Choose the variable where you want to save the outcome of the skill.
+
+4. Click **+ Link more skill** to add more skills.
 
 ## Goal configuration setting
 
