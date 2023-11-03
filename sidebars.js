@@ -201,6 +201,7 @@ module.exports = {
           "platform_concepts/studio/kb/overview",
           "platform_concepts/studio/kb/ingestion",
           "platform_concepts/studio/kb/integrations",
+          "platform_concepts/studio/kb/advancedsettings",
           
         ],
       },       
