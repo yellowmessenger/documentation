@@ -23,6 +23,17 @@ User 360 verifies uniqueness solely based on the userId. Therefore, to avoid dup
 
 
 <details>
+<summary>Why was a user created twice, with the second entry having 'null' as the userId?</summary>
+The second user account, which lacks a valid userId and contains incorrect properties, is often auto-created when a user interacts with your bot for the first time. ensure that you have set up the 'userId' and stored in the User ID property in your studio flows before starting conversation. 
+
+
+[Learn more](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
+
+
+</details>
+
+
+<details>
 <summary>Can I connect a database with User 360?</summary>
 
 Usecase: I currently store the details of users who click the "STOP" button to unsubscribe from my campaign. I want to integrate this information with User 360 to ensure that campaigns are not sent to those users. Is it possible to use User360 instead of a separate database to store the list of unsubscribers?<br/>

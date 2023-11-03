@@ -78,7 +78,7 @@ To import the CSV file with user details, follow these steps:
 
    ![](https://i.imgur.com/SahEW5T.png)
 
-4. In **Map CSV headers**, associate each CSV header with the respective user property. [Columns will be auto-mapped](#auto-mapping-of-csv-columns) based on matching column names and previous mapping that might exist.
+4. In **Map CSV headers**, associate each CSV header with the corresponding user property. The system also performs auto-mapping of columns based on matching column names and the previous mapping if exists.
 
    * Select the CSV header that includes `userId` in the **UserId** column.
    * Associate each CSV header (column 2) with the User property (column 4).
@@ -171,6 +171,7 @@ You can see the Status of the import.
 
 ***
 
+<!---
 ### Auto mapping of CSV columns
 
 The auto-mapping feature aims to simplify the column-to-property mapping process during data import from CSV files. This helps streamline the column-to-property mapping and reduce the manual effort required, especially when dealing with large CSV files containing numerous properties.
@@ -189,7 +190,7 @@ The system prioritizes past mapping over matching property names. If a past mapp
 :::
 
 ***
-
+-->
 
 ## Step 3: Analyse import errors
 
