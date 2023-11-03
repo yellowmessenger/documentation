@@ -9,63 +9,16 @@ User 360 is a Customer Data Platform that helps you manage your customer base.  
 
 The following are some key features of User 360 - 
 
-* Collect user data from bot conversations and client’s external tech stack
-* Unify user profiles and maintain context across channels
-* Segment users into meaningful audiences
-* Activate user data and segments in various modules of yellow.ai to drive personalisation
-
-<!--
-:::note
-User360 is enabled by default for bots created after June 1, 2022.
-To enable it for your bot, write to sarthak@yellow.ai.
-:::
-
--->
+* **User profiles**: Maintain comprehensive user profiles by collecting data from bot conversations and your external tech stack. This ensures you have a complete view of each user.
+* **Unified user profiles**: Keep context consistent across different communication channels, enhancing the user experience by providing personalized and context-aware interactions.
+* **Audience segmentation**: Segment your user base into meaningful groups, making it easier to target and engage with specific audiences for better personalization.
+* **Data activation**: Leverage user data and segments across various modules of yellow.ai to enhance personalization and drive more effective interactions.
+* **Real-time data updates**: Add or update user records in real-time through bot conversations, integrations and user events, keeping your data up-to-date and accurate.
+* **Events-based data upadte**: Updates user records based on user events from third-party systems (through Integeations) 
+* **User data export**: Update your user base or use it outside Yellow.ai, you can conveniently export user data, making it readily available for your requirements. 
 
 
-
-## Access User 360
-
-
-You can see User 360 in the Engage module.  You can view your user details, modify their details, define user properties, create  user segments and do more.
-
-To access User 360, log on to https://cloud.yellow.ai and navigate to **Engage** > **User 360**.
-
-:::note
-This is enabled only for https://cloud.yellow.ai.
-:::
-
-The following are the key actions that you can perform on user 360.
-
-### Create user records
-
-The platform provides different ways to add your users. You can add each user manually or leverage advanced features  to quickly create your user base and maintain it real-time.  
-* Add bulk users [through CSV import](/docs/platform_concepts/engagement/cdp/user_data/import_users) 
-* Use our [REST APIs](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api) to add or modify users real-time.
-* Use [Bot Builder to create and update users](/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers)
-
-
-### Enrich user data
-
-It is important to collect data that is specific to your users. While there are some predefined properties, called [System Properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties), you can also create and send [Custom properties](/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) and Events.
-
- 
-User properties store data about who your users are, events tell you when users take important actions on your product.
-
-
-### Create segments to power personalisation
-
- 
-
-By combining the user data with Properties and Events, you can [create highly focussed segments](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment). These segments update automatically as and when users match the criteria that you set.
-
-
-You can group your users based on certain characteristics such as who they are and what they do. 
-
-
-
-
-## User events
+## User events in User 360
 
 User events refer to specific actions or activities a user performs within a system, app, or platform. These define user behavior, engagements, and interactions. 
 The standard events include user creation, user update, and user deletion. 
