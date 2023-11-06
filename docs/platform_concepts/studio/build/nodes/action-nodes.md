@@ -270,26 +270,40 @@ Steps to generate dynamic documents:
 
 -----
 
-### 1.10 Data formatter 
+### 1.10 User event
+
+User event lets you trigger an event after a certain amount of delay. For example, if you need to get feedback from a user after the chat gets over, you can use this node to trigger that event which inturn triggers the feedback flow.
+
+To use this node:
+
+1. Create a user event. To do so, go to **Studio** > **Builder** > **User Events** > **+ Add Even**t.
+
+ ![](https://i.imgur.com/GwSPuxH.png)
+
+2. In **Event name**, provide a name for that event and in **Event description** descruibe the nature of that event. Click **Create Event**.
+3. Go back to **Build**, create a flow with the [start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event) as this event created in the previous step. This flow should essentially contain all the nodes required to execute the action when this event takes place.
+4. Then go to the flow which should send this event and include the **User event** node.
+
+ ![](https://i.imgur.com/VtyLltz.png)
+
+5. Fill in the following fields:
+
+* **Event key**: Choose the event created in step 2.
+* **Event delay**: Enter the time by which the event occurence should be delayed.
+* **Payload**: Choose the variable that contains the data that should be sent along with the event.
+
+6. Once the flow reaches this node, the event is triggered, and the associated flow will be executed precisely after the specified delay time.
+
+### 1.11 Data formatter 
 
 Convert data from CSV to JSON with this node.
 you can ask and store the CSV data in any variable and change it to JSON using the data formatter node. The formatted value can be stored in a variable of type array or object and be displayed using another node. 
 
 ![](https://i.imgur.com/X20qA35.png)
 
------
-
-### 1.11 Payment
-
-(Currently unavailable.)
-
-Generate a payment link with this node. 
-
----
+----
 
 ### 1.12 Switch flow 
-
-(Currently unavailable.)
 
 Quit the current flow and launch another flow with this node. Here, flow switches to another flow from that point (one cannot have any nodes post this).
 
