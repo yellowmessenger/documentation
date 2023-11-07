@@ -46,7 +46,7 @@ You can edit both the questions posed by end-users and the responses generated b
 
 When the knowledge uploaded (documents, integration docs, or website) is in English, we now have the capability to activate multilingual responses within the Knowledge Base (KB). This allows us to translate responses into the end user's preferred language, either based on their language selection or the language identified from their initial message.
 
-Build a flow that gets user's language preference and use [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) to set the language of the conversation. Then build the rest of the flow with [Doc search node]((https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search)) to fetch answers from KB.
+Build a flow that gets user's language preference and use [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) to set the language of the conversation. Then build the rest of the flow with [Doc search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) to fetch answers from KB.
 
  <img src="https://i.imgur.com/oBsrILo.png" alt="drawing" width="45%"/>
 
