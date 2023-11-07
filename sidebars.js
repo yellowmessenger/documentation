@@ -211,6 +211,8 @@ module.exports = {
           label: "Build your bot",
           collapsed: true,
           items: [
+
+            "platform_concepts/studio/build/additionalsettings",
             //flows
             {
               type: "category",
