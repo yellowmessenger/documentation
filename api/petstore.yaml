@@ -1034,7 +1034,7 @@ paths:
 
 
 
-  '/api/ticketing/data/send':
+  '/api/ticketing/ticket/send':
     post:
       security:
         - ApiKeyAuth: []    
