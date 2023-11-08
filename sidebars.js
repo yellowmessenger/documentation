@@ -1028,8 +1028,9 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
+            "platform_concepts/channelConfiguration/webex",  
             "platform_concepts/channelConfiguration/zalo", 
-            "platform_concepts/channelConfiguration/webex",
+            
                
             
             

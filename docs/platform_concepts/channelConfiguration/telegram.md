@@ -3,28 +3,35 @@ title : Telegram
 sidebar_label : Telegram
 ---
 
-Telegram is a free messaging app that allows you to send text messages, videos, images, and documents to people around the world.
+Telegram is a social networking platform that allows Telegram users to directly interact with our bot through their Telegram accounts. Telegram integration enables two-way conversations, facilitating seamless communication between users and the bot.
 
-Businesses can use a Telegram bot to provide automated customer support, promote their brands, collect user feedback, and so on.
+Telegram channel integration helps businesses to automate customer support, send campaigns (to send campaigns, a Telegram sender ID is required), collect user feedback, and so on.
 
-In this article, you will learn:
+This channel enables the following key features: 
 
-* [How to create a Telegram account?](#create)
-* [How to configure a bot on Telegram account?](#setup)
-* [How to connect your bot on Telegram channel?](#channel)
-* [How to test your bot on Telegram?](#test)
+* **Automated Replies**: Provides the ability to automatically respond to user messages.
+* **Multi-message types support**: You can use various message types including text, image, video, file, and carousel (which can only be used as a CTA), to enhance the communication experience.
 
-## 1. Create a Telegram account
+## Setting up Telegram chatbot
+
+To set up Telegram bot, you need to perform the following:
+
+* [Create a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Setup a Telegram chatbot](#setup-telegram-chatbot)
+* [Connect Telegram channel to your bot](#connect-telegram-channel-to-your-bot)
+* [Test your Telegram chatbot](#test-telegram-chatbot)
+
+## Setup Telegram chatbot
+
+### Create a Telegram account
 
 You can create a registered Telegram account using the Telegram app or website.
 
-To create a Telegram account, follow these steps:
-
-1. Navigate to the [Telegram](https://web.telegram.org/z/) website. You can either scan the QR code or log in by phone number. Click **LOG IN BY PHONE NUMBER**.
+1. Navigate to the [Telegram](https://web.telegram.org/z/) app or website. You can either use scan the QR code or **Log in by phone number**.
 
    <img src="https://i.imgur.com/dAz6SkH.png" alt="drawing" width="40%"/>
    
-2. Enter your phone number and click **Next**.  
+2. Choose the **Country**, enter **Your phone number** and click **Next**.  
 
    <img src="https://i.imgur.com/1TYIjxQ.png" alt="drawing" width="50%"/>
 
@@ -32,31 +39,32 @@ To create a Telegram account, follow these steps:
  
    <img src="https://i.imgur.com/2FNgsun.png" alt="drawing" width="40%"/>
 
-4. Your Telegram account will be created successfully.
+* This will create your Telegram account and you should be able to see the following screen.
 
     ![](https://i.imgur.com/YLICsC3.jpg)
 
 
-## 2. Configure your bot on Telegram
+### Setup your Telegram bot using BotFather 
 
-1. Navigate to your Telegram account and search for a bot named **@BotFather** to create a new Telegram bot where you can start a conversation with the bot.
+1. Navigate to your Telegram account and search for `@BotFather` (Verified Telegram chatbots are marked with a blue check).
 
-    ![](https://i.imgur.com/88CQrvY.jpg)
+    ![](https://i.imgur.com/dolRkkT.jpg)
+    
+* You will receive a list of commands that can be used to manage bots.  
+
+   ![](https://i.imgur.com/fV2nvP7.jpg)
    
-2. To create a new bot on Telegram, enter **/newbot** in the input bar and click send button. 
+2. Enter the command **/newbot** in the input bar and click send button. 
 
-    ![](https://i.imgur.com/SzdpccO.jpg) 
+    ![](https://i.imgur.com/mlzmqwb.jpg) 
 
-3. You need to provide the username for the bot, and it must end with ‘bot’, for example, stagingbot, demoBot, and so on.
+3. Provide a username for the bot with suffix `bot`. For example, stagingbot, demoBot, and so on. 
 
-4. A congratulations message is displayed, indicating that your bot has been created. Along with that, an access token is generated. Copy that access token and paste it in the bot’s Telegram channel integration page and connect.
+     <img src="https://i.imgur.com/N48DsIO.jpg" alt="drawing" width="80%"/>
 
-   ![](https://i.imgur.com/kN7zLT0.jpg)
+* It will respond with a congratulations message, indicating that your bot has been created. Along with that, an access token is generated. Copy that access token, paste it on the bot’s Telegram channel integration page, and connect.
 
-5. Now that your Telegram bot is configured, you can search for the bot name.
-
-
-## 3. Connect Telegram channel to your bot
+### Connect Telegram channel to your bot
 
 To connect the Telegram channel on the Yellow.ai platform, follow these steps:
 
@@ -70,16 +78,51 @@ To connect the Telegram channel on the Yellow.ai platform, follow these steps:
 
 3. Your Telegram channel will be successfully connected.
 
-## 4. Test your bot on Telegram
+## Setup your bot
 
-After connecting your bot on Telegram, you can test your bot on the Telegram, and you can start responding to the user's queries.
+Set up your bot with the intents to automatically respond to user messages on Telegram.
+
+* **Define bot's purpose and scope**: First, understand the scope and purpose of your bot (use case). Clearly outline what types of questions or requests the bot should handle based on your intended use case.
+* **[Create Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)**: Add the intents that correspond to common questions or requests from users. Within each intent, add the relevant utterances and ensure they are trained to trigger the appropriate flow.
+:::note
+To trigger the respective flow in the Telegram chatbot, you must add the utterances `START` and `start` and train them accordingly.
+:::
+* **[Create flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)**: Design customized conversation flows to manage responses. You can use the nodes such as Name, Question, Email, Phone number, Quick replies, Carousel, Date, Store comment, File prompt, and Input within the flow.
+
+Once you set up the bot, verify whether the bot responds to user according to the defined use case.
+
+## Test Telegram chatbot
+
+Once you have connected your bot to Telegram on the Yellow.ai platform, you can start testing your bot on Telegram to verify whether the bot is able to respond to user messages.
 
 To test your bot on Telegram, follow these steps:
 
 1. Open the Telegram app on your mobile device.
 
-2. Search for the bot by its username.
+2. Navigate to BotFather and click on the below-highlighted link to test the bot.
 
-3. Click **START** to start the conversation.
+   <img src="https://i.imgur.com/kG6oUxx.jpg" alt="drawing" width="30%"/>
+  
+2. Click **START** to start the conversation with the bot. Make sure you have already created an intent and added the utterances `START` and `start` to trigger the corresponding flow in your Telegram chatbot.
 
-   <img src="https://i.imgur.com/BJNhTeD.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/c1jHInM.png" alt="drawing" width="30%"/>
+   
+* The Telegram chatbot will trigger the relevant flow, and you can start interacting with the bot.   
+   
+   <img src="https://i.imgur.com/EetnkV5.jpg" alt="drawing" width="60%"/>
+   
+:::note
+* If you have not added the `START` and `start` utterances to your flow, the Telegram chatbot will not trigger the intended flow. Instead, a fallback message will be displayed.
+* The "START" button is visible only during the initial interaction with the bot.
+:::  
+   
+4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
+
+    <img src="https://i.imgur.com/F73BibF.jpg" alt="drawing" width="30%"/>
+    
+5. To view the entire conversation between the live agent and user, navigate to the **Inbox** module in the platform and select **Bot messages** in the **My Chats** section.
+
+    ![](https://i.imgur.com/GYJbLDm.png)
+
+
+* When the conversation between the agent and user ends, the bot takes the conversation forward with the user.
