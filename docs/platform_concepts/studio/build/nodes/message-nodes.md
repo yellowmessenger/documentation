@@ -360,48 +360,69 @@ To beautify the text you enter in the field -**bot says** you can add the follow
 
 This section helps you create a WhatsApp product messaging journey with a sample use case.
 
-![](https://i.imgur.com/cIVo56o.jpg)
-
-
+  ![](https://i.imgur.com/2VbCAhb.png)
 
 **Prerequisites** 
 
 The following are the prerequisites to create a catalog flow:
 
-1. Fill the Compliance information on the [Whatsapp Channel configuration page](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#1-whatsapp-configuration) (Not required for WABA hosted on Cloud API).
-2. [Add the Catalog with the required details](https://business.facebook.com/commerce/catalogs/930872404988098/products).
-3. [Connect the catalog to the WABA](https://www.craft.me/s/0loidngTNNAzkK/b/2AF9F5B2-431A-4361-801B-535519A98047/Catalog-Linked-with-the-WABA).
-4. [Create a table](https://docs.yellow.ai/docs/platform_concepts/studio/database#create) and [Add the products](https://docs.yellow.ai/docs/platform_concepts/studio/database#-3-import-data-into-table) from Catalog to your yellow bot's database to use them while sending SPM/MPM.
-
+1. [Add the Catalog with required details](https://business.facebook.com/commerce/catalogs/930872404988098/products).
+2. [Connect the catalog to the WABA](https://www.craft.me/s/0loidngTNNAzkK/b/2AF9F5B2-431A-4361-801B-535519A98047/Catalog-Linked-with-the-WABA).
+3. [Create a table](https://docs.yellow.ai/docs/platform_concepts/studio/database#create) and [add the products](https://docs.yellow.ai/docs/platform_concepts/studio/database#-3-import-data-into-table) from the Facebook catalogue to Yellow's database to use them while sending SPM/ MPM. Note that this step can be skipped. You can add the product IDs manually in the SPM/MPM node if your catalogue size is small.
 
 To create a catalog journey, follow these steps - 
 
-1. Use the same CSV used on the Catalog Manager to fill the Bot DB. You can create a DB Table with the same headers as the Data Feed Sheet and use it to upload all the products on the DB
+1. Use the same CSV used in the Catalog Manager to fill the bot DB. You can create a DB table with the same headers as the Data feed sheet and use it to upload all the products to the DB
 
 :::note 
-There is one limitation on Cloud DB Table creation which doesn’t lets you to create a table column name with the header as ID due to the min character required for a header. You have to keep a copy of the original Feed Sheet with the header as IDS and use it to upload to DB.
+There is one limitation on Cloud DB Table creation which does not let you create a table column name with the header as ID due to the min character required for a header. You have to keep a copy of the original Feed sheet with the header as IDS and use it to upload to DB.
 :::
 
 Here is the screenshot of a sample CSV file.
 
-![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfktJE4vn1LWBNwk843DQAoyX1b6zG3iRFcoKmicwyKhFt1ekgEaMrkaTWAXFfALWGfdaVc3RHujJEMAZswM7v231h1CtXDz5og5MwALtz2PEug4xqgEXABuDQBkFdghct2jVP2ZoMuCcoS3e5ZWefUqfTsG/Image.jpg)
+   ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfktJE4vn1LWBNwk843DQAoyX1b6zG3iRFcoKmicwyKhFt1ekgEaMrkaTWAXFfALWGfdaVc3RHujJEMAZswM7v231h1CtXDz5og5MwALtz2PEug4xqgEXABuDQBkFdghct2jVP2ZoMuCcoS3e5ZWefUqfTsG/Image.jpg)
 
 It appears in the Database as shown here.
-![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfkf7c28AhauJGr4SMiysKKMeabHngvRHjiass3eBGBTccSx3Z1jcAjG1RyZCEjZbMfwp6wg9EheTLkn6tAzm2Y8Gf2NwmMZg9vHk7TS6WNbSz9i9GUcyhf6poQsK9DmRi6RLnJJVEH6k6HaGkz5BnFhA3Vo/Image.jpg)
 
-2. Once the DB is ready you can query products based on the Category/Title. Using the Variable node, you can dynamically fetch the product IDS and pass them to the SPM/MPM nodes to send message to users.
+  ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfkf7c28AhauJGr4SMiysKKMeabHngvRHjiass3eBGBTccSx3Z1jcAjG1RyZCEjZbMfwp6wg9EheTLkn6tAzm2Y8Gf2NwmMZg9vHk7TS6WNbSz9i9GUcyhf6poQsK9DmRi6RLnJJVEH6k6HaGkz5BnFhA3Vo/Image.jpg)
 
-Here is a sample journey configuration screenshots - 
+2. Once the DB is ready, you can query products based on the Category/Title. Using the Variable node, you can dynamically fetch the product IDS and pass them to the SPM/MPM nodes by enabling the variable option and selecting the array of products.
 
-![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfm1eDf9ABao1h8fnSDmPoasJjBnDejx5GjqJrM8sHMfnxSNzDFVG4uttJkpW99cJHSCQgQ1aWvEbeXvjEoPNWK2Xk7kH1kYptDe2yybNYLdf4m4jKCsU3WqzdaB7P3ph6KyZKMRJegM1mNebLZN3ZxB5BKZ/Image.jpg)
+   <img src="https://i.imgur.com/xfyVLYd.png" alt="drawing" width="50%"/>
 
-![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfmBxak347sZVdEcGpJQnWzAxDpN5LtpkBsMJrUqJBVCCcYCk7LNm1Nc9Vw4yG2CjwqTf4jv24mB5iZhW6UEG8T6um6nmGYPdmB75qELen8x4R8DqZ9y5brSDWSMqaYAmywc7xPbDCyS5hFhWqWTpdVTWh3V/Image.jpg)
+Sample variable code:
 
-![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfkovdq7cZdAVmCphzgXMuDtFuv2oey5d3esZ3v5fW1xHJsbm4hM3cdyzb3Mre2ewALHBXfhwAsFPjvK5ECnVwVJBrFF5sCCFjdsFjwfT9p3FmxMGCEic8yjsT8EkqnN1AG7dEjie1at7td9f5o6qr4Qi7H3/Image.jpg)
+```
+[
+  {
+    "title": "Section 1",
+    "productIds": [
+      "Product 1",
+      "Product 2",
+      "Product 3"
+    ]
+  },
+  {
+    "title": "Section 2",
+    "productIds": [
+      "Product 4",
+      "Product 5"
+    ]
+  },
+  {
+    "title": "Section 3",
+    "productIds": [
+      "Product 6"
+    ]
+  }
+]
+```
 
-![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfkhmSHKziMNo7CJeHaQUnZWW4SU7ceQute1dTJDpTX6rPHgf2T84B3aZorh2J1XgfWcBKbVP5i1e98ghw39f2GVdb2jdijYUnCQrJsRe1RUkYFQwwUcLrsZdYYFMfYJvcwqAN2NwnVUPJADBHaZHFQzubHm/Image.jpg)
+3. In the above step, you have seen how a product can be fetched based on different conditions and can be used in the SPM/MPM node. Alternatively, you can also pass the product IDs manually, as shown in the below screenshot:
 
-3. In the above step we have seen how a product can be fetch based on deifferent condition and can be used as an SPM. Now we will go through the step of how we can handle the Cart events which comes to the bot once the user decides to purchase the product.
+    <img src="https://i.imgur.com/z1wLBPr.png" alt="drawing" width="50%"/>
+
+To handle Cart events when a user decides to purchase a product, follow the above steps.
 
 **Purchase flow of an end-user**:
 
@@ -464,10 +485,10 @@ You can handle this event using a journey to carry out the next steps of the buy
 
 ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfkcfYd6DU4oUGwYZvCQSpDgiGJCZKoa3NmxoXdnhxu35pY9fnaACj453GPhhUu1A2p3fTkJ3NzKqAPFkhGBgvvQbw5BimA4fNfAbo7eHZ3DVQLwuGZv7D1AagypJTMwHteTwHjLjYoDZ5T2Rxfy9uSBHDpU/Image.jpg)
 
-Ideally, it is suggested to have a human agent routing available to help users in case of queries related to the product or can be handled using NLP as well.
+Ideally, it is suggested to have a human agent routing available to help users with queries related to the product, which can be handled using NLP as well.
 
 :::note
-The Message Business will send both the message and the event to the bot if the event is active on the Event Hub. Incase the event is disabled the message can be handled using NLP and no event will be sent to the bot for getting the context of the product query.
+The Message Business will send both the message and the event to the bot if the event is active on the Event Hub. In case the event is disabled, the message can be handled using NLP, and no event will be sent to the bot for getting the context of the product query.
 :::
 
 The event will be as below:
@@ -495,7 +516,7 @@ The event will be as below:
   }
 }
 ```
-This completes the Bot Flow for the SPM/MPM Feature to be handled for a basic Commerce Flow.
+This completes the bot flow for the SPM/MPM feature to be handled for a basic Commerce flow.
 
-These flows can be also created with other complex use cases with live agent support for better user experince when the buyer wants to get consulatation or get more info on the product before purchasing.
+These flows can also be created with other complex use cases with live agent support for a better user experience when the buyer wants to get a consultation or get more information on the product before purchasing.
 
