@@ -372,7 +372,7 @@ The following are the prerequisites to create a catalog flow:
 
 To create a catalog journey, follow these steps - 
 
-1. Use the same CSV used in the Catalog Manager to fill the bot DB. You can create a DB table with the same headers as the Data feed sheet and use it to upload all the products to the DB
+1. Use the same CSV used in the Catalog Manager to fill the bot DB. You can create a DB table with the same headers as the Data feed sheet and use it to upload all the products to the DB.
 
 :::note 
 There is one limitation on Cloud DB Table creation which does not let you create a table column name with the header as ID due to the min character required for a header. You have to keep a copy of the original Feed sheet with the header as IDS and use it to upload to DB.

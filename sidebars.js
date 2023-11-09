@@ -1007,7 +1007,17 @@ module.exports = {
             "platform_concepts/channelConfiguration/line", 
             "platform_concepts/channelConfiguration/teams", 
             "platform_concepts/channelConfiguration/slack2",
-            "platform_concepts/channelConfiguration/sms-outbound-india", 
+            {
+              type: "category",
+              label: "SMS",
+              link: {type: 'doc', id: 'platform_concepts/channelConfiguration/SMS-channel'},
+              collapsed: true,
+              items: [
+            "platform_concepts/channelConfiguration/sms-outbound-india",
+            "platform_concepts/channelConfiguration/sms-inbound-US",
+            "platform_concepts/channelConfiguration/sms-phone-number-types",
+            "platform_concepts/channelConfiguration/sms-channel-registration",
+              ]}, 
             "platform_concepts/channelConfiguration/telegram",
             "platform_concepts/channelConfiguration/viber",
             "platform_concepts/channelConfiguration/viber-for-business",
