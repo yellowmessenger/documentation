@@ -198,21 +198,21 @@ The integration related events depend completely on the events the respective th
 
 Event | Description
 ----- | ----------
-shopifyCustomerUpdate | When there's an update to a customer's information in a Shopify store.
-shopifyNewOrder:** This event occurs when a new order is created in a Shopify store, indicating a customer's purchase.
-shopifyNewProduct | When a new product is added to the Shopify store's inventory.
-shopifyOrderCancelled | This event happens when an order in the Shopify store is canceled.
-shopifyOrderFulfilled | When an order is marked as fulfilled, indicating that it has been shipped or completed.
-shopifyOrderPaid | When an order in the Shopify store is marked as paid.
-shopifyRefundCreated | When a refund is created for an order in the Shopify store.
-shopifyNewCustome | When a new customer is added to the Shopify store.
-shopifyCheckoutCreated | When a customer initiates the checkout process in the Shopify store.
-shopifyCheckoutUpdate | When there's an update to a checkout in progress.
-shopifyOrdersUpdated | When there are updates or modifications to existing orders in a Shopify store.
-shopifyCartCreate | When a customer creates a shopping cart in the Shopify store, indicating their intent to make a purchase.
-shopifyCartEmpty | When a customer empties their shopping cart, indicating the removal of items they previously intended to purchase.
-shopifyUserSessionCreate | When a user initiates a session in the Shopify store, typically by logging in or visiting the site.
-shopifyUserSessionUpdate | When there's an update or change in the user's session within the Shopify store.
+|shopifyCustomerUpdate | When there's an update to a customer's information in a Shopify store.
+|shopifyNewOrder| This event occurs when a new order is created in a Shopify store, indicating a customer's purchase.
+|shopifyNewProduct | When a new product is added to the Shopify store's inventory.
+|shopifyOrderCancelled | This event happens when an order in the Shopify store is canceled.
+|shopifyOrderFulfilled | When an order is marked as fulfilled, indicating that it has been shipped or completed.
+|shopifyOrderPaid | When an order in the Shopify store is marked as paid.
+|shopifyRefundCreated | When a refund is created for an order in the Shopify store.
+|shopifyNewCustome | When a new customer is added to the Shopify store.
+|shopifyCheckoutCreated | When a customer initiates the checkout process in the Shopify store.
+|shopifyCheckoutUpdate | When there's an update to a checkout in progress.
+|shopifyOrdersUpdated | When there are updates or modifications to existing orders in a Shopify store.
+|shopifyCartCreate | When a customer creates a shopping cart in the Shopify store, indicating their intent to make a purchase.
+|shopifyCartEmpty | When a customer empties their shopping cart, indicating the removal of items they previously intended to purchase.
+|shopifyUserSessionCreate | When a user initiates a session in the Shopify store, typically by logging in or visiting the site.
+|shopifyUserSessionUpdate | When there's an update or change in the user's session within the Shopify store.
 
 
 

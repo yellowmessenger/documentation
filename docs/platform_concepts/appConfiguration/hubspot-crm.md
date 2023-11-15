@@ -3,93 +3,142 @@ title : Hubspot CRM
 sidebar_label : Hubspot CRM
 ---
 
-## Scope of Integration
-
-Yellow.ai Integration with Hubspot CRM allows you to seamlessly connect your Hubspot CRM instance with yellow.ai platform. Any customer who has a Hubspot CRM account will be able to connect their Hubspot instance with yellow.ai using OAuth. This connector will make sure you can do actions on your leads (contacts). Using this integration you can create, update, read, delete the leads (contacts) and also you can search for contacts with email and phone number.
-
-## Configuration
-
-Configuring the integration with hubspot CRM is straightforward. Follow the steps defined below
-to start integrating:
-
-### 1. Navigate to integration tab
-
-Inside your project, navigate to the Configuration tab and then click on the Integrations
-Tab. Search for Hubspot CRM.
-
-<img src="https://i.imgur.com/445XrpL.png" alt="drawing" width="50%"/>
-
-
-### 2. Connect your hubspot account
-
-Click on **Connect** to see an option of click to **Connect with Hubspot**. After you click that, you will notice that you will be prompted to login to your Hubspot account.
-
-![](https://i.imgur.com/v8CK0KN.gif)
-
-
-### 3. Add our webhook
-
-   You would need to add our webhook in your hubspot CRM account to receive events which were defined in this integration. The instructions that you have to follow to add our webhook will be available in the hubspot integration card.
-
-<img src="https://i.imgur.com/hzAick6.png" alt="drawing" width="55%"/>
-
-Following the above steps will connect your Hubspot CRM account with yellow.ai platform.
-
-If you have multiple accounts, follow the above mentioned steps to add each of them.
-
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 5 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
-
-##  Events
-Following are the events which are currently accommodated in the Integration:
-
-Event | Description
------ | -----------
-hubspot-contact-created | You will receive this event to the bot when a new lead(contact) got created in yourhubspot CRM. Based on that event you can confirm the user or you can design your custom flow according to your use case.
-
-<img src="https://i.imgur.com/r6s3N14.png" alt="drawing" width="60%"/>
-
-<img src="https://i.imgur.com/vPqTZBC.png" alt="drawing" width="60%"/>
+Yellow.ai seamlessly integrates with Hubspot CRM, providing you with the capability to control your Hubspot CRM account directly through yellow.ai's bot. This integration allows you to effortlessly create, fetch,update, delete and search for contacts in your Hubspot CRM account.
 
 :::info
-If you have added multiple accounts in your platform, enable events for each of those accounts.
-:::
-
-## Use-cases
-
-Following are the use-cases which are currently accommodated in the Integration:
-
-:::note
-When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
-:::
-
-### 1. Simple integration with OAuth
-
-Yellow.ai does not store the client’s credentials and leverages OAuth 2.0 approach for integrating with client’s Hubspot account.
-While integrating, yellow.ai navigates the user to the login page of Hubspot, user has to login into his hubspot CRM account and has to provide his consent.
-
-
-### 2. Do actions with hubspot action nodes
-
-   You can store a new **Lead(Contact)** and save it in your hubspot CRM. You can update,
-read, delete the lead(contact) too. Also you can search the leads (contacts) in your crm
-with email and phone number.
-
-
-<img src="https://i.imgur.com/7pjdFH7.png" alt="drawing" width="60%"/>
-
-<img src="https://i.imgur.com/FnrPohB.png" alt="drawing" width="60%"/>
-
-
-
-## Supported Version
-
 This integration will work on versions v3 and above.
 
+**Docs you can refer to:**
 
-For more information about action nodes you use here, refer this[doc  
-](https://developers.hubspot.com/docs/api/crm/contacts)For more information about webhook events you receive, refer this[doc](https://developers.hubspot.com/docs/api/webhooks)
+* [Hubspot CRM API doc](https://developers.hubspot.com/docs/api/crm/contacts)
+* [Webhook events](https://developers.hubspot.com/docs/api/webhooks)
+:::
+
+## Hubspot CRM actions that can be managed from yellow.ai
+
+ Action                          | Description                                                                                                                                                   |
+|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Create a contact                    |    Creates a new contact                                                                                                 |
+| Get a contact                    | Fetches a particular contact                                                                                                     |
+| Delete a contact                   | Deletes a contact|
+|Update a contact| Modifies details of a particular contact|
+|Search a contact by phone| Looks for a contact using phone number|
+|Search a contact by email| Looks for a contact using email address|
+
+## Connect Hubspot CRM with Yellow.ai
+
+**Prerequsites:**
+
+1. An active Hubspot CRM account
+2. An active yellow.ai account.
+
+To connect your Hubspot CRM account with Yellow.ai, follow the these steps:
+
+1. Go to cloud.yellow.ai and click **Integrations** on the module switcher.
+
+   ![](https://i.imgur.com/1EjCvqy.png)
+
+
+2. Search for **Hubspot** in the search box or go to the category **CRM** > **Hubspot**.
+
+   ![](https://i.imgur.com/2kHRX0G.png)
+
+3. In **Give account name** give a unique name to your Hubspot CRM account and click **Connect**.
+4. You'll be prompted to sign-in to your Hubspot CRM account. Once you have signed-in, select the Hubspot CRM account to be associated with Yellow.ai and click **Choose Account** to authorize yellow.ai to access **Hubspot CRM**.
+ 
+   <img src="https://i.imgur.com/8hvI81j.png" alt="drawing" width="60%"/>
+
+5. You can add multiple Hubspot CRM accounts in yellow.ai. Click **+ Add account** and follow the above mentioned steps for each account. You can add a maximum of 5 merchant accounts.
+
+   ![](https://i.imgur.com/ncdA1T2.png)
+
+:::note
+1. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
+2. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+:::
+
+## Enable events for Hubspot CRM
+
+For the bot to perform certain actions when an event occurs in Hubspot CRM, the event needs to be activated.
+
+The following are the events available for Hubspot in Yellow.ai:
+
+| Event                      | Description                               |
+| -------------------------- | ----------------------------------------- |
+| hubspot-contact-created    | When a contact is created in Hubspot       |
+| hubspot-contact-changed    | When a contact is modified in Hubspot     |
+| hubspot-contact-deleted    | When a contact is deleted in Hubspot      |
+| hubspot-contact-merged     | When contacts are merged in Hubspot       |
+| hubspot-contact-restored   | When a contact is restored in Hubspot     |
+
+
+
+ To activate an event and use it in your flow,
+
+1. Go to **Event** and click **Integrations**.
+
+  ![](https://i.imgur.com/gBBZZ68.png)
+
+
+2. Search for Hubspot events and click **Activate** next to the respective event.
+
+   ![](https://i.imgur.com/BHmLQQk.png)
+
+3. Go to a flow and include that event in the Start node and [build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) to carry out the action when that event occurs.
+
+   ![](https://i.imgur.com/br6ofma.png)
+
+## Manage Hubspot CRM through bot conversations
+
+To carry out a certain action in your Hubspot CRM account, follow these steps:
+
+1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
+2. In whichever point you want the bot to access Hubspot CRM, inlcude the Hubspot CRM node. For that, drag the node connector, go to **Integrations** > **Hubspot**.
+
+   ![](https://i.imgur.com/KUo5DgA.png)
+
+3. In the **Hubspot CRM** node, fill the following
+
+   <img src="https://i.imgur.com/vQVD6rB.png" alt="drawing" width="60%"/>
+
+* **Account name:** Choose the Hubspot CRM account.
+* **Action:** Choose the action to be performed.
+* Depending on the selected action, the corresponding fields will be shown. To fill those fields, you need to collect the information from users beforehand. Construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be passed in those fields.
+
+
+4. Each Hubspot CRM action returns a response as a JSON object. [Store that response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to display that response to the end user.
+
+For example, if you receive the following response, you can use this syntax ``` {{{variables.variablename.results.0.properties.lastname}}}  ``` to filter out the contact's last name.
+
+```
+{
+  "total": 0,
+  "results": [
+    {
+      "createdAt": "2019-10-30T03:30:17.883Z",
+      "archived": false,
+      "id": "512",
+      "properties": {
+        "company": "Biglytics",
+        "createdate": "2019-10-30T03:30:17.883Z",
+        "email": "bcooper@biglytics.net",
+        "firstname": "Bryan",
+        "lastmodifieddate": "2019-12-07T16:50:06.678Z",
+        "lastname": "Cooper",
+        "phone": "(877) 929-0687",
+        "website": "biglytics.net"
+      },
+      "updatedAt": "2019-12-07T16:50:06.678Z"
+    }
+  ],
+  "paging": {
+    "next": {
+      "link": "?after=NTI1Cg%3D%3D",
+      "after": "NTI1Cg%3D%3D"
+    }
+  }
+}
+```
+
+
+
