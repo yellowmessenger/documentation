@@ -119,10 +119,10 @@ You can only create the following number of custom fields for each data type:
 | Data type | Number of custom fields allowed | 
 | --- | --- |
 | Array |  20 | 
-| Date | 10 | 
-| Hierarchical | 3 |
-| Keyword | 20 | 
-| Number | 10 |
+| Date | 20 | 
+| Hierarchical | 10 |
+| Keyword | 30 | 
+| Number | 20 |
 | String | 20 | 
 
 ### Transfer/Resolve chat ticket by providing custom fields

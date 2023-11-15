@@ -74,6 +74,14 @@ For example:
 When testing sticky agent assignment, you can skip using the **Raise ticket** node. Use this API at the end of the flow to auto-generate and assign chats to Inbox agents.
 :::
 
+
+:::info
+You can obtain the uid to be passed in these APIs from the sender variable `{{{sender}}}`.
+
+<img src="https://hackmd.io/_uploads/SkOv2FOmT.png" alt="drawing" width="80%"/>
+
+:::
+
 ----
 
 ### Assign tickets to agents without any fallback
