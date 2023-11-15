@@ -212,19 +212,7 @@ To change the WhatsApp OBA (with a green tick mark) or non-OBA display name, fol
 
 * To verify the approval status of your display name, click **View** corresponding to the display name or check your ticket.
 
-7. Once your display name is approved, copy the certificate key.
-
-   <img src="https://i.imgur.com/thYYGwC.png" alt="drawing" width="40%"/>
-
-8. Go to the admin page, enter your phone number in the Search bar, and your Infra account will be displayed. Click **Display name update**.  
-
-   ![](https://i.imgur.com/X7hzzQK.png)
-
-9. Paste your certificate key and click **Change display name**.
-
-    ![](https://i.imgur.com/985woKN.png)
-
-* This process will update the display name for your WhatsApp account.  	 
+Once the display name is approved, share the WABA ID, phone number, and new display name details with our [support](mailto:support@yellow.ai) team so that they can update it in the back-end.
 
 ## Test your WhatsApp bot 
 
