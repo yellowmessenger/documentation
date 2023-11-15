@@ -1,61 +1,67 @@
 ---
-title: Configuring SMS services for US numbers
-sidebar_label: Configuring SMS services for US numbers
+title: Configure SMS service for US numbers
+sidebar_label: Configure SMS service for US numbers
 ---
 
 This guide will walk you through the process of setting up SMS services for US numbers.
 
 ## Prerequisites to setup SMS channel
 
-1. To configure SMS channel, contact [Integrations](mailto:support@yellow.ai) team and provide them with your details and requirements.
-2. The team will review your information and requirements and enable SMS channel for your bot.
-3. [Supported types of US phone numbers](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types).
+1. Contact [Integrations](mailto:support@yellow.ai) team and provide neccessary details and requirements for configuring the SMS channel.
+2. The team will review your information and enable the SMS channel for your bot.
+3. To send SMS using local, mobile, or toll-free numbers, it is necessary to [register](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types) these numbers. Note that, local and mobile number fall under the category of [long codes numbers](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types#long-codes-a2p-10dlc).
 
 ### Limitations
 * Currently, this integration is supported only for United States.
-* This channel does not support Short code numbers for configuring SMS services in the US.
+* This channel does not support short code numbers for configuring SMS services in the US.
 
-## Connect SMS channel on Yellow.ai
+## Set up SMS channel for US numbers
 
-Once the Integration team has enabled the SMS channel, follow these steps to setup your channel:
+### Activate your phone number
+
+After the Integration team enables the SMS channel, activate your phone number by following these steps:
+
+To activate your number, follow these steps:
 
 1. On the switcher, click **Channels**.
 
     <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="100%"/>
    
-2. On the **Messaging** channels page, click **SMS Inbound**.
+2. On the **Messaging** page, click **SMS Inbound**.
 
    ![](https://i.imgur.com/f5tD7Vu.png)
-
-:::note
-You cannot use the below option if SMS channel is not enabled for your bot. In order to enable SMS for US, contact [Integrations](mailto:support@yellow.ai) team.
-![](https://i.imgur.com/Ht65yCM.png)
-:::
      
-3. Click **+ Add number**.
+3. Click **+ Add number**. If this option is not enabled, contact [Integrations](mailto:support@yellow.ai) team.
 
    ![](https://i.imgur.com/y8Zn8i1.jpg)
    
 
-4. Choose the **United States** as the country and select your preferred phone number type Local, Mobile, or Toll- Free, then click **Search**. For more information on these number types, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types).
+4. Choose the **United States** as the country and select your preferred phone number type *Local*, *Mobile*, or *Toll-Free*, then click **Search** to view available phone numbers based on the selected phone number type. For more information on these number types, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types).
 
    ![](https://i.imgur.com/sn2y21E.jpg)
   
 :::note
 Local and mobile numbers fall under the category of [long codes numbers](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types#long-codes-a2p-10dlc).
 :::
-       
- * This displays a list of available phone numbers based on the selected phone number type.     
+    
+5. Select the desired number and contact the [Integrations](mailto:support@yellow.ai) team to acquire and register it.
+   
 
-5. To send SMS using local or Toll-Free numbers, it is necessary to purchase and register these numbers. Please contact the [Integrations](mailto:support@yellow.ai) team to acquire and register the numbers. Once the verification process is successfully completed, you can add your preferred phone number and click "Add".
+### Connect SMS channel to Yellow.ai
 
-   ![](https://i.imgur.com/HJGegXe.jpg)
+Once the registration process is complete, connect the SMS channel to Yellow.ai platform.
+
+1.  On the switcher, click **Channels** > **Messaging** > **SMS Inbound**. 
+
+2. Choose the phone number type and select the registered phone number, then click **Add**.
+
+  ![](https://i.imgur.com/HJGegXe.jpg)
       
-* The verified phone number will be successfully connected to your bot.
+* The registered phone number will be successfully connected to your bot.
 
-## Validation of SMS Bot Capabilities
+### Test your SMS channel
 
-Once your number is registered and connected to your bot,  you can verify its functionality through following use cases:
+Once your number is registered and connected to your bot,  you can test the channel for the following use cases:
 * One-way conversations: Send campaigns
 * Two-way conversations: Automated responses and live agent support
 
