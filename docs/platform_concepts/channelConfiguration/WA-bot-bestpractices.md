@@ -184,7 +184,7 @@ You need to follow the [WhatsApp business account guidelines](https://docs.yello
  
 To change the WhatsApp OBA (with a green tick mark) or non-OBA display name, follow these steps:
 
-1. Login to your Facebook business manager account and select **Accounts > WhatsApp accounts** > **WhatsApp Manager**.
+1. Login to your Facebook business manager account and navigate to **Accounts > WhatsApp accounts** > **WhatsApp Manager**.
 
       ![](https://i.imgur.com/ck9gziG.png)
 	  
