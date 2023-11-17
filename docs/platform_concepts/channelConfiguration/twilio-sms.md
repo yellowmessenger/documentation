@@ -78,13 +78,13 @@ To connect a Twilio SMS to your bot, follow these steps:
 
 ## Setup your bot
 
-Before you start testing your bot, setup your bot with intents to automatically respond to user messages within your inbox, as explained below.
+Set up your bot with the intents to automatically respond to user messages on SMS.
 
 * **Define bot's purpose and scope**: First, understand the scope and purpose of your bot (use case). Clearly outline what types of questions or requests the bot should handle based on your intended use case.
-* **[Create Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)**: Include the intents for common questions or requests. Add the utterances to each intent and train them to trigger the respective flow.
-* **[Create flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)**: Design customized conversation flows to manage responses to your FB posts. You can incorporate nodes within the flow.
+* **[Create Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)**: Add the intents that correspond to common questions or requests from users. Within each intent, add the relevant utterances and ensure they are trained to trigger the appropriate flow.
+* **[Create flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)**: Design customized conversation flows to manage responses.
 
-Once you set up the bot, verify whether the bot effectively handles and responds to user messages according to the defined expectations.
+Once you set up the bot, verify whether the bot responds to user according to the defined use case.
 
 ## Test Twilio SMS
 
