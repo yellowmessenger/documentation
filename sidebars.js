@@ -1019,6 +1019,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/sms-channel-registration",
               ]}, 
             "platform_concepts/channelConfiguration/telegram",
+            "platform_concepts/channelConfiguration/twilio-sms",
             "platform_concepts/channelConfiguration/viber",
             "platform_concepts/channelConfiguration/viber-for-business",
             {
