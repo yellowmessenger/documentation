@@ -341,3 +341,13 @@ No, WhatsApp bot cannot automatically enter the OTP.
 
 </p>
 </details>
+
+<details><summary><b>Is it possible to identify which user is interacting if two WhatsApp numbers are connected to the same bot?</b></summary>
+<p>
+
+Yes, you can identify which user is interacting with the bot by using this`{{{channel.whatsapp.whatsappBusinessId}}}` expression.
+
+</p>
+</details>
+
+
