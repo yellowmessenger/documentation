@@ -50,7 +50,7 @@ An extensive array of predefined templates are tailored for various business sce
 [**Learn how to use marketplace templates :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#2-view--import-template)
 
 
-### Create an Orchestrator (Parent) bot with linked Child bots
+### Create an Orchestrator(Parent) bot with linked Child bots
 
 The Orchestrator simplifies control and oversight of multiple bots, offering modularity for independent development and one-time setup automation for inter-linkages. Click **+Create orchestrator**, enter your details and confirm the creation of this bot.
 
@@ -83,16 +83,17 @@ Flows represent the automated sequence of actions your bot executes. Studio empo
 ![Open Studio](https://hackmd.io/_uploads/BJffdQ-Ep.png)
 
 **Use Cases:**
-
-1. **Building a Bot for Your Website:** Add your website links to the Knowledge Base (KB), and your website bot is ready for testing without additional flows. 
+1. **AI-powered knowledge base integration**: Easily link your Knowledge Base (KB) to the bot, enabling it to access information and provide accurate answers. Learn more
 Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview).
     ![image](https://hackmd.io/_uploads/rkHziNvEp.png)
 
-2. **Building a Custom Bot:** Utilize AI Co-Pilot by describing the expected conversation and use case. Flows are generated automatically. 
+
+2. **Automated flow generation**: Generates bot flows effortlessly tailored to your specific use cases, using AI Co-pilot. Save time and resources with smart, automated bot creation. Explore Automation
 Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot). 
     ![image](https://hackmd.io/_uploads/Sk2-3NwEp.png)
 
-3. **Generating a Conversation:** Use AI Dynamic Chat Node within flows to auto-generate a conversation. 
+
+3. **Intelligent conversations with AI based Dynamic chat node**: Enhance your bot's conversational capabilities using the Dynamic chat node within flows. This allows for dynamic and context-aware interactions. Discover Dynamic chat node.
 Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode).
     ![](https://i.imgur.com/HFHBq0c.png)
 

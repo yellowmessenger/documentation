@@ -9,8 +9,6 @@ sidebar_label: Signup to yellow.ai
 This guide will walk you through the process of signing up for a yellow.ai account and creating your first bot. Follow these steps to get started:
 
 
-## Create an Yellow.ai account
-
 If you're new to the yellow.ai platform, here's how to sign up:
 
 1. Open the [Cloud Platform](https://cloud.yellow.ai).
@@ -36,10 +34,12 @@ To access specific bots within your organization, click Request Access.
 :::
 
 6. Select your preferred bot creation option by choosing between **building a bot from the scratch** or use **predefined templates**.
-   <img src="https://hackmd.io/_uploads/H1Z--XLo2.png" alt="drawing" width="70%"/>         
+
+<img src="https://hackmd.io/_uploads/H1Z--XLo2.png" alt="drawing" width="70%"/>         
     
-    (or)       
-   <img src="https://hackmd.io/_uploads/H1aHZQLj3.png" alt="drawing" width="70%"/>
+(or)       
+   
+<img src="https://hackmd.io/_uploads/H1aHZQLj3.png" alt="drawing" width="70%"/>
 
 
 7. Choose your bot region and click **Create project**.
