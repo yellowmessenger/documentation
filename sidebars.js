@@ -149,6 +149,7 @@ module.exports = {
       collapsed: true,
       items: [
       "platform_concepts/Getting Started/account-setup",
+      "platform_concepts/Getting Started/createfirstbot",
       "platform_concepts/Getting Started/upgrade",  
       "platform_concepts/Getting Started/publish-env",
 

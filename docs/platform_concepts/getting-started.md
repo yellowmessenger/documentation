@@ -1,9 +1,9 @@
 ---
-title: Ultimate AI bot building platform
+title: Yellow.ai overview
 sidebar_label: Yellow.ai
 ---
 
-Yellow.ai is an advanced cloud-based software platform designed to revolutionize the way businesses build AI bots. You can create intelligent and highly efficient bots that provide exceptional customer support experiences. 
+Yellow.ai is an advanced cloud-based platform designed to revolutionize the way businesses build AI bots. You can create intelligent and highly efficient bots that provide exceptional customer support experiences. 
 
 By combining the capabilities of AI and human expertise, Yellow.ai empowers you to deliver personalized interactions, automate processes, and streamline customer engagement across multiple channels.
 
@@ -14,19 +14,11 @@ Yellow.ai offers two different platforms:
 
 -->
 
-Cloud.yellow.ai is our **no-code platform**, designed specifically for those who want to create bots and automate processes without writing a single line of code. With its intuitive interface and user-friendly features, you can easily design and deploy AI bots, regardless of your technical expertise. Say goodbye to complex coding and hello to simplicity and efficiency. Following are the **additional features** that you can leverage with the Cloud platform:
-- Accessibility and ease of use
-- Accelerated development workflow
-- Flexibility and agility
-- Seamless collaboration
-- Continuous innovation
+Yellow.ai is a cutting-edge cloud platform that transforms how businesses build AI bots. The platform enables the creation of intelligent, efficient bots for exceptional customer support. With a fusion of AI and human expertise, Yellow.ai empowers personalized interactions, process automation, and streamlined engagement across channels.
 
 
-:::info
-App.yellow.ai is our **code-based platform**. Not all Cloud features are available on the App. Hence we highly recommend migrating to the Cloud Platform, for a comprehensive and enhanced experience. 
-
-Detailed instructions on how to migrate can be found in our [migration guide](https://docs.yellow.ai/docs/cookbooks/migration-guide).     
-For further assistance, reach out to your designated POC.
+:::note
+We also have an App platform (app.yellow.ai), a code-based solution with limited features. However, for a comprehensive experience and enhanced benefits, we strongly recommend [migrating](https://docs.yellow.ai/docs/cookbooks/migration-guide) to our Cloud Platform. For additional support, contact your designated POC.
 :::
 
 
@@ -40,13 +32,14 @@ At Yellow.ai, we understand the importance of seamless and effective communicati
       
 [**Explore Studio (customizable bot builder) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
-
+<!--
 ### Ready-made templates for quick deployment
 
 Accelerate your bot development process with Yellow.ai's **marketplace** of ready-made templates. Our templates cater to different business use cases and industries, providing you with a head start in creating bots. Simply choose the template that suits your requirements, customize it to align with your brand, and deploy your bot quickly.
 
 [**Explore Marketplace templates documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro)
 
+-->
 
 ### Connect customers to human techies for support
 
