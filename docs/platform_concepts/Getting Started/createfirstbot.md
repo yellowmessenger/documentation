@@ -82,19 +82,19 @@ Flows represent the automated sequence of actions your bot executes. Studio empo
 
 ![Open Studio](https://hackmd.io/_uploads/BJffdQ-Ep.png)
 
-**Use Cases:**
-1. **AI-powered knowledge base integration**: Easily link your Knowledge Base (KB) to the bot, enabling it to access information and provide accurate answers. Learn more
+Transform your bot-building experience with Yellow.ai's **powerful AI features**:
+
+1. **AI-powered knowledge base integration**: Easily link your Knowledge Base (KB) to the bot, enabling it to access information and provide accurate answers. 
 Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview).
     ![image](https://hackmd.io/_uploads/rkHziNvEp.png)
 
 
-2. **Automated flow generation**: Generates bot flows effortlessly tailored to your specific use cases, using AI Co-pilot. Save time and resources with smart, automated bot creation. Explore Automation
-Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot). 
+2. **Automated flow generation**: Generates bot flows effortlessly tailored to your specific use cases, using AI Co-pilot. Save time and resources with smart, automated bot creation.  
+Explore [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot). 
     ![image](https://hackmd.io/_uploads/Sk2-3NwEp.png)
 
-
-3. **Intelligent conversations with AI based Dynamic chat node**: Enhance your bot's conversational capabilities using the Dynamic chat node within flows. This allows for dynamic and context-aware interactions. Discover Dynamic chat node.
-Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode).
+3. **Intelligent conversations with AI based Dynamic chat node**: Enhance your bot's conversational capabilities using the Dynamic chat node within flows. This allows for dynamic and context-aware interactions.  
+Discover [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode).
     ![](https://i.imgur.com/HFHBq0c.png)
 
 ---
