@@ -57,7 +57,7 @@ To connect your Hubspot CRM account with Yellow.ai, follow the these steps:
 2. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
 :::
 
-## Enable events for Hubspot CRM
+## Enable events for Hubspot CRM actions
 
 For the bot to perform certain actions when an event occurs in Hubspot CRM, the event needs to be activated.
 
@@ -72,6 +72,45 @@ The following are the events available for Hubspot in Yellow.ai:
 | hubspot-contact-restored   | When a contact is restored in Hubspot     |
 
 
+### Add webhook to receive events
+
+You need to add the webhook URL from the integration page in your Hubspot CRM app to receive the events mentioned above. To do so:
+
+1. Go to **Hubspot CRM integration** in cloud.yellow.ai and copy the Webhook URL.
+
+   ![](https://i.imgur.com/Qmd7rxZ.png)
+
+2. Go to your **Hubspot CRM** account and click the **Settings** icon.
+
+   ![](https://i.imgur.com/x1eUiqz.png)
+
+3. Go to Integrations > Private Apps and click **Create a private app**.
+
+   ![](https://i.imgur.com/7r7HQyo.png)
+
+4. In **Basic Info**, enter a name for your app and describe if required. You can also upload a logo for that app if required.
+
+   ![](https://i.imgur.com/QiTtI94.png)
+
+5. Go to **Scopes**, and enable the scopes for the actions for which you wish to recieve events from Hubspot.
+
+   ![](https://i.imgur.com/dlWYtXU.png)
+   
+6. Go to **Webhooks** and past the Webhook URL copied in step 1. then, click **Create Subscription** to create the app.
+
+   ![](https://i.imgur.com/otbZ7pA.png)
+
+7. In the following screen, select the object types and the events you'd like to get notified. Then, click **Subscribe**.
+
+   
+   <img src="https://i.imgur.com/REVgszK.png" alt="drawing" width="50%"/>
+   
+ 8. Click **Create app** on the top right corner.
+
+   ![](https://i.imgur.com/BkgUaxh.png)
+
+
+### Activate events in Yellow.ai
 
  To activate an event and use it in your flow,
 
@@ -87,7 +126,8 @@ The following are the events available for Hubspot in Yellow.ai:
 3. Go to a flow and include that event in the Start node and [build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) to carry out the action when that event occurs.
 
    ![](https://i.imgur.com/br6ofma.png)
-
+   
+  
 ## Manage Hubspot CRM through bot conversations
 
 To carry out a certain action in your Hubspot CRM account, follow these steps:

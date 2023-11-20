@@ -3,22 +3,48 @@ title : EPIC FHIR Integration
 sidebar_label : EPIC FHIR
 ---
 
-You can now integrate your app on [Epic FHIR](https://fhir.epic.com/) account with the **Yellow.ai** platform using OAuth. This will let your users access patient details, search for appointment slots, and book appointments.
+# Epic FHIR
 
-## 1. Connect Yellow.ai with EPIC FHIR
+Yellow.ai integrates with Epic FHIR letting you access medical records in your app in Epic FHIR. This integration furthermore lets you access patient details, search for appointment slots, and book appointments.
 
-1. Go to your **Epic FHIR** app and fetch the **Client ID** and **Client Secret**.
+:::info
+This integration will support STU3 version releases. For more information, click [here](https://fhir.epic.com/Specifications).
+:::
 
-![](https://i.imgur.com/MGxkK8J.png)
+## Epic FHIR actions that can be managed from yellow.ai
+
+After integrating with Epic FHIR, you can perform the following tasks directly from the Yellow.ai platform:
+
+| Action| Description | 
+| -------- | -------- |
+| Fetch patient information | Fetch patient information from patient ID     | 
+|Fetch patient diagnostic information| Fetch patient diagnostic information from patient ID|
+|Fetch patient demographics| Fetch patient information using the patient's date of birth and name|
+|Fetch appointment slots|Fetch available appointment slots|
+|Book appointments|Book appointments with the available appointment ID from fetch appointment slots use case|
+Fetch patient appointment details| Fetch the appointment details of a patient from the patient ID|
+
+## Connect Epic FHIR with Yellow.ai
+
+**Prerequsites:**
+
+1. An app on Epic FHIR. To know about creating an app on Epic FHIR, click [here](https://fhir.epic.com/Documentation?docId=epiconfhirrequestprocess).
+2. An active yellow.ai account.
+
+To connect your Epic FHIR account with Yellow.ai, follow the these steps:
+
+1. Go to your app on Epic FHIR and copy the **Client ID** and **Client Secret**.
+
+   ![](https://i.imgur.com/MGxkK8J.png)
 
 
 2. Go to your **Yellow.ai** bot and click **Integrations** in the module switcher.
 
-![](https://i.imgur.com/BmIVufB.png)
+   ![](https://i.imgur.com/BmIVufB.png)
 
 3. Search for **EPIC FHIR**, fill in the **Client ID** and **Client Secret** and click **Connect to EPIC FHIR**.
 
-![](https://i.imgur.com/bHEXvm6.png)
+   ![](https://i.imgur.com/bHEXvm6.png)
 
 4. If you have multiple accounts, follow the above mentioned steps to add each of them.
 
@@ -35,33 +61,22 @@ You can now integrate your app on [Epic FHIR](https://fhir.epic.com/) account wi
 2. This integration supports the STU3 version of API, so the  APIs based on the clients' use cases should be added while creating the **Epic** app.
 :::
 
-## 2. Use-Case
+## 2. Manage Epic FHIR from yellow.ai
 
-You can retrieve patient data with patient ID and  demographics, view available appointment slots, book appointments and also fetch the appointment details of a patient.
+This integration lets your users access patient's medical records and fetch/book appointments.
 
-1. In the [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) flow builder, select the **Integrations** node and click **EPIC FHIR** from the list of integrations that have been enabled for that bot.
+1. Go to **Studio** and build a flow based on how you want the bot to take the user through the process.
+2. Include the integration node at the point in the flow where you want to let the user access Epic FHIR info. To accomplish this, navigate to **Integrations** and select **EPIC FHIR**.
 
-![](https://i.imgur.com/HlhkU2S.png)
-
-2. After clicking **EPIC FHIR**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all the use-cases of this integration in a drop-down. Choose the one you want to use.
-
-![](https://i.imgur.com/KMIIA9d.png)
+   ![](https://i.imgur.com/HlhkU2S.png)
 
 
-The following table describes the use-case values in detail:
+3. Once the node gets added, click the node, choose the EPIC FHIR account for that action and choose the action you want to carry out.
 
-| Node Name| Functionality | 
-| -------- | -------- |
-| Fetch patient information | Fetch patient information from patient ID     | 
-|Fetch patient diagnostic information| Fetch patient diagnostic information from patient ID|
-|Fetch patient demographics| Fetch patient information using the patient's date of birth and name|
-|Fetch appointment slots|Fetch available appointment slots|
-|Book appointments|Book appointments with the available appointment ID from fetch appointment slots use case|
-Fetch patient appointment details| Fetch the appointment details of a patient from the patient ID|
+   ![](https://i.imgur.com/KMIIA9d.png)
 
-
-### Supported Version
-This integration will support STU3 version releases. For more information, click [here](https://fhir.epic.com/Specifications).
+4. Depending on the selected action, the corresponding fields will be shown. To collect this information from users, you must construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be used in this context.
+5. Each Epic FHIR action returns a response as a JSON object or an array. [Store that response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to display that response to the end user.
 
 
 
