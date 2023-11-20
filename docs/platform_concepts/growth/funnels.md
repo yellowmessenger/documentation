@@ -1,7 +1,6 @@
 ---
 title: Understand flow-related details using funnels 
 sidebar_label: Funnels
-
 ---
 
 
@@ -78,8 +77,13 @@ One of the primary use cases in the Funnels section is to understand the number 
 2. The graph will display the steps or nodes within the selected journey.
 
 <img src="https://i.imgur.com/bgpzi3v.png" alt="drawing" width="40%"/>
-    
+
+
+
+
 Let's consider the example flow **Booking**:
+
+
 
 ![](https://hackmd.io/_uploads/B1oZDKYY2.png)
 

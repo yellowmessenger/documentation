@@ -129,13 +129,15 @@ To view the quality rating of the template and phone numbers, follow these steps
 
     ![](https://i.imgur.com/GT46xg4.png)
      
-2. To view the quality rating of phone numbers, click **Account tools > Message templates**.
+2. To view the quality rating of phone numbers, click **Account tools > Phone numbers**.
 
     ![](https://i.imgur.com/GF76rL8.png)  
 
 ## Set up a WhatsApp channel
 
 To set up a WhatsApp channel, you need to have an active WhatsApp business account. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
+
+### Apply for official business account
 
 Once your account is set up, you need to apply WA for an official business account.
 
@@ -156,6 +158,8 @@ To apply for an official business account, follow these steps:
 
 Once you apply for an official business account, you need to verify your business account with Facebook. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#12-verify-business-account-with-facebook).
 
+### Change WA display picture and description
+
 After setting up your WA channel, you can change the  display picture and description.
 
 To change the display picture and description, follow these steps:
@@ -172,24 +176,43 @@ To change the display picture and description, follow these steps:
 * You cannot change the display name on the platform. To change the display name, you have to go to the Facebook business manager account. 
 :::
 
-To change the WA display name, follow these steps:
+### Change WA display name
 
-1. Login to your Facebook business manager account and select **Accounts > WhatsApp accounts** > **WhatsApp Manager**.
+If your WhatsApp Official Business Account (OBA) or non-OBA display name encounters initial rejection during the embedded sign-up process or needs to be changed in the future, you need to reapply from your own FBM. 
+
+You need to follow the [WhatsApp business account guidelines](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-business-account-guidelines) before applying or changing the display name for your business.
+ 
+To change the WhatsApp OBA (with a green tick mark) or non-OBA display name, follow these steps:
+
+1. Login to your Facebook business manager account and navigate to **Accounts > WhatsApp accounts** > **WhatsApp Manager**.
 
       ![](https://i.imgur.com/ck9gziG.png)
 	  
 2. Select **Phone numbers**.
 
      ![](https://i.imgur.com/ifaxupp.jpg) 
-	 
-3. Under *Name*, click **Edit** icon to edit the display name.
 
-     ![](https://i.imgur.com/jNtOL3r.png)	
+3. To check the approval status of your display name, click **View** corresponding to the display name.
 
-:::note
-If your WhatsApp display name gets rejected for the first time while applying via an embedded sign-up process, you need to reapply from your own FBM. After reapplying, if it is still rejected, you need to raise a support ticket with Meta.
-:::     
+   <img src="https://i.imgur.com/Rp3bDqp.png" alt="drawing" width="40%"/>   
 	 
+3. For non-OBA, under *Name*, click **Edit** icon to change the display name.
+
+     ![](https://i.imgur.com/oQfYgzR.png)	
+
+4. Enter the **New display name** and click **Next**.    
+
+   ![](https://i.imgur.com/IJ4cviE.png)
+
+5. To confirm the approval status of your display name, click **View** corresponding to the display name.  
+
+6. For OBA, navigate to [Facebook's direct support](https://business.facebook.com/direct-support/?business_id=1333020976800454) and raise a ticket to update the OBA display name. 
+
+   ![](https://i.imgur.com/yY4vQ31.png)
+
+* To verify the approval status of your display name, click **View** corresponding to the display name or check your ticket.
+
+Once the display name is approved, share the WABA ID, phone number, and new display name details with our [support](mailto:support@yellow.ai) team so that they can update it in the back-end.
 
 ## Test your WhatsApp bot 
 

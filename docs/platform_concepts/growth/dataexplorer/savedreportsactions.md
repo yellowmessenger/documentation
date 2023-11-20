@@ -55,6 +55,10 @@ To delete the saved query, select **Delete query** from the **Actions** dropdown
 
 ## 4. Add a formula column to a report 
 
+:::note
+The **Add formula column** option will only be available in saved reports created from custom tables, not default tables.
+:::
+
 To add a formula to a column, follow these simple steps:
 
 1. Click on the **Actions** dropdown menu and select **Add formula column**.

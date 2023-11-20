@@ -1,6 +1,6 @@
 ---
-title: SMS Outbound India
-sidebar_label: SMS Outbound India
+title: Configure SMS service for Indian numbers
+sidebar_label: Configure SMS service for Indian numbers
 ---
 
 #### SMS Channel configuration on Yellow.ai platform
@@ -170,3 +170,11 @@ Sending blast campaign from the engagement platform:
 
 1. **Go to Engagement > Templates > Select SMS > Create the same template** that you created and got approved in the DLT portal. Add the exact details as added in the DLT portal. Make sure the message content is JUST THE SAME without any changes in the linespace, case (upper/lower case) and such
 2. Make use of the V2 Notification APIs and [Flow campaigns](/docs/platform_concepts/engagement/flows_campaign) as per required.
+
+## FAQ
+
+1. Does Service implicit, Service Explicit, Promotional, and Transactional  template support DND (Do Not Disturb) filtering?
+* Service implicit: No, this template does not support DND filtering.
+* Service explicit: Supports semi-DND. If a user blocks messages from a specific industry, they will not receive messages from that industry. Every 6 months, consent data needs to be uploaded; otherwise, templates may be blocked.
+* Promotional: Supports DND filtering.
+* Transactional: Does not support DND filtering.

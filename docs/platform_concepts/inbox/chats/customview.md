@@ -126,6 +126,6 @@ The options to edit and delete custom views are exclusively available to Inbox a
 2. By clicking the edit icon, the custom views tab will open on the right-hand side, permitting the necessary modifications to be made. Save the changes after completing the edits.
 3. Deleting a custom view is straightforward, click the delete icon and confirm the action.
 
-<img src="https://hackmd.io/_uploads/ryKokKrzT.png" alt="drawing" width="50%"/>
+<img src="https://hackmd.io/_uploads/H1oysNUQT.png" alt="drawing" width="50%"/>
 
 

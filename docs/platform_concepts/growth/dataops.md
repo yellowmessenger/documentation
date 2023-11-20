@@ -39,6 +39,7 @@ To export data, follow the steps below:
     * **Leads**: All the user profile data.
     * **Call recordings**: All the recorded calls from the voice bot.
     * **User 360**: All the User 360 report from engage.
+    * **Audit logs**: All the audit logs datasets. 
 - Click **Next**. 
 
 

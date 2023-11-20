@@ -149,6 +149,7 @@ module.exports = {
       collapsed: true,
       items: [
       "platform_concepts/Getting Started/account-setup",
+      "platform_concepts/Getting Started/createfirstbot",
       "platform_concepts/Getting Started/upgrade",  
       "platform_concepts/Getting Started/publish-env",
 
@@ -666,7 +667,7 @@ module.exports = {
         },
 
         "platform_concepts/inbox/inboxfaqs",
-        "platform_concepts/inbox/upcoming-developments",
+        //"platform_concepts/inbox/upcoming-developments",
 
     //other files
       ],
@@ -1007,8 +1008,19 @@ module.exports = {
             "platform_concepts/channelConfiguration/line", 
             "platform_concepts/channelConfiguration/teams", 
             "platform_concepts/channelConfiguration/slack2",
-            "platform_concepts/channelConfiguration/sms-outbound-india", 
+            {
+              type: "category",
+              label: "SMS",
+              link: {type: 'doc', id: 'platform_concepts/channelConfiguration/SMS-channel'},
+              collapsed: true,
+              items: [
+            "platform_concepts/channelConfiguration/sms-outbound-india",
+            "platform_concepts/channelConfiguration/sms-inbound-US",
+            "platform_concepts/channelConfiguration/sms-phone-number-types",
+            "platform_concepts/channelConfiguration/sms-channel-registration",
+              ]}, 
             "platform_concepts/channelConfiguration/telegram",
+            "platform_concepts/channelConfiguration/twilio-sms",
             "platform_concepts/channelConfiguration/viber",
             "platform_concepts/channelConfiguration/viber-for-business",
             {
@@ -1028,8 +1040,9 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
+            "platform_concepts/channelConfiguration/webex",  
             "platform_concepts/channelConfiguration/zalo", 
-            "platform_concepts/channelConfiguration/webex",
+            
                
             
             
