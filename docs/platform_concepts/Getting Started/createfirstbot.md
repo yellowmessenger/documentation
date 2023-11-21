@@ -49,7 +49,7 @@ An extensive array of predefined templates are tailored for various business sce
 
 [**Learn how to use marketplace templates :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#2-view--import-template)
 
-### Manually create a bot from scratch
+### Create a bot from scratch
 
 Craft a bot from the ground up to align precisely with your unique business requirements. Click **Create bot from scratch**, enter your details and confirm the creation of this bot.
 
@@ -66,7 +66,7 @@ By default, your bot is created with essential flows: Welcome, fallback for unid
 [**Learn how to use studio module in detail :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
 
-### Create an Orchestrator(Parent) bot with linked Child bots
+### Create an Orchestrator(Parent) bot
 
 The Orchestrator simplifies control and oversight of multiple bots, offering modularity for independent development and one-time setup automation for inter-linkages. Click **+Create orchestrator**, enter your details and confirm the creation of this bot.
 
@@ -86,7 +86,7 @@ Bots can be built in Development/Sandbox/Staging mode and published to Live/Prod
 
 Bot-Customer interaction represents the ongoing dialogue between the bot and the customer.
 
-<img src="https://hackmd.io/_uploads/B1emJ45ET.png" alt="drawing" width="40%"/>
+<img src="https://imgur.com/9gZkOOP.png" alt="drawing" width="40%"/>
 
 
 **Create Flows to dispaly bot messages and understand customer input**:
@@ -95,7 +95,7 @@ To guide the bot's responses, you create predefined pathways known as **Flows**.
 
 In the Build section, you can construct these flows, defining the automated sequence of actions the bot takes. This is based on the questions and responses from users.
 
-![image](https://hackmd.io/_uploads/ByQu9XcVT.png)
+![image](https://imgur.com/uPml3IQ.png)
 
 
 **Build conversations using nodes**:
@@ -113,12 +113,14 @@ Nodes are connected to each other, forming the conversational flow. This connect
 
 The bot's responses are driven by customer input. To enhance its understanding, the bot can be trained in the **Train** section. 
 
-![image](https://hackmd.io/_uploads/HJhrhmcE6.png)
+
+![image](https://imgur.com/ZOaB6wZ.png)
+
+Transform your bot-building experience with Yellow.ai's **powerful AI features** mentioned below:
 
 
 ### AI-powered knowledge base integration
 
-Transform your bot-building experience with Yellow.ai's **powerful AI features**:
 
 
 Easily link your Knowledge Base (KB) to the bot, enabling it to access information and provide accurate answers.   
