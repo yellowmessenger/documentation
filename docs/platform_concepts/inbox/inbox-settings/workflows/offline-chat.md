@@ -94,3 +94,7 @@ Follow the steps below to enable offline handling of live chats:
 `Customer request is not addressed`
 
 
+
+:::info
+To notify customers on agent unavailability when offline handling is enabled, refer to this[detailed guide](https://docs.yellow.ai/docs/cookbooks/inbox/notifycustomerofflinehandling).
+:::
