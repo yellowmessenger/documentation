@@ -77,15 +77,18 @@ The Orchestrator simplifies control and oversight of multiple bots, offering mod
 
 ## Step 3: Invite other bot collaborators 
 
-To facilitate collaboration on your bot, you have the ability to invite other users and manage their permissions. To do this, navigate to the **Access control** section from the overview page and invite users by entering their email IDs.
+To facilitate collaboration on your bot, you have the ability to invite other users and manage their permissions. 
+
+**To invite users**, navigate to the **Access control** section from the overview page and invite users by entering their email IDs.
+You have the flexibility to invite multiple users and assign different levels of access to each. This ensures that users only have the permissions necessary for their role.
 
 <img src="https://imgur.com/g5wtZPI.png" alt="drawing" width="40%"/>
 
-You have the flexibility to invite multiple users and assign different levels of access to each. This ensures that users only have the permissions necessary for their role.
-
-You can track incoming access requests through the **User request** tab. If you find a request appropriate, you can grant the required permissions.
+**To view and accept incoming access requests**, open the **User request** tab and if you find a request appropriate, you can grant the required permissions.
 
 ![image](https://imgur.com/Z6qtWqp.gif)
+
+[**Learn how to send/accept/view/monitor bot access :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators)
 
 ----
 

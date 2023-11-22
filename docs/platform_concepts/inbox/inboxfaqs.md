@@ -120,6 +120,23 @@ WhatsApp templates created with <a href="https://developers.facebook.com/docs/wh
 </div>
 </details> 
 
+**Instagram policy**
+
+<details>
+<summary> What is Instagram 7-day policy? </summary>
+<div>
+
+Instagram's 7-day policy for live chats refers to the limitation on replying to Direct Messages (DMs) after a certain period of inactivity. This policy aims to promote timely customer service and prevent brands or individuals from sending unsolicited messages or promotional content after a prolonged silence.
+
+Breakdown of the 7-day policy:
+
+- Initial 24 hours: You can freely respond to DMs without any restrictions, including sending promotional content or using automated bot replies.
+- After 24 hours but within 7 days: Your responses must be directly related to the topic of the conversation. Promotional content or automated bot replies are not allowed.
+- After 7 days: You can only send one of three types of responses, that is, request the user to restart the conversation to initiate a new 7-day window, provide a link to your Instagram profile or website for further information, or ask the user to contact you through another channel, such as email or phone.
+​
+</div>
+</details>
+
 **Knowledge base**
 
 <details>
@@ -152,3 +169,4 @@ The archive tab in the mobile app is a collection of active, open, resolved, mis
 On the overview tab there is an option to view agent and their current statuses.
 </div>
 </details>
+
