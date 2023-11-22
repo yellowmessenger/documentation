@@ -4,7 +4,7 @@ sidebar_label: Bot subscription plans
 tags: [start for free, essential features at no cost]
 ---
 
-two subscription plans offered by Yellow.ai for bot-building:
+Yellow.ai offers two subscription plans:
 
 1. **Freemium plan**: This is the standard plan available to all users upon signing up for Yellow.ai. It provides several free features and allows users to create basic bots without any additional cost.
 2. **Premium plan**: For users who want to unlock advanced customization options and access features not available in the freemium plan, they can upgrade to the premium plan. To do so, you need to contact a Yellow.ai product expert who will tailor a customized plan to meet your specific needs.
@@ -14,7 +14,8 @@ two subscription plans offered by Yellow.ai for bot-building:
 
 ## Freemium plan 
 
-Yellow.ai offers a **Freemium plan**. The plan is designed for new users and serves as a trial version for a limited period. It allows you to explore the product and its capabilities at no cost. During this trial, you can test the platform's features and functionalities to see how well it fits your business needs. With the Freemium plan, you can experience the full potential of our platform and its essential features before committing to premium plans.
+The **Freemium plan** is like a free trial designed just for you. It allows you to explore all the exciting features our platform offers, completely free of charge. Test it out, play with the features, and see if it's the perfect fit for your business needs. You can experience the full power of our platform before deciding on the premium plan.
+
 
 The Freemium plan includes the following features:
 

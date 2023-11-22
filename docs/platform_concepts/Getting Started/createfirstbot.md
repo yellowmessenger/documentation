@@ -35,7 +35,7 @@ Create a new bot by following these steps:
     ![image](https://hackmd.io/_uploads/Hyevj1JS4a.png)
 
 
-### Import a fully designed bot from pre-defined templates
+### Import a bot from pre-defined templates
 
 An extensive array of predefined templates are tailored for various business scenarios. You can create a fully functional chatbot by selecting templates closely aligned with your use case. For example, if you need a bot to assist customers with checking their loan status and applying for a loan, simply use the keyword *Banking* to find relevant templates.
 
@@ -66,7 +66,7 @@ By default, your bot is created with essential flows: Welcome, fallback for unid
 [**Learn how to use studio module in detail :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
 
-### Create an Orchestrator(Parent) bot
+### Create an orchestrator(parent) bot
 
 The Orchestrator simplifies control and oversight of multiple bots, offering modularity for independent development and one-time setup automation for inter-linkages. Click **+Create orchestrator**, enter your details and confirm the creation of this bot.
 
@@ -75,7 +75,21 @@ The Orchestrator simplifies control and oversight of multiple bots, offering mod
 
 ----
 
-## Step 3: Build and customize in Studio 
+## Step 3: Invite other bot collaborators 
+
+To facilitate collaboration on your bot, you have the ability to invite other users and manage their permissions. To do this, navigate to the **Access control** section from the overview page and invite users by entering their email IDs.
+
+<img src="https://imgur.com/g5wtZPI.png" alt="drawing" width="40%"/>
+
+You have the flexibility to invite multiple users and assign different levels of access to each. This ensures that users only have the permissions necessary for their role.
+
+You can track incoming access requests through the **User request** tab. If you find a request appropriate, you can grant the required permissions.
+
+![image](https://imgur.com/Z6qtWqp.gif)
+
+----
+
+## Step 4: Build and customize in Studio 
 
 :::note
 Bots can be built in Development/Sandbox/Staging mode and published to Live/Production. Learn more about these enviornment [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
@@ -89,7 +103,7 @@ Bot-Customer interaction represents the ongoing dialogue between the bot and the
 <img src="https://imgur.com/9gZkOOP.png" alt="drawing" width="40%"/>
 
 
-**Create Flows to dispaly bot messages and understand customer input**:
+**Create Flows to display bot messages and understand customer input**:
 
 To guide the bot's responses, you create predefined pathways known as **Flows**.
 
@@ -121,8 +135,6 @@ Transform your bot-building experience with Yellow.ai's **powerful AI features**
 
 ### AI-powered knowledge base integration
 
-
-
 Easily link your Knowledge Base (KB) to the bot, enabling it to access information and provide accurate answers.   
 Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview).
     ![image](https://hackmd.io/_uploads/rkHziNvEp.png)
@@ -135,7 +147,7 @@ Explore [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/build/
     ![image](https://hackmd.io/_uploads/Sk2-3NwEp.png)
 
 
-### Intelligent conversations with AI based Dynamic chat node
+### AI based Dynamic chat node
 
 Enhance your bot's conversational capabilities using the Dynamic chat node within flows. This allows for dynamic and context-aware interactions.  
 Discover [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode).
@@ -143,7 +155,7 @@ Discover [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studi
 
 ---
 
-## Step 4: Publish/Deploy your bot online 
+## Step 5: Publish/Deploy your bot online 
 
 After adding all the components (flows, database, NLU training, APIs, etc.), follow these steps:
 
@@ -162,7 +174,7 @@ Your initial bot has been developed and deployed. You can enhance its capabiliti
 
 -----
 
-## Step 5: Monitor your bot performance
+## Step 6: Monitor your bot performance
 
 Bot insights are automatically tracked. You can also customize the tracked data through Insights module.
 ![Track Insights](https://hackmd.io/_uploads/H1lqoX-VT.png)
