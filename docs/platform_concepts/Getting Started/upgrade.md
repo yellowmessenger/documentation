@@ -31,8 +31,6 @@ Upon [signing up](https://docs.yellow.ai/docs/platform_concepts/Getting%20Starte
 
 ### Limitations of Freemium plan
 
-While the Freemium plan provides businesses with a cost-effective way to access Yellow.ai's conversational AI solutions, it does come with certain limitations. Some advanced features and functionalities are exclusively available to users who subscribe to Yellow.ai's paid plans. If you require access to any of these features, you'll need to upgrade your plan accordingly.
-
 The following features are currently unavailable in the Freemium plan and can be accessed by upgrading to a paid plan:
 
 | Module | Restricted feature | Consumption limit |
