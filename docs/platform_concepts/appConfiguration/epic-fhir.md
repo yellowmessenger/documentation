@@ -3,15 +3,10 @@ title : EPIC FHIR Integration
 sidebar_label : EPIC FHIR
 ---
 
-# Epic FHIR
+Yellow.ai integrates with Epic FHIR letting you access medical records in your app in Epic FHIR. This integration lets you access patient details, search for appointment slots, and book appointments.
 
-Yellow.ai integrates with Epic FHIR letting you access medical records in your app in Epic FHIR. This integration furthermore lets you access patient details, search for appointment slots, and book appointments.
 
-:::info
-This integration will support STU3 version releases. For more information, click [here](https://fhir.epic.com/Specifications).
-:::
-
-## Epic FHIR actions that can be managed from yellow.ai
+## Supported Epic FHIR actions with Yellow.ai
 
 After integrating with Epic FHIR, you can perform the following tasks directly from the Yellow.ai platform:
 
@@ -45,15 +40,13 @@ To connect your Epic FHIR account with Yellow.ai, follow the these steps:
 3. Search for **EPIC FHIR**, fill in the **Client ID** and **Client Secret** and click **Connect to EPIC FHIR**.
 
    ![](https://i.imgur.com/bHEXvm6.png)
-
-4. If you have multiple accounts, follow the above mentioned steps to add each of them.
-
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 5 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
+   
+:::info
+1. In a two-tier environment, add account names in Development and use them in Live.
+2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
+
+4. You can add up to five merchant accounts. To add another Zoho CRM account, click on **Add account** and follow the steps mentioned above. 
 
 
 :::note 
@@ -61,22 +54,19 @@ To connect your Epic FHIR account with Yellow.ai, follow the these steps:
 2. This integration supports the STU3 version of API, so the  APIs based on the clients' use cases should be added while creating the **Epic** app.
 :::
 
-## 2. Manage Epic FHIR from yellow.ai
+## Use actions in bot conversations
 
 This integration lets your users access patient's medical records and fetch/book appointments.
 
 1. Go to **Studio** and build a flow based on how you want the bot to take the user through the process.
 2. Include the integration node at the point in the flow where you want to let the user access Epic FHIR info. To accomplish this, navigate to **Integrations** and select **EPIC FHIR**.
 
-   ![](https://i.imgur.com/HlhkU2S.png)
+     ![](https://i.imgur.com/HlhkU2S.png)
 
 
-3. Once the node gets added, click the node, choose the EPIC FHIR account for that action and choose the action you want to carry out.
+3. Once the node gets added, click the node, choose the EPIC FHIR account for that action and [choose the action](#supported-epic-fhir-actions-with-yellowai) you want to carry out.
 
    ![](https://i.imgur.com/KMIIA9d.png)
 
-4. Depending on the selected action, the corresponding fields will be shown. To collect this information from users, you must construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be used in this context.
-5. Each Epic FHIR action returns a response as a JSON object or an array. [Store that response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to display that response to the end user.
-
-
-
+4. Depending on the selected action, the corresponding fields will be shown. Collect this information as input from users by constructing a flow accordingly and [store the input in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be used in this context.
+5. Each Epic FHIR action returns a response as a JSON object or an array. [Store that response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and and to extract the required information from the payload [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to display that response to the end user.
