@@ -96,11 +96,23 @@ This is not available for Email custom fields.
 | Date          | Any date value. Example: Date of return of the item, Order placement date             |
 |Hierarchical |When there are multiple levels of information, you can use this field |
 
-:::info
-**Hierarchical custom field**
-For example, when the customer sends "Charging broken", the agent can obtain the product details (Laptop/Mobile) and assign it to a component (Charger) and find a resolution for that component. 
 
-![](https://i.imgur.com/HgH1VrT.png)
+
+:::info
+**Hierarchical custom field (HCF)**
+
+HCF is utilized when dealing with multiple levels of information. For example, when a customer reports *Charging broken*, the agent can retrieve product details (Laptop/Mobile), assign it to a component (Charger), and find a resolution for that specific component.
+- You can have only four levels of HCF.
+- The option to mark as **Required for ticket creation** is not available for HCF.
+- These fields cannot be fetched from the **Raise ticket** node; hence, you cannot mark them as read-only. 
+- All fields are marked as mandatory; therefore, all HCFs must be entered.
+
+![image](https://imgur.com/Q5VKIJA.png)
+
+- All levels of HCFs will be required on the ticket when marked as 'Required for transfer/close. 
+
+![image](https://imgur.com/EbzNoEa.png)
+
 :::
 
 :::note
@@ -129,7 +141,7 @@ You can only create the following number of custom fields for each data type:
 
 For chat disposition with custom fields, you must mark the below checkboxes: 
 
-1. **Required to create ticket**: A ticket cant is created if this field value is not entered. 
+1. **Required to create ticket**: A ticket cant be created if this field value is not entered. 
 2. **Required to transfer ticket**: This value must be entered by the agent to transfer the ticket to another agent. 
 3. **Required to close ticket**: This value must be entered by the agent if the ticket must be closed. 
 
@@ -154,7 +166,7 @@ There is a column dedicated to each custom field in the [chat archives report](h
 
 ## <a name="4"></a>  4. Event to identify custom field inputs
 
-When a custom field is updated in the platform, an event ` ticket-update` is triggered, with the `changeType` set as `change_custom_field`. This event can be captured and utilized by activating it in **Studio** on **Events**. 
+When a custom field is updated in the platform, an event `ticket-update` is triggered, with the `changeType` set as `change_custom_field`. This event can be captured and utilized by activating it in **Studio** on **Events**. 
 
 > For steps to create and activate events, refer to [this article](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events).
 
