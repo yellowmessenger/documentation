@@ -90,6 +90,20 @@ You have the flexibility to invite multiple users and assign different levels of
 
 [**Learn how to send/accept/view/monitor bot access :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators)
 
+
+:::info
+
+**Bot ID**:             
+
+
+To obtain the bot ID, you can click on the web link from any page of the bot after creating it and copy the 14-digit alphanumeric value (e.g., x16763649******).        
+The bot ID is different in each environment.
+
+![image](https://imgur.com/9vCnQxr.png)
+
+:::
+
+
 ----
 
 ## Step 4: Build and customize in Studio 
@@ -170,7 +184,7 @@ After adding all the components (flows, database, NLU training, APIs, etc.), fol
 
 
 Your initial bot has been developed and deployed. You can enhance its capabilities by exploring additional modules and incorporating features to streamline interactions between the bot and customers.
-- Integrate third-party tools ([Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) and [Integrations](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview).
+- Integrate third-party tools ([Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) and [Integrations](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview)).
 - Leverage the Customer Data Platform [User360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview) for customer data, e.g., lead generation.
 - Run inbound and outbound marketing campaigns via. [Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).
 - Integrate tech support and a knowledge base into your website through [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox).
