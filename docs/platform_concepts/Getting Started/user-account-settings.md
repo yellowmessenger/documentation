@@ -78,7 +78,7 @@ To view audit log, follow these steps,:
 
 ----
 
-## View bot subscriptions
+## View subscription details
 
 :::note
 To add a new subscription, contact the account manager.
@@ -90,8 +90,30 @@ To view an existing subscription:
     <img src="https://i.imgur.com/M50BpIU.png" alt="drawing" width="100%"/>
 2. You can see the details of your subscription plan, organization name, billing address, and contact details.
     <img src="https://i.imgur.com/X74Va7B.png" alt="drawing" width="100%"/>
-3. You can also invite users to access the bots under a particular subscription plan.
+
+
+### Access your subscription ID
+
+You can obtain your subscription ID from the web link when you are on the subscriptions page or next to your subscription name.
+
+![image](https://imgur.com/TFywlK6.png)
+
+
+### View bots in your subscription
+
+On the overview page, when you click on the bot name and search for other bots using the subscription ID/subscription name, you can find all the bots under that subscription. 
+In the screenshot below, you can see that the user has access to a total of 31 bots, out of which belong to the subscription 16022.
+
+![image](https://imgur.com/8WmJq7N.png)
+
+
+### Invite users to access your subscription
+
+Admins can invite users to access the bots under a particular subscription plan. An admin can invite a user to the entire subscription and not individual bots. The user will not have access to all the bots in the subscription until bot access is granted by the admin. This section is only available to owners of the subscription
+
     <img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
+
+
 
 
 ***

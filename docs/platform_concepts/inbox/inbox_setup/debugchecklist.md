@@ -69,6 +69,15 @@ Chats can be missed due to certain settings in [queue handling](https://docs.yel
 | **Group offline unavailable**: The chat is missed because the group name does not exist in the Inbox group Settings, for example, an incorrect group name or group code. |
 | **Agents went offline**: The chat is missed because all the agents went offline for more than 10 minutes once the chat got queued. |
 
+-----
+
+## Audit log for inbox changes
+
+Audit logs are available for all changes made to inbox settings and the chat screen. However, this feature is currently not available for email-related changes. 
+Open **Audit logs** from your profile, and you can filter the audit logs for the inbox module to review the changes. 
+
+![image](https://imgur.com/oOCKkYu.png)
+
 
 
 
