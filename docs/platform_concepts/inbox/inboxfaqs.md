@@ -3,8 +3,6 @@ title: Inbox FAQs
 sidebar_label : Inbox FAQs
 ---
 
-
-
 <details>
 <summary> 
 Which attachment formats does Inbox support?
@@ -61,7 +59,7 @@ An inbox admin can configure what happens to the live chats when all the agents 
 
 
 
-**Sticky agents** 
+#### **Sticky agents** 
 
 <details>
 <summary> What does "agents not eligible to take chats" mean? </summary>
@@ -78,7 +76,7 @@ Sticky tickets will not go into the queue even if the group queue is turned ON. 
 </details>
 
 
-**WhatsApp policy**   
+#### **WhatsApp policy**   
 
 
 <details>
@@ -120,7 +118,16 @@ WhatsApp templates created with <a href="https://developers.facebook.com/docs/wh
 </div>
 </details> 
 
-**Knowledge base**
+#### **Instagram policy**
+
+<details>
+<summary> What is Instagram 7-day policy? </summary>
+<div>
+Instagram's 7-day policy for live chats refers to the limitation on replying to Direct Messages (DMs) after a certain period of inactivity. This policy aims to promote timely customer service and prevent brands or individuals from sending unsolicited messages or promotional content after a prolonged silence. <br/> <br/> Breakdown of the 7-day policy: <br/> - <b> Initial 24 hours </b> : You can freely respond to DMs without any restrictions, including sending promotional content or using automated bot replies. <br/> - <b> After 24 hours but within 7 days </b> : Your responses must be directly related to the topic of the conversation. Promotional content or automated bot replies are not allowed. <br/> - <b> After 7 days </b> : You can only send one of three types of responses, that is, request the user to restart the conversation to initiate a new 7-day window, provide a link to your Instagram profile or website for further information, or ask the user to contact you through another channel, such as email or phone.
+</div>
+</details>
+
+#### **Knowledge base**
 
 <details>
 <summary> How can I integrate Google Analytics with knowledgebase?</summary>
@@ -137,7 +144,7 @@ Use Chatbot integration to add the intercom bot source code.
 </div>
 </details>
 
-**Mobile APP**
+#### **Mobile APP**
 
 <details>
 <summary> Where can I view missed or queued chats? </summary>
@@ -152,3 +159,4 @@ The archive tab in the mobile app is a collection of active, open, resolved, mis
 On the overview tab there is an option to view agent and their current statuses.
 </div>
 </details>
+

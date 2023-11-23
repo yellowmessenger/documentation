@@ -144,7 +144,23 @@ The live chat interface includes an automatic indicator that remains visible unt
 
 <img src="https://hackmd.io/_uploads/HkvlpoZOh.png" alt="drawing" width="50%"/> 
 
----
+----
+
+### Mark attachments as sensitive
+
+Agents can mark attachments sent by customers as sensitive by clicking on the disclaimer option available on the sent attachment. This action will result in the immediate deletion of the data from the chat screen, with a brief window for undoing the action. The data will be permanently deleted from the backend within the next 15 days.
+
+This feature is useful in cases where users have shared sensitive information such as credit card details or if inappropriate images are sent.
+
+![image](https://imgur.com/WriQI99.gif)
+
+
+To allow agents to mark attachments as sensitive, admins must go to **Settings > Agents > Configure agent UI**. Select the respective agent's name and check **Enable reporting sensitive files for deletion**. 
+
+![image](https://imgur.com/5iXxAUm.png)
+
+
+----
 
 
 ### Initiate studio flow with @bot
@@ -200,6 +216,8 @@ Agents can access the agent assist bot by pressing Cmd + K (Ctrl + K on Windows)
 ![](https://hackmd.io/_uploads/rJf_D7Jxp.png)
 
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/agentassistbot) for a detailed documentation on agent assist bot. 
+
+
 
 
 -----
