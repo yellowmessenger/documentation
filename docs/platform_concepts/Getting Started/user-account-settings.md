@@ -1,5 +1,5 @@
 ---
-title: Manage your account settings
+title: Manage your account
 sidebar_label: Manage your account
 ---
 

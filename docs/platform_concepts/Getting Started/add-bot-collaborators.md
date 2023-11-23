@@ -86,7 +86,7 @@ In the **View bot invites** section, you can easily access and manage(Accept/Del
 
 ----
 
-## Monitor bot access
+## Manage bot access
 
 With **Super Admin/Admin** privileges, you can monitor user interactions with your bot, including access requests, current access status, and access request history. Follow these steps:
 
