@@ -58,7 +58,7 @@ To connect your Zoho CRM account with Yellow.ai, follow the these steps:
 
 ## Use actions in bot conversations
 
-To carry out a certain action in your Zoho CRM account, follow these steps:
+To carry out a [certain action](#supported-zoho-crm-actions-with-yellowai) in your Zoho CRM account, follow these steps:
 
 1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
 2. In whichever point you want the bot to access Zoho CRM, inlcude the Zoho CRM node. For that drag the node connector, go to **Integrations** > **Zoho CRM**.
@@ -70,7 +70,7 @@ To carry out a certain action in your Zoho CRM account, follow these steps:
    ![](https://i.imgur.com/UeuaTVh.png)
 
 * **Account name:** Choose the Zoho CRM account. If you have only one account, the account name is automatically populated. If you have multiple accounts, the first account added is auto-populated. Select the one you want to use at that moment.
-* **Action:** Choose the action to be performed.
+* **Action:** Choose the [action](#supported-zoho-crm-actions-with-yellowai) to be performed.
 * **Select Objects:** Choose the Zoho CRM module in which the chosen action should be performed.
 * Depending on the selected object, the corresponding fields will be shown. To fill those fields, you need to collect it as an input from users beforehand. Construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be passed in those fields.
 
