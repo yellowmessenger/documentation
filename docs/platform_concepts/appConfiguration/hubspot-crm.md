@@ -3,18 +3,10 @@ title : Hubspot CRM
 sidebar_label : Hubspot CRM
 ---
 
-Yellow.ai seamlessly integrates with Hubspot CRM, providing you with the capability to control your Hubspot CRM account directly through yellow.ai's bot. This integration allows you to effortlessly create, fetch,update, delete and search for contacts in your Hubspot CRM account.
+Yellow.ai seamlessly integrates with Hubspot CRM, providing you with the capability to manage your Hubspot CRM account directly through yellow.ai's bot. This integration allows you to effortlessly create, fetch, update, delete and search for contacts in your Hubspot CRM account.
 
-:::info
-This integration will work on versions v3 and above.
 
-**Docs you can refer to:**
-
-* [Hubspot CRM API doc](https://developers.hubspot.com/docs/api/crm/contacts)
-* [Webhook events](https://developers.hubspot.com/docs/api/webhooks)
-:::
-
-## Hubspot CRM actions that can be managed from yellow.ai
+## Supported Hubspot CRM actions in Yellow.ai
 
  Action                          | Description                                                                                                                                                   |
 |---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -44,20 +36,22 @@ To connect your Hubspot CRM account with Yellow.ai, follow the these steps:
    ![](https://i.imgur.com/2kHRX0G.png)
 
 3. In **Give account name** give a unique name to your Hubspot CRM account and click **Connect**.
-4. You'll be prompted to sign-in to your Hubspot CRM account. Once you have signed-in, select the Hubspot CRM account to be associated with Yellow.ai and click **Choose Account** to authorize yellow.ai to access **Hubspot CRM**.
+
+:::info
+1. In a two-tier environment, add account names in Development and use them in Live.
+2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
+:::
+
+4. Sign in to your **Hubspot CRM** account when prompted. From there, select the Hubspot CRM account you want to link with Yellow.ai and click **Choose Account** to authorize Yellow.ai to access **Hubspot CRM**.
  
    <img src="https://i.imgur.com/8hvI81j.png" alt="drawing" width="60%"/>
 
-5. You can add multiple Hubspot CRM accounts in yellow.ai. Click **+ Add account** and follow the above mentioned steps for each account. You can add a maximum of 5 merchant accounts.
+5. You can add up to five merchant accounts. To add another Hubspot CRM account, click on **Add account** and follow the steps mentioned above.
 
    ![](https://i.imgur.com/ncdA1T2.png)
 
-:::note
-1. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-2. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
 
-## Enable events for Hubspot CRM
+## Enable events for Hubspot CRM actions
 
 For the bot to perform certain actions when an event occurs in Hubspot CRM, the event needs to be activated.
 
@@ -65,13 +59,52 @@ The following are the events available for Hubspot in Yellow.ai:
 
 | Event                      | Description                               |
 | -------------------------- | ----------------------------------------- |
-| hubspot-contact-created    | When a contact is created in Hubspot       |
-| hubspot-contact-changed    | When a contact is modified in Hubspot     |
-| hubspot-contact-deleted    | When a contact is deleted in Hubspot      |
-| hubspot-contact-merged     | When contacts are merged in Hubspot       |
-| hubspot-contact-restored   | When a contact is restored in Hubspot     |
+| hubspot-contact-created    | Contact is created in Hubspot       |
+| hubspot-contact-changed    | Contact is modified in Hubspot     |
+| hubspot-contact-deleted    | Contact is deleted in Hubspot      |
+| hubspot-contact-merged     | Contacts are merged in Hubspot       |
+| hubspot-contact-restored   | Contact is restored in Hubspot     |
 
 
+### Add webhook to receive events
+
+You need to add the webhook URL from the integration page in your Hubspot CRM app to receive the events mentioned above. To do so:
+
+1. Go to **Hubspot CRM integration** in cloud.yellow.ai and copy the Webhook URL.
+
+   ![](https://i.imgur.com/Qmd7rxZ.png)
+
+2. Go to your **Hubspot CRM** account and click the **Settings** icon.
+
+   ![](https://i.imgur.com/x1eUiqz.png)
+
+3. Go to **Integrations** > **Private Apps** and click **Create a private app**.
+
+   ![](https://i.imgur.com/7r7HQyo.png)
+
+4. In **Basic Info**, enter a **Name** and **Description**. You can also upload a logo for that app if required.
+
+   ![](https://i.imgur.com/QiTtI94.png)
+
+5. Go to **Scopes**, and enable the scopes for the actions for which you wish to recieve events from Hubspot.
+
+   ![](https://i.imgur.com/dlWYtXU.png)
+   
+6. Go to **Webhooks** and past the Webhook URL copied in step 1. then, click **Create Subscription** to create the app.
+
+   ![](https://i.imgur.com/otbZ7pA.png)
+
+7. In the following screen, select the object types and the events you'd like to get notified. Then, click **Subscribe**.
+
+   
+   <img src="https://i.imgur.com/REVgszK.png" alt="drawing" width="50%"/>
+   
+ 8. Click **Create app** on the top right corner.
+
+   ![](https://i.imgur.com/BkgUaxh.png)
+
+
+### Activate events in Yellow.ai
 
  To activate an event and use it in your flow,
 
@@ -87,8 +120,9 @@ The following are the events available for Hubspot in Yellow.ai:
 3. Go to a flow and include that event in the Start node and [build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) to carry out the action when that event occurs.
 
    ![](https://i.imgur.com/br6ofma.png)
+    
 
-## Manage Hubspot CRM through bot conversations
+## Use actions in bot conversations
 
 To carry out a certain action in your Hubspot CRM account, follow these steps:
 
@@ -97,13 +131,13 @@ To carry out a certain action in your Hubspot CRM account, follow these steps:
 
    ![](https://i.imgur.com/KUo5DgA.png)
 
-3. In the **Hubspot CRM** node, fill the following
+3. Configure the **Hubspot CRM** node based on the descriptions provided in the following:
 
    <img src="https://i.imgur.com/vQVD6rB.png" alt="drawing" width="60%"/>
 
 * **Account name:** Choose the Hubspot CRM account.
-* **Action:** Choose the action to be performed.
-* Depending on the selected action, the corresponding fields will be shown. To fill those fields, you need to collect the information from users beforehand. Construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be passed in those fields.
+* **Action:** Choose the [action](#supported-hubspot-crm-actions-in-yellowai) to be performed.
+* Depending on the selected object, the corresponding fields will be shown. To fill those fields, you need to collect it as an input from users beforehand. Construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be passed in those fields.
 
 
 4. Each Hubspot CRM action returns a response as a JSON object. [Store that response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to display that response to the end user.

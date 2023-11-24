@@ -7,6 +7,20 @@ Yellow.ai provides various environments for managing your bots and making contin
 
 Depending on your bot subscription, you'll encounter the following modes:
 
+:::info
+
+**Bot ID**:             
+
+
+To obtain the bot ID, you can click on the web link from any page of the bot after creating it and copy the 14-digit alphanumeric value (e.g., x16763649******).        
+The bot ID is different in each environment.
+
+![image](https://imgur.com/9vCnQxr.png)
+
+:::
+
+
+
 ## Freemium 
 
 **Development and Live modes**

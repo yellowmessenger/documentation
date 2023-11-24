@@ -149,6 +149,7 @@ module.exports = {
       collapsed: true,
       items: [
       "platform_concepts/Getting Started/account-setup",
+      "platform_concepts/Getting Started/createfirstbot",
       "platform_concepts/Getting Started/upgrade",  
       "platform_concepts/Getting Started/publish-env",
 
@@ -1019,6 +1020,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/sms-channel-registration",
               ]}, 
             "platform_concepts/channelConfiguration/telegram",
+            "platform_concepts/channelConfiguration/twilio-sms",
             "platform_concepts/channelConfiguration/viber",
             "platform_concepts/channelConfiguration/viber-for-business",
             {

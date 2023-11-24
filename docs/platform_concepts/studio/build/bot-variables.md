@@ -3,7 +3,6 @@ title: Variables
 sidebar_label : Bot Variables
 ---
 
-## <a name="hed-1"></a> 1. Variables
 
 Variables are placeholders that can hold a value and can be used to store user input, data from external systems, or any other relevant information that needs to be saved and used later in the bot conversation. Variables help in creating dynamic and personalized bot conversations.
 
@@ -32,7 +31,7 @@ Ensure you add the data type values in the format mentioned here, for example, i
 :::
 
 
-## 2. Types of variables
+## Types of variables
 
 There are 4 different types of variables offered by yellow.ai. They are:
 
@@ -44,7 +43,7 @@ There are 4 different types of variables offered by yellow.ai. They are:
 3. Config variables
 4. User properties
 
-### 2.1 Custom Variables
+### Custom Variables
 
 Custom Variables are variables created by bot builders to meet their specific business requirements. They are further divided into two types: Journey Variables and Global Variables. 
 
@@ -59,7 +58,7 @@ In the following example, **Email** is stored as a Global Variable (as it remain
 
 ![Custom Variables Example](https://i.imgur.com/140xW0K.jpg)
 
-### 2.2 System Variables
+### System Variables
 
 System variables are pre-defined variables that store information about the user session, conversation, and bot configuration. They're available by default in the platform and can be used across bot flows to personalize the conversation and provide relevant information to the user.
 
@@ -101,13 +100,13 @@ The following fields are available in the user profile object:
 To know more, see [System user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties). 
 :::
 
-### 2.3 Config Variables 
+### Config Variables 
 
 Config variables are used to store a wide range of information, including API keys, URLs, database connection strings, and other configuration settings that are used throughout the bot flow. By storing these values in Config Variables, bot builders can easily update them in the platform without modifying any code. 
 
 For example, suppose that a bot needs to connect to a specific external API. Rather than hardcoding the API key directly into the bot's code, bot builders can create a Config Variable called **api_key** and store the value there. If the API key ever needs to be updated, the bot builder can simply modify the value of the **api_key** Config Variable in the Yellow.ai platform, without needing to make any changes to the bot's code.
 
-### 2.4 User Properties
+### User Properties
 
 User Properties are variables that store information about each individual user interacting with the bot. These properties are stored directly in [User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties) help personalize the user's experience and can be used to make decisions about which messages or actions to display. Examples of User Properties include name, email address, and location.
 
@@ -116,7 +115,7 @@ User Properties are variables that store information about each individual user 
  To create new user properties, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) for the steps. 
 :::
 
-## <a name="hed-2"></a> 3. Create a Variable
+## Create a Variable
 
 :::note
  Only **Custom** and **Config** variables can be added, while **System** Variables and **User Properties** are predefined and cannot be modified.
@@ -137,7 +136,7 @@ User Properties are variables that store information about each individual user 
 5. Based on the chosen data type, the sample **Value** will be displayed automatically. Custom values to be stored in that variable can also be added. 
 6. Click **+Add**. 
 
-### 3.1 Create a Variable via nodes
+### Create a Variable via nodes
 
 You can also create global variables through nodes and those variables  can be used in any flow or node.
 
@@ -167,15 +166,15 @@ We recommend using new variables to store data rather than reusing existing ones
 
 ---
 
-## <a name="hed-4"></a> 4. Store and retrieve data using variables 
+## Store and retrieve data using variables 
 
 Variables can be used to store data, which can then be retrieved and displayed to end users.
 
-### 4.1 Store data in variables
+### Store data in variables
 
 Action nodes and Prompt nodes can be used to store the data in variables. 
 
-#### 4.1.1 Store the response of a node 
+#### Store the response of a node 
 
 1. Click **Store Response In** option at the bottom of the action/prompt node.
 2. A list of journey/global variables and user properties will be displayed, from which you can choose the appropriate variable to store the user's response.
@@ -194,7 +193,7 @@ When the bot asks a question and the user responds, the response will be stored 
  ![](https://i.imgur.com/l6aRHLK.png) 
 :::
 
-### 4.2 Retrieve data from variables
+### Retrieve data from variables
 
 A bot variable can be accessed and used inside any node using the notation `{{{variables.variable_name}}` or by clicking  the variables icon. 
 
@@ -209,7 +208,7 @@ Data entered in a variable is stored in a specific node and can be retrieved usi
 
 <img src="https://i.imgur.com/DvYxITj.png" alt="drawing" width="60%"/>
  
-### 4.3 Variable Datatypes
+### Variable Datatypes
 
 Different prompts and action nodes return responses in various formats and data types. Refer to the tables below to understand what types of variables can be stored in each node.
 
@@ -252,7 +251,7 @@ Different prompts and action nodes return responses in various formats and data 
 | [Generate PDF](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#19-generate-pdf-image)         | object, array, number, string |
 
 
-## <a name="hed-5"></a> 5. Access array/object variables
+## Access array/object variables
 
 Accessing string and number data types is simple, but it can be slightly different for array and object data types. For instance, in the [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api) example, the stored response is not a simple string or number value.
 

@@ -1,6 +1,6 @@
 ---
-title: Configuring SMS services for Indian numbers
-sidebar_label: Configuring SMS services for Indian numbers
+title: Configure SMS service for Indian numbers
+sidebar_label: Configure SMS service for Indian numbers
 ---
 
 #### SMS Channel configuration on Yellow.ai platform

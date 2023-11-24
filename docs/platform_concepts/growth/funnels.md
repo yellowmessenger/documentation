@@ -1,7 +1,6 @@
 ---
 title: Understand flow-related details using funnels 
 sidebar_label: Funnels
-
 ---
 
 
