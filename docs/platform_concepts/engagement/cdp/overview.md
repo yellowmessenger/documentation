@@ -14,7 +14,7 @@ The following are some key features of User 360 -
 * **Audience segmentation**: Segment your user base into meaningful groups, making it easier to target and engage with specific audiences for better personalization.
 * **Data activation**: Leverage user data and segments across various modules of yellow.ai to enhance personalization and drive more effective interactions.
 * **Real-time data updates**: Add or update user records in real-time through bot conversations, integrations and user events, keeping your data up-to-date and accurate.
-* **Events-based data upadte**: Updates user records based on user events from third-party systems (through Integeations) 
+* **Events-based data update**: Updates user records based on user events from third-party systems (through Integeations) 
 * **User data export**: Update your user base or use it outside Yellow.ai, you can conveniently export user data, making it readily available for your requirements. 
 
 
