@@ -1,6 +1,6 @@
 ---
-title: Manage your bot data 
-sidebar_label : Manage your bot data 
+title: Manage your bot 
+sidebar_label : Manage your bot 
 keywords : [reset bot, pause bot, modify bot]
 ---
 
@@ -22,7 +22,7 @@ To modify your bot's configured information:
 
 ---
 
-### Personalise your bot information
+### Add/update bot information
 
 You can customise the bot's details according to your business needs. Follow these steps to modify bot details:
 
@@ -38,7 +38,7 @@ The **Region** setting can be used for integrations, voice bots (for phone numbe
 
 ----
 
-### Pause your bot
+### Pause/resume your bot
 
 :::note
 - Only super admin and admin have the ability to pause a bot.
@@ -59,7 +59,7 @@ You can temporarily disable a bot's response to make changes to its configuratio
 
 ----
 
-### Reset your bot flows
+### Reset your bot data
 
 :::note
 Only super admin and admin have the ability to reset the bot.

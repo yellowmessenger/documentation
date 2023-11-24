@@ -47,7 +47,7 @@ By default, the platform language is English. To change the language:
 
 -----
 
-## View account activity 
+## View your account activity 
 
 You can track all active sessions, including details such as the operating system and browser used, along with the date and time.
 
@@ -64,7 +64,7 @@ To see account activity:
 
 ***
 
-## View audit log 
+## View bot audit log 
 
 Audit log provids a detailed record of the changes made to each module, including information about the user (user email) who made the changes and the timestamp of the actions taken. 
 
@@ -78,7 +78,7 @@ To view audit log, follow these steps,:
 
 ----
 
-## View subscription details
+## View your subscription details
 
 :::note
 To add a new subscription, contact the account manager.
@@ -111,7 +111,7 @@ In the screenshot below, you can see that the user has access to a total of 31 b
 
 Admins can invite users to access the bots under a particular subscription plan. An admin can invite a user to the entire subscription and not individual bots. The user will not have access to all the bots in the subscription until bot access is granted by the admin. This section is only available to owners of the subscription
 
-    <img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
 
 
 
