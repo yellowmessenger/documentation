@@ -3,123 +3,199 @@ title: Add or import APIs
 sidebar_label : Add APIs
 ---
 
-In this article, you will learn -
-1. [How to add a new API with all the configurations](#1)
-2. [How to test the API before saving](#1.4)
-2. [How to import one or more APIs from a JSON file](#2)
+In addition to the various integrations supported by Yellow.ai, you can seamlessly integrate any third-party APIs with your chatbot. This comprehensive guide provides step-by-step instructions on connecting your chatbot to external APIs, enabling real-time data storage and retrieval for creating a personalized user experience.
 
-## <a name="1"></a>1. Add a new API (using URL)
+## Add a new API
 
-APIs facilitate fetching data directly from third-pary systems without the need of syncing or importing the entire data to yellow.ai. The following are the steps involved in adding a new API in Studio module.
-  
+Follow the steps outlined below to add a new API and the necessary components for that specific API.
 
-:::note
-In this article, we will be using [OpenWeather API](https://openweathermap.org) to retrieve weather information of the city provided by the user. Sign up at [https://openweathermap.org](https://openweathermap.org) and retrieve an API key.
-:::
+* [Add API manually](#add-api-manually)
+* [Import APIs](#import-apis-from-a-json-file)
 
-  
-### 1.1 Provide API details
-1. In **Studio**, go to the **API** tab. 
-2. Click on **+ Create new API** button and enter the following details.
-3. Enter a unique **API name**. Supports alpha-numeric and no spaces are allowed. 
-4. Choose the appropriate HTTP **Method**. Example - `GET` 
-5. Enter the  API **URL** of the API. You can just add the base URL and add request parameters later or enter the entire URL with params in the {param}. Example - `https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}`.
-   <img  src="https://i.imgur.com/E2xo2qr.png" width="80%%"/>
+### Add API manually
+
+1. Go to **Studio** > **API** > **+ Add new API**.
+
+   ![](https://i.imgur.com/EguUcSR.png)
+
+2. In the pop-up screen, specify the **API name**, HTTP **Method**, and the request **URL** along with the query parameters. 
+
+   <img src="https://i.imgur.com/csYrfGc.png" alt="drawing" width="60%"/>
+   
  6. Click **Add new API** to save the details.
-Proceed to next step Add request parameters.
-In the example, the API requires City name and API key to run.
-   <img  src="https://i.imgur.com/9wl5Tqj.png" width="80%%"/>
 
+#### Add request components for APIs
 
+To use an API, you need to include parameters for requesting information, incorporate headers to notify the third party about the data being sent, and add a body when transmitting data to the API. Our platform also provides the option to modify settings related to an API.
 
-### 1.2 Add request parameters
-The preceding section explains how to add a API end point and set the HTTP method. However, to run a API you would need authentication, input parameters depending on the method. For example path params, query params, or request body. 
+#### Add query params
 
-To add request information to your API, follow these steps - 
+API parameters are essential components used when making requests to an API. They serve as specific instructions or information that you include with your request, helping the API understand and fulfill your requirements accurately.
 
-1. On the API details page, click **Add Params** 
-2. Enter params in key-value pairs. 
+To add params:
+
+1. On the API details page, under **PARAMS**, click **+ Add Params** 
+
+   ![](https://i.imgur.com/fkAvdiN.png)
+
+2. Enter params in key-value pairs and click **Add**. 
+   <img src="https://i.imgur.com/le1BjnP.png" alt="drawing" width="70%"/>
+
+Below are examples of key-value pairs for static and dynamic parameters:
+**Static parameter**:
+* Key: botId
+* Value: x766543323dwe_34
+
+**Dynamic parameter**:
+* Key: city
+* Value: {{{city}}}
+In these examples:
+The botId key has a static value (it remains constant).
+The "city" key has a dynamic value represented as {{{city}}}, indicating that the value will be dynamically replaced with the actual value of the "city" parameter during runtime. 
+
+#### Add request headers
+
+Headers in API requests are additional pieces of information sent alongside the main request. 
+
+To add headers:
+
+1. On the API details page, under **HEADERS** click **+ Add headers** 
+
+   ![](https://i.imgur.com/Rg762S0.png)
    
-   In the example - for the key `q`,  add a value {{{cityName}}}. This will fetch city name from the `cityName` variable. In the bot flow, you can store user response in the `cityName` variable and use here.
-   Also add `appid` - the API key you retrieved from [OpenWeather API](https://openweathermap.org).
-3. Click **+Add params**.
-   ![](https://i.imgur.com/lVQpW6P.png)
-   
-   * **Params**: This includes the path and query parameters of the API. Click **Add params** and enter enter **Key** and **Value** pairs. For example, if `cityName` is a param that has a dynamic value, You can set Key as cityName and Value as {{{city_name}}}, where city_name is a variable to capture city name from the user.
-   * **Headers**: You can set all the request headers here including authorization tokens. For example, you can pass Barer token, OAuth, or Basic Auth in Headers along with other mandatory and optional headers. Learn [how to use access token generated from an API response to authenticate an API](../api/bearer-token.md).
-   * **Body**: Use this for POST or PUT calls where you need to pass request body. Choose the body format - x-www-form-urlencoded, JSON, XML, GraphQL, or form-data. Click **Add body** and paste the code.
-      ![](https://i.imgur.com/WE3eVOS.png)
-   * **Configuration**: Any settings related to the API such as Timeout, retry attempts, encoding, strictSSL, default success and failure message, and more.
+2. Enter headers in key-value pairs and click **Add**. For example, if you have are authenticating an API, set the **Key** as **Authorization** and the Value as the API key.
+ 
+    <img src="https://i.imgur.com/qtHkgS9.png" alt="drawing" width="70%"/>
+ 
+#### Add body
 
+The body in an API is the main content of the request containing data or information that should be sent to the third-party server. For POST, PUT, or DELETE methods, you can add request body under the Body section.
+ 
+To add a body,
+
+1. On the API details page, under **BODY**, choose the format in which the data should be sent to the API. The supported formats are **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data** and **raw**.
+2. If the format is **JSON**, **XML**, **GRAPHQLform-data** and **raw**, you can type the body in the space below.
+
+   ![](https://i.imgur.com/iZ9mp0K.png)
+
+3. For the rest, click **+ Add body**
+
+   <img src="https://i.imgur.com/WE3eVOS.png" alt="drawing" width="70%"/>
+     
+4. Enter the required info in key-value pairs. 
+   <img src="https://i.imgur.com/hP7ay5l.png" alt="drawing" width="70%"/>
+   
 :::note
 You can pass the access key or auth token in the way that the API is designed. You could pass it in the request URL, body, or headers. You can ignore this for APIs where no authentication is required.
 :::
 
 
-### 1.3 Add environment variables
+#### Configuration
 
-In some cases you might have different API endpoints for different deployment environments such as staging, production, sandbox or cluster. You can add all the variables and use the appropriate variable when making an API call. 
+You can modify the API settings for optimal performance and security. This lets you manage timeout, retry strategies, and SSL enforcement, enhancing your control over communication for a more resilient and secure API integration.    
+     
+   <img src="https://i.imgur.com/JlERIHD.png" alt="drawing" width="70%"/>
+   
+| Configuration                      | Description                                               |
+|---------------------------|-----------------------------------------------------------|
+| Timeout                   | Maximum time allowed for API response                      |
+| Retry on failure (5xx)    | Number of attempts to retry in case of server errors       |
+| Follow redirect(s)        | Determines if API should automatically follow redirects   |
+| Encoding                  | Method used to encode data (e.g., JSON, XML)              |
+| Use strictSSL             | Enforces strict SSL certificate validation                |
+| API alerts on             | Events triggering alerts (e.g., errors, high traffic)      |
+| Default message on invoking API | Default response or action when API is invoked           |
+| API failure message (4/5xx code) | Message displayed upon API failure with specific codes   |
+| enableMutualTLS           | Enables mutual TLS authentication for enhanced security   |
 
 :::note
-* This is not applicable for API with single end point.
-* This is a global setting and applicable to all APIs of your current bot and not a specific to an API.
+The **Configure environment** option is disabled in the **Live/Production** environment.
 :::
 
-To add environment variable, follow these steps - 
-  
+### Import APIs (CURL/JSON)
 
-1. Go to **Studio** > **Build** > **API**.
-2. Navigate to the API to add environment variables.
-3. On the right sidebar, click on the **Configure Environment** icon.
+If you have a CURL script, JSON file, or collection URL, you can conveniently import it to yellow.ai.
 
-   ![](https://i.imgur.com/bybT0Eh.png)
+1. Go to **Studio** > **API**.
+2. Click the arrow icon next to API management and select **Import** .
 
+   ![](https://i.imgur.com/nCvs5WU.png)
+
+
+ #### Import API from CURL
+
+1. In **Type**, choose Curl .
+   <img  src="https://i.imgur.com/5BJSXRa.png" alt="drawing"  width="55%"/>
+
+2. In **API name** enter a unique name for the API. Use alpha-numeric characters without space.
+ 
+   <img  src="https://cdn.yellowmessenger.com/SkWOLKxwJxyI1623865511502.png" alt="drawing"  width="60%"/>
+
+3. In **Import curl**, copy past the CURL script and click **Import**.
+4. The imported API will be available under **API Management**.
+
+   ![](https://i.imgur.com/Conv8O3.png)
+
+
+#### Import API(s) from a JSON file
+
+If you have one or more APIs, save your collection in a JSON file and import them as mentioned in the following steps:
+
+1. Choose **Type** as **Collection** or **JSON** depending on the file you want to import
+2. Drag & drop the file in **Import JSON** or use the **Upload file** button to upload the file.
+
+   <img  src="https://i.imgur.com/7N6NdRM.png" alt="drawing"  width="65%"/>
+   
+3. Click **Import**.
+4. The imported API will be available under **API Management**.
+
+   ![](https://i.imgur.com/frifWMw.png)
+
+## Add environment variables
+
+Adding environment variables allows you to store and manage dynamic values such as API keys, tokens, or any sensitive information that keep changing for each environment. This makes it easier to manage and use APIs seamlessly across your testing and development flows.
 
 :::note
-The **Configure environment** option is disabled in Live environment.
+This is a global setting and applicable to all the APIs in your current bot and not a specific to an API.
 :::
 
+To add an environment variable:
+ 
 
-  4. Add a placeholder for the API endpoint. 
-   > In the example, we have used host as the API placeholder.
+1. Go to **Studio** > **Build** > **API**. 
+2. Add a placeholder for the API endpoint. 
+   > In this example, we have used host as the API placeholder.
   ![](https://i.imgur.com/qHQFY4u.png)
 
-  5. In the respective placeholder, add API endpoints for each environment.
+3. Click **Configure Environment** on the right corner.
 
+   ![](https://i.imgur.com/eXzY0vq.png) 
+   
+4. In **Key** add the placeholder and then add the API endpoints for each environment and click **Save**.
+   <img  src="https://i.imgur.com/NRtDAa2.png"  alt="drawing"  width="80%"/>
 
-   <img  src="https://i.imgur.com/xIldDOM.png"  alt="drawing"  width="80%"/>
+5. Before testing the API, choose the respective environment from the drop-down.
 
-7. Lastly, before making an API call, select an environment from the dropdown. Based on the environment variables you’ve configured earlier, 
+   ![](https://i.imgur.com/fDs9TKO.png)
 
+## Test the API
 
+To verify the proper functioning of the added API, input all API details and select the **SEND** button adjacent to the API. A sample response will be visible if the API works properly.
 
+   ![API Response](https://i.imgur.com/cU30hAy.png)
 
+Confirm the expected functionality of the API and click **Save** to save the API settings.
 
-
-### <a name="1.4"></a>1.4 Test the API
-
-Before saving, ensure the API details are correct and working as expected. 
-* Click **Send** to see if it's showing the desired response. It prompts to enter all the parameter values added in the API.
-
-In the example. as `cityName` variable is empty, you'll be asked for a city name. Provide the city name and click **SEND**. 
-
-If the API details are properly added, you should be able to see a sample response as shown here.
-
-![API Response](https://i.imgur.com/cU30hAy.png)
-
-
-
-
-### 1.5 Save the API
-* If the API is working fine, click **Save**. 
-
+   ![](https://i.imgur.com/TrY444S.png)
   
 :::note
-> API response has a size limit of 250kb.You will get an error if the response exceeds the limit
-><img src="https://i.imgur.com/8fTglp1.png" alt="drawing"  width="50%"/>
+* API response has a size limit of 250kb. You will get an error if the response exceeds the limit.
+* Before testing the API, choose the respective environment from the drop-down.
+
+   ![](https://i.imgur.com/fDs9TKO.png)
 :::
 
-### 1.6 Configure MTLS authentication
+## Configure MTLS authentication
 
 MTLS(Mutual Transport Layer Security) authentication is a method used for securing APIs by ensuring the integrity and authenticity of messages exchanged between the client and the server. It provides a secure communication channel and verifies that the messages have not been tampered with during transmission.
 
@@ -130,7 +206,7 @@ Retrieve the following information from the system where you are integrating API
 3. Key
 4. Certificate Authority
 
-![](https://i.imgur.com/UFthYh1.png)
+ ![](https://i.imgur.com/UFthYh1.png)
 
 1. Click the lock button at the right end.
 2. Fill in the fields and click **Upload** to upload the required documents. 
@@ -141,37 +217,16 @@ Retrieve the following information from the system where you are integrating API
 **Developer**, **Admin** and **Super admin** roles can view this feature but only the **Super Admin** can make changes such as add a new certificate, delete the existing certificate, etc. Only the **Super Admin** can view the **key**.
 :::
   
----  
+## Export APIs 
 
-## <a name="2"></a>2. Import a new API (CURL/JSON)
-The preceding section helps you add new APIs manually. However, if you have a CURL script, JSON file, or collection URL, you can directly import it using the following procedure.   
+Exporting APIs involves capturing their configuration settings, allowing for seamless sharing, backup, or replication. Follow these steps to export APIs:
 
-1. In **Studio**, go to the **API** tab. 
-2. Click on the arrow icon next to API management and select **Import** .
+1. Go to **Studio** > **API**.
+2. Click the arrow icon next to API management and select **Export** .
 
-![](https://i.imgur.com/1gfjuHi.png)
+   ![](https://i.imgur.com/2uCuacD.png)
+3. Select the APIs to be exported, you can also select Select all APIs at the left bottom to select all the APIs in one go
 
+   <img src="https://i.imgur.com/2Vzla2Q.png" alt="drawing" width="80%"/>
 
- ### 2.1 Import API from CURL
-
-1. In **Type**, choose CURL .
-<img  src="https://i.imgur.com/5BJSXRa.png" alt="drawing"  width="75%"/>
-
-2. In **API name** specify a unique name for the API. Use alpha-numeric characters without space.
- 
-   <img  src="https://cdn.yellowmessenger.com/SkWOLKxwJxyI1623865511502.png" alt="drawing"  width="80%"/>
-
-
-### 2.2 Import API(s) from a JSON file
-If you have a one or more APIs, save your collection in a JSON file and import it as mentioned in the following -  
-1. Choose **Type** as *Collection* or *JSON* depending on the file you want to import
-2. Drag & Drop the file in Import JSON or use the **Import** button to upload the file.
-<img  src="https://i.imgur.com/7Jsu5KE.png" alt="drawing"  width="75%"/>
-3. Click **Import**.
-
----
-
-#### What next?
-> * [Know how to dynamically pass access tokens in a API](bearer-token.md)
-> * [Know how to send data to the API](send-data.md)
-> * [Monitor errors in APIs](api-settings.md)
+4. Click **Export**. 
