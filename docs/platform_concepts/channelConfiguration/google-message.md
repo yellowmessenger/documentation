@@ -31,7 +31,7 @@ The Non-local entry point group contains entry points that do not rely on locati
 
    <img src="https://i.imgur.com/Drk3tvr.png" width="70%"/>
  
- ## Supported message types
+## Supported message types
 
 With GBM, you can receive messages from users and send response messages.
 
@@ -118,14 +118,15 @@ To set up GBM, you need to consider the following prerequisite:
 
 To setup Google Business Messages for your bot, configure the following:
 
-1. Connect your bot to GBM.
-2. Enter brand details
-3. Enter bot details
-4. Enter your business location
-5. Verify your bot
-6. Verify locations associated with bot
-7. Launch your bot
-8. Launch locations
+* [Connect your bot to GBM](#step-1-connect-your-bot-to-gbm)
+* [Enter brand details](#step-2-enter-brand-details)
+* [Enter bot details](#step-3-enter-bot-details)
+* [Enter your business location](#step-4-add-your-business-location)
+* [Verify your bot](#step-5-verify-your-bot)
+* [Verify locations associated with bot](#step-6-verify-locations-associated-with-bot)
+* [Launch your bot](#step-7-launch-bot)
+* [Launch locations](#step-8-launch-locations)
+* [Test your bot](#step-9-test-your-bot)
 
 :::note
 * For Development environment, you can enter any details in the below steps to get the Android or iOS test URL. Whereas for Production environment, you need to enter the correct details in all the below steps.
@@ -173,11 +174,11 @@ Enter the bot details based on the descriptions provided for each field in the f
    Bot name |  The name of the bot to appear to the end-users. It is recommended to choose a bot name that corresponds with the brand instead of a personal or random name. Do not use words such as personal, test, or demo in bot names.
    Bot logo | 1024x1024 pixel. In conversations, logos appear in 1024 pixel diameter circles. Make sure that your logo appears well in the circle.
    [Entry points](#11-understand-entry-point) | Select where users can start conversations with the bot. **Local** if the organisation has a physical location, select **Non-Local** otherwise. You can also select both the options.
-   Domain |  The org's domain URL. Use **Add domain** to add multiple domain addresses.
+   Domain |  The organization's domain URL. Use **Add domain** to add multiple domain addresses.
    Regions | Countries and localities in which the bot is allowed to launch the non-local entry points.
    Customer care number | The customer care contact number to display in Google results.
    Call deflection phone number | The fallback phone number when the customer care number is not reachable. This number is not shown in Google results.
-   Contact as URL | The URL of the Contact us page is from the organisation's website.
+   Contact as URL | The URL of the Contact Us page is sourced from the organization's website. You have the flexibility to choose from options such as Email, FAQs, Phone, Twitter, Web chat, and WhatsApp to display on the respective website page. Based on your preference, you can select these options to allow the users to contact directly from the website.
    **Conversational settings** | -
    Language | Languages that the bot supports. This will be pre-filled based on the configuration settings saved in the builder. You can also set the default language using the check box next to this.
    Privacy policy | Provide the link where the privacy policy details of your organisation are available.
@@ -238,7 +239,7 @@ The bot needs to be verified along with its associated locations before going li
 
 You need to request for verification. A verification email will be sent to the point of contact to confirm if the bot information provided is correct.
 
-![](https://i.imgur.com/fSLzJqG.png)
+ <img src="https://i.imgur.com/fSLzJqG.png" alt="drawing" width="70%"/>
 
 
 Google sends two separate emails asking for permission to send messages.
@@ -289,9 +290,20 @@ To test your bot, follow these steps:
 
    ![](https://i.imgur.com/Ks8XBUC.png)
    
-2. Start the conversation to test your bot.
+2. Start the conversation to test your bot.  Ensure you have already created an intent and added the utterances to trigger the corresponding flow in your MS Teams chatbot.
 
-   <img src="https://i.imgur.com/W2ukB7C.png" width="40%"/>  
+   <img src="https://i.imgur.com/rk2Mc29.png" width="40%"/>
+
+3. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
+
+   <img src="https://i.imgur.com/HNZBfZM.png" alt="drawing" width="40%"/>
+    
+4. To view the entire conversation between the live agent and user, navigate to the **Inbox** module in the platform and select **Bot messages** in the **My Chats** section.
+
+    ![](https://i.imgur.com/D5R2KBM.png)
+
+
+* When the conversation between the agent and user ends, the bot takes the conversation forward with the user.     
    
 ## Monitor your bot performance
 

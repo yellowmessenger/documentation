@@ -32,15 +32,19 @@ To change the language of your bot, follow these steps:
 
     ![](https://i.imgur.com/1KzP77W.png)
 
-3. Navigate to **Deploy** > **Web** > **Experience on a Website**.
+3. Go to **Settings**, expand **Configure settings** to enable **Language switcher**, then click **Save changes**.   
+
+    <img src="https://i.imgur.com/O9zMJbY.png" width="70%"/>
+
+4. Navigate to **Deploy** > **Web** > **Experience on a Website**.
 
    <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
 
-4. Click on the higlighted icon and select **Change language**.
+5. Click on the higlighted icon and select **Change language**.
 
     <img src="https://i.imgur.com/qDIBDVP.png" width="40%"/>
    
-5. Select your preferred language and click **Done**.      
+6. Select your preferred language and click **Done**.      
   
     <img src="https://i.imgur.com/oemvBrH.png)" alt="drawing" width="40%"/>
    
