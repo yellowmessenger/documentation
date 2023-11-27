@@ -1,6 +1,6 @@
 ---
-title: Bot development enviornments (modes)
-sidebar_label: Bot development enviornments 
+title: Bot development environments (modes)
+sidebar_label: Bot development environments 
 ---
 
 Yellow.ai provides various environments for managing your bots and making continuous improvements, including adding functions and adjusting flows. 
