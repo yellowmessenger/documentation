@@ -35,7 +35,7 @@ The green check mark under **Password must contain** indicates the strength of y
 
 ## Change platform language
 
-By default, the platform language is English. To change the language:
+You can view all the options on the platform in the language of your choice by selecting the language. This is applicable only to your account, you can reset the language at any point in time. By default, the platform language is English. To change the language:
 
 1. Click on your profile icon > **My profile** > **Account** > **Change language**.
 
@@ -44,6 +44,9 @@ By default, the platform language is English. To change the language:
 
     <img src="https://hackmd.io/_uploads/S1E9gJDc2.png" alt="drawing" width="50%"/>
 3. Click **Save** to apply the new language.
+
+
+> Currently only English, Japanese and Bahasa indonesia is supported. 
 
 -----
 
