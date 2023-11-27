@@ -115,7 +115,7 @@ Select the **Animation type** from the drop-down to add animation to your bot ic
 
 You can configure your chatbot by enabling or disabling the following features on the bot. 
 
-<img src="https://i.imgur.com/mf2KAGl.png)" alt="drawing" width="80%"/>
+<img src="https://i.imgur.com/7858HxM.png)" alt="drawing" width="80%"/>
 
 
 #### General settings
@@ -130,6 +130,7 @@ Attachment | Enable this option to allow adding attachments via the chat widget.
 Slow messages | Enable this option to add a small delay to bot messages, a typing indicator is displayed to make it look more natural. It is recommended to use this for all bot messages for a better experience. 
 Multiline input | Enable this option to enter multiple lines of text in a single input. After enabling this option, by clicking on the enter key, it will take the cursor to next line instead of sending the message.
 Validate attachments | The chat widget provides an option to allow or block specific file formats for users to upload documents, images, and other files. <br/> **Note:** <br/> The file size limit is 20 MB.<br/> <img src="https://i.imgur.com/0GU94m6.png" width="50%"/>	|
+Language switcher | Enable this option to change the text based on the user's language preference. | 
 Scroll behavior | When users receive a new message from the bot/agent, the chat window scrolls to bottom by default. However, you can configure this behaviour as per your requirement. Available scroll behavior for new messages:<br/>• **Bottom**: Select this option to scroll the widget automatically to the bottom of the new message.<br/>• **Top**: Select this option to scroll the widget automatically to the top of the new message.<br/>• **Off**: Select this option to disable scrolling, the widget will remain at the same message when a new message is received. <img src="https://i.imgur.com/zJaqyB6.png" width="50%"/>
 
 
@@ -141,6 +142,7 @@ Option | Description
 -------- | ---------
 Show history of the conversation | Disable this to refresh the bot's chat history when the page is reloaded. Enable to show the chat history even after the page is refreshed. By default, this option is disabled. 
 Create fresh session for every new tab | Enable this option to refresh (not retain) the chat history when the bot is opened in a new tab/window.
+Download transcript | Enable this option to download chat history in plain text format.
 
 #### **Notifications**
 
