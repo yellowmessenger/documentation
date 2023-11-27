@@ -4,11 +4,7 @@ sidebar_label: Manage your bot users
 keywords : [access control, bot invite, invite users, send bot invite, share bot access]
 ---
 
-When creating an end-to-end bot flow, there may be instances where certain flows need to be handled by other teams or require assistance from other team members. To enable effective collaboration and allow your team to contribute to building an efficient bot, you can share bot access with other users. 
-
-- A notification is sent to the super admin when the invited users accept or reject the bot access.
-- **Collaborators** will only have the access level(role) as provided by the super admin. 
-
+When creating an end-to-end bot flow, there may be instances where certain flows need to be handled by other teams or require assistance from other team members. To enable effective collaboration and allow your team to contribute to building an efficient bot, you can share bot access with other users. A notification is sent to the super admin when the invited users(collaborators) accept or reject your request. 
 :::note
 Only the **super admin** can provide bot access to other users. Access can be revoked at any moment on the **Access control** tab. 
 :::
@@ -19,17 +15,17 @@ The following table outlines various roles along with the associated access priv
 
 | Role | Description |
 |------ | --------- |
-| Super Admin |This user holds ultimate authority, capable of controlling all bot features: <ol><li>Can provide *Approver* access to others.   </li><li>Can mask certain Database columns on UI. </li><li>Access bot tables and can [mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict others from viewing column data.</li></ol>|
+| Super Admin | This user has full control over all bot features and can perform the following: <ol><li> Provide *Approver* access to others.  </li><li> [Mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict other users from viewing specific information such as PII. </li></ol>|
 |Admin | This user has access to all modules and their components.|
 |Developer | This user has complete access to bot components but cannot edit bot configurations or invite other users to use the bot.|
 |Database Viewer |  This user is limited to editing and viewing tables and their data in selected databases.|
 | Approver | This user has the ability to publish the bot from staging/development to production/live. |
-| Inbox (Admin) | This user can access all inbox components, including chat, email, and knowledge base (KB); also monitor performance (of agents and team) and customize inbox settings.|
+| Inbox (Admin) | This user can respond to assigned customer chats or emails and can view Monitor, Analytics (self-reports), and KB.|
 |Inbox (Agent) | This user can respond to their assigned customer chats or emails and has viewing access to Monitor, Analytics (self-reports), and the KB.|
 |Insights (Analytics) | This user can only access standard analytics (default table), bot health monitoring, user journey tracking, and goal monitoring for informed decision-making.|
 |Insights (Admin) | This user has holistic access to all bot-related data and analytics, enabling in-depth analysis.|
 |Engagement (Admin) | This user can manage campaign deployment and audience configuration for effective engagement strategies.|
-|Engagement (User) | This user can only schedule campaigns with simplified options.|
+|Engagement (User) | This user can only schedule and view campaigns.|
 
 
 ## Share bot access
@@ -42,7 +38,7 @@ To share bot access with other users, follow these steps:
 
 2. Click **+Invite user**.
     - Enter the official **Email** address of the user.
-    - Select your preferred role(s) in **Access control**. You can select more than one role for a user.
+    - Select your preferred role(s) in **Access control**. You can select more than one role for a user. **Collaborators** will only have the access level(role) as provided by the super admin. 
 
 <img  src="https://i.imgur.com/cBnpqIe.png"  width="50%"/>        
 
@@ -110,23 +106,19 @@ With **Super Admin/Admin** privileges, you can monitor user interactions with yo
 
 > You can also find this information in the [Bot invites](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#view-bot-invites) section for your convenience.
 
-----
+<!--
 
 ## Approve published bots
 
 > Directly publishing bots is **not supported**.
 
 
-Once modifications are made to a bot, they need to be [published](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#2-publish-bot). Subsequently, **Super Admins** are required to assess and authorize the request. 
-To apporove the request, follow the steps: 
-
-1. Click on your profile icon > **Bot publish approvals**. 
-
-    <img src="https://i.imgur.com/hstIkXS.png" alt="drawing" width="100%"/>
-
-2. **Accept** or **decline** approval requests for publishing bots in different environments.
-
+Once modifications are made to a bot, they need to be [published](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#2-publish-bot). Subsequently, **Super Admins/Approve** are required to assess and authorize the request. To approve the request open **Bot publish approvals** and **Accept** or **decline** the request. 
     <img src="https://hackmd.io/_uploads/BynRJywc2.png" alt="drawing" width="80%"/>
+
+approval requests for publishing bots in different environments.
+
 
  
 
+-->

@@ -64,19 +64,6 @@ To see account activity:
 
 ***
 
-## View bot audit log 
-
-Audit log provids a detailed record of the changes made to each module, including information about the user (user email) who made the changes and the timestamp of the actions taken. 
-
-To view audit log, follow these steps,:
-
-1. Click on your profile icon > **Profile** > **Audit logs** to access the log of all the changes made.
-    ![](https://hackmd.io/_uploads/rJOpDew92.png)
-2. To filter the results and view specific information, you can use the **filter** button and apply relevant filters.
-    <img src="https://hackmd.io/_uploads/ryIEuxv92.png" alt="drawing" width="50%"/>
-3. if you wish to download all the data from the Audit Log, you can do so by clicking on **Download CSV**. This will allow you to have a comprehensive record of all the changes made to the bot over time.
-
-----
 
 ## View your subscription details
 
@@ -118,7 +105,7 @@ Admins can invite users to access the bots under a particular subscription plan.
 
 ***
 
-## Download pre-built templates 
+## View exported templates 
 
 Suppose you have utilized a pre-built bot template from the Marketplace to create your bot according to your specific use case. If you wish to publish the bot and retain a copy of this template, you can easily download it and view all the relevant details in this section.
 

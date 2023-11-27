@@ -71,11 +71,11 @@ Apart from the subscription plans, Yellow.ai charges based on the usage of speci
 
 #### Monthly reached users (MRU) pricing
 
-Yellow.ai charges businesses based on the MRU count. With MRU pricing, you are billed according to the number of MRUs, ensuring that you pay only for the value you receive. Each user is counted once per month, regardless of the number of campaigns they engage with. This transparent pricing model allows you to optimize costs and align your expenses with the actual value delivered by Yellow.ai.
+Billed according to MRU count, ensuring fair billing for actual value. Each user is counted once per month, regardless of the number of campaigns they engage with.
 
 #### WhatsApp pricing
 
-Meta has announced updates to its price policy starting June 1, 2023. Yellow.ai charges businesses based on the MRU count. The charges for WhatsApp conversations are determined by the end user's phone number, and the cost varies depending on the type of conversation, country, or location. Users can have up to 1,000 free conversations every month. If the limit is exceeded, a monthly fee will apply. 
+Meta's updates from June 1, 2023, affect Yellow.ai's WhatsApp pricing. Charges depend on MRU count, conversation type, country, and location. You can have up to 1,000 free conversations every month. If the limit is exceeded, a monthly fee will apply.
 > For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-pricing).
 
 <!--
