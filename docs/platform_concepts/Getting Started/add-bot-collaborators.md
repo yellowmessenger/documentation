@@ -44,6 +44,11 @@ To share bot access with other users, follow these steps:
 
 3. Click **Save**. The invited user will receive an email with the bot access invitation.
 
+:::note
+
+In a 3-environment setup, you must share invites for all three environments(Sandbox, Staging and Production) separately. 
+:::
+
 ***
 
 ## Accept bot invites

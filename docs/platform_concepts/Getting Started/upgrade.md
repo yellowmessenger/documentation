@@ -108,3 +108,13 @@ To set up a call for upgrading your account, follow these steps:
 
     ![](https://hackmd.io/_uploads/SJ3q8U122.png)
 
+:::info
+
+After upgrading to premium:
+
+- Your bot will have 3 environments: Sandbox, Staging and Production. 
+- Any changes you make in the Development environment will be reflected in both the Sandbox and Staging environments. You can tweak your bot in the Sandbox, and use the Staging for testing.
+- Everything set up in the Live environment will be available in the Production environment.
+
+
+:::
