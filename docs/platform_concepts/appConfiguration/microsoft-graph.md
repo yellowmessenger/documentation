@@ -29,9 +29,9 @@ Click on Connect and enter the values in the fields from your Azure account. Onc
 values are given, the Microsoft Graph will be connected and the action node can be
 used to get the access token which can then be used to call Microsoft Graph APIs.
 
-<img src="https://www.dropbox.com/s/qqxql3vomvy75w2/image3.png?raw=1" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/WI1nPqs.jpg" alt="drawing" width="100%"/>
 
-<img src="https://www.dropbox.com/s/z6kl9wk0vt9dq4i/image4.png?raw=1" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/WI1nPqs.jpg" alt="drawing" width="100%"/>
 
 Voila! And just like that, you are now connected and can call Microsoft Graph APIs.
 

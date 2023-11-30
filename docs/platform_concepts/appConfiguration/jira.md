@@ -42,7 +42,7 @@ Configuring the integration with jira iis straightforward. Follow the steps defi
 6. Go to setting then copy client Id and client Secret then paste in to integration form and connect. It is oauth based integration hence jira will ask to give access to above app then allow. Then you can use jira integration action node.
 
 
-![alt_text](https://cdn.yellowmessenger.com/KJI6MKPEM00A1658994256776.png "image_tooltip")
+![alt_text](https://i.imgur.com/i1qvc3e.png "image_tooltip")
 
 7. Get ApiToken value for using inside the action-node. follow the below steps
    Click on Profile icon on top-right -> Manage Account -> Security -> API Token -> Create and manage API tokens -> create new API token and copy the value and paste somewhere for your reference. 

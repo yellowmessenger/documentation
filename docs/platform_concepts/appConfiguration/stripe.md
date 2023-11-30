@@ -15,14 +15,14 @@ Configuring the integration with stripe payment gateway is straightforward. Foll
 ### 1. Create an application
 Before going to oauth you have to create an account in stripe,Go to stripe dashboard->Developer-> API Keys-> copy the Secret key. And paste the secret key in the secret field of the stripe integration card. 
 
-![alt_text](https://i.imgur.com/spWjBsK.png "image_tooltip")
+![alt_text](https://i.imgur.com/T5ZL3l4.png "image_tooltip")
 
 
 ### 2. Configure webhook url in stripe dashboard.
 Copy the webhook url from stripe integration card and Go to stripe Dashboard->Developers-> Webhooks->Add endpoint->Fill the webhook url in Endpoint field and select **checkout.session.completed** Event in the select events to listen field. 
  
 
-![alt_text](https://i.imgur.com/wZkHuwH.png "image_tooltip")
+![alt_text](https://i.imgur.com/xZ5YYSO.png "image_tooltip")
 
 
 ### 3. Receiving event in yellow.ai Bot.

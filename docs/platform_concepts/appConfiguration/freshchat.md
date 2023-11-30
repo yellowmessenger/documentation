@@ -74,7 +74,7 @@ To receive events, you need to configure the webhook URL in the **Freshchat** da
 1. Login to the **Freshchat** portal as an administrator.
 2. Navigate to **Admin Settings** > **Webhooks** for chat and copy the webhook URL mentioned in the **Instructions** section of the **Freshchat Integration Card** and paste it here.
 
-![](https://i.imgur.com/FgzhEJg.png)
+![](https://i.imgur.com/1BAJpH9.png)
 
 
 ## 2. Use-Case

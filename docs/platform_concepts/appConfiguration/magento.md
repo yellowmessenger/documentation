@@ -34,7 +34,7 @@ Follow the below-mentioned steps to connect your Magento account with Yellow.ai
 
 7. Click **Allow** button to generate the API credentials.
 
-![](https://i.imgur.com/CTpKEsM.png)
+![](https://i.imgur.com/O9VXvJ8.png)
 
 8. Copy these credentials to any text editor.  We will need them to connect the Yellow.ai platform to Magento.
 9. Go to https://cloud.yellow.ai and click **Integrations**.
@@ -47,7 +47,7 @@ Follow the below-mentioned steps to connect your Magento account with Yellow.ai
 
 12. Fill in the fields and click **Connect**.
 
-![](https://i.imgur.com/MEKwzXu.png)
+![](https://i.imgur.com/0MbXoi8.png)
 
 13. If you have multiple accounts, follow the above mentioned steps to add each of them.
 

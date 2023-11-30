@@ -26,7 +26,7 @@ For connecting Azure AD with YM bot, following details need to be obtained using
 
 **Step 1:** Go to [portal.azure.com](https://portal.azure.com/) > Active Directory > App Registrations.
 
-![](https://paper-attachments.dropbox.com/s_DFCB7E05F047CA7FA3CB9A713F6B533B7C793BE35DB3541E48AEDA22175EEBBB_1613053809080_image.png)
+![](https://i.imgur.com/CcHq8fL.png)
 
 
 **Step 2:** Register a new app for the chatbot (if not already registered)
@@ -34,7 +34,7 @@ For connecting Azure AD with YM bot, following details need to be obtained using
 **Step 3:** Copy and Save the Application/Client ID and tenant ID from overview section.
 
 
-![](https://lh6.googleusercontent.com/TG1sKk4JqfF-GB_PP5cjIiC9q9AGTRE5ml06XPtLPC_r3aPwrYkM-gcoRGLl7ZUCN2_P5AD_YRcduzYnKnfbE2B4QLKtZ13f22tFjmBktPWPd9pS9CPoA2NXjKbFyd1AIbRplOr6)
+![](https://i.imgur.com/CcHq8fL.png)
 
 
 **Step 4:** Go to Certificates & Secrets > New client secret > Fill the description & select expires to Never, After clicking on Add button a Client Secret will be generated, save the value of the Client Secret.
@@ -67,7 +67,7 @@ Graph Permission: https://docs.microsoft.com/en-us/graph/permissions-reference
 4. Enter the required scope > Save
 
 
-![](https://paper-attachments.dropbox.com/s_DFCB7E05F047CA7FA3CB9A713F6B533B7C793BE35DB3541E48AEDA22175EEBBB_1613055445398_image.png)
+![](https://i.imgur.com/IfoUcrn.png)
 
 5. If you have multiple accounts, follow the above mentioned steps to add each of them.
 
