@@ -71,18 +71,18 @@ To add headers:
 
 The body in an API is the main content of the request containing data or information that should be sent to the third-party server. For POST, PUT, or DELETE methods, you can add request body under the Body section.
  
-To add a body,
+To add a body:
 
-1. On the API details page, under **BODY**, choose the format in which the data should be sent to the API. The supported formats are **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data** and **raw**.
-2. If the format is **JSON**, **XML**, **GRAPHQLform-data** and **raw**, you can type the body in the space below.
+1. On the API details page, under **BODY**, choose the format of the request body. The supported formats are **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data** and **raw**.
+2. For **JSON**, **XML**, **GRAPHQLform-data** or **raw** body, type or paste the request body the available box.
 
    ![](https://i.imgur.com/iZ9mp0K.png)
 
-3. For the rest, click **+ Add body**
+   
+   For other formats, click **+ Add body** and provide body params in key-value pairs.
 
    <img src="https://i.imgur.com/WE3eVOS.png" alt="drawing" width="70%"/>
      
-4. Enter the required info in key-value pairs. 
    <img src="https://i.imgur.com/hP7ay5l.png" alt="drawing" width="70%"/>
    
 :::note
@@ -95,6 +95,7 @@ You can pass the access key or auth token in the way that the API is designed. Y
 You can modify the API settings for optimal performance and security. This lets you manage timeout, retry strategies, and SSL enforcement, enhancing your control over communication for a more resilient and secure API integration.    
      
    <img src="https://i.imgur.com/JlERIHD.png" alt="drawing" width="70%"/>
+
    
 | Configuration                      | Description                                               |
 |---------------------------|-----------------------------------------------------------|
@@ -102,7 +103,7 @@ You can modify the API settings for optimal performance and security. This lets 
 | Retry on failure (5xx)    | Number of attempts to retry in case of server errors       |
 | Follow redirect(s)        | Determines if API should automatically follow redirects   |
 | Encoding                  | Method used to encode data (e.g., JSON, XML)              |
-| Use strictSSL             | Enforces strict SSL certificate validation                |
+| Use strictSSL             | Enforces strict SSL certificate validation. You might not get response if this is enabled and there is some problem with SSL certificate.    |                 |
 | API alerts on             | Events triggering alerts (e.g., errors, high traffic)      |
 | Default message on invoking API | Default response or action when API is invoked           |
 | API failure message (4/5xx code) | Message displayed upon API failure with specific codes   |
@@ -230,3 +231,17 @@ Exporting APIs involves capturing their configuration settings, allowing for sea
    <img src="https://i.imgur.com/2Vzla2Q.png" alt="drawing" width="80%"/>
 
 4. Click **Export**. 
+
+
+## Troubleshooting
+
+#### API is not working, or the module is not showing any response
+
+Disabling **Use Strict SSL** can sometimes resolve connectivity issues, especially if there are problems with SSL certificates. Ensure that you're aware of the security implications before making changes to SSL settings.
+
+
+#### API works in Postman and API management but gives a blank response when tested in Node.
+
+Check your dynamic environment variables. Ensure you pass the variables in triple braces - `{{{env.variable}}}`.
+
+In Postman, it would be in double braces - `{{env.name}}`. 
