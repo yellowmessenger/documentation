@@ -23,8 +23,8 @@ You can derieve **API Key** and **Resource** from the endpoint of your GPT 3.5 o
 
 |                   | **For GPT 3.5**                          | **For GPT 4**                            |
 |-------------------|-----------------------------------------|-----------------------------------------|
-| **Endpoint URL (API Key) from the Curl** | `https://bfl-chatbot.openai.azure.com/` | `https://3in1-chatbot-yellow-messenger-poc.openai.azure.com/` |
-| **Resource**     | bfl-chatbot                             | 3in1-chatbot-yellow-messenger-poc      |
+| **Endpoint URL (API Key) from the Curl** | `https://test-creds.openai.com/` | `https://test-creds-test.openai.azure.com/` |
+| **Resource**     | test-creds                             | test-creds-test      |
 
 
 3. Click **Connect**.
@@ -40,7 +40,7 @@ Once the integration is successful, the LLM node will be available in the **Stud
 
 3. Since the LLM configuration does not happen via variable, disable the **Var** toggle in **LLM configuration** field and click the **gear** icon.
 
-![](https://i.imgur.com/DA3zhQo.png)
+![](https://i.imgur.com/5nRPW6O.png)
 
 4. In **Model name**, click **OR**, and input the relevant model name. For example, in case of gpt 4, it will be GPT-4.
                                                                    
@@ -48,7 +48,7 @@ Once the integration is successful, the LLM node will be available in the **Stud
 
 5. In the **User query input** field, disable the **Var** toggle click the **gear** icon.
 
-![](https://i.imgur.com/DA3zhQo.png)
+![](https://i.imgur.com/ecTnNCd.png)
 
 6. Disable both the **Var** toggles and click the **gear** icon.
 
@@ -56,5 +56,5 @@ Once the integration is successful, the LLM node will be available in the **Stud
 
 7. Click **OR** and type any text.
 
-<img src="https://i.imgur.com/7GQW925.png" alt="drawing" width="85%"/>
+<img src="https://i.imgur.com/hk9FXlY.png" alt="drawing" width="85%"/>
 
