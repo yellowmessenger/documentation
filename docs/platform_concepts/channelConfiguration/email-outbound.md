@@ -230,7 +230,7 @@ To troubleshoot, follow these steps:
 
 1. On the Email channel page, **right-click > Inspect > Network**.
 
-   ![](https://i.imgur.com/2ElaixE.png)
+   ![](https://i.imgur.com/8WF5Mvd.png)
    
 2. Select the "add_config" API and click **Preview** to view the error message.
 

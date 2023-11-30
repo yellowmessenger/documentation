@@ -52,7 +52,7 @@ To test WA bot from Studio module, follow these steps:
    
 4. Once your number is added to test your bot, you can scan the **QR code** or **copy the link** to test your WhatsApp chatbot.
 
-    <img src="https://i.imgur.com/A1Xg33k.png" alt="drawing" width="60%"/>
+    <img src="https://i.imgur.com/ECZpafd.png" alt="drawing" width="60%"/>
 
 5. Alternatively, a notification link is displayed on your device. Click it to open the WA app.
 

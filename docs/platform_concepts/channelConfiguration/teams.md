@@ -32,7 +32,7 @@ To set up MS teams using Developer portal, follow these steps:
    
 5. Click **+ New Bot** to set up a bot.
 
-   ![](https://i.imgur.com/eJ87Jle.png)
+   ![](https://i.imgur.com/vkukJf1.png)
    
 6. To set up the bot, follow these steps:
 
@@ -51,7 +51,7 @@ To set up MS teams using Developer portal, follow these steps:
 	
     6.4 Copy the **Client secret** and save it for future reference.
 	
-	   ![](https://i.imgur.com/Vsdgxe2.png)
+	   ![](https://i.imgur.com/ykcfSjP.png)
 	
    6.5 Go back to **Bot management** and copy the Bot ID.
 	
@@ -63,7 +63,7 @@ To set up MS teams using Developer portal, follow these steps:
 	
 7. Navigate to **Apps** to create a **New app**. Click **+ New app**.
 	
-   ![](https://i.imgur.com/9i9o6Se.png)
+   ![](https://i.imgur.com/LWmvWl8.png)
 	
 8. Enter the name of your app.
 	
