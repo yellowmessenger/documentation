@@ -26,7 +26,7 @@ For more detailed information on how to send SMS in India, click [here](https://
 
 For sending SMS in US:
 
-* Brands must register their phone numbers. For more detailed information on how to register the phone numbers, click [here].
+* Brands must register their phone numbers. For more detailed information on how to register the phone numbers, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types).
    * Choose between short code, long code, or toll-free numbers based on your SMS needs and complete the number registration.
 
 ***
