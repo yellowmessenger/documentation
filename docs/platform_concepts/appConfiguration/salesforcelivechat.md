@@ -43,7 +43,7 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
  3. Click on the setup button at the top right corner and select **Setup**.
  4. In the **Quick Find** section, search for **Deployments** in the **Chat** section.
  5. Click on the deployment that is already created (if not, create a deployment).
- 6. In the deployment script, locate an ID not starting with **00D**, which is the Deployment ID.
+ 6. In the deployment script, locate an ID **not starting with 00D**, which is the Deployment ID.
 
 * **Button Id** - The Id of the button(group) from where the chat has been initiated. To fetch this, refer to the following steps:
 
