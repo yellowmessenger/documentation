@@ -52,10 +52,10 @@ There are two ways by which you can enter your prompts. They are:
 
    <img src="https://i.imgur.com/QaVQe8Q.png" alt="drawing" width="70%"/>
 
-6. Click **Cancel** on the pop-up and enter your prompt.
+3. Click **Cancel** on the pop-up and enter your prompt.
 
 
-![](https://i.imgur.com/HFHBq0c.png)
+   ![](https://i.imgur.com/HFHBq0c.png)
 
 | Fields         | Descriptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -237,15 +237,7 @@ To add custom LLM,
 * **Give account name:** Provide a name to your LLM account.
 * **LLM Provider:** Choose the provider as **Azure Open AI**.
 
-You can derieve **API Key** and **Resource** from the endpoint of your GPT 3.5 or GPT 4 credentials as mentioned below:
-
-
-|                   | **For GPT 3.5**                          | **For GPT 4**                            |
-|-------------------|-----------------------------------------|-----------------------------------------|
-| **Endpoint URL (API Key) from the Curl** | `https://bfl-chatbot.openai.azure.com/` | `https://3in1-chatbot-yellow-messenger-poc.openai.azure.com/` |
-| **Resource**     | bfl-chatbot                             | 3in1-chatbot-yellow-messenger-poc      |
-
-![](https://i.imgur.com/UXsaPcu.png)
+   ![](https://i.imgur.com/UXsaPcu.png)
 
 3. Click **Connect**.
 4. Then go to the node > **Model configuration** > choose **Model**.
