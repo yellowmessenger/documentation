@@ -34,7 +34,7 @@ To build a chatbot using OpenAI GPT-3, you need to connect your open AI account 
 
 3. Click the **+Create new secret key** button to generate a new API key.
 
-![](https://i.imgur.com/Td8JdQT.png)
+![](https://i.imgur.com/PWzqOoo.png)
 
 
 ### 1.2 Retrieve the organization key(ID)

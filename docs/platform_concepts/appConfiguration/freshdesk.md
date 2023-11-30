@@ -19,7 +19,7 @@ You need a **Freshdesk domain** and an **API key** to integrate with Yellow.ai.
 3. Go to the **Profile Settings**.
 4. Your API Key will be available in the right corner below the change password section. Copy it.
 
-![](https://i.imgur.com/821CsyG.png)
+![](https://i.imgur.com/2Cvs7LR.png)
 
 
 ### 1.2 Fetch your Freshdesk domain

@@ -79,9 +79,7 @@ Get the final amount from your cart total and call the Generate Payment link act
 |**Purpose**|Purpose of the payment request |Iphone| 
 |**Send Email**	| Flag to send request link via email. If send_email is true, a request email will be sent to the email supplied. If send_email is true but no email is supplied, request creation will throw an error |False|
 |**Send SMS** |Flag to send request link via SMS. If send_sms is true, a request SMS will be sent to the phone number supplied. If send_sms is true but no phone number is supplied, request creation will throw an error | False|
-
-**StatusCallbackUrl**  : Copy Webhook URL from the Instamojo card at the integration page.
-> Example: https://alpha6.yellowmessenger.com/integrations/genericIntegration/instamojo/x1645073590274?id=l%2B%2FD1yhpi5HjWFglhONPHbDYda7KtXeCEVUofPRsNBY%3D
+| **StatusCallbackUrl**|  Copy Webhook URL from the Instamojo card at the integration page.Example: https://dummyurl.yellowmessenger.com/integrations/genericIntegration/instamojo/x16450274?id=l%2B%2FD1yhpida7KtXeCEVUofPRsNBY%3D|
 
 
 ---

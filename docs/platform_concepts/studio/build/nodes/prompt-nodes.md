@@ -281,7 +281,7 @@ Similar to quick replies, Carousels can also be dynamically created using **Fetc
 [
   {
     "title": "Item1",
-    "description": "Description",
+    "text": "Description",
     "actions": [
       {
         "title": "Button #1",
@@ -313,7 +313,7 @@ Similar to quick replies, Carousels can also be dynamically created using **Fetc
   },
   {
     "title": "Title",
-    "description": "Description",
+    "text": "Description",
     "actions": [
       {
         "title": "Button #1"

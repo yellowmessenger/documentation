@@ -25,7 +25,7 @@ To connect your Okta account with Yellow.ai, follow the steps mentioned below:
 
 5. Once you click the app integration, you will be redirected to the setting page. Here, under the **General** tab, the **Client Credentials** section shows the **Client ID** and **Client secrets** for your app integration.
 
-![](https://i.imgur.com/SqpAWzj.png)
+![](https://i.imgur.com/BomtQV0.png)
 
 
 You can copy the **Client ID** and **Client secret values** using the Copy to Clipboard button beside each text field.
@@ -102,7 +102,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |----|
-| Redirect URI     | https://cloud.yellow.ai/integrations/genericIntegration/oauth/okta/x1632218421575 | String   | Callback location where the authorization code or tokens should be sent. It must match the value that was pre-registered in Okta during the client registration. <br/> Copy the value from integration card and pass it here.|
+| Redirect URI     | https://cloud.yellow.ai/integrations/genericIntegration/oauth/okta/x5 | String   | Callback location where the authorization code or tokens should be sent. It must match the value that was pre-registered in Okta during the client registration. <br/> Copy the value from integration card and pass it here.|
 |Scope| openid profile | String | ID tokens and access tokens can access openid, profile, email, address, phone, offline_access, and groups.|
 
 

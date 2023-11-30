@@ -121,7 +121,7 @@ The following standard user properties are automatically added or updated in Use
 
 The integration enables the automatic synchronization of the following event data with User 360. This empowers User 360 as a valuable resource for personalized and effective user engagement strategies.
 
-   <img src="https://i.imgur.com/whVni4U.png"/>
+   <img src="https://i.imgur.com/1WBYJEt.png"/>
 
 
 The following table provides a comprehensive list of Shopify events along with their descriptions and sample use cases.

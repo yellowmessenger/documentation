@@ -14,10 +14,10 @@ You can configure Netcore Smartech by following the below steps:
 
 1. Enabling the Integration in yellow.ai Integrations Module.
 
-    * Login to cloud.yellow.ai and click on the Integrations Module from the top left corner of your screen.
-    * Then search for the integration named Netcore or choose the category named Tools & Utilities from the left navigation bar and then click on Netcore Smartech.
-    * Click on Connect and the Integration will be enabled at yellow.ai’s end and the event will be added to Event Hub.
-    * If you have multiple accounts, follow the above mentioned steps to add each of them.
+* Login to cloud.yellow.ai and click on the Integrations Module from the top left corner of your screen.
+* Then search for the integration named Netcore or choose the category named Tools & Utilities from the left navigation bar and then click on Netcore Smartech.
+* Click on Connect and the Integration will be enabled at yellow.ai’s end and the event will be added to Event Hub.
+* If you have multiple accounts, follow the above mentioned steps to add each of them.
 
 :::note
 1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
@@ -37,16 +37,14 @@ You can configure Netcore Smartech by following the below steps:
     * Copy the webhook URL mentioned in the Instructions section of the Netcore Smartech Integration Card. Please note that based on the region of your bot i.e r1/r2/r3/r4/r5, you need to append that to the domain of the webhook URL. For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to the India region, you can use the origin domain itself.
     * The client needs to log in to the Netcore Smartech dashboard and navigate to the Webhook URL Configuration section and add the provided webhook URL.
 
-**![](https://lh3.googleusercontent.com/N7bg-EHJLIfmu4kd1UwMKcv_bsM6pxpzWM8QJd-ddWmYmLl88sq1-eLRDez9FEwhPdbv2w9QxBPYCcCj7K65W57bzyC09Ksnsp4EBDaRGRzWICfWKahvV_e-1U_8tjv-m2PxccM4r9VmND0AqTuNHeDJqbvN_ZVEAhiPN7xitNE3fGoUZJKS054_2w)**
-
-
+![](https://i.imgur.com/LkAh6mO.png)
 
 3. Receiving event in yellow.ai Bot.
 
-    * Login to cloud.yellow.ai and click on the Studio Module from the top left corner of your screen.
-    * Click on the Event, from the left navigation bar and then choose Integrations.
-    * You will find an event named netcoreEvent that needs to be activated by clicking on the three dots next to the name of the event.
-    * After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
+* Login to cloud.yellow.ai and click on the Studio Module from the top left corner of your screen.
+* Click on the Event, from the left navigation bar and then choose Integrations.
+* You will find an event named netcoreEvent that needs to be activated by clicking on the three dots next to the name of the event.
+* After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
 
     :::info
 If you have added multiple accounts in your platform, enable events for each of those accounts.
