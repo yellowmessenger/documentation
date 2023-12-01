@@ -7,6 +7,22 @@ Publishing a bot involves deploying bot changes to the live environment. Only a 
 
 Only certain user roles can approve the bot. To know about user roles in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
 
+
+<!--
+When you upgrade from freemium to premium:
+- All flows, intents, entities, and bot skins in development will be available within sandbox/staging and the components configured (insights, engage) in live will be available in production. 
+- 
+
+ you must configure everything in the Sandbox environment, and then publish your flows and bot to the Staging environment for testing.
+
+
+All flows, intents, entities, and bot skins will be transferred from the Sandbox to the Staging environment upon publishing.
+You can’t selectively retain flows in Staging; everything configured in Sandbox is published to Staging. Any flows exclusive to Staging but not in Sandbox will be lost if you choose to Publish bot.
+While you can make modifications and publish flows in the Staging environment, it’s recommended to primarily use it for testing and make all significant changes in the Sandbox first.
+
+-->
+
+
 ## Publish bot to go live
 
 To publish a bot to live mode follow these steps:
@@ -68,7 +84,12 @@ To access **Publish selected flow**s, follow these steps:
 3. Click the **Publish** button. The changes will move to **Staging**. Change your bot environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. Bots with only **Development** and **Live** modes need not do this. When you publish the changes, bot sends the approval request to approvers. Click [here](#approve-a-bot-publish-request) to know about approving the publish request.
 
 :::info
+- When you publish your bot in the Sandbox, all the parts like flows, intents, entities, and bot skins will also move to Staging and later to Production.
+- You cannot pick and choose which parts go to Staging; everything you set up in Sandbox will go there when you publish.
+- If you create something new in Staging that wasn't in Sandbox, you can publish it once. The next time you publish from Sandbox, anything you added exclusively in Staging will be lost and won't be in Production.
+
 To learn about different bot enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+
 :::   
 
 ---

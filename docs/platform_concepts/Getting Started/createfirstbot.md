@@ -1,6 +1,6 @@
 ---
 title: Build your bot in 5 minutes
-sidebar_label: Bot building guide
+sidebar_label: Build your first bot
 ---
 
 :::note
@@ -177,9 +177,10 @@ Discover [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studi
 After adding all the components (flows, database, NLU training, APIs, etc.), follow these steps:
 
 1. Test your bot on the right pane by selecting the required channel. Learn how to debug [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow).
-2. Publish the bot to Live or Production mode. Learn how [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes). 
+2. Publish the bot to Live or Production mode. Learn how [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes). A request is sent to the bot admins over email for approval.
    ![Test and Publish](https://hackmd.io/_uploads/ByvfoXW4T.png)
-3. Add the bot as a chat widget to your desired platform. [Guide here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chrome-extension)
+3. Super admins or Approvers can approve the publish request.
+4. Add the bot as a chat widget to your desired platform. [Guide here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chrome-extension)
    ![Add Bot Widget](https://hackmd.io/_uploads/HyQIj7-Vp.png)
 
 

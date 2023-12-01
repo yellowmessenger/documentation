@@ -1,5 +1,5 @@
 ---
-title: Manage your account settings
+title: Manage your account
 sidebar_label: Manage your account
 ---
 
@@ -35,7 +35,7 @@ The green check mark under **Password must contain** indicates the strength of y
 
 ## Change platform language
 
-By default, the platform language is English. To change the language:
+You can view all the options on the platform in the language of your choice by selecting the language. This is applicable only to your account, you can reset the language at any point in time. By default, the platform language is English. To change the language:
 
 1. Click on your profile icon > **My profile** > **Account** > **Change language**.
 
@@ -45,9 +45,12 @@ By default, the platform language is English. To change the language:
     <img src="https://hackmd.io/_uploads/S1E9gJDc2.png" alt="drawing" width="50%"/>
 3. Click **Save** to apply the new language.
 
+
+> Currently only English, Japanese and Bahasa indonesia is supported. 
+
 -----
 
-## View account activity 
+## View your account activity 
 
 You can track all active sessions, including details such as the operating system and browser used, along with the date and time.
 
@@ -64,21 +67,8 @@ To see account activity:
 
 ***
 
-## View audit log 
 
-Audit log provids a detailed record of the changes made to each module, including information about the user (user email) who made the changes and the timestamp of the actions taken. 
-
-To view audit log, follow these steps,:
-
-1. Click on your profile icon > **Profile** > **Audit logs** to access the log of all the changes made.
-    ![](https://hackmd.io/_uploads/rJOpDew92.png)
-2. To filter the results and view specific information, you can use the **filter** button and apply relevant filters.
-    <img src="https://hackmd.io/_uploads/ryIEuxv92.png" alt="drawing" width="50%"/>
-3. if you wish to download all the data from the Audit Log, you can do so by clicking on **Download CSV**. This will allow you to have a comprehensive record of all the changes made to the bot over time.
-
-----
-
-## View subscription details
+## View your subscription details
 
 :::note
 To add a new subscription, contact the account manager.
@@ -111,14 +101,14 @@ In the screenshot below, you can see that the user has access to a total of 31 b
 
 Admins can invite users to access the bots under a particular subscription plan. An admin can invite a user to the entire subscription and not individual bots. The user will not have access to all the bots in the subscription until bot access is granted by the admin. This section is only available to owners of the subscription
 
-    <img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
+<img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
 
 
 
 
 ***
 
-## Download pre-built templates 
+## View exported templates 
 
 Suppose you have utilized a pre-built bot template from the Marketplace to create your bot according to your specific use case. If you wish to publish the bot and retain a copy of this template, you can easily download it and view all the relevant details in this section.
 

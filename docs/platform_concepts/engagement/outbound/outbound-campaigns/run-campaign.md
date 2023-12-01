@@ -159,11 +159,11 @@ This section guides you on how to configure template for each channel -
 
 ### 3.3 WhatsApp campaign 
 
-1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the Viber number (mobile number) of the user.
+1. In **Choose the field that contains users contact or number where they can receive the campaign**, select the variable that contains the WhatsApp number (mobile number) of the user.
 
    <img src="https://i.imgur.com/94QMG8p.png" width="350"/>
 
-2. In **Sender ID**, choose the Viber business number from which you want to send the campaign.
+2. In **Sender ID**, choose the WhatsApp business number from which you want to send the campaign.
    
    <img src="https://i.imgur.com/C2IrHHc.gif"/>
 

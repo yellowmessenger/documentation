@@ -1,6 +1,6 @@
 ---
-title: Manage your bot data 
-sidebar_label : Manage your bot data 
+title: Manage your bot 
+sidebar_label : Manage your bot 
 keywords : [reset bot, pause bot, modify bot]
 ---
 
@@ -22,7 +22,7 @@ To modify your bot's configured information:
 
 ---
 
-### Personalise your bot information
+### Add/update bot information
 
 You can customise the bot's details according to your business needs. Follow these steps to modify bot details:
 
@@ -38,7 +38,7 @@ The **Region** setting can be used for integrations, voice bots (for phone numbe
 
 ----
 
-### Pause your bot
+### Pause/resume your bot
 
 :::note
 - Only super admin and admin have the ability to pause a bot.
@@ -59,7 +59,7 @@ You can temporarily disable a bot's response to make changes to its configuratio
 
 ----
 
-### Reset your bot flows
+### Reset your bot data
 
 :::note
 Only super admin and admin have the ability to reset the bot.
@@ -78,3 +78,18 @@ Resetting a bot allows you to delete all past flows, conversations, and data ass
 ### Delete your bot
 
 **You cannot delete a bot**. However, you have the flexibility to either pause the bot's response or reset it as needed.
+
+-----
+
+## View bot audit log 
+
+Audit log provids a detailed record of the changes made to each module, including information about the user (user email) who made the changes and the timestamp of the actions taken. 
+
+To view audit log, follow these steps,:
+
+1. Click on your profile icon > **Profile** > **Audit logs** to access the log of all the changes made.
+    ![](https://hackmd.io/_uploads/rJOpDew92.png)
+2. To filter the results and view specific information, you can use the **filter** button and apply relevant filters.
+    <img src="https://hackmd.io/_uploads/ryIEuxv92.png" alt="drawing" width="50%"/>
+3. if you wish to download all the data from the Audit Log, you can do so by clicking on **Download CSV**. This will allow you to have a comprehensive record of all the changes made to the bot over time.
+

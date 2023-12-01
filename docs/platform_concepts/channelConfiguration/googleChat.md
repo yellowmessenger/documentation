@@ -123,7 +123,7 @@ Based on the region of your bot, which is  r1/r2/r3/r4/r5, you need to append th
 
 * Copy the Client Email and Private Key from the JSON file that you downloaded earlier.
 
-    ![](https://i.imgur.com/sCgdodm.png)
+    ![](https://i.imgur.com/ZgXktdo.png)
 
 To connect the Google chat channel to your bot on the platform, follow these steps:
 

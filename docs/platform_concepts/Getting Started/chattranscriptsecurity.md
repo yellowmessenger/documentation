@@ -1,6 +1,6 @@
 ---
-title: IP whitelisting
-sidebar_label : IP whitelisting
+title: Chat transcript security with IP whitelisting
+sidebar_label : IP whitelisting (chat transcript)
 ---
 
 IP whitelisting is a security practice that involves creating a list of approved IP addresses or ranges that are allowed to access a particular network, system, application, or service. This approach helps enhance security by restricting access only to authorized entities to chat transcripts. 
@@ -10,9 +10,6 @@ This feature is available on the app and cloud platform.
 :::note
 Currently, only IPV4 addresses are supported for whitelisting.
 :::
-
-
-### Enhance chat transcript security
 
 Chat transcripts are vital records of interactions between users and chatbots, whether they are [conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs) or [chats with agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chattranscript). By enabling IP whitelisting, the platform allows access to the conversations only from specified IP addresses.
 
