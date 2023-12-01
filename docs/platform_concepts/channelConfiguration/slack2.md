@@ -136,9 +136,9 @@ The following are required bot events:
 
 To add interactive messages, follow these steps:
 
-1. Select **Interactivity & Shortcuts**, enable the **Interactivity**, and add the request URL `https://cloud.yellow.ai/integrations/slack/receive/botID`.
+1. Select **Interactivity & Shortcuts**, enable the **Interactivity**, and add the request URL `https://cloud.yellow.ai/integrations/slack/interaction/botID`.
 
-      ![](https://i.imgur.com/BkNWWpN.png)
+    ![](https://i.imgur.com/BkNWWpN.png)
 
 :::note
 You have to configure different regions for each URL, and for each region, the URL will change.
