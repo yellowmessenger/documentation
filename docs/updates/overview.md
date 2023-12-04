@@ -1,105 +1,41 @@
 ---
-title: October 2023
-sidebar_label: Latest product updates (October 2023)
+title: November 2023
+sidebar_label: Latest product updates (November 2023)
 featured: true
 ---
 
 ![](https://i.imgur.com/hIGEIJL.png)
 
-## Studio
-
-### New enhancements in Dynamic chat node
-
-The Dynamic chat node has been enhanced with the following features:
-
-**1. Fetch dynamic data in interactions through workflows:**
-
-We've introduced the capability to include workflows (such as APIs, databases, functions, and knowledge bases) directly from the dynamic node. This expansion in functionality unlocks exciting possibilities for dynamic conversations, all while reducing costs and addressing significant existing challenges.
-
-**[Read Docs](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#skill-configuration)**
-
-<img src="https://i.imgur.com/n9dV7Jz.png" alt="drawing" width="65%"/>
-
-**2. AI prompt generator for effortless prompt creation**
-
-   <img src="https://i.imgur.com/iGwbaVj.png" alt="drawing" width="65%"/>
-
-Click **Create prompt with AI** and input your prompt details. Upon generating, the platform will automatically create a prompt from your input and suggest additional prompts for enhancement.
-
-**[Read Docs](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#generate-prompts-with-ai-prompt-generator)**
-
- <img src="https://i.imgur.com/1MrUrum.png" alt="drawing" width="75%"/>
-
-### Multilingual responses from KB
-
-When the uploaded knowledge(documents, integration docs, or website) is in English, we can now enable multilingual responses through the KB. This means that we can translate responses into the end user's target language based on their language preference or the language detected from their initial message.
-
-**[Read Docs](https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings#multilingual-kb-responses)**
-
-   <img src="https://i.imgur.com/oBsrILo.png" alt="drawing" width="45%"/>
-
-## Engage
-### Introduced new KPIs in flow campaigns report 
-
-A new KPI in the Flow Campaign report displays text replies, quick replies, call drop-off rate, call pickup rate, and more.
-
-
-### New events to capture Shopify return requests
-
-Introducing a new event ```shopifyReturnRequest``` designed to capture return requests in Shopify. This feature helps to streamline your return-related processes, making it easier to handle tasks like notifying customers and efficiently managing your inventory. 
-
-**[Read Docs](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/shopify#supported-standard-user-properties-from-shopify-events)**
-
-### Enhancements
-
-1. We have optimized user creation API by extending batch support from 100 to 1000 users at a time.
-2. Outbound Campaign Status will now have Malformed Delivery status.
-
 ## Chat Widget
 
-### Upload custom font for consistent branding across the platform
+### Download transcripts for a comprehensive conversation record
 
-The platform now offers the functionality to configure and apply a custom font to match website or mobile app branding. This feature enables users to maintain a consistent and personalized visual identity across the widget.
+Bot users can now effortlessly download chat transcripts directly from the chat widget. They get access to their entire conversation history with the bot in a convenient plain text (.txt) format. The downloaded transcripts provide comprehensive details, including the bot's name, user's name, timestamp (displaying the full date and time), and all messages exchanged among the bot, agent, and user.
 
-   ![](https://i.imgur.com/0pTp48Q.png)
+**[Read docs](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/download-transcript)**
 
-### Optimized live bot page
 
-The live bot page has been optimized with the following features:
+   <img src="https://i.imgur.com/2kwdmLR.png" alt="drawing" width="50%"/>
 
-1.  **Integration with Chrome Extension:** 
+### Effortless file retrieval for users
 
-The LiveBot page has been enhanced with a Chrome extension feature, facilitating bot testing on any website. Users can seamlessly test bot functionalities across various web pages directly from the LiveBot page.
+The bot users can now seamlessly retrieve their uploaded files via the platform by simply clicking on the provided hyperlinks.
 
-   ![](https://i.imgur.com/4YxsG4z.png)
+   <img src="https://i.imgur.com/his0Lh2.png" alt="drawing" width="50%"/>
+   
 
-* **Quick Access to Resources:** 
+### Streamline widget styling accross all environments
 
-Users can now easily access `docs.yellow.ai` and `community.yellow.ai` directly from the LiveBot page. This update enables navigation to help doc and community forums for support and information.
+You can now efficiently publish the **Widget Panel**, **Bot Icon**, and **Settings** options on the Chat Widget setup page, eliminating the need for repeated setup or updates across environments.
 
-## Mobile SDK & Partner APP
+This is available for bots under the T3 subscription plan, specifically those with **Sandbox** -> **Staging** -> **Production** environments, and does not apply to T1 & T2 bots with **Dev** -> **Live** environments. For security reasons, the publication of Domain Whitelisting settings is excluded from this feature.
 
-### Enhanced YM Authentication for Security
+   <img src="https://i.imgur.com/dxLuOuT.png" alt="drawing" width="90%"/>
 
-Secure YMAuthentication is introduced to protect the **ymAuthenticationToken** from unauthorized access, offering additional security to bot conversations.
+## Studio
 
-### Introducing token revalidation
+### Enhance bot conversations with preview logs
 
-This functionality is introduced to revalidate the token when the authentication token expires. Once your secure YMAuth is enabled, whenever your authentication token expires, the server will automatically initiate a request to get a fresh token from Yellow.
-
-### Real-time bot payload updates with sendEventToBot Function
-
-The sendEventToBot function is introduced to add or update bot payload data after initialization. You can use this function to ensure that your bot's data remains up-to-date throughout its interaction within the app. 
-
-### Revamped My Chat UI for better user experience 
-
-**My Chat UI** in the agent app has been improved to provide an easier and quicker experience for agents.
-
-   <img src="https://i.imgur.com/DdIlVvl.png" alt="drawing" width="40%"/>
-
-## Insights
-
-We had the following enhancements in Insights:
-
-1. Custom Analytics Table (Default Columns) and User360 Table Now Support PII Encryption
-2. Initiated DataOps Export Support for Audit Logs Table
+In the **Preview** section, a new Debug option has been added. This tool shows logs of the tested conversation, including timestamps, IDs, and actions. Hover over the logs to access options that lead to specific nodes or logs. This helps you review and improve the bot-user conversations.
+   
+   <img src="https://i.imgur.com/jEHDESB.png" width="90%"/>
