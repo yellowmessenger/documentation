@@ -50,6 +50,8 @@ To add acronyms, follow:
 
 -----
 
+<!--
+
 ## Customize response 
 
 Tailor how the bot-generated responses are displayed through the Document Search node or KB URL/Document upload in Conversation settings.
@@ -72,6 +74,7 @@ Enable summarized results for a concise answer with related articles. Choose to 
 
 Select the desired tone for the responses from the dropdown menu.
 
+-->
 
 -----
 
