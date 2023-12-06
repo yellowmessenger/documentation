@@ -18,8 +18,7 @@ In this article, you will learn:
     - [via. AWS-S3](#awss3)
     - [via. Sharepoint](#shpt)
 3. [What is Extract QNA?](#3-qna-extract)   
-4. [Understand active learning](#l)
-5. [How to add Acronyms?](#a) 
+4. [How to add Acronyms?](#a) 
 
 ----
 
@@ -683,18 +682,7 @@ To extract questions and answers from your docs, follow these steps:
 6. Click **Create**. This question will be added to the [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) section.
 
 
----
-    
-## <a name="l"></a> 4. Active learning
-    
-The bot can learn based on the feedback received for the search results. When the bot shows certain search result documents, the user has the option to click **thumbs up** if the user feels the bot has given the result they were looking for or **thumbs down** if the search results are not up to their expectation. The feedback is recorded and the bot is retrained to improve the search results.
-
-> Search for any query by triggering this Document Search Node. It will display the result. Users can upvote and downvote the search results so that the bot can be re-trained based on the feedback from the user.
-
-![](https://i.imgur.com/7DuJT7h.jpg)
-
---- 
-## <a name="a"></a> 5. Add acronyms 
+## <a name="a"></a> 4. Add acronyms 
 
 There are cases when we expect the user to search for certain text, but the entered text is not present in our documents in that searched format. 
     For example, if we have a document where it is written The “United States of America” but the user searches for the  USA, US etc. 
@@ -718,3 +706,6 @@ Follow the given steps to Configure:
 
 
 
+<!-- Active learning: The bot can learn based on the feedback received for the search results. When the bot shows certain search result documents, the user has the option to click thumbs up if the user feels the bot has given the result they were looking for or thumbs down if the search results are not up to their expectation. The feedback is recorded and the bot is retrained to improve the search results.
+
+Search for any query by triggering this Document Search Node. It will display the result. Users can upvote and downvote the search results so that the bot can be re-trained based on the feedback from the user. -->

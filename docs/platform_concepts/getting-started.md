@@ -128,3 +128,7 @@ Our extensive library of help articles is readily available to provide quick ans
 * [**API documentation :arrow_right:**](https://docs.yellow.ai/api)      
 * [**Monthly product updates(for each module) :arrow_right:**](https://docs.yellow.ai/docs/updates/overview)      
 
+
+:::note
+For any queries or help, reach out to [support@yellow.ai](support@yellow.ai). 
+:::
