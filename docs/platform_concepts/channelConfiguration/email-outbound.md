@@ -51,7 +51,7 @@ To set up SMTP server on the yellow.ai platform, follow these steps:
 
     ![](https://i.imgur.com/FkweCbm.png)
 	
-3. In the *Email details* section, select **Basic** to add the details of the EMAIL sender.
+3. In the *Add Email* section, select **Basic** to add the details of the EMAIL sender.
 
 Enter the following details:
 
@@ -142,30 +142,33 @@ To configure an SMTP using JSON, follow these steps:
 
     ![](https://i.imgur.com/FkweCbm.png)
 	
-3. In the *Email details* section, select **Basic** to add the SMTP details of the email address in the JSON code for which you want to send emails.
+3. In the *Add email* section, select **Advanced** to add the SMTP details of the email address in the JSON code for which you want to send emails.
+
+4. Copy the below JSON code, paste it in the *Advanced configuration* section, and click **Save**.
 
 ```js
 {
-    "service": "Outlook365",
-    "auth": {
-        "user": "user name to login",
-        "pass": "login password"
+    "serviceType": [
+        "supportTicketing"
+    ],
+    "address": "customerservice@easyshopping.id",
+    "outboundConfig": {
+        "server": "outlook.office365.com",
+        "port": 587,
+        "username": "customerservice@easyshopping.id",
+        "name": "Customer Service Easy Shopping",
+        "password": "44!88NZk5yK!9@#WUgRh",
+        "securityType": "SSL",
+        "useAdvanceConfiguration": true,
+        "advanceConfiguration": {
+            "service": "Outlook365",
+            "auth": {
+                "user": "customerservice@easyshopping.id",
+                "pass": "44!88NZk5yK!9@#WUgRh"
+            }
+        }
     }
 }
-```
-
-
-If the client’s email service provider has disabled auth, then you can remove auth object.
-
-```js
-{
-    "host": "smtp.outlook365.com",
-    "port: 587",
-    "secure": false,
-    "auth": {
-        "user": "user name to login",
-        "pass": "login password"
-    }
 ```
 
 :::note
