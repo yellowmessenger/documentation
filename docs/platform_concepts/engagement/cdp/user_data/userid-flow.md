@@ -90,19 +90,17 @@ Select this option if the unique identifier of your users is any property other 
 
 3. Collect property value.
 
-   #### 1. Collect values that comes through user input
+   #### 1. To collect property values from user input
 
    Collect the selected user property using the [Prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and use **Save response in** to map the variable to the user property.
 
-   #### 2. To capture the userId from the bot script
+   #### 2. To capture property values from the bot script
 
    Use the syntax: `data.variables.variableName`
 
    <img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
 
-   Example:
-
-   In the sample script below, to store the phone number as the userId, use `data.variables.phoneNumber`
+   For example, in the sample script below, to capture the phone number as the userId, use `data.variables.phoneNumber`:
 
    ```js
    `<script type="text/javascript">`  
@@ -132,11 +130,12 @@ Select this option if the unique identifier of your users is any property other 
 
 
 
-   #### 3. To capture userId from Function
+   #### 3. To capture property values from Function
    
-   Use the Function node and store the variable to capture in the respective user property.
-   
-   <img src="https://i.imgur.com/qqltmgO.png" width="70%"/>
+   You can use the Function node to capture and store the variable in the respective user property.
+
+   For instance, here `returnId` is the function name containing the provided code.
+
 
    ```js
    return new Promise(resolve => {
@@ -148,14 +147,18 @@ Select this option if the unique identifier of your users is any property other 
       ymLib.logger.log(payload,"init--Payload");
       resolve(payload)
    });
-
    ```
+   
+   Store the response returned by the Function in the corresponding variable, in this case, 'userId`.
 
-   #### 4. To capture userId from payload
+   <img src="https://i.imgur.com/qqltmgO.png" width="70%"/>
 
-   First, store the payload in an object variable, let's call it `userData`.
 
-   <img src="https://i.imgur.com/fTTcOPO.png" width="50%"/>
+   #### 4. To capture property values from payload
+
+   First, store the payload in an object variable.
+
+   <img src="https://i.imgur.com/ZdyD8u7.png" width=""/>
 
    Sample payload
 
@@ -167,7 +170,7 @@ Select this option if the unique identifier of your users is any property other 
    }
    ```
 
-   To access a specific key value, use the syntax:  `{{{variables.objVariableName.key}}}`
+   To access a specific key value from the object variable, use the syntax:  `{{{variables.objVariableName.key}}}`
 
 <img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
 
@@ -177,7 +180,8 @@ Select this option if the unique identifier of your users is any property other 
    * `{{{variables.userData.email}}}`
 
 :::note
-You can also use SDK APIs to programmatically set user properties and the user ID.
+* You can also use SDK APIs to programmatically set user properties and the user ID. 
+* You can also make use of Function to extract the required information from a payload. 
 :::
 
 <!--
