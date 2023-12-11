@@ -42,18 +42,16 @@ Shopify is an e-commerce platform that lets merchants worldwide to build and cus
 
   Enable the following scopes in the **Shopify Admin** section. 
    
-  * orders_create 
-  * products_create 
-  * orders_cancelled 
-  * orders_fulfilled 
-  * orders_paid 
-  * refunds_create 
-  * customers_create 
-  * customers_update.
-  * write_scripts_tags 
-  * read_script_tags
+  * write_customers
+  * read_customers 
+  * write_orders
+  * read_orders
+  * write_products
+  * read_products
   * write_returns
   * read_returns
+  * write_script_tags
+  * read_script_tags
 
 ### Step 2: Get Admin API access credentials
 

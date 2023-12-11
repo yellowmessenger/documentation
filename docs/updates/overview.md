@@ -10,7 +10,7 @@ featured: true
 
 ### Download transcripts for a comprehensive conversation record
 
-Bot users can now effortlessly download chat transcripts directly from the chat widget. They get access to their entire conversation history with the bot in a convenient plain text (.txt) format. The downloaded transcripts provide comprehensive details, including the bot's name, user's name, timestamp (displaying the full date and time), and all messages exchanged among the bot, agent, and user.
+Bot users can now effortlessly download chat transcripts directly from the chat widget. This functionality enables users to retain a copy of their interactions with the brand for future reference. They get access to their entire conversation history with the bot in a convenient plain text (.txt) format. The downloaded transcripts provide comprehensive details, including the bot's name, user's name, timestamp (displaying the full date and time), and all messages exchanged among the bot, agent, and user.
 
 **[Read docs](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/download-transcript)**
 
