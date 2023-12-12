@@ -313,7 +313,7 @@ Similar to quick replies, Carousels can also be dynamically created using **Fetc
   },
   {
     "title": "Title",
-    "text": "Description",
+    "description": "Description",
     "actions": [
       {
         "title": "Button #1"
@@ -410,38 +410,76 @@ The structure of the object is as follows:
 
 ```
 {
-    "value": {
-        "timestamp": "2021-09-08T00:00:00.000Z",
-        "year": 2021,
-        "month": 8,
-        "date": 8,
-        "day": "Sunday",
-        "hour": 0,
-        "minute": 0
-    },
-    "range": {
-        "exists": false
+  "value": {
+    "timestamp": "Tue, 12 Dec 2023 13:03:31 GMT",
+    "year": 2023,
+    "month": 12,
+    "date": 12,
+    "day": "Tuesday",
+    "hour": 13,
+    "minute": 3,
+    "selected": {
+      "hour": 7,
+      "minute": 33
     }
+  },
+  "range": {
+    "exists": false
+  }
 }
 ```
 **Store date for a date range**
 
 ```
 {
-    "value": {
-        "timestamp": "2021-09-08T00:00:00.000Z",
-        "year": 2021,
-        "month": 8,
-        "date": 8,
-        "day": "Sunday",
+  "value": {
+    "timestamp": "Sun, 05 Nov 2023 05:30:00 GMT",
+    "year": 2023,
+    "month": 11,
+    "date": 5,
+    "day": "Sunday",
+    "hour": 5,
+    "minute": 30,
+    "selected": {
+      "hour": 0,
+      "minute": 0
+    }
+  },
+  "range": {
+    "exists": true,
+    "start": {
+      "timestamp": "Sun, 05 Nov 2023 05:30:00 GMT",
+      "year": 2023,
+      "month": 11,
+      "date": 5,
+      "day": "Sunday",
+      "hour": 5,
+      "minute": 30,
+      "selected": {
         "hour": 0,
         "minute": 0
+      }
     },
-    "range": {
-        "exists": false
+    "end": {
+      "timestamp": "Fri, 17 Nov 2023 05:30:00 GMT",
+      "year": 2023,
+      "month": 11,
+      "date": 17,
+      "day": "Friday",
+      "hour": 5,
+      "minute": 30,
+      "selected": {
+        "hour": 0,
+        "minute": 0
+      }
     }
+  }
 }
 ```
+To retrieve the start and end dates, use the following syntaxes:
+
+* **Start Date**: ```{{{variables.variable_name.range.start.date}}}```
+* **End Date**: ```{{{variables.variable_name.range.end.date}}}```
 ---
 
 ### 3.2 WhatsApp List
