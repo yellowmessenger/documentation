@@ -40,20 +40,18 @@ Shopify is an e-commerce platform that lets merchants worldwide to build and cus
    <img src="https://i.imgur.com/vDx7dQ1.png" alt="drawing" width="80%"/>
   
 
-  Enable the following scopes in the **Shopify Admin** section. 
-   
-  * orders_create 
-  * products_create 
-  * orders_cancelled 
-  * orders_fulfilled 
-  * orders_paid 
-  * refunds_create 
-  * customers_create 
-  * customers_update.
-  * write_scripts_tags 
-  * read_script_tags
-  * write_returns
-  * read_returns
+8. In **Shopify admin**, choose both *Read* and *Write* access to following scopes.
+
+  <img src="https://i.imgur.com/ULr6bbW.png" width="70%"/>
+
+  Scope | Description
+  ------ | ----------
+  Customers | Access and manage customers, including their addresses, order history, and segments.
+  Orders | Retrieve and manage orders, transactions, fulfillments, and abandoned checkouts.
+  Products | View and manage products, variants, and collections.
+  Returns | View and manage return orders.
+  Script tags | View and manage javascript tags for store front and order status pages.
+
 
 ### Step 2: Get Admin API access credentials
 
