@@ -43,7 +43,7 @@ To view the SLA time log, follow these steps:
 3. Hover over **SLA log**. You can see the SLA log (SLA achieved/breeched) by the respective agent for that particular ticket. 
 4. SLA details are also updated on the **Activity log** in the bottom right corner. 
 
-    ![](https://i.imgur.com/66ffsP8.png) 
+    ![image](https://imgur.com/uOqOZoC.png) 
 
 5. SLA reminders/escalations/nudges are highlighted on the **Tickets** page along with the ticket details for each ticket. 
 

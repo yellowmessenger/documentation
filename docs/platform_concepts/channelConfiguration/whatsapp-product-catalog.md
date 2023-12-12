@@ -9,12 +9,10 @@ This document will guide you through how to create a WhatsApp catalog.
 
 The following are the prerequisites to use WhatsApp Product node:
 
-1. [Product Listed on Catalog](#21-create-product-catalog-on-facebook)
-
-2. [Updated Business and Compliance Info](#23-business-and-compliance-info-mandatory-for-indian-number-waba)
-
+1. [Product Listed on Catalog](#create-product-catalog-on-facebook)
+2. [Updated Business and Compliance Info](#compliance-to-use-spmmpm-on-whatsapp-mandatory-for-indian-waba)
 3. Additional fields added incase of Indian businesses
-4. [Catalog linked with the WABA](#22-link-catalog-to-a-waba)
+4. [Catalog linked with the WABA](#link-catalog-to-a-whatsapp-business-account)
 
 
 

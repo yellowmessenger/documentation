@@ -3,8 +3,6 @@ title: Country-specific SMS channel registration
 sidebar_label: Country-specific SMS channel registration
 ---
 
-## Country-Specific SMS Channel Registration 
-
 To configure the SMS channel in a specific country, the registration process is a prerequisite. Each country has its own unique registration procedures, which are based on different telecommunications regulations and specific carrier requirements.
 
 This document provides the details and requirements for SMS registration in various countries. 

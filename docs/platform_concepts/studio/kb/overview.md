@@ -1,33 +1,100 @@
 ---
-title: Introduction to KnowledgeBase
+title: Transform your website into a chatbot with Knowledge base
 sidebar_label: Overview
 ---
 
-Introducing **KB**, an innovative feature by Yellow.ai that requires minimal effort on your part. Simply share your website link and a few supporting documents, and you're good to go. Improve your customer interactions conveniently and effortlessly.
 
-Check out this flowchart illustrating how the bot navigates to this feature.
+## Introduction to knowledge base(KB)
 
-   ![](https://i.imgur.com/fofS2WK.png)
+With Knowledge base, effortlessly transform your existing website into an intelligent bot that responds to user queries, requiring zero effort on your part—simply input your website URL, and the bot is ready to engage with precision.
 
-## Difference between KB and Doc Cog
-
-When a user requests a specific piece of information, **v1.Doc cog**  retrieves only the information from its source, whereas in **Zero Setup**, the bot not only provides the answer to the query but also offers a summarized version of the information.
+![image](https://imgur.com/0t4ESa0.png)
 
 
-## Access KB
+Inputting a website URL into the Knowledge base triggers the creation of a customized bot. This bot is designed to extract and leverage pertinent information from the provided URL, facilitating automated responses and enhancing user engagement.
 
-To access KB:
+With Knowledge base, you can achieve: 
+- **Efficiency**: Automation reduces manual bot creation efforts and ensures real-time adaptation to website changes.
+- **Customization**: Bots are tailored to the unique structure and content of each website, optimizing user engagement.
+- **Scalability**: Easily scalable for applications ranging from small business websites to large-scale e-commerce platforms.
 
-1. Go to **Studio** > **KB**.
+This feature, driven by Yellow.ai's exclusive **Studio** module (not GPT), uses a functionality similar to **Document Cognition (Doc Cog)** to support knowledge base responses.
+
+
+:::note
+For GPT-powered features, contact us via [community.yellow.ai](https://community.yellow.ai/), where our product team can assist you.
+:::
+
+#### KnowledgeBase vs. Doc Cog
+
+The distinction between Doc Cog and the Zero Setup Knowledgebase lies in their response to user queries. While v1.Doc Cog retrieves precise information from its source when a user requests it, the Zero Setup Knowledgebase not only provides the answer to the query but also presents a condensed summary of the information, enhancing the user experience with additional context.
+
+
+
+### Use cases
+
+- **Automated website FAQs**:
+The Knowledgebase can be utilized to create a bot that automatically responds to FAQs by extracting information directly from the website. This reduces the burden on customer support teams and ensures quick and accurate responses.
+
+
+- **Product information retrieval**:
+Knowledgebase allows the automated bot to retrieve the latest product details, availability, and pricing information directly from the website. This ensures that customers receive accurate and real-time information about the products they are interested in.
+
+- **Dynamic content updates**:
+By integrating Knowledgebase, the bot can be configured to pull the most recent content updates from the website. This ensures that users interacting with the bot receive the latest information without manual content management.
+
+- **Interactive learning platforms**:
+Knowledgebase can be employed to create a bot that guides learners through specific topics based on the content available on the website. The bot serves as an interactive learning assistant, responding to queries and providing information within the scope of the website's content.
+
+### Workflow
+
+Explore this flowchart depicting the bot's navigation to knowledgebase.
+
+![](https://i.imgur.com/fofS2WK.png)
+
+
+--------
+
+## Create a bot for your website
+
+To create a bot for your website, follow these steps:
+
+1. Open **Studio** > **KB** > **Knowledge base**.
 
    ![](https://i.imgur.com/PqYbCww.png)
 
+2. Click **+Add URL**. Add your website URL and click Save. 
 
-Make sure you enable **Enable summarised results** for the summarisation. To do so, go to **Build** > **Conversation settings** > **Document search**.
+    ![image](https://imgur.com/q1U4pmG.png)
 
-   ![](https://i.imgur.com/XE7I1MS.png)
+    > Configure this in Sandbox/Development environment. 
+
+    :::info
+    You can set up the welcome [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) or [document search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) node to organize the conversation structure. The flow may look like this: 
+    ![image](https://imgur.com/ANSTKY2.png)
+
+    :::
 
 
-:::info
-All of these features are powered by Yellow.ai's in-house **Studio** module and NOT by GPT. If you would like to have these features powered by GPT, please reach out to us on [community.yellow.ai](https://community.yellow.ai/), our product team will help you.
+3. Bot is ready for testing on the right side pane. After testing the bot, you can [Publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) it to Live/Production environment and [deploy](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#deploy-chat-widget) it to your website. 
+
+    ![image](https://imgur.com/MmoprOF.png)
+
+:::note
+While building your website bot, maintain simplicity by refraining from adding multiple intents and flows that could potentially impact the confidence of the bot's responses.
 :::
+
+
+------
+
+
+In the upcoming sections, **additional Knowledgebase features** will be explored, such as:
+
+* Ingesting data from multiple sources
+* Configuring the output/result/editing the response
+* Monitoring likes and dislikes
+* Uploading different types of data 
+* Setting up a multilingual KB bot for your website 
+
+
+

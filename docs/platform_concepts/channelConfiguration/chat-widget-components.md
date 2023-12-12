@@ -109,7 +109,7 @@ You can download video, image, and file sent by the bot or agent.
 
 |     |  |
 |---------|-------|
-| This component allows you to upload files in supported formats such as JPG, PNG, MP4, MOV, and HEVC. You can either attach a file or skip it. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#36-file-prompt">here</a> to implement Location using a node. | <img src="https://i.imgur.com/J0wKybH.png" alt="drawing" width="90%"/>	
+| This component allows you to upload files in supported formats such as jpeg, jpg, png, gif, pdf, txt, doc, ppt, docx, pptx, xlsx, mp4, mp3, and mov. You can either attach a file or skip it. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#36-file-prompt">here</a> to implement Location using a node. | <img src="https://i.imgur.com/J0wKybH.png" alt="drawing" width="90%"/>	
 
 ### 1.11 Callout banner
 
