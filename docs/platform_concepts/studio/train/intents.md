@@ -227,7 +227,7 @@ The following are a few important pointers for bots created before August 1, 202
 ##### App (app.yellow.ai)
 
 1. Enable suggestions for bots. 
-    - To do this, in app.ym ensure that **enableDidYouMean** is set to true in app options in Function and in **Tools** > **App Options** > **Prediction** > **Enable Suggestions**.
+    - To do this, in the [App platform](https://app.yellow.ai) ensure that **enableDidYouMean** is set to true in app options in Function and in **Tools** > **App Options** > **Prediction** > **Enable Suggestions**.
     - If there’s an existing **DidYouMean** function in default:response, remove it.
 2. Verify that the flow/journey DESCRIPTION is in line with the guidelines mentioned above. 
     > If these are not in line and are in camelCase or have special characters, change these by going to flow settings for that flow (you need not change the journey name, only the description can be changed).

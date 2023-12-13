@@ -9,7 +9,7 @@ In today's fast-paced business landscape, delivering exceptional customer suppor
 
 :::note
 
-- The Inbox-User360 integration is currently limited to bots created on cloud platforms and is not accessible for bots built on app.ym.
+- The Inbox-User360 integration is currently limited to bots created on cloud platforms and is not accessible for bots built on the [App platform](https://app.yellow.ai).
 - The bot messages section within Inbox has not undergone a full transformation to align with the Inbox-User360 integration yet. 
 
 > We are actively working to address this in the upcoming version.

@@ -1,15 +1,17 @@
 ---
-title : Exposing cloud Integration to app.ym
-sidebar_label : Exposing cloud Integration to app.ym using app function
+title : Enable Cloud features in the App Platform using App functions
+sidebar_label : Enable cloud Integration in the App platform
 ---
 
-# Use-cases 
-Now App’s developer can use the below function method to execute cloud integration action node.
+# Use-cases
 
-###  **Execute action node**:-
+Now App’s developer can use the below function to execute cloud integration action node.
+
+###  Execute action node
+
 The ```executeIntegrationAction``` function enables you to execute the action node of cloud’s Integration.
 
-#### Sample code:-
+#### Sample code
 
 ```
 app.executeIntegrationAction({
@@ -38,18 +40,18 @@ app.executeIntegrationAction({
 |action|Mandatory|Go to flow -> click on integration card -> copy the action name from drop down|Generate Payment Link|
 |dynamicParams|Mandatory|Select the action from integration card -> copy the field name as key(replace first caps letter in small) and value you can take from the user.|<code> {"amount":"1","productInfo":"testProduct","customerFirstName":”Test Customer","customerEmail":"test@test.com","customerMobileNumber":"9999999999","txnid": "123456789"}</code>|
 
-#### Success Response:-
+#### Success Response
 ```
 {
   "Transaction Id": "abaac3332",
   "Email Id": "test@test.com",
-  "Phone": "9988776655",
+  "Phone": "9900000000",
   "Status": "Success",
-  "URL": "https://test.payu.in/processInvoice?invoiceId=9eec02ac9e2efc335bdda2d7486121ce03de24c2fa7d32d17462ad5a6a9058db"
+  "URL": "https://test.payu.in/processInvoice?invoiceId=9eec02a9e2efc335bdda2d7486121e03de24c2fa7d32d17462ad5a6a9058db"
 }
 ```
 
-#### Failure Response:-
+#### Failure Response
 
 ```
 {
@@ -66,7 +68,7 @@ app.executeIntegrationAction({
 
 ```
 
-# Configuration:-
+## Configuration
 
 1. Go to Growth then click on Data Explore, It will open cloud.yellow.ai site.
 ![alt_text](https://cdn.yellowmessenger.com/mQiAoXUIu5gk1663827293370.png "image_tooltip")
