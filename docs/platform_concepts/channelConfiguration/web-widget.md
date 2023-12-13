@@ -41,7 +41,7 @@ To customize the design, make the required changes as per the descriptions provi
 
 Option | Description
 -------- | ---------
-Custom obt logo | Click **Add** icon and set the logo for the bot. <br/> **Note:** It is recommended to upload images with a size of 150 x 150 pixels. |
+Custom bot logo | Click **Add** icon and set the logo for the bot. <br/> **Note:** It is recommended to upload images with a size of 150 x 150 pixels. |
 Bot display name | Enter the display name of the bot as per your business requirement. | 
 | Bot description | Enter the description of your bot. |
 Colors & theme | You can set a **Light** or **Dark** theme for your widget.
