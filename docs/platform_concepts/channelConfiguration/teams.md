@@ -173,9 +173,32 @@ Option | Description
 	
    ![](https://i.imgur.com/1FdGpEN.png)
      
+## Set permission on Azure portal
 	
+After adding app to MS Teams workspace, you need to set permissions on the Azure portal to execute certain use cases based on the business requirements. Follow these steps:	
 
+1. Login to `https://portal.azure.com`.
 
+2. Navigate to **App Registration**.
+
+3. Click on the app created with the same name as your MS Teams bot.
+
+   ![](https://i.imgur.com/2QrZRi4.png)
+	
+4. Click **Add a Platform > Web**.
+
+    ![](https://i.imgur.com/2SWdXqw.png)
+
+5. Navigate to **API Permissions > Add Permission > Microsoft Graph**.
+
+   ![](https://i.imgur.com/y1vpad4.png)
+   
+6. To enable app permissions, select the desired permission type and click **Add permissions**.
+   * **Application Permissions:** This enables the app to use the services without any user’s authorization. The app work with its credentials.
+   * **Delegated Permissions:** This requires users to authorize the app to work on their behalf. Once approved, the app contains the privileges of authorising users for the defined scope. For more detailed information regarding permissions, click [here](https://learn.microsoft.com/en-us/entra/identity-platform/permissions-consent-overview).
+	
+     ![](https://i.imgur.com/x4lIHka.png)
+	
 ### Connect MS Teams app to the Yellow.ai platform
 	
 1. On the switcher click **Channels** > **Microsoft Teams**.
