@@ -59,7 +59,9 @@ Alternatively, you can also use the Variable node (under Actions) to store a spe
 -->
 
 
-## Store user properties from bot conversations
+## Store user properties 
+
+### Store user properties from bot conversations
 
 In addition to the userId, you can also store other user properties in real-time within the user record. User properties are stored in the current record, which is mapped in User 360. You can utilize these properties to [create personalized conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations) with bot users, taking into account their previous interactions and preferences.
 
@@ -78,6 +80,95 @@ To store the user’s response in User 360, in **Store Response in**, choose var
    ![](https://i.imgur.com/h8FfpZE.png)
 
 
+ ### Capture user property values from the bot script
+
+   Use the syntax: `data.variables.variableName`
+
+   <img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
+
+   For example, in the sample script below, to capture the phone number as the userId, use `data.variables.phoneNumber`:
+
+   ```js
+   `<script type="text/javascript">`  
+   window.ymConfig = {"bot":"x1673261303850","host":"[https://cloud.yellow.ai](https://cloud.yellow.ai/)", "payload":{"name":"Tom","phoneNumber":"9090000000","email":"[tom@example.com](mailto:email@example.com)"},};  
+   (function() {  
+   var w = window,  
+   ic = w.YellowMessenger;  
+   if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);  
+   else {  
+   var d = document,  
+   i = function() {  
+   i.c(arguments)  
+   };  
+   function l() {  
+   var e = d.createElement("script");  
+   e.type = "text/javascript", e.async = !0, e.src = "[https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js](https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js)";  
+   var t = d.getElementsByTagName("script")[0];  
+   t.parentNode.insertBefore(e, t)  
+   }  
+   i.q = [], i.c = function(e) {  
+   i.q.push(e)  
+   }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}  
+   })();  
+   </script>
+
+   ```
+
+
+
+### Capture user property values from Function
+   
+   You can use the Function node to capture and store the variable in the respective user property.
+
+   For instance, here `returnId` is the function name containing the provided code.
+
+
+   ```js
+   return new Promise(resolve => {
+      let payload = data.profile.payload
+      if (typeof (payload) === "string") {
+         payload = JSON.parse(payload);
+      }
+      console.log(payload);
+      ymLib.logger.log(payload,"init--Payload");
+      resolve(payload)
+   });
+   ```
+   
+   Store the response returned by the Function in the corresponding variable, in this case, 'userId`.
+
+   <img src="https://i.imgur.com/qqltmgO.png" width="70%"/>
+
+
+### Capture user properties from API or integration action payload
+
+   First, store the payload in an object variable.
+
+   <img src="https://i.imgur.com/ZdyD8u7.png" width=""/>
+
+   Sample payload
+
+   ```js
+   {
+      "name": "Tom",
+      "phoneNumber":"9090000000",
+      "email":"tom@example.com"
+   }
+   ```
+
+   To access a specific key value from the object variable, use the syntax:  `{{{variables.objVariableName.key}}}`
+
+<img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
+
+   For example:
+
+   * `{{{variables.userData.phoneNumber}}}`
+   * `{{{variables.userData.email}}}`
+
+:::note
+* You can also use SDK APIs to programmatically set user properties and the user ID. 
+* You can also make use of Function to extract the required information from a payload. 
+:::
 
 
 ***
