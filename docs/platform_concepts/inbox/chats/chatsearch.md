@@ -124,6 +124,10 @@ When you search first and apply a filter next, the filter will be applied on top
 If a user has applied some filters already and then searches for another keyword, the search will reset the applied filters and provide completely new results.
 :::
 
+:::note
+The statuses available for voice calls in Inbox include **Assigned, Wrap Up,** and **Resolved**.
+:::
+
 
 2. **Message search**
 

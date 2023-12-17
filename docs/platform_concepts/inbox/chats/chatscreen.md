@@ -144,8 +144,10 @@ The live chat interface includes an automatic indicator that remains visible unt
 
 <img src="https://hackmd.io/_uploads/HkvlpoZOh.png" alt="drawing" width="50%"/> 
 
-<!--
+
 ----
+
+<!--
 
 ### Mark attachments as sensitive
 
@@ -160,9 +162,10 @@ To allow agents to mark attachments as sensitive, admins must go to **Settings >
 
 ![image](https://imgur.com/5iXxAUm.png)
 
+----
 -->
 
-----
+
 
 
 ### Initiate studio flow with @bot
