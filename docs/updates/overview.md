@@ -59,4 +59,4 @@ Please review your reports and dashboards to ensure compatibility and make any n
 
 ### Improved customization with HCF
 
-You can now can define four levels of HCF, though the option to mark them as **Required for ticket creation** is not applicable. Additionally, these fields cannot be retrieved from the **Raise ticket** node, preventing you from designating them as read-only. When marked as **Required for transfer/close**, all levels of HCFs become mandatory on the ticket.
+You can now define four levels of HCF, though the option to mark them as **Required for ticket creation** is not applicable. Additionally, these fields cannot be retrieved from the **Raise ticket** node, preventing you from designating them as read-only. When marked as **Required for transfer/close**, all levels of HCFs become mandatory on the ticket.
