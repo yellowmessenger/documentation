@@ -314,18 +314,13 @@ Quit the current flow and launch another flow with this node. Here, flow switche
 
 ### 2.1 API 
 
-> This node is available for voice bots. 
+> This node is also available for voice bots. 
 
 API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) from user inputs and then store API response in a variable for further use. 
 
-![](https://i.imgur.com/E0pFw7e.png)
+   <img src="https://i.imgur.com/Fnsvd0z.png" alt="drawing" width="70%"/>
 
-In the above node, we selected an API (explore_car) to hit, and we provided value to the parameter using a variable. 
-Then we store the whole response we will get from that API in a variable.
-
-<!--- 
-> Learn how to directly use this variable, if JSON response in your nodes to access different fields in API response [**here**](../bot-variables#advanced-example---accessing-variable-fields-and-index-in-json-object-array-type-stored-in-a-variable)
---->
+To know about the various features of the node and how to use it, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode).
 
 #### Function 
 

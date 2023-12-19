@@ -5,7 +5,7 @@ sidebar_label : Microsoft Dynamics 365
 
 You can integrate Microsoft Dynamics 365 with Yellow.ai to enhance customer engagement and streamlining interactions through intelligent conversational capabilities. With this integration, you can create, update, retrieve and delete leads. Additionally, it enables you to create, update, and delete records, as well as establish links between related field records.
 
-## Supported Microsoft D 365 CRM actions with Yellow.ai
+## Supported Microsoft D 365 CRM actions in Yellow.ai
 
 | Actions            | Descriptions                                                                                                              |
 |--------------------|----------------------------------------------------------------------------------------------------------------------------|
@@ -131,9 +131,9 @@ To copy the webhook:
 
    ![](https://i.imgur.com/XaeEnce.png)
 
-## Use actions in bot conversations
+## Manage Microsoft D 365 CRM via Yellow.ai bot
 
-To use MD 365 [supported actions](#supported-microsoft-d-365-crm-actions-with-yellowai) in bot conversations, follow these steps:
+To manage your Microsoft D 365 CRM account through yellow.ai bot, follow these steps:
 
 1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
 2. In whichever point you want the bot to access **Microsoft D 365 Sales**, inlcude the Microsoft D 365 Sales node. For that drag the node connector, go to **Integrations** > **Microsoft dynamics 365**.
@@ -145,7 +145,7 @@ To use MD 365 [supported actions](#supported-microsoft-d-365-crm-actions-with-ye
    <img src="https://i.imgur.com/my5eH4r.png" alt="drawing" width="80%"/>
 
 * **Account name:** Choose the Microsoft account. If you have only one account, the account name is automatically populated. If you have multiple accounts, the first account added is auto-populated. Select the one you want to use at that moment.
-* **Action:** Choose the [action](https://) to be performed.
+* **Action:** Choose the [action](#supported-microsoft-d-365-crm-actions-in-yellowai) to be performed.
 * **Select Objects:** Choose the Microsoft entity in which the chosen action should be performed.
 * Based on the chosen entity, collect user input for the relevant fields, [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables), and pass these variables as an input to perform the desired action.
 

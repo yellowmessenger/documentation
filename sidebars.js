@@ -274,6 +274,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/studio/api/add-api",
+            "platform_concepts/studio/api/add-api-apinode",
             "platform_concepts/studio/api/send-data",
             "platform_concepts/studio/api/receive-data",
             "platform_concepts/studio/api/enviroment-variables",
