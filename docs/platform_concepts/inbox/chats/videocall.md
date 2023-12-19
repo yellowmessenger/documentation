@@ -1,6 +1,6 @@
 ---
 title: Configure and use video call in chats 
-sidebar_label : Video calling 
+sidebar_label : Video call support 
 ---
 
 Text-based communications have limitations when dealing with complex issues to offer personalized support. it takes a lot of time and effort to provide an effective resolution. 

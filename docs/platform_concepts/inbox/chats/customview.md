@@ -6,9 +6,9 @@ sidebar_label: Chat custom view
 :::note
 The number of allowable custom views for each subscription tier is as follows:
 * **Freemium**: 1 custom view
+* **Standard**: 10 custom views
 * **Premium**: 10 custom views
 * **Enterprise**: 20 custom views
-
 :::
 
 
@@ -48,14 +48,14 @@ Choose a method and follow the below steps to create a view:
 
 2. Click **+Create view**. 
 
-    <img src="https://hackmd.io/_uploads/rJguQykfa.png" alt="drawing" width="50%"/>
+    ![image](https://imgur.com/Byki1rd.png)
 
 3. The **Create view** tab will appear on the right side; provide the following details:
     - Specify a **name** for your Custom view.
     - Choose the **visibility** setting. **Only me** will display the view exclusively to admins, while **All agents** will grant access to all agents for chats assigned to them.
     - Apply filters, such as **date range, source (channels), tags, groups, agent names, and chat statuses**.
 
-![](https://hackmd.io/_uploads/rkJTEJ1zT.png)
+    ![](https://hackmd.io/_uploads/rkJTEJ1zT.png)
 
 :::note
 - No duplicate view names are permitted.
@@ -87,7 +87,7 @@ Choose a method and follow the below steps to create a view:
     - Choose the **visibility** setting. **Only me** will display the view exclusively to admins, while **All agents** will grant access to all agents for chats assigned to them.
     - The selected filters are applied by default.
 
-![](https://hackmd.io/_uploads/H1muDkJGT.png)
+    ![](https://hackmd.io/_uploads/H1muDkJGT.png)
 
 :::note
 - No duplicate view names are permitted.
@@ -96,6 +96,8 @@ Choose a method and follow the below steps to create a view:
 :::
 
 5. Save the view by clicking **Save**.
+
+> When constructing custom views with filters, it's important to note that for bot messages, the filtering and searching functionality is not global but rather local. This means that the filter and search operations will only apply within the context of bot messages.
 
 
 ------
