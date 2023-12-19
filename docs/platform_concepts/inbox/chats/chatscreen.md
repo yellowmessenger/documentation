@@ -147,11 +147,9 @@ The live chat interface includes an automatic indicator that remains visible unt
 
 ----
 
-<!--
-
 ### Mark attachments as sensitive
 
-Agents can mark attachments sent by customers as sensitive by clicking on the disclaimer option available on the sent attachment. This action will result in the immediate deletion of the data from the chat screen, with a brief window for undoing the action. The data will be permanently deleted from the backend within the next 15 days.
+Agents can mark attachments sent by customers as sensitive by clicking on the disclaimer option available on the sent attachment. The data will be permanently deleted from the backend within the next 15 days.
 
 This feature is useful in cases where users have shared sensitive information such as credit card details or if inappropriate images are sent.
 
@@ -163,7 +161,8 @@ To allow agents to mark attachments as sensitive, admins must go to **Settings >
 ![image](https://imgur.com/5iXxAUm.png)
 
 ----
--->
+
+
 
 
 
