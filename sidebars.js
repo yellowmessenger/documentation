@@ -373,6 +373,7 @@ module.exports = {
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",
             "platform_concepts/inbox/chats/videocall",
+            "platform_concepts/inbox/chats/voicecalls",
             "platform_concepts/inbox/chats/reinitiatewachats",
                  ],
          },
