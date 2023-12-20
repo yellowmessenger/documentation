@@ -903,7 +903,6 @@ module.exports = {
               link: {type: 'doc', id: 'platform_concepts/channelConfiguration/instagram'},
               collapsed: true,
               items: [
-            "platform_concepts/channelConfiguration/instagram-limitations",
             "platform_concepts/channelConfiguration/instagram-faqs",
               ]},
             "platform_concepts/channelConfiguration/line", 
