@@ -87,8 +87,8 @@ Audit log provids a detailed record of the changes made to each module, includin
 
 To view audit log, follow these steps,:
 
-1. Click on your profile icon > **Profile** > **Audit logs** to access the log of all the changes made.
-    ![](https://hackmd.io/_uploads/rJOpDew92.png)
+1. Click **Bot settings** > **Audit logs** to access the log of all the changes made.
+    ![image](https://imgur.com/2MuBhJf.png)
 2. To filter the results and view specific information, you can use the **filter** button and apply relevant filters.
     <img src="https://hackmd.io/_uploads/ryIEuxv92.png" alt="drawing" width="50%"/>
 3. if you wish to download all the data from the Audit Log, you can do so by clicking on **Download CSV**. This will allow you to have a comprehensive record of all the changes made to the bot over time.
