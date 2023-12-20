@@ -16,9 +16,9 @@ The following are the different steps involved in a WhatsApp template:
 :::note
 Important update: FBM made changes to WhatsApp authentication templates for businesses in India. [Click here](#6-important-update-changes-to-whatsapp-authentication-templates-for-businesses-in-india) for more details.
 :::
-  
 
-#### Prerequisites to create WhatsApp template
+
+## 1.  Prerequisites to create WhatsApp template
 
 The following are the prerequisites for creating a WhatsApp template:
 
@@ -26,6 +26,7 @@ The following are the prerequisites for creating a WhatsApp template:
 
 * Verify that the account is active and its status is showing as *Connected*.
 
+## 2. Creating WhatsApp template
 
 To create a WhatsApp template and send for approval, follow these steps:
 
@@ -44,19 +45,47 @@ To create a WhatsApp template and send for approval, follow these steps:
 
    ![](https://i.imgur.com/jknxfcv.png)
 
-  
+
+### Options to create WhatsApp standard template
+
    Option | Description
    --------- | --------
-   Template name | Enter a name for the template (Only lowercase letters, numbers and underscores are allowed). This is used only for your reference and the client cannot see it. 
-   Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*. <br/>If you want the template to move to the right category automatically depending on the content, **If the template does not qualify under the selected category, move it to the correct category**.
+   Template name | Enter a name for the template (Supports only lowercase letters without space, including numbers and underscores). This is used only for your reference and the client cannot see it. 
    Select language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
-   Header | Enter a title for the message. If you want to include media or documents (Image, Video, Document, or Text) in your template messages, then Header Section will be of high importance. WhatsApp has certain guidelines for Header. WhatsApp Text supports upto 60 characters with only one variable.
-   Body | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can use upto 1024 characters, which can include text and variables.
+   Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*. <br/>If you want the template to move to the right category automatically depending on the content, **If the template does not qualify under the selected category, move it to the correct category**.
+   Template type | Choose the template type for your message: <br/> - **Standard template**: Select for straightforward, single-item messages. It suits scenarios where a concise and focused message is preferable. <br/> - **Carousel template**: Select for showcasing multiple items in a single, interactive format. Carousels offer a dynamic and engaging way to present diverse content within a single message.
+   Header type | Choose the type of the header content - *Text* or *Media*.
+   Text (Header) | Enter your text-based header content here. You can have upto 60 characters with only one variable in the header.
+   Media (Header) | Upload your preferred media file. Supported formats include image files (.jpg/.jpeg/.png) with a maximum size of 5 MB, mp4 files with a maximum size of 12 MB, and PDF files with a maximum size of 12 MB.
+   Body text | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can use upto 1024 characters, which can include text and variables.
    Footer | Use this to mention something at the end of your message. You can use up to 60 words.
-   Button type | Choose the button type - None, Call to action (CTA) or Quick reply.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone.
-   Quick reply | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
+   Button type | Choose the button type - None, Call to action (CTA) or Quick replies.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone.
+   Quick replies | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
 
-   :::note
+
+  ### Options to create WhatsApp carousel template
+
+  Other than the options available in common, here are some options specific to WhatsApp carousel template:
+
+   ![](https://i.imgur.com/IZ24KC3.png)
+
+   Option | Description
+   --------- | --------
+   Template name | Enter a name for the template (Supports only lowercase letters without space, including numbers and underscores). This is used only for your reference and the client cannot see it. 
+   Select language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
+   Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*. <br/>If you want the template to move to the right category automatically depending on the content, **If the template does not qualify under the selected category, move it to the correct category**.
+   Template type | Choose *Carousel template*.
+   Card | You can add upto 10 cards in a template and set header, body, and buttons for each card separately. 
+   Header | Choose the media type for the header. You cannot have one card with an image type and another with a video type. <br/> - Image: Supports .jpg/.jpeg/.png with a maximum size of 5 MB. <br/> Video:  Use to add mp4 file. Supports upto 12 MB.
+   Body text | Enter the body content for the WhatsApp carousel. Use {{ }} to add variables. For instance, you can use {{firstName}} to dynamically include the customer's first name within the carousel.
+   CTA buttons | Add CTAs to the card. If you add another CTA, both should be of the same type. You can add up to two buttons - either CTAs or quick replies or both.
+   Quick replies | Add quick replies to the card.  You can add up to two buttons - either CTAs or quick replies or both.
+
+
+
+
+
+:::note
 
    To format text in a WhatsApp template, use the following syntax:
 
@@ -64,10 +93,9 @@ To create a WhatsApp template and send for approval, follow these steps:
    * **Bold**:  `*text*`
    * ~~Strikethrough~~: `~text~`
    * `Bullet`: `- text`
-   :::
+:::
 
-4. To add another CTA, click **Add new button**.
-5. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
+4. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
 
    ![](https://i.imgur.com/63SeUhj.png)
 
@@ -85,7 +113,7 @@ You can either add up to two CTAs or three Quick replies.
 
 
 
-## 1. Add Call to Actions (CTAs) in WhatsApp template
+## 3. Call to Actions (CTAs) in WhatsApp template
 
 A WhatsApp template supports two different CTAs - *Visit website* and *Call phone*. You can only add two different CTAs in a template. That is, you cannot use two Visit website or two Call phone in the same template.
 
@@ -95,7 +123,7 @@ Navigate to the **Button Type** section and select *Call to action*.
 
 ![](https://i.imgur.com/OpV6j9P.png)
 
-### 1.1 Add URL redirect CTA
+### Add URL redirect CTA
 
 1. In **Type of action**, choose *Visit website*.
 2. In the **Button** text, enter the label name (character limit 20) for the CTA.
@@ -133,14 +161,14 @@ For example: If the URL is https://exampleshopping.com/checkout/{userId}
 * You cannot change the parent domain URL dynamically.
 :::
 
-### 1.2 Add make a phone call CTA
+### Add make a phone call CTA
 
 1. In **Type of action**, choose *Phone call*.
 2. In the **Button** text, enter the label name (character limit 20) for the CTA.
 3. In the drop-down box, choose the country of the phone number.
 4. In **Phone number**, enter the phone number that you want your recipients to call.
 
-## 2. Add Quick replies in WhatsApp template
+## 4. Add Quick replies in WhatsApp template
 
 WhatsApp template supports three different quick reply actions. You can use the desired action for each button and a maximum of three quick reply buttons are supported. Each button text can have up to 20 characters. 
 
@@ -148,7 +176,7 @@ WhatsApp template supports three different quick reply actions. You can use the 
 
 The following are the three different quick reply options:
 
-### 2.1 Trigger journey
+### Trigger journey
 
 Use this to trigger a specific journey when the user clicks on the button. For example, you can use it to send a promotional notification about store offers and trigger the bot flow through which users can buy products when the user clicks on it.
 
@@ -160,7 +188,7 @@ Enter the **Button text**, choose the **Action type**,  *Trigger journey*, and s
 
 
 
-### 2.2 Trigger NLP 
+### Trigger NLP 
 Use this to trigger the bot conversation as per the utterances trained under intents. For example, use it to send a transactional notification about order cancellation, and provide a talk-to-customer support button to trigger Live Agent flow.
 
 **Prerequisite**: Live agent flow should be trained with the *Talk to customer support* utterance.
@@ -171,7 +199,7 @@ Enter the **Button text**, choose the **Action type**,  *Trigger NLP*.
 
 
 
-### 2.3 Send as Event 
+### Send as Event 
 Use this to send all the template data to the bot and use it in custom flows. For example, you can capture the button clicked and the userId in a custom dataset.
 
 Enter the **Button text**, choose the **Action type**,  *Send as event*.
@@ -184,7 +212,7 @@ Use the Delete icon to remove any button.
 :::
 
 
-## 3. Add variables in WhatsApp template
+## 5. Add variables in WhatsApp template
 
 Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
 
@@ -202,7 +230,7 @@ You can see in the preview tab below, the variable user we just created is highl
 
    <img src="https://i.imgur.com/jRhm0jE.png" width="50%"/>
 
-## 4. Track URL clicks in WhatsApp campaigns
+## 6. Track URL clicks in WhatsApp campaigns
 
 URL click tracking in Campaigns allows you to monitor user clicks on links used in messages.  Before sending out the actual message, the URLs in the template are shortened, and each user is provided with a unique identifier. This allows you to track individual clicks on the links, providing valuable insights into user engagement and campaign performance.
 
@@ -231,7 +259,7 @@ To track URL clicks:
 
 
 
-## 5. View WhatsApp template approval or rejection status
+## 7. View WhatsApp template approval or rejection status
 Once a WhatsApp template is approved and marked as Active, it can be used to send messages to customers, regardless of its quality rating. However, WhatsApp templates are rated based on their quality, reflecting their performance. 
 
 Users can report or block WhatsApp templates which can result in blocking of the campaign. If the template receives consistent negative feedback, its status may change and can interrupt the campaign, impacting its performance. 
@@ -268,7 +296,7 @@ When using [Notification APIs](https://docs.yellow.ai/docs/platform_concepts/eng
 :::
 
 
-## 6. Important update: Changes to WhatsApp authentication templates for businesses outside India
+## 8. Important update: Changes to WhatsApp authentication templates for businesses outside India
 
 Starting from October 2, 2023, older authentication templates will no longer be supported for businesses operating in countries other than India.
 
@@ -295,7 +323,7 @@ Here's what you need to do:
 Authentication templates are not available or applicable for India.
 :::
 
-## 7. WhatsApp template guidelines
+## 9. WhatsApp template guidelines
 
 A WhatsApp template needs to be approved by Facebook before you start using it. Here are some standard guidelines that you need to follow while creating a template to avoid rejections.
 
@@ -326,7 +354,7 @@ For a complete list of rejection reasons, see [here](https://developers.facebook
 
 
 
-### 7.1 Examples of approved & rejected templates
+### Examples of approved & rejected templates
 
   
 
