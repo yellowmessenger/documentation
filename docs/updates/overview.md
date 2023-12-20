@@ -39,3 +39,24 @@ This is available for bots under the T3 subscription plan, specifically those wi
 In the **Preview** section, a new Debug option has been added. This tool shows logs of the tested conversation, including timestamps, IDs, and actions. Hover over the logs to access options that lead to specific nodes or logs. This helps you review and improve the bot-user conversations.
    
    <img src="https://i.imgur.com/jEHDESB.png" width="90%"/>
+
+## Inbox
+
+### Standardized time units and Streamlined metrics for better user experience
+
+* Standardized time units for better clarity: First response duration, Average response time, and Resolution duration are now uniformly measured in seconds by default.
+Enhancements:
+* Removed duplicate field: TICKET_HANDLING_DURATION_IN_MILLISECONDS to eliminate confusion. Users can now rely on either RESOLUTION_DURATION_ASSIGNED_IN_SECONDS or RESOLUTION_DURATION_CREATE_IN_SECONDS based on their specific use case.
+
+If you have have built reports or dashboards based on the Email tickets table in Data Explorer, especially using the following metrics:
+
+* Average response duration
+* Ticket handling duration
+* Resolution duration assigned
+* Resolution duration create
+
+Please review your reports and dashboards to ensure compatibility and make any necessary adjustments to prevent issues.
+
+### Improved customization with HCF
+
+You can now define four levels of HCF, though the option to mark them as **Required for ticket creation** is not applicable. Additionally, these fields cannot be retrieved from the **Raise ticket** node, preventing you from designating them as read-only. When marked as **Required for transfer/close**, all levels of HCFs become mandatory on the ticket.

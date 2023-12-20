@@ -5,14 +5,32 @@ sidebar_label: Microsoft Teams
 
 Microsoft Teams (MS Teams) is a collaboration platform that provides a digital workspace for various teams within the organisation to communicate and work together. The team members can have conversations, share files, images, video, audio, and schedule meetings. It includes chat, video meetings, file storage, and application integration to provide a secure, collaborative environment for teams to work together.
 
-In this article, you will learn:
-1. [How to set up MS Teams using Developer portal](#1-set-up-ms-teams-using-developer-portal)
-2. [How to connect Teams app with your bot](#2-connect-your-teams-app-with-a-bot)
-3. [How to set permissions on Azure portal](#3-set-permission-on-azure-portal)
+MS Teams channel integration helps businesses to automate customer support, send campaigns, and collect user feedback.
 
-## 1. Set up MS teams using Developer portal
+This channel enables the following key features:
+
+* **Automated Replies**: Provides the ability to automatically respond to user messages.
+* **Multi-message type support**: You can use various message types that are supported by the platform to enhance the communication experience.
+
+## Setting up MS Teams on Yellow.ai platform
+
+To set up MS Teams
+
+* [Create a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
+* [Setup a MS Teams chatbot](#setup-telegram-chatbot)
+* [Connect MS Teams channel to your bot](#connect-telegram-channel-to-your-bot)
+* [Test your MS Teams chatbot](#test-telegram-chatbot)
+
+
+#### Prerequisite 
+
+To set up MS Teams chatbot, create a [MS Teams account](https://support.microsoft.com/en-us/office/how-to-log-in-to-microsoft-teams-ea4b1443-d11b-4791-8ae1-9977e7723055). 
+
+## Set up MS Teams chatbot using Developer portal
 
 To set up MS teams using Developer portal, follow these steps:
+
+### Create a bot on MS Teams
 
 1. Open MS Teams.
 
@@ -34,143 +52,189 @@ To set up MS teams using Developer portal, follow these steps:
 
    ![](https://i.imgur.com/vkukJf1.png)
    
-6. To set up the bot, follow these steps:
-
-   6.1. Enter the bot's name and click **Add**.
+6. Enter the bot's name and click **Add**.
 
       ![](https://i.imgur.com/DeUnJ6m.png)
    
-    6.2 To define a messaging endpoint, use the below URL and click **Save**. 
-       `https://app.yellowmessenger.com/integrations/botframework/{<botID>}`
+7. Click **Configure** to establish a messaging endpoint. 
+8. Enter the URL as per your region (to deploy the bot) and click **Save** to save your settings.
+
+:::note
+You need to copy the profile ID from the provided URL, specific to your region. This is required when connecting the MS Teams bot to the Yellow.ai platform.
+:::
+            
+| Region Code | Region | URL
+| --- | --- |-----
+| R0 | India | `https://r0.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
+| R1 | MEA-UAE North | `https://r1.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
+| R2 | Jakarta | `https://r2.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
+| R3 | Singapore | `https://r3.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
+| R4 | USA  | `https://r4.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
+| R5 | Europe | `https://r5.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
+
+   ![](https://i.imgur.com/jdsmIrd.png)
 	
-	  ![](https://i.imgur.com/wwLG6rG.png)
+9. Go to **Client secrets** and click **Add a client secret for your bot**.
 	
-   6.3 Go to **Client secrets** and click **Add a client secret for your bot**.
+   ![](https://i.imgur.com/rdqbs8M.png)
 	
-	   ![](https://i.imgur.com/rdqbs8M.png)
-	
-    6.4 Copy the **Client secret** and save it for future reference.
-	
-	   ![](https://i.imgur.com/ykcfSjP.png)
-	
-   6.5 Go back to **Bot management** and copy the Bot ID.
-	
-   :::note
-   The bot Id is required for configuration.	
-   :::
+   
+10. Copy the **Client secret** and save it for future reference.
+
+   ![](https://i.imgur.com/ykcfSjP.png)
+
+11. Go to **Developer portal** > **Tools** > **Bot management** and copy the Bot ID. This is required to connect MS Teams app to Yellow.ai platform. 
 	
    ![](https://i.imgur.com/oGWpSch.png)
+   
+### Create an app on MS Teams
+
+You need to create an app in MS Teams and connect your bot.
 	
-7. Navigate to **Apps** to create a **New app**. Click **+ New app**.
+1. Navigate to **Apps** to create a **+ New app**. Click **+ New app**.
 	
    ![](https://i.imgur.com/LWmvWl8.png)
 	
-8. Enter the name of your app.
+2. Enter a name for the app.
 	
 	![](https://i.imgur.com/tsPkMNP.png)
 
 
-9. Enter the following details that are required for your app:
-	* **Short Name**: Enter a name for your bot app.
-    * **Full Name**: Enter a full name for your bot app (it can be the same name as short name).
-    * **Short Description**: Enter a short description for your bot app.
-	* **Long Description**: Enter a long description for your bot app.
-    * **Version**: Enter the version number. For example, 1.0.0.
-    * **Developer or Company Name, Website, Privacy Policy & TnC**: Ask Enterprises to use their details
-    * **Application ID**: Paste the application ID, which you have copied from the Step 6.5, and click **Save**.
-	
-	 <img src="https://i.imgur.com/CytFL5J.jpg" alt="drawing" width="80%"/>
+3. Enter the following details that are required for your app and click **Save** to save your settings:
 
-10. Navigate to **Branding** under **Configure** to change the available branding options.
+Option | Description
+------ | -----------
+**Short Name** | Enter a name (30 characters or less) for your bot app.
+**Full Name** | Enter a full name (up to 100 characters) for your bot app. It can be the same as the short name. This is optional.
+**App ID** | This is the unique identifier generated by Microsoft for your app.
+**Short Description** | Enter a brief description (80 characters or less) for your bot app.
+**Long Description** | Enter a detailed description (80 characters or less) for your bot app.
+**Version** | Enter the version number as 1.0.0 (for developer reference).
+**Developer or Company Name** | Enter your organization's name.
+**Website** | Enter your website URL (HTTPS only).
+ **Privacy Policy** |Add the link of your website's privacy policy.
+**Terms of use** | Add the link of your website's terms of use.
+**Application (client) ID** | Paste the bot ID (client ID), which you have copied earlier (as mentioned in the Step 11 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams) section).
+**Microsoft Partner Network ID** | If you are part of the Microsoft Partner Network, specify your MPN ID. For more information, refer to this [link](https://learn.microsoft.com/en-gb/partner-center/mpn-overview?referrer=developerportal).
+    
+	
+   <img src="https://i.imgur.com/CytFL5J.jpg" alt="drawing" width="80%"/> 
+
+4. Navigate to **Branding** under **Configure** to change the available branding options.
 	
 	![](https://i.imgur.com/fGsFh9l.jpg)
 
-11. Navigate to **App Features** under **Configure** and select **Bot**.
+5. Navigate to **App Features** under **Configure** and select **Bot**.
 	
 	![](https://i.imgur.com/QpknYd6.jpg)
  
-	I. Select your bot name from the drop-down.<br/>
-	II. If you want to enable file sharing, enable the **Upload and download files** check box.<br/>
-    III. Select **Personal** under the scope.<br/>
-    IV. Click **Save** at the bottom.<br/>
+6. Select your bot name from the drop-down.<br/>
+7. If you want to enable file sharing, enable the **Upload and download files** check box.<br/>
+8. Select **Personal** under the scope.<br/>
+9. Click **Save** at the bottom.<br/>
 	
 	![](https://i.imgur.com/vV1JxAg.jpg)
+    
+### Publish App on MS Teams
 	
-12. To install and distribute app, navigate to **Publish > App package**. 
+1. To publish the app, navigate to **Publish > App package**. 
 	
 	![](https://i.imgur.com/phBhR6J.jpg)
 	
-13. Click **Publish** and select an option based on your enterprise policy.
+2. Click **Publish your app** and select an option based on your enterprise policy.
 	
 	![](https://i.imgur.com/WgKGHfs.png)
+    
 
-	I. If it does not work, then download the Manifest zip file.
+3. Click **Download the app package**. The file will be downloaded to your local folder.
 
-   II. Go to `https://admin.teams.microsoft.com`.
+     
+      <img src="https://i.imgur.com/SRn0nnk.png" alt="drawing" width="60%"/><br/>
+       
 
-   III. Navigate to **Teams Apps > Manage Apps** and Upload app.
+4. Go to `https://admin.teams.microsoft.com`.
+5. Navigate to **Teams Apps** > **Manage Apps** > **Upload new app**.
 	
-	![](https://i.imgur.com/LzoJyej.png)
-	
-## 2. Connect your Teams app with a bot
-	
-To configure the Channel on the Yellow.ai platform, follow below sreps:
-	
-1. On the switcher click **Channels** > **Microsoft Teams**.
-	
-2. Add below details:
-   * Profile Id (for your reference)
-   * Client ID from Step# 6.4 
-   * Client Secret from Step# 6.5
+   ![](https://i.imgur.com/LzoJyej.png)
+   
+6. Select the downloaded file from your local folder and click **Upload**.
+   
+   <img src="https://i.imgur.com/XeGLsXT.png" alt="drawing" width="60%"/>
+   
+ * A new app will be added to your apps list.
 
-    ![](https://i.imgur.com/8SE3KWq.png)
-	
-3. Now you are ready to use MS team with Yellow.ai bot. Test by sending a message using "app.sendTextMessage()".		
-4. Go back to MS Teams.	
-5. Search the **App** under **Apps**. 
-6. Click **Add** to start a conversation with the bot.
+     <img src="https://i.imgur.com/M1glzPt.png" alt="drawing" width="60%"/>
+     
+### Add app to MS Teams workspace
+
+1. Go back to MS Teams.	
+2. Search the **App** under **Apps**. 
+3. Click **Add** to start a conversation with the bot.
 	
    ![](https://i.imgur.com/1FdGpEN.png)
-
+     
+## Set permission on Azure portal
 	
-## 3. Set permission on Azure portal 
-	
-After connecting the Teams app with your bot, you need to set permissions on the Azure portal to execute certain use cases based on the business requirements. Follow these steps:	
+After adding app to MS Teams workspace, you need to set permissions on the Azure portal to execute certain use cases based on the business requirements. Follow these steps:	
 
 1. Login to `https://portal.azure.com`.
+
 2. Navigate to **App Registration**.
+
 3. Click on the app created with the same name as your MS Teams bot.
 
    ![](https://i.imgur.com/2QrZRi4.png)
-
-4. Navigate to the **Overview** screen. Make a note of the client and tenant IDs and click on **Redirect URLs**.
-
-   ![](https://i.imgur.com/I5C8yL3.png)
 	
-5. Click **Add a Platform > Web**.
-    
+4. Click **Add a Platform > Web**.
+
     ![](https://i.imgur.com/2SWdXqw.png)
-	
-6. Add `https://app.yellowmessenger.com/integrations/azureauth`URL under **Redirect URIs**, enable the **Access Token** check box, and click **Configure**. 
 
-   ![](https://i.imgur.com/1Fn2xUx.jpg)
-
-	
-7. Navigate to **API Permissions > Add Permission > Microsoft Graph**.
+5. Navigate to **API Permissions > Add Permission > Microsoft Graph**.
 
    ![](https://i.imgur.com/y1vpad4.png)
    
-8. To add the permissions for your app as per business requirements, select the permission type you want to provide: <br/>• **Application Permissions:** This enables the app to use the services without any user’s authorization. The app work with its credentials.<br/>• **Delegated Permissions:** This requires users to authorize the app to work on their behalf. Once approved, the app contains the privileges of authorising users for the defined scope.
+6. To enable app permissions, select the desired permission type and click **Add permissions**.
+   * **Application Permissions:** This enables the app to use the services without any user’s authorization. The app work with its credentials.
+   * **Delegated Permissions:** This requires users to authorize the app to work on their behalf. Once approved, the app contains the privileges of authorising users for the defined scope. For more detailed information regarding permissions, click [here](https://learn.microsoft.com/en-us/entra/identity-platform/permissions-consent-overview).
 	
-   ![](https://i.imgur.com/sviY2eg.png)
-
-
-9. Click **Add Permissions**.
-
-   ![](https://i.imgur.com/DUYW0Px.png)	
-		
-:::note
-You need to grant the admin's consent as per the defined permissions.
-:::	
+     ![](https://i.imgur.com/x4lIHka.png)
 	
-10. The permission has been successfully added to your app.		
+### Connect MS Teams app to the Yellow.ai platform
+	
+1. On the switcher click **Channels** > **Microsoft Teams**.
+2. Copy the Profile ID based on the region where you want to deploy the bot, as mentioned in step 8 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams).  
+3. Copy the **Client Secret** as mentioned in step 10 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams).
+4. Copy the **Bot ID** as mentioned in step 11 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams) paste it under *Client ID*.
+
+   ![](https://i.imgur.com/8SE3KWq.png)
+	
+* Now you are ready to use MS Team with Yellow.ai bot.
+	
+
+## Test MS Teams chatbot
+
+Once you have created an app and connected it to the Yellow.AI platform, you need to test the bot to verify whether the bot is able to respond to user messages on MS Teams app.
+
+To test your bot on MS Teams, follow these steps:
+
+1. Open the MS Teams app on your mobile device or on website.
+
+2. Navigate to Apps and search for the app name under Apps. Select the app that you have created and click **Open**.
+
+   ![](https://i.imgur.com/3dcIEwV.png)
+
+3. Go to **Chats** and start the conversation with the bot. Make sure you have already created an intent and added the utterances to trigger the corresponding flow in your MS Teams chatbot.
+
+   ![](https://i.imgur.com/7JOpALn.png)
+     
+     
+4. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
+
+   ![](https://i.imgur.com/sVnGBQ1.png)
+    
+5. To view the entire conversation between the live agent and user, navigate to the **Inbox** module in the platform and select **Bot messages** in the **My Chats** section.
+
+    ![](https://i.imgur.com/0AdMWza.png)
+
+
+   When the conversation between the agent and user ends, the bot takes the conversation forward with the user. 

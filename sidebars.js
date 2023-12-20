@@ -274,6 +274,7 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/studio/api/add-api",
+            "platform_concepts/studio/api/add-api-apinode",
             "platform_concepts/studio/api/send-data",
             "platform_concepts/studio/api/receive-data",
             "platform_concepts/studio/api/enviroment-variables",
@@ -372,6 +373,7 @@ module.exports = {
             "platform_concepts/inbox/chats/resolve",
             "platform_concepts/inbox/chats/bulkactions",
             "platform_concepts/inbox/chats/videocall",
+            "platform_concepts/inbox/chats/voicecalls",
             "platform_concepts/inbox/chats/reinitiatewachats",
                  ],
          },
