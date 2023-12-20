@@ -21,6 +21,10 @@ In this article, you will learn:
 
 Before you passing the ymAuthentication token via the script or init function, you need to enable **Show history of the conversation** in the **Settings** page.
 
+:::note
+When the "Create New Tab session" flag is enabled, history will not be retained on page refresh even if "Show History" is set to true and the ymAuthenticationToken is passed.
+:::
+
 To enable "Show history of the conversation", follow these steps:
 
 1. On the module switcher, click **Channels**.
