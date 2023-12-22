@@ -85,7 +85,7 @@ Resetting a bot allows you to delete all past flows, conversations, and data ass
 
 Audit log provids a detailed record of the changes made to each module, including information about the user (user email) who made the changes and the timestamp of the actions taken. 
 
-To view audit log, follow these steps,:
+To view audit log, follow these steps:
 
 1. Click on your profile icon > **Profile** > **Audit logs** to access the log of all the changes made.
     ![](https://hackmd.io/_uploads/rJOpDew92.png)
