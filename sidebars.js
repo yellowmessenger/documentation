@@ -906,6 +906,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/instagram-faqs",
               ]},
             "platform_concepts/channelConfiguration/line", 
+            "platform_concepts/channelConfiguration/lazada",
             "platform_concepts/channelConfiguration/teams", 
             "platform_concepts/channelConfiguration/slack2",
             {

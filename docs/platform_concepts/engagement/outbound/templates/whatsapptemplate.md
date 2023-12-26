@@ -40,30 +40,55 @@ To create a WhatsApp template and send for approval, follow these steps:
 
    ![](https://i.imgur.com/GNCxave.png)
 
+3. In **Template Name**, enter a name for the template (supports only lowercase letters without space, including numbers and underscores). This is used only for your internal reference.
 
-3. Configure the template using the available options.
+4. In **Select language**, choose the language for which you want to use the template.
+
+3. In **Select category**, choose for what type of messages you want to use the current template: *Transactional*, *Marketing* or *One-time passwords*. If you want the template to move to the right category automatically depending on the content, select **If the template does not qualify under the selected category, move it to the correct category**.
+
+4. In **Template Type**, choose the template type for your message.
+
+   * **Standard Template**: Select for straightforward, single-item messages. It suits scenarios where a concise and focused message is preferable.
+   * **Carousel Template**: Select for showcasing multiple items in a single, interactive format. Carousels offer a dynamic and engaging way to present diverse content within a single message.
+
+
+5. Configure the template using the available options - [For standard template](#options-to-create-whatsapp-standard-template), [for carousel template](#options-to-create-whatsapp-carousel-template).
 
    ![](https://i.imgur.com/jknxfcv.png)
+
+6. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
+
+   ![](https://i.imgur.com/63SeUhj.png)
+
+:::note
+You can either add up to two CTAs or three Quick replies. 
+:::
+
+7. Preview the message on the right pane and click **Create template** to finalize and create the WhatsApp template.
+
+
+   The template will be sent for reviewing. You can use can use it in your campaign once Facebook approves it.
+
+   ![](https://i.imgur.com/FmTmtzY.png)
 
 
 ### Options to create WhatsApp standard template
 
+The standard template for WhatsApp consists of three essential components: Header, Body, Footer and Buttons.
+
+
    Option | Description
    --------- | --------
-   Template name | Enter a name for the template (Supports only lowercase letters without space, including numbers and underscores). This is used only for your reference and the client cannot see it. 
-   Select language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
-   Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*. <br/>If you want the template to move to the right category automatically depending on the content, **If the template does not qualify under the selected category, move it to the correct category**.
-   Template type | Choose the template type for your message: <br/> - **Standard template**: Select for straightforward, single-item messages. It suits scenarios where a concise and focused message is preferable. <br/> - **Carousel template**: Select for showcasing multiple items in a single, interactive format. Carousels offer a dynamic and engaging way to present diverse content within a single message.
    Header type | Choose the type of the header content - *Text* or *Media*.
    Text (Header) | Enter your text-based header content here. You can have upto 60 characters with only one variable in the header.
    Media (Header) | Upload your preferred media file. Supported formats include image files (.jpg/.jpeg/.png) with a maximum size of 5 MB, mp4 files with a maximum size of 12 MB, and PDF files with a maximum size of 12 MB.
    Body text | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can use upto 1024 characters, which can include text and variables.
-   Footer | Use this to mention something at the end of your message. You can use up to 60 words.
-   Button type | Choose the button type - None, Call to action (CTA) or Quick replies.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone.
-   Quick replies | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters.
+   Footer |  This lets you include extra details at the end of your WhatsApp message to share important information or calls to action. <br/> Check the box **Use as a footer text** to easily include the text "Reply with STOP to unsubscribe" in the message footer.
+   Button type | Choose the button type - None, Call to action (CTA) or Quick replies.<br/>Call to action: There can be a maximum of two buttons while choosing call to action - Visit Website or Call Phone. You can either add up to two CTAs. <br/> For more details, see [Phone call CTA](#add-make-a-phone-call-cta), and [URL redirect CTA](#add-url-redirect-cta).
+   Quick replies | You can add a maximum of 3 quick reply buttons, each button text can have a maximum of 20 characters. <br/>For more details, see [Quick replies](#4-add-quick-replies-in-whatsapp-template).
 
 
-  ### Options to create WhatsApp carousel template
+### Options to create WhatsApp carousel template
 
   Other than the options available in common, here are some options specific to WhatsApp carousel template:
 
@@ -76,7 +101,7 @@ To create a WhatsApp template and send for approval, follow these steps:
    Select category | Choose for what type of messages you want to use th current template - *Transactional*, *Marketing*, or *One-time passwords*. <br/>If you want the template to move to the right category automatically depending on the content, **If the template does not qualify under the selected category, move it to the correct category**.
    Template type | Choose *Carousel template*.
    Card | You can add upto 10 cards in a template and set header, body, and buttons for each card separately. 
-   Header | Choose the media type for the header. You cannot have one card with an image type and another with a video type. <br/> - Image: Supports .jpg/.jpeg/.png with a maximum size of 5 MB. <br/> Video:  Use to add mp4 file. Supports upto 12 MB.
+   Header | Choose the media type for the header. You cannot have one card with an image type and another with a video type. <ul><li>Image: Supports .jpg/.jpeg/.png with a maximum size of 5 MB. </li><li>Video:  Use to add mp4 file. Supports upto 12 MB. </li></ul>
    Body text | Enter the body content for the WhatsApp carousel. Use {{ }} to add variables. For instance, you can use {{firstName}} to dynamically include the customer's first name within the carousel.
    CTA buttons | Add CTAs to the card. If you add another CTA, both should be of the same type. You can add up to two buttons - either CTAs or quick replies or both.
    Quick replies | Add quick replies to the card.  You can add up to two buttons - either CTAs or quick replies or both.
@@ -95,21 +120,9 @@ To create a WhatsApp template and send for approval, follow these steps:
    * `Bullet`: `- text`
 :::
 
-4. In **URL click tracking**, select all the URLs that you wish to monitor for URL clicks. For detailed information, see [how to set up URL click tracking](#4-track-url-clicks-in-whatsapp-campaigns). URL click tracking is available only for premium users.
-
-   ![](https://i.imgur.com/63SeUhj.png)
-
-6. Preview the message on the right pane and click **Create template**. 
 
 
-   The template will be sent for reviewing. You can use can use it in your campaign once Facebook approves it.
 
-   ![](https://i.imgur.com/FmTmtzY.png)
-
-
-:::note
-You can either add up to two CTAs or three Quick replies. 
-:::
 
 
 
