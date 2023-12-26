@@ -34,7 +34,8 @@ On the Inbox > **chat screen**, follow these steps:
 3. Select either **Internal notes** or **Reply** to enter the message(body of the email ticket). 
     - **Internal notes**: This option allows L1 agents to create a ticket with an internal note that only L2 agents can see. It is useful when L1 agents want to inform L2 agents about the ticket without the customer's awareness.
     - **Reply**: By selecting this option, L1 agents can enter text visible to both L2 agents and the customer. This informs the customer that their query has been converted to a ticket, and L2 agents will address it further.
-        <img src="https://imgur.com/QaZiHAM.png" alt="drawing" width="60%"/>
+        
+    <img src="https://imgur.com/QaZiHAM.png" alt="drawing" width="60%"/>
 
 
 4. Click **Create ticket**. 
@@ -47,7 +48,7 @@ On the Inbox > **chat screen**, follow these steps:
 
 ### For L2 agent addressing email ticket
 
-On **email screen**:
+On the Inbox > **email screen**:
 
 - A new ticket is created from the conversation that happened with the L1 agent, along with the Chat ID (which redirects to the chat transcript). This ticket is assigned to an L2 agent who can further analyze the ticket.
     ![image](https://imgur.com/QRrP2ep.png)
