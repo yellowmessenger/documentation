@@ -206,7 +206,15 @@ For step 2, instead of manually gathering the required details from the customer
 
 By leveraging agent actions and the **@bot** functionality, the agent can efficiently handle the customer's order status inquiry and facilitate the return request process, ensuring a smoother and more convenient customer support experience.
 
+----
 
+
+### Create ticket from chat
+
+**Create a Ticket** feature enables Level 1 (L1) agents to efficiently convert complex live chat interactions into tickets for in-depth analysis by Level 2 (L2) agents.
+    ![image](https://imgur.com/4cwvOfe.png)
+
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chattoemail) to learn more on how to create a ticket from a live chat.
 
 ----
 
