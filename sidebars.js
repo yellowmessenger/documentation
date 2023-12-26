@@ -367,6 +367,7 @@ module.exports = {
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/genai",
             "platform_concepts/inbox/chats/internal-ticket",
+            "platform_concepts/inbox/chats/chattoemail",
             "platform_concepts/inbox/chats/agentassistbot",
             "platform_concepts/inbox/chats/customview",
             "platform_concepts/inbox/chats/chatsearch",

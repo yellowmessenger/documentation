@@ -32,9 +32,9 @@ The following table outlines various roles along with the associated access priv
 
 To share bot access with other users, follow these steps:
 
-1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click the Access Control icon <img  src="https://i.imgur.com/FPcfiW9.png"  width="20"/>.
+1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click the Access Control icon <img  src="https://imgur.com/vpKYa4b.png"  width="20"/>.
 
-    ![](https://i.imgur.com/IlBIRqa.jpg)
+    ![](https://imgur.com/RRN9Y18.jpg)
 
 2. Click **+Invite user**.
     - Enter the official **Email** address of the user.
@@ -76,7 +76,7 @@ To accept or reject a bot access invitation, follow these steps:
 Your own bots will not be visible in this section.
 :::
 
-In the **View bot invites** section, you can easily access and manage(Accept/Delete) pending bot invites sent by other team members. 
+In the **Profile settings > My invites** section, you can easily access and manage(Accept/Delete) pending bot invites sent by other team members. 
 - You can explore and access different bots that belong to the Yellow.ai organization by searching for specific bots using their **bot ID, name, or sub ID**. 
 - If you need access to a bot created by other members of the organization, you can search for that bot and click **Request access**. The **Super admin** will review the request and provide access to the bot if approved.
 
@@ -98,13 +98,13 @@ With **Super Admin/Admin** privileges, you can monitor user interactions with yo
     - Click **Edit** for role adjustments 
     - Click **Delete** to remove bot access.
 
-    ![](https://hackmd.io/_uploads/BJjloSHn2.png)
+    ![image](https://imgur.com/vbX1JBv.png)
     
 3. In the **Invites** tab, you can observe any pending access requests. This section provides information about the invitee, the person who extended the invitation, and the assigned role. 
     - To prompt the invitee to respond, you can opt to **Resend Email**. 
     - If you wish to withdraw the invitation, choose **Revoke**.
     
-    ![](https://hackmd.io/_uploads/rkC5oBr33.png)
+    ![image](https://imgur.com/ygLhewZ.png)
     
 4. The **User Requests** tab displays details pertaining to users who have formally requested access to the bot.
 
