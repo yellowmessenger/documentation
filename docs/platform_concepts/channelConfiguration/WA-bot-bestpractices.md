@@ -214,6 +214,35 @@ To change the WhatsApp OBA (with a green tick mark) or non-OBA display name, fol
 
 Once the display name is approved, share the WABA ID, phone number, and new display name details with our [support](mailto:support@yellow.ai) team so that they can update it in the back-end.
 
+### Apply for your WhatsApp Official Business Account
+
+To apply for an Official Business Account (OBA) and secure a green tick mark for your business on WhatsApp, follow these steps:
+
+1. Login to your Facebook business manager account and navigate to **Accounts > WhatsApp accounts** > **WhatsApp Manager**.
+
+      ![](https://i.imgur.com/ck9gziG.png)
+	  
+2. Select **Phone numbers**.
+
+     ![](https://i.imgur.com/ifaxupp.jpg) 
+
+3. Click **Settings**.
+
+   ![](https://i.imgur.com/keQSipr.png)
+
+4. Click **Profile** > under *Official business account* > **Submit request**.
+
+    ![](https://i.imgur.com/86vdKoj.png)
+
+5. Enter the following details in the respective field:
+     * **Country of operation**: Enter the name of your parent business or brand.
+     * **Supporting links**: You have the option to submit up to 5 supporting links, particularly from well-known publications such as India Today, Economic Times, Wall Street Journal, Reuters, Wikipedia, and Business Insider.
+    * Click **Submit**.
+
+     ![](https://i.imgur.com/ewNLX6H.png)
+     
+Once your account is reviewed, you will be notified about the status of your OBA. If your account is rejected, you can submit a new request after 30 days.     
+
 ## Test your WhatsApp bot 
 
 After successfully creating your WhatsApp business account and configuring the flow, you need to select the **WhatsApp** channel from the **Channels** filter to test your bot and ensure all the flows you configured are working as intended. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#3-test-your-bot-on-whatsapp). 
