@@ -230,14 +230,13 @@ To apply for an Official Business Account (OBA) and secure a green tick mark for
 
    ![](https://i.imgur.com/keQSipr.png)
 
-4. Click **Profile** > under *Official business account*, > **Submit request**.
+4. Click **Profile** > under *Official business account* > **Submit request**.
 
     ![](https://i.imgur.com/86vdKoj.png)
 
 5. Enter the following details in the respective field:
-
-    * **Country of operation**: Enter the name of your parent business or brand.
-    * **Supporting links**: You have the option to submit up to 5 supporting links, particularly from well-known publications such as India Today, Economic Times, Wall Street Journal, Reuters, Wikipedia, and Business Insider.
+     * **Country of operation**: Enter the name of your parent business or brand.
+     * **Supporting links**: You have the option to submit up to 5 supporting links, particularly from well-known publications such as India Today, Economic Times, Wall Street Journal, Reuters, Wikipedia, and Business Insider.
     * Click **Submit**.
 
      ![](https://i.imgur.com/ewNLX6H.png)
