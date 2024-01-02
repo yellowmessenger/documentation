@@ -24,7 +24,7 @@ There are two types of user data that is supported in User 360:
    i. [System user properties](#system-user-properties): Default data that you can capture about your users.
    ii. [Custom user properties](#custom-user-properties): Custom data that you can capture about your users and send to the platform.
 
-2. [User Events: Track specific actions or activities performed by users within a system, application, or platform. For more details, see [User 360 events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events) and [Custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events)
+2. User Events: Track specific actions or activities performed by users within a system, application, or platform. For more details, see [User 360 events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events) and [Custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events)
 
   
 
@@ -45,7 +45,7 @@ The following are the available system user properties, you can see these in Use
 
 | **Property Name** | **Data Type** | **Description** |
 |-------------------|---------------|------------------------|
-| userId | string | Unique identifier for a user. <br/>NOTE: This can be passed |
+| userId | string | Unique identifier for a user. <br/>As per your setting, this could be a mobile number, email address, or any unique identifier. For more details, see [here](#1-userid-as-a-property). |
 | firstName | string | The first name of the user |
 | lastName | string | Last name of the user |
 | gender | string | Gender of the user |
@@ -63,7 +63,7 @@ The following are the available system user properties, you can see these in Use
 | tags | list | List of groups associated to the user. You can add tags to users manually. |
 
 
-### 1. `UserId` as a property
+### `UserId` as a property
 
 
 The `userId` is a unique property in the users schema and serves as an identifier for each user. It helps in recognizing users across multiple touch-points, capture and update user data. A `userId` can be any unique identifier such as phone number, email address, or any other external unique identifier such as driving licence number.
@@ -87,7 +87,7 @@ Two records cannot have the same userId.
 :::
 
 
-### 2. `Tag` as user property
+## `Tag` as user property
 
 A tag is a label used to categorise users based on certain characteristics or attributes. These labels can be used to segment customers into different groups for targeted marketing, sales, or customer service efforts. Some examples of customer labels include High-value, New customer, Inactive, or campaign responders.
 

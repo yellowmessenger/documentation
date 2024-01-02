@@ -6,18 +6,23 @@ title: View user details
 
 User 360 lets you view the complete details of a user including user properties, tags, user events, and segments. You can use the Filter option to fetch users based on a certain condition, especially when the user base is large.
 
-## Organize & customise User 360 table
+## Customise User 360 table/columns
 
 You can organize user properties to better understand your data. You can also customize the table by choosing the fields you want to see and ordering them as you prefer. For instance, you can place user identifier on the first column.
 
 
-To customise the User 360 table:
+### Customize columns
+
+To customise the User 360 table data/columns:
 
 1. On the **User 360** page, click **User properties**.
 
    ![](https://i.imgur.com/BOUV1hq.png)
 
 2. In **Select properties** (left pane), select the properties that you want to see in the User 360 table.
+
+### Rearrange columns
+
 3. In **Arrange your properties** (right pane), drag a property to the required position.
 
    <img src="https://i.imgur.com/Eyk5uce.gif" width="60%"/>
