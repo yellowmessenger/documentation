@@ -1,6 +1,6 @@
 ---
 title: Add or import APIs
-sidebar_label : Add APIs
+sidebar_label : Add APIs via Studio's API module
 ---
 
 In addition to the various integrations supported by Yellow.ai, you can seamlessly integrate any third-party APIs with your chatbot. This comprehensive guide provides step-by-step instructions on connecting your chatbot to external APIs, enabling real-time data storage and retrieval for creating a personalized user experience.
@@ -152,32 +152,32 @@ If you have one or more APIs, save your collection in a JSON file and import the
 
    ![](https://i.imgur.com/frifWMw.png)
 
-## Add environment variables
+## Configure environment variables
 
-Adding environment variables allows you to store and manage dynamic values such as API keys, tokens, or any sensitive information that keep changing for each environment. This makes it easier to manage and use APIs seamlessly across your testing and development flows.
+Streamline API configuration across environments by using the **Configure Environment Variable** option. Instead of manually inputting endpoint or parameter values for each environment, this option allows you to define and manage values uniquely for each environment.
 
-:::note
-This is a global setting and applicable to all the APIs in your current bot and not a specific to an API.
-:::
+To add environment variables:
 
-To add an environment variable:
- 
+1. Go to **Studio** > **API** > **Configure environment**.
 
-1. Go to **Studio** > **Build** > **API**. 
-2. Add a placeholder for the API endpoint. 
-   > In this example, we have used host as the API placeholder.
-  ![](https://i.imgur.com/qHQFY4u.png)
+   ![](https://i.imgur.com/0fZmKPs.png)
 
-3. Click **Configure Environment** on the right corner.
 
-   ![](https://i.imgur.com/eXzY0vq.png) 
+2. Enter the key, for example **endpoint** and enter the respective values for each environment. Click **Save**.
+
    
-4. In **Key** add the placeholder and then add the API endpoints for each environment and click **Save**.
-   <img  src="https://i.imgur.com/NRtDAa2.png"  alt="drawing"  width="80%"/>
+   <img src="https://i.imgur.com/jRh5tRe.png" alt="drawing" width="80%"/>
 
-5. Before testing the API, choose the respective environment from the drop-down.
 
-   ![](https://i.imgur.com/fDs9TKO.png)
+3. Include the key in API URL in the following format: {{{env.variablename}}} for example, {{{env.endpoint}}}
+
+   ![](https://i.imgur.com/Xv74o1h.png)
+
+
+4. Choose the environment and click **Send** to test the API. A **2xx** response indicates that the API works successfully.
+
+   ![](https://i.imgur.com/mBpQ2vl.png)
+
 
 ## Test the API
 

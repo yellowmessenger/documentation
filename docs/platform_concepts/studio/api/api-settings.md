@@ -1,75 +1,52 @@
 ---
-title: API error alerts and error Log
-sidebar_label : API errors & alerts 
+title: API error alerts and logs
+sidebar_label : Handle API errors
 ---
 
-Once everything is setup and data is flowing through APIs, there could be chances of getting errors for any reason. 
-* You can keep all the PoCs associated with the bot configuration informed if there is any error in sending or retrieving data from any of the APIs you added in the API section.
-* See error log to identify the reason for failure and troubleshoot the API.
-There are 4 options available on the platform to test and Configure and configure API:
+API error logs and alerts are essential components that provide real-time detection and proactive troubleshooting of errors. They help in enhancing security by identifying potential threats promptly and also contribute to optimizing API performance. By addressing issues promptly, they improve the user experience. 
 
-:::note
-**Tools and settings**: One of the options that you see on the right of API configuration page. This is a global testing and setting tab. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#2-explore-tools) to learn more.
+## Set up email alerts for API failures
 
-![](https://i.imgur.com/p2kJpgw.png)
-:::
+To ensure timely alerts of any API failures or issues, Yellow.ai provides an option to send email notifications to designated recipients. These alerts are not limited to specific APIs but includes all the APIs listed in the API section. 
+
+To set up an alert:
+
+1. Go to **Studio** > **API**.
+
+   ![](https://i.imgur.com/P36r4kT.png)
 
 
----
-  
-## 1. Send alerts in case of API failures
-You can email alerts to be sent to specific recipients (email) when there is some issue with an API and call got failed.  Recipients will get error alerts for all the APIs added in the API section and is not specific to one API.   
+2. Click **Setup alerts** and enable **Setup alerts**.
 
-To add recipients to whom you want to notify about the API failures - 
-1. In **Studio** > **API**.
-2. Click on the **Setup alerts** icon and enable **Setup alerts**.
-3. In **Email**, enter each email address of the recipient you want to notify and click **Include**.
+   ![](https://i.imgur.com/faimdrv.png)
+
+3. In **Email**, type the email address to receive the alert and click **Include**. To omit sending alerts to a specific email address, enter the email and click **Exclude**.
+
+   <img src="https://i.imgur.com/e9he8hM.png" alt="drawing" width="70%"/>
+
 4. Click **Save**.
-
-<img src="https://i.imgur.com/Cx2lIw8.png" width="80%"/>
-
-:::note
-* To remove a recipient from the included list, click **Exclude**.
-* To move a recipient from the Include to Exclude list  or vice-versa, click on that respective email address. 
-:::
 
 The following is a sample screenshot of the error alert email.
 
-![](https://i.imgur.com/rAYsGkC.png)
+<img src="https://i.imgur.com/71ey7Ch.png" alt="drawing" width="70%"/>
 
-  
-  
+## Check API error logs
 
-## 2. View API error log
+API error logs capture information about issues in an application's API. They help swiftly identify and troubleshoot errors during API calls, ensuring the reliability and security of the software.
 
-To see the failure log of the API, click on the API failure log icon.
-![](https://i.imgur.com/OwHi4yQ.png)
+To check API error logs:
 
-You will see the summary of all errors. Click on the arrow to expand that particular error details. 
+1. Go to **Studio** > **API** > **API failure logs**.
 
-![](https://i.imgur.com/Q1zzyH4.jpg)
+   ![](https://i.imgur.com/h6oI3pN.png)
 
-To see errors of a specific API, use the API drop-down box and choose your preferred API. 
-
-:::note
-If there are many errors, you can further filter the summary by error code using the **Search** box. 
-:::
-
-There are response codes tagged to each error to help you identify why the error has occurred. The following section provides the list of status codes and its description to help help you troubleshoot an error.
-
-### 2.1 Status Codes
-
-The following table contains the list of common HTTP Status codes - 
-
-| **Code** | **Error** |
-|--------- | --------- |
-| 401 (**Unauthorized**) | Error may be because of an expired, missing, or invalid token. |
-| 403 (**Forbidden**) | When the authorization fails. 404 is also used when the consumer is unaware that the resource exists. |
-| 400 (**Bad Request**) | Error when the request is bad/unclear. Example: if required fields are missing or header values are not filled. |
-| 404 (**Not Found**) | Error when the requested resource is not found. |
-| 500 (**Internal Server Error**) | Server error. The users can try again later. |
-
-The timestamp(log) consists API details such as BotID, API name, etc. It is used to understand and rectify the error.
+2. * **API**: Choose the API.
+   * **Status code**: Type the particular error status code and click **Search**.
+   * Click on each timestamp to view the error log.
+   
+    ![](https://i.imgur.com/UvtQctT.png)
+   
+   The log consists of API details such as BotID, API name, etc. It is used to understand and rectify the error.
 
 ``` 
 {
@@ -85,3 +62,21 @@ The timestamp(log) consists API details such as BotID, API name, etc. It is used
 "key": "hdSOM4IB6hgCAvQOH-eq"
 }
 ```
+
+### Status codes
+
+| HTTP Status Code | Error Description |
+|-------------------|---------------------|
+| 401 (**Unauthorized**) | Indicates issues like an expired, missing, or invalid token causing authentication failure. |
+| 403 (**Forbidden**) | Denotes authorization failure; also used when the consumer is unaware of the resource's existence (similar to 404). |
+| 400 (**Bad Request**) | Occurs when the request is unclear or flawed, for instance, due to missing required fields or incomplete header values. |
+| 404 (**Not Found**) | Signifies that the requested resource is not available. |
+| 500 (**Internal Server Error**) | Represents a server error, advising users to try the request again later. |
+
+
+
+
+
+
+
+

@@ -1,87 +1,40 @@
 ---
-title: Use access token directly from API response
-sidebar_label : Use dynamic access token
+title: API keys and access tokens
+sidebar_label : Add API keys and access tokens
 ---
 
-We support different authentication types to ensure you can configure any type of API irrespective of the authentication method. You can use Basic Auth, OAuth, Barer token and more.
+API keys and access tokens are crucial for secure communication with APIs. API keys identify applications, and access tokens authenticate and validate requests, ensuring secure data exchange between applications and APIs
 
-In this article, you will learn - 
-1. How to pass access token variables in the API header
-2. How to use access token variable in the code function
+## Add API key authorization
 
-This article explains different ways of using access token generated directly from the generate auth token API.
+To add an API key:
 
-## 1. Pass access token in API's Header
+1. Go to **Studio** > **API** > click the particluar API > **Headers** > **+ Add Headers**.
 
-If you do not want to use code function, you can directly pass the access token received in the auth API response and pass it in the Header of another API that you want to authenticate.
+   ![](https://i.imgur.com/nzw4HVO.png)
 
-To do so, follow these steps - 
+2. In **Key** enter **Authorization** and in **Value** enter the API key. Click **Add**.
 
-1. In **Studio** > **Build** > **API**  and [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to fetch the access token.
-2. Copy the access token from the source. 
+   <img src="https://i.imgur.com/jmggwyO.png" alt="drawing" width="69%"/>
 
-> Here, we’ve added a salesforce API to create a bearer token. During the course of this tutorial, we’ll call it auth API. This API returns a **Bearer token** which we will use in another API for authentication.
+3. Click **Send** to test the API, if you recieve a 200 response the API has been authorized and works successfully.
 
-   ![](https://i.imgur.com/zZCcghI.png)
+   <img src="https://i.imgur.com/PzGvJ45.png" alt="drawing" width="100%"/>
 
-  
-4. Open the API or [add a new API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to which you want to add access token (Authorization header).
+4. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case and include the [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode) wherever you want the flow to hit the API. [Fetch this API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#use-existing-api) in the node and build the rest of the flow.
 
-> In the example, we will be adding a search lead API from Salesforce. Pass the bearer token in the header and email as a [parameter to this API](https://docs.yellow.ai/docs/platform_concepts/studio/api/send-data). So we will fetch values from [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and pass it to the API using this syntax `{{{variable_name}}}`; as shown in the screenshots below.
-  
+## Pass dynamic access tokens
 
-<img  src="https://i.imgur.com/HJUtzk7.png"  alt="drawing"  width="80%"/>
+To fetch a dynamic access token:
 
-<img  src="https://i.imgur.com/Xu6yn3O.png"  alt="drawing"  width="80%"/>
+1. [Add the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).  In **Key** enter **Authorization** and in **Value** enter the variable name in {{{}}} format, for example {{{auth_token}}}.
 
-  
+   ![](https://i.imgur.com/cvScYi2.png)
 
-5. Go back to **Studio** > **Build** > **Flows** and 
-6. Create an [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api) to invoke auth API and store the response in a custom variable.
+2. Go to [Functions](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) and [create a new function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-functionhttps://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-functionhttps://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-function) that filters out the access token from the response.
 
-> In the example, create an action node named `salesforceAuth` to invoke auth API and store response in `sf_auth_response` variable.
+**Sample code:**
 
-  
-
-:::note
-Problem with this API is that most API which requires bearer token authentication requires the token to be in this format `Bearer TOKEN_HERE`. Auth API only returns a token without `Bearer` prefix. Hence, we can use a [variable action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) to add a `Bearer` prefix to the token. Create another variable `auth_token` and use this syntax to add a prefix `Bearer {{{variables.sf_auth_response}}}`.
-:::
-  
-
-If the API node goes to fallback,  you can add a text message node and trigger a welcome journey.
-
-<img src="https://i.imgur.com/3M3NWMe.png" width="400"/>
-
-  
-
-> In the example
-> * Create or open a flow where you want to use Salesforce Search API, say `salesforceSearchLead` journey. Here, what we want is to first trigger is the `salesforceauth` API and store the bearer token in the `auth_token` variable which will be used here.
-> * Hence, in this flow,  add a [Trigger journey node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) and trigger `salesforceauth` flow. Once the `salesforceauth` flow is executed, the current `salesforceSearchLead` will be executed. Now, in the API action node, select the `get_lead` API and under parameters, select `auth_token` and `email` variables.
-> * Finally, store the response of this API in `sf_search_lead_response`.
-> <img src="https://i.imgur.com/ijhgh60.png" width="400"/>
-
-  
-
-## 2. Pass access token in Code function
-
-You can also use the Code function to send token from the generate auth token API and use it in another API that you want to authenticate.
-
-  
-To do so - 
-
-1. Open any journey where you've added API Action Node which invokes auth API.
-
-<img src="https://i.imgur.com/sQsTVL9.png" width="90%"/>
-
-
-  
-2. Add a new function to parse bearer token from the API response. Store the response in a variable, here we'll be storing the response in `auth` variable.
-
-  
-
-**Function: getAuthToken**
-
-  
 ```js
 let { apiResponse } = ymLib.args; // retrieve API response
 let  token = JSON.parse(apiResponse.body);
@@ -91,16 +44,23 @@ console.log(token);
 return  token.token_type + " " + token.access_token;
 ```
 
-3. Open the API where you need to pass the bearer token and pass the token using this syntax: `{{{variable_name}}}`.
+3. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case and include the [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode) wherever you want the flow to hit the API. 
 
-Here we need to pass the bearer token under headers, so click on `Add Headers` and enter this text: `{{{auth_token}}}`.
- 
-<img  src="https://i.imgur.com/wadPMWR.png"  alt="drawing"  width="50%"/>
+   ![](https://i.imgur.com/cgIJgK1.png)
 
-4. To try this workflow, try invoking the journey where you're using the auth API. :rocket:
+4. [Store the response of that API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
 
----
+   ![](https://i.imgur.com/qSX9VG4.png)
 
-#### What next?
-> * [Know how to send data to the API](send-data.md)
-> * [Monitor errors in APIs](api-settings.md)
+5. Scroll down to **Parse using function** and add the following:
+
+   ![](https://i.imgur.com/KY3qGe8.png)
+
+  * **Select variable**: Create/choose the variable in which you want to store the parsed response. Here the variable would be auth_token.
+  * **Add function**: Choose the function created in step 
+
+6. Include another [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode) and [add](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#create-new-api)/or [fetch the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#use-existing-api) (created in step 1). In the **Dynamic variable**, fetch the auth_token variable (created in step 5).
+
+   <img src="https://i.imgur.com/vX3vb7O.png" alt="drawing" width="80%"/>
+
+By this way you can authenticate the API and use the dynamic access token throughout the flow to authenticate different APIs from the same server.
