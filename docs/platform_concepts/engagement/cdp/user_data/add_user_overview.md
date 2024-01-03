@@ -109,14 +109,16 @@ Sometimes you might notice that the exact number of records you imported through
 
 -->
 
-## 2. Different ways of adding users
+## 2. Adding Users in User360
 
-In User360, the platform provides four different methods for adding or updating user records. You can choose to manually add each user individually or leverage advanced features that facilitate efficient creation and real-time management of your user base.
+In User360, the platform provides four different methods for adding or updating user records. You can manually add users or leverage advanced options to add users real-time from bot conversations or third-party integrations.
+
 
 1. [Add individual users using Add Single user in User 360](/docs/platform_concepts/engagement/cdp/user_data/add_users).
 2. [Import users directly from a CSV file](/docs/platform_concepts/engagement/cdp/user_data/import_users).
 3. [Use our REST APIs to add or modify users real time](/docs/platform_concepts/engagement/cdp/enriching_user_profiles/send_user_data_event_rest_api).
 4. [Use Bot conversations to create and update user records](/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
+5. Add users from SFTP or any third=pary integration
 
 
 

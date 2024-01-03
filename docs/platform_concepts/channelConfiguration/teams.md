@@ -60,7 +60,8 @@ To set up MS teams using Developer portal, follow these steps:
 8. Enter the URL as per your region (to deploy the bot) and click **Save** to save your settings.
 
 :::note
-You need to copy the profile ID from the provided URL, specific to your region. This is required when connecting the MS Teams bot to the Yellow.ai platform.
+* You need to copy the profile ID from the provided URL, specific to your region. This is required when connecting the MS Teams bot to the Yellow.ai platform.
+* To establish a secure connection with the bot and enable interaction, it is essential to enter a valid endpoint URL.
 :::
             
 | Region Code | Region | URL

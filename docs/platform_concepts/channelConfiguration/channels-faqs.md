@@ -440,4 +440,22 @@ sidebar_label: Channels FAQs
    </div>
 </details>
 
+## General FAQs
+
+<details>
+ <summary>What is session timeout?</summary>
+ <div>
+  <br/>
+  <div>A session lasts for 24 hours and includes any number of interactions the user has in a 24-hour window from the start of the session.</div>
+   </div>
+</details>
+
+<details>
+ <summary>What is session duration?</summary>
+ <div>
+  <br/>
+  <div>Session duration is based on the time of each user response. It resets if there is a 30-minute gap between responses. The total session duration is the sum of all user response times.</div>
+   </div>
+</details>
+
 

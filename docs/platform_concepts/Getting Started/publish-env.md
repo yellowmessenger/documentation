@@ -123,7 +123,7 @@ Here's a compilation of studio components or other modules that require separate
 | **Studio** | Data within Database tables | 
 | **Inbox**	| - Custom Tags <br/> - Groups creation and configuration <br/> - Inbox settings <br/> - Agent settings |
 | **User 360** | User data <br/> Segments<br/> User360 variables (Studio and User360 sync)
-| **Engage**     |  Scheduled campaigns  <br/> Inbound campaign configuration <br/> Enabling Notificaion API <br/> Postback URL |
+| **Engage**     |  Campaigns (Inbound/Outbound/Flow)  <br/> Inbound campaign configuration <br/> Enabling Notificaion API <br/> Postback URL |
 |**Analytics/Insights**|  Custom queries <br/> Goals <br/>  Custom dashboards |
 | **Channels and Integration** | All the Channels and integrations (except **WhatsApp**) |
 | **Chat widget** | Chat widget settings |

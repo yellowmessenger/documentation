@@ -20,7 +20,7 @@ With the Engage module, admins can build and execute marketing campaigns by targ
 ## 1. Types of engagement
 The following are the different types of campaigns Yellow.ai supports.
 
-### 1.1 Outbound engagement
+### 1.1 Outbound campaign
 
 Outbound engagement is a type of campaign that help brands reach out to their customers proactively. You can send out outgoing messages to your end consumers for promotional and transactional objectives.
 
@@ -28,7 +28,7 @@ Outbound engagement is a type of campaign that help brands reach out to their cu
 * Personal high-context email notifications for **transactional updates**. For example, appointment reminders, email confirmation, OTP, and password change notifications.
 
 
-You can run an outbound campaign in multiple channels such as Email, SMS, WhatsApp, FB Messenger, Viber, and Slack.
+You can send an outbound campaign through multiple channels such as Email, SMS, WhatsApp, FB Messenger, Viber, and Slack. [Know more](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/overview).
 
 :::note
 The campaigns on messaging channels such as *FB Messenger* will be in the form of notifications.
@@ -51,7 +51,7 @@ With Workflow campaigns,  you can configure multiple channels and add fallbacks 
 :::
 
 
-### 1.3 Inbound Engagement
+### 1.3 Inbound campaign
 
 Inbound engagement is carried out when customers visit the brand's website to explore the product or service offerings. Inbound engagement helps in converting casual visitors into prospective leads or buyers.
 
@@ -61,10 +61,13 @@ To know about Inbound engagement in detail, see [this article](https://docs.yell
 
 
 ## 2. Access Engage module
+
+:::note
 There are two user roles for Engage module. 
 
 * **Engagement admin**:  Authorised to send campaigns and create audience groups.
 * **Engagement user**: Can only schedule campaigns.
+:::
 
 To access Engage, follow these steps -
 1. Login to https://cloud.yellow.ai  and go to your bot.  

@@ -26,9 +26,11 @@ info:
 
    ## Generate API Keys
 
-    > Only super admin of the bot will have access to generate API keys.
 
     API keys act as secure passcodes, granting authorized access to specific functionalities or resources within a system. They serve as an additional layer of protection, safeguarding sensitive data and ensuring that only authenticated users or applications can interact with the API.
+    
+    * Only Admins and Super Admins of the bot can create API keys with different roles.
+    * Key creators or Super Admins can delete keys. Super admin can delete any key, regardless of the creator.
 
 
     To generate an API key, follow these steps:

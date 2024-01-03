@@ -3,6 +3,20 @@ title : Add or update user properties from bot conversations
 sidebar_label : Add/update user properties from bot conversations
 ---
 
+## Auto-capturing of location-specific user properties 
+
+
+The system can automatically capture essential user details based on the user's location for both Web and WhatsApp bots.
+
+Channel | User properties captured | Additional details
+--------- | --------------------- | ----------
+WhatsApp bot | Phone number, Country code | Captures `country` using the country code in phone number. However, the system may not capture the user's name in all cases, as the user might not have provided it, or the name might contain numbers or special characters that fail validation for the `firstName` and `lastName` properties.
+Web bot | Timezone and country code | Uses IP address to capture these details.
+
+:::note
+This is currently supported for web, and WhatsApp bots.
+:::
+
 <!--
 ## Store `userId` from bot conversation
 
@@ -59,7 +73,9 @@ Alternatively, you can also use the Variable node (under Actions) to store a spe
 -->
 
 
-## Store user properties 
+## Different ways to add/update user properties
+
+There are four different ways in which you can capture user properties:
 
 ### Store user properties from bot conversations
 
@@ -199,16 +215,3 @@ To update existing user properties:
  
 ***
 
-## Automated capturing of location-specific user properties 
-
-
-The following are the auto-captured details for Web and WhatsApp bots.
-
-Channel | User properties captured | Additional details
---------- | --------------------- | ----------
-WhatsApp bot | Phone number, Country code | Captures `country` using the country code in phone number. However, the system may not capture the user's name in all cases, as the user might not have provided it, or the name might contain numbers or special characters that fail validation for the `firstName` and `lastName` properties.
-Web bot | Timezone and country code | Uses IP address to capture these details.
-
-:::note
-This is currently supported for web, and WhatsApp bots.
-:::

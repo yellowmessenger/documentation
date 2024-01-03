@@ -5,7 +5,8 @@ tags: [bot token, get bot token, bot access token, access token, x-auth-token, b
 ---
 
 :::note
-Only super admin and admins of the bot will have access to generate API keys.
+* Admins and super admins of the bot can generate API keys.
+* A Super Admin can delete any API key, while an admin can delete only the key(s) they have personally created.
 :::
 
 API keys act as secure passcodes, granting authorized access to specific functionalities or resources within a system. They serve as an additional layer of protection, safeguarding sensitive data and ensuring that only authenticated users or applications can interact with the API.
@@ -37,4 +38,5 @@ To generate an API key, follow these steps:
 
 **What's next?**
 
-* Use the generated API key in [Notification API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine) or other development use cases.
+* You can use the generated key to authenticate Platform APIs, including the [Notification API](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine). Pass the API key in the header as `x-api-key`.
+

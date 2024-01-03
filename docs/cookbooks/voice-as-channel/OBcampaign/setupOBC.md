@@ -35,7 +35,7 @@ To get started, follow the steps below:
 
 | Entry rule | Trigger | 
 | -------- | -------- | 
-| [User events](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-events)     | Select this to trigger the flow when a specific user event occurs.     |
+| [User events](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-events)  | Select this to trigger the flow when a specific user event occurs.     |
 |[User entered a segment](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-entered-a-segment) | Select this to trigger the campaign when the user enters a specific segment. | 
 |[User exited a segment](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-exited-a-segment) | Select this to trigger the campaign when the user exits a specific segment. | 
 |[User present in a segment](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-present-in-a-segment)| Select this to trigger the campaign only when the user is in a specific segment. |

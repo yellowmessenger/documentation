@@ -367,6 +367,7 @@ module.exports = {
             "platform_concepts/inbox/chats/chatscreen",
             "platform_concepts/inbox/chats/genai",
             "platform_concepts/inbox/chats/internal-ticket",
+            "platform_concepts/inbox/chats/chattoemail",
             "platform_concepts/inbox/chats/agentassistbot",
             "platform_concepts/inbox/chats/customview",
             "platform_concepts/inbox/chats/chatsearch",
@@ -903,10 +904,10 @@ module.exports = {
               link: {type: 'doc', id: 'platform_concepts/channelConfiguration/instagram'},
               collapsed: true,
               items: [
-            "platform_concepts/channelConfiguration/instagram-limitations",
             "platform_concepts/channelConfiguration/instagram-faqs",
               ]},
             "platform_concepts/channelConfiguration/line", 
+            "platform_concepts/channelConfiguration/lazada",
             "platform_concepts/channelConfiguration/teams", 
             "platform_concepts/channelConfiguration/slack2",
             {

@@ -66,20 +66,24 @@ Export is supported only in JSON (and WAV for voice bot data) format.
 ![](https://i.imgur.com/Jji2bmd.png)
 
 
+
 #### 5. Choose the destination of data export 
 
 :::info
-- Currently, data can be exported to **Amazon S3, Azure Blob, or SFTP server** only. 
+- Currently, data can be exported to **Amazon S3, Azure Blob, SFTP server** or **Google cloud storage** only. 
 - You can select only one external destination in one export rule. 
-- Write permission/privilege to the storage system(S3/blob/SFTP) is mandatory.
-- Credentials are encrypted and stored securely in yellow.ai systems.
+- Write permission/privilege to the storage system(S3/blob/SFTP/GCP) is mandatory.
+- Credentials are encrypted and stored securely in Yellow.ai systems.
 :::
 
 - Choose an export destination: 
     - Connect with **Amazon S3** by providing **Bucket name, Access Key, and Secret Key**.
     - Connect with **Azure Blob** by providing **Container Name and Connection String**.
     - Connect with **STPT server** by providing **Host name, Port, Username, Password and Path**. 
+    - Connect with **Google cloud storage** by providing **Bucket name, Private Key, and Client email**.
 - Click **Connect** and **Next**. 
+
+![image](https://imgur.com/yibkjl7.png)
 
 -------
 

@@ -96,19 +96,14 @@ Avoid navigating to other tabs on cloud platform while waiting for calls. You ca
 
 **Verifying microphone for talking on calls**:
 
-1. To ensure microphone is enabled, locate the lock icon or secure indicator in the address bar, usually positioned to the left of the website's URL.
-
-   ![image](https://imgur.com/14lS9Ir.png)
-
-(or)
-
+1. To ensure microphone is enabled, locate the lock icon or secure indicator in the address bar, usually positioned to the left of the website's URL.     
+(or)    
 2. If you observe a green lock icon or a padlock labeled **Secure**, click on it. If you see an info (i) icon, click on it. Access **View site settings** in the dropdown or popup menu that appears.
-
-   <img  src="https://imgur.com/pM0zbkj.png"  width="40%"/> 
-
 3. In the site settings, find the **Microphone** option under **Permissions** or **Site settings**. Check the displayed status:
     - **Ask (default)** or **Blocked** means the website hasn't been granted microphone access. Chrome will prompt you when you attempt to use the microphone.
     - **Allow** or **Blocked** indicates the current microphone access status. **Allow** means access is granted, while **Blocked** means it's denied.
+
+![image](https://imgur.com/PTsPgq4.png)
 
 :::
 
@@ -117,7 +112,7 @@ Avoid navigating to other tabs on cloud platform while waiting for calls. You ca
 
 Upon receiving a new call, a notification will prompt you to either **accept** or **decline** the call in the top right corner. Accepting initiates the conversation with the customer, marking the ticket status as **Assigned**. If unavailable, declining transfers the ticket to another available agent.
 
-   ![image](https://imgur.com/hs31REu.png)
+   ![image](https://imgur.com/ssM2QYJ.png)
 
 ### View assigned call
 
@@ -148,13 +143,13 @@ The voice call status transitions as follows: **Assigned > Wrap up > Resolved**.
 
 - **Wrap up call**: Hanging up a call shifts the ticket status from assigned to wrap up. This is a transition state before resolving where an agent can add more details collected during the conversation to the ticket. Once all the details are captured, you can proceed to close the ticket.
 
-    ![image](https://imgur.com/0RIP7NW.png)
+    ![image](https://imgur.com/Oq2uYdM.png)
 
 - **Resolve voice ticket**: After capturing details, you can click on the **Resolve** button to close the ticket. Once the call is resolved, new voice tickets can be assigned to you.
 
-    ![image](https://imgur.com/stEfE9s.png)
+    ![image](https://imgur.com/qK3HzQU.png)
 
-    ![image](https://imgur.com/vhknDaf.png)
+    ![image](https://imgur.com/mozdkh1.png)
 
 ---
 
