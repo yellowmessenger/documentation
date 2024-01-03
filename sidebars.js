@@ -270,18 +270,23 @@ module.exports = {
         
         {
           type: "category",
-          label: "Fetch data via API",
-          collapsed: true,
-          items: [
+           label: "Integrate APIs in Studio",
+           collapsed: true,
+           items: [
+           {
+            type: "category",
+           label: "Add APIs",
+           collapsed: true,
+           items: [
             "platform_concepts/studio/api/add-api",
             "platform_concepts/studio/api/add-api-apinode",
-            "platform_concepts/studio/api/send-data",
-            "platform_concepts/studio/api/receive-data",
-            "platform_concepts/studio/api/enviroment-variables",
+           ],
+          },
+            "platform_concepts/studio/api/send-receive-apiresponses",
             "platform_concepts/studio/api/bearer-token",
            // "platform_concepts/studio/api/transformation-function",
             "platform_concepts/studio/api/api-settings",
-            "cookbooks/studio/downloadapilogs",
+            "platform_concepts/studio/api/download-logs",
 
           ],
         },
