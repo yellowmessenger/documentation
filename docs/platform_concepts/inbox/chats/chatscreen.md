@@ -264,7 +264,7 @@ The following details are available on this screen to provide agents with more c
 ||Internal notes|Agents can add a note regarding the conversation or Internal notes are updated here|
 ||Custom fields| Inbox provides custom fields to fetch more insights from the customer. Configure and arrange the required custom fields. Learn [more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields)|
 |Collaborators| | <img src="https://hackmd.io/_uploads/HkB5IUNA3.png" alt="drawing" width="60%"/><br/>More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu|
-| Activity log| | <img src="https://hackmd.io/_uploads/HyyGnrN02.png" width="70%"/> <br/> Click **View recent activity** to gain a comprehensive understanding of customer activity |
+| Activity log| | <img src="https://imgur.com/sMf9Wb3.png" width="70%"/> <br/> Click **View recent activity** to gain a comprehensive understanding of customer activity |
 |Website activity||<img src="https://hackmd.io/_uploads/BJRrt8ECh.png" alt="drawing" width="70%"/> <br/> This includes links to the URLs that your customer previously visited|
 |Device details| |<img src="https://hackmd.io/_uploads/r1IuF8ERn.png" alt="drawing" width="70%"/> <br/>Details about the user device that the bot tracks |
 

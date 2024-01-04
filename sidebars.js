@@ -148,6 +148,7 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/getting-started'},
       collapsed: true,
       items: [
+      "platform_concepts/Getting Started/oauth",
       "platform_concepts/Getting Started/account-setup",
       "platform_concepts/Getting Started/user-account-settings", 
       
