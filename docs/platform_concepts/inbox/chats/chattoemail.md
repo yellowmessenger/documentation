@@ -17,7 +17,7 @@ By addessing the live chat an agent can convert the same query to an email ticke
 
 ### For L1 agent addressing live chat
 
-On the Inbox > **chat screen**, follow these steps:
+On the Inbox > **Chat** screen, follow these steps:
 
 1. Click **Create a ticket**.
     ![image](https://imgur.com/4cwvOfe.png)
@@ -48,7 +48,7 @@ On the Inbox > **chat screen**, follow these steps:
 
 ### For L2 agent addressing email ticket
 
-On the Inbox > **email screen**:
+On the Inbox > **Tickets** screen:
 
 - A new ticket is created from the conversation that happened with the L1 agent, along with the Chat ID (which redirects to the chat transcript). This ticket is assigned to an L2 agent who can further analyze the ticket.
     ![image](https://imgur.com/QRrP2ep.png)
