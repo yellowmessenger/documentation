@@ -165,6 +165,84 @@ Text to speech | Enable this option to allow the bot to respond to the user's qu
 
 ***
 
+### Configure navigation options for the Chat Widget
+
+You can enhance your users' chat experience with the addition of the Home or Menu option on the chat widget. This enables access to key features with a simple tap, making navigation and interactions smoother.
+
+<img src="https://i.imgur.com/l7HxiXu.png" alt="drawing" width="90%"/>
+
+#### Home navigation option
+
+By default, this option is displayed in the widget. This allows users to refresh the entire bot conversation with a simple tap.
+
+#### Menu navigation option
+
+This option allows you to add a menu element in the chat widget. It allows the users to open the menu at any point during the conversation. You can **add up to 10 items** to the menu, which can include one or more of the following menu option types:
+1. [Execute flow](#1-execute-flow): This option allows you to execute a specific flow within the bot conversation.
+2. [Open URL](#2-open-url): This option allows you to add links in the menu that can navigate to a specified URL.
+3. [Send event](#3-send-event): This option allows you to trigger a specific event within the bot conversation when the option is clicked.
+
+To add a menu, follow these steps:
+
+1. In *User navigation*, select **Menu**.
+2. In *Option name*, enter the name of the option to be displayed on the menu list.
+3. In *Prefix icon*, add the image link that should be added as a prefix for that option.
+4. Select your preferred type of menu options:
+   a. Execute Flow: Execute a specific flow within the bot conversation.
+   b. URL: Add links in the menu that can navigate to a specified URL.
+   c. Send Event: Trigger a specific event within the bot conversation.
+6. To add another option, click on **+Add option** and follow the steps mentioned above. You can have different menu types for each option.
+7. Click **Save changes** to save your menu.
+
+<img src="https://i.imgur.com/UAhlc0b.png" alt="drawing" width="60%"/>
+
+
+#### Configure menu types
+
+##### 1. Execute flow
+
+To add an Execute flow option to the menu, follow these steps:
+
+1. Enter the name of the option.
+2. Add the image link that should be displayed as a prefix for that option.
+3. Select the option type as **Execute flow**. A list of flows configured for the respective bot will be displayed.
+4. Choose the specific flow that you want to trigger for this option.
+5. Click **Save changes** to save the changes. 
+
+<img src="https://i.imgur.com/e1LKhvX.png" alt="drawing" width="60%"/>
+
+![](https://i.imgur.com/0zXqSxv.png)
+
+##### 2. Open URL 
+
+To add an Open URL option to the menu, follow these steps:
+
+1. Enter the name of the option.
+2. Add the image link that should be added as a prefix for that option.
+3. Select the option type as **Open URL**. 
+4. Enter the URL to which users should be redirected.
+5. Set the message to be sent in the chat on opening the URL. This field is optional.
+6. Click **Save changes** to save the changes.
+
+<img src="https://i.imgur.com/82hep5y.png" alt="drawing" width="60%"/>
+
+<img src="https://i.imgur.com/AGxBIQm.png" alt="drawing" width="80%"/>
+
+##### 3. Send Event 
+
+To add an Open URL option to the menu, follow these steps:
+
+1. Enter the name of the option.
+2. Add the image link that should be added as a prefix for that option.
+3. Select the option type as **Send Event**.
+4. Enter the name of the event.
+5. Enter the data that you have to send realted to event.
+6. Click **Save changes** to save the changes.
+
+<img src="https://i.imgur.com/Lc8HqsE.png" alt="drawing" width="60%"/>
+
+***
+
 ### Preview chat widget 
 
 As you design the bot, you can preview the changes in real time in the **Preview Screen** tab before you save it. When you choose colors, the chat preview updates automatically so that you can see what your widget will look like.
@@ -269,3 +347,15 @@ To access mobile SDKs help doc links, follow these steps.
 
 2. To preview your PWA bot on the platform itself, click on <img src="https://i.imgur.com/RG1RUmC.png)" alt="drawing" width="10%"/>. 
 3. Copy the link by clicking on <img src="https://i.imgur.com/dv3k6vh.png)" alt="drawing" width="10%"/>. You can share the PWA live bot link directly with your users or you can embed it on your website.
+
+## Publish widget styling
+
+You can publish only the configuration changes made in the Chat Widget setup from lower to higher environments. This includes settings for the Widget panel, Bot Icon, and all the settings.
+
+This feature is available for bots under the T3 subscription plan, specifically those with Sandbox > Staging > Production environments. It does not apply to T1 and T2 bots with Dev > Live environments.
+
+:::note
+For security reasons, the Domain Whitelisting section will not be published. However, you can easily update this section in the respective environments as needed.
+:::
+
+![](https://i.imgur.com/vcMR7AF.png)
