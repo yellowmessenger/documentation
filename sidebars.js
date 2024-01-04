@@ -1033,6 +1033,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/sunshine",
         "platform_concepts/channelConfiguration/shopee",
+        "platform_concepts/channelConfiguration/tokopedia",
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },
