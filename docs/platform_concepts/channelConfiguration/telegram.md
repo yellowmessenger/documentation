@@ -76,7 +76,7 @@ To connect the Telegram channel on the Yellow.ai platform, follow these steps:
    
    ![](https://i.imgur.com/PJ2dMuX.png)
 
-3. Your Telegram channel will be successfully connected.
+* Your Telegram channel will be successfully connected.
 
 ## Setup your bot
 

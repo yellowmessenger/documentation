@@ -9,7 +9,7 @@ You can also promote your products and services, engage with customers by respon
 
 The following are key features of this integration:
 
-* **Automated Replies**: Bot can automate responses to direct messages, comment or private replies, story mentions, story replies, and media share. An [event](#supp) is sent to the bot for each of these actions, such as comments, private replies, story mentions, story replies, and media shares.
+* **Automated Replies**: Bot can automate responses to direct messages, comment or private replies, story mentions, story replies, and media share. An [event](#supported-instagram-events) is sent to the bot for each of these actions, such as comments, private replies, story mentions, story replies, and media shares.
 * **Supported message types**: You can use various message types including text, image, carousel, and quick replies, enhancing the communication experience.
 
 These features help you engage with your audience on Instagram and provide a more interactive and responsive experience.
