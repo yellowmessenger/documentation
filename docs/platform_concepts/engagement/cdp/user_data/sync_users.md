@@ -18,11 +18,22 @@ To sync data from an SFTP integration:
 
    <img src="https://i.imgur.com/EFxRnsW.png" width=""/>
 
-4. **Select folder**: Add your SFTP folder path where the file with user details are available. You can also Preview the file to verify if accurate data is selected.
+4. **Select folder**: This will display the folders available in the SFTP. Choose the SFTP folder where the file with user details is located.
 
    <img src="https://i.imgur.com/dD72ZA4.png"/>
 
-5. **Map properties**: Map each prooperty with the relevant CSV header.
+5. **Map properties**: In **User ID**, choose the column that contains userId and also map other prooperties with the relevant CSV header.
+   
+   <img src="https://i.imgur.com/qDdDR6c.png"/>
+
 6. **Resolve conflicts**: Address any conflicts arising during the import and resolve discrepancies to maintain data precision.
-7. **Schedule import**: Schedule imports based on your preferred timeline. Set up recurring imports for ongoing synchronization.
+   
+   <img src="https://i.imgur.com/JTtHM9X.png"/>
+
+7. **Schedule import**: You will see options to schedule import for different frequencies. Here's an explanation of each option:
+
+   a. One-time import: Allows you to perform an immediate import (Now) or schedule it for a specific date and time.
+   b. Recurring import: Allows scheduling on a Daily, Weekly, or Monthly basis.
+   c. Custom import: Provides advanced scheduling options using the cron expression. 
+
 
