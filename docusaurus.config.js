@@ -120,9 +120,13 @@ module.exports = {
           routeBasePath: "/api",
         },
         googleAnalytics: {
-          // trackingID: "UA-135959729-1",
-          trackingID: "UA-159942894-1",
+          // trackingID: "UA-159942894-1",
+          trackingID: "G-NDQJKXFGTV",
         },
+          gtag: {
+            trackingID: 'G-NDQJKXFGTV',
+            anonymizeIP: true,
+          },
         theme: {
           customCss: require.resolve("./src/css/custom.module.css"),
         },

@@ -140,4 +140,12 @@ You cannot update a userId once captured. If you try to capture a new userId in 
 You can update existing user properties by identifying the user and recapturing the user properties that you would like to update. However, you cannot update the userId. For more details, see [Store conversational data in User360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#update-user-properties-through-bot-conversations)
 </details>
 
+<details>
+<summary>What does the error "Bot-specific issue, the bot is in an older backend" mean when accessing the User Identification Flow?</summary>
+
+This error indicates that the bot you are attempting to access is associated with an older backend, causing compatibility issues with the User Identification Flow.
+
+ Please reach out to our support team to assist you in upgrading the backend of your bot to resolve this issue.
+
+</details>
 
