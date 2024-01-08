@@ -1,11 +1,9 @@
 ---
-title: OAuth integration guide 
-sidebar_label: OAuth sign in
+title: Single sign-on with OAuth for for Cloud Platform
+sidebar_label: Cloud SSO with OAuth
 ---
 
-## Sign-in introduction
-
-### SSO with OAuth in yellow.ai
+## Overview
 
 Oauth is an authentication protocol which supports Single Sign-On (SSO) that streamline user access across various applications within an organization. SSO with OAuth enables your users to access the yellow.ai platform using their existing application login credentials, eliminating the need to re-enter them. It enhances security by enabling secure third-party access to user data without exposing login details, providing a seamless and efficient authentication process. Benefits of signing in through OAuth:
 *  Eliminates the need for direct sharing of login credentials, enhancing security.
@@ -47,7 +45,7 @@ Oauth is an authentication protocol which supports Single Sign-On (SSO) that str
 
 To configure OAuth, follow the steps below:
 
-### Step 1: Set Up OAuth in your identity provider (IDP)
+### Step 1: Set Up OAuth in IDP
 
 Ensure the your Identity Provider (IDP) supports OAuth. 
 
@@ -76,7 +74,7 @@ If your identity provider isn't configured in yellow.ai for SSO, share OAuth det
 
 
 
-### Step 2: **Share OAuth setup details with Yellow.ai**
+### Step 2: Share OAuth setup details
 
 Once you have set up your IDP, share the following details (fetched from your identity provider) with our support team at support@yellow.ai:
 
@@ -104,7 +102,7 @@ After verifying your details, SSO will be enabled for your domain by the yellow.
 3. You will be redirected to the third-party tool, where you can log in using its credentials to log in to the Yellow platform.
     ![image](https://imgur.com/aUpX9WM.png)
 
-### Step 4: Create your bot and copy the bot ID
+### Step 4: Create your bot
 
 Once OAuth is enabled, [create a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot). In the URL, locate and copy the botId (separate for live/production). This botId is required for providing access and assigning roles.
 
@@ -113,7 +111,7 @@ Once OAuth is enabled, [create a bot](https://docs.yellow.ai/docs/platform_conce
 
 ----
 
-## Enable role-based OAuth access on yellow.ai platform
+## Role-based access through OAuth
 
 Yellow.ai platform supports various user roles, such as developer, agent and admins. You can configure different roles within your OAuth app and assign users to each role as per your requirement. 
 
@@ -121,7 +119,7 @@ To enable role-based access for your OAuth set-up, follow these steps:
 
 > Prerequisite: Configure OAuth sign-in and fetch your bot ID. 
 
-### Step 1: Add user roles in your identity provider app
+### Step 1: Add user roles in IDP
 
 
 Add roles in your respective identity provider app. Following are the **supported user roles** in the yellow.ai platform:
@@ -161,7 +159,7 @@ Learn more about other user roles [here](https://docs.yellow.ai/docs/platform_co
 
 :::
 
-### Step 2: Assign users to user roles
+### Step 2: Assign users to roles in IDP
 
 Once the roles are added to your IDP, you can assign users to each role. Steps to add user roles differ for each identity provider, follow the steps mentioned by the provider itself. For example, [this guide is for Microsoft AzureAD](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps).
 
@@ -177,7 +175,7 @@ If your identity provider isn't configured in yellow.ai for SSO, share OAuth det
 :::
 
 
-### Step 3: Share user role details with the yellow.ai team
+### Step 3: Share user role details with yellow.ai
 
 Share the following information with the support team at support@yellow.ai:
     
