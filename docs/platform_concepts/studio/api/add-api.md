@@ -7,7 +7,7 @@ In addition to the various integrations supported by Yellow.ai, you can seamless
 
 ## Add a new API
 
-Follow the steps outlined below to add a new API and the necessary components for that specific API.
+There are two ways by which you can add API:
 
 * [Add API manually](#add-api-manually)
 * [Import APIs](#import-apis-from-a-json-file)
