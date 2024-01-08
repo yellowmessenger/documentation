@@ -148,7 +148,6 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/getting-started'},
       collapsed: true,
       items: [
-      "platform_concepts/Getting Started/oauth",
       "platform_concepts/Getting Started/account-setup",
       "platform_concepts/Getting Started/user-account-settings", 
       
@@ -160,6 +159,7 @@ module.exports = {
       "platform_concepts/Getting Started/keyboard-shortcuts",
       "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/platform-offerings",
+      "platform_concepts/Getting Started/oauth",
       ]
     },
 
