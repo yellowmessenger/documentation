@@ -42,9 +42,66 @@ You can parse an API response as you recieve it and display only the required in
 
 For example, to extract only the weather description from the following API response you can write a custom logic as mentioned below.
 
-| **API Response** | **Custom Logic** |
-|-------------------|-------------------|
-{<br/>"coord":<br/> {<br/> "lon": 80.2785,<br/>"lat": 13.0878<br/>},<br/> "weather": [<br/>{<br/>"id": 721,<br/>"main": "Haze",<br/>"description": "haze",<br/>"icon": "50d"<br/>}<br/>],<br/>"base": "stations",<br/>"main": {<br/>"temp": 304.14,<br/>"feels_like": 310.72,<br/>"temp_min": 304.14,<br/>"temp_max": 304.14,<br/>"pressure": 1004,<br/>"humidity": 70<br/>},<br/>"visibility": 5000,<br/>"wind": {<br/>"speed": 4.12,<br/>"deg": 240<br/>},<br/>"clouds": {<br/>"all": 75<br/>},<br/>"dt": 1701769926,<br/>"sys":<br/>{<br/>"type": 1,<br/>"id": 9218,<br/>"country": "IN",<br/>"sunrise": 1701737256,<br/>"sunset": 1701778274<br/>},<br/>"timezone": 19800,<br/>"id": 1264527,<br/>"name": "Chennai",<br/>"cod": 200<br/>}<br/>|return new Promise(resolve => {<br/>let  apiResponse = ymLib.args.apiResponse; // fetch API response<br/>let  body;<br/>if(apiResponse && apiResponse.body);<br/>{<br/>body = JSON.parse(apiResponse.body) // parse API response and store it in body variable<br/>};<br/>resolve(body);<br/>});<br/>
+**API Response:**
+
+```
+{
+  "coord": {
+    "lon": 80.2785,
+    "lat": 13.0878
+  },
+  "weather": [
+    {
+      "id": 721,
+      "main": "Haze",
+      "description": "haze",
+      "icon": "50d"
+    }
+  ],
+  "base": "stations",
+  "main": {
+    "temp": 304.14,
+    "feels_like": 310.72,
+    "temp_min": 304.14,
+    "temp_max": 304.14,
+    "pressure": 1004,
+    "humidity": 70
+  },
+  "visibility": 5000,
+  "wind": {
+    "speed": 4.12,
+    "deg": 240
+  },
+  "clouds": {
+    "all": 75
+  },
+  "dt": 1701769926,
+  "sys": {
+    "type": 1,
+    "id": 9218,
+    "country": "IN",
+    "sunrise": 1701737256,
+    "sunset": 1701778274
+  },
+  "timezone": 19800,
+  "id": 1264527,
+  "name": "Chennai",
+  "cod": 200
+}
+```
+
+**Custom Logic:**
+```
+return new Promise(resolve => {
+  let apiResponse = ymLib.args.apiResponse; // fetch API response
+  let body;
+  if (apiResponse && apiResponse.body) {
+    body = JSON.parse(apiResponse.body); // parse API response and store it in the body variable
+  }
+  resolve(body);
+});
+
+```
 
 3. Go back to the API node and click **Test response**.
 
@@ -75,9 +132,69 @@ You can also parse an API response via Function node by passing the function in 
 
 For example, to extract only the weather description and temperature from the following API response you can write a custom logic as mentioned below.
 
-| **API Response**  | **Custom Logic** |
-|---------------------------------------------|-------------------|
-{<br/>"coord":<br/> {<br/> "lon": 80.2785,<br/>"lat": 13.0878<br/>},<br/> "weather": [<br/>{<br/>"id": 721,<br/>"main": "Haze",<br/>"description": "haze",<br/>"icon": "50d"<br/>}<br/>],<br/>"base": "stations",<br/>"main": {<br/>"temp": 304.14,<br/>"feels_like": 310.72,<br/>"temp_min": 304.14,<br/>"temp_max": 304.14,<br/>"pressure": 1004,<br/>"humidity": 70<br/>},<br/>"visibility": 5000,<br/>"wind": {<br/>"speed": 4.12,<br/>"deg": 240<br/>},<br/>"clouds": {<br/>"all": 75<br/>},<br/>"dt": 1701769926,<br/>"sys":<br/>{<br/>"type": 1,<br/>"id": 9218,<br/>"country": "IN",<br/>"sunrise": 1701737256,<br/>"sunset": 1701778274<br/>},<br/>"timezone": 19800,<br/>"id": 1264527,<br/>"name": "Chennai",<br/>"cod": 200<br/>}<br/>| return new Promise(resolve => {<br/>let weatherResponse = data.variables.weather_response;<br/>let weatherDescription = weatherResponse.weather[0].description;<br/>let temperature = weatherResponse.main.temp;<br/>let output = {<br/>weatherDescription: weatherDescription,<br/>temperature: temperature<br/>};<br/>resolve(output);<br/>});<br/>
+**API Response:**
+
+```
+{
+"coord":
+{
+"lon": 80.2785,
+"lat": 13.0878
+},
+"weather": [
+{
+"id": 721,
+"main": "Haze",
+"description": "haze",
+"icon": "50d"
+}
+],
+"base": "stations",
+"main": {
+"temp": 304.14,
+"feels_like": 310.72,
+"temp_min": 304.14,
+"temp_max": 304.14,
+"pressure": 1004,
+"humidity": 70
+},
+"visibility": 5000,
+"wind": {
+"speed": 4.12,
+"deg": 240
+},
+"clouds": {
+"all": 75
+},
+"dt": 1701769926,
+"sys":
+{
+"type": 1,
+"id": 9218,
+"country": "IN",
+"sunrise": 1701737256,
+"sunset": 1701778274
+},
+"timezone": 19800,
+"id": 1264527,
+"name": "Chennai",
+"cod": 200
+}
+```
+**Custom Logic:**
+
+```
+return new Promise(resolve => {
+let weatherResponse = data.variables.weather_response;
+let weatherDescription = weatherResponse.weather[0].description;
+let temperature = weatherResponse.main.temp;
+let output = {
+weatherDescription: weatherDescription,
+temperature: temperature
+};
+resolve(output);
+});
+```
                                           
 2. Go to **Studio** > **Build** > to the respective flow and [store the response of this API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
 3. Add a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) to the flow and pass the function you created in step 1. [Store the response of this function node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) depending on its data type.
