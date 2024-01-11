@@ -36,13 +36,10 @@ The following are the character limits for Quick Reply (QR) options:
 |---------------------|-----------------|
 | Options  | There is no limit on the number of options in multi-select. <br/> ![](https://i.imgur.com/1FYME6a.png) |
 | Characters | There is no limit on the number of characters used in each option. <br/> ![](https://i.imgur.com/vftSXEI.png)|
-
  
 * **File upload:** The maximum file size is 20 MB.
 
-![](https://i.imgur.com/5IDxuam.jpg)
-
- 
+<img src="https://i.imgur.com/CxhZiKZ.png" alt="drawing" width="40%"/>
  
 
 
