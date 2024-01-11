@@ -158,20 +158,20 @@ If you have added multiple accounts in your platform, enable events for each of 
 
 | Field name | Sample value | Data type |Description
 | -------- | -------- | -------- |-----|
-|Live chat agent| -|-| Choose **Genesys PureCloud Live agent** in teh drop down|
+|Live chat agent| -|-| Choose **Genesys PureCloud Live agent** in the drop down|
 |Account name| account1| String| Choose the Genesys account to which the chats should be transferred|
 |Message after ticket assignment|Requesting live agent connection.|String| The message that will be displayed to the end user after a ticket is successfully assigned to an agent|
 |Name| Rajesh|String|Name of the end user|
 |Mobile| 9876543210| String|Mobile number of the end user|
 Email|test@gmail.com|String|Email address of the end user. This is a mandatory field|
 Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
-Priority|MEDIUM|String|The priority of the ticket|
+|Priority|MEDIUM|String|The priority of the ticket|
 
 You can enable **Advanced Options** to access the advanced features of this node.
 
 <img src="https://i.imgur.com/tPS9R0J.png" alt="drawing" width="50%"/>
 
-4. Once you have set up the flow, chats will get automatically forwarded to live agents on Service now live chat when this flow gets triggered.
+4. Once you have set up the flow, chats will get automatically forwarded to live agents on Genesys live chat when this flow gets triggered.
 
 **Result:**
 

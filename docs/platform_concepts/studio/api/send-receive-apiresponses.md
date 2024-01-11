@@ -24,6 +24,32 @@ The [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-
 6. Store the API response in a variable for future use. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response) for the steps.
 7. Display the API response to the end user by following the steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response).
 
+### Sending diverse data forms through API
+
+When sending a request to an API through Yellow.ai, there are versatile methods for passing data. You can transmit images by converting them into base64 URLs, and directly pass arrays or object variables in JSON format.
+
+#### Use base64 URL conversion for files
+
+When dealing with tasks like uploading images, videos, or various file formats, the conversion of images into a readable string is a practical approach. This string, generated through Base64 encoding, facilitates easy transfer and utilization across different platforms.
+
+Use the following code inside a body/params:
+
+| Pass URL  | Format |
+|-- | --|
+Directly | $$tobase64{url}
+Through variable | $$tobase64{{{{url}}}
+
+   ![](https://i.imgur.com/SRHt8OM.png)
+   
+#### Pass Array/Object variable in JSON
+
+You need to pass the JSON file or the details to be entered as an array/object.
+
+For instance, as shown in the screenshot below, **Details_1** can alternatively be represented as **Details_2** by storing array details in the array_details variable.
+
+   ![](https://i.imgur.com/41MaV4r.png)
+
+
 ## Parse API responses
    
 Yellow.ai provides an option to parse the API responses you recieve. To parse an API repsonse you need to write a custom logic that filters out the necessary data from your response. Then using a message node you can display that to the end-user. 
