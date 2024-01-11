@@ -58,6 +58,15 @@ if (userIsAuthenticated) {
   </div>
 </details>
 
+<details>
+<summary>Can we change the color scheme of the chat header gradient from top to bottom?</summary>
+<div>
+ <br/>
+ <div>The gradient is intentionally applied from left to right for readability reasons. Applying the gradient from top to bottom might make it challenging to read the text (title & description) due to multiple colors. This design decision ensures optimal visibility and a better user experience.
+ </div>
+  </div>
+</details>
+
 --------
 
 ## Chat widget related FAQs
