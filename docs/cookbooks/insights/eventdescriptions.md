@@ -4,6 +4,9 @@ sidebar_label : Event(DB column names) descriptions
 ---
 
 
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#2-type-of-events) to learn about events. 
+
+
 ## Bot events
 
 
@@ -70,4 +73,46 @@ sidebar_label : Event(DB column names) descriptions
 |user-initiated|Fired when a new session is created from a user message for the WhatsApp channel|
 |business-initiated|Fired when a new session is created by notification from the business side for the WhatsApp channel|
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#2-type-of-events) to learn about other events. 
+
+-----
+
+## User engagement events
+
+Following are the events tracked on the user engagement events table: 
+
+| Event                   | Description                                                                                                         | Produced by                    | Queue (Kafka)                   | Destination (Druid) - userEvents |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------------|-----------------------------------|
+| unidentified-utterance  | Fired when a user message is not understood by the Bot                                                            | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| agent-transfer          | Fired when a chat conversation is transferred to a live agent                                                       | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| feedback                | Fired when a user gives feedback after completing the chat                                                         | Data Service                   | druid-bot-user-queue             | Druid - userEvents, ES - feedbacks|
+| first-message           | Fired when a new profile of a user is created                                                                     | Data Service                   | druid-bot-user-queue             | userEvents                         |
+| first-message-bid       | Fired when a user profile is updated with the bid for the first time                                                | Data Service                   | druid-bot-user-queue             | userEvents                         |
+| home-button-click       | Fired when a user clicks on the home button in the chat widget                                                       | Controller                     | druid-bot-user-queue             | userEvents                         |
+| journey-started         | Fired when a journey starts for the user                                                                            | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| journey-completed       | Fired when a journey gets completed for the user                                                                   | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| journey-switched        | Fired when a journey is switched by NLP System for the user due to utterance matching another journey              | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| step-expected           | Fired when a step of the journey is expected / prompt is shown to the user                                          | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| step-recorded           | Fired when input is given by the user for a step (step value is recorded) of a journey                               | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| user-visited            | Fired when a user is visiting the chat widget for the first time (chatting for the first time)                      | Plugin Service                 | druid-bot-user-queue             | userEvents                         |
+| user-revisited          | Fired when a user is revisiting the chat widget (chatting again)                                                    | Plugin Service                 | druid-bot-user-queue             | userEvents                         |
+| optin                   | Fired when a WhatsApp opt-in is added                                                                             | Data Service                   | druid-bot-user-queue             | userEvents                         |
+| optout                  | Fired when a WhatsApp opt-out is added                                                                            | Data Service                   | druid-bot-user-queue             | userEvents                         |
+| otp-sent                | Fired when an OTP sent from the bot using the platform function                                                    | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| otp-verified            | Fired when an OTP is verified from the bot using the platform function                                              | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
+| notification-received   | Fired when a notification is received on the mobile widget                                                          | Controller                     | druid-bot-user-queue             | userEvents                         |
+| new-session             | Fired when a new session is created                                                                               | Controller, whatsapp-service, executor v1 (zendesk), executor v2(zendesk) | druid-bot-user-queue | userEvents                         |
+| user-session            | Fired when a session is created based on a USER message                                                            | Controller, whatsapp-service, executor v1 (zendesk), executor v2(zendesk) | druid-bot-user-queue | userEvents                         |
+| user-initiated          | Fired when a new session is created from a user message for the WhatsApp channel                                    | whatsapp-service               | druid-bot-user-queue             | userEvents                         |
+| business-initiated      | Fired when a new session is created by notification from the business side for the WhatsApp channel               | whatsapp-service               | druid-bot-user-queue             | userEvents                         |
+
+
+**Other events**:
+
+- inbound-overlay-closebtn
+- inbound-overlay-conversion
+- inbound-overlay-impression
+- inbound-widget-closebtn
+- inbound-widget-conversion
+- inbound-widget-impression
+
+

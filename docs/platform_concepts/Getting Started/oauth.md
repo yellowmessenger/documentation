@@ -65,8 +65,10 @@ Steps to **retrieve details** from a few **common identity providers** are outli
 | **Google** |Client ID <br/> Client Secret | [Click here](https://support.google.com/cloud/answer/6158849?hl=en) <br/>  <br/> **Note**: Select **openid, userinfo.email** and **userinfo.profile under** scopes on the [Create Consent Screen](https://console.cloud.google.com/apis/credentials/consent?pli=1).| 
 | **Microsoft AzureAD** | Client ID  <br/> Client Secret <br/>  Tenant ID  <br/>Tenant Domain|  <details> <summary><strong> Click here </strong></summary><div> 1. Sign in to Azure AD. Click on App Services and select Manage Azure Active Directory. <br/> <br/> 2. In the left navigation, go to App registrations and click New registration. <br/> <br/> 3. On the registration page, provide application details. Choose web as the Redirect URI and input the redirect URLs. <br/> <br/> 4. Click Register. Azure AD will assign a unique Application ID (Client ID) to your application. Copy the Application ID and Directory ID (Tenant ID). <br/> <br/>  5. Navigate to Certificates and Secrets, click New Client Secret. Enter a description, set expiration, and click ADD. This will be your Client Secret key. </div> </details> |
 
-> Watch this video on how configure your identity provider (**Microsoft AzureAD**) and fetch details for yellow.ai SSO configuration: 
-> <iframe width="560" height="315" src="https://www.youtube.com/embed/VmhHpo5FeYI?si=CmNdYqjbtM2NJ38E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   
+Watch this video on how configure your identity provider (**Microsoft AzureAD**) and fetch details for yellow.ai SSO configuration:    
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VmhHpo5FeYI?si=CmNdYqjbtM2NJ38E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 :::note
 If your identity provider isn't configured in yellow.ai for SSO, share OAuth details directly with [yellow.ai's support team](support@yellow.ai).
@@ -181,12 +183,13 @@ Share the following information with the support team at support@yellow.ai:
     
 - **OAuth details** if the identity provider is not configured in yellow.ai for SSO.
 - **Roles or groups** created in user details (retrievable on yellow platform through the `/userinfo` endpoint). Also, share the **key** associated with passing role values. Refer to the legend below for the correct role attribute based on your identity provider:
-    | Identity Provider Type | Role Attribute |
-    | -------- | -------- |
-    | Azure Active Directory     | roles     |
-    |Okta|groups|
-    |Auth0|As configured on the identity provider (dynamic value) |
-    |Ping Identity|As configured on the identity provider (dynamic value)|
+
+| Identity Provider Type | Role Attribute |
+| -------- | -------- |
+| Azure Active Directory     | Roles     |
+|Okta| Groups|
+|Auth0|As configured on the identity provider (dynamic value) |
+|Ping Identity|As configured on the identity provider (dynamic value)|
 
 
 
