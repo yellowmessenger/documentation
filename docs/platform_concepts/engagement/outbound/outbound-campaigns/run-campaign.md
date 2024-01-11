@@ -245,7 +245,7 @@ Select this to schedule a recurring campaign.
 
   
 
-This lets you can honor DND timings, so that you can prevent users from receiving campaigns during specific periods, such as late nights.
+This lets you honor DND timings, so that you can prevent users from receiving campaigns during specific periods, such as late nights.
 
   
 

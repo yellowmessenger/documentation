@@ -359,13 +359,16 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
 
 ---------
 
-### API
+### Functions & APIs
 
 <details>
  <summary>How to get the exact status code as our API Event Data explorer while getting API responses in a journey?
 </summary>
-
  <div>
+
+
+
+
  <div>
 
  Create a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/code"> function </a> after the API call and apply the below code snippet.
@@ -378,6 +381,46 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
  <br/>
  </div>
  </details>
+
+
+
+
+<details>
+ <summary> How do we access values from an object data type in a Function?</summary>
+
+ If you've stored a date using a date picker in a variable and need to perform calculations on it, you can access the values as follows:
+
+```js
+return new Promise(resolve => {
+    // Your logic goes here
+    let userInput = data.variables.dateList;
+    console.log(userInput);
+    console.log(userInput.value.date);
+
+    let selectedDate = userInput.value.date;
+    resolve(selectedDate);
+});
+```
+
+Note: If you want to capture the date, store the response in a variable of type number. [Click here for more details](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#using-functions-in-flows).
+
+</details>
+
+
+
+<details>
+ <summary> How can I extract specific date values from a function that returns a date?
+ </summary> 
+
+To extract specific date values, you can use the following syntax:
+
+* Day: data.variables.{FunctionName}.value.day
+* Month: data.variables.{FunctionName}.value.month
+* Year: data.variables.{FunctionName}.value.year
+* Date: data.variables.{FunctionName}.value.date
+
+</details>
+
 
 -------
 

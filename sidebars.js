@@ -159,6 +159,7 @@ module.exports = {
       "platform_concepts/Getting Started/keyboard-shortcuts",
       "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/platform-offerings",
+      "platform_concepts/Getting Started/oauth",
       ]
     },
 
@@ -1033,6 +1034,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/generic-webhook",
         "platform_concepts/channelConfiguration/sunshine",
         "platform_concepts/channelConfiguration/shopee",
+        "platform_concepts/channelConfiguration/tokopedia",
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },

@@ -9,11 +9,43 @@ You can also promote your products and services, engage with customers by respon
 
 The following are key features of this integration:
 
-* **Automated Replies**: Bot can automate responses to direct messages, comment or private replies, story mentions, story replies, and media share. An [event](#supp) is sent to the bot for each of these actions, such as comments, private replies, story mentions, story replies, and media shares.
+* **Automated Replies**: Bot can automate responses to direct messages, comment or private replies, story mentions, story replies, and media share. An [event](#supported-instagram-events) is sent to the bot for each of these actions, such as comments, private replies, story mentions, story replies, and media shares.
 * **Supported message types**: You can use various message types including text, image, carousel, and quick replies, enhancing the communication experience.
 
 These features help you engage with your audience on Instagram and provide a more interactive and responsive experience.
+
+## List of supported messages by Yellow.ai platform
+
+| **Action type** | **Message type**   | **Bot Support?** | **User Support**?                                                |
+|------|------|---------|-------|
+| Message  | Text | Yes |Yes                                                               | Yes                                                               |
+| Message         | Image                            | Yes. Supported formats: jpg, png, ico, bmp. Size: Less than 8 MB. | Yes. Supported formats: jpg, png, ico, bmp. Size: Less than 8 MB. |                                                              |
+| Message         | Sticker                          | No                                                                | Yes                                                             |
+| Message         | Attachments (video, voice, file) | No                                                                | Yes                                                             |
+| Reaction        | React                            | No                                                                | No                                                                |
+| Reaction        | Unreact                          | No                                                                | No                                                                |
+| Media Share     | Image                            | Yes                                                               | Yes                                                             |
+| Media Share     | Video                            | Yes                                                               | Yes                                                             |
+| Media Share     | Story                            | Yes | Yes                                                               | No                                                                |
+| Media Share     | IGTV                             | No                                                                | No                                                                |
+| Media Share     | Reels                            | No                                                                | No                                                                |
    
+## Character limitations of Instagram 
+
+In this section, you can view the character limitations of Instagram channel.
+
+options |	Character limit
+--------------------|----------------------
+Quick reply | <ul><li> A maximum of 13 quick replies are supported. </li> <li> Each quick reply allows up to 20 characters before being truncated. </li> <li> Quick replies only support plain text.</li></ul> <img src="https://i.imgur.com/EGh1d0m.png" alt="drawing" width="40%"/><img src="https://i.imgur.com/en7PHOK.png" alt="drawing" width="40%"/>
+Conversation starters | A maximum of 4 conversation starters are supported. 
+Carousel | <ul><li> A maximum of 80 characters are supported for the title and description. </li><li> A maximum of 3 buttons are supported in carousel.</li></ul>
+
+##### Limitations
+    
+* Private replies are currently not supported for Instagram ads and IGTV comments.
+* Agent can reply to the private replies within 7 days (except on Instagram Live) of the creation date of the comment.
+* Private replies do not open the 24-hour window for standard messaging.
+
 ## Instagram events
 
 Once you have set up the Instagram bot, to initiate the personailzed conversations for particular actions like story replies, story mentions, media shares, and comments use the below events. You can automate response to user activities on Instagram by triggering specific flows based on Instagram events.
@@ -46,24 +78,7 @@ By default, these events are inactive, but you can enable them as per your requi
 instagram-story-reply | Bot receives an event with the available information when a user replies to the business Instagram story. | Instagram story reply enables businesses to engage with their audience in real-time. When users reply with inquiries such as product details, availability, pricing, or comments about products featured in the story, businesses can start initiating conversation.<br/> <img src="https://i.imgur.com/iI0hUxL.png" alt="drawing" width="60%"/>
  instagram-story-mention | Bot receives an event with the available information when a user mentions the business in their insta story. | Users can share their feedback by mentioning the brand in their Instagram stories. This can include sharing their thoughts on the product, overall shopping experience, or any positive aspects they wish to highlight.<br/><img src="https://i.imgur.com/QFXBUxg.png" alt="drawing" width="60%"/>
 instagram-media-share | Bot receives an event with the available information when the business shares a media from a post. | When businesses post details about their products, users have the ability to share this media with their followers. This enables businesses to reach a wider audience with their products.<br/> <img src="https://i.imgur.com/CIKJQSf.png" alt="drawing" width="60%"/>
-instagram-comment | Bot receives an event with the available information when a user comments on the business insta post. | When businesses share details about their products on Instagram, users can engage directly by commenting on the post. These comments may include inquiries about product specifications, availability, pricing, or any additional details. <br/>**Note:** To display the comments in the comment section under the respective comment, contact the [Integrations](mailto:support@yellow.ai) team. By default, replies are currently shown in direct messages.  |
-
-
-## Character limitations of Instagram 
-
-In this section, you can view the character limitations of Instagram channel.
-
-options |	Character limit
---------------------|----------------------
-Quick reply | <ul><li> A maximum of 13 quick replies are supported. </li> <li> Each quick reply allows up to 20 characters before being truncated. </li> <li> Quick replies only support plain text.</li></ul> <img src="https://i.imgur.com/EGh1d0m.png" alt="drawing" width="40%"/><img src="https://i.imgur.com/en7PHOK.png" alt="drawing" width="40%"/>
-Conversation starters | A maximum of 4 conversation starters are supported. 
-Carousel | <ul><li> A maximum of 80 characters are supported for the title and description. </li><li> A maximum of 3 buttons are supported in carousel.</li></ul>
-
-##### Limitations
-    
-* Private replies are currently not supported for Instagram ads and IGTV comments.
-* Agent can reply to the private replies within 7 days (except on Instagram Live) of the creation date of the comment.
-* Private replies do not open the 24-hour window for standard messaging.    
+instagram-comment | Bot receives an event with the available information when a user comments on the business insta post. | When businesses share details about their products on Instagram, users can engage directly by commenting on the post. These comments may include inquiries about product specifications, availability, pricing, or any additional details. <br/>**Note:** To display the comments in the comment section under the respective comment, contact the [Integrations](mailto:support@yellow.ai) team. By default, replies are currently shown in direct messages.  |   
 
 ## Setting up Instagram bot
 
@@ -225,11 +240,11 @@ To add conversation starters, follow these steps:
 3. Click **+Add conversation starter** to add more conversation starters (up to 4), then click **Save**.     
    - Option 1: **Pre-purchase product queries**
 
-    <img src="https://i.imgur.com/P87YGKj.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/P87YGKj.png" alt="drawing" width="30%"/>
  
    - Option 2: **Post-purchase customer support**
         
-    <img src="https://i.imgur.com/RSbkBLm.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/RSbkBLm.png" alt="drawing" width="30%"/>
 
    
 ## Setup your bot
@@ -252,20 +267,20 @@ After connecting your bot on Yellow platform, you can test your bot as mentioned
 
 3. Send a message (as per the configured intent) to the test Instagram account that you have connected to your bot.
     
-    <img src="https://i.imgur.com/yptWHk5.jpg" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/yptWHk5.jpg" alt="drawing" width="30%"/>
      
    
    <br/>• If the intent does not match, the bot should be able to respond with a fallback message.   
     
-5. Navigate to the Inbox module on the platform and select **Bot messages** in the **Chats** section. Here, you can view the entire conversation between the bot and user.
+4. Navigate to the Inbox module on the platform and select **Bot messages** in the **Chats** section. Here, you can view the entire conversation between the bot and user.
 
      ![](https://i.imgur.com/rAhMS4I.png)
      
-6. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
+5. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to start a conversation with an agent, it initiates a conversation with the agent. Once a conversation is initiated, the user can talk to the agent.
 
-    <img src="https://i.imgur.com/8vXOiyb.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/8vXOiyb.png" alt="drawing" width="30%"/>
     
-7. To view the entire conversation between the live agent and user, navigate to the **Inbox** module in the platform and select **Bot messages** in the **My Chats** section.
+6. To view the entire conversation between the live agent and user, navigate to the **Inbox** module in the platform and select **Bot messages** in the **My Chats** section.
 
     ![](https://i.imgur.com/LNKzHHn.png)
 
