@@ -106,7 +106,7 @@ Parameter | Datatype | Description
 --------- | -------- | -----------
 `ymAuthSessionDurationInSec` | Numeric | This defines the expiry of a token. Each time a token expires, an event is sent to your platform to generate a new token through the API, and the encrypted payload can be sent. This case must be handled on your backend to reload the bot with the fresh token. |
 
-### Step 2: Include the encrypted token in the bot script.
+### Step 2: Include the encrypted token in the bot script
 
 Pass the encrypted token in `ymAuthenticationToken` as shown below: 
 
