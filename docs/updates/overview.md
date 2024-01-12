@@ -47,6 +47,8 @@ Unwanted WhatsApp marketing can frustrate users, leading to blocks, impacting br
 2. If a user replies with "STOP," it updates the WhatsAppOptIn property in User360 to false for that specific user.
 3. When you schedule an outbound marketing campaign, exclude opted-out users from your marketing list.
 
+**[Read Docs](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#2-creating-whatsapp-template)**
+
 ### Introducing WhatsApp Carousel Templates
 
 :::info
