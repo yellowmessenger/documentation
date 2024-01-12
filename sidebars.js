@@ -157,16 +157,16 @@ module.exports = {
       "platform_concepts/Getting Started/upgrade",  
       "platform_concepts/Getting Started/modify-bot-configuration",
       "platform_concepts/Getting Started/keyboard-shortcuts",
-      "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/platform-offerings",
      
       {
         type: "category",
-        label: "Authentication configuration & security",
+        label: "Authentication & security",
         collapsed: true,
         items: [
           "platform_concepts/Getting Started/security-auth/oauth",
           "platform_concepts/Getting Started/security-auth/ymauth",
+          "platform_concepts/Getting Started/security-auth/chattranscriptsecurity",
         ],
       }, 
 
