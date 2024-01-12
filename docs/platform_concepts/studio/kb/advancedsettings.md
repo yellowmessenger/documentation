@@ -134,7 +134,44 @@ To configure, follow these steps:
 
 In the output, website links will be in English for enhanced readability. Titles are translated, facilitating quick navigation and comprehension of the accessed content, whether it's a document or a website link.
 
+## Set the tone of bot responses 
+
+Customize your bot's tone to align with your preferred response style. Yellow.ai offers 4 distinct tones that allows you to tailor your bot's responses to end users. Refer to the table (after the steps) to see how this works.
+
+To configure the tone of the response:
+
+1. Go to **Studio** > **Build** > **Conversation Settings**
+  
+   ![](https://i.imgur.com/EbKGkUp.png)
+
+2. Click **Document Search**.
+
+   ![](https://i.imgur.com/Gr0VCD9.png)
+
+3. Go to **Model response** and choose the preferred tone from the drop down.
+
+   <img src="https://i.imgur.com/rY4XYvR.png" alt="drawing" width="60%"/>
 
 
+| Tones               | Descriptions                                                  | Example                                                          |
+|---------------------|---------------------------------------------------------------|------------------------------------------------------------------|
+| Empathetic          | Responds in a way that acknowledges and reflects the user's emotions.              | <img src="https://i.imgur.com/J41xQmE.png" alt="drawing" width="70%"/>                   |
+| Formal              | Uses a professional and formal tone in responses.          | <img src="https://i.imgur.com/fTfC4JQ.png" alt="drawing" width="70%"/>                |
+| Short Answers       | Conveys information concisely with brief responses and minimal descriptions. | <img src="https://i.imgur.com/V7UUsvi.png" alt="drawing" width="70%"/>                   |
+| Instructions based  | Provides responses in a clear instructional format.            | <img src="https://i.imgur.com/xn3jBdH.png" alt="drawing" width="70%"/>  |
 
+## Automate fallback for your bot
 
+Create fallback messages to show when the bot doesn't understand user queries, offering the closest relevant answers to their questions.
+
+1. Go to **Studio** > **Build** > **Conversation Settings**
+  
+   ![](https://i.imgur.com/EbKGkUp.png)
+
+2. Click **Document Search**.
+
+   ![](https://i.imgur.com/Gr0VCD9.png)
+
+3. Go to **Auto fallback** and click **Enable as auto-fallback**. Scroll down, in **Model Fallback Message**, enter the fallback message to show.
+
+   <img src="https://i.imgur.com/I2nLG2x.png" alt="drawing" width="60%"/>
