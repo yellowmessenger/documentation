@@ -159,7 +159,19 @@ module.exports = {
       "platform_concepts/Getting Started/keyboard-shortcuts",
       "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/platform-offerings",
-      "platform_concepts/Getting Started/oauth",
+     
+      {
+        type: "category",
+        label: "Authentication configuration & security",
+        collapsed: true,
+        items: [
+          "platform_concepts/Getting Started/security-auth/oauth",
+          "platform_concepts/Getting Started/security-auth/ymauth",
+        ],
+      }, 
+
+      //add new get started docs here
+
       ]
     },
 
