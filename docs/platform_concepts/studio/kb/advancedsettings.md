@@ -175,3 +175,7 @@ Create fallback messages to show when the bot doesn't understand user queries, o
 3. Go to **Auto fallback** and click **Enable as auto-fallback**. Scroll down, in **Model Fallback Message**, enter the fallback message to show.
 
    <img src="https://i.imgur.com/I2nLG2x.png" alt="drawing" width="60%"/>
+
+ **Result:**
+
+  <img src="https://i.imgur.com/v1D5hUQ.png" alt="drawing" width="60%"/>
