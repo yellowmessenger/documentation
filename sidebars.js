@@ -587,7 +587,7 @@ module.exports = {
         },
 
         "platform_concepts/inbox/inboxfaqs",
-        //"platform_concepts/inbox/upcoming-developments",
+        "platform_concepts/inbox/upcoming",
 
     //other files
       ],
