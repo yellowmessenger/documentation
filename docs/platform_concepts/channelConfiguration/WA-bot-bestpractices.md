@@ -245,7 +245,7 @@ Once your account is reviewed, you will be notified about the status of your OBA
 
 ## Test your WhatsApp bot 
 
-After successfully creating your WhatsApp business account and configuring the flow, you need to select the **WhatsApp** channel from the **Channels** filter to test your bot and ensure all the flows you configured are working as intended. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#3-test-your-bot-on-whatsapp). 
+After successfully creating your WhatsApp business account and configuring the flow, you need to select the **WhatsApp** channel from the **Channels** filter to test your bot and ensure all the flows you configured are working as intended. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#test-your-bot-on-whatsapp). 
 
    ![](https://i.imgur.com/9MBMVC6.png)
   

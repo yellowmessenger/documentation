@@ -3,12 +3,14 @@ title: Add WhatsApp business account
 sidebar_label: Add WhatsApp account
 ---
 
-This guide will walk you through the process of creating a WhatsApp Business account and setting up your own chatbot for WhatsApp.
+A WhatsApp (WA) bot allows you to interact with users on the WhatsApp messaging platform.
 
-In this article, you will learn:
-* [How to connect your WhatsApp business account](#1-connect-your-whatsapp-business-account)
-* [How to add WhatsApp numbers for testing](#2-add-whatsapp-numbers-for-testing-purposes)
-* [How to test WhatsApp chatbot](#3-test-your-bot-on-whatsapp)
+Businesses can use WhatsApp chatbots to send campaigns, provide customer support, engage in conversational marketing, and drive sales.
+
+This channel enables the following key features:
+
+* **Automated Replies**: Provides the ability to automatically respond to user messages.
+* **Multi-message types support**: Supports various message types, including image, video, file, Quick reply, Carousel, WA quick reply, Dynamic WA list message, and WA list, enhancing the overall communication experience.
 
 ## Prerequisites to setup WhatsApp channel
 
@@ -17,7 +19,7 @@ To set up a WhatsApp channel, you need to have an active WhatsApp business accou
 * Create a Facebook Business Manager account
 * Verify your WhatsApp business account with Facebook
 
-## 1. Connect your WhatsApp business account
+## Connect your WhatsApp business account
 
 Yellow.ai allows you to add multiple WhatsApp numbers for your business account based on you requirements. This helps businesses that operate with multiple WhatsApp numbers or want to provide support through different contact points. With this capability, you can streamline your communication and efficiently handle conversations from various WhatsApp accounts.
 
@@ -118,7 +120,7 @@ Make sure that the phone number you provide is not currently connected to any Wh
     <img src="https://i.imgur.com/ezgp1Qy.png" alt="drawing" width="90%"/>
 
 
-### 1.1 Add multiple WhatsApp numbers
+### Add multiple WhatsApp numbers
 
 To add more WhatsApp business accounts, follow these steps:
 
@@ -130,7 +132,7 @@ To add more WhatsApp business accounts, follow these steps:
 
     <img src="https://i.imgur.com/LfIwYrC.png" alt="drawing" width="90%"/>
 
-### 1.2 Create Facebook Business Manager (FBM) account
+### Create Facebook Business Manager (FBM) account
 
 If you have already created the account, login to FBM. If not, follow the steps to create an FBM account.
 
@@ -142,7 +144,7 @@ If you have already created the account, login to FBM. If not, follow the steps 
 
 4. Now, you have created the FBM.
 
-### 1.3 Verify Business account with Facebook
+### Verify Business account with Facebook
 
 As the verification process can take more than two weeks, we recommend starting the verification at the beginning phase of the project.
 
@@ -245,7 +247,7 @@ As the verification process can take more than two weeks, we recommend starting 
 * [Troubleshooting when the business is not verified](https://www.facebook.com/business/help/2342133782492969?id=180505742745347)
 
 
-## 2. Add WhatsApp numbers for testing purposes
+##  Add WhatsApp numbers for testing purposes
 
 Yellow.ai allows you to test your WhatsApp bot in Development mode before pushing the changes to the Live environment. You can add upto ten testing numbers.
 
@@ -263,7 +265,7 @@ Yellow.ai allows you to test your WhatsApp bot in Development mode before pushin
 6. To add more WhatsApp business numbers, click **Add phone numbers**.
 7. Click **Save**.
 
-## 3. Test your bot on WhatsApp
+## Test your bot on WhatsApp
 
 After connecting your bot to WhatsApp, you can test your bot to ensure all the flows you configured are working as intended.
 
