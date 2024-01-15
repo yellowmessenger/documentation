@@ -157,9 +157,21 @@ module.exports = {
       "platform_concepts/Getting Started/upgrade",  
       "platform_concepts/Getting Started/modify-bot-configuration",
       "platform_concepts/Getting Started/keyboard-shortcuts",
-      "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/platform-offerings",
-      "platform_concepts/Getting Started/oauth",
+     
+      {
+        type: "category",
+        label: "Authentication & security",
+        collapsed: true,
+        items: [
+          "platform_concepts/Getting Started/security-auth/oauth",
+          "platform_concepts/Getting Started/security-auth/ymauth",
+          "platform_concepts/Getting Started/security-auth/chattranscriptsecurity",
+        ],
+      }, 
+
+      //add new get started docs here
+
       ]
     },
 
@@ -575,7 +587,7 @@ module.exports = {
         },
 
         "platform_concepts/inbox/inboxfaqs",
-        //"platform_concepts/inbox/upcoming-developments",
+        "platform_concepts/inbox/upcoming",
 
     //other files
       ],
