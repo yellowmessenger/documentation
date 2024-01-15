@@ -32,6 +32,6 @@ Options.text | yes | String value | 20
 footer | no | Faded text below the body | 60
 
 :::note
-Date picker, Multi-select, Location, Feedback, and Speak nodes are not supported for WhatsApp channels.  
+Multi-select, Feedback, and Speak nodes are not supported for WhatsApp channels. However, Date picker and Location nodes are supported on WhatsApp, but the UI similar to the web is not supported in WhatsApp. 
 :::
 
