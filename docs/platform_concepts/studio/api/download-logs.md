@@ -3,7 +3,7 @@ title: Download API logs
 sidebar_label : Download API logs
 ---
 
-Downloading API logs is crucial for maintaining, optimizing, and troubleshooting applications. Yellow.ai lets you download API logs of the past 15 days from the current date.
+Downloading API logs is important for maintaining, optimizing, and troubleshooting applications. Yellow.ai lets you download API logs of the past 15 days from the current date.
 
 You can download the API logs for the following use cases:
 
