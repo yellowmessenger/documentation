@@ -9,6 +9,8 @@ Generative AI features are gated, they are not available for all the freemium cu
 
 The **Inbox Live Chat** screen provides agents with powerful generative AI features that can improve their customer service skills. These features include live chat summarization, the ability to modify message tone, and AI-powered suggestions for conversation enhancement. With these tools at their disposal, agents can offer more efficient and personalized support to customers, leading to higher satisfaction rates and better business outcomes.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zb9QetWSoLw?si=aj-CZdb1fIVvZpUZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ## Summarize chat conversation 
 
