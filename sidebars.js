@@ -1163,6 +1163,7 @@ module.exports = {
           label: "Payments",
           collapsed: true,
           items: [
+            "platform_concepts/appConfiguration/airpay",
             "platform_concepts/appConfiguration/billdesk-emailpay",
             "platform_concepts/appConfiguration/billdesk",
             "platform_concepts/appConfiguration/camspay",
