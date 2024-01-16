@@ -3,8 +3,6 @@ title : Genesys PureCloud Live Chat
 sidebar_label : Genesys PureCloud Live Chat
 ---
 
-# Genesys
-
 Yellow.ai seamlessly integrates with Genesys Purecloud Live, allowing your users to engage with live agents. This integration helps when you have live agents available within your Genesys Purecloud account and users to assist through your yellow.ai bot, streamlining the connection between the two for a smoother process.
 
 ## Prerequisites
