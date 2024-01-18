@@ -1,6 +1,6 @@
 ---
-title : Genesys PureCloud Live Chat
-sidebar_label : Genesys PureCloud Live Chat
+title : Genesys Purecloud live
+sidebar_label : Genesys Purecloud live
 ---
 
 Yellow.ai seamlessly integrates with Genesys Purecloud Live, allowing your users to engage with live agents. This integration helps when you have live agents available within your Genesys Purecloud account and users to assist through your yellow.ai bot, streamlining the connection between the two for a smoother process.
@@ -10,14 +10,13 @@ Yellow.ai seamlessly integrates with Genesys Purecloud Live, allowing your users
 1. An active Geneysys Purecloud live account 
 2. An active Yellow.ai account
 
-
 ## Obtain integration credentials from Genesys Purecloud
 
 To connect your Yellow.ai platform with Genesys Purecloud account, you need to perform the following actions in your Genesys Purecloud account to obtain the credentials to input in your Yellow.ai platform.
 
 ### Step 1: Create a role
 
-You need to create a custom role with certain scopes and then assign that custom to your profile. To do so:
+Create a custom role with certain scopes and assign that custom role to the user profile responsible for handling incoming chats from yellow.ai bot. To do so:
 
 1. Go to **Admin** > **Roles/ Permissions**.
 
@@ -27,26 +26,26 @@ You need to create a custom role with certain scopes and then assign that custom
 
    ![](https://i.imgur.com/o7J1nzr.png)
 
-3. In **Roles Details** enter a name for your role and describe it. Click **Permissions** and enable the below mentioned scopes for the role. You can search for the scopes in the highlighted search box and click **Save**.
+3. In **Role Details** enter a name for the role and describe it. Click **Permissions** and enable the below mentioned scopes for the role. You can search for the scopes in the highlighted search box and click **Save**.
 
-* messaging.integration.all
-* conversation.message.all
+* Messaging > Integration > All Permissions
+* Conversation > Message > All Permissions
+* Process Automation > Trigger > All Permissions
 
+   ![](https://i.imgur.com/MVIHayp.png)
 
-   ![](https://i.imgur.com/Ce6oV7J.png)
-
-4. Go to **People** and click the more button next to your name. Click **Edit Person**.
+4. Go to **People** and click the ellipsis button next beside the name of the individual for whom the role was created. Click **Edit Person**.
 
    ![](https://i.imgur.com/2W0d2by.png)
 
 
-5. Choose **All** under **View**, enable the custom role you created in step 3 and click **Save**.
+5. Choose **All** under **View**, enable the custom role you created in step 3 and click **Save**. By this way you assign the role to the respective person. 
 
    ![](https://i.imgur.com/qMTrdUW.png)
 
 ### Step 2: Create an OAuth client
 
-You need to create an OAuth client to retrieve Client ID and Client secret for your Genesys login.
+You need to create an OAuth client to retrieve Client ID and Client secret for your Genesys login. This OAuth client is created for the role you created in the previous step. 
 
 1. Go to **Admin** > **Integrations** > **OAuth**.
 
@@ -64,7 +63,7 @@ You need to create an OAuth client to retrieve Client ID and Client secret for y
 
    ![](https://i.imgur.com/BsS1Tdb.png)
 
-Your OAuth client gets created. Copy the **Client ID** and **Client Secret**.
+ OAuth client gets created. Copy the **Client ID** and **Client Secret**.
 
    ![](https://i.imgur.com/D7hP75v.png)
 
@@ -81,7 +80,12 @@ You need to create an integration to add Yellow.ai's webhook in Genesys.
    ![](https://i.imgur.com/DZWglvD.png)
 
 * In **Name**, enter a name for your integration.
-* In **Outbound Notification Webhook URL**, enter Yellow.ai's webhook from the Integration section.
+* In **Outbound Notification Webhook URL**, enter https://cloud.yellow.ai/ or any test URL.
+
+:::info
+A webhook is generated once the integration is established in Yellow.ai. Initially, you can provide a test URL to configure the integration. After setting it up, we'll retrieve the webhook from Yellow.ai. We will show the process in the upcoming steps.
+:::
+
 * In **Outbound Notification Webhook Signature Secret Token**, enter an integration ID and click **Save**.
 
 3. Once you save, your integration ID will be generated. Copy/paste it from the URL.
@@ -122,13 +126,17 @@ Enter the Client Id, Client Secret and integration ID obtained from the previous
 * **Integration ID:** Integration ID obtained in [Step 3](#step-3-add-yellowais-webhook-in-genesys).
 
 3. Click **Connect**.
+4. Once the integration is setup, copy the Webhook URL by clicking on it. 
 
-:::note
-1. If you multiple Genesys accounts, enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 5 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
+   ![](https://i.imgur.com/bRUxVXI.png)
+   
+5. Go to your **Genesys Purecloud Live account** > **Admin** > **Message** > **Platforms** > integration you created in Step 3. > **Configure**
+
+    ![](https://i.imgur.com/q17Ommo.png)
+    
+6. Paste the copied Webhook in **Outbound Notification Webhook URL** and click **Save**.
+
+   ![](https://i.imgur.com/lYiEDnl.png)
 
 ## Activate Genesys event in your bot
 
@@ -143,6 +151,106 @@ Enter the Client Id, Client Secret and integration ID obtained from the previous
 :::info
 If you have added multiple accounts in your platform, enable events for each of those accounts.
 :::
+
+## Close Genesys chats in sync with Yellow.ai 
+
+To end the chat in Genesys when a customer ends the chat in Yellow.ai, you need to set up a workflow. 
+
+1. Go to **Admin** > **Integrations** > **Web Services Data Actions** > **Install**. Install it and enable it.
+
+   ![](https://i.imgur.com/XHfn7Ar.png)
+
+2. Go to **Actions** > **+ Add Action** > Choose the integration enabled in the previous step.
+
+   ![](https://i.imgur.com/guBID6B.png)
+
+3. Provide a name to the action and click **Add**.
+
+    ![](https://i.imgur.com/e8W4Z4l.png)
+
+4. After creating the action, go to **Setup** > **Input Contract** and paste the JSON given below the image.
+
+    ![](https://i.imgur.com/5XcRTg7.png)
+
+**JSON:**
+
+```
+{
+  "title": "data",
+  "type": "object",
+  "required": [
+    "to",
+    "disconnectType"
+  ],
+  "properties": {
+    "to": {
+      "description": "To Address",
+      "type": "string"
+    },
+    "disconnectType": {
+      "description": "The type of disconnection",
+      "type": "string"
+    },
+    "conversationId": {
+      "description": "conversationId",
+      "type": "string"
+    },
+    "eventName": {
+      "description": "Event Name",
+      "default": "conversation-resolved",
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}
+
+```
+
+5. Go to **Configuration**, in **Request URL Template**, paste the webhook URL(copied from Yellow.ai bot) and select the method as POST. After this, click **Save & Publish**.
+
+   ![](https://i.imgur.com/18TRQWv.png)
+
+6. Go to **Admin** > **Architect**. Hover over **Flows** and click **Workflow**.
+
+   ![](https://i.imgur.com/n8iH3A2.png)
+
+7. Click **+ Add** and create a new workflow.
+
+   ![](https://i.imgur.com/7V2JIw4.png)
+
+
+8. Add three String variables. To add a variable go to **Data** > enter a name for the variable and click **Create**. 
+
+   ![](https://i.imgur.com/rjKH0FR.png)
+
+9. Click the variable to add details. 
+
+   ![](https://i.imgur.com/cEiHcmd.png)
+
+Enable **Input to flow** in each variable and for the variable which disconnects the chat when the user ends it, pass an initial value.
+
+  <img src="https://i.imgur.com/TJVFiyB.png" alt="drawing" width="50%"/>
+
+10. Go back to **Initial state** and below the **Start node**, add a **Call Data Action** node. To do so, click the arrow below **Start node** and go to **Toolbox** > **Data** > **Call Data Action**.
+
+    ![](https://i.imgur.com/OxXMD3U.png)
+
+11. Once you add the node, in **Category** select **Web Services Data Actions** and in **Data Action** select the action you created in step 3. 
+
+    ![](https://i.imgur.com/TFjVmjn.png) 
+
+12. Once you select the action, corresponding fields will display. Pass the variables you created in step 8. 
+
+    <img src="https://i.imgur.com/ktC9QS2.png" alt="drawing" width="50%"/>
+
+13. Click **Save** and **Publish** on the top when you're done.
+
+    ![](https://i.imgur.com/tP3QApL.png)
+    
+:::info
+Make sure to keep the workflow ID found in the URL handy, as it will be necessary to access the API.
+:::
+
 
 ## Connect bot users to live agents on Genesys
 
@@ -184,11 +292,8 @@ You can enable **Advanced Options** to access the advanced features of this node
 
 ## Limitations
 
-1. Only text and images are being supported from both the user and agent side.
-2. At present, we can only start chats; we do not receive agent acceptance, closure events, or agent information involved in user conversations. To monitor when the agent leaves:
+ Only text and images are being supported from both the user and agent side.
 
-* Create a custom trigger using  [Trigger API](https://developer.genesys.cloud/platform/process-automation/). This trigger should listen for the ``v2.detail.events.conversation.{id}.acw`` event and then activate an Architect workflow. This workflow can make a Web Service Data Action request to call a webhook in your proxy, notifying you when the agent has left the conversation. 
-* Additionally, you can also use the [user.start](https://developer.genesys.cloud/notificationsalerts/notifications/available-topics#v2-detail-events-conversation--id--user-start) event to track when the agent joins the conversation. For details on workflows, please refer to this [document](https://help.mypurecloud.com/articles/work-with-workflows/).  To learn more about **Web Service Data Actions**, click [here](https://help.mypurecloud.com/articles/about-web-services-data-actions-integration).
 
 #### Reference
 
