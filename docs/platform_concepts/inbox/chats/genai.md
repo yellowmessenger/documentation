@@ -9,6 +9,8 @@ Generative AI features are gated, they are not available for all the freemium cu
 
 The **Inbox Live Chat** screen provides agents with powerful generative AI features that can improve their customer service skills. These features include live chat summarization, the ability to modify message tone, and AI-powered suggestions for conversation enhancement. With these tools at their disposal, agents can offer more efficient and personalized support to customers, leading to higher satisfaction rates and better business outcomes.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Zb9QetWSoLw?si=aj-CZdb1fIVvZpUZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ## Summarize chat conversation 
 
@@ -44,11 +46,11 @@ The **Tone Change** AI feature assists inbox agents in maintaining a professiona
 
 ## Reply Suggestions for conversation improvement
 
-The **Reply suggestion** feature is designed to support inbox agents in their customer interactions by providing helpful suggestions for replies. 
+The **Reply suggestion** feature is designed to support inbox agents in their customer interactions by providing helpful and summarized suggestion for replies. 
 
-Instead of typing out the entire response, agents can click on **Get solution** and a reply will be generated. This streamlines the process and saves valuable time, especially during high-volume periods or when dealing with numerous inquiries leading to enhanced customer satisfaction and builds stronger relationships between the company and its customers.
+Upon receiving a user query, a **Get solution** button becomes visible. Instead of manually typing out the entire response, agents can click on **Get solution**, triggering the generation of a summarized reply (for most of the queries). This streamlines the process and saves valuable time, especially during high-volume periods or when dealing with numerous inquiries leading to enhanced customer satisfaction and builds stronger relationships between the company and its customers.
 
-This feature is most helpful in situations where agents need to refer to external knowledge sources, such as knowledge bases, documents, or past interactions. By clicking **Get solution**, agents can access information from multiple sources
+This feature is most helpful in situations where agents need to refer to external knowledge sources, such as knowledge bases, documents, or past interactions. By clicking **Get solution**, agents can access information from multiple sources.
 
 **How are the replies are generated?**
 
