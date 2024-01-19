@@ -83,7 +83,7 @@ If your bot is unable to understand the user input, consider these helpful sugge
 
 ### Document search
 
-   Document search lets the bot search documents for answers and respond to user queries. For information regarding the supported document types for upload and their corresponding procedures, please click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition#-2-upload-files-to-document-section).     
+   The document search allows the bot to search through various documents to provide accurate and relevant responses to user queries. To learn more about the types of documents supported for upload and the associated procedures, refer to this link [link](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition#-2-upload-files-to-document-section).     
 
    <img src="https://i.imgur.com/TdVPAiA.png" alt="drawing" width="50%"/>
 

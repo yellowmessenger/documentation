@@ -3,18 +3,22 @@ title : Genesys Purecloud live
 sidebar_label : Genesys Purecloud live
 ---
 
-Yellow.ai seamlessly integrates with Genesys Purecloud Live, allowing your users to engage with live agents. This integration helps when you have live agents available within your Genesys Purecloud account and users to assist through your yellow.ai bot, streamlining the connection between the two for a smoother process.
+Yellow.ai connects with Genesys Purecloud Live, enabling users to interact with live agents. This integration helps by linking live agents from your Genesys Purecloud account with users assisted by your yellow.ai bot.
 
 ## Prerequisites
 
 1. An active Geneysys Purecloud live account 
 2. An active Yellow.ai account
 
+:::info
+Only text and images are being supported from both the user and agent side.
+:::
+
 ## Obtain integration credentials from Genesys Purecloud
 
 To connect your Yellow.ai platform with Genesys Purecloud account, you need to perform the following actions in your Genesys Purecloud account to obtain the credentials to input in your Yellow.ai platform.
 
-### Step 1: Create a role
+### Step 1: Create a user role
 
 Create a custom role with certain scopes and assign that custom role to the user profile responsible for handling incoming chats from yellow.ai bot. To do so:
 
@@ -34,7 +38,7 @@ Create a custom role with certain scopes and assign that custom role to the user
 
    ![](https://i.imgur.com/MVIHayp.png)
 
-4. Go to **People** and click the ellipsis button next beside the name of the individual for whom the role was created. Click **Edit Person**.
+4. Go to **People** and click the ellipsis button beside the name of the individual for whom the role was created. Click **Edit Person**.
 
    ![](https://i.imgur.com/2W0d2by.png)
 
@@ -59,9 +63,11 @@ You need to create an OAuth client to retrieve Client ID and Client secret for y
 
    ![](https://i.imgur.com/qBF8j0R.png)
 
-4. Go to **Roles** and choose the custom role you created in the previous section.  Click **Save**.
+4. Go to **Roles** and choose the custom role you created in the previous section.
 
    ![](https://i.imgur.com/BsS1Tdb.png)
+
+5. Click **Save**.
 
  OAuth client gets created. Copy the **Client ID** and **Client Secret**.
 
@@ -69,7 +75,7 @@ You need to create an OAuth client to retrieve Client ID and Client secret for y
 
 ### Step 3: Add Yellow.ai's webhook in Genesys
 
-You need to create an integration to add Yellow.ai's webhook in Genesys. 
+You need to create an integration to add Yellow.ai's webhook in Genesys. This helps Genesys to inform the Yellow.ai bot about user chat actions, such as drop-offs, responses, or chat endings.
 
 1. Go to **Admin** > **Message** > **Platforms** > + **Create new integration** > **Open Messaging**.
 
@@ -86,11 +92,11 @@ You need to create an integration to add Yellow.ai's webhook in Genesys.
 A webhook is generated once the integration is established in Yellow.ai. Initially, you can provide a test URL to configure the integration. After setting it up, we'll retrieve the webhook from Yellow.ai. We will show the process in the upcoming steps.
 :::
 
-* In **Outbound Notification Webhook Signature Secret Token**, enter an integration ID and click **Save**.
+iii. In **Outbound Notification Webhook Signature Secret Token**, enter an integration ID and click **Save**.
 
-3. Once you save, your integration ID will be generated. Copy/paste it from the URL.
+3. Once you save, your integration ID will be generated. Copy it from the URL.
 
-![](https://i.imgur.com/hEB1Ewd.png)
+![](https://i.imgur.com/0mCNx1A.png)
 
 ### Step 4: Add a message route
 
@@ -111,7 +117,7 @@ Message route helps in rotuing the messages from bot to the live agent on Genesy
 
 ## Authenticate Genesys Purecloud Live in Yellow.ai
 
-Enter the Client Id, Client Secret and integration ID obtained from the previous sections.
+Enter the Client ID, Client Secret and integration ID obtained from the previous sections.
 
 1. Go to cloud.yellow.ai > **Integrations** > search for **Genesys Purecloud Live**.
 
@@ -142,11 +148,11 @@ Enter the Client Id, Client Secret and integration ID obtained from the previous
 
 1. Go to **Studio** and click **Event** > **Integrations**.
 
-![](https://i.imgur.com/xQq8hOw.png)
+ ![](https://i.imgur.com/xQq8hOw.png)
 
 2. Search for Genesys and click **more options** > **Activate**.
 
-![](https://i.imgur.com/F0sZUir.png)
+ ![](https://i.imgur.com/F0sZUir.png)
 
 :::info
 If you have added multiple accounts in your platform, enable events for each of those accounts.
@@ -227,7 +233,7 @@ To end the chat in Genesys when a customer ends the chat in Yellow.ai, you need 
 
    ![](https://i.imgur.com/cEiHcmd.png)
 
-Enable **Input to flow** in each variable and for the variable which disconnects the chat when the user ends it, pass an initial value.
+Enable **Input to flow** in each variable and pass an initial value for the variable which disconnects the chat when the user ends it.
 
   <img src="https://i.imgur.com/TJVFiyB.png" alt="drawing" width="50%"/>
 
@@ -243,7 +249,7 @@ Enable **Input to flow** in each variable and for the variable which disconnects
 
     <img src="https://i.imgur.com/ktC9QS2.png" alt="drawing" width="50%"/>
 
-13. Click **Save** and **Publish** on the top when you're done.
+13. Click **Save** to save your settings, and then click **Publish**.
 
     ![](https://i.imgur.com/tP3QApL.png)
     
@@ -260,20 +266,20 @@ Make sure to keep the workflow ID found in the URL handy, as it will be necessar
    ![](https://i.imgur.com/4ZM7Y1i.png)
 
 
-3. Fill in the following fields in the node. The variables chosen for these fields must be previously collect in the flow via node. To know more about this in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables).
+3. Fill in the following fields in the node. The variables chosen for these fields must be previously collected in the flow via node. To know more about this in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables).
 
-| Field name | Sample value | Data type |Description
-| -------- | -------- | -------- |-----|
-|Live chat agent| -|-| Choose **Genesys PureCloud Live agent** in the drop down|
-|Account name| account1| String| Choose the Genesys account to which the chats should be transferred|
-|Message after ticket assignment|Requesting live agent connection.|String| The message that will be displayed to the end user after a ticket is successfully assigned to an agent|
-|Name| Rajesh|String|Name of the end user|
-|Mobile| 9876543210| String|Mobile number of the end user|
-Email|test@gmail.com|String|Email address of the end user. This is a mandatory field|
-Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
-|Priority|MEDIUM|String|The priority of the ticket|
+| Field name | Data type | Description | Sample value |
+|------------|-----------|-------------|--------------|
+| Live chat agent | - | - | Choose **Genesys PureCloud Live agent** in the drop-down |
+| Account name | String | Choose the Genesys account to which the chats should be transferred | account1 |
+| Message after ticket assignment | String | The message that will be displayed to the end user after a ticket is successfully assigned to an agent | Requesting live agent connection. |
+| Name | String | Name of the end user | John |
+| Mobile | String | Mobile number of the end user | 9876543210 |
+| Email | String | Email address of the end user. This is a mandatory field | test@gmail.com |
+| Query | String | The subject/topic/reason why the ticket was created | I have a concern regarding my flight ticket |
+| Priority | String | The priority of the ticket | MEDIUM |
 
-You can enable **Advanced Options** to access the advanced features of this node.
+You can enable **Advanced Options** to set the priority, auto-translation, custom fields, tags and department.
 
 <img src="https://i.imgur.com/tPS9R0J.png" alt="drawing" width="50%"/>
 
@@ -289,11 +295,6 @@ You can enable **Advanced Options** to access the advanced features of this node
 **On Genesys Purecloud Live**
 
   ![](https://i.imgur.com/81JVjHf.png)
-
-## Limitations
-
- Only text and images are being supported from both the user and agent side.
-
 
 #### Reference
 
