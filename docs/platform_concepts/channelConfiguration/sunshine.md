@@ -7,6 +7,12 @@ Sunshine Conversations is a messaging platform that allows businesses to interac
 
 For instance, if a business has integrated Sunshine conversations with Facebook, it creates a Sunshine conversations channel for Facebook. Businesses can use this channel to communicate with their customers via WhatsApp to send and receive messages. Similarly, you can integrate with other messaging apps based on your business requirements.
 
+##### Limitations
+
+* **Supported message types**: Only text messages and specific rich cards are supported within the Zendesk integration.
+* **Conversation Logs**: Conversation logs will exclusively contain messages exchanged between users and the bot. Messages between users and live agents will not be available in the logs.
+Note that these limitations pertain to the current functionality of the Yellow.ai integration with Zendesk.
+
 ## Prerequisites to setup Sunshine conversation channel
 
 * Get access to the Sunshine dashboard.
@@ -90,27 +96,44 @@ You need to configure Switchboard to handle the conversation between Zendesk and
 
 To connect Sunshine conversations to your bot on the platform, follow these steps:
 
-1. Log on to https://cloud.yellow.ai and navigate to **Overview > Channels > Additional > Sunshine Conversations > click Connect**.
+1. On the module switcher, click **Channels**.
+
+   ![](https://i.imgur.com/UuFZ2eR.png)
+
+2. Click on **Chat widget**.
+
+   ![](https://i.imgur.com/1KzP77W.png)
+   
+3. Navigate to **Widget panel**, under *Bot avatar*, click **Add** icon and set the logo for the bot.
+
+   <img src="https://i.imgur.com/17TDvcI.png)" alt="drawing" width="60%"/>
+
+:::note
+* To ensure a seamless integration with Zendesk Sunshine, it is mandatory to update the bot icon.
+* It is recommended to upload images with a size of 150 x 150 pixels. 
+:::  
+
+4. Go to **Channels > Additional > Sunshine Conversations > click Connect**.
 
    ![](https://i.imgur.com/wFrqroe.png)
 
-2. Click **Connect to Sunshine Conversation**.
+5. Click **Connect to Sunshine Conversation**.
 
    ![](https://i.imgur.com/f5xixtY.png)
 
-3. Enter your Zendesk subdomain ID that you received while creating a Zendesk account and click **Sign in**.
+6. Enter your Zendesk subdomain ID that you received while creating a Zendesk account and click **Sign in**.
 
     <img src="https://i.imgur.com/x4Yidtp.png)" alt="drawing" width="60%"/>
 	
-4. Click **Allow** to access your Zendesk account.
+7. Click **Allow** to access your Zendesk account.
 
      <img src="https://i.imgur.com/RkJ5lRh.png)" alt="drawing" width="60%"/>
 
-5. Your Sunshine Conversations channel will be successfully connected. You need to follow the below highlighted instructions to connect Yellow.ai on Zendesk Admin Centre.
+8. Your Sunshine Conversations channel will be successfully connected. You need to follow the below highlighted instructions to connect Yellow.ai on Zendesk Admin Centre.
 
      <img src="https://i.imgur.com/SMllyqd.png)" alt="drawing" width="60%"/>
 	 
-6. Navigate to the **Overview** page, under the **Active channels** section, you can see that the Sunshine Conversations channel is successfully connected to your bot.
+9. Navigate to the **Overview** page, under the **Active channels** section, you can see that the Sunshine Conversations channel is successfully connected to your bot.
 
       ![](https://i.imgur.com/wVErgLe.png)	 
 	 
