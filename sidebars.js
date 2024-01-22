@@ -157,9 +157,21 @@ module.exports = {
       "platform_concepts/Getting Started/upgrade",  
       "platform_concepts/Getting Started/modify-bot-configuration",
       "platform_concepts/Getting Started/keyboard-shortcuts",
-      "platform_concepts/Getting Started/chattranscriptsecurity",
       "platform_concepts/Getting Started/platform-offerings",
-      "platform_concepts/Getting Started/oauth",
+     
+      {
+        type: "category",
+        label: "Authentication & security",
+        collapsed: true,
+        items: [
+          "platform_concepts/Getting Started/security-auth/oauth",
+          "platform_concepts/Getting Started/security-auth/ymauth",
+          "platform_concepts/Getting Started/security-auth/chattranscriptsecurity",
+        ],
+      }, 
+
+      //add new get started docs here
+
       ]
     },
 
@@ -575,7 +587,7 @@ module.exports = {
         },
 
         "platform_concepts/inbox/inboxfaqs",
-        //"platform_concepts/inbox/upcoming-developments",
+        "platform_concepts/inbox/upcoming",
 
     //other files
       ],
@@ -942,6 +954,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-product-catalog",
             "platform_concepts/channelConfiguration/wa-migration",
             "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
+            "platform_concepts/channelConfiguration/WA-messaging-limits",
             "platform_concepts/channelConfiguration/wa-opt-in",
             "platform_concepts/channelConfiguration/WA-bot-bestpractices",
             "platform_concepts/channelConfiguration/WA-pricing",
@@ -1024,6 +1037,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/GTM-integration",
             "platform_concepts/channelConfiguration/depoly-WA-bot",
             "platform_concepts/channelConfiguration/support-banner-migration",
+            "platform_concepts/channelConfiguration/content-security-policy",
             "platform_concepts/channelConfiguration/chat-widget-errors",
             "platform_concepts/channelConfiguration/character-limits-sdk",
             "platform_concepts/channelConfiguration/chat-widget-faq", 
@@ -1038,6 +1052,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },
+    "platform_concepts/channelConfiguration/zendesk-live-agent-support",
     {
       type: "category",
       label: "Integrations",

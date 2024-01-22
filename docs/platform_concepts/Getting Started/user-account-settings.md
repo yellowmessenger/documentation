@@ -14,6 +14,10 @@ After logging in successfully, you can manage various aspects of your account se
 2. Select **Profile** from the drop-down to view your profile information.
     <img src="https://i.imgur.com/IqalgMH.png" alt="drawing" width="100%"/>
 
+:::note
+You cannot modify profile details (name and email) from the UI.
+:::
+
 ----
 
 ## Change account password 

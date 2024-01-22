@@ -81,7 +81,17 @@ Export is supported only in JSON (and WAV for voice bot data) format.
     - Connect with **Azure Blob** by providing **Container Name and Connection String**.
     - Connect with **STPT server** by providing **Host name, Port, Username, Password and Path**. 
     - Connect with **Google cloud storage** by providing **Bucket name, Private Key, and Client email**.
-- Click **Connect** and **Next**. 
+- Click **Connect** and **Next**.    
+
+
+:::note    
+To set up Google Cloud Storage (GCS), the JSON keys are automatically downloaded when added to the service account. Alternatively, the IT admin can provide the bucket name, client email, and private key.
+For the proper configuration, ensure that the IAM (Identity and Access Management) role assigned to the Service Account has the `Create objects` permission. These roles can be found within `Cloud Storage`. When you hover over a specific role, the associated permissions will be displayed, helping you identify the one that grants the required access for obtaining the mentioned fields.
+![image](https://imgur.com/bMnuBUY.png)
+
+:::
+
+
 
 ![image](https://imgur.com/yibkjl7.png)
 
