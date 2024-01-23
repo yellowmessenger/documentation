@@ -38,7 +38,7 @@ In the chat archive reports, reports are generated based on when the chats were 
 |22 |ticket_csat|Displays the default ticket CSAT settings - SOLVED / NOT SOLVED / PROVIDED|Has to be enabled from the settings|
 |23 |priority|The priority with which the ticket was created||
 |24 |agent_rating|Displays the feedback rating the agent has received for the ticket from the scale of 1 - 5 or NOT PROVIDED|Has to be enabled from the settings|
-|25 |agent_emailThe email ID of the agent assigned to the ticket||
+|25 |agent_email | The email ID of the agent assigned to the ticket||
 |26 |chat_link|The public chat URL of the chat transcript||
 |27 |note|Notes added by the Agents, Admins or collaborators for that ticket||
 |28 |number_reassignments|The number of times the ticket was transferred by the agents/admins|
