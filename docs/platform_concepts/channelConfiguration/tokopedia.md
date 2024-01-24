@@ -14,7 +14,7 @@ Connecting Tokopedia to Yellow.ai enables the following features:
 To set up Tokopedia bot, you need to perform the following:
 
 * [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
-* [Create Developer console](#Connect)
+* [Create Developer console](https://developer.tokopedia.com/openapi/guide/guides/developer-console/)
 
 
 ### Create Developer console
