@@ -32,7 +32,7 @@ Following are the default datasets and their functions:
 
 :::note
 
-The default tables contain data for the past 190 days. If you require historical data beyond this timeframe, you have the option to generate it using the Export data feature within [Data Ops](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) (or within your respective modules, for example, check the Engage module for Notification reports).  
+The Notification reports table contains data for the past 190 days. If you require historical data beyond this timeframe, you have the option to generate it using the Export data feature within [Data Ops](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) (or Engage module).
 
 :::
 
