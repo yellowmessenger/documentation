@@ -21,7 +21,7 @@ Following are the default datasets and their functions:
 | **Email tickets** |  Analyse operational metrics and agent performance for email tickets, and create your custom analytics dashboards. |
 | **Inbox call records** | Analyse details regarding the calls between inbox agents and end users. |
 |**Inbox events**| Analyse agent performance by deep diving into first response time, average handling time, resolved and missed tickets, etc.|
-| **Knowledgebase articles** | Analyse views, likes, dislikes and other details of the articles published on the inbox knowledgebase section. | 
+| **Knowledgebase articles** | Analyse views, likes, dislikes and other details of the articles published in the inbox knowledgebase section. | 
 | **Message events** | Data about the user traffic metrics here, messages exchanged, sessions created, user demographics, devices they are using, etc on a channel level. |
 | **Notification Reports** | Deep dive into how the campaigns are performing, which channel is doing well, how are different templates performing, how many notifications are failing, etc. |
 | **User Engagement Events** | Check how your users are engaging with the bot, flows they are taking, agent transfers, flow switches, unidentified utterances, etc. |
@@ -29,6 +29,7 @@ Following are the default datasets and their functions:
 |**Video Chats**|Analyse the usage metrics for video calling tickets, and create your custom dashboards.|
 | **Voice Bot Events** | Find insights around voice bots. Number of inbound/outbound calls, calls per user, region, call duration, etc. |
 |**Call details report** |CDR is a report of telephony data such as call duration, caller ID, called number, call status, and call type obtained from each call (bot conversation with customer). |
+| **Knowledge base report** | Analyse query resolution rates, failure reports and a dump of all queries that have been handled by Knowledge base (Studio). |
 
 :::note
 

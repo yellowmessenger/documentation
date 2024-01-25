@@ -1,11 +1,27 @@
 ---
-title: Event descriptions of default tables on data explorer 
+title: Descriptions of default table columns on data explorer 
 sidebar_label : Default DB table descriptions 
 ---
 
+## Knowledge base report table
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#2-type-of-events) to learn about events. 
 
+| Field             | Description                                                   |
+|-------------------|---------------------------------------------------------------|
+| TIMESTAMP         | Time at which the query was made to the Language Model (LLM)  |
+| ORIGINAL_QUERY    | Message typed out by the user  (Input)                                |
+| CONV_HISTORY      | Previous user and bot messages before the user's message      |
+| REPHRASED_QUERY   | True query considering context from conversational history   |
+| DOCUMENT_TAGS     | Document tag values, if any, passed                            |
+| WAS_SUMMARY_GIVEN | True or false value stating if the response was summarized    |
+| ANSWER            | Copy of the answer provided by the bot to the asked query     |
+| LINKS             | Copy of the web links provided by the bot                      |
+| SITE_KEY          | Website domain based on which the answer was retrieved        |
+| UID               | Unique user ID of the user having the conversation             |
+| TRACE_ID          | Unique ID of the query for further analysis on search          |
+
+
+----
 
 ## Bot events
 
@@ -42,11 +58,11 @@ sidebar_label : Default DB table descriptions
 |unknown-message |Fired when an unknown message is received|
 |widget_loaded|Fired when a widget is loaded|
 
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#2-type-of-events) to learn about events. 
+
 -----
 
 ## Platform user events
-
-
 
 | Events | Description |
 | -------- | -------- |
@@ -73,10 +89,39 @@ sidebar_label : Default DB table descriptions
 |user-initiated|Fired when a new session is created from a user message for the WhatsApp channel|
 |business-initiated|Fired when a new session is created by notification from the business side for the WhatsApp channel|
 
+-------
 
------
+## User engagement events table
 
-## User engagement events
+Following are the fields tracked on the user engagement events table: 
+
+| Field            | Description                                                                                                          |
+|------------------|----------------------------------------------------------------------------------------------------------------------|
+| TIMESTAMP        | The timestamp of the first occurrence of the event within a 30-minute window. If the same event occurs again with the same data, the count column value will be rolled up by 1. |
+| BID              | Business Identifier, a unique identifier for the business associated with the event.                                  |
+| CATEGORY         | An umbrella term for journeys; certain journeys can be grouped under this category.                                    |
+| CITY             | Approximate city location identified by the platform.                                                                  |
+| COUNTRY          | Approximate country location identified by the platform.                                                               |
+| CUSTOMID1        | Custom Identifier from Customer Data Platform (CDP).                                                                   |
+| CUSTOMID2        | Custom Identifier from Customer Data Platform (CDP).                                                                   |
+| DEVICE           | Approximate user device value identified by the platform, such as mobile or desktop.                                   |
+| EVENT            | The specific event that occurred.                                                                                     |
+| EVENTINFO        | Additional information stored by the platform (not for customer customization).                                       |
+| JOURNEY          | The flow name under which this event was generated.                                                                    |
+| PLATFORM         | Approximate underlying platform of the user device (e.g., Desktop can have Windows, Linux).                            |
+| STEP             | Step name in the Studio flow under which this event was generated.                                                     |
+| REGION           | Geographical location (state) identified where the bot is being used.                                        |
+| SOURCE           | Different channel integration from where the user triggered the event, such as Yellowmessenger, WhatsApp, etc.        |
+| TARGETINFO       | Used for storing additional information for some events, such as journey switched.                                     |
+| UID              | Unique Identifier of the User.                                                                                        |
+| SESSIONID        | Unique Identifier of the User for a 24-hour timeframe from the first event triggered by the user.                     |
+| LANGUAGE         | Language identified by the platform during the ongoing interaction.                                                    |
+| INTERACTIONTYPE  | User input classification, for example, whether the user chose a quick reply or typed the input.                       |
+| COUNT            | Rolled-up value of the event where the data was exactly the same, with differences only in time (this is associated with the timestamp description). |
+| VALUE            | Used for pushing a value associated with the event; currently not being used for anything and defaulted to 0.       |
+
+
+### User engagement events
 
 Following are the events tracked on the user engagement events table: 
 
@@ -104,7 +149,20 @@ Following are the events tracked on the user engagement events table:
 | user-session            | Fired when a session is created based on a USER message                                                            | Controller, whatsapp-service, executor v1 (zendesk), executor v2(zendesk) | druid-bot-user-queue | userEvents                         |
 | user-initiated          | Fired when a new session is created from a user message for the WhatsApp channel                                    | whatsapp-service               | druid-bot-user-queue             | userEvents                         |
 | business-initiated      | Fired when a new session is created by notification from the business side for the WhatsApp channel               | whatsapp-service               | druid-bot-user-queue             | userEvents                         |
-
+| bot-closed              | Fired when the Bot is closed by the user (close button)                                                            |                                 |                                  |                                   |
+| bot-icon-clicked        | Fired when the Bot avatar (in title bar) is clicked by the user                                                     |                                 |                                  |                                   |
+| bot-icon-loaded         | Fired when the Bot avatar is displayed to the user (on load)                                                        |                                 |                                  |                                   |
+| bot-opened              | This occurs when a user clicks on the chat bubble to open the bot.                                                   |                                 |                                  |                                   |
+| card-cta-clicked        | Fired when the User clicks on the link configured in the card buttons                                                |                                 |                                  |                                   |
+| message-hyperlink-clicked| Fired when the User clicks on the link configured in the text message                                                |                                 |                                  |                                   |
+| banner-cta-clicked      | Fired when the User clicks on the link configured in the callout banner                                               |                                 |                                  |                                   |
+| page-loaded             | Fired every time the client website page is loaded/reloaded where our script is running                              |                                 |                                  |                                   |
+| pwa-loaded              | Fired when the PWA version of the bot script is loaded                                                             |                                 |                                  |                                   |
+| pwa-opened              | Fired when the PWA bot is opened by the user                                                                       |                                 |                                  |                                   |
+| bot-loaded              | Fired when the Bot script is loaded on the website                                                                 |                                 |                                  |                                   |
+| bot-session             | Fired when a session is created based on a bot message (first message sent by the bot). It has a session time window of 24hrs for a given UID and source |                                 |                                  |                                   |
+| condition-recorded      | Fired when a condition node is executed in a flow                                                                 |                                 |                                  |                                   |
+| invalid-response        | Fired when an invalid response other than the provided option is selected/entered by the user                      |                                 |                                  |                                   |
 
 **Other events**:
 
