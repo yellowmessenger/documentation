@@ -355,6 +355,11 @@ module.exports = {
       ],
     },
   
+// Email automation doc is added here without categorization
+
+  "platform_concepts/emailautomation",
+
+
 
 // Inbox Section 
 
