@@ -20,7 +20,7 @@ This integration allows you to perform the following tasks:
 
 ## Connect ServiceNow with Yellow.ai
 
-Create an app on ServiceNow to fetch instance URL, client ID and secret and input the details in Yellow.ai to establish this integration.
+Create an app on ServiceNow to fetch instance URL, client ID and client secret and input the details in Yellow.ai to establish this integration.
 
 ### Create an app on ServiceNow
 
@@ -44,7 +44,7 @@ Create an app on ServiceNow to fetch instance URL, client ID and secret and inpu
  
    ![](https://i.imgur.com/wLMT7Lp.png)
 
-5. Copy the **Instance URL** (the URL on the  address bar of your Service now account(as shown below), **Client ID** and **Client Secret To copy the client secret, click the lock icon and then copy.
+5. Copy the **Instance URL** (the URL on the  address bar of your Service now account(as shown below), **Client ID** and **Client Secret**. To copy the client secret, click the lock icon and then copy.
 
    ![](https://i.imgur.com/rfa8kRA.png)
 
@@ -72,7 +72,7 @@ Create an app on ServiceNow to fetch instance URL, client ID and secret and inpu
 
 ## Manage ServiceNow from Yellow.ai
 
-From Yellow.ai you can access your ServiceNow instance and create,update and search a ticket, upload,get file and file list.
+From Yellow.ai you can access your ServiceNow instance and create, update and search a ticket, upload,get file and file list.
     
 1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) that suits your use case.
 2. At whichever point of the conversation you want the bot to access ServiceNow, include Service now Integration node. To include the node, click to add a node > **Integrations** > **ServiceNow**.
@@ -86,9 +86,9 @@ From Yellow.ai you can access your ServiceNow instance and create,update and sea
   * **Account name:** Choose the Service now account for the intended action.
    *  **Action:** Select the action to perform. 
    *  **Select Objects:** Choose the object (**Incident**/**Request**) in which the chosen action should be performed. **Get File** action is an exception, the **Select Objects** field doesn't apply to this action.
-   *  Once you choose the object, the corresponding fields for that action and object is displayed. You need to fill those fields and to fill them you can  either add nodes to the flow before the ServiceNow node to collect this information from the user or you can click Or and type the information yourself.
+   *  Once you choose the object, the corresponding fields for that action and object is displayed. Fill these fields by adding nodes before the ServiceNow node to collect user information, or click 'Or' to manually input the details.
  
- To collect the information from user, add a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#docusaurus_skipToContent_fallback) and [store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables). Pass that variable in the respective field.
+   To collect the information from user, add a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#docusaurus_skipToContent_fallback) and [store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables). Pass that variable in the respective field.
  
    *  **Parse API response:** Select the function that will parse the API response(optional). To know more about how to use this, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/send-receive-apiresponses#parse-api-responses).
 
@@ -97,7 +97,7 @@ From Yellow.ai you can access your ServiceNow instance and create,update and sea
 
 ## Example
 
-Let's say that in **ServiceNow**, you want to look for a ticket in Requests using the ticket number. 
+Let's say that you want to fetch a ticket's information in **Requests** using the ticket number. 
 
 1. Add a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#docusaurus_skipToContent_fallback) and collect the ticket number value in a variable.
 
@@ -163,6 +163,3 @@ For example, you can use ``{{{variables.variablename.result.0.number}}}`` to ret
 }
 
 ```
-
-
-
