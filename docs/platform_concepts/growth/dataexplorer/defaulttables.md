@@ -30,6 +30,13 @@ Following are the default datasets and their functions:
 | **Voice Bot Events** | Find insights around voice bots. Number of inbound/outbound calls, calls per user, region, call duration, etc. |
 |**Call details report** |CDR is a report of telephony data such as call duration, caller ID, called number, call status, and call type obtained from each call (bot conversation with customer). |
 
+:::note
+
+The Notification reports table contains data for the past 190 days. If you require historical data beyond this timeframe, you have the option to generate it using the Export data feature within [Data Ops](https://docs.yellow.ai/docs/platform_concepts/growth/dataops) (or Engage module).
+
+:::
+
+
 -----
 
 ## Add filters to the default table 

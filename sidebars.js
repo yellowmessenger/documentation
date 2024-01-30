@@ -87,6 +87,7 @@ module.exports = {
     "cookbooks/inbox/priority-assignee",
     "cookbooks/inbox/transferwithoutinfo",
     "cookbooks/inbox/notifycustomerofflinehandling",
+    "cookbooks/inbox/videourl",
   ],
 },    
 // end of inbox 
@@ -121,6 +122,21 @@ module.exports = {
   ],
 }, 
 //end of engage 
+
+//channels 
+{
+  type: "category",
+  label: "Channels",
+  collapsed: true,
+  items: [
+    "cookbooks/channels/userinteraction",
+    "cookbooks/channels/configurethemes",
+    "cookbooks/channels/CORSerrors",
+    "cookbooks/channels/chatwidget-mobile-sdk",
+
+  ],
+}, 
+//end of channels 
 
 // Integrations
 {
@@ -340,6 +356,11 @@ module.exports = {
       ],
     },
   
+// Email automation doc is added here without categorization
+
+  "platform_concepts/emailautomation",
+
+
 
 // Inbox Section 
 

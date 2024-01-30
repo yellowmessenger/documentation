@@ -49,7 +49,9 @@ After the upgrade, you can work on a three enviornment platform.
 - **Premium plan**: Offers 3 environments: Sandbox for primary bot development, Staging for thorough testing, and Production for active customer service.
 
 :::note
-When you sign up, you get a free subscription, which can be upgraded. New bots created without upgrading are placed under the free subscription. To create a new bot, you need to own a subscription. Without ownership, you can only use existing bots you have access to.  
+When you sign up, you get a free subscription, which can be upgraded. New bots created without upgrading are placed under the free subscription. 
+
+To create a new bot, you need to own a subscription. Without ownership, you can only use existing bots you have access to.  
 :::
 
 ------
