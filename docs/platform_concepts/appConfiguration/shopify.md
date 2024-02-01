@@ -91,7 +91,8 @@ You need to use the API token to establish integration with Yellow.ai as explain
 
 
 :::note
-Please ensure that you enter your store name exactly as it is in the **Shopify** account.
+* Please ensure that you enter your store name exactly as it appears in your Shopify account.
+* For the initial user backfilling of the recent 10k user data, please reach out to the team to initiate the process.
 :::
 
 ***
