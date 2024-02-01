@@ -28,7 +28,7 @@ When you click **+ Add new function**, the platform automatically provides you w
 
 In your code, you can use the following arguments to access specific pieces of information.
 
-| arg | Data type | Use |
+| **arg** | **Data type** | **Use** |
 | -------- | -------- | -------- |
 | data.variables.<variable_name>   | String |To access any bot variable in the function. |
 | data.channel | String | To access channel names like whatsapp, yellowmessenger, facebook, etc.|
@@ -42,6 +42,27 @@ In your code, you can use the following arguments to access specific pieces of i
 | context.history | Object | Contains history of nodes visited by user.|
 | prediction.intents | String | To get [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) predicted from the user message. |
 | prediction.entities |String| To get [entities](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities) predicted from the user message. |
+
+To access user specific information, use the arguments mentioned in the following table:
+
+| **User property name** | **arg** | **Data type** | **Description** |
+|-------------------|-------------------|---------------|------------------------|
+| userId | data.user.userId | string | Unique identifier for a user. <br/>As per your setting, this could be a mobile number, email address, or any unique identifier. For more details, see [here](#1-userid-as-a-property). |
+| firstName | data.user.firstName | string | The first name of the user |
+| lastName | data.user.lastName | string | Last name of the user |
+| gender | data.user.gender | string | Gender of the user |
+| country | data.user.country | string | Country of the user. In bot conversation, it identifies this property based on the location of the user’s IP address |
+| city | data.user.city | string | City of the user. In bot conversation, it identifies this property based on the location of the user’s IP address |
+| language | data.user.language | string | Preferred language of the user |
+| timezone | data.user.timezone | string | Identifies based on the location of user's IP address |
+| email | data.user.email | email | Email address of the user |
+| phone | data.user.phone | phone | Phone number of the user with country code |
+| lastChannel | data.user.lastChannel | string | Recent channel (set up on yellow.ai) where the user had an active session <br/>You can update this property to cover touch-points/channels outside yellow.ai. |
+| dob | data.user.dob | date | Date of birth of the user. |
+| emailOptin | data.user.emailOptin | boolean | Subscription status of the user to emails. The value is `true` if a user has subscribed to your emails, else it is `false` |
+| smsOptin | data.user.smsOptin | boolean | Subscription status of the user to SMS. The value is `true` if a user has subscribed to your SMS, else it is `false` |
+| whatsAppOptin | data.user.whatsAppOptin | boolean | WhatsApp subscription status of the user. This is `true` if a user has subscribed to your WhatsApp messages, else it is `false`. |
+| tags | data.user.tags | list | List of groups associated with the user. You can add tags to users manually. |
 
 ### Create a new function
 

@@ -83,11 +83,14 @@ If your bot is unable to understand the user input, consider these helpful sugge
 
 ### Document search
 
-   Document search lets the bot search documents for answers and respond to user queries. For information regarding the supported document types for upload and their corresponding procedures, please click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition#-2-upload-files-to-document-section).     
+   The document search allows the bot to search through various documents to provide accurate and relevant responses to user queries. To learn more about the types of documents supported for upload and the associated procedures, refer to this link [link](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition#-2-upload-files-to-document-section).     
 
-   <img src="https://i.imgur.com/GyKQ3VN.png" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/TdVPAiA.png" alt="drawing" width="50%"/>
 
-1. **Enable**: Activate this option to enable document search.
+1. **Enable as autofall-back**: Activate this option to enable show fallback messages when the bot doesn't understand user queries. Enter the fallback message in the **Model Fallback Message** field below.
+  
+   <img src="https://i.imgur.com/v1D5hUQ.png" alt="drawing" width="50%"/>
+
 2. **Enable summarised results**: Opt for summarized results to have the bot condense and present information to the user.
 
    <img src="https://i.imgur.com/gRy9PX5.png" alt="drawing" width="40%"/>
@@ -95,6 +98,15 @@ If your bot is unable to understand the user input, consider these helpful sugge
 3. **Enable links for summarized answer**: Enable this to provide summarized results with supported links.
 
    <img src="https://i.imgur.com/n4JYAFK.png" alt="drawing" width="40%"/>
+
+4. **Model bot response**: Customize your bot's tone to align with your preferred response style.
+
+| Tones               | Descriptions                                                  | Example                                                          |
+|---------------------|---------------------------------------------------------------|------------------------------------------------------------------|
+| Empathetic          | Responds in a way that acknowledges and reflects the user's emotions.              | <img src="https://i.imgur.com/J41xQmE.png" alt="drawing" width="70%"/>                   |
+| Formal              | Uses a professional and formal tone in responses.          | <img src="https://i.imgur.com/fTfC4JQ.png" alt="drawing" width="70%"/>                |
+| Short Answers       | Conveys information concisely with brief responses and minimal descriptions. | <img src="https://i.imgur.com/V7UUsvi.png" alt="drawing" width="70%"/>                   |
+| Instructions based  | Provides responses in a clear instructional format.            | <img src="https://i.imgur.com/xn3jBdH.png" alt="drawing" width="70%"/>  |
 
 ### Call out banner
 

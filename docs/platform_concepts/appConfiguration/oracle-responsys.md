@@ -47,7 +47,7 @@ You can also refer to this video to set up the installation.
 
  ![](https://i.imgur.com/w4hYZkU.png)
 
-7. Configure WABA number for this bot by following steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#1-connect-your-whatsapp-business-account).
+7. Configure WABA number for this bot by following steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration#connect-your-whatsapp-business-account).
 8. Set up Whatsapp templates by following steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/templates/whatsapptemplate#docusaurus_skipToContent_fallback).
 
 ## Install Yellow.ai app on Oracle
