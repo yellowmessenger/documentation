@@ -19,7 +19,8 @@ Depending on your bot subscription, you'll see different environments, click on 
 
 ![image](https://imgur.com/jVVdcrx.png)
 
-Environments include **Sandbox, Staging, Production, Live,** and **Development**.
+Environments include **Sandbox, Staging, Production, Live,** and **Development**. You can opt the required enviornments for your bot.
+
 
 --------
 
@@ -47,6 +48,7 @@ Published bots operate in the Live mode once the publish request is approved. No
 -----
 
 ### Premium environments
+
 
 <!--
 **Sandbox,Staging and Production modes**

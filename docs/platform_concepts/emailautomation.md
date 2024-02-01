@@ -3,8 +3,10 @@ title: AI-powered Email Automation
 sidebar_label : Email automation 
 ---
 
-:::Note
+:::note
+
 Email automation is a gated feature. Reach out to the support team to enable it for your bot.
+
 :::
 
 ## Overview 
@@ -86,6 +88,6 @@ To set up email automation for your email ID, follow these steps:
 > While creating flows, note that only **Text** and **Action** nodes are supported. 
 
 3. **Test the output**: Once the email is configured, the bot automatically generates responses to any emails received on the configured email ID. Send a test email (initiate a conversation based on the input given to your bot) to test the automated output.
-4. **Debug your flow**: Analyze the conversation by looking at it on Studio > Analyze > Conversation logs. Based on the conversation taking place, fine-tune the bot's ability to comprehend emails and generate accurate responses.
+4. **Debug your flow**: Analyze the conversation by looking at it on **Studio > Analyze > Conversation logs**. Based on the conversation taking place, fine-tune the bot's ability to comprehend emails and generate accurate responses.
 
 > Learn more about Conversation logs [here](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs). 
