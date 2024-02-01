@@ -41,11 +41,20 @@ Remove filters when the data is summarized.
 ### Group by
 
 1. Records can be grouped by a specific column. Select the column name (multiple column names can be selected). 
-2. Click **Apply**.          
 
-    <img  src="https://i.imgur.com/jPQkIrU.png"  width="40%"/>
-3. Records can be listed page wise defining the number of records per page. Records can be sorted in ascending and descending order by a specific column.  
-4. Click on the column label to sort the data.
+2. **Group ranges of integers with bucketing**: When dealing with a column containing integer values, you can use the Group By feature. Without adding buckets, the generated data will be extensive, including all the integer numbers present in the table.
+    - To refine and analyze the data more effectively, you can utilize the **+Add Bucket** option. This allows you to perform varied grouping, classifying the data into smaller buckets within a specified range. For example, by adding values (3, 5, 7) under Varied, you can group the data into buckets such as (<3, 3 - 5, 5 - 7, >=7).
+    <img  src="https://imgur.com/r3RxCXg.png"  width="90%"/>
+    - To modify or remove the Bucket values applied, you can click the **Edit** or **Delete** icon next to the bucket range.                               
+    <img  src="https://imgur.com/EZUCuPk.png"  width="60%"/>
+
+> Bucket can be created for only one integer column. 
+
+3. Click **Apply**.          
+    ![image](https://imgur.com/5rlk4zH.png)
+    
+4. Records can be listed page wise defining the number of records per page. Records can be sorted in ascending and descending order by a specific column.  
+5. Click on the column label to sort the data.
     ![](https://i.imgur.com/woojlzm.png)
 
 ----
