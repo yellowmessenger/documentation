@@ -86,6 +86,10 @@ Agents should have AWA agent roles for accessing agent workspace.
 
 15. Click **Connect**.
 
+:::info
+You can add a maximum of 15 accounts. Follow the above mentioned steps to add multiple accounts.
+:::
+
 ## Activate ServiceNow events in Yellow.ai
 
 To inform the bot about specific events in ServiceNow, you must enable these events within Yellow.ai. By doing so, you can configure the bot to take specific actions in response to these events.
@@ -109,6 +113,10 @@ To activate these events:
 2. Click the ellipsis button and click **Activate** on the respective events.
 
 ## Connect users to ServiceNow Live Agents
+
+:::info
+Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
+:::
 
 You need to build a flow that redirects your users to the ServiceNow agents. 
 

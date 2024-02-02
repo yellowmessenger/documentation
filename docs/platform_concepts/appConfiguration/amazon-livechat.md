@@ -12,7 +12,8 @@ This integration lets you use raise ticket node to start a conversation with Ama
 <img src="https://i.imgur.com/HHKLO97.png" alt="drawing" width="100%"/>
 
 :::note
-In Raise ticket action node, Amazon Connect Live Agent Custom Fields will accept object type variable.
+1. In Raise ticket action node, Amazon Connect Live Agent Custom Fields will accept object type variable.
+2. Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
 :::
 
 Example:

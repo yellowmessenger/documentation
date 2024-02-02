@@ -46,7 +46,7 @@ To connect your Epic FHIR account with Yellow.ai, follow the these steps:
 2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
 
-4. You can add up to five merchant accounts. To add another Zoho CRM account, click on **Add account** and follow the steps mentioned above. 
+4. You can add up to 15 accounts. To add another Epic FHIR account, click on **Add account** and follow the steps mentioned above. 
 
 
 :::note 

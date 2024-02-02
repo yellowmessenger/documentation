@@ -61,7 +61,7 @@ Create an app on ServiceNow to fetch instance URL, client ID and client secret a
 
    <img src="https://i.imgur.com/3FcGmnh.png" alt="drawing" width="70%"/>
 
-7. If you have multiple accounts, follow the above mentioned steps to add each of them. You can add a maximum of 5 merchant accounts.
+7. If you have multiple accounts, follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
 
    ![](https://i.imgur.com/P3eT1jA.png)
 
