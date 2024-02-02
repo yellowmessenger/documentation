@@ -235,7 +235,7 @@ To add custom LLM,
 2. Fill in the following fields:
 
 * **Give account name:** Provide a name to your LLM account.
-* **LLM Provider:** Choose the provider as **Azure Open AI**.
+* **LLM Provider:** Choose your LLM provider.
 
    ![](https://i.imgur.com/UXsaPcu.png)
 
