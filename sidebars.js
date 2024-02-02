@@ -133,6 +133,7 @@ module.exports = {
     "cookbooks/channels/configurethemes",
     "cookbooks/channels/CORSerrors",
     "cookbooks/channels/chatwidget-mobile-sdk",
+    "cookbooks/channels/Viber-business",
 
   ],
 }, 
@@ -1071,6 +1072,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/sunshine",
         "platform_concepts/channelConfiguration/shopee",
         "platform_concepts/channelConfiguration/tokopedia",
+        "platform_concepts/channelConfiguration/infobip",
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },
