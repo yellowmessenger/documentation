@@ -1171,6 +1171,7 @@ module.exports = {
             "platform_concepts/appConfiguration/intercom-livechat",
             "platform_concepts/appConfiguration/kapture-crm",
             "platform_concepts/appConfiguration/locobuzz-livechat",
+            "platform_concepts/appConfiguration/microsoft-live",
             "platform_concepts/appConfiguration/nice-incontact",
             "platform_concepts/appConfiguration/salesforcelivechat",
             "platform_concepts/appConfiguration/servicenow-livechat",

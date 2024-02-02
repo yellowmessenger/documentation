@@ -46,7 +46,7 @@ To connect your Hubspot CRM account with Yellow.ai, follow the these steps:
  
    <img src="https://i.imgur.com/8hvI81j.png" alt="drawing" width="60%"/>
 
-5. You can add up to five merchant accounts. To add another Hubspot CRM account, click on **Add account** and follow the steps mentioned above.
+5. You can add up to 15 accounts. To add another Hubspot CRM account, click on **Add account** and follow the steps mentioned above.
 
    ![](https://i.imgur.com/ncdA1T2.png)
 

@@ -62,6 +62,10 @@ When multiple accounts are added, select the appropriate account for each node, 
 :::
 
 ### 2.1 Chat with Avaya Live Agent
+
+:::info
+Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
+:::
  
  1. In the Studio flow builder, select the **Raise Ticket** node.
 

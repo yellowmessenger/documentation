@@ -51,7 +51,7 @@ To connect your Zoho CRM account with Yellow.ai, follow the these steps:
 
    ![](https://i.imgur.com/3bBqQIe.png)
 
-5. You can add up to five merchant accounts. To add another Zoho CRM account, click on **Add account** and follow the steps mentioned above. 
+5. You can add up to 15 accounts. To add another Zoho CRM account, click on **Add account** and follow the steps mentioned above. 
 
    ![](https://i.imgur.com/ncw7DQU.png)
 

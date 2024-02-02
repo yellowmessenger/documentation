@@ -17,7 +17,7 @@ Yellow.ai's integration with Nice Incontact allows you to seamlessly connect you
 
 :::note
 1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 5 merchant accounts.
+2. You can add a maximum of 15 accounts.
 3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
 4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
 5. Only text is being supported from both the user and agent side.
@@ -29,6 +29,10 @@ Yellow.ai's integration with Nice Incontact allows you to seamlessly connect you
 In this integration, you can use the **Raise ticket** node to create a conversation with Nice Incontact and once the conversation gets initiated, the user can talk to the Nice Incontact agent. After the conversation ends, bot takes over the conversation with the user.
 
 <img src="https://i.imgur.com/V37htaq.png" alt="drawing" width="100%"/>
+
+:::info
+Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
+:::
 
 :::note
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.

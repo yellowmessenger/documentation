@@ -14,6 +14,11 @@ This document elaborates on the integration approach for a custom live agent to 
 6. Two-way communication between the end customer and agent
 7. Closure of the ticket
 
+:::info
+Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
+:::
+
+
 ## 1. Design principles
 
 1. The integration approach is defined to be channel agnostic, the 3rd party system should consider Yellow as the channel and Yellow will ensure that the end customer connects with an agent from any channel ( Web, WhatsApp etc.) 

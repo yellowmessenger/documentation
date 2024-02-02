@@ -127,7 +127,7 @@ To copy the webhook:
 :::
 
 2. Click **Connect**.
-3. You can add up to five merchant accounts. To add another Zoho CRM account, click on **Add account** and follow the steps mentioned above. 
+3. You can add up to 15 accounts. To add another Zoho CRM account, click on **Add account** and follow the steps mentioned above. 
 
    ![](https://i.imgur.com/XaeEnce.png)
 
