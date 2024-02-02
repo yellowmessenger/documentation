@@ -16,7 +16,7 @@ Once you configure the LLM integration, the LLM node will be available which can
 2. Fill in the following fields:
 
  * **Give account name:** Provide a name to your LLM account.
- * **LLM Provider:** Choose the provider as **Azure Open AI**.
+ * **LLM Provider:** Choose your LLM provider.
 
 You can derieve **API Key** and **Resource** from the endpoint of your GPT 3.5 or GPT 4 credentials as mentioned below:
 

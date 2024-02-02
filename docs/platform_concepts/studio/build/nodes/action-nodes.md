@@ -309,6 +309,28 @@ Quit the current flow and launch another flow with this node. Here, flow switche
 
 ---
 
+### 1.13 Prompt Executor node
+
+:::info
+This node works only if you have configured an LLM model. For steps on configuring the LLM model, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#model-configuration).
+:::
+
+ The Prompt Executor node processes the prompt you provided, using input from the user. It fetches instant responses from the AI model and displays them to end users, adhering to the specified prompt.
+
+![](https://i.imgur.com/ZKKHrQ5.png)
+
+Use a [prompt nod](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes)e to [collect the dynamic user response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) and pass the variable in **User Query**. 
+
+For instance, imagine you wish to share food recipes with the end user. Use a prompt node to inquire about the preferred recipe, save the response in a variable, and pass it here. The node will display the recipe for the ingredient the user asked about.
+
+### Goal configuration settings
+
+Here you can control randomness, sets limits for concise outputs and refine word selection based on probability. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#goal-configuration-setting) to know about this in detail.
+
+### Model configuration
+
+Model configuration provides you the freedom to manually input your own custom GPT or LLM credentials into the bot. You can then use various models on different dynamic nodes within the same bot independently. This grants you the flexibility to conduct extensive experiments. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#model-configuration) for the steps.
+
 ## <a name="cb"></a> 2. Code based nodes
 
 
@@ -662,7 +684,7 @@ The Sync database node is an action workflow node that lets you sync the bot tab
 
 * **Insert:** Insert the data as new rows to the existing table.
 * **Update:** Update the existing data with the new data to update the existing rows. Users need to select the primary key. If there is a primary key match, the row will be updated else a new row will be added.
-* **Import:** Drop the table and replace it with the data that comes from the API.
+* **Import:** Truncates existing table completely and replaces it with data from API call.
 
 :::note
 1. The column names in the table should be exactly the same as the attribute names in the JSON response.
