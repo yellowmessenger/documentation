@@ -45,8 +45,9 @@ Remove filters when the data is summarized.
 2. **Group ranges of integers with bucketing**: When dealing with a column containing integer values, you can use the Group By feature. Without adding buckets, the generated data will be extensive, including all the integer numbers present in the table.
     - To refine and analyze the data more effectively, you can utilize the **+Add Bucket** option. This allows you to perform varied grouping, classifying the data into smaller buckets within a specified range. For example, by adding values (3, 5, 7) under Varied, you can group the data into buckets such as (<3, 3 - 5, 5 - 7, >=7).
     <img  src="https://imgur.com/r3RxCXg.png"  width="90%"/>
-    - To modify or remove the Bucket values applied, you can click the **Edit** or **Delete** icon next to the bucket range.                               
-    <img  src="https://imgur.com/EZUCuPk.png"  width="60%"/>
+    - To modify or remove the Bucket values applied, you can click the **Edit** or **Delete** icon next to the bucket range.
+    
+    <img  src="https://imgur.com/EZUCuPk.png"  width="50%"/>
 
 > Bucket can be created for only one integer column. 
 
