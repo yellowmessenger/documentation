@@ -684,7 +684,7 @@ The Sync database node is an action workflow node that lets you sync the bot tab
 
 * **Insert:** Insert the data as new rows to the existing table.
 * **Update:** Update the existing data with the new data to update the existing rows. Users need to select the primary key. If there is a primary key match, the row will be updated else a new row will be added.
-* **Import:** Drop the table and replace it with the data that comes from the API.
+* **Import:** Truncates existing table completely and replaces it with data from API call.
 
 :::note
 1. The column names in the table should be exactly the same as the attribute names in the JSON response.
