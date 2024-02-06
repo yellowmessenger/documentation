@@ -1,6 +1,6 @@
 ---
 title: Unified access control for T1 & T2 bots
-sidebar_label: Unified ACL
+sidebar_label: Access control for T1&2 bots
 ---
 
 Tier 1 (T1) and Tier 2 (T2) bots operate in dual environments, including Staging and Production or Development and Live. The access control for these environments is unified, meaning that access to Staging/Development bots will mirror the access control settings of the Live/Production bots for a given user.
@@ -17,7 +17,7 @@ Roles for adding collaborators to your bot remain consistent across all tiers. Y
 | Admin + (Database Viewer/ Inbox (Admin)/Inbox (Agent)/ Insights (Analytics)/ Insights (Admin)/Engagement (Admin)/Engagement (User)) | Admin + Agent + (Database Viewer/ Inbox (Admin)/Inbox (Agent)/ Insights (Analytics)/ Insights (Admin)/Engagement (Admin)/Engagement (User)) |
 | Developer + (Database Viewer/ Inbox (Admin)/Inbox (Agent)/ Insights (Analytics)/ Insights (Admin)/Engagement (Admin)/Engagement (User)) | Developer + Agent + (Database Viewer/ Inbox (Admin)/Inbox (Agent)/ Insights (Analytics)/ Insights (Admin)/Engagement (Admin)/Engagement (User)) |
 | Admin + Developer + (Database Viewer/ Inbox (Admin)/Inbox (Agent)/ Insights (Analytics)/ Insights (Admin)/Engagement (Admin)/Engagement (User)) | Admin + Developer + (Database Viewer/ Inbox (Admin)/Inbox (Agent)/ Insights (Analytics)/ Insights (Admin)/Engagement (Admin)/Engagement (User)) |
-| Database Viewer </br> Inbox (Admin) </br> Inbox (Agent) </br> Insights (Analytics) </br> Insights (Admin) </br> Engagement (Admin) </br> Engagement (User) | No Access |
+| Database Viewer <br/> Inbox (Admin) <br/> Inbox (Agent) <br/> Insights (Analytics) <br/> Insights (Admin) <br/> Engagement (Admin) <br/> Engagement (User) | No Access |
 
 **How to read the table?**
 
