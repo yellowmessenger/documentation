@@ -3,21 +3,24 @@ title: Action Nodes
 sidebar_label: Actions
 ---
 
+You can use Action nodes to perform a specific task. For example, you can use the **Send OTP** node to send out an OTP to the user.
 
-Actions are non-interactive nodes that can be used to perform a specific task (background action). These nodes will not display any messages to the user while having a conversation but they run the said tasks in the background. 
+:::info
+Action nodes will not display any message to the user during conversation, they run the configured tasks in the background.
+:::
 
-Different types of action nodes that will be discussed in this article are: 
+The following are the different types of Action nodes available on Yellow.ai:
 
-1. [General](#gen)
-2. [Code Based](#cb)
-3. [Language & Notification](#lang)
-4. [Nodes available only for Workflow](#wf)
+1. [Interactive nodes](#1-interactive-nodes)
+2. [Code Based](#2-code-based-nodes)
+3. [Language & Notification](#3-nodes-for-language--notification)
+4. [Skill nodes](#4-workflow-nodes)
 
----
+## 1. Interactive nodes
 
-## <a name="gen"></a> 1. General action nodes
+Interactive nodes lets you manage and improve bot conversations. These nodes help you trigger events, handle OTPs, search documents and respond to user queries, execute flows within flows, delay implementation, ticket generation, analytics capture, PDF/image generation, user event triggering, data formatting, and flow switching.
 
-### 1.1 Send event 
+### 1.1 Send Event
 
 Record an event with this node. 
 Events are used to record specific actions or capture an important conversion, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) to learn more.
@@ -26,29 +29,44 @@ Events are used to record specific actions or capture an important conversion, c
 
 ----
 
-### 1.2 Send OTP 
+### 1.2 Send OTP
 
-Send OTP to a phone number with this node. 
+This node lets you send an OTP to the mentioned number. 
 
-* Ask and Store the phone number in a variable. 
-* Select the variable name (phone) on the Send OTP node. 
+:::info
+One-Time Passwords (OTPs) serves as a versatile security measure, enhancing user authentication in scenarios such as user registration, account recovery, two-factor authentication (2FA), transaction verification, login security, identity verification, secure messaging, device pairing, coupon redemption, and attendance tracking.
+:::
 
-![](https://i.imgur.com/SKvCnqm.png)
+1. Use the [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to capture the phone number from the user and store that phone number in a variable.
 
-Following text message will be sent to the respective number. 
+   ![](https://i.imgur.com/xgQ2A5t.png)
 
-![](https://i.imgur.com/mDlVuCn.jpg)
+2. Add the **Send OTP node** and choose the variable in which the phone number is stored (in the previous step).
 
-----
+   <img src="https://i.imgur.com/StadUVa.png" alt="drawing" width="80%"/>
+   
+  The user will recieve the OTP in a text message.
+  
+  <img src="https://i.imgur.com/mDlVuCn.jpg" alt="drawing" width="50%"/>
 
 ### 1.3 Verify OTP
 
-Store the entered OTP as a variable and verify it with this node. 
+Use this node to verify the OTP sent to bot users. OTP verification is an important security measure that is used to confirm user identity during various processes.
 
-![](https://i.imgur.com/hH8AAr0.png)
+1. Add a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to get the OTP and store that in a variable.
 
-**Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.
-That is, node connected to success will be executed if the OTP is matched, otherwise, node connected to fallback will get executed. 
+   ![](https://i.imgur.com/xgQ2A5t.png)
+
+2. Add the **Verify OTP** node.
+
+     * **OTP variable**: Choose the variable that contains the otp.
+     * **Store response in**: Choose the variable to store the response of the Verify OTP node. If the variable is not available, create a new one.
+
+   <img src="https://i.imgur.com/e0tytJq.png" alt="drawing" width="80%"/>
+
+3. Add a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text) to **Success** and **Fallback**. Success indicates the successful verification of the otp, Fallback indicates that the verification has failed.
+   
+   <img src="https://i.imgur.com/T2UM4xp.png" alt="drawing" width="80%"/>
 
 ----
 
@@ -76,46 +94,61 @@ Document Search action node is used to answer user query at any point in the flo
 
 ### 1.5 Execute flow 
 
-> This node is available for voice bots. 
+> This node is available for voice bots.
 
+This node lets you executes a different flow from the current flow. Use this node when you want to trigger a flow within a flow. 
 
-Enter another flow with this node. 
-For example, in the below flow, based on the entered user reply the conversation gets directed to other flows. Once that flow is executed, control comes back to the current flow. 
+For example, in a customer support bot, you can provide multiple options such as **Talk to an agent**, **Raise a ticket**, **Check status** and add execute flow node to each of the option. So, when a user clicks on an option, the respective flow gets triggered. 
 
-![](https://i.imgur.com/se58HZm.png)
+   ![](https://i.imgur.com/A9EPpfz.png)
 
------
+Once you add the node, you can choose the flow you want to execute. Click **Go to flow** to check the added flow.
 
 ### 1.6 Delay
 
-Add a time delay between components with this node. 
-Select the number of minutes/hours you want the bot to wait for before executing the next node.
+This node allows you to delay the progression of the conversation to the next node by a few minutes or hours.
 
-![](https://i.imgur.com/Bh3ly48.png)
+For example, in response to a user query about the current temperature, the bot incorporates a delay, imitating real-time data retrieval like "Checking the latest weather in New York City..." After a short pause, it provides the up-to-date information, creating a more effective and engaging interaction.
 
+You can delay by minutes/hours.
+
+   ![](https://i.imgur.com/MLyOwwi.png)
+   
 :::info
  Alternative method is to set the delay on each of the nodes: 
 ![](https://i.imgur.com/t8cBzXn.png)
 :::
------
 
-### 1.7 Raise ticket 
+### 1.7 Raise Ticket
 
-:::note
-This node is used to configure a flow to connect customers with the live inbox agents and provide customer support through **Live chats**. Learn more on live chats [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat).
-:::
+Raise ticket node lets your users connect with live agents in your bot. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to know more about adding live agents to Yellow.ai. You can also connect users with live chat agents in [different third-party applications](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#6-live-chat). 
 
-Raise ticket is used in order to connect bot user to the human agent. You can connect the user to an agent after collecting info and query with this node.  
-This node is used create a live chat request with basic or advanced scenarios such as **Working Hours, Agent Availability, Voice/Video calling**, etc.
+This node is used create a live chat request with basic or advanced scenarios such as **Working Hours**, **Agent Availability**, **Voice/Video calling**, etc.
 
-#### Raise ticket outputs 
+   ![](https://i.imgur.com/Z8VkgD8.png)
+   
+ * **Live chat agent:** Choose the portal in which your live agents are available. It can be Yellow.i Inbox or any live chat integration integrated with your bot.
+ * M**essage after ticket assignment:** The message displayed to the user when an agent is assigned to the chat.
 
-1. **Ticket Closed** - This is bot behaviour after the Agent closes a ticket (when the inbox agent has resolved user query).
-2. **Error** - This can be used as a generic message if ticket creation is not successful. For customised messages, specific errors- event hub can be configured. 
+Name, Mobile, Email and Query fields can be filled by passing variables. Use prompt nodes to collect these data in variables and pass it in the corresponding fields.
 
-#### Raise ticket response
+**Advanced options:**
 
-Raise Ticket action node returns an object response as shown below. You can parse important information from this response to store it in a database or use it on another flow.
+To provide additional information to the ticket.
+
+![](https://i.imgur.com/qt9Y87D.png)
+
+As configured in Inbox Settings, [Tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) and [Custom Fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) will be visible in a multi-select dropdown(i.e. more than one options can be added to ticket)
+
+- **Tags**: Selected Tags from dropdown will be added to the extra details of the ticket (useful for agents to get a quick overview of the issue).
+- **Group code**: Similar tickets can be assigned to relevant groups.
+- **Priority**: Denotes the priority of tickets from high, medium or low. (default priority is MEDIUM)
+- **Voice Call Options**: Voice Call, SIP Call and Auto Start Call can be enabled.
+- **Custom Fields**: Based on the use case additional information collected by bot can be added to ticket. for example, in eCommerce Order ID, Payment Mode, Delivery date etc can be asked before connecting to the agent. Just like key value pairs, once a custom field is selected, an additional prompt will be seen.
+
+<img src="https://cdn.yellowmessenger.com/iE4ppldmrE7k1625673583277.png" alt="drawing" width="65%"/>
+
+The response of a Raise ticket node:
 
 ```json
 {
@@ -171,36 +204,24 @@ Raise Ticket action node returns an object response as shown below. You can pars
   "xmpp": "user_1624003758958"
 }
 ```
-![](https://i.imgur.com/br1Lrcf.png)
 
-While raising a ticket, you can pass fields such as **Name** , **Contact** (Email/Phone Number), and **Query**. Message after ticket assignment will be seen by the user on getting connected to the agent.
+#### Raise ticket outputs 
 
-#### Advanced options
+1. **Ticket Closed**: Add any node to perform the preferred action when a ticket is closed successfuly.
+2. **Error**: Add any node to perform the preferred action when there's an error connecting to an agent.
 
-To provide additional information to the ticket.
-
-![](https://i.imgur.com/hWTC8FI.png)
-
-As configured in Inbox Settings, [Tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) and [Custom Fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) will be visible in a multi-select dropdown(i.e. more than one options can be added to ticket)
-
-- **Tags** - Selected Tags from dropdown will be added to the extra details of the ticket (useful for agents to get a quick overview of the issue).
-- **Department** - Similar tickets can be assigned to relevant departments.
-- **Priority** - Denotes the priority of tickets from high, medium or low. (default priority is MEDIUM)
-- **Voice Call Options** - Voice Call, SIP Call and Auto Start Call can be enabled.
-- **Custom Fields** - Based on the use case additional information collected by bot can be added to ticket. for example, in eCommerce Order ID, Payment Mode, Delivery date etc can be asked before connecting to the agent. Just like key value pairs, once a custom field is selected, an additional prompt will be seen.
-
-<img src="https://cdn.yellowmessenger.com/iE4ppldmrE7k1625673583277.png" alt="drawing" width="65%"/>
+   <img src="https://i.imgur.com/Fn7QnKd.png" alt="drawing" width="50%"/>
 
 #### Error handling
 
-Output of Raise Ticket Node dictates general behaviour for any error in creating a ticket. In most real life scenarios, it is preferred to show appropriate reasons to users as to why they cannot to an agent. 
+The output of a Raise Ticket Node dictates general behaviour for any error in creating a ticket. In most real life scenarios, it is preferred to show appropriate reasons to users as to why they cannot to an agent. 
 
 :::note
 Once any specific event is active and configured, the corresponding flow will be given preference. Bot is never paused unless a ticket is in ASSIGNED state (i.e. Agent is interacting with the user).
 :::
 
 Two steps to handle custom scenarios are as follows:
-1. In [Event Hub](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub), activate the custom inbox event. Scenarios that can be handled:
+1. In [Events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub), activate the custom inbox event. Scenarios that can be handled:
   - All Available Agents Busy
   - All Available Agents Away
   - All Available Agents Offline
@@ -212,39 +233,42 @@ Two steps to handle custom scenarios are as follows:
   - Offline Ticketing Not Enabled for Groups
   - Offline Ticket Queue Limit Reached
 
-2. Build a Flow with relevant events added in the Start Trigger.
+2.[ Build a flow with relevant events added in the Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event).
 
 #### Working hours
 
 If the bot is supposed to respond with a different message outside of agent working hours, [Logic Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) can be used. 
 
-<img src="https://cdn.yellowmessenger.com/ciDa5Gn2ZzbK1625675537775.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/J3W0HWX.png" alt="drawing" width="70%"/>
 
 :::note
 The bot default timezone is considered while evaluating whether a user is outside working hours.
 :::
 
-Inbox support auto translate feature out of the box so agents don't need to know the customer's language in order to help them. Just enable `Translate User Message` in the raise ticket node configuration to use this feature.
+#### Auto-translate incoming chats
+
+Inbox supports automatic translation, allowing agents to assist customers without requiring knowledge of the customer's language. Just enable `Translate User Message` in the raise ticket node configuration to use this feature.
 
 <img src="https://i.imgur.com/frCvffs.png" alt="drawing" width="40%"/>
 
------
-
 ### 1.8 Analytics 
 
-Capture analytics with this node. 
+This node lets you capture analytics. 
 
-
-The analytics node can be used to  send analytics events and capture custom events at any point in the execution of a flow.  You can type the event name to push and select a value.
+You can use the analytics node to send analytics events and capture custom events at any point in the execution of a flow.  You can type the event name to push and select a value.
  The data passed via the node will flow into the analytics table of Data Explorer inside the Insights section.
+ 
+ For instance, use the analytics node to record a **SignUp** event with a corresponding value and keys, allowing you to analyze user interactions and track metadata in the Data Explorer's Insights section. 
 
-**Event** - This can be a static name or a variable which will be captured under the Events column on the analytics table.
+**Event**: This can be a static name or a variable which will be captured under the Events column on the analytics table.
 
-**Value** - A variable needs to be selected here which will be captured under the eventValue column.
+**Value**: A variable needs to be selected here which will be captured under the eventValue column.
 
-**Keys** - This is an optional field to capture metadata and will be created as a new column. Multiple columns can be created using keys.
+**Keys**: This is an optional field to capture metadata and will be created as a new column. Multiple columns can be created using keys.
 
-**Pro-tip**: Using custom events, you can analyse user flow from one flow/step to another, filter by specific custom events, summarise by different user responses, visualise drop offs and conversion funnels, etc.
+:::info 
+Using custom events, you can analyse user flow from one flow/step to another, filter by specific custom events, summarise by different user responses, visualise drop offs and conversion funnels, etc.
+:::
 
 ![](https://i.imgur.com/GlLrwaa.png)
 
@@ -256,23 +280,56 @@ Open the Analytics page by clicking the Analytics Table link.
 
 ### 1.9 Generate PDF/Image 
 
-Generate PDF/JPG/JPEG/PNG files having dynamic details with this node. 
+Use this node to generate PDFs and images (JPG/JPEG/PNG) files from docsx, html and Base64 files.
 
+#### To convert from docsx
 
 ![](https://i.imgur.com/eQvbk2I.png)
 
+1. In **Template**, click **Upload file** and upload the template based on which the PDF should be generated. This document should be in .docx format and have placeholder values wherever the dynamic data is to be inserted. The placeholder should be enclosed in single brackets, that is`{placeholdername}`. For example, The company name is {company name}.
+2. In **+ Add Variable Mapping**: Enter the placeholder name without the brackets in the left column and select a variable (in which the value is collected from the user) in the right column. 
 
-Steps to generate dynamic documents:
+   <img src="https://i.imgur.com/RW5UWNW.png" alt="drawing" width="60%"/>
 
-1. **Upload a template document**: This document should be in .docx format and have placeholder values wherever the dynamic data is to be inserted. The placeholder should be enclosed in single brackets, that is`{placeholdername}`. For example, The company name is {company name}.
-2. **Map placeholder names to variables**: Enter the placeholder name without the brackets in the left column and select a variable value in the right column. 
-3. **To display**: The dynamic document can be displayed though the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#6-file). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user.
+3. **Select an output format** will be auto-populated by PDF as that's the only available option for docs.
 
------
+#### To convert from HTML
+
+![](https://i.imgur.com/IP7PcU4.png)
+
+1. In **Select variable containing HTML string**, choose the variable that contains the HTML string.
+2. In **Select an output format**, choose the format in which the file should be generated, **PDF**/**JPG**/**JPEG**/**PNG**
+
+Enable **Advanced options** to set the margin and dimensions based on which the file should be geenrated.
+
+  <img src="https://i.imgur.com/JTS0zZ8.png" alt="drawing" width="50%"/>
+
+#### To convert from Base64
+
+There are two ways by which you can convert Base64 files:
+
+**From APIs**
+
+  ![](https://i.imgur.com/fVfihOO.png)
+
+1. In **Input type** choose **API**.
+2. In **API**, choose the API added to your bot. If your API has dynamic paramters, add nodes to collect that information from users.
+3. In **Path to a BASE64 key**, enter the path to the BASE64 key. 
+4. **Select an output format** will be auto-populated by PDF as that's the only available option for docs.
+
+**From variables**
+
+  ![](https://i.imgur.com/L1F16Ud.png)
+
+1. In **Input type** choose **Variable**.
+2. In **Select variable**, choose the variable that contains the BASE64 file.
+3. **Select an output format** will be auto-populated by PDF as that's the only available option for docs. 
+
+Display the file though the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#6-file). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user.
 
 ### 1.10 User event
 
-User event lets you trigger an event after a certain amount of delay. For example, if you need to get feedback from a user after the chat gets over, you can use this node to trigger that event which inturn triggers the feedback flow.
+This node lets you trigger an event with a certain amount of delay. For example, if you can get feedback from users after the chat gets over, you can use this node to trigger that event which will trigger the feedback flow.
 
 To use this node:
 
@@ -296,16 +353,27 @@ To use this node:
 
 ### 1.11 Data formatter 
 
-Convert data from CSV to JSON with this node.
-you can ask and store the CSV data in any variable and change it to JSON using the data formatter node. The formatted value can be stored in a variable of type array or object and be displayed using another node. 
+Use the **Data Formatter** node to convert the incoming data to JSON. For instance, convert user input, such as name and email, into a structured JSON object for better processing in downstream applications.
 
 ![](https://i.imgur.com/X20qA35.png)
+
+* **Input**: Create/select the variable that contains the data to be converted and select the format of the data. CSV (raw, base64, url) and XML are supported in our platform.
+* **Format to**: Select JSON.
+* **Parse json output**: Choose the function that filters out a certain data from the JSON. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) to know about writing functions.
+
 
 ----
 
 ### 1.12 Switch flow 
 
-Quit the current flow and launch another flow with this node. Here, flow switches to another flow from that point (one cannot have any nodes post this).
+This node lets you quit the current flow and launch another flow. The conversation switches from the current flow to another flow from that point and you cannot add any nodes post this. 
+
+For instance, you can use this to guide users from an initial greeting flow to a specific feedback flow, ensuring a smooth transition.
+
+Add the node and choose the flow to which the bot should switch from the flows drop-down.
+
+  ![](https://i.imgur.com/FnHGLKg.png)
+
 
 ---
 
