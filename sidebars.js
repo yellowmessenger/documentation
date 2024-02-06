@@ -170,7 +170,17 @@ module.exports = {
       
       "platform_concepts/Getting Started/createfirstbot",
       "platform_concepts/Getting Started/publish-env",
-      "platform_concepts/Getting Started/add-bot-collaborators",
+
+      {
+        type: "category",
+        label: "Manage your bot users",
+        link: {type: 'doc', id: 'platform_concepts/Getting Started/add-bot-collaborators'},
+        collapsed: true,
+        items: [
+          "platform_concepts/Getting Started/acl",
+        ],
+      },
+
       "platform_concepts/Getting Started/upgrade",  
       "platform_concepts/Getting Started/modify-bot-configuration",
       "platform_concepts/Getting Started/keyboard-shortcuts",
