@@ -28,7 +28,7 @@ To connect your Airpay account with Yellow.ai, follow these steps:
 2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
 
-3. You can add up to five merchant accounts. To add another **Airpay** account, click on **Add account** and follow the steps mentioned above.
+3. You can add up to 15 merchant accounts. To add another **Airpay** account, click on **Add account** and follow the steps mentioned above.
 
    ![](https://i.imgur.com/PL05BMj.png)
 

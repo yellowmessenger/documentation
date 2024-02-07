@@ -260,6 +260,10 @@ Make sure to keep the workflow ID found in the URL handy, as it will be necessar
 
 ## Connect bot users to live agents on Genesys
 
+:::info
+Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
+:::
+
 1. Go to **Studio** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on how you want the bot to take the user through the process.
 2. Include the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) at the point in the flow where you want to let the user talk to Genesys live agent. To accomplish this, include a Raise ticket node and choose **Genesys PureCloud Live Agent** under **Live chat agent**.
 

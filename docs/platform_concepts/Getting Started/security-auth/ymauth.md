@@ -139,4 +139,7 @@ Validation fails when the token expires due to customer inactivity. In such situ
     ```
     window.YellowMessengerPlugin.revalidateToken(token: string, refreshUI = true)
     ```
-    
+
+:::info
+Click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/secure-ymauth) to learn how to add YMAuth token for Mobile SDK.   
+::: 

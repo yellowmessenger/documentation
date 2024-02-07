@@ -61,7 +61,7 @@ To connect your Salesforce CRM account with Yellow.ai, follow the these steps:
 
    ![](https://i.imgur.com/W4rrs7W.gif)
 
- 6. If you have multiple accounts, click **+Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 5 merchant accounts.
+ 6. If you have multiple accounts, click **+Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
 
 ![](https://i.imgur.com/dGxkcov.png)
 

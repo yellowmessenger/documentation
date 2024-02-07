@@ -162,7 +162,7 @@ To configure the tone of the response:
 
 ## Automate fallback for your bot
 
-When the bot doesn't understand user queries, it offers the closest relevant answers to their questions. You can create fallback messages to show these suggestions.
+When the bot doesn't understand user queries, it offers the closest relevant answers to their questions as a fallback. You can customize the fallback messages to show these suggestions.
 
 1. Go to **Studio** > **Build** > **Conversation Settings**
   
