@@ -5,6 +5,15 @@ title: User 360 FAQs
 
 <details>
 
+<summary> Does the User 360 table structure get migrated from one environment to another when published? </summary>
+
+No, the User 360 table structure will not be automatically migrated from Sandbox to Staging when published. You need to create columns and push data separately in each environment.
+
+</details>
+
+
+<details>
+
 <summary>
 Can I add the same user once their record is deleted?</summary>
 
