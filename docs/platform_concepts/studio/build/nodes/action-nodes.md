@@ -127,8 +127,8 @@ This node is used create a live chat request with basic or advanced scenarios su
 
    ![](https://i.imgur.com/Z8VkgD8.png)
    
- * **Live chat agent:** Choose the portal in which your live agents are available. It can be Yellow.i Inbox or any live chat integration integrated with your bot.
- * M**essage after ticket assignment:** The message displayed to the user when an agent is assigned to the chat.
+ * **Live chat agent:** Choose the portal in which your live agents are available. It can be Yellow.ai Inbox or any live chat integration integrated with your bot.
+ * **Message after ticket assignment:** The message displayed to the user when an agent is assigned to the chat.
 
 Name, Mobile, Email and Query fields can be filled by passing variables. Use prompt nodes to collect these data in variables and pass it in the corresponding fields.
 
