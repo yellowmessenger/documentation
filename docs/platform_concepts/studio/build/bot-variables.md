@@ -102,9 +102,27 @@ To know more, see [System user properties](https://docs.yellow.ai/docs/platform_
 
 ### Config Variables 
 
-Config variables are used to store a wide range of information, including API keys, URLs, database connection strings, and other configuration settings that are used throughout the bot flow. By storing these values in Config Variables, bot builders can easily update them in the platform without modifying any code. 
+Config variables are variables that are used to store a wide range of information, including API keys, URLs, database connection strings, and other configuration settings that are used throughout the bot flow. By storing these values, bot builders can use them across multiple flows without modifying any code. 
 
-For example, suppose that a bot needs to connect to a specific external API. Rather than hardcoding the API key directly into the bot's code, bot builders can create a Config Variable called **api_key** and store the value there. If the API key ever needs to be updated, the bot builder can simply modify the value of the **api_key** Config Variable in the Yellow.ai platform, without needing to make any changes to the bot's code.
+For example, let's say that a bot needs to connect to a specific external API. Rather than hardcoding the API key directly into the bot's code, bot builders can create a config Variable called **api_key** and store the value there. If the API key ever needs to be updated, the bot builder can simply modify the value of the **api_key**, without needing to make any changes to the bot's code.
+
+To create a config variable:
+
+1. Go to **Studio** > go to the specific flow and click the **variable icon**.
+
+ ![](https://i.imgur.com/WIptP5w.png)
+
+2. Go to **Config variable** > **+ Add variable**.
+
+ ![](https://i.imgur.com/bhjPnDg.png)
+
+3. * **Variable name:** Enter a name for the variable.
+   * **Data type:** Choose the data type based on the data to be stored.
+   * **Value:** Enter the data to be stored.
+
+ ![](https://i.imgur.com/qezy8IW.png)
+
+4. Click **Add**.
 
 ### User Properties
 
@@ -195,20 +213,26 @@ When the bot asks a question and the user responds, the response will be stored 
 
 ### Retrieve data from variables
 
-A bot variable can be accessed and used inside any node using the notation `{{{variables.variable_name}}` or by clicking  the variables icon. 
+To retrieve the data stored in a specific variable, you need to fetch the variable in a node and add syntaxes to it .(if it's an array or object).  
 
-![](https://i.imgur.com/dPrh4eJ.png)
+1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to the respective node.
+2. Fetch the variable that contains the data.
+
+  ![](https://i.imgur.com/RudXA5G.png)
+
+3. If the data is array/object, along with the variable, use a syntax to filter out the required data. You can refer to the following table for syntaxes to use depending on the data type.
+
+| Datatype | Syntax |
+|----------|--------|
+| String   | `{{{variables.variablename}}}` |
+| Array    | `{{{variables.variablename.[position of the array].fieldname}}}` |
+| JSON Response Array | `{{{variables.variablename.arrayname.[position of the array].field}}}` or `{{{variables.variablename.fieldname}}}` |
 
 :::note
-  Journey and Global variables get **expired after 48 hours** of inactivity.
+Journey and Global variables get **expired after 48 hours** of inactivity.
 :::
-
-Data entered in a variable is stored in a specific node and can be retrieved using the same variable in another node. The following is a sample screenshot of a Bot that illustrates the use of variables: 
-
-
-<img src="https://i.imgur.com/DvYxITj.png" alt="drawing" width="60%"/>
  
-### Variable Datatypes
+**Data types supported by nodes**
 
 Different prompts and action nodes return responses in various formats and data types. Refer to the tables below to understand what types of variables can be stored in each node.
 
@@ -249,70 +273,5 @@ Different prompts and action nodes return responses in various formats and data 
 | [Verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#13-verify-otp) | object, array, number, string |
 | Payment                                                                     | object, array, number, string |
 | [Generate PDF](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#19-generate-pdf-image)         | object, array, number, string |
-
-
-## Access array/object variables
-
-Accessing string and number data types is simple, but it can be slightly different for array and object data types. For instance, in the [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api) example, the stored response is not a simple string or number value.
-
-
-Consider the following response from a weather API , this consists of an object and array with different indexing.
-
-```
-{
-  "coord": {
-    "lon": 77.2167,
-    "lat": 28.6667
-  },
-  "weather": [
-    {
-      "id": 761,
-      "main": "Dust",
-      "description": "dust",
-      "icon": "50d"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 32.54,
-    "feels_like": 30.55,
-    "temp_min": 32,
-    "temp_max": 33,
-    "pressure": 1002,
-    "humidity": 21
-  },
-  "visibility": 3500,
-  "wind": {
-    "speed": 3.09,
-    "deg": 260,
-    "gust": 8.23
-  },
-  "clouds": {
-    "all": 0
-  },
-  "dt": 1617278187,
-  "sys": {
-    "type": 1,
-    "id": 9161,
-    "country": "IN",
-    "sunrise": 1617237667,
-    "sunset": 1617282517
-  },
-  "timezone": 19800,
-  "id": 1273294,
-  "name": "Delhi",
-  "cod": 200
-}
-```
-
-To access the fields and index of a JSON object or array stored in a variable, follow these steps:
-
-* To access fields, use {{variables.variable_name.field_name}}, which can be nested for deeper fields.
-
-For example, {{variables.API_var.main.temp}} can access the temp field.
-
-* To access array values, use keys.
-
-For instance, to access the weather description from the above response, use {{variables.API_var.weather.0.description}} because the value is inside an array and is the first value (0th index).
 
 

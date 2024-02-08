@@ -66,6 +66,23 @@ You can parse an API response as you recieve it and display only the required in
 1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-flow) for your use case, include an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response). [Store the response of the API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
 2. Go to the [Functions](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) section, fetch the variable created in the previous step and [write a custom logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-new-function) to parse the API response. 
 
+### Code snippet for parsing
+```
+return new Promise
+  (resolve => {
+
+    // For transfromation function tagged in API Node, To fetch api response
+    const response = ymLib.args.apiResponse;
+
+    // Your logic here 
+
+    // Any value returned (or promisified value) - is stored in bot Variable storing API response
+    
+    return resolve(<parsed response>);
+  });         
+       
+```
+
 For example, to extract only the weather description from the following API response you can write a custom logic as mentioned below.
 
 **API Response:**
