@@ -199,7 +199,15 @@ if (payloadData.get("botId") != null) {
 }
 ```
 
+15. **How to deploy the bot for mobile SDK in the URL of a specific region?**
 
+To deploy the bot for the mobile SDK in a specific region using a custom base URL, replace "rx" in the below URL with the specific region identifier (r1, r2, r3...) where you want to deploy the bot. Here rx = r1, r2, r3, r4, r5.
+
+```
+ymChat.config.customBaseUrl = "https://rx.cloud.yellow.ai";
+```
+
+This configuration ensures that the bot is deployed in the specified region on the Yellow.ai cloud.
 
 
 
