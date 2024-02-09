@@ -740,6 +740,30 @@ event : ui-event-update-promotion
   </div>
 </details>
 
+<details>
+<summary>Is it possible to block users from copying bot them and pasting messages in the text field?</summary>
+<div>
+ <br/>
+ <div>Yes, it is possible to block users from copying bot messages. To implement this, you need to pass <b>disableCopyPaste: true</b> inside the the <b>window.ymConfig</b> chatbot script.
 
+```
+window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "disableCopyPaste": true};
+```
+</div>
+</div>
+</details>
+
+<details>
+<summary>How to disable users from clicking on images in the carousel node?</summary>
+<div>
+ <br/>
+ <div>To disable users from clicking on images in the carousel node, include <b>disableCardImageClick: true</b> inside the the <b>window.ymConfig</b> chatbot script. 
+
+```
+window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "disableCardImageClick": true};
+```
+</div>
+</div>
+</details>
 
 

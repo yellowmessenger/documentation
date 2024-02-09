@@ -373,7 +373,15 @@ YmChat.sendEventToBot('code', { "some-key": "some-value" });
 For more detailed information on how to send event to bot workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/send-event-workflow).
 :::
 
-***
+## Important
+
+If you encounter any issues with the Android release build, add the following code to the app's **proguard-rules.pro** file:
+
+```java
+-keep public class com.yellowmessenger.ymchat.** {
+   *;
+}
+```
 
 ## Demo App
 
