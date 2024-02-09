@@ -383,12 +383,26 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
  </details>
 
 
+<details>
+<summary>Can I fetch data directly from array or object variables within a function?</summary>
 
+Yes, ensure that you declare the array or object variable before attempting to capture or fetch data from it within the function. Here's a sample of valid data fetching:
+
+```js
+let req = data.variables.getReq; // Assigning value from array variable
+let jobs = data.variables.getJobs; // Assigning value from object variable
+
+let jobsData = jobs.d; // Fetching key from object
+let reqData = req.d.results; // Fetching key from array
+```
+</details>
 
 <details>
  <summary> How do we access values from an object data type in a Function?</summary>
 
- If you've stored a date using a date picker in a variable and need to perform calculations on it, you can access the values as follows:
+ It's essential to declare the variable according to its datatype before performing calculations. For instance, if it's an object variable, declare the object variable first and then capture the required data. Here's a simple example:
+
+ You can access the values as follows:
 
 ```js
 return new Promise(resolve => {

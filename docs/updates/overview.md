@@ -43,8 +43,6 @@ Enhance communication efficiency with email automation, where customer emails ar
 
 ## Yellow-G
 
-### Set the tone of your bot for a personalized user experience 
-
 Tailor your bot's tone to match your preferred response style. Yellow.ai provides four distinct tones, allowing you to customize your bot's interactions with the users. 
 
 **[Read docs](https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings#set-tone-for-your-bot-responses)**

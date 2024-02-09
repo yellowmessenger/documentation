@@ -96,6 +96,21 @@ Suppose you are a new support center on the yellow.ai voice bot, and you need to
 
 > Understand other operations on [Insights modules](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights). 
 
+----
+
+### Use case 3: Voice bot billing analysis
+
+VoIP/IVR providers aim to bill companies accurately for channel usage. Analyzing call durations is pivotal. Quick disconnects within 5 seconds may not yield valuable insights and can be excluded from billing. For durations between 15 to 30 seconds, one billing rate applies, while calls exceeding 30 seconds fall into a different billing band. The Call Details report provides actionable insights for such billing scenarios. Follow these steps:
+
+1. Navigate to **Insights > Data Explorer > Call Details report**.
+2. Click on **Filters** and select **Callduration**.
+3. Click **+Add buckets > Varied** and create billing buckets by adding Values like <=5s, 15-30s, and >=30s.
+
+![image (32)](https://imgur.com/YERSsH0.png)
+
+4. Apply these buckets to categorize call durations, enabling a clear view for billing decisions.
+
+![image (33)](https://imgur.com/7rBk04d.png)
 
 
 ----
