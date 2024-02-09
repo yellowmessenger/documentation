@@ -6,7 +6,7 @@ sidebar_label : Bot Variables
 
 Variables are placeholders that can hold a value and can be used to store user input, data from external systems, or any other relevant information that needs to be saved and used later in the bot conversation. Variables help in creating dynamic and personalized bot conversations.
 
-For example, let's sya that you want to create a chatbot that greets users by name. You can use a variable to store the user's name and then use it later in the conversation. 
+For example, let's sayß that you want to create a chatbot that greets users by name. You can use a variable to store the user's name and then use it later in the conversation. 
 
 For example,  
 

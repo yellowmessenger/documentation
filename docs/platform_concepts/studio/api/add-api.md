@@ -237,11 +237,13 @@ Exporting APIs involves capturing their configuration settings, allowing for sea
 
 #### API is not working, or the module is not showing any response
 
-Disabling **Use Strict SSL** can sometimes resolve connectivity issues, especially if there are problems with SSL certificates. Ensure that you're aware of the security implications before making changes to SSL settings.
+* Disabling **Use Strict SSL** can sometimes resolve connectivity issues, especially if there are problems with SSL certificates. Ensure that you're aware of the security implications before making changes to SSL settings.
 
 
 #### API works in Postman and API management but gives a blank response when tested in Node.
 
-Check your dynamic environment variables. Ensure you pass the variables in triple braces - `{{{env.variable}}}`.
+* Check your dynamic environment variables. Ensure you pass the variables in triple braces - `{{{env.variable}}}`.
 
-In Postman, it would be in double braces - `{{env.name}}`. 
+ In Postman, it would be in double braces - `{{env.name}}`. 
+
+* For cRUL requests, instead of creating the API separately, [import the cURL request](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#import-apis-curljson) to prevent errors in the cloud. 
