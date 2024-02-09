@@ -6,7 +6,7 @@ sidebar_label : Bot Variables
 
 Variables are placeholders that can hold a value and can be used to store user input, data from external systems, or any other relevant information that needs to be saved and used later in the bot conversation. Variables help in creating dynamic and personalized bot conversations.
 
-For example, let's sya that you want to create a chatbot that greets users by name. You can use a variable to store the user's name and then use it later in the conversation. 
+For example, let's sayß that you want to create a chatbot that greets users by name. You can use a variable to store the user's name and then use it later in the conversation. 
 
 For example,  
 
@@ -36,9 +36,8 @@ Ensure you add the data type values in the format mentioned here, for example, i
 There are 4 different types of variables offered by yellow.ai. They are:
 
 1. Custom variables
-
-   * Journey variables (flow level variables)
-   * Global variables (bot level variables)
+* Journey(flow level variables)
+* Global(bot level variables)
 
 2. System variables
 3. Config variables
@@ -48,14 +47,8 @@ There are 4 different types of variables offered by yellow.ai. They are:
 
 Custom Variables are variables created by bot builders to meet their specific business requirements. They are further divided into two types: Journey Variables and Global Variables. 
 
-#### Journey Variable
-
-A Journey Variable is accessible only within the journey for which it was created, meaning that it can be used exclusively within that journey.
-
-
-#### Global Variable
-
-A Global Variable is a type of variable that can be accessed across different bot flows, you can also use Global variables in APIs. 
+- **Journey Variable**: A Journey Variable is accessible only within the journey for which it was created. It stores values related to a specific user journey and can be used only within that journey.
+- **Global Variable**: A Global Variable, on the other hand, is accessible across journeys and can be used in APIs.
 
 :::note
 These variables store values only within a session. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs#11-session) to know more about sessions.
@@ -109,9 +102,27 @@ To know more, see [System user properties](https://docs.yellow.ai/docs/platform_
 
 ### Config Variables 
 
-Config variables are used to store a wide range of information, including API keys, URLs, database connection strings, and other configuration settings that are used throughout the bot flow. By storing these values in Config Variables, bot builders can easily update them in the platform without modifying any code. 
+Config variables are variables that are used to store a wide range of information, including API keys, URLs, database connection strings, and other configuration settings that are used throughout the bot flow. By storing these values, bot builders can use them across multiple flows without modifying any code. 
 
-For example, suppose that a bot needs to connect to a specific external API. Rather than hardcoding the API key directly into the bot's code, bot builders can create a Config Variable called **api_key** and store the value there. If the API key ever needs to be updated, the bot builder can simply modify the value of the **api_key** Config Variable in the Yellow.ai platform, without needing to make any changes to the bot's code.
+For example, let's say that a bot needs to connect to a specific external API. Rather than hardcoding the API key directly into the bot's code, bot builders can create a config Variable called **api_key** and store the value there. If the API key ever needs to be updated, the bot builder can simply modify the value of the **api_key**, without needing to make any changes to the bot's code.
+
+To create a config variable:
+
+1. Go to **Studio** > go to the specific flow and click the **variable icon**.
+
+ ![](https://i.imgur.com/WIptP5w.png)
+
+2. Go to **Config variable** > **+ Add variable**.
+
+ ![](https://i.imgur.com/bhjPnDg.png)
+
+3. * **Variable name:** Enter a name for the variable.
+   * **Data type:** Choose the data type based on the data to be stored.
+   * **Value:** Enter the data to be stored.
+
+ ![](https://i.imgur.com/qezy8IW.png)
+
+4. Click **Add**.
 
 ### User Properties
 
@@ -122,96 +133,106 @@ User Properties are variables that store information about each individual user 
  To create new user properties, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) for the steps. 
 :::
 
-## Add custom variables
-
-You can only add only custom and config variables in Studio. To know how to create user properties, see [https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties].
-
-### Add variable via Variables option
+## Create a Variable
 
 :::note
-You cannot add new  **System** variables.
+ Only **Custom** and **Config** variables can be added, while **System** Variables and **User Properties** are predefined and cannot be modified.
 :::
-
-To create variables from Variables page:
 
 1. Go to **Studio** and click the variable icon on the left.
 
-   ![](https://i.imgur.com/JbbJU4b.png)
+![](https://i.imgur.com/JbbJU4b.png)
 
-2. Navigate to the tab based on the type of variable you want to create - **Custom** or **Config**. <br/>For **Custom** variable, click **Journey variables** to create access the variable within the current journey, or choose **Global variables** to access across all studio flows and APIs.
+2. Click the peferred tab(**Custom**/**Config**), if **Custom**, choose J**ourney variables** or **Global variables** and click **+Add Variable**.
 
-   <img src="https://i.imgur.com/ZWOQK1f.png" width="80%"/>
+![](https://i.imgur.com/UTvXHdQ.png)
 
-3. Click **Add variable**.
-4. Enter your preferred **Variable name** and choose its **Data type**. 
+3. Enter your preferred **Variable name** and select the respective **Data type** for the variable. 
 
-   <img src="https://i.imgur.com/Puety3D.png" alt="drawing" width="60%"/>
+<img src="https://i.imgur.com/Puety3D.png" alt="drawing" width="90%"/>
 
-   You will see sample **Value**  based on the chosen datatype. you can add a static value to the variable if needed. For example, greeting message, and API key.
+5. Based on the chosen data type, the sample **Value** will be displayed automatically. Custom values to be stored in that variable can also be added. 
 6. Click **+Add**. 
 
-### Create journey variables using nodes
+### Create a Variable via nodes
 
-You can create journey variables directly within a specific journey using nodes. These journey variables can then be accessed within that flow.
-
-To create a journey variable:
-
-1. Select **Flows** > **Create flow**. To know more about creating flows, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
-2. Add a [Prompt node](](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes)) or [Action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) within a flow. when storing response using **Store response in**, click **Create new vaiable**. 
-   <img src="https://i.imgur.com/X5UpV2B.png" width="70%"/>
+You can also create global variables through nodes and those variables  can be used in any flow or node.
 
 :::note
-Not all Action nodes support the option to create a variable. This may not be applicable for certain nodes, such as those related to database operations or OTP.
+You can create variables only from [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) nodes.
 :::
 
-3. Click **Create new variable**. You will see a pop-up screen to add a journey variable.. 
+**To create a variable via nodes:**
 
-   <img src="https://i.imgur.com/EbvlK7k.png" alt="drawing" width="70%"/>
+:::note
+
+We recommend using new variables to store data rather than reusing existing ones, as the values may get overwritten.
+::: 
+
+1. Select **Flows** > **Create flow**. To know more about creating flows, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
+2. While creating a flow, if you want to store a user response in a variable and that variable does not exist, you can create a new variable via node by clicking **Store Response in > Select variable**. 
+
+![](https://i.imgur.com/eCsilSz.png)
+
+3. Click **Create new variable**.
+
+<img src="https://i.imgur.com/EbvlK7k.png" alt="drawing" width="70%"/>
 
 4. Add the **variable nam**e and **datatype**, and click **Add**. This global variable can be used in any node/flow.
 
-   <img src="https://i.imgur.com/Zp3YaKA.png" alt="drawing" width="70%"/>
+<img src="https://i.imgur.com/Zp3YaKA.png" alt="drawing" width="70%"/>
 
 ---
 
-## Store data in variables
+## Store and retrieve data using variables 
 
 Variables can be used to store data, which can then be retrieved and displayed to end users.
 
+### Store data in variables
 
-You can store data that you capture using Action nodes and specific Prompt nodes.
+Action nodes and Prompt nodes can be used to store the data in variables. 
 
-1. Add a [Prompt node](](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes)) or [Action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) within a flow. when storing response using **Store response in**, click **Create new vaiable**. 
-   <img src="https://i.imgur.com/X5UpV2B.png" width="70%"/>
-2. Click **Store Response In** option at the bottom of the action/prompt node. You will see the list of all variables that are available.
-3. Navigate to your preferred category and select the variable where you want to store the information. For instance, if you want to store a user's name in the User table, choose the appropriate variable under User properties.
+#### Store the response of a node 
 
-   ![](https://i.imgur.com/KSNG1EL.png)
+1. Click **Store Response In** option at the bottom of the action/prompt node.
+2. A list of journey/global variables and user properties will be displayed, from which you can choose the appropriate variable to store the user's response.
+3. Select the variable that you want to use and save the changes.
 
-:::note
- 
- * You can also use the [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) to store values.
- 
-     <img src="https://i.imgur.com/l6aRHLK.png" width="80%"/>
 
-:::
+When the bot asks a question and the user responds, the response will be stored in the selected variable, such as **name** or **phone**.
 
-## Retrieve data stored in variables
-
-You can access data stored in a variable in bot flows using the syntax `{{{variables.variable_name}}` or by clicking  the variables icon. 
-
-   ![](https://i.imgur.com/dPrh4eJ.png)
+![](https://i.imgur.com/OewhdE2.png)
 
 :::note
-Journey and Global variables expire after 48 hours of inactivity.
+ 1. Only names of the existing variables are displayed on the **store response in** dropdown. 
+ 2. Create a new variable if you want to add more variables to the dropdown.
+ 3. Variables can also be stored with the help of a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) in the flow.
+ 
+ ![](https://i.imgur.com/l6aRHLK.png) 
 :::
 
-Data entered in a variable is stored in a specific node and can be retrieved using the same variable in another node. The following is a sample screenshot of a Bot that illustrates the use of variables: 
+### Retrieve data from variables
 
+To retrieve the data stored in a specific variable, you need to fetch the variable in a node and add syntaxes to it .(if it's an array or object).  
 
-   <img src="https://i.imgur.com/DvYxITj.png" alt="drawing" width="60%"/>
+1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to the respective node.
+2. Fetch the variable that contains the data.
+
+  ![](https://i.imgur.com/RudXA5G.png)
+
+3. If the data is array/object, along with the variable, use a syntax to filter out the required data. You can refer to the following table for syntaxes to use depending on the data type.
+
+| Datatype | Syntax |
+|----------|--------|
+| String   | `{{{variables.variablename}}}` |
+| Array    | `{{{variables.variablename.[position of the array].fieldname}}}` |
+| JSON Response Array | `{{{variables.variablename.arrayname.[position of the array].field}}}` or `{{{variables.variablename.fieldname}}}` |
+
+:::note
+Journey and Global variables get **expired after 48 hours** of inactivity.
+:::
  
-### Datatypes of standard variables
+**Data types supported by nodes**
 
 Different prompts and action nodes return responses in various formats and data types. Refer to the tables below to understand what types of variables can be stored in each node.
 
@@ -252,76 +273,3 @@ Different prompts and action nodes return responses in various formats and data 
 | [Verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#13-verify-otp) | object, array, number, string |
 | Payment                                                                     | object, array, number, string |
 | [Generate PDF](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#19-generate-pdf-image)         | object, array, number, string |
-
-
-### Accessing string variable data  
-
-Accessing string and number data types is simple, but it can be slightly different for array and object data types. For instance, in the [API action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api) example, the stored response is not a simple string or number value.
-
-
-### Accessing data from an Object variable
-
-Consider the following response from a weather API , this consists of an object and array with different indexing.
-
-```
-{
-  "coord": {
-    "lon": 77.2167,
-    "lat": 28.6667
-  },
-  "weather": [
-    {
-      "id": 761,
-      "main": "Dust",
-      "description": "dust",
-      "icon": "50d"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 32.54,
-    "feels_like": 30.55,
-    "temp_min": 32,
-    "temp_max": 33,
-    "pressure": 1002,
-    "humidity": 21
-  },
-  "visibility": 3500,
-  "wind": {
-    "speed": 3.09,
-    "deg": 260,
-    "gust": 8.23
-  },
-  "clouds": {
-    "all": 0
-  },
-  "dt": 1617278187,
-  "sys": {
-    "type": 1,
-    "id": 9161,
-    "country": "IN",
-    "sunrise": 1617237667,
-    "sunset": 1617282517
-  },
-  "timezone": 19800,
-  "id": 1273294,
-  "name": "Delhi",
-  "cod": 200
-}
-```
-
-To access the fields and index of a JSON object or array stored in a variable, follow these steps:
-
-* To access fields, use {{variables.variable_name.field_name}}, which can be nested for deeper fields.
-
-For example, {{variables.API_var.main.temp}} can access the temp field.
-
-
-### Accessing data from an Array variable
-
-
-* To access array values, use keys.
-
-For instance, to access the weather description from the above response, use {{variables.API_var.weather.0.description}} because the value is inside an array and is the first value (0th index).
-
-
