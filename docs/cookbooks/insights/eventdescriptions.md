@@ -97,7 +97,8 @@ Following are the fields tracked on the user engagement events table:
 
 | Field            | Description                                                                                                          |
 |------------------|----------------------------------------------------------------------------------------------------------------------|
-| TIMESTAMP        | The timestamp of the first occurrence of the event within a 30-minute window. If the same event occurs again with the same data, the count column value will be rolled up by 1. |
+| TIMESTAMP        | The TIMESTAMP field represents time intervals in 30-minute slots within a 24-hour day. When an event occurs, its timestamp is rounded to the nearest 30-minute interval. The first occurrence creates a new row with the timestamp, and if the same event occurs again within the same 30-minute slot, the count column value for that timestamp is incremented by 1. This allows tracking the number of occurrences of the same event within each 30-minute interval. Subsequent occurrences in the same interval contribute to the count column value.
+For example: Suppose an event occurs at 9:46, its timestamp would be 9:30, creating a new row. If the same event happens at 9:59, the count becomes 2 for the 9:30 timestamp. Another event at 10:13 creates a new row with a timestamp of 10:00. The count column tracks repeated occurrences within the same 30-minute slot. |
 | BID              | Business Identifier, a unique identifier for the business associated with the event.                                  |
 | CATEGORY         | An umbrella term for journeys; certain journeys can be grouped under this category.                                    |
 | CITY             | Approximate city location identified by the platform.                                                                  |
@@ -118,7 +119,7 @@ Following are the fields tracked on the user engagement events table:
 | LANGUAGE         | Language identified by the platform during the ongoing interaction.                                                    |
 | INTERACTIONTYPE  | User input classification, for example, whether the user chose a quick reply or typed the input.                       |
 | COUNT            | Rolled-up value of the event where the data was exactly the same, with differences only in time (this is associated with the timestamp description). |
-| VALUE            | Used for pushing a value associated with the event; currently not being used for anything and defaulted to 0.       |
+| VALUE            | The VALUE field is used for pushing a numerical value associated with an event. By default, if no specific value is provided, it is set to 0. This field allows you to convey a quantitative aspect related to the event, providing additional context or information.      |
 
 
 ### User engagement events
