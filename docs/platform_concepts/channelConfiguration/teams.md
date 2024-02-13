@@ -239,3 +239,38 @@ To test your bot on MS Teams, follow these steps:
 
 
    When the conversation between the agent and user ends, the bot takes the conversation forward with the user. 
+
+## MS Teams user data syncing in User 360/Engage
+
+To sync users in MS Teams, follow these steps:
+
+1. Copy the existing MS teams credentials from the Channels page.
+
+    ![](https://i.imgur.com/bYLXaMe.png)
+    
+2. Disconnect MS Teams.
+
+   ![](https://i.imgur.com/FpjMAzt.png)
+   
+3. Use the below API to reconnect Teams. Before calling the API, ensure to update parameters such as `BOT_ID, API_KEY, PROFILE_NAME, CLIENT_ID, CLIENT_SECRET, and TENANT_ID` with the appropriate values.
+
+```javascript
+curl --location 'https://cloud.yellow.ai/api/data/vault/botframeworkTokens?bot=BOT_ID' \
+--header 'Accept: application/json' \
+--header 'Content-Type: application/json' \
+--header 'x-api-key: API_KEY' \
+--data '{
+    "profileId": "PROFILE_NAME",
+    "clientId": "CLIENT_ID",
+    "clientSecret": "CLIENT_SECRET",
+    "tenantId":"TENANT_ID"
+}
+```
+* Verify if the custom properties (teamsConversationId, countryName, jobTitle, officeLocation) are added in your Customer Data Platform (CDP). If any of these properties are missing, manually add them to the [user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#user-properties-overview).
+
+4. Execute the below curl command, replacing the placeholders with your specific values such as botId, x-api-key, and profileName. Note that 'Profile name' refers to the name configured on the Channel's page during MS Teams setup.
+
+```javascript
+curl --location 'https://cloud.yellow.ai/api/integrations-worker/integrationCDPUserSync/bulkUserCreate/botframework/yellow_alpha6?botId=x1632218421575&isChannel=true' \ --header 'x-api-key: 67dYPpyWiGXjppnWMHLJQJB6sWsitkWwg0FjCqQY' \ --header 'Content-Type: application/json' \ --header 'Authorization: Bearer sddd' \ --data '{ "profileName": "yellow_alpha6" }'
+```
+  
