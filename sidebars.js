@@ -449,6 +449,7 @@ module.exports = {
             "platform_concepts/inbox/tickets/setupandconfig",
             "platform_concepts/inbox/tickets/emailticketstatus",
             "platform_concepts/inbox/tickets/manualticket",
+            "platform_concepts/inbox/tickets/customviews_ticket",
             "platform_concepts/inbox/tickets/searchandfilter",
             "platform_concepts/inbox/tickets/bulkaction",
             "platform_concepts/inbox/tickets/slaintro",
