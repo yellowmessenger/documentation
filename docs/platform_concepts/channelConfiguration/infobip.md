@@ -53,6 +53,8 @@ To retrieve WhatsApp test number, follow these steps:
 
 ### Set up Webhook URL 
 
+When a user sends a message to the Infobip number via WhatsApp, Infobip forwards the webhook payload to the specified webhook URL. This payload is formatted and processed by the yellow.ai AI engine, and the bot response is sent back to the user via the Infobip API.
+
 To setup Webhook URL, follow the below step:
 
 1. Click **Add URL** to add the Webhook URL. To fetch your Webbook URL, contact [Integrations](mailto:support@yellow.ai) team.

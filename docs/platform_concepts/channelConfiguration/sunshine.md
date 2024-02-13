@@ -181,7 +181,34 @@ To test your bot on the Sunshine conversations, follow these steps:
      ![](https://i.imgur.com/3yKepAp.png)   
 
 
+## FAQs
 
+<details>
+<summary>Is it possible to create forms on the Sunshine conversation widget for email address and name?</summary>
+<div>
+ <br/>
+ <div>You will first need to reach out to the <a href="mailto:support@yellow.ai">Integrations</a> team and enable form creation on the Sunshine Conversation widget. Then, use the Sunshine Conversations post-message API to create forms
+</div>
+  </div>
+</details>
 
+<details>
+<summary>Can we use channel filter to add flows for WhatsApp and other channels connected on Sunshine Conversation channel from the builder?</summary>
+<div>
+ <br/>
+ <div>No, you cannot use the channel filter in this scenario, as the Sunshine Conversation itself serves as the channel for communication.
+</div>
+  </div>
+</details>
+
+<details>
+<summary>Will the bot respond to the user on WhatsApp connected to the Sunshine Conversation channel?</summary>
+<div>
+ <br/>
+ <div>
+Yes, you can respond to messages using Sunshine-supported message types for the messages received on any of the channels supported on the Sunshine platform. However, when messages are received on the Sunshine Conversation platform, there is no specific information available about the end user's channel. Note that you cannot track in which channel the messages will be delivered.
+</div>
+  </div>
+</details>
 
 
