@@ -110,7 +110,7 @@ You can use DataExplorer to review queries handled by the Knowledge Base (query-
 
 ### Domain whitelisting for controlled access and robust protection
 
-Domain whitelisting allows you to secure your chatbot and ensures chatbot acces only in authorized domains. It prevents unauthorized users from copying the script and embedding the bot on their websites and Mobile SDK apps (Android and iOS apps).
+Domain whitelisting allows you to secure your chatbot and ensures chatbot access only in authorized domains. It prevents unauthorized users from copying the script and embedding the bot on their websites and Mobile SDK apps (Android and iOS apps).
 
 **[Read docs](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/domain-whitelisting)**
 
