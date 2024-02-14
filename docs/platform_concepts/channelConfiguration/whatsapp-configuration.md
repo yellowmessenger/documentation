@@ -3,14 +3,7 @@ title: Add WhatsApp business account
 sidebar_label: Add WhatsApp account
 ---
 
-A WhatsApp (WA) bot allows you to interact with users on the WhatsApp messaging platform.
-
-Businesses can use WhatsApp chatbots to send campaigns, provide customer support, engage in conversational marketing, and drive sales.
-
-This channel enables the following key features:
-
-* **Automated Replies**: Provides the ability to automatically respond to user messages.
-* **Multi-message types support**: Supports various message types, including image, video, file, Quick reply, Carousel, WA quick reply, Dynamic WA list message, and WA list, enhancing the overall communication experience.
+This guide will walk you through the process of creating a WhatsApp Business account and setting up your own chatbot for WhatsApp.
 
 ## Prerequisites to setup WhatsApp channel
 
