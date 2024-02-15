@@ -71,6 +71,10 @@ To add headers:
 
 The body in an API is the main content of the request containing data or information that should be sent to the third-party server. For POST, PUT, or DELETE methods, you can add request body under the Body section.
  
+:::note
+Multipart/form-data is not supported.
+:::
+
 To add a body:
 
 1. On the API details page, under **BODY**, choose the format of the request body. The supported formats are **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data** and **raw**.
@@ -86,7 +90,7 @@ To add a body:
    <img src="https://i.imgur.com/hP7ay5l.png" alt="drawing" width="70%"/>
    
 :::note
-You can pass the access key or auth token in the way that the API is designed. You could pass it in the request URL, body, or headers. You can ignore this for APIs where no authentication is required.
+* You can pass the access key or auth token in the way that the API is designed. You could pass it in the request URL, body, or headers. You can ignore this for APIs where no authentication is required.
 :::
 
 
