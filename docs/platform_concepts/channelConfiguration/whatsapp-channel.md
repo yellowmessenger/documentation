@@ -3,15 +3,20 @@ title: WhatsApp Accounts
 sidebar_label: WhatsApp Accounts
 ---
 
+
 #### Types of Accounts:
 
+
 There are three types of WhatsApp accounts:
+
 
 - WhatsApp (WA)
 - WhatsApp Business (WAB)
 - WhatsApp Business API (WAB API)
 
+
 #### Differences between WA, WAB and WAB API
+
 
 | WhatsApp | WhatsApp Business | WhatsApp Business API |
 | -------- | -------- | ------- |
@@ -20,7 +25,9 @@ There are three types of WhatsApp accounts:
 | No automation can be achieved | App automation includes greeting messages, away messages, quick replies | All sorts of automation can be achieved. |
 | Used on IOS or android app | Used on IOS or android app | Used on automated system or chatbots. No real mobile interface |
 
+
 #### Pros and cons
+
 
 | WhatsApp | WhatsApp Business | WhatsApp Business API |
 | -------- | -------- | ------- |

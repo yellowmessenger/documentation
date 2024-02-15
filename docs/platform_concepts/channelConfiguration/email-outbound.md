@@ -70,23 +70,29 @@ Enter the following details:
 :::
 
 * **Port**: Select the preferred port value where you want to establish the SMTP connection. It can be 465, 587, or 25.
+
 :::note
-* You need to contact your support team to get the port value.
+You need to contact your support team to get the port value.
 :::
+
 * **Security type**: Select the appropriate security type - SSL (Secure Socket Layer) or TLS (Transport Layer Security).
 * Click **Save**.
 
    <img src="https://i.imgur.com/1BbJrgg.png" width="80%"/>
 	
-* Once the email account details are Saved, forwarding address will be displayed. For more information on how to set mail forwarding, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig#22).
+* Once the email account details are saved, forwarding address will be displayed.
 
  ![](https://i.imgur.com/D6gV0dW.png)
 
 Similarly, you can add multiple email accounts and choose your preferred sender ID when configuring an outbound campaign.
 
-#### **Configure forwarding address**
+#### **Set forwarding address**
 
 The forwarding address generated within the platform must be added to your email server's setup, be it Gmail, Outlook, or another email server.
+
+###### Prerequisite
+
+* Copy the forwarding address from the Email channel page
 
 To configure a forwarding address, follow these steps:
 
@@ -108,7 +114,7 @@ You can only forward messages to a single Gmail address, not an email group or a
 
      ![](https://i.imgur.com/04jG8R9.png)
      
-5. Enter the email address for which you want to forward messages to and click **Next**.
+5. Paste the forwarding address that you have copied from the Email channel page and click **Next**.
 
     ![](https://i.imgur.com/Z0kI6r4.png)
     
@@ -116,17 +122,17 @@ You can only forward messages to a single Gmail address, not an email group or a
 
     ![](https://i.imgur.com/UYTQq9Q.png) 
     
-7. A confirmation code will be sent to the **Bot Messages** section of the Inbox module. This code needs to be added to your email settings.
+7. A confirmation link will be sent to the **Bot Messages** section of the Inbox module. Click the below highlighted link.
 
-     ![](https://i.imgur.com/P4znTah.png)
+     ![](https://i.imgur.com/C22VQ0O.png)
      
-8. In the "Forwarding" section, enter the **Confirmation code** and click **Verify**.
+8. Click **Confirm**.
 
-     ![](https://i.imgur.com/itJrHEc.png)
+     ![](https://i.imgur.com/wYydn38.png)
      
-9. The forwarding address will be successfully added. Clik **Save changes**.
- 
-    ![](https://i.imgur.com/irgBwY8.png)
+* Once confirmed, the email ID you have added will forward emails to your designated forwarding address.
+
+   ![](https://i.imgur.com/I8dkzfz.png)
 
 ### Set up SMTP-based email account (JSON)
 
@@ -222,12 +228,12 @@ To test your bot on Email, follow these steps:
      ![](https://i.imgur.com/6Y5FCkG.png)
 	 	 
 		 
-## Troubleshooting
+## Troubleshooting Email configuration
 
-During the Email configuration, you may encounter the following issues:
+When configuring email, you might encounter the following issues:
 
-* If you have entered a different email ID and username, the email channel is not configured.
-* If you have entered an invalid password, then the email channel is not configured.
+* If you have entered a different email ID and username, the email channel will not be configured. 
+* If you have entered an invalid password, the email channel will not be configured.
 
 To troubleshoot, follow these steps:
 
