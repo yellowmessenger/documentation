@@ -641,9 +641,11 @@ Language can only be changed to only if that language is configured in bot setti
 
 ---
 
-### 3.2 Outbound notification 
+### 3.2 Outbound notification
 
-You can incorporate the Outbound notification node in your bot flows to enhance communication capabilities. This dynamic node enables you to effortlessly send SMS, email, WhatsApp, and voice notifications. You can choose your preferred sender ID, manage CC and BCC recipients, and choose from a wide range of templates to streamline your communication efforts right within the bot's flow.
+You can integrate an Outbound Notification node into your bot flows to seamlessly send messages to your bot users across various channels. This dynamic node enables you to send SMS, email, WhatsApp, and voice notifications. Within the bot's flow, you can select your preferred sender ID, manage CC and BCC recipients, and choose from a variety of templates.
+
+
 
 To know more,  See [Outbound notifications or Workflow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
 
@@ -657,10 +659,10 @@ Type | Choose the type of communication you want to send: SMS, Email, WhatsApp, 
 Sender | Choose the sender ID from which you want to send the communication.
 Profile | Select the sender for the SMS notification. Applicable only for SMS in India.
 To | Choose the appropriate variable containing the recipient details, example, SMS phone number, Email address, etc.
-CC | Choose recipients for CC (Carbon Copy) if needed.
-BCC | Choose recipients for BCC (Blind Carbon Copy) if needed.
+CC | Choose recipients for CC (Carbon Copy) if needed. Applicable only for email.
+BCC | Choose recipients for BCC (Blind Carbon Copy) if needed. This allows you to include additional recipients without exposing their email addresses to other recipients. Applicable only for email.
 Select template | Pick a template to use for your communication.
-Store message ID in | Choose the variable where you want to store the Message ID. 
+Store message ID in | Select the variable where you would like to store the Message ID after it has been sent.
 
 
 
