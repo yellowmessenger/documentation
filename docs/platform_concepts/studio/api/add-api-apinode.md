@@ -5,10 +5,6 @@ sidebar_label : Add APIs via API node
 
 The API node lets you add a new API from a third-party system and access it in conversational flows.
 
-:::note
-Multipart/form-data is not supported.
-:::
-
 There are three ways by which you can add an API to the API node: 
 
 * [Import API](#import-api)
@@ -60,7 +56,7 @@ This option lets you add a new API on the go:
 | **Description**                    | Describe the functionality of your API.                                                                                                                                                                   |
 | **Headers**                        | Headers in API requests are additional pieces of information sent alongside the main request.<br/> For example, if you are authenticating an API, set the **Key** as **Authorization** and the Value as the API key. |
 | **Params**                         | API parameters are essential components used when making requests to an API. They serve as specific instructions or information that you include with your request, helping the API understand and fulfill your requirements accurately. <br/><br/> Examples of key-value pairs for static and dynamic parameters:<br/><br/>**Static parameter**: - Key: botId - Value: x766543323dwe_34 <br/> **Dynamic parameter**: - Key: city - Value: {{{city}}} <br/><br/> In these examples: The botId key has a static value (it remains constant). <br/>The "city" key has a dynamic value represented as {{{city}}}, indicating that the value will be dynamically replaced with the actual value of the "city" parameter during runtime. |
-| **Body type**                      | The body in an API is the main content of the request containing data or information that should be sent to the third-party server. <br/><br/> For POST, PUT, or DELETE methods, you can add the request body under the Body section. The supported formats are **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data**, and **raw**. |
+| **Body type**                      | The body in an API is the main content of the request containing data or information that should be sent to the third-party server. <br/><br/> For POST, PUT, or DELETE methods, you can add the request body under the Body section. The supported formats are **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data**, and **raw**.<br/><br/>**Multipart/form-data is not supported.** |
 | **Dynamic variable configuration** | Here's where you will assign a variable to collect the dynamic value from users. The data type of the variable and dynamic value should be the same. |
 
 ## Additional configuration to enhance the API usage
