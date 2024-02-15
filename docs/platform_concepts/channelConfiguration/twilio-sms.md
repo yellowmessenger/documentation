@@ -5,6 +5,11 @@ sidebar_label: Twilio SMS
 
 Twilio SMS enables you to send and receive SMS through APIs. This cloud communication platform enables businesses to integrate SMS and other communication channels into their applications. Additionally, it supports two-way communication and push notifications to actively engage users.
 
+**Watch the video on how to setup Twilio SMS:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Wk7sjiSYIOU" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+<br/>
+
 ## Prerequisites to setup Twilio SMS
 
 * Register an account on [Twilio console](https://console.twilio.com/).

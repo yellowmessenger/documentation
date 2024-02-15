@@ -45,8 +45,7 @@ Business name | Enter the name of the company to appear in your monthly billing 
 | Destination countries | List down the destination country of your targeted users. | 
 |Sample messages | Add sample bot messages. | 
 | Business launch date | Select the date when you want your Viber business account to be activated. |
-| Warranty letter | Share the warranty letter in the expected format on the company’s letter head. | 
-		
+| Warranty letter | Share the [Viber business warranty letter](/files/Viber-business-warranty-letter.docx) in the expected format on the company’s letter head. This warranty letter is required to ensure that the company adheres to Viber's guidelines and legal requirements when sending messages to users, including obtaining consent from opted-in customers, complying with applicable laws, following Viber's service messages guidelines, and preventing unauthorized use of the verified messages channel by third parties.  | 
 
 ### 1.2 Setup your business card
 

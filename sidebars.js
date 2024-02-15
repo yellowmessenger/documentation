@@ -124,19 +124,31 @@ module.exports = {
 //end of engage 
 
 //channels 
+
 {
   type: "category",
   label: "Channels",
   collapsed: true,
   items: [
-    "cookbooks/channels/userinteraction",
-    "cookbooks/channels/configurethemes",
-    "cookbooks/channels/CORSerrors",
-    "cookbooks/channels/chatwidget-mobile-sdk",
     "cookbooks/channels/Viber-business",
+    {
+      type: "category",
+      label: "Chat widget",
+      collapsed: true,
+      items: [
+        "cookbooks/channels/userinteraction",
+        "cookbooks/channels/configurethemes",
+        "cookbooks/channels/CORSerrors",
+        "cookbooks/channels/live-chat-handling",
+        "cookbooks/channels/multi-file-upload",
+        "cookbooks/channels/chatwidget-mobile-sdk",
 
+    
+      ],
+    },
   ],
-}, 
+},  
+
 //end of channels 
 
 // Integrations
@@ -437,6 +449,7 @@ module.exports = {
             "platform_concepts/inbox/tickets/setupandconfig",
             "platform_concepts/inbox/tickets/emailticketstatus",
             "platform_concepts/inbox/tickets/manualticket",
+            "platform_concepts/inbox/tickets/customviews_ticket",
             "platform_concepts/inbox/tickets/searchandfilter",
             "platform_concepts/inbox/tickets/bulkaction",
             "platform_concepts/inbox/tickets/slaintro",
