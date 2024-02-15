@@ -9,6 +9,10 @@ In addition to the various integrations supported by Yellow.ai, you can seamless
 
 There are two ways by which you can add API:
 
+:::note
+Multipart/form-data is not supported.
+:::
+
 * [Add API manually](#add-api-manually)
 * [Import APIs](#import-apis-from-a-json-file)
 

@@ -5,6 +5,10 @@ sidebar_label : Add APIs via API node
 
 The API node lets you add a new API from a third-party system and access it in conversational flows.
 
+:::note
+Multipart/form-data is not supported.
+:::
+
 There are three ways by which you can add an API to the API node: 
 
 * [Import API](#import-api)
