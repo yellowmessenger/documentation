@@ -399,49 +399,19 @@ Here you can control randomness, sets limits for concise outputs and refine word
 
 Model configuration provides you the freedom to manually input your own custom GPT or LLM credentials into the bot. You can then use various models on different dynamic nodes within the same bot independently. This grants you the flexibility to conduct extensive experiments. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#model-configuration) for the steps.
 
-## <a name="cb"></a> 2. Code based nodes
+## 2. Code-based nodes
 
+Code-based nodes allow you to execute actions such as retrieving or sending data via API responses, implementing custom logic for specific actions, and using stored variable data effectively.
 
 ### 2.1 API 
 
 > This node is also available for voice bots. 
 
-API action node allows you to hit an API at that point of the flow, assign dynamic API parameters (if any) from user inputs and then store API response in a variable for further use. 
+With the API node, you can connect to an API at a specific point in a flow to send and get responses from a third-party system outside of your chatbot.
 
    <img src="https://i.imgur.com/Fnsvd0z.png" alt="drawing" width="70%"/>
 
 To know about the various features of the node and how to use it, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode).
-
-#### Function 
-
-(Optional field)
-
- Sometimes, an API response can be too big, or not in a proper format for us to be able to parse easily. (A function is not needed just to access a simple field of a JSON API response). 
-In those cases, we can write a [function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#3-functions-in-flow) to parse and transform API response according to our needs and return desirable response. 
-
-#### Snippet for function
-```
-return new Promise
-  (resolve => {
-
-    // For transfromation function tagged in API Node, To fetch api response
-    const response = ymLib.args.apiResponse;
-
-    // Your logic here 
-
-    // Any value returned (or promisified value) - is stored in bot Variable storing API response
-    
-    return resolve(<parsed response>);
-  });         
-       
-
-```
-
-:::note 
-To be able to invoke an API at a certain point, it should already be added/configured at the API management section of the platform. All APIs added there are available in dropdown of the action node. [Click here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) to learn how to add APIs.
-:::
-
-![](https://i.imgur.com/dklBqQZ.jpg)
 
 -----
 
@@ -449,32 +419,32 @@ To be able to invoke an API at a certain point, it should already be added/confi
 
 > This node is available for voice bots. 
 
-**Store response in** option available in most of the nodes are used to store variable values, **Variable node** is used for specific logical usecases when you want to manipulate just a variable value or skip particular steps but not do any further actions. 
-Set the value of one or more variables with this node. 
-
-Select the following:
-
-- **Name**: Logic driven variable whose value you would like to change in this flow. 
-- **Value**: Existing variable that hold some value (if the value is blank, it will be set to an empty string).
-
-:::info
-Learn how to create a variable [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
-:::
-
+Use the variable node to assign values to a new variable which has not been previously used to collect/store data.
 
 ![](https://i.imgur.com/aZzdF0J.png)
 
+ There are two ways by which you can assign values:
 
-**Use case**
+* **Assign a static value**
 
-1. **Variable node to store InitialCounterValue**: In a flow that records if a bot user is answering all the questions and reaching the end of the flow, at the start of the flow, InitialCounterValue is set to 0 (False) and when the user completes the flow the InitialCounterValue will change to 1 (True). If the flow is not completed (InitialCounterValue=0), a notification can be sent to user asking them to complete the flow. 
-2. **Variable node can be used to store values that are not recorded by other nodes**: To obtain bot users phone number on a a web bot, you must use a Phone node/question node to pose a question and obtain the phone number, but while using the same on WhatsApp bot, the number can be fetched from the user profile. In this case, Phone Variable can be set to Phone- User Properties variable (which gets fetched automatically in WhatsApp bots).
+ 1. In **Name** select a variable or [create a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
+ 2. In **Value**, type the value you'd like to assign to that variable.
 
+    <img src="https://i.imgur.com/Qh4qqPe.png" alt="drawing" width="60%"/> 
 
+* **Assign a dynamic value**
 
+1. In **Name**, select a variable or [create a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
+2. In **Value**, click the variable icon to fetch the variable value you'd like to assign to the variable.
 
+   <img src="https://i.imgur.com/HzUsnqB.png" alt="drawing" width="69%"/>
 
+For example, let's say that you have captured the **First name** and the **Last name** of a user and you want to save both the names under one variable **Full Name**.
 
+1. Add two [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to [capture the responses in two different variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables). 
+2. Add a **Variable node**, create a new variable **Customer Name** and fetch the variable values of the prompt nodes. This **Customer Name** can then be used throughout the flow for a different use case. Refer to the gif below to understand how this works. 
+
+![](https://i.imgur.com/B0qUAvJ.gif)
 
 -----
 
@@ -482,111 +452,49 @@ Learn how to create a variable [here](https://docs.yellow.ai/docs/platform_conce
 
 > This node is available for voice bots. 
 
-Database action node helps you in performing simple insert, update and search operations on your [database tables](https://docs.yellow.ai/docs/platform_concepts/studio/database). 
+This node helps you perform database operations such as insert, update and search operations in your [database tables](https://docs.yellow.ai/docs/platform_concepts/studio/database). 
 
-#### 1. Insert
-You select the insert operation to insert details in each column into any existing database table you select. 
+  <img src="https://i.imgur.com/Tb0EHym.png" alt="drawing" width="80%"/>
+  
 
-![](https://i.imgur.com/Tb0EHym.png)
-
-You can collect the entered information and store it in the new record (by adding a new record to the existing database table).
-
-
-<!---
-
-#### Bulk Insert
-
-You can perform a bulk insert into database instead adding details of just one row at a time. 
-Select a variable containing data you want to insert. 
-
-![](https://i.imgur.com/eLowVBI.png)
-
--->
-
-#### 2. Search
-You can perform the search operation for database node. 
-
-
-1. **Select Table**: For searching, you can **select a table** you want to perform a search on. 
-2. **Add filter**: You can also add filters to your search. 
-3. **Sort Response**: Sort the entered information. 
-
-![](https://i.imgur.com/Y92xIGt.png)
-
-##### Filter 
-
-Each of the following filter conditions are explained for the use-case when the user enters a date : 15/aug/2022
-
-* **Is** : searches for the exact match. Eg: To search how many times 15/aug/2022 is entered. 
-
-*  **Contains** : This will be matched if it contains the given value. Eg: contains 08 (august), any date with 08 will be searched 10/aug/2022, 25/aug/2005, so on.
-
-*  **Does not contain**: This will be matched if it does not contain the given value. Eg: Does not contain aug/2022, all the available dates that are not from August 2022 will be searched.
-
-*  **Range**: In range you can enter a `from` and `to` value as a filter. Eg: date `from`:'10' `to`: '20'.
-
-##### And/Or filter 
-
-* You can add another filter which compares both the filter with and/or condition. 
-* **And**: Search will display results only when both the filters are true. 
-* **Or**: Search will display results if either of the filters holds true. 
-
-![](https://i.imgur.com/nAU53aM.png)
-
-
-3. **Output** : You can sort the output based on a string type column (optional), modify the size of output (maximum no. of records to fetch) and store this result in a variable.
-
-##### Sort response 
-
-* Select the column name you want to sort and click ASC/DEC (this will sort the info in the table in ascending/descending order based on that column).
-
-![](https://i.imgur.com/GUMXUfd.png)
-
-
-##### More options 
-
-* **Filter distinct** : Select a column on which distinct must be performed (this removes all the duplicate records when retrieving the records from a table).
-* **Pagination** :Page number and Size limit can be set here.
-
-#### 3. Update
-
-Update option in the database node can be used to update values stored in the tables following the given steps:
-1. Select update option in database node.
-2. Select the name of the table.
-3. You can add a where condition that acts as condition that has to be met in order to update the value.
-4. In Update with :
-  - In Fields add the name of column.
-  - In with value add the variable storing the value that you want to update current.
-
-<img src="https://i.imgur.com/o7lvCdC.png" alt="drawing" width="50%"/>
-
+* **Insert:** Select **Insert** to insert data in each column into any existing database table you select. To know more, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/database#insert-new-records-or-values-to-a-database-table). 
+* **Search:** Select **Search** to look for specific data in the database. To know mroe, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/database#fetch-database-records-using-the-database-node).
+* **Update:** Select **Update** to update any column in the databse. For steps to do so, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/database#update-database-table-records-using-the-database-node).
 --------
 
 ### 2.4 Function 
 
 > This node is available for voice bots. 
 
-Execute custom code written for a function with this node. In this node, you can select the function you wish to execute and [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) to store the return value of a function (optional).
+This node lets you run custom logic written in the [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) section for specific use cases and store the result in a variable to use it in bot ocnversations.
 
 
 ![](https://i.imgur.com/v4HNlCq.png)
+
+* **View function** takes you to the function chosen in the **Function** field.
+* **+Create new function** button takes you to the function section where you can create a new function.
+* **Store Response in** lets you store the response of the function in a variable which can later be used in the flow if required.
+
+Function node is most commonly used to fetch transformation codes that parses API responses to filter specific data. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/send-receive-apiresponses#parse-api-response-using-function-node) for the steps to use this node.
  
 -----
 
 ### 2.5 Modifier 
  
-The purpose of this node is to make modifications to user input before storing it in a database, passing it to an API node, fetching data from an API, or displaying it to the user. The input can be obtained from a variable or in the form of text.
+The node lets you convert the user input to a certain format before passing it to a database/API, or displaying it to the user. Use **Store Response in** option in this node to store the modified input in a variable to use it further in a flow. 
 
-To experience the functionality of this node, simply click the button located at the top and enter your desired input to observe the corresponding output.
+For example, let's say that you want to convert the user input to all caps. Your input would be **Test** and the would be **TEST**.
+
+To see how this node works, click the button at the top and enter your input to observe the corresponding output.
 
 ![](https://i.imgur.com/EbhyWqD.png)
 
-The following are the actions that can be performed on the collected input. 
+The following actions can be performed:
 
 
 | Action | Description | Output type | Sample input | Sample output |
 |-----------------------|-------------------------------|-------------|--------------|---------------|
-| Capitalize 1st letter | Capitalizes the first letter of the inout                        | String      | i am aakanksha | I am aakanksha |
+| Capitalize 1st letter | Capitalizes the first letter of the input                        | String      | i am aakanksha | I am aakanksha |
 | Capitalize 1st char of word | Capitalizes the first character of the input                        | String      | hi aakanksha | Hi Aakanksha |
 | Lower case all | Converts all the letters of the input to lower case                        | String      | Hi AakanKsha | hi aakanksha |
 | Upper case all | Converts all the letters of the input to upper case                         | String      | Hi AakanKsha | HI AAKANKSHA |
@@ -606,17 +514,7 @@ The following are the actions that can be performed on the collected input.
 | Join | Join the input array with the character in preset | String | ["My", "Name", "is", "Aakanksha"] (with = '-') | My-Name-is-Aakanksha |
 |Pick by position|Picks the word in the array in the specified position| String | ["My", "Name", "is", "Aakanksha"]  (3)| is
 |Get length|Returns an array's length |String | []"My", "Name", "is", "Aakanksha"]| 4|
-| For each | Apply modifier options on each element of the array | Select modifier | ["My", "Name", "is", "Aakanksha"] (operation = Upper case all) | ["MY", "NAME", "IS", "AAKANKSHA"] |
-
-
------
-
-### 2.6 Connect TransXT 
-
-(This node is Currently unavailable.)
-
-
-Connect TransXT function with this node.  
+| For each | Apply modifier options on each element of the array | Select modifier | ["My", "Name", "is", "Aakanksha"] (operation = Upper case all) | ["MY", "NAME", "IS", "AAKANKSHA"] |  
 
 ---
 
