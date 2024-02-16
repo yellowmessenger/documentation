@@ -55,11 +55,13 @@ To forward mails from the email chatbox to the yellow.ai platform, follow the be
     ![](https://i.imgur.com/COXCn9T.jpg)
 
 4. Click **Add a forwarding address** and paste the copied address. 
-5. An email verification code will be sent to the Inbox to ensure that the configuration is authorized. Open **Inbox** > **Chats** > **Bot Messages**. 
+5. An email verification will be sent to the Inbox to ensure that the configuration is authorized. Open **Inbox** > **Chats** > **Bot Messages**. 
 
-    ![](https://i.imgur.com/P4znTah.png)
+    ![image](https://imgur.com/HkOFiI9.png)
 
-6. Copy the verification code from the Inbox and paste it into Gmail settings to enable the forwarding of messages.
+6. Copy the verification from the Inbox and paste it into Gmail settings to enable the forwarding of messages.
+
+    ![image](https://imgur.com/JwM08Bh.png)
 
 ------
 
