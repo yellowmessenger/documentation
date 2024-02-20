@@ -10,11 +10,9 @@ Agents must remain available (online) on Salesforce (when queue management and o
 :::
 
 
-## 1. Connect Salesforce with Yellow.ai
+## Connect Salesforce with Yellow.ai
 
 To connect your yellow.ai account with **Salesforce**, follow these steps.
-
-### 1.1 Enable the integration in Yellow.ai's Integration module
 
 1. Login to [cloud.yellow.ai](https://cloud.yellow.ai/auth/login) and click the **Integrations** module on the top left corner of your screen.
 
@@ -22,7 +20,7 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
 
 2. Search for **Salesforce Live Chat** or choose the category named **Live chat** from the left navigation bar and then click on **Salesforce Live Chat**.
 
-![](https://i.imgur.com/gEcRpLU.png)
+![](https://i.imgur.com/6CUGqj2.png)
 
 
 3. Fill in the required fields. 
@@ -62,11 +60,15 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
  4. In the **Quick Find** section,  search for **Chat Settings** in the Chat section.
  5. Find the **Chat API Endpoint** present and copy the URL value till **.com**. This is your Organization Base URL.
 
-* **Agent Device** - The browser’s userAgent value. 
-* **Language** - Language preferred by the user to chat with the live agent.
-* **Agent Screen Resolution** - The screen resolution of the device used by the agent.
- * **Agent Timeout** - The value of this field determines the time till which the chat will remain active in case of inactivity at the agent’s side.
-
+* **Agent Device:** The browser’s userAgent value. 
+* **Language:** Language preferred by the user to chat with the live agent.
+* **Agent Screen Resolution:** The screen resolution of the device used by the agent.
+* **Agent Timeout:** The value of this field determines the time till which the chat will remain active in case of inactivity at the agent’s side.
+* **Enable queue updates:** Enable this for users to receive updates on their position in the queue during chat interactions.
+* **Enable sticky agent:** Enable this to connect users directly to their preferred agent by specifying the agent's ID in the Raise Ticket node.
+* **Disconnect chat from:** Enable this to immediately close tickets for users waiting in the queue but not yet assigned to an agent.
+* **Send queue updates event to:** Enable this to inform users about their queue position with real-time updates sent as events to the bot, allowing developers to customize bot flows based on the queue status.
+* **Customise chat headers:** Enable this to personalize the bot headers with agent names and descriptions. The bot headers will be restored ot orginal settings once the ticket is closed.
 
 4. Once you're done, click **Connect**.
 5. If you have multiple accounts, follow the above mentioned steps to add each of them.
@@ -80,7 +82,7 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
 
 
 
-## 2. Use-case
+## Connect bot users to live agents on Salesforce
 
 This integration lets you connect with live agents on the **Salesforce** platform from your yellow.ai account. 
 
@@ -88,10 +90,6 @@ This integration lets you connect with live agents on the **Salesforce** platfor
 - When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
 - During the testing process, agents should be **online** for the specific button ID or group mapped in the configuration.
 :::
-
-
-
-### 2.1 Chat with Salesforce Live Agent
 
 :::info
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
@@ -173,7 +171,7 @@ apiresponse represents the raw response from the Salesforce create ticket API
 apiresponse represents the raw response from the Salesforce create ticket API
 :::
 
-### 2.2 Steps to set up bot in Salesforce Live Chat
+## Steps to set up bot in Salesforce Live Chat
 
 1. Login to your [Salesforce account](https://login.salesforce.com/?locale=in) and click **Setup**
 

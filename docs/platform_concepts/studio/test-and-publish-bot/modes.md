@@ -7,6 +7,10 @@ Publishing a bot involves deploying bot changes to the live environment. Only a 
 
 Only certain user roles can approve the bot. To know about user roles in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
 
+:::info
+To publish your bot, it's mandatory to configure [Fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/additionalsettings#fallback-fallback-flow).
+:::
+
 
 <!--
 When you upgrade from freemium to premium:
