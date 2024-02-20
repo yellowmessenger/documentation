@@ -7,10 +7,11 @@ Chat history is a series of conversations that have happened between a user and 
 
 Chat history retrieves past conversations that tailor future interactions. It helps the bot to analyse the user’s inputs and provide accurate automated responses to the user’s queries. Thereby, it improves the overall efficiency and reliability of the bot.
 
-Let's say that you want to fetch a user's chat history from a bot. To do so, you need to pass a unique identifier, the ymAuthentication token, via a bot script or init function.
+Let's say that you want to fetch a user's chat history from a bot. To do so, you need to pass a unique identifier, the ymAuthentication token, via a bot script, payload, or init function.
 
 :::note
-Ensure that the ymAuthentication token is secured and only authorized users can access it.
+* Ensure that the ymAuthentication token is secured and only authorized users can access it.
+* Chat history can be retained for a maximum duration of 6 months.
 :::
 
 In this article, you will learn:
@@ -19,7 +20,9 @@ In this article, you will learn:
 
 **Prerequisites to pass ymAuthentication token:**
 
-Before you passing the ymAuthentication token via the script or init function, you need to enable **Show history of the conversation** in the **Settings** page.
+Before you passing the ymAuthentication token via the script, payload, or init function, you need to enable **Show history of the conversation** in the **Settings** page.
+
+<img src="https://i.imgur.com/TT52QpI.png" alt="drawing" width="70%"/>
 
 :::note
 When the "Create New Tab session" flag is enabled, history will not be retained on page refresh even if "Show History" is set to true and the ymAuthenticationToken is passed.
@@ -39,9 +42,9 @@ To enable "Show history of the conversation", follow these steps:
 
     ![](https://i.imgur.com/lO86cQ0.png)
 	
-4. Navigate to the **Settings** tab and enable **Show history of the conversation**.
+4. Navigate to the **Settings** tab, expand **Chat history** and enable **Show history of the conversation**.
 
-   ![](https://i.imgur.com/yti0HdF.png)
+   <img src="https://i.imgur.com/bFpNdhb.png" alt="drawing" width="70%"/>
 
 
 ## 1. Pass ymAuthentication for a chat widget
