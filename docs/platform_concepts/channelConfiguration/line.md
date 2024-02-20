@@ -108,7 +108,7 @@ To configure the Line channel on the Yellow.ai platform, follow the below steps:
 
    ![](https://i.imgur.com/CpwhPST.png)
    
-2. Enter **Line channel token** and **Line channe secret** Id and click **Save**.  
+2. Enter **Line channel token** and **Line channel secret** Id and click **Save**.  
    
    ![](https://i.imgur.com/ohsCJ1x.png)
 
