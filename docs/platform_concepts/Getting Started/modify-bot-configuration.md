@@ -83,7 +83,7 @@ Resetting a bot allows you to delete all past flows, conversations, and data ass
 
 ## View bot audit log 
 
-Audit log provids a detailed record of the changes made to each module, including information about the user (user email) who made the changes and the timestamp of the actions taken. 
+Audit log provids a detailed record of the changes made to each module(APIs, Inbox Agent configuration/actions, Channels), including information about the user (user email) who made the changes and the timestamp of the actions taken. 
 
 To view audit log, follow these steps:
 
@@ -91,5 +91,8 @@ To view audit log, follow these steps:
     ![image](https://imgur.com/2MuBhJf.png)
 2. To filter the results and view specific information, you can use the **filter** button and apply relevant filters.
     <img src="https://hackmd.io/_uploads/ryIEuxv92.png" alt="drawing" width="50%"/>
-3. if you wish to download all the data from the Audit Log, you can do so by clicking on **Download CSV**. This will allow you to have a comprehensive record of all the changes made to the bot over time.
+3. If you wish to download all the data from the Audit Log, you can do so by clicking on **Download CSV**. This will allow you to have a comprehensive record of all the changes made to the bot over time.
 
+:::note
+Audit logs will be available for 6 months.
+:::

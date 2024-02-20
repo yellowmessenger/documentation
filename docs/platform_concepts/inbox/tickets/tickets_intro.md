@@ -28,6 +28,10 @@ Email tickets are assigned only to an **Inbox agent** (although **Inbox admin** 
 - For an inbox agent, only the chats/tickets assigned to them will be accessible.
 :::
 
+
+**ticket-created** event ([custom event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events)) gets triggered when a email ticket is created and assigned to an agent.
+
+
 ---------
 
 ## 1. Email tickets list view 

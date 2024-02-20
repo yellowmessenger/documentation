@@ -3,6 +3,10 @@ title: Create an email ticket from live chat
 sidebar_label: Email ticket from live chat 
 ---
 
+:::note
+**Create a ticket** is a gated feature. Contact support to activate it. 
+:::
+
 In customer support industries, live chat serves as the default platform for rapid communication. However, certain complex issues may surpass the capabilities of Level 1 (L1) agents. In such cases, **Create a ticket** feature becomes a crucial tool, allowing L1 agents to seamlessly transition from live chat to a ticketed system.
 By addessing the live chat an agent can convert the same query to an email ticket by clicking **Create a ticket**.  This feature facilitates a smooth process wherein L1 agents can extract essential information from customers, subsequently creating a ticket for in-depth analysis by Level 2 (L2) agents. 
 
