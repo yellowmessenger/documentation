@@ -33,5 +33,5 @@ After setting up the channel, you need to test your bot, connect it to the respe
    * Additional
    * [Chat widget](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-overview)
 
-    ![](https://i.imgur.com/6voFjYG.png)
+    ![](https://i.imgur.com/6voFjYG.png)   
 
