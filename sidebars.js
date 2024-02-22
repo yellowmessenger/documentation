@@ -654,7 +654,14 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/cdp/user_data/add_users",
+        {
+          type: "category",
+          label: "Import users",
+          items: [
         "platform_concepts/engagement/cdp/user_data/import_users",
+        "platform_concepts/engagement/cdp/user_data/sync_users"
+          ]
+        },
       //  "platform_concepts/engagement/cdp/user_data/conv_in_builder",
         
         {

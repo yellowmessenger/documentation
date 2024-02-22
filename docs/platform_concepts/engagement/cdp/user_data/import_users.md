@@ -1,5 +1,5 @@
 ---
-sidebar_label: Import users
+sidebar_label: Import users via. CSV file
 title: Import users using CSV file
 tags: [csv import, import bulk users, add bulk users, upload users, edit bulk users, add users, bulk upload, csv]
 ---
