@@ -3,161 +3,187 @@ title: Setup WhatsApp catalog
 sidebar_label: Setup WhatsApp catalog
 ---
 
-This document will guide you through how to create a WhatsApp catalog.
+WhatsApp product catalog enables businesses to showcase and sell their products directly within the WhatsApp messaging platform. In catalog, you can provide detailed information about their products, including the product name, description, website link, price, and product code.
 
-#### Prerequisites 
+Here is a simplified overview of using the WhatsApp catalog:
 
-The following are the prerequisites to use WhatsApp Product node:
+1. Organize your products into categories to make browsing easier for users.
+2. When users inquire about products, share the Catalog link with them.
+3. Users can click on the Catalog link to browse through the available products.
+4. For each item, users can click on the "Add to Cart" or "+" option to add it to their shopping cart.
+5. Users can complete their purchases directly within the chat interface, without having to leave the conversation.
 
-1. [Product Listed on Catalog](#create-product-catalog-on-facebook)
-2. [Updated Business and Compliance Info](#compliance-to-use-spmmpm-on-whatsapp-mandatory-for-indian-waba)
-3. Additional fields added incase of Indian businesses
-4. [Catalog linked with the WABA](#link-catalog-to-a-whatsapp-business-account)
+Businesses can share products with users using two interactive message types:
 
+1. **Single Product Messages** (SPM): These messages display a single product item from the business’ inventory in a Product Detail Page (PDP) format. 
+   
+   <img src="https://i.imgur.com/0Fc5Asl.png" width="50%"/><img src="https://i.imgur.com/Nlw4IDw.png" width="50%"/>
 
+2. **Multi-Product Messages** (MPM): These messages showcase up to 30 items from the business’ inventory, allowing users to browse through multiple products at once.
 
-#### Sample flow of WhatsApp single/multi product message (SPM/MPM)
-
-* Currently, WhatsApp supports either a single product or a vertical carousel of up to 30 products in a single two way message.
-
-   <img src="https://i.imgur.com/0Fc5Asl.png" width="350px"/>
-
-   <img src="https://i.imgur.com/Nlw4IDw.png" width="350px"/>
-
+    <img src="https://i.imgur.com/GnDzjeE.png" width="40%"/><img src="https://i.imgur.com/CgEn4CB.png" width="40%"/>
 
 
-* The recipient can click just on the view option to expand the product details or the vertical carousel of products as shown here.
+## Setup WhatsApp product catalog
 
-   <img src="https://i.imgur.com/GnDzjeE.png" width="350px"/>
+To set up a WhatsApp product catalog, you need to create a catalog under each WhatsApp Business Account (WABA). Each catalog is assigned with a unique catalog ID. For detailed instructions, see [Facebook's documentation](https://en-gb.facebook.com/business/help/1275400645914358?id=725943027795860).
 
-   <img src="https://i.imgur.com/CgEn4CB.png" width="350px"/>
+### Create a catalog 
 
+To create a Catalog in FBM (Facebook Business Manager) for your business, follow these steps:
 
+1. Log on to [Facebook Business Manager](https://business.facebook.com/settings).
 
-* The recipient can add preferred products to the cart using the Add To Cart option or the + option across each item. Once the products are added to the cart, the recipient can send the cart to the business to proceed to the next step.
-
-   <img src="https://i.imgur.com/ClYimi7.png" width="350px"/>
-
-
-
-### Create product catalog on Facebook
-
-The Facebook Commerce Manager (FCM) helps in listing the products to be used for SPM (Single Product Message) or MPM (Multi Product Message). It is not possible to send any product on WhatsApp without listing the products on the FB's Commerce Manager.
-
-:::note
-To use catalog, it's mandatory for the businesses to have a business manager account with Catalog.
-:::
-
-
-To create a Catalog in FB Commerce Manager for your Business:
-
-1. Log on to [Facebook Business Manager](https://business.facebook.com/settings) and go to **Business Settings**. Use the client's BM to create Production Catalogs.
-
-2. Navigate to **Data Sources** and click on **Catalog**.
+2. Navigate to **Data Sources** > **Catalog**.
 
    ![](https://i.imgur.com/kBNq6tm.png)
+   
+3. Click **Add** > **Create a New Catalog**.
 
-
-3. Select **Add** > **Create a New Catalog**.
-
-   * If this will be your first catalog, click Get Started. Select **Create a catalog** and then click **Get Started**.
+   * For the first time you are creating a catalog, click **Get Started**. Select **Create a catalog**, and then click **Get Started** again.
    * If you already have at least one catalog, you will see all of your catalogs listed. Select **+ Add Catalog** to create a new one.
 
-   ![](https://i.imgur.com/EebkHmM.png)
+    ![](https://i.imgur.com/EebkHmM.png)
+    
+4. Enter the **Catalog name**, select the **Type of catalog**, and click **Create catalog**.
 
+   <img src="https://i.imgur.com/QbxvLO8.png" alt="drawing" width="80%"/>
 
-4. Select the type of inventory you advertise or sell, then click **Next**.
+* This will create a new catalog. Once the Catalog is created, you can add products to the Catalog either manually or through a [Data Feed](https://www.facebook.com/business/help/1898524300466211?id=725943027795860).
 
-5. Choose how you want to add items to your catalog - Upload product info or Connect a partner platform.
+5. Click **Open in Commerce Manager** at the top right to add and manage your catalog from the Commerce Manager Dashboard.
 
-6. Select the Business Manager account that your catalog belongs to. This unlocks more ways to use your catalog than selecting a personal account and enables you to assign other people permission to work on the catalog. To select a Business Manager account, you must be a [business admin](https://en-gb.facebook.com/micro_site/url/?click_from_context_menu=true&country=IN&destination=https%3A%2F%2Fen-gb.facebook.com%2Fbusiness%2Fhelp%2F442345745885606&event_type=click&last_nav_impression_id=2bDTYoj64VaSUC2PQ&max_percent_page_viewed=52&max_viewport_height_px=711&max_viewport_width_px=1437&orig_http_referrer=https%3A%2F%2Fwww.google.com%2F&orig_request_uri=https%3A%2F%2Fen-gb.facebook.com%2Fbusiness%2Fhelp%2F1275400645914358&primary_cmsid=1275400645914358&primary_content_locale=en_GB&region=apac&scrolled=true&session_id=1QKGQufmtkRFBOVm3&site=fb4b&extra_data[view_type]=v3_initial_view&extra_data[site_section]=help&extra_data[placement]=%2Fbusiness%2Fhelp%2F1275400645914358).
+   ![](https://i.imgur.com/Fe4XEJD.png)
 
-7. Enter a name for your catalogue and click **Create**.
+6. Select your preferred option. Using a Data feed allows adding products with complete information using a CSV file and syncing the data through the Commerce Manager (CM). In this case, **Data feed** option is selected.
 
-   ![](https://secure-res.craft.do/v2/L4WM1z6kJj18seBUUw2MuARGoGtYBZnsDbGiZ3oGKryUqPeWhxw6C4pK8vL23CmUiucQdeLh1YfYgmFg9TUaAhenEm6BPkxe7hedEtKwgZsKhiQfwNq9FEYvnMqZ96dCER56Nt13CzPmyRQJxCFRLsHNBTy1qh81pXxw1St8NXU9ZiCfaw29VfbfkiWo9vFZyGem8Evjc3CSBKnpgnaX2Yw1PqPq9UYVxQ6azZQvjfN6sg21tCgDLt2b1rr5N7WVz5V7vRJtawHHqbPh3H6Cvpcd6d56iRgRLURKGxB5TGGQY67ncV/Image.jpg)
+   ![](https://i.imgur.com/LlqPgBI.png)
 
-:::note
-For detailed instructions, see [Facebook's documentation](https://en-gb.facebook.com/business/help/1275400645914358?id=725943027795860).
-:::
+7. Click **Download template** and choose your preferred file format to download.
+  
+   ![](https://i.imgur.com/Ykc6JH2.png)
+   
+* The excel template will be downloaded to your device folder.
 
-Once the Catalog is created, you can go to the Commerce Manager available on the top right and manage your Catalog from the Commerce Manager Dashboard.
+8. Open the downloaded template (excel sheet) and enter your catalog details.
 
-You can add products to the Catalog either manually or through a [Data Feed](https://www.facebook.com/business/help/1898524300466211?id=725943027795860). 
+   ![](https://i.imgur.com/rPZIeCd.png)
+   
+9. Go back to **Data sources** and click **Next**.  
 
-An ideal way to manage your products is through Data Feed as it allows adding products with complete information using a CSV file, and sync the data through the Commerce Manager (CM). 
+   ![](https://i.imgur.com/jHEL5PH.png)
 
-You can automate the sync based on your preferred cadence such as Hourly, Daily etc. To find the CSV headers and supported values on the Data Feed, see [here](https://www.facebook.com/business/help/120325381656392?id=725943027795860).
+10. Enter the URL of the downloaded template with all the details of your catalog or upload from your computer and click **Next**.
 
+    ![](https://i.imgur.com/72BR3Hv.png)
+    
+* This will create a catalog for your business.
+     
+11. Navigate to **Catalouge** > **Items** to view and manage all the items in your catalog.
 
-![](https://i.imgur.com/fL3D0n7.png)
+   ![](https://i.imgur.com/1dLSamM.png)   
 
+12. Click **Data sources** to automate the sync based on your preferred cadence such as hourly, daily, and weekly. To find the CSV headers and supported values on the Data Feed, see [here](https://www.facebook.com/business/help/120325381656392?id=725943027795860).
 
-It is important to note the following points in Catalog before using its products:
+    ![](https://i.imgur.com/SKFq5d5.png)
 
-1. ContentID can be given from the business side or will be generated automatically from FB side. This ID needs to be unique and will be used as Product ID in the WhatsApp product message node.
-2. It takes some time to update products when syncing the catalogs using the data feed. You cannot send products on WhatsApp until this process is completed.
-3. For Businesses in India, it is mandatory to have these fields (origin_country, importer_name, and importer_address) filled in as per field specification before each product can be used as SPM/MPM. 
-4. You can add the field values (origin_country, importer_name, and importer_address) in the CSV file or use a Data Rule to fill the values by default from the Data Feed settings page.
+Before using products from the catalog, it is important to consider the following:
+
+* **ContentID**: This ID can be provided by the business or generated automatically by Facebook. It must be unique and will serve as the Product ID in the WhatsApp product message node.
+* **Syncing time**: When syncing catalogs using the data feed, it may take some time for products to update. Products cannot be sent on WhatsApp until this process is completed.
+* **Mandatory fields for Indian businesses**: For businesses in India, certain fields (origin_country, importer_name, and importer_address) must be filled out according to field specifications before each product can be used as SPM/MPM.
+* **Adding field values**: You can add field values (origin_country, importer_name, and importer_address) in the CSV file or use a Data Rule to fill the values by default from the *Data Feed settings* page.
 
    ![](https://i.imgur.com/1oEGBny.png)
+   
+### Link catalog to a WhatsApp business account
 
+Once the catalog is set up, the business has to share the catalog access with the BSP (Yellow.ai) to use items from the catalog in WABA accounts created by Yellow. 
 
+To share catalog access with the BSP and connect it to WABA: 
 
-### Link Catalog to a WhatsApp business account
-
-Once the Catalog is set up, the business has to share the Catalog access with the BSP (Yellow.ai) to use items from the Catalog in WABA accounts created by Yellow. 
-
-To share Catalog access with the BSP and connect it to WABA - 
-
-1. On the client's BM, go to **Catalog**  and select **Assign Partner**.
+1. On the client's BM, go to **Catalog** > **Assign Partner**.
 
    ![](https://i.imgur.com/BCh7ZBZ.png)
 
 
-2. Enter the BSP's (yellow.ai’s) BM ID to link to the Catalog of the business.
+2. Enter the BSP's (yellow.ai’s) BM ID(Business Manager) to link to the catalog of the business.
 
    <img src="https://i.imgur.com/kzQnZTG.png" width="70%"/>
 
 
-3. The Businesses Catalog should show the BSPs name as a partner for the Catalog. Provide Manage Catalog Permission.
+3. Ensure that the BSP's name appears as a partner for the catalog, and enable **Manage catalog** permission.
 
    ![](https://i.imgur.com/23bYVrY.png)
 
 
-4. Once the access is shared, the BSP will get the Catalog listed at their end, as shown below.
+4. Once the access is shared, the BSP will get the catalog listed at their end, as shown below.
 
    ![](https://i.imgur.com/XEcYZTy.png)
 
 
-5. After getting access, the BSP has to link the Catalog to the WABA. To do this, the BSP has to go to the **Phone Number** page on the WABA account on BM, click on the **Cart** icon on the left pane, and then choose the Catalog that needs to be linked.
+5. After getting access, the BSP has to link the catalog to the WABA. To do this, the BSP has to go to the **Phone Number** page on the WABA account on BM, click on the **Cart** icon on the left pane, and then choose the Catalog that needs to be linked.
 
    <img src="https://i.imgur.com/5oJrzpP.png" width="70%"/>
 
 
-6. Your Catalog should appear in the connected catalog list. This confirms that the Catalog is ready to be used on the WABA and the Phone number attached to this WABA.
+6. Your Catalog should appear in the connected catalog list. This confirms that the Catalog is ready to be used on the WABA and the phone number attached to this WABA.
  
  <img src="https://i.imgur.com/6NAB8Uy.png" width="70%"/>
+ 
+### Connect catalog with WhatsApp chatbot
+
+Once the catalog is linked to WABA, connect the catalog with the whatsApp chatbot.
+
+##### Prerequisites
+
+* Ensure your [WhatsApp business account is connected to the Yellow.ai platform](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
+* Copy the catalog ID from the **Catalogues** page that you want to connect to your WhatsApp chatbot.
+* Create a flow in the Studio module using the [WhatsApp product message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#9-whatsapp-product-message) node.
 
 
+
+To connect catalog with WhatsApp chatbot, follow these steps:
+
+1. Navigate to **Channels** > **Messaging** > **WhatsApp**. 
+
+    ![](https://i.imgur.com/RAcd6U6.png)
+    
+2. Click on the below-highlighted icon and select **Edit** option. 
+
+    ![](https://i.imgur.com/MZpz5wt.png)
+    
+3. Paste the **Catalouge ID** that you have copied and click **Save**.
+
+    <img src="https://i.imgur.com/7yTtZVD.png" alt="drawing" width="80%"/>
+    
+* This will connect your catalog to the chatbot.
+
+4. In the Studio module, create a flow using the [WhatsApp product message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#9-whatsapp-product-message) node, using Single Product Messages (SPM) or Multi-Product Messages (MPM) based on your use case.
+
+   ![](https://i.imgur.com/2VbCAhb.png)
+
+5. [Test the WhatsApp chatbot](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/test-wa-bot) to ensure that the catalog items are displayed in the chat interface.
 
 ### Compliance to use SPM/MPM on WhatsApp (Mandatory for Indian WABA)
 
-It is mandatory for Indian businesses to provide the business and compliance information to use the SPM/MPM feature on their WABA accounts. This is mandatory for all Indian WhatsApp business accounts.
+It is mandatory for Indian businesses to provide business and [compliance information](https://www.whatsapp.com/policies/commerce-policy/) to use the SPM/MPM feature on their WABA accounts. This is mandatory for all Indian WhatsApp business accounts.
 
-Log on to the [Cloud Platform](https://cloud.yellow.ai/) and go to **Channels** > **WhatsApp**, and fill in all the basic and additional details.
+Log on to the [Cloud Platform](https://cloud.yellow.ai/), go to **Channels** > **WhatsApp**, and fill in all the basic and additional details.
 
-<img src="https://i.imgur.com/g7gw6v9.png" width="65%"/>
+   <img src="https://i.imgur.com/g7gw6v9.png" width="70%"/>
 
+   
+## Best practices to setup a WhatsApp Business Catalog 
 
+You need to consider the following best practices while setting up your WhatsApp product catalog:
 
-[](https://www.craft.do/s/0loidngTNNAzkK/b/8CA0C2DD-ECD2-437F-BBFB-C1303B7E0966/How_to_Create_an_End_to_End_Catalog_)
+* **Categorize products**: Use categories to systematically organize your products. This helps users to browse through the catalog items that they want to buy.
+* **Add high-resolution images and product details**: Ensure that your catalog features high-resolution images and product details such as product name, description, product code, pricing, and a direct link to the website to showcase your products.
+* **Optimize catalog size**: You can add up to 500 items to their product catalog. It is recommended to include only the best sellers and in demand products.
+* **Update products regularly**: Keep each product listing up-to-date with correct pricing, product names, and availability to provide accurate information to build trust with customers.
 
-:::note
-To create a new Catalog on the the Yellow.ai Platform, see [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#8-whatsapp-product-message).
-:::
-
-
-### FAQs
+## FAQs
 
 <details>
 <summary>Is SPM/MPM supported on Cloud API?</summary>
@@ -168,10 +194,11 @@ To create a new Catalog on the the Yellow.ai Platform, see [here](https://docs.y
 </details>
 
 <details>
-<summary>Can we integrate the Catalog with the platform?</summary>
+<summary> Is it possible to connect the catalog with WhatsApp chatbot?
+</summary>
 <div>
  <br/>
- <div>No, Catalog integration is not live yet and will be evaluated in Q1 2023.</div>
+ <div>Yes, once the catalog is linked to WABA, you can connect it with the WhatsApp chatbot.</div>
   </div>
 </details>  
 
@@ -227,7 +254,7 @@ To create a new Catalog on the the Yellow.ai Platform, see [here](https://docs.y
 <summary>Can the price or other mandatory fields be hidden if not required?</summary>
 <div>
  <br/>
- <div>No, it's not possible to hide the mandatory fields like Image, Product Title, Description and Price can be hidden from the user while sending.</div>
+ <div>No, it is not possible to hide mandatory fields like Image, Product Title, Description, and Price from the user while sending.</div>
   </div>
 </details> 
 

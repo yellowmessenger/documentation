@@ -1001,7 +1001,6 @@ module.exports = {
             "platform_concepts/channelConfiguration/wa-opt-in",
             "platform_concepts/channelConfiguration/WA-bot-bestpractices",
             "platform_concepts/channelConfiguration/WA-pricing",
-            "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
             "platform_concepts/channelConfiguration/webex",  
