@@ -15,6 +15,11 @@ To sync data from an SFTP integration:
    ![](https://i.imgur.com/ANMIg7m.png)
 
    You will see the list of connected integrations.
+
+   Alternatively, you can also do it from the Integrations module by navigating to **Integration**s > **SFTP** > Navigate to ypur preferred SFTP account > Enable the **Sync on** toggle button. 
+
+  ![](https://i.imgur.com/HVJVpUd.png)
+
 3. Navigate to your preferred integration and enable the toggle button (to Sync on).
 
    <center><img src="https://i.imgur.com/cTURsyT.png" width=""/></center>
@@ -31,24 +36,15 @@ To sync data from an SFTP integration:
 
    <img src="https://i.imgur.com/MPkVL5I.png" width="80%"/>
 
-   b. Click on **Fetch files**. You will see the list of available files from the selected directory in the next drop-down menu, *Select file*.
+   b. Click on **Fetch files**. You will see the list of available files from the selected directory in the next drop-down menu, *Select file*. You will only see CSV files, and the filename must begin with `userdata_`. The maximum file size is 200MB.
 
    <img src="https://i.imgur.com/7ZiZKKy.png"/>
-
-
-:::note
-You will only see CSV files, and the filename must begin with `userdata_`. The maximum file size is 200MB.
-:::
 
    c. To preview the file content, click on **Preview file**. You will see the preview of the top five rows. 
 
    d. Click **Next** to continue.
 
-   
-
-
-
-5. In **Map properties**, 
+6. **Map properties**, 
 
    a. In **User ID**, choose the column that contains userId.  
 
@@ -58,7 +54,7 @@ You will only see CSV files, and the filename must begin with `userdata_`. The m
 
    c. Click **Next**.
 
-6. In  **Resolve conflicts**, set the action to be performed to the record when a userId in the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360.
+7. In  **Resolve conflicts**, set the action to be performed to the record when a userId in the CSV file already exists in User 360. A conflict occurs when the userId imported through the CSV file already exists in User 360.
    
    <img src="https://i.imgur.com/JTtHM9X.png"/>
 
@@ -78,7 +74,7 @@ You will only see CSV files, and the filename must begin with `userdata_`. The m
 
    b. **Repeat**: Choose this option to schedule import on a daily, weekly, or monthly basis. <br/>For daily scheduling, select the desired time. For monthly scheduling, choose the date and time, and for weekly scheduling, select the preferred day(s) of the week (Sunday to Saturday) and the corresponding time.<img src="https://i.imgur.com/OuA3cqb.png"/>
 
-   c. **Custom import**: Select this option to schedule using a cron expression. With a cron expression, you can define specific dates, times, and intervals for importing data (recommended for developers). For example, the expression `0 0 1 * * ?`, represents a schedule that triggers the import at 1:00 AM every day.
+   c. **Custom import**: Select this option to schedule using a cron expression. With a cron expression, you can define specific dates, times, and intervals for importing data (recommended for developers). <br/>For example, the expression `0 0 1 * * ?`, represents a schedule that triggers the import at 1:00 AM every day.
 
 8. Click **Import**
 
