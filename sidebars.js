@@ -1380,7 +1380,6 @@ module.exports = {
               items: [
               "platform_concepts/mobile/inbox/android",
               "platform_concepts/mobile/inbox/ios",
-              "platform_concepts/mobile/inbox/cordova",
               ],
             },
             {
