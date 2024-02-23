@@ -7,7 +7,7 @@ This documentation outlines the process of using the "sendEventToBot" function t
 
 ### Updating Payload Using the sendEventToBot Function
 
-You can use the `sendEventToBot` function to add or update data within your bot's payload even after the bot has been initialized. You can use this function to ensure that your bot's data remains up-to-date throughout its interaction within the app.
+You can use the `sendEventToBot` function to add or update data within your bot's payload even after the bot has been initialized. You can use this function to ensure that your bot's data remains up-to-date throughout its interaction within the app. To use the sample payload, refer to the [Android](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android#send-event-to-bot), [Cordova](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/cordova#send-event-to-bot), [Flutter](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/flutter#send-event-to-bot), [iOS](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios#send-event-to-bot), and [React Native SDK](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/react-native#send-event-to-bot) documentation.
 
 ### Flow and Prerequisites
 
