@@ -654,7 +654,14 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/engagement/cdp/user_data/add_users",
+        {
+          type: "category",
+          label: "Import users",
+          items: [
         "platform_concepts/engagement/cdp/user_data/import_users",
+        "platform_concepts/engagement/cdp/user_data/sync_users"
+          ]
+        },
       //  "platform_concepts/engagement/cdp/user_data/conv_in_builder",
         
         {
@@ -1001,7 +1008,6 @@ module.exports = {
             "platform_concepts/channelConfiguration/wa-opt-in",
             "platform_concepts/channelConfiguration/WA-bot-bestpractices",
             "platform_concepts/channelConfiguration/WA-pricing",
-            "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
             "platform_concepts/channelConfiguration/webex",  
@@ -1374,7 +1380,6 @@ module.exports = {
               items: [
               "platform_concepts/mobile/inbox/android",
               "platform_concepts/mobile/inbox/ios",
-              "platform_concepts/mobile/inbox/cordova",
               ],
             },
             {

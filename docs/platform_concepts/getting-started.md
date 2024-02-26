@@ -16,6 +16,7 @@ Yellow.ai offers two different platforms:
 
 Yellow.ai is a cutting-edge cloud platform that transforms how businesses build AI bots. The platform enables the creation of intelligent, efficient bots for exceptional customer support. With a fusion of AI and human expertise, Yellow.ai empowers personalized interactions, process automation, and streamlined engagement across channels.
 
+Link to the platform: https://cloud.yellow.ai
 
 :::note
 We also have an App platform (app.yellow.ai), a code-based solution with limited features. However, for a comprehensive experience and enhanced benefits, we strongly recommend [migrating](https://docs.yellow.ai/docs/cookbooks/migration-guide) to our Cloud Platform. For additional support, contact your designated POC.
@@ -84,6 +85,8 @@ Yellow.ai offers seamless **integrations** with a wide range of third-party appl
 Access our wide array of self-help resources for learning, guidance, and assistance with any queries or challenges you encounter.
 
 ### Follow our Academy for training 
+
+Academy registration: https://ascend.yellow.ai/training-registration
 
 Join Yellow Academy for expert-led learning and enjoy the following benefits:
 bot building with comprehensive training and courses from our experts.

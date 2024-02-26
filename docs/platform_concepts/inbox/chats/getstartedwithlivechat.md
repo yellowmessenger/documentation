@@ -54,6 +54,25 @@ When a live chat is raised by the bot user (requesting to connect with an agent)
     <img src="https://hackmd.io/_uploads/rJ7tesk23.png" alt="drawing" width="85%"/>       
 :::
 
+
+
+**ticket-assigned-bot** event ([custom event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events)) gets triggered when a live chat is assigned to an agent. 
+
+API to enable this event:
+
+```
+curl --location 'https://cloud.yellow.ai/api/agents/settings/ticketUpdateEventSettings?bot=<botID>' \
+--header 'x-auth-token: <token>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "chatAssignedBot": true
+}'
+```
+
+> Use the correct URL link for **location** and enter the token key in **x-auth-token/x-api-key**.
+
+
+
 Inbox classifies live chats into 7 different types, explained below: 
 
 <img src="https://hackmd.io/_uploads/ryjaDkJk6.png" alt="drawing" width="45%"/>    
