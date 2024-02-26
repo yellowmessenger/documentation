@@ -52,6 +52,7 @@ module.exports = {
           "cookbooks/studio/storeApiResponse",
           "cookbooks/studio/qr-node",
           "cookbooks/studio/usecases-functions",
+          "cookbooks/studio/ticket-assignedevent",
 
       ],
     }, 
