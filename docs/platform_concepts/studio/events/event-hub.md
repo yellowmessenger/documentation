@@ -114,7 +114,7 @@ When a user interacts with a Facebook ad and is referred to a specific destinati
 </TabItem>
 </Tabs>
 
-
+-------------------
 
 #### Facebook Click-to-WhatsApp Campaign Event
 
