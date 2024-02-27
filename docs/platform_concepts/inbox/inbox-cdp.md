@@ -136,6 +136,19 @@ If the User identification setting is not visible in the Conversation settings p
 
     <img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
 
+
+
+
+:::note
+To display the contact card on the chat screen, you must store the **first name** along with either the **mobile number** or **email** in **[user property variables](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties)**. 
+These variables should then be passed into the **Raise ticket node**. Following this method is crucial for enabling the visibility of the contact card. 
+If the above steps are not followed, contact card and the old UI will be displayed with the available user details without the *Recent activity* link.
+:::
+
+
+
+
+
 ---
 
 ## Use User360 to enhance customer context in Inbox

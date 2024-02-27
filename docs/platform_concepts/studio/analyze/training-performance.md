@@ -31,14 +31,3 @@ To access this option, go to **Studio** > **Analysis** > **Message view**.
 
  Once you have set the filters, click the **Apply filter** button at the bottom to apply the changes. To reset these filters, click the **Reset filters** button.
 
-## 2. Map unidentified utterances
-
- Messages display the unidentified utterances of the bot. If the filters are set, messages will be displayed based on that. Click on a message to see the entire conversation in which it was used. 
-
-   ![](https://i.imgur.com/EB4byme.png)
-
- You can map these utterances to intents by clicking the dropdown right next to them.
-
-   ![](https://i.imgur.com/9W8UEOc.png)
-
-

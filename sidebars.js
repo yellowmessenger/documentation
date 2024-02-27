@@ -52,6 +52,7 @@ module.exports = {
           "cookbooks/studio/storeApiResponse",
           "cookbooks/studio/qr-node",
           "cookbooks/studio/usecases-functions",
+          "cookbooks/studio/ticket-assignedevent",
 
       ],
     }, 
@@ -407,6 +408,7 @@ module.exports = {
               "platform_concepts/inbox/inbox_setup/emailvschat",
               "platform_concepts/inbox/inbox_setup/agentstatuses",
               "platform_concepts/inbox/inbox_setup/assignmentlogic",
+              "platform_concepts/inbox/inbox_setup/inboxevent",
               "platform_concepts/inbox/inbox_setup/debugchecklist",
             //
                  ],
@@ -1008,7 +1010,6 @@ module.exports = {
             "platform_concepts/channelConfiguration/wa-opt-in",
             "platform_concepts/channelConfiguration/WA-bot-bestpractices",
             "platform_concepts/channelConfiguration/WA-pricing",
-            "platform_concepts/channelConfiguration/whatsapp-char-limit",
             "platform_concepts/channelConfiguration/wa-faqs",
               ]},
             "platform_concepts/channelConfiguration/webex",  
@@ -1381,7 +1382,6 @@ module.exports = {
               items: [
               "platform_concepts/mobile/inbox/android",
               "platform_concepts/mobile/inbox/ios",
-              "platform_concepts/mobile/inbox/cordova",
               ],
             },
             {

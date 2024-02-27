@@ -13,8 +13,7 @@ The following are the different types of Action nodes available on Yellow.ai:
 
 1. [Interactive nodes](#1-interactive-nodes)
 2. [Code Based](#2-code-based-nodes)
-3. [Language & Notification](#3-nodes-for-language--notification)
-4. [Skill nodes](#4-workflow-nodes)
+3. [Language & Notification](#3-language-and-notification-nodes)
 
 ## 1. Interactive nodes
 
@@ -518,38 +517,39 @@ The following actions can be performed:
 
 ---
 
-## <a name="lang"></a>  3. Nodes for language & notification
+## 3. Language and Notification nodes
+
 
 ### 3.1 Set language 
 
-Change the bot language to any of the configured languages using this node. 
+This node lets you change the language of the bot conversation to one of the pre-configured languages. The language can be changed only if you have already set up languages in your bot, otherwise, this node will not work. This node takes input only in the form of [ISO codes](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages) based on which it will change the language of the bot.
+
+   <img src="https://i.imgur.com/fBHPZLT.png" alt="drawing" width="80%"/>
 
 
-Set language action node takes only one input - variable containing **ISO code** of language you wish to change to.  Arrange the nodes as follows:
+Let's say that you want to build a flow that asks for user's preferred language to continue the conversation.
 
-* Configure a node to ask for a valid ISO code (only languages configured with the bot are allowed) and store the value in the variable. You can use a question node for this. [Click here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages) for the list of languages that we support.
-* Connect the **Set Language node** to the node that takes ISO input. Select the variable in which the previous reply is stored. 
-This language will be permanently set (currently set 2 days of expiry), unless it is being changed by same action node only.
+1. [Add the preferred languages to your bot](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#2-add-languages-to-your-bot).
+2. Go to the flow and include a [Quick reply node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#7-quick-replies). Create different buttons for different languages and assign the ISO code as button values to the respective language option.
+3. Store the response of the Quick Reply node in a variable.
+4. Include the **Set language node** and choose the variable created in the previous step. Refer to the following gif to see how it works.
 
-![](https://i.imgur.com/1jPB6iz.png)
+  ![](https://i.imgur.com/bWZvZ8c.gif)
 
-:::note
-Language can only be changed to only if that language is configured in bot settings, otherwise, the node will fail. 
-:::
 
 ---
 
-### 3.2 Outbound notification
+### 3.2 Outbound notification 
 
-You can integrate an Outbound Notification node into your bot flows to seamlessly send messages to your bot users across various channels. This dynamic node enables you to send SMS, email, WhatsApp, and voice notifications. Within the bot's flow, you can select your preferred sender ID, manage CC and BCC recipients, and choose from a variety of templates.
+This node lets you send notifications as part of the bot conversation. Include this node at whichever point of the flow you want the bot send an outbound notification. Using this node you can send notifications via SMS, Email, Whatsapp and Voice.
 
+Imagine you've integrated a chat bot into your e-commerce platform. When a customer successfully places an order, the bot distribute notifications across different channels as configured in the node. For example, customers receive WhatsApp/SMS messages confirming their order details, while Email/Voice notifications are dispatched post-shipping for additional updates. 
 
-
-To know more,  See [Outbound notifications or Workflow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
-
-Here is how you can configure the Outbound notification node:
+For a detailed guide on setting up outbound campaigns, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
 
   <center><img src="https://i.imgur.com/7GEgUGE.png" width="70%"/></center>
+  
+  
 
 Option | Description
 ------ | ----------
@@ -557,29 +557,48 @@ Type | Choose the type of communication you want to send: SMS, Email, WhatsApp, 
 Sender | Choose the sender ID from which you want to send the communication.
 Profile | Select the sender for the SMS notification. Applicable only for SMS in India.
 To | Choose the appropriate variable containing the recipient details, example, SMS phone number, Email address, etc.
-CC | Choose recipients for CC (Carbon Copy) if needed. Applicable only for email.
-BCC | Choose recipients for BCC (Blind Carbon Copy) if needed. This allows you to include additional recipients without exposing their email addresses to other recipients. Applicable only for email.
+CC | Choose recipients for CC (Carbon Copy) if needed.
+BCC | Choose recipients for BCC (Blind Carbon Copy) if needed.
 Select template | Pick a template to use for your communication.
-Store message ID in | Select the variable where you would like to store the Message ID after it has been sent.
-
-
+Store message ID in | Choose the variable where you want to store the Message ID. |
+|Text type| Select Text/SSML from the dropdown.|
+|TTS Engine| Select the engines from the dropdown- Microsoft Azure, Google Wavenet, Amazon Polly.|
+|Voice ID| Type the characters of voice ID. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML".|
+|Speed|This value defines how fast the bot must converse. This value can be 0.9 - 1.5 for the bot to soundly humanly. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML".|
+|Pitch| Pitch value can be any decimal value depending on the base of voice required, 0 is ideal. You can add this for Microsoft if text_type = "text" and for Google for text_type = "text" and "SSML".|
+|Capture DTMF length| Enable this option if the DTMF is to be collected on the specific node.|
+|DTMF digital length| Enter the length of characters to be captured. Ex: For an Indian phone number, it is 10.|
 
 
 ---
 
 ### 3.3 Notification status
 
-The Notification status node helps you track the delivery and status of your [outbound notifications](#32-outbound-notification). It uses the **Message ID** to retrive the notification status. The node offers valuable insights, such as delivery confirmation, read receipts, or error notifications, depending on the capabilities of the communication channel. 
+The **Notification status** node helps you track the delivery and status of the notification configured in the [Outbound Notification node](#outbound). It uses the **Message ID** to retrive the notification status. The node offers valuable insights, such as delivery confirmation, read receipts, or error notifications, depending on the capabilities of the communication channel. 
 
 You can make use of message status (Sent/Delivered) to take appropriate actions based on the status of your outbound notification, ensuring effective and responsive communication with your audience.
 
  <center> <img src="https://i.imgur.com/rHvs8mM.png" width="70%"/></center>
 
-Option | Description
------- | ----------
-**Type:** | Choose the specific type of communication you wish to track: SMS, Email, WhatsApp, or Voice.
-**Message ID:** | Choose the Message ID variable associated with the sent communication. Selecting the message ID retrieves real-time information about the status of that specific communication.
-**Sent**/**Delivered** | You can see this node level options to configure desired action for each status.
+To use this node:
+
+1. Add an [Outbound Notification node](#out) to your flow and store the response of that node in a variable.
+
+   ![](https://i.imgur.com/9YFdHas.png)
+
+2. Add a **Notification Status node** to the outbound notification node.
+
+   ![](https://i.imgur.com/ngOYViI.png)
+
+3. In **Type**, choose the communication channel: SMS, Email or WhatsApp  and in **Message ID** fetch the variable that contains the Message ID.
+
+   ![](https://i.imgur.com/5RTMMPQ.png)
+
+4. In **notifStatusStoreCustomPayloadIn**, create or choose the variable to store the payload.
+5.  Connect relevant nodes to **Sent** and **Delivered** options based on what you want the bot to do if the particular notification was sent and delivered.
+
+  ![](https://i.imgur.com/IboR5jj.png)
+
 
 :::note
 To know more about Outbound notifications, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
@@ -587,52 +606,40 @@ To know more about Outbound notifications, click [here](https://docs.yellow.ai/d
 
 ---
 
-### 3.4 Voice call 
-
-> This node is not in use. 
-
-
----
-
-## <a name="wf"></a> 4. Workflow nodes
+### 3.4 Sync database
 
 :::info
-These nodes are only available when a flow is created as a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#workflow). 
+This node is only available when a flow is created as a [skill](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-skill). 
 :::
 
-### 4.1 Sync database
+The Sync database node facilitates the synchronization of your bot's database with external databases using APIs. This node streamlines the process of automating data synchronization with external databases.
 
-The Sync database node is an action workflow node that lets you sync the bot tables with external databases in real-time. It is useful when the data in the bot tables needs to be updated frequently, and manual editing becomes tedious and non-scalable. The Sync database node enables users to connect any bot table to an external database through APIs.
+Let's say you have a bot that assists with inventory management for an e-commerce website. You want to ensure that the inventory data in your bot's database is always up-to-date with your main inventory database. By using the **Sync database node**, you can seamlessly integrate your bot's database with your main inventory database, ensuring that any changes or updates made externally are reflected in real-time within your chatbot, thus providing accurate and timely information to your users.
 
+:::info
+Refer to this video to see how this node works
 
-1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#sch-1) (if there is a requirement to schedule the database updates).
+[![Sync DB node](https://cdn.loom.com/sessions/thumbnails/1e7104db203c4061a5d6839ea515198e-with-play.gif)](https://www.loom.com/share/1e7104db203c4061a5d6839ea515198e)
+:::
 
-![](https://i.imgur.com/QjIIo2d.png)
+:::note
+* The column names in the table should be exactly the same as the attribute names in the JSON response. 
+* All the rows will be imported, processed and sent to the selected table to perform the selected action.
+:::
 
-2. Create an [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api). Create a table in the required format (template without any rows).
+To configure the **Sync Database** node:
 
-![](https://i.imgur.com/JeMgAdJ.jpg)
+  ![](https://i.imgur.com/Zh1Ajsi.png)
 
-3. Create/open a [workflow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#workflow). On the start node, select the scheduled event as the start trigger. 
+1. In **API**, choose the preferred API in the drop down. For steps to add a new API to the bot, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
+2. In **Parameters of API**, select the variables that contain the values of the corresponding fields. 
 
-![](https://i.imgur.com/BpOb6o5.png)
+   * If the values are dynamic, they should be collected from customers using prompt nodes and those variable should be mapped here. 
+   * If they are static values, you can create a variable and type the values.
 
-4. Connect the start node to the Sync Database node.
+3. In API response type, choose the API response type of the API added. **JSON** and **CSV** are the options available. Fill the following fields based on the option selected.
 
-#### Sync database node via CSV 
-
-1. Select the API, Table and appropriate action.
-    - **Insert**: Adds rows from API call to the end of the table.
-    - **Update**: Compares rows from API call to the existing table and checks if there is a match in Unique ID and updates those rows.
-    - **Import**: Truncates existing table completely and replaces it with data from API call.
-
-![](https://i.imgur.com/SsJcSCp.png)
-
-#### Sync database node via JSON
-
-1. Select the API you want to sync with the bot tables. 
-2. Select the API Response Type as JSON.
-3. Select the path where the relevant data lies in the JSON response. For e.g., the JSON path  for the following code would be the  is "data.results.*
+* **JSON path selector:(this field is available only for the JSON response)** Select the path where the relevant data lies in the JSON response. For example, the JSON path  for the following code would be the  is "data.results.*
 
 ```
 {
@@ -645,46 +652,13 @@ The Sync database node is an action workflow node that lets you sync the bot tab
        }
 }
 ```
+* **Parse API response:** Choose the function that contains the transformation logic. This helps access individual row attributes.
 
-4. Pass the record that comes from the selected path in **Parse API response** so that the response comes in a dictionary format.
-5. Select the custom variable and select the bot table where they want to store the API response.
-6. Select the operation type. There are three types of operations that users can perform: Insert, Update, and Import.
+ **Sample code**
+ 
+   (This is optional for CSV)
 
-* **Insert:** Insert the data as new rows to the existing table.
-* **Update:** Update the existing data with the new data to update the existing rows. Users need to select the primary key. If there is a primary key match, the row will be updated else a new row will be added.
-* **Import:** Truncates existing table completely and replaces it with data from API call.
-
-:::note
-1. The column names in the table should be exactly the same as the attribute names in the JSON response.
-2. You can also refer this video for further clarity.
-
-[![Sync DB node](https://cdn.loom.com/sessions/thumbnails/1e7104db203c4061a5d6839ea515198e-with-play.gif)](https://www.loom.com/share/1e7104db203c4061a5d6839ea515198e)
-
-:::
-
-5. When the Sync Db node gets triggered, it pulls all the data through API. 
-
-:::note
-- Data is supported only in CSV format.
-- There is no restriction on the file size. 
-- All the rows will be imported, processed and sent to the selected table to perform the selected action.
-:::
-
-6. On the scheduled time, status of the sync can be viewed in "status" object.
-
-```
-{
-success: true,
-error : 'if any, we show it',
-recordsProcessed: 1230,
-}
-```
-
- Configure a parser function where individual row attributes could be accessed with a custom code: 
-
- **This is optional for CSV**
-
-```
+ ```
 return new Promise(resolve => {
   let record = ymLib.args.record;
   /*
@@ -695,4 +669,39 @@ return new Promise(resolve => {
     category: record.category
   });
 });
+ ```
+
+
+* **Store Response in:** Choose the variable in which the response of this node should be stored.
+* **Select table:** Choose the database table in which the data should be populated.
+* **Select action:** Choose one of the preferred actions.
+    - **Insert**: Adds rows from API call to the end of the table.
+    - **Update**: Compares rows from API call to the existing table and checks if there is a match in Unique ID and updates those rows.
+    - **Import**: Truncates existing table completely and replaces it with data from API call.
+
+![](https://i.imgur.com/SsJcSCp.png)
+
+To use this node in a flow:
+
+1. Create a [Schedule Event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#schedule-events) (if there is a requirement to schedule the database updates).
+2. [Add the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) and [create a database table ](https://docs.yellow.ai/docs/platform_concepts/studio/database#create-database-table)in the required format (template without any rows).
+3. Create or open a [skill](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-skill). On the start node, select the scheduled event as the start trigger. 
+
+![](https://i.imgur.com/BpOb6o5.png)
+
+4. Connect the start node to the **Sync Database** node.
+5. When the Sync DB node gets triggered, it pulls all the data through API. 
+6. On the scheduled time, status of the sync can be viewed in **status** object.
+
 ```
+{
+success: true,
+error : 'if any, we show it',
+recordsProcessed: 1230,
+}
+```
+
+
+
+
+

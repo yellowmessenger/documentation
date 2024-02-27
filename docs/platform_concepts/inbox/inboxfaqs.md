@@ -58,6 +58,13 @@ An inbox admin can configure what happens to the live chats when all the agents 
 
 
 
+<details>
+  <summary>Why can't I view recent activity on my contact card?</summary>
+  <div>
+    If you only see the View contact link in the UI, it is likely due to incorrect configuration of user360 variables. Ensure that you have set up flows to fetch the first name and either the mobile number or email values, storing them in user property variables. Make sure to use only these variables in the Raise Ticket node for proper functionality.
+  </div>
+</details>
+
 
 #### **Sticky agents** 
 
