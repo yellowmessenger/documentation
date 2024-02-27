@@ -133,5 +133,5 @@ Our extensive library of help articles is readily available to provide quick ans
 
 
 :::note
-For any queries or help, reach out to [support@yellow.ai](support@yellow.ai). 
+For any queries or help, contact [Yellow.ai support team](mailto:support@yellow.ai). 
 :::
