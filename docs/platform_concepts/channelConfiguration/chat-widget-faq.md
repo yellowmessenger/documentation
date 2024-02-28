@@ -766,4 +766,17 @@ window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "dis
 </div>
 </details>
 
+<details>
+<summary>Can I hide the chat separator when an agent is connected to the bot?</summary>
+<div>
+ <br/>
+ <div>To hide the chat separator when an agent is connected to the bot, include <b>hideTransferEvent: true</b> inside the the <b>window.ymConfig</b> chatbot script. 
+
+```
+window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "hideTransferEvent": true };
+```
+</div>
+</div>
+</details>
+
 

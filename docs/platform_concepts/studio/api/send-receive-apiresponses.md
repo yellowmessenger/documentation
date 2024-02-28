@@ -36,10 +36,10 @@ Use the following code inside a body/params:
 
 | Pass URL  | Format |
 |-- | --|
-Directly | $$tobase64{url}
-Through variable | $$tobase64{{{{url}}}
+Directly | $$tobase64(url)
+Through variable | $$tobase64{{(url)}}
 
-   ![](https://i.imgur.com/SRHt8OM.png)
+   ![](https://i.imgur.com/v3h6ruH.png)
    
 #### Pass Array/Object variable in JSON
 
