@@ -13,7 +13,8 @@ To access the conversation logs, go to **Studio** > **Analysis** > **Conversatio
 Logs are retained for six months. After that, they are transferred from the active store to the cold store where they will remain until the contract expires. If needed, these logs can be archived upon request.
 
 :::note
-The conversation logs are updated everyday at 21:00 LT.
+* The conversation logs are updated everyday at 21:00 LT.
+* By default, we can view chats from the past 24 hours.
 :::
 
 ## Session

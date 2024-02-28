@@ -199,12 +199,14 @@ After detecting the intents, the model will acknowledge this (via an Acknowledgm
 Other options and the **Go home** option will also be suggested as quick replies, along with a follow-up message (similar to **Intelligent Switching**).
 
 <img src="https://i.imgur.com/CCIjO7s.png" width="55%"/>  
+
   
-Fields | Descriptions
--------- | ---------
-Enable | Set *Yes* to enable multi-intent.
-Acknowledgement question | The acknowledge message to display when multiple intents are detected. <br/>Sample message: I understand, What would you like to do first?
-Followup question |  Question to ask in follow up to the previous question. <br/> Sample message: Would you like to proceed?
+| Fields                  | Descriptions                                                                                           |
+|-------------------------|--------------------------------------------------------------------------------------------------------|
+| Enable                  | Set *Yes* to enable multi-intent.                                                                      |
+| Acknowledgement question | The acknowledge message to display when multiple intents are detected. <br/> Sample message: I understand, What would you like to do first? |
+| Followup question       | Question to ask in follow up to the previous question. <br/> Sample message: Would you like to proceed? |
+
   
 
 ![](https://i.imgur.com/s4zM19K.png)

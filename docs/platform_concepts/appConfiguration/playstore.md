@@ -18,7 +18,7 @@ Connect your cloud console and Google Play accounts (as mentioned [here](https:/
 
  2. In the **Give account name** field provide a name to your account in yellow.ai.
  3. In **Email**, enter the email address of your Google Playstore account.
- 4. In **Private key** and **Package name**, enter the private key and package name of your Google Play store account.
+ 4. In **Private key** and **Package name**, enter the private key and package name of your Google Play store account. For steps to fetch the private key from your google console, click [here](https://www.iwantanelephant.com/blog/2020/11/17/how-to-configure-api-access-to-google-play-console/).
  5. Click **Connect**.
  
 ### Enable Google Playstore events in Yellow.ai
