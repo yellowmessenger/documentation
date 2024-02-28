@@ -69,13 +69,10 @@ Enter the following details:
 * For more details on SMTP, reach out to your IT team.
 :::
 
-* **Port**: Select the preferred port value where you want to establish the SMTP connection. It can be 465, 587, or 25.
+* **Port**: Select port **465** for Gmail and port **587** for Outlook when setting up the SMTP connection.
 
-:::note
-You need to contact your support team to get the port value.
-:::
+* **Security type**: Choose **SSL** for Outlook or **TLS** for Gmail when selecting the appropriate security type for the SMTP connection.
 
-* **Security type**: Select the appropriate security type - SSL (Secure Socket Layer) or TLS (Transport Layer Security).
 * Click **Save**.
 
    <img src="https://i.imgur.com/1BbJrgg.png" width="80%"/>
