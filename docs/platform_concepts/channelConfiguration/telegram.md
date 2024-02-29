@@ -12,6 +12,11 @@ This channel enables the following key features:
 * **Automated Replies**: Provides the ability to automatically respond to user messages.
 * **Multi-message types support**: You can use various message types including text, image, video, file, and carousel (which can only be used as a CTA), to enhance the communication experience.
 
+**Watch the video on how to setup Telegram channel:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CRSm2hyu97A" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+<br/>
+
 ## Setting up Telegram chatbot
 
 To set up Telegram bot, you need to perform the following:
