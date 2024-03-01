@@ -34,6 +34,35 @@ Before creating visualizations, you must **summarize** the data in tables. After
 - **Count Chart**: A count chart is great for displaying the frequency of values in a dataset. It could be used to show how frequently each letter appears in a block of text.
 - **Pie Chart**: A pie chart is an excellent choice for representing how a whole is divided into parts. It could be used to illustrate the proportion of expenses in a household budget.
 
+-----
+
+
+### Bargraph stacking 
+
+Stacked bar graphs visually represent data by stacking individual bars to show the total while illustrating the contribution of each category. This format aids in part-to-whole comparisons, trend analysis, and efficient presentation of data with multiple categories. It's effective for emphasizing both total values and the significance of individual components, making it a useful tool for various data visualization scenarios.
+
+When you click **Visualization > Bar graph**, you will get the following options to select the values to be displayed on the X and Y axis of the bar graph.
+
+- **X-axis:** Select fields from **Group by** for the X axis.
+- **Y-axis:** Select fields from **Summarise by** for the Y axis.
+
+![image](https://imgur.com/hVVzonm.png)
+
+:::note
+- You can have a minimum of 1 and a maximum of 2 *group bys*. *Group bys* can be rearranged, which will change the nesting.
+- You can have a minimum and a maximum of 1 *summarise by*.
+:::
+
+After selecting the values, you will get the option to **stack** the bar graph:
+
+- **Don't stack:** The bar graphs are not stacked.
+    ![image](https://imgur.com/En8tFpT.png)
+- **Stack:** Y-axis will have the count value.
+    ![image](https://imgur.com/6Xt0Axu.png)
+- **Stack 100%:** Y-axis will have the count % value.
+    ![image](https://imgur.com/brSJffA.png)
+
+
 ----
 
 ## 2. Download summarized data 
