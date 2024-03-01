@@ -22,7 +22,12 @@ There are two types of user data that is supported in User 360:
 1. User properties
 
    i. [System user properties](#system-user-properties): Default data that you can capture about your users.
+
    ii. [Custom user properties](#custom-user-properties): Custom data that you can capture about your users and send to the platform.
+
+   :::note
+   You can have up to 120 user properties in User 360.
+   :::
 
 2. User Events: Track specific actions or activities performed by users within a system, application, or platform. For more details, see [User 360 events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events) and [Custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events)
 
