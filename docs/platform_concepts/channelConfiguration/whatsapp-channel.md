@@ -31,12 +31,12 @@ Pricing | Free messaging | Free messaging | Messages should be responded to with
 Supported message types | Supports text and emoji based messaging with attachments | Supports text and emoji based messaging with attachments | Supports text and rich media messages
 Verification | No | No | Need approval of templates to send template messages and access to the API
 Interface | Front-end interface in the form of an app installable on mobile devices | Front-end interface in the form of a business app installable on mobile devices | There is no front-end interface. Communication is facilitated through Business Solution Providers (BSP)
-WhatsApp pay | Yes | Yes | No
-Device Support | Single user per device | Single user per device | Supported on multiple users and devices 
+WhatsApp pay | Yes | Yes | Yes
+Device Support | Single user per device | Single user per device | Supported on multiple users and devices on the Yellow.ai platform
 Functionality | Supports sending one-on-one and group messages | Supports sending a high volume of messages with quick replies and automated greeting messages for efficient communication | Supports more advanced use cases like transactional messages, appointment reminders, and customer alerts | 
 Auto responses | No | Yes | Yes | 
 Verified green tick mark | Not available	| Requires approval from WhatsApp | Requires approval from WhatsApp
-Automation | No message automation | Limited automation. App automation includes greeting messages, away messages, and quick replies | Supports complete message automation |
+Automation | No message automation | Limited automation. App automation includes greeting messages, away messages, and quick replies | Supports complete message automation through chatbots |
 Usability | Used on an iOS or Android app | Used on an iOS or Android app |Used on automated systems or chatbots. There is no real mobile interface |
 
 ### Limitations of WhatsApp channel
