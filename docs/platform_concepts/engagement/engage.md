@@ -75,7 +75,7 @@ To access Engage, follow these steps -
    * Click on **Engage for campaigns** under  *Quick links*.
    * Click on the main menu to expand and select **Engage**.
 
-![](https://i.imgur.com/2XkSNd2.jpg)
+   ![](https://i.imgur.com/QzWtJor.png)
 
 :::note
 If you are unable to access the Engage module, check your role with the bot's Super admin and request the required role - 

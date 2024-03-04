@@ -38,6 +38,15 @@ No, for CTA button clicks, you will not receive any events on the bot.
 By default, the rate limit is set to 2000 calls/min. If you want to reduce this rate, create a ticket requesting the same or contact support.
 </details>
 
+
+<details>
+
+<summary>
+What’s the ideal image size for a WhatsApp outbound campaign?</summary>
+WhatsApp automatically resizes images. It is recommended to keep the aspect ratio of 1:1.
+</details>
+
+
 <details>
 
 <summary>

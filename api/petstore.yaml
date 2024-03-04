@@ -84,6 +84,8 @@ tags:
     description: Manage email tickets
   - name: messages
     description: Manage bot messages
+  - name: integrations
+    description: 
 
 components:
   securitySchemes:
@@ -1211,3 +1213,81 @@ paths:
                     type: string
                     description: Error details
  
+  '/integrations/sync/v1/message':
+    post:
+      security:
+        - ApiKeyAuth: []    
+      tags: 
+        - Integrations   
+      summary: Send message/event to bot
+      description: Send message or event to a bot and synchronously receive responses.
+      parameters:
+        - name: x-api-key
+          in: header
+          required: true
+          schema:
+            type: string
+          example: "Bearer <TOKEN>"               
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              required:
+                - botId
+                - sender
+                - data
+              properties:
+                botId:
+                  type: string
+                  description: The ID of the bot receiving the message or event
+                sender:
+                  type: string
+                  description: The sender ID of the message
+                data:
+                  type: object
+                  description: The payload of the message
+                  properties:
+                    message:
+                      type: string
+                      description: The message content (required if sending a message)
+                    file: 
+                      type: string
+                      description: URL of the file to be sent                      
+                    image: 
+                      type: string
+                      description: URL of the image to be sent       
+                    video: 
+                      type: string
+                      description: URL of the video to be sent    
+                    media: 
+                      type: string
+                      description: URL of the media file (such as audio or vide) to be sent                                                                                                                         
+                    event:
+                      type: object
+                      description: The event data (required if sending an event to the bot
+                      properties:
+                        code:
+                          type: string
+                          description: The code identifying the event
+                        data:
+                          type: object
+                          description: The data associated with the event
+      responses:
+        '200':
+          description: A successful response
+          content:
+            application/json:
+              example:
+                success: true
+                message: success
+                data:
+                  messageArray:
+                    - message: "Thank you"
+                      messageTags: []
+                      _id: "65d4708e2274b2"
+                  targetLanguage: "en"
+                  botId: "x16900024"
+                  sender: "896762521951619"
+
