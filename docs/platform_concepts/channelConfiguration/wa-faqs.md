@@ -215,6 +215,13 @@ User is getting stuck at OTP verification probably for two reasons:
 </p>
 </details>
 
+<details><summary><b> How can I check if WhatsApp Business API is enabled?</b></summary>
+<p>
+
+To check if WhatsApp Business API is enabled for a number, verify if the number is aligned under any BSP (WhatsApp Business Service Provider).
+
+</p>
+</details>
 
 ### WhatsApp Configuration
 
@@ -346,6 +353,22 @@ No, WhatsApp bot cannot automatically enter the OTP.
 <p>
 
 Yes, you can identify which user is interacting with the bot by using this`{{{channel.whatsapp.whatsappBusinessId}}}` expression.
+
+</p>
+</details>
+
+<details><summary><b>Can we send an attachment in WhatsApp?</b></summary>
+<p>
+
+Yes, you can send various types of attachments in WhatsApp including images, videos, and PDF files (pdf).
+
+</p>
+</details>
+
+<details><summary><b>How do I get the WhatsApp redirection link?</b></summary>
+<p>
+
+To get the WhatsApp redirection link, contact <a href="mailto:support@yellow.ai">Support</a> team.
 
 </p>
 </details>
