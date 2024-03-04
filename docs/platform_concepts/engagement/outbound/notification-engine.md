@@ -36,9 +36,11 @@ Additionally, our outbound IPs given below must be whitelisted for the reports c
 
 ### 1.3 Enable Notification API
 
-To use the Notification API you have to enable it on the platform as explained here
+To use notification APIs, you first need to enable this 
 
-1.  Go to the **Engage** module,
+To use the Notification API you have to enable it on the platform as explained here:
+
+1.  Go to the **Engage** module.
 2.  Navigate to **Preferences**.
 3.  Click **Enable API Access**.
     
@@ -270,7 +272,7 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 1406 - parameterIsInvalid | One or more parameters are invalid (wa tier - cloud-api/onprem)      |
 | 1406 - invalidUser  | The recipient WhatsApp number is invalid / The user doesn't have a WhatsApp Account (wa tier - cloud-api/onprem) |
 | 1407 - accessTokenExpired  | Get a new access token. (WA tier - cloud-api/onprem)  |
-| 1408 - contactsError  | Client-side rate limit has been hit. Unable to deliver message. Reasons can include: <br/>The recipient phone number is not a WhatsApp phone number. <ol><li>Recipient has not accepted our new Terms of Service and Privacy Policy.</li><li> Recipient using an old WhatsApp version; must use the following WhatsApp version or greater: <br/> * - Android: 2.21.15.15<br/> *  - SMBA: 2.21.15.15 <br/> * - iOS: 2.21.170.4 <br/> * - SMBI: 2.21.170.4  <br/> *  - KaiOS: 2.2130.10 <br/> * - Web: 2.2132.6 </li></ol>
+| 1408 - contactsError  | Client-side rate limit has been hit. Unable to deliver message. Reasons can include: <br/>The recipient phone number is not a WhatsApp phone number. <ol><li>Recipient has not accepted our new Terms of Service and Privacy Policy.</li><li> Recipient using an old WhatsApp version; must use the following WhatsApp version or greater: <br/> * - Android: 2.21.15.15<br/> *  - SMBA: 2.21.15.15 <br/> * - iOS: 2.21.170.4 <br/> * - SMBI: 2.21.170.4  <br/> *  - KaiOS: 2.2130.10 <br/> * - Web: 2.2132.6 </li> <li>The message was not delivered to create a high quality user experience. See [Per-User Marketing Template Message](https://developers.facebook.com/docs/whatsapp/cloud-api/guides/send-message-templates/#per-user-marketing-template-message-limits)</li></ol>
 | 1409 - phoneNumberNotAllowed | You are not allowed to onboard this phone number in Cloud API, please contact us for more information (wa tier - cloud-api/onprem)  |
 | 1410 - temporaryBlockForPolicyViolations | Wait and retry the operation. (wa tier - cloud-api/onprem)     |
 | 1411 - duplicatePost | Duplicate posts cannot be published consecutively. Change the content of the post and try again. (wa tier - cloud-api/onprem)     |

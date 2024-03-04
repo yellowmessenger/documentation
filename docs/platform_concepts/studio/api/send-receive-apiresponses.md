@@ -37,7 +37,8 @@ Use the following code inside a body/params:
 | Pass URL  | Format |
 |-- | --|
 Directly | $$toBase64(url)
-Through variable | $$toBase64{{(url)}}
+Through variable | $$toBase64({{{url}}})
+
 
    ![](https://i.imgur.com/v3h6ruH.png)
    
