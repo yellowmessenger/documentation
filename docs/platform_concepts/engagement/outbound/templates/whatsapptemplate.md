@@ -3,8 +3,7 @@ title: Create WhatsApp template
 sidebar_label: WhatsApp template
 ---
 
-
-When creating a WhatsApp template, it is important to note that unlike other channel templates, each WhatsApp template requires individual approval. Once created, the template must be submitted for review by Facebook. The review process typically takes up to 48 hours. If the template complies with Facebook's guidelines, it will be approved. However, if it does not meet the guidelines, it will be rejected.
+When creating a WhatsApp template, it is important to note that unlike other channel templates, each WhatsApp template requires individual approval. Once created, the template must be submitted for review by Meta. The review process typically takes up to 48 hours. If the template complies with Meta's guidelines, it will be approved. However, if it does not meet the guidelines, it will be rejected.
 
 
 The following are the different steps involved in a WhatsApp template:
