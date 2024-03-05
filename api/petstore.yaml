@@ -1260,17 +1260,14 @@ paths:
                       description: URL of the image to be sent       
                     video: 
                       type: string
-                      description: URL of the video to be sent    
-                    media: 
-                      type: string
-                      description: URL of the media file (such as audio or vide) to be sent                                                                                                                         
+                      description: URL of the video to be sent                                                                                                                    
                     event:
                       type: object
                       description: The event data (required if sending an event to the bot
                       properties:
                         code:
                           type: string
-                          description: The code identifying the event
+                          description: The code identifying the event. This is required to send event details to bot.
                         data:
                           type: object
                           description: The data associated with the event
