@@ -157,3 +157,12 @@ When is my raw data export sent to my email and when does it get downloaded dire
 How a dataset is exported depends on the file size. If the count of records is greater or equal to 500, we do an export from backend (email). For less than 500 records, the export happens directly.
 </div>
 </details>
+
+
+<details>
+<summary> How do you identify a returning user? </summary>
+<div>
+If a user has visited the bot before, irrespective of the timeframe, they’ll be considered a returning user. New vs returning users are identified based on UIDs. If a UID exists already, it’s marked as returning user.
+</div>
+</details>
+
