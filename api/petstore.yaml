@@ -92,7 +92,7 @@ components:
     ApiKeyAuth:
       type: apiKey
       in: header
-      name: X-API-KEY
+      name: x-api-key
       description: API key to authorize requests
   headers:  
     Content-Type:
@@ -1221,13 +1221,7 @@ paths:
         - Integrations   
       summary: Send message/event to bot
       description: Send message or event to a bot and synchronously receive responses.
-      parameters:
-        - name: x-api-key
-          in: header
-          required: true
-          schema:
-            type: string
-          example: "Bearer <TOKEN>"               
+      parameters:       
       requestBody:
         required: true
         content:
@@ -1263,11 +1257,11 @@ paths:
                       description: URL of the video to be sent                                                                                                                    
                     event:
                       type: object
-                      description: The event data (required if sending an event to the bot
+                      description: The event data. Required to send event to the bot
                       properties:
                         code:
                           type: string
-                          description: The code identifying the event. This is required to send event details to bot.
+                          description: The code identifying the event. This is required to send event details to bot
                         data:
                           type: object
                           description: The data associated with the event

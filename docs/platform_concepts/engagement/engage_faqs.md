@@ -29,6 +29,70 @@ No, for CTA button clicks, you will not receive any events on the bot.
 
 </details>
 
+<details>
+<summary> How to capture data sent through templates? </summary>
+
+To capture the data sent in the template, You can capture template ID, variable data, and sender ID on Quick Reply buttons, you can use the Quick Reply event. This event will provide you with access to the event data (`{{data.event.data}}`), event name (`{{data.event.templateName}}`), and sender ID (`{{sender}}`).
+
+</details>
+
+
+
+<details>
+<summary>
+ How do I capture additional details from the messages sent?</summary>
+
+
+To capture additional details from the messages sent, you can pass inside  the `customPayload` in the `config` object. This allows you to include specific data within the message payload, which can then be accessed and processed by your chatbot. You can pass upto three variables.
+
+For example, you can include relevant variables such as waybill numbers, IDs, or codes within the customPayload field of the config object.
+
+Here's an example of how to structure the customPayload field within the Config object:
+
+```json
+
+{
+    "userDetails": {
+        "number": ""
+    },
+    "notification": {
+        "type": "whatsapp",
+        "sender": "917888000000",
+        "templateId": "order_out_for_delivery_prepaid_copy",
+        "params": {
+            "orderId":"1234",
+            "quickReplies": {
+                "ctaUrlParam": "order?order_id=2392409"
+            }
+        }
+    },
+    "config": {
+        "customPayload": {
+            "waybill": "15893217051240",
+            "cp_id": "4",
+            "account_code": "Delhivery Express"
+        }
+    }
+}
+
+```
+
+
+Then, to retrieve data within your chatbot, you can use the following syntax:
+
+
+`{{{data.event.extraParams.customPayload.{variableName}}}}`
+
+For example:
+
+
+`{{{data.event.extraParams.customPayload.waybill}}}`
+
+
+</details>
+
+
+
 ### WhatsApp 
 
 <details>

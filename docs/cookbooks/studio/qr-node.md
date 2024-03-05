@@ -7,12 +7,12 @@ This guide will provide instructions on how to activate flows upon clicking a qu
 
 1. Go to **Studio** > **Event** > **Engagement** > **quick_reply_event** > **Activate**.
 
-![](https://i.imgur.com/tB1L8qw.png)
+   ![](https://i.imgur.com/tB1L8qw.png)
 
 
 2. Go to **Build** > **+ Create flow**.
 
-![](https://i.imgur.com/jNFalW4.png)
+   ![](https://i.imgur.com/jNFalW4.png)
 
 3. Search for **Whatsapp template**  and click **+ Use template**.
 
