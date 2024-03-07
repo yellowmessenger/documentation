@@ -168,7 +168,7 @@ In the **What do you want to show for autocomplete** option, you can select the 
 
 ### Prediction
 
-Our machine learning system matches user input sentences to specific intents with confidence scores between 0 and 1. You can adjust the desired confidence level. 
+Our machine learning system matches user input sentences to specific intents with confidence scores between 0 and 1. You can adjust the desired confidence level. The default confident score on the platform is 0.85.
 
 <img src="https://i.imgur.com/Ik9ozKr.png" width="65%"/>
 

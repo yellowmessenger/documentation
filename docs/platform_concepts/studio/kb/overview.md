@@ -22,7 +22,8 @@ This feature, driven by Yellow.ai's exclusive **Studio** module (not GPT), uses 
 
 
 :::note
-For GPT-powered features, contact us via [community.yellow.ai](https://community.yellow.ai/), where our product team can assist you.
+* For GPT-powered features, contact us via [community.yellow.ai](https://community.yellow.ai/), where our product team can assist you.
+* We now support Bahasa language in KB
 :::
 
 #### KnowledgeBase vs. Doc Cog

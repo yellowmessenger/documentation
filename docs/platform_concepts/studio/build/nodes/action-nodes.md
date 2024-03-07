@@ -373,6 +373,9 @@ Add the node and choose the flow to which the bot should switch from the flows d
 
   ![](https://i.imgur.com/FnHGLKg.png)
 
+:::info
+The difference between a switch flow and an execute flow node lies in their behavior regarding the bot's return to the original flow. In the case of a switch flow, the bot does not return to the original flow from which the node was triggered. Howevers, with an execute flow node, the bot returns to the original flow after executing the designated new flow.
+:::
 
 ---
 
