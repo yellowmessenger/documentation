@@ -4,9 +4,9 @@ sidebar_label : SFTP
 ---
 
 
-## Scope of Integration
+Yellow.ai's integration with SFTP enables effortless connection between your remote server and the Yellow.ai platform. You can connect multiple SFTP servers to manage data from different sources seamlessly. With this integration, you can perform various actions such as fetching remote files, creating directories, deleting directories, uploading files to the remote server, and checking the existence of files.
 
-Yellow.ai Integration with SFTP allows you to seamlessly connect your remote server with the yellow.ai platform. Using this integration, one can get remote files, make a directory, delete directory, upload files to remote server, check if file exists or not.
+You can also [schedule regular synchronization of user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/sync_users) directly from connected SFTP servers to User 360. This enhances data management capabilities, improves data accuracy, and enables more informed decision-making based on real-time user insights. s or not.
 
 # Configuration
 
