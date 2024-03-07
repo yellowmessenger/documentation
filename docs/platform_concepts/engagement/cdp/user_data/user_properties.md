@@ -87,7 +87,7 @@ For more details, see:
 - [How to offer personalised engegement across multiple touch-points/channels](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
 
 
-:::warning
+:::info
 Two records cannot have the same userId.
 :::
 
