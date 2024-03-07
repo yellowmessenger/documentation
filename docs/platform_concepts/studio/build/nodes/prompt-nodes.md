@@ -390,7 +390,7 @@ Widgets are optional. Chat will not be disabled when a widget is sent, users can
 ![](https://i.imgur.com/XZ2Im2N.png)
 
 :::info
- This node is supported only on Web and Mobile apps.
+This node is supported only on Web and Mobile apps.
 :::
 
 Different types of date pickers are available to be displayed to the users. 
@@ -480,6 +480,10 @@ To retrieve the start and end dates, use the following syntaxes:
 
 * **Start Date**: ```{{{variables.variable_name.range.start.date}}}```
 * **End Date**: ```{{{variables.variable_name.range.end.date}}}```
+
+:::note
+You cannot subtract a date from another date using the Date node. To do so, you need to [write a custom function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) and use the data from date picker node.
+:::
 ---
 
 ### 3.2 WhatsApp List
@@ -662,7 +666,10 @@ In the store comment node, there is a toggle to enable Quick reply. Quick reply 
 ### 3.6 File Prompt 
 
 Ask, validate and store JPG/PNG/MP4/MOV/HEVC files with this node.
-The file size can be set to a certain number. 
+
+:::note
+File size limit is 15 MB.
+:::
 
 It will validate if the uploaded file is in JPG/PNG/MP4/MOV/HEVC format and if its size is less than or equal to the mentioned file size. 
 
