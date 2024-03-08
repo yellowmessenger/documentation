@@ -101,7 +101,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/insights/convissue",
-    "cookbooks/insights/eventdescriptions",
+  //  "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/schedulerawreports",
     "cookbooks/insights/toptriggeredintents",
@@ -932,6 +932,8 @@ module.exports = {
         collapsed: true,
         items: [
             "platform_concepts/growth/dataexplorer/defaulttables",
+            "cookbooks/insights/eventdescriptions",
+
             "platform_concepts/growth/dataexplorer/customtables",
             "platform_concepts/growth/dataexplorer/sumarize",
             "platform_concepts/growth/dataexplorer/visualization",
