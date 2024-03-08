@@ -16,7 +16,9 @@ We have either two or three environments, depending on the specific bot: Develop
 ## Create database table
 
 :::note
-You can create a db table only in sandbox/development environment.
+* You can create a db table only in sandbox/development environment.
+* Please verify that there are no duplicate values present and then proceed to store the data.
+* You cannot delete the columns after you have added them.
 :::
 
 1. Go to **Studio** > **Database**.
@@ -165,7 +167,7 @@ To update an existing field value of a table use the [Database node](https://doc
 
 5. Enable **Create URL for extracted records** to create a URL for the information exctracted from the search.
 6. In **Filter distinct**, choose the column that should serve as distinct parameter in the search.
-7. Under **Pagination**, enter the **Page number** and **Size limit** to display the records to the user. The page number and size limit can also be fetched from variables. 
+7. Under **Pagination**, enter the **Page number** and **Size limit** to display the records to the user. The page number and size limit can also be fetched from variables. If you do not want to use pagination, you can leave the fields empty.
 
 The search reponse will be in the form of object. You can use the snippet ```{{{variables.variablename.records.0.fieldName}}}``` in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text) to display the response.
 

@@ -4,7 +4,7 @@ sidebar_label : Parse API response field
 ---
 
 
-The Parse API response node can help you extract the important information from an API response. 
+The Parse API response field helps you extract the important information from an API response. 
 
 Let's say that you receive a response that looks like this,
 ```

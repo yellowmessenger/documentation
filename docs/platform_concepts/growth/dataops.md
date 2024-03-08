@@ -62,6 +62,9 @@ Export is supported only in JSON (and WAV for voice bot data) format.
     - **One-time export**: You will receive data between the selected dates. 
 - Click **Next**. 
 
+:::note
+For a single export, the maximum time range is one year. If more than one year's worth of data is required in a one-time export, multiple one-time exports can be created for the desired range.
+:::
 
 ![](https://i.imgur.com/Jji2bmd.png)
 

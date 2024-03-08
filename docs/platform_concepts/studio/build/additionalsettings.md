@@ -48,8 +48,9 @@ To set a fallback flow:
 You can also configure different start triggers for this flow. For instance, you can use an event as a start trigger for a flow. Events like bot opening or closing can initiate a specific flow. To know about setting triggers for a flow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-1-configure-start-trigger).
 
 :::note
-If you had previously set a fallback flow in our previous UI, you will see a legacy node that contains the old fallback flow settings. You cannot edit this.
+* If you had previously set a fallback flow in our previous UI, you will see a legacy node that contains the old fallback flow settings. You cannot edit this.
 ![](https://i.imgur.com/OwHXy4c.png)
+* Your bot might bypass the fallback flow if it detects intents or triggers from the user that are linked to specific flows. Essentially, the bot will continue responding to user queries based on the flows associated with particular intents, utterances, or triggers, rather than resorting to the fallback. Therefore, when setting up a fallback flow, ensure that the bot isn't triggered by any other triggers.
 :::
 
 Any of the flows can be set as a fallback flow.

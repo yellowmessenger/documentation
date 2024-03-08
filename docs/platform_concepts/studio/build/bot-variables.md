@@ -47,7 +47,7 @@ There are 4 different types of variables offered by yellow.ai. They are:
 
 Custom Variables are variables created by bot builders to meet their specific business requirements. They are further divided into two types: Journey Variables and Global Variables. 
 
-- **Journey Variable**: A Journey Variable is accessible only within the journey for which it was created. It stores values related to a specific user journey and can be used only within that journey.
+- **Journey Variable**: A Journey Variable is accessible only within the journey for which it was created. It stores values related to a specific user journey and can be used only within that journey. Journey variables hold values exclusively for the duration of a single session (user's interaction with the bot). These variables maintain their values throughout the session and are automatically reset once the session ends.
 - **Global Variable**: A Global Variable, on the other hand, is accessible across journeys and can be used in APIs.
 
 :::note

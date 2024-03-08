@@ -129,6 +129,15 @@ In the example code below, the bot confidently recognizes the phrase as part of 
   "entities": {}
 }
 ```
+:::info
+
+To stop or exit bot conversations using intents:
+
+1. Add intents and utterances for stop, for example 'stop the flow', 'exit the flow' and train the bot on the same.
+2. Create a new flow,  add this intent as the start trigger , for the flow and include a text message node that says 'Your chat has ended'.
+
+By this way, whenever a user types any one of the trained intents or utterances, the bot immediately triggers this flow and ends the chat.
+:::
 
 ## Resolve conflicts in intents and utterances 
 

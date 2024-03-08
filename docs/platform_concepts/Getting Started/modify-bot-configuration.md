@@ -20,6 +20,11 @@ To modify your bot's configured information:
 
 ![](https://i.imgur.com/JEpBtZe.png)
 
+
+:::note
+UTC time format is used throughout the bot.
+:::
+
 ---
 
 ### Add/update bot information

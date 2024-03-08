@@ -53,6 +53,7 @@ module.exports = {
           "cookbooks/studio/qr-node",
           "cookbooks/studio/usecases-functions",
           "cookbooks/studio/ticket-assignedevent",
+          "cookbooks/studio/user-inactivity",
 
       ],
     }, 
@@ -1416,6 +1417,16 @@ module.exports = {
 
     //Do not add/ remove this file
     "updates/overview",
+
+    {
+      type: "category",
+      label: "2024 updates",
+      collapsed: true,
+      items: [
+        "updates/2024/Jan2024",
+        
+      ],
+    },
 
     {
       type: "category",

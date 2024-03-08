@@ -96,7 +96,7 @@ This is a global testing and settings tab. Click [here](https://docs.yellow.ai/d
 
 #### Logs
 
-This option shows all the logs related to functions, you can learn more about this by clicking [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow#31-view-code-logs).
+This option shows all the function related logs, you can learn more about this by clicking [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow#31-view-code-logs). 
 
 ![](https://i.imgur.com/gCkDZOH.png)
 

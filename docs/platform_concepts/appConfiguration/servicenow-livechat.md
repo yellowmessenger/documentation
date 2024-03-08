@@ -118,7 +118,7 @@ To activate these events:
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
 :::
 
-You need to build a flow that redirects your users to the ServiceNow agents. 
+You need to build a flow that redirects your users to the ServiceNow agents and the agent needs to close the chat to end the chat in ServiceNow.
 
 1. Go to **Studio** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on your requirement.
 

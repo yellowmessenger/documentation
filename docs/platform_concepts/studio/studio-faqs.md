@@ -10,6 +10,28 @@ Welcome message is supported only for web and app SDK and it is not supported fo
 ### Nodes
 
 <details>
+ <summary> What types of workflows enable you to connect goals that run in the background while maintaining control within the dynamic chat node?
+</summary>
+ <div>
+  <div> All the actions that are possible via <a href = "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes"> Action nodes</a> and <a href = "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes"> Logic nodes</a> can be set in Dynamic chat node to fetch data or perform an action. Additionally, you can also enable <a href = "https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview"> integrations </a> and enable them in Dynamic chat node to send and recieve data from thrid-party applications.
+
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary> How to display videos along with the bot messages?
+</summary>
+ <div>
+  <div> Use the <a href= "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#5-video"> Video node</a>.
+
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
  <summary>Why is the send OTP node not working?
 </summary>
  <div>
@@ -145,6 +167,26 @@ You can also do this in the carousal by [creating your own custom/dynamic object
  <div>
   <div>To avoid a fallback message, you must store the value of the WhatsApp list option in a variable and use an IF condition to compare the variable value to trigger the respective outcome (flow, text, and so on).
 ​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>What is a transformation function in integration node?
+</summary>
+ <div>
+  <div> The <b>Parse API response</b> field helps you fetch custom functions that will filter out specific data from the API response you recieve. For steps to use it, click <a href="https://docs.yellow.ai/docs/cookbooks/integrations/parseapi">here</a>.​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary> What is the difference between Dynamic chat node and Prompt Executor node?
+</summary>
+ <div>
+  <div>The <b>Dynamic chat node</b> drives the conversation around a particular goal whereas the <b>Prompt Executor</b> node just executes the given prompt and exits the flow. You can use Dynamic chat node if you want the bot to have goal based conversations with the user, for example telling the user about different loans and convincing them to buy one. You can go with the Prompt Executor node if you want the bot to just perform a certain action such as generating a recipe, writing a poem or performing a calculation.
 </div>
   <br/>
    </div>
@@ -357,6 +399,20 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
    </div>
 </details>
 
+<details>
+ <summary>How do I suggest documents from a category?
+</summary>
+
+ You cannot. If you have configured the document search node, you will receive answers from it, otherwise, it suggests alternatives. If neither option is available, it resorts to the fallback.
+
+ <div>
+  <div>
+​
+</div>
+  <br/>
+   </div>
+</details>
+
 ---------
 
 ### Functions & APIs
@@ -464,3 +520,34 @@ To extract specific date values, you can use the following syntax:
   <br/>
    </div>
 </details>
+
+<details>
+ <summary>Will regex entity trigger a flow?
+</summary>
+
+ Yes, <a href="https://docs.yellow.ai/docs/platform_concepts/studio/train/entities#add-regex-type-entities">create a regex entity</a> and set it as the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#12--trigger-flow-using-entities">start trigger for a flow</a>.
+ <div>
+  <div>
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+### KB
+
+<details>
+ <summary>How can we tailor the responses retrieved from the knowledge base? For instance, by restricting the response size, presenting answers in sequential steps when appropriate, and interpreting tables and flowcharts.
+</summary>
+
+You can customize KB responses by following the steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings#modify-auto-generated-bot-answers). To present the steps in sequential manner, [set the bot's tone to Instruction based](https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings#set-tone-for-your-bot-responses). KB interprets data only from websites and not from tables and flowcharts directly. However, you can provide the website URL containing the tables, flowcharts, and supporting data.
+
+ <div>
+  <div>
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+
