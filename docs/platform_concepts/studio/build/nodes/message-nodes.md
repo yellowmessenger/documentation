@@ -113,6 +113,7 @@ Enable **Disable action after click** and click **Save**.
 ## 5. Video 
 
 Display any MP4 video file with this node.
+
 * Click the tools(channel option) symbol available below the node name.  
 * Enable autoplay, show controls and downloadable options to improve the video viewing experience. 
 

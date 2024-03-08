@@ -10,6 +10,28 @@ Welcome message is supported only for web and app SDK and it is not supported fo
 ### Nodes
 
 <details>
+ <summary> What types of workflows enable you to connect goals that run in the background while maintaining control within the dynamic chat node?
+</summary>
+ <div>
+  <div> All the actions that are possible via <a href = "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes"> Action nodes</a> and <a href = "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes"> Logic nodes</a> can be set in Dynamic chat node to fetch data or perform an action. Additionally, you can also enable <a href = "https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview"> integrations </a> and enable them in Dynamic chat node to send and recieve data from thrid-party applications.
+
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary> How to display videos along with the bot messages?
+</summary>
+ <div>
+  <div> Use the <a href= "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#5-video"> Video node</a>.
+
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
  <summary>Why is the send OTP node not working?
 </summary>
  <div>
