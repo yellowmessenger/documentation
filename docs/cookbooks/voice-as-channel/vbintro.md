@@ -24,8 +24,7 @@ sidebar_label : Voice bot
 :::
 
 
-![](https://hackmd.io/_uploads/r1wG4Xjrn.png)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/EOhOQ0ZhOgI?si=NT5cfKzlBSc7_TOV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 

@@ -20,6 +20,13 @@ Simply type in any text and hit send button (or enable enter to send if you want
 
 <img src="https://hackmd.io/_uploads/rkfSF11y6.png" alt="drawing" width="70%"/>    
 
+
+:::note
+
+You can easily copy and paste text, images, or files into the chat reply tab using keyboard controls (Ctrl + C for copy, Ctrl + V for paste) or the copy-paste option. With this you can transform information from any location to the chat interface.
+
+:::
+
 #### Auto-save draft message 
 
 
