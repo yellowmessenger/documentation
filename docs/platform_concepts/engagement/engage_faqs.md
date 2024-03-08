@@ -92,6 +92,15 @@ For example:
 </details>
 
 
+<details>
+<summary> How can I mask URL or PDF links in campaigns when the template type is media?
+
+   </summary>
+While applying media templates, you don't need to provide the actual invoice file link. Instead, you can share a sample image during the template creation process. For instance, to send invoices, consider replacing standard campaigns with event-triggered campaigns to ensure that the image links are not exposed on the platform. This approach helps maintain confidentiality and prevents unauthorized access to sensitive information.
+
+</details>
+
+
 
 ### WhatsApp 
 

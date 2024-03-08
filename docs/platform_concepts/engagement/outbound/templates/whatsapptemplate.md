@@ -224,6 +224,36 @@ Use the Delete icon to remove any button.
 :::
 
 
+###  Trigger flow or display messages when clicking on Quick Reply buttons
+
+To enable users to trigger a flow or display messages when Quick Reply buttons are clicked in the WhatsApp template via the quick_reply_event, follow these steps:
+
+1. Go to **Studio** > **Events** > **Engagement** > **quick_reply_event** more options > **Activate**.
+
+  ![](https://i.imgur.com/T22e63k.png)
+
+2. Go to Studio > Click on **Create Flow** > Search for *WhatsApp Template Manager* > Select the template > **Use template**.
+
+   ![](https://i.imgur.com/izhs8OM.png)
+
+   ![](https://i.imgur.com/Bn2t5n8.png)
+
+3. Once the template is imported, open the flow *Template handling*. In this flow, open the start node > Select **quick_reply_event** from the drop-down.
+ 
+   [](https://i.imgur.com/2ECOQxB.png)
+
+4. Once this is done, the user will be redirected to this flow whenever someone clicks on the Quick Reply buttons in the notification template.
+
+5. To manage buttons, go to the flow *Template handling*. After the database node, you will observe a condition node that creates a condition to compare template names. 
+
+   ![](https://i.imgur.com/rJYrbug.png)
+
+   <img src="https://i.imgur.com/i1tUlHb.png" width="60%"/>
+
+6. Change the conditions of the condition node for the button clicked using the variable *button clicked* and enter the expected button value in the condition node (as displayed in the screenshot).
+7. Connect a message node or Execute flow node with the condition node in order to either display a message or execute a particular flow.
+
+
 ## 5. Add variables in WhatsApp template
 
 Variables allow you to personalize your template content for the user. You can include variables it in the Body or Footer.
