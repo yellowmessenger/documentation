@@ -482,7 +482,10 @@ To retrieve the start and end dates, use the following syntaxes:
 * **End Date**: ```{{{variables.variable_name.range.end.date}}}```
 
 :::note
-You cannot subtract a date from another date using the Date node. To do so, you need to [write a custom function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) and use the data from date picker node.
+* You cannot subtract a date from another date using the Date node. To do so, you need to [write a custom function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) and use the data from date picker node.
+* To restrict the date picker to display historic dates, choose **Single Date Picker** under **Widget Type** and choose **Future Dates** under **Restrict to**
+
+ ![](https://i.imgur.com/s0BVFFc.png)
 :::
 ---
 
