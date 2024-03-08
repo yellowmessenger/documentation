@@ -68,6 +68,10 @@ The following are the steps to create a bot with FAQ support
 
 6. Multiple FAQs can be added in the same way. 
 
+:::note
+To display custom links along with your FAQs, create a flow that displays the corresponding custom links and choose that flow in **Execute flow** option.
+:::
+
 ---
 
 ### 2.2 Add FAQs in bulk
