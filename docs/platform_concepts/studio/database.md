@@ -19,6 +19,7 @@ We have either two or three environments, depending on the specific bot: Develop
 * You can create a db table only in sandbox/development environment.
 * Please verify that there are no duplicate values present and then proceed to store the data.
 * You cannot delete the columns after you have added them.
+* You can add unlimited columns to the table.
 :::
 
 1. Go to **Studio** > **Database**.
