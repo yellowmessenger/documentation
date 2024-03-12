@@ -3,23 +3,23 @@ title : Ring Central
 sidebar_label : Ring Central
 ---
 
-Integrate your RingCentral channel with Yellow.ai to  allow agents on RingCentral to leverage Yellow.ai's AI capabilities and effortlessly answer live chat queries from users.
+Integrate your RingCX Account with Yellow.ai to allow agents on RingCentral to leverage Yellow.ai's AI capabilities and effortlessly answer live chat queries from users.
 
 This article will help you with the following:
 
-1. [Integrating Yellow.ai with RingCentral](#connect-yellowai-with-ringcentral)
-2. [Displaying RingCentral's chat widget on the website](#display-ringcentrals-chat-widget-on-your-website)
+1. [Integrating Yellow.ai with RingCX Account](#connect-yellowai-with-ringcentral)
+2. [Displaying RingCX account's chat widget on the website](#display-ringcentrals-chat-widget-on-your-website)
 3. [Creating bot conversational flow](#build-a-bot-conversation-flow)
 
-## Connect Yellow.ai with RingCentral
+## Connect Yellow.ai with RingCX Account
 
-To connect your RingCentral account with Yellow.ai, you need to create message routing categories, a channel to recieve messages, virtual agents to take up chats and input the API key and API URL in Yellow.ai. 
+To connect your RingCX account with Yellow.ai, you need to create message routing categories, a channel to recieve messages, virtual agents to take up chats and input the API key and API URL in Yellow.ai. 
 
 ### Create categories for message routing
 
 You need to create categories based on which the user queries will be routed.
 
-1. Log in to your [RingCentral Engage account](https://engage.ringcentral.com/).
+1. Log in to your [RingCX account](https://engage.ringcentral.com/).
 2. Go to **Admin** > **Routing** > **Categories**.
 
    ![](https://i.imgur.com/eS8OLVb.png)
@@ -127,7 +127,7 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 
    ![](https://i.imgur.com/h9eIwmL.png)
    
-### Authorize Yellow.ai to access RingCentral
+### Authorize Yellow.ai to access RingCX account
 
 1. Log in to your [Yellow.ai account](cloud.yellow.ai) and go to **Channels** > **RingCentral**.
 
@@ -138,7 +138,7 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 3. In **API URL**, enter the API URL in this format ```https://{{ringcentraldomainname}}.api.lab.digital.ringcentral.com``` for example, https://test-account.api.lab.digital.ringcentral.com
 4. Click **Save**.
 
-## Display RingCentral's chat widget on your website
+## Display RingCX account's chat widget on your website
 
 You need to paste the respective channel's script in the HTML file of your website to use RingCentral's chat-widget with Yellow.ai's AI capabilities.
 
@@ -153,7 +153,7 @@ You need to paste the respective channel's script in the HTML file of your websi
 
 ## Build a bot conversation flow 
 
-After connecting your Yellow.ai account with RingCentral, you need to design the flow based on how you want the bot to handle the user chats in RingCentral using Yellow's AI capabilities.
+After connecting your Yellow.ai account with RingCX, you need to design the flow based on how you want the bot to handle the user chats in RingCX account using Yellow's AI capabilities.
 
 1. Login to you [Yellow.ai account](cloud.yellow.ai) and go to **Studio** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-flow-from-scratch).  
 2. Include a [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) to the **Start** node.
@@ -164,7 +164,7 @@ After connecting your Yellow.ai account with RingCentral, you need to design the
 
 **Tip:**
 
-You can also [create an intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances) for RingCentral and [assign this intent as a trigger for this flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent) in the Start node. Whenever a user types the intent or utterance associated to this intent, the bot will automatically trigger this particular flow.
+You can also [create an intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances) for the RingCX account and [assign this intent as a trigger for this flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent) in the Start node. Whenever a user types the intent or utterance associated to this intent, the bot will automatically trigger this particular flow.
 :::
 
 3. In the **Dynamic chat node**, [type the prompt](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#write-your-own-prompts) based on which the bot should function. You can also [use AI to generate these prompts](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#generate-prompts-with-ai-prompt-generator). There are several other options using which you can optimize the conversation. Refer to this [doc](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) to know everything about the Dynamic chat node.
@@ -189,7 +189,7 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
 <img src="https://i.imgur.com/tPS9R0J.png" alt="drawing" width="50%"/>
 
- Once the dynamic chat node completes its conversation with the user and transfers the chat to RingCentral, this is how the chat looks on RingCentral's side.
+ Once the dynamic chat node completes its conversation with the user and transfers the chat to RingCX account, this is how the chat looks on RingCX account's side.
 
  ![](https://i.imgur.com/XXfQvzO.png)
 

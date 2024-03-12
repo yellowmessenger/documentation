@@ -775,6 +775,14 @@ For better & dynamic conversation design, use the functionalities of the input n
 
 ![](https://i.imgur.com/MSHE9HW.png)
 
+### 3.10 Product search
+
+Display products from a product catalogue table and drive the conversation based on the user's choice of products. 
+
+To use this node, you need to create a [product catalogue](https://docs.yellow.ai/docs/platform_concepts/studio/product-catalogue) and [configure this node in flows](https://docs.yellow.ai/docs/platform_concepts/studio/product-catalogue#display-product-catalogue-in-bot-conversations).
+
+ ![](https://i.imgur.com/ztWUzV7.png)
+
 ---
 
 ## 4. Make prompt smarter
