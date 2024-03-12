@@ -344,6 +344,7 @@ module.exports = {
         },
 
         "platform_concepts/studio/database",
+        "platform_concepts/studio/product-catalogue",
 
         "platform_concepts/studio/events/event-hub",
 
