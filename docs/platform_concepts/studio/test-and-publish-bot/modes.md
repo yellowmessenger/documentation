@@ -98,6 +98,18 @@ To learn about different bot enviornments (modes), click [here](https://docs.yel
 
 ---
 
+## Cancel publish request
+
+If you wish to make changes to the current flow/bot, or if you've raised a publish request by mistake or prematurely before finalizing the end result, you can cancel the publish request by:
+
+1. Go to **Publish changes** > select **Publish bot** or **Publish selected flows**(depending on the choice you made to raise the publish request).
+
+ ![](https://i.imgur.com/Z7RxoX5.png)
+
+2. Click **Cancel Request** in the following screen.
+
+ <img src="https://i.imgur.com/BwBWiIA.png" alt="drawing" width="50%"/>
+
 ## Revert published changes 
 
 Revert option is a handy tool for fixing bugs in the live version. It lets you roll back to any previous version of your bot. The **Revert** feature is available only in the **live/production** environment. Only **Admins** can have access to this option.
@@ -114,3 +126,17 @@ To revert changes:
 3. Click **Revert**.
     
    <img src="https://i.imgur.com/4GiwCmo.png" alt="drawing" width="70%"/>
+
+## Decline publish requests
+
+1. Users with **Approver** access(as provided by **Super Admin**) will receive an email with the content like the image below. Any one of them can decline, to decline click **Review Request**.
+
+   ![](https://i.imgur.com/H2fG9Q5.png)
+
+2. You will be redirected to the **Bot approvals** page. Click **View request**.
+
+   <img src="https://i.imgur.com/7SAJgfz.png" alt="drawing" width="50%"/>
+
+3. In the following screen, add a message to the approval requestor and click **Decline**.
+
+   <img src="https://i.imgur.com/NvYhXin.png" alt="drawing" width="50%"/>
