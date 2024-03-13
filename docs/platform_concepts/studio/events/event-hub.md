@@ -37,30 +37,7 @@ The following are the events available for our chat widget.
 
 ### Inbox related events
 
-The following are the events available for **Inbox**.
-
-| Event | Description |
-|---------|--------------|
-| offline-ticketing-disabled | When ticket tries to go to open state but offline ticketing is disabled. |
-| offline-ticketing-not-configured-for-group | When ticket tries to go to open state but offline ticketing config is not available for the group. |
-| offline-ticket-limit-reached | Open tickets reach their limit |
-| offline-disabled-group-absent | By default, no group is available, and offline ticketing is disabled.|
-| offline-ticketing-disabled-for-group | Group is available, but offline ticketing is disabled. |
-| no-agents-online | When there are no agents online. |
-| all-agents-busy | All agents are busy when there is at least one online agent.  |
-| ticket-queue-state-only-inside-working-hours | When a ticket tried to go to queue outside working hours. |
-| ticket-assign-state-only-inside-working-hours | When a ticket tried to go to assign outside working hours. |
-| default-queue-disabled | default queue config disabled. |
-| group-queue-not-configured | A specific group queue configuration isn't permitted. |
-| group-queue-limit-reached | The group has reached the maximum queue limit. |
-| ticket-open-state-only-outside-working-hours | When a ticket tried to go to open status within working hours. |
-| agent-reply | When an agent replies to the user. |
-| assigned-from-queue | When a conversation is assigned to an agent from the queue. |
-| custom-field-update | When an agent updates a custom field. |
-| note-update | When an agent updates a ticket note. |
-| ticket-assigned-UI | When a ticket is created from the bot messages on Inbox. |
-| ticket-inactive | When a ticket is marked inactive. |
-| ticket-queue-to-open | When a ticket moves from queued to open state |
+Refer to this [doc](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxevent) for inbox events.
 
 ### <a name="eng-1"></a> Engage related events
 
@@ -223,6 +200,8 @@ Event | Description
 User inactivity event refers to a specific event that is triggered when a user remains inactive or doesn't respond to the bot's prompts for a certain period of time. 
 
 For example, if we ask for an email and get no response, we may check if they are still available or repeat the request. Options include sending a message, repeating the prompt, or starting a new flow to handle inactivity.
+
+For a detailed use case guide on this event, click [here](https://docs.yellow.ai/docs/cookbooks/studio/user-inactivity).
 
 ### To create user inactive events:
 

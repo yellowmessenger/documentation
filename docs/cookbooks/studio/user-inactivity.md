@@ -9,6 +9,10 @@ Consider a customer support bot deployed on an e-commerce platform. During peak 
 
 In such scenarios, activating the **User Inactivity Event** feature proves invaluable. By setting a predefined time threshold for user inactivity, such as 5 minutes, the bot can detect when a user has not interacted within this timeframe. Once the threshold is reached, the chatbot triggers the **User Inactivity Event** prompting it to take proactive measures.
 
+:::note
+This event gets triggered for the specific node in a flow only if the user has been previously responding in the flow. If the user does not respond at all from the beginning of the flow, this event will not get activated.
+:::
+
 ## Create an user inactivity event
 
 1. Go to **Studio** > **Event** > **User inactivity events** > **+ Add event**.
