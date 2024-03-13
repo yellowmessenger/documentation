@@ -33,7 +33,8 @@ Events are used to record specific actions or capture an important conversion, c
 This node lets you send an OTP to the mentioned number. 
 
 :::info
-One-Time Passwords (OTPs) serves as a versatile security measure, enhancing user authentication in scenarios such as user registration, account recovery, two-factor authentication (2FA), transaction verification, login security, identity verification, secure messaging, device pairing, coupon redemption, and attendance tracking.
+* One-Time Passwords (OTPs) serves as a versatile security measure, enhancing user authentication in scenarios such as user registration, account recovery, two-factor authentication (2FA), transaction verification, login security, identity verification, secure messaging, device pairing, coupon redemption, and attendance tracking.
+* This node is not available for Whatsapp
 :::
 
 1. Use the [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to capture the phone number from the user and store that phone number in a variable.
@@ -51,6 +52,10 @@ One-Time Passwords (OTPs) serves as a versatile security measure, enhancing user
 ### 1.3 Verify OTP
 
 Use this node to verify the OTP sent to bot users. OTP verification is an important security measure that is used to confirm user identity during various processes.
+
+:::note
+This node is not available for Whatsapp
+:::
 
 1. Add a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to get the OTP and store that in a variable.
 

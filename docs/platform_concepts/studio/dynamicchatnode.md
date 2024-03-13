@@ -244,3 +244,26 @@ To add custom LLM,
 
  <img src="https://i.imgur.com/A5sQmyZ.png" alt="drawing" width="70%%"/>
 -----
+
+## Voice configuration
+
+Voice configuration lets you create interactive voice-enabled interactions, further enhancing the conversational capabilities of your bot.
+
+  <img src="https://i.imgur.com/m7mnIM3.png" alt="drawing" width="70%%"/>
+
+Fill in the following fields:
+
+| Feature             | Description                                                                                                              |
+|---------------------|--------------------------------------------------------------------------------------------------------------------------|
+| Acknowledgment Message | Enter the message users will hear while their data is processed.                                                         |
+| Wait Music          | Upload music to play while the bot generates a response. Music must be in MP3 or WAV format, with a max size of 15 MB. |
+| Preview Audio       | Review the uploaded audio file, adjust volume and playback speed, and listen to a preview before finalizing settings.  |
+
+ <img src="https://i.imgur.com/1gy4RKn.png" alt="drawing" width="100%%"/>
+
+ 
+
+
+ 
+
+
