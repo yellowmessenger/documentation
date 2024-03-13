@@ -3,35 +3,37 @@ title : Ring Central
 sidebar_label : Ring Central
 ---
 
-Integrate your RingCX Account with Yellow.ai to allow agents on RingCentral to leverage Yellow.ai's AI capabilities and effortlessly answer live chat queries from users.
+# Ring Central
+
+Integrate your RingCX Account with IVA Professional to allow agents on RingCentral to leverage IVA Professional's AI capabilities and effortlessly answer live chat queries from users.
 
 This article will help you with the following:
 
-1. [Integrating Yellow.ai with RingCX Account](#connect-yellowai-with-ringcentral)
+1. [Integrating IVA Professional with RingCX Account](#connect-yellowai-with-ringcentral)
 2. [Displaying RingCX account's chat widget on the website](#display-ringcentrals-chat-widget-on-your-website)
 3. [Creating bot conversational flow](#build-a-bot-conversation-flow)
 
-## Connect Yellow.ai with RingCX Account
+## Connect IVA Professional with RingCX Account
 
-To connect your RingCX account with Yellow.ai, you need to create message routing categories, a channel to recieve messages, virtual agents to take up chats and input the API key and API URL in Yellow.ai. 
+To connect your RingCX account with IVA Professional, you need to create message routing categories, a channel to recieve messages, virtual agents to take up chats and input the API key and API URL in IVA Professional. 
 
 ### Create categories for message routing
 
 You need to create categories based on which the user queries will be routed.
 
 1. Log in to your [RingCX account](https://engage.ringcentral.com/).
-2. Go to **Admin** > **Routing** > **Categories**.
+2. Go to **Categorization** > **Categories**.
 
-   ![](https://i.imgur.com/eS8OLVb.png)
+   ![](https://i.imgur.com/SIjC5PQ.png)
    
 3. Click **Add**.
 
-   ![](https://i.imgur.com/8VL4RyI.png)
+   ![](https://i.imgur.com/yUQBcyk.png)
    
 4. In **Name**, enter a name for your category.
 5. In **Parent** select the  category under which you want to add this as a  sub-category. If you do not have a parent category, fill the rest of the fields based on your preference and click **Save**.
 
-   ![](https://i.imgur.com/t29kNgq.png)
+   ![](https://i.imgur.com/0QMo2KD.png)
 
 :::info
 You can create separate categories for chats handled by the bot and the chats handled by the agent.
@@ -55,30 +57,30 @@ We need the category ID to route the messages to that specific category.
 After creating a category, you need to create a channel to recieve the messages. 
 
 1. Click **Channels** > **New channel**.
-   ![](https://i.imgur.com/2w0sY2L.png) 
+   ![](https://i.imgur.com/eoUlj1b.png) 
 
 2. Click **Engage Messaging**.
 
-   ![](https://i.imgur.com/e9gAJWT.png)
+   ![](https://i.imgur.com/Yhn6YD1.png)
 
 3. Fill **General Settings** as per your preference.
 
-   ![](https://i.imgur.com/OYDwYZb.png)
+   ![](https://i.imgur.com/u3uwq7G.png)
 
 4. Under **Scope Configuration** select **Enable Web Messaging**.
 
-    ![](https://i.imgur.com/59cmTr5.png)
-
+    ![](https://i.imgur.com/w6xHkvm.png)
+    
 5. Under **Message settings:**
 
 * In **Default categories**, choose the category created for the bot ([in the previous section](#create-categories-for-message-routing)).
 *  In **Default categories (agent messages)**, choose the category created for agent ([in the previous section](#create-categories-for-message-routing)).
  
-   ![](https://i.imgur.com/IDfif4z.png)
+   ![](https://i.imgur.com/fMT0T9I.png)
  
 6. Fill the rest of the fields based on your preference and click **Save**.
 
-   ![](https://i.imgur.com/Zmj2F1O.png)
+   ![](https://i.imgur.com/C5VnJRN.png)
    
 ### Create a virtual agent
 
@@ -86,15 +88,15 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 
 1. Go to **AI Tools** > **Virtual agents** > **New Virtual agent**.
 
-   ![](https://i.imgur.com/80LiiJ0.png)
+   ![](https://i.imgur.com/0HHTRiJ.png)
 
 2. Click **Engage Virtual Agent**.
 
-   ![](https://i.imgur.com/MQNWAzl.png)
+   ![](https://i.imgur.com/nGKTykv.png)
 
 3. Under **General**, enable **Active** and fill in the following fields:
 
-   ![](https://i.imgur.com/JcjaO1C.png)
+   ![](https://i.imgur.com/3dB2kBb.png)
 
 * **Name**: Provide a name to the Virtual Agent.
 * **Role**: Auto-populated by the Ring Central platform as **Virtual Agent Role**.
@@ -105,7 +107,7 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 
 4. Under **Configuration**, enter the following details.
    
-   ![](https://i.imgur.com/jBMuxDh.png)
+   ![](https://i.imgur.com/CmAC5us.png)
 
 *  **URL**: Enter the webhook URL of your bot.
 
@@ -121,15 +123,15 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 
 6. Once the Virtual Agent gets created, click the **edit** icon.
 
-   ![](https://i.imgur.com/TUfzuVP.png)
+   ![](https://i.imgur.com/vm8EXgw.png)
 
 7. Scroll down to **Configuration** and copy the **API access token**.
 
-   ![](https://i.imgur.com/h9eIwmL.png)
+   ![](https://i.imgur.com/PnPC8gX.png)
    
-### Authorize Yellow.ai to access RingCX account
+### Authorize IVA Professional to access RingCX account
 
-1. Log in to your [Yellow.ai account](cloud.yellow.ai) and go to **Channels** > **RingCentral**.
+1. Log in to your [IVA Professional account](cloud.yellow.ai) and go to **Channels** > **RingCentral**.
 
 
    ![](https://i.imgur.com/76Bmw03.png)
@@ -140,22 +142,22 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 
 ## Display RingCX account's chat widget on your website
 
-You need to paste the respective channel's script in the HTML file of your website to use RingCentral's chat-widget with Yellow.ai's AI capabilities.
+You need to paste the respective channel's script in the HTML file of your website to use RingCX's chat-widget with IVA Professional's AI capabilities.
 
-1. Log in to your [RingCentral Engage account](https://engage.ringcentral.com/) and go to **Channels** > click the channel you created.
+1. Log in to your [RingCX account](https://engage.ringcentral.com/) and go to **Channels** > click the channel you created.
 
-   ![](https://i.imgur.com/fQCRo1a.png)
+   ![](https://i.imgur.com/WeP8fsW.png)
 
 2. Scroll down to **Chat connection** and copy the script under **Code to include**.
 
-   ![](https://i.imgur.com/TAFAFJS.png)
+   ![](https://i.imgur.com/5Agip5T.png)
 3. Paste this script in the HTML file of your website.
 
 ## Build a bot conversation flow 
 
-After connecting your Yellow.ai account with RingCX, you need to design the flow based on how you want the bot to handle the user chats in RingCX account using Yellow's AI capabilities.
+After connecting your IVA Professional account with RingCX, you need to design the flow based on how you want the bot to handle the user chats in RingCX account using Yellow's AI capabilities.
 
-1. Login to you [Yellow.ai account](cloud.yellow.ai) and go to **Studio** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-flow-from-scratch).  
+1. Login to you [IVA Professional account](cloud.yellow.ai) and go to **Studio** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-flow-from-scratch).  
 2. Include a [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) to the **Start** node.
 
    ![](https://i.imgur.com/CPo5GDt.png)
@@ -191,6 +193,8 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
  Once the dynamic chat node completes its conversation with the user and transfers the chat to RingCX account, this is how the chat looks on RingCX account's side.
 
- ![](https://i.imgur.com/XXfQvzO.png)
+ ![](https://i.imgur.com/Xrc60f6.png)
+
+
 
 
