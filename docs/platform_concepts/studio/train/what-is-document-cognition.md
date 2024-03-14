@@ -12,7 +12,7 @@ By using the **Documents** feature, you can expect the model to answer queries a
 In this article, you will learn:   
 
 1. [How documents can be used?](#uc)   
-2. [How to upload files to Document section?](#f)
+2. [How to add files to Document section?](#f)
     - [via. local system](#yls) 
     - [via. URL - integration with customer’s external Knowledge Base](#extkb)   
     - [via. AWS-S3](#awss3)
@@ -72,7 +72,7 @@ To view the report of search performance such as queries answered/unanswered, us
 ------
 
 
-## <a name="f"></a> 2. Upload files to Document section
+## <a name="f"></a> 2. Add files to Document section
 
 Follow the steps below to upload a file: 
 
@@ -259,27 +259,22 @@ For example:
 ```
 arn:aws:s3:::testbucketpritam<br> arn:aws:s3:::testbucketpritam/
 ```
-![](https://camo.githubusercontent.com/000e5da4d90897b7faf5c49993f7e604bddeb4d5263a28383d0c085af49946a3/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f6852674e5379546b485a6b73313632323434393634333931362e706e67)
 
     
 5. Click **Add statements**.
     
-![](https://camo.githubusercontent.com/da7d237394cefc8d0685f8bf8a7f59024372e60ea635cae6b20a6b1dbc7ab5ac/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f725a785074457441556e5454313632323435303836303231352e706e67)
 
 
 6. Open the IAM dashboard select **policy** > **create policy**, and paste the JSON generated from the previous step.
 7. Go to the **user** in the IAN dashboard and **create a user**.
 
-![](https://camo.githubusercontent.com/defa4c802d47d8e94b7ce70a720b21ea468118ffbf86ce995bd2e546730d8e30/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f58594763664b5036666a6c6d313632323435313233323035332e706e67)
 
 
 8. Open **attach existing policies**.
 
-![](https://camo.githubusercontent.com/fae5db64bfd5bce413bce071529973d29128470a84f9cf0d96feb327530dec05/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f7165375670544b3632434e63313632323435313430363536312e706e67)
 
 9. You can add the s3 bucket policy you just created to the user.
 
-![](https://camo.githubusercontent.com/fbf8b3871f93e79dd0bcee91475fd6d904ab1f68281e8bc25703d67688bbb676/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f5756726e4e3357676b4e6633313632323435313434373631332e706e67)
 
 10. You have created a new user with access to only a single bucket. Click the **AWS console link** in the above screenshot and login with this new user as an IAN user, you will have access to the s3 bucket.
     
