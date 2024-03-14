@@ -44,27 +44,28 @@ The document knowledge can be used in two different methods:
     - On the Studio landing page, click **Document Search**. 
     - **Enable** the toggle button next to **Actions**.   
 
-![](https://i.imgur.com/QN5XllL.png)
+   ![](https://i.imgur.com/QN5XllL.png)
 
 2. **Node**: Doc can be used as a node in flows. [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) - action node can be added in a flow and used as a searching tool for any user query.
-    - Open **Studio** > **Build** > **Flows**. 
-    - Add a prompt node to recieve the response from the user(the data that needs to be searched in the doc). [Store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-and-retrieve-data-using-variables).
-    - Add a [Document Search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search). Select Query value as the previously stored variable. 
-    - Metadata filters can be added when you only specific documents are required to be searched for the user query via tags. 
+    
+    i. Open **Studio** > **Build** > **Flows**. 
 
-![](https://i.imgur.com/dyqMjy8.png)
+    ii. Add a prompt node to recieve the response from the user(the data that needs to be searched in the doc). [Store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-and-retrieve-data-using-variables).
+
+    iii. Add a [Document Search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search). Select Query value as the previously stored variable. 
+
+    iv. Metadata filters can be added when you only specific documents are required to be searched for the user query via tags.
+
+   ![](https://i.imgur.com/dyqMjy8.png)
 
 
 :::info
 
-**View Analytics on Document search** 
+**View report on Document search** 
     
-Doc can provide analytics about the search results performance, categories of searches etc. on the [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview) module.
-
-- Open **Insights**. 
-- Select **Document**. 
+To view the report of search performance such as queries answered/unanswered, user feedback on search results and search categories, go to [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview) module and select **Document**. 
     
-![](https://i.imgur.com/5IPO2Sw.jpg)
+   ![](https://i.imgur.com/5IPO2Sw.jpg)
 
 :::
 
@@ -79,66 +80,65 @@ Follow the steps below to upload a file:
     - Open **Documents**-> Files section. 
     - Click **+Upload Documents**. 
 
-![](https://i.imgur.com/jq9wu2K.png)
+   ![](https://i.imgur.com/jq9wu2K.png)
 
 
-2. Select one of the 4 options. You can upload a file from:
+2. Select a source you want to upload the file from:
     - [Your local system](#yls) 
     - [Upload URL- integrate your bot with customer’s external knowledge base integrations](#extkb)
     - [AWS-S3](#awss3)
     - [Sharepoint](#shpt)
       
-![](https://i.imgur.com/V2CdcPt.png)
+   ![](https://i.imgur.com/V2CdcPt.png)
 
 ---
     
-### <a name="yls"></a> 2.1 Upload a local file
+### <a name="yls"></a> 2.1 Upload files from local system
     
-1. After selecting **Your Computer**. Click **Upload File**. You will be redirected to your computer file storage from where you can select files to upload. 
+1. After selecting **Your Computer**. Click **Upload File** (you can also select multiple files at once). You will be redirected to your computer file storage from where you can select files to upload. 
 
-![](https://i.imgur.com/NgGXv7J.png)
+   ![](https://i.imgur.com/NgGXv7J.png)
 
 
-> You can also select multiple files at the same time to get uploaded.
+2. Click **Add (x)** after enabling the options below (x indicates the number of documents that will be uploaded).   
 
-2. Click **Add (1)** after enabling the options below (1 indicates that one document will get uploaded. If there are multiple documents, the number upgrades accordingly).   
-
-    - Select “**Generate Q&A**” when you want to generate questions and answers automatically from the document. Otherwise, leave it as it is. (These questions and answers will be visible on the ‘**Document QnA**’ tab, just beside the ‘Files’ tab at the top left.
-    - Select “**Enable table parsing**” when you are aware that there are tables in the document. That will help index the documents better. If it is not the case leave the option as it is.
+    - Select **Generate Q&A** when you want to generate questions and answers automatically from the document. Otherwise, leave it as it is. (These questions and answers will be visible on the **Document QnA** tab, just beside the ‘Files’ tab at the top left.
+    - Select **Enable table parsing** if there are tables in the document. That will help index the documents better for tables.
     - Select the **language** in which the document is. 
 
-:::info
-Languages such as German, French, Spanish, Romanian and Polish are supported apart from English. For that, you will have to upload your documents in these languages.   
-When there is a user query entered in a particular language from the list, the bot detects which language is the query in. It respectively searches for the query from the documents uploaded in the same language and provides the results.
+:::note
+Apart from English, it also supports German, French, Spanish, Romanian and Polish. For that, you will have to upload your documents in these languages.   
+When a user enters a query in a specific language from the list, the bot detects the language of the query and searches for relevant documents uploaded in the same language. It then provides the user with results corresponding to their query.
 
 ![](https://i.imgur.com/LrfGaiI.png)
 :::
 
-3. After clicking **Add**, wait for the indexing to complete.
-4. After the indexing is completed, the file is uploaded. 
+3. After clicking **Add**, wait for the indexing to complete. The status changes to *Completed*.
+4. If you want to upload more documents, click **+Upload documents**.
 
-> If you want to upload more documents, click **+Upload documents**.
->
-> ![](https://i.imgur.com/wgvcGZ0.png)
+   ![](https://i.imgur.com/wgvcGZ0.png)
 
 
 5. To see the properties of the documents, hover over the information - icon.
 
-![](https://i.imgur.com/7nNtF2e.png)
+  ![](https://i.imgur.com/7nNtF2e.png)
+
+6. To preview the uploaded document, click on **Preview**
 
 #### **Other Settings**
 
 
-6. Click the three dots on right to view different action items:   
+6. Click the three dots on right to view different action items:
+
     - **Edit Tags**: This allows you to limit the search results to certain documents. For example: If you assign a tag to this Sample.pdf doc as “Department: HR” then it can limit the search to HR only. 
-    - **Edit properties**: It allows us to change the file name and if the customer has the requirement of redirecting the search results to a certain static URL, then it can be configured from here.
+    - **Edit properties**: It allows you to change the file name and if the customer has the requirement of redirecting the search results to a certain static URL, then it can be configured from here.
     - **Preview**: It enables to preview of the uploaded document.
     - **Delete**: This will delete the file from the cloud.
 
 
 ---
     
-### <a name="extkb"></a> 2.2 Upload files via. URL
+### <a name="extkb"></a> 2.2 Upload files from an URL
 
 > Yellow.ai’s document feature supports integration with external knowledge database by adding a URL.
 
@@ -517,24 +517,19 @@ Client and Resource are two different abstractions within the boto3 SDK for maki
 
 Follow the steps below to integrate using SharePoint REST APIs: 
     
-1. **Login**: Login to your SharePoint account and click the site you want to access.   
+1. **Login**: Login to your SharePoint account (`https://{{tenantname}}.sharepoint.com`) and click on the site you want to access.   
     
-![](https://camo.githubusercontent.com/f78b71568758c705bc2bddfc29586a745c29bbf6ff16cbd264d4e74d781ef720/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f4e524f66656e595369733843313632323435353930303038372e706e67)
-
 2. **App Registration**.
-    - Click **+New** -> **App**. 
 
-![](https://camo.githubusercontent.com/7e18f7abc6a025ab19de46a7bcd06a7fd676fcbf590d915f9d26b5492fb61a19/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f30704e354b4f6b584b775055313632323436353936363935332e706e67)
+   i. Click **+New** > **App**. 
+    
+   ii. To register an app in SharePoint, navigate to the *New App Registration* page by replacing 'addanapp.aspx' with 'appregnew.aspx'.
+
+   - The URL of that page will be similar to 
+   ```https://{{tenantname}}.sharepoint.com/_layouts/15/appregnew.aspx```
 
     
-- To register an app in SharePoint, navigate to the "New App Registration" page by replacing 'addanapp.aspx' with 'appregnew.aspx'.
-
-![](https://camo.githubusercontent.com/b5d8021c8ebc6f92761dd3b392a0623bed3805f8df23e7fa1d528f65473caad7/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f77434a7262567a68586c4a41313632323435363437383437302e706e67)
-
-- The URL of that page will be similar to 
-```https://{{tenantname}}.sharepoint.com/_layouts/15/appregnew.aspx```
-    
-- Fill in the details on that page as per the following table and click **Create**.
+   iii. Fill in the details on that page as per the following table and click **Create**.
 
     - **Client Id** - Click Generate
     - **Client Secret** - Click Generate
@@ -542,23 +537,21 @@ Follow the steps below to integrate using SharePoint REST APIs:
     - **App Domain** - `localhost`
     - **Redirect URI** - `https://localhost`
 
-  
-![](https://camo.githubusercontent.com/b56b2b510d65ffc8edc5693282631bb3f5307e21d5471748a85ba8a6b44b1d5a/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f68376c684531786f5a6f7633313632323435363839323931362e706e67)
+   ![](https://learn.microsoft.com/en-us/sharepoint/dev/solution-guidance/media/apponly/sharepointapponly1.png)
 
 :::note
 Copy and save the generated Client Id and Client Secret as these will be required in later steps. 
 :::  
 
-- On the next screen, Click **OK**. 
+   iv. On the next screen, Click **OK**. 
 
-![](https://camo.githubusercontent.com/9d0e78db9170b4078f005227f6c86dddd7401d69c1e419fba41619e7656defc0/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f4e55466b66324b324d385155313632323435363933363833342e706e67)
 
 3. **Add Permissions**.
-    - Now that the app is registered, provide the app with the required permissions so that it can access data. In order to do that, replace "settings.aspx" with "appinv.aspx". 
 
-![](https://camo.githubusercontent.com/731a2e414cccc509e498f49f1cc0b2f5084359c7b38457a0efbdf6e1b2a8beaf/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f6a44644c41705a4d656d4439313632323435373030373838362e706e67)
+    - Now that the app is registered, provide the app with the required permissions to access data. To do that, replace `settings.aspx` with `appinv.aspx`. 
 
-``` The URL of that page will be similar to the one below [](https://yourtenantname.sharepoint.com/_layouts/15/appinv.aspx) ```
+
+   The URL of that page will be similar to the one below `https://{yourtenantname}.sharepoint.com/_layouts/15/appinv.aspx)`
     
 - On that page, paste the **Client Id** in the "**App Id**" text box and click "**Lookup**". This will load the details of the app we registered previously In the "Permission Request XML" paste the following XML. This XML says that the app can have full control over the current web.
     
@@ -566,18 +559,15 @@ Copy and save the generated Client Id and Client Secret as these will be require
 <AppPermissionRequests AllowAppOnlyPolicy="true">  <AppPermissionRequest Scope="http://sharepoint/content/sitecollection/web" Right="Read"/></AppPermissionRequests>
 
 ```
-- Once that is added click "**Create**".
-
-![](https://camo.githubusercontent.com/7fdbcc14a09e7c399a6cbd6747dfcfd8f27be7289c35a843dd28f61f94d0ff6f/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f71586e364b6945675a454735313632323435373330333132302e706e67)
+- Once that is added click **Create**.
 
 - On the next screen click "**Trust It**" and this will mean that the app will have the required permissions.
 
-![](https://camo.githubusercontent.com/14d983adbae81fb1009f48ead2df08da4dc5f9f70ab19ce7071dcdd461fe6ce9/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f45307351496a675264706253313632323435373432393333312e706e67)
 
 4. **Check Tenant ID**.
-    - Navigate to app permissions page by replacing 'settings.aspx' by 'appprincipals.aspx'.
+
+    - Navigate to app permissions page by replacing 'settings.aspx' by `appprincipals.aspx`.
     
-![](https://camo.githubusercontent.com/8ee6f46a94b6a65095cbbf59803858c2bc42d5139237b3592125d15afaa96694/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f335a464b3678354e5244576b313632323435373439373339312e706e67)
 
 The text after '@' in the app identifier is the 'tenant id' or 'realm'. 
     
@@ -602,14 +592,16 @@ Once an app is created you can give access to any site to it. You can view all t
     - Open the yellow platform. **Studio** > **Train** > **Documents** > **Upload documents** > **Select Sharepoint**.
     - Fill in the following details and select the required folders.
 
-![](https://paper-attachments.dropbox.com/s_B1221157D5B1FEA09D2BC495FC79B892C493E227B6F11DEC0F9B34E843AF4B3C_1659530624222_image.png)
+   ![](https://paper-attachments.dropbox.com/s_B1221157D5B1FEA09D2BC495FC79B892C493E227B6F11DEC0F9B34E843AF4B3C_1659530624222_image.png)
 
     
 6. Click the **upload** button, and your docs will be scheduled for the sync.
  
- #### 2.4.2 Integration using AAD Graph APIs
+ 
+#### 2.4.2 Integration using AAD Graph APIs
    
 1. **Login to AAD**.
+
 > Follow the AAD app registration: https://docs.yellow.ai/docs/platform_concepts/appConfiguration/azure-ad
 
 **Required permissions**
@@ -634,7 +626,6 @@ Once an app is created you can give access to any site to it. You can view all t
 
 3. Click the **upload** button, and your docs will be scheduled for sync.
 
-  
 
 ---
 
