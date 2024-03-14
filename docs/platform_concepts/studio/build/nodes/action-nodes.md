@@ -331,6 +331,10 @@ There are two ways by which you can convert Base64 files:
 
 Display the file though the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#6-file). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user.
 
+:::info
+To display PDFs from an API response, store the response in  an object variable, for example **pdf_response**. Include a text node and enter this syntax ```{{{variables.pdf_response.file.url}}}``` 
+:::
+
 ### 1.10 User event
 
 This node lets you trigger an event with a certain amount of delay. For example, if you can get feedback from users after the chat gets over, you can use this node to trigger that event which will trigger the feedback flow.

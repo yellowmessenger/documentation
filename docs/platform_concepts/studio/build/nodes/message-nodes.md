@@ -114,10 +114,27 @@ Enable **Disable action after click** and click **Save**.
 
 Display any MP4 video file with this node.
 
-* Click the tools(channel option) symbol available below the node name.  
-* Enable autoplay, show controls and downloadable options to improve the video viewing experience. 
+To customize this node:
 
-![](https://i.imgur.com/qxdhtox.jpg)
+1. Click the tools option. 
+
+  ![](https://i.imgur.com/PeQYSgi.png)
+
+2.  Choose the channel on the left pannel and enable the rest of the options based on your preference and click **Save**. By default, the video will be downloadable, and controls will be shown to users, allowing them to pause, fast forward, maximize and set playback speed.
+
+
+<img src="https://i.imgur.com/10coBia.png" alt="drawing" width="70%"/>
+
+| Feature         | Description                                                                                          |
+|-----------------|------------------------------------------------------------------------------------------------------|
+| Hide Input      | Hides the input field for the user, preventing responses to the video node.                         |
+| Hide Home Button | Hides the home button for the user.                                                                 |
+| Thumbnail       | Upload a thumbnail image for the video.                                                              |
+| AutoPlay        | Video automatically plays without user intervention.                                                 |
+| Muted           | Video will be muted while being played.                                                           |
+| Loop            | Video will play in a loop.                                                                          |
+| Show Controls   | Display controls such as pause, fast forward, and mute for user interaction with the video.          |
+| Downloadable    | Allows users to download the video.                                                                  |
 
 :::note
 1. Video size should be lesser than 50 MB
