@@ -140,6 +140,10 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 3. In **API URL**, enter the API URL in this format ```https://{{ringcentraldomainname}}.api.lab.digital.ringcentral.com``` for example, https://test-account.api.lab.digital.ringcentral.com
 4. Click **Save**.
 
+:::note
+Please refer to this [doc](https://developers.ringcentral.com/engage/digital/guide/interactions/structured-messages#channel-capabilities) for nodes supported in RingCX
+:::
+
 ## Display RingCX account's chat widget on your website
 
 You need to paste the respective channel's script in the HTML file of your website to use RingCX's chat-widget with IVA Professional's AI capabilities.
