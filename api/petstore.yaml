@@ -1254,7 +1254,7 @@ paths:
                       description: URL of the image to be sent       
                     video: 
                       type: string
-                      description: URL of the video to be sent                                                                                                                    
+                      description: URL of the video to be sent                                                                                                              
                     event:
                       type: object
                       description: The event data. Required to send event to the bot
