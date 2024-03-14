@@ -3,9 +3,9 @@ title: Product catalogue
 sidebar_label: Product catalogue
 ---
 
-The Product Catalogue helps to streamline your product management process by allowing you to store and showcase your product catalog to end users. With this feature, you can store all the specific details of your products in one centralized location. Using the **Product Search** node and powered by GPT configured in the backend, the bot can seamlessly match user queries with product descriptions stored in the catalog, ensuring accurate and efficient product display to end users. 
+The Product Catalogue helps to streamline your product management process by allowing you to store and showcase your product catalog to end users. It allows you to  store all the specific details of your products in one centralized location. Using the **Product Search** node(powered by GPT in the backend), the bot can seamlessly match user queries with product descriptions stored in the catalog, ensuring accurate and efficient product display to end users. 
 
-Imagine you run an online store and have added the Product Catalog feature to your chatbot. When a user asks about a product, like a laptop, the bot quickly finds matching items from the catalog and shows them to the user. This makes it easy for users to find what they're looking for and helps them make purchases smoothly.
+Imagine you run an online store and have added the Product Catalog to your bot. When a user asks about a product, like a laptop, the bot quickly finds matching items from the catalog and shows them to the user. This makes it easy for users to find what they're looking for and helps them make purchases smoothly.
 
 ## Create a product catalogue
 
@@ -21,7 +21,7 @@ Imagine you run an online store and have added the Product Catalog feature to yo
 * **Field name**: Enter the name of the product.(this will appear as a column)
 * **Description**: Describe the product. We would suggest you to add a detailed description that will help GPT to read the description and fetch the product easily.
 * **Type**: Choose the data type for the data that will be added to that column.
-* **Searchable**: Enable this field if you want keep this column searchable for the bot.
+* **Searchable**: Enable this field to make this column searchable for the bot. Enable search only for columns with searchable data ton ensure better search results.
 
 3. Click **Create table**.
 
@@ -47,9 +47,9 @@ The data to be imported should be in .csv format.
 
  Choose the csv file from your system and click **Open**. 
 
-## Additional table actions
+## Manage the product catalogue table
 
-The **Table actions** has options that lets you add new columns, delete table data or the entire table and download the existing table.
+You can add new columns, delete table data or the entire table and download the existing table.
 
    ![](https://i.imgur.com/WMNla0y.png)
 
@@ -95,8 +95,4 @@ To showcase products from the catalog to a user, you'll need to construct flows 
 * **Column**: Choose the specific column from which the products will be listed.
 * **Question for bot to ask**: Enter the message to display to the user while displaying products from the column.
 
-4. In **Store response in** create or choose a variable to store the response of this node. Build the rest of the flow based on how you want the bot to drive the conversation with the user.
-
-**Example**:
-
-![](https://i.imgur.com/Ie5AAqq.gif)
+4. In **Store response in** create or choose a variable to store the response of this node. The response will be in the form of stringified array. Connect a [Dynamic Chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) or [Carousel node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#26-carousel), and parse this response within it to build the rest of the flow according to your specific use case.

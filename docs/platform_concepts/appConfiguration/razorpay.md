@@ -16,7 +16,7 @@ Connect your Yellow.ai platform with your Razorpay account by following the belo
 
 ### 1.1 Generate API keys on Razorpay dashboard
 
-1. Log into your **Razorpay** account and select the mode (Test/Live) for which you want to generate the API key.
+1. Log into your [Razorpay account](https://dashboard.razorpay.com/signin?screen=sign_in&utm_medium=website&utm_source=direct) and select the mode (Test/Live) for which you want to generate the API key.
 
  ![](https://i.imgur.com/74zbT2o.png)
 

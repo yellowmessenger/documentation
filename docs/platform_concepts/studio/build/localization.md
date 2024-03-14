@@ -197,6 +197,10 @@ An alternative to manually filling each field with translated data in different 
 
 ![](https://hackmd.io/_uploads/BJJ6bd8Vh.png)
 
+:::info
+You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language.
+:::
+
 
 ### 3.3 Add multiple translations at once
 
