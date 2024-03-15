@@ -295,6 +295,32 @@ sidebar_label : Default DB table descriptions
 | lastMessageType      | Denotes if the last message in the chat was from the Bot/User/Agent.                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
 
+------
+
+## Notifications report 
+
+| Field       | Description                                                                    |
+|-------------|--------------------------------------------------------------------------------|
+| NAME        | Name of the campaign                                                            |
+| CAMPAIGNID  | Unique ID assigned to the campaign.                                              |
+| REPORTID    | Unique ID assigned to the campaign report.                                       |
+| SENDERID    | Alphanumeric or numeric string that identifies the sender of a message         |
+| USERID      | Unique ID for each User present in the User360 Table                             |
+| CDPUSERID   | Unique ID of the user (in User360) to whom the campaign was sent                |
+| TEMPLATEID  | Unique ID of the template used in the campaign                                   |
+| MESSAGEID   | Unique ID assigned to the message within the campaign sent to the user.         |
+| STATUS      |                                                                                  |
+| SOURCE      | Channel through which the campaign message was sent. Example: Whatsapp, Facebook, yellowmessenger |
+| SMSUNITS    | The number of SMS units consumed for a single message in the campaign.          |
+| SCHEDULEDAT | Date and time when the campaign was scheduled to send.                          |
+| SENTAT      | Date and time when the campaign was sent                                         |
+| DELIVEREDAT | Date and time when the campaign was successfully delivered.                     |
+| READAT      | Date and time when the recipient read the campaign message                      |
+| REPLIEDAT   | Date and time when the recipient replied to the campaign                        |
+| REPLY       | Content of the reply received from the recipient                                 |
+| ERRORMESSAGE| Any error message generated during the campaign delivery process.               |
+
+
 ## Platform user events
 
 | Events | Description |

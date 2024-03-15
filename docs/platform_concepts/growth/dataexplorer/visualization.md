@@ -39,7 +39,6 @@ Before creating visualizations, you must **summarize** the data in tables. After
 
 ### Bargraph stacking 
 
-> This feature is coming soon. 
  
 Stacked bar graphs visually represent data by stacking individual bars to show the total while illustrating the contribution of each category. This format aids in part-to-whole comparisons, trend analysis, and efficient presentation of data with multiple categories. It's effective for emphasizing both total values and the significance of individual components, making it a useful tool for various data visualization scenarios.
 
