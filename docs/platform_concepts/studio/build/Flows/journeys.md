@@ -154,4 +154,10 @@ To edit a flow, follow these steps
 2. Go to the flows drop-down on the top and click the flow you would like to edit. 
 
   ![](https://i.imgur.com/4lUHL3d.png)
+
+
+### Connect two flows
+
+To connect two flows, you can use a [switch flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#112-switch-flow) node or [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. In the case of a switch flow, the bot does not return to the original flow from which the node was triggered. Howevers, with an execute flow node, the bot returns to the original flow after executing the designated new flow.
+
 --- 

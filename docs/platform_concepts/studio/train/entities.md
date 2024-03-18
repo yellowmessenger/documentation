@@ -32,6 +32,8 @@ The yellow.ai platform offers 4 different types of entities:
 3. Regex
 4. System entities
 
+To trigger flow using entities, you need to set entities as the start trigger for the flow. For steps, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#12--trigger-flow-using-entities)
+
 
 ### Add text type entities
 
