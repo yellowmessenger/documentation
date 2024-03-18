@@ -164,6 +164,22 @@ Yes, you can track the count of users clicking on "Send Message" and landing on 
 </details>
 
 
+<details><summary><b> Where can I see the verification status of my WhatsApp Business Account (WABA)? </b></summary>
+<p>
+
+You can check the verification status of a WABA in the Facebook Business Manager (FBM) account.
+
+</p>
+</details>
+
+<details><summary><b> What does the status "Available_Without_Review" indicate for a WhatsApp Business Account (WABA) in Yellow platform?</b></summary>
+<p>
+
+The status "Available_Without_Review" indicates that the account has not yet been verified. In this state, the WABA can only be used for testing purposes, as it will have a very low messaging limit.<br/><img src="https://i.imgur.com/YSh18DN.png"/>
+
+</p>
+</details>
+
 
 ### Whatsapp Business account setup 
 
