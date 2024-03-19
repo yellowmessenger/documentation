@@ -43,6 +43,14 @@ The second user account, which lacks a valid userId and contains incorrect prope
 
 
 <details>
+<summary> How to add contact details to users in bulk? </summary>
+
+You can create a CSV file with contact details and upload the CSV file using [User Data Import](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/import_users).
+
+</details>
+
+
+<details>
 <summary>Can I connect a database with User 360?</summary>
 
 Usecase: I currently store the details of users who click the "STOP" button to unsubscribe from my campaign. I want to integrate this information with User 360 to ensure that campaigns are not sent to those users. Is it possible to use User360 instead of a separate database to store the list of unsubscribers?<br/>
