@@ -3,6 +3,12 @@ title: Prompt Nodes
 sidebar_label: Prompts
 ---
 
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+
+
+
 Prompts are Interactive or conversational nodes, which expect user input. When a user provides an invalid input to the prompt, a fallback message will be displayed. 
 
 In this article, you will learn about the different types of prompt nodes: 
@@ -381,11 +387,11 @@ return new Promise(resolve => {
 ## <a name="feature"></a> 3. Other prompts
 
 
-### 3.1 Date 
+### 3.1 Date
 
-Users will be able to select a date on the calendar widget with this node.
-If the user input contains a date or a time, it will pass the validator. Else the specified validation fail message will be sent.
-Widgets are optional. Chat will not be disabled when a widget is sent, users can choose to type in their response.
+This node enables users to choose a date from the calendar widget. If the user input includes a date or time, it will pass the validation. Otherwise, the specified validation failure message will be sent. 
+
+This is an optional field, and users can still interact via chat without being required to use the date picker.
 
 ![](https://i.imgur.com/XZ2Im2N.png)
 
@@ -393,22 +399,44 @@ Widgets are optional. Chat will not be disabled when a widget is sent, users can
 This node is supported only on Web and Mobile apps.
 :::
 
-Different types of date pickers are available to be displayed to the users. 
-Example of a Single Date Picker. 
+#### Types of date pickers available in bot
+
+There are various types of date pickers available, each catering to different needs and preferences. You can choose the one that best suits your requirements.
+
+<!-- <img src="https://i.imgur.com/JNHbV83.png" width="50%"/> -->
+
+1. Single Date Picker
+2. Date Range Picker
+3. Month Picker
+4. Single Date and Time Picker
+5. Time Picker
+
+Learn more about [Different date pickers](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-components#13-date-picker).
 
 
-![](https://i.imgur.com/QAIhG8M.png)
+#### [Storing date variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables)
+
+When a user enters or selects a date, the input undergoes validation and is stored in the specified variable as an object. Users aren't limited to using only the date picker; they can also input the date manually, which will still be saved in the variable.
+
+After validating, the system will store the date entered date by users in the specified object variable.
 
 
-[**Storing date variables**](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables): Post validation, the entered date by the users will be stored in the specified variable as an object. 
 
-Users aren't restricted to using only the date picker, they can also input the date manually, and it will be saved in a variable.
 
-The structure of the object is as follows:
 
-**Store date for a single value**
 
-```
+
+The structure of the date object is as follows:
+
+<Tabs class="tabs-schema">
+
+
+<TabItem value="singleDatePicker" label="singleDatePicker" default>
+
+
+To retrieve date from the date object, use this syntax: `{{{variables.variable_name.objectname.field}}}`. For example, to retrieve day from the following object, use `{{{variables.variable_name.value.day}}}`.
+
+```json
 {
   "value": {
     "timestamp": "Tue, 12 Dec 2023 13:03:31 GMT",
@@ -428,9 +456,19 @@ The structure of the object is as follows:
   }
 }
 ```
-**Store date for a date range**
 
-```
+</TabItem>
+
+
+<TabItem value="DateRangePicker" label="DateRangePicker" default>
+
+
+Syntax to retrieve dates from date range object:
+
+* **Start Date**: ```{{{variables.variable_name.range.start.date}}}```
+* **End Date**: ```{{{variables.variable_name.range.end.date}}}```
+
+```json
 {
   "value": {
     "timestamp": "Sun, 05 Nov 2023 05:30:00 GMT",
@@ -476,17 +514,118 @@ The structure of the object is as follows:
   }
 }
 ```
-To retrieve the start and end dates, use the following syntaxes:
 
-* **Start Date**: ```{{{variables.variable_name.range.start.date}}}```
-* **End Date**: ```{{{variables.variable_name.range.end.date}}}```
+</TabItem>
+
+<TabItem value="MonthPicker" label="MonthPicker" default>
+
+
+Syntax to retrieve dates from date range object:
+
+
+
+```json
+
+```
+
+</TabItem>
+
+
+<TabItem value="SingleDateTimePicker" label="SingleDateTimePicker" default>
+
+
+Syntax to retrieve date or time from the object: `{{{variables.variable_name.objectname.field}}}` 
+
+Ex:
+To capture date: `{{{variables.variable_name.value.value.date}}}`
+To capture day: `{{{variables.variable_name.value.value.day}}}`
+
+
+
+```json
+{
+	"value": {
+		"value": {
+			"timestamp": "Tue, 19 Mar 2024 10:33:00 GMT",
+			"year": 2024,
+			"month": 3,
+			"date": 19,
+			"day": "Tuesday",
+			"hour": 10,
+			"minute": 33,
+			"selected": {
+				"hour": 5,
+				"minute": 3
+			}
+		},
+		"range": {
+			"exists": false
+		}
+	}
+}
+```
+
+</TabItem>
+
+<TabItem value="TimePicker" label="TimePicker" default>
+
+
+Syntax to retrieve time from the object:  `{{{variables.variable_name.value.value.{timeUnit}}}}`
+
+Example:  `{{{variables.variable_name.value.value.hour}}}`, `{{{variables.variable_name.value.value.minute}}}`
+
+
+
+```json
+{
+	"value": {
+		"value": {
+			"timestamp": "Tue, 19 Mar 2024 10:33:00 GMT",
+			"year": 2024,
+			"month": 3,
+			"date": 19,
+			"day": "Tuesday",
+			"hour": 10,
+			"minute": 33,
+			"selected": {
+				"hour": 5,
+				"minute": 3
+			}
+		},
+		"range": {
+			"exists": false
+		}
+	}
+}
+```
+
+</TabItem>
+
+</Tabs>
+
+
 
 :::note
 * You cannot subtract a date from another date using the Date node. To do so, you need to [write a custom function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) and use the data from date picker node.
-* To restrict the date picker to display historic dates, choose **Single Date Picker** under **Widget Type** and choose **Future Dates** under **Restrict to**
-
- ![](https://i.imgur.com/s0BVFFc.png)
 :::
+
+
+#### Restrict date picker to display past or future dates
+
+You can restrict date selection to past or future dates. This restriction applies only to the Single date picker and Single date and time picker.
+
+
+To restrict the date picker to display historic dates:
+
+1. In **Widget Type**, ensure you either have *Single Date Picker* or *Single date and time picker* You will see a new field, Restrict to.
+
+  <img src="https://i.imgur.com/8TJxBge.png" width="60%"/>
+
+2. In **Restrict to**, select *Future Dates* to allow users to select only future dates; select *Past Dates* to restrict selection to only past dates.
+
+
+
+
 ---
 
 ### 3.2 WhatsApp List
