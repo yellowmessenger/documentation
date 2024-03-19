@@ -1,6 +1,7 @@
 ---
 title: Add WhatsApp business account
 sidebar_label: Add WhatsApp account
+tags : [WABA]
 ---
 
 This guide will walk you through the process of creating a WhatsApp Business account and setting up your own chatbot for WhatsApp.

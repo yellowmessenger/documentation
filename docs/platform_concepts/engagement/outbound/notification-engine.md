@@ -158,28 +158,45 @@ This object contains all relevant information about the user. It needs to have a
 This contains the message template details that need to be sent as a notification. `templateId` is mandatory.
 
 ``` json
-"notification": {
-    "templateId": "template_name", // name of the template from template manager// mandatory for WhatsApp, SMS(wherever applicable)
-    "params": { //renderable parameters defined in the template.
-           "emiValue": "15000", // variable parameter names as shown on template manager. Dynamic values can be passed.
-           "balance": "79999",
-           "media": [{ //applicable for whatsapp // 
-                       "title": "title", //optional for document media types
-                       "mediaLink": "https://URL.com.jpeg",
-                       "quickReplies": [
-                                {
-                                    "type": "quick_reply",
-                                    "value": "payload 1"
-                                },
-                                {
-                                    "type": "quick_reply",
-                                    "value": "payload 2"
-                                }
-                            ]
-                     }],
-           "quickReplies": {
-                "ctaUrlParam": "pricing-ai-chatbot" // over here, "pricing-ai-chatbot" represents the extension of the URL after the domain (as configured in the template)
-           }
+
+{
+    "notification": {
+        "templateId": "template_name",
+        // The name of the template as defined in the template manager. Mandatory for WhatsApp and SMS (wherever applicable).
+        "params": {
+            // Renderable parameters defined in the template.
+            "emiValue": "15000",
+            // Variable parameter names as shown in the template manager. Dynamic values can be passed,
+            "balance": "79999",
+            "media": [
+                {
+                    // Applicable for WhatsApp.
+                    "title": "title",
+                    // Optional for document media types.
+                    "mediaLink": "https://URL.com.jpeg",
+                    "quickReplies": [
+                        {
+                            "type": "quick_reply",
+                            "value": "payload 1"
+                        },
+                        {
+                            "type": "quick_reply",
+                            "value": "payload 2"
+                        }
+                    ]
+                }
+            ],
+            "quickReplies": {
+                "ctaUrlParam": {
+                    "buttonText": "pricing-ai-chatbot" 
+                    // "buttonText" represents the text that will be displayed on the button.
+                    // "pricing-ai-chatbot" represents the extension of the URL after the domain (as configured in the template.
+                }
+            }
+        }
+    }
+}
+
 
 ```
 
@@ -244,16 +261,29 @@ When you raise any support ticket, include `msgId` or `traceId` in the request.
 
 On successful queueing of the notification, you will receive a 202 status code with the relevant `msgId`. This confirms that the message details have been received by us and will be queued for sending on the relevant channel. The downstream service will pick the queue and will start sending it and updating the delivery status on the webhook, and the reports under Data Explorer on the platform.
 
-#### HTTP Error Codes
+#### HTTP Response Codes
 
-| **Code** | **Description** |
-| --- | --- |
+
+
+| Status code | Description                                                                                                                              |
+|------------|------------------------------------------------------------------------------------------------------------------------------------------|
+| 200         | Indicates general success of an API call.                                                                                             |
+| 201        | Indicates successful resource creation.                                                                                  |
 | 202 | Message queued successfully. You will receive a msgId for acknowledgement and tracking. |
+| 204        | Response payload is empty.                                                                                        |
+| 301        | Should be used to relocate resources. New URI should be used in the Location header of the response.                                    |
 | 400 | Bad request. Request structure is not formed correctly. Please check the `message` field for more information. |
-| 401 | Unauthorised. Please check your auth token. Only Super Admin Auth tokens are accepted for using API. |
+| 401 | Unauthorised or invalid access token. Please check your auth token. Only Super Admin Auth tokens are accepted for using API. |
+| 403        | Unauthorized user.                                                                                             |
+| 404        | Resource not found.                                                                                   |
+| 405        | HTTP method not supported for the API.             |
+| 406        | Must be used when the requested media type cannot be served by the API.                                                                  |
+| 415        | Rquest body does not contain content type.                                                              |
 | 422 | Invalid inputs. The request structure is evaluated to be correct but the parameter values are not within the expected range. Channel not configured. |
 | 429 | Rate limited. Occurs when there are too many requests sent to the API within a short time. Once a rate limit error is captured, the rate of the API call should be decreased to honour the limits.  *Default Rate Limit is 2000 requests/min per Bot.* |
 | 500 | Internal server error. TraceId will be sent back for tracking. |
+| 503        | Downstream service is temporarily unavailable. Please try again later.                    |
+
 
 #### API Error Codes
 
