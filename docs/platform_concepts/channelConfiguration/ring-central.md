@@ -216,5 +216,18 @@ To add custom fields to agent profiles in RingCX:
 
  ![](https://i.imgur.com/SugTBvr.png)
 
+## IVA Professional nodes and their supported formats
 
+| Nodes | Supported Formats                       |
+|-------|-----------------------------------------|
+| Image | jpeg, jpg, png, gif                     |
+| Audio | MP3, AMR                                |
+| Video | Mp4, MP4, MOV                           |
+| File  | PDF, DOCX, PPTX, XLSX                  |
+
+**Structured message:**
+
+* Select
+* Template
+* Carousel:  GIF, jPg jpeg, png
 

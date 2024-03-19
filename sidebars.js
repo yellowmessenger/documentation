@@ -205,6 +205,7 @@ module.exports = {
         ],
       }, 
 
+      "platform_concepts/Getting Started/yellowg",
       "platform_concepts/Getting Started/keyboard-shortcuts",
       "platform_concepts/Getting Started/platform-offerings",
 
