@@ -320,6 +320,7 @@ sidebar_label : Default DB table descriptions
 | REPLY       | Content of the reply received from the recipient                                 |
 | ERRORMESSAGE| Any error message generated during the campaign delivery process.               |
 
+<!--
 
 ## Platform user events
 
@@ -347,6 +348,8 @@ sidebar_label : Default DB table descriptions
 |user-session|Fired when a session is created based on a user message|
 |user-initiated|Fired when a new session is created from a user message for the WhatsApp channel|
 |business-initiated|Fired when a new session is created by notification from the business side for the WhatsApp channel|
+
+-->
 
 -------
 
