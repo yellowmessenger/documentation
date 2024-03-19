@@ -18,7 +18,7 @@ Facebook Messenger and [Facebook Comments](https://docs.yellow.ai/docs/platform_
 
 **Watch the video on how to setup Facebook Messenger:**
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/slK3J2hVF8Q" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yasMLVfatm8" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 <br/>
 
 ## Limitations of Facebook Business Messenger (FBM) Chat
