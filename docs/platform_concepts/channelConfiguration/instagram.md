@@ -14,6 +14,11 @@ The following are key features of this integration:
 
 These features help you engage with your audience on Instagram and provide a more interactive and responsive experience.
 
+**Watch the video on how to setup Instagram:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XIF3YGpzsD0" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
+
 ## List of supported messages by Yellow.ai platform
 
 | **Action type** | **Message type**   | **Bot Support?** | **User Support**?                                                |
