@@ -77,6 +77,10 @@ To connect your Facebook page to Yellow.ai, follow these steps:
 
    <center><img src="https://i.imgur.com/o4bt7xF.png" alt="drawing" width="60%"/></center>
 
+:::note
+You can connect to an unlimited number of FB pages within a single FB business account. 
+:::  
+
 7. Enable the required permissions, and click **Done**.
 
    <center><img src="https://i.imgur.com/Gzo0WJ7.png" alt="drawing" width="60%"/></center>
