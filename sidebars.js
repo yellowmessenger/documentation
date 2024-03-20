@@ -205,7 +205,7 @@ module.exports = {
         ],
       }, 
 
-      "platform_concepts/Getting Started/yellowg",
+      
       "platform_concepts/Getting Started/keyboard-shortcuts",
       "platform_concepts/Getting Started/platform-offerings",
 
@@ -225,6 +225,16 @@ module.exports = {
 //         ],
 // },
 
+{
+  type: "category",
+  label: "Generative AI-powered bot",
+  collapsed: true,
+  items: [
+   
+    "platform_concepts/Getting Started/yellowg",
+    
+  ],
+},      
 
 
     // Studio starts here  
