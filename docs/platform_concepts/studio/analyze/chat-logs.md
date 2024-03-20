@@ -15,6 +15,7 @@ Logs are retained for six months. After that, they are transferred from the acti
 :::note
 * The conversation logs are updated everyday at 21:00 LT.
 * By default, we can view chats from the past 24 hours.
+* The names in conversation logs cannot be changed or mapped to a user. The platform displays random names in order maintain end user anonymity. 
 :::
 
 ## Session

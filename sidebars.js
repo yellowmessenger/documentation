@@ -101,7 +101,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/insights/convissue",
-    "cookbooks/insights/eventdescriptions",
+  //  "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/schedulerawreports",
     "cookbooks/insights/toptriggeredintents",
@@ -205,6 +205,7 @@ module.exports = {
         ],
       }, 
 
+      
       "platform_concepts/Getting Started/keyboard-shortcuts",
       "platform_concepts/Getting Started/platform-offerings",
 
@@ -224,6 +225,16 @@ module.exports = {
 //         ],
 // },
 
+{
+  type: "category",
+  label: "Generative AI-powered bot",
+  collapsed: true,
+  items: [
+   
+    "platform_concepts/Getting Started/yellowg",
+    
+  ],
+},      
 
 
     // Studio starts here  
@@ -933,6 +944,8 @@ module.exports = {
         collapsed: true,
         items: [
             "platform_concepts/growth/dataexplorer/defaulttables",
+            "cookbooks/insights/eventdescriptions",
+
             "platform_concepts/growth/dataexplorer/customtables",
             "platform_concepts/growth/dataexplorer/sumarize",
             "platform_concepts/growth/dataexplorer/visualization",

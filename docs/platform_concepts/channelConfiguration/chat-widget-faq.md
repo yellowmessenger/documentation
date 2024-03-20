@@ -67,6 +67,15 @@ if (userIsAuthenticated) {
   </div>
 </details>
 
+<details>
+<summary>Is it possible to block the users from uploading specific attachment formats?</summary>
+<div>
+ <br/>
+ <div>Yes, you can control which file formats users are allowed to upload for documents, images, and other files. To manage this, navigate to <b>Chat Widget</b> > <b>Settings</b> > <b>Validate attachments</b> <br/><img src="https://i.imgur.com/LzMKIlP.png" alt="drawing" width="80%"/>
+</div>
+  </div>
+</details>
+
 --------
 
 ## Chat widget related FAQs
@@ -779,4 +788,11 @@ window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "hid
 </div>
 </details>
 
-
+<details>
+<summary>How to retrieve the sender ID on a website if Yellow Messenger authentication is not passed?</summary>
+<div>
+ <br/>
+ <div>To retrieve the sender ID, go to live bot page, right click and select <b>Inspect</b> > <b>Network</b> > <b>Payload</b> search for update API, you can find the userId within the payload. <br/><img src="https://i.imgur.com/hYbqI5c.png" alt="drawing" width="100%"/>
+</div>
+  </div>
+</details>

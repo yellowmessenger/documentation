@@ -94,6 +94,8 @@ You can train your bot on the following features by setting the right number of 
 
 3. Click **Train**.
 
+If a bot is not trained on intents, it won't understand user queries so it will resort to [Fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/additionalsettings#fallback-fallback-flow). You can configure [Suggestions](https://docs.yellow.ai/docs/platform_concepts/studio/overview#suggestion) for bot to show the closest answers to the user query.
+
 ## Map intents to flows
 
 To trigger a flow, set this intent to that flow. 
@@ -142,8 +144,7 @@ By this way, whenever a user types any one of the trained intents or utterances,
 ## Resolve conflicts in intents and utterances 
 
 
-A bot is trained with multiple intents and entities to improve its performance. If utterances are not classified correctly during training, it can lead to confusion. To resolve these clashes caused by unclear utterance classification, it is necessary to analyse the report..
-
+A bot is trained with multiple intents and entities to improve its performance. If utterances are not classified correctly during training, it can lead to confusion. To resolve these clashes caused by unclear utterance classification, it is necessary to analyse the report.
 
 ### Download utterance report
 

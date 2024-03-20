@@ -140,6 +140,10 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 3. In **API URL**, enter the API URL in this format ```https://{{ringcentraldomainname}}.api.lab.digital.ringcentral.com``` for example, https://test-account.api.lab.digital.ringcentral.com
 4. Click **Save**.
 
+:::note
+Please refer to this [doc](https://developers.ringcentral.com/engage/digital/guide/interactions/structured-messages#channel-capabilities) for nodes supported in RingCX
+:::
+
 ## Display RingCX account's chat widget on your website
 
 You need to paste the respective channel's script in the HTML file of your website to use RingCX's chat-widget with IVA Professional's AI capabilities.
@@ -195,6 +199,35 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
  ![](https://i.imgur.com/Xrc60f6.png)
 
+## Add custom fields for agents
 
+To add custom fields to agent profiles in RingCX:
 
+1. Go to **RingCX Admin portal** > **Digital** > **Custom Fields** > **Add** and create a new custom field.
+
+ ![](https://i.imgur.com/HnvvH07.png)
+
+2. In IVA Professional, create a new custom attribute(**Engage** > **User 360** > **User properties** > **+ Custom attribute**). The custom attribute's name should contain the keyword RINGCX as prefix and should have the same name as the custom field created in RingCX account. For example, RINGCX(custom field name).
+
+ ![](https://i.imgur.com/YUP0o17.png)
+
+3. In the flow you have constructed [previously](#build-a-bot-conversation-flow), you can collect dynamic data for the custom field by including a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [storing the response](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) in the user property variable (created in the previous step). Or you can simply type static data in that variable and pass it in the flow.
+4. This custom field will appear in the agent profile as highlighted below.
+
+ ![](https://i.imgur.com/SugTBvr.png)
+
+## IVA Professional nodes and their supported formats
+
+| Nodes | Supported Formats                       |
+|-------|-----------------------------------------|
+| Image | jpeg, jpg, png, gif                     |
+| Audio | MP3, AMR                                |
+| Video | Mp4, MP4, MOV                           |
+| File  | PDF, DOCX, PPTX, XLSX                  |
+
+**Structured message:**
+
+* Select
+* Template
+* Carousel:  GIF, jPg jpeg, png
 

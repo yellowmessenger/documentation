@@ -4,7 +4,7 @@ sidebar_label : AI Copilot
 tags: [AI copilot, auto flow creation, GPT-4]
 ---
 
-Yellow.ai's AI Copilot, powered by GPT-4, simplifies flow creation. Just input your requirements, and our bot generates flows automatically. Say goodbye to manual creation and template downloads. Automate flow generation, save time, and work conveniently.
+Yellow.ai's AI Copilot, powered by GPT-4, simplifies flow creation. Just input your requirements, and our bot generates flows automatically. Say goodbye to manual creation and template downloads. Automate flow generation, save time, and work conveniently. With AI Copilot, you have the power to craft any kind of flow, ensuring unparalleled convenience and efficiency.
 
 ## How to use AI copilot?
 

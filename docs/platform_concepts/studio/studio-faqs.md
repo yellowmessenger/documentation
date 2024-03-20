@@ -494,7 +494,20 @@ To extract specific date values, you can use the following syntax:
 
 -------
 
+
+
 ### Journey(flow)
+
+<details>
+ <summary>How to open a website in a bot conversation?
+</summary>
+ <div>
+  <div>Add a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text">text node</a> to the flow and paste your website URL in it.
+​
+</div>
+  <br/>
+   </div>
+</details>
 
 <details>
  <summary>How do I link one flow to another flow for a bot?
