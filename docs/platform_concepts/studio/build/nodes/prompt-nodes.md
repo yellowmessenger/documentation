@@ -520,12 +520,34 @@ Syntax to retrieve dates from date range object:
 <TabItem value="MonthPicker" label="MonthPicker" default>
 
 
-Syntax to retrieve dates from date range object:
+Syntax to retrieve date or time from the object: `{{{variables.variable_name.objectname.field}}}` 
+
+Ex:
+To capture month: `{{{variables.variable_name.value.value.month}}}`
 
 
 
 ```json
-
+{
+	"value": {
+		"value": {
+			"timestamp": "Tue, 19 Mar 2024 00:00:00 GMT",
+			"year": 2024,
+			"month": 3,
+			"date": 19,
+			"day": "Tuesday",
+			"hour": 0,
+			"minute": 0,
+			"selected": {
+				"hour": 18,
+				"minute": 30
+			}
+		},
+		"range": {
+			"exists": false
+		}
+	}
+}
 ```
 
 </TabItem>
@@ -611,7 +633,7 @@ Example:  `{{{variables.variable_name.value.value.hour}}}`, `{{{variables.variab
 
 
 #### Restrict date picker to display past or future dates
-
+ 
 You can restrict date selection to past or future dates. This restriction applies only to the Single date picker and Single date and time picker.
 
 

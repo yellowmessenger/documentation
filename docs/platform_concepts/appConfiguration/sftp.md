@@ -4,46 +4,46 @@ sidebar_label : SFTP
 ---
 
 
-Yellow.ai's integration with SFTP enables effortless connection between your remote server and the Yellow.ai platform. You can connect multiple SFTP servers to manage data from different sources seamlessly. With this integration, you can perform various actions such as fetching remote files, creating directories, deleting directories, uploading files to the remote server, and checking the existence of files.
+Yellow.ai's integration with SFTP enables managing data from different sources seamlessly such as fetching remote files, creating directories, deleting directories, uploading files to the remote server, and checking the existence of files. You can connect multiple SFTP servers.
 
 You can also [schedule regular synchronization of user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/sync_users) directly from connected SFTP servers to User 360. This enhances data management capabilities, improves data accuracy, and enables more informed decision-making based on real-time user insights. s or not.
 
-# Configuration
+## SFTP integration
 
 Configuring the integration with SFTP is straightforward. Follow the steps defined below to start integrating:
 
 **To integrate SFTP with your bot on the platform:**
 
 1. Go to Integration section
-2. In Integration click on the connect for the SFTP.
+2. Seach and select **SFTP**.
 3. Enter **Give account name**, **Host**, **Port**, **username**, **Password**.
 4. Click **Connect**
 
-![](https://i.imgur.com/vl7ZP9q.png)
+   ![](https://i.imgur.com/vl7ZP9q.png)
 
 5. If you do not want to upload your SFTP account password, enable **Private key based authentication**. Reach out to our team at support@yellow.ai for the private key. Once you recieve it,  whitelist the key at the SFTP's end to set up a connection between Yellow.ai and SFTP without the password.
 
-To whitelist our private key in your remote SFTP server, follow the below mentioned commands:
+   To whitelist our private key in your remote SFTP server, follow the below mentioned commands:
 
-```
-— on remote system ——
+  ```
+  — on remote system ——
 
-mkdir -p .ssh
-nano .ssh/authorized_keys
-—- add the public key generated on your Mac —
+  mkdir -p .ssh
+  nano .ssh/authorized_keys
+  —- add the public key generated on your Mac —
 
-chmod 600 .ssh/authorized_keys
-chmod 700 .ssh
+  chmod 600 .ssh/authorized_keys
+  chmod 700 .ssh
 
-```
+  ```
 
 6. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
 
 7. Store SFTP response in Object type variable in action-node.
 
-![](https://i.imgur.com/KCWAcMf.png)
+   ![](https://i.imgur.com/KCWAcMf.png)
 
-If you have multiple accounts, follow the above mentioned steps to add each of them.
+8. If you have multiple accounts, follow the above mentioned steps to add each of them.
 
 :::note
 1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
@@ -53,9 +53,9 @@ If you have multiple accounts, follow the above mentioned steps to add each of t
 :::
 
 
-# Use-cases 
+## Features enabled on SFTP integration 
 
-Following are the use-cases which are currently accommodated in the Integration:
+Once the SFTP connection is established, you can execute the following operations related to managing data between the bot and SFTP seamlessly:
 
 :::note
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
@@ -63,7 +63,8 @@ When multiple accounts are added, select the appropriate account for each node, 
 
 
 ### 1. SFTP File Transfer
-  From this method you can easily upload files to a remote server.
+
+From this method you can easily upload files to a remote server.
 
 _ Node Input Params:-_                        
 
@@ -146,7 +147,8 @@ _ Node Input Params:-_
 
 
 ### 7. SFTP List
- Retrieves a directory listing
+ 
+Retrieves a directory listing
 
 _Node Input Params:-_                        
 
@@ -168,13 +170,3 @@ Change the mode (read, write or execute permissions) of a remote file or directo
 * newmode: octal. New mode to set for the remote file or directory
 
 
-# **References:**
-
-
-1. [https://www.npmjs.com/package/ssh2-sftp-client](https://www.npmjs.com/package/ssh2-sftp-client)
-2. [https://www.filestash.app/sftp-browser.html](https://www.filestash.app/sftp-browser.html)
-
-
-## Sample Experience
-
-Below is a video that depicts how this integration works.
