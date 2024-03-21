@@ -5,6 +5,10 @@ sidebar_label: Slack
 
 Slack is a collaboration platform that is used by organizations to facilitate communication among team members. The team members can have conversations, share files, images, video, audio, and schedule meetings. It also provides a secure, collaborative environment for teams to work together by using chat, video meetings, file storage, and application integration.
 
+**Watch the video on how to setup Slack channel:**
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GAWy6lBBAZE" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
+
 ### Slack Context Management
 
 Slack provides threaded messaging. It is important to understand how Yellow.ai platform handles context in channel, threads, and DM.
