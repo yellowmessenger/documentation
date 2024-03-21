@@ -7,7 +7,7 @@ This guide will walk you through the process of setting up SMS services for US n
 
 ## Prerequisites to setup SMS channel
 
-1. Contact [Integrations](mailto:support@yellow.ai) team and provide neccessary details and requirements for configuring the SMS channel.
+1. To configure the SMS channel, fill all the details in this [sheet](/files/InfoBip-SMS-requirements.xlsx) and reach out to the [Integrations](mailto:support@yellow.ai) team for assistance.
 2. The team will review your information and enable the SMS channel for your bot.
 3. To send SMS using local, mobile, or toll-free numbers, it is necessary to [register](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types) these numbers. Note that, local and mobile number fall under the category of [long codes numbers](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-phone-number-types#long-codes-a2p-10dlc).
 
