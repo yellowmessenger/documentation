@@ -481,18 +481,11 @@ module.exports = {
         {
           type: "category",
           label: "Analytics and reports",
+          link: {type: 'doc', id: 'platform_concepts/inbox/analytics-reports/overview'},
           collapsed: true,
           items: [
-            {
-              type: "category",
-             label: "Analytics",
-              collapsed: true,
-             items: [
-            
-
-              "platform_concepts/inbox/analytics-reports/analytics",
-                    ],
-            },
+           
+            "platform_concepts/inbox/analytics-reports/analytics",
 
             {
               type: "category",
