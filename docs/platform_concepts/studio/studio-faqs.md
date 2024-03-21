@@ -498,6 +498,24 @@ To extract specific date values, you can use the following syntax:
 
 ### Journey(flow)
 
+Q: 
+A: 
+
+<details>
+ <summary>Can I retrieve journey data outside the bot?
+</summary>
+ <div>
+  <div>The accessibility of journey data depends on the type of variable:<br/>
+ <br/> <b>Journey Variables:</b> These variables are limited to the flow in which they are created and can only be accessed within that specific flow.<br/>
+ <br/> <b>Global Variables:</b> Unlike journey variables, global variables are accessible across all flows within your bot, allowing for broader usage and integration of journey data.<br/>
+<br/><b>User Properties:</b> User properties are user variables that can be accessed in Studio, Engage, and User 360.<br/>
+<br/>You can use the appropriate variable type based on your specific use case.<br/>
+​
+</div>
+  <br/>
+   </div>
+</details>
+
 <details>
  <summary>How to open a website in a bot conversation?
 </summary>
