@@ -227,7 +227,7 @@ module.exports = {
 
 {
   type: "category",
-  label: "Generative AI-powered bot",
+  label: "Gen AI-powered features",
   collapsed: true,
   items: [
    

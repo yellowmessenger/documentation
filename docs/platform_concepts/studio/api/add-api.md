@@ -88,7 +88,9 @@ To add a body:
    <img src="https://i.imgur.com/WE3eVOS.png" alt="drawing" width="70%"/>
      
    <img src="https://i.imgur.com/hP7ay5l.png" alt="drawing" width="70%"/>
-   
+
+To send dynamic data over body use "{{{value}}}".
+
 :::note
 * You can pass the access key or auth token in the way that the API is designed. You could pass it in the request URL, body, or headers. You can ignore this for APIs where no authentication is required.
 :::
