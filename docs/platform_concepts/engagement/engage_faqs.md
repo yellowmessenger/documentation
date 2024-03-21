@@ -23,6 +23,18 @@ For a detailed help guide, refer to [Engage user guide](https://docs.yellow.ai/d
 
 
 <details>
+<summary> How can I trigger outbound campaigns through API?</summary> 
+
+You can initiate outbound campaigns using notification APIs. These APIs provide the necessary functionality to trigger campaigns programmatically, allowing for seamless integration with your existing systems or applications.
+
+For more details, see[Notification APIs](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#23-postman-collections).
+
+</details>
+
+
+
+
+<details>
 <summary> Do we receive any event on the bot if users click on the CTA used in Outbound campaigns? </summary>
 
 No, for CTA button clicks, you will not receive any events on the bot.

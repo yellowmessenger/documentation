@@ -53,6 +53,16 @@ User 360 verifies uniqueness solely based on the userId. Therefore, to avoid dup
 
 
 <details>
+
+<summary>
+Can I change the data type in user properties?</summary>
+
+Once a property is created in User360, you cannot directly alter its data type or delete it.
+
+
+</details>
+
+<details>
 <summary>Why was a user created twice, with the second entry having 'null' as the userId?</summary>
 The second user account, which lacks a valid userId and contains incorrect properties, is often auto-created when a user interacts with your bot for the first time. ensure that you have set up the 'userId' and stored in the User ID property in your studio flows before starting conversation. 
 
