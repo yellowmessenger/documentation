@@ -52,9 +52,15 @@ Resolving a query on video call does not mean that the live chat is resolved. Af
 
 - Agent will have all the video calling facilities (view in full screen, share screen, mute audio, mute video, disconnect, etc.). They can disconnect/leave the call after providing the resolution. 
 
-#### Share screen during the video call
 
-<img src="https://i.imgur.com/bsf42Ib.png" alt="drawing" width="40%"/>   
+#### Maximize screen or Share screen during the video call
+
+- When you are on a call, you can see the customer's name/video and the option to maximize (full screen) or share screen.
+- You can select the share screen option to show your screen to the customer.
+- You can select full screen to view in maximized mode.
+ 
+<img src="https://imgur.com/7skuBzi.png" alt="drawing" width="40%"/><img src="https://imgur.com/Yng0Xqn.png" alt="drawing" width="40%"/>
+
 
 
 --------

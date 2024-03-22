@@ -473,6 +473,49 @@ return new Promise(async (resolve, reject) => {
   </div>
 </details>
 
+<details>
+<summary>Is it possible to prevent the bot icon from overlapping with CTAs on mobile screens?</summary>
+<div>
+ <br/>
+ <div>The following are the two options to prevent the bot icon from overlapping:<br/> 1.Write a custom script to override the position.<br/>
+2. Hide the default icon and create a custom entry point or button on the site. Use the <b>window.YellowMessengerPlugin.openBot()</b> function to open the bot when a user clicks on the custom button. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/function-widgets#11-hide-the-bot-by-default">here</a>.<br/> Note that the chat bubble and notification icon will not be displayed if a custom icon is deployed.
+ </div>
+  </div>
+</details>
+
+<details>
+<summary>Can the Bot title, description and logo can be changed dynamically based on website?</summary>
+<div>
+ <br/>
+ <div>Yes, you can configure different themes for different websites. Set a default theme in Channels > Chat Widget > Widget Panel/Bot icon. Then, based on the user, you can override it on the web and mobile SDK. For the web, you need to pass the following values inside window.ymConfig in the bot script:</div>
+
+```javascript
+`theme: {
+  botName: "", // Text up to 50 characters
+  botDesc: "", // Text up to 50 characters
+  primaryColor: "", // RGB or HEX value
+  secondaryColor: "", // RGB or HEX value
+  botIcon: "", // CDN link
+  botClickIcon: "" // CDN link
+}
+```
+
+For the mobile SDK, you need to send the values as mentioned below:
+```c
+let theme = YMTheme()
+theme.botName = ""
+theme.botDesc = ""
+theme.primaryColor = ""
+theme.secondaryColor = ""
+theme.botIcon = ""
+config.theme = theme
+```
+<br/>
+<b>Note</b>: botClickIcon is not applicable for Mobile SDKs since the entry point will be set within the app. On the website, botClickIcon refers to the floating icon displayed when the bot is minimized.
+ <br/>
+  </div>
+</details>
+
 -----------
 
 ## PWA related FAQs
