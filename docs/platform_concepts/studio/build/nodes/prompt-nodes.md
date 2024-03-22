@@ -257,25 +257,48 @@ Yellow.ai automatically validates the **Email** node and no additional validatio
 
 ### 2.6 Carousel 
 
-Display interactive carousel cards with buttons with this node. Carousel can be used in places like displaying a list of products.
-
+Use **Carousel node** to display interactive carousel cards with buttons. For instance, a website can showcase products with carousel cards containing buttons for navigation and actions like purchasing. Each carousel contains an option to add an image (less than 10MB), title,description and buttons to perform a certain action
 
 ![](https://i.imgur.com/DJkmnpT.png)
 
+#### To add a button
 
-Carousel response contains an option to add an image (less than 10MB), title, and description.
-You can also add multiple buttons to a carousel. Clicking on the button can display a text, another flow, a URL entered, or will be sent to the phone number. Configure this in the Carousel settings.
+1. Click the default **Button #1** option.
+
+ <img src="https://i.postimg.cc/W472nrRC/Button-1.png" alt="drawing" width="80%"/>
+
+2. In **Button name**, enter a name for your button and in **Select button type**, select the button type from the available options: **Text Message**, **Go to Flow**, **Open URL**, or **Send Phone Number**. Depending on the selected type, the button can display text, trigger another flow, open a specified URL, or call a specific number.
+
+ <img src="https://i.postimg.cc/GhWQdTB4/Screenshot-2024-03-21-at-7-31-33-PM.png" alt="drawing" width="80%"/>
+
+3. In **Analytics**, type the keyword for that caraousel option. This will help you track how many users have clicked this option.
+4. Click **Save**.
 
 :::info
- On WhatsApp, carousel cards do not support hyperlinking and allow for up to 3 clickable buttons.
+ * On WhatsApp, carousel cards do not support hyperlinking and allow for up to 3 clickable buttons.
+ * Carousels without buttons will act as Messages instead of Prompts.
 :::
 
-![](https://i.imgur.com/seysnzN.png)
+#### Carousel settings
+
+Use carousel settings to customize the carousel cards as per your use case.
+
+1. Click the **settings** icon.
+
+   <img src="https://i.postimg.cc/nVjQKvGM/car.png" alt="drawing" width="60%"/>
 
 
-:::note
-Carousels without buttons will act as Messages instead of Prompts.
-:::
+2. Enable/ disable the following toggles and click **Save**.
+
+ <img src="https://postimg.cc/vcJ2NnXp" alt="drawing" width="60%"/>
+
+| Feature                   | Description                                                                                                        |
+|---------------------------|--------------------------------------------------------------------------------------------------------------------|
+| Hide Input                | Hides the input area for the user in the chatbot, preventing user input.                                          |
+| Hide Home Button          | Hides the home button from the user interface.                                                                     |
+| Enable Default Feedback  | Displays like and dislike emojis next to each card for user feedback.                                               |
+| Disable Action after Click| Disables the carousel list after a button has been clicked.                                                        |
+| Card Type                 | Select how carousel options should be displayed based on the intended use case. For exmple, selecting **Transaction Status** displays the carousel as a transaction status to the user. |
 
 **Success** and **Fallback** cases must be handled by connecting them to other nodes to continue the flow.
 
