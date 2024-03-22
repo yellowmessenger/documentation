@@ -99,6 +99,11 @@ With the powerful [orchestrator](https://docs.yellow.ai/docs/platform_concepts/s
 ![](https://i.imgur.com/WsKX6Ph.png)
 
 
+:::note
+Unified inbox will only work for bots built on the cloud platform (i.e., cloud.yellow.ai). 
+You cannot unify bots built on app with cloud(or vice versa).
+:::
+
 
 ----
 

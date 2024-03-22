@@ -66,6 +66,15 @@ An inbox admin can configure what happens to the live chats when all the agents 
 </details>
 
 
+
+<details>
+<summary> What is the chat history retention policy? </summary>
+  <div>
+    Live chats and email tickets in the Inbox are retained for a maximum of 6 months. After this period, they will be archived. While the data will no longer be accessible on the platform (active store), it will still be available on the servers (cold store) until the contract's validity expires.
+  </div>
+</details>
+
+
 #### **Sticky agents** 
 
 <details>
