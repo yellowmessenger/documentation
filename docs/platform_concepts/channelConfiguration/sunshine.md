@@ -7,6 +7,13 @@ Sunshine Conversations is a messaging platform that allows businesses to interac
 
 For instance, if a business has integrated Sunshine conversations with Facebook, it creates a Sunshine conversations channel for Facebook. Businesses can use this channel to communicate with their customers via WhatsApp to send and receive messages. Similarly, you can integrate with other messaging apps based on your business requirements.
 
+:::info
+For Yellow.ai to receive events on ending a conversation, follow one of these:
+
+1. The chat agent can send this ```%((switchboard:passControl))%``` in the conversation.
+2. Contact Zendesk Admin and ask them to configure ```%((switchboard:passControl))%``` in the workflow.
+:::
+
 ##### Limitations
 
 * **Supported message types**: Only text messages and specific rich cards are supported within the Zendesk integration.

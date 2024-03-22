@@ -290,7 +290,7 @@ Use carousel settings to customize the carousel cards as per your use case.
 
 2. Enable/ disable the following toggles and click **Save**.
 
- <img src="https://postimg.cc/vcJ2NnXp" alt="drawing" width="60%"/>
+ <img src="https://i.postimg.cc/BnbWtcFQ/Screenshot-2024-03-21-at-8-10-58-PM.png" alt="drawing" width="60%"/>
 
 | Feature                   | Description                                                                                                        |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------|
