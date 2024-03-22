@@ -3,6 +3,9 @@ title: Twilio SMS
 sidebar_label: Twilio SMS
 ---
 
+:::note
+If businesses wish to set up the [SMS channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/SMS-channel), they are required to contact the Yellow [support](mailto:support@yellow.ai) team for assistance and guidance. However, if they prefer to set up their own SMS channel independently, they can utilize the Twilio SMS channel for seamless integration and management. 
+
 Twilio SMS enables you to send and receive SMS through APIs. This cloud communication platform enables businesses to integrate SMS and other communication channels into their applications. Additionally, it supports two-way communication and push notifications to actively engage users.
 
 **Watch the video on how to setup Twilio SMS:**
