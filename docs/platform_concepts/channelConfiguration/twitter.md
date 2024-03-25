@@ -5,15 +5,24 @@ sidebar_label : Twitter
 
 Twitter is a social media platform that allows you to post tweets in the form of text messages, images, videos, and links.
 
-Twitter integration helps to create mentions and direct messages related to customer queries and to promote your brand.
+Twitter enables businesses to engage with customers through mentions and direct messages, promoting their brand effectively.
+
+The following are key features of this channel:
+
+* **Automated replies**: Provides the ability to automatically respond to user messages.
+* **Supported message types**: You can use various message types that can be sent by the users to the bot and live agent:
+
+User | Bot and live agent
+-----|---------------
+Text<br/> Image <br/> GIF |Text<br/> Image 
 
 In this article, you will learn:
 
 * [Twitter pricing plans](#twitter-pricing-plans)
-* [How to create a Twitter account](#1-create-a-twitter-account)
-* [How to setup a Twitter channel using the Developer portal](#2-setup-twitter-channel-using-developer-portal)
-* [How to connect a Twitter channel to your bot](#3-connect-twitter-channel-to-your-bot)
-* [How to test your bot on Twitter channel](#4-test-your-bot-on-twitter)
+* [How to create a Twitter account](create-a-twitter-account)
+* [How to setup a Twitter channel using the Developer portal](setup-twitter-channel-using-developer-portal)
+* [How to connect a Twitter channel to your bot](connect-twitter-channel-to-your-bot)
+* [How to test your bot on Twitter channel](#test-your-bot-on-twitter)
 
 ## Twitter pricing plans
 
