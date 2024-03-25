@@ -88,6 +88,15 @@ Document Search action node is used to answer user query at any point in the flo
 
 - You can select a variable containing a search query
 - You can also choose to add metadata filters (optional) to your query (the filters you tagged your documents with will show in dropdown). 
+
+To add a meta data filter:
+
+1. Upload the [searchable documents](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#upload-documents-from-local-system) to KB along with [tags](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#additional-options-for-uploaded-documents).
+2. Under **Tag**, choose the tag you added in the previous step, in **Value** enter the value which should return the doc associated to the specific tag. Values can be added as text, steps or fetched from a bot variable or business profile.
+
+After adding the meta data filter, when a user types a query and it matches with the tags and values added in the previous steps, it will return the exact document to the user. 
+
+
 - You can branch flow from here based on whether any results were found in the documents (success) or not (failure).
 - There is no store output here, as the results are directly shown in carousels. 
 - In node settings, you can configure the total no. of results shown, the total number of results per document and messages shown while showing results/reporting failure. 

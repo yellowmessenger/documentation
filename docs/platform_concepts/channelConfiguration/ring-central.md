@@ -3,8 +3,6 @@ title : Ring Central
 sidebar_label : Ring Central
 ---
 
-# Ring Central
-
 Integrate your RingCX Account with IVA Professional to allow agents on RingCentral to leverage IVA Professional's AI capabilities and effortlessly answer live chat queries from users.
 
 This article will help you with the following:
@@ -128,6 +126,10 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 7. Scroll down to **Configuration** and copy the **API access token**.
 
    ![](https://i.imgur.com/PnPC8gX.png)
+
+Activate identities after creating a virtual agent. Only then user information can be passed.
+
+  ![](https://i.imgur.com/AWtTFTR.png)
    
 ### Authorize IVA Professional to access RingCX account
 
@@ -218,16 +220,20 @@ To add custom fields to agent profiles in RingCX:
 
 ## IVA Professional nodes and their supported formats
 
-| Nodes | Supported Formats                       |
-|-------|-----------------------------------------|
-| Image | jpeg, jpg, png, gif                     |
-| Audio | MP3, AMR                                |
-| Video | Mp4, MP4, MOV                           |
-| File  | PDF, DOCX, PPTX, XLSX                  |
+| Nodes | Supported Formats                       | Sample screenshots|
+|-------|-----------------------------------------|-------|
+| Image | jpeg, jpg, png, gif                     |   <img src="https://i.imgur.com/SIbhela.png" alt="drawing" width="50%"/>    |
+| Audio | MP3, AMR                                |  <img src="https://i.imgur.com/LwNloOn.png" alt="drawing" width="50%"/>      |
+| Video | Mp4, MP4, MOV                           |  <img src="https://i.imgur.com/1UwgJd6.png" alt="drawing" width="50%"/>      |
+| File  | PDF, DOCX, PPTX, XLSX                  |   <img src="https://i.imgur.com/61AeXRJ.png" width="50%"/>       |
 
 **Structured message:**
 
-* Select
-* Template
-* Carousel:  GIF, jPg jpeg, png
+|Type| Sample screenshots| Supported formats|
+|-----|----------------|----------------|
+| Select| <img src="https://i.imgur.com/QIoENt2.png" alt="drawing" width="50%"/> | NA |
+| Template| <img src="https://i.imgur.com/HCI0brt.png" alt="drawing" width="50%"/> | NA |
+| Carousel | <img src="https://i.imgur.com/HbuyMGF.png" alt="drawing" width="50%"/> | GIF, jPg jpeg, png |
+ 
+
 
