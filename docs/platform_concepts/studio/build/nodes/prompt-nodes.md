@@ -271,7 +271,7 @@ Use **Carousel node** to display interactive carousel cards with buttons. For in
 
  <img src="https://i.postimg.cc/GhWQdTB4/Screenshot-2024-03-21-at-7-31-33-PM.png" alt="drawing" width="80%"/>
 
-3. In **Analytics**, type the keyword for that caraousel option. This will help you track how many users have clicked this option.
+3. In **Analytics**, type the keyword for that caraousel option. This will help you track how many users have clicked this option. You can check this stats in **Insights** > **Data Explorer** > **Custom Tables** > **Analytics**.
 4. Click **Save**.
 
 :::info
