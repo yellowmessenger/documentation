@@ -389,4 +389,12 @@ To get the WhatsApp redirection link, contact <a href="mailto:support@yellow.ai"
 </p>
 </details>
 
+<details><summary><b>It is possible to end a session in WhatsApp?</b></summary>
+<p>
+
+No, it is not possible to end the session in WhatsApp.
+
+</p>
+</details>
+
 
