@@ -60,7 +60,7 @@ To set up MS teams using Developer portal, follow these steps:
 8. Enter the URL as per your region (to deploy the bot) and click **Save** to save your settings.
 
 :::note
-* You need to copy the profile ID from the provided URL, specific to your region. This is required when connecting the MS Teams bot to the Yellow.ai platform.
+* You can input your preferred profile ID name in the URL provided below,  specific to your region. Ensure that you specify the same profile ID when connecting the MS Teams bot to the Yellow.ai platform.
 * To establish a secure connection with the bot and enable interaction, it is essential to enter a valid endpoint URL.
 :::
             
@@ -175,6 +175,10 @@ Option | Description
    ![](https://i.imgur.com/1FdGpEN.png)
      
 ## Set permission on Azure portal
+
+:::note
+To set permission on Azure portal, yu need to switch the azure app tenant from single to mltitenant.
+:::
 	
 After adding app to MS Teams workspace, you need to set permissions on the Azure portal to execute certain use cases based on the business requirements. Follow these steps:	
 
@@ -185,16 +189,20 @@ After adding app to MS Teams workspace, you need to set permissions on the Azure
 3. Click on the app created with the same name as your MS Teams bot.
 
    ![](https://i.imgur.com/2QrZRi4.png)
+
+4. Click **Authentication** > select **Multitenant** > Click **Save**.
+
+   ![](https://imgur.com/hnrArFR.png)
 	
-4. Click **Add a Platform > Web**.
+5. Click **Add a Platform > Web**.
 
     ![](https://i.imgur.com/2SWdXqw.png)
 
-5. Navigate to **API Permissions > Add Permission > Microsoft Graph**.
+6. Navigate to **API Permissions > Add Permission > Microsoft Graph**.
 
    ![](https://i.imgur.com/y1vpad4.png)
    
-6. To enable app permissions, select the desired permission type and click **Add permissions**.
+7. To enable app permissions, select the desired permission type and click **Add permissions**.
    * **Application Permissions:** This enables the app to use the services without any user’s authorization. The app work with its credentials.
    * **Delegated Permissions:** This requires users to authorize the app to work on their behalf. Once approved, the app contains the privileges of authorising users for the defined scope. For more detailed information regarding permissions, click [here](https://learn.microsoft.com/en-us/entra/identity-platform/permissions-consent-overview).
 	
