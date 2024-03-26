@@ -175,10 +175,6 @@ Option | Description
    ![](https://i.imgur.com/1FdGpEN.png)
      
 ## Set permission on Azure portal
-
-:::note
-To set permission on Azure portal, yu need to switch the azure app tenant from single to mltitenant.
-:::
 	
 After adding app to MS Teams workspace, you need to set permissions on the Azure portal to execute certain use cases based on the business requirements. Follow these steps:	
 
