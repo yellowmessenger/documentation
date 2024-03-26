@@ -178,6 +178,7 @@ module.exports = {
       collapsed: true,
       items: [
       "platform_concepts/Getting Started/account-setup",
+      "platform_concepts/Getting Started/yellowg",
       "platform_concepts/Getting Started/user-account-settings", 
       "platform_concepts/Getting Started/createfirstbot",
       "platform_concepts/Getting Started/publish-env",
@@ -225,17 +226,7 @@ module.exports = {
 //       "platform_concepts/design/convdesignvoice",   
 //         ],
 // },
-
-{
-  type: "category",
-  label: "Gen AI-powered features",
-  collapsed: true,
-  items: [
-   
-    "platform_concepts/Getting Started/yellowg",
-    
-  ],
-},      
+     
 
 
     // Studio starts here  
