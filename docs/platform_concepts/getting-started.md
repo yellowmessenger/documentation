@@ -27,6 +27,12 @@ We also have an App platform (app.yellow.ai), a code-based solution with limited
 
 ## Features of cloud platform
 
+
+:::info 
+Yellow.ai supports **Cloud** and **On-premise** deployment. Contact [the support team](mailto:support@yellow.ai) for details. 
+:::
+
+
 ### Build powerful AI bots with ease
 
 At Yellow.ai, we understand the importance of seamless and effective communication with your customers. Our cloud software enables you to build AI bots effortlessly, regardless of your technical expertise. You don't need to be a coding expert to create powerful bots. Our intuitive interface and **no-code approach** make bot building accessible to everyone.
