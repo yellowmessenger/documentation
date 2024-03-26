@@ -160,4 +160,11 @@ To edit a flow, follow these steps
 
 To connect two flows, you can use a [switch flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#112-switch-flow) node or [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. In the case of a switch flow, the bot does not return to the original flow from which the node was triggered. Howevers, with an execute flow node, the bot returns to the original flow after executing the designated new flow.
 
+### Enhance flow clarity with Auto layout
+
+When constructing a flow, nodes often cluster together, resulting in a cluttered and confusing layout. To enhance clarity and readability, consider use the **Auto layout** feature. This tool automatically aligns nodes, creating a more organized and comprehensible flow for end users.
+
+To use this, click the **Auto layout** feature available at the bottom right corner of the page. You can also undo the alignment by clicking the undo option.
+
+![](https://i.imgur.com/hzrLpXk.gif)
 --- 
