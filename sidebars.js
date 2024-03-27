@@ -928,14 +928,32 @@ module.exports = {
         link: {type: 'doc', id: 'platform_concepts/growth/dataexplorer/intro'},
         collapsed: true,
         items: [
-            "platform_concepts/growth/dataexplorer/defaulttables",
-            "cookbooks/insights/eventdescriptions",
 
-            "platform_concepts/growth/dataexplorer/customtables",
-            "platform_concepts/growth/dataexplorer/sumarize",
-            "platform_concepts/growth/dataexplorer/visualization",
+          {
+            type: "category",
+            label: "Analyse default table",
+            link: {type: 'doc', id: 'platform_concepts/growth/dataexplorer/defaulttables'},
+            collapsed: true,
+            items: [
+              "platform_concepts/growth/dataexplorer/configure-data",
+              "cookbooks/insights/eventdescriptions",
+            ]
+          },
+          "platform_concepts/growth/dataexplorer/customtables",
+
+          {
+            type: "category",
+            label: "Actions on all tables",
+            collapsed: true,
+            items: [
+              "platform_concepts/growth/dataexplorer/sumarize",
+              "platform_concepts/growth/dataexplorer/visualization",
+              "platform_concepts/growth/dataexplorer/pivottable",
+              "platform_concepts/growth/dataexplorer/formulacolumn",
+                        ]
+          },
+
             "platform_concepts/growth/dataexplorer/savedreportsactions",
-            "platform_concepts/growth/dataexplorer/configure-data",
           ],
       },
 
