@@ -387,44 +387,46 @@ Following are the fields tracked on the user engagement events table:
 
 Following are the events tracked on the user engagement events table: 
 
-| Event                   | Description                                                                                                         | Produced by                    | Queue (Kafka)                   | Destination (Druid) - userEvents |
-|-------------------------|---------------------------------------------------------------------------------------------------------------------|--------------------------------|----------------------------------|-----------------------------------|
-| unidentified-utterance  | Fired when a user message is not understood by the Bot                                                            | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| agent-transfer          | Fired when a chat conversation is transferred to a live agent                                                       | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| feedback                | Fired when a user gives feedback after completing the chat                                                         | Data Service                   | druid-bot-user-queue             | Druid - userEvents, ES - feedbacks|
-| first-message           | Fired when a new profile of a user is created                                                                     | Data Service                   | druid-bot-user-queue             | userEvents                         |
-| first-message-bid       | Fired when a user profile is updated with the bid for the first time                                                | Data Service                   | druid-bot-user-queue             | userEvents                         |
-| home-button-click       | Fired when a user clicks on the home button in the chat widget                                                       | Controller                     | druid-bot-user-queue             | userEvents                         |
-| journey-started         | Fired when a journey starts for the user                                                                            | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| journey-completed       | Fired when a journey gets completed for the user                                                                   | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| journey-switched        | Fired when a journey is switched by NLP System for the user due to utterance matching another journey              | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| step-expected           | Fired when a step of the journey is expected / prompt is shown to the user                                          | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| step-recorded           | Fired when input is given by the user for a step (step value is recorded) of a journey                               | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| user-visited            | Fired when a user is visiting the chat widget for the first time (chatting for the first time)                      | Plugin Service                 | druid-bot-user-queue             | userEvents                         |
-| user-revisited          | Fired when a user is revisiting the chat widget (chatting again)                                                    | Plugin Service                 | druid-bot-user-queue             | userEvents                         |
-| optin                   | Fired when a WhatsApp opt-in is added                                                                             | Data Service                   | druid-bot-user-queue             | userEvents                         |
-| optout                  | Fired when a WhatsApp opt-out is added                                                                            | Data Service                   | druid-bot-user-queue             | userEvents                         |
-| otp-sent                | Fired when an OTP sent from the bot using the platform function                                                    | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| otp-verified            | Fired when an OTP is verified from the bot using the platform function                                              | Executer, Executer V2          | druid-bot-user-queue             | userEvents                         |
-| notification-received   | Fired when a notification is received on the mobile widget                                                          | Controller                     | druid-bot-user-queue             | userEvents                         |
-| new-session             | Fired when a new session is created                                                                               | Controller, whatsapp-service, executor v1 (zendesk), executor v2(zendesk) | druid-bot-user-queue | userEvents                         |
-| user-session            | Fired when a session is created based on a USER message                                                            | Controller, whatsapp-service, executor v1 (zendesk), executor v2(zendesk) | druid-bot-user-queue | userEvents                         |
-| user-initiated          | Fired when a new session is created from a user message for the WhatsApp channel                                    | whatsapp-service               | druid-bot-user-queue             | userEvents                         |
-| business-initiated      | Fired when a new session is created by notification from the business side for the WhatsApp channel               | whatsapp-service               | druid-bot-user-queue             | userEvents                         |
-| bot-closed              | Fired when the Bot is closed by the user (close button)                                                            |                                 |                                  |                                   |
-| bot-icon-clicked        | Fired when the Bot avatar (in title bar) is clicked by the user                                                     |                                 |                                  |                                   |
-| bot-icon-loaded         | Fired when the Bot avatar is displayed to the user (on load)                                                        |                                 |                                  |                                   |
-| bot-opened              | This occurs when a user clicks on the chat bubble to open the bot.                                                   |                                 |                                  |                                   |
-| card-cta-clicked        | Fired when the User clicks on the link configured in the card buttons                                                |                                 |                                  |                                   |
-| message-hyperlink-clicked| Fired when the User clicks on the link configured in the text message                                                |                                 |                                  |                                   |
-| banner-cta-clicked      | Fired when the User clicks on the link configured in the callout banner                                               |                                 |                                  |                                   |
-| page-loaded             | Fired every time the client website page is loaded/reloaded where our script is running                              |                                 |                                  |                                   |
-| pwa-loaded              | Fired when the PWA version of the bot script is loaded                                                             |                                 |                                  |                                   |
-| pwa-opened              | Fired when the PWA bot is opened by the user                                                                       |                                 |                                  |                                   |
-| bot-loaded              | Fired when the Bot script is loaded on the website                                                                 |                                 |                                  |                                   |
-| bot-session             | Fired when a session is created based on a bot message (first message sent by the bot). It has a session time window of 24hrs for a given UID and source |                                 |                                  |                                   |
-| condition-recorded      | Fired when a condition node is executed in a flow                                                                 |                                 |                                  |                                   |
-| invalid-response        | Fired when an invalid response other than the provided option is selected/entered by the user                      |                                 |                                  |                                   |
+
+| Event                   | Description                                                                                                         |
+|-------------------------|---------------------------------------------------------------------------------------------------------------------|
+| unidentified-utterance  | Fired when a user message is not understood by the Bot                                                            |
+| agent-transfer          | Fired when a chat conversation is transferred to a live agent                                                       |
+| feedback                | Fired when a user gives feedback after completing the chat                                                         |
+| first-message           | Fired when a new profile of a user is created                                                                     |
+| first-message-bid       | Fired when a user profile is updated with the bid for the first time                                                |
+| home-button-click       | Fired when a user clicks on the home button in the chat widget                                                       |
+| journey-started         | Fired when a journey starts for the user                                                                            |
+| journey-completed       | Fired when a journey gets completed for the user                                                                   |
+| journey-switched        | Fired when a journey is switched by NLP System for the user due to utterance matching another journey              |
+| step-expected           | Fired when a step of the journey is expected / prompt is shown to the user                                          |
+| step-recorded           | Fired when input is given by the user for a step (step value is recorded) of a journey                               |
+| user-visited            | Fired when the chat widget loads for the user's IP address for the first time. This event is triggered once for the lifetime of the user's unique ID. It is specific to bots hosted on websites. |
+| user-revisited          | Fired when the chat widget loads for the user's IP address on subsequent visits. This event is specific to bots hosted on websites. |
+| optin                   | Fired when a WhatsApp opt-in is added                                                                             |
+| optout                  | Fired when a WhatsApp opt-out is added                                                                            |
+| otp-sent                | Fired when an OTP sent from the bot using the platform function                                                    |
+| otp-verified            | Fired when an OTP is verified from the bot using the platform function                                              |
+| notification-received   | Fired when a notification is received on the mobile widget                                                          |
+| new-session             | Fired when a new session is created                                                                               |
+| user-session            | Fired when a session is created based on a USER message                                                            |
+| user-initiated          | Fired when a new session is created from a user message for the WhatsApp channel                                    |
+| business-initiated      | Fired when a new session is created by notification from the business side for the WhatsApp channel               |
+| bot-closed              | Fired when the Bot is closed by the user (close button)                                                            |
+| bot-icon-clicked        | Fired when the Bot avatar (in title bar) is clicked by the user                                                     |
+| bot-icon-loaded         | Fired when the Bot avatar is displayed to the user (on load)                                                        |
+| bot-opened              | This occurs when a user clicks on the chat bubble to open the bot.                                                   |
+| card-cta-clicked        | Fired when the User clicks on the link configured in the card buttons                                                |
+| message-hyperlink-clicked| Fired when the User clicks on the link configured in the text message                                                |
+| banner-cta-clicked      | Fired when the User clicks on the link configured in the callout banner                                               |
+| page-loaded             | Fired every time the client website page is loaded/reloaded where our script is running                              |
+| pwa-loaded              | Fired when the PWA version of the bot script is loaded                                                             |
+| pwa-opened              | Fired when the PWA bot is opened by the user                                                                       |
+| bot-loaded              | Fired when the Bot script is loaded on the website                                                                 |
+| bot-session             | Fired when a session is created based on a bot message (first message sent by the bot). It has a session time window of 24hrs for a given UID and source |
+| condition-recorded      | Fired when a condition node is executed in a flow                                                                 |
+| invalid-response        | Fired when an invalid response other than the provided option is selected/entered by the user                      |
+
 
 **Other events**:
 

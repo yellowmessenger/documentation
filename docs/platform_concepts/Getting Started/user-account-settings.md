@@ -75,7 +75,8 @@ To see account activity:
 ## View your subscription details
 
 :::note
-To add a new subscription, contact the account manager.
+* To add a new subscription or modify an existing subscription, contact the account manager.
+* All the features and limitations available for your subscription will be mentioned in your contract. 
 :::
 
 To view an existing subscription:
