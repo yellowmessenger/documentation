@@ -1200,6 +1200,7 @@ module.exports = {
             "platform_concepts/appConfiguration/genesys-cloud-livechat",
             "platform_concepts/appConfiguration/intercom-livechat",
             "platform_concepts/appConfiguration/kapture-crm",
+            "platform_concepts/appConfiguration/konnect-insights",
             "platform_concepts/appConfiguration/locobuzz-livechat",
             "platform_concepts/appConfiguration/microsoft-live",
             "platform_concepts/appConfiguration/nice-incontact",

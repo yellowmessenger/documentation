@@ -97,7 +97,7 @@ To add each record manually:
 
 ### Import bulk data into a db table
 
-Adding multiple records manually to a table can be tiresome, but you can easily upload multiple entries through a CSV file.
+Adding multiple records manually to a table can be tiresome, but you can easily upload multiple entries through a CSV file. 
 
 To import table data:
 
@@ -120,6 +120,10 @@ To easily create a CSV file, first download the table (**Table actions** > **Dow
 4. Select the file from your local system and upload it.
 
 You will see a new record(s) created in the table post upload.
+
+:::note
+Import comes in handy when you want to a database table from an external source to Yellow.ai
+:::
 
 ***
 

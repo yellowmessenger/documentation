@@ -48,7 +48,7 @@ Following are the different types of message nodes:
 
 
 Display a simple text with this node.  
-> This node can be used to follow up with most of the [prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) nodes. 
+> This node can be used to follow up with most of the [prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) nodes. You can also display links in a text node.
 
 ![](https://i.imgur.com/KwvAAwd.jpg)
 
@@ -93,8 +93,7 @@ const imageVariable = [{
 
 ## 4. Carousel 
 
-Display information using a carousel card with this node.
-> These Carousel buttons do not perform any further action, nor the response can be stored in a variable. 
+Display information using a carousel card with this node. Unlike the carousel in prompt nodes, these carousel buttons do not perform any action, nor the response can be stored in a variable.
 
 ![](https://i.imgur.com/2iS11MA.png)
 
