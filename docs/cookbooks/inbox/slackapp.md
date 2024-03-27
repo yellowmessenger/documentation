@@ -34,7 +34,7 @@ To enable internal ticketing functionality on your agent's live chat screen, fol
     ![image](https://imgur.com/asgpjFA.png)
     * Click **Subscribe to bot events**.
     ![image](https://imgur.com/WZZjb8h.png)
-    * Subscribe to the following events:
+    * Subscribe to the following events:                 
         * Channel Deleted
         * Member Joined Channel
         * Member Left Channel
