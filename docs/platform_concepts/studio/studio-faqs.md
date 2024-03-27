@@ -7,7 +7,19 @@ sidebar_label: Studio FAQs
 Welcome message is supported only for web and app SDK and it is not supported for any of the [Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).
 :::
 
+
 ### Nodes
+
+<details>
+ <summary> Can I display a dynamic carousel without any actions in it?
+</summary>
+ <div>
+  <div> Yes, you can use the <a href = "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#4-carousel"> carousel node from the message nodes </a> section.
+
+</div>
+  <br/>
+   </div>
+</details>
 
 <details>
  <summary> What types of workflows enable you to connect goals that run in the background while maintaining control within the dynamic chat node?
@@ -582,3 +594,16 @@ You can customize KB responses by following the steps mentioned [here](https://d
 </details>
 
 
+<details>
+ <summary>How to use knowledge base for pdf?
+</summary>
+
+To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#upload-documents-from-local-system" >here</a>.
+
+ <div>
+  <div>
+​
+</div>
+  <br/>
+   </div>
+</details>
