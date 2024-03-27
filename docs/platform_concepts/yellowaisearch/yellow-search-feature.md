@@ -5,6 +5,11 @@ sidebar_label: Yellow.ai Search
 
 Empower your website with Yellow.ai's intelligent search engine, driven by **Document Cognition**. Seamlessly deployable on any website, this feature allows users to effortlessly find product information, documentation, and FAQs directly on your site.
 
+
+:::note
+The Smart Search functionality is currently only available for web applications and is not supported for mobile apps.
+:::
+
 **Activation steps**
 
 1. Share the data to be indexed via API.
@@ -16,12 +21,12 @@ These steps guarantee that indexed data is readily accessible and searchable for
 
 Initiate a search query, and the system retrieves data from various categories, presenting relevant results. Customize categories to tailor the search results page to your preferences.
 
-![Yellow.ai Search](https://i.imgur.com/lriNgEj.jpg)
+   ![Yellow.ai Search](https://i.imgur.com/lriNgEj.jpg)
 
 
 In case of no results for a specific keyword, a configured placeholder text is displayed.
 
-![No Results Placeholder](https://i.imgur.com/cnu3Kk6.png)
+   ![No Results Placeholder](https://i.imgur.com/cnu3Kk6.png)
 
 
 ### Key features
@@ -31,4 +36,4 @@ In case of no results for a specific keyword, a configured placeholder text is d
 * **User-Friendly Pagination:** Displaying 10 results at a time, the pagination feature ensures easy navigation for a streamlined search experience.
 * **Direct Result Access:** Each suggestion includes a direct link to its respective results page, providing a shortcut to desired information.
 
-![Yellow.ai Search Features](https://i.imgur.com/u5B5g9X.png)
+   ![Yellow.ai Search Features](https://i.imgur.com/u5B5g9X.png)
