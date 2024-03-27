@@ -140,6 +140,11 @@ If you have not added the `get started` or `Get Started` utterances to your flow
 
 * When the conversation between the agent and user ends, the bot takes the conversation forward with the user.   
 
+:::note
+
+To know about Facebook Messaging Policy, refer to the [Facebook doc](https://developers.facebook.com/docs/messenger-platform/policy/).
+:::
+
 ### Test FBM chatbot with FAQs
 
 You can also add FAQs to the bot to simplify bot responses. For example, for a product-related post, you can add all the details related to the product as questions and answers. The bot can respond to customer questions based on the FAQs that you have added.
