@@ -1242,6 +1242,7 @@ module.exports = {
         },
        
         "platform_concepts/appConfiguration/exposing-integration-to-app",
+        "platform_concepts/appConfiguration/integration-faqs",
       ],
     },
     
