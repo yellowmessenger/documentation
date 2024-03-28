@@ -157,13 +157,18 @@ A Campaign ID is a system-generated unique identifier assigned to a marketing ca
 
 ### Hangup Reason
 
-Hangup Reason refers to the reason why a call or communication session was terminated, ended, or disconnected.
+Hangup Reason refers to the reason why a call or communication session was terminated, ended, or disconnected. The possible values are **TTS failure, STT failure or Network faliure** (you may also find similar values with these descriptions: Normal Hangup, Bot failure, Bot response invalid, Bot response failure, DTMF over parent call, Message loop detected, Missed Consecutive DynamicNode Packets, Media download failure, STT resource not available, TTS resource not available, Network error, Invalid Destination, Phone Unreachable/Switch Off, Ring timeout, User Busy, Inbound Blocked)
 Hangup Reason is a valuable metric for analyzing call center performance and identifying areas for improvement. By tracking and analyzing the reasons for call terminations, call centers can identify common issues, patterns, and trends, and take steps to address them to improve customer satisfaction and retention.
 
 
-### Hangup Source
+### Hangup Source/ Disconnected by 
 
-Hangup source specifies the party that disconnected the calls be it user or the bot.
+Hangup source/Disconnected by specifies the party that disconnected the calls. The possible values for this column are **User/Bot/System/Telco**.
+- USER: When the customer itself disconnects the call.
+- BOT: When the bot disconnects the call after providing the necessary information.
+- SYSTEM: When neither bot nor the user disconnects the call and the call is disconnected due to any of the system issues. 
+- TELCO: When the call is disconnected due to the issues with the telephonic provider. 
+
 Hangup Source can provide useful information for analyzing call quality, identifying problems with the network or equipment, and understanding the reasons for call failures.
 
 ### Source Number
@@ -176,7 +181,7 @@ The destination number refers to the phone number that received the call or mess
 
 ### Call Status
 
-The call status field refers to the final status of a call when it ended or was terminated. This field indicates whether the call was successful or not and can provide more details about the reason for call termination. Some common call status codes are **Answered, Not Answered, Failed, or Not Valid**.
+The call status field refers to the final status of a call when it ended or was terminated. This field indicates whether the call was successful or not and can provide more details about the reason for call termination. Some common call status codes are **Answered, Not Answered, Failed, or Not Valid**. 
 
 ### Direction
 
@@ -187,7 +192,29 @@ Specifies the direction of the call, either Inbound or Outbound. It could be **i
 An URL to the end-to-end call recording of the call, which is usually recorded by default. Users have the option to pause recording during certain sections of the call or stop recording altogether as part of the bot logic.
 The recording URL can be used to retrieve and listen to the recording of the call.
 
+### SIP Code 
 
+For each call, an error code (SIP code) is generated to understand the hang up reason:  
+
+| SIP Code | Description                                        |
+|----------|----------------------------------------------------|
+| 200      | Call answered                                      |
+| 400      | Bad Request - Mostly from Tata - investigate       |
+| 403      | Forbidden                                          |
+| 404      | Not Found                                          |
+| 408      | Request Timeout                                    |
+| 480      | Temporarily Unavailable                            |
+| 484      | Address Incomplete - Commonly observed - investigate |
+| 486      | Busy Here                                          |
+| 487      | Request Terminated                                 |
+| 500      | Internal Server Error                              |
+| 501      | Not Implemented                                    |
+| 502      | Bad Gateway                                        |
+| 503      | Service Unavailable                                |
+| 504      | Service Timeout                                    |
+| 600      | Busy Everywhere                                    |
+| 603      | Decline                                            |
+| 607      | Inbound Blocked                                    |
 
 
 <!--

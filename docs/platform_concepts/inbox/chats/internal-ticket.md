@@ -23,6 +23,9 @@ Internal ticket communication between different agent tiers occurs through Slack
 
 3. [Add app](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/slack2#add-app-to-slack-workspace) to each of the channels. Only then agents can select a channel from a dropdown on Inbox to which the internal ticket will be directed.
 
+> Steps to create a slack app are listed in [this guide](https://docs.yellow.ai/docs/cookbooks/inbox/slackapp).
+
+
 -----
 
 ## Steps to generate an internal ticket 

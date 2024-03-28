@@ -38,7 +38,7 @@ To create a Viber account, follow these steps:
 	 
 3. Enter your Email, Password, Retype password and click **Done**.
 
-     <img src="https://i.imgur.com/INu0Jj4.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/INu0Jj4.png" alt="drawing" width="40%"/>
 
   * Your Viber account will be created.
 

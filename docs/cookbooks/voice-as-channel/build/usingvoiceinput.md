@@ -11,6 +11,34 @@ Voice input node will work only for voice bots, i.e you should have enabled **Vo
 ![](https://i.imgur.com/8f5cdfK.png)
 :::
 
+**Example use case to build a voice bot**
+
+Let us consider a use case to build a *Banking voice bot* that asks a set of questions to identify the user and provide a resolution for the asked queries (as shown in the below conversation). This is a happy conversation flow where the bank account holder provides his name and phone number and asks for the eligible home loan and the bot replies with the details. 
+
+![](https://i.imgur.com/zWCv0tr.png)
+
+
+Let's break down the conversation:
+
+* **Bot** (asks): What is your name? 
+* **User**(replies): Karan
+* **Bot**(stores): Karan as Name 
+* **Bot** (asks): How may I help? 
+* **User**(replies): Loan eligibility 
+* **Bot**(understands): User request = Loan eligibility
+* **Bot**(logic): Required phone number to calculate Loan eligibility
+* **Bot** (asks): What is your phone number?
+* **User**(replies): 9890******
+* **Bot**(validates if the number is correct): Uses logic to calculate Loan eligibility
+* **Bot** (response): You can avail X amount on X% interest. 
+
+--- End of the call ---
+
+:::note
+For guidelines to build a good conversation, click [here](https://docs.yellow.ai/docs/cookbooks/getting_started). 
+:::
+
+
 ## 1. Access voice input node
 
 Go to **Studio** > **Prompts** > **Voice input**

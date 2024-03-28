@@ -397,4 +397,12 @@ No, it is not possible to end the session in WhatsApp.
 </p>
 </details>
 
+<details><summary><b>Is it possible to hide the WhatsApp phone number in the WhatsApp channel?</b></summary>
+<p>
+
+No, it is not possible to hide the phone number. To remove phone number, you need to follow churn process, please connect with the Yellow support team.
+
+</p>
+</details>
+
 
