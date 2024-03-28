@@ -111,9 +111,11 @@ You can trigger a specific flow using the function `triggerJourney` in the paylo
 
 ```c
 <script type="text/javascript">
-window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "payload": {
-                triggerJourney: 'your journey slug'
-            },}; //add your journey slug 
+window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai",
+           triggerJourney: 'your journey slug',
+           "payload": {
+                    // Add your payload
+            },};
 (function() {
     var w = window,
         ic = w.YellowMessenger;
