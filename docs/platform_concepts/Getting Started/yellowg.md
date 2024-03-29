@@ -1,54 +1,120 @@
 ---
-title: YellowG
-sidebar_label: Key features of YellowG
+title: YellowG - Unleash the Power of our Gen AI Features
+sidebar_label: Features of YellowG
 tags: [what is yellowg, yellowg]
 ---
 
 YellowG is a generative AI technology developed by Yellow.ai. It excels in natural language generation, providing customizable, multimodal output and adaptive responses. With contextual understanding, scalability, and privacy focus, YellowG evolves continuously, adapting to dynamic user needs and incorporating AI technologies for enhanced performance.
 
-## YellowG features 
 
-The following tables consist of features that fall under YellowG in each module. 
+The following sections provide details of Yellow.ai's Gen AI capabilities across each product.
+
+---
+
+## Revolutionize Bot Conversations with YellowG
+
+
+### Create Instant AI-Powered Support Bot
+
+Get instant responses for your bot queries without the hassle. Our AI-powered solution taps into your website's content to provide accurate answers.
+Simply share your website link, and our bot gets to work. Using advanced AI, it understands and responds to queries with precision, drawing information directly from your website. Whether it's business hours or product details, our bot ensures reliable assistance without delay. Say goodbye to manual responses and welcome effortless bot support powered by AI.
+
+[Refer to our documentation](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview) to know about setting up and deploying your AI-powered support bot.
+
+### Effortless Generate Conversational Flows with AI-Copilot
+
+"Our revolutionary AI Copilot, powered by Gen AI, revolutionizes conversation flow creation into a seamless experience. No more tedious manual creation of flows or template imports. With AI Copilot, simply express your requirements, and witness our bot effortlessly generate conversation flows in seconds. You can then tweak the flows as needed. Say goodbye to time-consuming tasks and hello to effortless flow creation with AI Copilot.
+
+Learn [how to create flows effortlessly with Gen AI-based Copilot](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot).
+
+
+### Elevate Conversations with Dynamic Chat Node
+
+
+Transform your interactions with Dynamic Chat Node. This powerful node allows you to effortlessly provide prompts, and watch as the bot seamlessly engages users. The node facilitates smooth communication without the need for manual flow creation.
+
+Dynamic Chat Node offers unparalleled effectiveness in guiding conversations. Experience the power of prompt-driven interactions and effortlessly elevate your user engagement.
+
+Learn more about [Dynamic Chat Node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode).
 
 :::note
-Features marked as **No** in the tables require upgrading your account to access them. For steps to upgrade and select the most suitable plan, please contact our team at support@yellow.ai.
+Please note that this feature is exclusively available for premium customers. To unlock this functionality, you'll need to upgrade your account. For assistance with upgrading and selecting the most suitable plan, please reach out to our team at support@yellow.ai.
 :::
 
 
-### Studio
-
-| Feature             | Description                                                                                                                                                                        | Example                                                                                                                               | Documentation   | Available on Freemium |
-|---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|------------|-----------------------|
-| KB (Knowledge Base) | Easily turn your website into a smart bot that answers questions without any effort from you. Just give us your website link, and the bot is good to go, responding accurately. | A customer asks about business hours, and the bot instantly provides the accurate information sourced from the website.                  | [Documentation](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview) | Yes |
-| AI Copilot          | Our AI Copilot, powered by GPT-4, makes creating conversation flows a breeze. No more manual work or downloading templates. Just tell us what you need, and our bot generates flows automatically, saving you time and effort. | A company automates the process of handling product returns by inputting requirements, and the bot generates a return flow without manual effort.      | [Documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot) | Yes |
-| Dynamic Chat Node   | Design conversations easily by typing instructions directly, without the need for building nodes or complex flows. Simply type your instructions, and the bot handles the conversation accordingly, saving you time. | A loan bot guides the conversation with users to provide details on various loan options and assist them in purchasing a loan. It seamlessly manages all aspects of the conversation without requiring individual configuration for each part.                                     | [Documentation](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) | No |
-| Prompt Executor     | Process user prompts instantly, fetching responses from the AI model and displaying them to users as specified. It simplifies interaction by responding promptly to user inputs. | When a user requests the top ten tourist attractions in a particular location, the bot retrieves real-time availability and promptly presents immediate options.                                  | [Documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#113-prompt-executor-node) | Yes |
-| Product Search Node | Show products from your catalog and guide the conversation based on the user's product choices, streamlining the search process.                                                    | A customer searches for a laptop, and the bot retrieves relevant options from the catalog based on preferences.                                          | [Documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#310-product-search) | Yes |
+### AI-Powered Prompt Executor for Instant User Responses
 
 
-### Inbox
+The Prompt Executor, driven by the capabilities of Gen AI, swiftly processes user prompts, tapping into the intelligence of our AI model to provide accurate and immediate responses. This streamlined interaction ensures prompt and personalized responses to user inputs.
+
+For instance, imagine a user inquiring about the top ten tourist attractions in a specific location. With our Prompt Executor, the bot quickly accesses real-time data, presenting immediate options tailored to the user's preferences. This intelligent response mechanism elevates the user experience, providing personalized recommendations at the speed of thought.
+
+
+Refer to the comprehensive [Prompt Executor documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#113-prompt-executor-node) for further details.
+
+
+### Simplify Product Discovery with Product Search Node
+
+The Product Search node effortlessly showcases products from your catalog and navigates conversations based on user preferences, enhancing the search experience.
+
+Enter a fluid journey of product exploration as users interact with your catalog. With personalized guidance tailored to their selections, discovering the ideal product becomes intuitive and effortless.
+
+For further insights, check out our comprehensive documentation on [Product search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#310-product-search).
+
+
+---
+
+
+## Email Automation for Efficient Customer Interactions
+
+Email Automation is an innovative product that streamlines customer email handling, empowering businesses to effortlessly manage repetitive tasks and deliver timely, impactful email interactions.
+
+Imagine a customer inquiring about their order shipment status. With Email Automation, the system promptly requests their order number and delivers the current status, ensuring swift and efficient customer service.
+
 
 :::note
-All the features listed below are gated, please upgrade to a paid plan to use them.
+Please note that this feature is exclusively available for premium customers. To unlock this functionality, you'll need to upgrade your account. For assistance with upgrading and selecting the most suitable plan, please reach out to our team at support@yellow.ai.
 :::
 
-| Feature                     | Description                                                                                                                                                                                                                                                                                             | Example                                                                                                                                                                                                                                                                                                                                                                                                                                            | Documentation                                                                                                            | Available on Freemium |
-|-----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| Summarize chat             | Provides a summary of customer-bot or agent interactions for analysis and trend spotting. Saves time for agents by condensing lengthy conversations. | After a chat session, the bot generates a summary highlighting key points discussed and suggesting improvements.                                                                                                                                                                                                                                                                                                                                  | [Documentation](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai#summarize-chat-conversation)                                                                                                      | No                    |
-| Tone Change     | Assists agents in maintaining a professional tone while responding to customers.                                                                                                                                                              | An agent adjusts the tone of their response to be more empathetic and understanding, using the Tone Change feature.                                                                                                                                                                                                                                                                                                                           | [Documentation](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai#change-the-tone-of-a-typed-message)                                                                                                      | No                    |
-| Reply suggestion          | Offers summarized suggestions for replies to assist agents in crafting effective responses.                                                                                                                                                   | An agent receives concise suggestions for addressing a complex customer query, improving response efficiency.                                                                                                                                                                                                                                                                      | [Documentation](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai#reply-suggestions-for-conversation-improvement)                                                                                                      | No                    |
+---
+
+## Experience a New Era Ticketing System with our Gen AI Inbox
+
+Transform ticketing systems with our Gen AI Inbox. Experience efficient handling, personalized responses, and enhanced agent effectiveness, powered by Gen AI for superior customer satisfaction.
+
+:::note
+Please note that all the Gen AI geatures of Inbox are exclusively available for premium customers. To unlock, you'll need to upgrade your account. For assistance with upgrading and selecting the most suitable plan, please reach out to our team at support@yellow.ai.
+:::
+
+### Analyze Interactions Efficiently with Conversation Summarizer
+
+The Conversation Summarizer feature offers a condensed overview of customer-bot or agent interactions, facilitating analysis and trend spotting while saving valuable time for agents.
+
+After each chat session, the bot automatically generates a comprehensive summary, spotlighting key discussion points and recommending potential enhancements, elevating the agent experience to the next level.
 
 
-### Engage
-
-| Feature                 | Description                                                                                                                                                                                                                                                                                                          | Example                                                                                                                                                                                                                                                                                                                                       | Documentation                                                                                                                          | Available on Freemium |
-|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
-| AI-based Flow campaign  | YellowG streamlines campaign creation by analyzing audience data and historical performance to generate personalized flows, optimizing user experience and maximizing marketing efforts.                                                                 | Let's say you're a marketing manager launching a new product campaign.  Our AI technology analyzes audience demographics, past campaign performance, and user interactions to generate personalized flows for different customer segments. These flows adapt based on user engagement, saving time and resources for marketers to focus on refining their overall marketing strategy and achieving better outcomes. | [Documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/flow-ai#docusaurus_skipToContent_fallback) | Yes                   |
+For more details, refer to [our documentation](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai#summarize-chat-conversation).
 
 
-### Email automation
+### Unlock Elevated Customer Engagement in Tickets with Gen AI's Tone Adjustment
 
-| Feature           | Description                                                                                                                                                                                                                                                               | Example                                                                                                                                                                                      | Documentation                                                                                                   | Available on Freemium |
-|-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|-----------------------|
-| Email Automation | Email automation enhances communication by automating customer email handling. This virtual assistant allows businesses to efficiently manage repetitive tasks, ensuring timely and effective email interactions. | When a customer sends a request to the company asking about the shipment status of their order, the email bot requests their order number and promptly responds with the current status of the shipment. | [Documentation](https://docs.yellow.ai/docs/platform_concepts/emailautomation) | No                   |
+The Empathetic Tone Change feature aids agents in maintaining professionalism while responding to customers, fostering a more empathetic and understanding tone.
+
+Agents can effortlessly fine-tune their response tone to better resonate with customers, leveraging the Tone Change feature for enhanced communication. 
+
+
+### Crafting Effective Responses Simplified with Reply Suggestion
+
+The efficient Reply Suggestion provides summarized suggestions to assist agents in crafting effective responses. Agents receive concise recommendations for addressing complex customer queries, enhancing response efficiency and effectiveness.
+
+
+
+
+## Optimized Campaign Creation with AI-Powered Flow Campaigns
+
+Elevate your marketing strategy with YellowG's AI-powered Flow Campaigns. By analyzing audience data and historical performance, YellowG streamlines campaign creation, generating personalized flows to optimize user experience and maximize marketing efforts.
+
+Imagine you're a marketing manager launching a new product campaign. With our GenAI, audience demographics, past campaign performance, and user interactions are analyzed to generate tailored flows for different customer segments. These adaptable flows evolve based on user engagement, freeing up time and resources for marketers to refine their overall strategy and achieve superior outcomes
+
+
 
