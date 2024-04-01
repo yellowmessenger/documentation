@@ -19,11 +19,11 @@ The following sections provide details of Yellow.ai's Gen AI capabilities across
 Get instant responses for your bot queries without the hassle. Our AI-powered solution taps into your website's content to provide accurate answers.
 Simply share your website link, and our bot gets to work. Using advanced AI, it understands and responds to queries with precision, drawing information directly from your website. Whether it's business hours or product details, our bot ensures reliable assistance without delay. Say goodbye to manual responses and welcome effortless bot support powered by AI.
 
-[Refer to our documentation](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview) to know about setting up and deploying your AI-powered support bot.
+Set up and deploy your AI-powered support bot. [Refer to our documentation](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview).
 
-### Effortless Generate Conversational Flows with AI-Copilot
+### Effortless Generation of Conversational Flows with AI-Copilot
 
-"Our revolutionary AI Copilot, powered by Gen AI, revolutionizes conversation flow creation into a seamless experience. No more tedious manual creation of flows or template imports. With AI Copilot, simply express your requirements, and witness our bot effortlessly generate conversation flows in seconds. You can then tweak the flows as needed. Say goodbye to time-consuming tasks and hello to effortless flow creation with AI Copilot.
+Our revolutionary AI Copilot, powered by Gen AI, revolutionizes conversation flow creation into a seamless experience. No more tedious manual creation of flows or template imports. With AI Copilot, simply express your requirements, and witness our bot effortlessly generate conversation flows in seconds. You can then tweak the flows as needed. Say goodbye to time-consuming tasks and hello to effortless flow creation with AI Copilot.
 
 Learn [how to create flows effortlessly with Gen AI-based Copilot](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot).
 
