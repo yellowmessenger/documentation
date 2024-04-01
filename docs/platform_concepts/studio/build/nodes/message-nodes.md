@@ -8,7 +8,7 @@ You can **randomize** the node text and add a **delay** to each node.
 
 ---
 
-## 1. Common Features in all the message nodes
+## 1. Common features across message nodes
 
 **Randomization**
 
@@ -31,8 +31,6 @@ A Fetch from field will be provided in most of the fields to render the dynamic 
 
 ---
 
-Given below is a flow created using message nodes to brief the users **about a coffee company**.
-
 ![](https://i.imgur.com/N8iN11b.jpg)
 
 :::note
@@ -44,11 +42,13 @@ Following are the different types of message nodes:
 
 ## 2. Text
 
-> This node is available for voice bots. 
+> This node is also available for voice bots. 
 
 
 Display a simple text with this node.  
 > This node can be used to follow up with most of the [prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) nodes. You can also display links in a text node.
+
+Let's say a customer has paid for their order, you can use the text node to display a success message to the cutomer.
 
 ![](https://i.imgur.com/KwvAAwd.jpg)
 
@@ -56,7 +56,7 @@ Display a simple text with this node.
 
 ## 3. Image 
 
-Display any image (less than 10MB) with this node.
+Display any image (less than 10MB) with this node. For example, you can display welcome image to users when they open the bot.
 
 
 ![](https://i.imgur.com/NuHZKEb.jpg)
@@ -93,11 +93,13 @@ const imageVariable = [{
 
 ## 4. Carousel 
 
-Display information using a carousel card with this node. Unlike the carousel in prompt nodes, these carousel buttons do not perform any action, nor the response can be stored in a variable.
+Display information using a carousel card with this node. Unlike the carousel in prompt nodes, these carousel buttons do not perform any action, nor the response can be stored in a variable. 
 
 ![](https://i.imgur.com/2iS11MA.png)
 
-To disable the carousel list after a button has been clicked, 
+Let's say that you own a travel website, you can display images of a specific tourist destination along with buttons to book accomodation and airport pickups.
+
+To disable the carousel list after a button has been clicked:
 
 Go to the Carousel node and click the **settings** icon.
 
@@ -111,7 +113,7 @@ Enable **Disable action after click** and click **Save**.
 
 ## 5. Video 
 
-Display any MP4 video file with this node.
+Display any MP4 video file with this node. For example, you can choose to show a demo video of how a customer can place an order on your e-commerce website.
 
 To customize this node:
 
@@ -159,7 +161,7 @@ const videoVar = "http://commondatastorage.googleapis.com/gtv-videos-bucket/samp
 
 ## 6. File 
 
-Display a file of the most common extension (JPG, JPEG, MP3, MP4, CSV, PDF, Doc, Docx, Txt, HTML, PPT, PPTX, etc.) with this node. 
+Display a file of the most common extension (JPG, JPEG, MP3, MP4, CSV, PDF, Doc, Docx, Txt, HTML, PPT, PPTX, etc.) with this node. You can display your company brochures through file node
 
 ![](https://i.imgur.com/jmqJpC8.jpg)
 
@@ -184,7 +186,7 @@ File size limit is 15 MB.
 
 ## 7. Quick Replies
 
-Display a question along with quick reply buttons with this node.
+Display a question along with quick reply buttons with this node. For example, the bot prompts the user with options like Technical Issue, Billing Inquiry, etc., enabling quick selection of the relevant category for their product-related query.
 
 > Unlike the Quick Replies Prompt node, a fallback message need not be configured to this nor this node is expected to follow another node.
 
@@ -257,6 +259,8 @@ Click **Fetch from** and add a dynamic value - if required:
 :::
 
 This node lets you configure the lists displayed on the WhatsApp channel. WhatsApp API provides a better UI for businesses to send List items (within a 24 hours window).
+
+For example, a retail business can utilize this node to configure lists for WhatsApp users, showcasing new product arrivals, promotions, and featured items, leveraging WhatsApp's enhanced UI for effective engagement within the 24-hour window.
 
 To create a WhatsApp List:
 
@@ -378,6 +382,8 @@ To beautify the text you enter in the field -**bot says** you can add the follow
 This section helps you create a WhatsApp product messaging journey with a sample use case.
 
   ![](https://i.imgur.com/2VbCAhb.png)
+
+For example, craft personalized product messaging journeys on WhatsApp, such as sending automated order confirmations, shipment updates, and post-purchase feedback requests, enhancing customer experience and streamlining communication channels.
 
 **Prerequisites** 
 
