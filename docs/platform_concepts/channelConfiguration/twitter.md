@@ -190,7 +190,6 @@ Endpoint | Ratelimit
 agent/bot messages | 1000 requests / 24 hours per user
 agent/bot messages| 200 requests / 15 mins per user
 
-
 ## Connect Twitter to your bot
 
 To connect the Twitter channel to the Yellow.ai platform, follow these steps:
@@ -203,24 +202,68 @@ To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
    ![](https://i.imgur.com/PFvwsPc.png)
 
-3. Copy the details such as **Access token, Access token secret, Consumer key, and Consumer secret** from Twitter's developer portal and contact the [support](mailto:support@yellow.ai) team to connect your bot to Twitter.  
+3. You can connect your Twitter account to the bot by using the following options:
 
-## Test your bot on Twitter
+    1. [Connect with X](#connect-with-x)
+    2. [Configure account](#configure-account)
 
-After connecting your bot to a Twitter, you can test your bot.
+### Connect with X
 
-To test your bot on Twitter, follow these steps:
+If you prefer to connect your bot directly to your Twitter account without any additional configuration, you can select this option.
 
-1. Open your Twitter account and click **Messages**.
+1. Select **Connect with X**.
 
-    ![](https://i.imgur.com/8NFC9bY.jpg)
+   ![image](https://hackmd.io/_uploads/S1ASf000p.png)
 
-2. In the **Search bar**, search your bot name. 
+2. Enter your Twitter username or email and password, then click **Sign In** to proceed.
 
-     ![](https://i.imgur.com/yQbZTmr.png)
+   ![image](https://imgur.com/5UzXXDf.png)
+   
+* This will establish the connection between your Twitter account and the bot via the radarr.
 
-3. Select your bot to start the conversation and test it to ensure that it is working as expected.
+### Configure account
+ 
+You can use this option to customize your account settings in [Twitter developer portal](#setup-twitter-channel-using-developer-portal) before connecting.
 
-    ![](https://i.imgur.com/U83LsQH.png)
+1. Select **Configure account**.
+
+  ![image](https://imgur.com/8z7MwMw.png)
+
+
+2. Copy the details such as **Access token, Access token secret, Consumer key, and Consumer secret** from Twitter's developer portal and click **Connect**.
+
+   <img src="https://hackmd.io/_uploads/S12qyR0Rp.png" alt="drawing" width="90%"/>
+ 
+* This will connect your bot to the Twitter account. After the connection, you can test your bot.
+
+## Test your bot on Twitter  
+
+After connecting your bot to Twitter, you can test your bot.
+
+1. Go to your **Twitter account** > **More** option.
+
+   ![image](https://imgur.com/LEsHRou.png)
+
+2. Click **Settings and privacy** > **Privacy and Safety** > **Direct messages**. 
+ 
+    ![image](https://imgur.com/jkUkaMb.png)
+    
+3. Enable messages for everyone so that any user can send the message to your Twitter account.
+
+   ![image](https://imgur.com/cMXxuPA.png)
+    
+4. Test the bot by logging into your account to ensure it functions as expected. This involves initiating a conversation with the bot using the test account and verifying that it responds appropriately to user queries.
+
+5. Go to your account and click on **Messages** > **Write a message**.
+
+  ![image](https://imgur.com/Oh49Z99.png)
+
+6. In the **Search** bar, enter the name of your bot to initiate a conversation, and click **Next**.
+
+   ![image](https://imgur.com/gZLp2kK.png)
+
+7. Select your bot to start the conversation.
+
+   ![image](https://imgur.com/OFOCyib.png)
 
       
