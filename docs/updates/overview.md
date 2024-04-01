@@ -1,25 +1,57 @@
 ---
-title: February 2024
-sidebar_label: Latest product updates (February 2024)
+title: Discover  What's New in March 2024
+sidebar_label: Latest releases
 featured: true
 ---
 
 ![](https://i.imgur.com/hIGEIJL.png)
 
-## User data synchronization from SFTP
+## Auto Layout in Flow Builder
 
-* You can now [schedule regular synchronization of user data](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/sync_users) directly from SFTP servers to User 360. This support enhances data management capabilities. It also boosts data accuracy, enabling you to make more informed decisions based on real-time user insights.
+Enhance flow construction clarity with the Auto Layout feature. This feature automatically aligns nodes, simplifying layout and enhancing readability for end users.
 
-   ![](https://i.imgur.com/cPEOP2p.png)
+[Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#enhance-flow-clarity-with-auto-layout)
 
-## Insights enhancements
 
-* **Embedded chat link support in user engagement events export**: Within **Data Explorer**, when exporting the User Engagements Events table to CSV format (by selecting the export CSV option), the resulting CSV report will now feature an embedded chat link.
-* **Apply multiple aggregation** operations when summarizing medium cardinality columns.
-* **Channels filter in analytics**: This helps analyze data pertaining to individual channels  to gain deeper insights into user engagement and interaction patterns across different platforms. For instance, businesses can track how users engage with their content differently on WhatsApp compared to other channels, allowing them to tailor their marketing strategies accordingly.
-* **Tracking of session ID  in User-revisited events** to help analyze user revisits within support sessions. This provides a more comprehensive understanding of user engagement and interaction patterns over time.
+## Enhanced Message Handling for Dynamic Chat Node
 
-## Inbox enhancements
+With this release, you can make use of the following enhancements: 
 
-* **Copy & paste text and images from any source**: This feature enables users to effortlessly copy content from any source using familiar keyboard shortcuts (Ctrl+C) and paste (Ctrl+V) them directly into the chat or email text editor. This eliminates the tedious task of retyping content or attaching files, streamlining the content insertion process for improved efficiency and user convenience.
-* **Multiple reminders for email tickets**: You now have the flexibility to send up to 5 reminders to users before automatically closing inactive email tickets. Multiple reminders improve engagement and prompt quicker responses by maintaining communication and providing varied follow-up options.
+* **Send Initial User Message**: This Transmits previous user-bot conversations to the Dynamic Chat Node before transitioning flow control. If a user had asked for help with a particular issue in a previous conversation, when they enter the dynamic chat again, the bot can remind them of their previous request. This ensures continuity in the conversation and helps the user feel understood.
+* **Send Message After Chat Ends**: After completing a dynamic chat session, the bot can send a closing message thanking the user for their interaction and inviting them to reach out again if they have any more questions or concerns. This leaves a positive impression and encourages further engagement.
+
+[Learn about Dynamic Chat Node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#generate-prompts-with-ai-prompt-generator)
+
+---
+
+## Konnect Insights Integration
+
+This integration enables seamless forwarding of user and bot interactions from Yellow.ai to Konnect Insights for sentiment analysis. This integration empowers Konnect Insights to analyze user sentiments, providing valuable insights into customer perceptions and preferences.
+
+Agents can now respond directly from the Konnect Insights dashboard, leveraging the sentiment analysis data to tailor their responses effectively. This streamlined process enables agents to address user concerns promptly and enhance overall customer satisfaction.
+
+[Explore the Konnect Insights integration Guide](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/konnect-insights)
+
+
+
+## X (Twitter) Integration Support via Radarr
+
+You can now seamlessly connect your bot to your X account via Radarr without any additional setup. Simply use your Twitter credentials to establish the connection, allowing your bot to engage directly on X.
+
+[Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/twitter#connect-twitter-to-your-bot)
+
+
+---
+
+## Introducing Pivot Table in Reports
+
+Explore data effortlessly with the new pivot table feature in reports. Organize and analyze your data with ease for deeper insights and better decision-making.
+
+[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/pivottable)
+
+---
+
+## Mobile Push Notifications for SDKs
+
+You can now set up push notifications for your mobile app by linking the Firebase server JSON to a bot. This feature enables you to reach your users with bot notifications directly on their mobile devices, boosting user engagement and delivering timely updates.
+
