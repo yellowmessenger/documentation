@@ -269,6 +269,8 @@ module.exports = {
             "platform_concepts/studio/build/Flows/journeys",
             "platform_concepts/studio/build/Flows/configureflow",
             "platform_concepts/studio/build/Flows/exportflow",
+            "platform_concepts/studio/debugger",
+
           ],
         },
         
