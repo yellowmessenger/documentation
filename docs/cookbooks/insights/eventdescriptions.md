@@ -387,46 +387,45 @@ Following are the fields tracked on the user engagement events table:
 
 Following are the events tracked on the user engagement events table: 
 
-
 | Event                   | Description                                                                                                         |
 |-------------------------|---------------------------------------------------------------------------------------------------------------------|
-| unidentified-utterance  | Fired when a user message is not understood by the Bot                                                            |
+| agent-session           | Fired when a new agent session is created. An agent session is initiated with the creation of the first ticket and lasts for 24 hours. Any subsequent tickets created within this timeframe are considered part of the same agent session. Therefore, the number of agent sessions will always be less than or equal to the number of tickets created |
 | agent-transfer          | Fired when a chat conversation is transferred to a live agent                                                       |
-| feedback                | Fired when a user gives feedback after completing the chat                                                         |
-| first-message           | Fired when a new profile of a user is created                                                                     |
-| first-message-bid       | Fired when a user profile is updated with the bid for the first time                                                |
+| banner-cta-clicked      | Fired when the User clicks on the link configured in the callout banner                                            |
+| bot-closed              | Fired when the Bot is closed by the user (close button)                                                             |
+| bot-icon-clicked        | Fired when the Bot avatar (in title bar) is clicked by the user                                                     |
+| bot-icon-loaded         | Fired when the Bot avatar is displayed to the user (on load)                                                        |
+| bot-loaded              | Fired when the Bot script is loaded on the website                                                                  |
+| bot-opened              | This occurs when a user clicks on the chat bubble to open the bot.                                                   |
+| bot-session             | Fired when a session is created based on a bot message (first message sent by the bot). It has a session time window of 24hrs for a given UID and source |
+| business-initiated      | Fired when a new session is created by notification from the business side for the WhatsApp channel               |
+| card-cta-clicked        | Fired when the User clicks on the link configured in the card buttons                                               |
+| condition-recorded      | Fired when a condition node is executed in a flow                                                                   |
+| feedback                | Fired when a user gives feedback after completing the chat                                                          |
+| first-message           | Fired when a new profile of a user is created                                                                      |
+| first-message-bid       | Fired when a user profile is updated with the bid for the first time                                                 |
 | home-button-click       | Fired when a user clicks on the home button in the chat widget                                                       |
-| journey-started         | Fired when a journey starts for the user                                                                            |
+| invalid-response        | Fired when an invalid response other than the provided option is selected/entered by the user                      |
 | journey-completed       | Fired when a journey gets completed for the user                                                                   |
+| journey-started         | Fired when a journey starts for the user                                                                           |
 | journey-switched        | Fired when a journey is switched by NLP System for the user due to utterance matching another journey              |
-| step-expected           | Fired when a step of the journey is expected / prompt is shown to the user                                          |
-| step-recorded           | Fired when input is given by the user for a step (step value is recorded) of a journey                               |
-| user-visited            | Fired when the chat widget loads for the user's IP address for the first time. This event is triggered once for the lifetime of the user's unique ID. It is specific to bots hosted on websites. |
-| user-revisited          | Fired when the chat widget loads for the user's IP address on subsequent visits. This event is specific to bots hosted on websites. |
+| message-hyperlink-clicked | Fired when the User clicks on the link configured in the text message                                               |
+| new-session             | Fired when a new session is created                                                                               |
+| notification-received   | Fired when a notification is received on the mobile widget                                                          |
 | optin                   | Fired when a WhatsApp opt-in is added                                                                             |
 | optout                  | Fired when a WhatsApp opt-out is added                                                                            |
 | otp-sent                | Fired when an OTP sent from the bot using the platform function                                                    |
 | otp-verified            | Fired when an OTP is verified from the bot using the platform function                                              |
-| notification-received   | Fired when a notification is received on the mobile widget                                                          |
-| new-session             | Fired when a new session is created                                                                               |
-| user-session            | Fired when a session is created based on a USER message                                                            |
-| user-initiated          | Fired when a new session is created from a user message for the WhatsApp channel                                    |
-| business-initiated      | Fired when a new session is created by notification from the business side for the WhatsApp channel               |
-| bot-closed              | Fired when the Bot is closed by the user (close button)                                                            |
-| bot-icon-clicked        | Fired when the Bot avatar (in title bar) is clicked by the user                                                     |
-| bot-icon-loaded         | Fired when the Bot avatar is displayed to the user (on load)                                                        |
-| bot-opened              | This occurs when a user clicks on the chat bubble to open the bot.                                                   |
-| card-cta-clicked        | Fired when the User clicks on the link configured in the card buttons                                                |
-| message-hyperlink-clicked| Fired when the User clicks on the link configured in the text message                                                |
-| banner-cta-clicked      | Fired when the User clicks on the link configured in the callout banner                                               |
-| page-loaded             | Fired every time the client website page is loaded/reloaded where our script is running                              |
+| page-loaded             | Fired every time the client website page is loaded/reloaded where our script is running                             |
 | pwa-loaded              | Fired when the PWA version of the bot script is loaded                                                             |
 | pwa-opened              | Fired when the PWA bot is opened by the user                                                                       |
-| bot-loaded              | Fired when the Bot script is loaded on the website                                                                 |
-| bot-session             | Fired when a session is created based on a bot message (first message sent by the bot). It has a session time window of 24hrs for a given UID and source |
-| condition-recorded      | Fired when a condition node is executed in a flow                                                                 |
-| invalid-response        | Fired when an invalid response other than the provided option is selected/entered by the user                      |
-
+| step-expected           | Fired when a step of the journey is expected / prompt is shown to the user                                          |
+| step-recorded           | Fired when input is given by the user for a step (step value is recorded) of a journey                               |
+| unidentified-utterance  | Fired when a user message is not understood by the Bot                                                             |
+| user-initiated          | Fired when a new session is created from a user message for the WhatsApp channel                                    |
+| user-revisited          | Fired when the chat widget loads for the user's IP address on subsequent visits. This event is specific to bots hosted on websites. |
+| user-session            | Fired when a session is created based on a USER message                                                             |
+| user-visited            | Fired when the chat widget loads for the user's IP address for the first time. This event is triggered once for the lifetime of the user's unique ID. It is specific to bots hosted on websites |
 
 **Other events**:
 
@@ -486,3 +485,46 @@ Following are the events tracked on the user engagement events table:
 | WHO_HUNG_UP               | Specifies who initiated the call hang-up.                                                                                  |
 | RECORDING_ID              | Identifier number assigned to each recording.                                                                              |
 | RECORDING_STATUS          | Processing status of the recording (e.g., pending, completed).                                                             |
+
+
+## Analytics (Custom table)
+
+Analytics table can be found under custom tables in which the following data is captured. 
+
+| Fields                   | Description  |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| CHATURL                  | Link to Chat Transcript: [Example](https://app.yellow.ai/public/messages/a9c9844ad89bb7aeb6a3918ad57623c37616acfc6c094e3b529ad0a763323f9e687450946280f5eca561274bdc0d6360510eff61eb0b24d55cb5c1e7092c/660a37f54a1f6800016fd072) |
+| TIMESTAMP                | Date and Time when event was triggered: Sun Mar 31 2024 11:28 PM                                                          |
+| AEVENT                   | Event triggered upon an action. This includes both OOB, and custom events configured in the bot: e.g. welcome_message, kb_question_not_answered, booking_done |
+| MESSAGEID                | Unique ID set in backend for each message: e.g. 123456789                                                                  |
+| PROFILE_PLATFORM         | Platform through which user accessed the chatbot: e.g. Web, SDK                                                           |
+| PROFILE_BROWSER          | Browser through which user accessed the chatbot: e.g. Safari, Chrome, Mozilla                                            |
+| PROFILE_CITY             | City of user accessed the chatbot (fetched from IP address): e.g. San Francisco, New York City                             |
+| PROFILE_COUNTRY          | Country of user that accessed the chatbot (fetched from IP address): e.g. India, Abu Dhabi                                 |
+| PROFILE_COUNTRY_CODE     | Country code of user that accessed the chatbot (fetched from IP address): e.g. US, CA, IN                                   |
+| PROFILE_DEVICE           | Type of device from which the user accessed the chatbot: e.g. Mobile, Desktop, Tablet                                     |
+| PROFILE_IP               | IP address of the user: e.g. 192.168.1.1                                                                                  |
+| PROFILE_LATITUDE         | Latitude value of user's location: e.g. 39.73915                                                                          |
+| PROFILE_LONGITUDE        | Longitude value of user's location: e.g. -104.9847                                                                        |
+| PROFILE_NAME             | (User) Profile name set up in backend. This will be random values so that user privacy is maintained: e.g. John Doe, Jane Smith |
+| PROFILE_OS               | Operating system through which user accessed the chatbot: e.g. Windows 10.0, macOS 10.15.7                                 |
+| PROFILE_PAGEURL          | URL of the page from which the user accessed the chatbot: [Example](https://yellow.ai)                                    |
+| PROFILE_DEVICETYPE       | Type of device from which the user accessed the chatbot: e.g. Microsoft Windows, Apple Mac                                |
+| PROFILE_REGION           | Region of user that accessed the chatbot (fetched from IP address): e.g. California, Florida                               |
+| PROFILE_SOURCE           | Device, OS, and Browser details of the user: e.g. Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 |
+| PROFILE_TIMEZONE         | Timezone of user's location: e.g. -04:00, +05:30                                                                         |
+| PROFILE_USERAGENT_BROWSER | Browser used by the agent to whom the user is connected to: e.g. Safari, Chrome, Mozilla                                  |
+| PROFILE_USERAGENT_DEVICE | Device used by the agent to whom the user is connected to: e.g. Mobile, Desktop, Tablet                                   |
+| PROFILE_USERAGENT_OS     | OS of the device used by the agent to whom the user is connected to: e.g. Windows 10.0, macOS 10.15.7                      |
+| PROFILE_USERAGENT_PLATFORM | Platform used by the agent to whom the user is connected to: e.g. Web, SDK                                                |
+| PROFILE_USERAGENT_SOURCE | Device, OS, and Browser details of the agent to whom the user is connected to: e.g. Microsoft Windows, Apple macOS       |
+| PROFILE_WIDGETVERSION    | Version of the chat widget accessed by the user: e.g. V1, V2                                                             |
+| SOURCE                   | Channel in which the user is chatting with the bot: e.g. Whatsapp, Facebook, yellowmessenger                              |
+| UID                      | Unique Identifier of User: e.g. 10182708542979041342360504723                                                             |
+| VALUE                    |                                                                                                                           |
+| MESSAGEID                |                                                                                                                           |
+| PROFILE_END_IP           |                                                                                                                           |
+| PROFILE_START_IP         |                                                                                                                           |
+| PROFILE_TITLE            |                                                                                                                           |
+| PROFILE_UTM_CAMPAIGN     |                                                                                                                           |
+| PROFILE_UTM_MEDIUM       |                                                                                                                           |

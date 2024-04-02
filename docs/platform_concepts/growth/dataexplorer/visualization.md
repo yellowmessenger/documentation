@@ -18,6 +18,7 @@ Before creating visualizations, you must **summarize** the data in tables. After
     - Funnel
     - Table view
     - Row view
+    - [Pivot table](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/pivottable)
 3. Click **Done**. Refresh the page after making changes.
     ![](https://i.imgur.com/nvsshH8.png)
 
@@ -33,6 +34,9 @@ Before creating visualizations, you must **summarize** the data in tables. After
 - **Funnel Chart**: A funnel chart is useful for showing the progression of data through different stages. It could be used to display the conversion rate of website visitors to leads, leads to prospects, and prospects to customers.
 - **Count Chart**: A count chart is great for displaying the frequency of values in a dataset. It could be used to show how frequently each letter appears in a block of text.
 - **Pie Chart**: A pie chart is an excellent choice for representing how a whole is divided into parts. It could be used to illustrate the proportion of expenses in a household budget.
+- **Pivot table**: Pivot tables are essential for summarizing and visualizing large datasets efficiently, offering flexibility in rearranging data and enabling interactive exploration. 
+
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/pivottable) to learn how to use **Pivot table** for visualisation. 
 
 -----
 

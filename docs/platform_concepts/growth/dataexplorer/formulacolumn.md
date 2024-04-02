@@ -19,7 +19,7 @@ To add a formula to a column, follow these simple steps:
 2. Enter a **Name** for the formula in the tab that appears.
     ![](https://hackmd.io/_uploads/BkRYoJqS3.png)
 3. Add the required formula using entities like calculating values in a column, calculating values in a specific cell, adding integers or arithmetic operators.
-    - To add a column, select **Select column** under **table operations**. The available columns (of integer data type) in your summarized table will be listed on the right side. Click **Add** next to the column name.
+    - To add a column, select **Select column** under **table operations**. The available columns in your summarized table will be listed on the right side. Click **Add** next to the column name.
     ![](https://hackmd.io/_uploads/rkgPsk5rn.png)
     - To add a cell, select **Select cell** after choosing a column. All the available rows for the selected column will be displayed in the dropdown list. Select a value.
     ![](https://hackmd.io/_uploads/ry64oJcr3.png)

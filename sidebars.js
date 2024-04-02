@@ -1340,7 +1340,7 @@ module.exports = {
     link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
     collapsed: true,
     items: [
-      "cookbooks/voice-as-channel/build/convdesiVB",
+     // "cookbooks/voice-as-channel/build/convdesiVB",
       "cookbooks/voice-as-channel/build/usingvoiceinput",
       "cookbooks/voice-as-channel/build/usingmp", 
         ],

@@ -68,8 +68,8 @@ Filters can be applied/changed to the pivoted table to refine the data displayed
 ### Apply visualisation
 
 Different visualizations can be applied to the pivoted table to represent data graphically.
-- Click **Visualisation**. 
-- Select a Visualisation and click **Apply**. 
+1. Click **Visualisation**. 
+2. Select a Visualisation and click **Apply**. 
 
 ![image](https://imgur.com/E5cZN55.png)
 
