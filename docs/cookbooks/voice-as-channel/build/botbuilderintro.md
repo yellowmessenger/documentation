@@ -41,9 +41,8 @@ Functionalities such as Design(for voice), Voice input node, etc. will not work 
 
 To convert your idea of a voice conversation (use-case) into a bot flow, there are three approaches: 
 
-1. Design a conversation using **Conversation design for voice bots**. 
-2. Build a bot from scratch using **Voice input node**. 
-3. Import a **Marketplace template** to your bot and modify it to accommodate voice conversations.
+1. Build a bot from scratch using **Voice input node**. 
+2. Import a **Marketplace template** to your bot and modify it to accommodate voice conversations.
 
 > These methods are explained in further articles. 
 

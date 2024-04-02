@@ -51,7 +51,7 @@ To set up SMTP server on the yellow.ai platform, follow these steps:
 
     ![](https://i.imgur.com/FkweCbm.png)
 	
-3. In the *Add Email* section, select **Basic** to add the details of the EMAIL sender.
+3. In the *Add Email* section, select **Basic** to add the details of the Email sender.
 
 Enter the following details:
 
@@ -101,7 +101,7 @@ You can only forward messages to a single Gmail address, not an email group or a
 
 2. Click on **Settings** (top right) > **See all settings**.
 
-      <img src="https://i.imgur.com/OD4o8QH.png" alt="drawing" width="40%"/>
+    <img src="https://i.imgur.com/OD4o8QH.png" alt="drawing" width="40%"/>
       
 3. Click **Forwarding and POP/IMAP** tab.
 
@@ -130,6 +130,27 @@ You can only forward messages to a single Gmail address, not an email group or a
 * Once confirmed, the email ID you have added will forward emails to your designated forwarding address.
 
    ![](https://i.imgur.com/I8dkzfz.png)
+
+#### Add email alias account
+
+You can add email alias account, if already main account configured in chatbot for alias.
+
+To add an email alias account, follow these steps:
+
+1. Navigate to **Overview** > **Channels** > **Messaging** > **Email**.
+
+    ![](https://i.imgur.com/kmA2I2Q.png)
+
+2. Click **Add email**
+
+    ![](https://imgur.com/IwnGxoN.png)
+
+3. In the *Add Email* section, enter the following details: 
+
+   <img src="https://imgur.com/7ihDpjx.png" alt="drawing" width="80%"/>
+* In the email field, enter the email address of the alias account.
+* In the username field, enter the email address of the main account.
+In the password field, enter the app password associated with the main account and click **Save**. 
 
 ### Set up SMTP-based email account (JSON)
 
