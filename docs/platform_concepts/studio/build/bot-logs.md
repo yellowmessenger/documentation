@@ -20,17 +20,18 @@ To check the debug logs in Sandbox and Staging environments,
 
    ![](https://i.imgur.com/rgyNgsQ.png)
    
-3. In the logs you can see the time at which the particluar action occured. Click **Refresh** to reload the logs.
+3. Under **Console**, you can see the time at which the particluar action occured. Click **Refresh** to reload the logs.
 
     
-    <img src="https://i.imgur.com/s0bbECU.png" alt="drawing" width="60%"/>
+    <img src="https://i.imgur.com/Hwpr3rP.png" alt="drawing" width="110%"/>
  
 ### View logs
  
 If you hover over each timestamp, you can see the option to view the logs. 
 
-  <img src="https://i.imgur.com/QGTy6WH.png" alt="drawing" width="60%"/>
-  
+  <img src="https://i.imgur.com/259rVvm.png" alt="drawing" width="110%"/>
+
+----  
  
 Click the logs icon to view the logs.
 
@@ -40,8 +41,7 @@ Click the logs icon to view the logs.
 
 If you hover over each timestamp, you can see the option to go to the respective node where the specific action occured. 
 
-  <img src="https://i.imgur.com/yAOQe9y.png" alt="drawing" width="60%"/>
-
+ ![](https://i.imgur.com/ay93P3J.png)
  
 ## Check logs in Production
 
