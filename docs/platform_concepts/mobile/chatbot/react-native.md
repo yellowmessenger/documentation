@@ -239,6 +239,59 @@ Close button color can be set by calling `setCloseButtonColor` method
 YMChat.setCloseButtonColor("#000000");
 ```
 
+### Theme setup
+
+You can customize the appearance of your chatbot interface by applying a theme. Using the YMConfig's theme property, you can modify various aspects of your chatbot, including its name, description, primary and secondary colors, icon, and click icon.
+
+#### Set bot name
+
+Define your bot's name using `setThemeBotName` method.
+
+```javascript
+YMChat.setThemeBotName('Demo Bot Name');
+```
+
+#### Set bot description
+
+Provide a description for your bot using `setThemeBotDescription` method.
+
+```javascript
+YMChat.setThemeBotDescription('Demo Bot Description');
+```
+
+#### Set bot primary color
+
+Customize the primary color of your bot using `setThemePrimaryColor` method.
+
+```javascript
+YMChat.setThemePrimaryColor('#000000');
+```
+
+#### Set bot secondary color
+
+Define the secondary color of your bot using `setThemeSecondaryColor` method.
+
+```javascript
+YMChat.setThemeSecondaryColor('#ffffff');
+```
+
+#### Set bot icon
+
+Choose an icon to represent your bot using `setThemeBotIcon` method.
+
+```javascript
+YMChat.setThemeBotIcon('https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png');
+```
+
+#### Set bot click icon
+
+Define an icon for the minimized state of your bot using `setThemeBotClickIcon` method.
+
+```javascript
+YMChat.setThemeBotClickIcon('https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png');
+```
+***
+
 #### iOS
 
 If you are supporting Speech recognization, add following snippet to Info.plist of the host app

@@ -210,6 +210,60 @@ Close button color can be set by calling `setCloseButtonColor` method
 ```dart
 YmChat.setCloseButtonColor("#000000");
 ```
+***
+
+### Theme setup
+
+You can customize the appearance of your chatbot interface by applying a theme. Using the YMConfig's theme property, you can modify various aspects of your chatbot, including its name, description, primary and secondary colors, icon, and click icon.
+
+#### Set bot name
+
+Define your bot's name using `setThemeBotName` method.
+
+```dart
+YmChat.setThemeBotName('Demo Bot Name');
+```
+
+#### Set bot description
+
+Provide a description for your bot using `setThemeBotDescription` method.
+
+```dart
+YmChat.setThemeBotDescription('Demo Bot Description');
+```
+
+#### Set bot primary color
+
+Customize the primary color of your bot using `setThemePrimaryColor` method.
+
+```dart
+YmChat.setThemePrimaryColor('#000000');
+```
+
+#### Set bot secondary color
+
+Define the secondary color of your bot using `setThemeSecondaryColor` method.
+
+```dart
+YmChat.setThemeSecondaryColor('#ffffff');
+```
+
+#### Set bot icon
+
+Choose an icon to represent your bot using `setThemeBotIcon` method.
+
+```dart
+YmChat.setThemeBotIcon('https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png') ;
+```
+
+#### Set bot click icon
+
+Define an icon for the minimized state of your bot using `setThemeBotClickIcon` method.
+
+```dart
+YmChat.setThemeBotClickIcon('https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png') ;
+```
+***
 
 #### iOS
 

@@ -228,6 +228,69 @@ Close button color can be set on `closeButtonColor`
 config.closeButtonColor = UIColor.blue
 ```
 
+### Theme setup
+
+You can customize the appearance of your chatbot interface by applying a theme. Using the YMConfig's theme property, you can modify various aspects of your chatbot, including its name, description, primary and secondary colors, icon, and click icon.
+
+You can set the theme using the `theme` property of the YMConfig object.
+
+```swift
+let theme = YMTheme() // YMTheme will holds the theme properties for your chatbot.
+
+// update properties of theme variable
+
+config.theme = theme // sets the theme to your bot config
+```
+
+#### Set bot name
+
+Define your bot's name using `theme.botName`.
+
+```swift
+theme.botName = "Demo Bot Name" 
+```
+
+#### Set bot description
+
+Provide a description for your bot using `theme.botDescription`.
+
+```swift
+theme.botDescription = "Demo Bot Description" 
+```
+
+#### Set bot primary color
+
+Customize the primary color of your bot using `theme.primaryColor`.
+
+```swift
+theme.primaryColor = .black
+```
+
+#### Set bot secondary color
+
+Define the secondary color of your bot using `theme.secondaryColor`.
+
+```swift
+theme.secondaryColor = .white
+```
+
+#### Set bot icon
+
+Choose an icon to represent your bot using `theme.botIcon`.
+
+```swift
+theme.botIcon = "https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png"
+```
+
+#### Set bot click icon
+
+Define an icon for the minimized state of your bot using `theme.botClickIcon`.
+
+```swift
+theme.botClickIcon = "https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png"
+```
+***
+
 ## Start chatbot
 
 Once the config is set, chat bot can be presented by calling `startChatbot()` method and passing your view controller as an argument

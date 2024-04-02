@@ -204,6 +204,59 @@ Close button color can be set by calling `setCloseButtonColor` method
 cordova.plugins.ymchat.setCloseButtonColor("#000000");
 ```
 
+### Theme setup
+
+You can customize the appearance of your chatbot interface by applying a theme. Using the YMConfig's theme property, you can modify various aspects of your chatbot, including its name, description, primary and secondary colors, icon, and click icon.
+
+#### Set bot name
+
+Define your bot's name using `setThemeBotName` method.
+
+```javascript
+cordova.plugins.ymchat.setThemeBotName('Demo Bot Name');
+```
+
+#### Set bot description
+
+Provide a description for your bot using `setThemeBotDescription` method.
+
+```javascript
+cordova.plugins.ymchat.setThemeBotDescription('Demo Bot Description');
+```
+
+#### Set bot primary color
+
+Customize the primary color of your bot using `setThemePrimaryColor` method.
+
+```javascript
+cordova.plugins.ymchat.setThemePrimaryColor('#000000');
+```
+
+#### Set bot secondary color
+
+Define the secondary color of your bot using `setThemeSecondaryColor` method.
+
+```javascript
+cordova.plugins.ymchat.setThemeSecondaryColor('#ffffff');
+```
+
+#### Set bot icon
+
+Choose an icon to represent your bot using `setThemeBotIcon` method.
+
+```javascript
+cordova.plugins.ymchat.setThemeBotIcon('https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png') ;
+```
+
+#### Set bot click icon
+
+Define an icon for the minimized state of your bot using `setThemeBotClickIcon` method
+
+```javascript
+cordova.plugins.ymchat.setThemeBotClickIcon('https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png') ;
+```
+***
+
 #### iOS
 
 If you are supporting Speech recognization, add following snippet to Info.plist of the host app

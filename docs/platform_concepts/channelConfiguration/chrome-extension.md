@@ -13,7 +13,7 @@ Follow these steps to add a Chrome extension and to preview your customised chat
 
 1. Install the Chrome extension using this [link](https://chrome.google.com/webstore/detail/yellowai-web-widget-launc/hlajdopahpkoakfedombhdpomlpmafbb).
 
-2. Copy the chat widget code as explained [here](#25-deploy-chat-widget).
+2. Copy the chat widget code as explained [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#deploy-chat-widget).
 
 3. Open the extension in your Chrome browser.
 
