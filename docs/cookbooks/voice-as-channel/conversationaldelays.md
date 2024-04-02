@@ -90,11 +90,9 @@ To design a good voice bot you must configure these parameters at the [node leve
 
 > STT engine:: Microsoft and STT mode:: Streaming
 
-| Parameters                     | Description                                                                                             |   Value   |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------- | --- |
-| **Recording max duration**     | Maximum duration after which the recording stops - the user response won't be accepted beyond this time. |  3 seconds   |
-| **Recording silence duration** |  This value is the Max duration for which the bot will wait after asking a question (in any step) for the user to respond.                                                                                                        |  Not applicable for the streaming mode   |
-| **Initial silence duration**   |  acceptable silence duration before a bot user starts speaking.                                                                                                        |  0.8 - 1 second   |
-| **Final silence duration**     |  Acceptable silence duration after a bot user starts speaking and the bot will have to process the response (Final dealy must be greater than expected pauses).   |   0.5-1 second    |
 
-
+| Parameters              | Description                                                                                   | Min Value | Max Value   |
+|-------------------------|-----------------------------------------------------------------------------------------------|-----------|-------------|
+| **Recording max duration**  | Maximum duration after which the recording stops - the user response won't be accepted beyond this time. | 5 seconds | 60 seconds  |
+| **Initial silence duration**| Acceptable silence duration before a bot user starts speaking.                                 | 5 seconds | 10 seconds  |
+| **Final silence duration**  | Acceptable silence duration after a bot user starts speaking and the bot will have to process the response (Final delay must be greater than expected pauses). | 0.1 seconds | 5 seconds   |

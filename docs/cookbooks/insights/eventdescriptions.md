@@ -493,7 +493,7 @@ Analytics table can be found under custom tables in which the following data is 
 
 | Fields                   | Description  |
 |--------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| CHATURL                  | Link to Chat Transcript: [Example](https://app.yellow.ai/public/messages/a9c9844ad89bb7aeb6a3918ad57623c37616acfc6c094e3b529ad0a763323f9e687450946280f5eca561274bdc0d6360510eff61eb0b24d55cb5c1e7092c/660a37f54a1f6800016fd072) |
+| CHATURL                  | Link to Chat Transcript: e.g. https://app.yellow.ai/public/messages/a9c9844ad89bb7aeb6a3918ad57623c37616acfc6c094e3b529ad0a763323f9e687450946280f5eca561274bdc0d6360510eff61eb0b24d55cb5c1e7092c/660a37f54a1f6800016fd072 |
 | TIMESTAMP                | Date and Time when event was triggered: Sun Mar 31 2024 11:28 PM                                                          |
 | AEVENT                   | Event triggered upon an action. This includes both OOB, and custom events configured in the bot: e.g. welcome_message, kb_question_not_answered, booking_done |
 | MESSAGEID                | Unique ID set in backend for each message: e.g. 123456789                                                                  |
@@ -508,7 +508,7 @@ Analytics table can be found under custom tables in which the following data is 
 | PROFILE_LONGITUDE        | Longitude value of user's location: e.g. -104.9847                                                                        |
 | PROFILE_NAME             | (User) Profile name set up in backend. This will be random values so that user privacy is maintained: e.g. John Doe, Jane Smith |
 | PROFILE_OS               | Operating system through which user accessed the chatbot: e.g. Windows 10.0, macOS 10.15.7                                 |
-| PROFILE_PAGEURL          | URL of the page from which the user accessed the chatbot: [Example](https://yellow.ai)                                    |
+| PROFILE_PAGEURL          | URL of the page from which the user accessed the chatbot. e.g. https://yellow.ai                                    |
 | PROFILE_DEVICETYPE       | Type of device from which the user accessed the chatbot: e.g. Microsoft Windows, Apple Mac                                |
 | PROFILE_REGION           | Region of user that accessed the chatbot (fetched from IP address): e.g. California, Florida                               |
 | PROFILE_SOURCE           | Device, OS, and Browser details of the user: e.g. Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36 |
