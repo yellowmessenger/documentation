@@ -287,7 +287,72 @@ or
 ymChat.config.closeButtonColorHex = "#FFFFFF"
 ```
 
-Note: if both `closeButtonColor` and `closeButtonColorFromHex` is used then `closeButtonColorFromHex` will take priority
+Note: if both `closeButtonColor` and `closeButtonColorFromHex` is used then `closeButtonColorFromHex` will take priority.
+
+***
+
+### Theme setup
+
+You can customize the appearance of your chatbot interface by applying a theme. Using the YMConfig's theme property, you can modify various aspects of your chatbot, including its name, description, primary and secondary colors, icon, and click icon.
+
+You can set the theme using the `theme` property of the YMConfig object.
+
+```java
+YMTheme theme = new YMTheme(); // YMTheme will holds the theme properties for your chatbot.
+
+// update properties of theme variable
+
+ymChat.config.theme = theme; // sets the theme to your bot config
+```
+
+#### Set bot name
+
+Define your bot's name using `theme.botName`.
+
+```java
+theme.botName = "Demo Bot Name";
+```
+
+#### Set bot description
+
+Provide a description for your bot using `theme.botDesc`.
+
+```java
+theme.botDesc = "Demo Bot Description";
+```
+
+#### Set bot primary color
+
+Customize the primary color of your bot using `theme.primaryColor`.
+
+```java
+theme.primaryColor = "#000000";
+```
+
+#### Set bot secondary color
+
+Define the secondary color of your bot using `theme.secondaryColor`.
+
+```java
+theme.secondaryColor = "#FFFFFF";
+```
+
+#### Set bot icon
+
+Choose an icon to represent your bot using `theme.botIcon`.
+
+```java
+theme.botIcon = "https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png"
+```
+
+#### Set bot click icon
+
+Define an icon for the minimized state of your bot using `theme.botClickIcon`.
+
+```java
+theme.botClickIcon = "https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png"
+```
+***
 
 ## Starting the bot
 

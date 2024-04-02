@@ -1417,6 +1417,7 @@ module.exports = {
               "platform_concepts/mobile/chatbot/xamarin",
               "platform_concepts/mobile/chatbot/secure-ymauth",
               "platform_concepts/mobile/chatbot/send-event-workflow",
+              "platform_concepts/mobile/chatbot/push-notifications-sdks",
               ],
             },
             "platform_concepts/mobile/chatbot/mobile-sdk-faq",

@@ -272,17 +272,11 @@ Your widget has been set up with your preferred style and settings, you can depl
 
 To deploy the widget on your website, follow these steps:
 
-1. Navigate to the **Deploy** tab.
-2. Copy the code using the respective icon, and paste it on your website.  
+1. Navigate to the **Deploy** > **Web** > **Copy code to Install bot**.
+  
+ <img src="https://i.imgur.com/G9ZU6PI.png" width="70%"/>
 
-   <img src="https://i.imgur.com/G9ZU6PI.png" width="70%"/>
-
-
-2. In the same code, next to bot ID, add the following:
-
-```
-{ bot: '{botId}',alignLeft: true }
-```  
+2. Copy the code and paste it on your body of your website.  
 
 **Sample JavaScript to embed the chatbot on a website**:
 
@@ -316,7 +310,6 @@ To deploy the widget on your website, follow these steps:
 })(); 
 </script>
 ```
-
 
 
 :::note
