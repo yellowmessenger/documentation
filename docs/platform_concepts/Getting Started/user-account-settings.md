@@ -39,7 +39,7 @@ The green check mark under **Password must contain** indicates the strength of y
 
 ## Change platform language
 
-You can view all the options on the platform in the language of your choice by selecting the language. This is applicable only to your account, you can reset the language at any point in time. By default, the platform language is English. To change the language:
+You can view all the options on the platform in the language of your choice by selecting the language. This is applicable only to your account, you can reset the language at any point in time. By default, the platform language is English. To remove or add bot languages:
 
 1. Click on your profile icon > **My profile** > **Account** > **Change language**.
 
