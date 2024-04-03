@@ -87,15 +87,6 @@ You can simply select the desired columns, add the formula using arithmetic oper
 
 ![](https://hackmd.io/_uploads/BkMqSkqHh.png)
 
-
-### Pivot data tables
-
-Pivot tables are a powerful feature that can help you summarize, sort, and analyse large amounts of data quickly and efficiently. With a pivot table, you can create a new table that allows you to rearrange and summarize your data by switching the rows for a base column. This feature enables you to easily analyse and understand complex data sets and identify trends, patterns, and insights that may be difficult to spot in a traditional table format.
-
-> This feature is available for **Saved reports**. Read more [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#5-pivot-a-report). 
-
-![](https://hackmd.io/_uploads/HkOC8y5rh.png)
-
 ----
 
 ## 3. Download summarized data 
