@@ -215,6 +215,10 @@ When the bot asks a question and the user responds, the response will be stored 
 
 To retrieve the data stored in a specific variable, you need to fetch the variable in a node and add syntaxes to it .(if it's an array or object).  
 
+:::note
+An object response or an array object response cannot be displayed directly. You have to store the object responses in a variable and use the following syntaxes to fetch specific pieces of data from the object response.
+:::
+
 1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to the respective node.
 2. Fetch the variable that contains the data.
 
@@ -229,7 +233,7 @@ To retrieve the data stored in a specific variable, you need to fetch the variab
 | JSON Response Array | `{{{variables.variablename.arrayname.[position of the array].field}}}` or `{{{variables.variablename.fieldname}}}` |
 
 :::note
-Journey and Global variables get **expired after 48 hours** of inactivity.
+* Journey and Global variables get **expired after 48 hours** of inactivity.
 :::
  
 **Data types supported by nodes**
