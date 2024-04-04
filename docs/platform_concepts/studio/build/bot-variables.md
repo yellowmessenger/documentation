@@ -220,16 +220,17 @@ To retrieve the data stored in a specific variable, you need to fetch the variab
 
   ![](https://i.imgur.com/RudXA5G.png)
 
-3. If the data is array/object, along with the variable, use a syntax to filter out the required data. You can refer to the following table for syntaxes to use depending on the data type.
+3. If the data is array/object, you cannoy display them directly. You need to use a syntax to filter out the required data. Refer to the following table for syntaxes to use depending on the data type.
 
 | Datatype | Syntax |
 |----------|--------|
 | String   | `{{{variables.variablename}}}` |
 | Array    | `{{{variables.variablename.[position of the array].fieldname}}}` |
-| JSON Response Array | `{{{variables.variablename.arrayname.[position of the array].field}}}` or `{{{variables.variablename.fieldname}}}` |
+| JSON Response Array | Store the object in a variable and then use this syntax to retrieve data from specific fields:`{{{variables.variablename.arrayname.[position of the array].field}}}` or `{{{variables.variablename.fieldname}}}` |
+| JSON Object  |  Store the object in a variable and then use this syntax to retrieve data from specific fields: `{{{variables.variablename.fieldname}}}` |
 
 :::note
-Journey and Global variables get **expired after 48 hours** of inactivity.
+* Journey and Global variables get **expired after 48 hours** of inactivity.
 :::
  
 **Data types supported by nodes**
