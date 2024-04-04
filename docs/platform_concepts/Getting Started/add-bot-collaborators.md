@@ -13,15 +13,15 @@ Only the **super admin** can provide bot access to other users. Access can be re
 
 The following table outlines various roles along with the associated access privileges for the bot: 
 
-| Role | Description |
-|------ | --------- |
-| Super Admin | This user has full control over all bot features and can perform the following: <ol><li> Provide *Approver* access to others.  </li><li> [Mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict other users from viewing specific information such as PII. </li></ol>|
-|Admin | This user has access to all modules and their components.|
-|Developer | This user has complete access to bot components but cannot edit bot configurations or invite other users to use the bot.|
+| Role | Description | Modify access | 
+|------ | --------- | --------- |
+| Super Admin | This user has full control over all bot features.  The role cannot be deleted or swapped on the UI (this action is only possible through Admin portal). |<ol><li> Can provide *Approver* and other accesses to others.  </li><li>  Can provide Approver access to an user without providing Developer access. </li><li> [Mask table columns](/docs/platform_concepts/studio/database#7-mask-database-columns) to restrict other users from viewing specific information such as PII.  </li><li>  Can delete accesses given to other users. </li></ol> | 
+|Admin | This user has access to all modules and their components.| <ol><li> Can add/delete **Approver + Developer** and other roles. </li><li>  Cannot add Approver role when the Developer access is not provided. </li><li>  Cannot delete Approver role when Developer role exists.  </li></ol> | 
+|Developer | This user has complete access to bot components but cannot edit bot configurations or invite other users to use the bot.| Developer access must be provided to add Approver. | 
 |Database Viewer |  This user is limited to editing and viewing tables and their data in selected databases.|
-| Approver | This user has the ability to publish the bot from staging/development to production/live. |
-| Inbox (Admin) | This user can respond to assigned customer chats or emails and can view Monitor, Analytics (self-reports), and KB.|
-|Inbox (Agent) | This user can respond to their assigned customer chats or emails and has viewing access to Monitor, Analytics (self-reports), and the KB.|
+| Approver | This user has complete access to bot components (as a Developer) and also has the ability to publish the bot from staging/development to production/live. | Developer + Approver | 
+| Inbox (Admin) | This user can respond to assigned customer chats or emails and can view Monitor, Analytics (self-reports), and KB.| <ol><li>  Has access to all the Inbox features.  </li><li> Can add/delete any Inbox settings.  </li><li> Must have Developer/Admin access to use Studio and create flows. </li></ol>| 
+|Inbox (Agent) | This user can respond to their assigned customer chats or emails and has viewing access to Monitor, Analytics (self-reports), and the KB.| 
 |Insights (Analytics) | This user can only access standard analytics (default table), bot health monitoring, user journey tracking, and goal monitoring for informed decision-making.|
 |Insights (Admin) | This user has holistic access to all bot-related data and analytics, enabling in-depth analysis.|
 |Engagement (Admin) | This user can manage campaign deployment and audience configuration for effective engagement strategies.|
