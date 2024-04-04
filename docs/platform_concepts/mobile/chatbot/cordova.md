@@ -162,6 +162,17 @@ Speech to text can be enabled and disabled by calling `setEnableSpeech()`. Defau
 cordova.plugins.ymchat.setEnableSpeech(true);
 ```
 
+#### iOS
+
+If you are supporting Speech recognization, add following snippet to Info.plist of the host app
+
+```
+<key>NSMicrophoneUsageDescription</key>
+<string>Your microphone will be used to record your speech when you use the Voice feature.</string>
+<key>NSSpeechRecognitionUsageDescription</key>
+<string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
+```
+
 #### Mic Icon Color
 
 You can change the mic button icon color using the `setMicIconColor` function:
@@ -256,17 +267,6 @@ Define an icon for the minimized state of your bot using `setThemeBotClickIcon` 
 cordova.plugins.ymchat.setThemeBotClickIcon('https://cdn.yellowmessenger.com/XJFcMhLpN6L91684914460598.png') ;
 ```
 ***
-
-#### iOS
-
-If you are supporting Speech recognization, add following snippet to Info.plist of the host app
-
-```
-<key>NSMicrophoneUsageDescription</key>
-<string>Your microphone will be used to record your speech when you use the Voice feature.</string>
-<key>NSSpeechRecognitionUsageDescription</key>
-<string>Speech recognition will be used to determine which words you speak into this device&apos;s microphone.</string>
-```
 
 ### Present chatbot
 

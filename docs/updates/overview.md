@@ -33,14 +33,6 @@ Agents can now respond directly from the Konnect Insights dashboard, leveraging 
 [Explore the Konnect Insights integration Guide](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/konnect-insights)
 
 
-
-## X (Twitter) Integration Support via Radarr
-
-You can now seamlessly connect your bot to your X account via Radarr without any additional setup. Simply use your Twitter credentials to establish the connection, allowing your bot to engage directly on X.
-
-[Learn more](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/twitter#connect-twitter-to-your-bot)
-
-
 ---
 
 ## Introducing Pivot Table in Reports
