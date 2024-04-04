@@ -188,6 +188,15 @@ WhatsApp template supports three different quick reply actions. You can use the 
 
 The following are the three different quick reply options:
 
+:::note
+
+####Activation of Quick Reply Event:
+
+* Regardless of the button action chosen ("send as event," "triggerJourney," or "triggerNLP"), activating the quick reply event is mandatory.
+This activation step must be completed before proceeding with any other actions.
+
+:::
+
 ### Trigger journey
 
 Use this to trigger a specific journey when the user clicks on the button. For example, you can use it to send a promotional notification about store offers and trigger the bot flow through which users can buy products when the user clicks on it.
@@ -213,6 +222,11 @@ Enter the **Button text**, choose the **Action type**,  *Trigger NLP*.
 
 ### Send as Event 
 Use this to send all the template data to the bot and use it in custom flows. For example, you can capture the button clicked and the userId in a custom dataset.
+
+:::note
+#### Prerequisite to use Send as Event action
+If you use the Send as event action, you will need to import the corresponding flow from the marketplace. This import is necessary to ensure the smooth functioning of the chosen button action.
+:::
 
 Enter the **Button text**, choose the **Action type**,  *Send as event*.
 
