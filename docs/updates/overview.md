@@ -55,3 +55,4 @@ Explore data effortlessly with the new pivot table feature in reports. Organize 
 
 You can now set up push notifications for your mobile app by linking the Firebase server JSON to a bot. This feature enables you to reach your users with bot notifications directly on their mobile devices, boosting user engagement and delivering timely updates.
 
+[Learn how to setup SDK push notifications](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/push-notifications-sdks)
