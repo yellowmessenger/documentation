@@ -190,7 +190,7 @@ The following are the three different quick reply options:
 
 :::note
 
-####Activation of Quick Reply Event:
+#### Activation of Quick Reply Event:
 
 * Regardless of the button action chosen ("send as event," "triggerJourney," or "triggerNLP"), activating the quick reply event is mandatory.
 This activation step must be completed before proceeding with any other actions.
@@ -225,7 +225,7 @@ Use this to send all the template data to the bot and use it in custom flows. Fo
 
 :::note
 #### Prerequisite to use Send as Event action
-If you use the Send as event action, you will need to import the corresponding flow from the marketplace. This import is necessary to ensure the smooth functioning of the chosen button action.
+If you use the **Send as event** action, you will need to import the corresponding flow from the marketplace. This import is necessary to ensure the smooth functioning of the chosen button action.
 :::
 
 Enter the **Button text**, choose the **Action type**,  *Send as event*.
