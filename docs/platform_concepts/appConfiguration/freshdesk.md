@@ -3,56 +3,59 @@ title : Freshdesk
 sidebar_label : Freshdesk
 ---
 
-You can integrate the Yellow.ai platform with your [Freshdesk](https://www.freshworks.com/freshdesk/lp/freshdesk-brand-2/?tactic_id=3387224&utm_source=google-adwords&utm_medium=FD-Search-Brand-India&utm_campaign=FD-Search-Brand-India&utm_term=freshdesk&device=c&matchtype=e&network=g&gclid=CjwKCAiAk--dBhABEiwAchIwkWwR98aagz6FUX6uYz0UUX5vI0nF2LejFRgTXo8mXiGm6jC87Ef5YxoCLfcQAvD_BwE&gclid=CjwKCAiAk--dBhABEiwAchIwkWwR98aagz6FUX6uYz0UUX5vI0nF2LejFRgTXo8mXiGm6jC87Ef5YxoCLfcQAvD_BwE) account. This integration lets you create/update tickets, fetch ticket details and modify ticket forms. Along with this you can also get agent info, create notes and add watchers to the tickets.
+The integration is tailored for users who are already using the Freshdesk platform. With Freshdesk integration, you gain the ability to seamlessly perform various support-related activities directly from the Yellow.ai Cloud platform. This includes creating and updating tickets, accessing ticket details, modifying ticket forms, retrieving agent information, creating notes, and adding watchers to tickets. 
+
+This integration enhances your support capabilities as a Freshdesk user by providing you with additional tools and functionalities within the Yellow.ai platform, facilitating a more efficient and streamlined support process.
+
+
+
 
 ## 1. Connect Freshdesk with Yellow.ai
 
-You need a **Freshdesk domain** and an **API key** to integrate with Yellow.ai.
+For this integration, you will need **Freshdesk domain** and an **API key**. 
 
-### 1.1 Get the API Key from Freshdesk 
+### 1.1 Get your domain address & API Key from Freshdesk 
 
-1. Log in to your **Freshdesk** portal.
-2. Click your profile picture in the top right corner of the portal.
+1. Log in to your **Freshdesk** account.
+2. From the browser address bar, copy the **Freshdesk domain URL**. Example: https://yellowai-dummy.freshdesk.com
+3. Click your profile picture on the top right corner.
 
-<img src="https://i.imgur.com/BM5bpz1.png" alt="drawing" width="50%"/>
+   <img src="https://i.imgur.com/BM5bpz1.png" alt="drawing" width="30%"/>
 
-3. Go to the **Profile Settings**.
-4. Your API Key will be available in the right corner below the change password section. Copy it.
+4. Go to the **Profile Settings**.
+5. Your API Key will be available in the right corner below the *Change password* section. Copy it.
 
-![](https://i.imgur.com/2Cvs7LR.png)
-
-
-### 1.2 Fetch your Freshdesk domain
-
-You can get your **Freshdesk domain URL** from the browser address bar e.g., https://yellowai-dummy.freshdesk.com
-
-### 1.3 Enable the integration in Yellow.ai ’s Integration section
-
-1. Go to https://cloud.yellow.ai and search for **Freshdesk** in the **All Integrations** search box. 
-
-![](https://i.imgur.com/QZewAAS.png)
-
-2. Fill in the **Api Key** and  **Domain Name** and click the **Connect** button.
-3. If you have multiple accounts, follow the above mentioned steps to add each of them.
-
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
-
-4. Once **Freshdesk** is connected to the platform, you will find **Freshdesk** in the **Integrations** node.
-
-![](https://i.imgur.com/QFXJeRm.png)
+   ![](https://i.imgur.com/2Cvs7LR.png)
 
 
-## 2. Use-cases 
 
-The following are the use cases that are accommodated in this integration:
+### 1.2 Add API key and domain to the Cloud platform
+
+1. Go to the [Cloud Platform](https://cloud.yellow.ai) and navigate to the Development environment.
+   * In a two-tier environment, you can only add accounts in the Development environment.
+   * In a three-tier environment, you can only add accounts in Staging/Sandbox environment.
+2. Search for **Freshdesk** in the **All Integrations** search box. 
+
+   <img src="https://i.imgur.com/9fReTSZ.png"/>
+
+3. In **Give account name**, enter a unique name for the account.Supports only lowercase alphanumeric and underscore characters. It is recommended to use a name that aligns with its purpose for better usability. 
+
+4. Enter the **Api Key** and  **Domain Name** and click the **Connect** button.
+5. To connect additional accounts, repeat the steps outlined above for each account. You can add a maximum of 15 accounts.
+
+
+
+
+## 2. Manage Freshdesk Tickets through Studio (bot conversations)
+
+This integration facilitates various actions for managing Freshdesk tickets directly within Studio's bot conversations. You can view the connected accounts under Node > **Integrations** > **Freshdesk** in Studio.
+  
+  ![](https://i.imgur.com/QFXJeRm.png)
+
+
 
 :::note
-When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+When multiple accounts are added, choose the right account that you want to use to manage tickets.
 :::
 
 ### 2.1 Create ticket
@@ -62,26 +65,28 @@ This action creates a new support ticket in **Freshdesk**.
 **Node Input Params:**
 
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| Email|	jhon.doe@yellow.ai|	String  | 
-|Name|	John Doe	|String Type|
-Phone|	9999999999|	String Type|
-|Priority|	2|	Number Type<br/> Low:1<br/> Medium: 2 <br/>High: 3<br/> Urgent: 4<br/>|
-|Source|	1	|Number Type<br/> Email:1<br/> Portal: 2<br/> Phone: 3	<br/> Chat: 7<br/> Feedback Widget: 9 <br/>Outbound Email:  10<br/>|
-|Status|	3	|Number Type Open: 2<br/> Pending: 3 <br/>Resolved:4 <br/>Closed: 5<br/>|
-|Tags|	[”login failure”,”system issue”]|	Array Type|
-|Custom Fields	|{”key1”:”value1”,..}|	Object Type|
-|Email Config ID|	4|	Number Type|
-|Description|	Ticket Description|	String Type|
-|Group ID|	2|	Number Type|
-|Product ID|	4	|Number Type|
-|Subject|	Ticket Subject	|String Type|
-|Type|	Ticket Type|	String|
+| Field Name       | Description                                             | Datatype        |
+| ---------------- | ------------------------------------------------------- | --------------- |
+| Email            | Email address of the user. Example: jhon.doe@yellow.ai  | String          |
+| Name             | Name of the user. Example: John Doe                     | String          |
+| Phone            | Mobile number of the user (sample value: 9999999999)    | String          |
+| Priority         | Priority level of the ticket (Low: 1, Medium: 2, High: 3, Urgent: 4) | Number  |
+| Source           | Source of the ticket (Email: 1, Portal: 2, Phone: 3, Chat: 7, Feedback Widget: 9, Outbound Email: 10) | Number Type |
+| Status           | Status of the ticket (Open: 2, Pending: 3, Resolved: 4, Closed: 5) | Number |
+| Tags             | Tags associated with the ticket ("login failure", "system issue") | Array  |
+| Custom Fields    | Custom fields and their values (`{"cf_key1": "value1", ...}`) | Object Type (Ensure key names are prefixed with "cf_") |
+| Email Config ID  | Email configuration ID                                  | Number |
+| Description      | Description of the ticket                               | String |
+| Group ID         | Group ID associated with the ticket                     | Number |
+| Product ID       | Product ID associated with the ticket                   | Number |
+| Subject          | Subject of the ticket                                   | String |
+| Type             | Type of the ticket (e.g., Incident, Problem)            | String |
+
+
 
 **Sample Response:**
 
-```
+```json
 {
   "cc_emails": [
     "ram@freshdesk.com",
@@ -127,27 +132,28 @@ This action updates a single ticket.
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-|Ticket ID|2112| Number Type|
-| Email|	jhon.doe@yellow.ai|	String  | 
-|Name|	John Doe	|String Type|
-Phone|	9999999999|	String Type|
-|Priority|	2|	Number Type<br/> Low:1<br/> Medium: 2 <br/>High: 3<br/> Urgent: 4<br/>|
-|Source|	1	|Number Type<br/> Email:1<br/> Portal: 2<br/> Phone: 3	<br/> Chat: 7<br/> Feedback Widget: 9 <br/>Outbound Email:  10<br/>|
-|Status|	3	|Number Type Open: 2<br/> Pending: 3 <br/>Resolved:4 <br/>Closed: 5<br/>|
-|Tags|	[”login failure”,”system issue”]|	Array Type|
-|Custom Fields	|{”key1”:”value1”,..}|	Object Type|
-|Email Config ID|	4|	Number Type|
-|Description|	Ticket Description|	String Type|
-|Group ID|	2|	Number Type|
-|Product ID|	4	|Number Type|
-|Subject|	Ticket Subject	|String Type|
-|Type|	Ticket Type|	String|
+| Field Name       | Description                                             | Datatype        |
+| ---------------- | ------------------------------------------------------- | --------------- |
+| Ticket ID        | Ticket identification number (e.g., 2112)                | Number |
+| Email            | Email address of the user (e.g., jhon.doe@yellow.ai)    | String |
+| Name             | Name of the user (e.g., John Doe)                       | String |
+| Phone            | Mobile number of the user (e.g., 9999999999)            | String |
+| Priority         | Priority level of the ticket (Low: 1, Medium: 2, High: 3, Urgent: 4) | Number |
+| Source           | Source of the ticket (Email: 1, Portal: 2, Phone: 3, Chat: 7, Feedback Widget: 9, Outbound Email: 10) | Number |
+| Status           | Status of the ticket (Open: 2, Pending: 3, Resolved: 4, Closed: 5) | Number  |
+| Tags             | Tags associated with the ticket (e.g., ["login failure", "system issue"]) | Array   |
+| Custom Fields    | Custom fields and their values (e.g., {"key1": "value1", ...}) | Object Type (Ensure key names are prefixed with "cf_") |
+| Email Config ID  | Email configuration ID                                  | Number |
+| Description      | Description of the ticket                               | String |
+| Group ID         | Group ID associated with the ticket                     | Number |
+| Product ID       | Product ID associated with the ticket                   | Number |
+| Subject          | Subject of the ticket                                   | String |
+| Type             | Type of the ticket (e.g., Incident, Problem)            | String |
+
 
 **Sample Response:**
 
-```
+```json
 
 {
   "cc_emails": [],
@@ -184,10 +190,12 @@ This action retrieves all the tickets. By default, only 50 tickets that were cre
                 
 **Node Input Params:**
 
-|Field Name|	Sample Input|	Remarks|
-|----------|----------------|---------|
-Page No|	1|	Number Type
-Page Size|	10|	Number Type|
+| Field Name | Description                    | Datatype     |
+|------------|--------------------------------|--------------|
+| Page No    | Page number                    | Number       |
+| Page Size  | Number of items per page       | Number       |
+
+
 
 **Sample Response:**
 
@@ -224,7 +232,7 @@ Page Size|	10|	Number Type|
       "fr_due_by": "2015-08-18T11:30:00Z",
       "is_escalated": false,
       "custom_fields": {
-        "category": "Default"
+        "cf_category": "Default"
       }
     },
     {
@@ -251,7 +259,7 @@ Page Size|	10|	Number Type|
       "fr_due_by": "2015-08-18T11:30:00Z",
       "is_escalated": false,
       "custom_fields": {
-        "category": null
+        "cf_category": null
       }
     }
   ]
@@ -263,14 +271,15 @@ Retrieves the details for the specified ticket ID.
 
 **Node Input Params:**
 
-|Field Name|	Sample Input|	Remarks|
-|---------|-----------------|---------|
-Ticket ID|	5|	Number Type|
+| Field Name | Description                             | Datatype     |
+|------------|-----------------------------------------|--------------|
+| Ticket ID  | Ticket identification number (e.g., 5) | Number       |
+
 
 **Sample Response:**
 
-```
-           {
+```json
+{
   "cc_emails": [
     "user@cc.com"
   ],
@@ -302,7 +311,7 @@ Ticket ID|	5|	Number Type|
   "description_text": "Not given.",
   "description": "<div>Not given.</div>",
   "custom_fields": {
-    "category": "Primary"
+    "cf_category": "Primary"
   },
   "tags": [],
   "attachments": []
@@ -314,6 +323,27 @@ Ticket ID|	5|	Number Type|
 This action allows the user to update multiple tickets.
 
 **Node Input Params:**
+
+| Field Name         | Description                                                                                   | Datatype            |
+|--------------------|-----------------------------------------------------------------------------------------------|---------------------|
+| Ticket IDs         | Array of ticket identification numbers (e.g., [5,6,7])                                        | Array of Number     |
+| Properties         | Object containing ticket properties <br/> ![Properties](https://i.imgur.com/3GNlnri.png)<br/> ![Properties](https://i.imgur.com/wR3Gzye.png)   | Object Type         |
+| Reply              | Object containing the content of the reply to be added to the tickets <br/> ![Reply](https://i.imgur.com/kCnb3DA.png)                                   | Object Type         |
+| From Email         | Support email address from which the reply should be sent                                      | String              |
+| Email Config ID   | ID of the support email configuration on the ticket                                            | Number              |
+| Group ID           | ID of the group to be assigned to the ticket                                                    | Number              |
+| Priority           | Priority level of the ticket (Possible values: 1, 2, 3, 4)                                      | Number              |
+| Source             | Source of the ticket (Possible values: 1, 2, 3, 7, 8, 9, 10)                                    | Number              |
+| Status             | Status of the ticket (Possible values: 2, 3, 4, 5, 6, 7)                                        | Number              |
+| Type               | Type of the ticket                                                                             | String              |
+| Product ID         | ID of the product to be associated with the ticket                                              | Number              |
+| Custom Fields      | Key-value pairs containing the names and values of custom fields. Ensure keys are prefixed with `cf_` (e.g., {"cf_key1": "value1", ...})        | Object              |
+| Tags               | Array of strings representing tags associated with the ticket                                   | Array of strings    |
+| Internal Agent Id  | ID of the internal agent to whom the ticket should be assigned                                   | Number              |
+| Internal Group Id  | ID of the internal group to which the ticket should be assigned                                 | Number              |
+
+
+
 
 |Field Name|	Sample Input|	Remarks|
 | -------- | -------- | -------- |
@@ -328,7 +358,7 @@ Email Config ID|	Number|	Support email config on the ticket. This will be used f
 |Status|	Number|	Used to set the status of the ticket. Possible values are 2,3,4,5,6,7|
 |Type|	String|	Type of the ticket|
 |Product ID	|Number|	ID of the product to be associated with the ticket|
-|Custom Fields|	Object|	Key value pairs containing the names and values of custom fields.|
+|Custom Fields|	Object|	Key value pairs containing the names and values of custom fields. For custom fields, it's necessary to prefix the key with `cf_`.|
 |tags|	Array of strings|	Tags that have been associated with the ticket|
 |Internal Agent Id|	Number	|ID of the internal agent to whom the ticket should be assigned|
 |Internal Group Id|	Number|	ID of the internal group to which the ticket should be assigned with|
@@ -349,10 +379,11 @@ This action returns a filtered list of tickets based on the specified query filt
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| query*     | (priority:2)     | String Type     |
-|Page no|2|Number Type <br/> Max:10|
+| Field Name | Description | Datatype |
+| ---------- | ----------- | -------- |
+| query*     | Search query (e.g., "(priority:2)") | String  |
+| Page no    | Page number (e.g., 2) | Number  (Max:10) |
+
 
 **Query Formats:**
 
@@ -362,7 +393,7 @@ This action returns a filtered list of tickets based on the specified query filt
 
 **Sample Response:**
 
-```
+```json
  {
   "total": 49,
   "results": [
@@ -395,8 +426,8 @@ This action returns a filtered list of tickets based on the specified query filt
       "created_at": "2016-02-20T09:16:58Z",
       "updated_at": "2016-02-23T16:14:57Z",
       "custom_fields": {
-        "sector_no": 7,
-        "locked": true
+        "cf_sector_no": 7,
+        "cf_locked": true
       }
     },
     {
@@ -428,8 +459,8 @@ This action returns a filtered list of tickets based on the specified query filt
       "created_at": "2016-02-20T16:15:10Z",
       "updated_at": "2016-03-14T15:58:13Z",
       "custom_fields": {
-        "sector_no": 8,
-        "locked": true
+        "cf_sector_no": 8,
+        "cf_locked": true
       }
     }
   ]
@@ -442,14 +473,15 @@ Retrieves a list of all agents. The default **Page Number** is 1 and the **Page 
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| Page Number     | 1     | Number Type     |
-|Page Size|10 |Number Type|
+| Field Name   | Description        | Datatype     |
+|--------------|--------------------|--------------|
+| Page Number  | Page number        | Number |
+| Page Size    | Number of items per page (max: 10) | Number |
+
 
 **Sample Response:**
 
-```
+```json
 [
   {
     "available": true,
@@ -508,14 +540,14 @@ This action returns a list of all agent groups. This data can be used in creatin
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| Page Number     | 1     | Number Type     |
-|Page Size|10 |Number Type|
+| Field Name   | Description        | Datatype     |
+|--------------|--------------------|--------------|
+| Page Number  | Page number        | Number |
+| Page Size    | Number of items per page (max: 10) | Number |
 
 **Sample Response:**
 
-```
+```json
 [
   {
     "id": 6733,
@@ -587,13 +619,14 @@ Retrieves all the email configs that are configured in the support panel setting
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| Page Number     | 1     | Number Type     |
-|Page Size|10 |Number Type|
+| Field Name   | Description        | Datatype     |
+|--------------|--------------------|--------------|
+| Page Number  | Page number        | Number |
+| Page Size    | Number of items per page (max: 10) | Number |
 
 **Sample Response:**
-```
+
+```json
 [
   {
     "id": 1,
@@ -627,14 +660,14 @@ Gets the list of products configured in the **Freshdesk** support panel. By defa
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| Page Number     | 1     | Number Type     |
-|Page Size|10 |Number Type|
+| Field Name   | Description        | Datatype     |
+|--------------|--------------------|--------------|
+| Page Number  | Page number        | Number |
+| Page Size    | Number of items per page (max: 10) | Number |
 
 **Sample Response:**
 
-```
+```json
 [[
   {
     "id": 1,
@@ -652,10 +685,11 @@ This action adds agents as a watcher to the specified ticket.
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| Ticket ID     | 19     | Number Type     |
-|User ID |5 |Number Type|
+| Field Name | Description                        | Datatype       |
+|------------|------------------------------------|---------------|
+| Ticket ID  | Ticket identification number <br/> Example: 19      | Number  |
+| User ID    | User identification number <br/> Example: 5         | Number    |
+
 
 ### 2.12 Get all ticket forms
 
@@ -663,7 +697,7 @@ Retrieves the list of all the available ticket forms from **Freshdesk**. This ac
 
 **Sample Response:**
 
-```
+```json
 [
   {
     "id": 1,
@@ -700,13 +734,13 @@ Retrieves the ticket form details of the specified formId.
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| formId     | 3     | Number Type     |
+| Field Name | Description                             | Datatype   |
+|------------|-----------------------------------------|------------|
+| formId     | Form identification number               | Number     |
 
 **Sample Response:**
 
-```
+```json
 {
   "id": 3,
   "name": "return_items",
@@ -781,15 +815,16 @@ This action helps in updating the title and description of the specified formId.
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| formId     | 2    | Number Type     |
-|Title|Custom Ticket Form| String Type|
-|Description|This is a custom ticket form | String Type|
+| Field Name | Description                             | Datatype     |
+|------------|-----------------------------------------|--------------|
+| formId     | Form identification number              | Number       |
+| Title      | Title of the custom ticket form         | String       |
+| Description| Description of the custom ticket form   | String       |
+
 
 **Sample Response:**
 
-```
+```json
 {
   "id": 1,
   "name": "updated_returns_form",
@@ -847,16 +882,17 @@ This action helps in updating the fields in the ticket forms.
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| Field ID    | 2    | Number Type     |
-|Form ID|1| Number Type|
-|Field Name|Email |String Type <br/> Label for customers|
-|Field Placeholder|	johndoe@yellow.ai|	String Type|
-|Field Hint|	Customer Email|	String Type<br/> Hint for the customers will be displayed in a tooltip|
-|Is Editable|	true|Boolean Type<br/>Set to true if the field can be updated by customers|
-|Field Postion|	2	|Number Type<br/>Field position in the form|
-|Required for Customers|	false|Boolean Type<br/>Set to true if the field is displayed in the portal|
+| Field Name          | Description                                          | Datatype      |
+|---------------------|------------------------------------------------------|---------------|
+| Field ID            | Field identification number                          | Number        |
+| Form ID             | Form identification number                           | Number        |
+| Field Name          | Name of the field                                    | String        |
+| Field Placeholder   | Placeholder text for the field (e.g., johndoe@yellow.ai) | String     |
+| Field Hint          | Hint text for the field displayed in a tooltip (e.g., Customer Email) | String |
+| Is Editable         | Indicates if the field can be updated by customers (e.g., true) | Boolean |
+| Field Position      | Position of the field in the form (e.g., 2)          | Number        |
+| Required for Customers | Indicates if the field is required for customers in the portal (e.g., false) | Boolean |
+
 
 **Sample Response:**
 
@@ -889,45 +925,47 @@ This action helps in creating a public or private note in the ticket.
 
 **Node Input Params:**
 
-| Field Name | Sample Input | Remarks |
-| -------- | -------- | -------- |
-| Body(HTML)    | <html><body>sample text</body></html>   | Number Type     |String Type<br/> Html content should be added as note in ticket|
-|Ticket ID|	2|Number Type|
-|Notify Agents |[“agent1@freshdesk.com”,”agent2@freshdesk.com”]	|Array Type|
-|Private|	false|	Set true for private note and false for public|
-|User ID|	3|	ID of the agent who is adding a note|
+| Field Name    | Description                                     | Datatype           |
+|---------------|-------------------------------------------------|--------------------|
+| Body(HTML)    | HTML content for the note (e.g., <html><body>sample text</body></html>) | String (HTML) |
+| Ticket ID     | Ticket identification number                    | Number             |
+| Notify Agents | List of email addresses to notify (e.g., ["agent1@freshdesk.com", "agent2@freshdesk.com"]) | Array of strings |
+| Private       | Indicates if the note is private (e.g., false for public, true for private) | Boolean            |
+| User ID       | Identification of the agent adding the note (e.g., 3) | Number|
+
 
 
 **Sample Response:** 5
 
-## 3. Common errors and solutions
 
-**Error:** Action node failed.
 
-```
+
+
+## 3. Freshdesk node Troubleshooting guide
+
+### Action node failed
+
+**Error Details:**
+```json
 "field": "custom_fields.cf_agent",
-            "message": "It should be one of these values: 'Sarath,Bharath,Ajay,Prem,Senthil,Archana,Sneha Kandasamy (Freshworks),Prashanth Thiagarajan (Freshworks),Aarabhi,Srikanth,Bibin,Ibraz,Animesh,Pawan,Arivazhahan,Kirti,Abrar,Bhavana,Chitrita,Dipesh,Ashok,Nishanth,Athulya,Chandni,Waseem,Akarsh V,Mayank'",
-            "code": "missing_field"
+"message": "It should be one of these values: 'Sarath,Bharath,Ajay,Prem,Senthil,Archana,Sneha Kandasamy (Freshworks),Prashanth Thiagarajan (Freshworks),Aarabhi,Srikanth,Bibin,Ibraz,Animesh,Pawan,Arivazhahan,Kirti,Abrar,Bhavana,Chitrita,Dipesh,Ashok,Nishanth,Athulya,Chandni,Waseem,Akarsh V,Mayank'",
+"code": "missing_field"
 ```
-```
+```json
 {
-            "field": "custom_fields.cf_category761533",
-            "message": "It should be one of these values: 'Transaction monitoring,Credit limit IncreaseV2,Feature Ask,App Breakages,KYC Verification Dont Use,Missing Label V2,Remittance India to US V2,Remittance U.S to India V2,ACH Transfer V2,WIRE Transfer V2,Credit card Bill Payment V2,Azpire V2,Azpire (linking to fintech Apps) V2,Azpire - Transaction Failures V2,Azpire - Transfers V2,Azpire - Bill Payments V2,Rewards 2.0 V2,Activation Journey V2,Credit card Subscription V2,SIM card request V2,Statements V2,KYC documents - Credit card / Checking account V2,Disputes V2,Card unblock V2,Card Ops V2,Account Closure V2,Bureau Reporting - Unsecured V2,Card logistics V2,Credit score tracker V2,Boost Account V2,Student Loan V2,Login/VPN issues V2,Reconciliation,ATM,CC Transaction Failures,Credit card / Debit card ( linking to fintech Apps),Junk/Influencer SPAM,Callback request'",
-            "code": "missing_field"
-        },
+"field": "custom_fields.cf_category761533",
+"message": "It should be one of these values: 'Transaction monitoring,Credit limit IncreaseV2,Feature Ask,App Breakages,KYC Verification Dont Use,Missing Label V2,Remittance India to US V2,Remittance U.S to India V2,ACH Transfer V2,WIRE Transfer V2,Credit card Bill Payment V2,Azpire V2,Azpire (linking to fintech Apps) V2,Azpire - Transaction Failures V2,Azpire - Transfers V2,Azpire - Bill Payments V2,Rewards 2.0 V2,Activation Journey V2,Credit card Subscription V2,SIM card request V2,Statements V2,KYC documents - Credit card / Checking account V2,Disputes V2,Card unblock V2,Card Ops V2,Account Closure V2,Bureau Reporting - Unsecured V2,Card logistics V2,Credit score tracker V2,Boost Account V2,Student Loan V2,Login/VPN issues V2,Reconciliation,ATM,CC Transaction Failures,Credit card / Debit card ( linking to fintech Apps),Junk/Influencer SPAM,Callback request'",
+"code": "missing_field"
+},
 ```
 
 **Problem:** Ticket creation using Freshdesk keeps failing because custom fields that were configured in your Freshdesk account weren't configured/passed in the Freshdesk nodes.
 
-**Solution:** Pass the custom field names in the parameter - {”key1”:”value1”,..}. The names of the custom fields are derived from the labels given to them during their creation. All the custom fields will have 'cf_' prepended to its name, eg., if you create a custom field with the label 'test', then the name of the custom_field will be 'cf_test'.
+**Solution:** 
+1. Pass the custom field names in the parameter as follows: `{"cf_key1": "value1", ...}`.
+2. Ensure that you prefix 'cf_' to the key.
+3. The custom field names are derived from the labels assigned to them during their creation. For instance, if you create a custom field with the label 'test', then the name of the custom field will be 'cf_test'.
 
-
-
-
-
-
-
-
-
+This solution ensures that the required custom fields are properly configured and passed in the Freshdesk node, preventing ticket creation failures.
 
 
