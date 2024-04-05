@@ -4,7 +4,13 @@ sidebar_label : Set working hours
 ---
 
 By enabling **Working Hours** in the Inbox settings, you can set the available number of hours your customer support team [groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups) will be functional. It refers to the time duration your agents would be available to take live chats and solve customer queries.
+
+[Service level agreements](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/slaintro) are calculated based on working hours. For example, if an SLA is set for 3 days, but the working hours are only 1 day per week, the effective SLA duration becomes 3 weeks. This is because it will take 1 day per week to calculate the SLA.
+By default, there are no working hours defined, so SLA calculations are not affected. However, when working hours are set, this calculation method comes into effect.
+
+
 In this section, you can specify unique working hours for each day of the week or/and set different working hours for each of your groups.
+
 
 In this article, you will learn:
 1. [Use case](#usecase)

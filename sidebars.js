@@ -269,6 +269,8 @@ module.exports = {
             "platform_concepts/studio/build/Flows/journeys",
             "platform_concepts/studio/build/Flows/configureflow",
             "platform_concepts/studio/build/Flows/exportflow",
+            "platform_concepts/studio/debugger",
+
           ],
         },
         
@@ -948,7 +950,7 @@ module.exports = {
             items: [
               "platform_concepts/growth/dataexplorer/sumarize",
               "platform_concepts/growth/dataexplorer/visualization",
-              "platform_concepts/growth/dataexplorer/pivottable",
+              //"platform_concepts/growth/dataexplorer/pivottable",
               "platform_concepts/growth/dataexplorer/formulacolumn",
                         ]
           },
@@ -1340,7 +1342,7 @@ module.exports = {
     link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
     collapsed: true,
     items: [
-      "cookbooks/voice-as-channel/build/convdesiVB",
+     // "cookbooks/voice-as-channel/build/convdesiVB",
       "cookbooks/voice-as-channel/build/usingvoiceinput",
       "cookbooks/voice-as-channel/build/usingmp", 
         ],

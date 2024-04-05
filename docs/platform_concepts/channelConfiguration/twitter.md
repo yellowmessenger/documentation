@@ -202,37 +202,9 @@ To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
    ![](https://i.imgur.com/PFvwsPc.png)
 
-3. You can connect your Twitter account to the bot by using the following options:
+3. Enter the details such as **Access token**, **Access token secret**, **Consumer key**, **Consumer secret**, and **Environment name** that you have copied from Twitter's developer portal and click **Connect**.
 
-    1. [Connect with X](#connect-with-x)
-    2. [Configure account](#configure-account)
-
-### Connect with X
-
-If you prefer to connect your bot directly to your Twitter account without any additional configuration, you can select this option.
-
-1. Select **Connect with X**.
-
-   ![image](https://hackmd.io/_uploads/S1ASf000p.png)
-
-2. Enter your Twitter username or email and password, then click **Sign In** to proceed.
-
-   ![image](https://imgur.com/5UzXXDf.png)
-   
-* This will establish the connection between your Twitter account and the bot via the radarr.
-
-### Configure account
- 
-You can use this option to customize your account settings in [Twitter developer portal](#setup-twitter-channel-using-developer-portal) before connecting.
-
-1. Select **Configure account**.
-
-  ![image](https://imgur.com/8z7MwMw.png)
-
-
-2. Copy the details such as **Access token, Access token secret, Consumer key, and Consumer secret** from Twitter's developer portal and click **Connect**.
-
-   <img src="https://hackmd.io/_uploads/S12qyR0Rp.png" alt="drawing" width="90%"/>
+   <img src="https://imgur.com/zW7Y88u.png" alt="drawing" width="90%"/>
  
 * This will connect your bot to the Twitter account. After the connection, you can test your bot.
 

@@ -29,6 +29,12 @@ These SLAs are set for email tickets on the Inbox settings page.
 - After the configuration, SLA time logs will be available for all the email tickets that are created via the email channel (it will not be applicable for the email tickets created manually by any agents/admins). 
 - **First response time(FRT)**, **Resolution time(RT)** and **Every response time(ERT)** are the SLA metrics monitored for all the tickets. 
 
+:::note
+
+In our system, SLAs are calculated based on [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours). For example, if an SLA is set for 3 days, but the working hours are only 1 day per week, the effective SLA duration becomes 3 weeks. This is because it will take 1 day per week to calculate the SLA.
+By default, there are no working hours defined, so SLA calculations are not affected. However, when working hours are set, this calculation method comes into effect.
+
+::: 
 
 > For more details on how to set up and configure an SLA, read [SLA settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/sla). 
 

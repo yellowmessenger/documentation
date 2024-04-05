@@ -71,7 +71,9 @@ You can download the following data from the insights page:
 To download (export) specific data from the insights page, follow these steps:
 
 1. Click on **Export data**.
-2. Navigate to the report that you want to download and click **Export Reports**. You can choose to download all the reports as a excel file.
+2. Navigate to the report that you want to download and click **Export Reports**. You can choose to download all the reports as an excel file.
+
+The file downloaded will only have data of the time range you have selected. 
 
 :::info
 For instructions on how to schedule report download, click [here](https://docs.yellow.ai/docs/cookbooks/insights/schedulerawreports).
