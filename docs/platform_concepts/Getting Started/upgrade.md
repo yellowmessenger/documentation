@@ -99,7 +99,7 @@ To set up a call for upgrading your account, follow these steps:
 
 1. Click the **Upgrade** button.
 
-    <img src="https://hackmd.io/_uploads/ByRpzTki3.png" alt="drawing" width="80%"/>
+    ![image](https://imgur.com/XiZ8BdQ.png)
 
 2. Click the **Schedule Now** button to book a 1:1 call with our product consultants. They will assist you in choosing a plan that suits your business.
 

@@ -607,3 +607,15 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
   <br/>
    </div>
 </details>
+
+
+<details>
+ <summary> While using Doc cog (document search) the bot response generates irrelevent links, how to resolve it? 
+</summary>
+ <div>
+  <div> 
+      Increase the Document search threshold value to improve the accuracy of the links generated.
+</div>
+  <br/>
+   </div>
+</details>

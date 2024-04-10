@@ -11,13 +11,13 @@ Yellow.ai provides various environments for managing your bots and making contin
 **The bot ID is different in each environment.**
 To obtain the bot ID, you can click on the web link from any page of the bot after creating it and copy the 14-digit alphanumeric value (e.g., x16763649******).       
 
-![image](https://imgur.com/9vCnQxr.png)
+![image](https://imgur.com/KAjcN15.png)
 
 ## Switching bot environments
 
 Depending on your bot subscription, you'll see different environments, click on the top right dropdown to switch. 
 
-![image](https://imgur.com/jVVdcrx.png)
+![image](https://imgur.com/89JWllg.png)
 
 Environments include **Sandbox, Staging, Production, Live,** and **Development**. You can opt the required enviornments for your bot.
 

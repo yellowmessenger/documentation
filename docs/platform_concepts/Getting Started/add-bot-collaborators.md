@@ -34,7 +34,7 @@ To share bot access with other users, follow these steps:
 
 1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click the Access Control icon <img  src="https://imgur.com/vpKYa4b.png"  width="20"/>.
 
-    ![](https://imgur.com/RRN9Y18.jpg)
+    ![image](https://imgur.com/xZ7dWAk.png)
 
 2. Click **+Invite user**.
     - Enter the official **Email** address of the user.
@@ -56,14 +56,11 @@ In a 3-environment setup, you must share invites for all three environments(Sand
 To accept or reject a bot access invitation, follow these steps:
 
 1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click **Notifications** icon at the top right corner.
+2. If you have received a bot invite to your email address, you will see a notification. Click on the bell icon > Green tick.  
 
-    ![](https://i.imgur.com/XKd1KqL.png)
-    
-2. If you have received a bot invite to your email address, you will see a notification. Click on the bell icon > Green tick.
-
-    ![](https://i.imgur.com/Jm0geRB.png)
-    
-3. Click on the drop-down to view the list of bots you have access to.
+![image](https://imgur.com/botXHm5.png) 
+  
+3. Click on the drop-down next to your bot name to view the list of bots you have access to.
 
     <img  src="https://i.imgur.com/Gg7cHBz.png"  width="40%"/>
 
@@ -77,15 +74,14 @@ Your own bots will not be visible in this section.
 :::
 
 In the **Profile settings > My invites** section, you can easily access and manage(Accept/Delete) pending bot invites sent by other team members. 
-- You can explore and access different bots that belong to the Yellow.ai organization by searching for specific bots using their **bot ID, name, or sub ID**. 
-- If you need access to a bot created by other members of the organization, you can search for that bot and click **Request access**. The **Super admin** will review the request and provide access to the bot if approved.
+    ![image](https://imgur.com/bKcUeAz.png)
 
-    ![](https://i.imgur.com/Pq5woJs.png)
-    
+- You can explore and access different bots that belong to the Yellow.ai organization by searching for specific bots using their **bot ID, name, or sub ID**. 
+- If you need access to a bot created by other members of the organization, you can search for that bot and click **Request access**. The **Super admin** will review the request and provide access to the bot if approved.    
 - As a **Super admin/Admin**, you will see a list of pending bot invites. You can choose to either **Accept** the invitation to gain access to the bot or **Decline** it if you wish to decline the invitation.
 - You will receive notifications regarding bot invites, making it convenient for you to respond promptly.
 
-    ![](https://i.imgur.com/HgS5gtv.png)
+![image](https://imgur.com/IGabuxj.png)
 
 ----
 
@@ -98,13 +94,13 @@ With **Super Admin/Admin** privileges, you can monitor user interactions with yo
     - Click **Edit** for role adjustments 
     - Click **Delete** to remove bot access.
 
-    ![image](https://imgur.com/vbX1JBv.png)
+    ![image](https://imgur.com/2Tr97Dn.png)
     
 3. In the **Invites** tab, you can observe any pending access requests. This section provides information about the invitee, the person who extended the invitation, and the assigned role. 
     - To prompt the invitee to respond, you can opt to **Resend Email**. 
     - If you wish to withdraw the invitation, choose **Revoke**.
     
-    ![image](https://imgur.com/ygLhewZ.png)
+    ![image](https://imgur.com/JJHQvEE.png)
     
 4. The **User Requests** tab displays details pertaining to users who have formally requested access to the bot.
 
@@ -127,3 +123,11 @@ approval requests for publishing bots in different environments.
  
 
 -->
+
+----
+
+## Bot publish approvals
+
+> This option is available only for these roles: Super admins, Admins and Approver. 
+
+When a resquest is sent by the bot developer to publish a flow or a bot, the Approver can see the requests under **Bot publish approvals**.
