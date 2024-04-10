@@ -5,7 +5,7 @@ sidebar_label: Get started with the platform
 
 When you sign in to the [Yellow.ai platform](https://cloud.yellow.ai), you'll be welcomed by the Overview page, which serves as the gateway to various platform offerings and self-help resources. Whether you're a coding expert or a newcomer, Yellow.ai caters to all users with its intuitive and user-friendly interface. Let's dive into the essential elements and functionalities of the platform.
 
-![](https://i.imgur.com/wOzHxAL.jpg)
+
 
 Watch the product quick tour video on [Youtube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) to learn about what you can achieve with Yellow.ai and how the bot works. You can also find this video link directly on the platform.
 
