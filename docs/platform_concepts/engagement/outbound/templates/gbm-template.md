@@ -25,10 +25,10 @@ You can use the template that you create here in [Flow campaigns](https://docs.y
 
 To create a GBM template, follow these steps:
 
-1.  Navigate to your project and go to  **Engage**  >  **Templates**.
+1.  On the left navigation bar, go to  **Engage**  >  **Templates**.
 2.  Click  **+Create new templates**  >  **Google Business Messages**.
 
-   ![](https://i.imgur.com/IGpT2Ty.png)
+   ![](https://i.imgur.com/5bGHDIO.png)
 
 3. In  **Template name**, enter a unique name for the template in lower case without space or special characters.
 
@@ -64,7 +64,7 @@ A GBM template supports two different Call to action (CTA) -
 
 You can only add different types of CTAs in a template and cannot use two same CTA types in a template. That is, you cannot use two Open URL actions or two Dial actions in a template.
 
-![](https://i.imgur.com/FGgnqod.png)
+   <img src="https://i.imgur.com/FGgnqod.png" width="80%"/>
 
 In the Buttons section (Step 8),  choose **Type of button** as *Call to action*.
 

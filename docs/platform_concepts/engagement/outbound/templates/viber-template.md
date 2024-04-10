@@ -34,14 +34,11 @@ To create a new Viber Business account, reach out to the Yellow.ai support.
 To create a Viber business template, follow these steps - 
 
 
-1. Navigate to your project and go to **Engage** > **Templates**.  
+1. On the left navigation bar, go to **Engage** > **Templates**.  
 
-   ![](https://i.imgur.com/Hvh6o2m.jpg)
+2. Click **Create new template** > **Viber for business**.
 
-
-2. Click **Create new template** > **Viber business**.
-
-  ![](https://i.imgur.com/ND583T8.png)
+  ![](https://i.imgur.com/G9oqqNE.png)
 
 
 3. Add a template **Name**. It should be in lowercase. You can use alpha- numerics and only underscore is allowed as a special character.
@@ -52,7 +49,7 @@ To create a Viber business template, follow these steps -
 
 Select this to create a pure text message. You can use You can bold or italicise words and add variables wherever required in the message.
 
-   ![](https://i.imgur.com/pr51bM0.png)
+   <img src="https://i.imgur.com/Iyq7Kum.png" width="70%"/>
 
 
 

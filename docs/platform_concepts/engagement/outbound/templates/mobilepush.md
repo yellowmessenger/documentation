@@ -4,19 +4,22 @@ sidebar_label: Mobile push template
 ---
 
 
-
+## Create Mobile Push template
 To create a Mobile push template, follow these steps:
 
-> **Prerequisites**:
-> Before creating push notifications, you need to configure the following on the Yellow.ai platform.
-> - [Android push notification or Firebase Cloud Messaging channel](/docs/platform_concepts/channelConfiguration/android_push) to send push notifications on the Android app.
-> - [iOS or Apple push notification service](/docs/platform_concepts/channelConfiguration/ios_push) to send push notifications on the iOS app.
+:::note
+#### Prerequisites:
+Before creating push notifications, you need to configure the following on the Yellow.ai platform.
+- [Android push notification or Firebase Cloud Messaging channel](/docs/platform_concepts/channelConfiguration/android_push) to send push notifications on the Android app.
+- [iOS or Apple push notification service](/docs/platform_concepts/channelConfiguration/ios_push) to send push notifications on the iOS app.
+
+:::
 
 
-1. Navigate to your project and go to **Engage** > **Templates**.
+1. On the left navigation bar, click **Engage** > **Templates**.
 2. Click **+Create new templates** > **Mobile push notifications**.
 
-   <img src="https://i.imgur.com/s7tflBN.png" width=""/>
+   <img src="https://i.imgur.com/U3x9dn2.png" width=""/>
 
 3. In **Template name**, enter a unique name for the template.
 <center>
@@ -29,7 +32,7 @@ To create a Mobile push template, follow these steps:
 7. In **On tap action**, configure the action to be performed when the user taps on the push notification and click **Create template**. For details on each action, refer to the following sections.
 
 <center>
-<img src="https://secure-res.craft.do/v2/MXpitnt98nfq77xcERfHs5nKdeJUqQ42x1Paqh34KHvmo25ikVQryimMtxX8fAdU1SBcf9ZSL7SHduNiC1QsYBiwvFXXGgrEXzBXsR66jC14o7djEPtQKjWC2ZNyUmiYiYVsjd8UCUPNBKyRSKiXH3phcsUxJQ6YNJq6GZgw1cwZ9wXTJceB63ByzUQEgAMTkcJFYfL2XjLrLqtD9NFNXvvEc5hL7YddsYtx54aiHEArxJGBma6vLfUtsrdJn2PkTGb9H5ms3HErmocZBYeYEtxXkfR7vH1XssMVsw9p7ZKiesGoKT/Image.jpg" width="70%"/>
+<img src="https://secure-res.craft.do/v2/MXpitnt98nfq77xcERfHs5nKdeJUqQ42x1Paqh34KHvmo25ikVQryimMtxX8fAdU1SBcf9ZSL7SHduNiC1QsYBiwvFXXGgrEXzBXsR66jC14o7djEPtQKjWC2ZNyUmiYiYVsjd8UCUPNBKyRSKiXH3phcsUxJQ6YNJq6GZgw1cwZ9wXTJceB63ByzUQEgAMTkcJFYfL2XjLrLqtD9NFNXvvEc5hL7YddsYtx54aiHEArxJGBma6vLfUtsrdJn2PkTGb9H5ms3HErmocZBYeYEtxXkfR7vH1XssMVsw9p7ZKiesGoKT/Image.jpg" width="60%"/>
 </center>
 
 The following are the possible actions when a user taps on the push notification:
@@ -40,7 +43,7 @@ Choose to redirect the user to the main activity of the app where the deeplink i
 #### A deep link to your app
 Choose to redirect the recipient to a specific screen of the app.
    
-<center><img src="https://i.imgur.com/FF5lZUh.png" width="70%"/></center>
+<center><img src="https://i.imgur.com/FF5lZUh.png" width="60%"/></center>
 
    - Enter the URI in the **Android deeplink** URI box.
 
@@ -49,12 +52,12 @@ Choose to redirect the user to a specific bot flow or show a predefined bot resp
 
    * To show a predefined message, select *Text* in **Bot response** and enter the message in **Bot says**. Use variables in the message wherever required.
   
-<center><img src="https://i.imgur.com/gYaHqc9.png" width="70%"/></center>
+<center><img src="https://i.imgur.com/gYaHqc9.png" width="60%"/></center>
 
    * To execute a bot flow, select *Execute flow* in **Bot response** and choose the flow in **Execute flow**.
 
 
- <center> <img src="https://i.imgur.com/sdu8dWA.png" width="70%"/></center>
+ <center> <img src="https://i.imgur.com/sdu8dWA.png" width="60%"/></center>
 
 ***
 

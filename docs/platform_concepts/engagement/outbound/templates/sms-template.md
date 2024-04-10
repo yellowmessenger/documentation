@@ -8,14 +8,11 @@ sidebar_label: SMS template
 
 ## 1. Create SMS template
 
-1. Navigate to your project and go to **Engage** > **Templates**.
-
-   ![](https://i.imgur.com/Hvh6o2m.jpg)
-  
+1. In the left navigation bar, go to **Engage** > **Templates**.  
 
 2. Click **Create new template** > **SMS**.
 
-   ![](https://i.imgur.com/P2Vezjr.png)
+   ![](https://i.imgur.com/RRqVdTX.png)
   
 
 3. Create the template using the available options. For descriptions, refer to the following table.

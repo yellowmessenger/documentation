@@ -10,9 +10,9 @@ For a better experience, see [Use conversation starter templates](https://docs.y
 These metrics provide insights into your marketing, promotional, or other campaigns and showcase the growth of your user base and profile completeness.
 
 
-To access Engage Overview Dashboard, in the module switcher, click **Engage** > **Overview**.
+To access Engage Overview Dashboard, in the left navigation bar, click **Engage** > **Overview**.
 
-   ![](/img/cdp/dashboard.png)
+   ![](https://i.imgur.com/0Ifz43Z.png)
 
 The following sections prvides different KPIs that you can monitor on the Engage Dashboard.
 

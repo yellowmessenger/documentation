@@ -19,16 +19,13 @@ The following are the prerequisites for creating an MS Teams' template:
 :::
 
 
-To create an MS Teams template, follow these steps:
+To create MS Teams template, follow these steps:
 
-1. Navigate to your project and go to **Engage** > **Templates**.
-
-   ![](https://i.imgur.com/Hvh6o2m.jpg)
-
+1. On the left navigation bar, go to **Engage** > **Templates**.
 
 2. Click **Create new template** > **Microsoft Teams**.
 
-   ![](https://i.imgur.com/jkTDI1E.png)
+   ![](https://i.imgur.com/SH5HPAi.png)
 
 
 3. Configure the purpose of the template from the available options and click **Use templates**.
