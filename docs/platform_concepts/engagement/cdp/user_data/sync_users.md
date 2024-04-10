@@ -12,13 +12,14 @@ To sync data from an SFTP integration:
 1. [Connect your integration account to Yellow.ai](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview).
 2. Go to **Engage** > **User 360** and click **Import users** > **Sync integration data**.
 
-   ![](https://i.imgur.com/ANMIg7m.png)
+   ![](https://i.imgur.com/l2tNVJX.png)
 
    You will see the list of connected integrations.
 
-   Alternatively, you can also do it from the Integrations module by navigating to **Integration**s > **SFTP** > Navigate to ypur preferred SFTP account > Enable the **Sync on** toggle button. 
+   Alternatively, you can also do it from the Integrations module by navigating to **Extensions** > **Integration**s > **Connected** integrations > **SFTP**.
 
-  ![](https://i.imgur.com/HVJVpUd.png)
+      ![](https://i.imgur.com/4QCYSe9.png)
+   
 
 3. Navigate to your preferred integration and enable the toggle button (to Sync on).
 

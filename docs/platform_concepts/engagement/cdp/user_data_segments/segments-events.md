@@ -40,7 +40,7 @@ To create event-based segments:
 
 1. Navigate to **User 360**.
 2. Click **Add Segment**.
-   <img src="https://i.imgur.com/WmouIvi.png" width="40%"/>
+   <img src="https://i.imgur.com/4VkOMSW.png" width="40%"/>
 3.  In **Segment name**, enter a unique name for the segment.
 4. Click **+Add condition** > Navigate to the **Events** tab.
 
