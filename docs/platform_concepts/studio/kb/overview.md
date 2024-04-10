@@ -86,6 +86,13 @@ While building your website bot, maintain simplicity by refraining from adding m
 :::
 
 
+:::info
+
+Increase the **Document search threshold** value to improve the accuracy of the links generated. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#document-search-settings). 
+
+:::
+
+
 ------
 
 

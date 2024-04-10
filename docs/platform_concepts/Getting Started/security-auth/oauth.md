@@ -108,7 +108,7 @@ After verifying your details, SSO will be enabled for your domain by the yellow.
 
 Once OAuth is enabled, [create a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot). In the URL, locate and copy the botId (separate for live/production). This botId is required for providing access and assigning roles.
 
-![image](https://hackmd.io/_uploads/S1QBk17O6.png)
+![image](https://imgur.com/KAjcN15.png)
 
 
 ----

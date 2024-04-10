@@ -29,10 +29,10 @@ To continue customization, you can skip this step and refer to **Step 3**.
 Create a new bot by following these steps: 
 
 1. Navigate to **Overview**. Click on your bot name > **+Create bot**. 
-    ![image](https://hackmd.io/_uploads/B1UnosVV6.png)
+![image](https://imgur.com/VCDL4YO.png)
 
 2. Building options for your bot include selection from **pre-defined templates (marketplace), creation from scratch**, and the option to develop an **orchestrator bot**. Each option is explained in subsequent sections. 
-    ![image](https://hackmd.io/_uploads/Hyevj1JS4a.png)
+![image](https://imgur.com/ckFcQ4M.png)
 
 
 ### Import a bot from pre-defined templates
@@ -61,16 +61,17 @@ Check **Add live chat support to your bot** to automatically import the flow to 
 
 By default, your bot is created with essential flows: Welcome, fallback for unidentified customer questions, multilingual support, and customer-agent chat. You can customize these [flows](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings) and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot.
 
-![](https://hackmd.io/_uploads/r1qvNSBn2.png)
+![image](https://imgur.com/HmxZuBA.png)
 
 [**Learn how to use studio module in detail :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
 
 ### Create an orchestrator(parent) bot
 
-The Orchestrator simplifies control and oversight of multiple bots, offering modularity for independent development and one-time setup automation for inter-linkages. Click **+Create orchestrator**, enter your details and confirm the creation of this bot.
+The Orchestrator simplifies control and oversight of multiple bots, offering modularity for independent development and one-time setup automation for inter-linkages. Click **+ Create bot > +Create orchestrator**, enter your details and confirm the creation of this bot.
 
-![image](https://hackmd.io/_uploads/SkSlUkHV6.png)
+<img src="https://imgur.com/DC9aROC.png" alt="drawing" width="40%"/>
+
 [**Learn more about Orchestrator for bots :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator)
 
 ----
@@ -79,10 +80,10 @@ The Orchestrator simplifies control and oversight of multiple bots, offering mod
 
 To facilitate collaboration on your bot, you have the ability to invite other users and manage their permissions. 
 
-**To invite users**, navigate to the **Access control** section from the overview page and invite users by entering their email IDs.
+**To invite users**, navigate to the **Bot settings > Access control** section from the overview page and invite users by entering their email IDs.
 You have the flexibility to invite multiple users and assign different levels of access to each. This ensures that users only have the permissions necessary for their role.
 
-<img src="https://imgur.com/g5wtZPI.png" alt="drawing" width="40%"/>
+![image](https://hackmd.io/_uploads/Sy8jq6mxA.png)
 
 **To view and accept incoming access requests**, open the **User request** tab and if you find a request appropriate, you can grant the required permissions.
 
@@ -126,7 +127,7 @@ To guide the bot's responses, you create predefined pathways known as **Flows**.
 
 In the Build section, you can construct these flows, defining the automated sequence of actions the bot takes. This is based on the questions and responses from users.
 
-![image](https://imgur.com/uPml3IQ.png)
+![image](https://imgur.com/BH1YBs6.png)
 
 
 **Build conversations using nodes**:
@@ -145,7 +146,7 @@ Nodes are connected to each other, forming the conversational flow. This connect
 The bot's responses are driven by customer input. To enhance its understanding, the bot can be trained in the **Train** section. 
 
 
-![image](https://imgur.com/ZOaB6wZ.png)
+![image](https://imgur.com/dL5StnG.png)
 
 Transform your bot-building experience with Yellow.ai's **powerful AI features** mentioned below:
 
@@ -154,21 +155,25 @@ Transform your bot-building experience with Yellow.ai's **powerful AI features**
 
 Easily link your Knowledge Base (KB) to the bot, enabling it to access information and provide accurate answers.   
 Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview).
-    ![image](https://hackmd.io/_uploads/rkHziNvEp.png)
+
+![image](https://imgur.com/4flYdrZ.png)
 
 
 ### Automated flow generation
 
 Generates bot flows effortlessly tailored to your specific use cases, using AI Co-pilot. Save time and resources with smart, automated bot creation.  
 Explore [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot). 
-    ![image](https://hackmd.io/_uploads/Sk2-3NwEp.png)
+
+![image](https://imgur.com/PDRMNBQ.png)
 
 
 ### AI based Dynamic chat node
 
 Enhance your bot's conversational capabilities using the Dynamic chat node within flows. This allows for dynamic and context-aware interactions.  
+
 Discover [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode).
-    ![](https://i.imgur.com/HFHBq0c.png)
+
+![](https://i.imgur.com/HFHBq0c.png)
 
 ---
 
@@ -178,10 +183,10 @@ After adding all the components (flows, database, NLU training, APIs, etc.), fol
 
 1. Test your bot on the right pane by selecting the required channel. Learn how to debug [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow).
 2. Publish the bot to Live or Production mode. Learn how [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes). A request is sent to the bot admins over email for approval.
-   ![Test and Publish](https://hackmd.io/_uploads/ByvfoXW4T.png)
+![image](https://imgur.com/xhpWu4A.png)
 3. Super admins or Approvers can approve the publish request.
 4. Add the bot as a chat widget to your desired platform. [Guide here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chrome-extension)
-   ![Add Bot Widget](https://hackmd.io/_uploads/HyQIj7-Vp.png)
+![image](https://imgur.com/CbM7KGf.png)
 
 
 Your initial bot has been developed and deployed. You can enhance its capabilities by exploring additional modules and incorporating features to streamline interactions between the bot and customers.
@@ -195,7 +200,8 @@ Your initial bot has been developed and deployed. You can enhance its capabiliti
 ## Step 6: Monitor your bot performance
 
 Bot insights are automatically tracked. You can also customize the tracked data through Insights module.
-![Track Insights](https://hackmd.io/_uploads/H1lqoX-VT.png)
+
+![image](https://imgur.com/lh1iAMz.png)
 
 <!--
 

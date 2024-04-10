@@ -52,5 +52,6 @@ Upon clicking **Create project**, your [Freemium](https://docs.yellow.ai/docs/pl
 - You can go to [Overview > Configure](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration#personalise-your-bot-information) and reconfigure your bot details. 
 - You can [upgrade your account](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#steps-to-upgrade-your-freemium-plan) to access all the functionalities of a tier 3 bot. 
 
-![](https://hackmd.io/_uploads/HJahiWBhh.png)
+
+![image](https://imgur.com/mFMWAi4.png)
 

@@ -10,9 +10,10 @@ After logging in successfully, you can manage various aspects of your account se
 ## View profile information
 
 1. After logging in, click on your profile icon on the top right corner of the Overview page.
-    <img src="https://i.imgur.com/5fo0P9x.png" alt="drawing" width="100%"/>
+![image](https://imgur.com/kMSbBmV.png)
+
 2. Select **Profile** from the drop-down to view your profile information.
-    <img src="https://i.imgur.com/IqalgMH.png" alt="drawing" width="100%"/>
+![image](https://imgur.com/XPEx0co.png)
 
 :::note
 You cannot modify profile details (name and email) from the UI.
@@ -29,10 +30,12 @@ To reset your password:
 3. Confirm the new password by entering it again under **Re-enter new password**.
 4. Click **Update** to save your new password.
 
-<img src="https://i.imgur.com/iqYpP66.png" alt="drawing" width="100%"/>
+![image](https://imgur.com/5bfm7cm.png)
+
 
 :::note
-The green check mark under **Password must contain** indicates the strength of your password. Use a combination of upper and lower case letters, numbers, and special characters to create a strong password.
+- The green check mark under **Password must contain** indicates the strength of your password. Use a combination of upper and lower case letters, numbers, and special characters to create a strong password.
+- When SSO is enforced, you cannot change your password. 
 :::
 
 ----
@@ -42,15 +45,18 @@ The green check mark under **Password must contain** indicates the strength of y
 You can view all the options on the platform in the language of your choice by selecting the language. This is applicable only to your account, you can reset the language at any point in time. By default, the platform language is English. To remove or add bot languages:
 
 1. Click on your profile icon > **My profile** > **Account** > **Change language**.
-
-    ![](https://hackmd.io/_uploads/BJK6gJv93.png)
 2. Select the desired language from the Current language drop-down in the Account language pop-up.
-
-    <img src="https://hackmd.io/_uploads/S1E9gJDc2.png" alt="drawing" width="50%"/>
 3. Click **Save** to apply the new language.
 
+<img src="https://imgur.com/PKxOwWX.png" alt="drawing" width="50%"/>
 
-> Currently only English, Japanese and Bahasa indonesia is supported. 
+<img src="https://hackmd.io/_uploads/S1E9gJDc2.png" alt="drawing" width="50%"/>
+
+
+:::note
+
+Currently only English, Japanese and Bahasa indonesia is supported. 
+:::
 
 -----
 
@@ -65,7 +71,7 @@ To see account activity:
 
 1. Click on your profile icon > **My profile** > **Sessions**.
 
-<img src="https://i.imgur.com/FTbRfJT.png" alt="drawing" width="100%"/>
+![image](https://imgur.com/1K3NrDa.png)
   
 
 
@@ -82,9 +88,10 @@ To see account activity:
 To view an existing subscription:
 
 1. Go to **Subscriptions** under User account to view your bot subscriptions.
-    <img src="https://i.imgur.com/M50BpIU.png" alt="drawing" width="100%"/>
 2. You can see the details of your subscription plan, organization name, billing address, and contact details.
-    <img src="https://i.imgur.com/X74Va7B.png" alt="drawing" width="100%"/>
+3. To see all the subscriptions you have access to, click the dropwdown next to your subscription name. 
+
+![image](https://imgur.com/3ToVdp9.png)
 
 
 ### Access your subscription ID
@@ -104,7 +111,7 @@ In the screenshot below, you can see that the user has access to a total of 31 b
 
 ### Invite users to access your subscription
 
-Admins can invite users to access the bots under a particular subscription plan. An admin can invite a user to the entire subscription and not individual bots. The user will not have access to all the bots in the subscription until bot access is granted by the admin. This section is only available to owners of the subscription
+Admins can invite users to access the bots under a particular subscription plan. An admin can invite a user to the entire subscription and not individual bots. The user will not have access to all the bots in the subscription until bot access is granted by the admin. This section is only available to owners of the subscription.
 
 <img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
 
@@ -118,9 +125,10 @@ Admins can invite users to access the bots under a particular subscription plan.
 Suppose you have utilized a pre-built bot template from the Marketplace to create your bot according to your specific use case. If you wish to publish the bot and retain a copy of this template, you can easily download it and view all the relevant details in this section.
 
 1. To access this feature, click on **Exports** from the User account drop-down.         
-    <img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
 2. If you no longer need a specific template, you have the option to delete it based on your requirements.      
-    <img src="https://i.imgur.com/7reCz7e.png" alt="drawing" width="100%"/>
+
+![image](https://imgur.com/yjaSBSg.png)
+
 
 :::note
 Other team members who are not part of this organization won't have access to these downloaded templates. This ensures the security and privacy of your organization's bot templates.
@@ -135,7 +143,7 @@ However, this is not applicable to Inbox agents who handle tickets to ensure the
 
 To logout manually, you can click **Logout** under the User account section.
 
-<img src="https://i.imgur.com/8M6qNvZ.png" alt="drawing" width="100%"/>
+![image](https://imgur.com/GFBERRz.png)
 
 
 

@@ -127,31 +127,33 @@ Based on the region of your bot, which is  r1/r2/r3/r4/r5, you need to append th
 
 To connect the Google chat channel to your bot on the platform, follow these steps:
 
-1. Log on to https://cloud.yellow.ai and navigate to **Overview > Channels > Messaging > Google Chat**.
+1. Navigate to **Overview** > **Extensions**.
 
-   ![](https://i.imgur.com/dCWuek7.png)
+    ![](https://imgur.com/PIOvT6K.png)
 
-2. Enter the **Client email** and **Private key** that you have copied from the downloaded JSON and click **Save**.
+2. Click **Channels** > **Messaging** > **Google chat**.
 
-   ![](https://i.imgur.com/JOc6xXl.png)
+    ![](https://imgur.com/ZOZIxUN.png)
+
+3. Enter the **Client email** and **Private key** that you have copied from the downloaded JSON and click **Save**.
+
+   ![](https://imgur.com/q6FVsIU.png)
    
    * Your Google chat channel will be successfully connected.
 
-3. Navigate to the **Overview** page, under the **Active channels** section, to verify that the Google chat channel is successfully connected to your bot.
-
-    ![](https://i.imgur.com/DLuEqQM.png) 
+4. Navigate to the **Overview** page, under the **Active channels** section, to verify that the Google chat channel is successfully connected to your bot.
     
 ### Add events to your bot
 
 To add events to your bot, follow these steps:
 
-1. Navigate to the **Studio** module and select **Events**.
+1. Navigate to the **Studio** > **Event** >  **Custom events**.
 
-     ![](https://i.imgur.com/7TSCbaC.png)
+     ![](https://imgur.com/SLDyZZG.png)
      
-2. Select **Custom events** and click **+ Add event**. 
+2. Click **+ Add event**. 
 
-    ![](https://i.imgur.com/8KF4d10.png)
+    ![](https://imgur.com/c3SZMCQ.png)
     
 3. Add the following events:
    * `google_chat_added_to_space`: This event is received when your Bot is added to a space.
@@ -159,11 +161,11 @@ To add events to your bot, follow these steps:
    
 4. Enter the **Event name** and **Event description**, then click **Create event**.
     
-    ![](https://i.imgur.com/8KF4d10.png)
+    <img src="https://imgur.com/YlD8fQU.png" alt="drawing" width="70%"/>
 
 5. The events will be successfully added.
 
-    ![](https://i.imgur.com/6uYR0ir.png)
+    ![](https://imgur.com/qN06csG.png)
     
     <img src="https://i.imgur.com/Oxunyya.png" alt="drawing" width="70%"/>
     

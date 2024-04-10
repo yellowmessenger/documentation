@@ -3,6 +3,10 @@ title: Viber
 sidebar_label : Viber
 ---
 
+:::note
+Going forward, Viber will not send 'delivered' and 'seen' callbacks for auto-reply messages. This will reduce the server load by minimizing the number of callbacks that need to be processed. However, Viber will still send one 'Sent' callback when an auto-reply message (default or custom) is sent to a customer. This ensures that businesses can still monitor users trying to engage with them.
+:::
+
 Viber is an instant messaging app that facilitates interaction with our bot through the Yellow.ai platform.
 
 Viber channel assists businesses in sending campaigns, providing customer support to their clients and partners, and promoting their products and services to a larger audience. 

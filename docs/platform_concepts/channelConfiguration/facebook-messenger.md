@@ -51,17 +51,17 @@ To establish a connection, you must be an admin of the Facebook account and the 
 
 To connect your Facebook page to Yellow.ai, follow these steps:
 
-1.  On the switcher, click **Channels**.
+1.  Navigate to **Overview** > **Extensions**.
 
-    <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="100%"/>
-   
-2. On the **Messaging** channels page, click **Facebook messenger**.   
+    ![](https://imgur.com/PIOvT6K.png)
 
-    ![](https://i.imgur.com/EUeBbYi.png)
+2. Click **Channels** > **Messaging** > **Facebook messenger**.
+
+    ![](https://imgur.com/SB7Ec9I.png)
 
 3. Click **Connect to your Facebook account**. 
 
-   ![](https://i.imgur.com/k8oQiV9.png)
+   <center><img src="https://imgur.com/K6v6CFb.png" alt="drawing" width="90%"/></center>
 
 
 4. Login to your Facebook account that is connected to your Facebook Business Page.
