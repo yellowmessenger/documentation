@@ -193,18 +193,22 @@ After configuring your Message Business account, you need to contact the [suppor
 
 To connect ABC channel to your bot on the platform, follow these steps:
 
-1. Log in to https://cloud.yellow.ai and navigate to **Overview > Channels > Messaging > Apple Business Chat**.
+1. Log in to `https://cloud.yellow.ai` and navigate to **Overview** > **Extensions**.
 
-   ![](https://i.imgur.com/nScLQ5n.png)
+   ![](https://imgur.com/TnUYi24.png)
+
+2. Click **Channels** > **Messaging** > **Apple Business Chat**.
+
+   ![](https://imgur.com/BBrF6k6.png)
 
 
-2. Enter the **Business ID** that you have copied from the Messages for Business Account and click **Save**.
+3. Enter the **Business ID** that you have copied from the Messages for Business Account and click **Save**.
 
-   ![](https://i.imgur.com/U4uPwXa.png)
+   ![](https://imgur.com/09RfDtY.png)
 
-3. Navigate to the **Overview** page, under the **Active channels** section, you can see that the ABC channel is successfully connected to your bot.
+4. Navigate to the **Overview** page, under the **Active channels** section, you can see that the ABC channel is successfully connected to your bot.
 
-    ![](https://i.imgur.com/bsiYLdy.png)
+    ![](https://imgur.com/y1xWDhN.png)
 
 
 ## Test your bot on ABC

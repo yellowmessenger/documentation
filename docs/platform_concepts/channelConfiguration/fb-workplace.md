@@ -121,19 +121,21 @@ To grant permissions, follow these steps:
 
 To connect Facebook workplace channel to your bot on the platform, follow these steps:
 
-1. Log on to https://cloud.yellow.ai and navigate to **Overview > Channels > Messaging > Facebook workplace**.
+1. Navigate to **Overview** > **Extensions**.
 
-   ![](https://i.imgur.com/iR12Lsl.png)
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **Facebook workplace**.
+
+    ![](https://imgur.com/B6G17vC.png)
 
 2. Enter the **App ID**, **App secret**, **Access token** that you have copied from the workplace developer portal admin account and click **Save**.
 
-   ![](https://i.imgur.com/8sOvFuS.png)
+   ![](https://imgur.com/82KAzw7.png)
    
    * Your Facebook workplace channel will be successfully connected.
 
 3. Navigate to the **Overview** page, under the **Active channels** section, to verify that the Facebook workplace channel is successfully connected to your bot.
-
-    ![](https://i.imgur.com/P9rCPwE.png)
 	
 ## Configure Webhook for custom integration
 

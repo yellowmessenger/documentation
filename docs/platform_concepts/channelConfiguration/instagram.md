@@ -59,9 +59,9 @@ By default, these events are inactive, but you can enable them as per your requi
 
 ### Enable Instagram events on Studio
 
-1. Navigate to **Studio** > **Event** > **Integrations**. You will see all the events related to Instagram with the prefix Instagram `<eventName>`.
+1. Navigate to **Studio** > **Event** > **Instagram events**. You will see all the events related to Instagram with the prefix Instagram `<eventName>`.
     
-     ![](https://i.imgur.com/A3FS0vU.png)
+     ![](https://imgur.com/SJU5fio.png)
     
 2. Navigate to the event that you want to enable and click on the **More options** icon > **Activate**.  
     
@@ -187,17 +187,21 @@ If you want to disconnect your page, which is linked to Instagram, click **Disco
 
 ### Connect your Facebook account to the Yellow.ai platform
  
-1. On the switcher, click **Channels > Messaging > Instagram**.
+1. Navigate to **Overview** > **Extensions**.
 
-   ![](https://i.imgur.com/nosJFdo.png)
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **Instagram**.
+
+    ![](https://imgur.com/01SlOVB.png)
 
 2. Click **Connect to your Facebook account** and add your Facebook business account credentials.
 
-    ![](https://i.imgur.com/1JKNsvR.png)
+    ![](https://imgur.com/Z2wU34j.png)
 
 3. After signing into the account, click **Continue**.
 
-    ![](https://i.imgur.com/NEehLba.png)
+   <img src="https://imgur.com/ngP2HUc.png" alt="drawing" width="60%"/>
 
 4. Select the **Instagram business account** you want to activate and click **Next**.
  
@@ -218,14 +222,14 @@ If you want to disconnect your page, which is linked to Instagram, click **Disco
 
 8. Select the Facebook page and click **Continue**.
 
-   ![](https://i.imgur.com/cVQlO9m.png)
+   <img src="https://imgur.com/JMZVUGm.png" alt="drawing" width="70%"/>
 
-This will connect your Facebook page to the Instagram account. 
+* This will connect your Facebook page to the Instagram account.
+
+   ![](https://imgur.com/jqPYrfq.png)
 
 :::note
 If you want to remove the account, click **Disconnect**.
-
-   ![](https://i.imgur.com/TSiaX6R.png)
 :::  
    
 ### Add conversation starters
@@ -236,7 +240,7 @@ To add conversation starters, follow these steps:
 
 1. On the Instagram page, click **+Add conversation starter**. 
    
-   ![](https://i.imgur.com/pSjmc6f.png) 
+   ![](https://imgur.com/YyX9B19.png) 
    
 2. Enter **Quick reply** and your preferred **Action**.
         
