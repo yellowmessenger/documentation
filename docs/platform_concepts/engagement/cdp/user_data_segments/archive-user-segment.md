@@ -20,7 +20,7 @@ Archiving a segment will not delete the user data associated with that segment. 
 
 * To unarchive a segment, select any archived segment and click on **Unarchive** segment.
 
-   ![](https://i.imgur.com/ORfiahI.png)
+   ![](https://imgur.com/036wVSC)
  
 
 

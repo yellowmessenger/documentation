@@ -31,13 +31,13 @@ To create a WhatsApp template and send for approval, follow these steps:
 
 1. Navigate to your project and go to **Engage** > **Templates**.
 
-   ![](https://i.imgur.com/Hvh6o2m.jpg)
+   ![](https://i.imgur.com/9HS17ju.png)
 
   
 
 2. Click **Create new template** > **Whatsapp**.
 
-   ![](https://i.imgur.com/GNCxave.png)
+   ![](https://i.imgur.com/yznZ3m2.png)
 
 3. In **Template Name**, enter a name for the template (supports only lowercase letters without space, including numbers and underscores). This is used only for your internal reference.
 
@@ -68,7 +68,7 @@ You can either add up to two CTAs or three Quick replies.
 
    The template will be sent for reviewing. You can use can use it in your campaign once Facebook approves it.
 
-   ![](https://i.imgur.com/FmTmtzY.png)
+   ![](https://i.imgur.com/04nApo5.png)
 
 
 ### Options to create WhatsApp standard template
@@ -244,11 +244,11 @@ To enable users to trigger a flow or display messages when Quick Reply buttons a
 
 1. Go to **Studio** > **Events** > **Engagement** > **quick_reply_event** more options > **Activate**.
 
-  ![](https://i.imgur.com/T22e63k.png)
+  ![](https://i.imgur.com/kL11NKT.png)
 
 2. Go to Studio > Click on **Create Flow** > Search for *WhatsApp Template Manager* > Select the template > **Use template**.
 
-   ![](https://i.imgur.com/izhs8OM.png)
+   ![](https://i.imgur.com/wje5yTn.jpeg)
 
    ![](https://i.imgur.com/Bn2t5n8.png)
 
@@ -322,7 +322,7 @@ Users can report or block WhatsApp templates which can result in blocking of the
 
 By actively monitoring the approval status, you can proactively address any potential issues and maintain seamless communication with your audience.
 
-   <img src="https://i.imgur.com/THa7a10.png"/>
+   <img src="https://i.imgur.com/gUS1F5W.png"/>
 
 The following are the different statuses available for an Active template:
 
@@ -373,7 +373,7 @@ Here's what you need to do:
 
 5. **Sync templates on yellow.ai platform**: On the yellow.ai platform's Engage module, navigate to **Templates** and click **Sync templates**. 
 
-   ![](https://i.imgur.com/IiEndmE.jpg)
+   ![](https://i.imgur.com/8NEhWEl.png)
 
 :::note
 Authentication templates are not available or applicable for India.
@@ -391,7 +391,7 @@ When you send a template for approval, Facebook approves it only if everything i
 
 You can see the template status on the Templates home page.
 
-   ![](https://i.imgur.com/FmTmtzY.png)
+   ![](https://i.imgur.com/OdfsUpB.jpeg)
 
 
 Here are some basic guidelines that you can follow to get your templates approved -    

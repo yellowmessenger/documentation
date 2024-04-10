@@ -5,20 +5,17 @@ sidebar_label: Email template
 
 ## Create email template
 
-In this document, we shall see how to create an new email template.
+To create an email template, follow these steps:
 
-1.  Navigate to your project and go to **Engage** > **Templates**.
- 
-![](https://i.imgur.com/Hvh6o2m.jpg)
-
+1.  On the left navigation bar, go to **Engage** > **Templates**.
 2.  Click **Create new template** > **Email**.
 
-![](https://i.imgur.com/CkGsBvR.png)
+   ![](https://i.imgur.com/4x8UtlX.png)
 
 
 3. Create the email template using the available options. 
 
-![](https://i.imgur.com/nO7bXDG.png)
+   ![](https://i.imgur.com/nO7bXDG.png)
    
    a. Enter a **Template Name**.
 

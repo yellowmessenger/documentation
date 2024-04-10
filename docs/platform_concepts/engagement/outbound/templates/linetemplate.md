@@ -13,12 +13,12 @@ Furthermore, Line's campaign analytics provides valuable insights into the effec
 
 You can use the Line template that you create here in [Flow campaigns](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign).
 
-To create a GBM template, follow these steps:
+To create a line template, follow these steps:
 
-1.  Navigate to your project and go to  **Engage**  >  **Templates**.
+1.  On the left navigation bar, go to  **Engage**  >  **Templates**.
 2.  Click  **+Create new templates**  >  **Line**.
 
-   ![](/img/cdp/line.png)
+   ![](https://i.imgur.com/5fVJn18.png)
 
 3. In  **Template name**, enter a unique name for the template in lower case without space or special characters.
 
