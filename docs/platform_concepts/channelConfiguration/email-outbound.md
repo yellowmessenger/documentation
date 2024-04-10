@@ -137,17 +137,21 @@ You can add email alias account, if already main account configured in chatbot f
 
 To add an email alias account, follow these steps:
 
-1. Navigate to **Overview** > **Channels** > **Messaging** > **Email**.
+1. Navigate to **Overview** > **Extensions**.
 
-    ![](https://i.imgur.com/kmA2I2Q.png)
+    ![](https://imgur.com/PIOvT6K.png)
 
-2. Click **Add email**
+2. Click **Channels** > **Messaging** > **Email**.
 
-    ![](https://imgur.com/IwnGxoN.png)
+    ![](https://imgur.com/LTrbjIP.png)
 
-3. In the *Add Email* section, enter the following details: 
+3. Click **Add email**
 
-   <img src="https://imgur.com/7ihDpjx.png" alt="drawing" width="80%"/>
+    ![](https://imgur.com/Mqd2sQI.png)
+
+4. In the *Add Email* section, enter the following details: 
+
+   <img src="https://imgur.com/0Feopoh.png" alt="drawing" width="80%"/>
 * In the email field, enter the email address of the alias account.
 * In the username field, enter the email address of the main account.
 In the password field, enter the app password associated with the main account and click **Save**. 
@@ -158,15 +162,17 @@ You can also configure SMTP using the JSON code.
 
 To configure an SMTP using JSON, follow these steps:
 
-1. Log on to `https://cloud.yellow.ai` and navigate to **Overview** > **Channels** > **Messaging** > **Email**.
+1. Click **Channels** > **Messaging** > **Email**.
 
-    ![](https://i.imgur.com/kmA2I2Q.png)
+    ![](https://imgur.com/LTrbjIP.png)
 
-2. Click **Add account**
+2. Click **Add email**
 
-    ![](https://i.imgur.com/FkweCbm.png)
+    ![](https://imgur.com/Mqd2sQI.png)
 	
 3. In the *Add email* section, select **Advanced** to add the SMTP details of the email address in the JSON code for which you want to send emails.
+
+    ![](https://imgur.com/6Cg483w)
 
 4. Copy the below JSON code, paste it in the *Advanced configuration* section, and click **Save**.
 

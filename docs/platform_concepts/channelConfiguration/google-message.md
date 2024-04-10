@@ -135,11 +135,19 @@ To setup Google Business Messages for your bot, configure the following:
 
 ### Step 1: Connect your bot to GBM
 
-1.  Log on to [https://cloud.yellow.ai](https://cloud.yellow.ai) and navigate to **Channels** > **Messaging** > **Google Business Messages** > click **Connect your account**.
+1.  Navigate to **Overview** > **Extensions**.
 
-      ![](https://i.imgur.com/HSqDeI4.jpg)
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **Google Business Messages**.
+
+    ![](https://imgur.com/WDKuRt1.png)
 
     * You will see a prompt to check if you have a live agent configured in the Inbox module.
+
+3. Click **+ Connect your account**.  
+
+   ![](https://imgur.com/JRAmjPQ.png)
 
 ### Step 2: Enter brand details
 

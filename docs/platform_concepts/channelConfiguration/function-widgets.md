@@ -105,7 +105,7 @@ A flow slug or journey slug is the combination of the flow name with auto-genera
 
 It appends to the URL and you can see it when you select a specific flow.
 
-   ![](https://i.imgur.com/e8MjGPV.png)
+   ![](https://imgur.com/gVHGjXV.png)
 
 You can trigger a specific flow using the function `triggerJourney` in the payload as explained here.
 
