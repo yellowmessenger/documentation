@@ -33,11 +33,11 @@ You can delete one or more users if required. However, you need to [export their
 
 1. Navigate to the user row and click on it to open user details page.
 
-   ![](https://i.imgur.com/2jZYHX7.png)
+   ![](https://i.imgur.com/gwjVEnr.png)
 
 2. Click **Delete**.
  
-  ![](https://i.imgur.com/r9s3ml1.png)
+  ![](https://i.imgur.com/yzE8Ooq.png)
 
 
 ### Delete multiple user records
@@ -46,7 +46,7 @@ You can delete one or more users if required. However, you need to [export their
 2. Click **Delete users**.
 
  
- ![](https://i.imgur.com/ggBwK4A.png)
+   ![](https://i.imgur.com/5sVQzmX.png)
 
 :::note
 You can also use this process to delete an individual user.

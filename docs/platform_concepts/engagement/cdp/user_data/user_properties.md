@@ -117,7 +117,7 @@ To create a new user property with your preferred label name and datatype, follo
 
 1. On the **User 360** page, click **User properties**.
 
-   ![](https://i.imgur.com/BOUV1hq.png)
+   ![](https://i.imgur.com/uQs4Qwc.png)
 
 2. Click on **+Custom property**
 3. In **Property name**, enter a name for the property. 

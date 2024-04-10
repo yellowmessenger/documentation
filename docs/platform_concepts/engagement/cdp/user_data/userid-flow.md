@@ -50,9 +50,9 @@ For details on how user records are created through conversations and unified in
 To add the User identification flow to your bot, follow these steps:
 
 
-1. Navigate to **Studio** and click **Conversation settings**.
+1. Navigate to **Studio** > **Build** > **Conversation settings**.
    
-   ![](https://i.imgur.com/WA0J7b2.png)
+   ![](https://i.imgur.com/f0p7mxb.png)
 
 
 2. On the pop-up screen that appears, click **User identification**.
@@ -61,19 +61,19 @@ To add the User identification flow to your bot, follow these steps:
 
 3. Select the relevant identification flow - [Phone identification flow](#phone-identifier-flow), [Email identification flow](#email-identifier-flow) or [Custom property flow](#custom-property-flow).
 
-   <img src="https://i.imgur.com/WiY0CqZ.png" width="60%"/>
+   <img src="https://i.imgur.com/BGOG8WX.png" width=""/>
 
 ### Phone identifier flow
   
    Select this option if the `phone` user property serves as the unique identifier for your users. Make sure to collect the phone number and store it in the `phone` user property, which is already set by default for this identifier flow.
 
-   ![](https://hackmd.io/_uploads/HkrzKJcH3.png)
+   ![](https://i.imgur.com/1GIGNvw.png)
 
  ### Email identifier flow
  
  Select this option if `email` user property serves as the unique identifier for your users. Make sure to collect the email address and store it in the `email` user property, which is already set by default for this identifier flow.
 
-   ![](https://hackmd.io/_uploads/ByMjFyqr3.png)
+   ![](https://i.imgur.com/52UpNaU.png)
 
 ### Custom property identifier flow
 
@@ -82,7 +82,7 @@ Select this option if the unique identifier of your users is any property other 
 
 1. Choose the custom property that serves as the unique identifier for your users. Please note that only String, Number, email, and phone data types are supported for the custom property.
    
-   <img src="https://i.imgur.com/fqhxItb.png" width="60%"/>
+   <img src="https://i.imgur.com/fqhxItb.png" width="50%"/>
    
 2. To create a new property and store it as userId, click on **+Create new user property** > Enter **Property name** and choose **Property type** > Click **Add**.
   
