@@ -68,7 +68,7 @@ A CSV file cannot exceed 30 MB.
 To import the CSV file with user details, follow these steps:
   
 1. On Engage, click **User 360** > **Add user** > **Import users**.
-   ![](https://i.imgur.com/h2s8nsz.png)
+   ![](https://i.imgur.com/NgpU1zt.png)
   
 
 2. Click **Upload .csv** and add the CSV file that you have created.

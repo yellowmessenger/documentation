@@ -17,7 +17,7 @@ To customise the User 360 table data/columns:
 
 1. On the **User 360** page, click **User properties**.
 
-   ![](https://i.imgur.com/BOUV1hq.png)
+   ![](https://i.imgur.com/qjjX6SP.png)
 
 2. In **Select properties** (left pane), select the properties that you want to see in the User 360 table.
 
@@ -34,13 +34,10 @@ To customise the User 360 table data/columns:
 To see details of an existing user, follow these steps:
 
 1. On the User 360 home page, navigate to the user whose details you want to see.
-   
-    ![](https://i.imgur.com/2bgbNTL.png)
-
 2. If the user list is long, use **Filters** to show a specific set of records from the entire user base.
 3. In **Conditions**, define the condition by which you want to filter users.
 
-   ![](https://i.imgur.com/Qkqryav.png)
+   <img src="https://i.imgur.com/Qkqryav.png" width="70%"/>
 
 You can see three boxes that correspond to {parameter}{operator}{value}.
 
@@ -49,24 +46,24 @@ You can see three boxes that correspond to {parameter}{operator}{value}.
 * **Value**: The value of the expression. This might not apply to all operators. For example, firstName Is Tom, phone is known, and emailOptin is true.
 3. Use **+** to evaluate `or` conditions. For example, the condition `firstname is tom` + `sam` fetches users whose first name is either Tom or Sam.
 
-      ![](https://i.imgur.com/cLBmKxf.png)
+    <img src="https://i.imgur.com/cLBmKxf.png" width="70%"/>
    
 4. Use **+ Add condition** to evaluate multiple conditions (`and`). For example, the condition `gender is Male` and `phoneNumber is known` fetches all male users whose phone number is available in User 360, `emailOptIn is false` fetches all users who have opted out from emails.
    
-   ![](https://i.imgur.com/kgMgHkw.png)
+    <img src="https://i.imgur.com/kgMgHkw.png" width="70%"/>
 
 
   
 5. Click **Apply**. You will see the filtered user list.
    
-   ![](https://i.imgur.com/Phz6GeH.png)
+   <img src="https://i.imgur.com/mwN8xKF.png" width=""/>
 
 
 ## View user card
 
 6. From the users list, click on the user that you want to see.
 
-   ![](https://i.imgur.com/DZwlscG.png)
+   ![](https://i.imgur.com/om7QH6j.png)
 
 See the following table for descriptions of each field in the User details card.
 

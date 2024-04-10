@@ -12,12 +12,12 @@ To view users of a segment:
 
 2. If the list is long, you can use the **Search** box to find a specific segment quickly.
 
-   ![](https://i.imgur.com/bvS0ofr.png)
+   <img src="https://i.imgur.com/RC8Pk7R.png" width=""/>
 
 
 You will see the list of users on the right side of the page.
 
-   ![](https://i.imgur.com/wrVY5eE.png)
+ <center>  <img src="https://i.imgur.com/u8iRZZb.png" />   </center>
 
 ***
 
@@ -27,7 +27,7 @@ To modify a segment's name or condition:
 
 1. Click on **Actions** > **Edit segment**.
 
-   ![](https://i.imgur.com/du1KLbt.png)
+   ![](https://i.imgur.com/OwtrgXB.png)
 
 2. Edit the required details and **Save** it.
 
@@ -40,9 +40,10 @@ When the conditions of the segment are edited, the users that show up in the seg
 ## Download segment users
 
 To download users of a segment:
+
 1. Click **Actions** > **Download segment user data**.
 
-   ![](https://i.imgur.com/tMtITgm.png)
+   ![](https://i.imgur.com/ozzLoJG.png)
 
 2. You will get an email with the download link. Click on the link. The file downloads as a CSV file. 
 
