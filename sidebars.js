@@ -941,6 +941,7 @@ module.exports = {
               "cookbooks/insights/eventdescriptions",
             ]
           },
+
           "platform_concepts/growth/dataexplorer/customtables",
 
           {
@@ -949,7 +950,7 @@ module.exports = {
             collapsed: true,
             items: [
               "platform_concepts/growth/dataexplorer/sumarize",
-              "platform_concepts/growth/dataexplorer/visualization",
+             // "platform_concepts/growth/dataexplorer/visualization",
               //"platform_concepts/growth/dataexplorer/pivottable",
               "platform_concepts/growth/dataexplorer/formulacolumn",
                         ]
@@ -957,6 +958,22 @@ module.exports = {
 
             "platform_concepts/growth/dataexplorer/savedreportsactions",
           ],
+      }, //end of DE 
+
+      {
+        type: "category",
+        label: "Data Visualisation",
+        link: {type: 'doc', id: 'platform_concepts/growth/visualisation/visualization'},
+        collapsed: true,
+        items: [
+          "platform_concepts/growth/visualisation/linechart",
+          "platform_concepts/growth/visualisation/bargraph",
+          "platform_concepts/growth/visualisation/rowchart",
+          "platform_concepts/growth/visualisation/funnelchart",
+          "platform_concepts/growth/visualisation/countchart",
+          "platform_concepts/growth/visualisation/piechart",
+          "platform_concepts/growth/visualisation/pivottable",
+        ]
       },
 
     "platform_concepts/growth/dashboards",
