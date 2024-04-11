@@ -16,10 +16,10 @@ This article provides how to create campaigns for any channel. The process for c
 
 ## 2. Create Outbound campaign
 
-1. Navigate to your project and go to the **Engage** module.
+1. On the left navigation bar, go to  **Engage** > **Outbound**.
 2. Click **+ Create Campaign**.
 
-   ![](https://i.imgur.com/CwsX8ok.png)
+   ![](https://i.imgur.com/TRatt3E.png)
   
 
 3. Provide **Basic information**.
@@ -31,7 +31,7 @@ This article provides how to create campaigns for any channel. The process for c
    c. Click **Next**.
 
   
-   ![](https://i.imgur.com/wrrBEkl.gif)
+   ![](https://i.imgur.com/kKua9g9.png)
 
   
 
@@ -57,12 +57,14 @@ You will see template configuration slide screen where you need to configure det
 
 5. Configure each template details and click **Next** to continue. 
 
+      ![](https://i.imgur.com/0Dl7IUi.gif)
+
+
 * For SMS, choose the user's phone number variable and map the variables used in the template to the user property variable.For more details, [see here](#21-sms-template).
 * For Email, choose the variable that contains email Id, select the sender ID (email ID), and map the user variables used in the template. For more details, [see here](#22-email-template).
 * For WhatsApp or Viber, choose the variable containing WhatsApp number, sender ID, and map the user variables used in the template. For more details, [see here](#23-whatsappviber-template).
 * For Microsoft Teams, choose the variable containing **Users contact details**, sender ID, and map the user variables used in the template same as [WhatsApp or Viber template](#23-whatsappviber-template).
 
-   ![](https://i.imgur.com/NXuyf1Q.gif)
 
   
 
@@ -79,6 +81,8 @@ If you want to switch to User module to add audience, you can save the campaign 
 
 6. Select your **Target Audience** and click **Next** to proceed to scheduling the message (**Schedule**).
 
+   ![](https://i.imgur.com/E3dcdyV.png)
+
    * You can either choose audience from the list of segments that you already created [OR]
 
    * Create a new segment using **+ Add new segment**. For more details, see [Users module and segment creation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview).
@@ -90,11 +94,14 @@ If you want to switch to User module to add audience, you can save the campaign 
     * **Later** to send out the campaign message on a specific date and time. Use the Calendar box to set your preferred date and time.
     * **Run multiple times** to configure a recurring campaign.
 
-   ![](https://i.imgur.com/ffRXb4m.png)
+   ![](https://i.imgur.com/ID2pfbl.png)
 
 8. In **Set a goal**, set the objective that you want to track for the campaign. For more details, see [Campaign goals](#6-campaign-goal).
 
+   [](https://i.imgur.com/mdxwOmG.png)
+
    i. Select and configure your desired goal - [Delivery](#1-delivery-goal), [Conversion](#2-conversion-goal) or [Response](#3-response-goal).
+
    ii. Set the duration (in hours/days) for which you want to track the goal in **Track the goal for**. For example, if there is a sale in a couple of days, you can set it to track for two days to get the count of messages delivered before the sale ends.
 
 9. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
@@ -107,7 +114,7 @@ Click **Save as draft** to save all your changes. You can resume from here anyti
 
    i. Once you have reviewed all the details and is good to go, click on **Launch Campaign** to schedule.
 
-   ![](https://i.imgur.com/WlmnEYU.png)
+   ![](https://i.imgur.com/6C7Kpu2.png)
 
    The system prompts you with a pop-up screen to convert the outbound campaign to a Flow campaign, mentioning all the benefits post-conversion.
 
@@ -115,9 +122,9 @@ Click **Save as draft** to save all your changes. You can resume from here anyti
 
    ![](https://i.imgur.com/37cuqAw.png)
 
-   Once you create the outbound campaign, you will be redirected to the campaigns dashboard page.
+   You can find the created campaign on the campaign dashboard page.
 
-   ![](https://i.imgur.com/wxMkzQf.png)
+   ![](https://i.imgur.com/Jc2pmIG.png)
   
 
 
@@ -165,7 +172,7 @@ This section guides you on how to configure template for each channel -
 
 2. In **Sender ID**, choose the WhatsApp business number from which you want to send the campaign.
    
-   <img src="https://i.imgur.com/C2IrHHc.gif"/>
+   <img src="https://i.imgur.com/sNtatZX.png"/>
 
 3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link.
 
@@ -185,7 +192,7 @@ This section guides you on how to configure template for each channel -
 
 2. In **Sender ID**, choose the WhatsApp business number from which you want to send the campaign.
    
-   <img src="https://i.imgur.com/C2IrHHc.gif"/>
+   <img src="https://i.imgur.com/sNtatZX.png"/>
 
 3. In **Map variables**, associate each variable mentioned in the template with the user variables. You can map a variable or provide a bot link.
 
@@ -207,13 +214,16 @@ Choose whether to run the campaign only once or on a recurring basis.
 
 * Select **Later** to send out the campaign message on a specific date and time. Use the Calendar box to set your preferred date and time.
 
-![](https://i.imgur.com/L8lNjcM.png)
+   ![](https://i.imgur.com/WbcjAKS.png)
 
   
 
 ##### Run multiple times
 
 Select this to schedule a recurring campaign.
+
+   ![](https://i.imgur.com/ui1kPCZ.png)
+
 
 *  **Repeat**: Select the frequency of running the campaign.
 
@@ -236,7 +246,6 @@ Select this to schedule a recurring campaign.
   
   
 
-![](https://i.imgur.com/6yd0sww.png)
 
   
   
@@ -263,7 +272,7 @@ You can set business hours for each day of a week so that your campaign message 
 
 3. Click on each day of the week and configure business hours for that particular day. Enable **Business hours same every day** to set a common timeframe for all days.
 
-<img src="https://i.imgur.com/SLqHfLu.png" width="50%"/>
+   <img src="https://i.imgur.com/eKA9G36.png" width="80%"/>
 
   
   
@@ -275,7 +284,7 @@ You can configure what to do with the messages after the configured business hou
 
   
 
-![](https://i.imgur.com/POhWjum.png)
+   ![](https://i.imgur.com/POhWjum.png)
 
 *  **Discard the message**: The message will not be sent and will be marked failed.
 
@@ -306,17 +315,14 @@ Segment is grouping of users based on certain condition sets. Segmentation can b
 
   
 
-![](https://i.imgur.com/6UpBV4r.gif)
+   ![](https://i.imgur.com/pAxeftX.png)
 
   
 
-* Once the segment is created, you can see the number of users under the segment.
+* When you select a segment, you can see the number of users in it.
 
-  
 
-![](https://i.imgur.com/mV0dGW4.png)
-
-![](https://i.imgur.com/HCNM7HD.png)
+   <img src="https://i.imgur.com/EvsUIXd.png" width="80%"/>
 
 
 
@@ -434,12 +440,12 @@ The following are the benefits of testing a campaign before launching -
 
 You will see the *Sending* status. You can see the actual delivery status after a while (about 15 seconds) - Delivered or Failed.
 
-   ![](https://i.imgur.com/Sm9nuYW.png)
+   <img src="https://i.imgur.com/Sm9nuYW.png" width="90%"/>
 
 
 * To send the test campaign to more users, click on **Send new test campaign**.
 
-   ![](https://i.imgur.com/UsOTzmX.png)
+   <img src="https://i.imgur.com/UsOTzmX.png" width="80%"/>
 
 
 For Failed messages, you can also see the reason for failure.
@@ -466,15 +472,15 @@ You can get notified via email for critical campaign status and progress alerts.
 
 To enable email alerts:
 
-1. On Engage, navigate to **Preferences**.
+1. On the left navigation bar, click **Engage** > **Preferences**.
 2. Toggle the **Enable campaign alerts**.
 
-   <img src="https://i.imgur.com/rP6fvrr.png"/>
+   <img src="https://i.imgur.com/RNSylY5.png"/>
 
 3. Check **Send alerts on campaign progress** to receive campaign progress related updates. By default, **Send alerts when campaigns are paused/failed** is enabled, you cannot uncheck it.
 4. In **Sending email alerts** enter your preferred email addresses separating each with comma (,).
 
-   <img src="https://i.imgur.com/jaGOOCM.png"/>
+   <img src="https://i.imgur.com/jaGOOCM.png" width="60%"/>
 
 5. Click **Add**.
 

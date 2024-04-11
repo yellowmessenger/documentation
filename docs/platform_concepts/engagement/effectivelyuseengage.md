@@ -21,12 +21,11 @@ When you create a campaign, it is important to identify the right set of audienc
 * Add a right country code, otherwise WhatsApp will append the country code of your business phone number and sends the message to a user.
 * Use **tags** to group users into different segments.
 
-![](https://i.imgur.com/TWsfHRM.png)
 
   
 *  Take user consent: Always provide an option to unsubscribe when sending a message to new or old customers. You can do this while creating a template. Few examples of how companies use opt-out to make sure their quality ratings remain intact.
 
-![](https://i.imgur.com/fEk9q37.jpg)
+   ![](https://i.imgur.com/fEk9q37.jpg)
 
   
 
@@ -94,15 +93,15 @@ There are three ways in which you can analyse the campaign performance -
 
 1. Go to the outbound/inbound page and you will get a brief summary of the campaigns that you have triggered/scheduled.
 
-   ![](https://i.imgur.com/k036ajM.png)
+   ![](https://i.imgur.com/MPKmP0K.png)
 
-2. You can also download the detailed report by clicking on 3 dots next to a campaign. You can then perform the analysis at your end according to your requirement.
+2. You can also download the detailed report by clicking on the Download icon. You can then perform the analysis at your end according to your requirement.
 
-   ![](https://i.imgur.com/aSetoY4.png)
+   ![](https://i.imgur.com/9OWBvTe.png)
 
-3. Go to Insights-> notification report.
+3. Go to **Insights** > **Data explorer** > Notification report.
 
-   ![](https://i.imgur.com/asksBwn.png)
+   ![](https://i.imgur.com/Dd2k1T2.png)
 
   
 
@@ -110,7 +109,7 @@ You can now apply filters, summarize and visualize the data according to your re
 
   
 
-   ![](https://i.imgur.com/ZjxmB2i.jpg)
+   ![](https://i.imgur.com/TDNWi1P.png)
 
   
 
@@ -133,7 +132,7 @@ It is important to note here that you should have clarity on what results you ne
 
 This will be your very first interaction with the user and first impressions do last long. Make sure you nail it the first time.
 
-![](https://i.imgur.com/NqFLxFQ.png)
+   <img src="https://i.imgur.com/NqFLxFQ.png" width="60%"/>
 
   
   
@@ -145,7 +144,7 @@ Definitely, you world prefer a more personalized message. Use the dynamic variab
 
   
 
-![](https://i.imgur.com/esN029j.png)
+   <img src="https://i.imgur.com/esN029j.png" width="60%"/>
 
   
 
@@ -153,7 +152,7 @@ Definitely, you world prefer a more personalized message. Use the dynamic variab
 
 Make sure to take feedback from the user quite often. Just don't make it frequent and repetitive, user might drop off in such cases. Also your template approval might create issues.
 
-![](https://i.imgur.com/Qlm6M8q.png)
+   <img src="https://i.imgur.com/Qlm6M8q.png" width="50%"/>
 
   
 
@@ -161,7 +160,7 @@ Make sure to take feedback from the user quite often. Just don't make it frequen
 
 Make sure your messages provide an option for the user to interact and engage more with it.
 
-![](https://i.imgur.com/3xw8JA7.png)
+   <img src="https://i.imgur.com/3xw8JA7.png" width="50%"/>
 
   
   
