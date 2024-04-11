@@ -16,12 +16,12 @@ To view a campaign report:
 * On the Flows page, click on the **Analytics** icon.
 
 <center>
-<img src="https://i.imgur.com/7CWYYoK.png" width="80%"/>
+<img src="https://i.imgur.com/oZcX9nx.png" width="80%"/>
 </center>
 
 You will see the performance report as shown below.
 <center>
-<img src="https://i.imgur.com/CeOftfu.png" width="80%"/>
+<img src="https://i.imgur.com/ddigqTF.jpeg" width="80%"/>
 </center>
 
 ### User engagement overview
@@ -124,7 +124,7 @@ Delivery Status such as Delivered and Read are not available for all channels ex
 
 ### Flow analytics
 
-"The Flow Analysis Report provides comprehensive insights into the performance of your flow, offering details on user interactions, message delivery, and engagement across various channels. This report furnishes valuable information about how your campaigns are reaching and resonating with your target audience. 
+The Flow Analysis Report provides comprehensive insights into the performance of your flow, offering details on user interactions, message delivery, and engagement across various channels. This report furnishes valuable information about how your campaigns are reaching and resonating with your target audience. 
 
    ![](https://i.imgur.com/PqlYzed.png)
 
@@ -149,10 +149,10 @@ You can download the Flow campaign report to gain access to in-depth data on cam
 
 To download a Flow campaign report:
 
-1. On the **Engage** > **Flows** page.
-2. Click more options icon for a specific campaign > **Download report**.
+1. On the **Flows** page, navigate to your preferred campaign.
+2. Click on the more options icon and select **Download report**.
 
-   ![](https://i.imgur.com/ZM182WA.png)
+   ![](https://i.imgur.com/cadtPiz.png)
 
    You will get a notification over email (external users) or Slack (Yellow users) with a link to download the report.
 

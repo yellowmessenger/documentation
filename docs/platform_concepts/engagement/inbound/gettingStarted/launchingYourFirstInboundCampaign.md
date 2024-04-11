@@ -12,11 +12,12 @@ Inbound engagement is a method to attract customers by providing relevant inform
 ## 1. Create Inbound campaign
 
 
-To create a new inbound campaign, follow these steps -      
+To create an inbound campaign, follow these steps -      
 
-1.  Navigate to your project and go to the  **Engage**  module.
-2.  Go to **Inbound** and click  **+ Create Campaign**.
-   ![](https://i.imgur.com/NyUeGcQ.png)
+1.  Navigate to your project and go to the  **Engage**  > **Inbound**.
+2.  Click  **+ Create Campaign**.
+
+   ![](https://i.imgur.com/e6kAjwr.png)
 
 3. Provide  **Basic information**.
 
@@ -224,7 +225,7 @@ It is  an overlay widget that slides from either to the left or right on your we
 
 Sample report
 
-![](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/068BB776-1320-44EE-951A-D501BCFBC578/6F52E321-959B-4DBD-A9F5-C8482E52E9CB_2/FrmMTyk5E5exlmyZOdj3Hsby35wiQ5ZzZLtehnvdVBYz/Image.png)
+   ![](https://i.imgur.com/WfVJUjT.pngg)
 
 #### Supported Button types
 
@@ -265,7 +266,7 @@ Multiple other components (no text) | Displays **New message received**.
 
 Sample report
 
-![Image.png](https://res.craft.do/user/full/a59774be-e9f6-fe9e-e9df-69fe0168e698/doc/068BB776-1320-44EE-951A-D501BCFBC578/B01D15FD-2B61-4634-BD8E-45D3D1A047D5_2/2oZyKUGjQ1DFZnQgy1fIc7XYxqXto5yrLGqOGvdFydMz/Image.png)
+   ![Image.png](https://i.imgur.com/2WnxqFv.png)
 
 
 #### Supported button types

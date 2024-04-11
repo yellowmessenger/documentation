@@ -6,7 +6,9 @@ sidebar_label: Inbound report
 
 Once you run a campaign, it is very important to understand how the campaign is performing. If it's working really well, you can use it widely.  If something is not performing, you can come up with some better ways make the campaign generate ROI. 
 
-To see the performance of a campaign, go to **Engage** > **Inbound** and click on the campaign for which you want to see report.
+To see the performance of a campaign: 
+
+On the left navigation bar, go to **Engage** > **Inbound** and click on the campaign for which you want to see report.
 
 ![](https://i.imgur.com/9z1e99g.png)
 

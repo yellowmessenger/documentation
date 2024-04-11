@@ -1,10 +1,10 @@
 ---
 sidebar_label: Create Flow campaign manually
-title: Create Flow campaign manually
+title: Create Flow campaign
 ---
 
 
-## Create Flow campaign
+## Create Flow campaign manually
 
 The campaign flow builder consists of five categories of nodes:
 
@@ -16,27 +16,24 @@ The campaign flow builder consists of five categories of nodes:
 
 To create a flow, follow these steps:
 
-1. Click on the Module Switcher and navigate to **Engage**.
-2. Navigate to **Flows** and click **Create flow** > **Create from scratch**.
+1. On the left navigation bar, go to **Engage** > **Flows**.
 
-  ![](https://i.imgur.com/AsPgjaT.png)
+2. Click on **Create flow** > **Create from scratch**.
 
-2. Click on  to **Flows**.
+  ![](https://i.imgur.com/i9NZiqL.png)
   
-  ![](https://i.imgur.com/wrBLa4B.png)
 
 :::note
 You can also reuse an existing flow using More options > **Duplicate**.
 :::
 
-3. Click on the Edit icon of the Untitled workflow (the default name) and enter the campaign name.
+3. Select the rule when users should enter the flow. 
 
-   ![](https://i.imgur.com/9VMYAuN.png)
-   
-4. Select the rule when users should enter the flow.
-	
-	<center><img src="https://i.imgur.com/Y9SkBqg.png" width="50%"/></center>
+   <center><img src="https://i.imgur.com/qlLGKvj.png" width="70%"/></center>
 
+4. Click on the Untitled workflow (the default name) and enter the campaign name.
+
+   <center><img src="https://i.imgur.com/yplyiKP.png" width="70%"/></center>
 
 
 5. Define the journey using [Flow control](#flow-control), [Conversations](#message-start-conversation), and [Actions](#action).

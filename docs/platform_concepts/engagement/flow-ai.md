@@ -15,18 +15,13 @@ Our advanced AI technology enables you to effortlessly create highly personalize
 
 To generate AI-based flow campaign, follow these steps:
 
-1. Click on the Module Switcher and navigate to **Engage**.
+1. On the left navigation bar, go to **Engage** > **Flows**  
 
-  ![](https://i.imgur.com/AsPgjaT.png)
+2. Click on **Create flow** > **Start with AI**.
 
-2. Navigate to **Flows**.
-  
+   ![](https://i.imgur.com/ykRUwEQ.png)
 
-3. Click on **Create flow** > **Start with AI**.
-
-   ![](https://i.imgur.com/O4gUSGf.png)
-
-4. Provided the campaign requirement to generate the flow.
+3. Provided the campaign requirement to generate the flow.
    
    ![](https://i.imgur.com/O4gUSGf.png)
 
@@ -49,6 +44,6 @@ Campaign themes | Choose the theme that you want to use for your campaign. By de
 
 6. Click **Generate**. The flow creation process will commence, and you can expect to see the complete end-to-end flow creation within approximately 2 min
 
-   <img src="https://i.imgur.com/p1Gpgrd.png"/>
+   <img src="https://i.imgur.com/DxVRCKM.png"/>
 
 

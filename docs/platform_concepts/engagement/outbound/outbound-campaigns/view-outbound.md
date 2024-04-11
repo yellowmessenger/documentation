@@ -6,20 +6,17 @@ title: Manage outbound campaigns
 You can access and view all the campaigns created for your organization on the Outbound page of the Engage module. This section provides a comprehensive overview of each campaign, including its name, status, scheduled dates, and performance metrics.
 
 
-## Access Outbound campaigns
+## View Outbound campaigns
 
-To access Outbound campaigns:
+To view Outbound campaigns created:
 
-* Go to your project and navigate to the **Engage** module > **Outbound**.
+* On the left navigation bar, go to **Engage** > **Outbound**.
 
-   ![](https://i.imgur.com/bgE3xeX.png)
-
-
-The Campaigns table provides a comprehensive overview of your outbound campaigns, including the status of each campaign.
-   ![](https://i.imgur.com/hE1L0uF.png)
+   ![](https://i.imgur.com/MPKmP0K.png)
 
 
-The following table provides descriptions of each column of the table.
+
+Below are descriptions for each column of the Overview table:
 
 Column | Description
 ------ | -----------
@@ -72,11 +69,11 @@ You can temporarily halt or restart a campaign from execution. When you pause a 
 
 * To pause a campaign, navigate to the desired campaign in the Outbound campaigns table and click on the **Pause** icon.
 
-   <img src="https://i.imgur.com/0tAW75J.png"/>
+   <img src="https://i.imgur.com/8khBcW4.png"/>
 
 * To resume a campaign that has been paused, navigate to the desired campaign and click on the **Resume** icon.
 
-   <img src="https://i.imgur.com/OLLHake.png"/>
+   <img src="https://i.imgur.com/nAaPjJJ.png"/>
 
 
 :::note
@@ -93,7 +90,7 @@ To download the campaign report:
 
 1. Navigate to **Engage** > **Outbound**, and click on the **Download** icon. 
 
-   <img src="https://i.imgur.com/rf708FO.png"/>
+   <img src="https://i.imgur.com/9OWBvTe.png"/>
 
    * If you are a yellow.ai domain user, you will receive a Slack notification prompting you to download the report.<br/><br/>
     

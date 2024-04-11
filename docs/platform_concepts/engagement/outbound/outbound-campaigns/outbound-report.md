@@ -1,6 +1,6 @@
 ---
-sidebar_label: Explore Outbound campaigns & reports
-title: Explore Outbound campaigns & reports
+sidebar_label: Outbound campaign reports
+title: Outbound campaign reports
 ---
 
 You can monitor and track the progress and effectiveness of your campaigns. Additionally, you have the option to view or download campaign reports for further analysis and insights. 
@@ -13,19 +13,16 @@ The campaign report provides comprehensive insights and data regarding the perfo
 
 To view the performance of an outbound campaign, follow these steps:
 
-1. On the Yellow.ai platform, navigate to the **Engage** module.
- 
-   ![](https://i.imgur.com/bgE3xeX.png)
+1. In the **Engage** section, click **Outbound**.
+2. Click on the **Campaign analytics** of the campaign for which you want to view the report.
 
-2. On the **Campaigns** tab, navigate to your preferred campaign and click on the **Campaign analytics** icon.
-
-   ![](https://i.imgur.com/0MaFCQw.png)
+   ![](https://i.imgur.com/JGXoO1k.png)
 
 
 
 You can also see the detailed break-up of the messages sent, delivered, and read.
 
-   ![](https://i.imgur.com/2SQtH1I.png)
+   ![](https://i.imgur.com/O5EyTBM.png)
 
 #### Performance
 
@@ -92,7 +89,7 @@ To download the campaign report:
 
 1. Navigate to **Engage** > **Outbound**, and click on the **Download** icon. 
 
-   <img src="https://i.imgur.com/rf708FO.png"/>
+   <img src="https://i.imgur.com/9OWBvTe.png"/>
 
    * If you are a yellow.ai domain user, you will receive a Slack notification prompting you to download the report.<br/><br/>
     

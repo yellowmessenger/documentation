@@ -36,9 +36,10 @@ As a campaign manager, you have the ability to add crucial brand information tha
 
 To add your brand details:
 
-1. On the **Flows** page of the Engage module, click on **Brand settings**.
+1. On the left navigation bar, go to **Engage** > **Flows**, and click on **Brand settings**.
 
-   ![](https://i.imgur.com/Qt6cBOC.png)
+   ![](https://i.imgur.com/mwFSq2H.png)
+   
 2. In **Describe about brand**,  enter essential details about your brand within 1000 characters. For best results, provide as much information as possible.
 
    <center><img src="https://i.imgur.com/BfgFyE7.png" width="60%"/></center>
