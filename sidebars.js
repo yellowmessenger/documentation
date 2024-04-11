@@ -962,7 +962,7 @@ module.exports = {
 
       {
         type: "category",
-        label: "Data Visualisation",
+        label: "Data visualisation",
         link: {type: 'doc', id: 'platform_concepts/growth/visualisation/visualization'},
         collapsed: true,
         items: [
