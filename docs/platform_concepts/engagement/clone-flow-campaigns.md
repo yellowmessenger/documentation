@@ -9,7 +9,7 @@ To duplicate an existing flow campaign:
 1. On the Flows page, navigate to the desired flow you wish to duplicate.
 2. Click on the More options icon > **Duplicate**.
 
-   ![](https://i.imgur.com/RuGzDNf.png)
+   ![](https://i.imgur.com/MOtKdpm.png)
 
 3. Enter a name for the campaign.
 
