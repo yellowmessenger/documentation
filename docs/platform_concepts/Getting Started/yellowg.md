@@ -130,5 +130,5 @@ Elevate your marketing strategy with YellowG's AI-powered Flow Campaigns. By ana
 
 Imagine you're a marketing manager launching a new product campaign. With our GenAI, audience demographics, past campaign performance, and user interactions are analyzed to generate tailored flows for different customer segments. These adaptable flows evolve based on user engagement, freeing up time and resources for marketers to refine their overall strategy and achieve superior outcomes
 
-
+   ![](/img/cdp/flow.gif)
 

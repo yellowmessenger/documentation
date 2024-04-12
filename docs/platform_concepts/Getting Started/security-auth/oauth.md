@@ -71,14 +71,14 @@ Watch this video on how configure your identity provider (**Microsoft AzureAD**)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VmhHpo5FeYI?si=CmNdYqjbtM2NJ38E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 :::note
-If your identity provider isn't configured in yellow.ai for SSO, share OAuth details directly with [yellow.ai's support team](support@yellow.ai).
+If your identity provider isn't configured in yellow.ai for SSO, share OAuth details directly with [yellow.ai's support team]((mailto:support@yellow.ai).
 :::
 
 
 
 ### Step 2: Share OAuth setup details
 
-Once you have set up your IDP, share the following details (fetched from your identity provider) with our support team at support@yellow.ai:
+Once you have set up your IDP, share the following details (fetched from your identity provider) with our support team at [support@yellow.ai]((mailto:support@yellow.ai) :
 
 | Field   | Description |
 |---------| -----------|
@@ -173,7 +173,7 @@ The following video demonstrates how to assign users to a user role in Microsoft
 
 
 :::note
-If your identity provider isn't configured in yellow.ai for SSO, share OAuth details directly with [yellow.ai's support team](support@yellow.ai).
+If your identity provider isn't configured in yellow.ai for SSO, share OAuth details directly with [yellow.ai's support team](mailto:support@yellow.ai).
 :::
 
 
