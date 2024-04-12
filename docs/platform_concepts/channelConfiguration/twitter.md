@@ -19,9 +19,9 @@ Text<br/> Image <br/> GIF |Text<br/> Image
 In this article, you will learn:
 
 * [Twitter pricing plans](#twitter-pricing-plans)
-* [How to create a Twitter account](create-a-twitter-account)
-* [How to setup a Twitter channel using the Developer portal](setup-twitter-channel-using-developer-portal)
-* [How to connect a Twitter channel to your bot](connect-twitter-channel-to-your-bot)
+* [How to create a Twitter account](#create-a-twitter-account)
+* [How to setup a Twitter channel using the Developer portal](#setup-twitter-channel-using-developer-portal)
+* [How to connect a Twitter channel to your bot](#connect-twitter-to-your-bot)
 * [How to test your bot on Twitter channel](#test-your-bot-on-twitter)
 
 ## Twitter pricing plans
