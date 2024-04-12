@@ -5,6 +5,7 @@ sidebar_label: Twilio SMS
 
 :::note
 If businesses wish to set up the [SMS channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/SMS-channel), they are required to contact the Yellow [support](mailto:support@yellow.ai) team for assistance and guidance. However, if they prefer to set up their own SMS channel independently, they can utilize the Twilio SMS channel for seamless integration and management. 
+:::
 
 Twilio SMS enables you to send and receive SMS through APIs. This cloud communication platform enables businesses to integrate SMS and other communication channels into their applications. Additionally, it supports two-way communication and push notifications to actively engage users.
 
@@ -73,16 +74,21 @@ To set up a Twilio SMS account, you need to sign up for the [Twilio console](htt
 
 To connect a Twilio SMS to your bot, follow these steps:
 
-1. Log on to `https://cloud.yellow.ai` and navigate to **Overview > Channels > Messaging > Twilio SMS**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/U2MpywV.png)
+    ![](https://imgur.com/PIOvT6K.png)
 
-2. Enter the **Account SID**, **Auth token**, and **Phone number** that you have copied from the Twilio console (see step 6 in the [Setup Twilio SMS](#setup-twilio-sms-account) section).
+2. Click **Channels** > **Messaging** > **Twilio SMS**.
 
-   ![](https://i.imgur.com/fMH3J8Z.png)
+    ![](https://imgur.com/WYyP1im.png)
+
+3. Enter the **Account SID**, **Auth token**, and **Phone number** that you have copied from the Twilio console (see step 6 in the [Setup Twilio SMS](#setup-twilio-sms-account) section).
+
+   ![](https://imgur.com/vcy6cAM.png)
    
-3. Click **Save**.   
-   This will connect you to the Twilio SMS.
+4. Click **Save**. 
+
+* This will connect you to the Twilio SMS.
 
 ## Setup your bot
 

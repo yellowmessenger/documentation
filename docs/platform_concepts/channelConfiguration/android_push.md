@@ -30,11 +30,23 @@ To set up Firebase Cloud Messaging client app on Android,  see the [Firebase off
 Once you get the key JSON file, upload the key on Yellow.ai to establish a connection and grant access to send push notifications from Yellow.ai.
 
 To connect FCM to yellow.ai, follow these steps:
-1. Go to **Channels** > **Push Notifications** > **Android (FCM)**.
-2. Click **Upload** and choose the downloaded JSON file.
-3. Click **Add**.
 
-![](https://secure-res.craft.do/v2/MXpitnt98nfq77xcERfHs5nKdeJUqQ42x1Paqh34KHvmo25ikVQryimMtxX8fAdU1SBcf9ZSL7SHduNiC1QsYBiwvFXXGgrEXzBXsR66jC14o7djEPtQKjWC2ZNyUmiYiYVsjd8UCUPNBKyRSKiXH3phdZF949jPshsBcT72G3ZqPoFiVGzQbgZLDEfUZSgDZZceh38sz116SVLCrGC4YFrLucpLLcUS41YppMQCXNEwcevcZYmjwagkzDJSJJvCPRUYTmqVkmC3r4sNaL511omqxMGaViz7HZw7LLyhEZVDifig8f/Image.jpg)
+1. On the left navigation bar, click **Extensions**.
+
+   ![](https://imgur.com/PIOvT6K.png)
+   
+2. Click **Channels** > **Push Notifications** > **Android (FCM)**. 
+
+   ![](https://imgur.com/LAsXF6T.png)
+
+3. Click **+ Connect your account**.
+
+   ![](https://imgur.com/zrtg4lV.png)
+
+4. Cick **Upload** and choose the downloaded JSON file from your local folder and click **Add**.
+
+    <img src="https://imgur.com/g0eAcCC.png" alt="drawing" width="70%"/>
+
 
 :::note
 To know how to create a push notification campaign, see [Mobile push template](/docs/platform_concepts/engagement/outbound/templates/mobilepush.md).

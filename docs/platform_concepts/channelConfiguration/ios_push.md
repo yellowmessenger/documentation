@@ -15,13 +15,25 @@ To send push notifications on your iOS app using Yellow.ai, you must have an App
 
 ### Step 2: Upload APNs private key on Yellow.ai
 
-1. Go to **Channels** > **Push Notifications** > **iOS  (APNs)**.
-2.  Click **Upload** and choose the .p8 file that you created.
-3. Enter the *Key ID*, the Bundle ID and the Apple Team ID from the previous step.
-4. Click **Add** to upload
 
-![](https://secure-res.craft.do/v2/MXpitnt98nfq77xcERfHs5nKdeJUqQ42x1Paqh34KHvmo25ikVQryimMtxX8fAdU1SBcf9ZSL7SHduNiC1QsYBiwvFXXGgrEXzBXsR66jC14o7djEPtQKjWC2ZNyUmiYiYVsjd8UCUPNBKyRSKiXH3phczPr5qEBBoRoSV3iqCoFycXWFy15mVNCUZX1Adjze6y7ZKhWDgfpAD1441wesaaVVXcax81jmqN8N5cSPaSqPm19dLwQUjSGuofoMCvsVwi5P5tha29zHoQWcocWjaZXU4E41UbPy5C3aLWBEYofj9D5Wt/Image.jpg)
+1. On the left navigation bar, click **Extensions**.
 
+   ![](https://imgur.com/PIOvT6K.png)
+   
+2. Click **Channels** > **Push Notifications** > **Android (FCM)**. 
+
+   ![](https://imgur.com/PCuLOw8.png)
+
+3. Click **+ Connect your account**.
+
+   ![](https://imgur.com/A0h1dX8.png)
+
+4. Click **Upload** and choose the .p8 file that you created. 
+
+5. Enter the *Key ID*, the Bundle ID and the Apple Team ID from the previous step.
+4. Click **Add**.
+
+    <img src="https://imgur.com/C9JGuWf.png" alt="drawing" width="70%"/>
 
 :::info
 To know how to create a push notification campaign, see [Mobile push template](/docs/platform_concepts/engagement/outbound/templates/mobilepush.md).

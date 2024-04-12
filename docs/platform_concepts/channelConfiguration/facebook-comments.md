@@ -41,13 +41,13 @@ To establish a connection, you must be an admin of the Facebook account and the 
 
 To link your Facebook page, follow these steps:
 
-1.  On the switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-    ![](https://i.imgur.com/kv01RDY.png)
+   ![](https://imgur.com/PIOvT6K.png)
    
-2. Navigate to **Social** and enable **Facebook comments**. 
+2. Click **Channels** > **Social** > **Facebook comments**. 
 
-   ![](https://i.imgur.com/X983fbO.png)
+   ![](https://imgur.com/tQj5kmZ.png)
 
 3. Login to your Facebook account that is connected to your Facebook Business page.
 

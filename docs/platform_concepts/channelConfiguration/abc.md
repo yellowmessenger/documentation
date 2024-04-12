@@ -193,7 +193,7 @@ After configuring your Message Business account, you need to contact the [suppor
 
 To connect ABC channel to your bot on the platform, follow these steps:
 
-1. Log in to `https://cloud.yellow.ai` and navigate to **Overview** > **Extensions**.
+1. On the left navigation bar, click **Extensions**.
 
    ![](https://imgur.com/TnUYi24.png)
 

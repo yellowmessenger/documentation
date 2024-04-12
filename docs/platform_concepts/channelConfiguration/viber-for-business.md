@@ -59,17 +59,21 @@ After creating an official Viber business account, a unique business Id or servi
 
 To connect Viber's business channel to your brand, you need to follow these steps:
 
-1. Log on to https://cloud.yellow.ai and navigate to **Overview > Channels > Messaging > Viber for business**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/SzLGIr3.png)
+    ![](https://imgur.com/PIOvT6K.png)
 
-2. Enter **Viber business service ID** and **Message TTL**, which are generated after creating an account, and click **Save**.
+2. Click **Channels** > **Messaging** > **Viber for business**.
 
-   ![](https://i.imgur.com/1u5fmt6.png)
+   ![](https://imgur.com/17d2En5.png)
+
+3. Enter **Viber business service ID** and **Message TTL**, which are generated after creating an account, and click **Save**.
+
+   ![](https://imgur.com/Z9fff2k.png)
 	
-3. Navigate to the **Overview** page, under **Active channels** section, you can see that Viber business channel is successfully connected to your bot.
+4. Navigate to the **Overview** page, under **Active channels** section, you can see that Viber business channel is successfully connected to your bot.
 	
-	![](https://i.imgur.com/6wvBqJp.png)
+	![](https://imgur.com/698n2UW.png)
 	
 ## 3. To access Viber business account
 	

@@ -43,15 +43,19 @@ This setup allows our platform to send emails on behalf of the email domain. For
 
 To set up SMTP server on the yellow.ai platform, follow these steps:
 
-1. Log on to `https://cloud.yellow.ai` and navigate to **Overview** > **Channels** > **Messaging** > **Email**.
+1. On the left navigation bar, click **Extensions**.
 
-    ![](https://i.imgur.com/kmA2I2Q.png)
+    ![](https://imgur.com/PIOvT6K.png)
 
-2. Click **Add account**
+2. Click **Channels** > **Messaging** > **Email**.
 
-    ![](https://i.imgur.com/FkweCbm.png)
+    ![](https://imgur.com/LTrbjIP.png)
+
+3. Click **Add email**
+
+    ![](https://imgur.com/Mqd2sQI.png)
 	
-3. In the *Add Email* section, select **Basic** to add the details of the Email sender.
+4. In the *Add Email* section, select **Basic** to add the details of the Email sender.
 
 Enter the following details:
 
@@ -79,7 +83,7 @@ Enter the following details:
 	
 * Once the email account details are saved, forwarding address will be displayed.
 
- ![](https://i.imgur.com/D6gV0dW.png)
+ ![](https://imgur.com/igensXY.png)
 
 Similarly, you can add multiple email accounts and choose your preferred sender ID when configuring an outbound campaign.
 
@@ -121,7 +125,7 @@ You can only forward messages to a single Gmail address, not an email group or a
     
 7. A confirmation link will be sent to the **Bot Messages** section of the Inbox module. Click the below highlighted link.
 
-     ![](https://i.imgur.com/C22VQ0O.png)
+     ![](https://imgur.com/lz32RPo.png)
      
 8. Click **Confirm**.
 
@@ -137,7 +141,7 @@ You can add email alias account, if already main account configured in chatbot f
 
 To add an email alias account, follow these steps:
 
-1. Navigate to **Overview** > **Extensions**.
+1. On the left navigation bar, click **Extensions**.
 
     ![](https://imgur.com/PIOvT6K.png)
 
@@ -172,7 +176,7 @@ To configure an SMTP using JSON, follow these steps:
 	
 3. In the *Add email* section, select **Advanced** to add the SMTP details of the email address in the JSON code for which you want to send emails.
 
-    ![](https://imgur.com/6Cg483w)
+    <img src="https://imgur.com/QSeK2vf.png" alt="drawing" width="80%"/>
 
 4. Copy the below JSON code, paste it in the *Advanced configuration* section, and click **Save**.
 

@@ -65,21 +65,23 @@ To create a bot in Webex, follow these steps:
 
 To connect a Webex channel to your bot on the platform, follow these steps:
 
-1. Log on to `https://cloud.yellow.ai` and navigate to **Overview > Channels > Messaging > Webex**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/DZRqc71.png)
+    ![](https://imgur.com/PIOvT6K.png)
 
-2. Enter the **Bot access token** that you have copied from the Webex developer portal (see step 9 in the "Create a bot in Webex" section).
+2. Click **Channels** > **Messaging** > **Webex**.
 
-   ![](https://i.imgur.com/fMH3J8Z.png)
+   ![](https://imgur.com/thUNtVW.png)
+
+2. Enter the **App token** that you have copied from the Webex developer portal (see step 9 in the "Create a bot in Webex" section).
+
+   ![](https://imgur.com/Rbur64K.png)
    
 3. click **Save**.   
    
    * This will connect you to the Webex channel.
 
 3. Navigate to the **Overview** page, under the **Active channels** section, to verify that the Webex channel is connected to your bot.
-
-    ![](https://i.imgur.com/ez7WwS1.png) 
     
 ## Test your Webex chatbot
 

@@ -91,18 +91,21 @@ To create a Viber chatbot, follow these steps:
 
 To connect Viber to the Yellow.ai platform, follow these steps:
 
-1. Log on to https://cloud.yellow.ai and navigate to **Overview > Channels > Messaging > Viber**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/iA9MUZs.png)
+    ![](https://imgur.com/PIOvT6K.png)
 
+2. Click **Channels** > **Messaging** > **Viber**.
 
-2. Enter the **Token** that you have copied from the Viber admin panel and click **Save**.
+   ![](https://imgur.com/8EudkaC.png)
 
-   <img src="https://i.imgur.com/yF7rjo6.png" alt="drawing" width="90%"/>
+3. Enter the **Viber business service ID** that you have copied from the Viber admin panel and click **Save**.
 
-3. Navigate to the **Overview** page, under **Active channels** section, you can see that Viber channel is successfully connected to your bot.
+   <img src="https://imgur.com/y4cTA3e.png" alt="drawing" width="90%"/>
 
-    ![](https://i.imgur.com/35JvWSy.png)
+4. Navigate to the **Overview** page, under **Active channels** section, you can see that Viber channel is successfully connected to your bot.
+
+    ![](https://imgur.com/OC4QmdK.png)
     
 ## Setup your bot
 

@@ -145,13 +145,17 @@ Once the catalog is linked to WABA, connect the catalog with the whatsApp chatbo
 
 To connect catalog with WhatsApp chatbot, follow these steps:
 
-1. Navigate to **Channels** > **Messaging** > **WhatsApp**. 
+1. On the left navigation bar, click **Extensions**.
 
-    ![](https://i.imgur.com/RAcd6U6.png)
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **WhatsApp Messenger**. 
+
+    ![](https://imgur.com/bB6nmTk.png)
     
 2. Click on the below-highlighted icon and select **Edit** option. 
 
-    ![](https://i.imgur.com/MZpz5wt.png)
+    ![](https://imgur.com/bpukhiK.png)
     
 3. Paste the **Catalouge ID** that you have copied and click **Save**.
 

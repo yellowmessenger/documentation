@@ -33,9 +33,9 @@ To initiate testing, follow these steps:
 
 To test WA bot from Studio module, follow these steps:
 
-1. Navigate to **Studio** and select the flow that you want to test.
+1. Navigate to **Studio** > **Build** > **Flows** and select the flow that you want to test.
 
-     ![](https://i.imgur.com/n7kOuER.png)
+     ![](https://imgur.com/CSXypXJ.png)
      
 2. In the **Preview** section, select **WhatsApp** from the website drop-down.
 
@@ -66,9 +66,9 @@ To test WA bot from Studio module, follow these steps:
     
 ### Test WhatsApp bot using Channels module
 
-1. On the switcher, click **Channels** > **Messaging** > **WhatsApp messenger** > **Test bot**.
+1. On the left navigation bar, click **Extensions** > **Channels** > **Messaging** > **WhatsApp messenger** > **Test bot**.
 
-   ![](https://i.imgur.com/VohyYIM.png)
+   ![](https://imgur.com/kJ0NqTE.png)
    
 * Follow the steps outlined in the testing section of the [Studio module](#test-whatsapp-bot-using-studio-module).
 

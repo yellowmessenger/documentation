@@ -73,13 +73,17 @@ You can create a registered Telegram account using the Telegram app or website.
 
 To connect the Telegram channel on the Yellow.ai platform, follow these steps:
 
-1. On the switcher, click **Channels > Telegram**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/XGauvh7.png)
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **Telegram**.
+
+    ![](https://imgur.com/zKD0DF5.png)
    
-2. Enter your **OAuth token** and click **Save**.  
+3. Enter your **OAuth token** and click **Save**.  
    
-   ![](https://i.imgur.com/PJ2dMuX.png)
+   <img src="https://imgur.com/yUd0kZW.png" alt="drawing" width="100%"/>
 
 * Your Telegram channel will be successfully connected.
 
