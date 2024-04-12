@@ -39,11 +39,17 @@ To set up Lazada, you need to consider the following prerequisites:
 ## Connect your bot to Lazada app
 
 
-1. On the switcher, click **Overview** > **Channels** > **Messaging** > **Lazada**.
+1. On the left navigation bar, click **Extensions**.
+
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **Lazada**.
+
+    ![](https://imgur.com/ZlnaaN6.png)
 
 2. Click **Connect to Lazada**.
 
-   ![](https://i.imgur.com/ZF0swfK.png)
+   <img src="https://imgur.com/dUoTOrb.png" alt="drawing" width="60%"/>
       
 3. Authorize the permission to interact with the bot by selecting the **Country**, entering the **Email** and **Password**, and then click **Submit**.
      

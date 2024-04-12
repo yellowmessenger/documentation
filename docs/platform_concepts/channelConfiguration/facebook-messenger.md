@@ -51,7 +51,7 @@ To establish a connection, you must be an admin of the Facebook account and the 
 
 To connect your Facebook page to Yellow.ai, follow these steps:
 
-1.  Navigate to **Overview** > **Extensions**.
+1. On the left navigation bar, click **Extensions**.
 
     ![](https://imgur.com/PIOvT6K.png)
 

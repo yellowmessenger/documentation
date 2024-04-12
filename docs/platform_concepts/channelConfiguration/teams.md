@@ -206,16 +206,24 @@ After adding app to MS Teams workspace, you need to set permissions on the Azure
 	
 ### Connect MS Teams app to the Yellow.ai platform
 	
-1. On the switcher click **Channels** > **Microsoft Teams**.
-2. Copy the Profile ID based on the region where you want to deploy the bot, as mentioned in step 8 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams).  
-3. Copy the **Client Secret** as mentioned in step 10 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams).
-4. Copy the **Bot ID** as mentioned in step 11 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams) paste it under *Client ID*.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/8SE3KWq.png)
-	
-* Now you are ready to use MS Team with Yellow.ai bot.
-	
+    ![](https://imgur.com/PIOvT6K.png)
 
+2. Click **Channels** > **Messaging** > **MS Teams**.
+
+    ![](https://imgur.com/czBOMV9.png)
+
+3. Copy the Profile ID based on the region where you want to deploy the bot, as mentioned in step 8 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams).  
+4. Copy the **Client Secret** as mentioned in step 10 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams).
+5. Copy the **Bot ID** as mentioned in step 11 of [Create a bot on MS Teams](#create-a-bot-on-ms-teams) paste it under *Client ID*.
+
+   ![](https://imgur.com/SeuF1W3.png)
+
+6. Navigate to the **Overview** page, under the **Active channels** section, you can see that the MS Teams channel is successfully connected to your bot.	
+
+	![](https://imgur.com/Y7ssi5b.png)
+   
 ## Test MS Teams chatbot
 
 Once you have created an app and connected it to the Yellow.AI platform, you need to test the bot to verify whether the bot is able to respond to user messages on MS Teams app.
@@ -250,11 +258,11 @@ To sync users in MS Teams, follow these steps:
 
 1. Copy the existing MS teams credentials from the Channels page.
 
-    ![](https://i.imgur.com/bYLXaMe.png)
+    ![](https://imgur.com/Sz4qmUl.png)
     
 2. Disconnect MS Teams.
 
-   ![](https://i.imgur.com/FpjMAzt.png)
+   ![](https://imgur.com/bl9PEJr.png)
    
 3. Use the below API to reconnect Teams. Before calling the API, ensure to update parameters such as `BOT_ID, API_KEY, PROFILE_NAME, CLIENT_ID, CLIENT_SECRET, and TENANT_ID` with the appropriate values.
 

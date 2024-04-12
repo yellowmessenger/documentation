@@ -141,13 +141,17 @@ To verify the Webhook URL domain, follow these steps:
 
 To connect the Zalo channel on the Yellow.ai platform, follow these steps:
 
-1. On the switcher, click **Channels > Zalo**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/eNwtDTh.png)
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **Zalo**.
+
+   ![](https://imgur.com/lmP3bzo.png)
    
 2.  Enter the **OA server key**, **Refresh token**, **App ID**, and **Zalo DNS TXT** that were copied from the developer portal, and then click **Save**.   
    
-    ![](https://i.imgur.com/zealQZi.png)
+    ![](https://imgur.com/YUT0vHF.png)
 
 3. Your Zalo channel will be successfully connected. 
 

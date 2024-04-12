@@ -187,7 +187,7 @@ If you want to disconnect your page, which is linked to Instagram, click **Disco
 
 ### Connect your Facebook account to the Yellow.ai platform
  
-1. Navigate to **Overview** > **Extensions**.
+1. On the left navigation bar, click **Extensions**.
 
     ![](https://imgur.com/PIOvT6K.png)
 

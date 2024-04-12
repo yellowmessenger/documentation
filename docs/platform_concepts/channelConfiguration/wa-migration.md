@@ -31,53 +31,56 @@ The business assets must satisfy the following requirements to be eligible for m
 
 To migrate your WhatsApp (WA) phone number, follow these steps:
 
-1. On the switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-   <img src="https://i.imgur.com/kv01RDY.png" alt="drawing" width="90%"/>
+    ![](https://imgur.com/PIOvT6K.png)
 
+2. Click **Channels** > **Messaging** > **WhatsApp Messenger**. 
 
-2. On the Messaging page, click **WhatsApp Messenger > Get Started**. 
+    ![](https://imgur.com/bB6nmTk.png)
 
-   <img src="https://i.imgur.com/14XbqIg.png" alt="drawing" width="90%"/>
+3. Click **Get Started**.
 
-3. Choose your account type from the drop-down and enable the checkbox to ensure that you have read the above information. Click on **Connect WhatsApp**.
+   ![](https://imgur.com/33rPAZg.png)
 
-   <img src="https://i.imgur.com/amgaRP3.png" alt="drawing" width="90%"/>
+4. Choose your account type from the drop-down and enable the checkbox to ensure that you have read the above information. Click on **Connect WhatsApp**.
+
+   <img src="https://imgur.com/fNYhCjC.jpg" alt="drawing" width="90%"/>
 
 :::note
 Ensure that you have admin access to the Facebook business manager account.
 :::
 
-4. Login to your Facebook account that is linked with your WhatsApp business manager account.
+5. Login to your Facebook account that is linked with your WhatsApp business manager account.
 
    <img src="https://i.imgur.com/qgTnAqa.png" alt="drawing" width="40%"/>
   
 
-5. Click **Get started** to proceed with the next steps.
+6. Click **Get started** to proceed with the next steps.
 
    <img src="https://i.imgur.com/ioTcCkc.png" alt="drawing" width="40%"/>
 
-6. Read the terms and conditions of WhatsApp Business and Meta and click on **Continue**.
+7. Read the terms and conditions of WhatsApp Business and Meta and click on **Continue**.
 
     <img src="https://i.imgur.com/wdqRUON.png" alt="drawing" width="40%"/>
   
-7. Select the existing business account that you want to migrate.
+8. Select the existing business account that you want to migrate.
 
     <img src="https://i.imgur.com/AOgCsrW.png
   " alt="drawing" width="40%"/>
 
-8. Enter the required details such as *Meta business*, *Business name*, *Business website or profile page*, and *Country* to create a new WABA account, and click **Next**.
+9. Enter the required details such as *Meta business*, *Business name*, *Business website or profile page*, and *Country* to create a new WABA account, and click **Next**.
 
     <img src="https://i.imgur.com/VuuaWeV.png
   " alt="drawing" width="40%"/>
   
   
-9. Select your WhatsApp business profile and click **Next**.
+10. Select your WhatsApp business profile and click **Next**.
 
      <img src="https://i.imgur.com/h3r8EzA.png
   " alt="drawing" width="40%"/>
   
-10. You will see a dialog box is displayed to enter the phone number and OTP. Close the dialog box to proceed further.
+11. You will see a dialog box is displayed to enter the phone number and OTP. Close the dialog box to proceed further.
 
 
 After creating a WABA, contact our [support](mailto:support@yellow.ai) team to perform the migration. The team will configure the following: 

@@ -103,26 +103,22 @@ You need to configure Switchboard to handle the conversation between Zendesk and
 
 To connect Sunshine conversations to your bot on the platform, follow these steps:
 
-1. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions** > **Chat widget**.
 
-   ![](https://i.imgur.com/UuFZ2eR.png)
+   ![](https://imgur.com/ww7i94O.png)
 
-2. Click on **Chat widget**.
+2. Navigate to **Widget panel**, under *Bot avatar*, click **Add** icon and set the logo for the bot.
 
-   ![](https://i.imgur.com/1KzP77W.png)
-   
-3. Navigate to **Widget panel**, under *Bot avatar*, click **Add** icon and set the logo for the bot.
-
-   <img src="https://i.imgur.com/17TDvcI.png)" alt="drawing" width="60%"/>
+   <img src="https://imgur.com/Ut1zHjM.png" alt="drawing" width="60%"/>
 
 :::note
 * To ensure a seamless integration with Zendesk Sunshine, it is mandatory to update the bot icon.
 * It is recommended to upload images with a size of 150 x 150 pixels. 
 :::  
 
-4. Go to **Channels > Additional > Sunshine Conversations > click Connect**.
+4. Go to **Channels** > **Additional** > **Sunshine Conversations**.
 
-   ![](https://i.imgur.com/wFrqroe.png)
+   ![](https://imgur.com/orI1sB6.png)
 
 5. Click **Connect to Sunshine Conversation**.
 
@@ -142,7 +138,7 @@ To connect Sunshine conversations to your bot on the platform, follow these step
 	 
 9. Navigate to the **Overview** page, under the **Active channels** section, you can see that the Sunshine Conversations channel is successfully connected to your bot.
 
-      ![](https://i.imgur.com/wVErgLe.png)	 
+    ![](https://imgur.com/0bos19f.png)	 
 	 
 ### Connect Yellow.ai on Zendesk Admin Centre
 
@@ -186,6 +182,40 @@ To test your bot on the Sunshine conversations, follow these steps:
 3. The agent will respond to your queries.
 
      ![](https://i.imgur.com/3yKepAp.png)   
+
+
+## Enable Yellow's widget on Sunshine
+
+The Sunshine supports Yellow's widget to enable users to interact with the bot and seamlessly connect with a live agent.
+
+**Key features:**
+
+* **Automated response**: The Yellow widget supports automated responses to user queries.
+* **Live agent support**: Users can engage with live agents via Zendesk if the bot cannot address their queries.
+
+### Connect bot users to live agents on Zendesk
+
+To connect to a live agnet on Zendesk, follow these steps:
+
+1. Go to Studio and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on how you want the bot to take the user through the process.
+
+2. Configure a flow using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to connect with a Zendesk agent.
+
+    ![](https://imgur.com/oURnE8E.png)
+    
+3. Trigger the flow to initiate conversation with a live agent.
+
+     <img src="https://i.imgur.com/gj5AHt8.png" alt="drawing" width="40%"/>
+
+4. A ticket will be raised on Zendesk, and an agent will **Accept** the invite to start conversation.
+
+   ![](https://i.imgur.com/Akqa8K7.png)
+	  
+5. The agent will respond to your queries on Zendesk.
+
+     ![](https://i.imgur.com/3yKepAp.png) 
+
+* When the conversation between the agent and user ends, the bot takes the conversation forward with the user.     
 
 
 ## FAQs

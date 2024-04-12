@@ -194,15 +194,19 @@ agent/bot messages| 200 requests / 15 mins per user
 
 To connect the Twitter channel to the Yellow.ai platform, follow these steps:
 
-1. On the switcher, click **Channels > Social**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/CEoJTaZ.png)
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Social** > **Twitter**.
+
+   ![](https://imgur.com/5qJV7xs.png)
    
-2. Click **Connect**, to connect your bot to Twitter.
+3. Click **Connect**, to connect your bot to Twitter.
 
-   ![](https://i.imgur.com/PFvwsPc.png)
+    <img src="https://imgur.com/TtQcoTz.png" alt="drawing" width="80%"/>!
 
-3. Enter the details such as **Access token**, **Access token secret**, **Consumer key**, **Consumer secret**, and **Environment name** that you have copied from Twitter's developer portal and click **Connect**.
+4. Enter the details such as **Access token**, **Access token secret**, **Consumer key**, **Consumer secret**, and **Environment name** that you have copied from Twitter's developer portal and click **Connect**.
 
    <img src="https://imgur.com/zW7Y88u.png" alt="drawing" width="90%"/>
  

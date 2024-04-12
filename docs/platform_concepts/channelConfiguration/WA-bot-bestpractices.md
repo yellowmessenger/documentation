@@ -166,7 +166,7 @@ To change the display picture and description, follow these steps:
 
 1. On the WA channel page, click on the icon highlighted below and click **Edit**.
 
-    ![](https://i.imgur.com/cdMln3A.png)
+    ![](https://imgur.com/bpukhiK.png)
 	
 2. Under **Basic details**, you can edit the display picture and description based on your requirements.	
 
@@ -259,7 +259,7 @@ You can test the WA bot in staging and sandbox environments by enabling **Develo
 
 1. On the **Channels** page, select <b>WhatsApp messenger</b> in the Live environment, click on the **More options** icon, and select **Edit** icon.
 
-   ![](https://i.imgur.com/fI8jt1s.png)
+   ![](https://imgur.com/bpukhiK.png)
 
 3. **Enable development mode** using the toggle button.
 

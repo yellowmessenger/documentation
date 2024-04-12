@@ -135,7 +135,7 @@ To setup Google Business Messages for your bot, configure the following:
 
 ### Step 1: Connect your bot to GBM
 
-1.  Navigate to **Overview** > **Extensions**.
+1. On the left navigation bar, click **Extensions**.
 
     ![](https://imgur.com/PIOvT6K.png)
 

@@ -51,11 +51,17 @@ Local and mobile numbers fall under the category of [long codes numbers](https:/
 
 Once the registration process is complete, connect the SMS channel to Yellow.ai platform.
 
-1.  On the switcher, click **Channels** > **Messaging** > **SMS Inbound**. 
+1. On the left navigation bar, click **Extensions**.
 
-2. Choose the phone number type and select the registered phone number, then click **Add**.
+   ![](https://imgur.com/PIOvT6K.png)
 
-  ![](https://i.imgur.com/HJGegXe.jpg)
+5. Click **Channels** > **Messaging** > **SMS Inbound**.
+
+   ![](https://imgur.com/6v0xvi2.png)
+
+6. Choose the phone number type and select the registered phone number, then click **Add**.
+
+   <img src="https://imgur.com/41IdBRJ.png)" alt="drawing" width="60%"/>
       
 * The registered phone number will be successfully connected to your bot.
 

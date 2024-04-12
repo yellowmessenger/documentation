@@ -127,7 +127,7 @@ Based on the region of your bot, which is  r1/r2/r3/r4/r5, you need to append th
 
 To connect the Google chat channel to your bot on the platform, follow these steps:
 
-1. Navigate to **Overview** > **Extensions**.
+1. On the left navigation bar, click **Extensions**.
 
     ![](https://imgur.com/PIOvT6K.png)
 

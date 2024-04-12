@@ -121,7 +121,7 @@ To grant permissions, follow these steps:
 
 To connect Facebook workplace channel to your bot on the platform, follow these steps:
 
-1. Navigate to **Overview** > **Extensions**.
+1. On the left navigation bar, click **Extensions**.
 
     ![](https://imgur.com/PIOvT6K.png)
 

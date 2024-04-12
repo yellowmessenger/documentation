@@ -104,13 +104,17 @@ To set up Line channel using Developer portal, follow these steps:
 
 To configure the Line channel on the Yellow.ai platform, follow the below steps:
 
-1. On the switcher, click **Channels > Line**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/CpwhPST.png)
+   ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Messaging** > **Line**.
+
+   ![](https://imgur.com/Sx7dnqu.png)
    
 2. Enter **Line channel token** and **Line channel secret** Id and click **Save**.  
    
-   ![](https://i.imgur.com/ohsCJ1x.png)
+   ![](https://imgur.com/D0L4iiV.png)
 
 3. Your Line channel will be successfully connected. 
 

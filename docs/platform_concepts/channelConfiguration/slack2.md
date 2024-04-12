@@ -223,14 +223,19 @@ To configure a single workspace, follow these steps :
 3. After installing the app in workspace, go back to **OAuth & Permission**. Copy the Bot *`Access token (xoxb- )`*. 
    ![](https://i.imgur.com/zssPPbX.png)
    
-4. Log in to https://cloud.yellow.ai and navigate to **Overview** > **Channels** > **Messaging** > **Slack** > **Select token type** > **Slack tokens** > **Add the Slack access token** > **Save**.
+4. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/vTd1WQT.png)
+    ![](https://imgur.com/PIOvT6K.png)
+
+5. Click **Channels** > **Messaging** > **Slack**.
+
+    ![](https://imgur.com/xxuSoEA.png)
+
+6. Select **Token type** > **Slack tokens** > **Add the Slack access token** > **Save**.
+
+   ![](https://imgur.com/D5U9Nlw.png)
    
 5. Navigate to the **Overview** page, under the **Active channels** section, you can see that the Slack channel is successfully connected to your bot. 
-
-     ![](https://i.imgur.com/NJbAFeO.png) 
-
 
 ### Configure multiple workspaces
 
