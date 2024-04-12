@@ -133,7 +133,7 @@ Activate identities after creating a virtual agent. Only then user information c
    
 ### Authorize IVA Professional to access RingCX account
 
-1. Log in to your [IVA Professional account](cloud.yellow.ai) and go to **Channels** > **RingCentral**.
+1. Log in to your [IVA Professional account](https://cloud.yellow.ai) and go to **Channels** > **RingCentral**.
 
 
    ![](https://i.imgur.com/76Bmw03.png)

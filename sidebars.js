@@ -950,7 +950,6 @@ module.exports = {
             collapsed: true,
             items: [
               "platform_concepts/growth/dataexplorer/sumarize",
-             // "platform_concepts/growth/dataexplorer/visualization",
               //"platform_concepts/growth/dataexplorer/pivottable",
               "platform_concepts/growth/dataexplorer/formulacolumn",
                         ]
@@ -964,7 +963,6 @@ module.exports = {
         type: "category",
         label: "Data visualisation",
         link: {type: 'doc', id: 'platform_concepts/growth/visualisation/visualization'},
-        collapsed: true,
         items: [
           "platform_concepts/growth/visualisation/linechart",
           "platform_concepts/growth/visualisation/bargraph",
