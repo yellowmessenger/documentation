@@ -28,7 +28,7 @@ Set up and deploy your AI-powered support bot. [Refer to our documentation](http
 
 Our revolutionary AI Copilot, powered by Gen AI, revolutionizes conversation flow creation into a seamless experience. No more tedious manual creation of flows or template imports. With AI Copilot, simply express your requirements, and witness our bot effortlessly generate conversation flows in seconds. You can then tweak the flows as needed. Say goodbye to time-consuming tasks and hello to effortless flow creation with AI Copilot.
 
-   ![](https://i.postimg.cc/3xR0nH1q/2024-04-03-16-54-25-2.gif)
+   ![](/img/cdp/aicopilot.gif)
 
 
 Learn [how to create flows effortlessly with Gen AI-based Copilot](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot).

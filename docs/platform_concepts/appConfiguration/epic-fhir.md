@@ -3,7 +3,7 @@ title : EPIC FHIR Integration
 sidebar_label : EPIC FHIR
 ---
 
-Yellow.ai integrates with Epic FHIR letting you access medical records in your app in Epic FHIR. This integration lets you access patient details, search for appointment slots, and book appointments.
+The Epic FHIR integration lets your bot access medical records from your Epic FHIR app and manage patient details, search for appointment slots, and book appointments.
 
 
 ## Supported Epic FHIR actions with Yellow.ai
@@ -33,20 +33,24 @@ To connect your Epic FHIR account with Yellow.ai, follow the these steps:
    ![](https://i.imgur.com/MGxkK8J.png)
 
 
-2. Go to your **Yellow.ai** bot and click **Integrations** in the module switcher.
+2. On the left navigation bar, go to **Extensions** > **Integrations**.
 
-   ![](https://i.imgur.com/BmIVufB.png)
+   ![](https://i.imgur.com/JagYT5w.png)
 
-3. Search for **EPIC FHIR**, fill in the **Client ID** and **Client Secret** and click **Connect to EPIC FHIR**.
+3. Navigate to **CRM** > **EPIC FHIR**. Alternatively, you can use the Search box to find the integration app.
 
-   ![](https://i.imgur.com/bHEXvm6.png)
+   ![](https://i.imgur.com/nnlaQQJ.png)
+
+4. Enter the **Client ID** and **Client Secret** and click **Connect to EPIC FHIR**.
+
+   ![](https://i.imgur.com/uZL82XT.png)
    
 :::info
 1. In a two-tier environment, add account names in Development and use them in Live.
 2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
 
-4. You can add up to 15 accounts. To add another Epic FHIR account, click on **Add account** and follow the steps mentioned above. 
+5. You can add up to 15 accounts. To add another Epic FHIR account, click on **Add account** and follow the steps mentioned above. 
 
 
 :::note 
