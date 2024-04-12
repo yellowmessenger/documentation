@@ -39,31 +39,28 @@ After integrating with Salesforce CRM, you can perform the following tasks direc
 
 To connect your Salesforce CRM account with Yellow.ai, follow the these steps:
 
-1. Go to cloud.yellow.ai and click **Integrations** on the module switcher.
+1. On the left navigation bar, go to **Extensions** > **Integrations**.
 
-   ![](https://i.imgur.com/1EjCvqy.png)
+   ![](https://i.imgur.com/JagYT5w.png)
 
+2. Navigate to **CRM** > **Salesforce CRM**. Alternatively, you can use the Search box to find the integration app.
 
-2. Search for **Salesforce CRM** in the search box or go to the category **CRM** > **Salesforce CRM**.
-
-   ![](https://i.imgur.com/Pqzthkd.png)
-
-
-3. Enter a name for your Salesforce account and choose the **Salesforce CRM environment**. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-
-   ![](https://i.imgur.com/kPLCOyk.png)
+   ![](https://i.imgur.com/0RGxeRr.png)
 
 
-4. Click **Connect**.
-5.  You will see a pop-up screen to login with a list of accounts.
+3. Choose a unique name for your Salesforce account and select the Salesforce CRM environment. It's advisable to use a name that reflects its purpose for improved usability.
+
+   ![](https://i.imgur.com/tYjILVM.png)
+
+4. Click **Connect**. You will see a pop-up screen to login with a list of accounts.
 
 5. Choose the respective account and click **Log in** 
 
-   ![](https://i.imgur.com/W4rrs7W.gif)
+   ![](https://i.imgur.com/SLUrxzd.gif)
 
  6. If you have multiple accounts, click **+Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
 
-![](https://i.imgur.com/dGxkcov.png)
+   ![](https://i.imgur.com/dGxkcov.png)
 
 :::note
 1. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.

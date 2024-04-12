@@ -69,11 +69,7 @@ Obtain **Client ID**, **Client Secret** and **Tenant ID** from your **Microsoft 
 
 :::info
 
-To retrieve the webhook:
-
-1. Go to cloud.yellow.ai > **Integrations** > **Microsoft Dynamic 365** > Copy the URL.
-
-   ![](https://i.imgur.com/Y1eeoUd.png)
+To find the webhook URL, go to **Integrations** > **CRM** > **Microsoft Dynamic 365** > Copy the URL.
 :::
 
 
@@ -104,11 +100,8 @@ You need to create a new app and follow the steps mentioned above. To create a n
 
 :::info
 
-To copy the webhook:
+To find the webhook URL, go to **Integrations** > **CRM** > **Microsoft Dynamic 365** > Copy the URL.
 
-1. Go to cloud.yellow.ai > **Integrations** > **Microsoft Dynamic 365** > Copy the URL.
-
-   ![](https://i.imgur.com/Y1eeoUd.png)
 :::
 
 
@@ -117,17 +110,25 @@ To copy the webhook:
 
 ### Authorize Yellow.ai to access Microsoft
 
-1. Go to cloud.yellow.ai > **Integrations** > **Microsoft Dynamic 365** and fill in the fields with data obtained in the previous sections.
+1. On the left navigation bar, go to **Extensions** > **Integrations**.
 
-   ![](https://i.imgur.com/zhaiafd.png)
+   ![](https://i.imgur.com/JagYT5w.png)
+
+2. Navigate to **CRM** > **Microsoft Dynamic 365**. Alternatively, you can use the Search box to find the integration app.
+
+   ![](https://i.imgur.com/Orl57Cb.png)
+ 
+3. Fill in the fields with data obtained in the previous sections.
+
+   ![](https://i.imgur.com/euMKSQn.png)
    
 :::info
 1. In a two-tier environment, add account names in Development and use them in Live.
 2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
 
-2. Click **Connect**.
-3. You can add up to 15 accounts. To add another Zoho CRM account, click on **Add account** and follow the steps mentioned above. 
+4. Click **Connect**.
+5. You can add up to 15 accounts. To add another Zoho CRM account, click on **Add account** and follow the steps mentioned above. 
 
    ![](https://i.imgur.com/XaeEnce.png)
 

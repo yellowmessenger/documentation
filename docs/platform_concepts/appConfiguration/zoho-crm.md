@@ -27,25 +27,22 @@ Yellow.ai supportes integration with both **Zoho CRM** and [Zoho SalesIQ](https:
 
 To connect your Zoho CRM account with Yellow.ai, follow the these steps:
 
-1. Go to cloud.yellow.ai and click **Integrations** on the module switcher.
-
-   ![](https://i.imgur.com/1EjCvqy.png)
-
-
-2. Search for **Zoho CRM** in the search box or go to the category **CRM** > **Zoho CRM**.
-
-   ![](https://i.imgur.com/7VpHsbd.png)
-
-3. In **Give account name** provide a unique name to your Zoho CRM account and click **Connect**.You'll be prompted to sign-in to your Zoho CRM account.
+Add accounts only in the development or staging environment. You can access the connected accounts in the Live/Production environment.
 
 
 
-   ![](https://i.imgur.com/h4bchOQ.png)
+1. On the left navigation bar, go to **Extensions** > **Integrations**.
+
+   ![](https://i.imgur.com/JagYT5w.png)
+
+2. Navigate to **CRM** > **Zoho CRM**. Alternatively, you can use the Search box to find the integration app.
+
+   ![](https://i.imgur.com/KiYwOg2.png)
+
+3. In **Give account name** provide a unique name only lowercase alphanumeric and underscore is supported) for the integration and click **Connect**.You'll be prompted to sign-in to your Zoho CRM account.
+
+   ![](https://i.imgur.com/Ddj9RiF.png)
    
-:::info
-1. In a two-tier environment, add account names in Development and use them in Live.
-2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
-:::
 
 4. Once you have signed-in, click **Accept** to authorize Yellow.ai to access **Zoho CRM**.
 

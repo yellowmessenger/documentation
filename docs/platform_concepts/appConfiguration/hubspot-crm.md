@@ -3,19 +3,20 @@ title : Hubspot CRM
 sidebar_label : Hubspot CRM
 ---
 
-Yellow.ai seamlessly integrates with Hubspot CRM, providing you with the capability to manage your Hubspot CRM account directly through yellow.ai's bot. This integration allows you to effortlessly create, fetch, update, delete and search for contacts in your Hubspot CRM account.
+The HubSpot CRM integration enables direct management of your HubSpot CRM account through yellow.ai's bot. This integration allows effortless creation, retrieval, updating, deletion, and searching for contacts in your HubSpot CRM account directly from the bot interface.
 
 
 ## Supported Hubspot CRM actions in Yellow.ai
+Once the integration is established, you can perform the following HubSpot CRM actions directly from the bot interface.
 
- Action                          | Description                                                                                                                                                   |
-|---------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Create a contact                    |    Creates a new contact                                                                                                 |
-| Get a contact                    | Fetches a particular contact                                                                                                     |
-| Delete a contact                   | Deletes a contact|
-|Update a contact| Modifies details of a particular contact|
-|Search a contact by phone| Looks for a contact using phone number|
-|Search a contact by email| Looks for a contact using email address|
+| Action  | Description |
+|--------- | -----------|
+| Create a contact |    Creates a new contact |
+| Get a contact | Fetches a particular contact |
+| Delete a contact | Deletes a contact |
+| Update a contact| Modifies details of a particular contact |
+| Search a contact by phone| Looks for a contact using phone number |
+| Search a contact by email| Looks for a contact using email address |
 
 ## Connect Hubspot CRM with Yellow.ai
 
@@ -26,14 +27,14 @@ Yellow.ai seamlessly integrates with Hubspot CRM, providing you with the capabil
 
 To connect your Hubspot CRM account with Yellow.ai, follow the these steps:
 
-1. Go to cloud.yellow.ai and click **Integrations** on the module switcher.
+1. On the left navigation bar, go to **Extensions** > **Integrations**.
 
-   ![](https://i.imgur.com/1EjCvqy.png)
+   ![](https://i.imgur.com/JagYT5w.png)
 
 
-2. Search for **Hubspot** in the search box or go to the category **CRM** > **Hubspot**.
+2. Navigate to **CRM** > **Hubspot**. Alternatively, you can use the Search box to find the integration app.
 
-   ![](https://i.imgur.com/2kHRX0G.png)
+   ![](https://i.imgur.com/8lcnYez.png)
 
 3. In **Give account name** give a unique name to your Hubspot CRM account and click **Connect**.
 
@@ -70,7 +71,7 @@ The following are the events available for Hubspot in Yellow.ai:
 
 You need to add the webhook URL from the integration page in your Hubspot CRM app to receive the events mentioned above. To do so:
 
-1. Go to **Hubspot CRM integration** in cloud.yellow.ai and copy the Webhook URL.
+1. Go to **Hubspot CRM integration** and copy the Webhook URL.
 
    ![](https://i.imgur.com/Qmd7rxZ.png)
 
