@@ -24,21 +24,21 @@ The chatbot users can change the language of the widget based on thier requireme
 
 To change the language of your bot, follow these steps:
 
-1. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-    ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
 2. Click on **Chat widget**.
 
-    ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
 
 3. Go to **Settings**, expand **Configure settings** to enable **Language switcher**, then click **Save changes**.   
 
-    <img src="https://i.imgur.com/O9zMJbY.png" width="70%"/>
+    <img src="https://imgur.com/vSvvhe3.png" width="70%"/>
 
 4. Navigate to **Deploy** > **Web** > **Experience on a Website**.
 
-   <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+   <img src="https://imgur.com/tTJJYgQ.png" width="70%"/>
 
 5. Click on the higlighted icon and select **Change language**.
 

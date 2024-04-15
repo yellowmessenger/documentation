@@ -15,17 +15,17 @@ This document helps you understand how to access the Chat widget and will guide 
 To access Chat widget, follow these steps: 
 
 1. Log in to [Yellow.ai Platform](https://cloud.yellow.ai).
-2. On the module switcher, click **Channels**.
+2. On the left navigation bar, click **Extensions**.
 
-  ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
 3. Click on **Chat widget**.
 
-   ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
 
 4. The Chat widget screen appears as shown below.
 
-   ![](https://i.imgur.com/MfIKU9W.png)
+   ![](https://imgur.com/emOQHQU.png)
 
 
 ### Customize bot UI (Appearance)
@@ -34,7 +34,7 @@ The **Widget Panel** helps you customize the look and feel of the chat widget.
 
 To customize the design, make the required changes as per the descriptions provided in the following table, and click **Save changes**.
 
-   <img src="https://i.imgur.com/xYoerv3.png" alt="drawing" width="90%"/>
+   <img src="https://imgur.com/unHVAAf.png" alt="drawing" width="100%"/>
    
 
 <img src="https://i.imgur.com/I8XaGOh.png" alt="drawing" width="60%"/>
@@ -60,13 +60,13 @@ Widget size | Set your preferred widget size - Small, Medium, or Large.
 
 To upload custom font, follow these steps:
 
-1. In **Widget panel**, under **Fonts** select **Custom** from the Font style drop-down. 
+1. In **Widget panel**, under **Font** select **Custom** from the Font style drop-down. 
 
-    ![](https://i.imgur.com/XJnWyu4.png)
+    ![](https://imgur.com/0DWjAYF.png)
 
 2. Enter **Font family** and **Font URL**.
   
-    ![](https://i.imgur.com/jZYLMja.png)
+    ![](https://imgur.com/G5AK086.png)
     
 3. Click **Save changes**. 
 
@@ -76,7 +76,7 @@ For custom fonts, previews are not available as they require whitelisting. To us
 
 4. Navigate to **Deploy** > **Web** > **Experience on a Website**.
 
-   <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+   <img src="https://imgur.com/nf2S6gP.png" width="70%"/>
    
 * You can view the added font style in the widget.
 
@@ -91,7 +91,7 @@ The **Bot Icon** tab allows you to set the desired logo for your bot. You can al
 
 You can set the shape and style of your bot in the **Bot actions** tab as explained below:
 
-<img src="https://i.imgur.com/1zSNcyA.png" alt="drawing" width="60%"/>
+<img src="https://imgur.com/D0kT60w.png" alt="drawing" width="60%"/>
 <br/>
 
 
@@ -115,7 +115,7 @@ Select the **Animation type** from the drop-down to add animation to your bot ic
 
 You can configure your chatbot by enabling or disabling the following features on the bot. 
 
-<img src="https://i.imgur.com/7858HxM.png)" alt="drawing" width="80%"/>
+<img src="https://imgur.com/XhWRxad.png" alt="drawing" width="80%"/>
 
 
 #### General settings
@@ -169,7 +169,7 @@ Text to speech | Enable this option to allow the bot to respond to the user's qu
 
 You can enhance your users' chat experience with the addition of the Home or Menu option on the chat widget. This enables access to key features with a simple tap, making navigation and interactions smoother.
 
-<img src="https://i.imgur.com/l7HxiXu.png" alt="drawing" width="90%"/>
+<img src="https://imgur.com/fB4L9o4.png" alt="drawing" width="90%"/>
 
 #### Home navigation option
 
@@ -194,7 +194,7 @@ To add a menu, follow these steps:
 6. To add another option, click on **+Add option** and follow the steps mentioned above. You can have different menu types for each option.
 7. Click **Save changes** to save your menu.
 
-<img src="https://i.imgur.com/UAhlc0b.png" alt="drawing" width="60%"/>
+<img src="https://imgur.com/HQ6Hdwq.png" alt="drawing" width="60%"/>
 
 
 #### Configure menu types
@@ -247,12 +247,12 @@ To add an Open URL option to the menu, follow these steps:
 
 As you design the bot, you can preview the changes in real time in the **Preview Screen** tab before you save it. When you choose colors, the chat preview updates automatically so that you can see what your widget will look like.
 
-  ![](https://i.imgur.com/ZKEUTwy.png)
+  ![](https://imgur.com/ea3DMOR.png)
 
 
 To preview your bot on a website, click **Deploy** > **Web** > **Experience on a Website**.
 
-<img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+<img src="https://imgur.com/nf2S6gP.png" width="70%"/>
 
 :::info
 To share chatbot with other users, copy the bot link.
@@ -274,7 +274,7 @@ To deploy the widget on your website, follow these steps:
 
 1. Navigate to the **Deploy** > **Web** > **Copy code to Install bot**.
   
- <img src="https://i.imgur.com/G9ZU6PI.png" width="70%"/>
+ <img src="https://imgur.com/BHZlWng.png" width="70%"/>
 
 2. Copy the code and paste it on your body of your website.  
 
@@ -324,11 +324,11 @@ To access mobile SDKs help doc links, follow these steps.
    
 1. Navigate to the **Deploy** tab and click **Mobile SDK**. 
 
-      <img src="https://i.imgur.com/p4ZPjCn.png" width="80%"/>
+      <img src="https://imgur.com/dJl8Nj1.png" width="80%"/>
 
 2. To install the chat widget on your mobile application, click **Read docs** links corresponding to the respective mobile SDKs. 
 
-     <img src="https://i.imgur.com/ZRE43N3.png" width="80%"/>
+     <img src="https://imgur.com/7VDCkBV.png" width="80%"/>
 	
 3. Upon clicking the links, it navigates you to the respective Mobile SDK documentation.
 
@@ -336,7 +336,7 @@ To access mobile SDKs help doc links, follow these steps.
 
 1. Navigate to the **Deploy** tab and click **PWA**.
 
-    <img src="https://i.imgur.com/mN5p5fO.png" alt="drawing" width="80%"/>
+    <img src="https://imgur.com/bxqGyDs.png" alt="drawing" width="80%"/>
 
 2. To preview your PWA bot on the platform itself, click on <img src="https://i.imgur.com/RG1RUmC.png)" alt="drawing" width="10%"/>. 
 3. Copy the link by clicking on <img src="https://i.imgur.com/dv3k6vh.png)" alt="drawing" width="10%"/>. You can share the PWA live bot link directly with your users or you can embed it on your website.
@@ -351,4 +351,4 @@ This feature is available for bots under the T3 subscription plan, specifically 
 For security reasons, the Domain Whitelisting section will not be published. However, you can easily update this section in the respective environments as needed.
 :::
 
-![](https://i.imgur.com/vcMR7AF.png)
+![](https://imgur.com/Xt1kHWJ.png)

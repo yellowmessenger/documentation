@@ -10,7 +10,6 @@ The chat widget can notify users when they receive a new message. The following 
 
 Chat widget notifications are supported for desktop icon styles such as circle, square, and bar. It is also supported for custom icons uploaded on the yellow platform. It is also supported for custom icons uploaded on the yellow platform. 
 
-
 <img src="https://i.imgur.com/XdXkepR.png" alt="drawing" width="90%"/> <img src="https://i.imgur.com/1GnabKl.png" alt="drawing" width="40%"/> 
 
 :::note
@@ -18,7 +17,6 @@ Chat widget notifications are supported for desktop icon styles such as circle, 
 :::
 
 #### Limitations of chat widget notifications    
-
 
 The following are the limitations of chat widget notifications:
 
@@ -30,25 +28,25 @@ The following are the limitations of chat widget notifications:
 
 To enable chat widget notifications, follow these steps:
 
-1. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-    ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
 2. Click on **Chat widget**.
 
-     ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
 	
 3. Navigate to the **Settings** tab and expand **Notifications** drop-down.
 
-     ![](https://i.imgur.com/HRB5IXL.png)
+     <img src="https://imgur.com/kzfklw7.png" width="80%"/>
 
 4. Enable the **Unread message(s) badge**, **Unread notification in browser tab**, and **Message sound**, then click **Save changes**.
    
-     ![](https://i.imgur.com/wRZaMOC.png)
+     <img src="https://imgur.com/AhO0yEA.png" width="80%"/>
    
 5. Navigate to **Deploy** > **Web** > **Experience on a Website**.
 
-     <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+     <img src="https://imgur.com/tTJJYgQ.png" width="70%"/>
     
 6. If there are new messages, you will see the notification in the Favicon when you are on a different tab, as shown below.   
 
