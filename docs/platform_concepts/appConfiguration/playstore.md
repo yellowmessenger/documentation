@@ -1,30 +1,37 @@
 ---
-title : Google Play store
+title : Google Play store Integration
 sidebar_label : Google Play store
 ---
 
-Integrate your Google Play store account with Yellow.ai and actively manage user ratings and reviews. This process requires you to have the Google Play Console, Google Cloud Console, and an Android app deployed on the Play Store.
+The integration with the Google Play store account enables active management of user ratings and reviews directly from the bot. For this integration, you need Google Play Console, Google Cloud Console, and an Android app deployed on the Play Store.
 
 This integration is compatible with any version supported by the Google Play Store. For further details on the action nodes used in this integration, please refer to the [documentation](https://developers.google.com/android-publisher/reply-to-reviews).
 
-## Connect Play store with yellow.ai
+## Connect your Play Store with yellow.ai
 
 Connect your cloud console and Google Play accounts (as mentioned [here](https://developers.google.com/android-publisher/getting_started)) before integrating your Play Store account with Yellow.ai. 
+
 ### Authenticate Yellow.ai to access Google Play Store
 
-1. Go to **Integrations** > **Tools & Utilities** > **Google playstore**. You can also search for Google Playstore in the search box.
+1. On the Staging/Development environment, go to **Extensions** > **Integrations** > **Tools & Utilities** > **Google playstore**. You can also search for Google Playstore in the Search box.
 
- ![](https://i.imgur.com/kXsKLox.png)
+ ![](https://i.imgur.com/cIbeLnW.png)
 
- 2. In the **Give account name** field provide a name to your account in yellow.ai.
+ 2. In the **Give account name** field, provide a name to your account in yellow.ai.
  3. In **Email**, enter the email address of your Google Playstore account.
  4. In **Private key** and **Package name**, enter the private key and package name of your Google Play store account. For steps to fetch the private key from your google console, click [here](https://www.iwantanelephant.com/blog/2020/11/17/how-to-configure-api-access-to-google-play-console/).
- 5. Click **Connect**.
+ 5. Click **Connect**. 
  
-### Enable Google Playstore events in Yellow.ai
+### Enable Google Playstore review event in Yellow.ai
 
-Activating this event will allow the bot to receive notifications when a review is posted for your app on the **Google Play Store**.
-1. Go to **Studio** > **Event** > **Integrations** and search for **playstore_review**.
+Activating the `playstore_review` event will enable the bot to receive notifications when a review is posted for your app on the Google Play Store. For this, you need to Connect the Play Store in the staging environment and activate the events as explained below.
+
+
+:::note
+Ensure you provide the correct credentials and permissions. After successful connection, publish the bot to production to activate the same events in the production environment as well.
+::
+
+1. In the Development/Staging enveronment, go to **Studio** > **Event** > **Integrations** and search for **playstore_review**.
 
  ![](https://i.imgur.com/b42Ztir.png)
 2. Click on the more options icon and select **Activate**.
