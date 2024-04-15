@@ -15,11 +15,11 @@ Let's say that you have built a bot on [V1](https://app.yellow.ai/api/chat/demo/
 
 1. **Copy the V2 script**: Go to cloud.yellow.ai **> Channels > Chat widget > Deploy > Web > copy the bot script**. This script is essential for integrating the V2 bot into your application. For more detailed instructions, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#24-deploy-chat-widget).
 
-     <img src="https://i.imgur.com/cqdwcSc.png" width="70%"/>	
+     <img src="https://imgur.com/veIKcth.png" width="70%"/>	
 	 
 2. **Customize bot appearance**: You have the flexibility to modify various aspects of your chatbot's appearance, including the avatar, icon, name, description, initial state, position, colors, and themes. To make these customizations, navigate to [cloud.yellow.ai](https://cloud.yellow.ai/) **> Channels > Chat widget > Widget panel or Bot icon**. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#21-customize-bot-look--feel-design).
 
-     <img src="https://i.imgur.com/67BPLwY.png" alt="drawing" width="90%"/>
+     <img src="https://imgur.com/unHVAAf.png" alt="drawing" width="90%"/>
   
 :::note
 * If the colors you have customized are not displayed correctly in the preview screen, you can reach out to [support](mailto:support@yellow.ai) and provide them with the color codes. They will assist you in updating the colors via bot mapping. Once the customization is done through mapping, the colors will be changed in the Widget panel accordingly.
@@ -37,9 +37,9 @@ The following are the benefits of V2 migration:
 * Provides options to control Text-to-Speech (TTS), including speaking rate, gender, pitch, and accent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/text-to-speech)
 * Supports inbound engage functionality.
 * Offers a domain whitelisting feature to enhance chatbot security and restrict access to authorized domains. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/domain-whitelisting).
- <img src="https://i.imgur.com/Is4Z3qF.png" alt="drawing" width="80%"/>
+ <img src="https://imgur.com/2B0fv80.png" alt="drawing" width="70%"/>
 * Handles incoming chats effectively using queue handling in the Inbox module. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat-queue#queued-chats-inactivity).
-  ![](https://i.imgur.com/gataiIs.png)<img src="https://i.imgur.com/OTHFveJ.png" alt="drawing" width="40%"/>
+  ![](https://imgur.com/sS5qQDP.png)<img src="https://i.imgur.com/OTHFveJ.png" alt="drawing" width="40%"/>
 * Enables local testing of your chatbot using the Chrome extension without publishing changes to Live. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chrome-extension).
    ![](https://i.imgur.com/7C7ubWH.png) ![](https://i.imgur.com/CUUbTev.png)  
 * Offers a real-time preview during customization.

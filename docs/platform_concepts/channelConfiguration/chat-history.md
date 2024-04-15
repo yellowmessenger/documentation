@@ -22,7 +22,7 @@ In this article, you will learn:
 
 Before you passing the ymAuthentication token via the script, payload, or init function, you need to enable **Show history of the conversation** in the **Settings** page.
 
-<img src="https://i.imgur.com/TT52QpI.png" alt="drawing" width="70%"/>
+<img src="https://imgur.com/SIXwl4x.png" alt="drawing" width="70%"/>
 
 :::note
 When the "Create New Tab session" flag is enabled, history will not be retained on page refresh even if "Show History" is set to true and the ymAuthenticationToken is passed.
@@ -30,21 +30,21 @@ When the "Create New Tab session" flag is enabled, history will not be retained 
 
 To enable "Show history of the conversation", follow these steps:
 
-1. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
 2. Click on **Chat widget**.
 
-    ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
 
-3. The **Widget panel** is displayed.
+3. The Chat widget screen appears as shown below.
 
-    ![](https://i.imgur.com/lO86cQ0.png)
+   ![](https://imgur.com/emOQHQU.png)
 	
 4. Navigate to the **Settings** tab, expand **Chat history** and enable **Show history of the conversation**.
 
-   <img src="https://i.imgur.com/bFpNdhb.png" alt="drawing" width="70%"/>
+   <img src="https://imgur.com/zRhSZKD.png" alt="drawing" width="70%"/>
 
 
 ## 1. Pass ymAuthentication for a chat widget
@@ -55,22 +55,21 @@ Chat history is fetched with the help of a unique token generated for each user 
 
 To pass ymAuthentication token via script, follow these steps:
 
-1. Log in to [Yellow.ai Platform](https://cloud.yellow.ai).
-2. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
-3. Click on **Chat widget**.
+2. Click on **Chat widget**.
 
-    ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
 
-4. The **Widget panel** is displayed.
+3. The Chat widget screen appears as shown below.
 
-   ![](https://i.imgur.com/lO86cQ0.png)
+   ![](https://imgur.com/emOQHQU.png)
 	
-5. Navigate to the **Deploy > Web > COPY CODE TO Install bot**. A bot script is copied.
+4. Navigate to the **Deploy > Web > COPY CODE TO Install bot**. A bot script is copied.
  
-    <img src="https://i.imgur.com/cqdwcSc.png" alt="drawing" width="60%"/>
+    <img src="https://imgur.com/veIKcth.png" alt="drawing" width="60%"/>
 
 
 	

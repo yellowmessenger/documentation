@@ -15,13 +15,13 @@ There are two ways to set the custom bot icon:
 
 To set the custom bot icon, follow these steps:
 
-1. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
 2. Click on **Chat widget**.
 
-   ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
    
 3. Navigate to **Bot icon**, under *Icon shape*, select the **Upload custom icon** option. 
 	 	 
@@ -33,7 +33,7 @@ To set the custom bot icon, follow these steps:
 	 
 5. Choose the icon from your local system and click **Open** to upload the icon. You can view the custom icon on the *Preview* screen.
 
-     ![](https://i.imgur.com/3mRZANr.png)
+     ![](https://imgur.com/EvtYHlS.png)
 
 :::note
 You can choose any animation for the icon if needed. 

@@ -5,7 +5,7 @@ sidebar_label : Chat widget
 
 Chat widget or Web widget is a bot that you can embed on a website to interact with your website users in real-time. It appears as a small chat box or window that pops up on a website or application. 
 
-![](https://i.imgur.com/tezcJjN.png)
+![](https://imgur.com/BiR4vUm.png)
 
 Chat widget can be used to answer product queries, troubleshoot customer issues related to product features, and get quick feedback on website usability and customer service. 
 
