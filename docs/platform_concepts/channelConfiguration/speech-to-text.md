@@ -18,25 +18,25 @@ STT is a paid feature. You need to upgrade to enterprise subscription to access 
 
 To Enable STT in your chatbot, follow these steps:
 
-1. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-    ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
 2. Click on **Chat widget**.
 
-    ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
 	
 3. Navigate to the **Settings** tab and expand the **Speech & Dictation** drop-down.
   
-    <img src="https://i.imgur.com/Fo2sgOa.png)" alt="drawing" width="70%"/>
+    <img src="https://imgur.com/F0mZIPm.png" alt="drawing" width="70%"/>
 
 4. Enable **Speech to text** option. If you wish to automatically send the spoken text without clicking on the send button, you can enable the **Auto send** option and click **Save changes**.  
 
-    <img src="https://i.imgur.com/JRE5ejK.png)" alt="drawing" width="70%"/>
+    <img src="https://imgur.com/dbfGPWL.png)" alt="drawing" width="70%"/>
 
 5. Navigate to **Deploy** > **Web** > **Experience on a Website**.
 
-     <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+     <img src="https://imgur.com/tTJJYgQ.png" width="70%"/>
 
 6. To provide your input via spoken words to the chatbot, click the **Mic** button and grant the system to use your microphone by clicking the **Allow** button.
 

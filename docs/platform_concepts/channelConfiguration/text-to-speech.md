@@ -15,17 +15,17 @@ TTS is a paid feature. You need to upgrade to enterprise subscription to access 
 
 To enable TTS in your chatbot, follow these steps:
 
-1. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-    ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
 2. Click on **Chat widget**.
 
-    ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
 	
 3. Navigate to the **Settings** tab and expand the **Speech & Dictation** drop-down.
   
-    <img src="https://i.imgur.com/Fo2sgOa.png)" alt="drawing" width="70%"/>
+    <img src="https://imgur.com/F0mZIPm.png" alt="drawing" width="70%"/>
 
 4. Enable **Text to Speech** and configure the following options:
    * **Accent**: Select your preferred accent from the list of available options in the drop-down.
@@ -35,12 +35,11 @@ To enable TTS in your chatbot, follow these steps:
    * **Accent**: Select your preferred languages.
    *  Click **Save changes**.
 
-      <img src="https://i.imgur.com/Y1KiMms.png)" alt="drawing" width="70%"/>
-
+      <img src="https://imgur.com/eAtmR4m.png" alt="drawing" width="70%"/>
 
 5. Navigate to **Deploy** > **Web** > **Experience on a Website**.
 
-     <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+     <img src="https://imgur.com/tTJJYgQ.png" width="70%"/>
 
 6. Enter the text in the **Input** field. The chatbot converts text commands into spoken words.
 

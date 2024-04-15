@@ -35,17 +35,17 @@ Input | ouput
 
 To enable text formatting, follow these steps:
 
-1. On the module switcher, click **Channels**.
+1. On the left navigation bar, click **Extensions**.
 
-    ![](https://i.imgur.com/UuFZ2eR.png)
+    ![](https://imgur.com/VFuwPIE.png)
 
 2. Click on **Chat widget**.
 
-    ![](https://i.imgur.com/1KzP77W.png)
+   ![](https://imgur.com/c3JFOYN.png)
 	
-3. Navigate to the **Settings** tab and enable **Text formatting**.
+3. Navigate to the **Settings** tab > **Configure settings** and enable **Text formatting**.
 
-    ![](https://i.imgur.com/9dAwqbd.png)
+    <img src="https://imgur.com/vN7iOjw.png" width="70%"/>
     
 4. Click **Save changes**.
 
@@ -55,7 +55,7 @@ To enable text formatting, follow these steps:
      
 6. Navigate to **Channels** > **Chat widget** > **Deploy** > **Web** > **Experience on a Website**.
 
-     <img src="https://i.imgur.com/r3eNUCT.png" width="70%"/>
+     <img src="https://imgur.com/tTJJYgQ.png" width="70%"/>
      
 * You can view the formatted text in the widget.
 
