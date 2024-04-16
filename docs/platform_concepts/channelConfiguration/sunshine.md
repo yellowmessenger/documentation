@@ -177,7 +177,12 @@ To test your bot on the Sunshine conversations, follow these steps:
 
 2. If a flow is configured for agent reply using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to create a conversation with a Zendesk agent, then the agent will accept the invite. Once a conversation is initiated, the user can talk to the agent from the Zendesk workspace. When the conversation between the agent and user ends, the bot takes the conversation forward with the user.
 
-      ![](https://i.imgur.com/Akqa8K7.png)
+      ![](https://i.imgur.com/Akqa8K7.png) 
+
+:::note
+* Whenever a ticket is raised, the conversation between the bot and the user will be sent as the first message to the agent.
+* The acceptable values for priority in the raise ticket node are Low, Normal, High, and Urgent. These values should be passed through a variable for proper processing.
+:::          
 	  
 3. The agent will respond to your queries.
 
@@ -202,6 +207,10 @@ To connect to a live agnet on Zendesk, follow these steps:
 2. Configure a flow using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to connect with a Zendesk agent.
 
     ![](https://imgur.com/oURnE8E.png)
+
+:::note
+The acceptable values for priority in the raise ticket node are Low, Normal, High, and Urgent. These values should be passed through a variable for proper processing.
+:::    
     
 3. Trigger the flow to initiate conversation with a live agent.
 

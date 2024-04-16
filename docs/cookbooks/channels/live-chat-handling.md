@@ -11,19 +11,19 @@ To enable the queue position of the user, follow these steps:
 
 1. Navigate to **Inbox** > **Setting** > **Queue handling**.
 
-   ![](https://i.imgur.com/re6xaUe.png)
+   ![](https://imgur.com/mEdxo8C.png)
    
 2. Enable the queue position display on the widget.
 
-    ![](https://i.imgur.com/wPa2Aks.png)
+    ![](https://imgur.com/mcTTlZS.png)
       
 3. Enter a custom message to display the queue position and click **Save**.
 
-    ![](https://i.imgur.com/3zVydf7.png)
+     <img src="https://imgur.com/IZiLCMq.png" alt="drawing" width="80%"/>
     
 4. Go to **Channels** > **Chat widget** > **Deploy** > **Experience on a website**.
 
-     <img src="https://i.imgur.com/ixDv2SU.png" alt="drawing" width="60%"/>
+     <img src="https://imgur.com/tTJJYgQ.png" alt="drawing" width="60%"/>
      
 * The chat widget will now display the queue position for the user.
 
