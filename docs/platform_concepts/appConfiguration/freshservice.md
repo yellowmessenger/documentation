@@ -3,79 +3,70 @@ title: Freshservice ITSM
 sidebar_label : Freshservice ITSM
 ---
 
-Yellow.ai integration with Freshservice ITSM enables the end user to do the following actions:
+Integrating Freshservice ITSM with Yellow.ai enables the following actions:
 
-* Fetch the list of active tickets that require a resolution to be provided.
-* Checking the status of a particular ticket.
-* Create a new IT-related ticket.
-
-## 1. Configuration
+* [Display list of active tickets requiring resolution](#11-see-list-of-all-tickets-list-all-tickets).
+* [Check the status of a specific ticket](#12-ticket-status).
+* [Create a new IT-related ticket](#13-create-ticket).
 
 
-You can configure Freshservice ITSM Solution by following the below steps:
+## 1. Connecting Freshservice ITSM with your bot
 
-1. Log in to cloud.yellow.ai and click the Integrations Module from the top left corner of your screen.
-2. Then search the integration named Freshservice ITSM Solution or choose the category named ITSM from the left navigation bar and then click Freshservice ITSM Solution.
-3. This will now open a section where we have to type in the required details to enable this integration. The required values are API Key (This key will be provided by the client/freshservice spoc of the client), and Domain Name.
+
+In a two-tier environment, you can connect an integration app in the Development environment.  In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
+
+To connect Freshservice ITSM, follow these steps:
+
+1. Switch to the Development/Staging environment.
+
+2. On the left navigation bar, click **Extensions** > **Integrations** > **ITSM** > **Freshservice ITSM**. Alternatively, you can search for the integration using the Search app.
+
+   ![](https://i.imgur.com/GRxUAhb.png)
+
+3. **Give account name** (only lowercase alphanumeric and `_` are supported), and enter the **API Key** (This key will be provided by the client/freshservice spoc of the client), and **Domain name**.
+
+   ![](https://i.imgur.com/GKoMiy2.png)
+   
 :::note
 The format of this field should be https://yellowtest.freshservice.com/api/v2 and this is also to be provided by the client/freshservice spoc of the client.
 :::
 
-4. After entering these values, you need to click **Connect** and the integration will be enabled at yellow.ai’s end.
+4. Click **Connect**.  The integration will be enabled for the bot.
 
-![](https://i.imgur.com/UA5udkA.jpg)
-
-
-![](https://i.imgur.com/7oBwA4s.jpg)
+5. To add another account, repeat the above mentioned steps. You can add a maximum of 15 accounts.
 
 
-![](https://i.imgur.com/44WE6pM.png)
 
-5. If you have multiple accounts, follow the above mentioned steps to add each of them.
+## Accessing Freshservice Functions through Bot Conversation 
 
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
+Once the integration is successful, you can access the following Freshservice functions directly from the Yellow.ai bot.
 
-
-## 2. Use-cases 
-
-Following are the use cases that are currently accommodated in the integration:
+   <img src="https://i.imgur.com/mpyoTYs.png" width="80%"/>
 
 :::note
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
 :::
 
-### 1.1 My Tickets
+### 1.1 See List of all tickets (List all tickets)
 
-In the studio flow builder, you need to choose the node type Integrations from the dialog box and then you will see an option to select **Freshservice ITSM** Solution from the list of Integrations that have been enabled for that particular bot.
-
-![](https://i.imgur.com/f8G79pl.jpg)
+This action retrieves User Tickets by email address.
 
 
-After clicking on Freshservice ITSM Solution, you will see that an Integration Action Node is added to the flow builder. Upon clicking on the Integration Action Node, you will see the dropdown of available use cases for this integration and you need to choose **My Tickets **from that dropdown.
-
-
-![](https://i.imgur.com/JXPPrh4.png)
+   <img src="https://i.imgur.com/S9MydXP.png" width="80%"/>
 
 
 Now the set of mandatory fields required for the successful execution of this use case (My Tickets in this case), will be displayed. The below-mentioned table below consists of the sample value, data type, and description for each field present in the above screenshot.
 
 | Field name | Sample value |  Data type   | Description |
 | -------- | -------- | --- | -------- |
-|SortBy|desc/asc|String|The value of this field determines if the response from the API is in ascending/descending order of the timestamp|
-|UserEmail|test@gmail.com|String|Email address of the requester|
+| SortBy| desc | String | Choose whether to sort the response by ascending order (asc) of timestamp or descending order (desc) |
+| UserEmail | test@gmail.com| String |Email address of the requester |
 
 
-The **My Tickets Integration Action Node** has two possible outcomes, success or failure which are depicted by the success and fallback branches. Based on whether the execution of the Integration Action Node was successful or not, the flow will proceed to the **success** or **fallback** branches respectively.
 
+#### Sample sample response
 
-**Sample response**
-
-```
+```json
 {
   "ticket": {
     "cc_emails": [],
@@ -150,35 +141,24 @@ In case of success, you need to extract the relevant keys present in the ticket 
     app.log(err, '||Error in action node||')
 })
 
-
 ```
+
 ### 1.2 Ticket Status 
 
-In the studio flow builder, you need to choose the node type Integrations from the dialog box and then you will see an option to select Freshservice ITSM Solution from the list of Integrations that have been enabled for that particular bot.
+Retrieves the current status of a specific ticket.
+
+   ![](https://i.imgur.com/Ej7AdyX.png)
 
 
-![](https://i.imgur.com/FXQ38WD.jpg)
-
-
-After clicking on Freshservice ITSM Solution, you will see that an Integration Action Node is added to the flow builder. Upon clicking on the Integration Action Node, you will see the dropdown of available use cases for this integration and you need to choose **Ticket Status** from that dropdown.
-
-![](https://i.imgur.com/Ej7AdyX.png)
-
-
-Now the set of mandatory fields required for the successful execution of this use case (Ticket Status in this case), will be displayed. 
-
-The below-mentioned table below consists of the sample value, data type, and description for each field present in the above screenshot.
-
-| Field name | Sample value |  Data type   | Description |
+| Mandatory input name | Sample value |  Data type   | Description |
 | -------- | -------- | --- | -------- |
 |TicketId|1588402269|String|The ticketId whose status needs to be fetched|
 
-The **Ticket Status Action Node** has two possible outcomes, success or failure which are depicted by the success and fallback branches. Based on whether the execution of the Integration Action Node was successful or not, the flow will proceed to the **success** or **fallback** branches respectively.
 
 
-**Sample response**
+#### Sample response
 
-```
+```json
 {
   "ticket": {
     "cc_emails": [],
@@ -232,11 +212,10 @@ The **Ticket Status Action Node** has two possible outcomes, success or failure 
 
 ```
 
-In case of success, you need to extract the relevant keys present in the **ticket** object and display them to the end user with an appropriate message with the help of any of the **Message type** nodes.
 
 **To use this Integration Action Node in an app.yellow.ai bot**, then refer to the below-mentioned example:
 
-```
+```json
  app.executeIntegrationAction({
     		"integrationName": "fresh-service",
     		"action": "Ticket Status",
@@ -255,22 +234,19 @@ In case of success, you need to extract the relevant keys present in the **ticke
 
 ### 1.3 Create Ticket
 
-In the studio flow builder, you need to choose the node type Integrations from the dialog box and then you will see an option to select **Freshservice ITSM Solution** from the list of Integrations that have been enabled for that particular bot.
+Creates a new ticket in the Freshservice ITSM app.
 
 
-![](https://i.imgur.com/SrarUgX.jpg)
 
 
-After clicking on Freshservice ITSM Solution, you will see that an Integration Action Node is added to the flow builder. Upon clicking on the Integration Action Node, you will see the dropdown of available use cases for this integration and you need to choose **Create Ticket** from that dropdown.
 
-
-![](https://i.imgur.com/OvGpWY1.png)
+   <img src="https://i.imgur.com/OvGpWY1.png" width="80%"/>
 
 
 Now the set of mandatory fields required for the successful execution of this use case (Create Ticket in this case), will be displayed. 
 The below-mentioned table below consists of the sample value, data type, and description for each field present in the above screenshot.
 
-| Field name | Sample value |  Data type   | Description |
+| Mandatory input params | Sample value |  Data type   | Description |
 | -------- | -------- | --- | -------- |
 |RequesterEmailId|test@gmail.com|String|Email address of the requester. If no contact exists with this email address in Freshservice, it will be added as a new contact|
 |RequesterMobileNumber|9876543210|String|Phone number of the requester. If no contact exists with this phone number in Freshservice, it will be added as a new contact|
@@ -285,11 +261,10 @@ The below-mentioned table below consists of the sample value, data type, and des
 |CustomFields|{custom_fields:{“this is a test”}}|Object|Key value pairs containing the names and values of custom fields|
 
 
-The **Create Ticket Integration Action Node** has two possible outcomes, success or failure which are depicted by the success and fallback branches. Based on whether the execution of the Integration Action Node was successful or not, the flow will proceed to the **success** or **fallback** branches respectively.
 
-**Sample response**
+#### Sample response
 
-```
+```json
 {
   "ticket": {
     "cc_emails": [
@@ -337,9 +312,9 @@ The **Create Ticket Integration Action Node** has two possible outcomes, success
 
 ```
 
-**To use this Integration Action Node in an app.yellow.ai bot**, then refer to the below-mentioned example:
+**To use this Integration Action Node in an app.yellow.ai bot**, refer to the below-mentioned example:
 
-```
+```json
   app.executeIntegrationAction({
     		"integrationName": "fresh-service",
     		"action": "Create Ticket",

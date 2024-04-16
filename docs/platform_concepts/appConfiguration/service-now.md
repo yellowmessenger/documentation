@@ -3,10 +3,9 @@ title: Service Now
 sidebar_label: Service Now
 ---
 
-Yellow.ai integrates with ServiceNow, allowing you to use bots to manage your IT service requests. Connect your ServiceNow account with Yellow.ai  for a streamlined service desk operations.
+The integration of ServiceNow with Yellow.ai enables your bot to efficiently manage IT service requests and streamline service desk operations mentioned below.
 
 
-This integration allows you to perform the following tasks:
 
 | Action                  | Description                                         |
 |-------------------------|-----------------------------------------------------|
@@ -50,43 +49,51 @@ Create an app on ServiceNow to fetch instance URL, client ID and client secret a
 
 ### Authorize Yellow.ai to access your Service now account
 
-1. Go to **Integrations** > **ITSM** >  **Service Now**.
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
 
-   ![](https://i.imgur.com/uydxecF.png)
 
-2. In **Give account name** provide a name to that Service now account. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+
+1. Switch to the Development/Staging environment and go to **Extensions** > **Integrations** > **ITSM** > **Service Now**.
+
+   ![](https://i.imgur.com/8zjFIiE.png)
+
+2. In **Give account name**, provide a name for the account. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
 3. Copy and paste the **Instance URL**, **Client ID** and **Client Secret** (as mentioned in the previous section)
 4. Click **Connect**.
 5. You will be prompted to grant authorization, click **Allow**.
 
    <img src="https://i.imgur.com/3FcGmnh.png" alt="drawing" width="70%"/>
 
-7. If you have multiple accounts, follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
+7. To connect another account, click +Add Account and proceed with the previous steps. You can add a maximum of 15 accounts.
 
-   ![](https://i.imgur.com/P3eT1jA.png)
+   ![](https://i.imgur.com/THcIVaJ.png)
 
 :::info
 1. In a two-tier environment, add account names in Development and use them in Live.
 2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
 
-## Manage ServiceNow from Yellow.ai
+## Manage ServiceNow actions from bot conversations
 
 From Yellow.ai you can access your ServiceNow instance and create, update and search a ticket, upload,get file and file list.
     
 1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) that suits your use case.
-2. At whichever point of the conversation you want the bot to access ServiceNow, include Service now Integration node. To include the node, click to add a node > **Integrations** > **ServiceNow**.
+2. Go to the specific point in the conversation where you want to add the node. Click **Add Node**, then go to **Integrations** and select **ServiceNow**.
 
-   ![](https://i.imgur.com/0YSzVWM.png)
 
-3. Click the node and set the following fields.
+   <img src="https://i.imgur.com/IuOfpC0.png" width="80%"/>
+
+3. Configure the node using the available options.
 
    <img src="https://i.imgur.com/UIIJEWt.png" alt="drawing" width="70%"/>
    
-  * **Account name:** Choose the Service now account for the intended action.
-   *  **Action:** Select the action to perform. 
-   *  **Select Objects:** Choose the object (**Incident**/**Request**) in which the chosen action should be performed. **Get File** action is an exception, the **Select Objects** field doesn't apply to this action.
-   *  Once you choose the object, the corresponding fields for that action and object is displayed. Fill these fields by adding nodes before the ServiceNow node to collect user information, or click 'Or' to manually input the details.
+   a. **Account name:** Choose the account to use for accessing a specific action.
+   
+   b. **Action:** Select the action to perform. 
+   
+   c. **Select Objects:** Choose the object (**Incident**/**Request**) in which the chosen action should be performed. **Get File** action is an exception, the **Select Objects** field doesn't apply to this action.
+   
+   d. Once you choose the object, the corresponding fields for that action and object is displayed. Fill these fields by adding nodes before the ServiceNow node to collect user information, or click 'Or' to manually input the details.
  
    To collect the information from user, add a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#docusaurus_skipToContent_fallback) and [store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables). Pass that variable in the respective field.
  
@@ -95,7 +102,7 @@ From Yellow.ai you can access your ServiceNow instance and create, update and se
 4. [Store the API response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) and pass it in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#docusaurus_skipToContent_fallback) to display the response to the end user.
 
 
-## Example
+### Example
 
 Let's say that you want to fetch a ticket's information in **Requests** using the ticket number. 
 
