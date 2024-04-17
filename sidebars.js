@@ -1126,6 +1126,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/depoly-WA-bot",
             "platform_concepts/channelConfiguration/support-banner-migration",
             "platform_concepts/channelConfiguration/content-security-policy",
+            "platform_concepts/channelConfiguration/deploy-sharepoint",
             "platform_concepts/channelConfiguration/chat-widget-errors",
             "platform_concepts/channelConfiguration/character-limits-sdk",
             "platform_concepts/channelConfiguration/chat-widget-faq", 
