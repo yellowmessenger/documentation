@@ -163,11 +163,11 @@ Hangup Reason is a valuable metric for analyzing call center performance and ide
 
 ### Hangup Source/ Disconnected by 
 
-Hangup source/Disconnected by specifies the party that disconnected the calls. The possible values for this column are **User/Bot/System/Telco**.
+Hangup source/Disconnected by specifies the party that disconnected the calls. The possible values for this column are **User/Bot/System**.
 - USER: When the customer itself disconnects the call.
 - BOT: When the bot disconnects the call after providing the necessary information.
 - SYSTEM: When neither bot nor the user disconnects the call and the call is disconnected due to any of the system issues. 
-- TELCO: When the call is disconnected due to the issues with the telephonic provider. 
+
 
 Hangup Source can provide useful information for analyzing call quality, identifying problems with the network or equipment, and understanding the reasons for call failures.
 
@@ -194,7 +194,10 @@ The recording URL can be used to retrieve and listen to the recording of the cal
 
 ### SIP Code 
 
-For each call, an error code (SIP code) is generated to understand the hang up reason:  
+For each call, an error code (SIP code) is generated to understand the hang up reason.  
+
+<!--
+
 
 | SIP Code | Description                                        |
 |----------|----------------------------------------------------|
@@ -217,7 +220,6 @@ For each call, an error code (SIP code) is generated to understand the hang up r
 | 607      | Inbound Blocked                                    |
 
 
-<!--
 
 
 

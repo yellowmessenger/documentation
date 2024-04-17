@@ -3,7 +3,7 @@ title: Visualizing summarized tables for effective data analysis
 sidebar_label : Data visualisation
 ---
 
-Using charts, graphs, dashboards, and other visualizations is an effective way to make your data more accessible and engaging in real-world discussions. 
+Using charts, graphs, and other visualizations is an effective way to make your data more accessible and engaging in real-world discussions. 
 
 
 ## Types of visualisation
@@ -70,30 +70,4 @@ You can modify the summarisation by changing the values that are visible in the 
 ### Add filters 
 
 Filters can be applied/changed to refine the data displayed. By clicking on the **Filters** option, you can modify specific values displayed in the visualised charts. 
-
-
-
-### Add formula column 
-
-> Formula column can be applied for **Pivot table** visualisation. Adding formula column is not applicable for other visualisation chart types.
-
-
-Add custom formula columns to the pivoted table for further analysis. Click on **Actions > Add formula column**. Click **Apply** after adding your formula. 
-
-
-
-![image](https://imgur.com/iGT8RAP.png)
-
-
-
-
-:::info
-
-- Different visualizations can be applied to the pivoted table to represent data graphically. Click **Visualisation**, select a Visualisation and click **Apply**. 
-- Multiple formula columns can be added to the pivoted table.
-
-:::
-
-
-
 
