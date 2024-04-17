@@ -29,7 +29,7 @@ We also have an App platform (app.yellow.ai), a code-based solution with limited
 
 
 :::info 
-Yellow.ai supports **Cloud** and **On-premise** deployment. Contact [the support team](mailto:support@yellow.ai) for details. 
+Yellow.ai supports **Cloud** and **On-premise** deployment. Contact [support@yellow.ai](mailto:support@yellow.ai) for details. 
 :::
 
 
@@ -139,5 +139,6 @@ Our extensive library of help articles is readily available to provide quick ans
 
 
 :::note
-For any queries or help, contact [Yellow.ai support team](mailto:support@yellow.ai). 
+For any queries or help, contact [support@yellow.ai](mailto:support@yellow.ai). 
 :::
+

@@ -31,26 +31,21 @@ You can access Inbox using the keyboard shortcut `g` + `i`.
 
 Inbox revolutionizes the way you handle customer support. With its intuitive user experience and support for over 35 conversational channels, Inbox empowers agents to manage customer queries effectively. Say goodbye to scattered information and hello to a unified helpdesk that provides complete customer history and context. By centralizing all customer information, Inbox ensures efficient, relevant, and personalized communication between businesses and their customers.
 
-Discover Inbox's features in detail:
-
 -----
 
 
 ## <a name="i2"></a> Powerful functionalities of Inbox
 
-To open Inbox, follow these simple steps:
+Log in to [yellow.ai](https://cloud.yellow.ai/auth/login) platform. Open **Inbox**.
 
-1. Log in to [yellow.ai](https://cloud.yellow.ai/auth/login) platform.
-2. On the overview switcher, click **Inbox**.
-
-![](https://i.imgur.com/Brz9Pb5.png)
+![image](https://imgur.com/BWXu1Bl.png)
 
 Inbox offers a wide range of options and modules to streamline your customer support process. Take advantage of the following functionalities:
 
 | Section | Description |
 | -------- | -------- |
 | **Monitor**     | Keep track of chat and email trends, as well as team details. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/monitor) to learn more.    |
-|**Live Chats**| Provide 24/7 live support to your customers across various channels. Perform bulk actions and conduct chat searches easily. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) to learn more. |
+|**Live Chats**| **AI-powered live chat handling** provides 24/7 live support to your customers across various channels. Perform bulk actions and conduct chat searches easily. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat) to learn more. |
 |**Email Tickets**| 	Monitor and resolve email tickets, create new tickets manually or in bulk, and leverage no-code email ticketing functionalities. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) to learn more.  |
 |**Contacts**| Create contact lists and send proactive notifications (emails) to enhance your brand's engagement. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts) to learn more. |
 |**Analytics and Reports**| Access dynamic charts and generate detailed reports on your business and team performance, enabling data-driven decision-making. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/analytics) to learn more.|
@@ -71,7 +66,7 @@ Stay informed about all the activities happening in your Inbox, based on your [a
 
 1. Click on the notification icon in the upper right corner of your screen. The **Notification** tab displays all the updates and alerts.
 
-![](https://i.imgur.com/6hs6g7s.png)
+    ![image](https://imgur.com/mHvq9fG.png)
 
 2. Clicking on any notification takes you directly to the relevant page.
     > For example, clicking on New chat #100596 was created with status set to ASSIGNED will redirect you to chat #100596.
@@ -82,7 +77,7 @@ Stay informed about all the activities happening in your Inbox, based on your [a
     - Easily change the read status of notifications by clicking the blue dot next to each notification. Toggle between read and unread statuses.
     - Configure notification options by clicking on **Go to settings**.
 
-![](https://i.imgur.com/3KOSLYg.png)
+    ![](https://i.imgur.com/3KOSLYg.png)
 
 :::note
 Configure your notification preferences on the settings page. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/account/notification).
@@ -96,7 +91,7 @@ Configure your notification preferences on the settings page. Learn more [here](
 
 With the powerful [orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator) bot feature, you can create a parent bot and add child bots from the same subscription. When you select **Unify inbox to all child bots**, support tickets received by the child bots become available in the parent bot's Inbox. This unified inbox allows you to efficiently respond to all customer queries.
 
-![](https://i.imgur.com/WsKX6Ph.png)
+<img src="https://imgur.com/3KsqgAF.png" alt="drawing" width="50%"/>  
 
 
 :::note

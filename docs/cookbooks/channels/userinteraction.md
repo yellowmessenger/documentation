@@ -9,8 +9,8 @@ To track link clicks in Chatbot components, follow these steps:
 
 1. Go to **Insights** > **Data Explorer** > **User engagement events**.
 
-   ![](https://i.imgur.com/4VvoXIc.png)
+   ![](https://imgur.com/ROUzHDH.png)
    
 2. Under Events table, you can view the user intearction (message-hyperlink-clicked, card-cta-clicked, and banner-cta-clicked).
    
-    ![](https://i.imgur.com/YPxdMp1.png) 
+    ![](https://imgur.com/WNfc8zz.png) 

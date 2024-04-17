@@ -12,7 +12,7 @@ The debugging logs provide helpful information to bot developers for every raise
 4. **Missed reason**: If a chat was missed, its reason
 5. **Errors**: Description of the issue that occurred during the operation, like user input validation errors or incorrect information being passed.
 
-![](https://i.imgur.com/ZKYGtgg.png)
+<img src="https://imgur.com/BuNEKlV.png" alt="drawing" width="50%"/>  
 
 
 :::note
@@ -76,7 +76,7 @@ Chats can be missed due to certain settings in [queue handling](https://docs.yel
 Audit logs are available for all changes made to inbox settings and the chat screen. However, this feature is currently not available for email-related changes. 
 Open **Audit logs** from your profile, and you can filter the audit logs for the inbox module to review the changes. 
 
-![image](https://imgur.com/oOCKkYu.png)
+![image](https://imgur.com/oWtpDxy.png)
 
 
 

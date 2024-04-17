@@ -49,7 +49,7 @@ You can follow any of the given three methods to create flow on **Studio** to su
 1. Click **Create bot** to create a new bot.
 2. Enter the details and select the **Add live chat support to your bot** checkbox. Support flow will get automatically imported. 
 
-![](https://i.imgur.com/zZ1ViqQ.png)
+<img src="https://imgur.com/uEGrf1l.png" alt="drawing" width="50%"/>  
 
 #### Steps to import **Connect with support** from preview tab
 
@@ -57,7 +57,7 @@ You can follow any of the given three methods to create flow on **Studio** to su
 2. Open Preview bot tab and select **Connect to agent** (to configure Inbox flow) or **Others** (to connect to other live agent apps on Integrations).    
 
 
-<img src="https://i.imgur.com/RQ6injt.png" alt="drawing" width="100%"/>    
+<img src="https://imgur.com/PnlqpRg.png" alt="drawing" width="50%"/>    
 
 
 #### Steps to create **Support flow** from scratch
@@ -73,7 +73,7 @@ You can follow any of the given three methods to create flow on **Studio** to su
 1. Click **Create flow** from Studio. See [steps](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) here.
 2. Search for [Support templates](https://cloud.yellow.ai/marketplace?name=support)(prebuilt marketplace flows). Add the most suited flow to your bot. 
 
-![](https://i.imgur.com/aFNSjUa.png)
+![image](https://imgur.com/iT97EQi.png)
 
 > Refer to [this](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#-1-choose-a-right-marketplace-template) guide to work with **Marketplace** templates. 
 
@@ -81,7 +81,7 @@ You can follow any of the given three methods to create flow on **Studio** to su
 
 1. After the flow is created, test it on the demo bot space by raising a live chat request. That is, enter a message in the input bar to *connect to an agent*, and provide details. 
 
-    ![](https://i.imgur.com/5ozZv9r.png)
+    <img src="https://imgur.com/rzyvlP7.png" alt="drawing" width="50%"/>  
 
 2. If the live chat request is raised successfully and the Inbox agent has received the chat (explained in the next section), agent connected message will be displayed (as configured on the raise ticket node).
 
@@ -113,7 +113,7 @@ Once you have created the live agent flow, follow these steps to test how ticket
     
 3. You will see a live chat raised. It will be displayed as a message on **My chat** page(if the live chat request is successful). You can reply to that message from your live chat screen. This is a real-time conversation on the bot.
 
-    ![](https://hackmd.io/_uploads/HkTSAa002.png)
+    ![image](https://imgur.com/yST6Df9.png)
 
 4. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-3-resolve-or-transfer-tickets) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
 
