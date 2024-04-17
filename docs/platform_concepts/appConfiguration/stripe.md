@@ -4,7 +4,6 @@ sidebar_label : Stripe Payment
 ---
 
 
-# Scope of Integration
 
 Yellow.ai Integration with Stripe Payment Gateway  allows you to generate payment links and view payment status with yellow.ai platform. 
 
@@ -12,17 +11,22 @@ Yellow.ai Integration with Stripe Payment Gateway  allows you to generate paymen
 
 Configuring the integration with stripe payment gateway is straightforward. Follow the steps defined below to start integrating:
 
-### 1. Create an application
-Before going to oauth you have to create an account in stripe,Go to stripe dashboard->Developer-> API Keys-> copy the Secret key. And paste the secret key in the secret field of the stripe integration card. 
-
-![alt_text](https://i.imgur.com/T5ZL3l4.png "image_tooltip")
+### 1. Create your Stripe application
 
 
-### 2. Configure webhook url in stripe dashboard.
-Copy the webhook url from stripe integration card and Go to stripe Dashboard->Developers-> Webhooks->Add endpoint->Fill the webhook url in Endpoint field and select **checkout.session.completed** Event in the select events to listen field. 
+1. Go to the Stripe dashboard > Developer > API Keys > Copy the Secret key. 
+2. Paste the secret key in the secret field of the stripe integration card. 
+
+   <img src="https://i.imgur.com/T5ZL3l4.png" width="70%"/> 
+
+### 2. Configure webhook URL in Stripe dashboard.
+Copy the webhook URL from stripe integration card:
+1. Go to the Stripe **Dashboard** > **Developers** > **Webhooks** > **Add endpoint**.
+2. Enter the webhook URL in **Endpoint** field 
+3. Select **checkout.session.completed** event in the select events to listen field. 
  
 
-![alt_text](https://i.imgur.com/xZ5YYSO.png "image_tooltip")
+   <img src="https://i.imgur.com/xZ5YYSO.png" width="80%"/>
 
 
 ### 3. Receiving event in yellow.ai Bot.
@@ -37,25 +41,40 @@ Stripe Payment Status | In case of payments/refunds the status can be checked wi
 
 ![alt_text](https://i.imgur.com/X8d0WQR.png "image_tooltip")
 
-# Use-cases 
+## Generating payment link through bot conversation 
 
-Following are the use-cases which are currently accommodated in the Integration:
+Once the Stripe account is connected, you can generate the paument link directly in bot conversations.
 
+To configure flow to generate payment link:
+1. Go to Development/Staging environment and navigate to Studio > Build > Select the flow where you want to add the Generate payment link node.
 
-### 1. Simple integration 
-Yellow.ai connect with stripe payment gateway using the stripe api-key or credentials.While integrating,the user has to provide some client credentials.
+2. Click Add node > Integrations > Stripe payment gateway.
 
+   <img src="https://i.imgur.com/eosqe5a.png" width="80%"/>
 
-### 2. Do actions with stripe action nodes
-
-Using the action nodes you can generate payment links according to your use cases.
-
-
-![alt_text](https://i.imgur.com/IsFwMEI.png"image_tooltip")
-
-
-![alt_text](https://i.imgur.com/IsFwMEI.png "image_tooltip")
  
+ Option | Datatype | Description
+ ------ | -------- | -----------
+ Amount* | number |  Choose a variable that contains the amount to be used in the payment link.
+ Currency* | String | Choose a variable that contains the currency to be used in the payment link
+ Description* | String | Choose a variable that contains the description to be included in the payment link.
+ Custom metadata* | Object | Choose a variable that contains the custom metadata to be included in the payment link.
+ Product image*  | string | Choose a variable that contains the URL of the product image to be included in the payment link.
+ Product name*  | String | Choose a variable that contains the name of the product to be included in the payment link.
+ After Completion type | String | The action to be taken after the payment is completed. You can choose to redirect the user to a specific URL or display a custom message.
+ URL or Custom Message | String | For Redirect URL: Enter the URL to which the user should be redirected. <br/> For Show Custom Message: Enter the custom message that you want to display to the user.
+ Parse API response | - | Choose the function that you want to use to parse and handle the response received from the API after completing the payment. Parsing the API response allows the bot to extract relevant information and take appropriate actions based on the response.
+
+
+
+
+
+
+
+
+
+
+
 
 # Reference
 

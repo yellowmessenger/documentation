@@ -3,11 +3,11 @@ title : Airpay integration
 sidebar_label : Airpay
 ---
 
-Yellow.ai's integration with Airpay lets your users make payments through the bot. This integration helps you generate payment links in the bot and share it with the bot users using which they can make payments.
+Yellow.ai's integration with Airpay lets your users make payments through the bot. This integration enables your bot to generate payment links in the bot and share it with the bot users using which they can make payments.
 
-## Fetch credentials from Airpay
+## Prerequisites
 
-Retrieve the following details from your Airpay account:
+Before you begin the integration process, make sure to retrieve the following details from your Airpay account:
 
 1. Merchant ID
 2. Access token
@@ -15,28 +15,36 @@ Retrieve the following details from your Airpay account:
 
 ## Connect Airpay with Yellow.ai
 
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
+
+
+
 To connect your Airpay account with Yellow.ai, follow these steps:
 
-1. Go to cloud.yellow.ai > **Integrations** > **Payment** > **Airpay**.
+1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment** > **Airpay**.
 
-   ![](https://i.imgur.com/TV0yGcI.png)
+   ![](https://i.imgur.com/rjslSEg.png)
 
-2. In **Give account name**, provide a name for the Airpay account and enter the **Merchant ID**, **Access token** and **Airpay base URL** of your Airpay account and click **Connect**. 
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 
-:::info
-1. In a two-tier environment, add account names in Development and use them in Live.
-2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
-:::
+   ![](https://i.imgur.com/rAKmXqE.png)
 
-3. You can add up to 15 merchant accounts. To add another **Airpay** account, click on **Add account** and follow the steps mentioned above.
+3. Enter the **Merchant ID**, **Access token** and **Airpay base URL**.
+4. Click **Connect**. 
+5. To connect another account, click **+ Add Account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
-   ![](https://i.imgur.com/PL05BMj.png)
 
-## Generate payment link in your bot
+## Generate Airpay payment link in your bot conversation
 
-To generate a payment link in the bot using Airpay, follow the steps mentioned below:
+To generate a payment link in the bot using Airpay, follow these steps:
 
-1. Go to **Studio** > **Build** and build a flow for your use case.
+1. In Studio **Build**, open the flow where you want to add the payment link.
+2. Navigate to the desired point in your conversation flow where you want to integrate with Airpay for payment links. Follow these steps:
+
+1. Click on the Integration option in the flow editor.
+2. Drag the node connector to the desired location.
+3. From the Integrations menu, select Airpay.
+2. Navigate to the point where you want to add the flow and click Integration > 
 2. At whichever point of conversation you want the bot to access **Airpay** for payment link, inlcude the Airpay node. For that, drag the node connector, go to **Integrations** > **Airpay**.
 
    ![](https://i.imgur.com/tFUbjgE.png)

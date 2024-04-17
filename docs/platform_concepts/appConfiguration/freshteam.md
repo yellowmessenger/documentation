@@ -3,50 +3,51 @@ title : Freshteam
 sidebar_label : Freshteam
 ---
 
-Yellow.ai Integration with Freshteam enables you to seamlessly access Freshteam services. Any customer who has an account in Freshteam will be able to connect it with yellow.ai. Using this integration one can fetch employee info, create and manage time off requests, and retrieve  job posting information from Freshteam.
+Yellow.ai Integration with Freshteam enables you to seamlessly access Freshteam services. With this integration, the bot can fetch employee info, create and manage time off requests, and retrieve  job posting information from Freshteam.
 
-## 1. Configure freshteam
+## Integrate Freshteam with Yellow.ai
 
-Configuring the integration with Freshteam is straightforward. Follow the steps below to integrate Freshteam:
-
-1. **Navigate to integration tab**
-
-Inside your project, from the switcher, open Integrations, search for **Freshteam** in the search bar or you can find **Freshteam** under HR.
-
-![](https://i.imgur.com/wvRnq7s.png)
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
 
 
-2. **Connect your Freshteam account**
+### Get your Freshteam's API key
 
 Follow the below steps to enable Freshteam integration for your bot:
 
-- Login to https://www.freshworks.com/hrms/login/ and click on your Profile Avatar.
+1. Login to https://www.freshworks.com/hrms/login/ and click on your Profile Avatar.
      
-![](https://i.imgur.com/B1bHeZz.png)
+   ![](https://i.imgur.com/B1bHeZz.png)
 
-- From the drop-down select API key, generate or use the existing API key.
+2. From the drop-down select **API key**. You can generate new API key and copy it or just copy the existing API key.
      
-![](https://i.imgur.com/n2SADMw.png)
+   ![](https://i.imgur.com/n2SADMw.png)
 
-     
-- Provide your Freshteam Domain and API key details in the Freshteam Integration page in cloud.  
-- Click **connect** to connect your freshteam account to the bot.
-- If you have multiple accounts, follow the above mentioned steps to add each of them.
 
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
+### Connect your Freshteam account to Yellow.ai
+
+To connect to Yellow, you need your account's API key. In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment. 
+
+
+1. Switch to the Development/Staging environment and go to **Extensions** > **Integrations** > **HR** > **Freshteam**.
+   ![](https://i.imgur.com/yZ0Dmss.png)
+
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
+3. In **API key**, paste that API Key that you copied earlier.
+4. In **Domain name**, enter your account's domain URL.
+5. Click **Connect**.
+6. To connect another account, click **+ Add Account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
 ---
 
 
-## 2. Use cases 
-Following are the use-cases which are currently accommodated in the Integration:
+## Accessing Freshteam Functions through bot conversations
+
+The Freshteam integration enables bot to perform the following actions.
+
+
+
 	
-### 2.1 List all employees
+### 1. List all employees
 List all employees integration node helps in retrieving all the employees available in Freshteam. One can retrieve employee information by applying sort and sortType filters as well.
 
 :::note
@@ -66,7 +67,7 @@ List all employees integration node helps in retrieving all the employees availa
 
 List all employee's integration node returns the value of array type, use array variable as an output variable.
 
-### 1.2 Retrieve employee information
+### 2. Retrieve employee information
 
 Retrieve employee information integration node helps in retrieving a particular employee based on the employee id provided.
 
@@ -87,7 +88,7 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 Retrieve employee information integration node returns the value of object type, use object variable as an output variable.
 
 
-### 1.3 List all time-off types
+### 3. List all time-off types
 
 List all time off types integration node helps in retrieving all the time off types available in the freshteam.
 
@@ -99,7 +100,7 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 
 List all time off types integration node returns the value of array type, use array variable as an output variable.
 
-### 1.4 List all time off requests
+### 4. List all time off requests
 
 List all time off requests integration node helps in retrieving all the time off requests applied by an employee based on the employee id provided.  
 
@@ -118,7 +119,7 @@ Only users in HR Partner, Admin, and Account Admin roles can access this API.
 
 List all time off requests integration node returns the value of array type, use array variable as an output variable.
 
-### 1.5 Create a time off request
+### 5. Create a time off request
 
 Create a time off request integration node helps in applying for leave(time off).
 
@@ -126,19 +127,19 @@ Create a time off request integration node helps in applying for leave(time off)
 
 | Parameter | Type | Sample |
 | -------- | -------- | -------- |
-|   StartDate       |  String        |2022-09-19 |
-|   EndDate       |  String        |2022-09-19|
-|   LeaveTypeID       |  Number        |5000063084|
-|   Comments       |  String        |Fever, cold, and headache|
+|   StartDate |  String        |2022-09-19 |
+|   EndDate |  String        |2022-09-19|
+|   LeaveTypeID |  Number        |5000063084|
+|   Comments |  String        |Fever, cold, and headache|
 |   OptionalLeaveDays       |  Array        |[]|
-|   Notify       |  Array        |[]|
-|   AddToCalendar       |  Boolean        |True|
-|   AutoDeclineEvents       |  Boolean        |True|
+|   Notify |  Array        |[]|
+|   AddToCalendar |  Boolean        |True|
+|   AutoDeclineEvents |  Boolean        |True|
 
 **Return Value**  
 Create a time off request integration node returns the value of object type, use object variable as an output variable.
 
-### 1.6 Approve a time off request
+### 6. Approve a time off request
 
 Approve a time off request integration node helps in approving a leave based on the time off id provided.
 
@@ -156,7 +157,7 @@ Only users in HR Partner, Admin, Reporting Manager, and Account Admin roles can 
 
 Approve a time off request integration node returns the value of object type, use object variable as an output variable.
 
-### 1.7 Cancel a time off request
+### 7. Cancel a time off request
 Cancel a time off request integration node helps in rejecting a leave based on the time off id provided.
 
 **Node Sample Inputs**
@@ -170,7 +171,7 @@ Cancel a time off request integration node helps in rejecting a leave based on t
 Cancel a time off request integration node returns the value of object type, use object variable as an output variable.
 
 
-### 1.8 List all Job Postings
+### 8. List all Job Postings
 
 List all job postings integration node helps in retrieving all the available open jobs in an organization. One can apply an optional filter “title” for returning job information based on that title.
 
@@ -184,7 +185,7 @@ List all job postings integration node helps in retrieving all the available ope
 
 List all time off requests integration node returns the value of array type, use array variable as an output variable.
 
-### 1.9 Retrieve Job Posting information
+### 9. Retrieve Job Posting information
 
 Retrieve Job posting information integration node helps in retrieving available job information based on the job id provided.
 

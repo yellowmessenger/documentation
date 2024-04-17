@@ -57,7 +57,7 @@ In a two-tier environment, you can connect an integration app in the Development
 
    ![](https://i.imgur.com/8zjFIiE.png)
 
-2. In **Give account name**, provide a name for the account. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
+2. In **Give account name**, provide a name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 3. Copy and paste the **Instance URL**, **Client ID** and **Client Secret** (as mentioned in the previous section)
 4. Click **Connect**.
 5. You will be prompted to grant authorization, click **Allow**.
@@ -102,7 +102,7 @@ From Yellow.ai you can access your ServiceNow instance and create, update and se
 4. [Store the API response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) and pass it in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#docusaurus_skipToContent_fallback) to display the response to the end user.
 
 
-### Example
+### Configuring bot for a sample Service Now use case
 
 Let's say that you want to fetch a ticket's information in **Requests** using the ticket number. 
 
