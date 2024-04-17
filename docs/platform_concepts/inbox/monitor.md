@@ -8,7 +8,7 @@ In the Monitor section you can effectively track the productivity of your entire
 2. [Email trends](#email): Offers analysis and trends related to email tickets.
 3. [Team](#team): Allows you to monitor and evaluate the performance of your support team.
 
-![](https://i.imgur.com/NqQDSEd.png)
+![image](https://imgur.com/A9INncG.png)
 
 
 :::note
@@ -48,7 +48,7 @@ The chat trends tab provides valuable insights into live chat activity and perfo
 ### Summarized chat insights with widgets
 
 The top section contains widgets that display essential metrics for efficient live chat workflow management.
-![](https://i.imgur.com/EPhHqwf.png)
+![image](https://imgur.com/5MHnW6v.png)
 
 The widgets provide the following data:
 
@@ -67,7 +67,7 @@ The widgets provide the following data:
 
 The two graphs provided offer detailed analysis of chat trends, allowing tracking for specified or custom date ranges.
 
-![](https://i.imgur.com/4WHYeIf.png)
+![image](https://imgur.com/pw6y72P.png)
 
 | Insights | Description |
 | -------- | -------- |
@@ -85,7 +85,7 @@ A live monitor dashboard has been specifically developed for inbox admins and su
 
 - By selecting **View live chat dashboard**, a new page will open, presenting the **50 most recent chats**. The chats in the table are arranged in descending order based on the latest received chat.
 
-    ![](https://hackmd.io/_uploads/By565R79n.png)
+    ![image](https://imgur.com/yjIta82.png)
     
 - The table includes the following information for each chat:
     - **ID**: Unique identification for each chat.
@@ -96,7 +96,8 @@ A live monitor dashboard has been specifically developed for inbox admins and su
     - **Current response timer**: Duration taken by the agent to respond to the customer's most recent message.
     - **Inactivity status**
     - **Chat duration**
-    ![](https://hackmd.io/_uploads/SJOAZKP93.png)
+
+![image](https://imgur.com/nrLFh8f.png)
 
 :::note
 The first and current response timers continue running (indicated in red) until the agent sends a response. Once the response is sent, the corresponding timestamp will be displayed in the respective row.
@@ -110,7 +111,7 @@ The first and current response timers continue running (indicated in red) until 
 
 - You can filter the data based on different channels or agent emails. Click **Apply filters** to apply and **Clear filters** to delete the applied filters. 
 
-    ![](https://hackmd.io/_uploads/BkW4MKv5n.png)
+    ![image](https://imgur.com/T551ZT9.png)
 
 - A table-level filter can be applied to monitor specific **agents** or **group** performance or **inactivity status** of the agent or the user. By using the filter next to the column name, you can closely observe the chats handled by a particular agent or assess a group's performance. 
 
@@ -119,7 +120,8 @@ The first and current response timers continue running (indicated in red) until 
     > When filtered by agents, all tickets assigned to that agent will be visible.
 
 - To read an ongoing chat (without the ability to respond), simply click on the chat ID. The chat will be displayed on the same screen, along with chat details, agent information, and chat history. You can close the chat or navigate to other chat screens. 
-    ![](https://hackmd.io/_uploads/HyHQQtP5h.png)
+
+    ![image](https://imgur.com/aN5vdVD.png)
 
 :::note
 The displayed chat data is not live. Click **Refresh** to fetch the latest messages.
@@ -131,7 +133,7 @@ The displayed chat data is not live. Click **Refresh** to fetch the latest messa
 
 Real-time chat activity is displayed in a table within the Inbox. This table provides comprehensive details about **all ongoing live chats**. The table visualization presents all active chats in a consolidated view, displaying relevant metrics upfront.
 
-![](https://i.imgur.com/v2CZiCr.png)
+![image](https://imgur.com/YXcB6bo.png)
 
 - Each chat ticket number is accompanied by the assigned **agent's name, priority level, assigned time, duration of the chat, reply count** (number of replies sent to the user), and more.
 
@@ -166,7 +168,7 @@ Admins can effectively monitor the handling of email tickets by utilizing the fe
 You can filter the email trends data based on specific **tags, groups, agents, and priorities** by selecting a value from the dropdown menu.
 
 
-![](https://i.imgur.com/LO2TQQg.png)
+<img src="https://imgur.com/RdvKHVf.png" alt="drawing" width="50%"/>  
 
 ----
 
@@ -229,7 +231,7 @@ In the agents table, you can access the complete list of your agents, along with
 
 You can view the following columns in the Agents data section: **Agent Name, Group, Status, Chat Concurrency, Ticket Concurrency, Current Status Since (DD:HH:MM), Available, Busy, Away, and other custom statuses**.
  
-![](https://i.imgur.com/waZZ4Jv.png)
+![image](https://imgur.com/zLXq4ae.png)
 
 ----
 
@@ -239,5 +241,5 @@ In the groups table, you can gain insights into the total number of groups and t
 
 In the Groups data section, you can see the following columns: **Group Code, Group Name, Number of Agents, Active Tickets, Active Agents, and Queued Tickets**.
 
-![](https://i.imgur.com/gWvnWgE.png)
+![image](https://imgur.com/ucC6mJa.png)
 

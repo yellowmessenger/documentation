@@ -41,15 +41,13 @@ To add an inbox role, follow the below steps:
 
 1. Open **Access Control** from the overview page. 
 
-    ![](https://i.imgur.com/5ME81yH.png)
+    ![image](https://imgur.com/YNc9blS.png)
 
 2. On **Users** tab, click **+Invite users**.
 
-
-
 3. Enter **Email ID** of the use you want to invite. From the **Access control** dropdown menu select the required role (**Inbox (Agent)**/ **Inbox (Admin)**). Click **Invite**. 
     
-    ![](https://i.imgur.com/n5E7zhY.png)
+    ![image](https://imgur.com/Xi7y0iZ.png)
 
 :::note
 
@@ -77,7 +75,7 @@ To add an inbox role, follow the below steps:
 
 5. You can open the **Invites tab** and **Resend/Revoke** the invite. 
 
-    ![](https://i.imgur.com/Qd85Tlw.png)
+    ![image](https://imgur.com/I6QXFiT.png)
 
 6. Once the agent accepts the request, their information will be listed in the **Users tab**. 
 7. You can **Edit** or **Delete** the users from the **User tab** (if required).
@@ -97,12 +95,12 @@ To join the inbox team, follow the steps below:
 
 2. If you already have an account on the Yellow.ai platform, check the notification icon on the overview page. 
 
-    ![](https://i.imgur.com/q20mMo4.png)
+    ![image](https://imgur.com/6xnvUTl.png)
 
 
 3. Click on the tick mark to accept the invite.
 
-    ![](https://i.imgur.com/CGK4W7h.png)
+    <img src="https://imgur.com/z0ZmIx4.png" alt="drawing" width="50%"/>  
 
 
 
