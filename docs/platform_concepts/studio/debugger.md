@@ -1,6 +1,6 @@
 ---
-title: Flow debugger
-sidebar_label: Flow debugger
+title: Debug Flows
+sidebar_label: Debug Flows
 tags: [debug flows, debugger, flow debugger]
 ---
 

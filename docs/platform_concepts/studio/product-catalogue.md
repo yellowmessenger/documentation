@@ -80,7 +80,7 @@ When a table contains numerous records, it can be challenging to scroll through 
 
 To showcase products from the catalog to a user, you'll need to construct flows containing the **Product Search** node.
 
-1. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-flow) for your use case.
+1. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#manually-create-a-flow) for your use case.
 2. At whichever point of the conversation you want the bot to display the products, include the **Product search** node.
 
    <img src="https://i.imgur.com/4Mgvn3K.png" alt="drawing" width="80%"/>

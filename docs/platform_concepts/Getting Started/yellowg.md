@@ -31,7 +31,7 @@ Our revolutionary AI Copilot, powered by Gen AI, revolutionizes conversation flo
    ![](/img/cdp/aicopilot.gif)
 
 
-Learn [how to create flows effortlessly with Gen AI-based Copilot](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot).
+Learn [how to create flows effortlessly with Gen AI-based Copilot](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#automate-flow-creation-using-ai-copilot).
 
 
 ### Transform Prompts into Actions with Dynamic Chat Node

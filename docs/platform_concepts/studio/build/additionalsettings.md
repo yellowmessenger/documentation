@@ -1,184 +1,141 @@
 ---
-title: Additional UI elements in Build
-sidebar_label: Additional UI elements in Build
+title: Bot level settings
+sidebar_label: Bot level settings
 tags: [export bot, bot template, welcome node, fallback node]
 ---
 
-This article provides insights into the additional UI components on the **Build** page, including the **Welcome** and **Fallback** nodes. It also covers topics like bot publication, template exporting, and creating a new bot from scratch.
+Conversation settings enable you to customize your bot's conversational behavior. These settings can be applied to specific nodes or flows within your bot, providing tailored configurations to meet your needs. 
 
-## Welcome (Start Flow)
+This video demonstrates how to configure the conversation settings of a bot:
 
- This is the entry point of the bot conversation. Here, you can assign a flow the bot should carry out when a user uses the bot for the first time.This is the flow that activates when a user initiates the conversation's initial session. 
- 
-:::info
-A session refers to the complete conversation a user has with the bot, from the outset to when they conclude the chat. If a user starts a new conversation after ending the previous one, it is considered as a separate session, and the welcome flow is triggered for that.
-:::
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Cl3i8VN-KFM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
 
-For example, you want your chatbot to offer a welcoming message and introductory information when a user begins a conversation for the first time. You would set this as the entry point for the bot conversation, and the flow associated with it would initiate the welcome message and introduction. Subsequently, if the user ends that conversation and starts a new one, the welcome flow will again greet them in the new session.
+**Here's what you can do with bot level settings:**
 
-   ![](https://i.imgur.com/AkqCkIa.png)
+- Manage user identification for personalized interactions.
+- Configure supported languages to accommodate diverse users.
+- Provide suggestions to users based on their interactions.
+- Assist with document searches for quick information retrieval.
+- Display banners for important announcements or promotions.
+- Set bot objectives to guide interactions towards specific goals.
 
-To set a welcome flow:
+<img src="https://imgur.com/DkLY4i9.png" alt="Converstion settings" width="60%"/><br/>
 
-1. Click the **Welcome** option.
-2. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
+Under the Conversation settings, you can access and modify these bot level settings:
 
-You can also set different start triggers for this flow. To know about setting triggers for a flow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-1-configure-start-trigger).
+### User identification setting
 
-:::note
-If you had previously set a welcome flow in our previous UI, you will see a legacy node that contains the old welcome flow settings. You cannot edit it.
-![](https://i.imgur.com/BN4TTGy.png)
-:::
+The User identification flow in bot conversations involves identifying the user engaging with the bot. This is accomplished by prompting the user identifier flow for unidentified users even before starting the conversation, which may include an email address, phone number, or other unique information.
 
-You can set any of the flows as a welcome flow.
+To know more about setting up User identification flow in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow) 
 
-![](https://i.imgur.com/TUZVCdt.png)
+### Language settings
 
-## Fallback (Fallback Flow)
+Add supported languages to your bot to enable communication in multiple languages. This allows you to reach to a wider audience.
 
-The bot switches to this flow when it doesn't understand the user input.
+   <img src="https://i.imgur.com/g4WdfnA.png" alt="drawing" width="60%"/> 
 
-   ![](https://i.imgur.com/ej9HWfL.png)
+### Suggestion setting when bot does not understand user utterance   
+   
+Bot suggestions are automated prompts or recommendations provided by the bot to assist users during a conversation. These suggestions are based on the context of the conversation and can include options for actions, responses, or next steps that the user can take. This helps the users guide through the conversation and facilitate smoother interactions with the bot.
 
-To set a fallback flow:
+   <img src="https://i.imgur.com/DuwnrKd.png" alt="drawing" width="60%"/>
 
-1. Click the **Fallback** option.
-2. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
+Option | Description 
+-------|-------------
+Enable suggestions | Turn this option on to activate user input suggestions.
+Excluded flows | Specify flows where suggestions will not be applied.
+Excluded categories | Select the categories where these suggestions will not apply.
+Included categories | Set categories where these suggestions should apply.
+Unsatisfactory button text | Customize the text to display the unsatisfactory button.<br/> <img src="https://i.imgur.com/RgwS3Ok.png" alt="drawing" width="60%"/>
+Hide input | Enable this option to hide the user input box, preventing users from entering responses.<br/> <img src="https://i.imgur.com/xgPODar.png" alt="drawing" width="60%"/>
+Message | Provide the message to display when the bot does not understand the user's message.<br/> <img src="https://i.imgur.com/dmm73UD.png" alt="drawing" width="60%"/>
 
-You can also configure different start triggers for this flow. For instance, you can use an event as a start trigger for a flow. Events like bot opening or closing can initiate a specific flow. To know about setting triggers for a flow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-1-configure-start-trigger).
+### Document search
 
-:::note
-* If you had previously set a fallback flow in our previous UI, you will see a legacy node that contains the old fallback flow settings. You cannot edit this.
-![](https://i.imgur.com/OwHXy4c.png)
-* Your bot might bypass the fallback flow if it detects intents or triggers from the user that are linked to specific flows. Essentially, the bot will continue responding to user queries based on the flows associated with particular intents, utterances, or triggers, rather than resorting to the fallback. Therefore, when setting up a fallback flow, ensure that the bot isn't triggered by any other triggers.
-:::
+The document search enables the bot to search for answers from the website or the documents uploaded in the KB module to provide accurate and relevant responses to user queries. 
 
-Any of the flows can be set as a fallback flow.
+It is triggered when the bot is not able to predict a relevant flow.
 
-![](https://i.imgur.com/L3nTKAv.png)
+Learn more about [supported document types](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition#-2-upload-files-to-document-section).     
 
-----
+   <img src="https://i.imgur.com/TdVPAiA.png" alt="drawing" width="50%"/>
 
-## Preview
+1. **Enable as autofall-back**: Activate this option to enable show fallback messages when the bot doesn't understand user queries. Enter the fallback message in the **Model Fallback Message** field below.
+  
+   <img src="https://i.imgur.com/v1D5hUQ.png" alt="drawing" width="50%"/>
 
-The preview option lets you test the entire bot, giving you a look at how the bot would look, function, and converse with the end user.
+2. **Enable summarised results**: Opt for summarized results to have the bot summarise and present information to the user.
 
-![](https://i.imgur.com/ePnYure.png)
+   <img src="https://i.imgur.com/gRy9PX5.png" alt="drawing" width="40%"/>
 
-When you click the **Preview** button, it opens on the right side. You can also click the arrow on the top to open the bot in a new tab and test it.
+3. **Enable links for summarized answer**: Enable this option to provide summarized results with supported links.
 
-![](https://i.imgur.com/CfWWPcN.png)
+   <img src="https://i.imgur.com/n4JYAFK.png" alt="drawing" width="40%"/>
 
-## Publish changes
+4. **Model bot response**: Customize your bot's tone to align with your preferred response style.
 
-In the **Publish changes** section, you have options to publish the bot, making it accessible to end users, and to export the bot as a template for future reference.
+| Tones               | Descriptions                                                  | Example                                                          |
+|---------------------|---------------------------------------------------------------|------------------------------------------------------------------|
+| Empathetic          | Responds in a way that acknowledges and reflects the user's emotions.              | <img src="https://i.imgur.com/J41xQmE.png" alt="drawing" width="70%"/>                   |
+| Formal              | Uses a professional and formal tone in responses.          | <img src="https://i.imgur.com/fTfC4JQ.png" alt="drawing" width="70%"/>                |
+| Short Answers       | Conveys information concisely with brief responses and minimal descriptions. | <img src="https://i.imgur.com/V7UUsvi.png" alt="drawing" width="70%"/>                   |
+| Instructions based  | Provides responses in a clear instructional format.            | <img src="https://i.imgur.com/xn3jBdH.png" alt="drawing" width="70%"/>  |
 
-![](https://i.imgur.com/pTYufMt.png)
+### Callout banner setting
 
-### Publish bot 
+A callout banner allows you to add a banner to the chatbot's conversation. It can be used to alert users about new products, services, special offers, and promotions.
 
-Publishes the entire bot live. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) to learn more about publish.
+<img src="https://i.imgur.com/iXIlMVq.png" alt="drawing" width="40%"/><br/>
 
-### Export as bot template
+Using callout banner, you can perform the following actions:
 
-Export the entire bot as a template to be reused in the future. Flows, databases and FAQs of the bot can be exported. 
+#### Add text banner
 
-To export a bot template:
+1. Click **+ Add a callout**.
 
-1. Click **Export as bot template**.
-2. To set up export, fill the following fields:
+   <img src="https://i.imgur.com/KebK3ui.png" alt="drawing" width="50%"/>
 
-| Name | Description |
-|------|-------------|
-| Template name | Name of the template. This is auto-filled and you can modify the name of the template according to your preference. |
-| Overview | Provide a brief summary of the bot. This makes it easier to select from various templates when you want to reuse.  |
-| Template icon | Select an icon for the template or you can upload the icon of your choice. ![](https://i.imgur.com/hPTOxCL.png) |
-| Description | Describe the template. |
-| Flows | This allows you to export specific flows of the bot. In the drop-down, select flows that you want to export. . ![](https://i.imgur.com/7deVwfk.png) |
-|Export table data | Enable this option to export database tables along with flows. <br/> <img src="https://i.imgur.com/DlwlOg3.png" alt="drawing" width="80%"/>|
-| Add FAQs | Enable this option to export FAQs along with your flows. ![](https://i.imgur.com/4fpQd4a.png) |
-| Key features | Add the main features of your bot to the template cover. This helps you see what the template is like and what makes it special when it is listed in the marketplace.|
-| Template tags | Add tags for your template here. |
-| Use cases | You can select up to three categories that are available in the drop-down that suit your template. ![](https://i.imgur.com/aVZJ3M7.png) |
-| Languages | To add the languages the bot should support, include them in this section. |
-| Industries | You can choose up to three industries that match your flow. |
-| Channels | Select the channels in which you wish to operate the bot.| 
+2. In **Type of banner**, select the banner type as **Text**.  
 
-3. Click **Next**.
-4. If you've selected multiple flows, you can switch between them and preview the one you want to export.
+   <img src="https://i.imgur.com/YXxbf37.png" alt="drawing" width="50%"/>
 
-   <img src="https://i.imgur.com/VbIYpfD.png" alt="drawing" width="50%"/>
+3. Enter the text to display in **Text** field.
 
-5. Choose who can access your template using these options:
+   <img src="https://i.imgur.com/PNS2HWu.png" alt="drawing" width="50%"/>
 
-* **Myself**: Publish and reuse the template for your own use.
-* **Training**: Only users with access to the specific subscription can use the exported template.
-* **Public**: The template is published in the Marketplace and publicly available within the bot after admin approval.
+4. In **Replies**, configure the response options for users. Click the button to edit them.
 
-   <img src="https://i.imgur.com/Oy5FoDN.png" alt="drawing" width="50%"/>
+#### Add image banner
 
-6. You can view templates submitted for review under **User account** > **Exports**.
+1. Click **+ Add a callout**.
 
+   <img src="https://i.imgur.com/KebK3ui.png" alt="drawing" width="50%"/>
 
- <img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
+2. In **Type of banner**, select the banner type as **Image**  
 
- You can view the status of the template on this page.
+   <img src="https://i.imgur.com/YXxbf37.png" alt="drawing" width="50%"/>
 
- ![](https://i.imgur.com/oynJE4x.png)
+3. Upload the image to be displayed.
 
- 7. Templates that are exported to a private marketplace are automatically published without review. For subscription exports, the system requires a review and displays them on this page. The subscription admin can then view, test, and publish them. Similarly, templates that are exported to the public marketplace also undergo a review process and appear here. The public marketplace admin can then view, test, and publish those templates.
+   <img src="https://i.imgur.com/TlU3Q5F.png" alt="drawing" width="50%"/>
 
- ![](https://i.imgur.com/aAR4eF3.png)
+#### Setting to Close or Minimise the banner
 
- 8. After selecting the access option for the template, the system will list the approved templates under the corresponding category.
+Here, you can choose whether to allow users to either minimize the banner with a customizable text message or completely close and remove the banner from the chat widget. **Minimise on close** offers users the option to close the banner while displaying custom text on it. **Close** enables users to fully close the banner and remove it from the bot.
 
- ![](https://i.imgur.com/e6T16cV.png)
+1. Click **Settings** on top to define the banner's status once accessed. 
 
---------
+   <img src="https://i.imgur.com/5s9EvBR.png" alt="drawing" width="50%"/>
 
-## Create your first bot
+2. Choose your preference and click **Save**.
 
-We will help you build your first lead generation bot. Follow the steps as mentioned below:
+   <img src="https://i.imgur.com/8QXRABh.png" alt="drawing" width="40%"/>
 
-1. Go to **Studio** > **+ Create flow** > under **Start from Scratch** click **+ Create a flow**. 
+### Bot objective
 
-![](https://i.imgur.com/QHc1Dxs.png)
+Specify the primary goal of the bot and the purpose of its interaction with users. This is just for internal purpose.
 
-2. Enter the following details: 
-
-<img src="https://i.imgur.com/GWO7tI1.pngg" alt="drawing" width="40%"/>
-
-   *  **Flow name**: Enter the name of your flow.
-   *  **Flow Description**: Describe your flow. 
-   *  **Category**: Add a category for your flow if required
-
-3. Click **Create**.
-4. Once the flow gets created, connect the Start node to [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to collect user information such as [name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#12-name), [email address](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#15-email) and [phone number](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-phone) and store them in respective [variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables).
-
-   ![](https://i.imgur.com/tqRewYD.png)
-
-2. Create a database table to store the prompt node responses. To do so,
-
-* Go to the **Database** section and click **+Add new table**.
-
-   ![](https://i.imgur.com/05LhABa.png)
-
-* Provide a name to your table, enter the **Field name** to store the respective prompt nodes responses, set the data type for the responses, enable the **Searchable** option and click **Create Table**.
-
-   ![](https://i.imgur.com/yFAM0zZ.png)
-
-3. Go back to your flow and include a [database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) node. Choose the database table in which you would like to store the info collected from the user(the one you created in the previous step).
-
-   ![](https://i.imgur.com/WAYvjQk.png)
-
-4. In the **Record** section, click **+Add** to add the fields and the respective variables in which the user responses are stored.
-
-    ![](https://i.imgur.com/uMp0hFt.png)
-
-5. Set [Text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) nodes to display relevant messages for **Success** and **Fallback**.
-
-   ![](https://i.imgur.com/ytCBCEi.png)
-
-6. [Test the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow),  and then [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) it.
-
-
+   <img src="https://i.imgur.com/HBEYg6o.png" alt="drawing" width="40%"/>

@@ -7,42 +7,70 @@ sidebar_label: Dynamic chat node
 This node is activated only upon request.
 :::
 
-The dynamic chat node simplifies conversation design by eliminating the need for building nodes or designing flows. You can directly type the instructions for the node, an d the bot will automatically execute them. This saves time since you don't have to create complex flows or add multiple nodes. Just type the instructions, and the bot will handle the conversation accordingly.
+Dynamic chat node simplifies conversational design by facilitating goal-oriented interactions through its prompt generator.  It analyzes scenarios for tailored responses and generates the prompts based on the given use case. This node enables businesses to offer custom solutions with responsive interactions. 
 
-You can also add additional nodes to dynamic node to build the rest of the flow.
+You can input instructions directly, which are then automatically converted into prompts to engage with users. This eliminates the need for manual building flows or adding nodes.
 
-## Prompts for Dynamic chat node
+This node is powered by generative AI and LLMs (Large Language Models) to drive conversation flows and generate responses.
 
-There are two ways by which you can enter your prompts. They are:
+**Benefits of Dynamic chat node:**
 
-### Generate prompts with AI Prompt Generator
+* **Simplifies conversation design**: Users can input instructions directly. There's no need for building nodes or designing flows.
+* **Enhanced user experience**: Dynamic Chat Node enables a more interactive and personalized experience for users, as the bot responds dynamically to their inputs.
+* **Time-saving**: Saves time and effort in conversation design, enabling users to focus on creating engaging content.
+* **Real-time interaction**: Facilitates instant analysis of user input and generates immediate responses, leading to faster query resolution.
+
+This video demonstrates how to configure the Dynamic chat node:
+
+<center>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QL3gPoioTq4?si=8a9ZCjig2yYVgkAa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</center>
+
+## Add Prompts to Dynamic chat node 
+
+There are two ways to add the prompts to Dynamic chat node:
+1. [Generate prompts using AI](#generate-prompts-using-ai)
+2. [Manually write your prompts](#manually-write-your-prompts)
+
+### Generate prompts using AI
+
+This option automatically creates prompts based on predefined goals, use cases, and input using Gen AI.
+
+To generate prompts using AI, follow these steps:
 
 1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case and extend the node where you want to include the **Dynamic chat** node. Under **Prompts** click **Dynamic chat** node.
 
-   <img src="https://i.imgur.com/RE9I5Jr.png" alt="drawing" width="70%"/>
+   <img src="https://hackmd.io/_uploads/ryZubuKAa.png" alt="drawing" width="80%"/>
 
-2. Once you click the dynamic node, the **AI prompt generator** opens up. 
+* The **AI prompt generator** is displayed. 
 
    <img src="https://i.imgur.com/QaVQe8Q.png" alt="drawing" width="70%"/>
+   
+3. Enter the following fields and click **Generate**.
 
-3. Fill in the following fields and click **Generate** and the platform will automatically genrate a prompt for you.
+    <img src="https://i.imgur.com/LWgYCmX.png" alt="drawing" width="70%"/>
 
-   <img src="https://i.imgur.com/LWgYCmX.png" alt="drawing" width="70%"/>
+   a. **Write goal**: Define the role of the virtual assistance and conversation's primary objective.<br/>
+   b. **Write usecase:** Specify the topics or scenarios the conversation should cover.<br/>
+   c. **Describe fallback:** Explain the action the bot should take if it does not understand the user's input.<br/>
+   d. **Add input:** Add the user information that the bot needs to collect from the user.  
 
-* **Write goal**: Define the conversation's primary objective.
-* **Write usecase:** Specify the topics or scenarios the conversation will cover.
-* **Describe fallback:** Explain the action the bot should take if it doesn't understand the user's input.
-* **Add input:** List the information the bot needs to collect from the user.
-
-4. Once the prompt gets generated, you can click **Add prompt** to add it. If you'd like to further improvise the prompt, click **Improve prompt**.
+4. Once the prompt is generated, you can click **Add prompt** to add it. If you would like to further improve the generated prompt, click **Improve prompt**.
    
    <img src="https://i.imgur.com/DwdHQVj.png" alt="drawing" width="70%"/>
+   
+:::note
+You can also edit the prompts based on your requirements before adding the prompt to the node.
+:::
 
-5. Select the additional prompts to be added, enter the details to be collected for those prompts and click **Regenerate**.
+   
+5. AI prompt generator offers suggestions based on the defined goal. Users can select additional prompts to be added, enter the details required for those prompts, and then click **Regenerate** to finalize the prompts.
    
     <img src="https://i.imgur.com/U0UXKVH.png" alt="drawing" width="70%"/>
+    
+### Manually write your prompts
 
-### Write your own prompts
+This option allows you to directly input your own instructions instead of relying on the AI prompt generator. You can type out specific instructions tailored to your needs and objectives.
 
 1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case and extend the node where you want to include the **Dynamic chat** node. Under **Prompts** click **Dynamic chat** node.
 
@@ -52,18 +80,17 @@ There are two ways by which you can enter your prompts. They are:
 
    <img src="https://i.imgur.com/QaVQe8Q.png" alt="drawing" width="70%"/>
 
-3. Click **Cancel** on the pop-up and enter your prompt.
+3. Click **Cancel** on the pop-up and type your instructions in **Prompt** manually.
 
-
-![](https://i.postimg.cc/tRPy357r/Screenshot-2024-03-21-at-8-14-56-PM.png)
+   ![](https://i.postimg.cc/tRPy357r/Screenshot-2024-03-21-at-8-14-56-PM.png)
 
 | Fields             | Descriptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| User context       | User context allows you to store string values as variables, which can be retrieved anywhere within the context using {{userContext}}. <br/> For example, if you want to offer a discount of 35%, you can store it as a string variable and utilize {{userContext}} to retrieve this information within the context. <br/>Similarly, User context can be used to fetch and display data to the end user at any point in the conversation. It's important to note that only one User context can be used in a single conversation. |
-| Send initial user message | Sends the user messages from the conversation with the bot to the dynamic chat node before the flow control transitions to the dynamic chat node.                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Send message after chat ends | The last message sent to the user when the conversation ends with the dynamic chat node.                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-| Goal               | In this field, you describe the objective of the bot. To indicate the start of the context and instruct the bot to follow the given instructions, you enter **START CONTEXT**. Similarly, to indicate the end of the instructions, you enter **END CONTEXT**. <br/>You can define any desired actions for the node, such as greeting the user, collecting their information, verifying the entered details, and more. This allows you to tailor the behavior and actions of the node based on your specific needs.            |
-
+| User context       | User context allows you to store string values as variables, which can be retrieved anywhere within the context using `{{userContext}}`.<br/><br/>For example, if you want to offer a discount of 35%, you can store it as a string variable and use `{{userContext}}` to retrieve this information within the context.<br/> <br/>Similarly, User context can be used to fetch and display data to the end user at any point in the conversation. It is important to note that only one User context can be used in a single conversation.
+ |
+| Send initial user message | Sends the user messages from the conversation with the bot to the dynamic chat node before the flow control transitions to the dynamic chat node.|
+| Send message after chat ends | The last message sent to the user when the conversation ends with the dynamic chat node. |
+| Goal     | Describe the objective of the bot. To indicate the start of the context and instruct the bot to follow the given instructions, you enter **START CONTEXT**. Similarly, to indicate the end of the instructions, you enter **END CONTEXT**. <br/>You can define any desired actions for the node, such as greeting the user, collecting their information, verifying the entered details, and more. This allows you to tailor the behavior and actions of the node based on your specific needs. |
 
 
  **Points to remember while describing a goal**
@@ -97,22 +124,22 @@ There are two ways by which you can enter your prompts. They are:
    * **Wrong** ❌: Extract the entities mentioned in the text below. Extract the following 4 entity types: company names, people names, specific topics and themes.
    * **Correct** ✅:Extract the important entities mentioned in the text below. First extract all company names, then extract all people names, then extract specific topics which fit the content and finally extract general overarching themes
 
-   Desired format:
-   Company names: <comma_separated_list_of_company_names>
-   People names: 
-   Specific topics:
-   General themes:
+     Desired format:
+     Company names:<comma_separated_list_of_company_names>
 
 6. **Instead of just saying what not to do, say what to do instead**
 
    * **Wrong** ❌: The following is a conversation between an Agent and a Customer. DO NOT ASK USERNAME OR PASSWORD. DO NOT REPEAT.
    * **Correct** ✅:The following is a conversation between an Agent and a Customer. The agent will attempt to diagnose the problem and suggest a solution, whilst refraining from asking any questions related to PII. Instead of asking for PII, such as username or password, refer the user to the help article www.samplewebsite.com/help/faq
 
-## Save and restore versions of prompt
 
-If you're working on a prompt and think your input is stable, you can save the current version as a backup. This way, you can easily go back to a previous version if needed. The published prompt will also have a separate tag, making it easy to restore to the last stable version.
+### Version management for prompts
 
-This action is possible only in Sandbox/Developement modes.
+If you are satisfied with your prompt and consider it stable, you can save the current version as a backup. This allows you to revert to a previous version if necessary. Additionally, the published prompt will have a separate tag, simplifying the process of restoring it to the last stable version.
+
+:::note
+Prompt versioning is possible only in Sandbox/Developement modes.
+:::
 
 1. Click the **floppy disk icon** to save the prompt.
 
@@ -125,133 +152,185 @@ This action is possible only in Sandbox/Developement modes.
 3. Choose the version of the prompt to be restored, and click **Restore**.
 
    <img src="https://i.imgur.com/rQ89iFe.png" alt="drawing" width="70%"/>
+    
+## Dynamic Chat settings
 
-## Input list
+Additional configurations in the dynamic chat node consist of various settings that fine-tune the behavior and functionality of the node. These configurations enables users to tailor the behavior of the dynamic chat node to specific use cases, optimize performance, and enhance the overall conversational experience. Here are some common additional configurations and their purposes:
 
-The **Input list** allows you to store the specific details of the input that need to be collected from the user.
 
- <img src="https://i.imgur.com/02bpLM1.png" alt="drawing" width="70%"/>
+### Input list
+
+The **Input list** allows you to store the specific details of the user that need to be collected from the user.
+ 
+To add input to the node, follow these steps: 
 
 1. Click **+ Add another input**.
 
+   <img src="https://i.imgur.com/02bpLM1.png" alt="drawing" width="70%"/>
+
+2. Enter the following details and click **Add**. 
+
    <img src="https://i.imgur.com/ZaWHvc1.png" alt="drawing" width="60%"/>
+   
+   
+a. **Input name**: Enter the name of the input to be collected.<br/>   
+b. **Store response in**: Choose or create a variable to store the collected information.<br/> 
+c. **Mark as optional**: Select this option to indicate if the collected information is optional.<br/> 
+d. **Mask input**: Select this option to mask the input collected from the user and this input will be masked in the conversation logs as well.<br/> 
+e. **Add input details**(optional): Enable this option to enter a sample format for the input to be collected.<br/> 
+f. **Regex for validation**: This option allows users to specify a regular expression pattern to validate and ensure that the input provided by the user matches the desired format. For example, if the expected input is a PAN (Permanent Account Number) number, users can define a regular expression pattern that accurately represents the format of a PAN number. This pattern serves as a rule to validate the user's input, ensuring it conforms to the expected structure.<br/> 
+g. **Examples of expected input**: Provide samples of expected input to match the defined format.
 
-2. In **Input name**, enter the name of the input to be collected.
-3. In **Store response in**, choose or create a variable in which the collected information should be stored.
-4. Select **Mark as optional** to indicate if the collected information is optional, allowing for the possibility of it being collected or not.
-5. Select **Mask input** to conceal the input collected from the user and this input will be concealed in the conversation logs as well.
-6. Enable **Add input details**(optional) to enter a sample format for the input to be collected.
-7. In **Regex for validation** specify the desired format for validation.
-8. In **Examples of expected input**, provide a sample of the expected input to align with the defined format.
-9. Click **Add**.
+### Failure setting
 
-## Failure setting
-
-In the **Failure setting** you can specify the messages to be shown when the bot takes too long to respond, set the desired response time and maximum limit for conversations.
+The Failure setting allows you to specify messages to be shown when the bot takes too long to respond, set response time, and define conversation limits. Under this setting, you can configure:
 
  <img src="https://i.imgur.com/CxgtfNa.png" alt="drawing" width="75%"/>
 
-Enable **Enable retries** for the bot to show a maximum of two failure messages after which it will switch to fallback flow.
+1. **Enable retries**: Enable this option to allow the bot to show a maximum of two failure messages before switching to the fallback flow.
+2. **Configure timeout time**: This option allows you to  set the exact duration after which the bot should time out.
+3. **Max limit of conversations**: Set the maximum number of conversations before moving to fallback if the conversation is still not over.
+4. **Restrict ill-formatted responses**: Enable this option to avoid any unformated response from LLMs. 
 
-In **Configure timeout time**, you can set the exact duration after which the bot should time out.
+#### Troubleshoot failure setting
 
-In **Max limit of conversations**, set the limit beyond which the bot will move to fallback if the conversation is still not over.
+You can easily determine the reasons behind failure/timeout messages through tags. 
+* If the tags are related to APIs or the LLM vendor, please reach out to the respective third-party vendor or check their status for assistance. 
+* If the tags are bot-level, you can manage the configurations within your node. And if the tags are platform-level, please contact us. 
 
-You can easily determine the reasons behind failure/timeout messages through tags. If the tags are related to APIs or the LLM vendor, please reach out to the respective third-party vendor or check their status for assistance. If the tags are bot-level, you can manage the configurations within your node. And if the tags are platform-level, please contact us. 
-
- ![](https://i.imgur.com/eLFqeIy.png)
+   ![](https://i.imgur.com/eLFqeIy.png)
 
 You can find these tags in two places:
 
 1. **Production bots and past conversations:** 
 
- Navigate to **Studio > Analysis > Conversation Logs**. 
+    i. Navigate to **Studio > Analysis > Conversation Logs**. 
  
- ![](https://i.imgur.com/9f4n0kp.png)
+      ![](https://imgur.com/5HuGmwv.png)
  
- You can also use the filter to search for conversations based on these tags and take appropriate actions.
+    ii. You can also use the filter to search for conversations based on these tags and take appropriate actions.
 
- ![](https://i.imgur.com/4UcH7qy.png)
+      ![](https://imgur.com/UVTqKaK.png)
 
 2. **Debug logs:**
 
- For continuous and replicable errors, you can find additional information in the debug logs within the Preview section, as well as in the conversation logs (highlighted in orange).
+   For continuous and replicable errors, you can find additional information in the debug logs within the *Preview* section, as well as in the conversation logs (highlighted in orange).
 
- <img src="https://i.imgur.com/hbmBquG.png" alt="drawing" width="35%"/>
-
+   <img src="https://i.imgur.com/hbmBquG.png" alt="drawing" width="35%"/>
+   
 ## Skill configuration
 
-In **Skill configuration**, you can call workflows (skills). Skill is a flow built using [Action nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) and [Logic nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to perform a certain action. You can build a skill to hit APIs, update databases, execute custom logic, etc. This extends the bot's capability of handling dynamic data.
+Skill configuration enables you to create workflows that can be linked to goals and invoked as needed within a conversation. These workflows operate in the background while control remains in the dynamic chat node.
 
-1. Go to **Build** > **Create flow** > **+ Create skill** and create a flow to execute certain actions. 
+Skills can perform various tasks such as calling functions, executing APIs, database operations, triggering user events, and more. This extends the bot's capability to handle dynamic data. The workflow can include logical branching and integration nodes.
 
-   <img src="https://i.imgur.com/rJQw0ny.png" alt="drawing" width="90%"/>
+Adding skills to the dynamic chat node enhances goal-based conversations. For instance, in a travel scenario, a skill workflow can call a weather API based on the provided location to fetch weather conditions, aiding in travel planning.
 
+To configure a Skill in the dynamic chat node, follow these steps:
 
-2. Once you're done, click **Skill configuration** and enable **Enable skill**.
+1. Go to **Studio** > **Build** > **Flows** > **Create flow** > **+ Create skill** and create a flow to execute certain actions. For more detailed information on how to create a Skill, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-skill). 
+
+   <img src="https://imgur.com/tnu6zWG.png" alt="drawing" width="100%"/>
+
+2. Click **Skill configuration** and enable **Enable skill**.
 
    <img src="https://i.imgur.com/LtNyMPH.png" alt="drawing" width="90%"/>
 
 3. Fill the following fields:
 
-   <img src="https://i.imgur.com/AB1XU3r.png" alt="drawing" width="90%"/>
+   <img src="https://i.imgur.com/AB1XU3r.png" alt="drawing" width="70%"/>
 
-* **Skill**: Choose the skill to be utilized by the Dynamic Chat node. 
-* **Input to skill**: Choose the variable that holds the input for the skill..
-* **Output from skill**: Choose the variable where you want to save the outcome of the skill.
+   a. **Skill**: Choose the skill to be utilized by the Dynamic Chat node.<br/> 
+   b. **Input to skill**: Choose the variable that holds the input for the skill.<br/> 
+   c. **Output from skill**: Choose the variable where you want to save the outcome of the skill.
 
-4. Click **+ Link more skill** to add more skills.
+4. Click **+ Link more skill** to add more skills.   
 
 ## Goal configuration setting
 
-In **Goal configuration setting**, you can set the temperature, maximum length and top P of the bot.
+This setting determines the creativity, randomness of the bot's responses, and the total number of tokens the model generates. 
+
+In this setting, you can configure the following fields:
 
  <img src="https://i.imgur.com/P9I2g2m.png" alt="drawing" width="80%"/>
 
-* **Temperature:** Temperature controls the randomness of generated text. Higher values result in more diverse outputs, while lower values make the output more focused.
-Example (high temperature, 1.0): The sky is blue, the grass is purple, and the trees dance with delight.
-Example (low temperature, 0.5): The sky is clear and the grass is green.
+#### Temperature:
 
-* **Maximum length:** Maximum length sets a limit on the length of generated text, preventing excessively long or incomplete outputs.
+The temperature setting controls the randomness of the generated text and ranges from 0 to 2. Higher temperature values result in more varied outputs, while lower values produce more focused responses.
+- A temperature of 0 makes the model deterministic and repetitive, favoring tokens with the highest probability.
+- Increasing the temperature leads to more creative and diverse outputs by incorporating tokens with lower probabilities.
+      
+For example, let's consider the statement "The weather today is ----". With a low temperature setting (close to 0), the model might consistently complete the prompt with a simple response like "sunny". However, as you increase the temperature, the responses become more varied and creative:
+
+- **Temperature 0.5**: Today's weather is sunny with a gentle breeze.
+- **Temperature 1**: Today's weather is sunny, but you expect rain in the afternoon.
+- **Temperature 1.5**: Today's weather is sunny, but don't be surprised if you encounter a sudden thunderstorm.
+- **Temperature 2.0**: The weather today is sunny, but it feels like the calm before the storm.
+
+#### Maximum Length
+
+The Maximum Length setting allows you to define the maximum number of tokens or characters in the model's response. This ensures that generated text remains concise and relevant to the context.
+
 Example (maximum length of 50 tokens): "The quick brown fox jumps over the lazy dog."
+
 Example (maximum length of 140 characters): "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 
-* **Top P:** Top P, or nucleus sampling, is a technique where a probability threshold is set, and only the most probable words surpassing this threshold are considered for text generation. It can be used in various scenarios with the following recommendations:
 
-   **Controlling creativity:** Lower the threshold (e.g., p = 0.1) for conservative and predictable responses. For example, generating technical documentation or providing factual information.
+#### Top P
 
-  **Promoting diversity:** Increase the threshold (e.g., p = 0.9) to encourage more varied and imaginative responses. For example, generating creative writing prompts or brainstorming ideas for fiction.
+The Top P setting determines the probability threshold for selecting the next token during text generation. Only tokens surpassing this threshold are considered for generating text.
 
-  **Balancing creativity and coherence:** Use a moderate threshold (e.g., p = 0.5) to strike a balance between controlled output and promoting creative alternatives. Example: Generating marketing taglines or social media posts.
+For example, if you set Top P to 0.3, the model selects tokens with a cumulative probability exceeding 30%. This setting is useful for filtering out less probable tokens and controlling the diversity of generated text.
+
+Consider the statement "India is ––" with the following probable tokens:
+1. a country (20%)
+2. is the largest democratic nation in the world (15%)
+3. is a country in southeast Asia (10%)
+4. is the seventh-largest country by area (5%)
+5. is a culturally diverse country (3%)
+
+With a Top P setting of 0.3, the model considers only the first two tokens (20% and 15%) and excludes the remaining tokens.
+
+**Recommendations**
+- **Controlling Creativity:** Lower the threshold (e.g., p = 0.1) for conservative and predictable responses, suitable for technical documentation or factual information.
+- **Promoting Diversity:** Increase the threshold (e.g., p = 0.9) to encourage more varied and imaginative responses, ideal for creative writing prompts or brainstorming.
+- **Balancing Creativity and Coherence:** Use a moderate threshold (e.g., p = 0.5) to strike a balance between controlled output and promoting creative alternatives, such as generating marketing taglines or social media posts.
+
   
-## Model configuration
+### Model Configuration
 
-Within the model configuration, you have the freedom to manually input your own custom GPT or LLM credentials into the bot. You can then use various models on different dynamic nodes within the same bot independently. This grants you the flexibility to conduct extensive experiments.
+In the model configuration, you have the flexibility to manually input your custom GPT or LLM credentials into the bot. This enables you to use different models on various dynamic nodes within the same bot independently. This flexibility allows you to conduct extensive experiments and tailor your bot's responses to specific contexts.
+
+For detailed instructions on adding the LLM account, refer to this [documentation](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/llm#configure-llm-in-yellowai).
 
 <img src="https://i.imgur.com/x3N9gOh.png" alt="drawing" width="70%"/>
 
-To add custom LLM,
+
+To add custom LLM, follow these steps:
 
 1. Click **+ Add account**.
 
-<img src="https://i.imgur.com/ByrrXBQ.png" alt="drawing" width="70%%"/>
+   <img src="https://i.imgur.com/ByrrXBQ.png" alt="drawing" width="70%%"/>
 
-2. Fill in the following fields:
+* You will be redirected to **LLM** in the Integrations section.
 
-* **Give account name:** Provide a name to your LLM account.
-* **LLM Provider:** Choose your LLM provider.
+2. In **Account name**, provide a name to your LLM account.
+3. In **LLM Provider**, choose your LLM provider.
+4. In **API key**, enter the API Key from the endpoint of your GPT 3.5 or GPT.
 
-   ![](https://i.imgur.com/UXsaPcu.png)
+   <img src="https://imgur.com/VUKmuHc.png" alt="drawing" width="70%%"/>
 
-3. Click **Connect**.
-4. Then go to the node > **Model configuration** > choose **Model**.
+5. Click **Connect**.
+6. Go back to the node > **Model configuration** > choose **Model**.
 
- <img src="https://i.imgur.com/A5sQmyZ.png" alt="drawing" width="70%%"/>
+    <img src="https://i.imgur.com/A5sQmyZ.png" alt="drawing" width="70%%"/>
+    
 -----
 
-## Voice configuration
+## Voice Configuration
 
-Voice configuration lets you create interactive voice-enabled interactions, further enhancing the conversational capabilities of your bot.
+Voice configuration enables you to create interactive voice-enabled interactions, enhancing the conversational capabilities of your bot.
+
 
   <img src="https://i.imgur.com/m7mnIM3.png" alt="drawing" width="70%%"/>
 
@@ -259,15 +338,12 @@ Voice configuration lets you create interactive voice-enabled interactions, furt
 **Acknowledgment Message** field will soon be removed from the UI.
 :::
 
-Fill in the following fields:
+Configure the following fields:
 
-| Feature         | Description                                                                                                            |
-|-----------------|------------------------------------------------------------------------------------------------------------------------|
-| Wait Music      | Upload music to play while the bot generates a response. Music must be in MP3 or WAV format, with a max size of 15 MB. |
-| Preview Audio   | Review the uploaded audio file, adjust volume and playback speed, and listen to a preview before finalizing settings.  |
+1. **Wait Music**: Upload music to play while the bot generates a response. Music must be in MP3 or WAV format, with a maximum size of 15 MB.
+2. **Preview Audio**: Review the uploaded audio file, adjust volume and playback speed, and listen to a preview before finalizing settings.
 
-
- <img src="https://i.imgur.com/1gy4RKn.png" alt="drawing" width="100%%"/>
+    <img src="https://i.imgur.com/1gy4RKn.png" alt="drawing" width="100%%"/>
 
 
 

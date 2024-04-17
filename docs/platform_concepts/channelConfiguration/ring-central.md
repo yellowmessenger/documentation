@@ -163,7 +163,7 @@ You need to paste the respective channel's script in the HTML file of your websi
 
 After connecting your IVA Professional account with RingCX, you need to design the flow based on how you want the bot to handle the user chats in RingCX account using Yellow's AI capabilities.
 
-1. Login to you [IVA Professional account](cloud.yellow.ai) and go to **Studio** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-flow-from-scratch).  
+1. Login to you [IVA Professional account](cloud.yellow.ai) and go to **Studio** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#manually-create-a-flow).  
 2. Include a [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) to the **Start** node.
 
    ![](https://i.imgur.com/CPo5GDt.png)
