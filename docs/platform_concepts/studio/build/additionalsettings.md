@@ -1,7 +1,7 @@
 ---
 title: Bot level settings
 sidebar_label: Bot level settings
-tags: [export bot, bot template, welcome node, fallback node]
+tags: [conversation settings]
 ---
 
 Conversation settings enable you to customize your bot's conversational behavior. These settings can be applied to specific nodes or flows within your bot, providing tailored configurations to meet your needs. 
