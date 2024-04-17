@@ -388,7 +388,19 @@ module.exports = {
   
 // Email automation doc is added here without categorization
 
-  "platform_concepts/emailautomation",
+
+  {
+    type: "category",
+    label: "Email automation",
+    link: {type: 'doc', id: 'platform_concepts/emailAutomation/emailautomation'},
+    collapsed: true,
+    items: [
+      "platform_concepts/emailAutomation/setupemailautomation",
+      "platform_concepts/emailAutomation/bestpractices",
+    ],
+  },
+
+
 
 
 

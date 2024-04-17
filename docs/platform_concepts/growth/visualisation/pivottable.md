@@ -54,3 +54,30 @@ To pivot table (custom/default), follow these steps:
 If you want to change the existing summarization(group-by), you must create the pivot table again. 
 
 :::
+
+
+
+#### Add formula column 
+
+> Formula column can be applied for **Pivot table** visualisation. Adding formula column is not applicable for other visualisation chart types.
+
+
+Add custom formula columns to the pivoted table for further analysis. Click on **Actions > Add formula column**. Click **Apply** after adding your formula. 
+
+
+
+![image](https://imgur.com/iGT8RAP.png)
+
+
+
+
+:::info
+
+- Different visualizations can be applied to the pivoted table to represent data graphically. Click **Visualisation**, select a Visualisation and click **Apply**. 
+- Multiple formula columns can be added to the pivoted table.
+
+:::
+
+
+
+
