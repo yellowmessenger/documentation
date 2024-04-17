@@ -7,45 +7,63 @@ sidebar_label : BambooHR
 
 Yellow.ai Integration with Bamboo HR allows you to seamlessly connect your Bamboo HR service with the yellow.ai platform.
 
+This integration enables the bot to perform the following BambooHR actions:
+
+| Action |  Description |
+| -------- | -------- | 
+| Fetch Employee Information   | Fetches employee information using the employee ID.  |
+| Fetch Employee Time-Offs   | Fetches employee time-offs using employee ID, start date, and end date (date range in YYYY-MM-DD format).    |
+| Apply Time-Offs    | Time-off requests can be submitted by providing the necessary parameters (refer to [this doc](https://documentation.bamboohr.com/reference/time-off-add-a-time-off-request-1).    |
+| Update Time-Offs | Updates time-off requests using the time-off ID. It can also update notes and status. |
 
 
-## 1. Use Case
+
+
+
+
+## Integrating BambooHR with Yellow.ai
+
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
+
+
+
+To integrate yellow with Bamboo HR, follow the steps below: 
+
+
+1. Switch to the Development/Staging environment and go to **Extensions** > **Integrations** > **HR** > **Bamboo HR**. Alternatively, you can use the Search box to quickly find the required integration.
+
+   ![](https://i.imgur.com/5J240m4.png)
+
+
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
+
+3. Enter your account's **Subdomain**. You can find your subdomain in the URL of your Bamboo HR dashboard in this format: `https://your_subdomain.bamboohr.com/home`.
+
+4. Enter the **API key**. To generate the API Key, on BambooHR navigate to the account icon on the top right and cick on the **API Keys** option. Here you can generate your API Key.
+
+5. Click **Connect**.
+6. To connect another account, click +Add Account and proceed with the previous steps. You can add a maximum of 15 accounts.
+
+
+## Accessing BambooHR Functions via bot conversation
 In this integration, you can use integration nodes configured for Bamboo HR. Firstly you'll have to select Bamboo HR from the options in Integrations and add the necessary parameters. After that, you can use their action nodes in the required flows.
+
+1. Go to Studio and create a flow that suits your use case.
+2. Navigate to the specific point in the conversation where you want to add the node. Click Add Node, then go to **Integrations** and select **Bamboo HR**.
+
+   ![](https://i.imgur.com/qT6hqKI.png)
+
+   <img src="https://i.imgur.com/iyEvdW3.png" width="60%"/>
 
 :::note
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
 :::
 
 
-| Node Name |  Functionality |
+| Action |  Description |
 | -------- | -------- | 
-| Fetch Employee Information   | Employee information can be fetched by providing the employee ID.  |
-|    Fetch Employee Time-Offs   | Employee time-offs can be fetched using employee ID, start date, and end date (date range in YYYY-MM-DD format).    |
-| Apply Time-Offs    | Time-off requests can be submitted by providing the necessary parameters (refer to [this doc](https://documentation.bamboohr.com/reference/time-off-add-a-time-off-request-1).    |
-| Update Time-Offs | Time-off requests can be updated by providing a time-off ID. You can update notes and status. |
+| Fetch Employee Information   | Fetches employee information using the providedq employee ID.  |
+| Fetch Employee Time-Offs   | Fetches employee time-offs using employee ID, start date, and end date (date range in YYYY-MM-DD format).    |
+| Apply Time-Offs    | Submits time-off requests using the required parameters (refer to [this doc](https://documentation.bamboohr.com/reference/time-off-add-a-time-off-request-1).    |
+| Update Time-Offs | Updates time-off requests using the provided time-off ID. You can also update notes and status. |
 
-
-![](https://cdn.yellowmessenger.com/NzzrjkOBWe8L1669034213426.png)
-
-
-## 2. Configuration
-
-To integrate yellow with Bamboo HR, follow the steps below: 
-
-
-1. Navigate to **Integrations** and search for Bamboo HR under **All integrations** or under **HR**.
-
-![](https://cdn.yellowmessenger.com/co5MChEIFkcs1669034212905.png)
-
-2. You can find your subdomain in the URL of your Bamboo HR dashboard in this format ```https://your_subdomain.bamboohr.com/home```.
-
-3. For API Key, navigate to the account icon in the top right. In the dropdown, you'll find the 'API Keys' option. There you can create your API Key.
-
-4. Click **Connect**.
-5. :::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
- 

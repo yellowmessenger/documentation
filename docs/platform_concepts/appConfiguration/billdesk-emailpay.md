@@ -4,9 +4,7 @@ sidebar_label : BillDesk EmailPay
 ---
 
 
-# BillDesk EmailPay
-
-Integrate your Yellow.ai account with [BillDesk EmailPay](https://www.billdesk.com/web/) to receive payments from your users. This integration allows the following,
+The [BillDesk EmailPay](https://www.billdesk.com/web/) integration enables your bot to manage the following BillDesk functions.
 
 1. Generate a payment link to receive payments
 2. Check the status of the payments and recieve notifications on the same.
