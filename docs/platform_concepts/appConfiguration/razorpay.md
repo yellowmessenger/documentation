@@ -1,9 +1,9 @@
 ---
-title : Razorpay
+title : Razorpay integration
 sidebar_label : Razorpay
 ---
 
-You can integrate the Yellow.ai platform with your [Razorpay ](https://razorpay.com/)account to receive payments from your end users. Along with receiving payments, you can also perform the following actions:
+You can integrate your Yellow.ai platform with your Razorpay account, enabling you to accept payments from your end users. Additionally, this integration allows you to perform various other actions, including:
 
 * Generate a payment link and receive the status (success/failure) of the payment.
 * Generate a payment link to receive partial payments and receive the status (success/failure) of the payments.
@@ -18,101 +18,87 @@ Connect your Yellow.ai platform with your Razorpay account by following the belo
 
 1. Log into your [Razorpay account](https://dashboard.razorpay.com/signin?screen=sign_in&utm_medium=website&utm_source=direct) and select the mode (Test/Live) for which you want to generate the API key.
 
- ![](https://i.imgur.com/74zbT2o.png)
+    ![](https://i.imgur.com/74zbT2o.png)
 
 
-* **Test Mode:** The test mode is a simulation mode in which you can test your integration flow. Your customers cannot make payments in this mode. Check out this [video](https://www.youtube.com/watch?v=Xwiv6zSVVCM) to know more.
-* **Live Mode:** When your integration is complete, switch to **Live** mode and generate live mode API keys. Replace test mode keys with live mode keys in the integration to accept payments from customers.Check out this [video](https://www.youtube.com/watch?v=30REpNtYSak) to know more.
+* **Test Mode**: The test mode is a simulation mode in which you can test your integration flow. Your customers cannot make payments in this mode. Check out this [video](https://www.youtube.com/watch?v=Xwiv6zSVVCM) to know more.
+* **Live Mode**: When your integration is complete, switch to **Live** mode and generate live mode API keys. Replace test mode keys with live mode keys in the integration to accept payments from customers.Check out this [video](https://www.youtube.com/watch?v=30REpNtYSak) to know more.
 
-**To generate API keys for a  mode**,
+2. To generate API keys for a specific mode**, navigate to **Settings** > **API Keys** > **Generate Key** to generate key for the selected mode. 
 
- Navigate to **Settings** > **API Keys** > **Generate Key** to generate key for the selected mode. 
+    ![](https://i.imgur.com/vFHopPF.png)
 
- ![](https://i.imgur.com/vFHopPF.png)
+3. The **Key Id** and **Key Secret** will appear on the following page. Downalod them to use in your Yellow.ai platform.
 
-The **Key Id** and **Key Secret** will appear on the following page. Downalod them to use in your Yellow.ai platform.
-
- ![](https://i.imgur.com/7RPBlMe.png)
+    ![](https://i.imgur.com/7RPBlMe.png)
 
 
-### 1.2 Enable the Integration in Yellow.ai's Integrations Module.
+### 1.2 Integrate Razorpay with yellow.ai platform
+
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
 
 
-1. Login to [cloud.yellow.ai](https://cloud.yellow.ai/auth/login), go to the **Overview Switcher** and click **Integrations**.
+To connect your Stripe account with Yellow.ai, follow these steps:
 
- ![](https://i.imgur.com/x4dJgOZ.png)
+1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment**  > **Razorpay**. You can also search for **Razorpay** in the search box.
 
 
-3. Look for **Razorpay** in the search box or click the **Payment** category on the left navigation bar and then click **Razorpay**.
+    ![](https://i.imgur.com/MkSznUm.png)
 
- ![](https://i.imgur.com/TMzGetO.png)
 
-5. Click **+ Add account** and fill in the fields. Click **Connect** when you're done.
-6. If you have multiple accounts, follow the above mentioned steps to add each of them.
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
+3. In **Key ID** and **Key secret**, enter the respective values that you downloaded using the steps mentioned in the previous section.
+4. CLick **Connect**.
+5. To add another account, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
- 
 ### 1.3 Configure webhook URL in Razorpay Dashboard 
 
-To receive events, you need to configure the webhook URL in the **Razorpay Dashboard**.
+The Webhook URL serves as a callback URL where Razorpay can send notifications or data updates to your bot. 
 
-Copy the webhook url and the api key mentioned in the **Instructions** section of the Razorpay Integration Card. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.
+1. Copy the webhook URL and the API key mentioned in the **Instructions** section of the Razorpay Integration Card. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.  (r1 = MEA, r2 = Jakarta, r3 = Singapore, r4= USA, r5 = Europe)
+<br/>For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is MEA. If the bot belongs to India, you can use origin domain itself.
 
-r1 = MEA
-r2 = Jakarta
-r4= USA
-r5 = Europe
-r3 = Singapore
+2. Log into the [Razorpay Dashboard](https://dashboard.razorpay.com/#/access/signin) and navigate to **Settings** → **Webhooks**.
+3. Click **+ Add New Webhook** on the right corner.
 
-For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is MEA. If the bot belongs to India, you can use origin domain itself.
+   ![](https://i.imgur.com/aE5zgwH.png)
 
-### 1.4 Set up webhooks on RazorPay dashboard
+4. In the **Webhook Setup** pop-up, enter the URL in which you'd like to receive the webhook payload when an event is triggered. We recommend using a **HTTPS URL**. Ensure you enable all the events shown in the screenshot below.
 
-1. Log into the [Razorpay Dashboard](https://dashboard.razorpay.com/#/access/signin) and navigate to **Settings** → **Webhooks**.
-2. Click **+ Add New Webhook** on the right corner.
-
- ![](https://i.imgur.com/aE5zgwH.png)
-
-3. In the **Webhook Setup** pop-up, enter the URL in which you'd like to receive the webhook payload when an event is triggered. We recommend using a **HTTPS URL**. Ensure you enable all the events shown in the screenshot below.
-
- <img src="https://i.imgur.com/uDShz45.png" alt="drawing" width="80%"/>
- <img src="https://i.imgur.com/Zfsj8ub.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/uDShz45.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/Zfsj8ub.png" alt="drawing" width="80%"/>
 
 :::note
 You can set upto 10 URLs to receive Webhook notifications. Webhooks can only be delivered to public URLs. If you attempt to save a localhost endpoint as part of a webhook setup, you will encounter an error.
 :::
 
-4. Enter a **Secret** for the webhook endpoint. This secret will be used to validate whether the webhook is from **RazorPay**. Do not expose this secret publicly. Click [here](https://razorpay.com/docs/webhooks/validate-test/) to know more validating webhooks. 
-5. In the **Alert Email** field, enter the email address to which the notifications should be sent in case there's a webhook failure.
-6. Select the required events from the list of **Active Events**.
-7. Click **Create Webhook**. After you set a webhook, it appears on the list of webhooks.
+5. Enter a **Secret** for the webhook endpoint. This secret will be used to validate whether the webhook is from **RazorPay**. Do not expose this secret publicly. Click [here](https://razorpay.com/docs/webhooks/validate-test/) to know more validating webhooks. 
+6. In the **Alert Email** field, enter the email address to which the notifications should be sent in case there's a webhook failure.
+7. Select the required events from the list of **Active Events**.
+8. Click **Create Webhook**. After you set a webhook, it appears on the list of webhooks.
 
 :::note
 To modify the webhook further, you can select the webhook and click **Edit**. You can refer this [video](https://www.youtube.com/watch?v=qojkh8Vbnek) as well.
 :::
 
-### 1.5 Receive events in Yellow.ai
+## Enable Razorpay events in your bot
 
-1. Login to cloud.yellow.ai and click **Studio**. 
-2. Click **Event** from the left navigation bar and then choose **Integrations**.
-3. Activate the event **Razorpay Payment Status** by clicking the three dots next to it.
+Enable Razorpay events in your bot to trigger flows based on event occurrences, allowing seamless integration of payment processes with bot functionalities.
 
- ![](https://i.imgur.com/fK1Eoii.png)
+1. In Development/Staging environment, go to **Studio** > **Event** > **Integrations**.
+2. Activate the event, **Razorpay Payment Status**. Click on the more options icon and select *Activate*. If there are multiple accounts, you need to activate for each account separately. 
 
-4. A journey with its trigger point as this event should be created in **Studio**. Based on the received event data, an appropriate message will be displayed to the end user.
+ ![](https://i.imgur.com/RohTZsg.png)
 
- ![](https://i.imgur.com/Bs6iIH8.png)
+3. A journey with its trigger point as this event should be created in **Studio**. Based on the received event data, an appropriate message will be displayed to the end user.
+
+   <img src="https://i.imgur.com/Bs6iIH8.png" width="80%"/>
 
 :::info
 If you have added multiple accounts in your platform, enable events for each of those accounts.
 :::
 
-## 2. Use-cases
+## Generate Razorpay payment Link from bot conversation
 
 The following are the use-cases that are supported in this integration.
 
@@ -120,37 +106,39 @@ The following are the use-cases that are supported in this integration.
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
 :::
 
-### 2.1 Generate Payment Link
 
-1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+1. Go to Development/Staging environment and navigate to **Studio** > **Build** > Select the flow where you want to Generate payment link.
 
- <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
+    <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
-2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
+2. Click **Add node** > **Integrations** > **Razorpay payment gateway**.
+In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 
- <img src="https://i.imgur.com/wYYsSxX.png" alt="drawing" width="80%"/>
 
-3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
+3. In the first drop-down choose **Generate Payment Link**.
 
-| Field name | Sample value| Data type |Description |
-| -------- | -------- | -------- |----|
-| Text     | Text     | Text     |
-Amount|100|String|The amount that should be the payment link. This must be in the smallest unit of the currency. For example, if you want to receive a payment of ₹299.95, you must enter the value 29995.|
-|Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
-|Description|Test|String|A brief description of the payment link.|
-IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
-|CustomerObject|{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },|Object|Customer details|
-|Notes|{ "policy_name": "Jeevan Bima" }|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
-|NotifyOptions|{ "email": true, "sms": true }|object|Defines who handles the payment link notifications.|
-CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a redirect URL to the payment link. Once a customer completes the payment, they will be redirected to the specified URL.|
-|CallbackMethod|get|String| If callback_url parameter is passed, callback_method must be passed with the value get.|
-|EnableRemindertrue||Boolean|This is used to send reminders for the payment link. Possible values:<br/> **true:** To send reminders.<br/> **false:** To disable reminders.<br/>
-|CustomOptions | Reference details|Object|Custom options|
+   <img src="https://i.imgur.com/wYYsSxX.png" alt="drawing" width="80%"/>
 
-4. The **Generate Payment Link Integration Action** Node has two outcomes, success or failure. Based on the success/failure of the execution of the **Integration Action Node**, the flow will proceed to **success** or **fallback** branches respectively.
+4. Configure all the required fields. The table below contains sample values, data types, and descriptions for these fields.
 
-**Sample response in case of success:**
-```js
+  | Field name | Sample value| Data type |Description |
+  | -------- | -------- | -------- |----|
+  | Text     | Text     | Text     |
+  Amount|100|String|The amount that should be the payment link. This must be in the smallest unit of the currency. For example, if you want to receive a payment of ₹299.95, you must enter the value 29995.|
+  |Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
+  |Description|Test|String|A brief description of the payment link.|
+  IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
+  |CustomerObject|{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },|Object|Customer details|
+  |Notes|{ "policy_name": "Jeevan Bima" }|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
+  |NotifyOptions|{ "email": true, "sms": true }|object|Defines who handles the payment link notifications.|
+  CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a redirect URL to the payment link. Once a customer completes the payment, they will be redirected to the specified URL.|
+  |CallbackMethod|get|String| If callback_url parameter is passed, callback_method must be passed with the value get.|
+  |EnableRemindertrue||Boolean|This is used to send reminders for the payment link. Possible values:<br/> **true:** To send reminders.<br/> **false:** To disable reminders.<br/>
+  |CustomOptions | Reference details|Object|Custom options|
+
+
+**Sample success response:**
+```json
 {
   "accept_partial": false,
   "amount": 1000,
@@ -188,7 +176,8 @@ CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a re
 }
 ```
 **Sample response in case of fallback:**
-```js
+
+```json
 {
   "error": {
     "code": "BAD_REQUEST_ERROR",
@@ -234,8 +223,7 @@ app.executeIntegrationAction({
    app.log(err, '||Error in action node||')
 })
 ```
-:::note
-### Payment status event payload
+#### Event payload for Payment status
 ```js
 {
           "id": "rfnd_FS8TWyPrCsa0OB",
@@ -258,38 +246,39 @@ app.executeIntegrationAction({
         }
 
 ```
-:::
-### 2.2 Generate Payment Link for Partial Payments
+
+
+### Generate Payment Link for Partial Payments
 
 1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 
- <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
 2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
 
- <img src="https://i.imgur.com/tMcsRTb.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/tMcsRTb.png" alt="drawing" width="80%"/>
 
 3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
 
-| Field name | Sample value| Data type |Description |
-| -------- | -------- | -------- |----|
-| Text     | Text     | Text     |
-Amount|100|String|The amount that should be the payment link. This must be in the smallest unit of the currency. For example, if you want to receive a payment of ₹299.95, you must enter the value 29995.|
-|Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
-|Description|Test|String|A brief description of the payment link.|
-IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
-|CustomerObject|{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },|Object|Customer details|
-|Notes|{ "policy_name": "Jeevan Bima" }|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
-|NotifyOptions|{ "email": true, "sms": true }|object|Defines who handles the payment link notifications.|
-CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a redirect URL to the payment link. Once a customer completes the payment, they will be redirected to the specified URL.|
-|CallbackMethod|get|String| If callback_url parameter is passed, callback_method must be passed with the value get.|
-|EnableRemindertrue||Boolean|This is used to send reminders for the payment link. Possible values:<br/> **true:** To send reminders.<br/> **false:** To disable reminders.<br/>
-|CustomOptions | Reference details|Object|Custom options|
-|isPartialPaymentAccepted|true|Boolean|Indicates whether customers can make partial payments using the payment link. <br/> **Possible values:** <br/> **true:** Customer can make partial payments.<br/>**false (default):** Customer cannot make partial payments.<br/>|
+  | Field name | Sample value| Data type |Description |
+  | -------- | -------- | -------- |----|
+  | Text     | Text     | Text     |
+  Amount|100|String|The amount that should be the payment link. This must be in the smallest unit of the currency. For example, if you want to receive a payment of ₹299.95, you must enter the value 29995.|
+  |Currency|INR|String|Default is **INR**, we also accept payments in [international currencies](https://razorpay.com/docs/payments/payments/international-payments/#supported-currencies).|
+  |Description|Test|String|A brief description of the payment link.|
+  IsUPILinkedEnabled|true|Boolean| Indicates if the payment link is a UPI payment link.<br/> **true:** A UPI payment link has been created.<br/> **false:** It is a standard payment link and not a UPI payment link. <br/>|
+  |CustomerObject|{ "contact": "+919999999999", "email": "gaurav.kumar@example.com", "name": "Gaurav Kumar" },|Object|Customer details|
+  |Notes|{ "policy_name": "Jeevan Bima" }|Object|Set of key-value pairs that can be used to store additional information. You can enter a maximum of 15 key-value pairs, with each value having a maximum limit of 256 characters.|
+  |NotifyOptions|{ "email": true, "sms": true }|object|Defines who handles the payment link notifications.|
+  CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a redirect URL to the payment link. Once a customer completes the payment, they will be redirected to the specified URL.|
+  |CallbackMethod|get|String| If callback_url parameter is passed, callback_method must be passed with the value get.|
+  |EnableRemindertrue||Boolean|This is used to send reminders for the payment link. Possible values:<br/> **true:** To send reminders.<br/> **false:** To disable reminders.<br/>
+  |CustomOptions | Reference details|Object|Custom options|
+  |isPartialPaymentAccepted|true|Boolean|Indicates whether customers can make partial payments using the payment link. <br/> **Possible values:** <br/> **true:** Customer can make partial payments.<br/>**false (default):** Customer cannot make partial payments.<br/>|
 
 **Sample response in case of success:**
 
-```js
+```json
 
 {
   "accept_partial": false,
@@ -329,7 +318,7 @@ CallbackUrl |https://example-callback-url.com/ |String|if specified it adds a re
 ```
 
 **Sample response in case of fallback:**
-```js
+```json
 {
   "error": {
     "code": "BAD_REQUEST_ERROR",
@@ -377,24 +366,24 @@ app.executeIntegrationAction({
 })
 
 ```
-### 2.3 Intiate refund
+### Intiate refund
 
 1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 
- <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
 2. After clicking **Razorpay**,an **Integration Action Node** will be added to the flow builder. When you click that node, you will see all use-cases of this integration in a drop-down. Choose **Generate Payment Link** from them.
 
- <img src="https://i.imgur.com/WxXY6fZ.png" alt="drawing" width="80%"/>
+   <img src="https://i.imgur.com/WxXY6fZ.png" alt="drawing" width="80%"/>
 
 3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value,data type and description for all these fields.
 
-| Field Name | Sample value | Data type |Description|
-| -------- | -------- | -------- |---|
-| Amount|100|String| The amount to be refunded (in the smallest unit of currency).  For example, refund in INR, a value of 100 means 100 paise (equivalent to ₹1).|
-|paymentId|pay_FgR9UMzgmKDJRi|String|The unique identifier of the payment for which a refund is initiated|
-refundType|normal|String|Speed at which the refund should be processed. <br/> **Possible values:**<br/>**normal:** Indicates that the refund will be processed at a normal speed i.e. within 5-7 working days.<br/>**optimum:** Indicates that the refund will be processed at an optimal speed based on Razorpay's internal fund transfer logic.<br/> If the refund has to be processed instantly, **Razorpay** will do so irrespective of the payment method.<br/> If an instant refund is not possible, Razorpay will initiate a refund  at the normal speed. For example, in case of payments made using debit cards, netbanking or unsupported credit cards.
-notes|{}|object|Key-value store for storing your reference data. A maximum of 15 key-value pairs can be included.|
+  | Field Name | Sample value | Data type |Description|
+  | -------- | -------- | -------- |---|
+  | Amount|100|String| The amount to be refunded (in the smallest unit of currency).  For example, refund in INR, a value of 100 means 100 paise (equivalent to ₹1).|
+  |paymentId|pay_FgR9UMzgmKDJRi|String|The unique identifier of the payment for which a refund is initiated|
+  refundType|normal|String|Speed at which the refund should be processed. <br/> **Possible values:**<br/>**normal:** Indicates that the refund will be processed at a normal speed i.e. within 5-7 working days.<br/>**optimum:** Indicates that the refund will be processed at an optimal speed based on Razorpay's internal fund transfer logic.<br/> If the refund has to be processed instantly, **Razorpay** will do so irrespective of the payment method.<br/> If an instant refund is not possible, Razorpay will initiate a refund  at the normal speed. For example, in case of payments made using debit cards, netbanking or unsupported credit cards.
+  notes|{}|object|Key-value store for storing your reference data. A maximum of 15 key-value pairs can be included.|
 
 4. The **Generate Payment Link Integration Action** Node has two outcomes, success or failure. Based on the success/failure of the execution of the **Integration Action Node**, the flow will proceed to **success** or **fallback** branches respectively.
 
