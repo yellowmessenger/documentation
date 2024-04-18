@@ -9,51 +9,45 @@ The [BillDesk EmailPay](https://www.billdesk.com/web/) integration enables your 
 1. Generate a payment link to receive payments
 2. Check the status of the payments and recieve notifications on the same.
 
-## 1. Connect BillDesk EmailPay with Yellow.ai
+## 1. Integrate BillDesk EmailPay with Yellow.ai
 
 To connect your BillDesk account with yellow.ai, follow these steps:
 
-### 1.1 Enable the integration in yellow.ai
+### 1.1 Connect BillDesk EmailPayto Yellow.ai
 
-1. Go to cloud.yellow.ai and click **Integrations** from the module switcher.
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
 
-![](https://i.imgur.com/sOirlTU.png)
+1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment** > **BillDesk EmailPay**. You can also use the Search box to easily find the required integration.
 
-
-2. Search for **Billdesk EmailPay** or choose the category named Payment from the left navigation bar and click **Billdesk EmailPay**.
-
-![](https://i.imgur.com/eILS2u2.png)
+   ![](https://i.imgur.com/2eX2GdQ.png)
 
 
-3. Fill in the following fields. Reach out to the **BillDesk** team for this info.
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 
-* Message code
-* Secret key
-* Campaign ID
-* Campaign code
-* BillDesk base URL(this is already populated)
+   ![](https://i.imgur.com/p68t355.png)
 
-4. If you have multiple accounts, follow the above mentioned steps to add each of them.
+3. Enter these details from BillDesk - **Key ID**, **Client ID**, **Merchant ID**, **BillDesk public key CDN URL**, and **API base URL**.
 
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
+4. Click **Connect**.
 
-### 1.2 Configure webhook URL in Billdesk dashboard.
+5. If you have multiple accounts, click **+ Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
 
-1. Copy the webhook URL mentioned in the **Instructions to connect** section of the **Billdesk EmailPay Integration Card** (previous screenshot). 
+
+### 1.2 Configure webhook URL in Billdesk dashboard
+
+1. Copy the webhook URL mentioned in the **Instructions to connect** section of the **Billdesk EmailPay Integration Card**.
+
+   ![](https://i.imgur.com/i9WSqTv.png)
+
 2. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same.
 
-* r1 - MEA 
-* r2 - Jakarta 
-* r4 - USA 
-* r5 - Europe 
-* r3 - Singapore
+   * r1 - MEA 
+   * r2 - Jakarta 
+   * r4 - USA 
+   * r5 - Europe 
+   * r3 - Singapore
 
-For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is MEA. If the bot belongs to India, you can use origin domain itself.
+   For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is MEA. If the bot belongs to India, you can use origin domain itself.
 
 3. Share the webhook URL to **BillDesk SPOC**. They will configure the webhook at their end.
 
@@ -73,23 +67,25 @@ Please specify the **Min length**, **Max length** and the **data type**(numeric/
 
 ### 1.4 Receive events in Yellow.ai
 
-1. Login to cloud.yellow.ai and click **Studio**.
-2. Click **Event** from the left navigation bar and then choose **Integrations**.
-3. Activate the event **Billdesk EmailPay Payment Status** by clicking the three dots next to it.
+To receive events and trigger flows based on events, you need to enable that specific event in your bot settings.
 
-![](https://i.imgur.com/T0fRth0.png)
+1. In the Development/Staging environment, go to **Studio** > **Event**.
+2. In **Integrations** > **Billdesk EmailPay Payment Status**.
+3. Click on the three dots icon and click **Activate**.
+
+   ![](https://i.imgur.com/JioRKF0.pngg)
 
 
-4. A journey with its trigger point as this event should be created in **Studio**. Based on the received event data, an appropriate message will be displayed to the end user.
+4. You can trigger a flow based on this event or perform a specific action (for example, display an appropriate message to the end user).
 
-![](https://i.imgur.com/Bmi1ELe.png)
+   <img src="https://i.imgur.com/Bmi1ELe.png" width="60%"/>
 
 :::info
-If you have added multiple accounts in your platform, enable events for each of those accounts.
+If you have added multiple accounts in your platform, you need to enable events for each account.
 :::
 
 
-## 2. Use-case
+## 2. Generate Payment Link through bot conversation
 
 You can generate payment links for your customers to pay.
 
@@ -97,20 +93,18 @@ You can generate payment links for your customers to pay.
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
 :::
 
-### 2.1 Generate Payment Link
 
 1. In the Studio flow builder, select the **Integrations** node and click **Billdesk EmailPay** from the list of integrations that have been enabled for that bot.
 
-![](https://i.imgur.com/kHnNZrh.png)
+   <img src="https://i.imgur.com/kHnNZrh.png" width="80%"/>
 
 
 2. After clicking **Billdesk EmailPay**, an **Integration Action Node** will be added to the flow builder. Click that node and select **Generate Payment Link** from them.
 
-![](https://i.imgur.com/PCSXyiW.png)
+   <img src="https://i.imgur.com/PCSXyiW.png" width="70%"/>
 
 
 3. Fill in all the mandatory fields. The below-mentioned table consists of the sample value, data type and description for all these fields.
-
 
 
 | Field Name | Sample Value | Data type |Description|
@@ -124,17 +118,17 @@ When multiple accounts are added, select the appropriate account for each node, 
 4. The **Generate Payment Link** Integration Action Node has two outcomes, success or failure. If the payment link is generated successfully, the **Integration Action Node** returns a **Success** response code as shown below.
 
 
-```
+```json
 {
       "url": "https://uat.billdesk.com/MercOnline/URLRenderer/C7g",
        "status": "success"
       }
 
-
 ```
+
 If generating payment link fails, the **Integration Action Node** returns a **Failure** response code as shown below.
 
-```
+```json
 {
 "errorCode": "<<Error Code>>"
 "errorMessage": "<<Error Message/Description>>"

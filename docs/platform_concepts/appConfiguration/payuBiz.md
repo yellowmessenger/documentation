@@ -4,9 +4,9 @@ sidebar_label : PayU Business
 ---
 
 
-Integrate your Yellow.ai platform with [PayU ](https://payu.in/about-us?_ga=2.219146714.274874686.1677657469-282964387.1677657469)account to receive payments from your users through PayU. You can generate payment links, UPI intents for whatsapp pay and receive notifications on the success/failure of the payments.
+[PayU Business integration](https://payu.in/about-us?_ga=2.219146714.274874686.1677657469-282964387.1677657469) enables your bot to receive PayU payments from your users. You can generate payment links, UPI intents for whatsapp pay and receive notifications on the success/failure of the payments.
 
-## 1. Connect PayU with Yellow.ai
+## 1. Integrating PayU with Yellow.ai
 
 To connect your PayU account with yellow.ai, follow these steps:
 
@@ -19,47 +19,36 @@ You need to write to [PayUBiz team](mailto:integration@payu.in) for the API keys
 
 Enter the API keys in the **Client ID** field of Yellow.ai's integration module, which we will cover in the following section.
 
-### 1.2 Enable the integration in yellow.ai 
+### 1.2 Connect PayU Business to yellow.ai 
 
-1. Login to cloud.yellow.ai and click **Integrations**.
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
 
-![](https://i.imgur.com/RcDIdCN.png)
+1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment**  > **PayU Business**.
 
-
-2. Look for **PayU Business** in the search box or choose the **Payment** category and click **PayU Business**.
-![](https://i.imgur.com/zWeFVSs.png)
+   ![](https://i.imgur.com/WOrjMUu.png)
 
 
-3. Fill in the following fields:
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 
-* **Salt value:** Salt Value is used to create a unique hash for each transaction, which is then used to verify the authenticity of the transaction. The Salt Value is provided by PayU and should be kept confidential.
-* **Client ID:** Enter the **API** keys here.
-* **Payu base URL:** Payubase URL is used to send API requests to the PayU payment gateway for payment processing.
-* **Payu UPI base URL:** Payu UPI base URL is used to send API requests to the PayU UPI payment gateway for UPI payment processing.
+3. In **Salt value**, enter the unique hash for each transaction, which is then used to verify the authenticity of the transaction. The Salt Value is provided by PayU and should be kept confidential.
+4. Enter the **Client ID**, enter your PayU account's client ID.
+5. In **Payu base URL**, enter the base URL to send API requests to the PayU payment gateway for payment processing.
+6. In **Payu UPI base URL**, enter the base URL of the PayU UPI to send API requests to the PayU UPI payment gateway for UPI payment processing.
 
+::note
 Payu base URL and and Payu UPI base URL will differ for test and live modes.
-
-**Payubase URL** 
+Example:
 
 * Test mode - https://test.payu.in
 * Live mode - https://info.payu.in
-
-**Payu UPI Base URL**
-
-* Test mode - https://test.payu.in
-* Live mode - https://secure.payu.in
-
-4. Click **Connect** when you're done.
-5. If you have multiple accounts, follow the above mentioned steps to add each of them.
-
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
 :::
 
-### 1.3 Configure webhook url 
+
+7. Click **Connect** when you're done.
+8. To add another account, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
+
+
+### 1.3 Configure webhook URL 
 
 Copy the webhook URL and the API key mentioned in the **Instructions** section of the PayUBiz Integration section in the yellow.ai platform.
 
@@ -68,69 +57,66 @@ Copy the webhook URL and the API key mentioned in the **Instructions** section o
 
 Use the webhook URL specific to your region -  [India](https://cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [MEA](https://r1.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [Jakarta](https://r2.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [Singapore](https://r3.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D),[ USA](https://r4.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), and [Europe](https://r5.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D).
 
-PayUBiz will whitelist the webhook URL provided by the merchant in their systems. You can write to the [PayU Integration team](mailto:integration@payu.in) for more information .
+PayUBiz will whitelist the webhook URL provided by the merchant in their systems. You can write to the [PayU Integration team](mailto:integration@payu.in) for more information.
 
-### 1.4 Receive event in yellow.ai 
+### 1.4 Enable PayU event to receive event in bot 
 
-1. Login to cloud.yellow.ai and click the **Studio** module from module-switcher.
-2. Go to **Event** > **Integrations**. Activate the event 'PayUBiz Payment Status' by clicking the three dots next to it. 
+1. On the [Cloud Platform](https://cloud.yellow.ai) go to Staging/Development environment.
+2. On the left navigation bar, click **Studio** > **Event** > **Integrations** and search for `Payu Biz Payment Status`.
 
-![](https://i.imgur.com/yVp8jkd.png)
+   ![](https://i.imgur.com/vI6zufl.png)
 
-4. Once the event is activated, create a flow in the **Studio** module with this event as its trigger point. Based on the received event data, a message will be displayed to the end user. 
+3. Click on the more options icon and select **Activate**. If you have connected multiple accounts, you need to enable the event for each account.
 
-The following is an example of payment status event, once the payment is received, 'Payment Done' message will be displayed to the user. 
+4. Once the event is activated, you can create a flow in the Studio > Build and use the event at the start of the flow to trigger a specific action, such as displaying a message indicating that the payment is completed.
 
-![](https://i.imgur.com/hFfvxaR.png)
-
-:::info
-If you have added multiple accounts in your platform, enable events for each of those accounts.
-:::
+   <img src="https://i.imgur.com/hFfvxaR.png" width="70%"/>
 
 
-## 2. Use-Cases
 
-The following use-cases are accomodated in this integration.
+## 2. PayU payment actions through bot conversations
+
 
 :::note
-When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+If there are multiple accounts, you can select from which account you want to perform the action.
 :::
 
 ### 2.1 Generate payment link
 
 1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **PayU** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
-<img src="https://i.imgur.com/gOTE1zk.png" alt="drawing" width="60%"/>
+   <img src="https://i.imgur.com/gOTE1zk.png" alt="drawing" width="60%"/>
 
 
 2. When you click the node, you will see the a drop-down with supported actions in this integration. Select **Generate Payment Link**.
 
-![](https://i.imgur.com/saWr4er.png)
+   ![](https://i.imgur.com/saWr4er.png)
 
 
 3. Fill in the fields based on the details provided in the following table. 
 
-| Field name |Sample value | Data type|Description|
-| -------- | -------- | -------- |-------|
-| Amount     | 100    | String     | Amount to be paid using the payment link.  |
-|ProductInfo|Iphone|String|Name of the product the user wants to purchase.|
-|Description|Test|String|Description of the product.|
-|CustomerName|Manish|String|Name of the customer.|
-|CustomerEmail|test@test.com|String|Email address of the customer.|
-|CustomerMobileNumber|9999933344|String|Contact number of the customer.|
-|txnID|Order123|String|The unique transaction ID that is generated dynamically.|
-|CustomerAddress|Ashoka Road, Mysore, Karnataka|String|Address of the customer.|
-|CustomerCity|New york|String|City of the customer.|
-|CustomerResidentState|Karnataka|String|State of the customer.|
-|CustomerZipcode|845309|String|Pincode of the customer.|
-|Send Email|false|Boolean|The email address of the customer to send the invoice.|
-|Time Unit|h|String|Frequency(in days, hours, minutes) at which a recurring payment will be charged.| 
-|UDF|Shipping Method| String| User defined field - used to store any information corresponding to a particular transaction. |
-|Validation Period|1|Number|Determines how long PayU will continue trying to charge the customer if the initial payment fails.|
+    | Field name |Sample value | Data type|Description|
+    | -------- | -------- | -------- |-------|
+    | Amount     | 100    | String     | Amount to be paid using the payment link.  |
+    |ProductInfo|Iphone|String|Name of the product the user wants to purchase.|
+    |Description|Test|String|Description of the product.|
+    |CustomerName|Manish|String|Name of the customer.|
+    |CustomerEmail|test@test.com|String|Email address of the customer.|
+    |CustomerMobileNumber|9999933344|String|Contact number of the customer.|
+    |txnID|Order123|String|The unique transaction ID that is generated dynamically.|
+    |CustomerAddress|Ashoka Road, Mysore, Karnataka|String|Address of the customer.|
+    |CustomerCity|New york|String|City of the customer.|
+    |CustomerResidentState|Karnataka|String|State of the customer.|
+    |CustomerZipcode|845309|String|Pincode of the customer.|
+    |Send Email|false|Boolean|The email address of the customer to send the invoice.|
+    |Time Unit|h|String|Frequency(in days, hours, minutes) at which a recurring payment will be charged.| 
+    |UDF|Shipping Method| String| User defined field - used to store any information corresponding to a particular transaction. |
+    |Validation Period|1|Number|Determines how long PayU will continue trying to charge the customer if the initial payment fails.|
 
 
 To use this Integration Action Node in an app.yellow.ai bot, refer the following example:
-```
+
+```js
 app.executeIntegrationAction({
     "integrationName": "payu-payment-gateway",
     "action": "Generate Payment Link",
@@ -153,33 +139,30 @@ app.executeIntegrationAction({
 
 ### 2.1 Generate UPI intent
 
-1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **PayU** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
-<img src="https://i.imgur.com/gOTE1zk.png" alt="drawing" width="60%"/>
+1. From the PayU Business node, select the *Create UPI intent.
 
-2. When you click the node, you will see the a drop-down with supported actions in this integration. Select **Generate Payment Link**.
+   ![](https://i.imgur.com/gkeqscs.png)
 
-![](https://i.imgur.com/gkeqscs.png)
+2. Provide the necessary inputs by selecting the relevant variable for each parameter. Below is a table containing sample values, data types, and descriptions for each of these fields.
 
-3. Fill in the following fields for the execution of the use-case. The following is a table that consists of the sample value,data type and description for each of these fields.
+    | Field name |Sample value | Data type|Description|
+    | -------- | -------- | -------- |-------|
+    | Amount     | 100    | String     | Amount to be paid using the payment link.  |
+    |CustomerEmail|test@test.com|String|Email address of the customer.|
+    |CustomerPhoneNumber|9999933344|String|Contact number of the customer.|
+    |CustomerName|Manish|String|Name of the customer.|
+    Fail URL|https://alpha6.yellowmessenger.com/ |String|The redirection URL in case there's a payment failure.|
+    |Success URL|https://alpha6.yellowmessenger.com/ |String
+    The redirection URL in case of successful payment.|
+    |TXN S2S flow|4|number|Txn S2S flow.|
+    |Transaction ID|Order123|String|The unique transaction ID that is generated dynamically.|
+    |Product Info|Iphone|String|Description of the product.|
+    |UDF| CustomField|String|User defined Field - used to store any information corresponding to a particular transaction. |
 
-| Field name |Sample value | Data type|Description|
-| -------- | -------- | -------- |-------|
-| Amount     | 100    | String     | Amount to be paid using the payment link.  |
-|CustomerEmail|test@test.com|String|Email address of the customer.|
-|CustomerPhoneNumber|9999933344|String|Contact number of the customer.|
-|CustomerName|Manish|String|Name of the customer.|
-Fail URL|https://alpha6.yellowmessenger.com/ |String|The redirection URL in case there's a payment failure.|
-|Success URL|https://alpha6.yellowmessenger.com/ |String
-The redirection URL in case of successful payment.|
-|TXN S2S flow|4|number|Txn S2S flow.|
-|Transaction ID|Order123|String|The unique transaction ID that is generated dynamically.|
-|Product Info|Iphone|String|Description of the product.|
-|UDF| CustomField|String|User defined Field - used to store any information corresponding to a particular transaction. |
+3. The **Generate UPI intenrt Integration Action Node** has two outcomes, **success** or **failure**. If the payment link is generated successfully, the **Integration Action Node** returns a **Success** response code as shown below:
 
-4. The **Generate UPI intenrt Integration Action Node** has two outcomes, **success** or **failure**. If the payment link is generated successfully, the **Integration Action Node** returns a **Success** response code as shown below:
-
-```
+```json
 {
        "metaData": {
          "message": null,
@@ -202,14 +185,23 @@ The redirection URL in case of successful payment.|
 ```
 If generating UPI intent fails, the **Integration Action Node** returns a Failure response code as shown below:
 
-```
-
-{"message":"[INTG ERROR] Node API Execution failed for payu-payment-gateway_Create UPI Intent in bot x1645073590274: 4xx or 5xx series code encountered","name":"IntegrationNodeAPIError","apiResponseBody":{"result":null,"status":"failed","error":"EX117","message":"Invalid amount #~#Please ensure that you send all mandatory parameters in the transaction request to PayU.<br><div style='font-size: 13px;padding: 0 150px; padding: 0 150px; line-height: 18px;'>Mandatory parameters which must be sent in the transaction are: <br><b>key, txnid, amount, productinfo, firstname, email, phone, surl, furl, hash</b></div>.<br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>The parameters which you have actually sent in the transaction are: <br><b> key, txnid, amount, productinfo, surl, hash, firstname, email, phone</b>.</div><br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>Mandatory parameter missing from your transaction request are: <br><b></b>.</div><br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>Please re-initiate the transaction with all the mandatory parameters.</div></p> "},"apiResponseStatusCode":500}
+```json
+{
+  "message": "[INTG ERROR] Node API Execution failed for payu-payment-gateway_Create UPI Intent in bot x1645073590274: 4xx or 5xx series code encountered",
+  "name": "IntegrationNodeAPIError",
+  "apiResponseBody": {
+    "result": null,
+    "status": "failed",
+    "error": "EX117",
+    "message": "Invalid amount #~#Please ensure that you send all mandatory parameters in the transaction request to PayU.<br><div style='font-size: 13px;padding: 0 150px; padding: 0 150px; line-height: 18px;'>Mandatory parameters which must be sent in the transaction are: <br><b>key, txnid, amount, productinfo, firstname, email, phone, surl, furl, hash</b></div>.<br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>The parameters which you have actually sent in the transaction are: <br><b> key, txnid, amount, productinfo, surl, hash, firstname, email, phone</b>.</div><br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>Mandatory parameter missing from your transaction request are: <br><b></b>.</div><br><div style='font-size: 13px;padding: 0 150px; line-height: 18px;'>Please re-initiate the transaction with all the mandatory parameters.</div></p> "
+  },
+  "apiResponseStatusCode": 500
+}
 ```
 
 To use this **Integration Action Node** in an app.yellow.ai bot, refer the following example:
 
-```
+```js
 
 app.executeIntegrationAction({
     "integrationName": "payu-payment-gateway",

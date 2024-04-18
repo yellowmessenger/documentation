@@ -9,63 +9,55 @@ Yellow.ai Integration with Paytm Payment Gateway enables the end user to do the 
 2. Initiate the process of refund.
 3. Check the status of the refund that was initiated.
 
-## Configuration
+## Connect Paytm payment gateway with Yellow.ai
 
-You can configure the Paytm payment gateway by following the below steps:
-
-1. Enabling the Integration in the yellow.ai Integrations Module.
-
-    - Login to cloud.yellow.ai and click the Integrations Module from the top left corner of your screen.
-    - Then search the integration named **Paytm** or choose the category named Payment from the left navigation bar and then click **Paytm**.
-    - This will now open a section where we have to type in the required details to enable this integration. The required values are **Merchant ID** (To be provided by the client/Paytm spoc of the client), **Merchant Key** (To be provided by the client/Paytm spoc of the client) , **API Domain** (In case you want to use the staging domain of Paytm please use https://securegw-stage.paytm.in otherwise please use https://securegw.paytm.in) , **Channel ID** (To be provided by the client/Paytm spoc of the client), **Industry Type** (To be provided by the client/Paytm spoc of the client).
-    - After entering these values, you need to click  **Connect** and the Integration will be enabled at yellow.ai’s end.
-    - If you have multiple accounts, follow the above mentioned steps to add each of them.
-
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
 
 
+To integrate the Paytm payment gateway, follow these steps:
 
-![](https://i.imgur.com/D6FFCed.png)
+1. Navigate to the Development/Staging environment and go to **Extensions** > **Integrations** > **Payment**  > **Paytm**. You can also search the integration by name **Paytm** using the Search box.
 
+   ![](https://i.imgur.com/m3s8TjA.png)
 
-![](https://i.imgur.com/knahjjR.png)
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
+   
+   ![](https://i.imgur.com/4e8mqVP.jpg)
 
+3. In **Merchant ID**,  enter the Merchant ID provided by the client or Paytm SPOC.  
+4. I **Merchant Key** enter the Merchant Key provided by the client or Paytm SPOC.
+5. In **API Domain**, If you intend to use the staging domain of Paytm, enter https://securegw-stage.paytm.in. If you're using the production domain, enter https://securegw.paytm.in.
 
-![](https://i.imgur.com/4e8mqVP.jpg)
+6. In **Channel ID**, enter the Channel ID provided by the client or Paytm SPOC.
 
+7. **Industry Type:** Enter the Industry Type provided by the client or Paytm SPOC.
 
-2. Configure the webhook URL in the Paytm dashboard.
-
-    - Copy the webhook URL mentioned in the Instructions section of the Paytm Integration Card. Please note that based on the region of your bot i.e r1/r2/r3/r4/r5, you need to append that to the domain of the webhook URL. For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to the Indian region, you can use the origin domain itself.
-
-![](https://i.imgur.com/17C5i0Y.png)
-
-
-  - The client needs to log in to the Paytm dashboard and navigate to the Webhook URL Configuration section and add the provided webhook URL.
-
-3. Receiving event in yellow.ai Bot.
-
-    * Login to cloud.yellow.ai and click the Studio Module from the top left corner of your screen.
-    * Click the Event, from the left navigation bar and then choose Integrations.
-    * You will find an event named Paytm Payment Status that needs to be activated by clicking on the three dots next to the name of the event.
-    * After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
-
-![](https://i.imgur.com/D6FFCed.png)
+8. To add more accounts, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
 
-![](https://i.imgur.com/9Xkc7SK.png)
+## Configure Webhook URL in Paytm
+
+The webhook URL serves as a callback endpoint where Paytm can send notifications or updates regarding payment events, enabling your application to respond accordingly.
 
 
-![](https://i.imgur.com/lnAQscW.png)
+1. Go to the connected Paytm integration and copy the webhook URL. 
+2. Add domain URL. Append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can refer the following list for the same. (r1 = MEA, r2 = Jakarta, r3 = Singapore, r4= USA, r5 = Europe)
 
-:::info
-If you have added multiple accounts in your platform, enable events for each of those accounts.
-:::
+   ![](https://i.imgur.com/17C5i0Y.png)
+
+
+3. Login to your Paytm account and navigate to the Webhook URL Configuration section and add the provided webhook URL.
+
+## Enable Paytm event for your bot
+
+1. On the Cloud Platform go to Staging/Development environment.
+2. On the left navigation bar, click **Studio** > **Event** > **Integrations** and search for `Paytm Payment Status`.
+3. Click on the more options icon and select Activate. If you have connected multiple accounts, you need to enable the event for each account.
+4. Once the event is activated, you can create a flow in the **Studio** > **Build** and use the event in a flow to trigger a specific action, such as displaying a message indicating that the payment is completed successfully.
+   
+   <img src="https://i.imgur.com/o1lrDXV.png" width="60%"/>
+
+
 
 **Sample webhook event data sent by Paytm**
 
@@ -93,49 +85,45 @@ If you have added multiple accounts in your platform, enable events for each of 
 }
 ```
 
-## Use cases 
+## Paytm actions through bot conversation
 
-Following are the use cases that are currently accommodated in the Integration:
+Once your Paytm account is successfully connected, your bot can perform the following actions:
 
 :::note
-When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
+If there are multiple accounts, you can select from which account you want to perform the action.
 :::
 
-### Generate Payment Link
+### Generate Paytm payment link in bot conversation
 
-In the studio flow builder, you need to choose the node type Integrations from the dialog box and then you will see an option to select Paytm from the list of Integrations that have been enabled for that particular bot.
+1. Go to Development/Staging environment and navigate to **Studio** > **Build** > Select the flow where you want to add the Generate payment link node.
 
-![](https://i.imgur.com/7r0Td7w.png)
+2. Click **Add node** > **Integrations** > **Paytm**.
 
+   ![](https://i.imgur.com/7r0Td7w.png)
 
-After clicking on Paytm, you will see that an Integration Action Node is added to the flow builder. On clicking the Integration Action Node, you will see the dropdown of available use cases for this integration and you need to choose Generate Payment Link from that dropdown.
+3. You will see the Paytm node. In the first drop-down (actions), choose *Generate Payment Link*.
 
-![](https://i.imgur.com/mA9hm4Q.png)
+   ![](https://i.imgur.com/mA9hm4Q.png)
 
+3. Configure the input parameters needed to generate the payment link by referring to the descriptions provided in the table below.
 
-The set of mandatory fields required for the successful execution of this use case (Generate Payment Link in this case), will be displayed. The below-mentioned table consists of the sample value, data type, and description for each field present in the above screenshot:
+    | Field name | Sample value |  Data type   | Description |
+    | -------- | -------- | --- | -------- |
+    | Timestamp     | 1588402269     | String    | EPOCH timestamp of the time at which the request is being sent    |
+    |Amount|3500|String|Transaction amount|
+    |LinkName|Test|String|Name of the link that you want to display to the customer, link name is used to generate a long URL|
+    |LinkType|FIXED|String|Type of link|
+    |LinkDescription|Test|String|Description of the link that you want to display to the customer|
+    |SendSms|true/false|Boolean|Flag whether SMS is to be sent to the customer by Paytm|
+    |SendEmail|true/false|Boolean|Flag whether Email is to be sent to the customer by Paytm|
+    |CustomerName|Mahesh|String|Name of the customer|
+    |CustomerEmail|test@gmail.com|String|Email ID of the customer|
+    |CustomerMobile|9876543210|String|Mobile number of the customer|
+    |LinkNotes|Reference details|String|Add additional notes to your link. This won’t be shown to the customers|
 
-
-| Field name | Sample value |  Data type   | Description |
-| -------- | -------- | --- | -------- |
-| Timestamp     | 1588402269     | String    | EPOCH timestamp of the time at which the request is being sent    |
-|Amount|3500|String|Transaction amount|
-|LinkName|Test|String|Name of the link that you want to display to the customer, link name is used to generate a long URL|
-|LinkType|FIXED|String|Type of link|
-|LinkDescription|Test|String|Description of the link that you want to display to the customer|
-|SendSms|true/false|Boolean|Flag whether SMS is to be sent to the customer by Paytm|
-|SendEmail|true/false|Boolean|Flag whether Email is to be sent to the customer by Paytm|
-|CustomerName|Mahesh|String|Name of the customer|
-|CustomerEmail|test@gmail.com|String|Email ID of the customer|
-|CustomerMobile|9876543210|String|Mobile number of the customer|
-|LinkNotes|Reference details|String|Add additional notes to your link. This won’t be shown to the customers|
-
-
-The **Generate Payment Link Integration** Action Node has two possible outcomes, success or failure which are depicted by the success and fallback branches. Based on whether the execution of the Integration Action Node was successful or not, the flow will proceed to the **success** or **fallback** branches respectively.
 
 :::note
-The easiest way to identify success/failure is by looking at the key tokenType in the head object. 
-If its value is **AES**, the response is a success.
+An easy way to determine the success or failure of an action is by inspecting the key tokenType in the head object. If its value is **AES**, the response indicates success.
 :::
 
 
@@ -224,18 +212,15 @@ In case of success, you must extract the key **shortUrl** present in the **body*
 
 ```
 
-### Initiate Refund
+### Initiate Paytm Refund
 
-In the studio flow builder, choose the node type as Integrations from the dialog box. You will see an option to select Paytm from the list of Integrations that have been enabled for that particular bot.
-
-![](https://i.imgur.com/7r0Td7w.png)
-
-After clicking on Paytm, you will see that an Integration Action Node is added to the flow builder. Upon clicking on the Integration Action Node, you will see the dropdown of available use cases for this integration and you need to choose Initiate Refund from that dropdown.
-
-![](https://i.imgur.com/s6AUREb.png)
+1. In the Paytm node, choose the action *Initiate refund*.
 
 
-The set of mandatory fields required for the successful execution of this use case (Initiate Refund in this case), will be displayed. The below-mentioned table consists of the sample value, data type, and description for each field present in the above screenshot:
+   ![](https://i.imgur.com/s6AUREb.png)
+
+2. Configure the input parameters needed to generate the payment link by referring to the descriptions provided in the table below.
+
 
 | Field name | Data type   | Description | Sample value | 
 | -------- | -------- | --- | -------- |
@@ -245,11 +230,6 @@ The set of mandatory fields required for the successful execution of this use ca
 |TransactionId|String|TXNID is the Paytm payment Transaction ID against which the refund transaction is being placed.TXNID is provided in response payload for every payment transaction| 202005081112128XXXXXX68470101509706|
 |RefundAmount|String|Amount for which the refund is to be made. It can be equal to or less than the transaction amount and should be up to two decimal places. The only special character allowed is (".")|30.00|
 
-The **Initiate Refund Integration** Action Node has two possible outcomes, success or failure which are depicted by the success and fallback branches. Based on whether the execution of the Integration Action Node was successful or not, the flow will proceed to the **success** or **fallback** branches respectively.
-
-:::note
-The easiest way to identify success/failure is by looking at the key resultStatus in the resultInfo object. If its value is not TXN_FAILURE, the response is a success.
-:::
 
 
 **Sample response for success**
@@ -257,7 +237,7 @@ The easiest way to identify success/failure is by looking at the key resultStatu
 In case of success, you need to extract the key **resultStatus**, and **resultMsg** in the **resultInfo** object and display them to the end user with an appropriate message with the help of any of the **Message type** nodes.
 
 
-```
+```json
 {
     "head": {
         "responseTimestamp": "1567421120859",
@@ -283,7 +263,7 @@ In case of success, you need to extract the key **resultStatus**, and **resultMs
 ```
 **Sample response for fallback**
 
-```
+```json
 {
     "head": {
         "responseTimestamp": "1567421388384",
@@ -307,7 +287,7 @@ In case of success, you need to extract the key **resultStatus**, and **resultMs
 
 **To use this Integration Action Node in an app.yellow.ai bot**, refer to the below-mentioned example:
 
-```
+```js
 app.executeIntegrationAction({
     		"integrationName": "paytm",
     		"action": "Initiate Refund",
@@ -330,15 +310,13 @@ app.executeIntegrationAction({
 
 ### Check Refund Status
 
-In the studio flow builder, choose the node type Integrations from the dialog box, and then you will see an option to select Paytm from the list of Integrations that have been enabled for that particular bot.
+1. In the Paytm node, choose the action *Check Refund Status*.
 
-![](https://i.imgur.com/7r0Td7w.png)
+   ![](https://i.imgur.com/7r0Td7w.png)
 
-After clicking on Paytm, you will see that an Integration Action Node is added to the flow builder. Upon clicking on the Integration Action Node, you will see the dropdown of available use cases for this integration and you need to choose **Check Refund Status** from that dropdown.
+2. Configure the input parameters needed to generate the payment link by referring to the descriptions provided in the table below.
 
-![](https://i.imgur.com/W4AMMOB.png)
-
-The set of mandatory fields required for the successful execution of this use case (Check Refund Status in this case), will be displayed. The below-mentioned table consists of the sample value, data type, and description for each field present in the above screenshot:
+   ![](https://i.imgur.com/W4AMMOB.png)
 
 
 | Field name | Sample value |  Data type   | Description |
@@ -347,7 +325,6 @@ The set of mandatory fields required for the successful execution of this use ca
 |OrderId|OREDRID_98765|String|It is a unique reference ID for a transaction passed in the transaction request and the Initiate Refund Integration Action Node. Order ID should be passed to check the actual status of the refund|
 |ReferenceId|REFUNDID_98765|String|Merchant's Reference ID unique for every refund transaction. This is REFID for which refund status is being inquired|
 
-The **Check Refund Status Integration** Action Node has two possible outcomes, success or failure which are depicted by the success and fallback branches. Based on whether the execution of the Integration Action Node was successful or not, the flow will proceed to the **success** or **fallback** branches respectively.
 
 
 :::note
@@ -358,7 +335,7 @@ The easiest way to identify success/failure is by looking at the key resultStatu
 
 In case of success, extract the key(s) and display to the end user an appropriate message with the help of any of the Message type nodes.
 
-```
+```json
 {
     "head": {
         "clientId": "C11",
@@ -406,7 +383,7 @@ In case of success, extract the key(s) and display to the end user an appropriat
 ```
 **Sample response for fallback**
 
-```
+```json
 {
     "head": {
         "clientId": "C11",
@@ -430,7 +407,7 @@ In case of success, extract the key(s) and display to the end user an appropriat
 
 **To use this Integration Action Node in an app.yellow.ai bot**, refer to the below-mentioned example:
 
-```
+```js
   app.executeIntegrationAction({
     		"integrationName": "paytm",
     		"action": "Check Refund Status",
