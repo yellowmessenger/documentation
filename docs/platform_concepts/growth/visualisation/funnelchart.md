@@ -14,6 +14,6 @@ Click **Visualisation > Funnel**.
 In sales or marketing funnel charts can be used to track the customer journey from initial leads to final conversions. For instance, a company may use a funnel chart to illustrate the progression of website visitors to leads, then qualified leads, and finally to actual sales. This visualization helps businesses identify potential bottlenecks or drop-off points in the conversion process, allowing them to optimize their strategies for better results.
 
 
- ![image](https://imgur.com/mwU7JMS.png)
+![image](https://imgur.com/XrcBjo6.png)
 
 
