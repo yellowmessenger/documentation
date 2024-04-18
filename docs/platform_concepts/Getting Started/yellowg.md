@@ -106,6 +106,8 @@ The Conversation Summarizer feature offers a condensed overview of customer-bot 
 
 After each chat session, the bot automatically generates a comprehensive summary, spotlighting key discussion points and recommending potential enhancements, elevating the agent experience to the next level.
 
+   ![](/img/cdp/summarise.gif)
+   
 
 For more details, refer to [our documentation](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai#summarize-chat-conversation).
 
@@ -116,13 +118,14 @@ The Empathetic Tone Change feature aids agents in maintaining professionalism wh
 
 Agents can effortlessly fine-tune their response tone to better resonate with customers, leveraging the Tone Change feature for enhanced communication. 
 
+   ![](/img/cdp/tone_change.gif)
 
 ### Crafting Effective Responses Simplified with Reply Suggestion
 
 The efficient Reply Suggestion provides summarized suggestions to assist agents in crafting effective responses. Agents receive concise recommendations for addressing complex customer queries, enhancing response efficiency and effectiveness.
 
 
-
+   ![](/img/cdp/resolve_query.gif)
 
 ## Optimized Campaign Creation with AI-Powered Flow Campaigns
 
