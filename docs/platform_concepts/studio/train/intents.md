@@ -94,7 +94,7 @@ You can train your bot on the following features by setting the right number of 
 
 3. Click **Train**.
 
-If a bot is not trained on intents, it won't understand user queries so it will resort to [Fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/additionalsettings#fallback-fallback-flow). You can configure [Suggestions](https://docs.yellow.ai/docs/platform_concepts/studio/overview#suggestion) for bot to show the closest answers to the user query.
+If a bot is not trained on intents, it won't understand user queries so it will resort to [Fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#fallback-flow). You can configure [Suggestions](https://docs.yellow.ai/docs/platform_concepts/studio/build/additionalsettings#suggestion-setting-when-bot-does-not-understand-user-utterance) for bot to show the closest answers to the user query.
 
 ## Map intents to flows
 

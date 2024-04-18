@@ -162,7 +162,7 @@ Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overvi
 ### Automated flow generation
 
 Generates bot flows effortlessly tailored to your specific use cases, using AI Co-pilot. Save time and resources with smart, automated bot creation.  
-Explore [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot). 
+Explore [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#automate-flow-creation-using-ai-copilot). 
 
 ![image](https://imgur.com/PDRMNBQ.png)
 

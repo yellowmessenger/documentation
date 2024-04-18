@@ -1,170 +1,182 @@
 ---
 title: Create Flows
 sidebar_label: Create flows
+tags: [AI copilot, auto flow creation, GPT-4] 
 ---
 
-A flow is a structure that defines the sequence of a chatbot conversation with users, based on their questions and responses. It consists of different types of [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) that can display, request, or process information. To build a chatbot, the scope must be divided into multiple flows, each tailored to respond to a specific use case.
+This guide provides a step-by-step walkthrough for creating a flow on the platform.
 
-The following is an example of a food order flow:
+#### Limitation 
 
-- User: Show me the menu
-- Bot: Please select your Cuisine: South Indian, North Indian
-- User: South Indian
-- Bot: Please select the Item: Dosa, Pongal . . .
+* You can add up to 150 nodes in a flow.
 
-![](https://i.imgur.com/51LCOoO.png)
+To create a flow, follow these steps:
 
+1. Select the specific environment (Staging, Sandbox, and Production) in which you want to create a flow. 
 
-Through flows bot can also converse with users and fetch a piece of information via nodes, for example, the bot can be used as an official portal to apply for leaves or check salary.
-
-## Key UI components to build a flow
-
-
-The icons located on the tile provide quick access to the following
-
-![](https://i.imgur.com/G9n27EO.png)
-
-(The sequence follows the order of the UI layout)
-
-| Icon                                                                                                                                         | Functionality                                                                                        |
-| -------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| [Channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) | Customize bot functionality for each channel.                                                           |
-| [Prompts](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes)                                                     | Drag and drop prompt nodes.                                                              |
-| [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes)                                                    | Drag and drop message nodes.                                                             |
-| [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes)                                                      | Drag and drop action nodes.                                                              |
-| [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes)                                                        | Drag and drop logic nodes.                                                               |
-| [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables)                                                        | Variables are used to store and retrieve specific data in a flow.                                       |
-| [Language](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#2-add-languages-to-your-bot)                                         | Choose the language(s) in which your bot can be accessed.                                                     |
-| [Tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools) |   Open the global tools tab.                                                                                                   |
-
-## Create a flow
-
-To create a flow, follow the below steps:
-
-1. Login to [yellow.ai](https://cloud.yellow.ai), select your bot. 
-2. Go to **Overview** > **Studio**.    
-3. Click **Create flow**.
-
- ![](https://i.imgur.com/5To2mvO.png)
-
-:::tip
-You can also use the keyboard shortcut`s` + `f`.
-:::
-
-4. Select the option that suits your preference for creating the flow.
-
-  ![](https://i.imgur.com/tWrrDEx.png)
-
-  * [Create with AI copilot](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ai-copilot)
-  * [Create from template](#create-a-flow-using-a-template)
-  * [Start from scratch](#create-a-flow-from-scratch)
-  * [Create skill](#create-a-skill)
-
-### Create a flow using a template
-
-1. Go to **Studio** > **Create flow**.
-
-   ![](https://i.imgur.com/5To2mvO.png) 
-
-2. Click **+ Use template**.
-
- ![](https://i.imgur.com/yb2AckK.png)
-
-3. Click on a suitable template in the **Flow Template** dialog box. For more information about templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro).
-
-  ![](https://i.imgur.com/azyPYFo.png)
-
-4. In the following screen, you can preview the template by clicking the **Preview** button. This will show you that flow's sequence in the bot. If you think it suits your use case, click **+ Use template**.
-
-   ![](https://i.imgur.com/C2jKMoX.png) 
+      ![](https://imgur.com/2XaGItC.png)
 
 :::note
-You can also click **Create from scratch** to create a flow from scratch.
-
-   ![](https://i.imgur.com/7YKTYeG.png)
+* In the Live environment, the option to create flows is disabled. You can only modify or add flows in the Staging, Sandbox, and Production environments.
+![](https://imgur.com/b5oBsqW.png)
 :::
+      
+2. Go to **Studio** > **Build** > **Flow** > **Create flow**.
 
-5. The template will get imported to the flows section. You can spot the template with the label **Imported** right next to it.
+    ![](https://imgur.com/E0wjus1.png)
+    
+:::note
+If you have multiple bots created, choose the specific bot for which you intend to build the flow.
+:::
+    
+3. Select your preferred options to create a flow.
 
-   ![](https://i.imgur.com/y8Epe3q.png)
+   ![create flow](https://i.imgur.com/Au5cJsA.png)   
+    
 
-### Create a flow from scratch
+* [Create with AI Copilot](#automate-flow-creation-using-ai-copilot): This option allows you to automatically create flows based on your input. It eliminates manual processes and the need for template downloads.
+ * [Create from template](#create-flow-using-a-template): This option allows you to use pre-built bot templates from Yellow.ai's marketplace to quickly build conversation flow based on your use case instead of creating it from scratch.
+ * [Start from scratch](#manually-create-a-flow): This option allows you to manually create a flow using Yellow.ai's [key elements](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview#key-elements-to-build-a-flow) without relying on pre-built templates or automated tools.
+ * [Create skill](#create-a-skill): This option allows you to create a flow to run concurrently in the background along with the main flow to perform specific tasks or action.
 
-1. Go to **Studio** > **Create flow**.
+### Automate flow creation using AI Copilot
 
-   ![](https://i.imgur.com/5To2mvO.png) 
+Yellow.ai's AI Copilot simplifies flow creation using AI-powered automation, saving time by eliminating manual process. You can design any type of flow just by inputting your requirements in the form of plain text, and it generates the flow based on the provided instructions.
 
+The AI Copilot creates a basic flow with [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) nodes. You can then customize this flow using [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code), [Database](https://docs.yellow.ai/docs/platform_concepts/studio/database#docusaurus_skipToContent_fallback), and [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode) to suit your specific use case.
+
+
+For example, you have defined AI Copilot to create a lead generation flow. Once the basic flow is generated, you can edit the flow for advanced features such as storing the lead information in database, adding an API node to connect to an external CRM system. 
+
+#### Use cases of AI copilot
+
+| Industry | Usecase                                                | Input required from user                                    | Additional actions to enhance the flow                                                                 |
+|----------|--------------------------------------------------------|------------------------------------------------------------|------------------------------------------------------------------------------------------------------|
+| Airline  | Booking and managing flight reservations                | Name, email, phone number, origin city, destination city, date | API call to fetch flights, API call to book the selected flight                                   |
+|          | Checking flight status and schedule updates             | Name, email, phone, booking reference number                  | API call to get flight status, API call to add email to receive updates                           |
+|          | Assisting with baggage tracking and lost luggage claim  | Name, email, phone, baggage request number                    | API call to track status, API call to send lost luggage claim                                      |
+|          | Offering personalized travel recommendations            | Name, email, phone, destination & travel dates                | API call to provide recommendation                                                                  |
+| Automotive | Scheduling test drives and service appointments         | Name, email, phone, car series, appointment type, date and time | API call to book the service                                                                         |
+|          | Assisting with financing and insurance options          | Name, email, phone number, car model, loan option, insurance option | API call to send these details                                                                      |
+| Real Estate | Providing information on property listings              | Name, email, phone, property type, budget                     | API call to fetch the required listings                                                             |
+|          | Assisting with scheduling property viewings and appointments | Name, email, phone, property type, viewing date               | API call to schedule the meeting                                                                     |
+|          | Offering personalized property recommendations          | Name, email, phone, property type, bedrooms, budget            | API call to fetch properties                                                                         |
+| Education | Providing information on courses                         | Name, email, phone, selected course                           | API call to gather more course information or DB store to store                                    |
+|          | Scheduling demo class for the selected course            | Name, email, phone, course, preferred date of demo, preferred time | API call to schedule / DB to store                                                                   |
+|          | Connecting with educators, advisors, and support staff    | Name, email, phone, type of support required                   | API call to raise request / DB to store                                                              |
+
+To generate flow using AI, follow these steps:
+
+1. Go to **Studio** > **Build** > **Flows** > **+ Create flow** > **Create with AI Copilot**.
+
+   ![](https://imgur.com/G4cAOko.png)
+
+2. Define your flow using the available options: 
+
+    <img src="https://imgur.com/8nXVVDd.png" alt="drawing" width="70%"/>
+
+   i. **Flow name**: Enter the name of the flow.<br/>
+   ii. **Category**: Choose a Category where your flow should be generated. To create a new category for your flow click **+Create category**.<br/>
+   iii. **AI Copilot**: Describe the desired outcome of your flow. This will help to design the flow tailored to your requirements.<br/>
+   iv. **Generate Description**: Automatically generates the description based on your given details.<br/>
+   v. **Industry**: Choose the industry your business belongs to and click **Generate**.
+   
+* Generating a flow typically takes around 3 to 4 minutes. A basic flow is created with [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) nodes. Once generated, you can view the created flow under the selected category. You can then customize this flow to suit your specific use case.
+
+   ![](https://imgur.com/49FGhOG.png)
+
+### Create flow using a template
+
+1. Go to **Studio** > **Build** > **Flows** > **Create flow**.
+
+    ![](https://imgur.com/E0wjus1.png)
+    
 2. Click **+ Use template**.
 
-  ![](https://i.imgur.com/gT5aZAZ.png)
+   ![](https://i.imgur.com/yb2AckK.png)
 
-3. Enter the following details:
+* In the **Flow template** dialog box, select the template specific to your category or click on your preferred template. For more information about templates, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro).
 
-   <img src="https://i.imgur.com/nRCDd2B.png" alt="drawing" width="40%"/>
+    ![](https://i.imgur.com/8hZUf4j.png)
 
-*  **Flow name**: Enter the name of your flow and make sure the name is according to the task of the flow. For example, flight booking, customer service, and products on discount.
-*  **Flow Description**: Describe your flow. You can also tranlslate this description to any language other than **English** by clicking the **Translator** button. For example, these flows lead customers to flight booking workflow. Click [here](https://) to know more about **Translation**.
+* After selecting the template, you can see the details of the flow template, key features, flow structure, and a similar template.
 
-*  **Category**: You can assign a flow to multiple categories by selecting an existing category from the drop-down or adding a new one. If no category is specified, a created flow will automatically be assigned to default categories.
+    <img src="https://i.imgur.com/GQG0hGx.png" alt="drawing" width="100%"/>
 
-   *  Click **+Create category**.
-   *  Enter the **Name** of the category.
-   * Click **Create Category** to save it.
+7. Preview the template by clicking the **Preview** button to see the sequence of the flow. 
 
-4. Click **Create**.
-5. Add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) and build a flow as per your use-case. 
+   ![](https://i.imgur.com/eUv2q21.png) 
+   
+8. Click **+ Use template**.
 
-For the flow to work, you need to trigger it. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) for the detailed steps.
+    ![](https://i.imgur.com/JHuIzut.png)  
 
-:::note
-You cannot add more than 150 nodes in a flow.
-:::
+9. The template will be imported into the flows section, labelled as *Imported*.
+
+   ![](https://i.imgur.com/K2qT8fy.png)
+
+### Manually create a flow
+
+1. Go to **Studio** > **Build** > **Flow** > **Create flow**.
+
+    ![](https://imgur.com/E0wjus1.png)
+
+2. To create a flow from scratch, click **+ Create flow**.
+
+   ![](https://i.imgur.com/gT5aZAZ.png)
+
+3. Define your flow details:
+
+   <img src="https://i.imgur.com/nRCDd2B.png" alt="drawing" width="50%"/>
+
+   i. **Flow name**: Provide a descriptive name for your flow, such as "Flight booking" or "Customer service".
+   ii. **Flow Description**: Describe the purpose of the flow.<br/>
+   iii. **Category**: You can assign a flow to an existing category from the drop-down or create a new category.
+
+To create a Category, follow these steps:
+
+1. Expand the Category drop-down and click **Create category**.
+
+   <img src="https://i.imgur.com/p4PZv7Q.png" alt="drawing" width="40%"/>
+   
+2. Enter the **Name** of the category and click **Create** to create a new category.
+
+    <img src="https://i.imgur.com/3gHRb8G.png" alt="drawing" width="40%"/>
+
+4. Add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) and build the flow according to your use-case.
+
+   ![image](https://imgur.com/EIt0gea.gif)
+
+* For the flow to work, you need to trigger it. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) for the detailed steps.
 
 ### Create a skill
 
-Skills are background processes that run along with the conversational flow. For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) operates in the background, synchronizing data with an external database while the bot executes the rest of the flow.
+Skills are background processes that are built using only [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes and operate along with the conversational flow. Skills enhance the bot's capabilities by performing various tasks such as calling functions, executing APIs, and database operations. This configuration allows you to create workflows that can be linked to categories and invoked as needed within a conversation. 
 
-Skill is the same as any other flow, you can build a skill by only using [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes (Message and Prompt nodes are not available to build a skill).
+For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) operates in the background, synchronizing data with an external database while the bot executes the rest of the flow.
 
-To create a skill:
+To create a skill, follow these steps:
 
-1. Go to **Build** > **Create flow** > **+ Create skill**.
+1. Go to **Studio** > **Build** > **Create flow** > **+ Create skill**.
 
- <img src="https://i.imgur.com/rJQw0ny.png" alt="drawing" width="90%"/>
+   <img src="https://imgur.com/tnu6zWG.png" alt="drawing" width="100%"/>
 
-3. Fill the following fields:
+3. Enter the following fields:
 
- <img src="https://i.imgur.com/ZD745rR.png" alt="drawing" width="40%"/>
+   <img src="https://i.imgur.com/ZD745rR.png" alt="drawing" width="40%"/>
 
-*  **Skill name**: Enter the name of your skill and make sure the name is according to the task of the skill. For example, flight booking, customer service, and products on discount.
-*  **Skill Description**: Describe the skill. You can also tranlslate this description to any language other than **English** by clicking the **Translator** button. For example, these flows lead customers to flight booking workflow. Click [here](https://) to know more about **Translation**.
-*  **Category**: You can assign a skill to multiple categories by selecting an existing category from the drop-down or adding a new one. If no category is specified, the skill will automatically be assigned to default categories.
+   i. **Skill name**: Provide a descriptive name for your skill.<br/>
+   ii. **Skill Description**: Describe the purpose or functionality of the skill.<br/>
+   iii. **Category**: You can assign the skill to an existing category or create a new one.
 
-   *  Click **+Create category**.
-   *  Enter the **Name** of the category.
-   * Click **Create Category** to save it.
+To create a new category for a Skill, follow these steps:
 
-4. Click **Create**.
+1. Expand the **Category** drop-down and click **Create category**.
 
-### Edit a flow
+   <img src="https://i.imgur.com/n6n6saa.png" alt="drawing" width="40%"/>
+   
+2. Enter the **Name** of the category and click **Create** to create a new category.
 
-To edit a flow, follow these steps
+    <img src="https://imgur.com/VJgYkot.png" alt="drawing" width="40%"/>
 
-1. Ensure the environment (on the top right corner) is in the [development mode](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes).
-2. Go to the flows drop-down on the top and click the flow you would like to edit. 
-
-  ![](https://i.imgur.com/4lUHL3d.png)
-
-
-### Connect two flows
-
-To connect two flows, you can use a [switch flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#112-switch-flow) node or [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. In the case of a switch flow, the bot does not return to the original flow from which the node was triggered. Howevers, with an execute flow node, the bot returns to the original flow after executing the designated new flow.
-
-### Enhance flow clarity with Auto layout
-
-When constructing a flow, nodes often cluster together, resulting in a cluttered and confusing layout. To enhance clarity and readability, consider use the **Auto layout** feature. This tool automatically aligns nodes, creating a more organized and comprehensible flow for end users.
-
-To use this, click the **Auto layout** feature available at the bottom right corner of the page. You can also undo the alignment by clicking the undo option.
-
-![](https://i.imgur.com/hzrLpXk.gif)
---- 
+* This will create a Skill.
