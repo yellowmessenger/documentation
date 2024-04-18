@@ -64,7 +64,7 @@ There are two ways by which you can parse an API response in Yellow.ai.
 
 You can parse an API response as you recieve it and display only the required info to the end user.
 
-1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-flow) for your use case, include an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response). [Store the response of the API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
+1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case, include an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response). [Store the response of the API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
 2. Go to the [Functions](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) section, fetch the variable created in the previous step and [write a custom logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-new-function) to parse the API response. 
 
 ### Code snippet for parsing

@@ -265,11 +265,13 @@ module.exports = {
             {
               type: "category",
               label: "Flows",
+              link: {type: 'doc', id: 'platform_concepts/studio/build/Flows/flows-overview'},
               collapsed: true,
-              items: [ 
-            "platform_concepts/studio/build/Flows/ai-copilot",         
+              items: [        
             "platform_concepts/studio/build/Flows/journeys",
             "platform_concepts/studio/build/Flows/configureflow",
+            "platform_concepts/studio/build/Flows/manage-flows",
+            "platform_concepts/studio/build/Flows/test-flows",
             "platform_concepts/studio/build/Flows/exportflow",
             "platform_concepts/studio/debugger",
 
