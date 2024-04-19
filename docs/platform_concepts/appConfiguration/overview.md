@@ -1,5 +1,5 @@
 ---
-title: Integration Overview
+title: Integration overview
 sidebarTile: Overview
 ---
 
@@ -10,11 +10,97 @@ To make it easy to access and manage your integration accounts, they are conveni
 
    ![](https://i.imgur.com/FFrr52N.png)
 
+## Integration process
 
 
+To integrate your application with our platform, follow these step-by-step instructions:
+
+### Step 1: Gather integration details from your integration app
+
+1. **Login to your integration application:** Access your application's dashboard or admin panel.
+2. **Retrieve integration details:** Locate and collect all the necessary details required for integration, such as client ID, secret key, and domain URL. Refer to your application's documentation for more specific instructions on where to find these details.
+
+### Step 2: Connect your integration account to yellow.ai platform
+
+You can connect your account only in development environment and not in live. For a three-tier environment, you can connect an account in Staging and Sandbox environment. Once the bot is published, it will use the integrations if they are configured in the flows.
+
+1. **Login to our [Cloud platform](https://cloud.yellow.ai)** with your credentials and switch to Development/Staging environment.
+2. Navigate to **Extensions** > **Integration** and search for the integration app.
+   
+   ![](https://i.imgur.com/JagYT5w.png)
+
+3. Proceed by entering the integration details collected in Step 1 to establish the connection with your account.
+
+   ![](https://i.imgur.com/uZL82XT.png)
+
+4. Click **Connect**.
+5. Similarly, You can add more accounts by clicking the **+Add Account** button. You can connect up to 15 accounts per integration. 
+
+#### Step 3: Configure Webhook URL
+
+Webhooks function as callback endpoints, sending updates to a specified URL whenever there's a change in the integration app. If you do not configure, the bot won't receive these events, potentially disrupting the integration's operation.
+
+Once the connection is estabblished, follow these steps to configure the webhook URL:
+
+1. Once the connection is established, a unique webhook URL will be generated for your account. Go to the connected app and **Copy Webhook URL**.
+   
+   ![](https://i.imgur.com/8AMXnhM.png)
+
+2. **Paste the URL** into the relevant settings section of your integration app. This allows your integration app to send data to our platform seamlessly.
+
+### Step 4: Enable integration events in your bot
+
+This enables you to execute specific actions in response to events. For instance, you can display a message in the bot conversation when a payment is successful or show order details when an order is placed.
+
+1. In Development/Staging environment, go to **Studio** > **Event** > **Integrations**.
+2. Find the event and click on the three dots icon, then select **Activate**. Events are named with the Integration app name, for instance, "InstaMojo Payment Status".
+
+   ![](https://i.imgur.com/FtUTGsJ.png)
+
+
+### Step 5: Trigger bot flows with integration events
+
+You can configure your bot to [trigger specific flows when an event occurs](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow). For instance, display a message when a payment is successful or show order details after an order is placed.
+
+1. At the start of the flow, select *Events* and then choose the specific event that you want to use. 
+2. If there are multiple accounts connected, you will see the Account Name dropdown where you can choose a specific account that you want to use.
+
+
+   ![](https://i.imgur.com/br6ofma.png)
+
+3. Publish your bot for your changes to reflect in the *Live* or *Production* environment.
+
+
+#### Step 5: Configure bot to handle specific integration actions
+
+Once the integration is enabled, your bot gains the ability to directly perform various actions within that specific integration account. These actions may include creating new records, updating existing records, and retrieving specific information. With this capability, you can configure your bot to handle these specific integration actions seamlessly.
+
+To perform a specifc integration action via bot:
+1. In Development/Staging environment, navigate to **Studio** > **Build** > Select the flow where you want to use an integration action.
+2. Click **Add node** > **Integrations** > {Integration Name}.
+
+   ![](https://i.imgur.com/lVzjJq5.png)
+
+3. Once you've added the respective integration node, you'll see a list of supported actions along with their configurations. Select the action you need and configure the necessary fields accordingly.
+
+   ![](https://i.imgur.com/wYYsSxX.png)
+
+4. Customize the bot's behavior to respond appropriately to integration events, such as sending notifications or executing automated tasks.
+5. Publish your bot for your changes to reflect in the *Live* or *Production* environment.
+
+
+
+
+1. **Define Bot Actions:** Once integration events are enabled, configure your bot to perform specific actions in response to these events.
+2. **Customize Bot Behavior:** Customize the bot's behavior to respond appropriately to integration events, such as sending notifications or executing automated tasks.
+
+By following these steps, you can seamlessly integrate your application with our platform and leverage the full capabilities of our bot system. If you encounter any issues or need further assistance, please refer to our documentation or contact our support team for help.
 
 ---
-## 1. CRM 
+
+## Integration types
+
+### 1. CRM 
 
 CRM consists of integrations with customer relationship management tools used for managing the leads and opportunities. Click on any of the below mentioned integrations with CRMs that you wish to setup in order to understand the features, limitations and setup instructions:
 
@@ -28,7 +114,7 @@ Integration | Description
 
 ---
 
-## 2.  ITSM
+### 2.  ITSM
 
 ITSM consists of integrations with IT service management tools used for managing service delivery. Click on any of the below mentioned integrations with ITSM tools that you wish to setup in order to understand the features, limitations and setup instructions:
 
@@ -40,7 +126,7 @@ Integration | Description
 
 ---
 
-## 3. HR
+### 3. HR
 
 HR consists of integrations with human resource softwares used for managing recruiting, onboarding and HR related services. Click on any of the below mentioned integrations with HR tools that you wish to setup in order to understand the features, limitations and setup instructions:
 
@@ -51,7 +137,7 @@ Integration | Description
 [Bamboo HR](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/bamboohr) |  The Bamboo HR integration allows you to seamlessly connect your Bamboo HR service with the yellow.ai platform.
 
 ---
-## 4. Tools & Utilities
+### 4. Tools & Utilities
 
 To explore integrations with tools & utilities softwares, click on any of the below mentioned integrations with that you wish to setup in order to understand the features, limitations and setup instructions:
 
@@ -81,7 +167,7 @@ To explore integrations with tools & utilities softwares, click on any of the be
 
 
 ---
-## 5. Retail/ ecommerce
+### 5. Retail/ ecommerce
 
 Retail/ ecommerce consists of integrations with tools used for managing retail and ecommerce flows. Click on any of the below mentioned integrations that you wish to setup in order to understand the features, limitations and setup instructions:
 
@@ -92,7 +178,7 @@ Integration | Description
 
 ---
 
-## 6. Live Chat
+### 6. Live Chat
 
 Live Chat consists of integrations with tools used for managing agent connectivity and interactions. Click on any of the below mentioned integrations with live chat tools that you wish to setup in order to understand the features, limitations and setup instructions:
 
@@ -116,7 +202,7 @@ Integration | Description
 
 ---
 
-## 7. Payment
+### 7. Payment
 
 Payment consists of integrations with tools used for managing payment and related requests. Click on any of the below mentioned integrations with payment tools that you wish to setup in order to understand the features, limitations and setup instructions:
 
