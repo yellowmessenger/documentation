@@ -41,7 +41,7 @@ Transform your instructions with Dynamic Chat Node. This powerful node allows yo
 
 Dynamic Chat Node offers unparalleled effectiveness in guiding conversations. Experience the power of prompt-driven interactions and effortlessly elevate your user engagement.
 
-   ![](https://i.postimg.cc/gkr6KWNT/dyn1.gif)
+   ![](/img/cdp/dcn.gif)
 
 
 Learn more about [Dynamic Chat Node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode).
