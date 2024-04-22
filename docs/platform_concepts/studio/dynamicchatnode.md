@@ -40,7 +40,7 @@ To generate prompts using AI, follow these steps:
 
 1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case and extend the node where you want to include the **Dynamic chat** node. Under **Prompts** click **Dynamic chat** node.
 
-   <img src="https://hackmd.io/_uploads/ryZubuKAa.png" alt="drawing" width="80%"/>
+   <img src="https://imgur.com/PBcJG5S.png" alt="drawing" width="80%"/>
 
 * The **AI prompt generator** is displayed. 
 
