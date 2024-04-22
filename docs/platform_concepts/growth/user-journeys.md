@@ -61,7 +61,7 @@ To understand how to visualise the user journey, follow the steps below:
     > This session definition differs from the standard definition used across the dashboard. This is for more accurate visualisations. 
 
 
-    ![](https://i.imgur.com/m1UlUv4.png)
+![](https://i.imgur.com/m1UlUv4.png)
 
 3. Click the **-** sign on a flow component to view the connected flows. By hovering over any flow, you can see the following parameters:
 

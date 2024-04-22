@@ -2,6 +2,8 @@
 title: Best practices to create an Email bot
 sidebar_label : Best practices 
 ---
+Follow the below best practices to build an email bot: 
+
 
 1. Log in to cloud.yellow.ai and create a bot.
 2. Configure email channel:

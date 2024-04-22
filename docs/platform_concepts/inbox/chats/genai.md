@@ -1,6 +1,7 @@
 ---
 title: Generative AI features for inbox agents on the live chat screen
 sidebar_label : Generative AI features
+keywords : [Gen AI, AI inbox, Gen AI inbox]
 ---
 
 :::note 

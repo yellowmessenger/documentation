@@ -11,13 +11,13 @@ Using charts, graphs, and other visualizations is an effective way to make your 
 
 | Chart Type      | Description                                                                                                                                                                                                                                          |
 |-----------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Line Chart**  | Suitable for visualizing trends over time. Ideal for displaying changes in a variable, such as stock prices of a company, over a period of time.                                                                                                 |
-| **Bar Chart**   | Effective in comparing data across different categories. Ideal for comparing the sales of various products in a store.                                                                                                                               |
-| **Row Chart**   | Similar to a bar chart, used to compare data across categories, but with horizontal bars instead of vertical ones. Ideal when category labels are long, such as comparing performance of different departments in a company.                   |
-| **Funnel Chart**| Useful for showing the progression of data through different stages. Suitable for displaying the conversion rate of website visitors to leads, leads to prospects, and prospects to customers.                                                 |
-| **Count Chart** | Great for displaying the frequency of values in a dataset. Ideal for showing how frequently each letter appears in a block of text.                                                                                                               |
-| **Pie Chart**   | Excellent choice for representing how a whole is divided into parts. Useful for illustrating the proportion of expenses in a household budget.                                                                                                    |
-| **Pivot Table** | Essential for summarizing and visualizing large datasets efficiently. Offers flexibility in rearranging data and enabling interactive exploration.                                                                                               |
+| **Line Chart**  | Suitable for visualizing trends over time.                                                                                         |
+| **Bar Chart**   | Effective in comparing data across different categories. |
+| **Row Chart**   | Similar to a bar chart, used to compare data across categories, but with horizontal bars instead of vertical ones.  |
+| **Funnel Chart**| Useful for showing the progression of data through different stages.  |
+| **Count Chart** | Great for displaying the frequency of values in a dataset. |
+| **Pie Chart**   | Excellent choice for representing how a whole is divided into parts. |
+| **Pivot Table** | Essential for summarizing and visualizing large datasets efficiently. |
 
 
 ## Steps to apply visualisation
