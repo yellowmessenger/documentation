@@ -93,6 +93,9 @@ With the powerful [orchestrator](https://docs.yellow.ai/docs/platform_concepts/s
 
 <img src="https://imgur.com/3KsqgAF.png" alt="drawing" width="50%"/>  
 
+Watch a video on Inbox orchestrator bot:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dZ1zYsBXKs4?si=FXTfbk3AH8tycn5V" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 :::note
 Unified inbox will only work for bots built on the cloud platform (i.e., cloud.yellow.ai). 
