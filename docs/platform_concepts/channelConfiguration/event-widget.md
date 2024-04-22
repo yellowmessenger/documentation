@@ -36,15 +36,8 @@ ymIframe.contentWindow?.postMessage(message, window.location.origin);
 
 ### 2.1 Available events
 
-
 | Event | Functionality |
 | --- | --- |
 | ym-bot-opened | Bot opened |
 | ym-bot-closed | Bot closed |
-| ym_event_quick_reply | Quick Reply clicked |
-| ym_event_image_clicked | Image opened in preview |
-| ym_event_card_action | Card action button clicked |
-| ym-bot-loaded-on-page-reload | When the refresh context is false, the bot will receive events as soon as the page reloads |
 | ym_home | Home button clicked |
-| message-received | New message received by user that is, sent by the bot |
-| page-url-based-trigger | Whenever a notification is sent in the bot (for electron apps) |

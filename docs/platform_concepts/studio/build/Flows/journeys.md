@@ -36,7 +36,7 @@ If you have multiple bots created, choose the specific bot for which you intend 
 
 * [Create with AI Copilot](#automate-flow-creation-using-ai-copilot): This option allows you to automatically create flows based on your input. It eliminates manual processes and the need for template downloads.
  * [Create from template](#create-flow-using-a-template): This option allows you to use pre-built bot templates from Yellow.ai's marketplace to quickly build conversation flow based on your use case instead of creating it from scratch.
- * [Start from scratch](#manually-create-a-flow): This option allows you to manually create a flow using Yellow.ai's [key elements](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview#key-elements-to-build-a-flow) without relying on pre-built templates or automated tools.
+ * [Start from scratch](#manually-create-a-flow): This option allows you to manually create a flow using [key elements](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview#key-elements-to-build-a-flow) without relying on pre-built templates or automated tools.
  * [Create skill](#create-a-skill): This option allows you to create a flow to run concurrently in the background along with the main flow to perform specific tasks or action.
 
 ### Automate flow creation using AI Copilot
