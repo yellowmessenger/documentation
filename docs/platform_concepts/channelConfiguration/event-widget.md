@@ -38,6 +38,6 @@ ymIframe.contentWindow?.postMessage(message, window.location.origin);
 
 | Event | Functionality |
 | --- | --- |
-| ym-bot-opened | Bot opened |
-| ym-bot-closed | Bot closed |
+| bot-opened | Bot opened |
+| bot-closed | Bot closed |
 | ym_home | Home button clicked |
