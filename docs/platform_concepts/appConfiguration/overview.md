@@ -36,7 +36,7 @@ You can connect your account only in development environment and not in live. Fo
 4. Click **Connect**.
 5. Similarly, You can add more accounts by clicking the **+Add Account** button. You can connect up to 15 accounts per integration. 
 
-#### Step 3: Configure Webhook URL
+### Step 3: Configure Webhook URL
 
 Webhooks function as callback endpoints, sending updates to a specified URL whenever there's a change in the integration app. If you do not configure, the bot won't receive these events, potentially disrupting the integration's operation.
 
