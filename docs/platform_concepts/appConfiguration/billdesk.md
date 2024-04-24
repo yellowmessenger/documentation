@@ -1,56 +1,57 @@
 ---
-title : Billdesk
+title : Billdesk UPI integration
 sidebar_label : Billdesk UPI
 ---
 
 
-## Scope of Integration
 
-Yellow.ai Integration with Billdesk Payment Gateway allows you to create UPI Intent for WA Pay, view payment status and Send UPI notification with the yellow.ai platform. 
+Yellow.ai Integration with Billdesk UPI Payment Gateway allows you to create UPI Intent for WA Pay, view payment status and Send UPI notification with the yellow.ai platform. 
 
-## Configuration
+## Connecting BillDesk to yellow.ai
 
-Configuring the integration with Billdesk is straightforward. Follow the steps defined below to start integrating:
+You can connect your account only in development environment and not in live. For a three-tier environment, you can connect an account in Staging and Sandbox environment. Once the bot is published, it will use the integrations if they are configured in the flows.
+
 
 1. Get the KeyId, Client Id, Merchant Id, Public Key File and API Base URL from Billdesk Team.
 
 2. Upload your Public Key file in some bucket or server like (AWS-S3, SFTP, etc) and Get the public CDN Url . Note:(CDN URL should be public readable).
 
-3. Now Go to Integration page and Enter the right value in Billdesk's form to connect the billdesk Integration.
+3. On the [Cloud platform](https://cloud.yellow.ai), navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **BillDesk**. You can also search for the Cashfree app.
 
-![alt_text](https://cdn.yellowmessenger.com/NsZFcYu9H3md1666156528149.png "image_tooltip")
-
-If you have multiple accounts, follow the above mentioned steps to add each of them.
-
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
-
-### Event for receving payment confirmation on bot
-Following are the events which are currently accommodated in the Integration:
-
-Event | Description
------ | -----------
-Billdesk Payment Status | In case of payments the status can be checked with these details.
-Please Activate the Billdesk Payment Status after configuring instamojo credentials at integration page.
-
-:::info
-If you have added multiple accounts in your platform, enable events for each of those accounts.
-:::
+   ![](https://imgur.com/hzMCuo1.png)
 
 
-## Use-cases 
+4. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
+5. Enter **Key ID**, **Client ID**, **Merchant ID**, **BillDesk public key CDN URL**, **API base URL** and click **Connect**.
+6. To connect multiple accounts, click **+ Add account** and follow the instructions mentioned above. You can connect upto 15 accounts per integration.
 
-Following are the use-cases which are currently accommodated in the Integration:
+   ![alt_text](https://cdn.yellowmessenger.com/NsZFcYu9H3md1666156528149.png "image_tooltip")
 
-:::note
-When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
-:::
+
+
+### Events to enable for BillDesk UPI Payment
+
+You need to Activate the **Billdesk Payment Status** after integrating BillDesk.
+
+To know how to enable events, refer to [this doc](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-4-enable-integration-events-in-your-bot).
+
+
+## BillDesk actions from bot conversations
+
+Once the Stripe account is connected, you can perform the following actions through bot conversations: Generate UPI intent and Generate UPI collect.
+
+
+1. Go to Development/Staging environment and navigate to Studio > Build > Select the flow where you want to add the Generate payment link node.
+
+2. Click **Add node** > **Integrations** > **BillDesk**.
+
+   <img src="https://cdn.yellowmessenger.com/kWOnZfYtuAMB1666156690035.png" width="80%"/>
+
+3. In **Action**, choose your preferred action.
 
 ### 1. Generate UPI Intent
+
+Generate UPI collect BillDesk refers to a process where you create a request to collect funds from the user using UPI through the bot conversation. 
 
 Get the final amount from your cart total and call the Generate UPI Intent action node of integration, get the transaction Id and Intent URI for whatsapp pay api.
 
@@ -64,10 +65,12 @@ _ Node Input Params:-_
 |Additional Parameters|John@test.com|additional_info values that can be attached to the transaction.|
 |Additional Parameters|Some value|additional_info values that can be attached to the transaction.|
 
-![alt_text](https://cdn.yellowmessenger.com/kWOnZfYtuAMB1666156690035.png "image_tooltip")
 
-##### Note: To use in app.ym's bot use below function
-```
+:::note
+To use in the [App platform](https://app.yellow.ai) bot use below function.
+:::
+
+```json
 app.executeIntegrationAction({
     "integrationName": "billdesk",
     "action": "Generate UPI Intent",
@@ -83,7 +86,8 @@ app.executeIntegrationAction({
 })
 ```
 ##### Sample Success Response:
-```
+
+```json
 {
   "objectid": "transaction",
   "transactionid": "X7890477676443",
@@ -116,8 +120,11 @@ _ Node Input Params:-_
 |Additional Parameters|John@test.com|additional_info values that can be attached to the transaction.|
 |Additional Parameters|Some value|additional_info values that can be attached to the transaction.|
 
-##### Note: To use in app.ym's bot use below function
-```
+:::note
+To use in the [App platform](https://app.yellow.ai) bot use the below function.
+:::
+
+```json
 app.executeIntegrationAction({
     "integrationName": "billdesk",
     "action": "Generate UPI Collect",
@@ -137,7 +144,8 @@ app.executeIntegrationAction({
 })
 ```
 ##### Sample Success Response:
-```
+
+```json
 {
   "objectid": "transaction",
   "transactionid": "X7890477676443",
