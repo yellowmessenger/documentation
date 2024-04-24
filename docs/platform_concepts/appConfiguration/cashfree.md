@@ -30,21 +30,21 @@ The `Cashfree payment status` event Indicates an update in the payment status. E
 
 ## Manage Cashfree actions through bot conversation
 
-his integration enables the bot to perform the following Cashfree actions:
+This integration enables the bot to perform the following Cashfree actions:
 
-* Generate payment link
-* Create refund
+* Generate transaction ID
 
 
 :::note
 When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
 :::
 
-1. Generate Transaction ID
-    
-    Using the action nodes, you can generate transaction IDs  according to your use cases. The Transaction ID extracted can be used to initiate payments from WhatsApp pay.
+### Generate Transaction ID
 
-**![](https://lh3.googleusercontent.com/7pNpF2HUl5qyJFYQXVMwX2PX-kjMcoZy0zrFQNBVtJLbJrrQ4hzbr1l1l1Frjj7dAEt4oNI635vERcm_atJJh1o_0HmsEdN_jtfaH_o9qLqyGp8mnWzFM-nbCs3tJ5rfQl7Oh9BB8F1AdaUVN77F8zrNz2tgjKYQlcF6SdczFJ7efNwitey8aOf7qw)**
+This action sends a POST request for creating a new transaction and generates the transaction ID.
+
+
+   <img src="https://lh3.googleusercontent.com/7pNpF2HUl5qyJFYQXVMwX2PX-kjMcoZy0zrFQNBVtJLbJrrQ4hzbr1l1l1Frjj7dAEt4oNI635vERcm_atJJh1o_0HmsEdN_jtfaH_o9qLqyGp8mnWzFM-nbCs3tJ5rfQl7Oh9BB8F1AdaUVN77F8zrNz2tgjKYQlcF6SdczFJ7efNwitey8aOf7qw" width="80%"/>
 
 **Node Input Params**
 
@@ -58,12 +58,12 @@ When multiple accounts are added, select the appropriate account for each node, 
 |Customer ID|The unique Identification for the Payer|9999999999|
 |Customer Email|Email of the payer|john@test.com|
 |Order Tags|Tags that are to be attached with the order|{‘comment’: ‘note to be appended’}’|
-|Notify Url|Copy Webhook URL from cashfree card at integration page|https://dummyurl.yellowmessenger.com/integrations/genericIntegration/cashfree/x1674?id=C1f1Z1htZNZ%2BFYF6c76riwNWY%3D|
+|Notify Url|Copy Webhook URL from cashfree card at integration page|[Copy link](https://dummyurl.yellowmessenger.com/integrations/genericIntegration/cashfree/x1674?id=C1f1Z1htZNZ%2BFYF6c76riwNWY%3D)|
 
 **Sample Success Response**
 
 
-```
+```json
 {
     "cf_order_id": 2678043,
     "order_id": "order_1742302CCpwK00k2bp00fwIwblCVtyPqV",
