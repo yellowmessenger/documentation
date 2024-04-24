@@ -10,7 +10,9 @@ Click **Visualisation > Line**.
 
 **Sample use case:** 
 
-A line graph could be utilized to monitor the sales performance of a particular product category over time. Let's consider a clothing store that sells various types of apparel, including shirts, pants, and accessories. By creating a line graph, the store can track the monthly sales figures for each product category over the course of a year.
-This line graph would display each product category as a separate line, with the x-axis representing time (e.g., months) and the y-axis representing sales revenue or units sold.
+
+- Monitor the response time of the bot in addressing customer queries to ensure timely resolution of issues. By visualizing the response time data using line graphs, you can track trends and identify any potential bottlenecks in customer service processes.
+- Capture essential metrics such as page views, unique visitors, and bounce rates to gain insights into visitor behavior. Utilizing line graphs to visualize the website traffic data enables you to identify patterns, such as peak traffic hours or popular pages, and make informed decisions to optimize website content and navigation for better user engagement and retention.
+
 
 ![image](https://imgur.com/vF3Xf9W.png)

@@ -36,6 +36,9 @@ To reset your password:
 :::note
 - The green check mark under **Password must contain** indicates the strength of your password. Use a combination of upper and lower case letters, numbers, and special characters to create a strong password.
 - When SSO is enforced, you cannot change your password. 
+- Your new password cannot be the same as one of the last 5 passwords.
+- Enforced password change frequency is 180 days, that is, you must change your password once in 6 months.
+
 :::
 
 ----
@@ -138,7 +141,7 @@ Other team members who are not part of this organization won't have access to th
 
 ## Log out of yellow.ai
 
-If you are inactive for a certain period, the platform will log you out for security purposes.
+If you are inactive for 30 minutes, the platform will log you out for security purposes.
 However, this is not applicable to Inbox agents who handle tickets to ensure they respond promptly to customer queries without any disruptions.
 
 To logout manually, you can click **Logout** under the User account section.
