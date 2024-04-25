@@ -1,5 +1,5 @@
 ---
-title: Create Flows
+title: Create flows
 sidebar_label: Create flows
 tags: [AI copilot, auto flow creation, GPT-4] 
 ---

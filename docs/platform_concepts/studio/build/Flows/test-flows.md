@@ -1,5 +1,5 @@
 ---
-title: Test Flows
+title: Test flows
 sidebar_label: Test flows
 ---
 

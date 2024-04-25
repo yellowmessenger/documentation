@@ -1,6 +1,6 @@
 ---
-title: Export flow
-sidebar_label: Export flow
+title: Export flows
+sidebar_label: Export flows
 ---
 
 Flow templates offer a convenient method for exporting and reusing existing flows when building future bots. By exporting flow templates, you can easily replicate successful bot configurations and tailor them to different use cases or customize them based on specific requirements in very less time.
