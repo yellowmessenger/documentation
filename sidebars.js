@@ -667,7 +667,7 @@ module.exports = {
     
     {
       type: "category",
-      label: "Create/update user records",
+      label: "Add/update user records",
       link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/add_user_overview'},
       collapsed: true,
       items: [
