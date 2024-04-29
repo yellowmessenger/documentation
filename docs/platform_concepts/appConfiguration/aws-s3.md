@@ -1,18 +1,18 @@
 ---
-title : AWS-S3
+title : AWS-S3 integration
 sidebar_label : AWS-S3
 ---
 
 
-## Scope of Integration
 
-Yellow.ai Integration with AWS-S3 allows you to seamlessly connect your remote bucket with the yellow.ai platform. Using this integration, one can get remote files, create a bucket, delete Bucket, upload files to Bucket, getSignedUrl for a file and delete a file from bucket.
+Integration of AWS S3 with Yellow.ai enables your bot to access remote files, create and delete buckets, upload files, obtain a signed URL for a file, and delete files from the bucket from AWS account.
 
-# Configuration
 
-Configuring the integration with AWS-S3 is straightforward. Follow the steps defined below to start integrating:
+## Connecting your AWS S3 account with Yellow.ai
 
-**To integrate AWS-S3 with your bot on the platform:**
+Configuring the integration with AWS S3 is straightforward. Follow the steps defined below to start integrating:
+
+**To integrate AWS S3 with your bot on the platform:**
 
 1. AWS Account and Access Keys
    * Open the IAM console at https://console.aws.amazon.com/iam/.
@@ -20,41 +20,44 @@ Configuring the integration with AWS-S3 is straightforward. Follow the steps def
    * Choose your IAM user name (not the check box).
    * Open the Security credentials tab, and then choose Create access key.
    * To see the new access key, choose Show.  and Copy the Access Key Id and Secret Access Key.
-   * Go to IAM -> User -> click on your user -> Add Permission -> Add AmazonS3FullAccess Policy.
+   * Go to IAM > User > click on your user profile > Add Permission > Add AmazonS3FullAccess Policy.
 
-2. Go to Integration section
-3. In Integration click on the connect for the AWS-S3.
-4. Enter Access Key Id and Secret Access Key.
-![alt_text](https://i.imgur.com/vQ1MaA2.png "image_tooltip")
+2. On the Cloud platform, navigate to Development/Staging environment and go to **Extensions** > **Integrations** > **Tools & Utilities** > **AWS S3**. Alternatively, you can use the Search box to find a specific integration.
 
-5. Click on Save
-6. Once the integration is done successfully, You can find an Integration option available in addition to the existing nodes.
+   ![](https://i.imgur.com/UG4GJpt.png)
 
-7. Store AWS-S3 response in Object type variable in action-node.
-8. If you have multiple accounts, follow the above mentioned steps to add each of them.
+3. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (`_`).
 
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 5 merchant accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
+   <img src="https://i.imgur.com/uu5WNMr.png" width="70%"/>
+
+4. Enter **Access Key Id** and **Access Secret Key**.
+
+5. Click **Connect**.
+6. To connect another account, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
 
-# Use-cases 
-
-Following are the use-cases which are currently accommodated in the Integration:
-
-:::note
-When multiple accounts are added, select the appropriate account for each node, allowing you to leverage the unique functionalities of each account for their intended purposes.
-:::
 
 
-### 1. **Upload File**:- 
-  From this method you can easily upload files to a bucket.
 
-_ Node Input Params:-_                        
+## Manage AWS S3 actions through bot conversations
 
+The AWS integration enables bot to perform the following actions:
+
+Once the integration is successful, you can perform the following actions in bot conversations.
+
+1. Go to Development/Staging environment and navigate to **Studio** > **Build** > Select the flow where you want to add action node.
+2. Click **Add node** > **Integrations** > **AWS S3**.
+
+    <img src="https://i.imgur.com/9RxSlpt.png" width="60%"/>
+
+3. In **Account name**, select the account from which you'd like to perform the action. This is applicable for integrations with multiple accounts.
+
+
+### 1. Upload File
+
+This lets you upload files to the AWS bucket.
+
+**Node Input Params**                 
 
 
 |Field Name|Sample Input|Remarks|
@@ -64,10 +67,11 @@ _ Node Input Params:-_
 |bucketName*|your_bucket_name|The name of the bucket where upload the file|
 
 
-### 2. **List Objects**:- 
-Returns some or all (up to 1,000) of the objects in a bucket
+### 2. List Objects
 
-_ Node Input Params:-_                        
+Returns some or all (up to 1,000) of the objects in a bucket.
+
+**Node Input Params**:                      
 
 |Field Name|Sample Input|Remarks|
 |--- |--- |--- |
@@ -75,10 +79,11 @@ _ Node Input Params:-_
 
 
 
-### 3. **Delete File**:- 
-deletes an object from an S3 bucket
+### 3. Delete File
 
-_ Node Input Params:-_                        
+Deletes an object from an S3 bucket.
+
+**Node Input Params**:                       
 
 
 |Field Name|Sample Input|Remarks|
@@ -87,14 +92,14 @@ _ Node Input Params:-_
 |bucketName|Your_Bucket_Name|The bucket name of the bucket containing the object.|
 
 
-### 4. **Bucket Lists**:- 
+### 4. Bucket Lists
 Returns a list of all buckets owned by the authenticated sender of the request. To use this operation, you must have the s3:ListAllMyBuckets permission.
 
 
-### 5. **Get Object**:- 
+### 5. Get Object
 Retrieves objects from Amazon S3. To use GET, you must have READ access to the object.
 
-_ Node Input Params:-_                        
+**Node Input Params**:                       
 
 |Field Name|Sample Input|Remarks|
 |--- |--- |--- |
@@ -103,9 +108,10 @@ _ Node Input Params:-_
 
 
 
-### 6. **Create Bucket**:- 
+### 6. Create Bucket 
 Creates a new S3 bucket. To create a bucket, you must register with Amazon S3 and have a valid AWS Access Key ID to authenticate requests
-_ Node Input Params:-_                        
+                      
+**Node Input Params**:                       
 
 
 |Field Name|Sample Input|Remarks|
@@ -116,10 +122,10 @@ _ Node Input Params:-_
 
 
 
-### 7. **Get Signed URL**:- 
+### 7. Get Signed URL
 Get a pre-signed URL for a given file.
 
-_Node Input Params:-_                        
+**Node Input Params**:                       
 
 
 |Field Name|Sample Input|Remarks|
