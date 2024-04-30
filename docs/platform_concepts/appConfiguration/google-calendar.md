@@ -59,3 +59,10 @@ You can also read the calendar event with the event id to get the updates of tha
 
 For more information about action nodes you use here, refer this [doc](https://developers.google.com/calendar/api/v3/reference/events/)
 
+
+:::note
+
+Limitations of the current integration with Google Calendar is that only event creation is supported and not editing. 
+When an event is created using the **create event action node**, the *eventID* can be found in the response (payload) of that action node.
+
+:::
