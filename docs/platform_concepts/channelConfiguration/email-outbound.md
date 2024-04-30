@@ -185,20 +185,20 @@ To configure an SMTP using JSON, follow these steps:
     "serviceType": [
         "supportTicketing"
     ],
-    "address": "customerservice@easyshopping.id",
+    "address": "customerservice@shopping.id",
     "outboundConfig": {
         "server": "outlook.office365.com",
         "port": 587,
-        "username": "customerservice@easyshopping.id",
-        "name": "Customer Service Easy Shopping",
-        "password": "44!88NZk5yK!9@#WUgRh",
+        "username": "customerservice@shopping.id",
+        "name": "Customer Service Shopping",
+        "password": "abc",
         "securityType": "SSL",
         "useAdvanceConfiguration": true,
         "advanceConfiguration": {
             "service": "Outlook365",
             "auth": {
-                "user": "customerservice@easyshopping.id",
-                "pass": "44!88NZk5yK!9@#WUgRh"
+                "user": "customerservice@shopping.id",
+                "pass": "abc"
             }
         }
     }

@@ -1,6 +1,6 @@
 ---
-title: Manage Flows
-sidebar_label: Manage Flows
+title: Manage flows
+sidebar_label: Manage flows
 tags: [search flow, edit flow, delete flow, clone flow, add flow to category, start flow, fallback flow]
 ---
 
@@ -161,6 +161,12 @@ To move the flow to another category, follow the below step:
 
    <img src="https://imgur.com/CveSItD.png" alt="drawing" width="40%"/>
 
+## Connect two flows
+
+Connecting flows ensures seamless transitions between different conversation stages, maintaining context for a personalized user experience.
+
+To connect two flows, you can use a [switch flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#112-switch-flow) node or [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. In the case of a switch flow, the bot does not return to the original flow from which the node was triggered. While an execute flow node, allows the bot to return to the original flow after executing the designated new flow.
+
 ## Preview flow
 
 The Preview option allows you to test the selected bot flow and provides a glimpse into how the bot would appear, function, and interact with the end user. When you click **Preview**, you can perform the following actions:
@@ -190,5 +196,5 @@ You can select the following options to publish the flows:
 
 * **Publish bot**: Publishes all the flows within the bot.
 * [Publish selected flows](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#publish-specific-flows): Publishes the selected flows within the bot.
-* **Publish widget styling**: Publishes the chat widget UI and settings from lower to higher environments. This includes settings for the widget panel, bot icon, and all the settings.
+* [Publish widget styling](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#publish-widget-styling): Publishes the chat widget UI and settings from lower to higher environments. This includes settings for the widget panel, bot icon, and all the settings.
 * [Export as flow template](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow): Publishes the created bot flow as a template.

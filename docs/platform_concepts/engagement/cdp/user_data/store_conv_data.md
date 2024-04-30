@@ -95,14 +95,22 @@ To store the user’s response in User 360, in **Store Response in**, choose var
 
    ![](https://i.imgur.com/h8FfpZE.png)
 
+####  To capture property values from other variables
 
- ### Capture user property values from the bot script
+   If you want to capture user properties from other variables, use the syntax: `{{variables.variableName}}`.
 
-   Use the syntax: `data.variables.variableName`
+   <img src="https://imgur.com/Giwso6b.png" width="70%"/>
 
-   <img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
+    
+    
+   Check out the list of all the [user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties).
 
-   For example, in the sample script below, to capture the phone number as the userId, use `data.variables.phoneNumber`:
+
+
+   
+### To capture user property values from bot script/function
+
+   For example, in the sample script below, to capture the phone number as the userId:
 
    ```js
    `<script type="text/javascript">`  
@@ -131,12 +139,11 @@ To store the user’s response in User 360, in **Store Response in**, choose var
    ```
 
 
-
-### Capture user property values from Function
-   
    You can use the Function node to capture and store the variable in the respective user property.
 
-   For instance, here `returnId` is the function name containing the provided code.
+   For instance, here `returnId` is the function name containing the provided code. 
+   
+   To access property vallues from the `payload` schema above, you can use the syntax: `data.profile.payload`. 
 
 
    ```js
@@ -149,11 +156,12 @@ To store the user’s response in User 360, in **Store Response in**, choose var
       ymLib.logger.log(payload,"init--Payload");
       resolve(payload)
    });
-   ```
+```
    
    Store the response returned by the Function in the corresponding variable, in this case, 'userId`.
 
    <img src="https://i.imgur.com/qqltmgO.png" width="70%"/>
+
 
 
 ### Capture user properties from API or integration action payload
@@ -194,7 +202,7 @@ To store the user’s response in User 360, in **Store Response in**, choose var
 Once the user is identified, you can update the user properties (other than userId) using the Prompt or Vaiable nodes.
 
 :::note
-You cannot update user properties once captured. If the userId is captured again in a flow, it will map to the existing record if it already exists, or create a new userId if it does not exist. To know about user identification in Builder, see [How user records are created through conversations & unified in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
+You cannot update user ID once captured. If the userId is captured again in a flow, it will map to the existing record if it already exists, or create a new userId if it does not exist. To know about user identification in Builder, see [How user records are created through conversations & unified in User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/data_capture_convers).
 :::
 
 To update existing user properties:
