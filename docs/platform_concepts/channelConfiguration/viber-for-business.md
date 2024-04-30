@@ -11,12 +11,13 @@ Using your Viber business account, you can raise a support enquiry with an airli
 
 In this article, you will learn:
 
-1. [How to create a Viber business account?](#1-create-a-viber-business-account)
-2. [How to connect Viber business channel to your brand?](#2-connect-viber-business-channel-to-your-brand)
-3. [How to access Viber business account?](#3-to-access-viber-business-account)
-4. [How to change Webhook](#4-change-of-webhooks)
+* [How to create a Viber business account?](#create-a-viber-business-account)
+* [How to connect Viber business channel to your brand?](#connect-viber-business-channel-to-your-brand)
+* [How to access Viber business account?](#to-access-viber-business-account)
+* [How to change Webhook?](#change-of-webhooks)
+* [How to test your bot on Viber?](#test-your-bot-on-viber)
 
-## 1. Create a Viber business account
+## Create a Viber business account
 
 To create a Viber business account, you need to send your business details to our Yellow.ai support team. Based on the details provided, your Viber business account and business card are set up.
 
@@ -32,7 +33,7 @@ To create a Viber business account, you need to send your business details to ou
 After activating your account, if you want to change the information related to your business, you need to reach our support team. The support team will request Viber businesses to change the required information.
 :::
 
-### 1.1 Add your business details
+### Add your business details
 
 Provide all your business details as per the information in the following table:
 
@@ -47,7 +48,7 @@ Business name | Enter the name of the company to appear in your monthly billing 
 | Business launch date | Select the date when you want your Viber business account to be activated. |
 | Warranty letter | Share the [Viber business warranty letter](/files/Viber-business-warranty-letter.docx) in the expected format on the company’s letter head. This warranty letter is required to ensure that the company adheres to Viber's guidelines and legal requirements when sending messages to users, including obtaining consent from opted-in customers, complying with applicable laws, following Viber's service messages guidelines, and preventing unauthorized use of the verified messages channel by third parties.  | 
 
-### 1.2 Setup your business card
+### Setup your business card
 
 To set up a business card, you need to provide the details of your brand to appear on Viber such as your **business name**, **description**, **address**, **phone number**, **website**, and **logo**. Ensure that, you send the logo images with a size of **50\*50, 65\*65, 100\*100, 130\*130, 360*280** (mandatoy). The supported image types are JPG and PNG
 
@@ -55,7 +56,7 @@ To set up a business card, you need to provide the details of your brand to appe
 
 After creating an official Viber business account, a unique business Id or service Id is created for your brand. You need to use these details while connecting your brand to Viber business channel.		
 		
-## 2. Connect Viber business channel to your brand
+## Connect Viber business channel to your brand
 
 To connect Viber's business channel to your brand, you need to follow these steps:
 
@@ -75,7 +76,7 @@ To connect Viber's business channel to your brand, you need to follow these step
 	
 	![](https://imgur.com/698n2UW.png)
 	
-## 3. To access Viber business account
+## To access Viber business account
 	
 To access your Viber business account, follow these steps:
 	
@@ -83,6 +84,24 @@ To access your Viber business account, follow these steps:
 2. Replace <<service_ID>> with your account service ID in the generic URL format, viber://chat?service=<<service_ID>>. For example, viber://chat?service=12345
 3. Click on the link to navigate to the Viber business account in the app.
 	
-## 4. Change of Webhooks
+## Change of Webhooks
 	
 While switching from a development to Production environment (in case of 2-tier platform) and from Sandbox -> Staging -> Production (in case of 3 tier), it is important to change the Webhook. In order to change the Webhook, you need to raise a ticket to the yellow product team with Viber business service ID and bot ID details.
+
+## Test your bot on Viber
+
+After connecting your bot to Viber, you can test your bot by downloading the Viber app on your mobile device from the Playstore.
+
+To test your bot on Viber, follow these steps:
+
+1. Open the Viber app that you have downloaded on your mobile device and search for your bot.
+
+2. Search for your bot and start the conversation to test the chatbot. Ensure that you have created the bot with intents and configured the flows with the same intent.
+
+   <img src="https://imgur.com/FtvF3yR.png" width="40%"/>
+    
+* If the intent does not match, the bot should be able to respond with a fallback message.    
+
+3. To view the entire conversation between the bot and user, navigate to the **Inbox** module in the platform and select **Bot messages** in the **Chats** section.
+
+   ![](https://imgur.com/8Zjimdm.png)
