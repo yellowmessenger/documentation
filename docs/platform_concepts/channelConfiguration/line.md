@@ -44,7 +44,7 @@ In this section, you can view the character limitations of Line channel.
 You can create a Line business account using the [Line official account](https://www.linebiz.com/jp-en/other/) app or website. Before creating an account, you need to choose the account type and subscription plan:
 
 * Account types: Verified, Unverified, and Premium ID accounts.
-* Account subscription plans: Free / Basic (or Light) / Pro (or Standard).
+* Account subscription plans: Free, Basic (or Light), and Pro (or Standard).
 
 To create a Line business account, follow these steps:
 
@@ -90,15 +90,22 @@ To set up Line channel using Developer portal, follow these steps:
  
    ![](https://i.imgur.com/3Mzjnoj.png)
    
-4. After creating a Provider, you need to add a channel to it. 
-5. To add a channel to a Provider that you have created, in the **Channels** tab, click **Create a Messaging API Channel**. 
+* After creating a provider, you need to add a channel to it. 
+
+4. To add a channel to a Provider that you have created, in the **Channels** tab, click **Create a Messaging API Channel**. 
 
    ![](https://i.imgur.com/6t4XBTq.png)
 
-6. Enter the required details and click **Create**.
+5. Enter the required details and click **Create**.
 
-   ![](https://i.imgur.com/PSsaHF0.png)
-7. Your channel will be successfully set up with the channel token and secret ID.    
+   ![](https://i.imgur.com/PSsaHF0.png)   
+
+* Your channel will be successfully set up with the channel access token.
+
+6. To copy the channel access token, go to **Messaging API** and copy the channel access token to connect your bot with Line.
+
+   ![](https://imgur.com/2LaYsJa.png)   
+
 
 ## Connect Line channel to your bot
 
@@ -112,41 +119,29 @@ To configure the Line channel on the Yellow.ai platform, follow the below steps:
 
    ![](https://imgur.com/Sx7dnqu.png)
    
-2. Enter **Line channel token** and **Line channel secret** Id and click **Save**.  
+3. Enter **Line channel token** and click **Save**.  
    
    ![](https://imgur.com/D0L4iiV.png)
 
-3. Your Line channel will be successfully connected. 
+* Your Line channel will be successfully connected. 
 
-## 4. Setup webhook on Line channel 
+4. Copy the webhook URL to setup a webhook on Line.
 
+## Setup webhook on Line channel 
 
 After connecting your bot to the Line channel, you need to setup a webhook on Line. Webhooks allow bots to connect to a channel’s API and receive events in real time. This allows your bot to quickly respond to user requests.
 
 To setup a webhook on Line channel, follow these steps:
 
-1. Navigate to [LINE Account Manager](https://manager.line.biz/) and select the **Account**.
+1. Navigate to [LINE Developers](https://developers.line.biz/console/) and select the **Provider**.
 
-   ![](https://i.imgur.com/GswXaIJ.png) 
+   ![](https://imgur.com/q28C6Sd.png) 
 
-2. In the **Home** tab, click **Settings**.
+2. Go to **Messaging APIs**, enter the Webhook URL that you have copied from the Yellow.ai platform and click **Update**.
 
-   ![](https://i.imgur.com/5QpdLa7.png)
-  
-3. Select **Messaging APIs** under **Settings**. 
-
-   ![](https://i.imgur.com/8x1ONUw.png)
-   
-4. Under **Messaging APIs**, enter the Webhook URL and click **Save**.
-
-:::note
-Contact **support@yellow.ai** for the Webhook URL.
-:::
-
-   ![](https://i.imgur.com/kCKdgH2.png) 
-
+   ![](https://imgur.com/cdUxRyU.png)
  
-5. You can test your bot after configuring a webhook.
+* You can now test your bot after configuring a webhook.
 
 ## Test your bot on Line
 
@@ -155,17 +150,59 @@ To test your bot on Line, you have to download Line from the Playstore or App St
 To test your bot on Line, follow these steps:
 
 1. Open your Line app and Click **Add**.
+
    <img src="https://i.imgur.com/SS1y6jO.png" alt="drawing" width="40%"/>
-2. You can select either the **QR Code** or the **Search** option to chat with your bot. 
+   
+2. You can select either the **QR Code** or the **Search** option to chat with your bot.
+ 
    <img src="https://i.imgur.com/7QbrTFY.png" alt="drawing" width="40%"/> 
+   
 3. Navigate to the LINE **Developers Console > Providers > Channel > Messaging APIs**. In this section, you can see the **QR Code** and **Bot basic ID**.
+
    ![](https://i.imgur.com/tVcOmkb.png)
+   
 4. You can scan the LINE **QR Code** or search using LINE's **Bot basic ID** for your business.<br/>
         • If you select the **Search** option, you can copy the **Bot basic ID** and paste it into the search bar, and the account associated with that ID will be displayed on your Line app screen.<br/>
         • If you select the **QR Code** option, the account associated with the QR Code is displayed on your Line app screen.
    
       <img src="https://i.imgur.com/6Wb9U7r.png" alt="drawing" width="70%"/>
+      
 5. Click **Add** to start the conversation with your bot.
-   <img src="https://i.imgur.com/QsSbRKw.png" alt="drawing" width="40%"/> 
-6. Once you have tested your bot, the configuration of the Line channel for your business is completed.
+ 
+   <img src="https://imgur.com/FXXkLCL.png" alt="drawing" width="40%"/>
+   
+* Once you have tested your bot, the configuration of the Line channel for your business is complete.
 
+## Configure navigation options on Line app
+
+You can add a rich menu element within the Line app, allowing users to  access the menu with a single tap at any moment during their conversation. This option improves navigation and interaction, resulting in a more seamless experience.
+
+To configure navigation options on Line app, follow these steps:
+
+1. On the Line developer portal and select your provider > **Messaging API** > under **LINE official account** features  > click any of the  **Edit** options, coressponding to the features.
+
+   ![](https://imgur.com/wSGm6um.png)
+
+* This will navigate you to the new tab.   
+
+2. Go to **Home** > expand chat screen and select **Rich menus** > click **Create a rich menu**.
+
+    ![](https://imgur.com/UrO2U1L.png)
+
+2. Define the following details and click **Save**. 
+
+Option | Description
+------ | -----------
+**Title** | Enter the name of the menu. Note that, titles are only for management purposes. Users cannot see them.
+**Display period** | Choose the display period untill when the rich menu should display on your Line app.
+**Template** | Select either **Large** or **Compact** template. Based on the selected template you can preview it.
+**Image** | You can either choose the downloaded image from your local folder or you can customize it based on your requirements. You can adjust the image by seeing it in the Preview section.<br/><img src="https://imgur.com/whp0NaU.png" width="80%"/>
+**Action type** | Select the action type for each button, such as **Link**, **Text**, **Coupon**, or **No action**.<br/> <img src="https://imgur.com/O25QYup.png" width="80%"/>
+**Menu bar label** | Choose **Menu** or **Custom label** and enter the desired text. Under Custom label, you can enter the text that has to be displayed in the Menu bar.
+**Default behavior** | You can select either **Shown** to display the selected image  or **collasped** to hide the image.
+
+<img src="https://imgur.com/6mYRdYB.png" width="90%"/>
+
+3. Once the setting is done, go to **Line** app, to view the configured navigation options. 
+
+   <img src="https://imgur.com/0VNWOIP.png" width="40%"/>
