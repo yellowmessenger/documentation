@@ -10,13 +10,23 @@ The CleverTap integration allows you to create templates on Yellow.ai and run ca
 Contact your account administrator from CleverTap to configure the integration on CleverTap's end.
 :::
 
-## 1. Integration process
+## Limitations of CleverTap integration
+
+The CleverTap integration does not support the following: 
+1. The text in a header cannot be dynamically changed.
+2. Media formats supported within the header are png, jpg and mp4.
+3. Error codes in callbacks from the WA server.
+4. Dynamic quick replies.
+
+
+## CleverTap Integration process
 
 To integrate Yellow.ai with CleverTap, follow these steps - 
 
-1. Navigate to **Integrations** and search for CleverTap under **All integrations**.
+1. On the Cloud platform, navigate to Development/Staging environment and go to **Extensions** > **Integrations** > **Tools & Utilities** > **CleverTap**. Alternatively, you can use the Search box to find a specific integration.
 
-   ![](https://i.imgur.com/kUvNRVp.jpg)
+   ![](https://i.imgur.com/UG4GJpt.png)
+
 
 2. Generate and copy the API key and paste it with in the Authorization header over on CleverTap. 
 3. Enable Postback URL from Preferences in Engage. To know how to enable this from Preferences, see [Notification Engine](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#14-send-delivery-status-to-webhook).
@@ -44,18 +54,12 @@ To integrate Yellow.ai with CleverTap, follow these steps -
 
    ![](https://i.imgur.com/4KzE6d1.png)
 
-10. If you have multiple accounts, follow the above mentioned steps to add each of them.
+10. If you have multiple accounts, Click **+ Add account** and follow the above mentioned steps to add each of them. 2. You can add a maximum of 15 accounts.
+
 
 :::note
 1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 accounts.
 3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
 4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
 :::
 
-## 2. Limitations
-The CleverTap integration does not support the following: 
-1. The text in a header cannot be dynamically changed.
-2. Media formats supported within the header are png, jpg and mp4.
-3. Error codes in callbacks from the WA server.
-4. Dynamic quick replies.

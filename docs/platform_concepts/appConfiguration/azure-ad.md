@@ -1,5 +1,5 @@
 ---
-title : Azure AD
+title : Azure AD integration
 sidebar_label : Azure AD
 ---
 ## Introduction
@@ -22,30 +22,30 @@ For connecting Azure AD with YM bot, following details need to be obtained using
 3. Client Secret
 
 
-## Steps to configure App in Azure AD:
+## Steps to configure App in Azure AD
 
-**Step 1:** Go to [portal.azure.com](https://portal.azure.com/) > Active Directory > App Registrations.
+1. Go to [portal.azure.com](https://portal.azure.com/) > Active Directory > App Registrations.
 
-![](https://i.imgur.com/CcHq8fL.png)
-
-
-**Step 2:** Register a new app for the chatbot (if not already registered)
-
-**Step 3:** Copy and Save the Application/Client ID and tenant ID from overview section.
+   ![](https://i.imgur.com/CcHq8fL.png)
 
 
-![](https://i.imgur.com/CcHq8fL.png)
+2. Register a new app for the chatbot (if not already registered)
+
+3. Copy and Save the Application/Client ID and tenant ID from overview section.
 
 
-**Step 4:** Go to Certificates & Secrets > New client secret > Fill the description & select expires to Never, After clicking on Add button a Client Secret will be generated, save the value of the Client Secret.
+   ![](https://i.imgur.com/CcHq8fL.png)
 
-**Step 5:** Goto Authentication > Add a platform > Web > Add the redirect url > Save.
-Redirect-Url: https://app.yellowmessenger.com/integrations/azureauth/
 
-**Step 6:** Add / Remove permission and Grant Admin consent for the App.
-Goto API Permissions > Add the required permissions.
+4. Go to Certificates & Secrets > New client secret > Fill the description & select expires to Never, After clicking on Add button a Client Secret will be generated, save the value of the Client Secret.
 
-![](https://lh6.googleusercontent.com/z37T-8_2hO-v88FOY15bYZs3ZhNy7HK2hX3mR_uKF6Qh1L77cnBuHBc2IPXZX_Qm-glHTF5mBPkQnWNVa2eo3t6MmkDGhQWrpg-jDZdVWr3So_JH7QKeS9milnNcDW7YWTDj1dhP)
+5. Goto **Authentication** > **Add a platform** > **Web** > **Add the redirect URL** > **Save**.
+
+   Redirect-Url: https://app.yellowmessenger.com/integrations/azureauth/
+
+6. Add/Remove permission and Grant Admin consent for the App.
+
+7. Goto API Permissions > Add the required permissions.
 
 
 **Common permission:**
@@ -60,23 +60,21 @@ Goto API Permissions > Add the required permissions.
 Graph Permission: https://docs.microsoft.com/en-us/graph/permissions-reference
 
 
-## Steps to configure registered app in YM bot:
-1. Go to the YM bot > Configuration > Integrations > Azure Active Directory
-2. Enter the obtained Tenant ID, Client ID, Client Secret
+## Steps to integrate Azure app with yellow.ai bot:
+1. On the Cloud platform, navigate to Development/Staging environment and go to **Extensions** > **Integrations** > **Tools & Utilities** > **Azure**. Alternatively, you can use the Search box to find a specific integration.
+   ![](https://i.imgur.com/UG4GJpt.png)
+
+2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (`_`).
+3. Enter the obtained **Tenant ID**, **Client ID**, **Client Secret**.
 3. Enter the API version to v2.0
-4. Enter the required scope > Save
+4. Enter the required scope.
+5. Click **Connect**.
 
 
-![](https://i.imgur.com/IfoUcrn.png)
+   ![](https://i.imgur.com/IfoUcrn.png)
 
-5. If you have multiple accounts, follow the above mentioned steps to add each of them.
+5. If you want to connect multiple accounts, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
 
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
 
 
 **Obtain Azure AD** **Login url:**
@@ -140,6 +138,7 @@ Response
 4. [Update password](https://docs.microsoft.com/en-us/graph/api/resources/passwordprofile?view=graph-rest-1.0)
 
 **Graph APIs:**
+ 
  [https://docs.microsoft.com/en-US/graph/api/overview?view=graph-rest-1.0](https://docs.microsoft.com/en-US/graph/api/overview?view=graph-rest-1.0)
 
 **Graph Explorer:** [https://developer.microsoft.com/en-us/graph/graph-explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)

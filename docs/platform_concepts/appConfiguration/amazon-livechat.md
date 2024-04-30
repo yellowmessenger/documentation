@@ -3,13 +3,16 @@ title : Amazon Connect Live Chat
 sidebar_label : Amazon Connect Live Connect
 ---
 
-Your yellow.ai account can be integrated with Amazon Connect Live Chat through this integration. This will help you connect your chats with live agents.
 
-## 1. Use Case
+Integrating Amazon Connect Live Chat with your bot streamlines the transition of chats between automated responses and live agents. This integration empowers your bot to efficiently manage initial inquiries and routine tasks. When faced with complex issues or when human interaction is preferred, the chat seamlessly transfers to a live agent for personalized assistance. This approach enhances customer satisfaction by providing swift resolutions while optimizing agent productivity.
 
-This integration lets you use raise ticket node to start a conversation with Amazon connect agent, and once the conversation gets initiated, the user can talk to the agent.
+## 1. Amazon Connect Live Chat through bot conversations
 
-<img src="https://i.imgur.com/HHKLO97.png" alt="drawing" width="100%"/>
+
+This integration lets you use raise ticket node to start a conversation with Amazon connect agent, and once the conversation gets initiated, bot users can easily communicate with the assigned Amazon agent.
+
+
+   <img src="https://i.imgur.com/HHKLO97.png" alt="drawing" width="70%"/>
 
 :::note
 1. In Raise ticket action node, Amazon Connect Live Agent Custom Fields will accept object type variable.
@@ -21,11 +24,19 @@ Example:
 {“ticketId”:”hello”}
 ```
 
-## 2. Configuration
+## 2. Connecting Amazon Connect Live Chat with Yellow.ai
+
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
+
+
 
 Follow the below mentioned steps to set up this integration:
 
-1. Inside your project, navigate to the **Integrations** tab and on the left side bar select **Live Chat**. You will find **Amazon Connect Live Chat**.
+1. Switch to the Development/Staging environment and go to **Extensions** > **Integrations** > **Live chat** > **Amazon Connect Live Chat**.
+
+   ![](https://imgur.com/N5z6nSm.png)
+
+Inside your project, navigate to the **Integrations** tab and on the left side bar select **Live Chat**. You will find **Amazon Connect Live Chat**.
 
 <img src="https://i.imgur.com/oFUZHBc.png" alt="drawing" width="100%"/>
 

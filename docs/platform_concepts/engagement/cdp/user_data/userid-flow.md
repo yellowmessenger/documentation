@@ -94,13 +94,17 @@ Select this option if the unique identifier of your users is any property other 
 
    Collect the selected user property using the [Prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and use **Save response in** to map the variable to the user property.
 
-   #### 2. To capture property values from the bot script
+   #### 2. To capture property values from other variables
 
-   Use the syntax: `data.variables.variableName`
+    If you want to capture user properties from other variables, use the syntax: `{{variables.variableName}}`
 
-   <img src="https://i.imgur.com/vwCUkDo.png" width="60%"/>
+    <img src="https://imgur.com/Giwso6b.png" width="70%"/>
 
-   For example, in the sample script below, to capture the phone number as the userId, use `data.variables.phoneNumber`:
+
+   #### 3. To capture user property values from bot script
+
+
+   For example, in the sample script below, to capture the phone number as the userId:
 
    ```js
    `<script type="text/javascript">`  
@@ -129,12 +133,11 @@ Select this option if the unique identifier of your users is any property other 
    ```
 
 
+You can use the Function node to capture and store the variable in the respective user property.
 
-   #### 3. To capture property values from Function
+   For instance, here `returnId` is the function name containing the provided code. 
    
-   You can use the Function node to capture and store the variable in the respective user property.
-
-   For instance, here `returnId` is the function name containing the provided code.
+   To access property vallues from the `payload` schema above, you can use the syntax: `data.profile.payload`. 
 
 
    ```js
@@ -147,20 +150,20 @@ Select this option if the unique identifier of your users is any property other 
       ymLib.logger.log(payload,"init--Payload");
       resolve(payload)
    });
-   ```
+```
    
    Store the response returned by the Function in the corresponding variable, in this case, 'userId`.
 
    <img src="https://i.imgur.com/qqltmgO.png" width="70%"/>
 
 
-   #### 4. To capture property values from payload
+   #### 4. To capture property values from API response
 
-   First, store the payload in an object variable.
+   First, store the response payload in an object variable.
 
    <img src="https://i.imgur.com/ZdyD8u7.png" width=""/>
 
-   Sample payload
+   Sample response payload
 
    ```js
    {

@@ -1,6 +1,6 @@
 ---
 sidebar_label: Add individual users
-title: Add individual users through User 360 UI
+title: Add or update individual users through User 360 UI
 ---
 
 ## Add user
