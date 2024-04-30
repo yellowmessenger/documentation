@@ -57,24 +57,6 @@ Once you have set up the Instagram bot, to initiate the personailzed conversatio
 
 By default, these events are inactive, but you can enable them as per your requirements.
 
-### Enable Instagram events on Studio
-
-1. Navigate to **Studio** > **Event** > **Instagram events**. You will see all the events related to Instagram with the prefix Instagram `<eventName>`.
-    
-     ![](https://imgur.com/SJU5fio.png)
-    
-2. Navigate to the event that you want to enable and click on the **More options** icon > **Activate**.  
-    
-3. Go to a flow and include that event in the Start node, and [build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) to carry out the action when that event occurs.
-    
-     <img src="https://i.imgur.com/K3b094r.png" alt="drawing" width="70%"/>
-    
-4. Once you enable the required Instagram events, you can use these Instagram events to:
-  
-  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event)
-  * [Store user variables that come from user events into DB or User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations) and create personalized conversations using the stored data.
-    
-
 ### Supported Instagram events
 
 
@@ -83,7 +65,28 @@ By default, these events are inactive, but you can enable them as per your requi
 instagram-story-reply | Bot receives an event with the available information when a user replies to the business Instagram story. | Instagram story reply enables businesses to engage with their audience in real-time. When users reply with inquiries such as product details, availability, pricing, or comments about products featured in the story, businesses can start initiating conversation.<br/> <img src="https://i.imgur.com/iI0hUxL.png" alt="drawing" width="60%"/>
  instagram-story-mention | Bot receives an event with the available information when a user mentions the business in their insta story. | Users can share their feedback by mentioning the brand in their Instagram stories. This can include sharing their thoughts on the product, overall shopping experience, or any positive aspects they wish to highlight.<br/><img src="https://i.imgur.com/QFXBUxg.png" alt="drawing" width="60%"/>
 instagram-media-share | Bot receives an event with the available information when the business shares a media from a post. | When businesses post details about their products, users have the ability to share this media with their followers. This enables businesses to reach a wider audience with their products.<br/> <img src="https://i.imgur.com/CIKJQSf.png" alt="drawing" width="60%"/>
-instagram-comment | Bot receives an event with the available information when a user comments on the business insta post. | When businesses share details about their products on Instagram, users can engage directly by commenting on the post. These comments may include inquiries about product specifications, availability, pricing, or any additional details. <br/>**Note:** To display the comments in the comment section under the respective comment, contact the [Integrations](mailto:support@yellow.ai) team. By default, replies are currently shown in direct messages.  |   
+instagram-comment | Bot receives an event with the available information when a user comments on the business insta post. | When businesses share details about their products on Instagram, users can engage directly by commenting on the post. These comments may include inquiries about product specifications, availability, pricing, or any additional details. <br/>**Note:** To display the comments in the comment section under the respective comment, contact the [Integrations](mailto:support@yellow.ai) team. By default, replies are currently shown in direct messages.  | 
+
+### Enable Instagram events
+
+
+1. Navigate to **Extensions** > **Channels** > **Instagram**. You will see the list of connected accounts (if available). 
+2. Click on the **Events** button.
+
+   ![](https://i.imgur.com/4eg5AeX.png)
+
+3. Navigate to the specific event and click **Activate**.
+
+   ![](https://i.imgur.com/elR6rxS.png)
+    
+            
+4. Once you enable the required Instagram events, you can use these Instagram events to:
+  
+  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event)
+  * [Store user variables that come from user events into DB or User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations) and create personalized conversations using the stored data.
+    
+
+  
 
 ## Setting up Instagram bot
 
@@ -224,12 +227,23 @@ If you want to disconnect your page, which is linked to Instagram, click **Disco
 
    <img src="https://imgur.com/JMZVUGm.png" alt="drawing" width="70%"/>
 
-* This will connect your Facebook page to the Instagram account.
+* This will connect your Facebook page to the Instagram account. 
 
-   ![](https://imgur.com/jqPYrfq.png)
+   ![](https://i.imgur.com/ikU6FUW.png)
+
+   The table below provides description of each option:
+
+   Option | Description 
+   ------ | -----------
+   Facebook Page | This is the primary Facebook page that is currently connected.
+   Instagram Page | This indicates the associated Instagram page connected to the Facebook account.
+   Enable Instagram Comment  | This allows you to enable or disable the ability to receive comments from Instagram posts.
+   Comment Response | This setting allows you to choose where comments from Instagram posts will be responded to: either as a comment on the post itself or as a direct message in the inbox.
+   Delete icon | Click this icon to remove a specific connected page.
+   Manage conversaction starter | Allows you to configure the initial conversation when a user comments for the first time on a post. For more details, see [Add conversation starters](#add-conversation-starters).
 
 :::note
-If you want to remove the account, click **Disconnect**.
+If you wish to remove the entire account, click **Disconnect**. This action removes all connected pages associated with the account.
 :::  
    
 ### Add conversation starters
