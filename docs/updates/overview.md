@@ -14,7 +14,6 @@ Say goodbye to the old switcher and enjoy a fresh perspective on platform naviga
 - It also allows internal modules to be more discoverable, giving the user a holistic view of what they can do or access.
 - Channels & Integrations have moved to a common placeholder called “Extensions”, making it easier to find and configure everything needed in one place.
 
-
    ![](https://i.imgur.com/6ELlczr.png)
 
 Explore our [Cloud platform](https://cloud.yellow.ai).

@@ -27,37 +27,54 @@ Create a CSV file with user details and ensure that the values passed in the CSV
 A CSV file cannot exceed 30 MB.
 :::
 
-1.  **Use appropriate header names**: It becomes easy to map headers when their names are similar to user properties. It also leverages [Auto column Mapping](#auto-mapping-of-csv-columns) feature that simplifies the process of mapping headers by matching them with user properties that have similar names.
-2.  **Use the right data type**: Data type validated before importing each user record. If the validation fails, adding or updating the record will fail. 
+1.  **Use matching header names**: Ensure that the column names in the CSV file exactly match the column names specified during the creation of the audience table. It also leverages [Auto column Mapping](#auto-mapping-of-csv-columns) feature that simplifies the process of mapping headers by matching them with user properties that have similar names.
+   - These column names are case-sensitive. 
+   - Make sure there are no spaces between the column names within the CSV file. Avoid the format where spaces are present between column names, like name , email ,tags.
+   - Do not include columns such as 'updated', 'inserted', 'segments' in the CSV file.
+
+2.  **Use the right data type**: Data type validated before importing each user record. If the validation fails, adding or updating the record will fail.  For example, the email data type should be in the form 'test@gmail.com', not 'test.com'.
+
 
 
    The following table shows the data types of each user property with accepted values.
 
 
-| Data Type | Accepted Value |
-|-----------|----------------|
-| String | Any string value. |
-| List | Semicolon ; separated values without spaces. |
-| email | A valid email address format. |
-| Number | Any integer or decimal number with max of 15 digits. |
-| Phone | A valid phone number with country code. |
-| url | A valid URL format. |
-| date | ISO date format - `YYYY-MM-DD`. |
-| dateTime | ISO standard date-time format - `YYYY-MM-DD hh:mm:ss`. |
-| time | Standard time format - `hh:mm:ss` |
-| boolean | Value could be `true` or `false`, this is case insensitive. |
-| tags | Semicolon ; separated values without spaces. Example: tag1;tag2 
+   | Data Type | Accepted Value |
+   |-----------|----------------|
+   | String | Any string value. |
+   | List | Semicolon ; separated values without spaces. |
+   | email | A valid email address format. |
+   | Number | Any integer or decimal number with max of 15 digits. |
+   | Phone | A valid phone number with country code. |
+   | url | A valid URL format. |
+   | date | ISO date format - `YYYY-MM-DD`. |
+   | dateTime | ISO standard date-time format - `YYYY-MM-DD hh:mm:ss`. |
+   | time | Standard time format - `hh:mm:ss` |
+   | boolean | Value could be `true` or `false`, this is case insensitive. |
+   | tags | Semicolon ; separated values without spaces. Example: tag1;tag2 
 
-3. **Prefix country codes** to mobile numbers - CountryCode+PhoneNumber. For example, an Indian phone number could be 919011111111 where `91` is the country code and rest is a phone number.
-4. **Include all the properties** you want to import such as firstname, lastname, gender, country, city, timezone, email optin, sms optin, or any custom property that is added for the project.
-5.  **Add tags** that you want to associate with each user. To add multiple tags to a user, use a semicolon (;) between each tag without space. For example, `regular_customers;campaign_responders`.
+Here are the preliminary checks that must be adhered to before uploading a CSV file to the audience table:
+
+
+3. **Phone number formatting:** Validate the proper formatting of phone numbers. If dealing with `app.ym`, 10-digit phone numbers are acceptable. However, for `cloud.ym`, phone numbers must include a country code (e.g., 919000500000 instead of 9000500000).
+
+4. **Avoid Spaces in Column names:** Refrain from including spaces in the column names. Follow the preferred format: name, email, tags. Avoid the format where spaces are present between column names, like name , email ,tags.
+
+5. **Validation of records:** Any records that fail to meet the validation criteria will not be processed.
+
+6. **Consider upload time:** Keep in mind that uploading a large volume of records can be time-consuming.
+
+7. **Minimize null columns:** Ensure that null columns are minimized or avoided.
+
+
+8. **Include all the properties** you want to import such as firstname, lastname, gender, country, city, timezone, email optin, sms optin, or any custom property that is added for the project.
+9.  **Add tags** that you want to associate with each user. To add multiple tags to a user, use a semicolon (;) between each tag without space. For example, `regular_customers;campaign_responders`.
 
    ![](https://i.imgur.com/8CKrTCS.jpg)
 
-6. **Save the file in the right CSV format**: When creating the CSV file from tools like Microsoft Excel, ensure you save it in the format CSV (Comma delimited).
+10. **Save the file in the right CSV format**: When creating the CSV file from tools like Microsoft Excel, ensure you save it in the format CSV (Comma delimited).
   
 :::note
-* It is required to pass phone numbers with country codes in a CSV file.
 * You can associate any column header to `userId`. Ensure the column contains unique identifiers such as phone number or email address. There is no need to mention it separately in the CSV file.
 :::
 
