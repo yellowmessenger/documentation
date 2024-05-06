@@ -473,7 +473,18 @@ To update a user property in a flow campaign:
 
 ## Add goal
 
-A goal is an activity that a user performs after receiving the campaign message. You can also set the objective of a flow campaign. Once a user achieves a goal, the flow automatically exits the user from the campaign. 
+A goal is an activity that a user performs after receiving the campaign message. You can also set the objective of a flow campaign. Once a user achieves a goal, the flow automatically exits the user from the campaign.
+
+For example:
+Product promotion: 
+
+1. **E-commerce Campaign:**
+   - **Description:** Promote new products via messaging.
+   - **Goal:** Track clicks on product links.
+
+2. **Event Registration Campaign:**
+   - **Description:** Encourage event sign-ups.
+   - **Goal:** Track clicks on "Register Now" button.
 
 To add a goal:
 
