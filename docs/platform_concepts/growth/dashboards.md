@@ -90,8 +90,7 @@ To learn more about creating a saved report, refer to [custom tables](https://do
 <img  src="https://i.imgur.com/MFgmkwk.png"  width="70%"/>
 :::
 
-2. To add a widget to a dashboard with existing widgets, click **+Add widget** on the top right. Select from the existing widgets (reports). 
-    - Multiple reports can be selected at once. You can also click **+Create new widget** to create new widgets. 
+2. To add a widget to a dashboard with existing widgets, click **+Add widget** on the top right. Select from the existing widgets (reports). Multiple reports can be selected at once. You can also click **+Create new widget** to create new widgets. 
 ![](https://i.imgur.com/ZXJkgqk.png)
 3. Click **Add**. 
 
