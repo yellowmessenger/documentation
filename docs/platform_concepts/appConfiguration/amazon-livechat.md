@@ -36,8 +36,6 @@ Follow the below mentioned steps to set up this integration:
 
    ![](https://imgur.com/N5z6nSm.png)
 
-Inside your project, navigate to the **Integrations** tab and on the left side bar select **Live Chat**. You will find **Amazon Connect Live Chat**.
-
 <img src="https://i.imgur.com/oFUZHBc.png" alt="drawing" width="100%"/>
 
 2. Fill in the following fields to connect your yellow.ai bot with an Amazon Connect Live chat account.

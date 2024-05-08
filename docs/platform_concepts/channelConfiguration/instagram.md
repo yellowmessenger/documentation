@@ -3,6 +3,8 @@ title : Instagram
 sidebar_label : Instagram
 ---
 
+## Overview
+
 Instagram is a social networking platform. This integration enables your insta users to seamlessly interact with our bot directly from your Instagram account.
 
 You can also promote your products and services, engage with customers by responding to their comments and queries, and increase your brand’s visibility.
@@ -19,7 +21,7 @@ These features help you engage with your audience on Instagram and provide a mor
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XIF3YGpzsD0" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>
 
 
-## List of supported messages by Yellow.ai platform
+### List of supported messages by Yellow.ai platform
 
 | **Action type** | **Message type**   | **Bot Support?** | **User Support**?                                                |
 |------|------|---------|-------|
@@ -35,7 +37,7 @@ These features help you engage with your audience on Instagram and provide a mor
 | Media Share     | IGTV                             | No                                                                | No                                                                |
 | Media Share     | Reels                            | No                                                                | No                                                                |
    
-## Character limitations of Instagram 
+### Character limitations of Instagram 
 
 In this section, you can view the character limitations of Instagram channel.
 
@@ -51,44 +53,10 @@ Carousel | <ul><li> A maximum of 80 characters are supported for the title and d
 * Agent can reply to the private replies within 7 days (except on Instagram Live) of the creation date of the comment.
 * Private replies do not open the 24-hour window for standard messaging.
 
-## Instagram events
-
-Once you have set up the Instagram bot, to initiate the personailzed conversations for particular actions like story replies, story mentions, media shares, and comments use the below events. You can automate response to user activities on Instagram by triggering specific flows based on Instagram events.
-
-By default, these events are inactive, but you can enable them as per your requirements.
-
-### Supported Instagram events
-
-
- Event | Description | Sample use case
----------|------|------------|
-instagram-story-reply | Bot receives an event with the available information when a user replies to the business Instagram story. | Instagram story reply enables businesses to engage with their audience in real-time. When users reply with inquiries such as product details, availability, pricing, or comments about products featured in the story, businesses can start initiating conversation.<br/> <img src="https://i.imgur.com/iI0hUxL.png" alt="drawing" width="60%"/>
- instagram-story-mention | Bot receives an event with the available information when a user mentions the business in their insta story. | Users can share their feedback by mentioning the brand in their Instagram stories. This can include sharing their thoughts on the product, overall shopping experience, or any positive aspects they wish to highlight.<br/><img src="https://i.imgur.com/QFXBUxg.png" alt="drawing" width="60%"/>
-instagram-media-share | Bot receives an event with the available information when the business shares a media from a post. | When businesses post details about their products, users have the ability to share this media with their followers. This enables businesses to reach a wider audience with their products.<br/> <img src="https://i.imgur.com/CIKJQSf.png" alt="drawing" width="60%"/>
-instagram-comment | Bot receives an event with the available information when a user comments on the business insta post. | When businesses share details about their products on Instagram, users can engage directly by commenting on the post. These comments may include inquiries about product specifications, availability, pricing, or any additional details. <br/>**Note:** To display the comments in the comment section under the respective comment, contact the [Integrations](mailto:support@yellow.ai) team. By default, replies are currently shown in direct messages.  | 
-
-### Enable Instagram events
-
-
-1. Navigate to **Extensions** > **Channels** > **Instagram**. You will see the list of connected accounts (if available). 
-2. Click on the **Events** button.
-
-   ![](https://i.imgur.com/4eg5AeX.png)
-
-3. Navigate to the specific event and click **Activate**.
-
-   ![](https://i.imgur.com/elR6rxS.png)
-    
-            
-4. Once you enable the required Instagram events, you can use these Instagram events to:
-  
-  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event)
-  * [Store user variables that come from user events into DB or User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations) and create personalized conversations using the stored data.
-    
 
   
 
-## Setting up Instagram bot
+## Integrating Instagram to your bot
 
 To set up Instagram bot, you need to perform the following:
 
@@ -96,8 +64,12 @@ To set up Instagram bot, you need to perform the following:
 * [Setup a bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup#create-your-first-bot) on Yellow.ai platform based on your use case.
 * [Test your bot](#test)
 
+:::note
 
-## Prerequisites to setup an Instagram channel
+Check out the [supported messages](#list-of-supported-messages-by-yellowai-platform) and [Character limitations](#character-limitations-of-instagram) of Instagram.
+:::
+
+### Prerequisites to setup an Instagram channel
 
 The following are the prerequisites to setup a Instagram bot:
 
@@ -106,7 +78,7 @@ The following are the prerequisites to setup a Instagram bot:
 3. Ensure that you have enabled **Access to Messages** in your Instagram account. (**Settings > Privacy > Messages > Enable Allow Access to Messages**).
 4. Create an additional personal or test Instagram account for testing.
 
-## Set up a business account on Instagram
+### Set up a business account on Instagram
 
 :::note
 If you already have an Instagram personal account, then you can switch to a business account. For more information, click [here](https://www.facebook.com/business/help/502981923235522).
@@ -269,8 +241,43 @@ To add conversation starters, follow these steps:
         
     <img src="https://i.imgur.com/RSbkBLm.png" alt="drawing" width="30%"/>
 
+## Enabling Instagram events
+
+Once you have set up the Instagram bot, to initiate the personailzed conversations for particular actions like story replies, story mentions, media shares, and comments use the below events. You can automate response to user activities on Instagram by triggering specific flows based on Instagram events.
+
+By default, these events are inactive, but you can enable them as per your requirements.
+
+### Supported Instagram events
+
+
+ Event | Description | Sample use case
+---------|------|------------|
+instagram-story-reply | Bot receives an event with the available information when a user replies to the business Instagram story. | Instagram story reply enables businesses to engage with their audience in real-time. When users reply with inquiries such as product details, availability, pricing, or comments about products featured in the story, businesses can start initiating conversation.<br/> <img src="https://i.imgur.com/iI0hUxL.png" alt="drawing" width="60%"/>
+ instagram-story-mention | Bot receives an event with the available information when a user mentions the business in their insta story. | Users can share their feedback by mentioning the brand in their Instagram stories. This can include sharing their thoughts on the product, overall shopping experience, or any positive aspects they wish to highlight.<br/><img src="https://i.imgur.com/QFXBUxg.png" alt="drawing" width="60%"/>
+instagram-media-share | Bot receives an event with the available information when the business shares a media from a post. | When businesses post details about their products, users have the ability to share this media with their followers. This enables businesses to reach a wider audience with their products.<br/> <img src="https://i.imgur.com/CIKJQSf.png" alt="drawing" width="60%"/>
+instagram-comment | Bot receives an event with the available information when a user comments on the business insta post. | When businesses share details about their products on Instagram, users can engage directly by commenting on the post. These comments may include inquiries about product specifications, availability, pricing, or any additional details. <br/>**Note:** To display the comments in the comment section under the respective comment, contact the [Integrations](mailto:support@yellow.ai) team. By default, replies are currently shown in direct messages.  | 
+
+### Enable Instagram events
+
+
+1. Navigate to **Extensions** > **Channels** > **Instagram**. You will see the list of connected accounts (if available). 
+2. Click on the **Events** button.
+
+   ![](https://i.imgur.com/4eg5AeX.png)
+
+3. Navigate to the specific event and click **Activate**.
+
+   ![](https://i.imgur.com/elR6rxS.png)
+    
+            
+4. Once you enable the required Instagram events, you can use these Instagram events to:
+  
+  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event)
+  * [Store user variables that come from user events into DB or User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations) and create personalized conversations using the stored data.
+    
+
    
-## Setup your bot
+## Setup your Instagram bot
 
 You need to use intents to identify user utterances and automate respond to their messages on Instagram page.
     
@@ -280,7 +287,7 @@ You need to use intents to identify user utterances and automate respond to thei
 
 Once you set up the bot, verify whether the bot responds to user according to the defined use case.   
 
-## Test your bot on Instagram
+## Test your Instagram bot
 
 After connecting your bot on Yellow platform, you can test your bot as mentioned here:
 

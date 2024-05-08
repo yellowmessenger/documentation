@@ -1,5 +1,5 @@
 ---
-title: Single sign-on with OAuth for for Cloud Platform
+title: Single sign-on with OAuth for Cloud Platform
 sidebar_label: Cloud SSO with OAuth
 ---
 
