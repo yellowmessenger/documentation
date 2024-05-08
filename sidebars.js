@@ -462,17 +462,6 @@ module.exports = {
             "platform_concepts/inbox/chats/voicecalls",
             "platform_concepts/inbox/chats/reinitiatewachats",
 
-
-            {
-              type: "category",
-              label: "Live chat agent assist",
-              collapsed: true,
-              items: [
-                "platform_concepts/channelConfiguration/zendesk-live-agent-support",
-                "platform_concepts/channelConfiguration/salesforceliveagentassist",
-              ],
-                
-                },
               ],
          },
 
@@ -1272,6 +1261,18 @@ module.exports = {
             "platform_concepts/appConfiguration/servicenow-livechat",
             "platform_concepts/appConfiguration/talisma",
             "platform_concepts/appConfiguration/zoho-live-chat",
+
+            {
+              type: "category",
+              label: "Live chat agent assist",
+              collapsed: true,
+              items: [
+                "platform_concepts/channelConfiguration/zendesk-live-agent-support",
+                "platform_concepts/channelConfiguration/salesforceliveagentassist",
+              ],
+                
+                },
+                
 
           ],
         },
