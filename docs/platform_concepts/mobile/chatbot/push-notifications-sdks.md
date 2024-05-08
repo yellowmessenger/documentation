@@ -9,15 +9,19 @@ To configure push notifications for your app, you need to map the Firebase serve
 
 To setup push notifications, follow these steps:
 
-1. Navigate to **Channels** > **Push notifications** > **Android** (FCM).
+1. On the left navigation bar, click **Extensions**.
 
-   ![](https://i.imgur.com/PkWhAyF.png)
+    ![](https://imgur.com/PIOvT6K.png)
+
+2. Click **Channels** > **Push notifications** > **Android** (FCM).
+
+   ![](https://imgur.com/lVEnYy6.png)
    
-2. Click on **Connect your account** and upload the Firebase service (.json) file.
+3. Click on **Connect your account** and upload the Firebase service (.json) file.
 
-   ![](https://i.imgur.com/CS7RtVP.png)
+   ![](https://imgur.com/xxEbxOv.png)
 
-3. After uploading the JSON file, configure the device token while initializing the chatbot SDK in your app using the following code:
+4. After uploading the JSON file, configure the device token while initializing the chatbot SDK in your app using the following code:
 
     `ymChat.config.deviceToken = "your-firebase-device-token"`
 
