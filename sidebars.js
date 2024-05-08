@@ -461,7 +461,19 @@ module.exports = {
             "platform_concepts/inbox/chats/videocall",
             "platform_concepts/inbox/chats/voicecalls",
             "platform_concepts/inbox/chats/reinitiatewachats",
-                 ],
+
+
+            {
+              type: "category",
+              label: "Live chat agent assist",
+              collapsed: true,
+              items: [
+                "platform_concepts/channelConfiguration/zendesk-live-agent-support",
+                "platform_concepts/channelConfiguration/salesforceliveagentassist",
+              ],
+                
+                },
+              ],
          },
 
         //4. tickets doc 
