@@ -18,7 +18,7 @@ Say goodbye to the old switcher and enjoy a fresh perspective on platform naviga
 
 Explore our [Cloud platform](https://cloud.yellow.ai).
 
-## Introducing Orch LLM with seamless Goal Orchestration
+## Introducing Orch LLM for seamless Goal Orchestration
 
  The orch LLM feature is now live on the cloud. The Orch LLM replaces our previous intent detection model and enables the model to orchestrate between multiple goals using gen AI prompts.
 
@@ -36,7 +36,7 @@ Here's what's in it for you:
 
 
 :::info:
-This feature is currently gated. Please reach out to us if you'd like it enabled for your bot.
+By default, this feature is currently gated. Please contact us if you would like it enabled for your bot.
 :::
 
 
