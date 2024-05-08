@@ -1,10 +1,10 @@
 ---
-title: YellowG - Unleash the Power of our Gen AI Features
-sidebar_label: Features of YellowG
+title: Unleash the Power of our Gen AI Features
+sidebar_label: Gen AI features of Yellow.ai
 tags: [what is yellowg, yellowg]
 ---
 
-YellowG is a generative AI technology developed by Yellow.ai. It excels in natural language generation, providing customizable, multimodal output and adaptive responses. With contextual understanding, scalability, and privacy focus, YellowG evolves continuously, adapting to dynamic user needs and incorporating AI technologies for enhanced performance.
+Yellow.ai's Gen AI is a generative AI technology developed by Yellow.ai. It excels in natural language generation, providing customizable, multimodal output and adaptive responses. With contextual understanding, scalability, and privacy focus, Gen AI evolves continuously, adapting to dynamic user needs and incorporating AI technologies for enhanced performance.
 
 
 The following sections provide details of Yellow.ai's Gen AI capabilities across each product.
@@ -129,7 +129,7 @@ The efficient Reply Suggestion provides summarized suggestions to assist agents 
 
 ## Optimized Campaign Creation with AI-Powered Flow Campaigns
 
-Elevate your marketing strategy with YellowG's AI-powered Flow Campaigns. By analyzing audience data and historical performance, YellowG streamlines campaign creation, generating personalized flows to optimize user experience and maximize marketing efforts.
+Elevate your marketing strategy with the AI-powered Flow Campaigns. By analyzing audience data and historical performance, our Gen AI streamlines campaign creation, generating personalized flows to optimize user experience and maximize marketing efforts.
 
 Imagine you're a marketing manager launching a new product campaign. With our GenAI, audience demographics, past campaign performance, and user interactions are analyzed to generate tailored flows for different customer segments. These adaptable flows evolve based on user engagement, freeing up time and resources for marketers to refine their overall strategy and achieve superior outcomes
 
