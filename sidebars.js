@@ -383,6 +383,7 @@ module.exports = {
         
         "platform_concepts/studio/tools",
         "platform_concepts/studio/orchestrator", 
+        "platform_concepts/studio/train/orchllm",
         "platform_concepts/studio/studio-faqs",
     
       ],
