@@ -129,7 +129,9 @@ YMChat supports firebase notifications. Pass your `FCM token` in setDeviceToken 
 YMChat.setDeviceToken("token");
 ```
 
-Note: Firebase service account key is required to send notifications. You can share the service account key with us. More info [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
+:::note
+To [set up push notifications](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/push-notifications-sdks), a Firebase service account JSON file is required. You need to map the service account JSON file against your bot ID. For detailed instructions on obtaining and using the Firebase service account JSON file, please refer to the link provided [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key).
+:::
 
 ### Payload
 
