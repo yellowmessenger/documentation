@@ -173,9 +173,9 @@ To test your bot on Line, follow these steps:
    
 * Once you have tested your bot, the configuration of the Line channel for your business is complete.
 
-## Configure navigation options on Line app
+## Configure Line rich menu
 
-You can add a rich menu element within the Line app, allowing users to  access the menu with a single tap at any moment during their conversation. This option improves navigation and interaction, resulting in a more seamless experience.
+You can add a rich menu element within the Line app, allowing users to  access the menu with a single tap at any moment during their conversation. This option improves navigation and interaction, resulting in a more seamless experience. For more information, click [here](https://developers.line.biz/en/docs/messaging-api/rich-menus-overview/).
 
 To configure navigation options on Line app, follow these steps:
 
@@ -197,7 +197,7 @@ Option | Description
 **Display period** | Choose the display period untill when the rich menu should display on your Line app.
 **Template** | Select either **Large** or **Compact** template. Based on the selected template you can preview it.
 **Image** | You can either choose the downloaded image from your local folder or you can customize it based on your requirements. You can adjust the image by seeing it in the Preview section.<br/><img src="https://imgur.com/whp0NaU.png" width="80%"/>
-**Action type** | Select the action type for each button, such as **Link**, **Text**, **Coupon**, or **No action**.<br/> <img src="https://imgur.com/O25QYup.png" width="80%"/>
+**Action type** | Select the appropriate action type either **Link** or **Text**. <br/>* **Link**: If you want to redirect the user to particular website use **Link** action type. <br/>* **Text**: If you want to trigger the particular flow select **Text** and enter the trained utterance. For example, Hi or Hello.<br/> <img src="https://imgur.com/O25QYup.png" width="80%"/>
 **Menu bar label** | Choose **Menu** or **Custom label** and enter the desired text. Under Custom label, you can enter the text that has to be displayed in the Menu bar.
 **Default behavior** | You can select either **Shown** to display the selected image  or **collasped** to hide the image.
 

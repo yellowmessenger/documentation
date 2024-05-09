@@ -101,7 +101,7 @@ config.deviceToken = "your-firebase-device-token"
 ```
 
 :::note Mapping Firebase service key against Bot Id
-Firebase service account Json file is required to send notifications. You need to map service account json file against your bot ID. Request your contact person from `yellow.ai` to share api for same. For more information about Firebase service account json file and how to get it check link [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key)
+To [set up push notifications](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/push-notifications-sdks), a Firebase service account JSON file is required. You need to map the service account JSON file against your bot ID. For detailed instructions on obtaining and using the Firebase service account JSON file, please refer to the link provided [here](https://developers.google.com/assistant/engagement/notifications#get_a_service_account_key).
 :::
 
 ### Payload
