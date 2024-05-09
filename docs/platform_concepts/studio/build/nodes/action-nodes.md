@@ -9,6 +9,7 @@ You can use Action nodes to perform a specific task. For example, you can use th
 Action nodes will not display any message to the user during conversation, they run the configured tasks in the background.
 :::
 
+
 The following are the different types of Action nodes available on Yellow.ai:
 
 1. [Interactive nodes](#1-interactive-nodes)
@@ -724,6 +725,7 @@ recordsProcessed: 1230,
 ```
 
 
-
-
+:::note
+When an event is created using the action node, the *eventID* can be found in the response (payload) of that action node.
+:::
 

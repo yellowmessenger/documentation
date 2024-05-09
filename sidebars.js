@@ -286,14 +286,14 @@ module.exports = {
               items: [
               //"platform_concepts/studio/cloud-function",
               // "platform_concepts/studio/build/nodes/nodes",
+                "platform_concepts/studio/dynamicchatnode", 
                 "platform_concepts/studio/build/nodes/prompt-nodes",
                 "platform_concepts/studio/build/nodes/message-nodes",
                 "platform_concepts/studio/build/nodes/action-nodes",
                 "platform_concepts/studio/build/nodes/logic-nodes",
               ],
             },
-
-            "platform_concepts/studio/dynamicchatnode",            
+           
             {
               type: "category",
               label: "User record management",
@@ -383,6 +383,7 @@ module.exports = {
         
         "platform_concepts/studio/tools",
         "platform_concepts/studio/orchestrator", 
+        "platform_concepts/studio/train/orchllm",
         "platform_concepts/studio/studio-faqs",
     
       ],
@@ -461,7 +462,8 @@ module.exports = {
             "platform_concepts/inbox/chats/videocall",
             "platform_concepts/inbox/chats/voicecalls",
             "platform_concepts/inbox/chats/reinitiatewachats",
-                 ],
+
+              ],
          },
 
         //4. tickets doc 
@@ -1260,6 +1262,18 @@ module.exports = {
             "platform_concepts/appConfiguration/servicenow-livechat",
             "platform_concepts/appConfiguration/talisma",
             "platform_concepts/appConfiguration/zoho-live-chat",
+
+            {
+              type: "category",
+              label: "Live chat agent assist",
+              collapsed: true,
+              items: [
+                "platform_concepts/channelConfiguration/zendesk-live-agent-support",
+                "platform_concepts/channelConfiguration/salesforceliveagentassist",
+              ],
+                
+                },
+                
 
           ],
         },
