@@ -20,6 +20,14 @@ To upload your website URL, follow:
 
 This handles all sub URLs automatically, to improve accuracy, add more URLs manually under **Upload documents**. 
 
+
+:::note
+
+Redirection links(URL) cannot be displayed within the summarized answer. 
+The best practice for LLMs is to avoid generating links in responses or summarizations. This precaution is taken because LLMs can potentially miss characters like "-", which could break the link or even direct users to unsafe pages, posing a security risk. Therefore, it's safer to refrain from including links altogether.
+:::
+
+
 ------
 
 ## Manual data ingestion 
