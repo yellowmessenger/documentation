@@ -1159,7 +1159,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },
-    "platform_concepts/channelConfiguration/zendesk-live-agent-support",
+   // "platform_concepts/channelConfiguration/zendesk-live-agent-support",
     {
       type: "category",
       label: "Integrations",
