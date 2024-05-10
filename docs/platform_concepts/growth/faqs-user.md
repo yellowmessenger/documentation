@@ -166,3 +166,12 @@ If a user has visited the bot before, irrespective of the timeframe, they’ll b
 </div>
 </details>
 
+
+<details>
+<summary> Why can't I find certain column fields in the filters? </summary>
+<div>
+
+Only the columns which are searchable will be available to be filtered. Columns can be marked as searchable while creating a custom database. 
+    
+</div>
+</details>
