@@ -66,7 +66,7 @@ For example:
 
 3. The following parameters must be passed in the API for the sticky agent assignment to function:
     - **Category**
-    - **AssignedTo** - agentId has to be passed. agent ID is the agent's login email address without any special characters. Example:  sandy.r@yellow.ai > sandyryellowai
+    - **AssignedTo** - agentId has to be passed. agent ID is the agent's login email address slug value that can be obtained from the backend. 
     - **PreferredAgent**
     - **PreferredAgentFallback**
 

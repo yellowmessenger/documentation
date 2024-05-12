@@ -175,3 +175,20 @@ Only the columns which are searchable will be available to be filtered. Columns 
     
 </div>
 </details>
+
+<details>
+<summary>Impact of Non-Searchable Columns in Custom Tables</summary>
+<div>
+<p>When columns are not marked as searchable during custom table creation, several limitations arise:</p>
+
+<ul>
+<li><strong>Filter visibility:</strong> The non-searchable columns won't appear in the filter options, limiting users' ability to refine their data queries.</li>
+
+<li><strong>Summarisation and visualization:</strong> Users cannot summarize or visualize data based on non-searchable columns.</li>
+
+<li><strong>Dashboard creation:</strong> The absence of searchable columns impedes the creation of dashboards using the query option, as dashboards rely on searchable data for dynamic visualizations and insights.</li>
+</ul>
+
+<p>By ensuring columns are marked as searchable during creation, users can maximize the functionality and analytical capabilities of custom tables.</p>
+</div>
+</details>
