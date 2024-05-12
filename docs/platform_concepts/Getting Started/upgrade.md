@@ -123,3 +123,7 @@ After upgrading to premium:
 
 
 :::
+
+:::note
+At yellow.ai, we understand that every bot is unique, with specific requirements and goals. That's why we don't provide standardized pricing details for our features. Instead, we believe in offering customized solutions tailored to your individual needs. Our dedicated team of executives is available to assess your requirements comprehensively and provide you with the best pricing options based on your specific needs. Get in touch with us today!
+:::
