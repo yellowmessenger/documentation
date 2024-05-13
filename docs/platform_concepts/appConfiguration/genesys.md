@@ -57,19 +57,6 @@ In the **Studio** > **Build**, to add a node where you want to integrate Genesys
 3. In **Live chat agent**, choose *Genesys live chat*.
 4. Configure other necessary details.
 
-    Option | Description
-    ----- | ----------
-    **Account Name** |  Select the account to use for the integration. Applicable only when multiple accounts are connected.
-    **Message after Ticket Assignment** | Defines the message to be displayed after a ticket is assigned to an agent. Use dynamic variables wherever needed.
-    **Name** | Choose the variable for the user's name.
-    **Mobile** | Choose the variable for the user's mobile number.
-    **Email** | Choose the variable  for the user's email address.
-    **Query** | Choose the variable where the user's query or message is stored.
-    **Genesys Cloud Live Agent Custom Fields** | Choose the variable where custom fields are stored.
-    **Advanced options** | Enable this option to access advanced settings for the Genesis Live Chat integration with Bot.
-    **Send chat transcript** | Enable this option to automatically send chat transcripts in the default format.
-    **Custom chat transcript** |  Select your preferred variable to send chat transcripts in the format of your choice. Please indicate your preferred format in the variable.
-
 
 :::info
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.

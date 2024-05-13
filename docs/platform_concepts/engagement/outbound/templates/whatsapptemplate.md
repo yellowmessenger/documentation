@@ -75,6 +75,15 @@ You can either add up to two CTAs or three Quick replies.
 
 The standard template for WhatsApp consists of three essential components: Header, Body, Footer and Buttons.
 
+:::note
+
+Variable names should not contain spaces. Only underscores (_) are permitted for special characters. For example: 
+
+- `user_name` :white_check_mark:
+- `user name` :x:
+- `username` :white_check_mark:
+:::
+
 
    Option | Description
    --------- | --------

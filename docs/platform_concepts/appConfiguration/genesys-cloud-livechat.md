@@ -119,40 +119,43 @@ Message route helps in rotuing the messages from bot to the live agent on Genesy
 
 Enter the Client ID, Client Secret and integration ID obtained from the previous sections.
 
-1. Go to cloud.yellow.ai > **Integrations** > search for **Genesys Purecloud Live**.
+1. On the [Cloud platform](https://cloud.yellow.ai), navigate to the Development/Staging environment and go to **Extensions** >  **Integrations** > search for **Genesys Purecloud Live**.
 
-![](https://i.imgur.com/3SIZ2Pv.png)
+   ![](https://i.imgur.com/iC3Vb3g.png)
 
 2. Fill in the following fields:
 
-* **Give account name:** Provide a name to your account.
+* **Give account name:** enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 * **Host URL:** The URL of your genesys account.
 * **Client ID:** Client obtained in [Step 2](#step-2-create-an-oauth-client).
 * **Client Secret:** Client Secret obtained in [Step 2](#step-2-create-an-oauth-client).
 * **Integration ID:** Integration ID obtained in [Step 3](#step-3-add-yellowais-webhook-in-genesys).
 
 3. Click **Connect**.
-4. Once the integration is setup, copy the Webhook URL by clicking on it. 
+4. To add another account, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
+5. Once the integration is setup, copy the Webhook URL by clicking on it. 
 
-   ![](https://i.imgur.com/bRUxVXI.png)
+   ![](https://i.imgur.com/c3e2f31.png)
    
-5. Go to your **Genesys Purecloud Live account** > **Admin** > **Message** > **Platforms** > integration you created in Step 3. > **Configure**
+6. Go to your **Genesys Purecloud Live account** > **Admin** > **Message** > **Platforms** > integration you created in Step 3. > **Configure**
 
     ![](https://i.imgur.com/q17Ommo.png)
     
-6. Paste the copied Webhook in **Outbound Notification Webhook URL** and click **Save**.
+7. Paste the copied Webhook in **Outbound Notification Webhook URL** and click **Save**.
 
    ![](https://i.imgur.com/lYiEDnl.png)
 
 ## Activate Genesys event in your bot
 
-1. Go to **Studio** and click **Event** > **Integrations**.
+Once you connect an event, you need to enable relevant events to utilize them in the bot.
 
- ![](https://i.imgur.com/xQq8hOw.png)
+1. In Development/Staging environment, go to **Studio** > **Event** > **Integrations**.
+
+ ![](https://i.imgur.com/8AYd53h.png)
 
 2. Search for Genesys and click **more options** > **Activate**.
 
- ![](https://i.imgur.com/F0sZUir.png)
+ ![](https://i.imgur.com/WHrinGS.png)
 
 :::info
 If you have added multiple accounts in your platform, enable events for each of those accounts.
@@ -265,29 +268,32 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
 :::
 
 1. Go to **Studio** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on how you want the bot to take the user through the process.
-2. Include the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) at the point in the flow where you want to let the user talk to Genesys live agent. To accomplish this, include a Raise ticket node and choose **Genesys PureCloud Live Agent** under **Live chat agent**.
+2. Navigate to the desired point in a flow where you want to let the user talk to Genesys live agent and add the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket).  
 
-   ![](https://i.imgur.com/4ZM7Y1i.png)
+   ![](https://i.imgur.com/7GNgHeo.png)
+
+3. In **Live chat agent**, choose *Genesys PureCloud Live Agent*.
+
+   <img src="https://i.imgur.com/ka5RZqf.png" width="60%"/>
 
 
-3. Fill in the following fields in the node. The variables chosen for these fields must be previously collected in the flow via node. To know more about this in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables).
+3. Configure the node based on the descriptions provided in the following table. The variables chosen for these fields must be previously collected in the flow via node. To know more about this in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables).
 
-| Field name | Data type | Description | Sample value |
-|------------|-----------|-------------|--------------|
-| Live chat agent | - | - | Choose **Genesys PureCloud Live agent** in the drop-down |
-| Account name | String | Choose the Genesys account to which the chats should be transferred | account1 |
-| Message after ticket assignment | String | The message that will be displayed to the end user after a ticket is successfully assigned to an agent | Requesting live agent connection. |
-| Name | String | Name of the end user | John |
-| Mobile | String | Mobile number of the end user | 9876543210 |
-| Email | String | Email address of the end user. This is a mandatory field | test@gmail.com |
-| Query | String | The subject/topic/reason why the ticket was created | I have a concern regarding my flight ticket |
-| Priority | String | The priority of the ticket | MEDIUM |
+   | Field name | Data type | Description | Sample value |
+   |------------|-----------|-------------|--------------|
+   | Live chat agent | - | - | Choose **Genesys PureCloud Live agent** in the drop-down |
+   | Account name | String | Choose the Genesys account to which the chats should be transferred | account1 |
+   | Message after ticket assignment | String | The message that will be displayed to the end user after a ticket is successfully assigned to an agent | Requesting live agent connection. |
+   | Name | String | Name of the end user | John |
+   | Mobile | String | Mobile number of the end user | 9800000000 |
+   | Email | String | Email address of the end user. This is a mandatory field | test@gmail.com |
+   | Query | String | The subject/topic/reason why the ticket was created | I have a concern regarding my flight ticket |
+   | Priority | String | The priority of the ticket | MEDIUM |
+   | Genesys Cloud Live Agent Custom Fields | String | Choose the variable where custom fields are stored. | -
+   | Advanced options | - | Enable this option to access advanced settings for the Genesis Live Chat integration with Bot. | -
+   | Send chat transcript |  - | Enable this option to automatically send the conversation history between the end user and the bot as the initial message to the agent. If you don’t want to send the chat transcript to the agent, pass the value False. <br/> **Note**: In cases where the entire transcript exceeds the character limit of a single message packet in Salesforce, the content will be divided and sent as multiple message packets. For example, if the chat transcript contains 8000 characters and the message packet limit is 4000 characters, the transcript will be divided into two packets of 4000 characters each and sent as separate messages to the agent. | 
+   | Custom chat transcript | String |  Select your preferred variable to send chat transcripts in the format of your choice. Please indicate your preferred format in the variable. |
 
-You can enable **Advanced Options** to set the priority, auto-translation, custom fields, tags and department.
-
-<img src="https://i.imgur.com/tPS9R0J.png" alt="drawing" width="50%"/>
-
-4. Once you have set up the flow, chats will get automatically forwarded to live agents on Genesys live chat when this flow gets triggered.
 
 **Result:**
 
