@@ -320,6 +320,7 @@ module.exports = {
           items: [
             "platform_concepts/studio/train/intents",
             "platform_concepts/studio/train/entities",
+           // "platform_concepts/studio/train/orchllm",
             "platform_concepts/studio/train/add-faqs",
             "platform_concepts/studio/train/what-is-document-cognition",
             "platform_concepts/studio/train/synonyms",
@@ -1158,7 +1159,7 @@ module.exports = {
         "platform_concepts/channelConfiguration/channels-faqs",
       ],
     },
-    "platform_concepts/channelConfiguration/zendesk-live-agent-support",
+   // "platform_concepts/channelConfiguration/zendesk-live-agent-support",
     {
       type: "category",
       label: "Integrations",
@@ -1273,7 +1274,7 @@ module.exports = {
               ],
                 
                 },
-                
+
 
           ],
         },

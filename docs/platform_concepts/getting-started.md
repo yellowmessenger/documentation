@@ -32,6 +32,10 @@ We also have an App platform (app.yellow.ai), a code-based solution with limited
 Yellow.ai supports **Cloud** and **On-premise** deployment. Contact [support@yellow.ai](mailto:support@yellow.ai) for details. 
 :::
 
+### Chat bot vs. Voice bot
+
+At yellow.ai empowers users to create two types of bots, chat bot and voice bot. 
+Chat bots engage in textual conversation interfaces. Voice bots enable virtual assistants to interact with customers verbally, resolving their queries effectively.
 
 ### Build powerful AI bots with ease
 
