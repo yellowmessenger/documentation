@@ -18,7 +18,8 @@ theme:{
 botName:" ", //Text upto 50 characters
 botDesc:" ", //Text upto 50 characters
 primaryColor:" ", //RGB or HEX value
-secondaryColor:"", //RGB or HEX value
+secondaryColor:" ", //RGB or HEX value
+botBubbleBackgroundColor:" ", //RGB or HEX value
 botIcon:" ", //CDN link
 botClickIcon:" " //CDN link
 }

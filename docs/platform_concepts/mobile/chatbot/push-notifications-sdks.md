@@ -21,6 +21,10 @@ To setup push notifications, follow these steps:
 
    ![](https://imgur.com/xxEbxOv.png)
 
+* A Firebase service (.json) file is uploaded.  
+
+   ![](https://imgur.com/HlfryhI.png)     
+
 4. After uploading the JSON file, configure the device token while initializing the chatbot SDK in your app using the following code:
 
     `ymChat.config.deviceToken = "your-firebase-device-token"`
