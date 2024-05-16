@@ -20,6 +20,10 @@ This node is powered by generative AI and LLMs (Large Language Models) to drive 
 * **Time-saving**: Saves time and effort in conversation design, enabling users to focus on creating engaging content.
 * **Real-time interaction**: Facilitates instant analysis of user input and generates immediate responses, leading to faster query resolution.
 
+:::note
+Dynamic chat node is editable only in lower-tier environments. In a two-tier setup, you can only edit in the **Development** environment, whereas in a three-tier setup, editing is only possible in the **Sandbox** environment.
+:::
+
 This video demonstrates how to configure the Dynamic chat node:
 
 <center>

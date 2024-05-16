@@ -288,6 +288,14 @@ Define the secondary color of your bot using `setThemeSecondaryColor` method.
 YMChat.setThemeSecondaryColor('#ffffff');
 ```
 
+#### Set bot bubble background color
+
+Customize the background color of your bot bubble or message using `setThemeBotBubbleBackgroundColor` method.
+
+```javascript
+YMChat.setThemeBotBubbleBackgroundColor('#0000ff');
+```
+
 #### Set bot icon
 
 Choose an icon to represent your bot using `setThemeBotIcon` method.

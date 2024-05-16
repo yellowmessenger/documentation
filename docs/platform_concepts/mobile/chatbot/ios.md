@@ -274,6 +274,14 @@ Define the secondary color of your bot using `theme.secondaryColor`.
 theme.secondaryColor = .white
 ```
 
+#### Set bot bubble background color
+
+Customize the background color of your bot bubble or message using `theme.botBubbleBackgroundColor`.
+
+```swift
+theme.botBubbleBackgroundColor = .green
+```
+
 #### Set bot icon
 
 Choose an icon to represent your bot using `theme.botIcon`.

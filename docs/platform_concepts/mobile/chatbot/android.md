@@ -336,6 +336,13 @@ Define the secondary color of your bot using `theme.secondaryColor`.
 ```java
 theme.secondaryColor = "#FFFFFF";
 ```
+#### Set bot bubble background color
+
+Customize the background color of your bot bubble or message using `theme.botBubbleBackgroundColor`.
+
+```java
+theme.botBubbleBackgroundColor = "#0000FF";
+```
 
 #### Set bot icon
 
