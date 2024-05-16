@@ -5,7 +5,7 @@ sidebar_label: Cordova
 
 # Migration Guide for Android
 
-Version 1.x had an issue where a corrupted ymAuthentication token was passed in some cases from SDK to the server. The conversation history was thus mapped to the corrupted ymAuthenticationToken
+Version 1.x had an issue where a corrupted ymAuthentication token was passed in some cases from SDK to the server. The conversation history was thus mapped to the corrupted ymAuthenticationToken.
 
 Version 2.x has fix for this issue and thus a correct ymAuthenticationToken is always passed.
 However, as the correct ymAuthentication is different from the corrupted token, our server treats this user as a new user which leads to a complete loss of history of user conversations.
@@ -251,6 +251,14 @@ Define the secondary color of your bot using `setThemeSecondaryColor` method.
 
 ```javascript
 cordova.plugins.ymchat.setThemeSecondaryColor('#ffffff');
+```
+
+#### Set bot bubble background color
+
+Customize the background color of your bot bubble or message using `setThemeBotBubbleBackgroundColor` method.
+
+```javascript
+cordova.plugins.ymchat.setThemeBotBubbleBackgroundColor('#0000ff');
 ```
 
 #### Set bot icon

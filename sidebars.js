@@ -256,7 +256,7 @@ module.exports = {
       
         {
           type: "category",
-          label: "Build your bot",
+          label: "Create your bot",
           collapsed: true,
           items: [
 
