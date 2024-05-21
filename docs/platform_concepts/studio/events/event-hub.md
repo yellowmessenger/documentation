@@ -203,7 +203,7 @@ For example, if we ask for an email and get no response, we may check if they ar
 
 For a detailed use case guide on this event, click [here](https://docs.yellow.ai/docs/cookbooks/studio/user-inactivity).
 
-### To create user inactive events:
+**To create user inactive events**:
 
 1. Go to **Studio** > **Event** > **User inactivity events** > **+ Add event**.
 
