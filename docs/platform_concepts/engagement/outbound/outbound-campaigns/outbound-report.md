@@ -10,6 +10,10 @@ You can monitor and track the progress and effectiveness of your campaigns. Addi
 
 The campaign report provides comprehensive insights and data regarding the performance and results of your campaigns. This helps conveniently monitor and assess the performance of your outbound campaigns without the hassle of downloading and analyzing CSV reports.
 
+:::note
+We only store reports for the past 190 days. Campaign reports beyond this timeframe are not available.
+:::
+
 
 To view the performance of an outbound campaign, follow these steps:
 
