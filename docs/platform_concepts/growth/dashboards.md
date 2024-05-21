@@ -22,11 +22,8 @@ To view the Dashboards page, on the left navigation bar, click  **Insights** > *
 
 
 #### Filter data by date range
-You can filter data for a specific date range.
 
-**To filter data by duration**:
-
-Navigate to **Insights** > **Dashboard** and use the Date filter to select your preferred date range. This date range selection will apply to all the reports of the dashboard.
+To filter data by duration, navigate to **Insights** > **Dashboard** and use the Date filter to select your preferred date range. This date range selection will apply to all the reports of the dashboard.
 
 
    ![](https://i.imgur.com/NztrxaE.png)
@@ -96,35 +93,19 @@ Gain insights into interactions conducted through voice channels such as phone c
 
 ### KPI descriptions for Voice bot report
 
-1. **Call Disconnect Split by Day**
-   - This KPI displays the number of call disconnections on a daily basis. It helps in identifying patterns or anomalies in call disconnections over time.
+| KPI Title                               | Description                                                                                                     |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| **Call Disconnect Split by Day**        | This KPI displays the number of call disconnections on a daily basis. It helps in identifying patterns or anomalies in call disconnections over time. |
+| **Call Disconnect Split**               | This KPI categorizes call disconnections into various time intervals (e.g., <1 minute, 1-3 minutes, 60-90 minutes, 90-120 minutes). It provides insights into the duration before calls are disconnected, helping to understand user behavior and potential issues. |
+| **API Status Split by Day and API Name**| This KPI tracks the number of API errors by day and API name. It provides a detailed view of API performance, highlighting error counts in each region for specific APIs. |
+| **API Status Split by API Name**        | This KPI provides a breakdown of API statuses for each API name, such as "agent check" and "get access token." It helps in monitoring the performance and reliability of individual APIs. |
+| **Call Hangup Reason Split by Day**     | This KPI shows the reasons for call hangups on a daily basis. It helps identify trends and common reasons why calls are being terminated. |
+| **Call Hangup Reason Split**            | This KPI categorizes the reasons for call hangups, providing a comprehensive view of the factors leading to call termination. It aids in diagnosing and addressing call quality issues. |
+| **Call Engagement Split by Day**        | This KPI measures daily call engagement levels. It tracks user interaction with the voice bot, helping to assess user interest and engagement over time. |
+| **Call Engagement Split**               | This KPI provides an overall view of call engagement, categorizing engagement levels. It helps in understanding how effectively the voice bot is engaging with users. |
+| **Average Ring Duration by Day**        | This KPI calculates the average duration of the ring time before a call is answered, measured on a daily basis. It helps in evaluating the responsiveness of the system. |
+| **Average Call Duration by Day**        | This KPI measures the average length of calls on a daily basis. It provides insights into the typical duration of user interactions with the voice bot, aiding in performance analysis. |
 
-2. **Call Disconnect Split**
-   - This KPI categorizes call disconnections into various time intervals (e.g., <1 minute, 1-3 minutes, 60-90 minutes, 90-120 minutes). It provides insights into the duration before calls are disconnected, helping to understand user behavior and potential issues.
-
-3. **API Status Split by Day and API Name**
-   - This KPI tracks the number of API errors by day and API name. It provides a detailed view of API performance, highlighting error counts in each region for specific APIs.
-
-4. **API Status Split by API Name**
-   - This KPI provides a breakdown of API statuses for each API name, such as "agent check" and "get access token." It helps in monitoring the performance and reliability of individual APIs.
-
-5. **Call Hangup Reason Split by Day**
-   - This KPI shows the reasons for call hangups on a daily basis. It helps identify trends and common reasons why calls are being terminated.
-
-6. **Call Hangup Reason Split**
-   - This KPI categorizes the reasons for call hangups, providing a comprehensive view of the factors leading to call termination. It aids in diagnosing and addressing call quality issues.
-
-7. **Call Engagement Split by Day**
-   - This KPI measures daily call engagement levels. It tracks user interaction with the voice bot, helping to assess user interest and engagement over time.
-
-8. **Call Engagement Split**
-   - This KPI provides an overall view of call engagement, categorizing engagement levels. It helps in understanding how effectively the voice bot is engaging with users.
-
-9. **Average Ring Duration by Day**
-   - This KPI calculates the average duration of the ring time before a call is answered, measured on a daily basis. It helps in evaluating the responsiveness of the system.
-
-10. **Average Call Duration by Day**
-    - This KPI measures the average length of calls on a daily basis. It provides insights into the typical duration of user interactions with the voice bot, aiding in performance analysis.
 
 
 ### Bot performance
@@ -181,7 +162,7 @@ In addition to the default dashboards, you can create custom dashboards for a mo
 
 
 Here are the features of the insights dashboard:
-- You can create **Multiple Dashboards**. In this, each dashboard can include multiple widgets (reports).  
+- You can create multiple dashboards, each of which can include multiple widgets (reports).
 - **Widgets** are the saved reports that are present on the [data explorer page](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#2-add-report-to-dashboard). The dashboard helps the analysts to add multiple widgets to the single page layout. 
 - Widgets can be directly added to the Dashboard from the **data explorer**.
 
@@ -194,25 +175,25 @@ Here are the features of the insights dashboard:
 
 
 
-:::note
-You can duplicate the default dashboard by going to the **Default** tab and clicking **Duplicate**.
-
-:::
 
 You can create a dashboard using either of the following methods:
 
 
+:::note
+You can also duplicate the default dashboard by going to the **Default** tab and clicking **Duplicate**. You cannot modify or edit the Default Dashboard directly.
+:::
 
 ### <a name="1"></a> Method 1: Create a dashboard from the dashboard page
 
 1. On the left navigation bar, go to **Insights** > **Dashboard**.
 2. Click on the **Custom** tab, then click **+ New dashboard**. 
 
+   ![img](https://i.imgur.com/gmxIYqM.png)
 
 3. On the Dashboard details pop-up, enter **Name** and **Description**. 
 4. Click **Save**.
 
-   ![](https://i.imgur.com/LRDZwpM.png)
+
 
 
 ### <a name="2"></a>  Method 2: Create a dashboard from Data explorer (Saved reports)
@@ -274,9 +255,11 @@ To view the Dashboards page, on the left navigation bar, click  **Insights** > *
 
 Irrespective of the filters added to the saved reports(widgets) you can add a data filter to your dashboard from the top left to specify a time period. This filter applies to all the widgets on the dashboard and allows you to focus on specific data within a given time frame.
 
+- On  **Insights** > **Dashboards**, click **Date filter** and choose your preferred duration.
+
 <!-- ![](https://hackmd.io/_uploads/HJ_aWb6Fn.png) -->
 
-<img  src="https://i.imgur.com/XHr9FpN.png"  width="50%"/>
+   <img  src="https://i.imgur.com/XHr9FpN.png"  width="50%"/>
 
 
 
@@ -293,7 +276,7 @@ To edit a dashboard:
 ![](https://i.imgur.com/8tNItnb.png)
 
 
-### Delete a custom dashboard
+### Delete custom dashboard
 
 If you want to delete a dashboard, click **Actions** at the top right corner of the dashboard and select **Delete**.
 
