@@ -400,6 +400,7 @@ module.exports = {
     collapsed: true,
     items: [
       "platform_concepts/emailAutomation/setupemailautomation",
+      "platform_concepts/emailAutomation/preprocessing",
       "platform_concepts/emailAutomation/bestpractices",
     ],
   },
