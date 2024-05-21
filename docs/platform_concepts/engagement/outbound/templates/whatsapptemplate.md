@@ -60,7 +60,9 @@ To create a WhatsApp template and send for approval, follow these steps:
    ![](https://i.imgur.com/63SeUhj.png)
 
 :::note
-You can either add up to two CTAs or three Quick replies. 
+* You can either add up to two CTAs or three Quick replies. 
+* When URL tracking is enabled, the CTA button type changes from STATIC to DYNAMIC. This ensures URL tracking requires a dynamic CTA template.
+
 :::
 
 7. Preview the message on the right pane and click **Create template** to finalize and create the WhatsApp template.
@@ -158,6 +160,9 @@ In this type of CTA, you need to specify the URL that needs to be opened when se
 
 For easy approval, it is recommended to use the company's domain URL. Example: [https://docs.yellow.ai](https://docs.yellow.ai)
 
+:::note
+When URL tracking is enabled, the CTA button type changes from STATIC to DYNAMIC. URL tracking requires a dynamic CTA template.
+:::
 
 #### Dynamic URL
 
@@ -182,12 +187,14 @@ For example: If the URL is https://exampleshopping.com/checkout/{userId}
 * You cannot change the parent domain URL dynamically.
 :::
 
+
 ### Add make a phone call CTA
 
 1. In **Type of action**, choose *Phone call*.
 2. In the **Button** text, enter the label name (character limit 20) for the CTA.
 3. In the drop-down box, choose the country of the phone number.
 4. In **Phone number**, enter the phone number that you want your recipients to call.
+
 
 ## 4. Add Quick replies in WhatsApp template
 

@@ -80,6 +80,13 @@ You can create a CSV file with contact details and upload the CSV file using [Us
 
 </details>
 
+<details>
+<summary> Why don't I have the option "Use this as Unique ID for User" in "Make Prompt Smarter"? </summary>
+
+
+This option is only available for older bots. However, for bots running on executor-cloud, we've introduced a user identification journey. This journey allows you to set the userID at the beginning of the conversation, ensuring that the user ID is captured even before the conversation starts.
+
+</details>
 
 <details>
 <summary>Can I connect a database with User 360?</summary>

@@ -1228,6 +1228,7 @@ module.exports = {
             "platform_concepts/appConfiguration/sftp",
             "platform_concepts/appConfiguration/twilio-verify",
             "platform_concepts/appConfiguration/webengage",
+            "platform_concepts/appConfiguration/webhook",
 
           ],
         },

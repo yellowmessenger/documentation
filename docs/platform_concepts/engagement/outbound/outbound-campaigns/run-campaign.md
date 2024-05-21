@@ -148,9 +148,14 @@ This section guides you on how to configure template for each channel -
 
    <img src="https://i.imgur.com/12hci2Z.png" class="center" width="60%"/>
 
-3. To monitor URL clicks, select **URL click tracking** for variables that contain URLs.
+3. To monitor URL clicks, select **URL click tracking** for variables that contain URLs. 
 
    <img src="https://i.imgur.com/QkqZcQr.png" class="center" width="60%"/>
+
+   :::note
+   When URL tracking is enabled, the CTA button type changes from STATIC to DYNAMIC. This ensures URL tracking requires a dynamic CTA template.
+   :::
+
 
 ### 3.2 Email campaign
 
