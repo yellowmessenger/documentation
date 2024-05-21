@@ -28,7 +28,7 @@ Following are the types of interactive message components:
 ### 1.2 Multi select
 |     |  |
 |---------|-------|
-| This is similar to quick replies. It consists of multiple quick reply buttons where the user can select multiple options at once to send the response to the chatbot. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#23-multi-select">here</a> to implement Multi-select using a node. | <img src="https://i.imgur.com/cvYKO4E.png" alt="drawing" width="100%"/>
+| This is similar to quick replies. It consists of multiple quick reply buttons where the user can select multiple options at once to send the response to the chatbot. Click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#23-multi-select">here</a> to implement Multi-select using a node. <br/>• **Limitation**: You can configure upto 100 options. | <img src="https://i.imgur.com/cvYKO4E.png" alt="drawing" width="100%"/>
 
 
 ### 1.3 Date picker
