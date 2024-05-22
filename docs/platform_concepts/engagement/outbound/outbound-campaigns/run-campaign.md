@@ -29,7 +29,6 @@ This article provides how to create campaigns for any channel. The process for c
    b. Select your preferred channel through which you want to send communication in active channels.
 
    c. Click **Next**.
-
   
    ![](https://i.imgur.com/kKua9g9.png)
 
@@ -108,9 +107,9 @@ If you want to switch to User module to add audience, you can save the campaign 
 
 10.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
 
-:::note
-Click **Save as draft** to save all your changes. You can resume from here anytime.
-:::
+   :::note
+   Click **Save as draft** to save all your changes. You can resume from here anytime.
+   :::
 
    i. Once you have reviewed all the details and is good to go, click on **Launch Campaign** to schedule.
 
@@ -269,7 +268,7 @@ You can set business hours for each day of a week so that your campaign message 
 
 1.  **Enable Business hours**.
 
-![](https://i.imgur.com/mCl051T.png)
+   ![](https://i.imgur.com/mCl051T.png)
 
   
 
@@ -285,9 +284,7 @@ You can set business hours for each day of a week so that your campaign message 
 
 4.  **Message handling during DND hours**
 
-You can configure what to do with the messages after the configured business hours using the following options.
-
-  
+   You can configure what to do with the messages after the configured business hours using the following options.
 
    ![](https://i.imgur.com/POhWjum.png)
 
@@ -296,14 +293,13 @@ You can configure what to do with the messages after the configured business hou
 *  **Postpone to next day**: The campaign will be paused and will resume the next business hours.
 
   
-
-![](https://i.imgur.com/63KYDaH.png)
+   ![](https://i.imgur.com/63KYDaH.png)
 
   
 :::note
 You can Pause a scheduled campaign and Resume it when required using the respective options from the Outbound campaign homepage.
 
-![](https://i.imgur.com/BlRcStg.png)
+   ![](https://i.imgur.com/BlRcStg.png)
 
 
 :::
@@ -318,8 +314,6 @@ Segment is grouping of users based on certain condition sets. Segmentation can b
 
 * In the below example, a segment is created with users whose country is mentioned as "india" from the User module.
 
-  
-
    ![](https://i.imgur.com/pAxeftX.png)
 
   
@@ -329,6 +323,9 @@ Segment is grouping of users based on certain condition sets. Segmentation can b
 
    <img src="https://i.imgur.com/EvsUIXd.png" width="80%"/>
 
+:::note
+If you upload a CSV while the campaign is still executing, it will cause additional users to enter the segment. This will result in an audience size larger than initially planned for the campaign.
+:::
 
 
 ***

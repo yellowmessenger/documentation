@@ -170,7 +170,8 @@ For example, if you opt to retain user data during a conflict resolution process
   
   ![](https://i.imgur.com/ZXswJNr.png)
     
-  
+### Import statuses
+
 You can see the Status of the import.
 
   - **In progress**: It states that the import activity is going on. You will see this immediately when you import a CSV file.

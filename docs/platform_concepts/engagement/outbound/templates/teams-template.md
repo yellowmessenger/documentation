@@ -49,7 +49,7 @@ Option | Description
    --------- | --------
    Template name | Enter a name for the template (Only lowercase letters, numbers and underscores are allowed). This is used only for your reference and the client cannot see it. 
    Template language | Choose the language for which you want to use the template. You can create WhatsApp templates in multiple languages.
-   Message title | Enter a title for the message. This field is auto-populated based on the selected use case, but you can edit it as necessary.
+   Message title | Enter a title for the message. This field is mandatory and is auto-populated based on the selected use case. Uou can edit it as necessary. <br/>If the message is sent without a title, the CTA will not be included in the campaign or the campaign might fail.
    Media | Use image to the template to make it visually appealing.
    Body | Enter the main content. Use variables wherever required. It is the most critical part of your template and is thoroughly checked by the WhatsApp team. You can add upto 2000 characters including text and variables.
    Buttons | Helps add CTAs to your template as explained in Button type below.
