@@ -1140,6 +1140,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/chat-widget-text-formatter",
             "platform_concepts/channelConfiguration/download-transcript",
             "platform_concepts/channelConfiguration/pwa",
+            "platform_concepts/channelConfiguration/user-agent-ineteraction",
             "platform_concepts/channelConfiguration/GTM-integration",
             "platform_concepts/channelConfiguration/depoly-WA-bot",
             "platform_concepts/channelConfiguration/support-banner-migration",
