@@ -1,6 +1,6 @@
 ---
-title: Multilingual support
-sidebar_label: Multilingual support
+title: Add Multilingual support to your bot
+sidebar_label: Add Multilingual support to your bot
 ---
 
 Yellow.ai lets you add multiple languages to your bot to communicate with your customers in their preferred language. This feature makes it easy for businesses to expand globally and engage with customers in their desired language. Users can seamlessly switch between languages during their conversations with the bot, resulting a personalized experience that caters to their unique needs. 

@@ -72,7 +72,7 @@ The Orchestrator simplifies control and oversight of multiple bots, offering mod
 
 <img src="https://imgur.com/DC9aROC.png" alt="drawing" width="40%"/>
 
-[**Learn more about Orchestrator for bots :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator)
+[**Learn more about Orchestrator for bots :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/build/orchestrator)
 
 ----
 

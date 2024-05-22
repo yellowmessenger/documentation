@@ -1,6 +1,6 @@
 ---
-title: Orchestrator for bots
-sidebar_label : Orchestrator for bots
+title: Create Orchestrator bot
+sidebar_label : Create Orchestrator bot
 ---
 
 Orchestrator helps in orchestrating multiple bots under one bot. It serves as an umbrella under which you can oversee and control certain aspects of the child bots. The orchestrator provides 
