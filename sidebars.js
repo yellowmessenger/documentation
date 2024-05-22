@@ -40,6 +40,8 @@ module.exports = {
       label: "Studio",
       collapsed: true,
       items: [
+
+        
        // "cookbooks/conversation-design",
           "cookbooks/studio/newcard",
           "cookbooks/studio/trigger-whatsappresponse",
@@ -260,39 +262,53 @@ module.exports = {
           collapsed: true,
           items: [
 
-            "platform_concepts/studio/build/additionalsettings",
             //flows
-            {
-              type: "category",
-              label: "Flows",
-              link: {type: 'doc', id: 'platform_concepts/studio/build/Flows/flows-overview'},
-              collapsed: true,
-              items: [        
-            "platform_concepts/studio/build/Flows/journeys",
-            "platform_concepts/studio/build/Flows/configureflow",
-            "platform_concepts/studio/build/Flows/manage-flows",
-            "platform_concepts/studio/build/Flows/test-flows",
-            "platform_concepts/studio/build/Flows/exportflow",
-            "platform_concepts/studio/debugger",
+            
 
-          ],
-        },
-        
+
             {
               type: "category",
-              label: "Nodes",
-              link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/nodes'},
+              label: "Bot building tools",
               collapsed: true,
               items: [
-              //"platform_concepts/studio/cloud-function",
-              // "platform_concepts/studio/build/nodes/nodes",
-                "platform_concepts/studio/dynamicchatnode", 
-                "platform_concepts/studio/build/nodes/prompt-nodes",
-                "platform_concepts/studio/build/nodes/message-nodes",
-                "platform_concepts/studio/build/nodes/action-nodes",
-                "platform_concepts/studio/build/nodes/logic-nodes",
+                {
+                  type: "category",
+                  label: "Flows",
+                  link: {type: 'doc', id: 'platform_concepts/studio/build/Flows/flows-overview'},
+                  collapsed: true,
+                  items: [        
+                "platform_concepts/studio/build/Flows/journeys",
+                "platform_concepts/studio/build/Flows/configureflow",
+                "platform_concepts/studio/build/Flows/manage-flows",
+                "platform_concepts/studio/build/Flows/test-flows",
+                "platform_concepts/studio/build/Flows/exportflow",
+                "platform_concepts/studio/debugger",
+    
               ],
             },
+           
+                {
+                  type: "category",
+                  label: "Nodes",
+                  link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/nodes'},
+                  collapsed: true,
+                  items: [
+                  //"platform_concepts/studio/cloud-function",
+                  // "platform_concepts/studio/build/nodes/nodes",
+                    "platform_concepts/studio/dynamicchatnode", 
+                    "platform_concepts/studio/build/nodes/prompt-nodes",
+                    "platform_concepts/studio/build/nodes/message-nodes",
+                    "platform_concepts/studio/build/nodes/action-nodes",
+                    "platform_concepts/studio/build/nodes/logic-nodes",
+                  ],
+                },
+                "platform_concepts/studio/build/additionalsettings",
+
+                "platform_concepts/studio/build/bot-variables",
+                "platform_concepts/studio/build/code",
+
+              ],
+            }, 
            
             {
               type: "category",
@@ -304,9 +320,7 @@ module.exports = {
                 "platform_concepts/engagement/cdp/user_data/personalise_conversations",
              ],
             },
-            "platform_concepts/studio/build/code",
            // "platform_concepts/studio/build/math-ops",
-            "platform_concepts/studio/build/bot-variables",
             "platform_concepts/studio/build/bot-logs",
             "platform_concepts/studio/build/localization",
           ],       
@@ -368,6 +382,7 @@ module.exports = {
             "platform_concepts/studio/analyze/training-performance",
           ],
         },
+
 
         {
           type: "category",
