@@ -89,7 +89,7 @@ Configure your notification preferences on the settings page. Learn more [here](
 
 ## <a name="i5"></a> Orchestrator bot feature in Inbox
 
-With the powerful [orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/orchestrator) bot feature, you can create a parent bot and add child bots from the same subscription. When you select **Unify inbox to all child bots**, support tickets received by the child bots become available in the parent bot's Inbox. This unified inbox allows you to efficiently respond to all customer queries.
+With the powerful [orchestrator](https://docs.yellow.ai/docs/platform_concepts/studio/build/orchestrator) bot feature, you can create a parent bot and add child bots from the same subscription. When you select **Unify inbox to all child bots**, support tickets received by the child bots become available in the parent bot's Inbox. This unified inbox allows you to efficiently respond to all customer queries.
 
 <img src="https://imgur.com/3KsqgAF.png" alt="drawing" width="50%"/>  
 

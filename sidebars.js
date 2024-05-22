@@ -242,30 +242,32 @@ module.exports = {
       collapsed: true,
       items: [
        // "platform_concepts/studio/overview",
-
-       {
-        type: "category",
-        label: "Knowledge base ",
-        link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
-        collapsed: true,
-        items: [
-          "platform_concepts/studio/kb/ingestion",
-          // "platform_concepts/studio/kb/integrations",
-          "platform_concepts/studio/kb/advancedsettings",
-          
-        ],
-      },       
-      
         {
           type: "category",
           label: "Create your bot",
           collapsed: true,
-          items: [
-
-            //flows
+          items: [ 
+            "platform_concepts/studio/build/create_chatbot",
+            {
+              type: "category",
+              label: "Create Knowledge base bot",
+              link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
+              collapsed: true,
+              items: [
+                "platform_concepts/studio/kb/ingestion",
+                // "platform_concepts/studio/kb/integrations",
+                "platform_concepts/studio/kb/advancedsettings",
+                
+              ],
+            },
+            "platform_concepts/studio/build/orchestrator",
+            "platform_concepts/studio/build/create_voice_bot",  
+          ],
+        },
+          
             
-
-
+            
+                       
             {
               type: "category",
               label: "Bot building tools",
@@ -286,6 +288,16 @@ module.exports = {
     
               ],
             },
+            {
+              type: "category",
+              label: "User record management",
+             link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
+             items: [ 
+                "platform_concepts/engagement/cdp/user_data/userid-flow",
+                "platform_concepts/engagement/cdp/user_data/store_conv_data",
+                "platform_concepts/engagement/cdp/user_data/personalise_conversations",
+             ],
+            },
            
                 {
                   type: "category",
@@ -301,76 +313,80 @@ module.exports = {
                     "platform_concepts/studio/build/nodes/action-nodes",
                     "platform_concepts/studio/build/nodes/logic-nodes",
                   ],
-                },
-                "platform_concepts/studio/build/additionalsettings",
-
+                },       
                 "platform_concepts/studio/build/bot-variables",
                 "platform_concepts/studio/build/code",
-
+                "platform_concepts/studio/events/event-hub",
+                "platform_concepts/studio/database",
+                "platform_concepts/studio/product-catalogue",
+                {
+                  type: "category",
+                   label: "Integrate APIs in Studio",
+                   collapsed: true,
+                   items: [
+                   {
+                    type: "category",
+                   label: "Add APIs",
+                   collapsed: true,
+                   items: [
+                    "platform_concepts/studio/api/add-api",
+                    "platform_concepts/studio/api/add-api-apinode",
+                   ],
+                  },
+                    "platform_concepts/studio/api/send-receive-apiresponses",
+                    "platform_concepts/studio/api/bearer-token",
+                   // "platform_concepts/studio/api/transformation-function",
+                    "platform_concepts/studio/api/api-settings",
+                    "platform_concepts/studio/api/download-logs",
+        
+                  ],
+                },        
               ],
-            }, 
-           
+            },         
+
+          
             {
               type: "category",
-              label: "User record management",
-             link: {type: 'doc', id: 'platform_concepts/engagement/cdp/user_data/data_capture_convers'},
+              label: "Bot customization settings",
              items: [ 
-                "platform_concepts/engagement/cdp/user_data/userid-flow",
-                "platform_concepts/engagement/cdp/user_data/store_conv_data",
-                "platform_concepts/engagement/cdp/user_data/personalise_conversations",
+              "platform_concepts/studio/build/additionalsettings",
+              "platform_concepts/studio/build/localization",
              ],
             },
-           // "platform_concepts/studio/build/math-ops",
-            "platform_concepts/studio/build/bot-logs",
-            "platform_concepts/studio/build/localization",
-          ],       
-        },
-      
-
-        {
-          type: "category",
-          label: "Training bot data ",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/train/intents",
-            "platform_concepts/studio/train/entities",
-           // "platform_concepts/studio/train/orchllm",
-            "platform_concepts/studio/train/add-faqs",
-            "platform_concepts/studio/train/what-is-document-cognition",
-            "platform_concepts/studio/train/synonyms",
-            "platform_concepts/studio/train/smalltalk",
-            "platform_concepts/studio/train/add-contextual-response",
             
-          ],
-        },
-        
-        {
-          type: "category",
-           label: "Integrate APIs in Studio",
-           collapsed: true,
-           items: [
-           {
-            type: "category",
-           label: "Add APIs",
-           collapsed: true,
-           items: [
-            "platform_concepts/studio/api/add-api",
-            "platform_concepts/studio/api/add-api-apinode",
-           ],
-          },
-            "platform_concepts/studio/api/send-receive-apiresponses",
-            "platform_concepts/studio/api/bearer-token",
-           // "platform_concepts/studio/api/transformation-function",
-            "platform_concepts/studio/api/api-settings",
-            "platform_concepts/studio/api/download-logs",
-
-          ],
-        },
-
-        "platform_concepts/studio/database",
-        "platform_concepts/studio/product-catalogue",
-
-        "platform_concepts/studio/events/event-hub",
+            {
+              type: "category",
+              label: "Training bot data ",
+              collapsed: true,
+              items: [
+                "platform_concepts/studio/train/intents",
+                "platform_concepts/studio/train/entities",
+               // "platform_concepts/studio/train/orchllm",
+                "platform_concepts/studio/train/add-faqs",
+                "platform_concepts/studio/train/what-is-document-cognition",
+                "platform_concepts/studio/train/synonyms",
+                "platform_concepts/studio/train/smalltalk",
+                "platform_concepts/studio/train/add-contextual-response",
+                "platform_concepts/studio/tools", 
+              ],
+            },
+            "platform_concepts/studio/train/orchllm",
+            
+            {
+              type: "category",
+              label: "Test and publish bot",
+              collapsed: true,
+              items: [
+               // "platform_concepts/studio/test-and-publish-bot/bot-training",
+                "platform_concepts/studio/test-and-publish-bot/debug-flow",
+                "cookbooks/studio/regressiontest",
+                "platform_concepts/studio/test-and-publish-bot/modes",
+              
+              ],
+            },
+           // "platform_concepts/studio/build/math-ops",
+                
+          
 
         {
           type: "category",
@@ -379,27 +395,10 @@ module.exports = {
           items: [
             "platform_concepts/studio/analyze/analyseoverview",
             "platform_concepts/studio/analyze/chat-logs",
+            "platform_concepts/studio/build/bot-logs",
             "platform_concepts/studio/analyze/training-performance",
           ],
         },
-
-
-        {
-          type: "category",
-          label: "Test and publish bot",
-          collapsed: true,
-          items: [
-           // "platform_concepts/studio/test-and-publish-bot/bot-training",
-            "platform_concepts/studio/test-and-publish-bot/debug-flow",
-            "cookbooks/studio/regressiontest",
-            "platform_concepts/studio/test-and-publish-bot/modes",
-          
-          ],
-        },
-        
-        "platform_concepts/studio/tools",
-        "platform_concepts/studio/orchestrator", 
-        "platform_concepts/studio/train/orchllm",
         "platform_concepts/studio/studio-faqs",
     
       ],
