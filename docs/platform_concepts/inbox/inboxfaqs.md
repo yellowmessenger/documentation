@@ -41,6 +41,32 @@ Inbox Agent or Admin cannot delete any tickets from Inbox. Tickets can only be d
 
 
 <details>
+<summary> When an inbox agent role is logged in, the user can view all the chats in the Missed Chats section and also in the Bot Messages section which are not assigned to him. Is this expected behavior? </summary>
+
+Yes, this is expected behavior. Missed chats are not assigned to any particular agent, which is why all missed chats are visible to agents. This allows agents to reopen and assign the chats to themselves.
+</details>
+
+<details>
+<summary> Is it possible for an inbox agent role to view only the chats that are assigned to him in Missed Chats and Bot Messages sections? Or is there a way to disable these sections for a particular user?
+</summary>
+
+If you need to disable the Missed Chats or Bot Messages sections for a particular user, please raise a ticket with customer context to request this configuration change.
+</details>
+
+<details>
+<summary>When an inbox agent with the supervisor role is logged in, the user can view all the chats in the Resolved Chats section. Is this expected behavior?
+</summary>
+
+Yes, this is expected behavior. When someone is made an Inbox supervisor for particular group(s), they will see all the chats raised in those group(s).
+</details>
+
+<details>
+<summary>Is it possible for an inbox agent with the supervisor role to view only the chats that are assigned to him and his team members within the group?</summary>
+
+If a supervisor is seeing chats from groups to which they were not assigned, this is a bug. Please raise this issue in DevRev for further investigation.
+</details>
+
+<details>
 <summary> Can internal notes on live chats and email tickets be downloaded/ is internal notes data available on any reports? </summary>
 <div>
 No. You cannot download internal notes, they are only available within the respective chat/ticket screen.   
