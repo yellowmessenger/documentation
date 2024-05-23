@@ -60,6 +60,8 @@ This provides user traffic metrics such as Unique Users, New Users, User Traffic
 | **Unique Users by Device**      | Measures the number of unique users categorized by device type (e.g., desktop, mobile, tablet). It helps in understanding device usage trends and optimizing for different devices. |
 | **Unique Users by Country**     | Tracks the number of unique users categorized by their country. It provides insights into geographic distribution and helps in targeting specific regions. |
 
+
+Learn more about [User traffic reports](https://docs.yellow.ai/docs/platform_concepts/growth/default_reports#based-on-user-traffic)
    
 
 ### Inbox agent performance
@@ -84,6 +86,7 @@ This lets you evaluate the performance of your support agents to ensure high-qua
 | **Average Queue Time by Day**      | Displays the average queue time for tickets on a daily basis. It helps in identifying daily trends and potential bottlenecks in ticket processing. |
 | **Agent Transfers by Day**         | Tracks the number of ticket transfers between agents on a daily basis. It helps in understanding collaboration and potential inefficiencies in ticket routing. |
 
+Learn more about [Chat reports](https://docs.yellow.ai/docs/platform_concepts/growth/default_reportss#based-on-chats)
 
 ### Voice
 
@@ -128,6 +131,9 @@ KPI | Description
 **Utterance Status Split** | This KPI categorizes user utterances based on their status (e.g., recognized, unrecognized, ambiguous). It helps in understanding how well the bot processes different types of user input.
 **API Usage by Status Code** | This KPI tracks the status codes returned by API requests made by the bot. It provides insights into the performance and reliability of the APIs used by the bot.
 **API Requests by Day** | This KPI shows the number of API requests made by the bot on a daily basis. It helps in monitoring the bot's activity levels and identifying trends or spikes in API usage.
+
+
+Learn more about [bot performance reports](https://docs.yellow.ai/docs/platform_concepts/growth/default_reports#based-on-bot-performance)
 
 ### Inbox chats
 

@@ -988,8 +988,15 @@ module.exports = {
               "platform_concepts/growth/dataexplorer/formulacolumn",
                         ]
           },
-
+          {
+            type: "category",
+            label: "Reports",
+            collapsed: true,
+            items: [
+           "platform_concepts/growth/default_reports",
             "platform_concepts/growth/dataexplorer/savedreportsactions",
+            ],
+          },
           ],
       }, //end of DE 
 
