@@ -1,6 +1,6 @@
 ---
-title: Create voice bot
-sidebar_label : Create voice bot
+title: Create Voice bot
+sidebar_label : Create Voice bot
 ---
 
 This guide will walk you through the process of creating a voice bot on the Yellow.ai platform.

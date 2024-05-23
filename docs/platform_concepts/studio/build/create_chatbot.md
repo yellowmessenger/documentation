@@ -1,6 +1,6 @@
 ---
-title: Create chatbot
-sidebar_label : Create chatbot
+title: Create Chatbot
+sidebar_label : Create Chatbot
 ---
 
 This guide will walk you through the process of creating a chattbot on the Yellow.ai platform.

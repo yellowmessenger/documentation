@@ -55,6 +55,60 @@ To set a flow as a fallback flow, follow these steps:
    
 * This will set the selected flow as start flow.  
 
+
+## Configuring a start trigger for a Flow
+
+The start trigger is an entry point for a bot to begin conversation with the user. You can define start trigger using Intents, Entities, Event, or Page URL.
+
+For detailed instructions, see [how to configure each trigger type](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow).
+
+![](https://imgur.com/zuP3R7W.gif)
+
+
+## Connecting two nodes 
+
+In a conversational flow, a connection is the path that guides the user step by step through the conversation. Connecting nodes establish logical transitions between different points in the dialogue, allowing the bot to respond appropriately to the user's input .
+
+Each node has a starting point, just click on the point and select the appropriate node.
+
+![](https://imgur.com/RRf8EmL.gif)
+
+
+## Editing a node
+
+You can edit a node to improve the conversation over time by listening to feedback from users and analyzing data.
+
+To edit a node, click on the node where you can edit based on your requirements.
+
+![](https://imgur.com/2bsrF4y.gif)
+
+## Clonning a node
+
+Cloning a node simplifies the process of creating duplicate copies for reuse within the flow. This saves valuable time and effort in content creation by eliminating the need to recreate similar content from scratch.
+
+To clone a node, click on the **more options** iocn > **Clone** option.
+
+:::note
+When you clone a node containing a variable, the cloned node won't automatically select the variable. You will need to reassign the variable manually.
+:::
+
+![](https://imgur.com/XbPPG1X.gif)
+
+## Disconnect two nodes
+
+To delete the connection between two nodes, hover on the connection arrow until a delete icon appears. Once the delete icon appears, click on it. This removes the connection between the two nodes. 
+
+![](https://imgur.com/RU8Jmvr.gif)
+
+## Delete a node
+
+When a node becomes outdated, irrelevant, inaccurate, or redundant, you can delete it from the conversational flow.
+
+To delete a node, click on the **more options** icon > **Delete**.
+
+![](https://imgur.com/ucN29gh.png)
+
+
 ## Search flows
 
 After creating a flow, you can use the search functionality to quickly locate and access it. This allows you to easily find the specific flow that you need to work on, especially when there are multiple flows within the same bot.
@@ -166,6 +220,60 @@ To move the flow to another category, follow the below step:
 Connecting flows ensures seamless transitions between different conversation stages, maintaining context for a personalized user experience.
 
 To connect two flows, you can use a [switch flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#112-switch-flow) node or [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. In the case of a switch flow, the bot does not return to the original flow from which the node was triggered. While an execute flow node, allows the bot to return to the original flow after executing the designated new flow.
+
+
+### Configuring a start trigger for a Flow
+
+The start trigger is an entry point for a bot to begin conversation with the user. You can define start trigger using Intents, Entities, Event, or Page URL.
+
+For detailed instructions, see [how to configure each trigger type](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow).
+
+![](https://imgur.com/zuP3R7W.gif)
+
+
+### Connecting two nodes 
+
+In a conversational flow, a connection is the path that guides the user step by step through the conversation. Connecting nodes establish logical transitions between different points in the dialogue, allowing the bot to respond appropriately to the user's input .
+
+Each node has a starting point, just click on the point and select the appropriate node.
+
+![](https://imgur.com/RRf8EmL.gif)
+
+
+### Editing a node
+
+You can edit a node to improve the conversation over time by listening to feedback from users and analyzing data.
+
+To edit a node, click on the node where you can edit the node based on your requirements.
+
+![](https://imgur.com/2bsrF4y.gif)
+
+### Clonning a node
+
+Cloning a node simplifies the process of creating duplicate copies for reuse within the flow. This saves valuable time and effort in content creation by eliminating the need to recreate similar content from scratch.
+
+To clone a node, click on the **more options** iocn > **Clone** option.
+
+:::note
+When you clone a node containing a variable, the cloned node won't automatically select the variable. You will need to reassign the variable manually.
+:::
+
+![](https://imgur.com/XbPPG1X.gif)
+
+### Disconnect two nodes
+
+To delete the connection between two nodes, hover on the connection arrow until a delete icon appears. 
+Once the delete icon appears, click on it. This removes the connection between the two nodes. 
+
+![](https://imgur.com/RU8Jmvr.gif)
+
+### Delete a node
+
+When a node becomes outdated, irrelevant, inaccurate, or redundant, you can delete it from the  conversational flow.
+
+To delete a node, click on the **more options** icon > **Delete**.
+
+![](https://imgur.com/ucN29gh.png)
 
 ## Preview flow
 
