@@ -3,9 +3,10 @@ title: Add Multilingual support to your bot
 sidebar_label: Add Multilingual support to your bot
 ---
 
-Yellow.ai lets you add multiple languages to your bot to communicate with your customers in their preferred language. This feature makes it easy for businesses to expand globally and engage with customers in their desired language. Users can seamlessly switch between languages during their conversations with the bot, resulting a personalized experience that caters to their unique needs. 
+You can add multiple languages to your Yellow.ai bot. This enables you to expand globally and engage with customers more effectively. Users can switch seamlessly between languages during their interactions with the bot, providing a personalized experience tailored to their needs.
 
-For example, if your bot is programmed to greet users with a welcome message, it will display **Greetings, welcome to India**. However, to create a more personalized experience, you can utilize the translation feature to translate the word **Greetings** into different languages. For instance, in Hindi, the word **Greetings** can be translated to **Namaskar**, while in Tamil it can be translated to **Vanakam**. By configuring these translations, users can add a human touch to the bot's communication, creating a more engaging and welcoming experience for their customers.
+Configuring these translations adds a human touch to the bot's communication, creating a more engaging and welcoming experience for customers.
+
 
 
 ## 1. Supported languages
@@ -153,85 +154,94 @@ To add a new language to your bot, follow these steps:
 
 1. Go to **Studio** and click the **Language** icon.
 
-![](https://hackmd.io/_uploads/SkFZyOUVh.png)
+   ![](https://hackmd.io/_uploads/SkFZyOUVh.png)
 
 
 2. Click **+ Add langauge**
 
-![](https://hackmd.io/_uploads/ByzL1_U43.png)
+   ![](https://hackmd.io/_uploads/ByzL1_U43.png)
 
 
 3. Add the required languages and click **Save**. 
 
-![](https://i.imgur.com/AL5YsQg.png)
+   ![](https://i.imgur.com/AL5YsQg.png)
 
-## 3. Language translation
+## 3. Add Language translations
 
-These sections will guide you in setting language translations for your bot.
+This section guides you on how to set up language translations for your bot.
 
-### 3.1 Set language translation for your bot
+### Add translations for each Key 
 
-1. Go to **Studio** > **Translations**.
+Here, a "key" represents a sentence or message intended for the user. You can provide translations for all supported languages manually as explained in the following.
 
-![](https://hackmd.io/_uploads/HyvAyOLNn.png)
+1. Go to **Studio** > **Build** and click on the **Translations** tab.
 
-2. Click **+ Create new key**.
+   ![](https://i.imgur.com/pKeJFz2.png)
 
-![](https://hackmd.io/_uploads/HypGg_LVh.png)
+2. Click **+ Create new key**. You will see a pop-up screen.
 
+   ![](https://i.imgur.com/C1xZx6k.png)
 
-3. In the following pop-up, fill the below-mentioned fields:
-
- *  In **Key** enter the keyword that will switch the language.
- * Describe the keyword in the **Description** field.
- * Add the translated lines in the required languages.
-
-![](https://i.imgur.com/04wtZLQ.jpg)
-
-
-6. Click **Add**. 
-
-You can add multiple keys and lines as per your requirement.
-
-An alternative to manually filling each field with translated data in different languages is to use the **Auto translate** option located at the top right corner. This option automatically populates the empty fields with translated data, provided the corresponding field in English is already filled with data.
-
-![](https://hackmd.io/_uploads/BJJ6bd8Vh.png)
-
-:::info
-You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language.
-:::
+3. Enter a **Key** name for the translation. This key will be used when selecting translations during bot building.
+4. In **Description**, provide a brief Description of the key.
+5. Enter the message in **English**.
+6. Enter the relevant translation for each supported language in the respective box.
+7. Click **Add**.
 
 
-### 3.3 Add multiple translations at once
+
+### Import multiple translations using a CSV file
 
 To add multiple translations at the same time, follow these steps:
 
-1. Click **Bulk Manage** > **Import**.
+1. Create a CSV file with columns: **name** (key), **english_text**, and other configured languages like **hindi_text**, **kannada_text**, **tamil_text**.
+2. On the **Translations** page, click **Bulk Manage** > **Import**.
 
-![](https://i.imgur.com/6GhFAom.png)
+   ![](https://i.imgur.com/Rqj26YI.png)
 
 :::note
 **Bulk Manage** > **Export** is used to download the existing keys in your platform along with their translations.
 :::
 
-2. Have a CSV file ready with mandatory columns: **name** (key), **english_text**. This can be followed by the other configured languages (columns) like **hindi_text**, **kannada_text**, **tamil_text**, etc.
-3. Click **Upload File**, select the CSV file from your local system to import the file. 
+3. Click **Upload File** and select the CSV file from your local system to import the file. 
+
+   <img  src="https://i.imgur.com/BIj6OLQ.png"  alt="drawing"  width="50%"/>
+
 4. Click **Import**. 
 
-<img  src="https://i.imgur.com/BIj6OLQ.png"  alt="drawing"  width="70%"/>
 
-### 3.4 Add translations using code
+
+
+
+
+
+### Enable auto-translation
+
+Auto translation simplifies the translation process by automatically filling empty fields with translated data, based on the information already provided in the corresponding English field.
+
+To enable auto-translation, on **Studio** > **Build** > **Translations**, click on the **Auto translate** button.
+   
+   ![](https://i.imgur.com/wnUS5tF.png)
+
+:::info
+You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language.
+:::
+
+### Add translations using code
 
 Translation can also be configured via code. 
 
 1. Go to **Functions** and click the transalte icon.
 2. Click **+ Add code**, and then add the following line to the **Code** field, along with the default message in the required language to the **Message** field.
+
+   ```app.renderMessage('code-goes-here', {}, 'default message')```
+
+   ![](https://i.imgur.com/VCQyjt8.jpg)
+
+
 3. Click **Add Message**.
 
-```app.renderMessage('code-goes-here', {}, 'default message')```
 
-
-![](https://i.imgur.com/VCQyjt8.jpg)
 
 When the bot encounters the message specified in the Message field, it automatically executes the code, performing translation in the chosen language.
 
@@ -243,10 +253,10 @@ To enable the translation feature and allow nodes to switch to the required lang
 
 1. Click the translation icon in the text field.
 
-![](https://i.imgur.com/Bzlt66X.png)
+   ![](https://i.imgur.com/Bzlt66X.png)
 
 2. Select the [Key](#2-add-languages-to-your-bot) that is already configured for that text translation (or, [add new translations](#31-set-language-translation-for-your-bot) as you create each node).
 
-![](https://i.imgur.com/wmSwZYu.png)
+   ![](https://i.imgur.com/wmSwZYu.png)
 
 When the bot-user conversation reaches this node, based on the language used by the customer, the bot automatically switches to the language configured in the key.
