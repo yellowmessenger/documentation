@@ -545,14 +545,14 @@ The following actions can be performed:
 
 ### 3.1 Set language 
 
-This node lets you change the language of the bot conversation to one of the pre-configured languages. The language can be changed only if you have already set up languages in your bot, otherwise, this node will not work. This node takes input only in the form of [ISO codes](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages) based on which it will change the language of the bot.
+This node lets you change the language of the bot conversation to one of the pre-configured languages. The language can be changed only if you have already set up languages in your bot, otherwise, this node will not work. This node takes input only in the form of [ISO codes](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages) based on which it will change the language of the bot.
 
    <img src="https://i.imgur.com/fBHPZLT.png" alt="drawing" width="80%"/>
 
 
 Let's say that you want to build a flow that asks for user's preferred language to continue the conversation.
 
-1. [Add the preferred languages to your bot](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#2-add-languages-to-your-bot).
+1. [Add the preferred languages to your bot](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#add-languages-to-your-bot).
 2. Go to the flow and include a [Quick reply node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#7-quick-replies). Create different buttons for different languages and assign the ISO code as button values to the respective language option.
 3. Store the response of the Quick Reply node in a variable.
 4. Include the **Set language node** and choose the variable created in the previous step. Refer to the following gif to see how it works.

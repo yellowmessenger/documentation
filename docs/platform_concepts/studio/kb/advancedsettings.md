@@ -114,7 +114,7 @@ To configure, follow these steps:
 
 1. Upload your URL links to KB.
 2. Navigate to the **Build** section and configure a language setup flow.
-    - Add a quick reply node with the **button name** as the language and the **button value** as the ISO code for that language. View the ISO codes [here.](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages) 
+    - Add a quick reply node with the **button name** as the language and the **button value** as the ISO code for that language. View the ISO codes [here.](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages) 
     ![image](https://imgur.com/cMxEl8O.png)
     - Store the response of the Quick reply node in a variable (language).
     - Send the stored variable (language), which is the ISO code, to the Set language node.

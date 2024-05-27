@@ -1,6 +1,6 @@
 ---
-title: Bot level settings
-sidebar_label: Conversation settings
+title: Bot Conversation settings
+sidebar_label: Bot Conversation settings
 tags: [conversation settings]
 ---
 

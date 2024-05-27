@@ -170,7 +170,7 @@ To add FAQs for multi-lingual bots, follow the given steps:
 
      ![](https://i.imgur.com/hteoHYF.png)
 
-   - Add responses in the required columns (column names are suffixed with the [ISO code of each language](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages). 
+   - Add responses in the required columns (column names are suffixed with the [ISO code of each language](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages). 
 
      **Example**
 

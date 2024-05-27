@@ -70,7 +70,7 @@ You can try out your bot in various languages by just picking your preferred lan
    <img src="https://i.imgur.com/XJpwl4I.png" alt="drawing" width="60%"/>
 
 :::note
-To add languages to your bot, check out the steps [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#2-add-languages-to-your-bot).
+To add languages to your bot, check out the steps [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#add-languages-to-your-bot).
 :::
 
 ## Conversation 
