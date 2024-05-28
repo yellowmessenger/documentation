@@ -245,6 +245,7 @@ module.exports = {
         {
           type: "category",
           label: "Create your bot",
+          link: {type: 'doc', id: 'platform_concepts/studio/build/create-your-bot'},
           collapsed: true,
           items: [ 
             "platform_concepts/studio/build/create_chatbot",
@@ -318,6 +319,7 @@ module.exports = {
                 "platform_concepts/studio/build/code",
                 "platform_concepts/studio/events/event-hub",
                 "platform_concepts/studio/database",
+                "platform_concepts/studio/build/localization",
                 "platform_concepts/studio/product-catalogue",
                 {
                   type: "category",
@@ -345,14 +347,9 @@ module.exports = {
             },         
 
           
-            {
-              type: "category",
-              label: "Bot customization settings",
-             items: [ 
+            
               "platform_concepts/studio/build/additionalsettings",
-              "platform_concepts/studio/build/localization",
-             ],
-            },
+            
             
             {
               type: "category",

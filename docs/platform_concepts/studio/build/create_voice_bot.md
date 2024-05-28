@@ -25,6 +25,4 @@ To create a voice bot, follow these steps:
 | Region | Choose the country to which your bot belongs |
 | Add live char support to your bot | Enable this checkbox if you want to connect your users with a live agent for support. |
 
-* Once your bot is created, you will be redirected to the Overview page. Here, you can [configure](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration) your newly created chatbot according to your requirements
-
-    ![](https://imgur.com/KSaxe8b.png)
+* Once your bot is created, you will be redirected to the Overview page. Here, you can [configure](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration) your newly created chatbot according to your requirements.

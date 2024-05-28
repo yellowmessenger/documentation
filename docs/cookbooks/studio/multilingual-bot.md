@@ -28,7 +28,7 @@ You can create multilingual bots in yellow.ai platfrom through which your bot ca
 
 ![](https://i.imgur.com/fsQyy5B.png)
 
-6. Click **Configure buttons** on the same pop-up and populate the button values with respective language's [ISO codes](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages). Click **Save all changes** when you're done.
+6. Click **Configure buttons** on the same pop-up and populate the button values with respective language's [ISO codes](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages). Click **Save all changes** when you're done.
 
 ![](https://i.imgur.com/lz4oNEt.png)
 
@@ -44,7 +44,7 @@ You can create multilingual bots in yellow.ai platfrom through which your bot ca
 
 **Related articles**
 
-* [Languages supported](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#1-supported-languages)
+* [Languages supported](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages)
 * [Multi-language support](https://docs.yellow.ai/docs/platform_concepts/studio/tools#213-multi-language)
 * [Set language node in Flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language)
 * [Language Translation](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)

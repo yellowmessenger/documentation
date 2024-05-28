@@ -9,7 +9,7 @@ Configuring these translations adds a human touch to the bot's communication, cr
 
 
 
-## 1. Supported languages
+## Supported languages
 
 The following table consists of the languages supported in our platform.
 
@@ -146,49 +146,71 @@ The following table consists of the languages supported in our platform.
 | Zulu                          |   zu | Yes                 |                          | Yes            |                | Yes              |                     |                    |
             
 
-
-
-## 2. Add languages to your bot
+## Add languages to your bot
 
 To add a new language to your bot, follow these steps:
 
-1. Go to **Studio** and click the **Language** icon.
+1. Go to **Studio** > **Build** > **Flow** > click the **Language** icon.
 
-   ![](https://hackmd.io/_uploads/SkFZyOUVh.png)
+   <img src="https://imgur.com/x2OLal7.png" alt="drawing" width="80%"/>
 
+2. Click **+ Add langauge**.
 
-2. Click **+ Add langauge**
-
-   ![](https://hackmd.io/_uploads/ByzL1_U43.png)
-
+   <img src="https://imgur.com/WOzhLn0.png" alt="drawing" width="60%"/>
 
 3. Add the required languages and click **Save**. 
 
    ![](https://i.imgur.com/AL5YsQg.png)
 
-## 3. Add Language translations
+## Add Language translations
 
 This section guides you on how to set up language translations for your bot.
 
 ### Add translations for each Key 
 
-Here, a "key" represents a sentence or message intended for the user. You can provide translations for all supported languages manually as explained in the following.
+Here, a "key" represents a sentence or message intended for the user. This key will be used when selecting translations during flow creation. You can provide translations for all supported languages manually as explained in the following.
 
 1. Go to **Studio** > **Build** and click on the **Translations** tab.
 
    ![](https://i.imgur.com/pKeJFz2.png)
 
-2. Click **+ Create new key**. You will see a pop-up screen.
+2. Click **+ Create new key**. You will see a pop-up dialog box.
 
-   ![](https://i.imgur.com/C1xZx6k.png)
+   <img src="https://i.imgur.com/C1xZx6k.png" alt="drawing" width="80%"/>
 
-3. Enter a **Key** name for the translation. This key will be used when selecting translations during bot building.
-4. In **Description**, provide a brief Description of the key.
-5. Enter the message in **English**.
-6. Enter the relevant translation for each supported language in the respective box.
-7. Click **Add**.
+3. Enter a **Key** name for the translation. 
 
+4. In **Description**, provide a brief description of the key.
 
+5. Enter the message in **English** and in other languages.
+
+6. Click **Add**.
+
+### Auto-translate translation keys
+
+Auto translation simplifies the translation process by automatically filling empty fields with translated data, based on the information already provided in the corresponding English field.
+
+1. To enable auto-translation, on **Studio** > **Build** > **Translations**, click on the **Auto translate** button.
+   
+   ![](https://i.imgur.com/wnUS5tF.png)
+
+* This will automatically translate the data into the other languages based on the information provided in the corresponding English field.    
+
+:::info
+You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language.
+:::
+
+### Manage translations Keys
+
+After adding translation keys, you can edit and delete it based on your requirements. 
+
+To manage the translations keys, follow these steps:
+
+1. Go to the keys that you have created and hover on them to perform the following actions:
+     - **Edit**: You can select this option to edit the key, description, and text of the other language fields.
+     - **Delete**: You can select this option to permanently delete the key. Once deleted, it cannot be recovered.
+
+     ![](https://imgur.com/9PxsbLP.png)
 
 ### Import multiple translations using a CSV file
 
@@ -208,24 +230,6 @@ To add multiple translations at the same time, follow these steps:
    <img  src="https://i.imgur.com/BIj6OLQ.png"  alt="drawing"  width="50%"/>
 
 4. Click **Import**. 
-
-
-
-
-
-
-
-### Enable auto-translation
-
-Auto translation simplifies the translation process by automatically filling empty fields with translated data, based on the information already provided in the corresponding English field.
-
-To enable auto-translation, on **Studio** > **Build** > **Translations**, click on the **Auto translate** button.
-   
-   ![](https://i.imgur.com/wnUS5tF.png)
-
-:::info
-You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language.
-:::
 
 ### Add translations using code
 
@@ -247,16 +251,16 @@ When the bot encounters the message specified in the Message field, it automatic
 
 ---
 
-## <a name="2"></a> 4. Configure translation in nodes
+## <a name="2"></a> Add translation key in nodes
 
-To enable the translation feature and allow nodes to switch to the required language, you need to configure the nodes accordingly. Here are the steps to configure translations in nodes:
+You can add the translation key to the node to avoid the auto-translation. Here are the steps to add translations key in nodes:
 
 1. Click the translation icon in the text field.
 
-   ![](https://i.imgur.com/Bzlt66X.png)
+     ![](https://i.imgur.com/Bzlt66X.png)
 
-2. Select the [Key](#2-add-languages-to-your-bot) that is already configured for that text translation (or, [add new translations](#31-set-language-translation-for-your-bot) as you create each node).
+2. Select the [key](#add-languages-to-your-bot) that is already configured for that text translation (or, [add new translations](#add-translations-for-each-key) as you create each node).
 
-   ![](https://i.imgur.com/wmSwZYu.png)
+    ![](https://i.imgur.com/wmSwZYu.png)
 
-When the bot-user conversation reaches this node, based on the language used by the customer, the bot automatically switches to the language configured in the key.
+When the bot-user conversation reaches this node, based on the language used by the user, the bot automatically switches to the language configured in the key.
