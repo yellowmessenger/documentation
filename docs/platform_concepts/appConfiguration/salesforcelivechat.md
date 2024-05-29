@@ -12,73 +12,95 @@ Agents must remain available (online) on Salesforce (when queue management and o
 
 ## Connect Salesforce with Yellow.ai
 
+In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
+
+
+
 To connect your yellow.ai account with **Salesforce**, follow these steps.
 
-1. Login to [cloud.yellow.ai](https://cloud.yellow.ai/auth/login) and click the **Integrations** module on the top left corner of your screen.
+1. On the left navigation bar, go to **Extensions** > **Integrations** > **Live chat** > **Salesforce live chat**.
 
-<img src="https://i.imgur.com/3QjKjML.png" alt="drawing" width="100%"/>
+   <img src="https://i.imgur.com/JagYT5w.png" alt="drawing" width="100%"/>
 
 2. Search for **Salesforce Live Chat** or choose the category named **Live chat** from the left navigation bar and then click on **Salesforce Live Chat**.
 
-![](https://i.imgur.com/6CUGqj2.png)
+   ![](https://i.imgur.com/nCJ9Tdd.png)
 
 
-3. Fill in the required fields. 
+3. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
+Fill in the required fields. 
 
-* **Organization Id** - The unique identifier of the salesforce account that represents a particular organization. To fetch this, refer to the following steps:
+4. In **Organization Id**, enter the unique identifier of the Salesforce account that represents a particular organization. To fetch this, refer to the following steps:
 
- 1. Login to your Salesforce account.
- 2. Click on the app launcher and choose **Service Console**.
- 3. Click on the setup button at the top right corner and select **Setup**.
- 4. In the **Quick Find** section, search for **Deployments** in the **Chat** section.
- 5. Click on the deployment that is already created (if not, create a deployment).
- 6. In the deployment script, locate an ID starting with **00D**, which is the Organization ID.
+   a. Login to your Salesforce account.
 
-* **Deployment Id** - The ID of the deployment from where the chat has been initiated. To fetch this, refer to the following steps:
+   b. Click on the app launcher and choose **Service Console**.
 
- 1. Login to your Salesforce account.
- 2. Click on the app launcher and choose **Service Console**.
- 3. Click on the setup button at the top right corner and select **Setup**.
- 4. In the **Quick Find** section, search for **Deployments** in the **Chat** section.
- 5. Click on the deployment that is already created (if not, create a deployment).
- 6. In the deployment script, locate an ID **not starting with 00D**, which is the Deployment ID.
+   c. Click on the setup button at the top right corner and select **Setup**.
+ 
+   d. In the **Quick Find** section, search for **Deployments** in the **Chat** section.
 
-* **Button Id** - The Id of the button(group) from where the chat has been initiated. To fetch this, refer to the following steps:
+   e. Click on the deployment that is already created (if not, create a deployment).
 
- 1. Login to your Salesforce account.
- 2. Click on the app launcher and choose **Service Console**.
- 3. Click on the setup button at the top right corner and select **Setup**.
- 4. In the **Quick Find** section, search for **Chat Buttons and Invitations** in the **Chat** section.
- 5. Click on the button that is already created (if not, create a button).
- 6. In the **Chat Button Code**, locate an ID starting with **573**, which is the Button ID.
+   f. In the deployment script, locate an ID starting with **00D**, which is the Organization ID.
 
-* **Base URL** - The chat API endpoint of a particular salesforce organization. To fetch this, refer to the following steps:
+4. In **Deployment Id**, enter the identifier for the specific deployment within your organization. To fetch this, refer to the following steps:
 
- 1. Login to your Salesforce account.
- 2. Click on the app launcher and choose **Service Console**.
- 3. Click on the setup button at the top right corner and select **Setup**.
- 4. In the **Quick Find** section,  search for **Chat Settings** in the Chat section.
- 5. Find the **Chat API Endpoint** present and copy the URL value till **.com**. This is your Organization Base URL.
+   a. Login to your Salesforce account.
 
-* **Agent Device:** The browser’s userAgent value. 
-* **Language:** Language preferred by the user to chat with the live agent.
-* **Agent Screen Resolution:** The screen resolution of the device used by the agent.
-* **Agent Timeout:** The value of this field determines the time till which the chat will remain active in case of inactivity at the agent’s side.
-* **Enable queue updates:** Enable this for users to receive updates on their position in the queue during chat interactions.
-* **Enable sticky agent:** Enable this to connect users directly to their preferred agent by specifying the agent's ID in the Raise Ticket node.
-* **Disconnect chat from:** Enable this to immediately close tickets for users waiting in the queue but not yet assigned to an agent.
-* **Send queue updates event to:** Enable this to inform users about their queue position with real-time updates sent as events to the bot, allowing developers to customize bot flows based on the queue status.
-* **Customise chat headers:** Enable this to personalize the bot headers with agent names and descriptions. The bot headers will be restored ot orginal settings once the ticket is closed.
+   b. Click on the app launcher and choose **Service Console**.
 
-4. Once you're done, click **Connect**.
-5. If you have multiple accounts, follow the above mentioned steps to add each of them.
+   c. Click on the setup button at the top right corner and select **Setup**.
 
-:::note
-1. Enter a unique name for each account to easily identify them within the yellow.ai platform. It is recommended to use a name that aligns with its purpose for better usability. 
-2. You can add a maximum of 15 accounts.
-3. In a two-tier environment, such as bots with only Development/Live environments, you can add account names only in the development mode. Once added and flows have been built, in the Live mode, you can only choose the account names and not edit them.
-4. In a three-tier environment, such as bots with Staging/Sandbox/Production modes, in Staging and Sandbox modes, you can add and edit new accounts. However, in Production, only the account details added in Staging will be available. You can only map in the production environment.
-:::
+   d. In the **Quick Find** section, search for **Deployments** in the **Chat** section.
+
+   e. Click on the deployment that is already created (if not, create a deployment).
+
+   f. In the deployment script, locate an ID **not starting with 00D**, which is the Deployment ID.
+
+5. In **Button Id**, enter the unique identifier for the chat button that initiates a live chat session To fetch this, refer to the following steps:
+
+   a. Login to your Salesforce account.
+
+   b. Click on the app launcher and choose **Service Console**.
+ 
+   c. Click on the setup button at the top right corner and select **Setup**.
+ 
+   d. In the **Quick Find** section, search for **Chat Buttons and Invitations** in the **Chat** section.
+ 
+   e. Click on the button that is already created (if not, create a button).
+ 
+   f. In the **Chat Button Code**, locate an ID starting with **573**, which is the Button ID.
+
+6. In **Organization Base URL**, enter the chat API endpoint of a particular salesforce organization. To fetch this, refer to the following steps:
+
+   a. Login to your Salesforce account.
+ 
+   b. Click on the app launcher and choose **Service Console**.
+ 
+   c. Click on the setup button at the top right corner and select **Setup**.
+ 
+   d. In the **Quick Find** section,  search for **Chat Settings** in the Chat section.
+ 
+   e. Find the **Chat API Endpoint** present and copy the URL value till **.com**. This is your Organization Base URL.
+
+ 7. In **Agent device**, specify the type of device the agent will use (e.g., desktop, mobile)
+ 8. In **Agent screen resolution**, enter the screen resolution of the agent's device to ensure optimal chat interface display. Example: For desktop, it could be 2560 x 1600.
+ 9. Configure other details:
+    
+    Option | Description
+    ------ | -----------
+    **Language** | Language preferred by the user to chat with the live agent.
+    **Agent Timeout** | The time duration (in minutes) after which an agent will be timed out if inactive. Default Value: 5 minutes
+    **Enable queue updates** | Enable this for users to receive updates on their position in the queue during chat interactions.
+    **Enable sticky agent** | Enable this option to assign returning users to the same agent they previously interacted with.
+    **Disconnect chat from** | Enable this to immediately close tickets for users waiting in the queue but not yet assigned to an agent.
+    **Send queue updates event to** | Enable this to inform users about their queue position with real-time updates sent as events to the bot, allowing developers to customize bot flows based on the queue status.
+    **Customise chat headers** | Enable this to personalize the bot headers with agent names and descriptions. The bot headers will be restored ot orginal settings once the ticket is closed.
+
+10. Once you're done, click **Connect**.
+11. If you have multiple accounts, click on **+ Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
+
 
 
 
@@ -97,27 +119,27 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
  
  1. In the Studio flow builder, select the **Raise Ticket** node.
 
-<img src="https://i.imgur.com/k3kIkVd.png" alt="drawing" width="100%"/>
+   <img src="https://i.imgur.com/k3kIkVd.png" alt="drawing" width="80%"/>
 
 2. Select **Salesforce Live Chat** from the **Live chat agent** drop-down list.
 
-<img src="https://i.imgur.com/JHYS5Tz.png" alt="drawing" width="70%"/>
+   <img src="https://i.imgur.com/JHYS5Tz.png" alt="drawing" width="60%"/>
 
-<img src="https://i.imgur.com/bfVBodc.png" alt="drawing" width="70%"/>
+   <img src="https://i.imgur.com/bfVBodc.png" alt="drawing" width="60%"/>
 
 
 The following table contains the details of each field in the **Raise ticket** node.
 
 
-| Field name | Sample value | Data type |Description
-| -------- | -------- | -------- |-----|
-|Message after ticket assignment|Requesting live agent connection.|String| The message that will be displayed to the end user after a ticket is successfully assigned to an agent|
-|Name| Rajesh|String|Name of the user|
-|Mobile| 9876543210| String|Mobile number of the user|
-Email|test@gmail.com|String|Email address of the user
-Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
-Salesforce Live Chat Custom Fields|<pre lang="json"> [<br/> {<br/> "label": "Mobile",<br/>"value": "9999444443",<br/>"transcriptFields": [<br/>"Mobile_Number__c"<br/> ],<br/> "displayToAgent": true<br/>},<br/>{<br/>"label": "Chat",<br/>"value": "sessionURL",<br/>"transcriptFields": [<br/>"chat_transcript__c"<br/>],<br/>"displayToAgent": true<br/>}<br/>]</pre>|Array| The list of details provided by the user before initiating the chat with the live agent|
-|Salesforce Live Chat Custom Entities|<pre lang="json">[<br/> {<br/> "entityName":"Contact",<br/>"saveToTranscript":"contact",<br/> "linkToEntityName":"Case",<br/>"linkToEntityField":"ContactId",<br/>"entityFieldsMaps":<br/>[<br/>{<br/>"fieldName":"LastName",   <br/> "label":"LastName",<br/>"doFind":true,<br/>"isExactMatch":true,<br/> "doCreate":true<br/>},<br/> {<br/>"fieldName":"FirstName",<br/> "label":"FirstName",<br/> "doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"Email",<br/>"label":"Email",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>}<br/> ]<br/>}<br/>]<br/></pre>|Array|The records created/ searched depending on what [EntityFieldsMaps](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#EntityFieldMaps) has enabled.
+   | Field name | Sample value | Data type |Description
+   | -------- | -------- | -------- |-----|
+   |Message after ticket assignment|Requesting live agent connection.|String| The message that will be displayed to the end user after a ticket is successfully assigned to an agent|
+   |Name| Rajesh|String|Name of the user|
+   |Mobile| 9876543210| String|Mobile number of the user|
+   Email|test@gmail.com|String|Email address of the user
+   Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
+   Salesforce Live Chat Custom Fields|<pre lang="json"> [<br/> {<br/> "label": "Mobile",<br/>"value": "9999444443",<br/>"transcriptFields": [<br/>"Mobile_Number__c"<br/> ],<br/> "displayToAgent": true<br/>},<br/>{<br/>"label": "Chat",<br/>"value": "sessionURL",<br/>"transcriptFields": [<br/>"chat_transcript__c"<br/>],<br/>"displayToAgent": true<br/>}<br/>]</pre>|Array| The list of details provided by the user before initiating the chat with the live agent|
+   |Salesforce Live Chat Custom Entities|<pre lang="json">[<br/> {<br/> "entityName":"Contact",<br/>"saveToTranscript":"contact",<br/> "linkToEntityName":"Case",<br/>"linkToEntityField":"ContactId",<br/>"entityFieldsMaps":<br/>[<br/>{<br/>"fieldName":"LastName",   <br/> "label":"LastName",<br/>"doFind":true,<br/>"isExactMatch":true,<br/> "doCreate":true<br/>},<br/> {<br/>"fieldName":"FirstName",<br/> "label":"FirstName",<br/> "doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"Email",<br/>"label":"Email",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>}<br/> ]<br/>}<br/>]<br/></pre>|Array|The records created/ searched depending on what [EntityFieldsMaps](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#EntityFieldMaps) has enabled.
 
 **Advanced options**
 
@@ -149,7 +171,7 @@ The following table contains the details of each field in the **Advanced options
 
 **Sample success response**
 
-```
+```json
 {
    "assignedTo": true,
    "success": true,
@@ -162,7 +184,8 @@ apiresponse represents the raw response from the Salesforce create ticket API
 :::
 
 **Sample failure response**
-```
+
+```json
 {
    "success": false,
    "assignedTo": false,
@@ -171,9 +194,7 @@ apiresponse represents the raw response from the Salesforce create ticket API
    "ticketInfo": "{{apiresponse}}"
 }
 ```
-:::note 
-apiresponse represents the raw response from the Salesforce create ticket API
-:::
+
 
 ## Steps to set up bot in Salesforce Live Chat
 
@@ -230,6 +251,5 @@ apiresponse represents the raw response from the Salesforce create ticket API
 ### Reference
 
 https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_API_requests.htm
-
 
 
