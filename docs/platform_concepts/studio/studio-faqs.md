@@ -204,6 +204,16 @@ You can also do this in the carousal by [creating your own custom/dynamic object
    </div>
 </details>
 
+<details>
+ <summary> Why does selecting a QR button go to the default fallback instead of the next step?
+</summary>
+ <div>
+  <div>When users click QR (Quick Reply) buttons after 24 hours of conversation with the bot, the context is lost. As a result, the button click triggers the fallback response instead of proceeding to the next step.
+</div>
+  <br/>
+   </div>
+</details>
+
 ------
 
 ### Documents
@@ -510,9 +520,6 @@ To extract specific date values, you can use the following syntax:
 
 ### Journey(flow)
 
-Q: 
-A: 
-
 <details>
  <summary>Can I retrieve journey data outside the bot?
 </summary>
@@ -571,6 +578,18 @@ A:
  Yes, <a href="https://docs.yellow.ai/docs/platform_concepts/studio/train/entities#add-regex-type-entities">create a regex entity</a> and set it as the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#12--trigger-flow-using-entities">start trigger for a flow</a>.
  <div>
   <div>
+​
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>What does it mean when the bot is in a critical status? Does it affect the bot's operations or performance?
+</summary>
+ <div>
+  <div>When the bot is in a critical status, it means that the health check configured for the bot is failing. However, this does not have any impact on the bot's operations or performance.
+You can execute the health check and update the test case to bring the status back to normal.
 ​
 </div>
   <br/>
