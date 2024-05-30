@@ -12,6 +12,7 @@ Let's say that you want to fetch a user's chat history from a bot. To do so, you
 :::note
 * Ensure that the ymAuthentication token is secured and only authorized users can access it.
 * Chat history can be retained for a maximum duration of 6 months.
+* Ensure that ymAuthenticationToken is passed in string format.
 :::
 
 In this article, you will learn:
