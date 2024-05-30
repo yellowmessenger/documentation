@@ -15,8 +15,7 @@ In this article, you will learn:
 * [What are the differences between a chat widget and PWA?](#1-difference-between-chat-widget-and-pwa)
 * [How to configure PWA?](#2-configure-pwa-chatbot)
 * [How to install PWA?](#3-install-pwa-chatbot)
-* [How to embed PWA bot on website](#embed-pwa-chatbot-on-website)
-
+* [How to embed PWA bot on website?](#embed-pwa-chatbot-on-website)
 
 ## Difference between chat widget and PWA
 
@@ -81,8 +80,6 @@ To install PWA chatbot on your mobile device, follow these steps:
 4. The PWA chatbot app has been installed successfully on your mobile device.
 
     <img src="https://i.imgur.com/dw1mK6H.png" alt="drawing" width="40%"/>
-
-
 
 
 

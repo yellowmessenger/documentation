@@ -184,7 +184,7 @@ Our machine learning system matches user input sentences to specific intents wit
 
 Option | Description
 -------- | ------
-Document search threshold | Minimum confidence needed to show documents in the Document search node.
+Document search threshold | To improve document search accuracy, adjust the threshold value between 0 and 1: <br/>• **Value set to 0**: Irrelevant results might be shown. <br/>• **Value set to 1**: More relevant matching results will be shown.<br/> An ideal confidence level is between 0.6 and 0.8. You can increase or decrease this based on the document cognition search results for the uploaded documents.
 Boost document rank by  | Choose the preference by which the user query should match - Headers or Paragraph. This parameter can be used to boost the document ranks.<br/><br/>For example, if a document has a header with the user data and rest of content below it and Boost document rank by is enabled, this document will show up higher in ranks as the query users data matches the header in the document.
 
 
