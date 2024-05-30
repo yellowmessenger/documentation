@@ -67,7 +67,7 @@ curl --location --request POST 'https://{{bot-region}}.cloud.yellow.ai/api/plugi
 --header 'content-type: application/json' \
 --header 'x-api-key: {{generate api key from platform}}' \
 --data-raw '{
-    "ymAuthenticationToken": {{token}},
+    "ymAuthenticationToken": {{ymAuthenticationToken}},
     "botId": {{botId}}
 }'
 ```
@@ -75,13 +75,13 @@ curl --location --request POST 'https://{{bot-region}}.cloud.yellow.ai/api/plugi
 
 Parameter | Datatype | Description
 --------- | -------- | -----------
-`{{token}}` | String | This is the unique identifier (string value that changes for each user and each log-in) assigned to users for validation |
+`{{ymAuthenticationToken}}` | String | This is the unique identifier (string value that changes for each user and each log-in) assigned to users for validation |
 | `x-api-key` | String | This is the access key. Generate a new API key with **Developer role**, follow [these steps](https://docs.yellow.ai/api#generate-api-keys) on your respective bot |
 | `{{botId}}` | String | This is your bot ID. It can be obtained by logging into the Yellow platform and copying it from the bot URL. Refer to [this guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env#finding-your-bot-id) to know how |
 
 **Expected response**: 
 
-```
+```json
 {
     "success": true,
     "message": "Success",
@@ -110,7 +110,7 @@ Parameter | Datatype | Description
 
 Pass the encrypted token in `ymAuthenticationToken` as shown below: 
 
-```
+```json
 window.ymConfig = {
     "bot": "×1655700426047", // Add your bot ID
     "host": "https://cloud.yellow.ai",

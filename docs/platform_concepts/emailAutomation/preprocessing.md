@@ -33,19 +33,19 @@ In email automation, you need to pre-process the email before transferring it to
 
 To ensure appropriate actions are taken based on defined criteria, every incoming email will first pass through the pre-processing flow before proceeding to automation.
 
-   ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/f105c3ba5920d5e153a407cb3c5d6d6745937154134fbdab.png/w_2366)
+   ![](https://i.imgur.com/j5Nkrj8.png)
 
 ### Enabling email preprocessing
 
 When you create an email account, the pre-processing flow is automatically enabled.
 
-   ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/79e2df3472f5b4de742cee8a9a5e282c249158dc646a1866.png/w_1371)
+   ![](https://i.imgur.com/Qnwx8lP.png)
 
 ### Supported nodes
 
 The pre-processing flow supports the following nodes:
 
-   ![](https://33333.cdn.cke-cs.com/kSW7V9NHUXugvhoQeFaf/images/a5ab4d0d6a16e1f376131701ade252d8f7ee87a0cdd013c3.png/w_1758)
+   ![](https://i.imgur.com/ewSUR6g.png)
 
 - **Logic node**: Use the If-Else node to evaluate use cases, user information, and sentiment, guiding subsequent actions.
 - **Action nodes**: Various action nodes are available to perform tasks such as interacting with APIs, databases, variables, functions, executing actions, etc.
