@@ -64,7 +64,6 @@ To link your Facebook page, follow these steps:
    
 :::note
 * If you have more than one business page connected to this Facebook account, select the one to which you want to connect the chatbot.
-* You can also connect multiple Facebook pages to your bot.
 :::
 
 ## Setup your bot
