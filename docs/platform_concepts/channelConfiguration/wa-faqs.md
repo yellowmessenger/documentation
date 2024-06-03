@@ -239,6 +239,15 @@ To check if WhatsApp Business API is enabled for a number, verify if the number 
 </p>
 </details>
 
+<details><summary><b> Is it possible to delete a number from the WABA when switching it to a different bot?
+</b></summary>
+<p>
+
+No, you should not delete a number from the WABA when switching it to a different bot, as the number is already owned by the WABA. Deleting it can cause errors like "Account not connected". Instead, you should use the admin portal to disconnect the number from the current bot and to connect the number to the new bot.
+
+</p>
+</details>
+
 ### WhatsApp Configuration
 
 
