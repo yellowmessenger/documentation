@@ -216,7 +216,7 @@ In the example code below, the bot confidently recognizes the phrase as part of 
 
 You can configure your bot to stop or exit conversations using specific intents and utterances. Follow these steps to set up this functionality:
 
-1. [Add Intents and Utterances](#):
+1. [Add Intents and Utterances](#add-intents-and-utterances):
    * Create intents such as "stop the flow" or "exit the flow".
    * Add corresponding utterances that users might use to indicate they want to end the conversation.
    * Train the bot on these intents and utterances.
@@ -278,7 +278,7 @@ If the similarity is more than 50%, you must go to any of the Intents page and d
 The following are the recommended best practices to follow while naming intents and adding utteraces to them:
 
 1. [Best practices to follow while naming intents](#naming-intents)
-2. [Best practices to follow while adding utterances to the intents](#62-utterance--flows)
+2. [Best practices to follow while adding utterances to the intents](#utterance--flows)
 
 
 ### Naming intents
