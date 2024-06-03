@@ -32,7 +32,7 @@ The chat section screen is divided into 3 parts:
 | Section| Description |
 | -------- | -------- |
 |[Chat conversation, resolve and transfer chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen) | View the chat. Reply to the user. Make notes of user conversation (summary) to help other agents understand the conversation quicker. Transfer the chat to another agent. Download the chat. <br/> Configure and understand how the [video calling](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/videocall) works for live chats. Transfer or resolve the live chat.  |
-| [Search and filter section](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatsearch)     | Choose the type of chat you want to see. Filter and search for specific chats. Perform bulk actions like transfer/resolve/reopene etc. by simple selecting multiple chats.         |
+| [Search and filter section](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatsearch)     | Choose the type of chat you want to see. Filter and search for specific chats. Perform bulk actions like transfer/resolve/reopen etc. by simple selecting multiple chats.         |
 |[User and chat details](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-2-user-details)| Learn details such as location, name, phone number, order ID, device details, etc. Add other agents to collaborate on this chat, to resolve the query quicker.  Add custom fields, monitor user activity etc.    |
 
 
