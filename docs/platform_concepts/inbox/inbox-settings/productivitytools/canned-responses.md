@@ -12,8 +12,9 @@ In this article, you will learn:
 
 ---
 
-Pre-defines snippets of texts that can be used as shortcuts, greetings, and conversation dialogues while an agent is typing a message. It reduces the time taken by an agent to respond to a chat/ticket. 
-With the canned response feature, you can directly add frequently uses content (image/text) in a message without typing it multiple times. For example, questions like 'What is your return policy?' are asked frequently, for such questions, instead of typing the policy, an agent can add a canned response(which will have the policy).
+Canned responses are pre-defined snippets of texts that can be used as shortcuts, greetings, and conversation dialogues while an agent is typing a message. It reduces the time taken by an agent to respond to a chat/ticket. 
+
+You can directly add frequently used content (image/text) in a message without typing it multiple times. For example, questions like 'What is your return policy?' are asked frequently, for such questions, instead of typing the policy, an agent can add a canned response(which will have the policy).
 
 Canned responses can be configured for:
 1. **Live chats**- Can have Text and Media as a response
