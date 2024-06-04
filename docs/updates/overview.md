@@ -31,8 +31,25 @@ The real benefit for you is receiving real-time event notifications and make use
 [Learn more](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/webhook)
 
 
+## Personalize your Android SDK Chatbot with Custom Theme
+
+You can now personalize your chatbot interface using a custom theme. With the new theme property in YMConfig, you can easily modify several elements of your bot. These include:
+
+- Bot Name
+- Bot Description
+- Primary and Secondary Colors
+- Bot Icon
+- Bot Bubble Background Color
+- Click Icon
+
+
+[Start customizing your chatbot](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android#theme-setup) today to enjoy these benefits!
+
+
 ## Custom Chat Transcript addition to Genesys PureCloud Live
 
 With this enhancement, you now can select your preferred variable for sending chat transcripts in the format that best suits your needs. By indicating your preferred format in the variable, you can customize your chat transcript experience to match your preferences precisely.
 
 For more details, refer to [Genesys PureCloud Live Integration Document](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys-cloud-livechat).
+
+
