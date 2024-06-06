@@ -1036,6 +1036,8 @@ paths:
                           type: string
                           description: The type of the node associated with the message
 
+
+
   '/api/ticketing/ticket/send':
     post:
       security:
@@ -1058,281 +1060,89 @@ paths:
             schema:
               type: "object"
               properties:
-                success:
-                  type: "boolean"
-                code:
-                  type: "integer"
-                data:
-                  type: "object"
+                ticketData:
+                  type: object
                   properties:
-                    id:
-                      type: "integer"
-                    ticketId:
-                      type: "integer"
                     botId:
-                      type: "string"
-                    uid:
-                      type: "string"
-                    source:
-                      type: "string"
-                    contactId:
-                      type: "string"
-                    subject:
-                      type: "string"
-                    priority:
-                      type: "string"
-                    statusId:
-                      type: "integer"
-                    status:
-                      type: "object"
+                      type: string
+                    contact:
+                      type: object
                       properties:
-                        id:
-                          type: "integer"
-                        createdAt:
-                          type: "string"
-                          format: "date-time"
-                        updatedAt:
-                          type: "string"
-                          format: "date-time"
-                        deletedAt:
-                          type: "string"
-                          format: "date-time"
-                        name:
-                          type: "string"
-                        settingId:
-                          type: "string"
-                    groupCode:
-                      type: "string"
-                    xmpp:
-                      type: "string"
-                    assignedTo:
-                      type: "string"
-                    assignedAgent:
-                      type: "object"
-                      properties:
-                        id:
-                          type: "integer"
-                        botId:
-                          type: "string"
-                        agentId:
-                          type: "string"
-                        currentAssignedTicketCount:
-                          type: "integer"
-                        maxTicketConcurrency:
-                          type: "integer"
-                        lastTicketAssignedTime:
-                          type: "string"
-                          format: "date-time"
-                    assignedTime:
-                      type: "string"
-                      format: "date-time"
-                    resolvedTime:
-                      type: "string"
-                      format: "date-time"
-                    assignedByAdmin:
-                      type: "boolean"
-                    manualAssignment:
-                      type: "boolean"
-                    lastBotMessageTime:
-                      type: "string"
-                      format: "date-time"
-                    averageResponseTime:
-                      type: "integer"
-                    replyCount:
-                      type: "integer"
-                    userReplyCount:
-                      type: "integer"
-                    customFields:
-                      type: "object"
-                      additionalProperties:
-                        type: "array"
-                        items:
-                          type: "string"
-                    ticketType:
-                      type: "integer"
-                    createdAt:
-                      type: "string"
-                      format: "date-time"
-                    updatedAt:
-                      type: "string"
-                      format: "date-time"
-                    deletedAt:
-                      type: "string"
-                      format: "date-time"
+                        primaryEmail:
+                          type: string
+                        firstName:
+                          type: string
+                        lastName:
+                          type: string
                     tags:
-                      type: "array"
+                      type: array
                       items:
-                        type: "object"
+                        type: object
                         properties:
                           id:
-                            type: "integer"
-                          createdAt:
-                            type: "string"
-                            format: "date-time"
-                          updatedAt:
-                            type: "string"
-                            format: "date-time"
-                          deletedAt:
-                            type: "string"
-                            format: "date-time"
-                          botId:
-                            type: "string"
-                          code:
-                            type: "string"
-                          name:
-                            type: "string"
-                          settingId:
-                            type: "integer"
-                  required:
-                    - id
-                    - ticketId
-                    - botId
-                    - uid
-                    - source
-                    - contactId
-                    - subject
-                    - priority
-                    - statusId
-                    - groupCode
-                    - xmpp
-                    - assignedTo
-                    - assignedAgent
-                    - assignedTime
-                    - lastBotMessageTime
-                    - createdAt
-                    - updatedAt
-                  example:
-                    id: 47222
-                    ticketId: 272
-                    botId: "x1681392039328"
-                    uid: "65fd25ac26d2a3337093ca26"
-                    source: "email"
-                    contactId: "cdc64f7b-3c70-44a7-9961-dc1b4b1111c1"
-                    subject: "Test Email"
-                    priority: "MEDIUM"
-                    statusId: 6
-                    status:
-                      id: 6
-                      createdAt: "0001-01-01T00:00:00Z"
-                      updatedAt: "0001-01-01T00:00:00Z"
-                      deletedAt: null
-                      name: "IN-PROGRESS"
-                      settingId: null
-                      groupCode: "777"
-                    assignedTo: "chandanchhoudayellowai"
-                    assignedAgent:
-                      id: 0
-                      botId: ""
-                      agentId: ""
-                      currentAssignedTicketCount: null
-                      maxTicketConcurrency: 0
-                      lastTicketAssignedTime: null
-                    assignedTime: "2024-03-22T06:31:08.118027Z"
-                    resolvedTime: null
-                    assignedByAdmin: false
-                    manualAssignment: false
-                    lastUserMessageTime: null
-                    lastAgentMessageTime: null
-                    lastBotMessageTime: "2024-03-22T06:31:08.020565Z"
-                    averageResponseTime: 0
-                    replyCount: 0
-                    userReplyCount: 0
+                            type: integer
+                    assignedTo:
+                      type: string
+                    dueDate:
+                      type: string
+                      format: date-time
+                    priority:
+                      type: string
                     customFields:
-                      a1:
-                        - "asd"
-                      s1: "da"
-                    ticketType: 0
-                    createdAt: "2024-03-22T06:31:08.18494Z"
-                    updatedAt: "2024-03-22T06:31:08.18494Z"
-                    deletedAt: null
-                    tags:
-                      - id: 19986
-                        createdAt: "2024-02-29T07:17:40.666218Z"
-                        updatedAt: "2024-02-29T07:17:40.666218Z"
-                        deletedAt: null
-                        botId: "x1681392039328"
-                        code: "test tag"
-                        name: "test tag"
-                        settingId: 1911
-                    parent: false
-                    parentTicketId: null
-                    contact:
-                      contactId: "cdc64f7b-3c70-44a7-9961-dc1b4b1111c1"
-                      primaryEmail: "vedansh.dwivedi@yellow.ai"
-                      botId: "x1681392039328"
-                      firstName: "Vedansh"
-                      lastName: "Dwivedi"
-                      uids:
-                        - botId: "x1681392039328"
-                          uid: ""
-                          channelName: ""
-                    slaId: 0
-                    slaPause:
-                      id: 0
-                      createdAt: "0001-01-01T00:00:00Z"
-                      updatedAt: "0001-01-01T00:00:00Z"
-                      deletedAt: null
-                      ticketIdPk: 0
-                      paused: false
-                    slaActivity: null
-                    activityLog: null
-                    frtBreached: 0
-                    ertBreaches: 0
-                    ertAchievements: 0
-                    rtBreached: 0
-                    slaAchievement: ""
-                    transferred: false
-                    reopened: false
-                    reopenedCount: 0
-                    reopenedBy: null
-                    lastReopenedTime: null
-                    agentFirstResponseTimeRecorded: false
-                    lastAssignmentId: null
-                    agentTicketHandlingTimeStartedAt: null
-                    handlingTime: null
-                    transferCount: 0
-                    sourceEmail: "test.vedansh@gmail.com"
-                    collaborators: null
-                    resolutionTarget: ""
-                    resolutionDueTime: null
-                    firstResponseTarget: ""
-                    firstResponseDueTime: null
-                    collaboratorsUserNames: null
-                    agentName: "Chandan Chhouda"
-                    agentAliasName: ""
-                    agentEmail: "chandan.chhouda@yellow.ai"
-                    reopenedAgentEmail: ""
-                    resolutionDurationCreate: 0
-                    resolutionDurationAssigned: 0
-                    tagNames: null
-                    isNewTicket: true
-                    unreadMsgCount: 0
-                    highlight: null
-                    cdpId: "x1681392039328_5DOg37WXJ6kq1QVNL9pHh"
+                      type: object
+                      properties:
+                        h1:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              id:
+                                type: string
+                              name:
+                                type: string
+                              levelName:
+                                type: string
+                mailData:
+                  type: object
+                  properties:
+                    sender:
+                      type: object
+                      properties:
+                        address:
+                          type: string
+                    toAddresses:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          address:
+                            type: string
+                    ccAddresses:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          address:
+                            type: string
+                    bccAddresses:
+                      type: array
+                      items:
+                        type: object
+                        properties:
+                          address:
+                            type: string
+                    subject:
+                      type: string
+                    message:
+                      type: string
       responses:
         '200':
-          description: "Ticket sent successfully"
-          content:
-            application/json:
-              schema:
-                type: "object"
-                properties:
-                  success:
-                    type: "boolean"
-                    example: true
-                  message:
-                    type: "string"
-                    example: "Ticket sent successfully"
-        default:
-          description: "Unexpected error"
-          content:
-            application/json:
-              schema:
-                type: "object"
-                properties:
-                  message:
-                    type: "string"
-                    example: "An unexpected error occurred"
+          description: "Ticket created and sent successfully"
+        '400':
+          description: "Invalid request"
+
+
+
  
   '/integrations/sync/v1/message':
     post:
