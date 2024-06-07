@@ -71,6 +71,13 @@ To delete a synonym, follow these steps:
 
 Test your synonyms and abbreviations to ensure they are identified correctly by the bot.
 
+You can test your synonyms via:
+
+* [Tools](#test-synonym-via-tools)
+* [Flows](#test-the-synonyms-via-flows)
+
+### Test Synonym via Tools
+
 1. Go to [tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot).
 
     ![](https://imgur.com/1Cj8Gnq.png)
@@ -86,6 +93,14 @@ Test your synonyms and abbreviations to ensure they are identified correctly by 
    You can see the added synonym under `processed_text`.
 
     <img src="https://imgur.com/lH7n3n6.png" alt="drawing" width="70%"/>
+
+### Test the Synonyms via Flows
+
+You can test your flows to check whether the bot is recognizing the synonyms. To know more how to test your flow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow).
+
+   ![](https://imgur.com/ihcpSxd.png)
+
+
 
 
 
