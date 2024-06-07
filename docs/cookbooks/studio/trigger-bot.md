@@ -4,10 +4,7 @@ sidebar_label: Trigger a specific bot flow
 ---
 
 To trigger a specific flow when there are multiple flows in the bot, you can use the flow slug. 
-A slug is a combination of the flow name and auto-generated characters in the following format:
-
-`/{flow_name}_{auto_generated_characters}`
-
+A slug is a combination of the flow name and auto-generated characters in the following format: `/{flow_name}_{auto_generated_characters}`
 
    ![](https://imgur.com/I2a5hEW.png)
 
