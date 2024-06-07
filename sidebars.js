@@ -53,6 +53,7 @@ module.exports = {
           "cookbooks/studio/images-languages",
           "cookbooks/studio/storeApiResponse",
           "cookbooks/studio/qr-node",
+          "cookbooks/studio/trigger-bot",
           "cookbooks/studio/usecases-functions",
           "cookbooks/studio/ticket-assignedevent",
           "cookbooks/studio/user-inactivity",

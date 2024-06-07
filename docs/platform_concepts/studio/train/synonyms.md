@@ -3,56 +3,89 @@ title: Synonyms
 sidebar_label : Synonyms
 ---
 
-Synonyms are words that share a similar meaning or nearly the same meaning as another word in a given language. For instance, in the context of Yellow.ai, synonyms help the bot recognize specific intents and utterances and initiate a particular sequence of actions.
+Synonyms are used to understand user inputs by recognizing different ways users might express the same intent. By mapping synonyms and its abbreviations to a specific intent, the bot can accurately interpret different ways of a query and provide relevant responses.
 
- Let's consider an example where you have a bot for ordering greeting cards. Whenever a user mentions anything related to ordering greeting cards, you want a specific flow to be activated.
- 
- By using synonyms, you can add a synonym like 'Cards' and include various words that users might employ when placing an order for greeting cards. Training the intent with the word 'Cards' enables the bot to trigger the desired flow whenever users type 'cards' or any synonym associated with it.
+For example, for ordering spectacles through bot, you can have synonyms like 'Specs', 'Shades', and 'Goggles'. Training the relevant intent with these synonyms enables the bot to trigger the desired flow whenever users type these terms or any other synonym associated with ordering spectacles.
 
 ## Add synonyms
 
-**Prerequisites before adding Synonyms**
- 
-1. Create a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case with required [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#23-add-intent) with [utterances](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance). 
-2. [Train](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#3-train-intents) your intents. 
-:::
+In order for the bot to understand the user query and provide relevant responses, you need to add the synonym name and the synonym or abbreviation and train the bot.
 
-3. Go to **Studio** > **Train** > **Synonyms**.
-4. Click **+Add new synonyms**. 
+Before adding synonyms, ensure you have:
 
-   ![](https://i.imgur.com/ORwd0Bv.png)
+1. Created a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case with the required [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#23-add-intent) and [utterances](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#24-add-utterance). 
+2. [Trained](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#3-train-intents) your intents.
 
-5. In **Synonym name**, add the name of your synonym, and in **Synonym name or abbreviation**, enter the words similar or that mean as same as the synonym.
+To add synonyms, follow these steps:
 
-   <img src="https://i.imgur.com/gFwsg3j.png" alt="drawing" width="50%"/>
+1. Go to **Studio** > **Train** > **Synonyms**.
 
-4. Click **Add list item**.
-5. Go to **Intents** and click the intent that will trigger the respective flow.
+     ![](https://imgur.com/5QaAHea.png)
+
+2. Click **+ Add new synonyms**. 
+
+   ![](https://imgur.com/5TM6MXz.png)
+
+5. In the **Synonym name** field, add the name of your synonym. In the **Synonym or abbreviation** field, enter the similar words, separated by commas.
+
+   <img src="https://imgur.com/tGrAVzD.png" alt="drawing" width="50%"/>
+
+4. Click **Add**.
+
+* This will add the Synonym to the bot.
+
+5. Go to **Intents** and click the intent that will trigger the respective flow, and click **Train intents** to train the intent with the added synonym.
 
    ![](https://i.imgur.com/sztife2.png)
 
-6. Type the **Synonym nam**e in utterances and click **Train intents**.
+### Edit synonyms
 
-## Add abbreviations
- 
-Follow the above mentioned steps to add abbreviations. 
+You can edit a synonym name along with its associated words or abbreviations.
 
-![](https://i.imgur.com/ORwd0Bv.png)
+To edit synonyms, follow these steps:
 
-## Test your synonyms and abbreviations
+1. Go to the added synonym, click on the more options icon, and click **Edit**.
 
-There are many ways by which you can test your synonyms and abbreviations:
+    ![](https://imgur.com/bt8Zo6o.png)
+    
+2. Edit the **Synonym name** or **Synonym or abbreviation** as needed, and click **Save**.
 
-### Tools
+     <img src="https://imgur.com/SN5aOZW.png" alt="drawing" width="40%"/>
+     
+### Delete synonym
 
-Go to [tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) and check if your bot identifies the synonyms and abbreviations correctly.
+When the added synonym becomes irrelevant, inaccurate, or redundant, you can delete it.
 
-![](https://i.imgur.com/hOvtnVf.jpg)
+To delete a synonym, follow these steps:
 
-### Flows
+1. Go to the added synonym and click on **more-options** > **Delete** icon.
 
-You can test your flows to check whether the bot is recognizing the synonyms. To know more, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow).
+    ![](https://imgur.com/j9QlA5P.png)
+    
+2. A confirmation message is displayed, click **Delete** to confirm the deletion.
 
-![](https://i.imgur.com/G9QGlTm.gif)
+   <img src="https://imgur.com/Kp05yOP.png" alt="drawing" width="50%"/>
+
+         
+## Test your synonyms
+
+Test your synonyms and abbreviations to ensure they are identified correctly by the bot.
+
+1. Go to [tools](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot).
+
+    ![](https://imgur.com/1Cj8Gnq.png)
+  
+2. On the **Test your bot** tab, enter the synonym that you want to test.
+3. Enable the **Verbose** toggle button.
+
+    <img src="https://imgur.com/dZDN4NP.png" alt="drawing" width="70%"/>
+
+4. Click on the **Send** icon.
+
+* A JSON response will be generated at the bottom of the page.
+   You can see the added synonym under `processed_text`.
+
+    <img src="https://imgur.com/lH7n3n6.png" alt="drawing" width="70%"/>
+
 
 
