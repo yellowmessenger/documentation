@@ -34,7 +34,7 @@ We have either two or three environments, depending on the specific bot: Develop
 
 5. In **Field name**,  enter a name for the field that you want to insert. 
 6. In **Type**, choose the datatype of the field. You cannot modify the datatype once the table is created.
-7. Enable **Searchable** to make the field searchable inside the database node in flows. These fields are available for filtering and summarization in data explorer. You cannot modify this once the table is created.
+7. Enable **Searchable** to make the field searchable inside the database node in flows. If the **Searchable** field is enabled, you can add up to 10 string-type columns. However, if you already have 10 string-type columns with the **Searchable** toggle enabled, you cannot add a new searchable string-type column. You cannot modify this once the table is created.
 8. Click **Create table**. 
 
 ***
@@ -205,7 +205,8 @@ When a table contains numerous records, it can be challenging to scroll through 
 The Super Admin of the bot can mask certain database columns. For example, passwords or any PII data stored in plain text. The data of the masked column will be visible as `*****` instead of real values.
 
 :::note
-The masking of data happens at the application level in the backend. You cannot access it in any other way.
+* The masking of data happens at the application level in the backend. You cannot access it in any other way.
+* You can mask database columns only in lower-tier environments. In a two-tier setup, you can mask in the **Development** environment. In a three-tier setup, you can only mask in the **Sandbox** environment.
 :::
 
 To mask columns:

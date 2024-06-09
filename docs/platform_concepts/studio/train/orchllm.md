@@ -74,47 +74,22 @@ To configure Orchestrator LLM for a flow:
 
 3. Click on **Start** trigger, enter the **Trigger name** and **Description**, and then click **Add**. Note that you need to provide an accurate description as Orch LLM will use this information to trigger the appropriate flow based on the provided description.
 
+    ![](https://imgur.com/joK3Bx5.png)
+
 Following are the sample descriptions:
 
-* **Promocode**
-
->  When a user specifically asks questions related to "promo codes".
-
-* **Payment related query**
-
-> When a user explicitly requires assistance with making payment for their reservation. You need to include user queries, for example: "Can you help me in making payment?", "Charge me on my credit card", or "Need assistance in making payment".
-
-* **Cancel booking**
-
-> When a user explicitly requires assistance in cancelling their booking or reservation. You need to include user queries, for example, "Cancel my reservation for me" or "Could you cancel it for me?".
-
-* **FAQs**
-
-> When a user has generic queries related to payments for reservations, without requiring direct assistance in making the payment. For example, "How do I complete payment?", "How can I make payment for my reservation?".
-
-* **Add travel companion**
-
-> When a user explicitly requests to connect two or more reservations, for instance: "Link my reservation".
-
-* **FAQs about cancellation**
-
-> A user seeks information about the process of canceling a reservation. They are not looking for assistance with the actual cancellation.
-
-* **Israel tour details**
-
-> When user asks travel related questions that are specific to Israel only.
-
-* **Age restriction for renting car**
-
-> When a user specifically asks about "age restrictions" for vehicles.
-
-* **Tipping guidelines**
-
-> When user wants to know about the tipping guidelines that are in place for travellers.
-
-* **Visa requirements**
-
-> When user needs information regarding visa requirements.
+Trigger name | Description
+-------------|-------------
+Promocode | When a user specifically asks questions related to "promo codes"
+Payment related query | When a user explicitly requires assistance with making payment for their reservation. You need to include user queries, for example: "Can you help me in making payment?", "Charge me on my credit card", or "Need assistance in making payment".
+Cancel booking | When a user explicitly requires assistance in cancelling their booking or reservation. You need to include user queries, for example, "Cancel my reservation for me" or "Could you cancel it for me?".
+FAQs | When a user has generic queries related to payments for reservations, without requiring direct assistance in making the payment. For example, "How do I complete payment?", "How can I make payment for my reservation?".
+Add travel companion | When a user explicitly requests to connect two or more reservations, for instance: "Link my reservation".
+FAQs about cancellation |  A user seeks information about the process of canceling a reservation. They are not looking for assistance with the actual cancellation.
+Newyork tour details | When user asks travel related questions that are specific to Newyork only.
+Age restriction for renting car | When a user specifically asks about "age restrictions" for vehicles.
+Tipping guidelines | When user wants to know about the tipping guidelines that are in place for travellers.
+Visa requirements | When user needs information regarding visa requirements.
 
 ![](https://imgur.com/joK3Bx5.png)
     

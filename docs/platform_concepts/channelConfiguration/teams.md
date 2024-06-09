@@ -84,7 +84,7 @@ To set up MS teams using Developer portal, follow these steps:
 
    ![](https://i.imgur.com/ykcfSjP.png)
 
-11. Go to **Developer portal** > **Tools** > **Bot management** and copy the Bot ID. This is required to connect MS Teams app to Yellow.ai platform. 
+11. Go to **Developer portal** > **Tools** > **Bot management** and copy the client ID. This is required to connect MS Teams app to Yellow.ai platform. 
 	
    ![](https://i.imgur.com/oGWpSch.png)
    
