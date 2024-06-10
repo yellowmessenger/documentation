@@ -67,7 +67,7 @@ Learn more about [supported document types](https://docs.yellow.ai/docs/platform
   
    <img src="https://i.imgur.com/v1D5hUQ.png" alt="drawing" width="50%"/>
 
-2. **Enable summarised results**: Opt for summarized results to have the bot summarise and present information to the user.
+2. **Enable summarised results**: Activate this option to search and simplify the answer in a conversational manner.
 
    <img src="https://i.imgur.com/gRy9PX5.png" alt="drawing" width="40%"/>
 
