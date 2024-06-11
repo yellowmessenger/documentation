@@ -151,4 +151,4 @@ For any queries or help, contact [support@yellow.ai](mailto:support@yellow.ai).
 
 Support is exclusively provided for upgraded bots. 
 
-For assistance, send your queries to [support@yellow.ai](support@yellow.ai), and our dedicated executive will promptly address and resolve them.
+For assistance, send your queries to [support@yellow.ai](mailto:support@yellow.ai), and our dedicated executive will promptly address and resolve them.
