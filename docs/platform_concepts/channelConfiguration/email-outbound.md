@@ -254,9 +254,10 @@ To test your bot on Email, follow these steps:
 4. The agent(customer support team) will send an email to your email address regarding your query.
 
      ![](https://i.imgur.com/6Y5FCkG.png)
-	 	 
+
+## Email troubleshooting 
 		 
-## Troubleshooting Email configuration
+### Troubleshooting email configuration
 
 When configuring email, you might encounter the following issues:
 
@@ -274,3 +275,21 @@ To troubleshoot, follow these steps:
      <img src="https://i.imgur.com/9JeysJA.png)" alt="drawing" width="60%"/> 
 	 
 Similarly, if you have entered an invalid password, you can follow the above steps to troubleshoot. 	 
+
+
+
+## Generate ppp password for Email Tickets
+
+Sometimes, emails from agents might not reach the end users. To solve this problem, we can use an app password. This helps make sure agents and users can communicate better.
+
+**Prerequisites**
+
+You'll need access to the same email account and password that's linked to the bot.
+
+**Steps**
+
+1. Log in to the email account linked to the bot.
+2. Use the link below to make the app password: [App Password Creation Guide](https://support.google.com/accounts/answer/185833?hl=en)
+3. Make the app name, then you'll get a 16-character app password.
+4. Remove any spaces from the password and copy it.
+5. Paste this password into the email settings.

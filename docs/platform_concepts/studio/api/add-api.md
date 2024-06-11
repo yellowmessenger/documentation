@@ -204,25 +204,80 @@ Confirm the expected functionality of the API and click **Save** to save the API
 
 ## Configure MTLS authentication
 
-MTLS(Mutual Transport Layer Security) authentication is a method used for securing APIs by ensuring the integrity and authenticity of messages exchanged between the client and the server. It provides a secure communication channel and verifies that the messages have not been tampered with during transmission.
+MTLS, or Mutual Transport Layer Security, is an essential part of keeping APIs safe and secure. It works by verifying the identity of both the client and server, ensuring that messages exchanged between them are authentic and haven't been tampered with. 
 
-Retrieve the following information from the system where you are integrating APIs:
+This method establishes a trusted communication channel, safeguarding sensitive information from unauthorized access or modifications during transmission. Additionally, MTLS enhances the overall security posture of applications and systems by providing robust encryption and authentication mechanisms.
 
-1. Domain
-2. Certificate
-3. Key
-4. Certificate Authority
 
- ![](https://i.imgur.com/UFthYh1.png)
+### Prerequisites
 
-1. Click the lock button at the right end.
-2. Fill in the fields and click **Upload** to upload the required documents. 
-3. Click **Save** when you're done.
+To configure MTLS, you'll need specific information from the system where the API is hosted. Here's what you'll need:
+
+1. **Domain**: The domain name of the system hosting the API.
+2. **Certificate**: A digital certificate used for encryption and authentication. This should be provided in the file format with the ".cert" extension.
+3. **Key**: The private key associated with the certificate, used for encryption and decryption. It should be provided in the file format with the ".key" extension.
+4. **Certificate Authority (CA)**: The entity that issues and verifies the digital certificates. You'll need information about the Certificate Authority responsible for issuing the certificate used by the API.
+
+
+### Configuring MTLS authentication
+
+ Only Super Admin can add a new certificate.
 
 
 :::note
 **Developer**, **Admin** and **Super admin** roles can view this feature but only the **Super Admin** can make changes such as add a new certificate, delete the existing certificate, etc. Only the **Super Admin** can view the **key**.
 :::
+
+
+Here are the steps to configure MTLS authentication:
+
+1. Gather the required information mentioned above: Domain, Certificate, Key, and Certificate Authority.
+2. Navigate to the bot environment where you want to configure MTLS.
+3. On the [cloud platform](https://cloud.yellow.ai), go to **Studio**, then API.
+4. On the right side, you'll see a lock icon labeled "Configure MTLS authentication." Click on it.
+
+   ![](https://imgur.com/A9nIR0Y.png)
+
+5. Enter the **Domain** name.
+6. Upload the **Certificate** file.
+7. Upload the **Key** file.
+8. Upload the **Certificate Authority** file.
+9. Click on **Save** to apply the configuration.
+
+   <img src="https://imgur.com/J5in3iw.png" width="60%"/>
+
+
+
+
+### Troubleshooting errors when saving certificate
+
+If you encounter any errors while saving the certificate, follow these steps:
+
+1. Open the Inspect tool of your browser.
+2. Navigate to the network tab.
+3. Try saving the details again.
+4. Look for the name **saveApiCertificates** and click on it.
+5. If you see an error message like *host is invalid*, check the host entry URL. If it starts directly with the domain (e.g., app.yellow.ai), try adding "https://" or "http://" before the domain (e.g., https://app.yellow.ai). This should resolve the issue.
+
+```json
+{
+    "success": true,
+    "message": "Success",
+    "data": {
+        "inserted": [],
+        "updated": [],
+        "invalid": [
+            {
+                "host": "apihmo-mtls.brb.com.br",
+                "error": "Error: Host is invalid\n    at /app/dist/controllers/apiCertificates.js:83:27\n    at step (/app/dist/controllers/apiCertificates.js:33:23)\n    at Object.next (/app/dist/controllers/apiCertificates.js:14:53)\n    at /app/dist/controllers/apiCertificates.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/app/dist/controllers/apiCertificates.js:4:12)\n    at validateCertData (/app/dist/controllers/apiCertificates.js:71:49)\n    at /app/dist/controllers/apiCertificates.js:164:42\n    at step (/app/dist/controllers/apiCertificates.js:33:23)\n    at Object.next (/app/dist/controllers/apiCertificates.js:14:53)\n    at /app/dist/controllers/apiCertificates.js:8:71\n    at new Promise (<anonymous>)\n    at __awaiter (/app/dist/controllers/apiCertificates.js:4:12)\n    at processCertificates (/app/dist/controllers/apiCertificates.js:146:12)\n    at /app/dist/controllers/apiCertificates.js:215:42\n    at step (/app/dist/controllers/apiCertificates.js:33:23)"
+            }
+        ]
+    }
+}
+```
+
+* If you encounter any other error, such as "Certificate is invalid", please* check it internally and provide the correct certificate.
+
   
 ## Export APIs 
 

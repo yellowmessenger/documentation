@@ -465,8 +465,60 @@ c. Service Explicit - Notifications to existing customers only promoting other p
 
 <details>
 
-<summary>  What does "Malformed issue" mean in my campaign error report? </summary>
+<summary> Campaign failed with error "Malformed issue" </summary>
 
 The 'Malformed issue' typically occurs when essential properties in your template, such as the phone number, are not available for some users. To resolve this, ensure that the required property variables are accurately captured.
 
 </details>
+
+
+<details>
+<summary> 
+WhatsApp message not received by end user
+</summary> 
+
+
+When a campaign triggered via the yellow.ai platform or through API notification fails to deliver the template to the end user's WhatsApp number, it's essential to identify and resolve the issue promptly. This guide provides steps to troubleshoot and resolve WhatsApp message failures effectively.
+
+**To access failure reports, you need access to bot admin or insights admin***.
+
+#### Steps to resolve
+
+**A. If the campaign is triggered from our Yellow.ai platform:**
+
+1. Navigate to the Engagement module and select the Outbound option under the Engage module.
+2. [Download the campaign report](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/view-outbound#download-and-analyse-campaign-report) for the specific campaign to identify any failures.
+3. Two reports will be sent to your email address: one indicating the achievement of the set goal and the other highlighting failures with reasons under the error resolution column.
+
+  ![campaign reort](https://i.imgur.com/jQd2VqR.png)
+ 
+**B. If the campaign is triggered using the Notification API**:
+
+1. In the Insights module, navigate to **Data Explorer** page .
+2. Open the notification report and filter by campaign ID, template name, or status and click **Apply filters**.
+
+   ![img](https://i.imgur.com/jegyYyw.png)
+
+3. In the Error messages column, hover on the row for which you want to see the reason for message failure.
+
+   ![](https://i.imgur.com/VI1YO88.png)
+
+
+Additionally, to receive API reports:
+
+For campaigns triggered using API notifications, you can receive the notification report via email based on your preference (This is not applicable for campaigns scheduled via the campaign manager module).
+
+
+1. In the left navigation bar, go to **Settings** > **API report** under the Engage option.
+ 
+  ![img](https://i.imgur.com/bIDJeND.png)
+
+2. In **Send notification API reports to**, add each email address, and press enter after each.
+3. Select the date range for receiving the report and click **Confirm**.
+
+   ![img](https://i.imgur.com/jrpsPte.png)
+
+
+
+</details>
+
