@@ -112,7 +112,7 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 | Description | URL Format                                                                       |
 |-------------|----------------------------------------------------------------------------------|
 | Format      | `https://{{region}}.cloud.yellow.ai/integrations/ringCentral/receive/{{bot ID}}` |
-| Example     | [https://r1.cloud.yellow.ai/integrations/ringCentral/receive/x1234567890](https://r1.cloud.yellow.ai/integrations/ringCentral/receive/x1234567890) |
+| Example     | `https://r1.cloud.yellow.ai/integrations/ringCentral/receive/x1234567890` |
 
 * **Verification token**: Enter **ringcentral_webhook_token**
 * **Secret key**: Enter a dummy text as a secret key.

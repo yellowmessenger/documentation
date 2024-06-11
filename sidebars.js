@@ -340,8 +340,7 @@ module.exports = {
                     "platform_concepts/studio/api/bearer-token",
                    // "platform_concepts/studio/api/transformation-function",
                     "platform_concepts/studio/api/api-settings",
-                    "platform_concepts/studio/api/download-logs",
-        
+                    "platform_concepts/studio/api/download-logs",        
                   ],
                 },        
               ],
@@ -931,10 +930,10 @@ module.exports = {
 
   collapsed: true,
   items: [
-    "platform_concepts/growth/overview",
-    "platform_concepts/growth/voiceoverview",
+    // "platform_concepts/growth/overview",
+    // "platform_concepts/growth/voiceoverview",
     
-    {
+   /* {
       type: "category",
       label: "Metrics",
       collapsed: true,
@@ -953,8 +952,9 @@ module.exports = {
         "platform_concepts/growth/funnels",
       ],
     },
+  */
     "platform_concepts/growth/dataops",
-    "platform_concepts/growth/doccog",
+  //  "platform_concepts/growth/doccog",
 
       {
         type: "category",
