@@ -64,7 +64,7 @@ To upload custom font, follow these steps:
 
     ![](https://imgur.com/0DWjAYF.png)
 
-2. Enter **Font family** and **Font URL**.
+2. Enter **Font family** and **Font URL**. For a custom font, the font-family name must match the font specified in the URL. If the font-family name does not match the URL, the font will not load.
   
     ![](https://imgur.com/G5AK086.png)
     
