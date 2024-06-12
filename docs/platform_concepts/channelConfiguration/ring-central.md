@@ -203,6 +203,18 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
 ## Add custom fields for agents
 
+If user information originates from RingCentral, bot developers can access any custom fields included in the RingCentral payload through the channel metadata.
+
+You can access this data in the System Variables section. To accept data from RingCentral, just use `{{data.channelMetadata}}`, as all relevant data is available within RingCentral.
+
+   <center><img src="https://i.imgur.com/0KHym1Q.png" width="65%"/></center>
+
+
+
+However, if Yellow.ai intends to push data into RingCentral's custom fields, they must create corresponding custom fields within User 360.
+
+
+
 To add custom fields to agent profiles in RingCX:
 
 1. Go to **RingCX Admin portal** > **Digital** > **Custom Fields** > **Add** and create a new custom field.
