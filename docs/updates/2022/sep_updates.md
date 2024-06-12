@@ -217,7 +217,6 @@ Clients who are having their solution in Genesys On-prem can also integrate with
 
 
 An all-new analytics dashboard- **Insights** > **Voice overview** is introduced specifically for voice bots.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/growth/voiceoverview).
   
   
 
@@ -348,4 +347,3 @@ Onboarded Recording Management controls on the Builder UI. Bot Developers can no
 | *New feature* (owned by the data and analytics team. Available for use on Insights)
 
 Voice bot metrics is now found on the **Insights** > **Voice Overview** section.  
-[**Learn more here**][links](/platform_concepts/growth/voiceoverview.md).
