@@ -930,6 +930,7 @@ module.exports = {
 
   collapsed: true,
   items: [
+    "platform_concepts/growth/dashboards",
     // "platform_concepts/growth/overview",
     // "platform_concepts/growth/voiceoverview",
     
@@ -1013,7 +1014,7 @@ module.exports = {
         ]
       },
 
-    "platform_concepts/growth/dashboards",
+    
     "platform_concepts/growth/health",
    // "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",
