@@ -3,174 +3,203 @@ title : Entities
 sidebar_label : Entities
 ---
 
-An entity refers to specific information or data that the chatbot can identify and extract from user input. Let's consider the following example:
+An entity refers to specific information or data that the chatbot can identify and extract from user input. 
 
-User query: I'm looking for Italian restaurants in New York to accommodate four people.
+Let us consider the following example:
 
-In this sentence, the entities are the location (New York), cuisine (Italian), and the number of people (four).
+> User query: I am looking for Italian restaurants in New York to accommodate four people.
 
-By training your bot on these specific entities, it enables the bot to answer questions like this accurately. Entities are primarily utilized to bypass prompts and provide suggestions to users once the bot identifies the relevant entity. For more information on configuring entities for this purpose, please refer to [this section](#auto-skip-prompts--simplify-interactions-with-entity-based-suggestions).
+   In the above sentence, the identified entities are the `location` (New York), `cuisine` (Italian), and the `number of people` (four).
 
-There are a set of entities that our out-of-the-box bot recognizes without requiring specific training. These prebuilt entities include:
+By training your bot on these specific entities, it enables the bot to answer questions accurately. Entities are primarily utilized to bypass prompts and enable the chatbot to provide relevant suggestions or responses to users once the bot identifies the relevant entity.
+
+For more information on configuring entities for this purpose, refer to [this section](#auto-skip-prompts--simplify-interactions-with-entity-based-suggestions).
+
+#### Predefined entities that do not need training
+
+There are a set of entities that the bot recognizes without requiring specific training. These predefined entities provide a convenient way to handle common types of information without requiring additional setup. 
+
+The prebuilt entities include:
 
 * Name
 * Date
 * Email
 * Location
 
-These entities provide a convenient way to handle common types of information without the need for explicit training.
-
-
 ## Add entities
 
-In order for the bot to identify and understand the entities, it is essential to add the entities and train the bot specifically on those entities. 
+In order for the bot to identify and understand the entities, you need to add the entities and train the bot specifically on those entities. 
 
-The yellow.ai platform offers 4 different types of entities:
+To trigger flow using entities, you need to set entities as the start trigger for the flow. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#12--trigger-flow-using-entities)
+
+Yellow.ai platform offers 4 different types of entities:
 
 1. Text
 2. List
 3. Regex
 4. System entities
 
-To trigger flow using entities, you need to set entities as the start trigger for the flow. For steps, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#12--trigger-flow-using-entities)
-
-
 ### Add text type entities
 
-Text type entities are suitable for use cases where there is no specific list or predefined format of entity items required. They can be employed when the context calls for extracting specific text values without the need for list or regex type entities.
+Text type entities are suitable for use cases where there is no specific list or predefined format of entity items required.
 
-Let's say you have a chatbot that helps users find nearby restaurants. In this case, you can use a text type entity to extract specific cuisine preferences from the user's input. Here's a simple example:
+Let's say you have a chatbot that helps users find nearby restaurants. In this case, you can use a text type entity to extract specific cuisine preferences from the user's input. Here is a sample example:
 
 User: Can you recommend some good Italian restaurants nearby?
 
-In this example, the text type entity would extract the value **Italian** from the user's input, allowing the chatbot to understand the cuisine preference and provide relevant recommendations. Since there isn't a predefined list or format of entity items required for this use case, a text type entity works well in extracting specific text values without the need for a predefined list or regular expression-based entity.
+In this scenario, the text type entity can easily identify "Italian" from the user's input, allowing the chatbot to understand the cuisine preference and provide relevant recommendations. 
 
 1.  Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
 
-![](https://i.imgur.com/US9yAo3.png)
+     ![](https://imgur.com/a283ade.png)
 
-2. Enter the **Entity name** and and choose the **Type** as **Text**.
+2. Enter the **Entity name** and choose the **Type** as **Text**. Entity name should be alphanumeric, lower case and cannot contain spaces.
 
-![](https://i.imgur.com/XGHBhAZ.png)
+   ![](https://imgur.com/T6LokhX.png)
+   
+* You can **Enable similar entities** check box to detect an entity if there is a partial match.
 
-2. Go to  **Studio** > **Train** > **Intents** and [add intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
-3. In each user utterance of an intent, right-click on a word that represents an entity and select the corresponding entity from the options.
+3. Click **Add**. This will create the entity of list type.
 
-![](https://i.imgur.com/yg1p3Z6.jpg)
+4. Go to  **Studio** > **Train** > **Intents** > [Add intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
 
+5. In each user utterance of an intent, right-click on a word that represents an entity and select the corresponding entity from the options.
+
+   ![](https://i.imgur.com/yg1p3Z6.jpg)
+   
 ### Add list type entities
+   
+List type entities are a specific category used to recognize predefined lists of values. These entities are used to identify options from a predetermined set of choices.
 
-List type entities refer to a specific type of entities that are used to recognize predefined lists of values. These entities are designed to identify options from a predetermined set of choices.
-
-For examaple, **mode of payments** will be the list name and its values would be **UPI, Card, Cash on delivery**. Ideally, when all possible distinct values of the entity are known, list type of entity can be used. 
-
-1. Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
-
-![](https://i.imgur.com/US9yAo3.png)
-
-2. Select **Type** as **List**, and click **Add list item**.
-
-![](https://i.imgur.com/qKNZgPu.png)
-
-3. Add a name for your list and enter the items in synonyms.
-
-For instance, **Type of leaves** : Sick, Casual, Privilege, Maternity, Paternity.
-
-### Add regex type entities
-
-Regular expressions (regex) in entities are patterns that are used to identify and extract specific text patterns from user inputs. Regex allows you to define rules for matching and capturing text based on patterns or formats.
-
-For example, let's say you have a regex entity for email addresses. The pattern for an email address could be something like "\b[A-Za-z0-9.%+-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,}\b". When this regex pattern is applied, it can recognize and extract valid email addresses from user inputs, such as **john.doe@example.com** or **janesmith123@gmail.com**.
+For instance, consider a scenario where you are dealing with modes of payment. The list entity name is "mode of payment" and would contain values like UPI, Card, and Cash on delivery. When all distinct values of an entity are known in advance, the list type entity can be used.
 
 1. Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
 
-![](https://i.imgur.com/US9yAo3.png)
+     ![](https://imgur.com/a283ade.png)
 
-2. Enter the entity name in **Entity name** and select **Type** as **Regex**.
+2. Enter the **Entity name** and choose the **Type** as **List**.Entity name should be alphanumeric, lower case and cannot contain spaces.
 
-![](https://i.imgur.com/ujjr6yM.png)
+   <img src="https://imgur.com/cQxrO43.png" alt="drawing" width="80%"/>
 
-3. Enter the format in the **Regex** field.
+3. Click **Add list item** and add a name for your list and enter the items in synonyms.
 
-## Train the bot on entities
+     <img src="https://imgur.com/gDWeLIk.png" alt="drawing" width="80%"/>
+      
+* You can **Enable similar entities** check box to detect an entity if there is a partial match.
+      
+4. Click **Add**. This will create the entity of list type.
 
-Once you add entities, you need to train your bot on the same. To train entities:
-
-1. Click **Train entities** on top.
-
-![](https://i.imgur.com/HVuCiMl.png)
-
-
-2. Select the **Model type**, the bot can be trained on English and multiple languages.
-
-  > Multilanguage training  works only for **Text** type entities.
-
-![](https://i.imgur.com/RnA8fYY.png)
-
-3. Enable **Fuzzy search** for the bot to conduct searches for text that closely matches a term, even when there are slight misspellings. 
-
-For instance, if you perform a fuzzy search for "rode," it will identify terms with similar spelling, such as "ride" or "node," rather than strictly requiring an exact match.
-
-6. Click **Train**.
+### Add entities using regular expressions (regex) 
 
 
-## Update entities
+Regex patterns in entities help identify and extract specific text patterns from user inputs. Regex enables you to define a regular expression pattern to validate and ensure that the user input conforms to the desired format.
 
-You can update the entities(all of the information in it) at any point of time. To update an entity:
+For instance, here are some regex samples: 
+
+* **Email address**: `[A-Za-z0-9.%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}`. 
+* **Phone Number (US format)**: `?(\d3)?[-.\s]?(\d{3})[-.\s]?(\d{4})`
+*  **Date (YYYY-MM-DD format)**: `\d{4}-\d{2}-\d{2}`
+*  **URL**: `https?://(?
+.)?[\w-]+(.[\w-]+)+([\w.,@?^=%&:/+#-]*[\w@?^=%&/+#-])?`
+
+
+To add regex type entities:
+
+1. Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
+
+   ![](https://imgur.com/a283ade.png)
+
+2. Enter the **Entity name** and choose the **Type** as **Regex**.
+
+   <img src="https://imgur.com/e9RR8Ya.png" alt="drawing" width="80%"/>
+
+3. Enter the regex format in the **Regex** field.
+
+* You can enable **Case insensitive** to ignore the capitalization differences in text searches or comparisons.
+
+4. Click **Add**.
+
+* This will create the entity of regex type.
+
+## Edit entities
+
+You can edit all the information within entities as explained in the following:
 
 1. Go to **Studio** > **Train** > **Entities**.
 
-![](https://i.imgur.com/bJNtr5w.png)
+   ![](https://imgur.com/14D8xgH.png)
 
-2. Click **Edit**.
-3. Make the required changes and click **Update**.
+2. Go to the entity that you want to edit and click on the more-options icon > **Edit**.
 
-![](https://i.imgur.com/gktslXm.png)
+   ![](https://imgur.com/7qh8PwH.png)
 
+3. Edit the required changes and click **Save**.
+
+   <img src="https://imgur.com/USkQMkk.png" alt="drawing" width="80%"/>
+    
+## Delete an entity
+
+If an entity is irrelevant or redundant, you can delete it. To delete an entity:
+
+1. Go to **Studio** > **Train** > **Entities**.
+
+   ![](https://imgur.com/14D8xgH.png)
+   
+2. Go to the entity that you want to delete and click more-options > **Delete**.
+
+   ![](https://imgur.com/62dMXWu.png)   
 
 ## Import entities
 
-You can import the entities from an external source. The file to be uploaded should be a CSV file with two headers, **Name** for the item name and **Synonyms** for comma-separated synonyms associated with the item.
+You can import entities from an external source using CSV file. 
 
-**Sample**
+The CSV file should contain the following two headers: 
 
-<img src="https://i.imgur.com/tdhpmfW.png" alt="drawing" width="40%"/>
+   <img src="https://i.imgur.com/tdhpmfW.png" alt="drawing" width="40%"/>
+   
+* **Name**: Name of the entity.
+* **Synonyms**: Comma-separated synonyms associated with each entity.  
+
+Following is the sample CSV file format to import the entities into the system.
+
+
+:::note
+Import option is available only for list type entities.
+:::
 
 1. Go to **Studio** > **Train** > **Entities**.
+
+    ![](https://imgur.com/14D8xgH.png)
+
 2. Click **Import**.
 
-![](https://i.imgur.com/hYe6DO8.png)
+   ![](https://imgur.com/8nwpEZG.png)
 
-3. Click **Upload file** and upload the CSV file. 
+3. Click **Upload file** and upload the CSV file, then click **Import**.
 
-<img src="https://i.imgur.com/OWqXVb0.png" alt="drawing" width="70%"/>
-
-4. Click **Import**.
-
+   <img src="https://imgur.com/Q6Qq22h.png" alt="drawing" width="70%"/>
 
 ## Export entities
 
-You can export entities from our platform for backup or integration purposes. To export entities:
+You can export entities from our platform to your local system folder in CSV format. 
 
-1. Go to **Studio** > **Train** > **Entities**.
-2. Click **Export**.
-
-![](https://i.imgur.com/exJn6JX.png)
-
-Entities will be downloaded in your system as a CSV file.
+Downloading entities serves several purposes: it backs up your data, makes it portable, and allows offline access. It also lets you customize entities as needed.
 
 :::note
-Import and Export actions are available only for list type entities
+Export option is available only for list type entities.
 :::
 
-
-## Delete entities
+To export entities:
 
 1. Go to **Studio** > **Train** > **Entities**.
-2. Click **Delete** followed by another **Delete** button.
 
-![](https://i.imgur.com/3wgz5Nx.png)
+    ![](https://imgur.com/14D8xgH.png)
 
+2. Click **Export**.
+
+   ![](https://imgur.com/UOl5lCB.png)
+
+* Entities will be downloaded as a CSV file to your system's local folder.
 
 ## Auto-skip prompts & simplify interactions with entity-based suggestions
 

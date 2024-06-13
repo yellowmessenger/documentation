@@ -258,6 +258,7 @@ module.exports = {
               items: [
                 "platform_concepts/studio/kb/ingestion",
                 // "platform_concepts/studio/kb/integrations",
+                "platform_concepts/studio/kb/confgure-response",
                 "platform_concepts/studio/kb/advancedsettings",
                 
               ],

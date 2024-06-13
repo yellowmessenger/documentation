@@ -56,6 +56,27 @@ To upload files from your system, follow:
 - If the PDFs belong to any language other than English, the end results might not be perfect. Please post your concerns on [community.yellow.ai](https://community.yellow.ai/) , our product experts will help you.
 :::
 
+### Add acronyms 
+
+You can boost bot understanding and search accuracy via Acronyms.
+
+In the **Acronym** section, you can enter common phrases for specific terms. This helps the bot understand and fetch accurate results from the documentation, even when users use abbreviations. For example, users might use **WA** for **WhatsApp**. If you add this acronym the bot can understand it as **WhatsApp** whenever a user uses it. 
+
+To add acronyms, follow:
+
+1. Go to **Studio** > **KB** > **Acronym** > **+ Add new acronyms**.
+
+    ![](https://i.imgur.com/NjHhs90.png)
+
+2. In **Acronym name** enter the name of the specific term and in **Acronyms** enter the commonly used utterances for that term.
+
+   <img src="https://i.imgur.com/eZuSYgD.png" alt="drawing" width="50%"/>
+
+3. Click **Add list item**. 
+4. You can edit the entered acronyms by selecting and deleting them or by clicking on the three dots on the right side for further modifications.
+
+    ![image](https://imgur.com/4JXrGY8.png)
+
 
 ### Upload specific URLs/subdomain URLs
 
