@@ -46,7 +46,8 @@ The **Region** setting can be used for integrations, voice bots (for phone numbe
 ### Pause/resume your bot
 
 :::note
-- Only super admin and admin have the ability to pause a bot.
+- Only super admin and admin have the ability to pause a bot. 
+- When the bot is in a paused state, it will not respond to user queries in any environment.
 :::
 
 You can temporarily disable a bot's response to make changes to its configuration, features, or strategies based on your business requirements. After disabling the bot response, you can make adjustments and then enable the bot response to publish the bot. Follow the below steps:
