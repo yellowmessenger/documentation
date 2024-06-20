@@ -3,8 +3,6 @@ title : Instagram
 sidebar_label : Instagram
 ---
 
-## Overview
-
 Instagram is a social networking platform. This integration enables your insta users to seamlessly interact with our bot directly from your Instagram account.
 
 You can also promote your products and services, engage with customers by responding to their comments and queries, and increase your brand’s visibility.
@@ -54,8 +52,6 @@ Carousel | <ul><li> A maximum of 80 characters are supported for the title and d
 * Private replies do not open the 24-hour window for standard messaging.
 
 
-  
-
 ## Integrating Instagram to your bot
 
 To set up Instagram bot, you need to perform the following:
@@ -75,7 +71,7 @@ The following are the prerequisites to setup a Instagram bot:
 
 1. Create an [Instagram Professional Account](https://www.facebook.com/help/instagram/138925576505882) or a business account.
 2. Ensure that your **Facebook Page** is connected to your [Instagram professional account](https://developers.facebook.com/docs/instagram-api/overview#pages). To create a new page, click [here](https://www.facebook.com/pages/create).
-3. Ensure that you have enabled **Access to Messages** in your Instagram account. (**Settings > Privacy > Messages > Enable Allow Access to Messages**).
+3. Ensure that you have enabled **Access to Messages** in your Instagram account. (**Settings > Messages and story replies > Message controls > Allow access to messages**).
 4. Create an additional personal or test Instagram account for testing.
 
 ### Set up a business account on Instagram

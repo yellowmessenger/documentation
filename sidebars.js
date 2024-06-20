@@ -50,6 +50,7 @@ module.exports = {
           "cookbooks/studio/build-bot",
           "cookbooks/studio/hide-input",
           "cookbooks/studio/dynamic-quickreplies",
+          "cookbooks/studio/dynamic-callout-banner",
           "cookbooks/studio/images-languages",
           "cookbooks/studio/storeApiResponse",
           "cookbooks/studio/qr-node",
