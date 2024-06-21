@@ -25,7 +25,7 @@ The following table consists of the languages supported in our platform.
 | English - Nigerian Pidgin     |   en  | Yes                 |                          |                |                | Yes              |                     |                    |
 | English - South Africa        |  en   | Yes                 |                          |                |                | Yes              |                     |                    |
 | Chinese - Cantonese           |     | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
-| Chinese - Simplified          | zh-cn    | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
+| Chinese - Simplified          | zh-CN   | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Chinese - Traditional         |    | Yes                 |                          |                |                | Yes              | Yes                 | Yes                |
 | Arabic (Peninsular Group)     |   ar  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Arabic (Mesopotamian Group)   |  ar | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
