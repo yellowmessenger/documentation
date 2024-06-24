@@ -12,7 +12,7 @@ The number of allowable custom views for each subscription tier is as follows:
 :::
 
 
-Custom views are specialized chat categories that can be distinguished from the default chat types based on specific use cases or requirements set by the inbox admins. They are accessible in a separate tab, providing an extra layer of sorting and convenient access to specific chat types.
+Custom views (or Shared views) are specialized chat categories that can be distinguished from the default chat types based on specific use cases or requirements set by the inbox admins. They are accessible in a separate tab, providing an extra layer of sorting and convenient access to specific chat types.
 - Custom views help individuals and teams streamline their work by focusing on specific criteria.
 - Filters based on status, tags, or other criteria simplify navigating through large amounts of data.
 - Custom views provide a personalized experience, boosting engagement.
