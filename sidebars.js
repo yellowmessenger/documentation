@@ -141,6 +141,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/channels/Viber-business",
+    "cookbooks/channels/resolve-meassaging-errors",
     {
       type: "category",
       label: "Chat widget",
