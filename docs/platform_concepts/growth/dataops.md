@@ -34,7 +34,7 @@ To export data, follow the steps below:
     * **Custom analytics**: Custom data created for your bot. 	
     * **Email tickets**: Data related to email tickets in the Inbox module.	
     * **Conversations**:Actual messages (Bot, user, and agent).
-    * **Notification reports**: Data of notifications sent out using the platform/ API: 
+    * **Notification reports**: Data of notifications sent out using the platform/ API. 
     * **Platform analytics**: Data on User engagement, bot, API, and Inbox events.
     * **Leads**: All the user profile data.
     * **Call recordings**: All the recorded calls from the voice bot.

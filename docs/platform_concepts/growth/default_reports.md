@@ -14,23 +14,21 @@ Yellow.ai offers pre-built reports with filters, summaries, and visualizations, 
 2. Click on **Data explorer** to enter the data analysis interface.
 3. Default reports are displayed at the top of the page in the Default tab. Click on the report name to open it.
 
+![image](https://imgur.com/8knmDe9.png)
+
+
 ### Customization options 
 
 - **Add Filters/Summarization/Visualization**: While viewing a report, you have the flexibility to further refine it by adding filters, adjusting summarizations, or changing visualizations to suit your specific requirements.
 - **Save custom reports**: If you make modifications to a default report and wish to save your changes, you must save it as a new report with a custom name. This custom report will then be accessible under saved custom reports. Click on the **Custom** tab to access these customized reports.
 
-
-![image](https://hackmd.io/_uploads/BJ5nu4HWC.png)
-
 ## List of default reports 
 
 Here are the default reports available on the Data Explorer page, along with the applied operations (original dataset, filters, summarization and visualisation applied):
 
-
 ### Based on user traffic
 
 Visualised under default dashboard: **User traffic**
-
 
 | Report | Description | Dataset | Filter | SummarizeBy | GroupBy | Visualisation |
 |--------|-------------|---------|--------|------------|----------|--------------|
@@ -83,8 +81,6 @@ Report | Description
 | Step wise interactions    | Number of interactions within each journey step| User Engagement Events  | Journey | Count | Step | | |
 
 ----
-
-
 
 ### Based on chats
 
