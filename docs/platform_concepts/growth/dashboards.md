@@ -75,7 +75,7 @@ Gain insights into interactions conducted through voice channels such as phone c
 
 ![](https://i.imgur.com/Y65DRMB.png)
 
-### KPI descriptions for Voice bot report
+#### KPI descriptions for Voice bot report
 
 | KPI Title                               | Description                                                                                                     |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------|
@@ -165,7 +165,7 @@ This provides insights into the effectiveness and efficiency of your chatbot. Tr
             
 
 
-### KPI Descriptions for Bot Performance Report
+#### KPI Descriptions for Bot Performance Report
 
 KPI | Description
 --- | -----------
