@@ -15,7 +15,7 @@ Use ```ticket-assigned-bot event``` event for this. To activate this event:
 
 ```
 curl --location 'https://cloud.yellow.ai/api/agents/settings/ticketUpdateEventSettings?bot=x1599195792555' \
---header 'x-auth-token: <token>' \
+--header 'X-API-key: <token>' \
 --header 'Content-Type: application/json' \
 --data '{
     "chatAssignedBot": true
