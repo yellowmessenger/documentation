@@ -71,6 +71,12 @@ The list of expressions available on the left side can be added along with your 
 6. All the canned responses will be displayed on the page.   
     ![](https://i.imgur.com/N0kjNRg.png) 
     
+
+:::note
+Bulk upload of canned response is currently not supported via the user interface (UI) or API.
+:::
+
+
 ------
 
 ## <a name="delete"></a> Edit/Delete canned response

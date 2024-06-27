@@ -141,3 +141,7 @@ The following are the metrics available in the Ticket archive report for SLAs:
 
 
 
+:::note
+SLAs are supported for working/business hours, not calendar hours. For 8-hour workday, it will take 9 working days to meet the SLA.
+
+:::

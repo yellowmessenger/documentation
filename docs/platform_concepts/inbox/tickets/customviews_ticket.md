@@ -3,6 +3,7 @@ title: Create custom views for your email tickets
 sidebar_label: Email custom view 
 ---
 
+<!--
 :::note
 The number of allowable custom views for each subscription tier is as follows:
 * **Freemium**: 1 custom view
@@ -10,6 +11,9 @@ The number of allowable custom views for each subscription tier is as follows:
 * **Premium**: 10 custom views
 * **Enterprise**: 20 custom views
 :::
+
+-->
+
 
 Custom views are specialized ticket categories that can be distinguished from the default email types based on specific use cases or requirements set by the inbox admins. They are accessible in a separate tab, providing an extra layer of sorting and convenient access to specific ticket types.
 - Custom views help individuals and teams streamline their work by focusing on specific criteria.

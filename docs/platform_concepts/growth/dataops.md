@@ -34,7 +34,7 @@ To export data, follow the steps below:
     * **Custom analytics**: Custom data created for your bot. 	
     * **Email tickets**: Data related to email tickets in the Inbox module.	
     * **Conversations**:Actual messages (Bot, user, and agent).
-    * **Notification reports**: Data of notifications sent out using the platform/ API: 
+    * **Notification reports**: Data of notifications sent out using the platform/ API. 
     * **Platform analytics**: Data on User engagement, bot, API, and Inbox events.
     * **Leads**: All the user profile data.
     * **Call recordings**: All the recorded calls from the voice bot.
@@ -125,6 +125,129 @@ To set up an SFTP server, install and configure software like OpenSSH. Users cre
 ![image](https://imgur.com/iqa02Pn.png)
 
 
+## File naming convention and export path
+
+Exported files are saved in the below path with the given naming convention: 
+
+``${botId}/${dataSet}/${jobId}_${userSelectedExportStartDate}_${userSelectedExportEndDate}/${fileSuffix}.json``
+
+- **BotID**: Bot ID of the bot where the export was initated
+- **Dataset**: Name of the data you are downloading. For each table the *dataset* name is mentioned below.
+
+```
+Agent activity -
+    frequency -> month
+    dataSet -> agent_logs/
+    stepUp - 1
+
+Agent availability -
+    frequency -> month
+    dataSet -> agent_availability/
+    stepUp - 1
+
+Audit logs -
+    frequency -> month
+    dataSet -> audit_logs/
+    stepUp - 1
+
+Bot configuration -
+    frequency -> userStartDate, userEndDate
+    dataSet -> bot_configuration/
+    stepUp - 1
+
+Bot tables -
+    frequency -> month
+    dataSet -> bot_tables/tableName
+    stepUp - 1
+
+Call Recordings
+    frequency -> day
+    dataSet -> call_recordings/
+    stepUp - 1
+
+Call details report -
+    frequency -> month
+    dataSet -> cdr/
+    stepUp - 1
+
+Chat tickets -
+    frequency -> month
+    dataSet -> chat_tickets/
+    stepUp - 1
+
+Custom analytics -
+    frequency -> month
+    dataSet -> custom_analytics/tableName {
+        tableName possible values -> [analytics]
+    }
+    stepUp - 1
+
+Email tickets -
+    frequency -> month
+    dataSet -> email_tickets
+    stepUp - 1
+
+Conversations -
+    frequency -> week
+    dataSet -> conversations/
+    stepUp - 2
+
+Notification reports -
+    frequency -> week
+    dataSet -> notifications/
+    stepUp - 2
+
+Platform analytics -
+    frequency -> week
+    dataSet -> platform_analytics/tableName {
+        tableName possible values -> [messages, userEvents, botEvents, apiEvents, agentEvents]
+    }
+    stepUp -> 2
+
+Leads -
+    frequency -> week
+    dataSet -> leads
+    stepUp - 2
+
+User 360 -
+    frequency -> month
+    dataSet -> user_360
+    stepUp - 1
+```
 
 
+- **Job ID**: Each export is considered as a job and has an unique job ID. 
+- **User selected export start date**: userSelectedExportStartDate is the date along with the starting hour of the export. If the export is to STFP `-` is used before the mention of the start minute otherwise, `:` is used. 
 
+``` ${exportStartDate}T${startHour}(if sftp - else :)${startMinute} ```
+
+
+- **User selected export end date**: userSelectedExportEndDate is the date along with the ending hour of the export. If the export is to STFP `-` is used before the mention of the end minute otherwise, `:` is used.
+
+`${exportEndDate}T${EndHour}((if sftp - else :))${EndMinute}`
+
+
+-  **File suffix**: Date and time when the export started and ended with the offset value of the timezone. 
+
+`${momentTimezone(startDate).tz(timeZone).format()}_${momentTimezone(endDate).tz(timeZone).format()}`
+
+:::info
+**Step-up**: The step-up value determines the frequency at which new files are generated. 
+For example, call recordings have a daily frequency with a step-up value of 1, meaning a new file is exported every day. Similarly, bot tables have a monthly frequency with a step-up value of 1, resulting in a new file being generated each month.
+:::
+
+
+**Examples**: 
+
+- Week with stepUp 2
+
+`x1623740308077/platform_analytics/messages/mq75jra2-xp3erok6-d66og4ey_2024-02-01T00:00_2024-03-28T00:00/2024-02-01T00:00:00+05:30_2024-02-15T00:00:00+05:30.json // +05:30 is offset of the timezone`
+
+`x1623740308077/platform_analytics/messages/mq75jra2-xp3erok6-d66og4ey_2024-02-01T00:00_2024-03-28T00:00/2024-02-15T00:00:00+05:30_2024-02-29T00:00:00+05:30.json`
+
+- Month with stepUp 1
+
+`x1659350250725/audit_logs/hbdrj5v4-kdbkib95-kr8ciumj_2024-02-01T00:00_2024-06-01T00:00/2024-02-01T00:00:00+04:00_2024-03-01T00:00:00+04:00.json`
+
+`x1659350250725/audit_logs/hbdrj5v4-kdbkib95-kr8ciumj_2024-02-01T00:00_2024-06-01T00:00/2024-03-01T00:00:00+04:00_2024-04-01T00:00:00+04:00.json`
+    

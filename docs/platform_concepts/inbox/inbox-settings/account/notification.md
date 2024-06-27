@@ -36,6 +36,11 @@ Follow the below steps to configure notifications:
 
 8. Click **Save** and save the changes.    
 
+:::note
+Notifications are not in real-time, so delays are expected. When a new chat is assigned to an agent, it will be added to the agent's chat list, and a notification sound will play. This will only occur when the user is on the chats page and has configured the permissions.
+:::
+
+
 -------------
 
 
