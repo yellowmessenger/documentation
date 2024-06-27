@@ -1,5 +1,5 @@
 ---
-title: Discover What's New in May 2024
+title: Discover What's New in June 2024
 sidebar_label: Latest releases
 featured: true
 ---
@@ -7,49 +7,127 @@ featured: true
    ![](https://i.imgur.com/hIGEIJL.png)
 
 
-## Gain Instant Business Insights with Our Prebuilt Dashboards
+## Major enhancements to Insights Module
+
+We've revamped the Insights module to significantly enhance reporting capabilities based on valuable customer feedback. As a result, we have discontinued the following sections: 
+* **Overview**, **Metrics**, **User Journeys**, **Voice Overview** & **Doc Cog** pages.  
+
+Earlier, these screens provided informative but opaque reports, limiting users from performing custom drill-downs or modifying filters and visualizations. 
+
+We have removed these screens due to redundancies and low utilization rates, based on user feedback. This decision reflects our commitment to refining our interface and focusing on more impactful and relevant features to enhance overall user experience.
 
 
-Introducing Default Dashboards on the Dashboard page. These pre-built dashboards are designed to provide you with essential business insights quickly and efficiently. Each dashboard includes a variety of widgets that display critical data related to user traffic, inbox agent performance, voice interactions, bot performance, and inbox chats.
-
-You can duplicate these dashboards to customize them further, but you cannot modify the default ones directly.
-
-![](https://i.imgur.com/MqHhWp5.png)
-
-Enjoy an insightful data experience with our new [Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#default-dashboard).
+:::note
+- We are working to build out a UI which will be useful for customers to not just visualise user drop-offs, but also measure containtainment rates effectively.
+:::
 
 
-## Enhance your data flow with Custom Webhook integration
+   ![user journey](https://i.imgur.com/pnD0n4C.png)
+
+* **Voice Overview & Doc Cog pages**: 
 
 
-We have implemented Custom Webhooks into the Integration module.
 
-With Custom Webhooks, you can seamlessly connect our bot with both your in-house and third-party systems, regardless of your setup. You’ll receive instant updates on user actions like adding items to their cart or making purchases.
+ To address these limitations, we've made Dashboards and Data Explorer as the central components for Insights module. 
 
-The real benefit for you is receiving real-time event notifications and make use of the data effectively.
+### Key Changes
 
-[Learn more](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/webhook)
+#### 1. Reports migration to Default Dashboards
 
+* All the reports that you were able to access earlier have been migrated to the **[Dashboards page](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards)** of Insights.
 
-## Personalize your Android SDK Chatbot with Custom Theme
+#### 2. Default dashboards to cover various use-cases
 
-You can now personalize your chatbot interface using a custom theme. With the new theme property in YMConfig, you can easily modify several elements of your bot. These include:
+-  Introducing **[Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#default-dashboard)** that cover **[Voice](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#voice)**, **[Bot Performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance)**, **[User Traffic](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#user-traffic)**, **[Inbox Chats](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#inbox-chats)**, **[Inbox Agent Performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#inbox-agent-performance)**, **[Generative AI](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#generative-ai)**, and **[Email Tickets](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#email-tickets)**.
 
-- Bot Name
-- Bot Description
-- Primary and Secondary Colors
-- Bot Icon
-- Bot Bubble Background Color
-- Click Icon
+#### 3. KPIs are moved to Default Reports
+- The metrics (or KPIs) that were available on the sections mentioned above are now available in the Default Reports labeled as Created by Yellow.ai. These "Default Reports" allow users to access/customize underlying data and parameters to fit your analytics needs.
 
+#### 4. Cloning capabilities
 
-[Start customizing your chatbot](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android#theme-setup) today to enjoy these benefits!
+- You can now clone Default reports and dashboards for your personalized drill-down operations.
 
 
-## Custom Chat Transcript addition to Genesys PureCloud Live
+#### 5. Custom tab for custom reports and dashboards
 
-With this enhancement, you now can select your preferred variable for sending chat transcripts in the format that best suits your needs. By indicating your preferred format in the variable, you can customize your chat transcript experience to match your preferences precisely.
+- All user-created reports and dashboards are consolidated in the **Custom** tab, alongside our curated "Default" dashboards, enhancing usability within the Insights module. This keeps your key analytics centralized and readily available. Learn [how to create custom dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#create-custom-dashboards).
 
-For more details, refer to [Genesys PureCloud Live Integration Document](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/genesys-cloud-livechat).
+
+#### 6. Other enhancements
+- You can customize these reports using no-code reporting tools.
+
+- You will soon be able to setup Custom alerts on these reports.
+
+### New interface: A Look at What's Changed
+
+#### Overview screen
+
+   ![img](https://i.imgur.com/rJHP4Z3.png)
+
+Old Report	| Where to find in new report
+----------- | ------------------------
+Users	<br/>Messages<br/>Sessions	<br/>Session Duration<br/>Users By Country<br/>Users By Traffic Channel	<br/>Users By Device	| Dashboards > User Traffic
+
+
+   ![img](https://i.imgur.com/efLmMko.png[/img)
+
+Old Report	| Where to find in new report
+----------- | ------------------------
+Bot Accuracy<br/>Flow Completion Rate<br/>Deflection Rate | Dashboards > Bot Performance
+
+
+   ![img](https://i.imgur.com/B8rYDdW.png)
+
+Old Report	| Where to find in new report
+----------- | ------------------------
+CSAT <br/>Flow Visits | Dashboards > Bot Performance
+
+   ![img](https://i.imgur.com/NEBze9h.jpeg)
+
+Old Report	| Where to find in new report
+----------- | ------------------------
+Real Time User Activity <br/>User Activity by Time (heatmap)<br/>Whatsapp Channel Consumption<br/>Conversation Issues<br/> | Coming Soon
+	
+
+
+***
+
+#### Metrics page
+
+   ![img](https://i.imgur.com/7Z7QDdF.png)
+
+Old Report	| Where to find in new report
+----------- | ------------------------
+Users<br/>Messages<br/>Sessions<br/>Session Duration<br/>Users By Country<br/>Users By Traffic Channel<br/>Users By Device<br/>Sessions per user | Dashboards > User Traffic
+Whatsapp Channel Consumption | Coming soon
+
+***
+
+#### API usage page
+
+![img](https://i.imgur.com/rdx0tol.png)
+
+Old Report	| Where to find in new report
+----------- | ------------------------
+Usage By Status Code<br/>API Hits | Dashboards > Bot Performance
+Response Time | Coming soon
+
+***
+
+#### Funnels page
+
+   ![img](https://i.imgur.com/rfpYUUC.png)
+
+Old Report	| Where to find in new report
+----------- | ------------------------
+Flows visited<br/>Flows completion rate | Dashboards > Bot Performance
+Step-wise interactions | Coming soon
+
+*** 
+
+### Coming soon
+- Redefining **Metrics** and **Overview** sections to address earlier issues and enhance usability with more relevant data. Stay tuned for more updates; you will receive them via email.
+- We're committed to expanding curated reports for various use-cases as we introduce new features and enhance data analytics capabilities.
+
 
 
