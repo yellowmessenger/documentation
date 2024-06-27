@@ -147,7 +147,11 @@ For chat disposition with custom fields, you must mark the below checkboxes:
 
 ![](https://i.imgur.com/e5TbTK6.png)
 
-If these checkboxes are marked, the agent can not transfer or resolve the chat without providing a value for the custom field.
+:::note
+When **Required to close ticket** is enabled:
+- the agent can not transfer or resolve the chat without providing a value for the custom field.
+- The [inactivity close](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat-timeout) feature will not function.
+:::
 
 <img src="https://imgur.com/TlSQqqt.png" alt="drawing" width="50%"/> 
 

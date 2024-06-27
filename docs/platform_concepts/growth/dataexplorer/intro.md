@@ -60,3 +60,6 @@ In the Data explorer section, you will find:
 Actions in Data explorer must be configured separately for **Live and Production** environment.
 :::
 
+:::info
+Maximum of 500 data entries are displayed at the UI level. To view the full dataset, you can download it.
+:::

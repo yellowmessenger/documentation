@@ -3,7 +3,7 @@ title: Debug inbox error logs
 sidebar_label : Debug inbox errors 
 ---
 
-In this article, you will learn how to debug the errors that are encountered while [testing](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) the bot for Inbox configuration (on **Studio** module).
+In this article, you will learn how to debug errors encountered while [testing](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) the bot for Inbox configuration using the **Studio** module, as debugging is not supported directly in the Inbox module.
 
 The debugging logs provide helpful information to bot developers for every raise chat operation, such as: 
 1. **Bot status**: Whether the bot is running or paused 
@@ -68,6 +68,11 @@ Chats can be missed due to certain settings in [queue handling](https://docs.yel
 | **Group offline reached**: The chat is missed because the set offline chat limit was reached for the chat's group. |
 | **Group offline unavailable**: The chat is missed because the group name does not exist in the Inbox group Settings, for example, an incorrect group name or group code. |
 | **Agents went offline**: The chat is missed because all the agents went offline for more than 10 minutes once the chat got queued. |
+
+
+:::note
+The reason for missed chats can be viewed under **Activity log**. 
+:::
 
 -----
 

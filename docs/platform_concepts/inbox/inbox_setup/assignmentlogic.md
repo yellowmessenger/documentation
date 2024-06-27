@@ -121,3 +121,6 @@ Then, they will be rearranged based on descending order of the last live chat/em
 The live chat/email ticket will be assigned to **Agent C**, since **C** is the first agent who is not assigned a new chat/email ticket for the longest time and has space in their concurrency (3 more left to their max concurrency which is 6).
 
   
+:::note
+Tickets and chats can be manually assigned to an agent regardless of the auto-assignment logic.
+:

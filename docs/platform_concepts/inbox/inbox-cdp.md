@@ -95,7 +95,7 @@ Learn more about UserIDs [here](https://docs.yellow.ai/docs/platform_concepts/en
 After settling on a userId for your bot, the subsequent action is to commence tracking it within your **Studio** flows. Depending on your bot version, you might encounter one of three scenarios:
 
 1. Set userId via. conversation settings
-2. Set userId in the prompt nodes
+2. Set userId using the user properties (variable)
 
 :::info
 
@@ -121,6 +121,27 @@ After setting up the user identification flow, use **User property variables** i
 
 <img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
 
+### Set userId using the user properties
+
+While building flow, configure: 
+
+1. Add a prompt node to fetch a value to be considered as the unique ID (email, phone number, etc.). 
+2. Save the response in a variable. 
+3. Use variable node to assign the entered variable to the User properties **UserID**.
+4. Add the next steps and complete the flow. 
+
+**Flow for new users**: 
+
+![image](https://hackmd.io/_uploads/rJ7sORY8C.png)
+![image](https://hackmd.io/_uploads/B1Zp_RYUC.png)
+
+**Flow for existing users**: 
+
+![image](https://hackmd.io/_uploads/B1nROCK8A.png)
+![image](https://hackmd.io/_uploads/SkRbtCFIA.png)
+
+
+<!--
 ### Set userId in the prompt nodes
 
 If the User identification setting is not visible in the Conversation settings popup and **Use this as unique ID for user** option is available, follow these steps:
@@ -147,6 +168,7 @@ If the above steps are not followed, contact card and the old UI will be display
 
 
 
+-->
 
 
 ---
