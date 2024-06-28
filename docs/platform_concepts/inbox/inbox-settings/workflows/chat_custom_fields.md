@@ -166,6 +166,11 @@ There is a column dedicated to each custom field in the [chat archives report](h
 
 > To know how to download the chat archive report, click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports). 
 
+
+:::note
+Provide different names for all the custom fields to avoid reporting confusions. 
+:::
+
 ------
 
 ## <a name="4"></a>  4. Event to identify custom field inputs

@@ -77,3 +77,12 @@ Can voice bot dynamically understand different languages and if required, switch
 <div> Yes, this can be done using the Auto-Language Detection feature. Currently, this is under Beta. <a  href="https://docs.yellow.ai/docs/cookbooks/voice-as-channel/usecases/languagedetection"> Learn more here. </a>  </div>
 </div>
 </details>
+
+<details>
+<summary>
+Why is the voice data different in the Insights and Engage dashboards?
+</summary>
+<div>
+In Engage, there is a 2-5 minute window for checking the status of voice campaign calls. During this time, calls are queued in the voice queue. The status is then sent in the notification report. If the call status remains unchanged after this period, Engage considers the calls as failed to connect and moves the users to the next node. Hence, there might be a mismatch in the data displayed on the Insights vs. Engage dashboards/reports.
+</div>
+</details>
