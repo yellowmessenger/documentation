@@ -4,7 +4,8 @@ sidebar_label: SMS
 ---
 
 :::note 
-If businesses wish to set up the SMS channel, they are required to contact the Yellow [support](mailto:support@yellow.ai) team for assistance and guidance. However, if they prefer to set up their own SMS channel independently, they can utilize the [Twilio SMS channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/twilio-sms) for seamless integration and management. 
+* If businesses wish to set up the SMS channel in a specific country, you need to contact the Yellow [support](mailto:support@yellow.ai) team for assistance and guidance. However, if they prefer to set up SMS channel for USA, you need to utilize the [Twilio SMS channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/twilio-sms) for seamless integration and management. 
+* For pricing details, contact [procurement](procurement@yellow.ai).
 :::
 
 SMS (Short Message Service) is a messaging channel that allows you to send image and text messages to users through their registered phone numbers.
