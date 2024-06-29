@@ -1,6 +1,6 @@
 ---
 title: Custom Dashboards
-sidebar_label: Custom Dashboards
+sidebar_label: Custom dashboards
 ---
 
 In addition to the default dashboards, you can create custom dashboards for a more tailored view of your bot data. A custom dashboard offers a dedicated page where you can configure and display information from a linked database. Select the specific data you want to monitor and visualize it through various charts and graphs, providing a comprehensive and easily accessible overview of your bot's performance and metrics.
@@ -26,14 +26,10 @@ You can also duplicate the default dashboard by going to the **Default** tab and
 ### <a name="1"></a> Method 1: Create a dashboard from the dashboard page
 
 1. On the left navigation bar, go to **Insights** > **Dashboard**.
-2. Click on the **Custom** tab, then click **+ New dashboard**. 
-
+2. Click on the **Custom** tab, then click **+ New dashboard**.                             
    ![img](https://i.imgur.com/gmxIYqM.png)
-
 3. On the Dashboard details pop-up, enter **Name** and **Description**. 
 4. Click **Save**.
-
-
 
 
 ### <a name="2"></a>  Method 2: Create a dashboard from Data explorer (Saved reports)
@@ -41,12 +37,12 @@ You can also duplicate the default dashboard by going to the **Default** tab and
 > Prerequisites: [Data explorer](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions)
 
 1. On the left navigation bar, click **Insights** > **Data explorer**. 
-2. Click and open any of the saved reports. 
-    ![](https://i.imgur.com/Sy9bmBJ.png)
+2. Click and open any of the saved reports.                        
+    ![image](https://imgur.com/DGlktJB.png)
 3. From **Actions** dropdown, select **Add to dashboard**.
 4. Select **New dashboard**. Add **Name** and **Description** (the saved report that you have selected is going to be the widget inside a dashboard. You can choose to add this widget to an existing dashboard or you can create a new dashboard and add this widget to it).
-5. Click **Save**. You can view this on the dashboard page. 
-    ![](https://i.imgur.com/o3ila14.png)
+5. Click **Save**. You can view this on the dashboard page.                    
+    ![](https://imgur.com/gfEhi5j.png)
 
 :::note
 All the changes made in the Saved reports are automatically updated on the Dashboard.
@@ -97,30 +93,23 @@ To edit a dashboard:
 2. You can change the **Name**, **Description** of the dashboard and create filters.
 3. Add more widgets to the dashboard or delete existing widgets.
 4. Rearrange the widgets by dragging and dropping them.
-5. Click **Save** to apply the changes.
+5. Click **Save** to apply the changes.                      
+   ![](https://imgur.com/GIAWc4L.png)
 
-   ![](https://i.imgur.com/8tNItnb.png)
-
-### Add filters to custom dashboards
+### Add custom dashboards filters
 
 Adding filters to custom dashboards enhances your ability to analyze and visualize data tailored to your specific needs. Filters allow you to refine your dashboard views, focusing on the most relevant information for your analysis. Follow the steps below to create filters for your custom dashboard:
 
 1. On the **Custom** dashboard page, navigate to the dashboard where you want to add filters.
-2. Click the **Edit** button to enter edit mode.
-
+2. Click the **Edit** button to enter edit mode.                       
    ![Custom Dashboard](https://i.imgur.com/Vq2ujGC.png)
-
 3. Click on the **Create filter** button. This action will display a list of all available reports within the dashboard.
-
 4. Provide a descriptive name for your filter to easily identify its purpose in **Enter Filter Name:**.
-
 5. For each widget where you want to apply the filter, select the relevant column using the available drop-down list. On the right side, you will see the status as mapped for each widget, confirming the column selections.
-
 6. Click the **Create** button to finalize the filter creation process. 
 7. Repeat the above steps to add more filters as needed.
 8. After adding all desired filters, click **Save** to save your changes.
-   Once saved, you will see all the filters for the custom dashboard displayed, as shown here.
-
+   Once saved, you will see all the filters for the custom dashboard displayed, as shown here.                      
    ![img](https://i.imgur.com/CxjQijp.png)
 
 #### Delete custom filter
@@ -129,8 +118,7 @@ To delete a custom filter:
 
 1. Click on the **Edit** icon.
 2. Select the filter you want to remove.
-3. Click on **Delete filter**.
-
+3. Click on **Delete filter**.                         
    ![Delete Filter](https://i.imgur.com/niZ34hU.png)
 
 ### Apply filters to Custom dashboard data
@@ -140,8 +128,7 @@ You can drill-down data using the date filter and custom filters customized to m
 To filter dashboard data:
 
 1. Open the custom dashboard and locate the filter dropdown menu at the top
-2. Click on the dropdown, configure your filter settings, and click **Apply** to refine your data.
-
+2. Click on the dropdown, configure your filter settings, and click **Apply** to refine your data.             
    <img  src="https://i.imgur.com/BSvI4Do.png"  width=""/>
 
 

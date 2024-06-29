@@ -1,6 +1,6 @@
 ---
 title: Default Dashboards
-sidebar_label: Default Dashboards
+sidebar_label: Default dashboards
 ---
 
 In Insights > Dashboard, you can see the default dashboards created by yellow.ai for common business scenarios. Yellow.ai curates these dashboards, and they cannot be modified.
