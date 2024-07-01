@@ -57,6 +57,7 @@ module.exports = {
           "cookbooks/studio/trigger-bot",
           "cookbooks/studio/usecases-functions",
           "cookbooks/studio/ticket-assignedevent",
+          "cookbooks/studio/webview-node",
           "cookbooks/studio/user-inactivity",
 
       ],
@@ -1079,7 +1080,6 @@ module.exports = {
               collapsed: true,
               items: [
             "platform_concepts/channelConfiguration/sms-outbound-india",
-            "platform_concepts/channelConfiguration/sms-inbound-US",
             "platform_concepts/channelConfiguration/sms-phone-number-types",
             "platform_concepts/channelConfiguration/sms-channel-registration",
               ]}, 
