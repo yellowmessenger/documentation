@@ -1,6 +1,6 @@
 ---
 title: Create custom queries for custom tables
-sidebar_label : Analyse custom tables 
+sidebar_label : Create custom reports(tables) 
 ---
 
 #### What are custom tables(datasets)?
@@ -12,14 +12,15 @@ You can modify/visualise and perform actions on these tables according to your p
 To **secure data** security for custom tables, you can employ masking techniques by following [these steps](https://docs.yellow.ai/docs/platform_concepts/studio/database#mask-database-columns). As a result, the data in these tables will remain concealed on insights tables for all users except super admins.
 :::
 
-## 1. Steps to add a custom query 
+## 1. Steps to add/create a custom query(custom reports) 
 
-Custom queries can be created using the default datasets or custom datasets.
+Custom queries/reports can be created using the default datasets or custom datasets.
 1. Open **Insights** > **Data explorer**. 
 2. Click **+Create Report**. 
 3. Select the type of **query** and click **Next**. 
 
-<img src="https://i.imgur.com/pHHRhJx.png" width="90%"/>
+![image](https://imgur.com/J2dtFSS.png)
+
 
 ### Choose query to create a table
 
@@ -29,10 +30,10 @@ To create reports on selected tables, there are two types of queries available:
 
 1. **Custom query**: This query allows you to choose a default or custom table, and provides options to filter, summarize and visualise the data using the provided buttons. With this query, you can perform actions on tables through a simple interface, without the need for any database queries.
     - Filters and logic within Filters can be used to construct queries. You can filter data by specific column values or combinations of column values.
-    ![](https://i.imgur.com/Rj2r4Of.png)   
+    ![image](https://imgur.com/NmKO84z.png)
 
 2. **Native query**: If you require more advanced analysis beyond what is available with the buttons and options provided by Insights, or if you prefer to write SQL queries instead, you can choose the native query option. With this option, you can write your own SQL query to perform more complex analysis on your default datasets.
-    ![](https://i.imgur.com/gM5kxps.png)
+    ![image](https://imgur.com/2zNJu3m.png)
     
     **Sample native query**:
 
@@ -62,13 +63,13 @@ When using the filters option, you can apply filters to any of the available col
     - You can search for the column name. 
     - For each filter, you can add a conditon and the value. 
 3. Click **Apply filter**.
-    ![](https://i.imgur.com/emPZU07.png)
+    ![image](https://imgur.com/S3fwsji.png)
 
 ### Download filtered data as a CSV file
 
 You can filter data by a single column value or a combination of column values. To download the data generated at any step, simply click on **Actions > Export as CSV** and it will be saved as a CSV file on your local system.
 
-![](https://i.imgur.com/4wmoCjT.png)
+![image](https://imgur.com/mxj8XeX.png)
 
 ### Save filtered data as reports 
 
@@ -76,8 +77,7 @@ Once you have applied filters, a button labeled **Save query** will appear. Clic
 
 > Learn more about actions available on [Saved reports](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions).
 
-![](https://hackmd.io/_uploads/r1crm1qS2.png)
-
+![image](https://imgur.com/TPu8gGr.png)
 
 > You can also summarize and visualise this data, steps are explained in further sections. 
 

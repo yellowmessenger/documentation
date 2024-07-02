@@ -15,7 +15,7 @@ You can only apply Custom formulas after applying **Summarization** > **Group-by
 To add a formula to a column, follow these simple steps:
 
 1. Click on the **Actions** dropdown menu and select **Add formula column**.
-    ![](https://i.imgur.com/9YI7A27.png)
+    ![image](https://imgur.com/Q0xgBbH.png)
 2. Enter a **Name** for the formula in the tab that appears.
     ![](https://hackmd.io/_uploads/BkRYoJqS3.png)
 3. Add the required formula using entities like calculating values in a column, calculating values in a specific cell, adding integers or arithmetic operators.
@@ -25,7 +25,7 @@ To add a formula to a column, follow these simple steps:
     ![](https://hackmd.io/_uploads/ry64oJcr3.png)
     - Complete the formula with numbers and operators **+, -, *, /, ()**.
     - Click **Next**.
-    ![](https://hackmd.io/_uploads/SkDlsk9B3.png)
+    ![image](https://imgur.com/CYtDAC3.png)
 
 4. You can add multiple formula columns following the same steps measured above. 
 
@@ -33,13 +33,13 @@ To add a formula to a column, follow these simple steps:
 
 The summarized table will now have a new column with the calculated formula values. You can edit or delete this data as needed by clicking on the new column name.
 
-![](https://i.imgur.com/Ru1zaDZ.png)
+![image](https://imgur.com/hsS3KsT.png)
 
 ### Save the report 
 
 Click **Save query** to save this as a new report or add it to the existing one. 
 
-![](https://i.imgur.com/hoPwKin.png)
+![image](https://imgur.com/b9IVjeS.png)
 
 
 ## Common formulas that can be applied on summarized tables

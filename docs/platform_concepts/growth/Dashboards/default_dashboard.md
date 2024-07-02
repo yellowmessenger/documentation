@@ -22,7 +22,7 @@ In addition to the default filter, each dashboard offers various other filters. 
 
 -------
 
-**Duplicate/clone dashboard**
+**Duplicate/clone dashboards**
 
 You can duplicate a dashboard by clicking the **Duplicate** button, allowing you to save the default dashboard as a *custom* dashboard with new name and description.
 

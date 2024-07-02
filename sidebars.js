@@ -993,7 +993,6 @@ module.exports = {
             ]
           },
 
-          "platform_concepts/growth/dataexplorer/customtables",
 
           {
             type: "category",
@@ -1011,6 +1010,8 @@ module.exports = {
             collapsed: true,
             items: [
            "platform_concepts/growth/default_reports",
+           "platform_concepts/growth/dataexplorer/customtables",
+
             "platform_concepts/growth/dataexplorer/savedreportsactions",
             ],
           },
