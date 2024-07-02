@@ -8,6 +8,8 @@ In Insights > Dashboard, you can see the default dashboards created by yellow.ai
 To view the Dashboards page, on the left navigation bar, click  **Insights** > **Dashboards**. 
 
 
+**Date filter for default dashboard**:
+
 You can filter default dashboard data by date range.
 
 To filter data by duration, navigate to **Insights** > **Dashboard** and use the Date filter to select your preferred date range. This date range selection will apply to all the reports of the dashboard.
@@ -16,6 +18,15 @@ To filter data by duration, navigate to **Insights** > **Dashboard** and use the
    ![](https://i.imgur.com/NztrxaE.png)
    
 In addition to the default filter, each dashboard offers various other filters. Refer to the respective section for more details on these additional filters.
+
+
+-------
+
+**Duplicate/clone dashboard**
+
+You can duplicate a dashboard by clicking the **Duplicate** button, allowing you to save the default dashboard as a *custom* dashboard with new name and description.
+
+![image](https://imgur.com/VlxW3fh.png)
 
 -------
 
@@ -206,11 +217,3 @@ The Email Tickets Dashboard provides comprehensive insights into email ticket pe
 5. **Average Email Ticket Response Time by day:** This report calculates the average response duration for email tickets on each day, allowing you to evaluate the timeliness of responses over time.
 6. **Email Ticket FRT SLA Split:** This report splits email tickets based on compliance with the First Response Time (FRT) Service Level Agreement (SLA), helping you identify areas where SLAs are met or missed.
 7. **Email Ticket Resolution SLA Split:** This report splits email tickets based on compliance with the Resolution Time SLA, allowing you to evaluate the effectiveness of resolution processes against SLA targets.
-
--------
-
-## Duplicate dashboard
-
-You can duplicate a dashboard by clicking the **Duplicate** button, allowing you to save the default dashboard as a *custom* dashboard with new name and description.
-
-![image](https://imgur.com/VlxW3fh.png)
