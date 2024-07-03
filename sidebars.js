@@ -1247,6 +1247,7 @@ module.exports = {
           label: "Tools & Utilities",
           collapsed: true,
           items: [
+            "platform_concepts/appConfiguration/appstore",
             "platform_concepts/appConfiguration/atlassian",
             "platform_concepts/appConfiguration/aws-s3",
             "platform_concepts/appConfiguration/azure-ad",
@@ -1533,6 +1534,7 @@ module.exports = {
       label: "2024 updates",
       collapsed: true,
       items: [
+        "updates/2024/may2024",
         "updates/2024/april24",
         "updates/2024/march2024",
         "updates/2024/feb2024",
