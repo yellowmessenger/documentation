@@ -2,6 +2,7 @@
 title: Using voice input nodes(prompt) to build a voice bot 
 sidebar_label : Using voice input nodes  
 ---
+
 The voice input node offers added features that enhance the performance of voice bots. Building voice bots using the "Voice input" node improves conversational experiences with a more natural and human-like interaction style.
 
 

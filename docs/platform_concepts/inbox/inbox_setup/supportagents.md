@@ -20,11 +20,11 @@ In this article, you will learn how to accept/add inbox roles.
 
 - There are two major roles to access the inbox module, **Inbox Admin** and **Inbox Agent**. **Inbox Supervisor** role can be provided to an inbox agent based on the industry requirement. 
 - Incoming live chats and email tickets (from the customers) are assigned only to the **Inbox agents** (support agents).
-- **Inbox agents** will have access to the **chats/tickets/analytics/performance** to help understand and resolve queries in Inbox.
+- **Inbox agents** will have access to their **chats/tickets/analytics/performance** to help understand and resolve queries in Inbox.
 - Other modules in the yellow.ai platform such as **Studio**, **Channels**, etc. will not be visible to the **Inbox Admin/Agent**.
-- If you have **Admin** access(to the bot), you can give yourself the **Inbox Agent/Inbox Admin** access to explore the Inbox functionalities. In the **Users** tab, **Edit** your row to add **Inbox agent** access along with **Inbox admin** access.
+- If you have **Admin** access(to the bot), you can give yourself the **Inbox Agent/Inbox Admin** access to explore the Inbox functionalities. From settings, click **Access control** > **Edit** your row to add **Inbox agent** access along with **Inbox admin** access.
 
-    ![](https://i.imgur.com/ZFp5TUO.png)
+![image](https://hackmd.io/_uploads/B16_Da-DA.png)
 
 
 > Supporting document to add/accept bot access for different roles: [Access control](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
@@ -39,12 +39,11 @@ In this article, you will learn how to accept/add inbox roles.
 
 To add an inbox role, follow the below steps: 
 
-1. Open **Access Control** from the overview page. 
+1. Open **Settings** > **Access Control** from the overview page. 
 
-    ![image](https://imgur.com/YNc9blS.png)
+![image](https://hackmd.io/_uploads/rJgzD6WPR.png)
 
 2. On **Users** tab, click **+Invite users**.
-
 3. Enter **Email ID** of the use you want to invite. From the **Access control** dropdown menu select the required role (**Inbox (Agent)**/ **Inbox (Admin)**). Click **Invite**. 
     
     ![image](https://imgur.com/Xi7y0iZ.png)
@@ -104,3 +103,6 @@ To join the inbox team, follow the steps below:
 
 
 
+:::note
+If the user has access to the agent role, they will log out after 8 hours of inactivity from the last time the `session?refresh=true` API is called for the user.
+:::
