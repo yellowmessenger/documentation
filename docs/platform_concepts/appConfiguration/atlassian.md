@@ -91,7 +91,7 @@ The Atlassian integration enables bot to perform the following actions:
 
 ### Managing Atlassian actions through bot conversations
 
-1. In the Development/Staging environment, go to **Studio** > **Build** > and flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) where you want to access Atlassian functions.
+1. In the Development/Staging environment, go to **Studio** > **Build** > and [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) where you want to access Atlassian functions.
 2. When adding a node, choose **Integrations** > **Atlassian**.
 
    ![](https://i.imgur.com/qRWOLaM.png)
