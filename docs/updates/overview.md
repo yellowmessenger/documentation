@@ -26,23 +26,23 @@ You might have noticed that while these reports were informative and accurate, t
 
 #### Key upgrades
 
-1. All Reports are migrated to [Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#default-dashboard). 
+1. All Reports are migrated to [Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard). 
 2. Metrics/widgets are moved to default reports labeled as *Created by Yellow.ai*.
 3. You can **clone** default reports and dashboards for personalized drill-down operations.
-4. [Custom reports and dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#create-custom-dashboards) are available on custom tab.
+4. [Custom dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/custom_dashboards) and reports are available on custom tab.
 
 > You will soon be able to setup **Custom alerts** on these reports.
 
 
 ### New and improved pages 
 
-We've elevated the **Dashboards** and **Data Explorer** features to the heart of the Insights module. All the previous reporting users had access to has now been consolidated into the **[Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#default-dashboard)** section of Insights. 
+We've elevated the **Dashboards** and **Data Explorer** features to the heart of the Insights module. All the previous reporting users had access to has now been consolidated into the **[Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard)** section of Insights. 
 
 Don't worry—every metric you used to refer to from those screens is still available on our platform, now organized under dashboards labeled **Created by Yellow.ai**.
 
 **Default reports**
 
-[Default reports](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#default-dashboard) give you access to the underlying data and parameters, allowing you to tailor them to your analytics needs. They can serve as a starting point for building complex queries or be used out of the box for basic insights. Additionally, you can clone our [Default Reports](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#default-dashboard) and Dashboards to incorporate custom drill-down operations.
+[Default reports](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard) give you access to the underlying data and parameters, allowing you to tailor them to your analytics needs. They can serve as a starting point for building complex queries or be used out of the box for basic insights. Additionally, you can clone our [Default Reports](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard) and Dashboards to incorporate custom drill-down operations.
 
 ![image](https://imgur.com/Xd26lSE.png)
 
@@ -209,3 +209,17 @@ Action Required
 * **For Agents**: No specific action is required from agents. These changes will be applied automatically.
 * **For Group Supervisors**: Supervisors should review their group's tickets and ensure they are aware of their permissions.
 * **For Admins**: Admins should ensure that they are aware of the continued breadth of their permissions and use their rights responsibly to manage ticket assignments and transfers.
+
+
+
+***
+
+## All Settings Under One Roof! (Platform-Wide Update)
+
+Say goodbye to hunting for settings!
+
+We are centralizing all your Settings under one roof in the left navigation bar. In Phase 1, we have moved General and Engage settings previously found other areas. 
+
+Stay tuned for further enhancements in future phases!
+
+   ![setting](https://i.imgur.com/85w6imc.png)
