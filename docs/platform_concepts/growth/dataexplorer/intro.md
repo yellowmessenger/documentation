@@ -39,7 +39,7 @@ The labels Reports and Queries, Datasets, and Tables are used synonymously. Repo
 
 To create or view any of the default/custom datasets, log in to the [yellow platform](https://cloud.yellow.ai/) and open **Insights** > **Data explorer**. 
 
-![](https://i.imgur.com/RfNjgFD.png)
+![image](https://imgur.com/sLy9EZN.png)
 
 In the Data explorer section, you will find: 
 1. Data tables available by default
@@ -54,6 +54,7 @@ In the Data explorer section, you will find:
     1. Schedule to send reports via. email
     2. Add reports to the dashboard
     3. Selete a saved report
+5. Default reports created by yellow.ai and Custom reports 
 
 
 :::note

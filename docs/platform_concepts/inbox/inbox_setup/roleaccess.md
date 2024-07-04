@@ -33,3 +33,24 @@ Following features are available for Inbox Admin/Supervisor/Agent roles :
 |**Contacts**||||
 |Create, Read, Update, and Delete contacts|:x:|:heavy_check_mark:|:heavy_check_mark:| 
 
+
+:::note
+
+**Agent permissions**:
+
+In both Chat and Email tickets, agents will not have the ability to:
+* Update ticket details of other agents or unassigned tickets.
+* Send messages on other agents or unassigned tickets.
+* Transfer tickets assigned to other agents or unassigned tickets to other agents.
+* Assign tickets that are either assigned to other agents or unassigned.
+* Perform any other ticket-related updates on tickets not assigned to them or unassigned tickets.
+
+**Group supervisor permissions**:
+
+In both Chat and Email tickets, agents with Group Supervisor access can:
+* Update ticket details for tickets within their supervision group.
+* Send messages on tickets within their supervision group.
+* Transfer and assign tickets within their supervision group.
+* Manage unassigned tickets that belong to their supervision group.
+
+:::

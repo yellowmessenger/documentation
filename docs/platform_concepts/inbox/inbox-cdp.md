@@ -94,8 +94,8 @@ Learn more about UserIDs [here](https://docs.yellow.ai/docs/platform_concepts/en
 
 After settling on a userId for your bot, the subsequent action is to commence tracking it within your **Studio** flows. Depending on your bot version, you might encounter one of three scenarios:
 
-1. Set userId via. conversation settings
-2. Set userId using the user properties (variable)
+1. Set userId using the user properties (variable)
+2. Set userId via. conversation settings
 
 :::info
 
@@ -110,35 +110,22 @@ We recommend reaching out to your account representative or contacting Yellow's 
 :::
 
 
-### Set userId via. conversation settings 
-
-If you can find the **User identification flow** setting in **Studio** > **Build** > **Conversation Settings** > **User identification**, [follow the steps](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow#understand-how-user-identification-flow-works) mentioned here to set up the user identification flow. 
-
-![](https://hackmd.io/_uploads/HybbtVuya.png)
-
-After setting up the user identification flow, use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) instead of using regular journey or global variables.
-![](https://hackmd.io/_uploads/SkeqhuEd1T.png)
-
-<img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
 
 ### Set userId using the user properties
 
 While building flow, configure: 
 
 1. Add a prompt node to fetch a value to be considered as the unique ID (email, phone number, etc.). 
-2. Save the response in a variable. 
-3. Use variable node to assign the entered variable to the User properties **UserID**.
-4. Add the next steps and complete the flow. 
 
-**Flow for new users**: 
+> To efficiently manage user information and avoid repeatedly asking for the same details, store basic user information (such as name and location) and contact details (such as email and phone number) using a unique User ID. This User ID helps identify the user across multiple channels and as a key to match and retrieve user information, ensuring a seamless and consistent experience.
 
-![image](https://hackmd.io/_uploads/rJ7sORY8C.png)
-![image](https://hackmd.io/_uploads/B1Zp_RYUC.png)
+2. If the UserID matches with an existing userID:
+    - Connect to Raise ticket node directly (without asking for other details)
+    - Link the new ticket with the previously opened chat ticket for this userID (user). This helps in retrieving previously collected information, making the interaction smoother and non repetitive. 
+3. If the UserID does not match with any existing userID: 
+    - Fetch necessary details required for the new chat ticket creation and store them for future reference.
+    - Connect a Raise ticket node and raise a new ticket. 
 
-**Flow for existing users**: 
-
-![image](https://hackmd.io/_uploads/B1nROCK8A.png)
-![image](https://hackmd.io/_uploads/SkRbtCFIA.png)
 
 
 <!--
@@ -169,6 +156,18 @@ If the above steps are not followed, contact card and the old UI will be display
 
 
 -->
+
+
+### Set userId via. conversation settings 
+
+If you can find the **User identification flow** setting in **Studio** > **Build** > **Conversation Settings** > **User identification**, [follow the steps](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow#understand-how-user-identification-flow-works) mentioned here to set up the user identification flow. 
+
+![](https://hackmd.io/_uploads/HybbtVuya.png)
+
+After setting up the user identification flow, use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) instead of using regular journey or global variables.
+![](https://hackmd.io/_uploads/SkeqhuEd1T.png)
+
+<img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
 
 
 ---

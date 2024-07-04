@@ -49,21 +49,21 @@ When using the filters option, you can apply filters to any of the available col
     - You can search for the column name. 
     - For each filter, you can add a conditon and the value. 
 3. Click **Apply filter**.
-    ![](https://i.imgur.com/emPZU07.png)
+    ![image](https://imgur.com/CxjFRAo.png)
 
 ### Download filtered data as a CSV file
 
 You can filter data by a single column value or a combination of column values. To download the data generated at any step, simply click on **Actions > Export as CSV** and it will be saved as a CSV file on your local system.
 
-![](https://i.imgur.com/4wmoCjT.png)
+![image](https://imgur.com/QTRWcJr.png)
 
 ### Save filtered data as reports 
 
-Once you have applied filters, a button labeled **Save query** will appear. Click on this button to save the filtered data as a saved report. This report can then be accessed under the **Saved reports** section every time you open the data explorer, without the need to repeat all the filtering steps again.
+Once you have applied filters/summarization, a button labeled **Save query** will appear. Click on this button to save the filtered data as a saved report. This report can then be accessed under the **Saved reports** section every time you open the data explorer, without the need to repeat all the filtering steps again.
 
 > Learn more about actions available on [Saved reports](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions).
 
-![](https://i.imgur.com/PM6HYDu.png)
+![image](https://imgur.com/QRizLWe.png)
 
 
-> You can also summarize and visualise this data, steps are explained in further sections. 
+> You can also visualise this data, steps are explained in further sections. 

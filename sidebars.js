@@ -100,7 +100,7 @@ module.exports = {
   ],
 },    
 // end of inbox 
-
+ 
 //insights 
 {
   type: "category",
@@ -936,7 +936,19 @@ module.exports = {
 
   collapsed: true,
   items: [
-    "platform_concepts/growth/dashboards",
+
+    //Dashboards
+    {
+      type: "category",
+      label: "Dashboards",
+      link: {type: 'doc', id: 'platform_concepts/growth/Dashboards/dashboardintro'},
+      collapsed: true,
+      items: [
+        "platform_concepts/growth/Dashboards/custom_dashboards",
+        "platform_concepts/growth/Dashboards/default_dashboard",
+      ]
+    },
+
     // "platform_concepts/growth/overview",
     // "platform_concepts/growth/voiceoverview",
     
@@ -981,7 +993,6 @@ module.exports = {
             ]
           },
 
-          "platform_concepts/growth/dataexplorer/customtables",
 
           {
             type: "category",
@@ -999,6 +1010,8 @@ module.exports = {
             collapsed: true,
             items: [
            "platform_concepts/growth/default_reports",
+           "platform_concepts/growth/dataexplorer/customtables",
+
             "platform_concepts/growth/dataexplorer/savedreportsactions",
             ],
           },

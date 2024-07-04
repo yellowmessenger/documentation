@@ -48,13 +48,13 @@ Don't worry—every metric you used to refer to from those screens is still avai
 
 Our Default Dashboards cover the following use cases:
 
-* [Voice](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#voice)
-* [Bot performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance)
 * [User traffic](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#user-traffic)
+* [Bot performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance)
+* [Generative AI](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#generative-ai)
 * [Inbox chats](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#inbox-chats)
 * [Inbox agent performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#inbox-agent-performance)
-* [Generative AI](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#generative-ai)
 * [Email tickets](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#email-tickets-dashboard)
+* [Voice](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#voice)
 
 > We plan to support even more curated reports as we develop new features and expand our data and analytics capabilities.
 
