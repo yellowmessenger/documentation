@@ -87,7 +87,8 @@ These restrictions apply to both chat tickets and email tickets.
 * **Improved Accountability**: Clear demarcation of responsibilities ensures that agents are accountable for the tickets assigned to them, fostering a more organized and efficient workflow.
 * **Effective Supervision**: Ensuring that group supervisors can effectively handle their team's tickets allows for better oversight and management within specific groups.
 * **Simplified Workflow Management**: Admins retain full control over ticket management, allowing for efficient oversight and delegation.
-Action Required
+
+### Action Required
 * **For Agents**: No specific action is required from agents. These changes will be applied automatically.
 * **For Group Supervisors**: Supervisors should review their group's tickets and ensure they are aware of their permissions.
 * **For Admins**: Admins should ensure that they are aware of the continued breadth of their permissions and use their rights responsibly to manage ticket assignments and transfers.

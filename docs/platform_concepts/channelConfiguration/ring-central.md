@@ -1,6 +1,6 @@
 ---
-title : Ring Central
-sidebar_label : Ring Central
+title : RingCentral Integration
+sidebar_label : RingCentral Integration
 ---
 
 Integrate your RingCX Account with IVA Professional to allow agents on RingCentral to leverage IVA Professional's AI capabilities and effortlessly answer live chat queries from users.
@@ -97,7 +97,7 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
    ![](https://i.imgur.com/3dB2kBb.png)
 
 * **Name**: Provide a name to the Virtual Agent.
-* **Role**: Auto-populated by the Ring Central platform as **Virtual Agent Role**.
+* **Role**: Auto-populated by the RingCentral platform as **Virtual Agent Role**.
 * **First Name**: Provide a first name to your agent.
 * **Last Name**: Provide a last name to your agent.
 * **Channels**: Choose the channel created in [this](#create-a-channel) step.
@@ -185,13 +185,13 @@ You can also [create an intent](https://docs.yellow.ai/docs/platform_concepts/st
 
 | Field name | Data type | Description | Sample value |
 |------------|-----------|-------------|--------------|
-| Live chat agent | - | Choose **Ring Central Live Chat** in the drop-down | - |
+| Live chat agent | - | Choose **RingCentral Live Chat** in the drop-down | - |
 | Message after ticket assignment | String | The message that will be displayed to the end user after a ticket is successfully assigned to an agent | Requesting live agent connection. |
 | Name | String | Name of the end user | John |
 | Mobile | String | Mobile number of the end user | 9876543210 |
 | Email | String | Email address of the end user. This is a mandatory field | test@gmail.com |
 | Query | String | The subject/topic/reason why the ticket was created | I have a concern regarding my flight ticket |
-| Ring central category ID | String | The ID of the category to which the chat should be transferred, click [here](#fetch-category-id) for the steps. | 123abc1abc2abc3abc4abc5abc6 |
+| RingCentral category ID | String | The ID of the category to which the chat should be transferred, click [here](#fetch-category-id) for the steps. | 123abc1abc2abc3abc4abc5abc6 |
 
 You can enable **Advanced Options** to set the priority, auto-translation, custom fields, tags and department.
 
