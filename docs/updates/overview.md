@@ -21,7 +21,9 @@ For comprehensive release details, refer to this [link](https://docs.yellow.ai/d
 3. Option to **clone** default reports and dashboards for personalized drill-down operations.
 4. [Custom dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/custom_dashboards) and reports are available on custom tab.
 
-> You will soon be able to setup **Custom alerts** on these reports.
+:::info
+ You will soon be able to setup **Custom alerts** on these reports.
+:::
 
 ### New screens introduced
 
@@ -46,7 +48,7 @@ We will be migrating them to **Data explorer** in the **upcoming release**:
 You will be able to [export data](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/defaulttables#download-filtered-data-as-a-csv-file) from both Default and Custom reports. You can also [schedule report downloads](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#1-schedule-a-report). 
 
 
-For detailed release information, [check out this link](https://docs.yellow.ai/docs/updates/2024/insightsrevamp).
+For detailed release information, [check out this link](/docs/updates/2024/insightsrevamp).
 
 
 
@@ -85,7 +87,8 @@ These restrictions apply to both chat tickets and email tickets.
 * **Improved Accountability**: Clear demarcation of responsibilities ensures that agents are accountable for the tickets assigned to them, fostering a more organized and efficient workflow.
 * **Effective Supervision**: Ensuring that group supervisors can effectively handle their team's tickets allows for better oversight and management within specific groups.
 * **Simplified Workflow Management**: Admins retain full control over ticket management, allowing for efficient oversight and delegation.
-Action Required
+
+### Action Required
 * **For Agents**: No specific action is required from agents. These changes will be applied automatically.
 * **For Group Supervisors**: Supervisors should review their group's tickets and ensure they are aware of their permissions.
 * **For Admins**: Admins should ensure that they are aware of the continued breadth of their permissions and use their rights responsibly to manage ticket assignments and transfers.
