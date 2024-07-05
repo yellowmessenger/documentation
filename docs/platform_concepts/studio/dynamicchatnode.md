@@ -192,7 +192,7 @@ The Failure setting allows you to specify messages to be shown when the bot take
  <img src="https://i.imgur.com/CxgtfNa.png" alt="drawing" width="75%"/>
 
 1. **Enable retries**: Enable this option to allow the bot to show a maximum of two failure messages before switching to the fallback flow.
-2. **Configure timeout time**: This option allows you to  set the exact duration after which the bot should time out.
+2. **Configure timeout time**: This option allows you to set the exact duration (in seconds) after which the bot should time out. 
 3. **Max limit of conversations**: Set the maximum number of conversations before moving to fallback if the conversation is still not over.
 4. **Restrict ill-formatted responses**: Enable this option to avoid any unformated response from LLMs. 
 
