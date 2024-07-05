@@ -220,7 +220,7 @@ To retrieve the data stored in a specific variable, you need to fetch the variab
 
   ![](https://i.imgur.com/RudXA5G.png)
 
-3. If the data is array/object, you cannoy display them directly. You need to use a syntax to filter out the required data. Refer to the following table for syntaxes to use depending on the data type.
+3. If the data is array/object, you cannot display them directly. You need to use a syntax to filter out the required data. Refer to the following table for syntaxes to use depending on the data type.
 
 | Datatype | Syntax |
 |----------|--------|

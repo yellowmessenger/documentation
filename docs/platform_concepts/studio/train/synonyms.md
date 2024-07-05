@@ -98,7 +98,7 @@ You can test your synonyms via:
 
 You can test your flows to check whether the bot is recognizing the synonyms. To know more how to test your flow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow).
 
-   ![](https://imgur.com/ihcpSxd.png)
+   <img src="https://imgur.com/ihcpSxd.png" alt="drawing" width="40%"/>
 
 
 
