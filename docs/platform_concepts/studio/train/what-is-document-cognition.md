@@ -24,7 +24,7 @@ In this article, you will learn:
 
 
 
-## <a name="uc"></a> 1 Use case
+##  1. Use case
 
 :::note
 

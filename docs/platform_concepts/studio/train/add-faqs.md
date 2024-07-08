@@ -4,208 +4,197 @@ sidebar_label : FAQ Bots
 tags: [bot answers questions, faq bot, bot to answer questions ,bot that can answer any question, question answer bot, bot that answers questions, question bot]
 ---
 
-FAQ bots are populated with a set of common questions and corresponding answers, and they use natural language processing (NLP) to understand and respond to user inquiries. FAQ chatbots can be integrated into websites, messaging platforms, and mobile apps to provide 24/7 customer support and improve user engagement.
+Adding FAQs to the chatbot improves user experience by providing self-service support to users to find answers to their questions. FAQs are trained to recognize various forms of questions to understand natural language and respond to user inquiries.
 
+FAQs can used to assist users with common queries and provide answers to frequently asked questions in messaging platforms, mobile apps to provide 24/7 customer support, and websites to improve user engagement.
 
-In this article, you will learn:
+**Key features of FAQ bots:**
 
-1. [Why have an FAQ bot?](#1-why-choose-a-faq-bot-over-a-faq-page)
-2. [How to add FAQs?](#21-add-faqs-to-bot)
-3. [How to add multiple FAQs?](#22-add-faqs-in-bulk)
-4. [ Multilingual FAQ bots](#3-create-multilingual-faq-bots)
-5. [How to train the bot with FAQs?](#-4-train-and-test-faqs)
- 
+* **Question recognition**: FAQ are trained to recognize various forms of questions, allowing users to ask questions in natural language rather than using specific commands.
+* **Self-service support**: FAQ offer self-service support by enabling users to find answers to their questions
+* **Response generation**: FAQ bots generate responses based on the question that is trained. Responses can include text, links, images, or other multimedia elements to provide answers to user queries.
 
-----
-## 1. Difference between FAQ bot and FAQ page
+## Create FAQs
 
-1. **Interactivity**: Chatbots allow users to interact with the information in a conversational manner, rather than just reading through a static page. This makes the experience more engaging and can help users find the information they need more quickly and easily.
+You need to create a bot with FAQ to provide a self-serve support to your users.
 
-2. **Personalization**: Chatbots can provide a personalized experience by asking questions and tailoring the information they provide based on the user's responses. This can help users find the information they need more quickly and efficiently.
+### Add FAQs to bot
 
-3. **Speed**: Chatbots can provide answers to simple questions almost instantly, which can save users time compared to searching through a long FAQ page. 
+To create FAQs for your bot and provide self-serve support to your users, follow these steps: 
 
-4. **Analytics**: Chatbots can collect data on user interactions, such as the questions asked and the answers provided, which can help organizations improve their FAQ content over time.
+### Add FAQs under Default category
 
-Overall, FAQ chatbots offer a more dynamic, personalized, and efficient way for users to find the information they need compared to traditional FAQ pages.
+To add FAQs under default category, follow these steps:
 
----
+1. Go to **Studio** > **Train** > **FAQs** > **+ Add new question**. 
 
-## <a name="add"></a> 2. Create FAQ bot
+   ![](https://imgur.com/voP4aaJ.png)
+   
+2. Enter the **Question** and **Default response**, then click **Add**. 
 
-The following are the steps to create a bot with FAQ support
+     <img src="https://imgur.com/t0wMrZx.png" alt="drawing" width="80%"/>
 
-### 2.1 Add FAQs to bot
+* The added question will be displayed under the **Default category**.
 
-1. To add FAQs one by one, follow the given steps:
+    ![](https://imgur.com/AE3PbC8.png)
+    
+### Add FAQs under FQAs category
 
- Open **Studio** > **Train** > **FAQs**. 
+To add the FAQs under FQAs category follow the same steps in the [Add FAQs under Default category](#) section.
 
- ![](https://i.imgur.com/oTTrw8K.png)
+### Create a category and add FAQs
 
+To a create a category and add the FAQs, follow these steps:
 
-2. You can add a **Default Category** to categorise the FAQs. 
-    - Click **+**. 
-    - Add a **Category name**.
-    - Click **Create category**. 
+1. Click on the **+** icon.
 
- ![](https://i.imgur.com/dIckuva.png)
+2. Enter the **Category name** and click **Create category**. 
 
-3. Select the category name (or the default category) and add FAQs under it.
-    - Click **Add new question**.
-    - Add a **Question** and a **Default** response. 
-    - Click **Add**. 
+     ![](https://imgur.com/jWL0gDP.png)
+     
+* You can view the created category under the Default category drop-down.
 
- ![](https://i.imgur.com/OSPqF7t.png)
+     <img src="https://imgur.com/7Xuj4x0.png" alt="drawing" width="40%"/>
 
-4. You can add more than one response by clicking **Add multiple text for randomizing**. Only one of these responses will be displayed during the conversation. 
+3. Select the category name to add FAQs under it. Click **Add new question**.
 
- ![](https://i.imgur.com/kLF1VuW.png)
+    ![](https://imgur.com/vsfeanW.png)
 
-5. You can also use Text, Images, Videos, Files or even a flow as a response. 
+4. Add a **Question** and a **Default** response, then click **Add**. 
 
- ![](https://i.imgur.com/ob1EKl1.jpg)
+    <img src="https://imgur.com/Pkgllwa.png" alt="drawing" width="80%"/>
 
-6. Multiple FAQs can be added in the same way. 
+5. You can add more than one response by clicking **Add multiple text for randomizing**. Note that, only one of these responses will be displayed during the conversation. 
+
+    ![](https://imgur.com/qNheaMG.png)
+
+6. Click **+ Add answer** to add Text, Images, Videos, Files or even a flow as a response. 
+
+    ![](https://imgur.com/WpTguwx.jpg)
+
+* You can add multiple FAQs by following the above steps. 
 
 :::note
 To display custom links along with your FAQs, create a flow that displays the corresponding custom links and choose that flow in **Execute flow** option.
 :::
 
----
+### Add FAQs in bulk
 
-### 2.2 Add FAQs in bulk
+#### Create CSV file
 
-To upload multiple FAQs at once, you can use the bulk import option
-
-1. Open **Studio** > **Train** > **FAQs**. Click **Import** on the **Bulk manage** dropdown. 
-
- ![](https://i.imgur.com/H8nHsmC.png)
-
-
-2. Click **Download format here to get started** link to download the CSV template in which you want to enter the FAQs.
-
- ![](https://i.imgur.com/g4nXAw9.png)
-
-
-3. Open the downloaded file in Excel or other spreadsheet editor.
-
- ![FAQs Structure](https://cdn.yellowmessenger.com/7rPR31TWzQCY1615886956450.png)
-
-
-:::note
-The column headers must in the format: "category", "question", "variations", "answer_en", "answer_hi" and so on. For any configured language, header format is "answer_LanguageIsoCode". 
-:::
-
-4. Add FAQs in the respective columns: 
-
-    - **Category**: Type the category to which you want to add these FAQs. Make sure that the categories you've entered here exist on the platform.
-    - **Question**: You can enter the question based on your requirement.
-    - **Variation**: Add multiple variations to the question. The first question and variation will remain the same even if you add multiple variations.
-    - **Answer_en**: Answer to the respective question. Here, 'en' in `answer_en` stands for English. You can add answers in different languages too. For example, to add an answer in Hindi, you can add a column header as `answer_hi`. 
-
- ![](https://i.imgur.com/8szvhAn.jpg)
-
-
-5. **Download** / **Save** the file as CSV file. 
-
-:::tip
 Before you upload the file on the platform, ensure that the column headers are correct. Open the CSV file in any text editor like VS Code, Sublime, or vim and check if the column headers are included in quotes.
 Example: In the image below, on line 1, column headers are not wrapped in quotes. 
 
-![Modify CSV file headers](https://cdn.yellowmessenger.com/rGQEGn9NZbml1615887097398.png)
+   ![Modify CSV file headers](https://cdn.yellowmessenger.com/rGQEGn9NZbml1615887097398.png)
 
 You can add quotes manually and save the changes. 
 
-![Modify CSV file headers in an editor](https://cdn.yellowmessenger.com/2d5K8sdYcT0B1615887133256.png)
+   ![Modify CSV file headers in an editor](https://cdn.yellowmessenger.com/2d5K8sdYcT0B1615887133256.png)
 :::
 
-6. Continuing from step 2, Click **+Upload file** and select the file from your local system. 
+6. Continue from step 2, Click **+Upload file** and select the file from your local system. 
 
- ![](https://i.imgur.com/bA3q9an.png)
+   ![](https://i.imgur.com/bA3q9an.png)
 
 7. After the file is uploaded, click **Upload**.
 
- ![](https://i.imgur.com/3GyWyQe.jpg)
+    ![](https://i.imgur.com/3GyWyQe.jpg)
+    
+* Once the file uploaded, the FAQs will be added to your bot.
+
+
+#### Upload CSV file
+
+To upload multiple FAQs at once, you can use the bulk import option.
+
+1. Go to **FAQs** > **Bulk manage**. Select **Import** from the **Bulk manage** dropdown. 
+
+    ![](https://imgur.com/mEh4y3I.png)
+
+2. Click **Download format here to get started** link to download the CSV template in which you want to enter the FAQs.
+
+   ![](https://i.imgur.com/g4nXAw9.png)
+
+3. Open the downloaded file in Excel.
+
+   ![FAQs Structure](https://cdn.yellowmessenger.com/7rPR31TWzQCY1615886956450.png)
+
+
+:::note
+Ensure that the column headers must in the format: "category", "question", "variations", "answer_en", "answer_hi", and so on. For any configured language, header format is "answer_LanguageIsoCode". 
+:::
+
+4. Add FAQs data in the respective columns: 
+
+    - **Category**: Type the category to which you want to add these FAQs. Make sure that the categories you have entered here exist on the platform.
+    - **Question**: Enter the question based on your requirement.
+    - **Variation**: Add multiple variations to the question. The first question and variation will remain the same even if you add multiple variations.
+    - **Answer_en**: Provide the answer to the respective question. Here, 'en' in `answer_en` stands for English. You can add answers in different languages too. For example, to add an answer in Hindi, you can add a column header as `answer_hi`. 
+
+      ![](https://i.imgur.com/8szvhAn.jpg)
+
+
+5. Save the file in CSV file format. 
 
 
 
-## 3. Create multilingual FAQ bots
+## Create multilingual FAQ bots
 
-To add FAQs for multi-lingual bots, follow the given steps:
+You can the add FAQs in multiple languages, follow the given steps:
 
-### 3.1 Configure the languages
+### Configure languages
 
-1. Navigate to **Studio** and click drop-down.
+1. Navigate to **Studio** > **Build** > **Flows** > **Conversation settings**.
 
- <img src="https://i.imgur.com/zzuN3m8.png" alt="drawing" width="90%"/>
+   ![](https://imgur.com/2OzMDH8.png)
    
+2. To add FAQs for multi-lingual bots, click **Language settings** to add the languages that you want to add to your bot. 
 
-2. To add FAQs for multi-lingual bots, in **Language settings**, click on Edit icon to add the languages that you want to add to your bot. 
-
- <img src="https://i.imgur.com/W24tVZC.png" alt="drawing" width="90%"/> 
+    <img src="https://imgur.com/wogF8tg.png" alt="Converstion settings" width="50%"/>
    
 
 3. In **Add Language** dialog box, select the languages from the drop-down and click **Save**.
 
- <img src="https://i.imgur.com/Eda9KcV.png" alt="drawing" width="90%"/>
+    <img src="https://imgur.com/39PjTGm.png" alt="drawing" width="60%"/>
 
-4. Your bot's language settings have been successfully updated. You can [add FAQs](#1-add-faqs-add-faqs) in different languages 
-
-**Enable autodetect:**
-- To automatically identify the language of your bot enable autodetect under **Tool** section, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#221-behaviour) to know the steps.
-
-### 3.2 Add FAQs to multilingual bots
-
-1. **Add FAQs manually**
-    - You can [add FAQs](#1-add-faqs-add-faqs) in different languages by typing the questions in the required language in the Question variation field.
-
- ![](https://i.imgur.com/GoW8gQx.png)
+4. Your bot's language settings have been successfully updated. You can [add FAQs](#1-add-faqs-add-faqs) in different languages.
 
 
-2. **Add FAQs in bulk:**
-
-   - When you download the CSV template file (as mentioned in the [previous section](#step2), language columns will be available. 
-
-
-   ![](https://i.imgur.com/hteoHYF.png)
-
-   - Add responses in the required columns (column names are suffixed with the [ISO code of each language](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages). 
-
-     **Example**
-
-   - For French FAQs bot, English answers are not mandatory. For those questions, you can add an answer under **answer_fr** column and leave the **answer_en** column empty.
-
-
-----
-
-## <a name="train"></a> 4. Train and test FAQs
-
-**Train**
+## Train and test FAQs
 
 After adding all the FAQs, you can train the bot to understand these FAQs by clicking [Train Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#3-train-intents). 
 
-![](https://i.imgur.com/ssuEbrW.png)
+To train intents for FAQs, follow these steps:
 
-Follow the steps below to train intents for FAQs:
+1. Click **Train** > **FAQs** > **Train intents** drop-down.  
 
-1. Click **Train** > **FAQs**.  
+   ![](https://imgur.com/bWxVxED.png)
 
- ![](https://i.imgur.com/fF87Nfk.png)
+2. In **Train your model** dialog box, select **Multilingual** and click **Train**.
 
-2. Click **Train intents** drop-down.
+    <img src="https://imgur.com/FCpE469.png" alt="Converstion settings" width="60%"/>
 
- ![](https://i.imgur.com/PB5cznr.png)
+### Test FAQs
 
-3. In **Train your model** dialog box, select **Multilingual** and click **Train**.
+After adding and training the FAQs, you can test the FAQs on the preview bot. 
 
- ![](https://i.imgur.com/8n9rDGx.png)
+To test the FAQs:
 
-**Test**
+* Go to **Build** > **Flows** > **Preview**.
 
-You can test the results on the preview bot. 
+     ![](https://imgur.com/hKjc2Kr.png)
 
- ![](https://i.imgur.com/VdXRpl4.png)
 
-----
+
+
+
+
+
+
+
+
+    
+
+
+
 

@@ -9,11 +9,11 @@ The pre-requisites for configuring the SMS outbound channel varies country-wise.
 
 For India, the pre-requisites are as follows:
 
-Share the following details with the Product team.
+Raise a ticket with the product team with the following details:
 
 1. Entity ID of the DLT account
 2. Registered SenderIDs (or Headers)
-3. Bot ID, bot URLs with environments (e.g, staging, Production)
+3. Bot ID, bot URLs with environments (e.g, staging, Production), and API keys
 
 Product team will configure the SMS channel in the platform.
 
