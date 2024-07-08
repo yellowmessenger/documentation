@@ -54,7 +54,7 @@ Choose a method and follow the below steps to create a view:
 3. The **Create view** tab will appear on the right side; provide the following details:
     - Specify a **name** for your Custom view.
     - Choose the **visibility** setting. **Only me** will display the view exclusively to admins, while **All agents** will grant access to all agents for chats assigned to them.
-    - Apply filters, such as **date range, source (channels), tags, groups, agent names, and chat statuses**.
+    - Apply filters, such as **date range, source (channels), tags, groups, agent names, chat statuses**, and **Custom fields**.
 
     ![](https://hackmd.io/_uploads/rkJTEJ1zT.png)
 
@@ -132,3 +132,10 @@ The options to edit and delete custom views are exclusively available to Inbox a
 <img src="https://hackmd.io/_uploads/H1oysNUQT.png" alt="drawing" width="50%"/>
 
 
+:::note
+- If you change the custom fields (within Settings), custom views will change and will be highlighted with a red dot. 
+- When a custom view is created with just one custom field and that custom field is deleted, that custom view will display all the tickets. Thus you are urged to delete the view.
+
+![image](https://hackmd.io/_uploads/SJdX5UfDA.png)
+
+:::

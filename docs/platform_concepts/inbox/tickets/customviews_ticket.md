@@ -55,7 +55,7 @@ Choose a method and follow the below steps to create a view:
 3. The **Create view** tab will appear on the right side; provide the following details:
     - Specify a **name** for your Custom view.
     - Choose the **visibility** setting. **Only me** will display the view exclusively to admins, while **All agents** will grant access to all agents for tickets assigned to them.
-    - Apply filters, such as **date range, source (channels), tags, groups, agent names, and ticket statuses**.
+    - Apply filters, such as **date range, source (channels), tags, groups, agent names, ticket statuses**, and **Custom fields**.
 
 ![image](https://imgur.com/km1oseI.png)
 

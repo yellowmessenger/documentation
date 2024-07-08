@@ -216,7 +216,7 @@ User 360 -
 ```
 
 
-- **Job ID**: Each export is considered as a job and has an unique job ID. 
+- **Job ID**: Each export is considered as a job and has an unique job ID. Each job ID generates one folder.
 - **User selected export start date**: userSelectedExportStartDate is the date along with the starting hour of the export. If the export is to STFP `-` is used before the mention of the start minute otherwise, `:` is used. 
 
 ``` ${exportStartDate}T${startHour}(if sftp - else :)${startMinute} ```
