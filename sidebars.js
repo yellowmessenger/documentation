@@ -921,6 +921,7 @@ module.exports = {
           
         },
         "platform_concepts/engagement/engage_faqs",
+        "platform_concepts/engagement/engage_troubleshooting",
       ],
     },
 
