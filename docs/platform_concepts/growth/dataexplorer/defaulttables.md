@@ -30,6 +30,7 @@ Following are the default datasets and their functions:
 | **Voice Bot Events** | Find insights around voice bots. Number of inbound/outbound calls, calls per user, region, call duration, etc. |
 |**Call details report** |CDR is a report of telephony data such as call duration, caller ID, called number, call status, and call type obtained from each call (bot conversation with customer). |
 | **Knowledge base report** | Analyse query resolution rates, failure reports and a dump of all queries that have been handled by Knowledge base (Studio). |
+| **Contained resolution analysis** | Analyse the conversation flow, user engagement and bot performance metrics.|
 
 :::note
 

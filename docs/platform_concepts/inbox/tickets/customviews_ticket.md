@@ -125,3 +125,15 @@ The options to edit and delete custom views are exclusively available to Inbox a
 3. Deleting a custom view is straightforward, click the delete icon and confirm the action.
 
     ![image](https://imgur.com/rSUw8Z8.png)
+
+
+
+#### Tickets custom views and custom fields 
+
+If you delete the custom fields (within Settings), custom views will change and will be highlighted with a **red dot**. Other cases to consider are:
+- When a custom view is created with just one custom field filter and that custom field is deleted, that custom view will display all the existing tickets(without any filter). Thus you are urged to delete the view or add new filters.
+- When a custom view is created with a custom field filter along with other filters and that custom field is deleted, you will find inaccurate results within the view. You can delete the view or update the filters. 
+
+                                   
+
+> To remove the warning message "Some filters were deleted, the results might not be accurate. Please review and save.", you can update the filter or create a new one by deleting the existing custom view.
