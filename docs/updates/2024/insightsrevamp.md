@@ -3,7 +3,6 @@ title: Insights Module Revamp (Phase 1)
 sidebar_label: Insights Module Phase 1 Revamp
 featured: true
 ---
-
 ## What has happened?
 We have revamped the Insights module UI to significantly cut down on legacy features and the black-box nature of our reporting based on valuable customer feedback. In this vein, we have sunset some of our old, out of the box dashboards.
 
@@ -56,8 +55,8 @@ We have curated the following new Dashboards for you:
 
 New Dashboard	| Details
 ----------- | ------------------------
-[User traffic](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#user-traffic)| Replaces the old Overview screen. Contains reports for user traffic and channel consumption.
-[Bot performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance)| Replaces the old Metrics screen. Contains reports for bot performance and accuracy.
+[Bot Overview](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#user-traffic)| Replaces the old Overview screen. Contains reports for user traffic and channel consumption.
+[Bot performance metrics](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance)| Replaces the old Metrics screen. Contains reports for bot performance and accuracy.
 [Generative AI](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#generative-ai)| New dashboard for GenAI and KB usage.
 [Inbox chats](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#inbox-chats)| New dashboard for Inbox tickets and their statuses.
 [Inbox agent performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#inbox-agent-performance)| New dashboard for Inbox agent metrics.
@@ -83,36 +82,39 @@ We've migrated the reports from the Overview screen to the 'User Traffic' and 'B
 
  ![img](https://i.imgur.com/rJHP4Z3.png)
 
-Old Report	|Dashboard| New Report | Migration Status
+Old Report	|New Dashboard| New Report | Migration Status
 ----------- |--------| -----------|------------------
-Users|User Traffic| New Users <br/>Unique Users|Completed
-Messages|User Traffic| Messages by Day| Completed
-Sessions|User Traffic| Sessions by Day| Completed
-Session Duration|User Traffic| Average Session Duration in Minutes| Completed
-Users By Country|User Traffic| Country Filter| Partially Mirated
-Users By Traffic Channel|User Traffic| Channel Filter| Partially Migrated
-Users By Device|User Traffic| Device Filter| Partially Migrated
+Users|Bot Overview| New Users <br/>Unique Users|Completed
+Messages|Bot Overview| Messages by Day| Completed
+Sessions|Bot Overview| Sessions by Day| Completed
+Session Duration|Bot Overview| Average Session Duration in Minutes| Completed
+Users By Country|Bot Overview| Country Filter| Partially Mirated
+Users By Traffic Channel|Bot Overview| Channel Filter| Partially Migrated
+Users By Device|Bot Overview| Device Filter| Partially Migrated
+User Acquisition|Bot Overview|User Traffic by Channel <br/>User Traffic by Platform  | Completed
+Messages exchanged between user and bot|Bot Overview|Messages exchanged between user and bot|Completed
+Messages exchanged between user and agent|Bot Overview|Messages exchanged between user and agent|Completed
 
    ![img](https://i.imgur.com/B8rYDdW.png)
 
-Old Report	|Dashboard| New Report | Migration Status
+Old Report	|New Dashboard| New Report | Migration Status
 ----------- |---------| -----------|------------------
-CSAT |Bot Performance| Bot Feedback| Completed
-Flow Visits | Bot Performance| Flow visits for each flow| Completed
+CSAT |Bot Performance Metrics| Bot Feedback| Completed
+Flow Visits | Bot Performance Metrics| Flow visits for each flow| Completed
 
    ![img](https://i.imgur.com/efLmMko.png[/img)
 
-Old Report	|Dashboard| New Report | Migration Status
+Old Report	|New Dashboard| New Report | Migration Status
 ----------- |---------| -----------|------------------
-Bot Accuracy|Bot Performance|Bot Accuracy|Completed
-Flow Completion Rate|Bot Performance|Flow completion rate <br/> Flow completion rate for each flow| Completed
-Deflection Rate | Bot Performance| Deflection rate by day| Completed
+Bot Accuracy|Bot Performance Metrics|Bot Accuracy|Completed
+Flow Completion Rate|Bot Performance Metrics|Flow completion rate <br/> Flow completion rate for each flow| Completed
+Deflection Rate | Bot Performance Metrics| Deflection rate by day| Completed
 
    ![img](https://i.imgur.com/NEBze9h.jpeg)
 
-Old Report	|Dashboard| New Report | Migration Status
+Old Report	|New Dashboard| New Report | Migration Status
 ----------- |---------| -----------|------------------
-Real Time User Activity|||Coming Soon
+Real Time User Activity|Bot Overview|Unique Users in the Last Minute|Completed
 User Activity by Time (heatmap)|||Coming Soon
 Whatsapp Channel Consumption|||Coming Soon
 Conversation Issues|||Coming Soon
@@ -125,15 +127,15 @@ This was a very redundant screen with hardly any differentiation from the Overvi
 
    ![img](https://i.imgur.com/7Z7QDdF.png)
 
-Old Report	|Dashboard| New Report | Migration Status
+Old Report	|New Dashboard| New Report | Migration Status
 ----------- |--------| -----------|------------------
-Users|User Traffic| New Users <br/>Unique Users|Completed
-Messages|User Traffic| Messages by Day| Completed
-Sessions|User Traffic| Sessions by Day| Completed
-Session Duration|User Traffic| Average Session Duration in Minutes| Completed
-Users By Country|User Traffic| Country Filter| Partially Mirated
-Users By Traffic Channel|User Traffic| Channel Filter| Partially Migrated
-Users By Device|User Traffic| Device Filter| Partially Migrated
+Users|Bot Overview| New Users <br/>Unique Users|Completed
+Messages|Bot Overview| Messages by Day| Completed
+Sessions|Bot Overview| Sessions by Day| Completed
+Session Duration|Bot Overview| Average Session Duration in Minutes| Completed
+Users By Country|Bot Overview| Country Filter| Partially Mirated
+Users By Traffic Channel|Bot Overview| Channel Filter| Partially Migrated
+Users By Device|Bot Overview| Device Filter| Partially Migrated
 
 
 ***
@@ -143,7 +145,7 @@ We've moved reports from this screen to the 'Bot Performance' dashboard. You can
 
    ![img](https://i.imgur.com/rdx0tol.png)
 
-Old Report	|Dashboard| New Report | Migration Status
+Old Report	|New Dashboard| New Report | Migration Status
 ----------- |--------| -----------|------------------
 Usage By Status Code|Bot Performance|API usage by status code|Completed
 API Hits | Bot Performance|API requests by day|Completed
@@ -157,10 +159,10 @@ Response Time ||| Coming soon
 
    ![img](https://i.imgur.com/rfpYUUC.png)
 
-Old Report	|Dashboard| New Report | Migration Status
+Old Report	|New Dashboard| New Report | Migration Status
 ----------- |--------| -----------|------------------
-Flows visited|Bot Performance| Flow Visits|Completed
-Flows completion rate |Bot Performance|Flow completion rate <br/> Flow completion rate for each flow|Completed
+Flows visited|Bot Performance Metrics| Flow Visits|Completed
+Flows completion rate |Bot Performance Metrics|Flow completion rate <br/> Flow completion rate for each flow|Completed
 Step-wise interactions ||| Coming soon
 
 
@@ -176,21 +178,18 @@ The ability to [export your data](https://docs.yellow.ai/docs/platform_concepts/
 
 Old Report	|Where to find this?|Alternatives| Migration Status
 ----------- |--------| -----------|------------------
-User traffic| User traffic Dashboard|New Users<br/>Unique Users<br/>Sessions<br/>Average session duration| Completed
+User traffic| Bot Overview Dashboard|New Users<br/>Unique Users<br/>Sessions<br/>Average session duration| Completed
 Real time bot activity|||Coming Soon
 User activity by time|||Coming Soon
 User acquisition|||Coming Soon
 Unique users by country|||Coming Soon
 Users by device|||Coming Soon
-Bot performance|Bot Performance Dashboard|Bot Accuracy<br/>Deflection Rate<br/>Flow Completion Rate|Completed
-Top flows visited|Bot Performance Dashboard|Flow Visits|Completed
-User feedback|Bot Performance Dashboard|Bot Feedback|Completed
+Bot performance|Bot Performance Metrics Dashboard|Bot Accuracy<br/>Deflection Rate<b/r>Flow Completion Rate|Completed
+Top flows visited|Bot Performance Metrics Dashboard|Flow Visits|Completed
+User feedback|Bot Performance Metrics Dashboard|Bot Feedback|Completed
 User by demographics|||Coming Soon
 Chat transcripts| Data Explorer| Message Events Table|Partially Migrated
 User details|Data Explorer| User Engagement Events Table|Completed
 Notification statuses by campaign ID|||Coming Soon (we will be creating a new Dashboard for Campaign Metrics)
-Flows summary|Bot Performance Dashboard|Flow completion rate for each flow| Completed
-Flow Day Wise Data|Bot Performance Dashboard|Flow visits|Completed
-
-
-
+Flows summary|Bot Performance Metrics Dashboard|Flow completion rate for each flow| Completed
+Flow Day Wise Data|Bot Performance Metrics Dashboard|Flow visits|Completed
