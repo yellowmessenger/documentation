@@ -128,6 +128,15 @@ While building flow, configure:
 
 
 
+**Raise ticket node**:
+![image (37)](https://hackmd.io/_uploads/HkX5f9pw0.png)
+
+**Functioning for existing user**: 
+![image (35)](https://hackmd.io/_uploads/rJtUZc6PA.png)
+
+**Functioning for new user**: 
+![image (36)](https://hackmd.io/_uploads/H1bDG5pwC.png)
+
 <!--
 ### Set userId in the prompt nodes
 
