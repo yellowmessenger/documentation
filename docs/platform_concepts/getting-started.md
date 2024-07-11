@@ -1,56 +1,31 @@
 ---
-title: Yellow.ai overview
+title: AI-first customer service automation for enterprises
 sidebar_label: Yellow.ai
 ---
 
-Yellow.ai is an advanced cloud-based platform designed to revolutionize the way businesses build AI bots. You can create intelligent and highly efficient bots that provide exceptional customer support experiences. 
+Yellow.ai is a leading AI-first customer service automation platform designed for enterprises. It provides dynamic AI agents that streamline customer service operations across voice, chat, and email channels. The platform supports over 35 channels and 135+ languages, offering personalized, 24/7 customer support. With seamless integration capabilities, Yellow.ai enhances agent productivity and delivers actionable insights for customer service leaders, all while maintaining enterprise-grade security and compliance.
 
-By combining the capabilities of AI and human expertise, Yellow.ai empowers you to deliver personalized interactions, automate processes, and streamline customer engagement across multiple channels.
-
-<!--
-Yellow.ai offers two different platforms:
-
-- **App**: App.yellow.ai is our **code-based platform**, catering to users who prefer a more hands-on approach. It offers a drag-and-drop interface that empowers users with advanced customization options and full control over their bot's behavior. This platform is ideal for developers or businesses with specific coding requirements or the need for highly tailored bot functionalities. All the new features will only be available on cloud platform.
-
--->
-
-Yellow.ai is a cutting-edge cloud platform that transforms how businesses build AI bots. The platform enables the creation of intelligent, efficient bots for exceptional customer support. With a fusion of AI and human expertise, Yellow.ai empowers personalized interactions, process automation, and streamlined engagement across channels.
-
-Link to the platform: https://cloud.yellow.ai
+**Link to the platform**: https://cloud.yellow.ai
 
 :::note
 We also have an App platform (app.yellow.ai), a code-based solution with limited features. However, for a comprehensive experience and enhanced benefits, we strongly recommend [migrating](https://docs.yellow.ai/docs/cookbooks/migration-guide) to our Cloud Platform. For additional support, contact your designated POC.
 :::
 
-
 --------
 
 ## Features of cloud platform
 
-
-:::info 
-Yellow.ai supports **Cloud** and **On-premise** deployment. Contact [support@yellow.ai](mailto:support@yellow.ai) for details. 
-:::
-
-### Chat bot vs. Voice bot
-
-At yellow.ai empowers users to create two types of bots, chat bot and voice bot. 
-Chat bots engage in textual conversation interfaces. Voice bots enable virtual assistants to interact with customers verbally, resolving their queries effectively.
-
 ### Build powerful AI bots with ease
 
-At Yellow.ai, we understand the importance of seamless and effective communication with your customers. Our cloud software enables you to build AI bots effortlessly, regardless of your technical expertise. You don't need to be a coding expert to create powerful bots. Our intuitive interface and **no-code approach** make bot building accessible to everyone.
+Utilize our dynamic AI agents to achieve 90% automation, providing 24/7 support and proactive solutions that reduce customer effort.
+
+At yellow.ai, we understand the importance of seamless and effective communication with your customers. Our cloud software enables you to build AI bots effortlessly, regardless of your technical expertise. You don't need to be a coding expert to create powerful bots. Our intuitive interface and **no-code approach** make bot building accessible to everyone.
+- Equip your support team with sentiment detection, coaching insights, tone changer, and other AI-powered tools to enhance their efficiency.
+- Identify events and intents from complex messages to trigger workflows for ticket creation, escalations, and more.
+
       
-[**Explore Studio (customizable bot builder) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+[**Explore Studio (customizable/AI bot builder) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
-<!--
-### Ready-made templates for quick deployment
-
-Accelerate your bot development process with Yellow.ai's **marketplace** of ready-made templates. Our templates cater to different business use cases and industries, providing you with a head start in creating bots. Simply choose the template that suits your requirements, customize it to align with your brand, and deploy your bot quickly.
-
-[**Explore Marketplace templates documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro)
-
--->
 
 ### Connect customers to human techies for support
 
@@ -59,12 +34,13 @@ Yellow.ai goes beyond automated responses by providing seamless integration with
 - Effortlessly manage live customer queries by leveraging our **Inbox** module. 
 - Connect with live agents across multiple channels, including emails and chats, using this centralized platform. 
 - One-stop solution for handling customer queries, storing FAQs, evaluating live agent metrics, and more. 
+- Integrate seamlessly with leading contact center solutions such as Salesforce, Zendesk, Genesys, and Nice, or operate independently on Yellow.ai for enhanced AI-driven agent support and ticketing.
 
 
 [**Explore Inbox (omnichannel customer support) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/inbox)
 
 
-### Run marketing campaigns 
+### Automate marketing campaigns 
 
 **Engage** empowers you to run marketing campaigns and manage bots effortlessly across multiple channels. Whether it's messages, emails, inbound or outbound campaigns, Yellow.ai provides you with the tools to engage with your customers on their preferred platforms. 
 
@@ -73,21 +49,59 @@ Yellow.ai goes beyond automated responses by providing seamless integration with
 ### Measure bot performance and gain valuable insights
 
 Understanding the performance of your bots is crucial for continuous improvement. Yellow.ai's analytics and **insights** feature provides you with detailed metrics and data to measure bot performance. Gain valuable insights into customer engagement, successful API calls, customer location, and more. With these insights, you can make data-driven decisions, optimize your bots, and enhance your overall business operations.
+Get 20+ real-time metrics with dashboards, user journey visualization, goal-based tracking, and a data explorer for informed decision-making.
+
 
 [**Explore Insights (analytics) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights)
 
 
-### Seamless integrations with third-party channels and apps
+### Integrate with third-party channels and apps
 
 Take advantage of our extensive list of 35+ **channels** available in the Channels module. Easily run your bots across multiple platforms with a simple one-time connectivity setup. Connect with your customers on their preferred channels, ensuring a seamless and personalized user experience.
 
-Yellow.ai offers seamless **integrations** with a wide range of third-party applications. Connect with your favorite tools and services to leverage their capabilities within our platform. Whether it's CRM systems, ticketing platforms, or other business tools, our integrations allow you to streamline workflows and improve efficiency.
+Yellow.ai's native Gen-AI integration framework enables swift deployment with over 150 pre-built integrations. Effortlessly connect to your existing tech stack without the need for extensive modifications, with 80% of integrations ready out-of-the-box and customizable options for a smooth and hassle-free implementation.
 
 
 [**Explore Channels documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)        
 [**Explore Integrations documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview)
 
 
+### Chat bot vs. Voice bot
+
+At yellow.ai empowers users to create two types of bots, chat bot and voice bot. 
+Chat bots engage in textual conversation interfaces. Voice bots enable virtual assistants to interact with customers verbally, resolving their queries effectively.
+
+
+### Build multi-lingual bots 
+
+Utilize AI-powered agents capable of conversing in over 135 global and regional languages.
+
+[**Learn more on languages supported :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)
+
+### 24*7 Yellow.ai support
+
+Support is exclusively provided for upgraded bots.      
+For assistance, send your queries to [support@yellow.ai](mailto:support@yellow.ai), and our dedicated executive will promptly address and resolve them.
+Our professional services help you minimize risks, ensure proper deployment from the outset, and save on additional resources and costs by getting it right the first time. Our team of experts supports you through every step, from initial setup to ongoing enhancements. Leverage our deep industry insights and best practices to achieve seamless implementation and maximize ROI.
+
+
+### Set-up on cloud and on-premise 
+
+Yellow.ai supports **Cloud** and **On-premise** deployment. Contact [support@yellow.ai](mailto:support@yellow.ai) for details.
+
+
+### Enterprise-grade security with safe AI
+
+Yellow.ai is designed with robust safeguards and systems to ensure the security of users and enterprises alike. Our platform adheres to industry-leading standards, backed by ISO, HIPAA, SOC2, and GDPR certifications. Following the principles of Responsible AI, we protect sensitive data and maintain strict compliance with security and privacy regulations.
+
+
+
+
+
+
+
+
+--------------------
 
 ## Self-help resources
 
@@ -146,9 +160,3 @@ Our extensive library of help articles is readily available to provide quick ans
 For any queries or help, contact [support@yellow.ai](mailto:support@yellow.ai). 
 :::
 
-
-## Yellow.ai support
-
-Support is exclusively provided for upgraded bots. 
-
-For assistance, send your queries to [support@yellow.ai](mailto:support@yellow.ai), and our dedicated executive will promptly address and resolve them.
