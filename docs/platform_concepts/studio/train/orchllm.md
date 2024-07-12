@@ -114,7 +114,7 @@ To configure Orchestrator LLM for a flow:
 
    ![](https://i.imgur.com/gT5aZAZ.png)
 
-3. Click on **Start** trigger, enter the **Trigger name** and **Description**, and then click **Add**. Note that you need to provide an accurate description as Orch LLM will use this information to trigger the appropriate flow based on the provided description. Know more about [guidelines for trigger descriptions](#triggers-description-guidelines).
+3. Click on **Start** trigger, enter the **Trigger name** and **Description**, and then click **Add**. Note that you need to provide an accurate description as Orch LLM will use this information to trigger the appropriate flow based on the provided description. Learn more about [guidelines for trigger descriptions](#triggers-description-guidelines).
 
     ![](https://imgur.com/joK3Bx5.png)
 
