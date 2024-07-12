@@ -400,6 +400,7 @@ module.exports = {
             "platform_concepts/studio/analyze/chat-logs",
             "platform_concepts/studio/build/bot-logs",
             "platform_concepts/studio/analyze/training-performance",
+            "platform_concepts/studio/analyze/topics",
           ],
         },
         "platform_concepts/studio/studio-faqs",
