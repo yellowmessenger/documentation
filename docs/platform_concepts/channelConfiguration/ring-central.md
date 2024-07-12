@@ -139,7 +139,7 @@ Activate identities after creating a virtual agent. Only then user information c
    ![](https://i.imgur.com/76Bmw03.png)
 
 2. In **API access token**, paste the API token copied in the previous step.
-3. In **API URL**, enter the API URL in this format ```https://{{ringcentraldomainname}}.api.lab.digital.ringcentral.com``` for example, https://test-account.api.lab.digital.ringcentral.com
+3. In **API URL**, enter the API URL in this format `https://{{ringcentraldomainname}}.api.lab.digital.ringcentral.com` for example, `https://test-account.api.lab.digital.ringcentral.com`
 4. Click **Save**.
 
 :::note
@@ -163,7 +163,7 @@ You need to paste the respective channel's script in the HTML file of your websi
 
 After connecting your IVA Professional account with RingCX, you need to design the flow based on how you want the bot to handle the user chats in RingCX account using Yellow's AI capabilities.
 
-1. Login to you [IVA Professional account](cloud.yellow.ai) and go to **Studio** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#manually-create-a-flow).  
+1. Login to you [IVA Professional account](https://cloud.yellow.ai) and go to **Studio** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#manually-create-a-flow).  
 2. Include a [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) to the **Start** node.
 
    ![](https://i.imgur.com/CPo5GDt.png)

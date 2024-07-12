@@ -75,6 +75,10 @@ Here’s a refined version of the known limitations for V1 (GPT-4o/4/3.5) and V2
    3. **Disambiguation**: The system does not support disambiguation.
    4. **Conversation History**: Clicking the home button will clear the conversation history. By default, conversation history is cleared after 24 hours.
 
+   :::info
+   The limitations identified for V1 are actively being addressed and enhancements are planned for future versions. We are committed to continuous improvement to enhance user experience.
+   :::
+
 2. **Limitations specific to OrchLLM**:
 
    1. **Node Functionality**:
