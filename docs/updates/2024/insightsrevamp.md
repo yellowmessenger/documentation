@@ -55,13 +55,13 @@ We have curated the following new Dashboards for you:
 
 New Dashboard	| Details
 ----------- | ------------------------
-[Bot Overview](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#user-traffic)| Replaces the old Overview screen. Contains reports for user traffic and channel consumption.
-[Bot performance metrics](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance)| Replaces the old Metrics screen. Contains reports for bot performance and accuracy.
-[Generative AI](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#generative-ai)| New dashboard for GenAI and KB usage.
-[Inbox chats](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#inbox-chats)| New dashboard for Inbox tickets and their statuses.
-[Inbox agent performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#inbox-agent-performance)| New dashboard for Inbox agent metrics.
-[Email tickets](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#email-tickets-dashboard)| New dashboard for email ticket reports.
-[Voice](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#voice)| Replaces the old Voice Overview screen. Contains voice consumption reports.
+[Bot Overview](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard)| Replaces the old Overview screen. Contains reports for user traffic and channel consumption.
+[Bot performance metrics](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#bot-performance)| Replaces the old Metrics screen. Contains reports for bot performance and accuracy.
+[Generative AI](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#generative-ai)| New dashboard for GenAI and KB usage.
+[Inbox chats](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#inbox-chats)| New dashboard for Inbox tickets and their statuses.
+[Inbox agent performance](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#inbox-agent-performance)| New dashboard for Inbox agent metrics.
+[Email tickets](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#email-tickets) | New dashboard for email ticket reports.
+[Voice](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#voice)| Replaces the old Voice Overview screen. Contains voice consumption reports.
 
 > We plan to support even more curated reports as we develop new features and expand our data and analytics capabilities.
 
@@ -78,7 +78,7 @@ All reports and dashboards created by you are now available in one place under t
 This section will give you a detailed breakdown of the extent of changes and help you navigate our dashboards to find all of the old reports and metrics that you were earlier referring to, on our old screens.
 
 ### Overview
-We've migrated the reports from the Overview screen to the 'User Traffic' and 'Bot Performance' Dashboards. You can find this Dashboard at [Dashboards > User Traffic](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#user-traffic) or [Dashboards > Bot Performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance).
+We've migrated the reports from the Overview screen to the 'User Traffic' and 'Bot Performance' Dashboards. You can find this Dashboard at [Dashboards > User Traffic](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#user-traffic) or [Dashboards > Bot Performance](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#bot-performance).
 
  ![img](https://i.imgur.com/rJHP4Z3.png)
 
@@ -123,7 +123,7 @@ Conversation Issues|||Coming Soon
 ***
 
 ### Metrics
-This was a very redundant screen with hardly any differentiation from the Overview Dashboard. We've moved the old reports to the 'User Traffic' and 'Bot Performance' dashboards. You can find these Dashboards at [Dashboards > User Traffic](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#user-traffic) or [Dashboards > Bot Performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance).
+This was a very redundant screen with hardly any differentiation from the Overview Dashboard. We've moved the old reports to the 'User Traffic' and 'Bot Performance' dashboards. You can find these Dashboards at [Dashboards > User Traffic](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#user-traffic) or [Dashboards > Bot Performance](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#bot-performance).
 
    ![img](https://i.imgur.com/7Z7QDdF.png)
 
@@ -141,7 +141,7 @@ Users By Device|Bot Overview| Device Filter| Partially Migrated
 ***
 
 ### API Usage
-We've moved reports from this screen to the 'Bot Performance' dashboard. You can find these Dashboards at [Dashboards > User Traffic](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#user-traffic) or [Dashboards > Bot Performance](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#bot-performance).
+We've moved reports from this screen to the 'Bot Performance' dashboard. You can find these Dashboards at [Dashboards > User Traffic](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#user-traffic) or [Dashboards > Bot Performance](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard#bot-performance).
 
    ![img](https://i.imgur.com/rdx0tol.png)
 
