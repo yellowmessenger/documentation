@@ -159,7 +159,132 @@ You need to paste the respective channel's script in the HTML file of your websi
    ![](https://i.imgur.com/5Agip5T.png)
 3. Paste this script in the HTML file of your website.
 
-## Build a bot conversation flow 
+
+
+
+
+## Identity fields in RingCentral
+
+
+
+Identity fields are personal data points used to uniquely identify and authenticate users. Examples include username, email, phone number, and gender.
+
+The following identity fields from RingCentral are supported in Yellow.ai, allowing updates in RingCentral to be reflected in Yellow.ai and vice versa:
+
+- First name
+- Last name
+- Gender
+- Email
+- Cell phone
+- Company
+- Tags
+- Notes
+
+To begin, create the **Company** and **Notes** fields in Yellow.ai’s User360. 
+
+Learn more about [Creating user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) in User360.
+
+
+
+
+### Accessing Identity information of known user
+
+If RingCentral already has identity data for a user, you can access these field values within the Yellow.ai bot journey using user properties.
+
+To display user information in the bot, click on the variable icon and select the desired user property.
+
+   ![](https://i.imgur.com/qB51D84.png)
+
+**Example:**  
+You can welcome back the user by using a personalized message.
+
+
+Below is a list of fields you can access in a flow, along with the corresponding expressions:
+
+- Email: `{{{user.email}}}`
+- Phone: `{{{user.phone}}}`
+- Last name: `{{{user.lastName}}}`
+- Gender: `{{{user.gender}}}`
+- Tags: `{{{user.tags}}}`
+- Notes: `{{{user.notes}}}`
+- Company: `{{{user.company}}}`
+
+
+   ![](https://i.imgur.com/zESO9wa.png)
+
+
+### When Identity information of an user is unknown
+
+In this scenario, you’ll need to collect user information through the bot journey.
+
+For example, when a user is prompted to provide their email address, it is stored in a user property variable called email_id.
+
+After collecting the email address, the value is updated in the RingCentral portal. This means that the next time the user interacts with the bot, there’s no need to ask for this information again.
+
+
+
+---
+
+## Custom fields in RingCentral
+
+Custom fields are user-defined data points that enable the collection of specific information tailored to your application's or organization's needs, extending beyond standard data types.
+
+To use custom fields, you must first create them in the RingCentral platform.
+
+1. In the Admin Portal of the RingCentral platform, navigate to the Digital section and select **Custom Fields** to create the necessary fields.
+
+   ![](https://i.imgur.com/GNxIu0v.png)
+
+2. While creating the fields, you will be prompted to enter a key. Make note of this key value, as you will need it later.
+
+   ![](https://i.imgur.com/uWlGuSe.png)
+
+3. In the Yellow.ai platform, go to **User360** under the Engage section.
+4. You will be taken to the User360 screen. Click the **User Properties** button in the top right corner.
+5. Select **Custom Attribute** on the bottom left corner. For more details, refer to [Custom fields](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) in User360.
+
+   ![](https://i.imgur.com/86bmUDt.png)
+
+6. Paste the key value from Step 2 in the **Property Name** field, choose the same property type you selected in Step 2, and click **Save** (You do not need to include the RingCX prefix).
+
+   ![](https://i.imgur.com/KrGzGpD.png)
+
+7. Then, you can use the custom fields within the bot journey in the same manner as the identity fields.
+
+
+## Add custom fields for agents
+
+If user information originates from RingCentral, bot developers can access any custom fields included in the RingCentral payload through the channel metadata.
+
+You can access this data in the System Variables section. To accept data from RingCentral, just use `{{data.channelMetadata}}`, as all relevant data is available within RingCentral.
+
+   <center><img src="https://i.imgur.com/0KHym1Q.png" width="65%"/></center>
+
+
+
+However, if Yellow.ai intends to push data into RingCentral's custom fields, they must create corresponding custom fields within User 360.
+
+
+
+To add custom fields to agent profiles in RingCX:
+
+1. Go to **RingCX Admin portal** > **Digital** > **Custom Fields** > **Add** and create a new custom field.
+
+ ![](https://i.imgur.com/HnvvH07.png)
+
+2. In IVA professional, create a new custom attribute(**Engage** > **User 360** > **User properties** > **+ Custom attribute**). The custom attribute's name should contain the keyword RINGCX as prefix and should have the same name as the custom field created in RingCX account. For example, RINGCX(custom field name).
+
+ ![](https://i.imgur.com/YUP0o17.png)
+
+3. In the flow you have constructed [previously](#build-a-bot-conversation-flow), you can collect dynamic data for the custom field by including a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [storing the response](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) in the user property variable (created in the previous step). Or you can simply type static data in that variable and pass it in the flow.
+4. This custom field will appear in the agent profile as highlighted below.
+
+ ![](https://i.imgur.com/SugTBvr.png)
+
+
+
+
+## Build bot conversation flow  for RingCentral
 
 After connecting your IVA Professional account with RingCX, you need to design the flow based on how you want the bot to handle the user chats in RingCX account using Yellow's AI capabilities.
 
@@ -201,34 +326,7 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
  ![](https://i.imgur.com/Xrc60f6.png)
 
-## Add custom fields for agents
 
-If user information originates from RingCentral, bot developers can access any custom fields included in the RingCentral payload through the channel metadata.
-
-You can access this data in the System Variables section. To accept data from RingCentral, just use `{{data.channelMetadata}}`, as all relevant data is available within RingCentral.
-
-   <center><img src="https://i.imgur.com/0KHym1Q.png" width="65%"/></center>
-
-
-
-However, if Yellow.ai intends to push data into RingCentral's custom fields, they must create corresponding custom fields within User 360.
-
-
-
-To add custom fields to agent profiles in RingCX:
-
-1. Go to **RingCX Admin portal** > **Digital** > **Custom Fields** > **Add** and create a new custom field.
-
- ![](https://i.imgur.com/HnvvH07.png)
-
-2. In IVA Professional, create a new custom attribute(**Engage** > **User 360** > **User properties** > **+ Custom attribute**). The custom attribute's name should contain the keyword RINGCX as prefix and should have the same name as the custom field created in RingCX account. For example, RINGCX(custom field name).
-
- ![](https://i.imgur.com/YUP0o17.png)
-
-3. In the flow you have constructed [previously](#build-a-bot-conversation-flow), you can collect dynamic data for the custom field by including a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [storing the response](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) in the user property variable (created in the previous step). Or you can simply type static data in that variable and pass it in the flow.
-4. This custom field will appear in the agent profile as highlighted below.
-
- ![](https://i.imgur.com/SugTBvr.png)
 
 ## IVA Professional nodes and their supported formats
 
