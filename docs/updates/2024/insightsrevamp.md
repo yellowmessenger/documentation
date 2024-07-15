@@ -49,7 +49,7 @@ Every report you used to refer to from those screens is available on dashboards 
 
 [Default reports](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard) are a curated list of Data Explorer powered reports which give you access to the underlying data and parameters, allowing you to tailor them to your analytics needs. They can serve as a starting point for building complex queries or be used out of the box for basic insights. You can clone our [Default Reports](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard) and Dashboards to incorporate custom drill-down operations.
 
-![image](https://imgur.com/Xd26lSE.png)
+   ![image](https://imgur.com/Xd26lSE.png)
 
 We have curated the following new Dashboards for you:
 
