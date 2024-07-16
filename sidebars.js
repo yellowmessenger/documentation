@@ -1012,7 +1012,16 @@ module.exports = {
             collapsed: true,
             items: [
            "platform_concepts/growth/default_reports",
-           "platform_concepts/growth/dataexplorer/customtables",
+
+           {
+            type: "category",
+            label: "Custom reports",
+            link: {type: 'doc', id: 'platform_concepts/growth/dataexplorer/customtables'},
+            collapsed: true,
+            items: [
+              "platform_concepts/growth/dataexplorer/table_join",
+],
+          },
 
             "platform_concepts/growth/dataexplorer/savedreportsactions",
             ],

@@ -23,19 +23,21 @@ Consider building a Banking voice bot that asks users questions to identify them
 ![](https://i.imgur.com/zWCv0tr.png)
 
 
->Let's break down the conversation:
+> Let's break down the conversation:
 
-> **Bot** (asks): What is your name? 
-> **User** (replies): Karan
-> **Bot** (stores): Karan as Name 
-> **Bot** (asks): How may I help? 
-> **User** (replies): Loan eligibility 
-> **Bot** (understands): User request = Loan eligibility
-> **Bot** (logic): Required phone number to calculate Loan eligibility
-> **Bot** (asks): What is your phone number?
-> **User** (replies): 9890******
-> **Bot** (validates if the number is correct): Uses logic to calculate Loan eligibility
-> **Bot** (response): You can avail X amount on X% interest. 
+> **Bot** (asks): What is your name?       
+> **User** (replies): Karan         
+> **Bot** (stores): Karan as Name          
+> **Bot** (asks): How may I help?           
+> **User** (replies): Loan eligibility         
+> **Bot** (understands): User request = Loan eligibility           
+> **Bot** (logic): Required phone number to calculate Loan eligibility        
+> **Bot** (asks): What is your phone number?         
+> **User** (replies): 9890******                         
+> **Bot** (validates if the number is correct): Uses logic to calculate Loan eligibility             
+> **Bot** (response): You can avail X amount on X% interest.               
+
+
 
 --- End of the call ---
 
