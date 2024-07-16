@@ -8,7 +8,6 @@ You can add multiple languages to your Yellow.ai bot. This enables you to expand
 Configuring these translations adds a human touch to the bot's communication, creating a more engaging and welcoming experience for customers.
 
 
-
 ## Supported languages
 
 The following table consists of the languages supported in our platform.

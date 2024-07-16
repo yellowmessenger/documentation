@@ -616,12 +616,9 @@ You can customize KB responses by following the steps mentioned [here](https://d
 <details>
  <summary>How to use knowledge base for pdf?
 </summary>
-
 To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#upload-documents-from-local-system" >here</a>.
-
  <div>
-  <div>
-​
+  <div>​
 </div>
   <br/>
    </div>
@@ -638,3 +635,101 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
   <br/>
    </div>
 </details>
+
+
+<details>
+ <summary> Why do search results differ between the app platform and the cloud? 
+</summary>
+ <div>
+  <div> 
+      If the knowledge base is the same, search results may vary due to differences in the search algorithms or indexing processes between the platforms.
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary> Does our platform support multilingual websites?
+</summary>
+ <div>
+  <div> 
+      No, currently multilingual websites are not supported as a live feature. Only English and Bahasa languages are supported.
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Why does the bot display incomplete information from the website?
+</summary>
+ <div>
+  <div> 
+      This could happen if you edit or rephrase the query to get the context of the conversation, which can sometimes result in incomplete information being displayed by the bot.
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Why can't I configure SharePoint even though my credentials are correct?
+</summary>
+ <div>
+  <div> 
+     When configuring SharePoint folders, ensure that you remove "https:" from the target host.
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>How do I handle uploaded documents where the company is referred to as a third party (for example, "them" and "they provide")?
+</summary>
+ <div>
+  <div> 
+     To avoid confusion, use the model response type set to "formal/short answer" to ensure clarity.
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Why doesn't the URL "xyz/abc.com" work when the domain is listed as "ABC Network - ABC.com"?
+</summary>
+ <div>
+  <div> 
+     The issue is that the domain has been configured to retrieve answers only from the specified website ("ABC.com"). Ensure that the site URL passed under the document cog node matches the configured domain.
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>How to avoid irrelevant documents being fetched for the entered query?
+</summary>
+ <div>
+  <div> 
+     To prevent this issue, adjust the document search threshold confidence level. By setting an appropriate threshold, irrelevant documents can be filtered out more effectively, enhancing the relevance of the search results.<br/> <b>Note:</b> The model has inherent accuracy limitations, so the results may not be 100% accurate all the time.
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>How to avoid irrelevant documents being fetched for the entered query?
+</summary>
+ <div>
+  <div> 
+     To enable summarized results and summarized answers for the Knowledge Base (KB), follow these steps:<br/> 1.Go to <b>Studio</b> > <b>Build</b> > <b>Conversation settings</b>.<br/> <img src="https://i.imgur.com/GXendkw.png" alt="drawing" width="80%"/><br/>2.Under Document Search, enable <b>Summarized results</b> and <b>Summarized links</b>. <img src="https://i.imgur.com/odRJlGs.png" alt="drawing" width="70%"/>
+</div>
+  <br/>
+   </div>
+</details>
+
+
+
+
+
+
+
+
+
