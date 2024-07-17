@@ -212,7 +212,16 @@ After setting up the user identification flow, use **User property variables** i
 
 
 
+----------
 
+## Why am I not seeing the User360 card in my chats?
+
+The primary reason you might not be seeing the User360 card in your chats is due to the way user property variables are being stored and passed. The UI for displaying the User360 card is not dependent on the channel (e.g., Web or WhatsApp) or whether the user is new or returning. Instead, it relies on the following user property variables:
+- Firstname (compulsory)
+- Phone OR email (either one is required)
+- UserId (optional but recommended for completeness)
+
+If these variables are correctly used and passed in the raise ticket node, the User360 card will be displayed consistently. Failure to meet any of these conditions will result in the fallback to the contact card. This issue might arise from different bot journeys built for different use cases not fully implementing the required user property variables changes.
 
 
 

@@ -21,7 +21,7 @@ We have removed the following screens from the UI:
 You might have noticed that while these reports were informative and accurate, they acted like black boxes when it came to the underlying raw data. You couldn't perform custom drill-down opertions, change filters, or adjust visualizations for specific metrics. That's why we decided to remove these screens and widgets to make reporting more accessible, transparent, and robust on the Dashboard and Data Explorer pages.
 
 ### Where have the old reports gone?
-You can check the detailed breakdown [here](https://hackmd.io/1v4kQ9YnR8Sc-MpZi-FmbA?both#Report-Migration).
+You can check the detailed breakdown [here](https://docs.yellow.ai/docs/updates/2024/insightsrevamp#report-migration).
 
 1. All of the discontinued reports have been partially or fully migrated to [Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard). 
 2. Metrics/widgets are moved to default reports labeled as *Created by Yellow.ai*.
@@ -36,7 +36,7 @@ Previously, we had standard data exports which could have been downloaded from o
 
 <img  src="https://i.imgur.com/ZtcYRCT.png"  width="60%"/>
 
-You can find the status of the migration [here](https://hackmd.io/1v4kQ9YnR8Sc-MpZi-FmbA?both#Standard-Exports).
+You can find the status of the migration [here](https://docs.yellow.ai/docs/updates/2024/insightsrevamp#report-migration).
 
 
 ### Data Explorer and Dashboards - The centre pieces

@@ -1,18 +1,22 @@
 ---
 title: Create custom queries for custom tables
-sidebar_label : Create custom reports(tables) 
+sidebar_label : Custom reports (tables) 
 ---
 
-#### What are custom tables(datasets)?
+You can modify/visualise and perform actions on tables according to your preferences using a **Custom query**.
 
-On **Studio** you can create [Custom datasets](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs. For example, you can create tables to store the data obtained from variables from the flows. 
-You can modify/visualise and perform actions on these tables according to your preferences using a **Custom query**.
+
+**Default tables(datasets)**: **Insights > Data explorer** has a list of default tables (reports) that are created for the commonly used bot use cases. 
+
+**Custom tables(datasets)**: On **Studio > Tables** you can create [custom datasets](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs. For example, you can create tables to store the data obtained from variables from the flows. 
+
+
 
 :::note
 To **secure data** security for custom tables, you can employ masking techniques by following [these steps](https://docs.yellow.ai/docs/platform_concepts/studio/database#mask-database-columns). As a result, the data in these tables will remain concealed on insights tables for all users except super admins.
 :::
 
-## 1. Steps to add/create a custom query(custom reports) 
+## 1. Steps to add/create a custom query (custom report) 
 
 Custom queries/reports can be created using the default datasets or custom datasets.
 1. Open **Insights** > **Data explorer**. 
@@ -22,18 +26,28 @@ Custom queries/reports can be created using the default datasets or custom datas
 ![image](https://imgur.com/J2dtFSS.png)
 
 
-### Choose query to create a table
+**Choose query to create a table**
 
 You have the option to choose a custom query that includes either bot data or data retrieved from custom tables in flows. By using any of this data, you can obtain the desired insights and analytics from your existing datasets.
 
 To create reports on selected tables, there are two types of queries available:
 
-1. **Custom query**: This query allows you to choose a default or custom table, and provides options to filter, summarize and visualise the data using the provided buttons. With this query, you can perform actions on tables through a simple interface, without the need for any database queries.
-    - Filters and logic within Filters can be used to construct queries. You can filter data by specific column values or combinations of column values.
-    ![image](https://imgur.com/NmKO84z.png)
+### **Custom query**
 
-2. **Native query**: If you require more advanced analysis beyond what is available with the buttons and options provided by Insights, or if you prefer to write SQL queries instead, you can choose the native query option. With this option, you can write your own SQL query to perform more complex analysis on your default datasets.
-    ![image](https://imgur.com/2zNJu3m.png)
+This query allows you to choose a default or custom table, and provides options to filter, summarize and visualise the data using the provided buttons. With this query, you can perform actions on tables through a simple interface, without the need for any database queries.
+- After clicking on **Custom query**, you will have two options, select one: Single data source or Multiple data sources.
+    - **Single data source**: You can create a report using just one selected table.
+    - **Multiple data sources**: You can combine two tables using a join operation to create your report. 
+    > Detailed explaination available in the next section. 
+- Filters and logic within Filters can be used to construct queries. You can filter data by specific column values or combinations of column values.
+
+![image](https://imgur.com/NmKO84z.png)
+
+### **Native query**
+
+If you require more advanced analysis beyond what is available with the buttons and options provided by Insights, or if you prefer to write SQL queries instead, you can choose the native query option. With this option, you can write your own SQL query to perform more complex analysis on your default datasets.
+
+![image](https://imgur.com/2zNJu3m.png)
     
     **Sample native query**:
 
@@ -63,7 +77,8 @@ When using the filters option, you can apply filters to any of the available col
     - You can search for the column name. 
     - For each filter, you can add a conditon and the value. 
 3. Click **Apply filter**.
-    ![image](https://imgur.com/S3fwsji.png)
+
+![image](https://imgur.com/S3fwsji.png)
 
 ### Download filtered data as a CSV file
 
