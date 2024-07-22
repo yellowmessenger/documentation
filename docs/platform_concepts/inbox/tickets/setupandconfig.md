@@ -71,10 +71,11 @@ To forward mails from the email chatbox to the yellow.ai platform, follow the be
     ![image](https://hackmd.io/_uploads/rytJbwsdC.png)      
 6. Under the **Forward my email to** text box, enter the forwarding address you copied from your Yellow.ai bot (example format: bot-ID_ID@parse.yellow.chat).
 ![image](https://hackmd.io/_uploads/SyAZGwiOR.png)     
-7. Confirm forwarding in Yellow.ai:
+7. Confirm forwarding in Yellow.ai:     
     - Open your Yellow.ai bot and go to **Inbox > Chats > Bot messages.**
     - Look for an automated message requesting confirmation to forward emails from your Outlook account to the forwarding address.
     - Click on the confirmation link in the message.
+
 ![image](https://hackmd.io/_uploads/SkVFXvidA.png)
 
 8. Check synced emails:
