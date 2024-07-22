@@ -8,6 +8,10 @@ Logs in bot conversations are step-by-step records, detailing events and flows a
 
 The logs are accessible in real-time for **Sandbox** and **Staging** directly from the ongoing conversation. For **Production**, it will be available 15 minutes after the conversation ends.
 
+:::note
+In rare instances, some logs may not be displayed due to our sampling process. This is designed to enhance overall system performance without compromising the quality of the insights provided. If you need a complete log history, please contact our support team for further assistance.
+:::
+
 ## Check logs in Sandbox/Staging
 
 To check the debug logs in Sandbox and Staging environments,

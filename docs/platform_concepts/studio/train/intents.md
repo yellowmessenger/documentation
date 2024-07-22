@@ -150,7 +150,7 @@ You need to train your bot after adding intents and uttrances. If the bot is not
 
 4. Choose your preffered **Feature type**.
 
-     ![](https://imgur.com/Fb9wj9C.png)
+    <img src="https://imgur.com/Fb9wj9C.png" alt="drawing" width="60%"/>
 
 Option | Description
 ------- | ----------

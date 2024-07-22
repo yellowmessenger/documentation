@@ -4,7 +4,7 @@ sidebar_label: Dynamic chat node
 ---
 
 :::note
-This node is activated only upon request.
+For enterprise subscription bots, this node is enabled by default. For other subscription bots, activation of this node is available only upon request.
 :::
 
 Dynamic chat node simplifies conversational design by facilitating goal-oriented interactions through its prompt generator.  It analyzes scenarios for tailored responses and generates the prompts based on the given use case. This node enables businesses to offer custom solutions with responsive interactions. 
