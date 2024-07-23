@@ -715,7 +715,7 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
 </details>
 
 <details>
- <summary>How to avoid irrelevant documents being fetched for the entered query?
+ <summary>How to enable summarized results and summarized answers for the Knowledge Base (KB)?
 </summary>
  <div>
   <div> 

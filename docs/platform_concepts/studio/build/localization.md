@@ -3,17 +3,14 @@ title: Add Multilingual support to your bot
 sidebar_label: Add Multilingual support to your bot
 ---
 
-You can add multiple languages to your Yellow.ai bot. This enables you to expand globally and engage with customers more effectively. Users can switch seamlessly between languages during their interactions with the bot, providing a personalized experience tailored to their needs.
-
-Configuring these translations adds a human touch to the bot's communication, creating a more engaging and welcoming experience for customers.
-
+By adding multilingual support to your bot, you can reach a broader audience and enhance customer engagement. Users can seamlessly switch languages during interactions, creating a more welcoming experience.
 
 ## Supported languages
 
-The following table consists of the languages supported in our platform.
+The following are the different languages supported in the bot.
 
 
-| Language                      | ISO 639-1 code    | Full Support (Text) | Using Translation (Text) | Speech-to-text | Text-to-speech | Knowledge Mining | Sentiment Analytics | Small Talk Support |
+| Language                      | ISO 639-1 code    | Full support (Text) | Using translation (text) | Speech-to-text | Text-to-speech | Knowledge mining | Sentiment analytics | Small talk support |
 | ----------------------------- | --- | ------------------- | ------------------------ | -------------- | -------------- | ---------------- | ------------------- | ------------------ |
 | English - US                  |  en   | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | English - Great Britain       |   en  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
@@ -145,59 +142,114 @@ The following table consists of the languages supported in our platform.
 | Zulu                          |   zu | Yes                 |                          | Yes            |                | Yes              |                     |                    |
             
 
-## Add languages to your bot
+## Add supported languages to your bot
+
+You can add multiple supported languages to the bot, allowing users to interact in their preferred language.
 
 To add a new language to your bot, follow these steps:
 
 1. Go to **Studio** > **Build** > **Flow** > click the **Language** icon.
 
-   <img src="https://imgur.com/x2OLal7.png" alt="drawing" width="80%"/>
+   <img src="https://imgur.com/x2OLal7.png" alt="drawing" width="70%"/>
 
 2. Click **+ Add langauge**.
 
    <img src="https://imgur.com/WOzhLn0.png" alt="drawing" width="60%"/>
 
-3. Add the required languages and click **Save**. 
+3. Add the languages to be supported and click **Save**. 
 
    ![](https://i.imgur.com/AL5YsQg.png)
+   
+### Set your preferred language during bot conversations
 
-## Add Language translations
+To interact with the bot in your preferred language at any point during the conversation, use the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node to set your desired language. Follow these steps to configure the language for your bot:
 
-This section guides you on how to set up language translations for your bot.
+1. In a flow, add the [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node where you want to enable translation.
 
-### Add translations for each Key 
+    <img  src="https://i.imgur.com/r6YHBrj.png"  alt="drawing"  width="70%"/>
 
-Here, a "key" represents a sentence or message intended for the user. This key will be used when selecting translations during flow creation. You can provide translations for all supported languages manually as explained in the following.
+2. Go to **Variables**.
 
-1. Go to **Studio** > **Build** and click on the **Translations** tab.
+    <img  src="https://i.imgur.com/IUVEShc.pngg"  alt="drawing" width="70%"/>
 
-   ![](https://i.imgur.com/pKeJFz2.png)
+3. Create a variable and assign it a language code that represents the language in which you want your bot to communicate. 
 
-2. Click **+ Create new key**. You will see a pop-up dialog box.
+    ![](https://i.imgur.com/8RpA52t.png)
+    
+4. Go to the **Set Language** node and select the variable you created.
 
-   <img src="https://i.imgur.com/C1xZx6k.png" alt="drawing" width="80%"/>
+    ![](https://i.imgur.com/01pYtSH.png)
+
+5. Test the bot by previewing the flow to ensure it communicates in the selected language.
+
+    ![](https://i.imgur.com/fYJHacR.png)
+    
+6. To change the language of your bot, update the language code in the variable to your preferred language.
+
+7. Go to the **Set language** node and select the updated variable. This will change the language of your bot to the newly selected language code.
+
+
+## Add language translations
+
+If you prefer not to use auto-translation services like Google Translate, manually add language translations to your bot. This ensures clear and precise communication with users, particularly for languages where automated translations may be inaccurate.
+
+This section provides detailed instructions on how to add the language translations for your bot.
+
+### Add translations for individual keys
+
+To add language translations, you need to create a unique key for each message in the selected languages.  These keys are then linked to specific nodes in your bot. 
+
+In this context, a "key" refers to a sentence or message intended for users, that is selected during flow creation for translation. You can provide translations for all supported languages, manually as explained in the following:
+
+1. Go to **Studio** > **Build** > **Translations** tab.
+
+   ![](https://i.imgur.com/Y9E4FMG.png)
+   
+* You will see a pop-up dialog box. 
+
+   <img src="https://i.imgur.com/8XiD81b.png" alt="drawing" width="70%"/>
 
 3. Enter a **Key** name for the translation. 
 
 4. In **Description**, provide a brief description of the key.
 
-5. Enter the message in **English** and in other languages.
+5. Enter the message in **English** and in other languages (if required).
 
 6. Click **Add**.
 
+* This will add the translation key.
+
 ### Auto-translate translation keys
 
-Auto translation simplifies the translation process by automatically filling empty fields with translated data, based on the information already provided in the corresponding English field.
+If you want to translate the messages into other languages then you can use the **Auto-translate** option. Auto translation simplifies the translation process by automatically filling empty fields with translated data, based on the information that is provided in the corresponding English field.
 
-1. To enable auto-translation, on **Studio** > **Build** > **Translations**, click on the **Auto translate** button.
+1. To enable auto-translation, on **Studio** > **Build** > **Translations**, click on the **Auto-translate** button.
    
    ![](https://i.imgur.com/wnUS5tF.png)
 
-* This will automatically translate the data into the other languages based on the information provided in the corresponding English field.    
+* This will automatically translate the data into the other languages based on the information provided in the corresponding English field.
+
+  ![](https://i.imgur.com/erF8UCq.png)
 
 :::info
 You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language.
 :::
+
+### Add translation key in nodes
+
+You can add translation keys to nodes in a multilingual bot to ensure the bot's output is displayed in the selected language. Here are the steps to add the translation key in nodes:
+
+1. Click the translation icon in the text field.
+
+     <img  src="https://i.imgur.com/J12yhW5.png"  alt="drawing"  width="70%"/>
+
+2. Select the [key](#add-languages-to-your-bot) that is already configured for that text translation (or, [add new translations](#add-translations-for-each-key) as you create each node).
+
+    ![](https://i.imgur.com/eVy9OuF.png)
+
+* When the bot-user conversation reaches this node, based on the [language set by the user](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language), the bot automatically switches to the language configured in the key.
+
+    ![](https://i.imgur.com/tQiRXEf.png)
 
 ### Manage translations Keys
 
@@ -206,10 +258,16 @@ After adding translation keys, you can edit and delete it based on your requirem
 To manage the translations keys, follow these steps:
 
 1. Go to the keys that you have created and hover on them to perform the following actions:
-     - **Edit**: You can select this option to edit the key, description, and text of the other language fields.
+
+      ![](https://imgur.com/9PxsbLP.png)
+
+     - **Edit**: You can select this option to edit the key, description, and text of the other language fields. 
+      <img src="https://i.imgur.com/cZkaHj4.png" alt="drawing" width="70%"/>
+     * You can also edit the particular language description by clicking the **Edit** icon corresponding to each description
+
+       ![](https://i.imgur.com/FB52UFt.png)
      - **Delete**: You can select this option to permanently delete the key. Once deleted, it cannot be recovered.
 
-     ![](https://imgur.com/9PxsbLP.png)
 
 ### Import multiple translations using a CSV file
 
@@ -230,36 +288,12 @@ To add multiple translations at the same time, follow these steps:
 
 4. Click **Import**. 
 
-### Add translations using code
 
-Translation can also be configured via code. 
-
-1. Go to **Functions** and click the transalte icon.
-2. Click **+ Add code**, and then add the following line to the **Code** field, along with the default message in the required language to the **Message** field.
-
-   ```app.renderMessage('code-goes-here', {}, 'default message')```
-
-   ![](https://i.imgur.com/VCQyjt8.jpg)
+    
 
 
-3. Click **Add Message**.
+      
 
 
 
-When the bot encounters the message specified in the Message field, it automatically executes the code, performing translation in the chosen language.
 
----
-
-## <a name="2"></a> Add translation key in nodes
-
-You can add the translation key to the node to avoid the auto-translation. Here are the steps to add translations key in nodes:
-
-1. Click the translation icon in the text field.
-
-     ![](https://i.imgur.com/Bzlt66X.png)
-
-2. Select the [key](#add-languages-to-your-bot) that is already configured for that text translation (or, [add new translations](#add-translations-for-each-key) as you create each node).
-
-    ![](https://i.imgur.com/wmSwZYu.png)
-
-When the bot-user conversation reaches this node, based on the language used by the user, the bot automatically switches to the language configured in the key.
