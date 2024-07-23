@@ -32,7 +32,7 @@ You have the option to choose a custom query that includes either bot data or da
 
 To create reports on selected tables, there are two types of queries available:
 
-### **Custom query**
+### Custom query
 
 This query allows you to choose a default or custom table, and provides options to filter, summarize and visualise the data using the provided buttons. With this query, you can perform actions on tables through a simple interface, without the need for any database queries.
 - After clicking on **Custom query**, you will have two options, select one: Single data source or Multiple data sources.
@@ -43,7 +43,7 @@ This query allows you to choose a default or custom table, and provides options 
 
 ![image](https://imgur.com/NmKO84z.png)
 
-### **Native query**
+### Native query
 
 If you require more advanced analysis beyond what is available with the buttons and options provided by Insights, or if you prefer to write SQL queries instead, you can choose the native query option. With this option, you can write your own SQL query to perform more complex analysis on your default datasets.
 

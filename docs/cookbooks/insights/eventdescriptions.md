@@ -21,7 +21,7 @@ sidebar_label : Default DB table descriptions
 | STATUSCODE   | Various Status of the API response. 200 Means Success, 404 means Server-side Failure |
 | UID          | Unique Identifier of User |
 | LANGUAGE     | Language identified by our platform for the ongoing interaction |
-| RESPONSE_TIME| Time taken by the server to respond back to the API request |
+| RESPONSE_TIME| Time taken (in milliseconds) by the server to respond back to the API request |
 | COUNT        | Number of API Hits |
 
 -----
