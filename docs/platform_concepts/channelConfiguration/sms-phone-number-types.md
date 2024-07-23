@@ -21,7 +21,7 @@ A 10-digit long code [10DLC](https://www.infobip.com/docs/10dlc) is a standard 1
 To buy a long code number and register, contact [support](mailto:support@yellow.ai).
 :::
 
-* **Registration process**: You need to fill this [excel sheet](https://docs.google.com/spreadsheets/d/12nIUlbgXUFZBkMsbK1WnJy7k13nPR6VPJQjqO26g82A/edit?usp=sharing) to register.
+* **Registration process**: The delivery team must fill out this [excel sheet](https://docs.google.com/spreadsheets/d/12nIUlbgXUFZBkMsbK1WnJy7k13nPR6VPJQjqO26g82A/edit?usp=sharing) and share the details with the product team. Registration will take 15-20 days after submitting all the information.
 * **Usage**: Once registered, businesses can send and receive SMS and MMS messages to US and Canada using Infobip, by following the [SMS guidelines](https://www.infobip.com/docs/essentials/sms-coverage-and-connectivity).
 * **Message throughput**: The message throughput of A2P 10DLC in the US depends on your brand type, campaign type (use case), and [Trust Score](https://www.infobip.com/blog/sms-long-code-brand-status-guide#more-on-10dlc-throughput-0) (for standard brands).
 * **Benefits**: A2P 10DLC is best suited for customer service and non-marketing messages.

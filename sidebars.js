@@ -1069,7 +1069,8 @@ module.exports = {
           items: [
             "platform_concepts/channelConfiguration/abc",
             "platform_concepts/channelConfiguration/email-outbound",
-            "platform_concepts/channelConfiguration/facebook-messenger", 
+            "platform_concepts/channelConfiguration/facebook-messenger",
+            "platform_concepts/channelConfiguration/facebook-comments", 
             "platform_concepts/channelConfiguration/fb-workplace",
             "platform_concepts/channelConfiguration/google-message",
             "platform_concepts/channelConfiguration/googleChat",
@@ -1152,7 +1153,6 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/channelConfiguration/twitter",
-            "platform_concepts/channelConfiguration/facebook-comments",
           ]
         },
         {

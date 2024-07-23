@@ -59,9 +59,9 @@ To connect your Facebook page to Yellow.ai, follow these steps:
 
     ![](https://imgur.com/SB7Ec9I.png)
 
-3. Click **Connect to your Facebook account**. 
+3. Click **Connect**. 
 
-   <center><img src="https://imgur.com/K6v6CFb.png" alt="drawing" width="90%"/></center>
+   <center><img src="https://i.imgur.com/DNCk6Np.png" alt="drawing" width="90%"/></center>
 
 
 4. Login to your Facebook account that is connected to your Facebook Business Page.
@@ -70,25 +70,39 @@ To connect your Facebook page to Yellow.ai, follow these steps:
 
 5. After successfully logging in, click **Continue** to navigate to your page.
 
-   <center><img src="https://i.imgur.com/e6z2lqv.png" alt="drawing" width="60%"/></center>
+   <center><img src="https://i.imgur.com/Ya1zeeg.png" alt="drawing" width="60%"/></center>
 
+6. Select the business you want to grant Yellow Messenger access to, and click **Continue**.
 
-6. Select your business page. If you have more than one business page connected to this FB account, select the one for which you want to setup a chatbot, and then click **Next**.
+   <center><img src="https://i.imgur.com/57pZEhD.png" alt="drawing" width="60%"/></center>
 
-   <center><img src="https://i.imgur.com/o4bt7xF.png" alt="drawing" width="60%"/></center>
+7. Choose the specific business page you want Yellow Messenger to access, and click **Continue**.
+
+    <center><img src="https://i.imgur.com/eWIDaKo.png" alt="drawing" width="60%"/></center>
+
+8. Review the permissions that Yellow Messenger requires and click **Save**.
+
+   <center><img src="https://i.imgur.com/iCDtXNq.png" alt="drawing" width="60%"/></center>
+
+* Your Facebook page will be successfully connected to our platform.
+
+    <center><img src="https://i.imgur.com/7VOwijJ.png" alt="drawing" width="60%"/></center>  
+
+10. Select your business page. If you have multiple business pages, select the one for which you want to set up a chatbot and then click **Continue**. 
+
+   <center><img src="https://i.imgur.com/3g41Yh2.png" alt="drawing" width="60%"/></center> 
 
 :::note
 You can connect to an unlimited number of FB pages within a single FB business account. 
 :::  
 
-7. Enable the required permissions, and click **Done**.
+11. Enable the toggle button to connect the selected page to your bot. 
 
-   <center><img src="https://i.imgur.com/Gzo0WJ7.png" alt="drawing" width="60%"/></center>
+    ![](https://i.imgur.com/xXQOIOy.png)
 
-8. Your Facebook page will be successfully connected to our platform. Enable the toggle button to connect your bot.
+12. Click **+ Add Facebook page** to add multiple pages to your bot.   
 
-    ![](https://i.imgur.com/Zgp95PF.png)
-
+     ![](https://i.imgur.com/ibTWlWR.png)
 
 ## Setup your bot
 
