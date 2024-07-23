@@ -29,6 +29,12 @@ On the **analytics** page, you will find dashboards for:
    - First response time
    - Avg response time
 
+:::info    
+To ensure consistency and accuracy, Inbox metrics data calculation is based on the chatbot's time zone across the platform. This means that all data calculations, such as chats resolved, missed, etc., in the past X days, will reflect the bot's time zone regardless of where the admin or supervisor is located.        
+:::
+
+
+
 On the **reports** page, you can download reports for:
 
 1. **Chat reports**
