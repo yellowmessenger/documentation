@@ -97,6 +97,7 @@ module.exports = {
     "cookbooks/inbox/transferwithoutinfo",
     "cookbooks/inbox/notifycustomerofflinehandling",
     "cookbooks/inbox/videourl",
+    "cookbooks/inbox/classifyspamemail",
   ],
 },    
 // end of inbox 
