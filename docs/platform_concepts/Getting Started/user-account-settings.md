@@ -63,6 +63,21 @@ Currently only English, Japanese and Bahasa indonesia is supported.
 
 -----
 
+## Manage your email preferences
+
+If you're receiving email alerts that you no longer wish to receive, you can easily unsubscribe to stop further notifications. Email preferences let you ensure you only receive communications that are relevant to you.
+To subscribe or stop receiving certain email alerts, follow these steps:
+
+1. In **My profile**, navigate to the **Email preferences** tab.
+
+   ![](https://i.imgur.com/ZfS4i10.png)
+
+2. In **Subscribe email**, choose the bot for which you want to manage your subscriptions. This step is not applicable if you have a single bot subscription.
+3. Select **Health check** to receive notifications about the bot's health status. To stop receiving Health check alerts, uncheck the checkbox.
+4. Select **API management** to receive alerts on all API-related updates or alerts. To stop receiving API-related alerts, uncheck the checkbox.
+
+----
+
 ## View your account activity 
 
 You can track all active sessions, including details such as the operating system and browser used, along with the date and time.
