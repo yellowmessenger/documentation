@@ -97,6 +97,7 @@ module.exports = {
     "cookbooks/inbox/transferwithoutinfo",
     "cookbooks/inbox/notifycustomerofflinehandling",
     "cookbooks/inbox/videourl",
+    "cookbooks/inbox/classifyspamemail",
   ],
 },    
 // end of inbox 
@@ -1045,6 +1046,7 @@ module.exports = {
       },
 
     
+    "platform_concepts/growth/customalerts",
     "platform_concepts/growth/health",
    // "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",
