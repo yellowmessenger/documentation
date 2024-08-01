@@ -162,7 +162,13 @@ To add a new language to your bot, follow these steps:
    
 ### Set your preferred language during bot conversations
 
-To interact with the bot in your preferred language at any point during the conversation, use the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node to set your desired language. Follow these steps to configure the language for your bot:
+To interact with the bot in your preferred language at any point during the conversation, use the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node to set your desired language. 
+
+:::info
+You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language. You can only set the language using the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node.
+:::
+
+To configure the language for your bot, follow these steps :
 
 1. In a flow, add the [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node where you want to enable translation.
 
@@ -230,10 +236,6 @@ If you want to translate the messages into other languages then you can use the 
 * This will automatically translate the data into the other languages based on the information provided in the corresponding English field.
 
   ![](https://i.imgur.com/erF8UCq.png)
-
-:::info
-You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language.
-:::
 
 ### Add translation key in nodes
 
