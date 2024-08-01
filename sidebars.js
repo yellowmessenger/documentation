@@ -112,6 +112,7 @@ module.exports = {
   //  "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/fixdataerrors",
+    "cookbooks/insights/nativesqlquery",
     "cookbooks/insights/insightsmetrics",
     "cookbooks/insights/schedulerawreports",
     "cookbooks/insights/toptriggeredintents",
