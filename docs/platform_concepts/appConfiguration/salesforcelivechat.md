@@ -58,7 +58,7 @@ Fill in the required fields.
 
    f. In the deployment script, locate an ID **not starting with 00D**, which is the Deployment ID.
 
-5. In **Button Id**, enter the unique identifier for the chat button that initiates a live chat session. Ensure that the agent is available with the Button ID you are configuring for the integration to connect successfully. To obtain this ID, follow these steps
+5. In **Button Id**, enter the unique identifier for the chat button that initiates a live chat session. Ensure that the agent is available with the Button ID you are configuring for the integration to connect successfully. To obtain this ID, follow these steps:
 
    a. Login to your Salesforce account.
 
