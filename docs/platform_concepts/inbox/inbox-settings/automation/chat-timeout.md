@@ -8,7 +8,7 @@ keywords : [chat timeoff, agent inactivity status, inactivity status, no agent r
 **Chat inactivity**     
 When a chat is assigned to an agent but neither the agent nor the customer has responded for a certain period of time, the chat is considered inactive and will eventually "timeout".     
 Inbox admins can enable the inactivity trigger setting to identify these inactive chats.    
-This can then be captured as an event called ```ticket-inactive``` and further actions can be taken based on this event.
+This can then be captured as an event called ```ticket-inactivity``` and further actions can be taken based on this event.
 
 #### Use case of chat inactivity trigger
 
@@ -67,16 +67,16 @@ The bot asks the user if he is still on the chat if the user has not responded f
 Follow the bellow steps: 
 
 1. Configure the inactivity trigger on the settings page by following the above steps. 
-2. When inactivity is identified (after 1 minute), ``` ticket-inactive``` event is generated.
+2. When inactivity is identified (after 1 minute), ``` ticket-inactivity``` event is generated.
     ![](https://i.imgur.com/mkNjqbX.png)
 3. Open **Studio** module. Go to **Events**. 
-4. Search for **ticket-inactive** in **Inbox events**. 
+4. Search for **ticket-inactivity** in **Inbox events**. 
     ![](https://i.imgur.com/ja4aikO.png)
 5. Select **Activate**. 
     ![](https://i.imgur.com/Vln2xiw.png)
 6. [Create](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) a new flow. 
 7. Set [Start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) as **Event**.
-8. Select **/ticket-inactive** from the drop down.
+8. Select **/ticket-inactivity** from the drop down.
     ![](https://i.imgur.com/DqNDhjY.png)
 9. Connect the start node to any nodes to continue the flow. Connect to the [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) to display "Hey! Are you still there?"
 
