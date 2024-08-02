@@ -26,3 +26,5 @@ To schedule and download all of your analytics as reports, follow the steps belo
 
 6. Click **Save**. This report will be sent to the respective email IDs as per the schedule. 
     > Expect a few minutes of delay when sending a large file.
+
+> Links to reports sent via email are only valid for 15 minutes.  

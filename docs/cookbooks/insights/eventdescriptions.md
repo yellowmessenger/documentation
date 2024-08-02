@@ -555,3 +555,52 @@ Analytics table can be found under custom tables in which the following data is 
 | Conversation End Time   | Time at which the conversation ended                                                                                                          |
 | Timestamp               | The date and time when the report was generated and added to data explorer |
 
+
+-----------
+
+## LLM usage metrics
+
+| **Field**          | **Description**                                      | **Value**            |
+|--------------------|------------------------------------------------------|----------------------|
+| TIMESTAMP          | Time                                                |             Datetime         |
+| SENDER             | Sender ID/UID of the user                            | String               |
+| SESSION_ID         | Session ID of the user                               | String               |
+| TRACE_ID           | Trace ID of the message                              | String               |
+| SOURCE             | Source of the message (YM/WhatsApp/etc.)             | String               |
+| SUCCESS            | Whether the API call returned a response or not      | Boolean              |
+| PROVIDER           | LLM Service Provider (Open AI, Azure Open AI, etc.)  | String               |
+| MODEL              | Name of the model                                    | String               |
+| RESOURCE           | Name of the resource (only in the case of Azure Open AI) | String          |
+| EXECUTION_TIME     | Time taken by the LLM API call                       | Milliseconds         |
+| PROMPT_TOKENS      | Number of tokens in the input prompt                 | Number               |
+| COMPLETION_TOKENS  | Number of tokens in the generated response           | Number               |
+| TOTAL_TOKENS       | Sum of PROMPT_TOKENS and COMPLETION_TOKENS           | Number               |
+| CUSTOM_LLM_KEY     | True if the client is using their own credentials; otherwise False | Boolean   |
+| WORKFLOW           | Workflow ID of the flow where the node is present    | String               |
+| NODE_ID            | Node ID of the node                                  | String               |
+
+
+------
+
+## WhatsApp consumption
+
+| **Field**                             | **Description**                                                                                                                                                               |
+|---------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| TIMESTAMP                             | The day the count is calculated                                                                                                                                    |
+| WABA_ID                               | Unique WhatsApp Business Account ID provided by Meta                                                                                          |
+| PHONE_NUMBER                          | WhatsApp business phone number linked to the customer                                                                                                                      |
+| BUSINESS_INITIATED_AUTHENTICATION     | Conversations for authenticating users with one-time passcodes, such as account verification, recovery, or integrity challenges |
+| BUSINESS_INITIATED_MARKETING          | Conversations for marketing purposes like new product announcements, targeted promotions, or cart abandonment reminders |
+| BUSINESS_INITIATED_UTILITY            | Conversations for follow-ups on user actions or requests, such as order updates, account alerts, or feedback surveys |
+| USER_INITIATED_SERVICE                | Conversations for resolving customer inquiries                                                                                                                     |
+| CONVERSATION                          | 24-hour message threads between you and your customers, opened and charged when your messages are delivered |
+
+
+-------
+
+
+:::info
+Time is mentioned in milliseconds.
+:::
+
+

@@ -97,6 +97,7 @@ module.exports = {
     "cookbooks/inbox/transferwithoutinfo",
     "cookbooks/inbox/notifycustomerofflinehandling",
     "cookbooks/inbox/videourl",
+    "cookbooks/inbox/classifyspamemail",
   ],
 },    
 // end of inbox 
@@ -111,6 +112,7 @@ module.exports = {
   //  "cookbooks/insights/eventdescriptions",
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/fixdataerrors",
+    "cookbooks/insights/nativesqlquery",
     "cookbooks/insights/insightsmetrics",
     "cookbooks/insights/schedulerawreports",
     "cookbooks/insights/toptriggeredintents",
@@ -1045,6 +1047,7 @@ module.exports = {
       },
 
     
+    "platform_concepts/growth/customalerts",
     "platform_concepts/growth/health",
    // "platform_concepts/growth/goals",
     "platform_concepts/growth/faqs-user",

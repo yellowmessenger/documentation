@@ -91,9 +91,6 @@ This option allows you to directly input your own instructions instead of relyin
 | Fields             | Descriptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | User context       | User context allows you to store string values as variables, which can be retrieved anywhere within the context using `{{userContext}}`.<br/><br/>For example, if you want to offer a discount of 35%, you can store it as a string variable and use `{{userContext}}` to retrieve this information within the context.<br/> <br/>Similarly, User context can be used to fetch and display data to the end user at any point in the conversation. It is important to note that only one User context can be used in a single conversation.
- |
-| Send initial user message | Sends the user messages from the conversation with the bot to the dynamic chat node before the flow control transitions to the dynamic chat node.|
-| Send message after chat ends | The last message sent to the user when the conversation ends with the dynamic chat node. |
 | Goal     | Describe the objective of the bot. To indicate the start of the context and instruct the bot to follow the given instructions, you enter **START CONTEXT**. Similarly, to indicate the end of the instructions, you enter **END CONTEXT**. <br/>You can define any desired actions for the node, such as greeting the user, collecting their information, verifying the entered details, and more. This allows you to tailor the behavior and actions of the node based on your specific needs. |
 
 
@@ -222,7 +219,7 @@ You can find these tags in two places:
 
    <img src="https://i.imgur.com/hbmBquG.png" alt="drawing" width="35%"/>
    
-## Skill configuration
+### Skill configuration
 
 Skill configuration enables you to create workflows that can be linked to goals and invoked as needed within a conversation. These workflows operate in the background while control remains in the dynamic chat node.
 
@@ -250,7 +247,7 @@ To configure a Skill in the dynamic chat node, follow these steps:
 
 4. Click **+ Link more skill** to add more skills.   
 
-## Goal configuration setting
+### Goal configuration setting
 
 This setting determines the creativity, randomness of the bot's responses, and the total number of tokens the model generates. 
 
@@ -331,12 +328,23 @@ To add custom LLM, follow these steps:
     
 -----
 
-## Voice Configuration
+### Additional settings
+
+Additional settings consist of the following options:
+* **Send initial user message**: Sends the user messages from the conversation with the bot to the dynamic chat node before the flow control transitions to the dynamic chat node.
+* **Send message after chat ends**: The last message sent to the user when the conversation ends with the dynamic chat node.
+* **Context switching**:  This option allows the NLP or Orchestrator LLM to take over and switch out of a dynamic chat node without maintaining any previous context. For instance, if you have an intent like "talk to agent" and the user mentions this during an ongoing goal, the bot can seamlessly switch to the "talk to agent" flow.<br/>
+    While this enhances flexibility, it may increase complexity in some bots where user utterances match both expected replies in the dynamic chat node and specific intents. Therefore, it is essential to optimize the use of context switching carefully and apply it only when necessary. Special caution should be taken with prompts addressing queries to ensure smooth transitions.
+
+  <img src="https://i.imgur.com/lFdJVlD.png" alt="drawing" width="60%"/>
+
+
+### Voice Configuration
 
 Voice configuration enables you to create interactive voice-enabled interactions, enhancing the conversational capabilities of your bot.
 
 
-  <img src="https://i.imgur.com/m7mnIM3.png" alt="drawing" width="70%%"/>
+  <img src="https://i.imgur.com/m7mnIM3.png" alt="drawing" width="70%"/>
 
 :::note
 **Acknowledgment Message** field will soon be removed from the UI.
