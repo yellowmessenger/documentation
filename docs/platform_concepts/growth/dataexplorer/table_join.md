@@ -22,21 +22,21 @@ Only rows that have matching values in both tables are returned. If there is no 
 
 **Example**: You can join the Chat Tickets and Email Tickets tables using the common column UID to determine if any users have raised tickets through both chat and email channels.
 
-![image](https://hackmd.io/_uploads/HJPYCNitR.png)
+![image](https://imgur.com/tSmp8y8.png)
 
 ### Left outer join (Left join)
 
 A left outer join returns all rows from the left table, and the matched rows from the right table. If there is no match, the result is NULL (no records are displayed) from the right table.
 **Use case**: Use a left outer join when you need all the rows from the left table, regardless of whether there is a matching row in the right table.
 
-![image](https://hackmd.io/_uploads/ryfxn4jtC.png)
+![image](https://imgur.com/CPMudRl.png)
 
 ### Right outer join (Right join)
 
 A right outer join returns all rows from the right table, and the matched rows from the left table. If there is no match, the result is NULL (no records are displayed) from the left table.
 **Use case**: Use a right outer join when you need all the rows from the right table, regardless of whether there is a matching row in the left table.
 
-![image](https://hackmd.io/_uploads/ryCniEsKR.png)
+![image](https://imgur.com/IyuHlaW.png)
 
 
 ### Full outer join (Full join)
@@ -44,7 +44,7 @@ A right outer join returns all rows from the right table, and the matched rows f
 A full outer join returns all rows when there is a match in either left or right table. If there is no match, the result is NULL (no records are displayed) from the side where there is no match.
 **Use case**: Use a full outer join when you need all the rows from both tables, regardless of whether there are matches in the other table.
 
-![image](https://hackmd.io/_uploads/S1NzAVstA.png)
+![image](https://imgur.com/w8GqojC.png)
 
 --------------
 
@@ -53,12 +53,12 @@ A full outer join returns all rows when there is a match in either left or right
 Follow the steps below to create a report using two data sources:
 
 1. Open **Insights > Data explorer**. Click **+Create report**. 
-    ![image](https://hackmd.io/_uploads/BkriG9ctR.png)
+    ![image](https://imgur.com/TcbkVnz.png)
               
 2. Select **Custom query > Multiple datasource** and **Next**. 
-    ![image](https://hackmd.io/_uploads/rynlCvE_C.png)              
+    ![image](https://imgur.com/TJVugCV.png)              
 3. Select **two** data sources from the available list of tables.
-    ![image](https://hackmd.io/_uploads/H1Wbfi4_R.png)
+    ![image](https://imgur.com/fUFx1pD.png)
 
 
 :::info
@@ -84,9 +84,10 @@ Follow the steps below to create a report using two data sources:
 
 
 4. Click the join option and select the type of join operation (inner, left, right, or full join).      
-![image](https://hackmd.io/_uploads/SJWxmiEuR.png)        
+    ![image](https://imgur.com/k3pXget.png)        
+
 5. Under **Select join criteria**, select a column present in both the tables for comparison. If there are matching values in the selected columns, the tables will be merged and common rows will be returned.          
-    ![image](https://hackmd.io/_uploads/SyYQ4i4_R.png)        
+    ![image](https://imgur.com/ZrOp89N.png)        
 
 > Column names in Datasource 2 are displayed based on the columns selected in Datasource 1. Both columns must have the same data type, ensuring that the columns shown in Datasource 2 match the data type of those selected in Datasource 1.
 
@@ -94,9 +95,9 @@ Follow the steps below to create a report using two data sources:
     - To deselect a column, click the cancel option next to the column name.
     - To select a column, pick a column name from the dropdown list.
 
-![image](https://hackmd.io/_uploads/BJMwjXsFR.png)
+![image](https://imgur.com/r5U28z7.png)
 
-![image](https://hackmd.io/_uploads/Sy3coQiK0.png)
+![image](https://imgur.com/60mksGY.png)
 
 
 7. A merged table is generated (untitled report) and is automatically filtered for the last 30 days. You can perform various actions on the report, such as:
@@ -106,7 +107,7 @@ Follow the steps below to create a report using two data sources:
     - Adding **filters**
     - Edit the data by clicking **Edit join query** 
 
-![image](https://hackmd.io/_uploads/B1PiNoVO0.png)        
+![image](https://imgur.com/J1Wpxfp.png)        
 
 -------------
 
@@ -114,11 +115,11 @@ Follow the steps below to create a report using two data sources:
 
 1. To make changes to the generated table, click **Edit join query**. 
 
-![image](https://hackmd.io/_uploads/Skmtt59FC.png)
+![image](https://imgur.com/x6kFXSK.png)
 
 2. You can select new Data sources, Join criteria or Projection and click **Update**.  
 
-![image](https://hackmd.io/_uploads/S1p3K5qtA.png)
+![image](https://imgur.com/3bUJWNR.png)
 
 3. Click **Save query** to save the updated table with a new name.  
 
@@ -128,7 +129,7 @@ Follow the steps below to create a report using two data sources:
 
 To reuse the joined table, save it by clicking **Save Query** and assigning a name to the report. You can find these saved reports under **Insights > Data Explorer > Custom reports**.
 
-![image](https://hackmd.io/_uploads/SkiuUq9K0.png)
+![image](https://imgur.com/h6qaMcq.png)
 
 ----------
 
@@ -137,11 +138,11 @@ To reuse the joined table, save it by clicking **Save Query** and assigning a na
 To filter the table data:
 
 1. Click **Filters**.
-    ![image](https://hackmd.io/_uploads/H19bdc5tC.png)
+    ![image](https://imgur.com/3oBwxN6.png)
 2. Choose filters for each table separately.
-    ![image](https://hackmd.io/_uploads/HJRpP55KA.png)
+    ![image](https://imgur.com/2E1pGS3.png)
 3. Add filter data for the required fields and click **Apply filter**.
-   ![image](https://hackmd.io/_uploads/r1tJdcctC.png)          
+   ![image](https://imgur.com/ghQjpw3.png)          
 
 
 ----------
@@ -151,6 +152,7 @@ To filter the table data:
 
 1. Table binning is not supported while filtering the tables.
 2. Exporting the new table as a CSV is not possible.
+
 
 
 
