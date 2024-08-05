@@ -34,7 +34,7 @@ To share bot access with other users, follow these steps:
 
 1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click the Access Control icon <img  src="https://imgur.com/vpKYa4b.png"  width="20"/>.
 
-    ![image](https://imgur.com/xZ7dWAk.png)
+    ![image](https://imgur.com/PReVBXd)
 
 2. Click **+Invite user**.
     - Enter the official **Email** address of the user.
