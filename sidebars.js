@@ -59,6 +59,7 @@ module.exports = {
           "cookbooks/studio/ticket-assignedevent",
           "cookbooks/studio/webview-node",
           "cookbooks/studio/user-inactivity",
+          "cookbooks/studio/debug-logs",
 
       ],
     }, 
