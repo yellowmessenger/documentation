@@ -83,7 +83,7 @@ To facilitate collaboration on your bot, you have the ability to invite other us
 **To invite users**, navigate to the **Bot settings > Access control** section from the overview page and invite users by entering their email IDs.
 You have the flexibility to invite multiple users and assign different levels of access to each. This ensures that users only have the permissions necessary for their role.
 
-![image](https://hackmd.io/_uploads/Sy8jq6mxA.png)
+![image](https://imgur.com/5d0hEBv)
 
 **To view and accept incoming access requests**, open the **User request** tab and if you find a request appropriate, you can grant the required permissions.
 
