@@ -5,6 +5,11 @@ sidebar_label: Preprocessing email info
 
 Pre-processing email information is essential in scenarios where automated responses or routing decisions need to be tailored based on specific criteria. 
 
+:::note
+Pre-processing is currently available only for email automation bots and is feature-gated. Once the email is configured, pre-processing will automatically appear on the Automation page.
+
+:::
+
 ## Benefits of pre-processing in email automation
 
 1. **Customized routing decisions**:

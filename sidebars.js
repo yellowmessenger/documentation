@@ -455,7 +455,7 @@ module.exports = {
               "platform_concepts/inbox/inbox_setup/emailvschat",
               "platform_concepts/inbox/inbox_setup/agentstatuses",
               "platform_concepts/inbox/inbox_setup/assignmentlogic",
-              "platform_concepts/inbox/inbox_setup/inboxevent",
+             // "platform_concepts/inbox/inbox_setup/inboxevent",
               "platform_concepts/inbox/inbox_setup/debugchecklist",
             //
                  ],
