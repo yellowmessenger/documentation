@@ -62,7 +62,7 @@ Once the option is enabled, you cannot disable it later.
 
 * Once the bot is created, you will be redirected to the **Overview** page of the parent bot. 
 
-   ![](https://imgur.com/XK6aIyf.png)
+   ![](https://imgur.com/94oJymf.png)
 <br/>   
 
 ### Manage Orchestrator bot
