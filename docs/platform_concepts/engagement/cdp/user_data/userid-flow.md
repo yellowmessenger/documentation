@@ -50,9 +50,9 @@ For details on how user records are created through conversations and unified in
 To add the User identification flow to your bot, follow these steps:
 
 
-1. Navigate to **Studio** > **Build** > **Conversation settings**.
+1. In Automation, click **Build** > **Conversation settings**.
    
-   ![](https://i.imgur.com/f0p7mxb.png)
+   ![](https://imgur.com/wJg2jQ2.png)
 
 
 2. On the pop-up screen that appears, click **User identification**.

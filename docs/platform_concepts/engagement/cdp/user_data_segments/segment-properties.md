@@ -8,9 +8,9 @@ Segmenting users based on user property filters is a powerful technique that all
 
 To create a user segment, follow these steps:
 
-1. Navigate to **Engage** > **User 360**.
+1. Navigate to **User 360**.
 2. Click **Add Segment**.
-   <img src="https://i.imgur.com/4VkOMSW.png" width="40%"/>
+   <img src="https://imgur.com/TXIxQ1l.png" width="40%"/>
 3.  In **Segment name**, enter a unique name for the segment.
 
  <img src="https://i.imgur.com/6O2hgru.png" width="70%"/>

@@ -10,9 +10,9 @@ It only supports CSV files, and the filename must begin with `userdata_`. The ma
 To sync data from an SFTP integration:
 
 1. [Connect your integration account to Yellow.ai](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview).
-2. Go to **Engage** > **User 360** and click **Import users** > **Sync integration data**.
+2. Go to **User 360** and click **Import users** > **Sync integration data**.
 
-   ![](https://i.imgur.com/l2tNVJX.png)
+   ![](https://imgur.com/5zOJP03.png)
 
    You will see the list of connected integrations.
 

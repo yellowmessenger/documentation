@@ -98,7 +98,7 @@ A tag is a label used to categorise users based on certain characteristics or at
 
 A user can have more than one tag.
 
-![](https://i.imgur.com/om7QH6j.png)
+![](https://i.imgur.com/9XPdPE0.png)
 
 
 ## Custom user properties
@@ -115,9 +115,9 @@ Once a property is created, you cannot change its data type or delete it.
 
 To create a new user property with your preferred label name and datatype, follow these steps:
 
-1. On the **User 360** page, click **User properties**.
+1. On the **User 360** module, click **User properties**.
 
-   ![](https://i.imgur.com/uQs4Qwc.png)
+   ![](https://i.imgur.com/9Z8Cz69.png)
 
 2. Click on **+Custom property**
 3. In **Property name**, enter a name for the property. 

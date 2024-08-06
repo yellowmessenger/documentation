@@ -17,7 +17,7 @@ To customise the User 360 table data/columns:
 
 1. On the **User 360** page, click **User properties**.
 
-   ![](https://i.imgur.com/qjjX6SP.png)
+   ![](https://i.imgur.com/9Z8Cz69.png)
 
 2. In **Select properties** (left pane), select the properties that you want to see in the User 360 table.
 
@@ -63,7 +63,7 @@ You can see three boxes that correspond to {parameter}{operator}{value}.
 
 6. From the users list, click on the user that you want to see.
 
-   ![](https://i.imgur.com/om7QH6j.png)
+   ![](https://imgur.com/IR8PA5h.png)
 
 See the following table for descriptions of each field in the User details card.
 
