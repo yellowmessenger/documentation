@@ -10,7 +10,7 @@ To add a user using the User 360 UI:
 
 1. On the **User 360** module, click **Add user** > **Single user**.
    
-   ![](https://i.imgur.com/PA1bduW.png)
+   ![](https://imgur.com/KeqOMjt.png)
 
 2. Enter the **userId** of the customer along with other details.
 
@@ -29,11 +29,11 @@ You can add missing properties or update existing properties of a user. As the `
 
 1. On the **User 360** page, navigate to the user that you want to edit and click on the user row.
 
-   ![](https://i.imgur.com/FO2xuPH.png)
+   ![](https://imgur.com/24vv7Gn.png)
 
 2. Click on the **Edit** icon
 
-   ![](https://i.imgur.com/acH8bT3.png)
+   ![](https://imgur.com/88yBvqe.png)
 
 2. Edit the properties that you want to change or add missing property values.
 3. To add more tags, click on **+Add tags** and in **Tags** enter each tag name and press enter. If the tag name you enter is available, you will see it in the drop-down.

@@ -84,7 +84,7 @@ Here are the preliminary checks that must be adhered to before uploading a CSV f
 
 To import the CSV file with user details, follow these steps:
   
-1. On Engage, click **User 360** > **Add user** > **Import users**.
+1. On **User 360**, click **Add user** > **Import users**.
    ![](https://i.imgur.com/NgpU1zt.png)
   
 

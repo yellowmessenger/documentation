@@ -11,16 +11,15 @@ Archiving a segment will not delete the user data associated with that segment. 
 
 * To archive a segment, select the segment from the left panel, and click on **Actions** > **Archive segment**.
 
-   ![](https://i.imgur.com/ml1Gh8j.png)
+   ![](https://imgur.com/n8fuYBX.png)
 
 * To view all archived segments, click on the **Archived** tab in the left panel.
 
-   ![](https://i.imgur.com/ORfiahI.png)
+   ![](https://imgur.com/3dVW2nx.png)
   
 
-* To unarchive a segment, select any archived segment and click on **Unarchive** segment.
+* To unarchive a segment, select any archived segment and click on **Unarchive** segment (refer to the image above).
 
-   ![](https://imgur.com/036wVSC)
  
 
 
