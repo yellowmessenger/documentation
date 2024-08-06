@@ -8,7 +8,7 @@ sidebar_label: Overview
 
 With Knowledge base, effortlessly transform your existing website into an intelligent bot that responds to user queries, requiring zero effort on your part—simply input your website URL, and the bot is ready to engage with precision.
 
-![image](https://imgur.com/0t4ESa0.png)
+![image](https://imgur.com/7ySgSLu.png)
 
 
 Inputting a website URL into the Knowledge base triggers the creation of a customized bot. This bot is designed to extract and leverage pertinent information from the provided URL, facilitating automated responses and enhancing user engagement.
@@ -60,26 +60,24 @@ Explore this flowchart depicting the bot's navigation to knowledgebase.
 
 To create a bot for your website, follow these steps:
 
-1. Open **Studio** > **KB** > **Knowledge base**.
+1. Go to **Knowledge base**.
 
-   ![](https://i.imgur.com/PqYbCww.png)
+   ![](https://imgur.com/1ceNXU5.png)
 
-2. Click **+Add URL**. Add your website URL and click Save. 
+2. Click **+ Add URL**. Add your website URL and click Save. 
 
-    ![image](https://imgur.com/q1U4pmG.png)
+    ![image](https://imgur.com/aEP8jvo.png)
 
     > Configure this in Sandbox/Development environment. 
 
     :::info
-    You can set up the welcome [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) or [document search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) node to organize the conversation structure. The flow may look like this: 
-    ![image](https://imgur.com/ANSTKY2.png)
-
+    You can set up the welcome [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) or [document search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) node to organize the conversation structure. 
     :::
 
 
 3. Bot is ready for testing on the right side pane. After testing the bot, you can [Publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) it to Live/Production environment and [deploy](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#deploy-chat-widget) it to your website. 
 
-    ![image](https://imgur.com/MmoprOF.png)
+    ![image](https://imgur.com/f0zqz3h.png)
 
 :::note
 While building your website bot, maintain simplicity by refraining from adding multiple intents and flows that could potentially impact the confidence of the bot's responses.

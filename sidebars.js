@@ -1308,6 +1308,7 @@ module.exports = {
             "platform_concepts/appConfiguration/avaya",
             "platform_concepts/appConfiguration/customliveagent",
             "platform_concepts/appConfiguration/freshchat",
+            "platform_concepts/appConfiguration/five9",
             "platform_concepts/appConfiguration/genesys",
             "platform_concepts/appConfiguration/genesys-cloud-livechat",
             "platform_concepts/appConfiguration/intercom-livechat",

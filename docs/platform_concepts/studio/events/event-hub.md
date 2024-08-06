@@ -35,10 +35,6 @@ The following are the events available for our chat widget.
 
 ***
 
-### Inbox related events
-
-Refer to this [doc](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxevent) for inbox events.
-
 ### <a name="eng-1"></a> Engage related events
 
 The following are the events available for **Engage**.

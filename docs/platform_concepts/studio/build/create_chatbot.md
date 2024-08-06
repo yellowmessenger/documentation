@@ -1,6 +1,6 @@
 ---
-title: Create Chatbot
-sidebar_label : Create Chatbot
+title: Create chatbot
+sidebar_label : Create chatbot
 ---
 
 This guide will walk you through the process of creating a chattbot on the Yellow.ai platform.
@@ -27,4 +27,4 @@ To create a chatbot, follow these steps:
 
 * Once your bot is created, you will be redirected to the Overview page. Here, you can [configure](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration) your newly created chatbot according to your requirements
 
-    ![](https://imgur.com/KSaxe8b.png)
+    ![](https://imgur.com/CK1d1BU.png)
