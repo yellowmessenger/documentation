@@ -102,6 +102,7 @@ module.exports = {
   ],
 },    
 // end of inbox 
+
  
 //insights 
 {
@@ -394,18 +395,6 @@ module.exports = {
                 
           
 
-        {
-          type: "category",
-          label: "Chat log analysis and training evaluation",
-          collapsed: true,
-          items: [
-            "platform_concepts/studio/analyze/analyseoverview",
-            "platform_concepts/studio/analyze/chat-logs",
-            "platform_concepts/studio/build/bot-logs",
-            "platform_concepts/studio/analyze/training-performance",
-            "platform_concepts/studio/analyze/topics",
-          ],
-        },
         "platform_concepts/studio/studio-faqs",
     
       ],
@@ -928,6 +917,29 @@ module.exports = {
         "platform_concepts/engagement/engage_troubleshooting",
       ],
     },
+
+//analyze module starts here 
+{
+  type: "category",
+  label: "Analyze",
+  collapsed: true,
+  items: [
+    {
+      type: "category",
+      label: "Chat log analysis and training evaluation",
+      collapsed: true,
+      items: [
+        "platform_concepts/studio/analyze/analyseoverview",
+        "platform_concepts/studio/analyze/chat-logs",
+        "platform_concepts/studio/build/bot-logs",
+        "platform_concepts/studio/analyze/training-performance",
+        "platform_concepts/studio/analyze/topics",
+      ],
+    },
+
+  ],
+}, 
+//end of analyse
 
 
 
