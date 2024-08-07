@@ -147,7 +147,7 @@ To connect the Google chat channel to your bot on the platform, follow these ste
 
 To add events to your bot, follow these steps:
 
-1. Navigate to the **Studio** > **Event** >  **Custom events**.
+1. Navigate to the **Automation** > **Event** >  **Custom events**.
 
      ![](https://imgur.com/SLDyZZG.png)
      

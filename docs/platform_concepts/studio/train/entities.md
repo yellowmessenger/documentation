@@ -49,7 +49,7 @@ User: Can you recommend some good Italian restaurants nearby?
 
 In this scenario, the text type entity can easily identify "Italian" from the user's input, allowing the chatbot to understand the cuisine preference and provide relevant recommendations. 
 
-1.  Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
+1.  Go to **Automation** > **Train** > **Entities** > **+ Add new entity**.
 
      ![](https://imgur.com/a283ade.png)
 
@@ -61,7 +61,7 @@ In this scenario, the text type entity can easily identify "Italian" from the us
 
 3. Click **Add**. This will create the entity of list type.
 
-4. Go to  **Studio** > **Train** > **Intents** > [Add intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
+4. Go to  **Automation** > **Train** > **Intents** > [Add intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
 
 5. In each user utterance of an intent, right-click on a word that represents an entity and select the corresponding entity from the options.
 
@@ -73,7 +73,7 @@ List type entities are a specific category used to recognize predefined lists of
 
 For instance, consider a scenario where you are dealing with modes of payment. The list entity name is "mode of payment" and would contain values like UPI, Card, and Cash on delivery. When all distinct values of an entity are known in advance, the list type entity can be used.
 
-1. Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
+1. Go to **Automation** > **Train** > **Entities** > **+ Add new entity**.
 
      ![](https://imgur.com/a283ade.png)
 
@@ -105,7 +105,7 @@ For instance, here are some regex samples:
 
 To add regex type entities:
 
-1. Go to **Studio** > **Train** > **Entities** > **+ Add new entity**.
+1. Go to **Automation** > **Train** > **Entities** > **+ Add new entity**.
 
    ![](https://imgur.com/a283ade.png)
 
@@ -125,7 +125,7 @@ To add regex type entities:
 
 You can edit all the information within entities as explained in the following:
 
-1. Go to **Studio** > **Train** > **Entities**.
+1. Go to **Automation** > **Train** > **Entities**.
 
    ![](https://imgur.com/14D8xgH.png)
 
@@ -141,7 +141,7 @@ You can edit all the information within entities as explained in the following:
 
 If an entity is irrelevant or redundant, you can delete it. To delete an entity:
 
-1. Go to **Studio** > **Train** > **Entities**.
+1. Go to **Automation** > **Train** > **Entities**.
 
    ![](https://imgur.com/14D8xgH.png)
    
@@ -167,7 +167,7 @@ Following is the sample CSV file format to import the entities into the system.
 Import option is available only for list type entities.
 :::
 
-1. Go to **Studio** > **Train** > **Entities**.
+1. Go to **Automation** > **Train** > **Entities**.
 
     ![](https://imgur.com/14D8xgH.png)
 
@@ -191,7 +191,7 @@ Export option is available only for list type entities.
 
 To export entities:
 
-1. Go to **Studio** > **Train** > **Entities**.
+1. Go to **Automation** > **Train** > **Entities**.
 
     ![](https://imgur.com/14D8xgH.png)
 

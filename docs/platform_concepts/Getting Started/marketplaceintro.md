@@ -127,7 +127,7 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/ex
 ## <a name="4"></a> 3. Edit imported flows 
 
 
-To edit imported flows, go to **Studio** > **Build** > **Flows** and edit the flow. Learn more about flows and how to edit flows [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). 
+To edit imported flows, go to **Automation** > **Build** > **Flows** and edit the flow. Learn more about flows and how to edit flows [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys). 
 
 The following actions can be performed after exporting the template: 
 

@@ -28,7 +28,7 @@ API download data would contain this information:
 
 Follow the given steps to download the API logs:
 
-1. Open **Studio** > **API** tab.
+1. Open **Automation** > **API** tab.
 2. Select the environment.
     - Logs will be downloaded only for the selected environment. For example, if you have selected the dev environment it would download requests sent from the dev env only.
 3. Select the API for which you want to download logs data.

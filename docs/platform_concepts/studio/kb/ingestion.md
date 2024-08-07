@@ -64,7 +64,7 @@ In the **Acronym** section, you can enter common phrases for specific terms. Thi
 
 To add acronyms, follow:
 
-1. Go to **Studio** > **KB** > **Acronym** > **+ Add new acronyms**.
+1. Go to **Knowledge base** > **Acronym** > **+ Add new acronyms**.
 
     ![](https://i.imgur.com/NjHhs90.png)
 

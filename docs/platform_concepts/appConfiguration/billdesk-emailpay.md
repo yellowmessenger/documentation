@@ -69,7 +69,7 @@ Please specify the **Min length**, **Max length** and the **data type**(numeric/
 
 To receive events and trigger flows based on events, you need to enable that specific event in your bot settings.
 
-1. In the Development/Staging environment, go to **Studio** > **Event**.
+1. In the Development/Staging environment, go to **Automation** > **Event**.
 2. In **Integrations** > **Billdesk EmailPay Payment Status**.
 3. Click on the three dots icon and click **Activate**.
 
@@ -94,7 +94,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 :::
 
 
-1. In the Studio flow builder, select the **Integrations** node and click **Billdesk EmailPay** from the list of integrations that have been enabled for that bot.
+1. In the Automation flow builder, select the **Integrations** node and click **Billdesk EmailPay** from the list of integrations that have been enabled for that bot.
 
    <img src="https://i.imgur.com/kHnNZrh.png" width="80%"/>
 

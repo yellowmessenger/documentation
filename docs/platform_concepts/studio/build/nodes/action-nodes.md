@@ -351,7 +351,7 @@ This node lets you trigger an event with a certain amount of delay. For example,
 
 To use this node:
 
-1. Create a user event. To do so, go to **Studio** > **Builder** > **User Events** > **+ Add Even**t.
+1. Create a user event. To do so, go to **Automation** > **Event** > **User Events** > **+ Add Even**t.
 
  ![](https://i.imgur.com/GwSPuxH.png)
 

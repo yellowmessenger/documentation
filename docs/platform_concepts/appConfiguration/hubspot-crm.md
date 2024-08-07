@@ -127,7 +127,7 @@ You need to add the webhook URL from the integration page in your Hubspot CRM ap
 
 To manage your Hubspot CRM account through yellow.ai bot, follow these steps:
 
-1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
+1. Go to **Automation** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
 2. In whichever point you want the bot to access Hubspot CRM, inlcude the Hubspot CRM node. For that, drag the node connector, go to **Integrations** > **Hubspot**.
 
    ![](https://i.imgur.com/KUo5DgA.png)

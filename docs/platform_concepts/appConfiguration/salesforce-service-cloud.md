@@ -71,7 +71,7 @@ To connect your Salesforce CRM account with Yellow.ai, follow the these steps:
 
 To carry out a certain action in your Salesforce account, follow these steps:
 
-1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
+1. Go to **Automation** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
 
    ![](https://i.imgur.com/Wcacej3.png)
 

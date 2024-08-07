@@ -41,7 +41,7 @@ The following are some key features of the chat timeouts which can be customized
 | Setting | Description |
 |:-------- |:--------:|
 | Inactivity from customer | (optional) This is a built-in setting to automatically trigger a **customer inactivity** event to timeout a customer if they have not responded to the agent's (bot's) reply on the chat for a while. You can check the box and set the duration in minutes.   |
-| Inactivity from Agent | (optional) This is a built-in setting to automatically trigger an event to timeout an agent if they have not responded to the customers's reply on the chat for a while. You can check the box and set the duration in minutes. <br/>The event trigger for **agent inactivity** can be enabled and then configured within **Studio** to notify the customer when the agent is under heavy workload and there might be a delay in their response.|
+| Inactivity from Agent | (optional) This is a built-in setting to automatically trigger an event to timeout an agent if they have not responded to the customers's reply on the chat for a while. You can check the box and set the duration in minutes. <br/>The event trigger for **agent inactivity** can be enabled and then configured within **Automation** to notify the customer when the agent is under heavy workload and there might be a delay in their response.|
 | Auto Ticket closure | Checking this box will automatically close the chat (when there is no activity identified within the time period entered in the Channels settings below). |
 | Do not close Ticket | This box can be set based on the tags present in the chat. A set of customised tags are available which you can choose from. You can choose not to close the ticket based on the presence or absence of a tag.|
 
@@ -69,7 +69,7 @@ Follow the bellow steps:
 1. Configure the inactivity trigger on the settings page by following the above steps. 
 2. When inactivity is identified (after 1 minute), ``` ticket-inactivity``` event is generated.
     ![](https://i.imgur.com/mkNjqbX.png)
-3. Open **Studio** module. Go to **Events**. 
+3. Open **Automation** module. Go to **Events**. 
 4. Search for **ticket-inactivity** in **Inbox events**. 
     ![](https://i.imgur.com/ja4aikO.png)
 5. Select **Activate**. 

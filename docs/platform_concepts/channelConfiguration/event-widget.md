@@ -74,7 +74,7 @@ You need to follow the below prerequisites to trigger bot-opened and bot-closed 
      
 To trigger bot-opened and bot-closed events, follow these steps:
        
-1. Select the respective environment and go to **Studio** > **Event** > **Widget**.
+1. Select the respective environment and go to **Automation** > **Event** > **Widget**.
 
     ![](https://imgur.com/klf1W9f.png)
     

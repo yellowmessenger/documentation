@@ -255,7 +255,7 @@ Slack is a workplace communication tool - a single place for messaging, tools an
 
 ***
 
-## 8. **Studio** 
+## 8. **Automation** 
 
 #### 8.1 SyncAPI added to Channel Filter Node
  

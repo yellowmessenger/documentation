@@ -22,7 +22,7 @@ We have either two or three environments, depending on the specific bot: Develop
 * You can add unlimited columns to the table.
 :::
 
-1. Go to **Studio** > **Database**.
+1. Go to **Automation** > **Database**.
 2. Navigate to the base environment (Staging or Sandbox).
 3. Click **Create new table**.
 
@@ -45,7 +45,7 @@ You can either add new columns to the current table or rename existing fields. A
 
 To edit a table:
 
-1. Go to **Studio** > **Database** and navigate to the base environment as per your environment hierarchy. 
+1. Go to **Automation** > **Database** and navigate to the base environment as per your environment hierarchy. 
 2. Select the table to edit and click **Table actions** > **Edit table**.
 
     <img src="https://i.imgur.com/jjaGBlK.png" alt="drawing" width="60%"/>
@@ -85,7 +85,7 @@ You cannot transfer data from one environment to another. Any data present in an
 To add each record manually:
 
 1. Choose the environment where you want to add record.
-2. In Studio, click **Database**, navigate to the table where you want to add a new record.
+2. In Automation, click **Database**, navigate to the table where you want to add a new record.
 2. Click **Add new record**.
 
   <img src="https://i.imgur.com/bU1H2bL.png"/>
@@ -111,7 +111,7 @@ To import table data:
 To easily create a CSV file, first download the table (**Table actions** > **Download**) and add the records that you want to upload.
 :::
 
-2. Go to **Studio** > **Database** and click the table for which you want to import data.
+2. Go to **Automation** > **Database** and click the table for which you want to import data.
 
 3. Click <img src="https://i.imgur.com/sTOKCmc.png"  width="40"/>.
 
@@ -232,7 +232,7 @@ For example, you can see the column named ‘test’ with `****` instead of real
 You can delete a db table only in sandbox/development environment.
 :::
 
-1. Go to **Studio** > **Database** and select the table to edit 
+1. Go to **Automation** > **Database** and select the table to edit 
 2. Click **Table actions** and choose the preferred option.
 
   ![](https://i.imgur.com/nstJTaR.png)

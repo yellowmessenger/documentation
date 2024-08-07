@@ -59,7 +59,7 @@ For example:
 :::
 
 
-2. Sticky agent assignment can only be implemented using API. To initialise the API, open **Studio** > **API**.
+2. Sticky agent assignment can only be implemented using API. To initialise the API, open **Automation** > **API**.
     ![](https://i.imgur.com/Q2UEhQa.png)
 
 > The sticky agent mapping logic between agents and your customers can be maintained internally in Yellow.ai's Database or externally through an API.

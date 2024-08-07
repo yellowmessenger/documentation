@@ -62,13 +62,13 @@ PayUBiz will whitelist the webhook URL provided by the merchant in their systems
 ### 1.4 Enable PayU event to receive event in bot 
 
 1. On the [Cloud Platform](https://cloud.yellow.ai) go to Staging/Development environment.
-2. On the left navigation bar, click **Studio** > **Event** > **Integrations** and search for `Payu Biz Payment Status`.
+2. On the left navigation bar, click **Automation** > **Event** > **Integrations** and search for `Payu Biz Payment Status`.
 
    ![](https://i.imgur.com/vI6zufl.png)
 
 3. Click on the more options icon and select **Activate**. If you have connected multiple accounts, you need to enable the event for each account.
 
-4. Once the event is activated, you can create a flow in the Studio > Build and use the event at the start of the flow to trigger a specific action, such as displaying a message indicating that the payment is completed.
+4. Once the event is activated, you can create a flow in the **Automation** > **Build** and use the event at the start of the flow to trigger a specific action, such as displaying a message indicating that the payment is completed.
 
    <img src="https://i.imgur.com/hFfvxaR.png" width="70%"/>
 
@@ -83,7 +83,7 @@ If there are multiple accounts, you can select from which account you want to pe
 
 ### 2.1 Generate payment link
 
-1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **PayU** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
+1. In the [Automation flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **PayU** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
    <img src="https://i.imgur.com/gOTE1zk.png" alt="drawing" width="60%"/>
 

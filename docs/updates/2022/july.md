@@ -4,11 +4,11 @@ sidebar_label: July 2022
 ---
 
 
-## 1. **Studio**
+## 1. **Automation**
 
-#### 1.1 Restructured Studio navigation as per the usage flow
+#### 1.1 Restructured Automation navigation as per the usage flow
 
-All options in the Studio navigation are reordered according to the user flow. This makes it more convenient for you to navigate between the options sequentially when configuring a bot.
+All options in the Automation navigation are reordered according to the user flow. This makes it more convenient for you to navigate between the options sequentially when configuring a bot.
   
 
 #### 1.2 Autocomplete suggestions for bot users

@@ -11,7 +11,7 @@ In this article, you will learn how to select an entry rule and design a campaig
 
 1. **User segmentation**: Grouping users based on shared characteristics, such as interests or behaviors, is known as user segmentation. There are two types of segments: static segments, which remain constant, and dynamic segments, which update automatically based on user data. To send targeted campaigns, you need to have user data grouped into segments in **user360**. Segments like product interest or recent purchasers can be created for effective messaging.
     > Follow the steps provided [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) to create and manage user segments
-2. **Events**: an event refers to a recognized occurrence by the bot (asynchronous). In **Studio**, there are various events available, such as widget, inbox, engage, integration, user inactivity, schedule, User 360, and custom events, which are used to handle occurrences and perform tasks.
+2. **Events**: an event refers to a recognized occurrence by the bot (asynchronous). In **Automation**, there are various events available, such as widget, inbox, engage, integration, user inactivity, schedule, User 360, and custom events, which are used to handle occurrences and perform tasks.
     > Learn more about events and the steps to create custom events [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub).
 :::
 

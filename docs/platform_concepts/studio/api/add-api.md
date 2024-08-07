@@ -1,6 +1,6 @@
 ---
 title: Add or import APIs
-sidebar_label : Add APIs via Studio's API module
+sidebar_label : Add APIs via Automation's API module
 ---
 
 In addition to the various integrations supported by Yellow.ai, you can seamlessly integrate any third-party APIs with your chatbot. This comprehensive guide provides step-by-step instructions on connecting your chatbot to external APIs, enabling real-time data storage and retrieval for creating a personalized user experience.
@@ -14,7 +14,7 @@ There are two ways by which you can add API:
 
 ### Add API manually
 
-1. Go to **Studio** > **API** > **+ Add new API**.
+1. Go to **Automation** > **API** > **+ Add new API**.
 
    ![](https://i.imgur.com/EguUcSR.png)
 
@@ -123,7 +123,7 @@ The **Configure environment** option is disabled in the **Live/Production** envi
 
 If you have a CURL script, JSON file, or collection URL, you can conveniently import it to yellow.ai.
 
-1. Go to **Studio** > **API**.
+1. Go to **Automation** > **API**.
 2. Click the arrow icon next to API management and select **Import** .
 
    ![](https://i.imgur.com/nCvs5WU.png)
@@ -164,7 +164,7 @@ Streamline API configuration across environments by using the **Configure Enviro
 
 To add environment variables:
 
-1. Go to **Studio** > **API** > **Configure environment**.
+1. Go to **Automation** > **API** > **Configure environment**.
 
    ![](https://i.imgur.com/0fZmKPs.png)
 
@@ -233,7 +233,7 @@ Here are the steps to configure MTLS authentication:
 
 1. Gather the required information mentioned above: Domain, Certificate, Key, and Certificate Authority.
 2. Navigate to the bot environment where you want to configure MTLS.
-3. On the [cloud platform](https://cloud.yellow.ai), go to **Studio**, then API.
+3. On the [cloud platform](https://cloud.yellow.ai), go to **Automation**, then API.
 4. On the right side, you'll see a lock icon labeled "Configure MTLS authentication." Click on it.
 
    ![](https://imgur.com/A9nIR0Y.png)
@@ -283,7 +283,7 @@ If you encounter any errors while saving the certificate, follow these steps:
 
 Exporting APIs involves capturing their configuration settings, allowing for seamless sharing, backup, or replication. Follow these steps to export APIs:
 
-1. Go to **Studio** > **API**.
+1. Go to **Automation** > **API**.
 2. Click the arrow icon next to API management and select **Export** .
 
    ![](https://i.imgur.com/2uCuacD.png)
@@ -309,7 +309,7 @@ Exporting APIs involves capturing their configuration settings, allowing for sea
 
 * For cRUL requests, instead of creating the API separately, [import the cURL request](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#import-apis-curljson) to prevent errors in the cloud. 
 
-#### API working correctly in Postman but returns a 403 error when integrated into the Studio API section
+#### API working correctly in Postman but returns a 403 error when integrated into the Automation API section
 
 The issue may stem from region-specific URLs being blocked. This could be because the region specific URLs are gettings bloxked, it is recommended to [Whitelist your region specific URL](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/domain-whitelisting#whitelist-domains-to-deploy-chat-widget). For instance, https://r1.cloud.yellow.ai.
 

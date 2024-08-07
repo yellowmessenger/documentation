@@ -17,7 +17,7 @@ When there are multiple flows, there is no need to test the entire bot. When the
 
 To test the current flow, follow these steps:
 
-1. Go to **Studio** > **Build**.
+1. Go to **Automation** > **Build**.
 2. Click the **Preview button** next to the desired flow.
 
     ![](https://imgur.com/lviJZ4f.png)
@@ -38,7 +38,7 @@ To trigger a specific flow when there are multiple flows in the bot, append the 
 
 To test the bot via URL, follow the given steps:
 
-1. Go to **Studio** > **Build** > **Flows**.
+1. Go to **Automation** > **Build** > **Flows**.
 2. Choose your preferred flow from the **Flows** drop-down.
 
     ![](https://imgur.com/AvQOPaK.png)

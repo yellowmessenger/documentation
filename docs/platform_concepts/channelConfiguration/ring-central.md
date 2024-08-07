@@ -288,7 +288,7 @@ To add custom fields to agent profiles in RingCX:
 
 After connecting your IVA Professional account with RingCX, you need to design the flow based on how you want the bot to handle the user chats in RingCX account using Yellow's AI capabilities.
 
-1. Login to you [IVA Professional account](https://cloud.yellow.ai) and go to **Studio** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#manually-create-a-flow).  
+1. Login to you [IVA Professional account](https://cloud.yellow.ai) and go to **Automation** > **Build** > and [create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#manually-create-a-flow).  
 2. Include a [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) to the **Start** node.
 
    ![](https://i.imgur.com/CPo5GDt.png)

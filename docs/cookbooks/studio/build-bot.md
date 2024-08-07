@@ -5,7 +5,7 @@ sidebar_label : Build a bot with FAQ and Customer Support
 
 This step-by-step guide helps you create a chat bot with FAQ and customer support.
 
-1. On the **Overview switcher**, click **Studio**.
+1. On the **Overview switcher**, click **Automation**.
 
 ![](https://i.imgur.com/tCFgOdr.png)
 

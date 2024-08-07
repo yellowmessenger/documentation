@@ -28,7 +28,7 @@ An API log contains the following information:
 
 To download the logs of an API:
 
-1. Go to **Studio** > **API** > hover over the specific API and click **Download**.
+1. Go to **Automation** > **API** > hover over the specific API and click **Download**.
 
    ![](https://i.imgur.com/4TVcAQP.png)
 

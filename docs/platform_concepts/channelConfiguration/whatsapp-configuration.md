@@ -275,7 +275,7 @@ To test your bot on WhatsApp, follow these steps:
 
      ![](https://imgur.com/C2bSSgp.png)
 	 
-2. Go to **Studio** > **Build** > **Flows**, select the flow that you want to test.
+2. Go to **Automation** > **Build** > **Flows**, select the flow that you want to test.
 
    ![](https://imgur.com/CSXypXJ.png)
    

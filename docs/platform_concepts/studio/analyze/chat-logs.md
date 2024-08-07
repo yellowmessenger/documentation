@@ -5,7 +5,7 @@ sidebar_label : Conversation Logs
 
 Conversation logs store the chronological history of interactions  between the user and your bot. This tool tracks bot interactions and identifies potentially problematic conversations. They help in analyzing user disengagement, understand user viewpoints, and improve processes. For example, you can check conversations to see if users are using the bot as intended. It also enhances online chat by keeping a record of information and outcomes.
 
-To access the conversation logs, go to **Studio** > **Analysis** > **Conversation logs**.
+To access the conversation logs, go to **Automation** > **Analysis** > **Conversation logs**.
 
    ![](https://i.imgur.com/9aDoONp.png)
 
@@ -98,7 +98,7 @@ To check such tags:
 
    ![](https://i.imgur.com/a9yNYOq.png)
 
-3. Go to the respective flow in Studio and make the necessary changes. 
+3. Go to the respective flow in Automation and make the necessary changes. 
 4. Test the bot to see if the changes work.
 
 

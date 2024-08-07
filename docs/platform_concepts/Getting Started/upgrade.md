@@ -35,7 +35,7 @@ The following features are currently unavailable in the Freemium plan and can be
 
 | Module | Restricted feature | Consumption limit |
 | -------- | -------- | -------- |
-| **Studio** | Doc Cog | 5000 chat sessions per user. |
+| **Automation** | Doc Cog | 5000 chat sessions per user. |
 | **Inbox** | Knowledgebase |500 email tickets and agent chats per month. |
 | **Insights** |Data Explorer, Dashboard and Doc Cog Insights |NA |
 | **Engage** | Monthly tracked users|5000 users per month. |

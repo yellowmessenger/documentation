@@ -32,7 +32,7 @@ In this article, you will learn:
 
 These use cases can be leveraged only after the Documents are successfully uploaded on the Documents section. 
 To upload the document in the Document section:
-- Open **Studio**> **Train** > **Document**.
+- Open **Automation**> **Train** > **Document**.
 - Add the required file.
 
 Learn how to upload files to Documents in the [next section](#f). 
@@ -41,14 +41,14 @@ Learn how to upload files to Documents in the [next section](#f).
 The document knowledge can be used in two different methods:   
 
 1. **Fallback**: Doc can be used as a fallback mechanism for unidentified queries for the bot. When the bot is not able to understand the query from the intent, it goes as a fallback to document search and fetches the response from the uploaded doc. 
-    - On the Studio landing page, click **Document Search**. 
+    - On the Automation landing page, click **Document Search**. 
     - **Enable** the toggle button next to **Actions**.   
 
    ![](https://i.imgur.com/QN5XllL.png)
 
 2. **Node**: Doc can be used as a node in flows. [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) - action node can be added in a flow and used as a searching tool for any user query.
     
-    i. Open **Studio** > **Build** > **Flows**. 
+    i. Open **Automation** > **Build** > **Flows**. 
 
     ii. Add a prompt node to recieve the response from the user(the data that needs to be searched in the doc). [Store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-and-retrieve-data-using-variables).
 
@@ -76,7 +76,7 @@ To view the report of search performance such as queries answered/unanswered, us
 
 Follow the steps below to upload a file: 
 
-1. On **Studio** > **Train**.   
+1. On **Automation** > **Train**.   
     - Open **Documents**-> Files section. 
     - Click **+Upload Documents**. 
 
@@ -584,7 +584,7 @@ Once an app is created you can give access to any site to it. You can view all t
 :::
 
 5. **Update on yellow.ai configuration**
-    - Open the yellow platform. **Studio** > **Train** > **Documents** > **Upload documents** > **Select Sharepoint**.
+    - Open the yellow platform. **Automation** > **Train** > **Documents** > **Upload documents** > **Select Sharepoint**.
     - Fill in the following details and select the required folders.
 
    ![](https://paper-attachments.dropbox.com/s_B1221157D5B1FEA09D2BC495FC79B892C493E227B6F11DEC0F9B34E843AF4B3C_1659530624222_image.png)
@@ -609,7 +609,7 @@ Once an app is created you can give access to any site to it. You can view all t
 | Files.Read.All                    | To read the content of files                                   |
 
 2. **Updating on yellow.ai configuration**
-    - Open the yellow platform. **Studio** > **Doc** > **Upload documents** > **Select Sharepoint**
+    - Open the yellow platform. **Automation** > **Doc** > **Upload documents** > **Select Sharepoint**
     - Fill in the following details > Sync > select the required folders.
 
 | Client ID, Client Secret, Realm | Obtain from AAD App, Realm (tenant ID) |

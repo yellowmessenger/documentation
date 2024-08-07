@@ -7,7 +7,7 @@ Instead of creating utterances manually, you can now auto-generate them and run 
 
 To try this, 
 
-1. Go to **Studio** and click **Test bot**.
+1. Go to **Automation** and click **Test bot**.
 
 ![](https://i.imgur.com/VsR4lqC.png)
 

@@ -205,7 +205,7 @@ You can find these tags in two places:
 
 1. **Production bots and past conversations:** 
 
-    i. Navigate to **Studio > Analysis > Conversation Logs**. 
+    i. Navigate to **Automation > Analysis > Conversation Logs**. 
  
       ![](https://imgur.com/5HuGmwv.png)
  
@@ -229,7 +229,7 @@ Adding skills to the dynamic chat node enhances goal-based conversations. For in
 
 To configure a Skill in the dynamic chat node, follow these steps:
 
-1. Go to **Studio** > **Build** > **Flows** > **Create flow** > **+ Create skill** and create a flow to execute certain actions. For more detailed information on how to create a Skill, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-skill). 
+1. Go to **Automation** > **Build** > **Flows** > **Create flow** > **+ Create skill** and create a flow to execute certain actions. For more detailed information on how to create a Skill, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-skill). 
 
    <img src="https://imgur.com/tnu6zWG.png" alt="drawing" width="100%"/>
 

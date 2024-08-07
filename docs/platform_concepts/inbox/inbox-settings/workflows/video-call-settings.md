@@ -52,9 +52,9 @@ Follow the given steps to enable video calls for specific agents:
 
 ## 3. Enable video call for the raise ticket node
 
-Follow the given steps to enable video calls for specific flow (raise ticket node) on studio:  
+Follow the given steps to enable video calls for specific flow (raise ticket node) on Automation:  
 
-1. Open **Studio** > **Build** > **Flows**.  
+1. Open **Automation** > **Build** > **Flows**.  
 2. Select the [Raise ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) on the respective flow.   
 3. Scroll down to advanced settings. On the **Voice ticket options** field select **Voice call** (mandatory to enable video for particular live chat).   
     ![](https://i.imgur.com/5OuBB2P.png)

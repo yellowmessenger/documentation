@@ -19,7 +19,7 @@ You can export one or more bot flows as a template with data from databases and 
 
 ### 1.1 Export flow templates to marketplace
 
-1. Go to **Studio** and click the flow you want to export as a template.
+1. Go to **Automation** and click the flow you want to export as a template.
 
  ![](https://i.imgur.com/47ONnMU.png)
  

@@ -45,7 +45,7 @@ The AWS integration enables bot to perform the following actions:
 
 Once the integration is successful, you can perform the following actions in bot conversations.
 
-1. Go to Development/Staging environment and navigate to **Studio** > **Build** > Select the flow where you want to add action node.
+1. Go to Development/Staging environment and navigate to **Automation** > **Build** > Select the flow where you want to add action node.
 2. Click **Add node** > **Integrations** > **AWS S3**.
 
     <img src="https://i.imgur.com/9RxSlpt.png" width="60%"/>

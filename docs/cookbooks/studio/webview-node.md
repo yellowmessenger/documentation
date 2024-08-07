@@ -249,7 +249,7 @@ https://app.yellowmessenger.com/components/webview/mr_appliance_llc/form
 
 To configure the webview node, follow these steps:
 
-1. Go to **Studio** > **Build** > **Flows**.
+1. Go to **Automation** > **Build** > **Flows**.
 
 2. Search for the Web wiew node and select it.
 

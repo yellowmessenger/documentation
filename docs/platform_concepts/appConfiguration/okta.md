@@ -61,13 +61,13 @@ You can copy the **Client ID** and **Client secret values** using the Copy to Cl
 
 ### 1.3 Receive event in Yellow.ai bot
 
-1. Login to cloud.yellow.ai and click **Studio** from the module switcher.
+1. Login to cloud.yellow.ai and click **Automation** from the module switcher.
 3. Click Event on the left navigation bar and choose **Custom Events**.
 
 ![](https://i.imgur.com/M1Tb8Md.png)
 
 5. Create an event named **okta-auth-success** and activate it.
-6. A journey needs to be created in the Studio module with this event as its trigger point. Based on the received event data, an appropriate message will be displayed to the end user.
+6. A journey needs to be created in the Automation module with this event as its trigger point. Based on the received event data, an appropriate message will be displayed to the end user.
 
 ![](https://i.imgur.com/dZo6FdL.png)
 
@@ -86,7 +86,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 
 ### 2.1 Generate login link
 
-1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Okta** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
+1. In the [Automation flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Okta** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
 ![](https://i.imgur.com/xHPgShg.png)
 
@@ -143,7 +143,7 @@ app.executeIntegrationAction({
 ```
 ### 2.2 Get user info
 
-1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Okta** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
+1. In the [Automation flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **Okta** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
 
 ![](https://i.imgur.com/xHPgShg.png)
 

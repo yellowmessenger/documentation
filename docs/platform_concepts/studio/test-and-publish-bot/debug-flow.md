@@ -34,7 +34,7 @@ Data type mismatch happens when we assign a data type to a field, but the value 
 
 ###  Resolve variable datatype conflicts
 
-1. Go to **Studio** and click the **Variable** icon.
+1. Go to **Automation** and click the **Variable** icon.
 
 ![](https://i.imgur.com/3vkklcJ.png)
 
@@ -47,7 +47,7 @@ Data type mismatch happens when we assign a data type to a field, but the value 
 
 ### Resolve datatype conflicts in database column 
 
-1. Go to **Studio** > **Database** > Click the desired table > **Table actions** > **Edit table**.
+1. Go to **Automation** > **Database** > Click the desired table > **Table actions** > **Edit table**.
 
 ![](https://i.imgur.com/kWcpAEE.png)
 
@@ -66,7 +66,7 @@ We offer a dedicated code logs section within our platform.
 
 To access it:
 
-1. Navigate to **Studio** > **Functions** > **Logs**.
+1. Navigate to **Automation** > **Functions** > **Logs**.
 
 For instance, if you need to troubleshoot a particular function within your flow and review its output:
 
@@ -101,7 +101,7 @@ To test it within a flow:
   ![](https://i.imgur.com/JKkWtPF.png)
 
 
-You can also test your APIs in the [Studio APIs section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#14-test-the-api).
+You can also test your APIs in the [Automation APIs section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api#14-test-the-api).
 
 :::note
 If you have any questions, feel free to post them on our [Community](https://community.yellow.ai/)

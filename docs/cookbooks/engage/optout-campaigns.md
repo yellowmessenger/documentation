@@ -11,7 +11,7 @@ Enhance your campaign targeting by excluding users who have opted out. Learn how
 
     <img src="https://i.imgur.com/N7RKWZJ.png" width="40%"/>
 
-     i. Navigate to **Studio** > **Train**.
+     i. Navigate to **Automation** > **Train**.
 
     ii. Click **Add new intent**.
 

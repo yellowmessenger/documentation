@@ -7,7 +7,7 @@ The [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-
 
 ## Send data and handle responses
 
-1. Go to **Studio** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case.
+1. Go to **Automation** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case.
 2. Include the [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response) at whichever point of the conversation you want the bot to access API.
 
    ![](https://i.imgur.com/heDgub5.png)
@@ -237,7 +237,7 @@ resolve(output);
 });
 ```
                                           
-2. Go to **Studio** > **Build** > to the respective flow and [store the response of this API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
+2. Go to **Automation** > **Build** > to the respective flow and [store the response of this API node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#store-the-api-response).
 3. Add a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) to the flow and pass the function you created in step 1. [Store the response of this function node in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) depending on its data type.
 
     <img src="https://i.imgur.com/4PTK4Q9.png" alt="drawing" width="90%"/>

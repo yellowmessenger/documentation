@@ -26,7 +26,7 @@ To create FAQs for your bot and provide self-serve support to your users, follow
 
 To add FAQs under default category, follow these steps:
 
-1. Go to **Studio** > **Train** > **FAQs** > **+ Add new question**. 
+1. Go to **Automation** > **Train** > **FAQs** > **+ Add new question**. 
 
    ![](https://imgur.com/voP4aaJ.png)
    
@@ -144,7 +144,7 @@ You can the add FAQs in multiple languages, follow the given steps:
 
 ### Configure languages
 
-1. Navigate to **Studio** > **Build** > **Flows** > **Conversation settings**.
+1. Navigate to **Automation** > **Build** > **Flows** > **Conversation settings**.
 
    ![](https://imgur.com/2OzMDH8.png)
    

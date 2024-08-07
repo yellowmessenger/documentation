@@ -56,7 +56,7 @@ Examples of how to configure Groups for different use cases:
 
     ![](https://i.imgur.com/RGipcu0.png)    
 
-2. After creating a [support flow](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo#tab-1-import-flow-and-request-for-support) on **Studio**, open **Raise ticket** node. Enable **Advanced options** and select the **Department** which must handle the live chat requests that are raised through this flow. 
+2. After creating a [support flow](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo#tab-1-import-flow-and-request-for-support) on **Automation**, open **Raise ticket** node. Enable **Advanced options** and select the **Department** which must handle the live chat requests that are raised through this flow. 
 
 	![](https://i.imgur.com/V1ubvp4.png)
 
@@ -79,7 +79,7 @@ If there multiple email groups, (for example Car wash and Car maintainence are t
 #### 3. Group agents to handle live chats and email tickets
 
 1.  Open **Group settings** > **Add group**. **Add Group name, group code, email IDs** and **Agents**. 
-2. After creating a [support flow](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo#tab-1-import-flow-and-request-for-support) on **Studio**, open **Raise ticket** node. Enable **Advanced options** and select the **Department** which must handle the live chat requests that are raised through this flow. 
+2. After creating a [support flow](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo#tab-1-import-flow-and-request-for-support) on **Automation**, open **Raise ticket** node. Enable **Advanced options** and select the **Department** which must handle the live chat requests that are raised through this flow. 
 3. If a bot user requests a live chat, the request is assigned to an agent and it will be available in the Chats section of Inbox. If an email is sent to that email ID, the request is assigned to an agent and it will be available in the Tickets section of Inbox.
 
 ----

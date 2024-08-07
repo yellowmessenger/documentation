@@ -10,7 +10,7 @@ A slug is a combination of the flow name and auto-generated characters in the fo
 
 To trigger a specific bot flow, follow these steps:
 
-1. Go to **Studio** > **Build** > **Flows**.
+1. Go to **Automation** > **Build** > **Flows**.
 2. Navigate to your preferred flow from the **Flows** drop-down.
 
     ![](https://imgur.com/AvQOPaK.png)

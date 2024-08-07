@@ -15,7 +15,7 @@ This event gets triggered for the specific node in a flow only if the user has b
 
 ## Create an user inactivity event
 
-1. Go to **Studio** > **Event** > **User inactivity events** > **+ Add event**.
+1. Go to **Automation** > **Event** > **User inactivity events** > **+ Add event**.
 
    ![](https://i.imgur.com/Wgt0EyH.png)
 

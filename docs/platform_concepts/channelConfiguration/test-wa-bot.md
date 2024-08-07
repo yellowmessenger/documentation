@@ -23,17 +23,17 @@ To initiate testing, follow these steps:
 
 1. Enter the testing number provided by Yellow.ai or use your personal number.
 2. [Build your bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot) with the required conversational flows based on your use case.
-3. Test the WA bot using either Studio or Channels module. 
+3. Test the WA bot using either Automation or Channels module. 
 
-    * Use the Preview section of the Studio module.
+    * Use the Preview section of the Automation module.
     * Use the WhatsApp messenger page in the Channels module.
 
 
-##  Test Whatsapp bot using Studio module
+##  Test Whatsapp bot using Automation module
 
-To test WA bot from Studio module, follow these steps:
+To test WA bot from Automation module, follow these steps:
 
-1. Navigate to **Studio** > **Build** > **Flows** and select the flow that you want to test.
+1. Navigate to **Automation** > **Build** > **Flows** and select the flow that you want to test.
 
      ![](https://imgur.com/CSXypXJ.png)
      
@@ -70,6 +70,6 @@ To test WA bot from Studio module, follow these steps:
 
    ![](https://imgur.com/kJ0NqTE.png)
    
-* Follow the steps outlined in the testing section of the [Studio module](#test-whatsapp-bot-using-studio-module).
+* Follow the steps outlined in the testing section of the [Automation module](#test-whatsapp-bot-using-studio-module).
 
 

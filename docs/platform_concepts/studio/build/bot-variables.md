@@ -201,7 +201,7 @@ For example, let's say that a bot needs to connect to a specific external API. R
 
 To create a config variable, follow these steps:
 
-1. Go to **Studio** > **Build** > select the specific flow > click the **Variable** icon.
+1. Go to **Automation** > **Build** > select the specific flow > click the **Variable** icon.
 
    ![](https://i.imgur.com/tDtzjXs.png)
 
@@ -226,7 +226,7 @@ You can use user properties to personalize experiences in bot conversations and 
 
 To create a variable, follow these steps:
 
-1. Go to **Studio** > **Build** > select the specific flow > click the **Variable** icon.
+1. Go to **Automation** > **Build** > select the specific flow > click the **Variable** icon.
 
    ![](https://i.imgur.com/tDtzjXs.png)
 
@@ -251,7 +251,7 @@ You can also create variables through nodes, and those variables can be used in 
 
 **To create variable via nodes:**
 
-1. Go to **Studio** > **Build** > and select the specific flow where you want to create the variable.
+1. Go to **Automation** > **Build** > and select the specific flow where you want to create the variable.
 
 2. Select the node where you want to store a user response in a variable and click **Select variable**. 
  

@@ -11,7 +11,7 @@ To ensure timely alerts of any API failures or issues, Yellow.ai provides an opt
 
 To set up an alert:
 
-1. Go to **Studio** > **API**.
+1. Go to **Automation** > **API**.
 
    ![](https://i.imgur.com/P36r4kT.png)
 
@@ -36,7 +36,7 @@ API error logs capture information about issues in an application's API. They he
 
 To check API error logs:
 
-1. Go to **Studio** > **API** > **API failure logs**.
+1. Go to **Automation** > **API** > **API failure logs**.
 
    ![](https://i.imgur.com/h6oI3pN.png)
 

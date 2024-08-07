@@ -16,7 +16,7 @@ In rare instances, some logs may not be displayed due to our sampling process. T
 
 To check the debug logs in Sandbox and Staging environments,
 
-1. Go to **Studio** > **Build** and click the respective flow.
+1. Go to **Automation** > **Build** and click the respective flow.
 
    ![](https://i.imgur.com/olJfQZF.png)
 
@@ -51,7 +51,7 @@ If you hover over each timestamp, you can see the option to go to the respective
 
 To check the debug logs in Production:
 
-1. Go to **Studio** > **Analysis** > **Conversation logs** > click the preferred conversation.
+1. Go to **Automation** > **Analysis** > **Conversation logs** > click the preferred conversation.
 
    ![](https://i.imgur.com/zxl0njk.png)
 

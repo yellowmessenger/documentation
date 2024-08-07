@@ -51,9 +51,9 @@ The webhook URL serves as a callback endpoint where Paytm can send notifications
 ## Enable Paytm event for your bot
 
 1. On the Cloud Platform go to Staging/Development environment.
-2. On the left navigation bar, click **Studio** > **Event** > **Integrations** and search for `Paytm Payment Status`.
+2. On the left navigation bar, click **Automation** > **Event** > **Integrations** and search for `Paytm Payment Status`.
 3. Click on the more options icon and select Activate. If you have connected multiple accounts, you need to enable the event for each account.
-4. Once the event is activated, you can create a flow in the **Studio** > **Build** and use the event in a flow to trigger a specific action, such as displaying a message indicating that the payment is completed successfully.
+4. Once the event is activated, you can create a flow in the **Automation** > **Build** and use the event in a flow to trigger a specific action, such as displaying a message indicating that the payment is completed successfully.
    
    <img src="https://i.imgur.com/o1lrDXV.png" width="60%"/>
 
@@ -95,7 +95,7 @@ If there are multiple accounts, you can select from which account you want to pe
 
 ### Generate Paytm payment link in bot conversation
 
-1. Go to Development/Staging environment and navigate to **Studio** > **Build** > Select the flow where you want to add the Generate payment link node.
+1. Go to Development/Staging environment and navigate to **Automation** > **Build** > Select the flow where you want to add the Generate payment link node.
 
 2. Click **Add node** > **Integrations** > **Paytm**.
 

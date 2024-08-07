@@ -31,7 +31,7 @@ While you can make modifications and publish flows in the Staging environment, i
 
 To publish a bot to live mode follow these steps:
 
-1. Ensure the bot is in **Sandbox**/**Development** mode. Go to **Studio** > **Build** > **Publish changes**. 
+1. Ensure the bot is in **Sandbox**/**Development** mode. Go to **Automation** > **Build** > **Publish changes**. 
 
    ![](https://i.imgur.com/mVfjm0G.png)
 
@@ -72,7 +72,7 @@ Publishing certain flows only helps you to release specific flows within your bo
 
 To access **Publish selected flow**s, follow these steps: 
 
-1. Go to **Studio** > **Publish changes** > **Publish selected flows**
+1. Go to **Automation** > **Publish changes** > **Publish selected flows**
     
     ![](https://i.imgur.com/z6kwgb9.png)
 
@@ -116,7 +116,7 @@ Revert option is a handy tool for fixing bugs in the live version. It lets you r
 
 To revert changes:
 
-1. Go to a bot, ensure the bot is in **Live/Production** mode and go to **Studio** > **Build** > **Revert**.
+1. Go to a bot, ensure the bot is in **Live/Production** mode and go to **Automation** > **Build** > **Revert**.
     ![](https://i.imgur.com/2U4KqrJ.png)
 
 2. Select the version to which the bot should be reverted.

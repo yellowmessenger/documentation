@@ -18,7 +18,7 @@ With Knowledge base, you can achieve:
 - **Customization**: Bots are tailored to the unique structure and content of each website, optimizing user engagement.
 - **Scalability**: Easily scalable for applications ranging from small business websites to large-scale e-commerce platforms.
 
-This feature, driven by Yellow.ai's exclusive **Studio** module (not GPT), uses a functionality similar to **Document Cognition (Doc Cog)** to support knowledge base responses.
+This feature, driven by Yellow.ai's exclusive **Automation** module (not GPT), uses a functionality similar to **Document Cognition (Doc Cog)** to support knowledge base responses.
 
 
 :::note

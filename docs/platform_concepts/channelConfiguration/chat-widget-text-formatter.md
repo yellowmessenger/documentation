@@ -49,7 +49,7 @@ To enable text formatting, follow these steps:
     
 4. Click **Save changes**.
 
-5. Navigate to **Studio**, select the required flow, and in the respective node format the text.
+5. Navigate to **Automation**, select the required flow, and in the respective node format the text.
 
      ![](https://i.imgur.com/irymScC.png)
      

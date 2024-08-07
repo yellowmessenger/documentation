@@ -64,7 +64,7 @@ You need to create an app in Konnect Insights with the yellow.ai bot credentials
 
 ## Create tickets and share user messages to Konnect Insights via bot conversations
 
-1. Go to **Studio** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on how you want the bot to take the user through the process.
+1. Go to **Automation** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on how you want the bot to take the user through the process.
 2. Include the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) at the point in the flow where you want to let the user talk to a live agent. To accomplish this, include a Raise ticket node and choose **Custom Live Agent** under **Live chat agent**.
 
    ![](https://i.imgur.com/G9GaBr3.png)

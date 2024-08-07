@@ -57,7 +57,7 @@ Follow the steps below to enable auto-translate:
 
 **Prerequisite**
 
-To Auto translate messages, you must first set  **Translate user message** to **YES** in **Studio** while configuring the **Raise Ticket** node.  
+To Auto translate messages, you must first set  **Translate user message** to **YES** in **Automation** while configuring the **Raise Ticket** node.  
 	![](https://i.imgur.com/FszdHVQ.png)
 :::
 

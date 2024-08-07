@@ -136,7 +136,7 @@ To find the webhook URL, go to **Integrations** > **CRM** > **Microsoft Dynamic 
 
 To manage your Microsoft D 365 CRM account through yellow.ai bot, follow these steps:
 
-1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
+1. Go to **Automation** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
 2. In whichever point you want the bot to access **Microsoft D 365 Sales**, inlcude the Microsoft D 365 Sales node. For that drag the node connector, go to **Integrations** > **Microsoft dynamics 365**.
    
    <img src="https://i.imgur.com/SX2CyRN.png" alt="drawing" width="80%"/>

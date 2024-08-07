@@ -51,7 +51,7 @@ The webhook URL serves as a callback endpoint where Stripe can send notification
 
 Enable the following event under Events section:
 
-1. In Development/Staging environment, go to **Studio** > **Event** > **Custom events**.
+1. In Development/Staging environment, go to **Automation** > **Event** > **Custom events**.
 2. Navigate to the `stripe-payment-gateway` event, click on the more options icon and select **Activate**.
  
   ![alt_text](https://i.imgur.com/X8d0WQR.png "image_tooltip")
@@ -66,7 +66,7 @@ Stripe Payment Status | In case of payments/refunds the status can be checked wi
 
 Once the Stripe account is connected, you can generate the paument link directly in bot conversations.
 
-1. Go to Development/Staging environment and navigate to **Studio** > **Build** > Select the flow where you want to add the Generate payment link node.
+1. Go to Development/Staging environment and navigate to **Automation** > **Build** > Select the flow where you want to add the Generate payment link node.
 
 2. Click **Add node** > **Integrations** > **Stripe payment gateway**.
 

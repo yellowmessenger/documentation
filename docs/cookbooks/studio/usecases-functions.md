@@ -3,7 +3,7 @@ title: Function use cases
 sidebar_label: Function use cases
 ---
 
-The following are some of the use cases of the **Functions** section in **Studio**.
+The following are some of the use cases of the **Functions** section in **Automation**.
 
 ## Display  weather in your bot in a caraousel node
 

@@ -18,7 +18,7 @@ The following are some examples of where you can use Event-Triggered workflows:
 
 ### Step 1: **Add an event**:
 To create a custom user event, follow these steps:
-1. In Studio, go to the **Event** tab and click **Custom events** > **+Add event**.
+1. In Automation, go to the **Event** tab and click **Custom events** > **+Add event**.
 2. In **Event name**, name the event.
 3. In **Event description**, enter a brief description about the event.
 
@@ -41,10 +41,10 @@ To create a Workflow campaign, follow these steps -
 
 1. Create a new flow to use in your Workflow campaign.
 
-   From **Studio** >  **Create flow**. [OR]
+   From **Automation** >  **Create flow**. [OR]
    ![](https://i.imgur.com/owb39Q6.png)
    
-   From **Studio** > **Flows** > **Create flow**.
+   From **Automation** > **Flows** > **Create flow**.
 
     ![](https://i.imgur.com/KtDjtdm.png)
 

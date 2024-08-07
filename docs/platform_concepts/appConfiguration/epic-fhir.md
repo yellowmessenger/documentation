@@ -62,7 +62,7 @@ To connect your Epic FHIR account with Yellow.ai, follow the these steps:
 
 This integration lets your users access patient's medical records and fetch/book appointments.
 
-1. Go to **Studio** and build a flow based on how you want the bot to take the user through the process.
+1. Go to **Automation** and build a flow based on how you want the bot to take the user through the process.
 2. Include the integration node at the point in the flow where you want to let the user access Epic FHIR info. To accomplish this, navigate to **Integrations** and select **EPIC FHIR**.
 
      ![](https://i.imgur.com/HlhkU2S.png)

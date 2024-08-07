@@ -85,12 +85,12 @@ To modify the webhook further, you can select the webhook and click **Edit**. Yo
 
 Enable Razorpay events in your bot to trigger flows based on event occurrences, allowing seamless integration of payment processes with bot functionalities.
 
-1. In Development/Staging environment, go to **Studio** > **Event** > **Integrations**.
+1. In Development/Staging environment, go to **Automation** > **Event** > **Integrations**.
 2. Activate the event, **Razorpay Payment Status**. Click on the more options icon and select *Activate*. If there are multiple accounts, you need to activate for each account separately. 
 
  ![](https://i.imgur.com/RohTZsg.png)
 
-3. A journey with its trigger point as this event should be created in **Studio**. Based on the received event data, an appropriate message will be displayed to the end user.
+3. A journey with its trigger point as this event should be created in **Automation**. Based on the received event data, an appropriate message will be displayed to the end user.
 
    <img src="https://i.imgur.com/Bs6iIH8.png" width="80%"/>
 
@@ -107,12 +107,12 @@ When multiple accounts are added, select the appropriate account for each node, 
 :::
 
 
-1. Go to Development/Staging environment and navigate to **Studio** > **Build** > Select the flow where you want to Generate payment link.
+1. Go to Development/Staging environment and navigate to **Automation** > **Build** > Select the flow where you want to Generate payment link.
 
     <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
 2. Click **Add node** > **Integrations** > **Razorpay payment gateway**.
-In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 
 
 3. In the first drop-down choose **Generate Payment Link**.
@@ -250,7 +250,7 @@ app.executeIntegrationAction({
 
 ### Generate Payment Link for Partial Payments
 
-1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+1. In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 
    <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 
@@ -368,7 +368,7 @@ app.executeIntegrationAction({
 ```
 ### Intiate refund
 
-1. In the Studio flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
+1. In the Automation flow builder, select the **Integrations** node and click **Razorpay** from the list of integrations that have been enabled for that bot.
 
    <img src="https://i.imgur.com/iBzozGD.png" alt="drawing" width="80%"/>
 

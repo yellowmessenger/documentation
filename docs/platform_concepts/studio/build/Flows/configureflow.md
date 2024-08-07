@@ -11,7 +11,7 @@ To initiate a specific flow, you need triggers. One popular trigger option is us
 
 To configure a start trigger, follow the steps below:
 
-1. Go to **Studio** and click a flow.
+1. Go to **Automation** and click a flow.
 
  ![](https://i.imgur.com/47ONnMU.png)
 
@@ -37,7 +37,7 @@ To learn more about intents, [click here. ](https://docs.yellow.ai/docs/platform
 
 ### 1.2  Trigger flow using Entities
 
-Start the flow with the primary object(s) of a query, such as the cheapest flight, customer service number, sedan cars, rooms in a hotel, and best beauty products. For example, if a customer types studio, the bot triggers the configured flow. 
+Start the flow with the primary object(s) of a query, such as the cheapest flight, customer service number, sedan cars, rooms in a hotel, and best beauty products. For example, if a customer types Automation, the bot triggers the configured flow. 
 
 To learn more about entities, [click here. ](https://docs.yellow.ai/docs/platform_concepts/studio/train/entities#-3-types-of-entities)
 

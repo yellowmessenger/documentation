@@ -31,7 +31,7 @@ Activating the `playstore_review` event will enable the bot to receive notificat
 Ensure you provide the correct credentials and permissions. After successful connection, publish the bot to production to activate the same events in the production environment as well.
 ::
 
-1. In the Development/Staging enveronment, go to **Studio** > **Event** > **Integrations** and search for **playstore_review**.
+1. In the Development/Staging enveronment, go to **Automation** > **Event** > **Integrations** and search for **playstore_review**.
 
  ![](https://i.imgur.com/b42Ztir.png)
 2. Click on the more options icon and select **Activate**.

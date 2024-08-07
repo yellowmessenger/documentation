@@ -32,14 +32,14 @@ When **Offline handling** is enabled and you want to inform customers that agent
 ## Notification for open chats (recommended)
 
 
-1. Access the **Studio** section and navigate to **Events**.
+1. Access the **Automation** section and navigate to **Events**.
 2. Open the [Custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) and click **+Add event**.
     ![](https://hackmd.io/_uploads/HkG89gJP2.png)
 3. Provide the **name** `ticket-opened` and click **Create event**. 
     ![](https://hackmd.io/_uploads/B1cqqgkDh.png)
 4. Ensure that the `ticket-open` event is **Active**. If not, make it Active by clicking on the three dots next to it.
     ![](https://hackmd.io/_uploads/B18Zjx1D2.png)
-5. [Create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) in the **Studio** > **Build**. 
+5. [Create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) in the **Automation** > **Build**. 
     ![](https://hackmd.io/_uploads/B1rOixkD2.png)
 6. Within the flow, add a start trigger by clicking on the start node. Select **event** from the dropdown and set the value as `ticket-opened`.
     ![](https://hackmd.io/_uploads/ryKShx1wh.png)
