@@ -29,7 +29,7 @@ Agents should have AWA agent roles for accessing agent workspace.
 
 ![](https://i.imgur.com/qEpausH.png)
 
-5. Go to **All** > search for **System Application** and click **All** under **Studio**.
+5. Go to **All** > search for **System Application** and click **All** under **Automation**.
 
 ![](https://i.imgur.com/P21iwLs.png)
 
@@ -106,7 +106,7 @@ The following are the events available for ServiceNow in Yellow.ai
 
 To activate these events:
 
-1. Go to **Studio** > **Event** > **Integrations** > search for **ServiceNow**.
+1. Go to **Automation** > **Event** > **Integrations** > search for **ServiceNow**.
 
 ![](https://i.imgur.com/MZ8QNhN.png)
 
@@ -120,7 +120,7 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
 
 You need to build a flow that redirects your users to the ServiceNow agents and the agent needs to close the chat to end the chat in ServiceNow.
 
-1. Go to **Studio** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on your requirement.
+1. Go to **Automation** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on your requirement.
 
 ![](https://i.imgur.com/z7QtZM5.png)
 

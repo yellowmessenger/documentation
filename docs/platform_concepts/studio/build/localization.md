@@ -148,7 +148,7 @@ You can add multiple supported languages to the bot, allowing users to interact 
 
 To add a new language to your bot, follow these steps:
 
-1. Go to **Studio** > **Build** > **Flow** > click the **Language** icon.
+1. Go to **Automation** > **Build** > **Flow** > click the **Language** icon.
 
    <img src="https://imgur.com/x2OLal7.png" alt="drawing" width="70%"/>
 
@@ -207,7 +207,7 @@ To add language translations, you need to create a unique key for each message i
 
 In this context, a "key" refers to a sentence or message intended for users, that is selected during flow creation for translation. You can provide translations for all supported languages, manually as explained in the following:
 
-1. Go to **Studio** > **Build** > **Translations** tab.
+1. Go to **Automation** > **Build** > **Translations** tab.
 
    ![](https://i.imgur.com/Y9E4FMG.png)
    
@@ -229,7 +229,7 @@ In this context, a "key" refers to a sentence or message intended for users, tha
 
 If you want to translate the messages into other languages then you can use the **Auto-translate** option. Auto translation simplifies the translation process by automatically filling empty fields with translated data, based on the information that is provided in the corresponding English field.
 
-1. To enable auto-translation, on **Studio** > **Build** > **Translations**, click on the **Auto-translate** button.
+1. To enable auto-translation, on **Automation** > **Build** > **Translations**, click on the **Auto-translate** button.
    
    ![](https://i.imgur.com/wnUS5tF.png)
 

@@ -110,7 +110,7 @@ These are the things to consider to build tailored conversations:
 
 To configure Orchestrator LLM for a flow:
 
-1. Go to **Studio** > **Build** > **Flow** > **Create flow**.
+1. Go to **Automation** > **Build** > **Flow** > **Create flow**.
 
     ![](https://imgur.com/E0wjus1.png)
 

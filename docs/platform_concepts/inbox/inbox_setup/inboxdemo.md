@@ -12,7 +12,7 @@ When the customer opts to switch from bot interaction to human interaction, with
 
 To configure your bot to chat with a live agent:
 
-1. **Studio** must be configured:
+1. **Automation** must be configured:
     - With a [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to identify *chat with an agent* intent and raise a live chat request to Inbox.          
 2. **Inbox** must be configured:
     - To receive and reply to chats. 
@@ -27,16 +27,16 @@ To configure your bot to chat with a live agent:
 
 
 
-**On your web browser, you can open 2 different tabs (Studio module and Inbox module)**
+**On your web browser, you can open 2 different tabs (Automation module and Inbox module)**
 
 
-## Tab 1: Configure Studio flow and request for support 
+## Tab 1: Configure Automation flow and request for support 
 
 :::note
-You will not be able to create flows on Studio module when the bot is in **Live/Production** mode, hence, try Inbox demo in **Development** or **Sandbox/Staging** mode. 
+You will not be able to create flows on Automation module when the bot is in **Live/Production** mode, hence, try Inbox demo in **Development** or **Sandbox/Staging** mode. 
 :::
 
-You can follow any of the given three methods to create flow on **Studio** to support **Inbox**. 
+You can follow any of the given three methods to create flow on **Automation** to support **Inbox**. 
 - Import support flow while creating bot (recommended).
 - Use the Inbox setup option provided on the preview tab (recommended).
 - Create a support flow from scratch. 
@@ -53,7 +53,7 @@ You can follow any of the given three methods to create flow on **Studio** to su
 
 #### Steps to import **Connect with support** from preview tab
 
-1. After creating a bot, go to **Studio**. 
+1. After creating a bot, go to **Automation**. 
 2. Open Preview bot tab and select **Connect to agent** (to configure Inbox flow) or **Others** (to connect to other live agent apps on Integrations).    
 
 
@@ -70,7 +70,7 @@ You can follow any of the given three methods to create flow on **Studio** to su
 
 #### Steps to import **Connect with support** template from **Marketplace**
 
-1. Click **Create flow** from Studio. See [steps](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) here.
+1. Click **Create flow** from Automation. See [steps](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) here.
 2. Search for [Support templates](https://cloud.yellow.ai/marketplace?name=support)(prebuilt marketplace flows). Add the most suited flow to your bot. 
 
 ![image](https://imgur.com/iT97EQi.png)

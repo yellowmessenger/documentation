@@ -115,7 +115,7 @@ Customize your bot's tone to align with your preferred response style. Yellow.ai
 
 To configure the tone of the response:
 
-1. Go to **Studio** > **Build** > **Conversation Settings**
+1. Go to **Automation** > **Build** > **Conversation Settings**
   
    ![](https://i.imgur.com/EbKGkUp.png)
 
@@ -139,7 +139,7 @@ To configure the tone of the response:
 
 When the bot doesn't understand user queries, it offers the closest relevant answers to their questions as a fallback. You can customize the fallback messages to show these suggestions.
 
-1. Go to **Studio** > **Build** > **Conversation Settings**
+1. Go to **Automation** > **Build** > **Conversation Settings**
   
    ![](https://i.imgur.com/EbKGkUp.png)
 

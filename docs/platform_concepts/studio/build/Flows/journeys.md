@@ -21,7 +21,7 @@ To create a flow, follow these steps:
 ![](https://imgur.com/b5oBsqW.png)
 :::
       
-2. Go to **Studio** > **Build** > **Flow** > **Create flow**.
+2. Go to **Automation** > **Build** > **Flow** > **Create flow**.
 
     ![](https://imgur.com/E0wjus1.png)
     
@@ -67,7 +67,7 @@ For example, you have defined AI Copilot to create a lead generation flow. Once 
 
 To generate flow using AI, follow these steps:
 
-1. Go to **Studio** > **Build** > **Flows** > **+ Create flow** > **Create with AI Copilot**.
+1. Go to **Automation** > **Build** > **Flows** > **+ Create flow** > **Create with AI Copilot**.
 
    ![](https://imgur.com/G4cAOko.png)
 
@@ -87,7 +87,7 @@ To generate flow using AI, follow these steps:
 
 ### Create flow using a template
 
-1. Go to **Studio** > **Build** > **Flows** > **Create flow**.
+1. Go to **Automation** > **Build** > **Flows** > **Create flow**.
 
     ![](https://imgur.com/E0wjus1.png)
     
@@ -117,7 +117,7 @@ To generate flow using AI, follow these steps:
 
 ### Manually create a flow
 
-1. Go to **Studio** > **Build** > **Flow** > **Create flow**.
+1. Go to **Automation** > **Build** > **Flow** > **Create flow**.
 
     ![](https://imgur.com/E0wjus1.png)
 
@@ -157,7 +157,7 @@ For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platfor
 
 To create a skill, follow these steps:
 
-1. Go to **Studio** > **Build** > **Create flow** > **+ Create skill**.
+1. Go to **Automation** > **Build** > **Create flow** > **+ Create skill**.
 
    <img src="https://imgur.com/tnu6zWG.png" alt="drawing" width="100%"/>
 

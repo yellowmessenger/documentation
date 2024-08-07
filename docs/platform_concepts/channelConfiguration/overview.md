@@ -75,7 +75,7 @@ The following are the points that you need to consider while setting up a channe
 4. **Environment Usage**: If your bot has three environments (sandbox, staging, and production), use the sandbox bot for building the chatbot or making changes to existing flows. Once done, publish the bot from the sandbox to staging.
 5. **Add Intents**: Include intents for common questions or requests that align with your conversation flow. This aids in properly training the bot to identify user intent.
 6. **Use supported nodes**: Utilize nodes that are supported for the respective channel to ensure seamless integration and functionality.
-7. **Channel Switching**: You can switch to another connected channel from within the same flow. The channel filter button is available in the **Studio** > **Build** section.
+7. **Channel Switching**: You can switch to another connected channel from within the same flow. The channel filter button is available in the **Automation** > **Build** section.
      ![](https://imgur.com/XTZL1X9.png)
 8. **Regional consideration**: Determine your bot region (for example, r1, r2, r3, r4, r5) and add it to the webhook URL. 
    For instance, if the bot's region is r1, the domain URL will be `https://r1.cloud.yellow.ai`. 

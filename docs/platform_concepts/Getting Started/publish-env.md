@@ -117,14 +117,14 @@ Live
 
 -->
 
-Here's a compilation of studio components or other modules that require separate configuration in deployment environment (Sandbox to Staging, and Staging to Production; or Development to Live) when you publish a bot.
+Here's a compilation of Automation components or other modules that require separate configuration in deployment environment (Sandbox to Staging, and Staging to Production; or Development to Live) when you publish a bot.
 
 
 | Module | Requires separate configuration |
 | -------- | -------- |
-| **Studio** | Data within Database tables | 
+| **Automation** | Data within Database tables | 
 | **Inbox**	| - Custom Tags <br/> - Groups creation and configuration <br/> - Inbox settings <br/> - Agent settings |
-| **User 360** | User data <br/> Segments<br/> User360 variables (Studio and User360 sync)
+| **User 360** | User data <br/> Segments<br/> User360 variables (Automation and User360 sync)
 | **Engage**     |  Campaigns (Inbound/Outbound/Flow)  <br/> Inbound campaign configuration <br/> Enabling Notificaion API <br/> Postback URL |
 |**Analytics/Insights**|  Custom queries <br/> Goals <br/>  Custom dashboards |
 | **Channels and Integration** | All the Channels and integrations (except **WhatsApp**) |

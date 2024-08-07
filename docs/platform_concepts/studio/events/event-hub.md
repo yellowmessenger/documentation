@@ -201,7 +201,7 @@ For a detailed use case guide on this event, click [here](https://docs.yellow.ai
 
 **To create user inactive events**:
 
-1. Go to **Studio** > **Event** > **User inactivity events** > **+ Add event**.
+1. Go to **Automation** > **Event** > **User inactivity events** > **+ Add event**.
 
    ![](https://i.imgur.com/1Tie3If.png)
 
@@ -280,7 +280,7 @@ In addition to the standard events available, you have the flexibility to create
 
 To create a custom event, follow these steps:
 
-1. Go to **Studio** > **Event** **Custom events** > **+Add Event**.
+1. Go to **Automation** > **Event** **Custom events** > **+Add Event**.
 
    ![](https://i.imgur.com/yz0DL7n.png)
 

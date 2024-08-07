@@ -76,7 +76,7 @@ To integrate your Google Identity Management account with Yellow.ai, follow thes
 
 To let the yellow.ai bot know that the user has successfully logged in, you need to activate this event.
 
-1. Go to **Studio** > **Event** > **Integration** > Search for google-auth-success > **Activate**.
+1. Go to **Automation** > **Event** > **Integration** > Search for google-auth-success > **Activate**.
 
  ![](https://i.imgur.com/O37vUGE.png)
 
@@ -86,7 +86,7 @@ To let the yellow.ai bot know that the user has successfully logged in, you need
 
 ## Set up the Google login URL on Yellow.ai
 
-1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on your usecase.
+1. Go to **Automation** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on your usecase.
 2. Include the integration node at the point in the flow where you want to authorize the user or when the bot needs to request user authorization. To accomplish this, navigate to **Integrations** and select **Google Identity Management**.
 
  <img src="https://i.imgur.com/Ot8CkLL.png" alt="drawing" width="60%"/>

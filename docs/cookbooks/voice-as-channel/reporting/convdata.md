@@ -28,7 +28,7 @@ If you are developing a voice bot for educational counseling for students across
 
 To store the age and query type along with the rest of the flow, follow these steps:
 
-1. Go to **Studio** and create a flow that supports your use case.
+1. Go to **Automation** and create a flow that supports your use case.
 2. In the node that collects age and query type, select **Store response in** a variable.
     ![](https://i.imgur.com/qyw4l5R.png)
 
@@ -39,7 +39,7 @@ To store the age and query type along with the rest of the flow, follow these st
 
 To store data collected from flows, you need to create a table (this is a prerequisite to step#3). Follow these steps:
 
-1. Go to **Studio** > **Database**.
+1. Go to **Automation** > **Database**.
 2. Create a **table**. Add field names and mark them as **Searchable**.
     ![](https://hackmd.io/_uploads/HyhZ1toVh.png)
 3. The database will store all the details obtained from the calls.
@@ -85,7 +85,7 @@ To ensure that you have the customer details even if the customer disconnects in
 
 ## 2. Download or visualize conversational details for better insights
 
-1. To download this data, navigate to **Studio** > **Database**, and click on **Table actions**. From there, you can easily download the data.
+1. To download this data, navigate to **Automation** > **Database**, and click on **Table actions**. From there, you can easily download the data.
 
 ![](https://i.imgur.com/ZCrHFs2.png)
 

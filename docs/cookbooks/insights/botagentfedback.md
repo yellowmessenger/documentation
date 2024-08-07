@@ -17,7 +17,7 @@ You can visualize it further by taking advantage of [Dashboards](https://docs.ye
 
 ## 1. Default user feedback for bot interaction
 
-1. In **Studio**, at the end of your existing flow, add a [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback) to collect user feedback on the **bot-customer** and **inbox agent-customer** conversation. 
+1. In **Automation**, at the end of your existing flow, add a [feedback node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#27-feedback) to collect user feedback on the **bot-customer** and **inbox agent-customer** conversation. 
 
     ![](https://i.imgur.com/SI8BwYL.png)
 

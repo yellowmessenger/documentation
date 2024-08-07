@@ -32,7 +32,7 @@ To configure the system to automatically trigger an event when agents resolve a 
 
 To identify that the inbox agent has closed a ticket you must enable **Ticket closed** event. Follow these steps: 
 
-1. Go to **Studio** > **Events** > **Inbox** and search for `ticket-closed`.
+1. Go to **Automation** > **Events** > **Inbox** and search for `ticket-closed`.
     ![](https://i.imgur.com/qZYPSZ2.png)
 2. Click the three dots icon and select **Activate** to activate the event.
 

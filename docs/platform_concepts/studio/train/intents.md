@@ -47,7 +47,7 @@ To add intents and utterances, follow these steps:
 
 1. Create a [flow ](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)and add [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) based on your use case.
 
-2. Go to **Studio** > **Train** > **Intents** > **+ Add new intent**.
+2. Go to **Automation** > **Train** > **Intents** > **+ Add new intent**.
 
     ![](https://imgur.com/Mk13oWp.png)
 

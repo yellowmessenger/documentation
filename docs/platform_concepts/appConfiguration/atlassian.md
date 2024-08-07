@@ -77,10 +77,10 @@ The following are the steps to be followed to integrate your Atlassian account w
 The Atlassian integration enables bot to perform the following actions:
 
 
-### Enable Atlassian events in Studio
+### Enable Atlassian events in Automation
 
 1. Open your cloud platform and navigate to the Development/Staging environment.
-2. Go to **Studio** > **Event** > **Custom events** and create a custom event named `atlassian-auth-success`. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events) for the steps to create custom event.
+2. Go to **Automation** > **Event** > **Custom events** and create a custom event named `atlassian-auth-success`. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events) for the steps to create custom event.
 
    ![](https://i.imgur.com/qVFBaUO.png)
 
@@ -91,7 +91,7 @@ The Atlassian integration enables bot to perform the following actions:
 
 ### Managing Atlassian actions through bot conversations
 
-1. In the Development/Staging environment, go to **Studio** > **Build** > and [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) where you want to access Atlassian functions.
+1. In the Development/Staging environment, go to **Automation** > **Build** > and [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) where you want to access Atlassian functions.
 2. When adding a node, choose **Integrations** > **Atlassian**.
 
    ![](https://i.imgur.com/qRWOLaM.png)

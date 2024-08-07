@@ -51,7 +51,7 @@ Copy the webhook url and the api key mentioned in the **Instructions** section o
 
 ### 1.3 Enable events in Yellow.ai bot
 
-1. Login to cloud.yellow.ai and click the **Studio** module on the top left corner of your screen.
+1. Login to cloud.yellow.ai and click the **Automation** module on the top left corner of your screen.
 
 <img src="https://i.imgur.com/ZjnJZOf.png" alt="drawing" width="100%"/>
 
@@ -64,7 +64,7 @@ Copy the webhook url and the api key mentioned in the **Instructions** section o
 *  **locobuzz-agent-logout** - This event is triggered when there is an unexpected network/system issue at the agent’s end.
 *  **locobuzz-customer-inactivity** - This event is triggered when the customer is inactive for more than a minute. Activate this event by clicking  the three dots next to the name of the event.
 
-4. After activating these events, a flow needs to be created in  [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview/)  whose trigger point will be this event. Based on the received event data, an appropriate message will be  displayed to the end user.
+4. After activating these events, a flow needs to be created in  [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview/)  whose trigger point will be this event. Based on the received event data, an appropriate message will be  displayed to the end user.
 
 <img src="https://i.imgur.com/cg3dnKK.png" alt="drawing" width="100%"/>
 
@@ -100,7 +100,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
 :::
  
- 1. In the Studio flow builder, select the **Raise Ticket** node.
+ 1. In the Automation flow builder, select the **Raise Ticket** node.
 
 <img src="https://i.imgur.com/k3kIkVd.png" alt="drawing" width="100%"/>
 

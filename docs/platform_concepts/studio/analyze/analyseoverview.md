@@ -3,7 +3,7 @@ title: Analytics for Dynamic chat node (GenAI Analytics)
 sidebar_label: Chat analytics overview 
 ---
 
-With the advent of generative AI bots, it has become increasingly crucial to monitor their performance and their impact on user decisions and business objectives. The **Analysis** section within the **Studio** module provides a comprehensive view of various metrics related to user interactions within **Chat metrics** (pertaining to a conversation when the **Dynamic chat nodes** are used).
+With the advent of generative AI bots, it has become increasingly crucial to monitor their performance and their impact on user decisions and business objectives. The **Analysis** section within the **Automation** module provides a comprehensive view of various metrics related to user interactions within **Chat metrics** (pertaining to a conversation when the **Dynamic chat nodes** are used).
 
 ![](https://hackmd.io/_uploads/SkYuXisZ6.png)
 

@@ -18,7 +18,7 @@ In this scenario, the user asks a question about emails instead of directly prov
 
 By establishing standardized contextual responses for all prompts across various user journeys in the bot, users will receive a response when they ask questions starting with words like Why, What, How, and so on, regardless of the specific prompt.
 
-1. Go to **Studio** > **Train** > **Context Management**.
+1. Go to **Automation** > **Train** > **Context Management**.
 
  ![](https://i.imgur.com/UhnjgWg.png)
 

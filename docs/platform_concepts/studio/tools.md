@@ -9,7 +9,7 @@ You can find advanced settings in the tools section, that will help you to finel
 
 To access the tools section:
 
-1. Go to **Studio** > **Train** > **Intents** > **Tools**
+1. Go to **Automation** > **Train** > **Intents** > **Tools**
 
    ![](https://i.imgur.com/jEMMz9q.png)
 

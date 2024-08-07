@@ -43,13 +43,13 @@ Agent assist bot helps agents efficiently complete their tasks directly within t
 ## Steps to use the assist bot 
 
 
-### Configure assist bot in Studio 
+### Configure assist bot in Automation
 
 > Bot admins, bot developers, or administrators have the necessary permissions to create a new bot.
 
 1. [Create a new bot](https://docs.yellow.ai/docs/platform_concepts/studio/overview) under your subscription, giving it a unique name (example: Mia Support). 
-2. Create multiple [custom flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) within **Studio** based on your business use cases. 
-    > All the data within Inbox (like contacts and custom fields) is accessible in **Studio**.
+2. Create multiple [custom flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) within **Automation** based on your business use cases. 
+    > All the data within Inbox (like contacts and custom fields) is accessible in **Automation**.
 3. Test and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot. 
 4. Navigate to **Channels** > **Chat widgets** > **Settings** and enable the option **Show the conversation history** and disable **Create a new session for every new tab**.
     ![](https://hackmd.io/_uploads/Bk07mmklT.png)
@@ -58,9 +58,9 @@ Agent assist bot helps agents efficiently complete their tasks directly within t
 -------
 
 
-#### How to use inbox data in Studio while building the assist bot flows?
+#### How to use inbox data in Automation while building the assist bot flows?
 
-When agents trigger the assist bot within the Inbox, it receives a complete set of current chat data as a payload. This chat data comprises essential information such as the chat ID, custom fields, and tags. You can design flows to automatically retrieve Inbox information in Studio without manual input. 
+When agents trigger the assist bot within the Inbox, it receives a complete set of current chat data as a payload. This chat data comprises essential information such as the chat ID, custom fields, and tags. You can design flows to automatically retrieve Inbox information in Automation without manual input. 
 
 **Example**: When an agent clicks on **Cancel order**, the order ID can be automatically captured, and the order can be marked as canceled without the agent needing to search for the order ID and confirm it again.
 

@@ -258,11 +258,11 @@ Use the Delete icon to remove any button.
 
 To enable users to trigger a flow or display messages when Quick Reply buttons are clicked in the WhatsApp template via the quick_reply_event, follow these steps:
 
-1. Go to **Studio** > **Events** > **Engagement** > **quick_reply_event** more options > **Activate**.
+1. Go to **Automation** > **Events** > **Engagement** > **quick_reply_event** more options > **Activate**.
 
   ![](https://i.imgur.com/kL11NKT.png)
 
-2. Go to Studio > Click on **Create Flow** > Search for *WhatsApp Template Manager* > Select the template > **Use template**.
+2. Go to **Automation** > Click on **Create Flow** > Search for *WhatsApp Template Manager* > Select the template > **Use template**.
 
    ![](https://i.imgur.com/wje5yTn.jpeg)
 

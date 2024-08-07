@@ -12,7 +12,7 @@ To debug your flows:
 
 Breakpoints serve as special markers that pause flow execution at designated points. Currently, we support breakpoints only at the node level.
 
-1. Go to **Studio** and open the flow you'd like to debug.
+1. Go to **Automation** and open the flow you'd like to debug.
 2. Click **Preview** > **debug icon**.
 
    ![](https://i.imgur.com/WjGxCc1.png)

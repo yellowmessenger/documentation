@@ -29,11 +29,11 @@ You can derieve **API Key** and **Resource** from the endpoint of your GPT 3.5 o
 
 3. Click **Connect**.
 
-Once the integration is successful, the LLM node will be available in the **Studio** section.
+Once the integration is successful, the LLM node will be available in the **Automation** section.
 
 ## Build a flow to use LLM node
 
-1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your usecase. 
+1. Go to **Automation** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your usecase. 
 2. Include the LLM node at the point in the flow where you want the LLM node to take over the flow. To accomplish this, navigate to **Integrations** and select **LLM**.
 
 ![](https://i.imgur.com/Yv068xi.png)

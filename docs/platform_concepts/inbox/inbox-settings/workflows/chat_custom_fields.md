@@ -9,7 +9,7 @@ In this article, you will learn:
 1. [Function of custom fields.](#1)
 2. [How to add custom fields?](#2)
 3. [How to download custom field report?](#3)
-4. [How to capture custom field event on Studio?](#4)
+4. [How to capture custom field event on Automation?](#4)
 
 
 ---
@@ -175,11 +175,11 @@ Provide different names for all the custom fields to avoid reporting confusions.
 
 ## <a name="4"></a>  4. Event to identify custom field inputs
 
-When a custom field is updated in the platform, an event `ticket-update` is triggered, with the `changeType` set as `change_custom_field`. This event can be captured and utilized by activating it in **Studio** on **Events**. 
+When a custom field is updated in the platform, an event `ticket-update` is triggered, with the `changeType` set as `change_custom_field`. This event can be captured and utilized by activating it in **Automation** on **Events**. 
 
 > For steps to create and activate events, refer to [this article](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events).
 
-By identifying the `ticket-update` event and custom fields associated with it, you can develop Studio flows to address various use cases. 
-- For example: When you have a custom field called "Order ID" in the Inbox and it gets updated, you can create an automation flow on Studio that triggers an action to update the corresponding order details on your website.
+By identifying the `ticket-update` event and custom fields associated with it, you can develop Automation flows to address various use cases. 
+- For example: When you have a custom field called "Order ID" in the Inbox and it gets updated, you can create an automation flow on Automation module that triggers an action to update the corresponding order details on your website.
 
 This can help keep the information synchronized and save time by avoiding the need for manual updates.

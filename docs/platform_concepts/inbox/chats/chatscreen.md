@@ -57,7 +57,7 @@ Quickly find canned responses by entering relevant keywords/tags or searching wi
 
 ### Agent actions
 
-Agents can type the shortcut **/** on the screen and the agent actions (automated with the help of studio flows) will be displayed in the dropdown list. Agent can select an action that is automated and the results are fetched easily without multiple manual steps. 
+Agents can type the shortcut **/** on the screen and the agent actions (automated with the help of Automation flows) will be displayed in the dropdown list. Agent can select an action that is automated and the results are fetched easily without multiple manual steps. 
 
 <img src="https://hackmd.io/_uploads/rJPF91kyp.png" alt="drawing" width="100%"/>    
 
@@ -174,17 +174,17 @@ To allow agents to mark attachments as sensitive, admins must go to **Settings >
 
 
 
-### Initiate studio flow with @bot
+### Initiate Automation flow with @bot
 
-To execute a pre-configured flow within the **Studio** module during a live chat conversation with a customer, inbox agents can make use of the **@bot** feature.
+To execute a pre-configured flow within the **Automation** module during a live chat conversation with a customer, inbox agents can make use of the **@bot** feature.
 
 
 :::info
 
 **Prerequisites**
 
-- **Inbox admins** can configure [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) within the **Studio** module. These flows can be triggered by commonly used intents that agents may employ when conversing with customers. Learn how to trigger a flow using intents [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent).
-- **Inbox agents** should be familiar with the available flows/intents within the studio module that can facilitate their conversations.
+- **Inbox admins** can configure [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) within the **Automation** module. These flows can be triggered by commonly used intents that agents may employ when conversing with customers. Learn how to trigger a flow using intents [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent).
+- **Inbox agents** should be familiar with the available flows/intents within the Automation module that can facilitate their conversations.
 
 **Example**     
 - **Intent (Order details)**: Fetch customer's order, order details, I want information about the customer's order, Get customer order info
@@ -209,7 +209,7 @@ A customer has placed an order and is experiencing an issue with their return re
 
 For step 1, the agent can quickly retrieve the order status from an internal or external system by using **Agent actions** and entering the command `/order-status 100100`, where `100100` is the order ID.
 
-For step 2, instead of manually gathering the required details from the customer, such as confirming the product, return address, return pickup date, etc., the agent can streamline the process using a predefined workflow created in the studio with the help of the bot. By triggering this workflow with the command `@bot raise a return request`, the agent initiates a chatbot interaction where the bot collects the necessary information from the customer. This allows the agent to focus on other priority and complex issues, saving time in handling these types of chats. The agent can still monitor the chat and seamlessly take over the conversation when needed.
+For step 2, instead of manually gathering the required details from the customer, such as confirming the product, return address, return pickup date, etc., the agent can streamline the process using a predefined workflow created in the Automation with the help of the bot. By triggering this workflow with the command `@bot raise a return request`, the agent initiates a chatbot interaction where the bot collects the necessary information from the customer. This allows the agent to focus on other priority and complex issues, saving time in handling these types of chats. The agent can still monitor the chat and seamlessly take over the conversation when needed.
 
 By leveraging agent actions and the **@bot** functionality, the agent can efficiently handle the customer's order status inquiry and facilitate the return request process, ensuring a smoother and more convenient customer support experience.
 

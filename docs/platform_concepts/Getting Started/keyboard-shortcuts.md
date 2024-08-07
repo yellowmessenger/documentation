@@ -5,18 +5,18 @@ sidebar_label: Platform keyboard shortcuts
 
 A range of keyboard shortcuts are designed to enhance your experience by streamlining access to key options and boosting productivity for repetitive tasks. The table illustrates where each specific shortcut key can be utilized:
 * **Global**: You can use these keyboard shortcuts from any screen within https://cloud.yellow.ai.
-* **Studio**: These keyboard shortcuts are exclusive to the Studio module.
+* **Automation**: These keyboard shortcuts are exclusive to the Automation module.
 
 
 Action | Shortcut Key | Accessibility
 ------ | -------- | -----------
-Open new node selector | n | Studio
-Go to Intents page | i | Studio
-Go to Entities page | e | Studio
-Opens select flow/journey dropdown | s + f | Studio
+Open new node selector | n | Automation
+Go to Intents page | i | Automation
+Go to Entities page | e | Automation
+Opens select flow/journey dropdown | s + f | Automation
 Go back (wherever you are) | b | Global
 Opens select bot dropdown | s + b| Global
-Go to Studio module | g + s| Global
+Go to Automation module | g + s| Global
 Go to Overview page | g + o| Global
 Go to Inbox module | g + i| Global
 Go to Channels module | g + c| Global
@@ -33,15 +33,15 @@ Switch to Sandbox environment | m + x| Global
 You can directly use the keys to access the function from the screen where that particular option is available.
 :::
 
-The following table lists the keyboard shortcuts for Studio module:
+The following table lists the keyboard shortcuts for Automation module:
 
 Action | Shortcut | Access from
 ------ | -------- | -----------
-Open new node selector | n | Studio
-Go to Intents page | i | Studio
-Go to Entities page | e | Studio
-Opens select flow/journey dropdown | s + f | Studio
+Open new node selector | n | Automation
+Go to Intents page | i | Automation
+Go to Entities page | e | Automation
+Opens select flow/journey dropdown | s + f | Automation
 Go back (wherever you are) | b | Global
 Opens select bot dropdown | s + b| Global
-Go to Studio module | g + s| Global
+Go to Automation module | g + s| Global
 Go to Overview page | g + o| Global

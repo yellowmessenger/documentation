@@ -66,7 +66,7 @@ To access user specific information, use the arguments mentioned in the followin
 
 ### Create a new function
 
-1. Go to **Studio** > **Functions** > **+ Add new function**.
+1. Go to **Automation** > **Functions** > **+ Add new function**.
 
 ![](https://i.imgur.com/KacI9y0.png) 
 

@@ -9,7 +9,7 @@ Imagine you run an online store and have added the Product Catalog to your bot. 
 
 ## Create a product catalogue
 
-1. Go to **Studio** > **Database** > **Product catalogue** > **+ Create new table**.
+1. Go to **Automation** > **Database** > **Product catalogue** > **+ Create new table**.
 
    ![](https://i.imgur.com/1QcJv8J.png)
 

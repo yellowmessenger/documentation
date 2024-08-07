@@ -57,7 +57,7 @@ Add accounts only in the development or staging environment. You can access the 
 
 To carry out a [certain action](#supported-zoho-crm-actions-with-yellowai) in your Zoho CRM account, follow these steps:
 
-1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
+1. Go to **Automation** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on your requirement. 
 2. In whichever point you want the bot to access Zoho CRM, inlcude the Zoho CRM node. For that drag the node connector, go to **Integrations** > **Zoho CRM**.
 
    ![](https://i.imgur.com/cgrEHM9.png)

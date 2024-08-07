@@ -92,7 +92,7 @@ Learn more about UserIDs [here](https://docs.yellow.ai/docs/platform_concepts/en
 :::
 
 
-After settling on a userId for your bot, the subsequent action is to commence tracking it within your **Studio** flows. Depending on your bot version, you might encounter one of three scenarios:
+After settling on a userId for your bot, the subsequent action is to commence tracking it within your **Automation** flows. Depending on your bot version, you might encounter one of three scenarios:
 
 1. Set userId using the user properties (variable)
 2. Set userId via. conversation settings
@@ -142,7 +142,7 @@ While building flow, configure:
 
 If the User identification setting is not visible in the Conversation settings popup and **Use this as unique ID for user** option is available, follow these steps:
 
-1. Open the bot flows **Studio** > **Build**. 
+1. Open the bot flows **Automation** > **Build**. 
 2. You must collect specific business-related information like email, phone number, or account number (userId) within your flows before any automation. Let's say you want to capture the Email ID as the userId, add an [email prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#25-email) to your flow. 
 3. On that prompt, select the **Make prompt smarter** option.
     ![](https://hackmd.io/_uploads/HJlWi4_kT.png)
@@ -169,7 +169,7 @@ If the above steps are not followed, contact card and the old UI will be display
 
 ### Set userId via. conversation settings 
 
-If you can find the **User identification flow** setting in **Studio** > **Build** > **Conversation Settings** > **User identification**, [follow the steps](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow#understand-how-user-identification-flow-works) mentioned here to set up the user identification flow. 
+If you can find the **User identification flow** setting in **Automation** > **Build** > **Conversation Settings** > **User identification**, [follow the steps](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow#understand-how-user-identification-flow-works) mentioned here to set up the user identification flow. 
 
 ![](https://hackmd.io/_uploads/HybbtVuya.png)
 

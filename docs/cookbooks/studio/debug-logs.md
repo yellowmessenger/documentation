@@ -39,7 +39,7 @@ Our platform provides two types of logs to assist in debugging:
 
 To read the logs, follow these steps:
 
-1. Go to **Studio** > **Analysis** > **Conversation logs**.
+1. Go to **Automation** > **Analysis** > **Conversation logs**.
 
    ![](https://i.imgur.com/ggN4K7f.png)
    

@@ -2130,13 +2130,13 @@ The availability of events within the integration depends on the scopes you have
  <img src="https://i.imgur.com/Ri1rcX7.png"/>
 :::
  
-### Activate Shopify events you wish to use in Studio
+### Activate Shopify events you wish to use in Automation
 
-Apart from the events mentioned in the previous section, you can enable other events that you want to make use in Studio. For a list of events supported in Studio, see [here](#supported-shopify-events-you-can-use-in-studio).
+Apart from the events mentioned in the previous section, you can enable other events that you want to make use in Automation. For a list of events supported in Automation, see [here](#supported-shopify-events-you-can-use-in-studio).
 
 To enable events:
 
-1. Go to **Studio** > **Event** > **Integrations**. You will see all the events related to Shopify with the prefix `shopify<eventName>`.
+1. Go to **Automation** > **Event** > **Integrations**. You will see all the events related to Shopify with the prefix `shopify<eventName>`.
 
   <img src="https://i.imgur.com/Qeq0NvS.png"/>
 
@@ -2161,7 +2161,7 @@ To enable events:
 
 To make use of Shopify events in bot flows:
 
-1. Go to your bot in **Studio** and navigate to the flow where you want to use a Shopify event.
+1. Go to your bot in **Automation** and navigate to the flow where you want to use a Shopify event.
 
 <!--
 2. As the first step, collect the customer information. Use the **Question** node to collect the order ID  and store the response in a custom variable (static or dynamic value). Ensure you set the right data type for the [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables).
@@ -2493,7 +2493,7 @@ To import the Shopify shop template in your bot:
    
    <img src="https://i.imgur.com/kWOPYCh.png" alt="drawing" width="65%"/>
 
-4. Configure the actions that you want to trigger. For details on creating a bot, see [Studio documentation](https://docs.yellow.ai/docs/platform_concepts/studio/overview).
+4. Configure the actions that you want to trigger. For details on creating a bot, see [Automation documentation](https://docs.yellow.ai/docs/platform_concepts/studio/overview).
 
 -->
 

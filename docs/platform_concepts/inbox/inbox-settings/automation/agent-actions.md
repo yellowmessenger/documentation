@@ -27,7 +27,7 @@ These can be invoked by typing "/" in the message box to help save agents’ tim
 
 To create agent actions, follow these steps:
 
-1. Access the **studio** module where you create flows. Any flows created in this module will be available in the inbox for conversion into **automated agent actions**. As you [create new flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) in the **studio**, they will be updated on the **Automation with Studio** screen.
+1. Access the **Automation** module where you create flows. Any flows created in this module will be available in the inbox for conversion into **automated agent actions**. As you [create new flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) in the **Automation**, they will be updated on the **Automation with Studio** screen.
 
     ![](https://i.imgur.com/V2qyXdC.jpg)
 
@@ -35,7 +35,7 @@ To create agent actions, follow these steps:
 
     ![](https://i.imgur.com/iSooZ14.jpg)
     
-3. On the Automation with Studio page, you will find all the live flows created in the Studio module. You can **enable** specific flows that you want to make available as agent actions.
+3. On the Automation with Studio page, you will find all the live flows created in the Automation module. You can **enable** specific flows that you want to make available as agent actions.
 
     ![](https://i.imgur.com/4kafoOU.png)
     

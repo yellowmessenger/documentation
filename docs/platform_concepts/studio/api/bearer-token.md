@@ -9,7 +9,7 @@ API keys and access tokens are crucial for secure communication with APIs. API k
 
 To add an API key:
 
-1. Go to **Studio** > **API** > click the particluar API > **Headers** > **+ Add Headers**.
+1. Go to **Automation** > **API** > click the particluar API > **Headers** > **+ Add Headers**.
 
    ![](https://i.imgur.com/nzw4HVO.png)
 

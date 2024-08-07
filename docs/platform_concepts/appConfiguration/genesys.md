@@ -47,7 +47,7 @@ We recommend this integration if you are using Genesys on-prem solution otherwis
 
 You can use **Raise ticket** node to create a conversation with Genesys agent and once conversation initiates the user can talk to the agent.
 
-In the **Studio** > **Build**, to add a node where you want to integrate Genesys Live Chat, follow these steps:
+In the **Automation** > **Build**, to add a node where you want to integrate Genesys Live Chat, follow these steps:
 
 1. Navigate to the desired point in a flow where you want to add the Genesys Live Chat node.
 2. Add a new node and select **Integrations** > **Raise Ticket**. You will see Raise ticket configuration screen.

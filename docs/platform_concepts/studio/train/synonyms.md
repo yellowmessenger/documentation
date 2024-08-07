@@ -18,7 +18,7 @@ Before adding synonyms, ensure you have:
 
 To add synonyms, follow these steps:
 
-1. Go to **Studio** > **Train** > **Synonyms**.
+1. Go to **Automation** > **Train** > **Synonyms**.
 
      ![](https://imgur.com/5QaAHea.png)
 

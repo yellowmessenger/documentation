@@ -26,7 +26,7 @@ If the user ends that conversation and starts a new one, the welcome flow will a
 
 To set a flow as the start flow, follow these steps:
 
-1. Go to **Studio** > **Build** > **Flows**. 
+1. Go to **Automation** > **Build** > **Flows**. 
 
    ![](https://imgur.com/UNJLY5k.png)
 
@@ -45,7 +45,7 @@ You can mark any flow as the fallback flow. However, ensure that you design the 
 
 To set a flow as a fallback flow, follow these steps:
 
-1. Go to **Studio** > **Build** > **Flows**. 
+1. Go to **Automation** > **Build** > **Flows**. 
 
    ![](https://imgur.com/UNJLY5k.png)
 
@@ -115,7 +115,7 @@ After creating a flow, you can use the search functionality to quickly locate an
 
 To search for a flow, follow these steps:
 
-1. Go to **Studio** > **Build** > **Search**.
+1. Go to **Automation** > **Build** > **Search**.
 
     ![](https://imgur.com/dKsSLgc.png)
     
@@ -131,7 +131,7 @@ You can edit bot flows to enhance the bot's interactions by modifying flow detai
 
 To edit a flow, follow these steps:
 
-1. Go to **Studio** > **Build** > **Flows** > select the flow that you want to edit > click the **More options** icon correspoing to the flow.
+1. Go to **Automation** > **Build** > **Flows** > select the flow that you want to edit > click the **More options** icon correspoing to the flow.
 
     ![](https://imgur.com/8aLDCX1.png)
 
@@ -157,7 +157,7 @@ While cloning flows to another bot, the source and destination have to be in the
 
 To clone a flow, follow these steps:
 
-1. Go to **Studio** > **Build** > select the flow that you want to edit > click the **More options** icon correspoing to the flow.
+1. Go to **Automation** > **Build** > select the flow that you want to edit > click the **More options** icon correspoing to the flow.
 
     ![](https://imgur.com/8aLDCX1.png)
 
@@ -177,7 +177,7 @@ You can delete a flow to remove outdated or redundant flows that may no longer s
 
 To delete a flow, follow these steps:
 
-1. Go to **Studio** > **Build** > select the flow that you want to delete > click the **More options** icon correspoing to the flow.
+1. Go to **Automation** > **Build** > select the flow that you want to delete > click the **More options** icon correspoing to the flow.
 
     ![](https://imgur.com/8aLDCX1.png)
     
@@ -195,7 +195,7 @@ While creating a flow, you have the option to assign it to an existing category.
 
 To add a flow to existing category, follow these steps:
 
-1. Go to **Studio** > **Build** > select the flow that you assign to a category > click the **More options** icon correspoing to the flow.
+1. Go to **Automation** > **Build** > select the flow that you assign to a category > click the **More options** icon correspoing to the flow.
 
     ![](https://imgur.com/8aLDCX1.png)
     

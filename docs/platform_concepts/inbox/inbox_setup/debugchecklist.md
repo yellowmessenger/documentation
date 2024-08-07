@@ -3,7 +3,7 @@ title: Debug inbox error logs
 sidebar_label : Debug inbox errors 
 ---
 
-In this article, you will learn how to debug errors encountered while [testing](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) the bot for Inbox configuration using the **Studio** module, as debugging is not supported directly in the Inbox module.
+In this article, you will learn how to debug errors encountered while [testing](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) the bot for Inbox configuration using the **Automation** module, as debugging is not supported directly in the Inbox module.
 
 The debugging logs provide helpful information to bot developers for every raise chat operation, such as: 
 1. **Bot status**: Whether the bot is running or paused 

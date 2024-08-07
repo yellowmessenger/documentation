@@ -77,7 +77,7 @@ In a two-tier environment, you can connect an integration app in the Development
 
 From Yellow.ai you can access your ServiceNow instance and create, update and search a ticket, upload,get file and file list.
     
-1. Go to **Studio** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) that suits your use case.
+1. Go to **Automation** and [create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) that suits your use case.
 2. Go to the specific point in the conversation where you want to add the node. Click **Add Node**, then go to **Integrations** and select **ServiceNow**.
 
 

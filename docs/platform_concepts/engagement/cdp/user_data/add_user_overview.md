@@ -24,7 +24,7 @@ For example, the moment name is captured, a record is created in User 360 and ma
 <img src="https://i.imgur.com/k35p40f.png" width="80%"/>
 
 :::info
-**userId** is also available as a property under **User Properties** of  **Studio** > **Build**.
+**userId** is also available as a property under **User Properties** of  **Automation** > **Build**.
 :::
 
 #### 2. Identified users 

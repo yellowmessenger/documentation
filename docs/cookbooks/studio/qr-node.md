@@ -5,7 +5,7 @@ sidebar_label : Trigger flow via Qr options
 
 This guide will provide instructions on how to activate flows upon clicking a quick reply WhatsApp button and how to monitor the number of clicks for each button.
 
-1. Go to **Studio** > **Event** > **Engagement** > **quick_reply_event** > **Activate**.
+1. Go to **Automation** > **Event** > **Engagement** > **quick_reply_event** > **Activate**.
 
    ![](https://i.imgur.com/tB1L8qw.png)
 

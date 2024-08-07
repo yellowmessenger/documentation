@@ -57,7 +57,7 @@ The Voice Input node will only work for voice bots, meaning you must have enable
 
 #### Steps to configure
 
-1. Go to **Studio** > **Prompts** > **Voice input**.
+1. Go to **Automation** > **Prompts** > **Voice input**.
 
    ![](https://i.imgur.com/n3muuJC.png)
 

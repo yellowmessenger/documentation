@@ -149,7 +149,7 @@ Enter the Client ID, Client Secret and integration ID obtained from the previous
 
 Once you connect an event, you need to enable relevant events to utilize them in the bot.
 
-1. In Development/Staging environment, go to **Studio** > **Event** > **Integrations**.
+1. In Development/Staging environment, go to **Automation** > **Event** > **Integrations**.
 
  ![](https://i.imgur.com/8AYd53h.png)
 
@@ -267,7 +267,7 @@ Make sure to keep the workflow ID found in the URL handy, as it will be necessar
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
 :::
 
-1. Go to **Studio** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on how you want the bot to take the user through the process.
+1. Go to **Automation** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#2-create-a-flow) based on how you want the bot to take the user through the process.
 2. Navigate to the desired point in a flow where you want to let the user talk to Genesys live agent and add the [Raise ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket).  
 
    ![](https://i.imgur.com/7GNgHeo.png)

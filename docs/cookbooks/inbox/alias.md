@@ -33,7 +33,7 @@ The **widget** and **preview** screens will show the alias name when available:
 
 You can customize the message with alias name and display it to the bot user after they are connected to an agent. 
 
-1. Go to **Studio** and open the flow where agent support is [configured](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo). 
+1. Go to **Automation** and open the flow where agent support is [configured](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo). 
 2. In the [Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node, manually enter the required message and variables in the **Message after ticket assignment** field. 
     ![](https://i.imgur.com/2vuX8m0.png)
     :::info

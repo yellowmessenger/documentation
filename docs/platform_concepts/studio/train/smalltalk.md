@@ -25,7 +25,7 @@ The Default section in the Small talk includes pre-existing questions and respon
 
 You can edit the responses and customize it to your bot's personality or specific requirements, and these questions cannot be deleted.
 
-1. Go to **Studio** > **Train** > **Small talk**.
+1. Go to **Automation** > **Train** > **Small talk**.
 
    ![](https://i.imgur.com/70r2tM6.png)
     

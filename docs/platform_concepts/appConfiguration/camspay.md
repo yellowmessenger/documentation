@@ -55,7 +55,7 @@ Once your Camspay account is successfully connected, your bot can perform the fo
 
 
 
-1. Go to Development/Staging environment and navigate to **Studio** > **Build** > Select the flow where you want to add the Generate payment link node.
+1. Go to Development/Staging environment and navigate to **Automation** > **Build** > Select the flow where you want to add the Generate payment link node.
 2. Click **Add node** > **Integrations** > **Camspay**.
 
    <img src="https://i.imgur.com/wZHyTdt.png" alt="drawing" width="60%"/>

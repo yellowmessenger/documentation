@@ -24,7 +24,7 @@ You can use the `sendEventToBot` function to add or update data within your bot'
 
 
 3. **Building a Flow:**
-   * Navigate to **Studio** > **Build**.
+   * Navigate to **Automation** > **Build**.
    * In the following video demonstration, you will notice an event named 'test-custom-payload.' This event will serve as the code to identify the event in the `sendEventToBot` function, and the associated data will contain the refresh token.
 
      <iframe width="560" height="315" src="https://www.youtube.com/embed/FPg5O84rXJs" title="YouTube video player" frameborder="0" allow="autoplay; clipboard-write; picture-in-picture" allowfullscreen></iframe>

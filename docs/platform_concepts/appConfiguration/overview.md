@@ -52,7 +52,7 @@ Once the connection is estabblished, follow these steps to configure the webhook
 
 This enables you to execute specific actions in response to events. For instance, you can display a message in the bot conversation when a payment is successful or show order details when an order is placed.
 
-1. In Development/Staging environment, go to **Studio** > **Event** > **Integrations**.
+1. In Development/Staging environment, go to **Automation** > **Event** > **Integrations**.
 2. Find the event and click on the three dots icon, then select **Activate**. Events are named with the Integration app name, for instance, "InstaMojo Payment Status".
 
    ![](https://i.imgur.com/FtUTGsJ.png)
@@ -76,7 +76,7 @@ You can configure your bot to [trigger specific flows when an event occurs](http
 Once the integration is enabled, your bot gains the ability to directly perform various actions within that specific integration account. These actions may include creating new records, updating existing records, and retrieving specific information. With this capability, you can configure your bot to handle these specific integration actions seamlessly.
 
 To perform a specifc integration action via bot:
-1. In Development/Staging environment, navigate to **Studio** > **Build** > Select the flow where you want to use an integration action.
+1. In Development/Staging environment, navigate to **Automation** > **Build** > Select the flow where you want to use an integration action.
 2. Click **Add node** > **Integrations** > {Integration Name}.
 
    ![](https://i.imgur.com/lVzjJq5.png)

@@ -79,7 +79,7 @@ The `callbackStatus` object is a container that holds important CDR data and is 
 
 You can find all the information related to your use case, including data from both CDR and conversational detail fields, on the table.
 
-1. To download this data, navigate to **Studio** > **Database**, and click on **Table actions**. From there, you can easily download the data.
+1. To download this data, navigate to **Automation** > **Database**, and click on **Table actions**. From there, you can easily download the data.
 
 ![](https://i.imgur.com/bZZlNeW.png)
 

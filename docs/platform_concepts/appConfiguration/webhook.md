@@ -49,11 +49,11 @@ To configure a Webhook account, follow these steps:
 - Once the account is added, you can copy the Webhook URL. 
 :::
 
-## Enable Webhook events in Studio
+## Enable Webhook events in Automation
 
 Once integration is complete, to make use of events in the bot, users need to enable events.
 
-1. Go to **Studio** > **Event** > **Integrations**.
+1. Go to **Automation** > **Event** > **Integrations**.
 
 2. Search for *Custom webhook*, click on more options and Activate the event.  If there are multiple accounts, you need to activate for each account separately.
 
