@@ -21,9 +21,9 @@ The inactivity trigger setting can be useful in cases where customers do not res
 
 **Open inactivity trigger settings**
 
-1. Open **Inbox** > **Settings**. 
+1. Open **Settings** > **Inbox**. 
 2. Search and select **Inactivity trigger**. 
-    ![](https://i.imgur.com/zw6AOj5.jpg)
+    ![image](https://imgur.com/6fBi9ro.png)
 
 **Features of inactivity triggers** 
 

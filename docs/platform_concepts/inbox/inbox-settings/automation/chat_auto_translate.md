@@ -61,9 +61,9 @@ To Auto translate messages, you must first set  **Translate user message** to **
 	![](https://i.imgur.com/FszdHVQ.png)
 :::
 
-1. Open **Inbox** > **Settings**.
+1. Open **Settings** > **Inbox**.
 2. Search for **Auto Translate**.
-	![](https://i.imgur.com/EAkPKUL.png)
+    ![image](https://imgur.com/t2lMtJo.png)
 3. To enable Auto to translate for Inbox, you need to generate and connect your Google Translate API key to your account by following the given steps (explained in detail in the next section):
 	- Create a New Project in your Google Cloud account.
 	- Activate Google Translation API service

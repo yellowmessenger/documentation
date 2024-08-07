@@ -19,9 +19,9 @@ All the Inbox updates will be sent to you based on your role (Inbox admin/agent)
 
 Follow the below steps to configure notifications: 
 
-1. Log in to the platform. Open **Inbox** > **Settings**. 
-2. Search and select **Notification**. 
-    ![](https://i.imgur.com/8RWFDNf.png)
+1. Log in to the platform. Open **Settings**. 
+2. Search and select **Inbox > Notification**. 
+    ![image](https://imgur.com/c2rYNso.png)
 
 3. You can configure notifications for AGENT, SUPERVISOR, and ADMIN. Click the respective tab. 
     - To configure Inbox admin notifications, go to the **Admin** tab. 

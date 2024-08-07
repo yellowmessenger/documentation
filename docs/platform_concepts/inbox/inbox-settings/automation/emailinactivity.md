@@ -19,8 +19,10 @@ Email inactivity is handled by performing the below action:
 
 To automatically close an inactive email ticket, follow these steps: 
 
-1. Open **Inbox** > **Settings**. 
+1. Open **Settings** > **Inbox**. 
 2. Search and select **Inactivity trigger**. 
+    ![](https://imgur.com/6fBi9ro.png)
+
 3. Select **Email** tab.    
  
     ![](https://i.imgur.com/RrqV6jB.png)

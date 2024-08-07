@@ -24,10 +24,10 @@ Most service providers have standard SLAs reflecting various levels of service a
 **Configure SLAs**
 
 To configure SLAs, follow the below steps:
-1. Open **Inbox** > **Settings**.  
+1. Open **Settings** > **Inbox**.  
 2. Search and select **Service level agreement (SLA)**.
 
-    ![](https://i.imgur.com/qAM0tUG.png)
+    ![image](https://imgur.com/oJCI6Xz.png)
 
 3. All the available SLAs are listed on this page. Use the State toggle next to the SLA names to enable or disable an SLA.
 

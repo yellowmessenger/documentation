@@ -3,7 +3,7 @@ title: Create a custom report (query) with multiple datasource using table join
 sidebar_label : Report with multiple datasource   
 ---
 
-You can create a join query (report) in **Insights > Data Explorer** by using the **Create query with multiple datasource** option. This allows you to combine or merge **two** default tables into a single report using different types of joins.
+You can create a join query (report) in **Insights > Data Explorer** by using the **Create query with multiple data source** option. This allows you to combine or merge **two** default tables into a single report using different types of joins.
 
 
 **Common example**: You can join the Chat Tickets and Email Tickets tables using the common column UID to determine if any users have raised tickets through both chat and email channels.
@@ -55,11 +55,10 @@ Follow the steps below to create a report using two data sources:
 1. Open **Insights > Data explorer**. Click **+Create report**. 
     ![image](https://imgur.com/TcbkVnz.png)
               
-2. Select **Custom query > Multiple datasource** and **Next**. 
+2. Select **Custom query > Multiple data source** and **Next**. 
     ![image](https://imgur.com/TJVugCV.png)              
 3. Select **two** data sources from the available list of tables.
     ![image](https://imgur.com/fUFx1pD.png)
-
 
 :::info
 
@@ -81,6 +80,8 @@ Follow the steps below to create a report using two data sources:
 15. Bot Tables (All the custom tables created in Studio)
 
 :::
+
+> You can only select 2 data sources (tables).
 
 
 4. Click the join option and select the type of join operation (inner, left, right, or full join).      

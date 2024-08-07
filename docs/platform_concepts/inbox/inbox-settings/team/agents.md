@@ -18,10 +18,9 @@ In this article, you will learn:
 
 Follow the given steps to configure agent settings:
 
-1. Open **Inbox** > **Settings** > **Team**.
+1. Open **Settings** > **Team** > **Inbox**.
 2. Search and select **Agents**.
-
-    ![](https://i.imgur.com/ysUDmWk.jpg)
+    ![image](https://imgur.com/UuEz7Hg.png)
 
 3. Details of all the users with **Inbox agent** access will be on this page. 
 

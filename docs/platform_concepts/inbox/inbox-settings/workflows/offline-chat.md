@@ -34,9 +34,10 @@ When offline handling is:
 
 Follow the steps below to enable offline handling of live chats: 
 
-1. Open **Inbox** > **Setting**. 
+1. Open **Setting** > **Inbox**. 
 2. Search and select **Offline handling**. 
-    ![](https://i.imgur.com/7LPvaD4.jpg)
+    ![image](https://imgur.com/YkweVMn.png)
+
 3. You can **Enable/Disable offline chats**. **Enable** the toggle to allow Inbox to handle live chats when all the agents are offline.
     <img src="https://i.imgur.com/AbEmZ4V.png" alt="drawing" width="60%"/> 
 

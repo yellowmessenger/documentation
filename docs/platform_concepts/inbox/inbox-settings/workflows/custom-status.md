@@ -49,10 +49,10 @@ On the custom status settings, admins can create a custom status for the agents 
 
 You can create a custom status and map it to a default status(Away/Busy). With this, the admins can track why (reason like Lunch, documentation, etc.) the agents were Away/Busy. Follow the given steps to add/modify/delete custom status:
 
-1. Open **Inbox** > **Settings**.
+1. Open **Settings** > **Inbox**.
 2. Search and select **Custom status**.
 
-    ![](https://i.imgur.com/mBYdAim.jpg)
+    ![image](https://imgur.com/ooaYSRR.png)
 
 3. Click **+Add status**.
 4. Add a new status label and select a behavior.
