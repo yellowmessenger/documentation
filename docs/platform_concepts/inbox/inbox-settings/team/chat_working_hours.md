@@ -47,10 +47,9 @@ If working hours toggle is enabled and there is no timelimit set for any group, 
 
 Follow the below steps to set working hours: 
 
-1. Open **Inbox** > **Settings**. Search for **Working hours**.
+1. Open **Settings** > **Inbox**. Search for **Working hours**.
 
-    ![](https://i.imgur.com/dnpU61d.png)
-
+    ![image](https://imgur.com/83QbN9k.png)    
 
 2. Enable the working hours toggle.
 

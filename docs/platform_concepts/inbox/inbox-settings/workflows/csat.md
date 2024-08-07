@@ -21,9 +21,10 @@ This works only for **website chatbots**.
 
 Follow the below steps to enable the customer satisfaction feature: 
 
-1. Open **Inbox** > **Settings**.
+1. Open **Settings** > **Inbox**.
 2. Search and select **Customer satisfaction**.
-    ![](https://i.imgur.com/m0SyGqU.jpg)
+    ![image](https://imgur.com/VtOEKu3.png)
+
 3. Enable **Default feedback** toggle. 
     ![](https://i.imgur.com/C99xJ7F.png)
 

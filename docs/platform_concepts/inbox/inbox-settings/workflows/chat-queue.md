@@ -29,10 +29,9 @@ Functionalities of queue handling:
 
 Follow the given steps to configure the queue for different agent groups:
 
-1. Open **Inbox** > **Setting**.
+1. Open **Setting** > **Inbox**.
 2. Search and select **Queue handling**.
-    ![](https://i.imgur.com/NFgq6UD.jpg)
-
+    ![image](https://imgur.com/HFbGDpk.png)
 
 #### Chat queue logic
 

@@ -20,10 +20,10 @@ In this article, you will learn to add agent groups to segregate agents based on
 
 Follow the given steps to add agents to different groups:
 
-1. Open **Inbox** > **Settings**. 
+1. Open **Settings** > **Inbox**. 
 2. Search and select **Groups** (from team settings).
 
-	![](https://i.imgur.com/UABe1PU.png)
+    ![image](https://imgur.com/7e4Omx8.png)
 
 3. To customize a particular group (for example, to assign 5 agents to a sales group) you can add the logic to differentiate the agents on the group settings. Follow the below steps to add a new group:   
 	- Click **+Add group**.     

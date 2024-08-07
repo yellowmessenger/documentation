@@ -28,9 +28,9 @@ Based on the requirement, canned responses can be added or edited by an inbox ad
 
 Follow the steps below to add a canned response:
 
-1. Open **Inbox** > **Settings**. Search and select **Canned responses**.
+1. Open **Settings** > **Inbox**. Search and select **Canned responses**.
 
-    ![](https://i.imgur.com/LMuoMr3.png)
+    ![image](https://imgur.com/CeaTmJK.png)
 
 2. On the canned response page, there are 2 tabs - Chat and Email. You can configure responses for both chat and email in the same manner. Select any of the tabs.
 

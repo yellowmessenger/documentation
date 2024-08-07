@@ -29,10 +29,10 @@ Only inbox admins can create email templates.
 
 To create email templates, follow the below steps: 
 
-1. Open **Inbox** > **Settings**. 
+1. Open **Settings** > **Inbox**. 
 2. Search and select **Email template**. 
 
-    ![](https://i.imgur.com/AfrCf8k.png)
+    ![image](https://imgur.com/dS0iyN1.png)
 
 3. Click **+Create template**. 
 

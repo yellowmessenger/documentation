@@ -49,9 +49,9 @@ Custom fields can be added to tickets and are used to track business-specific in
 
 Follow the given steps to add new custom fields:
 
-1. Open **Inbox** > **Settings**.
+1. Open **Settings** > **Inbox**.
 2. Search and select **Custom fields**.
-    ![](https://i.imgur.com/RS3lgWj.jpg)
+    ![image](https://imgur.com/IyJj7C2.png)
 
 3. You can add custom fields for **Chat** and **Email** tickets. Select the required tab.
     ![](https://i.imgur.com/mdezMvJ.png)

@@ -30,9 +30,9 @@ Chat bots(widgets) that are built on the yellow.ai platform or any other app can
 
 To connect a chat bot, follow the below steps: 
 
-1. Open Inbox **settings**. Search and select **Knowledge base**.
+1. Open **Settings > Inbox**. Search and select **Knowledge base**.
 
-    ![](https://i.imgur.com/jPd74Ri.png)
+    ![image](https://imgur.com/Ctym7VD.png)
 
 2. Click **View** next to integrations. 
 

@@ -31,9 +31,9 @@ To create agent actions, follow these steps:
 
     ![](https://i.imgur.com/V2qyXdC.jpg)
 
-2. Open **Inbox** > **Settings** > **Automation**. Search and select **Automation with Studio**.
+2. Open **Settings** > **Inbox** > **Automation**. Search and select **Automation with Studio**.
 
-    ![](https://i.imgur.com/iSooZ14.jpg)
+    ![image](https://imgur.com/6vWVozF.png)
     
 3. On the Automation with Studio page, you will find all the live flows created in the Automation module. You can **enable** specific flows that you want to make available as agent actions.
 

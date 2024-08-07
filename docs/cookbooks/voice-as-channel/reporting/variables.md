@@ -32,7 +32,7 @@ Once the call is initiated, these voice bot variables (global variables) are acc
 
 | Format | Datatype| Description|
 | -------- | -------- | -------- |
-|{{{data.sid}}} | String | A unique identifier assigned to each voice call | 
+|{{{data.call_sid}}} | String | A unique identifier assigned to each voice call | 
 | {{{data.recording_url}}} | String | The downloadable URL of the ongoing call |  
 | {{{data.from}}} |String| The phone number the call was made from| 
 | {{{data.to}}} | String| The phone number the voice bot called | 

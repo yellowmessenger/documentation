@@ -21,9 +21,10 @@ Only Admins can create tags, which can be analyzed in the [Chat archive report](
 
 To add a new tag, follow the given steps: 
 
-1. Open **Inbox** > **Settings**. 
+1. Open **Settings** > **Inbox**. 
 2. Search and select **Tags**.
-    ![](https://i.imgur.com/n2sxLcB.png)
+    ![image](https://imgur.com/lRpa8ab.png)
+
 3. Select the **Chat/Email** tab. Enter tags separately for live chats and email tickets.
 4. Enter a tag label (to enter multiple tags, use ',') and click **+Add**.
     ![](https://i.imgur.com/pTUuy8N.png)

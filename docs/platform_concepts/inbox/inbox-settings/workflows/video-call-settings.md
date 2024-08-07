@@ -24,9 +24,10 @@ Video calls must mandatorily be enabled:
 
 Follow the given steps to enable video calls for the inbox: 
 
-1. Open **Inbox** > **Settings**. 
+1. Open **Settings** > **Inbox**. 
 2. Search and select **Video call**. 
-    ![](https://i.imgur.com/4VS258n.jpg)
+    ![image](https://imgur.com/t2IrSrZ.png)
+
 3. Enable video call toggle. 
     ![](https://i.imgur.com/PL7zj6S.jpg)
 4. Click **Upload Photos** to set a background for your video calls.  If there are multiple photos uploaded you can click on one of them(or select none) to make it the default background. 

@@ -14,9 +14,10 @@ Yellow.ai's Inbox provides an option to send the chat transcripts.  Follow the s
 :::
 
 
-1. Open **Inbox** > **Settings**. 
-2. Search and select **Chat transcript**. 
-    ![](https://i.imgur.com/3JBRVof.png)
+1. Open **Settings** > **Inbox**. 
+2. Search and select **Send chat transcript**. 
+    ![image](https://imgur.com/DBkgrM8.png)
+
 3. Enable **Send ticket transcript to user**. 
 4. **Default** input box has the emails from which this chat transcript will be sent to the users. 
     - Every account in the platform is provided with the default email address, you can select default from the drop-down list to use this email ID. 

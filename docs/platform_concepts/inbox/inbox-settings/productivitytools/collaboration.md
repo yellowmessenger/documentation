@@ -21,9 +21,9 @@ A company handles queries on footwear and electronic accessories separately by c
 
 To enable collaborators for chats/tickets, follow the below steps: 
 
-1. Open **Inbox** > **Settings**. 
+1. Open **Settings** > **Inbox**. 
 2. Search and select **Collaboration**.
-    ![](https://i.imgur.com/Xl82ptB.png)
+    ![image](https://imgur.com/w8VByFL.png)
 3. Select **Enable collaboration** toggle. 
     ![](https://i.imgur.com/HsgmC3L.png)
 4. Enabling the collaborator toggle on the inbox settings will enable a **Collaborator** field on your chat/ticket screen- user details section where you can add collaborators by selecting the names from the dropdown menu.

@@ -18,9 +18,10 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupan
 
 Follow the below steps to configure email settings: 
 
-1. Open **Inbox** > **Settings**. 
+1. Open **Settings** > **Inbox**. 
 2. Search and select **Email settings**.
-    ![](https://i.imgur.com/2HwgDYg.png)
+    ![image](https://imgur.com/4OVmD7g.png)
+
 3. Select **Support email**. Enabling the support email option means that all incoming emails will be forwarded to the yellow.ai Inbox instead of the actual mailbox, where they will be automatically converted into support tickets.
     ![](https://i.imgur.com/yAF6i63.png)
 4. Add **Acknowledgement email for new tickets**. This allows an acknowledgement email to be automatically sent to the customer when a new support ticket is created in the inbox, while the inbox agent takes up the ticket to resolve the customer's query. This practice is widely used in the support ticketing industry. You can choose to not send an acknowledgement email by selecting the **Do not send acknowledgement email** option. 

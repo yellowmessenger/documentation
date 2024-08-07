@@ -26,6 +26,7 @@ Follow the given steps to enable/disable email ticket auto-assignment:
 
 1. Open **Inbox** > **Settings**.
 2. Search and select **Auto Assignment**.
-    ![](https://i.imgur.com/EAkPKUL.png)
+    ![image](https://imgur.com/GFap1am.png)
+
 3. Enable/Disable the toggle.
     ![](https://i.imgur.com/1StI1XM.png)
