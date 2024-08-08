@@ -1,5 +1,5 @@
 ---
-title: June 2024 Releases
+title: July-August 2024 Releases
 sidebar_label: Latest releases
 featured: true
 ---
@@ -7,102 +7,121 @@ featured: true
    ![](https://i.imgur.com/hIGEIJL.png)
 
 
-## Improved Insights Module
+## Your Cloud Platform Redefined - Discover Simplicity
 
-We've upgraded the Insights module based on your feedback to improve how reports are generated. Previously, it was difficult to customize drill-downs, filters, and visualizations for specific metrics. To make things easier, we've consolidated these features onto the Dashboard and Data Explorer pages, removing the following screens: Overview, Metrics, User Journeys, Voice Overview, and Doc Cog.
+We're excited to announce a major enhancement to your AI platform, designed to boost efficiency and deliver exceptional results. We've carefully restructured our platform to provide a more intuitive and powerful user experience. Key improvements include:
 
-For comprehensive release details, refer to this [link](https://docs.yellow.ai/docs/updates/2024/insightsrevamp).
+### Expanded Automation
+Our previous "Studio" module has evolved into a comprehensive "Automation" hub, centralizing bot building and inbox automation. This is just the beginning—stay tuned for even more powerful automation features coming soon.
+
+### Dedicated User 360
+We've elevated "User 360" to a standalone module, providing a comprehensive view of user interactions across the entire platform. This allows for deeper insights and enables other modules to leverage user data for enhanced performance.
+
+### Independent Knowledge Management
+We've transformed the previously Studio-restricted Knowledge Base into a standalone "Knowledge" module. This dedicated focus empowers you to effectively manage and leverage your knowledge assets.
+
+### Advanced Conversation Analysis
+Our new "Analyze" module offers detailed insights into customer conversations, helping you understand what they’re talking about, monitor user sentiment, and determine if their queries are resolved. It also learns from interactions and automatically generates AI content to enhance bot automation.
+
+### Centralized Settings 
+We've streamlined your experience by unifying all settings into one location. You can now manage Chatbot, Inbox, and Engage settings all from a single, convenient place.
+
+---
 
 
-### Key upgrades
+## New Dynamic Chat Node Configuration - Context Switching
 
-1. All Reports are migrated to [Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard). 
-2. Metrics/widgets are moved to default reports labeled as *Created by Yellow.ai*.
-3. Option to **clone** default reports and dashboards for personalized drill-down operations.
-4. [Custom dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/custom_dashboards) and reports are available on custom tab.
+You can now enable context switching in the additional settings to allow NLP or orchestration LLM (depending on the navigational entity in your bot) to take over and switch out of the dynamic chat node.
+
+**Context Switching** enables the bot transition from the current Dynamic chat node to a different flow based on user input, such as switching to a "talk to agent" flow when the user expresses a need for live support. 
+
+   <img src="https://imgur.com/EzYEs9X.png" width="60%"/>
+
+**Example**: If a user is navigating a goal-oriented flow and types "talk to agent," the bot can switch to the relevant agent support flow seamlessly.
+
+
+### Limitation
+* While context switching is supported, the previous context will not be maintained.
+
+
+### Important Considerations:
+
+* This update may introduce complexity in some bots where user inputs could match both dynamic chat node responses and predefined intents.
+* We recommend optimizing your bot's setup carefully to balance between dynamic responses and intent-based interactions.
+* Special attention is needed for addressing queries where user prompts could potentially overlap with expected replies in dynamic chat nodes.
+
+---
+
+## Introducing Threshold-Based Custom Alerts for Your Reports
+
+We’re excited to announce a new feature that will enhance how you monitor your reports: **Threshold-Based Custom Alerts**. This allows you to configure alerts based on specific threshold conditions in your count-based reports.
+
+## Key Features:
+
+🔔 **Custom Alerts:** 
+
+Set up alerts for any count-based metrics by applying filters to default tables and saving the results as count visualizations. To create an alert, select the Monitor icon on your saved report and access the Create Alert window.
+
+➗ **Threshold Conditions:** 
+
+Choose a mathematical operator and specify your threshold value to configure your alert. *(More operators will be available in future updates.)*
+
+⏲️ **Scheduling:** 
+
+Customize how often you want the metric to be checked. The options include weekly, daily, hourly, or every 5 minutes. Alerts will be sent if the count meets the threshold at the scheduled check time.
+
+📅 **Business Hours Setup:** 
+
+Define specific business hours and time periods during which alerts should be active. This ensures that alerts are only sent during these times, even if the threshold is met outside of them.
+
+📧 **Recipient Management:** 
+
+Add email addresses for recipients of the alerts. You can customize the recipient list for each alert to suit your needs.
+
+❌ **Duplicate Alert Prevention:** 
+
+To minimize spam, you have the option to avoid receiving duplicate alerts if the count value remains the same between consecutive checks.
+
+---
+
+## New Tables in the Data Explorer
+
+We’ve introduced a couple of new tables in the Data Explorer that will be incredibly useful for GenAI and WhatsApp use cases:
+
+### LLM Usage Table
+- **Purpose:** Provides access to raw data on LLM (Large Language Model) usage.
+- **Metrics Included:**
+  - Token consumption
+  - Execution time
+  - Session ID data
+  - Channel
+  - Models
+  - Provider
+
+### WhatsApp Consumption Table
+- **Purpose:** Addresses a frequently requested feature, especially in recent weeks.
+- **Metrics Included:**
+  - 24-hour breakdown of authentication counts
+  - Business-initiated utility/marketing session counts
+  - User-initiated session counts
 
 :::info
- You will soon be able to setup **Custom alerts** on these reports.
+We will soon provide default reports for these use cases in our dashboards, enhancing your ability to monitor and analyze these metrics effectively.
 :::
 
-### New screens introduced
+---
 
-We've centralized all previous reporting features into the [Default Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/default_dashboard) section of Insights. You can still access all the metrics you're familiar with, now conveniently organized under dashboards labeled Created by Yellow.ai.
+## Facebook Channel Revamp
 
-Default reports provide access to underlying data and parameters for tailored analytics. They serve as a foundation for advanced queries or can be used as-is for basic insights. You can also clone our Default Reports and Dashboards to customize drill-down operations.
+We’ve introduced significant improvements to our Facebook Channel:
 
-   ![image](https://imgur.com/Xd26lSE.png)
+### 1. Unified Channel Configuration
+- **Facebook Messenger and FB Comments:** Now configured on the same channel page! 🤝
+  - Streamlined setup process
+  - Easier management of both messaging and comments
 
+### 2. Multiple Pages Support
+- **Manage Multiple Pages:** Control multiple Facebook pages from a single location.
 
-For detailed release information, check out this [link](https://docs.yellow.ai/docs/updates/2024/insightsrevamp).
-
-
-### Upcoming changes - Exports For standard reporting 
-
-Previously, the following data could have been downloaded from the metrice page, which is currently discontinued.
-
-<center><img  src="https://i.imgur.com/ZtcYRCT.png"  width="60%"/></center>
-
-We will be migrating them to **Data explorer** in the **upcoming release**:
-
-You will be able to [export data](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/defaulttables#download-filtered-data-as-a-csv-file) from both Default and Custom reports. You can also [schedule report downloads](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#1-schedule-a-report). 
-
-
-For detailed release information, [check out this link](/docs/updates/2024/insightsrevamp).
-
-
-
-
-****
-
-
-## Inbox: Information Security Enhancement to restrict Agent Actions in tickets
-
-In our ongoing efforts to enhance information security and streamline operations within our ticketing system, we are adding a new security layer to restrict certain actions by agents. These changes ensure that only authorized personnel can modify ticket details and perform other ticket-related activities. This update applies to both chat tickets and email tickets.
-
-### Key Changes
-* **Agent Restrictions**: Agents will no longer have the access to:
-   * Update ticket details of other agents or unassigned tickets.
-   * Send messages on other agents or unassigned tickets.
-   * Transfer tickets assigned to other agents or unassigned tickets to other agents.
-   * Assign tickets that are either assigned to other agents or unassigned.
-   * Perform any other ticket-related updates on tickets not assigned to them or unassigned tickets.
-
-:::note
-These restrictions apply to both chat tickets and email tickets.
-:::
-
-* **Group Supervisor Permissions** to allow group supervisors to effectively manage and oversee the tickets within their specific groups without unnecessary restrictions.
-   * Agents with Group Supervisor access can continue to:
-   * Update ticket details for tickets within their supervision group.
-   * Send messages on tickets within their supervision group.
-   * Transfer and assign tickets within their supervision group.
-   * Manage unassigned tickets that belong to their supervision group.
-
-* **Admin Rights**:
-   * Admin users will retain all existing permissions and rights. Admins will continue to have full access to modify, transfer, assign, and perform all ticket-related activities regardless of the ticket's assigned status. These permissions cover both chat tickets and email tickets.
-
-### Benefits
-* **Enhanced Security**: By restricting agents from accessing and modifying tickets not assigned to them, we minimize the risk of unauthorized changes and potential security breaches.
-* **Improved Accountability**: Clear demarcation of responsibilities ensures that agents are accountable for the tickets assigned to them, fostering a more organized and efficient workflow.
-* **Effective Supervision**: Ensuring that group supervisors can effectively handle their team's tickets allows for better oversight and management within specific groups.
-* **Simplified Workflow Management**: Admins retain full control over ticket management, allowing for efficient oversight and delegation.
-
-### Action Required
-* **For Agents**: No specific action is required from agents. These changes will be applied automatically.
-* **For Group Supervisors**: Supervisors should review their group's tickets and ensure they are aware of their permissions.
-* **For Admins**: Admins should ensure that they are aware of the continued breadth of their permissions and use their rights responsibly to manage ticket assignments and transfers.
-
-
-
-***
-
-## All Settings Under One Roof! (Platform-Wide Update)
-
-Say goodbye to hunting for settings!
-
-We are centralizing all your Settings under one roof in the left navigation bar. In Phase 1, we have moved General and Engage settings previously found other areas. 
-
-Stay tuned for further enhancements in future phases!
-
-   ![setting](https://i.imgur.com/85w6imc.png)
+### 3. Comment Response Routing
+- **Flexible Comment Management:** Configure where replies to comments should go, giving you complete control over conversations!
