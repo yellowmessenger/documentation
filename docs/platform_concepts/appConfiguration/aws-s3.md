@@ -31,6 +31,7 @@ Configuring the integration with AWS S3 is straightforward. Follow the steps def
    <img src="https://i.imgur.com/uu5WNMr.png" width="70%"/>
 
 4. Enter **Access Key Id** and **Access Secret Key**.
+5. In Location, specify the location or region where your AWS S3 bucket is hosted. This ensures that the integration connects to the correct AWS region where your data is stored. For example: `us-east-1` (Northern Virginia), `eu-west-1` (Ireland), or `ap-southeast-1` (Singapore).
 
 5. Click **Connect**.
 6. To connect another account, click **+ Add account** and proceed with the previous steps. You can add a maximum of 15 accounts.
