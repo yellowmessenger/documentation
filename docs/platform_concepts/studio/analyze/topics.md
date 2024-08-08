@@ -9,7 +9,7 @@ When your bot generates topics, it categorizes conversations based on the themes
 
 To access topics page:
 1. Log in to the yellow.ai platform. 
-2. Open **Studio > Conversation logs**. 
+2. Open **Analyse > Conversation logs**. 
 3. Navigate to **Topics**. 
 
 ![image](https://hackmd.io/_uploads/Byg8vFsv0.png)

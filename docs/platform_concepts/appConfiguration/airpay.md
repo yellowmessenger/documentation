@@ -38,7 +38,7 @@ To connect your Airpay account with Yellow.ai, follow these steps:
 
 To generate a payment link in the bot using Airpay, follow these steps:
 
-1. In Studio **Build**, open the flow where you want to add the payment link.
+1. In Automation **Build**, open the flow where you want to add the payment link.
 2. Navigate to the desired point in your conversation flow where you want to integrate with Airpay for payment links. Follow these steps:
 
 1. Click on the Integration option in the flow editor.

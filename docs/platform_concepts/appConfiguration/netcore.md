@@ -41,10 +41,10 @@ You can configure Netcore Smartech by following the below steps:
 
 3. Receiving event in yellow.ai Bot.
 
-* Login to cloud.yellow.ai and click on the Studio Module from the top left corner of your screen.
+* Login to cloud.yellow.ai and click on the Automation Module from the top left corner of your screen.
 * Click on the Event, from the left navigation bar and then choose Integrations.
 * You will find an event named netcoreEvent that needs to be activated by clicking on the three dots next to the name of the event.
-* After activating the event, a flow needs to be created in the Studio module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
+* After activating the event, a flow needs to be created in the Automation module whose trigger point is this event. Now based on the event data received, an appropriate message is displayed to the end user.
 
     :::info
 If you have added multiple accounts in your platform, enable events for each of those accounts.

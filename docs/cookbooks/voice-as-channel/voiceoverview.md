@@ -82,7 +82,7 @@ Here's how voice bots work end-to-end:
 Yellow.ai offers a complete voice bot solution that integrates speech recognition and speech synthesis technologies into their product ecosystem. This comprehensive solution simplifies the process of creating and deploying voice bots for businesses. Let's take a closer look at the different products in the ecosystem.
 
 1. **Design module**: This module provides an intuitive and straightforward way for users to design and craft their own conversations quickly and easily.
-2. **Studio module**: Once a conversational voice bot is created, businesses can personalize the experience by connecting it to their CRM and APIs. This module helps businesses to create custom voice bots tailored to their specific needs.
+2. **Automation module**: Once a conversational voice bot is created, businesses can personalize the experience by connecting it to their CRM and APIs. This module helps businesses to create custom voice bots tailored to their specific needs.
 3. **Engage module**: Businesses can use voice bots to reach out to customers via outbound campaigns. The User 360* feature in this module maintains a digital diary of customers and helps to run targeted campaigns.
 4. **Insights module**: The Insights module provides businesses with detailed analytics and metrics related to their voice bots' performance, such as the number of calls, call duration, and API response time.
 5. **Channels module**: Businesses can easily set up their voice bots, including configuring the IVR channel, and associated phone numbers.

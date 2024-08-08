@@ -45,7 +45,7 @@ To store data collected from flows, you need to create a table (this is a prereq
 3. The database will store all the details obtained from the calls.
     ![](https://hackmd.io/_uploads/SkG2Bus4h.png)
 
-> [Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/database#-1-create-table) about creating a table in Studio.
+> [Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/database#-1-create-table) about creating a table in Automation.
 
 ------
 

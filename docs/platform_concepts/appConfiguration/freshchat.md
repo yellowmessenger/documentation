@@ -91,7 +91,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
 :::
 
-1. In the [Studio flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket), select the **Raise Ticket** node.
+1. In the [Automation flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket), select the **Raise Ticket** node.
 
 ![](https://i.imgur.com/tyx0Rce.png)
 

@@ -62,7 +62,7 @@ To initiate a voice call, follow the steps below:
     
 2. Enter the details.
     - **Enable answering machine detection (AMD)** : You have the option to enable AMD, which helps determine if a voice call made by the bot is answered by a human or a machine (such as a voicemail system).
-    - **Bot flow**: From the dropdown menu, select the desired flow that should be triggered when the campaign call is made to customers. All available flows in Studio are listed here.
+    - **Bot flow**: From the dropdown menu, select the desired flow that should be triggered when the campaign call is made to customers. All available flows in Automation are listed here.
     - **From**: Choose the IVR number(s) from which the voice call should be made. If multiple IVRs are added, the calls will be made randomly from any of those numbers.
     - **To**: Select the variable that contains the user identifier. Click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow) for steps on setting up user identification.
     - **Call trigger time**: Set the business hours in the **Settings** and configure the flow to be triggered only during those designated business hours.
@@ -87,7 +87,7 @@ Follow these steps to add a new goal to the flow:
 1. Click **Add new goal to the flow**.
 2. Add details: 
     - **Name**: Type any custom name. 
-    - **Event**: Select an event that you have activated in Studio. When this [event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) is identified, it will indicate that the goal has been reached.
+    - **Event**: Select an event that you have activated in Automation. When this [event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) is identified, it will indicate that the goal has been reached.
     - **Set goal validity**: Choose the duration for which the goal should remain valid. After the specified duration, the campaign will still be active, but the goal won't be considered.
 3. **Save** the goal.  
     ![](https://hackmd.io/_uploads/rJwmAQ0B2.png)

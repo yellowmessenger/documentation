@@ -7,7 +7,7 @@ Keywords: [Track CSAT, CSAT analytics, customer feedback analytics]
 To collect user/customer feedback on yellow.ai, you can take the below approaches: 
 1. **Collect user feedback for the bot interaction** (on web widget): This is done by creating a flow using Feedback node. When this node is reached during the flow, feedback questions will be posed to the users. 
 2. **Collect user feedback for the inbox agent interaction** (on web widget): This is explicitly for bots using Inbox and have agents configured. After an agent resolves a chat, feedback questions will be posed to users. 
-3. **Collect user feedback for bot/agent interaction via. custom flows** (recommended for other channels like Facebook, WhatsApp, etc.): Create a custom flow on studio. 
+3. **Collect user feedback for bot/agent interaction via. custom flows** (recommended for other channels like Facebook, WhatsApp, etc.): Create a custom flow on Automation. 
 
 This data will be available in the [Data Explorer](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/intro) section.     
 You can visualize it further by taking advantage of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards) and [visualization](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/visualization). 
@@ -34,11 +34,11 @@ You can visualize it further by taking advantage of [Dashboards](https://docs.ye
 
 ----
 
-##  3. Customize user feedback flow on studio
+##  3. Customize user feedback flow on Automation
 
 > The above-mentioned default feedback methods will work only on your **website chatbot**. 
 
-You can create flows in Studio to manually collect user feedback (from the bot interaction) for two use cases: 
+You can create flows in Automation to manually collect user feedback (from the bot interaction) for two use cases: 
 1. Collect CSAT feedback for other channels like WhatsApp, Facebook, etc. after an inbox live agent interaction.
 2. Customize your feedback parameters. The feedback node collects only the rating and comments from the user. If you want to collect other details, like "which product would you likely recommend to your friends," you can use this method.
 

@@ -67,7 +67,7 @@ When multiple accounts are added, select the appropriate account for each node, 
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
 :::
  
- 1. In the Studio flow builder, select the **Raise Ticket** node.
+ 1. In the Automation flow builder, select the **Raise Ticket** node.
 
 <img src="https://i.imgur.com/k3kIkVd.png" alt="drawing" width="100%"/>
 

@@ -17,7 +17,7 @@ To enable pre-configured alerts, perform the following steps:
 
 1. Go to the **Alerts** section of **Insights** > **Health**.
 2. Activate the toggle button for the required alert. Two pre-configured alerts are available:
-    - **API failure**: When enabled, you will receive an email notification if any APIs configured in Studio have a failure rate of more than 5% in the last 7 days.
+    - **API failure**: When enabled, you will receive an email notification if any APIs configured in Automation have a failure rate of more than 5% in the last 7 days.
     - **Bot downtime**: When enabled, you will receive an email notification if the bot remains inactive for more than 30 minutes.
     ![](https://i.imgur.com/ivKNwXt.png)
     :::info

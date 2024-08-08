@@ -7,7 +7,7 @@ You can create database tables to store and retrieve information. During bot con
 
 Some examples are creating a table containing city, pin code, and address columns to exhibit store addresses according to the chosen city or pin code, archiving user feedback within a database table, and managing product details in a table to exhibit information based on the selected SKU or name.
 
-This article covers all the concepts remated to managing database tabbles in Studio.
+This article covers all the concepts remated to managing database tables in Automation.
 
 :::note
 We have either two or three environments, depending on the specific bot: Development, Staging, and Live. When it comes to database tables, they play a crucial role in storing and organizing data for your bot. These tables are typically created in the first environment, and when you publish the bot, they seamlessly move to the next environment in the hierarchy, as configured.

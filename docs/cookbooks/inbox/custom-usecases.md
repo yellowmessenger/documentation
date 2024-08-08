@@ -44,7 +44,7 @@ Follow the below steps to assign a ticket to a group by adding any tag:
 ## 4. How to Visualize a team's CSAT values on the yellow.ai platform(Data explorer)
 
 Currently, the Inbox CSAT values are not available for visualization (widgets/graphs). Agent CSAT values are found in **Data explorer** > **Chat tickets**.    
-You can create a custom CSAT bot flow (on Studio). Store the custom CSAT data in a database, and create a visualisation of your preference in Data Explorer.
+You can create a custom CSAT bot flow (on Automation). Store the custom CSAT data in a database, and create a visualisation of your preference in Data Explorer.
 Click [here](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback) for more details.
  
 **Sample flow:** 

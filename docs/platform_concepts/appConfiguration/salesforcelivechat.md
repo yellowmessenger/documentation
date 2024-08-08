@@ -117,7 +117,7 @@ This integration lets you connect with live agents on the **Salesforce** platfor
 Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions when a live chat closes, instead of using the **ticket-close** event.
 :::
  
- 1. In the Studio flow builder, select the **Raise Ticket** node.
+ 1. In the Automation flow builder, select the **Raise Ticket** node.
 
    <img src="https://i.imgur.com/k3kIkVd.png" alt="drawing" width="80%"/>
 

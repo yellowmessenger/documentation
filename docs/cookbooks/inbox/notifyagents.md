@@ -31,7 +31,7 @@ Follow the given steps to notify agents when they are offline/busy/away:
 
   
 
-4. Set events “ticket-opened”, “ticket-missed” and “ticket-queued” to active inside Event in Studio. Post this, the start trigger node needs to be configured with these events in the respective flow.
+4. Set events “ticket-opened”, “ticket-missed” and “ticket-queued” to active inside Event in Automation. Post this, the start trigger node needs to be configured with these events in the respective flow.
   
 
 ![](https://lh6.googleusercontent.com/hsj0OGeogoz2L8Tdn6q_eOPNWO2ruxEHOiU3DVB86A2xf3F4jWJw0YgGrwoUgTUv5hadyP4I4zN-ILbB_-RBXLh7U8HEjWUg3n1-v_S9DIza5KMsRsuPX7845Er7r-0tdVVu5Ue2HzZ0CdJR9vYuO2ZC1hUXl7pBDV4luZWTYkX6soV54Zf3_e1MzQ)

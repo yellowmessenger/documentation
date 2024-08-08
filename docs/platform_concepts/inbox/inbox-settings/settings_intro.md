@@ -37,7 +37,7 @@ sidebar_label : Inbox settings
 ||[Auto assignment email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/tickets-assignment-logic)|Enable/disable auto assignment of email tickets to agents|
 ||[Chat assignment for sticky agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/stickyagent)|Configure how a customer can connect with a specific agent|
 ||[Auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate) (Google API key generation)|Configure how messages can automatically be translated to the preferred language for customer and agent|
-||[Automation with Studio](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions)| Configure agent actions that can be triggered from inbox to automate a micro-task|
+||[Automation](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions)| Configure agent actions that can be triggered from inbox to automate a micro-task|
 ||[Inactivity trigger](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat-timeout)|Configure when the chat becomes inactive|
 |Account|||
 ||[Notification settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/account/notification)|Configure inbox notification tab|

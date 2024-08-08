@@ -107,7 +107,7 @@ This chart illustrates the path taken after entering the flow, and the following
 
 The user journey visualisation section provides a widget with actionable insights regarding the performance of flows and steps, including maximum drop-offs, switches, and agent transfers. 
 - The purpose of automating the analysis of user journey visualisation is to help you quickly identify areas of concern and improve bot performance. 
-- The actionable insights provided in this section allow you to analyze the highlighted flows and steps, make necessary bot design changes in the **Studio/Builder**, and assess the impact of these changes by checking week-on-week improvement numbers. 
+- The actionable insights provided in this section allow you to analyze the highlighted flows and steps, make necessary bot design changes in the **Automation/Builder**, and assess the impact of these changes by checking week-on-week improvement numbers. 
 - This automated analysis aims to streamline the process and provide you with direct insights to facilitate effective optimization of your bot. 
 - These insights are available on the right side of the section.
 
@@ -130,7 +130,7 @@ The user journey visualisation section provides a widget with actionable insight
     3. You will be directed to the steps within the flow model, where you can see how users have progressed within that particular flow.
     4. The step with the highest drop-off rate is highlighted for quick and easy reference.
     <img src="https://i.imgur.com/x3z01fI.png" alt="drawing" width="100%"/>
-    5. Click **Show steps** on the top right to be redirected to **Studio > Builder** to make necessary changes in the flow design.
+    5. Click **Show steps** on the top right to be redirected to **Automation > Builder** to make necessary changes in the flow design.
     <img src="https://i.imgur.com/lHb8Ko9.png" alt="drawing" width="80%"/>
 
 

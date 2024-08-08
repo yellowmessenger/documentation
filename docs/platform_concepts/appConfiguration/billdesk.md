@@ -41,7 +41,7 @@ To know how to enable events, refer to [this doc](https://docs.yellow.ai/docs/pl
 Once the Stripe account is connected, you can perform the following actions through bot conversations: Generate UPI intent and Generate UPI collect.
 
 
-1. Go to Development/Staging environment and navigate to Studio > Build > Select the flow where you want to add the Generate payment link node.
+1. Go to Development/Staging environment and navigate to Automation > Build > Select the flow where you want to add the Generate payment link node.
 
 2. Click **Add node** > **Integrations** > **BillDesk**.
 

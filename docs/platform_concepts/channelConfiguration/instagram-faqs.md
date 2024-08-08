@@ -64,7 +64,7 @@ sidebar_label : Instagram FAQs
  <summary>Can the bot retain the context if the user switches to a different context?</summary>
  <div>
   <br/>
-  <div>Yes. This can be configured in the Builder/Studio module of the platform.</div>
+  <div>Yes. This can be configured in the Builder/Automation module of the platform.</div>
    </div>
 </details>
 

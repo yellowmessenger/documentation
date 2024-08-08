@@ -1,6 +1,6 @@
 ---
-title: Studio FAQs
-sidebar_label: Studio FAQs
+title: Automation FAQs
+sidebar_label: Automation FAQs
 ---
 
 :::note
@@ -527,7 +527,7 @@ To extract specific date values, you can use the following syntax:
   <div>The accessibility of journey data depends on the type of variable:<br/>
  <br/> <b>Journey Variables:</b> These variables are limited to the flow in which they are created and can only be accessed within that specific flow.<br/>
  <br/> <b>Global Variables:</b> Unlike journey variables, global variables are accessible across all flows within your bot, allowing for broader usage and integration of journey data.<br/>
-<br/><b>User Properties:</b> User properties are user variables that can be accessed in Studio, Engage, and User 360.<br/>
+<br/><b>User Properties:</b> User properties are user variables that can be accessed in Automation, Engage, and User 360.<br/>
 <br/>You can use the appropriate variable type based on your specific use case.<br/>
 ​
 </div>
@@ -719,7 +719,7 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
 </summary>
  <div>
   <div> 
-     To enable summarized results and summarized answers for the Knowledge Base (KB), follow these steps:<br/> 1.Go to <b>Studio</b> > <b>Build</b> > <b>Conversation settings</b>.<br/> <img src="https://i.imgur.com/GXendkw.png" alt="drawing" width="80%"/><br/>2.Under Document Search, enable <b>Summarized results</b> and <b>Summarized links</b>. <img src="https://i.imgur.com/odRJlGs.png" alt="drawing" width="70%"/>
+     To enable summarized results and summarized answers for the Knowledge Base (KB), follow these steps:<br/> 1.Go to <b>Automation</b> > <b>Build</b> > <b>Conversation settings</b>.<br/> <img src="https://i.imgur.com/GXendkw.png" alt="drawing" width="80%"/><br/>2.Under Document Search, enable <b>Summarized results</b> and <b>Summarized links</b>. <img src="https://i.imgur.com/odRJlGs.png" alt="drawing" width="70%"/>
 </div>
   <br/>
    </div>

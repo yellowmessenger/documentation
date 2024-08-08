@@ -77,7 +77,7 @@ Follow the steps below to create a report using two data sources:
 12. User feedback
 13. Video chats
 14. CDR Reports
-15. Bot Tables (All the custom tables created in Studio)
+15. Bot Tables (All the custom tables created in Automation)
 
 :::
 

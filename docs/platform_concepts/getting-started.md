@@ -24,7 +24,7 @@ At yellow.ai, we understand the importance of seamless and effective communicati
 - Identify events and intents from complex messages to trigger workflows for ticket creation, escalations, and more.
 
       
-[**Explore Studio (customizable/AI bot builder) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+[**Explore Automation (customizable/AI bot builder) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
 
 ### Connect customers to human techies for support

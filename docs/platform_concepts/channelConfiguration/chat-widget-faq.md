@@ -92,7 +92,7 @@ if (userIsAuthenticated) {
 <summary>Why is the bot not displaying or loading any of the configured messages?</summary>
 <div>
  <br/>
- <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Studio</a>. Login to cloud.yellow.ai platform. Navigate to  <b>Studio -> Welcome Message -> Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a>. </div>
+ <div> Make sure you have configured Welcome message in the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview">Automation</a>. Login to cloud.yellow.ai platform. Navigate to  <b>Studio -> Welcome Message -> Add welcome message</b>. To know more, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/overview#3-conversation-settings">here</a>. </div>
   </div>
 </details>
 
@@ -258,7 +258,7 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 <summary>Does the chat widget support auto-complete feature?</summary>
 <div>
  <br/>
- <div>Yes, the chat widget supports auto-complete. To set up auto-complete, follow these steps:<br/>• You need to enable auto complete in [Yellow.ai Platform](https://cloud.yellow.ai) > <b>Channels</b> > <b>Chat widget</b> > <b>Settings</b> > enable <b>Auto complete</b> > click <b>Save changes</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settings">here</a><br/><img src="https://i.imgur.com/268ATI6.png)" alt="drawing" width="60%"/><br/>• Navigate to <b>Studio</b> > select a flow > click on the respective <b>node</b> > click <b>Make prompt smarter</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#4-make-prompt-smarter">here</a>.</div>
+ <div>Yes, the chat widget supports auto-complete. To set up auto-complete, follow these steps:<br/>• You need to enable auto complete in [Yellow.ai Platform](https://cloud.yellow.ai) > <b>Channels</b> > <b>Chat widget</b> > <b>Settings</b> > enable <b>Auto complete</b> > click <b>Save changes</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#23-configure-bot-features-other-settings">here</a><br/><img src="https://i.imgur.com/268ATI6.png)" alt="drawing" width="60%"/><br/>• Navigate to <b>Automation</b> > select a flow > click on the respective <b>node</b> > click <b>Make prompt smarter</b>. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#4-make-prompt-smarter">here</a>.</div>
   </div>
 </details>
 
@@ -274,7 +274,7 @@ Yes, use "window.YellowMessengerPlugin.hide()" function to hide the icon of the 
 <summary>How to restrict users from clicking on carousel card buttons repeatedly?</summary>
 <div>
  <br/>
- <div>Go to <b>Studio</b> > Select the <b>flow</b> > Click on <b>Carousel</b> node > Click <b>Settings</b> icon > Enable <b>Disable action after click</b><br/><img src="https://i.imgur.com/gaKpuvd.png)"/></div>
+ <div>Go to <b>Automation</b> > Select the <b>flow</b> > Click on <b>Carousel</b> node > Click <b>Settings</b> icon > Enable <b>Disable action after click</b><br/><img src="https://i.imgur.com/gaKpuvd.png)"/></div>
   </div>
 </details>
 
@@ -785,7 +785,7 @@ array = [{
         }]
 event : ui-event-update-promotion
 ```
-<b>Add Talk to bot button using Studio's Conversation settings</b><br/>To add the banner text for the <b>talk to bot</b> button, follow these steps:<br/> 1. Navigate to <b>Studio > Conversation settings > Callout banner</b>.<br/><img src="https://i.imgur.com/HBKYqOg.png"/><br/>2. Enter the title and button name. Click <b>Update</b>.<br/><img src="https://i.imgur.com/rorMtMu.png" alt="drawing" width="40%"/><img src="https://i.imgur.com/0qqQDEI.png" alt="drawing" width="40%"/><br/>• The callout banner will be updated accordingly.
+<b>Add Talk to bot button using Automation's Conversation settings</b><br/>To add the banner text for the <b>talk to bot</b> button, follow these steps:<br/> 1. Navigate to <b>Studio > Conversation settings > Callout banner</b>.<br/><img src="https://i.imgur.com/HBKYqOg.png"/><br/>2. Enter the title and button name. Click <b>Update</b>.<br/><img src="https://i.imgur.com/rorMtMu.png" alt="drawing" width="40%"/><img src="https://i.imgur.com/0qqQDEI.png" alt="drawing" width="40%"/><br/>• The callout banner will be updated accordingly.
 
  
 </div>

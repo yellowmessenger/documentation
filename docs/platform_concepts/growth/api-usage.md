@@ -17,7 +17,7 @@ To view the API usage, follow these steps:
 
 ### Filter data for different APIs
 
-Choose the API you want to monitor from the API drop-down list. You will see the names of the [APIs created](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) via. Studio in this dropdown.
+Choose the API you want to monitor from the API drop-down list. You will see the names of the [APIs created](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api) via. Automation in this dropdown.
 
 ![](https://i.imgur.com/rjVWiGI.png)
     

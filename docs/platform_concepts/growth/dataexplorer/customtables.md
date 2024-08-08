@@ -8,7 +8,7 @@ You can modify/visualise and perform actions on tables according to your prefere
 
 **Default tables(datasets)**: **Insights > Data explorer** has a list of default tables (reports) that are created for the commonly used bot use cases. 
 
-**Custom tables(datasets)**: On **Studio > Tables** you can create [custom datasets](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs. For example, you can create tables to store the data obtained from variables from the flows. 
+**Custom tables(datasets)**: On **Automation > Tables** you can create [custom datasets](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs. For example, you can create tables to store the data obtained from variables from the flows. 
 
 
 

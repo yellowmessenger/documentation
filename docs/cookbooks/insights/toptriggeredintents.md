@@ -35,7 +35,7 @@ In this flow (e.g., intent trigger analytics), you can create a skill (execute f
 
 **Step 3 (create a database):**
 
-1. Open Studio > Database.
+1. Open Automation > Database.
 2. Create a table and add searchable columns to store the intent names.
 
 ![image](https://imgur.com/8o6MjXr.png)

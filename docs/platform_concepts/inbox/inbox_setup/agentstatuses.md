@@ -16,7 +16,7 @@ The default statuses are as follows:
 | **Available**     | The new incoming chats/tickets will only be assigned to agents who have set their status to Available. The chats/tickets will be assigned based on their concurrency.     |      
 |**Busy**| No new chats/tickets will be assigned to agents who have set their status to be Busy. These chats/tickets will be queued in their respective group and then automatically assigned to agents when they make themselves Available. If the group queue is not enabled then these chats will be converted as Missed chats and stored in Inbox for reference. Ex: When you are working on important issues/escalations, Documentation work, Internal meetings/discussions, etc.|
 |**Away**| No new chats/tickets will be assigned to agents who have set their status to be Away. These chats/tickets will be queued in their respective group and then automatically assigned to agents when they make themselves Available. If the group queue is not enabled then these chats/tickets will be converted as Missed chats and stored in your account for reference. Ex: Recess, Bio break, Lunch break.|
-|**Offline**| When an agent logs out or goes away from the Inbox module, they’ll be treated as Offline and no new conversation will be assigned to that agent even if they are present inside the yellow.ai platform in any other module like Insights, Studio, etc.|
+|**Offline**| When an agent logs out or goes away from the Inbox module, they’ll be treated as Offline and no new conversation will be assigned to that agent even if they are present inside the yellow.ai platform in any other module like Insights, Automation, etc.|
 
 
 --------
