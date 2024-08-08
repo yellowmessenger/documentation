@@ -13,7 +13,7 @@ To create a voice bot, follow these steps:
    
 2. Define the following details and click **Create bot**.
 
-   <img src="https://imgur.com/gX6nkDk.png" alt="drawing" width="50%"/>
+   <img src="https://imgur.com/kyYVxAR.png" alt="drawing" width="50%"/>
       
 | Field Name | Description | 
 | -------- | -------- | 

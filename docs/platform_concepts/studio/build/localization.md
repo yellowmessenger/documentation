@@ -150,7 +150,7 @@ To add a new language to your bot, follow these steps:
 
 1. Go to **Automation** > **Build** > **Flow** > click the **Language** icon.
 
-   <img src="https://imgur.com/x2OLal7.png" alt="drawing" width="70%"/>
+   <img src="https://imgur.com/WJoeF4Y.png" alt="drawing" width="70%"/>
 
 2. Click **+ Add langauge**.
 
@@ -207,9 +207,9 @@ To add language translations, you need to create a unique key for each message i
 
 In this context, a "key" refers to a sentence or message intended for users, that is selected during flow creation for translation. You can provide translations for all supported languages, manually as explained in the following:
 
-1. Go to **Automation** > **Build** > **Translations** tab.
+1. Go to **Automation** > **Build** > **Translations** > **+ Create new key**.
 
-   ![](https://i.imgur.com/Y9E4FMG.png)
+   ![](https://imgur.com/R4VE6VH.png)
    
 * You will see a pop-up dialog box. 
 
@@ -229,9 +229,9 @@ In this context, a "key" refers to a sentence or message intended for users, tha
 
 If you want to translate the messages into other languages then you can use the **Auto-translate** option. Auto translation simplifies the translation process by automatically filling empty fields with translated data, based on the information that is provided in the corresponding English field.
 
-1. To enable auto-translation, on **Automation** > **Build** > **Translations**, click on the **Auto-translate** button.
+1. To enable auto-translation, go to **Automation** > **Build** > **Translations**, click on the **Auto-translate** button.
    
-   ![](https://i.imgur.com/wnUS5tF.png)
+   ![](https://imgur.com/WZ3RGZq.png)
 
 * This will automatically translate the data into the other languages based on the information provided in the corresponding English field.
 
@@ -278,7 +278,7 @@ To add multiple translations at the same time, follow these steps:
 1. Create a CSV file with columns: **name** (key), **english_text**, and other configured languages like **hindi_text**, **kannada_text**, **tamil_text**.
 2. On the **Translations** page, click **Bulk Manage** > **Import**.
 
-   ![](https://i.imgur.com/Rqj26YI.png)
+   ![](https://imgur.com/U2bBDff.png)
 
 :::note
 **Bulk Manage** > **Export** is used to download the existing keys in your platform along with their translations.

@@ -20,7 +20,7 @@ To add synonyms, follow these steps:
 
 1. Go to **Automation** > **Train** > **Synonyms**.
 
-     ![](https://imgur.com/5QaAHea.png)
+     ![](https://imgur.com/wYYGdI3.png)
 
 2. Click **+ Add new synonyms**. 
 
@@ -36,7 +36,7 @@ To add synonyms, follow these steps:
 
 5. Go to **Intents** and click the intent that will trigger the respective flow, and click **Train intents** to train the intent with the added synonym.
 
-   ![](https://i.imgur.com/sztife2.png)
+   ![](https://imgur.com/XOTE7cI.png)
 
 ### Edit synonyms
 

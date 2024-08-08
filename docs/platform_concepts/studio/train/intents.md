@@ -49,7 +49,7 @@ To add intents and utterances, follow these steps:
 
 2. Go to **Automation** > **Train** > **Intents** > **+ Add new intent**.
 
-    ![](https://imgur.com/Mk13oWp.png)
+    ![](https://imgur.com/59XChNB.png)
 
 3. Enter the name of the intent and add the utterances. To add multiple utterances, click **Add another utterance**.
 

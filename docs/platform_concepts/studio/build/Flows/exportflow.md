@@ -21,11 +21,11 @@ You can export one or more bot flows as a template with data from databases and 
 
 1. Go to **Automation** and click the flow you want to export as a template.
 
- ![](https://i.imgur.com/47ONnMU.png)
+   ![](https://imgur.com/YJqdDdL.png)
  
 2. Go to **Publish changes** > **Export as flow template**.
 
-   ![](https://i.imgur.com/xZ2SLa6.png)
+   ![](https://imgur.com/8v2oXWp.png)
    
 4. To set up export, fill the following fields:
 
@@ -68,12 +68,11 @@ You can export one or more bot flows as a template with data from databases and 
 
 Templates submitted for review can be viewed under **User account** > **Exports**.
 
-
-<img src="https://i.imgur.com/B3U98x6.png" alt="drawing" width="100%"/>
+   <img src="https://imgur.com/uO3w9sL.png" alt="drawing" width="100%"/>
 
 You can view the status of the template on this page.
 
-![](https://i.imgur.com/oynJE4x.png)
+   ![](https://imgur.com/KNHoyE9.png)
 
 ### 1.3 Publish exported templates
 
@@ -81,12 +80,12 @@ Templates exported to a private marketplace are published automatically without 
 
 The subscription admin can view, test, and publish the templates. Similarly, templates exported to the public marketplace must also be submitted for review and will appear here. The public marketplace admin can view, test, and publish the templates.
 
-![](https://i.imgur.com/aAR4eF3.png)
+![](https://imgur.com/Me3xLEJ.png)
 
 ### 1.4 View approved templates in Marketplace
 
 After selecting the access option for the template (step 7 in 1.1), the system will list the approved templates under the corresponding category.
 
-![](https://i.imgur.com/e6T16cV.png)
+![](https://imgur.com/r3p4uKF.png)
 
 

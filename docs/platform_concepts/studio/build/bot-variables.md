@@ -203,7 +203,7 @@ To create a config variable, follow these steps:
 
 1. Go to **Automation** > **Build** > select the specific flow > click the **Variable** icon.
 
-   ![](https://i.imgur.com/tDtzjXs.png)
+   ![](https://imgur.com/Nkhe7cR.png)
 
 2. Go to **Config variables** > **+ Add variable**.
 
@@ -228,7 +228,7 @@ To create a variable, follow these steps:
 
 1. Go to **Automation** > **Build** > select the specific flow > click the **Variable** icon.
 
-   ![](https://i.imgur.com/tDtzjXs.png)
+   ![](https://imgur.com/Nkhe7cR.png)
 
 2. Click the preferred tab (**Custom**/**Sytem**/**Config**/User properties), if **Custom**, choose **Journey variables** or **Global variables**, and click **+Add Variable**.
 

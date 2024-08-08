@@ -28,7 +28,7 @@ To add FAQs under default category, follow these steps:
 
 1. Go to **Automation** > **Train** > **FAQs** > **+ Add new question**. 
 
-   ![](https://imgur.com/voP4aaJ.png)
+   ![](https://imgur.com/kyn2pBZ.png)
    
 2. Enter the **Question** and **Default response**, then click **Add**. 
 
@@ -146,7 +146,7 @@ You can the add FAQs in multiple languages, follow the given steps:
 
 1. Navigate to **Automation** > **Build** > **Flows** > **Conversation settings**.
 
-   ![](https://imgur.com/2OzMDH8.png)
+   ![](https://imgur.com/EbEgggL.png)
    
 2. To add FAQs for multi-lingual bots, click **Language settings** to add the languages that you want to add to your bot. 
 
@@ -168,7 +168,7 @@ To train intents for FAQs, follow these steps:
 
 1. Click **Train** > **FAQs** > **Train intents** drop-down.  
 
-   ![](https://imgur.com/bWxVxED.png)
+   ![](https://imgur.com/hG8eguo.png)
 
 2. In **Train your model** dialog box, select **Multilingual** and click **Train**.
 

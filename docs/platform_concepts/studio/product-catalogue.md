@@ -9,13 +9,13 @@ Imagine you run an online store and have added the Product Catalog to your bot. 
 
 ## Create a product catalogue
 
-1. Go to **Automation** > **Database** > **Product catalogue** > **+ Create new table**.
+1. Go to **Automation** > **Database** > **Product catalogue** > **+ Add new table**.
 
-   ![](https://i.imgur.com/1QcJv8J.png)
+   ![](https://imgur.com/nTzP3IV.png)
 
 2. Fill in the following fields:
 
-   ![](https://i.imgur.com/ORoENMn.png)
+   <img src="https://imgur.com/NxwhI7G.png" alt="drawing" width="80%"/>
 
 * **Table name**: Provide a name to your product catalogue.
 * **Field name**: Enter the name of the product.(this will appear as a column)
@@ -29,9 +29,8 @@ Imagine you run an online store and have added the Product Catalog to your bot. 
 
 1. Click **+ Add new records**.
 
-   ![](https://i.imgur.com/3Asm6np.png)
-
-
+   ![](https://imgur.com/yR3bGyW.png)
+   
 2. Fill the fields with the relevant data and click **Add record**.
 
    ![](https://i.imgur.com/KMADt38.png)

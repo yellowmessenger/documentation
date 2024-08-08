@@ -34,7 +34,7 @@ To test a flow via URL, you can use the flow slug, which is a combination of the
 
 To trigger a specific flow when there are multiple flows in the bot, append the flow slug at the end of the flow path URL. This method allows you to directly access and test the desired flow within the bot's environment.
 
-   ![](https://imgur.com/I2a5hEW.png)
+   ![](https://imgur.com/Lw5B60L.png)
 
 To test the bot via URL, follow the given steps:
 
@@ -45,7 +45,7 @@ To test the bot via URL, follow the given steps:
     
 3. Copy the flow path from the URL after *flow/*.
 
-    ![](https://imgur.com/I2a5hEW.png)
+    ![](https://imgur.com/Lw5B60L.png)
 
 4. Click **Preview** and then click on the below highlighted icon.
 

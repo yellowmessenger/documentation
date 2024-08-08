@@ -99,10 +99,10 @@ When a user interacts with a Facebook ad, a referral event is received by the bo
 1.  The Facebook page where the campaigns are run should be linked with a WhatsApp Business Account number which is integrated with the bot. [See how to do it](https://www.facebook.com/help/iphone-app/2783732558314697).
 2.  The following events need to have enabled from the event hub for that particular bot.
  
-   * whatsapp-referral
-   * fb-ad-referral
+    * whatsapp-referral
+    * fb-ad-referral
     
-   ![](https://i.imgur.com/Up3dBHY.png)
+   ![](https://imgur.com/crgrBWf.png)
 
 
 The referral event follows the following process:
@@ -201,9 +201,9 @@ For a detailed use case guide on this event, click [here](https://docs.yellow.ai
 
 **To create user inactive events**:
 
-1. Go to **Automation** > **Event** > **User inactivity events** > **+ Add event**.
+1. Go to **Automation** > **Events** > **User inactivity events** > **+ Add event**.
 
-   ![](https://i.imgur.com/1Tie3If.png)
+   ![](https://imgur.com/n4J55CT.png)
 
 2. In **Event name**, provide a name to that event.
 
@@ -226,12 +226,11 @@ By setting up Schedule events, you can determine when certain actions or process
 
 1. Go to **Schedule events** > **+Add Event**
 
-   ![](https://i.imgur.com/Dp1g6rN.png)
+   ![](https://imgur.com/KHgoMVn.png)
 
 2. In **Event name**, enter the name of the event.
 
-
-   <img src="https://i.imgur.com/Thn8N4W.png" alt="drawing" width="50%"/>
+   <img src="https://imgur.com/a8a1jLX.png" alt="drawing" width="50%"/>
 
 3. In **Event description**, describe that event.
 4. Choose any option under **Execute event**.
@@ -280,9 +279,9 @@ In addition to the standard events available, you have the flexibility to create
 
 To create a custom event, follow these steps:
 
-1. Go to **Automation** > **Event** **Custom events** > **+Add Event**.
+1. Go to **Automation** > **Event** > **Custom events** > **+Add Event**.
 
-   ![](https://i.imgur.com/yz0DL7n.png)
+   ![](https://imgur.com/mFoNdr3.png)
 
 3. Add **Event name** and **Event description**. 
 
@@ -330,6 +329,6 @@ You cannot delete standard events, only custom events can be deleted
 To deactivate/delete an event,
 
 1. Go to **Event** > click any module.
-2. Click more and click **Deactivate** or **Delete** on the respective event.
+2. Click more and click **Deactivate** on the respective event.
 
-   ![](https://i.imgur.com/bnfCMIs.png)
+   ![](https://imgur.com/9KdbdGK.png)

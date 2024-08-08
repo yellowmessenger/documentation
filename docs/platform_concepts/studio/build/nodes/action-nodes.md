@@ -353,13 +353,13 @@ To use this node:
 
 1. Create a user event. To do so, go to **Automation** > **Event** > **User Events** > **+ Add Even**t.
 
- ![](https://i.imgur.com/GwSPuxH.png)
+  ![](https://imgur.com/X6grR3o.png)
 
 2. In **Event name**, provide a name for that event and in **Event description** descruibe the nature of that event. Click **Create Event**.
 3. Go back to **Build**, create a flow with the [start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event) as this event created in the previous step. This flow should essentially contain all the nodes required to execute the action when this event takes place.
 4. Then go to the flow which should send this event and include the **User event** node.
 
- ![](https://i.imgur.com/VtyLltz.png)
+  ![](https://i.imgur.com/VtyLltz.png)
 
 5. Fill in the following fields:
 

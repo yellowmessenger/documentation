@@ -83,7 +83,96 @@ The following table contains the details of each field in the **Advanced options
 
    ![](https://i.imgur.com/bK0Etvw.png)
 
+**Sample success response**  
 
+```json
+"response": {
+		"assignedTo": true,
+		"success": true,
+		"message": "Agent is available and ticket is assigned to the agent",
+		"status": "ASSIGNED",
+		"ticketInfo": {
+			"id": "0191132e-5e7c-a297-bb20-60bcfbf62335",
+			"status": "PENDING",
+			"disposition": -1,
+			"statusCode": 202
+		}
+	}
+```
+
+**Sample failure response**
+
+```json
+"response": {
+		"success": false,
+		"assignedTo": false,
+		"agentNotAvailable": true,
+		"message": "Agent is unavailable to chat with the end user, hence transferring the control back to the bot",
+		"ticketInfo": {
+			"statusCode": 400,
+			"success": false,
+			"details": {
+				"response": {
+					"loggedInAgentsIds": [],
+					"activeAgentsIds": [],
+					"onCallAgentsIds": [],
+					"readyForCallAgentsIds": [],
+					"notReadyForCallAgentsIds": [],
+					"readyForVoicemailAgentsIds": [],
+					"readyForChatAgentsIds": [],
+					"readyForEmailAgentsIds": [],
+					"inQueueCalls": [],
+					"inAcdQueueVoicemails": [],
+					"inProgressVoicemails": [],
+					"inQueueCallbackCount": 0,
+					"vivrCallbackCount": 0,
+					"maxQueueDuration": 0,
+					"voicemailCount": 0,
+					"data": {
+						"loggedInAgentsIds": [],
+						"activeAgentsIds": [],
+						"onCallAgentsIds": [],
+						"readyForCallAgentsIds": [],
+						"notReadyForCallAgentsIds": [],
+						"readyForVoicemailAgentsIds": [],
+						"readyForChatAgentsIds": [],
+						"readyForEmailAgentsIds": [],
+						"inQueueCalls": [],
+						"inAcdQueueVoicemails": [],
+						"inProgressVoicemails": [],
+						"inQueueCallbackCount": 0,
+						"vivrCallbackCount": 0,
+						"maxQueueDuration": 0,
+						"voicemailCount": 0
+					},
+					"statusCode": 200,
+				"reason": "Agents are not available at the moment."
+			},
+			"stopFinalApiExecution": true
+		}
+	}
+```
+
+**Ticket close event payload**
+
+```json
+{
+	"event": {
+		"code": "ticket-closed",
+		"description": "This is an event that is received from five9 end when the agent closes the conversation.",
+		"data": {
+			"eventSerialNumber": 7,
+			"displayName": "Agilan",
+			"externalId": "1173875306367686869755563234",
+			"correlationId": "0191132e-5e7c-a297-bb20-60bcfbf62335",
+			"from": "USER",
+			"userId": 300000001875481,
+			"timestamp": "2024-08-02T13:03:03.713Z"
+		}
+	},
+	"type": "event"
+}
+```
 
 
 

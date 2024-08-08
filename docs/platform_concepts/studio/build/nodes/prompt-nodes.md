@@ -904,7 +904,7 @@ The Feedback node displays a feedback widget and stores user ratings and comment
 
 1. Find feedback data in **Insights** > **Data explorer** > **User feedback**. Ratings, feedback, and other user and flow details are all stored here without the need for separate storage.
 
-  ![](https://i.imgur.com/drECKWt.png)
+  ![](https://imgur.com/kYJKPm6.png)
 
 2. The response to the Feedback node is stored in a [variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables), which can be accessed and displayed using `{{variables.var_name.rating}}` and `{{variables.var_name.comment}}`.
 
@@ -990,7 +990,7 @@ This feature can be used:
  Autocomplete shows results after 3 characters are typed and it keeps filtering the results as the customer continues typing / or selects an option.
 :::
 
-![](https://i.imgur.com/anyDc8z.png)
+<img src="https://i.imgur.com/anyDc8z.png" alt="drawing" width="50%"/>
 
 Auto complete is available at a [global level](https://docs.yellow.ai/docs/platform_concepts/studio/tools#22-conversation) and prompt level (that is triggered inside a prompt).
 
@@ -1076,5 +1076,5 @@ A voice input node is used to gather user information, process it, and manage va
 :::note
 Voice input node will work only for voice bots, i.e you should have enabled **Voice bot** while creating your bot.
 
-![](https://i.imgur.com/8f5cdfK.png)
+<img src="https://imgur.com/kyYVxAR.png" alt="drawing" width="50%"/>
 :::

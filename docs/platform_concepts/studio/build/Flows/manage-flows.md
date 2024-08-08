@@ -28,7 +28,7 @@ To set a flow as the start flow, follow these steps:
 
 1. Go to **Automation** > **Build** > **Flows**. 
 
-   ![](https://imgur.com/UNJLY5k.png)
+   ![](https://imgur.com/oYgFUS8.png)
 
 2. Navigate to the flow that you want to set as the start flow, click the **More options** icon next to the flow, and select **Mark as start flow** option.
 
@@ -47,7 +47,7 @@ To set a flow as a fallback flow, follow these steps:
 
 1. Go to **Automation** > **Build** > **Flows**. 
 
-   ![](https://imgur.com/UNJLY5k.png)
+   ![](https://imgur.com/oYgFUS8.png)
 
 2. Navigate to the flow that you want to set as the start flow, click the **More options** icon next to the flow, and select **Mark as fallback **option.
 
@@ -117,7 +117,7 @@ To search for a flow, follow these steps:
 
 1. Go to **Automation** > **Build** > **Search**.
 
-    ![](https://imgur.com/dKsSLgc.png)
+    ![](https://imgur.com/zkphSWU.png)
     
 2. Enter the flow name in the search bar.    
 
@@ -133,7 +133,7 @@ To edit a flow, follow these steps:
 
 1. Go to **Automation** > **Build** > **Flows** > select the flow that you want to edit > click the **More options** icon correspoing to the flow.
 
-    ![](https://imgur.com/8aLDCX1.png)
+    ![](https://imgur.com/1pTuR8l.png)
 
 2. Select **Edit flow details** option.
 
@@ -157,9 +157,9 @@ While cloning flows to another bot, the source and destination have to be in the
 
 To clone a flow, follow these steps:
 
-1. Go to **Automation** > **Build** > select the flow that you want to edit > click the **More options** icon correspoing to the flow.
+1. Go to **Automation** > **Build** > **Flows** > select the flow that you want to edit > click the **More options** icon correspoing to the flow.
 
-    ![](https://imgur.com/8aLDCX1.png)
+    ![](https://imgur.com/1pTuR8l.png)
 
 2. Select **Clone** option.
 
@@ -195,7 +195,7 @@ While creating a flow, you have the option to assign it to an existing category.
 
 To add a flow to existing category, follow these steps:
 
-1. Go to **Automation** > **Build** > select the flow that you assign to a category > click the **More options** icon correspoing to the flow.
+1. Go to **Automation** > **Build** > **Flows** > select the flow that you assign to a category > click the **More options** icon correspoing to the flow.
 
     ![](https://imgur.com/8aLDCX1.png)
     
@@ -298,7 +298,7 @@ Once you have tested your bot, you can [publish](https://docs.yellow.ai/docs/pla
 * Approval from the bot approver or superadmin is required to publish the bot.
 :::
 
-   ![](https://imgur.com/eYj5Ef6.png)
+   <img src="https://imgur.com/eYj5Ef6.png" alt="drawing" width="80%"/>
 
 You can select the following options to publish the flows:
 
