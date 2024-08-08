@@ -13,7 +13,7 @@ When **Offline handling** is enabled and you want to inform customers that agent
 
 ## Notification for open and queued chats 
 
-1. Navigate to **Studio > Build > Flows**, open the flow that includes the **Raise ticket** node.
+1. Navigate to **Automation > Flows**, open the flow that includes the **Raise ticket** node.
 2. Store the output of the **Raise ticket** node in a variable, as shown in the image.
 <img src="https://hackmd.io/_uploads/ByjDHFLbp.png" alt="drawing" width="80%"/>    
 3. Connect the error part of the **Raise ticket** node to a new node, which is responsible for displaying messages to the customer. 

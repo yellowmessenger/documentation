@@ -139,7 +139,7 @@ Once the catalog is linked to WABA, connect the catalog with the whatsApp chatbo
 
 * Ensure your [WhatsApp business account is connected to the Yellow.ai platform](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-configuration).
 * Copy the catalog ID from the **Catalogues** page that you want to connect to your WhatsApp chatbot.
-* Create a flow in the Studio module using the [WhatsApp product message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#9-whatsapp-product-message) node.
+* Create a flow in the Automation module using the [WhatsApp product message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#9-whatsapp-product-message) node.
 
 
 
@@ -163,7 +163,7 @@ To connect catalog with WhatsApp chatbot, follow these steps:
     
 * This will connect your catalog to the chatbot.
 
-4. In the Studio module, create a flow using the [WhatsApp product message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#9-whatsapp-product-message) node, using Single Product Messages (SPM) or Multi-Product Messages (MPM) based on your use case.
+4. In the Automation module, create a flow using the [WhatsApp product message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#9-whatsapp-product-message) node, using Single Product Messages (SPM) or Multi-Product Messages (MPM) based on your use case.
 
    ![](https://i.imgur.com/2VbCAhb.png)
 

@@ -28,7 +28,7 @@ The **widget** and **preview** screens will show the alias name when available:
 
 ## 2. Display alias name in the chat when the agent is connected
 
-> This feature is available to **Bot developers** with access to create studio flows, provided that the **Inbox admin** has configured the alias names.
+> This feature is available to **Bot developers** with access to create flows, provided that the **Inbox admin** has configured the alias names.
 
 
 You can customize the message with alias name and display it to the bot user after they are connected to an agent. 

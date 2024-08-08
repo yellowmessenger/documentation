@@ -13,7 +13,7 @@ You can use the `sendEventToBot` function to add or update data within your bot'
 
 1. **Accessing the Bot Portal:**
    * To begin, go to your bot portal on the Yellow website.
-   * Navigate to the "Studio" section and click on "Event."
+   * Navigate to the "Automation" section and click on "Event."
 
 2. **Creating a Custom Event:**
    * Within the "Event" section, create a custom event that you intend to use for updating your payload.

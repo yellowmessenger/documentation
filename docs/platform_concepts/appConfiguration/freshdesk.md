@@ -46,9 +46,9 @@ For this integration, you will need **Freshdesk domain** and an **API key**.
 
 
 
-## 2. Manage Freshdesk Tickets through Studio (bot conversations)
+## 2. Manage Freshdesk Tickets through Automation (bot conversations)
 
-This integration facilitates various actions for managing Freshdesk tickets directly within Studio's bot conversations. You can view the connected accounts under Node > **Integrations** > **Freshdesk** in Studio.
+This integration facilitates various actions for managing Freshdesk tickets directly within Automation's bot conversations. You can view the connected accounts under Node > **Integrations** > **Freshdesk** in Automation.
   
   ![](https://i.imgur.com/QFXJeRm.png)
 

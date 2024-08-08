@@ -10,7 +10,7 @@ sidebar_label: Integration FAQs
 </summary>
  <div>
   <div> <ol>
-  <li>Go to <strong>Studio</strong> &gt; <strong>Build</strong> and build a flow for your use case.</li>
+  <li>Go to <strong>Automation</strong> &gt; <strong>Build</strong> and build a flow for your use case.</li>
   <li>At whichever point of conversation you want the bot to display the payment link, include the integrations node. For that, drag the node connector, go to <strong>Integrations</strong> &gt; select the payment gateway you have integrated.</li>
   <li>In the integrations node fill in the following fields:
     <ul>

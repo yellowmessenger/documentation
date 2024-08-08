@@ -34,7 +34,7 @@ To accomplish use cases that involve using both conversational data and CDR data
 
 To store the age and query type along with the rest of the flow, follow these steps:
 
-1. Create a flow on studio using prompts to  store conversational data in variables.
+1. Create a flow on Automation using prompts to  store conversational data in variables.
 2. Create a table with required columns to store variable data. 
 3. Use database nodes to send variable data to a table. 
 

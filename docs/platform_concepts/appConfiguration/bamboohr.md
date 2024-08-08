@@ -48,7 +48,7 @@ To integrate yellow with Bamboo HR, follow the steps below:
 ## Accessing BambooHR Functions via bot conversation
 In this integration, you can use integration nodes configured for Bamboo HR. Firstly you'll have to select Bamboo HR from the options in Integrations and add the necessary parameters. After that, you can use their action nodes in the required flows.
 
-1. Go to Studio and create a flow that suits your use case.
+1. Go to Automation and create a flow that suits your use case.
 2. Navigate to the specific point in the conversation where you want to add the node. Click Add Node, then go to **Integrations** and select **Bamboo HR**.
 
    ![](https://i.imgur.com/qT6hqKI.png)

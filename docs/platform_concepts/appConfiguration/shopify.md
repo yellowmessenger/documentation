@@ -2099,7 +2099,7 @@ To know more about Flow campaigns, click [here](https://docs.yellow.ai/docs/plat
 Once the integration is set up, Shopify events start flowing to Yellow.ai. These events serve as triggers for bot flows, enabling the creation of personalized conversations, running effective campaigns, storing customer data in User360,personalized responses, data enrichment, and the creation of efficient workflows.
 
 
-### Supported Shopify events you can use in Studio
+### Supported Shopify events you can use in Automation
 
 The following table provides a comprehensive list of Shopify events along with their descriptions and sample use cases.
 

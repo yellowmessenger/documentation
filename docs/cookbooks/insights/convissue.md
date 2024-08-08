@@ -5,8 +5,8 @@ sidebar_label : Analyse conversational issues
 
 This guide highlights the information that cna be obtained from the **Conversational issues widget** available on the **Insights > Overview** page. 
 
-- On this tab you can find analytics based on the [conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs) (studio). 
-- At the end of the widget, you can analyze the metrics for the selected date range. To see these conversations, click **View conversation logs**, you will be directed to the **Studio > Conversation logs** page.  
+- On this tab you can find analytics based on the [conversation logs](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs) (Automation). 
+- At the end of the widget, you can analyze the metrics for the selected date range. To see these conversations, click **View conversation logs**, you will be directed to the **Automation > Conversation logs** page.  
     > ![](https://i.imgur.com/ALU3xMi.png)
 - There are 2 tabs that can help you analyse the conversation issues, **Overview** and **Analyse**. 
 

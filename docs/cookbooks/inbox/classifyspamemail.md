@@ -14,7 +14,7 @@ In cloud bots, we can resolve email tickets if the ticket has been raised by a p
 ## Steps to resolve
 
 1. **Create the Ticket-created Event**:
-    - Go to **Studio > Events > Custom Events**.
+    - Go to **Automation > Events > Custom Events**.
     - Click on Add Event and add `ticket-created`.
 
 2. **Create a Flow from Scratch:**

@@ -51,7 +51,7 @@ You can also configure KB (upload documents or add a website URL) and test the e
 **![](https://lh7-us.googleusercontent.com/EedqF5ENU-maZdnKuHQXcDuZFL9jKw_CuI_10-VogCTok6ZUE825vEXTjTXUAMwKng47imOjwgyRpUp2VfiRhwqNiU4bcUQxevtAHeINziQ0NiAhZRF7oHnOpXz83hKq6FHVoTcdbhE5E8ramaoGytM)**
 
 
-7. **Debug your flow**: Analyze the conversation by looking at it on **Studio > Analyze > Conversation logs**. 
+7. **Debug your flow**: Analyze the conversation by looking at it on **Analyze > Conversation logs**. 
     1. Review the responses generated during the conversation.
     2. For further debugging, click on **Logs** and locate the debug icon.
     3. Click on the debug icon to view detailed step-by-step logs, including responses at each step.

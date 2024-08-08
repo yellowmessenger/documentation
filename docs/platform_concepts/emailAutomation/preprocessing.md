@@ -34,7 +34,7 @@ Pre-processing is currently available only for email automation bots and is feat
 
 ## Pre-processing email automations
 
-In email automation, you need to pre-process the email before transferring it to the bot. You can find this additional flow under the Studio section. The pre-processing flow enables you to define custom logic to determine whether incoming emails should be transferred to an email bot or directly to an agent.
+In email automation, you need to pre-process the email before transferring it to the bot. You can find this additional flow under the Automation section. The pre-processing flow enables you to define custom logic to determine whether incoming emails should be transferred to an email bot or directly to an agent.
 
 To ensure appropriate actions are taken based on defined criteria, every incoming email will first pass through the pre-processing flow before proceeding to automation.
 

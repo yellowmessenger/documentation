@@ -10,7 +10,7 @@ In this article, you will learn how to change the **priority** of a chat/email t
 
 #### Configure priority and group on the Raise ticket node 
 
-- While creating flows (on Studio) using [Raise ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket), the bot builder can assign a priority to the chat/email tickets. Tickets created through this flow will have the assigned **Priority**.  
+- While creating flows (on Automation) using [Raise ticket action node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket), the bot builder can assign a priority to the chat/email tickets. Tickets created through this flow will have the assigned **Priority**.  
 
 ![](https://i.imgur.com/07hndDx.png)
 

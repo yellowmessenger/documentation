@@ -46,7 +46,7 @@ These details are found in the **Insights** module > [Data Explorer](https://doc
 
 
 :::note
-You can [create flows in Studio](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback):    
+You can [create flows in Automation](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback):    
 - To ask the customers for more details(customized feedback collection flow).     
 - To collect CSAT feedback on other channels like WhatsApp, Facebook, etc.    
 :::

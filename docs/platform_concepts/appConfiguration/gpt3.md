@@ -82,7 +82,7 @@ Your chatbot users can receive answers to their queries by leveraging the GPT-3 
 If you want your chatbot to provide accurate answers for a specific use case, such as if you run a car shop and want your bot to answer questions about your services and pricing, then you can choose to create a custom model. By training your model on OpenAI and connecting it to your yellow.ai platform, you can tailor your chatbot to your specific needs.
 :::
 
-1. In the Studio flow builder, go to **Integrations** > **GPT-3**.
+1. In the Automation flow builder, go to **Integrations** > **GPT-3**.
 
 ![](https://i.imgur.com/TaLpaVv.png)
 

@@ -64,7 +64,7 @@ Once a property is created in User360, you cannot directly alter its data type o
 
 <details>
 <summary>Why was a user created twice, with the second entry having 'null' as the userId?</summary>
-The second user account, which lacks a valid userId and contains incorrect properties, is often auto-created when a user interacts with your bot for the first time. ensure that you have set up the 'userId' and stored in the User ID property in your studio flows before starting conversation. 
+The second user account, which lacks a valid userId and contains incorrect properties, is often auto-created when a user interacts with your bot for the first time. ensure that you have set up the 'userId' and stored in the User ID property in your Automation flows before starting conversation. 
 
 
 [Learn more](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).

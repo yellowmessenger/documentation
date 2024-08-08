@@ -25,7 +25,7 @@ Let's say that you have built a bot on [V1](https://app.yellow.ai/api/chat/demo/
 * If the colors you have customized are not displayed correctly in the preview screen, you can reach out to [support](mailto:support@yellow.ai) and provide them with the color codes. They will assist you in updating the colors via bot mapping. Once the customization is done through mapping, the colors will be changed in the Widget panel accordingly.
 :::
 
-3. **Configure the callout banner**: If your V1 bot includes a banner and you wish to migrate it to V2, you need to configure the callout banner in the Studio module. For information on how to set up the callout banner during the migration process, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/additionalsettings).
+3. **Configure the callout banner**: If your V1 bot includes a banner and you wish to migrate it to V2, you need to configure the callout banner in the Automation module. For information on how to set up the callout banner during the migration process, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/additionalsettings).
 
     <img src="https://i.imgur.com/KT7cd0U.png" alt="drawing" width="50%"/> 
 

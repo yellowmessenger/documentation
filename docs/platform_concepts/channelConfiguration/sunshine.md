@@ -202,7 +202,7 @@ The Sunshine supports Yellow's widget to enable users to interact with the bot a
 
 To connect to a live agnet on Zendesk, follow these steps:
 
-1. Go to Studio and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on how you want the bot to take the user through the process.
+1. Go to Automation and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) based on how you want the bot to take the user through the process.
 
 2. Configure a flow using the [raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node to connect with a Zendesk agent.
 

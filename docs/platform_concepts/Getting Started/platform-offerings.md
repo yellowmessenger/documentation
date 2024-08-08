@@ -67,7 +67,7 @@ The platform provides different environments, allowing you to freely experiment 
 
 Before creating a bot, it's essential to have a clear idea of your design and the use cases you want your bot to solve. The **Marketplace** offers readily available templates with pre-built flows based on real-time use cases. You'll also find industry-specific recommendations for easy plug-and-play implementation.
 
-However, if your use case is not available in the Marketplace, you can use [Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to build your bot from scratch.
+However, if your use case is not available in the Marketplace, you can use [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to build your bot from scratch.
 
 ![image](https://imgur.com/hyaE929.png)
 

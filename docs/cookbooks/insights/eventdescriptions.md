@@ -371,7 +371,7 @@ Following are the fields tracked on the user engagement events table:
 | EVENTINFO        | Additional information stored by the platform (not for customer customization).                                       |
 | JOURNEY          | The flow name under which this event was generated.                                                                    |
 | PLATFORM         | Approximate underlying platform of the user device (e.g., Desktop can have Windows, Linux).                            |
-| STEP             | Step name in the Studio flow under which this event was generated.                                                     |
+| STEP             | Step name in the Automation flow under which this event was generated.                                                     |
 | REGION           | Geographical location (state) identified where the bot is being used.                                        |
 | SOURCE           | Different channel integration from where the user triggered the event, such as Yellowmessenger, WhatsApp, etc.        |
 | TARGETINFO       | Used for storing additional information for some events, such as journey switched.                                     |

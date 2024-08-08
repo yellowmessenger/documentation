@@ -63,7 +63,7 @@ By default, your bot is created with essential flows: Welcome, fallback for unid
 
 ![image](https://imgur.com/HmxZuBA.png)
 
-[**Learn how to use studio module in detail :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+[**Learn how to use Automation module in detail :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
 
 ### Create an orchestrator(parent) bot
@@ -107,7 +107,7 @@ The bot ID is different in each environment.
 
 ----
 
-## Step 4: Build and customize in Studio 
+## Step 4: Build and customize in Automation 
 
 :::note
 Bots can be built in Development/Sandbox/Staging mode and published to Live/Production. Learn more about these enviornment [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).

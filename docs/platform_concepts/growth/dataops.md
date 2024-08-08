@@ -28,7 +28,7 @@ To export data, follow the steps below:
 - Choose **Data source** by selecting the checkboxes. You can export the following data from the Data Ops tab: 
     * **Agent availability**: Agent check-in and check-out data.
     * **Bot configuration**: All data around how the bot should perform	(Journeys and Step data, Training Data (Intents & entities), Configured APIs and Data in Bot DBs (Product catalogs) )
-    * **Bot tables**: Custom data storage tables (databases available on the Studio module) built inside the bot.	
+    * **Bot tables**: Custom data storage tables (databases available on the Automation module) built inside the bot.	
     * **Call details report**: Data related to voice bots. 
     * **Chat tickets**: Data related to Live chats in the Inbox module.
     * **Custom analytics**: Custom data created for your bot. 	
