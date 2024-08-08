@@ -68,25 +68,25 @@ To access user specific information, use the arguments mentioned in the followin
 
 1. Go to **Automation** > **Functions** > **+ Add new function**.
 
-![](https://i.imgur.com/KacI9y0.png) 
+  ![](https://imgur.com/50y8OZt.png) 
 
-2. Provide a name to your function and click  **Add function**.
+2. Provide a name to your function and click **Add function**.
 
-![](https://i.imgur.com/o1446YR.png)
+  <img src="https://i.imgur.com/1hrPa3c.png" alt="drawing" width="70%"/>
 
 3. Type your custom logic and click **Save**.
 
-![](https://i.imgur.com/V5K8u7h.png)
+  ![](https://i.imgur.com/V5K8u7h.png)
 
 4. Click the warnings option at the bottom to rectify the displayed warnings/errors.
 
-![](https://i.imgur.com/ynPVSqT.png)
+  ![](https://i.imgur.com/ynPVSqT.png)
 
 ## Tools and other settings
 
 This section has some funcionalities common to the entire bot.
 
-![](https://i.imgur.com/zU0Hk1n.png)
+![](https://imgur.com/1hOchRq.png)
 
 #### Tools
 
@@ -116,7 +116,7 @@ Flows allow quick copying and accessing of flows using their names. You can easi
 
 The Localization feature lets you add a code that handles the translation process. To know more, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#-12-add-translations-using-code).
 
-![](https://i.imgur.com/EtE2V9v.png)
+<img src="https://i.imgur.com/EtE2V9v.png" alt="drawing" width="70%"/>
 
 ## Using functions in flows
 

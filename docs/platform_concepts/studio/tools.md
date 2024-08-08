@@ -11,7 +11,7 @@ To access the tools section:
 
 1. Go to **Automation** > **Train** > **Intents** > **Tools**
 
-   ![](https://i.imgur.com/jEMMz9q.png)
+   ![](https://imgur.com/e4CgoyZ.png)
 
 The tools section consists of five segments:
 
@@ -52,7 +52,7 @@ The following is a comprehensive description of the parameters in the response r
 - Global Model identifies values based on phrases trained in Small talk and Context management, you can add multiple contexts based on your industry use-case. 
 - Global entities identify values that are trained by the platform only for Dates and Locations. You cannot add/delete/modify the training. 
 
-   ![](https://i.imgur.com/Q9yU9sQ.png)
+   ![](https://imgur.com/ehXirsE.png)
 
 To access global entities, use this snippet ```{{{prediction.gloablEntities.0.text}}}```.
    

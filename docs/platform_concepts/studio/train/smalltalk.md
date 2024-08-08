@@ -27,7 +27,7 @@ You can edit the responses and customize it to your bot's personality or specifi
 
 1. Go to **Automation** > **Train** > **Small talk**.
 
-   ![](https://i.imgur.com/70r2tM6.png)
+   ![](https://imgur.com/sjyJxgD.png)
     
 2. Click on **Edit** icon coressponding to each response.
 

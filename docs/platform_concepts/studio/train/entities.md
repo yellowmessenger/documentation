@@ -51,7 +51,7 @@ In this scenario, the text type entity can easily identify "Italian" from the us
 
 1.  Go to **Automation** > **Train** > **Entities** > **+ Add new entity**.
 
-     ![](https://imgur.com/a283ade.png)
+     ![](https://imgur.com/lkFYWQf.png)
 
 2. Enter the **Entity name** and choose the **Type** as **Text**. Entity name should be alphanumeric, lower case and cannot contain spaces.
 
@@ -75,7 +75,7 @@ For instance, consider a scenario where you are dealing with modes of payment. T
 
 1. Go to **Automation** > **Train** > **Entities** > **+ Add new entity**.
 
-     ![](https://imgur.com/a283ade.png)
+     ![](https://imgur.com/lkFYWQf.png)
 
 2. Enter the **Entity name** and choose the **Type** as **List**.Entity name should be alphanumeric, lower case and cannot contain spaces.
 
@@ -107,7 +107,7 @@ To add regex type entities:
 
 1. Go to **Automation** > **Train** > **Entities** > **+ Add new entity**.
 
-   ![](https://imgur.com/a283ade.png)
+   ![](https://imgur.com/lkFYWQf.png)
 
 2. Enter the **Entity name** and choose the **Type** as **Regex**.
 
@@ -127,7 +127,7 @@ You can edit all the information within entities as explained in the following:
 
 1. Go to **Automation** > **Train** > **Entities**.
 
-   ![](https://imgur.com/14D8xgH.png)
+   ![](https://imgur.com/KAj7ibl.png)
 
 2. Go to the entity that you want to edit and click on the more-options icon > **Edit**.
 
@@ -143,7 +143,7 @@ If an entity is irrelevant or redundant, you can delete it. To delete an entity:
 
 1. Go to **Automation** > **Train** > **Entities**.
 
-   ![](https://imgur.com/14D8xgH.png)
+   ![](https://imgur.com/KAj7ibl.png)
    
 2. Go to the entity that you want to delete and click more-options > **Delete**.
 
@@ -156,7 +156,8 @@ You can import entities from an external source using CSV file.
 The CSV file should contain the following two headers: 
 
    <img src="https://i.imgur.com/tdhpmfW.png" alt="drawing" width="40%"/>
-   
+<br/>
+
 * **Name**: Name of the entity.
 * **Synonyms**: Comma-separated synonyms associated with each entity.  
 
@@ -169,7 +170,7 @@ Import option is available only for list type entities.
 
 1. Go to **Automation** > **Train** > **Entities**.
 
-    ![](https://imgur.com/14D8xgH.png)
+    ![](https://imgur.com/KAj7ibl.png)
 
 2. Click **Import**.
 
@@ -193,7 +194,7 @@ To export entities:
 
 1. Go to **Automation** > **Train** > **Entities**.
 
-    ![](https://imgur.com/14D8xgH.png)
+    ![](https://imgur.com/KAj7ibl.png)
 
 2. Click **Export**.
 
