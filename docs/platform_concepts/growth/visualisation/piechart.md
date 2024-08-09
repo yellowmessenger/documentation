@@ -4,7 +4,7 @@ sidebar_label: Pie chart
 ---
 
 
-A pie chart is a circular graph divided into sectors, each representing a proportion of the whole data set. It is commonly used to illustrate the distribution or composition of a dataset by displaying the relative sizes of different categories or components.
+A pie chart is a circular graph divided into sectors, each representing a proportion of the whole data set. It is commonly used to illustrate the distribution or composition of a table by displaying the relative sizes of different categories or components.
 
 Click **Visualisation > Pie**.
 

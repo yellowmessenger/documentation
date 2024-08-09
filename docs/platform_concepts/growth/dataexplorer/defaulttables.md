@@ -3,15 +3,15 @@ title: Perform analytics on default tables in data explorer
 sidebar_label: Analyse default tables   
 ---
 
-**What are Default tables(datasets)?** 
+**What are Default tables?** 
 
-**Default Datasets** are the built-in tables, related to Users Events, Messages, API Events, Agent Events, etc. Click on any of the table names to view the data available for the last month (you can use filters to customise what you want to see). 
+**Default tables** are the built-in tables, related to Users Events, Messages, API Events, Agent Events, etc. Click on any of the table names to view the data available for the last month (you can use filters to customise what you want to see). 
 
 ![](https://i.imgur.com/uqwkU9X.png)
 
 ## Types of default tables 
 
-Following are the default datasets and their functions:
+Following are the default tables and their functions:
 
 | Event Name | Description |
 |:-------- |:--------:|

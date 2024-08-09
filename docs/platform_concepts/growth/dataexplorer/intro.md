@@ -15,10 +15,10 @@ Data explorer has several features:
 
 * **Immediate Learning**: Users can start learning from their data immediately.
 * **Widget Creation**: Analysts can generate reports and create visually appealing widgets, such as Line charts, Pie charts, and Bar Graphs, without any coding.
-* **Standard Datasets**: The tool provides a standard set of Datasets (tables) that can be utilized to construct Widgets.
-* **Custom Datasets**: Analysts have the ability to create custom datasets by utilizing the tables that have been developed by bot builders.
+* **Standard tables**: The tool provides a standard set of tables that can be utilized to construct Widgets.
+* **Custom tables**: Analysts have the ability to create custom tables by utilizing the tables that have been developed by bot builders.
 * **Druid Datastore**: Data Explorer currently uses the Druid Datastore and the bot database to conduct its analytics.
-* **Dashboard**: Users can visualise the Datasets and reports generated using Data Explorer through the use of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards). Multiple dashboards can be created to group widgets based on different use cases.
+* **Dashboard**: Users can visualise the tables and reports generated using Data Explorer through the use of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards). Multiple dashboards can be created to group widgets based on different use cases.
 
 ---
 
@@ -26,8 +26,8 @@ Data explorer has several features:
 
 Data explorer is categorized into 2 sections:
 
-* **Default datasets**:  These are the tables that are built in on Insights automatically obtained automatically by the bot, they are related to Users Events, Messages, API Events, Agent Events, etc.
-* **Custom datasets**: These are the custom tables created by the bot builder. A table can be customized based on your preferences. They are fetched using [database nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database)/stored [database](https://docs.yellow.ai/docs/platform_concepts/studio/database) on the **Automation** page
+* **Default tables**:  These are the tables that are built in on Insights automatically obtained automatically by the bot, they are related to Users Events, Messages, API Events, Agent Events, etc.
+* **Custom tables**: These are the custom tables created by the bot builder. A table can be customized based on your preferences. They are fetched using [database nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database)/stored [database](https://docs.yellow.ai/docs/platform_concepts/studio/database) on the **Automation** page
 
 :::note
 The labels Reports and Queries, Datasets, and Tables are used synonymously. Reports/queries are created for the data present in the Datasets/tables. These reports (default and custom) are used for complex data analysis/summarization/visualisation. 
@@ -37,7 +37,7 @@ The labels Reports and Queries, Datasets, and Tables are used synonymously. Repo
 
 #### Data explorer overview
 
-To create or view any of the default/custom datasets, log in to the [yellow platform](https://cloud.yellow.ai/) and open **Insights** > **Data explorer**. 
+To create or view any of the default/custom tables, log in to the [yellow platform](https://cloud.yellow.ai/) and open **Insights** > **Data explorer**. 
 
 ![image](https://imgur.com/sLy9EZN.png)
 
@@ -62,5 +62,5 @@ Actions in Data explorer must be configured separately for **Live and Production
 :::
 
 :::info
-Maximum of 500 data entries are displayed at the UI level. To view the full dataset, you can download it.
+Maximum of 500 data entries are displayed at the UI level. To view the full table, you can download it.
 :::
