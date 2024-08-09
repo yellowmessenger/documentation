@@ -33,7 +33,7 @@ We've streamlined your experience by unifying all settings into one location. Yo
 
 You can now enable context switching in the additional settings to allow NLP or orchestration LLM (depending on the navigational entity in your bot) to take over and switch out of the dynamic chat node.
 
-**Context Switching** enables the bot transition from the current Dynamic chat node to a different flow based on user input, such as switching to a "talk to agent" flow when the user expresses a need for live support. 
+**[Context Switching](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#additional-settings)** enables the bot transition from the current Dynamic chat node to a different flow based on user input, such as switching to a "talk to agent" flow when the user expresses a need for live support. 
 
    <img src="https://imgur.com/EzYEs9X.png" width="60%"/>
 
@@ -113,7 +113,7 @@ We will soon provide default reports for these use cases in our dashboards, enha
 
 ## Facebook Channel Revamp
 
-We’ve introduced significant improvements to our Facebook Channel:
+We’ve introduced significant improvements to our [Facebook Channel](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/facebook-messenger):
 
 ### 1. Unified Channel Configuration
 - **Facebook Messenger and FB Comments:** Now configured on the same channel page! 🤝

@@ -37,7 +37,7 @@ module.exports = {
   // Studio  
     {
       type: "category",
-      label: "Studio",
+      label: "Automation",
       collapsed: true,
       items: [
 
@@ -247,7 +247,7 @@ module.exports = {
   
     {
       type: "category",
-      label: "Studio",
+      label: "Automation",
       link: {type: 'doc', id: 'platform_concepts/studio/overview'},
       collapsed: true,
       items: [
@@ -924,20 +924,12 @@ module.exports = {
   label: "Analyze",
   collapsed: true,
   items: [
-    {
-      type: "category",
-      label: "Chat log analysis and training evaluation",
-      collapsed: true,
-      items: [
         "platform_concepts/studio/analyze/analyseoverview",
         "platform_concepts/studio/analyze/chat-logs",
         "platform_concepts/studio/build/bot-logs",
         "platform_concepts/studio/analyze/training-performance",
         "platform_concepts/studio/analyze/topics",
       ],
-    },
-
-  ],
 }, 
 //end of analyse
 
