@@ -10,6 +10,8 @@ import TabItem from '@theme/TabItem';
 
 Shopify is an e-commerce platform that lets merchants worldwide to build and customize online stores to sell theor products. Integrating Shopify with Yellow.ai enables seamless access to Shopify data within our platform. This integration facilitates data utilization for effective campaigns, event management, and enhanced customer support. 
 
+
+
 **Here are some key benefits of leveraging this integration**:
 
 * **Unified customer data & customer self-serve**: Gain a 360-degree view of your customers by integrating their Shopify data with other touchpoints. You can enable customers to access their data and order details conveniently through bot conversations.
@@ -81,7 +83,7 @@ You need to use the API token to establish integration with Yellow.ai as explain
    **Shop Name** | Name of your shop in Shopify. The shop name should be taken from the Shopify store URL, for example if the merchant store URL is yellowxyz.myshopify.com,the shop name would be yellowxyz.
    **Admin API Access Token** | Copy and paste this from your Shopify store (refer step 8). Please only enter the Admin API access token that is displayed during the app creation process on Shopify.
    **API Secret Key** | Copy and paste this from your Shopify store (refer step 8)
-   **Domain name** | Domain name refers to the URL or web address that directs customers to your online store. For example, yellowxyz.myshopify.com.
+   **Domain name** |Domain name refers to the URL or web address that directs customers to your online store. Enter the domain name to enable Yellow to ingest the script on the store and capture user-related events for User 360. For example, yellowxyz.myshopify.com.
 
 
 
@@ -102,6 +104,10 @@ You need to use the API token to establish integration with Yellow.ai as explain
 ## 3. Shopify user data syncing in User 360/Engage
 
 This integration automates the creation of user records in User 360 using Shopify event data. By default, it is configured to capture userIds, emails, and phone numbers. Additionally, the integration enables the automatic synchronization of the following event data with User 360. This empowers User 360 as a valuable resource for personalized and effective user engagement strategies.
+
+:::note
+Shopify events will be generated only from the store channel and passed to User 360. If event tracking is enabled in the bot, these events will also be sent to the bot. Events originating from other channels, such as orders created through a bot or WhatsApp, will generally not be relayed unless the user profile exists in User 360.
+:::
 
 ### Supported standard user properties from Shopify events
 

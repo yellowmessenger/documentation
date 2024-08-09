@@ -125,3 +125,14 @@ We’ve introduced significant improvements to our [Facebook Channel](https://do
 
 ### 3. Comment Response Routing
 - **Flexible Comment Management:** Configure where replies to comments should go, giving you complete control over conversations!
+
+---
+
+## Five9 Integration Support
+
+
+For customers using Five9, this integration allows for seamless connection with Five9 live agents. It enhances your support capabilities by enabling smooth transitions from automated chatbot interactions to live agent assistance provided by Five9.
+
+With this,  you can easily switch from chatbot interactions to Five9’s live agents without disruption.
+
+[Learn more](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/five9).
