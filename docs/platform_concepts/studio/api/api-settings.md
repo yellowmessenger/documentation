@@ -13,9 +13,6 @@ To set up an alert:
 
 1. Go to **Automation** > **API**.
 
-   ![](https://i.imgur.com/P36r4kT.png)
-
-
 2. Click **Setup alerts** and enable **Setup alerts**.
 
    ![](https://i.imgur.com/faimdrv.png)
@@ -38,7 +35,7 @@ To check API error logs:
 
 1. Go to **Automation** > **API** > **API failure logs**.
 
-   ![](https://i.imgur.com/h6oI3pN.png)
+   ![](https://imgur.com/EyPqcbR.png)
 
 2. * **API**: Choose the API.
    * **Status code**: Type the particular error status code and click **Search**.

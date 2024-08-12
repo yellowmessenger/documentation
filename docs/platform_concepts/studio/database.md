@@ -26,7 +26,7 @@ We have either two or three environments, depending on the specific bot: Develop
 2. Navigate to the base environment (Staging or Sandbox).
 3. Click **Create new table**.
 
-   ![](https://i.imgur.com/8hpVAbA.png)
+   ![](https://imgur.com/jmdGLhy.png)
 
 4. In **Table name**, enter a name for your table.
 
@@ -86,9 +86,9 @@ To add each record manually:
 
 1. Choose the environment where you want to add record.
 2. In Automation, click **Database**, navigate to the table where you want to add a new record.
-2. Click **Add new record**.
+2. Click **Add new records**.
 
-  <img src="https://i.imgur.com/bU1H2bL.png"/>
+  <img src="https://imgur.com/EHAvoWP.png"/>
 
 4. Enter values for each entry and click  Add record.
 
@@ -186,7 +186,7 @@ When a table contains numerous records, it can be challenging to scroll through 
 
 1. Go to the specific table and click **Inserted date**. The drop-down displays all the columns of that respective table using which you can search. 
 
-   ![](https://i.imgur.com/zhxsXtd.png)
+   ![](https://i.imgur.com/6dUn2sf.png)
 
 2. Choose the column in which you want to filter specific information, and use the **Search box** to filter records.
 

@@ -12,11 +12,13 @@ Easily upload your website URLs directly to our platform. When the bot encounter
 
 To upload your website URL, follow:
 
-1. Go to **KB** and click **+ Add URL**.
+1. Go to **KB** > click **+ Add URL**.
     
-    ![](https://i.imgur.com/K4lw1BW.png)
+    ![](https://imgur.com/K5Hhd6a.png)
 
 2. Enter the website URL and click **Save**.
+
+    ![image](https://imgur.com/aEP8jvo.png)
 
 This handles all sub URLs automatically, to improve accuracy, add more URLs manually under **Upload documents**. 
 
@@ -40,7 +42,7 @@ To upload files from your system, follow:
 
 1. Go to **KB** > **Upload documents** > **Your computer**.
 
- ![](https://i.imgur.com/HBK3jCo.png)
+ ![](https://imgur.com/XE1XImg.png)
 
 2. Click **Upload document** to upload your documents here. Currently we support file sizes upto 20MB.
 
@@ -66,7 +68,7 @@ To add acronyms, follow:
 
 1. Go to **Knowledge base** > **Acronym** > **+ Add new acronyms**.
 
-    ![](https://i.imgur.com/NjHhs90.png)
+    ![](https://imgur.com/RdFyuT5.png)
 
 2. In **Acronym name** enter the name of the specific term and in **Acronyms** enter the commonly used utterances for that term.
 
@@ -75,7 +77,7 @@ To add acronyms, follow:
 3. Click **Add list item**. 
 4. You can edit the entered acronyms by selecting and deleting them or by clicking on the three dots on the right side for further modifications.
 
-    ![image](https://imgur.com/4JXrGY8.png)
+    ![image](https://imgur.com/4ObT0kh.png)
 
 
 ### Upload specific URLs/subdomain URLs
