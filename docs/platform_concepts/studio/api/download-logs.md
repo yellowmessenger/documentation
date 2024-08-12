@@ -30,7 +30,7 @@ To download the logs of an API:
 
 1. Go to **Automation** > **API** > hover over the specific API and click **Download**.
 
-   ![](https://i.imgur.com/4TVcAQP.png)
+   ![](https://imgur.com/iq5R1s1.png)
 
 :::info
 Select the environment while downloading API logs as the logs will be downloaded only for the selected environment. For example, if you have selected the Dev environment it would download requests sent from the dev env only.

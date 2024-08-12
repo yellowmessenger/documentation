@@ -112,7 +112,7 @@ To configure Orchestrator LLM for a flow:
 
 1. Go to **Automation** > **Build** > **Flow** > **Create flow**.
 
-    ![](https://imgur.com/E0wjus1.png)
+    ![](https://imgur.com/2OodRrj.png)
 
 2. To create a flow from scratch, click **+ Create flow**.
 

@@ -16,7 +16,7 @@ There are two ways by which you can add API:
 
 1. Go to **Automation** > **API** > **+ Add new API**.
 
-   ![](https://i.imgur.com/EguUcSR.png)
+   ![](https://imgur.com/UvHbKT1.png)
 
 2. In the pop-up screen, specify the **API name**, HTTP **Method**, and the request **URL** along with the query parameters. 
 
@@ -80,7 +80,7 @@ To add a body:
 1. On the API details page, under **BODY**, choose the format of the request body. The supported formats are **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data** and **raw**.
 2. For **JSON**, **XML**, **GRAPHQLform-data** or **raw** body, type or paste the request body the available box.
 
-   ![](https://i.imgur.com/iZ9mp0K.png)
+   ![](https://imgur.com/OM4nrDc.png)
 
    
    For other formats, click **+ Add body** and provide body params in key-value pairs.
@@ -126,7 +126,7 @@ If you have a CURL script, JSON file, or collection URL, you can conveniently im
 1. Go to **Automation** > **API**.
 2. Click the arrow icon next to API management and select **Import** .
 
-   ![](https://i.imgur.com/nCvs5WU.png)
+   ![](https://imgur.com/Mx7D6DA.png)
 
 
  #### Import API from CURL
@@ -141,7 +141,7 @@ If you have a CURL script, JSON file, or collection URL, you can conveniently im
 3. In **Import curl**, copy past the CURL script and click **Import**.
 4. The imported API will be available under **API Management**.
 
-   ![](https://i.imgur.com/Conv8O3.png)
+   ![](https://imgur.com/j8kcrXB.png)
 
 
 #### Import API(s) from a JSON file
@@ -156,7 +156,7 @@ If you have one or more APIs, save your collection in a JSON file and import the
 3. Click **Import**.
 4. The imported API will be available under **API Management**.
 
-   ![](https://i.imgur.com/frifWMw.png)
+   ![](https://imgur.com/4wiM0R9.png)
 
 ## Configure environment variables
 
@@ -166,7 +166,7 @@ To add environment variables:
 
 1. Go to **Automation** > **API** > **Configure environment**.
 
-   ![](https://i.imgur.com/0fZmKPs.png)
+   ![](https://imgur.com/equrJi4.png)
 
 
 2. Enter the key, for example **endpoint** and enter the respective values for each environment. Click **Save**.
@@ -177,7 +177,7 @@ To add environment variables:
 
 3. Include the key in API URL in the following format: {{{env.variablename}}} for example, {{{env.endpoint}}}
 
-   ![](https://i.imgur.com/Xv74o1h.png)
+   ![](https://imgur.com/ViCCnE9.png)
 
 
 4. Choose the environment and click **Send** to test the API. A **2xx** response indicates that the API works successfully.
@@ -193,13 +193,13 @@ To verify the proper functioning of the added API, input all API details and sel
 
 Confirm the expected functionality of the API and click **Save** to save the API settings.
 
-   ![](https://i.imgur.com/TrY444S.png)
+   ![](https://imgur.com/2elxb3K.png)
   
 :::note
 * API response has a size limit of 250kb. You will get an error if the response exceeds the limit.
 * Before testing the API, choose the respective environment from the drop-down.
 
-   ![](https://i.imgur.com/fDs9TKO.png)
+   ![](https://imgur.com/OiDGZu7.png)
 :::
 
 ## Configure MTLS authentication
@@ -286,7 +286,7 @@ Exporting APIs involves capturing their configuration settings, allowing for sea
 1. Go to **Automation** > **API**.
 2. Click the arrow icon next to API management and select **Export** .
 
-   ![](https://i.imgur.com/2uCuacD.png)
+   ![](https://imgur.com/7l9lCMf.png)
 3. Select the APIs to be exported, you can also select Select all APIs at the left bottom to select all the APIs in one go
 
    <img src="https://i.imgur.com/2Vzla2Q.png" alt="drawing" width="80%"/>
