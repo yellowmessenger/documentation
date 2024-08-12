@@ -1062,34 +1062,46 @@ paths:
               properties:
                 ticketData:
                   type: object
+                  description: Contains detailed information about the support ticket.
                   properties:
                     botId:
                       type: string
+                      description: Unique identifier for the bot associated with the ticket.
                     contact:
                       type: object
+                      description: Bot user associated with the ticket.
                       properties:
                         primaryEmail:
                           type: string
+                          description: The primary email address of the user.
                         firstName:
                           type: string
+                          description: The first name of the user.
                         lastName:
                           type: string
+                          description: The last name of the user.
                     tags:
                       type: array
+                      description: List of tags associated with the ticket.
                       items:
                         type: object
                         properties:
                           id:
                             type: integer
+                            description: Unique ticket identifier.
                     assignedTo:
                       type: string
+                      description: Identifier of the agent associated to the  ticket.
                     dueDate:
                       type: string
                       format: date-time
+                      description: The deadline by which the ticket should be resolved.
                     priority:
                       type: string
+                      description: The urgency level of the ticket (e.g., High, Medium, Low).
                     customFields:
                       type: object
+                      description: Additional custom fields for the ticket.
                       properties:
                         h1:
                           type: array
@@ -1170,6 +1182,7 @@ paths:
                 sender:
                   type: string
                   description: The sender ID of the message
+                
                 data:
                   type: object
                   description: The payload of the message
@@ -1185,7 +1198,7 @@ paths:
                       description: URL of the image to be sent       
                     video: 
                       type: string
-                      description: URL of the video to be sent                                                                                                              
+                      description: URL of the video to be sent   
                     event:
                       type: object
                       description: The event data. Required to send event to the bot
@@ -1196,6 +1209,11 @@ paths:
                         data:
                           type: object
                           description: The data associated with the event
+                fetchVariables:
+                  type: array
+                  description: List of variable values to be fetched. (Max 5) (Optional)
+                  items:
+                   type: string                                                                                                           
       responses:
         '200':
           description: A successful response
