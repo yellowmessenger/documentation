@@ -110,6 +110,25 @@ You can add multiple messages to all of the above mentioned options by [adding r
 
 ![](https://i.imgur.com/JBdcjmR.png)
 
+
+### PCI data masking in voice calls
+
+
+PCI data masking is a critical process used to conceal sensitive user information during voice interactions, ensuring compliance with PCI DSS (Payment Card Industry Data Security Standard) requirements. This process protects cardholder data from unauthorized access while allowing essential operations to proceed within the yellow.ai bot.
+
+For instance, when the bot accepts credit card information as user input, it passes this data through an API call to process the payment securely. In the voice input node, you can select specific input types from a dropdown, including:
+* PCI - Card Number
+* PCI - Card Security Code (CVV)
+* PCI - Card PIN
+* PCI - Card Expiry Date
+
+
+The validator ensures that all credit card data is masked, meaning it will not appear in the conversation logs, backend services, or any storage system. This data is completely protected and not retained in any logs or databases.
+
+
+<img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf_2mqPlce4r5fms6yTHvAo9XhBaEWWe44g_HhFVojhuMq1BTN4NGkmxJX6VknXwmWo0KHpR3UmrKNLcg671Xw_REa9P897XtKmj42kVrEg_vl0j80jOKSx9g-TyQiV2eFqAsSbtaPTlmgb1it92_5NBmak?key=vQuTYFRZOYk9_bVHV0je_w" alt="drawing" width="50%"/> 
+
+
 -----
 
 ## Validator
