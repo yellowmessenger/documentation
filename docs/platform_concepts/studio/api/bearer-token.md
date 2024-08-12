@@ -11,7 +11,7 @@ To add an API key:
 
 1. Go to **Automation** > **API** > click the particluar API > **Headers** > **+ Add Headers**.
 
-   ![](https://i.imgur.com/nzw4HVO.png)
+   ![](https://imgur.com/tKUBcP5.png)
 
 2. In **Key** enter **Authorization** and in **Value** enter the API key. Click **Add**.
 
@@ -29,7 +29,7 @@ To fetch a dynamic access token:
 
 1. [Add the API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).  In **Key** enter **Authorization** and in **Value** enter the variable name in {{{}}} format, for example {{{auth_token}}}.
 
-   ![](https://i.imgur.com/cvScYi2.png)
+   ![](https://imgur.com/8jcJzHd.png)
 
 2. Go to [Functions](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) and [create a new function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-functionhttps://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-functionhttps://docs.yellow.ai/docs/platform_concepts/studio/build/code#create-a-function) that filters out the access token from the response.
 

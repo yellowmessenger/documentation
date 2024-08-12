@@ -89,7 +89,7 @@ To configure, follow these steps:
 1. Upload your URL links to KB.
 2. Navigate to the **Build** section and configure a language setup flow.
     - Add a quick reply node with the **button name** as the language and the **button value** as the ISO code for that language. View the ISO codes [here.](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages) 
-    ![image](https://imgur.com/cMxEl8O.png)
+    ![image](https://imgur.com/tgtfXsW.png)
     - Store the response of the Quick reply node in a variable (language).
     - Send the stored variable (language), which is the ISO code, to the Set language node.
     - Follow up with a question/text node to prompt users to ask questions in their preferred language.
@@ -115,13 +115,13 @@ Customize your bot's tone to align with your preferred response style. Yellow.ai
 
 To configure the tone of the response:
 
-1. Go to **Automation** > **Build** > **Conversation Settings**
+1. Go to **Automation** > **Build** > **Flows** > **Conversation Settings**
   
-   ![](https://i.imgur.com/EbKGkUp.png)
+   ![](https://imgur.com/UxnsFEb.png)
 
 2. Click **Document Search**.
 
-   ![](https://i.imgur.com/Gr0VCD9.png)
+   <img src="https://imgur.com/iVQOLCJ.png" alt="drawing" width="60%"/>
 
 3. Go to **Model response** and choose the preferred tone from the drop down.
 
@@ -141,11 +141,11 @@ When the bot doesn't understand user queries, it offers the closest relevant ans
 
 1. Go to **Automation** > **Build** > **Conversation Settings**
   
-   ![](https://i.imgur.com/EbKGkUp.png)
+   ![](https://imgur.com/UxnsFEb.png)
 
 2. Click **Document Search**.
 
-   ![](https://i.imgur.com/Gr0VCD9.png)
+   <img src="https://imgur.com/iVQOLCJ.png" alt="drawing" width="60%"/>
 
 3. Go to **Auto fallback** and click **Enable as auto-fallback**. Scroll down, in **Model Fallback Message**, enter the fallback message to show.
 
