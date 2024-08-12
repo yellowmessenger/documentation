@@ -36,11 +36,11 @@ Data type mismatch happens when we assign a data type to a field, but the value 
 
 1. Go to **Automation** and click the **Variable** icon.
 
-![](https://i.imgur.com/3vkklcJ.png)
+   <img src="https://imgur.com/UYsqhkU.png" alt="drawing" width="70%"/>
 
 2. Assess if the selected data type aligns with the type of value you intend to collect.
 
-![](https://i.imgur.com/LyBOsUw.png)
+   ![](https://i.imgur.com/LyBOsUw.png)
 
 3. If they don't match, delete that variable and [creat a new one](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#-3-create-a-variable) and [assign it to that node](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables).
 
@@ -49,11 +49,11 @@ Data type mismatch happens when we assign a data type to a field, but the value 
 
 1. Go to **Automation** > **Database** > Click the desired table > **Table actions** > **Edit table**.
 
-![](https://i.imgur.com/kWcpAEE.png)
+   ![](https://imgur.com/7bQjwZQ.png)
 
 2. Go through the data type of each field of the database table under **Type**.
 
-![](https://i.imgur.com/ldxkxZ1.png)
+   ![](https://i.imgur.com/ldxkxZ1.png)
 
 
 ## Resolve code based errors
@@ -74,7 +74,7 @@ For instance, if you need to troubleshoot a particular function within your flow
 3. Navigate to the **Logs** section and click on the specific logs.
 4. Use ctrl/cmd + F to open the Search box, enabling you to confirm if the console is indeed displaying the log.
 
-![](https://i.imgur.com/4YlC6OS.png)
+   ![](https://imgur.com/txbIJ4d.png)
 
 
 ### Set up a test function
@@ -92,12 +92,15 @@ You can test APIs either in the API management page or within the flow.
 To test it within a flow:
 
 1. Go to the **API node** you wish to test.
+
    ![](https://i.imgur.com/CAoQX2H.png)
 
 2. Click on **Test** and enter the mandatory fields.
+
    ![](https://i.imgur.com/yQ32pAi.png)
  
 3. Click on **Run** and check if you're able to get the expected output.
+
   ![](https://i.imgur.com/JKkWtPF.png)
 
 

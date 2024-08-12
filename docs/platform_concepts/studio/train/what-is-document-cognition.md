@@ -65,7 +65,7 @@ The document knowledge can be used in two different methods:
     
 To view the report of search performance such as queries answered/unanswered, user feedback on search results and search categories, go to [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview) module and select **Document**. 
     
-   ![](https://i.imgur.com/5IPO2Sw.jpg)
+   ![](https://imgur.com/EJEgGCN.jpg)
 
 :::
 
@@ -80,7 +80,7 @@ Follow the steps below to upload a file:
     - Open **Documents**-> Files section. 
     - Click **+Upload Documents**. 
 
-   ![](https://i.imgur.com/jq9wu2K.png)
+   ![](https://imgur.com/r4xBHAJ.png)
 
 
 2. Select a source you want to upload the file from:
@@ -97,7 +97,7 @@ Follow the steps below to upload a file:
     
 1. After selecting **Your Computer**. Click **Upload File** (you can also select multiple files at once). You will be redirected to your computer file storage from where you can select files to upload. 
 
-   ![](https://i.imgur.com/NgGXv7J.png)
+   <img src="https://imgur.com/LHtnFGx.png" alt="drawing" width="60%"/>
 
 
 2. Click **Add (x)** after enabling the options below (x indicates the number of documents that will be uploaded).   
@@ -116,7 +116,7 @@ When a user enters a query in a specific language from the list, the bot detects
 3. After clicking **Add**, wait for the indexing to complete. The status changes to *Completed*.
 4. If you want to upload more documents, click **+Upload documents**.
 
-   ![](https://i.imgur.com/wgvcGZ0.png)
+   ![](https://imgur.com/ubwEjql.png)
 
 
 5. To see the properties of the documents, hover over the information - icon.
@@ -646,24 +646,25 @@ To extract questions and answers from your docs, follow these steps:
 
 1. Click the **QNA Extract** tab.
 
- ![](https://i.imgur.com/epGXZRJ.png)
+   ![](https://imgur.com/ot8XfId.png)
 
 2. Click the file you want to generate QnA for.
 
- ![](https://i.imgur.com/Lji2Amk.png)
+   ![](https://imgur.com/Dfln0Dw.png)
 
 
 3. Choose the QNA model you prefer - [Yellow DNLP](#yellow-dnlp) or [OpenAI API](#openai-api).
 
- ![](https://i.imgur.com/5mekh9d.png)
+   ![](https://imgur.com/h9N1olR.png)
 
 
 4. Click each file to see the automatically generated Questions and Answers. Click the checkbox for the questions you want to add to FAQs and click **Add FAQ**. 
 
- ![](https://i.imgur.com/tqVPy0n.png)
+    ![](https://imgur.com/gDWa3uk.png)
 
 5. In the following pop-up, you can edit the question(if you want to) in the **FAQ name** field, [choose a category](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs#21-add-faqs-to-bot) for the FAQ in the **Category** field.
- ![](https://i.imgur.com/wVDklLG.png)
+
+   ![](https://i.imgur.com/wVDklLG.png)
 
 6. Click **Create**. This question will be added to the [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) section.
 
@@ -678,7 +679,7 @@ Follow the given steps to Configure:
 1.  Open **Acronyms** Tab
 2.  Click **Add new acronym**.
     
-   ![](https://i.imgur.com/kT9Hzd6.png)
+   ![](https://imgur.com/os635vW.png)
 
     
 3. Add the Acronym **Name** and **List item**. 
