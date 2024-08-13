@@ -926,11 +926,11 @@ module.exports = {
   link: {type: 'doc', id: 'platform_concepts/analyze/analyseintro'},
   collapsed: true,
   items: [
-        "platform_concepts/studio/analyze/analyseoverview",
-        "platform_concepts/studio/analyze/chat-logs",
+        "platform_concepts/analyze/analyseoverview",
+        "platform_concepts/analyze/chat-logs",
        // "platform_concepts/studio/build/bot-logs",
-        "platform_concepts/studio/analyze/training-performance",
-        "platform_concepts/studio/analyze/topics",
+        "platform_concepts/analyze/training-performance",
+        "platform_concepts/analyze/topics",
       ],
 }, 
 //end of analyse
