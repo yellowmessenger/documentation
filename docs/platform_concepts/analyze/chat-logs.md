@@ -1,6 +1,6 @@
 ---
-title: Conversation Logs
-sidebar_label : Conversation Logs
+title: Conversation logs
+sidebar_label : Conversation logs
 ---
 
 Conversation logs store the chronological history of interactions  between the user and your bot. This tool tracks bot interactions and identifies potentially problematic conversations. They help in analyzing user disengagement, understand user viewpoints, and improve processes. For example, you can check conversations to see if users are using the bot as intended. It also enhances online chat by keeping a record of information and outcomes.
