@@ -1,11 +1,11 @@
 ---
-title: Introduction to Analyze
+title: Introduction to analyze
 sidebar_label: Analyze
 ---
 
 Analyze is an advanced AI Analyst designed to help brands monitor and enhance their chatbot performance over time through self-learning mechanisms.
 
-### Use Cases
+### Use cases
 
 Analyze is ideal for Customer Success Managers, Brand Owners, Customer Support Leaders, and Customer Support Managers. It empowers them to:
 
@@ -22,7 +22,7 @@ Analyze is ideal for Customer Success Managers, Brand Owners, Customer Support L
 3. Enhance customer satisfaction
 4. Improve the quality of conversations
 
-## Key Features 
+## Key features 
 
 | **Feature**                      | **Description**                                                                                                             |
 |----------------------------------|-----------------------------------------------------------------------------------------------------------------------------|
@@ -31,17 +31,17 @@ Analyze is ideal for Customer Success Managers, Brand Owners, Customer Support L
 | **Sentiment Tagging**            | Analyzes user sentiment, allowing for improved customer satisfaction through appropriate responses                        |
 | **Knowledge Base Article Creation** | Learns from human support interactions to improve bot automation, positioned as a self-learning capability, leading to reduced support tickets and increased customer retention |
 
-## Inside Look into Analyze 
+## Inside look into analyze 
 
-### Chat Metrics
+### Chat metrics
 
 The Analyze section within the Automation module offers a detailed view of various metrics related to user interactions through chat, providing valuable insights for improvement.
 
-### Conversation Logs
+### Conversation logs
 
 For conversations where the model has no knowledge base improvement suggestions, brands can review these interactions in the conversation logs. Here, they can view model-generated tags and provide feedback on the analysis to further refine the model.
 
-### Message View
+### Message view
 
 Message View evaluates how well the chatbot is trained to understand and respond to user input in a conversational context, particularly focusing on its ability to generate accurate and relevant responses to unseen input.
 
