@@ -385,6 +385,7 @@ module.exports = {
               collapsed: true,
               items: [
                // "platform_concepts/studio/test-and-publish-bot/bot-training",
+               "platform_concepts/studio/test-and-publish-bot/bot-logs",
                 "platform_concepts/studio/test-and-publish-bot/debug-flow",
                 "cookbooks/studio/regressiontest",
                 "platform_concepts/studio/test-and-publish-bot/modes",
@@ -922,11 +923,12 @@ module.exports = {
 {
   type: "category",
   label: "Analyze",
+  link: {type: 'doc', id: 'platform_concepts/analyze/analyseintro'},
   collapsed: true,
   items: [
         "platform_concepts/studio/analyze/analyseoverview",
         "platform_concepts/studio/analyze/chat-logs",
-        "platform_concepts/studio/build/bot-logs",
+       // "platform_concepts/studio/build/bot-logs",
         "platform_concepts/studio/analyze/training-performance",
         "platform_concepts/studio/analyze/topics",
       ],
