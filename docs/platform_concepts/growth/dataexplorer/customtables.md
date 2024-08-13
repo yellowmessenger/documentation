@@ -6,9 +6,9 @@ sidebar_label : Custom reports (tables)
 You can modify/visualise and perform actions on tables according to your preferences using a **Custom query**.
 
 
-**Default tables(datasets)**: **Insights > Data explorer** has a list of default tables (reports) that are created for the commonly used bot use cases. 
+**Default tables**: **Insights > Data explorer** has a list of default tables (reports) that are created for the commonly used bot use cases. 
 
-**Custom tables(datasets)**: On **Automation > Tables** you can create [custom datasets](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs. For example, you can create tables to store the data obtained from variables from the flows. 
+**Custom tables**: On **Automation > Tables** you can create [custom tables](https://docs.yellow.ai/docs/platform_concepts/studio/database) that are tailored to your needs. For example, you can create tables to store the data obtained from variables from the flows. 
 
 
 
@@ -18,7 +18,7 @@ To **secure data** security for custom tables, you can employ masking techniques
 
 ## 1. Steps to add/create a custom query (custom report) 
 
-Custom queries/reports can be created using the default datasets or custom datasets.
+Custom queries/reports can be created using the default tables or custom tables.
 1. Open **Insights** > **Data explorer**. 
 2. Click **+Create Report**. 
 3. Select the type of **query** and click **Next**. 
@@ -28,7 +28,7 @@ Custom queries/reports can be created using the default datasets or custom datas
 
 **Choose query to create a table**
 
-You have the option to choose a custom query that includes either bot data or data retrieved from custom tables in flows. By using any of this data, you can obtain the desired insights and analytics from your existing datasets.
+You have the option to choose a custom query that includes either bot data or data retrieved from custom tables in flows. By using any of this data, you can obtain the desired insights and analytics from your existing tables.
 
 To create reports on selected tables, there are two types of queries available:
 
@@ -45,7 +45,7 @@ This query allows you to choose a default or custom table, and provides options 
 
 ### Native query
 
-If you require more advanced analysis beyond what is available with the buttons and options provided by Insights, or if you prefer to write SQL queries instead, you can choose the native query option. With this option, you can write your own SQL query to perform more complex analysis on your default datasets.
+If you require more advanced analysis beyond what is available with the buttons and options provided by Insights, or if you prefer to write SQL queries instead, you can choose the native query option. With this option, you can write your own SQL query to perform more complex analysis on your default tables.
 
 ![image](https://imgur.com/2zNJu3m.png)
     

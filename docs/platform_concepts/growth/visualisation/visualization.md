@@ -15,9 +15,9 @@ Using charts, graphs, and other visualizations is an effective way to make your 
 | **Bar Chart**   | Effective in comparing data across different categories. |
 | **Row Chart**   | Similar to a bar chart, used to compare data across categories, but with horizontal bars instead of vertical ones.  |
 | **Funnel Chart**| Useful for showing the progression of data through different stages.  |
-| **Count Chart** | Great for displaying the frequency of values in a dataset. |
+| **Count Chart** | Great for displaying the frequency of values in a table. |
 | **Pie Chart**   | Excellent choice for representing how a whole is divided into parts. |
-| **Pivot Table** | Essential for summarizing and visualizing large datasets efficiently. |
+| **Pivot Table** | Essential for summarizing and visualizing large tables efficiently. |
 
 
 ## Steps to apply visualisation

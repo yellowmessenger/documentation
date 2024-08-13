@@ -153,7 +153,7 @@ To filter the table data:
 
 1. Table binning is not supported while filtering the tables.
 2. Exporting the new table as a CSV is not possible.
-
+3. You cannot add custom formulas to a report created by joining 2 tables. 
 
 
 

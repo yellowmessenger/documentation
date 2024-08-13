@@ -3,7 +3,7 @@ title: Row chart
 sidebar_label: Row chart
 ---
 
-A row chart is a graphical representation where data is depicted using horizontal bars, with the length of each bar proportional to the value it represents. It's commonly used for comparing the relative sizes of different categories or variables within a dataset.
+A row chart is a graphical representation where data is depicted using horizontal bars, with the length of each bar proportional to the value it represents. It's commonly used for comparing the relative sizes of different categories or variables within a table.
 
 Click **Visualisation > Row**.
 

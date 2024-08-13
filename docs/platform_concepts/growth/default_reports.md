@@ -30,7 +30,7 @@ Here are the default reports available on the Data Explorer page, along with the
 
 Visualised under default dashboard: **User traffic**
 
-| Report | Description | Dataset | Filter | SummarizeBy | GroupBy | Visualisation |
+| Report | Description | Tables | Filter | SummarizeBy | GroupBy | Visualisation |
 |--------|-------------|---------|--------|------------|----------|--------------|
 | Unique Users | Number of distinct users | Message Events | Message Type is User | Distinct count of UID | | Count |
 | New Users | Number of new users | User Engagement Events | Event is first-message | Count| | |
@@ -58,13 +58,13 @@ You can see this under **Bot performance**.
 
 | KPI | Description |
 |-----|-------------|
-| Flow visits | Number of visits completed through journeys. Dataset: User Engagement Events. Filter: Event is journey-completed. Summarize By: Sum of count. Group By: Journey. |
-| Flow completion rate | Rate of completion for initiated journeys. Dataset: User Engagement Events. Filter: Event is journey-started and journey-completed. Summarize By: Sum of count. Group By: Event. Visualization: Pivot. Custom Formula: `(journey-completed/journey-started)*100`. |
-| Bot Accuracy | Accuracy of bot identification in messages. Dataset: Message Events. Filter: IDENTIFICATIONSTATUS Not empty. Summarize By: Count. Group By: IdentificationStatus. Visualization: Pivot. Custom Formula: `Identified/(Identified+Unidentified)`. |
-| Deflection Rate | Rate of deflection in user-agent sessions. Dataset: User Engagement Events. Filter: Event is user-session and agent-session. Summarize By: Count. Group By: Event. Visualization: Pivot. Custom Formula: `(User-Agent/User)*100`. |
-| Bot Feedback | Feedback provided for bot performance. Dataset: User Feedback Table. Summarize By: Average on rating. |
-| Unidentified utterances | Number of messages with unidentified status. Dataset: Message Events. Filter: Identificationstatus is unidentified. |
-| API usage by status code | Usage of API services categorized by status. Dataset: API Events. Filter: API name. Summarize By: Sum of count. Group By: Status code. |
+| Flow visits | Number of visits completed through journeys. Table: User Engagement Events. Filter: Event is journey-completed. Summarize By: Sum of count. Group By: Journey. |
+| Flow completion rate | Rate of completion for initiated journeys. Table: User Engagement Events. Filter: Event is journey-started and journey-completed. Summarize By: Sum of count. Group By: Event. Visualization: Pivot. Custom Formula: `(journey-completed/journey-started)*100`. |
+| Bot Accuracy | Accuracy of bot identification in messages. Table: Message Events. Filter: IDENTIFICATIONSTATUS Not empty. Summarize By: Count. Group By: IdentificationStatus. Visualization: Pivot. Custom Formula: `Identified/(Identified+Unidentified)`. |
+| Deflection Rate | Rate of deflection in user-agent sessions. Table: User Engagement Events. Filter: Event is user-session and agent-session. Summarize By: Count. Group By: Event. Visualization: Pivot. Custom Formula: `(User-Agent/User)*100`. |
+| Bot Feedback | Feedback provided for bot performance. Table: User Feedback Table. Summarize By: Average on rating. |
+| Unidentified utterances | Number of messages with unidentified status. Table: Message Events. Filter: Identificationstatus is unidentified. |
+| API usage by status code | Usage of API services categorized by status. Table: API Events. Filter: API name. Summarize By: Sum of count. Group By: Status code. |
 
 
 **Upcoming reports**
@@ -88,11 +88,11 @@ Visualised under default dashboard: **Support chats**
 
 | KPI | Description |
 |-----|-------------|
-| Total Chats | Total number of chat tickets. Dataset: Chat Tickets. Summarize By: Distinct values of ticket_id. |
-| Open Chats | Number of open chat tickets. Dataset: Chat Tickets. Filter: ticket_status is OPEN. Summarize By: Distinct values of ticket_id. |
-| Queued Chats | Number of queued chat tickets. Dataset: Chat Tickets. Filter: Queue wait duration greater than 0. Summarize By: Distinct values of ticket_id. |
-| Assigned Chats | Number of assigned chat tickets. Dataset: Chat Tickets. Filter: ASSIGNMENT_TIME is previous 7 days. Summarize By: Distinct values of ticket_id. |
-| Resolved Chats | Number of resolved chat tickets. Dataset: Chat Tickets. Filter: ticket_status is Resolved. Summarize By: Count. |
-| Deflection Rate | Rate of deflection in chats. Dataset: User Engagement Events. Filter: event is user-session and agent-session. Summarize By: Count event. Visualization: Pivot. |
-| Missed Chats | Number of missed chat tickets. Dataset: Chat Tickets. Filter: ticket_status is MISSED. Summarize By: Distinct values of ticket_id. |
+| Total Chats | Total number of chat tickets. Table: Chat Tickets. Summarize By: Distinct values of ticket_id. |
+| Open Chats | Number of open chat tickets. Table: Chat Tickets. Filter: ticket_status is OPEN. Summarize By: Distinct values of ticket_id. |
+| Queued Chats | Number of queued chat tickets. Table: Chat Tickets. Filter: Queue wait duration greater than 0. Summarize By: Distinct values of ticket_id. |
+| Assigned Chats | Number of assigned chat tickets. Table: Chat Tickets. Filter: ASSIGNMENT_TIME is previous 7 days. Summarize By: Distinct values of ticket_id. |
+| Resolved Chats | Number of resolved chat tickets. Table: Chat Tickets. Filter: ticket_status is Resolved. Summarize By: Count. |
+| Deflection Rate | Rate of deflection in chats. Table: User Engagement Events. Filter: event is user-session and agent-session. Summarize By: Count event. Visualization: Pivot. |
+| Missed Chats | Number of missed chat tickets. Table: Chat Tickets. Filter: ticket_status is MISSED. Summarize By: Distinct values of ticket_id. |
 

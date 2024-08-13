@@ -21,15 +21,15 @@ All the operations selected will be applied to all the columns in the table, not
 
 > Summarize options are available based on the selected subscription models. 
 
-In this panel, you can **Summarise** the datasets/tables by a count of the table data (number of rows) and **Group by** the column fields.
+In this panel, you can **Summarise** the tables by a count of the table data (number of rows) and **Group by** the column fields.
 
 ### Summarize by
 
-1. On the tables page (default datasets/custom datasets), click **Summarize**. 
+1. On the tables page (default/custom tables), click **Summarize**. 
     <img  src="https://i.imgur.com/eMJQDjM.png"  width="70%"/>
 2. Click **Add metrics** to explore the available summary options. 
     <img  src="https://i.imgur.com/aAIZ386.png"  width="50%"/>
-3. Dataset can be summarized(grouping Rows) by selecting a Column Name, and selecting required metrics like count, the sum of, an average of, the number of distinct values of, minimum of, and/or maximum of.
+3. Table can be summarized(grouping Rows) by selecting a Column Name, and selecting required metrics like count, the sum of, an average of, the number of distinct values of, minimum of, and/or maximum of.
     ![](https://i.imgur.com/9eHJRTO.png)
 4. Click **Apply**.
 
