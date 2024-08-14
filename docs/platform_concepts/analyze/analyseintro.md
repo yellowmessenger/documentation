@@ -3,7 +3,12 @@ title: Introduction to analyze
 sidebar_label: Analyze
 ---
 
-Analyze is an advanced AI Analyst designed to help brands monitor and enhance their chatbot performance over time through self-learning mechanisms.
+Analyze is an advanced AI Analyst that helps brands monitor and enhance chatbot performance over time through self-learning mechanisms. It improves your **contained resolution rate** by leveraging an in-house LLM model to evaluate each conversation, measure resolution quality and user sentiment, and create topic clusters.
+
+Business owners can then focus on the topics with the greatest opportunity to improve contained resolution.
+
+> **Contained resolution rate** refers to the share of conversations resolved by the AI bot without a handover to the human support agent.
+
 
 ### Use cases
 
@@ -49,7 +54,7 @@ Message View evaluates how well the chatbot is trained to understand and respond
 
 For each conversation, the in-house LLM model generates the following insights:
 
-- **Topic**: The main subject of multiple conversations.
+- **Topic**: The main subject of multiple conversations. After selecting a topic of your choice, you can view all the associated metrics.
 - **Topic Description**: A detailed explanation of the topic.
 - **User Query**: A summary of the user’s question.
 - **Resolution**: A summary of the resolution provided, either by the bot or the agent.
@@ -57,5 +62,7 @@ For each conversation, the in-house LLM model generates the following insights:
 - **Sentiment**: The user's sentiment (positive, neutral, or negative).
 - **Containment**: Indicates if the issue was resolved by the bot (True) or handed over to a human agent (False).
 - **Automation**: For conversations handed over to a human agent, this metric determines if the resolution can be replicated by an article in the knowledge base, aiding future automation.
+
+
 
 > Read the following articles to learn more. 
