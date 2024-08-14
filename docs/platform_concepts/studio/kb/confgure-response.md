@@ -1,6 +1,6 @@
 ---
 title: Customize your Knowledge base responses using prompts
-sidebar_label: Customize your Knowledge base responses using prompts
+sidebar_label: Customizing KB responses
 ---
 
 You can customize KB responses by providing instructions (prompts) in the Configuration section. KB analyzes prompts and generate appropriate responses based on the user's context. 

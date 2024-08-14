@@ -1,6 +1,6 @@
 ---
 title: Data ingestion into Knowledge base
-sidebar_label: KB data ingestion
+sidebar_label: Ingest data to KB
 ---
 
 KB bot can utilize ingested data to provide more informative responses. There are multiple entry points through which data can be fed into the bot.
