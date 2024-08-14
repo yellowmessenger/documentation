@@ -4,9 +4,9 @@ sidebar_label: Insights FAQs
 ---
 
 <details>
-<summary> How are sessions(session duration) calculated? </summary>
+<summary> How are sessions calculated? </summary>
 <div>
-A session can be a user session (when there’s user interaction with the bot) or bot session (when there’s a bot message but not necessarily any user message). Session duration is the average time for which the user has conversed with the bot. A session can be of 24 hours. A user can have any number of interactions with the bot within this 24 hours window from the start of a session and it will be considered a single session. A new session starts after 24 hours.
+A session can be a user session (when there’s user interaction with the bot) or bot session (when there’s a bot message but not necessarily any user message). A session window is of 24 hours. A user can have any number of interactions with the bot within this 24 hours window from the start of a session and it will be considered a single session. A new session starts after 24 hours.
     
 </div>
 </details>
