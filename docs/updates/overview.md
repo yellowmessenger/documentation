@@ -9,25 +9,46 @@ featured: true
 
 ## Your Cloud Platform Redefined - Discover Simplicity
 
-We're excited to announce a major enhancement to your AI platform, designed to boost efficiency and deliver exceptional results. We've carefully restructured our platform to provide a more intuitive and powerful user experience. Key improvements include:
+We're excited to announce a major enhancement to your AI platform, designed to boost efficiency and deliver exceptional results. We've carefully restructured our platform to provide a more intuitive and powerful user experience. 
+
+Key improvements include:
 
 ### Expanded Automation
-Our previous "Studio" module has evolved into a comprehensive "Automation" hub, centralizing bot building and inbox automation. This is just the beginning—stay tuned for even more powerful automation features coming soon.
+Our previous "Studio" module has evolved into a comprehensive "[Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview)" hub, centralizing bot building and inbox automation. This is just the beginning—stay tuned for even more powerful automation features coming soon.
 
 ### Dedicated User 360
-We've elevated "User 360" to a standalone module, providing a comprehensive view of user interactions across the entire platform. This allows for deeper insights and enables other modules to leverage user data for enhanced performance.
+We've elevated "User 360" to a standalone module, providing a comprehensive view of user interactions across the entire platform. This allows for deeper insights and enables other modules to leverage user data for enhanced performance. [Check this out](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview) for more details.
+
 
 ### Independent Knowledge Management
-We've transformed the previously Studio-restricted Knowledge Base into a standalone "Knowledge" module. This dedicated focus empowers you to effectively manage and leverage your knowledge assets.
+We've transformed the previously Studio-restricted Knowledge Base into a standalone "[Knowledge](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)" module. This dedicated focus empowers you to effectively manage and leverage your knowledge assets.
 
 ### Advanced Conversation Analysis
-Our new "Analyze" module offers detailed insights into customer conversations, helping you understand what they’re talking about, monitor user sentiment, and determine if their queries are resolved. It also learns from interactions and automatically generates AI content to enhance bot automation.
+Our new "[Analyze](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro)" module offers detailed insights into customer conversations, helping you understand what they’re talking about, monitor user sentiment, and determine if their queries are resolved. It also learns from interactions and automatically generates AI content to enhance bot automation.
 
 ### Centralized Settings 
 We've streamlined your experience by unifying all settings into one location. You can now manage Chatbot, Inbox, and Engage settings all from a single, convenient place.
 
 ---
 
+## Introducing Generative AI-Powered Analyze
+
+Launching Analyze, our groundbreaking solution designed to revolutionize the way brands leverage Generative AI for in-depth conversation analysis. This new feature empowers you to harness the full potential of AI in evaluating and enhancing customer interactions, ultimately driving superior bot performance and automation.
+
+### Key Benefits
+
+* **30% Reduction in Ticket Volumes**: Experience a significant decrease in the number of support tickets by enhancing your bot’s ability to handle and resolve inquiries more effectively.
+* **10% Increase in Containment Rates**: Improve the rate at which your chatbot successfully addresses customer queries without human intervention.
+
+### What’s New with Analyze
+
+* **Advanced AI Analyst**: Analyze employs state-of-the-art Generative AI to continuously monitor and refine chatbot performance. Its self-learning capabilities enable ongoing improvements based on real-time data.
+* **Comprehensive Conversation Evaluation**: The in-house LLM model assesses every conversation to measure resolution quality and user sentiment, ensuring more accurate and actionable insights.
+* **Enhanced Knowledge Base Generation**: By creating detailed topic clusters, Analyze helps in generating robust knowledge bases, streamlining bot responses and enhancing overall customer experience.
+
+Harness the power of Analyze to optimize your customer interactions and drive greater efficiency with cutting-edge AI technology. [Experience the transformative impact of this innovative tool](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro) on your customer service operations.
+
+---
 
 ## New Dynamic Chat Node Configuration - Context Switching
 

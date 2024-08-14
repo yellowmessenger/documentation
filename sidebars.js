@@ -259,19 +259,6 @@ module.exports = {
           collapsed: true,
           items: [ 
             "platform_concepts/studio/build/create_chatbot",
-            {
-              type: "category",
-              label: "Create Knowledge base bot",
-              link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
-              collapsed: true,
-              items: [
-                "platform_concepts/studio/kb/ingestion",
-                // "platform_concepts/studio/kb/integrations",
-                "platform_concepts/studio/kb/confgure-response",
-                "platform_concepts/studio/kb/advancedsettings",
-                
-              ],
-            },
             "platform_concepts/studio/build/orchestrator",
             "platform_concepts/studio/build/create_voice_bot",  
           ],
@@ -400,7 +387,23 @@ module.exports = {
     
       ],
     },
-  
+ 
+// Knowledgebase
+
+{
+  type: "category",
+  label: "Knowledgebase hub",
+  link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
+  collapsed: true,
+  items: [
+    "platform_concepts/studio/kb/ingestion",
+    // "platform_concepts/studio/kb/integrations",
+    "platform_concepts/studio/kb/confgure-response",
+    "platform_concepts/studio/kb/advancedsettings",
+    
+  ],
+},
+
 // Email automation doc is added here without categorization
 
 
