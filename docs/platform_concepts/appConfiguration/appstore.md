@@ -5,7 +5,7 @@ sidebar_label : App store
 
 Effortlessly manage user ratings and reviews directly from your bot by integrating with your Apple App Store account. This integration requires access to App Store Connect and your iOS app deployed on the App Store.
 
-Our integration supports all versions compatible with the Apple App Store. For details on the action nodes used in this integration, refer to our [documentation](https://developers.google.com/android-publisher/reply-to-reviews).
+Our integration supports all versions compatible with the Apple App Store.
 
 ## Connect your App Store to yellow.ai bot
 
