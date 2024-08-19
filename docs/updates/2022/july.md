@@ -31,7 +31,7 @@ You can get your text translated correctly and add translated content for each n
 #### 1.5 Real-time Conversation Logs
 
 You can now monitor all the conversations in real time. The auto-tagging of problems identified in the conversation is also made in real-time.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/studio/analyze/chat-logs).
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs).
   
 #### 1.6 Add API to Sync data to the database
 
