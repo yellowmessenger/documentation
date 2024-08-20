@@ -38,7 +38,7 @@ export const popularSearchItems = [
     title: "Get Google Translate API key",
   },
   {
-    url: "https://docs.yellow.ai/docs/platform_concepts/studio/api/receive-data#1-get-the-response-data-from-api",
+    url: "https://docs.yellow.ai/docs/platform_concepts/studio/api/send-receive-apiresponses#parse-api-response-using-function-node",
     title: "Access data from API response",
   },
   {
