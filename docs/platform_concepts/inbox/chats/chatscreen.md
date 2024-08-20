@@ -113,7 +113,7 @@ Once the customers language is detected, the messages sent by the agent in agent
 
 ### Chat URL & Chat transcript
 
-You can click **Copy chat URL** to fetch the URL of the chat and share it with the team members who have access to Inbox. You can enable [IP whitelisting](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/chattranscriptsecurity) for these URLs. 
+You can click **Copy chat URL** to fetch the URL of the chat and share it with the team members who have access to Inbox. You can enable [IP whitelisting](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/security-auth/chattranscriptsecurity) for these URLs. 
 
 ![](https://hackmd.io/_uploads/SkVEPIx1p.png)
 

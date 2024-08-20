@@ -6,11 +6,10 @@ Keywords: [Track CSAT, CSAT analytics, customer feedback analytics]
 
 To collect user/customer feedback on yellow.ai, you can take the below approaches: 
 1. **Collect user feedback for the bot interaction** (on web widget): This is done by creating a flow using Feedback node. When this node is reached during the flow, feedback questions will be posed to the users. 
-2. **Collect user feedback for the inbox agent interaction** (on web widget): This is explicitly for bots using Inbox and have agents configured. After an agent resolves a chat, feedback questions will be posed to users. 
-3. **Collect user feedback for bot/agent interaction via. custom flows** (recommended for other channels like Facebook, WhatsApp, etc.): Create a custom flow on Automation. 
+2. **Collect user feedback for bot/agent interaction via. custom flows** (recommended for other channels like Facebook, WhatsApp, etc.): Create a custom flow on Automation. 
 
 This data will be available in the [Data Explorer](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/intro) section.     
-You can visualize it further by taking advantage of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards) and [visualization](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/visualization). 
+You can visualize it further by taking advantage of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro) and [Visualisation](https://docs.yellow.ai/docs/platform_concepts/growth/visualisation/visualization). 
 
 
 -----
@@ -74,6 +73,7 @@ Follow the given steps: 
 
     Available on **Insights** > [Data Explorer](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/defaulttables) > **Chat tickets** table .
 
+<!--
 3. **User feedback widget for bot and agent interaction**: 
 
     The [User feedback](https://docs.yellow.ai/docs/platform_concepts/growth/overview#8-user-feedback) widget on Insights overview provides: 
@@ -82,7 +82,9 @@ Follow the given steps: 
 
     <img src="https://i.imgur.com/sMmYWUz.jpg" alt="drawing" width="50%"/>   
 
-    > Chat tickets and User feedback are default database table, you need not create any new table to save this data. 
+-->
+
+> Chat tickets and User feedback are default database table, you need not create any new table to save this data. 
 
 4. **Data from custom flows for bot/agent interaction**: 
 
@@ -90,9 +92,8 @@ Follow the given steps: 
 
     ![](https://i.imgur.com/bkDSbfc.png)
 
-    > Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/customtables) for detailed document on custom tables.
-
-    You can save these tables(queries) and view them on a separate [dashboard](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards). Refresh the page to update dashboards with newly added data points.
+   
+    You can save these tables(queries) and view them on a separate dashboard. Refresh the page to update dashboards with newly added data points.
 
     ![](https://i.imgur.com/wluH8KC.png)
 

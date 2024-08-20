@@ -226,8 +226,7 @@ An all-new analytics dashboard- **Insights** > **Voice overview** is introduced 
 
 
 In the Flows Summary section (**User Journeys** > **Funnels**), you can see the list of reasons why certain flow completion rates might be low and nudge to what immediate steps you can take to improve them.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/growth/funnels#31-flow-completion-rate-fcr).
-  
+
 
 #### 6.3 Channel filter on User Journey Visualisation  
 
@@ -337,7 +336,6 @@ Bot Developers can now select “Streaming Advanced Mode” and additionally pro
 | *New feature*
 
 Onboarded Recording Management controls on the Builder UI. Bot Developers can now use these controls, available under **Node Level Settings** > **Voice Configuration** > **Recording Action**, to Stop, Pause or Resume the Voice recording during a conversation between the Voice bot and the customer.    
-[**Learn more here**](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/callrecording).
 
 
 

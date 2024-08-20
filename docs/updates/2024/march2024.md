@@ -38,8 +38,6 @@ Agents can now respond directly from the Konnect Insights dashboard, leveraging 
 
 Explore data effortlessly with the new pivot table feature in reports. Organize and analyze your data with ease for deeper insights and better decision-making.
 
-[Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/pivottable)
-
 ---
 
 ## Mobile Push Notifications for SDKs

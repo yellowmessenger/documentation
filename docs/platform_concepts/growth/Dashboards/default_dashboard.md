@@ -121,7 +121,6 @@ This lets you evaluate the performance of your support agents to ensure high-qua
 | **Average Queue Time by Day**      | Displays the average queue time for tickets on a daily basis. It helps in identifying daily trends and potential bottlenecks in ticket processing. |
 | **Agent Transfers by Day**         | Tracks the number of ticket transfers between agents on a daily basis. It helps in understanding collaboration and potential inefficiencies in ticket routing. |
 
-Learn more about [Chat reports](https://docs.yellow.ai/docs/platform_concepts/growth/default_reportss#based-on-chats)
 
 ### Inbox agent performance Filters
 
