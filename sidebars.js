@@ -131,6 +131,7 @@ module.exports = {
   items: [
     // "cookbooks/Upgrade_new_engage_app",
     "cookbooks/engage/email-outbound-101",
+    "cookbooks/engage/app-template",
     "cookbooks/engage/optout-campaigns",
     "cookbooks/engage/shopify-events",
 
