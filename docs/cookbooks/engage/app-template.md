@@ -17,6 +17,8 @@ sidebar_label: Template Sync Issues Between Meta and App Platform
 1. **Create the Template in Meta:**
    - Use your WhatsApp Business Account (WABA) access to create the template in Meta.
 
+    <img src="https://i.imgur.com/polpStO.png" width="60%"/>
+
 2. **Open the Engagement Module in the App Platform:**
    - Go to the engagement module and select "Create Campaign."
 
@@ -28,7 +30,11 @@ sidebar_label: Template Sync Issues Between Meta and App Platform
    - When prompted to select a template, note that the Meta-created template will not appear.
    - Click "Add Template" to enter it manually.
 
+   ![img](https://i.imgur.com/rU5HVJG.png)
+
 5. **Enter Template Details:**
+   <img src="https://i.imgur.com/qVm6aan.png" width="60%"/>
+
    - **Template Name:** Enter the name in lowercase (copy and paste from Meta).
    - **Content:** Copy and paste the content exactly as it appears in Meta, including all spacing.
    - **Namespace:** Obtain from Meta under the "Manage Template" options.
