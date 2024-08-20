@@ -9,7 +9,7 @@ Our integration supports all versions compatible with the Apple App Store.
 
 ## Connect your App Store to yellow.ai bot
 
-Before integrating your App Store account with Yellow.ai, ensure your App Store Connect account and iOS app are ready as detailed [here]https://developer.apple.com/documentation/appstoreconnectapi).
+Before integrating your App Store account with Yellow.ai, ensure your App Store Connect account and iOS app are ready as detailed [here](https://developer.apple.com/documentation/appstoreconnectapi).
 
 
 ### Authenticate Yellow.ai to access App Store

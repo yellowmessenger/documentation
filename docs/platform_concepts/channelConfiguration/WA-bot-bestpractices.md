@@ -4,7 +4,7 @@ sidebar_label: Create WhatsApp bot
 tags: [build WhatsApp chatbot, WhatsApp bot, WhatsApp business chatbot, integrate chatbot with bot]
 ---
 
-This document provides details on the best practises and limitations that you need to follow while creating the WhatsApp (WA) bot. For more information on WA limitations, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-char-limit).
+This document provides details on the best practises and limitations that you need to follow while creating the WhatsApp (WA) bot. For more information on WA limitations, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/whatsapp-channel#limitations-of-whatsapp-channel).
 
 ## Create a flow for WhatsApp bot
 
