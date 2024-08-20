@@ -321,7 +321,7 @@ module.exports = {
                 "platform_concepts/studio/product-catalogue",
                 {
                   type: "category",
-                   label: "Integrate APIs in Studio",
+                   label: "APIs in Automation",
                    collapsed: true,
                    items: [
                    {

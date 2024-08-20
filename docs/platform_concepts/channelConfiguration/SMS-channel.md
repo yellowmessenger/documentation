@@ -57,7 +57,6 @@ A segment is a part of a text message limited to a specific number of characters
 You can configure SMS services for the following countries:
 
 * [Configure SMS service for Indian numbers](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-outbound-india)
-* [Configure SMS service for US numbers](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sms-inbound-US)
 
 
 
