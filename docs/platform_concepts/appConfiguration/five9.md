@@ -19,24 +19,25 @@ In a two-tier environment, you can connect an integration app in the Development
    
 * This will display the Five9 integration page.
 
-     ![](https://imgur.com/9CjyPLI.png)
+     ![](https://imgur.com/oxP94QK.png)
 
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_). 
 
 3. In **Tenant name**: Enter the name of the tenant. To obtain this information, contact the Five9 support team.
 4. In **Supervisor username**: Enter the username provided by the Five9 support team. A separate set of Five9 supervisor credentials needs to be created specifically for this integration.
 5. In **Supervisor password**: Enter the password provided by the Five9 support team.
+6. In **Host name**: Enter the name of the host provided by the client.
+7. In **Skill ID**: Enter the Skill ID provided by the client.
+8. In the **Attachment custom message** field, enter the message that will be displayed to the agent after an image is attached.
 
-6. In the **Attachment custom message** field, enter the message that will be displayed to the agent after an image is attached.
-
-7. To customize chat headers, enable the **Customize chat headers** option. Upon enabling it, you will see the following fields:
+9. To customize chat headers, enable the **Customize chat headers** option. Upon enabling it, you will see the following fields:
    i. **Update agent name**: Enter the agent's name.
    ii. **Update agent description**: Provide a description, such as indicating that a bot icon should be updated when an agent is connected to the bot.
    iii. **Update agent avatar**: Upload an avatar for the agent if you prefer not to display the agent's name.
  
-8. Click **Connect**.
+10. Click **Connect**.
 
-9. If you have multiple accounts, click on **+ Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts. 
+11. If you have multiple accounts, click on **+ Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts. 
 
 ## Connect bot users to Five9 live agents  
 

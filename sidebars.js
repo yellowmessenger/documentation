@@ -1127,6 +1127,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/whatsapp-business-account-guidelines",
             "platform_concepts/channelConfiguration/WA-messaging-limits",
             "platform_concepts/channelConfiguration/wa-opt-in",
+            "platform_concepts/channelConfiguration/whatsapp-forms",
             "platform_concepts/channelConfiguration/WA-bot-bestpractices",
             "platform_concepts/channelConfiguration/WA-pricing",
             "platform_concepts/channelConfiguration/wa-faqs",
