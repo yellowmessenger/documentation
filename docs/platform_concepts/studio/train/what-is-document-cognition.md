@@ -1,5 +1,5 @@
 ---
-sidebar_label : Documents
+sidebar_label: Documents
 title: Documents
 ---
 
@@ -12,11 +12,11 @@ By using the **Documents** feature, you can expect the model to answer queries a
 In this article, you will learn:   
 
 1. [How documents can be used?](#uc)   
-2. [How to add files to Document section?](#f)
-    - [via. local system](#yls) 
-    - [via. URL - integration with customer’s external Knowledge Base](#extkb)   
-    - [via. AWS-S3](#awss3)
-    - [via. Sharepoint](#shpt)
+2. [How to add files to Document section?](#2-add-files-to-document-section)
+    - [via. local system](#21-upload-files-from-local-system)
+    - [via. URL - integration with customer’s external Knowledge Base](#22-upload-files-from-an-url)   
+    - [via. AWS-S3](#23-upload-file-via-aws)
+    - [via. Sharepoint](#24-upload-file-via-sharepoint)
 3. [What is Extract QNA?](#3-qna-extract)   
 4. [How to add Acronyms?](#a) 
 
@@ -35,7 +35,7 @@ To upload the document in the Document section:
 - Open **Automation**> **Train** > **Document**.
 - Add the required file.
 
-Learn how to upload files to Documents in the [next section](#f). 
+Learn how to upload files to Documents in the [next section](#2-add-files-to-document-section). 
 :::
 
 The document knowledge can be used in two different methods:   
@@ -65,7 +65,6 @@ The document knowledge can be used in two different methods:
     
 To view the report of search performance such as queries answered/unanswered and search categories, go to [Data explorer](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#knowledge-base-report). 
     
-   <!-- ![](https://imgur.com/EJEgGCN.jpg) -->
 
 
 :::
@@ -73,11 +72,12 @@ To view the report of search performance such as queries answered/unanswered and
 ------
 
 
-## <a name="f"></a> 2. Add files to Document section
+## 2. Add files to Document section
 
-Follow the steps below to upload a file: 
+To upload a file, follow the steps: 
 
-1. On **Automation** > **Train**.   
+1. On **Automation** > **Train**.
+
     - Open **Documents**-> Files section. 
     - Click **+Upload Documents**. 
 
@@ -85,16 +85,17 @@ Follow the steps below to upload a file:
 
 
 2. Select a source you want to upload the file from:
-    - [Your local system](#yls) 
-    - [Upload URL- integrate your bot with customer’s external knowledge base integrations](#extkb)
-    - [AWS-S3](#awss3)
-    - [Sharepoint](#shpt)
+
+    - [Your local system](#21-upload-files-from-local-system)
+    - [Upload URL- integrate your bot with customer’s external knowledge base integrations](#2-add-files-to-document-section)
+    - [AWS-S3](#23-upload-file-via-aws)
+    - [Sharepoint](#24-upload-file-via-sharepoint)
       
    ![](https://i.imgur.com/V2CdcPt.png)
 
 ---
     
-### <a name="yls"></a> 2.1 Upload files from local system
+### 2.1 Upload files from local system
     
 1. After selecting **Your Computer**. Click **Upload File** (you can also select multiple files at once). You will be redirected to your computer file storage from where you can select files to upload. 
 
@@ -139,7 +140,7 @@ When a user enters a query in a specific language from the list, the bot detects
 
 ---
     
-### <a name="extkb"></a> 2.2 Upload files from an URL
+### 2.2 Upload files from an URL
 
 > Yellow.ai’s document feature supports integration with external knowledge database by adding a URL.
 
@@ -170,6 +171,7 @@ A KnowledgeBase(KB) gives centralized and organize access to solutions in form o
 | ServiceNow | Yes         | Yes         | Bearer    | JSON + HTML   |
 
 ![Flow diagram of yellow.ai KB Integration](https://lh4.googleusercontent.com/NTxyvHxl_YWJYMdas_6YuzEjK9X_2HvPJGgyurJlUTrMjC2BqdQX4DubJEQDTnGeBfiJycbR_GmsKndiw7W-T-DbqU2TdP167rlqfQrZULUQMDbZJaYzSsvvhQpRoLo0PxCZS3wnEivrCp95p5w-zg)
+
 :::
 
 
@@ -180,7 +182,7 @@ A KnowledgeBase(KB) gives centralized and organize access to solutions in form o
 2. Fill out the details and enable OAuth Setting.
 3. Add the following scopes.
 
-![](https://lh3.googleusercontent.com/rSmLKj11dcoQq9A2ps4qpfiscPyB_ZgiTXRenYBT5QT6efFOMUDcXmUEWbQfunZVXoNwqoaRnCB-7YHRwEkuHxd9ydm9wih3_BVb5BcybzWYxS5Yp2QOKMD0mgsyYLtKx6Fmv8ImQWhL7c7f2Rln6A)
+   ![](https://lh3.googleusercontent.com/rSmLKj11dcoQq9A2ps4qpfiscPyB_ZgiTXRenYBT5QT6efFOMUDcXmUEWbQfunZVXoNwqoaRnCB-7YHRwEkuHxd9ydm9wih3_BVb5BcybzWYxS5Yp2QOKMD0mgsyYLtKx6Fmv8ImQWhL7c7f2Rln6A)
 
 
 4. Add Callback URL (any webhook/logging URL): a public URL which can listen & log any request on it. (You will receive a code on that URL post OAuth login in step 8). Click on **Save**.
@@ -188,14 +190,16 @@ A KnowledgeBase(KB) gives centralized and organize access to solutions in form o
 6. Go to **Manage Connected Apps** > Select the created app > **Edit**.
 7. Set Permitted users to All users may self-authorize & IP Relaxation > Relax IP Restrictions > **Save**.
 8. Open the following URL after replacing the client id and callback URL accordingly.
-```
+
+
+```html
 https://login.salesforce.com/services/oauth2/authorize?client_id=<client_Id>&redirect_uri=<callback_url>&response_type=code
 ``` 
 
 9. Click **Allow** in the permission window, and you will receive a code in the callback_url logs.
 10. Use the following curl in postman to generate a refresh token.
 
-```
+```c
 curl --location --request POST 'https://login.salesforce.com/services/oauth2/token' \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'grant_type=authorization_code' \
@@ -214,26 +218,26 @@ curl --location --request POST 'https://login.salesforce.com/services/oauth2/tok
 
 **Prerequisites**
 
-1. Instance URL (eg. https://dev76197.service-now.com).
+1. Instance URL (eg: `https://dev76197.service-now.com`).
 2. Basic Authentication key or Bearer Authentication with the long-duration access token.
 3. Share the token generation CURL (if any / exist): If the Authentication token (Step 2) is not fixed and needs to be generated using an additional API.
 4. API enabled for listing and details page
-    - Listing URL: https://dev76197.service-now.com/api/now/table/kb_knowledge?sysparm_fields=sys_id,number,short_description,categoy,sys_updated_on
-    - Article Url: https://dev76197.service-now.com/api/now/table/kb_knowledge?sysparm_fields=sys_id,number,short_description,category,text,sys_updated_on&sysparm_query=number={{article_id}}    
+    - Listing URL: `https://dev76197.service-now.com/api/now/table/kb_knowledge?sysparm_fields=sys_id,number,short_description,categoy,sys_updated_on`
+    - Article Url: `https://dev76197.service-now.com/api/now/table/kb_knowledge?sysparm_fields=sys_id,number,short_description,category,text,sys_updated_on&sysparm_query=number={{article_id}}`  
 
 #### 2.2.3 Confluence integration
 
 **Prerequisites**
 
 1. Instance URL
-2. Authentication Token (https://id.atlassian.com/manage-profile/security/api-tokens)
+2. Authentication Token (`https://id.atlassian.com/manage-profile/security/api-tokens`)
 3. Token generation CURL (if any): If the Authentication token (Step 2) is not fixed and needs to be generated using an additional API.
 
     
 ----
 
     
-### <a name="awss3"></a> 2.3 Upload file via. AWS
+### 2.3 Upload file via. AWS
     
 > Yellow.ai’s document feature supports integration with AWS S3.
 
@@ -494,7 +498,7 @@ Client and Resource are two different abstractions within the boto3 SDK for maki
                                                            
 --- 
     
-### <a name="shpt"></a> 2.4 Upload file via. SharePoint
+### 2.4 Upload file via. SharePoint
     
 > Yellow.ai's document search feature supports integration with SharePoint. 
 
@@ -618,7 +622,7 @@ Once an app is created you can give access to any site to it. You can view all t
 | Target Host                     | azure_api                              |
 | Site URL                        | Site ID                                |
 
-![](https://paper-attachments.dropbox.com/s_B1221157D5B1FEA09D2BC495FC79B892C493E227B6F11DEC0F9B34E843AF4B3C_1659533761502_image.png)
+   ![](https://paper-attachments.dropbox.com/s_B1221157D5B1FEA09D2BC495FC79B892C493E227B6F11DEC0F9B34E843AF4B3C_1659533761502_image.png)
 
 3. Click the **upload** button, and your docs will be scheduled for sync.
 
