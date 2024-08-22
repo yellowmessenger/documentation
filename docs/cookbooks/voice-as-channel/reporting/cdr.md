@@ -70,7 +70,7 @@ Suppose you're a ticket booking center using the yellow.ai voice bot, and you wa
 
     ![](https://i.imgur.com/E0iwn1J.png)
 
-> You can also use this data to create your own custom dashboard. For instructions on how to do this, click  [here](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards).
+> You can also use this data to create your own custom dashboard. For instructions on how to do this, click  [here](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro).
 
 -----
 

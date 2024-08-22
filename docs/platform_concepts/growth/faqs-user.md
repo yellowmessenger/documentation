@@ -75,21 +75,21 @@ It depends on the step structure and how many steps are required to complete a f
 </details>
 
   
-<details>
+<!-- <details>
 <summary> How do you differentiate between Poor performance and Good performance based on the visualization insights? </summary>
 <div>
 Based on <a href="https://docs.yellow.ai/docs/platform_concepts/growth/funnels"> Flow completion rate </a> (in user journey visualization).
 </div>
-</details>
+</details> -->
 
 
-<details>
+<!-- <details>
 <summary> Why are flow completion rates low?</summary>
 <div>
 There can be multiple reasons for <a href="https://docs.yellow.ai/docs/platform_concepts/growth/funnels"> Flow completion rate </a> . You can find a list of them along with recommended next steps under <b>User Journeys</b> > <b>Funnels</b> > <b>Flow Summary</b>.
     
 </div>
-</details>
+</details> -->
 
 
 

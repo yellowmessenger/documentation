@@ -3,6 +3,7 @@ title: Insights Module Revamp (Phase 1)
 sidebar_label: Insights Module Phase 1 Revamp
 featured: true
 ---
+
 ## What has happened?
 We have revamped the Insights module UI to significantly cut down on legacy features and the black-box nature of our reporting based on valuable customer feedback. In this vein, we have sunset some of our old, out of the box dashboards.
 
@@ -88,9 +89,9 @@ Users|Bot Overview| New Users <br/>Unique Users|Completed
 Messages|Bot Overview| Messages by Day| Completed
 Sessions|Bot Overview| Sessions by Day| Completed
 Session Duration|Bot Overview| Average Session Duration in Minutes| Completed
-Users By Country|Bot Overview| Unique Users by Country | Completed
-Users By Traffic Channel|Bot Overview| Users Traffic by Channel | Completedd
-Users By Device|Bot Overview| Unique users by Device | Completed
+Users By Country|Bot Overview| Unique Users by Country| Completed
+Users By Traffic Channel|Bot Overview| Users by Traffic Channel| Completed
+Users By Device|Bot Overview| Unique Users by Device| Completed
 User Acquisition|Bot Overview|User Traffic by Channel <br/>User Traffic by Platform  | Completed
 Messages exchanged between user and bot|Bot Overview|Messages exchanged between user and bot|Completed
 Messages exchanged between user and agent|Bot Overview|Messages exchanged between user and agent|Completed
@@ -133,9 +134,9 @@ Users|Bot Overview| New Users <br/>Unique Users|Completed
 Messages|Bot Overview| Messages by Day| Completed
 Sessions|Bot Overview| Sessions by Day| Completed
 Session Duration|Bot Overview| Average Session Duration in Minutes| Completed
-Users By Country|Bot Overview| Unique Users by Country | Completed
+Users By Country|Bot Overview| Unique Users by Country| Completed
 Users By Traffic Channel|Bot Overview| User Traffic by Channel| Completed
-Users By Device|Bot Overview| Unique Users by Device | Completed
+Users By Device|Bot Overview| Unique Users by Device| Completed
 
 
 ***

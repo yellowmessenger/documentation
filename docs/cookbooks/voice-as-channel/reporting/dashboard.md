@@ -27,5 +27,3 @@ To view the voice dashboard, navigate to **Insights** > **Voice dashboard**.
 ![](https://i.imgur.com/KWb7P6U.png)
 
 
-
-> For more details on the Voice bot overview, refer to the complete guide [here](https://docs.yellow.ai/docs/platform_concepts/growth/voiceoverview).

@@ -9,7 +9,7 @@ Business owners can then focus on the topics with the greatest opportunity to im
 
 > **Contained resolution rate** refers to the share of conversations resolved by the AI bot without a handover to the human support agent.
 
-![image](https://hackmd.io/_uploads/SJQWihY50.png)
+![image](https://imgur.com/tSJcj17.png)
 
 ### Use cases
 

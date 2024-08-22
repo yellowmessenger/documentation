@@ -41,7 +41,7 @@ For faster access and visualisation, you can add this saved report to your dashb
 
 ![](https://i.imgur.com/LH0DHCv.png)
 
-> All the changes made to these saved reports will be reflected on Dashboards. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards#--12-create-a-dashboard-from-data-explorer) for more details on customising your dashboard. 
+> All the changes made to these saved reports will be reflected on Dashboards. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro) for more details on customising your dashboard. 
 
 ------
 

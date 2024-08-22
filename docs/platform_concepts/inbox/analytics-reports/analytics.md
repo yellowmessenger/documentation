@@ -49,7 +49,7 @@ To view analytics, follow the given steps:
     ![image](https://imgur.com/KXFSxjs.png)
 
 
-> To view the analytics of your own choice, you can create a custom [dashboard](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards) from the **insights** module. 
+> To view the analytics of your own choice, you can create a custom [dashboard](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro) from the **insights** module. 
 > 
 > ![](https://i.imgur.com/p2wY6Dl.png)
 

@@ -63,9 +63,10 @@ The document knowledge can be used in two different methods:
 
 **View report on Document search** 
     
-To view the report of search performance such as queries answered/unanswered, user feedback on search results and search categories, go to [Insights](https://docs.yellow.ai/docs/platform_concepts/growth/overview) module and select **Document**. 
+To view the report of search performance such as queries answered/unanswered and search categories, go to [Data explorer](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#knowledge-base-report). 
     
-   ![](https://imgur.com/EJEgGCN.jpg)
+   <!-- ![](https://imgur.com/EJEgGCN.jpg) -->
+
 
 :::
 

@@ -56,7 +56,7 @@ Additionally, **Yellow API** is a new channel introduced for users who only use 
 
 Introduced a new column, **ERRORMESSAGE**, in the Notifications report of **Data Explorer** specifying the reasons behind the failure of notifications delivery. 
 There are filters to drill down data that help understand different reasons for notifications failing, retargeting of those users, planning how to avoid such failures in the future, etc.   
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer). 
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/growth/data-explorer/intro). 
 
 
 

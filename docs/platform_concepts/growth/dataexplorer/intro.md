@@ -18,7 +18,7 @@ Data explorer has several features:
 * **Standard tables**: The tool provides a standard set of tables that can be utilized to construct Widgets.
 * **Custom tables**: Analysts have the ability to create custom tables by utilizing the tables that have been developed by bot builders.
 * **Druid Datastore**: Data Explorer currently uses the Druid Datastore and the bot database to conduct its analytics.
-* **Dashboard**: Users can visualise the tables and reports generated using Data Explorer through the use of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/dashboards). Multiple dashboards can be created to group widgets based on different use cases.
+* **Dashboard**: Users can visualise the tables and reports generated using Data Explorer through the use of [Dashboards](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro). Multiple dashboards can be created to group widgets based on different use cases.
 
 ---
 
