@@ -65,10 +65,18 @@ Follow these steps to create a formula:
 3. Create formula: 
     - **Create a Formula from the Dashboard**: In the Count Report dropdown, select Formula Creation.
     ![image](https://hackmd.io/_uploads/ByGNGoSiC.png)
-    - **Create a Formula from a specific report**: Hover over the report from which you want to add a formula and click the formula icon.
+    - **Create a Formula from a specific report**: Hover over the report from which you want to add a formula and click the formula icon.  
     ![image](https://hackmd.io/_uploads/Sy5IfirjR.png)
 
-> Both options will yield the same results.
+:::info
+
+-  By choosing to create a formula from the Dashboard, you can create a brand new report in the dashboard. 
+-  By choosing to create a Formula from a specific report, you will replace the selected report with the new report created by applying a formula.
+
+Both options will yield the same results.
+
+:::
+
 
 ### Steps for Formula Creation
 
