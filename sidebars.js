@@ -960,6 +960,7 @@ module.exports = {
       collapsed: true,
       items: [
         "platform_concepts/growth/Dashboards/custom_dashboards",
+        "platform_concepts/growth/Dashboards/editcountdashboards",
         "platform_concepts/growth/Dashboards/default_dashboard",
       ]
     },
