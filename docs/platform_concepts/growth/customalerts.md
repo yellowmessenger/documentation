@@ -78,11 +78,11 @@ To check KPI changes at the selected frequency within the specified intervals, c
 * **Daily**: Set alerts daily at a specific time. You can choose not to receive alerts on weekends.
 * **Weekly**: Set alerts on specific days of the week.
 
-![image](https://hackmd.io/_uploads/SJqTIlrwC.png)
+![image](https://hackmd.io/_uploads/ry4MDtBsR.png)
 
 * **Custom time configuration**: You can choose to send alerts daily or on selected days. Alerts can be configured to be sent between specific times and on chosen days.
 
-![image](https://hackmd.io/_uploads/r1XfDgHD0.png)
+![image](https://hackmd.io/_uploads/SJjALtHjC.png)
 
 -----
 
