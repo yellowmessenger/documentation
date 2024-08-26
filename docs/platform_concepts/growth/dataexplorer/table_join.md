@@ -3,6 +3,11 @@ title: Create a custom report (query) with multiple datasource using table join
 sidebar_label : Report with multiple datasource   
 ---
 
+:::note
+The table joins feature is currently feature-gated. Please contact the support team to request access.
+:::
+
+
 You can create a join query (report) in **Insights > Data Explorer** by using the **Create query with multiple data source** option. This allows you to combine or merge **two** default tables into a single report using different types of joins.
 
 
