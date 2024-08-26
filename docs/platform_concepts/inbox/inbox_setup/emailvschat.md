@@ -17,6 +17,6 @@ Depending upon the business use case, Inbox can be configured to handle email ti
 
 **Attachments supported in Inbox**
 
-- The image extensions supported in Inbox are **jpeg, jpg, png, gif, and svg**.
-- The file extensions supported are **jpeg, jpg, png, gif, pdf, txt, doc, ppt, docx, pptx, xls, xlsx, csv, tsv, zip, json, mp4, mp3, 3gp, and mov**. 
+- The image extensions supported in Inbox are **jpeg, jpg, png, gif, and svg** with 50 MB limit.
+- The file extensions supported are **jpeg, jpg, png, gif, pdf, txt, doc, ppt, docx, pptx, xls, xlsx, csv, tsv, zip, json, mp4, mp3, 3gp, and mov** with 25 MB limit.
 :::
