@@ -305,8 +305,6 @@ module.exports = {
                   link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/nodes'},
                   collapsed: true,
                   items: [
-                  //"platform_concepts/studio/cloud-function",
-                  // "platform_concepts/studio/build/nodes/nodes",
                     "platform_concepts/studio/dynamicchatnode", 
                     "platform_concepts/studio/build/nodes/prompt-nodes",
                     "platform_concepts/studio/build/nodes/message-nodes",
@@ -644,7 +642,6 @@ module.exports = {
           },
 
             "platform_concepts/inbox/inbox-settings/automation/chat_auto_translate",
-            //"platform_concepts/inbox/inbox-settings/automation/google-translate-api-inbox",
             "platform_concepts/inbox/inbox-settings/automation/agent-actions",
             "platform_concepts/inbox/inbox-settings/automation/chat-timeout",
             "platform_concepts/inbox/inbox-settings/automation/emailinactivity",
