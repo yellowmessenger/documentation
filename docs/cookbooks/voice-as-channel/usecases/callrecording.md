@@ -13,7 +13,7 @@ By default, the call recording feature is enabled to record the conversation.
 
 ## 1. Configure call recording
 
-By default, call recording is turned on by default for all the bots. In case, you want to pause it for some recording sensitive conversation like OTP or ID number, you will have to configure the recording action on the [node level options](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes#32-configure-node-for-a-voice-bot).
+By default, call recording is turned on by default for all the bots. In case, you want to pause it for some recording sensitive conversation like OTP or ID number, you will have to configure the recording action on the [node level options](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes#32-configure-node-for-a-voice-bot).
     
 **To pause recording**
 
