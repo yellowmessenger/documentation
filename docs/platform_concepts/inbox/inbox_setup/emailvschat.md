@@ -13,10 +13,7 @@ Depending upon the business use case, Inbox can be configured to handle email ti
 |Inbox live agents are immediately available to provide support and resolve these queries in a short period (10-20 minutes)|Industry practices could be to respond in a few hours or days|
 |Expect immediate responses. Since a lot of queries are handled in a short span, SLAs are imposed expecting live agents to meet a target|This allows the brand to handle more volume of queries and provides the freedom to provide a delayed response depending upon the capacity|
 
-:::note
-
-**Attachments supported in Inbox**
+## Attachments supported in Inbox
 
 - The image extensions supported in Inbox are **jpeg, jpg, png, gif, and svg** with 50 MB limit.
-- The file extensions supported are **jpeg, jpg, png, gif, pdf, txt, doc, ppt, docx, pptx, xls, xlsx, csv, tsv, zip, json, mp4, mp3, 3gp, and mov** with 25 MB limit.
-:::
+- The file extensions supported in Inbox are **jpeg, jpg, png, gif, pdf, txt, doc, ppt, docx, pptx, xls, xlsx, csv, tsv, zip, json, mp4, mp3, 3gp, and mov** with 25 MB limit.
