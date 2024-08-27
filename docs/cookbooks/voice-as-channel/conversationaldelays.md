@@ -83,7 +83,7 @@ Clever configuration lies is on how we optimize the STT delay. Let's understand 
 4. **Final dealy**: After the user has spoken the response, the duration of time the bot waits to understand that the user response is received and it must be processed as a single audio file. 
 
 :::note
-To design a good voice bot you must configure these parameters at the [node level](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/nodes#32-configure-node-for-a-voice-bot) based on the question being asked.
+To design a good voice bot you must configure these parameters at the [node level](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes#32-configure-node-for-a-voice-bot) based on the question being asked.
 :::
 
 ### 2.1 Configure for Yes/ No response 
