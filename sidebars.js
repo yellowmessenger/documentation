@@ -1030,7 +1030,7 @@ module.exports = {
             link: {type: 'doc', id: 'platform_concepts/growth/dataexplorer/customtables'},
             collapsed: true,
             items: [
-              "platform_concepts/growth/dataexplorer/table_join",
+             // "platform_concepts/growth/dataexplorer/table_join",
 ],
           },
 
