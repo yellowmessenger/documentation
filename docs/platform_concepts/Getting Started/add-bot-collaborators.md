@@ -30,24 +30,29 @@ The following table outlines various roles along with the associated access priv
 
 ## Share bot access
 
+Sharing bot access allows you to grant view or edit permissions to other users. You have full control over which modules they can access. However, only admins or super admins can grant these permissions.
+
+Each environment has a unique bot ID. When granting access, make sure you are in the correct environment for the bot. To provide access across all environments, you need to grant access individually in each one.
+
 To share bot access with other users, follow these steps:
 
-1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click the Access Control icon <img  src="https://imgur.com/vpKYa4b.png"  width="20"/>.
+1. In the Environment drop-down menu, select the environment for which you want to grant access.
 
-    ![image](https://imgur.com/PReVBXd)
+   ![](https://i.imgur.com/Hr8CEdm.png)
+
+2. On the left navigation bar, go to **Settings** and click on **Access Control**.
+
+   ![Access Control](https://i.imgur.com/Ee4XEMJ.png)
 
 2. Click **+Invite user**.
-    - Enter the official **Email** address of the user.
-    - Select your preferred role(s) in **Access control**. You can select more than one role for a user. **Collaborators** will only have the access level(role) as provided by the super admin. 
+    - In **Email**, enter the official email address of the user.
+    - In **Access control**, choose the [user role](#user-roles-and-access) you wish to assign. You can assign multiple roles as needed.
 
-<img  src="https://i.imgur.com/cBnpqIe.png"  width="50%"/>        
+   <img  src="https://i.imgur.com/M4A1YJ5.png"  width="70%"/>        
 
-3. Click **Save**. The invited user will receive an email with the bot access invitation.
+3. Click **Save**. The invited user will receive an email with an invitation to access the bot.
 
-:::note
 
-In a 3-environment setup, you must share invites for all three environments(Sandbox, Staging and Production) separately. 
-:::
 
 ***
 
@@ -58,7 +63,7 @@ To accept or reject a bot access invitation, follow these steps:
 1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click **Notifications** icon at the top right corner.
 2. If you have received a bot invite to your email address, you will see a notification. Click on the bell icon > Green tick.  
 
-![image](https://imgur.com/botXHm5.png) 
+   ![image](https://imgur.com/botXHm5.png) 
   
 3. Click on the drop-down next to your bot name to view the list of bots you have access to.
 
@@ -81,7 +86,7 @@ In the **Profile settings > My invites** section, you can easily access and mana
 - As a **Super admin/Admin**, you will see a list of pending bot invites. You can choose to either **Accept** the invitation to gain access to the bot or **Decline** it if you wish to decline the invitation.
 - You will receive notifications regarding bot invites, making it convenient for you to respond promptly.
 
-![image](https://imgur.com/IGabuxj.png)
+   ![image](https://imgur.com/IGabuxj.png)
 
 ----
 
@@ -107,27 +112,3 @@ With **Super Admin/Admin** privileges, you can monitor user interactions with yo
 
 > You can also find this information in the [Bot invites](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#view-bot-invites) section for your convenience.
 
-<!--
-
-## Approve published bots
-
-> Directly publishing bots is **not supported**.
-
-
-Once modifications are made to a bot, they need to be [published](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#2-publish-bot). Subsequently, **Super Admins/Approve** are required to assess and authorize the request. To approve the request open **Bot publish approvals** and **Accept** or **decline** the request. 
-    <img src="https://hackmd.io/_uploads/BynRJywc2.png" alt="drawing" width="80%"/>
-
-approval requests for publishing bots in different environments.
-
-
- 
-
--->
-
-----
-
-## Bot publish approvals
-
-> This option is available only for these roles: Super admins, Admins and Approver. 
-
-When a resquest is sent by the bot developer to publish a flow or a bot, the Approver can see the requests under **Bot publish approvals**.

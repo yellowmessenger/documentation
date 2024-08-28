@@ -23,22 +23,20 @@ You cannot modify profile details (name and email) from the UI.
 
 ## Change account password 
 
+You can change your password at any time. However, if you use password-based logins, you must update it every 180 days (6 months). Password changes are not applicable for SSO or Google logins, and you will not be able to change your password in those cases.
+
 To reset your password: 
 
 1. Click on your profile icon > **My profile** > **Account**.
-2. Enter your current password under **Old password** and your new password under **New password**.
+2. Enter your current password under **Old password** and your new password under **New password**. You can't reuse any of your last 5 passwords.
 3. Confirm the new password by entering it again under **Re-enter new password**.
 4. Click **Update** to save your new password.
 
-![image](https://imgur.com/5bfm7cm.png)
+   ![image](https://imgur.com/5bfm7cm.png)
 
 
 :::note
-- The green check mark under **Password must contain** indicates the strength of your password. Use a combination of upper and lower case letters, numbers, and special characters to create a strong password.
-- When SSO is enforced, you cannot change your password. 
-- Your new password cannot be the same as one of the last 5 passwords.
-- Enforced password change frequency is 180 days, that is, you must change your password once in 6 months.
-
+- The green check mark under **Password must contain** indicates the strength of your password. To create a strong password, use a combination of upper and lower case letters, numbers, and special characters.
 :::
 
 ----
@@ -57,8 +55,7 @@ You can view all the options on the platform in the language of your choice by s
 
 
 :::note
-
-Currently only English, Japanese and Bahasa indonesia is supported. 
+Currently only English, Japanese and Bahasa indonesia is supported.
 :::
 
 -----
@@ -66,6 +63,7 @@ Currently only English, Japanese and Bahasa indonesia is supported.
 ## Manage your email preferences
 
 If you're receiving email alerts that you no longer wish to receive, you can easily unsubscribe to stop further notifications. Email preferences let you ensure you only receive communications that are relevant to you.
+
 To subscribe or stop receiving certain email alerts, follow these steps:
 
 1. In **My profile**, navigate to the **Email preferences** tab.
@@ -82,14 +80,11 @@ To subscribe or stop receiving certain email alerts, follow these steps:
 
 You can track all active sessions, including details such as the operating system and browser used, along with the date and time.
 
-For instance:
-* In cases where inbox agents handle customer queries, they can respond through either the mobile app or multiple signed-in devices. In such situations, there may be more than one active session running simultaneously. Here, you can monitor all your the active sessions. 
+For instance: In cases where inbox agents handle customer queries, they can respond through either the mobile app or multiple signed-in devices. In such situations, there may be more than one active session running simultaneously. Here, you can monitor all your the active sessions. 
 
-To see account activity:
+* To see account activity, click on your profile icon > **My profile** > **Sessions**.
 
-1. Click on your profile icon > **My profile** > **Sessions**.
-
-![image](https://imgur.com/1K3NrDa.png)
+   ![image](https://imgur.com/1K3NrDa.png)
   
 
 
@@ -109,10 +104,10 @@ To view an existing subscription:
 2. You can see the details of your subscription plan, organization name, billing address, and contact details.
 3. To see all the subscriptions you have access to, click the dropwdown next to your subscription name. 
 
-![image](https://imgur.com/3ToVdp9.png)
+   ![image](https://imgur.com/3ToVdp9.png)
 
 
-### Access your subscription ID
+### View your subscription ID
 
 You can obtain your subscription ID from the web link when you are on the subscriptions page or next to your subscription name.
 
@@ -127,12 +122,11 @@ In the screenshot below, you can see that the user has access to a total of 31 b
 ![image](https://imgur.com/8WmJq7N.png)
 
 
-### Invite users to access your subscription
+## Invite users to access your subscription
 
 Admins can invite users to access the bots under a particular subscription plan. An admin can invite a user to the entire subscription and not individual bots. The user will not have access to all the bots in the subscription until bot access is granted by the admin. This section is only available to owners of the subscription.
 
 <img src="https://i.imgur.com/FAQnNgG.png" alt="drawing" width="100%"/>
-
 
 
 
@@ -162,9 +156,5 @@ However, this is not applicable to Inbox agents who handle tickets to ensure the
 To logout manually, you can click **Logout** under the User account section.
 
 ![image](https://imgur.com/GFBERRz.png)
-
-
-
-
 
 
