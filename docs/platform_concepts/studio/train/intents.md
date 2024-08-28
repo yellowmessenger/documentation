@@ -53,9 +53,9 @@ To add intents and utterances, follow these steps:
 
 3. Enter the name of the intent and add the utterances. To add multiple utterances, click **Add another utterance**.
 
-   <img src="https://i.imgur.com/WjgI4nY.png" alt="drawing" width="70%"/>
+   <img src="https://i.imgur.com/DnVeWjt.png" alt="drawing" width="70%"/>
 
-4. Click **Add intent**.
+4. Click **Add**.
 
 * This will add the Intent and Utterances to trigger a particular flow or to identify the user goal.
 
