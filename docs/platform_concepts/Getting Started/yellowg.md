@@ -1,6 +1,6 @@
 ---
-title: Unleash the Power of our Gen AI Features
-sidebar_label: Gen AI features of Yellow.ai
+title: Unleash the Power of our AI Features
+sidebar_label: AI features of Yellow.ai
 tags: [what is yellowg, yellowg]
 ---
 
