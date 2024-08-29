@@ -65,7 +65,7 @@ When bot admins provide you with access to a bot, you can accept the invitation 
 
       ![image](https://imgur.com/uuQ5Msy.png)
 
-   B. You can also accept through the notification you received on the platform **Notifications** page.
+   B. You can also accept through the Invite **Notifications** received on the cloud platform.
 
       ![image](https://imgur.com/wuICRTZ.png)
       
