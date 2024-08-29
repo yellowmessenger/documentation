@@ -55,20 +55,20 @@ To share bot access with other users, follow these steps:
 
 
 ***
-
 ## Accept bot invites
 
-To accept or reject a bot access invitation, follow these steps:
+When bot admins provide you with access to a bot, you can accept the invitation as outlined below. Note that bot invites are specific to each environment; if you are given access to a Live or Production bot, you will not be able to access Staging bots.If you need access to other environments of the bot, your admin must provide access separately for each one.
 
-1. Log on to [Yellow.ai platform](https://cloud.yellow.ai) and click **Notifications** icon at the top right corner.
-2. If you have received a bot invite to your email address, you will see a notification. Click on the bell icon > Green tick.  
+1. To proceed with accepting the invite, you have **two** options available:
 
-   ![image](https://imgur.com/botXHm5.png) 
-  
-3. Click on the drop-down next to your bot name to view the list of bots you have access to.
+   A. If a bot admin has already provided access, you can accept the invitation received **via email**.
 
-    <img  src="https://i.imgur.com/Gg7cHBz.png"  width="40%"/>
+      ![image](https://imgur.com/uuQ5Msy.png)
 
+   B. You can also accept through the Invite **Notifications** received on the cloud platform.
+
+      ![image](https://imgur.com/wuICRTZ.png)
+      
 
 ----
 
