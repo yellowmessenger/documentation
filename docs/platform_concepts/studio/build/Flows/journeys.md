@@ -23,7 +23,7 @@ To create a flow, follow these steps:
       
 2. Go to **Automation** > **Build** > **Flow** > **Create flow**.
 
-    ![](https://imgur.com/E0wjus1.png)
+    ![](https://imgur.com/fK5pmO5.png)
     
 :::note
 If you have multiple bots created, choose the specific bot for which you intend to build the flow.
@@ -39,7 +39,7 @@ If you have multiple bots created, choose the specific bot for which you intend 
  * [Start from scratch](#manually-create-a-flow): This option allows you to manually create a flow using [key elements](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview#key-elements-to-build-a-flow) without relying on pre-built templates or automated tools.
  * [Create skill](#create-a-skill): This option allows you to create a flow to run concurrently in the background along with the main flow to perform specific tasks or action.
 
-### Automate flow creation using AI Copilot
+### Generate flow using AI Copilot
 
 Yellow.ai's AI Copilot simplifies flow creation using AI-powered automation, saving time by eliminating manual process. You can design any type of flow just by inputting your requirements in the form of plain text, and it generates the flow based on the provided instructions.
 
@@ -69,7 +69,7 @@ To generate flow using AI, follow these steps:
 
 1. Go to **Automation** > **Build** > **Flows** > **+ Create flow** > **Create with AI Copilot**.
 
-   ![](https://imgur.com/G4cAOko.png)
+   ![](https://imgur.com/iyZ3MIg.png)
 
 2. Define your flow using the available options: 
 
@@ -89,7 +89,7 @@ To generate flow using AI, follow these steps:
 
 1. Go to **Automation** > **Build** > **Flows** > **Create flow**.
 
-    ![](https://imgur.com/E0wjus1.png)
+    ![](https://imgur.com/fK5pmO5.png)
     
 2. Click **+ Use template**.
 
@@ -119,7 +119,7 @@ To generate flow using AI, follow these steps:
 
 1. Go to **Automation** > **Build** > **Flow** > **Create flow**.
 
-    ![](https://imgur.com/E0wjus1.png)
+    ![](https://imgur.com/fK5pmO5.png)
 
 2. To create a flow from scratch, click **+ Create flow**.
 
@@ -159,7 +159,7 @@ To create a skill, follow these steps:
 
 1. Go to **Automation** > **Build** > **Create flow** > **+ Create skill**.
 
-   <img src="https://imgur.com/tnu6zWG.png" alt="drawing" width="100%"/>
+   <img src="https://imgur.com/Y81KKrN.png" alt="drawing" width="100%"/>
 
 3. Enter the following fields:
 
