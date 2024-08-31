@@ -195,24 +195,42 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/getting-started'},
       collapsed: true,
       items: [
-      "platform_concepts/Getting Started/account-setup",
-      "platform_concepts/Getting Started/yellowg",
-      "platform_concepts/Getting Started/user-account-settings", 
-      "platform_concepts/Getting Started/createfirstbot",
-      "platform_concepts/Getting Started/publish-env",
+        {
+          type: "category",
+          label: "Signup & Onboarding",
+          collapsed: true,
+          items: [
+            "platform_concepts/Getting Started/account-setup",
+            "platform_concepts/Getting Started/yellowg",
+            "platform_concepts/Getting Started/platform-offerings",
+            "platform_concepts/Getting Started/keyboard-shortcuts",
+
+          ],
+        },
+        {
+          type: "category",
+          label: "Build your bot",
+          collapsed: true,
+          items: [
+            "platform_concepts/Getting Started/createfirstbot",
+            "platform_concepts/Getting Started/publish-env",
+            "platform_concepts/Getting Started/modify-bot-configuration",
+
+          ]
+        },
 
       {
         type: "category",
-        label: "Manage your bot users",
+        label: "User & account management",
         link: {type: 'doc', id: 'platform_concepts/Getting Started/add-bot-collaborators'},
         collapsed: true,
         items: [
+          "platform_concepts/Getting Started/user-account-settings", 
+          "platform_concepts/Getting Started/upgrade",  
           "platform_concepts/Getting Started/acl",
         ],
       },
 
-      "platform_concepts/Getting Started/upgrade",  
-      "platform_concepts/Getting Started/modify-bot-configuration",
 
       {
         type: "category",
@@ -226,8 +244,6 @@ module.exports = {
       }, 
 
       
-      "platform_concepts/Getting Started/keyboard-shortcuts",
-      "platform_concepts/Getting Started/platform-offerings",
 
       //add new get started docs here
 
