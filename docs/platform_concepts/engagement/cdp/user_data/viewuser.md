@@ -29,6 +29,18 @@ To customise the User 360 table data/columns:
 
 4. Click **Save**. This action will save your preference and reloads the table to display your new preference.
 
+### Make columns searchable
+
+You can select which columns in your User360 are searchable. Note that System properties are always searchable.
+
+To modify searchable columns:
+
+
+1. Navigate to the **Searchable properties**, section and select the properties you want to make searchable. System properties are searchable by default and cannot be deselected.
+2. Click **Save**.
+
+   ![](https://i.imgur.com/eSVzOP6.png)
+
 ## Filter users
 
 To see details of an existing user, follow these steps:

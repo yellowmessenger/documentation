@@ -108,8 +108,8 @@ Custom user properties refer to additional fields that you can create to capture
 For instance, you might want to store details such as the number of times they have visited your pricing page, their department, and their preferred product.
 
 :::note
-
-Once a property is created, you cannot change its data type or delete it.
+* The total limit for custom properties is now 300.
+* Once a property is created, you cannot change its data type or delete it.
 :::
 
 
