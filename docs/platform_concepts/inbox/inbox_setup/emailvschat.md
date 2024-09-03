@@ -15,7 +15,7 @@ Depending upon the business use case, Inbox can be configured to handle email ti
 
 ## Attachments supported in Inbox
 
-- The image extensions supported in Inbox are **jpeg, jpg, png, gif, and svg**. You can images multiple files in a chat, with a total size of up to 50 MB.
+- The image extensions supported in Inbox are **jpeg, jpg, png, gif, and svg**. You can upload multiple images in a chat, with a total size of up to 50 MB.
 - The file extensions supported in Inbox are **jpeg, jpg, png, gif, pdf, txt, doc, ppt, docx, pptx, xls, xlsx, csv, tsv, zip, json, mp4, mp3, 3gp, and mov**. You can upload multiple files in a chat, with a total size of up to 25 MB.
 
 

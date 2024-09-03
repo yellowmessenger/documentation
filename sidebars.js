@@ -30,7 +30,7 @@ module.exports = {
 
     "cookbooks/getting_started", 
     "cookbooks/migration-guide",
- 
+    "cookbooks/botregion",
   
 
 
@@ -115,7 +115,8 @@ module.exports = {
     "cookbooks/insights/botagentfedback",
     "cookbooks/insights/fixdataerrors",
     "cookbooks/insights/nativesqlquery",
-    "cookbooks/insights/insightsmetrics",
+    "cookbooks/insights/sessionmetrics",
+    "cookbooks/insights/sessiondata",
     "cookbooks/insights/schedulerawreports",
     "cookbooks/insights/toptriggeredintents",
 
@@ -179,6 +180,8 @@ module.exports = {
   ],
 }, 
 //end of integrations
+
+  "cookbooks/yellowaisupport",
 
   ], // user guides end here
 
