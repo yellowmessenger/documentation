@@ -1,6 +1,6 @@
 ---
-sidebar_label: User properties
-title: User properties
+sidebar_label: User properties & tables
+title: User properties and table customization
 ---
 
 ## User properties overview
@@ -16,10 +16,12 @@ This is enabled only for https://cloud.yellow.ai
 :::
 
 
+## Types of user data
+
 There are two types of user data that is supported in User 360:
 
 
-1. User properties
+1. User propertiess
 
    i. [System user properties](#system-user-properties): Default data that you can capture about your users.
 
@@ -35,13 +37,7 @@ There are two types of user data that is supported in User 360:
 
 
 
-
-
-
-***
-
-
-## System user properties
+### System user properties
 
 System properties are the default user properties that contain the essential data organizations need to capture from their users. If you need to capture additional information, you can [create custom user properties](#custom-user-properties).
 
@@ -66,6 +62,9 @@ The following are the available system user properties, you can see these in Use
 | smsOptin | boolean | Subscription status of the user to SMS. The value is `true` if a user has subscribed to your SMS, else it is `false` |
 | whatsAppOptin | boolean | WhatsApp subscription status of the user. This is `true` if a user has subscribed to your WhatsApp messages, else it is `false`. |
 | tags | list | List of groups associated to the user. You can add tags to users manually. |
+
+
+## Different user properties
 
 
 ### `UserId` as a property
@@ -152,6 +151,41 @@ Currently, you cannot modify or delete a custom property once created.
 :::
 
 
+## Customise User 360 table/columns
+
+You can organize user properties to better understand your data. You can also customize the table by choosing the fields you want to see and ordering them as you prefer. For instance, you can place user identifier on the first column.
+
+
+### Customize columns
+
+To customise the User 360 table data/columns:
+
+1. On the **User 360** page, click **User properties**.
+
+   ![](https://i.imgur.com/9Z8Cz69.png)
+
+2. In **Select properties** (left pane), select the properties that you want to see in the User 360 table.
+
+### Rearrange columns
+
+3. In **Arrange your properties** (right pane), drag a property to the required position.
+
+   <img src="https://i.imgur.com/Eyk5uce.gif" width="60%"/>
+
+4. Click **Save**. This action will save your preference and reloads the table to display your new preference.
+
+### Mark columns searchable
+
+You can select which columns in User360 are searchable. When you enable searchability for a column, you can filter by that property. This also applies when creating segments. Note that system properties are always searchable by default and cannot be deselected. 
+
+
+To modify searchable columns:
+
+
+1. Navigate to the **Searchable properties**, section and select the properties you want to make searchable. System properties are searchable by default and cannot be deselected.
+2. Click **Save**.
+
+   ![](https://i.imgur.com/eSVzOP6.png)
 
 
 
@@ -160,23 +194,3 @@ Currently, you cannot modify or delete a custom property once created.
 
 
 
-<!--
-
-## 3. Create personalised conversations with user properties
-
-If you’ve built a bot on yellow.ai, you can use the [Conversational Studio](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to create hyper-personalised conversations based on user properties.
-
-While these user properties are accessible in all the nodes of Studio, we’ll cover some of them with-in this document, to show you how you can create the right conversion for the right set of users.
-
-For more details, see [Using Builder to capture user data through conversations](/docs/platform_concepts/engagement/cdp/user_data/conv_in_builder).
-
-:::info
-All user properties are accessible in nodes under “User properties”.
-:::
-
-You can improve the engagement rates by creating personalised content. To do this, in your **Message Nodes**, you can can access user properties by clicking on the variable dropdown and selecting any **User Property**, or my simply accessing it using {{user.**propertyName**}}.
-
-
-<img src="https://i.imgur.com/UWscij0.png" alt="drawing" width="60%"/>
-
--->
