@@ -28,7 +28,7 @@ There are two types of user data that is supported in User 360:
    ii. [Custom user properties](#custom-user-properties): Custom data that you can capture about your users and send to the platform.
 
    :::note
-   You can have up to 120 user properties in User 360.
+   You can have up to 300 user properties in User 360.
    :::
 
 2. User Events: Track specific actions or activities performed by users within a system, application, or platform. For more details, see [User 360 events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#7-user-360-events-system-events) and [Custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#-8-custom-events)
@@ -174,6 +174,7 @@ To customise the User 360 table data/columns:
 
 4. Click **Save**. This action will save your preference and reloads the table to display your new preference.
 
+
 ### Mark columns searchable
 
 You can select which columns in User360 are searchable. When you enable searchability for a column, you can filter by that property. This also applies when creating segments. Note that system properties are always searchable by default and cannot be deselected. 
@@ -188,8 +189,9 @@ To modify searchable columns:
    ![](https://i.imgur.com/eSVzOP6.png)
 
 
+The column you marked as searchable will appear in the Filters for both users and segments.
 
-
+   ![](https://i.imgur.com/fgMrFMg.png)
 
 
 

@@ -47,3 +47,11 @@ You can now select which custom properties in User360 are searchable. This allow
 
 
 Explore the new custom property searchability options in your User360 instance. For more information, refer to the [User properties documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#mark-columns-searchable).
+
+
+## Increased User Properties Limit in User360
+
+
+Expanded User Property Limit: The maximum number of user properties allowed in User360 has been increased to 300. This provides greater flexibility for storing and analyzing user data.
+
+[Try it out](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties)
