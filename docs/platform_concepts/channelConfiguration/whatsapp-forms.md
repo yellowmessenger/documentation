@@ -59,5 +59,5 @@ To create a form, follow these steps:
 
 ### Connect form with WhatsApp chatbot 
 
-After creating and publishing the WhatsApp form, contact the [customer success team](customersuccess@yellow.ai) to connect the form with the WhatsApp chatbot.
+After creating and publishing the WhatsApp form, contact the [customer success team]((mailto:customersuccess@yellow.ai) to connect the form with the WhatsApp chatbot.
     
