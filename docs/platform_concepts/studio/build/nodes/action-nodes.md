@@ -75,34 +75,64 @@ This node is not available for Whatsapp
 
 ----
 
-### 1.4 Document search
+### 1.4 Knowledge search
 
-Answer user queries referring to the available documents from your knowledge base using this node. 
+Knowledge search node allows the bot to retrieve answers from a website or documents uploaded in the Knowledge Base (KB) module and provide accurate and relevant responses to user queries.
 
-<img src="https://i.imgur.com/cu1uk7M.png" alt="drawing" width="50%"/>
+Using the Knowledge search node offers the following benefits:
 
-
-Document Search action node is used to answer user query at any point in the flow (or fallback) from documents uploaded in the Knowledge base (This node shows results from configured [Document Cognition](https://docs.yellow.ai/docs/platform_concepts/studio/train/what-is-document-cognition)).
-
-
-![](https://i.imgur.com/plCzZin.png)
-
-- You can select a variable containing a search query
-- You can also choose to add metadata filters (optional) to your query (the filters you tagged your documents with will show in dropdown). 
-
-To add a meta data filter:
-
-1. Upload the [searchable documents](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#upload-documents-from-local-system) to KB along with [tags](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#additional-options-for-uploaded-documents).
-2. Under **Tag**, choose the tag you added in the previous step, in **Value** enter the value which should return the doc associated to the specific tag. Values can be added as text, steps or fetched from a bot variable or business profile.
-
-After adding the meta data filter, when a user types a query and it matches with the tags and values added in the previous steps, it will return the exact document to the user. 
+* **Access to up-to-date information**: The bot can retrieve data from the linked websites or uploaded documnets, to ensure that the information provided is correct and relevant.
+* **Efficient query handling**:  The bot can handle  contextual queries or specific user queries by searching through knowledge sources to resolve them.
 
 
-- You can branch flow from here based on whether any results were found in the documents (success) or not (failure).
-- There is no store output here, as the results are directly shown in carousels. 
-- In node settings, you can configure the total no. of results shown, the total number of results per document and messages shown while showing results/reporting failure. 
+#### Access Knowledge search node
 
-![](https://i.imgur.com/7qtaA9G.png)
+To access Knowledge search node, follow these steps:
+
+1. [Build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case and extend it to the point where you want to include the Knowledge Search node. 
+
+2. Navigate to **Actions** nodes and select **Knowledge Search**.
+
+   <img src="https://i.imgur.com/HXw2Uf1.png" alt="drawing" width="80%"/>
+
+* Here's a sample screenshot of the Knowledge Search node. You can customize its behavior using the configuration settings provided. For detailed information on each setting, please refer to the following sections.
+
+   <img src="https://i.imgur.com/AZgo793.png" alt="drawing" width="60%"/>
+       
+#### Knowledge search settings
+
+The Knowledge search node  additional configurations that allow users to tailor its behavior to specific use cases. Below are some key configurations and their purposes:
+
+##### Input configuration
+
+This setting allows you to adjust input criteria to override the default Knowledge base setting. The bot will use these input settings to process and return search results. It includes options such as:
+
+   <img src="https://i.imgur.com/AKnCBuw.png" alt="drawing" width="50%"/>
+
+   1. **Enable summarised results**: Enable this option for the bot to search and simplify the answer in a conversational manner.
+  2. **Site URL**: This field displays the default URL from the Knowledge Base (KB) section. You can modify this URL based on your needs, and the bot will generate search results using the provided URL.
+  3. **Search confidence**: This setting defines the confidence score (ranging from 0 to 1) that indicates how accurate the predicted search is. <br/>The default value is 0.5. It is recommended to keep this value between `0.4` and `0.7` to maintain balanced and accurate search results.
+  
+##### Knowledge filter
+
+The Knowledge filter allows you to refine search results based on tags created for uploaded documents. 
+
+   <img src="https://i.imgur.com/30e0TY1.png" alt="drawing" width="60%"/>
+
+To add a Knowledge filter:
+
+1. Upload the [searchable documents](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#upload-documents-from-local-system) to KB along with the relevant [tags](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#additional-options-for-uploaded-documents).
+2. Under **Tag** field, choose the tag you created.
+3. In **Value** field, enter the value that should return the document associated with the specific tag. Values are fetched from a bot variable. 
+4. Click **+ Add filter** to add the more tags if needed.
+
+##### Bot response configuration
+
+This setting controls how the bot's response is managed. By default, it is set to "Print response." You can also choose to "Save response in variable.<br/>
+   i. **Print response**: This option displays the response directly in text format.<br/>ii. **saveResponseInVariable**: This option stores the bot's response in a specified variable. You need to select the appropriate variable for storing the response.
+  <img src="https://i.imgur.com/jRszQcU.png" alt="drawing" width="60%"/>
+
+   
 
 -----
 
