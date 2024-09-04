@@ -11,13 +11,13 @@ You can easily add or manage user data and events in Yellow.ai through our APIs.
 
 Summary of User APIs:
 
-Goal | Endpoint | Method | Sample POST
+Goal | Endpoint | Method | Doc Link
 ---- | ------- | ---- | ----
-Create user | https://{host}cdp/api/v1/user?bot={botId} | POST | ``` {"firstName": "Awesome", "userId": "1"} ```
-Update user | 
+Create user | https://{host}/cdp/api/v1/user?bot={botId} | POST | [Add user API](https://docs.yellow.ai/api/add-user)
+Update user |  https://{host}/cdp/api/v1/user/{userId}?bot={{botId}} | PUT | [Update user API](https://docs.yellow.ai/api/update-user)
 Get user by userId | `https://{host}/cdp/api/v1/user/123456?properties=email,tags&bot={botId}&userId=true` | GET | curl --location 'https://cloud.yellow.ai/cdp/api/v1/user/123456?properties=email%2Ctags&bot=x1625041041238&userId=true' `
-Get Aal users | `https://{host}/cdp/api/v1/user?bot={botId}&offset=0&limit={}` | GET | -
-Delete user | `https://{host}/cdp/api/v1/user/{userId}?bot={botId}&offset={}&limit={}`| DELETE | -
+Get All users | `https://{host}/cdp/api/v1/user?bot={botId}&offset=0&limit={}` | GET | [Get user details API](https://docs.yellow.ai/api/get-user-details)
+Delete user | `https://{host}/cdp/api/v1/user/{userId}?bot={botId}&offset={}&limit={}`| DELETE | [Delete user API](https://docs.yellow.ai/api/delete-user)
  
 
 
