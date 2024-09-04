@@ -10,10 +10,10 @@ After logging in successfully, you can manage various aspects of your account se
 ## View profile information
 
 1. After logging in, click on your profile icon on the top right corner of the Overview page.
-![image](https://imgur.com/9F8vyuT)
+![image](https://imgur.com/9F8vyuT.png)
 
 2. Select **Profile** from the drop-down to view your profile information.
-![image](https://imgur.com/a/pdvjQyg)
+![image](https://imgur.com/hwkUPiW.png)
 
 :::note
 You cannot modify profile details (name and email) from the UI.

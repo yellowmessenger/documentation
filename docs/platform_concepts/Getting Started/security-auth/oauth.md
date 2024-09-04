@@ -13,7 +13,7 @@ Oauth is an authentication protocol which supports Single Sign-On (SSO) that str
 
 ### SSO workflow
 
-![image](https://hackmd.io/_uploads/BJF1aY5v6.png)
+![image](https://imgur.com/1ufEPQS.png)
 
 
 ### Basic terminologies

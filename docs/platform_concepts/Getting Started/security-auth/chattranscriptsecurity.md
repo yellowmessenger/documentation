@@ -20,11 +20,11 @@ Chat transcript visibility for different permissions:
 
 - **Users without Bot Access**: Users who do not have access to the bot can access the chat transcript links only by whitelisting their IP address.
 
-    ![](https://hackmd.io/_uploads/BJMISIB22.png)
+    ![](https://imgur.com/WwmmYyn.png)
 
 - **Users without bot access and without whitelisted IP addresses**: The chat transcript link will not be accessable.
 
-    ![](https://hackmd.io/_uploads/rJi5B8S2h.png)
+    ![](https://imgur.com/c6T900o.png)
 
 
 ---
