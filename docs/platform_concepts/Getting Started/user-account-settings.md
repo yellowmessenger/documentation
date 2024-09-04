@@ -60,21 +60,31 @@ Currently only English, Japanese and Bahasa indonesia is supported.
 
 -----
 
+
 ## Manage your email preferences
 
-If you're receiving email alerts that you no longer wish to receive, you can easily unsubscribe to stop further notifications. Email preferences let you ensure you only receive communications that are relevant to you.
+You can easily manage your email preferences and unsubscribe from notifications that are no longer relevant to you. With this, you can: 
+* **Enhanced user control**: You now have better control over your email communications, which improves your overall experience with our platform.
+* **Reduced email volume**: By managing your preferences, you can reduce the number of unnecessary emails you receive, leading to more targeted communication.
+* **Cost efficiency**: Sending fewer emails reduces operational costs, aligning with our ongoing efforts to optimize resources and reduce expenses.
 
-To subscribe or stop receiving certain email alerts, follow these steps:
+To customize your email notifications, follow these steps:
 
-1. In **My profile**, navigate to the **Email preferences** tab.
+1. Access Email Preferences: Navigate to **My profile** and click **Email preferences** tab.
 
-   ![](https://i.imgur.com/ZfS4i10.png)
+2. Select your subscriptions: Under **Subscribe email**, choose the bot for which you want to manage subscriptions (this step is only needed if you have multiple bot subscriptions).
+3. Configure Health Check or API Notifications:
+    - Enable Health check notifications to receive an email if your bot remains inactive for more than 30 minutes. The bot is monitored by pinging it every minute, and if it doesn’t respond within 30 minutes, you’ll be alerted. To stop receiving these alerts, simply uncheck the box.
+    - Enable API management to receive alerts if any APIs configured in Automation experience a failure rate of more than 5% over the last 7 days. Uncheck the box to stop receiving these notifications.
 
-2. In **Subscribe email**, choose the bot for which you want to manage your subscriptions. This step is not applicable if you have a single bot subscription.
-3. Select **Health check** to receive notifications about the bot's health status. To stop receiving Health check alerts, uncheck the checkbox.
-4. Select **API management** to receive alerts on all API-related updates or alerts. To stop receiving API-related alerts, uncheck the checkbox.
+![](https://hackmd.io/_uploads/rJOvQSS30.png)
 
-----
+![](https://hackmd.io/_uploads/S1JiQrr2A.png)
+
+**Sample email**: 
+![](https://hackmd.io/_uploads/SyF_ySShA.png)
+
+---------------
 
 ## View your account activity 
 
