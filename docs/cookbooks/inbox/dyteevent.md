@@ -1,6 +1,6 @@
 ---
 title: Dyte Event Integration in Cloud Web Bots
-sidebar_label : Dyet event in bots   
+sidebar_label : Dyte event in bots   
 ---
 
 
@@ -13,7 +13,7 @@ When the video call feature is enabled in the **Raise Ticket** node, the bot rec
 - **Video Call Feature**: The video call feature must be activated in the bot configuration.
 :::
 
-## Steps to use dyet event 
+## Steps to use dyte event 
 
 1. Navigate to **Automation > Flows**. Open the **Raise Ticket** node > **Advance settings**.   
 2. Select the options for **Voice Call** and **SIP Call**.
