@@ -10,7 +10,7 @@ sidebar_label: Build your first bot
 ## Step 1: Sign in to your account
 
 1. Open [Yellow.ai Cloud platform](https://cloud.yellow.ai/login) using your professional Gmail account. To sign up, refer to the detailed guide [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
-   ![Sign In](https://hackmd.io/_uploads/BkY1LXZE6.png)
+   ![Sign In](https://imgur.com/mmeN7ry.png)
 
 <!--
    ![Upgrade Account](https://hackmd.io/_uploads/rkEjHXZ4a.png)
@@ -83,7 +83,7 @@ To facilitate collaboration on your bot, you have the ability to invite other us
 **To invite users**, navigate to the **Bot settings > Access control** section from the overview page and invite users by entering their email IDs.
 You have the flexibility to invite multiple users and assign different levels of access to each. This ensures that users only have the permissions necessary for their role.
 
-![image](https://imgur.com/5d0hEBv)
+![image](https://imgur.com/5d0hEBv.png)
 
 **To view and accept incoming access requests**, open the **User request** tab and if you find a request appropriate, you can grant the required permissions.
 
@@ -146,7 +146,7 @@ Nodes are connected to each other, forming the conversational flow. This connect
 The bot's responses are driven by customer input. To enhance its understanding, the bot can be trained in the **Train** section. 
 
 
-![image](https://imgur.com/dL5StnG.png)
+![image](https://imgur.com/q8hwSWD.png)
 
 Transform your bot-building experience with Yellow.ai's **powerful AI features** mentioned below:
 
@@ -156,7 +156,7 @@ Transform your bot-building experience with Yellow.ai's **powerful AI features**
 Easily link your Knowledge Base (KB) to the bot, enabling it to access information and provide accurate answers.   
 Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview).
 
-![image](https://imgur.com/4flYdrZ.png)
+![image](https://imgur.com/uFh1Pmz.png)
 
 
 ### Automated flow generation

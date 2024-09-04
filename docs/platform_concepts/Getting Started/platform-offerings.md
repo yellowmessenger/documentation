@@ -77,7 +77,7 @@ Browse the **Marketplace** for pre-built bot templates and industry-specific rec
 
 Manage bot access by sharing it with team members and defining their roles and permissions. Only admins or super admins can manage access.
 
-![Access Control](https://imgur.com/4pq6egV.png)
+![Access Control](https://imgur.com/fcJqwMN.png)
 
 **[Learn about access control and permissions](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators)**
 
