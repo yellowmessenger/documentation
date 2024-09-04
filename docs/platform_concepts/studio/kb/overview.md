@@ -71,7 +71,7 @@ To create a bot for your website, follow these steps:
     > Configure this in Sandbox/Development environment. 
 
     :::info
-    You can set up the welcome [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) or [document search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) node to organize the conversation structure. 
+    You can set up the welcome [flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) or [document search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-knowledge-search) node to organize the conversation structure. 
     :::
 
 

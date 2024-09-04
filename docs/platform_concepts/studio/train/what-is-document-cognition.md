@@ -46,13 +46,13 @@ The document knowledge can be used in two different methods:
 
    ![](https://i.imgur.com/QN5XllL.png)
 
-2. **Node**: Doc can be used as a node in flows. [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search) - action node can be added in a flow and used as a searching tool for any user query.
+2. **Node**: Doc can be used as a node in flows. [Document Search](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-knowledge-search) - action node can be added in a flow and used as a searching tool for any user query.
     
     i. Open **Automation** > **Build** > **Flows**. 
 
     ii. Add a prompt node to recieve the response from the user(the data that needs to be searched in the doc). [Store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-and-retrieve-data-using-variables).
 
-    iii. Add a [Document Search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-document-search). Select Query value as the previously stored variable. 
+    iii. Add a [Document Search node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-knowledge-search). Select Query value as the previously stored variable. 
 
     iv. Metadata filters can be added when you only specific documents are required to be searched for the user query via tags.
 
