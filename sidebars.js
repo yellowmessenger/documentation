@@ -99,7 +99,7 @@ module.exports = {
     "cookbooks/inbox/notifycustomerofflinehandling",
     "cookbooks/inbox/videourl",
     "cookbooks/inbox/classifyspamemail",
-    "cookbooks/inbox/dyetevent",
+    "cookbooks/inbox/dyteevent",
   ],
 },    
 // end of inbox 
