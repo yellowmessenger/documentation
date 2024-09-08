@@ -22,7 +22,7 @@ To access topics page:
 
 ## Key metrics for topic analysis
 
-### **CR opportunity**
+### CR opportunity
 
 Contained resolution(CR) opportunity metric represents the total opportunity a topic has to improve your overall automated resolution rate. It is calculated as:
 
@@ -37,7 +37,7 @@ The star next to the **Conversation share** means that the Topic has knowledge b
 ![image](https://hackmd.io/_uploads/SyKXtKoPA.png)
 
 
-### **Conversation share**
+### Conversation share
 
 This metric shows the proportion of conversations involving a particular topic compared to all conversations:
 
@@ -50,7 +50,7 @@ For example, in the below screenshot, Out of 4021 conversations taken place in t
 
 
 
-### **CR rate**
+### CR rate
 
 The contained resolution(CR) rate indicates the percentage of conversations on a topic that were successfully resolved by the bot without human intervention:
 
@@ -58,7 +58,7 @@ The contained resolution(CR) rate indicates the percentage of conversations on a
 
 A higher CR Rate signifies better bot performance in resolving issues autonomously.
 
-### **Containment rate**
+### Containment rate
 
 This metric measures the percentage of conversations on a topic that were not escalated to a human agent:
 
@@ -66,12 +66,13 @@ This metric measures the percentage of conversations on a topic that were not es
 
 A higher containment rate indicates greater efficiency in handling the topic without needing human support.
 
-### **Sentiment**
+### Sentiment
 
 This metric assesses the sentiment of users during conversations about a specific topic. It shows the percentage of positive, negative and neutral conversations that have taken place while discussing about this topic. Understanding user sentiment helps in identifying areas where the bot's responses might need improvement to enhance customer satisfaction.
 
 For example, in the below screenshot, out of 144 conversations in this topic, 23 (15.9%) were positive and 100 (69.4%) were negative. 
 ![image](https://hackmd.io/_uploads/rJ3ttKoPC.png)
+
 
 ----------
 
@@ -85,7 +86,37 @@ By closely monitoring these metrics, you can gain actionable insights into your 
 - **Monitor sentiment**: Keep an eye on user sentiment for each topic. If users consistently express negative sentiments, it’s a signal that the bot’s handling of that topic needs improvement.
 - **Iterate and test**: Regularly update and test the bot’s responses based on the insights gained from topic analysis. Continuous iteration helps in gradually enhancing the bot’s performance and increasing the automated resolution rate.
 
+----------
 
+## Containment rate for 3rd party Inbox apps 
+
+> This feature is under development. 
+
+Containment rate refers to the number of conversations handled solely by the bot without agent intervention. There are two types of such chat transfers:
+
+1. **Active handover**
+    - In Yellow Inbox, chat is transferred to an agent with the event `agent-transfer`.
+2. **Passive handover**
+    - **Schedule callback**: Bot schedules a callback by collecting user details.
+    - **Email**: Bot creates an email ticket.
+    - **Ticket in 3rd Party System/Trigger Event**: Bot creates a support ticket in another system or triggers a custom event.
+
+
+### Current limitation 
+
+Yellow Inbox transfer are tracked with the `agent-transfer` event. But while using 3rd Party Inbox, the transfer depends on bot-level configuration but that **is not currently trackable**.
+
+### Suggested solution 
+
+With Bot Developer access, you can configure a **Third Party Handoff** node by entering the same data as in the **Raise Ticket** node at the end of the conversation flow. This node will serve as an identifier for agent transfers, that enables you to track containment rate.
+
+
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1C7Lt7VmhnqI8cMi4LqmW0UJS4Wl1aUQdHJf0hGec9BkV03FHJ00aSw5MF8HYNqQ4F649KthH7XwPDy5yto7vi93QS4fhS6TGueyhDfDslpgyWLzqVtkmcP7JjyvQe2rLf6ZoDrP8hHtMSm9tseDZy_g?key=doHOJQMEdYvKlVOmPCYX8w)**
+
+
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfD0roERslkkdSeDLJe1KdAihGAwck7BK1lAFS6e4kqJ13KgP5jWBcI2Fhf_XbJX3kYcafE1otwhzkSTIs1PtJBQxc38EXoExuGv6vgANRHKFEDcHXwBg-ttYRrJsiSqLontpJ7ZY7eLYndlDYrPpiv4q8?key=doHOJQMEdYvKlVOmPCYX8w)**
+
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsCC_H9djVb0DBv3R2mmRlu3MaPocs-mOtzxyBiTN61wnlFRsUSrFsGbJgir3VnEn7flwiTgzCjlkJ4K4JnC7IJ7CkJ--5dd5QH3KB2oGDDMjdr95mXAtaiEQrj2RupK6Lv3B2I_5tMuKE-zOzytyee-Q-?key=doHOJQMEdYvKlVOmPCYX8w)**
 
 
 
