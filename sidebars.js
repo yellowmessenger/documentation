@@ -31,6 +31,7 @@ module.exports = {
     "cookbooks/getting_started", 
     "cookbooks/migration-guide",
     "cookbooks/botregion",
+    "cookbooks/voicebottroubleshooting",
   
 
 
