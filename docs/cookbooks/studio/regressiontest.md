@@ -3,31 +3,34 @@ title: Intents, FAQs and Utterances automated testing
 sidebar_label : Intents and Utterances automated testing
 ---
 
-Instead of creating utterances manually, you can now auto-generate them and run test utterances in bulk. Before publishing, you can test these utterances to check whether each one is mapped to the respective intents.
+Instead of manually training and testing intents, utterances, and FAQs, you can auto-generate and test them in bulk. This automation allows you to quickly train the bot on all changes at once, saving time and reducing errors.
 
-## Test intents
+The platform will then run a prediction test and display results based on the confidence level. If the confidence level is low, the result will be displayed as a fail.
 
-You can upload all intents along with their associated utterances to your bot and test them collectively. With a single click, you can train the bot on all the changes at once. Based on the imported intents, the platform will then run a prediction test and display results based on the confidence level.
+This guide will walk you through the process of testing intents, FAQs, and utterances in bulk via import.
+
+### Test intents
+
+You can upload all intents along with their associated utterances to your bot and test them collectively. With a single click, you can train the bot on all the changes at once. Based on the imported entities, the platform will then run a prediction test and display results based on the confidence level.
 
 To test the intents, follow these steps:
 
-1. Go to **Automation** and click **Test**.
+1. Go to **Automation** > **Test**.
 
-  ![](https://imgur.com/BwtNMcD.png)  
+    ![](https://imgur.com/Bf7uPXz.png)
+    
     
 * You will see the following options. Choose your preferred options to test your bot:
   * [Import Intents](#import-intents)
   * [Upload Utterances](#upload-utterances)
 
-   ![](https://imgur.com/s6yX9cB.jpg)    
+  ![](https://i.imgur.com/ziqOwM2.png)    
     
 ### Import Intents
 
-To import the Intents, follow these steps:
-
 1. Click the highlighted option below to import the entities from the Train section.
 
-    ![](https://imgur.com/14DqxKd.png)
+    ![](https://i.imgur.com/ddDV8rS.png)
     
 2. Click **Sync and test intents** to test intents that are out of sync with the Train section.
 
@@ -89,17 +92,16 @@ To upload utterances, follow these steps:
 
     ![](https://i.imgur.com/9VQJtCi.png)
 
-2. Click the download icon to download the template.
+2. Click the **Download icon** to download the template.
 
     ![](https://i.imgur.com/veg5wz0.png)
     
 3. Fill in the template with the following details:
+    * **Utterance**: The utterance for your intent.
+    * **Journey**: The journey or flow associated with the utterances.
+    * **Tag**: Labels that help recognize or filter important journeys.
 
-* **Utterance**: The utterance for your intent.
-* **Journey**: The journey or flow associated with the utterances.
-* **Tag**: Labels that help recognize or filter important journeys.
-
-     ![](https://i.imgur.com/GPG0zVE.png)
+     ![](https://imgur.com/BwRkJVn.png)
      
 4. Click the **Upload file** button to upload your template.
 
@@ -107,14 +109,16 @@ To upload utterances, follow these steps:
 
 5. Download the report from the **Reports** section to check the status of the uploaded utterances.
 
-    ![](https://i.imgur.com/TN1SQ8h.png)
+    ![](https://imgur.com/mRR7Pu5.png)
 
 The report includes the following details:
+   * **Utterance**: The utterances that were uploaded.
+   * **Predicted Journey**: The journey to which the utterances were mapped.
+   * **Journey**: The journey specified in the uploaded template.
+   * **Status**: Indicates success or failure, based on the correct mapping of the utterance to the journey.
 
-* **Utterance**: The utterances that were uploaded.
-Predicted Journey: The journey to which the utterances were mapped.
-* **Journey**: The journey specified in the uploaded template.
-* **Status**: Indicates success or failure, based on the correct mapping of the utterance to the journey.
+
+  ![](https://imgur.com/MewGlsn.png)
 
 ## Test FAQs
 
@@ -170,12 +174,14 @@ To test FAQs, follow these steps:
      ![](https://i.imgur.com/wgkPmli.png)
 
 The downloaded report includes the following details:
+  * **Utterance** - Utterances generated for the intents.
+  * **Intent** - Intents that will be triggered by those utterances.
+  * **predictedIntent** - The intent that was triggered for that utterance.
+  * **predictedConfidence** - The percentage at which the respective intent gets triggered.
+  * **Result** - Outcome of the predictions -       **success** for successful predictions, **fail** for failed predictions.
 
-* **Utterance** - Utterances generated for the intents.
-* **Intent** - Intents that will be triggered by those utterances.
-* **predictedIntent** - The intent that was triggered for that utterance.
-* **predictedConfidence** - The percentage at which the respective intent gets triggered.
-* **Result** - Outcome of the predictions - **success** for successful predictions, **fail** for failed predictions.
+
+   ![](https://imgur.com/CgIklpw.png)
 
 ## Test KB
 
@@ -183,15 +189,17 @@ You can add a list of FAQs and upload it to generate answers based on the docume
 
 To upload KB FAQs, follow these steps:
 
-1. Go to **Automation** > **Knowledge base** > **+ Add URL**.
+1. Choose Sandbox/Development environment.
 
-    ![](https://imgur.com/K5Hhd6a.png.png)
-    
-2. Add the URL from where you want to fetch the answers and click **Save**.
+2. Go to **Knowledge base**.
 
-      <img src="https://i.imgur.com/FFo8PaR.png" alt="drawing" width="40%"/>
+   ![](https://imgur.com/1ceNXU5.png)
+
+3. Click **+ Add URL**. Add your website URL and click Save. 
+
+    ![image](https://imgur.com/aEP8jvo.png) 
       
-3. Go to **Automation** > **Test bot** > **Test KB**.
+4. Go to **Automation** > **Test** > **Test KB**.
 
     ![](https://imgur.com/Bpw9GX9.png)
 
@@ -218,11 +226,11 @@ To upload KB FAQs, follow these steps:
      ![](https://i.imgur.com/ngb8etC.png)
 
 The report includes the following details:
-
-* **Questions**: The questions that were uploaded.
-* **Answers**: The answers are generated for the uploaded questions.
-* **Links**: Gnerates the links from where the answers are fetched from the uploaded document.
-  ![](https://i.imgur.com/w7LtAMb.png)
+   * **Questions**: The questions that were uploaded.
+   * **Answers**: The answers are generated for the uploaded questions.
+   * **Links**: Gnerates the links from where the answers are fetched from the uploaded document.
+   
+   ![](https://imgur.com/PuWMvcR.png)    
     
     
 
