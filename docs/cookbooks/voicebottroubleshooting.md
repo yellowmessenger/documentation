@@ -191,7 +191,9 @@ By following the above steps, you can isolate specific log entries and errors th
 
     
 1. What should I do if the bot is not responding?
+
 Place a call and check the bot logs in the analysis tab and review logs for any errors.
 
 2. How can I improve voice recognition accuracy?
+
 Update utterances in the bot's intents and entities regularly.
