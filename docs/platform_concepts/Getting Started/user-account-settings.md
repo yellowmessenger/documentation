@@ -74,8 +74,8 @@ To customize your email notifications, follow these steps:
 
 2. Select your subscriptions: Under **Subscribe email**, choose the bot for which you want to manage subscriptions (this step is only needed if you have multiple bot subscriptions).
 3. Configure Health Check or API Notifications:
-    - Enable Health check notifications to receive an email if your bot remains inactive for more than 30 minutes. The bot is monitored by pinging it every minute, and if it doesn’t respond within 30 minutes, you’ll be alerted. To stop receiving these alerts, simply uncheck the box.
-    - Enable API management to receive alerts if any APIs configured in Automation experience a failure rate of more than 5% over the last 7 days. Uncheck the box to stop receiving these notifications.
+    - Enable **Health check** notifications to receive an email if your bot remains inactive for more than 30 minutes. The bot is monitored by pinging it every minute, and if it doesn’t respond within 30 minutes, you’ll be alerted. To stop receiving these alerts, simply uncheck the box.
+    - Enable **API management** to receive alerts if any APIs configured in Automation experience a failure rate of more than 5% over the last 7 days. Uncheck the box to stop receiving these notifications.
 
 ![](https://hackmd.io/_uploads/rJOvQSS30.png)
 
