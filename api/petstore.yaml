@@ -1231,3 +1231,57 @@ paths:
                   botId: "x16900024"
                   sender: "896762521951619"
 
+  /api/templates/all:
+    get:
+      summary: Get Outbound Templates
+      description: Retrieve all active Outbound templates associated with a specified bot ID. These templates can be used to trigger campaigns in Engage CRM.
+      operationId: getAllActiveTemplates
+      parameters:
+        - name: bot
+          in: query
+          required: true
+          description: The unique identifier of the bot whose templates are to be fetched.
+          schema:
+            type: string
+        - name: x-api-key
+          in: header
+          required: true
+          description: API key for authorization.
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Successful response containing the list of active templates.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  templates:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          description: The unique identifier of the template.
+                        name:
+                          type: string
+                          description: The name of the template.
+                        status:
+                          type: string
+                          description: The current status of the template.
+                        createdAt:
+                          type: string
+                          format: date-time
+                          description: The creation date of the template.
+                required:
+                  - templates
+        '400':
+          description: Bad Request. The request was invalid, possibly due to missing or incorrect parameters.
+        '401':
+          description: Unauthorized. The API key provided is missing or invalid.
+        '404':
+          description: Not Found. The specified bot ID does not exist.
+        '500':
+          description: Internal Server Error. An error occurred on the server side.
