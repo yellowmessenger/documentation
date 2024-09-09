@@ -100,7 +100,7 @@ Users did not receive a call, WhatsApp, or SMS notification.
 
 ### Steps to Troubleshoot
 
-1. Analyze the target Engage flow analytics (use flow ID from the URL: e.g., https://cloud.yellow.ai/bot/<botID>/engagement/flows/661cbd4c8c383c6621230a41/analytics).
+1. Analyze the target Engage flow analytics (use flow ID from the URL: e.g., https://cloud.yellow.ai/bot/botID/engagement/flows/661cbd4c8c383c6621230a41/analytics).
 2. Check the Notifications report for issues with CampaignID.
 
 **![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeiISEFQOoeC_jFJQRPlvQz1IHCLdocjvKtFvADeMtnGkS9DkASuStGWqBmtjYLwcoJmizgQJpmFVGl-5iCvlTlRHgutrA1EPkJ5ro6jXpvoc1ocLktVkfYpphC0XfwxR-ngejKoEUnwr6fKCZSPIiBRlAx?key=yM6pYcXy3m07B90GFb8mvA)**
