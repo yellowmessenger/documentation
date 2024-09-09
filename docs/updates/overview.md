@@ -55,3 +55,62 @@ Explore the new custom property searchability options in your User360 instance. 
 Expanded User Property Limit: The maximum number of user properties allowed in User360 has been increased to 300. This provides greater flexibility for storing and analyzing user data.
 
 [Try it out](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties)
+
+
+
+## Insights Enhancements
+
+### New Email Preference:
+
+   [Health and API Failure Alerts](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings#manage-your-email-preferences): You can now customize your email notifications by subscribing or unsubscribing to Health and API failure alerts directly from your Account > Email preference settings.
+
+### Topic Analysis for Enhanced Automated Resolution Rates
+Topic analysis is now available under the Analyze module to help improve automated resolution rates.
+
+Several new key metrics are now available for topic analysis to provide deeper insights into conversation performance.
+
+
+**Benefits**:
+
+Comprehensive Analysis: The expanded metrics provide a more complete picture of conversation performance and identify areas for improvement.
+Data-Driven Optimization: These metrics enable you to make data-driven decisions to enhance your bot's automated resolution rates and customer satisfaction.
+Targeted Improvements: By focusing on topics with high CR opportunity and low CR rates, you can prioritize your optimization efforts effectively.
+
+**Key Changes**:
+
+* **CR Opportunity**: This metric represents the total opportunity a topic has to improve your overall automated resolution rate.
+* **CR Share**: This metric shows the proportion of conversations involving a particular topic compared to all conversations.
+* **CR Rate**: This metric measures the percentage of conversations on a topic that were not escalated to a human agent.
+* **Sentiment**: This metric assesses the sentiment of users during conversations about a specific topic, showing the percentage of positive, negative, and neutral conversations.
+
+Explore [Topic analysis](https://docs.yellow.ai/docs/platform_concepts/analyze/topics)
+
+
+### Enhanced Custom Dashboards with Funnel Creation and Formula Creation
+
+
+Expanded Custom Dashboard Features: Custom dashboards (reports) now include additional functionalities: funnel creation and formula creation for count visualizations.
+
+
+**Key Changes**:
+
+* Funnel Creation: Users can easily create funnels within their custom dashboards to visualize the progression of data through different stages.
+* Formula Creation: Users can create custom formulas to calculate and display derived metrics, providing more flexibility in data analysis.
+
+Explore the new funnel creation and formula creation options in the [custom dashboard builder](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/editcountdashboards).
+
+
+
+### Custom Alerts for Saved Reports and Dashboards
+
+You can now set up custom alerts within Insights > Data Explorer > +Create Report or Insights > Data Explorer to receive notifications based on specific conditions defined in saved reports and dashboards.
+
+**Key Changes**:
+
+* Proactive Monitoring: Custom alerts allow users to proactively monitor data trends and anomalies.
+* Triggered Notifications: Users can receive notifications via email or other channels when specified conditions are met.
+* Customized Alerts: Alerts can be tailored to specific data points and thresholds, ensuring that users receive relevant notifications.
+
+[Explore the custom alert](https://docs.yellow.ai/docs/platform_concepts/growth/customalerts)
+
+
