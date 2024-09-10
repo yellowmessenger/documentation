@@ -96,6 +96,8 @@ Containment rate refers to the number of conversations handled solely by the bot
 
 1. **Active handover**
     - In Yellow Inbox, chat is transferred to an agent with the event `agent-transfer`.
+    - 3rd Party Inbox: Bot is paused, and chat is handed over to an agent with the event configured at the bot-level.  
+
 2. **Passive handover**
     - **Schedule callback**: Bot schedules a callback by collecting user details.
     - **Email**: Bot creates an email ticket.
