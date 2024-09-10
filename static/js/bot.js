@@ -43,7 +43,8 @@
 
 // New code to deploy MIA bot (created by the support team)
 
-    window.ymConfig = {"bot":"x1694470797745","host":"https://r4.cloud.yellow.ai"};
+
+      window.ymConfig = {"bot":"x1694470797745","host":"https://r4.cloud.yellow.ai"};
     (function() {
         var w = window,
             ic = w.YellowMessenger;
@@ -63,6 +64,8 @@
                 i.q.push(e)
             }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
     })();
+    
+
 
 /* 
 window.ymConfig = {
