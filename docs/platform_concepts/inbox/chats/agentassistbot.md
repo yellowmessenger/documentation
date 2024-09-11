@@ -1,6 +1,6 @@
 ---
-title: Assist bot in the chat screen 
-sidebar_label: Assist bot
+title: Agent assist bot in the chat screen 
+sidebar_label: Agent assist bot
 ---
 
 :::note
@@ -8,7 +8,7 @@ This feature is currently in beta, and customers interested in using it must con
 :::
 
 
-## Introduction to assist bot
+## Introduction to agent assist bot
 
 Support agents often find themselves repeatedly performing actions such as retrieving or updating customer information in external tools like CRM systems. Additionally, agents often need to execute tasks on behalf of customers, like canceling orders or initiating service requests, which often involve navigating through multiple tools or tabs.
 
@@ -21,7 +21,7 @@ By implementing this solution, agents would no longer need to perform these manu
 Agent assist bot helps agents efficiently complete their tasks directly within the inbox. This not only streamlines their work but also allows them to concentrate on addressing high-priority customer issues, ultimately enhancing overall support efficiency.
 
 
-### Use cases of assist bot
+### Use cases of agent assist bot
 
 1. **Customer service**: Assist bots help address customer inquiries, troubleshoot issues, track orders, and handle returns/refunds, improving customer satisfaction.
 2. **Sales and lead generation**: Bots assist in recommending products, qualifying leads, and scheduling sales appointments, enhancing sales and lead conversion.
@@ -40,7 +40,7 @@ Agent assist bot helps agents efficiently complete their tasks directly within t
 
 ------
 
-## Steps to use the assist bot 
+## Steps to use the agent assist bot 
 
 
 ### Configure assist bot in Automation
@@ -152,7 +152,7 @@ To use the payload details within flows, follow these steps:
 
 ----
 
-### Use the Assist bot within the inbox chat screen 
+### Use the agent assist bot within the inbox chat screen 
 
 > Inbox agents and inbox admins have access to the assist bot within the chat screen.
 
