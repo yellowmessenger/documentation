@@ -1,228 +1,218 @@
 ---
-title: Build your bot in 5 minutes
-sidebar_label: Build your first bot
+title: Launch Your Bot in Minutes
+sidebar_label : Build your first bot
 ---
+
+
 
 :::note
 [Upgrade](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#steps-to-upgrade-your-freemium-plan) your account to unlock all the features offered by Yellow.ai.
 :::
 
-## Step 1: Sign in to your account
+## Step 1: Sign in to Your Account
 
-1. Open [Yellow.ai Cloud platform](https://cloud.yellow.ai/login) using your professional Gmail account. To sign up, refer to the detailed guide [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
-   ![Sign In](https://imgur.com/mmeN7ry.png)
+Open the Yellow.ai Cloud Platform and log in to the platform using your preferred option:
 
-<!--
-   ![Upgrade Account](https://hackmd.io/_uploads/rkEjHXZ4a.png)
--->
+- **Sign in with Google**:  
 
------
+  Use this option if your organization is integrated with Google for Single Sign-On (SSO). It allows for a quick and secure login using your Google account.
+  
+  ![image](https://imgur.com/fHbiGIn.png)
 
-## Step 2: Create a bot
+- **Sign in with OAuth**:  
+  Choose this method if your organization has set up OAuth for authentication with Yellow.ai. It provides a secure way to log in through your organization's OAuth provider.
+  
+  ![image](https://imgur.com/k5Oj3bj.png)
 
-:::info
-Following the **sign-up process**, an automated bot will be generated for you. 
-To continue customization, you can skip this step and refer to **Step 3**. 
-:::
+- **Manual Sign-in**:  
 
-
-Create a new bot by following these steps: 
-
-1. Navigate to **Overview**. Click on your bot name > **+Create bot**. 
-![image](https://imgur.com/VCDL4YO.png)
-
-2. Building options for your bot include selection from **pre-defined templates (marketplace), creation from scratch**, and the option to develop an **orchestrator bot**. Each option is explained in subsequent sections. 
-![image](https://imgur.com/ckFcQ4M.png)
-
-
-### Import a bot from pre-defined templates
-
-An extensive array of predefined templates are tailored for various business scenarios. You can create a fully functional chatbot by selecting templates closely aligned with your use case. For example, if you need a bot to assist customers with checking their loan status and applying for a loan, simply use the keyword *Banking* to find relevant templates.
-
-1. **Search**: Enter keywords related to your use case, e.g., *banking*.
-2. **Preview**: Choose a template/flow and **preview** to ensure it aligns with your expectations.
-3. **Create**: Click **Create**, select a subscription and confirm the creation of this bot.
-
-<img src="https://i.imgur.com/WUyJg7x.png" alt="drawing" width="100%"/>       
-
-
-
-[**Learn how to use marketplace templates :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro#2-view--import-template)
-
-### Create a bot from scratch
-
-Craft a bot from the ground up to align precisely with your unique business requirements. Click **Create bot from scratch**, enter your details and confirm the creation of this bot.
-
-<img src="https://i.imgur.com/GSMvl22.png" alt="drawing" width="100%"/>
+  If you registered by setting up a username and password manually, you can log in by entering those credentials directly.
+  
+   ![image](https://imgur.com/2JzJm9v.png)
 
 :::note
-Check **Add live chat support to your bot** to automatically import the flow to use our in-house omin channel customer support platform, **Inbox**.
-:::
+If you do not have an account, sign up using the instructions provided [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
+::: 
 
-By default, your bot is created with essential flows: Welcome, fallback for unidentified customer questions, multilingual support, and customer-agent chat. You can customize these [flows](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings) and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot.
+## Step 2: Create or Access Your Bot
 
-![image](https://imgur.com/HmxZuBA.png)
+This guide will walk you through the process of creating a chatbot on the Yellow.ai platform. The process differs slightly depending on whether you are a **Super Admin** (who originally creates the bot) or a **Contributor** (who accesses the bot after it has been created).
 
-[**Learn how to use Automation module in detail :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+### Creating a Bot (For Super Admin)
 
+1. Go to the **Overview** page.
 
-### Create an orchestrator(parent) bot
+2. Click on the bot drop-down menu.
 
-The Orchestrator simplifies control and oversight of multiple bots, offering modularity for independent development and one-time setup automation for inter-linkages. Click **+ Create bot > +Create orchestrator**, enter your details and confirm the creation of this bot.
+3. Select **+ Create bot**.
+ 
+   ![image](https://imgur.com/7wsgKrr.png)
 
-<img src="https://imgur.com/DC9aROC.png" alt="drawing" width="40%"/>
+In the **Create bot** window, provide the following details:
+   - **Bot subscription**: Select the subscription under which you want to create your bot.
+   - **Bot type**: Choose whether your bot is chat-based (Chat bot) or voice-based (Voice bot).
+   - **Bot name**: Enter a unique name for your bot.
+   - **Choose avatar**: Select an animated avatar to represent your bot.
+   - **Industry**: Specify the industry to which your bot belongs.
+   - **Region**: Choose the region your bot will operate in.
+   - **Add live chat support to your bot (optional)**: Enable this to provide users with live agent support.
 
-[**Learn more about Orchestrator for bots :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/build/orchestrator)
+   <img src="https://imgur.com/nwpj6H3.png" alt="drawing" width="40%"/>
 
-----
+Once you have filled in all the details, click **Create bot**. You will be redirected to the **Overview** page, where you can further configure your bot according to your requirements.
 
-## Step 3: Invite other bot collaborators 
+   ![image](https://imgur.com/4K6MYXE.png)
 
-To facilitate collaboration on your bot, you have the ability to invite other users and manage their permissions. 
+### Requesting Access for Your Org’s Bot (For non-super admin)
 
-**To invite users**, navigate to the **Bot settings > Access control** section from the overview page and invite users by entering their email IDs.
-You have the flexibility to invite multiple users and assign different levels of access to each. This ensures that users only have the permissions necessary for their role.
-
-![image](https://imgur.com/5d0hEBv.png)
-
-**To view and accept incoming access requests**, open the **User request** tab and if you find a request appropriate, you can grant the required permissions.
-
-![image](https://imgur.com/Z6qtWqp.gif)
-
-[**Learn how to send/accept/view/monitor bot access :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators)
-
-
-:::info
-
-**Bot ID**:             
-
-
-To obtain the bot ID, you can click on the web link from any page of the bot after creating it and copy the 14-digit alphanumeric value (e.g., x16763649******).        
-The bot ID is different in each environment.
-
-![image](https://imgur.com/9vCnQxr.png)
-
-:::
+For other org users, when you log in, you'll see a list of bots that have been created. You can:
+  - Request access to a bot, or
+  - Navigate to **Profile settings > My Invites** page and click on the respective **Request access** button.
+ ![image](https://imgur.com/8BueeA5.png)
 
 
-----
+### Accepting Access for Your Org’s Bot (For Non-Super Admin)
+You can accept the invite using either of the two ways:
 
-## Step 4: Build and customize in Automation 
+1. If a bot admin has already provided access, you can accept the invitation received via email.
+
+   <img src="https://imgur.com/DgNaTrv.png" alt="drawing" width="80%"/>
+
+2. You can also accept through the notification you received on the platform's **Notifications** page.
+
+   ![image](https://imgur.com/g3kXoAa.png)
+
+## Accessing Existing Bot (For other users)
+
+If you're a **Contributor** or a user with access rights (but not the original creator), your process of interacting with bots is different:
+
+### Accessing the bot
+
+1. Navigate to **Profile settings > My Invites**. Instead of creating a new bot, you will see a list of bots that your admin/team has already created.
+
+2. Click on the respective **Request Access** button to request access to the bot.
+
+   ![image](https://imgur.com/HtDLuBS.png)
 
 :::note
-Bots can be built in Development/Sandbox/Staging mode and published to Live/Production. Learn more about these enviornment [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+Only **Super Admin** can create a new bot. Other users can request access to a bot and may have Admin roles, but they do not have the privilege to create a bot.
 :::
 
 
-**Visualize the interation**:
+## Build your bot conversation flow
 
-Bot-Customer interaction represents the ongoing dialogue between the bot and the customer.
+After [creating your bot](#step-2-create-or-access-your-bot), you can begin building its flow to manage how it interacts with users. Flow creation includes the following steps:
 
-<img src="https://imgur.com/9gZkOOP.png" alt="drawing" width="40%"/>
+* [Setup flow triggers](#setup-flow-triggers)
+* [Create bot flows](#create-bot-flows)
+* [Preview and test the bot](#preview-and-test-the-bot)
+* [Publish the bot](#publish-the-bot)
+
+## Setup flow triggers
+
+Before building a flow, you need to create Intents and Utterances and train the bot to recognize them. This setup ensures that the bot can trigger the correct flows and respond appropriately.
+
+### Create Intent and Utterances:
+
+An Intent is what the user wants to achieve, like "booking a ticket".
+
+Utterances are the different ways a user might express that intent. For example, "I need to reserve a ticket", "Book a flight ticket for me", and "I want to book a ticket". For more detailed information on how to create Intents and Utterances, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-uttrances).
+
+#### Prerequisite
+
+Consider the following when creating Intents and Utterances:
+
+* **Environment**: You should add intents or utterances only in a low-tier environment like **Sandbox** or **Development**.
+
+**Intent naming best practices**:
+  * Minimum number of characters for an intent name: 10 
+  * Minimum number of words: 10 (and unique)
+  * Special characters or numbers: Not allowed
+  * Duplicate intent names: Not allowed
+
+    ![](https://i.imgur.com/s0oiSIS.gif)
+
+### Add auto-generated utterances
+
+The platform can auto-generate utterances that are based on the intent you added. This helps the bot understand and respond to the different ways users might phrase the same request. For more details, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-auto-generated-utterances).
+
+   ![](https://i.imgur.com/kApxpNm.gif)
+
+### Train Intent and Utterances
+
+You need to train your bot after adding intents and utterances. If the bot is not trained with the intent, it will not understand user queries and display a [fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#fallback-flow) response. For multiple languages, you need to train the intents and utterances in multilingual and not Sentence encoder. For more detailed information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#train-your-bot-with-intents-and-utterances).
+
+   ![](https://imgur.com/Q4cGSMp.gif)
+
+### Verify intent confidence
+
+For a bot to accurately trigger the desired flow, you need to verify the confidence level of the added intent. This involves checking whether the intent's confidence score aligns with the user's input, ensuring the correct flow is initiated. The expected minimum confidence score is `0.85`. For more detailed information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#test-your-intents).
+
+   ![](https://imgur.com/FUtdOwX.gif)
+    
+   
+## Create bot flows
+
+Once you have created Intents and Utterances, you can start building your bot's conversational flow. This involves connecting different nodes that represent the steps of the conversation. There are several ways to create a flow:
+  * Create with AI Copilot
+  * Create from template
+  * Start from scratch
+
+  ![create flow](https://imgur.com/6rfrsTD.png) 
+  
+:::note
+* You can add up to 150 nodes in a flow.
+* There is no limit to create the number of flows in a bot.
+:::
+
+### Start node
+
+The start node is an entry point for a bot to begin a conversation with the user. You can define a trigger point for a flow by selecting Intents, Entities, Event, or Page URL. Multiple trigger types can be added for a single flow. For detailed instructions, see [how to configure each trigger type](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow).
+
+   ![](https://imgur.com/zuP3R7W.gif)
+
+### Connecting nodes
+
+In the flow, each node represents a step. Start by clicking the starting point and connecting the appropriate nodes based on your use case.
+
+   ![](https://imgur.com/RRf8EmL.gif)
+   
+## Preview and test the bot
+
+After creating the flow, you can preview and test how the bot will appear, function, and interact with users.
+
+  ![](https://imgur.com/wbjAKle.gif)
+
+## Publish the bot
+
+After testing the flow, you can [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) the bot to make it accessible to end users.
+
+When you are publishing the changes from Sandbox to Staging, you do not need approver permission to approve it. But when you are publishing from Staging to Production, you need approver's permission. Only the super admin of the bot can approve the publish request.
+
+   ![](https://imgur.com/AXemOsX.gif)
+
+### Cancel publish request
+
+If you wish to make changes to the current flow or bot, or if you have raised a publish request by mistake, you can cancel the publish request.
+
+   ![](https://imgur.com/ev4e2p6.gif)
+   
+   
+   
 
 
-**Create Flows to display bot messages and understand customer input**:
-
-To guide the bot's responses, you create predefined pathways known as **Flows**.
-
-In the Build section, you can construct these flows, defining the automated sequence of actions the bot takes. This is based on the questions and responses from users.
-
-![image](https://imgur.com/BH1YBs6.png)
 
 
-**Build conversations using nodes**:
-
-Nodes are essential elements in these flows, representing specific points in the conversation. Each node is a juncture where the bot can perform an action or respond to user input.
-
-**Connecting Nodes**:
-
-Nodes are connected to each other, forming the conversational flow. This connection occurs by linking the end of one node to the beginning of another.
-
-![image](https://imgur.com/EIt0gea.gif)
 
 
-**Bot response and training**:
-
-The bot's responses are driven by customer input. To enhance its understanding, the bot can be trained in the **Train** section. 
 
 
-![image](https://imgur.com/q8hwSWD.png)
-
-Transform your bot-building experience with Yellow.ai's **powerful AI features** mentioned below:
 
 
-### AI-powered knowledge base integration
-
-Easily link your Knowledge Base (KB) to the bot, enabling it to access information and provide accurate answers.   
-Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview).
-
-![image](https://imgur.com/uFh1Pmz.png)
 
 
-### Automated flow generation
-
-Generates bot flows effortlessly tailored to your specific use cases, using AI Co-pilot. Save time and resources with smart, automated bot creation.  
-Explore [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#automate-flow-creation-using-ai-copilot). 
-
-![image](https://imgur.com/PDRMNBQ.png)
 
 
-### AI based Dynamic chat node
-
-Enhance your bot's conversational capabilities using the Dynamic chat node within flows. This allows for dynamic and context-aware interactions.  
-
-Discover [Dynamic chat node](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode).
-
-![](https://i.imgur.com/HFHBq0c.png)
-
----
-
-## Step 5: Publish/Deploy your bot online 
-
-After adding all the components (flows, database, NLU training, APIs, etc.), follow these steps:
-
-1. Test your bot on the right pane by selecting the required channel. Learn how to debug [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow).
-2. Publish the bot to Live or Production mode. Learn how [here](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes). A request is sent to the bot admins over email for approval.
-![image](https://imgur.com/xhpWu4A.png)
-3. Super admins or Approvers can approve the publish request.
-4. Add the bot as a chat widget to your desired platform. [Guide here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chrome-extension)
-![image](https://imgur.com/CbM7KGf.png)
 
 
-Your initial bot has been developed and deployed. You can enhance its capabilities by exploring additional modules and incorporating features to streamline interactions between the bot and customers.
-- Integrate third-party tools ([Channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) and [Integrations](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview)).
-- Leverage the Customer Data Platform [User360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview) for customer data, e.g., lead generation.
-- Run inbound and outbound marketing campaigns via. [Engage](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).
-- Integrate tech support and a knowledge base into your website through [Inbox](https://docs.yellow.ai/docs/platform_concepts/inbox).
 
------
-
-## Step 6: Monitor your bot performance
-
-Bot insights are automatically tracked. You can also customize the tracked data through Insights module.
-
-![image](https://imgur.com/lh1iAMz.png)
-
-<!--
-
-## Step 6: Explore Add-ons
-
-1. **Add Channels and Integrations:** Integrate third-party tools seamlessly to support your bot's use case.  
-2. **Use User360:** Leverage the Customer Data Platform (CDP) for customer data, e.g., lead generation.
-   ![User360](https://hackmd.io/_uploads/rykehQZVT.png)
-3. **Engage:** Run inbound and outbound marketing campaigns.
-   ![Engage](https://hackmd.io/_uploads/rJ4Xh7-V6.png)
-4. **Inbox:** Integrate seamless tech support and a knowledge base into your website.
-   ![Inbox](https://hackmd.io/_uploads/BkqBhQWEp.png)
-
--->
-
-----
-
-**What's next?**
-
-- Dive into [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) and [functions](https://docs.yellow.ai/docs/platform_concepts/studio/build/code).
-- Integrate various [channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).
-- Create flows using [tables](https://docs.yellow.ai/docs/platform_concepts/studio/database).
-- Analyze performance through [analytics](https://docs.yellow.ai/docs/platform_concepts/growth/introductiontoinsights).
-- Design a [voice bot](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/vbintro).
