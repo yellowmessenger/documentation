@@ -109,6 +109,9 @@ Enable **Disable action after click** and click **Save**.
 
 ![](https://i.imgur.com/0jQjuQp.png)
 
+:::note
+This setting will not apply to RingCentral.
+:::
 ---
 
 ## 5. Video 

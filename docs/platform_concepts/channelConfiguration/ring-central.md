@@ -297,7 +297,8 @@ After connecting your IVA Professional account with RingCX, you need to design t
 
 **Tip:**
 
-You can also [create an intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances) for the RingCX account and [assign this intent as a trigger for this flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent) in the Start node. Whenever a user types the intent or utterance associated to this intent, the bot will automatically trigger this particular flow.
+* You can also [create an intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances) for the RingCX account and [assign this intent as a trigger for this flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent) in the Start node. Whenever a user types the intent or utterance associated to this intent, the bot will automatically trigger this particular flow.
+* Settings in the **Channel options** do not apply to the RingChannel widget.
 :::
 
 3. In the **Dynamic chat node**, [type the prompt](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#write-your-own-prompts) based on which the bot should function. You can also [use AI to generate these prompts](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#generate-prompts-with-ai-prompt-generator). There are several other options using which you can optimize the conversation. Refer to this [doc](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode) to know everything about the Dynamic chat node.
