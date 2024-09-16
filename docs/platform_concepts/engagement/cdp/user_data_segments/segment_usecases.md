@@ -11,23 +11,6 @@ You may frequently need to target users on specific dates or after a certain num
 
 
 
-### Drip campaign
-
-#### Usecase
-- Reaching out to employees who have completed seven days since date of joining.
-- Reaching out to users who signed up seven days ago.
-
-These segments target users within a specific timeframe relative to a particular date.
-
-
-   <center><img src="https://i.imgur.com/rK1T5sd.png" width="70%"/></center>
-
-To create this type of segment, you can use properties that are of the Date or Date-time data type. The available operators for selection are:
-
-- is was exactly
-- will be exactly
-- in the last
-- in the next
 
 ### Birthday greetings
 
@@ -35,15 +18,14 @@ To create this type of segment, you can use properties that are of the Date or D
 
 - Sending out birthday greetings
 
-<center><img src="https://i.imgur.com/WBlOVFR.png" width="70%"/></center>
+<center><img src="https://i.imgur.com/tZBv3uK.png" width="80%"/></center>
 
-This segment is applicable only for properties of the Date type. When setting up the segment for a campaign that runs on June 10, 2022, the following considerations apply:
+This segment is applicable only for properties of the Date type. When setting up the segment for a campaign that runs on the current day:
 
 * Current Day: The segment will include users whose date matches the day when the segment is calculated, in this case, the 10th of any month.
-* Current Month: The segment will include users whose date matches the month when the segment is calculated, in this case, June.
-* Any Year: The segment will disregard the year, meaning all users with a date of June 10 (regardless of the year) will be targeted. 
 
-Therefore, this segment will target all users with a date of June 10, irrespective of the year.
+Therefore, this segment will target all users whose birthday is on the current day, on a specific date-month, or before/after a specific number of days as per the configured setting.
+
 
 
  ### Schedule recurring campaign based on User 360 Table updates
