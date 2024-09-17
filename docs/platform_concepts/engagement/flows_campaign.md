@@ -14,6 +14,10 @@ The campaign flow builder consists of five categories of nodes:
 * Message 
 * Action
 
+:::note
+You cannot edit an ongoing Flow campaign directly. You can only pause the current campaign and create a new one from scratch if you want to target a different set of users or segments. Additionally, users who are already in the campaign cannot be removed or stopped.
+:::
+
 To create a flow, follow these steps:
 
 1. On the left navigation bar, go to **Engage** > **Flows**.
@@ -92,7 +96,7 @@ After entering segment, campaign triggers | Once a user enters the segment, choo
 **Target audience** | *Select one or more segments* to make the campaign applicable to users in specific segments. Select your preferred segments in the Select segments box.<br/>[OR]<br/>Select *All users* to make the campaign applicable to all users.
 
 :::note
-Segments created using the date, time, or date-time data types refresh only at midnight. For example, if you set up a campaign to trigger every 5 minutes or every hour, the segment's user list won't receive real-time updates. The user list will be refreshed at midnight.
+* Segments created using the date, time, or date-time data types refresh only at midnight. For example, if you set up a campaign to trigger every 5 minutes or every hour, the segment's user list won't receive real-time updates. The user list will be refreshed at midnight.
 :::
 
 

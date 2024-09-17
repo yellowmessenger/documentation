@@ -12,20 +12,8 @@ You may frequently need to target users on specific dates or after a certain num
 
 
 
-### Birthday greetings
 
-#### Usecase
-
-- Sending out birthday greetings
-
-<center><img src="https://i.imgur.com/tZBv3uK.png" width="80%"/></center>
-
-This segment is applicable only for properties of the Date type. When setting up the segment for a campaign that runs on the current day:
-
-* Current Day: The segment will include users whose date matches the day when the segment is calculated, in this case, the 10th of any month.
-
-Therefore, this segment will target all users whose birthday is on the current day, on a specific date-month, or before/after a specific number of days as per the configured setting.
-
+### Usecase
 
 
  ### Schedule recurring campaign based on User 360 Table updates
