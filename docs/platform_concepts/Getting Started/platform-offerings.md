@@ -33,7 +33,7 @@ Watch our quick tour video on [YouTube](https://www.youtube.com/channel/UCagDUPs
 
 The Left Navigation bar allows you to switch between various modules, such as bot Studio builder, Inbox, Insights, Analyze, Settings, Extentions and so on.
 
-![Left Navigation Bar](https://imgur.com/N306af1.png)
+![Left Navigation Bar](https://imgur.com/NuzLLyG.png)
 
 ## Bot and subscription search
 
@@ -47,13 +47,13 @@ Search for bots using the subscription ID, subscription name, bot name, or bot I
 
 Use the Platform Search feature to quickly find relevant information and concepts within the documentation.
 
-![Platform Search](https://imgur.com/Zr1xDvQ.png)
+![Platform Search](https://imgur.com/LABjDLA.png)
 
 ## Self-Help resources
 
 Access the **Help** section for documentation, community forums, or instant support from MIA.
 
-![Self-Help Resources](https://imgur.com/1L2DfHk.png)
+![Self-Help Resources](https://imgur.com/wP3LbTE.png)
 
 **[Explore self-help options](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/resources)**
 
@@ -61,7 +61,7 @@ Access the **Help** section for documentation, community forums, or instant supp
 
 Switch between different environments such as Sandbox, Staging, Production, Live, and Development to test and deploy your bot.
 
-![Environment Switcher](https://imgur.com/9IhEMdm.png)
+![Environment Switcher](https://imgur.com/GtL933N.png)
 
 **[Learn about the different environments](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes)**
 
