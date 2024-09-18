@@ -3,6 +3,11 @@ title: Troubleshooting Gen AI bots
 sidebar_label : Troubleshooting Gen AI bots  
 ---
 
+The key to troubleshooting bots is identifying the issue. Once identified, you can either retrain the bot with new input or adjust its existing text and parameters for improvement.
+
+
+
+
 ## Navigate to platform logs
 
 1. Open **Automation > Build** and **Preview** the bot.
