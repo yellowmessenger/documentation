@@ -184,7 +184,37 @@ module.exports = {
 }, 
 //end of integrations
 
-  "cookbooks/yellowaisupport",
+
+// Gen AI Advanced level
+
+{
+  type: "category",
+  label: "Gen AI Advanced level",
+  link: {type: 'doc', id: 'cookbooks/Gen-AI-Advanced-Level/genaiadvancedoverview'},
+  collapsed: true,
+  items: [
+      {
+        type: "category",
+        label: "Gen AI bot development lifecycle",
+        link: {type: 'doc', id: 'cookbooks/Gen-AI-Advanced-Level/botdevlifecycle'},
+        collapsed: true,
+        items: [
+          "cookbooks/Gen-AI-Advanced-Level/genai-kb",
+          "cookbooks/Gen-AI-Advanced-Level/genai-orchllm",
+        ],
+      }, 
+
+      "cookbooks/Gen-AI-Advanced-Level/commonchallengs",
+      "cookbooks/Gen-AI-Advanced-Level/bestpractices",
+      "cookbooks/Gen-AI-Advanced-Level/genai-bottroubleshooting",
+  ],
+
+
+}, 
+
+//End of genai advance
+
+"cookbooks/yellowaisupport",
 
   ], // user guides end here
 
