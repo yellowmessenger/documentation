@@ -189,7 +189,7 @@ module.exports = {
 
 {
   type: "category",
-  label: "Gen AI Advanced level",
+  label: "Gen AI (Advanced level)",
   link: {type: 'doc', id: 'cookbooks/Gen-AI-Advanced-Level/genaiadvancedoverview'},
   collapsed: true,
   items: [
