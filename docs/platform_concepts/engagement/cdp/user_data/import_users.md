@@ -134,7 +134,7 @@ If the `userId` that you import already exists, it skips without making any chan
 
 ### Update existing user data
 
-Updates the existing properties of the user with the ones imported through the CSV file. The existing properties that are not specified in the CSV file or not mapped will remain unchanged.
+Updates the existing properties of the user with the ones imported through the CSV file. Properties that are not specified or mapped in the CSV file will remain unchanged.
 
    ![](https://i.imgur.com/Q6gWZ66.png)
 
@@ -179,6 +179,9 @@ You can see the Status of the import.
 
    ![](https://i.imgur.com/1L2TjVR.png)
 
+   :::note
+   For CSV file uploads, a "Completed" status indicates that the import task was successful. However, the data may not appear immediately in the User table; it may take some time to reflect in the User 360 table.
+   :::
 
   - **Failed**: It states that the import activity has failed due to reasons like incorrect file format or any other technical errors. 
 
