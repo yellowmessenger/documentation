@@ -1593,6 +1593,24 @@ module.exports = {
         },
 
 
+          // Agent AI :: Added in the end, can be moved to a different position
+          {
+            type: "category",
+            label: "AI Agent",
+            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent_intro'},
+            collapsed: true,
+            items: [
+              "platform_concepts/AIAgent/agentpersona",
+              "platform_concepts/AIAgent/conversations",
+              "platform_concepts/AIAgent/configurellm",
+              "platform_concepts/AIAgent/limitation",
+
+             // add here
+
+            ],
+          }, 
+
+          //Agent AI 
 
 
   ], 
