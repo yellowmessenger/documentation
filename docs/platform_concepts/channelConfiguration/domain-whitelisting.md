@@ -33,7 +33,6 @@ To whitelist a domain to deploy chat widget, follow these steps:
     <img src="https://imgur.com/QH47wL3.png" alt="drawing" width="80%"/>
      
 :::note
-- Whenever the chatbot script is deployed on any website, it will fetch and display the domains so that you can whitelist them if needed.
 - If none of the domains are whitelisted, the chatbot will load on all domains where the script is deployed
 - If one or more domains are whitelisted, the chatbot will load only on whitelisted domains.
 :::
