@@ -3,7 +3,7 @@ title: Bot development environments (modes)
 sidebar_label: Know bot environments
 ---
 
-Yellow.ai provides various environments for managing your bots and making continuous improvements, including adding functions and adjusting flows and a separate enviornment to publish the bot live. 
+Yellow.ai offers a variety of environments for effective bot management and continuous improvement. You can easily add functions, adjust flows, and access a dedicated environment for publishing your bots live.
 
 
 ## Finding your Bot ID
@@ -11,15 +11,15 @@ Yellow.ai provides various environments for managing your bots and making contin
 **The bot ID is different in each environment.**
 To obtain the bot ID, you can click on the web link from any page of the bot after creating it and copy the 14-digit alphanumeric value (e.g., x16763649******).       
 
-![image](https://imgur.com/KAjcN15.png)
+![image](https://imgur.com/6vkCkrQ.png)
 
 ## Switching bot environments
 
-Depending on your bot subscription, you'll see different environments, click on the top right dropdown to switch. 
+Your bot subscription determines the environments available to you. To select a different environment, click the dropdown located in the top right corner.
 
-![image](https://imgur.com/89JWllg.png)
+![image](https://imgur.com/8QjnQ25.png)
 
-Environments include **Sandbox, Staging, Production, Live,** and **Development**. You can opt the required enviornments for your bot.
+The available environments include **Sandbox, Staging, Production, Live,** and **Development**. You can opt for the environments that align with your bot's objectives.
 
 
 --------
