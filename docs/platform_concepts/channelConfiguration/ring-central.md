@@ -258,16 +258,95 @@ To use custom fields, you must first create them in the RingCentral platform.
 
 If user information originates from RingCentral, bot developers can access any custom fields included in the RingCentral payload through the channel metadata.
 
+
 You can access this data in the System Variables section. To accept data from RingCentral, just use `{{data.channelMetadata}}`, as all relevant data is available within RingCentral.
 
    <center><img src="https://i.imgur.com/0KHym1Q.png" width="65%"/></center>
 
+### Channel metadata structure
 
+The `channelMetaData` variable contains a JSON object structured as follows:
 
-However, if Yellow.ai intends to push data into RingCentral's custom fields, they must create corresponding custom fields within User 360.
+```json
+{
+  "contentId": "66ec21787a77bd0007d2dc36",
+  "sourceId": "659be03f014f1700073cf5f1",
+  "userId": "659d746d2fabaa0007689502",
+  "identityGroupId": "659d746d2fabaa0007689503",
+  "interventionId": "66ec20eb07ea830007d28497",
+  "customFields": {
+    "policyno": "test123"
+  },
+  "extraValues": {
+    "hello": "world",
+    "user_role": "admin"
+  },
+  "profile": {
+    "company": "Yellow.ai",
+    "community_id": "659be0166bdf6d0004b0924d",
+    "type": "mobile_messaging",
+    "uuid": "a6b397e3-9e31-4bcc-bf85-9848]d6cc242ad",
+    "firstname": "Tom",
+    "gender": "male",
+    "identity_group_id": "659d746d2fabaa007689503",
+    "lastname": "James",
+    "email": "mk@test.com",
+    "mobile_phone": "917004000000",
+    "emails": ["mk@test.com"],
+    "mobile_phones": ["917004324388"]
+  },
+  "traceId": "19b5e64b8b550d458b2f4433b3c18567",
+  "containerType": "new"
+}
+```
 
+<!--
+#### Field descriptions
 
+- **contentId**: Unique identifier for the content.
+- **sourceId**: Identifier for the source of the data.
+- **userId**: Unique identifier for the user.
+- **identityGroupId**: Identifier for the user's identity group.
+- **interventionId**: Identifier for the specific intervention.
+- **customFields**: Object containing custom fields related to the user or context.
+- **extraValues**: Additional key-value pairs that provide more context, such as:
+  - `hello`: A sample value ("world").
+  - `user_role`: User role information (e.g., "admin").
+- **profile**: Object containing user profile information, including:
+  - `company`: Name of the user's company.
+  - `community_id`: Identifier for the community.
+  - `type`: Type of messaging (e.g., "mobile_messaging").
+  - `uuid`: Unique user identifier.
+  - `firstname`, `lastname`: User's name.
+  - `email`, `mobile_phone`: Contact information.
+  - `emails`, `mobile_phones`: Arrays of email addresses and phone numbers.
+- **traceId**: Identifier for tracing requests.
+- **containerType**: Indicates the type of container (e.g., "new").
+-->
+### Accessing values
 
+To access specific fields within this structure, you can use the following syntax:
+
+- To access the `hello` field in `extraValues`:
+  ```handlebars
+  {{data.channelMetaData.extraValues.hello}}  // Outputs: "world"
+  ```
+
+- To access the `user_role`:
+  ```handlebars
+  {{data.channelMetaData.extraValues.user_role}}  // Outputs: "admin"
+  ```
+
+- To access the user's first name:
+  ```handlebars
+  {{data.channelMetaData.profile.firstname}}  // Outputs: "Tom"
+  ```
+
+:::note
+If Yellow.ai intends to push data into RingCentral's custom fields, it is essential to create corresponding custom fields within User 360. 
+:::
+
+### Adding custom fields to agent profile
 To add custom fields to agent profiles in RingCX:
 
 1. Go to **RingCX Admin portal** > **Digital** > **Custom Fields** > **Add** and create a new custom field.
@@ -329,14 +408,31 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
  ![](https://i.imgur.com/Xrc60f6.png)
 
-### Nodes not supported on RingCentral widget via integration
+### Nodes supported on RingCentral widget
 
-Most nodes will work on RingCentral, except for the following:
+While most nodes are supported on the RingCentral widget, there are a few nodes that are not currently supported.
 
-Nodes |  Unsupported
------ |  -----------
-Message | WhatsApp
-Prompt | <ul><li>Multi-select node</li><li>WhatsApp list node</li><li>WhatsApp product message node</li><li>Channel filter</li><li>Dynamic chat (when enabled)</li><li>Date node</li><li>Location node</li><li>Speak node</li><li>Input node</li><li>Product search node</li></ul> **Note**: Make prompt smarter option will not work.
+
+**Unsupported Message Nodes:**
+
+- WhatsApp
+
+**Unsupported Prompt Nodes:**
+- Multi-select node
+- WhatsApp list node
+- WhatsApp product message node
+- Channel filter
+- Dynamic chat (requires enablement)
+- Date node
+- Location node
+- Speak node
+- Input node
+- Product search node
+
+:::info
+- The "Make Prompt Smarter" option will not function.
+- To enable dynamic chat for your bot, please submit a request to [support@yellow.ai](mailto:support@yellow.ai).
+:::
 
 
 
