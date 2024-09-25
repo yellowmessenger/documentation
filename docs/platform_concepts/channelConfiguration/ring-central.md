@@ -130,6 +130,8 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 Activate identities after creating a virtual agent. Only then user information can be passed.
 
   ![](https://i.imgur.com/AWtTFTR.png)
+
+
    
 ### Authorize IVA Professional to access RingCX account
 
@@ -326,6 +328,15 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
  Once the dynamic chat node completes its conversation with the user and transfers the chat to RingCX account, this is how the chat looks on RingCX account's side.
 
  ![](https://i.imgur.com/Xrc60f6.png)
+
+### Nodes not supported on RingCentral widget via integration
+
+Most nodes will work on RingCentral, except for the following:
+
+Nodes |  Unsupported
+----- |  -----------
+Message | WhatsApp
+Prompt | <ul><li>Multi-select node</li><li>WhatsApp list node</li><li>WhatsApp product message node</li><li>Channel filter</li><li>Dynamic chat (when enabled)</li><li>Date node</li><li>Location node</li><li>Speak node</li><li>Input node</li><li>Product search node</li></ul> **Note**: Make prompt smarter option will not work.
 
 
 
