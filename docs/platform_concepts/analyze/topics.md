@@ -96,13 +96,13 @@ By default, analytics for the selected topic are filtered to the past 30 days. Y
 
 This represents the percentage of conversations that either were not resolved or not contained, calculated as:
 
-`(CR opportunity) = (Total unresolved/uncontained conversations in this topic) / (Total unresolved/uncontained conversations across all topics)`
+**CR opportunity** = (Total unresolved/uncontained conversations in this topic) / (Total unresolved/uncontained conversations across all topics).
 
 ### Conversation share
 
 This shows the percentage of total conversations for the selected topic relative to all conversations across topics, calculated as:
 
-`(Conversation share) = (Total conversations in this topic) / (Total conversations across all topics)`
+**Conversation share** = (Total conversations in this topic) / (Total conversations across all topics).
 
 You can view all conversations under a specific topic by clicking **View conversations**.
 
@@ -158,9 +158,43 @@ By closely monitoring these metrics, you can gain actionable insights into your 
 
 
 
+-----------
+
+
+## Containment rate for 3rd party Inbox apps 
+
+> This feature is under development. 
+
+Containment rate refers to the number of conversations handled solely by the bot without agent intervention. There are two types of such chat transfers:
+
+1. **Active handover**
+    - In Yellow Inbox, chat is transferred to an agent with the event `agent-transfer`.
+    - 3rd Party Inbox: Bot is paused, and chat is handed over to an agent with the event configured at the bot-level.  
+
+2. **Passive handover**
+    - **Schedule callback**: Bot schedules a callback by collecting user details.
+    - **Email**: Bot creates an email ticket.
+    - **Ticket in 3rd Party System/Trigger Event**: Bot creates a support ticket in another system or triggers a custom event.
+
+
+### Current limitation 
+
+Yellow Inbox transfer are tracked with the `agent-transfer` event. But while using 3rd Party Inbox, the transfer depends on bot-level configuration but that **is not currently trackable**.
+
+### Suggested solution 
+
+With Bot Developer access, you can configure a **Third Party Handoff** node by entering the same data as in the **Raise Ticket** node at the end of the conversation flow. This node will serve as an identifier for agent transfers, that enables you to track containment rate.
+
+
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1C7Lt7VmhnqI8cMi4LqmW0UJS4Wl1aUQdHJf0hGec9BkV03FHJ00aSw5MF8HYNqQ4F649KthH7XwPDy5yto7vi93QS4fhS6TGueyhDfDslpgyWLzqVtkmcP7JjyvQe2rLf6ZoDrP8hHtMSm9tseDZy_g?key=doHOJQMEdYvKlVOmPCYX8w)**
+
+
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfD0roERslkkdSeDLJe1KdAihGAwck7BK1lAFS6e4kqJ13KgP5jWBcI2Fhf_XbJX3kYcafE1otwhzkSTIs1PtJBQxc38EXoExuGv6vgANRHKFEDcHXwBg-ttYRrJsiSqLontpJ7ZY7eLYndlDYrPpiv4q8?key=doHOJQMEdYvKlVOmPCYX8w)**
+
+**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsCC_H9djVb0DBv3R2mmRlu3MaPocs-mOtzxyBiTN61wnlFRsUSrFsGbJgir3VnEn7flwiTgzCjlkJ4K4JnC7IJ7CkJ--5dd5QH3KB2oGDDMjdr95mXAtaiEQrj2RupK6Lv3B2I_5tMuKE-zOzytyee-Q-?key=doHOJQMEdYvKlVOmPCYX8w)**
 
 
 
 
 
-
+ 
