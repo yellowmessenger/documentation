@@ -22,7 +22,7 @@ To access topics page:
 
 ## Key metrics for topic analysis
 
-### CR opportunity
+### **CR opportunity**
 
 Contained resolution(CR) opportunity metric represents the total opportunity a topic has to improve your overall automated resolution rate. It is calculated as:
 
@@ -37,7 +37,7 @@ The star next to the **Conversation share** means that the Topic has knowledge b
 ![image](https://hackmd.io/_uploads/SyKXtKoPA.png)
 
 
-### Conversation share
+### **Conversation share**
 
 This metric shows the proportion of conversations involving a particular topic compared to all conversations:
 
@@ -50,7 +50,7 @@ For example, in the below screenshot, Out of 4021 conversations taken place in t
 
 
 
-### CR rate
+### **CR rate**
 
 The contained resolution(CR) rate indicates the percentage of conversations on a topic that were successfully resolved by the bot without human intervention:
 
@@ -58,7 +58,7 @@ The contained resolution(CR) rate indicates the percentage of conversations on a
 
 A higher CR Rate signifies better bot performance in resolving issues autonomously.
 
-### Containment rate
+### **Containment rate**
 
 This metric measures the percentage of conversations on a topic that were not escalated to a human agent:
 
@@ -66,15 +66,84 @@ This metric measures the percentage of conversations on a topic that were not es
 
 A higher containment rate indicates greater efficiency in handling the topic without needing human support.
 
-### Sentiment
+### **Sentiment**
 
 This metric assesses the sentiment of users during conversations about a specific topic. It shows the percentage of positive, negative and neutral conversations that have taken place while discussing about this topic. Understanding user sentiment helps in identifying areas where the bot's responses might need improvement to enhance customer satisfaction.
 
-For example, in the below screenshot, out of 144 conversations in this topic, 23 (15.9%) were positive and 100 (69.4%) were negative. 
-![image](https://hackmd.io/_uploads/rJ3ttKoPC.png)
+For example, in the below screenshot, out of 1045 conversations in this topic, 550 (52.6%) were positive, 364 (34.8%) were negative, and 131 (12.5%) were neutral.
 
+
+![image](https://hackmd.io/_uploads/SJY6C9kCA.png)
 
 ----------
+
+
+## Expanded insights into each topic
+
+### Topic details
+
+Click on the **Topic name** to view a detailed analysis of the selected topic.
+
+![Topic details](https://hackmd.io/_uploads/BkQE3nyRA.png)
+
+### Date filter
+
+By default, analytics for the selected topic are filtered to the past 30 days. You can adjust the time period by selecting a different date range.
+
+![Date filter](https://hackmd.io/_uploads/Skn8Ch1A0.png)
+
+### CR opportunity
+
+This represents the percentage of conversations that either were not resolved or not contained, calculated as:
+
+`(CR opportunity) = (Total unresolved/uncontained conversations in this topic) / (Total unresolved/uncontained conversations across all topics)`
+
+### Conversation share
+
+This shows the percentage of total conversations for the selected topic relative to all conversations across topics, calculated as:
+
+`(Conversation share) = (Total conversations in this topic) / (Total conversations across all topics)`
+
+You can view all conversations under a specific topic by clicking **View conversations**.
+
+![View conversations](https://hackmd.io/_uploads/HJSh1a10C.png)
+
+On the Conversations page, you can read each conversation belonging to that topic. Use the filter icon to refine conversations based on your criteria:
+- **Contained resolution**: Setting this to **True** filters conversations that are both contained and resolved. Setting it to **False** filters conversations that are either contained but unresolved, not contained but resolved, or not contained and unresolved.
+- **Contained**: Filters all contained conversations, regardless of resolution status.
+- **Resolved**: Filters all resolved conversations, whether contained or not.
+- **User sentiment**: Filter conversations by sentiment categories such as Positive, Negative, or Neutral.
+- **Automation**: Select **Available** to filter conversations whose resolutions are used for automation purposes.
+
+
+![Conversation filters](https://hackmd.io/_uploads/H1OTdAg00.png)
+
+For each conversation, you will see details such as:
+- **Analysis**: Whether it was contained/uncontained
+- **User query**: The specific query
+- **Resolution**: Whether it was resolved/unresolved
+- **User sentiment**: Categorized as Positive, Negative, or Neutral
+
+![Conversation details](https://hackmd.io/_uploads/SkdjKRgAA.png)
+
+### Visualized results
+
+Key metrics such as CR rate, containment rate, and user sentiment for the selected topic are displayed as graphs for the selected time period. These values, already available on the Topics page, are visualized in graph form to help you understand trends more effectively. You can view conversations pre-filtered by clicking **View all**.
+
+![Visualized results](https://hackmd.io/_uploads/rJrX6RgRA.png)
+
+### CR opportunity suggestions
+
+The bot also provides suggestions based on analyzed conversations:
+
+- **Improve Knowledge Base**: Click **View conversation** to see conversations that the AI used to recommend a new knowledge base article.
+- **Analyze conversations**: Click **View conversation** to identify opportunities for bot improvement.
+
+![CR suggestions](https://hackmd.io/_uploads/HkRDykZRC.png)
+
+
+--------
+
 
 ## Utilize topics for bot improvement
 
@@ -86,39 +155,7 @@ By closely monitoring these metrics, you can gain actionable insights into your 
 - **Monitor sentiment**: Keep an eye on user sentiment for each topic. If users consistently express negative sentiments, it’s a signal that the bot’s handling of that topic needs improvement.
 - **Iterate and test**: Regularly update and test the bot’s responses based on the insights gained from topic analysis. Continuous iteration helps in gradually enhancing the bot’s performance and increasing the automated resolution rate.
 
-----------
 
-## Containment rate for 3rd party Inbox apps 
-
-> This feature is under development. 
-
-Containment rate refers to the number of conversations handled solely by the bot without agent intervention. There are two types of such chat transfers:
-
-1. **Active handover**
-    - In Yellow Inbox, chat is transferred to an agent with the event `agent-transfer`.
-    - 3rd Party Inbox: Bot is paused, and chat is handed over to an agent with the event configured at the bot-level.  
-
-2. **Passive handover**
-    - **Schedule callback**: Bot schedules a callback by collecting user details.
-    - **Email**: Bot creates an email ticket.
-    - **Ticket in 3rd Party System/Trigger Event**: Bot creates a support ticket in another system or triggers a custom event.
-
-
-### Current limitation 
-
-Yellow Inbox transfer are tracked with the `agent-transfer` event. But while using 3rd Party Inbox, the transfer depends on bot-level configuration but that **is not currently trackable**.
-
-### Suggested solution 
-
-With Bot Developer access, you can configure a **Third Party Handoff** node by entering the same data as in the **Raise Ticket** node at the end of the conversation flow. This node will serve as an identifier for agent transfers, that enables you to track containment rate.
-
-
-**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1C7Lt7VmhnqI8cMi4LqmW0UJS4Wl1aUQdHJf0hGec9BkV03FHJ00aSw5MF8HYNqQ4F649KthH7XwPDy5yto7vi93QS4fhS6TGueyhDfDslpgyWLzqVtkmcP7JjyvQe2rLf6ZoDrP8hHtMSm9tseDZy_g?key=doHOJQMEdYvKlVOmPCYX8w)**
-
-
-**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfD0roERslkkdSeDLJe1KdAihGAwck7BK1lAFS6e4kqJ13KgP5jWBcI2Fhf_XbJX3kYcafE1otwhzkSTIs1PtJBQxc38EXoExuGv6vgANRHKFEDcHXwBg-ttYRrJsiSqLontpJ7ZY7eLYndlDYrPpiv4q8?key=doHOJQMEdYvKlVOmPCYX8w)**
-
-**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsCC_H9djVb0DBv3R2mmRlu3MaPocs-mOtzxyBiTN61wnlFRsUSrFsGbJgir3VnEn7flwiTgzCjlkJ4K4JnC7IJ7CkJ--5dd5QH3KB2oGDDMjdr95mXAtaiEQrj2RupK6Lv3B2I_5tMuKE-zOzytyee-Q-?key=doHOJQMEdYvKlVOmPCYX8w)**
 
 
 
