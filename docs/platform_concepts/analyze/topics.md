@@ -22,7 +22,7 @@ To access topics page:
 
 ## Key metrics for topic analysis
 
-### **CR opportunity**
+### CR opportunity
 
 Contained resolution(CR) opportunity metric represents the total opportunity a topic has to improve your overall automated resolution rate. It is calculated as:
 
@@ -37,7 +37,7 @@ The star next to the **Conversation share** means that the Topic has knowledge b
 ![image](https://hackmd.io/_uploads/SyKXtKoPA.png)
 
 
-### **Conversation share**
+### Conversation share
 
 This metric shows the proportion of conversations involving a particular topic compared to all conversations:
 
@@ -50,7 +50,7 @@ For example, in the below screenshot, Out of 4021 conversations taken place in t
 
 
 
-### **CR rate**
+### CR rate
 
 The contained resolution(CR) rate indicates the percentage of conversations on a topic that were successfully resolved by the bot without human intervention:
 
@@ -58,7 +58,7 @@ The contained resolution(CR) rate indicates the percentage of conversations on a
 
 A higher CR Rate signifies better bot performance in resolving issues autonomously.
 
-### **Containment rate**
+### Containment rate
 
 This metric measures the percentage of conversations on a topic that were not escalated to a human agent:
 
@@ -66,7 +66,7 @@ This metric measures the percentage of conversations on a topic that were not es
 
 A higher containment rate indicates greater efficiency in handling the topic without needing human support.
 
-### **Sentiment**
+### Sentiment
 
 This metric assesses the sentiment of users during conversations about a specific topic. It shows the percentage of positive, negative and neutral conversations that have taken place while discussing about this topic. Understanding user sentiment helps in identifying areas where the bot's responses might need improvement to enhance customer satisfaction.
 
