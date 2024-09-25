@@ -70,11 +70,80 @@ A higher containment rate indicates greater efficiency in handling the topic wit
 
 This metric assesses the sentiment of users during conversations about a specific topic. It shows the percentage of positive, negative and neutral conversations that have taken place while discussing about this topic. Understanding user sentiment helps in identifying areas where the bot's responses might need improvement to enhance customer satisfaction.
 
-For example, in the below screenshot, out of 144 conversations in this topic, 23 (15.9%) were positive and 100 (69.4%) were negative. 
-![image](https://hackmd.io/_uploads/rJ3ttKoPC.png)
+For example, in the below screenshot, out of 1045 conversations in this topic, 550 (52.6%) were positive, 364 (34.8%) were negative, and 131 (12.5%) were neutral.
 
+
+![image](https://hackmd.io/_uploads/SJY6C9kCA.png)
 
 ----------
+
+
+## Expanded insights into each topic
+
+### Topic details
+
+Click on the **Topic name** to view a detailed analysis of the selected topic.
+
+![Topic details](https://hackmd.io/_uploads/BkQE3nyRA.png)
+
+### Date filter
+
+By default, analytics for the selected topic are filtered to the past 30 days. You can adjust the time period by selecting a different date range.
+
+![Date filter](https://hackmd.io/_uploads/Skn8Ch1A0.png)
+
+### CR opportunity
+
+This represents the percentage of conversations that either were not resolved or not contained, calculated as:
+
+**CR opportunity** = (Total unresolved/uncontained conversations in this topic) / (Total unresolved/uncontained conversations across all topics).
+
+### Conversation share
+
+This shows the percentage of total conversations for the selected topic relative to all conversations across topics, calculated as:
+
+**Conversation share** = (Total conversations in this topic) / (Total conversations across all topics).
+
+You can view all conversations under a specific topic by clicking **View conversations**.
+
+![View conversations](https://hackmd.io/_uploads/HJSh1a10C.png)
+
+On the Conversations page, you can read each conversation belonging to that topic. Use the filter icon to refine conversations based on your criteria:
+- **Contained resolution**: Setting this to **True** filters conversations that are both contained and resolved. Setting it to **False** filters conversations that are either contained but unresolved, not contained but resolved, or not contained and unresolved.
+- **Contained**: Filters all contained conversations, regardless of resolution status.
+- **Resolved**: Filters all resolved conversations, whether contained or not.
+- **User sentiment**: Filter conversations by sentiment categories such as Positive, Negative, or Neutral.
+- **Automation**: Select **Available** to filter conversations whose resolutions are used for automation purposes.
+
+
+![Conversation filters](https://hackmd.io/_uploads/H1OTdAg00.png)
+
+For each conversation, you will see details such as:
+- **Analysis**: Whether it was contained/uncontained
+- **User query**: The specific query
+- **Resolution**: Whether it was resolved/unresolved
+- **User sentiment**: Categorized as Positive, Negative, or Neutral
+
+![Conversation details](https://hackmd.io/_uploads/SkdjKRgAA.png)
+
+### Visualized results
+
+Key metrics such as CR rate, containment rate, and user sentiment for the selected topic are displayed as graphs for the selected time period. These values, already available on the Topics page, are visualized in graph form to help you understand trends more effectively. You can view conversations pre-filtered by clicking **View all**.
+
+![Visualized results](https://hackmd.io/_uploads/rJrX6RgRA.png)
+
+### CR opportunity suggestions
+
+The bot also provides suggestions based on analyzed conversations:
+
+- **Improve Knowledge Base**: Click **View conversation** to see conversations that the AI used to recommend a new knowledge base article.
+- **Analyze conversations**: Click **View conversation** to identify opportunities for bot improvement.
+
+![CR suggestions](https://hackmd.io/_uploads/HkRDykZRC.png)
+
+
+--------
+
 
 ## Utilize topics for bot improvement
 
@@ -86,7 +155,11 @@ By closely monitoring these metrics, you can gain actionable insights into your 
 - **Monitor sentiment**: Keep an eye on user sentiment for each topic. If users consistently express negative sentiments, it’s a signal that the bot’s handling of that topic needs improvement.
 - **Iterate and test**: Regularly update and test the bot’s responses based on the insights gained from topic analysis. Continuous iteration helps in gradually enhancing the bot’s performance and increasing the automated resolution rate.
 
-----------
+
+
+
+-----------
+
 
 ## Containment rate for 3rd party Inbox apps 
 
@@ -124,6 +197,4 @@ With Bot Developer access, you can configure a **Third Party Handoff** node by e
 
 
 
-
-
-
+ 
