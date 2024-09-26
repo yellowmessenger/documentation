@@ -20,6 +20,12 @@ Depending upon the business use case, Inbox can be configured to handle email ti
 
 
 
+:::note
+
+In some systems (e.g., Windows), 1MB is considered 1000KB, while in others, 1MB is 1024KB.
+
+:::
+
 
 
 
