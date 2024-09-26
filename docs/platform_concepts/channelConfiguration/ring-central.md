@@ -298,6 +298,7 @@ The `channelMetaData` variable contains a JSON object structured as follows:
   "traceId": "19b5e64b8b550d458b2f4433b3c18567",
   "containerType": "new"
 }
+
 ```
 
 <!--
@@ -323,6 +324,7 @@ The `channelMetaData` variable contains a JSON object structured as follows:
 - **traceId**: Identifier for tracing requests.
 - **containerType**: Indicates the type of container (e.g., "new").
 -->
+
 ### Accessing values
 
 To access specific fields within this structure, you can use the following syntax:
@@ -395,7 +397,7 @@ After connecting your IVA Professional account with RingCX, you need to design t
 | Live chat agent | - | Choose **RingCentral Live Chat** in the drop-down | - |
 | Message after ticket assignment | String | The message that will be displayed to the end user after a ticket is successfully assigned to an agent | Requesting live agent connection. |
 | Name | String | Name of the end user | John |
-| Mobile | String | Mobile number of the end user | 9876543210 |
+| Mobile | String | Mobile number of the end user | 987600000 |
 | Email | String | Email address of the end user. This is a mandatory field | test@gmail.com |
 | Query | String | The subject/topic/reason why the ticket was created | I have a concern regarding my flight ticket |
 | RingCentral category ID | String | The ID of the category to which the chat should be transferred, click [here](#fetch-category-id) for the steps. | 123abc1abc2abc3abc4abc5abc6 |
@@ -410,30 +412,31 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
 ### Nodes supported on RingCentral widget
 
-While most nodes are supported on the RingCentral widget, there are a few nodes that are not currently supported.
+Most nodes are supported on the RingCentral widget, but there are a few nodes that are not currently supported.
 
-
-**Unsupported Message Nodes:**
-
-- WhatsApp
-
-**Unsupported Prompt Nodes:**
-- Multi-select node
-- WhatsApp list node
-- WhatsApp product message node
-- Channel filter
-- Dynamic chat (requires enablement)
-- Date node
-- Location node
-- Speak node
-- Input node
-- Product search node
-
-:::info
-- The "Make Prompt Smarter" option will not function.
+:::note
 - To enable dynamic chat for your bot, please submit a request to [support@yellow.ai](mailto:support@yellow.ai).
 :::
 
+Category | Nodes not supported | Important notes
+-------- | ----------- | ---------------
+[Message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) | <ul><li>WhatsApp list</li><li>Whatsapp product catalogue</li></ul> | - All other nodes are supported.
+[Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) | <ul><li>Multi-select node</li><li>WhatsApp list node</li><li>Date node</li><li>Location node</li><li>Speak node</li><li>Input node</li><li>Product search node</li></ul> | <ul><li>The **Dynamic chat node** is not enabled by default; however, you can send an email to [support@yellow.ai](mailto:support@yellow.ai) to enable this node. </li><li>All other nodes are supported.</li><li>   The **Make Prompt Smarter** option is not supported.</li></ul>
+[Logic nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) | * Channel filter | - All other nodes are supported.
+
+
+<!-- 
+#### Supported Action nodes:
+
+It supports all the [Action nodes]https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) except the following two nodes.
+
+**Unsupported Action nodes:**
+
+
+- Date & time validator
+- Location validator
+
+-->
 
 
 ## IVA Professional nodes and their supported formats
