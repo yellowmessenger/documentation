@@ -137,7 +137,6 @@ Activate identities after creating a virtual agent. Only then user information c
 
 1. Log in to your [IVA Professional account](https://cloud.yellow.ai) and go to **Channels** > **RingCentral**.
 
-
    ![](https://i.imgur.com/76Bmw03.png)
 
 2. In **API access token**, paste the API token copied in the previous step.
@@ -392,6 +391,8 @@ After connecting your IVA Professional account with RingCX, you need to design t
 
    ![](https://i.imgur.com/kLObbST.png)
 
+
+
 | Field name | Data type | Description | Sample value |
 |------------|-----------|-------------|--------------|
 | Live chat agent | - | Choose **RingCentral Live Chat** in the drop-down | - |
@@ -410,19 +411,17 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
  ![](https://i.imgur.com/Xrc60f6.png)
 
+
 ### Nodes supported on RingCentral widget
 
 Most nodes are supported on the RingCentral widget, but there are a few nodes that are not currently supported.
 
-:::note
-- To enable dynamic chat for your bot, please submit a request to [support@yellow.ai](mailto:support@yellow.ai).
-:::
 
 Category | Nodes not supported | Important notes
 -------- | ----------- | ---------------
 [Message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) | <ul><li>WhatsApp list</li><li>Whatsapp product catalogue</li></ul> | - All other nodes are supported.
 [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) | <ul><li>Multi-select node</li><li>WhatsApp list node</li><li>Date node</li><li>Location node</li><li>Speak node</li><li>Input node</li><li>Product search node</li></ul> | <ul><li>The **Dynamic chat node** is not enabled by default; however, you can send an email to [support@yellow.ai](mailto:support@yellow.ai) to enable this node. </li><li>All other nodes are supported.</li><li>   The **Make Prompt Smarter** option is not supported.</li></ul>
-[Logic nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) | * Channel filter | - All other nodes are supported.
+[Logic nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) |  <ul><li>Channel filter</li></ul> | - All other nodes are supported.
 
 
 <!-- 
