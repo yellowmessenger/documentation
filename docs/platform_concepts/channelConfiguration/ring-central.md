@@ -416,12 +416,14 @@ You can enable **Advanced Options** to set the priority, auto-translation, custo
 
 Most nodes are supported on the RingCentral widget, but there are a few nodes that are not currently supported.
 
+Here’s the revised table with the second and third columns swapped:
 
-Category | Nodes not supported | Important notes
--------- | ----------- | ---------------
-[Message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) | <ul><li>WhatsApp list</li><li>Whatsapp product catalogue</li></ul> | - All other nodes are supported.
-[Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) | <ul><li>Multi-select node</li><li>WhatsApp list node</li><li>Date node</li><li>Location node</li><li>Speak node</li><li>Input node</li><li>Product search node</li></ul> | <ul><li>The **Dynamic chat node** is not enabled by default; however, you can send an email to [support@yellow.ai](mailto:support@yellow.ai) to enable this node. </li><li>All other nodes are supported.</li><li>   The **Make Prompt Smarter** option is not supported.</li></ul>
-[Logic nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) |  <ul><li>Channel filter</li></ul> | - All other nodes are supported.
+| Category | Supported Nodes | Nodes Not Supported |
+|----------|-----------------|---------------------|
+| [Message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) | <ul><li>Text</li><li>Image</li><li>Carousel</li><li>Video</li><li>File</li><li>Quick replies</li></ul> | <ul><li>WhatsApp list</li><li>WhatsApp product catalogue</li></ul> |
+| [Prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) | <ul><li>Question</li><li>Quick replies</li><li>Name</li><li>Email</li><li>Phone</li><li>Carousel</li><li>Voice input</li><li>Dynamic chat</li><li>Store comment</li><li>File prompt</li><li>Feedback</li></ul>    <br/><b>Note</b>:  <ul><li> The **Dynamic chat node** is not enabled by default; you can send an email to [support@yellow.ai](mailto:support@yellow.ai) to enable this node.</li><li>The **Make Prompt Smarter** option is not supported.</li></ul> | <ul><li>Multi-select node</li><li>WhatsApp list node</li><li>Date node</li><li>Location node</li><li>Speak node</li><li>Input node</li><li>Product search node</li></ul> |
+| [Logic nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) | <ul><li>Condition</li></ul>  | <ul><li>Channel filter</li></ul> |
+
 
 
 <!-- 
