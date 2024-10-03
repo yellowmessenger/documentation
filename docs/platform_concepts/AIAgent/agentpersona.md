@@ -3,8 +3,7 @@ title: Set characteristics and behavior of AI Agent
 sidebar_label: Define AI agent persona  
 ---
 
-
-
+In the Agent section, you can configure the bot's persona, how the bot will present itself to users. This configuration focuses on defining the identity, tone, and behavior of the bot, rather than the specific conversations it will have. The bot persona settings ensure that your bot provides a consistent and human-like experience in every interaction.
 
 ## **Define Persona**
 
@@ -33,7 +32,7 @@ Agent persona defines how the AI agent interacts with users. A well-defined pers
 
 ### How Should the Agent Welcome Users?
 
-This is the initial message users will see when the bot opens.
+**Welcome message**: This is the initial message users will see when the bot opens.
 
 > Example: Hey, I'm Mia from Yellow Banking. How can I assist with your banking needs today?
 
@@ -45,7 +44,7 @@ In fewer than 300 characters, explain the agent’s role. This helps the agent u
 
 ### How Does the AI Agent Handle Unanswered Queries?
 
-Specify the response when the agent cannot help with a query.
+**Fallback message**: Specify the response when the agent cannot help with a query.
 
 > Example: I couldn't assist with your current query as I am still learning. Please reach out to my human colleagues at support@yellow.ai.
 
