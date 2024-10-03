@@ -28,6 +28,7 @@ To create an email ticket, follow the steps below:
 
 1. Open **Inbox** > **Tickets**. 
 2. Click  **+Create ticket**.
+
     ![](https://i.imgur.com/sv75A6a.png)
 3. Enter the ticket details: 
     - **Priority**: By default, the priority will be the value [configured for email tickets](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing) in inbox settings, it can be changed here. 
@@ -35,15 +36,18 @@ To create an email ticket, follow the steps below:
     - **Tags**: Labels configured in the [tags section](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) can be selected form the dropdown. 
     - **Custom fields**: Fields configured for email tickets can be entered here. 
 
-![image](https://hackmd.io/_uploads/SkbBm53RR.png)
+![image](https://imgur.com/xaNoyhR.png)
 
 4. Enter the email details: 
     - **From address**:  This field will be auto-updated with the email ID assigned to the selected group (on ticket details). If the group is not selected on the ticket details, you can select an email ID from the available IDs in the drop-down list. The first email ID will be the default ID. 
     - **Contacts**: This is the address to whom the email has to be sent. You can enter a new email address if the email ID is recognized (is a known [contact](https://docs.yellow.ai/docs/platform_concepts/inbox/contacts)), you will be able to see the history of emails sent to this contact under **Contact details**.  
     - **Subject**: Mandatory field. Enter the email subject. 
-    ![image](https://hackmd.io/_uploads/HknwQ5n0A.png)
+
+    ![image](https://imgur.com/2bSM9Bx.png)
+    
     - **Email Body/ Reply**: To create a ticket, text must be entered in the reply section. You can also add [email templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte) to this. 
-    ![image](https://hackmd.io/_uploads/HyDcm520R.png)
+    
+    ![image](https://imgur.com/Flz7cHK.png)
 
 
 5. Click **Create ticket**. 

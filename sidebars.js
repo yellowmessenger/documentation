@@ -719,7 +719,17 @@ module.exports = {
         },
 
         "platform_concepts/inbox/inboxfaqs",
-        "platform_concepts/inbox/upcoming",
+
+        {
+          type: "category",
+          label: "Upcoming changes",
+          collapsed: true,
+          items: [
+            "platform_concepts/inbox/upcoming",
+            "platform_concepts/inbox/ticketeditor-upcomingchanges",
+          ],
+        },
+
 
     //other files
       ],
