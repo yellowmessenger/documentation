@@ -340,6 +340,9 @@ module.exports = {
     
               ],
             },
+            
+            "platform_concepts/studio/build/workflows",
+            
             {
               type: "category",
               label: "User record management",
@@ -1602,8 +1605,6 @@ module.exports = {
             items: [
               "platform_concepts/AIAgent/agentpersona",
               "platform_concepts/AIAgent/conversations",
-              "platform_concepts/AIAgent/configurellm",
-              "platform_concepts/AIAgent/limitation",
 
              // add here
 
