@@ -9,7 +9,7 @@ featured: true
 
 
 
-## Revolutionize Customer Service with Yellow.ai's Gen AI-Powered Bots
+## Transform Bot Conversations with Our Gen AI-Powered Agent UI
 
 The Agent AI module is a game-changer, empowering you to create sophisticated Gen AI-powered bots in just minutes. Even without prior AI experience, you can effortlessly build bots that effectively address customer queries by simply describing your desired bot's behavior in plain language.
 
