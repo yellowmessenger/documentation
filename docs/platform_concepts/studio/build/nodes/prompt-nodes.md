@@ -257,7 +257,7 @@ Yellow.ai automatically validates the **Email** node and no additional validatio
 
 ### 2.6 Carousel 
 
-Use **Carousel node** to display interactive carousel cards with buttons. For instance, a website can showcase products with carousel cards containing buttons for navigation and actions like purchasing. Each carousel contains an option to add an image (less than 10MB), title,description and buttons to perform a certain action
+Use **Carousel node** to display interactive carousel cards with buttons. For instance, a website can showcase products with carousel cards containing buttons for navigation and actions like purchasing. Each carousel contains an option to add an image (less than 10MB), title,description and buttons to perform a certain action. The recommended dimensions for carousel images: Width - 248px and Height - 164.2px. 
 
 ![](https://i.imgur.com/DJkmnpT.png)
 

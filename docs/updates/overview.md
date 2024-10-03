@@ -1,5 +1,5 @@
 ---
-title: July-August 2024 Releases
+title: What's new in the Cloud Platform (Sep & Oct)
 sidebar_label: Latest releases
 featured: true
 ---
@@ -9,108 +9,43 @@ featured: true
 
 
 
-## Introducing Generative AI-Powered Analyze
+## Transform Bot Conversations with Our Gen AI-Powered Agent UI
 
-Launching Analyze, our groundbreaking solution designed to revolutionize the way brands leverage Generative AI for in-depth conversation analysis. This new feature empowers you to harness the full potential of AI in evaluating and enhancing customer interactions, ultimately driving superior bot performance and automation.
+The Agent AI module is a game-changer, empowering you to create sophisticated Gen AI-powered bots in just minutes. Even without prior AI experience, you can effortlessly build bots that effectively address customer queries by simply describing your desired bot's behavior in plain language.
 
-### Key Benefits
+**Key Benefits**:
+* Effortless Creation: Build bots without extensive training or technical expertise.
+* Intelligent Conversations: Leverage Gen AI-powered Orch-LLM + Conversations for natural and informative interactions.
+* Instant Resolution: Enable your bots to resolve customer queries promptly and accurately.
+* Experience the future of customer service with Agent AI Automation's Conversation feature. Start building your AI-powered bot today and witness its transformative impact on your business.
 
-* **30% Reduction in Ticket Volumes**: Experience a significant decrease in the number of support tickets by enhancing your bot’s ability to handle and resolve inquiries more effectively.
-* **10% Increase in Containment Rates**: Improve the rate at which your chatbot successfully addresses customer queries without human intervention.
-
-### What’s New with Analyze
-
-* **Advanced AI Analyst**: Analyze employs state-of-the-art Generative AI to continuously monitor and refine chatbot performance. Its self-learning capabilities enable ongoing improvements based on real-time data.
-* **Comprehensive Conversation Evaluation**: The in-house LLM model assesses every conversation to measure resolution quality and user sentiment, ensuring more accurate and actionable insights.
-* **Enhanced Knowledge Base Generation**: By creating detailed topic clusters, Analyze helps in generating robust knowledge bases, streamlining bot responses and enhancing overall customer experience.
-
-Harness the power of Analyze to optimize your customer interactions and drive greater efficiency with cutting-edge AI technology. [Experience the transformative impact of this innovative tool](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro) on your customer service operations.
+[Visit documentation](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent_intro)
 
 ---
 
-## Custom Property Searchability in User360
+## Analyze 2.0: Unleashing Deeper Insights for Enhanced Automation
 
-Enhancement:
+Introducing Analyze 2.0, a significant upgrade designed to equip you with unparalleled insights for optimizing your automation strategies. This latest version empowers you to:
 
-You can now select which custom properties in User360 are searchable. This allows for more granular filtering and segmentation based on specific user attributes.
+* **Drill Down into Individual Topics**: Gain a granular understanding of specific topics and monitor their performance trends over time.
+* **Navigate Conversations with Ease**: Swiftly access conversations categorized as contained, not contained, resolved, unresolved, and more through convenient quick links.
+* **Refine Analysis with Granular Filters**: Apply filters to delve deeper into conversations and obtain a more precise breakdown based on your specific requirements.
+* **Correlate User Conversations and Key Metrics**: Explore individual user conversations in conjunction with relevant metrics for each chat, providing a comprehensive view of engagement and performance.
 
-**Key Changes**:
+In addition to these enhancements, we have refined **topic clustering algorithms** to **minimize duplicate topics** and further improved sentiment tagging for even more accurate results.
 
-* **Searchable properties**: When a custom property is enabled for search, it becomes available as a filter option in User360.
-* **Segmentation**: Searchable custom properties can also be used to create targeted segments, enabling personalized communications and experiences.
-* **System properties**: System properties remain searchable by default and cannot be disabled.
+[Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
 
-**Impact**:
+---
 
-* **Existing segments**: Existing segments will not be affected by this change.
-* **Enhanced functionality**: You will have greater flexibility in filtering and segmenting their user data based on custom properties.
+## Inbox Editor Enhancements (Going live soon)
 
+Experience a more powerful and versatile way to create messages with our enhanced inbox editor. We've added features to help you format, add media, and edit your content with ease.
 
-Explore the new custom property searchability options in your User360 instance. For more information, refer to the [User properties documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#mark-columns-searchable).
+We've updated our inbox editor with new features:
 
+* **Formatting**: Strikethrough, code, links, fonts, alignment.
+* **Media**: Inline images, tables, code blocks.
+* **Editing**: Undo, redo, 25 MB file limit.
 
-## Increased User Properties Limit in User360
-
-
-Expanded User Property Limit: The maximum number of user properties allowed in User360 has been increased to 300. This provides greater flexibility for storing and analyzing user data.
-
-[Try it out](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties)
-
-
-
-## Insights Enhancements
-
-### New Email Preference:
-
-   [Health and API Failure Alerts](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings#manage-your-email-preferences): You can now customize your email notifications by subscribing or unsubscribing to Health and API failure alerts directly from your Account > Email preference settings.
-
-### Topic Analysis for Enhanced Automated Resolution Rates
-Topic analysis is now available under the Analyze module to help improve automated resolution rates.
-
-Several new key metrics are now available for topic analysis to provide deeper insights into conversation performance.
-
-
-**Benefits**:
-
-Comprehensive Analysis: The expanded metrics provide a more complete picture of conversation performance and identify areas for improvement.
-Data-Driven Optimization: These metrics enable you to make data-driven decisions to enhance your bot's automated resolution rates and customer satisfaction.
-Targeted Improvements: By focusing on topics with high CR opportunity and low CR rates, you can prioritize your optimization efforts effectively.
-
-**Key Changes**:
-
-* **CR Opportunity**: This metric represents the total opportunity a topic has to improve your overall automated resolution rate.
-* **CR Share**: This metric shows the proportion of conversations involving a particular topic compared to all conversations.
-* **CR Rate**: This metric measures the percentage of conversations on a topic that were not escalated to a human agent.
-* **Sentiment**: This metric assesses the sentiment of users during conversations about a specific topic, showing the percentage of positive, negative, and neutral conversations.
-
-Explore [Topic analysis](https://docs.yellow.ai/docs/platform_concepts/analyze/topics)
-
-
-### Enhanced Custom Dashboards with Funnel Creation and Formula Creation
-
-
-Expanded Custom Dashboard Features: Custom dashboards (reports) now include additional functionalities: funnel creation and formula creation for count visualizations.
-
-
-**Key Changes**:
-
-* Funnel Creation: Users can easily create funnels within their custom dashboards to visualize the progression of data through different stages.
-* Formula Creation: Users can create custom formulas to calculate and display derived metrics, providing more flexibility in data analysis.
-
-Explore the new funnel creation and formula creation options in the [custom dashboard builder](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/editcountdashboards).
-
-
-
-### Custom Alerts for Saved Reports and Dashboards
-
-You can now set up custom alerts within Insights > Data Explorer > +Create Report or Insights > Data Explorer to receive notifications based on specific conditions defined in saved reports and dashboards.
-
-**Key Changes**:
-
-* Proactive Monitoring: Custom alerts allow users to proactively monitor data trends and anomalies.
-* Triggered Notifications: Users can receive notifications via email or other channels when specified conditions are met.
-* Customized Alerts: Alerts can be tailored to specific data points and thresholds, ensuring that users receive relevant notifications.
-
-[Explore the custom alert](https://docs.yellow.ai/docs/platform_concepts/growth/customalerts)
-
-
+Enjoy these improvements for better message creation!
