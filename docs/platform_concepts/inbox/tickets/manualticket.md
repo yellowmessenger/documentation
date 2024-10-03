@@ -92,7 +92,7 @@ The following are some key features available in the Yellow.ai inbox tickets scr
 | Redo                             | Redo an action that was undone.                                             |
 
 
-![image](https://hackmd.io/_uploads/S1K8N5hR0.png)
+![image](https://imgur.com/dtUVByv.png)
 
 
 
