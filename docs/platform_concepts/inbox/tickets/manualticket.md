@@ -113,7 +113,6 @@ The tickets screen in the Yellow.ai inbox comes with a set of predefined keyboar
 | Undo                     | Control + Z     | Cmd + Z     |
 | Redo                     | Control + Shift + Z | Cmd + Shift + Z |
 | Add a line break          | Shift + Enter   | Shift + Enter |
-| Send (within conversation)| Control + Enter | Cmd + Enter |
 
 #### Text formatting
 
@@ -123,31 +122,28 @@ The tickets screen in the Yellow.ai inbox comes with a set of predefined keyboar
 | Italicize                | Control + I     | Cmd + I     |
 | Underline                | Control + U     | Cmd + U     |
 | Strikethrough            | Control + Shift + S | Cmd + Shift + S |
-| Highlight                | Control + Shift + H | Cmd + Shift + H |
 | Code                     | Control + E     | Cmd + E     |
 
 #### Paragraph formatting
 
 | Command                  | Windows/Linux   | macOS       |
 | ------------------------ | --------------- | ----------- |
-| Apply normal text style   | Control + Alt + 0 | Cmd + Alt + 0 |
-| Apply heading style 1     | Control + Alt + 1 | Cmd + Alt + 1 |
-| Apply heading style 2     | Control + Alt + 2 | Cmd + Alt + 2 |
-| Apply heading style 3     | Control + Alt + 3 | Cmd + Alt + 3 |
-| Apply heading style 4     | Control + Alt + 4 | Cmd + Alt + 4 |
-| Apply heading style 5     | Control + Alt + 5 | Cmd + Alt + 5 |
-| Apply heading style 6     | Control + Alt + 6 | Cmd + Alt + 6 |
+| Apply normal text style   | Control + Alt + 0 | Cmd + option + 0 |
+| Apply heading style 1     | Control + Alt + 1 | Cmd + option + 1 |
+| Apply heading style 2     | Control + Alt + 2 | Cmd + option + 2 |
+| Apply heading style 3     | Control + Alt + 3 | Cmd + option + 3 |
+| Apply heading style 4     | Control + Alt + 4 | Cmd + option + 4 |
+| Apply heading style 5     | Control + Alt + 5 | Cmd + option + 5 |
+| Apply heading style 6     | Control + Alt + 6 | Cmd + option + 6 |
 | Ordered list              | Control + Shift + 7 | Cmd + Shift + 7 |
 | Bullet list               | Control + Shift + 8 | Cmd + Shift + 8 |
-| Task list                 | Control + Shift + 9 | Cmd + Shift + 9 |
-| Blockquote                | Control + Shift + B | Cmd + Shift + B |
 | Left align                | Control + Shift + L | Cmd + Shift + L |
 | Center align              | Control + Shift + E | Cmd + Shift + E |
 | Right align               | Control + Shift + R | Cmd + Shift + R |
 | Justify                   | Control + Shift + J | Cmd + Shift + J |
-| Code block                | Control + Alt + C   | Cmd + Alt + C   |
-| Subscript                 | Control + ,         | Cmd + ,         |
-| Superscript               | Control + .         | Cmd + .         |
+| Code block                | Control + Alt + C   | Cmd + option + C   |
+
+
 
 #### Text selection
 
