@@ -208,7 +208,6 @@ curl --location --request POST '{{domainName}}createTicket/{{companyName}}' \
 
 
 ```
-Click [here](http://localtest.locobuzz.com/Webhook/RoyalEnfieldChatbot) for {{domainName}}createTicket
 
 #### Response
 
@@ -272,7 +271,6 @@ curl --location --request POST '{{domainName}}sendMessage/{{companyName}}' \
 
 ```
 
-Refer [here](http://localtest.locobuzz.com/Webhook/RoyalEnfieldChatbot) for {{domainName}}sendMessage/
 
 #### Response
 
@@ -333,7 +331,6 @@ curl --location --request POST '{{domainName}}sendMedia/{{companyName}}' \
 
 ```
 
-Click [here](http://localtest.locobuzz.com/Webhook/RoyalEnfieldChatbot) for {{domainName}}sendMedia/.
 
 #### Response
 
@@ -348,24 +345,14 @@ Click [here](http://localtest.locobuzz.com/Webhook/RoyalEnfieldChatbot) for {{do
 
 ## Webhook
 
-| URL  | https://cloud.yellow.ai/integrations/genericIntegration/custom-live-agent  |
-| ---- | -------- |
+| | |
+-- | --- |
+| URL  | https://{{host}}/integrations/genericIntegration/custom-live-agent <br/>Note: Host: {rCode}.cloud.yellow.ai r1 for MEA, r2 for Jakarta, r4 for USA, r5 for Europe, r3 for Singapore. rCode is not needed for India. |
 | Method | POST     |
 |x-auth-token|Will be provided by yellow|
 |Response Code|200|
 
-:::note
- You need to append the region of your bot to the domain of the webhook url. r1/r2/r3/r4/r5 are the regions of your bot, you can also refer the following list for the same.
 
-* r1 = MEA
-* r2 = Jakarta
-* r4= USA
-* r5 = Europe
-* r3 = Singapore
-
-
-For example, if the domain is https://cloud.yellow.ai, you need to change it to https://r1.cloud.yellow.ai if the region of the bot is r1. If the bot belongs to India, you can use origin domain itself.
-:::
 
 ### Text message sent by the agent 
 
