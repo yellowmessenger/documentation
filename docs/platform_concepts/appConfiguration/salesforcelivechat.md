@@ -93,7 +93,7 @@ Fill in the required fields.
     **Language** | Language preferred by the user to chat with the live agent.
     **Agent Timeout** | The time duration (in minutes) after which an agent will be timed out if inactive. Default Value: 5 minutes
     **Enable queue updates** | Enable this for users to receive updates on their position in the queue during chat interactions.
-    **Enable sticky agent** | Enable this option to assign returning users to the same agent they previously interacted with.
+    **Enable sticky agent** | Enable this option to assign a specific agent to all the new communications from bot users.
     **Disconnect chat from** | Enable this to immediately close tickets for users waiting in the queue but not yet assigned to an agent.
     **Send queue updates event to** | Enable this to inform users about their queue position with real-time updates sent as events to the bot, allowing developers to customize bot flows based on the queue status.
     **Customise chat headers** | Enable this to personalize the bot headers with agent names and descriptions. The bot headers will be restored ot orginal settings once the ticket is closed.
