@@ -39,7 +39,8 @@ The latest update introduces a range of advanced formatting options that give ag
 - **Copy & Paste Links**: Effortlessly paste links without losing formatting.
 - **Font Hierarchy**: Adjust font size to organize content with headers for better readability.
 - **Text Alignment**: Align text left, center, right, or justify based on content needs.
-- **Inline Images**: Upload, copy-paste, or drag-and-drop images directly into messages. Attachments now support up to 25 MB.
+- **Inline Images**: Upload, copy-paste, or drag-and-drop images directly into messages. 
+- **Attachment limit**: Attachments now support up to 25 MB.
 - **Forward Inline Images**: Forward images embedded within messages to other recipients.
 - **Table Management**: Insert tables, add or delete columns, and remove entire tables for better data representation.
 - **Copy-paste Tables**: Copy and paste tables into messages without losing their structure.

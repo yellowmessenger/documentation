@@ -82,7 +82,8 @@ The following are some key features available in the Yellow.ai inbox tickets scr
 | Copy & paste links               | Easily copy and paste links into the editor.                                |
 | Font hierarchy                   | Adjust the size of fonts to reflect hierarchy (e.g., headers).              |
 | Alignment (Left, Center, Right, Justify) | Provides options to align text left, center, right, or justify.           |
-| Inline images (upload, copy-paste, drag & drop) | Supports inline images through upload, copy-paste, or drag-and-drop.  Maximum file size for attachments is 25 MB.                                 |
+| Inline images (upload, copy-paste, drag & drop) | Supports inline images through upload, copy-paste, or drag-and-drop.  |
+| Maximum limit | Maximum file size for attachments is 25 MB per message.  |
 | Forwarding inline images         | Forward inline images within conversations.                                 |
 | Table (insert table, add/delete column left/right, delete table) | Create tables and modify columns or delete tables. |
 | Copy-paste table                 | Allows users to copy and paste tables into the editor.                      |
