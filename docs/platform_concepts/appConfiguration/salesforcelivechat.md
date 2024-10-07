@@ -93,7 +93,7 @@ Fill in the required fields.
     **Language** | Language preferred by the user to chat with the live agent.
     **Agent Timeout** | The time duration (in minutes) after which an agent will be timed out if inactive. Default Value: 5 minutes
     **Enable queue updates** | Enable this for users to receive updates on their position in the queue during chat interactions.
-    **Enable sticky agent** | Enable this option to assign a specific agent to all the new communications from bot users.
+    **Enable sticky agent** | Enable this option to assign chats to a specific agent based on the agent ID provided in the Raise Ticket.
     **Disconnect chat from** | Enable this to immediately close tickets for users waiting in the queue but not yet assigned to an agent.
     **Send queue updates event to** | Enable this to inform users about their queue position with real-time updates sent as events to the bot, allowing developers to customize bot flows based on the queue status.
     **Customise chat headers** | Enable this to personalize the bot headers with agent names and descriptions. The bot headers will be restored ot orginal settings once the ticket is closed.
@@ -140,6 +140,7 @@ The following table contains the details of each field in the **Raise ticket** n
    Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
    Salesforce Live Chat Custom Fields|<pre lang="json"> [<br/> {<br/> "label": "Mobile",<br/>"value": "9999444443",<br/>"transcriptFields": [<br/>"Mobile_Number__c"<br/> ],<br/> "displayToAgent": true<br/>},<br/>{<br/>"label": "Chat",<br/>"value": "sessionURL",<br/>"transcriptFields": [<br/>"chat_transcript__c"<br/>],<br/>"displayToAgent": true<br/>}<br/>]</pre>|Array| The list of details provided by the user before initiating the chat with the live agent|
    |Salesforce Live Chat Custom Entities|<pre lang="json">[<br/> {<br/> "entityName":"Contact",<br/>"saveToTranscript":"contact",<br/> "linkToEntityName":"Case",<br/>"linkToEntityField":"ContactId",<br/>"entityFieldsMaps":<br/>[<br/>{<br/>"fieldName":"LastName",   <br/> "label":"LastName",<br/>"doFind":true,<br/>"isExactMatch":true,<br/> "doCreate":true<br/>},<br/> {<br/>"fieldName":"FirstName",<br/> "label":"FirstName",<br/> "doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>},<br/>{<br/>"fieldName":"Email",<br/>"label":"Email",<br/>"doFind":true,<br/>"isExactMatch":true,<br/>"doCreate":true<br/>}<br/> ]<br/>}<br/>]<br/></pre>|Array|The records created/ searched depending on what [EntityFieldsMaps](https://developer.salesforce.com/docs/atlas.en-us.live_agent_rest.meta/live_agent_rest/live_agent_rest_data_types.htm#EntityFieldMaps) has enabled.
+   | Agent ID | agent_12345 | Srting | Unique ID of the agent that you want to assign to the bot user. This applies only when the Sticky Agent option is enabled.
 
 **Advanced options**
 
