@@ -284,7 +284,7 @@ It extracts the `auth_token` from the API response, allowing for automated token
 
 ```javascript
 return new Promise(resolve => {
-  let { apiResponse } = ymlLib.args; // Retrieve API response
+  let { apiResponse } = ymLib.args; // Retrieve API response
   let token = JSON.parse(apiResponse.body); // Parse the response body to extract token
 
   console.log(token); // Print the token for debugging
