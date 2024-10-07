@@ -1,6 +1,6 @@
 ---
 title : Upcoming change (Inbox partner app enhancements)
-sidebar_label : Upcoming enhancements
+sidebar_label : Inbox partner app enhancements
 ---
 
 We're excited to introduce significant improvements to the mobile app interface, enhancing your overall chat experience across different types.

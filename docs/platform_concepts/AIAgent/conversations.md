@@ -38,6 +38,7 @@ To create new conversations, follow these steps:
 
 
 ------
+
 ## Failure settings
 
 When a user provides an unexpected input and the bot cannot comprehend it, this is considered a failure. In such cases, specific actions must be taken. Configure the failure settings for the conversation as follows:
