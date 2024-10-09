@@ -347,10 +347,11 @@ curl --location --request POST '{{domainName}}sendMedia/{{companyName}}' \
 
 | | |
 -- | --- |
-| URL  | https://{{host}}/integrations/genericIntegration/custom-live-agent <br/>Note: Host: {rCode}.cloud.yellow.ai r1 for MEA, r2 for Jakarta, r4 for USA, r5 for Europe, r3 for Singapore. rCode is not needed for India. |
+| URL  | https://{{host}}/integrations/genericIntegration/custom-live-agent <br/>**Note**: <br/>Host: `{rCode}`.cloud.yellow.ai <br/>- r1 for MEA, <br/>- r2 for Jakarta, <br/>- r4 for USA, <br/>- r5 for Europe, <br/>- r3 for Singapore. <br/>For India, `rCode` is not needed. |
 | Method | POST     |
 |x-auth-token|Will be provided by yellow|
 |Response Code|200|
+
 
 
 
