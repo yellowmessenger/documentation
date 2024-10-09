@@ -42,3 +42,16 @@ Check if you have entered the content in one of the variables across multiple li
 
 If the issue is not resolved, reach out to support for additional help.
 
+
+### WhatsApp Template Error - 1443
+
+**Issue:** Your WhatsApp template has been paused by Meta due to policy concerns.
+
+#### Prerequisites
+- You need access to the **“Engage”** module.
+
+#### Steps to resolve
+
+* **Follow Meta’s Guidelines:**  Review [Meta’s guidelines](https://en-gb.facebook.com/business/help/687938765816627) for creating high-quality conversations to avoid this error in the future.
+
+
