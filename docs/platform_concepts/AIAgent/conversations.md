@@ -37,7 +37,50 @@ To create new conversations, follow these steps:
    ![image](https://hackmd.io/_uploads/Hks7B5Q0C.png)
 
 
+-------
+
+## Configure conversations 
+
+### Add inputs 
+
+To capture and store user input in memory, you can configure the Agent. This is useful when you want to reuse the data later or apply it to other functions. For example, if the user's name is collected, the bot can use it in future interactions, personalizing the conversation and adding a human touch.
+
+To configure input storage, follow these steps:
+
+1. On the **Configure** tab, click **+Add Input** to add a new input field.
+
+   ![image](https://hackmd.io/_uploads/H1kH-MMk1g.png)
+
+2. Provide the following details:
+   - **Input description**: Describe what needs to be captured. For example, if you're collecting a user’s name, you can enter *User name*.
+   - **Store response in**: Select the variable where the captured input will be stored. You can create or use an existing global variable to store this response.
+   - **Validation instructions**: Provide instructions for validating the input. For example, if capturing a name, specify that only the first part should be stored as the first name.
+
+   ![image](https://hackmd.io/_uploads/B1qZD7fk1g.png)
+
+3. To delete an input, click the **Delete** icon.
+
+   ![image](https://hackmd.io/_uploads/Hkd1omz1yg.png)
+
+4. To configure additional settings, click the **Settings** icon for that input. You can define:
+   - **Mark as optional**: This marks the input as optional, meaning the agent won’t prompt the user again if they skip it.
+   - **Mask input**: If enabled, the input will be masked for privacy (e.g., confidential information like credit card numbers). The data won’t be visible to the agent or stored in the database.
+   - **Regex for validation**: If specific patterns (like an email address) are expected, provide the required regex pattern.
+   - **Examples of expected input**: Add sample input examples that the agent should expect based on the regex.
+
+   ![image](https://hackmd.io/_uploads/ByIpcqX00.png)
+
+> Inputs not marked as optional are considered mandatory.
+
+--------
+
+### Add skills 
+
+
+Coming soon!
+
 ------
+
 ## Failure settings
 
 When a user provides an unexpected input and the bot cannot comprehend it, this is considered a failure. In such cases, specific actions must be taken. Configure the failure settings for the conversation as follows:

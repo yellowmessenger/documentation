@@ -67,8 +67,15 @@ Follow the given steps to add new custom fields:
     ![](https://i.imgur.com/dgiHjOz.png)
 
 :::info
-Chat custom fields can have **Short text** and **Long text** as read-only fields (agents will not be able to edit this value). For example, if the customers Account number is a custom field, and the data entered by the customer must not be changed by the agents, it can be marked as read-only. 
-This is not available for Email custom fields.
+
+Chat custom fields can store any type of data as read-only (agents will not be able to edit the value). For example:
+- If a customer's account number is stored as a custom field and must remain unchanged by agents, it can be marked as read-only.
+- If CSAT (number type) custom field, set as read-only, the bot populate the data after collecting CSAT from the user, it cannot be updated by the agents. 
+
+When the read-only option is enabled, **Required to close ticket** and **Required to create ticket** settings will be disabled.
+
+Read-only option is not available for email custom fields.
+
 :::
 
 6. Click **Create**. Once these fields are added, they will be listed on the ticket/chat details section on the right sidebar.

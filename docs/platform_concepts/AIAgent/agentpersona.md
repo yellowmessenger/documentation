@@ -33,6 +33,7 @@ Agent persona defines how the AI agent interacts with users. A well-defined pers
 ### How Should the Agent Welcome Users?
 
 **Welcome message**: This is the initial message users will see when the bot opens.
+You can write a custom welcome message or select from an existing flow.
 
 > Example: Hey, I'm Mia from Yellow Banking. How can I assist with your banking needs today?
 
@@ -45,6 +46,8 @@ In fewer than 300 characters, explain the agent’s role. This helps the agent u
 ### How Does the AI Agent Handle Unanswered Queries?
 
 **Fallback message**: Specify the response when the agent cannot help with a query.
+You can write a custom fallback message or select from an existing flow.
+
 
 > Example: I couldn't assist with your current query as I am still learning. Please reach out to my human colleagues at support@yellow.ai.
 
