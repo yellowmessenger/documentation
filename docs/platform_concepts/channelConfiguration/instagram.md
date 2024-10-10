@@ -268,7 +268,7 @@ instagram-comment | Bot receives an event with the available information when a 
             
 4. Once you enable the required Instagram events, you can use these Instagram events to:
   
-  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event)
+  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event)
   * [Store user variables that come from user events into DB or User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations) and create personalized conversations using the stored data.
     
 

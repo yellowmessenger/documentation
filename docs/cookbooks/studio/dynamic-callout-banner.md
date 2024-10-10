@@ -42,7 +42,7 @@ To load the callout banner dynamically, consider the following prerequisites:
 
 To load the callout banner dynamically, follow these steps:
 
-1. Create a flow to trigger the event. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event).
+1. Create a flow to trigger the event. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event).
 2. Based on the date specified in the database it searches the info and passes the response to the send event node.
  
    ![](https://i.imgur.com/EhPbfwm.png)

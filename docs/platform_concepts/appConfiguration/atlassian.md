@@ -84,7 +84,7 @@ The Atlassian integration enables bot to perform the following actions:
 
    ![](https://i.imgur.com/qVFBaUO.png)
 
-3. You can set this event as a [start trigger for a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event). This flow will get triggered after a user is successfully authorized. [Build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to execute the desired action immediately after the user's authorization.
+3. You can set this event as a [start trigger for a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event). This flow will get triggered after a user is successfully authorized. [Build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to execute the desired action immediately after the user's authorization.
 
    ![](https://i.imgur.com/Jgg4B2s.png)
 
