@@ -379,7 +379,7 @@ After connecting your IVA Professional account with RingCX, you need to design t
 
 **Tip:**
 
-* You can also [create an intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances) for the RingCX account and [assign this intent as a trigger for this flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent) in the Start node. Whenever a user types the intent or utterance associated to this intent, the bot will automatically trigger this particular flow.
+* You can also [create an intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances) for the RingCX account and [assign this intent as a trigger for this flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-a-flow-using-intent) in the Start node. Whenever a user types the intent or utterance associated to this intent, the bot will automatically trigger this particular flow.
 * Settings in the **Channel options** do not apply to the RingChannel widget.
 :::
 

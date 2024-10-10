@@ -61,6 +61,7 @@ module.exports = {
           "cookbooks/studio/webview-node",
           "cookbooks/studio/user-inactivity",
           "cookbooks/studio/debug-logs",
+          "cookbooks/studio/error_page",
 
       ],
     }, 

@@ -22,4 +22,4 @@ curl --location 'https://cloud.yellow.ai/api/agents/settings/ticketUpdateEventSe
 }'
 ```
 
-This is a one-time process. After that, you'll start receiving **ticket-assigned-bot** events, which you can activate in the **Custom Event** section and [use it in your flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event). For steps to create a custom function, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events).
+This is a one-time process. After that, you'll start receiving **ticket-assigned-bot** events, which you can activate in the **Custom Event** section and [use it in your flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event). For steps to create a custom function, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub#custom-events).

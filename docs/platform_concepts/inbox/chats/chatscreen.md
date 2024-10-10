@@ -183,7 +183,7 @@ To execute a pre-configured flow within the **Automation** module during a live 
 
 **Prerequisites**
 
-- **Inbox admins** can configure [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) within the **Automation** module. These flows can be triggered by commonly used intents that agents may employ when conversing with customers. Learn how to trigger a flow using intents [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#11-trigger-a-flow-using-intent).
+- **Inbox admins** can configure [flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) and [intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) within the **Automation** module. These flows can be triggered by commonly used intents that agents may employ when conversing with customers. Learn how to trigger a flow using intents [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-a-flow-using-intent).
 - **Inbox agents** should be familiar with the available flows/intents within the Automation module that can facilitate their conversations.
 
 **Example**     

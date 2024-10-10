@@ -80,7 +80,7 @@ To let the yellow.ai bot know that the user has successfully logged in, you need
 
  ![](https://i.imgur.com/O37vUGE.png)
 
-2.  You can set this event as a [start trigger for a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event). This flow will get triggered after a user has successfully been authorized. [Build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to execute the desired action immediately after the user's authorization.
+2.  You can set this event as a [start trigger for a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event). This flow will get triggered after a user has successfully been authorized. [Build the flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) to execute the desired action immediately after the user's authorization.
 
  ![](https://i.imgur.com/vW8ByJJ.png)
 

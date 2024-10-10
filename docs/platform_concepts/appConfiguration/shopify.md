@@ -2151,7 +2151,7 @@ To enable events:
 
 3. Once you enable required shopify events, you can use these Shopify events to:
   
-  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event)
+  * [Trigger bot flows via events](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event)
   * [Initiate flow campaigns based on events](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#user-events)
   * [Store user variables that come from user events into user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data#store-user-properties-from-bot-conversations)
 

@@ -79,7 +79,7 @@ This flow is activated when the user explicitly expresses the need to speak with
 1. Create an [intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)  called `chat with agent` with relevant utterances indicating the customer's desire to speak with a human agent.
     > The utterances can include phrases such as "you are not able to understand me, I need someone else," "I want to talk to the manager," "connect me to someone," or "I can't understand, I want to talk to your executive."
 
-2. Set up a [new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-1-configure-start-trigger) with the start trigger configured as the intent `chat with agent`.         
+2. Set up a [new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#configure-start-trigger) with the start trigger configured as the intent `chat with agent`.         
     ![](https://hackmd.io/_uploads/r19ziNHHh.png)
 
 3. In the flow design, add nodes as needed and end the flow with a prompt node. Enter a message in the **Bot asks** field, which will be played before the call transfer. Click **make prompts smarter** icon and configure the [forwarding details](#fwd).       

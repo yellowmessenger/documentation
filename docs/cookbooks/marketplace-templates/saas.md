@@ -44,7 +44,7 @@ The most common use cases (flows) are prebuilt in this template for a SaaS indus
 These flows are explained in detail in the further sections. 
 
 :::note
-The start trigger is a starting point at which the flow gets triggered(or executed). A flow can get triggered when a particular intent/entity/event/URL is identified or a flow can get triggered when [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node is used in other flows. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-1-configure-start-trigger) to learn more.
+The start trigger is a starting point at which the flow gets triggered(or executed). A flow can get triggered when a particular intent/entity/event/URL is identified or a flow can get triggered when [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node is used in other flows. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#configure-start-trigger) to learn more.
 :::
 
 ---

@@ -575,7 +575,7 @@ To extract specific date values, you can use the following syntax:
  <summary>Will regex entity trigger a flow?
 </summary>
 
- Yes, <a href="https://docs.yellow.ai/docs/platform_concepts/studio/train/entities#add-regex-type-entities">create a regex entity</a> and set it as the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#12--trigger-flow-using-entities">start trigger for a flow</a>.
+ Yes, <a href="https://docs.yellow.ai/docs/platform_concepts/studio/train/entities#add-regex-type-entities">create a regex entity</a> and set it as the <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-entities">start trigger for a flow</a>.
  <div>
   <div>
 ​

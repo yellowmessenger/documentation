@@ -65,7 +65,7 @@ For instance, imagine a user inquiring about the top ten tourist attractions in 
    ![](https://i.postimg.cc/ZndkmG0b/prompt-1.gif)
 
 
-Refer to the comprehensive [Prompt Executor documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#113-prompt-executor-node) for further details.
+Refer to the comprehensive [Prompt Executor documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#112-prompt-executor-node) for further details.
 
 
 ### Simplify Product Discovery with Product Search Node

@@ -30,7 +30,7 @@ The prebuilt entities include:
 
 In order for the bot to identify and understand the entities, you need to add the entities and train the bot specifically on those entities. 
 
-To trigger flow using entities, you need to set entities as the start trigger for the flow. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#12--trigger-flow-using-entities)
+To trigger flow using entities, you need to set entities as the start trigger for the flow. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-entities)
 
 Yellow.ai platform offers 4 different types of entities:
 

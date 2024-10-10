@@ -277,7 +277,7 @@ Two steps to handle custom scenarios are as follows:
   - Offline Ticketing Not Enabled for Groups
   - Offline Ticket Queue Limit Reached
 
-2.[ Build a flow with relevant events added in the Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event).
+2.[ Build a flow with relevant events added in the Start Trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event).
 
 #### Working hours
 
@@ -386,7 +386,7 @@ To use this node:
   ![](https://imgur.com/X6grR3o.png)
 
 2. In **Event name**, provide a name for that event and in **Event description** descruibe the nature of that event. Click **Create Event**.
-3. Go back to **Build**, create a flow with the [start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#13-trigger-flow-using-event) as this event created in the previous step. This flow should essentially contain all the nodes required to execute the action when this event takes place.
+3. Go back to **Build**, create a flow with the [start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-event) as this event created in the previous step. This flow should essentially contain all the nodes required to execute the action when this event takes place.
 4. Then go to the flow which should send this event and include the **User event** node.
 
   ![](https://i.imgur.com/VtyLltz.png)
@@ -410,25 +410,9 @@ Use the **Data Formatter** node to convert the incoming data to JSON. For instan
 * **Parse json output**: Choose the function that filters out a certain data from the JSON. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) to know about writing functions.
 
 
-----
-
-### 1.12 Switch flow 
-
-This node lets you quit the current flow and launch another flow. The conversation switches from the current flow to another flow from that point and you cannot add any nodes post this. 
-
-For instance, you can use this to guide users from an initial greeting flow to a specific feedback flow, ensuring a smooth transition.
-
-Add the node and choose the flow to which the bot should switch from the flows drop-down.
-
-  ![](https://i.imgur.com/FnHGLKg.png)
-
-:::info
-The difference between a switch flow and an execute flow node lies in their behavior regarding the bot's return to the original flow. In the case of a switch flow, the bot does not return to the original flow from which the node was triggered. Howevers, with an execute flow node, the bot returns to the original flow after executing the designated new flow.
-:::
-
 ---
 
-### 1.13 Prompt Executor node
+### 1.12 Prompt Executor node
 
 :::info
 * This node works only if you have configured an LLM model. For steps on configuring the LLM model, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#model-configuration).
