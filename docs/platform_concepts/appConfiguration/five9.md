@@ -67,7 +67,7 @@ The following table contains the details of each field in the **Raise ticket** n
 | -------- | -------- | -------- |-----|
 |Message after ticket assignment|Requesting live agent connection.|String| The message will be displayed to the user after a ticket is successfully assigned to an agent.|
  |Name| John |String|Name of the user|
-   |Mobile| 9876543210| String|Mobile number of the user.|
+   |Mobile| 9870000000| String|Mobile number of the user.|
    Email|test@gmail.com|String|Email address of the user.
    Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created.|
   Campaign name | Chat | String | Select the campaign name that you have created. |

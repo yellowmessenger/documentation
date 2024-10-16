@@ -157,7 +157,7 @@ To connect your users to live chat agents on Microsoft, follow these steps:
 | Account name | String | Choose the Microsoft account to which the chats should be transferred | account1 |
 | Message after ticket assignment | String | The message that will be displayed to the end user after a ticket is successfully assigned to an agent | Requesting live agent connection. |
 | Name | String | Name of the end user | John |
-| Mobile | String | Mobile number of the end user | 9876543210 |
+| Mobile | String | Mobile number of the end user | 9870000000 |
 | Email | String | Email address of the end user. This is a mandatory field | test@gmail.com |
 | Query | String | The subject/topic/reason why the ticket was created | I have a concern regarding my flight ticket |
 | Priority | String | The priority of the ticket | MEDIUM |

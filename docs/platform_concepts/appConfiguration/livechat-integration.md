@@ -18,7 +18,7 @@ To connect with an Amazon Connect Live Agent, use this code-snippet
     app.raiseTicketForThirdPartyLiveChat({
              issue: "Test Issue",
              contact: {
-                 phone: "9876543210",
+                 phone: "9870000000",
                  name: "Raj",
                  email: "Test@email.com"
                },
@@ -38,7 +38,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name| Sample value |Data type |Description|
 | -------- | -------- | -------- |-------|
 | issue    | Test description   | String    |The subject/topic/reason why the ticket is created.
-|phone|9876543210| String |Mobile number of the end user.|
+|phone|9870000000| String |Mobile number of the end user.|
 |email|test@gmail.com | String |Email address of the end user.|
 name| Rajesh | String| Name of the end user.|
 |amazonConnectLiveAgentCustomFields| {customFields: {test: “yes”}}|Object| Custom key: value pairs associated with the end user required to raise a ticket. You need to pass the value of this key as {}, in case no key: pairs are required.|
@@ -85,7 +85,7 @@ To connect with an Avaya Live Agent, use this code-snippet
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    }
@@ -101,7 +101,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name| Sample value |Data type |Description|
 | -------- | -------- | -------- |-------|
 | issue    | Test description   | String    |The subject/topic/reason why the ticket is created.
-|phone|9876543210| String |Mobile number of the end user.|
+|phone|9870000000| String |Mobile number of the end user.|
 |email|test@gmail.com | String |Email address of the end user.|
 name| Rajesh | String| Name of the end user.|
 
@@ -148,7 +148,7 @@ To connect with a Custom Live Agent, use this code-snippet
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    },
@@ -168,7 +168,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name| Sample value |Data type |Description|
 | -------- | -------- | -------- |-------|
 | issue    | Test description   | String    |The subject/topic/reason why the ticket is created.
-|phone|9876543210| String |Mobile number of the end user.|
+|phone|9870000000| String |Mobile number of the end user.|
 |email|test@gmail.com | String |Email address of the end user.|
 name| Rajesh | String| Name of the end user.|
 |category|Sales|String | Category under which the ticket will be created.|
@@ -215,7 +215,7 @@ To connect to a Freshchat Live Agent, please use this code-snippet:
    app.raiseTicketForThirdPartyLiveChat({
         issue: "Test Issue",
        contact: {
-            phone: "9876543210",
+            phone: "9870000000",
             name: "Raj",
             email: "Test@email.com"
             },
@@ -238,7 +238,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name                 | Sample value           | Data type | Description                                                                                                                                                                   |
 | --------------------------| ----------------------| ---------| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | issue                      | Test description       | String   | The subject/topic/reason why the ticket is created.                                                                                                                         |
-| phone                      | 9876543210             | String   | Mobile number of the user.                                                                                                                                               |
+| phone                      | 9870000000             | String   | Mobile number of the user.                                                                                                                                               |
 | email                      | test@gmail.com         | String   | Email address of the user.                                                                                                                                               |
 | name                       | Rajesh                 | String   | Name of the user.                                                                                                                                                        |
 | assignedGroupId            | Sales                  | String   | Category under which the ticket will be created.                                                                                                                             |
@@ -290,7 +290,7 @@ apiresponse represents the raw response from the freshchat live agent create tic
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    }
@@ -307,7 +307,7 @@ This table consists of sample values, data types and descriptions for all the fi
 |  Field name  | Sample value | Data type  |Description|
 | -------- | -------- | -------- |-------|
 | issue    |  Test description    | String     |The subject/topic/reason why the ticket is created.
-|phone| 9876543210|String|Mobile number of the end user.|
+|phone| 9870000000|String|Mobile number of the end user.|
 email|test@gmail.com|String|Email address of the end user.
 name|Rajesh|String|Name of the end user.|
 
@@ -352,7 +352,7 @@ apiresponse represents the raw response from the kapture crm create ticket API
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    },
@@ -370,7 +370,7 @@ This table consists of sample values, data types and descriptions for all the fi
 |  Field name  | Sample value | Data type  |Description|
 | -------- | -------- | -------- |-------|
 | issue    |  Test description    | String     |The subject/topic/reason why the ticket is created.
-|phone| 9876543210|String|Mobile number of the end user.|
+|phone| 9870000000|String|Mobile number of the end user.|
 email|test@gmail.com|String|Email address of the end user.
 name|Rajesh|String|Name of the end user.|
 category| Sales|String|Category under which the ticket will be created.|
@@ -416,7 +416,7 @@ apiresponse represents the raw response from the locobuzz live agent create tick
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    },
@@ -435,7 +435,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---------|
 | issue     | Test description    | String     |The subject/topic/reason why the ticket is created.
-phone| 9876543210 | String |Mobile number of the end user.
+phone| 9870000000 | String |Mobile number of the end user.
 email| test@gmail.com |String| Email address of the end user.
 name| Rajesh| String|Name of the end user.|
 genesysCustomFields|{customFields: {test: “yes”}}|Object|Custom key:value pairs associated to the end user required to raise a ticket. You need to pass the value of this key as {}, in case no key:pairs are required.
@@ -477,7 +477,7 @@ apiresponse represents the raw response from genesys create ticket API
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    },
@@ -494,7 +494,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---------|
 | issue     | Test description     | String     |The subject/topic/reason why the ticket is created.
-phone|9876543210|String|Mobile number of the end user.|
+phone|9870000000|String|Mobile number of the end user.|
 email|test@gmail.com |String|Email address of the end user.|
 name | Rajesh|String |Name of the end user.|
 genesysCloudCustomFields| {customFields: {test: “yes”}} |Object | Custom key:value pairs associated to the end user required to raise a ticket. You need to pass the value of this key as {}, in case no key:pairs are required.|
@@ -538,7 +538,7 @@ apiresponse represents the raw response from genesys cloud create ticket API
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    },
@@ -555,7 +555,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---------|
 | issue     | Test description     | String     |The subject/topic/reason why the ticket is created.
-phone|9876543210|String|Mobile number of the end user.|
+phone|9870000000|String|Mobile number of the end user.|
 email|test@gmail.com |String|Email address of the end user.|
 name | Rajesh|String |Name of the end user.|
 intercomLiveAgentCustomFields| {customFields: {test: “yes”}} |Object | Custom key:value pairs associated to the end user required to raise a ticket. You need to pass the value of this key as {}, in case no key:pairs are required.|
@@ -597,7 +597,7 @@ apiresponse represents the raw response from the intercom create ticket API
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    }
@@ -614,7 +614,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---------|
 | issue     | Test description     | String     |The subject/topic/reason why the ticket is created.
-phone|9876543210|String|Mobile number of the end user.|
+phone|9870000000|String|Mobile number of the end user.|
 email|test@gmail.com |String|Email address of the end user.|
 name | Rajesh|String |Name of the end user.|
 
@@ -654,7 +654,7 @@ apiresponse represents the raw response from the nice-incontact create ticket AP
           app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    }
@@ -671,7 +671,7 @@ This table consists of sample values, data types and descriptions for all the fi
 | Field name | Sample value | Data type |Description|
 | -------- | -------- | -------- |---------|
 | issue     | Test description     | String     |The subject/topic/reason why the ticket is created.
-phone|9876543210|String|Mobile number of the end user.|
+phone|9870000000|String|Mobile number of the end user.|
 email|test@gmail.com |String|Email address of the end user.|
 name | Rajesh|String |Name of the end user.|
 
@@ -712,7 +712,7 @@ apiresponse represents the raw response from the talishma create ticket API
 app.raiseTicketForThirdPartyLiveChat({
                  issue: "Test Issue",
                  contact: {
-                     phone: "9876543210",
+                     phone: "9870000000",
                      name: "Raj",
                      email: "Test@email.com"
                    },
@@ -745,7 +745,7 @@ app.raiseTicketForThirdPartyLiveChat({
 | Field name|Sample value|Data type|Description |
 | -------- | -------- | -------- |-------------|
 |  issue|Test description|String|The subject, topic, and reason for creating the ticket.|
-|phone|9876543210|String|Mobile number of the user.
+|phone|9870000000|String|Mobile number of the user.
 |email|test@gmail.com|String|Email address of the user.
 |name|Rajesh|String|Name of the user.
 |salesforceLiveChatCustomFields|[<br/> {<br/> &nbsp;&nbsp;&nbsp;&nbsp;"label": "Mobile",<br/> &nbsp;&nbsp;&nbsp;&nbsp;"value": "9999444443",<br/> &nbsp;&nbsp;&nbsp;&nbsp;"entityMaps": [<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"entityName": "contact",<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fieldName": "Mobile_Number__c"<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/> &nbsp;&nbsp;&nbsp;&nbsp;],<br/> &nbsp;&nbsp;&nbsp;&nbsp;"transcriptFields": [<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"Mobile_Number__c"<br/> &nbsp;&nbsp;&nbsp;&nbsp;],<br/> &nbsp;&nbsp;&nbsp;&nbsp;"displayToAgent": true<br/> },<br/> <br/> {<br/> &nbsp;&nbsp;&nbsp;&nbsp;"label": "Chat",<br/> &nbsp;&nbsp;&nbsp;&nbsp;"value": "sessionURL",<br/> &nbsp;&nbsp;&nbsp;&nbsp;"entityMaps": [<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"entityName": "case",<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"fieldName": "chat_transcript__c"<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br/> &nbsp;&nbsp;&nbsp;&nbsp;],<br/> &nbsp;&nbsp;&nbsp;&nbsp;"transcriptFields": [<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"chat_transcript__c"<br/> &nbsp;&nbsp;&nbsp;&nbsp;],<br/> &nbsp;&nbsp;&nbsp;&nbsp;"displayToAgent": true<br/> }<br/>] |Array|The details provided by the user before initiating the chat.|
