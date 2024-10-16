@@ -34,7 +34,7 @@ Introducing Analyze 2.0, a significant upgrade designed to equip you with unpara
 
 In addition to these enhancements, we have refined **topic clustering algorithms** to **minimize duplicate topics** and further improved sentiment tagging for even more accurate results.
 
-[Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+[Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/topics)
 
 ---
 
@@ -49,3 +49,5 @@ We've updated our inbox editor with new features:
 * **Editing**: Undo, redo, 25 MB file limit.
 
 Enjoy these improvements for better message creation!
+
+[Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox/ticketeditor-upcomingchanges)
