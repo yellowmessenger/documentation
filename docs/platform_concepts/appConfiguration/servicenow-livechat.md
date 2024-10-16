@@ -134,7 +134,7 @@ You need to build a flow that redirects your users to the ServiceNow agents and 
 | -------- | -------- | -------- |-----|
 |Pre-Agent Assignment Message|Requesting live agent connection.|String| The message that will be displayed to the end user after a ticket is successfully assigned to an agent|
 |Name| Rajesh|String|Name of the end user|
-|Mobile| 9876543210| String|Mobile number of the end user|
+|Mobile| 9870000000| String|Mobile number of the end user|
 Email|test@gmail.com|String|Email address of the end user
 Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
 Priority|MEDIUM|String|The priority of the ticket|

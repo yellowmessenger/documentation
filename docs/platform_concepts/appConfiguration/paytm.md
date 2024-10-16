@@ -118,7 +118,7 @@ If there are multiple accounts, you can select from which account you want to pe
     |SendEmail|true/false|Boolean|Flag whether Email is to be sent to the customer by Paytm|
     |CustomerName|Mahesh|String|Name of the customer|
     |CustomerEmail|test@gmail.com|String|Email ID of the customer|
-    |CustomerMobile|9876543210|String|Mobile number of the customer|
+    |CustomerMobile|9870000000|String|Mobile number of the customer|
     |LinkNotes|Reference details|String|Add additional notes to your link. This won’t be shown to the customers|
 
 

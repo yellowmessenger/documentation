@@ -249,7 +249,7 @@ The below-mentioned table below consists of the sample value, data type, and des
 | Mandatory input params | Sample value |  Data type   | Description |
 | -------- | -------- | --- | -------- |
 |RequesterEmailId|test@gmail.com|String|Email address of the requester. If no contact exists with this email address in Freshservice, it will be added as a new contact|
-|RequesterMobileNumber|9876543210|String|Phone number of the requester. If no contact exists with this phone number in Freshservice, it will be added as a new contact|
+|RequesterMobileNumber|9870000000|String|Phone number of the requester. If no contact exists with this phone number in Freshservice, it will be added as a new contact|
 |TicketStatus|2/3/4/5|Number|Status of the ticket|
 |TicketPriority|1/2/3/4|Number|Priority of the ticket|
 |TicketSource|1/2/3/4/5/6/7/8/9/10|Number|The channel through which the ticket was created|
@@ -320,7 +320,7 @@ The below-mentioned table below consists of the sample value, data type, and des
     		"action": "Create Ticket",
 "dynamicParams": {
     "requesterEmailId": "test@gmail.com",
-    "requesterMobileNumber": "9876543210",
+    "requesterMobileNumber": "9870000000",
     "ticketStatus": 2,
     "ticketPriority": 3,
     "ticketSource": 2,

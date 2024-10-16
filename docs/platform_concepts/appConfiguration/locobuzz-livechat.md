@@ -115,7 +115,7 @@ The following table contains the details of each field of the **Raise ticket** n
 | -------- | -------- | -------- |-----|
 |Message after ticket assignment|Requesting live agent connection.|String| The message that will be displayed to the end user after a ticket is successfully assigned to an agent|
 |Name| Rajesh|String|Name of the end user|
-|Mobile| 9876543210| String|Mobile number of the end user|
+|Mobile| 9870000000| String|Mobile number of the end user|
 Email|test@gmail.com|String|Email address of the end user
 Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
 Priority|Medium|String|The priority of the ticket|

@@ -135,7 +135,7 @@ The following table contains the details of each field in the **Raise ticket** n
    | -------- | -------- | -------- |-----|
    |Message after ticket assignment|Requesting live agent connection.|String| The message that will be displayed to the end user after a ticket is successfully assigned to an agent|
    |Name| Rajesh|String|Name of the user|
-   |Mobile| 9876543210| String|Mobile number of the user|
+   |Mobile| 9870000000| String|Mobile number of the user|
    Email|test@gmail.com|String|Email address of the user
    Query|I have a concern regarding my flight ticket|String| The subject/topic/reason why the ticket was created|
    Salesforce Live Chat Custom Fields|<pre lang="json"> [<br/> {<br/> "label": "Mobile",<br/>"value": "9999444443",<br/>"transcriptFields": [<br/>"Mobile_Number__c"<br/> ],<br/> "displayToAgent": true<br/>},<br/>{<br/>"label": "Chat",<br/>"value": "sessionURL",<br/>"transcriptFields": [<br/>"chat_transcript__c"<br/>],<br/>"displayToAgent": true<br/>}<br/>]</pre>|Array| The list of details provided by the user before initiating the chat with the live agent|
