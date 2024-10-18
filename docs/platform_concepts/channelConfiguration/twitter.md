@@ -158,7 +158,7 @@ To setup a Twitter channel using the developer portal, follow these steps:
 9. On the User authentication settings page, configure the following:
    * Under **App permissions**, enable Read and write and Direct message to allow read tweets and profile information, read and post direct messages.
    * Under **Type of App**, enable **Web App, Automated App or Bot**.
-   * Under **App info**, enter the callback URL and the website URL.
+   * * In the **App Info** section, enter the callback URL and website URL. Set up the Twitter platform webhook for the callback URL, and use the client's website URL for the website integration.
    * Click **Save**.
 
    ![](https://i.imgur.com/bNwmAtj.png)
