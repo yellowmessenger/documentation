@@ -49,8 +49,21 @@ You can delete one or more users if required. However, you need to [export their
    ![](https://i.imgur.com/5sVQzmX.png)
 
 :::note
-You can also use this process to delete an individual user.
+* You can also use this process to delete an individual user. 
+* Known issue:
+   * When you select all entries and click **Delete**, it will delete the users displayed on the first page only. Users on subsequent pages will not be affected.
 :::
+
+### Delete all user records
+
+Currently, there’s no direct way to delete all user records at once, as this option is restricted due to feature gating. 
+
+To enable the **Delete all users** option temporarily for three days, you need to submit a request to the platform team via DevRev. Once enabled, you will find the option under the **Actions** drop-down.
+
+   ![](https://i.imgur.com/vX1ntTY.png)
+
+
+
 
 ### Delete user through API
 
