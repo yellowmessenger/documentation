@@ -25,7 +25,7 @@ Currently, Workflows are supported only for Helpdesk use cases.
 
 | Flows | Workflows |
 | -------- | -------- |
-|  <ul><li> Flows are created to take input from customers, interpret it, and respond with an appropriate output to resolve customer queries in bot conversations.  </li><li> Flows involve connecting different triggers and actions to understand customer inputs and provide outputs.   </li></ul>  Check out [detailed documentation on flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview)  | <ul><li> Workflows are simplified, **static flows** that run automatically when specific actions or events occur. </li><li> They operate in the **background** and do not require direct interaction with the customer. </li><li> No need to manually enable specific **events**; the selected workflow handles everything automatically. </li><li> The **context** of a workflow lasts only for the selected period and does not extend beyond that. </li> <li> Workflows enhance the bot's functionality by performing tasks such as calling functions, executing APIs, and conducting database operations.</li><li>Workflows can be linked to specific categories and invoked as needed within a conversation. </li></ul> |
+|  <ul><li> Flows are created to take input from customers, interpret it, and respond with an appropriate output to resolve customer queries in bot conversations.  </li><li>  Flows involve connecting different triggers and actions to understand customer inputs and provide outputs.   </li></ul>  Check out [detailed documentation on flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview)  | <ul><li> Workflows are simplified, **static flows** that run automatically when specific actions or events occur. </li><li> They operate in the **background** and do not require direct interaction with the customer. </li><li> No need to manually enable specific **events**; the selected workflow handles everything automatically. </li><li> The **context** of a workflow lasts only for the selected period and does not extend beyond that. </li> <li> Workflows enhance the bot's functionality by performing tasks such as calling functions, executing APIs, and conducting database operations.</li><li>Workflows can be linked to specific categories and invoked as needed within a conversation.  </li></ul> |
 
 
 ---------
@@ -55,13 +55,18 @@ You can select a condition within a start trigger to simplify data extraction an
 
 ![image](https://hackmd.io/_uploads/rk5dbx3qC.png)
 
+:::note
+Workflows are triggered only when an Agent updates anything on the chat.
+:::
+    
+    
 #### 1. When a new chat is created 
 
 Activates the workflow whenever a customer wants to connect to live agent.  Use this trigger to automate actions such as routing the chat to a team, sending an introductory message, or logging chat details.
 
 **Triggered**: When the bot connects the user to a live agent and a new live chat is created in Inbox           
 
-* **Add Condition**: Hours since created (Is / Greater than / Lesser than) 
+* **Add Condition**: Minutes/hours/days created since
 * **Values**: Select number of hours
 
 
@@ -77,7 +82,7 @@ Activates the workflow whenever a chat property (such as tags, custom fields, or
 
 | Tags | Custom field | Priority |
 | -------- | -------- | -------- |
-| <ul><li>  **Triggered**: When the Tag of the live chat is updated by the agent or the bot </li><li> **Add Condition**: Is (Contains all of / Contains any of / Contains none of)   </li><li>  **Values**: Tag value    </li></ul>   | <ul><li>  **Triggered**: When the Custom field of the live chat is updated by the agent or the bot </li><li> **Add Condition**: Is ( Is / Contains)   </li><li>  **Values**: Custom field value    </li></ul>      | <ul><li>  **Triggered**: When the Priority of the live chat is updated by the agent or the bot </li><li> **Add Condition**: Is (Is / Is not)   </li><li>  **Values**: Low, Medium, High, Urgent     </li></ul>      |
+| <ul><li>  **Triggered**: When the Tag of the live chat is updated by the agent </li><li> **Add Condition**: Is (Contains all of / Contains any of / Contains none of)   </li><li>  **Values**: Tag value    </li></ul>   | <ul><li>  **Triggered**: When the Custom field of the live chat is updated by the agent </li><li> **Add Condition**: Is ( Is / Contains)   </li><li>  **Values**: Custom field value    </li></ul>      | <ul><li>  **Triggered**: When the Priority of the live chat is updated by the agent </li><li> **Add Condition**: Is (Is / Is not)   </li><li>  **Values**: Low, Medium, High, Urgent     </li></ul>      |
 
 ![image](https://hackmd.io/_uploads/rkSCzSvaA.png)
 
@@ -101,7 +106,7 @@ Activates the workflow whenever a chat property (such as tags, custom fields, or
 
 Activates the workflow whenever an internal note is added to a chat. Use this trigger to notify relevant team members or update records based on internal notes.
 
-**Triggered**: When the agent or the bot adds an internal note in the live chat 
+**Triggered**: When the agent adds an internal note in the live chat 
 
 * **Add Condition**:  Is (Contains the word / Does not contain the word)
 * **Values**: Internal note content
@@ -443,17 +448,20 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 
 ## Best practices
 
+### Avoid trigger conflicts
 
+- **Prevent conflicts**: Ensure triggers don’t overlap to avoid unpredictable outcomes.
+- **Trigger order matters**: The last trigger activated will determine the outcome when multiple triggers apply.
+- **Manage conflicts**: Use nullifying actions or conditions (e.g., add a tag and use it in conditions) to control how triggers interact.
 
 ### Avoid Send reply with expected responses
 
-- Avoid using the send Reply action node in scenarios where you anticipate a response from end users and expect the AI agent to continue the conversation. This includes situations like sending CSAT surveys after a conversation is closed, Checking up on customers when they are in queue etc., Instead, utilize standard conversational flows to facilitate these interactions effectively.
-
+- Don't use **Send Reply** node when expecting user replies, such as in CSAT surveys or queue follow-ups. Use standard conversational flows to handle these interactions instead.
 
 ### Consolidate workflows
 
 - **Limit workflow splitting**: Avoid splitting workflows for the same use case or trigger to prevent delays during high load.
-- **Combine actions**: For example, When transferring a customer from AI Agent to a human support agent, rather than creating two separate workflows—one for sending a handoff message and another for routing to the correct group or agent—both actions can be handled within a single workflow by using multiple conditional branches. This approach ensures more efficient processing and avoids unnecessary execution delays.
+- **Combine actions**: For example, handle both handoff messaging and routing to a human agent in the same workflow using conditional branches.
 
 ### Ensure workflow uniqueness
 
@@ -468,10 +476,8 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 - When publishing workflows from one environment to another (e.g., Staging to Production), ensure the data referenced (e.g., agents, tags, groups) exists in both environments.  
   - Example: If you assign conversations to "John Snow" in Staging, ensure "John Snow" exists in Production for the workflow to function correctly.
 - Date-type custom fields are not supported in the Conditions or Actions nodes within workflows.
-- In the Assign action node, when selecting variables for a group, only the Auto-assign and Select a variable options are available for agents, as agents cannot be dynamically filtered based on the group passed through variables.
+- In the **Assign** action node, when selecting variables for a group, only the **Auto-assign** and **Select a variable** options are available for agents, as agents cannot be dynamically filtered based on the group passed through variables.
 - Once a workflow is published, it will only apply to active conversations and new conversations started after the publishing timestamp.
-- Global variables are not supported in workflows, and the Trigger Journey or Execute Flow node is unavailable in these workflows.
+- Global variables are not supported in workflows, and the **Trigger Journey** or **Execute Flow** node is unavailable in these workflows.
 - In cases of platform-wide disruptions or outages where workflows are paused for an hour or more, we will re-evaluate the conditions before resuming execution. If conditions are no longer valid, the workflow will be discarded; otherwise, execution will continue.
 - Tickets or bots that remain idle—where there have been no updates from the customer or agent for over 30 days—are not eligible for workflow execution, and events will not be triggered for these cases to avoid unnecessary processing.
-- If an action node encounters an error (e.g., passing an incorrect value) or a system failure, the system will automatically retry the action once. If the second attempt also fails, the workflow will stop and exit, without proceeding to the next nodes.
-- If multiple actions are combined within the Update Details node and any one of them fails after the retry attempt, the workflow will halt, terminating the execution without moving to subsequent steps.
