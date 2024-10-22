@@ -1393,6 +1393,7 @@ module.exports = {
             "platform_concepts/appConfiguration/nice-incontact",
             "platform_concepts/appConfiguration/salesforcelivechat",
             "platform_concepts/appConfiguration/servicenow-livechat",
+            "platform_concepts/channelConfiguration/sunshine_livechat",
             "platform_concepts/appConfiguration/talisma",
             "platform_concepts/appConfiguration/zoho-live-chat",
 
