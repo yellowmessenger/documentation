@@ -70,7 +70,7 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
 1. In the **Automation** module, go to **Build** and navigate to the flow where you want to add the live agent flow.
 2. In nodes selection, select **Integration** > **Raise a ticket** node.
 
-   ![](https://i.imgur.com/sXjz3W0.png)
+   <img src="https://i.imgur.com/sXjz3W0.png" width="50%"/>
 
     Option | Description
     ------ | ----------
@@ -82,7 +82,7 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
     Query | Choose the subject, topic or query that will be addressed. This provides context for the ticket.
 3. To customize how your tickets are handled and processed, you can enable and configure **Advanced options**. These options allow you to set ticket priority, enable auto-translation, and add custom fields, tags, and departments.
 
-   <img src="https://i.imgur.com/AuBHxb2.png" width="50%"/>
+   <img src="https://i.imgur.com/zoKGy8F.png" width="50%"/>
 
     Option | Description
     ------ | -----------
@@ -91,6 +91,9 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
     Priority | Choose the priority level for the ticket to ensure it’s handled according to its urgency.
     Translate user message | Choose `Yes` to enable automatic translation of user messages. This feature translates messages into the desired language for better communication with agents. By default, it will be `No`.
     Voice ticket options | If your system supports voice tickets, configure any relevant settings for handling voice-based interactions.
+    Custom message | Enable this option to personalize the notification sent to users when a ticket is assigned to an agent. If enabled, you need to configure **Agent assignment text** as explained below.
+    Agent assignment text | Enter the message to be sent when a ticket is assigned to a live agent. The text you enter here will replace the default system message.  <br/><br/>If a custom message is enabled but not set, or if the custom message option is disabled, the default notification will be sent automatically whenever a ticket is assigned to an agent.<br/><br/>**Default message**: "Your ticket number {{body.ticketId}} has been assigned to {{body.agentName}}."
+
 
 4. Use **Store response in** to save the user’s response to a variable. You can also create a new variable to store the response for future use.
 
