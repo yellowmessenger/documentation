@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbenthos=self.webpackChunkbenthos||[]).push([[97096],{587028:function(e,t,n){n.r(t);var o=n(667294),h=n(616550),s=n(362520);t.default=function(e){var t=e.location,n=e.dest,a=n.to;return n.forComponent&&(a=t.hash&&t.hash.length>1?s.join(a,t.hash.slice(1)):s.join(a,"about")),o.createElement(h.l_,{to:a})}}}]);
