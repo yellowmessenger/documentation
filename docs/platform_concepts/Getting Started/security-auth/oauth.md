@@ -126,16 +126,16 @@ To enable role-based access for your OAuth set-up, follow these steps:
 
 Add roles in your respective identity provider app. Following are the **supported user roles** in the yellow.ai platform:
 
-- Admin (Bot Admin)
-- Agent (Inbox (Agent))
-- Developer (Developer)
-- InsightsUser (Insights user)
-- EchoAdmin (Inbox admin)
-- Approver
-- Tester
-- Database (Database viewer)
-- EngagementAdmin (Engage admin)
-- EngagementUser (Engage viewer)
+- **Admin** (Bot admin)
+- **Agent** (Inbox agent)
+- **Developer** (Developer)
+- **InsightsUser** (Insights user)
+- **EchoAdmin** (Inbox admin)
+- **Approver**
+- **Tester**
+- **Database** (Database viewer)
+- **EngagementAdmin** (Engage admin)
+- **EngagementUser** (Engage viewer)
 
 
 :::note
