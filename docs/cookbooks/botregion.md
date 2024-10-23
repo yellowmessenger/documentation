@@ -35,7 +35,9 @@ This guide explains how to find out in which region your bot is hosted on the pl
 
 3. In the preview window, click on the redirection arrow which will open a new page. Check the URL in the new page; the region will be indicated as `region=`.
 
-**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkD3UrKhpu4f1mFAy4mm4wnEmv2MiVxrM-1GWTX2E-G65a_jfiwNUgmAwYfbWRp0fn1AgMIk69cLIv7PYZSaAcVoRJuG0Ad4PUxNsg921fhvAl8Ev3vbsOGkm3Xcyx_JQ04Y2bJkITm8XdyqS8PRTPfRoT?key=xTkWPmlh-46RdThnX_8ggQ)**
+
+![](https://imgur.com/vRkj5JH.png)
+
 
 **Sample URL Format** (In this URL, the region is specified after `region=`):
 ```
