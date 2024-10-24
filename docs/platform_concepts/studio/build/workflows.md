@@ -3,6 +3,7 @@ title: Workflows
 sidebar_label: Workflows
 ---
 
+
 ## Workflows overview 
 
 The Workflows module enables automation of any routine tasks in your team customer support workflow such as managing Helpdesk activities for support agents, scheduling cron jobs for data teams etc., These workflows function independently from the core AI Agent flow, operating in the background supplementing its operations seamlessly. This streamlines the management of routine tasks, allowing the team to focus on more complex and high-priority issues, improving overall efficiency and productivity.
@@ -123,7 +124,7 @@ Triggers the workflow when the status of a chat is changed. Use this to automate
 **Triggered**: When the status of a live chat is updated from Queued, Assigned, etc., to other statuses  
 * **Add Condition 1**:  Is 
 * **Values 1**: Assigned, Queued, Open, Missed, Resolved
-* **Add Condition 2**:  Hours since X (Is / Greater than / Lesser than )
+* **Add Condition 2**:  Hours since X 
 * **Values 2**: Hours
 
 ![image](https://hackmd.io/_uploads/r1Z2BBPaR.png)
@@ -274,7 +275,6 @@ You connect the start trigger (first node) to other nodes such as Action, Logic,
 | **Assign**                   | Transfer the live chat to a different member (Agent/Group) for handling.                                                   |
 | **Internal Note**            | Add important information about the ticket for internal use, such as customer interactions, troubleshooting steps, or action plans. |
 | **Reply**                    | Send a message in response to the live chat conversation.                                                                  |
-| **Raise New Ticket**         | Create a new support ticket to report an issue or request assistance.                                                      |
 | **Update Chat Details**       | Modify live chat information, such as:                                                                                     |
 |                              | - Add a tag to the existing list of tags.                                                                                  |
 |                              | - Remove a tag from the existing list of tags.                                                                             |
@@ -289,13 +289,19 @@ You connect the start trigger (first node) to other nodes such as Action, Logic,
 | **Database**                 | Insert, update, and search operations on database tables with this node.                                                   |
 | **Function**                 | Execute custom code written for a function with this node.                                                                 |
 | **Data Formatter**           | Convert data from CSV to JSON with this node.                                                                              |
-| **Set Language**             | Change the bot language to any of the configured languages using this node.                                                |
 | **Modifier**                 | Modify input variable (e.g., lowercase, capitalize, remove from end, replace with) and store the result.                   |
 | **Generate PDF/Image**       | Generate PDF/JPG/JPEG/PNG files with dynamic details using this node.                                                      |
 | **Analytics**                | Capture analytics with this node.                                                                                          |
 | **Send Event**               | Send an event with this node.                                                                                              |
 | **Sync Database**            | Update databases from external sources with this node.                                                                     |
-| **User Event**               | Trigger a user event for an existing event key with the set delay.                                                         |
+| **User Event**               | Trigger a user event for an existing event key with the set delay.              |
+
+<!-- 
+| **Raise New Ticket**         | Create a new support ticket to report an issue or request assistance.                                                      |
+| **Set Language**             | Change the bot language to any of the configured languages using this node.                                                |
+--> 
+
+
 :::info
 **Point to remember**
 An action node of a Workflow will not trigger another  Workflow. For example: 
@@ -330,7 +336,15 @@ All enabled integrations in the bot are available for connection. These integrat
 
 ---------
 
-### Step 5: Publish the workflow
+### Step 5: Test workflows 
+
+<<TBA>
+
+
+------------
+
+
+### Step 6: Publish the workflow
 
 Refer to [this](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) document to learn about publishing flows. 
 
@@ -359,7 +373,7 @@ On the workflow page, you can search for a workflow by entering its name or desc
 To edit a workflow, open the respective flow and make the changes. 
 - You can rename the workflow.
 - You can rearrange, modify existing nodes, and edit the details within connected nodes.
-- You can only change conditions within the start node, but you cannot edit the trigger itself.
+- You can change trigger condition inside a start trigger.
 
 ![image](https://hackmd.io/_uploads/S1BFPoDpC.png)
 
@@ -368,16 +382,23 @@ To edit a workflow, open the respective flow and make the changes.
 ### Delete a Workflow
 
 - To delete the entire workflow, click the **Delete** option next to the workflow name.
+- You can also Delete a flow by clicking the 3 dots on top of a workflow and click **Delete**. 
 
 ![image](https://hackmd.io/_uploads/HkyG_jva0.png)
+    
+![image](https://hackmd.io/_uploads/SJArLjfxyg.png)
+
 
 ### Clone a Workflow
 
 * To clone an existing workflow, click the **Clone** option and make any necessary changes to the duplicated flow.
+- You can also Clone a flow by clicking the 3 dots on top of a workflow and click **Clone**. 
 * When cloning a workflow, you can choose a new start trigger. The existing flow will remain intact, but will use the new trigger.
 
 
 ![image](https://hackmd.io/_uploads/rJfPuov6A.png)
+
+![image](https://hackmd.io/_uploads/SJArLjfxyg.png)
 
 
 
@@ -465,7 +486,7 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 
 ### Ensure workflow uniqueness
 
-- **No identical workflows**: While workflows can overlap, each active workflow must be unique to avoid conflicts.
+- **No identical workflows**: Each active workflow must be unique to avoid conflicts.
 
 ------
 
@@ -481,3 +502,6 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 - Global variables are not supported in workflows, and the **Trigger Journey** or **Execute Flow** node is unavailable in these workflows.
 - In cases of platform-wide disruptions or outages where workflows are paused for an hour or more, we will re-evaluate the conditions before resuming execution. If conditions are no longer valid, the workflow will be discarded; otherwise, execution will continue.
 - Tickets or bots that remain idle—where there have been no updates from the customer or agent for over 30 days—are not eligible for workflow execution, and events will not be triggered for these cases to avoid unnecessary processing.
+- Ticket-related action nodes, such as Update chat details and Assign, do not have fallback mechanisms like other action nodes. This means that if these actions fail, the workflow will stop immediately. Common scenarios where ticket-related actions may fail:
+    * Assigning a ticket to a non-existent agent through a variable.
+    * Incomplete configuration of the action node, causing it to enter an error state.
