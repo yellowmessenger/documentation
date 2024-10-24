@@ -186,8 +186,11 @@ module.exports = {
 }, 
 //end of integrations
 
+//Gen AI Beginner
 
-// Gen AI Advanced level
+"cookbooks/Gen-AI-beginner",
+
+//end of Gen AI Beginner
 
 {
   type: "category",
