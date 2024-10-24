@@ -1,13 +1,13 @@
 ---
-title: Standard report scheduling on overview, metrics and funnels page
+title: Standard report scheduling
 sidebar_label : Schedule raw reports 
 ---
 
-You can schedule raw reports available on the **Overview**, **Metrics**, and **Funnels** page for export as email alerts.
+You can schedule raw reports available on Insights for export as email alerts.
 
 To schedule and download all of your analytics as reports, follow the steps below: 
 
-1. Open **Insights** > **Overview**. 
+1. Open **Insights** and the respective page where you want to schedule a report. 
 2. To download individual reports, click on the **Export report** button next to the analytics. 
     ![](https://i.imgur.com/i8lZlQo.png)
 3. To schedule a report to receive email alerts, click **Schedule report**. 

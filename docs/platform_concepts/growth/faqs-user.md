@@ -11,6 +11,14 @@ A session can be a user session (when there’s user interaction with the bot) o
 </div>
 </details>
 
+<details>
+<summary> How to schedule reports of default table? </summary>
+<div>
+
+To schedule a default table report, follow these steps : <a href="https://docs.yellow.ai/docs/cookbooks/insights/scheduledefaultreports"> Flow completion rate </a>
+
+</div>
+</details>
 
 <details>
 <summary> Difference between a new user and a unique user? </summary>
