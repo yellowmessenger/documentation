@@ -3,7 +3,7 @@ title: Custom Live agent integration
 sidebar_label : Custom Live Agent
 ---
 
-## Introduction to custom live agent
+## Overview
 
 ### Custom Live Agent API Specification
 
@@ -26,6 +26,7 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
 1. The integration approach is defined to be channel agnostic, the 3rd party system should consider Yellow as the channel and Yellow will ensure that the end customer connects with an agent from any channel ( Web, WhatsApp etc.) 
 2. Details of the end customer’s channel will be transferred to the 3rd party system for proper reconciliation. 
 3. The receiving system should be able to define custom parameters for their consumption and as needed for the business use case. 
+
 
 ### Workflow Diagram
 
@@ -91,8 +92,8 @@ Use **Ticket-closed** in the **Raise Ticket node** to perform specific actions w
     Priority | Choose the priority level for the ticket to ensure it’s handled according to its urgency.
     Translate user message | Choose `Yes` to enable automatic translation of user messages. This feature translates messages into the desired language for better communication with agents. By default, it will be `No`.
     Voice ticket options | If your system supports voice tickets, configure any relevant settings for handling voice-based interactions.
-    Custom message | Enable this option to personalize the notification sent to users when a ticket is assigned to an agent. If enabled, you need to configure **Agent assignment text** as explained below.
-    Agent assignment text | Enter the message to be sent when a ticket is assigned to a live agent. The text you enter here will replace the default system message.  <br/><br/>If a custom message is enabled but not set, or if the custom message option is disabled, the default notification will be sent automatically whenever a ticket is assigned to an agent.<br/><br/>**Default message**: "Your ticket number {{body.ticketId}} has been assigned to {{body.agentName}}."
+    Custom message | Enable this option to personalize the notification sent to users when a ticket is assigned to an agent from queue. If enabled, you need to configure **Agent assignment text** as explained below.
+    Agent assignment text | Enter the message to be sent when a ticket is assigned to a live agent from queue. The text you enter here will replace the default system message.  <br/><br/>If a custom message is enabled but not set, or if the custom message option is disabled, the default notification will be sent automatically whenever a ticket is assigned to an agent from queue.<br/><br/>**Default message**: "Your ticket number {{body.ticketId}} has been assigned to {{body.agentName}}."
 
 
 4. Use **Store response in** to save the user’s response to a variable. You can also create a new variable to store the response for future use.
