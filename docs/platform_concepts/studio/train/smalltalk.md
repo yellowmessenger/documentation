@@ -5,7 +5,10 @@ sidebar_label: Small talk
 
 Small talk adds a friendly touch to conversations with the bot, making interactions feel more natural and engaging. It is particularly useful when users want to chat casually or discuss topics that the bot has not been specifically trained on. 
 
-Since users often prefer shorter sentences and enjoy casual chats, small talk helps bridge the gap between structured queries and relaxed conversation.
+Since users often prefer shorter sentences and enjoy casual chats, small talk helps bridge the gap between structured queries and relaxed conversation. You cannot disable this feature. If you want to disable this feature, you need to contact [support](mailto:support@yellow.ai).
+
+Small talk cannot be disabled directly. If you need to disable, please contact [support](mailto:support@yellow.ai).
+
 
 Examples of Small talk:
 
