@@ -333,7 +333,7 @@ All enabled integrations in the bot are available for connection. These integrat
 
 ### Step 5: Test workflows 
 
-<<TBA>
+Coming soon!
 
 
 ------------
