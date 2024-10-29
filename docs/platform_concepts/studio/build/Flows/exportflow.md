@@ -3,19 +3,19 @@ title: Export flows
 sidebar_label: Export flows
 ---
 
-Flow templates offer a convenient method for exporting and reusing existing flows when building future bots. By exporting flow templates, you can easily replicate successful bot configurations and tailor them to different use cases or customize them based on specific requirements in very less time.
+Flow templates offer a convenient method for exporting and reusing existing flows when building future AI-agents. By exporting flow templates, you can easily replicate successful AI-agent configurations and tailor them to different use cases or customize them based on specific requirements in very less time.
 
-Exported flow templates will be accessible in **Marketplace**'s **Access** section, where they can be used as pre-built templates for creating new bots. 
+Exported flow templates will be accessible in **Marketplace**'s **Access** section, where they can be used as pre-built templates for creating new AI-agents. 
 
 :::note
-- Export flow will work only for bots created after Oct 2021.
-- Export flow will work for all the bots irrespective of region. While cloning flows to another bot, source and destination has to be of the same region.
+- Export flow will work only for AI-agents created after Oct 2021.
+- Export flow will work for all the AI-agents irrespective of region. While cloning flows to another AI-agent, source and destination has to be of the same region.
 :::
 
 
 ## <a name="home"></a> 1. Export flow template
 
-You can export one or more bot flows as a template with data from databases and FAQs. Mandatory details, such as key features and supported channels, help others understand the template's purpose and suitability.
+You can export one or more AI-agent flows as a template with data from databases and FAQs. Mandatory details, such as key features and supported channels, help others understand the template's purpose and suitability.
 
 ### 1.1 Export flow templates to marketplace
 
@@ -59,7 +59,7 @@ You can export one or more bot flows as a template with data from databases and 
 
 * **Myself**: Publish and reuse the template for your own use.
 * **Training**: Only users with access to the specific subscription can use the exported template.
-* **Public**: The template is published in the Marketplace and publicly available within the bot after admin approval.
+* **Public**: The template is published in the Marketplace and publicly available within the AI-agent after admin approval.
 
    <img src="https://i.imgur.com/Oy5FoDN.png" alt="drawing" width="50%"/>
 

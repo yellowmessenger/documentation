@@ -1,10 +1,10 @@
 ---
-title: Debug your bot flows
-sidebar_label : Debug bot flows
+title: Debug your AI-agent flows
+sidebar_label : Debug AI-agent flows
 ---
 
 
-Debugging flows involve finding and fixing issues in the bot's conversations to ensure smooth user interactions. This helps enhance performance and reliability by addressing errors caused by factors like logical mistakes, syntax errors, and missing information in the automated conversations.
+Debugging flows involve finding and fixing issues in the AI-agent's conversations to ensure smooth user interactions. This helps enhance performance and reliability by addressing errors caused by factors like logical mistakes, syntax errors, and missing information in the automated conversations.
 
 Here are some frequently encountered errors and their corresponding solutions.
 
@@ -24,7 +24,7 @@ For instance, you can print the user's input email right after the email node to
 
 ### Utilize the debug feature
 
-When you [test a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow) in your bot, you'll notice that the bot automatically conducts a step-by-step debugging of each phase of the conversation. It provides insights into the occurrences at each conversation stage. This feature is valuable for identifying the precise point in the flow where the bot's functionality encountered an issue.
+When you [test a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow) in your AI-agent, you'll notice that the AI-agent automatically conducts a step-by-step debugging of each phase of the conversation. It provides insights into the occurrences at each conversation stage. This feature is valuable for identifying the precise point in the flow where the AI-agent's functionality encountered an issue.
       
    <img src="https://i.imgur.com/andTLxy.png" alt="drawing" width="30%"/>
 

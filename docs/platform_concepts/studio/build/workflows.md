@@ -25,14 +25,14 @@ Currently, Workflows are supported only for Helpdesk use cases.
 
 | Flows | Workflows |
 | -------- | -------- |
-|  <ul><li> Flows are created to take input from customers, interpret it, and respond with an appropriate output to resolve customer queries in bot conversations.  </li><li>  Flows involve connecting different triggers and actions to understand customer inputs and provide outputs.   </li></ul>  Check out [detailed documentation on flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview)  | <ul><li> Workflows are simplified, **static flows** that run automatically when specific actions or events occur. </li><li> They operate in the **background** and do not require direct interaction with the customer. </li><li> No need to manually enable specific **events**; the selected workflow handles everything automatically. </li><li> The **context** of a workflow lasts only for the selected period and does not extend beyond that. </li> <li> Workflows enhance the bot's functionality by performing tasks such as calling functions, executing APIs, and conducting database operations.</li><li>Workflows can be linked to specific categories and invoked as needed within a conversation.  </li></ul> |
+|  <ul><li> Flows are created to take input from customers, interpret it, and respond with an appropriate output to resolve customer queries in AI-agent conversations.  </li><li>  Flows involve connecting different triggers and actions to understand customer inputs and provide outputs.   </li></ul>  Check out [detailed documentation on flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview)  | <ul><li> Workflows are simplified, **static flows** that run automatically when specific actions or events occur. </li><li> They operate in the **background** and do not require direct interaction with the customer. </li><li> No need to manually enable specific **events**; the selected workflow handles everything automatically. </li><li> The **context** of a workflow lasts only for the selected period and does not extend beyond that. </li> <li> Workflows enhance the AI-agent's functionality by performing tasks such as calling functions, executing APIs, and conducting database operations.</li><li>Workflows can be linked to specific categories and invoked as needed within a conversation.  </li></ul> |
 
 
 ---------
 
 ## Set up workflows 
 
-Follow these steps to use a work flow in your bot: 
+Follow these steps to use a work flow in your AI-agent: 
 
 ### Step 1: Open Automation
 
@@ -64,7 +64,7 @@ Workflows are triggered only when an Agent updates anything on the chat.
 
 Activates the workflow whenever a customer wants to connect to live agent.  Use this trigger to automate actions such as routing the chat to a team, sending an introductory message, or logging chat details.
 
-**Triggered**: When the bot connects the user to a live agent and a new live chat is created in Inbox           
+**Triggered**: When the AI-agent connects the user to a live agent and a new live chat is created in Inbox           
 
 * **Add Condition**: Minutes/hours/days created since
 * **Values**: Select number of hours
@@ -289,7 +289,7 @@ You connect the start trigger (first node) to other nodes such as Action, Logic,
 | **Database**                 | Insert, update, and search operations on database tables with this node.                                                   |
 | **Function**                 | Execute custom code written for a function with this node.                                                                 |
 | **Data Formatter**           | Convert data from CSV to JSON with this node.                                                                              |
-| **Set Language**             | Change the bot language to any of the configured languages using this node.                                                |
+| **Set Language**             | Change the AI-agent language to any of the configured languages using this node.                                                |
 | **Modifier**                 | Modify input variable (e.g., lowercase, capitalize, remove from end, replace with) and store the result.                   |
 | **Generate PDF/Image**       | Generate PDF/JPG/JPEG/PNG files with dynamic details using this node.                                                      |
 | **Analytics**                | Capture analytics with this node.                                                                                          |
@@ -322,7 +322,7 @@ For details on the Condition node, refer to the section above.
 
 #### Supported integration nodes 
 
-All enabled integrations in the bot are available for connection. These integrations will be marked as **Connected**. If an integration is not connected, you can select it from the list and connect it through the Extensions.
+All enabled integrations in the AI-agent are available for connection. These integrations will be marked as **Connected**. If an integration is not connected, you can select it from the list and connect it through the Extensions.
 
 ![image](https://hackmd.io/_uploads/Sy4pb2waR.png)
 
@@ -471,7 +471,7 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 
 ## Disclaimer
 
-- The time it takes for automations to run depends on the number of workflows, nodes, and tickets being processed in a bot.
+- The time it takes for automations to run depends on the number of workflows, nodes, and tickets being processed in a AI-agent.
 - Data referenced in workflows (e.g., Agents, Groups, Tags, Custom Fields) is tied to the environment you're working in—Sandbox, Staging/Development, or Production/Live. 
 - When publishing workflows from one environment to another (e.g., Staging to Production), ensure the data referenced (e.g., agents, tags, groups) exists in both environments.  
   - Example: If you assign conversations to "John Snow" in Staging, ensure "John Snow" exists in Production for the workflow to function correctly.
@@ -480,4 +480,4 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 - Once a workflow is published, it will only apply to active conversations and new conversations started after the publishing timestamp.
 - Global variables are not supported in workflows, and the **Trigger Journey** or **Execute Flow** node is unavailable in these workflows.
 - In cases of platform-wide disruptions or outages where workflows are paused for an hour or more, we will re-evaluate the conditions before resuming execution. If conditions are no longer valid, the workflow will be discarded; otherwise, execution will continue.
-- Tickets or bots that remain idle—where there have been no updates from the customer or agent for over 30 days—are not eligible for workflow execution, and events will not be triggered for these cases to avoid unnecessary processing.
+- Tickets or AI-agents that remain idle—where there have been no updates from the customer or agent for over 30 days—are not eligible for workflow execution, and events will not be triggered for these cases to avoid unnecessary processing.

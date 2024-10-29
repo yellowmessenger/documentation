@@ -1,57 +1,57 @@
 ---
-title : Publish your bot
-sidebar_label : Publish your bot
+title : Publish your AI-agent
+sidebar_label : Publish your AI-agent
 ---
 
-Publishing a bot involves deploying bot changes to the live environment. Only a **Super Admin** can publish a bot for the first time. Each bot environment will have a unique bot ID. It's important to understand that [database](https://docs.yellow.ai/docs/platform_concepts/studio/database#docusaurus_skipToContent_fallback) records will not automatically transfer to the live environment upon publication. They must be configured separately in both the development and live environments.
+Publishing a AI-agent involves deploying AI-agent changes to the live environment. Only a **Super Admin** can publish a AI-agent for the first time. Each AI-agent environment will have a unique AI-agent ID. It's important to understand that [database](https://docs.yellow.ai/docs/platform_concepts/studio/database#docusaurus_skipToContent_fallback) records will not automatically transfer to the live environment upon publication. They must be configured separately in both the development and live environments.
 
-Only certain user roles can approve the bot. To know about user roles in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
+Only certain user roles can approve the AI-agent. To know about user roles in detail, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
 
 :::info
-To publish your bot, it's mandatory to configure [Fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#fallback-flow).
+To publish your AI-agent, it's mandatory to configure [Fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#fallback-flow).
 :::
 
 
 <!--
 When you upgrade from freemium to premium:
-- All flows, intents, entities, and bot skins in development will be available within sandbox/staging and the components configured (insights, engage) in live will be available in production. 
+- All flows, intents, entities, and AI-agent skins in development will be available within sandbox/staging and the components configured (insights, engage) in live will be available in production. 
 - 
 
- you must configure everything in the Sandbox environment, and then publish your flows and bot to the Staging environment for testing.
+ you must configure everything in the Sandbox environment, and then publish your flows and AI-agent to the Staging environment for testing.
 
 
-All flows, intents, entities, and bot skins will be transferred from the Sandbox to the Staging environment upon publishing.
-You can’t selectively retain flows in Staging; everything configured in Sandbox is published to Staging. Any flows exclusive to Staging but not in Sandbox will be lost if you choose to Publish bot.
+All flows, intents, entities, and AI-agent skins will be transferred from the Sandbox to the Staging environment upon publishing.
+You can’t selectively retain flows in Staging; everything configured in Sandbox is published to Staging. Any flows exclusive to Staging but not in Sandbox will be lost if you choose to Publish AI-agent.
 While you can make modifications and publish flows in the Staging environment, it’s recommended to primarily use it for testing and make all significant changes in the Sandbox first.
 
 -->
 
 
-## Publish bot to go live
+## Publish AI-agent to go live
 
-To publish a bot to live mode follow these steps:
+To publish a AI-agent to live mode follow these steps:
 
-1. Ensure the bot is in **Sandbox**/**Development** mode. Go to **Automation** > **Build** > **Publish changes**. 
+1. Ensure the AI-agent is in **Sandbox**/**Development** mode. Go to **Automation** > **Build** > **Publish changes**. 
 
    ![](https://i.imgur.com/mVfjm0G.png)
 
 
 2. In the following screen, fill in the following fields.
 
-* Click **Configure more channels** to configure further more channels to the bot in the upcoming stage.
-*  In **Approvers**, you will see the list of bot approvers added by the **Super admin**. This cannot be modified. All the approvers will be notified when you raise a publish request.
-* In **Comment**, add a message to the approver citing the changes made in the bot.
+* Click **Configure more channels** to configure further more channels to the AI-agent in the upcoming stage.
+*  In **Approvers**, you will see the list of AI-agent approvers added by the **Super admin**. This cannot be modified. All the approvers will be notified when you raise a publish request.
+* In **Comment**, add a message to the approver citing the changes made in the AI-agent.
 
    <img src="https://i.imgur.com/vKGHdg5.png" alt="drawing" width="50%"/>
 
 3. Click **Publish**. The changes will move to **Staging**. 
-4. Change your bot environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. Bots with only **Development** and **Live** modes need not do this. When you publish the changes, bot sends the approval request to approvers.
+4. Change your AI-agent environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. AI-agents with only **Development** and **Live** modes need not do this. When you publish the changes, AI-agent sends the approval request to approvers.
 
 :::info
-To learn about different bot enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+To learn about different AI-agent enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
 :::
 
-## Approve a bot publish request
+## Approve a AI-agent publish request
 
 1. Users with **Approver** access(as provided by **Super Admin**) will receive an email with the content like the image below. Any one of them can approve, to approve click **Review Request**.
 
@@ -68,7 +68,7 @@ To learn about different bot enviornments (modes), click [here](https://docs.yel
 
 ## Publish specific flows
 
-Publishing certain flows only helps you to release specific flows within your bot, allowing you to observe results while continuing to refine other components. This approach enables you to swiftly address issues or implement copy changes after the initial release without interrupting ongoing work. Additionally, it provides the opportunity to proactively plan your development efforts based on feedback received from the currently published flows, fostering an agile and responsive development process.
+Publishing certain flows only helps you to release specific flows within your AI-agent, allowing you to observe results while continuing to refine other components. This approach enables you to swiftly address issues or implement copy changes after the initial release without interrupting ongoing work. Additionally, it provides the opportunity to proactively plan your development efforts based on feedback received from the currently published flows, fostering an agile and responsive development process.
 
 To access **Publish selected flow**s, follow these steps: 
 
@@ -85,14 +85,14 @@ To access **Publish selected flow**s, follow these steps:
     
    <img src="https://i.imgur.com/Uem2lET.png" alt="drawing" width="50%"/>
 
-3. Click the **Publish** button. The changes will move to **Staging**. Change your bot environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. Bots with only **Development** and **Live** modes need not do this. When you publish the changes, bot sends the approval request to approvers. Click [here](#approve-a-bot-publish-request) to know about approving the publish request.
+3. Click the **Publish** button. The changes will move to **Staging**. Change your AI-agent environment to **Staging**, make changes (if any) and follow steps 1,2,3. The publish approval request will be sent to the Approver. AI-agents with only **Development** and **Live** modes need not do this. When you publish the changes, AI-agent sends the approval request to approvers. Click [here](#approve-a-bot-publish-request) to know about approving the publish request.
 
 :::info
-- When you publish your bot in the Sandbox, all the parts like flows, intents, entities, and bot skins will also move to Staging and later to Production.
+- When you publish your AI-agent in the Sandbox, all the parts like flows, intents, entities, and AI-agent skins will also move to Staging and later to Production.
 - You cannot pick and choose which parts go to Staging; everything you set up in Sandbox will go there when you publish.
 - If you create something new in Staging that wasn't in Sandbox, you can publish it once. The next time you publish from Sandbox, anything you added exclusively in Staging will be lost and won't be in Production.
 
-To learn about different bot enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
+To learn about different AI-agent enviornments (modes), click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env).
 
 :::   
 
@@ -100,7 +100,7 @@ To learn about different bot enviornments (modes), click [here](https://docs.yel
 
 ## Cancel publish request
 
-If you wish to make changes to the current flow/bot, or if you've raised a publish request by mistake or prematurely before finalizing the end result, you can cancel the publish request by:
+If you wish to make changes to the current flow/AI-agent, or if you've raised a publish request by mistake or prematurely before finalizing the end result, you can cancel the publish request by:
 
 1. Go to **Publish changes** > select **Publish bot** or **Publish selected flows**(depending on the choice you made to raise the publish request).
 
@@ -112,14 +112,14 @@ If you wish to make changes to the current flow/bot, or if you've raised a publi
 
 ## Revert published changes 
 
-Revert option is a handy tool for fixing bugs in the live version. It lets you roll back to any previous version of your bot. The **Revert** feature is available only in the **live/production** environment. Only **Admins** can have access to this option.
+Revert option is a handy tool for fixing bugs in the live version. It lets you roll back to any previous version of your AI-agent. The **Revert** feature is available only in the **live/production** environment. Only **Admins** can have access to this option.
 
 To revert changes:
 
-1. Go to a bot, ensure the bot is in **Live/Production** mode and go to **Automation** > **Build** > **Revert**.
+1. Go to a AI-agent, ensure the AI-agent is in **Live/Production** mode and go to **Automation** > **Build** > **Revert**.
     ![](https://i.imgur.com/2U4KqrJ.png)
 
-2. Select the version to which the bot should be reverted.
+2. Select the version to which the AI-agent should be reverted.
 
    ![](https://i.imgur.com/7XplLfu.png)
 

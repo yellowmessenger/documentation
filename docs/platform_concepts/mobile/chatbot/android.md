@@ -217,6 +217,11 @@ ymChat.config.version = 2;
 Speech to text can be enabled by setting the enableSpeech flag present in config. Default value is `false`
 
 ```java
+ymChat.config.speechConfig.enableSpeech = true
+```
+The following config has deprecated in `v2.15.0`:
+
+```java
 ymChat.config.enableSpeech = true
 ```
 
@@ -226,18 +231,28 @@ To enable Speech to text please add record audio permission  (`<uses-permission 
 
 #### Mic Icon Color
 
-You can change the mic button icon color by setting `fabIconColor` in `enableSpeechConfig` of YMConfig:
+You can change the mic button icon color by setting `fabIconColor` in `speechConfig` of YMConfig:
 
 ```java
-ymChat.config.enableSpeechConfig.fabIconColor = "#000000"
+ymChat.config.speechConfig.fabIconColor = "#000000"
 ```
 
 ### Mic Background Color
 
-You can change the mic button bakground color by setting `fabBackgroundColor` in `enableSpeechConfig` of YMConfig:
+You can change the mic button bakground color by setting `fabBackgroundColor` in `speechConfig` of YMConfig:
+
 
 ```java
-ymChat.config.enableSpeechConfig.fabBackgroundColor = "#0000FF"
+ymChat.config.speechConfig.fabBackgroundColor = "#0000FF"
+```
+
+
+###  Set Mic Button Movable
+
+You can set the mic button as movable or static by setting `isButtonMovable` in `speechConfig` of YMConfig. Default value is `true`.
+
+```java
+ymChat.config.speechConfig.isButtonMovable = true
 ```
 
 ### Hide Input Bar

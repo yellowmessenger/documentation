@@ -225,6 +225,13 @@ To change the background color of the mic button, use the `setMicBackgroundColor
 ```javascript
 YMChat.setMicBackgroundColor("#0000FF");
 ```
+####  Set Mic Button Movable
+
+To set the mic button as movable or static, use the `setMicButtonMovable` function:
+
+```javascript
+YMChat.setMicButtonMovable(true);
+```
 
 ### Hide Input Bar
 

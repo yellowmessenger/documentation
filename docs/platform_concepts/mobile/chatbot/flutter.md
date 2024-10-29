@@ -187,6 +187,14 @@ To change the background color of the mic button, use the `setMicBackgroundColor
 YmChat.setMicBackgroundColor("#0000FF");
 ```
 
+####  Set Mic Button Movable
+
+To set the mic button as movable or static, use the `setMicButtonMovable` function:
+
+```dart
+YmChat.setMicButtonMovable(true);
+```
+
 ### Hide Input Bar
 
 You can hide the input bar while bot is loading by calling the `setDisableActionsOnLoad` API . Default value is `false`

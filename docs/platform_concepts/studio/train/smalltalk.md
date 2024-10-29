@@ -3,7 +3,7 @@ title: Small talk
 sidebar_label: Small talk
 ---
 
-Small talk adds a friendly touch to conversations with the bot, making interactions feel more natural and engaging. It is particularly useful when users want to chat casually or discuss topics that the bot has not been specifically trained on. 
+Small talk adds a friendly touch to conversations with the AI-agent, making interactions feel more natural and engaging. It is particularly useful when users want to chat casually or discuss topics that the bot has not been specifically trained on. 
 
 Since users often prefer shorter sentences and enjoy casual chats, small talk helps bridge the gap between structured queries and relaxed conversation. You cannot disable this feature. If you want to disable this feature, you need to contact [support](mailto:support@yellow.ai).
 
@@ -16,7 +16,7 @@ Examples of Small talk:
 * **General questions**: "What's the weather like?".
 * **Personal queries**: "What's your name?", "How old are you?".
 
-You can use the following Small talk for your bot:
+You can use the following Small talk for your AI-agent:
 1. [Default platform small talk](#default): Generates pre-configured responses to common queries.
 2. [Custom configured small talks](#custom): You can create personalized responses tailored to specific needs or preferences.
 
@@ -26,7 +26,7 @@ The Default section in the Small talk includes pre-existing questions and respon
 
 ### Edit small talk responses
 
-You can edit the responses and customize it to your bot's personality or specific requirements, and these questions cannot be deleted.
+You can edit the responses and customize it to your AI-agent's personality or specific requirements, and these questions cannot be deleted.
 
 1. Go to **Automation** > **Train** > **Small talk**.
 
@@ -53,7 +53,7 @@ The custom section allows you to add your preferred questions and responses.
 2. Provide the following details and click **Save**.
    * **Question**: Enter the actual question.
    * **Utterances**: Enter the different ways in which the question can be asked.
-   * **Response**: Enter the bot response.
+   * **Response**: Enter the AI-agent response.
 
     <img src="https://i.imgur.com/1V0fhGL.png" alt="drawing" width="60%"/>
 

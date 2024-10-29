@@ -6,7 +6,7 @@ title: Documents
 
 Documents (Document/Doc)is a feature on yellow cloud and app that allows the customer to upload the documents, integrate their knowledge source to the yellow platform and enable the end users to extract relevant information from these documents quickly.   
 Doc can process both unstructured textual data and structured tables. 
-When you have multiple documents(20+) containing mostly(~70%) text, it is humanly impossible to convert this large pile of data into a structured format to feed it to a chatbot. In such cases, you can leverage this knowledge by feeding it to the Doc engine which utilizes its NLP model and directly searches for the most relevant response from within these documents.   
+When you have multiple documents(20+) containing mostly(~70%) text, it is humanly impossible to convert this large pile of data into a structured format to feed it to a AI-agent. In such cases, you can leverage this knowledge by feeding it to the Doc engine which utilizes its NLP model and directly searches for the most relevant response from within these documents.   
 By using the **Documents** feature, you can expect the model to answer queries and take you to the right page/paragraph content with ~75-85% accuracy depending on the type and size of documents.
 
 In this article, you will learn:   
@@ -40,7 +40,7 @@ Learn how to upload files to Documents in the [next section](#2-add-files-to-doc
 
 The document knowledge can be used in two different methods:   
 
-1. **Fallback**: Doc can be used as a fallback mechanism for unidentified queries for the bot. When the bot is not able to understand the query from the intent, it goes as a fallback to document search and fetches the response from the uploaded doc. 
+1. **Fallback**: Doc can be used as a fallback mechanism for unidentified queries for the bot. When the AI-agent is not able to understand the query from the intent, it goes as a fallback to document search and fetches the response from the uploaded doc. 
     - On the Automation landing page, click **Document Search**. 
     - **Enable** the toggle button next to **Actions**.   
 
@@ -87,7 +87,7 @@ To upload a file, follow the steps:
 2. Select a source you want to upload the file from:
 
     - [Your local system](#21-upload-files-from-local-system)
-    - [Upload URL- integrate your bot with customer’s external knowledge base integrations](#2-add-files-to-document-section)
+    - [Upload URL- integrate your AI-agent with customer’s external knowledge base integrations](#2-add-files-to-document-section)
     - [AWS-S3](#23-upload-file-via-aws)
     - [Sharepoint](#24-upload-file-via-sharepoint)
       
@@ -110,7 +110,7 @@ To upload a file, follow the steps:
 
 :::note
 Apart from English, it also supports German, French, Spanish, Romanian and Polish. For that, you will have to upload your documents in these languages.   
-When a user enters a query in a specific language from the list, the bot detects the language of the query and searches for relevant documents uploaded in the same language. It then provides the user with results corresponding to their query.
+When a user enters a query in a specific language from the list, the AI-agent detects the language of the query and searches for relevant documents uploaded in the same language. It then provides the user with results corresponding to their query.
 
 ![](https://i.imgur.com/LrfGaiI.png)
 :::
@@ -698,6 +698,6 @@ Follow the given steps to Configure:
 
 
 
-<!-- Active learning: The bot can learn based on the feedback received for the search results. When the bot shows certain search result documents, the user has the option to click thumbs up if the user feels the bot has given the result they were looking for or thumbs down if the search results are not up to their expectation. The feedback is recorded and the bot is retrained to improve the search results.
+<!-- Active learning: The AI-agent can learn based on the feedback received for the search results. When the bot shows certain search result documents, the user has the option to click thumbs up if the user feels the bot has given the result they were looking for or thumbs down if the search results are not up to their expectation. The feedback is recorded and the AI-agent is retrained to improve the search results.
 
-Search for any query by triggering this Document Search Node. It will display the result. Users can upvote and downvote the search results so that the bot can be re-trained based on the feedback from the user. -->
+Search for any query by triggering this Document Search Node. It will display the result. Users can upvote and downvote the search results so that the AI-agent can be re-trained based on the feedback from the user. -->

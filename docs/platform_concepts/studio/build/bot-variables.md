@@ -1,11 +1,11 @@
 ---
 title: Variables
-sidebar_label : Bot Variables
+sidebar_label : AI-agent Variables
 ---
 
-Variables are placeholders that store user input, data from external systems, or any other relevant information that needs to be saved and used later in the bot conversation. 
+Variables are placeholders that store user input, data from external systems, or any other relevant information that needs to be saved and used later in the AI-agent conversation. 
 
-Variables help maintain context throughout the conversation, enabling the chatbot to retrieve the data and respond appropriately based on the previous interactions.
+Variables help maintain context throughout the conversation, enabling the AI-agent to retrieve the data and respond appropriately based on the previous interactions.
 
 Variables can hold different types of data, such as strings, numbers, arrays, objects, and boolean.
 
@@ -32,18 +32,18 @@ The following table consists of various data types for variables, along with the
 * You can create variables only from [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) nodes.
 * If the data type is an array or object, you need to use the [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to display the data. 
 
-**Example: Configuration for using variables in a chatbot**
+**Example: Configuration for using variables in a AI-agent**
 
-Let's say you want to create a chatbot that helps users book appointments. You can use variables to store the user's preferred date and time for the appointment and use these variables later in the conversation.
+Let's say you want to create a AI-agent that helps users book appointments. You can use variables to store the user's preferred date and time for the appointment and use these variables later in the conversation.
 
 * **Step 1:** Collect user information
 
-  The chatbot gathers details about the user's preferred appointment date and time.
+  The AI-agent gathers details about the user's preferred appointment date and time.
 
-  >Chatbot: Hi! When would you like to book your appointment?
+  >AI-agent: Hi! When would you like to book your appointment?
 User: Next Friday
 
-  >Chatbot: Great! What time works best for you?
+  >AI-agent: Great! What time works best for you?
 User: 3 PM
 
 * **Step 2:** Store information in variables
@@ -55,17 +55,17 @@ User: 3 PM
 
 * **Step 3:** Use variables to confirm the appointment
 
-  The chatbot uses these variables to confirm the appointment details with the user.
+  The AI-agent uses these variables to confirm the appointment details with the user.
 
-  > Chatbot: So, you want to book an appointment for {{{variables.appointmentDate}}} on {{{variables.appointmentTime}}}. Can you confirm?
-  > **Sample values**: Chatbot: So, you want to book an appointment for next Friday at 3 PM. Can you confirm??
+  > AI-agent: So, you want to book an appointment for {{{variables.appointmentDate}}} on {{{variables.appointmentTime}}}. Can you confirm?
+  > **Sample values**: AI-agent: So, you want to book an appointment for next Friday at 3 PM. Can you confirm??
      User: Yes
 
 * **Step 4:** Confirm and proceed
 
-  The chatbot can then confirm the booking and provide further instructions.
+  The AI-agent can then confirm the booking and provide further instructions.
 
-  > Chatbot: Awesome! Your appointment for next Friday at 3 PM has been booked.
+  > AI-agent: Awesome! Your appointment for next Friday at 3 PM has been booked.
 
 
 ## Types of variables
@@ -74,7 +74,7 @@ There are 4 different types of variables supported by Yellow.ai:
 
 1. Custom variables
 * Journey (flow level variables)
-* Global (bot level variables)
+* Global (AI-agent level variables)
 2. System variables
 3. Config variables
 4. User properties
@@ -85,7 +85,7 @@ There are 4 different types of variables supported by Yellow.ai:
 
 ### Custom variables
 
-Custom variables are created by bot designers to store specific information unique to a particular conversation or use case. They are further divided into two types:
+Custom variables are created by AI-agent designers to store specific information unique to a particular conversation or use case. They are further divided into two types:
 
 * [Journey variable](#)
 * [Global variable](#) 
@@ -101,47 +101,47 @@ These variables are intended to store values that pertain to a specific user jou
 
 **Key points of Journey variables:**
 
-* **Session-specific**: Journey variables hold data that is specific to a user's session with the chatbot. Once the session ends, journey variables are reset or discarded.
+* **Session-specific**: Journey variables hold data that is specific to a user's session with the AI-agent. Once the session ends, journey variables are reset or discarded.
 * **Temporary storage**: They store temporary information that may be used throughout the interaction within the particular flow, such as user preferences or responses to specific questions.
 
 **Example of using Journey variables:**
 
-Suppose you have a chatbot designed to assist users with booking appointments. You might use journey variables to store the date and time preferences provided by the user during the interaction.
+Suppose you have a AI-agent designed to assist users with booking appointments. You might use journey variables to store the date and time preferences provided by the user during the interaction.
 
 * **Collecting data**:
 
-> Bot: What date would you like to book your appointment?
+> AI-agent: What date would you like to book your appointment?
 User: June 30th
 
 Here, a journey variable `appointmentDate` is set to "June 30th".
 
 * **Using the variable**:
 
-> Bot: At what time on June 30th would you prefer?
+> AI-agent: At what time on June 30th would you prefer?
 User: "2 PM"
 
 Now, the journey variable `appointmentTime` is set to "2 PM".
 
 * **Finalizing the interaction**:
 
-> Bot: You have requested an appointment on {{variables.appointmentDate}} at {{{variables.appointmentTime}}}. Is this correct?
+> AI-agent: You have requested an appointment on {{variables.appointmentDate}} at {{{variables.appointmentTime}}}. Is this correct?
 User: Yes
 
 In this example, `variables.appointmentDate` and `variables.appointmentTime` are journey variables that hold information relevant to the current booking process. Once the session ends or the appointment is confirmed, these variables can be reset for the next interaction.
 
 #### Global variable
 
-  A global variable in a chatbot is a variable that is accessible across different sessions, journeys, users, and interactions. These variables store information that needs to be consistently available and shared across multiple interactions, such as user preferences, account information, or any other data that should persist beyond a single session.
+  A global variable in a AI-agent is a variable that is accessible across different sessions, journeys, users, and interactions. These variables store information that needs to be consistently available and shared across multiple interactions, such as user preferences, account information, or any other data that should persist beyond a single session.
   
 **Key points of Global variable:**
 
 * **Persistent data storage**: Global variables retain their values across multiple sessions and interactions.
-* **Reusable data**: These variables can be accessed and modified by different parts of the chatbot, allowing for centralized data management.
-* **Data accessibility**: Unlike journey variables, which are session-specific, global variables are available globally within the chatbot, meaning they can be used by any user and at any point in the conversation flow.
+* **Reusable data**: These variables can be accessed and modified by different parts of the AI-agent, allowing for centralized data management.
+* **Data accessibility**: Unlike journey variables, which are session-specific, global variables are available globally within the AI-agent, meaning they can be used by any user and at any point in the conversation flow.
 
 
 **Example of using global variables**:
-Suppose you have a chatbot designed for an e-commerce platform, and you want to store the current promotion or discount code that should be applied to all users.
+Suppose you have a AI-agent designed for an e-commerce platform, and you want to store the current promotion or discount code that should be applied to all users.
 
 * **Setting the global variable**:
 
@@ -150,13 +150,13 @@ Set the promotion code to 'SUMMER21'. Here, the Global variable 'promoCode' is s
 * **Using the Global Variable in User Interaction**:
 
 > User: Do you have any discount codes?
-Bot: Yes, you can use the code {{{variables.promoCode}}} to get a discount on your purchase!.
+AI-agent: Yes, you can use the code {{{variables.promoCode}}} to get a discount on your purchase!.
 
-In this example, 'promoCode' is a global variable that holds the current promotion code. Any user interacting with the chatbot can access this variable, ensuring that the promotion code is consistently communicated to all users.
+In this example, 'promoCode' is a global variable that holds the current promotion code. Any user interacting with the AI-agent can access this variable, ensuring that the promotion code is consistently communicated to all users.
  
 ### System Variables
 
-System variables are pre-defined variables that store information about the user session, conversation, and bot configuration. They are available by default in the platform and can be used across bot flows to personalize the conversation and provide relevant information to the user. To know more about system variables, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties).
+System variables are pre-defined variables that store information about the user session, conversation, and AI-agent configuration. They are available by default in the platform and can be used across AI-agent flows to personalize the conversation and provide relevant information to the user. To know more about system variables, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#system-user-properties).
 
 **Syntax:**
 
@@ -167,7 +167,7 @@ The following fields are available in the user profile object:
 - city
 - country
 - country_code
-- firstTime (if the user is visiting the bot for the first time)
+- firstTime (if the user is visiting the AI-agent for the first time)
 - ip
 - latitude
 - longitude
@@ -195,9 +195,9 @@ userChatTranscript | string  | Returns a URL to the user chat’s transcript
 
 ### Config Variables 
 
-Config variables are variables that are used to store a wide range of information, including API keys, URLs, database connection strings, and other configuration settings that are used throughout the bot flow. By storing these values, bot builders can use them across multiple flows without modifying any code. 
+Config variables are variables that are used to store a wide range of information, including API keys, URLs, database connection strings, and other configuration settings that are used throughout the AI-agent flow. By storing these values, AI-agent builders can use them across multiple flows without modifying any code. 
 
-For example, let's say that a bot needs to connect to a specific external API. Rather than hardcoding the API key directly into the bot's code, you can create a config variable (say `api_key`) and store the value there. If the API key needs to be updated, the bot builder can simply change the value of the **api_key** without modifying the bot's code.
+For example, let's say that a AI-agent needs to connect to a specific external API. Rather than hardcoding the API key directly into the AI-agent's code, you can create a config variable (say `api_key`) and store the value there. If the API key needs to be updated, the AI-agent builder can simply change the value of the **api_key** without modifying the AI-agent's code.
 
 To create a config variable, follow these steps:
 
@@ -218,9 +218,9 @@ To create a config variable, follow these steps:
     
 ### User properties
 
-User properties are variables that store information about each individual user interacting with the bot. These properties are stored directly in [User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties).
+User properties are variables that store information about each individual user interacting with the AI-agent. These properties are stored directly in [User 360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties).
 
-You can use user properties to personalize experiences in bot conversations and Engage campaigns. They also help with user analytics in Insights. Standard user properties like name, email address, and location are available by default. Additionally, you can [create custom user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) if needed.
+You can use user properties to personalize experiences in AI-agent conversations and Engage campaigns. They also help with user analytics in Insights. Standard user properties like name, email address, and location are available by default. Additionally, you can [create custom user properties](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) if needed.
 
 ## Create a Variable
 
@@ -296,7 +296,7 @@ To store the response of a node, follow these steps:
     <img src="https://i.imgur.com/aNx6zh7.png" alt="drawing" width="70%"/>
 
 
-* When the bot asks a question and the user responds, the response will be stored in the selected variable.
+* When the AI-agent asks a question and the user responds, the response will be stored in the selected variable.
 
 ### Retrieve data from variables 
 
@@ -304,7 +304,7 @@ To retrieve data stored in a specific variable, fetch the variable in a node and
 
 To retrieve and display data from variables, follow these steps:
 
-1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to your chatbot's flow where you want to retrieve and display the data.
+1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to your AI-agent's flow where you want to retrieve and display the data.
 
 2. Enter the syntax in the respective message node to retrieve the data.
 

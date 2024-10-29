@@ -26,7 +26,7 @@ To create a flow, follow these steps:
     ![](https://imgur.com/fK5pmO5.png)
     
 :::note
-If you have multiple bots created, choose the specific bot for which you intend to build the flow.
+If you have multiple AI-agents created, choose the specific AI-agent for which you intend to build the flow.
 :::
     
 3. Select your preferred options to create a flow.
@@ -35,7 +35,7 @@ If you have multiple bots created, choose the specific bot for which you intend 
     
 
 * [Create with AI Copilot](#automate-flow-creation-using-ai-copilot): This option allows you to automatically create flows based on your input. It eliminates manual processes and the need for template downloads.
- * [Create from template](#create-flow-using-a-template): This option allows you to use pre-built bot templates from Yellow.ai's marketplace to quickly build conversation flow based on your use case instead of creating it from scratch.
+ * [Create from template](#create-flow-using-a-template): This option allows you to use pre-built AI-agent templates from Yellow.ai's marketplace to quickly build conversation flow based on your use case instead of creating it from scratch.
  * [Start from scratch](#manually-create-a-flow): This option allows you to manually create a flow using [key elements](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview#key-elements-to-build-a-flow) without relying on pre-built templates or automated tools.
  * [Create skill](#create-a-skill): This option allows you to create a flow to run concurrently in the background along with the main flow to perform specific tasks or action.
 
@@ -151,9 +151,9 @@ To create a Category, follow these steps:
 
 ### Create a skill
 
-Skills are background processes that are built using only [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes and operate along with the conversational flow. Skills enhance the bot's capabilities by performing various tasks such as calling functions, executing APIs, and database operations. This configuration allows you to create workflows that can be linked to categories and invoked as needed within a conversation. 
+Skills are background processes that are built using only [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) or [Logic](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) nodes and operate along with the conversational flow. Skills enhance the AI-agent's capabilities by performing various tasks such as calling functions, executing APIs, and database operations. This configuration allows you to create workflows that can be linked to categories and invoked as needed within a conversation. 
 
-For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) operates in the background, synchronizing data with an external database while the bot executes the rest of the flow.
+For example, an action node called [Sync DB](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#41-sync-database) operates in the background, synchronizing data with an external database while the AI-agent executes the rest of the flow.
 
 To create a skill, follow these steps:
 

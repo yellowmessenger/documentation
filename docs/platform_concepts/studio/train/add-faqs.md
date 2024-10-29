@@ -1,26 +1,26 @@
 ---
-title: FAQ Bots
-sidebar_label : FAQ Bots
+title: FAQ AI-agents
+sidebar_label : FAQ AI-agents
 tags: [bot answers questions, faq bot, bot to answer questions ,bot that can answer any question, question answer bot, bot that answers questions, question bot]
 ---
 
-Adding FAQs to the chatbot improves user experience by providing self-service support to users to find answers to their questions. FAQs are trained to recognize various forms of questions to understand natural language and respond to user inquiries.
+Adding FAQs to the AI-agent improves user experience by providing self-service support to users to find answers to their questions. FAQs are trained to recognize various forms of questions to understand natural language and respond to user inquiries.
 
 FAQs can used to assist users with common queries and provide answers to frequently asked questions in messaging platforms, mobile apps to provide 24/7 customer support, and websites to improve user engagement.
 
-**Key features of FAQ bots:**
+**Key features of FAQ AI-agents:**
 
 * **Question recognition**: FAQ are trained to recognize various forms of questions, allowing users to ask questions in natural language rather than using specific commands.
 * **Self-service support**: FAQ offer self-service support by enabling users to find answers to their questions
-* **Response generation**: FAQ bots generate responses based on the question that is trained. Responses can include text, links, images, or other multimedia elements to provide answers to user queries.
+* **Response generation**: FAQ AI-agents generate responses based on the question that is trained. Responses can include text, links, images, or other multimedia elements to provide answers to user queries.
 
 ## Create FAQs
 
-You need to create a bot with FAQ to provide a self-serve support to your users.
+You need to create a AI-agent with FAQ to provide a self-serve support to your users.
 
-### Add FAQs to bot
+### Add FAQs to AI-agent
 
-To create FAQs for your bot and provide self-serve support to your users, follow these steps: 
+To create FAQs for your AI-agent and provide self-serve support to your users, follow these steps: 
 
 ### Add FAQs under Default category
 
@@ -40,7 +40,7 @@ To add FAQs under default category, follow these steps:
     
 ### Add FAQs under FQAs category
 
-To add the FAQs under FQAs category follow the same steps in the [Add FAQs under Default category](#) section.
+To add the FAQs under FQAs category follow the same steps in the [Add FAQs under Default category](#add-faqs-under-default-category) section.
 
 ### Create a category and add FAQs
 
@@ -100,7 +100,7 @@ You can add quotes manually and save the changes.
 
     ![](https://i.imgur.com/3GyWyQe.jpg)
     
-* Once the file uploaded, the FAQs will be added to your bot.
+* Once the file uploaded, the FAQs will be added to your AI-agent.
 
 
 #### Upload CSV file
@@ -138,7 +138,7 @@ Ensure that the column headers must in the format: "category", "question", "vari
 
 
 
-## Create multilingual FAQ bots
+## Create multilingual FAQ AI-agents
 
 You can the add FAQs in multiple languages, follow the given steps:
 
@@ -148,7 +148,7 @@ You can the add FAQs in multiple languages, follow the given steps:
 
    ![](https://imgur.com/EbEgggL.png)
    
-2. To add FAQs for multi-lingual bots, click **Language settings** to add the languages that you want to add to your bot. 
+2. To add FAQs for multi-lingual AI-agents, click **Language settings** to add the languages that you want to add to your AI-agent. 
 
     <img src="https://imgur.com/wogF8tg.png" alt="Converstion settings" width="50%"/>
    
@@ -157,12 +157,12 @@ You can the add FAQs in multiple languages, follow the given steps:
 
     <img src="https://imgur.com/39PjTGm.png" alt="drawing" width="60%"/>
 
-4. Your bot's language settings have been successfully updated. You can [add FAQs](#1-add-faqs-add-faqs) in different languages.
+4. Your AI-agent's language settings have been successfully updated. You can [add FAQs](#1-add-faqs-add-faqs) in different languages.
 
 
 ## Train and test FAQs
 
-After adding all the FAQs, you can train the bot to understand these FAQs by clicking [Train Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#3-train-intents). 
+After adding all the FAQs, you can train the AI-agent to understand these FAQs by clicking [Train Intents](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#3-train-intents). 
 
 To train intents for FAQs, follow these steps:
 
@@ -176,7 +176,7 @@ To train intents for FAQs, follow these steps:
 
 ### Test FAQs
 
-After adding and training the FAQs, you can test the FAQs on the preview bot. 
+After adding and training the FAQs, you can test the FAQs on the preview AI-agent. 
 
 To test the FAQs:
 
