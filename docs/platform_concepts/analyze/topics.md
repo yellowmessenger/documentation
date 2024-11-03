@@ -183,7 +183,7 @@ Yellow Inbox transfer are tracked with the `agent-transfer` event. But while usi
 
 ### Suggested solution 
 
-With Bot Developer access, you can configure a **Third Party Handoff** node by entering the same data as in the **Raise Ticket** node at the end of the conversation flow. This node will serve as an identifier for agent transfers, that enables you to track containment rate.
+With Bot Developer access, you can configure a **Chat Handoff** node by entering the same data as in the **Raise Ticket** node at the end of the conversation flow. This node will serve as an identifier for agent transfers, that enables you to track containment rate.
 
 
 **![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1C7Lt7VmhnqI8cMi4LqmW0UJS4Wl1aUQdHJf0hGec9BkV03FHJ00aSw5MF8HYNqQ4F649KthH7XwPDy5yto7vi93QS4fhS6TGueyhDfDslpgyWLzqVtkmcP7JjyvQe2rLf6ZoDrP8hHtMSm9tseDZy_g?key=doHOJQMEdYvKlVOmPCYX8w)**
