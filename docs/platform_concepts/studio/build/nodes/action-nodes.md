@@ -18,7 +18,7 @@ The following are the different types of Action nodes available on Yellow.ai:
 
 ## 1. Interactive nodes
 
-Interactive nodes lets you manage and improve bot conversations. These nodes help you trigger events, handle OTPs, search documents and respond to user queries, execute flows within flows, delay implementation, ticket generation, analytics capture, PDF/image generation, user event triggering, data formatting, and flow switching.
+Interactive nodes lets you manage and improve AI-agent conversations. These nodes help you trigger events, handle OTPs, search documents and respond to user queries, execute flows within flows, delay implementation, ticket generation, analytics capture, PDF/image generation, user event triggering, data formatting, and flow switching.
 
 ### 1.1 Send Event
 
@@ -52,7 +52,7 @@ This node lets you send an OTP to the mentioned number.
 
 ### 1.3 Verify OTP
 
-Use this node to verify the OTP sent to bot users. OTP verification is an important security measure that is used to confirm user identity during various processes.
+Use this node to verify the OTP sent to AI-agent users. OTP verification is an important security measure that is used to confirm user identity during various processes.
 
 :::note
 This node is not available for Whatsapp
@@ -77,12 +77,12 @@ This node is not available for Whatsapp
 
 ### 1.4 Knowledge search
 
-Knowledge search node allows the bot to retrieve answers from a website or documents uploaded in the Knowledge Base (KB) module and provide accurate and relevant responses to user queries.
+Knowledge search node allows the AI-agent to retrieve answers from a website or documents uploaded in the Knowledge Base (KB) module and provide accurate and relevant responses to user queries.
 
 Using the Knowledge search node offers the following benefits:
 
-* **Access to up-to-date information**: The bot can retrieve data from the linked websites or uploaded documnets, to ensure that the information provided is correct and relevant.
-* **Efficient query handling**:  The bot can handle  contextual queries or specific user queries by searching through knowledge sources to resolve them.
+* **Access to up-to-date information**: The AI-agent can retrieve data from the linked websites or uploaded documnets, to ensure that the information provided is correct and relevant.
+* **Efficient query handling**:  The AI-agent can handle  contextual queries or specific user queries by searching through knowledge sources to resolve them.
 
 
 #### Access Knowledge search node
@@ -105,12 +105,12 @@ The Knowledge search node  additional configurations that allow users to tailor 
 
 ##### Input configuration
 
-This setting allows you to adjust input criteria to override the default Knowledge base setting. The bot will use these input settings to process and return search results. It includes options such as:
+This setting allows you to adjust input criteria to override the default Knowledge base setting. The AI-agent will use these input settings to process and return search results. It includes options such as:
 
    <img src="https://i.imgur.com/AKnCBuw.png" alt="drawing" width="50%"/>
 
-   1. **Enable summarised results**: Enable this option for the bot to search and simplify the answer in a conversational manner.
-  2. **Site URL**: This field displays the default URL from the Knowledge Base (KB) section. You can modify this URL based on your needs, and the bot will generate search results using the provided URL.
+   1. **Enable summarised results**: Enable this option for the AI-agent to search and simplify the answer in a conversational manner.
+  2. **Site URL**: This field displays the default URL from the Knowledge Base (KB) section. You can modify this URL based on your needs, and the AI-agent will generate search results using the provided URL.
   3. **Search confidence**: This setting defines the confidence score (ranging from 0 to 1) that indicates how accurate the predicted search is. <br/>The default value is 0.5. It is recommended to keep this value between `0.4` and `0.7` to maintain balanced and accurate search results.
   
 ##### Knowledge filter
@@ -123,13 +123,13 @@ To add a Knowledge filter:
 
 1. Upload the [searchable documents](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#upload-documents-from-local-system) to KB along with the relevant [tags](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion#additional-options-for-uploaded-documents).
 2. Under **Tag** field, choose the tag you created.
-3. In **Value** field, enter the value that should return the document associated with the specific tag. Values are fetched from a bot variable. 
+3. In **Value** field, enter the value that should return the document associated with the specific tag. Values are fetched from a AI-agent variable. 
 4. Click **+ Add filter** to add the more tags if needed.
 
-##### Bot response configuration
+##### AI-agent response configuration
 
-This setting controls how the bot's response is managed. By default, it is set to "Print response." You can also choose to "Save response in variable.<br/>
-   i. **Print response**: This option displays the response directly in text format.<br/>ii. **saveResponseInVariable**: This option stores the bot's response in a specified variable. You need to select the appropriate variable for storing the response.
+This setting controls how the AI-agent's response is managed. By default, it is set to "Print response." You can also choose to "Save response in variable.<br/>
+   i. **Print response**: This option displays the response directly in text format.<br/>ii. **saveResponseInVariable**: This option stores the AI-agent's response in a specified variable. You need to select the appropriate variable for storing the response.
   <img src="https://i.imgur.com/jRszQcU.png" alt="drawing" width="60%"/>
 
    
@@ -142,7 +142,7 @@ This setting controls how the bot's response is managed. By default, it is set t
 
 This node lets you executes a different flow from the current flow. Use this node when you want to trigger a flow within a flow. 
 
-For example, in a customer support bot, you can provide multiple options such as **Talk to an agent**, **Raise a ticket**, **Check status** and add execute flow node to each of the option. So, when a user clicks on an option, the respective flow gets triggered. 
+For example, in a customer support AI-agent, you can provide multiple options such as **Talk to an agent**, **Raise a ticket**, **Check status** and add execute flow node to each of the option. So, when a user clicks on an option, the respective flow gets triggered. 
 
    ![](https://i.imgur.com/A9EPpfz.png)
 
@@ -152,7 +152,7 @@ Once you add the node, you can choose the flow you want to execute. Click **Go t
 
 This node allows you to delay the progression of the conversation to the next node by a few minutes or hours.
 
-For example, in response to a user query about the current temperature, the bot incorporates a delay, imitating real-time data retrieval like "Checking the latest weather in New York City..." After a short pause, it provides the up-to-date information, creating a more effective and engaging interaction.
+For example, in response to a user query about the current temperature, the AI-agent incorporates a delay, imitating real-time data retrieval like "Checking the latest weather in New York City..." After a short pause, it provides the up-to-date information, creating a more effective and engaging interaction.
 
 You can delay by minutes/hours.
 
@@ -165,13 +165,13 @@ You can delay by minutes/hours.
 
 ### 1.7 Raise Ticket
 
-Raise ticket node lets your users connect with live agents in your bot. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to know more about adding live agents to Yellow.ai. You can also connect users with live chat agents in [different third-party applications](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#6-live-chat). 
+Raise ticket node lets your users connect with live agents in your AI-agent. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to know more about adding live agents to Yellow.ai. You can also connect users with live chat agents in [different third-party applications](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#6-live-chat). 
 
 This node is used create a live chat request with basic or advanced scenarios such as **Working Hours**, **Agent Availability**, **Voice/Video calling**, etc.
 
    ![](https://i.imgur.com/Z8VkgD8.png)
    
- * **Live chat agent:** Choose the portal in which your live agents are available. It can be Yellow.ai Inbox or any live chat integration integrated with your bot.
+ * **Live chat agent:** Choose the portal in which your live agents are available. It can be Yellow.ai Inbox or any live chat integration integrated with your AI-agent.
  * **Message after ticket assignment:** The message displayed to the user when an agent is assigned to the chat.
 
 Name, Mobile, Email and Query fields can be filled by passing variables. Use prompt nodes to collect these data in variables and pass it in the corresponding fields.
@@ -188,7 +188,7 @@ As configured in Inbox Settings, [Tags](https://docs.yellow.ai/docs/platform_con
 - **Group code**: Similar tickets can be assigned to relevant groups.
 - **Priority**: Denotes the priority of tickets from high, medium or low. (default priority is MEDIUM)
 - **Voice Call Options**: Voice Call, SIP Call and Auto Start Call can be enabled.
-- **Custom Fields**: Based on the use case additional information collected by bot can be added to ticket. for example, in eCommerce Order ID, Payment Mode, Delivery date etc can be asked before connecting to the agent. Just like key value pairs, once a custom field is selected, an additional prompt will be seen.
+- **Custom Fields**: Based on the use case additional information collected by AI-agent can be added to ticket. for example, in eCommerce Order ID, Payment Mode, Delivery date etc can be asked before connecting to the agent. Just like key value pairs, once a custom field is selected, an additional prompt will be seen.
 
 <img src="https://cdn.yellowmessenger.com/iE4ppldmrE7k1625673583277.png" alt="drawing" width="65%"/>
 
@@ -261,7 +261,7 @@ The response of a Raise ticket node:
 The output of a Raise Ticket Node dictates general behaviour for any error in creating a ticket. In most real life scenarios, it is preferred to show appropriate reasons to users as to why they cannot to an agent. 
 
 :::note
-Once any specific event is active and configured, the corresponding flow will be given preference. Bot is never paused unless a ticket is in ASSIGNED state (i.e. Agent is interacting with the user).
+Once any specific event is active and configured, the corresponding flow will be given preference. AI-agent is never paused unless a ticket is in ASSIGNED state (i.e. Agent is interacting with the user).
 :::
 
 Two steps to handle custom scenarios are as follows:
@@ -281,12 +281,12 @@ Two steps to handle custom scenarios are as follows:
 
 #### Working hours
 
-If the bot is supposed to respond with a different message outside of agent working hours, [Logic Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) can be used. 
+If the AI-agent is supposed to respond with a different message outside of agent working hours, [Logic Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) can be used. 
 
 <img src="https://i.imgur.com/J3W0HWX.png" alt="drawing" width="70%"/>
 
 :::note
-The bot default timezone is considered while evaluating whether a user is outside working hours.
+The AI-agent default timezone is considered while evaluating whether a user is outside working hours.
 :::
 
 #### Auto-translate incoming chats
@@ -357,7 +357,7 @@ There are two ways by which you can convert Base64 files:
   ![](https://i.imgur.com/fVfihOO.png)
 
 1. In **Input type** choose **API**.
-2. In **API**, choose the API added to your bot. If your API has dynamic paramters, add nodes to collect that information from users.
+2. In **API**, choose the API added to your AI-agent. If your API has dynamic paramters, add nodes to collect that information from users.
 3. In **Path to a BASE64 key**, enter the path to the BASE64 key. 
 4. **Select an output format** will be auto-populated by PDF as that's the only available option for docs.
 
@@ -433,7 +433,7 @@ Here you can control randomness, sets limits for concise outputs and refine word
 
 ### Model configuration
 
-Model configuration provides you the freedom to manually input your own custom GPT or LLM credentials into the bot. You can then use various models on different dynamic nodes within the same bot independently. This grants you the flexibility to conduct extensive experiments. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#model-configuration) for the steps.
+Model configuration provides you the freedom to manually input your own custom GPT or LLM credentials into the AI-agent. You can then use various models on different dynamic nodes within the same AI-agent independently. This grants you the flexibility to conduct extensive experiments. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode#model-configuration) for the steps.
 
 ## 2. Code-based nodes
 
@@ -443,7 +443,7 @@ Code-based nodes allow you to execute actions such as retrieving or sending data
 
 > This node is also available for voice bots. 
 
-With the API node, you can connect to an API at a specific point in a flow to send and get responses from a third-party system outside of your chatbot.
+With the API node, you can connect to an API at a specific point in a flow to send and get responses from a third-party system outside of your AI-agent.
 
    <img src="https://i.imgur.com/Fnsvd0z.png" alt="drawing" width="70%"/>
 
@@ -502,7 +502,7 @@ This node helps you perform database operations such as insert, update and searc
 
 > This node is available for voice bots. 
 
-This node lets you run custom logic written in the [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) section for specific use cases and store the result in a variable to use it in bot ocnversations.
+This node lets you run custom logic written in the [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code) section for specific use cases and store the result in a variable to use it in AI-agent conversations.
 
 
 ![](https://i.imgur.com/v4HNlCq.png)
@@ -559,14 +559,14 @@ The following actions can be performed:
 
 ### 3.1 Set language 
 
-This node lets you change the language of the bot conversation to one of the pre-configured languages. The language can be changed only if you have already set up languages in your bot, otherwise, this node will not work. This node takes input only in the form of [ISO codes](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages) based on which it will change the language of the bot.
+This node lets you change the language of the AI-agent conversation to one of the pre-configured languages. The language can be changed only if you have already set up languages in your AI-agent, otherwise, this node will not work. This node takes input only in the form of [ISO codes](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#supported-languages) based on which it will change the language of the AI-agent.
 
    <img src="https://i.imgur.com/fBHPZLT.png" alt="drawing" width="80%"/>
 
 
 Let's say that you want to build a flow that asks for user's preferred language to continue the conversation.
 
-1. [Add the preferred languages to your bot](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#add-languages-to-your-bot).
+1. [Add the preferred languages to your AI-agent](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#add-languages-to-your-bot).
 2. Go to the flow and include a [Quick reply node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#7-quick-replies). Create different buttons for different languages and assign the ISO code as button values to the respective language option.
 3. Store the response of the Quick Reply node in a variable.
 4. Include the **Set language node** and choose the variable created in the previous step. Refer to the following gif to see how it works.
@@ -578,9 +578,9 @@ Let's say that you want to build a flow that asks for user's preferred language 
 
 ### 3.2 Outbound notification 
 
-This node lets you send notifications as part of the bot conversation. Include this node at whichever point of the flow you want the bot send an outbound notification. Using this node you can send notifications via SMS, Email, Whatsapp and Voice.
+This node lets you send notifications as part of the AI-agent conversation. Include this node at whichever point of the flow you want the AI-agent send an outbound notification. Using this node you can send notifications via SMS, Email, Whatsapp and Voice.
 
-Imagine you've integrated a chat bot into your e-commerce platform. When a customer successfully places an order, the bot distribute notifications across different channels as configured in the node. For example, customers receive WhatsApp/SMS messages confirming their order details, while Email/Voice notifications are dispatched post-shipping for additional updates. 
+Imagine you've integrated a AI-agent into your e-commerce platform. When a customer successfully places an order, the AI-agent distribute notifications across different channels as configured in the node. For example, customers receive WhatsApp/SMS messages confirming their order details, while Email/Voice notifications are dispatched post-shipping for additional updates. 
 
 For a detailed guide on setting up outbound campaigns, click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/run-campaign).
 
@@ -601,7 +601,7 @@ Store message ID in | Choose the variable where you want to store the Message ID
 |Text type| Select Text/SSML from the dropdown.|
 |TTS Engine| Select the engines from the dropdown- Microsoft Azure, Google Wavenet, Amazon Polly.|
 |Voice ID| Type the characters of voice ID. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML".|
-|Speed|This value defines how fast the bot must converse. This value can be 0.9 - 1.5 for the bot to soundly humanly. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML".|
+|Speed|This value defines how fast the AI-agent must converse. This value can be 0.9 - 1.5 for the AI-agent to soundly humanly. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML".|
 |Pitch| Pitch value can be any decimal value depending on the base of voice required, 0 is ideal. You can add this for Microsoft if text_type = "text" and for Google for text_type = "text" and "SSML".|
 |Capture DTMF length| Enable this option if the DTMF is to be collected on the specific node.|
 |DTMF digital length| Enter the length of characters to be captured. Ex: For an Indian phone number, it is 10.|
@@ -632,7 +632,7 @@ To use this node:
    ![](https://i.imgur.com/5RTMMPQ.png)
 
 4. In **notifStatusStoreCustomPayloadIn**, create or choose the variable to store the payload.
-5.  Connect relevant nodes to **Sent** and **Delivered** options based on what you want the bot to do if the particular notification was sent and delivered.
+5.  Connect relevant nodes to **Sent** and **Delivered** options based on what you want the AI-agent to do if the particular notification was sent and delivered.
 
   ![](https://i.imgur.com/IboR5jj.png)
 
@@ -649,9 +649,9 @@ To know more about Outbound notifications, click [here](https://docs.yellow.ai/d
 This node is only available when a flow is created as a [skill](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-skill). 
 :::
 
-The Sync database node facilitates the synchronization of your bot's database with external databases using APIs. This node streamlines the process of automating data synchronization with external databases.
+The Sync database node facilitates the synchronization of your AI-agent's database with external databases using APIs. This node streamlines the process of automating data synchronization with external databases.
 
-Let's say you have a bot that assists with inventory management for an e-commerce website. You want to ensure that the inventory data in your bot's database is always up-to-date with your main inventory database. By using the **Sync database node**, you can seamlessly integrate your bot's database with your main inventory database, ensuring that any changes or updates made externally are reflected in real-time within your chatbot, thus providing accurate and timely information to your users.
+Let's say you have a AI-agent that assists with inventory management for an e-commerce website. You want to ensure that the inventory data in your AI-agent's database is always up-to-date with your main inventory database. By using the **Sync database node**, you can seamlessly integrate your AI-agent's database with your main inventory database, ensuring that any changes or updates made externally are reflected in real-time within your AI-agent, thus providing accurate and timely information to your users.
 
 :::info
 Refer to this video to see how this node works
@@ -668,7 +668,7 @@ To configure the **Sync Database** node:
 
   ![](https://i.imgur.com/Zh1Ajsi.png)
 
-1. In **API**, choose the preferred API in the drop down. For steps to add a new API to the bot, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
+1. In **API**, choose the preferred API in the drop down. For steps to add a new API to the AI-agent, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
 2. In **Parameters of API**, select the variables that contain the values of the corresponding fields. 
 
    * If the values are dynamic, they should be collected from customers using prompt nodes and those variable should be mapped here. 

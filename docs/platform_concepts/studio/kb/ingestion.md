@@ -3,12 +3,12 @@ title: Data ingestion into Knowledge base
 sidebar_label: Ingest data to KB
 ---
 
-KB bot can utilize ingested data to provide more informative responses. There are multiple entry points through which data can be fed into the bot.
+KB AI-agent can utilize ingested data to provide more informative responses. There are multiple entry points through which data can be fed into the AI-agent.
 
 
 ## Upload website URLs
 
-Easily upload your website URLs directly to our platform. When the bot encounters a question related to the website, it will provide relevant answers.
+Easily upload your website URLs directly to our platform. When the AI-agent encounters a question related to the website, it will provide relevant answers.
 
 To upload your website URL, follow:
 
@@ -36,7 +36,7 @@ The best practice for LLMs is to avoid generating links in responses or summariz
 
 ### Upload documents from local system
 
-Upload specific documents to enable the bot to identify relevant questions and provide accurate answers from them. You can upload **Word**, **PPT**, **PDF** and **Txt** files.
+Upload specific documents to enable the AI-agent to identify relevant questions and provide accurate answers from them. You can upload **Word**, **PPT**, **PDF** and **Txt** files.
 
 To upload files from your system, follow:
 
@@ -48,8 +48,8 @@ To upload files from your system, follow:
 
     <img src="https://i.imgur.com/PZmgkA6.png" alt="drawing" width="80%"/>
 
-3. Enable **Generate Q&A** to let the bot to respond to users questions with answers that resemble human-like responses.
-4. Enable **Enable table parsing** to allow the bot to extract structured data from tables in a document or a webpage.
+3. Enable **Generate Q&A** to let the AI-agent to respond to users questions with answers that resemble human-like responses.
+4. Enable **Enable table parsing** to allow the AI-agent to extract structured data from tables in a document or a webpage.
 5. Choose the langauge of the uploaded file and click **Add**.
 
 :::note
@@ -60,9 +60,9 @@ To upload files from your system, follow:
 
 ### Add acronyms 
 
-You can boost bot understanding and search accuracy via Acronyms.
+You can boost AI-agent understanding and search accuracy via Acronyms.
 
-In the **Acronym** section, you can enter common phrases for specific terms. This helps the bot understand and fetch accurate results from the documentation, even when users use abbreviations. For example, users might use **WA** for **WhatsApp**. If you add this acronym the bot can understand it as **WhatsApp** whenever a user uses it. 
+In the **Acronym** section, you can enter common phrases for specific terms. This helps the AI-agent understand and fetch accurate results from the documentation, even when users use abbreviations. For example, users might use **WA** for **WhatsApp**. If you add this acronym the AI-agent can understand it as **WhatsApp** whenever a user uses it. 
 
 To add acronyms, follow:
 

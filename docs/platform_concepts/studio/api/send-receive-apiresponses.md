@@ -1,6 +1,6 @@
 ---
 title: Send, receive and parse API responses
-sidebar_label : Use APIs in bot conversations
+sidebar_label : Use APIs in AI-agent conversations
 ---
 
 The [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response) allows you to connect the APIs you added, make requests, get responses, and present the information to the customer in a way they can understand.
@@ -8,7 +8,7 @@ The [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-
 ## Send data and handle responses
 
 1. Go to **Automation** and [build a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) for your use case.
-2. Include the [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response) at whichever point of the conversation you want the bot to access API.
+2. Include the [API node](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response) at whichever point of the conversation you want the AI-agent to access API.
 
    ![](https://i.imgur.com/heDgub5.png)
 
@@ -74,7 +74,7 @@ return new Promise
     // For transfromation function tagged in API Node, To fetch api response
     const response = ymLib.args.apiResponse;
     // Your logic here 
-    // Any value returned (or promisified value) - is stored in bot Variable storing API response
+    // Any value returned (or promisified value) - is stored in AI-agent Variable storing API response
     
     return resolve(<parsed response>);
   });         

@@ -5,7 +5,7 @@ sidebar_label: User identification flow
 
 ## Overview
 
-The User Identification flow in bot conversation is the process of identifying the user interacting with the bot. This is achieved by requesting the unique identifier from the user. It could be an email address, phone number or other identifier. 
+The User Identification flow in AI-agent conversation is the process of identifying the user interacting with the AI-agent. This is achieved by requesting the unique identifier from the user. It could be an email address, phone number or other identifier. 
 
 :::note
 Date datatypes are not supported for the userId. It supports String, Number, email, and phone types.
@@ -13,18 +13,18 @@ Date datatypes are not supported for the userId. It supports String, Number, ema
 
 ### Significance of identifying users
 
-The user identification is an important aspect of bot conversation design, as it allows for a more personalized and engaging user experience. User identification helps in the following:
+The user identification is an important aspect of AI-agent conversation design, as it allows for a more personalized and engaging user experience. User identification helps in the following:
 
-* **Personalized responses**: When a user is identified, the bot can tailor its responses to the individual user's needs and preferences. This can lead to more relevant and helpful responses, which can improve the overall user experience.
-* **Context maintenance**: User identification allows the bot to maintain context throughout the conversation and across different channels. This means that the bot can use user data and the interaction with the user, and use that information to provide more accurate and useful responses in subsequent interactions.
-* **Improved engagement**: By providing personalized responses and maintaining context, the bot can create a more engaging conversation with the user. This can lead to increased user satisfaction and higher levels of engagement with the bot.
-* **Better data collection**: User identification also allows the bot to collect more detailed and accurate data on individual users. This can be used to improve the bot's performance over time, by providing insights into user behavior and preferences.
+* **Personalized responses**: When a user is identified, the AI-agent can tailor its responses to the individual user's needs and preferences. This can lead to more relevant and helpful responses, which can improve the overall user experience.
+* **Context maintenance**: User identification allows the AI-agent to maintain context throughout the conversation and across different channels. This means that the AI-agent can use user data and the interaction with the user, and use that information to provide more accurate and useful responses in subsequent interactions.
+* **Improved engagement**: By providing personalized responses and maintaining context, the AI-agent can create a more engaging conversation with the user. This can lead to increased user satisfaction and higher levels of engagement with the AI-agent.
+* **Better data collection**: User identification also allows the AI-agent to collect more detailed and accurate data on individual users. This can be used to improve the AI-agent's performance over time, by providing insights into user behavior and preferences.
 
 ***
 
 ### Understand how user identification flow works
 
-The primary objective of the User Identification flow is to ensure that the userId is captured for users that interact with the bot on any channel. 
+The primary objective of the User Identification flow is to ensure that the userId is captured for users that interact with the AI-agent on any channel. 
 
 :::note
 If the `userId` is not captured before initiating a conversation, a blank user record is created without a `userId` with a user starts conversation. If capturing of userId is not managed properly, it may result in the creation of duplicate records for the same user, one with a userId and one without. This can also lead to the creation of multiple unidentified records for different sessions.
@@ -36,7 +36,7 @@ The following are the steps involved:
 
    For example, if you select the `phone` user property, each time a value is captured for the phone property, that same value will also be automatically copied and assigned to the userId field.
 
-2. At the beginning of every conversation, the bot verifies if the userId is known. 
+2. At the beginning of every conversation, the AI-agent verifies if the userId is known. 
 3. If it is not known, the **User identification flow** is triggered to capture the userId.
 
 :::note
@@ -47,7 +47,7 @@ For details on how user records are created through conversations and unified in
 
 ## Setup user identification flow
 
-To add the User identification flow to your bot, follow these steps:
+To add the User identification flow to your AI-agent, follow these steps:
 
 
 1. In Automation, click **Build** > **Conversation settings**.
@@ -216,7 +216,7 @@ You can also use SDK APIs to programmatically set user properties and the user I
   <img src="https://i.imgur.com/U5Rg8pe.png" width="70%"/>
 
 :::caution
-In the User identification flow, if you don't store the user property correctly, the bot will stop and won't continue. If the user prompts the bot again, the user identification flow will start again as shown below.
+In the User identification flow, if you don't store the user property correctly, the AI-agent will stop and won't continue. If the user prompts the AI-agent again, the user identification flow will start again as shown below.
 
 <img src="https://hackmd.io/_uploads/H11CsQqS2.png" width="50%"/>
 
@@ -241,5 +241,5 @@ To collect user properties from functions or payloads:
 
 **What next?**
 
-* See [how to capture user properties from bot conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
-* Know [how to create personalized conversations in bot conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)
+* See [how to capture user properties from AI-agent conversation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/store_conv_data).
+* Know [how to create personalized conversations in AI-agent conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/personalise_conversations)

@@ -3,7 +3,7 @@ title: Intents, FAQs and Utterances automated testing
 sidebar_label : Intents and Utterances automated testing
 ---
 
-Instead of manually training and testing intents, utterances, and FAQs, you can auto-generate and test them in bulk. This automation allows you to quickly train the bot on all changes at once, saving time and reducing errors.
+Instead of manually training and testing intents, utterances, and FAQs, you can auto-generate and test them in bulk. This automation allows you to quickly train the AI-agent on all changes at once, saving time and reducing errors.
 
 The platform will then run a prediction test and display results based on the confidence level. If the confidence level is low, the result will be displayed as a fail.
 
@@ -11,7 +11,7 @@ This guide will walk you through the process of testing intents, FAQs, and utter
 
 ### Test intents
 
-You can upload all intents along with their associated utterances to your bot and test them collectively. With a single click, you can train the bot on all the changes at once. Based on the imported entities, the platform will then run a prediction test and display results based on the confidence level.
+You can upload all intents along with their associated utterances to your AI-agent and test them collectively. With a single click, you can train the AI-agent on all the changes at once. Based on the imported entities, the platform will then run a prediction test and display results based on the confidence level.
 
 To test the intents, follow these steps:
 
@@ -20,7 +20,7 @@ To test the intents, follow these steps:
     ![](https://imgur.com/Bf7uPXz.png)
     
     
-* You will see the following options. Choose your preferred options to test your bot:
+* You will see the following options. Choose your preferred options to test your AI-agent:
   * [Import Intents](#import-intents)
   * [Upload Utterances](#upload-utterances)
 
@@ -178,7 +178,7 @@ The downloaded report includes the following details:
   * **Intent** - Intents that will be triggered by those utterances.
   * **predictedIntent** - The intent that was triggered for that utterance.
   * **predictedConfidence** - The percentage at which the respective intent gets triggered.
-  * **Result** - Outcome of the predictions -       **success** for successful predictions, **fail** for failed predictions.
+  * **Result** - Outcome of the predictions -  **success** for successful predictions, **fail** for failed predictions.
 
 
    ![](https://imgur.com/CgIklpw.png)

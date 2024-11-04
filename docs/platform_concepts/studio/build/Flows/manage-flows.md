@@ -8,7 +8,7 @@ Managing a flow involves several key actions such as editing, cloning, and delet
 
 ## Configure Start (Welcome) and Fallback flow
 
-This video provides a step-by-step guide on creating start (welocme) and fallback flows for your bot using the Yellow.ai cloud platform. Learn how to set up the initial interactions users have with your bot and to handle unexpected user inputs with effective fallback flows.
+This video provides a step-by-step guide on creating start (welocme) and fallback flows for your AI-agent using the Yellow.ai cloud platform. Learn how to set up the initial interactions users have with your AI-agent and to handle unexpected user inputs with effective fallback flows.
 
 <center>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nNhHohYyiQU?si=5PentoBOAqg5OJSF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -16,9 +16,9 @@ This video provides a step-by-step guide on creating start (welocme) and fallbac
 
 ### Start flow (Welcome)
 
-The welcome message is the first greeting users receive when they interact with the bot. You can choose any flow as the welcome flow (when there are more than two flows available).
+The welcome message is the first greeting users receive when they interact with the AI-agent. You can choose any flow as the welcome flow (when there are more than two flows available).
 
-For instance, if you want your chatbot to greet users with a welcoming message and introductory details at the start of each conversation, you can set this as the entry point for the bot conversation. The associated flow would then trigger the welcome message and introduction. 
+For instance, if you want your AI-agent to greet users with a welcoming message and introductory details at the start of each conversation, you can set this as the entry point for the AI-agent conversation. The associated flow would then trigger the welcome message and introduction. 
 
 :::note
 If the user ends that conversation and starts a new one, the welcome flow will again greet the user in the new session.
@@ -38,7 +38,7 @@ To set a flow as the start flow, follow these steps:
 
 ### Fallback flow
 
-A fallback flow is triggered when the bot cannot understand the user utterance, cannot suggest relevant flows, or fails to search for documents uploaded in KB. 
+A fallback flow is triggered when the AI-agent cannot understand the user utterance, cannot suggest relevant flows, or fails to search for documents uploaded in KB. 
 
 
 You can mark any flow as the fallback flow. However, ensure that you design the flow to effectively handle unexpected scenarios.
@@ -58,7 +58,7 @@ To set a flow as a fallback flow, follow these steps:
 
 ## Configuring a start trigger for a Flow
 
-The start trigger is an entry point for a bot to begin conversation with the user. You can define start trigger using Intents, Entities, Event, or Page URL.
+The start trigger is an entry point for a AI-agent to begin conversation with the user. You can define start trigger using Intents, Entities, Event, or Page URL.
 
 For detailed instructions, see [how to configure each trigger type](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow).
 
@@ -67,7 +67,7 @@ For detailed instructions, see [how to configure each trigger type](https://docs
 
 ## Connecting two nodes 
 
-In a conversational flow, a connection is the path that guides the user step by step through the conversation. Connecting nodes establish logical transitions between different points in the dialogue, allowing the bot to respond appropriately to the user's input .
+In a conversational flow, a connection is the path that guides the user step by step through the conversation. Connecting nodes establish logical transitions between different points in the dialogue, allowing the AI-agent to respond appropriately to the user's input .
 
 Each node has a starting point, just click on the point and select the appropriate node.
 
@@ -111,7 +111,7 @@ To delete a node, click on the **more options** icon > **Delete**.
 
 ## Search flows
 
-After creating a flow, you can use the search functionality to quickly locate and access it. This allows you to easily find the specific flow that you need to work on, especially when there are multiple flows within the same bot.
+After creating a flow, you can use the search functionality to quickly locate and access it. This allows you to easily find the specific flow that you need to work on, especially when there are multiple flows within the same AI-agent.
 
 To search for a flow, follow these steps:
 
@@ -127,7 +127,7 @@ To search for a flow, follow these steps:
 
 ## Edit flow
 
-You can edit bot flows to enhance the bot's interactions by modifying flow details such as its name, description, and category, as well as adding new prompts or adjusting its logic based on user responses to ensure a seamless conversation flow.
+You can edit AI-agent flows to enhance the AI-agent's interactions by modifying flow details such as its name, description, and category, as well as adding new prompts or adjusting its logic based on user responses to ensure a seamless conversation flow.
 
 To edit a flow, follow these steps:
 
@@ -152,7 +152,7 @@ To edit a flow, follow these steps:
 You can clone a flow to create a duplicate copy, which can be useful for testing without affecting the original flow.
 
 :::note 
-While cloning flows to another bot, the source and destination have to be in the same region.
+While cloning flows to another AI-agent, the source and destination have to be in the same region.
 ::: 
 
 To clone a flow, follow these steps:
@@ -219,12 +219,12 @@ To move the flow to another category, follow the below step:
 
 Connecting flows ensures seamless transitions between different conversation stages, maintaining context for a personalized user experience.
 
-To connect two flows, you can use a [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. In the case of a switch flow, the bot does not return to the original flow from which the node was triggered. While an execute flow node, allows the bot to return to the original flow after executing the designated new flow.
+To connect two flows, you can use a [execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node. In the case of a switch flow, the AI-agent does not return to the original flow from which the node was triggered. While an execute flow node, allows the AI-agent to return to the original flow after executing the designated new flow.
 
 
 ### Configuring a start trigger for a Flow
 
-The start trigger is an entry point for a bot to begin conversation with the user. You can define start trigger using Intents, Entities, Event, or Page URL.
+The start trigger is an entry point for a AI-agent to begin conversation with the user. You can define start trigger using Intents, Entities, Event, or Page URL.
 
 For detailed instructions, see [how to configure each trigger type](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow).
 
@@ -233,7 +233,7 @@ For detailed instructions, see [how to configure each trigger type](https://docs
 
 ### Connecting two nodes 
 
-In a conversational flow, a connection is the path that guides the user step by step through the conversation. Connecting nodes establish logical transitions between different points in the dialogue, allowing the bot to respond appropriately to the user's input .
+In a conversational flow, a connection is the path that guides the user step by step through the conversation. Connecting nodes establish logical transitions between different points in the dialogue, allowing the AI-agent to respond appropriately to the user's input .
 
 Each node has a starting point, just click on the point and select the appropriate node.
 
@@ -277,32 +277,32 @@ To delete a node, click on the **more options** icon > **Delete**.
 
 ## Preview flow
 
-The Preview option allows you to test the selected bot flow and provides a glimpse into how the bot would appear, function, and interact with the end user. When you click **Preview**, you can perform the following actions:
+The Preview option allows you to test the selected AI-agent flow and provides a glimpse into how the AI-agent would appear, function, and interact with the end user. When you click **Preview**, you can perform the following actions:
 
 Options | Decsription 
 -------|------------
-Preview bot  | Allows you to see how your bot looks and operates within the selected flow.
+Preview bot  | Allows you to see how your AI-agent looks and operates within the selected flow.
 Preview current flow | Previews the current flow that you are working on.
-Preview and test the bot in different tab | Opens a new tab to preview and interact with the bot.
-[Debug logs](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) | Enables you to debug the flows to find and fix issues in the bot's conversations, ensuring smooth user interactions.
+Preview and test the AI-agent in different tab | Opens a new tab to preview and interact with the AI-agent.
+[Debug logs](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/debug-flow) | Enables you to debug the flows to find and fix issues in the AI-agent's conversations, ensuring smooth user interactions.
 
 <img src="https://i.imgur.com/ns8cHvd.png" alt="drawing" width="80%"/>
 
-## Publish bot
+## Publish AI-agent
 
-Once you have tested your bot, you can [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) the bot in the respective environmnet to make it accessible to end users, and even export it as a template for future use.
+Once you have tested your AI-agent, you can [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) the AI-agent in the respective environmnet to make it accessible to end users, and even export it as a template for future use.
 
 :::note
 * In the live environment, you can only view the flows if they are published.
 * Editing or creating flows is not possible in the live environment.
-* Approval from the bot approver or superadmin is required to publish the bot.
+* Approval from the AI-agent approver or superadmin is required to publish the AI-agent.
 :::
 
    <img src="https://imgur.com/eYj5Ef6.png" alt="drawing" width="80%"/>
 
 You can select the following options to publish the flows:
 
-* **Publish bot**: Publishes all the flows within the bot.
-* [Publish selected flows](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#publish-specific-flows): Publishes the selected flows within the bot.
-* [Publish widget styling](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#publish-widget-styling): Publishes the chat widget UI and settings from lower to higher environments. This includes settings for the widget panel, bot icon, and all the settings.
-* [Export as flow template](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow): Publishes the created bot flow as a template.
+* **Publish bot**: Publishes all the flows within the AI-agent.
+* [Publish selected flows](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes#publish-specific-flows): Publishes the selected flows within the AI-agent.
+* [Publish widget styling](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#publish-widget-styling): Publishes the chat widget UI and settings from lower to higher environments. This includes settings for the widget panel, AI-agent icon, and all the settings.
+* [Export as flow template](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow): Publishes the created AI-agent flow as a template.

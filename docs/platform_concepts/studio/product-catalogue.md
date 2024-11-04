@@ -3,9 +3,9 @@ title: Product catalogue
 sidebar_label: Product catalogue
 ---
 
-The Product Catalogue helps to streamline your product management process by allowing you to store and showcase your product catalog to end users. It allows you to  store all the specific details of your products in one centralized location. Using the **Product Search** node(powered by GPT in the backend), the bot can seamlessly match user queries with product descriptions stored in the catalog, ensuring accurate and efficient product display to end users. 
+The Product Catalogue helps to streamline your product management process by allowing you to store and showcase your product catalog to end users. It allows you to  store all the specific details of your products in one centralized location. Using the **Product Search** node(powered by GPT in the backend), the AI-agent can seamlessly match user queries with product descriptions stored in the catalog, ensuring accurate and efficient product display to end users. 
 
-Imagine you run an online store and have added the Product Catalog to your bot. When a user asks about a product, like a laptop, the bot quickly finds matching items from the catalog and shows them to the user. This makes it easy for users to find what they're looking for and helps them make purchases smoothly.
+Imagine you run an online store and have added the Product Catalog to your AI-agent. When a user asks about a product, like a laptop, the AI-agent quickly finds matching items from the catalog and shows them to the user. This makes it easy for users to find what they're looking for and helps them make purchases smoothly.
 
 ## Create a product catalogue
 
@@ -21,7 +21,7 @@ Imagine you run an online store and have added the Product Catalog to your bot. 
 * **Field name**: Enter the name of the product.(this will appear as a column)
 * **Description**: Describe the product. We would suggest you to add a detailed description that will help GPT to read the description and fetch the product easily.
 * **Type**: Choose the data type for the data that will be added to that column.
-* **Searchable**: Enable this field to make this column searchable for the bot. Enable search only for columns with searchable data ton ensure better search results.
+* **Searchable**: Enable this field to make this column searchable for the AI-agent. Enable search only for columns with searchable data ton ensure better search results.
 
 3. Click **Create table**.
 
@@ -75,12 +75,12 @@ When a table contains numerous records, it can be challenging to scroll through 
 
    ![](https://i.imgur.com/Hh7oVvL.png)
 
-## Display product catalogue in bot conversations
+## Display product catalogue in AI-agent conversations
 
 To showcase products from the catalog to a user, you'll need to construct flows containing the **Product Search** node.
 
 1. [Create a flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#manually-create-a-flow) for your use case.
-2. At whichever point of the conversation you want the bot to display the products, include the **Product search** node.
+2. At whichever point of the conversation you want the AI-agent to display the products, include the **Product search** node.
 
    <img src="https://i.imgur.com/4Mgvn3K.png" alt="drawing" width="80%"/>
 
@@ -89,7 +89,7 @@ To showcase products from the catalog to a user, you'll need to construct flows 
 
    ![](https://i.imgur.com/ztWUzV7.png)
 
-* **Bot asks**: Enter the message the bot should display to the end user.
+* **Bot asks**: Enter the message the AI-agent should display to the end user.
 * **Table to search**: Choose the product catalogue from which the products will be displayed.
 * **Column**: Choose the specific column from which the products will be listed.
 * **Question for bot to ask**: Enter the message to display to the user while displaying products from the column.

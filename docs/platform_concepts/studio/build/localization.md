@@ -1,13 +1,13 @@
 ---
-title: Add Multilingual support to your bot
-sidebar_label: Add Multilingual support to your bot
+title: Add Multilingual support to your AI-agent
+sidebar_label: Add Multilingual support to your AI-agent
 ---
 
-By adding multilingual support to your bot, you can reach a broader audience and enhance customer engagement. Users can seamlessly switch languages during interactions, creating a more welcoming experience.
+By adding multilingual support to your AI-agent, you can reach a broader audience and enhance customer engagement. Users can seamlessly switch languages during interactions, creating a more welcoming experience.
 
 ## Supported languages
 
-The following are the different languages supported in the bot.
+The following are the different languages supported in the AI-agent.
 
 
 | Language                      | ISO 639-1 code    | Full support (Text) | Using translation (text) | Speech-to-text | Text-to-speech | Knowledge mining | Sentiment analytics | Small talk support |
@@ -142,11 +142,11 @@ The following are the different languages supported in the bot.
 | Zulu                          |   zu | Yes                 |                          | Yes            |                | Yes              |                     |                    |
             
 
-## Add supported languages to your bot
+## Add supported languages to your AI-agent
 
-You can add multiple supported languages to the bot, allowing users to interact in their preferred language.
+You can add multiple supported languages to the AI-agent, allowing users to interact in their preferred language.
 
-To add a new language to your bot, follow these steps:
+To add a new language to your AI-agent, follow these steps:
 
 1. Go to **Automation** > **Build** > **Flow** > click the **Language** icon.
 
@@ -160,15 +160,15 @@ To add a new language to your bot, follow these steps:
 
    ![](https://i.imgur.com/AL5YsQg.png)
    
-### Set your preferred language during bot conversations
+### Set your preferred language during AI-agent conversations
 
-To interact with the bot in your preferred language at any point during the conversation, use the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node to set your desired language. 
+To interact with the AI-agent in your preferred language at any point during the conversation, use the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node to set your desired language. 
 
 :::info
-You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the bot will continue responding in English without adjusting to the new language. You can only set the language using the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node.
+You cannot switch languages mid-conversation. For instance, if a user starts the conversation in English and then switches to Chinese, the AI-agent will continue responding in English without adjusting to the new language. You can only set the language using the [set language](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node.
 :::
 
-To configure the language for your bot, follow these steps :
+To configure the language for your AI-agent, follow these steps :
 
 1. In a flow, add the [set language node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language) node where you want to enable translation.
 
@@ -178,7 +178,7 @@ To configure the language for your bot, follow these steps :
 
     <img  src="https://i.imgur.com/IUVEShc.pngg"  alt="drawing" width="70%"/>
 
-3. Create a variable and assign it a language code that represents the language in which you want your bot to communicate. 
+3. Create a variable and assign it a language code that represents the language in which you want your AI-agent to communicate. 
 
     ![](https://i.imgur.com/8RpA52t.png)
     
@@ -186,24 +186,24 @@ To configure the language for your bot, follow these steps :
 
     ![](https://i.imgur.com/01pYtSH.png)
 
-5. Test the bot by previewing the flow to ensure it communicates in the selected language.
+5. Test the AI-agent by previewing the flow to ensure it communicates in the selected language.
 
     ![](https://i.imgur.com/fYJHacR.png)
     
-6. To change the language of your bot, update the language code in the variable to your preferred language.
+6. To change the language of your AI-agent, update the language code in the variable to your preferred language.
 
-7. Go to the **Set language** node and select the updated variable. This will change the language of your bot to the newly selected language code.
+7. Go to the **Set language** node and select the updated variable. This will change the language of your AI-agent to the newly selected language code.
 
 
 ## Add language translations
 
-If you prefer not to use auto-translation services like Google Translate, manually add language translations to your bot. This ensures clear and precise communication with users, particularly for languages where automated translations may be inaccurate.
+If you prefer not to use auto-translation services like Google Translate, manually add language translations to your AI-agent. This ensures clear and precise communication with users, particularly for languages where automated translations may be inaccurate.
 
-This section provides detailed instructions on how to add the language translations for your bot.
+This section provides detailed instructions on how to add the language translations for your AI-agent.
 
 ### Add translations for individual keys
 
-To add language translations, you need to create a unique key for each message in the selected languages.  These keys are then linked to specific nodes in your bot. 
+To add language translations, you need to create a unique key for each message in the selected languages.  These keys are then linked to specific nodes in your AI-agent. 
 
 In this context, a "key" refers to a sentence or message intended for users, that is selected during flow creation for translation. You can provide translations for all supported languages, manually as explained in the following:
 
@@ -239,7 +239,7 @@ If you want to translate the messages into other languages then you can use the 
 
 ### Add translation key in nodes
 
-You can add translation keys to nodes in a multilingual bot to ensure the bot's output is displayed in the selected language. Here are the steps to add the translation key in nodes:
+You can add translation keys to nodes in a multilingual AI-agent to ensure the AI-agent's output is displayed in the selected language. Here are the steps to add the translation key in nodes:
 
 1. Click the translation icon in the text field.
 
@@ -249,7 +249,7 @@ You can add translation keys to nodes in a multilingual bot to ensure the bot's 
 
     ![](https://i.imgur.com/eVy9OuF.png)
 
-* When the bot-user conversation reaches this node, based on the [language set by the user](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language), the bot automatically switches to the language configured in the key.
+* When the AI-agent-user conversation reaches this node, based on the [language set by the user](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#31-set-language), the AI-agent automatically switches to the language configured in the key.
 
     ![](https://i.imgur.com/tQiRXEf.png)
 

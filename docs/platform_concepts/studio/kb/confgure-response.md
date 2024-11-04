@@ -11,7 +11,7 @@ You can input instructions on how you want the response to appear. These instruc
 
 :::note
 * This is a gated feature and is enabled only on request basis.
-* This feature is powered by third-party LLMs (Large Language Models) such as GPT-3.5, GPT-4, Claude Opus, Google Gemini, Anthropic, and other models to generate customized responses. By default, all bots use our in-house model to generate responses.
+* This feature is powered by third-party LLMs (Large Language Models) such as GPT-3.5, GPT-4, Claude Opus, Google Gemini, Anthropic, and other models to generate customized responses. By default, all AI-agents use our in-house model to generate responses.
 :::
 
 ### Adding custom prompt

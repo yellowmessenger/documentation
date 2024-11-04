@@ -3,14 +3,14 @@ title: Manage database tables & table data
 sidebar_label: Manage database tables
 ---
 
-You can create database tables to store and retrieve information. During bot conversations, these tables help in storing user-specific data and displaying information in response to user inputs. This streamlined process greatly simplifies both data insertion and retrieval.
+You can create database tables to store and retrieve information. During AI-agent conversations, these tables help in storing user-specific data and displaying information in response to user inputs. This streamlined process greatly simplifies both data insertion and retrieval.
 
 Some examples are creating a table containing city, pin code, and address columns to exhibit store addresses according to the chosen city or pin code, archiving user feedback within a database table, and managing product details in a table to exhibit information based on the selected SKU or name.
 
 This article covers all the concepts remated to managing database tables in Automation.
 
 :::note
-We have either two or three environments, depending on the specific bot: Development, Staging, and Live. When it comes to database tables, they play a crucial role in storing and organizing data for your bot. These tables are typically created in the first environment, and when you publish the bot, they seamlessly move to the next environment in the hierarchy, as configured.
+We have either two or three environments, depending on the specific AI-agent: Development, Staging, and Live. When it comes to database tables, they play a crucial role in storing and organizing data for your AI-agent. These tables are typically created in the first environment, and when you publish the AI-agent, they seamlessly move to the next environment in the hierarchy, as configured.
 :::
 
 ## Create database table
@@ -69,7 +69,7 @@ You cannot modify the datatype or searchability of a column once created.
    4. **Related table**: Choose the table that you want to associate.
    5. **Related column**: Choose the column that you want the current column to associate with.
 4. Click **Update**.
-5. Publish the bot to observe changes in the subsequent environment within the hierarchy. For instance, you can deploy updates from the Sandbox to Staging, and then further push changes from Staging to the Live environment.
+5. Publish the AI-agent to observe changes in the subsequent environment within the hierarchy. For instance, you can deploy updates from the Sandbox to Staging, and then further push changes from Staging to the Live environment.
 ***
 
 
@@ -131,7 +131,7 @@ Import comes in handy when you want to a database table from an external source 
 
 ### Insert new records or values to a database table
 
-You can directly pass field values to the table from bot flows. For instance, in a lead generation flow, you might need to collect the user's email address, phone number, and interested product and store them in a datable table.
+You can directly pass field values to the table from AI-agent flows. For instance, in a lead generation flow, you might need to collect the user's email address, phone number, and interested product and store them in a datable table.
 
 To insert data into the table, use the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) and follow these steps:
 
@@ -160,7 +160,7 @@ To update an existing field value of a table use the [Database node](https://doc
 
 ### Fetch database records using the Database node
 
-1. To search for a particular piece of information in a bot conversation, use the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) and choose **Select type** as **Search**.
+1. To search for a particular piece of information in a AI-agent conversation, use the [Database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) and choose **Select type** as **Search**.
 
    <img src="https://i.imgur.com/zdictxI.png" alt="drawing" width="70%"/>
 
@@ -202,7 +202,7 @@ When a table contains numerous records, it can be challenging to scroll through 
 
 ## Mask database columns
 
-The Super Admin of the bot can mask certain database columns. For example, passwords or any PII data stored in plain text. The data of the masked column will be visible as `*****` instead of real values.
+The Super Admin of the AI-agent can mask certain database columns. For example, passwords or any PII data stored in plain text. The data of the masked column will be visible as `*****` instead of real values.
 
 :::note
 * The masking of data happens at the application level in the backend. You cannot access it in any other way.

@@ -8,7 +8,7 @@ Adding contextual responses involves providing additional context as a response 
 
 Here's an example:
 
-* Bot: Can you share your email with me?
+* AI-agent: Can you share your email with me?
 * User: Sure, gooduser@email.com (Expected response)
 * User: What is an email? Or Why do you need my email? (Received response)
 
@@ -44,7 +44,7 @@ To add contextual response, follow these steps:
 
       <img src="https://imgur.com/eNI0Vc9.png" alt="drawing" width="50%"/>
       
-9. Click **Train responses** to train the bot on the added intents and responses.
+9. Click **Train responses** to train the AI-agent on the added intents and responses.
 
     ![](https://imgur.com/f0KK4h0.png)
         

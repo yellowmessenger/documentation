@@ -24,7 +24,7 @@ In this article, you will learn about the different types of prompt nodes:
 
 **Randomization**
 
-Randomization is a feature available in nodes that allows chatbots show different variation of greeting messages/ questions to users, making the conversation feel more natural and human-like.
+Randomization is a feature available in nodes that allows AI-agents show different variation of greeting messages/ questions to users, making the conversation feel more natural and human-like.
 
 1. To add multiple texts, click **Add multiple text for randomizing** on the node. 
 2. Enter variations of the text that you want your users to see. 
@@ -77,10 +77,10 @@ Ask and validate the user name with this node.
 
 In the **If validation fails field**, enter the message to be displayed when the user enters an invalid response.
 
-For example, if users enter anything instead of their names(first + last name), validation will fail and the bot will display ‘Can you please repeat this, looks like an invalid name’.
+For example, if users enter anything instead of their names(first + last name), validation will fail and the AI-agent will display ‘Can you please repeat this, looks like an invalid name’.
 
 :::note
- If you are building a multilingual bot, it's recommended to use a Question node instead of a Name node.
+ If you are building a multilingual AI-agent, it's recommended to use a Question node instead of a Name node.
 :::
 
 ![](https://i.imgur.com/Rr81uih.png)
@@ -109,11 +109,11 @@ For example, if users enter anything instead of their names(first + last name), 
 
 > This node is available for voice bots. 
 
-Ask and validate phone numbers with this node. If the bot is customised for a specific region, select a **default ISD** value.
+Ask and validate phone numbers with this node. If the AI-agent is customised for a specific region, select a **default ISD** value.
 
 In the **If validation fails field**, enter the message to be displayed when the user enters an invalid response.
 
-For example, if users enters a number of length greater or less than the expected number (10 for India +91), validation fails and the bot replies, 'Enter a valid phone number'.
+For example, if users enters a number of length greater or less than the expected number (10 for India +91), validation fails and the AI-agent replies, 'Enter a valid phone number'.
 
 
 ![](https://i.imgur.com/OE9W6fH.png)
@@ -237,7 +237,7 @@ Ask, validate and store the user's email with this node.
 
 **Validator**
 
-Bot checks if the entered email is in username@company.domain format.
+AI-agent checks if the entered email is in username@company.domain format.
 
 [To store the response](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables) (email address) in a variable, create an email [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) and store the email ID in it. 
 
@@ -295,7 +295,7 @@ Use carousel settings to customize the carousel cards as per your use case.
 
 | Feature                   | Description                                                                                                        |
 |---------------------------|--------------------------------------------------------------------------------------------------------------------|
-| Hide Input                | Hides the input area for the user in the chatbot, preventing user input.                                          |
+| Hide Input                | Hides the input area for the user in the AI-agent, preventing user input.                                          |
 | Hide Home Button          | Hides the home button from the user interface.                                                                     |
 | Enable Default Feedback  | Displays like and dislike emojis next to each card for user feedback.                                               |
 | Disable Action after Click| Disables the carousel list after a button has been clicked.                                                        |
@@ -378,7 +378,7 @@ You can call this function from the function node we will learn about and store 
 ```
 return new Promise(resolve => {
     // Your logic goes here
-    let cars = data.variables.cars_h; //this bot variable contains an API response
+    let cars = data.variables.cars_h; //this AI-agent variable contains an API response
     let cars_cards = []; 
 
     for (let i = 0; i < cars.length; i++) {
@@ -423,7 +423,7 @@ This is an optional field, and users can still interact via chat without being r
 This node is supported only on Web and Mobile apps.
 :::
 
-#### Types of date pickers available in bot
+#### Types of date pickers available in AI-agent
 
 There are various types of date pickers available, each catering to different needs and preferences. You can choose the one that best suits your requirements.
 
@@ -808,7 +808,7 @@ You can also send a **Share location** button to allow users to share their curr
 
 ![](https://i.imgur.com/bicgYat.png)
 
-The following screenshot is how **Share your location** will look on your bot.
+The following screenshot is how **Share your location** will look on your AI-agent.
 
 ![](https://i.imgur.com/bicgYat.png)
 
@@ -839,7 +839,7 @@ This node helps you to skip triggering of NLU, intents, or entities for a respec
 
 User inputs are stored in a variable through the Store comment node without triggering the NLU of that particular flow.
 
-For example, you have created a bot to order food from a restaurant. You want to allow the  user to provide feedback after delivering the food. In such cases, you can use the store comment node to provide feedback without triggering the NLU of the respective flow.
+For example, you have created a AI-agent to order food from a restaurant. You want to allow the  user to provide feedback after delivering the food. In such cases, you can use the store comment node to provide feedback without triggering the NLU of the respective flow.
 
 ![](https://i.imgur.com/oub8uVE.png)
 
@@ -915,17 +915,17 @@ The Feedback node displays a feedback widget and stores user ratings and comment
 
 ### 3.8 Speak
 
-> This node is available for voice bots. 
+> This node is available for voice AI-agents. 
 
 
 Users can input the SSML text and can play the configured/generated audio on the go.
 
 This node can be used for two purposes: 
-1. When voice bot developers can test the SSML inputs directly from this node (with the help of the **Test Audio** button).
+1. When voice AI-agent developers can test the SSML inputs directly from this node (with the help of the **Test Audio** button).
 2. This node can be used as an alternative for the **Question** node but as a voice message. 
 
 
-You can enter what a bot must ask the user in SSML format. This can be tested by clicking **Test Audio** and playing the produced audio. When this node is reached in the flow, the user will be sent a voice message (when the bot is configured for it).
+You can enter what a AI-agent must ask the user in SSML format. This can be tested by clicking **Test Audio** and playing the produced audio. When this node is reached in the flow, the user will be sent a voice message (when the AI-agent is configured for it).
 
 The response message (user utterance) obtained for this node can be stored as a variable (similar to the question node)
 
@@ -949,7 +949,7 @@ Ask and store user input and other comments with this node.
  Use this node only to store text comments from users - these replies will not trigger NLP.
 :::
 
-In many use cases, there is a need for a non-linear flow. For example, if the phone number node asks "Please enter your phone number"- the user enters a number in the wrong format, the bot displays the validation message saying "Entered number is wrong. Please enter again". For the same, if the user enters "Why do you want my phone number?" the reply will still be "Entered number is wrong. Please enter again". To handle such cases, the Input node can be used to handle different types of user replies. 
+In many use cases, there is a need for a non-linear flow. For example, if the phone number node asks "Please enter your phone number"- the user enters a number in the wrong format, the AI-agent displays the validation message saying "Entered number is wrong. Please enter again". For the same, if the user enters "Why do you want my phone number?" the reply will still be "Entered number is wrong. Please enter again". To handle such cases, the Input node can be used to handle different types of user replies. 
 
 
 For better & dynamic conversation design, use the functionalities of the input node:  
@@ -980,10 +980,10 @@ Make Prompt Smarter option is available on all the prompt nodes. 3 options avail
 
 ### 4.1 Auto complete
 
-Autocomplete is set so that the bot can start predicting the rest of the word or sentence for users as they start typing. For example, if you want to find your location and you start typing Jai, you will get the city names starting with Jai - Jaipur. Similarly, if you type Ban, you will get suggestions such as Bangalore, Bangla, Banswara, etc.
+Autocomplete is set so that the AI-agent can start predicting the rest of the word or sentence for users as they start typing. For example, if you want to find your location and you start typing Jai, you will get the city names starting with Jai - Jaipur. Similarly, if you type Ban, you will get suggestions such as Bangalore, Bangla, Banswara, etc.
 
 This feature can be used: 
-* When the end user wants to easily discover what a bot or a point does.
+* When the end user wants to easily discover what a AI-agent or a point does.
 * When there are multiple options available and a limit is set on the display, autocomplete is a good singular or assisting alternative to show options.
 * Faster typing, and improved user experience.
 
@@ -1048,14 +1048,14 @@ Configure Auto-skip at a global level (from tools section), click [here](https:/
 For example, instead of setting a new user ID, you can use the phone number as a unique ID to recognize this user. Other nodes that can be used as Unique IDs are Car Number, Aadhar Card, SSN, etc. that are unique to an individual. 
 
 2. **Mark user message as sensitive info**: Mask this user info from appearing in conversation logs.
-3. **Mark bot message as sensitive info**: Mask this bot info from appearing in conversation logs.
+3. **Mark bot message as sensitive info**: Mask this AI-agent info from appearing in conversation logs.
 
 
 ![](https://i.imgur.com/0W4y8pO.png)
 
 #### Use-case
 
-* Where there are 2 nodes in this flow, one asking for a password (marked user message as sensitive info) and the other providing a new password (marked bot message as sensitive info). 
+* Where there are 2 nodes in this flow, one asking for a password (marked user message as sensitive info) and the other providing a new password (marked AI-agent message as sensitive info). 
 
 ![](https://i.imgur.com/FKZSynh.jpg)
 
@@ -1075,7 +1075,7 @@ For example, instead of setting a new user ID, you can use the phone number as a
 A voice input node is used to gather user information, process it, and manage various scenarios of conversing in a human-like manner. This node is in auto-sync with the conversation design so all the designs you add there will appear here automatically. To learn about using this node, click [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput).
 
 :::note
-Voice input node will work only for voice bots, i.e you should have enabled **Voice bot** while creating your bot.
+Voice input node will work only for voice AI-agents, i.e you should have enabled **Voice bot** while creating your AI-agent.
 
 <img src="https://imgur.com/kyYVxAR.png" alt="drawing" width="50%"/>
 :::

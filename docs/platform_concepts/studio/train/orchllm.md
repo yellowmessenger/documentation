@@ -4,17 +4,17 @@ sidebar_label : Orchestrator LLM
 ---
 ## OrchLLM overview
 
-Orchestrator LLM (Large Language Model), our in-house fine-tuned advanced conversational AI model, that enhances the capability of chatbots to orchestrate multiple goals within a single conversation.
+Orchestrator LLM (Large Language Model), our in-house fine-tuned advanced conversational AI model, that enhances the capability of AI-agents to orchestrate multiple goals within a single conversation.
 
 Orchestrator LLM understands user queries, retains context throughout the conversation, and triggers appropriate flows or responses based on the context. It maintains the entire user context history and can dynamically switch between multiple user goals while guiding users towards goal completion.
 
 ### Key features of Orchestrator LLM:
 
-* **Zero training**: Orchestrator LLM eliminates the need for training bots with specific utterances and intents, as it intelligently understands and responds to user queries without requiring extensive training data.
-* **Context retention**: Orchestrator LLM effectively maintains context within conversations, allowing chatbots to understand and retain the context of user queries throughout the conversation.
-* **Context switching**: It seamlessly handles context switching, enabling chatbots to switch between multiple queries within a single conversation without losing continuity.
-* **Flow Orchestration**: Orchestrator LLM efficiently organizes and oversees multiple flows within a single bot. It ensures that the right flow is triggered based on the user's current context and conversation history.
-* **Handles small talk and off-topic inquiries**: Orchestrator LLM has the capability to generate small talk and off-topic inquiries, allowing chatbots to engage users in conversation during idle moments or context switching.
+* **Zero training**: Orchestrator LLM eliminates the need for training AI-agents with specific utterances and intents, as it intelligently understands and responds to user queries without requiring extensive training data.
+* **Context retention**: Orchestrator LLM effectively maintains context within conversations, allowing AI-agents to understand and retain the context of user queries throughout the conversation.
+* **Context switching**: It seamlessly handles context switching, enabling AI-agents to switch between multiple queries within a single conversation without losing continuity.
+* **Flow Orchestration**: Orchestrator LLM efficiently organizes and oversees multiple flows within a single AI-agent. It ensures that the right flow is triggered based on the user's current context and conversation history.
+* **Handles small talk and off-topic inquiries**: Orchestrator LLM has the capability to generate small talk and off-topic inquiries, allowing AI-agents to engage users in conversation during idle moments or context switching.
 
 ### How does Orchestrator LLM work?
 
@@ -24,22 +24,22 @@ Let's see how Orchestrator LLM manages context switching and guides conversation
 
 In the below example, let's see how an Orchestrator LLM helps users achieve their primary goal (apply for a credit card) and how it handles context switching and triggers relevant flows.
  
-Here's the conversation between bot and user, along with how Orchestrator LLM handles each conversation:
+Here's the conversation between AI-agent and user, along with how Orchestrator LLM handles each conversation:
 
-Bot: Hi, how can I help you? 
+AI-agent: Hi, how can I help you? 
 
 > Orchestrator LLM understands the user's inquiry.
 
 User: I wanted to check how to apply for a credit card?
 > Orchestrator LLM recognizes the user's main goal of applying for a credit card.
 
-Bot: Sure I can help you with that. You can go to the website and apply for it. Here is the process:<br/>Step 1 : Xyz<br/>Step 2: Abc 
+AI-agent: Sure I can help you with that. You can go to the website and apply for it. Here is the process:<br/>Step 1 : Xyz<br/>Step 2: Abc 
 > Orchestrator LLM provides guidance on how to apply for the credit card.
 
 User: But I tried that already it was asking for my account ID. How can I find that?
 > Orchestrator LLM understands the **context switch** and prepares to assist with finding the account ID.
 
-Bot: Sure. I can help you with that. Please tell me your registered email ID.
+AI-agent: Sure. I can help you with that. Please tell me your registered email ID.
 
 > Orchestrator LLM triggers the  specific flow to check account id and prompts the user for necessary information to retrieve the account ID.
 
@@ -47,7 +47,7 @@ User: rio@gmail.com
 
 > Orchestrator LLM retrieves the account ID (1234ABCD) and provides it to the user.
 
-Bot: Hi Rio, your account ID is 1234ABCD. You can use that to proceed on the website and apply for the credit card.
+AI-agent: Hi Rio, your account ID is 1234ABCD. You can use that to proceed on the website and apply for the credit card.
 
 > Orchestrator LLM confirms the account ID and encourages the user to continue with the credit card application process.
 
@@ -55,7 +55,7 @@ User: Thanks. Before that, can you please tell me if there are any application c
 
 > Orchestrator LLM recognizes the new question (**switched context**) and prepares to fetch relevant information from the **Knowledge base**.
 
-Bot: There are no application charges for credit card. Go ahead and apply for credit card.
+AI-agent: There are no application charges for credit card. Go ahead and apply for credit card.
 
 > Orchestrator LLM provides the user with information regarding application charges for the credit card.
 
@@ -71,7 +71,7 @@ Here’s a refined version of the known limitations for V1 (GPT-4o/4/3.5) and V2
 1. **Limitations of V1 (GPT-4o/4/3.5)**:
 
    1. **Negation of Intents**: Negation of intents will not function unless specified in the prompt (e.g., "I don’t want a demo").
-   2. **Contextual Responses**: Contextual questions (e.g., "Why do you need my email?") will default to fallback responses instead of being addressed by Orch.
+   2. **Contextual Responses**: Contextual questions (example, "Why do you need my email?") will default to fallback responses instead of being addressed by Orch.
    3. **Disambiguation**: The system does not support disambiguation.
    4. **Conversation History**: Clicking the home button will clear the conversation history. By default, conversation history is cleared after 24 hours.
 
@@ -86,27 +86,27 @@ Here’s a refined version of the known limitations for V1 (GPT-4o/4/3.5) and V2
         2. QR button clicks will not trigger switching if an outward connection from the button is available.
         3. Goal nodes are excluded from switching.
 
-   2. **Architecture Compatibility**: OrchLLM does not support mother-child bot architecture.
+   2. **Architecture Compatibility**: OrchLLM does not support mother-child AI-agent architecture.
    3. **Language Availability**: Currently, OrchLLM is only available in English.
 
 --- 
 
 ## Setup Orchestrator LLM
 
-### Key considerations for building an OrchLLM bot:
+### Key considerations for building an OrchLLM AI-agent:
 
 These are the things to consider to build tailored conversations:
 
 
-1. **Define the bot persona**: Clearly outline the bot's capabilities and limitations.
+1. **Define the AI-agent persona**: Clearly outline the AI-agent's capabilities and limitations.
 2. **Manage FAQs effectively**: Move FAQs into a knowledge base and avoid inputting a large number directly into the Orch prompt.
 3. **Aim for accuracy**: Limit triggers and flows to 20-30 to improve performance.
-4. **Summarize intents**: Condense existing intent-based bots into clear, concise descriptions when transitioning to OrchLLM.
+4. **Summarize intents**: Condense existing intent-based AI-agents into clear, concise descriptions when transitioning to OrchLLM.
 5. **Consider Sandbox environment limitations**: Be aware that enabling OrchLLM in a sandbox will lead to publishing in higher environments.
 
 ---
 
-### Configure Orchestrator LLM bot
+### Configure Orchestrator LLM AI-agent
 
 To configure Orchestrator LLM for a flow:
 
@@ -139,7 +139,7 @@ Visa requirements | When user needs information regarding visa requirements.
 
 ![](https://imgur.com/joK3Bx5.png)
     
-4. Click **Preview** > **Preview current flow** to test the bot.
+4. Click **Preview** > **Preview current flow** to test the AI-agent.
 
     ![Orch LLM gif](/img/cdp/orchllm.gif)
 
@@ -156,9 +156,9 @@ Visa requirements | When user needs information regarding visa requirements.
 
    ![img](https://i.imgur.com/aGL7bHs.png)
 
-## Testing OrchLLM bot
+## Testing OrchLLM AI-agent
 
-1. **Review logs**: Examine logs when the bot provides unexpected responses.
+1. **Review logs**: Examine logs when the AI-agent provides unexpected responses.
 2. **Assess reasoning**: Check the reasoning provided in the output and adjust the description or prompt as needed.
 3. **Report hallucinations**: Note that log outputs may hallucinate; however, report any occurrences that happen repeatedly.
 

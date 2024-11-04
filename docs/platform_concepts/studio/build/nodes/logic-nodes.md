@@ -1,5 +1,5 @@
 ---
-title: Logic Nodes
+title: Logic nodes
 sidebar_label: Logic 
 ---
 Logic nodes can be used when the flow must be branched based on the given conditions. 
@@ -16,7 +16,7 @@ Branch the flow based on if-else logic with this node.
 ![](https://i.imgur.com/0XiTCxA.jpg)
 
 > For example, in the given flow the variable _**issueDetail**_ is storing the quick replies response (which is Yes/ No). Then the Condition is checked:
-> If issueDetail = Yes, the bot will move to the mentioned flow 
+> If issueDetail = Yes, the AI-agent will move to the mentioned flow 
 Else (if any other value is entered other than Yes), the text will be displayed to the user. 
 
 
@@ -92,7 +92,7 @@ Similar to the condition node, branch the flow based on the available active cha
 
 ![](https://i.imgur.com/t1lgUpG.jpg)
 
-Multiple channels can be configured for a bot. Branching (based on If, Else-if and Else conditions) through this node can happen when the mentioned channels are configured. 
+Multiple channels can be configured for a AI-agent. Branching (based on If, Else-if and Else conditions) through this node can happen when the mentioned channels are configured. 
 
 For example, for the above flow, the following conditions are checked:
 
@@ -100,7 +100,7 @@ For example, for the above flow, the following conditions are checked:
 >2. **Else-if**, the Telegram or Skype channels are configured, a second flow (socialHandle) will be executed. 
 >3. **Else**, if none of the mentioned channels is configured, a question will be posed to a user to share their social media handle (text node). 
 
-Since none of the channels mentioned in If and Else-if was configured, the bot displayed a text message ("Please enter your social media handle where we can reach you")
+Since none of the channels mentioned in If and Else-if was configured, the AI-agent displayed a text message ("Please enter your social media handle where we can reach you")
 
 
 ---

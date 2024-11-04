@@ -80,7 +80,7 @@ The **+More** button holds configurations that would optimize the usage of that 
 
 ## Use existing API
 
-If you have already added the API to the bot either [through API node](#create-new-api) or through the [API section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api), you can fetch the API here.
+If you have already added the API to the AI-agent either [through API node](#create-new-api) or through the [API section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api), you can fetch the API here.
 
 1. Click **Use existing API**.
 

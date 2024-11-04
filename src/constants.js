@@ -56,7 +56,7 @@ export const topics = [
     url: "/docs/platform_concepts/getting-started",
   },
   {
-    title: "Studio",
+    title: "Automation",
     description:
       "Create your bot effortlessly using our no-code bot-building platform or dynamic bot generator for your business requirements.",
     icon: "ri-robot-line",
