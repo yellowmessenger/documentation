@@ -2,7 +2,7 @@
 title: Automation overview
 sidebar_label: Overview
 id: overview
-tags: [create your first AI-agent]
+tags: [create your first bot]
 ---
 
 Automation is a AI-agent building platform that allows you to easily build and customize AI-agent conversations without requiring coding expertise. It provides all the necessary tools to create and test conversational AI-agents effectively.
