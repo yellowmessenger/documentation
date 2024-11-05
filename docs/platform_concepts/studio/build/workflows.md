@@ -299,12 +299,7 @@ You connect the start trigger (first node) to other nodes such as Action, Logic,
 | **User Event**               | Trigger a user event for an existing event key with the set delay.              |
 
 
-<!-- 
 
-**Raise New Ticket**    Create a new support ticket to report an issue or request assistance.        
-**Set Language**          Change the bot language to any of the configured languages using this node.  
-**Update Status**            Change the current status of the live chat, such as moving it from Open to In Progress or other relevant statuses based on the workflow. 
---> 
 
 
 :::info
