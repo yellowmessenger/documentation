@@ -80,7 +80,7 @@ On **Whatsapp channel** you can upload a maximum size of 5 MB for images and 16 
 ### Internal notes
 
 This can be used to take notes/jot down the pain points/summarise the chat sent by the user. It is mostly used before transferring the chat to another agent. 
-The messages typed in internal notes will not be visible to the bot users. It will only be visible to the relevant agent (/admin) within the chat.  Slack thread's initiated for internal ticket purpose will also be stored as internal notes. 
+The messages typed in internal notes will not be visible to the AI-agent users. It will only be visible to the relevant agent (/admin) within the chat.  Slack thread's initiated for internal ticket purpose will also be stored as internal notes. 
 
 ![](https://i.imgur.com/cae3RVU.png)
     
@@ -199,7 +199,7 @@ To use this feature, simply type `@bot` on the reply screen, followed by the int
 
 | @bot| Agent action  |
 | -------- | -------- |
-| When using **@bot**, agents can observe the ongoing conversation between the bot and the customer, displayed in real-time on the agent's chat screen. The functionality operates seamlessly, making it appear as if the agent is directly conversing with the customer, while in reality, it is the bot engaging in the conversation. Agents can view this conversation transparently and can also send responses once the flow is completed. | When using **Agent actions**, agents can select a flow (agent action) that will be triggered in the backend, fetching a single output that the agent can utilize. | 
+| When using **@bot**, agents can observe the ongoing conversation between the AI-agent and the customer, displayed in real-time on the agent's chat screen. The functionality operates seamlessly, making it appear as if the agent is directly conversing with the customer, while in reality, it is the AI-agent engaging in the conversation. Agents can view this conversation transparently and can also send responses once the flow is completed. | When using **Agent actions**, agents can select a flow (agent action) that will be triggered in the backend, fetching a single output that the agent can utilize. | 
 
 #### Real-time example
 A customer has placed an order and is experiencing an issue with their return request. The customer contacts the support agent for assistance. The agent needs to:
@@ -209,7 +209,7 @@ A customer has placed an order and is experiencing an issue with their return re
 
 For step 1, the agent can quickly retrieve the order status from an internal or external system by using **Agent actions** and entering the command `/order-status 100100`, where `100100` is the order ID.
 
-For step 2, instead of manually gathering the required details from the customer, such as confirming the product, return address, return pickup date, etc., the agent can streamline the process using a predefined workflow created in the Automation with the help of the bot. By triggering this workflow with the command `@bot raise a return request`, the agent initiates a chatbot interaction where the bot collects the necessary information from the customer. This allows the agent to focus on other priority and complex issues, saving time in handling these types of chats. The agent can still monitor the chat and seamlessly take over the conversation when needed.
+For step 2, instead of manually gathering the required details from the customer, such as confirming the product, return address, return pickup date, etc., the agent can streamline the process using a predefined workflow created in the Automation with the help of the AI-agent. By triggering this workflow with the command `@bot raise a return request`, the agent initiates an AI-agent interaction where the AI-agent collects the necessary information from the customer. This allows the agent to focus on other priority and complex issues, saving time in handling these types of chats. The agent can still monitor the chat and seamlessly take over the conversation when needed.
 
 By leveraging agent actions and the **@bot** functionality, the agent can efficiently handle the customer's order status inquiry and facilitate the return request process, ensuring a smoother and more convenient customer support experience.
 
@@ -228,7 +228,7 @@ By leveraging agent actions and the **@bot** functionality, the agent can effici
 ### Agent assist bot 
 
 The agent assist bot serves as a virtual assistant for support agents, offering customizable workflow configurations. This includes adding buttons within the inbox for actions like creating tickets or processing refunds. 
-To implement it, you can create a new bot with custom flows and integrate it into the chat screen. 
+To implement it, you can create a new AI-agent with custom flows and integrate it into the chat screen. 
 
 Agents can access the agent assist bot by pressing Cmd + K (Ctrl + K on Windows) or clicking on its icon within the chat interface.
 
@@ -256,9 +256,9 @@ The following details are available on this screen to provide agents with more c
 | Type | Fields | Description|
 | -------- | -------- | -------- |
 |Contact details (integrated with User360)|| <img src="https://hackmd.io/_uploads/B1PXfVNR3.png" alt="drawing" width="90%"/>  <br/> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-cdp#use-user360-to-enhance-customer-context-in-inbox).|
-||Name| User name auto updated from the information provided to bot|
-||Phone number|Phone number auto updated from the information provided to bot|
-||Email ID|Email auto updated from the information provided to bot|
+||Name| User name auto updated from the information provided to AI-agent|
+||Phone number|Phone number auto updated from the information provided to AI-agent|
+||Email ID|Email auto updated from the information provided to AI-agent|
 ||View contact | <img src="https://hackmd.io/_uploads/HJyOiS40h.png" alt="drawing" width="70%"/><br/> Click to update contact information |
 |Chat details||<img src="https://imgur.com/lfbtBaZ.png" alt="drawing" width="70%"/>|
 ||Chat ID| Assigned when the live chat request is created|
@@ -273,7 +273,7 @@ The following details are available on this screen to provide agents with more c
 |Collaborators| | <img src="https://hackmd.io/_uploads/HkB5IUNA3.png" alt="drawing" width="60%"/><br/>More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu|
 | Activity log| | <img src="https://imgur.com/sMf9Wb3.png" width="70%"/> <br/> Click **View recent activity** to gain a comprehensive understanding of customer activity |
 |Website activity||<img src="https://hackmd.io/_uploads/BJRrt8ECh.png" alt="drawing" width="70%"/> <br/> This includes links to the URLs that your customer previously visited|
-|Device details| |<img src="https://hackmd.io/_uploads/r1IuF8ERn.png" alt="drawing" width="70%"/> <br/>Details about the user device that the bot tracks |
+|Device details| |<img src="https://hackmd.io/_uploads/r1IuF8ERn.png" alt="drawing" width="70%"/> <br/>Details about the user device that the AI-agent tracks |
 
 
 

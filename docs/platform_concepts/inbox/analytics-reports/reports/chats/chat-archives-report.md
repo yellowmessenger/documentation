@@ -58,7 +58,7 @@ In the chat archive reports, reports are generated based on when the chats were 
 |42 |Custom field|Displays all the updated custom field data for each ticket||
 
 :::note
-To capture CSAT scores in the **ticket_csat** and **agent_rating** columns in this report, you can either enable CSAT score from settings or implement a custom bot flow using the API to update the scores based on user feedback.        
+To capture CSAT scores in the **ticket_csat** and **agent_rating** columns in this report, you can either enable CSAT score from settings or implement a custom AI-agent flow using the API to update the scores based on user feedback.        
 Supporting articles: [CSAT API](https://docs.yellow.ai/docs/cookbooks/inbox/csatreport), [CSAT flow design](https://docs.yellow.ai/docs/cookbooks/insights/botagentfedback).
 :::
 

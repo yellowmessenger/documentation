@@ -46,7 +46,7 @@ To access specific bots within your organization, click Request Access.
 
    <img src="https://imgur.com/qSK3txm.png" alt="drawing" width="50%"/>
    
-Upon clicking **Create project**, your [Freemium](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade) plan account is automatically activated and a default chatbot is created. 
+Upon clicking **Create project**, your [Freemium](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade) plan account is automatically activated and a default AI-agent is created. 
 
 - You will be directed to the [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) module ([development enviornment](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env)) where you can start building the bots.
 - You can go to [Overview > Configure](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/modify-bot-configuration#personalise-your-bot-information) and reconfigure your bot details. 
