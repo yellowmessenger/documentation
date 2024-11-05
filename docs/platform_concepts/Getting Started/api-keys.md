@@ -5,7 +5,7 @@ tags: [bot token, get bot token, bot access token, access token, x-auth-token, b
 ---
 
 :::note
-* Admins and super admins of the bot can generate API keys.
+* Admins and super admins of the AI-agent can generate API keys.
 * A Super Admin can delete any API key, while an admin can delete only the key(s) they have personally created.
 :::
 

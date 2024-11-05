@@ -11,13 +11,13 @@ The following sections provide details of Yellow.ai's Gen AI capabilities across
 
 ---
 
-## Revolutionize Bot Conversations with YellowG
+## Revolutionize AI-agent Conversations with YellowG
 
 
 ### Create Instant AI-Powered Support Bot
 
-Get instant responses for your bot queries without the hassle. Our AI-powered solution taps into your website's content to provide accurate answers.
-Simply share your website link, and our bot gets to work. Using advanced AI, it understands and responds to queries with precision, drawing information directly from your website. Whether it's business hours or product details, our bot ensures reliable assistance without delay. Say goodbye to manual responses and welcome effortless bot support powered by AI.
+Get instant responses for your AI-agent queries without the hassle. Our AI-powered solution taps into your website's content to provide accurate answers.
+Simply share your website link, and our AI-agent gets to work. Using advanced AI, it understands and responds to queries with precision, drawing information directly from your website. Whether it's business hours or product details, our AI-agent ensures reliable assistance without delay. Say goodbye to manual responses and welcome effortless AI-agent support.
 
    ![](https://i.postimg.cc/7YGdTrHw/KB.gif)
 
@@ -26,7 +26,7 @@ Set up and deploy your AI-powered support bot. [Refer to our documentation](http
 
 ### Effortless Generation of Conversational Flows with AI-Copilot
 
-Our revolutionary AI Copilot, powered by Gen AI, revolutionizes conversation flow creation into a seamless experience. No more tedious manual creation of flows or template imports. With AI Copilot, simply express your requirements, and witness our bot effortlessly generate conversation flows in seconds. You can then tweak the flows as needed. Say goodbye to time-consuming tasks and hello to effortless flow creation with AI Copilot.
+Our revolutionary AI Copilot, powered by Gen AI, revolutionizes conversation flow creation into a seamless experience. No more tedious manual creation of flows or template imports. With AI Copilot, simply express your requirements, and witness our AI-agent effortlessly generate conversation flows in seconds. You can then tweak the flows as needed. Say goodbye to time-consuming tasks and hello to effortless flow creation with AI Copilot.
 
 ![AI CoPilot in action](img/cdp/AI_CoPilot.gif)
 
