@@ -181,20 +181,14 @@ Containment rate refers to the number of conversations handled solely by the bot
 
 Yellow Inbox transfer are tracked with the `agent-transfer` event. But while using 3rd Party Inbox, the transfer depends on bot-level configuration but that **is not currently trackable**.
 
-### Suggested solution 
+### Suggested solution
 
-With Bot Developer access, you can configure a **Third Party Handoff** node by entering the same data as in the **Raise Ticket** node at the end of the conversation flow. This node will serve as an identifier for agent transfers, that enables you to track containment rate.
+With **Bot Developer** access, you can configure the **Chat Handoff** node. This node is typically connected to the node used to raise a ticket in a third-party system. When this node is encountered, the `agent-session` event is tracked in the **User Engagement Session Table**. This setup enables tracking of the number of sessions that end with a passive handoff to third-party ticketing systems.
 
+![chat handoff](https://hackmd.io/_uploads/SyTN0XDb1x.png)
 
-**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXc1C7Lt7VmhnqI8cMi4LqmW0UJS4Wl1aUQdHJf0hGec9BkV03FHJ00aSw5MF8HYNqQ4F649KthH7XwPDy5yto7vi93QS4fhS6TGueyhDfDslpgyWLzqVtkmcP7JjyvQe2rLf6ZoDrP8hHtMSm9tseDZy_g?key=doHOJQMEdYvKlVOmPCYX8w)**
+![image](https://hackmd.io/_uploads/ryo9AQvZJe.png)
 
+In the example below, a successful action after raising a ticket in Zendesk connects to the Chat Handoff node. When a passive or offline ticket is created in Zendesk, agents respond via email, call, or other channels. Meanwhile, this handoff is tracked. The Chat Handoff node acts as an identifier for agent transfers, enabling you to track the containment rate effectively.
 
-**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfD0roERslkkdSeDLJe1KdAihGAwck7BK1lAFS6e4kqJ13KgP5jWBcI2Fhf_XbJX3kYcafE1otwhzkSTIs1PtJBQxc38EXoExuGv6vgANRHKFEDcHXwBg-ttYRrJsiSqLontpJ7ZY7eLYndlDYrPpiv4q8?key=doHOJQMEdYvKlVOmPCYX8w)**
-
-**![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsCC_H9djVb0DBv3R2mmRlu3MaPocs-mOtzxyBiTN61wnlFRsUSrFsGbJgir3VnEn7flwiTgzCjlkJ4K4JnC7IJ7CkJ--5dd5QH3KB2oGDDMjdr95mXAtaiEQrj2RupK6Lv3B2I_5tMuKE-zOzytyee-Q-?key=doHOJQMEdYvKlVOmPCYX8w)**
-
-
-
-
-
- 
+![example](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsCC_H9djVb0DBv3R2mmRlu3MaPocs-mOtzxyBiTN61wnlFRsUSrFsGbJgir3VnEn7flwiTgzCjlkJ4K4JnC7IJ7CkJ--5dd5QH3KB2oGDDMjdr95mXAtaiEQrj2RupK6Lv3B2I_5tMuKE-zOzytyee-Q-?key=doHOJQMEdYvKlVOmPCYX8w)

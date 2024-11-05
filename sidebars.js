@@ -62,6 +62,7 @@ module.exports = {
           "cookbooks/studio/user-inactivity",
           "cookbooks/studio/debug-logs",
           "cookbooks/studio/error_page",
+          "cookbooks/studio/userinitiateddisconnection",
 
       ],
     }, 

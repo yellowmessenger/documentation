@@ -3,6 +3,7 @@ title: Workflows
 sidebar_label: Workflows
 ---
 
+
 ## Workflows overview 
 
 The Workflows module enables automation of any routine tasks in your team customer support workflow such as managing Helpdesk activities for support agents, scheduling cron jobs for data teams etc., These workflows function independently from the core AI Agent flow, operating in the background supplementing its operations seamlessly. This streamlines the management of routine tasks, allowing the team to focus on more complex and high-priority issues, improving overall efficiency and productivity.
@@ -38,11 +39,11 @@ Follow these steps to use a work flow in your AI-agent:
 
 1. Open **Automation > Build > workflows**. 
 
-   ![image](https://hackmd.io/_uploads/B1k25Gi9R.png)
+   ![image](https://imgur.com/CJjCKrV.png)
 
 2. Click Create **workflow**. 
    
-   ![image](https://hackmd.io/_uploads/r1uGiGi9R.png)
+   ![image](https://imgur.com/jBtXRCr.png)
 
 -------
 
@@ -53,7 +54,7 @@ Choose how your workflow will start by selecting the event/trigger that will ini
 
 You can select a condition within a start trigger to simplify data extraction and eliminate the need for a separate condition node. Types of conditions can be chat properties such as Tag, Priority, or Custom fields or time. 
 
-![image](https://hackmd.io/_uploads/rk5dbx3qC.png)
+![image](https://imgur.com/TdMUcx1.png)
 
 :::note
 Workflows are triggered only when an Agent updates anything on the chat.
@@ -70,7 +71,7 @@ Activates the workflow whenever a customer wants to connect to live agent.  Use 
 * **Values**: Select number of hours
 
 
-![image](https://hackmd.io/_uploads/ryvrMBw60.png)
+![image](https://imgur.com/tQyzbZW.png)
 
 > Example: **When a new chat is created** and it is more than **1 hour** perform {next action}
 
@@ -80,21 +81,24 @@ Activates the workflow whenever a customer wants to connect to live agent.  Use 
 Activates the workflow whenever a chat property (such as tags, custom fields, or priority) changes. Use this trigger to automate responses or updates based on these modifications.
 
 
-| Tags | Custom field | Priority |
-| -------- | -------- | -------- |
-| <ul><li>  **Triggered**: When the Tag of the live chat is updated by the agent </li><li> **Add Condition**: Is (Contains all of / Contains any of / Contains none of)   </li><li>  **Values**: Tag value    </li></ul>   | <ul><li>  **Triggered**: When the Custom field of the live chat is updated by the agent </li><li> **Add Condition**: Is ( Is / Contains)   </li><li>  **Values**: Custom field value    </li></ul>      | <ul><li>  **Triggered**: When the Priority of the live chat is updated by the agent </li><li> **Add Condition**: Is (Is / Is not)   </li><li>  **Values**: Low, Medium, High, Urgent     </li></ul>      |
+| Priority                                                                                                                                                                                            | Tag                                                                                                                                                                                                                   | Custom field                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <ul><li>  **Triggered**: When the Priority of the live chat is updated by the agent </li><li> **Add Condition**: Is (Is / Is not)   </li><li>  **Values**: Low, Medium, High, Urgent     </li></ul> | <ul><li>  **Triggered**: When the Tag of the live chat is updated by the agent </li><li> **Add Condition**: Is (Contains all of / Contains any of / Contains none of)   </li><li>  **Values**: Tag value    </li></ul> | <ul><li>  **Triggered**: When the Custom field of the live chat is updated by the agent </li><li> **Add Condition**: Is ( Is / Contains)   </li><li>  **Values**: Custom field value    </li></ul> |
 
-![image](https://hackmd.io/_uploads/rkSCzSvaA.png)
 
-> Example: **When the Tag of the live chat** is updated to **Tag3, Tag2, Tag3**, perform {next action}
+> Example: When the **Priority** of the live chat is updated to *Medium*, perform {next action}
 
-![image](https://hackmd.io/_uploads/r1vQmrvpA.png)
+![image](https://imgur.com/wYYasjR.png)
 
-> Example: **When the Custom field of the live chat** is updated to **option3**, perform {next action}
 
-![image](https://hackmd.io/_uploads/r1lcoGSD60.png)
+> Example: When the **Tag** of the live chat is updated to *Agent_inactivity, Customer_inactivity*, perform {next action}
 
-> Example: **When the Priority of the live chat** is updated to **Medium**, perform {next action}
+![image](https://imgur.com/tFoB5EF.png)
+
+
+> Example: When the **Custom field** of the live chat (CSAT) is updated to a *value (5)*, perform {next action}
+
+![image](https://imgur.com/n7rYalV.png)
 
 
 
@@ -111,7 +115,7 @@ Activates the workflow whenever an internal note is added to a chat. Use this tr
 * **Add Condition**:  Is (Contains the word / Does not contain the word)
 * **Values**: Internal note content
 
-![image](https://hackmd.io/_uploads/By2WBBD6R.png)
+![image](https://imgur.com/y3p5LnT.png)
 
 > Example: **When an internal note is added** and it contains **send reminder**, perform {next action}
 
@@ -123,10 +127,10 @@ Triggers the workflow when the status of a chat is changed. Use this to automate
 **Triggered**: When the status of a live chat is updated from Queued, Assigned, etc., to other statuses  
 * **Add Condition 1**:  Is 
 * **Values 1**: Assigned, Queued, Open, Missed, Resolved
-* **Add Condition 2**:  Hours since X (Is / Greater than / Lesser than )
+* **Add Condition 2**:  Hours since X 
 * **Values 2**: Hours
 
-![image](https://hackmd.io/_uploads/r1Z2BBPaR.png)
+![image](https://imgur.com/Crix38K.png)
 
 > Example: **When chat status is updated** to **Open** and it has been **1 hour**, perform {next action}
 
@@ -135,7 +139,7 @@ Triggers the workflow when the status of a chat is changed. Use this to automate
 
 Activates the workflow when a chat is transferred to another agent or team. Use this to notify the customer, or new owner or update the chat records.
 
-![image](https://hackmd.io/_uploads/SkDtUHPp0.png)
+![image](https://imgur.com/fNsmc7y.png)
 
 > Example: **When chat is transferred**, perform {next action}
 
@@ -149,7 +153,7 @@ Triggers the workflow if a customer becomes inactive or unresponsive in a chat w
 * **Add Condition**:  for (time)
 * **Values**: Inactivity timer
 
-![image](https://hackmd.io/_uploads/S1u6UrP6A.png)
+![image](https://imgur.com/ZljORHW.png)
 
 > Example: **When a customer is inactive in a chat** for **3 hour**, perform {next action}
 
@@ -163,7 +167,7 @@ Activates the workflow if an agent becomes inactive or unresponsive during a cha
 * **Add Condition**:  for (time)
 * **Values**: Inactivity timer
 
-![image](https://hackmd.io/_uploads/rkPWvBPpR.png)
+![image](https://imgur.com/nFljh6E.png)
 
 > Example: **When a agent is inactive in a chat** for **3 hour**, perform {next action}
 
@@ -186,7 +190,7 @@ You connect the start trigger (first node) to a condition node to add additional
 
 Add multiple Else-if conditions to filter conditions for variables such as **Live chat properties** (Ticket ID, Description, Source/Channel, Status, Priority, Group Name, Agent Name, Internal Note, Tag, number of agent replies and number of user replies) and **User properties**.  
 
-![image](https://hackmd.io/_uploads/H1sP4IPpA.png)
+![image](https://imgur.com/lspxKBY.png)
 
 
 #### Auto populated properties
@@ -194,9 +198,9 @@ Add multiple Else-if conditions to filter conditions for variables such as **Liv
 Based on the selected trigger, all live chat properties are automatically fetched by this node. For example, within the Condition node, you can add a variable by selecting from a dropdown that automatically populates all relevant live chat variables. Simply choose the one that fits your use case.
 
 
-<img src="https://hackmd.io/_uploads/r1e49BDpR.png" alt="drawing" width="50%"/>
+<img src="https://imgur.com/IwtYi5f.png" alt="drawing" width="50%"/>
 
-![image](https://hackmd.io/_uploads/B1YaEcDpC.png)
+![image](https://imgur.com/a1LriAf.png)
 
 
 **Live chat properties** 
@@ -238,7 +242,7 @@ Based on the selected trigger, all live chat properties are automatically fetche
 
 You can combine multiple conditions into one logic by using AND/OR condition. 
 
-![image](https://hackmd.io/_uploads/S19VQUv60.png)
+![image](https://imgur.com/7HKOCTc.png)
 
 > For one if/else-if condition, you can only select AND or OR condition. You cannot select a combination of both at once. 
 
@@ -247,7 +251,7 @@ You can combine multiple conditions into one logic by using AND/OR condition.
 For each condition or combination of conditions, define a corresponding action.
 
 
-![image](https://hackmd.io/_uploads/HJd9FrPaC.png)
+![image](https://imgur.com/Lfant8u.png)
 
 
 
@@ -263,7 +267,7 @@ Click here to learn about [condition node](https://docs.yellow.ai/docs/platform_
 
 You connect the start trigger (first node) to other nodes such as Action, Logic, or Integration to complete the flow. 
 
-![image](https://hackmd.io/_uploads/SyqcscP6R.png)
+![image](https://imgur.com/aj0KFPZ.png)
 
 
 #### Supported action nodes 
@@ -274,28 +278,35 @@ You connect the start trigger (first node) to other nodes such as Action, Logic,
 | **Assign**                   | Transfer the live chat to a different member (Agent/Group) for handling.                                                   |
 | **Internal Note**            | Add important information about the ticket for internal use, such as customer interactions, troubleshooting steps, or action plans. |
 | **Reply**                    | Send a message in response to the live chat conversation.                                                                  |
-| **Raise New Ticket**         | Create a new support ticket to report an issue or request assistance.                                                      |
 | **Update Chat Details**       | Modify live chat information, such as:                                                                                     |
 |                              | - Add a tag to the existing list of tags.                                                                                  |
 |                              | - Remove a tag from the existing list of tags.                                                                             |
 |                              | - Delete all current tags and replace them with new tags.                                                                  |
 |                              | - Change the priority of the chat.                                                                                         |
-|                              | - Update custom fields for the chat.                                                                                       |
-| **Resolve Chat**             | Close the ticket as the issue has been addressed and resolved.                                                             |
+|                              | - Update custom fields for the chat.       |
+| **Resolve Chat**             | Close the ticket as the issue has been addressed and resolved ( and the status of the live chat is updated to resolved).  |
 | **API Node**                 | Execute API calls as part of the chat workflow to interact with external systems, fetch/send data, or trigger specific processes. |
 | **Outbound Notification**    | Send an outbound message, typically to an external system or communication channel (e.g., SMS, email).                     |
-| **Update Status**            | Change the current status of the live chat, such as moving it from Open to In Progress or other relevant statuses based on the workflow. |
 | **Variables**                | Set the value of one or more variables with this node.                                                                     |
 | **Database**                 | Insert, update, and search operations on database tables with this node.                                                   |
 | **Function**                 | Execute custom code written for a function with this node.                                                                 |
 | **Data Formatter**           | Convert data from CSV to JSON with this node.                                                                              |
-| **Set Language**             | Change the AI-agent language to any of the configured languages using this node.                                                |
 | **Modifier**                 | Modify input variable (e.g., lowercase, capitalize, remove from end, replace with) and store the result.                   |
 | **Generate PDF/Image**       | Generate PDF/JPG/JPEG/PNG files with dynamic details using this node.                                                      |
 | **Analytics**                | Capture analytics with this node.                                                                                          |
 | **Send Event**               | Send an event with this node.                                                                                              |
 | **Sync Database**            | Update databases from external sources with this node.                                                                     |
-| **User Event**               | Trigger a user event for an existing event key with the set delay.                                                         |
+| **User Event**               | Trigger a user event for an existing event key with the set delay.              |
+
+
+<!-- 
+
+**Raise New Ticket**    Create a new support ticket to report an issue or request assistance.        
+**Set Language**          Change the bot language to any of the configured languages using this node.  
+**Update Status**            Change the current status of the live chat, such as moving it from Open to In Progress or other relevant statuses based on the workflow. 
+--> 
+
+
 :::info
 **Point to remember**
 An action node of a Workflow will not trigger another  Workflow. For example: 
@@ -312,11 +323,11 @@ In this setup, Workflow 2 does not get triggered by Workflow 1. This is because 
 You can add **Condition** and **Channel filter** to customize the flow.
 For details on the Condition node, refer to the section above.
 
-![image](https://hackmd.io/_uploads/r1GLvcvaA.png)
+![image](https://imgur.com/GJ8R5gZ.png)
 
 **Channel filter**: Use this filter to design specific steps for different channels. For example, if you want the flow to perform one action for WhatsApp and another for Facebook, the Channel filter acts as an else-if condition for different channels.
 
-![image](https://hackmd.io/_uploads/BJJibnDaR.png)
+![image](https://imgur.com/8baUuvQ.png)
 
 
 
@@ -324,13 +335,56 @@ For details on the Condition node, refer to the section above.
 
 All enabled integrations in the AI-agent are available for connection. These integrations will be marked as **Connected**. If an integration is not connected, you can select it from the list and connect it through the Extensions.
 
-![image](https://hackmd.io/_uploads/Sy4pb2waR.png)
+![image](https://imgur.com/N5dXKX2.png)
 
 
 
 ---------
 
-### Step 5: Publish the workflow
+### Step 5: Test workflows 
+
+To test or debug a workflow, start by reviewing the ticket’s activity to understand where it succeeded or failed. Reviewing logs can help identify any issues, allowing you to open the relevant workflows and make necessary adjustments. Testing workflows beforehand is essential to prevent unexpected errors and ensure a seamless experience for both customers and agents.
+
+Here are two ways to debug/test workflows:
+
+
+
+#### 1. Review ticket activity logs
+
+Tickets created and assigned to agents can be found in **Inbox** under **Chats**. You can create a dummy ticket and open two tabs for testing by following [this document](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/inboxdemo).
+
+1. Open the ticket you want to test and click on **Activity Logs**.
+
+   ![image](https://imgur.com/jznrJvy.png)
+
+2. Review the activity logs to see the actions taken since the ticket was created.
+
+   ![image](https://imgur.com/qcvAivy.png)
+
+#### 2. Analyze conversation logs (recommended)
+
+In the conversation logs, you can monitor each response by analyzing the logs.
+
+1. Navigate to **Analyze > Conversation Logs > Conversation**.
+
+   ![image](https://imgur.com/nR0ZgfM.png)
+
+2. Click the log icon next to a message to analyze the logs.
+
+   ![image](https://imgur.com/ufALERI.png)
+
+3. Expand the log details to understand the triggers involved, whether they are firing, and the reasons for any failures. For example, if there is a failure in ticket assignment, you can see the cause and the error response, enabling you to take further action.
+
+   ![image](https://imgur.com/J5vjtXI.png)
+
+4. If an action did not respond or is causing an error, you can navigate to that specific node by clicking on **Go to Node**. This will take you to the relevant node in the workflow, allowing you to evaluate and make the necessary changes for improved performance.
+
+   ![image](https://imgur.com/m0d5XiN.png)
+
+------------
+
+
+### Step 6: Publish the workflow
 
 Refer to [this](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) document to learn about publishing flows. 
 
@@ -340,46 +394,49 @@ Refer to [this](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-pu
 ## Manage workflows
 
 
-
 ### Group Workflows
 
 Workflows are organized based on the selected trigger.
 
-![image](https://hackmd.io/_uploads/S1vX2qvT0.png)
+![image](https://imgur.com/nfrJk5E.png)
 
 
 ### Search for a Workflow
 
 On the workflow page, you can search for a workflow by entering its name or description.
 
-![image](https://hackmd.io/_uploads/SkaH25w60.png)
+![image](https://imgur.com/jaPYro7.png)
 
 ### Edit a Workflow
 
 To edit a workflow, open the respective flow and make the changes. 
 - You can rename the workflow.
 - You can rearrange, modify existing nodes, and edit the details within connected nodes.
-- You can only change conditions within the start node, but you cannot edit the trigger itself.
+- You can change trigger condition inside a start trigger.
 
-![image](https://hackmd.io/_uploads/S1BFPoDpC.png)
+![image](https://imgur.com/DCi1UJh.png)
 
-![image](https://hackmd.io/_uploads/B1bRDoPpA.png)
+![image](https://imgur.com/LIwCNP7.png)
 
 ### Delete a Workflow
 
 - To delete the entire workflow, click the **Delete** option next to the workflow name.
+- You can also Delete a flow by clicking the 3 dots on top of a workflow and click **Delete**. 
 
-![image](https://hackmd.io/_uploads/HkyG_jva0.png)
+![image](https://imgur.com/7Stycuy.png)
+    
+![image](https://imgur.com/H8W6YFk.png)
+
 
 ### Clone a Workflow
 
 * To clone an existing workflow, click the **Clone** option and make any necessary changes to the duplicated flow.
+- You can also Clone a flow by clicking the 3 dots on top of a workflow and click **Clone**. 
 * When cloning a workflow, you can choose a new start trigger. The existing flow will remain intact, but will use the new trigger.
 
+![image](https://imgur.com/Cg0vBSa.png)
 
-![image](https://hackmd.io/_uploads/rJfPuov6A.png)
-
-
+![image](https://imgur.com/VvbwQFK.png)
 
 
 ### Edit start node 
@@ -387,16 +444,13 @@ To edit a workflow, open the respective flow and make the changes.
 You can change the trigger(start node) as long as it is the only node in the layout and no other nodes are associated with it. 
 
 
-![image](https://hackmd.io/_uploads/HkMOtoDpR.png)
+![image](https://imgur.com/60xcUPj.png)
 
 
 --------
 
 
 ## Workflow execution logic
-
-
-
 
 
 ### Sequential execution
@@ -410,12 +464,14 @@ You can change the trigger(start node) as long as it is the only node in the lay
 > - Workflow 2 starts at 12:00:20 PM
 > - Workflow 3 starts at 12:00:40 PM
 
-![image](https://hackmd.io/_uploads/r1SCZOAa0.png)
+![image](https://imgur.com/dTdOwce.png)
 
 
 ### Execution time factors
 
-Each workflow takes a few seconds to minutes (worst-case scenerio), depending on the complexity and number of nodes. Execution might be delayed due to these factors. 
+
+Workflows are triggered almost immediately when there’s a change in the ticket. 
+Each workflow may take a few seconds to minutes (in the worst-case scenario) to complete, depending on its complexity and the number of nodes involved. Execution might be delayed due to these factors: 
 
 - **Number of Workflows for each trigger**: The total execution time increases when there are multiple workflows to be executed by the same event. 
 - **Number of Nodes per Workflow**: When there are multiple action/logic/integration nodes or complex branching within a workflow, execution time is increased.
@@ -425,6 +481,12 @@ Each workflow takes a few seconds to minutes (worst-case scenerio), depending on
 
 - The system checks the **latest ticket data** before executing each workflow to ensure it meets the current conditions.
 - Workflows may be **abandoned** if the ticket data changes while the workflows are in the execution queue. For example, if a chat is marked as Resolved, indicating that the ticket is closed, any workflows dependent on the ticket being open will not be executed.
+- Trigger conditions are **re-evaluated** before a workflow begins. If a ticket is updated by an agent or another workflow before execution, the trigger condition may no longer be met. For example, if two workflows share the trigger **Inbox ticket status updated to assigned**:
+    - **Workflow 1**: If the ticket contains the “XYZ” tag, resolve it.
+    - **Workflow 2**: If the ticket priority is HIGH, assign it to group L3.
+    - **Example**: If Workflow 1 resolves the ticket first, Workflow 2 won’t execute since the status is no longer *Assigned*. Similarly, if an agent immediately resolves the ticket, both workflows could be skipped.
+
+> To avoid delays, keep workflows short, as long-running workflows can impact the timing of subsequent workflows. For instance, if using an API node, ensure it has a quick response time to maintain seamless workflow execution.
 
 :::info
 
@@ -465,13 +527,16 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 
 ### Ensure workflow uniqueness
 
-- **No identical workflows**: While workflows can overlap, each active workflow must be unique to avoid conflicts.
+- **No identical workflows**: While workflows can share conditions or triggers, each active workflow should have a distinct purpose and configuration. This prevents conflicts and ensures smooth execution across all automated processes.
+    
 
 ------
 
+
 ## Disclaimer
 
-- The time it takes for automations to run depends on the number of workflows, nodes, and tickets being processed in a AI-agent.
+- Workflows are compatible only with bots running on the latest version of our Builder, the cloud executor. If you don't see the workflows section under Automation → Build, your bot may be on an older version. Please contact support@yellow.ai to verify and upgrade your bot as needed.
+- The time it takes for automations to run depends on the number of workflows, nodes, and tickets being processed in a bot.
 - Data referenced in workflows (e.g., Agents, Groups, Tags, Custom Fields) is tied to the environment you're working in—Sandbox, Staging/Development, or Production/Live. 
 - When publishing workflows from one environment to another (e.g., Staging to Production), ensure the data referenced (e.g., agents, tags, groups) exists in both environments.  
   - Example: If you assign conversations to "John Snow" in Staging, ensure "John Snow" exists in Production for the workflow to function correctly.
@@ -480,4 +545,8 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 - Once a workflow is published, it will only apply to active conversations and new conversations started after the publishing timestamp.
 - Global variables are not supported in workflows, and the **Trigger Journey** or **Execute Flow** node is unavailable in these workflows.
 - In cases of platform-wide disruptions or outages where workflows are paused for an hour or more, we will re-evaluate the conditions before resuming execution. If conditions are no longer valid, the workflow will be discarded; otherwise, execution will continue.
-- Tickets or AI-agents that remain idle—where there have been no updates from the customer or agent for over 30 days—are not eligible for workflow execution, and events will not be triggered for these cases to avoid unnecessary processing.
+- Tickets or bots that remain idle—where there have been no updates from the customer or agent for over 30 days—are not eligible for workflow execution, and events will not be triggered for these cases to avoid unnecessary processing.
+- Ticket-related action nodes, like *Update chat details* and *Assign*, lack fallback mechanisms found in other action nodes. This means that if an action—such as queueing a chat—fails, the workflow will stop immediately or system retries in cases like network errors or temporary Inbox service unavailability (status code 500). Common scenarios where ticket-related actions may fail include:
+    - Assigning a ticket to a non-existent agent through a variable.
+    - Incomplete configuration of the action node, causing it to enter an error state.
+

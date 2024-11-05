@@ -11,20 +11,45 @@ Yellow.ai is a leading AI-first customer service automation platform designed fo
 We also have an App platform (app.yellow.ai), a code-based solution with limited features. However, for a comprehensive experience and enhanced benefits, we strongly recommend [migrating](https://docs.yellow.ai/docs/cookbooks/migration-guide) to our Cloud Platform. For additional support, contact your designated POC.
 :::
 
+------------
+
+
+
+## Build Chat & Voice AI-agents on our Conversational AI platfom 
+
+At yellow.ai's conversational AI platfom empowers users to create two types of AI-agents accross various channels, **Chat** and **Voice**. 
+- Chat AI-agents engage in textual conversation interfaces. 
+- Voice AI-agents enable virtual assistants to interact with customers verbally, resolving their queries effectively.
+
+
+### How are AI-agents different from Bots?  
+
+| Feature                            | AI Agents                                                                                   | Bots                                                                           |
+| ---------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Operational Basis**              | Powered by large language models (LLMs); flexible, not restricted to predefined paths       | Structured, rule-based flows; limited to pre-configured frameworks             |
+| **Response Generation**            | Dynamically generates responses based on context, without relying on pre-configured replies | Generates responses based on specific keywords or predefined utterances        |
+| **Workflow Automation**            | Can automate tasks dynamically, even when workflows are not explicitly configured           | Executes tasks only within predefined workflows                                |
+| **Handling of Unexpected Queries** | Handles complex or unexpected queries by dynamically interpreting and responding            | Limited ability, often requiring escalation for unrecognized inputs            |
+| **Adaptability and Flexibility**   | Highly adaptable, adjusts responses and actions based on real-time inputs                   | Limited; follows set paths, may struggle with deviations from the flow         |
+| **User Experience**                | Provides seamless experience with real-time insights and decision-making                    | May lead to repetitive responses or fallback when encountering unknown queries |
+| **Escalation Need**                | Rarely required, as AI agents handle a wide range of scenarios autonomously                 | Frequent for complex queries outside of defined responses                      |
+
+
 --------
 
 ## Features of cloud platform
 
-### Build powerful AI bots with ease
+### Build powerful AI-agent with ease
 
-Utilize our dynamic AI agents to achieve 90% automation, providing 24/7 support and proactive solutions that reduce customer effort.
+Utilize our dynamic AI-agent to achieve 90% automation, providing 24/7 support and proactive solutions that reduce customer effort.
 
-At yellow.ai, we understand the importance of seamless and effective communication with your customers. Our cloud software enables you to build AI bots effortlessly, regardless of your technical expertise. You don't need to be a coding expert to create powerful bots. Our intuitive interface and **no-code approach** make bot building accessible to everyone.
+At yellow.ai, we understand the importance of seamless and effective communication with your customers. Our cloud software enables you to build AI-agent effortlessly, regardless of your technical expertise. You don't need to be a coding expert to create powerful AI-agents. Our intuitive interface and **no-code approach** make AI-agent building accessible to everyone.
 - Equip your support team with sentiment detection, coaching insights, tone changer, and other AI-powered tools to enhance their efficiency.
 - Identify events and intents from complex messages to trigger workflows for ticket creation, escalations, and more.
 
       
-[**Explore Automation (customizable/AI bot builder) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+[**Explore Automation (customizable/AI-agent builder) documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+
 
 
 ### Connect customers to human techies for support
@@ -42,13 +67,13 @@ Yellow.ai goes beyond automated responses by providing seamless integration with
 
 ### Automate marketing campaigns 
 
-**Engage** empowers you to run marketing campaigns and manage bots effortlessly across multiple channels. Whether it's messages, emails, inbound or outbound campaigns, Yellow.ai provides you with the tools to engage with your customers on their preferred platforms. 
+**Engage** empowers you to run marketing campaigns and manage AI-agents effortlessly across multiple channels. Whether it's messages, emails, inbound or outbound campaigns, Yellow.ai provides you with the tools to engage with your customers on their preferred platforms. 
 
 [**Explore Engage documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)
 
-### Measure bot performance and gain valuable insights
+### Measure AI-agent's performance and gain valuable insights
 
-Understanding the performance of your bots is crucial for continuous improvement. Yellow.ai's analytics and **insights** feature provides you with detailed metrics and data to measure bot performance. Gain valuable insights into customer engagement, successful API calls, customer location, and more. With these insights, you can make data-driven decisions, optimize your bots, and enhance your overall business operations.
+Understanding the performance of your AI-agents is crucial for continuous improvement. Yellow.ai's analytics and **insights** feature provides you with detailed metrics and data to measure AI-agent performance. Gain valuable insights into customer engagement, successful API calls, customer location, and more. With these insights, you can make data-driven decisions, optimize your AI-agents, and enhance your overall business operations.
 Get 20+ real-time metrics with dashboards, user journey visualization, goal-based tracking, and a data explorer for informed decision-making.
 
 
@@ -57,7 +82,7 @@ Get 20+ real-time metrics with dashboards, user journey visualization, goal-base
 
 ### Integrate with third-party channels and apps
 
-Take advantage of our extensive list of 35+ **channels** available in the Channels module. Easily run your bots across multiple platforms with a simple one-time connectivity setup. Connect with your customers on their preferred channels, ensuring a seamless and personalized user experience.
+Take advantage of our extensive list of 35+ **channels** available in the Channels module. Easily run your AI-agents across multiple platforms with a simple one-time connectivity setup. Connect with your customers on their preferred channels, ensuring a seamless and personalized user experience.
 
 Yellow.ai's native Gen-AI integration framework enables swift deployment with over 150 pre-built integrations. Effortlessly connect to your existing tech stack without the need for extensive modifications, with 80% of integrations ready out-of-the-box and customizable options for a smooth and hassle-free implementation.
 
@@ -66,13 +91,7 @@ Yellow.ai's native Gen-AI integration framework enables swift deployment with ov
 [**Explore Integrations documentation :arrow_right:**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview)
 
 
-### Chat bot vs. Voice bot
-
-At yellow.ai empowers users to create two types of bots, chat bot and voice bot. 
-Chat bots engage in textual conversation interfaces. Voice bots enable virtual assistants to interact with customers verbally, resolving their queries effectively.
-
-
-### Build multi-lingual bots 
+### Build multi-lingual AI-agents 
 
 Utilize AI-powered agents capable of conversing in over 135 global and regional languages.
 
@@ -80,7 +99,7 @@ Utilize AI-powered agents capable of conversing in over 135 global and regional 
 
 ### 24*7 Yellow.ai support
 
-Support is exclusively provided for upgraded bots.      
+Support is exclusively provided for upgraded AI-agents.      
 For assistance, send your queries to [support@yellow.ai](mailto:support@yellow.ai), and our dedicated executive will promptly address and resolve them.
 Our professional services help you minimize risks, ensure proper deployment from the outset, and save on additional resources and costs by getting it right the first time. Our team of experts supports you through every step, from initial setup to ongoing enhancements. Leverage our deep industry insights and best practices to achieve seamless implementation and maximize ROI.
 
@@ -113,8 +132,8 @@ Access our wide array of self-help resources for learning, guidance, and assista
 Academy registration: https://ascend.yellow.ai/training-registration
 
 Join Yellow Academy for expert-led learning and enjoy the following benefits:
-bot building with comprehensive training and courses from our experts.
-- Enhance your skills to create AI bots for exceptional customer experiences.
+- AI-agent building with comprehensive training and courses from our experts.
+- Enhance your skills to create AI-agents for exceptional customer experiences.
 - Explore our informative product videos on YouTube for visual walkthroughs, demonstrations, and insights.
 - Subscribe to our channel for the latest tips and tricks to maximize Yellow.ai's capabilities.
 
@@ -129,9 +148,9 @@ If you prefer personalized training, write to academy@yellow.ai, and our experts
 
 ### Instant chat resolution with Mia - Yellow.ai expert
 
-Simply engage in a conversation with Mia to get your questions addressed and receive real-time guidance. Mia is designed to provide quick and accurate responses to help you navigate through your bot-building journey.
+Simply engage in a conversation with Mia to get your questions addressed and receive real-time guidance. Mia is designed to provide quick and accurate responses to help you navigate through your AI-agent building journey.
 
-- If you are navigating through the **cloud.yellow.ai platform**, click **Help** and select **Ask a question** to engage with Mia, our dedicated chatbot assistant. 
+- If you are navigating through the **cloud.yellow.ai platform**, click **Help** and select **Ask a question** to engage with Mia, our dedicated AI assistant. 
 - If you're browsing our **docs.yellow.ai page**, you'll find Mia waiting for you at the end of the page. Initiate a chat and Mia will address your queries promptly.
 
 <!--
@@ -141,8 +160,8 @@ Simply engage in a conversation with Mia to get your questions addressed and rec
 
 ### Join our Community for product discussions
 
-At Yellow.ai, we believe in fostering a strong community of bot builders and enthusiasts. 
-Join our community to connect with fellow users, share experiences, and exchange knowledge. Engage with our product experts and receive guidance, support, and inspiration to create exceptional AI bots.
+At Yellow.ai, we believe in fostering a strong community of AI-agent builders and enthusiasts. 
+Join our community to connect with fellow users, share experiences, and exchange knowledge. Engage with our product experts and receive guidance, support, and inspiration to create exceptional AI-agents.
 - [**Join yellow.ai community :arrow_right:**](https://community.yellow.ai/) 
 
 
