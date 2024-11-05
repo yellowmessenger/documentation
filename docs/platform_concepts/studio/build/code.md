@@ -5,21 +5,21 @@ keywords : [code, function, math, calculations]
 ---
 
 
-Functions extend the capabilities of your bot by allowing you to implement custom logic and perform actions that go beyond the built-in features. 
+Functions extend the capabilities of your AI-agent by allowing you to implement custom logic and perform actions that go beyond the built-in features. 
 
 
-Your bot can use them to execute various tasks. For instance, it can  can display the bot ID, format dates into readable strings, extract specific categories from user input, parse multi-part FAQ responses into manageable outputs, and much more.
+Your AI-agent can use them to execute various tasks. For instance, it can  can display the AI-agent ID, format dates into readable strings, extract specific categories from user input, parse multi-part FAQ responses into manageable outputs, and much more.
 
 
 
-### Why use functions for your chatbot:
+### Why use functions for your AI-agent:
 
-* **Personalized Logic Integration**: Functions enable you to add tailored logic that meets specific requirements, which might not be covered by default bot capabilities.
+* **Personalized Logic Integration**: Functions enable you to add tailored logic that meets specific requirements, which might not be covered by default AI-agent capabilities.
 * **Enhanced flexibility**: By writing custom functions, you can handle unique scenarios, perform complex operations, and integrate with external systems.
 * **Improved user experience**: Functions can help deliver personalized and dynamic responses, leading to a more engaging and satisfying user interaction.
-* **Seamless integration**: Functions facilitate smooth integration with third-party APIs, databases, and other external services, extending the bot's utility.
+* **Seamless integration**: Functions facilitate smooth integration with third-party APIs, databases, and other external services, extending the AI-agent's utility.
 ---
-## Create functions in bot builder:
+## Create functions in AI-agent builder:
 
 To create a function, follow these steps:
 
@@ -42,20 +42,20 @@ To create a function, follow these steps:
 ### Function arguments
 
 
- In programming, *arguments* serve as inputs that allow the bot to retrieve precise information or perform specific actions within your code, enabling more tailored and dynamic responses.
+ In programming, *arguments* serve as inputs that allow the AI-agent to retrieve precise information or perform specific actions within your code, enabling more tailored and dynamic responses.
 
 The table below provides the list of arguments you can use to access relevant information:
 
 
 | **arg** | **Data type** | **Use** |
 | -------- | -------- | -------- |
-| data.variables.<variable_name>   | String | Retrieves the relevant bot variable within the function based on the provided `variable_name`. |
-| data.channel | String | Retrieves the current channel name of the bot user like whatsapp, yellowmessenger, facebook, etc.|
+| data.variables.<variable_name>   | String | Retrieves the relevant AI-agent variable within the function based on the provided `variable_name`. |
+| data.channel | String | Retrieves the current channel name of the AI-agent user like whatsapp, yellowmessenger, facebook, etc.|
 |data.profile| Object  | Retrieves properties of the current user such as name, number, email, city, country, and language. |
-| data.sender | String | Retrieves the sender ID. For example, on WhatsApp, the sender ID is the user's phone number, while for website bots, it's a long string representing the unique session ID. |
-|data.bot | String | Retrieves the bot ID specific to the environment (staging, production, or sandbox).|
-|data.message | String | Retrieves the message inputted by the user during the conversation. This allows the bot to respond to the latest input.|
-|data.event.<event_name> | Object | Retrieves the data related to a specific event, allowing the bot to handle scenarios like ticket creation or resolution.|
+| data.sender | String | Retrieves the sender ID. For example, on WhatsApp, the sender ID is the user's phone number, while for website AI-agents, it's a long string representing the unique session ID. |
+|data.bot | String | Retrieves the AI-agent ID specific to the environment (staging, production, or sandbox).|
+|data.message | String | Retrieves the message inputted by the user during the conversation. This allows the AI-agent to respond to the latest input.|
+|data.event.<event_name> | Object | Retrieves the data related to a specific event, allowing the AI-agent to handle scenarios like ticket creation or resolution.|
 |ymLib.args.apiResponse | any | Retrieves and processes an API response within a parser function before assigning it to a variable.|
 | ymLib.args.logger | Object | Retrieves and pushes the API response into the logs for debugging and tracking purposes. |
 | context.history | Object | Retrieves the history of nodes that the user has passed through on the cloud platform.|
@@ -91,7 +91,7 @@ The table below lists all parameters associated with accessing user information:
 
 
 
-## Writing bot function code
+## Writing AI-agent function code
 
 You can define a custom function using JavaScript. Here is a sample code snippet. Just replace the placeholder 'Your logic goes here' with the specific functionality you wish to implement.
 
@@ -105,7 +105,7 @@ return new Promise(resolve => {
 
 ### How functions work:
 
-This section provides an overview of how functions operate within your bot. 
+This section provides an overview of how functions operate within your AI-agent. 
 
 We will begin with basic examples and gradually move to more complex scenarios, allowing you to build up your knowledge and skills.
 
@@ -114,11 +114,11 @@ In the code examples provided below, you'll see some fundamental JavaScript term
 
 - **`let`**: This keyword is used to declare a variable that can hold data.
 - **`resolve`**: This function signals the completion of a promise by providing the output from the function.
-- **`if/else`**: This construct enables the bot to make decisions based on specified conditions.
+- **`if/else`**: This construct enables the AI-agent to make decisions based on specified conditions.
 - **`console.log`**: This command is used to display messages or data, which is helpful for debugging.
 
 
-#### 1. Display bot ID (Basic)
+#### 1. Display AI-agent ID (Basic)
 
 
 Here is a sample code snippet to display the current bot ID:
@@ -237,7 +237,7 @@ It processes the categories and the user text, checks if the text includes the w
 
 ```javascript
 return new Promise(resolve => {
-  let categories = data.variables.query_result.records[0].main_categories; // Get the list of categories from the bot's data
+  let categories = data.variables.query_result.records[0].main_categories; // Get the list of categories from the AI-agent's data
   let userTextData = data.message; // Capture the user's input message
     
     
@@ -331,7 +331,7 @@ return new Promise(resolve => {
 **Explanation:**
 
 - **Fetch Current Time:** Retrieves the current hour in the "Asia/Kolkata" timezone using 24-hour format.
-- **Check Time Window:** If the time is between 9 AM and 11 PM(business hours), the bot will allow the action or service; otherwise, it will restrict it.
+- **Check Time Window:** If the time is between 9 AM and 11 PM(business hours), the AI-agent will allow the action or service; otherwise, it will restrict it.
 - **Return Status:** Sends a message indicating whether the action/service is allowed or not.
 
 **Output:** 
@@ -396,32 +396,32 @@ If there are any errors in the code, you can view them under **Warnings**  at th
 
 ## Additional options for functions
 
-This section has some funcionalities common to the entire bot that will help you to adjust your bot's performance.
+This section has some funcionalities common to the entire AI-agent that will help you to adjust your AI-agent's performance.
 
 ![](https://imgur.com/1hOchRq.png)
 
 #### Tools
 
-This is a global testing and settings tab. It allows you to test your bot's responses by entering user inputs. For example, if you type "speak to support" or "schedule a meeting," it predicts the most relevant intents along with the associated confidence score, helping you understand how effectively your bot can recognize user utterances. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) to learn more.
+This is a global testing and settings tab. It allows you to test your AI-agent's responses by entering user inputs. For example, if you type "speak to support" or "schedule a meeting," it predicts the most relevant intents along with the associated confidence score, helping you understand how effectively your AI-agent can recognize user utterances. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#21-test-your-bot) to learn more.
 
 ![](https://imgur.com/A8Ia9gx.png)
 
 
 #### Compare (the function between Staging & Production environment)
 
-This option compares the function between staging and production environments depending on the environment the bot is currently in. 
+This option compares the function between staging and production environments depending on the environment the AI-agent is currently in. 
 
    ![](https://i.imgur.com/o39MHHR.png)
 
 #### Flows
 
-Flows streamline the management of conversation paths, allowing you to make edits without switching back to the build section. For example, while working on the "Book a Test Drive" flow, you can see relevant nodes like text and carousel. By entering/copying the journey name, you can locate all nodes, modify them in functions, and any updates will be automatically reflected in the flow. This makes managing your bot’s conversations much more efficient.
+Flows streamline the management of conversation paths, allowing you to make edits without switching back to the build section. For example, while working on the "Book a Test Drive" flow, you can see relevant nodes like text and carousel. By entering/copying the journey name, you can locate all nodes, modify them in functions, and any updates will be automatically reflected in the flow. This makes managing your AI-agent’s conversations much more efficient.
 
    ![](https://imgur.com/Cjzmph9.png)
 
 #### Localization
 
-The Localization feature allows you to easily add translation capabilities to your bot. Instead of creating separate workflows for each language, it offers a unified solution. For instance, the phrase "Hi, how are you?" can be translated into various languages, like English, Hindi, and Tamil, ensuring users receive messages in their preferred language. For more details, visit [documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#-12-add-translations-using-code).
+The Localization feature allows you to easily add translation capabilities to your AI-agent. Instead of creating separate workflows for each language, it offers a unified solution. For instance, the phrase "Hi, how are you?" can be translated into various languages, like English, Hindi, and Tamil, ensuring users receive messages in their preferred language. For more details, visit [documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#-12-add-translations-using-code).
 
 ![](https://imgur.com/l35JSvb.png)
 
@@ -467,5 +467,5 @@ return new Promise(resolve => {
 **What Next?**
 
 * Create your own function and use it by adding an [API node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#api) in the flow.
-* You can visit our [community](https://community.yellow.ai/) and share your ideas with other fellow bot builders.
+* You can visit our [community](https://community.yellow.ai/) and share your ideas with other fellow AI-agent builders.
 

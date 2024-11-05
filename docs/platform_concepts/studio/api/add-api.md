@@ -3,7 +3,7 @@ title: Add or import APIs
 sidebar_label : Add APIs via Automation's API module
 ---
 
-In addition to the various integrations supported by Yellow.ai, you can seamlessly integrate any third-party APIs with your chatbot. This comprehensive guide provides step-by-step instructions on connecting your chatbot to external APIs, enabling real-time data storage and retrieval for creating a personalized user experience.
+In addition to the various integrations supported by Yellow.ai, you can seamlessly integrate any third-party APIs with your AI-agent. This comprehensive guide provides step-by-step instructions on connecting your AI-agent to external APIs, enabling real-time data storage and retrieval for creating a personalized user experience.
 
 ## Add a new API
 
@@ -232,7 +232,7 @@ To configure MTLS, you'll need specific information from the system where the AP
 Here are the steps to configure MTLS authentication:
 
 1. Gather the required information mentioned above: Domain, Certificate, Key, and Certificate Authority.
-2. Navigate to the bot environment where you want to configure MTLS.
+2. Navigate to the AI-agent environment where you want to configure MTLS.
 3. On the [cloud platform](https://cloud.yellow.ai), go to **Automation**, then API.
 4. On the right side, you'll see a lock icon labeled "Configure MTLS authentication." Click on it.
 

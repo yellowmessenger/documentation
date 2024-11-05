@@ -1,10 +1,10 @@
 ---
-title: Bot logs
-sidebar_label: Bot logs
+title: AI-agent logs
+sidebar_label: AI-agent logs
 tags: [bot logs, debug logs]
 ---
 
-Logs in bot conversations are step-by-step records, detailing events and flows at the backend, important for identifying errors, understanding user interactions, and optimizing performance. They assist in diagnostics, illustrate user flows, and are crucial for testing and continuous development improvements.
+Logs in AI-agent conversations are step-by-step records, detailing events and flows at the backend, important for identifying errors, understanding user interactions, and optimizing performance. They assist in diagnostics, illustrate user flows, and are crucial for testing and continuous development improvements.
 
 The logs are accessible in real-time for **Sandbox** and **Staging** directly from the ongoing conversation. For **Production**, it will be available 15 minutes after the conversation ends.
 
@@ -16,9 +16,9 @@ In rare instances, some logs may not be displayed due to our sampling process. T
 
 To check the debug logs in Sandbox and Staging environments,
 
-1. Go to **Automation** > **Build** and click the respective flow.
+1. Go to **Analyze** > **Conversation logs** and click the respective flow.
 
-   ![](https://i.imgur.com/olJfQZF.png)
+   ![](https://imgur.com/vVkzRs7.png)
 
 2. Click **Preview** and click the **bug icon** on the right corner.
 
@@ -53,7 +53,7 @@ To check the debug logs in Production:
 
 1. Go to **Automation** > **Analysis** > **Conversation logs** > click the preferred conversation.
 
-   ![](https://i.imgur.com/zxl0njk.png)
+   ![](https://imgur.com/VklUOKC.png)
 
 2. If you hover over each timestamp, you can see the options to [view the logs](#view-logs) and [the node which was involved in that action](#view-node).
 

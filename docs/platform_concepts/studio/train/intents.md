@@ -4,21 +4,21 @@ sidebar_label: Intents
 tags: [intent detection nlp ,intent extraction nlp , intent in nlp,intent nlp, intent recognition nlp, nlp intent, nlp intent classification, nlp intent extraction, nlp intent recognition, nlp intent recognition python, why is intent important in negotiations nlp, intent identification nlp]
 ---
 
-An intent in a conversation flow represents the specific goal or purpose a user aims to achieve when interacting with a chatbot. For example, asking a question, making a request, or providing information. Intents help the chatbot understand the user's inquiries and enable it to respond accurately to their queries.
+An intent in a conversation flow represents the specific goal or purpose a user aims to achieve when interacting with a AI-agent. For example, asking a question, making a request, or providing information. Intents help the AI-agent understand the user's inquiries and enable it to respond accurately to their queries.
 
-For example, in a customer service chatbot:
+For example, in a customer service AI-agent:
 
 **Intent**: Check order status
 
    **User input**: "Where is my order?:" or "Can you tell me the status of my recent purchase?".
-  > **Bot response**: "Sure, please provide your order number."
+  > **AI-agent response**: "Sure, please provide your order number."
 
 **Example 2**: 
 
 **Intent**: Booking a flight
 
 **User input**: "I want to book a flight to New York." or "Can you help me schedule a flight for next week?".
-  > **Bot response**: "Of course, can you tell me your preferred travel dates?".
+  > **AI-agent response**: "Of course, can you tell me your preferred travel dates?".
 
 :::note
 Yellow.ai DynamicNLP simplifies the process of model training by utilizing advanced technology called zero-shot learning. This eliminates the need for tedious and error-prone training processes.
@@ -28,13 +28,13 @@ Yellow.ai DynamicNLP simplifies the process of model training by utilizing advan
 
 ### Utterances overview
 
-Utterances are specific phrases or queries users use to express intentions. By mapping utterances to corresponding intents, the bot can accurately understand and respond to user queries.
+Utterances are specific phrases or queries users use to express intentions. By mapping utterances to corresponding intents, the AI-agent can accurately understand and respond to user queries.
 
-You can add intents (the purpose of the bot users' responses) and utterances (the various ways users might phrase a specific intent, such as 'flight booking' or 'book flights' for the intent of booking a flight). You need to train the bot to identify and understand these sentences to ensure accurate responses.
+You can add intents (the purpose of the AI-agent users' responses) and utterances (the various ways users might phrase a specific intent, such as 'flight booking' or 'book flights' for the intent of booking a flight). You need to train the AI-agent to identify and understand these sentences to ensure accurate responses.
 
 ### Best practices for creating intents and uttrances
 
-To ensure accuracy and effectiveness of your chatbot, adhere to these best practices while creating intents and utterances:
+To ensure accuracy and effectiveness of your AI-agent, adhere to these best practices while creating intents and utterances:
 
 1. To effectively train the intents, ensure you create at least two distinct intents.
 2. We recommend adding at least 15 to 20 diverse utterances for each intent.
@@ -135,12 +135,12 @@ You can edit the suggested utterances based on your requirements before adding t
 
      <img src="https://imgur.com/fWtxqYU.png" alt="drawing" width="50%"/>
     
-## Train your bot with intents and utterances
+## Train your AI-agent with intents and utterances
 
-You need to train your bot after adding intents and uttrances. If the bot is not trained with the intents, it will not understand user queries and will display a [fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#fallback-flow) response. To improve user interaction, you can configure [suggestions](https://docs.yellow.ai/docs/platform_concepts/studio/build/additionalsettings#suggestion-setting-when-bot-does-not-understand-user-utterance) for the bot to show the closest answers to the user query.
+You need to train your AI-agent after adding intents and uttrances. If the AI-agent is not trained with the intents, it will not understand user queries and will display a [fallback](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#fallback-flow) response. To improve user interaction, you can configure [suggestions](https://docs.yellow.ai/docs/platform_concepts/studio/build/additionalsettings#suggestion-setting-when-bot-does-not-understand-user-utterance) for the AI-agent to show the closest answers to the user query.
 
 1. Add an intent and corresponding utterances as explained above. 
-2. Click **Train intent**. This will train the bot with the provided intents and utterances.
+2. Click **Train intent**. This will train the AI-agent with the provided intents and utterances.
 
    ![](https://imgur.com/BhOezbs.png)
    
@@ -154,15 +154,15 @@ You need to train your bot after adding intents and uttrances. If the bot is not
 
 Option | Description
 ------- | ----------
-Sentence encoder | Converts input sentences or messages into numerical representations, making it easier for the bot to understand and process user inputs.
-Multilingual | If your bot is designed to communicate in multiple languages, select this option to enable multilingual capabilities. This allows the bot to communicate with users in different languages, to reach a wider audience.
-Bahasa | Select this option if you want your bot to communicate in Bahasa, the Indonesian language, allowing for more personalized and localized interactions.
+Sentence encoder | Converts input sentences or messages into numerical representations, making it easier for the AI-agent to understand and process user inputs.
+Multilingual | If your AI-agent is designed to communicate in multiple languages, select this option to enable multilingual capabilities. This allows the AI-agent to communicate with users in different languages, to reach a wider audience.
+Bahasa | Select this option if you want your AI-agent to communicate in Bahasa, the Indonesian language, allowing for more personalized and localized interactions.
 
 :::note
 If you have not chosen any of the options mentioned above, the Sentence encoder will be selected by default.
 :::
 
-4. In **Epochs**, set the required number. Epoch refers to one complete iteration through the entire dataset during training. It helps the chatbot improve its performance by learning from the data multiple times.
+4. In **Epochs**, set the required number. Epoch refers to one complete iteration through the entire dataset during training. It helps the AI-agent improve its performance by learning from the data multiple times.
 
 5. Click **Train**.
 
@@ -184,7 +184,7 @@ To trigger a flow based on a specific intent, follow these steps:
 
 There are two ways in which you can test your intents- you can either [test the flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/test-flows) in which they are set or you can test them in the **Tools** section. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/tools#test-your-bot).
 
-To test your bot's confidence and intent identification: 
+To test your AI-agent's confidence and intent identification: 
 
 1. Go to **Tools**.
 
@@ -194,9 +194,9 @@ To test your bot's confidence and intent identification:
 
     <img src="https://imgur.com/vPs7Ugi.png" alt="drawing" width="80%"/>
 
-* This will generate code to display the bot's response to that intent. 
+* This will generate code to display the AI-agent's response to that intent. 
 
-In the example code below, the bot confidently recognizes the phrase as part of the **order intent**, with a confidence score of 0.999.
+In the example code below, the AI-agent confidently recognizes the phrase as part of the **order intent**, with a confidence score of 0.999.
 
 ```
 {
@@ -212,14 +212,14 @@ In the example code below, the bot confidently recognizes the phrase as part of 
 }
 ```
 
-## Stop or exit bot conversations using intents
+## Stop or exit AI-agent conversations using intents
 
-You can configure your bot to stop or exit conversations using specific intents and utterances. Follow these steps to set up this functionality:
+You can configure your AI-agent to stop or exit conversations using specific intents and utterances. Follow these steps to set up this functionality:
 
 1. [Add Intents and Utterances](#add-intents-and-utterances):
    * Create intents such as "stop the flow" or "exit the flow".
    * Add corresponding utterances that users might use to indicate they want to end the conversation.
-   * Train the bot on these intents and utterances.
+   * Train the AI-agent on these intents and utterances.
 
 2. [Create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)
    * Go to the flow creation section.
@@ -228,12 +228,12 @@ You can configure your bot to stop or exit conversations using specific intents 
 3. Add a Text Message Node:
    * Within the flow, add a text message node with a message such as "Your chat has ended".
 
-* By setting up this flow, whenever a user types any of the trained intents or utterances to stop or exit the conversation, the bot immediately triggers this flow and ends the chat. 
+* By setting up this flow, whenever a user types any of the trained intents or utterances to stop or exit the conversation, the AI-agent immediately triggers this flow and ends the chat. 
 
 ## Resolve conflicts in intents and utterances 
 
 
-A bot is trained with multiple intents and entities to improve its performance. If utterances are not classified correctly during training, it can lead to confusion. To resolve these clashes caused by unclear utterance classification, it is necessary to analyse the report.
+A AI-agent is trained with multiple intents and entities to improve its performance. If utterances are not classified correctly during training, it can lead to confusion. To resolve these clashes caused by unclear utterance classification, it is necessary to analyse the report.
 
 ### Download utterance report
 
@@ -249,7 +249,7 @@ A bot is trained with multiple intents and entities to improve its performance. 
 
 ### Resolve conflicts among utterances 
 
-Utterance reports sent to your email address help evaluate the quality of your bot's utterances. They provide insights into the similarity of utterances within an intent and identify any common intents across different flows.
+Utterance reports sent to your email address help evaluate the quality of your AI-agent's utterances. They provide insights into the similarity of utterances within an intent and identify any common intents across different flows.
 
 :::note
 It is recommended to generate an utterance report after the initial **Train** setup and regularly at least once a month.
@@ -283,36 +283,36 @@ The following are the recommended best practices to follow while naming intents 
 
 ### Naming intents
 
-#### For new bots
+#### For new AI-agents
 
-Bots created after August 1, 2022.
+AI-agents created after August 1, 2022.
 
 1. Intent names must be at least 3 words long with unique words and no special characters. 
     * Ensure intent names are descriptive to enhance clarity.
    * Avoid using generic names like "intent test one" or "FAQ number one".
-   * Poor intent names can negatively impact NLP performance, leading to false positives and unnecessary bot issues.
+   * Poor intent names can negatively impact NLP performance, leading to false positives and unnecessary AI-agent issues.
    * In the case of cloud, renaming intent names is possible.
 2. The more descriptive the intent name, the better (add names with more than 3 words).
 3. Avoid uncommon and business-specific abbreviations. Example: PO (purchase order ), GMV, and so on. Use the full forms and add synonyms if necessary. Few common abbreviations like UPI, EMI, and HR are acceptable.
 4. Phrase the intent name as a verb followed by a noun. Example: get a premium receipt, pay renewal amount, fetch order status.
-5. Keywords and sentences less than 3 words will fallback to the existing bot model and will work as-is. These types of utterances will not go to the new model.
+5. Keywords and sentences less than 3 words will fallback to the existing AI-agent model and will work as-is. These types of utterances will not go to the new model.
 6. This model is applicable and works well for [FAQs](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) as well (since FAQs are descriptive and longer sentences) 
-7. Suggestions are automatically enabled for all new bots by default. This default setting is crucial for improving the model and maximizing performance benefits.
+7. Suggestions are automatically enabled for all new AI-agents by default. This default setting is crucial for improving the model and maximizing performance benefits.
 
-#### For existing bots
+#### For existing AI-agents
 
-The following are a few important pointers for bots created before August 1, 2022.
+The following are a few important pointers for AI-agents created before August 1, 2022.
 
 ##### Cloud
 
-1. Enable suggestions for bots where they may not be enabled. This ensures that the model is used to the fullest. 
+1. Enable suggestions for AI-agents where they may not be enabled. This ensures that the model is used to the fullest. 
 2. Suggestions only show up for intents that are connected to the flows. Verify that unwanted flows are removed (or disconnected from intents).
-3. If the intent name is camelCase (example: chatWithAgent)  or has underscore/hyphens (example: chat_with_agent, chat-with-agent), use the edit option to rename these following the guidelines mentioned in the above section (for new bots). 
-4. Ensure that there is no Small Talk in FAQs or Flows. If these are present, delete them. Platform small talk is enabled for all cloud bots. 
+3. If the intent name is camelCase (example: chatWithAgent)  or has underscore/hyphens (example: chat_with_agent, chat-with-agent), use the edit option to rename these following the guidelines mentioned in the above section (for new AI-agents). 
+4. Ensure that there is no Small Talk in FAQs or Flows. If these are present, delete them. Platform small talk is enabled for all cloud AI-agents. 
 
 ##### App (app.yellow.ai)
 
-1. Enable suggestions for bots. 
+1. Enable suggestions for AI-agents. 
     - To do this, in the [App platform](https://app.yellow.ai) ensure that **enableDidYouMean** is set to true in app options in Function and in **Tools** > **App Options** > **Prediction** > **Enable Suggestions**.
     - If there’s an existing **DidYouMean** function in default:response, remove it.
 2. Verify that the flow/journey DESCRIPTION is in line with the guidelines mentioned above. 
@@ -428,7 +428,7 @@ Schedule Meeting flow - 50 Utterances
 
 * Try to maintain a balance in the number of utterances per flow
 * The NLP model is robust enough to handle small variations in the number of utterances (difference of 3-5 utterances) 
-* For smaller bots (< 10 flows) maintaining balance is important to ensure good performance. 
+* For smaller AI-agents (< 10 flows) maintaining balance is important to ensure good performance. 
 
 - #### Do not create multiple flows which have a similar purpose 
 
@@ -493,7 +493,7 @@ This means that ***apply-for-home-loan*** will have utterances that are very sim
 
 - #### Do not add utterances if a flow will only be triggered through the Trigger Journey option 
 
-There may be some flows in the bot that are meant to be triggered only from another flow (that is, these won't be triggered by the user’s input).
+There may be some flows in the AI-agent that are meant to be triggered only from another flow (that is, these won't be triggered by the user’s input).
 
 For example, Feedback Flow
 
@@ -505,13 +505,13 @@ Adding utterances here will unnecessarily increase the complexity of the NLP Mod
     * False Positives occur because of overfitting and spoil the customer or user experience.
     * These are minimized by following the best practices laid out in this document.
     * If there are a lot of false positives during training (even after checking for overfitting), try raising the "minConfidence" threshold.
-    * The best strategy is to use didYouMean (Suggestions) feature and retrain the bot periodically with the new data.
+    * The best strategy is to use didYouMean (Suggestions) feature and retrain the AI-agent periodically with the new data.
 
 - #### Do use the didYouMean feature extensively
     * After ensuring that the model did not overfit (no False Positives) the next step is to enable the didYouMean feature
     * When the user’s input is not recognized by the model, the didYouMean feature elegantly handles the case as a fallback.
-    * This is especially useful in the first few weeks after deploying a bot in production, when accuracy may be low. 
-        * The self-learning capability allows the bot to improve the confidence of different types of user expressions. 
+    * This is especially useful in the first few weeks after deploying a AI-agent in production, when accuracy may be low. 
+        * The self-learning capability allows the AI-agent to improve the confidence of different types of user expressions. 
 
 - #### Do add abbreviations/shortforms in the “synonyms” section 
     - For short forms and abbreviations, add all the possible variations in the Synonyms section located under “Entities”. 

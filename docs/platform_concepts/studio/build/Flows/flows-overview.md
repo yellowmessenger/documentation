@@ -3,34 +3,34 @@ title: Flows
 sidebar_label: Flows overview
 ---
 
-A flow is a structure that defines the sequence of a chatbot conversation with users based on their questions and responses. It consists of a series of [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes), where each node represents a specific point in the conversation. Nodes can include messages, questions, prompts, actions, or conditions based on user input.
+A flow is a structure that defines the sequence of a AI-agent conversation with users based on their questions and responses. It consists of a series of [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes), where each node represents a specific point in the conversation. Nodes can include messages, questions, prompts, actions, or conditions based on user input.
 
 After creating a flow, the first flow you create is considered the [start flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#start-flow-welcome), and the second flow is considered the [fallback flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#fallback-flow). However, when there are multiple flows, you can set any flow as the start or fallback flow.
 
 **Key features of Conversational Flows:**
 
-* **Structured interaction**: Flows provide a structured framework for organizing conversations between users and bots, ensuring a seamless and intuitive user experience.
+* **Structured interaction**: Flows provide a structured framework for organizing conversations between users and AI-agents, ensuring a seamless and intuitive user experience.
 * **Message sequencing**: Nodes within flows determine the sequence of messages presented to users, allowing for logical progression through the conversation.
-* **User input handling**: Flows include nodes to capture and process user inputs, such as text messages, selections, or commands, enabling bots to understand user intents and respond accordingly.
+* **User input handling**: Flows include nodes to capture and process user inputs, such as text messages, selections, or commands, enabling AI-agents to understand user intents and respond accordingly.
 * **Conditional logic**: Flows can adjust dynamically based on user responses using [condition nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes), enabling personalized interactions.
-* **Bot goal achievement**: Flows guide users through completing specific tasks or achieving objectives, such as placing an order, scheduling an appointment, or seeking information.
+* **AI-agent goal achievement**: Flows guide users through completing specific tasks or achieving objectives, such as placing an order, scheduling an appointment, or seeking information.
 
 **Sample conversational flow**
 
-**Use case**: Ordering South Indian Food from a Bot
+**Use case**: Ordering South Indian Food from a AI-agent
 
 ![](https://i.imgur.com/zwPxgj6.png)
 
 User: Show me the menu<br/>
-Bot: Please select your Cuisine: South Indian, North Indian<br/>
+AI-agent: Please select your Cuisine: South Indian, North Indian<br/>
 User: South Indian<br/>
-Bot: Please select the Item: Idly, Dosa, and Pongal<br/>
+AI-agent: Please select the Item: Idly, Dosa, and Pongal<br/>
 User: Idly<br/>
-Bot: Please enter the quantity<br/>
+AI-agent: Please enter the quantity<br/>
 User: 2<br/>
-Bot: Thanks for ordering with us<br/>
+AI-agent: Thanks for ordering with us<br/>
 
-This flow guides the user through the process of ordering South Indian food from the bot by structuring a series of interactions between the user and the bot.
+This flow guides the user through the process of ordering South Indian food from the AI-agent by structuring a series of interactions between the user and the AI-agent.
 
 ## Key elements to build a flow
 
@@ -39,9 +39,9 @@ You can use the following elements to build a Conversational flows:
 Icon | Options | Descriptions 
 -----|---|-------------
 | <img src="https://imgur.com/sGJ8plu.png" alt="drawing" width="40%"/> | [Nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes) | Define specific points in the conversation flow
-<img src="https://imgur.com/BDYFfE5.png" alt="drawing" width="10%"/> | [Channel filter](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) | Set the active channels where you want the bot deployed
+<img src="https://imgur.com/BDYFfE5.png" alt="drawing" width="10%"/> | [Channel filter](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) | Set the active channels where you want the AI-agent deployed
 <img src="https://imgur.com/AZ0zthd.png" alt="drawing" width="10%"/> | [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) | Store static or dynamic values
-<img src="https://imgur.com/yA4l4Mk.png" alt="drawing" width="10%"/> | [Language](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization) | Choose the language(s) your bot needs to support
+<img src="https://imgur.com/yA4l4Mk.png" alt="drawing" width="10%"/> | [Language](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization) | Choose the language(s) your AI-agent needs to support
 ![](https://imgur.com/15aueyb.png)| [Flow trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) | Triggers the flow based on the selected Intent, Entities, Event, and URL clicks
 
 ![](https://imgur.com/Yauehn0.png)

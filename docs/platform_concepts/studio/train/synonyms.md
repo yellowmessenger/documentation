@@ -3,13 +3,13 @@ title: Synonyms
 sidebar_label : Synonyms
 ---
 
-Synonyms are used to understand user inputs by recognizing different ways users might express the same intent. By mapping synonyms and its abbreviations to a specific intent, the bot can accurately interpret different ways of a query and provide relevant responses.
+Synonyms are used to understand user inputs by recognizing different ways users might express the same intent. By mapping synonyms and its abbreviations to a specific intent, the AI-agent can accurately interpret different ways of a query and provide relevant responses.
 
-For example, for ordering spectacles through bot, you can have synonyms like 'Specs', 'Shades', and 'Goggles'. Training the relevant intent with these synonyms enables the bot to trigger the desired flow whenever users type these terms or any other synonym associated with ordering spectacles.
+For example, for ordering spectacles through AI-agent, you can have synonyms like 'Specs', 'Shades', and 'Goggles'. Training the relevant intent with these synonyms enables the AI-agent to trigger the desired flow whenever users type these terms or any other synonym associated with ordering spectacles.
 
 ## Add synonyms
 
-In order for the bot to understand the user query and provide relevant responses, you need to add the synonym name and the synonym or abbreviation and train the bot.
+In order for the AI-agent to understand the user query and provide relevant responses, you need to add the synonym name and the synonym or abbreviation and train the AI-agent.
 
 Before adding synonyms, ensure you have:
 
@@ -32,7 +32,7 @@ To add synonyms, follow these steps:
 
 4. Click **Add**.
 
-* This will add the Synonym to the bot.
+* This will add the Synonym to the AI-agent.
 
 5. Go to **Intents** and click the intent that will trigger the respective flow, and click **Train intents** to train the intent with the added synonym.
 
@@ -69,7 +69,7 @@ To delete a synonym, follow these steps:
          
 ## Test your synonyms
 
-Test your synonyms and abbreviations to ensure they are identified correctly by the bot.
+Test your synonyms and abbreviations to ensure they are identified correctly by the AI-agent.
 
 You can test your synonyms via:
 
@@ -96,7 +96,7 @@ You can test your synonyms via:
 
 ### Test the Synonyms via Flows
 
-You can test your flows to check whether the bot is recognizing the synonyms. To know more how to test your flow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow).
+You can test your flows to check whether the AI-agent is recognizing the synonyms. To know more how to test your flow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#-3-test-a-specific-flow).
 
    <img src="https://imgur.com/ihcpSxd.png" alt="drawing" width="40%"/>
 

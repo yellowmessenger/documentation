@@ -3,7 +3,7 @@ title : Entities
 sidebar_label : Entities
 ---
 
-An entity refers to specific information or data that the chatbot can identify and extract from user input. 
+An entity refers to specific information or data that the AI-agent can identify and extract from user input. 
 
 Let us consider the following example:
 
@@ -11,13 +11,13 @@ Let us consider the following example:
 
    In the above sentence, the identified entities are the `location` (New York), `cuisine` (Italian), and the `number of people` (four).
 
-By training your bot on these specific entities, it enables the bot to answer questions accurately. Entities are primarily utilized to bypass prompts and enable the chatbot to provide relevant suggestions or responses to users once the bot identifies the relevant entity.
+By training your AI-agent on these specific entities, it enables the AI-agent to answer questions accurately. Entities are primarily utilized to bypass prompts and enable the AI-agent to provide relevant suggestions or responses to users once the AI-agent identifies the relevant entity.
 
 For more information on configuring entities for this purpose, refer to [this section](#auto-skip-prompts--simplify-interactions-with-entity-based-suggestions).
 
 #### Predefined entities that do not need training
 
-There are a set of entities that the bot recognizes without requiring specific training. These predefined entities provide a convenient way to handle common types of information without requiring additional setup. 
+There are a set of entities that the AI-agent recognizes without requiring specific training. These predefined entities provide a convenient way to handle common types of information without requiring additional setup. 
 
 The prebuilt entities include:
 
@@ -28,7 +28,7 @@ The prebuilt entities include:
 
 ## Add entities
 
-In order for the bot to identify and understand the entities, you need to add the entities and train the bot specifically on those entities. 
+In order for the AI-agent to identify and understand the entities, you need to add the entities and train the AI-agent specifically on those entities. 
 
 To trigger flow using entities, you need to set entities as the start trigger for the flow. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#trigger-flow-using-entities)
 
@@ -43,11 +43,11 @@ Yellow.ai platform offers 4 different types of entities:
 
 Text type entities are suitable for use cases where there is no specific list or predefined format of entity items required.
 
-Let's say you have a chatbot that helps users find nearby restaurants. In this case, you can use a text type entity to extract specific cuisine preferences from the user's input. Here is a sample example:
+Let's say you have a AI-agent that helps users find nearby restaurants. In this case, you can use a text type entity to extract specific cuisine preferences from the user's input. Here is a sample example:
 
 User: Can you recommend some good Italian restaurants nearby?
 
-In this scenario, the text type entity can easily identify "Italian" from the user's input, allowing the chatbot to understand the cuisine preference and provide relevant recommendations. 
+In this scenario, the text type entity can easily identify "Italian" from the user's input, allowing the AI-agent to understand the cuisine preference and provide relevant recommendations. 
 
 1.  Go to **Automation** > **Train** > **Entities** > **+ Add new entity**.
 
@@ -206,11 +206,11 @@ To export entities:
 
 Entities offer simplified conversations by providing auto-suggestions based on identified entities. This process enhances the user experience by minimising unnecessary interactions.
 
-For instance, if your bot has been trained on the "places" entity, it can offer relevant suggestions when the customer mentions a place. 
+For instance, if your AI-agent has been trained on the "places" entity, it can offer relevant suggestions when the customer mentions a place. 
 
 <img src="https://i.imgur.com/anyDc8z.png" alt="drawing" width="50%"/>
 
-Similarly, if the date entity is set to automatically skip the date prompt, the bot will automatically assign the provided date value without displaying the prompt to the user. This enhances the user experience by seamlessly handling specific entities and reducing unnecessary interactions.
+Similarly, if the date entity is set to automatically skip the date prompt, the AI-agent will automatically assign the provided date value without displaying the prompt to the user. This enhances the user experience by seamlessly handling specific entities and reducing unnecessary interactions.
 
 To add entities to skip prompts and offer suggestions:
 

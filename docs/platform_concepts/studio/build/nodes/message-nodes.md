@@ -3,7 +3,7 @@ title: Message Nodes
 sidebar_label: Messages
 ---
 
-Message nodes are one-way communication nodes which can be used when the bot has to display information to the user without expecting or taking any response.
+Message nodes are one-way communication nodes which can be used when the AI-agent has to display information to the user without expecting or taking any response.
 You can **randomize** the node text and add a **delay** to each node.  
 
 ---
@@ -12,7 +12,7 @@ You can **randomize** the node text and add a **delay** to each node.
 
 **Randomization**
 
-Randomization is a feature available in nodes that allows chatbots show different variation of greeting messages/ questions to users, making the conversation feel more natural and human-like.
+Randomization is a feature available in nodes that allows AI-agents show different variation of greeting messages/ questions to users, making the conversation feel more natural and human-like.
 
 1. To add multiple texts, click **Add multiple text for randomizing** on the node. 
 2. Enter variations of the text that you want your users to see. 
@@ -42,7 +42,7 @@ Following are the different types of message nodes:
 
 ## 2. Text
 
-> This node is also available for voice bots. 
+> This node is also available for voice AI-agents. 
 
 
 Display a simple text with this node.  
@@ -56,7 +56,7 @@ Let's say a customer has paid for their order, you can use the text node to disp
 
 ## 3. Image 
 
-Display any image (less than 10MB) with this node. For example, you can display welcome image to users when they open the bot.
+Display any image (less than 10MB) with this node. For example, you can display welcome image to users when they open the AI-agent.
 
 
 ![](https://i.imgur.com/NuHZKEb.jpg)
@@ -189,7 +189,7 @@ File size limit is 15 MB.
 
 ## 7. Quick Replies
 
-Display a question along with quick reply buttons with this node. For example, the bot prompts the user with options like Technical Issue, Billing Inquiry, etc., enabling quick selection of the relevant category for their product-related query.
+Display a question along with quick reply buttons with this node. For example, the AI-agent prompts the user with options like Technical Issue, Billing Inquiry, etc., enabling quick selection of the relevant category for their product-related query.
 
 > Unlike the Quick Replies Prompt node, a fallback message need not be configured to this nor this node is expected to follow another node.
 
@@ -363,7 +363,7 @@ Click **Fetch from** and add a dynamic value - if required:
 
 ---
 
-**Configure text displayed on the bot**
+**Configure text displayed on the AI-agent**
 
 To beautify the text you enter in the field -**bot says** you can add the following. 
 
@@ -398,7 +398,7 @@ The following are the prerequisites to create a catalog flow:
 
 To create a catalog journey, follow these steps - 
 
-1. Use the same CSV used in the Catalog Manager to fill the bot DB. You can create a DB table with the same headers as the Data feed sheet and use it to upload all the products to the DB.
+1. Use the same CSV used in the Catalog Manager to fill the AI-agent DB. You can create a DB table with the same headers as the Data feed sheet and use it to upload all the products to the DB.
 
 :::note 
 There is one limitation on Cloud DB Table creation which does not let you create a table column name with the header as ID due to the min character required for a header. You have to keep a copy of the original Feed sheet with the header as IDS and use it to upload to DB.
@@ -462,11 +462,11 @@ To handle Cart events when a user decides to purchase a product, follow the abov
 Incase of invalid or rejected ProductID or ContentID passed on the node the message/product will not be sent to the user.
 :::
 
-Once the user sends the cart, the products from the users Cart will be removed and will be sent to the Business as an events on the Bot. to recieve the Cart Event its required to enable it from the Event Hub
+Once the user sends the cart, the products from the users Cart will be removed and will be sent to the Business as an events on the AI-agent. to recieve the Cart Event its required to enable it from the Event Hub
 
 ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfkxJeooqj886spjGBpqA68UNcEvVx5FXGCYb2wp7dxtbG9m3Dgpgmzy9GudbTXK8uA1JXm16jKTDE6jaix5pBZftNZ3Pvh3oPhC9HkFnpLSsSHJmnvv581GuMAfUzTcmdLWpQjfros4DqqoDrGk3rRdq9qP/Image.jpg)
 
-This event will contain the below Data in the backend which can be used for further information required on the bot to be processed.
+This event will contain the below Data in the backend which can be used for further information required on the AI-agent to be processed.
 
 ```
 {
@@ -505,7 +505,7 @@ You can handle this event using a journey to carry out the next steps of the buy
 
 ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfmHHPievXu1X8Qk2iP8HegpWun5GMj8ZqpYKLsifTBLzzqYQycjFEkHjK6uLS6KwLnHFgD8bAUmAeXAvkTKAQCKZrXKFs4kyYGy6JNKj4BXxrjCJ7M7KytztWQBcim6aHkgPSkc8fC1FkvuNV4B5CQ9aw3y/Image.jpg)
 
-4. The Message Business option also allows for another event type to be configured. This event can be sent back to the bot as a normal message, or it can be fetched as an event to provide context about the product for which the message was sent.
+4. The Message Business option also allows for another event type to be configured. This event can be sent back to the AI-agent as a normal message, or it can be fetched as an event to provide context about the product for which the message was sent.
 
 ![](https://secure-res.craft.do/v2/9NjLLkjfTCVmNrCRZiZ9LoawipgB9XdESAP4b83XbRAp7ZnFsoo8ohDNH64jUEEqg5USQUkWUydeWUSEcE6HwmkXom7PtwPbpwWZiNYtmLFaEcgkHCu9PHehKHfxjVNXRiemsMxbmVLeHTit9TdTcmCfmNJL9wfkW5hC3z4pk1oFhjAUfdeFzEtZGD3g6dxz9BRwu5iqfX594rr9uTpyguRNHGQ7iKid5FKJMFeJ6nANvncEaSMezx1XPyQhZ2dpLvpk7CCVX4QiCnSh9ZVkYYEVTcsTwrnTuKfr32Hpb6chFpvmcF/Image.jpg)
 
@@ -514,7 +514,7 @@ You can handle this event using a journey to carry out the next steps of the buy
 Ideally, it is suggested to have a human agent routing available to help users with queries related to the product, which can be handled using NLP as well.
 
 :::note
-The Message Business will send both the message and the event to the bot if the event is active on the Event Hub. In case the event is disabled, the message can be handled using NLP, and no event will be sent to the bot for getting the context of the product query.
+The Message Business will send both the message and the event to the AI-agent if the event is active on the Event Hub. In case the event is disabled, the message can be handled using NLP, and no event will be sent to the AI-agent for getting the context of the product query.
 :::
 
 The event will be as below:
@@ -542,7 +542,7 @@ The event will be as below:
   }
 }
 ```
-This completes the bot flow for the SPM/MPM feature to be handled for a basic Commerce flow.
+This completes the AI-agent flow for the SPM/MPM feature to be handled for a basic Commerce flow.
 
 These flows can also be created with other complex use cases with live agent support for a better user experience when the buyer wants to get a consultation or get more information on the product before purchasing.
 

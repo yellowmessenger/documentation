@@ -3,7 +3,7 @@ title: Tools and settings
 sidebar_label: Tools & settings 
 ---
 
-You can find advanced settings in the tools section, that will help you to finely adjust your bot's performance. You can calibrate language understanding through NLU, configure conversational behavior, add constant values that do not change in any conversations, and prepare for upcoming Voice capabilities. These tools collectively elevate your bot's performance and user engagement.
+You can find advanced settings in the tools section, that will help you to finely adjust your AI-agent's performance. You can calibrate language understanding through NLU, configure conversational behavior, add constant values that do not change in any conversations, and prepare for upcoming Voice capabilities. These tools collectively elevate your AI-agent's performance and user engagement.
 
 ## Access tools
 
@@ -28,7 +28,7 @@ The tools section consists of five segments:
 
 ## Test your bot
 
-This section helps you check whether the associated intent will be triggered or not. The bot utilizes prediction to determine the intention behind the input and evaluates the accuracy of the prediction. It also identifies the bot's response based on the input text, including automatically recognized entities.
+This section helps you check whether the associated intent will be triggered or not. The AI-agent utilizes prediction to determine the intention behind the input and evaluates the accuracy of the prediction. It also identifies the AI-agent's response based on the input text, including automatically recognized entities.
 
 For instance, when you type an utterance in the "What user says?" section, you'll see the corresponding response and its confidence level displayed along with the related flow.
 
@@ -40,9 +40,9 @@ The following is a comprehensive description of the parameters in the response r
 
 | Parameter       | Description                                                                                                     |
 | --------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Intent**      | Represents the utterance that you used to test flow prediction. The bot predicts the intention behind the input.          |
-| **Confidence**  | A percentage (0 to 1) reflecting how accurate the predicted intent is. Higher values indicate greater certainty.<br/> * Confidence is 1 when the bot is absolutely sure about the intent.<br/>* If the confidence is over 0.8, the prediction is considered accurate. |
-| **Default Response** | The bot's response based on the input text.                                                                 |
+| **Intent**      | Represents the utterance that you used to test flow prediction. The AI-agent predicts the intention behind the input.          |
+| **Confidence**  | A percentage (0 to 1) reflecting how accurate the predicted intent is. Higher values indicate greater certainty.<br/> * Confidence is 1 when the AI-agent is absolutely sure about the intent.<br/>* If the confidence is over 0.8, the prediction is considered accurate. |
+| **Default Response** | The AI-agent's response based on the input text.                                                                 |
 | **Entity**      | Words or phrases representing nouns within the text. For example, in **I want to buy a phone**, Buy is the Intent and Phone is the Entity.                                                         |
 | **Global Entity** | Entities (for example, dates, countries) recognized automatically by the platform.<br/> * For **Dates**: DD-MM-YY, Today, Yesterday, Tomorrow, and more. <br/> * For **Countries**: Japan, India, etc.                               |
 | **Global Model** | Pre-trained phrases like Small Talk or Contexts, that help identify the intent.       |
@@ -65,12 +65,12 @@ Enable **Verbose** to identify the emotion (sentiment) behind the text.
 
 ### Test your bot in multiple languages
 
-You can try out your bot in various languages by just picking your preferred language from the dropdown menu.
+You can try out your AI-agent in various languages by just picking your preferred language from the dropdown menu.
 
    <img src="https://i.imgur.com/XJpwl4I.png" alt="drawing" width="60%"/>
 
 :::note
-To add languages to your bot, check out the steps [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#add-languages-to-your-bot).
+To add languages to your AI-agent, check out the steps [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#add-languages-to-your-bot).
 :::
 
 ## Conversation 
@@ -79,7 +79,7 @@ Here you can manage how conversations unfold, how messages are shown, and variou
 
 You can oversee modifications through the following categories:
 
-### Update bot behaviour
+### Update AI-agent behaviour
 
 This section consists of fields to control the behaviour of the conversation.
 
@@ -87,24 +87,24 @@ This section consists of fields to control the behaviour of the conversation.
 
 | Fields                  | Descriptions                                                                                                    |
 | ----------------------- | --------------------------------------------------------------------------------------------------------------- |
-| **Target language**     | The default language in which the bot will converse in before auto-suggestion or language change occurs. You can modify this if required.      |
+| **Target language**     | The default language in which the AI-agent will converse in before auto-suggestion or language change occurs. You can modify this if required.      |
 | **Translate quick reply responses** | Translate quick reply responses<br/>(Does not work). |
-| **Enable Hinglish**     | Set *Yes* to allow the bot to understand Hinglish (Hindi + English) utterances, tailored for Indian users.<br/><img src="https://i.imgur.com/3Kt7IiD.png" width="300"/>    |
-| **Auto Detect Language**| Set *Yes* to enable the bot to auto-identify the language a user types in and respond accordingly (if configured).<br/><img src="https://i.imgur.com/p1xK8Sq.png" width="250"/> |
+| **Enable Hinglish**     | Set *Yes* to allow the AI-agent to understand Hinglish (Hindi + English) utterances, tailored for Indian users.<br/><img src="https://i.imgur.com/3Kt7IiD.png" width="300"/>    |
+| **Auto Detect Language**| Set *Yes* to enable the AI-agent to auto-identify the language a user types in and respond accordingly (if configured).<br/><img src="https://i.imgur.com/p1xK8Sq.png" width="250"/> |
 | **Enable Go Back/Go Home** | Shortcut for users to move to the previous step or go back home.<br/><img src="https://i.imgur.com/fsJZA3R.png" width="300"/>                                           |
 | **Go back Aliases**     | Configure keywords to trigger the **Go back** action and navigate to the previous conversation step.<br/><img src="https://i.imgur.com/tt2P4FO.jpg" width="50%"/>          |
 | **Go home Aliases**     | Specify keywords to trigger the **Go home** action and return to the beginning of the conversation.<br/><img src="https://i.imgur.com/T1jOHPX.jpg" width="50%"/>|
-| **Negation journey**    | Collection of flows the bot goes through when a user rejects an action.<br/>For example:<br/><br/> * When the user inputs "I want to talk to the manager", the bot takes to the *Transfer to Agent* flow.<br/>* If the user inputs " I dont want to talk to the manager", the bot takes the selected negation journey.<br/><img src="https://i.imgur.com/VZalCux.png" width="50%"/>                                    |
+| **Negation journey**    | Collection of flows the AI-agent goes through when a user rejects an action.<br/>For example:<br/><br/> * When the user inputs "I want to talk to the manager", the AI-agent takes to the *Transfer to Agent* flow.<br/>* If the user inputs " I dont want to talk to the manager", the AI-agent takes the selected negation journey.<br/><img src="https://i.imgur.com/VZalCux.png" width="50%"/>                                    |
 ### Intelligent switching
 
-This section helps the bot to switch the conversation based on user input.
+This section helps the AI-agent to switch the conversation based on user input.
 
 For instance, consider a scenario where:
 
-* Bot asks: "Choose the type of account," offering options like Savings account or Fixed deposit. 
+* AI-agent asks: "Choose the type of account," offering options like Savings account or Fixed deposit. 
 * User responds: "Can you explain the difference between Savings account and Fixed deposit?" 
 
-With intelligent switching, the bot would answer the user's query and then smoothly transition back to the previous flow, prompting the user to "Select a type of account" again. 
+With intelligent switching, the AI-agent would answer the user's query and then smoothly transition back to the previous flow, prompting the user to "Select a type of account" again. 
 
 <img src="https://i.imgur.com/Ix9CTWR.png" alt="drawing" width="80%"/>
 
@@ -117,7 +117,7 @@ With intelligent switching, the bot would answer the user's query and then smoot
 
 ### Step validation settings
 
-This helps you configure the settings related to validating the steps involved in the bot conversation. In simple words, you can configure this to validate prompts.
+This helps you configure the settings related to validating the steps involved in the AI-agent conversation. In simple words, you can configure this to validate prompts.
 
    <img src="https://i.imgur.com/7mMh5Nz.png" width="70%"/>
 
@@ -143,16 +143,16 @@ You can customise this format **Whatsapp Quick reply index** and **Structure pre
 
 ### Autoskipping settings
 
-Enable this option to allow the bot to inform the user that it already has the information that is being provided.
+Enable this option to allow the AI-agent to inform the user that it already has the information that is being provided.
 
-You can skip a prompt using entitity or variable if the value already exists. This helps avoid asking users the same question multiple times depicting the memory of your chatbot.  
+You can skip a prompt using entitity or variable if the value already exists. This helps avoid asking users the same question multiple times depicting the memory of your AI-agent.  
 
 <img src="https://i.imgur.com/Hvu2ioK.png" width="65%"/>
 
 | Fields                   | Descriptions                                                                                       |
 | ------------------------ | -------------------------------------------------------------------------------------------------- |
-| **Acknowledgment**      | Activate this option for the bot to receive user acknowledgment to automatically skip the upcoming flow. |
-| **Acknowledgment prompt** | Type the message to be displayed to the user when the bot suggests auto-skipping the upcoming step in the flow. |
+| **Acknowledgment**      | Activate this option for the AI-agent to receive user acknowledgment to automatically skip the upcoming flow. |
+| **Acknowledgment prompt** | Type the message to be displayed to the user when the AI-agent suggests auto-skipping the upcoming step in the flow. |
 | **Invalid prompt** | This message will appear when the user enters an invalid prompt. |
 | **Confirm button label** | The label on the confirm button which users click to confirm that the option can be skipped. |
 | **Modify button label** | The label on the edit button when users choose to modify their selection. |
@@ -162,7 +162,7 @@ To configure autoskip at node level, click [here](https://docs.yellow.ai/docs/pl
 
 ### Global autocomplete
 
-In the **What do you want to show for autocomplete** option, you can select the choice that the bot will use to autocomplete the user's input.
+In the **What do you want to show for autocomplete** option, you can select the choice that the AI-agent will use to autocomplete the user's input.
 
 ## NLU
 
@@ -174,7 +174,7 @@ Our machine learning system matches user input sentences to specific intents wit
 
 | Fields                    | Descriptions                                                                                                     |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| **Min Confidence**        | Set the minimum value below which the bot won't trigger an intent. For instance, if set to 0.85, the bot responds only when the intent's confidence level for the input is over 85%. <img src="https://i.imgur.com/7DM473O.png" width="300"/>**Use case:**<br/><br/> When a user says **Talk to your agent** and **Min Confidence** is 0.85, the bot responds correctly only if the intent predicted is **Transfer Agent** with a confidence of 1.<img src="https://i.imgur.com/k5bc5Tz.png" widht="60%"/><br/> However, if the user types **Talk to tech support**, the bot won't reply as the confidence for the predicted intent is uncertain. <img src="https://i.imgur.com/aok3dur.png" width="90%"/> |
+| **Min Confidence**        | Set the minimum value below which the AI-agent won't trigger an intent. For instance, if set to 0.85, the AI-agent responds only when the intent's confidence level for the input is over 85%. <img src="https://i.imgur.com/7DM473O.png" width="300"/>**Use case:**<br/><br/> When a user says **Talk to your agent** and **Min Confidence** is 0.85, the AI-agent responds correctly only if the intent predicted is **Transfer Agent** with a confidence of 1.<img src="https://i.imgur.com/k5bc5Tz.png" widht="60%"/><br/> However, if the user types **Talk to tech support**, the AI-agent won't reply as the confidence for the predicted intent is uncertain. <img src="https://i.imgur.com/aok3dur.png" width="90%"/> |
 | **Context Confidence**    | Specify the minimum confidence score required for context accuracy.                                           |
 | **Secondary Model Confidence** | A global contextual model value. If the predicted value is below the threshold entered, the intent won't trigger. |
 
@@ -192,7 +192,7 @@ Boost document rank by  | Choose the preference by which the user query should m
 
 ### Multi Intent Settings
 
-Enabling **Multi-Intent** allows the model to identify two intents in a single user message. For example, if this option is on and the user types **Book a flight** and **reserve a hotel** (assuming proper [training to the bot](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#train-your-bot-with-intents)), the model will detect both **Book a flight** and **Reserve a hotel** as intents.
+Enabling **Multi-Intent** allows the model to identify two intents in a single user message. For example, if this option is on and the user types **Book a flight** and **reserve a hotel** (assuming proper [training to the AI-agent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#train-your-bot-with-intents), the model will detect both **Book a flight** and **Reserve a hotel** as intents.
 
 After detecting the intents, the model will acknowledge this (via an Acknowledgment message) and ask the user which task they want to start with. The options will be provided as quick reply choices.
 ****
@@ -231,7 +231,7 @@ You can configure these settings only when IVR **Channel** is connected. Click [
   
   
 
-The voice global options that are configured will be applicable for all the nodes and journeys for the bot. Node-level options can be configured for each node specifically. Whenever a global option and also node level option are defined, for that specific node, the node level option will be given more priority. For example,  
+The voice global options that are configured will be applicable for all the nodes and journeys for the AI-agent. Node-level options can be configured for each node specifically. Whenever a global option and also node level option are defined, for that specific node, the node level option will be given more priority. For example,  
 
 -   **Global level**: You can select an STT/TTS engine globally so that you don’t have to configure it for each node.
 -   **Node level**: You can configure different “recording max duration” for different nodes i.e. 10 seconds for address and 5 seconds for name node.
@@ -272,7 +272,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 
 | Fields | Description |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Custom SIP header** | This can be used as an additional parameter that can be passed to an agent while transferring the call to an Agent to pass along bot collected information. You can pass a key-value pair in JSON format which will get passed in the SIP header. |
+| **Custom SIP header** | This can be used as an additional parameter that can be passed to an agent while transferring the call to an Agent to pass along AI-agent collected information. You can pass a key-value pair in JSON format which will get passed in the SIP header. |
 
 > An example of the Custom SIP header:    
 
@@ -296,7 +296,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 | Fields | Description |
 | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Recording after call forward** | When this option is enabled the call will get recorded even after it has been transferred to an agent. This can be disabled for use cases with recording sensitive information. |
-| **Enable recording beep** | When this is enabled, a beep sound will be played after the bot asks a question giving an auditory response to the end-user to respond.|
+| **Enable recording beep** | When this is enabled, a beep sound will be played after the AI-agent asks a question giving an auditory response to the end-user to respond.|
 | **Recording Action** | With the recording management options, you can select to pause/resume/stop recording depending upon different use-cases and conversations. By default, the recording is ON only. Also, in a call, once you STOP the recording (for recording sensitive dialogues), it can’t be resumed back. |
 
 
@@ -313,11 +313,11 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 | -------------------------- | ----------- |
 | **STT engine** | Select an engine from the dropdown- Google/Microsoft. |
 | **STT mode** | Select mode from the dropdown. Microsoft provides "Static", "Streaming" or "Streaming Advanced". Google provides "Static". |
-| **STT language** | Bot Language(ISO code) can be selected from the dropdown. Default- English. Click [Microsoft](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts) or [Google](https://cloud.google.com/speech-to-text/docs/languages) for more information on the languages)|
-| **Recording max duration** | This value is the Max duration for which the bot will wait after asking a question (in any step) even while the user is speaking. For example, after asking “Which city are you from?” and the recording duration value is “5" - the bot records only 5 seconds of user response. This option is necessary to avoid consuming unwanted information and to stay with the conversational flow. If the user mistakenly replies with long paragraphs when a question is asked or if the user's response is getting shadowed with constant background noises, the bot must not process those long inputs. Hence, with this configuration, the bot only takes the necessary response and can quickly process the user response.  |
-| **Recording silence duration** | Apart from recording max duration which caps the maximum time of user response, to further make the conversation lively and realistic, another parameter is configuring the expected silence duration. Recording silence duration is the max SILENCE duration for which the bot will wait after asking a question (in any step) for the user to respond. While setting the silence duration, please note that it is applicable to the whole duration of user response, meaning, the silence at any point of user response be it at - (a) initial thinking/processing time OR (b) in between pauses of user response shouldn’t be greater than configured silence duration.  Applicable with Microsoft and Google with STT mode set as STATIC.   |
+| **STT language** | AI-agent Language(ISO code) can be selected from the dropdown. Default- English. Click [Microsoft](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support?tabs=stt-tts) or [Google](https://cloud.google.com/speech-to-text/docs/languages) for more information on the languages)|
+| **Recording max duration** | This value is the Max duration for which the AI-agent will wait after asking a question (in any step) even while the user is speaking. For example, after asking “Which city are you from?” and the recording duration value is “5" - the AI-agent records only 5 seconds of user response. This option is necessary to avoid consuming unwanted information and to stay with the conversational flow. If the user mistakenly replies with long paragraphs when a question is asked or if the user's response is getting shadowed with constant background noises, the AI-agent must not process those long inputs. Hence, with this configuration, the AI-agent only takes the necessary response and can quickly process the user response.  |
+| **Recording silence duration** | Apart from recording max duration which caps the maximum time of user response, to further make the conversation lively and realistic, another parameter is configuring the expected silence duration. Recording silence duration is the max SILENCE duration for which the AI-agent will wait after asking a question (in any step) for the user to respond. While setting the silence duration, please note that it is applicable to the whole duration of user response, meaning, the silence at any point of user response be it at - (a) initial thinking/processing time OR (b) in between pauses of user response shouldn’t be greater than configured silence duration.  Applicable with Microsoft and Google with STT mode set as STATIC.   |
 | **Initial silence duration** | To provide more customization on the silence duration parameter, “streaming” and “streaming-advanced” STT modes (of Microsoft STT engine) allow to specifically configure the maximum acceptable silence duration before the user starts speaking.  For example, the acceptable initial silence duration for the application number question could be higher (~3/4 seconds) but in the case of a quick conversational binary question, it could be configured to 1 second. |
-| **Final silence duration** | Similar to the initial silence duration, the final silence duration is indicative of the maximum duration of pause that the bot will wait for once the user has started speaking. For example, for binary/one-word questions like yes/no we could set the final silence duration to ~0.5/1.0 seconds and for address-like fields where taking a pause is intrinsic in conversation, we can set the final silence duration to ~1.5/2.5 seconds.|
+| **Final silence duration** | Similar to the initial silence duration, the final silence duration is indicative of the maximum duration of pause that the AI-agent will wait for once the user has started speaking. For example, for binary/one-word questions like yes/no we could set the final silence duration to ~0.5/1.0 seconds and for address-like fields where taking a pause is intrinsic in conversation, we can set the final silence duration to ~1.5/2.5 seconds.|
 
   
   
@@ -334,10 +334,10 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 | ------------ | ----------- |
 | **TTS engine** | Select the engines from the dropdown- Microsoft Azure, Google Wavenet, Amazon Polly. |
 | **Text type** | Select Text/SSML from the dropdown. |
-| **TTS language** | Bot Language(ISO code) can be selected from the dropdown.|
+| **TTS language** | AI-agent Language(ISO code) can be selected from the dropdown.|
 | **Pitch** | Pitch value can be any decimal value depending on the base of voice required, 0 is ideal. You can add this for Microsoft if text_type = "text" and for Google for text_type = "text" and "SSML". |
 | **Voice ID** | Type the characters of voice ID. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
-| **TTS Speed** | This value defines how fast the bot must converse. This value can be 0.9 - 1.5 for the bot to soundly humanly. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
+| **TTS Speed** | This value defines how fast the AI-agent must converse. This value can be 0.9 - 1.5 for the AI-agent to soundly humanly. You can add this for Microsoft if text_type = "text" and for Google if text_type = "text" and "SSML". |
 
   
   
@@ -354,7 +354,7 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 | ------------------------------ | ----------- |
 | **Enable acknowledgement message** | When this is enabled, an acknowledgement kind message (“hmmm” OR “okay”) could be spoken in the conversation immediately. This is a small custom feature built to bring more human touch to the conversation.  |
 | **Acknowledgement message** | Enter a text/SSML message depending upon the configuration under the Text Type field. Keep it short for a better user experience.  . Ex: "Do you want to confirm?" |
-| **Boost phrases** |Some user responses can be confusing for the bot to understand. Region-specific words, new Genz lingos, internet terminologies, trending phrases, and abbreviations are trained especially so that the bot understands the exact intention. For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise, it gets translated to kovind/ go we/ co-wid etc. Ex: you should add the phrases that you expect from the user response like, < I want to take covid vaccine > |
+| **Boost phrases** |Some user responses can be confusing for the AI-agent to understand. Region-specific words, new Genz lingos, internet terminologies, trending phrases, and abbreviations are trained especially so that the AI-agent understands the exact intention. For example, COVID is a new term that has been used frequently, the phrase COVID must be boosted, otherwise, it gets translated to kovind/ go we/ co-wid etc. Ex: you should add the phrases that you expect from the user response like, < I want to take covid vaccine > |
 
   
 
@@ -364,6 +364,6 @@ If they are configured at the [node level](https://docs.yellow.ai/docs/platform_
 
 | Fields | Description |
 | ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Repeat limit** | In cases of a blank user response to the question, this is the number of times a repeat message should be played. For example, if the value is 3, the bot asks the user to respond 3 times before following the fallback Configuration. |
+| **Repeat limit** | In cases of a blank user response to the question, this is the number of times a repeat message should be played. For example, if the value is 3, the AI-agent asks the user to respond 3 times before following the fallback Configuration. |
 | **Repeat fallback flow** | Select the conversation fallback to be configured in cases of blank user response even after repeated tries. Currently only support - **disconnect** and **agent transfer** as the fallback options. |
 | **Disconnect message** | Message to be played before disconnecting the call as a part of fallback. For example, "Have a nice day. Bye!" |

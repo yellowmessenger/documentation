@@ -4,7 +4,7 @@ sidebar_label: Debug flows
 tags: [debug flows, debugger, flow debugger]
 ---
 
-The Flow Debugger allows bot developers to inspect variables and track changes in their values at each node level. By enabling step-by-step flow execution through breakpoints, it facilitates the rapid identification of logic and runtime errors, aiding in efficient debugging processes
+The Flow Debugger allows AI-agent developers to inspect variables and track changes in their values at each node level. By enabling step-by-step flow execution through breakpoints, it facilitates the rapid identification of logic and runtime errors, aiding in efficient debugging processes
 
 To debug your flows:
 

@@ -4,7 +4,7 @@ sidebar_label: Dynamic chat node
 ---
 
 :::note
-For enterprise subscription bots, this node is enabled by default. For other subscription bots, activation of this node is available only upon request.
+For enterprise subscription AI-agents, this node is enabled by default. For other subscription AI-agents, activation of this node is available only upon request.
 :::
 
 Dynamic chat node simplifies conversational design by facilitating goal-oriented interactions through its prompt generator.  It analyzes scenarios for tailored responses and generates the prompts based on the given use case. This node enables businesses to offer custom solutions with responsive interactions. 
@@ -16,7 +16,7 @@ This node is powered by generative AI and LLMs (Large Language Models) to drive 
 **Benefits of Dynamic chat node:**
 
 * **Simplifies conversation design**: Users can input instructions directly. There's no need for building nodes or designing flows.
-* **Enhanced user experience**: Dynamic Chat Node enables a more interactive and personalized experience for users, as the bot responds dynamically to their inputs.
+* **Enhanced user experience**: Dynamic Chat Node enables a more interactive and personalized experience for users, as the AI-agent responds dynamically to their inputs.
 * **Time-saving**: Saves time and effort in conversation design, enabling users to focus on creating engaging content.
 * **Real-time interaction**: Facilitates instant analysis of user input and generates immediate responses, leading to faster query resolution.
 
@@ -56,8 +56,8 @@ To generate prompts using AI, follow these steps:
 
    a. **Write goal**: Define the role of the virtual assistance and conversation's primary objective.<br/>
    b. **Write usecase:** Specify the topics or scenarios the conversation should cover.<br/>
-   c. **Describe fallback:** Explain the action the bot should take if it does not understand the user's input.<br/>
-   d. **Add input:** Add the user information that the bot needs to collect from the user.  
+   c. **Describe fallback:** Explain the action the AI-agent should take if it does not understand the user's input.<br/>
+   d. **Add input:** Add the user information that the AI-agent needs to collect from the user.  
 
 4. Once the prompt is generated, you can click **Add prompt** to add it. If you would like to further improve the generated prompt, click **Improve prompt**.
    
@@ -91,7 +91,7 @@ This option allows you to directly input your own instructions instead of relyin
 | Fields             | Descriptions                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | User context       | User context allows you to store string values as variables, which can be retrieved anywhere within the context using `{{userContext}}`.<br/><br/>For example, if you want to offer a discount of 35%, you can store it as a string variable and use `{{userContext}}` to retrieve this information within the context.<br/> <br/>Similarly, User context can be used to fetch and display data to the end user at any point in the conversation. It is important to note that only one User context can be used in a single conversation.
-| Goal     | Describe the objective of the bot. To indicate the start of the context and instruct the bot to follow the given instructions, you enter **START CONTEXT**. Similarly, to indicate the end of the instructions, you enter **END CONTEXT**. <br/>You can define any desired actions for the node, such as greeting the user, collecting their information, verifying the entered details, and more. This allows you to tailor the behavior and actions of the node based on your specific needs. |
+| Goal     | Describe the objective of the AI-agent. To indicate the start of the context and instruct the AI-agent to follow the given instructions, you enter **START CONTEXT**. Similarly, to indicate the end of the instructions, you enter **END CONTEXT**. <br/>You can define any desired actions for the node, such as greeting the user, collecting their information, verifying the entered details, and more. This allows you to tailor the behavior and actions of the node based on your specific needs. |
 
 
  **Points to remember while describing a goal**
@@ -184,12 +184,12 @@ g. **Examples of expected input**: Provide samples of expected input to match th
 
 ### Failure setting
 
-The Failure setting allows you to specify messages to be shown when the bot takes too long to respond, set response time, and define conversation limits. Under this setting, you can configure:
+The Failure setting allows you to specify messages to be shown when the AI-agent takes too long to respond, set response time, and define conversation limits. Under this setting, you can configure:
 
  <img src="https://i.imgur.com/CxgtfNa.png" alt="drawing" width="75%"/>
 
-1. **Enable retries**: Enable this option to allow the bot to show a maximum of two failure messages before switching to the fallback flow.
-2. **Configure timeout time**: This option allows you to set the exact duration (in seconds) after which the bot should time out. 
+1. **Enable retries**: Enable this option to allow the AI-agent to show a maximum of two failure messages before switching to the fallback flow.
+2. **Configure timeout time**: This option allows you to set the exact duration (in seconds) after which the AI-agent should time out. 
 3. **Max limit of conversations**: Set the maximum number of conversations before moving to fallback if the conversation is still not over.
 4. **Restrict ill-formatted responses**: Enable this option to avoid any unformated response from LLMs. 
 
@@ -197,13 +197,13 @@ The Failure setting allows you to specify messages to be shown when the bot take
 
 You can easily determine the reasons behind failure/timeout messages through tags. 
 * If the tags are related to APIs or the LLM vendor, please reach out to the respective third-party vendor or check their status for assistance. 
-* If the tags are bot-level, you can manage the configurations within your node. And if the tags are platform-level, please contact us. 
+* If the tags are AI-agent-level, you can manage the configurations within your node. And if the tags are platform-level, please contact us. 
 
    ![](https://i.imgur.com/eLFqeIy.png)
 
 You can find these tags in two places:
 
-1. **Production bots and past conversations:** 
+1. **Production AI-agents and past conversations:** 
 
     i. Navigate to **Automation > Analysis > Conversation Logs**. 
  
@@ -223,7 +223,7 @@ You can find these tags in two places:
 
 Skill configuration enables you to create workflows that can be linked to goals and invoked as needed within a conversation. These workflows operate in the background while control remains in the dynamic chat node.
 
-Skills can perform various tasks such as calling functions, executing APIs, database operations, triggering user events, and more. This extends the bot's capability to handle dynamic data. The workflow can include logical branching and integration nodes.
+Skills can perform various tasks such as calling functions, executing APIs, database operations, triggering user events, and more. This extends the AI-agent's capability to handle dynamic data. The workflow can include logical branching and integration nodes.
 
 Adding skills to the dynamic chat node enhances goal-based conversations. For instance, in a travel scenario, a skill workflow can call a weather API based on the provided location to fetch weather conditions, aiding in travel planning.
 
@@ -249,7 +249,7 @@ To configure a Skill in the dynamic chat node, follow these steps:
 
 ### Goal configuration setting
 
-This setting determines the creativity, randomness of the bot's responses, and the total number of tokens the model generates. 
+This setting determines the creativity, randomness of the AI-agent's responses, and the total number of tokens the model generates. 
 
 In this setting, you can configure the following fields:
 
@@ -300,7 +300,7 @@ With a Top P setting of 0.3, the model considers only the first two tokens (20% 
   
 ### Model Configuration
 
-In the model configuration, you have the flexibility to manually input your custom GPT or LLM credentials into the bot. This enables you to use different models on various dynamic nodes within the same bot independently. This flexibility allows you to conduct extensive experiments and tailor your bot's responses to specific contexts.
+In the model configuration, you have the flexibility to manually input your custom GPT or LLM credentials into the AI-agent. This enables you to use different models on various dynamic nodes within the same AI-agent independently. This flexibility allows you to conduct extensive experiments and tailor your AI-agent's responses to specific contexts.
 
 For detailed instructions on adding the LLM account, refer to this [documentation](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/llm#configure-llm-in-yellowai).
 
@@ -331,17 +331,17 @@ To add custom LLM, follow these steps:
 ### Additional settings
 
 Additional settings consist of the following options:
-* **Send initial user message**: Sends the user messages from the conversation with the bot to the dynamic chat node before the flow control transitions to the dynamic chat node.
+* **Send initial user message**: Sends the user messages from the conversation with the AI-agent to the dynamic chat node before the flow control transitions to the dynamic chat node.
 * **Send message after chat ends**: The last message sent to the user when the conversation ends with the dynamic chat node.
-* **Context switching**:  This option allows the NLP or Orchestrator LLM to take over and switch out of a dynamic chat node without maintaining any previous context. For instance, if you have an intent like "talk to agent" and the user mentions this during an ongoing goal, the bot can seamlessly switch to the "talk to agent" flow.<br/>
-    While this enhances flexibility, it may increase complexity in some bots where user utterances match both expected replies in the dynamic chat node and specific intents. Therefore, it is essential to optimize the use of context switching carefully and apply it only when necessary. Special caution should be taken with prompts addressing queries to ensure smooth transitions.
+* **Context switching**:  This option allows the NLP or Orchestrator LLM to take over and switch out of a dynamic chat node without maintaining any previous context. For instance, if you have an intent like "talk to agent" and the user mentions this during an ongoing goal, the AI-agent can seamlessly switch to the "talk to agent" flow.<br/>
+    While this enhances flexibility, it may increase complexity in some AI-agents where user utterances match both expected replies in the dynamic chat node and specific intents. Therefore, it is essential to optimize the use of context switching carefully and apply it only when necessary. Special caution should be taken with prompts addressing queries to ensure smooth transitions.
 
   <img src="https://i.imgur.com/lFdJVlD.png" alt="drawing" width="60%"/>
 
 
 ### Voice Configuration
 
-Voice configuration enables you to create interactive voice-enabled interactions, enhancing the conversational capabilities of your bot.
+Voice configuration enables you to create interactive voice-enabled interactions, enhancing the conversational capabilities of your AI-agent.
 
 
   <img src="https://i.imgur.com/m7mnIM3.png" alt="drawing" width="70%"/>
@@ -352,7 +352,7 @@ Voice configuration enables you to create interactive voice-enabled interactions
 
 Configure the following fields:
 
-1. **Wait Music**: Upload music to play while the bot generates a response. Music must be in MP3 or WAV format, with a maximum size of 15 MB.
+1. **Wait Music**: Upload music to play while the AI-agent generates a response. Music must be in MP3 or WAV format, with a maximum size of 15 MB.
 2. **Preview Audio**: Review the uploaded audio file, adjust volume and playback speed, and listen to a preview before finalizing settings.
 
     <img src="https://i.imgur.com/1gy4RKn.png" alt="drawing" width="100%%"/>

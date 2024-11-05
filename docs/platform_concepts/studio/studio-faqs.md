@@ -33,7 +33,7 @@ Welcome message is supported only for web and app SDK and it is not supported fo
 </details>
 
 <details>
- <summary> How to display videos along with the bot messages?
+ <summary> How to display videos along with the AI-agent messages?
 </summary>
  <div>
   <div> Use the <a href= "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#5-video"> Video node</a>.
@@ -198,7 +198,7 @@ You can also do this in the carousal by [creating your own custom/dynamic object
  <summary> What is the difference between Dynamic chat node and Prompt Executor node?
 </summary>
  <div>
-  <div>The <b>Dynamic chat node</b> drives the conversation around a particular goal whereas the <b>Prompt Executor</b> node just executes the given prompt and exits the flow. You can use Dynamic chat node if you want the bot to have goal based conversations with the user, for example telling the user about different loans and convincing them to buy one. You can go with the Prompt Executor node if you want the bot to just perform a certain action such as generating a recipe, writing a poem or performing a calculation.
+  <div>The <b>Dynamic chat node</b> drives the conversation around a particular goal whereas the <b>Prompt Executor</b> node just executes the given prompt and exits the flow. You can use Dynamic chat node if you want the AI-agent to have goal based conversations with the user, for example telling the user about different loans and convincing them to buy one. You can go with the Prompt Executor node if you want the AI-agent to just perform a certain action such as generating a recipe, writing a poem or performing a calculation.
 </div>
   <br/>
    </div>
@@ -208,7 +208,7 @@ You can also do this in the carousal by [creating your own custom/dynamic object
  <summary> Why does selecting a QR button go to the default fallback instead of the next step?
 </summary>
  <div>
-  <div>When users click QR (Quick Reply) buttons after 24 hours of conversation with the bot, the context is lost. As a result, the button click triggers the fallback response instead of proceeding to the next step.
+  <div>When users click QR (Quick Reply) buttons after 24 hours of conversation with the AI-agent, the context is lost. As a result, the button click triggers the fallback response instead of proceeding to the next step.
 </div>
   <br/>
    </div>
@@ -289,7 +289,7 @@ You can also do this in the carousal by [creating your own custom/dynamic object
  <summary>Why am I not able to access a document link, from a conversation I had yesterday? Can I change this dynamic URL to some fixed redirection URL?
 </summary>
  <div>
-  <div>Currently, we have restricted the life of each SAS link to an hour for security reasons. This can be removed/updated as per the client's request. You can generate a new link by asking the same query again in the bot. You can also change this redirection URL to a fixed URL using the document properties option.
+  <div>Currently, we have restricted the life of each SAS link to an hour for security reasons. This can be removed/updated as per the client's request. You can generate a new link by asking the same query again in the AI-agent. You can also change this redirection URL to a fixed URL using the document properties option.
  
 ​
 ![](https://camo.githubusercontent.com/f1d4e073603851fadf4777a41e25d88d9412a1856666b67f8f0738b5b5d1daea/68747470733a2f2f63646e2e79656c6c6f776d657373656e6765722e636f6d2f524c333558336d436f7a5038313631333534343436393233362e706e67) 
@@ -300,10 +300,10 @@ You can also do this in the carousal by [creating your own custom/dynamic object
 </details>
 
 <details>
- <summary>How do I ensure that the bot shows only relevant documents?
+ <summary>How do I ensure that the AI-agent shows only relevant documents?
 </summary>
  <div>
-  <div>There is no specific logic added to detect irrelevance right now. However, we do provide a relevance score with each search result that the bot developer can use. The model returns all documents which contain even a few keywords in the query in decreasing order of relevance. The bot developer can choose to show only Top N (e.g. Top 5) or Top 25% of the results based on relevance score.
+  <div>There is no specific logic added to detect irrelevance right now. However, we do provide a relevance score with each search result that the AI-agent developer can use. The model returns all documents which contain even a few keywords in the query in decreasing order of relevance. The AI-agent developer can choose to show only Top N (e.g. Top 5) or Top 25% of the results based on relevance score.
 ​​
 </div>
   <br/>
@@ -363,7 +363,7 @@ if answers are in a tabular structure, you can try adding the role of the user i
  <summary>Why my documents are taking so long for indexing, is it stuck?
 </summary>
  <div>
-  <div>Doc cog uses queue base indexing flow which has a common queue among all the bots. A pending/queued status represents doc is still in the queue and waiting for indexing while the indexing status represents the doc is being indexed.
+  <div>Doc cog uses queue base indexing flow which has a common queue among all the AI-agents. A pending/queued status represents doc is still in the queue and waiting for indexing while the indexing status represents the doc is being indexed.
 ​
 </div>
   <br/>
@@ -375,7 +375,7 @@ if answers are in a tabular structure, you can try adding the role of the user i
  <summary>Is there any limit on documents uploading?
 </summary>
  <div>
-  <div>Yes, for a Tier 0 (Free Tier) bot there is a limit of a max of 50 total pages or a max of 5 documents and Tier 1 bot has a max 200 documents limit. Tiers other than T0 can have max of 500 pages per document.
+  <div>Yes, for a Tier 0 (Free Tier) AI-agent there is a limit of a max of 50 total pages or a max of 5 documents and Tier 1 AI-agent has a max 200 documents limit. Tiers other than T0 can have max of 500 pages per document.
 ​
 </div>
   <br/>
@@ -394,10 +394,10 @@ if answers are in a tabular structure, you can try adding the role of the user i
 </details>
 
 <details>
- <summary>Why my bot is showing Journey Suggestions (Did you mean) instead of Doc cog results in fallback?
+ <summary>Why my AI-agent is showing Journey Suggestions (Did you mean) instead of Doc cog results in fallback?
 </summary>
  <div>
-  <div>A bot has a specific priority order of actions in the fallback case.
+  <div>A AI-agent has a specific priority order of actions in the fallback case.
 ​
 Order: Journey -> FAQs -> Journey suggestion -> Doc cog -> Other fallback.
 ​
@@ -521,12 +521,12 @@ To extract specific date values, you can use the following syntax:
 ### Journey(flow)
 
 <details>
- <summary>Can I retrieve journey data outside the bot?
+ <summary>Can I retrieve journey data outside the AI-agent?
 </summary>
  <div>
   <div>The accessibility of journey data depends on the type of variable:<br/>
  <br/> <b>Journey Variables:</b> These variables are limited to the flow in which they are created and can only be accessed within that specific flow.<br/>
- <br/> <b>Global Variables:</b> Unlike journey variables, global variables are accessible across all flows within your bot, allowing for broader usage and integration of journey data.<br/>
+ <br/> <b>Global Variables:</b> Unlike journey variables, global variables are accessible across all flows within your AI-agent, allowing for broader usage and integration of journey data.<br/>
 <br/><b>User Properties:</b> User properties are user variables that can be accessed in Automation, Engage, and User 360.<br/>
 <br/>You can use the appropriate variable type based on your specific use case.<br/>
 ​
@@ -536,7 +536,7 @@ To extract specific date values, you can use the following syntax:
 </details>
 
 <details>
- <summary>How to open a website in a bot conversation?
+ <summary>How to open a website in a AI-agent conversation?
 </summary>
  <div>
   <div>Add a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text">text node</a> to the flow and paste your website URL in it.
@@ -547,10 +547,10 @@ To extract specific date values, you can use the following syntax:
 </details>
 
 <details>
- <summary>How do I link one flow to another flow for a bot?
+ <summary>How do I link one flow to another flow for a AI-agent?
 </summary>
  <div>
-  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow">Execute Flow</a> to link  another flow to a bot.
+  <div>Use <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow">Execute Flow</a> to link  another flow to a AI-agent.
 ​
 </div>
   <br/>
@@ -558,10 +558,10 @@ To extract specific date values, you can use the following syntax:
 </details>
 
 <details>
- <summary>How to export/clone a journey to another bot?
+ <summary>How to export/clone a journey to another AI-agent?
 </summary>
 
- <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow#-1-export-bot-template">Export the template of that journey</a> and <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow#14-view-approved-template-in-marketplace"> import it </a> to the bot of your preference.
+ <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow#-1-export-bot-template">Export the template of that journey</a> and <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/exportflow#14-view-approved-template-in-marketplace"> import it </a> to the AI-agent of your preference.
 
  <div>
   <div>
@@ -585,10 +585,10 @@ To extract specific date values, you can use the following syntax:
 </details>
 
 <details>
- <summary>What does it mean when the bot is in a critical status? Does it affect the bot's operations or performance?
+ <summary>What does it mean when the AI-agent is in a critical status? Does it affect the AI-agent's operations or performance?
 </summary>
  <div>
-  <div>When the bot is in a critical status, it means that the health check configured for the bot is failing. However, this does not have any impact on the bot's operations or performance.
+  <div>When the AI-agent is in a critical status, it means that the health check configured for the AI-agent is failing. However, this does not have any impact on the AI-agent's operations or performance.
 You can execute the health check and update the test case to bring the status back to normal.
 ​
 </div>
@@ -602,7 +602,7 @@ You can execute the health check and update the test case to bring the status ba
  <summary>How can we tailor the responses retrieved from the knowledge base? For instance, by restricting the response size, presenting answers in sequential steps when appropriate, and interpreting tables and flowcharts.
 </summary>
 
-You can customize KB responses by following the steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings#modify-auto-generated-bot-answers). To present the steps in sequential manner, [set the bot's tone to Instruction based](https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings#set-tone-for-your-bot-responses). KB interprets data only from websites and not from tables and flowcharts directly. However, you can provide the website URL containing the tables, flowcharts, and supporting data.
+You can customize KB responses by following the steps mentioned [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings#modify-auto-generated-bot-answers). To present the steps in sequential manner, [set the AI-agent's tone to Instruction based](https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings#set-tone-for-your-bot-responses). KB interprets data only from websites and not from tables and flowcharts directly. However, you can provide the website URL containing the tables, flowcharts, and supporting data.
 
  <div>
   <div>
@@ -626,7 +626,7 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
 
 
 <details>
- <summary> While using Doc cog (document search) the bot response generates irrelevent links, how to resolve it? 
+ <summary> While using Doc cog (document search) the AI-agent response generates irrelevent links, how to resolve it? 
 </summary>
  <div>
   <div> 
@@ -660,11 +660,11 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
 </details>
 
 <details>
- <summary>Why does the bot display incomplete information from the website?
+ <summary>Why does the AI-agent display incomplete information from the website?
 </summary>
  <div>
   <div> 
-      This could happen if you edit or rephrase the query to get the context of the conversation, which can sometimes result in incomplete information being displayed by the bot.
+      This could happen if you edit or rephrase the query to get the context of the conversation, which can sometimes result in incomplete information being displayed by the AI-agent.
 </div>
   <br/>
    </div>

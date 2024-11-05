@@ -3,18 +3,18 @@ title : How user records are created through conversations & unified in User 360
 sidebar_label : How are user records created from conversations & unified in User 360
 ---
 
-This article provides complete information on how user records are automatically created in User 360 and unified based on bot conversations.
+This article provides complete information on how user records are automatically created in User 360 and unified based on AI-agent conversations.
 
-Bot users are classified into the following categories:
+AI-agent users are classified into the following categories:
 
-1. Unidentified user - A user whose userId is not known or captured by the bot yet.
-2. Identified user - A user whose userId has been captured by the bot.
+1. Unidentified user - A user whose userId is not known or captured by the AI-agent yet.
+2. Identified user - A user whose userId has been captured by the AI-agent.
 
 
 
-## How are unidentified records auto-created from bot conversations?
+## How are unidentified records auto-created from AI-agent conversations?
 
-When a user starts a conversation with the bot and starts capturing user properties, it automatically creates a new unidentified record in User 360. A record for which the userId is unknown is considered as an unidentified record. The ongoing session is always mapped to the record in user 360 and user properties captured will be stored in that record.
+When a user starts a conversation with the AI-agent and starts capturing user properties, it automatically creates a new unidentified record in User 360. A record for which the userId is unknown is considered as an unidentified record. The ongoing session is always mapped to the record in user 360 and user properties captured will be stored in that record.
 
    ![](https://imgur.com/7GncCzx.png)
 
@@ -34,9 +34,9 @@ The following table summarizes the behavior of userId capturing in User 360.
 
 ## What happens when a userId is captured for the first time?
 
-In a bot conversation, a user is identified through the userId and can be captured through [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) nodes. A userId is a unique indetifier such as mobile number, email address, or any other identifier such as driving livence number. 
+In a AI-agent conversation, a user is identified through the userId and can be captured through [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) or [Variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) nodes. A userId is a unique indetifier such as mobile number, email address, or any other identifier such as driving livence number. 
 
-For more details, see [How to capture userId in bot conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
+For more details, see [How to capture userId in AI-agent conversations](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow).
 
 The following sections explain how the current record is affected based on the provided userId.
 
@@ -101,18 +101,18 @@ These are the steps that take place:
 
 ## What happens when the userId is recaptured?
 
-There are situations where a userId may be recaptured. This can occur when a user logs out and then logs back in, or when the user interacts with the bot using a different userId.
+There are situations where a userId may be recaptured. This can occur when a user logs out and then logs back in, or when the user interacts with the AI-agent using a different userId.
 
 ### When the recaptured userId does not exist
 
-The chatbot will create a new record with the provided userId. This means that the chatbot will treat the user as a new user and will not have access to any previous information or conversation history associated with that user. However, the chatbot can still capture new information about the user's preferences and behavior going forward, which can be used to personalize future interactions.
+The AI-agent will create a new record with the provided userId. This means that the AI-agent will treat the user as a new user and will not have access to any previous information or conversation history associated with that user. However, the AI-agent can still capture new information about the user's preferences and behavior going forward, which can be used to personalize future interactions.
 
    ![](https://i.imgur.com/pPxBuhn.png)
 
 
 ### When the recaptured userId already exists
 
-When a user provides a new userId that already exists in User 360, the chatbot will switch the current record mapping to the respective record that already exists. It uses information associated with that userId to personalize conversations.
+When a user provides a new userId that already exists in User 360, the AI-agent will switch the current record mapping to the respective record that already exists. It uses information associated with that userId to personalize conversations.
 
    ![](https://i.imgur.com/Ew2Efrb.png)
 
