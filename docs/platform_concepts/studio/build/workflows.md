@@ -29,7 +29,15 @@ Currently, Workflows are supported only for Helpdesk use cases.
 |  <ul><li> Flows are created to take input from customers, interpret it, and respond with an appropriate output to resolve customer queries in AI-agent conversations.  </li><li>  Flows involve connecting different triggers and actions to understand customer inputs and provide outputs.   </li></ul>  Check out [detailed documentation on flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview)  | <ul><li> Workflows are simplified, **static flows** that run automatically when specific actions or events occur. </li><li> They operate in the **background** and do not require direct interaction with the customer. </li><li> No need to manually enable specific **events**; the selected workflow handles everything automatically. </li><li> The **context** of a workflow lasts only for the selected period and does not extend beyond that. </li> <li> Workflows enhance the AI-agent's functionality by performing tasks such as calling functions, executing APIs, and conducting database operations.</li><li>Workflows can be linked to specific categories and invoked as needed within a conversation.  </li></ul> |
 
 
+
+:::note
+Enhance your understanding of workflows by viewing our [step-by-step video guide here](https://www.youtube.com/watch?v=QMsWjBu2ltU).
+
+:::
+
+
 ---------
+
 
 ## Set up workflows 
 
@@ -297,14 +305,6 @@ You connect the start trigger (first node) to other nodes such as Action, Logic,
 | **Send Event**               | Send an event with this node.                                                                                              |
 | **Sync Database**            | Update databases from external sources with this node.                                                                     |
 | **User Event**               | Trigger a user event for an existing event key with the set delay.              |
-
-
-<!-- 
-
-**Raise New Ticket**    Create a new support ticket to report an issue or request assistance.        
-**Set Language**          Change the bot language to any of the configured languages using this node.  
-**Update Status**            Change the current status of the live chat, such as moving it from Open to In Progress or other relevant statuses based on the workflow. 
---> 
 
 
 :::info
