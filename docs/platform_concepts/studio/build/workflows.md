@@ -30,8 +30,10 @@ Currently, Workflows are supported only for Helpdesk use cases.
 
 
 
-:::note
-Enhance your understanding of workflows by viewing our [step-by-step video guide here](https://www.youtube.com/watch?v=QMsWjBu2ltU).
+:::info
+Enhance your understanding of workflows by viewing our step-by-step video guide here
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QMsWjBu2ltU?si=mkvGZrM17z-iwoR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>.
 
 :::
 
