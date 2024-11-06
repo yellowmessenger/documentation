@@ -9,7 +9,7 @@ keywords : [bot messages, active chats, queued chats, open chat, missed chats]
 
 -----
 
-The Chats section covers all the aspects of synchronous real-time conversations between a bot user and the agent. It is an omnichannel dashboard that supports chats on more than 15 different [channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).  
+The Chats section covers all the aspects of synchronous real-time conversations between an AI-agent user and the agent. It is an omnichannel dashboard that supports chats on more than 15 different [channels](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview).  
 - Any incoming live chat (from any channel) will be assigned to a particular inbox agent only when the inbox agent is **Available**.
 
 > Know more on default agent statuses [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentstatuses).     
@@ -45,7 +45,7 @@ The chat section screen is divided into 3 parts:
 
 ## 1. Types of chats
 
-When a live chat is raised by the bot user (requesting to connect with an agent), that chat will be displayed under this section. 
+When a live chat is raised by the AI-agent user (requesting to connect with an agent), that chat will be displayed under this section. 
 
 :::note
 - Only the **My chats** tab gets updated in real-time as and when the conversation occurs. Other chats are not updated unless the page is refreshed.
@@ -139,7 +139,7 @@ There are multiple ways in which a chat can move under missed chats. For example
 3. When Chat queue is not enabled in the Inbox setting, the incoming live chat that must be available under Queued chats moves into missed chats. 
 4. When Offline handling is not enabled in the Inbox setting, the incoming live chat that must be available under Open chats moves into missed chats. 
 
-> The chats do not move into missed chats for cases that are not controllable (like the bot server is down, technical error, bot shut down).
+> The chats do not move into missed chats for cases that are not controllable (like the AI-agent server is down, technical error, AI-agent shut down).
 
 :::note
 [Here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/debugchecklist#understand-missed-chat-scenarios) are some additional reasons why chats can be missed.
@@ -149,10 +149,10 @@ There are multiple ways in which a chat can move under missed chats. For example
 
 Bot messages are not assigned to any agents. Admins can use this tab to see the conversation flows. 
 
-All the conversations that happen on the bot will be visible under bot messages (for admins and agents). This is an entire conversation that the user went through, irrespective of the live chat request raised. 
-The purpose of this section is to monitor the bot responses (bot messages). If the conversation is not going as expected, agents can take the control over from the bot and converse with the user. 
+All the conversations that happen on the AI-agent will be visible under bot messages (for admins and agents). This is an entire conversation that the user went through, irrespective of the live chat request raised. 
+The purpose of this section is to monitor the AI-agent responses (bot messages). If the conversation is not going as expected, agents can take the control over from the AI-agent and converse with the user. 
 
-> - For advance functionalities, you can see the [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs) in **Automation**. For example: To check if the bot is responding correctly, you can check the conversation logs.             
+> - For advance functionalities, you can see the [Conversation logs](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs) in **Automation**. For example: To check if the AI-agent is responding correctly, you can check the conversation logs.             
 > - If you have only Inbox agents/admins access consult your bot admin for Automation access. 
 
 

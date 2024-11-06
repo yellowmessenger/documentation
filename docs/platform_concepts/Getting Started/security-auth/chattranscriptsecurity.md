@@ -12,17 +12,17 @@ This feature is available on the app and cloud platform.
 - Currently, only IPV4 addresses are supported for whitelisting.
 :::
 
-Chat transcripts are vital records of interactions between users and chatbots, whether they are [conversation logs](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs) or [chats with agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chattranscript). By enabling IP whitelisting, the platform allows access to the conversations only from specified IP addresses.
+Chat transcripts are vital records of interactions between users and AI-agent, whether they are [conversation logs](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs) or [chats with agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chattranscript). By enabling IP whitelisting, the platform allows access to the conversations only from specified IP addresses.
 
 Chat transcript visibility for different permissions: 
 
-- **Users with Bot Access**: If the user already has access to the bot, they can seamlessly view the chat transcript links without the need to whitelist their IP address. However, users must have an active session (logged into the platform) to access the chat transcript links. If not logged in, they will be prompted to log in before viewing the links.
+- **Users with AI-agent Access**: If the user already has access to the AI-agent, they can seamlessly view the chat transcript links without the need to whitelist their IP address. However, users must have an active session (logged into the platform) to access the chat transcript links. If not logged in, they will be prompted to log in before viewing the links.
 
-- **Users without Bot Access**: Users who do not have access to the bot can access the chat transcript links only by whitelisting their IP address.
+- **Users without AI-agent Access**: Users who do not have access to the AI-agent can access the chat transcript links only by whitelisting their IP address.
 
     ![](https://imgur.com/WwmmYyn.png)
 
-- **Users without bot access and without whitelisted IP addresses**: The chat transcript link will not be accessable.
+- **Users without AI-agent access and without whitelisted IP addresses**: The chat transcript link will not be accessable.
 
     ![](https://imgur.com/c6T900o.png)
 

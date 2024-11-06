@@ -5,9 +5,9 @@ sidebar_label: YM authentication
 
 ## YM authentication overview
 
-Yellow.ai Messenger (YM) authentication facilitates the seamless synchronization of previous chat conversations across different devices for authenticated users. Businesses using the yellow.ai bot can configure YM authentication tokens. 
+Yellow.ai Messenger (YM) authentication facilitates the seamless synchronization of previous chat conversations across different devices for authenticated users. Businesses using the yellow.ai's AI-agent can configure YM authentication tokens. 
 
-This enables users to access and review their historical conversations, ensuring a consistent chat experience. Users can seamlessly pick up where they left off, regardless of the device used to log into the bot.
+This enables users to access and review their historical conversations, ensuring a consistent chat experience. Users can seamlessly pick up where they left off, regardless of the device used to log into the AI-agent.
 
 
 
@@ -51,9 +51,9 @@ This guide outlines how organizations can configure YM authentication, enabling 
 **YM authentication workflow**: 
 
 1. Your backend initiates an API call to Yellow.ai to **encrypt** the YM authentication token.
-2. The frontend UI uses the encrypted data (payload) to **load** the customized Yellow bot. 
+2. The frontend UI uses the encrypted data (payload) to **load** the customized Yellow AI-agent. 
 3. Yellow's backend **validates** the passed token: 
-    - If identified and validation is **successful**, the user's previous conversation is loaded onto the bot.
+    - If identified and validation is **successful**, the user's previous conversation is loaded onto the AI-agent.
     - If validation **fails**, an event is sent to your backend, requesting a new token creation. Your platform generates a new token for the user, serving as a new token for the chat, and tracks the new conversation.
 
 Steps to configure YM authentication token are mentioned below: 
@@ -76,7 +76,7 @@ curl --location --request POST 'https://{{bot-region}}.cloud.yellow.ai/api/plugi
 Parameter | Datatype | Description
 --------- | -------- | -----------
 `{{ymAuthenticationToken}}` | String | This is the unique identifier (string value that changes for each user and each log-in) assigned to users for validation |
-| `x-api-key` | String | This is the access key. Generate a new API key with **Developer role**, follow [these steps](https://docs.yellow.ai/api#generate-api-keys) on your respective bot |
+| `x-api-key` | String | This is the access key. Generate a new API key with **Developer role**, follow [these steps](https://docs.yellow.ai/api#generate-api-keys) on your respective AI-agent |
 | `{{botId}}` | String | This is your bot ID. It can be obtained by logging into the Yellow platform and copying it from the bot URL. Refer to [this guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/publish-env#finding-your-bot-id) to know how |
 
 **Expected response**: 
@@ -104,9 +104,9 @@ ymAuthSessionDurationInSec : 1800 (30min default)
 
 Parameter | Datatype | Description
 --------- | -------- | -----------
-`ymAuthSessionDurationInSec` | Numeric | This defines the expiry of a token. Each time a token expires, an event is sent to your platform to generate a new token through the API, and the encrypted payload can be sent. This case must be handled on your backend to reload the bot with the fresh token. |
+`ymAuthSessionDurationInSec` | Numeric | This defines the expiry of a token. Each time a token expires, an event is sent to your platform to generate a new token through the API, and the encrypted payload can be sent. This case must be handled on your backend to reload the AI-agent with the fresh token. |
 
-### Step 2: Include the encrypted token in the bot script
+### Step 2: Include the encrypted token in the AI-agent script
 
 Pass the encrypted token in `ymAuthenticationToken` as shown below: 
 
@@ -123,19 +123,19 @@ window.ymConfig = {
 
 #### Success 
 
-The YM authentication token is validated, and the chat is successfully loaded. Previous chats can be accessed on the bot.
+The YM authentication token is validated, and the chat is successfully loaded. Previous chats can be accessed on the AI-agent.
 
 
 #### Failure 
 
 Validation fails when the token expires due to customer inactivity. In such situations, a function must be called assigning the `refreshUI` value. Follow these steps:
 
-1. Add an **event listener** on your platform to identify if the token gets expired in between the conversation of the chat bot. Use:
+1. Add an **event listener** on your platform to identify if the token gets expired in between the conversation of the AI-agent. Use:
     - **Event name**: ym-revalidate-token
-    - **Data**: currentToken, refreshUI (true/false value stating if the bot is currently in open state)
+    - **Data**: currentToken, refreshUI (true/false value stating if the AI-agent is currently in open state)
 2. Obtain a **new encrypted token** by calling the encrypt API (cURL) mentioned above in [Step #1](#i1).
-3. Pass the newly generated encryption token to the bot by calling the below **function**.
-    - `refreshUI`  flag must be passed as false if you want the bot to remain open and show the loading spinner while the input box is disabled. If it is not false, the bot closes and opens again, which might confuse your customer.
+3. Pass the newly generated encryption token to the AI-agent by calling the below **function**.
+    - `refreshUI`  flag must be passed as false if you want the AI-agent to remain open and show the loading spinner while the input box is disabled. If it is not false, the AI-agent closes and opens again, which might confuse your customer.
     ```
     window.YellowMessengerPlugin.revalidateToken(token: string, refreshUI = true)
     ```

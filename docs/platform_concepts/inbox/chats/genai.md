@@ -15,10 +15,10 @@ The **Inbox Live Chat** screen provides agents with powerful generative AI featu
 
 ## Summarize chat conversation 
 
-The **Summarize chat** AI feature provides a summary of the entire conversation between a customer and a bot or agent. This summary can be used to analyze the quality of support, customer satisfaction, trends, and more.
+The **Summarize chat** AI feature provides a summary of the entire conversation between a customer and an AI-agent. This summary can be used to analyze the quality of support, customer satisfaction, trends, and more.
 
 **Use-cases:** 
-- Lengthy conversations may pose difficulties for agents to keep track of. This feature saves time by providing a summary of the user's chat with the bot.
+- Lengthy conversations may pose difficulties for agents to keep track of. This feature saves time by providing a summary of the user's chat with the AI-agent.
 - Agents and admins can evaluate the effectiveness of their responses to customer inquiries.
 - Summarized chats can be utilized as a reference point for agents in the future if they need to refer to a previous conversation.
 

@@ -197,7 +197,7 @@ Share the following information with the support team at support@yellow.ai:
 
 To know what user details are retrieved by the SSO, make an API request to the GET `/userinfo` API. 
 
-The JSON response includes the following data - `email`, `roleAttribute`, `given_name`, and `roleAttribute`. If a user is assigned to multiple roles across various bots, you will observe the list of role attributes along with their associated bots presented as an array within the `roleAttribute` field, as demonstrated in the following response.
+The JSON response includes the following data - `email`, `roleAttribute`, `given_name`, and `roleAttribute`. If a user is assigned to multiple roles across various AI-agents, you will observe the list of role attributes along with their associated bots presented as an array within the `roleAttribute` field, as demonstrated in the following response.
 
 
 ```json
@@ -211,5 +211,5 @@ The JSON response includes the following data - `email`, `roleAttribute`, `given
 
 
 :::note
-Once OAuth role mapping is enabled, the role update UI (Bot setting > Access control) on the yellow.ai platform will be disabled. Roles can only be updated from the identity provider, and users will be assigned updated roles at the time of login.
+Once OAuth role mapping is enabled, the role update UI (s setting > Access control) on the yellow.ai platform will be disabled. Roles can only be updated from the identity provider, and users will be assigned updated roles at the time of login.
 :::
