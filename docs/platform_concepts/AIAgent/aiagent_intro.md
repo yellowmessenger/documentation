@@ -57,6 +57,8 @@ To transition existing NLP bots to Agent AI, follow these steps:
 3. **Add descriptions to static flow triggers**: For any static flows, add clear descriptions in the triggers. Review and update trigger conditions to ensure they align with the dynamic nature of Agent AI.
 4. **Configure start and welcome messages on the Agent AI**: Update the start and welcome messages on the Agent AI interface.
 
+![AI agent gif](../Getting%20Started/img/cdp/AgentAiUpdated.gif)
+
 
 
 

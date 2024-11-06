@@ -69,3 +69,6 @@ These enhancements will bring a visible change across several key areas. Here’
 - **Draft functionalities inside email section**: Save and format drafts with all the new features.
 - **Sending email with email templates**: Use email templates enriched with new formatting capabilities for a more professional touch.
 
+![Inbox Tickets Editor Update](../Getting%20Started/img/cdp/InboxEditorupdated.gif)
+
+
