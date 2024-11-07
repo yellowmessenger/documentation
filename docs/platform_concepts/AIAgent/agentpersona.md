@@ -88,7 +88,7 @@ Click **+Add account** to configure a new LLM account and follow [these steps](h
 
 Choose from the enabled models to select which LLM the AI agent will use.
 
-This cab be powered by third-party LLMs such as GPT-3.5, GPT-4, Claude Opus, Google Gemini, Anthropic, and other models to generate customized responses but by default, in-house model is used to generate responses.
+This can be powered by third-party LLMs such as GPT-3.5, GPT-4, Claude Opus, Google Gemini, Anthropic, and other models to generate customized responses but by default, in-house model is used to generate responses.
 
 ### Conversation Memory
 

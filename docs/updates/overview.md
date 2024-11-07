@@ -9,6 +9,42 @@ featured: true
 
 
 
+## Reintroducing Workflows for Helpdesk Automation
+
+
+Support agents/admins spend significant time on repetitive, manual tasks that take them away from focusing on customer issues. Now, you can automate these time-consuming routines easily with our non conversational workflows builder. Get ready to simplify support workflows in minutes, with no technical expertise required.
+**:sparkles: What’s New?**
+**Simplified Event Handling**
+Say goodbye to manually searching for the right event names, activating/deactivating them, using functions & dot notation to extract variables
+**Now**: There are no inbox events under Events Hub. We’ve pre-built nodes for major usecases, and auto-generated variables for event data that you can easily use in the new Conditions node.
+
+
+**Pre-Built Inbox Action Nodes**
+No need to search and configure APIs to perform core inbox tasks!
+**Now**: We’ve introduced ready-made action nodes for the most frequent tasks, like updating ticket status, transferring tickets, updating tags, custom fields, and more.
+
+**New Time-Based Triggers**
+Automate actions based on time conditions, unlocking scenarios that weren’t possible before.
+**Now**: Set workflows to trigger after specific intervals, such as “Queued for X mins,” “Unresolved for X days,” or “Unassigned for X hours” etc.
+
+
+**Upcoming changes:**
+
+We’re just getting started! The first phase was to simplify support desk workflows. Here’s what’s on the roadmap to make workflows even more powerful:
+* Expanding to More Use Cases: Soon, you’ll have a new experience of creating workflows involving CDP events, scheduled events, and more.
+* Intelligent Nodes for Smarter Workflows: We’re working on adding advanced, intelligent nodes to unlock more complex automation capabilities.
+
+With these upgrades, our Workflow Builder is evolving into a versatile tool for automating the entire customer support journey.
+This feature is available for all bots running on the latest version of our executor. Give it a try, and let us know your feedback! Rest assured, all existing workflows built using inbox events will continue to function as expected.
+
+> **[Watch demo video](https://www.youtube.com/watch?v=QMsWjBu2ltU)**
+
+
+> **[Read documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/workflows)**
+
+
+---------
+
 ## Transform Bot Conversational Excellence With Our Gen AI-Powered Agent AI
 
 The Agent AI module is a game-changer, empowering you to create sophisticated Gen AI-powered bots in just minutes. Even without prior AI experience, you can effortlessly build bots that effectively address customer queries by simply describing your desired bot's behavior in plain language.

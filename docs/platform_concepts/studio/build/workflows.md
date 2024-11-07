@@ -21,6 +21,13 @@ Currently, Workflows are supported only for Helpdesk use cases.
 * Add the journey name as a tag to a chat if the customer has gone through a specific journey before raising the chat, aiding both agent reference and support analysis.
 
 
+### Workflows video guide
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QMsWjBu2ltU?si=mkvGZrM17z-iwoR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>.
+
+
+
 ### Flows vs Workflows 
 
 
@@ -29,13 +36,6 @@ Currently, Workflows are supported only for Helpdesk use cases.
 |  <ul><li> Flows are created to take input from customers, interpret it, and respond with an appropriate output to resolve customer queries in AI-agent conversations.  </li><li>  Flows involve connecting different triggers and actions to understand customer inputs and provide outputs.   </li></ul>  Check out [detailed documentation on flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview)  | <ul><li> Workflows are simplified, **static flows** that run automatically when specific actions or events occur. </li><li> They operate in the **background** and do not require direct interaction with the customer. </li><li> No need to manually enable specific **events**; the selected workflow handles everything automatically. </li><li> The **context** of a workflow lasts only for the selected period and does not extend beyond that. </li> <li> Workflows enhance the AI-agent's functionality by performing tasks such as calling functions, executing APIs, and conducting database operations.</li><li>Workflows can be linked to specific categories and invoked as needed within a conversation.  </li></ul> |
 
 
-
-:::info
-Enhance your understanding of workflows by viewing our step-by-step video guide here
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QMsWjBu2ltU?si=mkvGZrM17z-iwoR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>.
-
-:::
 
 
 ---------
