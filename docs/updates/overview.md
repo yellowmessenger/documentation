@@ -1,5 +1,5 @@
 ---
-title: What's new in the Cloud Platform (Sep & Oct)
+title: What's new in the Cloud Platform
 sidebar_label: Latest releases
 featured: true
 ---
@@ -9,43 +9,53 @@ featured: true
 
 
 
-## Reintroducing Workflows for Helpdesk Automation
 
 
-Support agents/admins spend significant time on repetitive, manual tasks that take them away from focusing on customer issues. Now, you can automate these time-consuming routines easily with our non conversational workflows builder. Get ready to simplify support workflows in minutes, with no technical expertise required.
-**:sparkles: What’s New?**
-**Simplified Event Handling**
-Say goodbye to manually searching for the right event names, activating/deactivating them, using functions & dot notation to extract variables
-**Now**: There are no inbox events under Events Hub. We’ve pre-built nodes for major usecases, and auto-generated variables for event data that you can easily use in the new Conditions node.
+## Boost Support Efficiency with Automated Workflows
+
+Reduce repetitive tasks and focus on what matters – your customers. Here's how the new Workflows simplify your support:
+
+* **Effortless Automation:** Build workflows in minutes, no coding required.
+* **Pre-built Nodes:** Automate common tasks like ticket updates and transfers with pre-made actions.
+* **Simplified Event Handling:** Easy-to-use nodes for common events and auto-generated variables.
+* **New Time Triggers:** Automate actions based on time, like "Unresolved for X days" or "Queued for X minutes."
+
+**Coming Soon:**
+
+* Expand automation to encompass CDP events and more.
+* Introduce intelligent nodes for complex scenarios.
 
 
-**Pre-Built Inbox Action Nodes**
-No need to search and configure APIs to perform core inbox tasks!
-**Now**: We’ve introduced ready-made action nodes for the most frequent tasks, like updating ticket status, transferring tickets, updating tags, custom fields, and more.
 
-**New Time-Based Triggers**
-Automate actions based on time conditions, unlocking scenarios that weren’t possible before.
-**Now**: Set workflows to trigger after specific intervals, such as “Queued for X mins,” “Unresolved for X days,” or “Unassigned for X hours” etc.
-
-
-**Upcoming changes:**
-
-We’re just getting started! The first phase was to simplify support desk workflows. Here’s what’s on the roadmap to make workflows even more powerful:
-* Expanding to More Use Cases: Soon, you’ll have a new experience of creating workflows involving CDP events, scheduled events, and more.
-* Intelligent Nodes for Smarter Workflows: We’re working on adding advanced, intelligent nodes to unlock more complex automation capabilities.
-
-With these upgrades, our Workflow Builder is evolving into a versatile tool for automating the entire customer support journey.
-This feature is available for all bots running on the latest version of our executor. Give it a try, and let us know your feedback! Rest assured, all existing workflows built using inbox events will continue to function as expected.
+**Note:** Existing workflows will continue to function normally.
 
 > **[Watch demo video](https://www.youtube.com/watch?v=QMsWjBu2ltU)**
 
 
-> **[Read documentation](https://docs.yellow.ai/docs/platform_concepts/studio/build/workflows)**
+> [Learn more about Workflows](https://docs.yellow.ai/docs/platform_concepts/studio/build/workflows#workflows-overview).
+
+----
+
+## Effective Rich Content Creation with Yellow Paper’s Powerful Features
 
 
----------
+Introducing Yellow Paper, Your Versatile Content Creation Tool
 
-## Transform Bot Conversational Excellence With Our Gen AI-Powered Agent AI
+We are excited to introduce Yellow Paper, a powerful and fully customizable rich text editor designed to streamline content creation and management. Built on Tiptap, Yellow Paper offers a perfect blend of flexibility, performance, and functionality, allowing you to create and manage rich content effortlessly.
+
+Yellow Paper is a reusable tool that can be used across different parts of our platform.  We've integrated it into our Inbox ticket editor, giving support agents the ability to create more dynamic and customizable responses.
+
+**Key features of Yellow paper**:
+
+**Rich text editing**: Take full control over text formatting, including bold, italics, lists, tables, links, inline images, and more.
+* **Customizable interface**: Tailor the editor to meet your needs by enabling or disabling features like image uploads, text alignment, and more, providing a personalized editing experience
+* **Media management**: Easily drag and drop images and files with an intuitive media upload system, all backed by customizable logic to fit your workflow.
+* **Efficient performance**: Enjoy smooth, responsive editing without slowdowns. Content updates are optimized for efficiency, ensuring a lag-free experience even with complex content.
+
+
+---
+
+## Transform Bot Conversational Excellence With Our Advanced Agent AI
 
 The Agent AI module is a game-changer, empowering you to create sophisticated Gen AI-powered bots in just minutes. Even without prior AI experience, you can effortlessly build bots that effectively address customer queries by simply describing your desired bot's behavior in plain language.
 
@@ -59,31 +69,4 @@ The Agent AI module is a game-changer, empowering you to create sophisticated Ge
 
 ---
 
-## Analyze 2.0: Unleashing Deeper Insights for Enhanced Automation
 
-Introducing Analyze 2.0, a significant upgrade designed to equip you with unparalleled insights for optimizing your automation strategies. This latest version empowers you to:
-
-* **Drill Down into Individual Topics**: Gain a granular understanding of specific topics and monitor their performance trends over time.
-* **Navigate Conversations with Ease**: Swiftly access conversations categorized as contained, not contained, resolved, unresolved, and more through convenient quick links.
-* **Refine Analysis with Granular Filters**: Apply filters to delve deeper into conversations and obtain a more precise breakdown based on your specific requirements.
-* **Correlate User Conversations and Key Metrics**: Explore individual user conversations in conjunction with relevant metrics for each chat, providing a comprehensive view of engagement and performance.
-
-In addition to these enhancements, we have refined **topic clustering algorithms** to **minimize duplicate topics** and further improved sentiment tagging for even more accurate results.
-
-[Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/topics)
-
----
-
-## Inbox Editor Enhancements (Going live soon)
-
-Experience a more powerful and versatile way to create messages with our enhanced inbox editor. We've added features to help you format, add media, and edit your content with ease.
-
-We've updated our inbox editor with new features:
-
-* **Formatting**: Strikethrough, code, links, fonts, alignment.
-* **Media**: Inline images, tables, code blocks.
-* **Editing**: Undo, redo, 25 MB file limit.
-
-Enjoy these improvements for better message creation!
-
-[Learn more](https://docs.yellow.ai/docs/platform_concepts/inbox/ticketeditor-upcomingchanges)
