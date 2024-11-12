@@ -62,7 +62,7 @@ To create an email ticket, follow the steps below:
 
 ## <a name="2"></a> Ticket body formatting options
 
-The following are some key features available in the Yellow.ai inbox tickets screen to enhance the user experience.
+The following are some key features available in the Yellow.ai inbox tickets screen to enhance the user experience (a.k.a Inbox/email text editor).
 
 | Feature                         | Description                                                                 |
 |----------------------------------|-----------------------------------------------------------------------------|
