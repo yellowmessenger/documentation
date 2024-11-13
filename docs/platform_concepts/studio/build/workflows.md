@@ -64,6 +64,17 @@ Choose how your workflow will start by selecting the event/trigger that will ini
 
 You can select a condition within a start trigger to simplify data extraction and eliminate the need for a separate condition node. Types of conditions can be chat properties such as Tag, Priority, or Custom fields or time. 
 
+
+Following Workflow can be triggered: 
+
+1. [When a new chat is created](#new-chat-created)
+2. [When a chat property is updated](#chat-property-updated)
+3. [When an internal note is added](#internal-note)
+4. [When chat status is updated](#chat-status-updated)
+5. [When chat is transferred](#chat-transferred)
+6. [When a customer is inactive in a chat](#customer-inactive)
+7. [When an agent is inactive in a chat](#agent-inactive)
+
 ![image](https://imgur.com/TdMUcx1.png)
 
 :::note
@@ -71,7 +82,7 @@ Workflows are triggered only when an Agent updates anything on the chat.
 :::
     
     
-#### 1. When a new chat is created 
+#### <a name="new-chat-created"></a> 1. When a new chat is created 
 
 Activates the workflow whenever a customer wants to connect to live agent.  Use this trigger to automate actions such as routing the chat to a team, sending an introductory message, or logging chat details.
 
@@ -86,7 +97,7 @@ Activates the workflow whenever a customer wants to connect to live agent.  Use 
 > Example: **When a new chat is created** and it is more than **1 hour** perform {next action}
 
 
-#### 2. When a chat property is updated
+#### <a name="chat-property-updated"></a>  2. When a chat property is updated
 
 Activates the workflow whenever a chat property (such as tags, custom fields, or priority) changes. Use this trigger to automate responses or updates based on these modifications.
 
@@ -116,7 +127,7 @@ Activates the workflow whenever a chat property (such as tags, custom fields, or
 
 
 
-#### 3. When an internal note is added
+ #### <a name="internal-note"></a> 3. When an internal note is added
 
 Activates the workflow whenever an internal note is added to a chat. Use this trigger to notify relevant team members or update records based on internal notes.
 
@@ -130,7 +141,7 @@ Activates the workflow whenever an internal note is added to a chat. Use this tr
 > Example: **When an internal note is added** and it contains **send reminder**, perform {next action}
 
 
-#### 4. When chat status is updated
+#### <a name="chat-status-updated"></a>  4. When chat status is updated
 
 Triggers the workflow when the status of a chat is changed. Use this to automate actions such as status-based notifications or follow-up tasks.
 
@@ -145,7 +156,7 @@ Triggers the workflow when the status of a chat is changed. Use this to automate
 > Example: **When chat status is updated** to **Open** and it has been **1 hour**, perform {next action}
 
 
-#### 5. When chat is transferred
+#### <a name="chat-transferred"></a> 5. When chat is transferred
 
 Activates the workflow when a chat is transferred to another agent or team. Use this to notify the customer, or new owner or update the chat records.
 
@@ -154,7 +165,7 @@ Activates the workflow when a chat is transferred to another agent or team. Use 
 > Example: **When chat is transferred**, perform {next action}
 
 
-#### 6. When a customer is inactive in a chat
+#### <a name="customer-inactive"></a> 6. When a customer is inactive in a chat
 
 Triggers the workflow if a customer becomes inactive or unresponsive in a chat when the last message is from the agent. Use this to send followups conversations or escalation to supervisors.
 
@@ -168,7 +179,7 @@ Triggers the workflow if a customer becomes inactive or unresponsive in a chat w
 > Example: **When a customer is inactive in a chat** for **3 hour**, perform {next action}
 
 
-#### 7. When an agent is inactive in a chat
+#### <a name="agent-inactive"></a> 7. When an agent is inactive in a chat
 
 Activates the workflow if an agent becomes inactive or unresponsive during a chat when the last message is from the customer. Use this trigger to alert supervisors, notify customers or reassign the chat.
 
