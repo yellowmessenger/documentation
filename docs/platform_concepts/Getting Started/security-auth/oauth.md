@@ -78,7 +78,7 @@ If your identity provider isn't configured in yellow.ai for SSO, share OAuth det
 
 ### Step 2: Share OAuth setup details
 
-Once you have set up your IDP, share the following details (fetched from your identity provider) with our support team at [support@yellow.ai]((mailto:support@yellow.ai) :
+Once you have set up your IDP, share the following details (fetched from your identity provider) with our support team at [support@yellow.ai]((mailto:support@yellow.ai):
 
 | Field   | Description |
 |---------| -----------|
