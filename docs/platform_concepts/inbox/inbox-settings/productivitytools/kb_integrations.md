@@ -1,6 +1,6 @@
 ---
 title: Integrate a chat bot or GTM to your knowledge base
-sidebar_label : Knowledgebase(integrations)
+sidebar_label : Support portal integrations
 ---
 
 
