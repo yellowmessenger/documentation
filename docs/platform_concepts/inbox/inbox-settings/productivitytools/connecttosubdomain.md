@@ -1,6 +1,6 @@
 ---
 title: Knowledge base subdomain and branding settings
-sidebar_label : Knowledgebase(domain & brand)
+sidebar_label : Domain & brand settings
 tags: [knowledgebase setting, KB settings, website banner settings, KB banner setting, connect knowledge (KB) to subdomain]
 ---
 

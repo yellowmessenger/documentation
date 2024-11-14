@@ -448,18 +448,48 @@ module.exports = {
       ],
     },
  
-// Knowledgebase
+// Knowledge (KB studio + KB inbox)
 
 {
   type: "category",
-  label: "Knowledgebase hub",
-  link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
+  label: "Knowledge hub",
+  //link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
   collapsed: true,
   items: [
-    "platform_concepts/studio/kb/ingestion",
-    // "platform_concepts/studio/kb/integrations",
-    "platform_concepts/studio/kb/confgure-response",
-    "platform_concepts/studio/kb/advancedsettings",
+
+    // KB STUDIO 
+
+  {
+    type: "category",
+    label: "Files",
+    link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
+    collapsed: true,
+    items: [
+      "platform_concepts/studio/kb/ingestion",
+      // "platform_concepts/studio/kb/integrations",
+      "platform_concepts/studio/kb/confgure-response",
+      "platform_concepts/studio/kb/advancedsettings",
+      
+    ],
+  },
+
+      // KB Inbox 
+
+      {
+        type: "category",
+        label: "Support portal",
+        link: {type: 'doc', id: 'platform_concepts/inbox/knowledge-base/kboverview'},
+        collapsed: true,
+        items: [
+         // "platform_concepts/inbox/knowledge-base/kboverview",
+         "platform_concepts/inbox/knowledge-base/createkb",
+          "platform_concepts/inbox/knowledge-base/edit-publish-articles",
+          "platform_concepts/inbox/knowledge-base/managingcategories",
+          "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
+          "platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations",
+
+               ],           
+     },
     
   ],
 },
@@ -613,21 +643,9 @@ module.exports = {
              },
           ],
         },
-        //7. knowledgebase 
-        {
-          type: "category",
-          label: "Knowledgebase",
-          link: {type: 'doc', id: 'platform_concepts/inbox/knowledge-base/kboverview'},
-          collapsed: true,
-          items: [
-           // "platform_concepts/inbox/knowledge-base/kboverview",
-           "platform_concepts/inbox/knowledge-base/createkb",
-            "platform_concepts/inbox/knowledge-base/edit-publish-articles",
-            "platform_concepts/inbox/knowledge-base/managingcategories",
-           // "platform_concepts/inbox/knowledge-base/int_chatbot",
-           // "platform_concepts/inbox/knowledge-base/int_gtm",
-                 ],           
-       },
+
+        //7. knowledgebase -- moved to different section 
+
 
 
         //8. settings 
@@ -647,8 +665,6 @@ module.exports = {
               //add realtive paths here
               "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
               "platform_concepts/inbox/inbox-settings/productivitytools/collaboration",
-              "platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain",
-              "platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations",
               "platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte",
                      ],
             },

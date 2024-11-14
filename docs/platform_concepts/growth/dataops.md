@@ -114,9 +114,18 @@ Data export failures are usually unrelated to the Yellow.AI platform and can occ
 ### GCS
 
 To set up Google Cloud Storage (GCS), the JSON keys are automatically downloaded when added to the service account. Alternatively, the IT admin can provide the bucket name, client email, and private key.
-For the proper configuration, ensure that the IAM (Identity and Access Management) role assigned to the Service Account has the `Create objects` permission. These roles can be found within `Cloud Storage`. When you hover over a specific role, the associated permissions will be displayed, helping you identify the one that grants the required access for obtaining the mentioned fields.
+For the proper configuration, ensure that the IAM (Identity and Access Management) role assigned to the Service Account has the `Create objects` and `storage.objects.delete` permission. These roles can be found within `Cloud Storage`. When you hover over a specific role, the associated permissions will be displayed, helping you identify the one that grants the required access for obtaining the mentioned fields.
 
 ![image](https://imgur.com/bMnuBUY.png)
+
+
+:::info
+
+To prevent job failures during retries, ensure the `storage.objects.delete` permission is granted in Google Cloud Storage. This permission allows deletion of partially uploaded files, which is necessary because failed jobs may retry and attempt to overwrite these files. Without `storage.objects.delete`, retries will fail due to lack of overwrite permissions.
+
+To resolve failures, delete the folder and then retry the job. For more details on assigning permissions, refer to [Using IAM Permissions](https://cloud.google.com/storage/docs/access-control/using-iam-permissions#console) and [Deleting Objects](https://cloud.google.com/storage/docs/deleting-objects#console).
+
+:::
 
 ### SFTP
 
