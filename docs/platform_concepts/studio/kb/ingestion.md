@@ -12,19 +12,18 @@ Easily upload your website URLs directly to our platform. When the AI-agent enco
 
 To upload your website URL, follow:
 
-1. Go to **KB** > click **+ Add URL**.
+1. Go to **Knowledge base** > **Files** > click **+ Add URL**.
     
-    ![](https://imgur.com/K5Hhd6a.png)
+    ![](https://i.imgur.com/TGDsX7Q.png)
 
 2. Enter the website URL and click **Save**.
 
-    ![image](https://imgur.com/aEP8jvo.png)
+    ![image](https://i.imgur.com/ghqSJ32.png)
 
 This handles all sub URLs automatically, to improve accuracy, add more URLs manually under **Upload documents**. 
 
 
 :::note
-
 Redirection links(URL) cannot be displayed within the summarized answer. 
 The best practice for LLMs is to avoid generating links in responses or summarizations. This precaution is taken because LLMs can potentially miss characters like "-", which could break the link or even direct users to unsafe pages, posing a security risk. Therefore, it's safer to refrain from including links altogether.
 :::
@@ -66,11 +65,11 @@ In the **Acronym** section, you can enter common phrases for specific terms. Thi
 
 To add acronyms, follow:
 
-1. Go to **Knowledge base** > **Acronym** > **+ Add new acronyms**.
+1. Go to **Knowledge base** > **Files** >  **Manage acronyms**.
 
-    ![](https://imgur.com/RdFyuT5.png)
+    ![](https://i.imgur.com/r0X2NZJ.png)
 
-2. In **Acronym name** enter the name of the specific term and in **Acronyms** enter the commonly used utterances for that term.
+2. Click **Add new acronym** > **+ Acronym name**, enter the name of the specific term and in **Acronyms** enter the commonly used utterances for that term.
 
    <img src="https://i.imgur.com/eZuSYgD.png" alt="drawing" width="50%"/>
 
@@ -84,9 +83,9 @@ To add acronyms, follow:
 
 You can provide info to users from a specific URL/sub-URLs, this enhances the response accuracy. To add multiple URLs, follow: 
 
-1. Go to **KB** > **Upload documents** > **Upload URL**.
+1. Go to **Knowledge base** > **Files** > **Upload documents** > **Upload URL**.
 
-    ![](https://i.imgur.com/fzq1FP8.png)
+    ![](https://i.imgur.com/qrA5Y7G.png)
 
 2. Enter the URL and click **Upload**. To add furthermore URLs, click **Add another URL**.
 
@@ -104,9 +103,9 @@ You can upload documents/folders from third-party applications (such as **AWS S3
 
 To upload folders/files from AWS S3 to cloud platform, follow:
 
-1. Go to **KB** > **Upload documents** > **AWS S3**.
+1. Go to **Knowledge base** > **Files** > **Upload documents** > **AWS S3**.
 
-    ![](https://i.imgur.com/aZp5qQZ.png)
+    ![](https://i.imgur.com/FD12kKp.png)
 
 2. Fill in the fields and click **Sync folders** select the folder from the chosen bucket to sync with.
 
@@ -118,9 +117,9 @@ To upload folders/files from AWS S3 to cloud platform, follow:
 
 To upload folders/files from Sharepoint to cloud platform, follow:
 
-1. Go to **KB** > **Upload documents** > **Sharepoint**.
+1. Go to **Knowledge base** > **Files** > **Upload documents** > **Sharepoint**.
 
-    ![](https://i.imgur.com/hRzbwGI.png)
+    ![](https://i.imgur.com/5FA02FR.png)
 
 2. Fill in the fields and select the folder from the chosen bucket to sync with.
 
@@ -144,7 +143,7 @@ For each uploaded document, you have the following customization options:
     - **Generate QnA**: Click to generate Q&A, acting similarly to FAQs. You can access this in **Train** > **Documents** > **QnA Extract**.
 - **Delete**: Remove the document.
 
-![](https://i.imgur.com/h3WIDiv.png)
+   ![](https://i.imgur.com/PbQoEsV.png)
 
 
 ----

@@ -18,7 +18,7 @@ You can input instructions on how you want the response to appear. These instruc
 
 To add a custom prompt:
 
-1. Go to **Knowledge base**, and navigate to the **Configuration** tab.
+1. Go to **Knowledge base** > **Configuration** tab.
 
    ![](https://imgur.com/1oCVSpp.png)
    

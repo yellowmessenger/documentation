@@ -1,6 +1,6 @@
 ---
-title: Add Multilingual support to your AI-agent
-sidebar_label: Add Multilingual support to your AI-agent
+title: Add multilingual support to your AI-agent
+sidebar_label: Add multilingual support to your AI-agent
 ---
 
 By adding multilingual support to your AI-agent, you can reach a broader audience and enhance customer engagement. Users can seamlessly switch languages during interactions, creating a more welcoming experience.
@@ -273,22 +273,38 @@ To manage the translations keys, follow these steps:
 
 ### Import multiple translations using a CSV file
 
-To add multiple translations at the same time, follow these steps:
+You can upload multiple translation messages to enable multilingual communication within the AI-agent.
 
-1. Create a CSV file with columns: **name** (key), **english_text**, and other configured languages like **hindi_text**, **kannada_text**, **tamil_text**.
-2. On the **Translations** page, click **Bulk Manage** > **Import**.
+##### Prerequisite
+   
+* Create a CSV file with columns: name (key), english_text, and other configured languages like hindi_text, kannada_text, tamil_text.
+
+:::info
+* Only CSV files are uploaded.
+* Column names should precisely match the text fields for each language, like language_text.
+:::
+
+To add multiple translations, follow these steps:
+
+1. On the **Translations** page, click **Bulk Manage** > **Import**.
 
    ![](https://imgur.com/U2bBDff.png)
 
 :::note
-**Bulk Manage** > **Export** is used to download the existing keys in your platform along with their translations.
+* You can use **Bulk manage** > **Export to download** existing keys and translations from your platform.
 :::
+
+2. Click **Upload file** and select the CSV file from your system. Below is the sample CSV file:
+
+   ![](https://imgur.com/C7qldDs.png)
 
 3. Click **Upload File** and select the CSV file from your local system to import the file. 
 
    <img  src="https://i.imgur.com/BIj6OLQ.png"  alt="drawing"  width="50%"/>
 
 4. Click **Import**. 
+
+* Your CSV file will now be uploaded, and translations will be added for each configured language.
 
 
     

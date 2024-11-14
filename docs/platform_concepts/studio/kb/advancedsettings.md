@@ -5,21 +5,21 @@ sidebar_label: KB additional configuration
 
 In addition to its core functionality, our KB offers a range of additional configurations designed to enhance your experience.
 
-## Use KB via. Document search node
+## Use KB via. Knowledge search node
 
-Utilize the Document Search node to offer responses from website URLs or documents uploaded on the Knowledgebase (KB) by following these steps:
+Utilize the Knowledge search node to offer responses from website URLs or documents uploaded on the Knowledgebase (KB) by following these steps:
 
 1. Upload your URL links/Documents to KB.
 2. Go to the **Build** section and configure a flow that utilizes doc-cog to generate answers.
     - Employ a Question node to pose a question and store the user query in a variable.
     - Use this variable (user query) as input for the Document Search node.
-3. In **Document search settings**, customize the response with the following options:
-    - **Number of records to display**
-    - **Max no. of results per document**
-    - **When results found**:  Enter text to be displayed when the Document search/KB node generates a response successfully 
-    - **When result not found**: Enter text to be displayed when the Document search/KB node does not respond
+3. In **Knowledge search settings**, customize the response with the following options:
+   * Input configuration
+   * Knowledge filter
+   * AI-agent response configuration
+For more information on Knowledge search settings, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-knowledge-search).    
 
-![image](https://imgur.com/cdjYx2R.png)
+![image](https://i.imgur.com/MbNYlpx.png)
 
 4. Test and deploy your AI-agent.
 
@@ -61,11 +61,11 @@ To edit, follow these steps:
 
 1. Go to the **Preview AI-agent** section of KB and test your flow by asking questions. Once the bot replies, click the **Edit** button.
 
-    ![](https://i.imgur.com/qawhyVM.png)
+    ![](https://i.imgur.com/ePNdvoQ.png)
 
 2. In **Your question**, edit the question you asked to test the AI-agent reponses. In **Bot's answer**, edit the response given by the AI-agent and click **Save**.
 
-    <img src="https://i.imgur.com/DdGHCkF.png" alt="drawing" width="50%"/>
+    <img src="https://i.imgur.com/qBgJQ4E.png" alt="drawing" width="50%"/>
 
 3. You will be prompted to visit the FAQ page to map more questions to the right answers. Click **Go to FAQ** and refer to this [doc](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) to know about the FAQ section in detail.
     
