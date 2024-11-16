@@ -60,13 +60,13 @@ Explore this flowchart depicting the AI-agent's navigation to knowledgebase.
 
 To create a AI-agent for your website, follow these steps:
 
-1. Go to **Knowledge base**.
+1. Go to **Knowledge base > Files**.
 
-   ![](https://imgur.com/1ceNXU5.png)
+   ![](https://i.imgur.com/1eglabo.png)
 
-2. Click **+ Add URL**. Add your website URL and click Save. 
+2. Click **+ Add URL**. Add your website URL and click **Save**. 
 
-    ![image](https://imgur.com/aEP8jvo.png)
+    ![image](https://i.imgur.com/ghqSJ32.png)
 
     > Configure this in Sandbox/Development environment. 
 
@@ -77,7 +77,7 @@ To create a AI-agent for your website, follow these steps:
 
 3. AI-agent is ready for testing on the right side pane. After testing the AI-agent, you can [Publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) it to Live/Production environment and [deploy](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/web-widget#deploy-chat-widget) it to your website. 
 
-    ![image](https://imgur.com/f0zqz3h.png)
+    ![image](https://i.imgur.com/8tH3JYf.png)
 
 :::note
 While building your website AI-agent, maintain simplicity by refraining from adding multiple intents and flows that could potentially impact the confidence of the AI-agent's responses.
