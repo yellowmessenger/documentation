@@ -3,6 +3,8 @@ title: Workflows
 sidebar_label: Workflows
 ---
 
+> Contact support@yellow.ai to enable workflows, if not available on the bot.
+
 
 ## Workflows overview 
 
@@ -548,7 +550,7 @@ Each workflow takes one minute to execute. Before executing each workflow, the s
 
 ## Disclaimer
 
-- Workflows are compatible only with bots running on the latest version of our Builder, the cloud executor. If you don't see the workflows section under Automation → Build, your bot may be on an older version. Please contact support@yellow.ai to verify and upgrade your bot as needed.
+- Workflows are compatible only with bots running on the latest version of our Builder, the cloud executor. If you don't see the workflows section under Automation → Build, your bot may be on an older version. Contact support@yellow.ai to verify and upgrade your bot as needed.
 - The time it takes for automations to run depends on the number of workflows, nodes, and tickets being processed in a bot.
 - Data referenced in workflows (e.g., Agents, Groups, Tags, Custom Fields) is tied to the environment you're working in—Sandbox, Staging/Development, or Production/Live. 
 - When publishing workflows from one environment to another (e.g., Staging to Production), ensure the data referenced (e.g., agents, tags, groups) exists in both environments.  
