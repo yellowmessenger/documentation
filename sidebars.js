@@ -1646,6 +1646,9 @@ module.exports = {
 
           //Agent AI 
 
+          // AI copilot doc - last doc 
+
+          "platform_concepts/aicopilot",
 
   ], 
   // Docs tab ends here
