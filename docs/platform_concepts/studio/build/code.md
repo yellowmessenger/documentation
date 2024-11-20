@@ -198,37 +198,8 @@ A message stating whether the user's email is verified or not, based on their st
 ---
 ## Complex use cases
 
-### 4. Limit error message display (Advanced)
 
-This function limits the display of a validation error message to a specified number of times. It uses a session variable to count the number of attempts a user has made and restricts the error messages after a certain limit.
-```javascript
-return new Promise((resolve) => {
-    let maxAttempts = 3; // Set the maximum allowed attempts for validation
-    
-    // Get the current number of attempts from the history or initialize it to 0
-    let attempts = context.history.getItem('validationAttempts') || 0;
-    
-    // Check if the current number of attempts is less than the maximum allowed
-    if (attempts < maxAttempts) { 
-        context.history.setItem('validationAttempts', attempts + 1); // Increment the attempt count and store it in the history
-        resolve("Please enter a valid email address."); // Return a message asking the user to enter a valid email address
-    } else {  
-        resolve("Error limit reached. Please refresh or contact support."); // If the maximum attempts are reached, return an error message
-    }
-});
-```
-**Explanation:**
-- **Initialize Maximum Attempts:** Set the `maxAttempts` variable to define the maximum number of times the error message can be displayed.
-- **Retrieve and Increment Attempts:** The `attempts` variable retrieves the current count of error attempts from the session history. If it's below the maximum, it increments the counter and updates the session.
-- **Conditional Message Display:** If the user has not exceeded the maximum attempts, it shows the error message. If the limit is reached, it provides a different message to indicate no more error messages will be displayed.
-
-**Output:**
-An error message prompting a valid input if under the limit, or a message to contact support or refresh if the limit is reached.
-
----
-
-
-### 5. Check category match (Advanced)
+### 4. Check category match (Advanced)
 
 The following code snippet checks if the text provided by the user matches with any of the categories listed in the data.
 
@@ -275,7 +246,7 @@ return new Promise(resolve => {
 "yes" or "no" based on whether the user text matches any category.
 
 ---
-### 6. Dynamically add authorization token (Advanced)
+### 5. Dynamically add authorization token (Advanced)
 
 
 This function retrieves the authorization token from an API response and prepares it for use in future requests.
@@ -304,7 +275,7 @@ return new Promise(resolve => {
 The function will return the extracted authorization token.
 
 ---
-### 7. Checking agent or service availability by time zone (Complex)
+### 6. Checking agent or service availability by time zone (Complex)
 
 Here is a sample code snippet to check whether an agent or a service is available based on the current time in a specific time zone (Asia/Kolkata). 
 
@@ -338,7 +309,7 @@ return new Promise(resolve => {
 "ALLOW" or "Not ALLOW" based on the current time.
 
 ---
-### 8. Split FAQ response (Complex)
+### 7. Split FAQ response (Complex)
 
 This function splits a FAQ response into two parts and returns them as an array.
 
@@ -386,12 +357,11 @@ Once you've entered your custom logic in the available editor, referring to the 
 
 
 
-   ![](https://imgur.com/JOkktAW.png)
+   <img src="https://imgur.com/JOkktAW.png" alt="drawing" width="80%"/>
 
 If there are any errors in the code, you can view them under **Warnings**  at the bottom.  Address the displayed warnings/errors if any.
 
-   ![](https://imgur.com/v6vtymj.png)
-   
+   <img src="https://imgur.com/v6vtymj.png" alt="drawing" width="80%"/>
 
 
 ## Additional options for functions
