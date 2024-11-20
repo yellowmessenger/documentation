@@ -6,9 +6,9 @@ sidebar_label : AI Copilot
 
 ## Overview
 
-Yellow.ai’s AI-Copilot is a plug-and-play widget that integrates seamlessly into customer websites, serving as an all-in-one support portal. It enables users to interact with an AI-powered agent, raise tickets, access KnowledgeBase articles, and connect with live agents. AI-Copilot consolidates several key functionalities from Yellow.ai’s Inbox, KnowledgeBase, and live chat systems into a single, unified interface.
+Yellow.ai’s AI-Copilot is a plug-and-play widget that integrates seamlessly into customer websites, serving as an all-in-one support portal. It enables users to interact with an AI-powered agent, raise tickets, access KnowledgeBase articles, and connect with live agents. AI-Copilot consolidates several key functionalities from Yellow.ai’s Inbox, KnowledgeBase, and ticketing system into a single, unified interface.
 
-![image](https://hackmd.io/_uploads/HJVM5qFMkl.png)
+![image](https://imgur.com/TlBfmPF.png)
 
 **Key Benefits:**
 
@@ -22,8 +22,7 @@ Yellow.ai’s AI-Copilot is a plug-and-play widget that integrates seamlessly in
 
 To explore the AI-Copilot features in action, please refer to the demo video below.
 
-> **Try it yourself!**: https://help-alpha.yellowmessenger.com/
-
+> **Try it yourself!**: https://help.yellow.ai
 
 
 
@@ -37,39 +36,43 @@ When the AI-Copilot widget is integrated into a website, it contains several imp
 
 * **AI Agent interaction**: Users can continue their interactions with an AI agent, receiving responses from pre-configured flows and KnowledgeBase articles.
 
-![image](https://hackmd.io/_uploads/HJo1TcFGJx.png)
+![image](https://imgur.com/VD6SCq8.png)
 
 
-* **Account access**: Sign in to your Copilot account using your Yellow.ai credentials. This allows you to access and manage your tickets.
+* **Account access**: Sign in to your Copilot account using your **Yellow.ai credentials**. This allows you to access and manage your tickets.
 
 
-![image](https://hackmd.io/_uploads/SJWPn9tfkl.png)
+![image](https://imgur.com/qNKbakN.png)
 
 * **Suggested queries**: A list of suggested queries (4) is available to help guide users through their support journey.
 
-![image](https://hackmd.io/_uploads/S1Nx3qFGJe.png)
+![image](https://imgur.com/PS6imUI.png)
 
 
 * **KnowledgeBase access**: Users can ask questions, and the AI agent fetches relevant summarized answers with supported links from the KnowledgeBase.
 
-![image](https://hackmd.io/_uploads/SJxgcqtM1l.png)
+![image](https://imgur.com/YClMjQW.png)
 
 * **Documentation access**: Users can easily view Yellow.ai’s documentation by clicking the **Go to Documentation** button.
 
-![image](https://hackmd.io/_uploads/rkgWo5Yzye.png)
+![image](https://imgur.com/qq5nmU0.png)
 
 
 * **Live chat integration**: If the AI agent cannot resolve the issue, users can connect to a live agent through the built-in chat functionality. If the issue can't be resolved immediately, the agent can create a support ticket.
 
-![image](https://hackmd.io/_uploads/BysfC9KfJe.png)
+![image](https://imgur.com/eafaDFd.png)
 
-* **Email ticket management**: End users can view and manage their email tickets, including tracking their status and escalating unresolved tickets. All email tickets created by users are available in the Copilot interface. Users can view details and ticket statuses in one location.
+* **Email ticket management**: End users can view and manage their email tickets. All email tickets created by users or Agents are available in the Copilot interface. Users can view details (such as all the messages from that thread, ticket ID, Priority and created date) and ticket statuses in one location. 
 
+![image](https://imgur.com/h8fMb1M.png)
 
+![image](https://imgur.com/6zxqVkx.png)
 
 * **Ticket escalation**:  If a user needs additional support, they can escalate their existing ticket to the customer support team directly from the ticket details page.
 
 
+
+![image](https://imgur.com/tPY3x9a.png)
 
 
 
@@ -103,7 +106,7 @@ The support team must configure their bot to handle this escalation event. For e
 
 
 
-## Copilot Deployment
+## Copilot deployment
 
 AI-Copilot is deployed on customer websites through the following steps:
 
@@ -138,7 +141,7 @@ AI-Copilot is deployed on customer websites through the following steps:
 
 Once this code is added to your website, the Copilot widget will be deployed and ready for use.
 
-Example deployment code:
+**Example deployment code**:
 
 
 ```
@@ -203,4 +206,5 @@ Currently, some customization options are controlled from the **backend**, but t
 * **Callout messages**: Ability to modify the “We are here to help you” message.
 * **Documentation link**: Modify or add documentation links in the "Go to Documentation" button.
 * **Website language**: Switch the language of the entire website, including the AI-agents’s messages and other fields.
+* **Account access**: Currently, access is limited to Yellow.ai credentials. However, authentication can also be configured on the client’s end.
 
