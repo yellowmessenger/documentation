@@ -3,7 +3,7 @@ title: Integration overview
 sidebarTile: Overview
 ---
 
-The integration module lets you connect your bot with third-party systems, enabling access to various functionalities within the Yellow.ai platform. These integrations act as bridges between your bot and external platforms, facilitating smooth communication and data exchange. Whether streamlining processes, automating tasks, or enhancing customer experiences, integrations are crucial for maximizing the utility and impact of your bot.
+The integration module lets you connect your AI Agent with third-party systems, enabling access to various functionalities within the Yellow.ai platform. These integrations act as bridges between your AI Agent and external platforms, facilitating smooth communication and data exchange. Whether streamlining processes, automating tasks, or enhancing customer experiences, integrations are crucial for maximizing the utility and impact of your AI agent.
 
 
 To make it easy to access and manage your integration accounts, they are conveniently organized into different categories.
@@ -22,7 +22,7 @@ To integrate your application with our platform, follow these step-by-step instr
 
 ### Step 2: Connect your integration account to yellow.ai platform
 
-You can connect your account only in development environment and not in live. For a three-tier environment, you can connect an account in Staging and Sandbox environment. Once the bot is published, it will use the integrations if they are configured in the flows.
+You can connect your account only in development environment and not in live. For a three-tier environment, you can connect an account in Staging and Sandbox environment. Once the AI Agent is published, it will use the integrations if they are configured in the flows.
 
 1. **Login to our [Cloud platform](https://cloud.yellow.ai)** with your credentials and switch to Development/Staging environment.
 2. Navigate to **Extensions** > **Integration** and search for the integration app.
@@ -38,7 +38,7 @@ You can connect your account only in development environment and not in live. Fo
 
 ### Step 3: Configure Webhook URL
 
-Webhooks function as callback endpoints, sending updates to a specified URL whenever there's a change in the integration app. If you do not configure, the bot won't receive these events, potentially disrupting the integration's operation.
+Webhooks function as callback endpoints, sending updates to a specified URL whenever there's a change in the integration app. If you do not configure, the AI Agent won't receive these events, potentially disrupting the integration's operation.
 
 Once the connection is estabblished, follow these steps to configure the webhook URL:
 
@@ -48,9 +48,9 @@ Once the connection is estabblished, follow these steps to configure the webhook
 
 2. **Paste the URL** into the relevant settings section of your integration app. This allows your integration app to send data to our platform seamlessly.
 
-### Step 4: Enable integration events in your bot
+### Step 4: Enable integration events in your AI Agent
 
-This enables you to execute specific actions in response to events. For instance, you can display a message in the bot conversation when a payment is successful or show order details when an order is placed.
+This enables you to execute specific actions in response to events. For instance, you can display a message in the AI Agent conversation when a payment is successful or show order details when an order is placed.
 
 1. In Development/Staging environment, go to **Automation** > **Event** > **Integrations**.
 2. Find the event and click on the three dots icon, then select **Activate**. Events are named with the Integration app name, for instance, "InstaMojo Payment Status".
@@ -58,9 +58,9 @@ This enables you to execute specific actions in response to events. For instance
    ![](https://i.imgur.com/FtUTGsJ.png)
 
 
-### Step 5: Trigger bot flows with integration events
+### Step 5: Trigger AI Agent flows with integration events
 
-You can configure your bot to [trigger specific flows when an event occurs](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow). For instance, display a message when a payment is successful or show order details after an order is placed.
+You can configure your AI Agent to [trigger specific flows when an event occurs](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow). For instance, display a message when a payment is successful or show order details after an order is placed.
 
 1. At the start of the flow, select *Events* and then choose the specific event that you want to use. 
 2. If there are multiple accounts connected, you will see the Account Name dropdown where you can choose a specific account that you want to use.
@@ -68,14 +68,14 @@ You can configure your bot to [trigger specific flows when an event occurs](http
 
    ![](https://i.imgur.com/br6ofma.png)
 
-3. Publish your bot for your changes to reflect in the *Live* or *Production* environment.
+3. Publish your AI Agent for your changes to reflect in the *Live* or *Production* environment.
 
 
-#### Step 5: Configure bot to handle specific integration actions
+#### Step 5: Configure AI Agent to handle specific integration actions
 
-Once the integration is enabled, your bot gains the ability to directly perform various actions within that specific integration account. These actions may include creating new records, updating existing records, and retrieving specific information. With this capability, you can configure your bot to handle these specific integration actions seamlessly.
+Once the integration is enabled, your AI Agent gains the ability to directly perform various actions within that specific integration account. These actions may include creating new records, updating existing records, and retrieving specific information. With this capability, you can configure your bot to handle these specific integration actions seamlessly.
 
-To perform a specifc integration action via bot:
+To perform a specifc integration action via AI Agent:
 1. In Development/Staging environment, navigate to **Automation** > **Build** > Select the flow where you want to use an integration action.
 2. Click **Add node** > **Integrations** > {Integration Name}.
 
@@ -85,14 +85,14 @@ To perform a specifc integration action via bot:
 
    ![](https://i.imgur.com/wYYsSxX.png)
 
-4. Customize the bot's behavior to respond appropriately to integration events, such as sending notifications or executing automated tasks.
-5. Publish your bot for your changes to reflect in the *Live* or *Production* environment.
+4. Customize the AI Agent's behavior to respond appropriately to integration events, such as sending notifications or executing automated tasks.
+5. Publish your AI Agent for your changes to reflect in the *Live* or *Production* environment.
 
 
 
 
-1. **Define Bot Actions:** Once integration events are enabled, configure your bot to perform specific actions in response to these events.
-2. **Customize Bot Behavior:** Customize the bot's behavior to respond appropriately to integration events, such as sending notifications or executing automated tasks.
+1. **Define AI Agent Actions:** Once integration events are enabled, configure your bot to perform specific actions in response to these events.
+2. **Customize AI Agent Behavior:** Customize the bot's behavior to respond appropriately to integration events, such as sending notifications or executing automated tasks.
 
 By following these steps, you can seamlessly integrate your application with our platform and leverage the full capabilities of our bot system. If you encounter any issues or need further assistance, please refer to our documentation or contact our support team for help.
 
@@ -107,9 +107,9 @@ CRM consists of integrations with customer relationship management tools used fo
 Integration | Description
 ----------- | -----------
 [Hubspot](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/hubspot-crm) | The HubSpot CRM integration allows you to customize lead details through a conversational bot, enhancing lead management processes and providing personalized experiences for your customers.
-[Microsoft Dynamics 365](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/microsoft-dynamics) | The Microsoft Dynamics 365 CRM & ERP system integration enables your bot to create Leads, Opportunities, and perform other operations from your bot.
-[Salesforce CRM](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforce-service-cloud) | The Salesforce CRM integration empowers your conversational bot to create Leads, Opportunities, and perform other functions, enhancing efficiency and streamlining processes for your users.
-[Zoho-CRM](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zoho-crm) | The Zoho CRM integration enables your bot to create Leads, Opportunities, and perform other Zoho CRM related operations.
+[Microsoft Dynamics 365](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/microsoft-dynamics) | The Microsoft Dynamics 365 CRM & ERP system integration enables your AI Agentt to create Leads, Opportunities, and perform other operations from your AI Agent.
+[Salesforce CRM](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforce-service-cloud) | The Salesforce CRM integration empowers your conversational AI Agent to create Leads, Opportunities, and perform other functions, enhancing efficiency and streamlining processes for your users.
+[Zoho-CRM](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zoho-crm) | The Zoho CRM integration enables your AI Agent to create Leads, Opportunities, and perform other Zoho CRM related operations.
 [Epic FHIR](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/epic-fhir) | Integrate Epic FHIR with Yellow.ai and fetch and modify medical records.
 
 ---
@@ -211,10 +211,10 @@ Integration | Description
 [Camspay](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/camspay) | Integrate with CAMSPay to fulfil your payment requirements, including creating payment links and monitoring the progress of payments or refunds.
 [Cashfree Payments](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/camspay) | With Cashfree Payment Integration, you can generate payment links and check the status of payments made, streamlining transaction processes and enhancing user experiences within your bot ecosystem.
 [Paytm](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/paytm) | With Paytm integration, you can create payment links and check the status of payments made, streamlining transaction processes and enhancing user experiences within your bot conversations
-[PayU Business](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/payuBiz) | With ChatGPT integration, you can enhance your conversational bot's capabilities by leveraging advanced natural language processing, enabling more intelligent and contextually aware interactions with users.
+[PayU Business](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/payuBiz) | With PayU Business integration, bot can handle secure and seamless payment transactions. This enables users to complete purchases, subscriptions, or bill payments directly within the chat interface.
 [Razorpay](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/razorpay) | With Razorpay integration, you can streamline payment processes by creating payment links and checking the status of payments or refunds, enhancing user experiences within your bot conversations.
-[Stripe Payment Gateway](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/stripe) | With Stripe integration, you can meet your payment needs, such as generating payment links and checking the status of payments and refunds, streamlining transaction processes and enhancing user experiences within your bot ecosystem.
-[Airpay](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/airpay) | With Airpay integration, Yellow.ai enables users to make payments directly through the bot, facilitating seamless transactions and enhancing user experiences within your ecosystem.
+[Stripe Payment Gateway](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/stripe) | With Stripe integration, you can meet your payment needs, such as generating payment links and checking the status of payments and refunds, streamlining transaction processes and enhancing user experiences within your AI Agent.
+[Airpay](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/airpay) | With Airpay integration, Yellow.ai enables users to make payments directly through the chat interface, facilitating seamless transactions and enhancing user experiences within your ecosystem.
 [BillDesk Email pay](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/billdesk-emailpay) | With BillDesk EmailPay integration, you can seamlessly receive payments from your users, enhancing transaction processes and user experiences within your Yellow.ai account.
 [Billdesk UPI](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/billdesk) | With BillDesk UPI, you can seamlessly  create UPI intents for WhatsApp Pay, view payment statuses, and send UPI notifications directly within the Yellow.ai platform.
 [Stripe](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/stripe) | With Stripe Payment integration, you can generate payment links and view payment statuses directly within the Yellow.ai platform.
