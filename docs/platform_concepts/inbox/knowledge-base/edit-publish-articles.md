@@ -27,8 +27,8 @@ Follow the given steps to publish new articles to your support portal:
 3. Add relevant tags to the article.               
 	- **Tags** are effectively used to group & organize content across your support portal. It helps readers find what they are looking for. They also provide data about your page to search engines and website visitors.
 4. Visibility defines to which persona the article is visible:      
-	- **Internal** - Only visible to your team i.e agents & admins. Not visible to the end-users.  
-	- **External** - Visible to both your end-users and your team.  
+	- **Internal** - Only visible to your team i.e agents & admins. Not visible to the end-users.                   
+	- **External** - Visible to both your end-users and your team.                     
 ![image](https://imgur.com/UAn6nQM.png)         
 - Click **Publish** to publish the article with the before selected visibility.
 
