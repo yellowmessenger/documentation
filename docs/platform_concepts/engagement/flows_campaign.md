@@ -347,9 +347,21 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
 <center><img src="https://i.imgur.com/lBvitpz.png" width="50%"/></center>
 
+
+#### 8. RCS channel configuration
+1. In **To**, choose the variable that contains the mobile number of the user.
+<center><img src="https://i.imgur.com/GSnNQPx.png" width="50%"/></center>
+
+2. In **Template**, choose the RCS template that you want to use for sending the message.
+3. If there are variables in the template, you will see an option to map those variables to user or event properties. In **Template variables**, associate each variable with a user or event property as explained here.
+4. Enable **During workflow business hours** to trigger messages only during business hours.
+
+
 :::note
 For a detailed help doc on how to create an outbound campaign via Voice channel, see [this article](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/OBcampaign/setupOBC).
 :::
+
+
 
 ### Map template variables to user or event properties
 
