@@ -3,7 +3,7 @@ title: Chat widget
 sidebar_label : Chat widget
 ---
 
-Chat widget or Web widget is a bot that you can embed on a website to interact with your website users in real-time. It appears as a small chat box or window that pops up on a website or application. 
+Chat widget or Web widget is an AI-agent that you can embed on a website to interact with your website users in real-time. It appears as a small chat box or window that pops up on a website or application. 
 
 ![](https://imgur.com/BiR4vUm.png)
 

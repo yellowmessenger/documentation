@@ -35,9 +35,9 @@ For more details, see[Notification APIs](https://docs.yellow.ai/docs/platform_co
 
 
 <details>
-<summary> Do we receive any event on the bot if users click on the CTA used in Outbound campaigns? </summary>
+<summary> Do we receive any event on the AI-agent if users click on the CTA used in Outbound campaigns? </summary>
 
-No, for CTA button clicks, you will not receive any events on the bot.
+No, for CTA button clicks, you will not receive any events on the AI-agent.
 
 </details>
 
@@ -55,7 +55,7 @@ To capture the data sent in the template, You can capture template ID, variable 
  How do I capture additional details from the messages sent?</summary>
 
 
-To capture additional details from the messages sent, you can pass inside  the `customPayload` in the `config` object. This allows you to include specific data within the message payload, which can then be accessed and processed by your chatbot. You can pass upto three variables.
+To capture additional details from the messages sent, you can pass inside  the `customPayload` in the `config` object. This allows you to include specific data within the message payload, which can then be accessed and processed by your AI-agent. You can pass upto three variables.
 
 For example, you can include relevant variables such as waybill numbers, IDs, or codes within the customPayload field of the config object.
 
@@ -90,7 +90,7 @@ Here's an example of how to structure the customPayload field within the Config 
 ```
 
 
-Then, to retrieve data within your chatbot, you can use the following syntax:
+Then, to retrieve data within your AI-agent, you can use the following syntax:
 
 
 `{{{data.event.extraParams.customPayload.{variableName}}}}`
@@ -480,7 +480,7 @@ WhatsApp message not received by end user
 
 When a campaign triggered via the yellow.ai platform or through API notification fails to deliver the template to the end user's WhatsApp number, it's essential to identify and resolve the issue promptly. This guide provides steps to troubleshoot and resolve WhatsApp message failures effectively.
 
-**To access failure reports, you need access to bot admin or insights admin***.
+**To access failure reports, you need access to AI-agent admin or insights admin***.
 
 #### Steps to resolve
 

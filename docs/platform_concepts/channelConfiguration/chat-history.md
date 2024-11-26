@@ -3,11 +3,11 @@ title : Fetch Chat widget history
 sidebar_label : Fetch Chat widget history
 ---
 
-Chat history is a series of conversations that have happened between a user and a bot. The chat history includes details such as user’s input, bot responses, and the date and time of the conversation.
+Chat history is a series of conversations that have happened between a user and an AI-agent. The chat history includes details such as user’s input, AI-agent responses, and the date and time of the conversation.
 
-Chat history retrieves past conversations that tailor future interactions. It helps the bot to analyse the user’s inputs and provide accurate automated responses to the user’s queries. Thereby, it improves the overall efficiency and reliability of the bot.
+Chat history retrieves past conversations that tailor future interactions. It helps the AI-agent to analyse the user’s inputs and provide accurate automated responses to the user’s queries. Thereby, it improves the overall efficiency and reliability of the AI-agent.
 
-Let's say that you want to fetch a user's chat history from a bot. To do so, you need to pass a unique identifier, the ymAuthentication token, via a bot script, payload, or init function.
+Let's say that you want to fetch a user's chat history from an AI-agent. To do so, you need to pass a unique identifier, the ymAuthentication token, via an AI-agent script, payload, or init function.
 
 :::note
 * Ensure that the ymAuthentication token is secured and only authorized users can access it.
@@ -104,7 +104,7 @@ window.ymConfig = {"bot":"x1657623696077",
 </script>
 ```
 
-To fetch the user's chat history from a bot, add the **ymAuthentication** token in the following bot script:
+To fetch the user's chat history from a AI-agent, add the **ymAuthentication** token in the following AI-agent script:
  
 ```c
 <script type="text/javascript">
