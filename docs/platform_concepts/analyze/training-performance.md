@@ -4,7 +4,7 @@ sidebar_label : Message view
 ---
 
 
-Message view refers to how well the chatbot has been trained to understand and respond to user input in a conversational context. It is typically evaluated by testing the bot's ability to generate accurate and relevant responses to a set of input that it has not seen before. 
+Message view refers to how well the AI-agent has been trained to understand and respond to user input in a conversational context. It is typically evaluated by testing the AI-agent's ability to generate accurate and relevant responses to a set of input that it has not seen before. 
 
 To access this option, go to **Analyze** > **Message view**.
 

@@ -3,16 +3,16 @@ title: Conversation logs
 sidebar_label : Conversation logs
 ---
 
-Conversation logs contain detailed records of every interaction between users and the chatbot in chronological order. These logs include user inputs, bot responses, timestamps, and any contextual data relevant to the interaction.
+Conversation logs contain detailed records of every interaction between users and the AI-agent in chronological order. These logs include user inputs, AI-agent responses, timestamps, and any contextual data relevant to the interaction.
 
-These logs provide a complete history of conversations, helping bot developers to understand how the bot is performing, identify issues, and make improvements to enhance the user experience.
+These logs provide a complete history of conversations, helping AI-agent developers to understand how the AI-agent is performing, identify issues, and make improvements to enhance the user experience.
 
 By default, you can view chats from the past 24 hours. Logs are retained for six months; after this period, they are archived.
 
 
 Key benefits of conversation logs:
 
-* **Monitoring and analysis**: You can track the performance of the chatbot and analyze user interactions to identify issues, understand user behavior, and pinpoint areas for improvement.
+* **Monitoring and analysis**: You can track the performance of the AI-agent and analyze user interactions to identify issues, understand user behavior, and pinpoint areas for improvement.
 * **Troubleshooting**: By looking at these logs, you can see which conversations went wrong and understand why users might not be engaging as expected, allowing you to make necessary improvements.
 
 :::note
@@ -27,9 +27,9 @@ To access the conversation logs:
 
    ![](https://imgur.com/NdIy6O7.png)
 
-## Bot session
+## AI-agent session
 
-A session refers to a continuous interaction between a user and the bot within a specific timeframe. It begins when the user starts interacting with the bot and ends when the interaction is concluded, either by the user leaving or the session timing out.
+A session refers to a continuous interaction between a user and the AI-agent within a specific timeframe. It begins when the user starts interacting with the AI-agent and ends when the interaction is concluded, either by the user leaving or the session timing out.
 
 Each user is identified by a unique ID (UID), and a conversation log is generated for each UID, capturing the entire context of the interaction. Some logs retain up to 5 days of conversation history.
 
@@ -99,7 +99,7 @@ To flag a conversation, follow these steps:
 
 ## Auto-identification of conversation issues in logs
 
-The chatbot can automatically identify and tag each conversations that might have involved issues or areas for improvement. For example, it may flag conversations with unidentified responses, providing insights into how to enhance user interactions and the overall performance of the bot.
+The AI-agent can automatically identify and tag each conversations that might have involved issues or areas for improvement. For example, it may flag conversations with unidentified responses, providing insights into how to enhance user interactions and the overall performance of the AI-agent.
 
 To view auto-generated tags, follow these steps:
 
@@ -113,7 +113,7 @@ To view auto-generated tags, follow these steps:
 
 3. Go to the respective flow in Studio and make the necessary changes. 
 
-4. Test the bot to see if the changes work.
+4. Test the AI-agent to see if the changes work.
 
 ## Debug conversations
 
@@ -129,7 +129,7 @@ To enable logs, follow these steps:
 
     ![](https://i.imgur.com/CEgeroT.png)    
 
-3. Click **Debugger** icon to get the logs for any user input and trace the sequence of actions the bot took in response to specific user inputs, making it easier to troubleshoot issues and improve bot performance. 
+3. Click **Debugger** icon to get the logs for any user input and trace the sequence of actions the AI-agent took in response to specific user inputs, making it easier to troubleshoot issues and improve AI-agent performance. 
 
       ![](https://i.imgur.com/x3gui2X.png)   
 
