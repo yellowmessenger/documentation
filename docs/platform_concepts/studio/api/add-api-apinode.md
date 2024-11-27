@@ -3,136 +3,186 @@ title: API node
 sidebar_label : Add APIs via API node
 ---
 
-The API node lets you add a new API from a third-party system and access it in conversational flows.
+# Connect APIs to AI Agents
+
+The API node is a powerful tool that helps you to  integrate external services directly into your conversational flows. 
+
+By connecting APIs, your AI-agent can perform tasks like fetching real-time data, automating processes, and interacting with third-party platforms uch as CRMs, payment gateways, or weather systems.
+
+
 
 There are three ways by which you can add an API to the API node: 
 
-* [Import API](#import-api)
-* [Create new API](#create-new-api)
-* [Use existing API](#use-existing-api)
+* [Connect API via cURL/JSON](#import-API) using **Import API**
+* [Add API via the interface](#create-new-API) using **Create new API**.
+* [Reuse an existing API](#use-existing-API) with **Use existing API**
 
-   <img src="https://i.imgur.com/Fnsvd0z.png" alt="drawing" width="70%"/>
+<img src="https://imgur.com/3m3re6g.png" alt="drawing" width="90%"/>
+
 
 ## Import API
 
-If you have a CURL script or a JSON file you can import that to yellow.ai.
+You can add an API by importing a cURL script or a JSON file containing all the required details. Use this if you have pre-configured API setups.
 
-### Import cURL
 
-1. Click **Import API**.
+### Import a cURL script
 
-   <img src="https://i.imgur.com/QUPXN9D.png" alt="drawing" width="70%"/>
 
-2. In **Name** enter a name for your API, in **Type** choose the API type as **cURL** and in **cURL** field, copy/paste the cURL snippet.
+:::note
+The API name you choose should be alphanumeric, contain no spaces, and have a minimum of 3 characters.
+:::
 
-   <img src="https://i.imgur.com/83KAI5o.png" alt="drawing" width="78%"/>
-3. Click **Import**.
+1. Selct **Import API**.
+ 
+    <img src="https://i.imgur.com/QUPXN9D.png" alt="drawing" width="88%"/>
 
-### Import JSON file with API details
+2. Enter a **Name** for your API (for example, "**ImportedAPI**").
+3. In the **Type** field, select **cURL**.
+4. Under the **cURL** field, paste your cURL command.
 
-1. Click **Import API**.
-2. In **Name** enter a name for your API, in **Type** choose the API type as **JSON** and in the **Import** field, click **Drag & Drop** to upload the JSON file or drag and drop the file directly.
+    <img src="https://i.imgur.com/83KAI5o.png" alt="drawing" width="88%"/>
 
-   <img src="https://i.imgur.com/fiKmiaS.png" alt="drawing" width="78%"/>
-3. Click **Import**. The API details such as **Headers**, **Params**, **Dynamic variables**(that collects dynamic data) gets auto populated in the API node. 
+5. Click on  **Import** to complete.
 
-## Create new API
+---
 
-This option lets you add a new API on the go:
+### Importing a JSON file with API Details
 
-1. Click **Create new API**.
+1. Selct **Import API**
+    <img src="https://i.imgur.com/QUPXN9D.png" alt="drawing" width="88%"/>
+
+2. Enter a **Name** for your API (for example, "**ImportedAPI**").
+3. In the **Type** field, select **JSON**.
+4. In the **Import** field, click **Drag & Drop** to upload your JSON file, or drag and drop it directly into the field.
+  
+   <img src="https://i.imgur.com/fiKmiaS.png" alt="drawing" width="90%"/>
+   
+5. Click on **Import**.  
+   - The API details, such as **Headers**, **Params**, and any **Dynamic Variables** needed for real-time data, will automatically populate in the API node.
+
+
+## Add an API using the interface
+
+You can use the *Create new API* option to add an API through a user-friendly interface. With this, you can add requests, headers, parameters, and body content manually. Use this option if you do not have any pre-written scripts.
+
+To add an API using the API interface:
+
+1. Select **Create new API**.
 
    <img src="https://i.imgur.com/51f2cQb.png" alt="drawing" width="78%"/>
 
 2. Fill in the following fields:
 
-   <img src="https://i.imgur.com/4Uu7sO6.png" alt="drawing" width="78%"/>
+   <img src="https://imgur.com/iqNv4Cm.png" alt="drawing" width="88%"/>
 
-| Fields                             | Descriptions                                                                                                                                                                                               |
-|------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Name**                           | Enter a name for your API                                                                                                                                                                                  |
-| **Method**                         | Choose the method of your API request.                                                                                                                                                                     |
-| **URL**                            | Paste the API URL.                                                                                                                                                                                        |
-| **Description**                    | Describe the functionality of your API.                                                                                                                                                                   |
-| **Headers**                        | Headers in API requests are additional pieces of information sent alongside the main request.<br/> For example, if you are authenticating an API, set the **Key** as **Authorization** and the Value as the API key. |
-| **Params**                         | API parameters are essential components used when making requests to an API. They serve as specific instructions or information that you include with your request, helping the API understand and fulfill your requirements accurately. <br/><br/> Examples of key-value pairs for static and dynamic parameters:<br/><br/>**Static parameter**: - Key: botId - Value: x766543323dwe_34 <br/> **Dynamic parameter**: - Key: city - Value: {{{city}}} <br/><br/> In these examples: The botId key has a static value (it remains constant). <br/>The "city" key has a dynamic value represented as {{{city}}}, indicating that the value will be dynamically replaced with the actual value of the "city" parameter during runtime. |
-| **Body type**                      | The body in an API is the main content of the request containing data or information that should be sent to the third-party server. <br/><br/> For POST, PUT, or DELETE methods, you can add the request body under the Body section. The supported formats are **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data**, and **raw**.<br/><br/>**Multipart/form-data is not supported.** |
-| **Dynamic variable configuration** | Here's where you will assign a variable to collect the dynamic value from users. The data type of the variable and dynamic value should be the same. |
+| **Fields**                         | **Descriptions**   |
+|------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Name**| Enter a name for your API.|
+| **Method**| Select the method for your API request (e.g., GET, POST, PUT, DELETE, PATCH).|
+| **URL**| Paste the URL for your API endpoint.|
+| **Description**| Enter a description explaining the functionality of your API.     |
+| **Headers**| Enter the headers required for your API request. Headers are additional pieces of information sent alongside the main request. <br/> **Example:** For authentication, enter **Authorization** as the **Key** and the API key as the **Value**.|
+| **Params**| Enter the parameters to include in your API request. Parameters help instruct the API on how to fulfill the request. <br/><br/> **Examples of key-value pairs for static and dynamic parameters:** <br/><br/> **Static parameter:**<br/> - **Key:** botId <br/> - **Value:** x766543323dwe_34 <br/><br/> **Dynamic parameter:**<br/> - **Key:** city <br/> - **Value:** {{{city}}} <br/><br/> In these examples: the `botId` key has a static value, while the `city` key has a dynamic value that will be replaced during runtime. |
+|**Body type**| Enter the body type for your API request, if applicable (typically for POST, PUT, or DELETE methods). Supported formats include **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data**, and **raw**. <br/><br/> **Note:** Multipart/form-data is not supported.|
+| **Dynamic variable configuration** | Enter the dynamic variable to capture user inputs. Ensure the data type of the variable matches the dynamic value it is intended to capture.|
 
-## Additional configuration to enhance the API usage
+### Configure additional API settings
 
-The **+More** button holds configurations that would optimize the usage of that particular API. 
+Here you can configure advanced settings like timeout, retries, redirects, and more. Refer to the table below for a detailed explanation of these configurations and their functionality.
 
-   <img src="https://i.imgur.com/XViQNgB.png" alt="drawing" width="78%"/>
+  
+  <img src="https://imgur.com/XswdOH5.png" alt="drawing" width="78%"/>
+ 
+  <img src="https://imgur.com/dlocZQH.png" alt="drawing" width="78%"/>
+  
 
-| Configuration                      | Description                                               |
-|---------------------------|-----------------------------------------------------------|
-| Timeout                   | Maximum time allowed for API response.                      |
-| Retry on failure (5xx)    | Number of attempts to retry in case of server. errors       |
-| Follow redirect(s)        | Determines if API should automatically follow. redirects   |
-| Encoding                  | Method used to encode data (for example JSON, XML)              |
-| Use strictSSL             | Enforces strict SSL certificate validation. You might not get response if this is enabled and there is some problem with SSL certificate.    |                 |
-| API alerts on             | Events triggering alerts (for example errors, high traffic).      |
-| Default message on invoking API | Default response or action when API is invoked           |
-| API failure message (4/5xx code) | Message displayed upon API failure with specific codes.   |
-| Add MTLS auth           | Enables mutual TLS authentication for enhanced security.   |
-|Configure environment keys|Adding environment variables allows you to store and manage dynamic values such as API keys, tokens, or any sensitive information that keep changing for each environment. This makes it easier to manage and use APIs seamlessly across your testing and development flows.|
+| **Configuration**                  | **Description**                                                                                      |
+|------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Timeout**                  | Allows you to set the maximum time allowed for an API response. Example: Set to 10 seconds for quick responses.  |
+| **Retry on Failure (5XX)**   | Enables or disables automatic retries for requests that fail with 5XX status codes. Example: Retry 3 times for temporary server issues. |
+| **Follow Redirect(s)**       | Controls whether HTTP redirects should be automatically followed during API requests. Example: Enable to handle 301 or 302 redirects seamlessly. |       |
+| **Encoding**                 |Lets you choose the format for encoding the response data from the API. Example: Use UTF-8 for most languages.|
+| **Use StrictSSL**            | Enforces strict SSL certificate validation for secure connections. Example: Enable for added safety. |
+| **API Alerts on Events (4XX/5XX)**     | Receive real-time alerts for API errors (4XX/5XX) to quickly diagnose and resolve issues. Example: Get notified when server traffic spikes. |
+| **Default Message on API Call** | Displays a default response or message when an API is invoked. Example: “Fetching your data, please wait.” |
+| **Add MTLS Auth**            | Enables mutual TLS authentication for enhanced security. Example: Upload a certificate for secure data exchange. |
+| **Configure Environment Keys** | Allows you to store dynamic values like API keys and tokens for each environment. Example: Different API keys for Staging, Sandbox and Production. 
+| **Wait Music**            | Lets you paste the URL or upload an audio file to play while waiting. Example: Add soothing music to play during API response time. |
 
-## Use existing API
+## Reuse preconfigured APIs
 
-If you have already added the API to the AI-agent either [through API node](#create-new-api) or through the [API section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api), you can fetch the API here.
+You can reuse pre-configured APIs without re-adding or re-configuring them. This works if the API is added through the [through API node](#create-new-api) or through the [API section](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api).
 
-1. Click **Use existing API**.
+This is very efficient when you need to apply the same API in various stages of the conversation flows.
+
+
+To use an existing API, follow the steps below:
+
+1. Select **Use existing API**.
 
    ![](https://i.imgur.com/9PczJZv.png)
    
-2. In **API**, choose the API. All the details of that API will get auto-populated in the respective fields
-
+2. In the **API** field, select your preferred API from the drop-down, based on the selected API it will automatically populate the corresponding fields.
    <img src="https://i.imgur.com/shCH4h5.png" alt="drawing" width="78%"/>
    
 
-## Test the API
+## Test the connected API
 
-After adding an API, you can test it to ensure that the API is working properly.
+After adding the API, you need to test it to ensure it operates correctly and performs the intended functions.
 
-1. Click the API node and click **Test response**.
+1. Select the API node and click on  **Test response**.
  
    <img src="https://i.imgur.com/X6cbKop.png" alt="drawing" width="78%"/>
 
-2. Provide a sample input for your dynamic variables (if any) and click **Run**. If the API works successfully, you will receive a response code of 200.
-
+2. **Enter a Sample Input** for testing to ensure API has all the required information to run properly and validate its functionality in a real-world scenario.
    
+   - In **Input fields**, provide the necessary values for any dynamic variables required by the API.  
+   - For example: If the variable is `city`, enter a value like *Paris* to provide the relevant data. This acts as a real-world test data to validate the API's functionality.
+   
+2. **Run the API**  
+   - Click on the **Run** button to execute the API .  A successful test will return a `200` status code along with the API's response data.
    <img src="https://i.imgur.com/1n3iMFJ.png" alt="drawing" width="78%"/>
-   
-## Store the API response
 
-You can store API responses in a variable and filter out the required information and display it to the consumer. To do so: 
+
+---
+
+## Store and display API responses
+
+This section explains how to store API responses in a variable, filter the relevant details, and show them to the user if needed or store it as needed.
+
 
 :::info
-API responses typically belong to one of three data types: object, array, or string. It's important to store the received response in a variable with the same data type as the response.
+API responses can be of object, array, or string data type. You need to store the response in a variable that matches its data type.
 :::
 
-1. Click the API node and click **Test response**.
+
+### Steps to store API response:
+
+
+
+1. Select the API node and click on **Test response**.
 
    <img src="https://i.imgur.com/X6cbKop.png" alt="drawing" width="78%"/>
 
-2. Scroll down and go to **Store all response**. **Create** or **choose a variable** in which you want to store the API response based on its datatype.
+2. Scroll down to the  **Store response** section and under **Store all response** you can either **create** a new variable or **select** an existing one to store the API response, ensuring the variable's data type matches the response type. 
+
+
 
    
    ![](https://i.imgur.com/qSX9VG4.png)
 
-## Display API response
+### Steps to display API response: 
 
-Depending on the response datatype, use a syntax to fetch or display the necessary data from the API response.
+Depending on the response datatype, you can use the following syntax to fetch or display the necessary data from the API response.
 
 To display the received API response: 
 
-1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to the API node.
-2. Choose the variable created in the [previous section](#store-the-api-response)(step 2).
+1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) after the API node.
+2. Select the variable created in the [previous section](#store-the-api-response) (step 2) to retrieve the API response.
 
     ![](https://i.imgur.com/RudXA5G.png)
 
-3. Along with the variable, use a syntax to filter out the required data from the API response. You can refer to the following table for syntaxes to use depending on the data type.
+3. Use the appropriate syntax alongside the variable to filter and display the specific data you need from the API response. Refer to the table below for the correct syntax based on the data type.
 
 
 | Datatype | Syntax |
@@ -141,4 +191,6 @@ To display the received API response:
 | JSON Response Array | `{{{variables.variablename.arrayname.[position of the array].field}}}` or `{{{variables.variablename.fieldname}}}` |
 | String   | `{{{variables.variablename}}}` |
 
-You can tweak the above syntaxes based on the API responses you recieve.
+You can adjust the above syntaxes according to the structure and content of the API responses you receive.
+
+
