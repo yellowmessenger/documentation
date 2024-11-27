@@ -5,11 +5,9 @@ sidebar_label : Add APIs via API node
 
 # Connect APIs to AI Agents
 
-The API node is a powerful tool that helps you to  integrate external services directly into your conversational flows. 
+The API node is a powerful tool that helps you to integrate external services directly into your conversational flows. 
 
-By connecting APIs, your AI-agent can perform tasks like fetching real-time data, automating processes, and interacting with third-party platforms uch as CRMs, payment gateways, or weather systems.
-
-
+By connecting APIs, your AI-agent can perform tasks like fetching real-time data, automating processes, and interacting with third-party platforms such as CRMs, payment gateways, or weather systems.
 
 There are three ways by which you can add an API to the API node: 
 
