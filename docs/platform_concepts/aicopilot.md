@@ -22,6 +22,8 @@ Yellow.ai’s AI-Copilot is a plug-and-play widget that integrates seamlessly in
 
 To explore the AI-Copilot features in action, please refer to the demo video below.
 
+![AI Copilot GIF](./Getting%20Started/img/cdp/Copilot-3.gif)
+
 > **Try it yourself!**: https://help.yellow.ai
 
 
