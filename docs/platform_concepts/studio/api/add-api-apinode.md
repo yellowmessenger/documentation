@@ -9,6 +9,16 @@ The API node is a powerful tool that helps you to integrate external services di
 
 By connecting APIs, your AI-agent can perform tasks like fetching real-time data, automating processes, and interacting with third-party platforms such as CRMs, payment gateways, or weather systems.
 
+### Optimizing API management and reusability
+
+When using the **API node** in AI-agent flows, we need to consider the below functionalities:
+
+- **Centralized API management**:  
+  When an API is added using the API node, it becomes available in the central **API module.** This means the API can be managed, updated, or reused from the API module directly.
+
+- **Reusability of API across different flows**:  
+  If you configure an API for a particular node in one flow, you can access and reuse the same API in other flows through the API node.
+
 There are three ways by which you can add an API to the API node: 
 
 * [Connect API via cURL/JSON](#import-API) using **Import API**
@@ -16,6 +26,7 @@ There are three ways by which you can add an API to the API node:
 * [Reuse an existing API](#use-existing-API) with **Use existing API**
 
 <img src="https://imgur.com/3m3re6g.png" alt="drawing" width="90%"/>
+
 
 
 ## Import API
