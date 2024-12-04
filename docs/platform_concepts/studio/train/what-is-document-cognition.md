@@ -186,7 +186,7 @@ A KnowledgeBase(KB) gives centralized and organize access to solutions in form o
 
 
 4. Add Callback URL (any webhook/logging URL): a public URL which can listen & log any request on it. (You will receive a code on that URL post OAuth login in step 8). Click on **Save**.
-5. Goto **App Manager** > select the created app > View. Copy the Consumer key (client id) & Consumer secret (client secret) and save them for future use.
+5. Goto **App Manager** > select the created app > View. Copy the Consumer key (client id) & Consumer secret (client secret) and save them for future use. Share these credentials with your Yellow.ai SPOC responsible for configuring your KB.
 6. Go to **Manage Connected Apps** > Select the created app > **Edit**.
 7. Set Permitted users to All users may self-authorize & IP Relaxation > Relax IP Restrictions > **Save**.
 8. Open the following URL after replacing the client id and callback URL accordingly.

@@ -349,6 +349,14 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 
 
 #### 8. RCS channel configuration
+
+:::note
+**Limitations**:
+- Currently only text and card templates are supported.
+- UI support for Template creation is coming soon, till then raise a ticket with support team to whitelist new templates.
+- Template approval will take 24hrs.
+:::
+
 1. In **To**, choose the variable that contains the mobile number of the user.
 <center><img src="https://i.imgur.com/GSnNQPx.png" width="50%"/></center>
 
