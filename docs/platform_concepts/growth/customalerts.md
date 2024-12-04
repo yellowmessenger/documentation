@@ -27,7 +27,11 @@ You can set up an alert in Insights:
 ![image](https://hackmd.io/_uploads/rkY0iWzv0.png)
 
 :::note
-If you change the existing visualization, the set alert will be disabled. You can create a new alert.
+
+- Alerts are supported only for reports created using **custom queries**, not native queries (i.e., queries directly using SQL). This limitation arises from the nature of the PostgreSQL database. 
+- The report must include a count aggregation with a count visualization for the alert functionality to work.
+- If you change the existing visualization, the set alert will be disabled. You can create a new alert.
+
 :::
 
 ----

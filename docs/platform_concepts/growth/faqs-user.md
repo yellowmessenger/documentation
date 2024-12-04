@@ -152,7 +152,8 @@ On the user engagement events table, similar records are rolled up at 30 mins in
 <summary> How can I <b>download chat transcripts</b> for the last year? 
 </summary>
 <div>
-Open <b>Insights</b> > <b>Metrics</b>. You can apply 31 days custom time filter of any month before 6 months(or a year) and click <b>Export</b> and select <b>Chat transcripts</b>. 
+Open <b> Insights</b> > <b>Metrics</b>. You can apply 31 days custom time filter of any month before 6 months(or a year) and click <b>Export</b> and select <b>Chat transcripts</b>. 
+or  from the **Data ops** module. 
 </div>
 </details>
 
@@ -200,3 +201,5 @@ Only the columns which are searchable will be available to be filtered. Columns 
 <p>By ensuring columns are marked as searchable during creation, users can maximize the functionality and analytical capabilities of custom tables.</p>
 </div>
 </details>
+
+
