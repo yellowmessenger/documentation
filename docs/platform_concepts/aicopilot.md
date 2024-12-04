@@ -22,6 +22,8 @@ Yellow.ai’s AI-Copilot is a plug-and-play widget that integrates seamlessly in
 
 To explore the AI-Copilot features in action, please refer to the demo video below.
 
+![AI Copilot GIF](./Getting%20Started/img/cdp/Copilot-3.gif)
+
 > **Try it yourself!**: https://help.yellow.ai
 
 
@@ -34,41 +36,61 @@ To explore the AI-Copilot features in action, please refer to the demo video bel
 
 When the AI-Copilot widget is integrated into a website, it contains several important components designed to enhance the user experience:
 
-* **AI Agent interaction**: Users can continue their interactions with an AI agent, receiving responses from pre-configured flows and KnowledgeBase articles.
+### AI Agent interaction
+Users can continue their interactions with an AI agent, receiving responses from pre-configured flows and KnowledgeBase articles.
 
 ![image](https://imgur.com/VD6SCq8.png)
 
 
-* **Account access**: Sign in to your Copilot account using your **Yellow.ai credentials**. This allows you to access and manage your tickets.
+### Suggested queries
 
-
-![image](https://imgur.com/qNKbakN.png)
-
-* **Suggested queries**: A list of suggested queries (4) is available to help guide users through their support journey.
+A list of suggested queries (4) is available to help guide users through their support journey.
 
 ![image](https://imgur.com/PS6imUI.png)
 
 
-* **KnowledgeBase access**: Users can ask questions, and the AI agent fetches relevant summarized answers with supported links from the KnowledgeBase.
+### KnowledgeBase access
+
+Users can ask questions, and the AI agent fetches relevant summarized answers with supported links from the KnowledgeBase.
 
 ![image](https://imgur.com/YClMjQW.png)
 
-* **Documentation access**: Users can easily view Yellow.ai’s documentation by clicking the **Go to Documentation** button.
+### Documentation access
+
+Users can easily view Yellow.ai’s documentation by clicking the **Go to Documentation** button.
 
 ![image](https://imgur.com/qq5nmU0.png)
 
 
-* **Live chat integration**: If the AI agent cannot resolve the issue, users can connect to a live agent through the built-in chat functionality. If the issue can't be resolved immediately, the agent can create a support ticket.
+### Live chat integration
+
+If the AI agent cannot resolve the issue, users can connect to a live agent through the built-in chat functionality. If the issue can't be resolved immediately, the agent can create a support ticket.
+- You must provide your details such as Name, Contact number and Email ID to verify OTP before connecting you to a live agent. 
+
 
 ![image](https://imgur.com/eafaDFd.png)
 
-* **Email ticket management**: End users can view and manage their email tickets. All email tickets created by users or Agents are available in the Copilot interface. Users can view details (such as all the messages from that thread, ticket ID, Priority and created date) and ticket statuses in one location. 
+
+### Account access
+
+Sign in to your Copilot account using your **Yellow.ai credentials**. This allows you to access and manage your tickets.
+
+![image](https://imgur.com/qNKbakN.png)
+
+
+### Email ticket management
+
+After signing into co-pilot with their yellow.ai  credentials, end users can view and manage their email tickets. 
+- All email tickets created by users or Agents are available in the Copilot interface. 
+- Users can view details (such as all the messages from that thread, ticket ID, Priority and created date) and ticket statuses in one location. 
 
 ![image](https://imgur.com/h8fMb1M.png)
 
 ![image](https://imgur.com/6zxqVkx.png)
 
-* **Ticket escalation**:  If a user needs additional support, they can escalate their existing ticket to the customer support team directly from the ticket details page.
+### Ticket escalation
+
+If a user needs additional support, they can escalate their existing ticket to the customer support team directly from the ticket details page.
 
 
 

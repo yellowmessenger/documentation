@@ -70,7 +70,7 @@ There are two user roles for Engage module.
 :::
 
 To access Engage, follow these steps -
-1. Login to https://cloud.yellow.ai  and go to your bot.  
+1. Login to https://cloud.yellow.ai  and go to your AI-agent.  
 2. Use any of the following ways -
    * Click on **Engage for campaigns** under  *Quick links*.
    * Click on the main menu to expand and select **Engage**.
@@ -78,7 +78,7 @@ To access Engage, follow these steps -
    ![](https://i.imgur.com/eyL6QxV.png)
 
 :::note
-If you are unable to access the Engage module, check your role with the bot's Super admin and request the required role - 
+If you are unable to access the Engage module, check your role with the Ai-agent's Super admin and request the required role - 
 * *Engagement admin* to send campaigns and create audience groups.
 * *Engagement user* to just schedule campaigns.
 :::

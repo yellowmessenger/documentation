@@ -341,7 +341,7 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
 #### 7. Voice call channel configuration
 
 1. Check **Enable answering machine detection (AMD)** to automatically identify answering machines.
-2. In **Bot flow**, choose the welcome flow to be triggered (Automation) for the current channel.
+2. In **AI-agent flow**, choose the welcome flow to be triggered (Automation) for the current channel.
 3. In **From**, choose the IVR number(s) through which the voice call is made. When multiple IVRs are added, calls are made from any of those numbers randomly.
 4. In **To**, choose the variable that contains the user identifier.
 

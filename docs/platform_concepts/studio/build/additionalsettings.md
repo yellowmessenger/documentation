@@ -84,47 +84,111 @@ Learn more about [supported document types](https://docs.yellow.ai/docs/platform
 | Short Answers       | Conveys information concisely with brief responses and minimal descriptions. | <img src="https://i.imgur.com/V7UUsvi.png" alt="drawing" width="70%"/>                   |
 | Instructions based  | Provides responses in a clear instructional format.            | <img src="https://i.imgur.com/xn3jBdH.png" alt="drawing" width="70%"/>  |
 
-### Callout banner setting
+### Callout banner
 
-A callout banner allows you to add a banner to the AI-agent's conversation. It can be used to alert users about new products, services, special offers, and promotions.
+A callout banner allows you to add a banner to the AI-agent's conversation. It can be used to alert users about new products, services, special offers, and promotions. You can also dynamically load the callout banner in the AI-agent. For more information, click [here](https://docs.yellow.ai/docs/cookbooks/studio/dynamic-callout-banner).
 
-<img src="https://i.imgur.com/iXIlMVq.png" alt="drawing" width="40%"/><br/>
+ <img src="https://i.imgur.com/iXIlMVq.png" alt="drawing" width="30%"/><br/>
 
-Using callout banner, you can perform the following actions:
+#### Add a callout banner
 
-#### Add text banner
+Using callout banner, you can create:
+
+* [Text banner](#text-banner)
+* [Image banner](#image-banner)
+
+##### Text banner
+
+To add a text banner, follow these steps:
+
+1. Go to **Automation** > **Build** > **Conversation settings** > **Callout banner**.
+
+   ![](https://imgur.com/mOCtPBZ.png)
+  
+2. Click **+ Add a callout** to create a new callout banner.
+
+    <img src="https://imgur.com/MgQVHYp.png" alt="drawing" width="70%"/>
+    
+3. Define the banner settings:<br/>
+   i. **Type of banner**: Choose Text as the type of banner.<br/>
+   ii. **Text**: Enter the message you want to display in the banner's Text field.<br/>
+   iii. **Replies**: In Replies, configure the response options for users. Click the button and modify its label as needed.
+   
+      <img src="https://imgur.com/Fnr9zPT.png" alt="drawing" width="60%"/>
+
+##### Image banner
+
+To add a image banner, follow these steps:
 
 1. Click **+ Add a callout**.
 
-   <img src="https://i.imgur.com/KebK3ui.png" alt="drawing" width="50%"/>
-
-2. In **Type of banner**, select the banner type as **Text**.  
-
-   <img src="https://i.imgur.com/YXxbf37.png" alt="drawing" width="50%"/>
-
-3. Enter the text to display in **Text** field.
-
-   <img src="https://i.imgur.com/PNS2HWu.png" alt="drawing" width="50%"/>
-
-4. In **Replies**, configure the response options for users. Click the button to edit them.
-
-#### Add image banner
-
-1. Click **+ Add a callout**.
-
-   <img src="https://i.imgur.com/KebK3ui.png" alt="drawing" width="50%"/>
+   <img src="https://imgur.com/MgQVHYp.png" alt="drawing" width="60%"/>
 
 2. In **Type of banner**, select the banner type as **Image**  
 
-   <img src="https://i.imgur.com/YXxbf37.png" alt="drawing" width="50%"/>
+   <img src="https://imgur.com/iDQaYrS.png" alt="drawing" width="40%"/>
 
-3. Upload the image to be displayed.
+3. Upload the image to be displayed in the banner.
 
-   <img src="https://i.imgur.com/TlU3Q5F.png" alt="drawing" width="50%"/>
+   <img src="https://imgur.com/u9iczMJ.png" alt="drawing" width="40%"/>
+   
+4. Enable the toggle button to add the link to the image.
+  
+    <img src="https://imgur.com/LJezT45.png" alt="drawing" width="50%"/>
+    
+5. To add the link choose one of the following link types:<br/>
+   i. **Open URL**
+      * **URL**: Enter the web address where you want the user to navigate when they click the link or image.
+      * **Post back**: Specify the text that will be sent to the bot when the user clicks the link.
+      <img src="https://imgur.com/zvpgSAV.png" alt="drawing" width="50%"/>
 
-#### Setting to Close or Minimise the banner
+   ii. **Go to flow** 
+      * **Go to flow**: Select the specific flow where you want to direct users.
+      * **Analytics**: Enter a keyword to track button clicks. This will help you track how many users have clicked this button. You can view this status in **Insights > Data Explorer > Custom Tables > Analytics**.
 
-Here, you can choose whether to allow users to either minimize the banner with a customizable text message or completely close and remove the banner from the chat widget. **Minimise on close** offers users the option to close the banner while displaying custom text on it. **Close** enables users to fully close the banner and remove it from the AI-agent.
+      <img src="https://imgur.com/QnvfuW1.png" alt="drawing" width="50%"/>
+
+**Add a redirection URL in callout banner button**
+
+You can configure a callout banner with a button to redirect users to a specified webpage. This helps you to guide users to specific pages based on the provided URL.
+
+To configure the callout banner, follow these steps:
+
+1. Click **+ Add a callout** to create a new callout banner.
+
+    <img src="https://imgur.com/MgQVHYp.png" alt="drawing" width="70%"/>
+    
+2. Define the banner settings:<br/>
+   i. **Type of banner**: Choose either Text or Image as the type of banner.<br/>
+   ii. **Text**: Enter the message you want to display in the banner's Text field.<br/>
+   iii. **Replies**: Click the button and modify its label as needed.<br/>
+   
+      <img src="https://imgur.com/Fnr9zPT.png" alt="drawing" width="60%"/>
+  
+3. Enter the name of the button that you want to display in the callout banner. 
+
+   <img src="https://imgur.com/WNlxCZD.png" alt="drawing" width="80%"/>   
+        
+4. Enable the **Advanced settings** to access the Link option.
+
+    <img src="https://imgur.com/zQrcLaq.png" alt="drawing" width="80%"/>
+
+5. In the URL field, enter the webpage address where users will be redirected when the button is clicked. Click **Update** to save the changes.
+
+     <img src="https://imgur.com/dgyo5Sm.png" alt="drawing" width="70%"/>
+     
+6. To test the banner, click **Preview** and the below high-lighted button option.
+
+    ![](https://imgur.com/HnH9RWa.png)
+    
+7. Once users click the button in the callout banner, they will be redirected to the webpage specified in Step 
+
+   ![](https://imgur.com/LKJEKuI.png) 
+
+
+**Setting to Close or Minimise the banner**
+
+You can choose whether to allow users to either minimize the banner with a customizable text message or completely close and remove the banner from the chat widget. **Minimise on close** allows you to close the banner while displaying custom text on it. **Close** enables users to fully close the banner and remove it from the AI-agent.
 
 1. Click **Settings** on top to define the banner's status once accessed. 
 
@@ -133,9 +197,5 @@ Here, you can choose whether to allow users to either minimize the banner with a
 2. Choose your preference and click **Save**.
 
    <img src="https://i.imgur.com/8QXRABh.png" alt="drawing" width="40%"/>
-
-### Bot objective
-
-Specify the primary goal of the AI-agent and the purpose of its interaction with users. This is just for internal purpose.
-
-   <img src="https://i.imgur.com/HBEYg6o.png" alt="drawing" width="40%"/>
+    
+    

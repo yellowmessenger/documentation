@@ -7,13 +7,13 @@ Apple Business Chat (ABC) is a messaging app (iOS) that allows you to chat with 
 
 Apple Business Chat integration helps businesses to provide customer support, promote their brand, and schedule appointments.
 
-For instance, if you have a question about a product, you can use the bot integrated with the ABC channel to receive instant assistance without having to connect with an agent.
+For instance, if you have a question about a product, you can use the AI-agent integrated with the ABC channel to receive instant assistance without having to connect with an agent.
 
 In this article, you will learn:
 
 * [How to setup messages for Business account](#setup-your-abc-channel)
 * [How to connect messages for business with Yellow.ai](#connect-abc-channel-to-your-bot)
-* [How to test your bot on ABC](#test-your-bot-on-abc)
+* [How to test your AI-agent on ABC](#test-your-bot-on-abc)
 
 
 ## Setup your ABC channel
