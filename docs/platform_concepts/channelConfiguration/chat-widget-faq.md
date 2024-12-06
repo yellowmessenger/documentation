@@ -478,7 +478,7 @@ return new Promise(async (resolve, reject) => {
 <div>
  <br/>
  <div>The following are the two options to prevent the bot icon from overlapping:<br/> 1.Write a custom script to override the position.<br/>
-2. Hide the default icon and create a custom entry point or button on the site. Use the <b>window.YellowMessengerPlugin.openBot()</b> function to open the bot when a user clicks on the custom button. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/function-widgets#11-hide-the-bot-by-default">here</a>.<br/> Note that the chat bubble and notification icon will not be displayed if a custom icon is deployed.
+2. Hide the default icon and create a custom entry point or button on the site. Use the <b>window.YellowMessengerPlugin.openBot()</b> function to open the bot when a user clicks on the custom button. For more information, click <a href="https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/function-widgets#hide-the-bot-by-default">here</a>.<br/> Note that the chat bubble and notification icon will not be displayed if a custom icon is deployed.
  </div>
   </div>
 </details>
