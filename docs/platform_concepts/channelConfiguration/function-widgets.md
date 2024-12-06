@@ -14,7 +14,7 @@ In this article, you will learn:
 * [How to customize the visiblity of bot icon on the website?](#1-customise-the-appearance-of-your-chat-widget)
 * [How to trigger a flow using functions?](#2-trigger-specific-flow-via-payload)
 
-## 1. Customise the appearance of your chat widget 
+## Customise the appearance of your chat widget 
 
 If the bot’s default customization settings do not match your brand guidelines, or if you do not want to display the bot right after the page load, you can use the following steps to set up the bot in a way so that it is displayed only when you want it to.
 
@@ -56,7 +56,7 @@ Host depends on the region where the bot is deployed. If this is not deployed re
 | R4 | USA  | https://r4.cloud.yellow.ai |
 | R5 | EUROPE | https://r5.cloud.yellow.ai |
 
-### 1.1 Hide the bot by default
+### Hide the bot by default
 
 Inside `window.ymConfig` in the above script, add `hideChatButton: true`. When the website loads, you will not see the bot icon on the web page.
 
@@ -99,7 +99,7 @@ You can make use of the following out-of-the-box functions with our bot based on
 | window.YellowMessengerPlugin.closeBot() | Closes chat widget |
 | window.YellowMessengerPlugin.toggleChat() | Toggles chat widget to opposite state. That is, Opens chat widget if already closed. Closes chat widget if already open. |
 
-## 2. Trigger specific flow using function in the payload
+## Trigger specific flow using function in the payload
 
 A flow slug or journey slug is the combination of the flow name with auto-generated characters in the format -  `/flow-name_{auto-generated characters}`.
 
@@ -138,4 +138,42 @@ window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai",
     }
 })(); 
 </script>
+```
+
+## Hide CTAs in chat widget
+
+When the bot takes time to load due to network or server issues, you can better the user experience by temporarily disabling user interactions. This prevents confusion and ensures users cannot send inputs before the bot is ready.
+
+Options that you can disable during loading:
+* **Input field**: Prevents users from typing messages.
+* **Home button**: Disables navigation until the bot is fully operational.
+* **Attachment icon**: Hides the ability to send files or media during the loading phase.
+
+To achieve this, add `setDisableActionsTimeout: true` inside the **window.ymConfig** script. This setting ensures that the input field, home button, and attachment icon remain hidden when the chatbot opens on the website and only becomes visible once the bot has fully loaded.
+
+**Sample bot script**:
+
+```javascript
+<script type="text/javascript">
+      window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "setDisableActionsTimeout": true};
+    (function() {
+        var w = window,
+            ic = w.YellowMessenger;
+        if ("function" === typeof ic) ic("reattach_activator"), ic("update", ymConfig);
+        else {
+            var d = document,
+                i = function() {
+                    i.c(arguments)
+                };
+            function l() {
+                var e = d.createElement("script");
+                e.type = "text/javascript", e.async = !0, e.src = "https://cdn.yellowmessenger.com/plugin/widget-v2/latest/dist/main.min.js";
+                var t = d.getElementsByTagName("script")[0];
+                t.parentNode.insertBefore(e, t)
+            }
+            i.q = [], i.c = function(e) {
+                i.q.push(e)
+            }, w.YellowMessenger = i, w.attachEvent ? w.attachEvent("onload", l) : w.addEventListener("load", l, !1)}
+    })();
+    </script>
 ```

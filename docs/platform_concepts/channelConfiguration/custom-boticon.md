@@ -42,6 +42,6 @@ You can choose any animation for the icon if needed.
 
 ## Host custom icon on your website
 
-To display a custom bot icon on your website, you should hide the default bot icon and use the bot function to load the bot when users click on the icon. For more information on the process, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/function-widgets#11-hide-the-bot-by-default).
+To display a custom bot icon on your website, you should hide the default bot icon and use the bot function to load the bot when users click on the icon. For more information on the process, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/function-widgets#hide-the-bot-by-default).
 
    ![](https://i.imgur.com/wTZM4oP.jpg)
