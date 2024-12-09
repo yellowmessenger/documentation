@@ -3,9 +3,8 @@ title : Google Sheets
 sidebar_label : Google Sheets
 ---
 
-## Scope of Integration
 
-Yellow.ai Integration with Google Sheets enables you to seamlessly access Google sheets services. Any customer who has a Google account will be able to connect with yellow.ai using OAuth. Using this integration you can create, read, insert/update and clear values from a spreadsheet.
+Google Sheets integration enables your AI Agent to seamlessly access Google sheets services. You can use OAuth to connect your Google account with yellow.ai using OAuth. Using this integration you can create, read, insert/update and clear values from a spreadsheet.
 
 ## Configuration
 

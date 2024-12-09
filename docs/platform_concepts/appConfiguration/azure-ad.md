@@ -2,14 +2,177 @@
 title : Azure AD integration
 sidebar_label : Azure AD
 ---
-## Introduction
-Azure AD enables features like SSO and for personalizing the app experiences using existing organization data through APIs. For IT admins, it allows complete control over access to applications and resources utilizing security controls like MFA and conditional access.
 
-Simplify single sign-on. Azure AD supports more than 2,800 pre-integrated software as a service (SaaS) applications.
+Azure Active Directory (Azure AD) enhances user management by enabling **Single Sign-On (SSO)** and personalized app experiences through the use of organizational data APIs. This integration also offers IT administrators comprehensive control over application and resource access, using advanced security features like **Multi-Factor Authentication (MFA)** and conditional access.
 
-Yellow.ai comes pre-built with the ADFS (Active Directory Federation Services) integration and generic OAuth implementation.
+#### Key Features:
+- **SSO for Seamless Access:** Azure AD supports integration with over 2,800 pre-configured Software as a Service (SaaS) applications, simplifying access management across systems.  
+- **Security and Personalization:** Use organization-specific data to create secure, tailored experiences.
 
-If ADFS is enabled for authentication, the bot will redirect the user to the AD (Active Directory) login page, wherein the user will need to provide their credentials and once AD authenticates the user, a callback is triggered by ADFS to YM indicating the success or failure of the authentication. When the authentication is successful, ADFS provides the authentication token along with a refresh token and time to live for the token.
+#### Yellow.ai Compatibility:
+Yellow.ai comes pre-integrated with:
+- **Active Directory Federation Services (ADFS)**  
+- **Generic OAuth** implementation  
+
+This ensures secure authentication while supporting diverse organizational needs.
+
+#### Authentication Flow:  
+When ADFS is enabled:  
+1. The bot redirects you to the **Active Directory login page** for credential input.  
+2. AD validates the credentials.  
+3. Upon successful authentication, ADFS triggers a callback to Yellow.ai to indicate the result.  
+4. If authentication succeeds, ADFS generates:  
+   - An **authentication token**  
+   - A **refresh token**  
+   - The token’s **time-to-live (TTL)**  
+
+These tokens allow secure access while maintaining control over session duration.
+
+
+---
+
+
+## **App Registration on Azure AD**
+
+To connect Azure AD with your Yellow.ai bot, you must first register an app in Azure AD and retrieve the following details:  
+1. **Client ID** (Application ID)  
+2. **Tenant ID**  
+3. **Client Secret**
+
+
+### **Steps to Configure the App in Azure AD**
+
+1. Log in to [Azure Portal](https://portal.azure.com) and navigate to **Active Directory** > **App Registrations**.  
+   ![](https://i.imgur.com/CcHq8fL.png)
+
+2. [Register a new application](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate) for the chatbot (if not already registered).  
+
+3. Copy and save the **Application/Client ID** and **Tenant ID** from the **Overview** section.  
+   ![](https://i.imgur.com/CcHq8fL.png)
+
+4. Navigate to **Certificates & Secrets**:  
+   - Click **New Client Secret**.  
+   - Provide a description and set the expiration to **Never**.  
+   - Click **Add**, and copy the generated Client Secret for future use.
+
+5. Go to **Authentication**:  
+   - Click **Add a Platform** > **Web**.  
+   - Add the Redirect URL:  
+     `https://app.yellowmessenger.com/integrations/azureauth/`  
+   - Click **Save**.
+
+6. Configure Permissions:  
+   - Navigate to **API Permissions** > **Add Permission**.  
+   - Add the following common permissions and grant **Admin Consent**:
+
+   | **Scope**          | **Description**                                              |
+   |---------------------|--------------------------------------------------------------|
+   | openid, email, profile, User.Read | Retrieve login details and user profiles using Graph API. |
+   | offline_access      | Required for refresh token retrieval.                        |
+   | User.Read.All       | Read user profiles in the tenant.                            |
+   | Calendars.ReadWrite | Modify user calendars and meetings.                          |
+
+   For more details, refer to the [Graph Permissions Guide](https://docs.microsoft.com/en-us/graph/permissions-reference).
+
+---
+
+### **Steps to Integrate Azure App with Yellow.ai Bot**
+
+1. In the Yellow.ai platform, navigate to the **Development** or **Staging** environment:  
+   - Go to **Extensions** > **Integrations** > **Tools & Utilities** > **Azure**.  
+   - Use the search box if needed.  
+   ![](https://i.imgur.com/UG4GJpt.png)
+
+2. In the **Account Name** field, provide a unique name for the integration (use lowercase alphanumeric characters and underscores only).  
+
+3. Enter the following details obtained from Azure AD:  
+   - **Tenant ID**  
+   - **Client ID**  
+   - **Client Secret**
+
+4. Set the API version to **v2.0**.  
+
+5. Specify the required **Scope** (e.g., `Calendars.ReadWrite offline_access User.Read`).  
+
+6. Click **Connect**.  
+   ![](https://i.imgur.com/IfoUcrn.png)
+
+7. To connect additional accounts, click **+ Add Account** and repeat the steps above. A maximum of 15 accounts can be added.
+
+---
+
+### **Authentication Workflow**
+
+When a user initiates authentication via Azure AD:  
+1. The bot redirects the user to the **Active Directory login page**.  
+2. After entering their credentials, AD validates them.  
+3. Upon successful authentication, Azure AD sends a callback to Yellow.ai with:  
+   - **Access Token**  
+   - **Refresh Token**  
+   - **Token Expiry Details**
+
+#### **Access Token Usage**  
+The **Access Token** allows secure access to resources within the permissions granted. Note: Tokens expire in 1 hour but can be refreshed using the **Refresh Token** for up to 90 days.
+
+---
+
+### **Retrieve User Profile via Graph API**
+
+To fetch user details using the **Access Token**, send a GET request to the Microsoft Graph API:
+
+#### **Request:**
+
+```bash
+curl --location --request GET 'https://graph.microsoft.com/v1.0/me' \
+--header 'Authorization: Bearer {accessToken}'
+```
+
+#### **Response Example:**
+
+```json
+{
+  "@odata.context": "https://graph.microsoft.com/v1.0/$metadata#users/$entity",
+  "businessPhones": [],
+  "displayName": "Shubhi Saxena",
+  "givenName": "Shubhi",
+  "jobTitle": null,
+  "mail": "shubhi@bitonictexxxxxxx.onmicrosoft.com",
+  "mobilePhone": null,
+  "surname": "Saxena",
+  "userPrincipalName": "shubhi@bitonictexxxxxxx.onmicrosoft.com",
+  "id": "e4a5dbe5-4750-41e7-8axxxxxxxxx"
+}
+```
+
+---
+
+### **Other Useful Graph APIs**
+
+1. [Get User Events](https://docs.microsoft.com/en-us/graph/api/user-list-events?view=graph-rest-1.0&tabs=http)  
+2. [Send Email on Behalf of a User](https://docs.microsoft.com/en-us/graph/api/user-sendmail?view=graph-rest-1.0&tabs=http)  
+3. [Retrieve User Tasks](https://docs.microsoft.com/en-us/graph/api/planneruser-list-tasks?view=graph-rest-1.0&tabs=http)  
+4. [Update Password](https://docs.microsoft.com/en-us/graph/api/resources/passwordprofile?view=graph-rest-1.0)
+
+---
+
+### **Resources for Exploration**
+
+- [Microsoft Graph API Documentation](https://docs.microsoft.com/en-us/graph/api/overview?view=graph-rest-1.0)  
+- [Graph Explorer](https://developer.microsoft.com/en-us/graph/graph-explorer)
+
+--- 
+
+This version ensures clarity, professionalism, and adherence to documentation standards. It is structured for easy navigation and a seamless user experience.
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -29,7 +192,7 @@ For connecting Azure AD with YM bot, following details need to be obtained using
    ![](https://i.imgur.com/CcHq8fL.png)
 
 
-2. Register a new app for the chatbot (if not already registered)
+2. [Register a new app](https://learn.microsoft.com/en-us/entra/identity-platform/quickstart-register-app?tabs=certificate) for the chatbot (if not already registered)
 
 3. Copy and Save the Application/Client ID and tenant ID from overview section.
 
