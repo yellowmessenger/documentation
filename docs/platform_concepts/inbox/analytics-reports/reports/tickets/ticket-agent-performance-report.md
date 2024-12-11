@@ -36,8 +36,6 @@ Only an admin can download reports.
 |23| Agent busy duration [HH:MM:SS]|The total time spent by the agent under the busy status on the selected day||
 |24| Agent away duration [HH:MM:SS]|The total time spent by the agent under the away status on the selected date|
 |25| Custom status duration [HH:MM:SS]|The total time spent by the agent under the custom statuses, if any, on the selected date||
-|26 | Agent login time [HH:MM:SS] | The time at which the agent logged in on that day || 
-|27| Agent logout time [HH:MM:SS] | ||
 
 ---
 

@@ -621,9 +621,9 @@ module.exports = {
 
 
               items: [
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-activity-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-performance-report",
-                "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
 
               ],
