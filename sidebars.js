@@ -621,9 +621,9 @@ module.exports = {
 
 
               items: [
+                "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-activity-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-agent-performance-report",
-                "platform_concepts/inbox/analytics-reports/reports/chats/chat-archives-report",
                 "platform_concepts/inbox/analytics-reports/reports/chats/chat-report-metrics",
 
               ],
@@ -1018,7 +1018,20 @@ module.exports = {
         "platform_concepts/analyze/chat-logs",
        // "platform_concepts/studio/build/bot-logs",
         "platform_concepts/analyze/training-performance",
-        "platform_concepts/analyze/topics",
+    //Topics 
+        {
+          type: "category",
+          label: "Topics",
+         link: {type: 'doc', id: 'platform_concepts/analyze/topics'},
+          collapsed: true,
+          items: [
+             // third party hand off 
+            "platform_concepts/analyze/handoffnode",
+
+              ],
+        }, 
+
+
       ],
 }, 
 //end of analyse
