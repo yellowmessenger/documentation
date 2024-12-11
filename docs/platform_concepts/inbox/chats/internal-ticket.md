@@ -85,9 +85,18 @@ You can only send text, images, files, and emojis on this chat screen. Other opt
 - Sending messages outside of the thread will not facilitate proper communication.
 :::
 
-7. Once communication is concluded, agents can click **Mark as Done** on their chat screen to close the Slack thread. After closure, the Slack chat becomes read-only, and further conversation cannot be continued.
+7. Once communication is concluded, agents can click **Mark as Done** on their chat screen to close the Slack thread. 
 
     ![](https://hackmd.io/_uploads/r1I4WzA3n.png)
+
+**Re-open a closed chat**
+
+Once ticket is closed, click to open it and select **Re-open**. 
+
+<img src="https://imgur.com/7XoRduB.png" width="50%"/>
+<img src="https://imgur.com/ZxltR7v.png" width="50%"/>
+
+
 
 ---------
 
@@ -106,5 +115,4 @@ You can only send text, images, files, and emojis on this chat screen. Other opt
 
 - Admins do not receive notifications for these Slack messages.
 - Emojis sent from Slack to the inbox agent (L1) will not be visible in the inbox.
-- Reopening a chat ticket creates a new separate ticket, and Slack threads from the previous ticket are not visible in the reopened ticket.
 - Inbox does not support all message types and formatting options that Slack provides in its UI. For example, formatting styles like bold, italics, and strikethrough are not supported in the chat interface.
