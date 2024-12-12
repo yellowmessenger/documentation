@@ -24,31 +24,50 @@ You need to create categories based on which the user queries will be routed.
 
    ![](https://i.imgur.com/SIjC5PQ.png)
    
-3. Click **Add**.
+3. Click **New group**.
 
-   ![](https://i.imgur.com/yUQBcyk.png)
+   ![](https://i.imgur.com/2T3yzmQ.png)
    
-4. In **Name**, enter a name for your category.
-5. In **Parent** select the  category under which you want to add this as a  sub-category. If you do not have a parent category, fill the rest of the fields based on your preference and click **Save**.
+4. In **Name**, enter a name for your category and fill in the remaining fields based on your preferences and click **Save**.
 
-   ![](https://i.imgur.com/0QMo2KD.png)
+   <img src="https://i.imgur.com/fbc5ZU3.png" alt="drawing" width="50%"/>
 
 :::info
 You can create separate categories for chats handled by the bot and the chats handled by the agent.
 :::
 
+5. Navigate to the category you created, click to expand it, and then select **Add Category**.
+
+    <img src="https://i.imgur.com/kBzvFV1.png" alt="drawing" width="80%"/>
+
+6. Enter the name of the category and click **Save**.    
+
+   <img src="https://i.imgur.com/gTFni8W.png" alt="drawing" width="50%"/>
+   
  
 #### Fetch category ID
 
 We need the category ID to route the messages to that specific category. 
 
-1. Click the edit icon beside the preferred category.
+1. Go to **Digital** > **Exports**.
 
-   ![](https://i.imgur.com/F3OEl1r.png)
+   <img src="https://i.imgur.com/gwdYsO5.png" alt="drawing" width="70%"/>
 
-2. Copy the category ID from the URL as shown in the image below.
+2. Select categories and click **Export**.
 
-   ![](https://i.imgur.com/D6iB7a0.png)
+   ![](https://i.imgur.com/VthlcYB.png)
+
+3. Choose the channel that you have created. 
+
+   <img src="https://i.imgur.com/KBlfrKz.png" alt="drawing" width="50%"/>
+
+4. Select the desired format (Excel or BI) for the export and specify the fields that you want to export, then click **Export**.   
+
+* You will receive a notification via email with the download link.   
+
+5. Open the downloaded excel sheet and go to the category you created in the sheet to copy the **category ID**.
+
+    <img src="https://i.imgur.com/J0Kp4Zy.png" alt="drawing" width="80%"/>
 
 ### Create a channel
 
@@ -88,20 +107,20 @@ Engage Digital lets you create virtual agents to assist your human agents. Virtu
 
    ![](https://i.imgur.com/0HHTRiJ.png)
 
-2. Click **Engage Virtual Agent**.
+2. Click **Intelligent Virtual Agent**.
 
-   ![](https://i.imgur.com/nGKTykv.png)
+   ![](https://i.imgur.com/x936uRQ.png)
 
 3. Under **General**, enable **Active** and fill in the following fields:
 
    ![](https://i.imgur.com/3dB2kBb.png)
 
-* **Name**: Provide a name to the Virtual Agent.
-* **Role**: Auto-populated by the RingCentral platform as **Virtual Agent Role**.
-* **First Name**: Provide a first name to your agent.
-* **Last Name**: Provide a last name to your agent.
-* **Channels**: Choose the channel created in [this](#create-a-channel) step.
-* **Categories**: Choose the category created in [this](#create-categories-for-message-routing) step.
+    * **Name**: Provide a name to the Virtual Agent.
+    * **Role**: Auto-populated by the RingCentral platform as **Virtual Agent Role**.
+    * **First Name**: Provide a first name to your agent.
+    * **Last Name**: Provide a last name to your agent.
+    * **Channels**: Choose the channel created in [this](#create-a-channel) step.
+    * **Categories**: Choose the category created in [this](#create-categories-for-message-routing) step.
 
 4. Under **Configuration**, enter the following details.
    
