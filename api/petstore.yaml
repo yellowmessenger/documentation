@@ -435,39 +435,70 @@ paths:
       tags:
         - User
       summary: Get user details
-      description: Retrieves the details of a specific user based on the userId provided.
-      operationId: getUser
+      description: Retrieve all details of a specific user. To fetch specifc custom or system user properties, use the `properties` param.
       parameters:
         - name: userId
           in: path
-          description: The unique ID of the user.
+          description: The unique identifier for the user.
           required: true
           schema:
             type: string
+            example: x1640004486565_vjXfIP8Fmzs275FCuG99l
         - name: bot
           in: query
-          description: The unique bot ID in which the user record is available.
+          description: The unique identifier for the bot.
           required: true
           schema:
             type: string
+            example: x1640004486565
         - name: allProperties
           in: query
-          description: Pass `true` to retrieve all user properties. By default, only a few standard properties firstName, lastName
+          description: Pass `true` to fetch all user properties; else, set `false`.
+          required: false
           schema:
             type: string
+            example: RMEmail,phone            
+        - name: properties
+          in: query
+          description: Use to fetch specific system or custom user properties. A comma-separated list of user properties to fetch. Leave empty to fetch all properties.
+          required: false
+          schema:
+            type: string-enum
+            example: RMEmail,phone
+        - name: userId
+          in: query
+          description: Whether to include the `userId` field in the response. Defaults to `yes`.
+          required: false
+          schema:
+            type: string
+            enum:
+              - yes
+              - no
+            example: yes
       responses:
         '200':
-          description: OK
+          description: User properties fetched successfully.
           content:
             application/json:
               schema:
                 type: object
                 properties:
-                  contactDetails:
+                  message:
+                    type: string
+                    example: Fetched user successfully
+                  data:
                     type: object
-                    description: Details of the created contact
+                    additionalProperties:
+                      type: object
+                      properties:
+                        value:
+                          type: string
+                          example: test@yellow.com
+                        propertyType:
+                          type: string
+                          example: Custom
         '400':
-          description: Bad Request
+          description: Bad request. Invalid parameters provided.
           content:
             application/json:
               schema:
@@ -475,13 +506,9 @@ paths:
                 properties:
                   error:
                     type: string
-                    description: Error details
+                    example: Invalid userId or botId.
         '401':
-          description: Unauthorized request or invalid `X-Auth-Token` or `botId`
-        '406':
-          description: Not Acceptable
-        '500':
-          description: Internal Server Error
+          description: Unauthorized. Invalid or missing API key.
           content:
             application/json:
               schema:
@@ -489,7 +516,18 @@ paths:
                 properties:
                   error:
                     type: string
-                    description: Error details            
+                    example: Unauthorized access.
+        '500':
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: An unexpected error occurred.
+       
     put:
       security:
         - ApiKeyAuth: []    
@@ -724,7 +762,7 @@ paths:
                 properties:
                   message:
                     type: string
-                    description: Empty message string.
+                    description: 
                   data:
                     type: string
                     description: Unique ID for the bulk creation of users.

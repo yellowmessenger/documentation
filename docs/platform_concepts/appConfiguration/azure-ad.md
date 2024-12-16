@@ -208,7 +208,7 @@ For connecting Azure AD with YM bot, following details need to be obtained using
 
 6. Add/Remove permission and Grant Admin consent for the App.
 
-7. Goto API Permissions > Add the required permissions.
+7. Go to API Permissions > Add the required permissions.
 
 
 **Common permission:**
