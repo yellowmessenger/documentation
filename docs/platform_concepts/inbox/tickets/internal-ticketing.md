@@ -34,8 +34,9 @@ Internal ticket communication between different agent tiers occurs through Slack
 :::note
 - Only agents with inbox access can access Slack threads.
 - Admins cannot generate slack threads.
-- Threads are visible to agents exclusively in the My Tickets tab for interaction. 
-- Threads are visible to admins on All tickets for monitoring (read-only).
+- Threads are visible to agents and admins in **My Tickets, Collaborating & Resolved Tickets**.
+- **Unassigned Tickets** will not have the slack thread option. 
+- Users who are not the assigned agent but have ticket access—such (agents in the group and admins) have read-only access to the threads.
 :::
 
 
