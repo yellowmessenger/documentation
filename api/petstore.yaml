@@ -76,6 +76,8 @@ servers:
 tags:
   - name: User
     description: Manage users
+  - name: Engage
+    description: Campaign related APIs
   - name: Event
     description: Operations about users
   - name: emailTicket
@@ -838,7 +840,124 @@ paths:
                             additionalProperties:
                               type: string
                               description: "Key is the userId, value is the botId"
+  '/engagements/audience/update':
+    post:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Engage     
+      summary: Update Audience Records
+      description: Update specific fields such as tags and call_count for a given audience ID.
+      parameters:
+        - name: audienceID
+          in: path
+          required: true
+          description: The ID of the audience to update.
+          schema:
+            type: string
+        - name: bot
+          in: query
+          required: true
+          description: The bot ID specific to your environment.
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                _id:
+                  type: string
+                  description: The unique ID of the audience.
+                tags:
+                  type: array
+                  description: Tags to assign to the audience.
+                  items:
+                    type: string
+                  example: ["CONNECTED"]
+                call_count:
+                  type: integer
+                  description: Number of calls associated with the audience.
+                  example: 5
+      responses:
+        '200':
+          description: Audience updated successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Audience updated successfully.
+                  updatedFields:
+                    type: object
+                    properties:
+                      tags:
+                        type: array
+                        items:
+                          type: string
+                      call_count:
+                        type: integer
+        '400':
+          description: Invalid request or missing parameters.
+        '401':
+          description: Unauthorized request. Check your API key.
 
+  /audience/delete:
+    delete:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Engage    
+      summary: Delete Audience Records
+      description: Delete one or more audience records by their IDs.
+      parameters:
+        - name: bot
+          in: query
+          required: true
+          description: The bot ID specific to your environment.
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                idArray:
+                  type: array
+                  description: Array of audience record IDs to delete.
+                  items:
+                    type: string
+                audienceId:
+                  type: string
+                  description: Audience ID linked to the records being deleted.
+      responses:
+        '200':
+          description: Records deleted successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Records deleted successfully.
+                  deletedRecords:
+                    type: array
+                    items:
+                      type: string
+                      example: record_id_123
+        '400':
+          description: Invalid request or missing parameters.
+        '401':
+          description: Unauthorized request. Check your API key.
+
+  
 
   '/cdp/api/v1/event':
     post:
@@ -1271,8 +1390,12 @@ paths:
 
   /api/templates/all:
     get:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Engage    
       summary: Get Outbound Templates
-      description: Retrieve all active Outbound templates associated with a specified bot ID. These templates can be used to trigger campaigns in Engage CRM.
+      description: Retrieve all active Outbound templates associated with a specified bot ID. These templates can be used to trigger campaigns in Engage.
       operationId: getAllActiveTemplates
       parameters:
         - name: bot
