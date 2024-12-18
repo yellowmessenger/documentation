@@ -7,22 +7,23 @@ sidebar_label : Report with multiple datasource
 The table joins feature is currently feature-gated. Please contact the support team to request access.
 :::
 
+Combine or merge **two** default tables into a single report using different types of joins.
 
-You can create a join query (report) in **Insights > Data Explorer** by using the **Create query with multiple data source** option. This allows you to combine or merge **two** default tables into a single report using different types of joins.
-
+You can create a join query (report) in **Insights > Data Explorer** by using the **Create query with multiple data source** option. 
 
 **Common example**: You can join the Chat Tickets and Email Tickets tables using the common column UID to determine if any users have raised tickets through both chat and email channels.
 
 -----------
 
-## Types of table joins 
+## <a name="joins"></a>  Types of table joins 
 
 You can join two tables using the following joins: 
 
 ### Inner join
 
+Use an inner join to combine rows from two tables that have matching keys and a direct relationship.
+
 Only rows that have matching values in both tables are returned. If there is no match between the columns that were specified, that row does not appear in the result set.
-**Use case**: Use an inner join to combine rows from two tables that have matching keys and a direct relationship.
 
 
 **Example**: You can join the Chat Tickets and Email Tickets tables using the common column UID to determine if any users have raised tickets through both chat and email channels.
@@ -31,23 +32,26 @@ Only rows that have matching values in both tables are returned. If there is no 
 
 ### Left outer join (Left join)
 
+Use a left outer join when you need all the rows from the left table, regardless of whether there is a matching row in the right table.
+
 A left outer join returns all rows from the left table, and the matched rows from the right table. If there is no match, the result is NULL (no records are displayed) from the right table.
-**Use case**: Use a left outer join when you need all the rows from the left table, regardless of whether there is a matching row in the right table.
 
 ![image](https://imgur.com/CPMudRl.png)
 
 ### Right outer join (Right join)
 
+Use a right outer join when you need all the rows from the right table, regardless of whether there is a matching row in the left table.
+
 A right outer join returns all rows from the right table, and the matched rows from the left table. If there is no match, the result is NULL (no records are displayed) from the left table.
-**Use case**: Use a right outer join when you need all the rows from the right table, regardless of whether there is a matching row in the left table.
 
 ![image](https://imgur.com/IyuHlaW.png)
 
 
 ### Full outer join (Full join)
 
+Use a full outer join when you need all the rows from both tables, regardless of whether there are matches in the other table.
+
 A full outer join returns all rows when there is a match in either left or right table. If there is no match, the result is NULL (no records are displayed) from the side where there is no match.
-**Use case**: Use a full outer join when you need all the rows from both tables, regardless of whether there are matches in the other table.
 
 ![image](https://imgur.com/w8GqojC.png)
 
@@ -58,7 +62,7 @@ A full outer join returns all rows when there is a match in either left or right
 Follow the steps below to create a report using two data sources:
 
 1. Open **Insights > Data explorer**. Click **+Create report**. 
-    ![image](https://imgur.com/TcbkVnz.png)
+    ![image](https://imgur.com/3RfOC0d.png)
               
 2. Select **Custom query > Multiple data source** and **Next**. 
     ![image](https://imgur.com/TJVugCV.png)              
@@ -82,40 +86,90 @@ Follow the steps below to create a report using two data sources:
 12. User feedback
 13. Video chats
 14. CDR Reports
-15. Bot Tables (All the custom tables created in Automation)
+15. Custom table > Analytics
+16. Custom tables (all the custom tables created in Automation)
 
 :::
 
 > You can only select 2 data sources (tables).
 
 
-4. Click the join option and select the type of join operation (inner, left, right, or full join).      
+4. Click the join option and select the type of join operation from inner, left, right, or full join.      
     ![image](https://imgur.com/k3pXget.png)        
+
+> Refer the [above section](#joins)  to understand joins in detail. 
+
 
 5. Under **Select join criteria**, select a column present in both the tables for comparison. If there are matching values in the selected columns, the tables will be merged and common rows will be returned.          
     ![image](https://imgur.com/ZrOp89N.png)        
 
 > Column names in Datasource 2 are displayed based on the columns selected in Datasource 1. Both columns must have the same data type, ensuring that the columns shown in Datasource 2 match the data type of those selected in Datasource 1.
 
-6. With column projection, you can choose which columns from each data source to include in the joined table:
+6. Add an alpha-numeric **Query title** without any special characters and identical name as the other tables. 
+
+    ![image](https://imgur.com/hVzAeBw.png)
+
+7. Choose the time range for fetching data from both tables. Select the desired range and value from the dropdown menu.        
+    <img src="https://imgur.com/dB4cbtB.png" width="60%"/>
+    ![image](https://imgur.com/XRjyUss.png)
+
+
+> When selecting Previous X days, you can choose to include or exclude the current date (today) while fetching the data.
+
+8. With column projection, you can choose which columns from each data source to include in the joined table:
     - To deselect a column, click the cancel option next to the column name.
     - To select a column, pick a column name from the dropdown list.
 
-![image](https://imgur.com/r5U28z7.png)
+    ![image](https://imgur.com/r5U28z7.png)
 
-![image](https://imgur.com/60mksGY.png)
+    ![image](https://imgur.com/60mksGY.png)
+
+9. Click **Create** to generate a report. 
+
+----
+
+### Alerts 
+
+You don’t need to stay on the page alfer clicking **Create**; you can navigate to other pages. The process runs asynchronously, and you will receive a notification once it’s complete. All users with AI agent access can view the notification.
+You can view this on:
+
+**The Data explorer page**   
+![image](https://hackmd.io/_uploads/Bk0mrRyBJg.png)
 
 
-7. A merged table is generated (untitled report) and is automatically filtered for the last 30 days. You can perform various actions on the report, such as:
-    - Scheduling the report once you **Save query**
-    - **Save query** and add this table to custom reports/dashboard
-    - Summarizing and visualizing the report
-    - Adding **filters**
-    - Edit the data by clicking **Edit join query** 
+**Notifications tab** 
+![image](https://imgur.com/yDr0hf4.png)
 
-![image](https://imgur.com/J1Wpxfp.png)        
+----------------
+
+### Report generation 
+
+The **Query queue** page displays all reports created by joining tables. 
+* While a report is being generated, it appears under **Running queries** along with its status, and you have the option to cancel the generation. 
+* **Past queries** can also be viewed. 
+* The time taken to generate the report and its creation time are displayed.
+
+![image](https://imgur.com/8iSwvI3.png)
+
+> If query fails, retry with lower time range (example: Time-range as 2 months instead of 2 years). 
+
+A merged table is generated with data from the selected time range, you can add **Filters** to the report and **Summarise/Visualise** it. 
+
+> You can Export the new table as a CSV. 
+
+<!--
+You can perform various actions on the report, such as:
+* Scheduling the report once you **Save query**
+* **Save query** and add this table to **custom reports/dashboard**
+* Summarizing and visualizing the report
+* Adding **filters**
+
+--> 
+
 
 -------------
+
+<!--
 
 ### Edit join query
 
@@ -131,6 +185,8 @@ Follow the steps below to create a report using two data sources:
 
 ----------
 
+
+
 ### Save query
 
 To reuse the joined table, save it by clicking **Save Query** and assigning a name to the report. You can find these saved reports under **Insights > Data Explorer > Custom reports**.
@@ -139,12 +195,13 @@ To reuse the joined table, save it by clicking **Save Query** and assigning a na
 
 ----------
 
+-->
+
 ### Add filters
 
 To filter the table data:
 
 1. Click **Filters**.
-    ![image](https://imgur.com/3oBwxN6.png)
 2. Choose filters for each table separately.
     ![image](https://imgur.com/2E1pGS3.png)
 3. Add filter data for the required fields and click **Apply filter**.
@@ -157,8 +214,7 @@ To filter the table data:
 ## Limitations of a table join
 
 1. Table binning is not supported while filtering the tables.
-2. Exporting the new table as a CSV is not possible.
-3. You cannot add custom formulas to a report created by joining 2 tables. 
+2. You cannot add custom formulas to a report created by joining 2 tables. 
 
 
 
