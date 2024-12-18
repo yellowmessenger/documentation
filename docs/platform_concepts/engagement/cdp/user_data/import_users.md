@@ -24,7 +24,7 @@ During the CSV import process, the system allows simultaneous import of only two
 Create a CSV file with user details and ensure that the values passed in the CSV file adhere to the data types of user properties.
 
 :::note
-A CSV file cannot exceed 30 MB.
+- A CSV file cannot exceed 30 MB.
 :::
 
 1.  **Use matching header names**: Ensure that the column names in the CSV file exactly match the column names specified during the creation of the audience table. It also leverages [Auto column Mapping](#auto-mapping-of-csv-columns) feature that simplifies the process of mapping headers by matching them with user properties that have similar names.
@@ -94,6 +94,11 @@ To import the CSV file with user details, follow these steps:
 3. In **User id**, choose the column that contains userId.
 
    ![](https://i.imgur.com/SahEW5T.png)
+
+
+:::note
+When uploading a CSV file, it is important to map the unique ID column to **userId**, as this is the only column recognized as the unique identifier in User360. Duplicate records may occur if the correct column is not mapped. User360 relies exclusively on this field for managing records, and all other columns are bypassed for uniqueness validation, resulting in duplication.
+:::
 
 4. In **Map CSV headers**, associate each CSV header with the corresponding user property. The system also performs auto-mapping of columns based on matching column names and the previous mapping if exists.
 
