@@ -165,47 +165,9 @@ The **Query queue** page displays all reports created by joining tables.
 
 A merged table is generated with data from the selected time range, you can add **Filters** to the report and **Summarise/Visualise** it. 
 
-> You can Export the new table as a CSV. 
+> You can Export the generated table as a CSV. 
 
-<!--
-You can perform various actions on the report, such as:
-* Scheduling the report once you **Save query**
-* **Save query** and add this table to **custom reports/dashboard**
-* Summarizing and visualizing the report
-* Adding **filters**
-
---> 
-
-
--------------
-
-<!--
-
-### Edit join query
-
-1. To make changes to the generated table, click **Edit join query**. 
-
-![image](https://imgur.com/x6kFXSK.png)
-
-2. You can select new Data sources, Join criteria or Projection and click **Update**.  
-
-![image](https://imgur.com/3bUJWNR.png)
-
-3. Click **Save query** to save the updated table with a new name.  
-
-----------
-
-
-
-### Save query
-
-To reuse the joined table, save it by clicking **Save Query** and assigning a name to the report. You can find these saved reports under **Insights > Data Explorer > Custom reports**.
-
-![image](https://imgur.com/h6qaMcq.png)
-
-----------
-
--->
+-----
 
 ### Add filters
 
