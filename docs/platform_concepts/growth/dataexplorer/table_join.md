@@ -9,7 +9,7 @@ The table joins feature is currently feature-gated. Please contact the support t
 
 Combine or merge **two** default tables into a single report using different types of joins.
 
-You can create a join query (report) in **Insights > Data Explorer** by using the **Create query with multiple data source** option. 
+You can create a join query (report) in **Insights > Data Explorer** by using the **Create query with multiple datasource** option. 
 
 **Common example**: You can join the Chat Tickets and Email Tickets tables using the common column UID to determine if any users have raised tickets through both chat and email channels.
 
@@ -57,19 +57,19 @@ A full outer join returns all rows when there is a match in either left or right
 
 --------------
 
-## Create report with multiple data sources
+## Create report with multiple datasources
 
-Follow the steps below to create a report using two data sources:
+Follow the steps below to create a report using two datasources:
 
-1. Open **Insights > Data explorer**. Click **+Create report**. 
+1. Open **Insights > Data explorer**. Click **+ Create report**. 
     ![image](https://imgur.com/3RfOC0d.png)
               
-2. Select **Custom query > Multiple data source** and **Next**. 
+2. Select **Custom query > Multiple datasource** and click **Next**. 
     ![image](https://imgur.com/TJVugCV.png)              
-3. Select **two** data sources from the available list of tables.
+3. Select **two** datasources from the available list of tables.
     ![image](https://imgur.com/fUFx1pD.png)
 
-:::info
+:::note
 
 **Tables available**: 
 1. Agent events
@@ -89,10 +89,12 @@ Follow the steps below to create a report using two data sources:
 15. Custom table > Analytics
 16. Custom tables (all the custom tables created in Automation)
 
+> Learn more on these table fields [here](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions). 
+
+
 :::
 
-> You can only select 2 data sources (tables).
-
+> You can select any two datasources at max for a query.
 
 4. Click the join option and select the type of join operation from inner, left, right, or full join.      
     ![image](https://imgur.com/k3pXget.png)        
@@ -100,12 +102,12 @@ Follow the steps below to create a report using two data sources:
 > Refer the [above section](#joins)  to understand joins in detail. 
 
 
-5. Under **Select join criteria**, select a column present in both the tables for comparison. If there are matching values in the selected columns, the tables will be merged and common rows will be returned.          
+5. Under **Select join criteria**, select a column present in both the tables for combining. 
     ![image](https://imgur.com/ZrOp89N.png)        
 
-> Column names in Datasource 2 are displayed based on the columns selected in Datasource 1. Both columns must have the same data type, ensuring that the columns shown in Datasource 2 match the data type of those selected in Datasource 1.
+> Column names in Datasource 2 are displayed based on the columns selected in Datasource 1. Both columns must have the same data type, ensuring that the columns shown in Datasource 2 match the data type of those selected in Datasource 1 and vice versa.
 
-6. Add an alpha-numeric **Query title** without any special characters and identical name as the other tables. 
+6. Add an alpha-numeric **Query title** without any special characters (and with spaces) and identical name as the other tables. 
 
     ![image](https://imgur.com/hVzAeBw.png)
 
@@ -114,9 +116,9 @@ Follow the steps below to create a report using two data sources:
     ![image](https://imgur.com/XRjyUss.png)
 
 
-> When selecting Previous X days, you can choose to include or exclude the current date (today) while fetching the data.
+> When selecting Previous X days, you can choose to include or exclude the current date (today) while fetching the data via the checkbox as shown above.
 
-8. With column projection, you can choose which columns from each data source to include in the joined table:
+8. With column projection, you can choose which columns from each datasource to include in the joined table:
     - To deselect a column, click the cancel option next to the column name.
     - To select a column, pick a column name from the dropdown list.
 
@@ -128,17 +130,25 @@ Follow the steps below to create a report using two data sources:
 
 ----
 
+### Report progress 
+
+
+On the Data explorer page, you can see the number of reports that are being generated, that is the queies that are in progress. 
+    ![image](https://hackmd.io/_uploads/Bk0mrRyBJg.png)
+
+
+------
+
 ### Alerts 
 
-You don’t need to stay on the page alfer clicking **Create**; you can navigate to other pages. The process runs asynchronously, and you will receive a notification once it’s complete. All users with AI agent access can view the notification.
-You can view this on:
+You don’t need to stay on the page after clicking **Create**; you are free to navigate to other pages. The process runs asynchronously, and you will receive a notification once it’s complete.
 
-**The Data explorer page**   
-![image](https://hackmd.io/_uploads/Bk0mrRyBJg.png)
+- Admins and Developers will have access to create and use the reports. 
+- Database Viewer can view the reports.
 
+All users with AI agent access can view the notification on the **Notifications tab** 
+    ![image](https://imgur.com/yDr0hf4.png)
 
-**Notifications tab** 
-![image](https://imgur.com/yDr0hf4.png)
 
 ----------------
 
@@ -213,8 +223,9 @@ To filter the table data:
 
 ## Limitations of a table join
 
-1. Table binning is not supported while filtering the tables.
-2. You cannot add custom formulas to a report created by joining 2 tables. 
+1. Only two tables can be joined.  
+2. Table binning is not supported while filtering the tables.
+3. You cannot add custom formulas to a report created by joining 2 tables. 
 
 
 
