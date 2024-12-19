@@ -96,7 +96,8 @@ To add an API using the API interface:
 | **Headers**| Enter the headers required for your API request. Headers are additional pieces of information sent alongside the main request. <br/> **Example:** For authentication, enter **Authorization** as the **Key** and the API key as the **Value**.|
 | **Params**| Enter the parameters to include in your API request. Parameters help instruct the API on how to fulfill the request. <br/><br/> **Examples of key-value pairs for static and dynamic parameters:** <br/><br/> **Static parameter:**<br/> - **Key:** botId <br/> - **Value:** x766543323dwe_34 <br/><br/> **Dynamic parameter:**<br/> - **Key:** city <br/> - **Value:** "{{{city}}}" <br/><br/> In these examples: the `botId` key has a static value, while the `city` key has a dynamic value that will be replaced during runtime. |
 |**Body type**| Enter the body type for your API request, if applicable (typically for POST, PUT, or DELETE methods). Supported formats include **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data**, and **raw**. <br/><br/> **Note:** Multipart/form-data is not supported.|
-| **Dynamic variable configuration** | Enter the dynamic variable to capture user inputs. Ensure the data type of the variable matches the dynamic value it is intended to capture. Additionally, make sure to map the placeholder `"{{{variable}}}"` to the corresponding variable under the **Dynamic Variable Configuration** section to ensure proper functionality.|
+| **Dynamic variable configuration** | You will see the list of dynamic parameters used in the API. Map each parameter to the corresponding variable of the same data type.  This is to ensure the API receives the required input data before initiating the API call. <br/> If the dynamic parameters are not mapped, the API call will fail as it won't receive the required input data.|
+
 
 ### Configure additional API settings
 
