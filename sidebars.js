@@ -346,6 +346,8 @@ module.exports = {
     
               ],
             },
+
+            "platform_concepts/copilot",
             
             "platform_concepts/studio/build/workflows",
             
