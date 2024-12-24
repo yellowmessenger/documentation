@@ -86,6 +86,8 @@ tags:
     description: Manage email tickets
   - name: messages
     description: Manage bot messages
+  - name: Notification APIs
+    description: 
   - name: integrations
     description: 
 
@@ -956,6 +958,134 @@ paths:
           description: Invalid request or missing parameters.
         '401':
           description: Unauthorized request. Check your API key.
+
+  /engagements/notifications/v2 /push-carousel:
+    post:
+      security:
+        - ApiKeyAuth: []
+      tags:
+        - Engage        
+      summary: "Trigger WhatsApp Carousel Templates"
+      description: "This endpoint triggers a WhatsApp carousel template for a given mobile number."
+      parameters:
+        - in: query
+          name: bot
+          schema:
+            type: string
+          required: true
+          description: "The bot ID associated with the template."
+        - in: header
+          name: x-api-key
+          schema:
+            type: string
+          required: true
+          description: "API key for authentication."
+        - in: header
+          name: Content-Type
+          schema:
+            type: string
+            enum: [application/json]
+          required: true
+          description: "Content type of the request."
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                userDetails:
+                  type: object
+                  properties:
+                    number:
+                      type: string
+                      description: "Mobile number to send the template, including the country code."
+                  required: [number]
+                notification:
+                  type: object
+                  properties:
+                    templateId:
+                      type: string
+                      description: "The ID of the carousel template to be triggered."
+                    type:
+                      type: string
+                      enum: [whatsapp]
+                      description: "Notification type. For this API, it should be 'whatsapp'."
+                    sender:
+                      type: string
+                      description: "The WhatsApp sender number, including the country code."
+                    params:
+                      type: object
+                      properties:
+                        cards:
+                          type: array
+                          items:
+                            type: object
+                            properties:
+                              media:
+                                type: object
+                                properties:
+                                  mediaLink:
+                                    type: string
+                                    description: "Link to the media content for the carousel card."
+                                required: [mediaLink]
+                            required: [media]
+                      required: [cards]
+                  required: [templateId, type, sender, params]
+              required: [userDetails, notification]
+      responses:
+        '200':
+          description: "Carousel template successfully triggered."
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Notification sent successfully."
+                  status:
+                    type: string
+                    example: "success"
+        '400':
+          description: "Bad Request"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid request payload."
+                  status:
+                    type: string
+                    example: "error"
+        '401':
+          description: "Unauthorized"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "Invalid API key."
+                  status:
+                    type: string
+                    example: "error"
+        '500':
+          description: "Internal Server Error"
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: "An error occurred on the server."
+                  status:
+                    type: string
+                    example: "error"
 
   
 
