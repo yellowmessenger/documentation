@@ -1,5 +1,5 @@
 ---
-title: Implement New Card in Yellow AI Cloud Platform
+title: Implement new card in Yellow AI cloud platform
 sidebar_label : Implement carousel card
 tags:
   - whatsapp card
@@ -51,6 +51,10 @@ This step is optional if you do not want to use dynamic data.
 
 <img src="https://i.imgur.com/gO0zj9o.png" alt="drawing" width="40%"/>
 
+:::note
+This card type displays only one card at a time. If multiple entries are added to the array, only the first card will be displayed in the widget UI.
+:::
+
 **Code in Function**
 ```js
 [
@@ -89,7 +93,6 @@ This step is optional if you do not want to use dynamic data.
     }
 ] 
 ```
-
 
 ### 2.2 List Card
 
