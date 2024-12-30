@@ -1,0 +1,121 @@
+---
+sidebar_label: AI Copilot
+title: AI Copilot
+---
+
+
+## **Introduction to AI Copilot**
+
+AI Copilot is your all-in-one conversational AI assistant, designed to simplify and enhance the way you build, manage, and optimize AI agents. It combines automation, adaptability, and transparency to create seamless, high-quality conversational experiences.  CoPilot ensures your AI agents deliver consistent, engaging, and effective responses, whether addressing customer inquiries, refining workflows, or optimizing small talk and knowledge base interactions,
+
+
+CoPilot offers a user-friendly interface and robust capabilities and enables you to:  
+
+- **Test and validate structured conversations** to ensure they align with your specific goals and use cases.  
+- **Enhance small talk interactions** for more natural, relatable, and engaging conversations.  
+- **Optimize knowledge base responses**, ensuring accurate and contextually relevant answers for every query.  
+- **Monitor and refine interactions** in real time, gaining valuable insights into AI behavior and performance.  
+
+### **How AI Copilot Works**  
+
+#### **1. Onboarding and initial setup**  
+- Agents configure bots to meet essential goals and use cases, such as workflows, small talk, and knowledge base integrations.  
+- The onboarding process is intuitive and guided, providing a step-by-step walkthrough to set up and fine-tune your bot.  
+- After initial setup, CoPilot becomes an interactive assistant, enabling you to test, refine, and manage bots effortlessly.  
+- A conversational interface offers detailed insights into each conversation flow, helping you monitor performance and optimize responses.  
+
+#### **2. Real-time interaction monitoring**  
+- CoPilot tracks user interactions in real time, categorizing each query into distinct types:  
+  - **Small Talk**: Handles casual interactions like greetings or icebreakers.  
+  - **Knowledge Base (KB)**: Responds to queries using indexed documents, FAQs, or external links.  
+  - **Generic Queries**: Uses advanced language models to address broader, less structured questions.  
+- Every response includes detailed reasoning, giving you clarity into the decision-making process.  
+
+#### **3. Testing & refinement**  
+- CoPilot provides a unified interface for testing conversation prompts, workflows, and configurations.  
+- You can instantly test changes without switching contexts, ensuring faster iteration and optimization.  
+- Each conversation trace includes components like prompts, configurations, and token usage to help you understand and improve system behavior.  
+
+---
+
+### **Features of AI Copilot**  
+
+#### **Real-Time Testing and Modification**  
+- Test and update conversation flows, small talk, and knowledge base configurations in real time.  
+- Quickly implement and test changes within the same interface, reducing time spent switching tools or workflows.  
+
+#### **Detailed Insights and Monitoring**  
+- Access logs, traces, and reasoning for every interaction to better understand how the system processes and generates responses.  
+- Use categorized insights to identify opportunities for improvement or fine-tuning.  
+
+#### **Dynamic Configuration Adjustments**  
+- Modify AI configurations, prompts, and workflows dynamically to adapt to evolving use cases or business requirements.  
+- Ensure your bot remains relevant and effective, even as objectives change.  
+
+#### **Multi-Modal Response Handling**  
+AI Copilot can seamlessly manage different types of user interactions, ensuring tailored responses for every context:  
+- **Small Talk**: Keeps users engaged with natural, conversational responses to casual queries.  
+- **Knowledge Base (KB)**: Delivers precise answers from indexed resources, ensuring accuracy and relevance.  
+- **Conversations**: Handles goal-driven interactions, such as booking appointments or processing orders, by following predefined flows.  
+- **Generic Queries**: Leverages Large Language Models (LLMs) to address broad or unstructured questions, expanding the bot's versatility.  
+
+
+
+---
+
+## **How to use Copilot**
+
+### Enter your intent
+1. In the Cloud Platform, navigate to **Automation** > **Copilot**.
+
+   ![](https://i.imgur.com/3KofAg5.png)
+
+2. Enter your intent in the input chat field. Only intents you’ve added to your conversation, small talk, or questions related to knowledge base content are supported.
+3. You can view detailed insights into the conversation in the **Traces** section. Click **Show Trace** to access it. Each trace includes components that explain how the system processes user inputs, determines actions, and generates responses.
+
+Traces provide all the generated settings derived from the conversation's context and you can fine-tune them if needed to ensure the agent accurately fulfills the user's requirements.
+
+### What Action Could Be Taken
+
+This section dynamically lists all the possible actions generated by the Copilot based on the specific use case and context of the conversation. You can fine tune it if needed.
+
+Option | Description
+------ | -----------
+Upload document | Suggests uploading a file or document if relevant to the conversation context. Example: If the user asks to analyze a report or verify a resume, the agent prompts for a file upload.
+Edit trigger | Helps you to refine or modify the trigger conditions that activate a conversation or action within the bot. This ensures that the bot responds appropriately to user queries by aligning triggers with your intended use cases.
+Edit conversation prompt | Allows you to refine how the agent interprets and responds to the user’s query. Example: If the AI agent's response is off-target, you can edit the prompt to improve clarity and alignment with user intent.
+<br/>Customizations: Revise the phrasing for better comprehension.; Add details or context to guide the agent toward a more accurate response.
+
+
+### Agent Response: Conversation
+
+This section provides a detailed breakdown of how the AI agent processes user inputs and generates responses. This trace enables you to understand the flow of communication and refine the agent’s behavior as needed.
+
+The following are the components of this section:
+
+Option | Description
+------ | -----------
+User message received | Displays the original message entered. Example: "Book a demo."
+Agent prompt | Shows the generated prompt that guidest the agent’s response based on the query.
+Agent config | Contains the configuration details applied to the conversation. This might include api version, models, AI used, or any predefined parameters.
+Agent history | Tracks the sequence of interactions in the current conversation. You can verify if the responses maintain continuity and preserve context.
+Agent response |  Conversation. Displays the agent’s response generated for the user’s message.
+Agent reasoning |  Explains the logic used to determine the agent’s response, offering insights into how decisions were made.
+Predicted tools | Lists any tools or APIs predicted to be necessary for completing the task.
+Token usage | Provides details (JSON) about the number of tokens used during the conversation, helping to monitor performance and efficiency.
+Customizations:
+
+### Conversation
+This section provides insights into the conversation flow, whether it’s a predefined conversation, a knowledge base response, or another type of interaction. It helps you analyze and refine the conversation to align with the user's intent.
+
+Option | Description
+------- | ---------
+Conversation prompt | Displays the initial prompt generated for this specific conversation.
+Conversation config | Displays the configuration settings for the current conversation, such as parameters, logic, or flow control.
+Conversation history | Tracks the sequence of exchanges within the conversation, including user queries and agent responses.
+Token usage | Monitors the number of tokens used for the conversation, helping to manage resource consumption effectively.
+Conversation response: Message | Details the agent’s response (JSON) generated for the user’s query in the conversation.
+Conversation reasoning | Explains the logic behind the agent’s response, detailing why a specific reply was chosen based on the context.
+
+
+
