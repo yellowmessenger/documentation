@@ -185,7 +185,18 @@ The downloaded report includes the following details:
 
 ## Test KB
 
-You can add a list of FAQs and upload it to generate answers based on the document uploaded in the KB section. Note that duplicate questions cannot be created and the answers will not be generated for them. You can include a maximum of 100 questions in an Excel template. 
+You can add a list of FAQs and upload it to generate answers based on the document uploaded in the KB section. Note that duplicate questions cannot be created and the answers will not be generated for them.
+
+#### Limitations of KB bulk testing
+
+When performing KB bulk testing, you need to consider the below limitations to prevent bulk tests from exceeding token or request limits and to ensure optimal performance for live bot traffic:
+
+* **Bulk test limit**: You can only run 3 bulk tests per day.
+* **Query limit per report**: Each bulk test report can include a maximum of 500 queries.
+
+:::note
+If you need to run a bulk test with a larger dataset, contact [customer success team](mailto:customersuccess@yellow.ai) with the relevant details for further evaluation.
+:::
 
 To upload KB FAQs, follow these steps:
 
