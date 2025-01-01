@@ -278,7 +278,7 @@ Similarly, if you have entered an invalid password, you can follow the above ste
 
 
 
-## Generate ppp password for Email Tickets
+## Generate app password for Email Tickets
 
 Sometimes, emails from agents might not reach the end users. To solve this problem, we can use an app password. This helps make sure agents and users can communicate better.
 

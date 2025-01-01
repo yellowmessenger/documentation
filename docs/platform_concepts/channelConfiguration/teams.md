@@ -312,3 +312,35 @@ To test your bot on MS Teams, follow these steps:
 
    When the conversation between the agent and user ends, the bot takes the conversation forward with the user.
   
+
+## Troubleshooting MS Teams configuration
+
+You can troubleshoot and resolve issues when the bot fails to respond during the configuration of an MS Teams bot in the Teams Developer Portal. This issue often occurs if an incorrect or outdated messaging endpoint is configured in the Teams Developer Portal.
+
+### Steps for Troubleshooting
+
+To troubleshoot and resolve the issue, follow the below steps:
+
+1. Verify message flow
+   *  When a user reports that the bot is not responding:
+       * Check if messages from Teams are reaching the bot. 
+       * If messages are not received, validate the messaging endpoint.
+     
+2. Get messaging endpoint details
+
+   Get the messaging endpoint currently configured in the Teams Developer Portal from the user.
+
+3. Validate the messaging endpoint
+
+    * Refer to point 8 of the [Set up MS Teams chatbot using Developer portal](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/teams#create-a-bot-on-ms-teams) for detailed instructions on identifying the correct endpoint.
+    * Ensure the endpoint matches the bot’s configuration region.
+
+4. Verify bot ID and profile ID
+
+   * Ensure that the correct bot ID and profile ID are passed.
+   * These values should match the account name configured in the Channels module.
+
+5. Share a valid messaging endpoint
+
+    * If the endpoint is incorrect or outdated, provide the user with the correct endpoint.
+    * Guide the user to update the endpoint in the Teams Developer Portal.
