@@ -167,7 +167,7 @@ Learn more about [bot performance reports](https://docs.yellow.ai/docs/platform_
 
 :::note
 
-The default dashboard provides the flow completion rate for each flow. However, currently you cannot fetch the metrics or data on the count of users who visited different flows.
+You cannot track the performance (metrics or data) of specific flows or individual flows; you can only view overall metrics from the default dashboard under flow completion rate for each flow.
 
 :::
 
