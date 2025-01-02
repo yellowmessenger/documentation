@@ -165,6 +165,11 @@ KPI | Description
 
 Learn more about [bot performance reports](https://docs.yellow.ai/docs/platform_concepts/growth/default_reports#based-on-bot-performance)
 
+:::note
+
+The default dashboard provides the flow completion rate for each flow. However, currently you cannot fetch the metrics or data on the count of users who visited different flows.
+
+:::
 
 ---------
 
