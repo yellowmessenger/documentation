@@ -49,7 +49,7 @@ The Chat Metrics tab offers the following widgets which can be used for the user
 
 1. **Total user sessions**: This widget shows the overall count of sessions that took place between users and the bot during the chosen time frame, specifically when utilizing dynamic chat nodes.
 2. **Node user stats**: Node user stats offer insights into user interactions with the Dynamic chat node. For instance, if 100 people initially engaged with the chat node, and 40 discontinued their participation during the conversation, the remaining 60 users either exited the flow upon request, submitted all required information, or successfully reached the goal set in the dynamic chat node, resulting in a 60% completion rate.
-    * **Users entered**: This represents the count of unique users who entered the dynamic chat node.
+    * **Users entered**: This represents the count of unique users who entered the dynamic chat node (same user can enter the flow more than once increasing the count).
     * **Users dropped**: This indicates the number of users who abandoned the conversation or remained unresponsive for over 24 hours.
     * **Users completed**: This shows the number of users who either supplied all mandatory inputs, attained the business objective specified in the dynamic chat node, or were allowed to exit the node as per their request.
     * **Completion rate**: This metric signifies the completion rate of the Dynamic chat node, calculated as (Users Completed / Users Entered) * 100.
@@ -62,6 +62,8 @@ The Chat Metrics tab offers the following widgets which can be used for the user
 
 
 3. **Inputs Captured**: This widget tracks the number of users who have supplied specific information, such as their name and phone number, to the bot while utilizing the dynamic chat node. You can narrow down the data for each node by selecting the node name from the dropdown menu located at the bottom. 
+    - **Input**: Displays the user's utterance provided to the bot.
+    - **Count**: Shows how many times a specific utterance has been used on the bot.
 
 <img src="https://imgur.com/adXoNwK.png" alt="drawing" width="50%"/> 
 

@@ -166,6 +166,7 @@ KPI | Description
 Learn more about [bot performance reports](https://docs.yellow.ai/docs/platform_concepts/growth/default_reports#based-on-bot-performance)
 
 
+
 ---------
 
 ## User traffic 

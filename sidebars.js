@@ -125,6 +125,7 @@ module.exports = {
     "cookbooks/insights/scheduledefaultreports",
     "cookbooks/insights/toptriggeredintents",
     "cookbooks/insights/kbdebugging",
+    "cookbooks/insights/downloadreport_dataops",
 
   ],
 }, 

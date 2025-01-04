@@ -126,6 +126,11 @@ For each conversation, you will see details such as:
 
 ![Conversation details](https://hackmd.io/_uploads/SkdjKRgAA.png)
 
+
+:::info
+This data can be viewed in **Data explorer > [Contained resolution analysis](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#contained-resolution-analysis)**.  
+:::
+
 ### Visualized results
 
 Key metrics such as CR rate, containment rate, and user sentiment for the selected topic are displayed as graphs for the selected time period. These values, already available on the Topics page, are visualized in graph form to help you understand trends more effectively. You can view conversations pre-filtered by clicking **View all**.
