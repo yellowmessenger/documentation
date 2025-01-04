@@ -165,11 +165,7 @@ KPI | Description
 
 Learn more about [bot performance reports](https://docs.yellow.ai/docs/platform_concepts/growth/default_reports#based-on-bot-performance)
 
-:::note
 
-You cannot track the performance (metrics or data) of specific flows or individual flows; you can only view overall metrics from the default dashboard under flow completion rate for each flow.
-
-:::
 
 ---------
 
