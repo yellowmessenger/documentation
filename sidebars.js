@@ -670,6 +670,7 @@ module.exports = {
               "platform_concepts/inbox/inbox-settings/productivitytools/canned-responses",
               "platform_concepts/inbox/inbox-settings/productivitytools/collaboration",
               "platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte",
+              "platform_concepts/inbox/inbox-settings/productivitytools/restrictedwordlist",
                      ],
             },
 

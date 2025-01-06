@@ -13,15 +13,16 @@ sidebar_label : Inbox settings
 | Category | Settings | Comments |
 | -------- | -------- | -------- |
 | Productivity tools settings|||
-||[Canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses)|Configure pre-defined notifications (shortcuts) for frequent replies|
-||[Collaboration](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/collaboration)|Configure how agents can add collaborators to chats/tickets|
-||[Knowledgebase](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain)|Customize the look and feel of your Knowledgebase(KB), Manage your site's name, URL, favicon, and banners|
-||[Knowledgebase - Integrations](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations)|Integrate KB with chatbots(widgets) and GTM|
-||[Email templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte)|Create a template that can be sent to the customers directly via. email tickets|
+||[Canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses)| Configure pre-defined notifications (shortcuts) for frequent replies|
+||[Collaboration](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/collaboration)| Configure how agents can add collaborators to chats/tickets|
+||[Knowledgebase](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/connecttosubdomain)| Customize the look and feel of your Knowledgebase(KB), Manage your site's name, URL, favicon, and banners|
+||[Knowledgebase - Integrations](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations)| Integrate KB with chatbots(widgets) and GTM|
+||[Email templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte)| Create a template that can be sent to the customers directly via. email tickets|
+||[Restricted word list](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/restrictedwordlist)| Add a list of words and phrases that agents are strictly prohibited from using in customer communications |
 |Teams settings|||
 ||[Agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents)|Configure agent details|
 ||[Groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups)|Divide agents into groups to assign different types of tickets for different use cases|
-||[Working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours)|Set working hours for your agent groups|
+||[Working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours)| Set working hours for your agent groups|
 |Workflow settings|||
 ||[Custom status](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/custom-status)|Create and modify custom agent status|
 ||[Custom fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields)|Create fields to capture additional details of chat/ticket|
