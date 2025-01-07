@@ -69,7 +69,7 @@ Follow the steps below to create a report using two datasources:
 3. Select **two** datasources from the available list of tables.
     ![image](https://imgur.com/fUFx1pD.png)
 
-:::note
+:::info
 
 **Tables available**: 
 1. Agent events
@@ -113,6 +113,7 @@ Follow the steps below to create a report using two datasources:
 
 7. Choose the time range for fetching data from both tables. Select the desired range and value from the dropdown menu.        
     <img src="https://imgur.com/dB4cbtB.png" width="60%"/>
+
     ![image](https://imgur.com/XRjyUss.png)
 
 
@@ -146,7 +147,7 @@ You don’t need to stay on the page after clicking **Create**; you are free to 
 - Admins and Developers will have access to create and use the reports. 
 - Database Viewer can view the reports.
 
-All users with AI agent access can view the notification on the **Notifications tab** 
+All users with AI agent (Bot) access can view the notification on the **Notifications tab** 
     ![image](https://imgur.com/yDr0hf4.png)
 
 
