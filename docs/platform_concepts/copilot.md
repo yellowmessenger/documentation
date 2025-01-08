@@ -40,19 +40,19 @@ CoPilot offers a user-friendly interface and robust capabilities and enables you
 
 ### **Features of AI Copilot**  
 
-#### **Real-Time Testing and Modification**  
+#### 1. Real-Time Testing and Modification
 - Test and update conversation flows, small talk, and knowledge base configurations in real time.  
 - Quickly implement and test changes within the same interface, reducing time spent switching tools or workflows.  
 
-#### **Detailed Insights and Monitoring**  
+#### 2. Detailed Insights and Monitoring
 - Access logs, traces, and reasoning for every interaction to better understand how the system processes and generates responses.  
 - Use categorized insights to identify opportunities for improvement or fine-tuning.  
 
-#### **Dynamic Configuration Adjustments**  
+#### 3. Dynamic Configuration Adjustments
 - Modify AI configurations, prompts, and workflows dynamically to adapt to evolving use cases or business requirements.  
 - Ensure your bot remains relevant and effective, even as objectives change.  
 
-#### **Multi-Modal Response Handling**  
+#### 4. Multi-Modal Response Handling
 AI Copilot can seamlessly manage different types of user interactions, ensuring tailored responses for every context:  
 - **Small Talk**: Keeps users engaged with natural, conversational responses to casual queries.  
 - **Knowledge Base (KB)**: Delivers precise answers from indexed resources, ensuring accuracy and relevance.  
@@ -68,7 +68,7 @@ AI Copilot can seamlessly manage different types of user interactions, ensuring 
 ### Enter your intent
 1. In the Cloud Platform, navigate to **Automation** > **Copilot**.
 
-   ![](https://i.imgur.com/3KofAg5.png)
+   ![](https://i.imgur.com/hddIxjy.png)
 
 2. Enter your intent in the input chat field. Only intents you’ve added to your conversation, small talk, or questions related to knowledge base content are supported.
 3. You can view detailed insights into the conversation in the **Traces** section. Click **Show Trace** to access it. Each trace includes components that explain how the system processes user inputs, determines actions, and generates responses.
@@ -91,6 +91,8 @@ Edit conversation prompt | Allows you to refine how the agent interprets and res
 
 This section provides a detailed breakdown of how the AI agent processes user inputs and generates responses. This trace enables you to understand the flow of communication and refine the agent’s behavior as needed.
 
+![](https://imgur.com/GhVpOmg.png)
+
 The following are the components of this section:
 
 Option | Description
@@ -103,7 +105,6 @@ Agent response |  Conversation. Displays the agent’s response generated for th
 Agent reasoning |  Explains the logic used to determine the agent’s response, offering insights into how decisions were made.
 Predicted tools | Lists any tools or APIs predicted to be necessary for completing the task.
 Token usage | Provides details (JSON) about the number of tokens used during the conversation, helping to monitor performance and efficiency.
-Customizations:
 
 ### Conversation
 This section provides insights into the conversation flow, whether it’s a predefined conversation, a knowledge base response, or another type of interaction. It helps you analyze and refine the conversation to align with the user's intent.
