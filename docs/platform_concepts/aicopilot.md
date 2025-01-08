@@ -1,18 +1,18 @@
 ---
-title: AI Copilot 
-sidebar_label : AI Copilot
+title: Help Center 
+sidebar_label : Help Center
 ---
 
 
 ## Overview
 
-Yellow.ai’s AI-Copilot is a plug-and-play widget that integrates seamlessly into customer websites, serving as an all-in-one support portal. It enables users to interact with an AI-powered agent, raise tickets, access KnowledgeBase articles, and connect with live agents. AI-Copilot consolidates several key functionalities from Yellow.ai’s Inbox, KnowledgeBase, and ticketing system into a single, unified interface.
+Yellow.ai’s AI Help Center is a plug-and-play widget that integrates seamlessly into customer websites, serving as an all-in-one support portal. It enables users to interact with an AI-powered agent, raise tickets, access KnowledgeBase articles, and connect with live agents. AI-Copilot consolidates several key functionalities from Yellow.ai’s Inbox, KnowledgeBase, and ticketing system into a single, unified interface.
 
 ![image](https://imgur.com/TlBfmPF.png)
 
 **Key Benefits:**
 
-* **Centralized ticket management**: AI-Copilot allows users to view and manage all tickets they have created in one place. This eliminates the challenge of tracking multiple email tickets, which often get lost across various threads. With AI-Copilot, users can continue conversations on each specific ticket without confusion, improving clarity and streamlining support requests.
+* **Centralized ticket management**: AI Help Center allows users to view and manage all tickets they have created in one place. This eliminates the challenge of tracking multiple email tickets, which often get lost across various threads. With AI-Copilot, users can continue conversations on each specific ticket without confusion, improving clarity and streamlining support requests.
 * **Unified experience**: Customers can seamlessly switch between interacting with an AI agent, browsing the KnowledgeBase, and communicating with live agents, all within one easy-to-use interface.ontinue conversations related to each specific issue.
 
 > For support: Contact support@yellow.ai.

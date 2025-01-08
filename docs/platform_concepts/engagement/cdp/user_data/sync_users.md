@@ -1,5 +1,5 @@
 ---
-title: Sync user data from SFTP
+title: Import data from a third-party system via SFTP
 sidebar_label: Import users from SFTP
 ---
 
@@ -7,7 +7,7 @@ You can sync user data directly from third party integration, including Secure F
 
 It only supports CSV files, and the filename must begin with `userdata_`. The maximum file size is 200MB.
 
-To sync data from an SFTP integration:
+To import or sync data from an SFTP integration:
 
 1. [Connect your integration account to Yellow.ai](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview).
 2. Go to **User 360** and click **Import users** > **Sync integration data**.
