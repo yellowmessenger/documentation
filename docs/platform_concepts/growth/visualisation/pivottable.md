@@ -30,7 +30,7 @@ To pivot table (custom/default), follow these steps:
     * Drag and drop Row/Column fields for customization.
     * It's mandatory to add a **Value** field; otherwise, the table won't pivot.
 
-<img src="https://imgur.com/QtFW0wm.png" alt="drawing" width="50%"/>
+<img src="https://imgur.com/QtFW0wm.png" alt="drawing" width="40%"/>
 
 :::info
 **Points to remember**: 
@@ -54,7 +54,7 @@ To pivot table (custom/default), follow these steps:
       - **% of column grand total**: Shows values as a percentage of the column grand total.
       - **% of grand total**: Shows values as a percentage of the overall grand total.
 
-<img src="https://imgur.com/VK7WxM4.png" alt="drawing" width="60%"/>
+<img src="https://imgur.com/VK7WxM4.png" alt="drawing" width="40%"/>
 
 
 6. Click **Apply** to save changes. The Pivot table will display.
