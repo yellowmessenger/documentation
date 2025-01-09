@@ -70,7 +70,7 @@ Once a handover to the third-party tool occurs, ticket details are received. Upo
 
 
 
-Offline ticket messages sent to Yellow.ai's backend won't initiate processes automatically. To enable this, you need to create an automation rule in your Freshdesk (or other third-party ticketing app) and configure a webhook. This webhook can be set up using Yellow.ai's integrations panel.
+Offline ticket messages sent to Yellow.ai's backend won't initiate processes (such as, ticket closure and fetching chat transcripts) automatically. To enable this, you need to create an automation rule in your Freshdesk (or other third-party ticketing app) and configure a webhook. This webhook can be set up using Yellow.ai's **Integration** module.
 
 
 ### Configure webhook
@@ -92,7 +92,7 @@ Webhook URL for the connected account can be fetched from **Yellow.ai > Integrat
     ![image](https://imgur.com/GLJbBRc.png)
 :::
 
-### Enable Freshdesk events on Yellow’s platform  
+### Enable Freshdesk events on Yellow.ai’s platform  
 
 1. **Go to automation**: Open Yellow’s platform and navigate to **Automation** from the sidebar.  
 2. **Access events**: In the automation settings, go to **Events** and select **Integrations**.  
