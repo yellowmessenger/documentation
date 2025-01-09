@@ -102,6 +102,6 @@ Webhook URL for the connected account can be fetched from **Yellow.ai > Integrat
 
 Once configured, you can see the analysis generated on the Analyse module for the chats happening on the third-party apps. 
 
-![image](https://hackmd.io/_uploads/SJNLTi3Lkl.png)
-![image](https://hackmd.io/_uploads/SJkTpihI1l.png)
-![image](https://hackmd.io/_uploads/r1CyAjhIyg.png)
+![image](https://imgur.com/sRRhxb7.png)
+![image](https://imgur.com/V3Cd0lt.png)
+![image](https://imgur.com/ndfgeSV.png)
