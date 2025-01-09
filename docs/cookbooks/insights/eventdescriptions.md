@@ -535,6 +535,8 @@ Analytics table can be found under custom tables in which the following data is 
  
 ## Contained resolution analysis
 
+These KPIs are tracked for data generated in the Analyse module (**Analyse > Topics**). 
+
 | Fields                  | Description                                                                                                                                   |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
 | Chat URL                | URL link of the conversation (transcript) between the user and bot/agent                                                                      |
@@ -595,6 +597,13 @@ Analytics table can be found under custom tables in which the following data is 
 | USER_INITIATED_SERVICE                | Conversations for resolving customer inquiries                                                                                                                     |
 | CONVERSATION                          | 24-hour message threads between you and your customers, opened and charged when your messages are delivered |
 
+---------
+
+## Call Details Report (CDR)
+
+If you are using voice bots, you can schedule reports to be sent to your email. This report includes metrics like the number of distinct calls attended by the bot and the total billing duration for the selected timestamp. 
+
+Learn about CDR in detail [here](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/cdr). 
 
 -------
 

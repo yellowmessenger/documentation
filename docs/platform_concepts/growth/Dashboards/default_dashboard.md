@@ -3,7 +3,8 @@ title: Default Dashboards
 sidebar_label: Default dashboards
 ---
 
-In Insights > Dashboard, you can see the default dashboards created by yellow.ai for common business scenarios. Yellow.ai curates these dashboards, and they cannot be modified.
+In Insights > Dashboard, you can see the default dashboards created by yellow.ai for common business scenarios. Yellow.ai curates these dashboards, and they cannot be modified. These dashboards provide various KPIs such as user traffic, inbox chats, voice, inbox agent performance, and email tickets.
+
 
 To view the Dashboards page, on the left navigation bar, click  **Insights** > **Dashboards**. 
 
@@ -148,8 +149,13 @@ The Generative AI (Bot) Dashboard provides insights into the performance of your
 This provides insights into the effectiveness and efficiency of your chatbot. Track key performance indicators such as response time, conversation completion rates, user satisfaction scores, and frequently asked questions. Identify areas for improvement and optimize your chatbot to provide better customer service and support.
 
    <img src="https://i.imgur.com/rXZ6dn4.png" width=""/>
-            
-### Bot Performance Report KPIs
+
+
+
+
+### Bot Performance Report KPIs      
+
+
 
 KPI | Description
 --- | -----------
