@@ -414,4 +414,12 @@ No, it is not possible to hide the phone number. To remove phone number, you nee
 </p>
 </details>
 
+<details><summary><b>Is it possible to send stickers in WhatsApp chatbot?</b></summary>
+<p>
+
+You cannot send stickers in WhatsApp chatbot. A WhatsApp chatbot can respond with simple text messages, images in JPEG or PNG format, audio recordings, videos, documents in PDF or docx format.
+
+</p>
+</details>
+
 
