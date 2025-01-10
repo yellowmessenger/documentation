@@ -58,7 +58,7 @@ Yellow.ai’s Help Center is a plug-and-play widget designed to integrate seamle
 
 [Learn more about Help Center](https://docs.yellow.ai/docs/platform_concepts/aicopilot)
 
-## ### **Enhanced Insights with Third-Party Transcript Analysis**  
+## Enhanced Insights with Third-Party Transcript Analysis
 
 Yellow.ai now supports the import and analysis of transcripts from third-party ticketing tools, providing deeper insights into agent-user conversations that were previously unavailable.  
 
