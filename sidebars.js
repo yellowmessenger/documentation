@@ -1685,6 +1685,7 @@ module.exports = {
       label: "2024 updates",
       collapsed: true,
       items: [
+        "updates/2024/dec24",
         "updates/2024/sep2024",
         "updates/2024/aug2024",
         "updates/2024/july2024",
