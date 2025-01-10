@@ -101,6 +101,22 @@ An inbox admin can configure what happens to the live chats when all the agents 
 </details>
 
 
+<details>
+<summary> Can the SLA policy change for a ticket once a policy is applied? </summary>
+  <div>
+Yes, the SLA policy can change for a ticket once a policy is applied. If the priority of the ticket is changed, the SLA will also change based on the new priority. However, the first SLA policy that gets applied to a ticket will not change if the Group/Tag is changed because SLAs are end-customer facing. Additionally, breaches of the initial SLA policy will be recorded and will be present as part of reports, but they will not be back-dated.
+  </div>
+</details>
+
+
+<details>
+<summary> Can the SLA policy get applied to a ticket after a tag is added? </summary>
+  <div>
+  No, the first SLA policy that gets applied to a ticket will not change if the Group/Tag is changed because SLAs are end-customer facing.
+  </div>
+</details>      
+
+
 #### **Sticky agents** 
 
 <details>
