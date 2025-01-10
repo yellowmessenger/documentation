@@ -23,14 +23,14 @@ To pivot table (custom/default), follow these steps:
 
 ![image](https://imgur.com/5NzhM1K.png)
 
-4. Choose the field names to convert to **Rows** and **Columns** in the pivoted table. Select the **Values** to display within the cells.
+4. Under **Configure**, choose the field names to convert to **Rows** and **Columns** in the pivoted table. Select the **Values** to display within the cells.
     * Use the dropdown to select existing columns.
     * Click **Add field** to include a new Row or Column.
     * Click the **delete** icon to remove a selected column.
     * Drag and drop Row/Column fields for customization.
     * It's mandatory to add a **Value** field; otherwise, the table won't pivot.
 
-<img src="https://imgur.com/QtFW0wm.png" alt="drawing" width="50%"/>
+<img src="https://imgur.com/QtFW0wm.png" alt="drawing" width="40%"/>
 
 :::info
 **Points to remember**: 
@@ -39,15 +39,37 @@ To pivot table (custom/default), follow these steps:
 * The sum of fields in Rows and Columns must be equal to or less than 10.
 :::
 
-5. Click **Apply** to save changes. The Pivot table will display.
-    - Unless you **Save query**, the pivoted table is not saved. 
-    - To edit the pivot table, you can click **Visualisation > Pivot table** and make the changes. 
 
-![image](https://imgur.com/cKLuAu6.png)
 
-6. The pivoted table can be saved as a query for future use. By clicking on **Save query**. This saved report is particularly useful for creating dashboards or scheduling reports in the future.
+5. Under **Settings**, you can configure(select/deselect) the following options:
+    - **(Row) Show grand total**: Displays the grand total for all rows.
+    - **(Row) Show sub total**: Dynamically calculates and displays subtotals for grouped rows based on the specified row hierarchy.
+    - **(Column) Show grand total**: Displays the grand total for all columns.
+    - **(Column) Show sub total**: Dynamically calculates and displays subtotals for grouped columns based on the specified column hierarchy.
+    - **Display format**: Choose how the data in the pivot table must be presented from the dropdown menu:
+      - **Only absolute values**: Displays raw data values.
+      - **% of row subtotals**: Shows values as a percentage of the row subtotal.
+      - **% of column subtotals**: Shows values as a percentage of the column subtotal.
+      - **% of row grand total**: Shows values as a percentage of the row grand total.
+      - **% of column grand total**: Shows values as a percentage of the column grand total.
+      - **% of grand total**: Shows values as a percentage of the overall grand total.
+
+<img src="https://imgur.com/VK7WxM4.png" alt="drawing" width="40%"/>
+
+
+6. Click **Apply** to save changes. The Pivot table will display.
+
+7. The pivoted table can be saved as a query for future use. By clicking on **Save query**. This saved report is particularly useful for creating dashboards or scheduling reports in the future.
 
 ![image](https://imgur.com/We8haJX.png)
+
+> Unless you **Save query**, the pivoted table is not saved. 
+
+#### Edit the pivot table
+
+To edit an existing pivot table, open it from Custom tables and click **Visualisation > Pivot table** and make the changes. 
+![image](https://imgur.com/BPiTPTS.png)
+
 
 :::note
 
@@ -77,7 +99,6 @@ Add custom formula columns to the pivoted table for further analysis. Click on *
 - Multiple formula columns can be added to the pivoted table.
 
 :::
-
 
 
 

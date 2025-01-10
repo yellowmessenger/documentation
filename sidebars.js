@@ -447,6 +447,9 @@ module.exports = {
           
 
         "platform_concepts/studio/studio-faqs",
+        "platform_concepts/studio/LLM-central-configuration",
+
+      
     
       ],
     },
@@ -1061,9 +1064,9 @@ module.exports = {
       link: {type: 'doc', id: 'platform_concepts/growth/Dashboards/dashboardintro'},
       collapsed: true,
       items: [
+        "platform_concepts/growth/Dashboards/default_dashboard",
         "platform_concepts/growth/Dashboards/custom_dashboards",
         "platform_concepts/growth/Dashboards/editcountdashboards",
-        "platform_concepts/growth/Dashboards/default_dashboard",
       ]
     },
 
