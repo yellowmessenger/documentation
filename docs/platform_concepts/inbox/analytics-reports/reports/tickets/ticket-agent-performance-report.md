@@ -3,7 +3,11 @@ title: Ticket Agent Performance Report
 sidebar_label : Agent performance 
 ---
 
+Ticket agent performance report provides detailed insights into the performance of agents handling tickets. It includes metrics such as the number of resolved and unresolved tickets, first response time, average reply time, and average handling time. You can also track the total number of email tickets that are assigned, resolved, unresolved, and created for different date ranges. Additionally, it provides data on average wait time for customers before connecting to a live agent and the average reply time for agents responding to end users.
+
+
 > Learn how to generate Ticket agent performance report [here](https://docs.yellow.ai/docs/platform_concepts/inbox/analytics-reports/reports).
+
 
 :::info
 Only an admin can download reports.
