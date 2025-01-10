@@ -4,7 +4,7 @@ sidebar_label: Nov & Dec 2024
 featured: true
 ---
 
-### Streamline Customer Support with the New Workflows Module**
+## Streamline Customer Support with the New Workflows Module
 
 We are excited to introduce the **Workflows module**, designed to automate routine tasks within your customer support operations. With this, you can automate various Helpdesk activities, schedule tasks for data teams, and improve overall operational efficiency. The workflows run independently from the core **AI Agent** flow and work seamlessly in the background, providing continuous support without interruption.  
 
@@ -19,7 +19,7 @@ This allows teams to focus on more critical, high-priority issues, improving ove
 5. **Journey Tagging**: Add journey-specific tags to chats, helping agents refer back to relevant customer journeys for better support analysis.
 
 
-### **Key Highlights**  
+### Key Benefits
 
 - **Routine Task Automation**: Automate various customer support tasks like managing Helpdesk activities, handling cron jobs, and more.
 - **Background Operation**: Workflows function independently from the AI Agent flow, ensuring minimal disruption to daily processes.
