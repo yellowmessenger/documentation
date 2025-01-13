@@ -7,7 +7,7 @@ sidebar_label: Bot performance metrics
 
 The **Bot Performance Metrics** dashboard provides detailed insights into the effectiveness and usage of your bot. To access this dashboard, navigate to **Dashboard > Bot Performance Metrics**. All data in this dashboard can be filtered for specific **dates** or **time ranges** to provide tailored analytics.
 
-![image](https://hackmd.io/_uploads/H16EK7UUye.png)
+![image](https://imgur.com/XRLp8Db.png)
 
 This guide explains the various metrics available in the dashboard, how to interpret them, and when to use them to optimize your bot's performance.
 
@@ -25,7 +25,7 @@ Following are the Bot Performance Metrics Key performance indicators(KPIs):
 
 Tracks the number of times users enter a specific flow within the bot. This metric helps measure the popularity and usage of different bot flows.
 
-![image](https://hackmd.io/_uploads/HkFQDe7wkg.png)
+![image](https://imgur.com/lSYqz12.png)
 
 
 **Data Details:**
@@ -46,7 +46,7 @@ Tracks the number of times users enter a specific flow within the bot. This metr
 
 Measures the bot's ability to accurately understand and respond to user queries. High accuracy indicates effective natural language processing (NLP) and a well-trained bot.
 
-![image](https://hackmd.io/_uploads/r1n4DxXP1x.png)
+![image](https://imgur.com/gxZPSzU.png)
 
 
 **Data Details:**
@@ -85,7 +85,7 @@ Collects user feedback on their interactions with the bot, providing insights in
 
 Calculates the percentage of users who successfully complete a flow from start to finish. Indicates how effectively the bot guides users through processes.
 
-![image](https://hackmd.io/_uploads/HknIvgXP1x.png)
+![image](https://imgur.com/CT692tk.png)
 
 
 **Data Details:**
@@ -106,7 +106,7 @@ Calculates the percentage of users who successfully complete a flow from start t
 
 This displays the flow completion rate for each flow. 
 
-![image](https://hackmd.io/_uploads/rJTgDe7Pkx.png)
+![image](https://imgur.com/BD19WHG.png)
 
 ---
 
@@ -151,7 +151,7 @@ Categorizes user utterances based on their status (e.g., recognized, unrecognize
 
 Tracks the status codes returned by API requests made by the bot. Provides insights into the performance and reliability of APIs.
 
-![image](https://hackmd.io/_uploads/S1LCUemDkg.png)
+![image](https://imgur.com/0Q23WNM.png)
 
 
 **Data Details:**
@@ -172,7 +172,7 @@ Tracks the status codes returned by API requests made by the bot. Provides insig
 
 Displays the number of API requests made by the bot daily. Useful for tracking bot activity levels and identifying trends or spikes in API usage.
 
-![image](https://hackmd.io/_uploads/BJ-68eXP1g.png)
+![image](https://imgur.com/eRniV1p.png)
 
 
 **Data Details:**
