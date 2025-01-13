@@ -56,6 +56,14 @@ To pivot table (custom/default), follow these steps:
 
 <img src="https://imgur.com/VK7WxM4.png" alt="drawing" width="40%"/>
 
+:::note
+
+**Limitations while using Settings**        
+
+When settings are applied to the pivot table, **exporting the table** and **creating a new formula column** are not allowed.
+
+:::
+
 
 6. Click **Apply** to save changes. The Pivot table will display.
 
@@ -90,6 +98,7 @@ Add custom formula columns to the pivoted table for further analysis. Click on *
 
 ![image](https://imgur.com/iGT8RAP.png)
 
+![image](https://imgur.com/hsS3KsT.png)
 
 
 
