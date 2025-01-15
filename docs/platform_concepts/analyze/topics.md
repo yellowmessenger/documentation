@@ -23,6 +23,7 @@ To access topics page:
 Based on the conversations AI has processed, articles are suggested for each topic with Article suggestion icon highlighted. These suggestions can serve as new additions to the existing knowledge base or as training materials.      
 ![image](https://imgur.com/Yvquv6v.png)
 
+> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion).
 
 ### Automation Opportunity
 
@@ -77,23 +78,25 @@ For example, in the below screenshot, out of 1045 conversations in this topic, 5
 ----------
 
 
-### Search & Filter Topics  
+## Search & Filter Topics  
 
-You can **search** for a specific topic using the global search feature.  
-![image](https://imgur.com/TpS9jkC.png)  
+> **Coming soon!**
 
-To filter data and view a particular topic, click **Filter**.  
-![image](https://imgur.com/Gp4YnZo.png)  
+You can **search** for a specific topic using the global search feature.                    
+![image](https://imgur.com/TpS9jkC.png)                  
+
+To filter data and view a particular topic, click **Filter**.                       
+![image](https://imgur.com/Gp4YnZo.png)                      
 
 The following filters are available:  
 
-1. **Article Suggested**: Select either "Yes" or "No."  
-      <img src="https://imgur.com/tYy0peE.png" alt="drawing" width="50%"/>
-2. **Timestamp**: Filter data for specific dates or a custom time range.  
-3. **User Sentiment**: Choose between "Positive," "Neutral," or "Negative."  
-    <img src="https://imgur.com/5tEnrEI.png" alt="drawing" width="50%"/>
-4. **Topics**: Filter by the text or subtext of the topics.  
-    <img src="https://imgur.com/Z50mSDn.png" alt="drawing" width="50%"/>
+1. **Article Suggested**: Select either "Yes" or "No."                             
+      <img src="https://imgur.com/tYy0peE.png" alt="drawing" width="50%"/>                       
+2. **Timestamp**: Filter data for specific dates or a custom time range.              
+3. **User Sentiment**: Choose between "Positive," "Neutral," or "Negative."                     
+    <img src="https://imgur.com/5tEnrEI.png" alt="drawing" width="50%"/>                         
+4. **Topics**: Filter by the text or subtext of the topics.                        
+    <img src="https://imgur.com/Z50mSDn.png" alt="drawing" width="50%"/>                 
 
 
 ----------
