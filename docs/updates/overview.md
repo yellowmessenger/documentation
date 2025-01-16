@@ -8,78 +8,93 @@ featured: true
 
 
 
-## Agent AI Copilot 
+## Introducing AI Copilot: Your Intelligent Assistant for AI Agent Development
 
-Agent AI Copilot si a powerful new feature designed to make building, testing, and debugging LLM-powered AI agents faster and easier!
-
-Creating AI agents can be challenging, especially when:
-
-1. We want to understand agent behaviour:
-   - Why did the AI agent respond in a certain way?
-   - Why did it pick a specific tool (e.g., knowledge base, small talk, or scripted workflow)?
-   - What's the current status of the conversation?
-   - Users often lack visibility into these decisions, leading to confusion and delays.
-2. Inefficient manual switching:
-   - Switching back and forth between testing agents and editing prompts wastes valuable time.
-
-### What Copilot Brings to the Table
-Complete Transparency: For every turn of the conversation, Copilot provides:
-- The generated agent message.
-- The reasoning behind it.
-- The active tool or workflow being used.
-- The current conversation status and goal progress.
-
-### Seamless Editing and Testing: 
-You can now make changes to prompts right on the same page and retest, drastically reducing iteration time.
-With the centralised LLM Configuration Screen, in a single page, admins will be able to
-- Create new LLM configurations.
-- Assign different configurations for the different features in our platform which use LLM.
-- Assign different configurations for different environments of the same feature if required.
-
-+ Central LLM Configuration:
-Along with this, maintaining LLM Configurations will also become more easier with a centralised UI.
+**Agent AI Copilot** puts everything you need to build smarter, more reliable AI agents. It is designed to simplify the process of building, testing, and debugging LLM-powered AI agents, making it faster, easier, and more transparent. Whether you're troubleshooting agent responses or streamlining workflows, Copilot ensures you stay in control of every step of the journey.
 
 
+**Challenges in AI Agent Development**:
 
-[Learn more](https://docs.yellow.ai/docs/platform_concepts/copilot)
+1. Understanding Agent Behavior
+   * Why did the AI respond a certain way?
+   * Why did it select a specific tool (e.g., KnowledgeBase, small talk, or a scripted workflow)?
+   * What's the current status and goal of the conversation?
+2. Inefficient Iterations
+   * Switching between testing and editing prompts disrupts workflows and wastes time.
+   * Lack of centralized configuration adds complexity to managing environments and features.
 
 
-## Introducing Your All-in-One Support Portal - Help Center
+#### **How Agent AI Copilot Solves These Challenges**  
 
-Yellow.ai’s Help Center is a plug-and-play widget designed to integrate seamlessly into customer websites, transforming support into a unified, efficient experience. Powered by AI-Copilot, it brings together the functionality of Yellow.ai’s Inbox, KnowledgeBase, and Ticketing System, all within a single, intuitive interface. The AI Help Center simplifies support for customers while enabling businesses to deliver faster, more effective assistance. It’s everything your customers need, all in one place.
+#### **1. Transparent Agent Insights**  
+For every step in a conversation, Copilot provides:  
+- The generated agent message and the reasoning behind it.  
+- The tool or workflow currently in use.  
+- Real-time conversation status and goal tracking.  
 
-### Key Benefits
-1. Centralized Ticket Management
-   * View and manage all tickets in one place, eliminating the hassle of tracking scattered email threads.
-   * Continue conversations on specific tickets with clarity and ease, ensuring streamlined and efficient support.
-2. Unified Customer Experience
-   * Interact with an AI agent, browse KnowledgeBase articles, and connect with live agents—all through a single interface.
-   * Switch seamlessly between support options, ensuring a smooth and intuitive user journey.
+#### **2. Seamless Editing and Testing**  
+- Make prompt changes directly on the same page and instantly retest, cutting down iteration time.  
+- Use the centralized **LLM Configuration Screen** to manage all LLM-related settings effortlessly.  
+
+#### **3. Centralized LLM Configuration**  
+The streamlined UI allows you to:  
+- Create and manage new LLM configurations.  
+- Assign configurations to different platform features and environments.  
+- Customize configurations for specific use cases or deployment settings with ease.  
+
+
+
+[Visit AI Copilot documentation](https://docs.yellow.ai/docs/platform_concepts/copilot)
+
+----
+
+
+
+## Introducing the All-in-One Support Portal: Help Center
+
+The **Yellow.ai Help Center** is a plug-and-play widget designed to seamlessly integrate into customer websites, delivering a unified and efficient support experience. Powered by **AI-Copilot**, it consolidates the core functionalities of **Inbox**, **KnowledgeBase**, and **Ticketing System** into a single, intuitive interface. This comprehensive solution empowers businesses to provide faster, more effective assistance while simplifying support for customers.  
+
+
+#### **Key Benefits**  
+
+#### **1. Centralized Ticket Management**  
+- Manage all customer tickets in one place, removing the complexity of tracking scattered email threads.  
+- Enable users to continue conversations on specific tickets with ease, improving clarity and efficiency.  
+
+#### **2. Unified Customer Experience**  
+- Access AI-powered agents, browse KnowledgeBase articles, and connect with live agents—all through a single interface.  
+- Provide customers with a seamless transition between support options, ensuring an intuitive and hassle-free journey.  
+
 
 [Learn more about Help Center](https://docs.yellow.ai/docs/platform_concepts/aicopilot)
 
-## Enhanced Insights with Third-Party Transcript Analysis
-
-Yellow.ai now supports the import and analysis of transcripts from third-party ticketing tools, providing deeper insights into agent-user conversations that were previously unavailable.  
 
 ---
 
-## Offline Ticket Creation in Third-Party Tools
-
-Until now, transcripts from third-party ticketing tools were not accessible on the platform. This meant that analysis was limited to interactions between users and AI agents, leaving out valuable insights from agent-user conversations.  
-
-Offline tickets are generated in third-party ticketing systems under the following conditions:  
-1. **Outside Business Hours**: When the inbox (Yellow.ai or third-party) is accessed while agents are unavailable.  
-2. **Non-Inbox Scenarios**: When interactions bypass the inbox, leading to offline ticket creation.  
-
-These interactions span multiple channels, including calls, emails, web chats, and SMS.  
+## Ticket Conversation Analysis from Third-Party Apps
 
 
-### Key features 
-With the latest update, transcripts from third-party ticketing tools will now:  
-- Be imported into the platform.  
-- Undergo analysis alongside existing interactions.  
-- Display actionable insights in the **Analyze** module.  
+Earlier, our **Analyze module** only supported analytics from in-house applications. With this update, it now integrates data from third-party apps like Zendesk, providing centralized reporting to ensure that no insights are missed and offering a unified view of all ticket conversations.
+
+
+#### **Enhancements Made**
+
+#### **1. Integration with Third-Party Applications**  
+The **Analyze module** now supports ticket conversation analysis from third-party platforms like **Zendesk**. This integration is facilitated through a secure webhook, ensuring seamless data transfer while maintaining strict data confidentiality.  
+
+#### **2. Comprehensive Analysis Dashboard**  
+Access a unified dashboard to explore detailed insights, including:  
+- **Sentiment Analysis**: Understand customer emotions across conversations.  
+- **Keyword Extraction**: Identify key themes and topics from interactions.  
+- **Conversation Trends**: Spot patterns to track performance and customer behavior.  
+
+
+#### Key Benefits
+
+- **Deeper Insights**: Analyze customer sentiment and behavior across multiple platforms for a clearer understanding of interaction patterns.  
+- **Centralized Reporting**: Consolidate all ticket conversation data, whether from in-house systems or third-party apps, into one cohesive dashboard.  
+- **Actionable Intelligence**: Use comprehensive analytics to refine support strategies, streamline processes, and boost customer satisfaction.  
+
 
 [Learn more about creating offline tickets in third-party tools](https://docs.yellow.ai/docs/platform_concepts/analyze/handoffnode#analyze-transcripts-in-third-party-apps)
 
