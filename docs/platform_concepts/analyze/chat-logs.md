@@ -61,6 +61,16 @@ To filter chat logs, follow these steps:
  
 3. Click **Apply filter** after setting the criteria.
 
+:::info 
+The following **Tags** can be filtered: 
+1. **Validator Limit Exceeded**: Assigned when the validation limit set in respective node is exceeded i.e., user enters invalid input.
+2. **Missing Bot Response**: Assigned when there is no bot response generated. 
+3. **Unused Quick Replies**: Assigned when user does not select any Quick Reply, and instead responds with a text.
+4. **Fallback Limit Exceeded**: Assigned when AI agent goes to fallback, and exceeds the set limit.
+5. **Unidentified**: Assigned when the AI agent does not understand the user input/utterance.
+6. **Human Takeover**: Assigned when ticket is assigned to Human Agent.
+:::
+
 ## Label conversations
 
 Adding labels to conversation logs helps organize and categorize interactions. Labels make it easy to identify and track specific types of conversations, such as complaints, inquiries, or feedback, which allows you to identify the type of conversation easily.
