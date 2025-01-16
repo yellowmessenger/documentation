@@ -4,6 +4,7 @@ sidebar_label: Nov & Dec 2024
 featured: true
 ---
 
+<!--
 ## Streamline Customer Support with the New Workflows Module
 
 We are excited to introduce the **Workflows module**, designed to automate routine tasks within your customer support operations. With this, you can automate various Helpdesk activities, schedule tasks for data teams, and improve overall operational efficiency. The workflows run independently from the core **AI Agent** flow and work seamlessly in the background, providing continuous support without interruption.  
@@ -29,15 +30,31 @@ This allows teams to focus on more critical, high-priority issues, improving ove
 ### Limitation of Workflow
 The **Workflows module** currently supports **Helpdesk use cases only**.
 
+-->
 
-[Read Workflow docs](https://docs.yellow.ai/docs/platform_concepts/studio/build/workflows)
+
+
+
+## Centralized LLM Configuration for LLM-powered Modules
+Introducing **LLM Configuration** to centrally manage LLM models and accounts across all LLM-powered features, including Dynamic Chat Node, Conversations, Agent AI, and Knowledge Base (KB).  
+
+Key highlights:  
+- Create, edit, switch models, and manage accounts.  
+- Associate LLM accounts at the environment level (Development/Live or Sandbox/Staging/Production).  
+- Yellow accounts come preconfigured with GPT 4o Mini enabled across all environments.  
+- KB defaults to our proprietary in-house model but allows switching to other models as needed.  
+
+[Visit Documentation](https://docs.yellow.ai/docs/platform_concepts/studio/LLM-central-configuration)
 
 ---
-
 
 ## Unify Your Data with Table Joins in Custom Reports
 
 You can create powerful reports by combining data from multiple sources. With Table Joins, you can merge tables using various join types, unlocking actionable insights for your business. 
+
+**Example**
+
+Easily identify users who raised tickets across multiple channels. For example, join the Chat Tickets and Email Tickets tables using the common column UID to track users engaging through both chat and email.
 
 **Merge Data with Ease**
 * Combine or merge two default tables into a single report.
@@ -47,13 +64,9 @@ You can create powerful reports by combining data from multiple sources. With Ta
 Explore the feature in **Insights** > **Data Explorer**. [Learn more](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/table_join)
 
 
-**Use Case Example**
-
-Easily identify users who raised tickets across multiple channels. For example, join the Chat Tickets and Email Tickets tables using the common column UID to track users engaging through both chat and email.
 
 
-
-
+---
 
 
 ## Boost Support Efficiency with Automated Workflows
@@ -81,17 +94,17 @@ Reduce repetitive tasks and focus on what matters – your customers. Here's how
 
 ----
 
-## Transform Bot Conversational Excellence With Our Advanced Agent AI
+## Transform Bot Building Experience With Our Advanced Agent AI
 
-The Agent AI module is a game-changer, empowering you to create sophisticated Gen AI-powered bots in just minutes. Even without prior AI experience, you can effortlessly build bots that effectively address customer queries by simply describing your desired bot's behavior in plain language.
+The Agent AI module simplifies the creation of Gen AI-powered bots, allowing you to design highly effective conversational agents in just minutes. No prior AI experience is needed—just describe your bot's behavior in plain language, and let Agent AI handle the rest.
 
-**Key Benefits**:
-* Effortless Creation: Build bots without extensive training or technical expertise.
-* Intelligent Conversations: Leverage Gen AI-powered Orch-LLM + Conversations for natural and informative interactions.
-* Instant Resolution: Enable your bots to resolve customer queries promptly and accurately.
-* Experience the future of customer service with Agent AI Automation's Conversation feature. Start building your AI-powered bot today and witness its transformative impact on your business.
 
-[Visit documentation](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent_intro)
+**Highlights of Advanced AI Agent**:
+* **Simple Setup**: Create bots quickly without requiring technical expertise.
+* **Intelligent Conversations**: Use Gen AI-powered Orch-LLM to deliver natural, accurate responses.
+* **Faster Resolutions**: Equip bots to address customer queries instantly and reliably.
+
+Streamline customer interactions and improve support efficiency with Agent AI's conversational capabilities. Start building smarter, more responsive bots today. [Learn how](https://docs.yellow.ai/docs/platform_concepts/AIAgent/aiagent_intro)
 
 
 
