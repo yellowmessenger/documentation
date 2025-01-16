@@ -126,6 +126,7 @@ module.exports = {
     "cookbooks/insights/toptriggeredintents",
     "cookbooks/insights/kbdebugging",
     "cookbooks/insights/downloadreport_dataops",
+    "cookbooks/insights/botperformancemetrics",
 
   ],
 }, 
@@ -1034,6 +1035,7 @@ module.exports = {
           collapsed: true,
           items: [
              // third party hand off 
+            "platform_concepts/analyze/articlesuggestion",
             "platform_concepts/analyze/handoffnode",
 
               ],
