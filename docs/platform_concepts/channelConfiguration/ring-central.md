@@ -487,11 +487,11 @@ After connecting your IVA Professional account with RingCX, you need to configur
 
 2. Add a **Prompt** node and go to its **Settings**.
 
-    <img src="https://imgur.com/oKjt3an.png" alt="drawing" width="70%"/>
+    <img src="/img/integration/voiceconfig1.png" alt="drawing" width="70%"/>
 
 3. Select **Voice** and add the **Custom SIP headers**. The "key" and "value" fields are mandatory. Set "value" to a boolean (true). The `Key > value > issue` can be customized based on your requirements.
 
-   <img src="https://imgur.com/8SuWbaQ.png" alt="drawing" width="80%"/>
+   <img src="/img/integration/voice3.png" alt="drawing" width="80%"/>
    
 4. Add the following Key-Value pairs:
  
@@ -500,7 +500,7 @@ After connecting your IVA Professional account with RingCX, you need to configur
 | send_info | true | 
 | ringcentral_disconnect | true | 
 
-   <img src="https://imgur.com/Ys0nstS.png" alt="drawing" width="80%"/>
+   <img src="/img/integration/voiceconfig4.png" alt="drawing" width="80%"/>
 <br/>   
 
    
@@ -510,11 +510,11 @@ After connecting your IVA Professional account with RingCX, you need to configur
 
 1. After creating the voice flow, go to **Extension** > **Channels** > **Voice** > **Interactive Voice Response** (IVR).
 
-    ![](https://imgur.com/qPhK3A8.png)
+    ![](/img/integration/Addivvr1.png)
 
 2. Copy the IVR number you have added. For detailed steps on adding an IVR number, refer to [this document](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/Ivr).
 
-   ![](https://imgur.com/wAuQg2g.png)
+   ![](/img/integration/addivr2.png)
    
  
 * After adding the IVR number, contact the [voice team](mailto:voice@yellow.ai) to configure it on the backend. This is required to include the number in the SIP URL, as outlined in Step 3 of the [Add the IVR number in RingCX section](#add-the-ivr-number-in-ringcx).
@@ -523,11 +523,11 @@ After connecting your IVA Professional account with RingCX, you need to configur
 
 1. Log in to your [RingCX account](https://engage.ringcentral.com/) and navigate to **AI tools** > **IVA Integrations**.
 
-   <img src="https://imgur.com/lhzjzhq.png" alt="drawing" width="60%"/>
+   <img src="/img/integration/addivrcx1.png" alt="drawing" width="60%"/>
    
 2. Select the integration where you want to add the IVR number.
 
-     ![](https://imgur.com/YtsLyGn.png)
+     ![](/img/integration/addivrcx2.png)
 
 3. Paste the copied IVR number in the placeholder `+12XXXXXXXX` in the given URL with your IVR number.
 **SIP URL**: `sip:+12XXXXXXXX@r4dev.sip.yellow.ai:5061`
@@ -535,23 +535,23 @@ After connecting your IVA Professional account with RingCX, you need to configur
 
 4. Ensure you replace +12XXXXXXXX with the correct country code and your IVR number in the proper format. Once updated, paste this SIP URL in the** SIP URL** field and click **Save**.
 
-   ![](https://imgur.com/VDvsPxj.png)
+   ![](/img/integration/addivrcx3.png)
      
 #### Configure Workflow in RingCX     
      
 1. In your RingCX account, go to **Categorization** > **Workflows**.
 
-      <img src="https://imgur.com/GVwp9ZY.png" alt="drawing" width="60%"/>
+      <img src="/img/integration/workflowcx1.png" alt="drawing" width="60%"/>
       
 2. Select the workflow you created for this integration.
 
-     ![](https://imgur.com/D4Y51GI.png)
+     ![](/img/integration/workflowcx2.png)
       
 3. Open **Workflow Studio** to access your workflow.
 
-    ![](https://imgur.com/UZlVCVU.png)
+    ![](/img/integration/workflowcx3.png)
     
 14. In the workflow, locate the IVA node and select the IVA integration where the IVR number was added to ensure calls are received on the Yellow platform
 
-    ![](https://imgur.com/OJk48h0.png)
+    ![](/img/integration/workflowcx5.png)
       
