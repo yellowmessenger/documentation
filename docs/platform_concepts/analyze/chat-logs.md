@@ -192,7 +192,6 @@ To use **comments**, follow these steps:
 
 1. **Add comments**: Add comments (200-character limit) directly within conversation logs. Usernames are displayed with each comment for context.  
 2. **Reply to comments**: Engage in threaded discussions by replying to specific comments.  
-
 ![image](https://hackmd.io/_uploads/S187u22wyx.png)
 
 3. **Mark comments as resolved**: Change the status of comments to resolved when issues are addressed.  
