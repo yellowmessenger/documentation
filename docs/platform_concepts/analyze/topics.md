@@ -90,13 +90,19 @@ To filter data and view a particular topic, click **Filter**.
 
 The following filters are available:  
 
-1. **Article Suggested**: Select either "Yes" or "No."                             
-      <img src="https://imgur.com/tYy0peE.png" alt="drawing" width="50%"/>                       
-2. **Timestamp**: Filter data for specific dates or a custom time range.              
-3. **User Sentiment**: Choose between "Positive," "Neutral," or "Negative."                     
-    <img src="https://imgur.com/5tEnrEI.png" alt="drawing" width="50%"/>                         
-4. **Topics**: Filter by the text or subtext of the topics.                        
-    <img src="https://imgur.com/Z50mSDn.png" alt="drawing" width="50%"/>                 
+1. **Article Suggested**: Select either "Yes" or "No."                                           
+
+<img src="https://imgur.com/tYy0peE.png" alt="drawing" width="50%"/>
+
+2. **Timestamp**: Filter data for specific dates or a custom time range.
+
+3. **User Sentiment**: Choose between "Positive," "Neutral," or "Negative."                                                  
+
+<img src="https://imgur.com/5tEnrEI.png" alt="drawing" width="50%"/>  
+
+4. **Topics**: Filter by the text or subtext of the topics.                                                  
+
+<img src="https://imgur.com/Z50mSDn.png" alt="drawing" width="50%"/>                             
 
 
 ----------
