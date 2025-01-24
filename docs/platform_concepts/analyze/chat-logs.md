@@ -158,52 +158,42 @@ You can share the conversation logs with your team members to review and discuss
 
 ## Comments on conversation logs 
 
-Monitoring AI agent performance often involves manually reviewing conversation logs, flagging issues, and sharing feedback through tools like Slack, email, or spreadsheets. This fragmented process causes inefficiencies in tracking, prioritization, and resolution.   The **Comments** feature within conversation logs improves the user experience by enabling teams to create, manage, and resolve tasks directly within the system. Following are the **use cases** that can be accomplished with Comments for different teams: 
+**Comments** feature within conversation logs improves the user experience by enabling teams to create, manage, and resolve tasks directly within the system. Following are the tasks that can be accomplished with Comments for different teams: 
 
-**Customer teams**  
-- Add comments to specific messages to effectively communicate issues.  
-- Filter and view open and resolved comments for better tracking.  
-- Reply to comments to collaborate with other teams.  
+![image](https://hackmd.io/_uploads/S13Xn4xdkg.png)
 
-**Delivery/Support teams**  
-- View all open and resolved comments.  
-- Filter comments by status for prioritization.  
-- Reply to comments and mark them as resolved to manage workflows efficiently.  
-
-**Bot developers**  
-- Review comments added by customer teams to address specific issues.  
-- Reply to comments to provide updates or clarification.  
-- Mark comments as resolved once issues are handled.  
-
-![image](https://hackmd.io/_uploads/r1U8833D1g.png)
+| Customer teams | Delivery/Support teams| Bot developers |
+| -------- | -------- | -------- |
+| - Add comments to specific messages to effectively communicate issues.  <br/> - Filter and view open and resolved comments for better tracking.  <br/> - Reply to comments to collaborate with other teams. |- View all open and resolved comments.  <br/>- Filter comments by status for prioritization.<br/> - Reply to comments and mark them as resolved to manage workflows efficiently. | - Review comments added by customer teams to address specific issues.  <br/> - Reply to comments to provide updates or clarification.  <br/> - Mark comments as resolved once issues are handled.  | 
 
 
-:::info 
 
-**Scope**
+To use **Comments**, follow these steps: 
 
-| Included | Not Included |
-| -------- | -------- |
-| Adding comments to conversation logs <br/> Viewing open and resolved comments  <br/> Replying to comments for collaboration <br/> Marking comments as resolved   | Assigning comments to individuals or groups <br/>  Introducing additional statuses beyond open/resolved <br/> Setting priorities for comments <br/>  Deleting or reopening comments       |
+1. Open conversation: Open a conversation by clicking the user name. This expands the conversation. 
+![image](https://hackmd.io/_uploads/BJDVFEed1e.png)
+![image](https://hackmd.io/_uploads/rJU_Y4lu1l.png)
 
-:::
+2. **Add comments**: Open **Comments** tab. You can see a **+** icon next each message within the conversation. Click  **+Add comments**, type a comment (200-character limit) and hit send icon. 
+![image](https://hackmd.io/_uploads/rkDKcEgOyl.png)
+![image](https://hackmd.io/_uploads/H1RfsNgOJe.png)
 
-To use **comments**, follow these steps: 
-
-1. **Add comments**: Add comments (200-character limit) directly within conversation logs. Usernames are displayed with each comment for context.  
-2. **Reply to comments**: Engage in threaded discussions by replying to specific comments.  
+4. **Reply to comments**: Engage in threaded discussions by replying to specific comments.  
 ![image](https://hackmd.io/_uploads/S187u22wyx.png)
 
-3. **Mark comments as resolved**: Change the status of comments to resolved when issues are addressed.  
-![image](https://hackmd.io/_uploads/H1Syn2hvkx.png)
-
-4. **Auto flagged comments**: Chats containing comments (both open and resolved) are automatically flag  for easy filtering.  
+3. **Mark comments as resolved**: Change the status of comments to resolved when issues are addressed.              
+![image](https://hackmd.io/_uploads/rJ8IsVlu1l.png)
 ![image](https://hackmd.io/_uploads/S1LTPhnw1g.png)
 
+4. **Auto flagged comments**: Chats containing comments (both open and resolved) are automatically flagged for easy filtering.              
+![image](https://hackmd.io/_uploads/ryAMNogukg.png)
+![image](https://hackmd.io/_uploads/SkucZigOJg.png)
+
 5. **View and manage comments**: Filter and view open or resolved comments for easier tracking. Resolved comments are visually grayed out for distinction.  
-![image](https://hackmd.io/_uploads/S1JQwh2v1e.png)
+![image](https://hackmd.io/_uploads/H1Vx3Veukg.png)
 
-> The comment button is displayed only when users are in the **Comments** tab.  
-
+:::note
+The comment button is displayed only when users are in the **Comments** tab.  
+:::
 
 

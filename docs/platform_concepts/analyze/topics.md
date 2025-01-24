@@ -78,9 +78,10 @@ For example, in the below screenshot, out of 1045 conversations in this topic, 5
 ----------
 
 
-## Search & Filter Topics  
+## Upcoming feature: Search & Filter Topics  
 
-> **Coming soon!**
+> This feature is **Coming soon**!
+
 
 You can **search** for a specific topic using the global search feature.                    
 ![image](https://imgur.com/TpS9jkC.png)                  
