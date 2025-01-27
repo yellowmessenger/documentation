@@ -22,6 +22,8 @@ Containment rate refers to the number of conversations handled solely by the  wi
     - **Ticket in 3rd Party System/Trigger Event**: AI-agent creates a support ticket in another system or triggers a custom event.
 
 
+## Offling ticket handling using Chat handoff node 
+
 ### Current limitation 
 
 Yellow Inbox transfer are tracked with the `agent-transfer` event. But while using 3rd Party Inbox, the transfer depends on AI-agent-level configuration but that **is not currently trackable**.
@@ -68,7 +70,9 @@ Once a handover to the third-party tool occurs, ticket details are received. Upo
 Offline ticket messages sent to Yellow.ai's backend won't initiate processes (such as, ticket closure and fetching chat transcripts) automatically. To enable this, you need to create an automation rule in your Freshdesk (or other third-party ticketing app) and configure a webhook. This webhook can be set up using Yellow.ai's **Integration** module.
 
 
-### Configure webhook
+## Configure Freshdesk webhook
+
+### Set up Freshdesk webhook
 
 Follow these steps to enable automations and set up a webhook: 
 
