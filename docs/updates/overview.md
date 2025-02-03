@@ -8,6 +8,93 @@ featured: true
 
 
 
+
+Here’s how your release notes can be structured in a professional, concise, and informative manner, following the Chrome release style:  
+
+---
+
+## 📊 Analyze Enhancements 
+
+### Add Comments to Conversation Logs
+
+We’ve introduced a **Comments** feature within conversation logs which enables seamless collaboration across teams. enhances workflow management, making collaboration within conversation logs more efficient. With this release, your teams can now create, manage, and resolve tasks.  
+
+✅ **For Customer Teams:**  
+- Add comments to specific messages to highlight concerns or issues.  
+- Filter and view open or resolved comments for improved tracking.  
+- Reply to comments to collaborate effectively with other teams.  
+
+✅ **For Delivery/Support Teams:**  
+- View all open and resolved comments in conversation logs.  
+- Filter comments by status to prioritize tasks.  
+- Reply to comments and mark them as resolved to streamline workflows.  
+
+✅ **For Bot Developers:**  
+- Review comments from customer teams to address specific issues.  
+- Provide updates or clarifications by replying to comments.  
+- Mark comments as resolved once the issue is addressed.  
+
+**[Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#comments-on-conversation-logs)**
+
+### Auto-Flagged Chats for Better Tracking
+
+Chats are now auto-flagged when comments are present, making it easier to filter and track conversations that require attention.
+
+
+
+### AI-Generated Article Suggestions for Next-Level Knowledge Management
+
+We’ve introduced **AI-generated article suggestions** to streamline knowledge management and enhance automation. This feature helps AI Agent maintain an up-to-date and accurate knowledge base, reducing agent workload and improving response efficiency.
+
+The AI analyzes customer interactions, identifies recurring topics, and generates article suggestions tailored to these topics.
+
+#### Key Enhancements:  
+- **Topic-Centric Organization**: The generated article is aligned with the identified topic, ensuring clarity and relevance.  
+- **Prominent Topic Display**: The topic name is clearly displayed at the top for easy reference.  
+- **Seamless Knowledge Base Updates**: Suggested articles can be reviewed, refined, and published directly within the system, reducing manual effort.  
+
+
+Know more about **[AI Generated Articles](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion#1-ai-generated-article-for-the-selected-topic)**
+
+
+
+### Expanded Access for Analyze: Now Available to Insights Admins
+
+In addition to Super Admins and Admins, Insights Admins can now access Analyze module.
+
+
+
+[Learn how to use](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro#access-analyze)
+
+
+---
+
+
+
+## 💡 Insights Updates
+
+### Enhanced User Experience in Insights
+
+We’ve implemented several UX improvements to provide a smoother, more intuitive experience for accessing and analyzing chat data and insights within Insights.
+
+- **Simplified Chat Access:**  
+  - Opening a chat URL under **Chat Transcripts > Data Explorer** now redirects to the cloud platform instead of the app UI.  
+  - Conversation logs are now more accessible—chats open on the **right side** instead of a new page, making it easier to read and navigate.  
+
+- **Improved Table Join Experience:**  
+  - An [execution progress icon](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/table_join#report-progress) now appears when running queries.  
+  - A [notification confirms](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/table_join#alerts) when a table is successfully created.  
+  - A new [query queue](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/table_join#report-generation) lets you track the status of table creation.  
+
+
+
+---
+
+
+## 🤖 AI Agent Updates
+
+
+
 ## Introducing AI Copilot: Your Intelligent Assistant for AI Agent Development
 
 **Agent AI Copilot** puts everything you need to build smarter, more reliable AI agents. It is designed to simplify the process of building, testing, and debugging LLM-powered AI agents, making it faster, easier, and more transparent. Whether you're troubleshooting agent responses or streamlining workflows, Copilot ensures you stay in control of every step of the journey.
@@ -44,63 +131,12 @@ The streamlined UI allows you to:
 
 
 
-[Visit AI Copilot documentation](https://docs.yellow.ai/docs/platform_concepts/copilot)
+**[Visit AI Copilot documentation](https://docs.yellow.ai/docs/platform_concepts/copilot)**
 
 ----
 
 
 
-## Introducing the All-in-One Support Portal: Help Center
-
-The **Yellow.ai Help Center** is a plug-and-play widget designed to seamlessly integrate into customer websites, delivering a unified and efficient support experience. Powered by **AI-Copilot**, it consolidates the core functionalities of **Inbox**, **KnowledgeBase**, and **Ticketing System** into a single, intuitive interface. This comprehensive solution empowers businesses to provide faster, more effective assistance while simplifying support for customers.  
-
-
-#### **Key Benefits**  
-
-#### **1. Centralized Ticket Management**  
-- Manage all customer tickets in one place, removing the complexity of tracking scattered email threads.  
-- Enable users to continue conversations on specific tickets with ease, improving clarity and efficiency.  
-
-#### **2. Unified Customer Experience**  
-- Access AI-powered agents, browse KnowledgeBase articles, and connect with live agents—all through a single interface.  
-- Provide customers with a seamless transition between support options, ensuring an intuitive and hassle-free journey.  
-
-
-[Learn more about Help Center](https://docs.yellow.ai/docs/platform_concepts/aicopilot)
-
-
----
-
-## Ticket Conversation Analysis from Third-Party Apps
-
-
-Earlier, our **Analyze module** only supported analytics from in-house applications. With this update, it now integrates data from third-party apps like Zendesk, providing centralized reporting to ensure that no insights are missed and offering a unified view of all ticket conversations.
-
-
-#### **Enhancements Made**
-
-#### **1. Integration with Third-Party Applications**  
-The **Analyze module** now supports ticket conversation analysis from third-party platforms like **Zendesk**. This integration is facilitated through a secure webhook, ensuring seamless data transfer while maintaining strict data confidentiality.  
-
-#### **2. Comprehensive Analysis Dashboard**  
-Access a unified dashboard to explore detailed insights, including:  
-- **Sentiment Analysis**: Understand customer emotions across conversations.  
-- **Keyword Extraction**: Identify key themes and topics from interactions.  
-- **Conversation Trends**: Spot patterns to track performance and customer behavior.  
-
-
-#### Key Benefits
-
-- **Deeper Insights**: Analyze customer sentiment and behavior across multiple platforms for a clearer understanding of interaction patterns.  
-- **Centralized Reporting**: Consolidate all ticket conversation data, whether from in-house systems or third-party apps, into one cohesive dashboard.  
-- **Actionable Intelligence**: Use comprehensive analytics to refine support strategies, streamline processes, and boost customer satisfaction.  
-
-
-[Learn more about creating offline tickets in third-party tools](https://docs.yellow.ai/docs/platform_concepts/analyze/handoffnode#analyze-transcripts-in-third-party-apps)
-
-
-
-<!-- ## LLM Configuration -->
 
 
 
@@ -109,4 +145,6 @@ Access a unified dashboard to explore detailed insights, including:
 
 
 
------
+
+
+
