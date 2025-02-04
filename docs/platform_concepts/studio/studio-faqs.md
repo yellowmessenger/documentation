@@ -513,6 +513,52 @@ To extract specific date values, you can use the following syntax:
 
 </details>
 
+<details>
+<summary>How do I pass user responses collected in a node to a function?</summary>
+
+To pass user input from node to a function, follow these steps:
+
+1. In a flow, use a **Prompt** node (Question, Quick replies) to collect user input and **Store the response in** a variable.
+
+      ![](https://i.imgur.com/8DvMW9r.png)
+      
+2. Navigate to the **Functions** section and create a new function. In this function, use below syntax to access the user response (Variable).
+
+`let any_variable_name = data.variables.selected_user_variable;`  
+
+Example: 
+
+```javascript
+return new Promise(resolve => {
+        // Your logic goes here
+        let userName=data.variables.user_name;
+    console.log("userName :" + userName);
+        resolve(userName);
+    });  
+```
+
+   ![](https://i.imgur.com/PL2AYwi.png)
+   
+3. Go to your flow and add a **Function** node after the Prompt node. Select the function that you have created to pass the user input.
+
+      ![](https://i.imgur.com/H5QUEQs.png)
+      
+4. Test your flow using the **Preview** option to view the user's input, which is passed to the function.
+
+5. To verify, go to **Analyze** > **Conversation logs**.
+
+    ![](https://i.imgur.com/yrISEwZ.png)
+    
+6. Go to **Logs** and click on the below high-lighted icon.
+
+   ![](https://i.imgur.com/Jteo6Sc.png)
+   
+7. Click on **Logs** icon to view the user input.
+
+    ![](https://i.imgur.com/S2DcP4P.png)
+
+</details>
+
 
 -------
 

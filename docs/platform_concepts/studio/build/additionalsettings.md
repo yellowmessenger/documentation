@@ -71,7 +71,7 @@ Learn more about [supported document types](https://docs.yellow.ai/docs/platform
 
    <img src="https://i.imgur.com/gRy9PX5.png" alt="drawing" width="40%"/>
 
-3. **Enable links for summarized answer**: Enable this option to provide summarized results with supported links.
+3. **Enable links for summarized answer**: Enable this option to provide summarized results with supported links. You can also disable this option, if you do not want any links to be included in the responses.
 
    <img src="https://i.imgur.com/n4JYAFK.png" alt="drawing" width="40%"/>
 
