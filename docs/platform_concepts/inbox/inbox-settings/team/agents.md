@@ -101,6 +101,7 @@ By default, all these fields are checked (available to the agents). If you want 
 |Allow agent to view attachments sent by bot| The agent will be able to view the previous interaction between a bot and the customer (including the files/images) that took place before connecting to the live agent. If this field is de-selected, the agent will not be able to see the attachments in the previous chat(only text messages will be displayed).   |
 |Show WhatsApp phone number of the user|Details of WhatsApp bots such as phone numbers are tracked. If this field is disabled, the WhatsApp number of the bot user will not be visible to the agent.  |
 |Allow to edit contact| Customer details passed through raise ticket nodes can be modified on the chat screen. If this field is de-selected, agents cannot edit/update bot user contacts. |
+| Enable reporting sensitive files for deletion | Agent can mark an attachments sent by customers as sensitive by clicking on the disclaimer option. This will delete the attachment from the backend in 15 days. | 
 
 
 ### Bulk update agent permissions
