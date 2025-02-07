@@ -104,3 +104,52 @@ Once configured, you can see the analysis generated on the Analyse module for th
 ![image](https://imgur.com/sRRhxb7.png)
 ![image](https://imgur.com/V3Cd0lt.png)
 ![image](https://imgur.com/ndfgeSV.png)
+
+## Configure Webhook and Trigger to track tickets in Zendesk
+
+To receive notifications for ticket updates within Zendesk's offline ticketing system, you can set up webhook and trigger.
+
+### Create a Webhook
+
+To configure a webhook for receiving ticket update notifications, follow these steps:
+
+1. Log in to your Zendesk account.
+
+2. Go to **Admin Center** by clicking the **Admin icon** in the sidebar.
+
+3. Navigate to **Apps** > **Integrations** > **Webhooks**.
+
+4. Click on **Create Webhook**.
+
+5. In **Name** field, enter the name of your webhook.
+
+6. In **Endpoint URL**, provide the URL where you want to receive the notifications.
+
+8. In **Request** method, select POST.
+
+9. In **Request** format, choose JSON.
+
+10. Click **Create** to save the webhook.
+
+  ![](https://i.imgur.com/f4ZpJGw.png)
+
+### Create a Trigger
+
+To notify the webhook when a ticket is updated, set up a trigger:
+
+1. Go to **Admin center** by clicking the **Admin icon** in the sidebar.
+
+2. Navigate to **Objects and rules** > **Triggers**.
+
+3. Click on **Add trigger**.
+
+4. In trigger details, enter a **Name** of the trigger.
+
+5. In **Conditions**, define when the trigger should activate (example, when a ticket is updated).
+
+6. In **Actions**, set the action to notify the webhook you created.
+
+   ![](https://imgur.com/akjkijx.png)
+
+
+

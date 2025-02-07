@@ -435,6 +435,19 @@ A layout that can be changed: Change vertical to horizontal cards, change the di
    </div>
 </details>
 
+<details>
+ <summary>How to Change the Default Fallback Response of Document Search?
+</summary>
+In the Flow editor, add the <b>Knowledge Search</b> node and connect the <b>Fallback</b> output to a Message, Prompt, or Action node. This ensures that when no relevant document is found, the bot provides this custom fallback response instead of the default response.
+
+ <div>
+  <div>
+​
+</div>
+  <br/>
+   </div>
+</details>
+
 ---------
 
 ### Functions & APIs
@@ -770,6 +783,8 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
   <br/>
    </div>
 </details>
+
+
 
 
 

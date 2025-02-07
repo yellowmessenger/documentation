@@ -422,4 +422,10 @@ You cannot send stickers in WhatsApp chatbot. A WhatsApp chatbot can respond wit
 </p>
 </details>
 
+<details><summary><b>Why are WhatsApp usernames being captured in the conversation log?</b></summary>
+<p>
+WhatsApp usernames are captured in the conversation log to uniquely identify the user interacting with the bot. This helps in maintaining a record of the conversation and ensures that the interactions are personalized and relevant to the user.
+</p>
+</details>
+
 
