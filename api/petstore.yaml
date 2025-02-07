@@ -1440,6 +1440,74 @@ paths:
         '400':
           description: "Invalid request"
 
+  '/api/v1/tickets':
+    get:
+      security:
+        - ApiKeyAuth: []        
+      tags: 
+        - Email Ticket                    
+      summary: Get list of tickets
+      description: |
+        Fetches a paginated list of tickets created in the past 30 days. By default, it returns the latest 50 tickets.
+      parameters:
+        - name: page
+          in: query
+          description: The page number to retrieve.
+          required: false
+          schema:
+            type: integer
+            default: 1
+        - name: per_page
+          in: query
+          description: Number of tickets per page.
+          required: false
+          schema:
+            type: integer
+            default: 50
+      responses:
+        '200':
+          description: A list of tickets retrieved successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  tickets:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        id:
+                          type: string
+                          example: "ticket_12345"
+                        status:
+                          type: string
+                          example: "open"
+                        created_at:
+                          type: string
+                          format: date-time
+                          example: "2024-02-05T10:00:00Z"
+                  pagination:
+                    type: object
+                    properties:
+                      page:
+                        type: integer
+                        example: 1
+                      per_page:
+                        type: integer
+                        example: 50
+                      total_pages:
+                        type: integer
+                        example: 10
+                      total_tickets:
+                        type: integer
+                        example: 500
+        '400':
+          description: Bad request. Invalid parameters provided.
+        '401':
+          description: Unauthorized. API key required.
+        '500':
+          description: Internal server error.
 
 
  

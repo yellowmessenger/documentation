@@ -461,7 +461,61 @@ c. Service Explicit - Notifications to existing customers only promoting other p
 </details>
 
 
-## Campaign errors & troubleshooting
+## Campaign & Notification API errors & troubleshooting
+
+
+<details>
+<summary>
+What are the common reasons for a message failure?</summary>
+
+Message failures can occur due to various reasons depending on whether the message is sent via **Notification API** or **Outbound Campaigns**. Below are the key reasons categorized accordingly:  
+
+**Notification API – Possible Reasons for Message Failures**  
+
+1. **Incorrect Configuration**: Ensure that API keys, authentication, and webhook settings are properly configured.  
+2. **Network Issues**: Unstable network connections may cause API timeouts or failed requests.  
+3. **Platform Limitations**: Some messaging platforms (WhatsApp, Facebook, etc.) have rate limits or delivery constraints.  
+4. **Validation Failures**: Messages may fail if they do not meet the platform’s validation requirements (e.g., missing required fields).  
+5. **Permission Issues**: The sender account may not have the necessary permissions to send messages.  
+6. **Data Mismatch**: Incorrect recipient details (phone numbers, email addresses, etc.) can result in undelivered messages.  
+
+**Outbound Campaigns – Possible Reasons for Message Failures**  
+
+1. **Audience Targeting Issues**: Ensure that recipient lists are correctly formatted and contain valid contact details.  
+2. **Campaign Configuration Errors**: Incorrect message templates, missing variables, or misconfigured scheduling can cause failures.  
+3. **Opt-out Restrictions**: Messages may not be delivered if users have opted out of receiving communications.  
+4. **Channel-Specific Rules**: Some platforms restrict promotional or bulk messaging, affecting campaign performance.  
+5. **API Rate Limits**: Sending too many messages at once may trigger rate limits, causing delays or failures.  
+6. **Invalid Message Content**: Some platforms enforce strict content policies, rejecting messages that do not comply.  
+
+For troubleshooting, see [Outbound Campaign Errors](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/view-outbound#download-and-analyse-campaign-report) and [Notification API Error Codes](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#api-error-codes)
+
+</details>
+
+
+
+<details>
+<summary>How can I troubleshoot and resolve message failures?</summary>
+
+- **For Notification API**:  
+
+  - Check API logs for error messages.  
+  - Ensure the correct API key and authentication method are used.  
+  - Verify that the recipient's contact details are accurate.  
+  - Review rate limits imposed by the messaging platform.  
+
+- **For Outbound Campaigns**:  
+
+  - Validate the recipient list before launching a campaign.  
+  - Review campaign logs to identify specific failure reasons.  
+  - Test different message formats to ensure compliance with platform rules.  
+  - Monitor opt-out rates and adjust messaging strategies accordingly.  
+
+  For more details, see [Outbound Campaign Errors](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/outbound-campaigns/view-outbound#download-and-analyse-campaign-report) and [Notification API Error Codes](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#api-error-codes)
+
+
+</details>
+
 
 <details>
 
