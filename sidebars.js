@@ -31,6 +31,7 @@ module.exports = {
     "cookbooks/getting_started", 
     "cookbooks/migration-guide",
     "cookbooks/botregion",
+    "cookbooks/customapps",
     "cookbooks/voicebottroubleshooting",
   
 
@@ -126,6 +127,7 @@ module.exports = {
     "cookbooks/insights/toptriggeredintents",
     "cookbooks/insights/kbdebugging",
     "cookbooks/insights/downloadreport_dataops",
+    "cookbooks/insights/botperformancemetrics",
 
   ],
 }, 
@@ -371,7 +373,26 @@ module.exports = {
                   items: [
                     "platform_concepts/studio/dynamicchatnode", 
                     "platform_concepts/studio/build/nodes/prompt-nodes",
-                    "platform_concepts/studio/build/nodes/message-nodes",
+                    {
+                      type: "category",
+                      label: "Message nodes",
+                      link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/message-nodes1.md/message-nodes'},
+                      collapsed: true,
+                      items: [
+                        "platform_concepts/studio/build/nodes/message-nodes1.md/image-node", 
+                        "platform_concepts/studio/build/nodes/message-nodes1.md/text-node",
+                        "platform_concepts/studio/build/nodes/message-nodes1.md/carousel-message-node",
+                        "platform_concepts/studio/build/nodes/message-nodes1.md/video-node",
+                        "platform_concepts/studio/build/nodes/message-nodes1.md/file-node",
+                        "platform_concepts/studio/build/nodes/message-nodes1.md/quick-replies",
+                        "platform_concepts/studio/build/nodes/message-nodes1.md/whatsapp-list",
+                        "platform_concepts/studio/build/nodes/message-nodes1.md/whatsapp-product-message",
+                        "platform_concepts/studio/build/nodes/prompt-nodes",
+                       
+                        "platform_concepts/studio/build/nodes/action-nodes",
+                        "platform_concepts/studio/build/nodes/logic-nodes",
+                      ],
+                    }, 
                     "platform_concepts/studio/build/nodes/action-nodes",
                     "platform_concepts/studio/build/nodes/logic-nodes",
                   ],
@@ -1034,6 +1055,7 @@ module.exports = {
           collapsed: true,
           items: [
              // third party hand off 
+            "platform_concepts/analyze/articlesuggestion",
             "platform_concepts/analyze/handoffnode",
 
               ],
@@ -1403,6 +1425,7 @@ module.exports = {
             "platform_concepts/appConfiguration/twilio-verify",
             "platform_concepts/appConfiguration/webengage",
             "platform_concepts/appConfiguration/webhook",
+            "platform_concepts/appConfiguration/zendesk-offline-ticketing",
 
           ],
         },

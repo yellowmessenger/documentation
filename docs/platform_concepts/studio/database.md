@@ -15,6 +15,26 @@ It acts as the bot's memory, holding information such as:
 - **Transactional Records:** Details of transactions and payment information.
 - **Integration Data:** Information from external APIs and systems.
 
+
+
+What is the difference between **User 360** and **Database** table?
+
+While both are tables and share some similarities, they differ in purpose and functionality.
+
+| **User 360**| **Database**|
+|--------|--------|
+|  Focuses on maintaining a unified view of customer-specific data, such as user attributes, interactions, and preferences. |  A general-purpose structure used for storing and managing any kind of structured data, such as product inventories or transaction logs.|
+| The User 360 table stores data under user properties.| Custom database tables store data that is not part of user properties.| 
+You can create new custom properties(columns).| You can create custom tables and columns based on your requirement.|
+Use across multiple modules, including campaigns for personalization. | Use mainly for AI Agent conversations or specific operations.
+| **Example:** Store user communication details, preferences, and subscription data. | **Example:** Store loan details, system permissions, or inventory data. |
+
+
+### Key similarities between User 360 and Database
+
+- For both User 360 and Database, it is necessary to define data types (e.g., boolean, string etc) while creating the custom properties/columns.
+- Once a property in User 360 or a column in a database table is created, it cannot be deleted.
+
 ## Create database table
 
 You can create a table with different columns, each with a specific name and data type.

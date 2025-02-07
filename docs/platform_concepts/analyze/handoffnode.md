@@ -1,6 +1,6 @@
 ---
-title: Topic Analysis for 3rd party Inbox apps
-sidebar_label: For 3rd party Inbox apps
+title: Topic Analysis for Third party ticketing tools 
+sidebar_label: For 3rd party ticketing tools
 ---
 
 > In this article, we refer to any applications other than Yellow.ai, such as third-party ticketing systems and support CRMs, as third-party apps.
@@ -21,6 +21,8 @@ Containment rate refers to the number of conversations handled solely by the  wi
     - **Email**: AI-agent creates an email ticket.
     - **Ticket in 3rd Party System/Trigger Event**: AI-agent creates a support ticket in another system or triggers a custom event.
 
+
+## Offling ticket handling using Chat handoff node 
 
 ### Current limitation 
 
@@ -63,17 +65,14 @@ Third-party workflow:
 
 Once a handover to the third-party tool occurs, ticket details are received. Upon ticket closure (with no specific time constraint), the ticket is analyzed, and both the **transcript** and **insights** are displayed in the Analyze module.
 
-
-
-![image](https://imgur.com/dbIOSsI.png)
-![image](https://imgur.com/pOEUP2a.png)
-
-
+----------
 
 Offline ticket messages sent to Yellow.ai's backend won't initiate processes (such as, ticket closure and fetching chat transcripts) automatically. To enable this, you need to create an automation rule in your Freshdesk (or other third-party ticketing app) and configure a webhook. This webhook can be set up using Yellow.ai's **Integration** module.
 
 
-### Configure webhook
+## Configure Freshdesk webhook
+
+### Set up Freshdesk webhook
 
 Follow these steps to enable automations and set up a webhook: 
 
