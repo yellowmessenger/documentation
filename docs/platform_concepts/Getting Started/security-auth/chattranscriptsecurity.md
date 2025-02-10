@@ -10,6 +10,7 @@ This feature is available on the app and cloud platform.
 :::note
 - Only Super admins(owners) can access this option.
 - Currently, only IPV4 addresses are supported for whitelisting.
+- We rely on Cloudflare (CF) to protect our internal IP address. As a result, the public-facing IP address is provided by Cloudflare. For additional information, you can refer to [cloudflare’s official IP ranges](https://www.cloudflare.com/en-in/ips/).
 :::
 
 Chat transcripts are vital records of interactions between users and AI-agent, whether they are [conversation logs](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs) or [chats with agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chattranscript). By enabling IP whitelisting, the platform allows access to the conversations only from specified IP addresses.
@@ -25,6 +26,7 @@ Chat transcript visibility for different permissions:
 - **Users without AI-agent access and without whitelisted IP addresses**: The chat transcript link will not be accessable.
 
     ![](https://imgur.com/c6T900o.png)
+
 
 
 ---

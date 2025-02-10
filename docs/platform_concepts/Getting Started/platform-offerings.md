@@ -108,6 +108,11 @@ Click on your account name in the top right corner to access your profile and ac
 
 **[Learn about profile settings](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/user-account-settings)**
 
+:::note
+You cannot delete your account on your own using the cloud platform. To request account deletion, please contact our support team at **support@yellow.ai**.
+:::
+
+
 ## Switch bots
 
 * Use the drop-down option next to the bot name to view and switch between different bots within your subscription.
@@ -134,6 +139,8 @@ Configure your bot to support multiple languages, making conversations more acce
 ![Multilingual Support](https://imgur.com/AqUoqMo.png)
 
 **[Learn more about multilingual bot configuration](https://docs.yellow.ai/docs/cookbooks/studio/multilingual-bot)**
+
+
 
 
 
