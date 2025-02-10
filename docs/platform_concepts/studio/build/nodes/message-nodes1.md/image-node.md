@@ -17,7 +17,7 @@ Use this node to display the visual context such as:
 
 - **File size restriction**: The maximum supported file size for images is 10MB.
 - **Media type restriction**: Only static image formats like JPG and PNG are supported; other media types such as videos, animated GIFs, or audio files are not supported. 
-
+- **Dimensions**: Recommended image dimensions: Width - 248px and Height - 164.2px.
 
 ### How to add Static image
 
