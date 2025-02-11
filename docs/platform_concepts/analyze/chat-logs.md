@@ -61,6 +61,16 @@ To filter chat logs, follow these steps:
  
 3. Click **Apply filter** after setting the criteria.
 
+:::info 
+The following **Tags** can be filtered: 
+1. **Validator Limit Exceeded**: Assigned when the validation limit set in respective node is exceeded i.e., user enters invalid input.
+2. **Missing Bot Response**: Assigned when there is no bot response generated. 
+3. **Unused Quick Replies**: Assigned when user does not select any Quick Reply, and instead responds with a text.
+4. **Fallback Limit Exceeded**: Assigned when AI agent goes to fallback, and exceeds the set limit.
+5. **Unidentified**: Assigned when the AI agent does not understand the user input/utterance.
+6. **Human Takeover**: Assigned when ticket is assigned to Human Agent.
+:::
+
 ## Label conversations
 
 Adding labels to conversation logs helps organize and categorize interactions. Labels make it easy to identify and track specific types of conversations, such as complaints, inquiries, or feedback, which allows you to identify the type of conversation easily.
@@ -142,4 +152,48 @@ You can share the conversation logs with your team members to review and discuss
    <img src="https://i.imgur.com/3JX56q2.png" alt="drawing" width="60%"/>
    
 * Share the URL with the specific user or team members.  
+
+---------
+
+
+## Comments on conversation logs 
+
+**Comments** feature within conversation logs improves the user experience by enabling teams to create, manage, and resolve tasks directly within the system. Following are the tasks that can be accomplished with Comments for different teams: 
+
+![image](https://hackmd.io/_uploads/S13Xn4xdkg.png)
+
+| Customer teams | Delivery/Support teams| Bot developers |
+| -------- | -------- | -------- |
+| - Add comments to specific messages to effectively communicate issues.  <br/> - Filter and view open and resolved comments for better tracking.  <br/> - Reply to comments to collaborate with other teams. |- View all open and resolved comments.  <br/>- Filter comments by status for prioritization.<br/> - Reply to comments and mark them as resolved to manage workflows efficiently. | - Review comments added by customer teams to address specific issues.  <br/> - Reply to comments to provide updates or clarification.  <br/> - Mark comments as resolved once issues are handled.  | 
+
+
+
+To use **Comments**, follow these steps: 
+
+1. Open conversation: Open a conversation by clicking the user name. This expands the conversation. 
+![image](https://hackmd.io/_uploads/BJDVFEed1e.png)
+![image](https://hackmd.io/_uploads/rJU_Y4lu1l.png)
+
+2. **Add comments**: Open **Comments** tab. You can see a **+** icon next each message within the conversation. Click  **+Add comments**, type a comment (200-character limit) and hit send icon. 
+![image](https://hackmd.io/_uploads/rkDKcEgOyl.png)
+![image](https://hackmd.io/_uploads/H1RfsNgOJe.png)
+
+4. **Reply to comments**: Engage in threaded discussions by replying to specific comments.  
+![image](https://hackmd.io/_uploads/S187u22wyx.png)
+
+3. **Mark comments as resolved**: Change the status of comments to resolved when issues are addressed.              
+![image](https://hackmd.io/_uploads/rJ8IsVlu1l.png)
+![image](https://hackmd.io/_uploads/S1LTPhnw1g.png)
+
+4. **Auto flagged comments**: Chats containing comments (both open and resolved) are automatically flagged for easy filtering.              
+![image](https://hackmd.io/_uploads/ryAMNogukg.png)
+![image](https://hackmd.io/_uploads/SkucZigOJg.png)
+
+5. **View and manage comments**: Filter and view open or resolved comments for easier tracking. Resolved comments are visually grayed out for distinction.  
+![image](https://hackmd.io/_uploads/H1Vx3Veukg.png)
+
+:::note
+The comment button is displayed only when users are in the **Comments** tab.  
+:::
+
 

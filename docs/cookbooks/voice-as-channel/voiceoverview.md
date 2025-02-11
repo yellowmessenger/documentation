@@ -17,7 +17,7 @@ In this article, you will learn:
 :::info
 - **Visit our [voice channel](https://yellow.ai/voice-channel/) to listen to the live calls attended by the yellow.ai voice bots.** 
 - Post your queries on [voice community](https://community.yellow.ai/c/voice/31).
-- Contact Aagam Mehta (aagam.mehta@yellow.ai) for support.
+- Contact Aagam Mehta (aagam.mehta@yellow.ai) for support and pricing details.
 :::
 
 ## <a name="intro"></a> 2. Introduction to conversational voice AI

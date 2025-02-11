@@ -3,6 +3,8 @@ title: Introduction to analyze
 sidebar_label: Analyze
 ---
 
+## Analyze overview
+
 Analyze is an advanced AI Analyst that helps brands monitor and enhance AI-agent performance over time through self-learning mechanisms. It improves your **contained resolution rate** by leveraging an in-house LLM model to evaluate each conversation, measure resolution quality and user sentiment, and create topic clusters.
 
 Business owners can then focus on the topics with the greatest opportunity to improve contained resolution.
@@ -27,6 +29,26 @@ Analyze is ideal for Customer Success Managers, Brand Owners, Customer Support L
 2. Boost agent productivity
 3. Enhance customer satisfaction
 4. Improve the quality of conversations
+
+-------
+
+## Access analyze
+
+To access the Analyze module you must have **any one** of the following permissions: 
+- Super admin
+- Admin 
+- Insights admin
+
+:::note
+
+Refer to [Manage your bot users](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#share-bot-access) article to understand how to request or provide access to use Analyze module in a bot.   
+    
+:::
+
+
+
+
+-----
 
 ## Key features 
 

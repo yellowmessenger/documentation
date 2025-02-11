@@ -1,14 +1,27 @@
 ---
-title: Single sign-on with OAuth for Cloud Platform
-sidebar_label: Cloud SSO with OAuth
+title: Single sign-on with OAuth & SAML for Cloud Platform
+sidebar_label: SSO with OAuth & SAML
 ---
 
 ## Overview
 
-Oauth is an authentication protocol which supports Single Sign-On (SSO) that streamline user access across various applications within an organization. SSO with OAuth enables your users to access the yellow.ai platform using their existing application login credentials, eliminating the need to re-enter them. It enhances security by enabling secure third-party access to user data without exposing login details, providing a seamless and efficient authentication process. Benefits of signing in through OAuth:
+### OAuth 
+
+OAuth is an authentication protocol which supports Single Sign-On (SSO) that streamline user access across various applications within an organization. SSO with OAuth enables your users to access the yellow.ai platform using their existing application login credentials, eliminating the need to re-enter them. It enhances security by enabling secure third-party access to user data without exposing login details, providing a seamless and efficient authentication process. Benefits of signing in through **OAuth**:
 *  Eliminates the need for direct sharing of login credentials, enhancing security.
 * You can control and limit third-party access to your data.
 * Proves adaptable to various scenarios in large-scale systems.
+
+### SAML 
+
+SAML (Security Assertion Markup Language) is an open standard for enabling single sign-on (SSO) across applications and services. It allows users to authenticate once with an Identity Provider (IDP) and gain access to multiple service providers without the need for repeated logins. This improves user experience and enhances security in Yellow.ai platform by centralizing authentication. Benefits of **SAML** Authentication:
+* Reduces the risk of phishing attacks and password vulnerabilities by eliminating the need for multiple passwords.
+* Enables users to log in once and access multiple applications without interruption.
+* Simplifies and centralizes user management by delegating authentication to a trusted IDP.
+
+
+
+
 
 
 ### SSO workflow
@@ -64,6 +77,7 @@ Steps to **retrieve details** from a few **common identity providers** are outli
 | **Red Hat** | Realm <br/>  Client ID  | [Click here](https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.0/html/server_administration_guide/clients#oidc_clients) |
 | **Google** |Client ID <br/> Client Secret | [Click here](https://support.google.com/cloud/answer/6158849?hl=en) <br/>  <br/> **Note**: Select **openid, userinfo.email** and **userinfo.profile under** scopes on the [Create Consent Screen](https://console.cloud.google.com/apis/credentials/consent?pli=1).| 
 | **Microsoft AzureAD** | Client ID  <br/> Client Secret <br/>  Tenant ID  <br/>Tenant Domain|  <details> <summary><strong> Click here </strong></summary><div> 1. Sign in to Azure AD. Click on App Services and select Manage Azure Active Directory. <br/> <br/> 2. In the left navigation, go to App registrations and click New registration. <br/> <br/> 3. On the registration page, provide application details. Choose web as the Redirect URI and input the redirect URLs. <br/> <br/> 4. Click Register. Azure AD will assign a unique Application ID (Client ID) to your application. Copy the Application ID and Directory ID (Tenant ID). <br/> <br/>  5. Navigate to Certificates and Secrets, click New Client Secret. Enter a description, set expiration, and click ADD. This will be your Client Secret key. </div> </details> |
+| **SAML integration** | IDP Name <br/> IDP description <br/>  IDP login URL <br/>  Entity ID <br/>Email domain <br/>  IDP Certificate (in Certificates) || 
 
    
 Watch this video on how configure your identity provider (**Microsoft AzureAD**) and fetch details for yellow.ai SSO configuration:    

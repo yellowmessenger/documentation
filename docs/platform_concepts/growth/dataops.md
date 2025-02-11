@@ -44,7 +44,7 @@ To export data, follow the steps below:
 
 
 :::info
-Export is supported only in JSON (and WAV for voice bot data) format. 
+Export is supported in CSV and JSON (and WAV for voice bot data) format. 
 :::
 
 ![](https://i.imgur.com/0HaT9yF.png)

@@ -23,33 +23,36 @@ The Insights module in Yellow.ai consists of the following sections:
 <!-- | [Overview](https://docs.yellow.ai/docs/platform_concepts/growth/overview) | This section provides an elaborate overview of the bot's functionality, highlighting nine common metrics such as user traffic, bot activity, and feedback. <br/> For insights specifically related to voice bots, you can refer to the [Voice overview](https://docs.yellow.ai/docs/platform_concepts/growth/voiceoverview) page.|
 | [Metrics](https://docs.yellow.ai/docs/platform_concepts/growth/metrics) | In this section, you can access a comprehensive range of metrics pertaining to bot users and API usage for your bot. It enables you to gain valuable insights into user behavior and interaction patterns.| 
 | [Doc cog](https://docs.yellow.ai/docs/platform_concepts/growth/doccog) | The Doc cog feature generates insights based on the documents uploaded within the [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) section. This functionality empowers you to extract valuable information and gain valuable insights from the content of your documents. |-->
+
 ----------
 
 ## 2. Manage access and permission to insights 
 
 
-There are two access control roles, **Insights analytics and Insights admins** implemented for the Insights module.
+Features within the Insights module can be accessed if a bot user has either of these roles, **Insights analytics and Insights admins**. 
 
 ![](https://hackmd.io/_uploads/HkKy6W9E3.png)
 
-1. **Insights (Admin)**: This role provides access to all available data and analytics.
-2. **Insights (Analytics)**: This role provides access to standard analytics, bot health monitoring, and user journey and goal tracking. Access granted for each module to this role is as follows:
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#1-share-bot-access) to learn how to provide **Insights analytics and Insights admins** permission to users in Yellow.ai. 
+
+
+1. **Insights (Admin)**: Insights (Admin) role provides access to all available data and analytics.
+2. **Insights (Analytics)**: Insights (Analytics) role provides access to standard analytics, bot health monitoring, dashboards, doc-cog and user journey. Access granted for each module to this role is as follows:
 
     | Modules | Access level| 
     | -------- | -------- | 
-    |Overview dashboard |  :heavy_check_mark:|
+    |Overview dashboard |  :heavy_check_mark: **Only** if the bot subscription date is after (greater then) `2023-12-14T18:30:00.000Z` |
     | Metrics dashboard - User metrics  | :x: Chat transcript <br/> :x: User details report|
     | Metrics dashboard - API usage | :heavy_check_mark:|
     | User journeys | :heavy_check_mark: User journey visualization <br/> :heavy_check_mark: Funnels|
     | Data ops | :x: |
-    | Goals | :heavy_check_mark:|
     | Dashboard | :x: |
     | Data explorer | :x: |
-    | Health | :x: |
-    | Doc cog  | :x: |
+    | Health | :heavy_check_mark: |
+    | Doc cog  | :heavy_check_mark: |
     | Voice overview  | :x: |
 
-    > Click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#1-share-bot-access) to learn about roles and access management in yellow.ai. 
+
 
 --------
 
