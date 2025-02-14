@@ -23,6 +23,19 @@ Access frequently used modules and actions quickly through the Quick Links secti
 
 ![Quick Links](https://imgur.com/P3MQohz.png)
 
+:::info
+Yellow.ai’s enterprise-grade chatbot solutions are trusted by leading brands across various industries.  If you would like to see how our AI-driven platform works in real-time, you can explore some of our live bot implementations below:  
+
+#### Live Bot Links:  
+- **Hyundai** – [hyundai.com](https://www.hyundai.com)  
+- **Royal Enfield** – [royalenfield.com](https://www.royalenfield.com)  
+- **Shriram Life Insurance** – [shriramlife.com](https://www.shriramlife.com)  
+
+#### Case Studies  
+For a deeper understanding of how organizations have successfully integrated Yellow.ai, explore detailed case studies, including how **Lion Air, Dominos, AirAsia, Sony,** and many others leverage our AI-driven automation:  
+🔗 [Yellow.ai Case Studies](https://yellow.ai/case-study/)  
+:::
+
 ### Quick start video
 
 Watch our quick tour video on [YouTube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) to understand the platform's capabilities and how to utilize the bot effectively. You can also find this video directly on the platform.
