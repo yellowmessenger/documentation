@@ -53,7 +53,7 @@ To integrate Zendesk Offline Ticketing with Yellow.ai, follow these steps:
 
 * To connect more accounts, repeat the steps outlined above for each account. You can add a maximum of 15 accounts.
 
-## Manage Freshdesk tickets through AI Agent
+## Manage Zendesk tickets through AI Agent
 
 This integration allows your bot to perform actions such as [retrieving user information](#), [adding new users](https://), and [creating offline tickets](https://) in Zendesk. 
 
