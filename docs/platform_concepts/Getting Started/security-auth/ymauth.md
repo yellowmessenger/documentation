@@ -182,7 +182,8 @@ To enable:
 1. Under **Secure bot**, open **Secured YM authentication**. 
 2. Enable the YM authentication toggle. 
 3. Select **Bring your own key**.
-4. Add YOUR_PRIVATE_KEY. The private key is used as a bearer token for authentication. Use the following format:
+4. Add YOUR_PUBLIC_KEY. The public key is used to verify the token. Use the following format for token generation:
+
 ```
 {
     "AuthenticationToken": {{Example_Token__eLqh8P7BR4FL7nQbFwUX5IyzpD5QO2X0ZBjtCmA}}, //Your private key 
