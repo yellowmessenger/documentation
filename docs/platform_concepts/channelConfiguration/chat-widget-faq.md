@@ -840,4 +840,13 @@ window.ymConfig = {"bot":"x1657623696077","host":"https://cloud.yellow.ai", "hid
   </div>
 </details>
 
+<details>
+<summary>How can I start a new conversation when my chat has stopped, and the intent is not working?</summary>
+<div>
+ <br/>
+ <div>If your chat has stopped and the intent is not working, try the following steps to start a new conversation:<br/>• <b>Click the Home icon</b> – This will reset the conversation and allow you to start fresh.
+<br/>• <b>Clear cache</b> – Clearing your browser or app cache can help resolve issues caused by stored session data.
+</div>
+  </div>
+</details>
 

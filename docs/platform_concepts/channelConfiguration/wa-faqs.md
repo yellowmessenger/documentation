@@ -428,6 +428,12 @@ WhatsApp usernames are captured in the conversation log to uniquely identify the
 </p>
 </details>
 
+<details><summary><b>Why is my WhatsApp chat stuck in a loop, and why are intents and entities not working?</b></summary>
+<p>
+If your WhatsApp chat is stuck in a loop and intents or entities are not working, follow these steps to resolve the issue:<br/>1. <b>Check configurations</b> – Ensure all WhatsApp channel settings are correctly configured.<br/>2. <b>Train Intents</b> – Verify that the bot is trained with the necessary intents and flows are correctly mapped.<br/>3. <b>Monitor network stability</b> – A stable network connection is essential to prevent message failures.<br/>4.<b> Update permissions</b> – Confirm that the Yellow.ai platform and WhatsApp integration have the required permissions.<br/>5. <b>Test the bot</b> – After making changes, test the bot on WhatsApp to ensure proper flow execution.<br/>6. <b>Debug Intents and Entities</b> – If intents and entities are not triggering correctly, re-train the bot, check confidence thresholds, ensure entity recognition is properly set up, and review conversation logs for misfired intents.<br/><b>Note</b>: If you still encounter any issues, contact the Support team (<b>support@yellow.ai</b>) with all the necessary details.
+</p>
+</details>
+
 
 
 
