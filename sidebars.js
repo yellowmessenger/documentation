@@ -1426,6 +1426,7 @@ module.exports = {
             "platform_concepts/appConfiguration/webengage",
             "platform_concepts/appConfiguration/webhook",
             "platform_concepts/appConfiguration/zendesk-offline-ticketing",
+            "platform_concepts/appConfiguration/generic-oauth",
 
           ],
         },
