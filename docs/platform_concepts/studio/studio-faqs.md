@@ -572,6 +572,24 @@ return new Promise(resolve => {
 
 </details>
 
+<details>
+ <summary> How to access the data of the database inside a function?</summary>
+
+To access database data within a function, store the database response in a variable of type object and use it within the function. You can retrieve and process the data using the following function:
+
+```js
+return new Promise(resolve => {
+        // Your logic goes here
+        let records = data.variables.db_response.records;
+    console.log(records, 'records');
+        resolve(records);
+    }); 
+```
+
+<b>Note</b>: Here, "db_response" is the variable name of object data type in which the database (search) node's response is stored.
+
+</details>
+
 
 -------
 
@@ -779,6 +797,19 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
  <div>
   <div> 
      To enable summarized results and summarized answers for the Knowledge Base (KB), follow these steps:<br/> 1.Go to <b>Automation</b> > <b>Build</b> > <b>Conversation settings</b>.<br/> <img src="https://i.imgur.com/GXendkw.png" alt="drawing" width="80%"/><br/>2.Under Document Search, enable <b>Summarized results</b> and <b>Summarized links</b>. <img src="https://i.imgur.com/odRJlGs.png" alt="drawing" width="70%"/>
+</div>
+  <br/>
+   </div>
+</details>
+
+## General FAQs
+
+<details>
+ <summary>Is it possible to add pictures to the GenAI prompt?
+</summary>
+ <div>
+  <div> 
+     Currently, adding images to the GenAI prompt is not supported. The prompt is designed to process and generate responses based on text inputs, as Large Language Models (LLMs) primarily work with textual data. Supporting images would require advanced multimodal capabilities, which are not yet available in the current implementation.
 </div>
   <br/>
    </div>
