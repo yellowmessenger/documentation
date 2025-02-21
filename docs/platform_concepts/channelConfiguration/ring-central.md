@@ -497,8 +497,8 @@ After connecting your IVA Professional account with RingCX, you need to configur
  
 | Key | Value |
 |------|------|
-| send_info | true | 
-| ringcentral_disconnect | true | 
+| send_info | Set "value" to a boolean "true" | 
+| ringcentral_disconnect | Set "value" to a boolean "true" | 
 
    <img src="/img/integration/voiceconfig4.png" alt="drawing" width="80%"/>
 <br/>   
