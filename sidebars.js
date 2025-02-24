@@ -352,6 +352,22 @@ module.exports = {
 
             "platform_concepts/copilot",
             
+          // Agent AI 
+
+          {
+            type: "category",
+            label: "AI dialogue system",
+            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent_intro'},
+            collapsed: true,
+            items: [
+              "platform_concepts/AIAgent/agentpersona",
+              "platform_concepts/AIAgent/conversations",
+
+             // add here
+
+            ],
+          }, 
+
             "platform_concepts/studio/build/workflows",
             
             {
@@ -1675,20 +1691,7 @@ module.exports = {
         },
 
 
-          // Agent AI :: Added in the end, can be moved to a different position
-          {
-            type: "category",
-            label: "AI Agent",
-            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent_intro'},
-            collapsed: true,
-            items: [
-              "platform_concepts/AIAgent/agentpersona",
-              "platform_concepts/AIAgent/conversations",
 
-             // add here
-
-            ],
-          }, 
 
           //Agent AI 
 
