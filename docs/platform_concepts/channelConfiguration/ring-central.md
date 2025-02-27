@@ -506,18 +506,11 @@ After connecting your IVA Professional account with RingCX, you need to configur
    
 5. Click **Save**.
 
-#### Add IVR number
+#### Map IVR number/SIP URI
 
-1. After creating the voice flow, go to **Extension** > **Channels** > **Voice** > **Interactive Voice Response** (IVR).
+To map an IVR number or SIP URI, contact the [support team](mailto:mehek.shaikh@yellow.ai) with your Bot ID and environment details to configure it on the backend.
 
-    ![](/img/integration/Addivvr1.png)
-
-2. Copy the IVR number you have added. For detailed steps on adding an IVR number, refer to [this document](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/Ivr).
-
-   ![](/img/integration/addivr2.png)
-   
- 
-* After adding the IVR number, contact the [voice team](mailto:voice@yellow.ai) to configure it on the backend. This is required to include the number in the SIP URL, as outlined in Step 3 of the [Add the IVR number in RingCX section](#add-the-ivr-number-in-ringcx).
+   ![](https://imgur.com/rhDZyKJ.png)
    
 #### Add the IVR number in RingCX 
 
