@@ -1480,6 +1480,7 @@ module.exports = {
             "platform_concepts/channelConfiguration/sunshine_livechat",
             "platform_concepts/appConfiguration/talisma",
             "platform_concepts/appConfiguration/zoho-live-chat",
+            "platform_concepts/appConfiguration/salesforce-messaging",
 
             {
               type: "category",
