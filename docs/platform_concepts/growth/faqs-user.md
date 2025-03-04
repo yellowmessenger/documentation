@@ -11,6 +11,16 @@ A session can be a user session (when there’s user interaction with the bot) o
 </div>
 </details>
 
+
+<details>
+<summary> What are the formats in which a report can be downloaded? </summary>
+<div>
+
+Reports that get downloaded are only available in CSV format. 
+    
+</div>
+</details>
+
 <details>
 <summary> How to schedule reports of default table? </summary>
 <div>
