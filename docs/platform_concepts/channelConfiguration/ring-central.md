@@ -493,12 +493,16 @@ After connecting your IVA Professional account with RingCX, you need to configur
 
    <img src="/img/integration/voice3.png" alt="drawing" width="80%"/>
    
-4. Add the following Key-Value pairs:
+4. In **Custom voice option**, add the following Key-value pairs:
  
 | Key | Value |
 |------|------|
 | send_info | Set "value" to a boolean "true" | 
 | ringcentral_disconnect | Set "value" to a boolean "true" | 
+
+:::note
+For new bots, the **Custom voice option** will not be enabled by default. To enable this option, contact the [support team](mailto:mehek.shaikh@yellow.ai).
+:::
 
    <img src="/img/integration/voiceconfig4.png" alt="drawing" width="80%"/>
 <br/>   
@@ -510,7 +514,7 @@ After connecting your IVA Professional account with RingCX, you need to configur
 
 To map an IVR number or SIP URI, contact the [support team](mailto:mehek.shaikh@yellow.ai) with your Bot ID and environment details to configure it on the backend.
 
-   ![](https://imgur.com/rhDZyKJ.png)
+   ![](https://imgur.com/wmkc74l.png)
    
 #### Add the IVR number in RingCX 
 
