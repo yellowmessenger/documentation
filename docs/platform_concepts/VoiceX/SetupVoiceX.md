@@ -1,6 +1,6 @@
 ---
 title: Set Up VoiceX AI Agent  
-sidebar_label : VoiceX AI Agent 
+sidebar_label : Set up VoiceX 
 ---
 
 ## Steps to Set Up VoiceX AI Agent  
@@ -172,7 +172,7 @@ If the **Custom Voice Options** are not visible in the **Question/Text Node** se
 Create new flows from scratch using the **Dynamic Chat Node**.  
 
 :::info
-Refer to this document for sample prompts to add in Dynamic chat node: [VoiceX Prompts](platform_concepts/VoiceX/Best_Practices.md).
+Refer to this document for sample prompts to add in Dynamic chat node: [VoiceX Prompts](platform_concepts/VoiceX/voiceXPrompts.md).
 :::
 
 
