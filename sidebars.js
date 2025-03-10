@@ -42,7 +42,6 @@ module.exports = {
       collapsed: true,
       items: [
         "cookbooks/Voice/voicebottroubleshooting", 
-        "cookbooks/Voice/voiceXPrompts",
   ],
 },
 
@@ -1573,6 +1572,18 @@ module.exports = {
         "cookbooks/voice-as-channel/transfertoagent",
         "cookbooks/voice-as-channel/callmgmt",
 
+// building  
+{
+  type: "category",
+  label: "Build a voice bot",
+  link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
+  collapsed: true,
+  items: [
+   // "cookbooks/voice-as-channel/build/convdesiVB",
+    "cookbooks/voice-as-channel/build/usingvoiceinput",
+    "cookbooks/voice-as-channel/build/usingmp", 
+      ],
+    },
 
 // Reporting  
 {
@@ -1604,25 +1615,6 @@ module.exports = {
   ],
 },
 
-
-
-  // ---- old docs 
-
-
-
-// building  
-  {
-    type: "category",
-    label: "Build a voice bot",
-    link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
-    collapsed: true,
-    items: [
-     // "cookbooks/voice-as-channel/build/convdesiVB",
-      "cookbooks/voice-as-channel/build/usingvoiceinput",
-      "cookbooks/voice-as-channel/build/usingmp", 
-        ],
-      },
-
     "cookbooks/voice-as-channel/conversationaldelays",
 
 // Voice Capabilities (usecases)
@@ -1644,6 +1636,24 @@ module.exports = {
       */
             ],
   }, 
+
+  //VoiceX
+
+  {
+    type: "category",
+    label: "VoiceX",
+    link: {type: 'doc', id: 'platform_concepts/VoiceX/VoiceXIntro'},
+    collapsed: true,
+    items: [
+
+      "platform_concepts/VoiceX/SetupVoiceX",
+      "platform_concepts/VoiceX/voiceXPrompts",
+      "platform_concepts/VoiceX/Best_Practices",
+      
+      
+    ],
+  },
+  
 // FAQs 
 "cookbooks/voice-as-channel/voicefaqs",
   ],
