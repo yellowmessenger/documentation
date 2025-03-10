@@ -184,9 +184,9 @@ To enable:
 3. Select **Bring your own key**.
 4. Add YOUR_PUBLIC_KEY. The public key is used to verify the token. Use the following format for token generation:
 
-```
+```c
 {
-    "AuthenticationToken": {{Example_Token__eLqh8P7BR4FL7nQbFwUX5IyzpD5QO2X0ZBjtCmA}}, //Your private key 
+    "ymAuthenticationToken": {{Example_Token__eLqh8P7BR4FL7nQbFwUX5IyzpD5QO2X0ZBjtCmA}}, //Your private key 
     "botId": {{botId}} //Bot ID
 }
 ```
