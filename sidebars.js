@@ -186,6 +186,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/integrations/parseapi",
+    "cookbooks/integrations/google-sheets",
   ],
 }, 
 //end of integrations
