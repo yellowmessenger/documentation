@@ -501,7 +501,7 @@ After connecting your IVA Professional account with RingCX, you need to configur
 | ringcentral_disconnect | Set "value" to a boolean "true" | 
 
 :::note
-For new bots, the **Custom voice option** will not be enabled by default. To enable this option, contact the [support team](mailto:mehek.shaikh@yellow.ai).
+For new bots, the **Custom voice option** will not be enabled by default. To enable this option, contact the [support team](mailto:mehek.shaikh@yellow.ai) with your Bot ID and environment (Production or Development) details to configure it on the backend.
 :::
 
    <img src="/img/integration/voiceconfig4.png" alt="drawing" width="80%"/>
@@ -512,7 +512,9 @@ For new bots, the **Custom voice option** will not be enabled by default. To ena
 
 #### Map IVR number/SIP URI
 
-To map an IVR number or SIP URI, contact the [support team](mailto:mehek.shaikh@yellow.ai) with your Bot ID and environment details to configure it on the backend.
+:::note
+To map an IVR number or SIP URI, contact the [support team](mailto:mehek.shaikh@yellow.ai) with your Bot ID and environment (Production or Development) details to configure it on the backend. 
+:::
 
    ![](https://imgur.com/wmkc74l.png)
    
@@ -527,10 +529,11 @@ To map an IVR number or SIP URI, contact the [support team](mailto:mehek.shaikh@
      ![](/img/integration/addivrcx2.png)
 
 3. Paste the copied IVR number in the placeholder `+12XXXXXXXX` in the given URL with your IVR number.
-**SIP URL**: `sip:+12XXXXXXXX@r4dev.sip.yellow.ai:5061`
+**Development environment SIP URI**: `sip:+12XXXXXXXX@r4dev.sip.yellow.ai:5061`<br/>
+**Live environment SIP URI**: `sip:+12XXXXXXXX@r4.sip.yellow.ai:5061`
 
 
-4. Ensure you replace +12XXXXXXXX with the correct country code and your IVR number in the proper format. Once updated, paste this SIP URL in the** SIP URL** field and click **Save**.
+4. Ensure you replace +12XXXXXXXX with the correct country code and your IVR number in the proper format. Once updated, paste this SIP URI in the** SIP URI** field and click **Save**.
 
    ![](/img/integration/addivrcx3.png)
      
