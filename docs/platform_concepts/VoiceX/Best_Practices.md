@@ -67,3 +67,8 @@ To minimize user frustration during the KB search wait time, use the following t
 KB responses take **7-15 seconds** to generate. Efforts are underway to reduce this latency.
 :::
 
+:::info
+
+Learn about Dynamic chat node in detail [here](https://docs.yellow.ai/docs/platform_concepts/studio/dynamicchatnode). 
+
+:::

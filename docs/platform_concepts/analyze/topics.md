@@ -78,16 +78,13 @@ For example, in the below screenshot, out of 1045 conversations in this topic, 5
 ----------
 
 
-## Upcoming feature: Search & Filter Topics  
-
-> This feature is **Coming soon**!
+## Search & Filter Topics  
 
 
 You can **search** for a specific topic using the global search feature.                    
 ![image](https://imgur.com/TpS9jkC.png)                  
 
 To filter data and view a particular topic, click **Filter**.                       
-![image](https://imgur.com/Gp4YnZo.png)                      
 
 The following filters are available:  
 
@@ -97,11 +94,7 @@ The following filters are available:
 
 2. **Timestamp**: Filter data for specific dates or a custom time range.
 
-3. **User Sentiment**: Choose between "Positive," "Neutral," or "Negative."                                                  
-
-<img src="https://imgur.com/5tEnrEI.png" alt="drawing" width="50%"/>  
-
-4. **Topics**: Filter by the text or subtext of the topics.                                                  
+3. **Topics**: Filter by the text or subtext of the topics.                                                  
 
 <img src="https://imgur.com/Z50mSDn.png" alt="drawing" width="50%"/>                             
 
