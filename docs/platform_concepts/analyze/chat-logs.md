@@ -196,4 +196,13 @@ To use **Comments**, follow these steps:
 The comment button is displayed only when users are in the **Comments** tab.  
 :::
 
+-------------
+
+## View KB report
+
+KB Report in the Conversation Logs, makes debugging faster and more seamless. 
+- You can access all the details you need to debug in one place by opening the Logs tab and clicking KB report icon.           
+![image](https://hackmd.io/_uploads/rJU3dORiyx.png)
+- KB report includes **Query, Previous user messages, Rephrased query, Answer, Status code, Confidence, Trace ID, Tags**, and **Site key**.                            
+![image](https://hackmd.io/_uploads/ryXuYOAo1x.png)
 
