@@ -20,7 +20,8 @@ To export data, follow the steps below:
 
 1. [Log in](https://cloud.yellow.ai/) to the platform and open **Insights** > **Data Ops**. 
 2. Click **Create export rule**.       
-    ![](https://i.imgur.com/f2luQiP.png)
+    ![image](https://imgur.com/1oEi9mt.png)
+
     
 #### 3. Choose data required for data export 
 
@@ -47,7 +48,10 @@ To export data, follow the steps below:
 Export is supported in CSV and JSON (and WAV for voice bot data) format. 
 :::
 
-![](https://i.imgur.com/0HaT9yF.png)
+<img src="https://imgur.com/03FrTtj.png" alt="drawing" width="70%"/>
+
+
+
 
 
 #### 4. Choose the frequency of data export 
@@ -66,7 +70,11 @@ Export is supported in CSV and JSON (and WAV for voice bot data) format.
 For a single export, the maximum time range is one year. If more than one year's worth of data is required in a one-time export, multiple one-time exports can be created for the desired range.
 :::
 
-![](https://i.imgur.com/Jji2bmd.png)
+<img src="https://imgur.com/Ojx4KCD.png" alt="drawing" width="70%"/>
+
+
+
+
 
 
 
@@ -86,20 +94,24 @@ For a single export, the maximum time range is one year. If more than one year's
     - Connect with **Google cloud storage** by providing **Bucket name, Private Key, and Client email**.
 - Click **Connect** and **Next**.    
 
+<img src="https://imgur.com/C7zkMnf.png" alt="drawing" width="70%"/>
 
-![image](https://imgur.com/yibkjl7.png)
+
+
 
 -------
 
 6. All the existing export rules will be available on the Data Ops page, you can add new rules if required. 
-    ![](https://i.imgur.com/htPEADz.png)
+    ![image](https://imgur.com/YdOTrzj.png)
+
     
 :::note
 There is no restriction on the number of rules that can be added. 
 :::
 
 7. Click on the rule name to view the complete **Logs** and understand whether the data export (for the assigned rules) is successful. 
-    ![](https://i.imgur.com/9851hzV.png)
+    ![image](https://imgur.com/cbWGoev.png)
+
 
     - Click **View details** to see the assigned rule details (data, frequency, and destination).    
     - You can see **Export date** (frequency), **Status of export** (scheduled, ongoing, and failure/success), and **Size of data** exported. 
@@ -141,9 +153,9 @@ To securly export the data from dataops to Azure BLOB, follow these steps:
 2. Click **Connect via Azure storage account**.         
 3. Enter **Container name** and **Connection string**.      
 4. Click **Connect**.        
-![image (43)](https://hackmd.io/_uploads/ByuU4uRi1x.png)
+![image (43)](https://imgur.com/FIwR87u.png)
 5. Click **Next**.                   
-![image (44)](https://hackmd.io/_uploads/SJVdHdRsJl.png)
+![image (44)](https://imgur.com/XX9CqLa.png)
 
 
 -----------
