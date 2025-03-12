@@ -607,18 +607,10 @@ Following dependencies are used in chat bot SDK
 
 ## Permissions
 
-We are declaring and asking for following permission in our manifest file
+We are declaring and asking for following permission in our manifest file. All permissions will be asked at run time except INTERNET.
 
 ```java
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
-```
-
-All permissions will be asked at run time except INTERNET.
-For attachment (picking file/images from phone storage)
-
-```java
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 ```
 
 ### Conditional Permission
