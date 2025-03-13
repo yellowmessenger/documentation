@@ -6,18 +6,28 @@ sidebar_label : PayU Business
 
 [PayU Business integration](https://payu.in/about-us?_ga=2.219146714.274874686.1677657469-282964387.1677657469) enables your bot to receive PayU payments from your users. You can generate payment links, UPI intents for whatsapp pay and receive notifications on the success/failure of the payments.
 
-## 1. Integrating PayU with Yellow.ai
+## Integrating PayU with Yellow.ai
 
 To connect your PayU account with yellow.ai, follow these steps:
 
-### 1.1 Get API keys for your PayU account
+### 1.1 Get keys required for your PayU account integration
 
-You need to write to [PayUBiz team](mailto:integration@payu.in) for the API keys. They will provide the keys for both the modes.
 
-1. **Test Mode:** The test mode is a simulation mode that you can use to test your integration flow. Your customers will not be able to make payments in this mode.
-2. **Live Mode:** Once you have tested your integration, you can switch to the live mode by replacing the test mode keys(in the yellow.ai integration section) with the live mode keys to accept payments from customers.
+1. Login to [PayU Dashboard](https://onboarding.payu.in/app/account)
+2. Switch to **Live Mode** from the toggle option on the menu bar.
+3. Select **Developer** from the menu on the left-pane and select the **API Details** tab if required. Here 
+   - **Key**: The API key required for all payment requests.  
+   - **Salt (32-bit)**: A 32-character string (v1) used to generate a hash. Any one hash codes is required along with the other parameters when submitting a payment request to PayU.  
+   - **Salt (256-bit)**: A more secure, 256-bit string (v2) used for hash generation. Any one hash codes is required along with the other parameters when submitting a payment request to PayU.  
 
-Enter the API keys in the **Client ID** field of Yellow.ai's integration module, which we will cover in the following section.
+:::note
+- Alternatively, you can  write to [PayUBiz team](mailto:integration@payu.in) for the API keys. They will provide the keys for both the modes.
+- For comprehensive guide to [PayU Dashboard, see here](https://docs.payu.in/docs/generate-merchant-key-and-salt-on-payu-dashboard)
+:::
+
+
+
+
 
 ### 1.2 Connect PayU Business to yellow.ai 
 
@@ -30,17 +40,21 @@ In a two-tier environment, you can connect an integration app in the Development
 
 2. In **Give account name**, enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
 
+   ![](https://i.imgur.com/lhhX7rr.png)
+
 3. In **Salt value**, enter the unique hash for each transaction, which is then used to verify the authenticity of the transaction. The Salt Value is provided by PayU and should be kept confidential.
 4. Enter the **Client ID**, enter your PayU account's client ID.
 5. In **Payu base URL**, enter the base URL to send API requests to the PayU payment gateway for payment processing.
 6. In **Payu UPI base URL**, enter the base URL of the PayU UPI to send API requests to the PayU UPI payment gateway for UPI payment processing.
 
-::note
+:::note
+
 Payu base URL and and Payu UPI base URL will differ for test and live modes.
 Example:
 
 * Test mode - https://test.payu.in
 * Live mode - https://info.payu.in
+
 :::
 
 
@@ -50,14 +64,23 @@ Example:
 
 ### 1.3 Configure webhook URL 
 
+To receive real-time notifications about payment status updates, you need to set up a webhook URL 
+
+
 Copy the webhook URL and the API key mentioned in the **Instructions** section of the PayUBiz Integration section in the yellow.ai platform.
 
-![](https://i.imgur.com/2cyhP5e.png)
+   ![](https://i.imgur.com/2cyhP5e.png)
 
 
 Use the webhook URL specific to your region -  [India](https://cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [MEA](https://r1.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [Jakarta](https://r2.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), [Singapore](https://r3.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D),[ USA](https://r4.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D), and [Europe](https://r5.cloud.yellow.ai/integrations/genericIntegration/payu-payment-gateway/x1668670622130?id=VVKB60XTmBsVV3sALdpMw0Z3rzXHJ2MTA5cOtiHEzRs%3D).
 
-PayUBiz will whitelist the webhook URL provided by the merchant in their systems. You can write to the [PayU Integration team](mailto:integration@payu.in) for more information.
+
+
+To ensure secure communication and enable PayU Business to send payment status updates, you must get the webhook URL whitelisted. Contact the [PayU Integration team](mailto:integration@payu.in) for assistance.
+
+
+
+PayUBiz will whitelist the webhook URL provided by the merchant in their systems. You also need to get the webhook URL whitelisted from the can write to the [PayU Integration team](mailto:integration@payu.in) for more information.
 
 ### 1.4 Enable PayU event to receive event in bot 
 
@@ -74,7 +97,7 @@ PayUBiz will whitelist the webhook URL provided by the merchant in their systems
 
 
 
-## 2. PayU payment actions through bot conversations
+## Manage PayU payments from AI Agent conversations
 
 
 :::note
@@ -83,12 +106,12 @@ If there are multiple accounts, you can select from which account you want to pe
 
 ### 2.1 Generate payment link
 
-1. In the [Automation flow builder](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), choose the node type as **Integrations** and select **PayU** from the list of integrations that have been enabled for that particular bot. An **Integration Action Node** will be added to the flow builder.
+1. When building [Conversation flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys), add an **Integration action node** and select **PayU Business** from the list of enabled integrations.
 
    <img src="https://i.imgur.com/gOTE1zk.png" alt="drawing" width="60%"/>
 
 
-2. When you click the node, you will see the a drop-down with supported actions in this integration. Select **Generate Payment Link**.
+2. When you click the node, you will see a drop-down with supported actions in this integration. Select **Generate Payment Link**.
 
    ![](https://i.imgur.com/saWr4er.png)
 
@@ -140,7 +163,7 @@ app.executeIntegrationAction({
 ### 2.1 Generate UPI intent
 
 
-1. From the PayU Business node, select the *Create UPI intent.
+1. From the PayU Business node, select *Create UPI intent*.
 
    ![](https://i.imgur.com/gkeqscs.png)
 
