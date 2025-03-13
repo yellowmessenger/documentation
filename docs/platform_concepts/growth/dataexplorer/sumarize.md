@@ -24,14 +24,24 @@ All the operations selected will be applied to all the columns in the table, not
 In this panel, you can **Summarise** the tables by a count of the table data (number of rows) and **Group by** the column fields.
 
 ### Summarize by
+### Summarizing Data in Tables  
 
-1. On the tables page (default/custom tables), click **Summarize**. 
-    <img  src="https://i.imgur.com/eMJQDjM.png"  width="70%"/>
-2. Click **Add metrics** to explore the available summary options. 
-    <img  src="https://i.imgur.com/aAIZ386.png"  width="50%"/>
-3. Table can be summarized(grouping Rows) by selecting a Column Name, and selecting required metrics like count, the sum of, an average of, the number of distinct values of, minimum of, and/or maximum of.
-    ![](https://i.imgur.com/9eHJRTO.png)
-4. Click **Apply**.
+1. On the **Tables** page (default/custom tables), click **Summarize**.  
+   ![Summarize Button](https://i.imgur.com/eMJQDjM.png)  
+
+2. Click **Add metrics** to view and select available summary options.  
+<img  src="https://imgur.com/t24HC3N.png"  width="60%"/>
+
+3. Select **Count** to display the total number of rows based on the applied filter.  
+   - If you choose **Group by** after selecting **Count**, the summary will show row counts grouped by the specified column.  
+   ![Count Group By](https://imgur.com/5yUFd3K.png)  
+
+4. Select **Number of distinct values** to see the total count of unique values in the selected column.  
+   - You can use **Group by** to refine the summary further by another column.  
+
+<img  src="https://imgur.com/86dgnB5.png"  width="50%"/><img  src="https://imgur.com/B25q1GM.png"  width="50%"/>
+    
+5. Click **Apply** to save the summary.  
 
 
 :::note
