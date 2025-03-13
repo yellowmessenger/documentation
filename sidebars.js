@@ -32,9 +32,18 @@ module.exports = {
     "cookbooks/migration-guide",
     "cookbooks/botregion",
     "cookbooks/customapps",
-    "cookbooks/voicebottroubleshooting",
   
 
+    //Voice
+
+    {
+      type: "category",
+      label: "Voice",
+      collapsed: true,
+      items: [
+        "cookbooks/Voice/voicebottroubleshooting", 
+  ],
+},
 
   // Studio  
     {
@@ -186,6 +195,7 @@ module.exports = {
   collapsed: true,
   items: [
     "cookbooks/integrations/parseapi",
+    "cookbooks/integrations/google-sheets",
   ],
 }, 
 //end of integrations
@@ -352,6 +362,22 @@ module.exports = {
 
             "platform_concepts/copilot",
             
+          // Agent AI 
+
+          {
+            type: "category",
+            label: "AI dialogue system",
+            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent_intro'},
+            collapsed: true,
+            items: [
+              "platform_concepts/AIAgent/agentpersona",
+              "platform_concepts/AIAgent/conversations",
+
+             // add here
+
+            ],
+          }, 
+
             "platform_concepts/studio/build/workflows",
             
             {
@@ -1546,6 +1572,18 @@ module.exports = {
         "cookbooks/voice-as-channel/transfertoagent",
         "cookbooks/voice-as-channel/callmgmt",
 
+// building  
+{
+  type: "category",
+  label: "Build a voice bot",
+  link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
+  collapsed: true,
+  items: [
+   // "cookbooks/voice-as-channel/build/convdesiVB",
+    "cookbooks/voice-as-channel/build/usingvoiceinput",
+    "cookbooks/voice-as-channel/build/usingmp", 
+      ],
+    },
 
 // Reporting  
 {
@@ -1577,25 +1615,6 @@ module.exports = {
   ],
 },
 
-
-
-  // ---- old docs 
-
-
-
-// building  
-  {
-    type: "category",
-    label: "Build a voice bot",
-    link: {type: 'doc', id: 'cookbooks/voice-as-channel/build/botbuilderintro'},
-    collapsed: true,
-    items: [
-     // "cookbooks/voice-as-channel/build/convdesiVB",
-      "cookbooks/voice-as-channel/build/usingvoiceinput",
-      "cookbooks/voice-as-channel/build/usingmp", 
-        ],
-      },
-
     "cookbooks/voice-as-channel/conversationaldelays",
 
 // Voice Capabilities (usecases)
@@ -1617,6 +1636,24 @@ module.exports = {
       */
             ],
   }, 
+
+  //VoiceX
+
+  {
+    type: "category",
+    label: "VoiceX",
+    link: {type: 'doc', id: 'platform_concepts/VoiceX/VoiceXIntro'},
+    collapsed: true,
+    items: [
+
+      "platform_concepts/VoiceX/SetupVoiceX",
+      "platform_concepts/VoiceX/voiceXPrompts",
+      "platform_concepts/VoiceX/Best_Practices",
+      
+      
+    ],
+  },
+  
 // FAQs 
 "cookbooks/voice-as-channel/voicefaqs",
   ],
@@ -1675,20 +1712,7 @@ module.exports = {
         },
 
 
-          // Agent AI :: Added in the end, can be moved to a different position
-          {
-            type: "category",
-            label: "AI Agent",
-            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent_intro'},
-            collapsed: true,
-            items: [
-              "platform_concepts/AIAgent/agentpersona",
-              "platform_concepts/AIAgent/conversations",
 
-             // add here
-
-            ],
-          }, 
 
           //Agent AI 
 

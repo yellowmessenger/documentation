@@ -14,14 +14,17 @@ Pre-processing is currently available only for email automation bots and is feat
 
 1. **Customized routing decisions**:
    Pre-processing enables tailored routing decisions based on specific criteria.
+   
    **Example**: In yellow.ai support, emails from red account customers require special handling. Pre-processing identifies these customers, raising tickets manually for them while automating responses for others.
 
 2. **Enhanced customer experience**:
    Analyzing email content and metadata before routing ensures a more personalized and efficient customer experience.
+   
    **Example**: Certain query categories, like citations, can bypass automation and be sent directly to agents, expediting resolution and increasing customer satisfaction.
 
 3. **Improved agent productivity**:
    Pre-processing gathers contextual information about customers or queries before routing them to agents, aiding in better understanding and handling of inquiries.
+   
    **Example**: In the APAC scenario, obtaining account details and user roles before assignment streamlines support and reduces resolution time.
 
 4. **Sentiment analysis and escalation**:
@@ -29,6 +32,7 @@ Pre-processing is currently available only for email automation bots and is feat
 
 5. **Tailored responses and actions**:
    Pre-processing triggers specific actions or responses based on predetermined rules.
+   
    **Example**: Emails with aggressive or upset sentiments can be routed directly to agents for personalized handling, bypassing standard automation processes.
 
 

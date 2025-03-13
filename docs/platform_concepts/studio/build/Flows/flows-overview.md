@@ -61,7 +61,7 @@ Icon | Options | Description
 ![](https://imgur.com/n4kCtBU.png) | [Settings](#flow-settings) | This option includes additional settings related to the flow visualization such as Init function, Change category, Mandate words, Precluded words, Disable steps for Go Back functionality, and Channels. For more information, see [Flow settings](#flow-settings).
 ![](https://imgur.com/0l7QrYH.png)| Minimap | This option displays a overview of the entire flow diagram, allowing you to navigate to different sections of the flow by clicking on the desired section in the minimap.
 
-### Flow settings
+## Flow settings
 
 You can configure the following flow settings for your flow:
 
@@ -75,3 +75,27 @@ You can configure the following flow settings for your flow:
 | Channels | Flow will trigger only for the selected active channels. |
 
 <img src="https://imgur.com/cxJhFwM.png" alt="drawing" width="90%"/>
+
+## Best practices for creating bot flows
+
+Follow these best practices to ensure your flow meets user expectations and achieves its objectives:
+
+1. **Understand your agent's objectives**: 
+     * **Define the purpose**: Understand the scope and purpose of your bot (use case). Clearly outline what types of questions or requests the bot should handle based on your intended use case. For example, answering FAQs, booking services, or providing support.
+2. **Start with a clear flow structure**
+     * **[Welcome and Fallback flows](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/manage-flows#configure-start-welcome-and-fallback-flow)**: Set up specific flows to greet users and handle unrecognized inputs.
+     * **Entry triggers** – Clearly specify what starts a flow, such as user queries, button clicks, or events.
+     * **Use conditional logic**: Use [Condition nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to create logical branches that handle multiple scenarios and outcomes.
+4. **Manage your flows**: You can update flows, create duplicates for similar use cases, or remove outdated flows as needed.
+5. **Enable Live agent assistance**: If the bot cannot resolve a query, use the Raise ticket node transfer the user to a live agent.
+6. **Integrate with backend systems**: Include [APIs](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api), [databases](https://docs.yellow.ai/docs/platform_concepts/studio/database), and third-party integrations if you want to fetch or update data from third-party systems.
+7. **Enable multichannel support**: Design the flow to work across multiple channels like web, mobile apps, and social media.
+8. **Provide [multi-language support](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization)**: Use the Set Language node to allow your users to interact in their preferred language.
+
+
+
+
+
+
+
+
