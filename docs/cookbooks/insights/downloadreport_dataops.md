@@ -13,7 +13,7 @@ For more details about Data Ops, refer to the [documentation here](https://docs.
 ### 1. Access Data Ops
 Navigate to **Insights > Data Ops**, then click **+ Create Export Rule**.
 
-![Create Export Rule](https://imgur.com/BMkvsPa.png)
+   ![Create Export Rule](https://cdn.yellowmessenger.com/assets/docs/data-export.png)
 
 ### 2. Configure Export Rule
 - Provide a name for the export.
@@ -21,27 +21,27 @@ Navigate to **Insights > Data Ops**, then click **+ Create Export Rule**.
 - Choose the export format (JSON or CSV).
 - Click **Next**.
 
-![Select Notification Reports](https://imgur.com/tyq9Dyi.png)
+   ![Select Notification Reports](https://cdn.yellowmessenger.com/assets/docs/data-export-next.png)
 
 ### 3. Set Export Frequency
 - For historical data, choose **One-time Export**.
 - Click **Next**.
 
-![Select Frequency](https://imgur.com/lZaMKff.png)
+   ![Select Frequency](https://cdn.yellowmessenger.com/assets/docs/data-export-frequency.png)
 
 ### 4. Define Date Range
 - Select the desired date range in the dropdown menu.
 - A confirmation message will display the selected period (e.g., "You’ll receive data between ___ to ___").
 - Verify the range and click **Next**.
 
-![Select Date Range](https://imgur.com/GRyCwFN.png)
+   ![Select Date Range](https://cdn.yellowmessenger.com/assets/docs/data-export-date-range.png)
 
 ### 5. Choose Export Destination
 - Select your preferred destination: **Amazon S3**, **Azure Blob**, **Google Cloud Storage**, or **SFTP Server**.
 - Follow the prompts to connect your destination.
 - Click **Next**.
 
-![Export Destination](https://imgur.com/0WDjHN4.png)
+   ![Export Destination](https://cdn.yellowmessenger.com/assets/docs/data-export-destination.png)
 
 ### 6. Create the Export Rule
 - Review the configuration and click **Create Export Rule**.
