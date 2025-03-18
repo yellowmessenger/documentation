@@ -102,6 +102,7 @@ By default, all these fields are checked (available to the agents). If you want 
 |Show WhatsApp phone number of the user|Details of WhatsApp bots such as phone numbers are tracked. If this field is disabled, the WhatsApp number of the bot user will not be visible to the agent.  |
 |Allow to edit contact| Customer details passed through raise ticket nodes can be modified on the chat screen. If this field is de-selected, agents cannot edit/update bot user contacts. |
 | Enable reporting sensitive files for deletion | Agent can mark an attachments sent by customers as sensitive by clicking on the disclaimer option. This will delete the attachment from the backend in 15 days. | 
+| Hide bot messages | Enabling this will hide bot messages tab in the chat section for an agent. | 
 
 
 ### Bulk update agent permissions
