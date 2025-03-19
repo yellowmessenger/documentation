@@ -3,6 +3,7 @@ title: The Next Generation of Human-Like Voice AI for Enterprises
 sidebar_label : VoiceX Introduction   
 ---
 
+> [Try it yourself!](https://yellow.ai/voicex/)
 
 VoiceX is the most advanced, human-like Voice AI platform designed for enterprises to deliver seamless, real-time customer conversations. Powered by **SmoothTalk AI** and **Sentiment AI**, VoiceX eliminates robotic interactions, awkward pauses, and delays, ensuring fluid, natural dialogues that feel authentically human. 
 
