@@ -12,16 +12,15 @@ Pivot tables enable you to explore an alternate visualization of your data in a 
 To pivot table (custom/default), follow these steps:
 
 1. Open a report and apply the desired summarization (Group-by).
-
-![image](https://imgur.com/PZZmZ8J.png)
+![image](https://imgur.com/XxEe6H1.png)
 
 2. Click **Visualisation**. 
+    ![image](https://imgur.com/F2GAJ49.png)
 
-![image](https://imgur.com/dUE6mIa.png)
 
 3. Select **Pivot table**. 
+    <img src="https://imgur.com/Ll1IVYQ.png" alt="drawing" width="40%"/>
 
-![image](https://imgur.com/5NzhM1K.png)
 
 4. Under **Configure**, choose the field names to convert to **Rows** and **Columns** in the pivoted table. Select the **Values** to display within the cells.
     * Use the dropdown to select existing columns.
@@ -68,8 +67,7 @@ When settings are applied to the pivot table, **exporting the table** and **crea
 6. Click **Apply** to save changes. The Pivot table will display.
 
 7. The pivoted table can be saved as a query for future use. By clicking on **Save query**. This saved report is particularly useful for creating dashboards or scheduling reports in the future.
-
-![image](https://imgur.com/We8haJX.png)
+    ![image](https://imgur.com/FHe4yVz.png)
 
 > Unless you **Save query**, the pivoted table is not saved. 
 
@@ -96,9 +94,9 @@ Add custom formula columns to the pivoted table for further analysis. Click on *
 
 
 
-![image](https://imgur.com/iGT8RAP.png)
+![image](https://imgur.com/LotzTvH.png)
 
-![image](https://imgur.com/hsS3KsT.png)
+![image](https://imgur.com/3xGbdsQ.png)
 
 
 

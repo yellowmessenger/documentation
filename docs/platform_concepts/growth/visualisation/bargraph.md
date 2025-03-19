@@ -12,7 +12,7 @@ When you click **Visualisation > Bar graph**, you will get the following options
 - **X-axis:** Select fields from **Group by** for the X axis.
 - **Y-axis:** Select fields from **Summarise by** for the Y axis.
 
-![image](https://imgur.com/hVVzonm.png)
+![image](https://imgur.com/EAWRLX5.png)
 
 :::note
 - You can have a minimum of 1 and a maximum of 2 *group bys*. *Group bys* can be rearranged, which will change the nesting.
@@ -22,10 +22,13 @@ When you click **Visualisation > Bar graph**, you will get the following options
 After selecting the values, you will get the option to **stack** the bar graph:
 
 - **Don't stack:** The bar graphs are not stacked.
-    ![image](https://imgur.com/En8tFpT.png)
+    ![image](https://imgur.com/UWIdZNV.png)
+
 - **Stack:** Y-axis will have the count value.
-    ![image](https://imgur.com/6Xt0Axu.png)
+    ![image](https://imgur.com/UECZaHY.png)
+
 - **Stack 100%:** Y-axis will have the count % value.
-    ![image](https://imgur.com/brSJffA.png)
+    ![image](https://imgur.com/ue1jkR8.png)
+
 
 
