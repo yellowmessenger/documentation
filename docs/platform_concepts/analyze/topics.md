@@ -144,7 +144,7 @@ You can view all conversations under a specific topic by clicking **View Convers
 - **Debug Logs**: A record of changes made in the last **5 minutes**.  
 - **Comments**: A section to add comments on a specific chat or reply to existing comments, visible to others with access to the **Topics module**.  
 
-![image](https://hackmd.io/_uploads/rkxMifK21e.png)
+![image](https://imgur.com/fnkvHhN.png)
 
 
 #### Filter conversations 
@@ -157,7 +157,7 @@ Use the **filter** icon to refine conversations based on your criteria:
 - **Automation**: Select **Available** to filter conversations whose resolutions are used for automation purposes.
 - **Flagged conversation**: Select from none, flagged or unflagged to open a conversation with comments on it. 
 
-<img src="https://hackmd.io/_uploads/Bk0pIMF21e.png" alt="drawing" width="40%"/>                             
+<img src="https://imgur.com/DdIMBwC.png" alt="drawing" width="40%"/>                             
 
 #### AI Insights
 
@@ -165,15 +165,15 @@ AI Insights consists of:
 
 | **AI Insights**       | **Description**  | 
 |-----------------------|----------------|
-| **Details**|<img src="https://hackmd.io/_uploads/S1aqpfY3kx.png" alt="drawing" width="60%"/> |
+| **Details**|<img src="https://imgur.com/YwSKcS3.png" alt="drawing" width="60%"/> |
 |              | **UID** : Unique ID of the chat. |
 |   |**User Query**     :  The initial query from the user. |
 |       |**Automation** : Indicates whether the conversation was handled by an agent or a bot. |
-| **Resolution**|<img src="https://hackmd.io/_uploads/Hy8CTfF3ye.png" alt="drawing" width="60%"/>|
+| **Resolution**|<img src="https://imgur.com/UqiYQra.png" alt="drawing" width="60%"/>|
 |  | **Resolution Status**: Specifies if the conversation was **Resolved** or **Unresolved**. |
 | | **Resolution Provided** : A summary of the answer given. |
 | | **Resolution Reason** : LLM-generated analysis explaining why this resolution was provided. |
-| **User Sentiment**   | <img src="https://hackmd.io/_uploads/By-MAfthJe.png" alt="drawing" width="60%"/> |
+| **User Sentiment**   | <img src="https://imgur.com/JrgLV2H.png" alt="drawing" width="60%"/> |
 | | **Sentiment**: Categorized as **Positive, Negative, or Neutral**. |
 | | **Sentiment Reason** : LLM-generated analysis explaining the reason behind the sentiment. |
 
@@ -182,14 +182,14 @@ AI Insights consists of:
 You can view logs of all changes occurring every minute. The first 5 minutes of logs are displayed in a table. Click **View all logs** to see the complete log history.
 
 
- <img src="https://hackmd.io/_uploads/rJyT0GK2Jl.png" alt="drawing" width="40%"/>
+ <img src="https://imgur.com/1hpMwGf.png" alt="drawing" width="40%"/>
 
 #### Comments
 
 You can add a new comments or reply to an existing comment. Learn more about comments [here](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#comments-on-conversation-logs). 
 > You can filter comments for **All, Open**, and **Resolved**. 
 
-<img src="https://hackmd.io/_uploads/BJtiy7K3kx.png" alt="drawing" width="40%"/>
+<img src="https://imgur.com/mk5vyC4.png" alt="drawing" width="40%"/>
 
 
 
