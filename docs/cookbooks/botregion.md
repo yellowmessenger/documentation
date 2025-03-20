@@ -55,3 +55,5 @@ The region codes in the URL correspond to the following locations:
 | r3              | Singapore      |
 | r4              | USA            |
 | r5              | Europe         |
+| r6 | Qatar |
+| r7 | Saudi Arabia | 
