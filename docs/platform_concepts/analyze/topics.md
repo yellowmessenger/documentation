@@ -165,15 +165,15 @@ AI Insights consists of:
 
 | **AI Insights**       | **Description**  | 
 |-----------------------|----------------|
-| **Details**|<img src="https://imgur.com/YwSKcS3.png" alt="drawing" width="60%"/> |
+| **Details**|<img src="https://imgur.com/YwSKcS3.png" alt="drawing" width="40%"/> |
 |              | **UID** : Unique ID of the chat. |
 |   |**User Query**     :  The initial query from the user. |
 |       |**Automation** : Indicates whether the conversation was handled by an agent or a bot. |
-| **Resolution**|<img src="https://imgur.com/UqiYQra.png" alt="drawing" width="60%"/>|
+| **Resolution**|<img src="https://imgur.com/UqiYQra.png" alt="drawing" width="40%"/>|
 |  | **Resolution Status**: Specifies if the conversation was **Resolved** or **Unresolved**. |
 | | **Resolution Provided** : A summary of the answer given. |
 | | **Resolution Reason** : LLM-generated analysis explaining why this resolution was provided. |
-| **User Sentiment**   | <img src="https://imgur.com/JrgLV2H.png" alt="drawing" width="60%"/> |
+| **User Sentiment**   | <img src="https://imgur.com/JrgLV2H.png" alt="drawing" width="40%"/> |
 | | **Sentiment**: Categorized as **Positive, Negative, or Neutral**. |
 | | **Sentiment Reason** : LLM-generated analysis explaining the reason behind the sentiment. |
 
