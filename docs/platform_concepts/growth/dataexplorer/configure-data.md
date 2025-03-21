@@ -20,11 +20,11 @@ Steps to push custom data to default tables:
 
 1. Add a new user property on the [user360](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/user_properties#custom-user-properties) page. 
 2. Click **Data explorer** > **Configure**. 
-    ![image](https://imgur.com/4xTGGZX.png)
+    ![image](https://cdn.yellowmessenger.com/assets/docs/image-11.png)
 3. Select **Map custom data**. From the dropdown menu, choose a property (the custom data you want to push to API events, Bot events, Message events, and User engagement events tables) for CUSTOMID 1 and CUSTOMID 2.
-    ![image](https://imgur.com/8637TWb.png)
+    ![image](https://cdn.yellowmessenger.com/assets/docs/image-9.png)
 4. Click **Configure** and **Add**. Your custom data will get populated in the default tables.  
-    <img  src="https://i.imgur.com/EmlxTmE.png"  width="50%"/>
+    <img  src="https://cdn.yellowmessenger.com/assets/docs/image-10.png"  width="50%"/>
 
 :::note
 CUSTOMID 2 can be added only after adding CUSTOMID 1.  
@@ -41,9 +41,9 @@ Follow the steps below to secure PII data within default tables:
 
 
 1. Click **Data explorer** > **Configure**. 
-    ![image](https://imgur.com/4xTGGZX.png)
+    ![image](https://cdn.yellowmessenger.com/assets/docs/image-11.png)
 2. Enable the option to encrypt PII data and enter your **Public key**.
-    ![image](https://imgur.com/pNqie8J.png)
+    ![image](https://cdn.yellowmessenger.com/assets/docs/image-12.png)
 3. A summary will be displayed, showing which tables and columns will be encrypted. This data will be encrypted in the table UI in Data Explorer, the table UI in Reporting, during export from Data Explorer, and during export from Data Ops.
 
 Encrypted data: 
