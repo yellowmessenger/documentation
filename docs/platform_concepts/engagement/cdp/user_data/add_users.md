@@ -10,11 +10,11 @@ To add a user using the User 360 UI:
 
 1. On the **User 360** module, click **Add user** > **Single user**.
    
-   ![](https://imgur.com/KeqOMjt.png)
+   ![](https://cdn.yellowmessenger.com/assets/docs/image-15.png)
 
 2. Enter the **userId** of the customer along with other details.
 
-   <img src="https://i.imgur.com/LPnNYFF.png" width="60%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/docs/image-16.png" width="60%"/>
 
 3. Label the user with **Tags**. You can add multiple tags to a user. 
 
@@ -29,24 +29,24 @@ You can add missing properties or update existing properties of a user. As the `
 
 1. On the **User 360** page, navigate to the user that you want to edit and click on the user row.
 
-   ![](https://imgur.com/24vv7Gn.png)
+   ![](https://cdn.yellowmessenger.com/assets/docs/image-17.png)
 
 2. Click on the **Edit** icon
 
-   ![](https://imgur.com/88yBvqe.png)
+   ![](https://cdn.yellowmessenger.com/assets/docs/image-18.png)
 
 2. Edit the properties that you want to change or add missing property values.
 3. To add more tags, click on **+Add tags** and in **Tags** enter each tag name and press enter. If the tag name you enter is available, you will see it in the drop-down.
 
    <center>
 
- <img src="https://i.imgur.com/xGsGzWI.png" width="60%"/></center>
+ <img src="https://cdn.yellowmessenger.com/assets/docs/image-20.png" width="60%"/></center>
 
 4. To remove an existing tag, click on the respective `x` symbol.
    
    <center>
 
- <img src="https://i.imgur.com/LniW6Kq.png" width="60%"/></center>
+ <img src="https://cdn.yellowmessenger.com/assets/docs/image-21.png" width="60%"/></center>
 
 5. Click **Save**.
 
