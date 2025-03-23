@@ -115,14 +115,14 @@ It can also be triggered at any point of the conversation when the bot user type
 
    - It can also be triggered at any point of the conversation when the bot user types a sentence that matches with the [intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents) - ```Locate nearby clinics```
 2. **Collect location:** User location is collected using the [location](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#24-location) node. This information is stored in a variable named **location**.
-3. **Nearby clinics:** A search happens in the [database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) that contains the location details of all the clinics. A flash message 'Please wait while we fetch the nearest branch.' is displayed using the [text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) node before showning nearby clinics.
+3. **Nearby clinics:** A search happens in the [database node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database) that contains the location details of all the clinics. A flash message 'Please wait while we fetch the nearest branch.' is displayed using the [text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) node before showning nearby clinics.
 
    - If there is a clinic closer to the user location, the flow moves to the **success** branch.
-   - If there's no clinic in or closer to the user location, the flow moves to the **fallback** and conveys this in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text).
+   - If there's no clinic in or closer to the user location, the flow moves to the **fallback** and conveys this in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1).
 
     ![](https://i.imgur.com/r2tHPOX.png)
 4. **Clinic details:** The success branch is connected to a [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) which executes the function **nearbyClinics** and stores the clinic details in the variable **fiveNearbyDealers**.
-5. **Display the clinic details:** The [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) is then connected to a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) which is connected to a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) and [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text). At this step, the list of clinics will be displayed to the end user.
+5. **Display the clinic details:** The [function node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function) is then connected to a [variable node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) which is connected to a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) and [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1). At this step, the list of clinics will be displayed to the end user.
 
 ---------------
 

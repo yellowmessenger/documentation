@@ -49,7 +49,7 @@ Enable **Create as a workflow** if you'd like this flow to [function as a workfl
 ![](https://i.imgur.com/sJ3PTHt.png)
 
 
-7. [Add a Quick Replies node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#6-quick-replies) to the flow to get buttons interface.
+7. [Add a Quick Replies node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to the flow to get buttons interface.
 
 ![](https://i.imgur.com/PpFPS7n.png)
 
@@ -66,7 +66,7 @@ Until this step, the bot would automatically fetch answers from FAQs to reply to
 ![](https://i.imgur.com/stH4NCN.png)
 
 
-10. Fill in the fields and set [Text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) nodes to display relevant messages for **Ticket closed** and **Error**.
+10. Fill in the fields and set [Text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) nodes to display relevant messages for **Ticket closed** and **Error**.
 
 ![](https://i.imgur.com/OWo4sdS.png)
 

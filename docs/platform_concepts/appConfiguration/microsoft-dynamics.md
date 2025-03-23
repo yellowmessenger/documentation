@@ -156,7 +156,7 @@ To manage your Microsoft D 365 CRM account through yellow.ai bot, follow these s
 Some action may not require selection of entities, for example, **Create a Lead**.
 :::
 
-4. Each action returns a JSON response. [Store the response in an object variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and extract specific information from the payload. To display the response information to the user, [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) to a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes).
+4. Each action returns a JSON response. [Store the response in an object variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and extract specific information from the payload. To display the response information to the user, [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) to a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1).
 
    For example, if you receive the following response, you can use this syntax ``` {{{variables.variablename.companyname}}}  ``` to display only the company name.
 

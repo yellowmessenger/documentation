@@ -14,7 +14,7 @@ Welcome message is supported only for web and app SDK and it is not supported fo
  <summary> Can I display a dynamic carousel without any actions in it?
 </summary>
  <div>
-  <div> Yes, you can use the <a href = "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#4-carousel"> carousel node from the message nodes </a> section.
+  <div> Yes, you can use the <a href = "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1"> carousel node from the message nodes </a> section.
 
 </div>
   <br/>
@@ -36,7 +36,7 @@ Welcome message is supported only for web and app SDK and it is not supported fo
  <summary> How to display videos along with the AI-agent messages?
 </summary>
  <div>
-  <div> Use the <a href= "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#5-video"> Video node</a>.
+  <div> Use the <a href= "https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1"> Video node</a>.
 
 </div>
   <br/>
@@ -616,7 +616,7 @@ return new Promise(resolve => {
  <summary>How to open a website in a AI-agent conversation?
 </summary>
  <div>
-  <div>Add a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text">text node</a> to the flow and paste your website URL in it.
+  <div>Add a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1">text node</a> to the flow and paste your website URL in it.
 ​
 </div>
   <br/>

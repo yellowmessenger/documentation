@@ -57,7 +57,7 @@ Only the following [nodes](https://docs.yellow.ai/docs/platform_concepts/studio/
 
 | Category            | Nodes                                     |
 | ------------------- | ----------------------------------------- |
-|Message|[Text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) |
+|Message|[Text](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) |
 | Prompts | [Voice input](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/build/usingvoiceinput) , Call forwarding, Call disconnect <br/>[Speak](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#28-speak), [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#12-name), [Phone Number](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#13-phone), [Question](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes/#11-question)|
 | Logic               | [Condition](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition)                                 |
 |    Action                 |   [Set variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables), [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#24-function), [Database](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#23-database), [API](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api), [Execute Flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow)     |

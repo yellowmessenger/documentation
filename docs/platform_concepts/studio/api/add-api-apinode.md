@@ -190,7 +190,7 @@ Depending on the response datatype, you can use the following syntax to fetch or
 
 To display the received API response: 
 
-1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) after the API node.
+1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) after the API node.
 2. Select the variable created in the [previous section](#store-the-api-response) (step 2) to retrieve the API response.
 
     ![](https://i.imgur.com/RudXA5G.png)
