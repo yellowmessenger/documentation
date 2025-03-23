@@ -68,7 +68,6 @@ Access the **Help** section for documentation, community forums, or instant supp
 
 ![Self-Help Resources](https://imgur.com/wP3LbTE.png)
 
-**[Explore self-help options](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/resources)**
 
 ## Environment switcher
 

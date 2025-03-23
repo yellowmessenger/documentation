@@ -166,7 +166,7 @@ After connecting your bot to the Sunshine conversation, you can test your bot.
      
 #### Prerequisite
 
-* Ensure that you have created the bot with intents and configured the flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot). 
+* Ensure that you have created the bot with intents and configured the flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot). 
 
 
 To test your bot on the Sunshine conversations, follow these steps:
