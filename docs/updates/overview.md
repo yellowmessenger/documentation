@@ -13,7 +13,45 @@ Here’s how your release notes can be structured in a professional, concise, an
 
 ---
 
+## VoiceX: The Future of Human-Like Voice AI
+
+Introducing VoiceX, our next-generation Voice AI platform, designed to deliver unparalleled, real-time customer conversations.
+* **Human-Like Interaction**: Powered by SmoothTalk AI and Sentiment AI, VoiceX eliminates robotic interactions, awkward pauses, and delays, creating fluid, natural dialogues.
+* **Advanced Query Handling and Sentiment Analysis**: VoiceX adeptly handles complex queries, discerns customer sentiment, and delivers precise responses with ultra-low latency.
+* **Industry Applications**: Ideal for industries demanding sophisticated customer interaction, including BFSI, healthcare, utilities, and retail.
+ 
+> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/VoiceX/VoiceXIntro).
+
+
 ## 📊 Analyze Enhancements 
+
+## CRA Table Updates: Deeper Resolution and Sentiment Analysis
+
+We’ve added two new columns to the CRA table, now accessible within **Data Explorer > Contained Resolution Analysis**. These columns, powered by our advanced LLM module, provide:
+* **Resolution Status Reasoning**: Gain detailed insights into the rationale behind resolution outcomes.
+* **User Sentiment Reasoning**: Understand the nuances of user sentiment with clear, contextual explanations.
+These additions empower you with a more comprehensive understanding of your data, enabling more informed decision-making and improved customer interactions.
+
+> Learn more [here]( https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#contained-resolution-analysis
+). 
+
+
+### Topics: Streamlined Conversation Analysis
+
+* Accessing and analyzing conversation details has never been easier. We’ve consolidated key information into a single, intuitive interface: Click **View Conversations** to access a comprehensive list of all conversations within a specific topic.
+* Utilize advanced filters and search functionality to quickly locate relevant conversations.
+* Review detailed Conversation Logs and AI Insights, including:
+    * Unique ID (UID)
+    * User query and handling status (agent/bot)
+    * Resolution status and reasoning
+    * User sentiment and reasoning
+    * Debug logs
+
+Collaborate effectively with team members by adding and replying to comments directly within the conversation log.
+
+> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/analyze/topics#conversation-share-1).
+
+--------
 
 ### Add Comments to Conversation Logs
 
