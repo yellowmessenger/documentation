@@ -20,7 +20,7 @@ Nodes are classified into the following types:
 | Nodes         | Description                                                                                                                                                                                                          |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Prompts**  | Prompts can be used when the AI-agent expects a user to respond to the posed question. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to learn more.                           |
-| **Messages** | Messages can be used when the AI-agent has to display information to the user without expecting any response. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to learn more. |
+| **Messages** | Messages can be used when the AI-agent has to display information to the user without expecting any response. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to learn more. |
 | **Action**   | Actions are non-interactive nodes that can be used to perform a specific task. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) to learn more.                            |
 |    **Logic**   |  Logic nodes can be used when the flow must be branched based on the given conditions. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to learn more.  |
 
@@ -91,7 +91,7 @@ Each of these channels have multiple configurations. Take a look at them below.
 * **Button Auto Width** - For Quick replies and multi select, buttons can be configured.
 * **Enable Multiple Files** - This is used for file-related nodes, which gives the user permission to add more than one file at once.
 
-Enable these options to improve the video viewing experience. (available in the [Video node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#4-video) settings).
+Enable these options to improve the video viewing experience. (available in the [Video node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) settings).
 
 <img src="https://i.imgur.com/txLnGZL.png" alt="drawing" width="60%"/>
 

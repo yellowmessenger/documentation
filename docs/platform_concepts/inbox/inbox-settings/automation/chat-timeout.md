@@ -78,5 +78,5 @@ Follow the bellow steps:
 7. Set [Start trigger](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow) as **Event**.
 8. Select **/ticket-inactivity** from the drop down.
     ![](https://i.imgur.com/DqNDhjY.png)
-9. Connect the start node to any nodes to continue the flow. Connect to the [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) to display "Hey! Are you still there?"
+9. Connect the start node to any nodes to continue the flow. Connect to the [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to display "Hey! Are you still there?"
 

@@ -423,7 +423,7 @@ return new Promise(resolve => {
 
 ![](https://i.imgur.com/0rC44SF.png)
 
-5. To display the result to the end user, include a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text) and choose the pizzasec variable.
+5. To display the result to the end user, include a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) and choose the pizzasec variable.
 
 ![](https://i.imgur.com/lpEw972.png)
 

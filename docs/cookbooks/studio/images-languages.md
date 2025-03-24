@@ -22,7 +22,7 @@ sidebar_label : Display images for different languages
 
 ![](https://i.imgur.com/yxqWbNh.png)
 
-5. Add an [image node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-image) and add an image to it. This image will be mapped to the language code you entered in step 3.
+5. Add an [image node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) and add an image to it. This image will be mapped to the language code you entered in step 3.
 
 ![](https://i.imgur.com/xBhEte4.png)
 
