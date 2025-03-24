@@ -69,7 +69,7 @@ This node is not available for Whatsapp
 
    <img src="https://i.imgur.com/e0tytJq.png" alt="drawing" width="80%"/>
 
-3. Add a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text) to **Success** and **Fallback**. Success indicates the successful verification of the otp, Fallback indicates that the verification has failed.
+3. Add a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to **Success** and **Fallback**. Success indicates the successful verification of the otp, Fallback indicates that the verification has failed.
    
    <img src="https://i.imgur.com/T2UM4xp.png" alt="drawing" width="80%"/>
 
@@ -369,7 +369,7 @@ There are two ways by which you can convert Base64 files:
 2. In **Select variable**, choose the variable that contains the BASE64 file.
 3. **Select an output format** will be auto-populated by PDF as that's the only available option for docs. 
 
-Display the file though the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#6-file). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user.
+Display the file though the [File node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1). Simply choose the relevant variable from the **fetch from variable** dropdown, it will send the dynamically generated file as a PDF to the user.
 
 :::info
 To display PDFs from an API response, store the response in  an object variable, for example **pdf_response**. Include a text node and enter this syntax ```{{{variables.pdf_response.file.url}}}``` 
@@ -567,7 +567,7 @@ This node lets you change the language of the AI-agent conversation to one of th
 Let's say that you want to build a flow that asks for user's preferred language to continue the conversation.
 
 1. [Add the preferred languages to your AI-agent](https://docs.yellow.ai/docs/platform_concepts/studio/build/localization#add-languages-to-your-bot).
-2. Go to the flow and include a [Quick reply node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#7-quick-replies). Create different buttons for different languages and assign the ISO code as button values to the respective language option.
+2. Go to the flow and include a [Quick reply node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1). Create different buttons for different languages and assign the ISO code as button values to the respective language option.
 3. Store the response of the Quick Reply node in a variable.
 4. Include the **Set language node** and choose the variable created in the previous step. Refer to the following gif to see how it works.
 

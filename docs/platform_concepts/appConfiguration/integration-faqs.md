@@ -19,7 +19,7 @@ sidebar_label: Integration FAQs
     </ul>   
   </li>   
   <li>Fill in the corresponding fields.</li>   
-  <li>Store the JSON response of the payment node in a variable and <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response">display the API response</a> in a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes">message</a> node for the users to click the payment link and make a payment.</li> 
+  <li>Store the JSON response of the payment node in a variable and <a href="https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response">display the API response</a> in a <a href="https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1">message</a> node for the users to click the payment link and make a payment.</li> 
 </ol>  
 </div>   
 <br/>    

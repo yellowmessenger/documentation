@@ -196,7 +196,7 @@ To search for specific information in a bot conversation using the [Database nod
 7. Under **Pagination**, enter the **Page number** and **Size limit** to display the records to the user. You can fetch these values dynamically from variables. If pagination is not required, leave these fields empty.
 
 
-The search reponse will be in the form of object. You can use the snippet ```{{{variables.variablename.records.0.fieldName}}}``` in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#2-text) to display the response to the user.
+The search reponse will be in the form of object. You can use the snippet ```{{{variables.variablename.records.0.fieldName}}}``` in a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to display the response to the user.
 
 Refer to following GIF to see how the Search type works in Database node.
 

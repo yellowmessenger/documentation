@@ -101,7 +101,7 @@ A flow triggers when a particular intent/entity/event/URL is identified or when 
 #### :pushpin: Tips 
 
 
-- After the account is created, you can use [message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) nodes to display/promote other banking features that the customers can avail immediately. 
+- After the account is created, you can use [message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) nodes to display/promote other banking features that the customers can avail immediately. 
 - Using [prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) nodes, customer details such as location, salary range, etc. can be obtained. 
 - You can verify the phone number using [send OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#12-send-otp) and [verify OTP](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#13-verify-otp) nodes.
 
@@ -172,8 +172,8 @@ A flow triggers when a particular intent/entity/event/URL is identified or when 
 
 ![](https://i.imgur.com/xxrTA8c.png)
 
-4. **Display loan status**: Response obtained from the database consists of the status, which is stored in the ```dbresp``` variable. It is displayed using a [Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) and a variable: ``` {{{variables.dbresp.records.0.status}}}```
-    - If the phone number entered by the customer does not exist (in the ```Loan application``` database), a message - "Application was not found, the application number does not exist." is displayed using a [Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text).
+4. **Display loan status**: Response obtained from the database consists of the status, which is stored in the ```dbresp``` variable. It is displayed using a [Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) and a variable: ``` {{{variables.dbresp.records.0.status}}}```
+    - If the phone number entered by the customer does not exist (in the ```Loan application``` database), a message - "Application was not found, the application number does not exist." is displayed using a [Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1).
 
 ![](https://i.imgur.com/cZE0FwK.png)
 
@@ -191,7 +191,7 @@ A flow triggers when a particular intent/entity/event/URL is identified or when 
 1. **Start trigger**: This flow is triggered when the bot user selects the **Calculate EMI** button from the menu options (start flow). 
     - It can also be triggered at any point of the conversation when the bot user types a sentence that matches with the [intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents)- ```Calculate loan EMI```. 
 2. **Fetch Amount, Interest, and Tenure**: [Question nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#11-question) are used to obtain loan amount, specified interest rate, and loan tenure in months, these values are stored in three variables (```selectedLoanAmount```, ```selectedIr``` and ```selectedTenure```)
-3. **Calculate and display EMI amount**: A function node is used to calculate EMI with the data obtained through question nodes. With help of a [Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) expected EMI is displayed. 
+3. **Calculate and display EMI amount**: A function node is used to calculate EMI with the data obtained through question nodes. With help of a [Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) expected EMI is displayed. 
 ``` 
 EMI = P × r × (1 + r)n/((1 + r)n - 1) 
 (P= Loan amount, r= interest rate, n=tenure in number of months)

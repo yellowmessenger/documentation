@@ -89,7 +89,7 @@ After creating your Webex bot successfully, you can test the chatbot with any of
 
 To test your Webex chatbot, follow these steps:
 
-1. [Setup the bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot) based on your business use case.
+1. [Setup the bot](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot) based on your business use case.
 
 2. Copy the bot username from the [Webex Developers portal](https://developer.webex.com/). 
 

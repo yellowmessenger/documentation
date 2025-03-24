@@ -1,8 +1,14 @@
 ---
-title: Bot subscription plans
-sidebar_label: Bot subscription plans
+title: AI agent subscription plans
+sidebar_label: Subscription plans
 tags: [start for free, essential features at no cost]
 ---
+
+:::note
+
+Contact [our support team](https://docs.yellow.ai/docs/cookbooks/yellowaisupport) to discuss AI agent pricing. 
+
+::: 
 
 Yellow.ai offers two subscription plans:
 

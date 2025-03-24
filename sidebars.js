@@ -402,18 +402,19 @@ module.exports = {
                     {
                       type: "category",
                       label: "Message nodes",
-                      link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/message-nodes1.md/message-nodes'},
+                      link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/message-nodes1/message-nodes'},
                       collapsed: true,
                       items: [
-                        "platform_concepts/studio/build/nodes/message-nodes1.md/image-node", 
-                        "platform_concepts/studio/build/nodes/message-nodes1.md/text-node",
-                        "platform_concepts/studio/build/nodes/message-nodes1.md/carousel-message-node",
-                        "platform_concepts/studio/build/nodes/message-nodes1.md/video-node",
-                        "platform_concepts/studio/build/nodes/message-nodes1.md/file-node",
-                        "platform_concepts/studio/build/nodes/message-nodes1.md/quick-replies",
-                        "platform_concepts/studio/build/nodes/message-nodes1.md/whatsapp-list",
-                        "platform_concepts/studio/build/nodes/message-nodes1.md/whatsapp-product-message",
+                        "platform_concepts/studio/build/nodes/message-nodes1/image-node", 
+                        "platform_concepts/studio/build/nodes/message-nodes1/text-node",
+                        "platform_concepts/studio/build/nodes/message-nodes1/carousel-message-node",
+                        "platform_concepts/studio/build/nodes/message-nodes1/video-node",
+                        "platform_concepts/studio/build/nodes/message-nodes1/file-node",
+                        "platform_concepts/studio/build/nodes/message-nodes1/quick-replies",
+                        "platform_concepts/studio/build/nodes/message-nodes1/whatsapp-list",
+                        "platform_concepts/studio/build/nodes/message-nodes1/whatsapp-product-message",
                         "platform_concepts/studio/build/nodes/prompt-nodes",
+                        
                        
                         "platform_concepts/studio/build/nodes/action-nodes",
                         "platform_concepts/studio/build/nodes/logic-nodes",

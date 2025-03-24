@@ -1,13 +1,13 @@
 ---
-title: Enhance reporting with available actions for saved reports
+title: Enhance reporting with available actions
 sidebar_label : Actions on saved reports 
 ---
 
+When you click on **Save query** on the tables page, you can create Custom reports that include filters, summarization, and visualisation. These Custom reports and Default reports (created by yellow.ai) can be scheduled for automatic alerts, can be used for advanced data analytics, added to a dashboard for easy access, or downloaded/deleted as needed. 
 
-When you click on **Save query** on the tables page, you can create saved reports that include filters, summarization, and visualisation. These saved reports can be scheduled for automatic alerts, can be used for advanced data analytics, added to a dashboard for easy access, or downloaded/deleted as needed. 
+You can find **Reports** (saved reports built using default and custom tables) at the top of the data explorer section.
 
-You can find your **Saved reports** at the top of the data explorer section.
-![](https://i.imgur.com/NguWtaB.png)
+![image](https://hackmd.io/_uploads/HyqIZFLnkg.png)
 
 
 ## 1. Schedule a report
@@ -15,10 +15,10 @@ You can find your **Saved reports** at the top of the data explorer section.
 Scheduling a recurring report (instead of downloading the CSV files and monitoring dashboards) is important because it provides consistency, efficiency, reliability, and flexibility. It ensures timely and accurate delivery of information while freeing up time and resources.
 
 To schedule a report, follow the below steps: 
-1. Saved queries are available as saved reports on the data explorer page, open any of your saved reports. For example: Studio feedback. 
-    ![](https://i.imgur.com/DkPaVC3.png)
-2. On the queries page, click **Actions**. From the dropdown select **Schedule report**. 
-    ![](https://hackmd.io/_uploads/BJZYDJ9S2.png)
+1. On the data explorer page, open any of the Default/Custom reports. 
+    ![image](https://imgur.com/ODXjS2f.png)
+2. Open the report, click **Actions**. From the dropdown select **Schedule report**. 
+    ![](https://imgur.com/r34BqUl.png)
 
 
 3. Configure the **Frequency**. You can choose hourly, weekly (select the days of the week that the report needs to be sent on), monthly or quarterly (choose timezone and dates).
@@ -47,16 +47,16 @@ To schedule a report, follow the below steps:
 
 ## 2. Add a report to dashboard
 
-For faster access and visualisation, you can add this saved report to your dashboard by clicking **Add to dashboard** from the **Actions** dropdown.      
+For faster access and visualisation, you can add custom report to your dashboard by clicking **Add to dashboard** from the **Actions** dropdown.      
 
-![](https://i.imgur.com/LH0DHCv.png)
+![image](https://imgur.com/WywNX56.png)
 
-> All the changes made to these saved reports will be reflected on Dashboards. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro) for more details on customising your dashboard. 
+> All the changes made to these custom reports will be reflected on Dashboards. Click [here](https://docs.yellow.ai/docs/platform_concepts/growth/Dashboards/dashboardintro) for more details on customising your dashboard. 
 
 ------
 
-## 3. Delete a saved report
+## 3. Delete a custom report
 
 To delete the saved query, select **Delete query** from the **Actions** dropdown.
 
-![](https://hackmd.io/_uploads/rJohv1cB2.png)
+![image](https://imgur.com/RK1QJFC.png)

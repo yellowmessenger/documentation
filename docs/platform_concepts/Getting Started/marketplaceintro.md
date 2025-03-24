@@ -164,7 +164,7 @@ For example, the 'Bike Models' and 'Bike Models clone' flow will have the same f
 | Nodes         | Description |
 | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Prompts**  | Prompts can be used when the bot expects a user to respond to the posed question. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) to learn more.                           |
-| **Messages** | Messages can be used when the bot has to display information to the user without expecting any response. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) to learn more. These nodes can be used to provide a human touch to the conversation. |
+| **Messages** | Messages can be used when the bot has to display information to the user without expecting any response. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to learn more. These nodes can be used to provide a human touch to the conversation. |
 | **Action**   | Actions are non-interactive nodes that can be used to perform a specific task. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) to learn more.                            |
 |    **Logic**   |  Logic nodes can be used when the flow must be branched based on the given conditions. Click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes) to learn more.  |
 

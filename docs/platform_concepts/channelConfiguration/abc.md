@@ -217,7 +217,7 @@ After connecting your bot to the ABC channel, you can test your bot.
      
 #### Prerequisites
 
-* Ensure that you have created the bot with intents and configured the flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot). 
+* Ensure that you have created the bot with intents and configured the flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot). 
 * To test your bot on ABC, you need to **Copy Conversational link** from the Messages for Business Account.
 
    ![](https://i.imgur.com/6HSI0cR.jpg)  
