@@ -150,7 +150,15 @@ For example, the 'Bike Models' and 'Bike Models clone' flow will have the same f
 
 #### Edit flow 
 
-1. To edit a flow, open the flow by clicking on the flow name. 
+:::info
+
+To import and use specific flows directly from the Marketplace into a **Sandbox or Development** environment, open the Flows section, click **+Create new flow**, and import from Marketplace.
+
+:::
+
+To edit a flow: 
+
+1. Open the flow by clicking on the flow name. 
 
 ![](https://i.imgur.com/gfw2hy9.png)
 

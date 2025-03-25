@@ -106,3 +106,16 @@ To join the inbox team, follow the steps below:
 :::note
 If the user has access to the agent role, they will log out after 8 hours of inactivity from the last time the `session?refresh=true` API is called for the user.
 :::
+
+
+------
+
+## <a name="login"></a> 3. Managing multiple logins for agents
+
+In a dynamic customer support environment, agents often need to access their accounts from multiple devices or sessions. To facilitate this, the **Allow multiple logins using the same agent credentials** option can be enabled under **Settings > Inbox > Multiple logins - security**.
+
+Enabling this feature allows you to log in to the platform using the same credentials across different browsers or devices. This improves productivity, ensures continuity, and provides flexibility for agents working across various platforms.
+
+If you do not want to use your credentials on another system or environment, you can disable this option. Disabling it helps enhance security by preventing unauthorized access and reducing the risk of credential misuse in different environments.
+
+![image](https://hackmd.io/_uploads/BkIwT_laye.png)
