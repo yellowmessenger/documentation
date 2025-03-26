@@ -42,6 +42,7 @@ module.exports = {
       collapsed: true,
       items: [
         "cookbooks/Voice/voicebottroubleshooting", 
+        "cookbooks/Voice/uifn",
   ],
 },
 
