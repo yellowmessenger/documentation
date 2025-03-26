@@ -12,6 +12,34 @@ In the chat or email conversation, customers, agents, and admins have the abilit
 However, there is a 25MB size-limit on the files you can send. </div>
 </details>
 
+<details>
+ <summary>Where can I find inbox events?</summary>
+ <div>
+  
+Inbox events are integrated with automation and can be used while designing workflows. Learn more [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/workflows).
+
+</div>
+</details>
+
+<details>
+ <summary>How many messages can one email ticket have?</summary>
+ <div>
+
+An email ticket has a limitation of displaying up to **100 email replies** in a thread.  
+In Outlook, email tickets do not appear as a thread; instead, each reply is treated as a new email. Users can also change the subject.
+
+</div>
+</details>
+
+<details>
+ <summary>How does the notification icon/feature work for admins or agents? Is it a real-time alert?</summary>
+ <div>
+ 
+- **For agents in the Inbox (Chat section):** They receive messages in real-time.  <br/> - **For agents in the Inbox but outside the Chat section:** They receive real-time notifications with a sound alert, ensuring they are promptly notified of new messages.  <br/> - **For agents logging in with unread notifications:** The bell icon highlights missed notifications, helping them catch up on past messages. <br/><br/> Since its primary function is to indicate unread messages upon login rather than act as a real-time alert system, updating it live is unnecessary.  
+
+</div>
+</details>
+
 
 <details>
 <summary> 
