@@ -128,6 +128,14 @@ Users did not receive a call, WhatsApp, or SMS notification.
     
 ## Log Analysis
 
+:::note
+
+Enabling Auto fallback to Enable summarized results in the Conversation settings, or within any node that invokes document search in a voice flow, will result in an error.
+
+![image (47)](https://hackmd.io/_uploads/SkFan2k6Jl.png)
+
+:::
+
 
 1. Access Logs:
     - Navigate to **Analysis → Conversational Logs** or access the relevant database for details on `drop_steps` and `dispositions`.

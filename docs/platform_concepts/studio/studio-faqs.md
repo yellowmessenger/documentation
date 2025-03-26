@@ -802,6 +802,26 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
    </div>
 </details>
 
+
+--------
+
+## Localization
+
+<details>
+  <summary> Why is the text in a Message Carousel not appearing in the correct language when using Localization? </summary>
+  <div>
+    When using localization (translation) for a Message Carousel, if you upload different images for different languages in the same node, the images will display correctly, but the text will appear in the default language (e.g., English). This happens because images are manually uploaded per language, but the text does not update automatically unless added separately. To ensure both text and images appear correctly in the selected language, follow these steps:
+    <ul>
+      <li>Switch to the desired language in the flow.</li>
+      <li>Manually add the translated text for that language.</li>
+    </ul>
+    By doing this, the Message Carousel will display both text and images correctly in different languages.
+  </div>
+</details>
+
+
+-------
+
 ## General FAQs
 
 <details>
