@@ -28,6 +28,12 @@ To access this feature, click on the **AI collaborator icon** and select **Summa
 
 ![](https://i.imgur.com/2X03K8b.png)
 
+:::info
+
+The summarization feature is an AI-powered tool that generates a summary of the entire chat. While specific rules can be applied as summary prompts, the output may vary each time. However, the core context will remain consistent.
+
+:::
+
 
 ----
 

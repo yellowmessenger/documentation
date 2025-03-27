@@ -838,6 +838,18 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
 
 
 
+<details>
+ <summary>What is the difference between **Suggestions** and **Fallback** under conversation settings? 
+</summary>
+ <div>
+  <div> 
+
+Suggestions appear when the bot's confidence level falls below the set minimum threshold. A fallback is triggered when no similar intents are available to generate suggestions.  <br/> Maximum number of buttons that are visible suggestions will depend on the number of intents being predicted.
+
+</div>
+  <br/>
+   </div>
+</details>
 
 
 
