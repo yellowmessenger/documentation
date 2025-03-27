@@ -673,6 +673,17 @@ You can execute the health check and update the test case to bring the status ba
    </div>
 </details>
 
+<details>
+ <summary>Can a flow be restored from Staging to Sandbox if it was deleted from Sandbox?
+</summary>
+ <div>
+  <div>No, it is not possible to restore a flow from Staging to Sandbox. You can publish a flow from lower to higher environments, and there is no rollback mechanism to retrieve deleted flows back to Sandbox. If a flow is deleted from Sandbox, it must be recreated manually.
+​
+</div>
+  <br/>
+   </div>
+</details>
+
 ### KB
 
 <details>
@@ -802,6 +813,23 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
    </div>
 </details>
 
+<details>
+ <summary>Why is document search not working?
+</summary>
+ <div>
+  <div> 
+     If the document search is not functioning, follow these troubleshooting steps:<br/>
+     * <b>Ensure data is indexed</b>: Verify that the data is properly indexed.<br/>
+     * <b>Check search configuration</b>: Confirm that the document search node is correctly configured. If not, the system will suggest alternatives or fallback options.<br/> 
+     * <b>Use filters</b>: Narrow down the search by filtering based on file name, source, status, or tags.<br/> 
+     * <b>Enable document search node</b>: Ensure that the document search node is enabled in the automation flow.Add a prompt node to capture the user query and use the document search node to fetch the response.<br/> 
+     * <b>Check search categories</b>: Confirm that you are searching within the correct categories, such as ticket details or message details.<br/>
+
+</div>
+  <br/>
+   </div>
+</details>
+
 
 --------
 
@@ -839,13 +867,54 @@ To upload PDFs to your Knowledge Base, follow the steps mentioned <a href= "http
 
 
 <details>
- <summary>What is the difference between **Suggestions** and **Fallback** under conversation settings? 
+ <summary>What is the difference between <b>>Suggestions</b> and <b>Fallback</b> under conversation settings? 
 </summary>
  <div>
   <div> 
 
 Suggestions appear when the bot's confidence level falls below the set minimum threshold. A fallback is triggered when no similar intents are available to generate suggestions.  <br/> Maximum number of buttons that are visible suggestions will depend on the number of intents being predicted.
 
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to add pictures to the GenAI prompt?
+</summary>
+ <div>
+  <div> 
+     Currently, adding images to the GenAI prompt is not supported. The prompt is designed to process and generate responses based on text inputs, as Large Language Models (LLMs) primarily work with textual data. Supporting images would require advanced multimodal capabilities, which are not yet available in the current implementation.
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to concatenate (combine) two variables into one?
+</summary>
+ <div>
+  <div> 
+     Yes, if the variables are of the string data type, they can be directly concatenated. However, for other data types such as arrays, objects, or integers, you need to write custom logic to concatenate.
+
+   You can concatenate two string variables using the following syntax:
+
+    `{{{variables.user_name}}_{{{variables.last_name}}}`
+
+   A separator such as `_`, `-`, `.`, space, or comma must be used between the two mustache expressions to ensure proper formatting.
+   
+Refer to the following gif to see how to consolidate two variables into one:<br/><img src="https://imgur.com/FW1gbVn.gif" alt="drawing" width="70%"/>
+</div>
+  <br/>
+   </div>
+</details>
+
+<details>
+ <summary>Is it possible to import variables?
+</summary>
+ <div>
+  <div> 
+     No, it is not possible to import variables directly. However, you can manually define and assign values to variables within the platform or pass them through API calls based on your use case.
 </div>
   <br/>
    </div>
