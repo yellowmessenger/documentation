@@ -295,3 +295,30 @@ To delete database table fields or table, follow these steps:
    * **Drop**: Deletes the entire table structure along with all its the records. All the data will be lost (even in production) if you create a new table with the same name. You will also need to update the reference of this table in all the journey nodes where this table was used.
 
 
+## Troubleshooting Database configuration
+
+### FAQs related to troubleshooting
+
+<details><summary><b>Why am I getting an error while adding a field in the database?</b></summary>
+<p>
+If you are encountering an error while adding a field in the database, try these troubleshooting steps:<br/>
+   * <b>Check for duplicate values</b>: Ensure that the fields you are adding do not have duplicate values.<br/>
+   * <b>Environment restrictions</b> – Schema updates are only allowed in sandbox or development environments Ensure you are not making changes in other environment.<br/>
+    * <b>Limitations on Searchable String columns</b>: If you are adding string-type columns, make sure the total number of searchable string-type columns does not exceed 10.<br/>
+   * <b>Mandatory fields</b> – Verify that all required fields are correctly filled before updating.<br/>
+   * <b>Data types</b> – Ensure that the data types of the fields you are adding are correctly specified and supported. 
+</p>
+</details>
+
+<details><summary><b>Why is autosuggestion not working from a database using "Make prompt smarter</b></summary>
+<p>
+If autosuggestion is not working when using the 'Make Prompt Smarter' feature with a database, follow these steps to resolve the issue:<br/>
+   1. <b>Check Database connection</b>: Ensure the database is properly connected and accessible.<br/>
+   2. <b>Verify configuration</b>: Ensure the database column is correctly selected for auto-complete. You can do this by navigating to the prompt node, clicking on 'Make prompt smarter', and then selecting the appropriate database table and column.<br/>
+   3. <b>Auto-complete settings</b>: Ensure that the autocomplete settings are correctly configured. This includes selecting the right database column, list entity, user properties, FAQs, or custom function.<br/>
+   4. <b>Enable Auto-complete option</b>: Ensure that Auto-complete option is enabled in the Chat widget <b>Settings</b>: page.<br/>
+   5. <b>Function logic</b>: If you are using a custom function for autocomplete, verify that the function logic is correct and returns the expected array of string values.<br/>
+   6. <b>Character threshold</b>: Auto-complete shows results after 3 characters are typed. Ensure that this threshold is met during testing.<br/>
+   7. <b>Testing and iteration</b>: Perform multiple iterations and tests to ensure that the prompt behaves as expected. Keep test cases handy to validate the functionality.
+</p>
+</details>

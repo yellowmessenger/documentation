@@ -3,84 +3,134 @@ title : Google Play store Integration
 sidebar_label : Google Play store
 ---
 
-The integration with the Google Play store account enables active management of user ratings and reviews directly from the bot. For this integration, you need Google Play Console, Google Cloud Console, and an Android app deployed on the Play Store.
+The Google Play Store integration with Yellow.ai enables businesses to monitor and manage app reviews **directly within the AI Agent**, eliminating the need to switch between platforms. 
 
-This integration is compatible with any version supported by the Google Play Store. For further details on the action nodes used in this integration, please refer to the [documentation](https://developers.google.com/android-publisher/reply-to-reviews).
+By centralizing review management within the bot, businesses can streamline feedback handling, enhance customer engagement, and reduce response time, all without leaving the Yellow.ai platform.
 
-## Connect your Play Store with yellow.ai
+With this integration, the AI Agent can:  
 
-Connect your cloud console and Google Play accounts (as mentioned [here](https://developers.google.com/android-publisher/getting_started)) before integrating your Play Store account with Yellow.ai. 
+- **Fetch user reviews and ratings**: Automatically retrieve new app reviews and ratings in real time from Google Play Store. This allows teams to track app performance, analyze user sentiment, and respond proactively.  
+- **Respond to user reviews**: The AI or Human agent can respond to reviews **from within the platform**. The AI Agent can send automated replies, while low ratings can be escalated to a human agent for personalized engagement.
 
-### Authenticate Yellow.ai to access Google Play Store
 
-1. On the Staging/Development environment, go to **Extensions** > **Integrations** > **Tools & Utilities** > **Google playstore**. You can also search for Google Playstore in the Search box.
+**Limitation**
 
- ![](https://i.imgur.com/cIbeLnW.png)
+* Bot or agent can send only one reply per feedback, with a maximum of 250 characters.
 
- 2. In the **Give account name** field, provide a name to your account in yellow.ai.
- 3. In **Email**, enter the email address of your Google Playstore account.
- 4. In **Private key** and **Package name**, enter the private key and package name of your Google Play store account. For steps to fetch the private key from your google console, click [here](https://www.iwantanelephant.com/blog/2020/11/17/how-to-configure-api-access-to-google-play-console/).
+**Prerequisites**
+
+Before proceeding with this integration, ensure you have:
+
+* Google play console access
+* Google cloud console access
+* An Android app deployed on the Play store
+
+## Integrate Google Play store with Yellow.ai
+
+To integrate Google Play store with Yellow.ai, follow these steps:
+
+### Get Google console credentials
+
+For steps to fetch the private key from your google console, click [here](https://www.iwantanelephant.com/blog/2020/11/17/how-to-configure-api-access-to-google-play-console/).
+
+1. Log in to the [Google developer console](https://console.cloud.google.com/).
+
+2. On the [Google console developer](https://developers.google.com/workspace/guides/create-project#create_a_new_google_cloud_platform_gcp_project) portal, click **Go to create a project**.
+
+3. Enter the **Project name**, **Organization**, and **Location**, then click **Create** to create a project.
+
+    ![](https://i.imgur.com/Pz8F3TN.png)
+    
+* Your project will be successfully created.
+
+     ![](https://i.imgur.com/zKou5jD.png)
+     
+4. On the navigation panel, go to **IAM & Admin** > **Service Accounts**.
+
+     ![](https://i.imgur.com/do384LL.png)
+     
+5. Click on **+ CREATE SERVICE ACCOUNT**.
+
+     ![](https://i.imgur.com/gN31KZ0.png)
+     
+6. Add the *Service Account Details* such as **Service account name**, **Service account ID**, and **Service account description**, then **CREATE AND CONTINUE** in Step 1. Skip Step 2 and 3. 
+
+     ![](https://i.imgur.com/gN31KZ0.png)   
+
+* The service account details for your project will be added successfully. 
+
+     ![](https://i.imgur.com/yByfMn1.png)
+      
+7. Once the service account is created, click on the **email link**.
+
+      ![](https://i.imgur.com/CAq3YFX.png)
+      
+8. Go to **KEYS** tab and click on **ADD KEY** > **Create new key**.
+
+      ![](https://i.imgur.com/AvKOUU1.png)
+      
+9.  Select the *Key type* as **JSON** and click **Create**. 
+
+:::note
+* Ensure that you save this file properly, it cannot be recovered once lost.
+:::
+
+   <img src="https://i.imgur.com/rZtypMi.png" alt="drawing" width="50%"/>
+<br/>   
+   
+• A confirmation message <b>Private key saved to your computer</b> is displayed.
+
+   <img src="https://i.imgur.com/wDDpoOa.png" alt="drawing" width="80%"/>
+   
+10. Copy the **Private key**, which is required to connect the Google play store with Yellow.ai. For more information, click [here](https://www.iwantanelephant.com/blog/2020/11/17/how-to-configure-api-access-to-google-play-console/).
  5. Click **Connect**. 
- 
-### Enable Google Playstore review event in Yellow.ai
 
-Activating the `playstore_review` event will enable the bot to receive notifications when a review is posted for your app on the Google Play Store. For this, you need to Connect the Play Store in the staging environment and activate the events as explained below.
+### Connect Google play store to Yellow.ai
 
+To integrate Google play store with Yellow.ai, follow these steps:
 
-:::note
-Ensure you provide the correct credentials and permissions. After successful connection, publish the bot to production to activate the same events in the production environment as well.
-::
+1. Login to the [Yellow platform](https://cloud.yellow.ai/) and navigate to the **Development** environment.
+   * In a two-tier environment, you can only add accounts in the Development environment.
+   * In a three-tier environment, you can only add accounts in Staging/Sandbox environment.
 
-1. In the Development/Staging enveronment, go to **Automation** > **Event** > **Integrations** and search for **playstore_review**.
+2. Go to **Extensions** > **Integrations** > **Tools & Utilities** > **Google playstore**. You can also search for Google Playstore in the Search box.
 
- ![](https://i.imgur.com/b42Ztir.png)
-2. Click on the more options icon and select **Activate**.
+   ![](https://i.imgur.com/cIbeLnW.png)
 
-## Manage Google play store from Yellow.ai
+ 2. In the **Give account name** field, enter a unique name, you cannot edit the account name once it is created.
+ 3. In **Email**, enter the email address of your Google play store account.
+ 4. In **Private key** and **Package name**, enter the private key copied from the Google console and package name of your Google play store account. 
 
-After integrating your Google Play Store account with Yellow.ai, you will be able to respond to the ratings and reviews that users have left for your app on the Google Play Store via emails (tickets).
+     ![](https://imgur.com/TLWC3rL.png)
+     
+5. Click **Connect**.
 
-:::info
-The credentials used during integration with yellow.ai will generate access and refresh tokens for the specified connected package. These tokens will be utilized to fetch the ratings and reviews posted by users on the application.
-:::
+* Similarly, you can add a maximum of 15 accounts.
 
-1. Add the event **playstore_review** in the Start node.
+## Enable Google play store event to receive events in bot
 
-![](https://i.imgur.com/lx14ZkH.png)
-2. Include a [Raise a Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) to capture reviews and ratings as tickets, and build the remaining flow based on your specific use case.
+To receive notifications when a user posts a review for your app on the Google play store, you need to enable the `playstore_review` event in your bot. Once enabled, the bot can automatically fetch new reviews and trigger actions such as responding to feedback or escalating low-rated reviews to a live agent.
 
-:::note
-Currently, the use case is restricted to receiving ratings and reviews through tickets and responding to them via tickets.
-:::
+To enable Google play store event, follow these steps:
 
+1. On the [Cloud platform](https://cloud.yellow.ai/), go to **Staging** or **Development** environment.
 
-**Sample success response:**
+2. On the left navigation bar, click **Automation** > **Event** > **Integrations** and search for `playstore_review`.
 
-```js
-{
-   "success": true,
-   "message": "Execution Successful",
-   "data": {
-       "statusCode": 201,
-       "body": {
-  "reviewId": "87654321",
-  "authorName": "Joan Smith",
-  "comments": [
-    {
-      "userComment": {
-        "text": "This app is awesome!",
-        "lastModified": {
-          "seconds": "1452114723",
-          "nanos": 913000000
-        },
-        "starRating": 5
-      }
-    }
-  ]
-}
-```
+    ![](https://imgur.com/Wb5ngqw.png)
 
+3. Click on the **more options** icon and select **Activate**. If you have connected multiple accounts, you need to enable the event for each account.
 
+     ![](https://imgur.com/yaHkUER.png)
 
+4. Once the event is activated, navigate to **Automation > Build** to create a flow. 
+5. Create a new flow and set **playstore_review** as the trigger event and configure action for receiving rating and review.
 
+     ![](https://imgur.com/jttbbc3.png)
+     
+## Use cases supported for Google play store integration
+
+1. **Fetch user reviews and ratings**: The bot can automatically fetch new app reviews and ratings from the Google play store. This integration enables real-time retrieval of user feedback. This helps to analyse the user sentiment and track app performance.
+
+2. **Send response to user reviews**: The bot or a live agent can respond to user reviews directly from the platform. When a user submits a review, the bot can send an automated response, or if the rating is low, escalate it to a human agent for personalized engagement. However, each review can receive only one response, with a maximum length of 250 characters. 
 
