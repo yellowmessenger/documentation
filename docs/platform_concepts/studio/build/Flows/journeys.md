@@ -43,7 +43,7 @@ If you have multiple AI-agents created, choose the specific AI-agent for which y
 
 Yellow.ai's AI Copilot simplifies flow creation using AI-powered automation, saving time by eliminating manual process. You can design any type of flow just by inputting your requirements in the form of plain text, and it generates the flow based on the provided instructions.
 
-The AI Copilot creates a basic flow with [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) nodes. You can then customize this flow using [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code), [Database](https://docs.yellow.ai/docs/platform_concepts/studio/database#docusaurus_skipToContent_fallback), and [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode) to suit your specific use case.
+The AI Copilot creates a basic flow with [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) nodes. You can then customize this flow using [Function](https://docs.yellow.ai/docs/platform_concepts/studio/build/code), [Database](https://docs.yellow.ai/docs/platform_concepts/studio/database#docusaurus_skipToContent_fallback), and [API](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode) to suit your specific use case.
 
 
 For example, you have defined AI Copilot to create a lead generation flow. Once the basic flow is generated, you can edit the flow for advanced features such as storing the lead information in database, adding an API node to connect to an external CRM system. 
@@ -81,7 +81,7 @@ To generate flow using AI, follow these steps:
    iv. **Generate Description**: Automatically generates the description based on your given details.<br/>
    v. **Industry**: Choose the industry your business belongs to and click **Generate**.
    
-* Generating a flow typically takes around 3 to 4 minutes. A basic flow is created with [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) nodes. Once generated, you can view the created flow under the selected category. You can then customize this flow to suit your specific use case.
+* Generating a flow typically takes around 3 to 4 minutes. A basic flow is created with [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) nodes. Once generated, you can view the created flow under the selected category. You can then customize this flow to suit your specific use case.
 
    ![](https://imgur.com/49FGhOG.png)
 

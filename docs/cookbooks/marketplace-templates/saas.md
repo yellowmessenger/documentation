@@ -77,7 +77,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
     - If ```entity value``` is equal to ```Explore by use case```- **Explore by use case** flow will get executed.
     - Else, if ```entity value``` is equal to ```Explore by channel```- **Explore by channel** flow will get executed.
     - Else, if ```entity value``` is equal to ```Explore by industry```- **Explore by industry** flow will get executed.
-    - If none of the options are selected, a text will be displayed ([text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) asking the bot user to retry. 
+    - If none of the options are selected, a text will be displayed ([text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) asking the bot user to retry. 
 
 
 
@@ -119,14 +119,14 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 
 1. **Start trigger**: Triggered when the **Customer case studies** option is selected from the main menu (WelcomeLCsXc). 
     - It can also be triggered when the bot user types a sentence that matches the intent- *customer case studies* options. You can customize this [intent.]
-2. **Display an intro and sub-categories**: Using a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1), details about the company are displayed followed by a carousel node to allow the bot user to select a category that they would like to learn more about (banking, retail, and government). 
+2. **Display an intro and sub-categories**: Using a [text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes), details about the company are displayed followed by a carousel node to allow the bot user to select a category that they would like to learn more about (banking, retail, and government). 
 3. **Verify the category selected**: The selected category from the carousel is identified using a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition). 
 - ```@case_studies``` entity is trained to identify case studies categories as ```entity values```.  
     - If ```entity value``` is equal to ```Retail``` the flow continues to show details pretaining to Retail. Likewise for the other categories. 
 
 > After selecting a category, the flow can be further designed to help the user understand the product, read case studies, watch demos, etc. This can be replicated for all the categories. 
 
-4. **Display introduction for the case study**: With [message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) all the information related to the case study can be displayed. A **Text node** is used here.
+4. **Display introduction for the case study**: With [message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) all the information related to the case study can be displayed. A **Text node** is used here.
 5. **Identify channel and display quick replies**: Channel is identified using [channel filter](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) node. If the bot user is conversing from a WhatsApp channel, [Carousel](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#16-carousel) node is used to display the 3 menu options. Similarly, for other channels, [Quick reply](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#14-quick-replies) node is used to display the 3 menu options (Read more, See bot in action, Go back).
 6. **Identify the selected option and display details**: [Condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) is used to identify the selected options.
     - If **Read more** is selected, Text node is used to display the detailed case study. 

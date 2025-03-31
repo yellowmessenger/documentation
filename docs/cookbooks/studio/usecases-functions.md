@@ -44,7 +44,7 @@ Navigate to the **Functions** section and write a function to process the saved 
 
 ### 1.6. Populate the Carousel Node
 
-1. Insert a [Carousel Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) in the flow. 
+1. Insert a [Carousel Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) in the flow. 
 2. In the **Fetch from** field, select the variable with the formatted weather data.
 3. Display the data in the carousel format.
 
@@ -73,7 +73,7 @@ Compute a date that is 45 days before the current date and display it in the bot
 <img src="https://i.imgur.com/e2JnHnf.png" width="80%"/>
 
 #### 2.2. Display the captured date
-Insert a [Text Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) and display the **bookingDate** value to verify that the current date has been captured correctly.
+Insert a [Text Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) and display the **bookingDate** value to verify that the current date has been captured correctly.
 
 <img src="https://i.imgur.com/aQMaaUM.png" width="80%"/>
 
@@ -113,7 +113,7 @@ return new Promise(resolve => {
 
 
 #### 2.4. Display the computed date
-Insert another [Text Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to display the date that was calculated (45 days before the current date). Use the variable containing the new date.
+Insert another [Text Node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) to display the date that was calculated (45 days before the current date). Use the variable containing the new date.
 
 <img src="https://i.imgur.com/2cCX1By.png" width="80%"/>
 

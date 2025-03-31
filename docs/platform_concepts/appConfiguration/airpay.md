@@ -76,7 +76,7 @@ You type the static values in the fields by clicking **Or** or disabling **Var**
 
    <img src="https://i.imgur.com/1RpVqmu.png" alt="drawing" width="60%"/>
 
-5. [Display the API response](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response) in a [message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) node.
+5. [Display the API response](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode#display-api-response) in a [message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) node.
 
 **Sample response:**
 

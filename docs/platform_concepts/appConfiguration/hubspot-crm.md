@@ -141,7 +141,7 @@ To manage your Hubspot CRM account through yellow.ai bot, follow these steps:
 * Depending on the selected object, the corresponding fields will be shown. To fill those fields, you need to collect it as an input from users beforehand. Construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be passed in those fields.
 
 
-4. Each Hubspot CRM action returns a response as a JSON object. [Store that response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to display that response to the end user.
+4. Each Hubspot CRM action returns a response as a JSON object. [Store that response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables) and [pass that variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#42-retrieve-data-from-variables) in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) to display that response to the end user.
 
 For example, if you receive the following response, you can use this syntax ``` {{{variables.variablename.results.0.properties.lastname}}}  ``` to filter out the contact's last name.
 
