@@ -24,7 +24,7 @@ You can create multilingual bots in yellow.ai platfrom through which your bot ca
 
 ![](https://i.imgur.com/N9saSaD.png)
 
-5. Add a [Quick Replies node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to your flow and populate the Button values with language options.
+5. Add a [Quick Replies node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) to your flow and populate the Button values with language options.
 
 ![](https://i.imgur.com/fsQyy5B.png)
 

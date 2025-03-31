@@ -14,4 +14,4 @@ Follow the below steps to transfer the chat to an agent without asking for any i
 
 ![](https://i.imgur.com/ojL2BAU.png)
 
-4. This flow can end with **Ticket closed** and **Error** connected to a [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) node. 
+4. This flow can end with **Ticket closed** and **Error** connected to a [Message](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) node. 

@@ -27,6 +27,13 @@ The following table outlines various roles along with the associated access priv
 |Engagement (Admin) | This user can manage campaign deployment and audience configuration for effective engagement strategies.|
 |Engagement (User) | This user can only schedule and view campaigns.|
 
+:::note
+
+The super admin and subscription owner can be different users. In that case, Only the subscription owner has permission to create bots. 
+
+:::
+
+
 
 ## Share bot access
 
@@ -55,6 +62,7 @@ To share bot access with other users, follow these steps:
 
 
 ***
+
 ## Accept bot invites
 
 When bot admins provide you with access to a bot, you can accept the invitation as outlined below. Note that bot invites are specific to each environment; if you are given access to a Live or Production bot, you will not be able to access Staging bots.If you need access to other environments of the bot, your admin must provide access separately for each one.

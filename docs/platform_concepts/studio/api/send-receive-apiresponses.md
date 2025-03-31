@@ -155,7 +155,7 @@ return new Promise(resolve => {
   * **Select variable**: Create/choose the variable in which you want to store the parsed response.
   * **Add function**: Choose the function created in step 2.
 
-5. Include a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) and pass the variable created in step 4 to display the info to the end user.
+5. Include a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) and pass the variable created in step 4 to display the info to the end user.
 
    ![](https://i.imgur.com/nFxjCfO.png)
    
@@ -242,7 +242,7 @@ resolve(output);
 
     <img src="https://i.imgur.com/4PTK4Q9.png" alt="drawing" width="90%"/>
 
-4. Include a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) and pass the variable in which you stored the function's reponse with the syntax that displays the required data to the customer.
+4. Include a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) and pass the variable in which you stored the function's reponse with the syntax that displays the required data to the customer.
 
     <img src="https://i.imgur.com/Wf4cnkD.png" alt="drawing" width="100%"/>
 

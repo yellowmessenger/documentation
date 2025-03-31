@@ -30,7 +30,7 @@ The following table consists of various data types for variables, along with the
 #### Limitations
 
 * You can create variables only from [Prompt](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and [Action](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes) nodes.
-* If the data type is an array or object, you need to use the [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to display the data. 
+* If the data type is an array or object, you need to use the [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) to display the data. 
 
 **Example: Configuration for using variables in a AI-agent**
 
@@ -304,7 +304,7 @@ To retrieve data stored in a specific variable, fetch the variable in a node and
 
 To retrieve and display data from variables, follow these steps:
 
-1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) to your AI-agent's flow where you want to retrieve and display the data.
+1. Add a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) to your AI-agent's flow where you want to retrieve and display the data.
 
 2. Enter the syntax in the respective message node to retrieve the data.
 

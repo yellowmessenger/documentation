@@ -124,7 +124,7 @@ Let's say that you want to fetch a ticket's information in **Requests** using th
 
    <img src="https://i.imgur.com/LSXhi0V.png" alt="drawing" width="70%"/>
 
-3. Use a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) and pass this variable in it to display this response to the end user.
+3. Use a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) and pass this variable in it to display this response to the end user.
 
    <img src="https://i.imgur.com/6AaqPMh.png" alt="drawing" width="60%"/>
 

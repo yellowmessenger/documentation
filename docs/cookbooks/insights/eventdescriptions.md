@@ -559,6 +559,18 @@ These KPIs are tracked for data generated in the Analyse module (**Analyse > Top
 | Conversation End Time   | Time at which the conversation ended                                                                                                          |
 | Timestamp               | The date and time when the report was generated and added to data explorer |
 
+:::note
+
+Use Conversation Start Time & Conversation End Time  as the primary reference for when the conversation occurred, as the analysis report is generated after the session ends and may not be on the same day.
+
+:::
+
+
+
+
+
+
+
 
 -----------
 

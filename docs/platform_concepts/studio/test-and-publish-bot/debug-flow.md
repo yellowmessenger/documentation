@@ -16,7 +16,7 @@ If you notice that certain nodes aren't being executed, consider the following s
 
 ### Test with a text node
 
-Insert a[ Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1) containing a test message into the flow both BEFORE and AFTER the node that's not executing.
+Insert a[ Text node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) containing a test message into the flow both BEFORE and AFTER the node that's not executing.
 
 For instance, you can print the user's input email right after the email node to verify its functionality.
 

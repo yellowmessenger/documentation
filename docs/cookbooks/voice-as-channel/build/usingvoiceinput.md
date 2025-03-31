@@ -106,7 +106,7 @@ Following are the steps to collect a **user's phone number** using the voice inp
 |**Bot Speaks**|The bot's reply that will be vocalized to the end-user during a call. |
 |**Repeat message**|The bot's reply that will be vocalized upon the user's request for the bot to reiterate the question or prompt. |
 
-You can add multiple messages to all of the above mentioned options by [adding random messages ](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1). You can also play the message (SSML) to hear the bot response.
+You can add multiple messages to all of the above mentioned options by [adding random messages ](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes). You can also play the message (SSML) to hear the bot response.
 
 ![](https://i.imgur.com/JBdcjmR.png)
 
