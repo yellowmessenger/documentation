@@ -78,7 +78,7 @@ Report | Description
 | Feedback limit exceeded  | Instances where feedback limits were exceeded | | | | | | |
 | API request Rate | Rate of API requests made | API Events | API Name | Sum of count  | Day | Bar | |
 | API response rate | Rate of API responses | | | | | | | 
-| Step wise interactions    | Number of interactions within each journey step| User Engagement Events  | Journey | Count | Step | | |
+| Step wise interactions    |The stepwise journey shows the number of interactions within each journey step and drop-off rate in a flow. To check for a drop-off step, the user can select the journey from the dropdown.| User Engagement Events  | Journey | Count | Step | | |
 
 ----
 

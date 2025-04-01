@@ -13,6 +13,15 @@ A session can be a user session (when there’s user interaction with the bot) o
 
 
 <details>
+<summary> What is the timestamp format displayed in reports and dashboards? </summary>
+<div>
+
+The timestamp is displayed in milliseconds.
+    
+</div>
+</details>
+
+<details>
 <summary> What are the formats in which a report can be downloaded? </summary>
 <div>
 
@@ -196,6 +205,16 @@ Only the columns which are searchable will be available to be filtered. Columns 
 </details>
 
 <details>
+<summary> What is the difference between Data Explorer > Notification Report and DataOps Notification Report? </summary>
+<div>
+
+In Data Explorer > Notification Report, only entries where the source is WhatsApp or SMS are shown. However, in DataOps Notification Report, an additional source, YellowMessenger, is also included for the same data source.
+
+</div>
+</details>
+
+
+<details>
 <summary>Impact of Non-Searchable Columns in Custom Tables</summary>
 <div>
 <p>When columns are not marked as searchable during custom table creation, several limitations arise:</p>
@@ -213,3 +232,13 @@ Only the columns which are searchable will be available to be filtered. Columns 
 </details>
 
 
+
+<details>
+ <summary>Why do the assigned and resolved ticket counts in DE and Inbox Analytics sometimes differ?
+</summary>
+ <div>
+  <div> 
+The chat tickets table updates each row in place, meaning that when a ticket moves from the Assigned state to the Resolved state, the same entry is updated with the new status. This decreases the count of Assigned tickets by 1 and increases the count of Resolved tickets by 1. To match the assigned ticket count in DE with the widget in Inbox Analytics, apply the Assignment_Time filter in the chat tickets table to the same time range as the widget in Inbox Analytics. This ensures a 1:1 match in ticket counts.</div>
+  <br/>
+   </div>
+</details>
