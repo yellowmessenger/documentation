@@ -66,7 +66,7 @@ const Footer = () => {
         <div className={styles.logo_container}>
           <a href="https://yellow.ai/" target="_blank"><img src="img/yai-light-mode.svg" alt="logo" /></a>
           <p className={styles.description}>
-            Autonomous customer & employee experience with human-like interactions.
+          AI-first customer service automation crafted for enterprises.
           </p>
         </div>
         <div className={styles.list_container}>
@@ -115,7 +115,7 @@ const Footer = () => {
           <a href="https://www.facebook.com/YellowDotAI/" target="_blank">
             <i className="ri-facebook-fill" />
           </a>
-          <a href="https://twitter.com/yellowdotai" target="_blank">
+          <a href="https://x.com/yellowdotai" target="_blank">
             <i className="ri-twitter-fill" />
           </a>
           <a href="https://www.linkedin.com/company/yellowdotai/" target="_blank">

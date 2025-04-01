@@ -53,7 +53,7 @@ module.exports = {
       logo: {
         alt: "yellow.ai",
         src: "img/Yai-logo-yellow.svg",
-        href: "https://x.com/yellowdotai",
+        href: "/",
         target: "_self",
       },
       items: [
