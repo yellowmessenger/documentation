@@ -22,6 +22,23 @@ Introducing VoiceX, our next-generation Voice AI platform, designed to deliver u
  
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/VoiceX/VoiceXIntro).
 
+## Zendesk offline ticketing
+
+We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure continuous support, even when live agents are unavailable. This feature allows users to raise support requests, which are automatically converted into Zendesk tickets. Agents can access these tickets once they are available and respond to users via email.
+
+> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-offline-ticketing).
+
+## Generic OAuth Integration
+
+We have introduced Generic OAuth Integration in the Yellow.ai platform. This integration enables secure authentication by connecting Yellow.ai with multiple OAuth providers such as Google, Microsoft, Amazon, Apple, and more. By utilizing industry-standard OAuth protocols, Yellow.ai generates OAuth URLs that redirect users to their chosen provider’s login page for authentication.
+
+> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/generic-oauth).
+
+## Salesforce messaging
+
+We have introduced Salesforce Messaging Integration in the Yellow.ai platform to enable live agent support for real-time query resolution. This integration allows users to connect with agents directly within the chatbot interface to ensure personalized customer support. 
+
+> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforce-messaging).
 
 ## 📊 Analyze Enhancements 
 
