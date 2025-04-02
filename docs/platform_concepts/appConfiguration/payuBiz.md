@@ -160,7 +160,7 @@ app.executeIntegrationAction({
 })
 ```
 
-### 2.1 Generate UPI intent
+### 2.2 Generate UPI intent
 
 
 1. From the PayU Business node, select *Create UPI intent*.
@@ -249,7 +249,38 @@ app.executeIntegrationAction({
 })
 ```
 
+### 2.3 Generate WhatsApp pay
 
+PayU business integration allows your bot to accept payments from users via WhatsApp Pay
+
+To configure WhatsApp Pay in the PayU business node, follow these steps:
+
+1. From the PayU business node, select WhatsApp pay.
+
+      ![](https://cdn.yellowmessenger.com/assets/yellow-docs/WAnode-pay.png)
+
+2. Provide the necessary inputs by selecting the relevant input for each parameter. Below is a table with sample values, data types, and descriptions for each field:
+
+Field name	| Sample value | Data type | Description
+-----------|-----------|---------|------------
+Customer email |  rio@gmail.com | String | Email address of the customer. | 
+Cutsomer name | Rio | String | Name of the customer. |
+Fail URL | `https://example.com/payment-failed` | String  | URL to redirect to if payment fails.. | 
+From |  +91 98800XXXXX | String  | Enter the WhatsApp number that is connected to the bot. |
+Card description | Mobile charger | String | Deatil of the product |
+Order details | <pre lang="json"> {<br/> "subTotal": 10,<br/> "tax": "variables.Tax_number",<br/> "items": [<br/> {<br/> "amount": 5,<br/> "itemName": "Electric",<br/> "quantity": 1,<br/> "retailerId": "Ath123"<br/> }<br/> ],<br/> "expiration": {<br/> "expirationMessage": "Product link is expired ",<br/> "minutes": 20<br/> }<br/> } </pre> |  Object | Contains complete order details. | 
+Product info | Wireless charger | String |  Information about the product.
+Success URL | `https://example.com/payment-success` | String | URL to redirect after a successful payment.
+Total amount | 1000 | Number | Total payment amount
+Transaction ID | TXN987654321 | String | Unique identifier for the transaction.
+Type of Product | Digital goods<br/>Physical goods | String | Specifies whether the product is digital or physical. | 
+Image URL | `https://example.com/product-image.jpg` | String  | URL of the product image.
+UDF1(User defined fileds), UDF2, ......, UDF5 | Custom metadata | String | User-defined fields for passing metadata.
+Vpa name | rio@upi | String | Virtual Payment Address (VPA) name.
+
+Preview the WhatsApp bot to verify the WhatsApp payment link:
+
+  ![](https://cdn.yellowmessenger.com/assets/WApay.png)
 
 
 

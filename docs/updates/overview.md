@@ -15,56 +15,77 @@ Here’s how your release notes can be structured in a professional, concise, an
 
 ## VoiceX: The Future of Human-Like Voice AI
 
-Introducing VoiceX, our next-generation Voice AI platform, designed to deliver unparalleled, real-time customer conversations.
-* **Human-Like Interaction**: Powered by SmoothTalk AI and Sentiment AI, VoiceX eliminates robotic interactions, awkward pauses, and delays, creating fluid, natural dialogues.
-* **Advanced Query Handling and Sentiment Analysis**: VoiceX adeptly handles complex queries, discerns customer sentiment, and delivers precise responses with ultra-low latency.
-* **Industry Applications**: Ideal for industries demanding sophisticated customer interaction, including BFSI, healthcare, utilities, and retail.
+We’re introducing VoiceX, our next-generation Voice AI platform, built to enable seamless, real-time customer conversations.
+
+* **Human-Like Interaction**: Powered by SmoothTalk AI and Sentiment AI, VoiceX eliminates robotic interactions, awkward pauses, and delays for a more fluid, human-like  dialogues.
+* **Advanced Query Handling and Sentiment Analysis**: With ultra-low latency, VoiceX understands complex queries, detects sentiment, and delivers precise responses.
+* **Industry Applications**: Ideal for **BFSI**, **healthcare**, **utilities**, and **retail** that demands intelligant, high-quality customer interactions.
  
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/VoiceX/VoiceXIntro).
 
-## Zendesk offline ticketing
+## Zendesk Offline Ticketing Now Available for Uninterrupted Customer Support
 
-We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure continuous support, even when live agents are unavailable. This feature allows users to raise support requests, which are automatically converted into Zendesk tickets. Agents can access these tickets once they are available and respond to users via email.
+We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure uninterrupted support, even when live agents are unavailable. This addition enables:
+
+- **Seamless Ticket Creation** – Users can submit support requests, which are automatically converted into Zendesk tickets.  
+- **Effortless Agent Access** – Agents can view and manage these tickets once available, ensuring timely follow-ups.  
+- **Email-Based Responses** – Users receive updates and resolutions directly via email, enhancing the support experience. 
 
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-offline-ticketing).
 
-## Generic OAuth Integration
+## Introducing Generic OAuth Integration
 
-We have introduced Generic OAuth Integration in the Yellow.ai platform. This integration enables secure authentication by connecting Yellow.ai with multiple OAuth providers such as Google, Microsoft, Amazon, Apple, and more. By utilizing industry-standard OAuth protocols, Yellow.ai generates OAuth URLs that redirect users to their chosen provider’s login page for authentication.
+We’ve added **Generic OAuth Integration** to the Yellow.ai platform to enable secure authentication with multiple providers, including Google, Microsoft, Amazon, and Apple.  
+
+- **Seamless Connectivity** – Easily connect Yellow.ai with various OAuth providers.  
+- **Industry-Standard Security** – Utilizes OAuth protocols to ensure secure authentication.  
+- **Simplified User Login** – Generates OAuth URLs that redirect users to their chosen provider’s login page.  
+
 
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/generic-oauth).
 
-## Salesforce messaging
+## Salesforce Messaging Integration
 
-We have introduced Salesforce Messaging Integration in the Yellow.ai platform to enable live agent support for real-time query resolution. This integration allows users to connect with agents directly within the chatbot interface to ensure personalized customer support. 
+We have introduced Salesforce Messaging Integration in the Yellow.ai platform to enable live agent support for real-time query resolution. 
+
+* **Instant Agent Handoff** – Connect users directly with live agents within the chatbot interface.
+* **Personalized Support** – Ensure tailored interactions for enhanced customer experience.
+* **Seamless Integration** – Unified communication between AI and human agents for smooth issue resolution.
+
 
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforce-messaging).
 
 ## 📊 Analyze Enhancements 
 
-## CRA Table Updates: Deeper Resolution and Sentiment Analysis
+## CRA Table Updates for Deeper Resolution and Sentiment Analysis
 
-We’ve added two new columns to the CRA table, now accessible within **Data Explorer > Contained Resolution Analysis**. These columns, powered by our advanced LLM module, provide:
-* **Resolution Status Reasoning**: Gain detailed insights into the rationale behind resolution outcomes.
-* **User Sentiment Reasoning**: Understand the nuances of user sentiment with clear, contextual explanations.
-These additions empower you with a more comprehensive understanding of your data, enabling more informed decision-making and improved customer interactions.
+
+We’ve introduced two new columns in the **CRA Table**, now available under **Data Explorer > Contained Resolution Analysis**. These enhancements offer a more comprehensive view of customer interactions, enabling better decision-making and improved support strategies.  
+
+Powered by our advanced LLM module, these additions provide:  
+
+- **Resolution Status Reasoning** – Gain detailed insights into the rationale behind resolution outcomes.  
+- **User Sentiment Reasoning** – Understand user sentiment with clear, contextual explanations.  
+
 
 > Learn more [here]( https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#contained-resolution-analysis
 ). 
 
 
-### Topics: Streamlined Conversation Analysis
+### Introduced Conversation Analysis in Topics
 
-* Accessing and analyzing conversation details has never been easier. We’ve consolidated key information into a single, intuitive interface: Click **View Conversations** to access a comprehensive list of all conversations within a specific topic.
-* Utilize advanced filters and search functionality to quickly locate relevant conversations.
-* Review detailed Conversation Logs and AI Insights, including:
-    * Unique ID (UID)
-    * User query and handling status (agent/bot)
-    * Resolution status and reasoning
-    * User sentiment and reasoning
-    * Debug logs
 
-Collaborate effectively with team members by adding and replying to comments directly within the conversation log.
+We’ve simplified how you access and analyze conversation details by consolidating key insights into a single, intuitive interface.  
+
+You can now see a comprehensive list of all conversations of a topic using **View Conversations** and use advanced filters and Search option to easily find relevant interactions.  
+
+You can also access detailed **Conversation Logs** and **AI Insights** which provide the following details. 
+  - **Unique ID (UID)** for easy tracking  
+  - **User query handling status** (agent/bot)  
+  - **Resolution status and reasoning**  
+  - **User sentiment and reasoning**  
+  - **Debug logs** for troubleshooting  
+
 
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/analyze/topics#conversation-share-1).
 
@@ -72,44 +93,45 @@ Collaborate effectively with team members by adding and replying to comments dir
 
 ### Add Comments to Conversation Logs
 
-We’ve introduced a **Comments** feature within conversation logs which enables seamless collaboration across teams. enhances workflow management, making collaboration within conversation logs more efficient. With this release, your teams can now create, manage, and resolve tasks.  
+We’ve introduced a **Comments** feature within conversation logs to enhance team collaboration and streamline workflow management. With this update, teams can create, manage, and resolve tasks by adding and replying to comments directly within the conversation log.
+ 
 
 ✅ **For Customer Teams:**  
-- Add comments to specific messages to highlight concerns or issues.  
-- Filter and view open or resolved comments for improved tracking.  
-- Reply to comments to collaborate effectively with other teams.  
+- Add comments to specific messages to highlight concerns or issues.
+- Filter and track open or resolved comments.
+- Collaborate with other teams by replying to comments.
+
 
 ✅ **For Delivery/Support Teams:**  
-- View all open and resolved comments in conversation logs.  
-- Filter comments by status to prioritize tasks.  
-- Reply to comments and mark them as resolved to streamline workflows.  
+- View and manage open or resolved comments.
+- Filter comments by status to prioritize tasks.
+- Respond and mark comments as resolved for efficient workflows.
 
 ✅ **For Bot Developers:**  
-- Review comments from customer teams to address specific issues.  
-- Provide updates or clarifications by replying to comments.  
-- Mark comments as resolved once the issue is addressed.  
+- Review comments to address specific issues.
+- Provide updates or clarifications through replies.
+- Mark comments as resolved once addressed.
 
 **[Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#comments-on-conversation-logs)**
 
 ### Auto-Flagged Chats for Better Tracking
 
-Chats are now auto-flagged when comments are present, making it easier to filter and track conversations that require attention.
+Chats with comments are now auto-flagged, allowing teams to easily filter and track conversations that require attention. This ensures quicker follow-ups and more efficient collaboration.
 
 
 
 ### AI-Generated Article Suggestions for Next-Level Knowledge Management
 
-We’ve introduced **AI-generated article suggestions** to streamline knowledge management and enhance automation. This feature helps AI Agent maintain an up-to-date and accurate knowledge base, reducing agent workload and improving response efficiency.
 
-The AI analyzes customer interactions, identifies recurring topics, and generates article suggestions tailored to these topics.
+We’ve introduced **AI-generated article suggestions** to help maintain an up-to-date knowledge base while reducing manual effort. This feature enables the AI Agent to analyze customer interactions, identify recurring topics, and recommend relevant articles—enhancing automation and improving response efficiency.  
 
-#### Key Enhancements:  
-- **Topic-Centric Organization**: The generated article is aligned with the identified topic, ensuring clarity and relevance.  
-- **Prominent Topic Display**: The topic name is clearly displayed at the top for easy reference.  
-- **Seamless Knowledge Base Updates**: Suggested articles can be reviewed, refined, and published directly within the system, reducing manual effort.  
+#### **Key Enhancements:**  
+✅ **Topic-Centric Organization** – Articles are aligned with identified topics for clarity and accuracy.  
+✅ **Prominent Topic Display** – Each suggestion clearly displays the associated topic for easy reference.  
+✅ **Seamless Knowledge Base Updates** – Suggested articles can be reviewed, refined, and published directly, streamlining knowledge management.  
 
 
-Know more about **[AI Generated Articles](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion#1-ai-generated-article-for-the-selected-topic)**
+Learn more about **[AI Generated Articles](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion#1-ai-generated-article-for-the-selected-topic)**
 
 
 
