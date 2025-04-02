@@ -134,3 +134,9 @@ To enable Google play store event, follow these steps:
 
 2. **Send response to user reviews**: The bot or a live agent can respond to user reviews directly from the platform. When a user submits a review, the bot can send an automated response, or if the rating is low, escalate it to a human agent for personalized engagement. However, each review can receive only one response, with a maximum length of 250 characters. 
 
+Refer to the following video to see how the Google play store integration works:
+
+<video width="600" controls>
+  <source src="/files/YM-playstore-integration-demo.mp4" type="video/mp4"/>
+  Your browser does not support the video tag.
+</video>
