@@ -434,6 +434,12 @@ If your WhatsApp chat is stuck in a loop and intents or entities are not working
 </p>
 </details>
 
+<details><summary><b>Can I connect two different phone numbers from separate WABA IDs in my bot?</b></summary>
+<p>
+ No, you cannot connect two different phone numbers from separate WABA IDs. To integrate both numbers into the bot, they must be registered under the same WABA ID.
+</p>
+</details>
+
 
 
 
