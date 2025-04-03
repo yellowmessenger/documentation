@@ -1084,6 +1084,7 @@ module.exports = {
           collapsed: true,
           items: [
              // third party hand off 
+            "platform_concepts/analyze/indepthinsights",
             "platform_concepts/analyze/articlesuggestion",
             "platform_concepts/analyze/handoffnode",
 

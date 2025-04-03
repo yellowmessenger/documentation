@@ -1,6 +1,6 @@
 ---
 title: AI Knowledgebase Suggestions  
-sidebar_label: Knowledgebase Suggestions  
+sidebar_label: Knowledgebase suggestions  
 ---
 
 ## Overview

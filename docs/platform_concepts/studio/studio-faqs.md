@@ -921,6 +921,14 @@ Refer to the following gif to see how to consolidate two variables into one:<br/
 </details>
 
 
+<details>
+<summary> What utterances are included in the Studio > Analysis > Message View report, and why might the number of fetched utterances be lower than expected? </summary>
+<div>
+
+ This report includes both identified and unidentified utterances when the confidence level is set between 0 and 1. To fetch only unidentified utterances, set the confidence level below the minimum confidence configured in the bot’s NLU settings. The number of fetched utterances may be lower than expected because the report only lists utterances the bot has not seen before, excluding duplicates.
+    
+</div>
+</details>
 
 
 

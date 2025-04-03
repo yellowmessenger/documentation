@@ -74,7 +74,7 @@ For a single export, the maximum time range is one year. If more than one year's
 
 
 
-
+> Reports are generated in bot timezone. 
 
 
 
@@ -117,7 +117,8 @@ There is no restriction on the number of rules that can be added.
     - You can see **Export date** (frequency), **Status of export** (scheduled, ongoing, and failure/success), and **Size of data** exported. 
 
 :::note
-Data export failures are usually unrelated to the Yellow.AI platform and can occur due to various reasons.
+- Data export failures are usually unrelated to the Yellow.AI platform and can occur due to various reasons.
+- Email alerts for Data Ops failures are sent only to the person who created the data job task.
 :::
 
 
@@ -285,4 +286,16 @@ For example, call recordings have a daily frequency with a step-up value of 1, m
 `x1659350250725/audit_logs/hbdrj5v4-kdbkib95-kr8ciumj_2024-02-01T00:00_2024-06-01T00:00/2024-02-01T00:00:00+04:00_2024-03-01T00:00:00+04:00.json`
 
 `x1659350250725/audit_logs/hbdrj5v4-kdbkib95-kr8ciumj_2024-02-01T00:00_2024-06-01T00:00/2024-03-01T00:00:00+04:00_2024-04-01T00:00:00+04:00.json`
-    
+
+
+:::note
+When exporting data as CSV, only the top-level keys are included as columns. A fully flattened structure is not currently supported. This issue occurs in specific DataOps exports, not all. 
+**Work-around**: Some exports may return JSON even when CSV is selected. You can try exporting JSON data from DataOps and use an external tool to convert it to CSV if needed.
+:::
+
+
+
+
+
+
+
