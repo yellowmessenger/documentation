@@ -19,7 +19,7 @@ To access topics page:
 2. Open **Analyse > Conversation logs**. 
 3. Navigate to **Topics**. 
 
-![image](https://hackmd.io/_uploads/ry2mxPnTJe.png)
+![image](https://imgur.com/s8x7kVX.png)
 
 -----
 
@@ -28,7 +28,7 @@ To access topics page:
 ### Article suggestion 
 
 Based on the conversations AI has processed, articles are suggested for each topic with Article suggestion icon highlighted. These suggestions can serve as new additions to the existing knowledge base or as training materials.      
-![image](https://hackmd.io/_uploads/BJz8gDhTyg.png)
+![image](https://imgur.com/kkMIb5u.png)
 
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion).
 
@@ -49,7 +49,7 @@ This metric shows the proportion of conversations involving a particular topic c
 It helps prioritize topics based on their frequency.
 
 For example, in the below screenshot, Out of 809 conversations taken place in this AI-agent, 29 belong to this topic. 
-   <img src="https://hackmd.io/_uploads/HJ6NbPn6kl.png"  width="60%"/>  
+   <img src="https://imgur.com/8q2opTF.png"  width="60%"/>  
 
 
 ### AI resolution rate
@@ -85,18 +85,18 @@ For example, in the below screenshot, out of 1045 conversations in this topic, 5
 
 You can **search** for a specific topic using the global search feature.                    
 
-![image](https://hackmd.io/_uploads/S148Mw3TJl.png)
+![image](https://imgur.com/JnHpnY3.png)
 
 To filter data and view a particular topic, click **Filter**.                       
 
-![image](https://hackmd.io/_uploads/B1VdMw2Tyg.png)
+![image](https://imgur.com/aTkhYYw.png)
 
 The following filters are available:  
 
 | Feature               | Description | UI | 
 |-----------------------|-------------|---|
 | **Article Suggested** | Select either "Yes" or "No." |<img src="https://imgur.com/tYy0peE.png" alt="drawing" width="100%"/> |
-| **Timestamp**        | Filter data for specific dates or a custom time range. | ![image](https://hackmd.io/_uploads/S1DzXv3pyl.png)|
+| **Timestamp**        | Filter data for specific dates or a custom time range. | ![image](https://imgur.com/hK9jFDf.png)|
 | **Topics**           | Filter by the text or subtext of the topics. | <img src="https://imgur.com/Z50mSDn.png" alt="drawing" width="100%"/> |
 
                              
