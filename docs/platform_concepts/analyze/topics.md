@@ -5,7 +5,7 @@ sidebar_label: Topics
 
 :::note
 
-Topics is a gated feature that requires approval from the platform team for activation. Contact [yellow.ai's support team]((mailto:support@yellow.ai) for more details. 
+Topics is a gated feature that requires approval from the platform team for activation. Contact [yellow.ai's support team](mailto:support@yellow.ai) for more details. 
 
 :::
 

@@ -100,13 +100,13 @@ Utilize AI-powered agents capable of conversing in over 135 global and regional 
 ### 24*7 Yellow.ai support
 
 Support is exclusively provided for upgraded AI-agents.      
-For assistance, send your queries to [support@yellow.ai](mailto:support@yellow.ai), and our dedicated executive will promptly address and resolve them.
+For assistance, send your queries to [yellow.ai support team](mailto:support@yellow.ai) , and our dedicated executive will promptly address and resolve them.
 Our professional services help you minimize risks, ensure proper deployment from the outset, and save on additional resources and costs by getting it right the first time. Our team of experts supports you through every step, from initial setup to ongoing enhancements. Leverage our deep industry insights and best practices to achieve seamless implementation and maximize ROI.
 
 
 ### Set-up on cloud and on-premise 
 
-Yellow.ai supports **Cloud** and **On-premise** deployment. Contact [support@yellow.ai](mailto:support@yellow.ai) for details.
+Yellow.ai supports **Cloud** and **On-premise** deployment. Contact [Yellow.ai support team](mailto:support@yellow.ai) for details.
 
 
 ### Enterprise-grade security with safe AI
