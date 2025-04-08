@@ -422,9 +422,9 @@ Following are the events tracked on the user engagement events table:
 | step-expected           | Fired when a step of the journey is expected / prompt is shown to the user                                          |
 | step-recorded           | Fired when input is given by the user for a step (step value is recorded) of a journey                               |
 | unidentified-utterance  | Fired when a user message is not understood by the Bot                                                             |
-| user-initiated          | Fired when a new session is created from a user message for the WhatsApp channel                                    |
+| user-initiated          | Fired when a new session is created from a user message for the WhatsApp channel (this is only when user messages the business through WhatsApp channel) |
 | user-revisited          | Fired when the chat widget loads for the user's IP address on subsequent visits. This event is specific to bots hosted on websites. |
-| user-session            | Fired when a session is created based on a USER message                                                             |
+| user-session            | Fired when a session is created based on a USER message.  Value gets incremented only when user sends the first message.|
 | user-visited            | Fired when the chat widget loads for the user's IP address for the first time. This event is triggered once for the lifetime of the user's unique ID. It is specific to bots hosted on websites |
 
 **Other events**:
