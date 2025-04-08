@@ -49,6 +49,13 @@ Each bot has only one inbox, the bot can have multiple Whatsapp numbers activate
 </div>
 </details>
     
+<details>
+  <summary>Is it necessary to publish after setting new working hours?</summary>
+  <div>
+    No, it is not necessary to publish after setting new working hours. You can simply save the changes, as these settings are related to the inbox and not specific to bot building.
+  </div>
+</details>
+
     
 <details>
 <summary> Why is the agent's language not getting translated automatically to the customer's language even when the agent is replying in English?
