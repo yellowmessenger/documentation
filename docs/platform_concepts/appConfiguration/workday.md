@@ -7,33 +7,9 @@ Workday is a leading Human Capital and Financial Operations managing platform th
 
 This guide helps you integrate Workday with the Yellow.ai platform to automate data exchange, improve operational efficiency, and support business decision-making. Whether you're looking to sync employee information, trigger workflows based on Workday events, or use Workday data to personalize interactions, this guide will walk you through setup and best practices.
 
-This integration enables you to perform the following actins from the Yellow.ai bot:
 
 
 
-| **Action**                         | **Description** |
-|-----------------------------------|-----------------|
-| **Fetch employee information** | Retrieve employee details like job title, department, manager, ID, and contact info. |
-| **Fetch employee time-Off plan details** | Get the time-off plans assigned to an employee. |
-| **Get employee time-Off types for a plan** | View applicable time-off types for a specific plan. |
-| **Apply time-Off** | Submit a time-off request for a worker. |
-| **View employee benefits** | Fetch benefit details assigned to a worker. |
-| **Change employee preferred name** | Update the preferred name with options to use legal name. |
-| **Update marital status** | Modify the marital status of a worker. |
-| **Update home contact information** | Update home address or phone number. |
-| **View personal information** | Access details like gender, DOB, marital status (ACL applied). |
-| **View personal contact** | Retrieve personal contact information like phone number, address. |
-| **View work contact** | Get the work phone numbers for a worker. |
-| **View PTO balance** | View current time-off balances across all leave types. |
-| **View compensation** | Fetch compensation information of a worker. |
-| **Request time-Off** | Alternate flow for submitting time-off requests with attachments. |
-| **Update personal information** | Modify home address, email, marital status, and phone. |
-| **Update personal contact** | Update personal phone contact details. |
-| **Update work contact** | Change work phone or contact details. |
-| **Add emergency contact** | Add or update emergency contact info (name, phone, email, address). |
-| **Request employment verification** | Generate employment verification letter per company templates. |
-| **Request paystub for specific period** | Fetch paystub for a defined time range (or latest by default). |
-| **Request tax details for specific year** | Get tax forms like W2 for a selected year (or latest). |
 
 
 
@@ -164,26 +140,4 @@ Empower employees to change their home address, phone number, or other contact d
 
 - **Contact Type** (`:string`): The type of home contact information to update. Values could include `Phone`, `Email`, or `Address`.  
 
-
-### Other supported actions
-
-Here are other actions supported with the Workday integration:
-
-| **Action**                          | **Description** |
-|------------------------------------|-----------------|
-| **View Personal Information**      | Retrieve personal details such as marital status, gender, date of birth, and ethnicity. Role-based access controls what information is visible. |
-| **View Personal Contact**          | Fetch home address, personal email, and phone number of a worker. |
-| **View Work Contact**              | Get professional contact details like work phone number and email. |
-| **View PTO Balance**               | View current leave balances across all eligible time-off types. |
-| **View Compensation**              | Retrieve salary, bonuses, and other compensation details for a worker. |
-| **View Benefit**                   | Fetch benefits assigned to a worker such as insurance or retirement plans. |
-| **Request Time Off**               | Submit a leave request by specifying type, duration, dates, and optional attachments. |
-| **Update Personal Information**    | Update address, email, marital status, or phone number. |
-| **Update Personal Contact**        | Edit personal phone number for a worker. |
-| **Update Preferred Name**          | Set or change a preferred name; optionally use the legal name. |
-| **Update Work Contact**            | Modify work contact details like office phone number or email. |
-| **Add Emergency Contact**          | Add or update emergency contact details including name, phone, email, and address. |
-| **Request Employment Verification**| Auto-generate an employment verification letter using a pre-defined or custom template. |
-| **Request Paystub for Specific Period** | Fetch a paystub for a specific date range or the most recent one. |
-| **Request Tax Details for Specific Year** | Retrieve W-2 or other tax documents for a specific year or the latest available year. |
 
