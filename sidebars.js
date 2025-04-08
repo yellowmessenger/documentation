@@ -1424,6 +1424,7 @@ module.exports = {
             "platform_concepts/appConfiguration/bamboohr",
             "platform_concepts/appConfiguration/freshteam",
             "platform_concepts/appConfiguration/successfactors",
+            "platform_concepts/appConfiguration/workday",
           ],
         },  
         
@@ -1735,7 +1736,14 @@ module.exports = {
 
     //Do not add/ remove this file
     "updates/overview",
-
+    {
+      type: "category",
+      label: "2025 updates",
+      collapsed: true,
+      items: [
+        "updates/2024/q12025",
+      ]
+    },  
     {
       type: "category",
       label: "2024 updates",
