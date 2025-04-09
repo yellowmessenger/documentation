@@ -20,7 +20,7 @@ OrchLLM acts as the governing system for deciding which tools to use for each us
 * Eliminates the need for extensive bot training—just feed simple descriptions
 * Enables more human-like, focused small talk
 
-![image](https://hackmd.io/_uploads/HkiHLT1TR.png)
+![image](https://imgur.com/U7JVBj5.png)
 
 ----------
 
@@ -36,9 +36,9 @@ When adding trigger descriptions, keep the following in mind:
 
 **Examples of good and bad triggers**:
 
-![image](https://hackmd.io/_uploads/rkXJVJ-pA.png)
+![image](https://imgur.com/tOBCU3J.png)
 
-![image](https://hackmd.io/_uploads/rJrC7J-pC.png)
+![image](https://imgur.com/cl8Tjqw.png)
 
 
 ---------

@@ -5,7 +5,7 @@ sidebar_label: Chat metrics
 
 With the advent of generative AI bots, it has become increasingly crucial to monitor their performance and their impact on user decisions and business objectives. The **Analyze** section provides a comprehensive view of various metrics related to user interactions within **Chat metrics** (pertaining to a conversation when the **Dynamic chat nodes** are used).
 
-![](https://hackmd.io/_uploads/SkYuXisZ6.png)
+![](https://imgur.com/GXt64Mu.png)
 
 :::info
 These metrics can be filtered for a particular time-range by clicking the data dropdown on the top right. 

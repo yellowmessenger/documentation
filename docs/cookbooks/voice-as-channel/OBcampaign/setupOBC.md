@@ -23,7 +23,7 @@ To create a voice bot campaign, follow these steps:
 
 1. Log in to your [yellow.ai](https://cloud.yellow.ai/) account. Open **Engage** > **Outbound**. 
 2. On the **Flows** tab, select **+Create workflow**.
-![](https://hackmd.io/_uploads/HknRKzRS2.png)
+![](https://imgur.com/hjCeCKR.png)
 
 ------
 
@@ -43,7 +43,7 @@ To get started, follow the steps below:
 2. **Choose your audience**: When selecting entry rules, you have the option to choose one or multiple user segments or target all users in User360.
 3. **Set campaign schedule**: For each entry rule, you can determine the frequency and specific time for running the campaign.           
 
-     <img  src="https://hackmd.io/_uploads/BJTjcGRH2.png"  width="50%"/>
+     <img  src="https://imgur.com/x3QVeJ4.png"  width="50%"/>
 
 -------
 
@@ -58,7 +58,7 @@ To get started, follow the steps below:
 To initiate a voice call, follow the steps below: 
 
 1. Connect the **Voice call node** (available under the message category) to the initial node in the workflow.
-    <img  src="https://hackmd.io/_uploads/HJcCv70Bh.png" width="90%"/>
+    <img  src="https://imgur.com/wtMZcSL.png" width="90%"/>
     
 2. Enter the details.
     - **Enable answering machine detection (AMD)** : You have the option to enable AMD, which helps determine if a voice call made by the bot is answered by a human or a machine (such as a voicemail system).
@@ -67,10 +67,10 @@ To initiate a voice call, follow the steps below:
     - **To**: Select the variable that contains the user identifier. Click [here](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow) for steps on setting up user identification.
     - **Call trigger time**: Set the business hours in the **Settings** and configure the flow to be triggered only during those designated business hours.
 
-    ![](https://hackmd.io/_uploads/SyIl0Q0S2.png)
+    ![](https://imgur.com/bkbY122.png)
 
 3. Add connecting nodes to the voice node to determine the subsequent steps based on different scenarios. You can define the next actions based on whether AMD is detected, the call is answered, the line is busy, there is no answer, or if the call fails to connect.
-    ![](https://hackmd.io/_uploads/BkiZpQCBn.png)
+    ![](https://imgur.com/Xs5ZJDE.png)
 
 
 :::note
@@ -90,17 +90,17 @@ Follow these steps to add a new goal to the flow:
     - **Event**: Select an event that you have activated in Automation. When this [event](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) is identified, it will indicate that the goal has been reached.
     - **Set goal validity**: Choose the duration for which the goal should remain valid. After the specified duration, the campaign will still be active, but the goal won't be considered.
 3. **Save** the goal.  
-    ![](https://hackmd.io/_uploads/rJwmAQ0B2.png)
+    ![](https://imgur.com/ef4rrm9.png)
 
 -----
 
 ## Step 5: Publish workflow for voice bot campaign 
 
 1. Click on **Publish** to publish the flow and make it active.
-    ![](https://hackmd.io/_uploads/HJVXeVCB3.png)
+    ![](https://imgur.com/uxNgtUQ.png)
 2. Once the campaign is published, it will automatically run for users who meet the entry rule criteria.
 3. To monitor the status of the voice bot campaign, track the users who have entered the campaign, and keep a count of the number of times the goal has been achieved, refer to the flow campaign page.
-    ![](https://hackmd.io/_uploads/rJYgl40Hn.png)
+    ![](https://imgur.com/8NXJkqU.png)
 
 
 <!-- 

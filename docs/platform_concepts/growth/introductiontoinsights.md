@@ -31,7 +31,7 @@ The Insights module in Yellow.ai consists of the following sections:
 
 Features within the Insights module can be accessed if a bot user has either of these roles, **Insights analytics and Insights admins**. 
 
-![](https://hackmd.io/_uploads/HkKy6W9E3.png)
+![](https://imgur.com/DyJzmIi.png)
 
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators#1-share-bot-access) to learn how to provide **Insights analytics and Insights admins** permission to users in Yellow.ai. 
 

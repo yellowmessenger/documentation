@@ -17,9 +17,9 @@ sidebar_label : (Additional) Voice variables in studio
 To work with [conversational details reports](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/convdata) or [call and conversational details reports](https://docs.yellow.ai/docs/cookbooks/voice-as-channel/reporting/conv_cdr), you may require access to voice variables (default and CDR). To push the necessary values into the database node and tables, you must create variables. Follow the steps below:
 
 1. Open the variables tab and add a variable by selecting *Global variable*.
-    ![](https://hackmd.io/_uploads/rJFt43sVh.png)
+    ![](https://imgur.com/upynVU2.png)
 2. Add a custom variable **name** and select the variable **data type** (usually a string). Add the **value** (you can only use the variables given in the section below) and click **Add**.
-    ![](https://hackmd.io/_uploads/S15eHno4n.png)
+    ![](https://imgur.com/4q14zza.png)
 
 > To learn more about variables, visit [this](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables) page.
 

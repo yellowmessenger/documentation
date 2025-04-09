@@ -160,7 +160,7 @@ You can share the conversation logs with your team members to review and discuss
 
 **Comments** feature within conversation logs improves the user experience by enabling teams to create, manage, and resolve tasks directly within the system. Following are the tasks that can be accomplished with Comments for different teams: 
 
-![image](https://hackmd.io/_uploads/S13Xn4xdkg.png)
+![image](https://imgur.com/ZNBsMBU.png)
 
 | Customer teams | Delivery/Support teams| Bot developers |
 | -------- | -------- | -------- |
@@ -171,26 +171,26 @@ You can share the conversation logs with your team members to review and discuss
 To use **Comments**, follow these steps: 
 
 1. Open conversation: Open a conversation by clicking the user name. This expands the conversation. 
-![image](https://hackmd.io/_uploads/BJDVFEed1e.png)
-![image](https://hackmd.io/_uploads/rJU_Y4lu1l.png)
+![image](https://imgur.com/yRGCYQo.png)
+![image](https://imgur.com/qQOeQg9.png)
 
 2. **Add comments**: Open **Comments** tab. You can see a **+** icon next each message within the conversation. Click  **+Add comments**, type a comment (200-character limit) and hit send icon. 
-![image](https://hackmd.io/_uploads/rkDKcEgOyl.png)
-![image](https://hackmd.io/_uploads/H1RfsNgOJe.png)
+![image](https://imgur.com/yV3pxuW.png)
+![image](https://imgur.com/M1aPOe1.png)
 
 4. **Reply to comments**: Engage in threaded discussions by replying to specific comments.  
-![image](https://hackmd.io/_uploads/S187u22wyx.png)
+![image](https://imgur.com/TgoxOfV.png)
 
 3. **Mark comments as resolved**: Change the status of comments to resolved when issues are addressed.              
-![image](https://hackmd.io/_uploads/rJ8IsVlu1l.png)
-![image](https://hackmd.io/_uploads/S1LTPhnw1g.png)
+![image](https://imgur.com/1R9WKYp.png)
+![image](https://imgur.com/qqHayT8.png)
 
 4. **Auto flagged comments**: Chats containing comments (both open and resolved) are automatically flagged for easy filtering.              
-![image](https://hackmd.io/_uploads/ryAMNogukg.png)
-![image](https://hackmd.io/_uploads/SkucZigOJg.png)
+![image](https://imgur.com/Ym6Uxf5.png)
+![image](https://imgur.com/8dA4bnj.png)
 
 5. **View and manage comments**: Filter and view open or resolved comments for easier tracking. Resolved comments are visually grayed out for distinction.  
-![image](https://hackmd.io/_uploads/H1Vx3Veukg.png)
+![image](https://imgur.com/tJc05wz.png)
 
 :::note
 The comment button is displayed only when users are in the **Comments** tab.  
@@ -202,7 +202,7 @@ The comment button is displayed only when users are in the **Comments** tab.
 
 KB Report in the Conversation Logs, makes debugging faster and more seamless. 
 - You can access all the details you need to debug in one place by opening the Logs tab and clicking KB report icon.           
-![image](https://hackmd.io/_uploads/rJU3dORiyx.png)
+![image](https://imgur.com/ocFzLzW.png)
 - KB report includes **Query, Previous user messages, Rephrased query, Answer, Status code, Confidence, Trace ID, Tags**, and **Site key**.                            
-![image](https://hackmd.io/_uploads/ryXuYOAo1x.png)
+![image](https://imgur.com/zjbSzwi.png)
 

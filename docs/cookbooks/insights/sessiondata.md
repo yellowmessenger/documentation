@@ -5,7 +5,7 @@ sidebar_label : Retrive session data
 
 This guide explains how to retrieve data from **Insights >  Data Explorer** within the **User Engagement Events** table.
 
-![image](https://hackmd.io/_uploads/Bkdm-kbnC.png)
+![image](https://imgur.com/URgcjmm.png)
 
 
 ---------

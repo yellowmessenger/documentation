@@ -57,18 +57,18 @@ A few examples of the flows that can be run after the ticket is closed.
 > You can add one or more flows with start trigger as `ticket-closed`. All these flows will run simultaneously. 
 
 1. **Update a database/CRM with ticket details.**
-![](https://hackmd.io/_uploads/H157Iya8n.png)
+![](https://imgur.com/g9uUpoQ.png)
 
 2. **Create a logic to filter the user data based on the type of query raised and send it to a CRM/Database.**
-![](https://hackmd.io/_uploads/ry9pDJpI2.png)
+![](https://imgur.com/73wkH2V.png)
 
 3. **Hit an API once the ticket is closed.** 
-![](https://hackmd.io/_uploads/r1QFu1pUn.png)
+![](https://imgur.com/EfdUa9t.png)
 
 4. **Send a promotional messsage.** 
-![](https://hackmd.io/_uploads/SyFft1p8h.png)
+![](https://imgur.com/hxUl23L.png)
 
 5. **Schedule a follow up interview.**
-![](https://hackmd.io/_uploads/BkAvCCn8n.png)
+![](https://imgur.com/MzKzN7U.png)
 
 

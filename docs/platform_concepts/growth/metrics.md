@@ -176,7 +176,7 @@ In the WhatsApp comsumption widget, you can select a WhatsApp phone number from 
 If no number is selected, the data will be compiled and displayed for all the numbers collectively.
 
 
-<img src="https://hackmd.io/_uploads/H1J0UVwwn.png" alt="drawing" width="50%"/> 
+<img src="https://imgur.com/J49FZ7c.png" alt="drawing" width="50%"/> 
 
 The three categories tracked for WhatsApp phone numbers are:
 

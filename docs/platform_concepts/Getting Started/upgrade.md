@@ -117,7 +117,7 @@ To set up a call for upgrading your account, follow these steps:
 
 4. On the following screen, fill in the required fields to provide the context for the call and click **Schedule Event**.
 
-    ![](https://hackmd.io/_uploads/SJ3q8U122.png)
+    ![](https://imgur.com/Dhix7cx.png)
 
 :::info
 

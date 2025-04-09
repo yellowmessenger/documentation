@@ -41,9 +41,9 @@ To store data collected from flows, you need to create a table (this is a prereq
 
 1. Go to **Automation** > **Database**.
 2. Create a **table**. Add field names and mark them as **Searchable**.
-    ![](https://hackmd.io/_uploads/HyhZ1toVh.png)
+    ![](https://imgur.com/xfdo07Y.png)
 3. The database will store all the details obtained from the calls.
-    ![](https://hackmd.io/_uploads/SkG2Bus4h.png)
+    ![](https://imgur.com/2pzBInn.png)
 
 > [Learn more](https://docs.yellow.ai/docs/platform_concepts/studio/database#-1-create-table) about creating a table in Automation.
 
@@ -57,7 +57,7 @@ To store all the collected details in a table, add **database** nodes to the flo
     * Select the type as **Insert** and add the table name.
     * Under records, add the field as **SID** (column name) and the value as **mp_sid** (the custom variable name you have created for the SID).
 
-    ![](https://hackmd.io/_uploads/B1P3_uoE3.png)
+    ![](https://imgur.com/LP2F1e5.png)
 
 :::info
 SID is a voice data variable which is available immediately after the call is initiated and can be used as a filter for subsequent database nodes.
@@ -69,7 +69,7 @@ SID is a voice data variable which is available immediately after the call is in
     * Add a **filter** `Where SID = mp_sid` to ensure that the data is added only if the SID is the same.
     * Add variables, for example, after collecting the Age, add the Age value to the table.
 
-    ![](https://hackmd.io/_uploads/BJw0qOs43.png)
+    ![](https://imgur.com/NophgOr.png)
 
 To ensure that you have the customer details even if the customer disconnects in the middle, add a database node after every prompt node to send the collected data to the table. This data can then be used to reach out to the customer or as a survey.
 

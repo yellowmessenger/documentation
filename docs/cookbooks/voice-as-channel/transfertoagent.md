@@ -13,7 +13,7 @@ In this article, you will learn how to configure your voice bot to transfer the 
 On the Yellow platform, to transfer a user's call to a human agent, the platform makes a call to the agent, who subsequently answers the call. 
 The platform then connects the end user's call to the agent, allowing the user to speak directly with the human agent.
 
-![](https://hackmd.io/_uploads/BkndT4Hrh.png)
+![](https://imgur.com/5AW5VFf.png)
 
 
 
@@ -55,17 +55,17 @@ When the voice bot repeatedly fails to understand the user's input or when the c
 1. Identify the voice input node where the agent transfer should occur. For example, if the voice input node (e.g., phone number) repeatedly triggers fallback scenarios, the bot can automatically transfer the call to a live agent.
 2. Connect the node's **fallback for failure** and **fallback for no response** to the agent transfer.
 3. Establish connection through another voice input or prompt node: If you choose the voice input node, you can simply enter a message in the **Bot asks** field, which will be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#fwd).        
-    ![](https://hackmd.io/_uploads/rkFwtnurn.png)
+    ![](https://imgur.com/PaCGx9r.png)
 
 (or)
 
 3. Use an execute flow node to connect to an agent: This can be combined with the second scenario where an intent triggers the *Chat with agen*t flow. In this case, create a new flow called *Chat with agent* and add a prompt node. Enter a message in the **Bot asks** field to be played before the call transfer. Use the **make prompts smarter** icon to configure the [forwarding details](#fwd).        
 
     **Main flow**:        
-    ![](https://hackmd.io/_uploads/HyfcONrS3.png)            
+    ![](https://imgur.com/KBtYRxl.png)            
     **Chat with agent flow**:       
-    ![](https://hackmd.io/_uploads/B16_KVHr2.png)
-    ![](https://hackmd.io/_uploads/HJ7N5hdH2.png)
+    ![](https://imgur.com/bZAq7JC.png)
+    ![](https://imgur.com/O14Ny9n.png)
 
 4. When a fallback is encountered, the call will automatically be transferred to a live agent.
 
@@ -80,10 +80,10 @@ This flow is activated when the user explicitly expresses the need to speak with
     > The utterances can include phrases such as "you are not able to understand me, I need someone else," "I want to talk to the manager," "connect me to someone," or "I can't understand, I want to talk to your executive."
 
 2. Set up a [new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/configureflow#configure-start-trigger) with the start trigger configured as the intent `chat with agent`.         
-    ![](https://hackmd.io/_uploads/r19ziNHHh.png)
+    ![](https://imgur.com/7FLufuj.png)
 
 3. In the flow design, add nodes as needed and end the flow with a prompt node. Enter a message in the **Bot asks** field, which will be played before the call transfer. Click **make prompts smarter** icon and configure the [forwarding details](#fwd).       
-    ![](https://hackmd.io/_uploads/r1hA52drh.png)
+    ![](https://imgur.com/DEwKpvq.png)
 
 ----
 
@@ -98,10 +98,10 @@ To configure call forwarding options at the [node level](https://docs.yellow.ai/
 > **Prerequisite**: Inside the dedicated `Chat with agent` flow, add a question/voice input/speak node to trigger the call transfer to an agent. Configure the message that the bot will play before transferring the call.
 
 1. Click on the **make prompts smarter** icon, select **Voice**. 
-    <img src="https://hackmd.io/_uploads/S1N2EHHH2.png" alt="drawing" width="70%"/>
+    <img src="https://imgur.com/RoB4dxn.png" alt="drawing" width="70%"/>
 
 2. Enable **Forward call**.         
-    ![](https://hackmd.io/_uploads/SkBSVrSS3.png)
+    ![](https://imgur.com/r7nr0eB.png)
 
 
 3. Enter the forwarding details:      
@@ -115,7 +115,7 @@ To configure call forwarding options at the [node level](https://docs.yellow.ai/
 
     **Sample agent screens with the forwarding details**:
 
-    ![](https://hackmd.io/_uploads/rJNkDHSS3.png)
+    ![](https://imgur.com/9yotcfx.png)
 
 > You can configure recording options after the call transfer on the [tools section](https://docs.yellow.ai/docs/platform_concepts/studio/tools#recording-related-voice-settings). 
 

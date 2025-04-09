@@ -19,7 +19,7 @@ The following are the various options to obtain WhatsApp opt-in from users:
 
     * SMS (with opt-in URL) 
 
-       ![](https://hackmd.io/_uploads/S1nIKjCuh.png)
+       ![](https://imgur.com/34Ynf7z.png)
     * Email (with opt-in URL)
     * Missed call (Auto-trigger a welcome message on WhatsApp)
 
@@ -31,7 +31,7 @@ The following are the various options to obtain WhatsApp opt-in from users:
 
 3. **Use websites and landing pages**: You can obtain WhatsApp opt-ins using an external web page or webview trigger from within the WhatsApp messaging interface.
 
-     ![](https://hackmd.io/_uploads/rJ7lij0_2.png)
+     ![](https://imgur.com/V6Zvr3M.png)
 
 4. **Use the bot flow**: When you are creating opt-in flows, it is recommended to add opt-in buttons in interactive WhatsApp templates.
 

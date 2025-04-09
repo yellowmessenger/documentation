@@ -51,7 +51,7 @@ You can view all the options on the platform in the language of your choice by s
 
 <img src="https://imgur.com/PKxOwWX.png" alt="drawing" width="50%"/>
 
-<img src="https://hackmd.io/_uploads/S1E9gJDc2.png" alt="drawing" width="50%"/>
+<img src="https://imgur.com/nvaicVs.png" alt="drawing" width="50%"/>
 
 
 :::note
@@ -77,12 +77,12 @@ To customize your email notifications, follow these steps:
     - Enable **Health check** notifications to receive an email if your bot remains inactive for more than 30 minutes. The bot is monitored by pinging it every minute, and if it doesn’t respond within 30 minutes, you’ll be alerted. To stop receiving these alerts, simply uncheck the box.
     - Enable **API management** to receive alerts if any APIs configured in Automation experience a failure rate of more than 5% over the last 7 days. Uncheck the box to stop receiving these notifications.
 
-![](https://hackmd.io/_uploads/rJOvQSS30.png)
+![](https://imgur.com/1MQCJd5.png)
 
-![](https://hackmd.io/_uploads/S1JiQrr2A.png)
+![](https://imgur.com/jaWeDno.png)
 
 **Sample email**: 
-![](https://hackmd.io/_uploads/SyF_ySShA.png)
+![](https://imgur.com/geznD2O.png)
 
 ---------------
 

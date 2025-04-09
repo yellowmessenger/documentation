@@ -53,7 +53,7 @@ With **Yellow.ai’s VoiceX**, we have completely optimized our infrastructure t
 
 ## Key Features
 
-![image](https://hackmd.io/_uploads/Hk6TPyajkl.png)
+![image](https://imgur.com/iwykZlo.png)
 
 
 
