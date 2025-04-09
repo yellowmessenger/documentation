@@ -24,7 +24,7 @@ In this article, you will learn how to accept/add inbox roles.
 - Other modules in the yellow.ai platform such as **Automation**, **Channels**, etc. will not be visible to the **Inbox Admin/Agent**.
 - If you have **Admin** access(to the bot), you can give yourself the **Inbox Agent/Inbox Admin** access to explore the Inbox functionalities. From settings, click **Access control** > **Edit** your row to add **Inbox agent** access along with **Inbox admin** access.
 
-![image](https://hackmd.io/_uploads/B16_Da-DA.png)
+![image](https://imgur.com/qdviCKa.png)
 
 
 > Supporting document to add/accept bot access for different roles: [Access control](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators).
@@ -41,7 +41,7 @@ To add an inbox role, follow the below steps:
 
 1. Open **Settings** > **Access Control** from the overview page. 
 
-![image](https://hackmd.io/_uploads/rJgzD6WPR.png)
+![image](https://imgur.com/7oBCZXR.png)
 
 2. On **Users** tab, click **+Invite users**.
 3. Enter **Email ID** of the use you want to invite. From the **Access control** dropdown menu select the required role (**Inbox (Agent)**/ **Inbox (Admin)**). Click **Invite**. 
@@ -118,4 +118,4 @@ Enabling this feature allows you to log in to the platform using the same creden
 
 If you do not want to use your credentials on another system or environment, you can disable this option. Disabling it helps enhance security by preventing unauthorized access and reducing the risk of credential misuse in different environments.
 
-![image](https://hackmd.io/_uploads/BkIwT_laye.png)
+![image](https://imgur.com/xEIiRYv.png)

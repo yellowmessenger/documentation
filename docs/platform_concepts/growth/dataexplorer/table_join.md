@@ -135,7 +135,7 @@ Follow the steps below to create a report using two datasources:
 
 
 On the Data explorer page, you can see the number of reports that are being generated, that is the queies that are in progress. 
-    ![image](https://hackmd.io/_uploads/Bk0mrRyBJg.png)
+    ![image](https://imgur.com/dUtsjww.png)
 
 
 ------

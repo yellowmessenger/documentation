@@ -85,7 +85,7 @@ By default, all summarized tables in Data Explorer display a **Total** at the en
 * If you have applied **Min, Max, or Average** operations while summarizing data, the *Total* value will be empty.
 
 
-![](https://hackmd.io/_uploads/SyFwNy5S2.png)
+![](https://imgur.com/drMl6xE.png)
 
 
 ### Add formulas(arithimetic operations) to columns
@@ -95,7 +95,7 @@ You can simply select the desired columns, add the formula using arithmetic oper
 
 > This feature is available for **Saved reports**. Read more [here](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions#4-add-a-formula-column-to-a-report). 
 
-![](https://hackmd.io/_uploads/BkMqSkqHh.png)
+![](https://imgur.com/UovwxpT.png)
 
 ----
 
@@ -113,7 +113,7 @@ These summarized queries can be used for future references and they will be avai
 > Learn more about actions available on [Saved reports](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions).
 
 
-![](https://hackmd.io/_uploads/r1crm1qS2.png)
+![](https://imgur.com/xs7M4JE.png)
 
 > You can visualise this data, steps are explained in next section. 
 

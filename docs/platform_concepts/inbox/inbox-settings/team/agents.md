@@ -116,7 +116,7 @@ UI settings on the chat screen/agent permissions can be updated for multiple age
 Previously configured data for the agents will be over-ridden by the new values. 
 :::
 
-![](https://hackmd.io/_uploads/HyaCPu7H3.png)
+![](https://imgur.com/7uMihBQ.png)
 
 
 

@@ -21,7 +21,7 @@ The average voice-to-voice latency (time between the user’s last word and the 
 
 Enable **Interruptions** in **Dynamic Chat node > Voice Configuration** to utilize the latest interruption handling mechanism. Ensure the **Final Silence Duration** is set to **0.2 seconds**.
 
-![image](https://hackmd.io/_uploads/BJU9dRssye.png)
+![image](https://imgur.com/GjwIENW.png)
 
 
 ## Improving Speech Recognition Accuracy with Boost Phrases
@@ -31,13 +31,13 @@ Use **Boost Phrases** to enhance recognition accuracy for industry-specific jarg
 1. **In the Question/Text Node**   
    - Pass a predefined list of boost phrases in the node configuration.
    - Alternatively, use a function to dynamically generate an array of boost phrases and pass them via **custom voice options** under the `boost_phrases` key.
-![image](https://hackmd.io/_uploads/BkETYRssJx.png)
+![image](https://imgur.com/RCi3Qmg.png)
 
 
 
 2. **In the Dynamic Chat (DC) Node**
    - A fixed set of words and phrases can be passed via **Dynamic Node > Voice Configuration > Boost Phrases**.
-![image](https://hackmd.io/_uploads/rk_XqAoiyg.png)
+![image](https://imgur.com/C0TxL8U.png)
 
 
 
@@ -59,7 +59,7 @@ To minimize user frustration during the KB search wait time, use the following t
     - *“Give me some time, I’m fetching it for you.”*  
     - *“Please wait, I’m finding the best answer.”*  
 
-![image](https://hackmd.io/_uploads/Sk5i5Cijkx.png)
+![image](https://imgur.com/EKbbT37.png)
 
 
 :::note 

@@ -58,7 +58,7 @@ These visualized queries can be used for future references and they will be avai
 
 > Learn more about actions available on [Saved reports](https://docs.yellow.ai/docs/platform_concepts/growth/dataexplorer/savedreportsactions).
 
-![](https://hackmd.io/_uploads/HyqYX15r2.png)
+![](https://imgur.com/EV1HNJg.png)
 
 
 
