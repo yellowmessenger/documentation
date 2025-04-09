@@ -30,7 +30,7 @@ The voice bot architecture consists of three key components:
 3. **Customize bot response**: The bot plays or communicates the response back to the customer.
 
 
-![](https://hackmd.io/_uploads/Hyp_msJBn.png)
+![](https://imgur.com/xaabcph.png)
 
 
 
@@ -65,7 +65,7 @@ Operations on yellow.ai cloud platform must be performed to understand the user 
 - Many more...
 
 
-![](https://hackmd.io/_uploads/r1kLKoyHh.png)
+![](https://imgur.com/BAPAyXH.png)
 
 
 ------

@@ -19,7 +19,7 @@ sidebar_label : Bot development lifecycle
 
 
 
-![image](https://hackmd.io/_uploads/rkUvujJpA.png)
+![image](https://imgur.com/bQyRkxV.png)
 
 
 

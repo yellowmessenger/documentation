@@ -15,16 +15,16 @@ When **Offline handling** is enabled and you want to inform customers that agent
 
 1. Navigate to **Automation > Flows**, open the flow that includes the **Raise ticket** node.
 2. Store the output of the **Raise ticket** node in a variable, as shown in the image.
-<img src="https://hackmd.io/_uploads/ByjDHFLbp.png" alt="drawing" width="80%"/>    
+<img src="https://imgur.com/c38mS3R.png" alt="drawing" width="80%"/>    
 3. Connect the error part of the **Raise ticket** node to a new node, which is responsible for displaying messages to the customer. 
     > When offline handling is enabled, the chat is not immediately answered, and the flow continues to the next node until an agent responds.
     
     <img src="https://imgur.com/7zug9iN.png" alt="drawing" width="100%"/>    
 4. In the new flow, retrieve the status of the ticket by accessing the status value stored in the variable `{{{variables.raiseTicketObj.status}}}`.
 5. Add a [condition node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#1-condition) to your flow to identify the ticket status.
-    <img src="https://hackmd.io/_uploads/SkQdvY8WT.png" alt="drawing" width="80%"/>    
+    <img src="https://imgur.com/LEfUXQF.png" alt="drawing" width="80%"/>    
 6. Depending on the ticket status identified in the condition node, you can connect the conditions to a Text node to display a relevant message addressing the customer.
-    ![](https://hackmd.io/_uploads/B1scOF8bp.png)
+    ![](https://imgur.com/Yqn35V9.png)
     > You can also fetch the ticket ID by using the variable: `{{{variables.activeTicketNumber}}}`
 
 -----
@@ -34,17 +34,17 @@ When **Offline handling** is enabled and you want to inform customers that agent
 
 1. Access the **Automation** section and navigate to **Events**.
 2. Open the [Custom events](https://docs.yellow.ai/docs/platform_concepts/studio/events/event-hub) and click **+Add event**.
-    ![](https://hackmd.io/_uploads/HkG89gJP2.png)
+    ![](https://imgur.com/FmDVEWS.png)
 3. Provide the **name** `ticket-opened` and click **Create event**. 
-    ![](https://hackmd.io/_uploads/B1cqqgkDh.png)
+    ![](https://imgur.com/OnVw8EB.png)
 4. Ensure that the `ticket-open` event is **Active**. If not, make it Active by clicking on the three dots next to it.
-    ![](https://hackmd.io/_uploads/B18Zjx1D2.png)
+    ![](https://imgur.com/KvaSM3p.png)
 5. [Create a new flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys) in the **Automation** > **Build**. 
-    ![](https://hackmd.io/_uploads/B1rOixkD2.png)
+    ![](https://imgur.com/GBDM5YF.png)
 6. Within the flow, add a start trigger by clicking on the start node. Select **event** from the dropdown and set the value as `ticket-opened`.
-    ![](https://hackmd.io/_uploads/ryKShx1wh.png)
+    ![](https://imgur.com/4RabvB5.png)
 7. Add a text node to display an acknowledgment to the customer, informing them to wait for a while.
-    ![](https://hackmd.io/_uploads/BkgF2eJw2.png)
+    ![](https://imgur.com/RLhQx5T.png)
 
 ----
 

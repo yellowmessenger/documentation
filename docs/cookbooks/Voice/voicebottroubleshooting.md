@@ -132,7 +132,7 @@ Users did not receive a call, WhatsApp, or SMS notification.
 
 Enabling Auto fallback to Enable summarized results in the Conversation settings, or within any node that invokes document search in a voice flow, will result in an error.
 
-![image (47)](https://hackmd.io/_uploads/SkFan2k6Jl.png)
+![](https://imgur.com/rpStrjO.png)
 
 :::
 

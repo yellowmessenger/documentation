@@ -107,21 +107,21 @@ You can search for canned responses in the dropdown list by clicking on the cann
     > If you have a canned response tagged as "greeting" and the content "Hello, how can I assist you?", searching for either "greeting" or "assist" will display this response.
     
     **Tag search**:
-    ![](https://hackmd.io/_uploads/SyNXe9aL3.png)
+    ![](https://imgur.com/n8ASqrA.png)
     **Content search**:
-    ![](https://hackmd.io/_uploads/rkYpx5pUn.png)
+    ![](https://imgur.com/mMrJqaH.png)
 
 
 - **Highlighting of matching terms**: When you perform a search, the matching content or tag from the search term will be highlighted in bold. This makes it easier to identify relevant responses. 
     > If you search for the tag "discount," any canned responses with that tag will have it highlighted.
     
-    ![](https://hackmd.io/_uploads/ByTM-5pU3.png)
+    ![](https://imgur.com/9ixJbio.png)
 
 - **Preference for tag results**: Results that match the assigned tags will be given priority over those that match the content. 
     > If you have a canned response tag as "billing" and another response with the word "billing" in its content, the tag "billing" will appear first in the search results.
 - **Case insensitivity**: The search function is case insensitive, meaning it considers uppercase and lowercase letters as equivalent. 
     > Searching for "Fashion" or "fashion" will yield the same results.
-    ![](https://hackmd.io/_uploads/SJrK15aUn.png)
+    ![](https://imgur.com/bM9hssR.png)
 
 - **Combined result for multiple search terms**: When you use multiple search terms, the results will only be shown if both terms match in the exact order. 
     > Searching for "fanta" and "offers" will only display responses that contain both of these words in that specific order.

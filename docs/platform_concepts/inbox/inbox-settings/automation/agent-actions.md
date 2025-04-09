@@ -43,7 +43,7 @@ To create agent actions, follow these steps:
 
 4. Click on the edit icon for the flow you want to modify.      
     
-    ![](https://hackmd.io/_uploads/B1HoZxIr2.png)
+    ![](https://imgur.com/wx3fioS.png)
 
 5. It is recommended to enable all the agent action settings.
     - Enable **Mark action enabled for this flow**.     

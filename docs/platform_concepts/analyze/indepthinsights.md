@@ -5,13 +5,13 @@ sidebar_label: In-depth insights
 
 Click on the **Topic name** to view a detailed analysis of the selected topic.
 
-![image](https://hackmd.io/_uploads/rkVzSDn6ye.png)
+![image](https://imgur.com/7wiR3qH.png)
 
 ## Date filter
 
 By default, analytics for the selected topic are filtered to the past 30 days. You can adjust the time period by selecting a different date range.
 
-![image](https://hackmd.io/_uploads/B1USSwhTyg.png)
+![image](https://imgur.com/ynX56bf.png)
 
 
 ## Automation opportunity
@@ -20,7 +20,7 @@ Automation opportunity is the potential for automating user queries in this topi
 
 > **Automation Opportunity** = (Total unresolved/uncontained conversations in this topic) / (Total unresolved/uncontained conversations across all topics).
 
-<img src="https://hackmd.io/_uploads/rJd6rw2ayx.png" alt="drawing" width="60%"/>                             
+<img src="https://imgur.com/88n72ny.png" alt="drawing" width="60%"/>                             
 
 
 
@@ -30,7 +30,7 @@ This shows the percentage of total conversations for the selected topic relative
 
 > **Conversation share** = (Total conversations in this topic) / (Total conversations across all topics).
 
-<img src="https://hackmd.io/_uploads/HyV7LD26kl.png" alt="drawing" width="60%"/>                             
+<img src="https://imgur.com/ejAhhlS.png" alt="drawing" width="60%"/>                             
 
 
 
@@ -107,13 +107,13 @@ This data can also be viewed in **Data explorer > [Contained resolution analysis
 Key metrics such as **AI resolution rate, automation rate**, and **user sentiment** for the selected topic are displayed as graphs for the selected time period. These values, already available on the Topics page, are visualized in graph form to help you understand trends more effectively. You can view conversations pre-filtered by clicking **View conversations**.
 
 * **AI resolution rate**: Percentage of conversations fully managed and successfully resolved by the AI Agent. View **Resolved vs. Unresolved** conversations under this category.                                          
-![AI Resolution Rate](https://hackmd.io/_uploads/HkQyvwnp1g.png)
+![AI Resolution Rate](https://imgur.com/RlyKeZL.png)
 
 * **Automation Rate**: Percentage of conversations handled entirely by the AI Agent. View **AI Agent vs. Human Agent** handled conversations under this category.                                        
-![Automation Rate](https://hackmd.io/_uploads/SJSuuP2pkg.png)
+![Automation Rate](https://imgur.com/zt8O3Sg.png)
 
 * **User Sentiment**: Overall sentiment of user interactions with the AI Agent. View Conversations categorized by sentiment under this category.                                  
-![User Sentiment](https://hackmd.io/_uploads/S17iOv36ye.png)
+![User Sentiment](https://imgur.com/OJECE1F.png)
 
 
 -------------------------
@@ -126,4 +126,4 @@ The AI-agent also provides suggestions based on analyzed conversations:
 - **Improve Knowledge Base**: Click **View article** to see conversations that the AI used to recommend a new knowledge base article based on human agent interaction.
 - **Analyze conversations**: Click **View conversations** to identify opportunities for AI-agent improvement.
 
-![image](https://hackmd.io/_uploads/BJ4-Fwh6Jg.png)
+![image](https://imgur.com/JKmp78p.png)

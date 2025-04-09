@@ -9,4 +9,4 @@ For example, it can display metrics like the total number of notifications sent 
 
 Click **Visualisation > Count**.
 
-![image](https://hackmd.io/_uploads/rknnjtHg0.png)
+![image](https://imgur.com/u5n0CcP.png)

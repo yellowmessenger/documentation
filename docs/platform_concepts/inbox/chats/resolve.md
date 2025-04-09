@@ -11,7 +11,7 @@ Admin and agents have the ability to **resolve** or **transfer** a live chat and
 Agents can click **Resolve** to close the live chat after providing a solution.        
 Agents can click **Transfer** when they are unable to provide the required solution and the next agent can take over.
 
-<img src="https://hackmd.io/_uploads/B1wE75bDn.png" alt="drawing" width="40%"/>
+<img src="https://imgur.com/WL5WYlt.png" alt="drawing" width="40%"/>
 
 
 In some instances, inbox admins may require agents to fill in specific details before resolving or transferring a chat. 

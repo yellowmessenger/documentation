@@ -85,11 +85,11 @@ You can follow any of the given three methods to create flow on **Automation** t
 
 2. If the live chat request is raised successfully and the Inbox agent has received the chat (explained in the next section), agent connected message will be displayed (as configured on the raise ticket node).
 
-    <img src="https://hackmd.io/_uploads/BkHIaTRRh.png" alt="drawing" width="50%"/>    
+    <img src="https://imgur.com/6kiU6i4.png" alt="drawing" width="50%"/>    
 
 3. You can navigate to the Inbox screen by clicking **Go to Inbox**.
 
-    ![](https://hackmd.io/_uploads/BJNunp0Ch.png)
+    ![](https://imgur.com/ndEfeRv.png)
 
 :::note
 You will not be able to raise another live chat request until the current live chat is resolved. 
@@ -117,6 +117,6 @@ Once you have created the live agent flow, follow these steps to test how ticket
 
 4. You can close the live chat (and click **Resolve** to [resolve the live chat](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/chatscreen#-3-resolve-or-transfer-tickets) and test the message displayed on *Tab 1* after the live chat has ended with the agent. 
 
-    <img src="https://hackmd.io/_uploads/BkhNyCC0h.png" alt="drawing" width="50%"/>    
+    <img src="https://imgur.com/rUez8N9.png" alt="drawing" width="50%"/>    
 
 

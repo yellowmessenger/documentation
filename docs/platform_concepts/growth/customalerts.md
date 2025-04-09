@@ -20,11 +20,11 @@ Custom alerts are currently enabled for **Dashboards/Reports** that have [**Coun
 You can set up an alert in Insights:
 
 1. **Report Builder**: In **Insights > Data Explorer > +Create Report**, you'll find an alert button at the top right of the table.
-![image](https://hackmd.io/_uploads/HJWq2GMDC.png)
+![image](https://imgur.com/1VVO1jQ.png)
 > To activate this alert, you must **save** the report with either count applied.
 2. **Saved Reports**: In **Insights > Data Explorer**, saved reports that use count visualizations have the alert option enabled.
 3. **Dashboards**: Hover over **Insights > Dashboard (default/custom)** items with count visualizations to access the alert option.
-![image](https://hackmd.io/_uploads/rkY0iWzv0.png)
+![image](https://imgur.com/ouvwrcO.png)
 
 :::note
 
@@ -45,7 +45,7 @@ You can set up an alert in Insights:
 Choose the **operator** and **value** to trigger an email alert when comparing KPIs at set intervals.
 
 
-![image](https://hackmd.io/_uploads/B1BrIlSwC.png)
+![image](https://imgur.com/I3lRZQy.png)
 
 The available conditions include:
 
@@ -82,11 +82,11 @@ To check KPI changes at the selected frequency within the specified intervals, c
 * **Daily**: Set alerts daily at a specific time. You can choose not to receive alerts on weekends.
 * **Weekly**: Set alerts on specific days of the week.
 
-![image](https://hackmd.io/_uploads/ry4MDtBsR.png)
+![image](https://imgur.com/XjGPvEx.png)
 
 * **Custom time configuration**: You can choose to send alerts daily or on selected days. Alerts can be configured to be sent between specific times and on chosen days.
 
-![image](https://hackmd.io/_uploads/SJjALtHjC.png)
+![image](https://imgur.com/EavBQNr.png)
 
 -----
 
@@ -104,14 +104,14 @@ The next alerts start as per the configured time.
 * **Email ID configuration**: Add individual email addresses to the list. Alerts will be sent only to these specified users.
 * **Roles & email IDs**: Alerts will be sent to individuals from both the selected roles and the added email IDs.
 
-![image](https://hackmd.io/_uploads/Sk2HL7fwR.png)
+![image](https://imgur.com/LhfJABX.png)
 
 #### Email format
 
 The body and subject of the email are predefined and cannot be changed.
 - **Acknowledgement email**: An email is sent to all recipients immediately when the alert is saved, containing all the details. 
 
-   ![image](https://hackmd.io/_uploads/SJ1IsV4wA.png)
+   ![image](https://imgur.com/EviRlIp.png)
    
 - **Alert emails**: Email alerts are sent when the threshold value is reached. These emails include detailed information and a redirect link to the report.
     
@@ -129,7 +129,7 @@ The attached CSV report is the base report with appropriate filters applied, not
 The alert does not get triggered if the below conditions are met: 
 
 - **No change in value**: If the option **Value between two condition checks remains the same, don't send email** is selected, the alert won't be sent if the report or values haven't changed since the previous check. 
-    ![image](https://hackmd.io/_uploads/SJXshgHwA.png)
+    ![image](https://imgur.com/QAmK8gX.png)
 - **Widget updates**: If an alert is live on a widget and the widget is updated, the alert will be disabled.
 
 #### View existing alerts 

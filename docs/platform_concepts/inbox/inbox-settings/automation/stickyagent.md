@@ -78,7 +78,7 @@ When testing sticky agent assignment, you can skip using the **Raise ticket** no
 :::info
 You can obtain the uid to be passed in these APIs from the sender variable `{{{sender}}}`.
 
-<img src="https://hackmd.io/_uploads/SkOv2FOmT.png" alt="drawing" width="80%"/>
+<img src="https://imgur.com/hWdx1m3.png" alt="drawing" width="80%"/>
 
 :::
 

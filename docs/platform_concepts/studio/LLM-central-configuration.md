@@ -56,7 +56,7 @@ To add the LLM account, follow these steps:
 
 3. Click **+ Add account**.
 
-    ![image](https://hackmd.io/_uploads/Hy3lHT0Nyg.png)
+    ![image](https://imgur.com/mdldiG4.png)
 
 4. In **Give account name**, enter a name for your LLM account.
 5. In **LLM provider**, choose your preferred LLM provider.

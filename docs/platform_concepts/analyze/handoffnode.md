@@ -32,9 +32,9 @@ Yellow Inbox transfer are tracked with the `agent-transfer` event. But while usi
 
 With **Bot Developer** access, you can configure the **Chat Handoff** node. This node is typically connected to the node used to raise a ticket in a third-party system. When this node is encountered, the `agent-session` event is tracked in the **User Engagement Session Table**. This setup enables tracking of the number of sessions that end with a passive handoff to third-party ticketing systems.
 
-![chat handoff](https://hackmd.io/_uploads/SyTN0XDb1x.png)
+![chat handoff](https://imgur.com/ix6sMpU.png)
 
-![image](https://hackmd.io/_uploads/ryo9AQvZJe.png)
+![image](https://imgur.com/CvniYAF.png)
 
 In the example below, a successful action after raising a ticket in Zendesk connects to the Chat Handoff node. When a passive or offline ticket is created in Zendesk, agents respond via email, call, or other channels. Meanwhile, this handoff is tracked. The Chat Handoff node acts as an identifier for agent transfers, enabling you to track the containment rate effectively.
 

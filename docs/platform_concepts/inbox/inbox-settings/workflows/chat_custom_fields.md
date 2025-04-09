@@ -83,7 +83,7 @@ Read-only option is not available for email custom fields.
 #### Re-order custom fields as per their priority 
 
 7. Admins can **drag** and place the custom fields in the desired order. The custom fields will be displayed in the same order in the live chat or email ticket screen. Frequently used fields can be placed at the top for easy accessibility among a larger set of custom fields.
-    ![](https://hackmd.io/_uploads/H1qbDs2rn.png)
+    ![](https://imgur.com/zNxtT9U.png)
 
 
 -------

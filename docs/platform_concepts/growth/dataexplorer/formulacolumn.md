@@ -17,15 +17,15 @@ To add a formula to a column, follow these simple steps:
 1. Click on the **Actions** dropdown menu and select **Add formula column**.
     ![image](https://imgur.com/Q0xgBbH.png)
 2. Enter a **Name** for the formula in the tab that appears.
-    ![](https://hackmd.io/_uploads/BkRYoJqS3.png)
+    ![](https://imgur.com/qnFMs0t.png)
 3. Add the required formula using entities like calculating values in a column, calculating values in a specific cell, adding integers or arithmetic operators.
     - To add a column, select **Select column** under **table operations**. The available columns in your summarized table will be listed on the right side. Click **Add** next to the column name.
-    ![](https://hackmd.io/_uploads/rkgPsk5rn.png)
+    ![](https://imgur.com/1le4ZIe.png)
     - To add a cell, select **Select cell** after choosing a column. All the available rows for the selected column will be displayed in the dropdown list. Select a value.
-    ![](https://hackmd.io/_uploads/ry64oJcr3.png)
+    ![](https://imgur.com/734TXBW.png)
     - Complete the formula with numbers and operators **+, -, *, /, ()**.
     - Click **Next**.
-    ![image](https://imgur.com/CYtDAC3.png)
+    ![image](https://imgur.com/dMQyhnh.png)
 
 4. You can add multiple formula columns following the same steps measured above. 
 

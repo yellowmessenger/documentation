@@ -69,7 +69,7 @@ The `callbackStatus` object is a container that holds important CDR data and is 
     - Filter for **SID**.
     - Add CDR fields/variables. 
 
-    ![](https://hackmd.io/_uploads/rkdLGYiV2.png)
+    ![](https://imgur.com/kUzOlr2.png)
    
 
 

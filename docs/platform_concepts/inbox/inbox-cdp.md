@@ -129,13 +129,13 @@ While building flow, configure:
 
 
 **Raise ticket node**:
-![image (37)](https://hackmd.io/_uploads/HkX5f9pw0.png)
+![image (37)](https://imgur.com/0wKLCX6.png)
 
 **Functioning for existing user**: 
-![image (35)](https://hackmd.io/_uploads/rJtUZc6PA.png)
+![functioning for existing user](https://imgur.com/xvtd020.png)
 
 **Functioning for new user**: 
-![image (36)](https://hackmd.io/_uploads/H1bDG5pwC.png)
+![image (36)](https://imgur.com/2SwISnl.png)
 
 <!--
 ### Set userId in the prompt nodes
@@ -171,12 +171,12 @@ If the above steps are not followed, contact card and the old UI will be display
 
 If you can find the **User identification flow** setting in **Automation** > **Build** > **Conversation Settings** > **User identification**, [follow the steps](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data/userid-flow#understand-how-user-identification-flow-works) mentioned here to set up the user identification flow. 
 
-![](https://hackmd.io/_uploads/HybbtVuya.png)
+![](https://imgur.com/J0w94up.png)
 
 After setting up the user identification flow, use **User property variables** in your flow and input them into the **Name, Mobile**, and **Email** fields of the [Raise Ticket node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) instead of using regular journey or global variables.
-![](https://hackmd.io/_uploads/SkeqhuEd1T.png)
+![](https://imgur.com/C6cgITI.png)
 
-<img src="https://hackmd.io/_uploads/r1bEYNdk6.png" width="70%"/> 
+<img src="https://imgur.com/6YFE8D8.png" width="70%"/> 
 
 
 ---
@@ -185,25 +185,25 @@ After setting up the user identification flow, use **User property variables** i
 
 **Chat screen:** 
 
-![](https://hackmd.io/_uploads/B1yU3HJ16.png)
+![](https://imgur.com/lhIzQ8k.png)
 
 **Ticket screen:** 
 
-![](https://hackmd.io/_uploads/SkG6sSykT.png)
+![](https://imgur.com/1336nU0.png)
 
 - Within the Customer details section, located on the upper right corner of your Chat/Ticket screen, you can find the customer's name, UserID (email), contact information, as well as the customer's recent activity.
 
-    <img src="https://hackmd.io/_uploads/B1PXfVNR3.png" alt="drawing" width="60%"/>    
+    <img src="https://imgur.com/SiKAiO1.png" alt="drawing" width="60%"/>    
 
 - Select **View contacts** to reach all the customer information collected from User360. Agents have the ability to make adjustments to this information in the event of any changes.
 
-    <img src="https://hackmd.io/_uploads/H1wkBrJkp.png" alt="drawing" width="60%"/>
+    <img src="https://imgur.com/FlA7tZz.png" alt="drawing" width="60%"/>
 
 - The **View recent activity** option provides agents and admins with a complete view of each customer, including their past and current support tickets. This information equips agents to better understand customers and offer more personalized interactions.
     - Selecting **View all activity** in the timeline directs users to the User360 module, offering extensive customer data, including engagement campaigns and third-party information.
     - Clicking on a chat or email ticket in the timeline provides agents access to detailed conversation histories and comprehensive view of each interaction.
 
-    <img src="https://hackmd.io/_uploads/HyyGnrN02.png" width="50%"/>
+    <img src="https://imgur.com/Hucot8S.png" width="50%"/>
 
 > To view the User360 page you need **Engagement User/Admin** role access.
 

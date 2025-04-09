@@ -22,7 +22,7 @@ Follow the below steps to add the Support portal website's title and set the def
 
 1. Go to **Settings** > **Inbox**. Search and select **Support portal settings**.
 2. Enter the **Site title**.
-    ![image](https://hackmd.io/_uploads/B1NCFWxXye.png)
+    ![image](https://imgur.com/sWzFisV.png)
 
 
 3. Click **Save**. Open your URL on a new tab, on top of the browser, you can see the updated site title. 
