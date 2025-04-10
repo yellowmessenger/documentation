@@ -36,22 +36,28 @@ Follow the steps below to enable offline handling of live chats:
 
 1. Open **Setting** > **Inbox**. 
 2. Search and select **Offline handling**. 
-    ![image](https://imgur.com/YkweVMn.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/offlinehandling.png)
 
-3. You can **Enable/Disable offline chats**. **Enable** the toggle to allow Inbox to handle live chats when all the agents are offline.
-    <img src="https://i.imgur.com/AbEmZ4V.png" alt="drawing" width="60%"/> 
+3. Toggle on **Enable/Disable offline chats**.
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/offlineenable.png" width="90%"/>
 
-4. By clicking the edit button you can configure offline chats for different [groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups). Click edit next to the required group name. 
-    - You can choose the **Default** group and configure default settings to manage live chat requests received by all the groups.
+
+4. To configure offline chats for different [groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups), navigate to the respective card and click on the **Edit** button.
+    - To set live chat requests received by all the groups, edit the **Default** group.
     
-    ![](https://i.imgur.com/70A4ZQQ.png)
-5. Select the type of field you want to create and decide the ticket behavior for agents. Click **Submit**.
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/offlineenable.png)
+
+
+5. In **Enable offline tickets**, choose **Enable**.
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/enable.png" alt="drawing" width="80%"/> 
+
+6. Select the type of field you want to create and decide the ticket behavior for agents. Click **Submit**.
     - **Enable/Disable offline tickets**: **Enable** this to serve the customer requests received when the agents are offline, disable otherwise. 
     - **Max offline tickets allowed**: Enter the number of tickets that can go to Open state while all agents are offline.
     - **Auto-assign tickets**: If this is enabled, the tickets in Open state will be auto-assigned when the agents come back online.
     - **Priority of auto-assignment**: The ticket type (Queued/Open) that should be given priority and auto-assigned when agents come back online. 
     
-    ![](https://i.imgur.com/YD24jSA.png)
+    <img src="https://i.imgur.com/YD24jSA.png" width="60%"/>
 
     :::info
 
@@ -63,7 +69,7 @@ Follow the steps below to enable offline handling of live chats:
     - Queued chats are typically assigned one by one based on the agent's concurrency and availability. This means that when an agent becomes available to handle a new chat, the next chat in the queue will be assigned to them.     
     :::
 
-6. This can be configured for all the available [groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups). 
+7. This can be configured for all the available [groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups). 
 
 
 

@@ -33,3 +33,15 @@ We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure
 
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-offline-ticketing).
 
+
+## Workday Integration is Now live with your AI Agent
+
+This integration allows you to perform key Workday actions from checking leave balances to updating employee records.
+
+### Actions you can perform:
+
+- View and apply for leaves
+- Access payslips and tax documents
+- Update personal and contact details
+- Retrieve team member information
+- Approve or reject leave and expense requests
