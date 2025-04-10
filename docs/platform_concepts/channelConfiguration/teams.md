@@ -344,3 +344,9 @@ To troubleshoot and resolve the issue, follow the below steps:
 
     * If the endpoint is incorrect or outdated, provide the user with the correct endpoint.
     * Guide the user to update the endpoint in the Teams Developer Portal.
+
+In some cases, older bots might have their app endpoint configured instead of the correct messaging endpoint. Follow these steps:
+
+* Use the reference documentation to generate a valid messaging endpoint.
+* Share the updated endpoint with the user.
+* Assist the user in updating the endpoint in the Teams Developer Portal.      
