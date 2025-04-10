@@ -42,7 +42,7 @@ To create an internal ticket, follow these steps:
 
 1. Open the chat for which you require additional support within the My Chat tab.
 
-    ![](https://hackmd.io/_uploads/SJVwaZAhn.png)
+    ![](https://imgur.com/dRqLqaE.png)
 
 2. Click on the threads icon located in the top-right corner of the chat screen. This will display all available Slack threads created, opened, or closed via the inbox for that specific chat. A single chat can host multiple threads.
 
@@ -54,17 +54,17 @@ A **Slack Threads** is a focused discussion within a message. In a channel, user
 
 3. Click **+New thread**.
 
-    ![](https://hackmd.io/_uploads/BJ70AWR32.png)
+    ![](https://imgur.com/NtYaSTW.png)
 
-    ![](https://hackmd.io/_uploads/B1TcT-Rhh.png)
+    ![](https://imgur.com/Ayi0WlS.png)
 
 4. Under the **To** field, you will see a list of available Slack channel names to which the App is added. Choose the channel to which you wish to send a support request.
 
-    <img src="https://hackmd.io/_uploads/SJ-Q1GCh3.png" width="50%"/>
+    <img src="https://imgur.com/K7Ci5mP.png" width="50%"/>
 
 5. Once you've selected a channel, the chat details will be auto-filled with the agent ID and name. Below that, you can type your query. Click **Send**.
 
-    <img src="https://hackmd.io/_uploads/Hy-eezChn.png" width="50%"/>
+    <img src="https://imgur.com/1GVasuz.png" width="50%"/>
 
 
 :::note
@@ -75,7 +75,7 @@ You can only send text, images, files, and emojis on this chat screen. Other opt
 6. After the query is sent, a new message will be generated in the selected Slack channel. Any slack user can review the message on Slack and respond within the same thread.
 
     Sample screenshot of an internal ticket created in the the Salck channel: 
-    ![](https://hackmd.io/_uploads/BygCgGCh2.png)
+    ![](https://imgur.com/k7jnkse.png)
 
 
 :::note
@@ -87,7 +87,7 @@ You can only send text, images, files, and emojis on this chat screen. Other opt
 
 7. Once communication is concluded, agents can click **Mark as Done** on their chat screen to close the Slack thread. 
 
-    ![](https://hackmd.io/_uploads/r1I4WzA3n.png)
+    ![](https://imgur.com/cW40ECX.png)
 
 **Re-open a closed chat**
 

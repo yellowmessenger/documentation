@@ -44,7 +44,7 @@ To create an internal ticket, follow these steps:
 
 1. Open the ticket for which you require additional support within the My tickets tab.
 
-    ![image](https://hackmd.io/_uploads/r1B2vdDNJx.png)
+    ![image](https://imgur.com/4KZZinO.png)
 
 2. Click on the threads icon located in the top-right corner of the tickets screen. This will display all available Slack threads created, opened, or closed via the inbox for that specific ticket. A single thread can host multiple threads.
 
@@ -56,16 +56,16 @@ A **Slack Threads** is a focused discussion within a message. In a channel, user
 
 3. Click **+New thread**.
 
-    ![image](https://hackmd.io/_uploads/rkQyuuP41e.png)
+    ![image](https://imgur.com/JQ1W2Ge.png)
 
 
 4. Under the **To** field, you will see a list of available Slack channel names to which the App is added. Choose the channel to which you wish to send a support request.
 
-    <img src="https://hackmd.io/_uploads/SJ-Q1GCh3.png" width="50%"/>
+    <img src="https://imgur.com/NFhqBI7.png" width="50%"/>
 
 5. Once you've selected a channel, the ticket details will be auto-filled with the agent ID and name. Below that, you can type your query. Click **Send**.
 
-    <img src="https://hackmd.io/_uploads/Hy-eezChn.png" width="50%"/>
+    <img src="https://imgur.com/3BC5Cjc.png" width="50%"/>
 
 
 :::note
@@ -76,7 +76,7 @@ You can only send text, images, files, and emojis on this ticket body. Other opt
 6. After the query is sent, a new message will be generated in the selected Slack channel. Any slack user can review the message on Slack and respond within the same thread.
 
     Sample screenshot of an internal ticket created in the the Salck channel: 
-    ![](https://hackmd.io/_uploads/BygCgGCh2.png)
+    ![](https://imgur.com/PZerN6W.png)
 
 
 :::note
@@ -88,7 +88,7 @@ You can only send text, images, files, and emojis on this ticket body. Other opt
 
 7. Once communication is concluded, agents can click **Mark as Done** on their ticket screen to close the Slack thread. 
 
-    ![image](https://hackmd.io/_uploads/rylOYuwEyx.png)
+    ![image](https://imgur.com/2M3vQwO.png)
 
 **Re-open a closed ticket**
 
@@ -96,7 +96,7 @@ Once ticket is closed, click to open it and select **Re-open**.
 
 <img src="https://imgur.com/7XoRduB.png" width="50%"/>
 
-<img src="https://hackmd.io/_uploads/H1bUqOPNkl.png" width="40%"/>
+<img src="https://imgur.com/NHV4SVh.png" width="40%"/>
 
 
 

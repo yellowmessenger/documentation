@@ -45,7 +45,7 @@ Choose a method and follow the below steps to create a view:
 
 1. Navigate to the **Inbox** and select the Chats menu option.
 
-    <img src="https://hackmd.io/_uploads/HyHQmJyfa.png" alt="drawing" width="50%"/>  
+    <img src="https://imgur.com/hSssSWf.png" alt="drawing" width="50%"/>  
 
 2. Click **+Create view**. 
 
@@ -56,7 +56,7 @@ Choose a method and follow the below steps to create a view:
     - Choose the **visibility** setting. **Only me** will display the view exclusively to admins, while **All agents** will grant access to all agents for chats assigned to them.
     - Apply filters, such as **date range, source (channels), tags, groups, agent names, chat statuses**, and **Custom fields**.
 
-    ![](https://hackmd.io/_uploads/rkJTEJ1zT.png)
+    ![](https://imgur.com/l6Jh8P4.png)
 
 :::note
 - No duplicate view names are permitted.
@@ -73,22 +73,22 @@ Choose a method and follow the below steps to create a view:
 
 1. Open **Inbox** and access the Chats section. Click on the filter option.
 
-    <img src="https://hackmd.io/_uploads/BJaDIk1Gp.png" alt="drawing" width="50%"/>
+    <img src="https://imgur.com/UFYxFZY.png" alt="drawing" width="50%"/>
 
 2. Apply the desired filters, and then click **Apply filter**. 
 
-    ![](https://hackmd.io/_uploads/BJO38J1Mp.png)
+    ![](https://imgur.com/F8mwNaN.png)
 
 3. While viewing the filtered results, you will find an option to save this view (or clear filters). Click the checkmark to **Save as view**.
 
-    <img src="https://hackmd.io/_uploads/BJXzDk1fa.png" alt="drawing" width="50%"/>
+    <img src="https://imgur.com/x5mubpu.png" alt="drawing" width="50%"/>
 
 4. **Create view** tab will appear on the right side; complete the following details:
     - Specify a **name** for your Custom view.
     - Choose the **visibility** setting. **Only me** will display the view exclusively to admins, while **All agents** will grant access to all agents for chats assigned to them.
     - The selected filters are applied by default.
 
-    ![](https://hackmd.io/_uploads/H1muDkJGT.png)
+    ![](https://imgur.com/2VoINFb.png)
 
 :::note
 - No duplicate view names are permitted.
@@ -114,11 +114,11 @@ Regardless of the methods used to create custom views, you can find and access t
 
 - To view these custom views, click on **Shared view** located under the chat menu.
 
-    <img src="https://hackmd.io/_uploads/BkNb_JJMT.png" alt="drawing" width="50%"/>
+    <img src="https://imgur.com/IbTN1Kq.png" alt="drawing" width="50%"/>
 
 - By clicking on the selected custom view name, you will be directed to a page filtered to display these specific chats. To return to other views or chat types, simply click on the chat's menu.
 
-    <img src="https://hackmd.io/_uploads/SyZNrJyMa.png" alt="drawing" width="50%"/>
+    <img src="https://imgur.com/nxoxllD.png" alt="drawing" width="50%"/>
     
     
 #### Editing and Deleting Custom Views:
@@ -129,7 +129,7 @@ The options to edit and delete custom views are exclusively available to Inbox a
 2. By clicking the edit icon, the custom views tab will open on the right-hand side, permitting the necessary modifications to be made. Save the changes after completing the edits.
 3. Deleting a custom view is straightforward, click the delete icon and confirm the action.
 
-<img src="https://hackmd.io/_uploads/H1oysNUQT.png" alt="drawing" width="50%"/>
+<img src="https://imgur.com/u6URYw7.png" alt="drawing" width="50%"/>
 
 
 
@@ -140,6 +140,6 @@ If you delete the custom fields (within Settings), custom views will change and 
 - When a custom view is created with just one custom field filter and that custom field is deleted, that custom view will display all the existing tickets(without any filter). Thus you are urged to delete the view or add new filters.
 - When a custom view is created with a custom field filter along with other filters and that custom field is deleted, you will find inaccurate results within the view. You can delete the view or update the filters. 
 
-![image](https://hackmd.io/_uploads/SJdX5UfDA.png)                                       
+![image](https://imgur.com/eRM14wD.png)                                       
 
 > To remove the warning message "Some filters were deleted, the results might not be accurate. Please review and save.", you can update the filter or create a new one by deleting the existing custom view.

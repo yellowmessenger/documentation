@@ -23,7 +23,7 @@ To navigating to the Chats section, click **Overview** > **Inbox**. Select **Cha
 
 
 On the chats section, you can find **Chats list**, **Message pane**, and **Details list**.
-![](https://hackmd.io/_uploads/SkZwRUgJT.png)
+![](https://imgur.com/IkBdLdg.png)
 
 :::note
 Agents can only search for the chats that are assigned to/transferred/collaborated with them while Admins can search within all the live chats.
@@ -61,7 +61,7 @@ Once a user starts searching, the default tabs would change to two fixed tabs - 
 
 Details search provides results from chat meta details like name, ticket ID, description, etc, which searches from the details pane. 
 
-![](https://hackmd.io/_uploads/rkNxkweJa.png)
+![](https://imgur.com/KSgcKsJ.png)
 
 The results can be changed based on the search items you are looking for. The following can be searched for using in details search:
 
@@ -79,7 +79,7 @@ The search result changes when you switch from details to message search.
 
 This search shows results from content within the conversation i.e searches the keyword you are looking for within the messages.
 
-![](https://hackmd.io/_uploads/SyP0RLxya.png)
+![](https://imgur.com/DXUfYHs.png)
 
 The keyword "agent" is searched from the entire list of chat messages and gives the exact place of the keyword in the conversation which will be highlighted for a quick view.
 
@@ -94,7 +94,7 @@ The number displayed next to both the search tabs in the above image indicates t
 
 When a user does a message search and clicks on any of the search results, they will be taken/scrolled to that particular message in their entire conversation (each message has its message ID for reference). Here the entire exchange will be highlighted as it is currently not possible to just highlight the matching term.
 
-![](https://hackmd.io/_uploads/H1cTywekp.png)
+![](https://imgur.com/6FMHJos.png)
 
 
 

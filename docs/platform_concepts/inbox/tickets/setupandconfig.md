@@ -68,15 +68,15 @@ To forward mails from the email chatbox to the yellow.ai platform, follow the be
 3. Log in to your Outlook account. Click on the **Outlook settings** icon in the top right corner.
 4. Navigate to Mail and **select Forwarding and IMAP**.
 5. Toggle the **Enable forwarding** switch.  
-    ![image](https://hackmd.io/_uploads/rytJbwsdC.png)      
+    ![image](https://imgur.com/UWrlUyu.png)      
 6. Under the **Forward my email to** text box, enter the forwarding address you copied from your Yellow.ai bot (example format: bot-ID_ID@parse.yellow.chat).
-![image](https://hackmd.io/_uploads/SyAZGwiOR.png)     
+![image](https://imgur.com/QSLZnS5.png)     
 7. Confirm forwarding in Yellow.ai:     
     - Open your Yellow.ai bot and go to **Inbox > Chats > Bot messages.**
     - Look for an automated message requesting confirmation to forward emails from your Outlook account to the forwarding address.
     - Click on the confirmation link in the message.
 
-![image](https://hackmd.io/_uploads/SkVFXvidA.png)
+![image](https://imgur.com/tMMbZNB.png)
 
 8. Check synced emails:
     - After confirming, emails sent to your Outlook email ID will appear in the Yellow.ai inbox under **Inbox > Tickets**.
@@ -88,4 +88,4 @@ To forward mails from the email chatbox to the yellow.ai platform, follow the be
 
 The email ticketing toggle must be enabled from the Inbox settings. Explained in detail [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing)
 
-![](https://hackmd.io/_uploads/S12xu_lvn.png)
+![](https://imgur.com/eYDAFni.png)

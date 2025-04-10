@@ -3,7 +3,7 @@ title: Components of chat screen and user details
 sidebar_label :  Chat screen & user details
 ---
 
-![](https://hackmd.io/_uploads/r1V6zyJkp.png)
+![](https://imgur.com/E4OEjsp.png)
 
 :::info
 AI features on the chat screen are listed in the [Generative AI article](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/genai). 
@@ -18,7 +18,7 @@ You can chat with the customer on this screen. This screen has the following fun
 
 Simply type in any text and hit send button (or enable enter to send if you want the messages to be sent when you press the enter key).  
 
-<img src="https://hackmd.io/_uploads/rkfSF11y6.png" alt="drawing" width="70%"/>    
+<img src="https://imgur.com/MdhKLzK.png" alt="drawing" width="70%"/>    
 
 
 :::note
@@ -47,7 +47,7 @@ The chat interface will display an indication to show that a draft has been crea
 Canned response can be used to reduce the manual effort on sending frequent replies. Agent can simply select a canned response instead of typing the whole message multiple times and send it to the customer.  
 An agent can add [configured canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) from the dropdown by clicking the shortcut **#** followed by the relevant search term.   
 
-<img src="https://hackmd.io/_uploads/SyalqJy1p.png" alt="drawing" width="50%"/>    
+<img src="https://imgur.com/7z9eDBd.png" alt="drawing" width="50%"/>    
 
 :::note
 Quickly find canned responses by entering relevant keywords/tags or searching within the content. Learn more about the advance search functionality [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses).
@@ -59,7 +59,7 @@ Quickly find canned responses by entering relevant keywords/tags or searching wi
 
 Agents can type the shortcut **/** on the screen and the agent actions (automated with the help of Automation flows) will be displayed in the dropdown list. Agent can select an action that is automated and the results are fetched easily without multiple manual steps. 
 
-<img src="https://hackmd.io/_uploads/rJPF91kyp.png" alt="drawing" width="100%"/>    
+<img src="https://imgur.com/snhYClk.png" alt="drawing" width="100%"/>    
 
 > Learn more about [agent actions here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/agent-actions).
 
@@ -69,7 +69,7 @@ Agents can type the shortcut **/** on the screen and the agent actions (automate
 
 Upload images/files to your message and add emojis to your text to make the conversation more interactive. 
     
-<img src="https://hackmd.io/_uploads/SJRtj1yka.png" alt="drawing" width="50%"/>    
+<img src="https://imgur.com/siDMtvQ.png" alt="drawing" width="50%"/>    
 
 :::note
 On **Whatsapp channel** you can upload a maximum size of 5 MB for images and 16 MB for videos/files.
@@ -94,11 +94,11 @@ When [auto translate](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-
 Once the customers language is detected, the messages sent by the agent in agent's default language are automatically translated to the customers language. 
  - Agents can **toggle** and see both the original and translated message by clicking on the label - **Show translated / Show original**.
 
-     <img src="https://hackmd.io/_uploads/SytNUYZv3.png" alt="drawing" width="50%"/>
+     <img src="https://imgur.com/yFccnaG.png" alt="drawing" width="50%"/>
  
  - If for any reason, the agents want to send a generic message such as an address without being translated, they can disable the auto-translate toggle in the chat input box. 
 
-    <img src="https://hackmd.io/_uploads/ryhtwtbPn.png" alt="drawing" width="50%"/>
+    <img src="https://imgur.com/nZNVrJ7.png" alt="drawing" width="50%"/>
 
 - The toggle displayed in the below image is the language identifier. For example, if the user responds in French, the language in the toggle is updated to French automatically. 
     <img src="https://i.imgur.com/N6emsoU.png" alt="drawing" width="70%"/>    
@@ -115,11 +115,11 @@ Once the customers language is detected, the messages sent by the agent in agent
 
 You can click **Copy chat URL** to fetch the URL of the chat and share it with the team members who have access to Inbox. You can enable [IP whitelisting](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/security-auth/chattranscriptsecurity) for these URLs. 
 
-![](https://hackmd.io/_uploads/SkVEPIx1p.png)
+![](https://imgur.com/NyAPuOg.png)
 
 Chats can be saved/downloaded in CSV and PDF format to the local system.           
 
-![](https://hackmd.io/_uploads/H1T8DLgya.png)
+![](https://imgur.com/i1djSjr.png)
 
 > Chats in this link will not be visible after 6 months. 
 
@@ -130,7 +130,7 @@ Chats can be saved/downloaded in CSV and PDF format to the local system.
 To report messages that may not have been received by customers, simply click on the "Report" option within your messaging platform, and then select the messages in question. This action is designed to alert agents and prompt them to investigate any potential message delivery problems to ensure a smooth communication experience.
 
 
-![](https://hackmd.io/_uploads/Bk9fhIg16.jpg)
+![](https://imgur.com/XhsRBQr.jpg)
 
 ---
 
@@ -138,7 +138,7 @@ To report messages that may not have been received by customers, simply click on
 
 The internal ticketing feature enhances collaboration among L1 and L2 support agents through Slack threads. 
 
-![](https://hackmd.io/_uploads/ryNr-BGTn.png)
+![](https://imgur.com/9F9VcRd.png)
 
 
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/internal-ticket) for a detailed documentation on slack threads. 
@@ -149,7 +149,7 @@ The internal ticketing feature enhances collaboration among L1 and L2 support ag
 
 The live chat interface includes an automatic indicator that remains visible until the agent sends the first response. This indicator cannot be customized and serves as a visual cue to indicate that the agent has not yet provided a response.
 
-<img src="https://hackmd.io/_uploads/HkvlpoZOh.png" alt="drawing" width="50%"/> 
+<img src="https://imgur.com/p2Abwhx.png" alt="drawing" width="50%"/> 
 
 
 ----
@@ -193,7 +193,7 @@ To execute a pre-configured flow within the **Automation** module during a live 
 
 To use this feature, simply type `@bot` on the reply screen, followed by the intent that will trigger the desired flow.
 
-![](https://hackmd.io/_uploads/BJec_RIOh.png)
+![](https://imgur.com/AP5SfAx.png)
 
 #### **@bot vs Agent Actions**
 
@@ -232,7 +232,7 @@ To implement it, you can create a new AI-agent with custom flows and integrate i
 
 Agents can access the agent assist bot by pressing Cmd + K (Ctrl + K on Windows) or clicking on its icon within the chat interface.
 
-![](https://hackmd.io/_uploads/rJf_D7Jxp.png)
+![](https://imgur.com/CKkWVwI.png)
 
 > Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/agentassistbot) for a detailed documentation on agent assist bot. 
 
@@ -249,17 +249,17 @@ These options can be customized for each agent via. [settings](https://docs.yell
 
 The following details are available on this screen to provide agents with more context:
 
-![](https://hackmd.io/_uploads/HyYE6Ilkp.png)
+![](https://imgur.com/DE7Tu3t.png)
 
 
 
 | Type | Fields | Description|
 | -------- | -------- | -------- |
-|Contact details (integrated with User360)|| <img src="https://hackmd.io/_uploads/B1PXfVNR3.png" alt="drawing" width="90%"/>  <br/> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-cdp#use-user360-to-enhance-customer-context-in-inbox).|
+|Contact details (integrated with User360)|| <img src="https://imgur.com/FL0esjV.png" alt="drawing" width="90%"/>  <br/> Learn more [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-cdp#use-user360-to-enhance-customer-context-in-inbox).|
 ||Name| User name auto updated from the information provided to AI-agent|
 ||Phone number|Phone number auto updated from the information provided to AI-agent|
 ||Email ID|Email auto updated from the information provided to AI-agent|
-||View contact | <img src="https://hackmd.io/_uploads/HJyOiS40h.png" alt="drawing" width="70%"/><br/> Click to update contact information |
+||View contact | <img src="https://imgur.com/IPepTQo.png" alt="drawing" width="70%"/><br/> Click to update contact information |
 |Chat details||<img src="https://imgur.com/lfbtBaZ.png" alt="drawing" width="70%"/>|
 ||Chat ID| Assigned when the live chat request is created|
 ||Status ||
@@ -267,13 +267,13 @@ The following details are available on this screen to provide agents with more c
 ||Priority|Added when the live chat is raised (initially through Raise ticket action node)|
 ||Description| Added when the live chat is raised|
 ||Tags| Chats can be tagged by the agent. Select the [available tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) from the dropdown|
-|Details| |<img src="https://hackmd.io/_uploads/rJG1Gs4An.png" alt="drawing" width="60%"/>|
+|Details| |<img src="https://imgur.com/QGGARtt.png" alt="drawing" width="60%"/>|
 ||Internal notes|Agents can add a note regarding the conversation or Internal notes are updated here|
 ||Custom fields| Inbox provides custom fields to fetch more insights from the customer. Configure and arrange the required custom fields. Learn [more](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields)|
-|Collaborators| | <img src="https://hackmd.io/_uploads/HkB5IUNA3.png" alt="drawing" width="60%"/><br/>More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu|
+|Collaborators| | <img src="https://imgur.com/U6PUkB4.png" alt="drawing" width="60%"/><br/>More than one agent can help to resolve a live chat (similar to a group chat). Add collaborator names by selecting the names from the dropdown menu|
 | Activity log| | <img src="https://imgur.com/sMf9Wb3.png" width="70%"/> <br/> Click **View recent activity** to gain a comprehensive understanding of customer activity |
-|Website activity||<img src="https://hackmd.io/_uploads/BJRrt8ECh.png" alt="drawing" width="70%"/> <br/> This includes links to the URLs that your customer previously visited|
-|Device details| |<img src="https://hackmd.io/_uploads/r1IuF8ERn.png" alt="drawing" width="70%"/> <br/>Details about the user device that the AI-agent tracks |
+|Website activity||<img src="https://imgur.com/fB2CZ8G.png" alt="drawing" width="70%"/> <br/> This includes links to the URLs that your customer previously visited|
+|Device details| |<img src="https://imgur.com/3VERizN.png" alt="drawing" width="70%"/> <br/>Details about the user device that the AI-agent tracks |
 
 
 
