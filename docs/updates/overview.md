@@ -13,6 +13,10 @@ Here’s how your release notes can be structured in a professional, concise, an
 
 ---
 
+## Terminology update: Skill is now Workflow <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/new.png" alt="drawing" width="5%"/>
+
+We have now changed the term **Skill** to **Workflow** across the Yellow.ai platform. All existing skills are now labeled as workflows in Dynamic chat node and Agent AI. You will see this updated terminology reflected consistently throughout the UI for a more intuitive experience.
+
 ## VoiceX: The Future of Human-Like Voice AI
 
 We’re introducing VoiceX, our next-generation Voice AI platform, built to enable seamless, real-time customer conversations.
