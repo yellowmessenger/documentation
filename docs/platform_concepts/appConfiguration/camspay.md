@@ -28,7 +28,7 @@ You can add a maximum of **15 merchant accounts**.
 
 The webhook URL serves as a callback endpoint where Camspay can send notifications or updates regarding the payment related events.
 
-![image](https://hackmd.io/_uploads/HykvXsSAkx.png)
+![image](https://imgur.com/4C4tkYB.png)
 
 :::info
 
@@ -40,7 +40,7 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/over
 ## 3. Enable integration event in your bot
 
 Open **Automation > Events > Integrations > Camspay payment status** and select **Activate** by clicking the menu next to it.                            
-![image](https://hackmd.io/_uploads/ByGxXjSR1x.png)
+![image](https://imgur.com/xWuRPp9.png)
 
 **Camspay Payment Status** event allows you to execute specific actions in response to events. For example:
 - Display a message in the bot conversation when a payment is successful.
@@ -58,7 +58,7 @@ Click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/over
 
 In the start node of a flow, select **Trigger type** as **Event** and select **Camspay payment status** next to it. 
 
-<img src="https://hackmd.io/_uploads/r1c4IjHCyl.gif" alt="drawing" width="80%"/>
+<img src="https://imgur.com/CrSHl4K.gif" alt="drawing" width="80%"/>
 
 
 :::info
@@ -72,9 +72,9 @@ Once your Camspay account is successfully connected, configure the node, follow:
 
 1. Go to Development/Staging environment and navigate to **Automation** > **Build** > Select the flow where you want to add the Generate payment link node.
 2. Click **Add node** > **Integrations** > **Camspay**.                
-<img src="https://hackmd.io/_uploads/HykIPjHCye.png" alt="drawing" width="80%"/>            
+<img src="https://imgur.com/vOIg0GN.png" alt="drawing" width="80%"/>            
 3. Choose the **Action**, **Create payment request** and configure the input fields.
-<img src="https://hackmd.io/_uploads/SyVrfsrRJl.png" alt="drawing" width="100%"/>
+<img src="https://imgur.com/s8T8z84.png" alt="drawing" width="100%"/>
 
 Details within the selected action:
 
