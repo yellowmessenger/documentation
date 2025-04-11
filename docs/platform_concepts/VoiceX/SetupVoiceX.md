@@ -14,7 +14,7 @@ Follow these guidelines to develop a VoiceX conversational AI agent.
 3. Click **Create bot**.  
 
 
-![image](https://hackmd.io/_uploads/r1fB4eOo1g.png)
+![image](https://imgur.com/t2mYyvW.png)
 
 
 ### 2. Map to an IVR Phone Number  
@@ -23,7 +23,7 @@ The bot must be hosted on a specific server. Contact support with your **Bot ID*
 
 For development purposes, request a number mapped to one of the available servers.  
 
-![image](https://hackmd.io/_uploads/ByY04e_j1g.png)
+![image](https://imgur.com/UG1XkWH.png)
 
 #### Deploy on Yellow.ai Server  
 
@@ -47,7 +47,7 @@ To ensure the call is routed through the correct server:
 2. Check **Welcome Message Logs**.  
 3. Look for **"machine_id"** – it should match one of the supported deployments.  
 
-![image](https://hackmd.io/_uploads/BJalDCDjyl.png)  
+![image](https://imgur.com/gh2eD04.png)  
 :::  
 
 To view the list of enabled IVR numbers for each region, navigate to **Channels > IVR**.  
@@ -87,7 +87,7 @@ To set up STT, go to:
 Only **English and Hindi** have been thoroughly tested. If you experience issues with other languages, contact the **product team**.  
 :::  
 
-![image](https://hackmd.io/_uploads/H1TneRPs1x.png)  
+![image](https://imgur.com/qQ81JMl.png)  
 
 ### 5. Configure Text-to-Speech (TTS)  
 
@@ -150,7 +150,7 @@ Create the following **variables** (using any custom name):
 
 
 
-![image](https://hackmd.io/_uploads/B1w9Y0Psyx.png)
+![image](https://imgur.com/BudHN6z.png)
 
 :::note  
 If the **Custom Voice Options** are not visible in the **Question/Text Node** settings, contact the **#voice-support** team on Slack to get them enabled.  
@@ -158,14 +158,14 @@ If the **Custom Voice Options** are not visible in the **Question/Text Node** se
 
 **Step 2**: Set the **Voice ID** by selecting a voice from the Eleven Labs portal and sharing it with the **Voice Support Team**.  
 
-![image](https://hackmd.io/_uploads/HJS9GADjyg.png)  
+![image](https://imgur.com/Iqai9uQ.png)  
 
 ### 6. Connect to Execute Flow  
 
 1. Create new flows using the **Dynamic Chat Node**.  
 2. Connect the **Question/Text Node** to the **Execute Flow Node** and select the next flow to continue the call.  
 
-![image](https://hackmd.io/_uploads/BJXXMCPiJx.png)  
+![image](https://imgur.com/cjpxdtp.png)  
 
 ### 7. Build Flows Using Dynamic Chat Node  
 
@@ -187,7 +187,7 @@ If you have a Google account but cannot call the IVR phone number (e.g., due to 
 3. Go to **Add people** > **Call**.  
 4. Paste the IVR phone number and initiate the call.  
 
-![Google Meet Call](https://hackmd.io/_uploads/H1TtbRns1g.png)  
+![Google Meet Call](https://imgur.com/ciXo2tE.png)  
 
 #### Direct Phone Call  
 

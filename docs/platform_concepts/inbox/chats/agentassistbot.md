@@ -52,7 +52,7 @@ Agent assist bot helps agents efficiently complete their tasks directly within t
     > All the data within Inbox (like contacts and custom fields) is accessible in **Automation**.
 3. Test and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot. 
 4. Navigate to **Channels** > **Chat widgets** > **Settings** and enable the option **Show the conversation history** and disable **Create a new session for every new tab**.
-    ![](https://hackmd.io/_uploads/Bk07mmklT.png)
+    ![](https://imgur.com/oCaGBHw.png)
 5. After completing the above steps, reach out to Yellow.ai's Inbox team to integrate your Assist bot with the chat screen. 
 
 -------
@@ -144,9 +144,9 @@ When agents trigger the assist bot within the Inbox, it receives a complete set 
 To use the payload details within flows, follow these steps: 
 
 1. Use the [Variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#22-variables) node to initialize variables. Use this format `{{{profile.payload.Your_Field_Name}}}` to extract data from the payload.
-    ![](https://hackmd.io/_uploads/HkIizVexp.png)
+    ![](https://imgur.com/QWF8rCj.png)
 2. Add multiple flows/nodes using the payload variables. These flows can be employed for various purposes, such as API calls and other automation tasks.
-    ![](https://hackmd.io/_uploads/SyYQmExlT.png)
+    ![](https://imgur.com/Qbcvx42.png)
 
 >  To learn more about payload data extraction, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/chat-widget-payload#11-pass-payload-data-via-bot-script).
 
@@ -157,8 +157,8 @@ To use the payload details within flows, follow these steps:
 > Inbox agents and inbox admins have access to the assist bot within the chat screen.
 
 - Inside the Inbox chat screen, simply press Cmd + K (Ctrl + K on Windows) or click on the assist bot icon within the chat interface to open the assist bot.
-    ![](https://hackmd.io/_uploads/rygEwmyxp.png)
+    ![](https://imgur.com/9I1LQll.png)
 
 - Each chat session will include a dedicated bot instance, allowing agents to ask questions or perform various operations tailored to the ongoing customer interaction.
-    ![](https://hackmd.io/_uploads/rJf_D7Jxp.png)
+    ![](https://imgur.com/kGgtMwe.png)
 

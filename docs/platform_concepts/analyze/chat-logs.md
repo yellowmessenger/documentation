@@ -31,7 +31,9 @@ To access the conversation logs:
 
 A session refers to a continuous interaction between a user and the AI-agent within a specific timeframe. It begins when the user starts interacting with the AI-agent and ends when the interaction is concluded, either by the user leaving or the session timing out.
 
-Each user is identified by a unique ID (UID), and a conversation log is generated for each UID, capturing the entire context of the interaction. Some logs retain up to 5 days of conversation history.
+Each user is identified by a unique ID (UID), and a conversation log is generated for each UID, capturing the entire context of the interaction. Some logs retain up to 5 days of conversation history. 
+
+> You can search for a particular conversation using UID/SID. 
 
 For different applications, the session duration varies: for web apps and WhatsApp, sessions last for 24 hours.
 

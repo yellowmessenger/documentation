@@ -37,11 +37,11 @@ The chat trends tab provides valuable insights into live chat activity and perfo
 ### Filter and organize chat data
 
 1. **Tag-based chat data filtering**: Utilize the filter option to sort chat details based on specific tags. Simply choose a tag from the dropdown menu, as tags are assigned during chat/ticket creation.
-    ![](https://hackmd.io/_uploads/H1O1KxRUh.png)
+    ![](https://imgur.com/fszF8RV.png)
 
 2. **Channel-based chat data filtering**: Easily filter chats based on different channels by selecting the desired channel from the dropdown menu. All active channels will be listed for you to choose from.
     
-    <img src="https://hackmd.io/_uploads/BJsXtgRUn.png" alt="drawing" width="80%"/>
+    <img src="https://imgur.com/pTsJ79O.png" alt="drawing" width="80%"/>
 
 ---------
 
@@ -104,10 +104,10 @@ The first and current response timers continue running (indicated in red) until 
 :::
 
 - When a new chat is assigned, a new row is appended to the table and marked with the `new` tag for 5 seconds, allowing for easy identification.
-    ![](https://hackmd.io/_uploads/H1OrBCmq2.png)
+    ![](https://imgur.com/NN8CXKt.png)
 
 - Upon resolution of a chat, the `chat resolved` tag is added next to the corresponding chat details.
-    ![](https://hackmd.io/_uploads/HkgDHRmqh.png)
+    ![](https://imgur.com/UwbQQaA.png)
 
 - You can filter the data based on different channels or agent emails. Click **Apply filters** to apply and **Clear filters** to delete the applied filters. 
 
@@ -115,7 +115,7 @@ The first and current response timers continue running (indicated in red) until 
 
 - A table-level filter can be applied to monitor specific **agents** or **group** performance or **inactivity status** of the agent or the user. By using the filter next to the column name, you can closely observe the chats handled by a particular agent or assess a group's performance. 
 
-    <img src="https://hackmd.io/_uploads/SyGvWCm53.png" alt="drawing" width="30%"/>  
+    <img src="https://imgur.com/sV7s9dP.png" alt="drawing" width="30%"/>  
 
     > When filtered by agents, all tickets assigned to that agent will be visible.
 
@@ -176,7 +176,7 @@ You can filter the email trends data based on specific **tags, groups, agents, a
 
 You can quickly see the count of email tickets in various states such as **Unassigned, Unresolved, Opened, Pending, On-Hold, In-Progress, and Unassigned**.
 
-![](https://hackmd.io/_uploads/HyobEEgwn.png)
+![](https://imgur.com/NZfSm5A.png)
 
 ----
 
@@ -188,7 +188,7 @@ You can quickly see the count of email tickets in various states such as **Unass
 - **Understand the performance of agents handling tickets**:         
     Get insights into the number of resolved and unresolved tickets for the day, as well as metrics like **first response time, average reply time, and average handling time** for the email tickets.
 
-![](https://hackmd.io/_uploads/BkJaxEewh.png)
+![](https://imgur.com/OqfCRLA.png)
 
 ----
 
@@ -220,8 +220,8 @@ The Teams tab provides a consolidated view of agents and groups in one place, wi
 
 You have the option to apply filters and retrieve agent data based on their status, group, name, or email. Additionally, you can filter the groups by their group name or group code.
 
-![](https://hackmd.io/_uploads/rkoaPVevn.png)
-![](https://hackmd.io/_uploads/H14lu4xwn.png)
+![](https://imgur.com/zZJWOeP.png)
+![](https://imgur.com/UUFRy7B.png)
 
 ----
 
