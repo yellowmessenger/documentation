@@ -219,33 +219,33 @@ You can find these tags in two places:
 
    <img src="https://i.imgur.com/hbmBquG.png" alt="drawing" width="35%"/>
    
-### Skill configuration
+### Workflow configuration
 
-Skill configuration enables you to create workflows that can be linked to goals and invoked as needed within a conversation. These workflows operate in the background while control remains in the dynamic chat node.
+Workflow configuration enables you to create workflows that can be linked to goals and invoked as needed within a conversation. These workflows operate in the background while control remains in the dynamic chat node.
 
-Skills can perform various tasks such as calling functions, executing APIs, database operations, triggering user events, and more. This extends the AI-agent's capability to handle dynamic data. The workflow can include logical branching and integration nodes.
+Workflows can perform various tasks such as calling functions, executing APIs, database operations, triggering user events, and more. This extends the AI-agent's capability to handle dynamic data. The workflow can include logical branching and integration nodes.
 
-Adding skills to the dynamic chat node enhances goal-based conversations. For instance, in a travel scenario, a skill workflow can call a weather API based on the provided location to fetch weather conditions, aiding in travel planning.
+Adding Workflows to the dynamic chat node enhances goal-based conversations. For instance, in a travel scenario, a workflow can call a weather API based on the provided location to fetch weather conditions, aiding in travel planning.
 
-To configure a Skill in the dynamic chat node, follow these steps:
+To configure a Workflow in the dynamic chat node, follow these steps:
 
-1. Go to **Automation** > **Build** > **Flows** > **Create flow** > **+ Create skill** and create a flow to execute certain actions. For more detailed information on how to create a Skill, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-skill). 
+1. Go to **Automation** > **Build** > **Flows** > **Create flow** > **+ Create Workflow** and create a flow to execute certain actions. For more detailed information on how to create a Workflow, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys#create-a-skill). 
 
-   <img src="https://imgur.com/tnu6zWG.png" alt="drawing" width="100%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/workflow.png" alt="drawing" width="100%"/>
 
-2. Click **Skill configuration** and enable **Enable skill**.
+2. Click **Workflow configuration** and enable **Enable workflow** > **+ Add workflow**.
 
-   <img src="https://i.imgur.com/LtNyMPH.png" alt="drawing" width="90%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/addworkflow.png" alt="drawing" width="60%"/>
 
 3. Fill the following fields:
 
-   <img src="https://i.imgur.com/AB1XU3r.png" alt="drawing" width="70%"/>
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/workflowdetails.png" alt="drawing" width="50%"/>
 
-   a. **Skill**: Choose the skill to be utilized by the Dynamic Chat node.<br/> 
-   b. **Input to skill**: Choose the variable that holds the input for the skill.<br/> 
-   c. **Output from skill**: Choose the variable where you want to save the outcome of the skill.
+   a. **Workflow**: Choose the Workflow to be utilized by the Dynamic Chat node.<br/> 
+   b. **Input to Workflow**: Choose the variable that holds the input for the Workflow.<br/> 
+   c. **Output from Workflow**: Choose the variable where you want to save the outcome of the Workflow.
 
-4. Click **+ Link more skill** to add more skills.   
+4. Click **+ Add Workflow** to add more Workflows.   
 
 ### Goal configuration setting
 
