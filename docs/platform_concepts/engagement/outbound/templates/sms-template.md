@@ -111,7 +111,7 @@ Search Google for <_telecom_name DLT registration_> (e.g, Airtel DLT registratio
 2. [Jio](https://trueconnect.jio.com/#/home/entity-registration)
 3. [Vodafone](https://www.vilpower.in/signup/)
 4. [BSNL](https://www.ucc-bsnl.co.in/signup/)
-5. [Tata](https://telemarketer.tatateleservices.com:8082/#/tmpe-common-registration-01)
+5. [Tata](https://www.tatatelebusiness.com/regulatory-guidelines/)
 6. [PingConnect](https://pingconnect.in/entity/register-with)
 
 Upon successful creation of the DLT account, your brand will be assigned with the 19-digit Entity ID.

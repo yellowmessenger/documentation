@@ -170,14 +170,14 @@ In dynamic URL CTA, you can personalize the URL when sending out the notificatio
 
 Simply specify the static URL (excluding the dynamic path) when submitting it for approval. After approval, append the path with a specific variable before sending the notification to the targeted users.
 
-For example: If the URL is https://exampleshopping.com/checkout/{userId}
+For example: If the URL is `https://exampleshopping.com/checkout/{userId}`
 
 
    1. In the template configuration , just mention `https://exampleshopping.com/checkout/`
 
    2. When configuring campaign, specify the path variable (say `userId`).
 
-   3. When the campaign is sent, the user receives the URL https://exampleshopping.com/checkout/userId123
+   3. When the campaign is sent, the user receives the URL `https://exampleshopping.com/checkout/userId123`
 
    When the user clicks on CTA sent through notification, it redirects to the
    [Engage documentation](https://docs.yellow.ai/docs/platform_concepts/engagement/engage).

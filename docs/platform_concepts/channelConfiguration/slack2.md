@@ -319,7 +319,7 @@ After connecting your bot to your Slack channel, you can test your bot.
      
 #### Prerequisite
 
-* You need to create the respective intents and configure bot flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/create-a-bot). 
+* You need to create the respective intents and configure bot flows with the same intent. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/createfirstbot). 
 
 To test your bot on Slack, follow these steps:
 

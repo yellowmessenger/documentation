@@ -95,5 +95,5 @@ If you wish to explore how various providers calculate token quantities, you can
 
 * [Open AI token pricing](https://platform.openai.com/tokenizer)
 * [Azure Open AI token pricing](https://azure.microsoft.com/en-in/pricing/calculator/?service=openai-service)
-* [Anthropic token pricing](https://invertedstone.com/tools/claude-pricing/)
+* [Anthropic token pricing](https://www.anthropic.com/pricing#api)
 :::

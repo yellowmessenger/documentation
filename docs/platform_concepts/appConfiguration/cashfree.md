@@ -58,7 +58,7 @@ This action sends a POST request for creating a new transaction and generates th
 |Customer ID|The unique Identification for the Payer|9999999999|
 |Customer Email|Email of the payer|john@test.com|
 |Order Tags|Tags that are to be attached with the order|{‘comment’: ‘note to be appended’}’|
-|Notify Url|Copy Webhook URL from cashfree card at integration page|[Copy link](https://dummyurl.yellowmessenger.com/integrations/genericIntegration/cashfree/x1674?id=C1f1Z1htZNZ%2BFYF6c76riwNWY%3D)|
+|Notify Url|Copy Webhook URL from cashfree card at integration page|Ex: `https://dummyurl.yellowmessenger.com/integrations/genericIntegration/cashfree/x1674?id=C1f1Z1htZNZ%2BFYF6c76riwNWY%3D`)|
 
 **Sample Success Response**
 

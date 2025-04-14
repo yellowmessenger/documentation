@@ -83,8 +83,8 @@ This flow allows users to edit the current cart details - change the quantity or
 
 1. **Triggers** when the user selects **Edit cart** is selected on the **Add to cart** flow. 
 2. **Verifies cart items**: Checks if the cart is empty using the `IsCartEmpty` (**Function** and **Condition** nodes). 
-			* If it is empty, the user will be directed to the [Browse products flow](). 
-			* If the cart is not empty, it shows the current cart details (`ShowCart` function) of the user.
+   * If it is empty, the user will be directed to the [Browse products flow](). 
+   * If the cart is not empty, it shows the current cart details (`ShowCart` function) of the user.
 3. **Edit cart**: Uses the **Carousel** node to display the summary of the existing cart (all the items with quantity and price) along with the options to edit the item quantity and remove the item (for each item with a unique product ID). It shows up relevant options based on the user input (**Condition** node). 
 4. **Edit item**: Allows editing the quantity (for that product ID) using **Quick replies** (and **WhatsApp list**). 
    Stores the new quantity using the `editcart` function in a variable and updates it in the database (user details). 
@@ -185,7 +185,7 @@ With this flow, users can get instant answers through FAQs or choose to chat wit
 > Add more such questions as **Quick reply** options or directly train them on the FAQ page. 
 > Show more support options if required such as Ask the community, and Refer to docs.
 
-6. **Chat with support**: Captures the user information using [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and uses it to fetch the user details. It also captures the query using the [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and creates a ticket assigning it to an Inbox agent ([Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node). The chat is handled by the [Inbox module](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox#4-try-live-agent-module). 
+6. **Chat with support**: Captures the user information using [prompt nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and uses it to fetch the user details. It also captures the query using the [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes) and creates a ticket assigning it to an Inbox agent ([Raise ticket](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#17-raise-ticket) node). The chat is handled by the [Inbox module](https://docs.yellow.ai/docs/platform_concepts/inbox). 
 
 ![](https://i.imgur.com/eNr7vI0.png)
 

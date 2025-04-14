@@ -109,7 +109,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 #### :pushpin: Tips
 
 - Display varied number of sub categories by adding(or deleting) new buttons to step 1 (carousel node). Update the newly added values in @explore_by_channel on the entities page. 
-- Use other [message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes) like files or carousel to display product details. 
+- Use other [message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) like files or carousel to display product details. 
 - Next action carousel node can also have options to connect to an agent or any of your custom flows. 
 
 ------
@@ -148,7 +148,7 @@ The start trigger is a starting point at which the flow gets triggered(or execut
 
 1. **Start trigger**: This flow is triggered when the bot user selects **Book a demo** button when menu options are displayed. 
     - It can also be triggered at any point of the conversation when the bot user types a sentence that matches with the intent- *I want to book a demo* options. You can customize this [intent](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents).
-2. **Collect user details and identify the channel**: [Text nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#1-text) are used to create a conversational flow. [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#12-name), [Email](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#15-email) and [Phone](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-phone) nodes are used to collect user details. [Channel filter](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) (condition node) is used to identify the channel in which the user is conversing in, based on the channel, date and time are collected. 
+2. **Collect user details and identify the channel**: [Text nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/text-node) are used to create a conversational flow. [Name](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#12-name), [Email](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#15-email) and [Phone](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#13-phone) nodes are used to collect user details. [Channel filter](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/logic-nodes#2-channel-filter) (condition node) is used to identify the channel in which the user is conversing in, based on the channel, date and time are collected. 
 
 > Different methods(nodes) are used for different channels as the format to obtain the date and time in each channel is different. 
 

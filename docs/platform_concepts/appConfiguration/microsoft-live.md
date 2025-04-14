@@ -47,7 +47,7 @@ You need to fetch the client secret as it is required to configure the customer 
 
 To configure the Admin centre, follow the steps mentioned below:
 
-1. Open your organization URL, (it looks this https://org1a1b1c.crm8.dynamics.com/) and click **Customer Service Admin Center**.
+1. Open your organization URL, (sample: `https://org1a1b1c.crm8.dynamics.com/`) and click **Customer Service Admin Center**.
 
    ![](https://i.imgur.com/00VWzFp.png)
 
@@ -75,7 +75,7 @@ To configure the Admin centre, follow the steps mentioned below:
 
 You need to configure work stream to route the chats to the right queues and right agents.
 
-1. Open your Microsoft workspace (for example: https://org1a53c877.crm8.dynamics.com) > **Workstream** > **+ New workstream**. In **Name**, enter a name for your workstream and in **Type** select **Message**.
+1. Open your Microsoft workspace (for example: `https://org1a53c877.crm8.dynamics.com`) > **Workstream** > **+ New workstream**. In **Name**, enter a name for your workstream and in **Type** select **Message**.
 
    ![](https://i.imgur.com/lcTzw0K.png)
 

@@ -28,9 +28,9 @@ In a two-tier environment, you can connect an integration app in the Development
 
 
 
-1. On the [Cloud platform](https://cloud.yellow.a), Navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **Instamojo**.
+1. On the [Cloud platform](https://cloud.yellow.ai), Navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **Instamojo**.
 2. In G**ive account name,** enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
-3. Enter the **Client ID** and *C*lient Secret** that was captured using the previous section.
+3. Enter the **Client ID** and **Client Secret** that was captured using the previous section.
 4. For sandbox environment use ```https://test.instamojo.com``` as baseUrl and for production env use ```https://api.instamojo.com``` as baseUrl
 3. To add multiple accounts, click ***+ Add account** and follow the above mentioned steps. You can add a maximum of 5 merchant accounts.
 
@@ -76,7 +76,7 @@ This action allows you to generate payment link at any point in a conversation.
 |**Purpose**|Purpose of the payment request |Iphone| 
 |**Send Email**	| Flag to send request link via email. If send_email is true, a request email will be sent to the email supplied. If send_email is true but no email is supplied, request creation will throw an error |False|
 |**Send SMS** |Flag to send request link via SMS. If send_sms is true, a request SMS will be sent to the phone number supplied. If send_sms is true but no phone number is supplied, request creation will throw an error | False|
-| **StatusCallbackUrl**|  Copy Webhook URL from the Instamojo card at the integration page.Example: https://dummyurl.yellowmessenger.com/integrations/genericIntegration/instamojo/x16450274?id=l%2B%2FD1yhpida7KtXeCEVUofPRsNBY%3D|
+| **StatusCallbackUrl**|  Copy Webhook URL from the Instamojo card at the integration page. Example: `https://dummyurl.yellowmessenger.com/integrations/genericIntegration/instamojo/x16450274?id=l%2B%2FD1yhpida7KtXeCEVUofPRsNBY%3D`|
 
 
 ---
