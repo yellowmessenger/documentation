@@ -169,6 +169,7 @@ module.exports = {
   items: [
     "cookbooks/channels/Viber-business",
     "cookbooks/channels/resolve-meassaging-errors",
+    "cookbooks/channels/gushup",
     {
       type: "category",
       label: "Chat widget",

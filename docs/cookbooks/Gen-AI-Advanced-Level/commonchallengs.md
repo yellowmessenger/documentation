@@ -20,15 +20,15 @@ Gen AI/LLMs are powerful tools with their own set of advantages and limitations.
 
 ### Picking the right model by evaluating early
 
-- **GPT-3.5/GPT-3.5 Turbo**: More cost-effective but may exhibit hallucinations, especially with non-specific instructions. They can support 1-2 skills stably, plus a knowledge base skill, but may still show some level of hallucination. 
-- **GPT-4**: Handles 8-10 skills comfortably and is better for complex cases. Upgrading to newer models when needed can save time and effort.
+- **GPT-3.5/GPT-3.5 Turbo**: More cost-effective but may exhibit hallucinations, especially with non-specific instructions. They can support 1-2 workflows stably, plus a knowledge base workflow, but may still show some level of hallucination. 
+- **GPT-4**: Handles 8-10 workflows comfortably and is better for complex cases. Upgrading to newer models when needed can save time and effort.
 - **Complex Cases**: GPT-3.5 or older models may struggle with complex scenarios. If issues persist, consider upgrading to a newer model.
 - **Dynamic Chat Nodes**: If using GPT-3.5 models, ensure specific points for completion versus continuation. Adding dummy inputs may help manage unexpected exits.
 - **Rich Media**: Features like rich media and quick replies are only available for GPT-4. While they can be enabled for lower models, they may not perform as expected.
-- **Skill Combination**: Combine skills in a sequence as INPUT → SKILL → OUTPUT. For example, if two APIs need to run sequentially without intermediate data, combine them into a single skill.
+- **Workflow Combination**: Combine workflows in a sequence as INPUT → WORKFLOW → OUTPUT. For example, if two APIs need to run sequentially without intermediate data, combine them into a single workflow.
 
 :::note
-It’s crucial to understand use cases, budgets, and context to select the right model. Higher cost does not always equate to better performance for every use case. GPT-3.5 may not be suitable for complex scenarios with many skills. You can use different models in different nodes within the same bot, but select GPT-3.5 only for very simple use cases or if cost is a significant constraint.
+It’s crucial to understand use cases, budgets, and context to select the right model. Higher cost does not always equate to better performance for every use case. GPT-3.5 may not be suitable for complex scenarios with many workflows. You can use different models in different nodes within the same bot, but select GPT-3.5 only for very simple use cases or if cost is a significant constraint.
 :::
 
 ### Prompt testing and iteration

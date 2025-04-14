@@ -12,7 +12,7 @@ Integrating Amazon Alexa with the Yellow.ai bot enables businesses to build voic
  1. [Voice User Interface (VUI)](https://developer.amazon.com/en-US/docs/alexa/custom-skills/define-the-interaction-model-in-json-and-text.html): This is where you define how to handle a user's voice input. 
  2. [Amazon Developer Portal](https://www.amazon.com/ap/signin?openid.pape.preferred_auth_policies=Singlefactor&clientContext=133-4657237-7550651&openid.pape.max_auth_age=7200000&openid.return_to=https%3A%2F%2Fdeveloper.amazon.com%2Falexa%2Fconsole%2Fask&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=amzn_dante_us&openid.mode=checkid_setup&marketPlaceId=ATVPDKIKX0DER&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0&#/skills): The backend logic on the Yellow.ai [Platform](https://app.yellowmessenger.com) that determines bot responses.
 
-## Setting up Your Alexa Skill in the Developer Portal
+## Setting up Your Alexa skill in the Developer Portal
 
 
 1. Login to your [Amazon Developer Portal](https://developer.amazon.com/).
