@@ -28,14 +28,16 @@ To integrate Workday with the Yellow.ai platform, follow the steps below:
 
 3. Configure the following fields required for integration and click **Connect**.
 
+Below is a detailed list of required fields to connect your Workday integration, along with instructions on how to obtain each value.
 
-**Field**           | **Description**    
---------------------|--------------------
-**API Base URL** *  | The root URL for your Workday API environment. This is typically provided by Workday and may vary depending on whether you're using a production or sandbox instance. Example: `https://api.workday.com/tenant`.
-**Instance ID** *   | A unique identifier for your Workday instance (or tenant). This helps the system direct API calls to the correct environment. You can find this in your Workday admin settings or API documentation.
-**Client ID** *     | The unique identifier for your registered application in Workday. Used during OAuth authentication to identify the client making API requests.
-**Client Secret** * | A confidential string known only to your application and Workday. Used in combination with the Client ID to securely authenticate API requests. Keep this value secure.
-**Refresh Token** * | A token that allows your integration to obtain new access tokens without user interaction. This ensures continuous connectivity without requiring repeated logins. Typically generated during the OAuth flow. 
+| **Field**          | **Description**                                                                                                                                     | **How to Obtain**                                                                                                                                                                                                                                                                           |
+|--------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **API Base URL** * | The root URL for your Workday API environment. This varies based on your tenant and environment (e.g., production or sandbox).<br/>**Example:** `https://wd3-impl-services1.workday.com` | 1. Log in to your Workday account. <br/>2. Search for and open the **View API Clients** report. <br/>3. Locate the **Workday REST API Endpoint** — this is your base URL.                                                                                                                   |
+| **Instance ID** *  | A unique identifier for your Workday tenant. <br/>**Example:** If your Workday URL is `https://acme.workday.com`, then `acme` is your instance ID.  | 1. Log in to Workday. <br/>2. Look at the browser’s address bar — it typically follows the format `https://[instance_id].workday.com`.                                                                                                                |
+| **Client ID** *    | A unique identifier for your registered application in Workday. Used during OAuth to identify your integration.                                    | 1. In Workday, search for **Register API Client**. <br/>2. Fill in the required details (Client Name, Redirect URI, etc.). <br/>3. After saving, copy the **Client ID** shown — store it securely.                                                                                             |
+| **Client Secret** *| A confidential string generated alongside your Client ID. It’s used to securely authenticate OAuth requests.                                       | 1. During the API client registration process, Workday will generate a **Client Secret**. <br/>2. Copy and store it securely — it may not be displayed again.                                                                                                                                |
+| **Refresh Token** *| A token that allows your integration to obtain new access tokens without re-authentication. Enables long-term connection to Workday.              | 1. Go to the **View API Clients** report. <br/>2. Open the API client you registered. <br/>3. Click the ellipsis (...) → **API Client → Manage Refresh Tokens for Integrations**. <br/>4. Select the Workday user account and click **Generate New Refresh Token**. <br/>5. Copy and store it. |
+
 
 
 :::note

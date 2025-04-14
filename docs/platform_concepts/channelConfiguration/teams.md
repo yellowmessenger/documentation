@@ -121,7 +121,7 @@ Option | Description
 **Microsoft Partner Network ID** | If you are part of the Microsoft Partner Network, specify your MPN ID. For more information, refer to this [link](https://learn.microsoft.com/en-gb/partner-center/mpn-overview?referrer=developerportal).
     
 	
-   <img src="https://i.imgur.com/CytFL5J.jpg" alt="drawing" width="80%"/> 
+   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/ms-teams.png" alt="drawing" width="80%"/> 
 
 4. Navigate to **Branding** under **Configure** to change the available branding options.
 	
