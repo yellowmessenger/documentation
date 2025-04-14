@@ -8,19 +8,20 @@ keywords : [offline ticketing, offline chat]
 Offline handling is sometimes referred to as **offline ticketing**/ **Offline chat**, although this configuration is applicable only for live chats. 
 :::
 
+Offline handling—also known as offline ticketing or offline chat—applies to live chat conversations only. It ensures that customer messages are captured and managed even when all agents are offline, such as **outside working hours** or during **unexpected logoffs**.
+
+
 **Importance of implementing offline handling**
 
-You can manage live chat requests incoming after [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours) (or during working hours if the entire team is logged off) in the offline handling setting section. This feature is essentially a status update that informs the users that an agent is unavailable to chat. 
-
-If **none of the agents are available** (all the inbox agents have logged out) to resolve live chats and you want to address the customer requests raised at that time **offline handling** can be enabled. 
+- You can manage live chat requests incoming after [working hours](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/chat_working_hours) in the offline handling setting section. 
+- If **none of the agents are available** (all the inbox agents have logged out) that is during working hours if the entire team has logged off , to resolve live chats and you want to address the customer requests raised at that time **offline handling** can be enabled. 
 
 
 **Use cases of offline handling** 
 
-- You can manage the limit and status of the chat after working hours to provide 24/7 support.
-- Offline handling uphold the continuum of service that your customers expect. If you have customers around the globe, you can anticipate that they may need support outside of your normal operating hours. 
-- Offline handling ensured that the inquiries are acknowledged and customers receive a satisfactory answer until an agent has the opportunity to follow up.
-
+- Provide 24/7 support by capturing chats even after business hours.
+- Ensure consistent service for global customers in different time zones.
+- Acknowledge every inquiry instantly and queue it for follow-up when agents are back online.
 
 
 ## Configure offline handling 
@@ -51,8 +52,8 @@ Follow the steps below to enable offline handling of live chats:
 5. In **Enable offline tickets**, choose **Enable**.
     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/enable.png" alt="drawing" width="80%"/> 
 
-6. Select the type of field you want to create and decide the ticket behavior for agents. Click **Submit**.
-    - **Enable/Disable offline tickets**: **Enable** this to serve the customer requests received when the agents are offline, disable otherwise. 
+6. Select the below options to determine the ticket behavior for agents. Click **Submit**.
+    - **Enable/Disable offline tickets**: Enable this to capture and queue customer requests that come in when no agents are online. For example, if a customer initiates a live chat at midnight, the system logs their message as a ticket, which is then assigned to an agent when they come online. Disabling this means the request will be marked as missed and not followed up automatically.
     - **Max offline tickets allowed**: Enter the number of tickets that can go to Open state while all agents are offline.
     - **Auto-assign tickets**: If this is enabled, the tickets in Open state will be auto-assigned when the agents come back online.
     - **Priority of auto-assignment**: The ticket type (Queued/Open) that should be given priority and auto-assigned when agents come back online. 
@@ -69,39 +70,27 @@ Follow the steps below to enable offline handling of live chats:
     - Queued chats are typically assigned one by one based on the agent's concurrency and availability. This means that when an agent becomes available to handle a new chat, the next chat in the queue will be assigned to them.     
     :::
 
-7. This can be configured for all the available [groups](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups). 
+7. You can configure offline handling individually per **[group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups)** under the group-specific card.   
+
+    <img src="https://imgur.com/z78VVbb.png" width="100%"/>
 
 
 
 ---------
 
-### Offline handling expected behaviour
+### Offline handling expected behaviour comparison
 
 
-#### 1. When the Inbox admin has enabled offline handling
-
-`Assume all the agents are offline at the same time and a customer has requested to talk to an agent.`
-
-`A live chat request is raised`
-
-`The live chat appears in the "Open chats" section of the inbox`
-
-`The customer waits on the chat screen`
-
-`When any agent in that group comes online and becomes available, the chat is immediately assigned to them`
-
-#### 2. When the Inbox admin has disabled offline handling
-
-`Assume all the agents are offline at the same time and a customer has requested to talk to an agent.`
-
-`A live chat request is raised`
-
-`The live chat appears in the "Missed chats" section of the inbox`
-
-`Customer request is not addressed`
-
+| **Scenario Element**         | **Offline Handling Enabled**                                                                 | **Offline Handling Disabled**                                                               |
+|-----------------------------|-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|
+| **Agent Status**            | All agents are offline (logged out or outside working hours).                                | All agents are offline (logged out or outside working hours).                              |
+| **Live Chat Behavior**      | The customer's live chat request is captured and shown in the **Open Chats** section.        | The customer's live chat request is marked as **Missed** and shown in the **Missed Chats** section. |
+| **Customer Experience**     | The user sees a waiting screen or a message indicating that agents are currently unavailable. | No message is shown. The customer receives no acknowledgment and may assume the chat failed. |
+| **Follow-up by Agents**     | When any agent comes online, the chat is automatically assigned based on group settings.     | The chat remains in the Missed Chats section and is not assigned unless handled manually.   |
+| **Service Continuity**      | Ensures that customer messages are queued for agent response once available.                 | No ticket is created or followed up unless reviewed manually. Potential service gap.         |
+| **Use Case**                | Ideal for businesses offering support beyond working hours or across time zones.             | Suitable only when real-time chat is not critical or fallback automation is in place.        |
 
 
 :::info
-To notify customers on agent unavailability when offline handling is enabled, refer to this[detailed guide](https://docs.yellow.ai/docs/cookbooks/inbox/notifycustomerofflinehandling).
+To notify customers on agent unavailability when offline handling is enabled, refer to this [detailed guide](https://docs.yellow.ai/docs/cookbooks/inbox/notifycustomerofflinehandling).
 :::

@@ -132,7 +132,46 @@ This setting controls how the AI-agent's response is managed. By default, it is 
    i. **Print response**: This option displays the response directly in text format.<br/>ii. **saveResponseInVariable**: This option stores the AI-agent's response in a specified variable. You need to select the appropriate variable for storing the response.
   <img src="https://i.imgur.com/jRszQcU.png" alt="drawing" width="60%"/>
 
-   
+**Sample log returned by Knowledge search node**:                    
+
+```
+{
+	"data": {
+		"cards": [
+			{
+				"text": "Data ingestion into Knowledge base can be done through multiple entry points. This data can be fed into the AI-agent to provide more informative responses. You can input a website URL or any data source into the knowledge base to create a customized bot. Chat bots that are built on any platform can be integrated into the inbox knowledge base. You can also upload your URL links or documents to the Knowledgebase. Additionally, you can customize KB responses by providing instructions in the Configuration section.",
+				"actions": [
+					{
+						"title": "Data ingestion into Knowledge base - Yellow.ai",
+						"url": "https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion",
+						"buttonDefault": "url"
+					},
+					{
+						"title": "Handling Gen AI Knowledgebase (KB) - yellow.ai",
+						"url": "https://docs.yellow.ai/docs/cookbooks/Gen-AI-Advanced-Level/genai-kb",
+						"buttonDefault": "url"
+					},
+					{
+						"title": "Integrate a chat bot or GTM to your knowledge base - Yellow.ai",
+						"url": "https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/kb_integrations",
+						"buttonDefault": "url"
+					},
+					{
+						"title": "Knowledge base additional configuration | yellow.ai",
+						"url": "https://docs.yellow.ai/docs/platform_concepts/studio/kb/advancedsettings",
+						"buttonDefault": "url"
+					},
+					{
+						"title": "Customize your Knowledge base responses using prompts",
+						"url": "https://docs.yellow.ai/docs/platform_concepts/studio/kb/confgure-response",
+						"buttonDefault": "url"
+					}
+				]
+			}
+		]
+	}
+}
+```   
 
 -----
 

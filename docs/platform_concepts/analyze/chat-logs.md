@@ -21,11 +21,9 @@ The names in conversation logs cannot be changed or mapped to a user. The platfo
 
 ## Access Conversation logs
 
-To access the conversation logs:
+To access the conversation logs, open **Analyze** > **Conversation logs**.
 
-* Go to **Analyze** > **Conversation logs**.
-
-   ![](https://imgur.com/NdIy6O7.png)
+![](https://imgur.com/NdIy6O7.png)
 
 ## AI-agent session
 
@@ -131,19 +129,24 @@ To view auto-generated tags, follow these steps:
 
 To debug and resolve issues in a conversation, you can enable logs for that specific interaction. This helps you gain a clearer understanding of how to address the problem and fix it.
 
-To enable logs, follow these steps:
+To view logs of each action within the chat, follow these steps:
 
-1. Go to the conversation log and enable the toggle button to enable the logs for that conversation.
-
-   <img src="https://i.imgur.com/97RJEe9.png" alt="drawing" width="60%"/>
+> Enable the toggle button to enable the logs for that conversation.
+> <img src="https://i.imgur.com/97RJEe9.png" alt="drawing" width="60%"/>
    
-2. Click on **Logs**.
+1. Open the **Logs** tab.
 
-    ![](https://i.imgur.com/CEgeroT.png)    
+    ![](https://i.imgur.com/CEgeroT.png)
 
-3. Click **Debugger** icon to get the logs for any user input and trace the sequence of actions the AI-agent took in response to specific user inputs, making it easier to troubleshoot issues and improve AI-agent performance. 
+2. Click the **Debugger** icon to view logs for any user input. This helps trace the sequence of actions taken by the AI agent in response, making it easier to troubleshoot issues and improve performance.
 
-      ![](https://i.imgur.com/x3gui2X.png)   
+    ![image](https://imgur.com/vpoQoeT.png)
+
+3. Associated nodes and logs are displayed for each action. Expand any item to view the specific log or node where the conversation logic was executed.
+
+    ![image](https://imgur.com/vJpo1WN.png)
+
+
 
 ## Share conversation logs
 
@@ -200,11 +203,16 @@ The comment button is displayed only when users are in the **Comments** tab.
 
 -------------
 
-## View KB report
+## View KB report/log
 
 KB Report in the Conversation Logs, makes debugging faster and more seamless. 
 - You can access all the details you need to debug in one place by opening the Logs tab and clicking KB report icon.           
 ![image](https://imgur.com/ocFzLzW.png)
 - KB report includes **Query, Previous user messages, Rephrased query, Answer, Status code, Confidence, Trace ID, Tags**, and **Site key**.                            
 ![image](https://imgur.com/zjbSzwi.png)
+
+
+**Viewing log for Document search node (Demo):**             
+
+![image](https://imgur.com/2tF3qwe.gif)
 
