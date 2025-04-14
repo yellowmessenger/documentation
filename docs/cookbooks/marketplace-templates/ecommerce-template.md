@@ -107,7 +107,7 @@ The flow triggers when the user selects *Clear cart* from the bot flows. The car
 
    ![](https://i.imgur.com/6TQukpV.png)
 
-4. **Updates user details**: The database (user details) is updated to empty the cart. A text node is displayed to the user confirming that the cart is empty and shows the [Browse products](#browse-products) option. 
+4. **Updates user details**: The database (user details) is updated to empty the cart. A text node is displayed to the user confirming that the cart is empty and shows the Browse products option. 
 
 
 ### 1.5 Buy now
