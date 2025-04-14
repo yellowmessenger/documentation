@@ -25,6 +25,7 @@ For details on importing and editing the markerplace templates, click [here](htt
 This section covers all the standard use cases available in the e-commerce template.
 
 ### 1.1 Browse products
+
 The flow displays the list of product categories along with its products and help users with the purchase.
 
 
@@ -83,7 +84,7 @@ This flow allows users to edit the current cart details - change the quantity or
 
 1. **Triggers** when the user selects **Edit cart** is selected on the **Add to cart** flow. 
 2. **Verifies cart items**: Checks if the cart is empty using the `IsCartEmpty` (**Function** and **Condition** nodes). 
-   * If it is empty, the user will be directed to the [Browse products flow](). 
+   * If it is empty, the user will be directed to the Browse products flow. 
    * If the cart is not empty, it shows the current cart details (`ShowCart` function) of the user.
 3. **Edit cart**: Uses the **Carousel** node to display the summary of the existing cart (all the items with quantity and price) along with the options to edit the item quantity and remove the item (for each item with a unique product ID). It shows up relevant options based on the user input (**Condition** node). 
 4. **Edit item**: Allows editing the quantity (for that product ID) using **Quick replies** (and **WhatsApp list**). 
