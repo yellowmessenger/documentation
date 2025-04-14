@@ -17,6 +17,25 @@ Here’s how your release notes can be structured in a professional, concise, an
 
 We have now changed the term **Skill** to **Workflow** across the Yellow.ai platform. All existing skills are now labeled as workflows in Dynamic chat node and Agent AI. You will see this updated terminology reflected consistently throughout the UI for a more intuitive experience.
 
+
+
+## Enhancement: Default Timestamp Filter for CRA Table in Data Explorer
+
+We've updated the default timestamp filter in the Contained Resolution Analysis (Analyze) table because Sessions can span multiple days. Using insertion time sometimes led to misleading metrics. Filtering by conversation start time ensures the data reflects when sessions actually began.
+* **Before**: The default filter used the record insertion time (last 7 days).
+* **Now**: It uses the conversation start time (last 7 days).
+
+> **Example**: A session that started on April 2 but was analyzed on April 3 will now appear under April 2, matching the actual session start date.
+
+:::note
+
+* The timestamp column is still available for filters, so existing custom queries won’t break.
+* Default grouping/summarization now uses conversation start time.
+:::
+
+
+
+
 ## VoiceX: The Future of Human-Like Voice AI
 
 We’re introducing VoiceX, our next-generation Voice AI platform, built to enable seamless, real-time customer conversations.
