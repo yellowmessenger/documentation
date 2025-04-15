@@ -4,27 +4,53 @@ sidebar_label : Instamojo
 ---
 
 
-Yellow.ai Integration with Instamojo Payment Gateway allows your bot to effortlessly generate payment links, monitor payment statuses, and facilitate refunds directly within the Yellow.ai platform. 
+Instamojo is a popular payment gateway in India that enables businesses to accept payments online through multiple channels such as UPI, debit/credit cards, net banking, wallets, and more. With this integration, you can connect your AI Agent to Instamojo to initiate and manage payment requests, track transaction statuses, and ensure a secure payment experience for your customers.
 
-## Connecting Instamojo with Yellow.ai
+This guide provides step-by-step instructions to help you:
 
-Follow these steps to begin integrating:
+1. Set up your Instamojo API credentials
+2. Create and manage payment links
+Handle payment callbacks and statuses
+Ensure compliance and best practices for secure transactions
+Whether you're building an e-commerce site, a digital service platform, or a donation portal, this integration helps streamline your payment collection process with minimal effort.
 
-### 1. Get required details from your Instamojo account
+## Get required API credentials from Instamojo
 
+To integrate Instamojo with your application, you need the following credentials:
 
-1. Sign up on Instamojo.
-    * __Test Mode:__ This mode is intended for testing purposes and for developers who are just beginning their integration with Instamojo. Test Mode is completely free of charge but requires completion of KYC (Know Your Customer) verification. No actual charges will be incurred, even if valid card details are provided on the [Instamojo test environment](https://test.instamojo.com/) for sign-up.
-    * __Live mode__: In Live Mode, transactions occur in real-time, and actual charges apply. To operate in Live Mode, users must provide their bank account information and complete the KYC (Know Your Customer) process. This ensures compliance with regulatory requirements and enables seamless processing of payments. To get started with Live Mode, visit [Instamojo's website](https://www.instamojo.com/) and sign up for an account.
+- **API Key**
+- **Auth Token**
+- **Private Salt (for webhook verification, if required)**
+- **Client ID & Client Secret** (for OAuth2 flows, in some cases)
 
-2. After signing up, log in to the Instamojo account and go to **Dashboard** > Go to** API & Plugins** > **Generate Credentials** > Select **Direct Rest API Integration**.
+Follow these steps to get them:
+
+1. Create or Log in to Your Instamojo Account
+   - Go to [https://www.instamojo.com](https://www.instamojo.com) and log in to your **Merchant Dashboard** .
+2. Go to **Dashboard** > Go to** API & Plugins** > **Generate Credentials** > Select **Direct Rest API Integration**.
 
    ![alt_text](https://cdn.yellowmessenger.com/QMOhzge5GSgd1665990761659.png "image_tooltip")
 
-3. Copy the **Client ID** and **Client Secret**.
+3. Generate Your API Credentials
+   - On the Developers page, go to the section **“API Credentials”** and click **"Generate Credentials"** or **"Create New App"**, if prompted.
+You will receive **API Key**, **Auth Token**, and **Private Salt**.
 
-### 2. Use Instamojo details to integrate with your bot
-In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
+:::note
+Credentials vary between **Test Mode** and **Live Mode**. Use **test credentials** while integrating for testing, and **live credentials** only when you're ready for production.
+
+* __Test Mode:__ This mode is intended for testing purposes and for developers who are just beginning their integration with Instamojo. Test Mode is completely free of charge but requires completion of KYC (Know Your Customer) verification. No actual charges will be incurred, even if valid card details are provided on the [Instamojo test environment](https://test.instamojo.com/) for sign-up.
+* __Live mode__: In Live Mode, transactions occur in real-time, and actual charges apply. To operate in Live Mode, users must provide their bank account information and complete the KYC (Know Your Customer) process. This ensures compliance with regulatory requirements and enables seamless processing of payments. To get started with Live Mode, visit [Instamojo's website](https://www.instamojo.com/) and sign up for an account.
+
+:::
+
+
+
+## Connect Instamojo with Yellow.ai
+
+Follow these steps to begin integrating:
+
+
+You need to integrate first with Development/Staging or Sandbox environment. Once the integration is complete and the application is published, all connected integrations will be available in the Live environment.
 
 
 
@@ -36,16 +62,15 @@ In a two-tier environment, you can connect an integration app in the Development
 
 ----
 
-### 3. Enable Instamojo related events for the bot
+## 3. Enable Instamojo related events for the bot
 
-Instamojo payment status event: Indicates an update in the payment status. Each payment undergoes different status such as Pending,Processing, Completed, Failed, Refunded, or Cancelled.
+**Instamojo payment status event**: Indicates an update in the payment status. . Instamojo primarily recognizes the following payment status values: Pending, Sent, Failed, and Completed.
 
-To activate an event, refer to [this section](/docs/platform_concepts/appConfiguration/overview#step-3-configure-webhook-url).
+* To activate an event, refer to [this section](/docs/platform_concepts/appConfiguration/overview#step-3-configure-webhook-url).
+* To trigger a bot flow using the activated event, click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-5-trigger-bot-flows-with-integration-events).
 
-To trigger a bot flow using the activated event, click [here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#step-5-trigger-bot-flows-with-integration-events).
 
-
-### 4. Manage Instamojo actions through bot conversation
+## 5. Perform Instamojo actions from your AI Agent
 
 This integration enables the bot to perform the following Instamojo actions:
 
@@ -58,30 +83,33 @@ This integration enables the bot to perform the following Instamojo actions:
 
    ![](https://i.imgur.com/NAS0u0k.png)
 
-#### Generate Payment link
+### Generate Payment link
 
 This action allows you to generate payment link at any point in a conversation.
 
    ![alt_text](https://cdn.yellowmessenger.com/Iwuif7lVqcdR1665990538864.png "image_tooltip")
 
 
-**Node Input Params**
-
-| Field Name | Description | Sample Input |
-| -------- | -------- | -------- |
-| **Amount**    | The amount for the request. The minimum amount is 9. The maximum is 200000     | 200     |
-|**Customer Name** |Name of payer| John |
-|**Customer Email**	|Email of payer|John@test.com	|
-|**Customer Mobile Number**	|Mobile no. of payer|9999999999	|
-|**Purpose**|Purpose of the payment request |Iphone| 
-|**Send Email**	| Flag to send request link via email. If send_email is true, a request email will be sent to the email supplied. If send_email is true but no email is supplied, request creation will throw an error |False|
-|**Send SMS** |Flag to send request link via SMS. If send_sms is true, a request SMS will be sent to the phone number supplied. If send_sms is true but no phone number is supplied, request creation will throw an error | False|
-| **StatusCallbackUrl**|  Copy Webhook URL from the Instamojo card at the integration page.Example: https://dummyurl.yellowmessenger.com/integrations/genericIntegration/instamojo/x16450274?id=l%2B%2FD1yhpida7KtXeCEVUofPRsNBY%3D|
-
+Here's a detailed and user-friendly table for the **"Generate Payment Link"** action using Instamojo, following the same format and tone as your previous API field description tables:
 
 ---
 
-#### Sample Success Response
+####  Field descriptions for Generate payment link
+
+| **Field**                        | **Description**                                                                                                                                               |
+|----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Amount***                     | The exact amount to be charged from the customer. This should be a numeric value, typically in INR (e.g., 499.00).                                             |
+| **Customer email***             | The email address of the customer who will receive the payment link. This is used for communication and transaction tracking.                                 |
+| **Customer mobile number***     | The mobile number of the customer. Instamojo can use this to send the payment link via SMS.                                                                   |
+| **Customer name***              | Full name of the customer. Helps personalize the payment experience and is often required for recordkeeping.                                                  |
+| **Purpose***                    | A short description of what the payment is for (e.g., "Product Purchase", "Subscription", "Consultation Fee"). This will be shown to the customer.            |
+| **Send email***                | A boolean value (`true` or `false`). If set to `true`, Instamojo will send the payment link to the customer via email.                                         |
+| **Send SMS***                  | A boolean value (`true` or `false`). If `true`, the payment link will also be sent via SMS to the customer's mobile number.                                   |
+| **Status callback URL***        | The endpoint (URL) where Instamojo should send status updates about the payment (e.g., success, failure). Useful for backend workflows and confirmation logic. Copy Webhook URL from the Instamojo card at the integration page. Example:     `https://dummyurl.yellowmessenger.com/integrations/genericIntegration/instamojo/x16450274?id=l%2B%2FD1yhpida7KtXeCEVUofPRsNBY%3D`| |
+| **Parse API response**         | When enabled, the system will parse and store key fields from the Instamojo response automatically (like payment ID, link URL, etc.).                          |
+
+
+#### Sample success response
 
 ```json
 {
@@ -110,33 +138,29 @@ This action allows you to generate payment link at any point in a conversation.
 }
 ```
 
-#### Create a Refund
+### Create refund action
 
-This will refund a payment made on Instamojo.
+Use this action to initiate Instamojo refund directly from the AI Agent.
 
-**Node Input Params**
+**Parameters required to process the request**
 
-|Field Name|Description|Sample Input|
-|--- |--- |--- |
-|Refund Amount|This field can be used to specify the refund amount. For instance, you may want to issue a refund for an amount lesser than what was paid.|200|
-|Unique Transaction ID|Mandatory parameter in the body from the second case creation onwards for the payment to prevent duplicate case creations due to replay of APIs|C5c0751269|
-|Issue Type|A three-letter short code identifying the reason for this case. Please refer to the below table for this field's value|QFL|
-|Description |Additional text explaining the refund|Product is not good|
-|Payment Id|Payment Id received in create payment link node. store in database for further use| MOJO5c04000J30502939|
+Sure! Here's the updated table with the required fields marked with an asterisk (*) **only in the first column**, and the "Required" column removed for clarity:
+
+---
+
+### Field descriptiond for Create refund action 
+
+| **Field**                        | **Type**   | **Description** |
+|----------------------------------|------------|-----------------|
+| **Description***                 | `string`   | A short explanation of the reason for the refund. This helps provide context to the Instamojo team or for internal tracking. |
+| **Payment ID***                  | `string`   | The unique payment identifier generated when the customer made the payment. This ID is required to locate and process the correct transaction. |
+| **Refund Amount***              | `number`   | The amount to be refunded. If the full amount is to be refunded, enter the total transaction amount. Partial refunds are allowed only once. |
+| **Unique Transaction ID***       | `string`   | A unique ID you define for the refund request. Helps in tracking and reconciling the refund operation. Must be unique for each refund call. |
+| **Issue Type***                 | `string`   | A standardized refund reason code accepted by Instamojo. Allowed values:<br>• `RFD` – Duplicate/Delayed payment<br>• `TNR` – Product/service not available<br>• `QFL` – Customer not satisfied<br>• `QNR` – Product lost/damaged<br>• `EWN` – Digital download issue<br>• `TAN` – Event was canceled<br>• `PTH` – Other issues |
+| **Parse API Response**          | *(System-handled)* | Automatically extracts and formats the API response for use in subsequent actions. Typically enabled for smooth workflows. |
 
 
-#### Valid values for different type
-
-
-|Type|Description|
-|--- |--- |
-|RFD||Duplicate/delayed payment.|
-|TNR|Product/service no longer available.|
-|QFL|Customer not satisfied.|
-|QNR|Product lost/damaged.|
-|EWN|Digital download issue.|
-|TAN|Event was canceled/changed.|
-|PTH|Problem not described above.|
+**Sample success response**
 
 ```json
 {
@@ -154,20 +178,10 @@ This will refund a payment made on Instamojo.
 }
 ```
 
+
+:::info
 **Reference**
 
  
 For more information about the action nodes you use here, refer to [Create Payment](https://docs.instamojo.com/reference/create-a-payment-request-1), [webhooks](https://docs.instamojo.com/reference/what-is-a-webhook).
-
-
-
-
-
-
-
-
-
-
-
-
-
+:::
