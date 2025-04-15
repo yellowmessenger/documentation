@@ -318,7 +318,7 @@ On successful queueing of the notification, you will receive a 202 status code w
 | 1421 - Unsupported message type | Message type is not supported. Please use the right message type.
 | 1422 - Message too long | Message length exceeds the limit of 4096 characters. Please shorten the message and try again.
 | 1423 - Invalid recipient type | - | 
-| 1424 - Access denied | Number is already registered on WhatsApp. See [Migrating a Phone Number](https://developers.facebook.com/docs/whatsapp/guides/migration) for information on moving a phone number from WhatsApp to the WhatsApp Business API.
+| 1424 - Access denied | Number is already registered on WhatsApp. See [Migrating a Phone Number](https://developers.facebook.com/docs/whatsapp/cloud-api/get-started/migrate-existing-whatsapp-number-to-a-business-account) for information on moving a phone number from WhatsApp to the WhatsApp Business API.
 | 1425 - Resource not found | File or resource is not found.
 | 1426 -  Parameter is missing | Required parameter is missing.
 | 1427 - parameterTypeError | The value entered for a parameter is of the wrong type or there is another problem.

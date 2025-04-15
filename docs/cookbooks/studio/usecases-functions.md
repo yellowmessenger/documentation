@@ -30,7 +30,7 @@ Store the API response in an object variable so that you can extract required in
 <img src="https://i.imgur.com/dKN4rrr.png" width="80%"/>
 
 #### 1.4. Write a function to format the response
-Navigate to the **Functions** section and write a function to process the saved API response. Ensure that the response is formatted to match the dynamic structure required for a carousel display. For more details on dynaamic carousel formatting, refer [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#4-carousel).
+Navigate to the **Functions** section and write a function to process the saved API response. Ensure that the response is formatted to match the dynamic structure required for a carousel display. For more details on dynaamic carousel formatting, refer [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/carousel-message-node).
 
 <img src="https://i.imgur.com/Jklf0Ia.png" width="80%"/>
 

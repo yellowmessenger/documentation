@@ -26,7 +26,7 @@ To integrate the Paytm payment gateway, follow these steps:
 
 3. In **Merchant ID**,  enter the Merchant ID provided by the client or Paytm SPOC.  
 4. I **Merchant Key** enter the Merchant Key provided by the client or Paytm SPOC.
-5. In **API Domain**, If you intend to use the staging domain of Paytm, enter https://securegw-stage.paytm.in. If you're using the production domain, enter https://securegw.paytm.in.
+5. In **API Domain**, If you intend to use the staging domain of Paytm, enter `https://securegw-stage.paytm.in`. If you're using the production domain, enter `https://securegw.paytm.in`.
 
 6. In **Channel ID**, enter the Channel ID provided by the client or Paytm SPOC.
 
