@@ -29,7 +29,7 @@ This guide will provide instructions on how to activate flows upon clicking a qu
 ![](https://i.imgur.com/MuobVKb.png)
 
 
-6. The buttons can either be connected to an [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node (which will trigger another flow if clicked) or connected to[ Message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes1) to display a message.
+6. The buttons can either be connected to an [Execute flow](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#15-execute-flow) node (which will trigger another flow if clicked) or connected to[ Message nodes](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) to display a message.
 
 ![](https://i.imgur.com/sPpeNYV.png)
 

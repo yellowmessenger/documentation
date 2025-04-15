@@ -17,7 +17,7 @@ Breakpoints serve as special markers that pause flow execution at designated poi
 
    ![](https://i.imgur.com/WjGxCc1.png)
 
-3. Click the **Debugger** tab. To know about how console works, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-logs).
+3. Click the **Debugger** tab. To know about how console works, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/debugger).
 
    ![](https://i.imgur.com/3tOjmsc.png)
 

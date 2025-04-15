@@ -99,7 +99,7 @@ From Yellow.ai you can access your ServiceNow instance and create, update and se
  
    *  **Parse API response:** Select the function that will parse the API response(optional). To know more about how to use this, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/send-receive-apiresponses#parse-api-responses).
 
-4. [Store the API response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) and pass it in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes#docusaurus_skipToContent_fallback) to display the response to the end user.
+4. [Store the API response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) and pass it in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) to display the response to the end user.
 
 
 ### Configuring bot for a sample Service Now use case

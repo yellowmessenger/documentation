@@ -243,7 +243,7 @@ By setting up Schedule events, you can determine when certain actions or process
 
 
 :::note
-It is advisable to use the Advanced option solely for intricate use cases that cannot be accommodated through Once or Recurring. Familiarity with [Cron expressions](https://docs.oracle.com/cd/E12058_01/doc/doc.1014/e12030/cron_expressions.html) is essential when utilizing this feature.
+It is advisable to use the Advanced option solely for intricate use cases that cannot be accommodated through Once or Recurring. Familiarity with **Cron expressions** is essential when utilizing this feature.
 :::
 
 5. In **Date** and **Timezone**, choose the date and timezone in which the event should be carried out.

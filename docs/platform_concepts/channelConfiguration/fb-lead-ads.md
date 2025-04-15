@@ -24,7 +24,7 @@ This potentially increases the form completion rate.
 
 ### Requirements and form creation
 
-1. A valid [business page](https://www.facebook.com/business/products/pages) on Facebook for the brand
+1. A valid [business page](https://www.facebook.com/business) on Facebook for the brand
 2. A link to [privacy policy](https://en-gb.facebook.com/business/help/1247534515288168?id=735435806665862) on what all info you will collect, how do you intend to use the data etc
 
 ![](https://cdn.yellowmessenger.com/3Tek7aSPVPE21617813693423.png)

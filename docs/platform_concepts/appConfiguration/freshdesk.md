@@ -17,7 +17,7 @@ For this integration, you will need **Freshdesk domain** and an **API key**.
 ### 1.1 Get your domain address & API Key from Freshdesk 
 
 1. Log in to your **Freshdesk** account.
-2. From the browser address bar, copy the **Freshdesk domain URL**. Example: https://yellowai-dummy.freshdesk.com
+2. From the browser address bar, copy the **Freshdesk domain URL**. Example: `https://yellowai-dummy.freshdesk.com`
 3. Click your profile picture on the top right corner.
 
    <img src="https://i.imgur.com/BM5bpz1.png" alt="drawing" width="30%"/>

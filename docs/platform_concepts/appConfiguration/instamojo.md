@@ -54,9 +54,9 @@ You need to integrate first with Development/Staging or Sandbox environment. Onc
 
 
 
-1. On the [Cloud platform](https://cloud.yellow.a), Navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **Instamojo**.
+1. On the [Cloud platform](https://cloud.yellow.ai), Navigate to the Development/Staging environment and click **Extensions** > **Integrations** > **Payment** > **Instamojo**.
 2. In G**ive account name,** enter a unique name for the integration. You can use only lowercase alphanumeric characters and underscores (_).
-3. Enter the **Client ID** and *C*lient Secret** that was captured using the previous section.
+3. Enter the **Client ID** and **Client Secret** that was captured using the previous section.
 4. For sandbox environment use ```https://test.instamojo.com``` as baseUrl and for production env use ```https://api.instamojo.com``` as baseUrl
 3. To add multiple accounts, click ***+ Add account** and follow the above mentioned steps. You can add a maximum of 5 merchant accounts.
 
@@ -92,7 +92,6 @@ This action allows you to generate payment link at any point in a conversation.
 
 Here's a detailed and user-friendly table for the **"Generate Payment Link"** action using Instamojo, following the same format and tone as your previous API field description tables:
 
----
 
 ####  Field descriptions for Generate payment link
 
