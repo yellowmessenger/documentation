@@ -74,7 +74,6 @@ module.exports = {
           "cookbooks/studio/debug-logs",
           "cookbooks/studio/error_page",
           "cookbooks/studio/userinitiateddisconnection",
-          "cookbooks/studio/qr-dc",
 
       ],
     }, 
