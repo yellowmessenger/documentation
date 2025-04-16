@@ -155,7 +155,7 @@ Sure! Here's the updated table with the required fields marked with an asterisk 
 | **Payment ID***                  | `string`   | The unique payment identifier generated when the customer made the payment. This ID is required to locate and process the correct transaction. |
 | **Refund Amount***              | `number`   | The amount to be refunded. If the full amount is to be refunded, enter the total transaction amount. Partial refunds are allowed only once. |
 | **Unique Transaction ID***       | `string`   | A unique ID you define for the refund request. Helps in tracking and reconciling the refund operation. Must be unique for each refund call. |
-| **Issue Type***                 | `string`   | A standardized refund reason code accepted by Instamojo. Allowed values:<br>• `RFD` – Duplicate/Delayed payment<br>• `TNR` – Product/service not available<br>• `QFL` – Customer not satisfied<br>• `QNR` – Product lost/damaged<br>• `EWN` – Digital download issue<br>• `TAN` – Event was canceled<br>• `PTH` – Other issues |
+| **Issue Type***                 | `string`   | A standardized refund reason code accepted by Instamojo. Allowed values:<br/>• `RFD` – Duplicate/Delayed payment<br/>• `TNR` – Product/service not available<br/>• `QFL` – Customer not satisfied<br/>• `QNR` – Product lost/damaged<br/>• `EWN` – Digital download issue<br/>• `TAN` – Event was canceled<br/>• `PTH` – Other issues |
 | **Parse API Response**          | *(System-handled)* | Automatically extracts and formats the API response for use in subsequent actions. Typically enabled for smooth workflows. |
 
 
