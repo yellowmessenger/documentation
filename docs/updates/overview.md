@@ -68,3 +68,16 @@ This integration allows you to perform key Workday actions from checking leave b
 - Update personal and contact details
 - Retrieve team member information
 - Approve or reject leave and expense requests
+
+
+---
+
+## Added "Create payment reques"t in Camspay integration and deprecated Generate payment link
+
+The `Generate payment link` action in the Camspay integration node has been deprecated.
+
+A new action, [Create payment request](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/camspay#5-generate-camspay-payment-links-in-bot-conversation), is now available. This enhancement is to solve additional use cases—such as retrieving payment status and displaying order details for successful or failed transactions.
+We recommend migrating to the new action for improved reliability and future compatibility.
+
+--- 
+
