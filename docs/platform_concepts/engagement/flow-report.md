@@ -45,8 +45,9 @@ By default, you'll find these engagement metrics aggregated across all channels.
 KPI | Description
 --- | -----------
 Audience | The size of the audience in the flow campaign.
-Impression | The number of times the campaign content is delivered to your users, along with the percentage of delivery rate.
-Reach | The total number of unique users to whom the campaign was reached out.
+Impression | An Impression is recorded when a message has been successfully sent or triggered, indicating that it has entered the delivery pipeline of the respective channel. It signifies that the message is available for delivery but has not yet been confirmed as viewed or engaged with by the end user. This metric helps track the initial visibility potential of a communication. <br/>**Channel-wise**: **WhatsApp**: Message marked as Delivered Email: Message marked as Sent <br/>**SMS**: Message marked as Sent
+<br/>**LINE**: Message marked as Triggered <br/>**Google Business Messages**: Message marked as Delivered. <br/>**Voice**: Call marked as Not Answered or Busy <br/>**Mobile Push**: Notification marked as Sent
+Reach | Reach is registered when the message is confirmed to have been read or interacted with, indicating successful delivery to and visibility by the end user. This metric reflects the actual audience that has consumed the message content and serves as a reliable indicator of user engagement. Channel-wise Mapping: <ul><li>WhatsApp: Message marked as Read</li><li>Email: Message marked as Read</li><li>SMS: Message marked as Delivered</li><li>LINE: Message marked as Sent</li><li>Teams: Message marked as Sent</li><li>Google Business Messages: Message marked as Read</li><li>Voice: Call marked as Answered</li><li>Mobile Push: Notification marked as Delivered</li></ul>
 Engagement | The total number of user interactions with your content, such as clicks,likes, shares, and comments.
 
 
