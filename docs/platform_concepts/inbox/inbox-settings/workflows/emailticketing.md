@@ -29,7 +29,7 @@ Follow the below steps to configure email settings:
 5. Add details and write the **Acknowledgement email**. 
     - **Subject** : Add `{{userSubject}}` to reply to the same mail or you can type a new subject to send the acknowledgement as a new email instead of a reply.
     - **Acknowledgement message**: You can make use of the options available on the response screen (explained [here](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro#22-email-response-screen)) and type a message. You can also use dynamic variables in the message, commonly used variables such as Ticket ID, User subject and User name can be included by clicking **Add** next to the name in ticket details.
-    ![](https://i.imgur.com/5CoCMca.png)
+    ![](https://imgur.com/WTuTFVp.png)
     - Click **Save**. 
 
 

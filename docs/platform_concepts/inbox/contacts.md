@@ -28,7 +28,7 @@ This proactive notification is an outbound reach out where the agents or the bus
 
 :::note 
 * This feature is available only for the WhatsApp channel.   
-* To extend this to other channels, contact [Sandeep Rajaram](mailto:sandeep.rajaram@yellow.ai)
+* To extend this to other channels `proactiveNotificationSettings` must be enabled, contact our [support team](mailto:support@yellow.ai).
 :::
 
 ## <a name="1"></a> 1. Create a new contact 

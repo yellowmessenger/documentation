@@ -3,6 +3,10 @@ title: AI Knowledgebase Suggestions
 sidebar_label: Knowledgebase suggestions  
 ---
 
+:::info
+AI Knowledgebase Suggestions are enabled by default for all customers using Analyze.
+:::
+
 ## Overview
 
 Customer support teams often handle repetitive queries like password resets and payment updates, leading to delays and inefficiencies. Yellow.ai’s AI-powered Knowledgebase Suggestions streamline this process by analyzing interactions and generating relevant knowledgebase articles, improving efficiency and customer satisfaction.

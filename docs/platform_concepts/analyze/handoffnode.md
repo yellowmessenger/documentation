@@ -3,7 +3,12 @@ title: Topic Analysis for Third party ticketing tools
 sidebar_label: For 3rd party ticketing tools
 ---
 
-> In this article, we refer to any applications other than Yellow.ai, such as third-party ticketing systems and support CRMs, as third-party apps.
+
+
+:::note 
+
+In this article, we refer to any applications other than Yellow.ai, such as third-party ticketing systems and support CRMs, as third-party apps.
+:::
 
 
 
@@ -39,6 +44,13 @@ With **Bot Developer** access, you can configure the **Chat Handoff** node. This
 In the example below, a successful action after raising a ticket in Zendesk connects to the Chat Handoff node. When a passive or offline ticket is created in Zendesk, agents respond via email, call, or other channels. Meanwhile, this handoff is tracked. The Chat Handoff node acts as an identifier for agent transfers, enabling you to track the containment rate effectively.
 
 ![example](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcsCC_H9djVb0DBv3R2mmRlu3MaPocs-mOtzxyBiTN61wnlFRsUSrFsGbJgir3VnEn7flwiTgzCjlkJ4K4JnC7IJ7CkJ--5dd5QH3KB2oGDDMjdr95mXAtaiEQrj2RupK6Lv3B2I_5tMuKE-zOzytyee-Q-?key=doHOJQMEdYvKlVOmPCYX8w)
+
+:::info
+
+**Chat Handoff** node is enabled by default for all customers using Analyze.
+
+:::
+
 
 ------------
 
