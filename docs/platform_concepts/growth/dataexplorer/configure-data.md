@@ -44,7 +44,7 @@ Follow the steps below to secure PII data within default tables:
     ![image](https://cdn.yellowmessenger.com/assets/docs/image-11.png)
 2. Enable the option to encrypt PII data and enter your **Public key**.
     ![image](https://cdn.yellowmessenger.com/assets/docs/image-12.png)
-3. A summary will be displayed, showing which tables and columns will be encrypted. This data will be encrypted in the table UI in Data Explorer, the table UI in Reporting, during export from Data Explorer, and during export from Data Ops.
+3. A summary will be displayed, showing which tables and columns will be encrypted. This data will be encrypted in the table UI in Data Explorer, the table UI in Reporting, during export from Data Explorer, and during export from Data export.
 
 Encrypted data: 
 

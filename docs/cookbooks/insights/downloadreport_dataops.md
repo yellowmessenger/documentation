@@ -4,14 +4,14 @@ sidebar_label: Download reports for longer duration
 ---
 
 
-Under **Insights > Data Explorer**, you can view or export notification reports(or other reports) for only the past 190 days. To generate annual or longer-duration reports, use the **Insights > Data Ops** section.
+Under **Insights > Data Explorer**, you can view or export notification reports(or other reports) for only the past 190 days. To generate annual or longer-duration reports, use the **Insights > Data export** section.
 
-For more details about Data Ops, refer to the [documentation here](https://docs.yellow.ai/docs/platform_concepts/growth/dataops).
+For more details about Data export, refer to the [documentation here](https://docs.yellow.ai/docs/platform_concepts/growth/dataops).
 
 ## Steps to export data older than 190 days
 
-### 1. Access Data Ops
-Navigate to **Insights > Data Ops**, then click **+ Create Export Rule**.
+### 1. Access Data export
+Navigate to **Insights > Data export**, then click **+ Create Export Rule**.
 
    ![Create Export Rule](https://cdn.yellowmessenger.com/assets/docs/data-export.png)
 
@@ -61,5 +61,5 @@ Navigate to **Insights > Data Ops**, then click **+ Create Export Rule**.
 
 **Export Other Data Types**
 
-The above procedure can be followed for other available data types in **Data Ops**.
+The above procedure can be followed for other available data types in **Data export**.
 :::
