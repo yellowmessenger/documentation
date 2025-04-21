@@ -15,7 +15,7 @@ To prevent sending campaigns to users who respond with DND, follow these steps:
 1. Create and train an [intent on relevant uttrences like DND and unsubscribe](https://docs.yellow.ai/docs/platform_concepts/studio/train/intents#add-intents-and-utterances).
 2. Set up a flow triggered by the respective intent.
 3. Within the flow, [update the opt-in property when the intent is triggered.
-4. Use this updated property as a [condition in segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment) targeting to exclude users who have opted for DND from receiving further campaign messages.
+4. Use this updated property as a [condition in segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) targeting to exclude users who have opted for DND from receiving further campaign messages.
 
 For a detailed help guide, refer to [Engage user guide](https://docs.yellow.ai/docs/cookbooks/engage/optout-campaigns).
 

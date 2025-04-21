@@ -74,7 +74,7 @@ Sticky agent assignment is the process of connecting your customers to the agent
 
 
 You can now search segments using the Search box (this is similar to the search option available in the outbound campaign). To search from multiple segments, use filters to get your preferred segment from the Active segments or Archived segments.    
-[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment#2-view-segment-users). 
+[**Learn more here**](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview). 
 
 
 
