@@ -101,12 +101,20 @@ The **Generate payment link** action in the Camspay integration node has been **
 Personalize your default **email acknowledgements** with new formatting options: Bold, Italics, Strike-through, Underline, Code, and Paragraphs.
 
 
-## Skill is now Workflow 
+## UI terminology updates
 
-> UI terminology update: **Automation** 
+### Skill is now Workflow 
+
+> UI: **Automation** 
 
 We have changed the term **Skill** to **Workflow** across the Yellow.ai platform. All existing skills are now labeled as workflows in Dynamic chat node and Agent AI. 
 You will see this updated terminology reflected consistently throughout the UI for a more intuitive experience.
+
+### Data ops is now Data export 
+
+> UI: **Insights** 
+
+With the latest UI update, Data Ops has been renamed to Data export. 
 
 ## Multiple improvements in Analyze
 

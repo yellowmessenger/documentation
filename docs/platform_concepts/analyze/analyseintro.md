@@ -3,6 +3,7 @@ title: Introduction to analyze
 sidebar_label: Analyze
 ---
 
+
 ## Analyze overview
 
 Analyze is an advanced AI Analyst that helps brands monitor and enhance AI-agent performance over time through self-learning mechanisms. It improves your **contained resolution rate** by leveraging an in-house LLM model to evaluate each conversation, measure resolution quality and user sentiment, and create topic clusters.
@@ -12,6 +13,12 @@ Business owners can then focus on the topics with the greatest opportunity to im
 > **Contained resolution rate** refers to the share of conversations resolved by the AI-agent without a handover to the human support agent.
 
 ![image](https://imgur.com/tSJcj17.png)
+
+:::note 
+
+Conversations with fewer than three messages cannot be analyzed, as there isn't enough context to form a meaningful interaction.
+:::
+
 
 ### Use cases
 

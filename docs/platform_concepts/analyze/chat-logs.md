@@ -61,6 +61,9 @@ To filter chat logs, follow these steps:
  
 3. Click **Apply filter** after setting the criteria.
 
+> A red dot appears next to the field to indicate that a filter is applied.
+
+
 :::info 
 The following **Tags** can be filtered: 
 1. **Validator Limit Exceeded**: Assigned when the validation limit set in respective node is exceeded i.e., user enters invalid input.

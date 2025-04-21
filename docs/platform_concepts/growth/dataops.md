@@ -1,14 +1,11 @@
 ---
-title: Data operations (Data export)
-sidebar_label : Data operations
+title: Data export
+sidebar_label : Data export
 ---
 
 The Yellow.AI platform collects and stores system data points to enhance the end-user and customer experience with dynamic AI agents. This data is utilized by various modules within the platform.
 
-The **Data Ops** (Data Operations) feature allows enterprises(customers) to retrieve this data from the Yellow.AI platform for information security purposes or to create dashboards and reports.
-
-
-## Data export 
+The **Data export** feature allows enterprises(customers) to retrieve this data from the Yellow.AI platform for information security purposes or to create dashboards and reports.
 
 You can export data from the Yellow.AI platform to your system storage by following three steps: selecting the data to be exported, choosing the export frequency, and selecting the destination.
 
@@ -18,15 +15,16 @@ You can export data from the Yellow.AI platform to your system storage by follow
 
 To export data, follow the steps below: 
 
-1. [Log in](https://cloud.yellow.ai/) to the platform and open **Insights** > **Data Ops**. 
+1. [Log in](https://cloud.yellow.ai/) to the platform and open **Insights** > **Data export**. 
 2. Click **Create export rule**.       
-    ![image](https://imgur.com/1oEi9mt.png)
+    ![image](https://imgur.com/6M4OTep.png)
+
 
     
 #### 3. Choose data required for data export 
 
 - Enter any **Export name**. 
-- Choose **Data source** by selecting the checkboxes. You can export the following data from the Data Ops tab: 
+- Choose **Data source** by selecting the checkboxes. You can export the following data from the Data export tab: 
     * **Agent availability**: Agent check-in and check-out data.
     * **Bot configuration**: All data around how the bot should perform	(Journeys and Step data, Training Data (Intents & entities), Configured APIs and Data in Bot DBs (Product catalogs) )
     * **Bot tables**: Custom data storage tables (databases available on the Automation module) built inside the bot.	
@@ -101,7 +99,7 @@ For a single export, the maximum time range is one year. If more than one year's
 
 -------
 
-6. All the existing export rules will be available on the Data Ops page, you can add new rules if required. 
+6. All the existing export rules will be available on the Data export page, you can add new rules if required. 
     ![image](https://imgur.com/YdOTrzj.png)
 
     
@@ -118,7 +116,7 @@ There is no restriction on the number of rules that can be added.
 
 :::note
 - Data export failures are usually unrelated to the Yellow.AI platform and can occur due to various reasons.
-- Email alerts for Data Ops failures are sent only to the person who created the data job task.
+- Email alerts for Data export failures are sent only to the person who created the data job task.
 :::
 
 

@@ -45,7 +45,7 @@ Features within the Insights module can be accessed if a bot user has either of 
     | Metrics dashboard - User metrics  | :x: Chat transcript <br/> :x: User details report|
     | Metrics dashboard - API usage | :heavy_check_mark:|
     | User journeys | :heavy_check_mark: User journey visualization <br/> :heavy_check_mark: Funnels|
-    | Data ops | :x: |
+    | Data export | :x: |
     | Dashboard | :x: |
     | Data explorer | :x: |
     | Health | :heavy_check_mark: |

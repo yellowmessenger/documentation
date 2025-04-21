@@ -172,7 +172,7 @@ On the user engagement events table, similar records are rolled up at 30 mins in
 </summary>
 <div>
 Open <b> Insights</b> > <b>Metrics</b>. You can apply 31 days custom time filter of any month before 6 months(or a year) and click <b>Export</b> and select <b>Chat transcripts</b>. 
-or  from the **Data ops** module. 
+or  from the **Data export** module. 
 </div>
 </details>
 
