@@ -32,8 +32,6 @@ We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure
 [**📘 Dive Into the Details**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-offline-ticketing)
 
 
-
-
 ## Workday integration is live with your AI agent
 
 > New feature: **Integration** > **Workday** <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/new.png" alt="drawing" width="5%"/> 
@@ -48,14 +46,15 @@ Easily integration Workday Integration to your yellow.ai AI agent and perform **
 
 **[🛠️ Everything You Need to Know](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/workday)**
 
+
+----------
+
 ## Search conversations by Session ID
 
-> New feature: **Analyse** <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/new.png" alt="drawing" width="5%"/>
+> Enhancement: **Analyse** 
 
 
 Jump to any session instantly by searching via Session ID — no more endless clicking on *View more*.
-
-----------
 
 ## Debug logs & comments with AI insights
 
@@ -84,7 +83,6 @@ We've updated the **default timestamp filter** to conversation start time in the
 :::
 
 
-
 ## Create payment request action added in Camspay integration 
 
 > Enhancement: **Integrations** > **Camspay**
@@ -100,37 +98,22 @@ The **Generate payment link** action in the Camspay integration node has been **
 
 > Enhancement: **Settings** > **Inbox** > **Email settings** 
 
-
 Personalize your default **email acknowledgements** with new formatting options: Bold, Italics, Strike-through, Underline, Code, and Paragraphs.
-
-
-## Labels for grouping chats
-
-> Enhancement:  **Analyze** > **Conversation logs** 
-
-Create and filter by labels to organize conversations more effectively.
 
 
 ## Skill is now Workflow 
 
 > UI terminology update: **Automation** 
 
-
 We have changed the term **Skill** to **Workflow** across the Yellow.ai platform. All existing skills are now labeled as workflows in Dynamic chat node and Agent AI. 
 You will see this updated terminology reflected consistently throughout the UI for a more intuitive experience.
 
-------------
+## Multiple improvements in Analyze
 
-## **Coming soon**: Simplified Topic UX 
+### Labels for grouping chats
 
-> UI update: **Analyze** > **Topics** 
+Under **Analyze** > **Conversation logs** you can create and filter by labels to organize conversations more effectively.
 
-We’re working on a redesigned Topic Details Page and simplified terminology for a more intuitive experience. Stay tuned!
-
-
---------
-
-## **Bonus enablement**: Analyse
 
 ### Default features 
 
@@ -147,3 +130,10 @@ Outdated suggestions auto-archive after 2 months if not added to the KB, reducin
 
 * We've consolidated near-duplicate and highly similar topics to reduce clutter and provide a more accurate view. Expect a lower count of unique topics, but a higher quality of insights.
 * Key metrics like Containment Rate and Resolution Rate have been recalibrated post-merge for more meaningful analysis.
+
+
+## **Coming soon**: Simplified Topic UX 
+
+> UI update: **Analyze** > **Topics** 
+
+We’re working on a redesigned Topic Details Page and simplified terminology for a more intuitive experience. Stay tuned!
