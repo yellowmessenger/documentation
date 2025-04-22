@@ -14,7 +14,7 @@ Yellow.ai offers pre-built reports with filters, summaries, and visualizations, 
 2. Click on **Data explorer** to enter the data analysis interface.
 3. Default reports are displayed at the top of the page in the Default tab. Click on the report name to open it.
 
-![image](https://imgur.com/8knmDe9.png)
+![image](https://imgur.com/Jgj7gLQ.png)
 
 
 ### Customization options 
