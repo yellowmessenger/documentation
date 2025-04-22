@@ -1,10 +1,10 @@
 ---
-title: Agent assist bot in the chat screen 
+title: Agent assist bot 
 sidebar_label: Agent assist bot
 ---
 
 :::note
-This feature is currently in beta, and customers interested in using it must contact the Inbox team to have it enabled.
+Contact the support team to get Agent assist bot configured/enabled. 
 :::
 
 
@@ -12,7 +12,7 @@ This feature is currently in beta, and customers interested in using it must con
 
 Support agents often find themselves repeatedly performing actions such as retrieving or updating customer information in external tools like CRM systems. Additionally, agents often need to execute tasks on behalf of customers, like canceling orders or initiating service requests, which often involve navigating through multiple tools or tabs.
 
-This constant tool-switching disrupts the agents' workflow, reduces their productivity, and can lead to frustration. It also increases the average handling time for customer inquiries, especially when these repetitive tasks are essential for every chat session.
+This constant tool-switching disrupts the agents' workflow, reduces their productivity, and can lead to frustration. It also increases the average handling time for customer inquiries, especially when these repetitive tasks are essential for every chat/ticket session.
 
 A viable solution to this problem is to centralize all these operations within the support inbox using an assist bot. Think of the assist bot as a virtual assistant for agents, where you can configure various workflows. For instance, you can provide buttons within the inbox to create tickets or process refunds.
 
@@ -53,14 +53,14 @@ Agent assist bot helps agents efficiently complete their tasks directly within t
 3. Test and [publish](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes) your bot. 
 4. Navigate to **Channels** > **Chat widgets** > **Settings** and enable the option **Show the conversation history** and disable **Create a new session for every new tab**.
     ![](https://imgur.com/oCaGBHw.png)
-5. After completing the above steps, reach out to Yellow.ai's Inbox team to integrate your Assist bot with the chat screen. 
+5. After completing the above steps, reach out to Yellow.ai's Inbox team to integrate your Assist bot with the chat/ticket screen. 
 
 -------
 
 
 #### How to use inbox data in Automation while building the assist bot flows?
 
-When agents trigger the assist bot within the Inbox, it receives a complete set of current chat data as a payload. This chat data comprises essential information such as the chat ID, custom fields, and tags. You can design flows to automatically retrieve Inbox information in Automation without manual input. 
+When agents trigger the assist bot within the Inbox, it receives a complete set of current chat/ticket data as a payload. This chat/ticket data comprises essential information such as the chat/ticket ID, custom fields, and tags. You can design flows to automatically retrieve Inbox information in Automation without manual input. 
 
 **Example**: When an agent clicks on **Cancel order**, the order ID can be automatically captured, and the order can be marked as canceled without the agent needing to search for the order ID and confirm it again.
 
@@ -152,13 +152,15 @@ To use the payload details within flows, follow these steps:
 
 ----
 
-### Use the agent assist bot within the inbox chat screen 
+### Use the agent assist bot within the inbox screens 
 
-> Inbox agents and inbox admins have access to the assist bot within the chat screen.
+> Inbox agents and inbox admins have access to the assist bot within the chat/ticket screen.
 
-- Inside the Inbox chat screen, simply press Cmd + K (Ctrl + K on Windows) or click on the assist bot icon within the chat interface to open the assist bot.
-    ![](https://imgur.com/9I1LQll.png)
+- Inside the Inbox chat/ticket screen, simply press Cmd + K (Ctrl + K on Windows) or click on the assist bot icon within the chat interface to open the assist bot.
+    ![](https://imgur.com/9I1LQll.png)          
+    ![image](https://imgur.com/Iq0AfAt.png)
 
-- Each chat session will include a dedicated bot instance, allowing agents to ask questions or perform various operations tailored to the ongoing customer interaction.
+
+- Each chat/ticket session will include a dedicated bot instance, allowing agents to ask questions or perform various operations tailored to the ongoing customer interaction.
     ![](https://imgur.com/kGgtMwe.png)
 

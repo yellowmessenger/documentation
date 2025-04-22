@@ -41,10 +41,17 @@ Email tickets are assigned only to an **Inbox agent** (although **Inbox admin** 
 
     ![](https://i.imgur.com/W8lAIJ6.png)
 
+
 2. The landing page will have a ticket list and count, Sort and filter options, manual ticket creation, SLA messages, email details (agent ID, ticket ID, subject line, ticket creation time), priority, ticket status, and assigned group/agent. 
 
     ![](https://i.imgur.com/JZ5SPUk.png)
 
+
+:::note
+
+An attachments icon appears on the email ticket when the last message contains any attachments
+![email attachment](https://imgur.com/zVAXa2F.png)
+:::
 
 
 | Feature  | Description | Related links |
@@ -89,10 +96,36 @@ Email tickets are assigned only to an **Inbox agent** (although **Inbox admin** 
 |**Forward**|Select **Forward** from the dropdown to reply to the forward the above email thread to a new email ID.|![](https://i.imgur.com/CRyH0y9.png)|
 |**Internal notes**| Select **Internal notes** from the dropdown to add internal notes that only the Inbox admin and agent to whom this ticket is transferred can see.|![](https://i.imgur.com/wgx1c9A.png)|
 |**Add CC and BCC**| Click Cc/Bcc and add the mail IDs|![](https://i.imgur.com/wu1sIgu.png)|
-|**Quick actions**| You can send [prebuilt email templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte) or [configured canned response](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses) or .|![](https://i.imgur.com/xvMFV4s.png). <br/> If there are multiple canned responses, you can search for the required canned response using keyword or text. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses#canned-response-search-functionality) for details. |
-|**Formatting options**| - Add quick responses such as **Canned response or Prebuilt templates** to the email you are typing if they are configured in prior (via. settings) <br/> - Attach up to 5 files of PNG, JPG, PDF, Wav, MP3 and any documentation format (each less than 10 MB) <br/> - Bold text <br/> - Italicize text <br/> - Underline text <br/> - Add text between flower braces { } to write it as code - Arrange the text/content as numbered list or ordered list|![](https://i.imgur.com/IDDGc2h.png)|
 |**Select/change email ID**|All the [emails configured](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/setupandconfig) for inbox are displayed here, you can select the email ID from which you wish to send this email.<br/> If you have received a mail on different mail ID and you send a reply using a different mail ID- the user will receive the old conversation thread in the current mail.|![](https://i.imgur.com/o46DjHM.png)|
 |**Email body**|You can only send a reply when the body contains some information. To send a reply without any content, use blank spaces. <br/> You can easily copy and paste text, images, or files into the email body using keyboard controls (Ctrl + C for copy, Ctrl + V for paste) or the copy-paste option. With this you can transform information from any location to the email body interface. |![](https://i.imgur.com/ZDFEQXN.png)|
+
+#### Formatting & action options
+
+| **Category**        | **Icon / Label**     | **Function**                 | **Details / Description**                                                                                      |
+|---------------------|----------------------|------------------------------|------------------------------------------------------------------------------------------------------------------|
+| **Text Formatting** | **B**                | Bold                         | Makes selected text bold.                                                                                       |
+|                     | **I**                | Italic                       | Italicizes the selected text.                                                                                   |
+|                     | **U**                | Underline                    | Underlines the selected text.                                                                                   |
+|                     | **S**                | Strikethrough                | Draws a line through selected text.                                                                             |
+|                     | **`</>`**            | Inline Code                  | Add text between flower braces `{ }` to format as code. Can be used for a single line code.                                                        |
+|                     | **¶**                | Paragraph Style              | Choose heading or normal paragraph styles.                                                                      |
+|                     | **☰**                | Text Alignment               | Aligns text: left, center, or right.                                                                            |
+|                     | **• / 1.**           | Bullet / Numbered List       | Organize content into bulleted or numbered lists.                                                               |
+|                     | **T**                | Plain Text Block             | Insert a block of plain, unformatted text.                                                                      |
+|                     | **―**                | Horizontal Ruler             | Inserts a horizontal divider line to separate sections of the email.                                            |
+| **Quick Actions**   | 🤖 (Bot)              | AI assist bot               | Agent can clarify doubts or fetch information using [AI assist bot](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentassistbot).                                                                    |
+|                     | ⚡                   | Canned responses     | Add [canned responses](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/canned-responses ) configured via settings. You can choose one from the dropdown while typing an email.                         |
+|                     | 🧱                   | Template                     | Insert [prebuilt email templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte) (prebuilt & saved via settings). Clicking on this icon will open all the available templates, you can select one and update. You can also preview, change or delete template.                                                                   |
+| **Insert Options**  | 📎                   | Attachment                   | Attach up to 5 files: PNG, JPG, PDF, WAV, MP3, and document formats. Each must be <10 MB and combined attachments should be <25 MB.                      |
+|                     | 🖼️                   | Image                        | Insert image directly into email.                                                                               |
+|                     | 🔗                   | Hyperlink                    | Add a clickable link.                                                                                           |
+|                     | 📊                   | Table                        | Insert tables to structure data.                                                                                |
+|                     | `{}`                 | Code Block                   | Insert multiline code snippets.                                                                                 |
+| **Editing Tools**   | ↶                   | Undo                         | Undo the last change.                                                                                           |
+|                     | ↷                   | Redo                         | Redo the last undone action.                                                                                    |
+|                     | 🗑️                   | Delete                       | Delete selected content or the entire draft.                                                                    |
+
+
 
 
 :::note

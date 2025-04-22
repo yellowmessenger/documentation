@@ -28,7 +28,7 @@ Enhance your campaign targeting by excluding users who have opted out. Learn how
 
     <img src="https://i.imgur.com/rK3a7ZU.png" width="100%"/>
 
-4. [Create a user segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment#1-create-user-segment) excluding opted-out users. 
+4. [Create a user segment](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview) excluding opted-out users. 
 
     Add a condition to include users whose `campaignOptIn` status is `true. `Use this updated property as a condition in segment targeting to exclude users who have opted for DND from receiving further campaign messages.
 

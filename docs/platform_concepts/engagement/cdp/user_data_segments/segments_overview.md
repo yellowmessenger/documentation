@@ -45,5 +45,5 @@ These are just a few examples, and user segmentation can vary greatly depending 
 
 Discover more about user segments through these linked articles:
 
-* [Create and manage user segments](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/creating_managing_user_segment)
+* [Create and manage user segments](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segments_overview)
 * [Create segments for different use cases](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/user_data_segments/segment_usecases)
