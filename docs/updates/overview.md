@@ -64,7 +64,7 @@ Improved logic ensures only the most relevant articles are shown (up to 50 for t
 Outdated suggestions auto-archive after 2 months if not added to the KB, reducing noise.
 
 
-###  Option to Merge duplicate & similar topics  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+###  Duplicate & similar topics are auto-merged  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 * We've consolidated near-duplicate and highly similar topics to reduce clutter and provide a more accurate view. Expect a lower count of unique topics, but a higher quality of insights.
 * Key metrics like Containment Rate and Resolution Rate have been recalibrated post-merge for more meaningful analysis.
