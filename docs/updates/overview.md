@@ -15,6 +15,7 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 
 ***
 
+
 ## VoiceX, the future of human-like voice AI **![](https://img.shields.io/badge/-New-00c853)**
 
 
@@ -75,7 +76,7 @@ Under **Analyze** > **Conversation logs** you can create and filter by labels to
 
 
 
-### Coming soon
+### Coming soon!
 
 
 * **Simplified Topic UX**: We're working on a redesigned Topic Details Page and simplified terminology for a more intuitive experience. Stay tuned!
@@ -83,7 +84,7 @@ Under **Analyze** > **Conversation logs** you can create and filter by labels to
 
 ***
 
-## Insights Updates
+## **Insights Updates**
 
 
 ### The default timestamp filter for CRA table is set to Conversation start time ![](https://img.shields.io/badge/-Enhancement-ff9800)
@@ -158,7 +159,7 @@ The **Generate payment link** action in the Camspay integration node has been **
 
 
 
-## Inbox Updates
+## **Inbox Updates**
 
 ### Rich text formatting for email acknowledgements **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
@@ -167,7 +168,7 @@ The **Generate payment link** action in the Camspay integration node has been **
 Personalize your default **email acknowledgements** with new formatting options: Bold, Italics, Strike-through, Underline, Code, and Paragraphs.
 
 
+### Attachments icon in email tickets **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-
-
+To enhance clarity, an attachments icon is displayed on the email ticket if the last message includes any attachments. This provides a quick visual cue for users to identify whether the previous message had any files attached, without needing to open the message thread.
 

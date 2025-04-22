@@ -596,6 +596,7 @@ module.exports = {
               "platform_concepts/inbox/inbox_setup/assignmentlogic",
              // "platform_concepts/inbox/inbox_setup/inboxevent",
               "platform_concepts/inbox/inbox_setup/debugchecklist",
+              "platform_concepts/inbox/inbox_setup/agentassistbot",
             //
                  ],
          },
@@ -616,7 +617,7 @@ module.exports = {
             "platform_concepts/inbox/chats/genai",
             "platform_concepts/inbox/chats/internal-ticket",
             "platform_concepts/inbox/chats/chattoemail",
-            "platform_concepts/inbox/chats/agentassistbot",
+            //"platform_concepts/inbox/chats/agentassistbot",
             "platform_concepts/inbox/chats/customview",
             "platform_concepts/inbox/chats/chatsearch",
             "platform_concepts/inbox/chats/resolve",
