@@ -172,3 +172,12 @@ Personalize your default **email acknowledgements** with new formatting options:
 
 To enhance clarity, an attachments icon is displayed on the email ticket if the last message includes any attachments. This provides a quick visual cue for users to identify whether the previous message had any files attached, without needing to open the message thread.
 
+### Improved email template structuring in inbox settings **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+
+Previously, content variables not working as expected in email templates—especially when trying to include both the latest message and conversation history.
+Now with this current enhancement, you can structure your email content using three distinct variables:
+- **Latest email** – The most recent message typed by the agent.
+- **Email history** – The full thread of the conversation so far.
+- **Signature** – The agent's email signature.
+
+These variables are available under the Variables section and can be placed however you prefer within your email template.
