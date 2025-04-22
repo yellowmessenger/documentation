@@ -58,7 +58,7 @@ Jump to any session instantly by searching via Session ID — no more endless cl
 **Knowledge Base Article Generation** and **Chat Handoff Node** are now enabled by default for all customers using Analyze.
 No need to raise a devRev ticket — they're ready to use out of the box!
 
-### Smarter KB article suggestions  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Clutter-free & organised KB article suggestions  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 Improved logic ensures only the most relevant articles are shown (up to 50 for the top 15 topics).
 Outdated suggestions auto-archive after 2 months if not added to the KB, reducing noise.
