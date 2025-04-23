@@ -59,7 +59,10 @@ To filter chat logs, follow these steps:
     | SID | Session ID can be used to filter conversations by sessions.| 
     
 
-   <img src="https://imgur.com/tadLkWd.png" alt="drawing" width="40%"/>
+   <img src="https://imgur.com/hFu5Yoa.png" alt="drawing" width="50%">                                                                           
+
+
+
  
 3. Click **Apply filter** after setting the criteria.
 
