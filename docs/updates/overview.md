@@ -16,7 +16,7 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 ***
 
 
-## VoiceX, the future of human-like voice AI **![](https://img.shields.io/badge/-New-00c853)**
+## Introducing VoiceX: Experience more natural and human-like AI conversations **![](https://img.shields.io/badge/-New-00c853)**
 
 
 
@@ -38,7 +38,7 @@ We're introducing VoiceX, our next-generation Voice AI platform, built to enable
 
 
 
-### Debug logs & Comments with AI insights for Topics **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### AI Insights for Debug logs & Comments in Topics **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 
 Developers or Admins can now access **Debug Logs** and **Comments** right alongside AI Insights — no more tab-switching!
@@ -53,18 +53,18 @@ Enhanced visibility into **Resolution Status** and User **Sentiment Reasoning** 
 Jump to any session instantly by searching via Session ID — no more endless clicking on *View more*.
 
 
-### Knowledgebase Article generation & Chat handoff nodes are pre-enabled **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+###  Pre-enabled Knowledgebase article generation & Chat handoff nodes **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 **Knowledge Base Article Generation** and **Chat Handoff Node** are now enabled by default for all customers using Analyze.
 No need to raise a devRev ticket — they're ready to use out of the box!
 
-### Smarter KB article suggestions  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Clutter-free & organized Knowledgebase article suggestions  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 Improved logic ensures only the most relevant articles are shown (up to 50 for the top 15 topics).
 Outdated suggestions auto-archive after 2 months if not added to the KB, reducing noise.
 
 
-###  Duplicate & similar topics are auto-merged  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+###  Automatic merging of duplicate & similar topics  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 * We've consolidated near-duplicate and highly similar topics to reduce clutter and provide a more accurate view. Expect a lower count of unique topics, but a higher quality of insights.
 * Key metrics like Containment Rate and Resolution Rate have been recalibrated post-merge for more meaningful analysis.
@@ -74,7 +74,7 @@ Outdated suggestions auto-archive after 2 months if not added to the KB, reducin
 
 Under **Analyze** > **Conversation logs** you can create and filter by labels to organize conversations more effectively.
 
-
+**[Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#label-conversations)**
 
 ### Coming soon!
 
@@ -87,9 +87,9 @@ Under **Analyze** > **Conversation logs** you can create and filter by labels to
 ## **Insights Updates**
 
 
-### The default timestamp filter for CRA table is set to Conversation start time ![](https://img.shields.io/badge/-Enhancement-ff9800)
+### Default timestamp set to conversation start time for CRA table ![](https://img.shields.io/badge/-Enhancement-ff9800)
 
-> Enhancement: **Insights** > **Data Explorer** > **Contained Resolution Analysis**
+> Path: **Insights** > **Data Explorer** > **Contained Resolution Analysis**
 
 We've updated the **default timestamp filter** to conversation start time in the Contained Resolution Analysis (Analyze) table because Sessions can span multiple days. Example: A session that started on April 2 but was analyzed on April 3 will now appear under April 2, matching the actual session start date.
 
@@ -111,7 +111,7 @@ We've updated the **default timestamp filter** to conversation start time in the
 
 ## **Agent AI Updates (Automation)**
 
-### Nomenclature change: Skill changed to Workflow **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Name change: Skill is now Workflow **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 
 We have changed the term **Skill** to **Workflow** across the Yellow.ai platform. All existing skills are now labeled as workflows in Dynamic chat node and Agent AI. 
@@ -123,7 +123,7 @@ You will see this updated terminology reflected consistently throughout the UI f
 
 ## **Integration Updates**
 
-### Zendesk Offline Ticketing now available for uninterrupted customer support **![](https://img.shields.io/badge/-New-00c853)**
+### New integration: Zendesk Offline Ticketing **![](https://img.shields.io/badge/-New-00c853)**
 
 
 We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure uninterrupted support, even when live agents are unavailable. This addition enables:
@@ -135,7 +135,7 @@ We have introduced Zendesk Offline Ticketing in the Yellow.ai platform to ensure
 [**📘 Dive Into the Details**](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/zendesk-offline-ticketing)
 
 
-### Workday integration is live with your AI agent **![](https://img.shields.io/badge/-New-00c853)**
+### New integration: Workday  **![](https://img.shields.io/badge/-New-00c853)**
 
 
 Easily integrate Workday Integration to your yellow.ai AI agent and perform **key Workday actions** such as: 
@@ -147,10 +147,10 @@ Easily integrate Workday Integration to your yellow.ai AI agent and perform **ke
 
 **[🛠️ Everything You Need to Know](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/workday)**
 
-### Create payment request action added in Camspay integration **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Camspay Integration: Added Create payment request action  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 
-A new action, [Create payment request](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/camspay#5-generate-camspay-payment-links-in-bot-conversation) is now available. This enhancement solves use cases—such as retrieving payment status and displaying order details for successful or failed transactions.
+A new action, **[Create payment request](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/camspay#5-generate-camspay-payment-links-in-bot-conversation)** is now available. This enhancement solves use cases—such as retrieving payment status and displaying order details for successful or failed transactions.
 
 :::note
 The **Generate payment link** action in the Camspay integration node has been **deprecated**. We recommend migrating to the new action for future compatibility.
@@ -172,7 +172,7 @@ Personalize your default **email acknowledgements** with new formatting options:
 
 To enhance clarity, an attachments icon is displayed on the email ticket if the last message includes any attachments. This provides a quick visual cue for users to identify whether the previous message had any files attached, without needing to open the message thread.
 
-### Improved email template structuring in inbox settings **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Improved email template structuring **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 Previously, content variables not working as expected in email templates—especially when trying to include both the latest message and conversation history.
 Now with this current enhancement, you can structure your email content using three distinct variables:
