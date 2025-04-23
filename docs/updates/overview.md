@@ -47,34 +47,34 @@ Enhanced visibility into **Resolution Status** and User **Sentiment Reasoning** 
 **[📘 Dive Into the Details](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#debug-conversations)**
 
 
-### Support for Search conversations by Session ID **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Filter conversations by Session ID **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 
-Jump to any session instantly by searching via Session ID — no more endless clicking on *View more*.
+Within conversation logs, jump to any session instantly by [filtering via Session ID](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#filter-conversations) — no more endless clicking on *View more*.
 
 
 ###  Pre-enabled Knowledgebase article generation & Chat handoff nodes **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-**Knowledge Base Article Generation** and **Chat Handoff Node** are now enabled by default for all customers using Analyze.
+**[Knowledgebase article generation](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion)** and **[Chat handoff node](https://docs.yellow.ai/docs/platform_concepts/analyze/handoffnode)** are now enabled by default for all customers using Analyze.
 No need to raise a devRev ticket — they're ready to use out of the box!
 
 ### Clutter-free & organized Knowledgebase article suggestions  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-Improved logic ensures only the most relevant articles are shown (up to 50 for the top 15 topics).
+Improved logic ensures only the most relevant articles are shown (up to 50 for the top 15 topics). 
 Outdated suggestions auto-archive after 2 months if not added to the KB, reducing noise.
 
 
 ###  Automatic merging of duplicate & similar topics  **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-* We've consolidated near-duplicate and highly similar topics to reduce clutter and provide a more accurate view. Expect a lower count of unique topics, but a higher quality of insights.
+* We've consolidated near-duplicate and highly similar topics to reduce clutter and provide a more accurate view. Expect a lower count of [unique topics](https://docs.yellow.ai/docs/platform_concepts/analyze/topics), but a higher quality of insights.
 * Key metrics like Containment Rate and Resolution Rate have been recalibrated post-merge for more meaningful analysis.
 
 
 ### Introduced Labels for grouping chats ![](https://img.shields.io/badge/-Enhancement-ff9800)
 
-Under **Analyze** > **Conversation logs** you can create and filter by labels to organize conversations more effectively.
+Under **Analyse** > **Conversation logs** you can create and filter by labels to organize conversations more effectively.
 
-**[Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#label-conversations)**
+**[🔍 Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#label-conversations)**
 
 ### Coming soon!
 
@@ -108,6 +108,7 @@ We've updated the **default timestamp filter** to conversation start time in the
 
 You asked for it—and we listened! Visualized charts in the Insights Data Explorer are no longer limited to shades of blue. We’ve introduced a more vibrant, multi-colored palette to help you better differentiate and interpret your data at a glance. Colors are now more varied; they are currently selected automatically by the system and can also be customized.
 
+**[💡 Start exploring](https://docs.yellow.ai/docs/platform_concepts/growth/visualisation/visualization)**
 
 ***
 
@@ -167,12 +168,12 @@ The **Generate payment link** action in the Camspay integration node has been **
 
 > Path: **Settings** > **Inbox** > **Email settings** 
 
-Personalize your default **email acknowledgements** with new formatting options: Bold, Italics, Strike-through, Underline, Code, and Paragraphs.
+Personalize your default **[email acknowledgements](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/emailticketing)** with new formatting options: Bold, Italics, Strike-through, Underline, Code, and Paragraphs.
 
 
 ### Attachments icon in email tickets **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-To enhance clarity, an attachments icon is displayed on the email ticket if the last message includes any attachments. This provides a quick visual cue for users to identify whether the previous message had any files attached, without needing to open the message thread.
+To enhance clarity, an attachments icon is displayed on the [email ticket](https://docs.yellow.ai/docs/platform_concepts/inbox/tickets/tickets_intro#1-email-tickets-list-view) if the last message includes any attachments. This provides a quick visual cue for users to identify whether the previous message had any files attached, without needing to open the message thread.
 
 ### Improved email template structuring **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
@@ -183,3 +184,6 @@ Now with this current enhancement, you can structure your email content using th
 - **Signature** – The agent's email signature.
 
 These variables are available under the Variables section and can be placed however you prefer within your email template.
+
+
+[**📄 Continue reading**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte)
