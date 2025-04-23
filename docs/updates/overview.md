@@ -104,7 +104,9 @@ We've updated the **default timestamp filter** to conversation start time in the
 :::
 
 
+### More colorful charts in insights data explorer
 
+You asked for it—and we listened! Visualized charts in the Insights Data Explorer are no longer limited to shades of blue. We’ve introduced a more vibrant, multi-colored palette to help you better differentiate and interpret your data at a glance. Colors are now more varied; they are currently selected automatically by the system and can also be customized.
 
 
 ***
