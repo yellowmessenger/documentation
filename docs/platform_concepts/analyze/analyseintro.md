@@ -28,7 +28,7 @@ If you're responsible for improving AI agent performance, customer experience, o
 - Learn from both AI agent and human agent responses to improve long-term resolution quality
 
 
-![image](https://hackmd.io/_uploads/Byy0SXuklx.png)
+![image](https://imgur.com/DH5YkBg.png)
 
 ---
 
