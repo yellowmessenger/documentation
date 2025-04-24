@@ -51,7 +51,7 @@ In cases where **OAuth** is enabled (commonly for organization-level authenticat
 - During configuration, businesses can choose whether to **enable or disable 2FA** for users.
 - If 2FA is disabled under OAuth, the **2FA toggle will be disabled** in the UI and cannot be changed manually.         
 
-<img src="https://imgur.com/LeNAMG1.png" alt="OAuth2FA" width="70%"/>
+<img src="https://imgur.com/LeNAMG1.png" alt="OAuth2FA" width="50%"/>
 
 ------
 
