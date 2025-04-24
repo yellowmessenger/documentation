@@ -40,11 +40,13 @@ You can apply visualizations for the **summarized** tables by following these st
 
 Visualised charts display data with corresponding labels and values based on the selected chart type.
 
-- **Toggle labels**: Select or deselect chart labels to tailor the view for better comparison and analysis.
+**Toggle labels**: Select or deselect chart labels to tailor the view for better comparison and analysis.
 
   ![Chart Label Toggle](https://imgur.com/PWrB6fA.gif)
 
-- **Adjust colors**: Customize the colors used in the charts to match your preferences or reporting standards.
+<!--
+**Adjust colors**: Customize the colors used in the charts to match your preferences or reporting standards.
+-->
 
 ----
 
