@@ -22,7 +22,7 @@ To connect your yellow.ai account with **Salesforce**, follow these steps.
 
    <img src="https://i.imgur.com/JagYT5w.png" alt="drawing" width="100%"/>
 
-2. Search for **Salesforce Live Chat** or choose the category named **Live chat** from the left navigation bar and then click on **Salesforce Live Chat**.
+2. Search for **Salesforce Live Chat** or choose the category named **Live chat** from the left navigation bar, and then click on **Salesforce Live Chat**.
 
    ![](https://i.imgur.com/nCJ9Tdd.png)
 

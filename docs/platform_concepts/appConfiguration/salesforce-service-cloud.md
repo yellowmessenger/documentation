@@ -6,7 +6,7 @@ sidebar_label : Salesforce CRM
 
 Salesforce is a cloud-based software company that provides a range of business solutions. At its core, Salesforce offers Customer Relationship Management (CRM) software, which helps businesses manage and analyze customer interactions and data. The CRM system allows companies to track sales, marketing efforts, customer service, and other aspects of their operations.
 
-In addition to CRM, Salesforce has various subsidiaries and products that extend its capabilities. For instance, they offer live chat solutions to facilitate real-time customer support and engagement. Yellow.ai supportes integration with Salesforce CRM and [Salesforce Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforcelivechat#21-chat-with-salesforce-live-agent). 
+In addition to CRM, Salesforce has various subsidiaries and products that extend its capabilities. For instance, they offer live chat solutions to facilitate real-time customer support and engagement. Yellow.ai supports integration with Salesforce CRM and [Salesforce Live Chat](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/salesforcelivechat#21-chat-with-salesforce-live-agent). 
 
 
 ## Table of contents
@@ -32,12 +32,12 @@ After integrating with Salesforce CRM, you can perform the following tasks direc
 
 ## Connect Salesforce CRM with Yellow.ai
 
-**Prerequsites:**
+**Prerequisites:**
 
 1. An active Salesforce CRM account
 2. An active yellow.ai account.
 
-To connect your Salesforce CRM account with Yellow.ai, follow the these steps:
+To connect your Salesforce CRM account with Yellow.ai, follow these steps:
 
 1. On the left navigation bar, go to **Extensions** > **Integrations**.
 
@@ -48,7 +48,7 @@ To connect your Salesforce CRM account with Yellow.ai, follow the these steps:
    ![](https://i.imgur.com/0RGxeRr.png)
 
 
-3. Choose a unique name for your Salesforce account and select the Salesforce CRM environment. It's advisable to use a name that reflects its purpose for improved usability.
+3. Choose a unique name for your Salesforce account and select the Salesforce CRM environment. It is recommended to use a name that reflects its purpose for improved usability.
 
    ![](https://i.imgur.com/tYjILVM.png)
 
@@ -58,7 +58,7 @@ To connect your Salesforce CRM account with Yellow.ai, follow the these steps:
 
    ![](https://i.imgur.com/SLUrxzd.gif)
 
- 6. If you have multiple accounts, click **+Add account** and follow the above mentioned steps to add each of them. You can add a maximum of 15 accounts.
+ 6. If you have multiple accounts, click **+Add account** and follow the above mentioned steps to add each one. You can add a maximum of 15 accounts.
 
    ![](https://i.imgur.com/dGxkcov.png)
 
@@ -75,15 +75,15 @@ To carry out a certain action in your Salesforce account, follow these steps:
 
    ![](https://i.imgur.com/Wcacej3.png)
 
-2. In whichever point you want the bot to access Salesforce, inlcude the Salesforce CRM node. For that drag the node connector, go to **Integrations** > **Salesforce CRM**.
+2. In whichever point you want the bot to access Salesforce, include the Salesforce CRM node. For that, drag the node connector, go to **Integrations** > **Salesforce CRM**.
 
    ![](https://i.imgur.com/YVDlhAu.png)
 
-3. In the Salesforce CRM node, fill the following
+3. In the Salesforce CRM node, fill in the following
 
    ![](https://i.imgur.com/LtUHOev.png)
 
-* **Account name:** Choose the prefereed Salesforce CRM account.
+* **Account name:** Choose the preferred Salesforce CRM account.
 * **Action:** Choose the action to be performed.
 * **Select Objects:** Choose the Salesforce CRM object in which the chosen action should be performed.
 * Depending on the selected object, the corresponding fields will be shown. To collect this information from users, you must construct the flow accordingly and [store the data in variables](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-data-in-variables). These variables will then be used in this context.

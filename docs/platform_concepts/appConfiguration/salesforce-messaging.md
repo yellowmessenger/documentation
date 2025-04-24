@@ -80,7 +80,7 @@ This integration enables bot users to connect with live agents on the Salesforce
 
     <img src="https://imgur.com/ej7HW90.png" alt="drawing" width="40%"/>
     
-2. To end the chat, the agent need to close the chat tab, which will automatically trigger the ticket-closed event on the Yellow.ai platform, marking the session as completed.
+2. To end the chat, the agent needs to close the chat tab, which will automatically trigger the ticket-closed event on the Yellow.ai platform, marking the session as completed.
 
     
    ![](https://imgur.com/54RuSjV.png)
