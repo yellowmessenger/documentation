@@ -35,7 +35,7 @@ You can enable or disable 2FA from your **Profile Settings**.
 2. Locate the **2FA toggle** under your profile settings.
 3. Toggle it **ON** to enable or **OFF** to disable 2FA for your account.
 
-![2FA Toggle](https://hackmd.io/_uploads/BkmO_WO1el.png)
+![2FA Toggle](https://imgur.com/whYQOc5.png)
 
 **Login behavior with 2FA**
 
@@ -49,7 +49,8 @@ In cases where **OAuth** is enabled (commonly for organization-level authenticat
 
 - OAuth is configured from the backend upon request. You can raise a support ticket to initiate this setup.
 - During configuration, businesses can choose whether to **enable or disable 2FA** for users.
-- If 2FA is disabled under OAuth, the **2FA toggle will be disabled** in the UI and cannot be changed manually.
+- If 2FA is disabled under OAuth, the **2FA toggle will be disabled** in the UI and cannot be changed manually.         
+
 <img src="https://imgur.com/LeNAMG1.png" alt="OAuth2FA" width="70%"/>
 
 ------
