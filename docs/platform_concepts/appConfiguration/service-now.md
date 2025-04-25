@@ -1,10 +1,13 @@
 ---
-title: Service Now
-sidebar_label: Service Now
+title: ServiceNow Integration
+sidebar_label: ServiceNow 
 ---
 
-The integration of ServiceNow with Yellow.ai enables your bot to efficiently manage IT service requests and streamline service desk operations mentioned below.
 
+
+## ServiceNow integration overview
+
+The ServiceNow integration with Yellow.ai allows your AI agent to manage IT service requests and streamline service desk operations directly through conversations. With this integration, your bot can create, update, and retrieve ServiceNow tickets, helping teams handle incidents more efficiently and maintain consistent service experiences.
 
 
 | Action                  | Description                                         |
@@ -15,6 +18,8 @@ The integration of ServiceNow with Yellow.ai enables your bot to efficiently man
 | Upload file             | Upload a file to ServiceNow.                        |
 | Get file                | Fetch a file from ServiceNow.                       |
 | Get File list           | Fetch a file list from ServiceNow.                  |
+| Get Category | Retrieves the list of available categories from your ServiceNow instance. A category represents a high-level classification of a service request or incident|
+| Get Sub Category | Fetches the sub-categories related to a selected category in ServiceNow. A sub-category represents a specific classification under a selected category|
 
 
 ## Connect ServiceNow with Yellow.ai
@@ -47,10 +52,13 @@ Create an app on ServiceNow to fetch instance URL, client ID and client secret a
 
    ![](https://i.imgur.com/rfa8kRA.png)
 
-### Authorize Yellow.ai to access your Service now account
+### Connect your ServiceNow accout with Yellow.ai
 
+This section guides you  through linking your ServiceNow instance with Yellow.ai. Once connected, your AI agent can interact with your ServiceNow environment to manage service requests, fetch details, and automate routine IT support tasks.
+
+:::note
 In a two-tier environment, you can connect an integration app in the Development environment. In a three-tier environment, you can connect the integration app either in Staging or Sandbox. All connected integrations are available in the live environment.
-
+:::
 
 
 1. Switch to the Development/Staging environment and go to **Extensions** > **Integrations** > **ITSM** > **Service Now**.
@@ -73,7 +81,7 @@ In a two-tier environment, you can connect an integration app in the Development
 2. In a three-tier environment, add accounts in Staging and Sandbox, and they'll be available in Production.
 :::
 
-## Manage ServiceNow actions from bot conversations
+## Manage ServiceNow actions from AI agent conversations
 
 From Yellow.ai you can access your ServiceNow instance and create, update and search a ticket, upload,get file and file list.
     
@@ -87,13 +95,25 @@ From Yellow.ai you can access your ServiceNow instance and create, update and se
 
    <img src="https://i.imgur.com/UIIJEWt.png" alt="drawing" width="70%"/>
    
-   a. **Account name:** Choose the account to use for accessing a specific action.
-   
-   b. **Action:** Select the action to perform. 
-   
-   c. **Select Objects:** Choose the object (**Incident**/**Request**) in which the chosen action should be performed. **Get File** action is an exception, the **Select Objects** field doesn't apply to this action.
-   
-   d. Once you choose the object, the corresponding fields for that action and object is displayed. Fill these fields by adding nodes before the ServiceNow node to collect user information, or click 'Or' to manually input the details.
+4. In **Account name**, xhoose the account to use for accessing a specific action.
+5. In **Action:**, select the action to perform.
+
+
+| **Action**            | **Description** | **Live Example in Bot Conversation** |
+|-----------------------|------------------|--------------------------------------|
+| **Create Ticket**     | Creates a new incident or service request in ServiceNow. Use this when users report an issue. | 🗨️ *“My laptop won’t boot.”* <br/> 🤖 *“I’ve created a ticket for you — #INC78901. Our IT team will get back to you shortly.”* |
+| **Update Ticket**     | Updates an existing ticket with new information, such as a status change, comment, or additional notes. | 🗨️ *“The issue still persists even after restarting.”* <br/> 🤖 *“Got it. I’ve updated ticket #INC78901 with your latest comment.”* |
+| **Search Ticket**     | Searches ServiceNow for tickets based on filters like status, priority, or keywords. | 🗨️ *“Can you show me my open requests?”* <br/> 🤖 *“You currently have 2 open tickets: #INC78901 and #INC78902.”* |
+| **Upload File**       | Attaches a file to a specified ticket. Common for logs, error screenshots, or policy documents. | 🗨️ *“Here’s the screenshot of the error.”* <br/> 📎 *(User uploads file)* <br/> 🤖 *“Thanks! I’ve uploaded this to ticket #INC78901.”* |
+| **Get File List**     | Returns a list of all files attached to a specific ticket.  | 🗨️ *“Did I attach the policy PDF to my ticket?”* <br/> 🤖 *“Ticket #INC78901 has the following files: policy_doc.pdf, error_log.txt.”* |
+| **Get File**          | Retrieves a specific file from a ticket.  | 🗨️ *“Please show me the error log I uploaded.”* <br/> 🤖 *“Here it is: [error_log.txt]”* (link or file preview) |
+| **Get Category**      | Retrieves a list of available issue categories. | 🤖 *“Please select a category for your issue: Hardware, Software, Network.”* |
+| **Get Sub Category**  | Fetches subcategories based on a selected category. | 🗨️ *“I selected ‘Hardware’.”* <br/> 🤖 *“Please choose a sub-category: Laptop, Printer, Monitor.”* |
+
+
+
+6. **Select Objects:** Choose the object (**Incident**/**Request**) in which the chosen action should be performed. **Get File** action is an exception, the **Select Objects** field doesn't apply to this action.
+7. Once you choose the object, the corresponding fields for that action and object is displayed. Fill these fields by adding nodes before the ServiceNow node to collect user information, or click 'Or' to manually input the details.
  
    To collect the information from user, add a [prompt node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#docusaurus_skipToContent_fallback) and [store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables). Pass that variable in the respective field.
  
@@ -102,7 +122,7 @@ From Yellow.ai you can access your ServiceNow instance and create, update and se
 4. [Store the API response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#store-data-in-variables) and pass it in a [message node](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/message-nodes1/message-nodes) to display the response to the end user.
 
 
-### Configuring bot for a sample Service Now use case
+## Configuring AI Agent for a sample Service Now use case
 
 Let's say that you want to fetch a ticket's information in **Requests** using the ticket number. 
 
@@ -134,7 +154,7 @@ You can also [store the API response in a variable](https://docs.yellow.ai/docs/
 
 For example, you can use ``{{{variables.variablename.result.0.number}}}`` to retrieve the ticket number from the following response.
 
-```
+```json
 {
   "result": {
     "sys_updated_on": "2021-11-12 14:16:35",

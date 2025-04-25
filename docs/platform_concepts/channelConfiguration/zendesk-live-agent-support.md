@@ -61,7 +61,12 @@ The Yellow.ai Agent Assist package is available on the Zendesk marketplace. Foll
     * **Enable group restrictions**: Enable the check box and select which groups should have access to this app.
 
 :::info
-To generate an API key, either [create a new OpenAI account](https://platform.openai.com/signup) or [sign in](https://platform.openai.com/login) to your existing account. Then, go to the [API key page](https://platform.openai.com/account/api-keys) and select the option to "Create new secret key". Optionally, you can name the key for easier identification. Ensure that you securely save the generated key and refrain from sharing it with others.
+#### To generate an Azure OpenAI API key:
+
+1. Sign in to the [Azure portal](https://learn.microsoft.com/en-us/azure/api-management/api-management-authenticate-authorize-azure-openai) using your Microsoft account. 
+2. Locate your Azure OpenAI resource. You can also search for it by name. 
+3. Navigate to **Keys and Endpoint** in the Resource Management section. 
+4. Retrieve your API key(s). Copy the one you want to use for integration.
 :::
 
   ![](https://i.imgur.com/dAYlCru.png)
