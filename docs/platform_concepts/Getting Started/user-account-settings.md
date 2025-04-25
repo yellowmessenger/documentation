@@ -21,6 +21,40 @@ You cannot modify profile details (name and email) from the UI.
 
 ----
 
+## Enable two-factor authentication (2FA)
+
+**What is two-factor authentication (2FA)?**
+
+Two-Factor Authentication (2FA) is an additional layer of security that helps protect your account. It requires users to provide two forms of verification before logging in — typically, a password and a one-time passcode (OTP) sent to your email.
+
+### Enable 2FA on yellow.ai
+
+You can enable or disable 2FA from your **Profile Settings**.
+
+1. Go to **My Profile**.
+2. Locate the **2FA toggle** under your profile settings.
+3. Toggle it **ON** to enable or **OFF** to disable 2FA for your account.
+
+![2FA Toggle](https://imgur.com/whYQOc5.png)
+
+**Login behavior with 2FA**
+
+- **2FA enabled**: Upon logging in to the Yellow.ai platform, you will receive a **6-digit OTP via email**. You must enter this OTP to complete the login process.
+- **2FA disabled**: You can log in using just your username and password — no OTP verification required.
+
+
+### 2FA with OAuth 
+
+In cases where **OAuth** is enabled (commonly for organization-level authentication):
+
+- OAuth is configured from the backend upon request. You can raise a support ticket to initiate this setup.
+- During configuration, businesses can choose whether to **enable or disable 2FA** for users.
+- If 2FA is disabled under OAuth, the **2FA toggle will be disabled** in the UI and cannot be changed manually.         
+
+<img src="https://imgur.com/LeNAMG1.png" alt="OAuth2FA" width="50%"/>
+
+------
+
 ## Change account password 
 
 You can change your password at any time. However, if you use password-based logins, you must update it every 180 days (6 months). Password changes are not applicable for SSO or Google logins, and you will not be able to change your password in those cases.

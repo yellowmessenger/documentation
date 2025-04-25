@@ -15,5 +15,5 @@ Click **Visualisation > Line**.
 - Capture essential metrics such as page views, unique visitors, and bounce rates to gain insights into visitor behavior. Utilizing line graphs to visualize the website traffic data enables you to identify patterns, such as peak traffic hours or popular pages, and make informed decisions to optimize website content and navigation for better user engagement and retention.
 
 
-![line](https://imgur.com/jZH9xW5.png)
+![Chart line](https://imgur.com/E9aVyZt.gif)
 

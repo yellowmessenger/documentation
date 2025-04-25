@@ -16,4 +16,4 @@ Click **Visualisation > Pie**.
 
 
 
-![image](https://imgur.com/RFoOjol.png)
+![Chart pie](https://imgur.com/mvrZuRc.gif)
