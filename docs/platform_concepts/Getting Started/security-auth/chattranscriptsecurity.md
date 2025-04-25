@@ -8,24 +8,19 @@ IP whitelisting is a security practice that involves creating a list of approved
 This feature is available on the app and cloud platform. 
 
 :::note
-- Only Super admins(owners) can access this option.
+- Only **Super admins(owners)** can access this option.
 - Currently, only IPV4 addresses are supported for whitelisting.
 - We rely on Cloudflare (CF) to protect our internal IP address. As a result, the public-facing IP address is provided by Cloudflare. For additional information, you can refer to [cloudflare’s official IP ranges](https://www.cloudflare.com/en-in/ips/).
 :::
 
 Chat transcripts are vital records of interactions between users and AI-agent, whether they are [conversation logs](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs) or [chats with agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chattranscript). By enabling IP whitelisting, the platform allows access to the conversations only from specified IP addresses.
 
-Chat transcript visibility for different permissions: 
-
-- **Users with AI-agent Access**: If the user already has access to the AI-agent, they can seamlessly view the chat transcript links without the need to whitelist their IP address. However, users must have an active session (logged into the platform) to access the chat transcript links. If not logged in, they will be prompted to log in before viewing the links.
-
-- **Users without AI-agent Access**: Users who do not have access to the AI-agent can access the chat transcript links only by whitelisting their IP address.
-
-    ![](https://imgur.com/WwmmYyn.png)
-
-- **Users without AI-agent access and without whitelisted IP addresses**: The chat transcript link will not be accessable.
-
-    ![](https://imgur.com/c6T900o.png)
+Chat transcript visibility for different permissions:            
+- **Users with AI-agent Access**: If the user already has access to the AI-agent, they can seamlessly view the chat transcript links without the need to whitelist their IP address. However, users must have an active session (logged into the platform) to access the chat transcript links. If not logged in, they will be prompted to log in before viewing the links.                   
+- **Users without AI-agent Access**: Users who do not have access to the AI-agent can access the chat transcript links only by whitelisting their IP address.                      
+    ![](https://imgur.com/WwmmYyn.png)                       
+- **Users without AI-agent access and without whitelisted IP addresses**: The chat transcript link will not be accessable.                       
+    ![](https://imgur.com/c6T900o.png)                      
 
 
 
@@ -35,7 +30,7 @@ Chat transcript visibility for different permissions:
 
 You can enable IP whitelisting from the security settings on the app platform. Follow these steps:
 
-1. Navigate to the **Configuration** tab.
+1. Navigate to **Configuration**.
 2. Click on the **Security** tab located at the top of the page.
 
 **![](https://lh3.googleusercontent.com/9YDa7L8_bAYG6gV0qUhk6c9c1WQukW1Ijr3OA5Yl9Zxm06_ghYeaAgZMDXLy-SN-uy0dpC5CE8x6zrBaoOgWkE1_GLB1ReHSN_n-dpF7vnc_4AHoXOm4IEeln3t81Vmsq2RWsoQ4uNB3yhJAIo3i6OU)**
@@ -61,23 +56,17 @@ After adding the IP range, it will be displayed on the dashboard.
 
 To enable IP whitelisting on the cloud platform, follow these steps:
 
-1. Log in to the platform. Click the **Access control** icon at the top of the page.
+1. Log in to the platform. Open settings. Search and select **IP whitelisting**. 
+2. Click on the toggle button to enable IP whitelisting. This which will reveal an option to add IP addresses.
+3. Click **+Add IP Range** to include the IP address range. After adding the IP range, it will be displayed on the dashboard. You can **edit/delete** these details. 
 
-**![](https://lh6.googleusercontent.com/fesPMUsYERq3UOvyGgzYTgo5ufhkIdBQ1TjPc7ZEKjVfVHkZar46yJ6jccc5p6gJe8MKuaJ2AdnPl6fBU9k7AQIOO9R1jVBWa0a-Ck5vZY9yuTMHtzY9yxjQEnnK-42wtua6vPUoXzMho0FG3DG9Gd0)**
-
-2. Click on the toggle button, which will reveal an option to add IP addresses.
-
-**![](https://lh4.googleusercontent.com/drnS-oPdet6kkIxln8fxLYyVgU-IPYpHn3BaoWvNl0opmcZWuvrol3bR_V20f_FQ1X3OzK8oM-V_129gppP_iqgxyRZ5qi281PMO7yPi4AS-EEcHhOotoJEOK5Mzo_YRhdqX-K8VGAne3qe2sh6zFkE)**
-
-3. Click on the **Add IP Range** button to include the IP address range.
-
-**![](https://lh6.googleusercontent.com/2UEIfqbFn0xNjkwlOhbMrfJ8R4o2Rv9womsufhMPKLp2SyZZUTB-GjwPoWZtiRwl47gDeO12AM21Hm5w0dXo1zrrcrRWXnqQnxgrPAISavGheVoBkTkQSi7Fwu_7HJiRjbe_nrNgycneu6Ro5vcK3ro)**
-
-After adding the IP range, it will be displayed on the dashboard. You can edit/delete these details. 
-
-**![](https://lh3.googleusercontent.com/Qp4kSiGvSG3_c3Yn1Vq1hhXIVuwvh5EmVxTp0mBwqtYWpFGzSJe6c8kA3umm5wUy27aBR437JYL9i56MZob2tCtiRxiohNKfQgiLzjVc2LwvieW8Hjxu-U5Xo3FXnhBvUzRf8XjbJ6b9Ve05sr74hEA)**
-
-> If you wish to whitelist only one IP address, add the same IP address in both the **Start IP Range** and **End IP Range** fields.
+**Demo**: 
+![](https://imgur.com/CkQrHTU.gif)
 
 
-----
+:::note
+
+If you wish to whitelist only one IP address, add the same IP address in both the **Start IP Range** and **End IP Range** fields.
+
+:::
+

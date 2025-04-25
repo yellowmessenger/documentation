@@ -55,11 +55,15 @@ To filter chat logs, follow these steps:
     | Flagged Conversation | Choose to view either flagged or unflagged conversations, aiding in prioritization. |
     | Labels | Pinpoint conversations with specific labels, streamlining identification. |
     | Flows | Filter conversations associated with a particular journey, even enabling step and drop-off specific filtering. |
-    | Nodes | Refine conversations containing particular nodes; for example, view all chats with provided phone numbers. Multi-node selection available. Only Prompt nodes will be displayed. |
+    | Nodes | Refine conversations containing particular nodes; for example, view all chats with provided phone numbers. Multi-node selection available. Only Prompt nodes will be displayed.|
+    | SID | Session ID can be used to filter conversations by sessions.| 
 
-   <img src="https://i.imgur.com/3Eg9VQe.png" alt="drawing" width="40%"/>
+<img src="https://imgur.com/hFu5Yoa.png" alt="drawing" width="50%"/>            
+
+
+
  
-3. Click **Apply filter** after setting the criteria.
+3. Click **Apply filter** after setting the criteria.          
 
 > A red dot appears next to the field to indicate that a filter is applied.
 

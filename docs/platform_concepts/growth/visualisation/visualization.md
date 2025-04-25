@@ -20,7 +20,7 @@ Using charts, graphs, and other visualizations is an effective way to make your 
 | **Pivot Table** | Essential for summarizing and visualizing large tables efficiently. |
 
 
-## Steps to apply visualisation
+## Apply visualisation
 
 > Apply summarization before applying any visualisation. 
 
@@ -34,6 +34,19 @@ You can apply visualizations for the **summarized** tables by following these st
 
 3. Click **Apply**. Refresh the page after making changes.
 
+----
+
+## Customise visualised data
+
+Visualised charts display data with corresponding labels and values based on the selected chart type.
+
+**Toggle labels**: Select or deselect chart labels to tailor the view for better comparison and analysis.
+
+  ![Chart Label Toggle](https://imgur.com/PWrB6fA.gif)
+
+<!--
+**Adjust colors**: Customize the colors used in the charts to match your preferences or reporting standards.
+-->
 
 ----
 
