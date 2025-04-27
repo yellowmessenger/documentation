@@ -91,6 +91,21 @@ My chats will differ from agent to agent because they can only see the live chat
 
 This chat option will be available/visible only to the users who are inbox **Supervisor/Admin** (Overall), where they can see all the active live chats that are being handled by the agents. Admins can monitor all the ongoing live chat from here.
 
+
+The Active chat page supports real-time updates for **supervisors**, eliminating the need to refresh the page. This enables supervisors to efficiently monitor and manage ongoing conversations.
+* Only chats or tickets assigned to the supervisor’s group are visible in real-time.
+* Resolved tickets automatically move out of the Active Chat view.
+* All chat messages, internal notes, and ticket events (created, resolved) are updated live.
+* Handling chat transfers:
+    * If a chat is transferred within the **same group** or transfered to a different group managed by the **same supervisor**, the supervisor is notified (e.g., "Chat transferred to Sam").
+    * If a chat is transferred to a **different group** managed by another supervisor, it will no longer be visible to the original supervisor.
+
+
+:::note
+Real-time updates on the Active Chat page for supervisors is a gated feature. Contact the support team to enable it.
+:::
+
+
 ### 1.3 Queued Chats
 
 If either of the below conditions is true, the live chat raised will not be assigned to any agent in particular and it will be found under queued chats (only if [chat queues](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat-queue) is enabled from the settings).

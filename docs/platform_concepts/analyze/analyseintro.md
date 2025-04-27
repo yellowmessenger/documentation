@@ -9,17 +9,6 @@ sidebar_label: Analyze
 
 It solves a fundamental challenge: **understanding and scaling customer interactions at volume**. With thousands of conversations occurring every day, manually reviewing each one is time-consuming and impractical. Analyze simplifies this by organizing data, highlighting problem areas, and recommending next steps—turning complex conversation data into business intelligence.           
 
-<!--
-
-Analyze is built for:
-- Customer support leaders
-- Customer success managers
-- Product and ops teams
-- Brand owners
-
-If you're responsible for improving AI agent performance, customer experience, or automation rates, this module is for you.
-
---> 
 
 > **Flagship Feature: Topics**  
 > The **Topics** sub-module is the centerpiece of Analyze. This **gated feature** uses Yellow.ai’s in-house LLM to automatically categorize conversations, detect user sentiment, generate article suggestions, and identify automation opportunities. It helps businesses uncover what customers are talking about—at scale.

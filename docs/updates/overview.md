@@ -187,3 +187,11 @@ These variables are available under the Variables section and can be placed howe
 
 
 [**📄 Continue reading**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte)
+
+### Real-Time updates on the active chats page for supervisors
+
+Supervisors can now view live updates on the Active Chats page—no need to refresh.
+
+> This is a gated feature. Contact support to enable it.
+
+[**📚 Understand the feature**](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#12-active-chats)

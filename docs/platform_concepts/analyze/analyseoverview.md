@@ -1,18 +1,15 @@
 ---
-title: Analytics for Dynamic chat node (GenAI Analytics)
+title: Analytics for Dynamic chat node
 sidebar_label: Chat metrics 
 ---
 
-With the advent of generative AI bots, it has become increasingly crucial to monitor their performance and their impact on user decisions and business objectives. The **Analyze** section provides a comprehensive view of various metrics related to user interactions within **Chat metrics** (pertaining to a conversation when the **Dynamic chat nodes** are used).
+**Analyse chat metrics** provides insights into bot performance, focusing on Dynamic chat nodes. Key metrics include total user sessions, node completion rates, inputs captured, node failures, and token consumption. These metrics help assess user engagement, track failures, and help to optimize bot interactions to meet business goals.
 
-![](https://imgur.com/GXt64Mu.png)
+![image](https://imgur.com/w9Uy0tt.png)
 
-:::info
-These metrics can be filtered for a particular time-range by clicking the data dropdown on the top right. 
-:::
+> These metrics can be filtered for a particular time-range by clicking the data dropdown on the top right. 
 
 
-----
 <!-- 
 ## Bot metrics
 
@@ -43,7 +40,6 @@ The Bot Metrics tab offers the following widgets:
 
 -->
 
-## Chat metrics
 
 The Chat Metrics tab offers the following widgets which can be used for the user decisions / business goals/ billing purpose:
 
@@ -83,7 +79,13 @@ The Chat Metrics tab offers the following widgets which can be used for the user
 <img src="https://imgur.com/tmdeOcs.png" alt="drawing" width="100%"/> 
 
 
+
+
+
 :::info 
+
+**Tokens explained:**
+
 **Tokens** can be understood as fragments of words. Prior to processing prompts through the API, the input is divided into tokens. It's worth noting that tokens don't always align exactly with the beginnings or endings of words; they can encompass trailing spaces and even sub-words. To provide a sense of token lengths, here are some helpful guidelines:
 * 1 token approximately equals 4 characters in English.
 * 1 token is roughly equivalent to 3/4 words.
