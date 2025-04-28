@@ -177,8 +177,7 @@ To enhance clarity, an attachments icon is displayed on the [email ticket](https
 
 ### Improved email template structuring **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-Previously, content variables not working as expected in email templates—especially when trying to include both the latest message and conversation history.
-Now with this current enhancement, you can structure your email content using three distinct variables:
+You can structure your email content using three distinct variables:
 - **Latest email** – The most recent message typed by the agent.
 - **Email history** – The full thread of the conversation so far.
 - **Signature** – The agent's email signature.
