@@ -234,7 +234,7 @@ Agents can access the agent assist bot by pressing Cmd + K (Ctrl + K on Windows)
 
 ![](https://imgur.com/CKkWVwI.png)
 
-> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/agentassistbot) for a detailed documentation on agent assist bot. 
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/agentassistbot) for a detailed documentation on agent assist bot. 
 
 
 
