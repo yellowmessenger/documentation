@@ -72,14 +72,14 @@ To display actual user names, contact support team.
 --------
 
 
-## Access conversations
+## Access
 
 To access the conversation logs, navigate to **Analyze** > **Conversation Logs**. You can open the detailed view of the conversation to inspect the interaction history.
 
 ![Conversation Logs Access](https://imgur.com/VLjh9Wu.png)            
 ![Conversation View](https://imgur.com/cIH8cOG.png)
 
-### Share conversations
+### Share 
 
 You can share the conversation logs with your team members to review and discuss specific interactions, which helps in identifying problems and finding solutions.
 
@@ -105,7 +105,7 @@ To flag a conversation, follow these steps:
 
 -----------
 
-## Search and Filter conversations
+## Search and Filter 
 
 You can Search and filter conversations to extract relevant and meaningful information from a large volume of chats. Filters help you quickly identify important interactions, better understand user queries, and troubleshoot problems.
 
