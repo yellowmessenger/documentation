@@ -34,7 +34,7 @@ Follow the given steps to configure agent settings:
 
 ### Modify/Add existing agent properties
 
-![](https://i.imgur.com/kD3hLBp.png)
+![image](https://imgur.com/dem0CA9.png)
 
 - To change the basic properties of an agent, click on the edit icon. 
     - **Name** and **Description**: You **can add** the agent **Name** and **Description**, which will be visible to the end customer when they are interacting with the inbox agent. Description can be set as per the industry, example: Customer support agent, Live chat, Client help specialist, Customer representative, etc. You **cannot** modify the agent's name once configured. 
@@ -57,6 +57,9 @@ Follow the given steps to configure agent settings:
     By default, most of the conversations will be in English. If the agent has set any other language (for example French) the bot uses [auto translation](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/automation/chat_auto_translate). 
     :::
     - **Available for call**: This determines the ability of the agents to engage in [video calls](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/videocall). This checkbox must be selected so that the live agent can take video calls or request a video call with the customers.  
+    - **Signature**: The Signature field lets admins assign a creative or informal name to an agent, such as *Real Game Changer*. This name can be used in email templates to create a more casual and engaging tone, especially during marketing conversations.  Once a signature is added for an agent, you can insert it into emails using the dynamic variable `{{agent.signature}}` in [email templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte#step-4-add-dynamic-variables).
+
+ 
 
 
 ### Modify concurrency for agents in bulk
@@ -117,6 +120,9 @@ Previously configured data for the agents will be over-ridden by the new values.
 :::
 
 ![](https://imgur.com/7uMihBQ.png)
+
+
+
 
 
 
