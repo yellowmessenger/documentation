@@ -3,19 +3,6 @@ title: Android Chatbot SDK
 sidebar_label: Android
 ---
 
-Version 1.x had an issue where a corrupted ymAuthentication token was passed in some cases from SDK to the server. The conversation history was thus mapped to the corrupted ymAuthenticationToken
-
-Version 2.x has fix for this issue and thus a correct ymAuthenticationToken is always passed.
-However, as the correct ymAuthentication is different from the corrupted token, our server treats this user as a new user which leads to a complete loss of history of user conversations.
-The user will have a fresh start after updating the app.
-
-Note:
-
-1. ymAuthentication was corrupted only when it contained `=` character in 1.x versions
-2. This issue was happening only on Android platform.
-
-For more info feel free to email us at mobile@yellow.ai
-
 ## Installation
 
 ### Gradle
@@ -37,28 +24,13 @@ repositories {
 dependencies {
     ...
     ...
-	   implementation 'com.github.yellowmessenger:YMChatbot-Android:v2.2.+
+	   implementation 'com.github.yellowmessenger:YMChatbot-Android:v2.21.+
 }
 ```
 
 Note: By puting + at the end, you need not to worry about updating and releaseing your app for every patch we are making in SDK.
 Still, if you want to use exact and latest version please visit the github repository mentioned
 [https://github.com/yellowmessenger/YMChatbot-Android/releases](https://github.com/yellowmessenger/YMChatbot-Android/releases)
-
-### File provider
-
-:::note
-The following key in your strings.xml file is only required for version v1.4.0 to v2.5.0. Starting from version v2.5.0, it is no longer necessary to add this key.
-:::
-
-Add following key in your `strings.xml` file, this will override default file provider used by SDK.
-
-Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
-Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.abc.xyz.fileprovider
-
-```xml
-<string name="application_id_for_provider">your.application.id.fileprovider</string>
-```
 
 ## Basic Usage
 
@@ -359,6 +331,14 @@ Customize the background color of your bot bubble or message using `theme.botBub
 theme.botBubbleBackgroundColor = "#0000FF";
 ```
 
+#### Set link color
+
+Customize the link color in messages using `theme.linkColor`.
+
+```java
+theme.linkColor = "#FF0000";
+```
+
 #### Set bot icon
 
 Choose an icon to represent your bot using `theme.botIcon`.
@@ -414,6 +394,14 @@ Bot close event is separately sent and it can be handled by listening to onBotCl
 ymChat.onBotClose(() -> {
   Log.d("Example App", "Bot Was closed");
  });
+```
+
+## Disabling external link navigation
+
+To prevent url opening in the external browser, set `shouldOpenLinkExternally` to false in config and listen to `url-clicked` event in `onEventFromBot` listner to get the url of the link clicked.
+
+```java
+ymChat.config.shouldOpenLinkExternally = false;
 ```
 
 ## Close bot
@@ -644,4 +632,8 @@ If facing problem in release build, add the following configuration in the app's
 ## Demo App
 
 A demo has been created to better understand the integration of SDK in Android app
-[https://github.com/yellowmessenger/YmChatBot-Android-DemoApp](https://github.com/yellowmessenger/YmChatBot-Android-DemoApp)
+[https://github.com/yellowmessenger/YmChatBot-Android-DemoApp](https://github.com/yellowmessenger/YmChatBot-Android-DemoApp). 
+
+For more info feel free to email us at [apps@yellow.ai](mailto:apps@yellow.ai)
+
+

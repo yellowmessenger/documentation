@@ -3,21 +3,6 @@ title: Chatbot SDK for cordova
 sidebar_label: Cordova
 ---
 
-# Migration Guide for Android
-
-Version 1.x had an issue where a corrupted ymAuthentication token was passed in some cases from SDK to the server. The conversation history was thus mapped to the corrupted ymAuthenticationToken.
-
-Version 2.x has fix for this issue and thus a correct ymAuthenticationToken is always passed.
-However, as the correct ymAuthentication is different from the corrupted token, our server treats this user as a new user which leads to a complete loss of history of user conversations.
-The user will have a fresh start after updating the app.
-
-Note:
-
-1. ymAuthentication was corrupted only when it contained `=` character in 1.x versions
-2. This issue was happening only on Android platform.
-
-For more info feel free to email us at mobile@yellow.ai
-
 ## Installation
 
 ### cordova
@@ -26,23 +11,6 @@ Run this command in terminal form project root folder
 
 ```
 ionic cordova plugin add cordova-plugin-ymchat
-```
-
-### Android
-
-#### File provider
-
-:::note
-* The following key in your `strings.xml` file is only required for versions below v2.5.0. Starting from version v2.5.0, it is no longer necessary to add this key.
-:::
-
-Add following key in your `strings.xml` file found at `yourproject/platforms/android/app/src/main/res/values/strings.xml`, this will override default file provider used by SDK.
-
-Overriding the file provider path will avoid conflict with other app using YM CHATBOT SDK. You can use your application id and suffix it with ".fileprovider"
-Example - applicationId : "com.abc.xyz" then application_id_for_provider = com.abc.xyz.fileprovider
-
-```xml
-<string name="application_id_for_provider">your.application.id.fileprovider</string>
 ```
 
 ## Usage
@@ -269,6 +237,14 @@ Customize the background color of your bot bubble or message using `setThemeBotB
 cordova.plugins.ymchat.setThemeBotBubbleBackgroundColor('#0000ff');
 ```
 
+#### Set link color
+
+Customize the link color in messages using `setThemeLinkColor` method.
+
+```javascript
+cordova.plugins.ymchat.setThemeLinkColor("#FF0000");
+```
+
 #### Set bot icon
 
 Choose an icon to represent your bot using `setThemeBotIcon` method.
@@ -325,6 +301,14 @@ Bot close event is separately sent and it can be handled in following way.
 cordova.plugins.ymchat.onBotClose(() => {
   console.log("Bot Closed"); // Prints Bot Closed
 });
+```
+
+## Disabling external link navigation
+
+To prevent url opening in the external browser, use `shouldOpenLinkExternally` method with false parameter and listen to `url-clicked` event in `onEventFromBot` listner to get the url of the link clicked.
+
+```javascript
+cordova.plugins.ymchat.setOpenLinkExternally(false);
 ```
 
 ## Close bot
@@ -445,4 +429,7 @@ For more detailed information on how to send event to bot workflow, click [here]
 ## Demo App
 
 A demo app can be used as a reference to better understand how this SDK can be integrated in the app
-[https://github.com/yellowmessenger/YMChatIonicDemo](https://github.com/yellowmessenger/YMChatIonicDemo)
+[https://github.com/yellowmessenger/YMChatIonicDemo](https://github.com/yellowmessenger/YMChatIonicDemo). 
+
+For more info feel free to email us at [apps@yellow.ai](mailto:apps@yellow.ai)
+
