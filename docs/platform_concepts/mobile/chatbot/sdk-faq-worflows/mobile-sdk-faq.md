@@ -34,7 +34,7 @@ Refer to the following documentation links for mobile SDK documentation:
 * [Cordova](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/cordova)
 * [React Native](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/react-native)
 * [Flutter](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/flutter)
-* [Xamarian](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/xamarin)
+
 
 **5. The push notifications are not working as expected. How to resolve this issue?**
 
@@ -131,7 +131,6 @@ return new Promise(resolve => {
 * Android SDK (Native): 80.7KB
 * React Native: 39.2 KB
 * Cordova SDK: 47.4 KB
-* Xamarin SDK: 790KB
 * Flutter SDK: 156 KB
 
 **10. Why are TTS and STT features not supported on Mobile SDK?**

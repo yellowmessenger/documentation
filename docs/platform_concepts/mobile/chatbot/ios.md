@@ -296,6 +296,14 @@ Customize the background color of your bot bubble or message using `theme.botBub
 theme.botBubbleBackgroundColor = .green
 ```
 
+#### Set link color
+
+Customize the link color in messages using `theme.linkColor`.
+
+```swift
+theme.linkColor = "#FF0000";
+```
+
 #### Set bot icon
 
 Choose an icon to represent your bot using `theme.botIcon`.
@@ -367,6 +375,14 @@ Bot close event is separetly sent and it can be handled in following way. The ha
 func onBotClose() {
     print("Bot closed")
 }
+```
+
+## Disabling external link navigation
+
+To prevent url opening in the external browser, set `shouldOpenLinkExternally` to false in config and listen to `url-clicked` event in `onEventFromBot` listner to get the url of the link clicked.
+
+```swift
+config.shouldOpenLinkExternally = false
 ```
 
 ## Close bot
@@ -513,3 +529,4 @@ YMChat.shared.enableLogging = true
 A demo has been created to better understand the integration of SDK in iOS app
 [https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp](https://github.com/yellowmessenger/YMChatbot-iOS-DemoApp)
 
+For more info feel free to email us at [apps@yellow.ai](mailto:apps@yellow.ai)

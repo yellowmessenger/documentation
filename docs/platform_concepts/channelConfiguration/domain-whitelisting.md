@@ -71,7 +71,7 @@ To remove whitelisted domains, follow these steps:
 
 ## Whitelist Mobile apps
 
-The platform supports whitelisting for bots deployed using all SDK frameworks, including Android, iOS, React Native, Cordova, Flutter, and Xamarin. By default, the bot will load on any app where the SDK is integrated. If you choose to whitelist one or more apps, the bot will exclusively load in the whitelisted app.
+The platform supports whitelisting for bots deployed using all SDK frameworks, including Android, iOS, React Native, Cordova, and Flutter. By default, the bot will load on any app where the SDK is integrated. If you choose to whitelist one or more apps, the bot will exclusively load in the whitelisted app.
 
 To whitelist specific apps, follow these steps:
 
