@@ -123,4 +123,4 @@ The live chat/email ticket will be assigned to **Agent C**, since **C** is the f
   
 :::note
 Tickets and chats can be manually assigned to an agent regardless of the auto-assignment logic.
-:
+:::
