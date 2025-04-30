@@ -1448,7 +1448,7 @@ module.exports = {
             "platform_concepts/appConfiguration/gpt3",
             "platform_concepts/appConfiguration/jira",
             "platform_concepts/appConfiguration/leadSquared-wa-connector",
-            "platform_concepts/appConfiguration/llm",
+            // "platform_concepts/appConfiguration/llm",
             "platform_concepts/appConfiguration/microsoft-graph",
             "platform_concepts/appConfiguration/netcore",
             "platform_concepts/appConfiguration/okta",
