@@ -1,11 +1,45 @@
 ---
-title: AI-first customer service automation for enterprises
+title: Yellow.ai Autonomous Service with Human-Like Experience
 sidebar_label: Yellow.ai
 ---
 
-Yellow.ai is a leading AI-first customer service automation platform designed for enterprises. It provides dynamic AI agents that streamline customer service operations across voice, chat, and email channels. The platform supports over 35 channels and 135+ languages, offering personalized, 24/7 customer support. With seamless integration capabilities, Yellow.ai enhances agent productivity and delivers actionable insights for customer service leaders, all while maintaining enterprise-grade security and compliance.
 
-**Link to the platform**: https://cloud.yellow.ai
+The [Yellow.ai Agentic Platform](https://cloud.yellow.ai) enables organizations to build, deploy, and manage AI-powered conversational agents at scale. Designed for flexibility and performance, the platform supports a wide range of use cases across industries such as healthcare, retail, finance, and telecommunications.
+
+This page provides an overview of the platform architecture and its components. Each section explains how the platform's capabilities can be configured to meet enterprise requirements—including automation, integrations, knowledge access, and user experience—while ensuring security and scalability.
+
+Use this guide to understand how to effectively utilize the Yellow.ai Agentic Platform to support your business workflows and customer engagement strategies.
+
+
+
+## Platform Architecture
+
+
+The Yellow.ai Agentic Platform is a modular and scalable solution built to support complex enterprise requirements. It enables the creation and management of intelligent, context-aware AI agents that integrate seamlessly with enterprise ecosystems, ensuring high performance across industries such as healthcare, retail, banking, and telecommunications.
+
+   ![platform_architecture](https://cdn.yellowmessenger.com/assets/yellow-docs/yellow.png)
+
+### Key Components
+* **Enterprise-Grade Agents**: Purpose-built AI agents designed for diverse industry use cases, including healthcare, retail, financial services, real estate, media, HR, and IT service management.
+* **Advanced AI Capabilities**: Support for multi-agent workflows that are context-aware, multi-lingual, and multi-modal—enabling natural and adaptive interactions.
+* **Omnichannel Communication**: Deliver unified customer experiences across 40+ channels including WhatsApp, Web Chat, Facebook Messenger, Instagram, SMS, Email, Microsoft Teams, Voice, and Mobile Apps.
+* **Voice AI**: Equipped with Emotion AI, intelligent interruption handling, and human-like conversational flow for enhanced voice interactions.
+* **Personalized Campaigns**: Enables hyper-targeted engagement through intelligent segmentation and dynamic content strategies.
+* **Multi-LLM Architecture**: Supports a range of large language models (LLMs) including GPT-4.0, GPT-4.5, Claude 3, DeepSeek, and enterprise-trained custom models.
+* **Security and Compliance**: Designed with enterprise-grade security protocols, compliance frameworks, content moderation, and robust data privacy practices.
+
+
+
+### Automate, Assist, Analyze: The Adaptive Operations Cycle
+
+
+The Yellow.ai platform operates on a core principle of continuous optimization, driven by the primary goal of enhancing operational efficiency and customer experiences. Through our iterative loop of Automate, Assist, and Analyse, the system evolves with every interaction, ensuring adaptive improvements at each stage.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agent-engine.png)
+
+* **Automate**: Our system automates routine tasks across various channels, from customer support to service requests and thus reduces manual workload and operational costs.  [Learn how Automate works](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+* **Assist**: Provides real-time, context-aware support for human agents to enable faster issue resolution and better decision-making. Learn more about Assist
+* **Analyze**: Continuously monitor and analyze interaction data to identify gaps, refine AI models, and enhance both automation and agent assistance for sustained performance improvements. [Go deeper with Analyze](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro)
 
 :::note
 We also have an App platform (app.yellow.ai), a code-based solution with limited features. However, for a comprehensive experience and enhanced benefits, we strongly recommend [migrating](https://docs.yellow.ai/docs/cookbooks/migration-guide) to our Cloud Platform. For additional support, contact your designated POC.
@@ -37,9 +71,21 @@ At yellow.ai's conversational AI platfom empowers users to create two types of A
 
 --------
 
-## Features of cloud platform
+## Benefits of yellow.ai
 
-### Build powerful AI-agent with ease
+### Build Intelligent AI Agents with Ease (Automate)
+
+
+Yellow.ai enables you to automate customer interactions at scale with 90%+ automation, ensuring 24/7 support with proactive, intelligent responses.
+
+
+* Design and deploy AI agents without coding expertise using prompt-based setups and guided workflows.
+* Deploy AI agents that adapt to evolving customer intents, providing instant, accurate responses across channels.
+* Activate intelligent triggers based on complex message patterns for ticket creation, escalations, and customer updates.
+* Equip support teams with real-time sentiment detection, tone adjustments, and AI-powered coaching for elevated customer conversations.
+
+
+
 
 Utilize our dynamic AI-agent to achieve 90% automation, providing 24/7 support and proactive solutions that reduce customer effort.
 
