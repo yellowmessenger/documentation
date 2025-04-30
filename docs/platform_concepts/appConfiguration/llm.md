@@ -1,4 +1,4 @@
----
+<!-- ---
 title : LLM integration
 sidebar_label : LLM integration
 ---
@@ -57,4 +57,4 @@ Once the integration is successful, the LLM node will be available in the **Auto
 7. Click **OR** and type any text.
 
 <img src="https://i.imgur.com/hk9FXlY.png" alt="drawing" width="85%"/>
-
+ -->
