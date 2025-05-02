@@ -62,6 +62,11 @@ Topics is a **gated feature** and uses AI-generated insights to power much of it
 :::
 
 
+:::note
+Conversations with fewer than three messages are not analyzed, as there isn't enough context to form a meaningful interaction.
+:::
+
+
 ---
 
 ### 2. Conversation logs
@@ -98,7 +103,3 @@ By analyzing these node-level interactions, you can:
 
 You can fine-tune your conversational design and measure performance beyond just session-level data.
 
-
-:::note
-Conversations with fewer than three messages cannot be analyzed, as there isn't enough context to form a meaningful interaction.
-:::

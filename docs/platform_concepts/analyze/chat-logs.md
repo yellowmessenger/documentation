@@ -31,23 +31,18 @@ Conversation logs provide a comprehensive set of tools for managing and analyzin
 ## User session
 
 A **user session** refers to a continuous interaction between a user and the AI-agent within a specific time window. A session starts when the user initiates a conversation with the AI-agent and ends when:
-- The user leaves the conversation,
-- The session times out,
-- Or a maximum session time is reached (varies based on the channel).
+- [**Chat channels**](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview) (e.g., chat widget, WhatsApp, web apps): Sessions last for **24 hours** from the user's **first message** in that conversation window.             
+- **Email channel**: There is **no fixed session duration** for email interactions. Since users may respond after several hours or even days, emails are handled as individual communications rather than a single continuous session.              
+- **Voice calls**: The session ends **as soon as the call is disconnected**.               
+
 
 Each user is identified by a **unique ID (UID)**, and a conversation log is generated for each UID. This log captures the full context of all interactions during the session. Each session has a **session ID (SID)**. 
 
 > You can search for a particular conversation using **UID** or **SID** (Session ID) to locate specific sessions easily.
 
-**Session duration by channel**
-
-- **Chat channels** (e.g., chat widget, WhatsApp, web apps): Sessions last for **24 hours** from the user's **first message** in that conversation window.             
-- **Email channel**: There is **no fixed session duration** for email interactions. Since users may respond after several hours or even days, emails are handled as individual communications rather than a single continuous session.              
-- **Voice calls**: The session ends **as soon as the call is disconnected**.               
-
 **Session expiry explained**
 
-- A session lasts for **24 hours** from the user's first message.
+- A session lasts for **24 hours** from the user's last message.
 - If the user sends another message **within 24 hours**, the **same session continues**.
 - If the user sends a message **after 24 hours**, a **new session starts**.
 
@@ -59,8 +54,9 @@ Each user is identified by a **unique ID (UID)**, and a conversation log is gene
 | **New Session**       | 9:00 AM - Start<br/>9:30 AM - Last message<br/>9:31 AM - Next message (next day) | User sends a message **after 24 hours** | New session starts.<br/>Previous chat history is available, but **context is lost**. |
 
 
-> When users starts a new session (after 24 hours), they can view the previous conversation history, but the context from the earlier session is not retained.
-
+:::note
+When users starts a new session (after 24 hours), they can view the previous conversation history, but the context from the earlier session is not retained.
+:::
 
 
 :::note
@@ -121,7 +117,7 @@ To **filter** chat logs, follow these steps:
 | **Source**               | Filter by source/channel (e.g., WhatsApp, Skype, Facebook, etc.). Pick the desired source from the dropdown menu. |
 | **Tags**                 | Filter by system-generated tags, such as "Validator Limit Exceeded" or "Fallback Limit Exceeded." |
 | **Flag conversation**| Filter conversations that are flagged for follow-up, review, or escalation. |
-| **Labels**               | Filter conversations based on labels applied by users. This helps track specific types of interactions, such as complaints or inquiries. |
+| **Labels**               | Filter conversations based on custom labels applied by users. |
 | **Flows**                | Filter conversations associated with a particular journey, including step and drop-off specific filters. |
 | **Nodes**                | Refine conversations based on specific nodes triggered. For example, filter all conversations where a phone number was collected. |
 | **SID**                  | Filter conversations using the unique Session ID.|     
@@ -153,7 +149,7 @@ View basic details, tags, and labels associated with the chat.
 
 ### Tags
 
-The platform automatically assigns tags to conversations to highlight potential issues, making it easier for developers and analysts to troubleshoot.          
+The platform automatically assigns tags to conversations to highlight key events, making it easier for developers and analysts to troubleshoot.          
 To view tags check the **Tags** column to see the status of the tags or open the chat and check the conversations. 
 
 > You can view the node information when you open a tag, you can rectify the issue within [Automation (flows/nodes)](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/flows-overview). 

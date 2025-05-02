@@ -95,7 +95,7 @@ The Chat Metrics tab offers the following widgets which can be used for the user
 
 If you wish to explore how various providers calculate token quantities, you can refer to the following resources:
 
-* [Open AI token pricing](https://platform.openai.com/tokenizer)
-* [Azure Open AI token pricing](https://azure.microsoft.com/en-in/pricing/calculator/?service=openai-service)
-* [Anthropic token pricing](https://www.anthropic.com/pricing#api)
+* [Open AI token](https://platform.openai.com/tokenizer)
+* [Azure Open AI token](https://azure.microsoft.com/en-in/pricing/calculator/?service=openai-service)
+* [Anthropic token](https://www.anthropic.com/pricing#api)
 :::

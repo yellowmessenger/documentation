@@ -5,7 +5,7 @@ sidebar_label: Topics
 
 :::note
 
-Topics is a gated feature that requires approval from the platform team for activation. Contact [yellow.ai's support team](mailto:support@yellow.ai) for more details. 
+Topics is a gated feature. Contact [yellow.ai's support team](mailto:support@yellow.ai) for more details. 
 
 :::
 
@@ -27,7 +27,7 @@ To access topics page:
 
 ### Article suggestion 
 
-Based on the conversations AI has processed, articles are suggested for each topic with Article suggestion icon highlighted. These suggestions can serve as new additions to the existing knowledge base or as training materials.      
+Based on the conversations AI has processed, articles are suggested for each topic with Article suggestion icon highlighted. These suggestions can serve as new additions to the existing knowledge base.      
 ![image](https://imgur.com/kkMIb5u.png)
 
 > Learn more [here](https://docs.yellow.ai/docs/platform_concepts/analyze/articlesuggestion).
@@ -80,12 +80,7 @@ For example, in the below screenshot, out of 1045 conversations in this topic, 5
 ----------
 
 
-## Search & Filter Topics  
-
-
-You can **search** for a specific topic using the global search feature.                    
-
-![image](https://imgur.com/JnHpnY3.png)
+## Filter Topics  
 
 To filter data and view a particular topic, click **Filter**.                       
 
@@ -112,6 +107,10 @@ By closely monitoring these metrics, you can gain actionable insights into your 
 - **Analyze low containment rate topics**: Investigate topics with low containment rates to understand why users are being escalated to human agents. This can help in refining the AI-agent's responses or providing better training data.
 - **Enhance CR Rate**: For topics with lower CR Rates, consider revising the AI-agent’s dialogue scripts, adding more detailed FAQs, or improving the AI-agent’s understanding through advanced natural language processing (NLP) techniques.
 - **Monitor sentiment**: Keep an eye on user sentiment for each topic. If users consistently express negative sentiments, it’s a signal that the AI-agent’s handling of that topic needs improvement.
-- **Iterate and test**: Regularly update and test the AI-agent’s responses based on the insights gained from topic analysis. Continuous iteration helps in gradually enhancing the AI-agent’s performance and increasing the automated resolution rate.
 
 
+
+
+:::note
+Conversations with fewer than three messages are not analyzed, as there isn't enough context to form a meaningful interaction.
+:::
