@@ -1,6 +1,6 @@
 ---
 title : Generic Webhook
-sidebar_label : Generic Channel Integration
+sidebar_label : Webhook
 ---
 
 Below are the steps for integrating any Channel with Yellow.ai Bots via Webhook.
