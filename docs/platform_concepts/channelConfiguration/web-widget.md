@@ -320,7 +320,7 @@ To view the bot in full screen mode, use the following link: https://cloud.yello
 
 #### Deploy chat widget on your mobile application
 
-To deploy a chat widget on your mobile application, follow the instructions in the help documentation provided for the corresponding SDK under the Deploy section on the Setup page. The documentation links include [Android](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android), [iOS](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios), [React Native](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/react-native), [Flutter](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/flutter), [Cordova](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/cordova), and [Xamarin](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/xamarin).
+To deploy a chat widget on your mobile application, follow the instructions in the help documentation provided for the corresponding SDK under the Deploy section on the Setup page. The documentation links include [Android](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/android), [iOS](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/ios), [React Native](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/react-native), [Flutter](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/flutter), and [Cordova](https://docs.yellow.ai/docs/platform_concepts/mobile/chatbot/cordova).
 
 To access mobile SDKs help doc links, follow these steps.
    

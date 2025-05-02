@@ -21,9 +21,9 @@ Configuring the integration with SFTP is straightforward. Follow the steps defin
 
    ![](https://i.imgur.com/vl7ZP9q.png)
 
-5. If you do not want to upload your SFTP account password, enable **Private key based authentication**. Reach out to our team at support@yellow.ai for the private key. Once you recieve it,  whitelist the key at the SFTP's end to set up a connection between Yellow.ai and SFTP without the password.
+5. If you do not want to upload your SFTP account password, enable **public key based authentication**. Reach out to our team at `L2support@yellow.ai` for the public key. Once you recieve it,  whitelist the key at the SFTP's end to set up a connection between Yellow.ai and SFTP without the password.
 
-   To whitelist our private key in your remote SFTP server, follow the below mentioned commands:
+   To whitelist our public key in your remote SFTP server, follow the below mentioned commands:
 
   ```
   — on remote system ——
