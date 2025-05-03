@@ -1,6 +1,6 @@
 ---
 title: Implementation of role-based access control (RBAC) in the Inbox platform
-sidebar_label: RBAC in Inbox
+sidebar_label: Role-based access control
 ---
 
 Yellow.ai has introduced role-based access control (RBAC) within the Inbox platform to enhance data security and meet specific customer requirements. This update introduces the **Supervisor** role, which provides access only to team-specific data within the **Monitor** and **Analytics** modules.
