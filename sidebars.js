@@ -808,6 +808,7 @@ module.exports = {
           items: [
             "platform_concepts/inbox/upcoming",
             "platform_concepts/inbox/ticketeditor-upcomingchanges",
+            "platform_concepts/inbox/rbcaupcomingchanges",
           ],
         },
 
