@@ -198,3 +198,9 @@ Supervisors can now view live updates on the Active Chats page—no need to refr
 ### Agent signature field for email templates 
 
 Admins can now add a fun or informal **Signature** for agents (e.g., *Real Game Changer*) under [Agent settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#modifyadd-existing-agent-properties). Dynamic variable `{{agent.signature}}` can be used in [Email Templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte#step-4-add-dynamic-variables) to personalize outgoing emails with the agent’s signature.
+
+### Role based access control(RBAC) within inbox 
+
+Yellow.ai has introduced role-based access control (RBAC) within the Inbox platform to enhance data security and meet specific customer requirements.
+
+[**Read more**](https://docs.yellow.ai/docs/platform_concepts/inbox/rbcaupcomingchanges)

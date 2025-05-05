@@ -196,7 +196,6 @@ Other team members who are not part of this organization won't have access to th
 
 If you are inactive for 30 minutes, the platform will log you out for security purposes.
 
-// However, this is not applicable to Inbox agents who handle tickets to ensure they respond promptly to customer queries without any disruptions.
 
 
 To logout manually, you can click **Logout** under the User account section.

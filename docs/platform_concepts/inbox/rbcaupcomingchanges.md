@@ -9,15 +9,9 @@ Yellow.ai has introduced role-based access control (RBAC) within the Inbox platf
 
 When Inbox admins assign a user the **Supervisor** role and map them to one or more teams, the system restricts their access to data associated only with those assigned teams.
 
-### **Monitor page**
+- **Monitor page**: All data within the Monitor section is filtered to show only team-specific insights to supervisors.
 
-- The Monitor section is visible only to **admins** and **supervisors**; agents do not have access.
-- All data within the Monitor section is filtered to show only team-specific insights.
-
-### **Inbox Analytics page**
-
-- **Chat Analytics**, **Email Analytics**, and **Agent Performance** pages now include filters that display data only at the team level for supervisors.
-- Supervisors can view analytics only for their assigned teams.
+- **Inbox Analytics page**: **Chat Analytics**, **Email Analytics**, and **Agent Performance** pages now include filters that display data only at the team level(data of their assigned teams) for supervisors.
 
 ## Benefits of RBAC
 
