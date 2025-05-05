@@ -808,6 +808,7 @@ module.exports = {
           items: [
             "platform_concepts/inbox/upcoming",
             "platform_concepts/inbox/ticketeditor-upcomingchanges",
+            "platform_concepts/inbox/rbcaupcomingchanges",
           ],
         },
 
@@ -1073,11 +1074,8 @@ module.exports = {
   link: {type: 'doc', id: 'platform_concepts/analyze/analyseintro'},
   collapsed: true,
   items: [
-        "platform_concepts/analyze/analyseoverview",
-        "platform_concepts/analyze/chat-logs",
-       // "platform_concepts/studio/build/bot-logs",
-        "platform_concepts/analyze/training-performance",
-    //Topics 
+
+        //Topics 
         {
           type: "category",
           label: "Topics",
@@ -1091,6 +1089,11 @@ module.exports = {
 
               ],
         }, 
+
+        "platform_concepts/analyze/chat-logs",
+        "platform_concepts/analyze/analyseoverview",
+        "platform_concepts/analyze/training-performance",
+
 
 
       ],

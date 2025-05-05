@@ -82,20 +82,22 @@ Dynamic variables populate the email with relevant data, such as the agent’s n
 
 #### Supported variables
 
+
 | Variable         | Description                            |
 |------------------|----------------------------------------|
 | **Agent response variables**||
-`{{ content }}`   | Replaced with the agent's response.     |
-| `Latest email`   | Displays only the most recent reply.    |
-| `Email history`  | Includes the full conversation trail.   |
+`{{content}}`   | Replaced with the agent's response.     |
+| `{{latestEmailContent}}`   | Displays only the most recent reply.    |
+| `{{emailHistory}}`  | Includes the full conversation trail.   |
 |**Ticket detail variables**||
-| `Ticket ID`              | The associated ticket's unique ID.      |
-| `Subject`                | Subject line of the ticket.             |
-| `Assigned agent name`    | Full name of the assigned agent.        |
-| `Assigned agent alias name` | Alias name of the assigned agent.   |
-| `Assigned agent email`   | Email address of the assigned agent.    |
+| `{{ticket.ticketId}}`              | The associated ticket's unique ID.      |
+| `{{ticket.subject}}`                | Subject line of the ticket.             |
+| `{{agent.username}}`    | Full name of the assigned agent.        |
+| `{{assignedAgent.aliasname}}` | Alias name of the assigned agent.   |
+| `{{agent.email}}`   | Email address of the assigned agent.    |
+| `{{agent.signature}}` | Email signature of the assigned agent. | 
 |**Bot detail variables**||
-| `Bot name`   | Name of the active bot.  |
+| `{{bot.botName}}`   | Name of the active bot.  |
 
 
 :::info
@@ -103,7 +105,7 @@ Dynamic variables populate the email with relevant data, such as the agent’s n
 
 Avoid including the entire email history in every template to keep the emails concise and readable. Instead, structure your template as follows:
 
-- Start with `{{ content }}` to show the agent's latest response.
+- Start with `{{content}}` to show the agent's latest response.
 - Add the agent’s signature.
 - Optionally, include `Email history` only in templates that require full context.
 

@@ -16,11 +16,19 @@ In the Monitor section you can effectively track the productivity of your entire
 - Live chats and email tickets in the Inbox are retained for a maximum of **6 months**. After this period, they will be archived. While the data will no longer be accessible on the platform (active store), it will still be available on the servers (cold store) until the contract's validity expires.
 :::
 
+:::info
+
+- Admins have access to all the features and data. 
+- Supervisors have access to all the data that pertains to their teams. 
+
+:::
+
+
 ---
 
 ## <a name="chats"></a> 1. Monitor live chat activities
 
-The chat trends tab provides valuable insights into live chat activity and performance metrics, enabling administrators to monitor trends and optimize chat support operations effectively.
+The chat trends tab provides valuable insights into live chat activity and performance metrics, enabling admins/supervisors to monitor trends and optimize chat support operations effectively.
 
 **Use cases of metrics on chat trends**:
 
@@ -30,7 +38,7 @@ The chat trends tab provides valuable insights into live chat activity and perfo
 | **Response time trends** | Monitoring response time trends helps assess the efficiency of agent interactions with customers. Admins can track the average first response time and average reply time to identify any patterns or changes over time. This data is available in **First response time** and **Average reply time** for the last seven days. |
 | **Agent performance** | Admins can monitor the performance of individual agents by reviewing metrics such as average handling time and the number of resolved chats. On the widgets you can see average handling time for the last seven days and the total number of resolved tickets.|
 | **Customer wait time** | Tracking the average wait time for customers before connecting with a live agent is crucial for optimizing the customer experience. Admins can monitor the average wait time to identify any trends or potential issues. This data can be found in the graph highlighting the average wait time for chats.|
-| **Tag based chat analysis** | Admins can utilize the tag filtering option to analyze specific chat tags. By selecting a tag from the dropdown, they can filter chat details and review metrics related to specific topics or categories. This allows admins to monitor chat trends and performance based on specific tags assigned during chat creation. |
+| **Tag based chat analysis** | Admins can utilize the tag filtering option to analyze specific chat tags. By selecting a tag from the dropdown, they can filter chat details and review metrics related to specific topics or categories. This allows admins/supervisors to monitor chat trends and performance based on specific tags assigned during chat creation. |
 
 -----
 
@@ -137,9 +145,9 @@ Real-time chat activity is displayed in a table within the Inbox. This table pro
 
 - Each chat ticket number is accompanied by the assigned **agent's name, priority level, assigned time, duration of the chat, reply count** (number of replies sent to the user), and more.
 
-- In case an anomaly is detected in a chat, admins have the convenience of accessing the chat details directly by clicking on the chat number. This feature eliminates the need for manual search and opens the chat on the same page.
+- In case an anomaly is detected in a chat, admins/supervisors have the convenience of accessing the chat details directly by clicking on the chat number. This feature eliminates the need for manual search and opens the chat on the same page.
 
-- By simply clicking on the chat number #, admins can quickly investigate any issues or concerns identified in the chat, enabling efficient resolution and support.
+- By simply clicking on the chat number #, admins/supervisors can quickly investigate any issues or concerns identified in the chat, enabling efficient resolution and support.
 
     ![](https://i.imgur.com/K6B5gnd.png)
 

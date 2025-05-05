@@ -59,7 +59,7 @@ Use the **filter** icon to refine conversations based on your criteria:
 - **Resolved**: Filters all resolved conversations, whether contained or not.
 - **User sentiment**: Filter conversations by sentiment categories such as Positive, Negative, or Neutral.
 - **Automation**: Select **Available** to filter conversations whose resolutions are used for automation purposes.
-- **Flagged conversation**: Select from none, flagged or unflagged to open a conversation with comments on it. 
+
 
 <img src="https://imgur.com/DdIMBwC.png" alt="drawing" width="40%"/>                             
 

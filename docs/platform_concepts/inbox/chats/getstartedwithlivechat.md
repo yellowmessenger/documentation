@@ -89,7 +89,25 @@ My chats will differ from agent to agent because they can only see the live chat
 
 ### 1.2 Active Chats
 
-This chat option will be available/visible only to the users who are inbox **Supervisor/Admin** (Overall), where they can see all the active live chats that are being handled by the agents. Admins can monitor all the ongoing live chat from here.
+Active chat option will be visible to the users with **Inbox Supervisor/Admin/Agents** access.
+- Supervisor can see all the active live chats that are being handled by the agents of their group. 
+- Agents can see their chats or chats they are added as collaborators. 
+- Admins can monitor all the ongoing live chat.
+
+
+The Active chat supports **real-time updates** for **Supervisors**, eliminating the need to refresh the page. This enables supervisors to efficiently monitor and manage ongoing conversations.
+* Only chats assigned to the supervisor’s group are visible in real-time.
+* Resolved chats automatically move out of the Active Chat view.
+* All chat messages, internal notes, and events (created, resolved) are updated live.
+* Handling chat transfers:
+    * If a chat is transferred within the **same group** or transfered to a different group managed by the **same supervisor**, the supervisor is notified (e.g., "Chat transferred to Sam").
+    * If a chat is transferred to a **different group** managed by another supervisor, it will no longer be visible to the original supervisor.
+
+
+:::note
+Real-time updates on the Active Chat page for supervisors is a **gated feature**. Contact the support team to enable it.
+:::
+
 
 ### 1.3 Queued Chats
 

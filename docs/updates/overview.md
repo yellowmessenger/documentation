@@ -177,8 +177,7 @@ To enhance clarity, an attachments icon is displayed on the [email ticket](https
 
 ### Improved email template structuring **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-Previously, content variables not working as expected in email templates—especially when trying to include both the latest message and conversation history.
-Now with this current enhancement, you can structure your email content using three distinct variables:
+You can structure your email content using three distinct variables:
 - **Latest email** – The most recent message typed by the agent.
 - **Email history** – The full thread of the conversation so far.
 - **Signature** – The agent's email signature.
@@ -187,3 +186,21 @@ These variables are available under the Variables section and can be placed howe
 
 
 [**📄 Continue reading**](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte)
+
+### Real-Time updates on the active chats page for supervisors
+
+Supervisors can now view live updates on the Active Chats page—no need to refresh.
+
+> This is a gated feature. Contact support to enable it.
+
+[**📚 Understand the feature**](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/getstartedwithlivechat#12-active-chats)
+
+### Agent signature field for email templates 
+
+Admins can now add a fun or informal **Signature** for agents (e.g., *Real Game Changer*) under [Agent settings](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/agents#modifyadd-existing-agent-properties). Dynamic variable `{{agent.signature}}` can be used in [Email Templates](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/productivitytools/emailtempalte#step-4-add-dynamic-variables) to personalize outgoing emails with the agent’s signature.
+
+### Role based access control(RBAC) within inbox 
+
+Yellow.ai has introduced role-based access control (RBAC) within the Inbox platform to enhance data security and meet specific customer requirements.
+
+[**Read more**](https://docs.yellow.ai/docs/platform_concepts/inbox/rbcaupcomingchanges)

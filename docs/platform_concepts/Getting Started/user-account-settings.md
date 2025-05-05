@@ -194,8 +194,10 @@ Other team members who are not part of this organization won't have access to th
 
 ## Log out of yellow.ai
 
-If you are inactive for 30 minutes, the platform will log you out for security purposes.
-However, this is not applicable to Inbox agents who handle tickets to ensure they respond promptly to customer queries without any disruptions.
+For **all users** platform inactive is considered as 30 minutes, which means you will be automatically logged out of the platform after 30 minutes of inactivity.
+
+For **Inbox agents** who handle chats/tickets the inactivity is considered as 8 hours.  Inbox agents will get automatically logged out after 8 hours of inactivity.
+
 
 To logout manually, you can click **Logout** under the User account section.
 

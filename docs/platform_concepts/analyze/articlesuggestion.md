@@ -4,7 +4,7 @@ sidebar_label: Knowledgebase suggestions
 ---
 
 :::info
-AI Knowledgebase Suggestions are enabled by default for all customers using Analyze.
+AI Knowledgebase Suggestions are generated for the top 15 topics.   
 :::
 
 ## Overview
@@ -21,16 +21,6 @@ Handling repeated queries slows response times, consumes valuable agent time, an
 * **AI-Powered article creation**: Generates clear, searchable articles.
 * **Customizable content management**: Allows easy editing and alignment with policies.
 * **Article publishing & management**: Stores finalized articles for AI and human agent use.
-
-### Benefits & applications
-
-Yellow.ai’s AI-powered Knowledgebase Suggestions centralize information, improving accessibility and reducing agent dependency. Automated responses enhance user experience with faster resolutions, while AI-driven insights identify and fill knowledge gaps. By optimizing workflows, businesses increase efficiency and scale effortlessly.
-
-#### Practical use cases
-
-* **Refund queries**: AI automates responses, reducing backlog.
-* **Knowledge gaps**: AI identifies missing information, improving content.
-* **Appointment booking**: Optimized data handling enhances scheduling.
 
 
 ------------------
@@ -101,4 +91,8 @@ Once you have reviewed and made edits to the AI-generated articles, click **Save
 ![Save Changes](https://imgur.com/JRSglIe.png)  
 
 
-> Articles saved in the Knowledgebase will not appear on your website. However, they remain accessible within the Yellow.ai platform for future reference and bot usage.  
+:::note
+
+Articles saved in the Knowledgebase will not appear on your website. However, they remain accessible within the Yellow.ai platform for future reference and AI agents knowledge.
+
+:::  

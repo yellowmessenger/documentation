@@ -253,3 +253,10 @@ On the overview tab there is an option to view agent and their current statuses.
 </div>
 </details>
 
+
+<details>
+  <summary> Why do I get logged out of the Inbox app? </summary>
+  <div>
+    For security and performance reasons, all user sessions (Admin, Agent, and Super Admin) in the Inbox app automatically expire after 8 hours of inactivity or continuous use. After this period, you'll be logged out and prompted to sign in again.  
+    </div>
+</details>
