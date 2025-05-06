@@ -20,7 +20,7 @@ To access topics page:
 1. Log in to the yellow.ai platform. 
 2. Open **Analyse** and navigate to **Topics**. 
 
-![image](https://cdn.yellowmessenger.com/assets/yellow-docs/upload_e3537ba8dce2b3a45c950931496c44d6.png)
+![topics](https://cdn.yellowmessenger.com/assets/yellow-docs/gif.gif)
 
 -----
 
