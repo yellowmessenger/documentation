@@ -52,29 +52,27 @@ Follow the steps below to enable offline handling of live chats:
 5. In **Enable offline tickets**, choose **Enable**.
     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/enable.png" alt="drawing" width="80%"/> 
 
-6. Select the below options to determine the ticket behavior for agents. Click **Submit**.
+6. Select the below options to determine the ticket behavior for agents. Click **Submit**.               
     - **Enable/Disable offline tickets**: Enable this to capture and queue customer requests that come in when no agents are online. For example, if a customer initiates a live chat at midnight, the system logs their message as a ticket, which is then assigned to an agent when they come online. Disabling this means the request will be marked as missed and not followed up automatically.
     - **Max offline tickets allowed**: Enter the number of tickets that can go to Open state while all agents are offline.
     - **Auto-assign tickets**: If this is enabled, the tickets in Open state will be auto-assigned when the agents come back online.
     - **Priority of auto-assignment**: The ticket type (Queued/Open) that should be given priority and auto-assigned when agents come back online. 
-    
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/enableoff.png
-" width="60%"/>
 
-    :::info
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/enableoff.png" width="60%"/>
 
-    **Open chats**:
-    - Open chats are assigned to the agent who logs in first during the upcoming working hour window. This means that when an agent logs in, they will be assigned any open chats that are currently available for handling.
-    - If the number of open chats exceeds the agent's concurrent capacity (the maximum number of chats an agent can handle simultaneously), any remaining open chats will be assigned to the subsequent agent who logs in. 
+:::info
 
-    **Queued chats**:
-    - Queued chats are typically assigned one by one based on the agent's concurrency and availability. This means that when an agent becomes available to handle a new chat, the next chat in the queue will be assigned to them.     
-    :::
+**Open chats**:
+- Open chats are assigned to the agent who logs in first during the upcoming working hour window. This means that when an agent logs in, they will be auto-assigned any open chats that are currently available for handling.
+- If the number of open chats exceeds the agent's concurrent capacity (the maximum number of chats an agent can handle simultaneously), any remaining open chats will be assigned to the subsequent agent who logs in. 
+
+**Queued chats**:
+- Queued chats are typically assigned one by one based on the agent's concurrency and availability. This means that when an agent becomes available to handle a new chat, the next chat in the queue will be assigned to them.     
+:::
 
 7. You can configure offline handling individually per **[group](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/team/groups)** under the group-specific card.   
 
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/editoff.png
-" width="100%"/>
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/editoff.png" width="100%"/>
 
 
 

@@ -40,8 +40,19 @@ In this panel, you can **Summarise** the tables by a count of the table data (nu
    - You can use **Group by** to refine the summary further by another column.  
 
 <img  src="https://imgur.com/86dgnB5.png"  width="50%"/><img  src="https://imgur.com/B25q1GM.png"  width="50%"/>
-    
-5. Click **Apply** to save the summary.  
+
+
+
+
+
+
+
+5. Click **Apply** to save the summary.        
+
+
+
+
+
 
 
 :::note
