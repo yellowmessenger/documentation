@@ -32,7 +32,7 @@ We are excited to announce the launch of the new and improved Knowledge base mod
 
 ## Analyze
 
-### Topic details page UI update 
+### Topic details page UI update **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
 We've rolled out a fresh update to the Topic Details Page in the Analyze module. Here's what's new:
 
