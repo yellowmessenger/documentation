@@ -15,8 +15,24 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 
 ***
 
+## Knowledgebase
 
-## Topic details page UI update 
+### Enhanced Knowledge base module **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+
+We are excited to announce the launch of the new and improved Knowledge base module, now enabled by default for all newly created bots. This update introduces major enhancements designed to streamline how you manage, organize, and sync content—ensuring your AI agents always deliver accurate, context-aware responses.
+
+⭐ What’s New
+
+* **Guided content onboarding**: Step-by-step onboarding for websites, document uploads, and third-party platforms.
+* **Automated content syncing**: Schedule regular content updates using the built-in scheduler—no backend configuration required.
+* **Smarter file management**: Organize your content with folders, subfolders, and perform bulk actions for quicker updates.
+* **Metadata management**: Tag and filter files to improve search accuracy and make content more discoverable for your AI agent.
+* **Independent publishing workflow**: Publish Knowledge Base updates without redeploying the entire bot.
+
+
+## Analyze
+
+### Topic details page UI update 
 
 We've rolled out a fresh update to the Topic Details Page in the Analyze module. Here's what's new:
 

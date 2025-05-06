@@ -204,32 +204,61 @@ You can delay by minutes/hours.
 
 ### 1.7 Raise Ticket
 
-Raise ticket node lets your users connect with live agents in your AI-agent. Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to know more about adding live agents to Yellow.ai. You can also connect users with live chat agents in [different third-party applications](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#6-live-chat). 
+The **Raise a Ticket** node allows your AI agent to create a support ticket when a user's query requires human assistance or follow-up. It acts as a seamless bridge between the AI conversation and your support system.
 
-This node is used create a live chat request with basic or advanced scenarios such as **Working Hours**, **Agent Availability**, **Voice/Video calling**, etc.
+If your team uses Yellow.ai's in-house support system, tickets will be raised in **Yellow.ai Inbox**. If you use a different live chat or support platform, you can integrate with Yellow.ai to raise and manage tickets directly in that system. 
+[Here](https://docs.yellow.ai/docs/platform_concepts/appConfiguration/overview#6-live-chat) is the list of third-party live chat integrations supported.
 
-   ![](https://i.imgur.com/Z8VkgD8.png)
-   
- * **Live chat agent:** Choose the portal in which your live agents are available. It can be Yellow.ai Inbox or any live chat integration integrated with your AI-agent.
- * **Message after ticket assignment:** The message displayed to the user when an agent is assigned to the chat.
 
-Name, Mobile, Email and Query fields can be filled by passing variables. Use prompt nodes to collect these data in variables and pass it in the corresponding fields.
+:::info
+* Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox) to know more about adding live agents to Yellow.ai.
+:::
 
-**Advanced options:**
+   <img src="https://i.imgur.com/uANMMwJ.png" width="90%"/>
 
-To provide additional information to the ticket.
-
-![](https://i.imgur.com/qt9Y87D.png)
-
-As configured in Inbox Settings, [Tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) and [Custom Fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) will be visible in a multi-select dropdown(i.e. more than one options can be added to ticket)
-
-- **Tags**: Selected Tags from dropdown will be added to the extra details of the ticket (useful for agents to get a quick overview of the issue).
-- **Group code**: Similar tickets can be assigned to relevant groups.
-- **Priority**: Denotes the priority of tickets from high, medium or low. (default priority is MEDIUM)
-- **Voice Call Options**: Voice Call, SIP Call and Auto Start Call can be enabled.
-- **Custom Fields**: Based on the use case additional information collected by AI-agent can be added to ticket. for example, in eCommerce Order ID, Payment Mode, Delivery date etc can be asked before connecting to the agent. Just like key value pairs, once a custom field is selected, an additional prompt will be seen.
+| **Field**                              | **Description**                                                                                                                |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| **Live chat agent**                    | Select the live chat account where the ticket should be created.                                                               |
+| **Message after ticket assignment** \* | Enter the message to show the user after a ticket is assigned. You can use variables like `{{{agentName}}}` to personalize it. |
+| **Name** \*                            | Choose the variable that holds the user's name.                                                                                |
+| **Mobile**                             | Choose the variable that holds the user's mobile number.                                                                       |
+| **Email**                              | Choose the variable that holds the user's email address. This is optional.                                                     |
+| **Query** \*                           | Choose the variable that captures the user's message or issue.                                                                 |
+| **Advanced options**                   | Enable to configure extra settings such as tags, priority, language translation, and custom fields.                            |
+| **Custom fields**	                     | Use custom fields to collect extra information specific to your business needs.  You can configure [Custom Fields](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields) in Inbox. Select all the fields you want to include (using multi-select dropdown), and associate each with the relevant variable.  |
 
 <img src="https://cdn.yellowmessenger.com/iE4ppldmrE7k1625673583277.png" alt="drawing" width="65%"/>
+
+
+
+#### Advanced Options – Subfields
+
+<center> <img src="https://i.imgur.com/tPS9R0J.png" width="50%"/> </center>
+
+| **Field**                  | **Description**                                                           |
+| -------------------------- | ------------------------------------------------------------------------- |
+| **Tags**                   | Select [Tags](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/tags) to categorize the ticket for better filtering or reporting.   |
+| **Group code**             | Choose a group code to route the ticket to a specific team or department. |
+| **Priority**               | Set the priority level of the ticket (e.g., Low, Medium, High).           |
+| **Translate user message** | Enable to auto-translate the user's message before it reaches the agent.  |
+| **Voice ticket options**   | Options to customize how voice-based tickets are handled, if applicable. Available options: Voice call, SIP call and Auto start call  |
+
+
+<!--
+This node is used create a live chat request with basic or advanced scenarios such as **Working Hours**, **Agent Availability**, **Voice/Video calling**, etc.
+-->
+
+#### Raise ticket outputs 
+
+**Option** | **Description**
+---------- | ---------------
+**Ticket Closed** | Add any node to perform the preferred action when a ticket is closed successfuly.
+**Error** | Add any node to perform the preferred action when there's an error connecting to an agent.
+
+   <img src="https://i.imgur.com/Fn7QnKd.png" alt="drawing" width="50%"/>
+
+
+
 
 The response of a Raise ticket node:
 
@@ -288,12 +317,7 @@ The response of a Raise ticket node:
 }
 ```
 
-#### Raise ticket outputs 
 
-1. **Ticket Closed**: Add any node to perform the preferred action when a ticket is closed successfuly.
-2. **Error**: Add any node to perform the preferred action when there's an error connecting to an agent.
-
-   <img src="https://i.imgur.com/Fn7QnKd.png" alt="drawing" width="50%"/>
 
 #### Error handling
 
