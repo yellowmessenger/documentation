@@ -7,6 +7,10 @@ Click on the **Topic name** to view a detailed analysis of the selected topic.
 
 ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/gif.gif)
 
+:::info
+All the data related to topics can also be viewed in **Data explorer > [Contained resolution analysis](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#contained-resolution-analysis)**.  
+:::
+
 ## Date filter
 
 By default, analytics for the selected topic are filtered to the past 30 days. You can adjust the time period by selecting a different date range.
@@ -20,8 +24,7 @@ Automation opportunity is the potential for automating user queries in this topi
 
 > **Automation Opportunity** = (Total unresolved/uncontained conversations in this topic) / (Total unresolved/uncontained conversations across all topics).
 
-<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/img.png" alt="drawing" width="60%"/>                             
-
+<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/automationopp.png" alt="drawing" width="50%"/>                             
 
 
 ## Conversation share
@@ -30,7 +33,7 @@ This shows the percentage of total conversations for the selected topic relative
 
 > **Conversation share** = (Total conversations in this topic) / (Total conversations across all topics).
 
-<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/img1.png" alt="drawing" width="50%"/>
+<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/convshare.png" alt="drawing" width="50%"/>                             
 
 <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/img2.png" alt="drawing" width="50%"/>                             
 
@@ -69,12 +72,12 @@ AI analytics consists of:
 
 | **AI analytics**       | **Description**  | 
 |-----------------------|----------------|
-|       **Details**        | **UID** : Unique ID of the chat. |
-|   |**User Query**     :  The initial query from the user. |
-|       |**Automation** : Indicates whether the conversation was handled by an agent or a bot. |
+|       **Details**        | **UID**: Unique ID of the chat. |
+|   |**User Query**:  The initial query from the user. |
+|       |**Automation**: Indicates whether the conversation was handled by an agent or a bot. |
 | **Resolution** | **Resolution Status**: Specifies if the conversation was **Resolved** or **Unresolved**. |
-| | **Resolution Provided** : A summary of the answer given. |
-| | **Resolution Reason** : LLM-generated analysis explaining why this resolution was provided. |
+| | **Resolution Provided**: A summary of the answer given. |
+| | **Resolution Reason**: LLM-generated analysis explaining why this resolution was provided. |
 |**User Sentiment**  | **Sentiment**: Categorized as **Positive, Negative, or Neutral**. |
 | | **Sentiment Reason**: LLM-generated analysis explaining the reason behind the sentiment. |
 
@@ -82,7 +85,7 @@ AI analytics consists of:
 
 ### Debug logs
 
-You can view logs of all changes occurring every minute. The first 5 minutes of logs are displayed in a table. 
+You can view logs of all changes occurring every minute. Click the debugger icon to view a particular debug log. 
 
  <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/img9.png" alt="drawing" width="90%"/>
 
@@ -94,9 +97,20 @@ You can add a new comments or reply to an existing comment. Learn more about com
 <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/img10.png" alt="drawing" width="90%"/>
 
 
-:::info
-This data can also be viewed in **Data explorer > [Contained resolution analysis](https://docs.yellow.ai/docs/cookbooks/insights/eventdescriptions#contained-resolution-analysis)**.  
-:::
+---------
+
+
+## Automation opportunity suggestions
+
+The AI-agent also provides suggestions based on analyzed conversations:
+
+- **Improve Knowledge Base**: Click **View article** to see conversations that the AI used to recommend a new knowledge base article based on human agent interaction.
+- **Analyze conversations**: Click **View conversations** to identify opportunities for AI-agent improvement.
+
+![image](https://cdn.yellowmessenger.com/assets/yellow-docs/img3.png)
+
+
+
 
 -----
 
@@ -110,16 +124,5 @@ Key metrics such as **AI resolution rate, automation rate**, and **user sentimen
 * **Automation Rate**: Percentage of conversations handled entirely by the AI Agent. View **AI Agent vs. Human Agent** handled conversations under this category.                                        
 * **User Sentiment**: Overall sentiment of user interactions with the AI Agent. View Conversations categorized by sentiment under this category.                                  
 
--------------------------
-
-
-## Automation opportunity suggestions
-
-The AI-agent also provides suggestions based on analyzed conversations:
-
-- **Improve Knowledge Base**: Click **View article** to see conversations that the AI used to recommend a new knowledge base article based on human agent interaction.
-- **Analyze conversations**: Click **View conversations** to identify opportunities for AI-agent improvement.
-
-![image](https://cdn.yellowmessenger.com/assets/yellow-docs/img3.png)
 
 
