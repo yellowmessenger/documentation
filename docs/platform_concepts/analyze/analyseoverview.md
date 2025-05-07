@@ -3,7 +3,7 @@ title: Analytics for Dynamic chat node
 sidebar_label: Chat metrics 
 ---
 
-**Analyse chat metrics** provides insights into bot performance, focusing on Dynamic chat nodes. Key metrics include total user sessions, node completion rates, inputs captured, node failures, and token consumption. These metrics help assess user engagement, track failures, and help to optimize bot interactions to meet business goals.
+**Analyze chat metrics** provides insights into bot performance, focusing on Dynamic chat nodes. Key metrics include total user sessions, node completion rates, inputs captured, node failures, and token consumption. These metrics help assess user engagement, track failures, and help to optimize bot interactions to meet business goals.
 
 ![image](https://imgur.com/w9Uy0tt.png)
 

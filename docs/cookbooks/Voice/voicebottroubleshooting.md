@@ -157,7 +157,7 @@ Enabling Auto fallback to Enable summarized results in the Conversation settings
 
 ---
     
-### Detailed steps to access logs from Analyse module
+### Detailed steps to access logs from Analyze module
 
 1. Navigate to **Analysis → Conversational Logs**. Search for the logs using the customer’s phone number.
     

@@ -29,6 +29,7 @@ We are excited to announce the launch of the new and improved Knowledge base mod
 * **Metadata management**: Tag and filter files to improve search accuracy and make content more discoverable for your AI agent.
 * **Independent publishing workflow**: Publish Knowledge Base updates without redeploying the entire bot.
 
+--------
 
 ## Analyze
 

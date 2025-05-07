@@ -196,7 +196,7 @@ Simply make a phone call to your IVR phone number. The AI agent will respond.
 #### Testing & Debugging  
 
 - Have a conversation with the AI agent and modify its functionality as needed.  
-- If the call is connected, you can view the ongoing chat transcript in the **Analyse** module under the **Conversation Log** section.  
+- If the call is connected, you can view the ongoing chat transcript in the **Analyze** module under the **Conversation Log** section.  
 - Review and refine the AI agent’s responses based on the Conversation logs.  
 
 

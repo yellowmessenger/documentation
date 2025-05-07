@@ -61,7 +61,7 @@ Outdated suggestions auto-archive after 2 months if not added to the KB, reducin
 
 ### Introduced Labels for grouping chats ![](https://img.shields.io/badge/-Enhancement-ff9800)
 
-Under **Analyse** > **Conversation logs** you can create and filter by labels to organize conversations more effectively.
+Under **Analyze** > **Conversation logs** you can create and filter by labels to organize conversations more effectively.
 
 **[🔍 Learn more](https://docs.yellow.ai/docs/platform_concepts/analyze/chat-logs#label-conversations)**
 

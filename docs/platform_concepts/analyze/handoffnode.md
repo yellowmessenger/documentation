@@ -111,7 +111,7 @@ Webhook URL for the connected account can be fetched from **Yellow.ai > Integrat
     ![image](https://imgur.com/7TlMBkU.png)
 
 
-Once configured, you can see the analysis generated on the Analyse module for the chats happening on the third-party apps. 
+Once configured, you can see the analysis generated on the Analyze module for the chats happening on the third-party apps. 
 
 ![image](https://imgur.com/sRRhxb7.png)
 ![image](https://imgur.com/V3Cd0lt.png)
