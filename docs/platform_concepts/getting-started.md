@@ -8,6 +8,20 @@ The [Yellow.ai Agentic Platform](https://cloud.yellow.ai) enables organizations 
 
 This page provides an overview of the platform architecture and its components. Each section explains how the platform's capabilities can be configured to meet enterprise requirements—including automation, integrations, knowledge access, and user experience—while ensuring security and scalability.
 
+
+### How are AI-agents different from Bots?  
+
+| Feature                            | AI Agents                                                                                   | Bots                                                                           |
+| ---------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Operational Basis**              | Powered by large language models (LLMs); flexible, not restricted to predefined paths       | Structured, rule-based flows; limited to pre-configured frameworks             |
+| **Response Generation**            | Dynamically generates responses based on context, without relying on pre-configured replies | Generates responses based on specific keywords or predefined utterances        |
+| **Workflow Automation**            | Can automate tasks dynamically, even when workflows are not explicitly configured           | Executes tasks only within predefined workflows                                |
+| **Handling of Unexpected Queries** | Handles complex or unexpected queries by dynamically interpreting and responding            | Limited ability, often requiring escalation for unrecognized inputs            |
+| **Adaptability and Flexibility**   | Highly adaptable, adjusts responses and actions based on real-time inputs                   | Limited; follows set paths, may struggle with deviations from the flow         |
+| **User Experience**                | Provides seamless experience with real-time insights and decision-making                    | May lead to repetitive responses or fallback when encountering unknown queries |
+| **Escalation Need**                | Rarely required, as AI agents handle a wide range of scenarios autonomously                 | Frequent for complex queries outside of defined responses                      |
+
+
 Use this guide to understand how to effectively utilize the Yellow.ai Agentic Platform to support your business workflows and customer engagement strategies.
 
 
@@ -30,24 +44,66 @@ The Yellow.ai Agentic Platform is a modular and scalable solution built to suppo
 
 
 
-### Automate, Assist, Analyze: The Adaptive Operations Cycle
+### The Three Pillars of Yellow.ai: Automate, Assist, Analyze
+
+At Yellow.ai, everything is built around a simple, powerful idea: helping you improve every customer interaction, one step at a time. That’s where our three core pillars — **Automate**, **Assist**, and **Analyze** — come in. Together, they form a continuous improvement cycle that helps your AI system get smarter with every conversation.
+
+Whether you're building workflows, supporting your agents, or tracking performance, these pillars are designed to grow with your business needs.
 
 
-The Yellow.ai platform operates on a core principle of continuous optimization, driven by the primary goal of enhancing operational efficiency and customer experiences. Through our iterative loop of Automate, Assist, and Analyse, the system evolves with every interaction, ensuring adaptive improvements at each stage.
+
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/agent-engine.png)
 
-* **Automate**: Our system automates routine tasks across various channels, from customer support to service requests and thus reduces manual workload and operational costs.  [Learn how Automate works](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
-* **Assist**: Provides real-time, context-aware support for human agents to enable faster issue resolution and better decision-making. Learn more about Assist
-* **Analyze**: Continuously monitor and analyze interaction data to identify gaps, refine AI models, and enhance both automation and agent assistance for sustained performance improvements. [Go deeper with Analyze](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro)
+
+
+#### 1. **Automate**
+Free up your team’s time by letting the system take care of the repetitive stuff. From customer support to internal operations, Automate helps you deploy intelligent AI agents, handle tasks across channels, and reduce manual effort.
+
+Here’s what you’ll use under Automate:
+
+* **AI Agent Builder** – Design engaging, dynamic conversations without writing code. [Learn how Automate works](https://docs.yellow.ai/docs/platform_concepts/studio/overview)
+* **Agentic RAG** – Let your agent pull from documents, images, and more to give smart, accurate answers.
+* **AI Copilot for Debugging** – Spot issues in your bot flows and get smart suggestions to fix them.
+* **Agent Marketplace** – Pick from ready-to-use templates so you can launch faster.
+
+
+
+#### 2. **Assist**
+When things get complex, your team steps in—and we make sure they’re equipped. Assist gives your agents the right tools, insights, and AI support to resolve issues faster and better.
+
+Here’s what supports you in Assist:
+
+   * **Agent Assist** – AI suggests the best responses while your agents chat with users.
+   * **Human Helpdesk Escalation** – Pass chats to agents with full context, without starting over.
+   * **User 360** – See everything you need to know about your customer in one place.
+   * **Agentic CRM** – Manage conversations, relationships, and follow-ups with an AI-first CRM.
+
+
+
+#### 3. **Analyze**
+   You can’t improve what you don’t measure. Analyze helps you make sense of your data, find patterns, and spot opportunities to do more—whether that’s improving automation, fine-tuning responses, or helping your team perform better.
+
+Here’s how you gain visibility with Analyze:
+
+* **Quantitative Analytics** – Track numbers like resolution time, CSAT, automation rates, and more.
+* **Qualitative Insights** – Understand what’s working—and what’s not—based on real user conversations. [Go deeper with Analyze](https://docs.yellow.ai/docs/platform_concepts/analyze/analyseintro)
+* **Self-Learning KB/Flows** – Your AI gets smarter over time by learning from missed queries.
+* **Custom Dashboards** – Build dashboards to focus on what matters most to your team.
+  
+
+
 
 :::note
-We also have an App platform (app.yellow.ai), a code-based solution with limited features. However, for a comprehensive experience and enhanced benefits, we strongly recommend [migrating](https://docs.yellow.ai/docs/cookbooks/migration-guide) to our Cloud Platform. For additional support, contact your designated POC.
+We also offer a code-based App Platform (app.yellow.ai) with a limited feature set. However, for a more robust experience and access to the full capabilities of Yellow.ai, we recommend migrating to our Cloud Platform.
+
+
+To begin your migration, refer to our [migration guide](https://docs.yellow.ai/docs/cookbooks/migration-guide). For any assistance, please reach out to your designated point of contact (POC)..
 :::
 
 ------------
 
-
+<!--
 
 ## Build Chat & Voice AI-agents on our Conversational AI platfom 
 
@@ -56,20 +112,10 @@ At yellow.ai's conversational AI platfom empowers users to create two types of A
 - Voice AI-agents enable virtual assistants to interact with customers verbally, resolving their queries effectively.
 
 
-### How are AI-agents different from Bots?  
-
-| Feature                            | AI Agents                                                                                   | Bots                                                                           |
-| ---------------------------------- | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
-| **Operational Basis**              | Powered by large language models (LLMs); flexible, not restricted to predefined paths       | Structured, rule-based flows; limited to pre-configured frameworks             |
-| **Response Generation**            | Dynamically generates responses based on context, without relying on pre-configured replies | Generates responses based on specific keywords or predefined utterances        |
-| **Workflow Automation**            | Can automate tasks dynamically, even when workflows are not explicitly configured           | Executes tasks only within predefined workflows                                |
-| **Handling of Unexpected Queries** | Handles complex or unexpected queries by dynamically interpreting and responding            | Limited ability, often requiring escalation for unrecognized inputs            |
-| **Adaptability and Flexibility**   | Highly adaptable, adjusts responses and actions based on real-time inputs                   | Limited; follows set paths, may struggle with deviations from the flow         |
-| **User Experience**                | Provides seamless experience with real-time insights and decision-making                    | May lead to repetitive responses or fallback when encountering unknown queries |
-| **Escalation Need**                | Rarely required, as AI agents handle a wide range of scenarios autonomously                 | Frequent for complex queries outside of defined responses                      |
-
 
 --------
+-->
+
 
 ## Benefits of yellow.ai
 
