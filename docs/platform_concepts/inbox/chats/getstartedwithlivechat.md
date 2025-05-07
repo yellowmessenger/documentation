@@ -89,10 +89,9 @@ My chats will differ from agent to agent because they can only see the live chat
 
 ### 1.2 Active Chats
 
-Active chat option will be visible to the users with **Inbox Supervisor/Admin/Agents** access.
-- Supervisor can see all the active live chats that are being handled by the agents of their group. 
-- Agents can see their chats or chats they are added as collaborators. 
-- Admins can monitor all the ongoing live chat.
+Active chat option will be visible to the users with **Inbox Supervisor/Admin** access.
+- **Supervisor** can see all the active live chats that are being handled by the agents of their group. 
+- **Admins** can monitor all the ongoing live chat.
 
 
 The Active chat supports **real-time updates** for **Supervisors**, eliminating the need to refresh the page. This enables supervisors to efficiently monitor and manage ongoing conversations.
