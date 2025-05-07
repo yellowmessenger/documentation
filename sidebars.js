@@ -1457,7 +1457,7 @@ module.exports = {
             "platform_concepts/appConfiguration/okta",
             "platform_concepts/appConfiguration/oracle-responsys",
             "platform_concepts/appConfiguration/outlook-calendar",
-            "platform_concepts/appConfiguration/sftp",
+           // "platform_concepts/appConfiguration/sftp",
             "platform_concepts/appConfiguration/twilio-verify",
             "platform_concepts/appConfiguration/webengage",
             "platform_concepts/appConfiguration/webhook",
@@ -1752,7 +1752,8 @@ module.exports = {
       label: "2025 updates",
       collapsed: true,
       items: [
-        "updates/2024/q12025",
+        "updates/2025/q12025",
+        "updates/2025/april",
       ]
     },  
     {

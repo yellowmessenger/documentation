@@ -103,3 +103,12 @@ By analyzing these node-level interactions, you can:
 
 You can fine-tune your conversational design and measure performance beyond just session-level data.
 
+-----
+
+## How analyze works for Voice ai-agents? 
+
+Conversations with Voice AI agents are stored in two ways:
+- **SAML Tag Links**: Clicking the tag redirects you to the corresponding voice recording, which you can listen to directly.
+- **Text Transcripts**: Conversations may also be transcribed and displayed as readable text.
+
+Regardless of how the conversation is stored in the UI (as audio or text), all interactions are transcribed, analyzed and displayed within **Analyze**.
