@@ -21,7 +21,7 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 
 We are excited to announce the launch of the new and improved Knowledge base module, now enabled by default for all newly created bots. This update introduces major enhancements designed to streamline how you manage, organize, and sync content—ensuring your AI agents always deliver accurate, context-aware responses.
 
-⭐ What’s New
+**What’s enhanced**:
 
 * **Guided content onboarding**: Step-by-step onboarding for websites, document uploads, and third-party platforms.
 * **Automated content syncing**: Schedule regular content updates using the built-in scheduler—no backend configuration required.
@@ -32,17 +32,24 @@ We are excited to announce the launch of the new and improved Knowledge base mod
 
 ## Analyze
 
-### Topic details page UI update **![](https://img.shields.io/badge/-Enhancement-ff9800)**
+### Redesigned Topic Details Page **![](https://img.shields.io/badge/-Enhancement-ff9800)**
 
-We've rolled out a fresh update to the Topic Details Page in the Analyze module. Here's what's new:
+We’ve introduced a refreshed design and improved terminology on the Topic Details page in the **Analyze** module to make insights easier to understand and act on.
 
-- **Simplified Terminology & Clear Definitions**:
-CR Rate is now **AI Resolution Rate** 
-- **Containment Rate** is now **Automation Rate** 
-- **CR Opportunity** is now **Automation Opportunity**
+![topics](https://cdn.yellowmessenger.com/assets/yellow-docs/gif.gif)
 
-> You can hover over these terms for easy-to-understand definitions. 
+#### Updated Terminology for Clarity
 
-**Additional update**: We've revamped the layout to spotlight KB Recommendations and the CTA for manual conversation analysis right at the top, making it quicker and easier to get things done.
+1. To ensure consistency across the platform and enhance clarity, we've updated the following terms:
+   * CR Rate → AI Resolution Rate
+   * Containment Rate → Automation Rate
+   * CR Opportunity → Automation Opportunity
+2. Each term now includes a tooltip definition—simply hover to learn more.
+
+#### Layout Enhancements for Better Usability
+
+To ensure faster access to actionable insights and smoother navigation:
+* KB Recommendations and the Manual Conversation Analysis CTA have been moved to the top of the page.
+
 
 [**Continue reading**](https://docs.yellow.ai/docs/platform_concepts/analyze/indepthinsights)
