@@ -246,7 +246,12 @@ paths:
           application/json:
             schema:
               type: object
+              required:
+               - userId
               properties:
+                userId:
+                  type: string
+                  description: Unique identifier of the user.
                 firstName:
                   type: string
                   description: The first name of the user.
