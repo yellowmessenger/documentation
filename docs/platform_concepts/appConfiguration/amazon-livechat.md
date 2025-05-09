@@ -166,7 +166,7 @@ To retrieve the Contact Flow ID:
 
 To Configure Connect Live Chat in your AI agent conversation:
 
-1. In the Automation module, go to [Build]((https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys)).
+1. In the Automation module, go to [Build](https://docs.yellow.ai/docs/platform_concepts/studio/build/Flows/journeys).
 2. Navigate to the flow where you want to add the live agent flow and insert **Raise a ticket** node (**Integration** > **Raise a ticket**).
 3. In **Live chat agent**, select **Amazon connect live chat**.
 4. Configure the following details:
