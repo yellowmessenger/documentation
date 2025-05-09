@@ -535,7 +535,7 @@ Analytics table can be found under custom tables in which the following data is 
  
 ## Contained resolution analysis
 
-These KPIs are tracked for data generated in the Analyse module (**Analyse > Topics**). 
+These KPIs are tracked for data generated in the Analyze module (**Analyze > Topics**). 
 
 | Fields                  | Description                                                                                                                                   |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
@@ -545,7 +545,7 @@ These KPIs are tracked for data generated in the Analyse module (**Analyse > Top
 | User Query              | Summary of the query the user asked the bot or agent |
 | Resolution              | Summary of the resolution provided by the bot or agent from the conversation                                                             |
 | Contained               | Indicates if the chat was solely handled by the bot or transferred to an agent. If True, the query was handled/contained by the bot. If False, both bot and agent handled the query |
-| Analysis Type           | This value states whether the conversation that was analysed was between user & bot, or user & agent |
+| Analysis Type           | This value states whether the conversation that was analyzed was between user & bot, or user & agent |
 | Automation              | Indicates if the resolution can be added to the bot's knowledge base and if it can be automated. For user-bot conversations, the value is empty. For user-agent conversations, it can be either True or False |
 | Automation Reason       | Reason provided by the model for marking automation as True or False |
 | Resolution Status       | Indicates whether the user’s query was successfully addressed by the bot/agent (Possible values: Resolved or Unresolved) |
