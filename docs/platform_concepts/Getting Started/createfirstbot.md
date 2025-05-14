@@ -3,10 +3,6 @@ title: Launch Your AI agent in Minutes
 sidebar_label : Build your AI agent
 ---
 
-
-
-## Launch Your AI agent in Minutes
-
 :::note
 [Upgrade](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#steps-to-upgrade-your-freemium-plan) your account to unlock all the features offered by Yellow.ai.
 :::
