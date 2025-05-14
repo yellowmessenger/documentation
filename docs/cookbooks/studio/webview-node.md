@@ -7,7 +7,7 @@ WebView enables you to add custom UI elements (using HTML, CSS, and JavaScript) 
 
 You can preview the WebView in the WebView node. However, if the URL is invalid or restricted due to Content Security Policy (CSP), please contact our support team for assistance.
 
-:::
+:::note
 Due to the CSP (Content Security Policy) guidelines of our website, the Web View cannot be loaded on the bot's direct link. It can be accessed via the PWA link, a local HTML file, or when embedded on a website.
 :::
 
