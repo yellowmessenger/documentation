@@ -105,7 +105,7 @@ To begin your migration, refer to our [migration guide](https://docs.yellow.ai/d
 
 
 
-## Benefits of yellow.ai for your
+## Benefits of yellow.ai
 
 #### Build AI Agents That Evolve with Every Interaction
    At Yellow.ai, we help you do more than just deploy automation—we empower you to build intelligent, adaptive AI agents that evolve with every customer interaction. Our platform is designed to reduce effort, improve outcomes, and future-proof your operations.
