@@ -1,8 +1,11 @@
 ---
-title: Yellow.ai Autonomous Service with Human-Like Experience
+title: Yellow.ai - Agentic AI That Feels Human, Works Autonomously
 sidebar_label: Yellow.ai
 ---
 
+---
+
+## Overview
 
 The [Yellow.ai Agentic Platform](https://cloud.yellow.ai) enables organizations to build, deploy, and manage AI-powered conversational agents at scale. Designed for flexibility and performance, the platform supports a wide range of use cases across industries such as healthcare, retail, finance, and telecommunications.
 

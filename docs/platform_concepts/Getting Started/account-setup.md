@@ -1,26 +1,25 @@
 ---
 title: Create your free yellow.ai account
-sidebar_label: Signup to yellow.ai
+sidebar_label: Create your Yellow.ai account
 ---
-
-
-<iframe width="660" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 This guide will walk you through the process of signing up for a yellow.ai account and creating your first bot. Follow these steps to get started:
 
+<center><iframe width="660" height="315" src="https://www.youtube.com/embed/5RhnA_jOdlM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></center>
 
-If you're new to the yellow.ai platform, here's how to sign up:
+
+
+**If you're new to the yellow.ai platform, here's how to sign up:**
 
 1. Open the [Cloud Platform](https://cloud.yellow.ai).
 2. Provide your business details: Name, business phone number, email address and the login password.
 3. Click **Sign up**.
     ![](https://imgur.com/XjcxAfF.png)
 
-:::note 
-* Only official email addresses are accepted for signup. Personal email addresses won't be validated. For any issues, [contact us](https://yellow.ai/contact-us/).
-* Include your contact number with the country code.
-
-::: 
+   :::note 
+   * Only official email addresses are accepted for signup. Personal email addresses won't be validated. For any issues, [contact us](https://yellow.ai/contact-us/).
+   * Include your contact number with the country code.
+   ::: 
 
 4. **Verify email**: Check your email for a verification message and click **Verify email**.
    <img src="https://imgur.com/w1GlPwM.png" alt="drawing" width="60%"/>
