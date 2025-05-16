@@ -256,9 +256,10 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/Getting Started/account-setup",
-            "platform_concepts/Getting Started/yellowg",
+            "platform_concepts/Getting Started/login",
+           // "platform_concepts/Getting Started/yellowg",
             "platform_concepts/Getting Started/platform-offerings",
-            "platform_concepts/Getting Started/keyboard-shortcuts",
+           // "platform_concepts/Getting Started/keyboard-shortcuts",
 
           ],
         },

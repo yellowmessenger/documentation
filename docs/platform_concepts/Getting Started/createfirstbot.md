@@ -28,7 +28,7 @@ Open the Yellow.ai Cloud Platform and log in to the platform using your preferre
   
    ![image](https://imgur.com/2JzJm9v.png)
 
-:::notes
+:::note
 * If a user enters an incorrect username or password three consecutive times, their account will be locked for security reasons.
 * If you do not have an account, sign up using the instructions provided [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
 ::: 

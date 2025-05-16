@@ -69,7 +69,7 @@ Enter your preferred profile ID name in the URL provided below, ensure it only c
 | Region Code | Region | URL
 | --- | --- |-----
 | R0 | India | `https://r0.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
-| R1 | MEA-UAE North | `https://r1.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
+| R1 | MEA | `https://r1.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
 | R2 | Jakarta | `https://r2.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
 | R3 | Singapore | `https://r3.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
 | R4 | USA  | `https://r4.cloud.yellow.ai/integrations/botframework/${botId}?profileId=${profileId}`
