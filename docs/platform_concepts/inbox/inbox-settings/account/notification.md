@@ -28,7 +28,7 @@ Follow the below steps to configure notifications:
     ![](https://i.imgur.com/wmJnvfB.png)
 
 4. Select **Enable notifications** toggle to receive alerts in the upper right corner of your screen.
-5. **Notification tone** is the sound that the Inbox user will hear when an alert is received. 
+5. **Notification tone** is the sound that the Inbox user will hear when an alert is received. This is a default notification tone, you do not have the option to select a different tone.  
 6. You can configure alerts for **Ticket notifications** and **Chat notifications**. Double-click and open the required option. 
 7. Select the **checkboxes** next to the updates to receive notifications about them. You can select all the updates.
     - In the below example, Priority updates, Tags related changed on the email tickets will not be notified/displayed on the notification tab. 
