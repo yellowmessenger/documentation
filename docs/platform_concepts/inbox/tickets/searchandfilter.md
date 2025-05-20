@@ -109,7 +109,9 @@ Upon clicking **See all results**, you will be directed to the results page, whe
 
 **Point to remember:**
 
-* You can only search for keywords that are at least 2 characters long. For instance, typing "t" won't yield any results, while "tes" will.
+* Text entered within Search should be less than **50 characters** in total. 
+* You can search for blanks "" in ticket search. 
+* You can only search for keywords that are at least 2 characters long within **Message search**. For instance, typing "t" won't yield any results, while "tes" will.
 * Search keywords are not case-sensitive, meaning that the search results will be the same regardless of whether the characters are in uppercase or lowercase.
 * If you search for multiple keywords, such as "test reply," the search results will include tickets that contain either "test" or "reply," or both.
     ![](https://i.imgur.com/curnPdl.png)
