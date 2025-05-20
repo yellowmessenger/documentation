@@ -33,11 +33,11 @@ Open the Yellow.ai Cloud Platform and log in to the platform using your preferre
 * If you do not have an account, sign up using the instructions provided [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
 ::: 
 
-## Step 2: Create or Access your AI agent
+## Step 2: Create or access your AI agent
 
 This guide will walk you through the process of creating a AI agent on the Yellow.ai platform. The process differs slightly depending on whether you are a **Super Admin** (who originally creates the AI agent) or a **Contributor** (who accesses the AI agent after it has been created).
 
-### Creating a AI agent (For Super Admin)
+### Creating an AI agent (For Super Admin)
 
 1. Go to the **Overview** page.
 
@@ -88,7 +88,7 @@ For other org users, when you log in, you will see a list of AI agents that have
  ![image](https://imgur.com/8BueeA5.png)
 
 
-### Accepting Access for Your Org’s AI agent (For Non-Super Admin)
+### Accepting Access for your org’s AI agent (For Non-Super Admin)
 You can accept the invite using either of the two ways:
 
 1. If a AI agent admin has already provided access, you can accept the invitation received via email.
@@ -99,7 +99,7 @@ You can accept the invite using either of the two ways:
 
    ![image](https://imgur.com/g3kXoAa.png)
 
-## Accessing Existing AI agent (For other users)
+## Accessing existing AI agent (For other users)
 
 If you are a **Contributor** or a user with access rights (but not the original creator), your process of interacting with AI agents is different:
 
