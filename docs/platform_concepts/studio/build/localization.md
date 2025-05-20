@@ -52,7 +52,7 @@ The following are the different languages supported in the AI-agent.
 | Filipino (Tagalog)            |   tl  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Finnish                       |  fi | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | French - France               | fr  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
-| French - Canada               | ca  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
+| French - Canada               | fr-CA  | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
 | Galician                      | gl  | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | Georgian                      |    ka | Yes                 |                          | Yes            |                | Yes              | Yes                 | Yes                |
 | German                        |  de   | Yes                 |                          | Yes            | Yes            | Yes              | Yes                 | Yes                |
