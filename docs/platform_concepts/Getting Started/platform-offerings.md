@@ -1,6 +1,6 @@
 ---
 title: Know the platform 
-sidebar_label: Know the platform
+sidebar_label: Explore the platform
 ---
 
 
@@ -9,87 +9,157 @@ sidebar_label: Know the platform
 
 Welcome to the [Yellow.ai's Cloud platform](https://cloud.yellow.ai)! This document provides an overview of the key features and functionalities available to you. Whether you're new to Yellow.ai or an experienced user, this guide will help you get started effectively.
 
-## Landing page
-
-
-
-After signing in, you’ll be directed to the Overview page. This page provides Quick Links for easy navigation to key modules, self-help resources, and options to connect channels to your bot.
+## 1. Your landing page
 
 ![Overview Page](https://i.imgur.com/NDWatwo.png)
 
 ### Quick links
 
-Access frequently used modules and actions quickly through the Quick Links section.
+Use Quick Links to open your frequently used modules and actions fast.
 
-![Quick Links](https://imgur.com/P3MQohz.png)
+   ![Quick Links](https://imgur.com/P3MQohz.png)
 
-:::info
-Yellow.ai’s enterprise-grade chatbot solutions are trusted by leading brands across various industries.  If you would like to see how our AI-driven platform works in real-time, you can explore some of our live bot implementations below:  
+### Quick start video
 
-#### Live Bot Links:  
+Watch a short video tour 
+
+
+Watch our quick tour video on [YouTube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) to get familiar with the platform and learn how to use your bot. You can also find this video in the Help section.
+
+   ![Quick Start Video](https://imgur.com/I036qOq.png)
+
+## 2. Platform navigation
+Use the left navigation bar to switch between different modules and settings:
+
+![Left Navigation Bar](https://imgur.com/NuzLLyG.png)
+
+* Automation
+* Knowledge
+* Inbox
+* User 360
+* Insights & Analyze
+* Extensions
+* Engage
+* Settings 
+
+
+
+
+### Keyboard shortcuts
+
+Keyboard shortcuts help you work faster by giving you quick access to common actions and reducing repetitive clicks. Use them to navigate the platform more efficiently.
+
+Shortcuts are grouped based on where they apply:
+
+* **Global** – Available across all modules within [cloud.yellow.ai](https://cloud.yellow.ai), no matter where you are.
+* **Automation** – Specific to the Automation module, helping you move faster while building or managing workflows.
+
+Refer to the table below to see the full list and where each shortcut can be used:
+
+Action | Shortcut Key | Accessibility
+------ | -------- | -----------
+Open new node selector | n | Automation
+Go to Intents page | i | Automation
+Go to Entities page | e | Automation
+Opens select flow/journey dropdown | s + f | Automation
+Go back (wherever you are) | b | Global
+Opens select bot dropdown | s + b| Global
+Go to Automation module | g + s| Global
+Go to Overview page | g + o| Global
+Go to Inbox module | g + i| Global
+Go to Channels module | g + c| Global
+Go to Engage module | g + e| Global
+Go to Insights module | g + r| Global
+Go to Integrations module | g + t| Global
+Switch to Development environment | m + d| Global
+Switch to Production environment | m + p| Global
+Switch to Sandbox environment | m + x| Global
+
+
+
+:::note
+You can directly use the keys to access the function from the screen where that particular option is available.
+:::
+
+The following table lists the keyboard shortcuts for Automation module:
+
+Action | Shortcut | Access from
+------ | -------- | -----------
+Open new node selector | n | Automation
+Go to Intents page | i | Automation
+Go to Entities page | e | Automation
+Opens select flow/journey dropdown | s + f | Automation
+Go back (wherever you are) | b | Global
+Opens select bot dropdown | s + b| Global
+Go to Automation module | g + s| Global
+Go to Overview page | g + o| Global
+
+
+<!-- (https://imgur.com/eYRxoPM.gif) -->
+
+## 3. Selected live AI agents in action
+
+Explore a few of our AI agents customer in action.
+
+### Live Bot demos:  
 - **Hyundai** – [hyundai.com](https://www.hyundai.com)  
 - **Royal Enfield** – [royalenfield.com](https://www.royalenfield.com)  
 - **Shriram Life Insurance** – [shriramlife.com](https://www.shriramlife.com)  
 
-#### Case Studies  
-For a deeper understanding of how organizations have successfully integrated Yellow.ai, explore detailed case studies, including how **Lion Air, Dominos, AirAsia, Sony,** and many others leverage our AI-driven automation:  
+
+### Case Studies  
+See how organizations like Lion Air, Domino’s, AirAsia, and Sony use Yellow.ai for AI-driven automation.
+
 🔗 [Yellow.ai Case Studies](https://yellow.ai/case-study/)  
-:::
-
-### Quick start video
-
-Watch our quick tour video on [YouTube](https://www.youtube.com/channel/UCagDUPsrF0yS5KX1hckaUzw/videos) to understand the platform's capabilities and how to utilize the bot effectively. You can also find this video directly on the platform.
-
-![Quick Start Video](https://imgur.com/I036qOq.png)
-
-## Left navigation bar
-
-The Left Navigation bar allows you to switch between various modules, such as bot Studio builder, Inbox, Insights, Analyze, Settings, Extentions and so on.
-
-![Left Navigation Bar](https://imgur.com/NuzLLyG.png)
-
-## Bot and subscription search
-
-Search for bots using the subscription ID, subscription name, bot name, or bot ID. You can also view your top 3 recently selected bots and the number of bots you have access to, including pending invites.
-
-![Bot and Subscription Search](https://i.imgur.com/NaFU9qw.png)
-
-<!-- (https://imgur.com/eYRxoPM.gif) -->
-
-## Platform search
-
-Use the Platform Search feature to quickly find relevant information and concepts within the documentation.
-
-![Platform Search](https://imgur.com/LABjDLA.png)
-
-## Self-Help resources
-
-Access the **Help** section for documentation, community forums, or instant support from MIA.
-
-![Self-Help Resources](https://imgur.com/wP3LbTE.png)
 
 
-## Environment switcher
+## 4. Use search to find what you need
 
-Switch between different environments such as Sandbox, Staging, Production, Live, and Development to test and deploy your bot.
+### Bot & subscription search
+
+Search bots by subscription ID, name, and bot ID. Also , or recently accessed bots (upto 3). See bots you have access to, recently accessed bots (upto 3), and pending invites.
+
+   ![Bot and Subscription Search](https://i.imgur.com/NaFU9qw.png)
+
+### Platform search
+Find documentation, articles, and key concepts quickly across the platform.
+
+   ![Platform Search](https://imgur.com/LABjDLA.png)
+
+
+## 5. Core platform features
+
+### Switch environments
+Switch between Sandbox, Staging, Production, Live, and Development environments to build, test, and deploy your bots.
 
 ![Environment Switcher](https://imgur.com/GtL933N.png)
 
 **[Learn about the different environments](https://docs.yellow.ai/docs/platform_concepts/studio/test-and-publish-bot/modes)**
 
-## Marketplace
-
-Browse the **Marketplace** for pre-built bot templates and industry-specific recommendations. If your use case is not available, you can use [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to create your bot from scratch.
+### Explore the marketplace
+Browse pre-built bot templates and industry-specific solutions. Use [Automation](https://docs.yellow.ai/docs/platform_concepts/studio/overview) to create custom bots if needed.
 
 ![Marketplace](https://imgur.com/hyaE929.png)
 
 **[Access the Marketplace guide](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/marketplaceintro)**
 
-## Access control
 
-Manage bot access by sharing it with team members and defining their roles and permissions. Only admins or super admins can manage access.
 
-![Access Control](https://imgur.com/fcJqwMN.png)
+
+### Check notifications
+See alerts for module updates, bot invites, and system messages. Click the **Notifications** icon.
+
+   ![Notifications](https://imgur.com/3bnyU13.png)
+
+
+
+## 6. Manage user & access
+
+### Add users
+
+Share AI agent with your team and assign roles and permissions. Only admins or super admins can add/remove access.
+
+   ![Access Control](https://imgur.com/fcJqwMN.png)
 
 **[Learn about access control and permissions](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/add-bot-collaborators)**
 
@@ -106,15 +176,11 @@ You can modify your bot’s basic details at any time using the **Configure** op
 
 -->
 
-## Notifications
 
-Check the **Notifications** icon for updates related to your modules or bot invites.
 
-![Notifications](https://imgur.com/3bnyU13.png)
+### Manage your account
 
-## Access your account details
-
-Click on your account name in the top right corner to access your profile and account settings.
+Access your profile and account settings in the top-right corner.
 
 ![User Account](https://imgur.com/jWLqigs.png)
 
@@ -125,34 +191,40 @@ You cannot delete your account on your own using the cloud platform. To request 
 :::
 
 
-## Switch bots
+## 7. Manage your bots
 
-* Use the drop-down option next to the bot name to view and switch between different bots within your subscription.
+### Switch bots
 
-   <img src="https://imgur.com/3Pkx2eg.png" width="60%"/>
+* On the landing page, use the drop-down option next to the bot name to view and switch between different bots in your subscription.
 
-* You can find the Bot Switcher at the bottom right of any module.
+   <img src="https://imgur.com/3Pkx2eg.png" width="50%"/>
 
-   <img src="https://imgur.com/JPOrMia.png" width="60%"/>
+* You can also use the bot switcher at the bottom left of any page to switch between bots in your subscription.
+
+   <img src="https://imgur.com/JPOrMia.png" width="50%"/>
 
 
-## Manage channels
+### Connect channels
 
-Integrate your bot with various channels to enhance customer reach and meet your business needs.
+Integrate your bot with multiple channels to reach your customers where they are.
 
-![Add Channels](https://imgur.com/2W9zlDt.png)
+   ![Add Channels](https://imgur.com/2W9zlDt.png)
 
 **[Learn about channel integration](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/overview)**
 
-## Manage languages
+### Manage languages
 
-Configure your bot to support multiple languages, making conversations more accessible to users in different regions.
+Set up your bot to support multiple languages for global users making conversations more convenient to users in different regions.
 
 ![Multilingual Support](https://imgur.com/AqUoqMo.png)
 
 **[Learn more about multilingual bot configuration](https://docs.yellow.ai/docs/cookbooks/studio/multilingual-bot)**
 
 
+## 8. Self-Help resources
 
+Access the **Help** section for documentation, community forums, or instant support from MIA.
+
+![Self-Help Resources](https://imgur.com/wP3LbTE.png)
 
 

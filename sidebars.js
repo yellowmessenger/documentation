@@ -63,6 +63,7 @@ module.exports = {
           "cookbooks/studio/hide-input",
           "cookbooks/studio/dynamic-quickreplies",
           "cookbooks/studio/dynamic-callout-banner",
+          "cookbooks/studio/disable-callout-banner",
           "cookbooks/studio/images-languages",
           "cookbooks/studio/storeApiResponse",
           "cookbooks/studio/qr-node",
@@ -255,15 +256,16 @@ module.exports = {
           collapsed: true,
           items: [
             "platform_concepts/Getting Started/account-setup",
-            "platform_concepts/Getting Started/yellowg",
+            "platform_concepts/Getting Started/login",
+           // "platform_concepts/Getting Started/yellowg",
             "platform_concepts/Getting Started/platform-offerings",
-            "platform_concepts/Getting Started/keyboard-shortcuts",
+           // "platform_concepts/Getting Started/keyboard-shortcuts",
 
           ],
         },
         {
           type: "category",
-          label: "Build your bot",
+          label: "Build your AI agent",
           collapsed: true,
           items: [
             "platform_concepts/Getting Started/createfirstbot",
@@ -328,7 +330,7 @@ module.exports = {
        // "platform_concepts/studio/overview",
         {
           type: "category",
-          label: "Create your bot",
+          label: "Create your AI agent",
           link: {type: 'doc', id: 'platform_concepts/studio/build/create-your-bot'},
           collapsed: true,
           items: [ 
@@ -343,7 +345,7 @@ module.exports = {
                        
             {
               type: "category",
-              label: "Bot building tools",
+              label: "AI agent building tools",
               collapsed: true,
               items: [
                 {
@@ -463,7 +465,7 @@ module.exports = {
             
             {
               type: "category",
-              label: "Training bot data ",
+              label: "Training AI agent data ",
               collapsed: true,
               items: [
                 "platform_concepts/studio/train/intents",
@@ -481,7 +483,7 @@ module.exports = {
             
             {
               type: "category",
-              label: "Test and publish bot",
+              label: "Test and publish AI agent",
               collapsed: true,
               items: [
                // "platform_concepts/studio/test-and-publish-bot/bot-training",

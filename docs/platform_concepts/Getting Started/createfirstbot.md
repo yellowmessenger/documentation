@@ -1,11 +1,7 @@
 ---
-title: Launch Your Bot in Minutes
-sidebar_label : Build your first bot
+title: Launch Your AI agent in Minutes
+sidebar_label : Build your AI agent
 ---
-
-
-
-## Launch Your AI agent in Minutes
 
 :::note
 [Upgrade](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#steps-to-upgrade-your-freemium-plan) your account to unlock all the features offered by Yellow.ai.
@@ -33,12 +29,13 @@ Open the Yellow.ai Cloud Platform and log in to the platform using your preferre
    ![image](https://imgur.com/2JzJm9v.png)
 
 :::note
-If you do not have an account, sign up using the instructions provided [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
+* If a user enters an incorrect username or password three consecutive times, their account will be locked for security reasons.
+* If you do not have an account, sign up using the instructions provided [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
 ::: 
 
 ## Step 2: Create or Access your AI agent
 
-This guide will walk you through the process of creating a AI agent on the Yellow.ai platform. The process differs slightly depending on whether you are a **Super Admin** (who originally creates the bot) or a **Contributor** (who accesses the bot after it has been created).
+This guide will walk you through the process of creating a AI agent on the Yellow.ai platform. The process differs slightly depending on whether you are a **Super Admin** (who originally creates the AI agent) or a **Contributor** (who accesses the AI agent after it has been created).
 
 ### Creating a AI agent (For Super Admin)
 
@@ -85,7 +82,7 @@ This guide will walk you through the process of creating a AI agent on the Yello
    
 ### Requesting Access for Your Org’s AI agent (For non-super admin)
 
-For other org users, when you log in, you will see a list of bots that have been created. You can:
+For other org users, when you log in, you will see a list of AI agents that have been created. You can:
   - Request access to a AI agent, or
   - Navigate to **Profile settings > My Invites** page and click on the respective **Request access** button.
  ![image](https://imgur.com/8BueeA5.png)
@@ -102,9 +99,9 @@ You can accept the invite using either of the two ways:
 
    ![image](https://imgur.com/g3kXoAa.png)
 
-## Accessing Existing Bot (For other users)
+## Accessing Existing AI agent (For other users)
 
-If you are a **Contributor** or a user with access rights (but not the original creator), your process of interacting with bots is different:
+If you are a **Contributor** or a user with access rights (but not the original creator), your process of interacting with AI agents is different:
 
 ### Accessing the AI agent
 
