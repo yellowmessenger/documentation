@@ -6,68 +6,81 @@ sidebar_label : Search and filter
 In this article, you will learn how to [search](#1), [sort](#2), and [filter](#3) the email tickets. 
 
 
-
-
-## <a name="2"></a>  1. Sort the tickets based on dates 
-
-You can sort the list of tickets based on: 
-- **Due Date**:  The latest date for the agent's response  
-- **Date Created**: The date when the ticket was created  
-- **Modified Date**: The date when the ticket was last updated  
-
-> You can further sort the ticket list in either **ascending** or **descending** order of the ticket ID.
-    
-![](https://i.imgur.com/CQXyAuc.png)
-
+![](https://cdn.yellowmessenger.com/assets/yellow-docs/tsort.png)
 
 ------
 
-## <a name="3"></a>  2. Filters email tickets 
+## <a name="3"></a>  Filters tickets 
 
 With **Filters** you can refine the ticket list according to a particular condition. 
 
-### 2.1 Add filters on tickets page 
-
-1. Go to the **All tickets** list. Click **Filters**.
-
-    ![](https://i.imgur.com/JfC2BcA.png)
+1. Go to the **All tickets** list. Click **Filters**.                   
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/tfilters.png" alt="drawing" width="70%"/>
 
 
 2. You can filter tickets based on the following: 
-
-    | Name | Description |
-    |:-------- |:--------:|
-    | **Created date** | Refines the ticket list by start & end date |
-    | **Tags** | Filters by tag assigned to a ticket |
-    | **Groups** | Filters by the group the ticket is assigned to | 
-    | **Agents** | Filters by an agent who is handling a ticket |
-    | **Status** | Filters by the status of the ticket |
-    | **Priority** | Filters the ticket list based on priority |
-    | **Due Date** | Filters by the date the ticket is due for the agent's action |
-    | **Response/Resolution due by** | Filters ticket according to the selected SLA condition |
+    | **Field**                  | **Description**                                                                 |
+    |---------------------------|----------------------------------------------------------------------------------|
+    | **Created Date**          | The date and time when the ticket was created.                          |
+    | **Tags**                  | Tags used to categorize and filter tickets.                       |
+    | **Groups**                | Group assigned to handle the ticket.                           |
+    | **Agents**                | The support agents responsible for managing or resolving the ticket.            |
+    | **Status**                | The current state of the ticket (e.g., Open, Pending, On-hold).                 |
+    | **Priority**              | The urgency or importance level assigned to the ticket (e.g., Low, High).       |
+    | **Source Email**          | The email address from which the ticket was received or created.                |
+    | **Due Date**              | The final date by which the ticket should be resolved.                          |
+    | **Start Date**            | The date when work on the ticket began.                                         |
+    | **End Date**              | The date when the ticket was closed or resolved.                                |
+    | **Resolution Due By**     | The deadline for resolving the issue according to SLAs.                         |
+    | **First Response Due By** | The deadline for the first agent response based on SLAs.                        |
+    | **Next Response Due By**  | The deadline for the next agent follow-up or update based on SLAs.              |
 
 3. Click **Apply Filter** to see the results.
-    ![](https://i.imgur.com/aQDOmXO.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/tseeresults.png)
 
 
 :::note
 Currently, it is not possible to conduct a keyword search within the filtered results.
 :::
 
-### 2.2 Clear filters on tickets page 
+**Save search results as View**
 
-Follow either of the following to clear the applied filters:
+1. Click **Save as view** to create a view. 
+2. Enter your **View name** and select **Visibility** (Only me or Everyone). 
+3. You can reselect the filtes if needed and click **Save**. 
 
-- At the bottom of the filters panel, click **Clear filters** to remove all the applied filters.
+
+![](https://cdn.yellowmessenger.com/assets/yellow-docs/tview.png)
+
+
+> Click [here](https://docs.yellow.ai/docs/platform_concepts/inbox/chats/customview) to understand Views. 
+
+**Clear filters on tickets page**
+
+Click **Clear filters** on the filters panel or on the results page.               
 <img src="https://i.imgur.com/m3u6jw6.png" alt="drawing" width="30%"/>
 
-- In the results list, cancel each of the filters you want to delete or click **Clear filters** to clear all filters.
-![](https://i.imgur.com/LYi5O86.png)
 
 
 -------
 
-## <a name="1"></a>  3. Search for/within a ticket 
+
+##  <a name="2"></a>  Sort tickets 
+
+You can sort the list of tickets based on **dates** by clicking **Last modified** dropdown: 
+- **Due Date**:  The latest date for the agent's response  
+- **Date Created**: The date when the ticket was created  
+- **Modified Date**: The date when the ticket was last updated  
+
+> You can further sort the ticket list in either **Ascending** or **Descending** order of the ticket ID.
+    
+![](https://cdn.yellowmessenger.com/assets/yellow-docs/torder.png)
+
+
+
+-------
+
+## <a name="1"></a>  Search for/within a ticket 
 
 :::note
 * **Admins** have the ability to search for any ticket.
@@ -75,11 +88,17 @@ Follow either of the following to clear the applied filters:
 * **Agents** can only search for tickets that they have been assigned to or resolved.
 :::
 
+#### Search category 
 
-The search functionality offers two search categories:
+Once you type text within the Search bar and enter, the search functionality offers two search categories:
 
 1. **Ticket details**: This category allows you to search for email subject, ticket ID, customer's email ID, custom fields (except the type [number and date](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox-settings/workflows/chat_custom_fields#-21-types-of-custom-fields)) and other details related to the ticket.
 2. **Message details**: This category enables you to search for specific keywords contained within the email body.
+
+
+![](https://cdn.yellowmessenger.com/assets/yellow-docs/tsearch.gif)
+
+#### Search functionalities 
 
 The search feature provides several options, like:
 
@@ -87,20 +106,22 @@ The search feature provides several options, like:
 * The **top five results** related to the keyword within the ticket details will be displayed when you enter a keyword into the search bar.
 * Click on **Try message search**, to conduct a keyword search within the email body directly. 
 * Click on **See all results**, to view all the search results related to the keyword entered.
-    ![](https://i.imgur.com/t50W6bd.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/tdetails.png)
 
-### 3.1 Ticket and message details search results page
+#### Ticket and message details search results 
 
 Upon clicking **See all results**, you will be directed to the results page, where you can choose to view the matches found in either the **Ticket** details or **Message** details. 
 - The screen will **highlight** the entered keyword in yellow, allowing you to easily identify the matches. Examples of highlighted matches include the ticket ID, message body, and more.
-    ![](https://i.imgur.com/VkjFs9D.png)    
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/tviews.png)    
 - **Custom field** match is displayed as purple box. 
-    ![](https://i.imgur.com/CiqP9d1.png)
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/tview2.png)
 - The **filter** operation is integrated with the search functionality. It allows you to add filters or quick filters (Group, Agent name, and Ticket status) to the search results (only for ticket details), which can help refine your search further. 
     > These filters are added only for the search results. They can be deleted by clicking **Clear filters**.       
      
-    ![](https://i.imgur.com/CafO3VS.png)
-- In addition to filtering and searching, the results can also be **sorted** based on date. By default, the results are sorted based on the last modified date in decending order to easily access the recent tickets. 
+    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/tview3.png)
+    
+    
+> The results can also be **sorted** based on date. By default, the results are sorted based on the last modified date in decending order to easily access the recent tickets. 
 
 
 --------
@@ -110,10 +131,11 @@ Upon clicking **See all results**, you will be directed to the results page, whe
 **Point to remember:**
 
 * Text entered within Search should be less than **50 characters** in total. 
-* You can search for blanks "" in ticket search. 
-* You can only search for keywords that are at least 2 characters long within **Message search**. For instance, typing "t" won't yield any results, while "tes" will.
-* Search keywords are not case-sensitive, meaning that the search results will be the same regardless of whether the characters are in uppercase or lowercase.
-* If you search for multiple keywords, such as "test reply," the search results will include tickets that contain either "test" or "reply," or both.
+* You can only search for keywords that are **at least 2 characters** long. For instance, typing "t" won't yield any results, while "tes" will.
+* Search keywords are **not case-sensitive**, meaning that the search results will be the same regardless of whether the characters are in uppercase or lowercase.
+* You can get an **exact match** by using double quotes in your search. 
+    * Searching for *test reply* (without quotes) may return results like `test`, `reply`, `test case`, `quick reply`, `this is a test reply`, and more.
+    * Searching for *"test reply"* (with quotes) will return only results that contain the exact phrase `test reply`.
     ![](https://i.imgur.com/curnPdl.png)
 * The search results will also display merged tickets.
 * Bulk actions cannot be performed on the searched results.
