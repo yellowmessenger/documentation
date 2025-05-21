@@ -3,21 +3,20 @@ title: Webview
 sidebar_label: Webview
 ---
 
-WebView enables you to add custom UI elements (using HTML, CSS, and JavaScript) into your chatbot. To use this feature, create your custom UI components with the necessary HTML code. Collaborate with the platform team to deploy your code on Yellow's Bitbucket repository. Once deployed, the platform team will host your code on Yellow's CDN, generating a unique URL. This URL can then be integrated into the WebView node of your chatbot.
+WebView enables you to add custom UI elements (using HTML, CSS, and JavaScript) into your chatbot. To use this feature, create your custom UI components with the necessary HTML code. Collaborate with the platform team to deploy your code on Yellow's Bitbucket repository. Once deployed, the platform team will host your code on Yellow's CDN, generating a unique URL. This URL can then be integrated into your chatbot's WebView node.
 
 You can preview the WebView in the WebView node. However, if the URL is invalid or restricted due to Content Security Policy (CSP), please contact our support team for assistance.
 
 :::note
-Due to the CSP (Content Security Policy) guidelines of our website, the Web View cannot be loaded on the bot's direct link. It can be accessed via the [PWA](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/pwa) link, a local HTML file, or when embedded on a website.
+Due to our website's CSP (Content Security Policy) guidelines, the Web View cannot be loaded on the bot's direct link. It can be accessed via the [PWA](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/pwa) link, a local HTML file, or when embedded on a website.
 :::
+
+### Prerequisite
+* Before getting started, get the Webview node enabled for your bot. To enable the Webview node, please raise a ticket on DevRev.
 
 ## Steps to configure the Webview
 
-### Step 1: Enable webview
-
-Before getting started, get the Webview node is enabled for your bot. To enable the Webview node, please raise a ticket on DevRev.
-
-### Step 2: HTML to create a custom Webview UI 
+### Step 1: Create HTML for custom Webview UI 
 
 Below is the sample code of the UI component:
 
@@ -235,7 +234,7 @@ input:-webkit-autofill {
 </body>
 </html>
 ```
-### Step 3: Host component on Yellow.ai's CDN
+### Step 2: Host component on Yellow.ai's CDN
 
 Host this component on Yellow.ai's CDN. A URL is generated. 
 
@@ -248,7 +247,7 @@ https://app.yellowmessenger.com/components/webview/mr_appliance_llc/form
 
   <img src="https://i.imgur.com/3dUVSfJ.png" alt="drawing" width="80%"/>
 
-### Step 4: Configure Webview node
+### Step 3: Configure Webview node
 
 
 To configure the webview node, follow these steps:
