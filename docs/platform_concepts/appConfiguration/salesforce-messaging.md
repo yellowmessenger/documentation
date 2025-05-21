@@ -3,6 +3,11 @@ title : Salesforce messaging
 sidebar_label : Salesforce messaging
 ---
 
+:::info
+This legacy Chat product will be deprecated on February 14, 2026, and is currently in maintenance mode. While existing implementations will continue to function, we strongly recommend that you avoid setting up new chat channels.
+
+:::
+
 Integrating Salesforce messaging with Yellow.ai allows you to connect with live agents for query resolution.
 
 **Key benefits of integrating Salesforce messaging with Yellow.ai**:

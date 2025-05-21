@@ -50,22 +50,49 @@ A Fetch from field will be provided in most of the fields to render the dynamic 
 
 ### 2.1 Question
 
-> This node is available for voice bots. 
+Use the Question node to ask users for any kind of input—names, dates, preferences, or other details you need during a conversation. 
 
-Ask a simple question with this node. 
+> This node is available for voice bots also. 
+
+You can also collect PCI-sensitive information—such as card number, CVV, PIN, or expiry date—across all supported channels. When you select a PCI input type, the platform automatically encrypts the data and applies strict logging restrictions. The information is securely stored and never retained in logs or databases.
 
 
-![](https://i.imgur.com/MU4Awmg.png)
+<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/pci.png" width="75%"/>
 
-Click **Fetch from** to see the dynamic value. You can edit the value of the question by entering the code. 
-```
-{
-  "type": "text",
-  "value": "What is your query?"
-}
-```
+
+#### Question node to ask a general question
+
+To ask a question, 
+  1. In **Input type**, choose *Question*.
+  2. In **Bot asks**, enter what the AI agent should ask.  <br/>You can also add multiple variations using **Add multiple text for randomising**. Your agent will randomly pick one to keep the conversation natural. <br/>To dynamically fetch question from a variable, use the **Fetch from** option and choose the variable that contains the question text.
+
+  ```
+  {
+    "type": "text",
+    "value": "What is your query?"
+  }
+  ```
+
+#### Question node to collect PCI Details
+
+If you're collecting PCI-sensitive information (like card number, CVV, or expiry), select a **PCI input type**. When you do, you will see additional settings. 
+
+  * In **Input type**, choose Question to ask the user for any information.
+  * In **Bot asks**, enter what the AI agent should ask. You can also add multiple variations using **Add multiple text for randomising**. Your agent will randomly pick one to keep the conversation natural.
+  * **Validator message**: Customize the message that appears if the input doesn’t meet validation rules.
+  * **Additional settings** (PCI configuration):
+    * **Encoding type**: Choose how the PCI input is encoded —`Text`, `Hexadecimal`, or `Base64`.
+    * **Card number format**: Choose the format in which users are expected to enter the card number. This helps validate and correctly capture card data.
+      * `XXXXXXX XXXXXX`
+      * `XXXX-XXXX-XXXX-XXXX`
+      * `XXXX XXXX XXXX XXXX`
+
+
+
+
 
 ---
+
 ### 2.2 Name
 
 > This node is available for voice bots. 
