@@ -12,7 +12,7 @@ In the Monitor section you can effectively track the productivity of your entire
 
 
 :::note
-- The values displayed in the Monitor section are **updated automatically** after every 60 seconds. To view real-time values, refresh your browser.
+- All the values displayed in the Monitor section are **updated automatically** after every 60 seconds. To view real-time values, refresh your browser.
 - Live chats and email tickets in the Inbox are retained for a maximum of **6 months**. After this period, they will be archived. While the data will no longer be accessible on the platform (active store), it will still be available on the servers (cold store) until the contract's validity expires.
 :::
 
