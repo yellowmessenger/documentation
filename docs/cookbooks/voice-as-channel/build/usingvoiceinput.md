@@ -10,7 +10,13 @@ The voice input node offers added features that enhance the performance of voice
 - **Simplified validation process**: Integrates validation directly into the flow, eliminating the need for separate configuration.
 - **Intent and Entity recognition**: Facilitates the identification of user intents and entities, enabling the voice bot to understand and respond appropriately to diverse user queries and requests.
 - **Tracking of unidentified utterances**: Provides the ability to monitor and manage unidentified user utterances efficiently.
-
+- **Collect PCI-Compliant Data Securely**: You can now mark input fields as PCI-compliant to securely collect sensitive cardholder information. When a field is designated as PCI, the platform automatically applies encryption, disables logging, and stores the data using secure protocols.
+   The following PCI data types are supported:
+    * Card number
+    * CVV (card security code)
+    * Card PIN
+    * Expiry date
+    
 -----
 
 ## Build a flow with voice input node
@@ -61,10 +67,11 @@ The Voice Input node will only work for voice bots, meaning you must have enable
 
    ![](https://i.imgur.com/n3muuJC.png)
 
-2. In **[Input type](#11-input-type)**, specify the type of information the node will collect from the end user.
-    1. In **Input type**, choose your preferred input. For example, if Phone* is selected, the bot will prompt the user to input their phone number during the conversation.
-    2. In **Bot speaks**, enter the message that the bot will say to request the user's phone number.
-    3. In **Repeat message**, input the message that the bot will repeat if the user's response is unclear or requires verification.
+2. In **[Input type](#11-input-type)**, select the type of information you want to capture from the user through voice. <br/>
+   To **capture PCI-related details** securely, use PCI – Card number, PCI – Card security code, PCI – Card PIN, or PCI – Card expiry to capture PCI-related details securely.<br/>
+   The platform automatically encrypts PCI data and stores it securely with restricted access. Responses are saved in PCI-protected variables, which you cannot modify.
+    1. In **Bot speaks**, enter the message that the bot will say to request the user's phone number.
+    2. In **Repeat message**, input the message that the bot will repeat if the user's response is unclear or requires verification.
 4. In **[Validator](#12-validator)**, validate the user input against the chosen criteria.
 5. In **[Capturing the user input](#13-capturing-user-input)**, configure how the bot should gather user inputs.
 6. In **[Additional settings](#14-additional-settings)**, adjust configurations to enhance conversation authenticity and emulate human-like interactions.
@@ -81,28 +88,30 @@ Following are the steps to collect a **user's phone number** using the voice inp
 
 1. In the **Input type** section, choose the **Input type** as **Phone** and enter the messages for **Bot speaks** and **Repeat** **message** fields.
 
-![image](https://imgur.com/L07GSec.png)
+   ![image](https://imgur.com/L07GSec.png)
 
 2. In the **Validator** section, choose **Phone** in the **How do you want to validate user input** drop-down and enter the **Failure message** and **No Response message**. Mention the **Boost Phrases** too.
 
-![image](https://imgur.com/AWucjOH.png)
+   ![image](https://imgur.com/AWucjOH.png)
 
 3. In the **Capturing user input** section, choose **Voice** and **Keypad** in the **Capture input as** drop-down and fill in the rest of the fields.
 
-![image](https://imgur.com/GSixNHK.png)
+   ![image](https://imgur.com/GSixNHK.png)
 
 4. [Store the response in a variable](https://docs.yellow.ai/docs/platform_concepts/studio/build/bot-variables#41-store-variables).
 
-![](https://i.imgur.com/L6u5EEM.png)
+   ![](https://i.imgur.com/L6u5EEM.png)
 
 
 ----
 
 ## Input type
 
+<center><img src="https://cdn.yellowmessenger.com/assets/yellow-docs/pcivoice.png" width="50%"/></center>
+
 | Field | Description | 
 | -------- | -------- | 
-| **Input type**     |Choose the type of user response. <br/>1.Name<br/>2.Email<br/> 3. Phone<br/> 4. Question<br/>|
+| **Input type**     |Choose the type of user response. <br/>1.Name<br/>2.Email<br/> 3. Phone<br/> 4. Question<br/> 5. PCI – Card number<br/>6. PCI – Card security code<br/>7. PCI – Card PIN<br/>8. PCI – Card expiry | 
 |**Bot Speaks**|The bot's reply that will be vocalized to the end-user during a call. |
 |**Repeat message**|The bot's reply that will be vocalized upon the user's request for the bot to reiterate the question or prompt. |
 
@@ -113,17 +122,16 @@ You can add multiple messages to all of the above mentioned options by [adding r
 
 ### PCI data masking in voice calls
 
+You can also collect PCI-sensitive information, such as card number, CVV, PIN, or expiry date. When you select a PCI input type, the platform automatically encrypts the data, applies strict logging restrictions, and stores it securely. This data is never retained in logs or databases and can only be accessed securely through the API node.
 
-PCI data masking is a critical process used to conceal sensitive user information during voice interactions, ensuring compliance with PCI DSS (Payment Card Industry Data Security Standard) requirements. This process protects cardholder data from unauthorized access while allowing essential operations to proceed within the yellow.ai bot.
+<!-- PCI data masking is a critical process used to conceal sensitive user information during voice interactions, ensuring compliance with PCI DSS (Payment Card Industry Data Security Standard) requirements. This process protects cardholder data from unauthorized access while allowing essential operations to proceed within the yellow.ai bot.
 
 For instance, when the bot accepts credit card information as user input, it passes this data through an API call to process the payment securely. In the voice input node, you can select specific input types from a dropdown, including:
 * PCI - Card Number
 * PCI - Card Security Code (CVV)
 * PCI - Card PIN
 * PCI - Card Expiry Date
-
-
-The validator ensures that all credit card data is masked, meaning it will not appear in the conversation logs, backend services, or any storage system. This data is completely protected and not retained in any logs or databases.
+-->
 
 
 <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf_2mqPlce4r5fms6yTHvAo9XhBaEWWe44g_HhFVojhuMq1BTN4NGkmxJX6VknXwmWo0KHpR3UmrKNLcg671Xw_REa9P897XtKmj42kVrEg_vl0j80jOKSx9g-TyQiV2eFqAsSbtaPTlmgb1it92_5NBmak?key=vQuTYFRZOYk9_bVHV0je_w" alt="drawing" width="50%"/> 
