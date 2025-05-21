@@ -370,12 +370,12 @@ module.exports = {
 
           {
             type: "category",
-            label: "AI dialogue system",
-            link: {type: 'doc', id: 'platform_concepts/AIAgent/aiagent_intro'},
+            label: "Define AI agent persona",
+            link: {type: 'doc', id: 'platform_concepts/AIAgent/agentpersona'},
             collapsed: true,
             items: [
-              "platform_concepts/AIAgent/agentpersona",
               "platform_concepts/AIAgent/conversations",
+              "platform_concepts/AIAgent/manage-conversation",
 
              // add here
 
