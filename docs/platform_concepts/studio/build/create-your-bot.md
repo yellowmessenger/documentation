@@ -15,7 +15,7 @@ Here are the prerequisites that you need to consider while creating a AI-agent:
 
 On the Yellow.ai platform, you can create:
 
-* [AI-agent](https://docs.yellow.ai/docs/platform_concepts/studio/build/create_chatbot)
-* [Knowledge base AI-agent](https://docs.yellow.ai/docs/platform_concepts/studio/kb/overview)
+* [Create your AI-agent from scratch](https://docs.yellow.ai/docs/platform_concepts/studio/build/create_chatbot)
+* [Create AI agent](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/create-agent)
 * [Voice AI-agent](https://docs.yellow.ai/docs/platform_concepts/studio/build/create_voice_bot)
 * [Orchestrator AI-agent](https://docs.yellow.ai/docs/platform_concepts/studio/build/orchestrator)

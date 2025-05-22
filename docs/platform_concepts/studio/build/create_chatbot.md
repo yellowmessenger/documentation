@@ -1,17 +1,21 @@
 ---
-title: Create AI-agent
-sidebar_label : Create AI-agent
+title: Create AI-agent from scratch
+sidebar_label : Create your AI-agent from scratch
 ---
 
-This guide will walk you through the process of creating a AI-agent on the Yellow.ai platform.
+This guide will walk you through the process of creating an AI-agent from scratch on the Yellow.ai platform.
 
 To create a AI-agent, follow these steps:
 
-1. Go to the **Overview** page > **click** the AI-agent drop-down > + **Create bot**.
+1. Go to the **Overview** page > click **AI-agent** drop-down > + **Create AI agent**.
 
-   ![](https://imgur.com/LNiEUYy.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-agent.png)
+
+2. Click **+ Create from scratch**.
+
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/createstratch.png)
    
-2. Define the following details and click **Create bot**.
+3. Define the following details and click **Create bot**.
 
    <img src="https://imgur.com/gX6nkDk.png" alt="drawing" width="50%"/>
       

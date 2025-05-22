@@ -334,6 +334,22 @@ module.exports = {
           link: {type: 'doc', id: 'platform_concepts/studio/build/create-your-bot'},
           collapsed: true,
           items: [ 
+           
+            {
+              type: "category",
+              label: "Create AI agnet",
+              link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/create-agent'},
+              collapsed: true,
+              items: [
+                "platform_concepts/AIAgent/agentpersona",
+                "platform_concepts/AIAgent/conversations",
+                "platform_concepts/AIAgent/manage-conversation",
+  
+               // add here
+  
+              ],
+            }, 
+  
             "platform_concepts/studio/build/create_chatbot",
             "platform_concepts/studio/build/orchestrator",
             "platform_concepts/studio/build/create_voice_bot",  
@@ -367,20 +383,6 @@ module.exports = {
             "platform_concepts/copilot",
             
           // Agent AI 
-
-          {
-            type: "category",
-            label: "Define AI agent persona",
-            link: {type: 'doc', id: 'platform_concepts/AIAgent/agentpersona'},
-            collapsed: true,
-            items: [
-              "platform_concepts/AIAgent/conversations",
-              "platform_concepts/AIAgent/manage-conversation",
-
-             // add here
-
-            ],
-          }, 
 
             "platform_concepts/studio/build/workflows",
             
