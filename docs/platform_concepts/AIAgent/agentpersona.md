@@ -3,8 +3,9 @@ title: Define AI agent persona
 sidebar_label: Define AI agent persona  
 ---
 
-The AI agent persona defines the agent’s personality, tone, and behavior of your AI agent. It helps to deliver a consistent and human-like experience during user interactions. 
+The AI agent persona sets the tone, personality, and behavior of your agent—shaping how it communicates with users throughout the conversation. A well-defined persona ensures interactions feel consistent, natural, and aligned with your brand voice.
 
+<!-- 
 The Agent persona helps you define how the agent greets users, handles queries, manages unanswered questions and
 rules to follow throughout conversations.
 
@@ -14,26 +15,24 @@ rules to follow throughout conversations.
 * Manage fallback scenarios with clarity and composure
 * Maintain user engagement through accurate, relevant, and context-aware replies
 * Stay aligned with your brand voice and communication standards
+-->
 
 ## Configure AI agent persona 
 
-To configure AI agent persona, follow the below step:
-
-1. Go to **Automation** > **Agents** > **Super agent**.
-
-   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/superagent.png)
-
-* In this section, you can configure: 
+* To configure AI agent persona, go to **Automation** > **Agents** > **Super agent**. Here you can update:
    * [Profile settings](#profile-settings) 
    * [Query handling behavior](#how-ai-agent-handles-queries) 
 
-### Profile settings
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/superagent.png)
 
-The AI Agent Profile defines your AI agent's identity such as name, persona, role, scope, and model. These details are cloned from the template when the AI agent is created. You can customize it if needed.
 
-#### Edit profile settings
+### Update profile settings
 
-To edit the AI agent profile settings, follow these steps:
+The profile setting contains the core identity of your agent which includes name, persona, role, scope, and underlying model. These attributes are cloned from the selected template at the time of creation, but you can update them anytime to better fit your use case.
+
+
+
+To edit the AI agent profile settings:
 
 1. Click the **Edit** icon next to the AI agent details.
 
@@ -45,27 +44,33 @@ To edit the AI agent profile settings, follow these steps:
 
 2. In the profile pop-up, you can update the following information:
 
-**Option** | **Description**
-------- | ----------
-**Agent name**| Choose a name that suits your business and resonates with users.
-**Avatar** | Choose a avatar or upload a custom icon that represents your business.
-**Company** | Enter the name of the business the AI agent represents. For example: Yellow travels.
-**Model** | Select the preferred Language Learning Model (LLM) that suits your AI agent. This helps the agent respond better based on your use case, such as customer support, sales assistance, or general queries. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/LLM-central-configuration).
-**Persona** | Agent persona defines how the AI agent should interact with users. A consistent persona helps to create engaging and aligned interactions. You can select from the following personas: <ul><li>**Polite and persuasive**: Ideal for sales agents.</li><li>**Empathetic and helpful**: Best suited for support agents.</li><li>**Witty**: Best for marketing agents.</li></ul>
-**Describe your AI agent's role** | Describe the role of the AI agent in less than 400 characters. For example, you are a banking assistant who helps users with Yellow Banking-related queries. Your role is focused on assisting with personal loans-guiding users to apply loan, checking loan status, and answering loan specific questions for better accuracy and support.
+   **Option** | **Description**
+   ------- | ----------
+   **Agent name**| Choose a name that suits your business and resonates with users.
+   **Avatar** | Choose a avatar or upload a custom icon that represents your business.
+   **Company** | Enter the name of the business the AI agent represents. For example: Yellow travels.
+   **Model** | Select the preferred Language Learning Model (LLM) that suits your AI agent. This helps the agent respond better based on your use case, such as customer support, sales assistance, or general queries. For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/LLM-central-configuration).
+   **Persona** | Agent persona defines how the AI agent should interact with users. A consistent persona helps to create engaging and aligned interactions. You can select from the following personas: <ul><li>**Polite and persuasive**: Ideal for sales agents.</li><li>**Empathetic and helpful**: Best suited for support agents.</li><li>**Witty**: Best for marketing agents.</li></ul>
+   **Describe your AI agent's role** | Describe the role of the AI agent in less than 400 characters. For example, you are a banking assistant who helps users with Yellow Banking-related queries. Your role is focused on assisting with personal loans-guiding users to apply loan, checking loan status, and answering loan specific questions for better accuracy and support.
 
 
 ### How AI agent handles queries
 
-This section lets you define how the AI agent should greet users, behave during a conversation, and handle unanswered queries.
+Use this section to configure the agent’s conversational behavior—from how it greets users to how it responds during interactions and manages unanswered queries.
 
    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/handle.png" alt="drawing" width="80%"/>
 
-#### Welcome message
+### Define Welcome message
 
-The welcome message is the first response when a user starts a conversation. You can customize it to match your brand’s tone and persona.
+The welcome message is your AI agent’s first response to users. Set the tone, introduce what the agent can help with, and guide users on what to do next. 
 
-To add a welcome message:
+You can choose to:
+* trigger a welcome flow 
+* send a static custom welcome message, or 
+* use Instruct Super Agent to craft a personalized welcome by providing direct instructions to the AI. 
+
+
+**To add a welcome message**:
 
 1. Go to **How I handle queries** section 
 2. Click the **Edit** icon next to **Choose how to welcome**.
@@ -140,10 +145,10 @@ To configure fallback handling:
 
 2. Choose how the agent should respond:
 
-| Option                    | Description |
-| ------------------------- | ------------ |
-| **Instruct Super Agent**  | Write a custom fallback message. <br/> Example: *I am still learning and could not help with that. Please contact [support@yellow.ai](mailto:support@yellow.ai).<br/> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instructagent.png" alt="drawing" width="70%"/> |
-| **Trigger Fallback Flow** | Select a fallback conversation flow to guide the user when the agent cannot respond.<br/> ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/fallback.png)    |
+   | Option                    | Description |
+   | ------------------------- | ------------ |
+   | **Instruct Super Agent**  | Write a custom fallback message. <br/> Example: *I am still learning and could not help with that. Please contact [support@yellow.ai](mailto:support@yellow.ai).<br/> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/instructagent.png" alt="drawing" width="70%"/> |
+   | **Trigger Fallback Flow** | Select a fallback conversation flow to guide the user when the agent cannot respond.<br/> ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/fallback.png)    |
 
   
 #### Retries for information validation failures
@@ -159,6 +164,7 @@ You can configure how many times the AI agent should retry when a user provides 
 1. Go to **Retries for Information validation failures**.
 2. Set the number of retry attempts.
    
+---
 
 ### Sample use cases of Agent persona
 

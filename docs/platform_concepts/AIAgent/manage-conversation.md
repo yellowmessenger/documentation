@@ -1,8 +1,11 @@
 ---
-title: Manage conversations   
-sidebar_label: Manage conversations  
+title: Preview your AI agent   
+sidebar_label: Preview AI agent
 ---
 
+
+
+<!-- 
 This section helps you tp define rules, access helpful resources, and preview how your bot responds in real time.
 
 ## Help section
@@ -25,7 +28,8 @@ Example: Hi `{} var: user_name`, your last booking was for `{} var: destination`
 Help section displays specific shortcut keys to help users access actions and variables faster while designing conversations.
    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/keywboardshortcuts.png" alt="drawing" width="80%"/>
 <br/>
- 
+
+
 
 ### Define conversation rules at prompt level
 
@@ -43,7 +47,9 @@ Trip type prompt: "Would you like to book a one-way or round-trip flight?""
 
    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/conversationrules.png" alt="drawing" width="80%"/>
 
-## Preview AI agent 
+
+-->
+
 
 You can preview AI Agent to test and experience how your AI agent interacts with users in real-time. It simulates live conversations, helping you validate if prompts, workflows, and conversation rules work as expected before publishing the AI agent.
 
@@ -59,16 +65,3 @@ To preview the AI agent, follow these steps:
 
 * Review the responses, check variable values, and see if fallback and workflows are triggered.
 
-## Global components
-
-
-Global components section provides a centralized view of all the variables used in your AI agent's conversations. It includes different types of variables such as session variables, system variables, user 360, and output variables that help maintain and manage conversation context.
-
-You can monitor, update, and test how data is handled across the AI agent's interactions.
-
-**Key features**:
-* **View variables**: See all the variables that are currently being used across the conversation flows.
-* **Edit values**: Modify the values of session or input variables for testing and preview purposes.
-* **Delete variables:** Remove unwanted or outdated variables to keep your variable list clean and relevant.
-* **Search variables**: Allows you to quickly search specific variables used in your AI agent’s conversation.
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/global1.png)
