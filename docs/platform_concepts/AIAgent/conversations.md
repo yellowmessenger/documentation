@@ -3,17 +3,16 @@ title: Configure AI agent conversations
 sidebar_label: Configure AI agent conversations  
 ---
 
-An AI agent conversation is a dynamic, natural dialogue between users and your AI agent. It allows users to ask questions, perform tasks, and receive contextual responses without relying on rule-based flows.
+AI agent conversations let your users interact naturally with your agent by asking questions and getting relevant answers or help. Instead of building complex rules, you set up conversations using simple prompts and instructions. 
 
-With prompt-based configuration, you can build scalable, human-like conversations using simple language and instructions. Add logic only where needed using actions and conditions to support a wide range of real-time scenarios, from basic FAQs to advanced support automation.
+Our prompt-based configuration makes it easy to create flexible, human-like dialogues that can handle anything from basic questions to more advanced tasks. You only add extra logic when needed, keeping the setup simple and efficient.
 
-### Prompt-based conversational setup
+This approach is more efficient because it:
 
-Instead of designing traditional, linear conversation flows, you can create intelligent interactions using a **prompt-based configuration**. This approach enables your AI agent to:
+* Understands user intent more effectively
+* Responds with contextual relevance
+* Eliminates the need for complex scripting or flowchart-like designs
 
-* Understand user intent more effectively
-* Respond with contextual relevance
-* Eliminate the need for complex scripting or flowchart-like designs
 
 
 ### Key components of the AI Agent conversation
@@ -47,6 +46,10 @@ To set up agent conversations, follow these steps:
 4. In the **Start trigger** and **Prompts** section, configure how the conversation should begin and how the agent should respond.
 
    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/AGENTS.png)
+
+:::info
+Use **Help** button on the top. Help section provides a sample structure that shows how a conversation should be designed. It includes examples of how to define start triggers and write prompts. This helps users understand how to structure conversations.
+:::
 
 ### Start trigger
 
@@ -99,16 +102,20 @@ Below is a sample screenshot showing how prompts are written:
 
   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/promptsample1.png" alt="drawing" width="90%"/>   
 
-## Configure prompt using actions
+---
 
-In the Prompt section, you can configure the conversations by using the following actions:
+## Add Actions to your AI agent prompts
 
-* **[Get input](#get-input)**: Collects specific information from the user, such as their name, phone number, and email.
-* **[Call workflow](#call-workflow)**: Triggers an external process or function, such as retrieving data from a database, calling an API, or executing backend operations, allowing the AI agent to handle complex tasks.
-* **[Call a Fallback](#call-a-fallback)**: Triggers predefined fallback action when the AI agent cannot process the user’s request.
+Actions let the agent collect input, run workflows, or handle fallbacks—making conversations more dynamic and goal-driven. 
+
+In the Prompt section, you can add the following actions:
+
+* **[Get input](#get-input)**: Collect specific information from the user, such as their name, phone number, and email.
+* **[Call workflow](#call-workflow)**: Trigger an external process or function, such as retrieving data from a database, calling an API, or executing backend operations, allowing the AI agent to handle complex tasks.
+* **[Call a Fallback](#call-a-fallback)**: Trigger a predefined fallback action when the AI agent is unable to understand or fulfill the user’s request.
 
 :::tip
-In the prompt section, you can quickly access the above actions by using the`@` shortcut key.
+You can quickly access the above actions by using the`@` shortcut key.
 :::
   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/getactions.png" alt="drawing" width="80%"/>
 <br/>
@@ -116,11 +123,11 @@ In the prompt section, you can quickly access the above actions by using the`@` 
   
 ## Get input
 
-Get Input action is used to collect and store user responses in variables, this allows the AI agent to reuse the data in future interactions. It ensures that inputs are validated before storing the input.
+Use **Get input** to collect and store user responses in variables, this allows the AI agent to reuse the data in future interactions. It ensures that inputs are validated before storing the input.
 
 For example, if a user provides their name, the bot can use it in future intercations.
 
-**Types of Inputs**
+**Types of inputs**
 
 When creating an input, different input types can be selected based on the use case:
 
@@ -132,7 +139,7 @@ When creating an input, different input types can be selected based on the use c
 * **Date** – Allows users to select or input a date.
 * **Custom** – Enables a more flexible input type tailored to specific needs.
 
-### Create Input
+### Create input
 
 To create a input, follow these steps:
 
@@ -152,7 +159,7 @@ To create a input, follow these steps:
 
 ### Get name input
 
-The Get name input action allows the AI agent to capture and store the user's name during a conversation. This input remains available throughout the session and can be reused by referencing the same input name in the other conversations.
+Use **Get name input** to capture and store the user's name during a conversation. This input remains available throughout the session and can be reused by referencing the same input name in the other conversations.
 
 The table below describes the fields available in the Get Name Input action:
 
@@ -168,7 +175,7 @@ Others | Enable **Mark User Input as Optional** checkbox:<br/> * If checked, the
 
 ### Email
 
-Get Email Input action allows the AI agent to collect and store a user’s email address during a conversation.
+Use Get Email input to collect and store a user’s email address during a conversation.
 
 The table below describes the fields available in the Get Email input action:
 
@@ -185,7 +192,7 @@ Others | Enable **Mark user input as optional** checkbox:<br/>*	If checked, user
 
 ### Phone
 
-Get phone input action allows the AI agent to collect and store a user’s phone number during a conversation. The collected phone number is stored in a variable. You , such as sending notifications, verifying user identity, or to order details.
+Use **Get phone input**    to collect and store a user’s phone number during a conversation. The collected phone number is stored in a variable. You , such as sending notifications, verifying user identity, or to order details.
 
 The table below describes the fields available in the Get Phone Input action:
 
@@ -201,11 +208,13 @@ Mark user input as optional | If checked, the user is not required to provide th
 
 ![Phone number](/files/phonenumber.gif)
 
-### Quick reply
+### Add Quick reply buttons to the AI agent
 
-Quick replies are predefined response options displayed to users during a conversation. This option  allows you to select an answer with a single tap instead of typing.
+Use quick replies to present users with tap-to-select response options. They simplify input, reduce typing effort, and keep conversations on track.
 
-The table below describes the fields available in the Quick Reply:
+
+
+The table below describes the available configuration fields:
 
 Field name | Description
 -----------|------------
@@ -222,7 +231,8 @@ Refer to the following GIF to see how the Quick reply input will work:
 
 ### Carousel
 
-A Carousel is a structured response format that displays multiple options as a scrollable set of cards. Each card can contain an image, title, description, and buttons that allow users to select  specific actions. 
+Use a carousel to present multiple options as horizontally scrollable cards. Each card can contain an image, title, description, and one or more buttons for user actions.
+
 
 The table below describes each field in the carousel configuration:
 
@@ -240,7 +250,8 @@ Others | Enable **Allow users to type input manually** (Checkbox) to enable user
  
 ### Date
 
-Date input is used to collect date-based user input in a structured format. This field supports validation options to ensure the date entered falls within a specified range or follows a required format.
+Use the date input field to collect structured, date-specific responses from users. You can apply validation to ensure the input falls within a defined range or meets formatting requirements.
+
 
 The table below describes each field in the date configuration:
 
@@ -256,9 +267,9 @@ Others | Enable **Mark user input as optional** to allow users to skip providing
 
 ### Custom
 
-A Custom field is used to collect user responses in the expected input format, set validation rules, and capture the user's response into a variable for later use in the conversation.
+Use a custom field to collect user input in a specific format, apply validation rules, and store the response in a variable for later use. This field is ideal for capturing data like order IDs, ZIP codes, or any other input requiring tailored validation.
 
-This field is used for capturing other types of inputs such as order IDs, ZIP codes, or any data that requires custom validation.
+
 
 The table below describes each field in the custom input configuration:
 
@@ -273,21 +284,21 @@ Others | Use the **Mark user input as optional** checkbox to allow users to skip
 
 ![Custom input](/files/custominput.gif)
 
+---
+
 ## Call workflow
 
-A workflow is a predefined action or process that the AI agent can invoke to perform specific tasks such as retrieving booking details, processing payments, verifying user information, or updating records.
+A workflow is a predefined action or process your AI agent can trigger during a conversation. Use this option to execute tasks like retrieving booking details, processing payments, verifying user information, or updating records. You can pass user inputs as variables to the workflow and capture the output for use in later steps.
 
-This action allows the AI agent to trigger a workflow during a conversation, pass user inputs as variables, and store the output for use in subsequent steps of the conversation.
+The table below describes the fields available in the Workflow action (How does the workflow work?):
 
-**How does the workflow work?**
-* **Trigger the workflow**: When the conversation reaches the Call workflow action, the agent activates the linked workflow.
-* **Pass input variables**: AI agent sends relevant input data (example, booking ID, user name) collected earlier in the conversation to the workflow.
-* **Workflow processing**: The workflow executes its logic to perform dynamic tasks, automate backend operations, and handle complex scenarios. Here are examples of what workflows can do:
-    * **Fetch data from APIs or databases**: Retrieve weather updates by calling a weather API using the user's location (example, city or zip code) and return the current temperature and forecast in the response.
-    * **Raise a support ticket**: Automatically generate a support request in the system if a user reports a flight cancellation issue.
-    * **Connect to a human agent**: Escalate the conversation to a live support agent when the AI agent is unable to resolve the query.
-    * **Execute custom functions**: Use a function to calculate baggage charges based on the selected airline and luggage weight.
-* **Store output**: The response from the workflow (example, booking status, payment confirmation) is stored in a variable, which can then be used in the next steps of the conversation.
+| Step                     | Description                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Trigger the workflow** | When the conversation reaches the Call workflow action, the AI agent activates the linked workflow.                                                                                                                                                                                                                                                                                                                         |
+| **Pass input variables** | The AI agent sends relevant input data (e.g., booking ID, user name) collected earlier in the conversation to the workflow.                                                                                                                                                                                                                                                                                                 |
+| **Workflow processing**  | The workflow executes its logic to perform tasks, automate backend operations, and handle complex scenarios, such as: <ul><li>Fetching data from APIs or databases (e.g., retrieving weather updates using location data)</li><li>Raising support tickets (e.g., for flight cancellations)</li><li>Connecting to a human agent when needed</li><li>Executing custom functions (e.g., calculating baggage charges)</li></ul> |
+| **Store output**         | The workflow’s response (e.g., booking status, payment confirmation) is stored in a variable for use in subsequent conversation steps.                                                                                                                                                                                                                                                                                      |
+
 
 ### Output node in Workflows
 
@@ -517,6 +528,8 @@ Refer to the following GIF to see the complete process of fetching weather updat
 
    ![Weather API skill](/files/weatherAPIskill.gif)
 
+---
+
 ## Call a fallback
 
 Use the **Call a fallback** action to handle cases when the AI agent can’t interpret the user’s input or find a match in workflows or the knowledge base. 
@@ -553,9 +566,10 @@ This ensures that the user receives a meaningful next step even when the AI agen
       
 2. Select the fallback flow that you have configured.
 
+---
+
 ## Variables
 
-### Pass variables in conversation
 
 Variables are used to store and retrieve user data in the conversations. They help to maintain context across different conversation steps.
 
@@ -575,7 +589,29 @@ Example: Save the user’s name as `getInput: user_name`.
 **Example:** Fetching order status from an API and storing it as `getInput: order_status` to display in the conversation.
 * **System varibales**: System variables are pre-defined variables available by default within the platform. These variables store details related to the user session, conversation context, and AI agent configuration.
 
-### Pass variables between conversation
+### Manage Global variables
+
+
+**The Global Components section offers a unified view of all variables available to your AI agent.**
+
+It includes session variables, system variables, User 360, and output variables—all of which help manage conversation context and ensure consistent, personalized interactions. This includes:
+
+* Session variables
+* System variables
+* User 360 variables
+* Output variables
+
+You can view, update, and test how data is use across the AI agent's conversations.
+
+**Key features**:
+* **View variables**: See all the variables that are currently being used across the conversation flows.
+* **Edit values**: Modify the values of session or input variables for testing and preview purposes.
+* **Delete variables:** Remove unwanted or outdated variables to keep your variable list clean and relevant.
+* **Search variables**: Allows you to quickly search specific variables used in your AI agent’s conversation.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/global1.png)
+
+
+### Pass variables in conversation
 
 You need to pass the variables in between conversation for AI agents to remember user inputs throughout a conversation to avoid asking for the same information multiple times.
 

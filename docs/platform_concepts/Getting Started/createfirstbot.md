@@ -7,31 +7,17 @@ sidebar_label : Build your AI agent
 [Upgrade](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/upgrade#steps-to-upgrade-your-freemium-plan) your account to unlock all the features offered by Yellow.ai.
 :::
 
-## Step 1: Sign in to your account
+## Step 1: Start in development environment
 
-Open the Yellow.ai Cloud Platform and log in to the platform using your preferred option:
+Yellow.ai provides separate environments to help you build, test, and safely deploy AI agents. You can build your AI agent only in lower environments. Once everything’s ready, publish to Live or Production. This ensures that only stable, approved updates reach your end users.
 
-- **Sign in with Google**:  
+Depending on your subscription plan, you may see two or three environments. 
 
-  Use this option if your organization is integrated with Google for Single Sign-On (SSO). It allows for a quick and secure login using your Google account.
-  
-  ![image](https://imgur.com/fHbiGIn.png)
+* **Freemium** plan contains Development and Live environments
+* **Premium** plan contains Sandbox, Staging, and Production environments.
 
-- **Sign in with OAuth**:  
-  Choose this method if your organization has set up OAuth for authentication with Yellow.ai. It provides a secure way to log in through your organization's OAuth provider.
-  
-  ![image](https://imgur.com/k5Oj3bj.png)
-
-- **Manual Sign-in**:  
-
-  If you registered by setting up a username and password manually, you can log in by entering those credentials directly.
-  
-   ![image](https://imgur.com/2JzJm9v.png)
-
-:::note
-* If a user enters an incorrect username or password three consecutive times, their account will be locked for security reasons.
-* If you do not have an account, sign up using the instructions provided [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup).
-::: 
+Use the environment switcher in the top-right corner to move between stages.
+   ![](https://cdn.yellowmessenger.com/assets/docs/image-13.png)
 
 ## Step 2: Create or access your AI agent
 

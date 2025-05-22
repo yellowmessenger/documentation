@@ -337,7 +337,7 @@ module.exports = {
            
             {
               type: "category",
-              label: "Create AI agnet",
+              label: "Create AI agent",
               link: {type: 'doc', id: 'platform_concepts/studio/build/nodes/create-agent'},
               collapsed: true,
               items: [
