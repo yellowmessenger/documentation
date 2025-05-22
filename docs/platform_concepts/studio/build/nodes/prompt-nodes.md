@@ -45,7 +45,7 @@ A Fetch from field will be provided in most of the fields to render the dynamic 
 ---
 
 
-## <a name="ud"></a>  2. Frequently used promts
+## <a name="ud"></a>  2. Frequently used prompts
 
 
 ### 2.1 Question
@@ -80,7 +80,7 @@ If you're collecting PCI-sensitive information (like card number, CVV, or expiry
   * In **Input type**, choose Question to ask the user for any information.
   * In **Bot asks**, enter what the AI agent should ask. You can also add multiple variations using **Add multiple text for randomising**. Your agent will randomly pick one to keep the conversation natural.
   * **Validator message**: Customize the message that appears if the input doesn’t meet validation rules.
-  * **Additional settings** (PCI configuration):
+  * **Additional settings** (PCI configuration): Use Additional Settings to define how PCI data is passed to your API.
     * **Encoding type**: Choose how the PCI input is encoded —`Text`, `Hexadecimal`, or `Base64`.
     * **Card number format**: Choose the format in which users are expected to enter the card number. This helps validate and correctly capture card data.
       * `XXXXXXX XXXXXX`
