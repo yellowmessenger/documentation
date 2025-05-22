@@ -7,7 +7,9 @@ sidebar_label : Add APIs via API node
 
 The API node is a powerful tool that helps you to integrate external services directly into your conversational flows. 
 
-By connecting APIs, your AI-agent can perform tasks like fetching real-time data, automating processes, and interacting with third-party platforms such as CRMs, payment gateways, or weather systems.
+By connecting APIs, your AI-agent can perform tasks like fetching real-time data, automating processes, and interacting with third-party platforms such as CRMs, payment gateways, or weather systems. You can use it to transmit general data as well as PCI-sensitive information—such as card number, CVV, PIN, or expiry date—securely.
+
+
 
 ### Optimizing API management and reusability
 
@@ -94,10 +96,19 @@ To add an API using the API interface:
 | **URL**| Paste the URL for your API endpoint.|
 | **Description**| Enter a description explaining the functionality of your API.     |
 | **Headers**| Enter the headers required for your API request. Headers are additional pieces of information sent alongside the main request. <br/> **Example:** For authentication, enter **Authorization** as the **Key** and the API key as the **Value**.|
-| **Params**| Enter the parameters to include in your API request. Parameters help instruct the API on how to fulfill the request. <br/><br/> **Examples of key-value pairs for static and dynamic parameters:** <br/><br/> **Static parameter:**<br/> - **Key:** botId <br/> - **Value:** x766543323dwe_34 <br/><br/> **Dynamic parameter:**<br/> - **Key:** city <br/> - **Value:** "{{{city}}}" <br/><br/> In these examples: the `botId` key has a static value, while the `city` key has a dynamic value that will be replaced during runtime. |
+| **Params**| Enter the input parameters needed for your API request. <br/><br/> **Examples of key-value pairs for static and dynamic parameters:** <br/><br/> **Static parameter:**<br/> - **Key:** botId <br/> - **Value:** x766543323dwe_34 <br/><br/> **Dynamic parameter:**<br/> - **Key:** city <br/> - **Value:** "{{{city}}}" <br/><br/> In these examples: the `botId` key has a static value, while the `city` key has a dynamic value that will be replaced during runtime. |
 |**Body type**| Enter the body type for your API request, if applicable (typically for POST, PUT, or DELETE methods). Supported formats include **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data**, and **raw**. <br/><br/> **Note:** Multipart/form-data is not supported.|
 | **Dynamic variable configuration** | You will see the list of dynamic parameters used in the API. Map each parameter to the corresponding variable of the same data type.  This is to ensure the API receives the required input data before initiating the API call. <br/> If the dynamic parameters are not mapped, the API call will fail as it won't receive the required input data.|
 
+### To send PCI data
+
+1. In the Dynamic variable field, select a predefined PCI variable.
+2. The platform decrypts the value at runtime and injects it into the API request.
+3. PCI data is accessible only once. After a successful API call, the data is automatically purged to ensure PCI compliance.
+
+   :::note 
+   If the API call fails, the PCI data remains securely stored. It will only be purged after a successful request.
+   :::
 
 ### Configure additional API settings
 
@@ -203,6 +214,7 @@ To display the received API response:
 | Array    | `{{{variables.variablename.[position of the array].fieldname}}}` |
 | JSON Response Array | `{{{variables.variablename.arrayname.[position of the array].field}}}` or `{{{variables.variablename.fieldname}}}` |
 | String   | `{{{variables.variablename}}}` |
+| PCI data (String) | `{{{variables.pci-variablename}}}` <br/> <br/><ul> <li>The platform decrypts the value at runtime and injects it into the API request. </li><li>PCI data is accessible only once. After a successful API call, the data is automatically purged to ensure PCI compliance. </li></ul><br/>⚠️ Note: If the API call fails, the PCI data remains securely stored. It will only be purged after a successful request.
 
 You can adjust the above syntaxes according to the structure and content of the API responses you receive.
 

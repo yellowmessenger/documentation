@@ -506,9 +506,18 @@ Code-based nodes allow you to execute actions such as retrieving or sending data
 
 > This node is also available for voice bots. 
 
-With the API node, you can connect to an API at a specific point in a flow to send and get responses from a third-party system outside of your AI-agent.
+Use the API node to connect your AI agent to external systems to send and receive data via API calls at specific points in conversation flows. You can use it to transmit general data as well as PCI-sensitive information—such as card number, CVV, PIN, or expiry date—securely.
+
 
    <img src="https://i.imgur.com/Fnsvd0z.png" alt="drawing" width="70%"/>
+
+For PCI related information:
+* The platform decrypts the value at runtime and injects it into the API request.
+* PCI data is accessible only once. After a successful API call, the data is automatically purged to ensure PCI compliance.
+
+:::note
+If the API call fails, the PCI data remains securely stored. It will only be purged after a successful request.
+:::
 
 To know about the various features of the node and how to use it, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode).
 
