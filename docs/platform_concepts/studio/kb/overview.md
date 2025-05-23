@@ -1,10 +1,44 @@
 ---
-title: Transform your website into a AI-agent with Knowledge base
-sidebar_label: Overview
+title: Introduction to knowledge base (KB)
+sidebar_label: Knowledge base Overview
 ---
 
+A Knowledge base (KB) is a centralized hub where you can add information to your AI agent, to deliver consistent, accurate, and context-aware responses. It serves as a structured repository for storing and managing information from various sources, including documents, websites, third-party platforms like ServiceNow, and associated metadata. 
 
-## Introduction to knowledge base(KB)
+You can import content from multiple sources such as sitemaps, URLs, uploaded documents, and ServiceNow to schedule automatic syncs, manage metadata through a dedicated interface, and organize files using folders and subfolders. The system also lets you track the status of each file with ease.
+
+By using existing content from websites, documents, or third-party platforms, your AI agent can efficiently address a wide range of queries, from internal support and customer service to product information and troubleshooting.
+
+
+#### Key features of Knowledge base
+
+The Knowledge Base module offers:
+
+* **Flexible content ingestion**: Import content from diverse sources such as file uploads, website sitemaps, URLs, or third-party platforms like ServiceNow.
+* **Context-rich Metadata configuration**: Apply tags and filters to help the AI agent interpret file context more accurately, enhancing search precision and response relevance.
+* **Automated content sync**: Schedule regular syncs to keep your AI agent up to date with the latest information—no manual updates required.
+* **Structured file organization**: Organize documents using folders and subfolders by category, department, or topic, ensuring a clean and scalable content structure.
+
+#### Use cases
+
+* **Automated website FAQs**: Automatically extract and respond to frequently asked questions using your website content. Reduce support team workload while delivering fast, accurate answers to users.
+
+* **Product information retrieval**: Provide real-time product details, availability, and pricing by connecting your AI agent to live sources like your website or third-party systems.
+* **Dynamic content updates**: Keep your AI agent always up to date by scheduling auto-syncs. This eliminates the need for manual updates and ensures users receive the latest information.
+* **Interactive learning platforms**: Use AI agents as learning assistants that guide users through topics by answering their questions and providing real-time information based on your content.
+
+### Create an AI-agent for your website
+
+To create an AI-agent for your website, follow these steps:
+
+1. Go to **Knowledge base** > **Files**.
+
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
+
+2. Select the source from which you want to add content (for example, upload documents, enter Sitemaps/URLs, or integrate with ServiceNow). For detailed steps on adding content, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion).
+
+
+<!-- ## Introduction to knowledge base(KB)
 
 With Knowledge base, effortlessly transform your existing website into an intelligent AI-agent that responds to user queries, requiring zero effort on your part—simply input your website URL, and the AI-agent is ready to engage with precision.
 
@@ -100,7 +134,7 @@ In the upcoming sections, **additional Knowledgebase features** will be explored
 * Configuring the output/result/editing the response
 * Monitoring likes and dislikes
 * Uploading different types of data 
-* Setting up a multilingual KB AI-agent for your website 
+* Setting up a multilingual KB AI-agent for your website  -->
 
 
 

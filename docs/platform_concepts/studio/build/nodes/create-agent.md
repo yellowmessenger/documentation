@@ -7,6 +7,7 @@ sidebar_label : Create AI-agent
 The first step in building your AI agent is configuring the Super Agent—the central intelligence layer that defines your agent’s personality, tone, and purpose. This foundational setup ensures every conversation reflects your brand voice and aligns with your business objectives. 
 
 To create an AI agent:
+
 1. Go to the **Overview** page > click the **AI-agent** drop-down > + **Create AI agent**.
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-agent.png)
