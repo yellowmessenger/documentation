@@ -170,7 +170,7 @@ After adding the API, you need to test it to ensure it operates correctly and pe
 
 ---
 
-## Store and display API responses
+## Store API responses
 
 This section explains how to store API responses in a variable, filter the relevant details, and show them to the user if needed or store it as needed.
 
@@ -190,10 +190,19 @@ API responses can be of object, array, or string data type. You need to store th
 
 2. Scroll down to the  **Store response** section and under **Store all response** you can either **create** a new variable or **select** an existing one to store the API response, ensuring the variable's data type matches the response type. 
 
-
-
    
    ![](https://i.imgur.com/qSX9VG4.png)
+
+
+Datatype | Syntax |
+|----------|--------|
+| Array    | `{{{variables.variablename.[position of the array].fieldname}}}` |
+| JSON Response Array | `{{{variables.variablename.arrayname.[position of the array].field}}}` or `{{{variables.variablename.fieldname}}}` |
+| String   | `{{{variables.variablename}}}` |
+| PCI data (String) | `{{{variables.pci-variablename}}}` <br/> <br/><ul> <li>The platform decrypts the value at runtime and injects it into the API request. </li><li>PCI data is accessible only once. After a successful API call, the data is automatically purged to ensure PCI compliance. </li></ul><br/>⚠️ Note: If the API call fails, the PCI data remains securely stored. It will only be purged after a successful request.
+
+
+
 
 ### Steps to display API response: 
 

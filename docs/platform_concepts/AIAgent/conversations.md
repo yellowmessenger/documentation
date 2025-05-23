@@ -25,6 +25,8 @@ The conversation design is modular and built with flexibility in mind. You can c
 * **Variables** – Store user inputs and context to maintain continuity throughout the conversation.
 * **Workflows** – Integrate with backend systems to fetch, process, or update data.
 
+---
+
 ## Setup agent conversations
 
 You can set up agent conversations using Start trigger and Prompts, which define how and when the AI agent initiates and responds during a conversation.
