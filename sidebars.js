@@ -521,13 +521,13 @@ module.exports = {
 
   {
     type: "category",
-    label: "Files",
+    label: "Knowledge base overview",
     link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
     collapsed: true,
     items: [
       "platform_concepts/studio/kb/ingestion",
       // "platform_concepts/studio/kb/integrations",
-      "platform_concepts/studio/kb/confgure-response",
+      // "platform_concepts/studio/kb/confgure-response",
       "platform_concepts/studio/kb/advancedsettings",
       
     ],
