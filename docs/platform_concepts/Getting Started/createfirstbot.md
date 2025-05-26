@@ -25,36 +25,30 @@ This guide will walk you through the process of creating a AI agent on the Yello
 
 ### Creating an AI agent (For Super Admin)
 
-1. Go to the **Overview** page.
+1. Go to the **Overview** page > click the **AI-agent** drop-down > + **Create AI agent**.
 
-2. Click on the AI agent icon at the bottom of the page and select **+ Create AI agent**.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-agent.png)
 
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/createAiagent.png" alt="drawing" width="70%"/>
-    
-4. Click **+ Create AI agent**.
+2. Click **+ Create AI agent**.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/clickagent.png)
-   
-5. Select the subscription under which the AI agent should be created.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/create-AI-agent.png)
 
-6. Choose the appropriate **Data storage region** where your agent’s data will be hosted and click **Next**.
+3. Choose the **Subscription** and appropriate **Data storage region** where your agent’s data will be hosted and click **Next**.
 
    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/selectregion.png" alt="drawing" width="50%"/>
 
-7. In the **+ Create AI agent** page, provide the following details:
-     - **Name**: Enter a unique name for your AI agent.
-     - **Choose avatar**: Select an animated avatar to visually represent your AI agent.
-     - **Select a persona**: This defines the agent’s tone and communication style. You can select from the following personas:
-       * **Polite and persuasive**: Ideal for sales agents.
-       * **Empathetic and helpful**: Best suited for support agents.
-       * **Witty**: Best for marketing agents.
-     - **Role**: Describe the role of the AI agent in less than 400 characters. For example, you are a banking assistant who helps users with Yellow Banking-related queries. Your role is focused on assisting with personal loans-guiding users to apply loan, checking loan status, and answering loan specific questions for better accuracy and support.  
+4. Define the following details and click **Next**.
 
-   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/createpage.png)
-   
-8. Click **Next**.   
+   | Field Name | Description|
+   ------------|--------------
+   Name | Enter a unique name for your AI agent.
+   Choose avatar | Select an animated avatar to visually represent your AI agent.
+   Select a persona | This defines the agent’s tone and communication style. You can select from the following personas:<br/>* **Polite and persuasive**: Ideal for sales agents.<br/>* **Empathetic and helpful**: Best suited for support agents.<br/>  **Witty**: Best for marketing agents.
+   Role |  Describe the role of the AI agent in less than 400 characters. <br/>For example, you are a banking assistant who helps users with Yellow Banking-related queries. Your role is focused on assisting with personal loans-guiding users to apply loan, checking loan status, and answering loan specific questions for better accuracy and support.  
 
-9. Provide either your website URL or upload documents. This content will be used to train the AI agent.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/createpage.png)  
+
+5. Provide either your website URL or upload documents. This content will be used to train the AI agent.
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/knowledgeai1.png)
    
@@ -65,6 +59,7 @@ This guide will walk you through the process of creating a AI agent on the Yello
 * You will be redirected to the **Copilot** page, where you can Start typing your question or query based on the knowledge you have stored to retrieve relevant information.
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/copliot.png)
+
    
 ### Requesting Access for Your Org’s AI agent (For non-super admin)
 

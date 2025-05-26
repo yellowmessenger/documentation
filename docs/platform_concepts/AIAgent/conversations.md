@@ -673,7 +673,7 @@ The Workflow calls an API using `order_id` to fetch order status.
 
 The API response is mapped to an output variable like `order_status`.
 
-**Follow-up bot message**:
+**Follow-up AI agent message**:
 
 Your order status is "order_status".
 
