@@ -521,7 +521,7 @@ module.exports = {
 
   {
     type: "category",
-    label: "Knowledge base overview",
+    label: "Knowledge base",
     link: {type: 'doc', id: 'platform_concepts/studio/kb/overview'},
     collapsed: true,
     items: [
