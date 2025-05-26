@@ -280,7 +280,17 @@ Use this to send a WhatsApp notification. You can set when to proceed to the nex
     <center><img src="https://i.imgur.com/oAvPu7k.png" width="50%"/></center>
 
 
-5. Enable **During workflow business hours** to send the message only during business hours.
+5. In the **API reference**, choose the desired option.
+  <center> <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/templates.png" width="50%"/> </center> 
+
+   * Select **Meta Cloud** to send campaigns exactly at the scheduled date and time, or 
+   * Select **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicable only for marketing templates)
+
+   :::note
+   This option is only available for customers who are onboarded to MM Lite and is supported only for MARKETING templates
+   :::
+
+6. Enable **During workflow business hours** to send the message only during business hours.
 
 #### 2. SMS channel configuration
 

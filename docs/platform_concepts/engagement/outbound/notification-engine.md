@@ -136,7 +136,7 @@ Only users with a Super Admin role can [create a Bot API key](https://docs.yello
 | `userDetails` | Object | Yes | Details of the user to be notified. Eg. Phone Number for WhatsApp. |
 | `notification`  (fields: `params`) | Object | Yes | Template details |
 | `media` | Object | Optional | Template Media URL, Quick Reply Payload can be passed here |
-| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - Used to receive delivery updates on the client's webhook. <br/>To receive delivery updates on the client's webhook, enable **Postback URL** in **Engage** > **Preferences** and enter the Webhook URL. See [Send delivery status to webhook](#14-send-delivery-status-to-webhook).
+| `config` fields: (`customPayload`, `postbackUrl`) | Object  (Obj, String) | Optional | Configuration details for the API.<br/> <br/>`customPayload` - Custom information will be sent back with delivery updates.  <br/><br/>`postbackUrl` - Used to receive delivery updates on the client's webhook. <br/>To receive delivery updates on the client's webhook, enable **Postback URL** in **Engage** > **Preferences** and enter the Webhook URL. See [Send delivery status to webhook](#14-send-delivery-status-to-webhook). <br/> <br/> `apiPreference`: The MM Lite API is an intelligent delivery enhancement that leverages Meta’s infrastructure to optimize the timing of message delivery. <br/>To explicitly choose MM Lite for message delivery, set the `apiPreference` to `MM_Lite` in your API request,
 
 
 ##### `userDetails` Object
@@ -200,12 +200,21 @@ This contains the message template details that need to be sent as a notificatio
 
 ```
 
+
 ##### `config` Object
 
 This contains the list of available pre-configuration that will be validated before sending the messages to the user.
 
+By default, Yellow.ai uses the value defined in the global settings. To override this behavior, include the apiPreference field under the config object in your API request.
+
+:::note
+The MM Lite API is an intelligent delivery enhancement that leverages Meta’s infrastructure to optimize the timing of message delivery.
+:::
+
 ``` json
 "config": {
+            
+        "apiPreference": "MM_Lite" //Applicable for WhatsApp marketing messages
         "customPayload": {
             "firstName": "Wasim",
             "phone": "91999999999",
@@ -215,6 +224,42 @@ This contains the list of available pre-configuration that will be validated bef
    }
 
 ```
+
+
+---
+
+#### MMLite preference support in Notifications API for WhatsApp
+
+Yellow.ai supports MM Lite as a delivery preference for notifications. By default, the system uses the delivery mechanism defined in your global settings. However, you can override this at the API level using the `apiPreference` field within the `config` object.
+
+
+To explicitly choose MM Lite for message delivery, set the `apiPreference` to `"MM_Lite"` in your API request, as shown in the example below:
+
+```bash
+curl --location 'https://staging.yellowmessenger.com/api/engagements/notifications/v2/push-internal?bot=x1623836053xxx' \
+--header 'Content-Type: application/json' \
+--data '{
+  "userDetails": {
+    "number": "88019461xxxxx"
+  },
+  "config": {
+    "apiPreference": "MM_Lite"
+  },
+  "notification": {
+    "type": "whatsapp",
+    "sender": "9180689xxxx",
+    "templateId": "new"
+  }
+}'
+```
+
+> ⚠️ Note:
+> MM Lite is only available for onboarded customers and is currently supported only for **Meta-approved MARKETING templates**.
+
+---
+
+
+
 
 ### 2.2 Sample Webhook Payload
 
@@ -358,8 +403,34 @@ You can view data regarding the campaigns you execute through the **Insights** m
 2.  In the **Data Explorer** section, select **Notification Reports** under **Default Datasets.**
 3.  To begin experimenting with **Campaign Reports**, you can select **Filters**, and use filters such as **BOTID**, **CAMPAIGNID**, and **TEMPLATEID** individually, or in different combinations to pull data.
 4.  Once you have generated a data set that you find useful, click on **Summarise**. With this, you can group and summarise this data set in different ways.
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/notification.png)
 
-
+    | **Field**               | **Description**                                                            |
+    | ----------------------- | -------------------------------------------------------------------------- |
+    | `name`                  | Name of the campaign.                                                      |
+    | `campaignId`            | Unique identifier for the campaign.                                        |
+    | `reportId`              | Unique identifier for this report entry.                                   |
+    | `senderId`              | Identifier of the number or channel used to send the message.              |
+    | `userId`                | Internal identifier for the user or recipient.                             |
+    | `sessionId`             | Identifier for the messaging session to which this message belongs.        |
+    | `cdpUserId`             | Identifier for the user in User 360.               |
+    | `templateId`            | Identifier of the WhatsApp message template used.                          |
+    | `messageId`             | Unique ID generated for the message sent to the user.                      |
+    | `status`                | Current delivery status of the message (e.g., sent, delivered, failed).    |
+    | `source`                | Channel through which the notification is sent (e.g., whatsapp, email, sms).       |
+    | `sessionConversationId` | Identifier linking messages within the same conversation session.          |
+    | `sessionStart`          | Timestamp indicating when the session started.                             |
+    | `sessionType`           | Type of session (e.g., marketing, utility).                       |
+    | `smsUnits`              | Number of SMS units consumed (if applicable).                              |
+    | `scheduledAt`           | Timestamp when the message was scheduled to be sent.                       |
+    | `sentAt`                | Timestamp when the message was actually sent.                              |
+    | `deliveredAt`           | Timestamp when the message was delivered to the recipient.                 |
+    | `readAt`                | Timestamp when the message was read by the recipient.                      |
+    | `repliedAt`             | Timestamp when the recipient replied to the message.                       |
+    | `reply`                 | The actual reply message content (if applicable).                          |
+    | `errorMessage`          | Details of any error that occurred during delivery.                        |
+    | `comments`              | Additional notes or annotations for internal reference.                    |
+    | `apiPreference`         | Indicates the API used for delivery: `CLOUD_API`, or `MM_LITE`. |
 
 
 ## 5. Examples
