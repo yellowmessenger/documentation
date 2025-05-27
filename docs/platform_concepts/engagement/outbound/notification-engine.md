@@ -235,22 +235,20 @@ Yellow.ai supports MM Lite as a delivery preference for notifications. By defaul
 
 To explicitly choose MM Lite for message delivery, set the `apiPreference` to `"MM_Lite"` in your API request, as shown in the example below:
 
-```bash
-curl --location 'https://staging.yellowmessenger.com/api/engagements/notifications/v2/push-internal?bot=x1623836053xxx' \
---header 'Content-Type: application/json' \
---data '{
+```json
+"data" {
   "userDetails": {
-    "number": "88019461xxxxx"
+    "number": "9xxxxxxxxxx"
   },
   "config": {
     "apiPreference": "MM_Lite"
   },
   "notification": {
     "type": "whatsapp",
-    "sender": "9180689xxxx",
+    "sender": "9180xxxxxxxx",
     "templateId": "new"
   }
-}'
+}
 ```
 
 > ⚠️ Note:
@@ -430,7 +428,7 @@ You can view data regarding the campaigns you execute through the **Insights** m
     | `reply`                 | The actual reply message content (if applicable).                          |
     | `errorMessage`          | Details of any error that occurred during delivery.                        |
     | `comments`              | Additional notes or annotations for internal reference.                    |
-    | `apiPreference`         | Indicates the API used for delivery: `CLOUD_API`, or `MM_LITE`. |
+    | `apiPreference`         | Indicates the API used for delivery: `CLOUD`, or `MM_LITE`. |
 
 
 ## 5. Examples

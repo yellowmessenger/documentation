@@ -149,6 +149,13 @@ For instance, when the bot accepts credit card information as user input, it pas
 
 <img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXf_2mqPlce4r5fms6yTHvAo9XhBaEWWe44g_HhFVojhuMq1BTN4NGkmxJX6VknXwmWo0KHpR3UmrKNLcg671Xw_REa9P897XtKmj42kVrEg_vl0j80jOKSx9g-TyQiV2eFqAsSbtaPTlmgb1it92_5NBmak?key=vQuTYFRZOYk9_bVHV0je_w" alt="drawing" width="50%"/> 
 
+Use Additional Settings to define how PCI data is passed to your API.
+    * **Encoding type**: Choose how the PCI input is encoded —`Text`, `Hexadecimal`, or `Base64`.
+    * **Card number format**: Choose the format in which users are expected to enter the card number. This helps validate and correctly capture card data.
+      * `XXXXXXX XXXXXX`
+      * `XXXX-XXXX-XXXX-XXXX`
+      * `XXXX XXXX XXXX XXXX`
+
 
 -----
 

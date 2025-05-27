@@ -22,7 +22,7 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 We’ve added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
 This smart delivery feature uses Meta’s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they’re most likely to engage.
 
-No change in how you build your campaigns — just smarter delivery behind the scenes.
+No change in how you build your campaigns — just choose the API reference while configuring WhatsApp campaign, Meta takes care of the rest.
 
 
 #### How it works

@@ -121,7 +121,7 @@ Once enabled, customers can configure MM Lite delivery preferences via:
 
 ### Reporting for messages delivered through MMLite 
 
-A new column called **APA Preference** has been added to notification reports. This column displays the delivery method used for each message (e.g., **Cloud API**, **MM Live**, or **MM Lite**) to improve transparency and traceability.
+A new column called **API Preference** has been added to notification reports. This column displays the delivery method used for each message (e.g., **Cloud API**, or **MM Lite**) to improve transparency and traceability.
 
 
 ### Limitations
