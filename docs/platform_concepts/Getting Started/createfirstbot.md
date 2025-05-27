@@ -60,6 +60,8 @@ This guide will walk you through the process of creating a AI agent on the Yello
 
    ![](https://cdn.yellowmessenger.com/assets/yellow-docs/copliot.png)
 
+* After creating an AI agent, you can [define agent persona](https://docs.yellow.ai/docs/platform_concepts/AIAgent/agentpersona) and [configure the conversations](https://docs.yellow.ai/docs/platform_concepts/AIAgent/conversations) based on your use case.   
+
    
 ### Requesting Access for Your Org’s AI agent (For non-super admin)
 

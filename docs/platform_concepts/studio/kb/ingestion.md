@@ -255,7 +255,7 @@ To add your service now account, follow these steps:
     
 ### Add Knowledge base source in Files & folders section
 
-After completing the initial onboarding, you can continue managing and adding additional Knowledge base sources directly from the **Files & Folders** section. This allows you to organize and expand your content as needed.
+After completing the initial set up process, you can continue managing and adding additional Knowledge base sources directly from the **Files & Folders** section. This allows you to organize and expand your content as needed.
     
    ![Add files](/files/add-files.gif)   
 
