@@ -84,13 +84,13 @@ To add a sitemaps or URLs, follow these steps:
     
 4. Choose the existing folder/subfolder where you want to store content. To store in a new folder, click **+ Create new folder**.
 
-    ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/newfolder.png)
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/newfolder.png" alt="drawing" width="80%"/>
     
 5. To keep your Knowledge base up to date going forward, you can [schedule regular syncs](#schedule-sync) by configuring:
    * **Frequency**: Choose from Hourly, Daily, or Weekly.
    * **Time**: Choose the time (in UTC) for the sync to run.
 
-   <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/sync.png" alt="drawing" width="80%"/>
+     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/sync.png" alt="drawing" width="80%"/>
   
 6. Click **Done** to complete the setup.
     
@@ -105,45 +105,41 @@ You can add website content to your Knowledge base by providing specific URLs. T
 2. In **Crawling method**, select the following options:
 
      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/crawl.png" alt="drawing" width="80%"/>
+     <br/>
+
      
-   i. **All pages**
+     1. **All pages**
 
-      The **All pages** option allows the system to crawl and extract content from all the web pages of the specified domain. This is most suitable if your website contains a large set of interlinked pages that you want to make searchable within the AI agent.
-
-    :::Tip
-    Make sure that your website has well-structured internal links so the system can effectively crawl to all pages.
-    :::
-     
-
+      The **All pages** option allows the system to crawl and extract content from all the web pages of the specified domain. This is most suitable if your website contains a large set of interlinked pages that you want to make searchable within the AI agent. Note that, your website has well-structured internal links so the system can effectively crawl to all pages.
+          
       **Use case**: Best suited for documentation sites, help centers, or blogs where all pages are accessible through internal links.
 
       **Example**: If you enter https://docs.yellow.ai, the crawler will scan and collect content from every page linked under that domain.
       
-    **To add all pages option, follow below steps:**  
-    1. Enter your Website URL and click **Next**.
-    
-    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/allpages.png" alt="drawing" width="80%"/>
-    
-    2. To exclude specific URLs from being crawled, turn on the toggle and choose a filter type:
+        **To add all pages option, follow below steps:**  
+        1. Enter your Website URL and click **Next**.
+        
+        <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/allpages.png" alt="drawing" width="80%"/>
+        
+        2. To exclude specific URLs from being crawled, turn on the toggle and choose a filter type:
 
-        i. **Contains**: This option will exclude any URL that contains the specified keyword or phrase. Example: Entering ?sessionid= excludes URLs like www.site.com/page?sessionid=123
-        ii. **Begins with**: This option will exclude all URLs that start with the specified prefix. Example: Entering https://dev.example.com/ excludes all pages starting with that path.
-        iii. **Equals to:** This option will exclude only the URL that exactly matches the specified text. Example: Entering https://example.com/old_page.html excludes only that exact page.
+            i. **Contains**: This option will exclude any URL that contains the specified keyword or phrase. Example: Entering ?sessionid= excludes URLs like www.site.com/page?sessionid=123.<br/>
+            ii. **Begins with**: This option will exclude all URLs that start with the specified prefix. Example: Entering https://dev.example.com/ excludes all pages starting with that path.<br/>
+            iii. **Equals to:** This option will exclude only the URL that exactly matches the specified text. Example: Entering https://example.com/old_page.html excludes only that exact page.
 
-        <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/toogleenabler.png" alt="drawing" width="80%"/>
-    
-    3. Select a folder or subfolder to store the crawled content or click **+ Create new folder** to organize your files.
-     <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/cretefodurl.png" alt="drawing" width="80%"/>
+            <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/toogleenabler.png" alt="drawing" width="80%"/>
+        
+        3. Select a folder or subfolder to store the crawled content or click **+ Create new folder** to organize your files.
+        <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/cretefodurl.png" alt="drawing" width="80%"/>
 
-
-   4. To keep content up to date going forward, you can schedule regular syncs by configuring:
-      * **Frequency**: Hourly, Daily, or Weekly.
-      * **Time**: Choose the time (in UTC) for the sync to run.
-     
-      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/weelky.png" alt="drawing" width="80%"/>
-  
-   5. Click **Done** to complete the setup.
-    
+        4. To keep content up to date going forward, you can [schedule regular syncs](#schedule-sync) by configuring:
+            * **Frequency**: Hourly, Daily, or Weekly.
+            * **Time**: Choose the time (in UTC) for the sync to run.
+            
+            <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/weelky.png" alt="drawing" width="80%"/>
+        
+        5. Click **Done** to complete the setup.
+        
    ii. **Specific pages**
    
       The Specific pages option crawls only to the URLs you manually enter. This is recommended when you want to include only a few targeted pages or avoid crawling the entire site.
@@ -152,23 +148,23 @@ You can add website content to your Knowledge base by providing specific URLs. T
 
     **Example**: If you enter https://yellow.ai/terms-and-conditions, only that single page will be crawled and added to the Knowledge Base.
 
-
+    To add specific pages, follow these steps:
 
     1. In **Pages to sync**, enter the specific **URL**.
 
-       <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/specificpages.png" alt="drawing" width="80%"/>
+        <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/specificpages.png" alt="drawing" width="80%"/>
 
-   2. Choose a folder or subfolder to store the crawled content or click **+ Create new folder**.
+    2. Choose a folder or subfolder to store the crawled content or click **+ Create new folder**.
 
-      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/cretefodurl.png" alt="drawing" width="80%"/>
+        <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/cretefodurl.png" alt="drawing" width="80%"/>
 
-   3. To keep content up to date, you can [schedule regular syncs](#schedule-sync) by choosing the:
-      * **Frequency**: Hourly, Daily, or Weekly.
-      * **Time**: Choose the time (in UTC) for the sync to run.
-     
-      <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/weelky.png" alt="drawing" width="80%"/>
-  
-   4. Click **Done** to complete the setup.
+    3. To keep content up to date, you can [schedule regular syncs](#schedule-sync) by choosing the:
+        * **Frequency**: Hourly, Daily, or Weekly.
+        * **Time**: Choose the time (in UTC) for the sync to run.
+        
+        <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/weelky.png" alt="drawing" width="80%"/>
+    
+    4. Click **Done** to complete the setup.
 
 ### Upload documents from local system  
 
@@ -259,9 +255,9 @@ To add your service now account, follow these steps:
     
 ### Add Knowledge base source in Files & folders section
 
-After completing the initial onboarding, you can continue managing and adding additional Knowledge base sources directly from the **Files & Folders** section. This allows you to organize and expand your content as needed.
+After completing the initial set up process, you can continue managing and adding additional Knowledge base sources directly from the **Files & Folders** section. This allows you to organize and expand your content as needed.
     
-![Add files](/files/add-files.gif)   
+   ![Add files](/files/add-files.gif)   
 
 ## Additonal configuration
 
@@ -340,7 +336,7 @@ To add metadata, follow these steps:
      * **Data type**: Select the appropriate data type.
      * **Description**: Provide a clear explanation of the key’s purpose.
 
-    <img src="https://cdn.yellowmessenger.com/assets/addcuskey.png" alt="drawing" width="70%"/>
+     <img src="https://cdn.yellowmessenger.com/assets/addcuskey.png" alt="drawing" width="60%"/>
     
 5. Click **Add key** to save it.
 

@@ -1,6 +1,6 @@
 ---
 title: Introduction to knowledge base (KB)
-sidebar_label: Knowledge base Overview
+sidebar_label: Knowledge base
 ---
 
 A Knowledge base (KB) is a centralized hub where you can add information to your AI agent, to deliver consistent, accurate, and context-aware responses. It serves as a structured repository for storing and managing information from various sources, including documents, websites, third-party platforms like ServiceNow, and associated metadata. 

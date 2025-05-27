@@ -19,11 +19,11 @@ Utilize the Knowledge search node to offer responses from website URLs or docume
    * AI-agent response configuration
 For more information on Knowledge search settings, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#14-knowledge-search).    
 
-![image](https://i.imgur.com/MbNYlpx.png)
+   ![image](https://i.imgur.com/MbNYlpx.png)
 
 4. Test and deploy your AI-agent.
 
------
+
 
 <!--
 
@@ -51,7 +51,7 @@ Select the desired tone for the responses from the dropdown menu.
 
 -->
 
------
+
 
 ## Modify auto generated AI-agent answers 
 
@@ -128,12 +128,12 @@ To configure the tone of the response:
    <img src="https://i.imgur.com/rY4XYvR.png" alt="drawing" width="60%"/>
 
 
-| Tones               | Descriptions                                                  | Example                                                          |
-|---------------------|---------------------------------------------------------------|------------------------------------------------------------------|
-| Empathetic          | Responds in a way that acknowledges and reflects the user's emotions.              | <img src="https://i.imgur.com/J41xQmE.png" alt="drawing" width="70%"/>                   |
-| Formal              | Uses a professional and formal tone in responses.          | <img src="https://i.imgur.com/fTfC4JQ.png" alt="drawing" width="70%"/>                |
-| Short Answers       | Conveys information concisely with brief responses and minimal descriptions. | <img src="https://i.imgur.com/V7UUsvi.png" alt="drawing" width="70%"/>                   |
-| Instructions based  | Provides responses in a clear instructional format.            | <img src="https://i.imgur.com/xn3jBdH.png" alt="drawing" width="70%"/>  |
+   | Tones               | Descriptions                                                  | Example                                                          |
+   |---------------------|---------------------------------------------------------------|------------------------------------------------------------------|
+   | Empathetic          | Responds in a way that acknowledges and reflects the user's emotions.              | <img src="https://i.imgur.com/J41xQmE.png" alt="drawing" width="70%"/>                   |
+   | Formal              | Uses a professional and formal tone in responses.          | <img src="https://i.imgur.com/fTfC4JQ.png" alt="drawing" width="70%"/>                |
+   | Short Answers       | Conveys information concisely with brief responses and minimal descriptions. | <img src="https://i.imgur.com/V7UUsvi.png" alt="drawing" width="70%"/>                   |
+   | Instructions based  | Provides responses in a clear instructional format.            | <img src="https://i.imgur.com/xn3jBdH.png" alt="drawing" width="70%"/>  |
 
 ## Automate fallback for your AI-agent
 
