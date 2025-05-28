@@ -58,14 +58,14 @@ If your account is managed by Yellow\.ai:
 ## Agent AI
 
 ### PCI-Compliant Data Capture Now Supported in Question Nodes
-As part of our ongoing commitment to security and compliance, Yellow.ai now supports PCI-compliant data capture across multiple channels using question nodes, in addition to the previously supported voice input nodes. You can then use the API node to capture PCI-sensitive information securely.
+As part of our ongoing commitment to security and compliance, Yellow.ai now supports PCI-compliant data capture across multiple channels using question nodes, in addition to the previously supported voice input nodes. You can then use the API node to transfer PCI-sensitive information securely.
 
 #### Key enhancements
 
 * **PCI Classification for Inputs**
    Specific input fields—such as card number, CVV, PIN, and expiry—can now be marked as PCI data. Once classified, these inputs are automatically encrypted, logged securely, and handled per PCI DSS guidelines.
 * **Multi-Channel Support**
-   PCI input is now supported in question nodes, enabling secure data collection across web, WhatsApp, and other channels.
+   PCI input is now supported in question nodes, enabling secure data collection across Web, WhatsApp, and Voice channels.
 * **API-Only Access for PCI Variables**
    PCI variables are securely stored and cannot be accessed via function or code nodes. They are available only through the API node. 
    <br/>

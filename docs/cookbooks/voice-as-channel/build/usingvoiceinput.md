@@ -74,7 +74,7 @@ The Voice Input node will only work for voice bots, meaning you must have enable
    - PCI – Card PIN or 
    - PCI – Card expiry to capture PCI-related details securely.<br/>
    :::note
-    Responses will be stored in the respective PCI-protected variable.s
+    Responses will be stored in the respective PCI-protected variables.
    ::: 
 3. In **Bot speaks**, enter the message that the bot will say to request the user's phone number.
 4. In **Repeat message**, input the message that the bot will repeat if the user's response is unclear or requires verification.
