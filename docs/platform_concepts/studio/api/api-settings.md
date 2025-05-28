@@ -35,30 +35,29 @@ To check API error logs:
 
 1. Go to **Automation** > **API** > **API failure logs**.
 
-   ![](https://imgur.com/EyPqcbR.png)
+   ![](https://cdn.yellowmessenger.com/assets/yellow-docs/API-logs.png)
 
-2. * **API**: Choose the API.
-   * **Status code**: Type the particular error status code and click **Search**.
-   * Click on each timestamp to view the error log.
+2. From the **API** dropdown, choose the API.
+3. In **Status code**, enter the specific error code (e.g., 403, 404) and click **Search**.  
    
     ![](https://i.imgur.com/UvtQctT.png)
    
    The log consists of API details such as BotID, API name, etc. It is used to understand and rectify the error.
 
-``` 
-{
-"botId": "x1624003758366",
-"apiName": "sony"
-"responseTime": 10133,
-"args": "{\"env\":{\"test\":\"198\"}}",
-"@version": "1",
-"@timestamp": "2022-07-25T04:12:08.385Z",
-"response": "ETIMEDOUT",
-"statusCode": "err",
-"id": "hdSOM4IB6hgCAvQOH-eq",
-"key": "hdSOM4IB6hgCAvQOH-eq"
-}
-```
+   ``` json
+   {
+      "botId": "x1624003758366",
+      "apiName": "sony"
+      "responseTime": 10133,
+      "args": "{\"env\":{\"test\":\"198\"}}",
+      "@version": "1",
+      "@timestamp": "2022-07-25T04:12:08.385Z",
+      "response": "ETIMEDOUT",
+      "statusCode": "err",
+      "id": "hdSOM4IB6hgCAvQOH-eq",
+      "key": "hdSOM4IB6hgCAvQOH-eq"
+   }
+   ```
 
 ### Status codes
 
