@@ -59,26 +59,27 @@ You will see template configuration slide screen where you need to configure det
       ![](https://i.imgur.com/0Dl7IUi.gif)
 
 
-* For SMS, choose the user's phone number variable and map the variables used in the template to the user property variable.For more details, [see here](#21-sms-template).
-* For Email, choose the variable that contains email Id, select the sender ID (email ID), and map the user variables used in the template. For more details, [see here](#22-email-template).
-* For WhatsApp or Viber, choose the variable containing WhatsApp number, sender ID, and map the user variables used in the template. For more details, [see here](#23-whatsappviber-template).
-* For Microsoft Teams, choose the variable containing **Users contact details**, sender ID, and map the user variables used in the template same as [WhatsApp or Viber template](#23-whatsappviber-template).
-
-
-  
+   * For SMS, choose the user's phone number variable and map the variables used in the template to the user property variable.For more details, [see here](#21-sms-template).
+   * For Email, choose the variable that contains email Id, select the sender ID (email ID), and map the user variables used in the template. For more details, [see here](#22-email-template).
+   * For WhatsApp or Viber, choose the variable containing WhatsApp number, sender ID, and map the user variables used in the template. For more details, [see here](#23-whatsappviber-template).
+   * For Microsoft Teams, choose the variable containing **Users contact details**, sender ID, and map the user variables used in the template same as [WhatsApp or Viber template](#23-whatsappviber-template).  
 
 :::note
-The user contact details/ recipient column and other others can be selected from user data which you can upload/maintain in Yellow.ai User module.
+* You can select Recipient and other contact details from the user data stored in the **User 360 **module.
+* To update your audience list, save your campaign as a draft and go to the **User 360** module. you can return and finish it anytime.
 :::
+
 
   
 
-:::tip
-If you want to switch to User module to add audience, you can save the campaign as draft and continue later.
-:::
-  
+6. In the **API reference**, select your preferred delivery method. This setting applies only to WhatsApp campaigns.
+   * Choose **Meta Cloud** to send campaigns exactly at the scheduled date and time, or 
+   * Choose **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicable only for   )
+   :::note
+   This option is only available for customers who are onboarded to MM Lite and is supported only for WhatsApp MARKETING templates.
+   :::
 
-6. Select your **Target Audience** and click **Next** to proceed to scheduling the message (**Schedule**).
+7. Select your **Target Audience** and click **Next** to proceed to scheduling the message (**Schedule**).
 
    ![](https://i.imgur.com/E3dcdyV.png)
 
@@ -86,7 +87,7 @@ If you want to switch to User module to add audience, you can save the campaign 
 
    * Create a new segment using **+ Add new segment**. For more details, see [Users module and segment creation](https://docs.yellow.ai/docs/platform_concepts/engagement/cdp/overview).
 
-7.  **Schedule** your Campaign: Define when to send the campaign (Timezone: Asia/Kolkata). For detailed procedure, see [Schedule message](#3-schedule-message).  From the options, select 
+8.  **Schedule** your Campaign: Define when to send the campaign (Timezone: Asia/Kolkata). For detailed procedure, see [Schedule message](#3-schedule-message).  From the options, select 
 
     * **Once** to run the campaign for one occurrence.
     * **Now** to run after 10 min once you schedule the campaign.
@@ -95,7 +96,7 @@ If you want to switch to User module to add audience, you can save the campaign 
 
    ![](https://i.imgur.com/ID2pfbl.png)
 
-8. In **Set a goal**, set the objective that you want to track for the campaign. For more details, see [Campaign goals](#6-campaign-goal).
+9. In **Set a goal**, set the objective that you want to track for the campaign. For more details, see [Campaign goals](#6-campaign-goal).
 
    [](https://i.imgur.com/mdxwOmG.png)
 
@@ -103,9 +104,9 @@ If you want to switch to User module to add audience, you can save the campaign 
 
    ii. Set the duration (in hours/days) for which you want to track the goal in **Track the goal for**. For example, if there is a sale in a couple of days, you can set it to track for two days to get the count of messages delivered before the sale ends.
 
-9. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
+10. Use **Test Campaigns** to test it with internal team members before sending out actual audience. You can add upto five recipients. For a detailed procedure on how to test campaigns, see [Test campaign](#5-test-campaigns-recommended).
 
-10.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
+11.  **Review and Launch** the campaign. Preview all the campaign details on this page. You can go back to previous steps if you want to make any changes.
 
    :::note
    Click **Save as draft** to save all your changes. You can resume from here anytime.

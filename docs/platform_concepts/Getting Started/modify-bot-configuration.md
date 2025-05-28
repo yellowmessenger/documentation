@@ -45,7 +45,7 @@ To update AI agent details, follow these steps:
 
 3. Click **Save** to apply the changes.
 
-<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/updatebot.png" alt="drawing" width="40%"/>
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/updatebot.png" alt="drawing" width="40%"/>
 
 :::info
 You cannot update the Region once it is set. The region is used for integrations, voice AI agents (for phone numbers), and more. Changing the region may impact the AI agent as it's configured for that specific region.
@@ -68,7 +68,7 @@ To pause or resume your AI agent, follow these steps:
 
 2. To disable the AI agent response, enable the toggle button.
 
-<img src="https://cdn.yellowmessenger.com/assets/yellow-docs/tooglepause.png" alt="drawing" width="40%"/>
+    <img src="https://cdn.yellowmessenger.com/assets/yellow-docs/tooglepause.png" alt="drawing" width="40%"/>
 
 :::info 
 **Marketplace dependency**: 

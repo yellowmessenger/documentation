@@ -516,7 +516,7 @@ For PCI related information:
 * PCI data is accessible only once. After a successful API call, the data is automatically purged to ensure PCI compliance.
 
 :::note
-If the API call fails, the PCI data remains securely stored. It will only be purged after a successful request.
+PCI data is stored temporarily and will be purged based on whichever occurs first: a successful API call or the expiration of a predefined time-to-live (TTL) period set by the platform (e.g., 15 minutes). If a successful API call is made within the TTL window, the data is purged immediately. If not, the data is automatically deleted once the TTL expires, even if it hasn't been used.
 :::
 
 To know about the various features of the node and how to use it, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/api/add-api-apinode).

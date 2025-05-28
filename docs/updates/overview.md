@@ -15,7 +15,68 @@ At Yellow.ai, we're continuously evolving — guided by your feedback, market ne
 
 ***
 
+## Engage
 
+###  Smarter WhatsApp Message Delivery with MM Lite API Integration
+
+We’ve added **MM Lite API** support to outbound campaigns, flows, and notification APIs.
+This smart delivery feature uses Meta’s intelligence to decide the best time to send WhatsApp messages, improving your chances of reaching customers when they’re most likely to engage.
+
+No change in how you build your campaigns — just choose the API reference while configuring WhatsApp campaign, Meta takes care of the rest.
+
+
+#### How it works
+
+* **Default**: Follows your Global Settings
+* **Customizable**: You can override within the respective campaign (Outbound, Flows, Notification API)
+
+
+#### Who gets it
+
+* Available **only for customers onboarded to MM Lite**
+* Works with **Meta-approved MARKETING templates**
+
+
+#### How to enable
+
+If your account is managed by Yellow\.ai:
+
+* Your CSM will contact you
+* Or, reach out to your CSM to request access
+
+**For more details, refer to **
+* [**Outbound campaigns documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)
+* [**Flow campaign documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
+* [**Notification API documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)
+* [**Notification API reports**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#4-reports)
+   
+:::info
+* This feature is currently in beta and will be available in production soon.
+:::
+---
+
+## Agent AI
+
+### PCI-Compliant Data Capture Now Supported in Question Nodes
+As part of our ongoing commitment to security and compliance, Yellow.ai now supports PCI-compliant data capture across multiple channels using question nodes, in addition to the previously supported voice input nodes. You can then use the API node to transfer PCI-sensitive information securely.
+
+#### Key enhancements
+
+* **PCI Classification for Inputs**
+   Specific input fields—such as card number, CVV, PIN, and expiry—can now be marked as PCI data. Once classified, these inputs are automatically encrypted, logged securely, and handled per PCI DSS guidelines.
+* **Multi-Channel Support**
+   PCI input is now supported in question nodes, enabling secure data collection across Web, WhatsApp, and Voice channels.
+* **API-Only Access for PCI Variables**
+   PCI variables are securely stored and cannot be accessed via function or code nodes. They are available only through the API node. 
+   <br/>
+   PCI variables can be accessed only once via the API node. After a successful API call, the associated PCI data is securely deleted and can no longer be retrieved. This ensures sensitive information is never stored longer than necessary, maintaining strict compliance with PCI standards.
+
+
+[**Learn how to capture PCI card data securely using Question node**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/prompt-nodes#question-node-to-collect-pci-details)
+
+[**Learn how to store PCI data using the API**](https://docs.yellow.ai/docs/platform_concepts/studio/build/nodes/action-nodes#21-api)
+
+---
 
 ## Insights
 

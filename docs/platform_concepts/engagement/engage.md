@@ -60,6 +60,83 @@ To know about Inbound engagement in detail, see [this article](https://docs.yell
 
 
 
+Certainly. Here's a **feature documentation draft** for **MM Lite API integration** written in a professional, structured format suitable for your product documentation. This version follows best practices seen in Google and Microsoft documentation styles:
+
+---
+
+## MMLite API integration for campaign messages
+
+
+The **MM Lite API** is an intelligent delivery enhancement that leverages Meta’s infrastructure to optimize the timing of message delivery. It is designed to improve campaign performance by delivering messages when users are most likely to engage—based on behavioral signals and Meta's predictive delivery logic.
+
+This feature is supported across:
+
+* **Outbound campaigns**
+* **Flows**
+* **Notification APIs**
+
+
+### Key benefits
+
+* **Smarter Timing**: Messages are delivered when users are most active or likely to respond.
+* **Effortless Setup**: Once onboarded, MM Lite works behind the scenes. No changes needed to how you create campaigns.
+* **Granular Control**: Use global preferences or override settings at the campaign/module level.
+
+
+### Availability
+
+| Criteria             | Details                                             |
+| -------------------- | --------------------------------------------------- |
+| Customer Eligibility | Only available for customers onboarded to MM Lite   |
+| Template Support     | Only supports Meta-approved **MARKETING** templates |
+| Modules Supported    | Outbound Campaigns, Flows, Notification API         |
+
+
+### Behavior
+
+
+By default, MM Lite follows the delivery mechanism defined in **Global settings**. If enabled, all supported campaigns will use MM Lite unless explicitly overridden.
+
+
+You can override the global MM Lite setting at the following points:
+
+* **Outbound Campaign creation screen**
+* **Flows configuration**
+* **Notification API payloads (via `apiReference`)**
+
+
+### How to enable
+
+For accounts managed by Yellow\.ai:
+
+* Your **Customer Success Manager (CSM)** will assist you with MM Lite onboarding.
+* You can also proactively request enablement by reaching out to your CSM.
+
+Once enabled, customers can configure MM Lite delivery preferences via:
+
+* **Global Settings UI** (coming soon)
+* **Individual Campaign or Flow settings**
+
+
+
+### Reporting for messages delivered through MMLite 
+
+A new column called **API Preference** has been added to notification reports. This column displays the delivery method used for each message (e.g., **Cloud API**, or **MM Lite**) to improve transparency and traceability.
+
+
+### Limitations
+
+* MM Lite is not available for **non-Marketing** templates.
+* Only eligible for customers who have completed MM Lite onboarding.
+* Delivery optimization is controlled by Meta; Yellow\.ai does not guarantee exact timing.
+
+
+---
+
+
+
+
+
 ## 2. Access Engage module
 
 :::note

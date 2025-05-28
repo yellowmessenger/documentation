@@ -18,21 +18,25 @@ Yellow.ai offers two subscription plans:
 
 -----
 
-## Freemium plan 
-
-The **Freemium plan** is like a free trial designed just for you. It allows you to explore all the exciting features our platform offers, completely free of charge. Test it out, play with the features, and see if it's the perfect fit for your business needs. You can experience the full power of our platform before deciding on the premium plan.
+## Freemium plan overview
 
 
-The Freemium plan includes the following features:
+The Freemium plan provides a no-cost entry point to explore key capabilities of the Yellow\.ai platform. It is designed to help you evaluate the platform’s core features and assess its fit for your business needs—before committing to a premium subscription.
 
-1. Analyze bot performance by reviewing deflection rates with 5,000 monthly bot conversations.
-2. Add QnAs to the [FAQ](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) module to effectively deflect tickets.
-3. Have unlimited [agents](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) to answer customer questions. 
-4. Handle up to 500 chat and email tickets per month by transferring chats to an agent.
-5. Increase your agents' productivity with features like canned responses, and integrate two channels (website, WhatsApp, mobile app) for customer interactions, along with a unified inbox for your agents.
+#### What’s included in the Freemium plan:
+
+* **5,000 monthly bot conversations** to monitor performance and measure deflection rates.
+* [**FAQ module**](https://docs.yellow.ai/docs/platform_concepts/studio/train/add-faqs) with the ability to add QnAs and reduce support load through automation.
+* **Unlimited [agent](https://docs.yellow.ai/docs/platform_concepts/inbox/inbox_setup/supportagents) seats** to manage customer interactions without constraints.
+* **500 chat and email tickets per month**, with the ability to route conversations to human agents.
+* **Productivity tools** including canned responses and a **unified inbox** for streamlined agent workflows.
+* **Integration with up to two channels**, such as your website, WhatsApp, or mobile app.
+
+The Freemium plan enables you to test and experience the platform’s automation and support capabilities with no financial commitment. When you’re ready to scale, upgrading to the Premium plan unlocks advanced environments, enterprise controls, and enhanced configuration options.
+
 
 :::note
-Upon [signing up](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup), your account will automatically be enrolled in the Freemium plan.
+When you [sign up](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/account-setup), your account will be automatically enrolled in the Freemium plan.
 :::
 
 ### Limitations of Freemium plan
@@ -62,17 +66,23 @@ To create a new bot, you need to own a subscription. Without ownership, you can 
 
 ------
 
-## Premium plans
+## Premium plans overview
 
-Our paid subscription plans offer various benefits to enhance user experience, including access to integrations and channels, personalized reports and dashboards, and professional support. These features provide a comprehensive and personalized experience to help you achieve your business goals.
+Premium plans offer advanced capabilities to help you scale your AI agent experience. With these paid subscriptions, you can unlock access to integrations, enable more channels, create custom reports and dashboards, and get dedicated support.
+
+To view available plans:
+
+* Click **Upgrade** from your dashboard if you’ve signed up with a new domain.
+* Use the **Monthly/Yearly** toggle to choose a billing cycle that fits your needs.
+* Click **See full plan comparison** to review features across all available plans.
+
+To proceed, click **Choose Plan** or **Contact Sales**. This will open a Calendly window where you can book a one-on-one session with our product team.
+
 
 <!-- 
 ![](https://i.imgur.com/mNl6DvH.png)
 -->
 
-- If you've signed up with a new domain on our platform, click the **Upgrade** button to see all the subscription plans.
-- To select a plan either on a monthly or annual basis, toggle between the **Monthly/Yearly** options on the top. For a complete comparison of features included in all plans, click **See full plan comparison** located at the bottom of the page.
-- Clicking **Choose Plan** or **Contact Sales** will redirect you to the Calendly pop-up (same as mentioned above) to book a one-on-one session with our product experts.
 
 
 ### Module-based pricing
@@ -86,7 +96,7 @@ Billed according to MRU count, ensuring fair billing for actual value. Each user
 
 #### WhatsApp pricing
 
-Meta's updates from June 1, 2023, affect Yellow.ai's WhatsApp pricing. Charges depend on MRU count, conversation type, country, and location. You can have up to 1,000 free conversations every month. If the limit is exceeded, a monthly fee will apply.
+Meta's updates from June 1, 2023, affect Yellow.ai's WhatsApp pricing. Charges depend on MRU count, conversation type, country, and location. You can have up to 1,000 free conversations every month. If the limit exceeds, a monthly fee will apply.
 > For more information, click [here](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/WA-pricing).
 
 <!--
@@ -97,7 +107,7 @@ Meta's updates from June 1, 2023, affect Yellow.ai's WhatsApp pricing. Charges d
 
 --------
 
-### Steps to upgrade to a freemium plan
+### Steps to upgrade to a premium plan
 
 You can easily upgrade your account by having a discussion with our consultants to better suit your specific business requirements. We recommend carefully evaluating your needs before making a decision and our consultants will help you with the best custom pricing. 
 

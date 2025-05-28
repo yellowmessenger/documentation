@@ -100,14 +100,14 @@ To add an API using the API interface:
 |**Body type**| Enter the body type for your API request, if applicable (typically for POST, PUT, or DELETE methods). Supported formats include **x-www-form-urlencoded**, **JSON**, **XML**, **GRAPHQL**, **form-data**, and **raw**. <br/><br/> **Note:** Multipart/form-data is not supported.|
 | **Dynamic variable configuration** | You will see the list of dynamic parameters used in the API. Map each parameter to the corresponding variable of the same data type.  This is to ensure the API receives the required input data before initiating the API call. <br/> If the dynamic parameters are not mapped, the API call will fail as it won't receive the required input data.|
 
-### To send PCI data
+### To access/transmit PCI data
 
 1. In the Dynamic variable field, select a predefined PCI variable.
 2. The platform decrypts the value at runtime and injects it into the API request.
 3. PCI data is accessible only once. After a successful API call, the data is automatically purged to ensure PCI compliance.
 
    :::note 
-   If the API call fails, the PCI data remains securely stored. It will only be purged after a successful request.
+   PCI data is stored temporarily and will be purged based on whichever occurs first: a successful API call or the expiration of a predefined time-to-live (TTL) period set by the platform (e.g., 15 minutes). If a successful API call is made within the TTL window, the data is purged immediately. If not, the data is automatically deleted once the TTL expires, even if it hasn't been used.
    :::
 
 ### Configure additional API settings
