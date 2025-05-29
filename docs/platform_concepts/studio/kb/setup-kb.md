@@ -1,9 +1,70 @@
 ---
-title: Setup Knowledge base
+title: Setup your Knowledge base
 sidebar_label: Setup Knowledge base
 ---
 
+<!--
 You can set up a Knowledge Base (KB) to allow your AI agent to retrieve accurate and relevant information directly from the various content sources.
+-->
+
+
+
+You can set up a Knowledge base if:
+
+* You have content on websites or in files (PDF, DO CX, CSV, TXT).
+* You use platforms like ServiceNow to manage knowledge articles.
+* You want the AI agent to deliver consistent, context-aware responses.
+
+---
+
+## What you can do
+
+With the Knowledge Base, you can:
+
+* Connect to content sources like URLs, sitemaps, file uploads, or ServiceNow.
+* Configure metadata to improve search accuracy.
+* Schedule automatic syncs to keep content updated.
+* Organize documents using folders and subfolders.
+
+---
+
+## What you need
+
+Before setting up, ensure:
+
+* You have **Admin** or **Developer** access.
+* For ServiceNow integration, you have:
+
+  * Instance URL
+  * Client ID
+  * Client Secret
+
+
+
+---
+
+## How to access the Knowledge Base
+
+1. In the left navigation menu, click **Knowledge Base**.
+2. Select a content source to begin setup:
+
+   * **Sitemaps / URLs**
+   * **Upload files**
+   * **ServiceNow**
+
+   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
+
+---
+
+
+
+
+
+
+
+
+
+---
 
 **You should set up a Knowledge Base if:**
 

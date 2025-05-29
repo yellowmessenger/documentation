@@ -3,39 +3,49 @@ title: Introduction to knowledge base (KB)
 sidebar_label: Knowledge base
 ---
 
-A Knowledge base (KB) is a centralized hub where you can add information to your AI agent, to deliver consistent, accurate, and context-aware responses. It serves as a structured repository for storing and managing information from various sources, including documents, websites, third-party platforms like ServiceNow, and associated metadata. 
+# Knowledge base overview
 
-You can import content from multiple sources such as sitemaps, URLs, uploaded documents, and ServiceNow to schedule automatic syncs, manage metadata through a dedicated interface, and organize files using folders and subfolders. The system also lets you track the status of each file with ease.
+The Knowledge Base is a centralized source of truth that helps your AI agent deliver accurate, consistent, and context-aware responses. It allows you to import, organize, and manage content from various sources such as documents, websites, and third-party systems.
 
-By using existing content from websites, documents, or third-party platforms, your AI agent can efficiently address a wide range of queries, from internal support and customer service to product information and troubleshooting.
+Use the Knowledge Base to ensure your AI agent has access to the latest and most relevant information, reducing manual effort and improving response quality across support, service, and informational use cases.
 
 
-#### Key features of Knowledge base
+## What you can do
 
-The Knowledge Base module offers:
+* Import content from multiple sources, including file uploads, URLs, and third-party platforms like ServiceNow.
+* Schedule automatic syncs to keep your content up to date.
+* Tag content with metadata to improve search relevance.
+* Organize documents using folders and subfolders by team, topic, or category.
+* Monitor content status and sync activity in real time.
 
-* **Flexible content ingestion**: Import content from diverse sources such as file uploads, website sitemaps, URLs, or third-party platforms like ServiceNow.
-* **Context-rich Metadata configuration**: Apply tags and filters to help the AI agent interpret file context more accurately, enhancing search precision and response relevance.
-* **Automated content sync**: Schedule regular syncs to keep your AI agent up to date with the latest information—no manual updates required.
-* **Structured file organization**: Organize documents using folders and subfolders by category, department, or topic, ensuring a clean and scalable content structure.
 
-#### Use cases
+### Supported content sources
 
-* **Automated website FAQs**: Automatically extract and respond to frequently asked questions using your website content. Reduce support team workload while delivering fast, accurate answers to users.
+You can add content from:
 
-* **Product information retrieval**: Provide real-time product details, availability, and pricing by connecting your AI agent to live sources like your website or third-party systems.
-* **Dynamic content updates**: Keep your AI agent always up to date by scheduling auto-syncs. This eliminates the need for manual updates and ensures users receive the latest information.
-* **Interactive learning platforms**: Use AI agents as learning assistants that guide users through topics by answering their questions and providing real-time information based on your content.
+* **Files**: Upload PDFs, Word documents, Excel sheets, and more.
+* **Web sources**: Use URLs or sitemaps to pull content from your website.
+* **Third-party systems**: Connect to external platforms like ServiceNow.
 
-### Create an AI-agent for your website
+Each source is automatically processed and made searchable by the AI agent. You can view the sync status of each document in the dashboard.
 
-To create an AI-agent for your website, follow these steps:
 
-1. Go to **Knowledge base** > **Files**.
+### Key features of Knowledge base 
 
-   ![image](https://cdn.yellowmessenger.com/assets/yellow-docs/KBonboarding.png)
+| Feature                        | Description                                                                         |
+| ------------------------------ | ----------------------------------------------------------------------------------- |
+| **Flexible content ingestion** | Add content from documents, URLs, and external platforms.                           |
+| **Metadata tagging**           | Apply filters and tags to help the AI agent interpret context accurately.           |
+| **Automatic content sync**     | Keep your content fresh with scheduled syncs. No manual updates needed.             |
+| **Organized file structure**   | Use folders and subfolders to categorize documents for easy access and scalability. |
 
-2. Select the source from which you want to add content (for example, upload documents, enter Sitemaps/URLs, or integrate with ServiceNow). For detailed steps on adding content, click [here](https://docs.yellow.ai/docs/platform_concepts/studio/kb/ingestion).
+
+### Example use cases
+
+* **Internal support**: Use internal knowledge to assist employees with HR, IT, or policy queries.
+* **Customer service**: Provide product FAQs, manuals, and how-to guides to end users.
+* **Technical support**: Power your AI agent with detailed product documentation and troubleshooting steps.
+
 
 
 <!-- ## Introduction to knowledge base(KB)
