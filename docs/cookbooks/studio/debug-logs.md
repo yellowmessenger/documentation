@@ -44,7 +44,7 @@ Our platform provides two types of logs to assist in debugging:
 
    ![](https://i.imgur.com/fPOnyzX.png)
  
-* **Additional methods for viewing logs** (for Production bots only): For production bots, there are advanced methods available to access and review logs, which provide deeper insights into the bot's operations and help identify critical issues.
+* **Additional methods for viewing logs**: There are advanced methods available to access and review logs, which provide deeper insights into the bot's operations and help identify critical issues.
 
 To read the logs, follow these steps:
 
