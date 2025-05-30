@@ -35,16 +35,19 @@ info:
 
     To generate an API key, follow these steps:
 
-    1. On the bot Overview page, go to **Access Control** > **API Keys**.
+    1. On the left navigation pane, click **Settings** > **API Keys**.
    
-    ![](https://i.imgur.com/6L7qEaO.png)
+       ![](https://cdn.yellowmessenger.com/assets/yellow-docs/apikeys.png)
 
-    2. To create a new API Key, click **Generate new API key**.
-    3. Name the API key in **API Name** and select **User role** from the dropdown.
+    2. Click **Generate new API key**.
 
-    <img src="https://i.imgur.com/UUCmfG1.png" width="40%"/>
+       ![](https://cdn.yellowmessenger.com/assets/yellow-docs/generatekeys.png)
 
-    4. If necessary, add whitelist IP to ensure smooth access, especially if the IP is at risk of being blocked by the firewall.
+    3. Name the API key in **API Name** and select **User roles** from the dropdown. You can select multiple roles.
+
+       <img src="https://i.imgur.com/UUCmfG1.png" width="40%"/>
+
+    4. Click **+ Add Whitelisted IP** Address to specify the IPs that should be allowed access. This helps prevent disruptions caused by firewall restrictions. You can add multiple IP addresses as needed.
     5. Click **Save** to generate the API key.
     6. Copy the generated key and use it in your API calls wherever required.
    
