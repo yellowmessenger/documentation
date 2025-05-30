@@ -72,7 +72,7 @@ module.exports = {
           "cookbooks/studio/ticket-assignedevent",
           "cookbooks/studio/webview-node",
           "cookbooks/studio/user-inactivity",
-          "cookbooks/studio/debug-logs",
+        //  "cookbooks/studio/debug-logs",
           "cookbooks/studio/error_page",
           "cookbooks/studio/userinitiateddisconnection",
 
@@ -376,7 +376,7 @@ module.exports = {
                 "platform_concepts/studio/build/Flows/test-flows",
                 "platform_concepts/studio/build/Flows/exportflow",
                 "platform_concepts/studio/debugger",
-    
+
               ],
             },
 
@@ -502,6 +502,7 @@ module.exports = {
 
         "platform_concepts/studio/studio-faqs",
         "platform_concepts/studio/LLM-central-configuration",
+        "cookbooks/studio/debug-logs",
 
       
     

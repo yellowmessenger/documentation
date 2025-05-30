@@ -8,7 +8,6 @@ When you create an AI agent, you can configure key details such as the agent's n
 
 This guide explains how to update your AI agent’s configuration, pause and resume its responses, and reset its data.
 
-## AI agent configuration 
 
 You can manage your AI agent’s configuration from the **Overview** page.
 
@@ -80,7 +79,7 @@ To pause or resume your AI agent, follow these steps:
 
 ### Reset your AI agent data
 
-Resetting an AI agent allows you to delete all past flows, conversations, and data associated with it.
+Resetting an AI agent deletes all past flows, conversations, and data associated with it.
 
 :::note
 Only super admin and admin have the ability to reset the AI agent.
