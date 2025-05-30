@@ -5,27 +5,36 @@ sidebar_label : Debug issues using logs
 
 This guide outlines the importance of reading logs for debugging issues on our platform, distinguishing between Execution Logs and Audit Logs.
 
-#### Prerequisites to look into debug logs
 
-* Access to the platform's developer tools.
-* Necessary permissions to view log entries.
-* Familiarity with common log entries and error messages.
+### Prerequisites for accessing Debug logs
 
-To effectively debug issues, you need to read and interpret logs for several purposes:
+Before you begin, ensure the following:
 
-* **Identify the exact state of the controller**: Determine the current status and behavior of the system controller.
-* **Determine the triggered flow**: Identify which flow is being activated during the interaction.
-* **Follow execution steps**: Track the step-by-step execution of each function to understand the flow of operations.
-* **Inspect stored values**: Check what values are stored in variables throughout the process.
-* **Identify error**: Find errors causing disruptions in the flow.
-* **Review API**: Examine the response and status code of API requests to ensure they are functioning correctly.
+* You have access to the platform’s developer tools.
+* You hold the necessary permissions to view log entries.
+* You are familiar with common log formats and error messages.
+
+
+### Key objectives when reading Debug logs
+
+Effective debugging requires interpreting logs for multiple purposes, including:
+
+* **Identify the controller state**: Understand the current status and behavior of the system controller.
+* **Determine the active flow**: Pinpoint which flow was triggered during the interaction.
+* **Trace execution steps**: Follow each function’s execution path to uncover how the logic flows.
+* **Inspect stored variables**: Review the values assigned to key variables throughout the process.
+* **Detect errors**: Locate specific errors that may be disrupting the flow.
+* **Analyze API activity**: Examine API calls, including response bodies and status codes, to ensure external services are responding as expected.
+
+---
+
 
 ## Types of logs on our platform
 
 Our platform provides two types of logs to assist in debugging:
 
 1. **[Execution logs](#execution-logs)**: These logs help identify API failures that disrupt flows. They offer a detailed, step-by-step account of each flow's execution, making it easier to pinpoint issues.
-2. **[Audit logs](#audit-logs)**: These logs store all operations performed on the platform, such as database deletions, journey deletions, and audience table deletions for audit purposes.
+2. **[Audit logs](#view--download-ai-agent-audit-logs)**: These logs store all operations performed on the platform, such as database deletions, journey deletions, and audience table deletions for audit purposes.
 
 ### Execution Logs
 
@@ -65,23 +74,34 @@ To read the logs, follow these steps:
 
      <img src="https://i.imgur.com/28oDVS5.png" alt="drawing" width="80%"/>
       
-  
+---
+
 ### Audit logs
 
-#### Access Audit logs
+#### View & download AI agent audit logs
 
-To access Audit Logs, follow these steps:
+Audit log provids a detailed record of the changes made to each module(APIs, Inbox Agent configuration/actions, Channels), including information about the user (user email) who made the changes and the timestamp of the actions taken. 
 
-1. Go to **Settings** > **Audit logs**.
+To view audit log, follow these steps:
+
+1. Click **AI agent settings** > **Audit logs** to access the log of all the changes made.
 
     ![](https://i.imgur.com/aALWBqy.png)
     
-*  You can view detailed records of all actions performed on the platform.
+    You will see the audit logs page with the details of all actions performed on the platform.
 
-    ![](https://i.imgur.com/ea7H3Nn.png)
-
-
+     ![](https://i.imgur.com/ea7H3Nn.png)
 
 
 
+2. To filter the results and view specific information, you can use the **filter** button and apply relevant filters.
 
+    <img src="https://imgur.com/QqL6CXo.png" alt="drawing" width="50%"/>
+
+3. **To download a complete record of the Audit log, click on** **Download CSV**. This will provide a detailed history of all changes made to the AI agent over time.
+
+     ![image](https://imgur.com/E5gLq7h.png)
+
+:::note
+Audit logs will be available for 6 months.
+:::
