@@ -33,6 +33,7 @@ Before initiating the installation process, you need to consider the following i
 * Sign up for [Yellow.ai](https://cloud.yellow.ai/) and complete the onboarding journey.
 * Create a Zendesk account.
 * Once your Zendesk account is created, [connect Zendesk](https://docs.yellow.ai/docs/platform_concepts/channelConfiguration/sunshine) on Yellow.ai platform.
+* Enable agent assist by contacting [support team](mailto:support@yellow.ai).
 
 
 ## Install Yellow.ai agent assist app from Zendesk marketplace. 
@@ -55,7 +56,7 @@ The Yellow.ai Agent Assist package is available on the Zendesk marketplace. Foll
 
     * **Bot ID**: Enter the bot ID connected to Zendesk.
     * **API Base URL**: Enter the webhook URL based on your bot region (for example, r0 - https://cloud.yellow.ai, r1 - https://r1.cloud.yellow.ai).
-    * **API Key**: Enter your chatGpt API key. 
+    * **X-API Key**: Enter the API key. For more information on how to get the API key, click [here](https://docs.yellow.ai/docs/platform_concepts/Getting%20Started/api-keys#docusaurus_skipToContent_fallback).
     * **Site URL**: Enter the URL of your website to fetch information for user assistance (for example, puma.com/help).
     * **Enable role restrictions**: Enable the check box and select the roles that should have access to this app.
     * **Enable group restrictions**: Enable the check box and select which groups should have access to this app.
@@ -69,7 +70,7 @@ The Yellow.ai Agent Assist package is available on the Zendesk marketplace. Foll
 4. Retrieve your API key(s). Copy the one you want to use for integration.
 :::
 
-  ![](https://i.imgur.com/dAYlCru.png)
+  ![](https://cdn.yellowmessenger.com/assets/yellow-docs/zendeskconfig.png)
 
 ### Verify the app installation
 
