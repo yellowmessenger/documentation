@@ -74,9 +74,12 @@ You will see template configuration slide screen where you need to configure det
 
 6. In the **API reference**, select your preferred delivery method. This setting applies only to WhatsApp campaigns.
    * Choose **Meta Cloud** to send campaigns exactly at the scheduled date and time, or 
-   * Choose **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicable only for   )
+   * Choose **MM Lite** to let Meta optimize and control the actual delivery time after the API call—based on user engagement potential (applicabla only for WhatsApp marketing campaigns)
+   
    :::note
-   This option is only available for customers who are onboarded to MM Lite and is supported only for WhatsApp MARKETING templates.
+   * This option is only available for customers who are onboarded to MM Lite and is supported only for WhatsApp MARKETING templates.
+   * By default, it applies the configured [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level).
+
    :::
 
 7. Select your **Target Audience** and click **Next** to proceed to scheduling the message (**Schedule**).
