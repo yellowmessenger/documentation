@@ -27,8 +27,8 @@ No change in how you build your campaigns — just choose the API reference whil
 
 #### How it works
 
-* **Default**: Follows your Global Settings
-* **Customizable**: You can override within the respective campaign (Outbound, Flows, Notification API)
+* **Default**: Follows your [Org level setting](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level)
+* **Customizable**: You can override this setting when configuring individual WhatsApp campaigns (Outbound, Flows, or Notification APIs).
 
 
 #### Who gets it
@@ -45,6 +45,7 @@ If your account is managed by Yellow\.ai:
 * Or, reach out to your CSM to request access
 
 **For more details, refer to **
+* [**Org level setting**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage#set-mm-lite-preference-at-org-level)
 * [**Outbound campaigns documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/engage)
 * [**Flow campaign documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/flows_campaign#1-whatsapp-channel-configuration)
 * [**Notification API documentation**](https://docs.yellow.ai/docs/platform_concepts/engagement/outbound/notification-engine#mmlite-preference-support-in-notifications-api-for-whatsapp)

@@ -489,7 +489,7 @@ module.exports = {
               collapsed: true,
               items: [
                // "platform_concepts/studio/test-and-publish-bot/bot-training",
-               "platform_concepts/studio/test-and-publish-bot/bot-logs",
+               "platform_concepts/studio/test-and-publish-bot/bot-logs",  
                 "platform_concepts/studio/test-and-publish-bot/debug-flow",
                 "cookbooks/studio/regressiontest",
                 "platform_concepts/studio/test-and-publish-bot/modes",
@@ -1464,7 +1464,7 @@ module.exports = {
             "platform_concepts/appConfiguration/okta",
             "platform_concepts/appConfiguration/oracle-responsys",
             "platform_concepts/appConfiguration/outlook-calendar",
-           // "platform_concepts/appConfiguration/sftp",
+            "platform_concepts/appConfiguration/sftp",
             "platform_concepts/appConfiguration/twilio-verify",
             "platform_concepts/appConfiguration/webengage",
             "platform_concepts/appConfiguration/webhook",
