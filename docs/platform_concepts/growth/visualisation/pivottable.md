@@ -19,7 +19,8 @@ To pivot table (custom/default), follow these steps:
 
 
 3. Select **Pivot table**. 
-    <img src="https://imgur.com/Ll1IVYQ.png" alt="drawing" width="40%"/>
+
+<img src="https://imgur.com/Ll1IVYQ.png" alt="drawing" width="40%"/>
 
 
 4. Under **Configure**, choose the field names to convert to **Rows** and **Columns** in the pivoted table. Select the **Values** to display within the cells.
