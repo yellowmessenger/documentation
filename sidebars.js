@@ -344,6 +344,7 @@ module.exports = {
                 "platform_concepts/AIAgent/agentpersona",
                 "platform_concepts/AIAgent/conversations",
                 "platform_concepts/AIAgent/manage-conversation",
+                "platform_concepts/AIAgent/kb-agent-config",
   
                // add here
   
